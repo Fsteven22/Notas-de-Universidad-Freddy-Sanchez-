@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estructura Completa FP.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estructura Completa FP"
+              "title": "Propiedades de los Límites"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Estructura Completa FP.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Estructura Completa FP"
+              "title": "Enlaces salientes de Propiedades de los Límites"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Estructura Completa FP.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Estructura Completa FP"
+              "title": "Esquema de Propiedades de los Límites"
             }
           },
           {
@@ -186,7 +186,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -216,8 +216,21 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
-    "Estructura completa Fisica.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites Laterales.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites en Gráficas.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto General del Límite.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teorema del Emparedado (Sándwich o Squeeze).md",
+    "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teoremas de Límites.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Límites Infinitos y al Infinito/Límites Infinitos.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Límites Trigonométricos Fundamentales.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Forma Indeterminadas 0 Sobre 0.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
+    "Universidad/Calculo de una Variable/02 - Aplicaciones - Limites/Continuidad y Límites.md",
+    "Sin título.md",
     "Estructura Completa FP.md",
+    "Estructura completa Fisica.md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco/Longitud de Arco con Integrales.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Integración por Partes.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Cambio de Variable en Integrales.md",
@@ -230,23 +243,10 @@
     "01 - Dashboard/Estratégico/Objetivos 2025.md",
     "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Reglas basicas/Regla de la cadena.md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes/Volúmenes de Sólidos de Revolución.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes/Volúmenes de Revolución Ejes Arbitrarios y Casos Avanzados.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas Integración con Respecto a Y.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas en Coordenadas Polares y Paramétricas.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área bajo la Curva.md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas",
-    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis Gráfico/Gráficas no lineales.md",
-    "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.1 Introducción a NumPy.md",
     "Figuras/Pasted image 20250823130623.png",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivadas y Definición Formal.md",
     "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Límite y Definición de Derivada.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Integrales Notables (Fórmulas Directas).md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Teorema Fundamental del Calculo para Integrales Indefinidas.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Sin título.md",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Presentación de Resultados",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis Gráfico",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas",

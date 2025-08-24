@@ -186,7 +186,7 @@ graph TD
 > 
 > - [[Límites Laterales]] - Extensión del concepto
 > - [[Límites en Gráficas]] - Interpretación visual detallada
-> - [[Funciones y Continuidad]] - Relación entre límites y continuidad
+> - [[Continuidad y Límites]] - Relación entre límites y continuidad
 > - [[Definición Formal del Límite]] - Formalización rigurosa
 
 ## Notas Recomendadas 💡
@@ -195,9 +195,8 @@ graph TD
 > 
 > - [[Límites por Sustitución Directa]] - Casos simples
 > - [[Teoremas de Límites]] - Propiedades y leyes
-> - [[Formas Indeterminadas]] - Casos más complejos
-> - [[Historia del Cálculo]] - Desarrollo histórico del concepto
-> - [[Aplicaciones de Límites]] - Usos en ciencias e ingeniería
+> - [[Forma Indeterminadas 0 Sobre 0]] - Casos más complejos
+> - Carpeta Aplicaciones de Límites - Usos en ciencias e ingeniería
 
 ---
 
