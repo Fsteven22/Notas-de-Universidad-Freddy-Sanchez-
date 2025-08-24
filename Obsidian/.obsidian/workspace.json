@@ -1,0 +1,266 @@
+{
+  "main": {
+    "id": "da8b947e72b4a867",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb4a665079a97c6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba4daf3b56e06153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Estructura Completa FP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Estructura Completa FP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2f9bfae5daf49fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "79d8c0b5cc43c150",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80410ca9f11ebd3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "3b3489b76480dab2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "06a5e4e7245e63eb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 317.5
+  },
+  "right": {
+    "id": "8aa3fa143ab462de",
+    "type": "split",
+    "children": [
+      {
+        "id": "3944c317a8198dd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58897018ec427a43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02 - Productividad/Metodologías y Sistemas/Técnicas de Concentración.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Técnicas de Concentración"
+            }
+          },
+          {
+            "id": "eab33b298a07b49e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Estructura Completa FP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Estructura Completa FP"
+            }
+          },
+          {
+            "id": "ed0eddca033f2cc6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "f94cba81acc88fac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Estructura Completa FP.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Estructura Completa FP"
+            }
+          },
+          {
+            "id": "0577954d129ee222",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "26cadadf126f859b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "d8c47bf3041d46ce",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Crear nueva base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false,
+      "zk-prefixer:Crear nueva nota única": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "publish:Publicar cambios": false,
+      "zettelflow:Create a new Zettel Note": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
+    }
+  },
+  "active": "ba4daf3b56e06153",
+  "lastOpenFiles": [
+    "Estructura completa Fisica.md",
+    "Estructura Completa FP.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco/Longitud de Arco con Integrales.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Integración por Partes.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Cambio de Variable en Integrales.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivabilidad y Continuidad.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Tabla de Derivadas Básicas (Referencia Rápida).md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Interpretación Geométrica de la Derivada.md",
+    "01 - Dashboard/Fundamentos/Autoconocimiento.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Extensiones Avanzadas/Longitud de Curva.md",
+    "01 - Dashboard/Estratégico/Pensamiento Estratégico.md",
+    "01 - Dashboard/Estratégico/Objetivos 2025.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Reglas basicas/Regla de la cadena.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes/Volúmenes de Sólidos de Revolución.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes/Volúmenes de Revolución Ejes Arbitrarios y Casos Avanzados.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas Integración con Respecto a Y.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas en Coordenadas Polares y Paramétricas.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área entre Curvas.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas/Área bajo la Curva.md",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes",
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis Gráfico/Gráficas no lineales.md",
+    "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.1 Introducción a NumPy.md",
+    "Figuras/Pasted image 20250823130623.png",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivadas y Definición Formal.md",
+    "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Límite y Definición de Derivada.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Integrales Notables (Fórmulas Directas).md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Teorema Fundamental del Calculo para Integrales Indefinidas.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Sin título.md",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Presentación de Resultados",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis Gráfico",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis de Datos y Errores",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Mediciones e Instrumentos",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes",
+    "Universidad/Fundamentos de Programación.zip",
+    "Figuras/Pasted image 20250730194117.png",
+    "bc93763d-46e7-4187-9f53-1bd5847dcd28.jpg",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020914.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020841.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020940.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721023012.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721023023.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721024230.png"
+  ]
+}

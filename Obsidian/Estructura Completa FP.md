@@ -1,0 +1,31 @@
+- Fundamentos_de_Programacion/
+    - Fundamentos de Programación/
+        - Fundamentos de FP/
+            - Machine Learning.md
+        - Módulo 1 - Introducción y Ambientes de Programación/
+            - Módulo 1.1 Programación y su Relevancia.md
+            - Módulo 1.2 Introducción a Python.md
+        - Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/
+            - Módulo 2.1 Variables y Tipos de Datos.md
+            - Módulo 2.2 Operaciones con Datos y Variables.md
+            - Módulo 2.3 Listas y Tuplas en Python.md
+            - Módulo 2.4 Aleatoriedad.md
+        - Módulo 3 - Funciones/
+            - Módulo 3.1 Funciones.md
+        - Módulo 4 - Estructuras de control/
+            - Módulo 4.1 Condicional.md
+            - Módulo 4.2 Iteradores for.md
+            - Módulo 4.3 Bucle While.md
+        - Módulo 5 - Diccionarios/
+            - Módulo 5.1 Diccionarios.md
+            - Módulo 5.2 Iterar Diccionarios.md
+        - Módulo 6 - Pandas/
+            - Módulo 6.1 Introducción a NumPy.md
+            - Módulo 6.2 Intro a Pandas.md
+            - Módulo 6.3 Manipulación de Datos
+            - Módulo 6.4: Limpieza de Datos
+        - Módulo general - Funciones especiales/
+            - Expresiones Regulares (Regex).md
+            - Funciones Built-in.md
+            - Manejo de Errores con try, except, finally.md
+            - Validación de entradas de usuario.md
