@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Definición Formal del Límite para Asíntotas"
+              "title": "Concavidad y Puntos de Inflexión"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "puntos críticos ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Definición Formal del Límite para Asíntotas"
+              "title": "Enlaces salientes de Concavidad y Puntos de Inflexión"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Definición Formal del Límite para Asíntotas"
+              "title": "Esquema de Concavidad y Puntos de Inflexión"
             }
           },
           {
@@ -216,11 +216,17 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite Épsilon-Delta.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Monotonía y Puntos Críticos.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Análisis Completo de Funciones.md",
+    "Universidad/Calculo de una Variable/02 - Aplicaciones - Limites/Asíntotas y Comportamiento.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Asíntotas Oblicuas.md",
+    "Universidad/Calculo de una Variable/02 - Aplicaciones - Limites/Continuidad y Límites.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites en Gráficas.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite Épsilon-Delta.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
     "Universidad/Calculo de una Variable/01 - Limites/Límites Infinitos y al Infinito/Límites Infinitos.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites en Gráficas.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites Laterales.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teorema del Emparedado (Sándwich o Squeeze).md",
@@ -228,7 +234,6 @@
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Límites Trigonométricos Fundamentales.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Forma Indeterminadas 0 Sobre 0.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
-    "Universidad/Calculo de una Variable/02 - Aplicaciones - Limites/Continuidad y Límites.md",
     "Sin título.md",
     "Estructura Completa FP.md",
     "Estructura completa Fisica.md",
@@ -237,11 +242,6 @@
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Cambio de Variable en Integrales.md",
     "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivabilidad y Continuidad.md",
     "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Tabla de Derivadas Básicas (Referencia Rápida).md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Interpretación Geométrica de la Derivada.md",
-    "01 - Dashboard/Fundamentos/Autoconocimiento.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Extensiones Avanzadas/Longitud de Curva.md",
-    "01 - Dashboard/Estratégico/Pensamiento Estratégico.md",
-    "01 - Dashboard/Estratégico/Objetivos 2025.md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas",

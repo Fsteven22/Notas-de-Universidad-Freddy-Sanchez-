@@ -249,12 +249,12 @@
 ```mermaid
 graph TD
     A[x se acerca a a] --> B{Tipo de límite?}
-    B -->|f(x) → +∞| C[Para todo M > 0]
-    B -->|f(x) → -∞| D[Para todo M > 0]
+    B -->|"f(x) → +∞"| C[Para todo M > 0]
+    B -->|"f(x) → -∞"| D[Para todo M > 0]
     C --> E[Existe δ > 0]
     D --> F[Existe δ > 0]
-    E --> G[Si 0 < |x-a| < δ entonces f(x) > M]
-    F --> H[Si 0 < |x-a| < δ entonces f(x) < -M]
+    E --> G["Si 0 < |x-a| < δ entonces f(x) > M"]
+    F --> H["Si 0 < |x-a| < δ entonces f(x) < -M"]
     G --> I[Asíntota Vertical]
     H --> I
     
@@ -273,8 +273,8 @@ graph TD
     B -->|x → -∞| D[Para todo ε > 0]
     C --> E[Existe N > 0]
     D --> F[Existe N > 0]
-    E --> G[Si x > N entonces |f(x) - L| < ε]
-    F --> H[Si x < -N entonces |f(x) - L| < ε]
+    E --> G["Si x > N entonces |f(x) - L| < ε"]
+    F --> H["Si x < -N entonces |f(x) - L| < ε"]
     G --> I[Asíntota Horizontal y = L]
     H --> I
     
