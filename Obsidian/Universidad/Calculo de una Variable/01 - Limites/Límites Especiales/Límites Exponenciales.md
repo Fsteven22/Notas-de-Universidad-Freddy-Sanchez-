@@ -225,7 +225,7 @@ flowchart TD
 > 
 > ### Prerrequisitos:
 > 
-> - [[Definición Formal del Límite]] - Conceptos fundamentales
+> - [[Definición Formal del Límite Épsilon-Delta]] - Conceptos fundamentales
 > - [[Propiedades de Logaritmos]] - Esencial para método logarítmico
 > - [[Límites Fundamentales]] - Base para límites trigonométricos
 > - [[Formas Indeterminadas]] - Clasificación general

@@ -187,7 +187,7 @@ graph TD
 > - [[Límites Laterales]] - Extensión del concepto
 > - [[Límites en Gráficas]] - Interpretación visual detallada
 > - [[Continuidad y Límites]] - Relación entre límites y continuidad
-> - [[Definición Formal del Límite]] - Formalización rigurosa
+> - [[Definición Formal del Límite Épsilon-Delta]] - Formalización rigurosa
 
 ## Notas Recomendadas 💡
 

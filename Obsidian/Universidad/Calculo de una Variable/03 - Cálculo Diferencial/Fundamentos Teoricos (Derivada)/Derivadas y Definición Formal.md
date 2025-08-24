@@ -182,7 +182,7 @@
 
 > [!quote]- 📚 **Referencias a otras notas**
 > 
-> - [[Definición Formal del Límite]] - Base fundamental para la definición
+> - [[Definición Formal del Límite Épsilon-Delta]] - Base fundamental para la definición
 > - [[Regla de L'Hôpital]] - Aplicación de derivadas a límites
 > - [[Problemas de Optimización]] - Aplicación principal de derivadas
 > - [[Antiderivadas (Primitivas)]] - Proceso inverso de la derivación

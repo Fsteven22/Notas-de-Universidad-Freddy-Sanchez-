@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Propiedades de los Límites"
+              "title": "Definición Formal del Límite para Asíntotas"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Propiedades de los Límites"
+              "title": "Enlaces salientes de Definición Formal del Límite para Asíntotas"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Propiedades de los Límites"
+              "title": "Esquema de Definición Formal del Límite para Asíntotas"
             }
           },
           {
@@ -216,14 +216,15 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite Épsilon-Delta.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Límites Infinitos y al Infinito/Límites Infinitos.md",
+    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites en Gráficas.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites Laterales.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites en Gráficas.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto General del Límite.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teorema del Emparedado (Sándwich o Squeeze).md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teoremas de Límites.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Límites Infinitos y al Infinito/Límites Infinitos.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Límites Trigonométricos Fundamentales.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Forma Indeterminadas 0 Sobre 0.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
@@ -241,7 +242,6 @@
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Extensiones Avanzadas/Longitud de Curva.md",
     "01 - Dashboard/Estratégico/Pensamiento Estratégico.md",
     "01 - Dashboard/Estratégico/Objetivos 2025.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Reglas basicas/Regla de la cadena.md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas",

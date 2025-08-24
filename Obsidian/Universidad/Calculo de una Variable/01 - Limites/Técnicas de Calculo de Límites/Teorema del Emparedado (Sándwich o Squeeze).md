@@ -286,7 +286,7 @@ flowchart TD
 > **Prerrequisitos:**
 > 
 > - [[Límites por Sustitución Directa]] - Base para casos simples
-> - [[Definición Formal del Límite]] - Fundamento teórico
+> - [[Definición Formal del Límite Épsilon-Delta]] - Fundamento teórico
 > - [[Desigualdades]] - Herramienta para acotar
 > 
 > **Temas relacionados:**

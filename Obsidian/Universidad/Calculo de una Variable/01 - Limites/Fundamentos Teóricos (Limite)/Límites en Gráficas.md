@@ -213,7 +213,7 @@ flowchart TD
 
 > [!quote] 🔗 Notas Relacionadas
 > 
-> - [[Concepto General del Límite]] - Base conceptual
+> - [[Concepto Intuitivo de Límite]] - Base conceptual
 > - [[Límites Laterales]] - Límites laterales
 > - [[Funciones y Continuidad]] - Tipos de discontinuidades
 > - [[Asíntotas y Comportamiento]] - Comportamiento asintótico

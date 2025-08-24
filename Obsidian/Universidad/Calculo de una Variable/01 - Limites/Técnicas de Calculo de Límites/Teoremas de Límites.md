@@ -294,7 +294,7 @@ flowchart TD
 > 
 > **Fundamentos:**
 > 
-> 1. **[[Definición Formal del Límite]]** - Base conceptual
+> 1. **[[Definición Formal del Límite Épsilon-Delta]]** - Base conceptual
 > 2. **[[Propiedades de los Números Reales]]** - Operaciones algebraicas
 > 
 > **Aplicaciones:** 3. **[[Técnicas de Factorización]]** - Para casos indeterminados 4. **[[Regla de L'Hôpital]]** - Alternativa para formas indeterminadas

@@ -238,7 +238,7 @@
 > [!info] Prerrequisitos
 > - [[Límites de Sucesiones]]
 > - [[Propiedades de la Sumatoria]]
-> - [[Concepto General del Límite]]
+> - [[Concepto Intuitivo de Límite]]
 
 > [!tip] Continuación del Tema
 > - [[Series de Potencias]]

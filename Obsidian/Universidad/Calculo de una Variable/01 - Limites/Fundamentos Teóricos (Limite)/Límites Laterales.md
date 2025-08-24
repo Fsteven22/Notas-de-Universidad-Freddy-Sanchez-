@@ -235,7 +235,7 @@ graph LR
 
 > [!note] 📖 Para Profundizar
 > 
-> - [[Definición Formal del Límite]] - Formalización rigurosa
+> - [[Definición Formal del Límite Épsilon-Delta]] - Formalización rigurosa
 > - [[Límites por Sustitución Directa]] - Técnicas de cálculo
 > - [[Asíntotas Verticales]] - Límites infinitos laterales
 > - [[Derivadas Laterales]] - Aplicación en derivabilidad

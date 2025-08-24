@@ -128,7 +128,7 @@ flowchart TD
 
 > [!quote] 📚 **Referencias**
 > 
-> - [[Definición Formal del Límite]] - Fundamentos teóricos
+> - [[Definición Formal del Límite Épsilon-Delta]] - Fundamentos teóricos
 > - [[Límites Laterales]] - Para casos puntuales
 > - [[Asíntotas]] - Comportamiento gráfico completo
 > - [[Continuidad]] - Relación con límites

@@ -133,47 +133,47 @@ graph TD
 
 ### Ejemplo 2: Función Cuadrática 📊
 
-## 🎯 Demostrar que $\lim_{x \to 2} x^2 = 4$
-
-### Configuración:
-
-- Queremos probar: $\lim_{x \to 2} x^2 = 4$
-- Sea $\varepsilon > 0$ arbitrario
-
-### Análisis:
-$$
-|f(x) - L| = |x^2 - 4| = |(x - 2)(x + 2)| = |x - 2| \cdot |x + 2|
-$$
-
-### Restricción preliminar:
-
-Supongamos $|x - 2| < 1$, entonces $1 < x < 3$, así que $3 < x + 2 < 5$  
-Por tanto: $|x + 2| < 5$
-
-### Condición deseada:
-$$
-|x^2 - 4| = |x - 2| \cdot |x + 2| < |x - 2| \cdot 5 < \varepsilon
-$$
-
-Esto requiere: $|x - 2| < \frac{\varepsilon}{5}$
-
-### Elección de Delta:
-$$
-\delta = \min\left\{1, \frac{\varepsilon}{5}\right\}
-$$
-
-### Verificación:
-
-Si $0 < |x - 2| < \delta = \min\left\{1, \frac{\varepsilon}{5}\right\}$, entonces:
-
-- $|x - 2| < 1$, lo que implica $1 < x < 3$, por tanto $3 < x + 2 < 5$, así $|x + 2| < 5$
-- $|x - 2| < \frac{\varepsilon}{5}$
-
-Por tanto:
-$$
-|x^2 - 4| = |x - 2| \cdot |x + 2| < \frac{\varepsilon}{5} \cdot 5 = \varepsilon \quad \blacksquare
-$$
-
+> [!example] 🎯 Demostrar que $\lim_{x \to 2} x^2 = 4$
+> 
+> ### Configuración:
+> 
+> - Queremos probar: $\lim_{x \to 2} x^2 = 4$
+> - Sea $\varepsilon > 0$ arbitrario
+> 
+> ### Análisis:
+> $$
+> |f(x) - L| = |x^2 - 4| = |(x - 2)(x + 2)| = |x - 2| \cdot |x + 2|
+> $$
+> 
+> ### Restricción preliminar:
+> 
+> Supongamos $|x - 2| < 1$, entonces $1 < x < 3$, así que $3 < x + 2 < 5$  
+> Por tanto: $|x + 2| < 5$
+> 
+> ### Condición deseada:
+> $$
+> |x^2 - 4| = |x - 2| \cdot |x + 2| < |x - 2| \cdot 5 < \varepsilon
+> $$
+> 
+> Esto requiere: $|x - 2| < \frac{\varepsilon}{5}$
+> 
+> ### Elección de Delta:
+> $$
+> \delta = \min\left\{1, \frac{\varepsilon}{5}\right\}
+> $$
+> 
+> ### Verificación:
+> 
+> Si $0 < |x - 2| < \delta = \min\left\{1, \frac{\varepsilon}{5}\right\}$, entonces:
+> 
+> - $|x - 2| < 1$, lo que implica $1 < x < 3$, por tanto $3 < x + 2 < 5$, así $|x + 2| < 5$
+> - $|x - 2| < \frac{\varepsilon}{5}$
+> 
+> Por tanto:
+> $$
+> |x^2 - 4| = |x - 2| \cdot |x + 2| < \frac{\varepsilon}{5} \cdot 5 = \varepsilon \quad \blacksquare
+> $$
+> 
 
 ### Ejemplo 3: Función Racional 📉
 
