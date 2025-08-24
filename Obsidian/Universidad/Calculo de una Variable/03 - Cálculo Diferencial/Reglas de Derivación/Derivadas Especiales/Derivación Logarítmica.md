@@ -1,6 +1,6 @@
 # 🔄 Derivación Logarítmica
 
-> [!tip] 💡 Concepto Clave
+> [!tip]  💡 Concepto Clave
 > La derivación logarítmica es una técnica poderosa que usa las propiedades del logaritmo natural para simplificar el cálculo de derivadas de funciones complejas, especialmente productos, cocientes y funciones de la forma $f(x)^{g(x)}$.
 
 ## 🎯 Fundamento Teórico

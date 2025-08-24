@@ -21,7 +21,7 @@
 > [!summary]+ Tabla de Derivadas Básicas 📋
 > 
 > ### Las 13 Fórmulas Fundamentales
-> ![[Pasted image 20250823130623.png]]
+> ![[Pasted image 20250824170857.png]]
 > 
 > _Esta tabla contiene las reglas de derivación esenciales que debes memorizar. Cada fórmula representa la derivada directa de las funciones elementales más importantes en cálculo diferencial._
 

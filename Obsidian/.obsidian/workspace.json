@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Tasas de Cambio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Concavidad y Puntos de Inflexión"
+              "title": "Tasas de Cambio"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "puntos críticos ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Tasas de Cambio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Concavidad y Puntos de Inflexión"
+              "title": "Enlaces salientes de Tasas de Cambio"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
+                "file": "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Tasas de Cambio.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Concavidad y Puntos de Inflexión"
+              "title": "Esquema de Tasas de Cambio"
             }
           },
           {
@@ -216,8 +216,23 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
-    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Monotonía y Puntos Críticos.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Aproximaciones Lineales y Diferenciales.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Razones de Cambio Relacionadas.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Tasas de Cambio.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Optimización/Problemas de Optimización.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Derivadas Especiales/Derivación Logarítmica.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Funciones Inversas.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Derivadas Especiales/Derivadas de Funciones Trigonométricas.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Orden Superior.md",
+    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Derivadas Parciales.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas Paramétricas.md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Tabla de Derivadas Básicas (Referencia Rápida).md",
+    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivabilidad y Continuidad.md",
+    "Figuras/Pasted image 20250824170857.png",
+    "Figuras/Pasted image 20250823130623.png",
+    "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
     "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Concavidad y Puntos de Inflexión.md",
+    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Monotonía y Puntos Críticos.md",
     "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Análisis de Funciones/Análisis Completo de Funciones.md",
     "Universidad/Calculo de una Variable/02 - Aplicaciones - Limites/Asíntotas y Comportamiento.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Asíntotas Oblicuas.md",
@@ -230,23 +245,9 @@
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Límites Laterales.md",
     "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Propiedades de los Límites.md",
     "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teorema del Emparedado (Sándwich o Squeeze).md",
-    "Universidad/Calculo de una Variable/01 - Limites/Técnicas de Calculo de Límites/Teoremas de Límites.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Límites Trigonométricos Fundamentales.md",
-    "Universidad/Calculo de una Variable/01 - Limites/Técnicas para Formas Indeterminadas/Forma Indeterminadas 0 Sobre 0.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
-    "Sin título.md",
-    "Estructura Completa FP.md",
-    "Estructura completa Fisica.md",
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco/Longitud de Arco con Integrales.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Integración por Partes.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Cambio de Variable en Integrales.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivabilidad y Continuidad.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Tabla de Derivadas Básicas (Referencia Rápida).md",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Volúmenes",
     "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Áreas",
-    "Figuras/Pasted image 20250823130623.png",
-    "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Presentación de Resultados",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis Gráfico",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas",
@@ -260,7 +261,6 @@
     "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020841.png",
     "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020940.png",
     "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721023012.png",
-    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721023023.png",
-    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721024230.png"
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721023023.png"
   ]
 }
