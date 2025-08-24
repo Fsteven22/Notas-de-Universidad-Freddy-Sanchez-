@@ -17,14 +17,14 @@
 
 ```mermaid
 graph TD
-    A[Tasa de Cambio] --> B[Promedio]
+    A["Tasa de Cambio] --> B[Promedio]"]
     A --> C[Instantánea]
     B --> D[Recta Secante]
-    B --> E[Intervalo [a,b]]
+    B --> E["Intervalo [a,b]"]
     C --> F[Recta Tangente]
     C --> G[Punto específico]
     D --> H[Pendiente = Δy/Δx]
-    F --> I[Pendiente = f'(a)]
+    F --> I["Pendiente = f'(a)"]
     
     style A fill:#e1f5fe
     style B fill:#e8f5e8
@@ -83,7 +83,7 @@ flowchart LR
     A --> D[Tasa Promedio]
     C --> E[Tasa Instantánea]
     D --> F[Δy/Δx]
-    E --> G[f'(a)]
+    E --> G["f'(a)"]
     
     style A fill:#ffebee
     style C fill:#e8f5e8
@@ -182,13 +182,13 @@ pie title Características de las Tasas de Cambio
 ```mermaid
 flowchart TD
     A[Problema de Tasa de Cambio] --> B{Intervalo o Punto?}
-    B -->|Intervalo [a,b]| C[Tasa Promedio]
-    B -->|Punto específico x=a| D[Tasa Instantánea]
+    B -->|"Intervalo [a,b]"| C[Tasa Promedio]
+    B -->|"Punto específico x=a"| D[Tasa Instantánea]
     C --> E[Usar Δy/Δx]
-    D --> F{Conoces f'(x)?}
-    F -->|Sí| G[Evaluar f'(a)]
+    D --> F{"Conoces f'(x)?"}
+    F -->|Sí| G["Evaluar f'(a)"]
     F -->|No| H[Definición de límite]
-    E --> I[Calcular f(b)-f(a)/b-a]
+    E --> I["Calcular f(b)-f(a)/b-a"]
     G --> J[Resultado e interpretación]
     H --> K[Límite h→0]
     I --> J
