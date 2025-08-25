@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teorema del Valor Medio para Integrales"
+              "title": "Concepto Intuitivo de Límite"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Teorema del Valor Medio para Integrales"
+              "title": "Enlaces salientes de Concepto Intuitivo de Límite"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Teorema del Valor Medio para Integrales"
+              "title": "Esquema de Concepto Intuitivo de Límite"
             }
           },
           {
@@ -216,6 +216,8 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
+    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco/Longitud de Arco con Integrales.md",
+    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Métodos de Integración Definida.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Integral de Funciones por Tramos.md",
     "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Integración Numérica.md",
@@ -240,8 +242,6 @@
     "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Funciones Inversas.md",
     "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Orden Superior.md",
     "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Derivadas Parciales.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas Paramétricas.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Derivabilidad y Continuidad.md",
     "Figuras/Pasted image 20250824170857.png",
     "Figuras/Pasted image 20250823130623.png",
     "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",

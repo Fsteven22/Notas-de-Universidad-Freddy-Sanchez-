@@ -623,7 +623,7 @@
 > |**Rectangular**|$x = g(y)$|$L = \int_c^d \sqrt{1 + [g'(y)]^2} , dy$|
 > |**Polar**|$r = h(\theta)$|$L = \int_\alpha^\beta \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2} , d\theta$|
 > |**Paramétrica**|$x = x(t), y = y(t)$|$L = \int_{t_1}^{t_2} \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} , dt$|
-> |**3D Paramétrica**|$\vec{r}(t) = (x(t), y(t), z(t))$|$L = \int_{t_1}^{t_2}|
+
 
 ## 📚 Referencias y Conexiones
 
