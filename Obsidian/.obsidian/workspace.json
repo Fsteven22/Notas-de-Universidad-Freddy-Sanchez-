@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
+                "file": "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Concepto Intuitivo de Límite"
+              "title": "La Paradoja Hidrostática"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "valor promedio",
+                "query": "trabajo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 522.5
   },
   "right": {
     "id": "8aa3fa143ab462de",
@@ -190,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,32 +217,32 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
-    "Universidad/Calculo de una Variable/06 - Aplicaciones - Integrales/Aplicaciones Geometricas/Longitud de Arco/Longitud de Arco con Integrales.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Teoremas Especiales/Teorema del Valor Medio para Integrales.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Métodos de Integración Definida.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Integral de Funciones por Tramos.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Integración Numérica.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Metodos y técnicas/Identidades Trigonométricas para Integrales.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Teoremas de comparación y desigualdades.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Teorema fundamental del cálculo.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Propiedades de la Sumatoria.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Propiedades de la Integral Definida.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Fundamentos teóricos (Integral)/Integral de Riemann.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Definidas/Extensiones Avanzadas/Longitud de Curva.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Técnicas de Integración/Integrales por Fracciones Parciales.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Reglas basicas/Reglas fundamentales de Derivación.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Derivadas Especiales/Derivación Logarítmica.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Reglas de Derivación/Derivadas Especiales/Derivadas de Funciones Trigonométricas.md",
-    "Universidad/Calculo de una Variable/05 - Calculo Integral/Integrales Indefinidas/Integrales Notables (Fórmulas Directas).md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Fundamentos Teoricos (Derivada)/Tabla de Derivadas Básicas (Referencia Rápida).md",
-    "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Definición Formal del Límite para Asíntotas.md",
-    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Tasas de Cambio.md",
-    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Aproximaciones Lineales y Diferenciales.md",
-    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Razones de Cambio/Razones de Cambio Relacionadas.md",
-    "Universidad/Calculo de una Variable/04 - Aplicaciones - Derivada/Optimización/Problemas de Optimización.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Funciones Inversas.md",
-    "Universidad/Calculo de una Variable/03 - Cálculo Diferencial/Técnicas Avanzadas/Derivadas de Orden Superior.md",
-    "Universidad/Física Mecanica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Derivadas Parciales.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md",
+    "Estructura completa Fisica.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/Presión y Densidad.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrodinámica/Ecuación de Continuidad y Bernoulli.md",
+    "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Elasticidad.md",
+    "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Límite Elástico y Resistencia.md",
+    "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Energía Elástica.md",
+    "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Deformación por Tensión y Compresión (Ley de Hooke).md",
+    "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Deformación por Cortante (Esfuerzo Cortante).md",
+    "Universidad/Física Mecanica/02 - Dinámica/Dinámica de Rotación/Momentum Angular.md",
+    "Universidad/Física Mecanica/03 - Trabajo y Energía/Trabajo y Energía.md",
+    "Universidad/Física Mecanica/02 - Dinámica/Aplicaciones de Dinámica de Rotación/Problemas de Cálculo de Momento de Inercia.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Pascal.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Módulo Volumétrico.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Tensión Superficial.md",
+    "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Unidades y Magnitudes Físicas.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Flujo con Viscosidad (Poiseuille).md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Flotabilidad y Empuje en Fluidos en Movimiento.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Continuidad.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Bernoulli.md",
+    "01 - Dashboard/Operativo Diario/Pendientes.md",
+    "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Vectores.md",
+    "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Conocimientos Previos a las Prácticas.md",
+    "07 - Tecnología Digital/Gamificación Personal.md",
+    "Universidad/Física Mecanica/01 - Cinemática/Aplicaciones de Cinemática Rotacional/Problemas con aceleraciones (tangencial y centrípeta).md",
     "Figuras/Pasted image 20250824170857.png",
     "Figuras/Pasted image 20250823130623.png",
     "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",

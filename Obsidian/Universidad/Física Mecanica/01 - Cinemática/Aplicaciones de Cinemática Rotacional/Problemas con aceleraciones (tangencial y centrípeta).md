@@ -1,4 +1,4 @@
-# Problemas con aceleraciones (tangencial y centrípeta)
+# Problemas con aceleraciones (tangencial y centrípeta) 
 
 > [!quote] "En el movimiento circular, la aceleración no solo cambia la rapidez, sino que también mantiene la curvatura del camino; entender sus componentes es dominar la danza entre velocidad y dirección." 🌀
 

@@ -88,7 +88,7 @@ Física Mecánica
 │   ├── Fundamentos de Hidrostática e Hidrodinámica
 │   │   ├── Peso Real vs Peso Aparente.md
 │   │   ├── Presión y Densidad.md
-│   │   ├── Teorema de los Vasos Comunicantes.md
+│   │   ├── La Paradoja Hidrostática 
 │   ├── Hidrodinámica
 │   │   ├── Ecuación de Continuidad y Bernoulli.md
 │   │   ├── Flujo Laminar y Ecuación de Poiseuille.md
@@ -99,6 +99,7 @@ Física Mecánica
 │   │   ├── Módulo Volumétrico.md
 │   │   ├── Presión Manómetrica.md
 │   │   ├── Tensión Superficial.md
+│   │   ├── Teorema de los Vasos Comunicantes.md
 ├── Fundamentos de Física Mecánica
 │   ├── Conocimientos Previos a las Prácticas.md
 │   ├── Unidades y Magnitudes Físicas.md
