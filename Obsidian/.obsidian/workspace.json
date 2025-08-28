@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md",
-                "mode": "source",
+                "file": "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.2 Intro a Pandas.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "La Paradoja Hidrostática"
+              "title": "Módulo 6.2 Intro a Pandas"
             }
           }
         ]
@@ -217,11 +217,20 @@
   },
   "active": "ba4daf3b56e06153",
   "lastOpenFiles": [
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md",
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md",
-    "Estructura completa Fisica.md",
+    "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.3 Manipulación de Datos.md",
+    "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.2 Intro a Pandas.md",
+    "Universidad/Fundamentos de Programación/Módulo 6 - Pandas/Módulo 6.1 Introducción a NumPy.md",
+    "01 - Dashboard/Operativo Diario/Notas de hoy.md",
+    "01 - Dashboard/Operativo Diario/Enlaces Rápidos.md",
+    "01 - Dashboard/Operativo Diario/Pendientes.md",
     "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/Presión y Densidad.md",
     "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrodinámica/Ecuación de Continuidad y Bernoulli.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Presión Manómetrica.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Módulo Volumétrico.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrodinámica/Flujo Laminar y Ecuación de Poiseuille.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md",
+    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md",
+    "Estructura completa Fisica.md",
     "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Elasticidad.md",
     "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Límite Elástico y Resistencia.md",
     "Universidad/Física Mecanica/05 - Equilibrio y Elasticidad/Aplicaciones de Elasticidad/Problemas de Energía Elástica.md",
@@ -231,18 +240,9 @@
     "Universidad/Física Mecanica/03 - Trabajo y Energía/Trabajo y Energía.md",
     "Universidad/Física Mecanica/02 - Dinámica/Aplicaciones de Dinámica de Rotación/Problemas de Cálculo de Momento de Inercia.md",
     "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Pascal.md",
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Módulo Volumétrico.md",
     "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Hidrostática/Tensión Superficial.md",
     "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Unidades y Magnitudes Físicas.md",
     "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Flujo con Viscosidad (Poiseuille).md",
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Flotabilidad y Empuje en Fluidos en Movimiento.md",
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Continuidad.md",
-    "Universidad/Física Mecanica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Bernoulli.md",
-    "01 - Dashboard/Operativo Diario/Pendientes.md",
-    "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Vectores.md",
-    "Universidad/Física Mecanica/Fundamentos de Física Mecánica/Conocimientos Previos a las Prácticas.md",
-    "07 - Tecnología Digital/Gamificación Personal.md",
-    "Universidad/Física Mecanica/01 - Cinemática/Aplicaciones de Cinemática Rotacional/Problemas con aceleraciones (tangencial y centrípeta).md",
     "Figuras/Pasted image 20250824170857.png",
     "Figuras/Pasted image 20250823130623.png",
     "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
