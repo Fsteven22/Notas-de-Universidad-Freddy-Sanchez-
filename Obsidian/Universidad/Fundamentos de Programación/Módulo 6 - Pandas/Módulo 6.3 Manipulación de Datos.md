@@ -1,470 +1,681 @@
-# Módulo 6.3: Manipulación de Datos
+# Módulo 6.3: Manipulación de Datos  📊
 
-> [!quote] "Los datos son el nuevo petróleo, pero solo cuando sabemos refinarlos y extraer su valor." 📊
+> [!quote] "Los datos son el nuevo petróleo, pero solo cuando sabemos refinarlos y extraer su valor real." 🛢️
 
-> [!info]- La manipulación de datos es una habilidad fundamental en el análisis de información. A través de técnicas de filtrado, agregación y transformación, podemos extraer insights valiosos de conjuntos de datos complejos. Este módulo te enseñará las herramientas esenciales para convertir datos crudos en información accionable.
+> [!info]- La manipulación de datos es una habilidad fundamental en el análisis de información moderna. En la era del Big Data, la capacidad de filtrar, agregar, transformar y visualizar datos determina la calidad de nuestras decisiones. Pandas, la biblioteca más poderosa de Python para análisis de datos, nos proporciona herramientas intuitivas y eficientes para convertir datos crudos en insights accionables. Este módulo te enseñará las técnicas esenciales de manipulación de datos usando el dataset de vuelos como caso de estudio práctico.
 
-## 📋 Objetivos del Módulo
+## Conceptos Fundamentales
 
-> [!success]- **Al finalizar este módulo podrás:**
+> [!info]- **Dataset de Referencia: Vuelos de Aerolíneas** ✈️
 > 
-> - Aplicar filtros complejos usando operadores lógicos
-> - Realizar agregaciones y cálculos estadísticos descriptivos
-> - Utilizar `groupby()` para análisis por categorías
-> - Crear visualizaciones básicas para explorar datos
-> - Manipular y transformar datos de manera eficiente
+> Para este módulo utilizaremos el dataset `flights` de Seaborn, que contiene registros históricos de pasajeros de aerolíneas (en miles) organizados por mes y año, cubriendo el período 1949-1960. Este dataset es perfecto para análisis temporal y estacional.
+> 
+> **Características del Dataset:**
+> 
+> - **Filas:** 144 registros (12 años × 12 meses)
+> - **Columnas:** 3 variables (year, month, passengers)
+> - **Período:** 1949-1960
+> - **Medición:** Miles de pasajeros por mes
+> 
+> **Carga del Dataset:**
+> 
+> ```python
+> import pandas as pd
+> import seaborn as sns
+> import matplotlib.pyplot as plt 
+> 
+> # Carga directa desde Seaborn
+> df = sns.load_dataset('flights')
+> print("Dataset de Vuelos:")
+> print(df.head())
+> print(f"Forma: {df.shape}")
+> ```
+> 
+> |Variable|Tipo|Descripción|
+> |---|---|---|
+> |year|int64|Año (1949-1960)|
+> |month|object|Mes abreviado (Jan, Feb, etc.)|
+> |passengers|int64|Miles de pasajeros transportados|
 
-## 🔍 1. Filtrado y Operaciones Lógicas
-
-> [!tip]- **Operadores Lógicos en Pandas** 🎯
+> [!tip]- **Operadores Lógicos para Filtrado** 🔍
 > 
-> Los filtros nos permiten extraer subconjuntos específicos de nuestros datos:
+> Los operadores lógicos son la base del filtrado inteligente en Pandas. Permiten crear condiciones complejas para extraer subconjuntos específicos de datos.
 > 
-> ### Operadores Principales:
+> **Tabla de Operadores:**
 > 
-> - **`&`** (AND): Ambas condiciones deben ser verdaderas
-> - **`|`** (OR): Al menos una condición debe ser verdadera
-> - **`~`** (NOT): Invierte la condición lógica
+> |Operador|Significado|Función|Ejemplo|
+> |---|---|---|---|
+> |`&`|AND (Y)|Ambas condiciones verdaderas|`(df['year'] > 1955) & (df['month'] == 'Jul')`|
+> |`\|`|OR (O)|Al menos una condición verdadera|`(df['year'] == 1949) \| (df['year'] == 1960)`|
+> |`~`|NOT (NO)|Invierte la condición|`~(df['month'] == 'Dec')`|
 > 
-> ### Sintaxis Básica:
+> **Reglas Críticas:**
+> 
+> - Siempre usar paréntesis en condiciones múltiples
+> - Los operadores de Pandas (`&`, `|`, `~`) son diferentes a Python (`and`, `or`, `not`)
+> - Cada condición debe ser una expresión booleana válida
+> 
+> **Patrones Comunes:**
 > 
 > ```python
 > # Filtro simple
 > df[df['columna'] > valor]
 > 
-> # Filtros múltiples
-> df[(df['col1'] > valor1) & (df['col2'] == valor2)]
-> df[(df['col1'] == 'A') | (df['col1'] == 'B')]
-> df[~(df['columna'] == valor)]  # Todos excepto este valor
+> # Filtro múltiple
+> df[(condición1) & (condición2)]
+> 
+> # Exclusión
+> df[~(df['columna'] == valor)]
 > ```
 
-> [!example]- **Ejemplo Práctico: Dataset de Vuelos** ✈️
+> [!warning]- **Sustitución Condicional: .where() vs .mask()** 🔄
+> 
+> Estos métodos permiten reemplazar valores basados en condiciones lógicas sin eliminar filas del DataFrame.
+> 
+> **Diferencias Fundamentales:**
+> 
+> |Método|Comportamiento|Mantiene cuando|Reemplaza cuando|
+> |---|---|---|---|
+> |`.where()`|Mantiene valores TRUE|Condición = True|Condición = False|
+> |`.mask()`|Mantiene valores FALSE|Condición = False|Condición = True|
+> 
+> **Sintaxis y Ejemplos:**
 > 
 > ```python
-> import pandas as pd
-> import seaborn as sns
+> # .where(): mantiene donde condición es True
+> df['nueva'] = df['columna'].where(df['columna'] > 100, 'Bajo')
 > 
-> # Cargar dataset de vuelos
-> df = sns.load_dataset('flights')
+> # .mask(): mantiene donde condición es False  
+> df['nueva'] = df['columna'].mask(df['columna'] <= 100, 'Alto')
 > 
-> # Filtrar vuelos de julio después de 1955
-> vuelos_julio_recientes = df[(df['month'] == 'Jul') & (df['year'] > 1955)]
-> 
-> # Vuelos del primer y último año
-> vuelos_extremos = df[(df['year'] == 1949) | (df['year'] == 1960)]
-> 
-> # Todos los meses excepto diciembre
-> sin_diciembre = df[~(df['month'] == 'Dec')]
-> ```
-
-> [!warning]- **Sustitución Condicional** 🔄
-> 
-> Para reemplazar valores basados en condiciones:
-> 
-> ### `.where()` y `.mask()`:
-> 
-> ```python
-> # .where(): mantiene valores donde la condición es True
-> df['nueva_col'] = df['columna'].where(df['columna'] > 100, other='Bajo')
-> 
-> # .mask(): mantiene valores donde la condición es False
-> df['nueva_col'] = df['columna'].mask(df['columna'] <= 100, other='Alto')
-> ```
-
-## 📊 2. Estadísticas Descriptivas y Agregaciones
-
-> [!info]- **Resumen Estadístico con `.describe()`** 📈
-> 
-> El método más rápido para obtener un panorama general:
-> 
-> ```python
-> # Estadísticas completas de columnas numéricas
-> print(df.describe())
-> 
-> # Estadísticas de una columna específica
-> print(df['passengers'].describe())
+> # Ejemplo práctico: Categorizar décadas
+> df['decada'] = df['year'].where(df['year'] >= 1955, 'Inicio')
+> df['decada'] = df['decada'].mask(df['year'] >= 1955, 'Final')
 > ```
 > 
-> ### Métricas Individuales:
+> **⚠️ Precauciones:**
 > 
-> |Método|Descripción|Ejemplo|
+> - El parámetro `other` define el valor de reemplazo
+> - Sin `other`, los valores reemplazados se vuelven NaN
+> - Útil para categorización y limpieza de datos
+
+> [!info]- **Estadísticas Descriptivas Esenciales** 📈
+> 
+> Las estadísticas descriptivas proporcionan un resumen cuantitativo completo de nuestros datos, revelando patrones, tendencias y anomalías.
+> 
+> **Métodos de Resumen Rápido:**
+> 
+> |Método|Output|Información Clave|
 > |---|---|---|
-> |`.mean()`|Promedio|`df['col'].mean()`|
-> |`.median()`|Mediana|`df['col'].median()`|
-> |`.mode()`|Moda|`df['col'].mode()`|
-> |`.std()`|Desviación estándar|`df['col'].std()`|
-> |`.min()/.max()`|Valores extremos|`df['col'].min()`|
-> |`.sum()`|Suma total|`df['col'].sum()`|
-> |`.count()`|Conteo de valores|`df['col'].count()`|
-
-> [!example]- **Análisis Exploratorio Básico** 🔍
+> |`.describe()`|8 estadísticas principales|count, mean, std, min, 25%, 50%, 75%, max|
+> |`.info()`|Metadata del DataFrame|tipos, memoria, valores nulos|
+> |`.shape`|Dimensiones|(filas, columnas)|
+> 
+> **Estadísticas Individuales:**
+> 
+> |Medida|Método|Descripción|Interpretación|
+> |---|---|---|---|
+> |**Tendencia Central**|`.mean()`|Promedio aritmético|Valor típico esperado|
+> ||`.median()`|Valor central|Menos afectado por outliers|
+> ||`.mode()`|Valor más frecuente|Patrón más común|
+> |**Dispersión**|`.std()`|Desviación estándar|Variabilidad alrededor de la media|
+> ||`.var()`|Varianza|Dispersión al cuadrado|
+> |**Extremos**|`.min()` / `.max()`|Valores límite|Rango de datos|
+> ||`.sum()`|Suma total|Agregación completa|
+> |**Conteo**|`.count()`|Valores no nulos|Completitud de datos|
+> 
+> **Ejemplo Completo:**
 > 
 > ```python
-> # Estadísticas clave del dataset de vuelos
-> print(f"Promedio mensual: {df['passengers'].mean():.0f} mil pasajeros")
-> print(f"Máximo histórico: {df['passengers'].max()} mil pasajeros")
-> print(f"Total periodo: {df['passengers'].sum():,} mil pasajeros")
-> 
-> # Encontrar los 5 meses con más tráfico
-> top_5 = df.sort_values('passengers', ascending=False).head()
-> print("\nTop 5 meses con más pasajeros:")
-> print(top_5[['year', 'month', 'passengers']])
+> # Resumen completo
+> stats = df['passengers'].describe()
+> print("Estadísticas de Pasajeros:")
+> print(f"Promedio: {df['passengers'].mean():.0f} mil")
+> print(f"Mediana: {df['passengers'].median():.0f} mil") 
+> print(f"Desv. Estándar: {df['passengers'].std():.2f}")
+> print(f"Rango: {df['passengers'].max() - df['passengers'].min()}")
 > ```
 
-## 🎲 3. Análisis por Categorías con `groupby()`
+## Estrategias y Métodos
 
-> [!success]- **El Poder del GroupBy** 🚀
+> [!tip]- **Método FILTRA para Filtrado Sistemático** 🎯
 > 
-> `groupby()` es una de las herramientas más poderosas para análisis de datos:
+> **F**ormular pregunta específica **I**dentificar columnas relevantes  
+> **L**ógica de condiciones (AND/OR/NOT) **T**estear filtro con subset pequeño **R**evisar resultados y validar **A**plicar a análisis completo
 > 
-> ### Concepto: **Dividir-Aplicar-Combinar**
+> **Proceso Detallado:**
 > 
-> ```mermaid
-> graph LR
->     A[DataFrame Original] --> B[Dividir por Categoría]
->     B --> C[Aplicar Función]
->     C --> D[Combinar Resultados]
->     
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
-> ```
+> 1. **Formular:** "¿Qué registros necesito exactamente?"
+> 2. **Identificar:** Determinar columnas clave para el filtro
+> 3. **Lógica:** Construir condiciones con operadores apropiados
+> 4. **Testear:** Probar con `.head()` o `.sample()`
+> 5. **Revisar:** Verificar que los resultados tengan sentido
+> 6. **Aplicar:** Usar en análisis o visualización final
 > 
-> ### Sintaxis Básica:
+> **Ejemplo Aplicado:**
 > 
 > ```python
-> # Agrupar por una columna
-> df.groupby('categoria')['valor'].funcion()
-> 
-> # Agrupar por múltiples columnas
-> df.groupby(['cat1', 'cat2'])['valor'].funcion()
-> 
-> # Múltiples agregaciones
-> df.groupby('categoria').agg({
->     'col1': 'sum',
->     'col2': 'mean',
->     'col3': ['min', 'max']
-> })
+> # 1. Formular: "Vuelos de verano en años recientes"
+> # 2. Identificar: 'month' y 'year' 
+> # 3. Lógica: (year > 1955) AND (month in [Jun,Jul,Aug])
+> # 4. Testear:
+> filtro = (df['year'] > 1955) & (df['month'].isin(['Jun','Jul','Aug']))
+> resultado = df[filtro]
+> print(f"Registros encontrados: {len(resultado)}")
+> # 5. Revisar: ¿Sentido lógico? ¿Cantidad esperada?
+> # 6. Aplicar: Usar para análisis estacional
 > ```
 
-> [!example]- **Ejemplos Prácticos de GroupBy** 📋
+> [!tip]- **Método AGRUPA para GroupBy Efectivo** 🎲
+> 
+> **A**nalizar objetivo de agrupación **G**rupar por categoría relevante **R**evisar grupos formados **U**sar función de agregación apropiada **P**rocesar resultados (ordenar/formatear) **A**nalizar e interpretar patrones
+> 
+> **Guía de Funciones de Agregación:**
+> 
+> |Objetivo|Función|Cuándo Usar|
+> |---|---|---|
+> |**Totales**|`.sum()`|Acumulación por período/categoría|
+> |**Promedios**|`.mean()`|Tendencias típicas por grupo|
+> |**Conteos**|`.count()`|Frecuencias y distribuciones|
+> |**Extremos**|`.min()/.max()`|Valores límite por categoría|
+> |**Variabilidad**|`.std()`|Consistencia dentro de grupos|
+> |**Múltiples**|`.agg(['mean','sum'])`|Análisis comprehensivo|
+> 
+> **Implementación Sistemática:**
 > 
 > ```python
-> # Análisis temporal: pasajeros por año
-> por_año = df.groupby('year')['passengers'].sum()
+> # A: Objetivo = "Tendencia anual de tráfico"
+> # G: Agrupar por 'year'
+> grupos = df.groupby('year')
+> # R: Revisar grupos
+> print(f"Número de grupos: {grupos.ngroups}")
+> # U: Función = sum (total anual)
+> resultado = grupos['passengers'].sum()
+> # P: Procesar (ya está ordenado por año)
+> # A: Analizar tendencia de crecimiento
+> ```
+
+## Ejemplos Prácticos
+
+> [!example]- **Ejemplo 1: Análisis de Filtrado Avanzado** 🔍
+> 
+> **Objetivo:** Identificar patrones en vuelos de julio posteriores a 1955 y comparar con el resto de datos.
+> 
+> **Desarrollo Paso a Paso:**
+> 
+> ```python
+> # Paso 1: Filtro específico
+> vuelos_julio_recientes = df[(df['month'] == 'Jul') & (df['year'] > 1955)]
+> print("Vuelos de Julio después de 1955:")
+> print(vuelos_julio_recientes)
+> print(f"Registros encontrados: {len(vuelos_julio_recientes)}")
+> 
+> # Paso 2: Estadísticas del subset
+> promedio_julio = vuelos_julio_recientes['passengers'].mean()
+> max_julio = vuelos_julio_recientes['passengers'].max()
+> print(f"Promedio Julio reciente: {promedio_julio:.1f} mil")
+> print(f"Máximo Julio reciente: {max_julio} mil")
+> 
+> # Paso 3: Comparación con promedio general
+> promedio_general = df['passengers'].mean()
+> diferencia = promedio_julio - promedio_general
+> print(f"Diferencia vs promedio general: {diferencia:.1f} mil")
+> 
+> # Paso 4: Análisis de exclusión (NOT)
+> sin_julio_reciente = df[~((df['month'] == 'Jul') & (df['year'] > 1955))]
+> print(f"Registros SIN julio reciente: {len(sin_julio_reciente)}")
+> ```
+> 
+> **Resultados y Análisis:**
+> 
+> - Registros filtrados: 5 (años 1956-1960)
+> - Promedio específico vs general: Comparación de tendencias
+> - Validación de lógica con operador NOT
+> 
+> **Insight:** Los julios recientes muestran el impacto del crecimiento del tráfico aéreo en el período de post-guerra.
+
+> [!example]- **Ejemplo 2: GroupBy para Análisis Temporal y Estacional** 📅
+> 
+> **Objetivo:** Analizar la evolución anual y los patrones estacionales del tráfico aéreo.
+> 
+> **Análisis Anual Completo:**
+> 
+> ```python
+> # Análisis por año - Dividir, Aplicar, Combinar
+> print("=== ANÁLISIS ANUAL ===")
+> 
+> # Dividir por año, aplicar suma, combinar resultados
+> pasajeros_por_año = df.groupby('year')['passengers'].sum()
 > print("Evolución anual del tráfico:")
-> print(por_año)
+> print(pasajeros_por_año)
 > 
-> # Análisis estacional: promedio por mes
+> # Identificar año pico
+> año_pico = pasajeros_por_año.idxmax()
+> tráfico_pico = pasajeros_por_año.max()
+> print(f"\nAño con más tráfico: {año_pico} ({tráfico_pico:,} mil)")
+> 
+> # Calcular crecimiento total
+> crecimiento = ((pasajeros_por_año.iloc[-1] / pasajeros_por_año.iloc[0]) - 1) * 100
+> print(f"Crecimiento total período: {crecimiento:.1f}%")
+> ```
+> 
+> **Análisis Estacional:**
+> 
+> ```python
+> print("\n=== ANÁLISIS ESTACIONAL ===")
+> 
+> # Promedio por mes para identificar estacionalidad
 > estacionalidad = df.groupby('month')['passengers'].mean().sort_values(ascending=False)
-> print("\nEstacionalidad mensual:")
-> print(estacionalidad)
+> print("Ranking estacional (promedio por mes):")
+> for i, (mes, promedio) in enumerate(estacionalidad.items(), 1):
+>     print(f"{i:2d}. {mes}: {promedio:5.1f} mil pasajeros")
 > 
-> # Análisis complejo: estadísticas por década
-> df['decade'] = (df['year'] // 10) * 10
-> stats_decada = df.groupby('decade')['passengers'].agg(['count', 'mean', 'std', 'sum'])
-> print("\nEstadísticas por década:")
-> print(stats_decada)
+> # Cálculo de amplitud estacional
+> pico_estacional = estacionalidad.max()
+> valle_estacional = estacionalidad.min()
+> amplitud = pico_estacional - valle_estacional
+> 
+> print(f"\nPico estacional: {estacionalidad.idxmax()} ({pico_estacional:.1f})")
+> print(f"Valle estacional: {estacionalidad.idxmin()} ({valle_estacional:.1f})")
+> print(f"Amplitud estacional: {amplitud:.1f} mil pasajeros")
 > ```
+> 
+> **Resultados Esperados:**
+> 
+> - Crecimiento sostenido año tras año
+> - Estacionalidad clara con picos en verano
+> - Patrones consistentes a lo largo del período
 
-> [!tip]- **Funciones de Agregación Avanzadas** 🧮
+> [!example]- **Ejemplo 3: Visualización Integrada con Análisis** 📊
+> 
+> **Objetivo:** Crear visualizaciones que complementen el análisis de datos para identificar tendencias y patrones.
+> 
+> **Gráfico de Tendencia Anual:**
 > 
 > ```python
-> # Múltiples estadísticas a la vez
-> resumen_completo = df.groupby('year').agg({
->     'passengers': ['sum', 'mean', 'std', 'count'],
->     'month': 'nunique'  # Número de meses únicos por año
-> })
-> 
-> # Agregaciones personalizadas
-> def rango(serie):
->     return serie.max() - serie.min()
-> 
-> df.groupby('year')['passengers'].apply(rango)
-> ```
-
-## 📈 4. Visualización Básica con Pandas
-
-> [!info]- **Integración con Matplotlib** 🎨
-> 
-> Pandas se integra perfectamente con Matplotlib para crear visualizaciones rápidas:
-> 
-> ```python
-> import matplotlib.pyplot as plt
-> 
-> # Configuración básica para mejores gráficos
+> # Configuración de visualización
 > plt.style.use('seaborn-v0_8')
-> plt.rcParams['figure.figsize'] = (12, 8)
-> ```
-
-> [!example]- **Gráfico de Líneas: Tendencias Temporales** 📊
 > 
-> Perfecto para mostrar evolución en el tiempo:
+> # Gráfico 1: Evolución anual
+> pasajeros_por_año = df.groupby('year')['passengers'].sum()
 > 
-> ```python
-> # Evolución anual del tráfico
-> pasajeros_anuales = df.groupby('year')['passengers'].sum()
+> plt.figure(figsize=(12, 6))
+> pasajeros_por_año.plot(kind='line', marker='o', linewidth=3, markersize=8, color='steelblue')
 > 
-> pasajeros_anuales.plot(kind='line', 
->                       marker='o', 
->                       linewidth=2,
->                       markersize=8,
->                       color='steelblue')
-> 
-> plt.title('Evolución del Tráfico Aéreo (1949-1960)', fontsize=16, pad=20)
+> plt.title('Evolución del Tráfico Anual de Pasajeros (1949-1960)', fontsize=14)
+> plt.ylabel('Total de Pasajeros (miles)', fontsize=12)
 > plt.xlabel('Año', fontsize=12)
-> plt.ylabel('Pasajeros (miles)', fontsize=12)
 > plt.grid(True, alpha=0.3)
-> plt.tight_layout()
+> 
+> # Anotación del pico
+> año_max = pasajeros_por_año.idxmax()
+> valor_max = pasajeros_por_año.max()
+> plt.annotate(f'Pico: {valor_max:,}', 
+>              xy=(año_max, valor_max),
+>              xytext=(año_max-1, valor_max+100),
+>              arrowprops=dict(arrowstyle='->', color='red'))
 > plt.show()
 > ```
-
-> [!example]- **Gráfico de Barras: Comparación de Categorías** 📊
 > 
-> Ideal para comparar valores entre diferentes grupos:
+> **Gráfico de Estacionalidad:**
 > 
 > ```python
-> # Análisis estacional
+> # Gráfico 2: Patrones estacionales
 > estacionalidad = df.groupby('month')['passengers'].mean()
 > 
-> # Reordenar meses cronológicamente
-> orden_meses = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
->                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-> estacionalidad = estacionalidad.reindex(orden_meses)
+> plt.figure(figsize=(12, 6))
+> estacionalidad.plot(kind='bar', color='coral', edgecolor='black', alpha=0.8)
 > 
-> estacionalidad.plot(kind='bar', 
->                    color='lightcoral',
->                    edgecolor='black',
->                    alpha=0.8)
-> 
-> plt.title('Estacionalidad del Tráfico Aéreo', fontsize=16, pad=20)
-> plt.xlabel('Mes', fontsize=12)
+> plt.title('Patrones Estacionales - Promedio de Pasajeros por Mes', fontsize=14)
 > plt.ylabel('Promedio de Pasajeros (miles)', fontsize=12)
+> plt.xlabel('Mes', fontsize=12)
 > plt.xticks(rotation=45)
+> 
+> # Línea de referencia (promedio general)
+> promedio_general = df['passengers'].mean()
+> plt.axhline(y=promedio_general, color='red', linestyle='--', 
+>             label=f'Promedio general: {promedio_general:.0f}')
+> plt.legend()
 > plt.tight_layout()
 > plt.show()
 > ```
-
-> [!example]- **Boxplot: Distribución por Categorías** 📦
 > 
-> Excelente para entender la distribución y variabilidad:
+> **Boxplot de Distribución:**
 > 
 > ```python
-> # Distribución anual de pasajeros
-> df.boxplot(column='passengers', 
->           by='year', 
->           figsize=(14, 8),
->           patch_artist=True)
+> # Gráfico 3: Distribución anual (variabilidad)
+> plt.figure(figsize=(14, 8))
+> df.boxplot(column='passengers', by='year', figsize=(14, 8))
 > 
-> plt.suptitle('')  # Remover título automático
-> plt.title('Distribución Mensual de Pasajeros por Año', fontsize=16, pad=20)
-> plt.xlabel('Año', fontsize=12)
-> plt.ylabel('Pasajeros (miles)', fontsize=12)
-> plt.tight_layout()
+> plt.title('Distribución del Tráfico Mensual por Año')
+> plt.suptitle('')  # Quitar título automático
+> plt.ylabel('Pasajeros (miles)')
+> plt.xlabel('Año')
 > plt.show()
 > ```
 
-## 🛠️ Técnicas Avanzadas de Manipulación
+## Proceso de Análisis
 
-> [!tip]- **Transformaciones y Operaciones Vectorizadas** ⚡
+> [!success] 🔄 **Flujo de Manipulación de Datos**
+> 
+> ```mermaid
+> graph TD
+>     A[📥 Cargar Dataset] --> B[🔍 Exploración Inicial]
+>     B --> C[📊 Estadísticas Descriptivas]
+>     C --> D{🤔 ¿Filtrado Necesario?}
+>     D -->|Sí| E[⚙️ Aplicar Filtros]
+>     D -->|No| F[🎲 GroupBy Análisis]
+>     E --> F
+>     F --> G[📈 Agregaciones]
+>     G --> H[📊 Visualización]
+>     H --> I[🧠 Interpretación]
+>     I --> J[📝 Conclusiones]
+>     
+>     style A fill:#e1f5fe
+>     style F fill:#f3e5f5
+>     style H fill:#fff3e0
+>     style J fill:#e8f5e8
+> ```
+
+## Técnicas de Implementación
+
+> [!note]- **Herramientas y Configuración Óptima** 🛠️
+> 
+> **Librerías Esenciales:**
 > 
 > ```python
-> # Crear nuevas variables derivadas
-> df['passengers_scaled'] = df['passengers'] / 1000  # En millones
-> df['season'] = df['month'].map({
->     'Dec': 'Winter', 'Jan': 'Winter', 'Feb': 'Winter',
->     'Mar': 'Spring', 'Apr': 'Spring', 'May': 'Spring',
->     'Jun': 'Summer', 'Jul': 'Summer', 'Aug': 'Summer',
->     'Sep': 'Fall', 'Oct': 'Fall', 'Nov': 'Fall'
+> import pandas as pd           # Manipulación de datos
+> import seaborn as sns        # Datasets y visualización avanzada  
+> import matplotlib.pyplot as plt  # Visualización básica
+> import numpy as np           # Operaciones numéricas
+> ```
+> 
+> **Configuración Recomendada:**
+> 
+> ```python
+> # Configuración de pandas
+> pd.set_option('display.max_columns', None)
+> pd.set_option('display.width', None)
+> pd.set_option('display.precision', 2)
+> 
+> # Configuración de matplotlib
+> plt.style.use('seaborn-v0_8')
+> plt.rcParams['figure.figsize'] = (12, 8)
+> plt.rcParams['font.size'] = 12
+> ```
+> 
+> **Procedimiento de Carga de Datos:**
+> 
+> ```python
+> # Método 1: Desde Seaborn (datasets integrados)
+> df = sns.load_dataset('flights')
+> 
+> # Método 2: Desde archivo CSV
+> df = pd.read_csv('archivo.csv')
+> 
+> # Método 3: Desde Excel
+> df = pd.read_excel('archivo.xlsx', sheet_name='Hoja1')
+> 
+> # Verificación post-carga
+> print(f"Forma: {df.shape}")
+> print(f"Columnas: {list(df.columns)}")
+> print(f"Tipos: {df.dtypes.to_dict()}")
+> ```
+> 
+> **Materiales de Práctica:**
+> 
+> - Dataset flights (integrado en Seaborn)
+> - Jupyter Notebook o IDE Python
+> - Documentación oficial de Pandas
+> - Ejemplos de referencia guardados
+
+## Técnicas de Memorización
+
+> [!tip]- **Mnemotecnia: "PANDAS"** 🐼
+> 
+> **P**reguntar qué información necesito **A**plicar filtros con operadores lógicos (&, |, ~)  
+> **N**avegar por grupos con groupby() **D**escribir datos con estadísticas (.describe()) **A**gregar funciones de resumen (sum, mean, count) **S**implificar con visualizaciones (.plot())
+> 
+> **Expansión Detallada:**
+> 
+> - **P - Preguntar:** Antes de filtrar, definir exactamente qué registros necesito
+> - **A - Aplicar:** Usar paréntesis en condiciones múltiples, recordar que & ≠ and
+> - **N - Navegar:** GroupBy = dividir-aplicar-combinar, pensar en categorías
+> - **D - Describir:** .describe() es el primer paso para entender los datos
+> - **A - Agregar:** Elegir la función correcta: sum para totales, mean para promedios
+> - **S - Simplificar:** Una visualización vale más que mil números
+> 
+> **Frase Nemotécnica:** _"Para Analizar Necesito Datos Agregados Sistemáticamente"_
+
+> [!tip]- **Acrónimos para Operadores Lógicos: "YON"** 🎯
+> 
+> **Y** → & (AND) - **Y**a que ambas condiciones deben cumplirse **O** → | (OR) - **O**tra opción es que una condición se cumpla  
+> **N** → ~ (NOT) - **N**iega o invierte la condición
+> 
+> **Reglas Mnemotécnicas:**
+> 
+> - **&**: Piensa en "ANDar" - necesitas ambos pies para andar
+> - **|**: Piensa en "ORigen" - múltiples caminos al mismo origen
+> - **~**: Piensa en "NO tildes" - la tilde invierte el significado
+
+## Errores Comunes
+
+> [!warning]- **Errores Frecuentes en Filtrado y GroupBy** ⚠️
+> 
+> |Error|Problema|Consecuencia|Corrección|
+> |---|---|---|---|
+> |**Paréntesis faltantes**|`df[df['A'] > 5 & df['B'] == 'X']`|Error de sintaxis|`df[(df['A'] > 5) & (df['B'] == 'X')]`|
+> |**Operadores incorrectos**|`df[(df['A'] > 5) and (df['B'] == 'X')]`|Error de tipos|Usar `&` en lugar de `and`|
+> |**Comparación con NaN**|`df[df['col'] == np.nan]`|Siempre devuelve False|`df[df['col'].isna()]`|
+> |**GroupBy sin agregación**|`df.groupby('col')`|Solo objeto groupby|`df.groupby('col')['target'].mean()`|
+> |**Índices duplicados**|No resetear índice después de filtro|Problemas en operaciones|`df.reset_index(drop=True)`|
+> |**Tipos de datos inconsistentes**|Agrupar strings y números|Resultados inesperados|Verificar `.dtypes` antes|
+> |**Visualización sin configurar**|Plot directo sin parámetros|Gráficos poco legibles|Configurar `figsize`, títulos, etc.|
+> 
+> **Debugging Sistemático:**
+> 
+> ```python
+> # 1. Verificar tipos de datos
+> print(df.dtypes)
+> 
+> # 2. Probar filtros paso a paso
+> cond1 = df['year'] > 1955
+> cond2 = df['month'] == 'Jul'
+> resultado = df[cond1 & cond2]
+> 
+> # 3. Validar grupos antes de agregar
+> grupos = df.groupby('year')
+> print(f"Grupos creados: {grupos.ngroups}")
+> print(f"Tamaños: {grupos.size()}")
+> ```
+
+## Criterios de Calidad
+
+> [!info]- **Evaluación de Análisis de Datos** ✅
+> 
+> **Lista de Verificación - Filtrado:**
+> 
+> - [ ] Condiciones lógicas correctamente parentizadas
+> - [ ] Uso apropiado de operadores (&, |, ~)
+> - [ ] Validación de resultados con conteos
+> - [ ] Manejo adecuado de valores nulos
+> - [ ] Filtros documentados y comentados
+> 
+> **Lista de Verificación - Estadísticas:**
+> 
+> - [ ] Uso de .describe() para resumen inicial
+> - [ ] Cálculo de medidas de tendencia central
+> - [ ] Evaluación de dispersión y variabilidad
+> - [ ] Identificación de valores extremos
+> - [ ] Interpretación contextual de resultados
+> 
+> **Lista de Verificación - GroupBy:**
+> 
+> - [ ] Agrupación por variables categóricas apropiadas
+> - [ ] Función de agregación alineada con objetivo
+> - [ ] Validación del número de grupos generados
+> - [ ] Ordenamiento lógico de resultados
+> - [ ] Interpretación de patrones encontrados
+> 
+> **Lista de Verificación - Visualización:**
+> 
+> - [ ] Tipo de gráfico apropiado para los datos
+> - [ ] Títulos y etiquetas descriptivos
+> - [ ] Escala y proporción adecuadas
+> - [ ] Colores y estilos profesionales
+> - [ ] Interpretación clara de insights
+> 
+> **Criterios de Puntuación (0-100):**
+> 
+> - **Precisión técnica (30%):** Código funciona sin errores
+> - **Apropiada metodología (25%):** Métodos correctos para objetivos
+> - **Interpretación (25%):** Insights válidos y relevantes
+> - **Presentación (20%):** Visualización clara y profesional
+
+## Aplicaciones Específicas
+
+> [!info]- **Contextos de Aplicación en Diferentes Industrias** 🏢
+> 
+> **Sector Financiero:**
+> 
+> - Análisis de tendencias de mercado por período
+> - Filtrado de transacciones sospechosas
+> - Agregación de rendimientos por portafolio
+> - Estacionalidad en patrones de gasto
+> 
+> **Marketing Digital:**
+> 
+> - Segmentación de clientes por comportamiento
+> - Análisis de campañas por canal
+> - Patrones temporales de engagement
+> - ROI por demografía y región
+> 
+> **Logística y Supply Chain:**
+> 
+> - Optimización de rutas por temporada
+> - Análisis de demanda por producto/región
+> - Identificación de cuellos de botella
+> - Patrones de inventario por categoría
+> 
+> **Recursos Humanos:**
+> 
+> - Análisis de rotación por departamento
+> - Patrones de ausentismo estacional
+> - Evaluación de rendimiento por equipo
+> - Tendencias salariales por posición
+> 
+> **Investigación Académica:**
+> 
+> - Análisis de encuestas por demographics
+> - Patrones temporales en datos experimentales
+> - Comparaciones entre grupos de control
+> - Validación estadística de hipótesis
+> 
+> **Ejemplo de Implementación - E-commerce:**
+> 
+> ```python
+> # Análisis de ventas por temporada y categoría
+> ventas_estacional = df.groupby(['season', 'category']).agg({
+>     'revenue': 'sum',
+>     'orders': 'count', 
+>     'customers': 'nunique'
 > })
 > 
-> # Calcular cambios porcentuales
-> df_sorted = df.sort_values(['year', 'month'])
-> df_sorted['pct_change'] = df_sorted['passengers'].pct_change() * 100
-> 
-> # Crear rangos categóricos
-> df['traffic_level'] = pd.cut(df['passengers'], 
->                             bins=[0, 200, 400, 600], 
->                             labels=['Bajo', 'Medio', 'Alto'])
+> # Identificar productos estrella por época
+> top_products = df.groupby(['month', 'product'])['revenue'].sum().unstack()
 > ```
 
-> [!warning]- **Pivoting y Reshaping** 🔄
-> 
-> ```python
-> # Crear tabla pivot para análisis cruzado
-> pivot_table = df.pivot_table(values='passengers',
->                             index='month',
->                             columns='year',
->                             aggfunc='sum')
-> 
-> # Melt para convertir de wide a long format
-> df_melted = pd.melt(pivot_table.reset_index(),
->                    id_vars=['month'],
->                    var_name='year',
->                    value_name='passengers')
-> ```
+## Referencias Cruzadas
 
-## 💡 Estrategias de Análisis
+> [!quote]- **Notas Relacionadas**
+> 
+> **Fundamentos Previos:**
+> 
+> - [[NumPy - Arrays y Operaciones Numéricas]] - Base matemática para pandas
+> - [[Python - Estructuras de Control]] - Lógica condicional aplicada
+> - [[Estadística Descriptiva]] - Interpretación de métricas
+> 
+> **Temas Complementarios:**
+> 
+> - [[Pandas - DataFrames y Series]] - Estructuras fundamentales
+> - [[Matplotlib - Visualización Básica]] - Gráficos y presentación
+> - [[Seaborn - Visualización Estadística]] - Análisis visual avanzado
+> 
+> **Aplicaciones Avanzadas:**
+> 
+> - [[Machine Learning - Preprocessing]] - Preparación de datos para ML
+> - [[Time Series Analysis]] - Análisis temporal especializado
+> - [[SQL - Bases de Datos]] - Integración con sistemas de datos
+> 
+> **Metodologías:**
+> 
+> - [[EDA - Exploratory Data Analysis]] - Marco sistemático de exploración
+> - [[Business Intelligence - KPIs]] - Métricas empresariales
+> - [[Data Visualization Best Practices]] - Principios de presentación efectiva
 
-> [!success]- **Metodología EDA (Exploratory Data Analysis)** 🔍
-> 
-> ### 1. **Comprensión Inicial**
-> 
-> ```python
-> # Información general del dataset
-> print(df.info())
-> print(df.head())
-> print(df.shape)
-> ```
-> 
-> ### 2. **Análisis Estadístico**
-> 
-> ```python
-> # Estadísticas descriptivas
-> print(df.describe())
-> print(df.isnull().sum())
-> ```
-> 
-> ### 3. **Análisis por Categorías**
-> 
-> ```python
-> # Patrones por grupos
-> for col in df.select_dtypes(include=['object']).columns:
->     print(f"\n{col}:")
->     print(df[col].value_counts())
-> ```
-> 
-> ### 4. **Visualización Exploratoria**
-> 
-> ```python
-> # Distribuciones y relaciones
-> df.hist(figsize=(15, 10), bins=20)
-> plt.tight_layout()
-> plt.show()
-> ```
+## Prerrequisitos y Temas Avanzados
 
-## ⚠️ Errores Comunes y Mejores Prácticas
+> [!note]- **Prerrequisitos**
+> 
+> **Conocimientos Básicos Requeridos:**
+> 
+> - **Python Fundamentals:** Variables, tipos de datos, estructuras de control
+> - **Pandas Básico:** DataFrames, Series, indexación básica
+> - **Estadística Descriptiva:** Media, mediana, desviación estándar, percentiles
+> - **Lógica Booleana:** Operadores AND, OR, NOT conceptuales
+> - **Matemáticas Básicas:** Aritmética, porcentajes, proporciones
+> 
+> **Habilidades Técnicas:**
+> 
+> - Instalación y manejo de librerías Python
+> - Navegación básica en Jupyter Notebook o IDE
+> - Lectura e interpretación de documentación
+> - Debugging básico de código Python
+> 
+> **Conceptos Estadísticos:**
+> 
+> - Diferencia entre población y muestra
+> - Interpretación de medidas de tendencia central
+> - Concepto de variabilidad y dispersión
+> - Lectura básica de gráficos estadísticos
 
-> [!warning]- **Errores Frecuentes** 🚫
+> [!note]- **Temas Avanzados**
 > 
-> ### 1. **Olvidar Paréntesis en Filtros Múltiples**
+> **Próximos Pasos en Manipulación de Datos:**
 > 
-> ```python
-> # ❌ Incorrecto
-> df[df['col1'] > 5 & df['col2'] == 'A']
+> - **Pandas Avanzado:** MultiIndex, pivot tables, merge/join operations
+> - **Cleaning & Preprocessing:** Manejo de datos faltantes, detección de outliers
+> - **Time Series Analysis:** Análisis temporal especializado, forecasting
+> - **Performance Optimization:** Vectorización, memory management, chunk processing
 > 
-> # ✅ Correcto  
-> df[(df['col1'] > 5) & (df['col2'] == 'A')]
-> ```
+> **Análisis Estadístico Avanzado:**
 > 
-> ### 2. **Confundir Operadores Lógicos**
+> - **Inferential Statistics:** Pruebas de hipótesis, intervalos de confianza
+> - **Correlation & Regression:** Análisis de relaciones entre variables
+> - **ANOVA:** Comparación de múltiples grupos
+> - **Non-parametric Tests:** Alternativas robustas a tests paramétricos
 > 
-> ```python
-> # ❌ En Python normal: and, or, not
-> # ✅ En Pandas: &, |, ~
-> ```
+> **Visualización Especializada:**
 > 
-> ### 3. **No Considerar Valores Nulos**
+> - **Interactive Plotting:** Plotly, Bokeh para dashboards dinámicos
+> - **Geographic Visualization:** Mapas y análisis espacial
+> - **Advanced Seaborn:** Heatmaps, pair plots, distribution analysis
+> - **Statistical Visualization:** Q-Q plots, residual analysis
 > 
-> ```python
-> # ❌ Puede causar resultados inesperados
-> df[df['col'] > 100]
+> **Integración con Ecosistema de Datos:**
 > 
-> # ✅ Manejar nulos explícitamente
-> df[df['col'].notna() & (df['col'] > 100)]
-> ```
-
-> [!tip]- **Mejores Prácticas** ✨
+> - **SQL Integration:** Pandas + SQLAlchemy para bases de datos
+> - **Big Data Tools:** Dask para datasets grandes
+> - **Machine Learning Pipeline:** Scikit-learn preprocessing
+> - **Web Applications:** Streamlit, Flask para deployment
 > 
-> ### 1. **Encadenamiento de Métodos**
+> **Especialización por Dominio:**
 > 
-> ```python
-> # Operaciones fluidas
-> resultado = (df
->              .query('year > 1955')
->              .groupby('month')['passengers']
->              .mean()
->              .sort_values(ascending=False))
-> ```
-> 
-> ### 2. **Usar `.copy()` para Evitar Warnings**
-> 
-> ```python
-> df_filtrado = df[df['year'] > 1955].copy()
-> df_filtrado['nueva_col'] = df_filtrado['passengers'] * 1.1
-> ```
-> 
-> ### 3. **Documentar Análisis Complejos**
-> 
-> ```python
-> # Análisis estacional detallado
-> estacional = (df
->               .groupby('month')['passengers']
->               .agg(['mean', 'std', 'min', 'max'])
->               .round(2))
-> ```
-
-## 🎯 Ejercicios Prácticos
-
-> [!example]- **Ejercicio 1: Análisis Temporal** 📅
-> 
-> Usando el dataset de vuelos:
-> 
-> 1. Encuentra el año con mayor crecimiento porcentual
-> 2. Identifica qué meses muestran mayor variabilidad
-> 3. Calcula la tasa de crecimiento anual compuesta
-> 
-> ```python
-> # Pista para el crecimiento anual
-> crecimiento_anual = df.groupby('year')['passengers'].sum().pct_change()
-> ```
-
-> [!example]- **Ejercicio 2: Segmentación de Datos** 🎯
-> 
-> 4. Clasifica los meses en temporadas
-> 5. Compara el comportamiento entre décadas
-> 6. Identifica outliers en el tráfico mensual
-> 
-> ```python
-> # Pista para outliers usando IQR
-> Q1 = df['passengers'].quantile(0.25)
-> Q3 = df['passengers'].quantile(0.75)
-> IQR = Q3 - Q1
-> outliers = df[(df['passengers'] < Q1 - 1.5*IQR) | 
->               (df['passengers'] > Q3 + 1.5*IQR)]
-> ```
-
-## 📚 Referencias y Recursos
-
-> [!note]- **Documentación Oficial** 📖
-> 
-> - [Pandas Groupby Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html)
-> - [Boolean Indexing Guide](https://pandas.pydata.org/docs/user_guide/indexing.html#boolean-indexing)
-> - [Visualization with Pandas](https://pandas.pydata.org/docs/user_guide/visualization.html)
-
-> [!info]- **Conexiones con Otros Módulos** 🔗
-> 
-> - **[[Módulo 6.1 Introducción a NumPy]]** - Fundamentos de arrays numéricos
-> - **[[Módulo 6.2 Intro a Pandas]]** - Conceptos básicos de DataFrames
-> - **[[Módulo 5.1 Diccionarios]]** - Estructuras de datos relacionadas
-> - **[[Módulo 4.1 Condicional]]** - Lógica de control aplicada a datos
-
-## 🏆 Resumen del Módulo
-
-> [!success]- **Conceptos Clave Dominados** ✅
-> 
-> - **Filtrado avanzado** con operadores lógicos (`&`, `|`, `~`)
-> - **Estadísticas descriptivas** para caracterizar datos
-> - **Análisis por categorías** usando `groupby()`
-> - **Visualización exploratoria** con Pandas y Matplotlib
-> - **Transformaciones** y manipulaciones de datos
-> - **Mejores prácticas** para análisis eficiente
-
-> [!quote]- **Reflexión Final** 💭
-> 
-> _"La manipulación de datos no es solo una habilidad técnica; es el arte de hacer las preguntas correctas y encontrar las respuestas ocultas en la información. Cada filtro, cada agregación, cada visualización nos acerca más a la comprensión profunda de nuestros datos."_
+> - **Financial Analysis:** Análisis de series temporales financieras
+> - **Marketing Analytics:** Customer segmentation, cohort analysis
+> - **Scientific Research:** Experimental design, statistical modeling
+> - **Business Intelligence:** KPI tracking, automated reporting
 
 ---
 
-**Tags:** #pandas #analisis-datos #groupby #filtros #estadisticas #visualizacion #manipulacion-datos #python #data-science
+#pandas #data-manipulation #groupby #filtering #statistics #visualization #python #data-analysis #seaborn #matplotlib #exploratory-data-analysis #business-intelligence #data-science #statistical-analysis #time-series #aggregation #conditional-logic #data-preprocessing #flights-dataset #trend-analysis
