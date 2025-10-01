@@ -150,7 +150,7 @@
 > > [!quote] 🔗 [Recursos de Automatización Digital en Obsidian]([[Automatización de Tareas]])
 > > Esta nota detalla los fundamentos de las automatizaciones a nivel de tareas individuales.
 > 
-> > [!quote] 🔧 [Python para Automatización]([[Universidad/Fundamentos de Programación/Módulo 1 - Introducción y Ambientes de Programación/Módulo 1.2 Introducción a Python]])
+> > [!quote] 🔧 [Python para Automatización]([[Módulo 1.2 Introducción a Python]])
 > > Si quieres ir más allá de las herramientas no-code, este es un buen punto de partida.
 > 
 > > [!quote] 📝 [Documentación de Procesos para Automatizar]([[02 - Productividad/Aplicacion Práctica/Documentación de Procesos]])
