@@ -1464,7 +1464,7 @@
 > 
 > **📖 Fundamentos previos necesarios:**
 > 
-> **[[00 - English Alphabet and Pronunciation]]** 
+> **[[02 - English Alphabet and Pronunciation]]** 
 > 
 > ```
 > Conexión: Antes de estudiar verbos, debes entender:
@@ -1480,7 +1480,7 @@
 > 
 > **📜 Continuación inmediata:**
 > 
-> **[[02 - Parts of Speech (POS)]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: Los verbos son UNA de las 8 partes de la oración.
@@ -1505,7 +1505,7 @@
 > - letter = noun (object)
 > ```
 > 
-> **[[03 - Parts of a Sentence]]**
+> **[[02 - Parts of a Sentence]]**
 > 
 > ```
 > Conexión: Los verbos forman el núcleo del PREDICADO.

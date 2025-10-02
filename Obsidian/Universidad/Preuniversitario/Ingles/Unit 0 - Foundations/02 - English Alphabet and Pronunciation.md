@@ -691,7 +691,7 @@
 > - Reconocer que letras ≠ sonidos siempre
 > ```
 > 
-> **[[02 - Parts of Speech (POS)]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: El alfabeto y la pronunciación son fundamentales para:

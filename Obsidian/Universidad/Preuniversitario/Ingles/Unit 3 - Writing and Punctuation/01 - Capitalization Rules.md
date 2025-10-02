@@ -919,7 +919,7 @@
 > 
 > **📖 Fundamentos previos necesarios:**
 > 
-> **[[00 - English Alphabet and Pronunciation]]**
+> **[[02 - English Alphabet and Pronunciation]]**
 > 
 > ```
 > Conexión: Necesitas conocer el alfabeto para entender:
@@ -928,7 +928,7 @@
 > • Cómo escribir correctamente cada forma
 > ```
 > 
-> **[[02 - Parts of Speech (POS)]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: La capitalización se aplica especialmente a:
@@ -951,7 +951,7 @@
 > ```
 > 
 > 
-> **[[03 - Parts of a Sentence]]**
+> **[[02 - Parts of a Sentence]]**
 > 
 > ```
 > Conexión: La capitalización es fundamental para la estructura de oraciones:
@@ -1013,7 +1013,7 @@
 > • En medio de oración: "I walked yesterday."
 > ```
 > 
-> **Conexión con [[02 - Parts of Speech (POS)]]:**
+> **Conexión con [[01 - Parts of Speech (POS)]]:**
 > 
 > ```
 > Cada parte de la oración tiene reglas de capitalización:

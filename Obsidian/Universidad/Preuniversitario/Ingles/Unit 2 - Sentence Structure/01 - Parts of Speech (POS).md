@@ -1066,7 +1066,6 @@
 > quite interesting (quite = adverb)
 > ```
 
-## 5. ⚡ ADVERB (Continued)
 
 > [!warning]- Common Mistakes with Adverbs
 > 
@@ -2707,7 +2706,7 @@
 > 
 > **🔜 Continuación inmediata:**
 > 
-> **[[03 - Parts of a Sentence]]**
+> **[[02 - Parts of a Sentence]]**
 > 
 > ```
 > Conexión: Una vez que conoces las partes de la oración (POS),
@@ -2742,7 +2741,7 @@
 > - Pattern: S + V
 > ```
 > 
-> **[[04 - Capitalization Rules]]**
+> **[[01 - Capitalization Rules]]**
 > 
 > ```
 > Conexión: Las reglas de capitalización se aplican especialmente a:

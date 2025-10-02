@@ -2485,7 +2485,7 @@
 > Sin conocer las formas verbales, no puedes analizar oraciones correctamente.
 > ```
 > 
-> **[[02 - Parts of Speech (POS)]] ⭐ FUNDAMENTAL**
+> **[[01 - Parts of Speech (POS)]] ⭐ FUNDAMENTAL**
 > 
 > ```
 > Conexión CRÍTICA: Esta es la base directa e indispensable.
@@ -2527,7 +2527,7 @@
 > 
 > **🔜 Continuación inmediata:**
 > 
-> **[[04 - Capitalization Rules]]**
+> **[[01 - Capitalization Rules]]**
 > 
 > ```
 > Conexión: Las reglas de capitalización se aplican a sentence parts:
