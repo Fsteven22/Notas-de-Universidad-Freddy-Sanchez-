@@ -1,8 +1,7 @@
-
+Ingles I:
+- Cuantificatior 
+- comma 
 Calculo vectorial:
-Geometría Analítica en R^3: 
-- sistema rectangular espacial 
-- ecuaciones de la recta en 3 dimensiones
+- Superficies cuadráticas, coordenadas cilíndricas y esféricas y nociones topológicas en R^n
+
 Algebra lineal: 
-Ecuaciones de grado 1 en R^2 y en R^3
-- sistemas de ecuaciones lineales 
