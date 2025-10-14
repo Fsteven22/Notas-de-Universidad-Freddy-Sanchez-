@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/04 - Coordenadas cilíndricas y esféricas.md",
+                "file": "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/02 - Superficies cilíndricas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Coordenadas cilíndricas y esféricas"
+              "title": "02 - Superficies cilíndricas"
+            }
+          },
+          {
+            "id": "3e679acc8bf53def",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Preuniversitario/Matemáticas/04 - Funciones de Variable Real/04.3 - Funciones definidas por tramos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04.3 - Funciones definidas por tramos"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 493.5
+    "width": 399.5
   },
   "right": {
     "id": "8aa3fa143ab462de",
@@ -215,44 +230,44 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "ba4daf3b56e06153",
+  "active": "3e679acc8bf53def",
   "lastOpenFiles": [
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/03 - Superficies de revolución.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/02 - Superficies cilíndricas.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/01 - Superficies cuadráticas.md",
-    "Universidad/2do Semestre/Algebra Lineal/Unidad 1 - Ecuaciones Lineales y Sistemas de Ecuaciones/04 - Rango de una Matriz.md",
-    "Universidad/2do Semestre/Algebra Lineal/Unidad 1 - Ecuaciones Lineales y Sistemas de Ecuaciones/03 - Algoritmo de Gauss.md",
-    "Universidad/2do Semestre/Algebra Lineal/Unidad 1 - Ecuaciones Lineales y Sistemas de Ecuaciones/02 - Sistema de ecuaciones lineales (S.E.L.).md",
-    "Universidad/2do Semestre/Algebra Lineal/Unidad 1 - Ecuaciones Lineales y Sistemas de Ecuaciones/01 - Ecuaciones de grado 1 en R2 y R3.md",
+    "Universidad/Preuniversitario/Matemáticas/04 - Funciones de Variable Real/04.2 - Representación gráfica.md",
+    "Universidad/Preuniversitario/Matemáticas/04 - Funciones de Variable Real/04.3 - Funciones definidas por tramos.md",
+    "Universidad/Preuniversitario/Matemáticas/04 - Funciones de Variable Real/04.1 - Definición, dominio y rango.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.15 Sucesiones.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.14 - Binomio de Newton.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.13 - Técnicas de conteo.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.12 - Inducción matemática.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.11 - Inecuaciones.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.10 - Ecuaciones.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.9 - Valor Absoluto.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.8 - Razones y proporciones.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.7 - Expresiones algebraicas.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.6 Conceptos asociados a los números enteros.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.5 - Relación de orden.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.4 - Operaciones entre números reales.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.3 - Operaciones binarias.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.2 - Representación decimal.md",
+    "Universidad/Preuniversitario/Matemáticas/03 - Números Reales/03.1 - Conjuntos Numéricos.md",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/05 - Nociones topológicas en Rⁿ.md",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/04 - Coordenadas cilíndricas y esféricas.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/01 - Sistema de referencia espacial.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas",
-    "Universidad/Preuniversitario/Ingles/Unit 1 - Basic Grammar/06 - Comma rules.md",
-    "Universidad/2do Semestre/Programación orientada a objetos/Unidad 1 - Introducción al paradigma orientado a objetos/03 - Definición de Clases en Java.md",
-    "01 - Dashboard/Operativo Diario/Pendientes.md",
-    "Universidad/2do Semestre/Programación orientada a objetos/Unidad 1 - Introducción al paradigma orientado a objetos/02 - Estructura General de un Programa en Java.md",
-    "Universidad/2do Semestre/Programación orientada a objetos/Unidad 1 - Introducción al paradigma orientado a objetos/01 - Paradigma Orientado a Objetos.md",
-    "Universidad/2do Semestre/Programación orientada a objetos/Unidad 1 - Introducción al paradigma orientado a objetos",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/02 - Superficies cilíndricas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 - Superficies cuadráticas, coordenadas y nociones topológicas/01 - Superficies cuadráticas.md",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/07 - Distancias en R3.md",
-    "Universidad/2do Semestre/Algebra Lineal/Unidad 1 - Ecuaciones Lineales y Sistemas de Ecuaciones",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/06 - Relación recta–plano.md",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/05 - Planos en R3.md",
     "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/04 - Rectas en R3 Ejercicios y aplicaciones.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/03 - Distancia en el espacio.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/02 - Vectores en R3.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/Sin título.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3/Sin nombre",
-    "Universidad/Preuniversitario/Matemáticas/00 - Métricas y puntos de acumulación/00.1 Métricas.md",
-    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en R3",
-    "Universidad/Preuniversitario/Ingles/Unit 4 - Vocabulary and Verbs/01 - Regular and Irregular Verbs.md",
-    "Universidad/Preuniversitario/Ingles/Unit 3 - Writing and Punctuation/04 - Exclamation Mark.md",
-    "Universidad/Preuniversitario/Matemáticas/00 - Métricas y puntos de acumulación/00.2 Espacios Métricos.md",
-    "Universidad/Preuniversitario/Ingles/Unit 4 - Vocabulary and Verbs",
-    "Universidad/Preuniversitario/Ingles/Unit 3 - Writing and Punctuation",
-    "Universidad/Preuniversitario/Ingles/Unit 2 - Sentence Structure",
-    "Universidad/Preuniversitario/Ingles/Unit 1 - Basic Grammar",
-    "Universidad/Preuniversitario/Ingles/Unit 0/Foundations",
+    "Universidad/Preuniversitario/Matemáticas/12 - Sistemas de Ecuaciones e Inecuaciones Avanzados",
+    "Universidad/Preuniversitario/Matemáticas/11 - Coordenadas Polares",
+    "Universidad/Preuniversitario/Matemáticas/10 - Geometría Analítica",
+    "Universidad/Preuniversitario/Matemáticas/09 - Números Complejos/Sin nombre",
+    "Universidad/Preuniversitario/Matemáticas/09 - Números Complejos",
+    "Universidad/Preuniversitario/Matemáticas/08 - Geometría del Espacio",
+    "Universidad/Preuniversitario/Matemáticas/07 - Geometría Plana",
+    "Universidad/Preuniversitario/Matemáticas/06 - Matrices y Sistemas de Ecuaciones",
+    "Universidad/Preuniversitario/Matemáticas/05 - Trigonometría",
+    "Universidad/Preuniversitario/Matemáticas/04 - Funciones de Variable Real",
     "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
     "Figuras/Pasted image 20250823130623.png",
     "Figuras/Pasted image 20250824170857.png",
