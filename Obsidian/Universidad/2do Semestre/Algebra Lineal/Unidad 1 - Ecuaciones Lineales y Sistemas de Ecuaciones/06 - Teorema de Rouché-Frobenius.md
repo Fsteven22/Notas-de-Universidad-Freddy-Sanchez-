@@ -2657,7 +2657,7 @@
 > 
 > - [[Espacios Vectoriales]] - Espacio solución como subespacio
 > - [[Dependencia e Independencia Lineal]] - Relación con el rango
-> - [[Subespacios vectoriales]] - Conjunto solución de sistemas compatibles
+> - [[07 - Subespacios Vectoriales]] - Conjunto solución de sistemas compatibles
 > - [[Dimensión de un espacio vectorial]] - Grados de libertad
 > 
 > **Aplicaciones prácticas:**

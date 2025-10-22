@@ -1,4 +1,4 @@
-# 📏 Distancia en el Espacio
+# 📏 Distancia entre puntos y vectores
 
 ## 🎯 Fundamentos de la Métrica Euclidiana
 

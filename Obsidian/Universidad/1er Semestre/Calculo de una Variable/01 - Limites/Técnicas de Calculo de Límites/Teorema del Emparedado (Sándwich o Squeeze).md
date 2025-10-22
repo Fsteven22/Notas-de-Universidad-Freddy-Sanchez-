@@ -19,8 +19,8 @@
 > 
 > ```mermaid
 > graph TD
->     A[Función Superior h(x)] --> B[Función Emparedada g(x)]
->     B --> C[Función Inferior f(x)]
+>     A["Función Superior h(x)"] --> B["Función Emparedada g(x)"]
+>     B --> C["Función Inferior f(x)"]
 >     D[Límite Común L] --> E[Todas convergen a L]
 >     
 >     style A fill:#ffcdd2
