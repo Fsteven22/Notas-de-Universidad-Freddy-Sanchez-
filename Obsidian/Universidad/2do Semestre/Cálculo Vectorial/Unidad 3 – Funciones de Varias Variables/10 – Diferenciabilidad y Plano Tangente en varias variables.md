@@ -1,4 +1,4 @@
-# 📘 10 – Diferenciabilidad y Plano Tangente
+# 📘 Diferenciabilidad y Plano Tangente
 
 ## 🎯 Introducción
 

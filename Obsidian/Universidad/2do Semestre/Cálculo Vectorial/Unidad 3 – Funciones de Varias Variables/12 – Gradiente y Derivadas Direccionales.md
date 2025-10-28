@@ -1,4 +1,4 @@
-# 📘 11 – Gradiente y Derivadas Direccionales
+# 📘 Gradiente y Derivadas Direccionales
 
 ## 🎯 Introducción
 

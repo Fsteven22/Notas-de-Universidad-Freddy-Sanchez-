@@ -1,4 +1,4 @@
-# 📘 08 – Derivadas Parciales
+# 📘 Derivadas Parciales
 
 ## 🎯 Introducción
 

@@ -1,4 +1,4 @@
-# 📘 04 – Curvas de Nivel
+# 📘 Curvas de Nivel
 
 ## 🎯 Introducción
 

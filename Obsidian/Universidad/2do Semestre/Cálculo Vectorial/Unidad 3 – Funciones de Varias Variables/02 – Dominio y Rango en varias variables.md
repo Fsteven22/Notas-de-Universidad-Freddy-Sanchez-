@@ -1,4 +1,4 @@
-# 📘 02 – Dominio y Rango
+# 📘 Dominio y Rango
 
 ## 🎯 Introducción
 

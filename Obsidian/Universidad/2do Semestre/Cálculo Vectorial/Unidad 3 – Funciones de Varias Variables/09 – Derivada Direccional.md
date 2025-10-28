@@ -1,4 +1,4 @@
-# 📘 09 – Derivada Direccional
+# 📘  Derivada Direccional
 
 ## 🎯 Introducción
 

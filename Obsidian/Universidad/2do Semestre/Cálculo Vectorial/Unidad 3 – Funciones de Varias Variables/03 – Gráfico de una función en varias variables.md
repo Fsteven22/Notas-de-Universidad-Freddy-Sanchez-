@@ -1,4 +1,4 @@
-# 📘 03 – Gráfico de una función z=f(x,y)
+# 📘 Gráfico de una función z=f(x,y)
 
 ## 🎯 Introducción
 

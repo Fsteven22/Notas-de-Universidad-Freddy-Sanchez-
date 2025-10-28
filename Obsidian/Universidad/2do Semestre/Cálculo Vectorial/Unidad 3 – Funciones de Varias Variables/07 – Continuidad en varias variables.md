@@ -1,4 +1,4 @@
-# 📘 07 – Continuidad en Varias Variables
+# 📘 Continuidad en Varias Variables
 
 ## 🎯 Introducción
 

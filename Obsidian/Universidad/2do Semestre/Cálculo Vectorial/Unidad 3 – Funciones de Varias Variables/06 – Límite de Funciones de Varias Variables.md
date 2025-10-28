@@ -1,4 +1,4 @@
-# 📘 06 – Límite de Funciones de Varias Variables
+# 📘 Límite de Funciones de Varias Variables
 
 ## 🎯 Introducción
 

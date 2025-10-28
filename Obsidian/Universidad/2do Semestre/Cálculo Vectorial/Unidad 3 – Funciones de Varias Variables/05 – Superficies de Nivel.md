@@ -1,4 +1,4 @@
-# 📘 05 – Superficies de Nivel
+# 📘 Superficies de Nivel
 
 ## 🎯 Introducción
 
