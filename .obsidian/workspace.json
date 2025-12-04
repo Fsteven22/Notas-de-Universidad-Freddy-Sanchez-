@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "da8b947e72b4a867",
+    "type": "split",
+    "children": [
+      {
+        "id": "733a418e911abd8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "705cbe18181b3163",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/I – Herramientas de Aproximación/01 - Polinomios de Taylor en Varias Variables.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Polinomios de Taylor en Varias Variables"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2f9bfae5daf49fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "79d8c0b5cc43c150",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80410ca9f11ebd3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "3b3489b76480dab2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "06a5e4e7245e63eb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271.5
+  },
+  "right": {
+    "id": "8aa3fa143ab462de",
+    "type": "split",
+    "children": [
+      {
+        "id": "3944c317a8198dd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58897018ec427a43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02 - Productividad/Metodologías y Sistemas/Técnicas de Concentración.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Técnicas de Concentración"
+            }
+          },
+          {
+            "id": "eab33b298a07b49e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Concepto Intuitivo de Límite"
+            }
+          },
+          {
+            "id": "ed0eddca033f2cc6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "f94cba81acc88fac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Universidad/Calculo de una Variable/01 - Limites/Fundamentos Teóricos (Limite)/Concepto Intuitivo de Límite.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Concepto Intuitivo de Límite"
+            }
+          },
+          {
+            "id": "0577954d129ee222",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "26cadadf126f859b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "d8c47bf3041d46ce",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zettelflow:Create a new Zettel Note": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "obsidian-kanban:Create new board": false,
+      "bases:Crear nueva base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "zk-prefixer:Crear nueva nota única": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "publish:Publicar cambios": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "80410ca9f11ebd3f",
+  "lastOpenFiles": [
+    "Nuevo Documento de texto.txt",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/V – La Diferencial y Derivadas Superiores/03 – Interpretación geométrica del plano tangente y la aproximación lineal.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV – Derivadas Direccionales y Reglas de Derivación/04 – Derivadas de funciones compuestas en notación matricial.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/V – La Diferencial y Derivadas Superiores/02 – Diferencial de Orden Superior.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/I. Conceptos Fundamentales/03 – Funciones vectoriales.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/III – Aspectos Topológicos/01 - Nociones topológicas en Rⁿ.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/II – Sistemas Alternativos de Coordenadas/03 – Representación gráfica de coordenadas cilíndricas y esféricas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/II – Sistemas Alternativos de Coordenadas/02 - Transformaciones entre Coordenadas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/I – Superficies Fundamentales/04 – Clasificación de superficies por secciones.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/03 – Aplicaciones geométricas básicas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/I – Fundamentos del Espacio Tridimensional/02 - Vectores en R3.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/01 – Producto punto y ángulos.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/IV – Distancias en el Espacio/01 - Distancias en ℝ³.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Distancias en el Espacio/02 - Distancia Punto-Recta en ℝ³.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Distancias en el Espacio/03 - Distancia Punto-Plano en ℝ³.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/II – Extremos sin Restricciones/01 - Extremos Relativos de Funciones Multi variables.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/III – Optimización con Restricciones/01 - Multiplicaciones de Lagrange.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/II. Visualización de Funciones Multivariables/02 – Curvas de Nivel.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/III – Optimización con Restricciones",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/II – Extremos sin Restricciones",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización de Funciones Escalares de Varias Variables/I – Herramientas de Aproximación",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/II. Visualización de Funciones Multivariables/03 – Superficies de Nivel.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/I. Conceptos Fundamentales/01 – Definición y Clasificación de Funciones de Varias Variables.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/II – Sistemas Alternativos de Coordenadas/01 - Coordenadas cilíndricas y esféricas.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/III – Aspectos Topológicos",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/II – Sistemas Alternativos de Coordenadas",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 2 – Superficies y Coordenadas en ℝ³/I – Superficies Fundamentales",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/IV – Distancias en el Espacio",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Planos en R3.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/01 - Rectas en R3.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/I – Fundamentos del Espacio Tridimensional/01 - Sistema de referencia espacial en R3.md",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos",
+    "Universidad/2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/I – Fundamentos del Espacio Tridimensional",
+    "Pasted image 20251129231756.png",
+    "Pasted image 20251119223029.png",
+    "Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg",
+    "Figuras/Pasted image 20250823130623.png",
+    "Figuras/Pasted image 20250824170857.png",
+    "Figuras/Pasted image 20250730194117.png",
+    "bc93763d-46e7-4187-9f53-1bd5847dcd28.jpg",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020914.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020841.png",
+    "Física Mecanica/Notas nuevas/Imagenes 2/Pasted image 20250721020940.png"
+  ]
+}

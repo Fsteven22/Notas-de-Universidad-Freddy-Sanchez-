@@ -1,0 +1,20 @@
+# Archivos de OneDrive
+*.lnk
+*.tmp
+*.ini
+*.sync
+desktop.ini
+Thumbs.db
+
+# Carpetas de sistema de OneDrive
+*/OneDrive*/
+*/OneDrive - */
+
+# Archivos de Obsidian que no quieres subir
+.obsidian/cache/
+.obsidian/plugins/obsidian-sync/
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/backups/
+
+# Archivos temporales
+.DS_Store
