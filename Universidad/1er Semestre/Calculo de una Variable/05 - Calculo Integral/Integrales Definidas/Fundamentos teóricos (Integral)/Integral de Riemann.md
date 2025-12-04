@@ -150,31 +150,31 @@ graph TD
 > $$\int_0^2 x^2 dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3} \approx 2.667$$
 > 
 > **Error**: $|3.75 - 2.667| = 1.083$
-
-### 📈 Mejorando la Aproximación
-
-| $n$ | $\|P\|$ | $R_n$ | Error |
-|-----|---------|-------|-------|
-| 4   | 0.5     | 3.75  | 1.083 |
-| 8   | 0.25    | 3.21  | 0.543 |
-| 16  | 0.125   | 2.94  | 0.273 |
-| 32  | 0.0625  | 2.80  | 0.133 |
-
-> [!info] 📊 **Observación**: Conforme $\|P\| \to 0$, la suma converge a $\frac{8}{3}$
+> 
+> ### 📈 Mejorando la Aproximación
+> 
+> | $n$ | $\|P\|$ | $R_n$ | Error |
+> |-----|---------|-------|-------|
+> | 4   | 0.5     | 3.75  | 1.083 |
+> | 8   | 0.25    | 3.21  | 0.543 |
+> | 16  | 0.125   | 2.94  | 0.273 |
+> | 32  | 0.0625  | 2.80  | 0.133 |
+> 
+> >[!info] 📊 **Observación**: Conforme $\|P\| \to 0$, la suma converge a $\frac{8}{3}$
 
 ## ⚡ Condiciones de Integrabilidad
 
 > [!warning] 🔍 **Teoremas Fundamentales**
-
-### 🎯 Teorema 1: Funciones Continuas
-Si $f$ es continua en $[a,b]$, entonces $f$ es Riemann integrable en $[a,b]$.
-
-### 🎯 Teorema 2: Funciones Monótonas  
-Si $f$ es monótona en $[a,b]$, entonces $f$ es Riemann integrable en $[a,b]$.
-
-### 🎯 Teorema 3: Discontinuidades Finitas
-Si $f$ es acotada en $[a,b]$ y tiene un número finito de discontinuidades, entonces $f$ es Riemann integrable en $[a,b]$.
-
+> 
+> ### 🎯 Teorema 1: Funciones Continuas
+> Si $f$ es continua en $[a,b]$, entonces $f$ es Riemann integrable en $[a,b]$.
+> 
+> ### 🎯 Teorema 2: Funciones Monótonas  
+> Si $f$ es monótona en $[a,b]$, entonces $f$ es Riemann integrable en $[a,b]$.
+> 
+> ### 🎯 Teorema 3: Discontinuidades Finitas
+> Si $f$ es acotada en $[a,b]$ y tiene un número finito de discontinuidades, entonces $f$ es Riemann integrable en $[a,b]$.
+> 
 ```mermaid
 flowchart LR
     A["Función f en intervalo cerrado"] --> B{"¿Continua?"}
@@ -192,18 +192,18 @@ flowchart LR
 ## 🛠️ Propiedades Fundamentales
 
 > [!info] 📋 **Propiedades Algebraicas**
-
-### 🔢 Linealidad
-$$\int_a^b [c_1f(x) + c_2g(x)] dx = c_1\int_a^b f(x) dx + c_2\int_a^b g(x) dx$$
-
-### 🔄 Aditividad en el Dominio
-Si $a < c < b$:
-$$\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx$$
-
-### 📊 Comparación
-Si $f(x) \leq g(x)$ en $[a,b]$:
-$$\int_a^b f(x) dx \leq \int_a^b g(x) dx$$
-
+> 
+> ### 🔢 Linealidad
+> $$\int_a^b [c_1f(x) + c_2g(x)] dx = c_1\int_a^b f(x) dx + c_2\int_a^b g(x) dx$$
+> 
+> ### 🔄 Aditividad en el Dominio
+> Si $a < c < b$:
+> $$\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx$$
+> 
+> ### 📊 Comparación
+> Si $f(x) \leq g(x)$ en $[a,b]$:
+> $$\int_a^b f(x) dx \leq \int_a^b g(x) dx$$
+> 
 ## ⚠️ Errores Comunes y Conceptos Clave
 
 > [!warning] 🚨 **Errores Frecuentes**
@@ -239,19 +239,19 @@ graph TD
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Teorema fundamental del cálculo]] - Conexión integral-derivada
-- [[Área bajo la Curva]] - Interpretación geométrica
-- [[Propiedades de la Integral Definida]] - Operaciones con integrales
-- [[Métodos de Integración Definida]] - Técnicas de cálculo
-- [[Integrales Impropias]] - Extensión del concepto
-
-### 📖 Para Profundizar
-- [[Historia de la Integración]] - Desarrollo histórico del concepto
-- [[Integral de Lebesgue]] - Generalización moderna
-- [[Métodos Numéricos de Integración]] - Aplicaciones computacionales
-
+>[!quote] ## 📚 Referencias y Conexiones
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Teorema fundamental del cálculo]] - Conexión integral-derivada
+> - [[Área bajo la Curva]] - Interpretación geométrica
+> - [[Propiedades de la Integral Definida]] - Operaciones con integrales
+> - [[Métodos de Integración Definida]] - Técnicas de cálculo
+> - [[Integrales Impropias]] - Extensión del concepto
+> 
+> ### 📖 Para Profundizar
+> - [[Historia de la Integración]] - Desarrollo histórico del concepto
+> - [[Integral de Lebesgue]] - Generalización moderna
+> - [[Métodos Numéricos de Integración]] - Aplicaciones computacionales
+> 
 ### 🏷️ Tags
-`#matematicas/calculo/integrales` `#teoria/riemann` `#definiciones/fundamentales` `#limites/infinitos` `#geometria/areas` `#analisis/real`
+#matematicas/calculo/integralesb #teoria/riemann #definiciones/fundamentales #limites/infinitos #geometria/areas #analisis/real

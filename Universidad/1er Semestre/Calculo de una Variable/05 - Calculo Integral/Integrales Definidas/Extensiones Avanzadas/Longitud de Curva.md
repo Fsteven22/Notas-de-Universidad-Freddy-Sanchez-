@@ -26,10 +26,10 @@
 >     A --> D[Polar]
 >     A --> E[Vectorial 3D]
 >     
->     B --> F[r(t) = (x(t), y(t))<br/>L = "∫√(x'² + y'²)dt]"
+>     B --> F["r(t) = (x(t), y(t))<br/>L = ∫√(x'² + y'²)dt"]
 >     C --> G["y = f(x)<br/>L = ∫√(1 + (f'(x))²)dx"]
 >     D --> H["r = f(θ)<br/>L = ∫√(r² + (dr/dθ)²)dθ"]
->     E --> "I[r(t) = (x(t), y(t), z(t))<br/>L = ∫√(x'² + y'² + z'²)dt]"
+>     E --> I["r(t) = (x(t), y(t), z(t))<br/>L = ∫√(x'² + y'² + z'²)dt"]
 >     
 >     J[Ejemplos] --> K[Círculo: 2πR<br/>Semicírculo: πR<br/>Espiral: Integral compleja]
 >     
@@ -130,10 +130,10 @@
 > ### Casos Especiales Integrables
 > ```mermaid
 > graph LR
->     A[Curvas con Longitud Exacta] --> B[Línea Recta<br/>L = √((x₂-x₁)² + (y₂-y₁)²)]
->     A --> C[Círculo<br/>L = 2πr]
->     A --> D[Elipse<br/>L ≈ π(a+b) aproximado]
->     A --> E[Catenaria<br/>y = a cosh(x/a)<br/>Integrable exacta]
+>     A["Curvas con Longitud Exacta"] --> B["Línea Recta<br/>L = √((x₂-x₁)² + (y₂-y₁)²)"]
+>     A --> C["Círculo<br/>L = 2πr"]
+>     A --> D["Elipse<br/>L ≈ π(a+b) aproximado"]
+>     A --> E["Catenaria<br/>y = a cosh(x/a)<br/>Integrable exacta"]
 >     A --> F[Cicloide<br/>L = 8a]
 >     
 >     style A fill:#e8f5e8

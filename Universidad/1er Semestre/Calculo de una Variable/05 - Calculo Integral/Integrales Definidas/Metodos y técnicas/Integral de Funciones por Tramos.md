@@ -315,7 +315,7 @@ graph TD
     I[...] --> F
     J[Tramo n: Área Aₙ] --> F
     
-    F --> K[∫f(x)dx = A₁ + A₂ + A₃ + ... + Aₙ]
+    F --> K["∫f(x)dx = A₁ + A₂ + A₃ + ... + Aₙ"]
     
     style A fill:#ffecb3
     style F fill:#c8e6c9

@@ -24,14 +24,14 @@
 >     A[Series Infinitas] --> B[Convergentes]
 >     A --> C[Divergentes]
 >     
->     B --> D[Convergencia Absoluta<br/>Σ|an| converge]
->     B --> E[Convergencia Condicional<br/>Σan converge, Σ|an| diverge]
+>     B --> D["Convergencia Absoluta<br/>Σ|an| converge"]
+>     B --> E["Convergencia Condicional<br/>Σan converge, Σ|an| diverge"]
 >     
->     C --> F[Divergencia a +∞<br/>Sn → +∞]
->     C --> G[Divergencia a -∞<br/>Sn → -∞]
->     C --> H[Divergencia Oscilatoria<br/>Sn oscila sin límite]
+>     C --> F["Divergencia a +∞<br/>Sn → +∞"]
+>     C --> G["Divergencia a -∞<br/>Sn → -∞"]
+>     C --> H["Divergencia Oscilatoria<br/>Sn oscila sin límite"]
 >     
->     I[Ejemplos] --> J[Geométrica |r|<1: Converge<br/>Armónica: Diverge<br/>Alternada armónica: Conv. Cond.]
+>     I[Ejemplos] --> J["Geométrica |r|<1: Converge<br/>Armónica: Diverge<br/>Alternada armónica: Conv. Cond."]
 >     
 >     style A fill:#e8f5e8
 >     style B fill:#e1f5fe
@@ -148,7 +148,7 @@
 > ### Convergencia Absoluta vs Condicional
 > ```mermaid
 > graph LR
->     A[Serie Σan] --> B{¿Σ|an| converge?}
+>     A["Serie Σan"] --> B{"¿Σ|an| converge?"}
 >     B -->|Sí| C[Convergencia Absoluta<br/>Σan converge]
 >     B -->|No| D{¿Σan converge?}
 >     D -->|Sí| E[Convergencia Condicional]

@@ -255,31 +255,33 @@ graph LR
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-
-- [[Teorema fundamental del cálculo]] - Base teórica para la demostración
-- [[Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
-- [[Propiedades de la Integral Definida]] - Propiedades utilizadas en la demostración
-- [[Integral de Riemann]] - Definición formal de la integral
-- [[Funciones Continuas]] - Condición necesaria para el teorema
-
-### 📖 Para Profundizar
-
-- [[Teorema del Valor Intermedio]] - Herramienta clave en la demostración
-- [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
-- [[Valor RMS y Aplicaciones Eléctricas]] - Aplicación específica del concepto
-- [[Promedio de Funciones]] - Interpretación estadística del valor medio
-
-### 🎯 Notas Recomendadas
-
-- [[Interpretación Geométrica de Integrales]] - Para visualizar mejor el concepto
-- [[Métodos de Aproximación Numérica]] - Cálculo computacional de valores medios
-- [[Funciones Periódicas y sus Propiedades]] - Casos especiales del teorema
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> 
+> - [[Teorema fundamental del cálculo]] - Base teórica para la demostración
+> - [[Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
+> - [[Propiedades de la Integral Definida]] - Propiedades utilizadas en la demostración
+> - [[Integral de Riemann]] - Definición formal de la integral
+> - [[Funciones Continuas]] - Condición necesaria para el teorema
+> 
+> ### 📖 Para Profundizar
+> 
+> - [[Teorema del Valor Intermedio]] - Herramienta clave en la demostración
+> - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
+> - [[Valor RMS y Aplicaciones Eléctricas]] - Aplicación específica del concepto
+> - [[Promedio de Funciones]] - Interpretación estadística del valor medio
+> 
+> ### 🎯 Notas Recomendadas
+> 
+> - [[Interpretación Geométrica de Integrales]] - Para visualizar mejor el concepto
+> - [[Métodos de Aproximación Numérica]] - Cálculo computacional de valores medios
+> - [[Funciones Periódicas y sus Propiedades]] - Casos especiales del teorema
+> 
 
 ---
 
 ### 🏷️ Tags
 
-`#matematicas/calculo/teoremas` `#valor-medio/integrales` `#continuidad/funciones` `#aplicaciones/fisica` `#geometria/areas` `#demostraciones/fundamentales`
+#matematicas/calculo/teoremas #valor-medio/integrales #continuidad/funciones #aplicaciones/fisica #geometria/areas #demostraciones/fundamentales

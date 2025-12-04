@@ -233,23 +233,23 @@ flowchart TD
 ### 🔴 Malentendidos Típicos
 
 > [!warning] 🚨 **Errores Frecuentes**
-
-#### Error 1: Confundir la Implicación
-**Incorrecto**: "Continua ⟹ Derivable"
-**Correcto**: "Derivable ⟹ Continua"
-
-#### Error 2: Asumir Derivabilidad sin Verificar
-**Problema**: Asumir que funciones "suaves" siempre son derivables
-**Ejemplo**: $f(x) = x^{2/3}$ no es derivable en $x = 0$ (tangente vertical)
-
-#### Error 3: Ignorar Puntos de Frontera
-**Problema**: No verificar derivabilidad en puntos donde cambia la definición
-**Solución**: Siempre verificar derivadas laterales en estos puntos
-
-#### Error 4: Confundir "Suavidad" Visual con Derivabilidad
-**Problema**: Confiar solo en la apariencia gráfica
-**Solución**: Verificar analíticamente la existencia de derivadas
-
+> 
+> #### Error 1: Confundir la Implicación
+> **Incorrecto**: "Continua ⟹ Derivable"
+> **Correcto**: "Derivable ⟹ Continua"
+> 
+> #### Error 2: Asumir Derivabilidad sin Verificar
+> **Problema**: Asumir que funciones "suaves" siempre son derivables
+> **Ejemplo**: $f(x) = x^{2/3}$ no es derivable en $x = 0$ (tangente vertical)
+> 
+> #### Error 3: Ignorar Puntos de Frontera
+> **Problema**: No verificar derivabilidad en puntos donde cambia la definición
+> **Solución**: Siempre verificar derivadas laterales en estos puntos
+> 
+> #### Error 4: Confundir "Suavidad" Visual con Derivabilidad
+> **Problema**: Confiar solo en la apariencia gráfica
+> **Solución**: Verificar analíticamente la existencia de derivadas
+> 
 ## 🧠 Método de Estudio: "VERIFICA"
 
 > [!tip] 🎓 **Mnemotecnia "VERIFICA" para Derivabilidad y Continuidad**
@@ -345,53 +345,61 @@ flowchart TD
 > - **Aproximaciones**: Saber dónde aplicar métodos lineales
 
 ```mermaid
-mindmap
-  root((Derivabilidad vs Continuidad))
-    Teorema Principal
-      Derivable → Continua
-      Demostración formal
-      No hay recíproco
-    Clasificación Puntos
-      Tipo A: ambas
-      Tipo B: solo continua
-      Tipo C,D: ninguna
-    Ejemplos Clave
-      |x| esquina clásica
-      x^(2/3) tangente vertical
-      Funciones por partes
-    Métodos Verificación
-      Derivadas laterales
-      Límites
-      Definición formal
-    Aplicaciones
-      Teoremas valor medio
-      Optimización
-      Ecuaciones diferenciales
-      Aproximaciones
+flowchart TD
+    A(Derivabilidad vs Continuidad)
+    
+    A --> B(Teorema Principal)
+        B --> B1(Derivable implica Continua)
+        B --> B2(Demostracion formal)
+        B --> B3(No hay reciproco)
+
+    A --> C(Clasificacion de Puntos)
+        C --> C1(Tipo A: ambas)
+        C --> C2(Tipo B: solo continua)
+        C --> C3(Tipo C y D: ninguna)
+
+    A --> D(Ejemplos Clave)
+        D --> D1(Valor absoluto: esquina clasica)
+        D --> D2("x^(2/3): tangente vertical")
+        D --> D3(Funciones por partes)
+
+    A --> E(Metodos de Verificacion)
+        E --> E1(Derivadas laterales)
+        E --> E2(Limites)
+        E --> E3(Definicion formal)
+
+    A --> F(Aplicaciones)
+        F --> F1(Teoremas de valor medio)
+        F --> F2(Optimizacion)
+        F --> F3(Ecuaciones diferenciales)
+        F --> F4(Aproximaciones)
+
 ```
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Derivadas y Definición Formal]] - Definición formal de derivabilidad
-- [[Límites]] - Fundamento matemático de continuidad
-- [[Reglas fundamentales de Derivación]] - Aplicación práctica
-- [[Interpretación Geométrica de la Derivada]] - Visualización de conceptos
-- [[Análisis Completo de Funciones]] - Aplicación en graficación
-
-### 📖 Para Profundizar
-- [[Teoremas de Valor Medio]] - Aplicación de la derivabilidad
-- [[Funciones de Clase C^n]] - Grados de suavidad
-- [[Análisis Real]] - Tratamiento riguroso
-- [[Topología]] - Conceptos de continuidad generalizados
-
-### 🎯 Aplicaciones Inmediatas
-- [[Problemas de Optimización]] - Búsqueda de extremos
-- [[Aproximaciones Lineales]] - Uso de tangentes
-- [[Razones de Cambio Relacionadas]] - Aplicaciones dinámicas
-- [[Ecuaciones Diferenciales Básicas]] - Modelado con derivadas
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Derivadas y Definición Formal]] - Definición formal de derivabilidad
+> - [[Límites]] - Fundamento matemático de continuidad
+> - [[Reglas fundamentales de Derivación]] - Aplicación práctica
+> - [[Interpretación Geométrica de la Derivada]] - Visualización de conceptos
+> - [[Análisis Completo de Funciones]] - Aplicación en graficación
+> 
+> ### 📖 Para Profundizar
+> - [[Teoremas de Valor Medio]] - Aplicación de la derivabilidad
+> - [[Funciones de Clase C^n]] - Grados de suavidad
+> - [[Análisis Real]] - Tratamiento riguroso
+> - [[Topología]] - Conceptos de continuidad generalizados
+> 
+> ### 🎯 Aplicaciones Inmediatas
+> - [[Problemas de Optimización]] - Búsqueda de extremos
+> - [[Aproximaciones Lineales]] - Uso de tangentes
+> - [[Razones de Cambio Relacionadas]] - Aplicaciones dinámicas
+> - [[Ecuaciones Diferenciales Básicas]] - Modelado con derivadas
+> 
 
 ### 🏷️ Tags
 #matematicas/calculo/derivadas

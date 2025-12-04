@@ -366,16 +366,18 @@ graph TD
 > - **Who** (Quién): ¿Qué elementos intervienen? (derivadas, límites)
 > - **How** (Cómo): ¿Cómo construir la gráfica?
 
-### Tabla de Referencia Rápida
-
-|Elemento|Pregunta Clave|Método|Resultado|
-|---|---|---|---|
-|Dominio|¿Dónde existe f(x)?|Restricciones algebraicas|Intervalo(s)|
-|Asínt. Vertical|¿Dónde f(x) → ±∞?|Ceros denominador|x = a|
-|Asínt. Horizontal|¿lim f(x) finito?|Comportamiento infinito|y = L|
-|Intersec. Ejes|¿f(0) y f(x)=0?|Evaluación y resolución|Puntos (a,0), (0,b)|
-|Extremos|¿Dónde f'(x)=0?|Primera derivada|Máx/Mín locales|
-|Inflexión|¿Dónde f''(x)=0?|Segunda derivada|Cambio concavidad|
+> [!summary] ### Tabla de Referencia Rápida
+>
+> 
+> |Elemento|Pregunta Clave|Método|Resultado|
+> |---|---|---|---|
+> |Dominio|¿Dónde existe f(x)?|Restricciones algebraicas|Intervalo(s)|
+> |Asínt. Vertical|¿Dónde f(x) → ±∞?|Ceros denominador|x = a|
+> |Asínt. Horizontal|¿lim f(x) finito?|Comportamiento infinito|y = L|
+> |Intersec. Ejes|¿f(0) y f(x)=0?|Evaluación y resolución|Puntos (a,0), (0,b)|
+> |Extremos|¿Dónde f'(x)=0?|Primera derivada|Máx/Mín locales|
+> |Inflexión|¿Dónde f''(x)=0?|Segunda derivada|Cambio concavidad|
+> 
 
 ## Ejemplos Prácticos 📚
 
@@ -416,16 +418,6 @@ graph TD
 
 > [!quote] [[Funciones Racionales]] Casos específicos y técnicas especializadas
 
-## Notas Recomendadas para Complementar 📖
-
-- [[Teorema del Valor Medio]] - Fundamentos teóricos de derivadas
-- [[Regla de L'Hôpital]] - Resolución de límites indeterminados
-- [[Series de Taylor]] - Aproximaciones locales de funciones
-- [[Funciones Trigonométricas]] - Casos especiales de periodicidad
-- [[Funciones Exponenciales y Logarítmicas]] - Comportamientos característicos
-- [[Transformaciones de Funciones]] - Efectos de modificaciones algebraicas
-- [[Ecuaciones Paramétricas]] - Representaciones alternativas
-- [[Coordenadas Polares]] - Sistemas de coordenadas diferentes
 
 ---
 

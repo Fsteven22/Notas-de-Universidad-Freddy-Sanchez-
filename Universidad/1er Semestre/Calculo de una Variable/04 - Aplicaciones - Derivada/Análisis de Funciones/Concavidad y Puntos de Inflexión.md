@@ -157,13 +157,15 @@ flowchart LR
 > - **Mano izquierda hacia abajo** (dedos apuntan abajo) = Cóncava abajo
 > - **Punto donde cambias de mano** = Punto de inflexión
 
-### Tabla Resumen para Memorizar
-
-|f''(x)|Signo|Concavidad|Forma Visual|Ejemplo|
-|---|---|---|---|---|
-|> 0|+|Hacia arriba|U|x²|
-|< 0|-|Hacia abajo|∩|-x²|
-|= 0|0|Cambio posible|Transición|x³ en x=0|
+> [!summary] ### Tabla Resumen para Memorizar
+> 
+> 
+> |f''(x)|Signo|Concavidad|Forma Visual|Ejemplo|
+> |---|---|---|---|---|
+> |> 0|+|Hacia arriba|U|x²|
+> |< 0|-|Hacia abajo|∩|-x²|
+> |= 0|0|Cambio posible|Transición|x³ en x=0|
+> 
 
 ## Ejemplos Prácticos 📚
 
@@ -272,14 +274,6 @@ graph TD
 
 > [!quote] [[Aplicaciones de Derivadas]] Casos prácticos del uso de derivadas en problemas reales
 
-## Notas Recomendadas para Complementar 📖
-
-- [[Límites y Continuidad]] - Base para entender derivadas
-- [[Primera Derivada y Monotonía]] - Crecimiento y decrecimiento
-- [[Teorema del Valor Medio para Derivadas]] - Fundamentos teóricos
-- [[Optimización con Restricciones]] - Aplicaciones avanzadas
-- [[Series de Taylor]] - Aproximaciones usando derivadas
-- [[Ecuaciones Diferenciales]] - Aplicaciones dinámicas
 
 ---
 

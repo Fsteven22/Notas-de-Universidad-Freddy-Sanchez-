@@ -174,17 +174,17 @@ graph TD
 ### 🌟 Funciones Trigonométricas en Intervalos Simétricos
 
 > [!tip] 🎯 **Casos Especiales Importantes**
-
-#### Funciones Pares y Periódicas
-
-- $\cos(x)$ es par y periódica
-- $\int_{-\pi}^{\pi} \cos(x) dx = 2\int_0^{\pi} \cos(x) dx = 2[0] = 0$
-
-#### Funciones Impares y Periódicas
-
-- $\sin(x)$ es impar y periódica
-- $\int_{-\pi}^{\pi} \sin(x) dx = 0$ (por imparidad)
-
+> 
+> #### Funciones Pares y Periódicas
+> 
+> - $\cos(x)$ es par y periódica
+> - $\int_{-\pi}^{\pi} \cos(x) dx = 2\int_0^{\pi} \cos(x) dx = 2[0] = 0$
+> 
+> #### Funciones Impares y Periódicas
+> 
+> - $\sin(x)$ es impar y periódica
+> - $\int_{-\pi}^{\pi} \sin(x) dx = 0$ (por imparidad)
+> 
 ### 🔄 Funciones con Múltiples Propiedades
 
 > [!info] 🧮 **Ejemplo Complejo: $f(x) = x\sin(x^2)$**
@@ -332,15 +332,15 @@ flowchart TD
 ### 🎯 Teoremas Generalizados
 
 > [!tip] 🔬 **Extensiones del Concepto**
-
-#### Simetría Generalizada
-
-Para función $f$ con simetría respecto a $x = c$: $$\int_{c-a}^{c+a} f(x) dx = 2\int_c^{c+a} f(x) dx \text{ si } f(c+x) = f(c-x)$$
-
-#### Cuasi-periodicidad
-
-Para funciones cuasi-periódicas $f(x+T) = kf(x)$: $$\int_0^{nT} f(x) dx = \frac{1-k^n}{1-k} \int_0^T f(x) dx \text{ si } k \neq 1$$
-
+> 
+> #### Simetría Generalizada
+> 
+> Para función $f$ con simetría respecto a $x = c$: $$\int_{c-a}^{c+a} f(x) dx = 2\int_c^{c+a} f(x) dx \text{ si } f(c+x) = f(c-x)$$
+> 
+> #### Cuasi-periodicidad
+> 
+> Para funciones cuasi-periódicas $f(x+T) = kf(x)$: $$\int_0^{nT} f(x) dx = \frac{1-k^n}{1-k} \int_0^T f(x) dx \text{ si } k \neq 1$$
+> 
 ### 🌀 Aplicaciones en Cálculo Multivariable
 
 > [!info] 🌐 **Extensión a Múltiples Variables**
@@ -349,37 +349,39 @@ Para funciones cuasi-periódicas $f(x+T) = kf(x)$: $$\int_0^{nT} f(x) dx = \frac
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-
-- [[Teorema fundamental del cálculo]] - Base teórica para todas las integrales definidas
-- [[Teorema del Valor Medio para Integrales]] - Propiedades complementarias de integrales
-- [[Propiedades de la Integral Definida]] - Linealidad y aditividad
-- [[Funciones Trigonométricas]] - Ejemplos principales de funciones periódicas
-- [[Integral de Riemann]] - Definición formal subyacente
-
-### 📖 Para Profundizar
-
-- [[Series de Fourier]] - Aplicación directa de propiedades de simetría
-- [[Análisis de Señales]] - Aplicaciones en ingeniería
-- [[Funciones Especiales]] - Más ejemplos de funciones con simetrías
-- [[Transformadas Integrales]] - Uso avanzado de propiedades de simetría
-
-### 🎯 Notas Recomendadas
-
-- [[Métodos de Integración]] - Técnicas que se benefician de estas propiedades
-- [[Aplicaciones Físicas de Integrales]] - Contexto real de funciones periódicas
-- [[Geometría de Curvas]] - Interpretación visual de simetrías
-
-### 🧮 Aplicaciones Especializadas
-
-- [[Análisis Armónico]] - Estudio profundo de funciones periódicas
-- [[Mecánica Ondulatoria]] - Física de sistemas periódicos
-- [[Procesamiento de Señales Digitales]] - Aplicaciones computacionales
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> 
+> - [[Teorema fundamental del cálculo]] - Base teórica para todas las integrales definidas
+> - [[Teorema del Valor Medio para Integrales]] - Propiedades complementarias de integrales
+> - [[Propiedades de la Integral Definida]] - Linealidad y aditividad
+> - [[Funciones Trigonométricas]] - Ejemplos principales de funciones periódicas
+> - [[Integral de Riemann]] - Definición formal subyacente
+> 
+> ### 📖 Para Profundizar
+> 
+> - [[Series de Fourier]] - Aplicación directa de propiedades de simetría
+> - [[Análisis de Señales]] - Aplicaciones en ingeniería
+> - [[Funciones Especiales]] - Más ejemplos de funciones con simetrías
+> - [[Transformadas Integrales]] - Uso avanzado de propiedades de simetría
+> 
+> ### 🎯 Notas Recomendadas
+> 
+> - [[Métodos de Integración]] - Técnicas que se benefician de estas propiedades
+> - [[Aplicaciones Físicas de Integrales]] - Contexto real de funciones periódicas
+> - [[Geometría de Curvas]] - Interpretación visual de simetrías
+> 
+> ### 🧮 Aplicaciones Especializadas
+> 
+> - [[Análisis Armónico]] - Estudio profundo de funciones periódicas
+> - [[Mecánica Ondulatoria]] - Física de sistemas periódicos
+> - [[Procesamiento de Señales Digitales]] - Aplicaciones computacionales
+> 
 
 ---
 
 ### 🏷️ Tags
 
-`#matematicas/calculo/propiedades` `#simetria/funciones` `#periodicidad/integrales` `#optimizacion/calculo` `#aplicaciones/fisica` `#teoremas/fundamentales` `#funciones-especiales`
+#matematicas/calculo/propiedades #simetria/funciones #periodicidad/integrales #optimizacion/calculo #aplicaciones/fisica #teoremas/fundamentales #funciones-especiales

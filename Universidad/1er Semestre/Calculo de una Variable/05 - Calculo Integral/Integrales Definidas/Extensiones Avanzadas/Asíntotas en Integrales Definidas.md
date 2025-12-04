@@ -24,14 +24,14 @@
 >     B --> E[En los extremos<br/>x = a o x = b]
 >     B --> F[En el interior<br/>x = c, a < c < b]
 >     
->     C --> G[Límites infinitos<br/>∫_{a}^{∞} f(x)dx]
->     C --> H[Comportamiento asintótico<br/>f(x) → L cuando x → ∞]
+>     C --> G["Límites infinitos<br/>∫_{a}^{∞} f(x)dx"]
+>     C --> H["Comportamiento asintótico<br/>f(x) → L cuando x → ∞"]
 >     
->     D --> I[Crecimiento lineal<br/>f(x) ~ mx + b]
->     D --> J[Análisis de convergencia<br/>∫ [f(x) - (mx + b)]dx]
+>     D --> I["Crecimiento lineal<br/>f(x) ~ mx + b"]
+>     D --> J["Análisis de convergencia<br/>∫ [f(x) - (mx + b)]dx"]
 >     
->     K[Consecuencias] --> L[Integral Impropia Tipo I<br/>Límites infinitos]
->     K --> M[Integral Impropia Tipo II<br/>Discontinuidades infinitas]
+>     K[Consecuencias] --> L["Integral Impropia Tipo I<br/>Límites infinitos"]
+>     K --> M["Integral Impropia Tipo II<br/>Discontinuidades infinitas"]
 >     
 >     style A fill:#e8f5e8
 >     style B fill:#ffcdd2
@@ -149,7 +149,7 @@
 > ### Metodología de Identificación
 > ```mermaid
 > flowchart TD
->     A[Integral ∫ₐᵇ f(x)dx] --> B{¿Hay discontinuidades en [a,b]?}
+>     A["Integral ∫ₐᵇ f(x)dx"] --> B{"¿Hay discontinuidades en [a,b]?"}
 >     B -->|Sí| C[Localizar puntos de discontinuidad]
 >     B -->|No| D{¿Límites infinitos?}
 >     
@@ -165,7 +165,7 @@
 >     J -->|Sí| K[Probablemente diverge]
 >     J -->|No| L{¿Asíntota oblicua?}
 >     
->     L -->|Sí| M[Analizar f(x) - (mx+b)]
+>     L -->|Sí| M["Analizar f(x) - (mx+b)"]
 >     L -->|No| N[Usar criterios de convergencia]
 >     
 >     style G fill:#ffcdd2

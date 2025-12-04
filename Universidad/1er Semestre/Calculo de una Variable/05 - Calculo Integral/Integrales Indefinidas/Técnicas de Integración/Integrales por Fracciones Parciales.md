@@ -146,8 +146,8 @@ flowchart LR
 graph LR
     A["$$f(x) = \frac{x+5}{x^2+x-2}$$"] --> B["$$\frac{-1}{x+2}$$"]
     A --> C["$$\frac{2}{x-1}$$"]
-    B --> D[Integral: $-\ln|x+2|$]
-    C --> E[Integral: $2\ln|x-1|$]
+    B --> D["Integral: $-\ln|x+2|$"]
+    C --> E["Integral: $2\ln|x-1|$"]
     D --> F[Resultado Final]
     E --> F
     

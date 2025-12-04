@@ -154,14 +154,14 @@ graph TD
 ## 📋 Tabla de Referencia Rápida
 
 > [!info] 🚀 Guía de Identidades por Situación
-
-|Situación|Identidad Clave|Cuándo Usar|Resultado|
-|---|---|---|---|
-|$\int \sin(ax)\cos(bx)dx$|Producto→Suma|$a \neq b$|Suma de cosenos|
-|$\int \sin^2(x)dx$|$\frac{1-\cos(2x)}{2}$|Potencias pares|Lineal en $x$|
-|$\int \sin^n(x)\cos^m(x)dx$|Reducir el par|$n$ o $m$ par|Potencias menores|
-|$\int \frac{dx}{a+b\cos x}$|$t=\tan(x/2)$|Racional|Integral en $t$|
-
+> 
+> |Situación|Identidad Clave|Cuándo Usar|Resultado|
+> |---|---|---|---|
+> |$\int \sin(ax)\cos(bx)dx$|Producto→Suma|$a \neq b$|Suma de cosenos|
+> |$\int \sin^2(x)dx$|$\frac{1-\cos(2x)}{2}$|Potencias pares|Lineal en $x$|
+> |$\int \sin^n(x)\cos^m(x)dx$|Reducir el par|$n$ o $m$ par|Potencias menores|
+> |$\int \frac{dx}{a+b\cos x}$|$t=\tan(x/2)$|Racional|Integral en $t$|
+> 
 ### 🌟 Casos Especiales y Trucos Avanzados
 
 > [!success] 💎 Identidades Menos Conocidas **Para potencias altas:** $$\sin^4 x = \frac{3 - 4\cos(2x) + \cos(4x)}{8}$$ $$\cos^4 x = \frac{3 + 4\cos(2x) + \cos(4x)}{8}$$

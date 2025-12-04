@@ -172,15 +172,15 @@ graph TD
 ### 📚 Tabla de Funciones de Comparación Comunes
 
 >[!info] 📋 **Funciones de Referencia para Comparación**
-
-| **Tipo** | **Función** | **Comportamiento** | **Uso Principal** |
-|----------|-------------|-------------------|------------------|
-| **Potencias** | $\frac{1}{x^p}$ | $p > 1$: converge en $[1,\infty)$ | Integrales con singularidades |
-| **Exponenciales** | $e^{-ax}$ $(a > 0)$ | Converge rápidamente | Funciones que decrecen exponencialmente |
-| **Logarítmicas** | $\frac{1}{x \ln^p(x)}$ | $p > 1$: converge en $[2,\infty)$ | Funciones con decrecimiento logarítmico |
-| **Trigonométricas** | $\frac{\sin(x)}{x^p}$ | Comportamiento oscilatorio acotado | Integrales oscilatorias |
-| **Racionales** | $\frac{P(x)}{Q(x)}$ | Depende del grado | Funciones racionales complejas |
-
+> 
+> | **Tipo** | **Función** | **Comportamiento** | **Uso Principal** |
+> |----------|-------------|-------------------|------------------|
+> | **Potencias** | $\frac{1}{x^p}$ | $p > 1$: converge en $[1,\infty)$ | Integrales con singularidades |
+> | **Exponenciales** | $e^{-ax}$ $(a > 0)$ | Converge rápidamente | Funciones que decrecen exponencialmente |
+> | **Logarítmicas** | $\frac{1}{x \ln^p(x)}$ | $p > 1$: converge en $[2,\infty)$ | Funciones con decrecimiento logarítmico |
+> | **Trigonométricas** | $\frac{\sin(x)}{x^p}$ | Comportamiento oscilatorio acotado | Integrales oscilatorias |
+> | **Racionales** | $\frac{P(x)}{Q(x)}$ | Depende del grado | Funciones racionales complejas |
+> 
 ### 🎯 Estrategias de Selección de Función de Referencia
 
 >[!tip] 💡 **Cómo Elegir la Función de Comparación**
@@ -241,47 +241,47 @@ graph TD
 >**R**evisar y verificar el resultado
 
 ### 📋 Desarrollo Detallado del Método COMPAR
-
-#### **C - Comparar Funciones** 🔍
-- Identificar las funciones involucradas
-- Establecer el dominio de comparación
-- Determinar puntos problemáticos (singularidades, infinitos)
-
-#### **O - Ordenar las Funciones** 📊
-- Decidir cuál función es mayor/menor
-- Verificar la desigualdad en todo el intervalo relevante
-- Considerar comportamiento asintótico
-
-#### **M - Mayorar o Minorar** ⚖️
-- **Mayorar**: Encontrar función más grande que converja
-- **Minorar**: Encontrar función más pequeña que diverja
-- Elegir funciones de referencia apropiadas
-
-#### **P - Probar Convergencia de Referencia** ✅
-- Evaluar integral de la función de comparación
-- Usar criterios conocidos (p-integrales, exponenciales, etc.)
-- Verificar convergencia/divergencia
-
-#### **A - Aplicar Criterio** ⚡
-- **Comparación directa**: Si $0 \leq f \leq g$
-- **Comparación límite**: Si $\lim \frac{f}{g} = L$
-- Deducir resultado para la función original
-
-#### **R - Revisar Resultado** 🔄
-- Verificar coherencia del resultado
-- Comprobar casos límite si es posible
-- Validar con intuición física/geométrica
-
+> [!summary] Pasos a Seguir:
+> #### **C - Comparar Funciones** 🔍
+> - Identificar las funciones involucradas
+> - Establecer el dominio de comparación
+> - Determinar puntos problemáticos (singularidades, infinitos)
+> 
+> #### **O - Ordenar las Funciones** 📊
+> - Decidir cuál función es mayor/menor
+> - Verificar la desigualdad en todo el intervalo relevante
+> - Considerar comportamiento asintótico
+> 
+> #### **M - Mayorar o Minorar** ⚖️
+> - **Mayorar**: Encontrar función más grande que converja
+> - **Minorar**: Encontrar función más pequeña que diverja
+> - Elegir funciones de referencia apropiadas
+> 
+> #### **P - Probar Convergencia de Referencia** ✅
+> - Evaluar integral de la función de comparación
+> - Usar criterios conocidos (p-integrales, exponenciales, etc.)
+> - Verificar convergencia/divergencia
+> 
+> #### **A - Aplicar Criterio** ⚡
+> - **Comparación directa**: Si $0 \leq f \leq g$
+> - **Comparación límite**: Si $\lim \frac{f}{g} = L$
+> - Deducir resultado para la función original
+> 
+> #### **R - Revisar Resultado** 🔄
+> - Verificar coherencia del resultado
+> - Comprobar casos límite si es posible
+> - Validar con intuición física/geométrica
+> 
 ### 🎯 Ejemplo Aplicando COMPAR
 
 >[!example] 📈 **Problema**: Analizar $\int_2^{\infty} \frac{1}{x \ln(x)} dx$
-
-**C** - Comparar: Función problemática en infinito, comportamiento $\sim \frac{1}{x \ln(x)}$
-**O** - Ordenar: Comparar con $\frac{1}{x}$ y $\frac{1}{x^2}$
-**M** - Mayorar: Para $x \geq 2$, $\ln(x) \geq \ln(2) > 0$, entonces $\frac{1}{x \ln(x)} \leq \frac{1}{x \ln(2)}$
-**P** - Probar: $\int_2^{\infty} \frac{1}{x} dx = \infty$ (diverge), pero necesitamos mayorante que converja
-**A** - Aplicar: Mejor usar comparación límite con $\frac{1}{x}$: $\lim_{x \to \infty} \frac{\frac{1}{x \ln(x)}}{\frac{1}{x}} = \frac{1}{\ln(x)} \to 0$
-**R** - Revisar: En realidad, $\int_2^{\infty} \frac{1}{x \ln(x)} dx = [\ln(\ln(x))]_2^{\infty} = \infty$ (diverge)
+> 
+> **C** - Comparar: Función problemática en infinito, comportamiento $\sim \frac{1}{x \ln(x)}$
+> **O** - Ordenar: Comparar con $\frac{1}{x}$ y $\frac{1}{x^2}$
+> **M** - Mayorar: Para $x \geq 2$, $\ln(x) \geq \ln(2) > 0$, entonces $\frac{1}{x \ln(x)} \leq \frac{1}{x \ln(2)}$
+> **P** - Probar: $\int_2^{\infty} \frac{1}{x} dx = \infty$ (diverge), pero necesitamos mayorante que converja
+> **A** - Aplicar: Mejor usar comparación límite con $\frac{1}{x}$: $\lim_{x \to \infty} \frac{\frac{1}{x \ln(x)}}{\frac{1}{x}} = \frac{1}{\ln(x)} \to 0$
+> **R** - Revisar: En realidad, $\int_2^{\infty} \frac{1}{x \ln(x)} dx = [\ln(\ln(x))]_2^{\infty} = \infty$ (diverge)
 
 ## ⚠️ Errores Comunes y Precauciones
 
@@ -346,33 +346,29 @@ graph TD
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Propiedades de la Integral Definida]] - Base algebraica para las desigualdades
-- [[Teorema del Valor Medio para Integrales]] - Herramienta para acotaciones
-- [[Integral de Riemann]] - Definición formal subyacente
-- [[Teorema fundamental del cálculo]] - Evaluación exacta cuando es posible
-
-### 📖 Para Profundizar
-- [[Integrales Impropias]] - Aplicación principal de estos teoremas
-- [[Criterios de Convergencia]] - Extensión de los conceptos de comparación
-- [[Series Infinitas]] - Análisis de convergencia análogo
-- [[Análisis Asintótico]] - Comportamiento de funciones en límites
-
-### 🎯 Notas Recomendadas
-- [[Funciones de Referencia Estándar]] - Catálogo de funciones para comparación
-- [[Estimación de Integrales]] - Aplicaciones prácticas de acotación
-- [[Métodos de Aproximación]] - Técnicas numéricas complementarias
-- [[Desigualdades Clásicas]] - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
-
-### 🧮 Aplicaciones Especializadas
-- [[Análisis de Fourier]] - Convergencia de series trigonométricas
-- [[Teoría de Probabilidades]] - Acotación de funciones de densidad
-- [[Ecuaciones Diferenciales]] - Estimación de soluciones integrales
-- [[Análisis Numérico]] - Control de errores en aproximaciones
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Propiedades de la Integral Definida]] - Base algebraica para las desigualdades
+> - [[Teorema del Valor Medio para Integrales]] - Herramienta para acotaciones
+> - [[Integral de Riemann]] - Definición formal subyacente
+> - [[Teorema fundamental del cálculo]] - Evaluación exacta cuando es posible
+> 
+> ### 📖 Para Profundizar
+> - [[Integrales Impropias]] - Aplicación principal de estos teoremas
+> - [[Criterios de Convergencia]] - Extensión de los conceptos de comparación
+> - [[Series Infinitas]] - Análisis de convergencia análogo
+> - [[Análisis Asintótico]] - Comportamiento de funciones en límites
+> 
+> ### 🎯 Notas Recomendadas
+> - [[Funciones de Referencia Estándar]] - Catálogo de funciones para comparación
+> - [[Estimación de Integrales]] - Aplicaciones prácticas de acotación
+> - [[Métodos de Aproximación]] - Técnicas numéricas complementarias
+> - [[Desigualdades Clásicas]] - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
+> 
 
 ---
 
 ### 🏷️ Tags
-`#matematicas/calculo/teoremas` `#comparacion/integrales` `#desigualdades/analisis` `#convergencia/criterios` `#estimacion/valores` `#preparacion/impropias` `#herramientas/teoricas`
+#matematicas/calculo/teoremas #comparacion/integrales #desigualdades/analisis #convergencia/criterios #estimacion/valores #preparacion/impropias #herramientas/teoricas

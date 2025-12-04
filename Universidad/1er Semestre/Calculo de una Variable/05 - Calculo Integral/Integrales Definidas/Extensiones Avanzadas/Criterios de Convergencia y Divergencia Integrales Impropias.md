@@ -152,8 +152,8 @@
 > graph LR
 >     A[Integrales de Referencia] --> B[∫₁^∞ 1/xᵖ dx]
 >     A --> C[∫₀¹ 1/xᵖ dx] 
->     A --> D[∫₀^∞ e^(-ax) dx]
->     A --> E[∫₋∞^∞ e^(-x²) dx]
+>     A --> D["∫₀^∞ e^(-ax) dx"]
+>     A --> E["∫₋∞^∞ e^(-x²) dx"]
 >     
 >     B --> F[p>1: Converge<br/>p≤1: Diverge]
 >     C --> G[p<1: Converge<br/>p≥1: Diverge]

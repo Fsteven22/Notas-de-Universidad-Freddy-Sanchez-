@@ -58,7 +58,7 @@
 >    A[Puntos P y Q en la curva] --> B[Recta secante PQ]
 >    B --> C[Q se acerca a P]
 >    C --> D[Secante se convierte en tangente]
->    D --> E[Pendiente = f'(a)]
+>    D --> E["Pendiente = f'(a)"]
 >    
 >    F[Razón de cambio promedio] --> G[Razón de cambio instantánea]
 >    

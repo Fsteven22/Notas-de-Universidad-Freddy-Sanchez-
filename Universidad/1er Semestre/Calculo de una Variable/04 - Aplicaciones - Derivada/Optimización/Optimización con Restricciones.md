@@ -455,16 +455,6 @@ graph TD
 
 > [!quote] [[Cálculo de Varias Variables]] Extensión completa del método de Lagrange
 
-## Notas Recomendadas para Complementar 📖
-
-- [[Derivadas Parciales]] - Fundamento para gradientes
-- [[Matriz Hessiana]] - Criterios de segunda derivada en varias variables
-- [[Programación Lineal]] - Optimización con restricciones lineales
-- [[Cálculo de Variaciones]] - Optimización de funciones
-- [[Teoría de Optimización]] - Marco teórico avanzado
-- [[Aplicaciones en Economía]] - Contexto específico de utilidad y producción
-- [[Geometría Analítica]] - Interpretación geométrica avanzada
-- [[Álgebra Lineal]] - Manejo de sistemas de ecuaciones
 
 ---
 

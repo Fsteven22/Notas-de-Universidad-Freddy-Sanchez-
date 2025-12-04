@@ -53,16 +53,16 @@ flowchart TD
 
 >[!tip] 📐 **Regla del Rectángulo**
 >Aproxima $f(x)$ por una constante en cada subintervalo. Para $n$ subintervalos de ancho $h = \frac{b-a}{n}$:
-
-#### **Regla del Punto Izquierdo**
-$$L_n = h \sum_{i=0}^{n-1} f(a + ih) = h[f(x_0) + f(x_1) + \cdots + f(x_{n-1})]$$
-
-#### **Regla del Punto Derecho**
-$$R_n = h \sum_{i=1}^{n} f(a + ih) = h[f(x_1) + f(x_2) + \cdots + f(x_n)]$$
-
-#### **Regla del Punto Medio**
-$$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
-
+> 
+> #### **Regla del Punto Izquierdo**
+> $$L_n = h \sum_{i=0}^{n-1} f(a + ih) = h[f(x_0) + f(x_1) + \cdots + f(x_{n-1})]$$
+> 
+> #### **Regla del Punto Derecho**
+> $$R_n = h \sum_{i=1}^{n} f(a + ih) = h[f(x_1) + f(x_2) + \cdots + f(x_n)]$$
+> 
+> #### **Regla del Punto Medio**
+> $$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
+> 
 ### 🧪 Ejemplo: Regla del Rectángulo
 
 >[!example] 📈 **Aproximar $\int_0^2 x^2 dx$ con $n=4$**
@@ -182,14 +182,14 @@ $$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
 ## 📊 Tabla Comparativa de Métodos
 
 >[!info] 📋 **Comparación de Métodos Numéricos**
-
-| **Método** | **Aproximación** | **Orden de Error** | **Exacto para** | **Coeficientes** |
-|------------|------------------|-------------------|-----------------|------------------|
-| **Rectángulo (extremos)** | Constante | $O(h)$ | Constantes | $1, 1, 1, \ldots$ |
-| **Rectángulo (punto medio)** | Constante | $O(h^2)$ | Constantes | $1, 1, 1, \ldots$ |
-| **Trapecio** | Lineal | $O(h^2)$ | Lineales | $\frac{1}{2}, 1, 1, \ldots, 1, \frac{1}{2}$ |
-| **Simpson 1/3** | Cuadrática | $O(h^4)$ | Cúbicas | $1, 4, 2, 4, \ldots, 4, 1$ |
-
+> 
+> | **Método** | **Aproximación** | **Orden de Error** | **Exacto para** | **Coeficientes** |
+> |------------|------------------|-------------------|-----------------|------------------|
+> | **Rectángulo (extremos)** | Constante | $O(h)$ | Constantes | $1, 1, 1, \ldots$ |
+> | **Rectángulo (punto medio)** | Constante | $O(h^2)$ | Constantes | $1, 1, 1, \ldots$ |
+> | **Trapecio** | Lineal | $O(h^2)$ | Lineales | $\frac{1}{2}, 1, 1, \ldots, 1, \frac{1}{2}$ |
+> | **Simpson 1/3** | Cuadrática | $O(h^4)$ | Cúbicas | $1, 4, 2, 4, \ldots, 4, 1$ |
+> 
 ## 🔢 Métodos Avanzados
 
 ### 🎯 Regla de Simpson 3/8
@@ -236,91 +236,56 @@ $$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
 >**E**rror: comparar con valor exacto si está disponible
 >**Z**ona de validez: verificar condiciones del método
 
-### 📋 Desarrollo Detallado del Método TRAPEZ
-
-#### **T - Tipo de Método** 🎯
-- **Analizar la función**: ¿Es suave? ¿Tiene oscilaciones?
-- **Requerimientos de precisión**: ¿Cuánta exactitud se necesita?
-- **Recursos computacionales**: ¿Cuántas evaluaciones son factibles?
-- **Datos disponibles**: ¿Se conoce $f(x)$ analíticamente o son datos tabulados?
-
-#### **R - Resolver Intervalos** 📏
-- Calcular $h = \frac{b-a}{n}$
-- Generar puntos: $x_i = a + ih$ para $i = 0, 1, 2, \ldots, n$
-- Evaluar $f(x_i)$ en todos los puntos necesarios
-- Verificar que $n$ satisfaga restricciones del método (par para Simpson)
-
-#### **A - Aplicar Fórmula** ⚡
-- **Rectángulo**: $h \sum f(x_i^*)$
-- **Trapecio**: $\frac{h}{2}[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)]$
-- **Simpson**: $\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + f(x_n)]$
-
-#### **P - Precisión y Error** 📊
-- Usar fórmulas de error teóricas
-- Para mayor precisión: duplicar $n$ y comparar resultados
-- Métodos adaptativos: continuar hasta alcanzar tolerancia
-
-#### **E - Error Experimental** 🔍
-- Si se conoce el valor exacto: calcular error absoluto y relativo
-- Verificar que el error decrece según el orden teórico
-- Analizar convergencia al aumentar $n$
-
-#### **Z - Zona de Validez** ✅
-- Verificar continuidad de $f$ y sus derivadas según el método
-- Comprobar que no hay singularidades en $[a,b]$
-- Validar que las estimaciones de error son aplicables
+> [!summary] ### 📋 Desarrollo Detallado del Método TRAPEZ
+> 
+> 
+> #### **T - Tipo de Método** 🎯
+> - **Analizar la función**: ¿Es suave? ¿Tiene oscilaciones?
+> - **Requerimientos de precisión**: ¿Cuánta exactitud se necesita?
+> - **Recursos computacionales**: ¿Cuántas evaluaciones son factibles?
+> - **Datos disponibles**: ¿Se conoce $f(x)$ analíticamente o son datos tabulados?
+> 
+> #### **R - Resolver Intervalos** 📏
+> - Calcular $h = \frac{b-a}{n}$
+> - Generar puntos: $x_i = a + ih$ para $i = 0, 1, 2, \ldots, n$
+> - Evaluar $f(x_i)$ en todos los puntos necesarios
+> - Verificar que $n$ satisfaga restricciones del método (par para Simpson)
+> 
+> #### **A - Aplicar Fórmula** ⚡
+> - **Rectángulo**: $h \sum f(x_i^*)$
+> - **Trapecio**: $\frac{h}{2}[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)]$
+> - **Simpson**: $\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + f(x_n)]$
+> 
+> #### **P - Precisión y Error** 📊
+> - Usar fórmulas de error teóricas
+> - Para mayor precisión: duplicar $n$ y comparar resultados
+> - Métodos adaptativos: continuar hasta alcanzar tolerancia
+> 
+> #### **E - Error Experimental** 🔍
+> - Si se conoce el valor exacto: calcular error absoluto y relativo
+> - Verificar que el error decrece según el orden teórico
+> - Analizar convergencia al aumentar $n$
+> 
+> #### **Z - Zona de Validez** ✅
+> - Verificar continuidad de $f$ y sus derivadas según el método
+> - Comprobar que no hay singularidades en $[a,b]$
+> - Validar que las estimaciones de error son aplicables
+> 
 
 ### 🎯 Ejemplo Completo con TRAPEZ
 
 >[!example] 📈 **Problema**: Aproximar $\int_1^2 \frac{1}{x} dx$ con diferentes métodos
-
-**T** - Tipo: Probaremos trapecio y Simpson, función suave
-**R** - Resolver: $n=4$, $h=0.25$, puntos: $1, 1.25, 1.5, 1.75, 2$
-**A** - Aplicar:
-- Trapecio: $T_4 = \frac{0.25}{2}[1 + 2(0.8 + 0.667 + 0.571) + 0.5] = 0.697$
-- Simpson: $S_4 = \frac{0.25}{3}[1 + 4(0.8) + 2(0.667) + 4(0.571) + 0.5] = 0.693$
-
-**P** - Precisión: Valor exacto = $\ln(2) \approx 0.693147$
-**E** - Error: Trapecio: $0.004$, Simpson: $0.000147$ (Simpson mucho mejor)
-**Z** - Zona: $f(x) = \frac{1}{x}$ continua en $[1,2]$, métodos válidos ✅
-
-## 🛠️ Implementación Práctica
-
-### 💻 Pseudocódigo para Métodos Básicos
-
->[!info] 🖥️ **Algoritmo del Trapecio**
-```
-FUNCIÓN Trapecio(f, a, b, n):
-    h = (b - a) / n
-    suma = f(a) + f(b)
-    PARA i = 1 HASTA n-1:
-        suma = suma + 2 * f(a + i * h)
-    DEVOLVER (h / 2) * suma
-```
-
->[!info] 🖥️ **Algoritmo de Simpson**
-```
-FUNCIÓN Simpson(f, a, b, n):  // n debe ser par
-    h = (b - a) / n
-    suma = f(a) + f(b)
-    PARA i = 1 HASTA n-1:
-        SI i es impar:
-            suma = suma + 4 * f(a + i * h)
-        SINO:
-            suma = suma + 2 * f(a + i * h)
-    DEVOLVER (h / 3) * suma
-```
-
-### 📊 Estimación Automática de Error
-
->[!tip] 💡 **Método de Richardson (Extrapolación)**
->Para mejorar la precisión usando dos aproximaciones:
->
->Si $I_h$ e $I_{h/2}$ son aproximaciones con pasos $h$ y $h/2$:
->
->**Para Trapecio**: $I \approx I_{h/2} + \frac{I_{h/2} - I_h}{3}$ (mejora orden 2 → 4)
->**Para Simpson**: $I \approx I_{h/2} + \frac{I_{h/2} - I_h}{15}$ (mejora orden 4 → 6)
-
+> 
+> **T** - Tipo: Probaremos trapecio y Simpson, función suave
+> **R** - Resolver: $n=4$, $h=0.25$, puntos: $1, 1.25, 1.5, 1.75, 2$
+> **A** - Aplicar:
+> - Trapecio: $T_4 = \frac{0.25}{2}[1 + 2(0.8 + 0.667 + 0.571) + 0.5] = 0.697$
+> - Simpson: $S_4 = \frac{0.25}{3}[1 + 4(0.8) + 2(0.667) + 4(0.571) + 0.5] = 0.693$
+> 
+> **P** - Precisión: Valor exacto = $\ln(2) \approx 0.693147$
+> **E** - Error: Trapecio: $0.004$, Simpson: $0.000147$ (Simpson mucho mejor)
+> **Z** - Zona: $f(x) = \frac{1}{x}$ continua en $[1,2]$, métodos válidos ✅
+> 
 ## 🧪 Ejemplos Avanzados
 
 ### 🔬 Ejemplo 1: Función sin Antiderivada Elemental
@@ -423,33 +388,35 @@ FUNCIÓN Simpson(f, a, b, n):  // n debe ser par
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Integral de Riemann]] - Base teórica de todos los métodos numéricos
-- [[Teorema fundamental del cálculo]] - Comparación con métodos exactos
-- [[Métodos de Integración Definida]] - Cuando usar métodos analíticos vs numéricos
-- [[Teoremas de comparación y desigualdades]] - Estimación de errores y validación
-
-### 📖 Para Profundizar
-- [[Análisis de Errores Numéricos]] - Teoría completa de errores de truncamiento
-- [[Polinomios de Interpolación]] - Base teórica de Simpson y métodos avanzados
-- [[Cuadratura de Gauss]] - Métodos óptimos de integración numérica
-- [[Métodos Adaptativos]] - Algoritmos inteligentes de integración
-
-### 🎯 Notas Recomendadas
-- [[Programación de Métodos Numéricos]] - Implementación práctica en código
-- [[Aplicaciones en Ingeniería]] - Casos reales de uso de integración numérica
-- [[Validación de Resultados Numéricos]] - Técnicas para verificar aproximaciones
-- [[Transformaciones de Integrales]] - Manejo de casos difíciles
-
-### 🧮 Aplicaciones Especializadas
-- [[Análisis de Señales Digitales]] - Integración de funciones muestreadas
-- [[Simulación Numérica]] - Integración en ecuaciones diferenciales
-- [[Procesamiento de Datos Experimentales]] - Análisis de mediciones discretas
-- [[Optimización Numérica]] - Integración en algoritmos de optimización
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Integral de Riemann]] - Base teórica de todos los métodos numéricos
+> - [[Teorema fundamental del cálculo]] - Comparación con métodos exactos
+> - [[Métodos de Integración Definida]] - Cuando usar métodos analíticos vs numéricos
+> - [[Teoremas de comparación y desigualdades]] - Estimación de errores y validación
+> 
+> ### 📖 Para Profundizar
+> - [[Análisis de Errores Numéricos]] - Teoría completa de errores de truncamiento
+> - [[Polinomios de Interpolación]] - Base teórica de Simpson y métodos avanzados
+> - [[Cuadratura de Gauss]] - Métodos óptimos de integración numérica
+> - [[Métodos Adaptativos]] - Algoritmos inteligentes de integración
+> 
+> ### 🎯 Notas Recomendadas
+> - [[Programación de Métodos Numéricos]] - Implementación práctica en código
+> - [[Aplicaciones en Ingeniería]] - Casos reales de uso de integración numérica
+> - [[Validación de Resultados Numéricos]] - Técnicas para verificar aproximaciones
+> - [[Transformaciones de Integrales]] - Manejo de casos difíciles
+> 
+> ### 🧮 Aplicaciones Especializadas
+> - [[Análisis de Señales Digitales]] - Integración de funciones muestreadas
+> - [[Simulación Numérica]] - Integración en ecuaciones diferenciales
+> - [[Procesamiento de Datos Experimentales]] - Análisis de mediciones discretas
+> - [[Optimización Numérica]] - Integración en algoritmos de optimización
+> 
 
 ---
 
 ### 🏷️ Tags
-`#matematicas/calculo/numerico` `#integracion/aproximacion` `#metodos/computacionales` `#trapecio/simpson` `#analisis/errores` `#aplicaciones/practicas` `#programacion/algoritmos`
+#matematicas/calculo/numerico #integracion/aproximacion #metodos/computacionales #trapecio/simpson #analisis/errores #aplicaciones/practicas #programacion/algoritmos

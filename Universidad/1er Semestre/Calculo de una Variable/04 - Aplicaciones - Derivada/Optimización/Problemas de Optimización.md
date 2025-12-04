@@ -330,17 +330,6 @@ graph LR
 
 > [!quote] [[Modelado Matemático]] Principios generales para convertir problemas reales en matemáticos
 
-## Notas Recomendadas para Complementar 📖
-
-- [[Límites y Continuidad]] - Fundamentos para entender extremos
-- [[Teorema del Valor Medio]] - Base teórica de la optimización
-- [[Funciones de Varias Variables]] - Extensión a problemas multidimensionales
-- [[Ecuaciones Diferenciales]] - Optimización dinámica
-- [[Programación Lineal]] - Métodos para problemas con restricciones lineales
-- [[Cálculo de Variaciones]] - Optimización de funcionesCompleta
-- [[Teoría de Juegos]] - Optimización en contextos competitivos
-- [[Estadística]] - Optimización estocástica y regresión
-
 ---
 
 **Tags:** #calculo #optimizacion #aplicaciones #maximos-minimos #modelado-matematico #problemas-aplicados #economia #geometria #ingenieria #derivadas

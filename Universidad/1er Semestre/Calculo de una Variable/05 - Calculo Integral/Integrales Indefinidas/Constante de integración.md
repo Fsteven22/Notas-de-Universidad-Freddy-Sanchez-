@@ -127,18 +127,19 @@ graph LR
 ### 🔴 Consecuencias de Omitir $C$
 
 > [!warning] 🚨 **Errores Graves**
-
-#### Error 1: Pérdida de Generalidad
-**Problema**: Sin $C$, solo obtenemos una antiderivada particular
-**Ejemplo**: $\int 2x dx = x^2$ (incompleto) vs $\int 2x dx = x^2 + C$ (correcto)
-
-#### Error 2: Ecuaciones Diferenciales Incorrectas
-**Problema**: Las soluciones de EDOs requieren todas las constantes
-**Consecuencia**: Perder soluciones válidas del problema físico
-
-#### Error 3: Problemas de Continuidad
-**Problema**: Al unir soluciones en diferentes intervalos
-**Necesidad**: La constante permite ajustar continuidad
+> 
+> #### Error 1: Pérdida de Generalidad
+> **Problema**: Sin $C$, solo obtenemos una antiderivada particular
+> **Ejemplo**: $\int 2x dx = x^2$ (incompleto) vs $\int 2x dx = x^2 + C$ (correcto)
+> 
+> #### Error 2: Ecuaciones Diferenciales Incorrectas
+> **Problema**: Las soluciones de EDOs requieren todas las constantes
+> **Consecuencia**: Perder soluciones válidas del problema físico
+> 
+> #### Error 3: Problemas de Continuidad
+> **Problema**: Al unir soluciones en diferentes intervalos
+> **Necesidad**: La constante permite ajustar continuidad
+> 
 
 ### ✅ Verificación Sistemática
 
@@ -174,32 +175,34 @@ graph LR
 ### 🌐 Constantes en Diferentes Contextos
 
 > [!info] 🔧 **Contextos Específicos**
-
-| Contexto | Significado de $C$ | Determinación |
-|----------|-------------------|---------------|
-| **Ecuaciones Diferenciales** | Condición inicial | $y(x_0) = y_0$ |
-| **Física - Posición** | Posición inicial | $s(0) = s_0$ |
-| **Física - Velocidad** | Velocidad inicial | $v(0) = v_0$ |
-| **Economía** | Capital inicial | $K(0) = K_0$ |
-| **Biología** | Población inicial | $P(0) = P_0$ |
+> 
+> | Contexto | Significado de $C$ | Determinación |
+> |----------|-------------------|---------------|
+> | **Ecuaciones Diferenciales** | Condición inicial | $y(x_0) = y_0$ |
+> | **Física - Posición** | Posición inicial | $s(0) = s_0$ |
+> | **Física - Velocidad** | Velocidad inicial | $v(0) = v_0$ |
+> | **Economía** | Capital inicial | $K(0) = K_0$ |
+> | **Biología** | Población inicial | $P(0) = P_0$ |
+> 
 
 ## 🧮 Propiedades Algebraicas
 
 ### 🔄 Operaciones con Constantes
 
 > [!tip] 📊 **Reglas de Manipulación**
-
-#### Suma de Integrales
-$$\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2 = F(x) + G(x) + C$$
-donde $C = C_1 + C_2$ (nueva constante)
-
-#### Múltiplo Escalar
-$$k \int f(x) dx = k(F(x) + C_1) = kF(x) + kC_1 = kF(x) + C$$
-donde $C = kC_1$ (nueva constante)
-
-#### Combinación Lineal
-$$a \int f(x) dx + b \int g(x) dx = aF(x) + bG(x) + C$$
-donde $C$ absorbe todas las constantes particulares.
+> 
+> #### Suma de Integrales
+> $$\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2 = F(x) + G(x) + C$$
+> donde $C = C_1 + C_2$ (nueva constante)
+> 
+> #### Múltiplo Escalar
+> $$k \int f(x) dx = k(F(x) + C_1) = kF(x) + kC_1 = kF(x) + C$$
+> donde $C = kC_1$ (nueva constante)
+> 
+> #### Combinación Lineal
+> $$a \int f(x) dx + b \int g(x) dx = aF(x) + bG(x) + C$$
+> donde $C$ absorbe todas las constantes particulares.
+> 
 
 ### 🧪 Ejemplo de Simplificación
 
@@ -310,20 +313,20 @@ donde $C$ absorbe todas las constantes particulares.
 ### 🔴 Malentendidos Comunes
 
 > [!warning] 🚨 **Conceptos Erróneos**
-
-#### Error Conceptual 1: "La constante es opcional"
-**Incorrecto**: Pensar que $C$ se puede omitir
-**Realidad**: $C$ es esencial para la completitud matemática
-
-#### Error Conceptual 2: "Todas las constantes son iguales"
-**Problema**: $\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2$
-**Corrección**: Se combinan en una sola $C = C_1 + C_2$
-
-#### Error Conceptual 3: "La constante es siempre positiva"
-**Realidad**: $C$ puede ser cualquier número real (positivo, negativo, cero)
-
-#### Error Conceptual 4: "Una vez determinada, $C$ no cambia"
-**Matiz**: En un problema específico $C$ es fija, pero cada problema puede tener diferente $C$
+> #### Error Conceptual 1: "La constante es opcional"
+> **Incorrecto**: Pensar que $C$ se puede omitir
+> **Realidad**: $C$ es esencial para la completitud matemática
+> 
+> #### Error Conceptual 2: "Todas las constantes son iguales"
+> **Problema**: $\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2$
+> **Corrección**: Se combinan en una sola $C = C_1 + C_2$
+> 
+> #### Error Conceptual 3: "La constante es siempre positiva"
+> **Realidad**: $C$ puede ser cualquier número real (positivo, negativo, cero)
+> 
+> #### Error Conceptual 4: "Una vez determinada, $C$ no cambia"
+> **Matiz**: En un problema específico $C$ es fija, pero cada problema puede tener diferente $C$
+> 
 
 ## 🌐 Conexiones Avanzadas
 
@@ -369,26 +372,28 @@ mindmap
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
-- [[Antiderivadas Primitivas]] - Tabla de fórmulas con constantes
-- [[Técnicas de Integración]] - Manejo de constantes en métodos avanzados
-- [[Ecuaciones Diferenciales Básicas]] - Aplicación principal
-- [[Problemas de Valor Inicial]] - Determinación práctica de constantes
-
-### 📖 Para Profundizar
-- [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
-- [[Condiciones de Frontera]] - Otros métodos de determinación
-- [[Unicidad de Soluciones]] - Teoremas de existencia y unicidad
-- [[Análisis de Estabilidad]] - Comportamiento de soluciones
-
-### 🎯 Aplicaciones Especializadas
-- [[Mecánica Clásica]] - Leyes de Newton y movimiento
-- [[Circuitos RLC]] - Análisis de corriente y voltaje
-- [[Modelos de Crecimiento]] - Poblaciones y economía
-- [[Sistemas Dinámicos]] - Evolución temporal
+>[!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
+> - [[Antiderivadas Primitivas]] - Tabla de fórmulas con constantes
+> - [[Técnicas de Integración]] - Manejo de constantes en métodos avanzados
+> - [[Ecuaciones Diferenciales Básicas]] - Aplicación principal
+> - [[Problemas de Valor Inicial]] - Determinación práctica de constantes
+> 
+> ### 📖 Para Profundizar
+> - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
+> - [[Condiciones de Frontera]] - Otros métodos de determinación
+> - [[Unicidad de Soluciones]] - Teoremas de existencia y unicidad
+> - [[Análisis de Estabilidad]] - Comportamiento de soluciones
+> 
+> ### 🎯 Aplicaciones Especializadas
+> - [[Mecánica Clásica]] - Leyes de Newton y movimiento
+> - [[Circuitos RLC]] - Análisis de corriente y voltaje
+> - [[Modelos de Crecimiento]] - Poblaciones y economía
+> - [[Sistemas Dinámicos]] - Evolución temporal
+> 
 
 ### 🏷️ Tags
-`#matematicas/calculo/constantes` `#integrales/indefinidas` `#ecuaciones/diferenciales` `#condiciones/iniciales` `#aplicaciones/fisica` `#teoria/fundamental` `#errores/comunes` `#metodos/estudio`
+#matematicas/calculo/constantes #integrales/indefinidas #ecuaciones/diferenciales #condiciones/iniciales #aplicaciones/fisica #teoria/fundamental #errores/comunes #metodos/estudio

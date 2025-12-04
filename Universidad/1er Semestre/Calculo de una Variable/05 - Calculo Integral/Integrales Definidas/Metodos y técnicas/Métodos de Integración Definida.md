@@ -160,13 +160,13 @@ graph TD
 ### 📊 Tipos de Factores
 
 > [!tip] 📋 **Casos de Descomposición**
-
-| Tipo de Factor | Forma de Fracción Parcial |
-|----------------|---------------------------|
-| $(ax + b)$ | $\frac{A}{ax + b}$ |
-| $(ax + b)^n$ | $\frac{A_1}{ax + b} + \frac{A_2}{(ax + b)^2} + \cdots + \frac{A_n}{(ax + b)^n}$ |
-| $(ax^2 + bx + c)$ | $\frac{Ax + B}{ax^2 + bx + c}$ |
-
+> 
+> | Tipo de Factor | Forma de Fracción Parcial |
+> |----------------|---------------------------|
+> | $(ax + b)$ | $\frac{A}{ax + b}$ |
+> | $(ax + b)^n$ | $\frac{A_1}{ax + b} + \frac{A_2}{(ax + b)^2} + \cdots + \frac{A_n}{(ax + b)^n}$ |
+> | $(ax^2 + bx + c)$ | $\frac{Ax + B}{ax^2 + bx + c}$ |
+> 
 ### 🧪 Ejemplo de Fracciones Parciales
 
 > [!tip] 🔬 **Evaluar**: $\int_0^1 \frac{2x + 1}{x^2 + x} dx$
@@ -195,13 +195,13 @@ graph TD
 ### 🎯 Casos Estándar
 
 > [!tip] 📐 **Sustituciones Trigonométricas Estándar**
-
-| Expresión | Sustitución | Identidad Útil |
-|-----------|-------------|----------------|
-| $\sqrt{a^2 - x^2}$ | $x = a\sin(\theta)$ | $\sqrt{a^2 - a^2\sin^2(\theta)} = a\cos(\theta)$ |
-| $\sqrt{a^2 + x^2}$ | $x = a\tan(\theta)$ | $\sqrt{a^2 + a^2\tan^2(\theta)} = a\sec(\theta)$ |
-| $\sqrt{x^2 - a^2}$ | $x = a\sec(\theta)$ | $\sqrt{a^2\sec^2(\theta) - a^2} = a\tan(\theta)$ |
-
+> 
+> | Expresión | Sustitución | Identidad Útil |
+> |-----------|-------------|----------------|
+> | $\sqrt{a^2 - x^2}$ | $x = a\sin(\theta)$ | $\sqrt{a^2 - a^2\sin^2(\theta)} = a\cos(\theta)$ |
+> | $\sqrt{a^2 + x^2}$ | $x = a\tan(\theta)$ | $\sqrt{a^2 + a^2\tan^2(\theta)} = a\sec(\theta)$ |
+> | $\sqrt{x^2 - a^2}$ | $x = a\sec(\theta)$ | $\sqrt{a^2\sec^2(\theta) - a^2} = a\tan(\theta)$ |
+> 
 ### 🧪 Ejemplo de Sustitución Trigonométrica
 
 > [!tip] 🔬 **Evaluar**: $\int_0^{a} \sqrt{a^2 - x^2} dx$ (área de semicírculo)
@@ -263,27 +263,26 @@ graph TD
 ## ⚠️ Errores Comunes y Precauciones
 
 > [!warning] 🚨 **Errores Frecuentes**
-
-### 🔴 Error 1: Límites en Sustitución
-**Problema**: No cambiar los límites de integración al hacer sustitución
-
-**Solución**: Siempre convertir los límites originales a la nueva variable
-
-### 🔴 Error 2: Signos en Integración por Partes
-**Problema**: Errores de signo en la fórmula
-
-**Recordatorio**: $\int u \, dv = uv - \int v \, du$
-
-### 🔴 Error 3: Fracciones Parciales Incorrectas
-**Problema**: Descomposición incorrecta de la fracción
-
-**Verificación**: Multiplicar la descomposición para recuperar la fracción original
-
-### 🔴 Error 4: Dominios de Sustituciones Trigonométricas
-**Problema**: No verificar que la sustitución sea válida en el intervalo
-
-**Cuidado**: $\sqrt{a^2 - x^2}$ requiere $|x| \leq a$
-
+> ### 🔴 Error 1: Límites en Sustitución
+> **Problema**: No cambiar los límites de integración al hacer sustitución
+> 
+> **Solución**: Siempre convertir los límites originales a la nueva variable
+> 
+> ### 🔴 Error 2: Signos en Integración por Partes
+> **Problema**: Errores de signo en la fórmula
+> 
+> **Recordatorio**: $\int u \, dv = uv - \int v \, du$
+> 
+> ### 🔴 Error 3: Fracciones Parciales Incorrectas
+> **Problema**: Descomposición incorrecta de la fracción
+> 
+> **Verificación**: Multiplicar la descomposición para recuperar la fracción original
+> 
+> ### 🔴 Error 4: Dominios de Sustituciones Trigonométricas
+> **Problema**: No verificar que la sustitución sea válida en el intervalo
+> 
+> **Cuidado**: $\sqrt{a^2 - x^2}$ requiere $|x| \leq a$
+> 
 ## 🔧 Estrategias de Selección
 
 ### 🎯 Algoritmo de Decisión
@@ -347,26 +346,29 @@ mindmap
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Teorema fundamental del cálculo]] - Base teórica para evaluación
-- [[Propiedades de la Integral Definida]] - Herramientas para simplificar
-- [[Integral de Riemann]] - Definición formal subyacente
-- [[Área bajo la Curva]] - Aplicación geométrica principal
-- [[Volúmenes de Revolución]] - Aplicación de estas técnicas
-
-### 📖 Técnicas Relacionadas
-- [[Integrales Impropias]] - Extensión a límites infinitos
-- [[Integración Numérica]] - Métodos aproximados
-- [[Funciones Especiales]] - Integrales no elementales
-- [[Cálculo de Variaciones]] - Técnicas avanzadas
-
-### 🎯 Aplicaciones Prácticas
-- [[Trabajo y Energía con Integrales]] - Uso en física
-- [[Probabilidad y Estadística]] - Funciones de densidad
-- [[Ecuaciones Diferenciales]] - Resolución de EDOs
-- [[Transformadas]] - Fourier, Laplace
+> [!quote] ## 📚 Referencias y Conexiones
+> 
+> 
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Teorema fundamental del cálculo]] - Base teórica para evaluación
+> - [[Propiedades de la Integral Definida]] - Herramientas para simplificar
+> - [[Integral de Riemann]] - Definición formal subyacente
+> - [[Área bajo la Curva]] - Aplicación geométrica principal
+> - [[Volúmenes de Revolución]] - Aplicación de estas técnicas
+> 
+> ### 📖 Técnicas Relacionadas
+> - [[Integrales Impropias]] - Extensión a límites infinitos
+> - [[Integración Numérica]] - Métodos aproximados
+> - [[Funciones Especiales]] - Integrales no elementales
+> - [[Cálculo de Variaciones]] - Técnicas avanzadas
+> 
+> ### 🎯 Aplicaciones Prácticas
+> - [[Trabajo y Energía con Integrales]] - Uso en física
+> - [[Probabilidad y Estadística]] - Funciones de densidad
+> - [[Ecuaciones Diferenciales]] - Resolución de EDOs
+> - [[Transformadas]] - Fourier, Laplace
+> 
 
 ### 🏷️ Tags
-`#matematicas/calculo/metodos` `#integracion/tecnicas` `#sustitucion/cambiovariable` `#partes/LIATE` `#fracciones/parciales` `#trigonometricas/sustitucion` `#aplicaciones/calculo`
+#matematicas/calculo/metodos  #integracion/tecnicas  #sustitucion/cambiovariable  #partes/LIATE  #fracciones/parciales  #trigonometricas/sustitucion  #aplicaciones/calculo

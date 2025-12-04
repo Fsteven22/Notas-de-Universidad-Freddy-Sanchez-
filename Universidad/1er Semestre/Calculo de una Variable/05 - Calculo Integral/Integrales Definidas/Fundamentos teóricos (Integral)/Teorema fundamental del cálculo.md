@@ -155,14 +155,14 @@ flowchart LR
 ### 📋 Propiedades Fundamentales
 
 > [!info] 🔧 **Propiedades Derivadas**
-
-#### 🎯 Corolario 1: Valor Medio para Integrales
-Si $f$ es continua en $[a,b]$, existe $c \in [a,b]$ tal que:
-$$\int_a^b f(x) dx = f(c)(b-a)$$
-
-#### 🎯 Corolario 2: Caracterización de Antiderivadas
-Si $F'(x) = G'(x) = f(x)$ en un intervalo, entonces $F(x) = G(x) + C$ para alguna constante $C$.
-
+> 
+> #### 🎯 Corolario 1: Valor Medio para Integrales
+> Si $f$ es continua en $[a,b]$, existe $c \in [a,b]$ tal que:
+> $$\int_a^b f(x) dx = f(c)(b-a)$$
+> 
+> #### 🎯 Corolario 2: Caracterización de Antiderivadas
+> Si $F'(x) = G'(x) = f(x)$ en un intervalo, entonces $F(x) = G(x) + C$ para alguna constante $C$.
+> 
 ```mermaid
 mindmap
   root((Teorema Fundamental))
@@ -253,25 +253,25 @@ flowchart TD
 
 ---
 
-## 📚 Referencias y Conexiones
-
-### 🔗 Notas Relacionadas
-- [[Integral de Riemann]] - Definición formal de la integral definida
-- [[Propiedades de la Integral Definida]] - Herramientas para manipular integrales
-- [[Métodos de Integración Definida]] - Técnicas para encontrar antiderivadas
-- [[Área bajo la Curva]] - Aplicación geométrica principal
-- [[Ecuaciones Diferenciales]] - Aplicación del teorema para resolver EDOs
-
-### 📖 Para Profundizar
-- [[Teorema del Valor Medio]] - Base teórica de la demostración
-- [[Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
-- [[Historia del Cálculo]] - Desarrollo histórico del teorema
-- [[Cálculo de Variaciones]] - Generalización avanzada
-
-### 🎯 Aplicaciones Especializadas
-- [[Trabajo y Energía con Integrales]] - Aplicaciones en física
-- [[Volúmenes de Revolución]] - Aplicaciones geométricas
-- [[Longitud de Arco]] - Más aplicaciones geométricas
-
+>[!quote] ## 📚 Referencias y Conexiones
+> 
+> ### 🔗 Notas Relacionadas
+> - [[Integral de Riemann]] - Definición formal de la integral definida
+> - [[Propiedades de la Integral Definida]] - Herramientas para manipular integrales
+> - [[Métodos de Integración Definida]] - Técnicas para encontrar antiderivadas
+> - [[Área bajo la Curva]] - Aplicación geométrica principal
+> - [[Ecuaciones Diferenciales]] - Aplicación del teorema para resolver EDOs
+> 
+> ### 📖 Para Profundizar
+> - [[Teorema del Valor Medio]] - Base teórica de la demostración
+> - [[Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
+> - [[Historia del Cálculo]] - Desarrollo histórico del teorema
+> - [[Cálculo de Variaciones]] - Generalización avanzada
+> 
+> ### 🎯 Aplicaciones Especializadas
+> - [[Trabajo y Energía con Integrales]] - Aplicaciones en física
+> - [[Volúmenes de Revolución]] - Aplicaciones geométricas
+> - [[Longitud de Arco]] - Más aplicaciones geométricas
+> 
 ### 🏷️ Tags
-`#matematicas/calculo/teoremas` `#fundamental/conexiones` `#derivadas/integrales` `#aplicaciones/fisica` `#historia/matematicas` `#evaluacion/integrales`
+#fundamental/conexiones #derivadas/integrales #aplicaciones/fisica #historia/matematicas #evaluacion/integrales
