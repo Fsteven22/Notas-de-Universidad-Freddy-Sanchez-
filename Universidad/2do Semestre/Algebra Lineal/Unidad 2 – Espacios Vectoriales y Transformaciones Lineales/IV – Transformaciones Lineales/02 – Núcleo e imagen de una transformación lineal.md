@@ -207,7 +207,7 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> $(\right\arrow)$ Suponer $T$ inyectiva.
+> $(\rightarrow)$ Suponer $T$ inyectiva.
 > 
 > Sea $\vec{v} \in \text{Ker}(T)$, entonces $T(\vec{v}) = \vec{0}$.
 > 
@@ -215,7 +215,7 @@
 > 
 > Por tanto $\text{Ker}(T) = {\vec{0}}$ ✓
 > 
-> $(\left\arrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
+> $(\leftarrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
 > 
 > Sean $\vec{u}, \vec{v} \in V$ con $T(\vec{u}) = T(\vec{v})$.
 > 
@@ -414,15 +414,15 @@
 > 
 > **EJEMPLO:**
 > 
-> $T: \mathbb{R}^3 \to \mathbb{R}^2$ definida por: $$T\begin{pmatrix}\begin{bmatrix} x \ y \ z \end{bmatrix}\end{pmatrix} = \begin{bmatrix} x + 2y - z \ 2x + 4y - 2z \end{bmatrix}$$
+> $T: \mathbb{R}^3 \to \mathbb{R}^2$ definida por: $$T\begin{pmatrix}\begin{bmatrix} x \ y \ z \end{bmatrix}\end{pmatrix} = \begin{bmatrix} x + 2y - z \\ 2x + 4y - 2z \end{bmatrix}$$
 > 
 > **Paso 1:** Plantear $T(\vec{v}) = \vec{0}$
 > 
-> $$\begin{bmatrix} x + 2y - z \ 2x + 4y - 2z \end{bmatrix} = \begin{bmatrix} 0 \ 0 \end{bmatrix}$$
+> $$\begin{bmatrix} x + 2y - z \\ 2x + 4y - 2z \end{bmatrix} = \begin{bmatrix} 0 \ 0 \end{bmatrix}$$
 > 
 > **Paso 2:** Sistema de ecuaciones
 > 
-> $$\begin{cases} x + 2y - z = 0 \ 2x + 4y - 2z = 0 \end{cases}$$
+> $$\begin{cases} x + 2y - z = 0 \\ 2x + 4y - 2z = 0 \end{cases}$$
 > 
 > **Paso 3:** Resolver (segunda ecuación es 2 × primera)
 > 
@@ -457,7 +457,7 @@
 > 
 > **EJEMPLO:**
 > 
-> $$A = \begin{bmatrix} 1 & 2 & -1 & 3 \ 2 & 4 & -2 & 6 \ -1 & -2 & 1 & -3 \end{bmatrix}$$
+> $$A = \begin{bmatrix} 1 & 2 & -1 & 3 \\ 2 & 4 & -2 & 6 \ -1 & -2 & 1 & -3 \end{bmatrix}$$
 > 
 > **Paso 1:** Reducir $A$ a forma escalonada
 > 
