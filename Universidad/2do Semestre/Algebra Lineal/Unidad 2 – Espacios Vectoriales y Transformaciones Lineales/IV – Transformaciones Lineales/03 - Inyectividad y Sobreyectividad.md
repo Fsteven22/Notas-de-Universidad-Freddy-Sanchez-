@@ -40,7 +40,7 @@
 > - **Cantor (1874-1895):** Teoría de conjuntos
 >     - Biyecciones entre infinitos
 >     - Cardinalidad
->     - Paradoja: $\mathbb{N} \left\right\arrow \mathbb{Q}$ (sobreyección)
+>     - Paradoja: $\mathbb{N} \to \mathbb{Q}$ (sobreyección)
 > 
 > **Álgebra lineal moderna (1900-1940):**
 > 
@@ -232,7 +232,7 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> **($\right\arrow$) Si T es inyectiva, entonces Ker(T) = {0}:**
+> **($\longrightarrow$) Si T es inyectiva, entonces Ker(T) = {0}:**
 > 
 > Sea $\vec{v} \in \text{Ker}(T)$, entonces $T(\vec{v}) = \vec{0}$.
 > 
@@ -242,7 +242,7 @@
 > 
 > Por tanto: $\text{Ker}(T) = {\vec{0}}$ ✓
 > 
-> **($\left\arrow$) Si Ker(T) = {0}, entonces T es inyectiva:**
+> **($\longrightarrow$) Si Ker(T) = {0}, entonces T es inyectiva:**
 > 
 > Suponer $T(\vec{u}) = T(\vec{v})$.
 > 
@@ -384,7 +384,7 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> **($\right\arrow$) Si existe T biyectiva, entonces dim(V) = dim(W):**
+> **($\longrightarrow$) Si existe T biyectiva, entonces dim(V) = dim(W):**
 > 
 > T biyectiva $\implies$ T inyectiva y sobreyectiva
 > 
@@ -392,7 +392,7 @@
 > 
 > $\implies \dim(V) = \dim(W)$ ✓
 > 
-> **($\left\arrow$) Si dim(V) = dim(W), existe T biyectiva:**
+> **($\longleftarrow$) Si dim(V) = dim(W), existe T biyectiva:**
 > 
 > Sean $\mathcal{B}_V = {\vec{v}_1, \ldots, \vec{v}_n}$ base de V
 > 

@@ -411,9 +411,9 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> $(\Rightarrow)$ Suponer $T$ inyectiva. Como $T(\vec{0}) = \vec{0}$, si $T(\vec{v}) = \vec{0}$, entonces $T(\vec{v}) = T(\vec{0})$, luego $\vec{v} = \vec{0}$. Por tanto $\text{Ker}(T) = \{\vec{0}\}$ ✓
+> $(\right\arrow)$ Suponer $T$ inyectiva. Como $T(\vec{0}) = \vec{0}$, si $T(\vec{v}) = \vec{0}$, entonces $T(\vec{v}) = T(\vec{0})$, luego $\vec{v} = \vec{0}$. Por tanto $\text{Ker}(T) = \{\vec{0}\}$ ✓
 > 
-> $(\Leftarrow)$ Suponer $\text{Ker}(T) = \{\vec{0}\}$. Si $T(\vec{u}) = T(\vec{v})$:
+> $(\left\arrow)$ Suponer $\text{Ker}(T) = \{\vec{0}\}$. Si $T(\vec{u}) = T(\vec{v})$:
 > $$T(\vec{u}) - T(\vec{v}) = \vec{0}$$
 > $$T(\vec{u} - \vec{v}) = \vec{0}$$
 > $$\implies \vec{u} - \vec{v} \in \text{Ker}(T) = \{\vec{0}\}$$
@@ -456,7 +456,7 @@
 > 
 > $\implies z = 0, \, y = -x$
 > 
-> $$\text{Ker}(T) = \text{span}\left\{\begin{bmatrix} 1 \\ -1 \\ 0 \end{bmatrix}\right\} \neq \{\vec{0}\}$$
+> $$\text{Ker}(T) = \text{span}\left\\{\begin{bmatrix} 1 \\ -1 \\ 0 \end{bmatrix}\right\\} \neq \{\vec{0}\}$$
 > 
 > **NO es inyectiva** ❌
 > 
@@ -546,9 +546,9 @@
 > 
 > Resolver $A\vec{x} = \vec{0}$:
 > 
-> $$\begin{bmatrix} 1 & 2 & 1 & 0 \\ 2 & 4 & 3 & 1 \\ 1 & 2 & 2 & 1 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & 2 & 1 & 0 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 1 \end{bmatrix}$$
+> $$\begin{bmatrix} 1 & 2 & 1 & 0 \\ 2 & 4 & 3 & 1 \\ 1 & 2 & 2 & 1 \end{bmatrix} \right\arrow \begin{bmatrix} 1 & 2 & 1 & 0 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 1 \end{bmatrix}$$
 > 
-> $$\rightarrow \begin{bmatrix} 1 & 2 & 0 & -1 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
+> $$\right\arrow \begin{bmatrix} 1 & 2 & 0 & -1 \\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
 > 
 > Variables: $x_1, x_3$ básicas; $x_2, x_4$ libres
 > 
@@ -557,7 +557,7 @@
 > 
 > $$\vec{x} = \begin{bmatrix} -2x_2 + x_4 \\ x_2 \\ -x_4 \\ x_4 \end{bmatrix} = x_2\begin{bmatrix} -2 \\ 1 \\ 0 \\ 0 \end{bmatrix} + x_4\begin{bmatrix} 1 \\ 0 \\ -1 \\ 1 \end{bmatrix}$$
 > 
-> $$\boxed{\text{Base de Ker}(T): \left\{\begin{bmatrix} -2 \\ 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ -1 \\ 1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Ker}(T): \left\\{\begin{bmatrix} -2 \\ 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ -1 \\ 1 \end{bmatrix}\right\\}}$$
 > 
 > $$\dim(\text{Ker}(T)) = 2$$
 > 
@@ -567,7 +567,7 @@
 > 
 > Tomar columnas 1 y 3 de $A$ original:
 > 
-> $$\boxed{\text{Base de Im}(T): \left\{\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Im}(T): \left\\{\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}\right\\}}$$
 > 
 > $$\dim(\text{Im}(T)) = 2$$
 > 

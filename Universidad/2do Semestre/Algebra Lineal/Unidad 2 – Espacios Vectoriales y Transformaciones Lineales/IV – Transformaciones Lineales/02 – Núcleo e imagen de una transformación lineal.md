@@ -207,7 +207,7 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> $(\rightarrow)$ Suponer $T$ inyectiva.
+> $(\right\arrow)$ Suponer $T$ inyectiva.
 > 
 > Sea $\vec{v} \in \text{Ker}(T)$, entonces $T(\vec{v}) = \vec{0}$.
 > 
@@ -215,7 +215,7 @@
 > 
 > Por tanto $\text{Ker}(T) = {\vec{0}}$ ✓
 > 
-> $(\leftarrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
+> $(\left\arrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
 > 
 > Sean $\vec{u}, \vec{v} \in V$ con $T(\vec{u}) = T(\vec{v})$.
 > 
@@ -434,7 +434,7 @@
 > 
 > **Paso 5:** Base del núcleo
 > 
-> $$\boxed{\text{Ker}(T) = \text{span}\left\{\begin{bmatrix} -2 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} 1 \ 0 \ 1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Ker}(T) = \text{span}\left\\{\begin{bmatrix} -2 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} 1 \ 0 \ 1 \end{bmatrix}\right\\}}$$
 > 
 > $$\dim(\text{Ker}(T)) = 2$$
 > 
@@ -478,7 +478,7 @@
 > 
 > **Paso 5:** Base
 > 
-> $$\boxed{\text{Base de Ker}(T): \left\{\begin{bmatrix} -2 \ 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 1 \ 0 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} -3 \ 0 \ 0 \ 1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Ker}(T): \left\\{\begin{bmatrix} -2 \ 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 1 \ 0 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} -3 \ 0 \ 0 \ 1 \end{bmatrix}\right\\}}$$
 > 
 > $$\text{nullity}(T) = 3$$
 > 
@@ -513,11 +513,11 @@
 > 
 > **Paso 3:** Observar que $T(\vec{e}_1) = T(\vec{e}_2)$
 > 
-> $$\text{Im}(T) = \text{span}\left\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\}$$
+> $$\text{Im}(T) = \text{span}\left\\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\\}$$
 > 
 > **Paso 4:** Verificar L.I. (claramente independientes)
 > 
-> $$\boxed{\text{Base de Im}(T): \left\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Im}(T): \left\\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\\}}$$
 > 
 > $$\text{rank}(T) = 2$$
 > 
@@ -549,7 +549,7 @@
 > 
 > **Paso 3:** Tomar columnas 1 y 3 de $A$ **original**
 > 
-> $$\boxed{\text{Base de Im}(T): \left\{\begin{bmatrix} 1 \ 2 \ -1 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Im}(T): \left\\{\begin{bmatrix} 1 \ 2 \ -1 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}\right\\}}$$
 > 
 > $$\text{rank}(T) = 2$$
 > 
@@ -601,7 +601,7 @@
 > 
 > Multiplicar primer vector por 2:
 > 
-> $$\boxed{\text{Base de Ker}(T): \left\{\begin{bmatrix} -3 \ -1 \ 2 \ 0 \end{bmatrix}, \begin{bmatrix} -2 \ 1 \ 0 \ 1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Ker}(T): \left\\{\begin{bmatrix} -3 \ -1 \ 2 \ 0 \end{bmatrix}, \begin{bmatrix} -2 \ 1 \ 0 \ 1 \end{bmatrix}\right\\}}$$
 > 
 > $$\boxed{\dim(\text{Ker}(T)) = 2}$$
 > 
@@ -611,7 +611,7 @@
 > 
 > Tomar columnas 1 y 2 de $A$ original:
 > 
-> $$\boxed{\text{Base de Im}(T): \left\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 1 \ 2 \ -1 \end{bmatrix}\right\}}$$
+> $$\boxed{\text{Base de Im}(T): \left\\{\begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 1 \ 2 \ -1 \end{bmatrix}\right\\}}$$
 > 
 > $$\boxed{\dim(\text{Im}(T)) = 2}$$
 > 
@@ -692,7 +692,7 @@
 > 
 > $$\implies x = 0, y = 0, z \text{ libre}$$
 > 
-> $$\boxed{\text{Ker}(T) = \text{span}\left\{\begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\} = \text{eje } z}$$
+> $$\boxed{\text{Ker}(T) = \text{span}\left\\{\begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix}\right\\} = \text{eje } z}$$
 > 
 > **Interpretación:** El núcleo es el eje $z$ (todos los vectores perpendiculares al plano $xy$).
 > 
@@ -700,7 +700,7 @@
 > 
 > Todo vector en la imagen tiene forma $\begin{bmatrix} x \ y \ 0 \end{bmatrix}$
 > 
-> $$\boxed{\text{Im}(T) = \text{span}\left\{\begin{bmatrix} 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 0 \end{bmatrix}\right\} = \text{plano } xy}$$
+> $$\boxed{\text{Im}(T) = \text{span}\left\\{\begin{bmatrix} 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 0 \end{bmatrix}\right\\} = \text{plano } xy}$$
 > 
 > **Interpretación:** La imagen es el plano $xy$ completo.
 > 
