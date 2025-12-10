@@ -207,7 +207,7 @@
 > 
 > **DEMOSTRACIÓN:**
 > 
-> $(\right\arrow)$ Suponer $T$ inyectiva.
+> $(\longrightarrow)$ Suponer $T$ inyectiva.
 > 
 > Sea $\vec{v} \in \text{Ker}(T)$, entonces $T(\vec{v}) = \vec{0}$.
 > 
@@ -215,7 +215,7 @@
 > 
 > Por tanto $\text{Ker}(T) = {\vec{0}}$ ✓
 > 
-> $(\left\arrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
+> $(\longleftarrow)$ Suponer $\text{Ker}(T) = {\vec{0}}$.
 > 
 > Sean $\vec{u}, \vec{v} \in V$ con $T(\vec{u}) = T(\vec{v})$.
 > 
