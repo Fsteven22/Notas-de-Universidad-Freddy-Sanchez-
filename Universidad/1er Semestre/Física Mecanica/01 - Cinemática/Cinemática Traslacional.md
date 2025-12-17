@@ -190,8 +190,8 @@
 > 
 > - [[Cinemática Rotacional]] - Movimiento angular, analogías
 > - [[Vectores]] - Para movimiento en 2D y 3D
-> - [[Derivadas y Definición Formal]] - Definiciones de velocidad y aceleración
-> - [[Antiderivadas (Primitivas)]] - Para recuperar posición desde aceleración
+> - [[01 - Derivada y Definición Formal]] - Definiciones de velocidad y aceleración
+> - [[01 - Antiderivadas (Primitivas)]] - Para recuperar posición desde aceleración
 > - [[Leyes de Newton]] - Causas del movimiento (dinámica)
 
 ## 📖 Notas Recomendadas para Complementar

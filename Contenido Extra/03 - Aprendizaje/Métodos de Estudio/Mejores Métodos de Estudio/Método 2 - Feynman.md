@@ -285,7 +285,7 @@
 > 
 > **🔄 Proceso Feynman step-by-step**:
 > 
-> **Paso 1**: "Integral definida - [[Área bajo la Curva]]" **Paso 2**: Primera explicación llena de jerga matemática **Paso 3**: Identifica lagunas - no puede explicar por qué funciona **Paso 4**: Desarrollo de analogía con "contar cuadraditos"
+> **Paso 1**: "Integral definida - [[01 - Área bajo la Curva]]" **Paso 2**: Primera explicación llena de jerga matemática **Paso 3**: Identifica lagunas - no puede explicar por qué funciona **Paso 4**: Desarrollo de analogía con "contar cuadraditos"
 > 
 > **✅ Explicación final refinada**: "Imagina que quieres saber cuánta pintura necesitas para pintar una forma extraña, como una montaña dibujada en papel. No puedes usar la fórmula de rectángulos porque la montaña tiene curvas. Entonces, divides la montaña en muchas tiritas verticales súper delgadas, como si fueran palitos de helado parados. Cada palito tiene un área fácil de calcular (base × altura). Si sumas las áreas de todos los palitos, obtienes aproximadamente el área total. La integral es exactamente eso: sumar infinitos palitos súper delgaditos para obtener el área exacta bajo cualquier curva."
 > 

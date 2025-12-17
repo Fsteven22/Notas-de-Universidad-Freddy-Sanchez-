@@ -168,7 +168,7 @@
 > 
 > - [[Vectores]] - Para comprender direcciones angulares
 > - [[Funciones Trigonométricas]] - Para resolver componentes
-> - [[Derivadas y Definición Formal]] - Para definiciones de ω y α
+> - [[01 - Derivada y Definición Formal]] - Para definiciones de ω y α
 > 
 > **Temas complementarios:**
 > 
