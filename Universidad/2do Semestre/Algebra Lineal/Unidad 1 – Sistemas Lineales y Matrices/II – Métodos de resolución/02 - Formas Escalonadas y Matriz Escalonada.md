@@ -2640,7 +2640,7 @@ graph TD
 > 
 > - [[01 - Rango de una Matriz]] - FE facilita cálculo del rango
 > - [[02 - Teorema de Rouché-Frobenius]] - FE visualiza el teorema
-> - [[03 - Clasificación de soluciones de un S.E.L.]] - FE determina tipo
+> - [[01 - Dimensión y descripción del conjunto solución]] - FE determina tipo
 > - [[01 - Dimensión y descripción del conjunto solución]] - FER da soluciones
 > 
 > **Conceptos relacionados:**

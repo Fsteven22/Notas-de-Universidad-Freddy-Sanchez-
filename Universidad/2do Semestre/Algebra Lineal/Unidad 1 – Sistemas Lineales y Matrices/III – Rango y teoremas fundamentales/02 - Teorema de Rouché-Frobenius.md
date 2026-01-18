@@ -2648,7 +2648,7 @@
 > 
 > **Es prerequisito para:**
 > 
-> - [[03 - Clasificación de soluciones de un S.E.L.]] - Aplicación directa
+> - [[01 - Dimensión y descripción del conjunto solución]] - Aplicación directa
 > - [[01 - Dimensión y descripción del conjunto solución]] - Análisis de infinitas soluciones
 > - [[09 - Resolución de sistemas lineales]] - Estrategias de solución
 > - [[10 - Sistemas homogéneos]] - Caso especial
