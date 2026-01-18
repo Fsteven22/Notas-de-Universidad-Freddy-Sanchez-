@@ -210,7 +210,7 @@ graph TB
 > 
 > ```mermaid
 > graph LR
->     A[Vector u<br/>||u|| = 5] -->|Dividir por 5| B[Vector û<br/>||û|| = 1]
+>     A["Vector u<br/>||u|| = 5] -->|Dividir por 5| B[Vector û<br/>||û|| = 1" ]
 >     
 >     A -.->|Mantiene<br/>dirección| B
 >     
@@ -476,9 +476,9 @@ graph TB
 > 
 > ```mermaid
 > flowchart LR
->     A[Conjunto Ortogonal<br/>v₁, v₂, ..., vₖ] --> B[Calcular normas<br/>||v₁||, ||v₂||, ..., ||vₖ||]
+>     A["Conjunto Ortogonal<br/>v₁, v₂, ..., vₖ"] --> B["Calcular normas<br/>||v₁||, ||v₂||, ..., ||vₖ||" ]
 >     
->     B --> C[Normalizar cada vector<br/>uᵢ = vᵢ/||vᵢ||]
+>     B --> C["Normalizar cada vector<br/>uᵢ = vᵢ/||vᵢ||"]
 >     
 >     C --> D[Conjunto Ortonormal<br/>u₁, u₂, ..., uₖ]
 >     
