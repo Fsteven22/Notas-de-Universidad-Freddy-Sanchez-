@@ -74,9 +74,9 @@ graph TB
 > 
 > **Forma explícita:**
 > 
-> $$D = \begin{pmatrix} \lambda_1 & 0 & \cdots & 0 \ 0 & \lambda_2 & \cdots & 0 \ \vdots & \vdots & \ddots & \vdots \ 0 & 0 & \cdots & \lambda_n \end{pmatrix}$$
+> $$D = \begin{pmatrix} \lambda_1 & 0 & \cdots & 0 \\ 0 & \lambda_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & \lambda_n \end{pmatrix}$$
 > 
-> $$P = \begin{pmatrix} | & | & & | \ \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n \ | & | & & | \end{pmatrix}$$
+> $$P = \begin{pmatrix} | & | & & | \\ \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n \\ | & | & & | \end{pmatrix}$$
 > 
 > donde $\lambda_i$ son los valores propios y $\mathbf{v}_i$ los vectores propios correspondientes.
 
@@ -325,7 +325,7 @@ flowchart TD
 > 
 > **Problema:** Diagonalizar
 > 
-> $$A = \begin{pmatrix} 1 & 2 \ 2 & 1 \end{pmatrix}$$
+> $$A = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$$
 > 
 > ```
 > SOLUCIÓN COMPLETA:

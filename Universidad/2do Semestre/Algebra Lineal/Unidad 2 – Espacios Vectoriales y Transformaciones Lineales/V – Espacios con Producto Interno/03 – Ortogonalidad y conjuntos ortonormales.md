@@ -310,7 +310,7 @@ graph TB
 >     A --> D[Cálculos Rápidos]
 >     A --> E[Estabilidad Numérica]
 >     
->     B --> F[cᵢ = ⟨v,uᵢ⟩/||uᵢ||²]
+>     B --> F["cᵢ = ⟨v,uᵢ⟩/||uᵢ||²"]
 >     C --> G[No hay interferencia]
 >     D --> H[Sin resolver sistemas]
 >     E --> I[Menor error de redondeo]
@@ -458,11 +458,11 @@ graph TB
 > 
 > ```mermaid
 > flowchart TD
->     A[Vector v] --> B[Calcular norma<br/>||v|| = √⟨v,v⟩]
->     B --> C{||v|| = 0?}
->     C -->|Sí| D[❌ Error<br/>No se puede normalizar]
->     C -->|No| E[Dividir cada componente<br/>û = v/||v||]
->     E --> F[Verificar: ||û|| = 1]
+>     A[Vector v] --> B["Calcular norma<br/>||v|| = √⟨v,v⟩"]
+>     B --> C{"||v|| = 0?"}
+>     C -->|Sí| D["❌ Error<br/>No se puede normalizar"]
+>     C -->|No| E["Dividir cada componente<br/>û = v/||v||"]
+>     E --> F["Verificar: ||û|| = 1"]
 >     F --> G[✅ Vector normalizado]
 >     
 >     style D fill:#ffe1e1

@@ -1,7 +1,8 @@
 {
   "accentColor": "",
   "theme": "obsidian",
-  "cssTheme": "Dekurai",
-  "textFontFamily": "Inter",
-  "interfaceFontFamily": "Inter"
+  "cssTheme": "Dark Moss",
+  "textFontFamily": "Fira Code",
+  "interfaceFontFamily": "JetBrains Mono",
+  "showViewHeader": false
 }

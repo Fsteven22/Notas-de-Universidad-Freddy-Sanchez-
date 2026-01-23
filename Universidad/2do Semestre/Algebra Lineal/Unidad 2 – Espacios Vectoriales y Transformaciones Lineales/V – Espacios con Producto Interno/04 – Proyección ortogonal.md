@@ -563,7 +563,6 @@ graph TB
 > Si el plano está dado por **ax + by + cz = d**, la distancia de (x₀, y₀, z₀) es:
 > 
 > $$\text{distancia} = \frac{|ax_0 + by_0 + cz_0 - d|}{\sqrt{a^2 + b^2 + c^2}}$$
-
 > ```
 > Ejemplo: Distancia de (1, 2, 3) al plano x + y + z = 0
 > 

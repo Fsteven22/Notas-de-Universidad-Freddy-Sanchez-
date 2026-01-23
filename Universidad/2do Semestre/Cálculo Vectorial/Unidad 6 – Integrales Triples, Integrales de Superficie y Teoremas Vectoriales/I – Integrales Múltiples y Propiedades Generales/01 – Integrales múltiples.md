@@ -586,8 +586,8 @@ graph TB
 >    I_x = ∬_R y² · ρ(x,y) dA   (respecto a eje x)
 >    I_y = ∬_R x² · ρ(x,y) dA   (respecto a eje y)
 >    I_0 = ∬_R (x²+y²) · ρ(x,y) dA (respecto al origen)
-
-> ```
+<
+>```
 > 
 > **Para sólidos (3D):**
 > 
@@ -640,6 +640,7 @@ graph TB
 >     
 > 
 > Centro de masa: (1/4, 1/2)
+> ```
 
 ### 📐 Volumen de Sólidos
 
