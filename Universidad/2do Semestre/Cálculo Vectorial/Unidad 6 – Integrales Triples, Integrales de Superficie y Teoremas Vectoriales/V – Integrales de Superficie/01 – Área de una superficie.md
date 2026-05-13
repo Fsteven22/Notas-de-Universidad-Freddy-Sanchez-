@@ -392,8 +392,8 @@ graph TB
 > 
 > ```mermaid
 > graph LR
->     A[Función par<br/>f(-x) = f(x)] --> B[∫₋ₐᵃ f(x)dx = 2∫₀ᵃ f(x)dx]
->     C[Función impar<br/>f(-x) = -f(x)] --> D[∫₋ₐᵃ f(x)dx = 0]
+>     A["Función par<br/>f(-x) = f(x)"] --> B["∫₋ₐᵃ f(x)dx = 2∫₀ᵃ f(x)dx"]
+>     C["Función impar<br/>f(-x) = -f(x)"] --> D["∫₋ₐᵃ f(x)dx = 0"]
 >     E[Simetría rotacional] --> F[Usar ángulo completo<br/>0 a 2π]
 >     
 >     style B fill:#e1ffe1
@@ -485,41 +485,41 @@ graph TB
 ## 🎯 Estrategia General de Resolución
 
 > [!tip]- 🗺️ Guía Paso a Paso
-> 
+> 	 
 > ```mermaid
 > flowchart TD
 >     A[Problema: Calcular área de superficie] --> B{¿Cómo está dada?}
->     
->     B -->|z = f(x,y)| C[Usar fórmula con derivadas parciales]
->     B -->|r(u,v)| D[Usar parametrización]
->     B -->|F(x,y,z) = 0| E[Usar gradiente]
->     
->     C --> F[1. Calcular ∂f/∂x, ∂f/∂y]
->     D --> G[1. Calcular ∂r/∂u, ∂r/∂v]
->     E --> H[1. Calcular ∇F]
->     
->     F --> I[2. Identificar región D]
->     G --> J[2. Determinar dominio]
->     H --> K[2. Proyectar sobre plano]
->     
+> 
+>     B -->|"z = f(x,y)"| C[Usar fórmula con derivadas parciales]
+>     B -->|"r(u,v)"| D[Usar parametrización]
+>     B -->|"F(x,y,z) = 0"| E[Usar gradiente]
+> 
+>     C --> F["Calcular ∂f/∂x y ∂f/∂y"]
+>     D --> G["Calcular ∂r/∂u y ∂r/∂v"]
+>     E --> H["Calcular ∇F"]
+> 
+>     F --> I["Identificar región D"]
+>     G --> J["Determinar dominio"]
+>     H --> K["Proyectar sobre plano"]
+> 
 >     I --> L{¿Coordenadas?}
 >     J --> L
 >     K --> L
->     
->     L -->|Polares| M[Transformar a r,θ]
->     L -->|Cartesianas| N[Mantener x,y]
->     
->     M --> O[3. Plantear integral doble]
+> 
+>     L -->|Polares| M["Transformar a r, θ"]
+>     L -->|Cartesianas| N["Mantener x, y"]
+> 
+>     M --> O["Plantear integral doble"]
 >     N --> O
->     
->     O --> P[4. Integrar]
->     P --> Q[5. Evaluar límites]
->     Q --> R[✅ Resultado]
->     
+> 
+>     O --> P["Integrar"]
+>     P --> Q["Evaluar límites"]
+>     Q --> R["✅ Resultado"]
+> 
 >     style A fill:#e1f5ff
 >     style R fill:#e1ffe1
-> ```
 > 
+> ```
 > **Checklist de verificación:**
 > 
 > - [ ] Identificar tipo de superficie
@@ -532,6 +532,7 @@ graph TB
 > - [ ] Simplificar integrando si es posible
 > - [ ] Integrar paso a paso
 > - [ ] Verificar unidades y razonabilidad
+> 
 
 ---
 

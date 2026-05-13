@@ -1,4 +1,4 @@
-# 📘 11 – Funciones de Clase C¹
+# 📘 Funciones de Clase C¹
 
 ## 🎯 Introducción
 

@@ -730,11 +730,11 @@ flowchart TD
     B -->|Centro de masa| D[Calcular M y momentos]
     B -->|Momento de inercia| E[Calcular I_x, I_y, o I_z]
     
-    D --> F[1. Calcular M = ∭ δ dV]
-    F --> G[2. Calcular M_yz = ∭ xδ dV]
-    G --> H[3. Calcular M_xz = ∭ yδ dV]
-    H --> I[4. Calcular M_xy = ∭ zδ dV]
-    I --> J[5. x̄ = M_yz/M, etc.]
+    D --> F[Calcular M = ∭ δ dV]
+    F --> G[Calcular M_yz = ∭ xδ dV]
+    G --> H[Calcular M_xz = ∭ yδ dV]
+    H --> I[Calcular M_xy = ∭ zδ dV]
+    I --> J[x̄ = M_yz/M, etc.]
     
     E --> K[I = ∭ distancia² · δ dV]
     K --> L{¿Eje?}

@@ -28,7 +28,7 @@ graph TB
     A --> E[Centro de masa]
     
     B --> F[∫∫∫_D dV]
-    C --> G[∫∫∫_D ρ(x,y,z) dV]
+    C --> G["∫∫∫_D ρ(x,y,z) dV"]
     D --> H[∫∫∫_D z·ρ dV]
     E --> I[x̄ = M_yz/m]
     
@@ -257,7 +257,7 @@ graph TB
 > 
 > **✅ Orden bueno:** $dz,dy,dx$
 > 
-> $$\begin{align} \iiint_D e^{z^2},dV &= \int_0^1 \int_0^x \int_0^{x+y} e^{z^2},dz,dy,dx \[0.5em] \end{align}$$
+> $$\begin{align} \iiint_D e^{z^2},dV &= \int_0^1 \int_0^x \int_0^{x+y} e^{z^2},dz,dy,dx \\[0.5em] \end{align}$$
 > 
 > Al integrar en $z$ primero, aunque $e^{z^2}$ no tiene primitiva elemental, podemos usar sustitución $u = z^2$ cuando sea necesario, o evaluar numéricamente.
 
@@ -301,7 +301,7 @@ graph TB
 > 
 > Usando coordenadas polares: $x = r\cos\theta, , y = r\sin\theta, , dA = r,dr,d\theta$
 > 
-> $$\begin{align} V &= \int_0^{2\pi} \int_0^2 (4-r^2),r,dr,d\theta \[0.5em] &= \int_0^{2\pi} \int_0^2 (4r - r^3),dr,d\theta \[0.5em] &= \int_0^{2\pi} \left[2r^2 - \frac{r^4}{4}\right]_0^2 d\theta \[0.5em] &= \int_0^{2\pi} (8 - 4),d\theta = 4 \cdot 2\pi = 8\pi \end{align}$$
+> *$$\begin{align} V &= \int_0^{2\pi} \int_0^2 (4-r^2),r,dr,d\theta \\[0.5em] &= \int_0^{2\pi} \int_0^2 (4r - r^3),dr,d\theta \\[0.5em] &= \int_0^{2\pi} \left[2r^2 - \frac{r^4}{4}\right]_0^2 d\theta \\[0.5em] &= \int_0^{2\pi} (8 - 4),d\theta = 4 \cdot 2\pi = 8\pi \end{align}$$*
 
 ### 🔺 Volumen de Tetraedros
 
@@ -315,7 +315,7 @@ graph TB
 > 
 > $$V = \int_0^a \int_0^{b(1-x/a)} \int_0^{c(1-x/a-y/b)} 1,dz,dy,dx$$
 > 
-> $$\begin{align} V &= \int_0^a \int_0^{b(1-x/a)} c\left(1-\frac{x}{a}-\frac{y}{b}\right) dy,dx \[0.5em] &= \int_0^a c\left(1-\frac{x}{a}\right) \int_0^{b(1-x/a)} \left(1-\frac{y}{b(1-x/a)}\right) dy,dx \[0.5em] &= \int_0^a c\left(1-\frac{x}{a}\right) \cdot \frac{b(1-x/a)}{2},dx \[0.5em] &= \frac{bc}{2} \int_0^a \left(1-\frac{x}{a}\right)^2 dx = \frac{abc}{6} \end{align}$$
+> $$\begin{align} V &= \int_0^a \int_0^{b(1-x/a)} c\left(1-\frac{x}{a}-\frac{y}{b}\right) dy,dx \\[0.5em] &= \int_0^a c\left(1-\frac{x}{a}\right) \int_0^{b(1-x/a)} \left(1-\frac{y}{b(1-x/a)}\right) dy,dx \\[0.5em] &= \int_0^a c\left(1-\frac{x}{a}\right) \cdot \frac{b(1-x/a)}{2},dx \\[0.5em] &= \frac{bc}{2} \int_0^a \left(1-\frac{x}{a}\right)^2 dx = \frac{abc}{6} \end{align}$$
 > 
 > **Fórmula general:**
 > 
@@ -374,7 +374,7 @@ graph TB
 > 
 > Cubo $D = [0,1]^3$ con densidad $\rho(x,y,z) = x + y + z$:
 > 
-> $$\begin{align} m &= \int_0^1 \int_0^1 \int_0^1 (x+y+z),dz,dy,dx \[0.5em] &= \int_0^1 \int_0^1 \left[xz + yz + \frac{z^2}{2}\right]_0^1 dy,dx \[0.5em] &= \int_0^1 \int_0^1 \left(x + y + \frac{1}{2}\right) dy,dx \[0.5em] &= \int_0^1 \left[xy + \frac{y^2}{2} + \frac{y}{2}\right]_0^1 dx \[0.5em] &= \int_0^1 \left(x + 1\right) dx = \left[\frac{x^2}{2} + x\right]_0^1 = \frac{3}{2} \end{align}$$
+> $$\begin{align} m &= \int_0^1 \int_0^1 \int_0^1 (x+y+z),dz,dy,dx \\[0.5em] &= \int_0^1 \int_0^1 \left[xz + yz + \frac{z^2}{2}\right]_0^1 dy,dx \\[0.5em] &= \int_0^1 \int_0^1 \left(x + y + \frac{1}{2}\right) dy,dx \\[0.5em] &= \int_0^1 \left[xy + \frac{y^2}{2} + \frac{y}{2}\right]_0^1 dx \\[0.5em] &= \int_0^1 \left(x + 1\right) dx = \left[\frac{x^2}{2} + x\right]_0^1 = \frac{3}{2} \end{align}$$
 
 ### 📍 Centro de Masa
 
@@ -386,7 +386,7 @@ graph TB
 > 
 > Donde:
 > 
-> $$\begin{align} m &= \iiint_D \rho(x,y,z),dV \quad \text{(masa total)} \[0.5em] M_{yz} &= \iiint_D x\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano yz)} \[0.5em] M_{xz} &= \iiint_D y\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano xz)} \[0.5em] M_{xy} &= \iiint_D z\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano xy)} \end{align}$$
+> $$\begin{align} m &= \iiint_D \rho(x,y,z),dV \quad \text{(masa total)} \\[0.5em] M_{yz} &= \iiint_D x\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano yz)} \\[0.5em] M_{xz} &= \iiint_D y\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano xz)} \\[0.5em] M_{xy} &= \iiint_D z\cdot\rho(x,y,z),dV \quad \text{(momento respecto a plano xy)} \end{align}$$
 > 
 > **Interpretación:**
 > 
@@ -436,7 +436,7 @@ graph TB
 > 
 > **Respecto a los ejes coordenados:**
 > 
-> $$\begin{align} I_x &= \iiint_D (y^2 + z^2)\rho(x,y,z),dV \quad \text{(eje x)} \[0.5em] I_y &= \iiint_D (x^2 + z^2)\rho(x,y,z),dV \quad \text{(eje y)} \[0.5em] I_z &= \iiint_D (x^2 + y^2)\rho(x,y,z),dV \quad \text{(eje z)} \end{align}$$
+> $$\begin{align} I_x &= \iiint_D (y^2 + z^2)\rho(x,y,z),dV \quad \text{(eje x)} \\[0.5em] I_y &= \iiint_D (x^2 + z^2)\rho(x,y,z),dV \quad \text{(eje y)} \\[0.5em] I_z &= \iiint_D (x^2 + y^2)\rho(x,y,z),dV \quad \text{(eje z)} \end{align}$$
 > 
 > **Respecto al origen:**
 > 
@@ -570,7 +570,7 @@ graph TB
 > 
 > **Ejemplo:** Volumen de esfera $x^2 + y^2 + z^2 \leq a^2$
 > 
-> $$\begin{align} V &= \int_0^{2\pi} \int_0^{\pi} \int_0^a \rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= \int_0^{2\pi} d\theta \int_0^{\pi} \sin\phi,d\phi \int_0^a \rho^2,d\rho \[0.5em] &= 2\pi \cdot [-\cos\phi]_0^{\pi} \cdot \frac{a^3}{3} \[0.5em] &= 2\pi \cdot 2 \cdot \frac{a^3}{3} = \frac{4\pi a^3}{3} \end{align}$$
+> $$\begin{align} V &= \int_0^{2\pi} \int_0^{\pi} \int_0^a \rho^2\sin\phi,d\rho,d\phi,d\theta \\[0.5em] &= \int_0^{2\pi} d\theta \int_0^{\pi} \sin\phi,d\phi \int_0^a \rho^2,d\rho \\[0.5em] &= 2\pi \cdot [-\cos\phi]_0^{\pi} \cdot \frac{a^3}{3} \\[0.5em] &= 2\pi \cdot 2 \cdot \frac{a^3}{3} = \frac{4\pi a^3}{3} \end{align}$$
 
 ---
 
@@ -718,11 +718,11 @@ graph TB
 > 
 > **Masa total:**
 > 
-> $$\begin{align} m &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a (\rho\cos\phi)\rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= 2\pi \int_0^{\pi/2} \cos\phi\sin\phi,d\phi \int_0^a \rho^3,d\rho \[0.5em] &= 2\pi \cdot \frac{1}{2}[\sin^2\phi]_0^{\pi/2} \cdot \frac{a^4}{4} \[0.5em] &= 2\pi \cdot \frac{1}{2} \cdot \frac{a^4}{4} = \frac{\pi a^4}{4} \end{align}$$
+> $$\begin{align} m &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a (\rho\cos\phi)\rho^2\sin\phi,d\rho,d\phi,d\theta \\[0.5em] &= 2\pi \int_0^{\pi/2} \cos\phi\sin\phi,d\phi \int_0^a \rho^3,d\rho \\[0.5em] &= 2\pi \cdot \frac{1}{2}[\sin^2\phi]_0^{\pi/2} \cdot \frac{a^4}{4} \\[0.5em] &= 2\pi \cdot \frac{1}{2} \cdot \frac{a^4}{4} = \frac{\pi a^4}{4} \end{align}$$
 > 
 > **Momento $M_{xy}$:**
 > 
-> $$\begin{align} M_{xy} &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a z \cdot z \cdot \rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a (\rho\cos\phi)^2 \rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= 2\pi \int_0^{\pi/2} \cos^2\phi\sin\phi,d\phi \int_0^a \rho^4,d\rho \[0.5em] &= 2\pi \cdot \frac{1}{3}[\cos^3\phi]_{\pi/2}^0 \cdot \frac{a^5}{5} \[0.5em] &= 2\pi \cdot \frac{1}{3} \cdot \frac{a^5}{5} = \frac{2\pi a^5}{15} \end{align}$$
+> $$\begin{align} M_{xy} &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a z \cdot z \cdot \rho^2\sin\phi,d\rho,d\phi,d\theta \\[0.5em] &= \int_0^{2\pi} \int_0^{\pi/2} \int_0^a (\rho\cos\phi)^2 \rho^2\sin\phi,d\rho,d\phi,d\theta \\[0.5em] &= 2\pi \int_0^{\pi/2} \cos^2\phi\sin\phi,d\phi \int_0^a \rho^4,d\rho \\[0.5em] &= 2\pi \cdot \frac{1}{3}[\cos^3\phi]_{\pi/2}^0 \cdot \frac{a^5}{5} \\[0.5em] &= 2\pi \cdot \frac{1}{3} \cdot \frac{a^5}{5} = \frac{2\pi a^5}{15} \end{align}$$
 > 
 > **Centro de masa:**
 > 
@@ -782,7 +782,7 @@ graph TB
 > 
 > ### Aplicaciones Físicas
 > 
-> $$\begin{align} \text{Volumen:} \quad & V = \iiint_D 1,dV \[0.5em] \text{Masa:} \quad & m = \iiint_D \rho,dV \[0.5em] \text{Centro de masa:} \quad & \bar{x} = \frac{1}{m}\iiint_D x\rho,dV \[0.5em] \text{Momento de inercia:} \quad & I_z = \iiint_D (x^2+y^2)\rho,dV \end{align}$$
+> $$\begin{align} \text{Volumen:} \quad & V = \iiint_D 1,dV \\[0.5em] \text{Masa:} \quad & m = \iiint_D \rho,dV \\[0.5em] \text{Centro de masa:} \quad & \bar{x} = \frac{1}{m}\iiint_D x\rho,dV \\[0.5em] \text{Momento de inercia:} \quad & I_z = \iiint_D (x^2+y^2)\rho,dV \end{align}$$
 
 ---
 

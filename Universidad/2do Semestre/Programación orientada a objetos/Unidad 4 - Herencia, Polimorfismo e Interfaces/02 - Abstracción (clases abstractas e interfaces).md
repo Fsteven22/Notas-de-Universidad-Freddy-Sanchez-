@@ -146,7 +146,7 @@ graph TB
 >     
 >     // Método concreto: comportamiento común
 >     public void mostrarInfo() {
->         System.out.println("=== Información de la figura ===");
+>         System.out.println("Información de la figura");
 >         System.out.println("Color: " + color);
 >         System.out.println("Área: " + calcularArea());
 >         System.out.println("Perímetro: " + calcularPerimetro());
@@ -224,12 +224,12 @@ graph TB
 > **Salida:**
 > 
 > ```
-> === Información de la figura ===
+> Información de la figura
 > Color: azul
 > Área: 78.53981633974483
 > Perímetro: 31.41592653589793
 > 
-> === Información de la figura ===
+> Información de la figura
 > Color: rojo
 > Área: 24.0
 > Perímetro: 20.0

@@ -1,918 +1,694 @@
-# 📊 Extremos Relativos de Funciones Multivariables
+# 🏔️ Extremos Relativos de Funciones Multivariables
 
-## 🌟 Concepto Fundamental
+## 🎯 Introducción
 
-> [!info]- Definición Intuitiva
-> **Los extremos relativos (o locales) de una función multivariable son puntos donde la función alcanza valores máximos o mínimos en comparación con los puntos cercanos. Representan "picos", "valles" o "puntos de silla" en la superficie que describe la función. Este concepto es fundamental para optimización, análisis de estabilidad y modelado de fenómenos naturales.**
+> [!info]- 💡 ¿Qué son los Extremos Relativos?
 > 
-> **Características clave:**
-> - **Localidad:** Comparación con puntos vecinos (no globales)
-> - **Puntos críticos:** Donde el gradiente se anula o no existe
-> - **Clasificación:** Máximos, mínimos y puntos de silla
-> - **Criterio:** Prueba de las segundas derivadas (Hessiano)
-> - **Aplicación:** Optimización en múltiples variables
+> Los **extremos relativos** (o locales) son puntos donde una función alcanza valores máximos o mínimos en comparación con los puntos cercanos. Son fundamentales para optimización y análisis de funciones.
+> 
+> **Conceptos clave:**
+> 
+> |Término|Descripción|
+> |---|---|
+> |**Máximo relativo**|f(a,b) ≥ f(x,y) para todo (x,y) cercano a (a,b)|
+> |**Mínimo relativo**|f(a,b) ≤ f(x,y) para todo (x,y) cercano a (a,b)|
+> |**Punto crítico**|Punto donde ∇f = 0 o no existe|
+> |**Punto silla**|Punto crítico que NO es extremo|
+> 
+> **Analogía geométrica:**
+> 
+> Imagina una superficie montañosa:
+> 
+> - **Máximo relativo** = Cima de una montaña 🏔️
+> - **Mínimo relativo** = Fondo de un valle 🏞️
+> - **Punto silla** = Paso o puerto de montaña 🛤️ (sube en una dirección, baja en otra)
 
-### 📖 Contexto Histórico
+```mermaid
+graph TB
+    A["Función f(x,y)<br/>Superficie en ℝ³"] 
+    
+    A --> B[Puntos Críticos<br/>∇f = 0]
+    
+    B --> C[Máximo Relativo<br/>Cima local]
+    B --> D[Mínimo Relativo<br/>Valle local]
+    B --> E[Punto Silla<br/>Paso de montaña]
+    B --> F[Indeterminado<br/>Análisis adicional]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff5e1
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1
+    style E fill:#ffe1ff
+    style F fill:#f0f0f0
+```
 
-> [!note]- Desarrollo del Concepto
-> **Orígenes (1600-1800):**
-> - **Fermat (1638):** Método para encontrar máximos y mínimos
->   - Tangente horizontal en extremos
->   - Precursor del cálculo diferencial
-> - **Leibniz & Newton (1670s):** Cálculo diferencial
->   - Derivadas y puntos críticos
->   - Optimización en una variable
-> - **Euler (1755):** Cálculo de variaciones
->   - Ecuaciones de Euler-Lagrange
->   - Extremos de funcionales
-> 
-> **Desarrollo multivariable (1800-1900):**
-> - **Lagrange (1788):** Multiplicadores de Lagrange
->   - Optimización con restricciones
->   - Método sistemático
-> - **Hesse (1844):** Matriz Hessiana
->   - Segunda derivada parcial
->   - Criterio de clasificación
-> - **Weierstrass (1860):** Teoría rigurosa
->   - Existencia de extremos
->   - Compacidad y continuidad
-> 
-> **Era moderna (1900-presente):**
-> - **Análisis convexo:**
->   - Programación no lineal
->   - Optimización global
-> - **Aplicaciones computacionales:**
->   - Algoritmos de optimización
->   - Machine learning
->   - Redes neuronales (minimización de pérdida)
-
-## 📊 Definición Formal
-
-> [!important]- Extremos Relativos
-> **Definición:**
-> 
-> Sea $f: D \subseteq \mathbb{R}^n \to \mathbb{R}$ una función y $(a_1, a_2, \ldots, a_n) \in D$ un punto en el dominio.
-> 
-> **MÁXIMO RELATIVO:**
-> 
-> $f$ tiene un **máximo relativo** en $(a_1, \ldots, a_n)$ si existe $\delta > 0$ tal que:
-> 
-> $$f(x_1, \ldots, x_n) \leq f(a_1, \ldots, a_n)$$
-> 
-> para todo $(x_1, \ldots, x_n)$ en el disco abierto:
-> 
-> $$D_\delta = \{(x_1, \ldots, x_n) : \sqrt{(x_1-a_1)^2 + \cdots + (x_n-a_n)^2} < \delta\}$$
-> 
-> **MÍNIMO RELATIVO:**
-> 
-> $f$ tiene un **mínimo relativo** en $(a_1, \ldots, a_n)$ si existe $\delta > 0$ tal que:
-> 
-> $$f(x_1, \ldots, x_n) \geq f(a_1, \ldots, a_n)$$
-> 
-> para todo $(x_1, \ldots, x_n) \in D_\delta$
-> 
-> **EXTREMO RELATIVO:**
-> 
-> Un punto es un **extremo relativo** si es máximo o mínimo relativo.
-> 
-> **PUNTO DE SILLA:**
-> 
-> Un punto crítico que NO es extremo relativo. La función aumenta en algunas direcciones y disminuye en otras.
-> 
-> **Notación especial para $f: \mathbb{R}^2 \to \mathbb{R}$:**
-> - Punto: $(a, b)$
-> - Máximo relativo: $f(x, y) \leq f(a, b)$ cerca de $(a, b)$
-> - Mínimo relativo: $f(x, y) \geq f(a, b)$ cerca de $(a, b)$
-
-## 🎯 Puntos Críticos
-
-> [!success]- Definición y Caracterización
-> **Teorema de Fermat (versión multivariable):**
-> 
-> Si $f$ tiene un extremo relativo en $(a, b)$ y las derivadas parciales existen en ese punto, entonces:
-> 
-> $$\frac{\partial f}{\partial x}(a, b) = 0 \quad \text{y} \quad \frac{\partial f}{\partial y}(a, b) = 0$$
-> 
-> Equivalentemente: $$\nabla f(a, b) = \vec{0}$$
-> 
-> **DEMOSTRACIÓN (caso $\mathbb{R}^2$):**
-> 
-> Supongamos que $f$ tiene máximo relativo en $(a, b)$.
-> 
-> Considere la función de una variable:
-> $$g(x) = f(x, b)$$
-> 
-> Como $f$ tiene máximo en $(a, b)$, entonces $g$ tiene máximo en $x = a$.
-> 
-> Por teorema de Fermat en una variable:
-> $$g'(a) = 0$$
-> 
-> Pero: $$g'(a) = \frac{\partial f}{\partial x}(a, b)$$
-> 
-> Por tanto: $$\frac{\partial f}{\partial x}(a, b) = 0$$
-> 
-> Análogamente, considerando $h(y) = f(a, y)$:
-> $$\frac{\partial f}{\partial y}(a, b) = 0 \quad \checkmark$$
-> 
-> **PUNTO CRÍTICO:**
-> 
-> Un punto $(a, b)$ es **crítico** si:
-> 
-> 1. $\nabla f(a, b) = \vec{0}$ (punto estacionario), o
-> 2. $\nabla f(a, b)$ no existe
-> 
-> **TIPOS DE PUNTOS CRÍTICOS:**
-> 
-> ```mermaid
-> graph TD
->     A[Punto Crítico] --> B{∇f existe?}
->     B -->|Sí: ∇f = 0⃗| C[Punto Estacionario]
->     B -->|No| D[Punto Singular]
->     
->     C --> E{Clasificación}
->     E -->|D > 0, fₓₓ > 0| F[Mínimo Relativo]
->     E -->|D > 0, fₓₓ < 0| G[Máximo Relativo]
->     E -->|D < 0| H[Punto de Silla]
->     E -->|D = 0| I[Prueba Inconclusiva]
->     
->     style F fill:#c8e6c9
->     style G fill:#c8e6c9
->     style H fill:#ffccbc
->     style I fill:#fff9c4
-> ```
-> 
-> **⚠️ IMPORTANTE:**
-> 
-> - Todo extremo relativo (con derivadas) es punto crítico
-> - NO todo punto crítico es extremo relativo
-> - Los puntos de silla son puntos críticos sin ser extremos
-
-## 🔍 Prueba de las Segundas Derivadas
-
-> [!tip]- Criterio del Hessiano
-> **Para funciones $f: \mathbb{R}^2 \to \mathbb{R}$:**
-> 
-> Sea $(a, b)$ un punto crítico donde $\nabla f(a, b) = \vec{0}$.
-> 
-> **MATRIZ HESSIANA:**
-> 
-> $$H(x, y) = \begin{bmatrix} f_{xx}(x,y) & f_{xy}(x,y) \\ f_{yx}(x,y) & f_{yy}(x,y) \end{bmatrix}$$
-> 
-> **DISCRIMINANTE (Determinante del Hessiano):**
-> 
-> $$D(a, b) = \det(H(a,b)) = f_{xx}(a,b) \cdot f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
-> 
-> Notación común:
-> $$D = f_{xx}f_{yy} - (f_{xy})^2$$
-> 
-> **CRITERIO DE CLASIFICACIÓN:**
-> 
-> **CASO 1:** $D(a, b) > 0$ (Hessiano definido)
-> 
-> - Si $f_{xx}(a, b) > 0$: **MÍNIMO RELATIVO** ✓
-> - Si $f_{xx}(a, b) < 0$: **MÁXIMO RELATIVO** ✓
-> 
-> (Alternativamente: usar $f_{yy}$ en lugar de $f_{xx}$)
-> 
-> **CASO 2:** $D(a, b) < 0$ (Hessiano indefinido)
-> 
-> - **PUNTO DE SILLA** ✗
-> 
-> **CASO 3:** $D(a, b) = 0$
-> 
-> - **PRUEBA INCONCLUSIVA** ?
-> - Se requiere análisis adicional
-> 
-> **RESUMEN VISUAL:**
-> 
-> | Condición | $D > 0$ y $f_{xx} > 0$ | $D > 0$ y $f_{xx} < 0$ | $D < 0$ | $D = 0$ |
-> |-----------|------------------------|------------------------|---------|---------|
-> | **Resultado** | Mínimo relativo 📉 | Máximo relativo 📈 | Punto de silla 🏔️ | Inconclusivo ❓ |
-> | **Hessiano** | Definido positivo | Definido negativo | Indefinido | Semi-definido |
-> | **Superficie** | Paraboloide hacia arriba | Paraboloide hacia abajo | Silla de montar | Requiere análisis |
-> 
-> **DEMOSTRACIÓN (idea):**
-> 
-> Usar desarrollo de Taylor de segundo orden alrededor de $(a, b)$:
-> 
-> $$f(a+h, b+k) \approx f(a,b) + \nabla f(a,b) \cdot \begin{bmatrix} h \\ k \end{bmatrix} + \frac{1}{2}\begin{bmatrix} h & k \end{bmatrix} H(a,b) \begin{bmatrix} h \\ k \end{bmatrix}$$
-> 
-> Como $(a, b)$ es crítico: $\nabla f(a, b) = \vec{0}$
-> 
-> $$f(a+h, b+k) - f(a,b) \approx \frac{1}{2}\begin{bmatrix} h & k \end{bmatrix} H(a,b) \begin{bmatrix} h \\ k \end{bmatrix}$$
-> 
-> El signo depende de la forma cuadrática asociada a $H(a,b)$:
-> - Si $H$ es definida positiva ($D > 0$, $f_{xx} > 0$): forma cuadrática $> 0$ → mínimo
-> - Si $H$ es definida negativa ($D > 0$, $f_{xx} < 0$): forma cuadrática $< 0$ → máximo
-> - Si $H$ es indefinida ($D < 0$): forma cuadrática cambia de signo → silla
-
-## 📐 Procedimiento Completo
-
-> [!important]- Algoritmo para Encontrar Extremos
-> **MÉTODO SISTEMÁTICO:**
-> 
-> **PASO 1: Encontrar puntos críticos**
-> 
-> Resolver el sistema:
-> $$\begin{cases}
-> \frac{\partial f}{\partial x} = 0 \\
-> \frac{\partial f}{\partial y} = 0
-> \end{cases}$$
-> 
-> Los puntos $(a, b)$ que satisfacen ambas ecuaciones son los puntos críticos.
-> 
-> **PASO 2: Calcular segundas derivadas**
-> 
-> Calcular:
-> $$f_{xx} = \frac{\partial^2 f}{\partial x^2}, \quad f_{yy} = \frac{\partial^2 f}{\partial y^2}, \quad f_{xy} = \frac{\partial^2 f}{\partial x \partial y}$$
-> 
-> **PASO 3: Evaluar el discriminante**
-> 
-> Para cada punto crítico $(a, b)$:
-> $$D(a, b) = f_{xx}(a,b) \cdot f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
-> 
-> **PASO 4: Clasificar puntos**
-> 
-> Aplicar el criterio:
-> - $D > 0$ y $f_{xx} > 0$: **mínimo relativo**
-> - $D > 0$ y $f_{xx} < 0$: **máximo relativo**
-> - $D < 0$: **punto de silla**
-> - $D = 0$: **inconclusivo** (análisis adicional)
-> 
-> **PASO 5: Evaluar la función (opcional)**
-> 
-> Calcular $f(a, b)$ para cada extremo relativo para conocer los valores óptimos.
-> 
-> **DIAGRAMA DE FLUJO:**
-> 
-> ```mermaid
-> flowchart TD
->     A[Función f x,y] --> B[Calcular ∇f]
->     B --> C[Resolver ∇f = 0⃗]
->     C --> D[Puntos críticos: a,b]
->     
->     D --> E[Calcular fₓₓ, f_yy, fₓᵧ]
->     E --> F[D = fₓₓ·f_yy - fₓᵧ²]
->     
->     F --> G{D > 0?}
->     G -->|Sí| H{fₓₓ > 0?}
->     G -->|No| I{D < 0?}
->     
->     H -->|Sí| J[✓ Mínimo Relativo]
->     H -->|No| K[✓ Máximo Relativo]
->     I -->|Sí| L[✗ Punto de Silla]
->     I -->|No| M[? Inconclusivo]
->     
->     style J fill:#c8e6c9
->     style K fill:#c8e6c9
->     style L fill:#ffccbc
->     style M fill:#fff9c4
-> ```
-
-## 💡 Ejemplos Resueltos
-
-> [!example]- Problemas Detallados
-> **Problema 1: Paraboloide elíptico**
-> 
-> Encontrar y clasificar los extremos de:
-> $$f(x, y) = x^2 + 2y^2 - 4x + 4y + 7$$
-> 
-> **SOLUCIÓN:**
-> 
-> **PASO 1: Derivadas parciales**
-> 
-> $$f_x = 2x - 4$$
-> $$f_y = 4y + 4$$
-> 
-> **Puntos críticos:**
-> $$\begin{cases}
-> 2x - 4 = 0 \implies x = 2 \\
-> 4y + 4 = 0 \implies y = -1
-> \end{cases}$$
-> 
-> Único punto crítico: $(2, -1)$
-> 
-> **PASO 2: Segundas derivadas**
-> 
-> $$f_{xx} = 2$$
-> $$f_{yy} = 4$$
-> $$f_{xy} = 0$$
-> 
-> **PASO 3: Discriminante**
-> 
-> $$D(2, -1) = (2)(4) - (0)^2 = 8 > 0$$
-> 
-> Como $D > 0$ y $f_{xx} = 2 > 0$:
-> 
-> $$\boxed{\text{MÍNIMO RELATIVO en } (2, -1)}$$
-> 
-> **PASO 4: Valor del mínimo**
-> 
-> $$f(2, -1) = (2)^2 + 2(-1)^2 - 4(2) + 4(-1) + 7$$
-> $$= 4 + 2 - 8 - 4 + 7 = 1$$
-> 
-> **RESPUESTA FINAL:**
-> - Mínimo relativo en $(2, -1)$
-> - Valor mínimo: $f(2, -1) = 1$
-> 
-> **VERIFICACIÓN GEOMÉTRICA:**
-> 
-> Completando cuadrados:
-> $$f(x, y) = (x-2)^2 + 2(y+1)^2 + 1$$
-> 
-> Esta es la ecuación de un paraboloide elíptico con vértice en $(2, -1, 1)$ que abre hacia arriba, confirmando el mínimo. ✓
-> 
-> ---
-> 
-> **Problema 2: Punto de silla**
-> 
-> Clasificar los extremos de:
-> $$f(x, y) = x^2 - y^2$$
-> 
-> **SOLUCIÓN:**
-> 
-> **PASO 1: Puntos críticos**
-> 
-> $$f_x = 2x = 0 \implies x = 0$$
-> $$f_y = -2y = 0 \implies y = 0$$
-> 
-> Punto crítico: $(0, 0)$
-> 
-> **PASO 2: Segundas derivadas**
-> 
-> $$f_{xx} = 2, \quad f_{yy} = -2, \quad f_{xy} = 0$$
-> 
-> **PASO 3: Discriminante**
-> 
-> $$D(0, 0) = (2)(-2) - (0)^2 = -4 < 0$$
-> 
-> $$\boxed{\text{PUNTO DE SILLA en } (0, 0)}$$
-> 
-> **INTERPRETACIÓN:**
-> 
-> Esta función se llama "paraboloide hiperbólico" o "silla de montar".
-> 
-> - A lo largo del eje $x$ ($y = 0$): $f(x, 0) = x^2$ → parábola hacia arriba
-> - A lo largo del eje $y$ ($x = 0$): $f(0, y) = -y^2$ → parábola hacia abajo
-> 
-> En $(0, 0)$ la función tiene mínimo en una dirección y máximo en otra perpendicular. ✓
-> 
-> ---
-> 
-> **Problema 3: Múltiples puntos críticos**
-> 
-> Encontrar extremos de:
-> $$f(x, y) = x^3 - 3x + y^2$$
-> 
-> **SOLUCIÓN:**
-> 
-> **PASO 1: Derivadas y puntos críticos**
-> 
-> $$f_x = 3x^2 - 3 = 0 \implies x^2 = 1 \implies x = \pm 1$$
-> $$f_y = 2y = 0 \implies y = 0$$
-> 
-> Puntos críticos: $(1, 0)$ y $(-1, 0)$
-> 
-> **PASO 2: Segundas derivadas**
-> 
-> $$f_{xx} = 6x, \quad f_{yy} = 2, \quad f_{xy} = 0$$
-> 
-> **PASO 3: Análisis de $(1, 0)$**
-> 
-> $$f_{xx}(1, 0) = 6(1) = 6$$
-> $$f_{yy}(1, 0) = 2$$
-> $$f_{xy}(1, 0) = 0$$
-> 
-> $$D(1, 0) = (6)(2) - (0)^2 = 12 > 0$$
-> 
-> Como $D > 0$ y $f_{xx} = 6 > 0$:
-> 
-> $$\boxed{\text{MÍNIMO RELATIVO en } (1, 0)}$$
-> 
-> Valor: $f(1, 0) = 1 - 3 + 0 = -2$
-> 
-> **PASO 4: Análisis de $(-1, 0)$**
-> 
-> $$f_{xx}(-1, 0) = 6(-1) = -6$$
-> $$f_{yy}(-1, 0) = 2$$
-> $$f_{xy}(-1, 0) = 0$$
-> 
-> $$D(-1, 0) = (-6)(2) - (0)^2 = -12 < 0$$
-> 
-> $$\boxed{\text{PUNTO DE SILLA en } (-1, 0)}$$
-> 
-> Valor: $f(-1, 0) = -1 + 3 + 0 = 2$
-> 
-> **RESUMEN:**
-> - Mínimo relativo en $(1, 0)$ con valor $-2$
-> - Punto de silla en $(-1, 0)$
-> 
-> ---
-> 
-> **Problema 4: Caso inconclusivo**
-> 
-> Analizar:
-> $$f(x, y) = x^4 + y^4$$
-> 
-> **SOLUCIÓN:**
-> 
-> **PASO 1: Punto crítico**
-> 
-> $$f_x = 4x^3 = 0 \implies x = 0$$
-> $$f_y = 4y^3 = 0 \implies y = 0$$
-> 
-> Punto crítico: $(0, 0)$
-> 
-> **PASO 2: Discriminante**
-> 
-> $$f_{xx} = 12x^2 \implies f_{xx}(0,0) = 0$$
-> $$f_{yy} = 12y^2 \implies f_{yy}(0,0) = 0$$
-> $$f_{xy} = 0$$
-> 
-> $$D(0, 0) = (0)(0) - (0)^2 = 0$$
-> 
-> **Prueba inconclusiva** ⚠️
-> 
-> **PASO 3: Análisis directo**
-> 
-> Observemos que:
-> $$f(x, y) = x^4 + y^4 \geq 0 \text{ para todo } (x, y)$$
-> 
-> Y $f(0, 0) = 0$
-> 
-> Por tanto: $$f(x, y) \geq f(0, 0) = 0$$
-> 
-> $$\boxed{\text{MÍNIMO ABSOLUTO en } (0, 0)}$$
-> 
-> **LECCIÓN:** Cuando $D = 0$, el criterio falla pero el análisis directo puede resolver el caso.
-
-## 🎨 Interpretación Geométrica
-
-> [!note]- Visualización de Superficies
-> **Tipos de superficies en puntos críticos:**
-> 
-> **1. PARABOLOIDE ELÍPTICO (Mínimo):**
-> 
-> Ejemplo: $f(x, y) = x^2 + y^2$
-> 
-> ```
->         z
->         ↑
->         |    ╱╲
->         |   ╱  ╲
->         |  ╱    ╲
->         | ╱______╲
->         |╱________╲
->         └──────────→ xy
->         
->     Cuenco hacia arriba
->     D > 0, fₓₓ > 0
-> ```
-> 
-> Características:
-> - Todas las secciones son parábolas hacia arriba
-> - Punto mínimo en el centro
-> - $D > 0$, $f_{xx} > 0$
-> 
-> **2. PARABOLOIDE ELÍPTICO INVERTIDO (Máximo):**
-> 
-> Ejemplo: $f(x, y) = -x^2 - y^2$
-> 
-> ```
->       ╲________╱
->        ╲______╱
->         ╲____╱
->          ╲__╱
->           ╲╱
->         
->     Cuenco hacia abajo
->     D > 0, fₓₓ < 0
-> ```
-> 
-> Características:
-> - Todas las secciones son parábolas hacia abajo
-> - Punto máximo en el centro
-> - $D > 0$, $f_{xx} < 0$
-> 
-> **3. PARABOLOIDE HIPERBÓLICO (Silla):**
-> 
-> Ejemplo: $f(x, y) = x^2 - y^2$
-> 
-> ```
->         ╲     ╱
->          ╲   ╱
->           ╲ ╱
->            X  ← Punto de silla
->           ╱ ╲
->          ╱   ╲
->         ╱     ╲
->         
->     Silla de montar
->     D < 0
-> ```
-> 
-> Características:
-> - Curva hacia arriba en una dirección
-> - Curva hacia abajo en dirección perpendicular
-> - $D < 0$
-> 
-> **CURVAS DE NIVEL:**
-> 
-> Para $f(x, y) = x^2 + y^2$ (mínimo en origen):
-> 
-> ```
->         y
->         ↑
->         |    ⊙  ← círculos concéntricos
->         |   ⊙⊙
->         |  ⊙ ⊙
->         | ⊙   ⊙
->         |⊙_____⊙→ x
->         
->     Centro = mínimo
-> ```
-> 
-> Para $f(x, y) = x^2 - y^2$ (silla en origen):
-> 
-> ```
->         y
->         ↑  ╲ | ╱
->         |   ╲|╱
->         |────X──── x
->         |   ╱|╲
->         |  ╱ | ╲
->         
->     Hipérbolas
-> ```
-
-## 🔗 Relación con Optimización
-
-> [!success]- Extremos en Regiones Cerradas
-> **Teorema de Weierstrass:**
-> 
-> Si $f$ es continua en una región cerrada y acotada $D \subseteq \mathbb{R}^2$, entonces $f$ alcanza su valor máximo absoluto y su valor mínimo absoluto en $D$.
-> 
-> **MÉTODO DE OPTIMIZACIÓN EN REGIONES CERRADAS:**
-> 
-> Para encontrar el máximo y mínimo absoluto de $f$ en región $D$:
-> 
-> **PASO 1:** Encontrar puntos críticos en el **interior** de $D$
-> 
-> Resolver $\nabla f = \vec{0}$
-> 
-> **PASO 2:** Encontrar valores en la **frontera** de $D$
-> 
-> Esto puede requerir:
-> - Parametrización de la frontera
-> - Multiplicadores de Lagrange
-> - Análisis por segmentos
-> 
-> **PASO 3:** Evaluar $f$ en todos los candidatos
-> 
-> - Puntos críticos del interior
-> - Puntos críticos de la frontera
-> - Esquinas o puntos especiales
-> 
-> **PASO 4:** Comparar valores
-> 
-> - El mayor valor → **máximo absoluto**
-> - El menor valor → **mínimo absoluto**
-> 
-> **EJEMPLO:**
-> 
-> Encontrar extremos absolutos de $f(x, y) = x^2 + y^2 - 2x$ en el disco $x^2 + y^2 \leq 4$
-> 
-> **Interior:**
-> 
-> $$f_x = 2x - 2 = 0 \implies x = 1$$
-> $$f_y = 2y = 0 \implies y = 0$$
-> 
-> Punto crítico: $(1, 0)$ (está en el interior: $1^2 + 0^2 = 1 < 4$ ✓)
-> 
-> $f(1, 0) = 1 + 0 - 2 = -1$
-> 
-> **Frontera:** $x^2 + y^2 = 4$
-> 
-> Parametrización: $x = 2\cos\theta$, $y = 2\sin\theta$
-> 
-> $$g(\theta) = (2\cos\theta)^2 + (2\sin\theta)^2 - 2(2\cos\theta)$$
-> $$= 4 - 4\cos\theta$$
-> 
-> $$g'(\theta) = 4\sin\theta = 0 \implies \theta = 0, \pi$$
-> 
-> - $\theta = 0$: $(2, 0)$, $f(2, 0) = 4 + 0 - 4 = 0$
-> - $\theta = \pi$: $(-2, 0)$, $f(-2, 0) = 4 + 0 + 4 = 8$
-> 
-> **COMPARACIÓN:**
-> 
-> | Punto | Tipo | Valor |
-> |-------|------|-------|
-> | $(1, 0)$ | Interior | $-1$ |
-> | $(2, 0)$ | Frontera | $0$ |
-> | $(-2, 0)$ | Frontera | $8$ |
-> 
-> **RESPUESTA:**
-> - **Mínimo absoluto:** $f(1, 0) = -1$
-> - **Máximo absoluto:** $f(-2, 0) = 8$
-
-## ⚡ Casos Especiales
-
-> [!important]- Situaciones Particulares
-> **1. FUNCIONES DEFINIDAS POR PARTES:**
-> 
-> Verificar continuidad y derivabilidad en las fronteras.
-> 
-> Ejemplo: 
-> $$f(x, y) = \begin{cases}
-> x^2 + y^2 & \text{si } x^2 + y^2 \leq 1 \\
-> 2 - x^2 - y^2 & \text{si } x^2 + y^2 > 1
-> \end{cases}$$
-> 
-> Analizar puntos críticos en cada región y en la frontera común.
-> 
-> **2. FUNCIONES NO DIFERENCIABLES:**
-> 
-> Ejemplo: $f(x, y) = |x| + |y|$
-> 
-> - No es diferenciable en los ejes
-> - Mínimo en $(0, 0)$ pero $\nabla f(0, 0)$ no existe
-> - Requiere análisis directo
-> 
-> **3. PUNTOS CRÍTICOS EN EL INFINITO:**
-> 
-> Algunas funciones tienen comportamiento asintótico relevante.
-> 
-> Ejemplo: $f(x, y) = \frac{1}{1 + x^2 + y^2}$
-> 
-> - Máximo en $(0, 0)$: $f(0, 0) = 1$
-> - $\lim_{|(x,y)| \to \infty} f(x, y) = 0$ (ínfimo pero no mínimo)
-> 
-> **4. SIMETRÍAS:**
-> 
-> Aprovechar simetrías para simplificar.
-> 
-> Si $f(x, y) = f(-x, y) = f(x, -y)$, solo analizar primer cuadrante.
-> 
-> **5. FUNCIONES HOMOGÉNEAS:**
-> 
-> Para $f(tx, ty) = t^n f(x, y)$:
-> 
-> - Si $n > 0$: extremos solo en el origen o frontera
-> - Si $n < 0$: sin extremos en el origen
-> 
-> **6. MÉTODO DE DESCENSO:**
-> 
-> Para verificar que un punto crítico NO es extremo:
-> 
-> Encontrar curvas pasando por el punto donde $f$ aumenta y disminuye.
-> 
-> Ejemplo en silla $(0, 0)$ de $f = x^2 - y^2$:
-> - A lo largo de $y = 0$: $f(t, 0) = t^2 \geq 0$ (crece)
-> - A lo largo de $x = 0$: $f(0, t) = -t^2 \leq 0$ (decrece)
-
-## ⚠️ Errores Comunes
-
-> [!warning]- Malentendidos Frecuentes
-> **1. "Todo punto crítico es extremo"**
-> 
-> ✗ **FALSO**
-> 
-> Los puntos de silla son críticos pero NO extremos.
-> 
-> Ejemplo: $f(x, y) = x^2 - y^2$ tiene punto crítico en $(0, 0)$ pero es silla, no extremo.
-> 
-> ---
-> 
-> **2. "Si $D = 0$ no hay extremo"**
-> 
-> ✗ **FALSO**
-> 
-> Cuando $D = 0$ la prueba es **inconclusiva**, no negativa.
-> 
-> Ejemplo: $f(x, y) = x^4 + y^4$ tiene $D(0, 0) = 0$ pero $(0, 0)$ SÍ es mínimo absoluto.
-> 
-> ---
-> 
-> **3. "Máximo relativo = máximo absoluto"**
-> 
-> ✗ **FALSO**
-> 
-> Un máximo relativo es local; puede haber valores mayores lejos del punto.
-> 
-> Ejemplo: $f(x, y) = -(x-1)^2 - (y-1)^2 + (x-5)^2 + (y-5)^2$
-> 
-> Puede tener dos máximos relativos con diferentes valores.
-> 
-> ---
-> 
-> **4. "Si $f_x(a, b) = 0$ entonces $(a, b)$ es crítico en esa dirección"**
-> 
-> ✗ **INCOMPLETO**
-> 
-> Se necesita $f_x = 0$ **Y** $f_y = 0$ simultáneamente.
-> 
-> Ejemplo: $f(x, y) = x^2 + y$
-> 
-> $f_x = 2x = 0 \implies x = 0$ pero $f_y = 1 \neq 0$ para todo $y$. No hay puntos críticos.
-> 
-> ---
-> 
-> **5. "Usar $f_{yy}$ en lugar de $f_{xx}$ da diferente resultado"**
-> 
-> ✗ **FALSO** (cuando $D > 0$)
-> 
-> Si $D > 0$, entonces $f_{xx}$ y $f_{yy}$ tienen el mismo signo.
-> 
-> Puedes usar cualquiera de los dos para clasificar.
-> 
-> **DEMOSTRACIÓN:**
-> 
-> Si $D = f_{xx}f_{yy} - (f_{xy})^2 > 0$, entonces:
-> $$f_{xx}f_{yy} > (f_{xy})^2 \geq 0$$
-> 
-> Por tanto $f_{xx}$ y $f_{yy}$ tienen el mismo signo. ✓
-> 
-> ---
-> 
-> **6. "Olvidar verificar que el punto está en el dominio"**
-> 
-> ⚠️ **IMPORTANTE**
-> 
-> Siempre verificar que puntos críticos estén en $\text{Dom}(f)$.
-> 
-> Ejemplo: $f(x, y) = \ln(x^2 + y^2)$ con dominio $x^2 + y^2 > 0$
-> 
-> Aunque $f_x = \frac{2x}{x^2+y^2} = 0 \implies x = 0$ y $f_y = \frac{2y}{x^2+y^2} = 0 \implies y = 0$
-> 
-> El punto $(0, 0)$ NO está en el dominio. Sin puntos críticos.
-> 
-> ---
-> 
-> **7. "Confundir segunda derivada mixta"**
-> 
-> ⚠️ **CUIDADO**
-> 
-> Por teorema de Schwarz (si son continuas):
-> $$f_{xy} = f_{yx}$$
-> 
-> Pero en el discriminante se usa $(f_{xy})^2$, no $f_{xy} \cdot f_{yx}$.
-> 
-> $$D = f_{xx}f_{yy} - (f_{xy})^2 \quad \checkmark$$
-> $$D = f_{xx}f_{yy} - f_{xy}f_{yx} \quad \checkmark \text{ (equivalente)}$$
-
-## 🔗 Extensión a $n$ Variables
-
-> [!quote]- Generalización
-> **Para $f: \mathbb{R}^n \to \mathbb{R}$:**
-> 
-> **PUNTO CRÍTICO:**
-> 
-> $\mathbf{a} = (a_1, \ldots, a_n)$ es crítico si:
-> $$\nabla f(\mathbf{a}) = \vec{0}$$
-> 
-> Es decir:
-> $$\frac{\partial f}{\partial x_1}(\mathbf{a}) = \cdots = \frac{\partial f}{\partial x_n}(\mathbf{a}) = 0$$
-> 
-> **MATRIZ HESSIANA:**
-> 
-> $$H(\mathbf{x}) = \begin{bmatrix}
-> \frac{\partial^2 f}{\partial x_1^2} & \frac{\partial^2 f}{\partial x_1 \partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n} \\
-> \frac{\partial^2 f}{\partial x_2 \partial x_1} & \frac{\partial^2 f}{\partial x_2^2} & \cdots & \frac{\partial^2 f}{\partial x_2 \partial x_n} \\
-> \vdots & \vdots & \ddots & \vdots \\
-> \frac{\partial^2 f}{\partial x_n \partial x_1} & \frac{\partial^2 f}{\partial x_n \partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_n^2}
-> \end{bmatrix}$$
-> 
-> **CRITERIO DE CLASIFICACIÓN:**
-> 
-> Calcular los **valores propios** de $H(\mathbf{a})$:
-> 
-> - **Todos $\lambda_i > 0$:** mínimo relativo (Hessiano definido positivo)
-> - **Todos $\lambda_i < 0$:** máximo relativo (Hessiano definido negativo)
-> - **Signos mixtos:** punto de silla (Hessiano indefinido)
-> - **Algún $\lambda_i = 0$:** inconclusivo (Hessiano semi-definido)
-> 
-> **CRITERIO ALTERNATIVO (Menores principales):**
-> 
-> Sean $D_1, D_2, \ldots, D_n$ los menores principales de $H(\mathbf{a})$.
-> 
-> - **Mínimo:** $D_1 > 0, D_2 > 0, \ldots, D_n > 0$
-> - **Máximo:** $D_1 < 0, D_2 > 0, D_3 < 0, D_4 > 0, \ldots$ (signos alternados)
-> 
-> **EJEMPLO ($\mathbb{R}^3$):**
-> 
-> $f(x, y, z) = x^2 + 2y^2 + 3z^2$
-> 
-> $$H = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 6 \end{bmatrix}$$
-> 
-> Valores propios: $\lambda_1 = 2, \lambda_2 = 4, \lambda_3 = 6$ (todos positivos)
-> 
-> $(0, 0, 0)$ es **mínimo relativo** (de hecho, absoluto).
-
-## 📚 Recursos Adicionales
-
-> [!note]- Herramientas y Visualización
-> **Software de cálculo:**
-> 
-> - **GeoGebra 3D**
->   - Graficar superficies
->   - Visualizar puntos críticos
->   - Curvas de nivel
-> - **MATLAB/Octave**
->   ```matlab
->   [X, Y] = meshgrid(-2:0.1:2, -2:0.1:2);
->   Z = X.^2 + Y.^2;
->   surf(X, Y, Z);
->   ```
-> - **Python (matplotlib)**
->   ```python
->   import numpy as np
->   import matplotlib.pyplot as plt
->   from mpl_toolkits.mplot3d import Axes3D
->   
->   x = np.linspace(-2, 2, 100)
->   y = np.linspace(-2, 2, 100)
->   X, Y = np.meshgrid(x, y)
->   Z = X**2 + Y**2
->   
->   fig = plt.figure()
->   ax = fig.add_subplot(111, projection='3d')
->   ax.plot_surface(X, Y, Z, cmap='viridis')
->   plt.show()
->   ```
-> - **Wolfram Alpha**
->   - "critical points x^2 + y^2"
->   - "classify critical point (0,0) of x^2 - y^2"
-> 
-> **Calculadoras simbólicas:**
-> - **SymPy (Python)**
->   ```python
->   from sympy import symbols, diff, solve
->   x, y = symbols('x y')
->   f = x**2 + y**2 - 2*x
->   fx = diff(f, x)
->   fy = diff(f, y)
->   critical = solve([fx, fy], [x, y])
->   ```
-
-## 📖 Bibliografía Esencial
-
-> [!tip]- Lecturas Recomendadas
-> **Nivel introductorio:**
-> - **Stewart, J.** (2021). _Cálculo de Varias Variables_ (9ª ed.). Cengage.
->   - Cap. 14: Derivadas parciales
->   - Sección 14.7: Máximos y mínimos
-> - **Thomas, G. B.** (2019). _Cálculo Varias Variables_ (14ª ed.). Pearson.
->   - Cap. 14: Derivadas parciales
->   - Sección 14.7: Valores extremos
-> 
-> **Nivel intermedio:**
-> - **Marsden, J. E., & Tromba, A. J.** (2012). _Vector Calculus_ (6th ed.). Freeman.
->   - Cap. 3: Funciones de varias variables
->   - Tratamiento geométrico excelente
-> - **Edwards, C. H., & Penney, D. E.** (2008). _Cálculo con Geometría Analítica_.
->   - Cap. 13: Derivadas parciales
->   - Muchos ejemplos aplicados
-> 
-> **Nivel avanzado:**
-> - **Apostol, T. M.** (1969). _Calculus, Vol. II_ (2nd ed.). Wiley.
->   - Cap. 12: Optimización multivariable
->   - Tratamiento riguroso
-> - **Rudin, W.** (1976). _Principles of Mathematical Analysis_ (3rd ed.). McGraw-Hill.
->   - Cap. 9: Funciones de varias variables
->   - Teoría avanzada
-
-## 🎓 Conceptos Clave - Resumen
-
-> [!important]- Ideas Fundamentales
-> 
-> **DEFINICIONES ESENCIALES:**
-> 
-> - **Punto crítico:** $\nabla f(\mathbf{a}) = \vec{0}$ o no existe
-> - **Extremo relativo:** Máximo o mínimo local
-> - **Punto de silla:** Crítico pero no extremo
-> 
-> **CRITERIO DEL HESSIANO ($\mathbb{R}^2$):**
-> 
-> $$D(a, b) = f_{xx}(a,b) \cdot f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
-> 
-> | $D$ | $f_{xx}$ | Clasificación |
-> |-----|----------|---------------|
-> | $> 0$ | $> 0$ | Mínimo relativo |
-> | $> 0$ | $< 0$ | Máximo relativo |
-> | $< 0$ | - | Punto de silla |
-> | $= 0$ | - | Inconclusivo |
-> 
-> **PROCEDIMIENTO:**
-> 
-> 1. Encontrar críticos: $\nabla f = \vec{0}$
-> 2. Calcular $f_{xx}, f_{yy}, f_{xy}$
-> 3. Evaluar discriminante $D$
-> 4. Clasificar según criterio
-> 
-> **TEOREMA CLAVE:**
-> 
-> Todo extremo relativo (con derivadas) es punto crítico, pero no viceversa.
+> [!tip]- 🎯 ¿Por Qué Estudiar Extremos?
+> 
+> **✅ Aplicaciones prácticas:**
+> 
+> - **Optimización empresarial**: Maximizar ganancias, minimizar costos
+> - **Ingeniería**: Diseño óptimo de estructuras
+> - **Física**: Equilibrios y estados de mínima energía
+> - **Estadística**: Estimación de parámetros (mínimos cuadrados)
+> - **Economía**: Maximización de utilidad
+> - **Machine Learning**: Minimización de funciones de pérdida
+> 
+> **Diferencia clave:**
+> 
+> |Tipo|Alcance|Ejemplo|
+> |---|---|---|
+> |**Extremo absoluto**|En todo el dominio|Temperatura más alta del planeta|
+> |**Extremo relativo**|En una vecindad|Temperatura más alta de una ciudad|
 
 ---
 
-**Tags:** #calculo-multivariable #extremos-relativos #optimizacion #puntos-criticos #hessiano #segunda-derivada #maximos #minimos #punto-silla #gradiente #derivadas-parciales
+## 🔍 Puntos Críticos
+
+### 📋 Definición
+
+> [!info]- 📐 ¿Qué es un Punto Crítico?
+> 
+> Un punto **(a, b)** es **crítico** para f(x,y) si:
+> 
+> **Opción 1: Gradiente nulo** $$\nabla f(a,b) = \mathbf{0}$$
+> 
+> Es decir: $$\begin{cases} \frac{\partial f}{\partial x}(a,b) = 0 \ \frac{\partial f}{\partial y}(a,b) = 0 \end{cases}$$
+> 
+> **Opción 2: Derivadas no existen**
+> 
+> Alguna derivada parcial no existe en (a,b)
+> 
+> **Interpretación geométrica:**
+> 
+> En un punto crítico, el **plano tangente** es horizontal (si existe) o no existe.
+
+### 🛠️ Cómo Encontrar Puntos Críticos
+
+> [!example]- ✏️ Procedimiento Estándar
+> 
+> **Paso 1: Calcular el gradiente** $$\nabla f(x,y) = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)$$
+> 
+> **Paso 2: Igualar a cero** $$\begin{cases} f_x(x,y) = 0 \ f_y(x,y) = 0 \end{cases}$$
+> 
+> **Paso 3: Resolver el sistema**
+> 
+> Encontrar todos los pares (x,y) que satisfagan ambas ecuaciones
+> 
+> **Ejemplo básico:**
+> 
+> f(x,y) = x² + y² - 2x - 4y + 5
+> 
+> **Derivadas:**
+> 
+> - fx = 2x - 2
+> - fy = 2y - 4
+> 
+> **Sistema:** $$\begin{cases} 2x - 2 = 0 \implies x = 1 \ 2y - 4 = 0 \implies y = 2 \end{cases}$$
+> 
+> **Punto crítico:** (1, 2)
+
+> [!example]- 🎯 Ejemplo con Múltiples Puntos Críticos
+> 
+> **Función:** f(x,y) = x³ - 3x + y²
+> 
+> **Paso 1: Derivadas parciales**
+> 
+> - fx = 3x² - 3
+> - fy = 2y
+> 
+> **Paso 2: Igualar a cero** $$\begin{cases} 3x² - 3 = 0 \ 2y = 0 \end{cases}$$
+> 
+> **Paso 3: Resolver**
+> 
+> De la segunda ecuación: y = 0
+> 
+> De la primera: 3x² = 3 ⟹ x² = 1 ⟹ x = ±1
+> 
+> **Puntos críticos:** (1, 0) y (-1, 0)
+
+---
+
+## 🎯 Criterio de la Segunda Derivada
+
+### 📊 Matriz Hessiana
+
+> [!info]- 🔢 La Matriz Hessiana
+> 
+> La **matriz Hessiana** contiene todas las segundas derivadas parciales:
+> 
+> $$H_f(x,y) = \begin{pmatrix} \frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x \partial y} \ \frac{\partial^2 f}{\partial y \partial x} & \frac{\partial^2 f}{\partial y^2} \end{pmatrix} = \begin{pmatrix} f_{xx} & f_{xy} \ f_{xy} & f_{yy} \end{pmatrix}$$
+> 
+> **Propiedades:**
+> 
+> - Es **simétrica** si f tiene derivadas continuas (fxy = fyx por teorema de Schwarz)
+> - Describe la **curvatura** de la superficie
+> - Es fundamental para clasificar puntos críticos
+
+### 🔬 Discriminante (Determinante de la Hessiana)
+
+> [!success]- ✅ El Criterio Decisivo
+> 
+> En un punto crítico (a,b), calculamos:
+> 
+> $$D(a,b) = \det(H_f(a,b)) = f_{xx}(a,b) \cdot f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
+> 
+> También escrito como: $$D = f_{xx} \cdot f_{yy} - (f_{xy})^2$$
+> 
+> **Clasificación del punto crítico (a,b):**
+> 
+> |Condición|Tipo de extremo|Visualización|
+> |---|---|---|
+> |**D > 0** y **fxx > 0**|✅ **Mínimo relativo**|Valle (parábola cóncava hacia arriba)|
+> |**D > 0** y **fxx < 0**|✅ **Máximo relativo**|Cima (parábola cóncava hacia abajo)|
+> |**D < 0**|⚠️ **Punto silla**|Paso de montaña (sube en una dirección, baja en otra)|
+> |**D = 0**|❓ **Indeterminado**|Requiere análisis adicional|
+> 
+> **Nota:** Cuando D > 0, también puedes usar fyy en lugar de fxx para determinar el tipo.
+
+> [!tip]- 💡 Mnemónica del Criterio
+> 
+> **Recordatorio fácil:**
+> 
+> 1. **D > 0**: Las dos curvaturas principales tienen el **mismo signo**
+>     - Si fxx > 0 → ambas curvaturas positivas → **mínimo** (forma de tazón ∪)
+>     - Si fxx < 0 → ambas curvaturas negativas → **máximo** (forma de cúpula ∩)
+> 2. **D < 0**: Las curvaturas tienen **signos opuestos**
+>     - → **punto silla** (silla de montar 🐴)
+> 3. **D = 0**: Las curvaturas están **degeneradas**
+>     - → Necesitas métodos alternativos
+
+---
+
+## 🛠️ Procedimiento Completo
+
+### 📋 Pasos para Encontrar y Clasificar Extremos
+
+> [!example]- 🔧 Método Sistemático
+> 
+> **PASO 1: Encontrar puntos críticos**
+> 
+> Resolver: $$\begin{cases} f_x(x,y) = 0 \ f_y(x,y) = 0 \end{cases}$$
+> 
+> **PASO 2: Calcular segundas derivadas**
+> 
+> Obtener:
+> 
+> - fxx = ∂²f/∂x²
+> - fyy = ∂²f/∂y²
+> - fxy = ∂²f/∂x∂y
+> 
+> **PASO 3: Evaluar la Hessiana en cada punto crítico**
+> 
+> Para cada punto crítico (a,b): $$D(a,b) = f_{xx}(a,b) \cdot f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
+> 
+> **PASO 4: Clasificar según el criterio**
+> 
+> Aplicar la tabla de decisión del discriminante
+
+### 🌟 Ejemplo Completo Desarrollado
+
+> [!example]- 📐 Ejemplo Detallado: f(x,y) = x² + y² - 2x - 4y + 5
+> 
+> **PASO 1: Puntos críticos**
+> 
+> Derivadas parciales:
+> 
+> - fx = 2x - 2
+> - fy = 2y - 4
+> 
+> Sistema: $$\begin{cases} 2x - 2 = 0 \implies x = 1 \ 2y - 4 = 0 \implies y = 2 \end{cases}$$
+> 
+> **Punto crítico:** (1, 2)
+> 
+> ---
+> 
+> **PASO 2: Segundas derivadas**
+> 
+> - fxx = 2
+> - fyy = 2
+> - fxy = 0
+> 
+> ---
+> 
+> **PASO 3: Discriminante en (1,2)**
+> 
+> $$D(1,2) = f_{xx} \cdot f_{yy} - (f_{xy})^2 = (2)(2) - (0)^2 = 4$$
+> 
+> ---
+> 
+> **PASO 4: Clasificación**
+> 
+> - D = 4 > 0 ✓
+> - fxx = 2 > 0 ✓
+> 
+> **Conclusión:** ✅ **(1, 2) es un MÍNIMO RELATIVO**
+> 
+> **Valor en el mínimo:** $$f(1,2) = 1² + 2² - 2(1) - 4(2) + 5 = 1 + 4 - 2 - 8 + 5 = 0$$
+
+> [!example]- 🎨 Ejemplo con Punto Silla: f(x,y) = x² - y²
+> 
+> **PASO 1: Puntos críticos**
+> 
+> - fx = 2x = 0 ⟹ x = 0
+> - fy = -2y = 0 ⟹ y = 0
+> 
+> **Punto crítico:** (0, 0)
+> 
+> ---
+> 
+> **PASO 2: Segundas derivadas**
+> 
+> - fxx = 2
+> - fyy = -2
+> - fxy = 0
+> 
+> ---
+> 
+> **PASO 3: Discriminante**
+> 
+> $$D(0,0) = (2)(-2) - (0)^2 = -4$$
+> 
+> ---
+> 
+> **PASO 4: Clasificación**
+> 
+> - D = -4 < 0 ⚠️
+> 
+> **Conclusión:** ⚠️ **(0, 0) es un PUNTO SILLA**
+> 
+> **Interpretación:**
+> 
+> - En la dirección x: la función sube (parábola x²)
+> - En la dirección y: la función baja (parábola -y²)
+> - Parece una silla de montar en el origen
+
+> [!example]- 🔥 Ejemplo Complejo: f(x,y) = x³ - 3xy²
+> 
+> **PASO 1: Puntos críticos**
+> 
+> Derivadas:
+> 
+> - fx = 3x² - 3y²
+> - fy = -6xy
+> 
+> Sistema: $$\begin{cases} 3x² - 3y² = 0 \implies x² = y² \ -6xy = 0 \implies x = 0 \text{ o } y = 0 \end{cases}$$
+> 
+> **Caso 1:** x = 0 ⟹ 0 = y² ⟹ y = 0 **Caso 2:** y = 0 ⟹ x² = 0 ⟹ x = 0
+> 
+> **Punto crítico único:** (0, 0)
+> 
+> ---
+> 
+> **PASO 2: Segundas derivadas**
+> 
+> - fxx = 6x
+> - fyy = -6x
+> - fxy = -6y
+> 
+> ---
+> 
+> **PASO 3: Evaluar en (0,0)**
+> 
+> - fxx(0,0) = 0
+> - fyy(0,0) = 0
+> - fxy(0,0) = 0
+> 
+> $$D(0,0) = (0)(0) - (0)^2 = 0$$
+> 
+> ---
+> 
+> **PASO 4: Clasificación**
+> 
+> - D = 0 ❓ **INDETERMINADO**
+> 
+> **Análisis adicional necesario:**
+> 
+> Evaluemos f en puntos cercanos:
+> 
+> - f(0.1, 0) = (0.1)³ = 0.001 > 0
+> - f(0, 0.1) = 0
+> - f(0.1, 0.1) = (0.1)³ - 3(0.1)(0.1)² = 0.001 - 0.003 = -0.002 < 0
+> 
+> Como hay puntos cercanos con valores mayores Y menores que f(0,0) = 0:
+> 
+> **Conclusión:** ⚠️ **(0, 0) es un PUNTO SILLA** (confirmado por análisis directo)
+
+---
+
+## 🎯 Casos Especiales
+
+### 🔍 Funciones Cuadráticas
+
+> [!tip]- 📊 Forma Canónica
+> 
+> Para funciones de la forma: $$f(x,y) = ax² + bxy + cy² + dx + ey + f$$
+> 
+> **Características:**
+> 
+> - Tienen **un único punto crítico** (si a ≠ 0 o c ≠ 0)
+> - Las segundas derivadas son **constantes**:
+>     - fxx = 2a
+>     - fyy = 2c
+>     - fxy = b
+> 
+> **Discriminante constante:** $$D = (2a)(2c) - b² = 4ac - b²$$
+> 
+> **Clasificación inmediata:**
+> 
+> |Condición|Tipo|
+> |---|---|
+> |4ac - b² > 0, a > 0|Paraboloide elíptico (mínimo)|
+> |4ac - b² > 0, a < 0|Paraboloide elíptico (máximo)|
+> |4ac - b² < 0|Paraboloide hiperbólico (silla)|
+> |4ac - b² = 0|Degenerado (cilindro parabólico)|
+
+> [!example]- 🎯 Ejemplo Rápido de Cuadrática
+> 
+> f(x,y) = 2x² + xy + 3y² - 4x - 6y + 10
+> 
+> Identificar: a = 2, b = 1, c = 3
+> 
+> **Discriminante:** $$D = 4(2)(3) - 1² = 24 - 1 = 23 > 0$$
+> 
+> Como D > 0 y a = 2 > 0:
+> 
+> ✅ **Tiene un único mínimo relativo** (sin necesidad de calcular el punto)
+
+### 🌀 Puntos de Frontera
+
+> [!warning]- ⚠️ Extremos en la Frontera
+> 
+> **Importante:** El criterio de la segunda derivada solo aplica a **puntos interiores**.
+> 
+> **Para dominios acotados:**
+> 
+> Si f está definida en una región cerrada y acotada D:
+> 
+> 1. **Extremos absolutos** pueden ocurrir en:
+>     - Puntos críticos interiores
+>     - Puntos de la frontera ∂D
+> 2. **Método de análisis:**
+>     - Encontrar extremos relativos en el interior
+>     - Analizar la frontera por separado (usando multiplicadores de Lagrange o parametrización)
+>     - Comparar todos los valores candidatos
+> 
+> **Ejemplo:**
+> 
+> f(x,y) = x² + y² en el disco x² + y² ≤ 4
+> 
+> - **Interior:** Mínimo en (0,0) con f(0,0) = 0
+> - **Frontera:** Máximo en cualquier punto (x,y) con x² + y² = 4, donde f = 4
+
+---
+
+## 📐 Extensión a Tres Variables
+
+### 🌐 Funciones f(x,y,z)
+
+> [!info]- 🔵 Generalización a ℝ³
+> 
+> **Punto crítico en 3D:** $$\nabla f(a,b,c) = \mathbf{0} \iff \begin{cases} f_x(a,b,c) = 0 \ f_y(a,b,c) = 0 \ f_z(a,b,c) = 0 \end{cases}$$
+> 
+> **Matriz Hessiana 3×3:** $$H_f = \begin{pmatrix} f_{xx} & f_{xy} & f_{xz} \ f_{xy} & f_{yy} & f_{yz} \ f_{xz} & f_{yz} & f_{zz} \end{pmatrix}$$
+> 
+> **Criterio de clasificación:**
+> 
+> Se usan los **menores principales** de la Hessiana:
+> 
+> - D₁ = fxx
+> - D₂ = det$\begin{pmatrix} f_{xx} & f_{xy} \ f_{xy} & f_{yy} \end{pmatrix}$ = fxx·fyy - (fxy)²
+> - D₃ = det(H) = determinante completo
+> 
+> |Condición|Tipo|
+> |---|---|
+> |D₁ > 0, D₂ > 0, D₃ > 0|**Mínimo relativo**|
+> |D₁ < 0, D₂ > 0, D₃ < 0|**Máximo relativo**|
+> |Signos alternados diferentes|**Punto silla**|
+
+> [!example]- 📊 Ejemplo en 3D
+> 
+> f(x,y,z) = x² + 2y² + 3z²
+> 
+> **Punto crítico:**
+> 
+> - fx = 2x = 0 ⟹ x = 0
+> - fy = 4y = 0 ⟹ y = 0
+> - fz = 6z = 0 ⟹ z = 0
+> 
+> Punto: (0,0,0)
+> 
+> **Hessiana:** $$H = \begin{pmatrix} 2 & 0 & 0 \ 0 & 4 & 0 \ 0 & 0 & 6 \end{pmatrix}$$
+> 
+> **Menores:**
+> 
+> - D₁ = 2 > 0
+> - D₂ = 2·4 - 0 = 8 > 0
+> - D₃ = 2·4·6 = 48 > 0
+> 
+> ✅ **(0,0,0) es MÍNIMO RELATIVO**
+
+---
+
+## 🎯 Aplicaciones Prácticas
+
+### 💰 Optimización de Beneficios
+
+> [!example]- 📈 Problema de Maximización de Ganancias
+> 
+> **Contexto:** Una empresa produce dos productos P₁ y P₂.
+> 
+> **Función de beneficio:** $$B(x,y) = -2x² - 3y² + 4xy + 20x + 30y - 100$$
+> 
+> Donde:
+> 
+> - x = cantidad de P₁ (en miles)
+> - y = cantidad de P₂ (en miles)
+> 
+> **Objetivo:** Maximizar B(x,y)
+> 
+> ---
+> 
+> **Solución:**
+> 
+> **Paso 1: Puntos críticos**
+> 
+> - Bx = -4x + 4y + 20 = 0
+> - By = -6y + 4x + 30 = 0
+> 
+> Sistema: $$\begin{cases} -4x + 4y = -20 \implies -x + y = -5 \ 4x - 6y = -30 \implies 2x - 3y = -15 \end{cases}$$
+> 
+> De la primera: y = x - 5
+> 
+> Sustituyendo: 2x - 3(x-5) = -15 $$2x - 3x + 15 = -15$$ $$-x = -30 \implies x = 30$$
+> 
+> Entonces: y = 30 - 5 = 25
+> 
+> **Punto crítico:** (30, 25)
+> 
+> ---
+> 
+> **Paso 2: Clasificación**
+> 
+> - Bxx = -4
+> - Byy = -6
+> - Bxy = 4
+> 
+> $$D = (-4)(-6) - (4)² = 24 - 16 = 8 > 0$$
+> 
+> Como D > 0 y Bxx = -4 < 0:
+> 
+> ✅ **(30, 25) es un MÁXIMO RELATIVO**
+> 
+> ---
+> 
+> **Interpretación:**
+> 
+> - Producir **30,000 unidades de P₁**
+> - Producir **25,000 unidades de P₂**
+> - Beneficio máximo: B(30,25) = -2(900) - 3(625) + 4(750) + 600 + 750 - 100 = **675 mil dólares**
+
+### 🏗️ Diseño Óptimo
+
+> [!example]- 📦 Minimización de Costos de Material
+> 
+> **Problema:** Diseñar una caja rectangular abierta (sin tapa) con volumen 32 m³ que minimice el área de material.
+> 
+> **Variables:**
+> 
+> - x = largo (m)
+> - y = ancho (m)
+> - z = alto (m)
+> 
+> **Restricción:** xyz = 32 ⟹ z = 32/(xy)
+> 
+> **Función a minimizar (área de material):** $$A(x,y) = xy + 2xz + 2yz = xy + 2x\frac{32}{xy} + 2y\frac{32}{xy} = xy + \frac{64}{y} + \frac{64}{x}$$
+> 
+> ---
+> 
+> **Solución:**
+> 
+> **Derivadas:** $$A_x = y - \frac{64}{x²}$$ $$A_y = x - \frac{64}{y²}$$
+> 
+> **Sistema:** $$\begin{cases} y = \frac{64}{x²} \ x = \frac{64}{y²} \end{cases}$$
+> 
+> Sustituyendo la primera en la segunda: $$x = \frac{64}{\left(\frac{64}{x²}\right)²} = \frac{64x⁴}{64²} = \frac{x⁴}{64}$$
+> 
+> $$64x = x⁴ \implies x³ = 64 \implies x = 4$$
+> 
+> Entonces: y = 64/16 = 4
+> 
+> Y: z = 32/(4·4) = 2
+> 
+> **Verificar que es mínimo:**
+> 
+> - Axx = 128/x³ = 128/64 = 2
+> - Ayy = 128/y³ = 2
+> - Axy = 1
+> 
+> $$D = (2)(2) - (1)² = 3 > 0$$
+> 
+> Como D > 0 y Axx > 0: ✅ **Es un MÍNIMO**
+> 
+> **Respuesta:** Caja de 4m × 4m × 2m
+
+---
+
+## ⚠️ Errores Comunes
+
+> [!warning]- 🚫 Errores Frecuentes a Evitar
+> 
+> **1. Olvidar verificar TODOS los puntos críticos**
+> 
+> ❌ Incorrecto: Encontrar un punto crítico y asumir que es el único
+> 
+> ✅ Correcto: Resolver completamente el sistema y verificar todas las soluciones
+> 
+> ---
+> 
+> **2. Confundir el signo del criterio**
+> 
+> ❌ Incorrecto: D > 0 y fxx < 0 ⟹ mínimo
+> 
+> ✅ Correcto: D > 0 y fxx < 0 ⟹ máximo
+> 
+> ---
+> 
+> **3. Ignorar puntos donde las derivadas no existen**
+> 
+> ❌ Incorrecto: Solo buscar donde ∇f = 0
+> 
+> ✅ Correcto: También considerar discontinuidades o puntos angulosos
+> 
+> ---
+> 
+> **4. Calcular mal el discriminante**
+> 
+> ❌ Incorrecto: D = fxx + fyy - fxy
+> 
+> ✅ Correcto: D = fxx · fyy - (fxy)²
+> 
+> ---
+> 
+> **5. Asumir que D = 0 significa que no hay extremo**
+> 
+> ❌ Incorrecto: "D = 0, entonces no es extremo"
+> 
+> ✅ Correcto: "D = 0 requiere análisis adicional" (podría ser extremo o silla)
+> 
+> ---
+> 
+> **6. No verificar el dominio**
+> 
+> ❌ Incorrecto: Ignorar restricciones del problema
+> 
+> ✅ Correcto: Verificar que los puntos críticos están en el dominio válido
+
+---
+
+## ✅ Resumen de Fórmulas
+
+> [!summary]- 📋 Referencia Rápida
+> 
+> **Condición de punto crítico:** $$\nabla f(a,b) = \mathbf{0} \iff \begin{cases} f_x(a,b) = 0 \ f_y(a,b) = 0 \end{cases}$$
+> 
+> **Matriz Hessiana:** $$H_f = \begin{pmatrix} f_{xx} & f_{xy} \ f_{xy} & f_{yy} \end{pmatrix}$$
+> 
+> **Discriminante:** $$D = f_{xx} \cdot f_{yy} - (f_{xy})^2$$
+> 
+> **Criterio de clasificación:**
+> 
+| Condición             | Clasificación        |
+|----------------------|----------------------|
+| D > 0, fxx > 0       | ✅ Mínimo relativo   |
+| D > 0, fxx < 0       | ✅ Máximo relativo   |
+| D < 0                | ⚠️ Punto silla      |
+| D = 0                | ❓ Indeterminado     |
+> 
+> **Procedimiento:**
+> 1. Encontrar puntos críticos (∇f = 0)
+> 2. Calcular segundas derivadas
+> 3. Evaluar D en cada punto crítico
+> 4. Clasificar según la tabla
+
+---
+
+## 🎓 Ejercicios Propuestos
+
+> [!question]- 💪 Práctica
+> 
+> **Ejercicio 1:** Encuentra y clasifica los extremos de f(x,y) = x² + y² + 2x - 4y + 1
+> 
+> **Ejercicio 2:** Determina los puntos críticos de f(x,y) = xy - x² - y² y clasifícalos
+> 
+> **Ejercicio 3:** Encuentra el punto más cercano al origen sobre la superficie z = x² + y² - 4x - 6y + 13
+> 
+> **Ejercicio 4:** Clasifica el punto crítico de f(x,y) = x⁴ + y⁴ - 4xy en (1,1)
+> 
+> **Ejercicio 5:** Una caja rectangular sin tapa debe tener área superficial de 48 m². Encuentra las dimensiones que maximizan el volumen
+> 
+> **Ejercicio 6:** Analiza f(x,y) = x³ + y³ - 3xy en busca de extremos relativos
+
+---
+
+## 📊 Resumen Visual
+
+```mermaid
+mindmap
+  root((Extremos<br/>Relativos))
+    Conceptos
+      Máximo local
+      Mínimo local
+      Punto silla
+    Puntos Críticos
+      ∇f = 0
+      Derivadas no existen
+      Sistema de ecuaciones
+    Matriz Hessiana
+      fxx, fyy, fxy
+      Discriminante D
+      Curvatura
+    Clasificación
+      D > 0, fxx > 0: Mínimo
+      D > 0, fxx < 0: Máximo
+      D < 0: Silla
+      D = 0: Indeterminado
+    Aplicaciones
+      Optimización
+      Diseño
+      Economía
+      Física
+```
+
+> [!quote]- 💡 Puntos Clave
+> 
+> - **Punto crítico** = Donde el gradiente se anula o no existe
+> - **Hessiana** = Matriz de segundas derivadas (curvatura)
+> - **Discriminante D** = Criterio decisivo de clasificación
+> - **D > 0** = Mismo signo de curvatura → extremo
+> - **D < 0** = Signos opuestos → punto silla
+> - **Verificar siempre** = Resolver sistema completo y evaluar todos los candidatos
+> - **Aplicación práctica** = Optimización en ciencia e ingeniería
+
+---
+
+**Tags:** #extremos #optimización #calculovectorial #hessiana #puntoscríticos #máximos #mínimos #puntosilla #gradiente #derivadasparciales

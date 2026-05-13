@@ -1,0 +1,10 @@
+{
+  "webviewer:toggle-reader-mode": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ]
+}

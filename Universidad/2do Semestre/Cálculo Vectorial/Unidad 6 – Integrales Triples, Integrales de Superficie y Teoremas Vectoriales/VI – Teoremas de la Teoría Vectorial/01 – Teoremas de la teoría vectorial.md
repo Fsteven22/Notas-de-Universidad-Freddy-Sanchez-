@@ -134,8 +134,8 @@ graph TB
 > 
 > ```mermaid
 > graph LR
->     A[Punto A<br/>f(A)] -->|Curva C| B[Punto B<br/>f(B)]
->     C[Campo ∇f] -.->|"∫_C ∇f·dr"| D[f(B) - f(A)]
+>     A["Punto A<br/>f(A)" ] -->|Curva C| B["Punto B<br/>f(B)" ]
+>     C[Campo ∇f] -.->|"∫_C ∇f·dr"| D["f(B) - f(A)" ]
 >     
 >     style A fill:#e1f5ff
 >     style B fill:#e1f5ff
@@ -266,7 +266,7 @@ graph TB
 > graph TB
 >     A[Integral de línea<br/>sobre curva C] -->|"Teorema de Green"| B[Integral doble<br/>sobre región D]
 >     
->     C[∮_C F·dr] -.-> D[∬_D (∂Q/∂x - ∂P/∂y) dA]
+>     C[∮_C F·dr] -.-> D["∬_D (∂Q/∂x - ∂P/∂y) dA" ]
 >     
 >     E[Frontera 1D] -.-> F[Interior 2D]
 >     
@@ -404,7 +404,7 @@ graph TB
 > graph TB
 >     A[Integral de línea<br/>sobre frontera C] -->|"Teorema de Stokes"| B[Integral de superficie<br/>sobre S]
 >     
->     C[∮_C F·dr] -.-> D[∬_S (∇×F)·n dS]
+>     C[∮_C F·dr] -.-> D["∬_S (∇×F)·n dS" ]
 >     
 >     E[Curva 1D<br/>frontera] -.-> F[Superficie 2D<br/>interior]
 >     
