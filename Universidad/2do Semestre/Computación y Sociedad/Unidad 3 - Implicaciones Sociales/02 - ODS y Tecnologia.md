@@ -30,7 +30,7 @@
 
 ```mermaid
 mindmap
-  root((🌍 17 ODS\nAgenda 2030))
+  root((🌍 17 ODS<br/>Agenda 2030))
     Personas
       ODS 1 - Fin de la Pobreza
       ODS 2 - Hambre Cero

@@ -433,6 +433,145 @@
 
 ---
 
+# 📝 Exercises — Sentence Types by Structure
+
+## 🎯 Instructions
+
+> [!info]- 📌 What to do?
+>
+> Read each sentence and identify its **structural type**. Write your answer in the space provided.
+>
+> **Possible sentence types:**
+>
+> | Type | Definition | Clave en español |
+> |---|---|---|
+> | **Simple** | One independent clause (subject + verb) | Una sola idea completa — un sujeto y un verbo principal |
+> | **Compound** | Two or more independent clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so — **FANBOYS**) or a semicolon | Dos ideas independientes unidas por *and, but, so, or…* |
+> | **Complex** | One independent clause + one or more dependent clauses joined by a subordinating conjunction (because, although, when, if, since…) | Una idea principal + una secundaria que no puede estar sola (empieza con *because, although, when…*) |
+> | **Compound-Complex** | Two or more independent clauses + at least one dependent clause | Combinación: dos ideas independientes **y** al menos una dependiente |
+
+---
+
+## 💡 Quick Help (Ayuda rápida)
+
+> [!tip]- 🧠 How to identify each type
+>
+> **Step by step / Paso a paso:**
+>
+> ```
+> 1. Count the clauses / Cuenta las cláusulas
+>        ↓
+> 2. Are they independent or dependent?
+>    ¿Son independientes o dependientes?
+>        ↓
+> 3. How are they connected?
+>    ¿Cómo están conectadas?
+> ```
+>
+> | Question to ask | Answer → Type |
+> |---|---|
+> | ¿Solo una cláusula independiente? | ✅ **Simple** |
+> | ¿Dos cláusulas independientes con FANBOYS / semicolon? | ✅ **Compound** |
+> | ¿Una independiente + una dependiente (because, when, although…)? | ✅ **Complex** |
+> | ¿Dos independientes + al menos una dependiente? | ✅ **Compound-Complex** |
+>
+> **FANBOYS** (coordinating conjunctions):
+> **F**or · **A**nd · **N**or · **B**ut · **O**r · **Y**et · **S**o
+>
+> **Common subordinating conjunctions / Conjunciones subordinantes comunes:**
+> although · because · when · while · if · since · after · before · as · even though · unless
+
+---
+
+## ✏️ Exercises
+
+> [!example]- 🔎 Identify the sentence type
+>
+> Write **Simple**, **Compound**, **Complex**, or **Compound-Complex** in the blank.
+>
+> **1.** I love listening to music. &emsp; `________________`
+>
+> ---
+>
+> **2.** We ran home and took a hot shower. &emsp; `________________`
+>
+> ---
+>
+> **3.** Although the problem was not difficult to solve, no one wanted to sort it out. &emsp; `________________`
+>
+> ---
+>
+> **4.** We didn't see the new movie. &emsp; `________________`
+>
+> ---
+>
+> **5.** As I arrived, they all had finished dinner. &emsp; `________________`
+>
+> ---
+>
+> **6.** She had an enjoyable graduation party. &emsp; `________________`
+>
+> ---
+>
+> **7.** After the movie, they all went for ice cream. &emsp; `________________`
+>
+> ---
+>
+> **8.** Yesterday I went out with Tom, who is a friend from high school. &emsp; `________________`
+>
+> ---
+>
+> **9.** Let's go to the theater after lunch. &emsp; `________________`
+>
+> ---
+>
+> **10.** Vegetables are good for your health and easy to digest. &emsp; `________________`
+
+---
+
+## ✅ Answer Key
+
+> [!success]- 🔑 Answers — don't peek until you're done!
+>
+> | # | Sentence (key element) | Type | Why / Por qué |
+> |---|---|---|---|
+> | 1 | *I love listening to music.* | **Simple** | Un solo sujeto (*I*) + un solo verbo (*love*). Una cláusula independiente. |
+> | 2 | *We ran home **and** took a hot shower.* | **Simple** | Un solo sujeto (*We*) con dos verbos coordinados (*ran, took*) — sigue siendo simple porque no hay dos sujetos independientes. |
+> | 3 | ***Although** the problem was not difficult to solve, no one wanted to sort it out.* | **Complex** | Cláusula dependiente (*Although…*) + cláusula independiente (*no one wanted…*). |
+> | 4 | *We didn't see the new movie.* | **Simple** | Un sujeto, un verbo, una sola cláusula independiente. |
+> | 5 | ***As** I arrived, they all had finished dinner.* | **Complex** | Cláusula dependiente (*As I arrived*) + cláusula independiente (*they all had finished dinner*). |
+> | 6 | *She had an enjoyable graduation party.* | **Simple** | Un sujeto (*She*) + un verbo (*had*). Una cláusula independiente. |
+> | 7 | *After the movie, they all went for ice cream.* | **Simple** | *After the movie* es una frase preposicional, no una cláusula dependiente — un solo verbo (*went*). |
+> | 8 | *Yesterday I went out with Tom, **who** is a friend from high school.* | **Complex** | Cláusula independiente (*I went out with Tom*) + cláusula relativa dependiente (*who is a friend from high school*). |
+> | 9 | *Let's go to the theater **after** lunch.* | **Simple** | *After lunch* es frase preposicional, no cláusula. Una sola cláusula independiente (imperativa). |
+> | 10 | *Vegetables are good for your health **and** easy to digest.* | **Simple** | Un sujeto (*Vegetables*) + un verbo (*are*) con dos predicados coordinados. No hay segunda cláusula independiente. |
+
+---
+
+## 📊 Summary Chart
+
+> [!note]- 🗺️ Visual overview
+>
+> ```mermaid
+> graph TD
+>     A[Sentence] --> B{How many<br/>independent clauses?}
+>     B -->|One| C{Any dependent<br/>clause?}
+>     B -->|Two or more| D{Any dependent<br/>clause?}
+>
+>     C -->|No| E[✅ SIMPLE]
+>     C -->|Yes| F[✅ COMPLEX]
+>
+>     D -->|No| G[✅ COMPOUND]
+>     D -->|Yes| H[✅ COMPOUND-COMPLEX]
+>
+>     style E fill:#e1ffe1
+>     style F fill:#e1f5ff
+>     style G fill:#fff4e1
+>     style H fill:#f5e1ff
+> ```
+
+---
+
 ## 📊 Visual Summary
 
 ```mermaid

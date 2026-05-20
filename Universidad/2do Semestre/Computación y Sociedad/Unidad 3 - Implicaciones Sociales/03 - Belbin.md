@@ -25,9 +25,9 @@
 
 ```mermaid
 graph TD
-    A[🧩 9 ROLES DE BELBIN] --> B[🔵 Roles Mentales Pensar y analizar]
-    A --> C[🟢 Roles Sociales Relacionarse y coordinar]
-    A --> D[🔴 Roles de Acción Ejecutar y hacer]
+    A[🧩 9 ROLES DE BELBIN] --> B[🔵 Roles Mentales<br/>Pensar y analizar]
+    A --> C[🟢 Roles Sociales<br/>Relacionarse y coordinar]
+    A --> D[🔴 Roles de Acción<br/>Ejecutar y hacer]
 
     B --> B1[🧠 Cerebro]
     B --> B2[🔍 Monitor Evaluador]
@@ -224,20 +224,17 @@ graph TD
 
 ## 🗂️ Tabla Resumen — Los 9 Roles
 
-> [!info] Como identificarlos:
-> 
-> | Rol | Categoría | Contribución principal | Fortaleza clave | Debilidad clave |
-> |---|---|---|---|---|
-> | 🧠 **Cerebro** | Mental | Genera ideas originales | Creatividad e innovación | Descuida lo práctico |
-> | 🔍 **Monitor Evaluador** | Mental | Analiza opciones objetivamente | Juicio crítico y objetivo | Puede ser frío y lento |
-> | 🎓 **Especialista** | Mental | Aporta conocimiento técnico | Expertise profundo | Visión muy estrecha |
-> | 🎯 **Coordinador** | Social | Lidera y delega según talentos | Integra al equipo | Puede no actuar directamente |
-> | 🤝 **Cohesionador** | Social | Mantiene la armonía del equipo | Empatía y diplomacia | Indeciso bajo presión |
-> | 🌐 **Investigador de Recursos** | Social | Conecta con el exterior | Red de contactos y energía | Pierde interés tras inicio |
-> | ⚡ **Impulsor** | Acción | Empuja al equipo hacia adelante | Dinamismo bajo presión | Provocador e impaciente |
-> | ⚙️ **Implementador** | Acción | Convierte ideas en planes | Organización y eficiencia | Rígido ante cambios |
-> | ✅ **Finalizador** | Acción | Asegura calidad y plazos | Perfeccionismo y detalle | Delegar le cuesta |
-> 
+| Rol | Categoría | Contribución principal | Fortaleza clave | Debilidad clave |
+|---|---|---|---|---|
+| 🧠 **Cerebro** | Mental | Genera ideas originales | Creatividad e innovación | Descuida lo práctico |
+| 🔍 **Monitor Evaluador** | Mental | Analiza opciones objetivamente | Juicio crítico y objetivo | Puede ser frío y lento |
+| 🎓 **Especialista** | Mental | Aporta conocimiento técnico | Expertise profundo | Visión muy estrecha |
+| 🎯 **Coordinador** | Social | Lidera y delega según talentos | Integra al equipo | Puede no actuar directamente |
+| 🤝 **Cohesionador** | Social | Mantiene la armonía del equipo | Empatía y diplomacia | Indeciso bajo presión |
+| 🌐 **Investigador de Recursos** | Social | Conecta con el exterior | Red de contactos y energía | Pierde interés tras inicio |
+| ⚡ **Impulsor** | Acción | Empuja al equipo hacia adelante | Dinamismo bajo presión | Provocador e impaciente |
+| ⚙️ **Implementador** | Acción | Convierte ideas en planes | Organización y eficiencia | Rígido ante cambios |
+| ✅ **Finalizador** | Acción | Asegura calidad y plazos | Perfeccionismo y detalle | Delegar le cuesta |
 
 ---
 
@@ -272,8 +269,8 @@ graph TD
 >
 > *Completa esta sección después de realizar el test online.*
 >
-> **Fecha del test:** `_______________`
-> **Plataforma usada:** `_______________`
+> **Fecha del test:** `Miercoles 13 de mayo 2026`
+> **Plataforma usada:** `123test y excel personal`
 >
 > ---
 >
@@ -281,31 +278,28 @@ graph TD
 >
 > | Posición | Rol | Puntuación | Categoría |
 > |---|---|---|---|
-> | 🥇 Principal | | | |
-> | 🥈 Secundario | | | |
-> | 🥉 Terciario | | | |
-> | ... | | | |
-> | Menos dominante | | | |
+> | 🥇 Principal | Implementador / Investigador | 20 pts | Acción / Social |
+> | 🥈 Secundario | Finalizador | 10 pts | Accion |
+> | 🥉 Terciario | Monitor-evaluador | 10 pts | Reflexión |
+> | ... | Coordinador | 10 pts | Social |
+> | Menos dominante | Impulsor / Cerebro / Cohesionador / Especialista | 0 | NA |
 >
 > ---
 >
-> **Mi rol principal es: `_______________`**
+> **Mi rol principal es: `Implementador`**
 >
 > **¿Me identifico con este resultado?**
-> *(Escribe aquí tu reflexión personal — ¿coincide con cómo te comportas en proyectos grupales? ¿te sorprendió algo?)*
+> Me identifico bastante con el Implementador: soy muy organizado, disciplinado y orientado a logros (Responsabilidad 96 en Big Five). El Investigador también encaja porque aunque no soy muy extrovertido socialmente, cuando tengo energía soy activo y positivo (Actividad 100, Emociones positivas 100). Me sorprendió no puntuar en Cerebro ni Impulsor, aunque tiene sentido porque prefiero ejecutar planes ya definidos antes que generar ideas radicales
 >
-> ```
-> Escribe tu análisis personal aquí...
-> ```
->
-> **Fortalezas que reconozco en mí:**
-> - 
-> - 
-> - 
->
-> **Debilidades que debo trabajar:**
-> - 
-> - 
+> Fortalezas que reconozco en mí:
+> - Alta disciplina y capacidad de organización
+> - Muy orientado al logro y al cumplimiento de objetivos
+> - Empático, altruista y buen compañero de equipo
+> - Pensamiento planificado antes de actuar
+> - Debilidades que debo trabajar:
+> - Ansiedad social elevada (90) — me cuesta la exposición en grupo
+> - Baja fantasía/creatividad — tiendo a lo práctico, menos innovador
+> - Modestia baja — puedo parecer arrogante sin pretenderlo
 
 ---
 

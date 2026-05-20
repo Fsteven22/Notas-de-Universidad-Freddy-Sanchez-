@@ -25,4 +25,7 @@ Ebner Pineda
  Que es la matemática discreta
  Algunas aplicaciones (introducir teoria de grafos. Criiptografia analisis de redes sociales)
 Propisiciones, uso de formulas de max min valor absoluto y como agruparlas en parentesis
+
+Fundamentos de electricidad: 
+Formulario de formulas impresa
  

@@ -32,7 +32,7 @@
 
 ```mermaid
 mindmap
-  root((📚 IEEE\nCitación))
+  root((📚 IEEE<br/>Citación))
     Publicaciones
       Artículos de revista
       Artículos de conferencia
