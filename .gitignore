@@ -1,5 +1,5 @@
-# Archivos internos de Obsidian que NO deben subir
-.obsidian/cache
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/plugins/**/data.json
+# Papelera interna de Obsidian (archivos borrados)
+.trash/
+
+# Configuraciones, temas y plugins locales de Obsidian
+.obsidian/
