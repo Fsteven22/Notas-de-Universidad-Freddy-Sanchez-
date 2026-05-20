@@ -22,4 +22,16 @@ Tienes dos opciones geniales para explorar todo este conocimiento:
 
 ---
 
-> 💖 *Espero que tu experiencia con este proyecto sea completamente satisfactoria y te deseo la mejor de las suertes en tu paso por la universidad. ¡A romperla!* 💪✨
+> 💖 *Espero que tu experiencia con este proyecto sea completamente satisfactoria y te deseo la mejor de las suertes en tu paso por la universidad.*💪✨
+
+---
+
+## 🛠️ Solución de Problemas (FAQ)
+
+### ❓ Al descargar el `.zip`, Windows me dice que "la carpeta comprimida no es válida"
+Si al intentar descomprimir el repositorio te aparece el error de Windows que dice que la carpeta no es válida, **no te preocupes, el archivo está perfecto**. 
+
+Este es un error común del extractor nativo de Windows cuando encuentra caracteres especiales (como tildes o eñes) en la ruta de tu usuario.
+
+**Solución:**
+* **La mejor opción:** Utiliza un descompresor moderno como [WinRAR](https://www.winrar.es/) o [7-Zip](https://www.7-zip.org/). Estos programas leen correctamente todos los archivos y lo extraerán al instante sin errores. 🚀
