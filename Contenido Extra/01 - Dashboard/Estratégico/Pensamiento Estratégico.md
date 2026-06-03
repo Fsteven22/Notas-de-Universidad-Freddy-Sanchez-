@@ -123,7 +123,7 @@ graph TD
 > 
 > - [[Toma de Decisiones]]
 > - [[El Arte de Decir No]]
-> - [[Objetivos 2025]]
+> - [[Objetivos 2026]]
 > - [[Planificación Estratégica]]
 > - [[Clarificación de Valores]]
 > - [[Gestión de Reuniones Efectivas]]

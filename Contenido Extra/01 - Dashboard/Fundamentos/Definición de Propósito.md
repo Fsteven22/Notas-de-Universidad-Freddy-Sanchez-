@@ -251,7 +251,7 @@ graph TD
 > 
 > ### Aplicación Práctica 📊
 > 
-> - [[Objetivos 2025]] - Alineación de metas con propósito
+> - [[Objetivos 2026]] - Alineación de metas con propósito
 > - [[Sistemas de Revisión]] - Evaluación periódica de alineación
 > - [[Tracking de Hábitos]] - Desarrollo de comportamientos coherentes con propósito
 

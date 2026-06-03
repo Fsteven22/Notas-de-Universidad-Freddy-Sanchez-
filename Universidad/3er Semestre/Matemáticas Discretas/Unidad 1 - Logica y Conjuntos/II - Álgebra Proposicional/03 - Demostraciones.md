@@ -263,7 +263,24 @@
 > **Caso 2:** $x < y$ → $x - y < 0$, entonces $|x-y| = -(x-y) = y-x$.
 > $$\frac{x+y+(y-x)}{2} = \frac{2y}{2} = y = \max\{x,y\}$$ ✅
 > 
-> $\blacksquare$
+> 
+> 
+> 
+> 
+**Demostración del mínimo por casos:**
+> 
+**Caso 1:** $x \geq y \Rightarrow x - y \geq 0$, entonces $|x - y| = x - y$.
+> 
+$$\frac{x + y - (x - y)}{2} = \frac{2y}{2} = y = \min\{x, y\} \checkmark$$
+> 
+**Caso 2:** $x < y \Rightarrow x - y < 0$, entonces $|x - y| = -(x-y) = y - x$.
+> 
+$$\frac{x + y - (y - x)}{2} = \frac{2x}{2} = x = \min\{x, y\} \checkmark$$
+> 
+> 
+> 
+> 
+La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lugar de sumarlo, "cancela" el mayor y deja el menor.
 
 ---
 

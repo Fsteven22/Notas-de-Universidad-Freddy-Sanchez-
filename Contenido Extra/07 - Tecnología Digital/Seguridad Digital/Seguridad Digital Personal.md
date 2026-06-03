@@ -998,7 +998,7 @@ flowchart TD
 > 
 > - Revisar modelo de amenazas semestralmente
 > - Testing regular de medidas de seguridad
-> - Benchmark contra mejores prácticas actuales (ver [[Objetivos 2025]])
+> - Benchmark contra mejores prácticas actuales (ver [[Objetivos 2026]])
 > - Incorporar feedback de incidentes pasados
 
 ### 💡 Innovación en Seguridad Personal

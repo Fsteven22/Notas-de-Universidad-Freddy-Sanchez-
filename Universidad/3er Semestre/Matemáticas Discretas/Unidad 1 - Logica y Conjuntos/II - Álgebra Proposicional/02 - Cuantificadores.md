@@ -40,7 +40,7 @@
 > |---|---|---|
 > | $P(x)$ | $-7x^5 + 3x^2 - 8 = 0$ | $D = \mathbb{R}$ |
 > | $Q(n)$ | $6n^2 - 7n + 1$ es un número primo | $D = \mathbb{N}$ |
-> | $R(x)$ | $x$ rendirá el examen de Matemáticas Discretas | $D = $ Estudiantes de ESPOL |
+> | $R(x)$ | $x$ rendirá el examen de Matemáticas Discretas | $D$ =  Estudiantes de ESPOL |
 
 ---
 

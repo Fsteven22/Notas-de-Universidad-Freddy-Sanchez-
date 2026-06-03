@@ -279,7 +279,7 @@
 > 
 > - [[Autoconocimiento]] - Base para identificar patrones personales
 > - [[Dashboard Semanal]] - Sistema de monitoreo estructurado
-> - [[Objetivos 2025]] - Alinear seguimiento con metas
+> - [[Objetivos 2026]] - Alinear seguimiento con metas
 > 
 > **Para profundizar:**
 > 

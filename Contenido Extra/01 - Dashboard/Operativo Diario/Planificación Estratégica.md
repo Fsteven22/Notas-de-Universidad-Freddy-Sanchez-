@@ -321,7 +321,7 @@ graph TD
 
 > [!quote] 📚 **Enlaces a Notas Relacionadas**
 > 
-> - [[Objetivos 2025]] - Aplicación práctica de planificación anual
+> - [[Objetivos 2026]] - Aplicación práctica de planificación anual
 > - [[Pensamiento Estratégico]] - Desarrollo del mindset estratégico
 > - [[Planificación Estratégica]] - Enfoque individual
 > - [[Objetivos SMART]] - Metodología específica para metas
@@ -553,7 +553,7 @@ graph TD
 > 
 > - [[Pensamiento Estratégico]]
 > - [[Clarificación de Valores]]
-> - [[Objetivos 2025]]
+> - [[Objetivos 2026]]
 > - [[Objetivos SMART]]
 > - [[Toma de Decisiones]]
 > - [[El Arte de Decir No]]

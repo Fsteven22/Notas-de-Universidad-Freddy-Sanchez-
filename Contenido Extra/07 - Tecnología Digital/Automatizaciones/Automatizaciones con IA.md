@@ -273,7 +273,7 @@ graph TD
 > 
 > - Digest diario personalizado por intereses
 > - Alertas sobre topics específicos
-> - Recomendaciones de lectura basadas en objetivos (ver [[Objetivos 2025]])
+> - Recomendaciones de lectura basadas en objetivos (ver [[Objetivos 2026]])
 > - Auto-actualización de notas relevantes
 
 ## 🔧 Implementación Práctica
@@ -458,4 +458,4 @@ graph TD
 > - [[Gestión del Tiempo]] - Para automatizar planning y scheduling
 > - [[Deep Work]] - Para crear espacios protegidos mediante IA
 > - [[Análisis de Tiempo]] - Para métricas y optimización continua
-> - [[Objetivos 2025]] - Para alinear automatizaciones con metas personales
+> - [[Objetivos 2026]] - Para alinear automatizaciones con metas personales

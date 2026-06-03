@@ -122,7 +122,7 @@
 > |**Diario**|Check progreso vs plan|[[Tracking de Hábitos]]|
 > |**Semanal**|Análisis de desviaciones|[[Dashboard Semanal]]|
 > |**Mensual**|Ajustes de estrategia|[[Sistemas de Revisión]]|
-> |**Trimestral**|Evaluación integral|[[Objetivos 2025]]|
+> |**Trimestral**|Evaluación integral|[[Objetivos 2026]]|
 
 ## 📈 Gestión de Múltiples Objetivos
 
@@ -244,7 +244,7 @@
 
 > [!quote] 🔗 Enlaces Internos
 > 
-> - [[Objetivos 2025]] - Aplicación práctica anual
+> - [[Objetivos 2026]] - Aplicación práctica anual
 > - [[Planificación Estratégica]] - Marco estratégico superior
 > - [[Definición de Propósito]] - Alineación con valores fundamentales
 > - [[Tracking de Hábitos]] - Sistema de seguimiento diario

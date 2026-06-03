@@ -268,7 +268,7 @@ graph TD
 > ### Aplicación Práctica 📊
 > 
 > - [[Matriz de Eisenhower]] - Priorización basada en valores
-> - [[Objetivos 2025]] - Alineación de metas con valores
+> - [[Objetivos 2026]] - Alineación de metas con valores
 > - [[Dashboard Semanal]] - Monitoreo de coherencia valores-acciones
 > - [[Sistemas de Revisión]] - Evaluación periódica de alineación
 

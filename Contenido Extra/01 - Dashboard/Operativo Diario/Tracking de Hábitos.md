@@ -46,7 +46,7 @@ flowchart TD
 |🍅 [[Método 1 - Pomodoro]]|4 sesiones|[ ]|_||
 |📝 Planificar día|10 min|[ ]|_||
 |🚫 [[Detox Digital]]|2h focus|[ ]|_||
-|📊 Revisar [[Objetivos 2025]]|5 min|[ ]|_||
+|📊 Revisar [[Objetivos 2026]]|5 min|[ ]|_||
 |🧹 [[Organización Física del Espacio]]|15 min|[ ]|_||
 
 ### 🧠 **Hábitos de Aprendizaje**
@@ -156,7 +156,7 @@ flowchart TD
 - [ ] **Atractivo:** ¿Tengo una recompensa inmediata?
 - [ ] **Fácil:** ¿He reducido la fricción al mínimo?
 - [ ] **Satisfactorio:** ¿Siento logro al completarlo?
-- [ ] **Alineado:** ¿Conecta con mis [[Objetivos 2025]]?
+- [ ] **Alineado:** ¿Conecta con mis [[Objetivos 2026]]?
 
 > [!tip] 🎮 Gamificación Personal Convierte tus hábitos en un juego personal para mantener motivación.
 
@@ -199,7 +199,7 @@ flowchart TD
 - **🌅 Diario (5 min):** Completar template del día
 - **📊 Semanal (15 min):** Analizar scorecard y ajustar
 - **🔍 Mensual (30 min):** Revisar hábitos, eliminar/agregar
-- **🎯 Trimestral (60 min):** Alineación con [[Objetivos 2025]]
+- **🎯 Trimestral (60 min):** Alineación con [[Objetivos 2026]]
 
 ### 🔧 **Preguntas de Mejora Continua**
 
@@ -225,7 +225,7 @@ flowchart TD
 > 
 > - [[Dashboard Semanal]] - Para revisiones y métricas semanales
 > 
-> - [[Objetivos 2025]] - Alineación estratégica de hábitos
+> - [[Objetivos 2026]] - Alineación estratégica de hábitos
 > - [[Hábitos de Estudio]] _(rutinas académicas específicas)_
 >- [[Hábitos y Rutinas Saludables]] _(integración con bienestar)_
 >- [[Gamificación Personal]] _(motivación mediante juegos)_

@@ -330,7 +330,7 @@ graph TD
 > [!quote] Enlaces Relacionados
 > 
 > - [[Dashboard Semanal]] - Herramienta de seguimiento visual
-> - [[Objetivos 2025]] - Marco de referencia para revisiones
+> - [[Objetivos 2026]] - Marco de referencia para revisiones
 > - [[Planificación Estratégica]] - Alineación a largo plazo
 > - [[Time Blocking]] - Asignación de tiempo para revisiones
 > - [[Tracking de Hábitos]] - Seguimiento específico de comportamientos

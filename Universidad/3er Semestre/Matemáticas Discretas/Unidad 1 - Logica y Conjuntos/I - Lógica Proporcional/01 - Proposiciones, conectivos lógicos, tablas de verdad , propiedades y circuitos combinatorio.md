@@ -445,6 +445,8 @@ graph TD
 > |**XOR**|$p \veebar q$|OR con arco extra|Verdadero si las entradas son distintas|
 > |**NAND**|$\neg(p \wedge q)$|AND con círculo|Falso solo si ambas entradas son 1|
 > |**NOR**|$\neg(p \vee q)$|OR con círculo|Verdadero solo si ambas entradas son 0|
+> 
+![[ChatGPT Image 20 may 2026, 13_02_00.png]]
 
 > [!example]- 🧮 Tablas de Verdad de Compuertas
 > 
@@ -503,6 +505,7 @@ graph TD
 > q ───────────┘          ├──[ AND ]──→ Salida
 > r ──────────────────────┘
 > ```
+> ![[ChatGPT Image 20 may 2026, 13_05_26.png]]
 > 
 > |$p$|$q$|$r$|$\neg p$|$\neg p \vee q$|$(\neg p \vee q) \wedge r$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|

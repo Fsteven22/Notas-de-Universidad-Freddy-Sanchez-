@@ -185,7 +185,7 @@
 > 
 > - [[Dashboard Semanal]] - Revisión y planificación semanal
 > - [[Tracking de Hábitos]] - Seguimiento detallado de hábitos
-> - [[Objetivos 2025]] - Metas anuales y progreso
+> - [[Objetivos 2026]] - Metas anuales y progreso
 > 
 > **🎯 Métodos Favoritos:**
 > 
@@ -319,7 +319,7 @@
 
 > [!warning] 📈 Revisión Mensual
 > 
-> - [ ] Evaluar progreso de [[Objetivos 2025]]
+> - [ ] Evaluar progreso de [[Objetivos 2026]]
 > - [ ] Revisar y actualizar sistema de notas
 > - [ ] Identificar áreas de mejora
 > - [ ] Planificar enfoque del próximo mes
@@ -334,7 +334,7 @@
 ### 🔧 Tareas de Mantenimiento Pendientes
 
 - [x] Crear [[Dashboard Semanal]]
-- [x] Crear [[Objetivos 2025]]
+- [x] Crear [[Objetivos 2026]]
 - [x] Crear [[Tracking de Hábitos]]
 - [x] Revisar todos los enlaces internos
 - [x] Actualizar tags de las notas existentes
@@ -348,7 +348,7 @@
 > - [[Análisis de Tiempo]] Seguimiento semanal del progreso anual
 > - [[Hábitos de Estudio]] Planificación semanal académica 
 > - [[Gestión del Tiempo]] Organización temporal semanal 
-> - [[Objetivos 2025]] - Metas y seguimiento anual
+> - [[Objetivos 2026]] - Metas y seguimiento anual
 > - [[Tracking de Hábitos]] - Monitoreo de comportamientos clave
 > 
 > **Áreas de Desarrollo:**

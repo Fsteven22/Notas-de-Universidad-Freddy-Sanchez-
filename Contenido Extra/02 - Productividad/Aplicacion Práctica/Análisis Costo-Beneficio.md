@@ -331,7 +331,7 @@ graph TD
 > 
 > ### Aplicación Práctica 📊
 > 
-> - [[Objetivos 2025]] - Alineación de decisiones con metas
+> - [[Objetivos 2026]] - Alineación de decisiones con metas
 > - [[Dashboard Semanal]] - Monitoreo de progreso en decisiones
 > - [[Tracking de Hábitos]] - Seguimiento de cambios implementados
 
