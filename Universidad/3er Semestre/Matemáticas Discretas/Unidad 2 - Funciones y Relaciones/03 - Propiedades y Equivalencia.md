@@ -2,138 +2,180 @@
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una relación de equivalencia?
+> [!info]- 💡 ¿Qué son las relaciones de equivalencia y de orden?
 > 
-> Una **relación de equivalencia** es una relación que generaliza la idea de "igualdad" entre elementos: dos elementos son equivalentes si tienen alguna propiedad en común. Requiere tres propiedades simultáneamente: reflexividad, simetría y transitividad.
+> Dos tipos especiales de relaciones sobre X surgen de combinar las cuatro propiedades básicas de maneras distintas. La **relación de equivalencia** generaliza la idea de igualdad; la **relación de orden** generaliza la idea de "menor o igual que".
 > 
 > ```mermaid
 > graph TD
->     A[Relación de Equivalencia] --> B[Reflexiva]
+>     A[Propiedades de R sobre X] --> B[Reflexiva]
 >     A --> C[Simétrica]
->     A --> D[Transitiva]
->     B --> E["xRx para todo x"]
->     C --> F["xRy ⟹ yRx"]
->     D --> G["xRy ∧ yRz ⟹ xRz"]
+>     A --> D[Antisimétrica]
+>     A --> E[Transitiva]
+>     B & C & E --> F[Relación de Equivalencia]
+>     B & D & E --> G[Relación de Orden Parcial]
+>     style F fill:#e1f5ff
+>     style G fill:#ffe1e1
 >     style A fill:#1e3a5f,color:#fff
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
 > ```
 
 ---
 
-## 📋 Definición
+## 📋 Relaciones de Orden y de Equivalencia
 
-> [!note]- 📋 Relación de Equivalencia
+> [!note]- 📋 Definición 13 — Relación de Orden y de Equivalencia
 > 
-> Una relación $R$ en un conjunto $X$ es una **relación de equivalencia** si cumple las tres propiedades:
+> Sea R una relación sobre X. Diremos que:
 > 
-> 1. **Reflexiva:** $\forall x \in X : x \mathrel{R} x$
->     
-> 2. **Simétrica:** $\forall x, y \in X : x \mathrel{R} y \Rightarrow y \mathrel{R} x$
->     
-> 3. **Transitiva:** $\forall x, y, z \in X : x \mathrel{R} y \land y \mathrel{R} z \Rightarrow x \mathrel{R} z$
->     
+> - R es una **relación de orden (parcial)** sobre X si R es **reflexiva, antisimétrica y transitiva**.
+> - R es una **relación de equivalencia** sobre X si R es **reflexiva, simétrica y transitiva**.
 > 
-> > [!tip]- 💡 Observación del PDF
+> > [!tip]- 💡 Comparación rápida
 > > 
-> > La **igualdad de conjuntos** es un ejemplo canónico de relación de equivalencia (es reflexiva, simétrica y transitiva).
+> > | Propiedad | Equivalencia | Orden Parcial |
+> > |---|---|---|
+> > | Reflexiva | ✅ | ✅ |
+> > | Simétrica | ✅ | ❌ |
+> > | Antisimétrica | ❌ | ✅ |
+> > | Transitiva | ✅ | ✅ |
+
+> [!example]- 📝 Ejemplo 15 — Clasificación de relaciones
+> 
+> Retomando las relaciones del Ejemplo 14 (X = {1,3,4}):
+> 
+> - **R₁ = {(1,1),(1,3),(3,1),(3,3),(4,4)}:** es de **equivalencia** (reflexiva, simétrica, transitiva). No es de orden (no es antisimétrica).
+> - **R₂ = {(1,1),(1,3),(1,4),(3,4)}:** **no es de orden ni de equivalencia** (ni reflexiva ni simétrica).
+> - **R₃ = {(1,1),(3,3),(4,4)}:** es **de equivalencia y de orden** a la vez (cumple las cinco propiedades — es la relación de igualdad en X).
 
 ---
 
-## 🔍 Clases de Equivalencia
+## 📐 Demostrando Orden Parcial
 
-> [!note]- 🔍 Clase de equivalencia
+> [!note]- 📐 Técnica — Cómo demostrar que R es orden parcial
 > 
-> Sea $R$ una relación de equivalencia en $X$ y sea $x \in X$. La **clase de equivalencia** de $x$, denotada $[x]$ o $\overline{x}$, es el conjunto de todos los elementos de $X$ relacionados con $x$:
+> Para demostrar que R es un **orden parcial** sobre X hay que verificar las tres propiedades **una por una**, en este orden:
 > 
-> $$[x] = {y \in X : y \mathrel{R} x}$$
+> 1. **Reflexiva:** tomar un $x \in X$ arbitrario y demostrar que $xRx$.
+> 2. **Antisimétrica:** asumir $xRy$ y $yRx$ simultáneamente, y demostrar que $x = y$.
+> 3. **Transitiva:** asumir $xRy$ y $yRz$ simultáneamente, y demostrar que $xRz$.
 > 
-> **Propiedades de las clases de equivalencia:**
+> Si alguna falla, R **no** es orden parcial — basta un contraejemplo.
+
+> [!example]- 📝 Ejemplo — $a \mid b$ es orden parcial en $\mathbb{N}$
 > 
-> - $x \in [x]$ para todo $x \in X$ (por reflexividad).
-> - $[x] = [y] \iff x \mathrel{R} y$.
-> - Si $[x] \neq [y]$, entonces $[x] \cap [y] = \emptyset$ (son disjuntas).
-> - $\bigcup_{x \in X} [x] = X$ (cubren todo el conjunto).
+> Sea $X = \mathbb{N}$ y la relación $R$ definida por:
+> 
+> $$aRb \iff a \mid b \quad \text{(a divide a b)}$$
+> 
+> **Reflexiva:** Sea $a \in \mathbb{N}$. Como $a = a \cdot 1$, se tiene que $a \mid a$, luego $aRa$. ✓
+> 
+> **Antisimétrica:** Supongamos $aRb$ y $bRa$, es decir $a \mid b$ y $b \mid a$. Entonces existen $k, m \in \mathbb{N}$ tales que $b = ka$ y $a = mb$. Sustituyendo:
+> 
+> $$a = mb = m(ka) = (mk)a \implies mk = 1$$
+> 
+> Como $m, k \in \mathbb{N}$, la única solución es $m = k = 1$, luego $a = b$. ✓
+> 
+> **Transitiva:** Supongamos $aRb$ y $bRc$, es decir $a \mid b$ y $b \mid c$. Entonces existen $k, m \in \mathbb{N}$ tales que $b = ka$ y $c = mb$. Sustituyendo:
+> 
+> $$c = mb = m(ka) = (mk)a \implies a \mid c$$
+> 
+> luego $aRc$. ✓
+> 
+> Por tanto $R$ es un orden parcial sobre $\mathbb{N}$. $\blacksquare$
+
+> [!example]- 📝 Ejemplo — $A \cap B = A$ es orden parcial en subconjuntos
+> 
+> Sea $U$ un conjunto finito y $X$ el conjunto de todos los subconjuntos no vacíos de $U$. Se define:
+> 
+> $$ARB \iff A \cap B = A$$
+> 
+> Notemos que $A \cap B = A \iff A \subseteq B$ (por el Ejercicio 23 de la Guía 1), así que esta relación es equivalente a la contención $\subseteq$.
+> 
+> **Reflexiva:** Sea $A \in X$. Como $A \cap A = A$, se tiene $ARA$. ✓
+> 
+> **Antisimétrica:** Supongamos $ARB$ y $BRA$, es decir $A \subseteq B$ y $B \subseteq A$. Por doble contención, $A = B$. ✓
+> 
+> **Transitiva:** Supongamos $ARB$ y $BRC$, es decir $A \subseteq B$ y $B \subseteq C$. Sea $x \in A$, entonces $x \in B$, luego $x \in C$. Por tanto $A \subseteq C$, es decir $ARC$. ✓
+> 
+> Por tanto $R$ es un orden parcial sobre $X$. $\blacksquare$
+
+> [!tip]- 💡 Orden parcial vs. orden total
+> 
+> Un orden parcial permite que existan elementos **incomparables** — es decir, pares $a, b \in X$ donde ni $aRb$ ni $bRa$. Por ejemplo, en la divisibilidad sobre $\mathbb{N}$, los números 2 y 3 son incomparables (2 no divide a 3 y 3 no divide a 2).
+> 
+> Si **todo** par de elementos es comparable, el orden se llama **total**. Por ejemplo, $\leq$ en $\mathbb{R}$ es un orden total.
+> 
+> | | Todo par comparable | Pares incomparables posibles |
+> |---|---|---|
+> | **Orden total** | ✅ | ❌ |
+> | **Orden parcial** | no necesariamente | ✅ |
 
 ---
-
 ## 🧩 Particiones
 
-> [!note]- 🧩 Partición de un conjunto
+> [!note]- 🧩 Definición 14 — Partición
 > 
-> Una **partición** de $X$ es una colección de subconjuntos no vacíos ${A_i}$ de $X$ tal que:
+> Sea X un conjunto no vacío. Una **partición** de X es cualquier familia 𝒮 de subconjuntos de X, **no vacíos**, **disjuntos dos a dos** y cuya **unión es X**.
+
+> [!example]- 📝 Ejemplo 16 — Particiones de un conjunto
 > 
-> 1. $A_i \cap A_j = \emptyset$ para $i \neq j$ (son disjuntos entre sí).
->     
-> 2. $\bigcup_i A_i = X$ (cubren todo $X$).
->     
+> Si X = {1, 2, 3}, entonces las familias:
 > 
-> > [!tip]- 💡 Conexión fundamental
-> > 
-> > Toda relación de equivalencia en $X$ determina una **partición** de $X$ (formada por sus clases de equivalencia). Y recíprocamente, toda partición de $X$ determina una relación de equivalencia. Hay una correspondencia uno a uno entre ambas nociones.
+> - 𝒮₁ = {{1,2},{3}}
+> - 𝒮₂ = {{1},{2},{3}}
+> 
+> son particiones de X.
+> 
+> Sin embargo, {{1,2},{2,3}} **no** es partición porque los conjuntos no son disjuntos (el 2 aparece en ambos).
+
+> [!abstract]- 📐 Teorema 2 — Partición ⟹ Equivalencia
+> 
+> Sea 𝒮 una partición de X. Definamos una relación R sobre X por:
+> 
+> $$xRy \iff \exists\, S \in \mathcal{S} \text{ tal que } x, y \in S$$
+> 
+> Entonces R es una **relación de equivalencia** sobre X.
 
 ---
 
-## 🧮 Ejemplos
+## 🔍 Clases de Equivalencia y Conjunto Cociente
 
-> [!example]- 📝 Ejemplo 1 — Congruencia módulo n
+> [!note]- 🔍 Definición 15 — Clase de Equivalencia
 > 
-> En $\mathbb{Z}$, la relación "$a \equiv b \pmod{n}$" (a es congruente con b módulo n) se define por:
+> Sea R una relación de equivalencia sobre X. Dado a ∈ X, llamaremos **clase de equivalencia** de a, denotada [a], al conjunto:
 > 
-> $$a \mathrel{R} b \iff n \mid (a - b)$$
+> $$[a] = \{x \in X : xRa\}$$
 > 
-> **Verificación para $n = 3$:**
+> **Propiedades de las clases:**
 > 
-> - **Reflexiva:** $3 \mid (a - a) = 0$ ✅
-> - **Simétrica:** Si $3 \mid (a-b)$, entonces $3 \mid (b-a)$ ✅
-> - **Transitiva:** Si $3 \mid (a-b)$ y $3 \mid (b-c)$, entonces $3 \mid (a-c)$ ✅
-> 
-> Las clases de equivalencia son: $$[0] = {\ldots, -3, 0, 3, 6, \ldots}, \quad [1] = {\ldots, -2, 1, 4, 7, \ldots}, \quad [2] = {\ldots, -1, 2, 5, 8, \ldots}$$
-> 
-> Estas tres clases forman una partición de $\mathbb{Z}$.
+> - a ∈ [a] para todo a ∈ X (por reflexividad).
+> - [x] = [b] ⟺ aRb.
+> - Si [a] ≠ [b], entonces [a] ∩ [b] = ∅ (son disjuntas).
+> - ⋃ₐ [a] = X (cubren todo X).
 
-> [!example]- 📝 Ejemplo 2 — Igualdad de conjuntos
+> [!abstract]- 📐 Teorema 3 — Equivalencia ⟹ Partición (Conjunto Cociente)
 > 
-> La relación de **igualdad** en cualquier conjunto $X$ (es decir, $R = {(x,x) : x \in X}$) es una relación de equivalencia.
+> Si R es una relación de equivalencia sobre X, entonces la familia:
 > 
-> - **Reflexiva:** $x = x$ ✅
-> - **Simétrica:** $x = y \Rightarrow y = x$ ✅
-> - **Transitiva:** $x = y \land y = z \Rightarrow x = z$ ✅
+> $$\mathcal{S} = \{[a] : a \in X\}$$
 > 
-> Cada clase de equivalencia $[x] = {x}$ contiene un solo elemento.
+> es una **partición** de X. La llamaremos el **conjunto cociente** de R.
 
-> [!example]- 📝 Ejemplo 3 — Relación que NO es de equivalencia
+> [!example]- 📝 Ejemplo 17 — Clases de equivalencia y conjunto cociente
 > 
-> Sea $R = {(x,y) \in \mathbb{R}^2 : x \leq y}$.
+> Sea X = {1,3,4} y R₁ = {(1,1),(1,3),(3,1),(3,3),(4,4)}, que sabemos es relación de equivalencia.
 > 
-> - ✅ Reflexiva: $x \leq x$
-> - ❌ No simétrica: $1 \leq 2$ pero $2 \not\leq 1$
+> Las clases de equivalencia son:
 > 
-> Por tanto, **no es** relación de equivalencia.
-
----
-
-## 🔗 Relaciones de Orden
-
-> [!note]- 🔗 Orden parcial
+> - [1] = {x ∈ X : xR₁1} = {1, 3}  (porque 1R₁1 y 3R₁1)
+> - [3] = {x ∈ X : xR₁3} = {1, 3} = [1]  (misma clase)
+> - [4] = {x ∈ X : xR₁4} = {4}
 > 
-> Una relación $R$ en $X$ es un **orden parcial** si es:
+> Por el Teorema 3, el **conjunto cociente** es:
 > 
-> 1. **Reflexiva:** $x \mathrel{R} x$
-> 2. **Antisimétrica:** $x \mathrel{R} y \land y \mathrel{R} x \Rightarrow x = y$
-> 3. **Transitiva:** $x \mathrel{R} y \land y \mathrel{R} z \Rightarrow x \mathrel{R} z$
+> $$\mathcal{S} = \{\{1,3\},\{4\}\}$$
 > 
-> Un conjunto con un orden parcial se llama **conjunto parcialmente ordenado** (poset).
-> 
-> > [!tip]- 💡 Comparación: Equivalencia vs. Orden
-> > 
-> > |Propiedad|Equivalencia|Orden Parcial|
-> > |---|---|---|
-> > |Reflexiva|✅|✅|
-> > |Simétrica|✅|❌|
-> > |Antisimétrica|❌|✅|
-> > |Transitiva|✅|✅|
+> que es una partición de X = {1, 3, 4}. ✓
 
 ---
 
@@ -141,18 +183,19 @@
 
 ```mermaid
 graph TD
-    A[Tipos de Relaciones] --> B[Equivalencia]
-    A --> C[Orden Parcial]
-    B --> B1[Reflexiva + Simétrica + Transitiva]
-    B --> B2[Genera clases de equivalencia]
-    B --> B3[Genera partición del conjunto]
-    C --> C1[Reflexiva + Antisimétrica + Transitiva]
-    C --> C2["Ejemplo: ≤ en ℝ"]
-    B2 --> B4["[x] = {y : yRx}"]
+    A[Relación de equivalencia R] --> B[Clases de equivalencia]
+    B --> C["[a] = {x ∈ X : xRa}"]
+    B --> D["[a] = [b] ⟺ aRb"]
+    B --> E["[a] ∩ [b] = ∅ si distintas"]
+    A --> F[Conjunto cociente]
+    F --> G["𝒮 = {[a] : a ∈ X}"]
+    G --> H[Partición de X]
+    H --> I[Teorema 2: toda partición genera equivalencia]
+    H --> J[Teorema 3: toda equivalencia genera partición]
 
     style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#ffe1e1
+    style F fill:#e1f5ff
+    style H fill:#e1ffe1
 ```
 
 ---
@@ -161,30 +204,25 @@ graph TD
 
 > [!question]- 📋 Ejercicios
 > 
-> **1.** Sea $R$ la relación en $\mathbb{Z}$ definida por $x \mathrel{R} y \iff 2 \mid (x - y)$. Demuestra que es relación de equivalencia y describe sus clases de equivalencia.
+> **1.** Sea R la relación en ℤ definida por x R y ⟺ 2 ∣ (x − y). Demuestra que es relación de equivalencia y describe sus clases de equivalencia.
 > 
-> **2.** Sea $X = {1, 2, 3, 4, 5, 6}$ con la relación $R = {(a,b) : a \equiv b \pmod 3}$. Calcula las clases de equivalencia de cada elemento.
+> **2.** Sea X = {1,2,3,4,5,6} con la relación R = {(a,b) : a ≡ b (mod 3)}. Calcula las clases de equivalencia de cada elemento.
 > 
-> **3.** ¿Es la relación "ser amigo de" una relación de equivalencia en el conjunto de personas? Justifica cada propiedad.
+> **3.** En el conjunto de cadenas sobre {a,b}, define xRy si |x| = |y| (misma longitud). ¿Es relación de equivalencia? ¿Cuáles son sus clases?
 
 > [!success]- ✅ Respuestas
 > 
-> **1.** Sea $n = 2$:
+> **1.**
+> - Reflexiva: 2 ∣ (x−x) = 0 ✅
+> - Simétrica: 2 ∣ (x−y) ⟹ 2 ∣ (y−x) ✅
+> - Transitiva: 2 ∣ (x−y) y 2 ∣ (y−z) ⟹ 2 ∣ (x−z) ✅
 > 
-> - Reflexiva: $2 \mid (x - x) = 0$ ✅
-> - Simétrica: $2 \mid (x-y) \Rightarrow 2 \mid (y-x)$ ✅
-> - Transitiva: $2 \mid (x-y)$ y $2 \mid (y-z) \Rightarrow 2 \mid (x-z)$ ✅
+> Clases: [0] = {...,−2,0,2,4,...} (pares), [1] = {...,−1,1,3,5,...} (impares).
 > 
-> Clases: $[0] = {\ldots, -2, 0, 2, 4, \ldots}$ (pares), $[1] = {\ldots, -1, 1, 3, 5, \ldots}$ (impares).
+> **2.** [1]=[4]={1,4}, [2]=[5]={2,5}, [3]=[6]={3,6}.
 > 
-> **2.** En $X = {1,2,3,4,5,6}$ con $\pmod 3$: $[1] = [4] = {1, 4}$, $\quad [2] = [5] = {2, 5}$, $\quad [3] = [6] = {3, 6}$.
-> 
-> **3.** No es relación de equivalencia en general:
-> 
-> - Reflexiva: depende (no siempre una persona "es amiga de sí misma" en sentido formal) ⚠️
-> - Simétrica: no siempre (A puede considerar amigo a B pero B no a A) ❌
-> - Transitiva: no siempre (A es amigo de B, B es amigo de C, pero A puede no conocer a C) ❌
+> **3.** Sí es relación de equivalencia. Las clases son todas las cadenas de longitud 0, todas las de longitud 1, todas las de longitud 2, etc.
 
 ---
 
-**Tags:** #matematicas-discretas #conjuntos #relaciones #equivalencia #particion #orden-parcial #MATG1051
+**Tags:** #matematicas-discretas #relaciones #equivalencia #orden-parcial #particion #clases-equivalencia #conjunto-cociente #MATG1051

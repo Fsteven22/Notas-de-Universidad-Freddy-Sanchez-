@@ -105,15 +105,7 @@
 > 
 > $$= (x_1 \land x_2 \land \neg x_3) \lor (\neg x_1 \land \neg x_3) \lor \neg x_3$$
 > 
-> Factorizamos $\neg x_3$ en todos los términos (distributiva):
-> 
-> $$= \neg x_3 \land [1 \lor \neg x_1 \lor (x_1 \land x_2)] \quad \text{(distributiva)}$$
-> 
-> Como $1 \lor (\text{cualquier cosa}) = 1$ (dominación):
-> 
-> $$= \neg x_3 \land 1$$
-> 
-> Por identidad ($A \land 1 = A$):
+> Aplicamos absorción directamente: en la expresión $(x_1 \land x_2 \land \neg x_3) \lor (\neg x_1 \land \neg x_3) \lor \neg x_3$, el término $\neg x_3$ absorbe a los dos anteriores (ambos lo contienen como factor), usando $A \lor (B \land A) \equiv A$:
 > 
 > Por tanto la expresión se reduce a:
 > 
@@ -148,27 +140,53 @@
 > |V|V|F|V|V|V|V|**V**|
 > |V|F|V|F|V|F|V|**V**|
 > |V|F|F|F|V|F|F|**V**|
-> |F|V|V|V|V|V|V|**V**|
-> |F|V|F|V|F|F|V|**V**|
-> |F|F|V|V|V|V|V|**V**|
-> |F|F|F|V|F|F|F|**V**|
+> |F|V|V|V|F|F|V|**V**|
+> |F|V|F|V|V|V|V|**V**|
+> |F|F|V|V|F|F|V|**V**|
+> |F|F|F|V|V|V|F|**F**|
 > 
 > **(b) Clasificación:**
 > 
-> Todas las filas dan **Verdadero** → la proposición es una **tautología**. ✅
+> La fila $(F,F,F)$ da Falso → la proposición es una **contingencia**. ✅
 > 
 > **(c) Simplificación algebraica:**
 > 
-> $$[(p \to q) \land (\neg r \lor p)] \to (q \lor r)$$ $$\equiv \neg[(p \to q) \land (\neg r \lor p)] \lor (q \lor r) \quad \text{(equiv. condicional)}$$ $$\equiv \neg[(\neg p \lor q) \land (\neg r \lor p)] \lor q \lor r \quad \text{(equiv. condicional)}$$
+> $$[(p \to q) \land (\neg r \lor p)] \to (q \lor r)$$
 > 
-> Si el antecedente es verdadero, entonces $(\neg p \lor q)$ y $(\neg r \lor p)$ son ambos verdaderos. Dos casos:
+> **Paso 1:** Aplicamos la equivalencia del condicional ($A \to B \equiv \neg A \lor B$) al operador principal y al interno:
 > 
-> - Si $p = V$: de $\neg p \lor q$ obtenemos $q = V$, luego $q \lor r = V$.
-> - Si $p = F$: de $\neg r \lor p = \neg r \lor F = \neg r$, necesitamos $r = F$. Pero entonces $q \lor r = q \lor F = q$. Y de $\neg p \lor q = T \lor q = T$, $q$ puede ser cualquier cosa — no fuerza que el antecedente sea verdadero a menos que lo sea.
+> $$\equiv \neg[(\neg p \lor q) \land (\neg r \lor p)] \lor (q \lor r)$$
 > 
-> En todos los casos el consecuente es verdadero o el antecedente es falso, por lo tanto es **tautología**. $\blacksquare$
+> **Paso 2:** Aplicamos De Morgan en el corchete:
 > 
-> **(d) Verificación:** La tabla confirma que $s = V$ en todas las filas. ✅
+> $$\equiv [\neg(\neg p \lor q) \lor \neg(\neg r \lor p)] \lor (q \lor r)$$
+> 
+> **Paso 3:** Aplicamos De Morgan y doble negación dentro de cada paréntesis:
+> 
+> $$\equiv [(p \land \neg q) \lor (r \land \neg p)] \lor (q \lor r)$$
+> 
+> **Paso 4:** Asociatividad (todos los términos unidos por $\lor$):
+> 
+> $$\equiv (p \land \neg q) \lor (r \land \neg p) \lor q \lor r$$
+> 
+> **Paso 5:** Reagrupamos estratégicamente (ley conmutativa):
+> 
+> $$\equiv (p \land \neg q) \lor q \lor (r \land \neg p) \lor r$$
+> 
+> **Paso 6:** Aplicamos absorción en cada par:
+> 
+> - $(p \land \neg q) \lor q \equiv p \lor q$ (absorción)
+> - $(r \land \neg p) \lor r \equiv r$ (absorción)
+> 
+> $$\equiv (p \lor q) \lor r$$
+> 
+> **Paso 7:** Asociatividad:
+> 
+> $$\equiv p \lor q \lor r$$
+> 
+> **(b) Clasificación:**
+> 
+> La fórmula es equivalente a $p \lor q \lor r$, que es Falsa cuando $p=F, q=F, r=F$ y Verdadera en los demás casos → **contingencia**. $\blacksquare$
 
 > [!example]- 📝 Ejercicio 5 — Valor lógico con valores asignados
 > 
@@ -225,15 +243,71 @@
 > 
 > $$Y = (\neg A \land B \land C) \lor (A \land \neg B \land \neg C) \lor (A \land \neg B \land C) \lor (A \land B \land \neg C)$$
 > 
-> Agrupando las tres últimas (todas tienen $A = 1$ y no son $B=C=1$):
+> **Paso 1 — Agrupar los tres minitérminos con $A=1$:**
 > 
-> $$= (\neg A \land B \land C) \lor (A \land \neg(B \land C))$$ $$= (\neg A \land B \land C) \lor (A \land (\neg B \lor \neg C))$$
+> Los tres últimos comparten $A=1$ y en todos ellos $B \land C$ es falso (nunca son $B=C=1$ simultáneamente):
 > 
-> Factorizando con De Morgan:
+> $$(A \land \neg B \land \neg C) \lor (A \land \neg B \land C) \lor (A \land B \land \neg C)$$
+> 
+> Factorizamos $A$:
+> 
+> $$= A \land [(\neg B \land \neg C) \lor (\neg B \land C) \lor (B \land \neg C)]$$
+> 
+> Agrupamos los dos primeros dentro del corchete (factor común $\neg B$):
+> 
+> $$= A \land [(\neg B \land (\neg C \lor C)) \lor (B \land \neg C)]$$
+> 
+> Como $\neg C \lor C = V$ (tercio excluido):
+> 
+> $$= A \land [\neg B \lor (B \land \neg C)]$$
+> 
+> Aplicamos absorción $\neg B \lor (B \land \neg C) \equiv \neg B \lor \neg C$ (por resolución: $\neg B \lor B = V$, y $\neg B \lor \neg C$ cubre todos los casos menos $B=C=1$):
+> 
+> $$= A \land (\neg B \lor \neg C)$$
+> 
+> Aplicamos De Morgan: $\neg B \lor \neg C \equiv \neg(B \land C)$:
+> 
+> $$= A \land \neg(B \land C)$$
+> 
+> **Paso 2 — Unir con el primer minitérmino $(\neg A \land B \land C)$:**
+> 
+> $$Y = (\neg A \land B \land C) \lor (A \land \neg(B \land C))$$
+> 
+> **Paso 3 — Reescribir aplicando distributiva:**
+> 
+> Partimos de $(\neg A \land B \land C) \lor (A \land \neg(B \land C))$. Llamamos $X = B \land C$ para simplificar la notación:
+> 
+> $$= (\neg A \land X) \lor (A \land \neg X)$$
+> 
+> Aplicamos distributiva sumando $A$ al primer término y $X$ al segundo:
+> 
+> $$= [(\neg A \land X) \lor A] \land [(\neg A \land X) \lor \neg X]$$
+> 
+> Simplificamos cada factor:
+> 
+> - $(\neg A \land X) \lor A \equiv A \lor X$ (absorción: $A \lor (\neg A \land X) \equiv A \lor X$)
+> - $(\neg A \land X) \lor \neg X \equiv \neg A \lor \neg X \equiv \neg(A \land X)$ (absorción análoga)
+> 
+> Por tanto:
+> 
+> $$= (A \lor X) \land \neg(A \land X)$$
+> 
+> Restituyendo $X = B \land C$:
 > 
 > $$\boxed{Y = (A \lor (B \land C)) \land \neg(A \land B \land C)}$$
 > 
-> Es decir: "acceso si el gerente está O si están B y C juntos, pero no los tres a la vez."
+> **Verificación rápida con la tabla:**
+> 
+> |Fila|$A \lor (B \land C)$|$\neg(A \land B \land C)$|$Y$|Tabla|
+> |---|---|---|---|---|
+> |$(0,1,1)$|$0 \lor 1 = 1$|$\neg 0 = 1$|**1**|1 ✅|
+> |$(1,1,1)$|$1 \lor 1 = 1$|$\neg 1 = 0$|**0**|0 ✅|
+> |$(1,0,0)$|$1 \lor 0 = 1$|$\neg 0 = 1$|**1**|1 ✅|
+> |$(0,0,0)$|$0 \lor 0 = 0$|$\neg 0 = 1$|**0**|0 ✅|
+> 
+> $$\boxed{Y = (A \lor (B \land C)) \land \neg(A \land B \land C)}$$
+> 
+> Es decir: "acceso si el gerente está presente O si están B y C juntos, pero bloqueado si están los tres (coacción)."
 > 
 > **(c) Circuito:**
 > 
@@ -354,11 +428,11 @@
 > |Paso|Expresión|Justificación|
 > |---|---|---|
 > |1|$d(j)$|Premisa 4|
-> |2|$d(j) \to r(j)$|Premisa 1 (instancia Juan)|
+> |2|$d(j) \to r(j)$|Instanciación Universal (IU) en Premisa 1|
 > |3|$r(j)$|Modus Ponens (1, 2)|
-> |4|$r(j) \to \neg v(j)$|Premisa 2 (instancia Juan)|
+> |4|$r(j) \to \neg v(j)$|Instanciación Universal (IU) en Premisa 2|
 > |5|$\neg v(j)$|Modus Ponens (3, 4)|
-> |6|$b(j) \to v(j)$|Premisa 3 (instancia Juan)|
+> |6|$b(j) \to v(j)$|Instanciación Universal (IU) en Premisa 3|
 > |7|$\neg b(j)$|Modus Tollens (5, 6)|
 > 
 > El razonamiento es **válido**. $\blacksquare$
@@ -401,22 +475,38 @@
 > 7. $(p \to r) \to s$
 > 8. $t \lor \neg q$
 > 
-> **Conclusión:** $q \to s \land t$
+> **Conclusión:** $q \to (s \land t)$
 > 
-> **Análisis — ¿Es válido?**
+> **Demostración Formal (Reducción al Absurdo):**
 > 
-> Supongamos $q = V$ e intentamos probar $s \land t$.
+> Suponemos que la conclusión es **falsa**, es decir:
 > 
-> De premisa 3: $t \lor \neg q = t \lor F = t$, así que $t = V$. ✅
+> $$\neg[q \to (s \land t)] \equiv q \land \neg(s \land t) \equiv q \land (\neg s \lor \neg t)$$
 > 
-> Ahora intentamos probar $s$. De premisa 2 necesitamos $p \to r$.
+> Trabajamos con esta hipótesis y las premisas para derivar una contradicción.
 > 
-> - Si $p = V$: de premisa 1, $p \land q = V \land V = V \to r$, así que $r = V$. Entonces $p \to r = V \to V = V$, y por premisa 2, $s = V$. ✅
-> - Si $p = F$: $p \to r = F \to r = V$ siempre. Entonces por premisa 2, $s = V$. ✅
+> |Paso|Expresión|Justificación|
+> |---|---|---|
+> |1|$p \land q \to r$|Premisa 1|
+> |2|$(p \to r) \to s$|Premisa 2|
+> |3|$t \lor \neg q$|Premisa 3|
+> |4|$q \land (\neg s \lor \neg t)$|Hipótesis de absurdo: negación de la conclusión|
+> |5|$q$|Simplificación (4)|
+> |6|$\neg s \lor \neg t$|Simplificación (4)|
+> |7|$t$|Silogismo Disyuntivo (3, 5): de $t \lor \neg q$ y $q$ se obtiene $t$|
+> |8|$\neg s$|Silogismo Disyuntivo (6, 7): de $\neg s \lor \neg t$ y $t$ se obtiene $\neg s$|
+> |9|$\neg s \to \neg(p \to r)$|Contrarrecíproca de la Premisa 2|
+> |10|$\neg(p \to r)$|Modus Ponens (8, 9)|
+> |11|$p \land \neg r$|Equivalencia $\neg(p \to r) \equiv p \land \neg r$ aplicada a (10)|
+> |12|$p$|Simplificación (11)|
+> |13|$\neg r$|Simplificación (11)|
+> |14|$p \land q$|Conjunción (12, 5)|
+> |15|$r$|Modus Ponens (1, 14)|
+> |16|$r \land \neg r$|Conjunción (15, 13) — **⊥ Contradicción**|
 > 
-> En ambos casos $s = V$ y $t = V$, por lo tanto $s \land t = V$.
+> La hipótesis de absurdo lleva a $r \land \neg r$, que es una contradicción. Por tanto la conclusión $q \to (s \land t)$ es verdadera. $\blacksquare$
 > 
-> El argumento es **válido**. $\blacksquare$
+> El argumento es **válido**.
 
 ---
 
@@ -464,39 +554,69 @@
 
 > [!example]- 📝 Ejercicio 14 — Valor lógico de proposiciones cuantificadas
 > 
+> 
+> 
 > **(a) $\exists x \in \mathbb{R} : 7 - 4x < 5 - 4x^2$**
 > 
-> $7 - 4x < 5 - 4x^2 \iff 4x^2 - 4x + 2 < 0 \iff 2(2x^2 - 2x + 1) < 0$
+> **Resultado: Falso ❌**
 > 
-> El discriminante de $2x^2 - 2x + 1$ es $4 - 8 = -4 < 0$ y coeficiente líder positivo, por lo que siempre es positivo. Entonces $2(2x^2-2x+1) > 0$ para todo $x$.
+> Reescribimos la desigualdad pasando todo al mismo lado:
 > 
-> **Falso.** ❌
+> $$7 - 4x < 5 - 4x^2 \iff 4x^2 - 4x + 2 < 0 \iff 2(2x^2 - 2x + 1) < 0$$
 > 
-> **(b) $\exists x > 0, \forall y \in \mathbb{R} : \dfrac{5y^2 - 2}{1 + 7y^2} < 9x$**
+> Analizamos el signo de $2x^2 - 2x + 1$. Su discriminante es:
 > 
-> Analizamos $f(y) = \dfrac{5y^2-2}{1+7y^2}$. Cuando $y \to \infty$: $f(y) \to \dfrac{5}{7}$. El máximo de $f$ es $\dfrac{5}{7}$ (límite). También $f(0) = -2$.
+> $$\Delta = (-2)^2 - 4(2)(1) = 4 - 8 = -4 < 0$$
 > 
-> Entonces $f(y) < \dfrac{5}{7}$ para todo $y$. Tomando $x = \dfrac{1}{9}$: $9x = 1 > \dfrac{5}{7}$. ✓
+> Como $\Delta < 0$ y el coeficiente líder es positivo, la cuadrática **no tiene raíces reales y es siempre positiva**. Por tanto $2(2x^2-2x+1) > 0$ para todo $x \in \mathbb{R}$, y la desigualdad nunca se cumple. $\blacksquare$
 > 
-> **Verdadero.** ✅
+> ---
+> 
+> **(b) $\exists x > 0,\ \forall y \in \mathbb{R} :\ \dfrac{5y^2 - 2}{1 + 7y^2} < 9x$**
+> 
+> **Resultado: Verdadero ✅**
+> 
+> Analizamos el comportamiento de $f(y) = \dfrac{5y^2-2}{1+7y^2}$ para acotar su valor máximo:
+> 
+> $$\lim_{y \to \infty} f(y) = \frac{5}{7}$$
+> 
+> Esta es una asíntota horizontal que $f$ nunca alcanza, luego $f(y) < \dfrac{5}{7}$ para todo $y \in \mathbb{R}$.
+> 
+> Elegimos $x = \dfrac{1}{9} > 0$, con lo que $9x = 1$. Entonces:
+> 
+> $$f(y) < \frac{5}{7} < 1 = 9x \quad \forall y \in \mathbb{R}$$
+> 
+> Existe el valor $x = \dfrac{1}{9}$ que satisface la condición. $\blacksquare$
+> 
+> ---
 > 
 > **(c) $\exists x \in \mathbb{R} : 2x^2 - 5x + 3 \leq 1 - x$**
 > 
-> $2x^2 - 5x + 3 \leq 1 - x \iff 2x^2 - 4x + 2 \leq 0 \iff 2(x-1)^2 \leq 0$
+> **Resultado: Verdadero ✅**
 > 
-> Como $(x-1)^2 \geq 0$ siempre, la única solución es $x = 1$.
+> Pasamos todo al mismo lado y simplificamos:
 > 
-> **Verdadero** (con $x=1$). ✅
+> $$2x^2 - 5x + 3 \leq 1 - x \iff 2x^2 - 4x + 2 \leq 0 \iff 2(x-1)^2 \leq 0$$
 > 
-> **(d) $\forall x > 0, \exists y \in \mathbb{R} : 4y^2 - 3xy + 1 < 0$**
+> Como $(x-1)^2 \geq 0$ siempre, la única forma de que $2(x-1)^2 \leq 0$ se cumpla es con igualdad: $x = 1$.
 > 
-> Tratamos como cuadrática en $y$: $4y^2 - 3xy + 1$. Para que tenga raíces reales y tome valores negativos, el discriminante debe ser positivo:
+> Verificación: $2(1)^2 - 5(1) + 3 = 0 \leq 0 = 1 - 1$. ✓
 > 
-> $\Delta = 9x^2 - 16 > 0 \iff x > \dfrac{4}{3}$
+> Existe $x = 1$ que satisface la condición. $\blacksquare$
 > 
-> Para $0 < x \leq \dfrac{4}{3}$, el discriminante es $\leq 0$ y la cuadrática es siempre $\geq 0$, sin solución negativa.
+> ---
 > 
-> **Falso.** ❌
+> **(d) $\forall x > 0,\ \exists y \in \mathbb{R} : 4y^2 - 3xy + 1 < 0$**
+> 
+> **Resultado: Falso ❌**
+> 
+> Para que exista algún $y$ tal que $4y^2 - 3xy + 1 < 0$, la cuadrática en $y$ debe tomar valores negativos, lo que requiere que tenga raíces reales distintas, es decir $\Delta > 0$:
+> 
+> $$\Delta = (-3x)^2 - 4(4)(1) = 9x^2 - 16 > 0 \iff x > \frac{4}{3}$$
+> 
+> Para $0 < x \leq \dfrac{4}{3}$, se tiene $\Delta \leq 0$, por lo que la cuadrática es **siempre $\geq 0$** y nunca toma valores negativos.
+> 
+> Como el cuantificador exige que esto valga para **todo** $x > 0$, y falla para $x = 1 \in \left(0, \frac{4}{3}\right]$, la proposición es falsa. $\blacksquare$
 
 > [!example]- 📝 Ejercicio 15 — Inducción: $3^n \geq 2n+1$
 > 
@@ -616,27 +736,39 @@
 
 > [!example]- 📝 Ejercicio 22 — Inducción: diagonales de polígono convexo
 > 
-> **Demostrar:** Un polígono convexo de $n$ lados tiene $\dfrac{n(n-3)}{2}$ diagonales.
+> **Demostrar:** Un polígono convexo de $n$ lados tiene $\dfrac{n(n-3)}{2}$ diagonales, $\forall n \geq 3$.
 > 
-> **Base:** $n=3$ (triángulo): $\dfrac{3(0)}{2} = 0$ diagonales. ✓ (un triángulo no tiene diagonales).
+> **Base:** $n=3$ (triángulo): $\dfrac{3(3-3)}{2} = 0$ diagonales. ✓ (un triángulo no tiene diagonales).
 > 
-> **HI:** Un polígono convexo de $k$ lados tiene $\dfrac{k(k-3)}{2}$ diagonales.
+> **HI:** Un polígono convexo de $k$ lados tiene $D(k) = \dfrac{k(k-3)}{2}$ diagonales.
 > 
-> **Paso inductivo:** Al agregar un vértice nuevo para pasar a $k+1$ lados:
+> **Paso inductivo:** Construimos el polígono de $k+1$ lados insertando un vértice nuevo $V_{k+1}$ sobre uno de los lados del polígono de $k$ lados — digamos sobre el lado $\overline{AB}$. Esto reemplaza ese lado por dos lados nuevos $\overline{AV_{k+1}}$ y $\overline{V_{k+1}B}$.
 > 
-> El nuevo vértice $V_{k+1}$ puede conectarse con los $k+1-3 = k-2$ vértices que no son sus vecinos inmediatos (sus dos vecinos forman los nuevos lados). Además, el lado que conectaba los dos vecinos del nuevo vértice desaparece como lado (se convierte en diagonal interna — no, en realidad pasa a ser interior). Revisando correctamente:
+> Contamos las diagonales nuevas que aparecen:
 > 
-> Al pasar de $k$ a $k+1$ vértices, el nuevo vértice añade $(k+1)-3 = k-2$ diagonales nuevas (hacia todos excepto sus 2 vecinos y él mismo).
+> 1. **El segmento $\overline{AB}$** dejó de ser un lado y pasa a ser diagonal: $+1$
+> 2. **El vértice $V_{k+1}$** puede conectarse mediante diagonales con todos los vértices excepto él mismo y sus 2 vecinos ($A$ y $B$): son $k+1-1-2 = k-2$ diagonales nuevas.
 > 
-> $$D(k+1) = D(k) + (k-2) = \frac{k(k-3)}{2} + (k-2) = \frac{k^2-3k+2k-4}{2} = \frac{k^2-k-4}{2}$$
+> Total de diagonales nuevas: $(k-2)+1 = k-1$.
 > 
-> Y el valor esperado es:
+> $$D(k+1) = D(k) + (k-1) = \frac{k(k-3)}{2} + (k-1) = \frac{k^2-3k+2k-2}{2} = \frac{k^2-k-2}{2} = \frac{(k+1)(k-2)}{2}$$
 > 
-> $$\frac{(k+1)(k+1-3)}{2} = \frac{(k+1)(k-2)}{2} = \frac{k^2-k-2}{2}$$
+> Como $\dfrac{(k+1)(k-2)}{2} = \dfrac{(k+1)((k+1)-3)}{2}$, que es exactamente la fórmula para $n = k+1$. $\blacksquare$
 > 
-> Hay una diferencia de 1 en el numerador. Esto indica que al agregar el vértice, el segmento que unía sus dos vecinos (que era un **lado** del polígono de $k$ vértices) ahora se convierte en una **diagonal** del polígono de $k+1$ vértices, añadiendo 1 diagonal más:
+> ![[Pasted image 20260613145551.png]]
 > 
-> $$D(k+1) = D(k) + (k-2) + 1 = \frac{k(k-3)}{2} + k - 1 = \frac{k^2-3k+2k-2}{2} = \frac{k^2-k-2}{2} = \frac{(k+1)(k-2)}{2} \quad \blacksquare$$
+> ![[Pasted image 20260613145600.png]]
+> 
+> ![[Pasted image 20260613145618.png]]
+> 
+>
+> >[!note] 📌 Nota — Lo que muestran las imágenes
+> > Las imágenes ilustran el paso inductivo: al insertar el vértice $V_{k+1}$ sobre el lado $\overline{AB}$, ocurren dos cosas simultáneamente:
+> >
+> > 1. $\overline{AB}$ **deja de ser un lado** del polígono y se convierte en **diagonal** — de ahí el $+1$ en el conteo.
+> > 2. $V_{k+1}$ traza **$k-2$ diagonales nuevas** hacia todos los vértices que no son sus vecinos inmediatos.
+> >
+> > Esos dos aportes juntos ($k-2+1 = k-1$) son los que hacen que la fórmula cierre exactamente al pasar de $k$ a $k+1$.
 
 ---
 

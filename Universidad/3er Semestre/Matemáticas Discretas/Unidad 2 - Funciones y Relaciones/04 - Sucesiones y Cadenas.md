@@ -101,11 +101,148 @@
 > 
 > $$\prod_{i=1}^{3} a_i = a_1 \cdot a_2 \cdot a_3 = 2 \cdot 4 \cdot 6 = 48$$
 
+---
+
+## 🧮 Inducción sobre Productos
+
+> [!note]- 🧮 Técnica — Inducción con notación $\prod$
+> 
+> Las demostraciones por inducción sobre **productos** siguen exactamente el mismo esquema que las de sumas, con una diferencia en el paso inductivo:
+> 
+> $$P_{k+1} = P_k \cdot a_{k+1}$$
+> 
+> En vez de sumar el término nuevo, se **multiplica**. El resto del esquema es idéntico:
+> 
+> 1. **Base:** verificar que la fórmula vale para $n = 1$ (o el índice inicial).
+> 2. **HI:** asumir que $\displaystyle\prod_{k=i}^{n} a_k = f(n)$.
+> 3. **Paso inductivo:** demostrar que $\displaystyle\prod_{k=i}^{n+1} a_k = f(n+1)$, usando que el producto hasta $n+1$ es el producto hasta $n$ multiplicado por $a_{n+1}$.
+> 
+> > [!tip]- 💡 Diferencia con sumas
+> > 
+> > Con sumas verificas que el término nuevo **cubre la brecha** entre dos umbrales (en desigualdades) o **completa la fórmula** algebraicamente (en igualdades). Con productos, el término nuevo **escala** el resultado anterior — el razonamiento es análogo pero la manipulación algebraica involucra factorizaciones en vez de sumas.
+
+> [!example]- 📝 Ejemplo — $\displaystyle\prod_{k=1}^{n}(1+2k) = \dfrac{(2n+1)!}{2^n n!}$
+> 
+> **Demostrar** que para toda $n \in \mathbb{N}$:
+> 
+> $$\prod_{k=1}^{n}(1+2k) = \frac{(2n+1)!}{2^n n!}$$
+> 
+> **Base ($n = 1$):**
+> 
+> $$\prod_{k=1}^{1}(1+2k) = 1+2(1) = 3$$
+> 
+> $$\frac{(2\cdot1+1)!}{2^1 \cdot 1!} = \frac{3!}{2} = \frac{6}{2} = 3 \quad \checkmark$$
+> 
+> **HI:** Supongamos que para algún $n = m$:
+> 
+> $$\prod_{k=1}^{m}(1+2k) = \frac{(2m+1)!}{2^m m!}$$
+> 
+> **Paso inductivo:** Queremos demostrar que vale para $n = m+1$:
+> 
+> $$\prod_{k=1}^{m+1}(1+2k) = \frac{(2(m+1)+1)!}{2^{m+1}(m+1)!} = \frac{(2m+3)!}{2^{m+1}(m+1)!}$$
+> 
+> Separamos el último factor del producto:
+> 
+> $$\prod_{k=1}^{m+1}(1+2k) = \left(\prod_{k=1}^{m}(1+2k)\right) \cdot (1+2(m+1))$$
+> 
+> Aplicamos la HI:
+> 
+> $$= \frac{(2m+1)!}{2^m m!} \cdot (2m+3)$$
+> 
+> Ahora multiplicamos y dividimos por $2(m+1)$ para construir el denominador que necesitamos:
+> 
+> $$= \frac{(2m+1)!}{2^m m!} \cdot (2m+3) \cdot \frac{2(m+1)}{2(m+1)}$$
+> 
+> $$= \frac{(2m+1)! \cdot (2m+2) \cdot (2m+3)}{2^{m+1}(m+1)!}$$
+> 
+> Como $(2m+1)! \cdot (2m+2) \cdot (2m+3) = (2m+3)!$:
+> 
+> $$= \frac{(2m+3)!}{2^{m+1}(m+1)!} \quad \checkmark \quad \blacksquare$$ 
+> 
+> > [!tip]- 💡 El truco clave
+> > 
+> > Cuando el denominador de la meta tiene $2^{m+1}(m+1)!$ pero solo tienes $2^m m!$, **multiplica y divide por el factor faltante** — en este caso $2(m+1)$. Eso construye el denominador correcto sin cambiar el valor, y permite que el numerador absorba los factores nuevos en el factorial.
+
 > [!example]- 📝 Ejemplo 22 — Suma geométrica
 > 
 > La suma geométrica $a + ar + ar^2 + \cdots + ar^n$ se escribe:
 > 
 > $$\sum_{i=0}^{n} ar^i$$
+
+---
+
+## 🔄 Recurrencias
+
+> [!note]- 🔄 Definición — Relación de Recurrencia
+> 
+> Una **relación de recurrencia** para una sucesión $\{s_n\}$ es una ecuación que expresa $s_n$ en términos de uno o más términos anteriores de la misma sucesión.
+> 
+> Para que la sucesión quede completamente definida se necesitan:
+> 
+> 1. La **relación de recurrencia** (la ecuación).
+> 2. Las **condiciones iniciales** (los primeros términos que no dependen de anteriores).
+> 
+> > [!tip]- 💡 Orden de una recurrencia
+> > 
+> > El **orden** de una recurrencia es la diferencia entre el índice mayor y el menor que aparecen. Por ejemplo:
+> > - $s_n = 3s_{n-1}$ es de **orden 1** — solo depende del término inmediatamente anterior.
+> > - $s_n = 5s_{n-1} - 6s_{n-2}$ es de **orden 2** — depende de los dos términos anteriores.
+
+---
+
+> [!note]- 📋 Técnica — Cómo trabajar con recurrencias
+> 
+> Dado $s_n$ definido por una fórmula explícita, hay tres operaciones frecuentes:
+> 
+> | Operación | Qué hacer |
+> |---|---|
+> | Encontrar $s_i$ | Sustituir $n$ por $i$ en la fórmula |
+> | Encontrar $s_{n-1}$ | Sustituir $n$ por $n-1$ en la fórmula |
+> | Encontrar $s_{n-2}$ | Sustituir $n$ por $n-2$ en la fórmula |
+> 
+> Para **verificar** que $\{s_n\}$ satisface una recurrencia, se sustituyen $s_n$, $s_{n-1}$ y $s_{n-2}$ (o los que correspondan) con sus fórmulas explícitas y se simplifica hasta que ambos lados sean iguales.
+
+> [!example]- 📝 Ejemplo — Sucesión con recurrencia de orden 2
+> 
+> Sea la sucesión definida por $s_n = 2^n + 4 \cdot 3^n$, $n \geq 0$.
+> 
+> **Primeros términos:**
+> 
+> $$s_0 = 2^0 + 4 \cdot 3^0 = 1 + 4 = 5$$
+> 
+> $$s_1 = 2^1 + 4 \cdot 3^1 = 2 + 12 = 14$$
+> 
+> **Fórmulas desplazadas:**
+> 
+> $$s_{n-1} = 2^{n-1} + 4 \cdot 3^{n-1}$$
+> 
+> $$s_{n-2} = 2^{n-2} + 4 \cdot 3^{n-2}$$
+> 
+> **Verificación de $s_n = 5s_{n-1} - 6s_{n-2}$ para $n \geq 2$:**
+> 
+> Calculamos el lado derecho sustituyendo las fórmulas:
+> 
+> $$5s_{n-1} - 6s_{n-2} = 5(2^{n-1} + 4 \cdot 3^{n-1}) - 6(2^{n-2} + 4 \cdot 3^{n-2})$$
+> 
+> Separamos por base:
+> 
+> $$= \underbrace{5 \cdot 2^{n-1} - 6 \cdot 2^{n-2}}_{\text{términos con } 2} + \underbrace{20 \cdot 3^{n-1} - 24 \cdot 3^{n-2}}_{\text{términos con } 3}$$
+> 
+> Para los términos con 2, factorizamos $2^{n-2}$:
+> 
+> $$5 \cdot 2^{n-1} - 6 \cdot 2^{n-2} = 2^{n-2}(5 \cdot 2 - 6) = 2^{n-2} \cdot 4 = 2^n$$
+> 
+> Para los términos con 3, factorizamos $3^{n-2}$:
+> 
+> $$20 \cdot 3^{n-1} - 24 \cdot 3^{n-2} = 3^{n-2}(20 \cdot 3 - 24) = 3^{n-2} \cdot 36 = 4 \cdot 3^n$$
+> 
+> Juntando:
+> 
+> $$5s_{n-1} - 6s_{n-2} = 2^n + 4 \cdot 3^n = s_n \quad \checkmark \quad \blacksquare$$
+> 
+> > [!tip]- 💡 El truco clave
+> > 
+> > Al verificar recurrencias con potencias, **factoriza la potencia de menor exponente** en cada grupo. Esto convierte $2^{n-1}$ y $2^{n-2}$ en $2^n$ multiplicado por una constante, lo que permite simplificar limpiamente.
 
 ---
 
