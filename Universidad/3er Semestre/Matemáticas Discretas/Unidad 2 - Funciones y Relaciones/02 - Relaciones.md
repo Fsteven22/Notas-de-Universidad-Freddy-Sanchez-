@@ -78,7 +78,7 @@
 > 
 > La **matriz de la relación** (filas = X en orden, columnas = Y en orden) tiene un 1 en la posición (i,j) si xᵢRyⱼ:
 > 
-> $$M_R = \begin{pmatrix} 0&1&0&1&0 \ 1&0&0&1&0 \ 0&1&0&0&0 \ 0&0&0&0&0 \end{pmatrix}$$
+> $$M_R = \begin{pmatrix} 0&1&0&1&0 \\ 1&0&0&1&0 \\ 0&1&0&0&0 \\ 0&0&0&0&0 \end{pmatrix}$$
 > 
 > > [!warning]- ⚠️ Observación 1
 > > 

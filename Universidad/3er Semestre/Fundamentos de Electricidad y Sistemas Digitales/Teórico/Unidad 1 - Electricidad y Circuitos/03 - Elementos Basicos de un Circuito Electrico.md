@@ -139,8 +139,8 @@
 > | **Pista de PCB** | Cobre laminado sobre placa | Circuitos impresos |
 >
 > > **Calibre AWG:** En América Latina se usa el estándar **AWG (American Wire Gauge)** para medir el diámetro de los conductores. A menor número AWG, mayor diámetro y mayor capacidad de corriente (ej. AWG 12 para circuitos de 20 A en hogares).
-> > 
-> > ![[Pasted image 20260519225615.png]]
+
+![[Pasted image 20260519225615.png]]
 
 ---
 
@@ -208,8 +208,8 @@
 > | **Tolerancia** | Variación permitida respecto al valor nominal |
 > | **Potencia** | Máxima potencia disipable sin dañarse (¼ W, ½ W, 1 W, 2 W…) |
 > | **Coeficiente de temperatura** | Variación de R con la temperatura (ppm/°C) |
-> 
-> ![[Pasted image 20260519225108.png]]
+
+![[Pasted image 20260519225108.png]]
 
 ---
 
@@ -266,8 +266,9 @@
 > | **AC** | Permite el paso | El campo eléctrico varía → corriente de desplazamiento |
 >
 > > ⚠️ Los capacitores electrolíticos **deben conectarse respetando la polaridad** (+ y −). Invertirlos puede dañarlos o causar cortocircuito.
-> > 
-> > ![[Pasted image 20260519225814.png]]
+
+
+ ![[Pasted image 20260519225814.png]]
 
 ---
 
@@ -318,8 +319,9 @@
 > | **Transformadores** | Dos inductores acoplados magnéticamente |
 > | **Fuentes conmutadas** | Almacena y libera energía en ciclos |
 > | **Motores y relés** | Genera campo magnético para movimiento mecánico |
-> 
-> ![[Pasted image 20260519225956.png]]
+
+
+![[Pasted image 20260519225956.png]]
 
 ---
 ## 🌍 Simbología EU vs US

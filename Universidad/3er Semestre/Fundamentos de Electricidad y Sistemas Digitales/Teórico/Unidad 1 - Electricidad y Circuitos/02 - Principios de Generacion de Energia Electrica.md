@@ -57,8 +57,8 @@
 >
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
-> 
-<![[ChatGPT Image 19 may 2026, 22_34_16.png]]
+
+![[ChatGPT Image 19 may 2026, 22_34_16.png]]
 
 ---
 ## 🔄 Ley de Lenz
@@ -107,9 +107,8 @@
 > > Un imán de barra se acerca a una bobina con su polo Norte apuntando hacia ella.
 > > El flujo $\Phi$ **aumenta**. Por Lenz, la bobina genera un campo que **se opone** al imán → la cara de la bobina más cercana se comporta como polo **Norte** (repele al imán). La corriente inducida circula en sentido antihorario vista desde el imán.
 > > 
-> > ![[ChatGPT Image 19 may 2026, 22_41_47.png]]
-> 
-> 
+
+![[ChatGPT Image 19 may 2026, 22_41_47.png]]
 
 ---
 ## ⚡ DC vs AC — Edison vs Tesla
@@ -165,7 +164,7 @@
 > | **Mantenimiento** | Bajo | Alto (escobillas) |
 > | **Eficiencia** | ✅ Alta | Media |
 > | **Uso típico** | Plantas eléctricas, automóviles | Tracción eléctrica, carga de baterías |
-> 
+
 ![[ChatGPT Image 19 may 2026, 22_46_01.png]]
 
 ---

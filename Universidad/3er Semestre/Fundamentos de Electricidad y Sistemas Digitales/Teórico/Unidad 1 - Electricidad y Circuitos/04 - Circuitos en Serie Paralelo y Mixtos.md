@@ -101,7 +101,7 @@
 > | **Distribución de voltaje** | Elementos de mayor R tienen mayor caída de voltaje |
 > | **Misma potencia base** | $P = I^2 R$ varía según la resistencia de cada elemento |
 > 
->
+
 ![[ChatGPT Image 30 may 2026, 20_14_44.png]]
 
 ---
@@ -179,8 +179,7 @@
 > | **Menor resistencia** | $R_{eq}$ siempre es menor que cualquier $R_k$ |
 > | **Mismo voltaje** | Todos los elementos operan a la misma tensión |
 > | **Mayor corriente total** | Al agregar ramas, la corriente de la fuente aumenta |
-> 
-> 
+
 ![[ChatGPT Image 30 may 2026, 20_24_25.png]]
 
 ---
@@ -213,6 +212,7 @@
 > > En paralelo: $C_t = 4 + 6 = 10\,\mu F$
 > >
 > > En serie: $C_t = \frac{4 \times 6}{4 + 6} = \frac{24}{10} = 2.4\,\mu F$
+
 ![[ChatGPT Image 30 may 2026, 20_29_23.png]]
 
 ---
@@ -245,7 +245,7 @@
 > > En serie: $L_t = 3 + 6 = 9\,mH$
 > >
 > > En paralelo: $L_t = \frac{3 \times 6}{3 + 6} = \frac{18}{9} = 2\,mH$
-> > 
+
 ![[file_000000006634720e8575d8d5057e5f59.png]]
 
 ---
@@ -315,9 +315,9 @@
 > > $$I_2 = \frac{9.6}{12} = 0.8\text{ A} \qquad I_3 = \frac{9.6}{6} = 1.6\text{ A}$$
 > >
 > > ✅ Verificación KCL: $0.8 + 1.6 = 2.4\text{ A}$ ✓
-> > 
-> > 
+
 ![[file_00000000bdc471f7b12b164a687c03e7.png]]
+
 ---
 ## 🔋 Potencia en Circuitos
 

@@ -64,8 +64,8 @@
 > $$Q = n \cdot e$$
 > 
 > Donde $n$ es el número de electrones y $e = 1.6 \times 10^{-19}$ C.
-> 
-> ![[Pasted image 20260519222355.png]]
+
+![[Pasted image 20260519222355.png]]
 
 ---
 
@@ -159,8 +159,8 @@
 > **Campo eléctrico uniforme:**
 > 
 > Cuando se tienen dos placas paralelas cargadas, el campo eléctrico entre ellas es constante (uniforme): el vector $E$ no cambia de dirección ni de magnitud entre las placas.
-> 
-> ![[Pasted image 20260519222513.png]]
+
+![[Pasted image 20260519222513.png]]
 
 ---
 
