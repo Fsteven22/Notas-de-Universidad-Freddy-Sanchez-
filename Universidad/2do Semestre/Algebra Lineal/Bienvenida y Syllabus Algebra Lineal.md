@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟦 Álgebra Lineal — Bienvenida y Syllabus
 
 ## 🎉 ¡Bienvenido/a a Álgebra Lineal!
 
-> [!info]- 👋 Sobre esta materia
+> [!info] 👋 Sobre esta materia
 >
 > ¡Hola y bienvenido/a! Álgebra Lineal es un curso de formación básica que aborda matrices, sistemas de ecuaciones lineales, espacios vectoriales, transformaciones lineales, espacios con producto interno, y valores y vectores propios. Es una de las materias más fundamentales para la ingeniería y las ciencias computacionales.
 >
@@ -20,9 +24,15 @@
 
 ---
 
+## 📎 Documento oficial (Garden)
+
+![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
+
+---
+
 ## 🎯 Objetivos del Curso
 
-> [!note]- 📌 ¿Qué vamos a lograr?
+> [!note] 📌 ¿Qué vamos a lograr?
 >
 > Este curso contribuye a la formación integral del futuro profesional, desarrollando el pensamiento abstracto y la capacidad de resolver problemas usando modelos matemáticos lineales.
 >
@@ -38,7 +48,7 @@
 
 ## 📋 Evaluación
 
-> [!warning]- 📊 ¿Cómo se evalúa?
+> [!warning] 📊 ¿Cómo se evalúa?
 >
 > | Actividad | ¿Aplica? |
 > |---|---|
@@ -53,7 +63,7 @@
 
 ## 🗂️ Contenido del Curso
 
-> [!tip]- 📚 Temas a cubrir
+> [!tip] 📚 Temas a cubrir
 >
 > ```mermaid
 > graph LR
@@ -83,7 +93,7 @@
 
 ## 📚 Bibliografía (Formato IEEE)
 
-> [!quote]- 📖 Fuentes oficiales de la materia
+> [!quote] 📖 Fuentes oficiales de la materia
 >
 > **Lectura obligatoria:**
 >
@@ -103,7 +113,7 @@
 
 ## 🗺️ Índice de Notas
 
-> [!tip]- 📂 Estructura del repositorio
+> [!tip] 📂 Estructura del repositorio
 >
 > ```
 > 📁 Álgebra Lineal/

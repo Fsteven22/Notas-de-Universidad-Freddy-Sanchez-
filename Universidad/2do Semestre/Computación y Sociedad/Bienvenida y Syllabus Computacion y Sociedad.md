@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟦 Computación y Sociedad — Bienvenida y Syllabus
 
 ## 🎉 ¡Bienvenido/a a Computación y Sociedad!
 
-> [!info]- 👋 Sobre esta materia
+> [!info] 👋 Sobre esta materia
 >
 > ¡Hola y bienvenido/a! Esta materia explora la computación desde una perspectiva humana y social. No se trata solo de código o hardware — se trata de entender el impacto que tiene la tecnología en las personas, las organizaciones y la sociedad, y la responsabilidad ética que eso implica para un profesional de la computación.
 >
@@ -18,9 +22,15 @@
 
 ---
 
+## 📎 Documento oficial (Garden)
+
+![[SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
+
+---
+
 ## 🎯 Objetivos del Curso
 
-> [!note]- 📌 ¿Qué vamos a lograr?
+> [!note] 📌 ¿Qué vamos a lograr?
 >
 > Este curso aborda la historia de la computación, los conceptos básicos de hardware y software, y las implicaciones éticas, sociales y profesionales de la ingeniería en ciencias computacionales. También cubre el impacto de los sistemas de información en individuos y organizaciones, y define conceptos clave como propiedad intelectual y privacidad.
 >
@@ -38,7 +48,7 @@
 
 ## 📋 Evaluación
 
-> [!warning]- 📊 ¿Cómo se evalúa?
+> [!warning] 📊 ¿Cómo se evalúa?
 >
 > El syllabus no especifica el desglose exacto de notas, pero los criterios de aprendizaje desarrollados son:
 >
@@ -51,7 +61,7 @@
 
 ## 🗂️ Contenido del Curso
 
-> [!tip]- 📚 Temas a cubrir
+> [!tip] 📚 Temas a cubrir
 >
 > ```mermaid
 > graph LR
@@ -89,7 +99,7 @@
 
 ## 📚 Bibliografía (Formato IEEE)
 
-> [!quote]- 📖 Fuentes oficiales de la materia
+> [!quote] 📖 Fuentes oficiales de la materia
 >
 > **Texto guía:**
 >
@@ -103,7 +113,7 @@
 
 ## 🗺️ Índice de Notas
 
-> [!tip]- 📂 Estructura del repositorio
+> [!tip] 📂 Estructura del repositorio
 >
 > ```
 > 📁 Computación y Sociedad/

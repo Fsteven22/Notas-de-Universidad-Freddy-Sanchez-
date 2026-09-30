@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟧 Cálculo Vectorial — Bienvenida y Syllabus
 
 ## 🎉 ¡Bienvenido/a a Cálculo Vectorial!
 
-> [!info]- 👋 Sobre esta materia
+> [!info] 👋 Sobre esta materia
 >
 > ¡Hola y bienvenido/a! Cálculo Vectorial extiende el cálculo al mundo multidimensional. Aquí trabajarás con funciones de varias variables, campos vectoriales, integrales múltiples y los grandes teoremas de la teoría vectorial. Es una de las materias más ricas y desafiantes de la formación matemática en ingeniería.
 >
@@ -20,9 +24,15 @@
 
 ---
 
+## 📎 Documento oficial (Garden)
+
+![[SPA-SyllabusEUR_ACE-MATG1046.pdf]]
+
+---
+
 ## 🎯 Objetivos del Curso
 
-> [!note]- 📌 ¿Qué vamos a lograr?
+> [!note] 📌 ¿Qué vamos a lograr?
 >
 > Cálculo Vectorial desarrolla habilidades de planteamiento y resolución de problemas en el contexto n-dimensional, con aplicaciones en optimización de funciones, cálculo de longitudes, áreas, volúmenes, trabajo y flujo.
 >
@@ -40,7 +50,7 @@
 
 ## 📋 Evaluación
 
-> [!warning]- 📊 ¿Cómo se evalúa?
+> [!warning] 📊 ¿Cómo se evalúa?
 >
 > | Actividad | ¿Aplica? |
 > |---|---|
@@ -55,7 +65,7 @@
 
 ## 🗂️ Contenido del Curso
 
-> [!tip]- 📚 Temas a cubrir
+> [!tip] 📚 Temas a cubrir
 >
 > ```mermaid
 > graph LR
@@ -88,7 +98,7 @@
 
 ## 📚 Bibliografía (Formato IEEE)
 
-> [!quote]- 📖 Fuentes oficiales de la materia
+> [!quote] 📖 Fuentes oficiales de la materia
 >
 > **Lectura obligatoria:**
 >
@@ -110,7 +120,7 @@
 
 ## 🗺️ Índice de Notas
 
-> [!tip]- 📂 Estructura del repositorio
+> [!tip] 📂 Estructura del repositorio
 >
 > ```
 > 📁 Cálculo Vectorial/
