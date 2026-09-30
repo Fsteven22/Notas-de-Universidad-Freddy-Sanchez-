@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # ⚡ Conceptos Fundamentales de la Electricidad
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la electricidad?
+> [!info] 💡 ¿Qué es la electricidad?
 > 
 > La **electricidad** es un fenómeno físico originado por el movimiento de cargas eléctricas (electrones) a través de un conductor. Es la base de todos los circuitos y sistemas electrónicos modernos.
 > 
@@ -34,7 +38,7 @@
 
 ## ⚛️ Carga Eléctrica
 
-> [!note]- 🔬 Fundamentos de la Carga
+> [!note] 🔬 Fundamentos de la Carga
 > 
 > La **carga eléctrica** es la propiedad fundamental de la materia que da origen a los fenómenos eléctricos. Existe en dos tipos: positiva (+) y negativa (−).
 > 
@@ -71,7 +75,7 @@
 
 ## 🔬 Partículas Subatómicas — Experimento de Millikan
 
-> [!note]- ⚗️ Masas y cargas de las partículas básicas
+> [!note] ⚗️ Masas y cargas de las partículas básicas
 > 
 > En 1909, **Robert Millikan** midió la carga del electrón mediante el experimento de la gota de aceite, estableciendo el valor de la carga elemental que usamos hoy.
 > 
@@ -92,7 +96,7 @@
 
 ## ⚡ Fuerza Eléctrica — Ley de Coulomb
 
-> [!note]- 🔬 Fuerza entre cargas puntuales
+> [!note] 🔬 Fuerza entre cargas puntuales
 > 
 > La **Ley de Coulomb** describe la fuerza de atracción o repulsión entre dos cargas eléctricas en reposo. La fuerza es directamente proporcional al producto de las cargas e inversamente proporcional al cuadrado de la distancia que las separa.
 > 
@@ -135,7 +139,7 @@
 
 ## 🧭 Campo Eléctrico
 
-> [!tip]- 🧭 Región donde actúan las fuerzas eléctricas
+> [!tip] 🧭 Región donde actúan las fuerzas eléctricas
 > 
 > El **campo eléctrico** $E$ es una región del espacio donde interactúan fuerzas eléctricas. Se define como la fuerza por unidad de carga que experimenta una carga de prueba positiva colocada en ese punto.
 > 
@@ -166,7 +170,7 @@
 
 ## 🔋 Energía Potencial y Potencial Eléctrico
 
-> [!note]- 🔋 Del trabajo al voltaje
+> [!note] 🔋 Del trabajo al voltaje
 > 
 > **Energía potencial eléctrica** es el trabajo realizado contra las fuerzas eléctricas para mover una carga entre dos puntos. Se mide en Joules y es positiva cuando la fuerza es repulsiva.
 > 
@@ -195,7 +199,7 @@
 
 ## 🌊 Corriente Eléctrica
 
-> [!tip]- 🔁 Tipos de Corriente
+> [!tip] 🔁 Tipos de Corriente
 > 
 > La **corriente eléctrica** es el flujo ordenado de cargas eléctricas (electrones) a través de un conductor por unidad de tiempo.
 > 
@@ -234,7 +238,7 @@
 
 ## ⚖️ Electrónica vs Electricidad
 
-> [!info]- 🔍 Dos campos relacionados pero distintos
+> [!info] 🔍 Dos campos relacionados pero distintos
 > 
 > El curso se llama **Fundamentos de Electricidad y Sistemas Digitales** porque abarca ambos campos. Aunque están íntimamente relacionados, tienen enfoques y objetivos distintos.
 > 
@@ -281,9 +285,28 @@ mindmap
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Basico
+> - [ ] Explico que es la carga electrica y su unidad (culombio) y calculo Q = n·e.
+> - [ ] Distingo voltaje, corriente y resistencia con sus unidades (V, A, ohm) y la analogia hidraulica.
+> - [ ] Enuncio la Ley de Coulomb y predigo si la fuerza es atractiva o repulsiva segun el signo.
+>
+> [!note] 🎯 Nivel Intermedio
+> - [ ] Calculo la fuerza entre dos cargas puntuales con F = Ke·|q1·q2|/r2 y el campo E = Ke·Q/r2.
+> - [ ] Diferencio energia potencial U, potencial V y diferencia de potencial deltaV = W/q.
+> - [ ] Explico la direccion de las lineas de campo y que es un campo uniforme entre placas paralelas.
+>
+> [!note] 🎯 Nivel Avanzado
+> - [ ] Resuelvo un problema completo que combine Coulomb, campo y potencial en un sistema de cargas.
+> - [ ] Relaciono I = Q/t con el flujo de electrones y distingo DC vs AC en aplicaciones reales.
+> - [ ] Justifico la diferencia entre electronica y electricidad segun su enfoque y componentes.
+
+---
+
 ## 📚 Referencias
 
-> [!quote]- 📖 Fuentes consultadas
+> [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 1–25. ISBN-13: 9786077074045.
 > 
@@ -294,6 +317,10 @@ mindmap
 > [4] C. K. Alexander y M. N. O. Sadiku, _Fundamentals of Electric Circuits_, 6th ed. New York, USA: McGraw-Hill, 2016, pp. 1–38.
 > 
 > [5] R. L. Boylestad, _Introductory Circuit Analysis_, 13th ed. Hoboken, NJ, USA: Pearson, 2016, pp. 1–55.
+>
+> [!quote] 🔗 Conexiones
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]] — de la carga al generador
+> - Relacionado: [[03 - Elementos Basicos de un Circuito Electrico]] y [[05 - Leyes de Ohm y Kirchhoff]] — aplicas Coulomb y campo en circuitos
 
 ---
 

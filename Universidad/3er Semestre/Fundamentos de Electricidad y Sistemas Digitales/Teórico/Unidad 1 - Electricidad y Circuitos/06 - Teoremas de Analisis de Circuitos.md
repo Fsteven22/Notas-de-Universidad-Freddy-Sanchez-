@@ -609,6 +609,28 @@ mindmap
 > 
 > [5] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 76–130. ISBN-13: 9786077074045.
 
+## Metas de Aprendizaje
+
+> [!note] Nivel Basico
+> - [ ] Enuncio superposicion, Thevenin (Vth+Rth), Norton (IN+RN) y maxima transferencia.
+> - [ ] Explico como apagar una fuente (voltaje->corto, corriente->abierto).
+> - [ ] Aplico divisor de voltaje y de corriente como atajo.
+>
+> [!note] Nivel Intermedio
+> - [ ] Calculo Vth (circuito abierto) y Rth y hallo IL=Vth/(Rth+RL).
+> - [ ] Convierto Thevenin<->Norton con Vth=IN·RN.
+> - [ ] Determino RL para Pmax y calculo Pmax=Vth2/(4Rth).
+>
+> [!note] Nivel Avanzado
+> - [ ] Resuelvo red con 2 fuentes por superposicion sumando respuestas parciales.
+> - [ ] Armo matriz R·I=V y G·V=If por inspeccion.
+> - [ ] Decido teorema optimo segun lo que se pide y topologia.
+>
+> [!quote] 🔗 Conexiones
+> - Previo: [[05 - Leyes de Ohm y Kirchhoff]] — base para Thevenin/Norton y mallas/nodos
+> - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — Thevenin aplicado a fuentes
+> - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]] — donde Thevenin reaparece con OPAMs
+
 ---
 
 **Tags:** #teoremas #superposición #thévenin #norton #transformación #potencia #divisorVoltaje #divisorCorriente #mallas #nodos #matricial #circuitoPlano #circuitos #análisis #EYAG1037 #FESD #ESPOL #unidad1

@@ -391,6 +391,28 @@ mindmap
 >
 > [5] M. A. El-Sharkawi, *Electric Energy: An Introduction*, 3rd ed. Boca Raton, FL, USA: CRC Press, 2012, pp. 1–60.
 
+## Metas de Aprendizaje
+
+> [!note] Nivel Basico
+> - [ ] Enuncio la Ley de Faraday E = -N·dF/dt y explico el rol del flujo magnetico.
+> - [ ] Distingo entre energia primaria y energia electrica con ejemplos (hidro, solar, eolica).
+> - [ ] Diferencio un alternador (AC) de un dinamo (DC) y por que gano AC.
+>
+> [!note] Nivel Intermedio
+> - [ ] Aplico la Ley de Lenz para determinar la direccion de la corriente inducida.
+> - [ ] Describo el proceso generacion -> transmision -> distribucion -> consumo con voltajes tipicos.
+> - [ ] Comparo fuentes hidro, termo, solar, eolica y nuclear en renovabilidad y costo.
+>
+> [!note] Nivel Avanzado
+> - [ ] Analizo el experimento de Orsted y predigo el campo inducido por una corriente.
+> - [ ] Estimo la potencia eolica P = 1/2 rho A v3 y discuto su dependencia cubica.
+> - [ ] Justifico la eleccion de una fuente segun disponibilidad y contexto de Ecuador.
+>
+> [!quote] 🔗 Conexiones
+> - Previo: [[01 - Conceptos Fundamentales de la Electricidad]] — carga y campo base para induccion
+> - Siguiente: [[03 - Elementos Basicos de un Circuito Electrico]] — del generador a los componentes
+> - Relacionado: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas la energia generada
+
 ---
 
 **Tags:** #generacion #electricidad #orsted #faraday #lenz #induccion #hidroelectrica #solar #eolica #termoelectrica #nuclear #EYAG1037 #FESD #ESPOL #unidad1

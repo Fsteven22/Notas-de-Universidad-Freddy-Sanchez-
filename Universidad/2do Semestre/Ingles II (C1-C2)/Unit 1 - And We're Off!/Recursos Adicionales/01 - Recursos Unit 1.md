@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # Recursos Unit 1 — And We're Off!
 
 ## 🎯 Sobre esta nota
 
-> [!info]- 💡 ¿Qué contiene esta carpeta?
+> [!info] 💡 ¿Qué contiene esta carpeta?
 >
 > Aquí se concentran todos los recursos complementarios de la Unidad 1 proporcionados por el Aula Virtual de ESPOL. Se organizan en cuatro categorías:
 >
@@ -17,7 +21,7 @@
 
 ## 📘 Gramática
 
-> [!note]- 📘 Recursos sobre Present Tenses y verbos
+> [!note] 📘 Recursos sobre Present Tenses y verbos
 >
 > Estos recursos complementan directamente la **nota 02 — Grammar & Examples**.
 >
@@ -31,11 +35,17 @@
 > | [[Habits and States in the Present and Past.pdf]] | Archivo | Presentación del profesor — hábitos y estados en presente y pasado |
 > | [[SUMMARY OF TENSES- form-use-signal words-1.pdf]] | Archivo | Resumen completo de tiempos verbales con forma, uso y signal words |
 
+## 📎 Gramática publicada (Garden)
+
+![[Habits and States in the Present and Past.pdf]]
+
+![[SUMMARY OF TENSES- form-use-signal words-1.pdf]]
+
 ---
 
 ## 🎧 Listening
 
-> [!note]- 🎧 Links de práctica de listening
+> [!note] 🎧 Links de práctica de listening
 >
 > Recursos externos para practicar comprensión auditiva. Útiles como preparación para exámenes o práctica libre.
 >
@@ -50,7 +60,7 @@
 
 ## 📖 Reading
 
-> [!note]- 📖 Links de práctica de reading
+> [!note] 📖 Links de práctica de reading
 >
 > Recursos externos para practicar comprensión lectora. Complementan la sección de Reading de la nota 04.
 >
@@ -64,7 +74,7 @@
 
 ## ✍️ Academic Post
 
-> [!tip]- ✍️ Archivos de la tarea evaluada
+> [!tip] ✍️ Archivos de la tarea evaluada
 >
 > Estos archivos corresponden a la tarea de escritura formal de la unidad. Ver también la nota **05 - Academic Post** para la estructura completa y criterios de evaluación.
 >
@@ -72,6 +82,12 @@
 > |---|---|
 > | [[Academic Post KYdA.pdf]] | Instrucciones y requisitos de la tarea |
 > | [[Feedback code.png]] | Código de corrección usado por el profesor para el feedback escrito |
+
+## 📎 Academic Post publicado (Garden)
+
+![[Academic Post KYdA.pdf]]
+
+> [!warning] ⚠️ `Feedback code.png` no existe en la carpeta (link roto original): súbelo para publicarlo.
 
 ---
 
