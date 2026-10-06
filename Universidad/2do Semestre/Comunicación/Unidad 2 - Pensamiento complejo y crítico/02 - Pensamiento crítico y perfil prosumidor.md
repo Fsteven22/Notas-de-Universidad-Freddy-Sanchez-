@@ -60,7 +60,6 @@ graph TB
 >     E --> F[Fuente confiable?]
 >     F --> G[¿Sesgo?]
 >     G --> R[Juicio: usar / descartar / matizar]
->
 >     style R fill:#e1f5ff
 > ```
 >
@@ -95,7 +94,6 @@ graph TB
 >     S -->|cita APA| P[Produce informe]
 >     P -->|comparte| E[Comunidad aprende]
 >     E -->|retroalimenta| C
->
 >     style P fill:#e1ffe1
 > ```
 >
@@ -137,9 +135,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Citar sin Leer (solo abstract)
+> [!danger] ❌ Error: Citar sin Leer, solo abstract (viola **evidencia verificada**)
 >
 > **Síntomas:** citas que no sostienen tu tesis en la defensa oral.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "Según García (2020), la escucha activa mejora equipos." (leíste solo el abstract; en defensa te preguntan el método y no sabes si fue encuesta, experimento o ensayo).
+> - ✅ Así sí: lees introducción + método + conclusión (15 min) y anotas "García 2020, encuesta n=120, sirve para X, límite Y".
 >
 > **Solución:**
 >

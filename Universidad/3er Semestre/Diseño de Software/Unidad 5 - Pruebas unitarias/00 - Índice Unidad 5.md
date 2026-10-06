@@ -12,6 +12,7 @@ tags: [CCPG1042, unidad5, indice, diseno-software]
 
 - [[01 - Pruebas unitarias con JUnit 5]]
 - [[02 - Control de versiones con Git]]
+- [[03 - Entrega continua y DevOps]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Diseño de Software]]

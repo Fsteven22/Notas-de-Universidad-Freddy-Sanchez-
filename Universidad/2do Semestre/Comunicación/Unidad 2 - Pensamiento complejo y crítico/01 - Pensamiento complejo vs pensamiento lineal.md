@@ -63,7 +63,6 @@ graph TB
 >     E --> S[Sistema]
 >     S --> EM[Emergencia]
 >     EM --> R[Retroalimenta a partes]
->
 >     style S fill:#e1f5ff
 >     style EM fill:#e1ffe1
 > ```
@@ -109,9 +108,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Reduccionismo ("es solo redacción")
+> [!danger] ❌ Error: Reduccionismo, "es solo redacción" (viola **mirada sistémica**)
 >
 > **Síntomas:** corriges tildes y el texto sigue sin tesis ni datos.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "Ya revisé el informe: le faltan 3 tildes y un conector." (el informe no tiene fuentes, ni audiencia definida, ni conclusión — pero se "arregló" la ortografía).
+> - ✅ Así sí: "Antes de tildes: ¿qué fuentes usaron? ¿para quién escriben? ¿qué concluye?" — 2 causas raíz, no 10 síntomas.
 >
 > **Solución:**
 >

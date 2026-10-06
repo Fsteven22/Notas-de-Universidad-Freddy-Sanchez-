@@ -63,7 +63,6 @@ graph TB
 >     A2 --> S
 >     A3 --> S
 >     S --> C[Conclusión derivada<br/>+ acción]
->
 >     style T fill:#e1f5ff
 >     style C fill:#e1ffe1
 > ```
@@ -113,9 +112,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Falacia del Ataque Personal
+> [!danger] ❌ Error: Falacia del Ataque Personal (viola **atacar ideas, no personas**)
 >
 > **Síntomas:** "El otro grupo opina eso porque son vagos" — atacas persona, no idea; el jurado penaliza.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "Su propuesta no sirve porque ellos siempre entregan tarde y no saben del tema." (cero datos sobre la propuesta).
+> - ✅ Así sí: "Su propuesta usa datos de 2015; la cifra actual del INEC dice X, por eso propongo Y."
 >
 > **Solución:**
 >

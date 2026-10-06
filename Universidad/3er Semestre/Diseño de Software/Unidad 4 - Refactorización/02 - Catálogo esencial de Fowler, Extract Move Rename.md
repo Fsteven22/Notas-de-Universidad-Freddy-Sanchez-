@@ -1,6 +1,6 @@
 ---
 dg-publish: true
-tags: [CCPG1042, unidad4, catalogo, extract, move]
+tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 ---
 
 # 🛠️ Catálogo Esencial de Fowler: Extract, Move, Rename
@@ -11,12 +11,16 @@ tags: [CCPG1042, unidad4, catalogo, extract, move]
 >
 > Cada técnica del catálogo es una **receta con pasos mecánicos y seguros**: sabes exactamente qué mover, en qué orden y cómo verificar. Improvisar refactors es como operar sin protocolo: a veces sale, a veces mata al paciente.
 >
-> **Analogía del mundo real:** Piensa en mudanza profesional:
+> **Importancia histórica:** Fowler sistematizó en 1999 lo que los buenos programadores hacían por instinto — y la 2da edición (2019, con Beck) lo actualizó a JavaScript/Java moderno. El catálogo completo trae 60+ técnicas; aquí van las 8 que cubren el 90% de tu trabajo real.
 >
-> - **Sin catálogo** → Cargas todo revuelto, se rompe lo frágil, no sabes qué caja abrir primero
-> - **Con catálogo** → Etiquetas por cuarto (Extract), muebles al camión correcto (Move), cajas renombradas (Rename)
-> - **Orden** → Primero divides, luego mueves, al final nombras: cada paso verificable
-> - **Tests** → El inventario que confirma que nada se perdió en el traslado
+> **Relevancia actual:** tu IDE ya automatiza varias (Extract Method, Rename, Move) — saber la mecánica te dice *cuándo* invocarlas y en qué orden.
+>
+> **Analogía del mundo real:** piensa en mudanza profesional:
+>
+> - **Sin catálogo** → Cargas todo revuelto, se rompe lo frágil, no sabes qué caja abrir primero.
+> - **Con catálogo** → Etiquetas por cuarto (Extract), muebles al camión correcto (Move), cajas renombradas (Rename).
+> - **Orden** → Primero divides, luego mueves, al final nombras: cada paso verificable.
+> - **Tests** → El inventario que confirma que nada se perdió en el traslado.
 >
 > | Técnica | Qué hace | Smell que cura |
 > |---|---|---|
@@ -44,18 +48,18 @@ graph TB
 
 ---
 
-## 🧵 Extract: Divide y Nombra (las Más Usadas)
+## 🧵 Extract: Divide y Nombra (Fowler caps. 6-8)
 
-### 🎭 Extract Function, el 80% del Trabajo
+### 🎭 La Técnica del 80%
 
-> [!note] 🎨 Mecánica en 4 Pasos
+> [!note] 📋 Definición — Mecánica en 4 Pasos
 >
 > La técnica que más aplicarás en tu vida, paso a paso según Fowler:
 >
-> 1. Encuentra el fragmento con UNA misión dentro del método largo y crea la función con un nombre que diga qué hace (no cómo)
-> 2. Mueve el fragmento; las variables que solo usa adentro quedan locales
-> 3. Lo que el fragmento necesita de afuera entra por parámetros; lo que produce sale por retorno (si hay 2+ salidas, algo anda mal: revisa Split Phase)
-> 4. Compila, corre tests, commit
+> 1. Encuentra el fragmento con UNA misión dentro del método largo y crea la función con un nombre que diga qué hace (no cómo).
+> 2. Mueve el fragmento; las variables que solo usa adentro quedan locales.
+> 3. Lo que el fragmento necesita de afuera entra por parámetros; lo que produce sale por retorno (si hay 2+ salidas, algo anda mal: revisa Split Phase).
+> 4. Compila, corre tests, commit.
 >
 > ```java
 > // ❌ ANTES: dos misiones mezcladas (imprimir + calcular)
@@ -87,13 +91,13 @@ graph TB
 
 ---
 
-## 🧵 Move e Inline: Cada Cosa en su Lugar
+## 🧵 Move e Inline: Cada Cosa en su Lugar (Fowler caps. 8, 12)
 
-### 🎭 Move Function contra la Envidia
+### 🎭 Contra la Envidia y la Pereza
 
-> [!example] 🧪 Lleva el Método a los Datos que Más Usa
+> [!example] 🧪 Move Function + Inline Class
 >
-> Si un método de `Factura` usa 4 campos de `Cliente` y 1 propio, vive en la casa equivocada. La mecánica de Fowler: copia el método a `Cliente`, ajusta referencias, deja el original delegando una temporada y luego elimínalo.
+> Si un método de `Factura` usa 4 campos de `Cliente` y 1 propio, vive en la casa equivocada. Mecánica: copia el método a `Cliente`, ajusta referencias, deja el original delegando una temporada y luego elimínalo.
 >
 > ```java
 > // ❌ ANTES: envidia (usa casi todo de Cliente)
@@ -114,21 +118,19 @@ graph TB
 > }
 > ```
 >
-> **Move Field** es gemelo: el dato se muda con (o antes que) los métodos que lo usan.
->
-> **Inline** es el camino inverso: si una clase o método quedó tan pequeño que solo estorba, fusiona su contenido donde se usa y elimínalo. Úsalo contra clases perezosas y delegaciones de un solo salto.
+> **Move Field** es gemelo: el dato se muda con (o antes que) los métodos que lo usan. **Inline** es el camino inverso: si una clase o método quedó tan pequeño que solo estorba, fusiona su contenido donde se usa y elimínalo (cura clases perezosas y delegaciones de un solo salto).
 
 ---
 
-## 🧵 Rename y Split: Claridad Estructural
+## 🧵 Rename y Split: Claridad Estructural (Fowler caps. 6, 10-11)
 
-### 🎭 Nombres y Fases Separadas
+### 🎭 Lo Barato que Más Rinde
 
-> [!success] 🏆 Lo Barato que Más Rinde
+> [!success] 🏆 Nombres, Fases y Temporales
 >
 > **Rename Variable/Function** es la técnica de mejor retorno por minuto: un nombre preciso elimina comentarios y malentendidos. Renombra en cuanto entiendas mejor el código que cuando lo escribiste, y deja que el IDE actualice referencias.
 >
-> **Split Phase** ataca funciones que mezclan etapas (p. ej. calcular + formatear + imprimir): divide en funciones por etapa y conecta con una estructura intermedia. **Split Loop** es su primo para bucles que hacen 2 tareas: dos bucles claros valen más que uno "eficiente" ilegible.
+> **Split Phase** ataca funciones que mezclan etapas (calcular + formatear + imprimir): divide en funciones por etapa y conecta con una estructura intermedia. **Split Loop** es su primo para bucles que hacen 2 tareas: dos bucles claros valen más que uno "eficiente" ilegible.
 >
 > | Técnica | Señal para usarla | Resultado |
 > |---|---|---|
@@ -139,17 +141,52 @@ graph TB
 
 ---
 
+## 🗺️ Diagrama de Decisión: ¿Qué Técnica Aplico?
+
+```mermaid
+flowchart TD
+    A["Smell detectado"] --> B{"¿Qué tipo?"}
+    B -->|"Grande/mezclado"| C["Extract<br/>(function/variable/class)"]
+    B -->|"Mal ubicado"| D["Move<br/>(function/field)"]
+    B -->|"Confuso"| E["Rename"]
+    B -->|"Inútil/pequeño"| F["Inline"]
+    B -->|"Etapas mezcladas"| G["Split<br/>(phase/loop)"]
+```
+
+> [!tip] 💡 Lectura del diagrama
+>
+> En duda entre Extract y Move: primero mueve lo ajeno a su dueño (Move), que lo que queda suele extraerse solo.
+
+---
+
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Extraer sin Tests y Romper Comportamiento
+> [!danger] ❌ Error 1: Extraer sin Tests y Romper Comportamiento (viola **verificar cada paso**)
 >
-> **Síntomas:** "solo moví código" pero 3 tests fallan y no sabes en qué paso.
+> **Síntomas:** "solo moví código" pero 3 tests fallan y no sabes en qué paso:
+>
+> ```java
+> // ❌ EL ERROR ESTÁ AQUÍ: extrajo sin red — ¿qué paso rompió qué?
+> void procesar(Pedido p) { /* 40 líneas movidas de golpe, 0 tests verdes antes */ }
+> ```
 >
 > **Solución:**
 >
-> - Antes: tests verdes que cubran el método a tocar (aunque los escribas tú mismo, 5 min)
-> - Durante: 1 técnica por commit; si algo falla, revierte UN commit, no toda la tarde
-> - Después: el diff debe mostrar movimiento, no lógica nueva (si hay lógica nueva, ibas con el otro sombrero)
+> - Antes: tests verdes que cubran el método a tocar (aunque los escribas tú mismo, 5 min).
+> - Durante: 1 técnica por commit; si algo falla, revierte UN commit, no toda la tarde.
+> - Después: el diff debe mostrar movimiento, no lógica nueva (si hay lógica nueva, ibas con el otro sombrero).
+
+> [!danger] ❌ Error 2: Extraer Demasiado Pronto (viola **regla de tres**)
+>
+> **Síntomas:** abstracciones para código usado una vez; cada lectura exige saltar entre 5 funciones.
+>
+> **Solución:** primero duplica sin culpa; extrae cuando veas la 2da-3ra repetición real.
+
+> [!danger] ❌ Error 3: Renombrar sin el IDE (viola **herramienta adecuada**)
+>
+> **Síntomas:** buscar/reemplazar manual que deja 3 referencias viejas y rompe la compilación.
+>
+> **Solución:** Rename del IDE (actualiza todo + tests); el rename manual está prohibido salvo en seudocódigo.
 
 ---
 
@@ -159,15 +196,112 @@ graph TB
 >
 > **1. Orden canónico: Split → Extract → Move → Rename**
 >
-> - Separa etapas, extrae piezas, ubícalas bien y nómbralas al final (cuando ya entiendes qué son)
+> Separa etapas, extrae piezas, ubícalas bien y nómbralas al final (cuando ya entiendes qué son).
 >
 > **2. El catálogo vive en tu IDE**
 >
-> - Aprende los atajos de Extract Method y Rename de tu entorno: convierten minutos en segundos
+> Aprende los atajos de Extract Method y Rename de tu entorno: convierten minutos en segundos.
 >
 > **3. Cada técnica cierra con tests + commit**
 >
-> - Sin excepciones: es lo que separa refactor de "toqué cosas"
+> Sin excepciones: es lo que separa refactor de "toqué cosas".
+>
+> **4. Una técnica por commit**
+>
+> Si el diff mezcla 2 técnicas, pártelo; revertir medio commit no existe.
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Nivel 1 — Básico
+>
+> **1.** Define Extract Function con sus 4 pasos mecánicos.
+>
+> **2.** ¿Qué diferencia a Move Function de Extract Function? ¿Cuándo usas cada una?
+>
+> **3.** ¿Por qué Rename es la técnica de mejor retorno por minuto?
+>
+> **4.** ¿Qué cura Inline Class y cuándo NO debes usarlo?
+>
+> **5.** Explica Split Phase con un ejemplo de función que mezcle cálculo y salida.
+>
+> > [!success]- ✅ Respuestas — Nivel 1
+> >
+> > - **1.** Encuentra fragmento con 1 misión → crea función con buen nombre → pasa parámetros/retorno → compila, tests, commit.
+> > - **2.** Extract divide lo grande en su lugar; Move lleva código a su clase dueña (envidia). Extract primero en casa, Move entre casas.
+> > - **3.** Porque un buen nombre elimina comentarios y malentendidos en segundos, con el IDE actualizando todo.
+> > - **4.** Clases/métodos tan pequeños que estorban; NO usarlo si la indirección protege un cambio futuro real.
+> > - **5.** Ej.: `generarYEnviar()` → `generar()` + `enviar()` conectadas por el reporte intermedio.
+
+> [!example] 📋 Nivel 2 — Intermedio
+>
+> **6.** Aplica Extract Function a un método de 30 líneas que valida, calcula y guarda (muestra antes/después).
+>
+> **7.** Un método usa 5 campos ajenos y 1 propio. Aplica Move Function paso a paso (copia, ajusta, delega, elimina).
+>
+> **8.** ¿Cómo decides entre Extract Class e Inline Class? Da un caso de cada uno en el mismo sistema.
+>
+> **9.** Convierte `double x = a*0.15+3;` en código legible con Extract Variable + Rename. Muestra el resultado.
+>
+> **10.** Explica Replace Temp with Query con un caso donde el temporal esconde un cálculo repetido.
+>
+> > [!success]- ✅ Respuestas — Nivel 2
+> >
+> > - **6.** Respuesta libre guiada: 3 funciones (validar, calcular, guardar) + main orquestador de 3 líneas.
+> > - **7.** Copia a la dueña → ajusta referencias → original delega → tests verdes → elimina original.
+> > - **8.** Extract: clase con 2 misiones claras. Inline: clase que solo reenvía a otra sin agregar nada.
+> > - **9.** `double descuento = a * 0.15; double total = descuento + 3;` con nombres que explican cada parte.
+> > - **10.** Si el temporal se calcula igual en 3 lugares, el método `calcularX()` elimina triplicación y centraliza la fórmula.
+
+> [!example] 📋 Nivel 3 — Avanzado
+>
+> **11.** Argumenta el orden canónico Split → Extract → Move → Rename: ¿por qué ese orden y no otro?
+>
+> **12.** Diseña cuándo usar Substitute Algorithm vs refactorizar por dentro (criterios + ejemplo).
+>
+> **13.** Un diff mezcla Extract + lógica nueva y rompe tests. Reconstruye el historial correcto en pasos.
+>
+> **14.** ¿Cómo se relaciona "1 técnica por commit" con la falsabilidad de Martin (cap. 4)? Argumenta.
+>
+> **15.** Planifica la refactorización de un God Class real de tu proyecto: secuencia de técnicas con verificación entre pasos.
+>
+> > [!success]- ✅ Respuestas — Nivel 3
+> >
+> > - **11.** Split separa preocupaciones primero (si no, extraes mezcla); Extract crea piezas; Move las ubica; Rename al final cuando ya entiendes qué son.
+> > - **12.** Substitute cuando existe forma canónica y probada; refactor interno cuando el algoritmo es del dominio y debe evolucionar.
+> > - **13.** Revierte todo; rehaz solo el Extract con tests verdes; luego la lógica nueva en commit separado con sus tests.
+> > - **14.** Cada commit chico con tests es falsable (puede probarse incorrecto); el commit gigante no, como programa no demostrable.
+> > - **15.** Respuesta libre guiada: smells → orden (envidia, extracción, renombre) → verificación por paso.
+
+---
+
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - **Extract** divide, **Move** ubica, **Rename** aclara, **Inline/Split** simplifican.
+> - Orden canónico + 1 técnica por commit + tests verdes siempre.
+> - El catálogo vive en tu IDE: aprende sus atajos.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+> - [ ] Describo las 8 técnicas con su smell correspondiente.
+> - [ ] Aplico Extract Function con los 4 pasos sin mirar.
+> - [ ] Explico por qué cada técnica cierra con tests + commit.
+
+> [!note] 🎯 Nivel Intermedio
+> - [ ] Ejecuto Move Function completo (copia, ajusta, delega, elimina).
+> - [ ] Decido Extract vs Inline y Split vs directo con criterio.
+> - [ ] Uso Rename del IDE en vez de buscar/reemplazar.
+
+> [!note] 🎯 Nivel Avanzado
+> - [ ] Planifico secuencias multi-técnica con verificación entre pasos.
+> - [ ] Reconstruyo historiales mezclados en commits atómicos.
+> - [ ] Conecto el catálogo con falsabilidad y YAGNI.
 
 ---
 
@@ -196,7 +330,8 @@ mindmap
 > | Aspecto | Improvisar | Catálogo Fowler |
 > |---|---|---|
 > | **Seguridad** | ❌ Suerte | ✅ Pasos + tests |
-> | **Reversión** | Toda la tarde | 1 commit |
+> | **Reversión** | 1 commit | ✅ Atómico |
+> | **Decisión** | Adivinada | Con diagrama propio |
 > | **Uso Recomendado** | Nunca en equipo | ✅ **Siempre mecánico** |
 
 ---
@@ -207,9 +342,9 @@ mindmap
 >
 > **Has aprendido:**
 >
-> ✅ Extract Function/Variable/Class con mecánica y Java
-> ✅ Move Function/Field e Inline con ejemplo de envidia
-> ✅ Rename, Split y orden canónico de trabajo
+> ✅ Extract/Move/Rename/Split con mecánica y Java
+> ✅ Orden canónico + diagrama de decisión propio
+> ✅ 3 errores numerados + falsabilidad
 >
 > **Próximo tema Unidad 5:**
 >
@@ -233,6 +368,7 @@ mindmap
 > [!quote] 📖 Fuentes
 >
 > - M. Fowler, K. Beck, *Refactoring*, 2nd ed., caps. 6-12 (catálogo: Extract, Move, Rename, Split).
+> - R. C. Martin, *Clean Architecture*, cap. 4 (falsabilidad y tests).
 > - Sílabo CCPG1042, Unidad 4: refactorización (5h).
 
 ---

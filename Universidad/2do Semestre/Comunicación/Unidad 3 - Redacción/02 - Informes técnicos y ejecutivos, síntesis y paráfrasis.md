@@ -111,9 +111,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Pegar Párrafos sin Sintetizar
+> [!danger] ❌ Error: Pegar Párrafos sin Sintetizar (viola **síntesis previa**)
 >
 > **Síntomas:** informe de 6 páginas que dice lo mismo 3 veces, sin tabla comparativa.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** tres párrafos que repiten "la escucha mejora equipos" con distintas palabras, cero tabla, cero cita cruzada.
+> - ✅ Así sí: 1 tabla (fuente | tesis | evidencia | límite) y luego 1 párrafo que integra: "Las 3 fuentes coinciden en X, difieren en Y; por tanto Z (Sánchez 2014; Morin 2005; UNESCO 2021)."
 >
 > **Solución:**
 >

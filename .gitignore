@@ -3,3 +3,5 @@
 
 # Configuraciones, temas y plugins locales de Obsidian
 .obsidian/
+# Derivados OCR pesados (regenerables, van al Garden desde el vault)
+*_OCR.pdf

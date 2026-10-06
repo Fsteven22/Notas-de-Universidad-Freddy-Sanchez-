@@ -16,6 +16,8 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 - [[01 - Naturaleza del software y el diseño]]
 - [[02 - Principios de diseño, cohesión y acoplamiento]]
+- [[03 - Paradigmas de programación y diseño]]
+- [[04 - Principios SOLID]]
 
 ---
 
@@ -47,6 +49,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 - [[01 - Pruebas unitarias con JUnit 5]]
 - [[02 - Control de versiones con Git]]
+- [[03 - Entrega continua y DevOps]]
 
 ---
 

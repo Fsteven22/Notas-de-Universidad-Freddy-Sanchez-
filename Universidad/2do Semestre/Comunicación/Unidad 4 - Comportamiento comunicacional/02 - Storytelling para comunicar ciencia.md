@@ -75,9 +75,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Drama sin Dato (o Dato sin Drama)
+> [!danger] ❌ Error: Drama sin Dato, o Dato sin Drama (viola **emoción + evidencia**)
 >
 > **Síntomas:** lloran con tu historia pero el jurado pregunta "¿y la evidencia?"; o recitas tablas y todos miran el celular.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** 7 minutos de anécdota del equipo sin una sola cifra, o 20 diapositivas de tablas leídas en voz plana.
+> - ✅ Así sí: 1 historia de apertura + 1 dato que duele por bloque + cierre con acción ("con acta, 30% menos retrabajo en 2 talleres").
 >
 > **Solución:**
 >

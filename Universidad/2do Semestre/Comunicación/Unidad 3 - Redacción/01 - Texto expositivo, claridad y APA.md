@@ -62,7 +62,6 @@ graph TB
 >     P --> C[Concordancia]
 >     C --> H[Cohesión]
 >     H --> T[Texto claro]
->
 >     style T fill:#e1ffe1
 > ```
 >
@@ -111,9 +110,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Hecho y Opinión Mezclados
+> [!danger] ❌ Error: Hecho y Opinión Mezclados (viola **objetividad expositiva**)
 >
 > **Síntomas:** "El informe es bueno porque los datos son 2024" — mezcla juicio con dato.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "El taller fue excelente y participaron 30 estudiantes, por lo que el método es el mejor." (juicios + dato sin fuente ni criterio).
+> - ✅ Así sí: "Participaron 30 estudiantes (lista de asistencia, Anexo 1). Con ese dato, *recomiendo* repetir el formato porque la asistencia subió 40% vs el taller anterior."
 >
 > **Solución:**
 >

@@ -63,11 +63,9 @@ graph TB
 >     E --> G[Deliberación<br/>grupal]
 >     G --> R[Decisión]
 >     G --> A[Conflicto gestionado]
->
 >     W1[Facilitador] -.Ordena turnos.-> G
 >     W2[Secretario] -.Registra acuerdos.-> G
 >     W3[Tiempo] -.Limita debate.-> G
->
 >     style G fill:#e1f5ff
 >     style W1 fill:#fff4e1
 >     style W2 fill:#fff4e1
@@ -124,11 +122,9 @@ graph TB
 >     ID[Identidad<br/>Quién soy]
 >     IM[Imagen<br/>Qué muestro]
 >     RE[Reputación<br/>Qué recuerdan]
->
 >     ID -->|comunico| IM
 >     IM -->|repito coherente| RE
 >     RE -->|valida| ID
->
 >     style ID fill:#e1f5ff
 >     style IM fill:#fff4e1
 >     style RE fill:#e1ffe1
@@ -173,13 +169,18 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Un Líder Domina y Otros Se Apagan
+> [!danger] ❌ Error: Un Líder Domina y Otros Se Apagan (viola **participación equilibrada**)
 >
 > **Síntomas:**
 >
 > - Solo 1-2 hablan, resto en celular
 > - Decisiones sin acta se olvidan
 > - Taller 1 queda a medio hacer
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "Bueno equipo, yo ya decidí: hacemos la opción A. ¿Alguien en contra?... Nadie. Listo, sigamos." (monopolio + silencio confundido con acuerdo).
+> - ✅ Así sí: "Ana, tu diagnóstico en 1 min; luego Luis. Votamos con la matriz y el secretario anota."
 >
 > **Solución con roles rotativos:**
 >

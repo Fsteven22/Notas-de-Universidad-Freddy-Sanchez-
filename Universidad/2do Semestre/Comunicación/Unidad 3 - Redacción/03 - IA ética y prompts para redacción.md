@@ -95,9 +95,14 @@ graph TB
 
 ## ⚠️ Problemas Comunes y Soluciones
 
-> [!danger] ❌ Error: Citas APA Inventadas por la IA
+> [!danger] ❌ Error: Citas APA Inventadas por la IA (viola **verificación de fuentes**)
 >
 > **Síntomas:** referencias con DOI falso o páginas que no existen.
+>
+> **Ejemplo completo:**
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** bibliografía entregada con "Pérez, J. (2022). *Escucha y cerebro*. Revista NeuroCom, 4(2), 12-20. https://doi.org/10.xxxx/falso" — el DOI no resuelve y la revista no existe.
+> - ✅ Así sí: pedir a la IA solo estructura y armar cada referencia desde el PDF real abierto, cruzando 1 búsqueda académica.
 >
 > **Solución:**
 >

@@ -18,4 +18,15 @@ tags: [IDIG2012, unidad0, recursos]
 
 ---
 
+## 👂 Escucha Activa (clase S1-S2)
+
+> [!note] 📝 Material de clase
+> PDFs con OCR aplicado (texto buscable). Se publican embebidos.
+
+![[Escucha Activa Parte 1_OCR.pdf]]
+
+![[Escucha Activa Parte 2_OCR.pdf]]
+
+---
+
 **Tags:** #IDIG2012 #unidad0 #recursos
