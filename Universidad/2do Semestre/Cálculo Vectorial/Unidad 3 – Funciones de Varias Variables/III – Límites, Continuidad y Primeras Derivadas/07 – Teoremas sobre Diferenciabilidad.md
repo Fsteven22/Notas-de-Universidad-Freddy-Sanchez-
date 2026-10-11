@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📘 Teoremas sobre Diferenciabilidad
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por qué son importantes los Teoremas sobre Diferenciabilidad?
+> [!info] 💡 ¿Por qué son importantes los Teoremas sobre Diferenciabilidad?
 > 
 > Hasta ahora hemos visto cómo calcular derivadas parciales y la matriz Jacobiana. Pero surge una pregunta fundamental: **¿cuándo podemos estar seguros de que una función es diferenciable y que todas nuestras fórmulas funcionan correctamente?**
 > 
@@ -45,7 +49,7 @@
 
 ### 🔑 Teorema Principal (C¹ ⇒ Diferenciable)
 
-> [!example]- 🟢 Teorema: Diferenciabilidad de Funciones C¹
+> [!example] 🟢 Teorema: Diferenciabilidad de Funciones C¹
 > 
 > **Enunciado:** Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ donde $U$ es abierto. Si todas las derivadas parciales de $f$ existen y son **continuas** en $U$, entonces $f$ es **diferenciable** en $U$.
 > 
@@ -80,7 +84,7 @@
 
 ### 🎯 Versión para Funciones Vectoriales
 
-> [!example]- 🟡 Extensión a $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
+> [!example] 🟡 Extensión a $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$
 > 
 > **Teorema:** Sea $\vec{F}: U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ donde $U$ es abierto.
 > 
@@ -115,7 +119,7 @@
 
 ### 📊 Ejemplos y Contraejemplos
 
-> [!example]- 📝 Ejemplo 1: Función C¹
+> [!example] 📝 Ejemplo 1: Función C¹
 > 
 > **Función:** $$f(x,y) = e^{x^2+y^2}$$
 > 
@@ -134,8 +138,8 @@
 > - Podemos usar $D_{\vec{u}}f = \nabla f \cdot \vec{u}$ con confianza
 > - El plano tangente existe en todo punto
 > - La regla de la cadena funciona
-
-> [!example]- 📝 Contraejemplo 1: Derivadas Existen pero NO es Diferenciable
+>
+> [!example] 📝 Contraejemplo 1: Derivadas Existen pero NO es Diferenciable
 > 
 > **Función:**
 > 
@@ -188,8 +192,8 @@
 > - Función diferenciable: ❌
 > 
 > **Moraleja:** Existencia de derivadas parciales NO implica diferenciabilidad.
-
-> [!example]- 📝 Contraejemplo 2: Función NO C¹
+>
+> [!example] 📝 Contraejemplo 2: Función NO C¹
 > 
 > **Función:**
 > 
@@ -214,7 +218,7 @@
 
 ### 🔑 Enunciado del Teorema
 
-> [!example]- 🟢 Teorema de la Función Inversa
+> [!example] 🟢 Teorema de la Función Inversa
 > 
 > **Contexto:** Sea $\vec{F}: U \subseteq \mathbb{R}^n \to \mathbb{R}^n$ donde $U$ es abierto, y sea $\vec{a} \in U$.
 > 
@@ -266,7 +270,7 @@
 
 ### 🎯 Casos Especiales y Ejemplos
 
-> [!example]- 📝 Ejemplo 1: Coordenadas Polares
+> [!example] 📝 Ejemplo 1: Coordenadas Polares
 > 
 > **Transformación:**
 > 
@@ -305,8 +309,8 @@
 > - El teorema **no aplica** en el origen
 > - De hecho, múltiples valores de $\theta$ dan el mismo punto $(0,0)$
 > - No hay inversa única en el origen
-
-> [!example]- 📝 Ejemplo 2: Función Compleja
+>
+> [!example] 📝 Ejemplo 2: Función Compleja
 > 
 > **Función:** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$ (corresponde a $f(z) = z^2$ en el plano complejo)
 > 
@@ -334,8 +338,8 @@
 > $$J_{\vec{G}}(1,0) = \begin{bmatrix} 1/2 & 0 \ 0 & 1/2 \end{bmatrix}$$
 > 
 > **Interpretación:** Localmente cerca de $(1,0)$, la inversa es aproximadamente $(x,y) \mapsto (x/2, y/2)$ más términos de orden superior.
-
-> [!example]- 📝 Ejemplo 3: Transformación NO Invertible
+>
+> [!example] 📝 Ejemplo 3: Transformación NO Invertible
 > 
 > **Función:**
 > 
@@ -366,7 +370,7 @@
 
 ### 🔧 Aplicaciones del Teorema
 
-> [!note]- 🎯 Aplicaciones Prácticas
+> [!note] 🎯 Aplicaciones Prácticas
 > 
 > ### 1. Cambios de Coordenadas Válidos
 > 
@@ -418,7 +422,7 @@
 
 ### 🔑 Enunciado del Teorema
 
-> [!example]- 🟢 Teorema de la Función Implícita
+> [!example] 🟢 Teorema de la Función Implícita
 > 
 > **Contexto:** Sea $F: U \subseteq \mathbb{R}^{n+m} \to \mathbb{R}^m$ donde $U$ es abierto.
 > 
@@ -470,7 +474,7 @@
 
 ### 🎯 Caso Simple: Una Ecuación, Dos Variables
 
-> [!example]- 📝 Versión 2D (Más Común)
+> [!example] 📝 Versión 2D (Más Común)
 > 
 > **Contexto:** $F(x, y) = 0$ (una ecuación escalar)
 > 
@@ -501,7 +505,7 @@
 
 ### 📊 Ejemplos Detallados
 
-> [!example]- 📝 Ejemplo 1: Círculo
+> [!example] 📝 Ejemplo 1: Círculo
 > 
 > **Ecuación:** $$F(x,y) = x^2 + y^2 - 1 = 0$$
 > 
@@ -571,8 +575,8 @@
 > - $F_x(1,0) = 2 \neq 0$ ✅
 > - ¡Podemos despejar $x$ como función de $y$!
 > - $x = \sqrt{1-y^2}$ cerca de $y=0$
-
-> [!example]- 📝 Ejemplo 2: Superficie en 3D
+>
+> [!example] 📝 Ejemplo 2: Superficie en 3D
 > 
 > **Ecuación:** $$F(x,y,z) = x^2 + y^2 + z^2 - z = 0$$
 > 
@@ -624,8 +628,8 @@
 > $$g_x(0,0) = -\frac{0}{1} = 0, \quad g_y(0,0) = -\frac{0}{1} = 0$$
 > 
 > El plano tangente en $(0,0,1)$ es horizontal: $z = 1$.
-
-> [!example]- 📝 Ejemplo 3: Sistema de Ecuaciones
+>
+> [!example] 📝 Ejemplo 3: Sistema de Ecuaciones
 > 
 > **Sistema:**
 > 
@@ -674,7 +678,7 @@
 
 ### 🔧 Fórmula para las Derivadas
 
-> [!note]- 📐 Cálculo de Derivadas Implícitas
+> [!note] 📐 Cálculo de Derivadas Implícitas
 > 
 > ### Caso: Una Ecuación $F(x,y) = 0$
 > 
@@ -712,7 +716,7 @@
 
 ## 🔄 Relación entre los Teoremas
 
-> [!note]- 🔗 Conexiones entre los Tres Teoremas
+> [!note] 🔗 Conexiones entre los Tres Teoremas
 > 
 > ### Teorema de la Función Implícita vs Inversa
 > 
@@ -766,7 +770,7 @@
 
 ### Aplicación 1: Multiplicadores de Lagrange
 
-> [!example]- 🎯 Optimización con Restricciones
+> [!example] 🎯 Optimización con Restricciones
 > 
 > **Problema:** Optimizar $f(\vec{x})$ sujeto a $g(\vec{x}) = c$
 > 
@@ -814,7 +818,7 @@
 
 ### Aplicación 2: Superficies de Nivel
 
-> [!example]- 🏔️ Geometría Diferencial
+> [!example] 🏔️ Geometría Diferencial
 > 
 > **Teorema:** Si $F \in C^1$ y $\nabla F(\vec{a}) \neq \vec{0}$, entonces la superficie de nivel
 > 
@@ -842,7 +846,7 @@
 
 ### Aplicación 3: Ecuaciones Diferenciales
 
-> [!example]- 📊 Existencia y Unicidad
+> [!example] 📊 Existencia y Unicidad
 > 
 > **Teorema de Existencia (Picard-Lindelöf):**
 > 
@@ -870,7 +874,7 @@
 
 ### Aplicación 4: Análisis Numérico
 
-> [!example]- 💻 Método de Newton-Raphson
+> [!example] 💻 Método de Newton-Raphson
 > 
 > **Problema:** Resolver $\vec{F}(\vec{x}) = \vec{0}$
 > 
@@ -910,7 +914,7 @@
 
 ## 🎓 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Nivel Básico
+> [!example] 💪 Práctica Nivel Básico
 > 
 > **1. Verificar diferenciabilidad:**
 > 
@@ -947,8 +951,8 @@
 > b) $x^3 + y^3 = 6xy$ en el punto $(1, 1)$ (si es posible)
 > 
 > c) $\sin(xy) + \cos(x+y) = 1$ en el punto $(0, 0)$
-
-> [!example]- 💪 Práctica Nivel Intermedio
+>
+> [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Teorema de la función inversa:**
 > 
@@ -983,8 +987,8 @@
 > b) ¿Podemos despejar $(y, z)$ en función de $x$ cerca de este punto?
 > 
 > c) Calcular la Jacobiana de la función implícita
-
-> [!example]- 💪 Práctica Nivel Avanzado
+>
+> [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Demostración:**
 > 
@@ -1030,7 +1034,7 @@
 
 ## ✅ Soluciones Selectas
 
-> [!success]- 🔑 Respuestas Ejercicios Básicos
+> [!success] 🔑 Respuestas Ejercicios Básicos
 > 
 > **1a)** $f(x,y) = x^3 + y^3 - 3xy$
 > 
@@ -1079,8 +1083,8 @@
 > En $(3,4)$:
 > 
 > $$\boxed{\frac{dy}{dx} = -\frac{3}{4}}$$
-
-> [!success]- 🔑 Respuestas Ejercicios Intermedios
+>
+> [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $\vec{F}(x,y) = \begin{bmatrix} x + y \ xy \end{bmatrix}$
 > 
@@ -1127,8 +1131,8 @@
 > $\vec{F}(2,1,0) = \begin{bmatrix} 5 - 9 \ 3 - 3 \end{bmatrix}$ tampoco.
 > 
 > Solución correcta: buscar puntos que satisfagan ambas ecuaciones.
-
-> [!success]- 🔑 Respuestas Ejercicios Avanzados
+>
+> [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **9a)** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$
 > 
@@ -1191,7 +1195,7 @@
 
 ## 🌟 Conceptos Clave para Recordar
 
-> [!tip]- 💡 Puntos Esenciales
+> [!tip] 💡 Puntos Esenciales
 > 
 > ### Sobre Diferenciabilidad
 > 
@@ -1263,7 +1267,7 @@
 
 ## 🔗 Relaciones Importantes
 
-> [!quote]- 🌐 Conexiones con Otros Temas
+> [!quote] 🌐 Conexiones con Otros Temas
 > 
 > ### Prerequisitos:
 > 
@@ -1318,7 +1322,7 @@
 
 ## 📊 Mapa Conceptual Completo
 
-> [!note]- 🌳 Árbol de Conceptos
+> [!note] 🌳 Árbol de Conceptos
 > 
 > ```
 > TEOREMAS SOBRE DIFERENCIABILIDAD
@@ -1384,7 +1388,7 @@
 
 ## ✨ Comentarios Finales
 
-> [!note]- 🎓 Para Llevar
+> [!note] 🎓 Para Llevar
 > 
 > ### Lo Esencial
 > 
@@ -1503,7 +1507,7 @@
 
 ## 📖 Tabla de Referencia Rápida
 
-> [!note]- 📋 Resumen de Teoremas
+> [!note] 📋 Resumen de Teoremas
 > 
 > |Teorema|Hipótesis|Conclusión|Aplicación Principal|
 > |---|---|---|---|

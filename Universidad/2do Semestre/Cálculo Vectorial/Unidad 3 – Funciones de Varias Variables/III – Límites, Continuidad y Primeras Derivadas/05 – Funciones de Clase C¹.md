@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📘 Funciones de Clase C¹
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por qué son importantes las Funciones de Clase C¹?
+> [!info] 💡 ¿Por qué son importantes las Funciones de Clase C¹?
 > 
 > Hasta ahora hemos trabajado con derivadas parciales y el gradiente, pero surge una pregunta crucial: **¿cuándo podemos estar seguros de que la fórmula de la derivada direccional funciona?** La respuesta está en las funciones de clase C¹.
 > 
@@ -36,7 +40,7 @@
 
 ### 📝 Definición Formal
 
-> [!example]- 🟢 Definición: Función de Clase C¹
+> [!example] 🟢 Definición: Función de Clase C¹
 > 
 > **Definición:** Una función $f: \mathbb{R}^n \to \mathbb{R}$ es de **clase C¹** en un conjunto abierto $U$ si:
 > 
@@ -75,7 +79,7 @@
 
 ### 🎯 ¿Por qué "C¹"?
 
-> [!note]- 📖 Nomenclatura y Jerarquía
+> [!note] 📖 Nomenclatura y Jerarquía
 > 
 > La notación "C" viene de **"continua"** (continuous):
 > 
@@ -117,7 +121,7 @@
 
 ## 🔑 Teorema Fundamental: C¹ Implica Diferenciabilidad
 
-> [!example]- 🟢 Teorema Principal
+> [!example] 🟢 Teorema Principal
 > 
 > **Teorema:** Si $f$ es de clase C¹ en un abierto $U$ que contiene al punto $\vec{a}$, entonces $f$ es **diferenciable** en $\vec{a}$.
 > 
@@ -154,7 +158,7 @@
 
 ### Ejemplo 1: Polinomios
 
-> [!example]- 📝 Ejemplo 1: Los Polinomios son C∞
+> [!example] 📝 Ejemplo 1: Los Polinomios son C∞
 > 
 > **Función:** $$f(x,y) = x^3 + 2x^2y + xy^2 + y^3$$
 > 
@@ -190,7 +194,7 @@
 
 ### Ejemplo 2: Funciones Exponenciales
 
-> [!example]- 📝 Ejemplo 2: Exponenciales
+> [!example] 📝 Ejemplo 2: Exponenciales
 > 
 > **Función:** $$f(x,y) = e^{x+y} + e^{xy}$$
 > 
@@ -224,7 +228,7 @@
 
 ### Ejemplo 3: Funciones Racionales
 
-> [!example]- 📝 Ejemplo 3: Con Singularidades
+> [!example] 📝 Ejemplo 3: Con Singularidades
 > 
 > **Función:** $$f(x,y) = \frac{x^2 + y^2}{x^2 + y^2 + 1}$$
 > 
@@ -262,7 +266,7 @@
 
 ### Ejemplo 4: Valor Absoluto
 
-> [!example]- 📝 Ejemplo 4: NO es C¹ (pero derivadas existen)
+> [!example] 📝 Ejemplo 4: NO es C¹ (pero derivadas existen)
 > 
 > **Función:** $$f(x,y) = |x| + |y|$$
 > 
@@ -313,7 +317,7 @@
 
 ### Ejemplo 5: Caso Patológico Importante
 
-> [!example]- 📝 Ejemplo 5: Derivadas Existen pero NO es Diferenciable
+> [!example] 📝 Ejemplo 5: Derivadas Existen pero NO es Diferenciable
 > 
 > **Función:**
 > 
@@ -395,7 +399,7 @@
 
 ## 🧮 Criterio Práctico: ¿Cómo Verificar C¹?
 
-> [!note]- 🔍 Estrategia para Verificar C¹
+> [!note] 🔍 Estrategia para Verificar C¹
 > 
 > ### Algoritmo Práctico
 > 
@@ -450,7 +454,7 @@
 
 ### Ejemplo 6: Raíz Cuadrada
 
-> [!example]- 📝 Ejemplo 6: Función Raíz
+> [!example] 📝 Ejemplo 6: Función Raíz
 > 
 > **Función:** $$f(x,y) = \sqrt{x^2 + y^2}$$
 > 
@@ -498,7 +502,7 @@
 
 ### Ejemplo 7: Función por Casos
 
-> [!example]- 📝 Ejemplo 7: Definición por Casos
+> [!example] 📝 Ejemplo 7: Definición por Casos
 > 
 > **Función:**
 > 
@@ -573,7 +577,7 @@
 
 ### Ejemplo 8: Logaritmo
 
-> [!example]- 📝 Ejemplo 8: Con Logaritmo
+> [!example] 📝 Ejemplo 8: Con Logaritmo
 > 
 > **Función:** $$f(x,y) = \ln(1 + x^2 + y^2)$$
 > 
@@ -603,7 +607,7 @@
 
 ## 🎯 Propiedades de las Funciones C¹
 
-> [!note]- ⭐ Propiedades Algebraicas
+> [!note] ⭐ Propiedades Algebraicas
 > 
 > ### 1. Linealidad
 > 
@@ -687,7 +691,7 @@
 
 ## 🔄 Relación con Diferenciabilidad
 
-> [!note]- 🔗 Diferenciabilidad vs C¹
+> [!note] 🔗 Diferenciabilidad vs C¹
 > 
 > ### Diagrama de Implicaciones
 > 
@@ -745,7 +749,7 @@
 
 ### Aplicación 1: Teorema de la Función Implícita
 
-> [!example]- 📐 Función Implícita
+> [!example] 📐 Función Implícita
 > 
 > **Teorema:** Si $F(x,y) \in C^1$ y satisface:
 > 
@@ -795,7 +799,7 @@
 
 ### Aplicación 2: Optimización con Restricciones
 
-> [!example]- 🎯 Multiplicadores de Lagrange
+> [!example] 🎯 Multiplicadores de Lagrange
 > 
 > **Problema:** Optimizar $f(x,y)$ sujeto a $g(x,y) = c$
 > 
@@ -848,7 +852,7 @@
 
 ### Aplicación 3: Ecuaciones Diferenciales Parciales
 
-> [!example]- 🌊 Ecuación de Laplace
+> [!example] 🌊 Ecuación de Laplace
 > 
 > **Ecuación:** $$\Delta f = \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} = 0$$
 > 
@@ -882,7 +886,7 @@
 
 ## 📊 Tabla Resumen: Clases de Funciones
 
-> [!note]- 📋 Comparación de Regularidad
+> [!note] 📋 Comparación de Regularidad
 > 
 > |Clase|Definición|Propiedades|Ejemplo|
 > |---|---|---|---|
@@ -903,7 +907,7 @@
 
 ## 🧮 Teorema de Schwarz (Adelanto a C²)
 
-> [!note]- 🔄 Igualdad de Derivadas Mixtas
+> [!note] 🔄 Igualdad de Derivadas Mixtas
 > 
 > **Teorema de Schwarz (o Clairaut):** Si $f \in C^2$ en un abierto $U$, entonces:
 > 
@@ -955,7 +959,7 @@
 
 ## 🎯 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Nivel Básico
+> [!example] 💪 Práctica Nivel Básico
 > 
 > **1. Identificar la clase:**
 > 
@@ -1000,8 +1004,8 @@
 > c) $f(x,y) = \sqrt{x^2 + y^2}$
 > 
 > d) $f(x,y) = \frac{x-y}{x+y}$
-
-> [!example]- 💪 Práctica Nivel Intermedio
+>
+> [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Funciones por casos:**
 > 
@@ -1034,8 +1038,8 @@
 > **6. Aplicación a optimización:**
 > 
 > Verificar que $f(x,y) = x^3 - 3xy^2$ es C¹ y encontrar todos los puntos críticos (donde $\nabla f = \vec{0}$).
-
-> [!example]- 💪 Práctica Nivel Avanzado
+>
+> [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Teoría:**
 > 
@@ -1091,7 +1095,7 @@
 
 ## ✅ Soluciones Selectas
 
-> [!success]- 🔑 Respuestas Ejercicios Básicos
+> [!success] 🔑 Respuestas Ejercicios Básicos
 > 
 > **1a)** $f(x,y) = 3x^2 + 2xy + 5y^2$
 > 
@@ -1130,8 +1134,8 @@
 > Derivadas no existen en $(0,0)$
 > 
 > $$f \in C^1(\mathbb{R}^2 \setminus {(0,0)})$$
-
-> [!success]- 🔑 Respuestas Ejercicios Intermedios
+>
+> [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = \begin{cases} xy & x \geq 0 \ 0 & x < 0 \end{cases}$
 > 
@@ -1178,8 +1182,8 @@
 > Si $y = 0$: $3x^2 = 0$ ⇒ $x = 0$
 > 
 > **Único punto crítico:** $(0,0)$
-
-> [!success]- 🔑 Respuestas Ejercicios Avanzados
+>
+> [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7c)** Si $\nabla f = \vec{0}$ en todo punto:
 > 
@@ -1225,7 +1229,7 @@
 
 ## 🌟 Conceptos Clave para Recordar
 
-> [!tip]- 💡 Puntos Esenciales
+> [!tip] 💡 Puntos Esenciales
 > 
 > ### Sobre C¹
 > 
@@ -1290,7 +1294,7 @@
 
 ## 📊 Mapa Conceptual Completo
 
-> [!note]- 🌳 Árbol de Conceptos
+> [!note] 🌳 Árbol de Conceptos
 > 
 > ```
 > FUNCIONES DE CLASE C¹
@@ -1337,7 +1341,7 @@
 
 ## 🔬 Análisis Profundo: ¿Por qué C¹ es Suficiente?
 
-> [!note]- 🧠 Intuición Matemática
+> [!note] 🧠 Intuición Matemática
 > 
 > ### La Pregunta Fundamental
 > 
@@ -1417,7 +1421,7 @@
 
 ## 🎨 Visualización Geométrica
 
-> [!note]- 📊 Interpretación Visual
+> [!note] 📊 Interpretación Visual
 > 
 > ### Función C¹: Superficie Suave
 > 
@@ -1501,7 +1505,7 @@
 
 ## 🔧 Herramientas Computacionales
 
-> [!example]- 💻 Verificación Numérica de C¹
+> [!example] 💻 Verificación Numérica de C¹
 > 
 > ### Pseudocódigo: Verificar Continuidad de Derivadas
 > 
@@ -1613,7 +1617,7 @@
 
 ## 🌐 Extensión a Funciones Vectoriales
 
-> [!note]- 🎯 C¹ para Funciones $\mathbb{R}^n \to \mathbb{R}^m$
+> [!note] 🎯 C¹ para Funciones $\mathbb{R}^n \to \mathbb{R}^m$
 > 
 > ### Definición para Funciones Vectoriales
 > 
@@ -1670,7 +1674,7 @@
 
 ## 📐 Teorema del Valor Medio Multivariable
 
-> [!note]- 📏 Versión Multivariable
+> [!note] 📏 Versión Multivariable
 > 
 > **Teorema del Valor Medio:** Si $f \in C^1$ en un conjunto convexo $U$ que contiene el segmento de $\vec{a}$ a $\vec{b}$, entonces existe un punto $\vec{c}$ en ese segmento tal que:
 > 
@@ -1718,7 +1722,7 @@
 
 ## 🎓 Conexión con Análisis Real
 
-> [!note]- 📚 Contexto Teórico Avanzado
+> [!note] 📚 Contexto Teórico Avanzado
 > 
 > ### Espacios de Funciones
 > 
@@ -1772,7 +1776,7 @@
 
 ## 🔗 Conexiones con Otros Temas
 
-> [!quote]- 🌐 Relaciones Importantes
+> [!quote] 🌐 Relaciones Importantes
 > 
 > Este tema es prerequisito para:
 > 
@@ -1801,7 +1805,7 @@
 
 ## ✨ Comentarios Finales
 
-> [!note]- 🎓 Para Llevar
+> [!note] 🎓 Para Llevar
 > 
 > ### Lo Esencial
 > 
@@ -1867,7 +1871,7 @@
 
 ## 📖 Resumen de Fórmulas y Definiciones
 
-> [!note]- 📋 Referencia Rápida
+> [!note] 📋 Referencia Rápida
 > 
 > ### Definiciones Fundamentales
 > 

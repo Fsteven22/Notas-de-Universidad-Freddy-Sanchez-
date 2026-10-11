@@ -13,7 +13,7 @@
 
 > [!tip]- ## 📊 Modelos de Gestión de Cambio
 > Existen varios modelos para guiar un proceso de cambio, cada uno con un enfoque y una utilidad distinta.
-
+>
 > [!tip]+ **ADKAR: Enfoque en el Individuo**
 > El modelo ADKAR, desarrollado por Prosci, se centra en los cinco resultados que un individuo debe lograr para que el cambio sea exitoso:
 >
@@ -24,14 +24,14 @@
 > 5.  **R**einforcement (Refuerzo): Se mantiene el cambio a largo plazo.
 >
 > Este modelo es ideal para evaluar dónde se encuentra cada individuo y personalizar el plan de comunicación y capacitación.
-
+>
 > [!tip]+ **Modelo de 3 Fases de Lewin: Enfoque en el Grupo**
 > Un modelo más simple y conceptual de tres fases:
 >
 > 6.  **Unfreeze (Descongelar)**: Romper con el estado actual. Se comunica la necesidad del cambio para crear una sensación de urgencia.
 > 7.  **Change (Cambiar)**: Implementar el nuevo proceso o sistema. Es la fase de transición, donde la capacitación y la comunicación son cruciales.
 > 8.  **Refreeze (Recongelar)**: El nuevo estado se consolida y se convierte en la nueva normalidad. Se refuerzan los nuevos comportamientos y se celebran los éxitos.
-
+>
 > [!warning] ⚠️ **Cuidado con los atajos:** La resistencia al cambio es una reacción natural y esperada. Ignorar los sentimientos de los equipos puede llevar a la desmotivación, a una baja adopción y, en última instancia, al fracaso del proyecto.
 
 ---

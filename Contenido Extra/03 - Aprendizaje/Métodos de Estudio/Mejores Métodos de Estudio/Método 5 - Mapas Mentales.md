@@ -237,7 +237,7 @@ xychart-beta
 > - **🎯 Sin centro claro**: Múltiples focos de atención
 > - **🔄 No revisar**: Crear y olvidar, sin mejora iterativa
 > - **👥 Copiar estilos**: No desarrollar lenguaje visual propio
-
+>
 >[!info] **Estrategias de Mejora**
 >
 > Consulta [[Hábitos de Estudio]] para crear rutinas de mapeo y [[Deep Work]] para sesiones de creación sin distracciones. Para superar bloqueos creativos, usa [[Mindfulness]] para centrar la mente antes de mapear.

@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 03 - Grammar Review - Sentence Types by Structure
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿De qué trata esta nota?
+> [!info] 💡 ¿De qué trata esta nota?
 >
 > Esta nota es **autoexplicativa** — puedes entenderla sin haber leído las notas anteriores. Cubre los 4 tipos de oraciones en inglés según su estructura, con definiciones, ejemplos y ejercicios integrados.
 >
@@ -22,13 +26,10 @@
 >     A[Sentence] --> B{¿Cuántas cláusulas<br/>independientes?}
 >     B -->|Una| C{¿Hay alguna cláusula<br/>dependiente?}
 >     B -->|Dos o más| D{¿Hay alguna cláusula<br/>dependiente?}
->
 >     C -->|No| E[✅ SIMPLE]
 >     C -->|Sí| F[✅ COMPLEX]
->
 >     D -->|No| G[✅ COMPOUND]
 >     D -->|Sí| H[✅ COMPOUND-COMPLEX]
->
 >     style E fill:#e1ffe1
 >     style F fill:#e1f5ff
 >     style G fill:#fff4e1
@@ -39,7 +40,7 @@
 
 ## 🟢 Simple Sentence
 
-> [!note]- 🟢 Una sola cláusula independiente
+> [!note] 🟢 Una sola cláusula independiente
 >
 > A **simple sentence** contains **one independent clause** only. It can have one or more subjects and verbs, but they all belong to a single complete thought.
 >
@@ -70,7 +71,7 @@
 
 ## 🟡 Compound Sentence
 
-> [!note]- 🟡 Dos o más cláusulas independientes
+> [!note] 🟡 Dos o más cláusulas independientes
 >
 > A **compound sentence** contains **two or more independent clauses** joined by a **coordinating conjunction (FANBOYS)** or a **semicolon**.
 >
@@ -99,7 +100,7 @@
 
 ## 🔵 Complex Sentence
 
-> [!note]- 🔵 Una independiente + una o más dependientes
+> [!note] 🔵 Una independiente + una o más dependientes
 >
 > A **complex sentence** contains **one independent clause** and **at least one dependent clause**, joined by a **subordinating conjunction** (because, although, when, if, since, while…).
 >
@@ -128,7 +129,7 @@
 
 ## 🔴 Compound-Complex Sentence
 
-> [!note]- 🔴 Dos o más independientes + al menos una dependiente
+> [!note] 🔴 Dos o más independientes + al menos una dependiente
 >
 > A **compound-complex sentence** contains **two or more independent clauses** AND **at least one dependent clause**.
 >
@@ -150,7 +151,7 @@
 
 ## 📊 Comparación General
 
-> [!success]- 📊 Los 4 tipos de un vistazo
+> [!success] 📊 Los 4 tipos de un vistazo
 >
 > | Tipo | Cláusulas independientes | Cláusulas dependientes | Conector |
 > |---|---|---|---|
@@ -165,7 +166,6 @@
 >     A --> C[Complex<br/>1 ind. + 1 dep.]
 >     B --> D[Compound-Complex<br/>2+ ind. + 1+ dep.]
 >     C --> D
->
 >     style A fill:#e1ffe1
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff
@@ -176,7 +176,7 @@
 
 ## 📝 Ejercicios de práctica
 
-> [!example]- ✏️ Ejercicio 1 — Identifica el tipo de oración
+> [!example] ✏️ Ejercicio 1 — Identifica el tipo de oración
 >
 > Write **Simple**, **Compound**, **Complex**, or **Compound-Complex** in the blank:
 >
@@ -217,8 +217,8 @@
 > ---
 >
 > **10.** Vegetables are good for your health and easy to digest. &emsp; `________________`
-
-> [!success]- ✅ Respuestas — Ejercicio 1
+>
+> [!success] ✅ Respuestas — Ejercicio 1
 >
 > | # | Oración | Tipo | Por qué |
 > |---|---|---|---|
@@ -232,8 +232,8 @@
 > | 8 | *Yesterday I went out with Tom, who is a friend…* | **Complex** | Cláusula independiente + cláusula relativa dependiente (*who…*) |
 > | 9 | *Let's go to the theater after lunch.* | **Simple** | *After lunch* es frase preposicional — una sola cláusula independiente |
 > | 10 | *Vegetables are good for your health and easy to digest.* | **Simple** | 1 sujeto + 1 verbo con dos predicados coordinados — no hay segunda cláusula |
-
-> [!example]- ✏️ Ejercicio 2 — Construye las oraciones
+>
+> [!example] ✏️ Ejercicio 2 — Construye las oraciones
 >
 > Combina las ideas usando el tipo de oración indicado:
 >
@@ -241,8 +241,8 @@
 > 2. *He failed the exam. He didn't study.* → **Complex**
 > 3. *I love coffee.* → **Simple** (añade un complemento)
 > 4. *It was raining. We went outside. We had umbrellas.* → **Compound-Complex**
-
-> [!success]- ✅ Respuestas — Ejercicio 2
+>
+> [!success] ✅ Respuestas — Ejercicio 2
 >
 > | # | Respuesta posible | Tipo confirmado |
 > |---|---|---|
@@ -255,7 +255,7 @@
 
 ## 📚 Glosario de términos difíciles
 
-> [!quote]- 📖 Palabras y conceptos que pueden causar confusión
+> [!quote] 📖 Palabras y conceptos que pueden causar confusión
 >
 > | Término | Explicación sencilla |
 > |---|---|

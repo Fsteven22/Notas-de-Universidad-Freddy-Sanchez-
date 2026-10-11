@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎭 Abstracción (Clases Abstractas e Interfaces)
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la Abstracción?
+> [!info] 💡 ¿Qué es la Abstracción?
 > 
 > La **abstracción** es uno de los pilares fundamentales de la Programación Orientada a Objetos (POO). Consiste en **ocultar los detalles de implementación** y mostrar solo la funcionalidad esencial al usuario.
 > 
@@ -43,7 +47,7 @@ graph TB
 
 ### 📊 Dos Mecanismos de Abstracción
 
-> [!note]- 🌳 Clases Abstractas vs Interfaces
+> [!note] 🌳 Clases Abstractas vs Interfaces
 > 
 > Java ofrece **dos formas** de implementar abstracción:
 > 
@@ -51,15 +55,12 @@ graph TB
 > graph LR
 >     A[Abstracción] --> B[Clases Abstractas]
 >     A --> C[Interfaces]
->     
 >     B --> D[Herencia simple]
 >     B --> E[Puede tener estado]
 >     B --> F[Métodos concretos + abstractos]
->     
 >     C --> G[Herencia múltiple]
 >     C --> H[Solo constantes]
 >     C --> I[Solo métodos abstractos*]
->     
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
 > ```
@@ -87,7 +88,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 🏗️ ¿Qué es una Clase Abstracta?
+> [!tip] 🏗️ ¿Qué es una Clase Abstracta?
 > 
 > Una clase abstracta es una clase **incompleta** que:
 > 
@@ -128,7 +129,7 @@ graph TB
 
 ### 🛠️ Implementación de Clases Abstractas
 
-> [!success]- 🎯 Ejemplo Completo: Sistema de Figuras Geométricas
+> [!success] 🎯 Ejemplo Completo: Sistema de Figuras Geométricas
 > 
 > **CLASE ABSTRACTA: Define el contrato y comportamiento común**
 > 
@@ -237,7 +238,7 @@ graph TB
 
 ### ✅ Ventajas de las Clases Abstractas
 
-> [!success]- 🏆 Beneficios Clave
+> [!success] 🏆 Beneficios Clave
 > 
 > |Ventaja|Descripción|Ejemplo|
 > |---|---|---|
@@ -252,7 +253,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 🎯 ¿Qué es una Interfaz?
+> [!tip] 🎯 ¿Qué es una Interfaz?
 > 
 > Una interfaz es un **contrato** que:
 > 
@@ -287,7 +288,7 @@ graph TB
 
 ### 🛠️ Implementación de Interfaces
 
-> [!example]- 🦆 Ejemplo Completo: Capacidades de Animales y Vehículos
+> [!example] 🦆 Ejemplo Completo: Capacidades de Animales y Vehículos
 > 
 > **INTERFAZ 1: Capacidad de nadar**
 > 
@@ -436,7 +437,7 @@ graph TB
 
 ### ✅ Ventajas de las Interfaces
 
-> [!success]- 🏆 Beneficios Clave
+> [!success] 🏆 Beneficios Clave
 > 
 > |Ventaja|Descripción|Ejemplo|
 > |---|---|---|
@@ -451,7 +452,7 @@ graph TB
 
 ### 📊 Tabla Comparativa Completa
 
-> [!note]- 🔍 Diferencias Clave
+> [!note] 🔍 Diferencias Clave
 > 
 > |Característica|Clase Abstracta|Interfaz|
 > |---|---|---|
@@ -468,7 +469,7 @@ graph TB
 
 ### 🎯 ¿Cuándo Usar Cada Una?
 
-> [!tip]- 💡 Guía de Decisión
+> [!tip] 💡 Guía de Decisión
 > 
 > **Usa CLASE ABSTRACTA cuando:**
 > 
@@ -478,12 +479,10 @@ graph TB
 >     A --> C[Mantener estado]
 >     A --> D[Control de acceso]
 >     A --> E[Constructores]
->     
 >     B --> F[✅ Clase Abstracta]
 >     C --> F
 >     D --> F
 >     E --> F
->     
 >     style F fill:#fff4e1
 > ```
 > 
@@ -503,12 +502,10 @@ graph TB
 >     A --> C[Capacidades compartidas]
 >     A --> D[Clases no relacionadas]
 >     A --> E[Contrato puro]
->     
 >     B --> F[✅ Interfaz]
 >     C --> F
 >     D --> F
 >     E --> F
->     
 >     style F fill:#e1ffe1
 > ```
 > 
@@ -525,7 +522,7 @@ graph TB
 
 ### 💪 El Poder de la Combinación
 
-> [!example]- 🎪 Ejemplo Completo: Sistema de Vehículos
+> [!example] 🎪 Ejemplo Completo: Sistema de Vehículos
 > 
 > **INTERFACES: Definen capacidades**
 > 
@@ -709,7 +706,7 @@ graph TB
 
 ### ✅ Recomendaciones Profesionales
 
-> [!tip]- 🏆 Checklist de Buenas Prácticas
+> [!tip] 🏆 Checklist de Buenas Prácticas
 > 
 > **1. Nombra correctamente tus abstracciones**
 > 
@@ -754,7 +751,6 @@ graph TB
 >     A[¿Necesitas abstraer?] --> B{¿Relación ES-UN<br/>verdadera?}
 >     B -->|Sí| C[✅ Usar herencia]
 >     B -->|No| D[✅ Usar composición]
->     
 >     style C fill:#e1ffe1
 >     style D fill:#e1ffe1
 > ```
@@ -817,7 +813,7 @@ mindmap
 
 ### 📋 Tabla de Decisión Rápida
 
-> [!success]- 🎯 Guía de Referencia Rápida
+> [!success] 🎯 Guía de Referencia Rápida
 > 
 > |Situación|Solución|
 > |---|---|
@@ -834,7 +830,7 @@ mindmap
 
 ## 🎓 Ejercicios Prácticos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Ejercicio 1: Sistema de Pagos**
 > 
@@ -931,7 +927,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Continuando el Aprendizaje
+> [!quote] 🌟 Continuando el Aprendizaje
 > 
 > **Has aprendido:**
 > 

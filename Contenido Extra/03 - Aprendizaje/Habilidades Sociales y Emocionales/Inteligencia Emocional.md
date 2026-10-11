@@ -344,8 +344,8 @@ graph TD
 > - [[Gestión de Conflictos]] - Uso de IE para resolver tensiones
 > - [[Mindfulness]] - Herramienta fundamental para desarrollo de autoconciencia
 > - [[Liderazgo Situacional]] - Aplicación de IE en contextos de liderazgo
-> - [[Comunicación Efectiva]] - IE como base para comunicación de calidad
-
+> - [[La Comunicación Efectiva]] - IE como base para comunicación de calidad
+>
 > [!info] **Notas Recomendadas para Profundizar**
 
 ### **Prerrequisitos** 📋

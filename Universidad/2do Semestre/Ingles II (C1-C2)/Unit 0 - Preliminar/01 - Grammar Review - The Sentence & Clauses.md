@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 01 - Grammar Review - The Sentence & Clauses
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué se repasa en esta nota?
+> [!info] 💡 ¿Qué se repasa en esta nota?
 >
 > Esta nota cubre los fundamentos de la oración en inglés y los tipos de cláusulas. Son la base sobre la que se construyen todos los tipos de oraciones que verás en Inglés II.
 >
@@ -17,10 +21,8 @@
 >     A[The Sentence & Clauses] --> B[What is a sentence?]
 >     A --> C[Characteristics]
 >     A --> D[Clauses]
->
 >     D --> E[Independent Clause<br/>✅ stands alone]
 >     D --> F[Dependent Clause<br/>❌ needs support]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
@@ -32,7 +34,7 @@
 
 ## 📝 What is a Sentence?
 
-> [!note]- 💡 Definición
+> [!note] 💡 Definición
 >
 > A **sentence** is a group of words that expresses a **complete thought**. It always has at least a **subject** and a **verb**, and it makes sense on its own.
 >
@@ -58,7 +60,7 @@
 
 ## 🔍 Characteristics of a Sentence
 
-> [!note]- 📋 Las 5 características obligatorias
+> [!note] 📋 Las 5 características obligatorias
 >
 > Every sentence in English must have these five features:
 >
@@ -86,7 +88,7 @@
 
 ## 🔗 Clauses
 
-> [!note]- 🧱 What is a Clause?
+> [!note] 🧱 What is a Clause?
 >
 > A **clause** is a group of words that contains a **subject** and a **verb**. There are two types:
 >
@@ -94,10 +96,8 @@
 > graph LR
 >     A[CLAUSE] --> B[Independent Clause]
 >     A --> C[Dependent Clause]
->
 >     B --> B1["✅ Makes complete sense alone<br/>─────────────────<br/>She loves music."]
 >     C --> C1["❌ Does NOT make sense alone<br/>─────────────────<br/>Because she loves music..."]
->
 >     style B fill:#e1ffe1
 >     style C fill:#ffe1e1
 >     style B1 fill:#f0fff0
@@ -155,7 +155,7 @@
 
 ## 📝 Ejercicios de práctica
 
-> [!example]- ✏️ Ejercicio 1 — ¿Oración completa o incompleta?
+> [!example] ✏️ Ejercicio 1 — ¿Oración completa o incompleta?
 >
 > Indica si cada grupo de palabras es una oración completa (✅) o incompleta (❌):
 >
@@ -165,8 +165,8 @@
 > 4. She decided to study abroad.
 > 5. Although he tried very hard.
 > 6. My professor explained the assignment clearly.
-
-> [!success]- ✅ Respuestas — Ejercicio 1
+>
+> [!success] ✅ Respuestas — Ejercicio 1
 >
 > | # | Respuesta | Por qué |
 > |---|---|---|
@@ -176,8 +176,8 @@
 > | 4 | ✅ Completa | Sujeto (*She*) + verbo (*decided*) + idea completa |
 > | 5 | ❌ Incompleta | Cláusula dependiente — *although* introduce un contraste pero no hay cláusula principal |
 > | 6 | ✅ Completa | Sujeto (*My professor*) + verbo (*explained*) + idea completa |
-
-> [!example]- ✏️ Ejercicio 2 — Independent o Dependent?
+>
+> [!example] ✏️ Ejercicio 2 — Independent o Dependent?
 >
 > Clasifica cada cláusula como independiente (I) o dependiente (D):
 >
@@ -189,8 +189,8 @@
 > 6. Because he forgot his homework.
 > 7. The coffee is too hot.
 > 8. Unless you study harder.
-
-> [!success]- ✅ Respuestas — Ejercicio 2
+>
+> [!success] ✅ Respuestas — Ejercicio 2
 >
 > | # | Cláusula | Tipo | Por qué |
 > |---|---|---|---|
@@ -207,7 +207,7 @@
 
 ## 📚 Glosario de términos difíciles
 
-> [!quote]- 📖 Palabras y conceptos que pueden causar confusión
+> [!quote] 📖 Palabras y conceptos que pueden causar confusión
 >
 > | Término | Explicación sencilla |
 > |---|---|

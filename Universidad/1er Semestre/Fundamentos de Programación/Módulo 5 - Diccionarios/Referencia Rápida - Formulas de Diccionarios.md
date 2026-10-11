@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 📚 Tabla de Fórmulas y Métodos de Diccionarios
 
 ## 🎯 Referencia Rápida - Módulo 5: Diccionarios en Python

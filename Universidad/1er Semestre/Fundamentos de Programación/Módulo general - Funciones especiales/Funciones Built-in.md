@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🛠️ Funciones Built-in de Python
 
 > [!info] 📋 ¿Qué son las Funciones Built-in?

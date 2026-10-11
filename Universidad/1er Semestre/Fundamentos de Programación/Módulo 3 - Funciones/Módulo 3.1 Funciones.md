@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🏭 Funciones en Python
 
 > [!info] 🎯 ¿Qué son las Funciones?
@@ -16,7 +20,7 @@
 > # Llamar/Invocar la función
 > nombre_funcion()
 > ```
-
+>
 > [!note] 🔧 Elementos Clave
 > - **`def`**: Palabra clave para definir la función
 > - **`nombre_funcion`**: Identificador único de la función

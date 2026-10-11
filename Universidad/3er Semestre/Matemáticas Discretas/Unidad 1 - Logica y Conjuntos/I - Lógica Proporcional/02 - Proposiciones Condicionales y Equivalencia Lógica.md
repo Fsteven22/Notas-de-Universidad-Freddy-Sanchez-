@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔀 Proposiciones Condicionales y Equivalencia Lógica
 
 ## 🎯 El Condicional en Profundidad
 
-> [!info]- 📖 Recordatorio: Definición del Condicional
+> [!info] 📖 Recordatorio: Definición del Condicional
 > 
 > Sean $p$ y $q$ dos proposiciones. El **condicional** $p \rightarrow q$ ("si $p$ entonces $q$") tiene la siguiente tabla de verdad:
 > 
@@ -23,7 +27,7 @@
 
 ## 🔤 Formas Equivalentes del Condicional
 
-> [!tip]- 🗣️ Distintas Maneras de Expresar "si p entonces q"
+> [!tip] 🗣️ Distintas Maneras de Expresar "si p entonces q"
 > 
 > En el lenguaje natural existen muchas formas de expresar un condicional. Todas las siguientes son equivalentes a $p \rightarrow q$:
 > 
@@ -42,7 +46,7 @@
 > > - "**Necesario para $p$**" → el resultado va en $q$ (consecuente)
 > > - "**Suficiente para $q$**" → la causa va en $p$ (antecedente)
 
-> [!example]- ✏️ Práctica: Convertir a la forma estándar
+> [!example] ✏️ Práctica: Convertir a la forma estándar
 > 
 > Escriba en la forma **"si $p$ entonces $q$"** cada proposición:
 > 
@@ -59,7 +63,7 @@
 
 ## 🔁 Proposiciones Derivadas del Condicional
 
-> [!note]- 📐 Recíproco, Inverso y Contrarrecíproco
+> [!note] 📐 Recíproco, Inverso y Contrarrecíproco
 > 
 > Dado el condicional $p \rightarrow q$, se definen tres proposiciones relacionadas:
 > 
@@ -74,22 +78,17 @@
 > 
 > ```mermaid
 > graph LR
->     A["p → q<br/>(Original)"] <-->|"≡"| B["¬q → ¬p<br/>(Contrarrecíproco)"]
->     C["q → p<br/>(Recíproco)"] <-->|"≡"| D["¬p → ¬q<br/>(Inverso)"]
+>     A["p → q (Original)"] <-->|"≡"| B["¬q → ¬p (Contrarrecíproco)"]
+>     C["q → p (Recíproco)"] <-->|"≡"| D["¬p → ¬q (Inverso)"]
 >     A -.-|"≢"| C
 >     A -.-|"≢"| D
->     
->     style A fill:#e1f5ff
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#fff4e1
 > ```
 > 
 > > ✅ El original y su contrarrecíproco son **lógicamente equivalentes**.  
 > > ✅ El recíproco y el inverso son **lógicamente equivalentes** entre sí.  
 > > ❌ El original y el recíproco **no son equivalentes** en general.
 
-> [!example]- 🧮 Verificación mediante tabla de verdad
+> [!example] 🧮 Verificación mediante tabla de verdad
 > 
 > Verifiquemos que $p \rightarrow q \equiv \neg q \rightarrow \neg p$:
 > 
@@ -113,7 +112,7 @@
 > 
 > Las columnas difieren → $p \rightarrow q \not\equiv q \rightarrow p$ ❌
 
-> [!example]- ✏️ Ejemplo aplicado: Recíproco y Contrarrecíproco
+> [!example] ✏️ Ejemplo aplicado: Recíproco y Contrarrecíproco
 > 
 > Sea la proposición: **"Si nieva, entonces hace frío."**
 > 
@@ -128,7 +127,7 @@
 
 ## 💡 Verdadero por Omisión
 
-> [!warning]- ⚠️ Condicional Vacuamente Verdadero
+> [!warning] ⚠️ Condicional Vacuamente Verdadero
 > 
 > Una proposición condicional $p \rightarrow q$ que es verdadera **porque el antecedente $p$ es falso** se dice que es **verdadera por omisión** (o _vacuamente verdadera_ / _superficialmente verdadera_).
 > 
@@ -147,7 +146,7 @@
 
 ## ⚖️ Equivalencia Lógica
 
-> [!info]- 📖 Definiciones Fundamentales
+> [!info] 📖 Definiciones Fundamentales
 > 
 > **Forma proposicional:** Cualquier expresión $P$ obtenida a partir de variables proposicionales $p_1, p_2, \ldots, p_n$ usando conectivos lógicos de forma adecuada.
 > 
@@ -158,7 +157,7 @@
 > **Tautología:** Forma proposicional que es **siempre verdadera**.  
 > **Contradicción:** Forma proposicional que es **siempre falsa**.
 
-> [!example]- ✅ Verificar $\neg(p \rightarrow q) \equiv p \wedge \neg q$
+> [!example] ✅ Verificar $\neg(p \rightarrow q) \equiv p \wedge \neg q$
 > 
 > |$p$|$q$|$\neg q$|$p \rightarrow q$|$\neg(p \rightarrow q)$|$p \wedge \neg q$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -181,7 +180,7 @@
 
 ## 📋 Principales Equivalencias Lógicas
 
-> [!success]- 🏛️ Tabla de Equivalencias (Leyes del Álgebra Proposicional)
+> [!success] 🏛️ Tabla de Equivalencias (Leyes del Álgebra Proposicional)
 > 
 > ### Leyes de Identidad
 > 
@@ -233,7 +232,7 @@
 > |Distributiva $\vee$ sobre $\wedge$|$p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r)$|
 > |Distributiva $\wedge$ sobre $\vee$|$p \wedge (q \vee r) \equiv (p \wedge q) \vee (p \wedge r)$|
 > 
-> ### Leyes de De Morgan
+> ### [[01 - Algebra de Proposiciones|Leyes de De Morgan]]
 > 
 > |Ley|Expresión|
 > |---|---|
@@ -261,7 +260,7 @@
 
 ## 🔍 Verificación de Equivalencias
 
-> [!example]- 🧮 Ejemplo 1: $p \rightarrow q \equiv \neg p \vee q$
+> [!example] 🧮 Ejemplo 1: $p \rightarrow q \equiv \neg p \vee q$
 > 
 > |$p$|$q$|$\neg p$|$p \rightarrow q$|$\neg p \vee q$|
 > |:-:|:-:|:-:|:-:|:-:|
@@ -272,7 +271,7 @@
 > 
 > Columnas idénticas → $p \rightarrow q \equiv \neg p \vee q$ ✅
 
-> [!example]- 🧮 Ejemplo 2: $p \leftrightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow p)$
+> [!example] 🧮 Ejemplo 2: $p \leftrightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow p)$
 > 
 > |$p$|$q$|$p \leftrightarrow q$|$p \rightarrow q$|$q \rightarrow p$|$(p \rightarrow q) \wedge (q \rightarrow p)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -283,7 +282,7 @@
 > 
 > Columnas idénticas → $p \leftrightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow p)$ ✅
 
-> [!example]- 🧮 Ejemplo 3: $p \veebar q \equiv (p \wedge \neg q) \vee (q \wedge \neg p)$
+> [!example] 🧮 Ejemplo 3: $p \veebar q \equiv (p \wedge \neg q) \vee (q \wedge \neg p)$
 > 
 > |$p$|$q$|$\neg p$|$\neg q$|$p \veebar q$|$p \wedge \neg q$|$q \wedge \neg p$|$(p \wedge \neg q) \vee (q \wedge \neg p)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -294,7 +293,7 @@
 > 
 > Columnas idénticas → $p \veebar q \equiv (p \wedge \neg q) \vee (q \wedge \neg p)$ ✅
 
-> [!example]- 🧮 Ejemplo 4: $(p \rightarrow q) \rightarrow r \not\equiv p \rightarrow (q \rightarrow r)$
+> [!example] 🧮 Ejemplo 4: $(p \rightarrow q) \rightarrow r \not\equiv p \rightarrow (q \rightarrow r)$
 > 
 > |$p$|$q$|$r$|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|$q \rightarrow r$|$p \rightarrow (q \rightarrow r)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -313,7 +312,7 @@
 
 ## 🏷️ Tautologías y Contradicciones
 
-> [!note]- 📖 Definiciones y Ejemplos
+> [!note] 📖 Definiciones y Ejemplos
 > 
 > **Tautología:** Forma proposicional cuya columna final en la tabla de verdad es **toda V**.  
 > **Contradicción:** Forma proposicional cuya columna final es **toda F**.
@@ -323,7 +322,7 @@
 > |Nombre|Expresión|
 > |---|---|
 > |Tercio excluido|$p \vee \neg p$|
-> |Modus Ponens|$(p \wedge (p \rightarrow q)) \rightarrow q$|
+> |[[01 - Reglas de Inferencia\|Modus Ponens]]|$(p \wedge (p \rightarrow q)) \rightarrow q$|
 > |Modus Tollens|$(\neg q \wedge (p \rightarrow q)) \rightarrow \neg p$|
 > |Silogismo hipotético|$((p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow (p \rightarrow r)$|
 > |Adición|$p \rightarrow (p \vee q)$|
@@ -335,7 +334,7 @@
 > |---|---|
 > |Contradicción|$p \wedge \neg p$|
 
-> [!example]- 🧮 Verificación: $p \vee \neg p$ es tautología
+> [!example] 🧮 Verificación: $p \vee \neg p$ es tautología
 > 
 > |$p$|$\neg p$|$p \vee \neg p$|
 > |:-:|:-:|:-:|
@@ -344,7 +343,7 @@
 > 
 > Siempre verdadera → es una tautología ✅
 
-> [!example]- 🧮 Verificación: Modus Ponens $(p \wedge (p \rightarrow q)) \rightarrow q$
+> [!example] 🧮 Verificación: Modus Ponens $(p \wedge (p \rightarrow q)) \rightarrow q$
 > 
 > |$p$|$q$|$p \rightarrow q$|$p \wedge (p \rightarrow q)$|$(p \wedge (p \rightarrow q)) \rightarrow q$|
 > |:-:|:-:|:-:|:-:|:-:|
@@ -361,7 +360,7 @@
 
 ```mermaid
 graph TD
-    A["Proposición Condicional<br/>p → q"] --> B["Formas lingüísticas<br/>equivalentes"]
+    A["Proposición Condicional p → q"] --> B["Formas lingüísticas equivalentes"]
     A --> C["Proposiciones derivadas"]
     A --> D["Equivalencias lógicas"]
 
@@ -370,21 +369,14 @@ graph TD
     B --> B3["q necesario para p"]
     B --> B4["p suficiente para q"]
 
-    C --> C1["Recíproco: q → p<br/>❌ No equiv. al original"]
-    C --> C2["Inverso: ¬p → ¬q<br/>❌ No equiv. al original"]
-    C --> C3["Contrarrecíproco: ¬q → ¬p<br/>✅ Equiv. al original"]
+    C --> C1["Recíproco: q → p ❌ No equiv. al original"]
+    C --> C2["Inverso: ¬p → ¬q ❌ No equiv. al original"]
+    C --> C3["Contrarrecíproco: ¬q → ¬p ✅ Equiv. al original"]
 
     D --> D1["p → q ≡ ¬p ∨ q"]
     D --> D2["¬(p → q) ≡ p ∧ ¬q"]
     D --> D3["p ↔ q ≡ (p→q) ∧ (q→p)"]
 
-    style A fill:#e1f5ff
-    style C1 fill:#ffe1e1
-    style C2 fill:#ffe1e1
-    style C3 fill:#e1ffe1
-    style D1 fill:#fff4e1
-    style D2 fill:#fff4e1
-    style D3 fill:#fff4e1
 ```
 
 ---
@@ -392,26 +384,25 @@ graph TD
 ## 📊 Resumen de Equivalencias Clave
 
 ```mermaid
-mindmap
-  root((Equivalencia<br/>Lógica))
-    Condicional
-      p→q ≡ ¬p∨q
-      ¬(p→q) ≡ p∧¬q
-      Contrarrecíproco
-        p→q ≡ ¬q→¬p
-      Recíproco
-        q→p NO equiv.
-    Bicondicional
-      p↔q ≡ (p→q)∧(q→p)
-    Leyes De Morgan
-      ¬(p∨q) ≡ ¬p∧¬q
-      ¬(p∧q) ≡ ¬p∨¬q
-    Tautologías
-      p∨¬p siempre V
-      Modus Ponens
-      Modus Tollens
-    Contradicciones
-      p∧¬p siempre F
+graph TD
+    A["Equivalencia Logica"] --> B["Condicional"]
+    A --> C["Bicondicional"]
+    A --> D["Leyes De Morgan"]
+    A --> E["Tautologias"]
+    A --> F["Contradicciones"]
+    B --> B1["p->q = no p o q"]
+    B --> B2["no p->q = p y no q"]
+    B --> B3["Contrarreciproco"]
+    B --> B4["Reciproco: q->p NO equiv"]
+    B3 --> B31["p->q = no q -> no p"]
+    C --> C1["p<->q = p->q y q->p"]
+    D --> D1["no p o q = no p y no q"]
+    D --> D2["no p y q = no p o no q"]
+    E --> E1["p o no p siempre V"]
+    E --> E2["Modus Ponens"]
+    E --> E3["Modus Tollens"]
+    F --> F1["p y no p siempre F"]
+
 ```
 
 ---

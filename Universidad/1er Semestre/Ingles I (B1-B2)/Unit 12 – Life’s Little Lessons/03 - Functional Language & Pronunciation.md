@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟩 Functional Language & Pronunciation
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué aprenderás en esta sección?
+> [!info] 💡 ¿Qué aprenderás en esta sección?
 > 
 > En esta nota dominarás el **lenguaje funcional** y la **pronunciación** para hablar naturalmente sobre metas, motivación y desafíos.
 > 
@@ -19,15 +23,10 @@
 > ```mermaid
 > graph TD
 >     A[Grammar you learned] --> B[Functional Language]
->     
 >     C[Phrasal verbs:<br/>give up, keep going] --> D[Natural expressions:<br/>"Don't give up!"]
->     
 >     E[Second Conditional:<br/>If I were...] --> F[Giving advice:<br/>"If I were you, I'd..."]
->     
 >     G[I wish / If only] --> H[Expressing desires:<br/>"I wish I were more..."]
->     
 >     B --> I[Real conversations<br/>about goals]
->     
 >     style A fill:#e1ffe1
 >     style B fill:#fff4e1
 >     style I fill:#e1f5ff
@@ -45,7 +44,7 @@
 
 ## 💪 A. Talking About Goals & Motivation
 
-> [!success]- 🎯 Expressing Your Goals
+> [!success] 🎯 Expressing Your Goals
 > 
 > **Pattern 1: I'm pushing myself to...**
 > 
@@ -116,8 +115,8 @@
 > • My biggest goal is...
 > • I've set a goal to...
 > ```
-
-> [!tip]- 🔥 Talking About Progress & Effort
+>
+> [!tip] 🔥 Talking About Progress & Effort
 > 
 > **Describing your effort:**
 > 
@@ -162,8 +161,8 @@
 > ✅ Nothing will stand in my way
 > ✅ I'm 100% focused on this
 > ```
-
-> [!example]- 💬 Natural Conversation Examples
+>
+> [!example] 💬 Natural Conversation Examples
 > 
 > **Conversation 1: Talking about a personal goal**
 > 
@@ -201,7 +200,7 @@
 
 ## 🗣️ B. Giving Advice & Encouragement
 
-> [!success]- 💡 Encouraging Someone
+> [!success] 💡 Encouraging Someone
 > 
 > **Pattern 1: Keep going!**
 > 
@@ -267,8 +266,8 @@
 > ✅ Why don't you ask for help?
 > ✅ Why don't you give it one more shot?
 > ```
-
-> [!tip]- 🌟 More Ways to Encourage
+>
+> [!tip] 🌟 More Ways to Encourage
 > 
 > **Recognizing effort:**
 > 
@@ -313,8 +312,8 @@
 > ✅ That's amazing!
 > ✅ You deserve this!
 > ```
-
-> [!example]- 💬 Advice & Encouragement Dialogues
+>
+> [!example] 💬 Advice & Encouragement Dialogues
 > 
 > **Dialogue 1: Friend feeling discouraged**
 > 
@@ -356,7 +355,7 @@
 
 ## 🎤 C. Pronunciation Guide
 
-> [!note]- 🔊 Stress in Phrasal Verbs
+> [!note] 🔊 Stress in Phrasal Verbs
 > 
 > **Key Rule: Stress the PARTICLE (second word)**
 > 
@@ -402,8 +401,8 @@
 > ✅ SET it up (not set it UP)
 > ✅ WORK it out (not work it OUT)
 > ```
-
-> [!tip]- 🔗 Linking in Functional Phrases
+>
+> [!tip] 🔗 Linking in Functional Phrases
 > 
 > **What is linking?**
 > 
@@ -452,8 +451,8 @@
 > 4. Set_up_a goal → "Se-tu-pa-goal"
 > 5. Find_out_about_it → "Fin-dou-ta-bou-tit"
 > ```
-
-> [!success]- 🎯 Intonation Patterns
+>
+> [!success] 🎯 Intonation Patterns
 > 
 > **Rising intonation (questions & uncertainty):**
 > 
@@ -504,7 +503,7 @@
 
 ## 🎭 D. Expressing Wishes & Regrets
 
-> [!note]- 💭 Talking About What You Wish
+> [!note] 💭 Talking About What You Wish
 > 
 > **Pattern 1: I wish I were/had...**
 > 
@@ -549,8 +548,8 @@
 > ❌ I wish I would be confident
 > ✅ I wish I were confident
 > ```
-
-> [!example]- 💬 Natural Ways to Express Regret
+>
+> [!example] 💬 Natural Ways to Express Regret
 > 
 > **Soft regrets:**
 > 
@@ -592,7 +591,7 @@
 
 ## 🗨️ E. Mini Speaking Drills
 
-> [!tip]- 🎤 Drill 1: Your Goals
+> [!tip] 🎤 Drill 1: Your Goals
 > 
 > **Answer these questions out loud:**
 > 
@@ -622,8 +621,8 @@
 > 9. I refuse to give up on my dream of studying abroad
 > 10. I've made progress in my pronunciation and confidence
 > ```
-
-> [!success]- 🎤 Drill 2: Giving Encouragement
+>
+> [!success] 🎤 Drill 2: Giving Encouragement
 > 
 > **Scenario: Your friend says these things. Respond!**
 > 
@@ -649,8 +648,8 @@
 > - Enthusiastic: "Keep going! You've got this!"
 > - Calm/supportive: "I know it's hard, but don't give up"
 > - Motivating: "Think how proud you'll be when you succeed!"
-
-> [!example]- 🎤 Drill 3: Wishes & Hypotheticals
+>
+> [!example] 🎤 Drill 3: Wishes & Hypotheticals
 > 
 > **Complete these sentences about yourself:**
 > 
@@ -677,7 +676,7 @@
 
 ## 🎯 F. Common Expressions Summary
 
-> [!quote]- 📝 Essential Phrases Cheat Sheet
+> [!quote] 📝 Essential Phrases Cheat Sheet
 > 
 > **Talking about goals:**
 > 
@@ -732,7 +731,7 @@
 
 ## 💪 G. Real-Life Application Practice
 
-> [!tip]- 🌟 Situation 1: Job Interview
+> [!tip] 🌟 Situation 1: Job Interview
 > 
 > **Question: "Tell me about a time you pushed yourself."**
 > 
@@ -763,8 +762,8 @@
 > pushing yourself, you can achieve more than 
 > you think."
 > ```
-
-> [!success]- 🌟 Situation 2: Encouraging a Colleague
+>
+> [!success] 🌟 Situation 2: Encouraging a Colleague
 > 
 > **Your colleague is struggling with a project:**
 > 
@@ -791,8 +790,8 @@
 > - If I were you, I'd...
 > - You've got this
 > - Keep going
-
-> [!example]- 🌟 Situation 3: Talking About Personal Goals
+>
+> [!example] 🌟 Situation 3: Talking About Personal Goals
 > 
 > **Casual conversation at a coffee break:**
 > 
@@ -858,7 +857,7 @@ mindmap
 
 ## 🔑 Key Takeaways
 
-> [!quote]- 💡 Remember These Core Patterns
+> [!quote] 💡 Remember These Core Patterns
 > 
 > **Most important phrases:**
 > 
@@ -889,7 +888,7 @@ mindmap
 
 ## 🔗 Connection to Next Section
 
-> [!note]- 🚀 What's Next?
+> [!note] 🚀 What's Next?
 > 
 > **You've mastered functional language. Now you're ready to:**
 > 
@@ -904,11 +903,9 @@ mindmap
 >     A[Vocabulary] --> B[Grammar]
 >     B --> C[Functional Language]
 >     C --> D[Reading/Writing/Speaking]
->     
 >     E[Words] --> F[Structures]
 >     F --> G[Natural phrases]
 >     G --> H[Real communication]
->     
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
 > ```

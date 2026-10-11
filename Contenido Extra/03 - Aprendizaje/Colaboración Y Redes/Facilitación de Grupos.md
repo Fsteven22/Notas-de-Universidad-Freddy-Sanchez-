@@ -1,7 +1,7 @@
 # Facilitación de Grupos
 
 >[!quote] _"Un facilitador no dirige el grupo hacia donde él quiere ir, sino que ayuda al grupo a descubrir hacia dónde quiere ir y cómo llegar allí."_ – **Roger Schwarz**
-
+>
 > [!info] **¿Qué es la Facilitación de Grupos?** 🎯  
 > La facilitación de grupos es el arte y la ciencia de guiar procesos para que los participantes alcancen sus objetivos de manera **efectiva, colaborativa e inclusiva**.  
 > El facilitador actúa como un catalizador **neutral**, potenciando la inteligencia colectiva sin imponer su agenda personal.
@@ -210,7 +210,7 @@ graph LR
 > 
 > - [[Liderazgo Situacional]]
 >     
-> - [[Comunicación Efectiva]]
+> - [[La Comunicación Efectiva]]
 >     
 > - [[Gestión de Conflictos]]
 >     

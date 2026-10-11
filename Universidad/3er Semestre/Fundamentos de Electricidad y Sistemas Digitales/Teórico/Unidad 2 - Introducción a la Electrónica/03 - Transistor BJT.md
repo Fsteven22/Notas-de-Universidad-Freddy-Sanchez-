@@ -81,11 +81,9 @@ dg-publish: true
 >     A{Estado del<br/>transistor} --> B[CORTE<br/>Ib = 0<br/>Ic ~ 0<br/>Vce = Vcc]
 >     A --> C[ACTIVA<br/>Ic = beta·Ib<br/>Vce variable]
 >     A --> D[SATURACION<br/>Ic = Icmax<br/>Vce ~ 0]
-> 
 >     B --> B1[Switch ABIERTO]
 >     C --> C1[AMPLIFICADOR]
 >     D --> D1[Switch CERRADO]
-> 
 >     style B fill:#ffe1e1
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
@@ -115,7 +113,6 @@ dg-publish: true
 >     P5{Vce > Vce_sat?}
 >     P5 -->|Si| P6[Region ACTIVA confirmada]
 >     P5 -->|No| P7[Transistor en SATURACION<br/>Vce = Vce_sat]
-> 
 >     style P1 fill:#e1f5ff
 >     style P2 fill:#e1ffe1
 >     style P3 fill:#fff4e1

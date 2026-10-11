@@ -390,12 +390,12 @@
 > - Kluger, A. N. & DeNisi, A. (1996). "The effects of feedback interventions on performance"
 > - Hattie, J. & Timperley, H. (2007). "The power of feedback"
 > - Edmondson, A. (2019). "The Fearless Organization: Creating psychological safety"
-
+>
 > [!link]+ **Conexiones con Otras Notas**
 > 
 > ### 📋 **Prerrequisitos Esenciales:**
 > 
-> - [[Comunicación Efectiva]] - Habilidades de comunicación base
+> - [[La Comunicación Efectiva]] - Habilidades de comunicación base
 > - [[Inteligencia Emocional]] - Manejo emocional en conversaciones
 > - [[Competencias Interpersonales]] - Habilidades de relación
 > 

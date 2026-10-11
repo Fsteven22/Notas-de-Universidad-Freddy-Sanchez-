@@ -11,7 +11,7 @@
 
 > [!tip]- ## 📊 Tipos de Software
 > El software se puede clasificar en dos categorías principales, que trabajan en conjunto para que la computadora funcione correctamente.
-
+>
 > [!tip]+ **Software de Sistema**
 >
 > | Tipo | Descripción | Ejemplos |
@@ -21,7 +21,7 @@
 > | **Herramientas de Sistema** | Programas que ayudan a mantener y gestionar el sistema operativo. | Antivirus, limpiadores de disco, desfragmentadores. |
 >
 > **Función:** El software de sistema es la capa base que asegura que los programas y el usuario puedan interactuar con el hardware de manera fluida y segura.
-
+>
 > [!tip]+ **Software de Aplicación**
 >
 > | Tipo | Descripción | Ejemplos |

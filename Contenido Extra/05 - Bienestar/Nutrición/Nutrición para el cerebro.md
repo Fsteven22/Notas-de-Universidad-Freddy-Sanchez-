@@ -47,7 +47,7 @@ graph TD
 > - **Mejora la concentración** durante períodos prolongados
 > - **Estabiliza el estado de ánimo** y reduce irritabilidad
 > - **Optimiza la memoria de trabajo** y procesamiento de información
-
+>
 > [!warning] 🚫 Carbohidratos a Evitar
 > 
 > - Azúcares refinados que causan **picos y caídas energéticas**
@@ -282,7 +282,7 @@ graph TD
 > - **Bacopa Monnieri**: Memoria y aprendizaje
 > - **Ginkgo Biloba**: Circulación cerebral
 > - **Rhodiola Rosea**: Adaptógeno para estrés
-
+>
 > [!warning] ⚠️ Precauciones con Suplementos
 > 
 > - **Consultar médico** antes de iniciar suplementación

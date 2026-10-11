@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🧮 Álgebra de Proposiciones
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿De qué trata el Álgebra de Proposiciones?
+> [!info] 💡 ¿De qué trata el Álgebra de Proposiciones?
 > 
 > El **álgebra de proposiciones** nos permite **demostrar equivalencias lógicas sin tablas de verdad**, manipulando expresiones paso a paso como en el álgebra ordinaria, justificando cada paso con una ley.
 > 
@@ -14,7 +18,7 @@
 
 ## 📋 Leyes de Referencia Rápida
 
-> [!success]- 🗂️ Tabla de leyes (para consultar al demostrar)
+> [!success] 🗂️ Tabla de leyes (para consultar al demostrar)
 > 
 > | Ley | Para $\vee$ | Para $\wedge$ |
 > |---|---|---|
@@ -35,7 +39,7 @@
 
 ## ✍️ ¿Cómo estructurar una demostración algebraica?
 
-> [!tip]- ⚙️ Formato estándar
+> [!tip] ⚙️ Formato estándar
 > 
 > Cada paso tiene la forma:
 > 
@@ -54,7 +58,7 @@
 
 ### Ejercicio 1
 
-> [!example]- 📝 Demostrar: $\neg p \wedge (q \vee p) \equiv \neg p \wedge q$
+> [!example] 📝 Demostrar: $\neg p \wedge (q \vee p) \equiv \neg p \wedge q$
 > 
 > $$\neg p \wedge (q \vee p)$$
 > $$\equiv (\neg p \wedge q) \vee (\neg p \wedge p) \qquad \text{(ley distributiva)}$$
@@ -66,7 +70,7 @@
 
 ### Ejercicio 2
 
-> [!example]- 📝 Demostrar la Ley de Absorción: $p \vee (p \wedge q) \Leftrightarrow p$
+> [!example] 📝 Demostrar la Ley de Absorción: $p \vee (p \wedge q) \Leftrightarrow p$
 > 
 > $$p \vee (p \wedge q)$$
 > $$\equiv (p \wedge V) \vee (p \wedge q) \qquad \text{(ley de identidad)}$$
@@ -79,7 +83,7 @@
 
 ### Ejercicio 3
 
-> [!example]- 📝 Demostrar: $p \wedge \neg q \Leftrightarrow p \wedge \neg(q \vee \neg p)$
+> [!example] 📝 Demostrar: $p \wedge \neg q \Leftrightarrow p \wedge \neg(q \vee \neg p)$
 > 
 > Partimos del lado derecho y llegamos al izquierdo:
 > 
@@ -94,7 +98,7 @@
 
 ### Ejercicio 4
 
-> [!example]- 📝 Demostrar: $((¬p \vee q) \vee r) \wedge ((¬p \vee q) \vee ¬r) \Leftrightarrow p \to q$
+> [!example] 📝 Demostrar: $((¬p \vee q) \vee r) \wedge ((¬p \vee q) \vee ¬r) \Leftrightarrow p \to q$
 > 
 > Sea $s = \neg p \vee q$ para simplificar la notación:
 > 
@@ -109,7 +113,7 @@
 
 ### Ejercicio 5
 
-> [!example]- 📝 Demostrar la Ley del Contrarrecíproco: $p \to q \equiv \neg q \to \neg p$
+> [!example] 📝 Demostrar la Ley del Contrarrecíproco: $p \to q \equiv \neg q \to \neg p$
 > 
 > Partimos del lado derecho:
 > 
@@ -123,7 +127,7 @@
 
 ## ⚠️ Observaciones Importantes
 
-> [!warning]- ⚠️ El condicional NO es asociativo
+> [!warning] ⚠️ El condicional NO es asociativo
 > 
 > A diferencia de $\vee$ y $\wedge$, el condicional **no es asociativo**:
 > 
@@ -140,7 +144,7 @@
 > 
 > Como $V \neq F$, las expresiones **no son equivalentes**. ❌
 
-> [!note]- 📋 La equivalencia lógica es una relación de equivalencia
+> [!note] 📋 La equivalencia lógica es una [[03 - Propiedades y Equivalencia|relación de equivalencia]]
 > 
 > La relación $P \equiv Q$ sobre el conjunto de todas las formas proposicionales cumple:
 > 
@@ -156,7 +160,7 @@
 
 ## 🎲 Aplicación — El Problema de los Baúles
 
-> [!example]- 🏴‍☠️ El Rey y el Tesoro
+> [!example] 🏴‍☠️ El Rey y el Tesoro
 > 
 > Como recompensa por salvar a su hija, el Rey te ofrece elegir uno de tres baúles. Solo uno contiene el tesoro; los otros dos están vacíos. Las inscripciones son:
 > 
@@ -187,8 +191,6 @@ graph LR
     C -->|"Ley 3"| D[...]
     D -->|"Ley n"| E[Expresión final ✅]
 
-    style A fill:#1e3a5f,color:#fff
-    style E fill:#2d6a4f,color:#fff
 ```
 
 ---

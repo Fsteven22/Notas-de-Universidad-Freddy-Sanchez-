@@ -354,7 +354,7 @@
 > - [[Liderazgo Situacional]] - Adaptación del estilo según madurez
 > - [[Desarrollo de Equipos]] - Crecimiento de capacidades colectivas
 > - [[Gestión de Proyectos]] - Estructura para delegaciones complejas
-> - [[Comunicación Efectiva]] - Herramientas para briefings claros
+> - [[La Comunicación Efectiva]] - Herramientas para briefings claros
 > - [[Feedback y Coaching]] - Desarrollo de personas
 > - [[Toma de Decisiones]] - Criterios para qué delegar
 > - [[Gestión del Tiempo]] - Liberación de tiempo para alto valor

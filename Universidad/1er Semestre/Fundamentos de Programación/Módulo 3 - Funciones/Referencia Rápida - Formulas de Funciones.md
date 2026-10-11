@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🔧 Tabla de Funciones en Python
 
 ## 🎯 Referencia Rápida - Módulo 3: Funciones

@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📐 Sistema de Referencia Espacial en ℝ³
 
 ## 🎯 Fundamentos del Espacio Tridimensional
 
-> [!info]- 💡 Introducción al Espacio ℝ³ El **espacio euclidiano tridimensional** ℝ³ es la extensión natural del plano cartesiano ℝ² a tres dimensiones. Representa el espacio físico en el que vivimos y es fundamental para la geometría analítica, física, ingeniería y computación gráfica.
+> [!info] 💡 Introducción al Espacio ℝ³ El **espacio euclidiano tridimensional** ℝ³ es la extensión natural del plano cartesiano ℝ² a tres dimensiones. Representa el espacio físico en el que vivimos y es fundamental para la geometría analítica, física, ingeniería y computación gráfica.
 > 
 > **Analogías útiles:**
 > 
@@ -19,7 +23,7 @@
 
 ### 📊 Definición de ℝ³
 
-> [!note]- 🌟 El Conjunto ℝ³ **Definición formal:**
+> [!note] 🌟 El Conjunto ℝ³ **Definición formal:**
 > 
 > ℝ³ = {(x, y, z) | x, y, z ∈ ℝ}
 > 
@@ -47,7 +51,7 @@
 
 ### 🔢 Coordenadas Cartesianas
 
-> [!example]- 🎯 Representación de Puntos **Notación estándar:**
+> [!example] 🎯 Representación de Puntos **Notación estándar:**
 > 
 > Un punto P en ℝ³ se denota: **P = (x, y, z)**
 > 
@@ -79,7 +83,7 @@
 
 ### 🎨 Visualización de Puntos
 
-> [!tip]- 👁️ Cómo Ubicar Puntos en ℝ³ **Proceso paso a paso para P = (x, y, z):**
+> [!tip] 👁️ Cómo Ubicar Puntos en ℝ³ **Proceso paso a paso para P = (x, y, z):**
 > 
 > 1. **Desde el origen O:**
 >     - Moverse x unidades en dirección del eje X
@@ -101,7 +105,7 @@
 
 ### 📦 Definición de Octantes
 
-> [!warning]- 🔷 División del Espacio en Octantes Los tres planos coordenados dividen el espacio ℝ³ en **ocho regiones** llamadas **octantes**, análogas a los cuadrantes del plano.
+> [!warning] 🔷 División del Espacio en Octantes Los tres planos coordenados dividen el espacio ℝ³ en **ocho regiones** llamadas **octantes**, análogas a los cuadrantes del plano.
 > 
 > **Octante I (Primer Octante):**
 > 
@@ -153,7 +157,7 @@
 
 ### 📋 Tabla Resumen de Octantes
 
-> [!example]- 📊 Clasificación Completa
+> [!example] 📊 Clasificación Completa
 > 
 > |Octante|Signo X|Signo Y|Signo Z|Condiciones|Ejemplo|
 > |---|---|---|---|---|---|
@@ -201,7 +205,7 @@ graph TD
 
 ## 🧪 Ejercicios de Aplicación
 
-> [!example]- 💪 Práctica con el Sistema de Referencia
+> [!example] 💪 Práctica con el Sistema de Referencia
 > 
 > **Nivel 1 - Identificación:** 🟢
 > 
@@ -238,7 +242,7 @@ graph TD
 
 ## 🔗 Conceptos Relacionados
 
-> [!tip]- 🌐 Sistemas de Coordenadas Alternativos
+> [!tip] 🌐 Sistemas de Coordenadas Alternativos
 > 
 > Además del sistema cartesiano, existen otros sistemas de coordenadas en ℝ³:
 > 
@@ -263,7 +267,7 @@ graph TD
 
 ## 🔗 Conexiones con Temas Siguientes
 
-> [!quote]- 🌟 Progresión del Curso
+> [!quote] 🌟 Progresión del Curso
 > 
 > **Base para:**
 > 
@@ -286,7 +290,7 @@ graph TD
 
 ## 💡 Consejos de Estudio
 
-> [!tip]- 🧠 Estrategias de Aprendizaje
+> [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para visualizar el espacio:**
 > 

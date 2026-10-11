@@ -184,7 +184,7 @@ _"**E**n **P**ráctica, **I**ntercambiamos **C**onocimiento"_
 >[!success] **📚 Lectura previa recomendada:**
 >
 >- [[Habilidades Sociales]] - Base para la interacción efectiva
->- [[Comunicación Efectiva]] - Herramientas para el intercambio de ideas
+>- [[La Comunicación Efectiva]] - Herramientas para el intercambio de ideas
 >- [[Inteligencia Emocional]] - Manejo de relaciones interpersonales
 
 ---

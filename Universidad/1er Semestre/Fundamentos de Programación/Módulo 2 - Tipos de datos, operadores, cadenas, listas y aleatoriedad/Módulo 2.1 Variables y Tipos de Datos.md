@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Variables y Tipos de Datos en Python 📦🔢
 
 > [!info] 📍 Contexto y Definición Las **variables** son los contenedores fundamentales de información en programación:

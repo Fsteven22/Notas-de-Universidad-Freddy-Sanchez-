@@ -3,12 +3,12 @@
 ## 📖 Contexto
 
 > [!info] Definición La Técnica Feynman es un método de aprendizaje y comprensión profunda que consiste en explicar conceptos complejos en términos simples, como si se estuviera enseñando a un niño de 12 años. Desarrollada por el físico Richard Feynman, se basa en el principio de que si no puedes explicar algo de manera sencilla, realmente no lo entiendes.
-
+>
 > [!tip] Origen del método 🏆 **Richard Feynman (1918-1988)**: Premio Nobel de Física 1965  
 > 🎓 **"The Great Explainer"**: Conocido por su habilidad excepcional para simplificar conceptos complejos  
 > 📚 **Filosofía educativa**: "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible"  
 > 🧠 **Insight clave**: La verdadera comprensión se revela cuando puedes enseñar el concepto a otros
-
+>
 > [!warning] Problema que resuelve El **conocimiento superficial** y la **ilusión de saber**: muchos estudiantes memorizan información sin comprenderla realmente, lo que lleva a olvido rápido y incapacidad para aplicar conocimientos en contextos nuevos.
 
 ## 🔧 Los 4 Pasos Fundamentales
@@ -31,7 +31,7 @@
 >    style D fill:#fce4ec
 >    style G fill:#e8eaf6
 > ```
-
+>
 > [!example] 📚 Paso 1: Elegir y escribir el concepto **🎯 Objetivo**: Seleccionar el tema a dominar y documentarlo
 > 
 > **📝 Proceso específico**:
@@ -49,7 +49,7 @@
 > - Para cada capítulo, identificar 3-5 conceptos clave específicos
 > - Crear una lista priorizada de conceptos por orden de dificultad
 > - Usar el syllabus para mapear conceptos por semana de estudio
-
+>
 > [!example] 🧑‍🏫 Paso 2: Enseñar como a un niño de 12 años **🎯 Objetivo**: Explicar el concepto usando lenguaje simple y cotidiano
 > 
 > **📋 Criterios de simplicidad**:
@@ -77,7 +77,7 @@
 > respiramos y agua, y los mezclan para hacer su propia comida. 
 > Es como si tuvieran una receta mágica que nosotros no podemos hacer."
 > ```
-
+>
 > [!example] 🔍 Paso 3: Identificar lagunas y confusiones **🎯 Objetivo**: Detectar áreas donde la explicación se vuelve confusa o compleja
 > 
 > **🚨 Señales de alerta**:
@@ -105,7 +105,7 @@
 >    style F fill:#e8f5e8
 >    style G fill:#fff3e0
 > ```
-
+>
 > [!example] 📖 Paso 4: Volver al material y simplificar **🎯 Objetivo**: Llenar lagunas y crear analogías poderosas
 > 
 > **🔄 Proceso de refinamiento**:
@@ -132,13 +132,13 @@
 > - **Elaboración activa**: Conecta nueva información con conocimiento previo
 > - **[[Metacognición]]**: Desarrolla conciencia sobre el propio entendimiento
 > - **Transferencia**: Facilita aplicación en contextos diferentes
-
+>
 > [!tip] Beneficios cognitivos comprobados ✅ **Retención a largo plazo**: Mejora la memoria permanente vs temporal  
 > ✅ **Comprensión profunda**: Distingue entre memorización y entendimiento real  
 > ✅ **Flexibilidad cognitiva**: Permite explicar desde múltiples perspectivas  
 > ✅ **Detección de errores**: Identifica malentendidos antes de exámenes  
 > ✅ **Confianza académica**: Reduce ansiedad por comprensión sólida
-
+>
 > [!warning] Errores comunes que evitar ❌ **Simplificar sin estudiar**: Intentar explicar sin dominar el material primero  
 > ❌ **Conformarse con jerga**: Aceptar que "es muy técnico para simplificar"  
 > ❌ **Explicar de memoria**: Repetir definiciones sin procesamiento propio  
@@ -158,13 +158,13 @@
 > **❌ Explicación técnica**: "F = ma establece que la fuerza neta aplicada a un objeto es proporcional a su aceleración"
 > 
 > **✅ Explicación Feynman**: "Es como empujar un carrito de supermercado. Si quieres que vaya más rápido (más aceleración), tienes que empujar más fuerte (más fuerza). Y si el carrito está más lleno (más masa), necesitas empujar mucho más fuerte para lograr la misma velocidad."
-
+>
 > [!example] 🧬 Ciencias Biológicas y Médicas **🦠 Ejemplo: Sistema Inmunitario**
 > 
 > **❌ Explicación técnica**: "Los linfocitos T citotóxicos reconocen antígenos presentados por MHC-I y activan apoptosis"
 > 
 > **✅ Explicación Feynman**: "Tu cuerpo es como un país con un ejército súper inteligente. Los soldados patrullan constantemente y conocen a todos los ciudadanos buenos. Cuando encuentran a un invasor (virus o bacteria), algunos soldados son como espías que lo reconocen y marcan, otros son como generales que coordinan el ataque, y otros son como soldados élite que van directo a destruir al enemigo. Es como un sistema de seguridad nacional, pero microscópico."
-
+>
 > [!example] 💼 Ciencias Sociales y Humanidades **📊 Economía - Ejemplo: Inflación**
 > 
 > **❌ Explicación técnica**: "La inflación es el incremento sostenido del nivel general de precios de bienes y servicios"
@@ -193,7 +193,7 @@
 > - Usar mapas mentales con vocabulario de 12 años
 > - Desarrollar cómics explicativos cortos
 > - Diseñar diagramas de flujo con analogías cotidianas
-
+>
 > [!example] 👥 Variaciones colaborativas **🤝 Feynman en Grupo**:
 > 
 > - **Round Robin**: Cada estudiante explica un concepto diferente
@@ -238,7 +238,7 @@
 >    style H fill:#ffebee
 >    style J fill=#ffebee
 > ```
-
+>
 > [!tip] Herramientas de autoevaluación **📋 Checklist post-explicación**:
 > 
 > - [ ] Usé solo palabras que un niño de 12 años conoce
@@ -276,7 +276,7 @@
 > - ⬆️ Calificación en cardiología: De 65% a 92%
 > - ⬆️ Confianza clínica: Mejor comunicación con pacientes
 > - ⬆️ Retención: Recordaba conceptos 6 meses después sin repasar
-
+>
 > [!example] 🔢 Estudiante de Ingeniería - Cálculo Integral **👤 Perfil**: Estudiante de 2do año, ingeniería mecánica, bloqueado con integrales
 > 
 > **📚 Concepto desafiante**: Integral Definida
@@ -300,7 +300,7 @@
 > - ⬆️ Nota en Cálculo II: De 60% a 88%
 > - ⬆️ Aplicación práctica: Mejor resolución de problemas de física
 > - ⬆️ Confianza matemática: Reducción significativa de ansiedad ante matemáticas
-
+>
 > [!example] 💼 Estudiante de MBA - Estrategia Empresarial **👤 Perfil**: Ejecutivo experimentado estudiando MBA part-time
 > 
 > **📚 Concepto desafiante**: Ventaja Competitiva Sostenible (Porter)
@@ -385,7 +385,7 @@
 > - Explicar desde perspectiva práctica/aplicada
 > - Explicar desde perspectiva crítica/limitaciones
 > - Sintetizar todas las perspectivas en comprensión integral
-
+>
 > [!warning] Limitaciones y consideraciones **⚠️ Cuándo NO usar Feynman**:
 > 
 > - **Memorización pura necesaria**: Fechas, fórmulas específicas, vocabulario

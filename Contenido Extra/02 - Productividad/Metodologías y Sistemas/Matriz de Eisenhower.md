@@ -7,7 +7,7 @@
 ## 🏛️ Filosofía de Eisenhower
 
 > [!quote] Principio Fundamental _"Lo que es importante rara vez es urgente, y lo que es urgente rara vez es importante"_ - Dwight D. Eisenhower
-
+>
 > [!tip] Mentalidad Estratégica vs. Reactiva
 > 
 > - **Reactiva**: Responder constantemente a lo urgente

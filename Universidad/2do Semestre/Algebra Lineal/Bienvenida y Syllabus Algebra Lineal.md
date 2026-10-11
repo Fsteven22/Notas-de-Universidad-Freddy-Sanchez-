@@ -72,7 +72,6 @@ dg-publish: true
 >     A --> D[Unidad 3\nTransformaciones Lineales]
 >     A --> E[Unidad 4\nProducto Interno]
 >     A --> F[Unidad 5\nValores y Vectores Propios]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1

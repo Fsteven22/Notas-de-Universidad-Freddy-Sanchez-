@@ -1,7 +1,7 @@
 # Evaluación Formativa vs Sumativa
 
 > [!quote] "La evaluación más poderosa es la que ayuda a los estudiantes a convertirse en sus propios maestros." - Grant Wiggins
-
+>
 > [!abstract]- ## 📊 Definición y Concepto Central La **evaluación educativa** se clasifica en dos enfoques fundamentales según su propósito y momento de aplicación. La **evaluación formativa** se centra en mejorar el aprendizaje durante el proceso, mientras que la **evaluación sumativa** busca certificar y medir logros al final de un período de aprendizaje.
 > 
 > ### 🧠 Principios Fundamentales de Evaluación
@@ -11,7 +11,7 @@
 > - **Retroalimentación efectiva**: La información debe ser útil y accionable
 > - **Alineación curricular**: Coherencia con objetivos de aprendizaje
 > - **Evidencia válida**: Los métodos deben medir lo que pretenden evaluar
-
+>
 > [!comparison]- ## ⚖️ Comparación Detallada: Formativa vs Sumativa
 > 
 > ```mermaid
@@ -54,7 +54,7 @@
 > |**Impacto emocional**|Motivador y de apoyo|Puede generar ansiedad|
 > |**Flexibilidad**|Alta adaptabilidad|Estructura rígida y estandarizada|
 > |**Participación del estudiante**|Activa y reflexiva|Principalmente receptiva|
-
+>
 > [!seedling]- ## 🌱 Evaluación Formativa: Herramientas y Estrategias
 > 
 > ### 🔄 Técnicas de Evaluación Continua
@@ -97,7 +97,7 @@
 > |**Oportuna**|Dar feedback cuando es útil|Corregir errores conceptuales en el momento|
 > |**Accionable**|Incluir pasos para mejorar|"Revisa las fuentes X e Y para fortalecer tu argumento"|
 > |**Balanceada**|Combinar fortalezas y áreas de mejora|"Excelente análisis + necesitas más evidencia"|
-
+>
 > [!trophy]- ## 🏆 Evaluación Sumativa: Formatos y Aplicaciones
 > 
 > ### 📋 Modalidades Tradicionales
@@ -135,7 +135,7 @@
 > - **Rúbricas holísticas**: Evaluación global del desempeño
 > - **Escalas de calificación**: Sistemas numéricos o alfabéticos
 > - **Portafolios de evidencia**: Colección sistemática de trabajos
-
+>
 > [!balance]- ## ⚖️ Integración Equilibrada de Ambos Enfoques
 > 
 > ### 🔄 Modelo de Evaluación Balanceada
@@ -162,7 +162,7 @@
 > |**Reducción de ansiedad**|Menor peso en evaluaciones únicas|Mejor bienestar emocional|
 > |**Metacognición**|Conciencia del propio aprendizaje|Autonomía y autorregulación|
 > |**Motivación intrínseca**|Enfoque en crecimiento personal|Mayor engagement académico|
-
+>
 > [!warning]- ## ⚠️ Desafíos y Limitaciones de Cada Enfoque
 > 
 > ### 🌱 Limitaciones de la Evaluación Formativa
@@ -187,7 +187,7 @@
 > |Ansiedad|Ambiente de apoyo y crecimiento|Preparación gradual y transparente|
 > |Subjetividad|Criterios explícitos y calibración|Evaluación ciega y múltiples evaluadores|
 > |Inequidad|Múltiples formas de demostrar competencia|Opciones diversas de evaluación|
-
+>
 > [!lightbulb]- ## 💡 Técnica de Estudio Específica: Método FASE
 > 
 > ### 🔍 Estructura FASE para Evaluación Integral
@@ -204,7 +204,7 @@
 > - **Tracking de objetivos**: Monitoreo sistemático de metas académicas
 > - **Portafolios digitales**: Documentación del crecimiento en el tiempo
 > - **Grupos de estudio peer-review**: Evaluación colaborativa entre pares
-
+>
 > [!brain]- ## 🧠 Neurociencia de la Evaluación
 > 
 > ### 🔬 Impacto Neurológico de Diferentes Tipos de Evaluación
@@ -236,7 +236,7 @@
 >    style C fill:#e8f5e8
 >    style D fill:#fff3e0
 > ```
-
+>
 > [!books]- ## 📚 Referencias y Profundización
 > 
 > [!quote]- ### Referencias Académicas

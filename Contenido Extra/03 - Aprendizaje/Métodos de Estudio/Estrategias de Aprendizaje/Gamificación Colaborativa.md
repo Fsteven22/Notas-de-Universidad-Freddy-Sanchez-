@@ -1,7 +1,7 @@
 # Gamificación Colaborativa
 
 > [!quote] "Los juegos revelan lo mejor y lo peor de nosotros. Pero cuando los diseñamos bien, revelan principalmente lo mejor." - Jane McGonigal
-
+>
 > [!abstract]- ## 🎮 Definición y Concepto Central La **Gamificación Colaborativa** es la aplicación de elementos, mecánicas y dinámicas de juego en contextos no lúdicos para fomentar la cooperación, el trabajo en equipo y el logro de objetivos compartidos. Combina la motivación intrínseca del juego con la construcción social del conocimiento.
 > 
 > ### 🧠 Principios Fundamentales
@@ -11,7 +11,7 @@
 > - **Progresión compartida**: Avance conjunto hacia metas comunes
 > - **Diversión con propósito**: Engagement through meaningful play
 > - **Feedback colectivo**: Retroalimentación que beneficia a todo el equipo
-
+>
 > [!game]- ## 🎲 Elementos de Juego en Contextos Colaborativos
 > 
 > ```mermaid
@@ -58,7 +58,7 @@
 > |**Feedback**|Performance individual|Progreso del equipo|
 > |**Narrativa**|Héroe solitario|Aventura épica grupal|
 > |**Medición**|Rankings individuales|Logros colectivos|
-
+>
 > [!tools]- ## 🛠️ Mecánicas Colaborativas Específicas
 > 
 > ### 🎯 Misiones y Desafíos Grupales
@@ -96,7 +96,7 @@
 > - **Especializaciones complementarias**: Habilidades únicas que se combinan
 > - **Mentorship interno**: Miembros más avanzados guían a novatos
 > - **Facilitador dinámico**: Liderazgo compartido según contexto
-
+>
 > [!rocket]- ## 🚀 Implementación en Contextos Educativos
 > 
 > ### 🎓 Aplicaciones Académicas
@@ -134,7 +134,7 @@
 >    Evaluación grupal         :2024-01-26, 2d
 >    Celebración logros        :2024-01-28, 1d
 > ```
-
+>
 > [!strategy]- ## 🧩 Estrategias de Diseño Efectivo
 > 
 > ### 🎨 Principios de Diseño Colaborativo
@@ -174,7 +174,7 @@
 > - **Strength-based assignments**: Tareas que aprovechan fortalezas individuales
 > - **Scaffolding peer support**: Sistemas que facilitan ayuda entre compañeros
 > - **Multiple contribution paths**: Diferentes formas de aportar valor al equipo
-
+>
 > [!warning]- ## ⚠️ Desafíos y Limitaciones
 > 
 > ### 🚧 Obstáculos Comunes
@@ -194,7 +194,7 @@
 > |**Conflictos**|Normas claras + team building|Mediación + restructuración de grupos|
 > |**Sobrecarga**|Introducción gradual + simplicidad|Simplificación + tutoriales adicionales|
 > |**Resistencia**|Onboarding cuidadoso + beneficios claros|Adaptación personalizada + soporte extra|
-
+>
 > [!brain]- ## 🧠 Psicología de la Motivación Colaborativa
 > 
 > ### 🎯 Teoría de la Autodeterminación Aplicada
@@ -230,7 +230,7 @@
 >    style I fill:#fce4ec
 >    style J fill:#f3e5f5
 > ```
-
+>
 > [!lightbulb]- ## 💡 Técnica de Estudio Específica: Método GUILD
 > 
 > ### 🏰 Framework GUILD para Gamificación Colaborativa
@@ -256,7 +256,7 @@
 > 3. **Guild treasury**: Puntos colectivos que se pueden "gastar" en beneficios grupales
 > 4. **Level progression**: Unlocks de nuevas herramientas y desafíos conforme avanza el semestre
 > 5. **Boss battles**: Proyectos finales que requieren todas las especialidades trabajando juntas
-
+>
 > [!books]- ## 📚 Referencias y Profundización
 > 
 > [!quote]- ### Referencias Académicas

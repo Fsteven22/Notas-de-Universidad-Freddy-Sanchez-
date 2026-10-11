@@ -77,7 +77,7 @@ graph TD
 > |Externo|Oportunidades (O)|Amenazas (T)|
 > |---|---|---|
 > |**Factores del Entorno**|- Tendencias favorables<br>- Nuevos mercados<br>- Tecnologías emergentes|- Competencia<br>- Cambios regulatorios<br>- Riesgos económicos|
-
+>
 > [!tip] 🎯 **Herramientas de Análisis**
 > 
 > - **Análisis PESTEL**: Político, Económico, Social, Tecnológico, Ecológico, Legal
@@ -346,7 +346,7 @@ graph TD
 
 - [[Liderazgo Situacional]] - Implementación a través de liderazgo
 - [[Creatividad y Innovación]] - Generación de ventajas competitivas
-- [[Comunicación Efectiva]] - Socialización de estrategias
+- [[La Comunicación Efectiva]] - Socialización de estrategias
 - [[Cultura Organizacional]] - Alineación cultural con estrategia
 
 ### Herramientas de Soporte

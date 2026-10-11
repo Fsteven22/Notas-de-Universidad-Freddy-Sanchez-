@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🗃️ Conjuntos, Cardinalidad y Subconjuntos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es un conjunto?
+> [!info] 💡 ¿Qué es un conjunto?
 >
 > La **Teoría de Conjuntos** es la base formal de las Matemáticas Discretas. Un conjunto es la estructura más fundamental sobre la que se construyen relaciones, funciones y estructuras más complejas.
 >
@@ -12,11 +16,6 @@
 >     A --> C[Cardinalidad]
 >     A --> D[Subconjuntos]
 >     A --> E[Conjunto potencia y conjuntos especiales]
->
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#f5e1ff
 > ```
 >
 > | Concepto | Descripción breve |
@@ -30,7 +29,7 @@
 
 ## 📖 Definición de Conjunto
 
-> [!note]- 📖 Definición — Conjunto y notación
+> [!note] 📖 Definición — Conjunto y notación
 >
 > Llamaremos **Conjunto** a cualquier colección de objetos. A estos objetos los llamaremos **elementos** o **miembros** del conjunto.
 >
@@ -55,7 +54,7 @@
 
 ## 🔢 Cardinalidad
 
-> [!note]- 🔢 Definición — Cardinal de un conjunto
+> [!note] 🔢 Definición — Cardinal de un conjunto
 >
 > Si A es un conjunto finito, definimos el **cardinal** de A, denotado |A|, como el número de elementos que contiene.
 >
@@ -83,7 +82,7 @@
 
 ## 🌐 Conjuntos Numéricos Estándar
 
-> [!note]- 🌐 Conjuntos de números más usados
+> [!note] 🌐 Conjuntos de números más usados
 >
 > En Matemáticas Discretas trabajamos frecuentemente con los siguientes conjuntos:
 >
@@ -101,7 +100,7 @@
 
 ## 🔍 Igualdad de Conjuntos
 
-> [!note]- 🔍 Definición — Igualdad
+> [!note] 🔍 Definición — Igualdad
 >
 > Diremos que A y B son **iguales**, denotado A = B, si tienen exactamente los mismos elementos:
 >
@@ -113,13 +112,13 @@
 >
 > > [!tip]- 💡 Observación
 > >
-> > La igualdad de conjuntos es una **relación de equivalencia** — es reflexiva, simétrica y transitiva.
+> > La igualdad de conjuntos es una **[[03 - Propiedades y Equivalencia|relación de equivalencia]]** — es reflexiva, simétrica y transitiva.
 
 ---
 
 ## 📦 Subconjuntos
 
-> [!note]- 📦 Definición 1 — Subconjunto ⊆
+> [!note] 📦 Definición 1 — Subconjunto ⊆
 >
 > Diremos que A es **subconjunto** de B, denotado A ⊆ B, si todo elemento de A también pertenece a B:
 >
@@ -135,7 +134,7 @@
 >
 > X = {1, 5}, Y = {1, 2, 3} → X ⊄ Y ✅ pues 5 ∉ Y.
 
-> [!note]- 📦 Definición 2 — Subconjunto propio ⊂
+> [!note] 📦 Definición 2 — Subconjunto propio ⊂
 >
 > Diremos que A es **subconjunto propio** de B, denotado A ⊂ B, si A ⊆ B pero A ≠ B:
 >
@@ -162,7 +161,7 @@
 
 ## 🧮 Conjunto Potencia
 
-> [!note]- 🧮 Definición — Conjunto Potencia P(A)
+> [!note] 🧮 Definición — Conjunto Potencia P(A)
 >
 > El **conjunto potencia** de A, denotado P(A), es el conjunto formado por **todos los subconjuntos** de A:
 >
@@ -192,7 +191,7 @@
 
 ## 📝 Ejercicios Propuestos
 
-> [!question]- 📋 Ejercicios
+> [!question] 📋 Ejercicios
 >
 > **1.** Sea A = {1, 2, 3} y B = {1, 2, 3, 4, 5}. Determina si A ⊆ B, B ⊆ A, o A = B.
 >
@@ -204,7 +203,7 @@
 >
 > **5.** ¿Cuántos subconjuntos tiene un conjunto de 5 elementos?
 
-> [!success]- ✅ Respuestas
+> [!success] ✅ Respuestas
 >
 > | # | Respuesta | Justificación |
 > |---|---|---|
@@ -238,18 +237,13 @@ graph TD
     E --> E1["P(A): todos los subconjuntos de A"]
     E --> E2["Cardinal de P(A) = 2^n"]
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#f5e1ff
 ```
 
 ---
 
 ## 🧩 Ejercicios Resueltos
 
-> [!example]- 📝 Ejercicio Resuelto 1 — Determinar igualdad de conjuntos
+> [!example] 📝 Ejercicio Resuelto 1 — Determinar igualdad de conjuntos
 >
 > **Problema:** Determina si A = B dado que:
 > - A = {x ∈ ℤ : x² ≤ 4}
@@ -271,7 +265,7 @@ graph TD
 >
 > Entonces A = {-2, -1, 0, 1, 2} = B. ✅ $\blacksquare$
 
-> [!example]- 📝 Ejercicio Resuelto 2 — Subconjuntos y conjunto potencia
+> [!example] 📝 Ejercicio Resuelto 2 — Subconjuntos y conjunto potencia
 >
 > **Problema:** Sea A = {∅, {1}, 2}. Responde:
 > a) ¿Cuántos elementos tiene A?
@@ -289,7 +283,7 @@ graph TD
 >
 > d) |P(A)| = 2³ = **8 elementos**. $\blacksquare$
 
-> [!example]- 📝 Ejercicio Resuelto 3 — Cardinal y subconjuntos propios
+> [!example] 📝 Ejercicio Resuelto 3 — Cardinal y subconjuntos propios
 >
 > **Problema:** Sea U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} y A = {x ∈ U : x es par}. Encuentra A y demuestra que A ⊂ U.
 >

@@ -70,7 +70,6 @@ dg-publish: true
 >     A --> F[Unidad 5\nArchivos y Excepciones]
 >     A --> G[Unidad 6\nGUI y Eventos]
 >     A --> H[Unidad 7\nConcurrencia]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1

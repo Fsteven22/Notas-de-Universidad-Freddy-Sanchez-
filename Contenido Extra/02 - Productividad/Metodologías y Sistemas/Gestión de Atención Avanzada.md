@@ -14,7 +14,7 @@
 > |**Atención Selectiva**|Filtrar información relevante|Variable|[[Eliminación de Distracciones]]|
 > |**Atención Dividida**|Procesar múltiples fuentes|2-10 min|[[Gestión de Reuniones Efectivas]]|
 > |**Atención Ejecutiva**|Control y regulación consciente|5-15 min|[[Toma de Decisiones]]|
-
+>
 > [!warning] ⚠️ Limitaciones Cognitivas
 > 
 > ### Factores que Degradan la Atención
@@ -57,7 +57,7 @@
 >     class A focusNode
 >     class B,C,D,E,F techniqueNode
 > ```
-
+>
 > [!info] 🔄 Ciclos de Atención Óptimos
 > 
 > ### Protocolo 90-20-10
@@ -87,7 +87,7 @@
 > - **Música Instrumental**: Para tareas creativas
 > - **Silencio Total**: Para análisis complejo
 > - **Sonidos Naturales**: Para recuperación
-
+>
 > [!warning] 🧪 Gestión de Estados Cognitivos
 > 
 > ### Matriz de Energía-Atención
@@ -139,7 +139,7 @@ quadrantChart
 > |**Frecuencia de Interrupciones**|Interrupciones / Hora de trabajo|<3|[[Dashboard Semanal]]|
 > |**Calidad de Output**|Tareas completadas / Tareas iniciadas|>80%|[[Análisis de Tiempo]]|
 > |**Recuperación de Foco**|Tiempo para retomar concentración|<5 min|Timer manual|
-
+>
 > [!warning] 🔄 Protocolo de Revisión Semanal
 > 
 > ### Checklist de Optimización
@@ -182,14 +182,14 @@ quadrantChart
 > - [[Autoconocimiento]] - Base para identificar patrones personales
 > - [[Definición de Propósito]] - Claridad en objetivos de atención
 > - [[Planificación Estratégica]] - Marco temporal para implementación
-
+>
 > [!tip] 🚀 Complementarias
 > 
 > - [[Gestión del Tiempo]] - Optimización temporal general
 > - [[Procesamiento por Lotes]] - Eficiencia en tareas similares
 > - [[Seguimiento de Picos de Energía]] - Sincronización con ritmos naturales
 > - [[Matriz de Eisenhower]] - Priorización de tareas por importancia/urgencia
-
+>
 > [!warning] 🔄 Metodologías Avanzadas
 > 
 > - [[Bullet Journal Method (BuJo)]] - Sistema de organización personal

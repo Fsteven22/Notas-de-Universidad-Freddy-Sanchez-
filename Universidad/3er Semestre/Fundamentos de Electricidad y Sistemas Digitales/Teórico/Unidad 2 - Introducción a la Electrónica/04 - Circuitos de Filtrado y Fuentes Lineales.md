@@ -18,7 +18,6 @@ dg-publish: true
 >     C --> D[Filtro]
 >     D --> E[Regulador]
 >     E --> F[CD estable<br/>a la carga]
-> 
 >     style A fill:#ffe1e1
 >     style C fill:#fff4e1
 >     style D fill:#e1f5ff
@@ -116,7 +115,6 @@ dg-publish: true
 > ```mermaid
 > graph LR
 >     A["Vin = Vm·sen(wt)"] --> B((Diodo)) --> C[Carga RL]
-> 
 >     style B fill:#fff4e1
 > ```
 > 
@@ -175,7 +173,6 @@ dg-publish: true
 >     B --> D[Descarga entre picos<br/>a través de RL]
 >     C --> E[Voltaje de rizado Vr]
 >     D --> E
-> 
 >     style B fill:#e1f5ff
 >     style E fill:#fff4e1
 > ```
@@ -220,7 +217,6 @@ dg-publish: true
 >     A -->|Rizado aceptable| C[Media onda +<br/>filtro capacitivo]
 >     B -->|Sí| D[Onda completa<br/>center-tap]
 >     B -->|No| E[Puente de diodos]
-> 
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
 >     style E fill:#e1f5ff

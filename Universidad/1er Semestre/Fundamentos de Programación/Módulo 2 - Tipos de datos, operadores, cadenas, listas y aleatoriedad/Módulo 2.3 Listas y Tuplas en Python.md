@@ -1,5 +1,6 @@
 ---
 
+dg-publish: true
 ---
 # Listas y Tuplas en Python 📋🔒
 
@@ -129,7 +130,6 @@
 >     C --> G[🔒 Inmutabilidad]
 >     C --> H[⚡ Mejor rendimiento]
 >     C --> I[🗝️ Puede ser clave en dict]
->     
 >     style B fill:#e8f5e8
 >     style C fill:#fff3e0
 >     style D fill:#e3f2fd

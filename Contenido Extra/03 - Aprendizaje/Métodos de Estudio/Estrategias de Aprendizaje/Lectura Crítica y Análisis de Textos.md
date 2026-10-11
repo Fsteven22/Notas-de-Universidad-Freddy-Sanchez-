@@ -111,7 +111,7 @@
 > - Sintetizar conclusiones principales
 > - Evaluar coherencia interna del texto
 > - Conectar con conocimientos previos y otros textos
-
+>
 > [!warning]+ **Técnica de los 6 Sombreros Críticos** Basada en Edward de Bono, adaptada para análisis textual:
 > 
 > |Sombrero|Enfoque|Preguntas Clave|
@@ -346,7 +346,7 @@
 > - Wolf, M. (2018). _Reader, Come Home: The Reading Brain in a Digital World_
 > - Liu, Z. (2005). "Reading comprehension in digital environments"
 > - Rapp, D. N. (2016). "The consequences of reading inaccurate information"
-
+>
 > [!link]+ **Conexiones con Otras Notas**
 > 
 > ### 📋 **Prerrequisitos Esenciales:**
@@ -363,7 +363,7 @@
 > 
 > ### 🚀 **Aplicaciones Avanzadas:**
 > 
-> - [[Comunicación Efectiva]] - Transmisión de análisis
+> - [[La Comunicación Efectiva]] - Transmisión de análisis
 > - [[Toma de Decisiones]] - Aplicación práctica del pensamiento crítico
 
 ---

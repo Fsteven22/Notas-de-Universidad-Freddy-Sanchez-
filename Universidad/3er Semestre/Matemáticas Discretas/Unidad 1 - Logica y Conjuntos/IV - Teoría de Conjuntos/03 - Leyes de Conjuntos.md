@@ -1,31 +1,29 @@
+---
+dg-publish: true
+---
+
 # ⚖️ Leyes de Conjuntos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son las leyes de conjuntos?
+> [!info] 💡 ¿Qué son las leyes de conjuntos?
 >
 > Las **leyes de conjuntos** son identidades que permiten simplificar y transformar expresiones con conjuntos, de manera similar a como el álgebra transforma expresiones numéricas. Todas se obtienen de las correspondientes leyes para proposiciones lógicas.
 >
 > ```mermaid
 > graph TD
->     A[Leyes de Conjuntos] --> B[Leyes de identidad<br/>y dominación]
+>     A[Leyes de Conjuntos] --> B[Leyes de identidad y dominación]
 >     A --> C[Leyes de complemento]
->     A --> D[Leyes conmutativas<br/>y asociativas]
+>     A --> D[Leyes conmutativas y asociativas]
 >     A --> E[Leyes distributivas]
 >     A --> F[Leyes de De Morgan]
->
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f5e1ff
 > ```
 
 ---
 
 ## 📋 Tabla de Leyes
 
-> [!note]- 📋 Leyes fundamentales — Referencia completa
+> [!note] 📋 Leyes fundamentales — Referencia completa
 >
 > Sea U el conjunto universal y A, B, C subconjuntos de U.
 >
@@ -81,7 +79,7 @@
 
 ## 🔍 Leyes de De Morgan — Detalle
 
-> [!note]- 🔍 Leyes de De Morgan
+> [!note] 🔍 Leyes de De Morgan
 >
 > Las leyes de De Morgan son especialmente importantes porque permiten transformar complementos de uniones e intersecciones:
 >
@@ -111,7 +109,7 @@
 
 ## 🧮 Demostraciones
 
-> [!example]- 📝 Ejemplo 1 — Demostración de la distributividad
+> [!example] 📝 Ejemplo 1 — Demostración de la distributividad
 >
 > **Teorema:** A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
 >
@@ -128,7 +126,7 @@
 >
 > Como x era arbitrario, la igualdad se cumple para todo elemento. $\blacksquare$
 
-> [!example]- 📝 Ejemplo 2 — Demostración de igualdad por doble contención
+> [!example] 📝 Ejemplo 2 — Demostración de igualdad por doble contención
 >
 > **Método alternativo:** Para demostrar que A = B se puede demostrar que A ⊆ B y B ⊆ A simultáneamente.
 >
@@ -148,9 +146,9 @@
 
 ## 🔁 Inclusión-Exclusión
 
-> [!note]- 🔁 Principio de Inclusión-Exclusión
+> [!note] 🔁 Principio de Inclusión-Exclusión
 >
-> El **principio de inclusión-exclusión** permite calcular el cardinal de la unión de conjuntos evitando contar elementos repetidos.
+> El **principio de inclusión-exclusión** permite calcular el cardinal de la [[02 - Operaciones y Diagramas de Venn|unión de conjuntos]] evitando contar elementos repetidos.
 >
 > **Para 2 conjuntos:**
 >
@@ -164,7 +162,7 @@
 > >
 > > Al sumar |A| + |B| + |C|, los elementos en exactamente dos conjuntos se cuentan dos veces — por eso se restan las intersecciones dobles. Pero al restarlas, los elementos en los tres conjuntos quedan sin contar — por eso se suma |A ∩ B ∩ C| al final.
 
-> [!example]- 📝 Ejemplo — Aplicación del principio de inclusión-exclusión
+> [!example] 📝 Ejemplo — Aplicación del principio de inclusión-exclusión
 >
 > En un grupo de 191 estudiantes:
 > - |F| = estudiantes de francés
@@ -186,7 +184,7 @@
 
 ## 📝 Ejercicios Propuestos
 
-> [!question]- 📋 Ejercicios
+> [!question] 📋 Ejercicios
 >
 > **1.** Usando las leyes de conjuntos, simplifica la expresión:
 >
@@ -202,7 +200,7 @@
 >
 > $$A \cup (A^c \cap B)$$
 
-> [!success]- ✅ Respuestas
+> [!success] ✅ Respuestas
 >
 > **1.**
 >
@@ -258,20 +256,13 @@ graph TD
     F --> F1["(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ"]
     F --> F2["(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ"]
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1e1
-    style F fill:#f5e1ff
-    style G fill:#e8ffe1
 ```
 
 ---
 
 ## 🧩 Ejercicios Resueltos
 
-> [!example]- 📝 Ejercicio Resuelto 1 — Simplificación con leyes
+> [!example] 📝 Ejercicio Resuelto 1 — Simplificación con leyes
 >
 > **Problema:** Simplifica la expresión (A ∩ Bᶜ) ∪ (A ∩ B).
 >
@@ -282,7 +273,7 @@ graph TD
 > $$= A \cap U \quad \text{(ley de complemento)}$$
 > $$= A \quad \text{(ley de identidad)} \quad \blacksquare$$
 
-> [!example]- 📝 Ejercicio Resuelto 2 — Demostración por doble contención
+> [!example] 📝 Ejercicio Resuelto 2 — Demostración por doble contención
 >
 > **Problema:** Demuestra que A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C).
 >
@@ -300,7 +291,7 @@ graph TD
 >
 > Por doble contención: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C). $\blacksquare$
 
-> [!example]- 📝 Ejercicio Resuelto 3 — De Morgan aplicado
+> [!example] 📝 Ejercicio Resuelto 3 — De Morgan aplicado
 >
 > **Problema:** Sea U = {1, 2, 3, 4, 5, 6}, A = {1, 2, 3} y B = {2, 3, 4}. Verifica la primera ley de De Morgan numéricamente.
 >

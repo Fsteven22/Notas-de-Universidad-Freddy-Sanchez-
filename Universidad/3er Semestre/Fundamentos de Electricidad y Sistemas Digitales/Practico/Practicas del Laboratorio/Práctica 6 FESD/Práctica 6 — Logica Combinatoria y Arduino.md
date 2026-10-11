@@ -227,7 +227,7 @@ dg-publish: true
 > - [ ] Comparo ventajas y desventajas de controlar con compuertas lógicas vs Arduino en una aplicación real.
 >
 > [!quote] 🔗 Conexiones
-> - Teoría: [[01 - Introducción a la Electrónica Digital]], [[02 - Minimización de Funciones Lógicas]] y [[07 - Circuitos Integrados de Logica Fija y Tablas de Verdad]]
+> - Teoría: [[01 - Introducción a la Electrónica Digital]], [[02 - Minimización de Funciones Lógicas]] y [[07 - Lógica fija y tablas de verdad]]
 > - Previa: [[Práctica 5 — Filtros Activos]]
 > - Equipos: [[Equipos del Laboratorio - FESD]]
 

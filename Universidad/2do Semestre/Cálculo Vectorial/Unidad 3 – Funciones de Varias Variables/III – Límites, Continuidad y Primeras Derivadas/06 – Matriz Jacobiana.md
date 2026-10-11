@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📘 Matriz Jacobiana
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por qué es importante la Matriz Jacobiana?
+> [!info] 💡 ¿Por qué es importante la Matriz Jacobiana?
 > 
 > Cuando trabajamos con funciones de una variable, la derivada nos dice cómo cambia la función. Pero, **¿qué pasa cuando tenemos una función que toma varios inputs y produce varios outputs?** La matriz Jacobiana es la generalización natural de la derivada a este contexto.
 > 
@@ -39,7 +43,7 @@
 
 ### 🔑 Definición Formal
 
-> [!example]- 🟢 Definición: Matriz Jacobiana
+> [!example] 🟢 Definición: Matriz Jacobiana
 > 
 > **Contexto:** Sea $\vec{F}: \mathbb{R}^n \to \mathbb{R}^m$ una función vectorial:
 > 
@@ -81,7 +85,7 @@
 
 ### 🎯 Casos Especiales
 
-> [!note]- 📋 Casos Importantes
+> [!note] 📋 Casos Importantes
 > 
 > ### 1. Función Escalar: $f: \mathbb{R}^n \to \mathbb{R}$
 > 
@@ -145,7 +149,7 @@
 
 ### Ejemplo 1: Función $\mathbb{R}^2 \to \mathbb{R}^2$
 
-> [!example]- 📝 Ejemplo 1: Transformación Simple
+> [!example] 📝 Ejemplo 1: Transformación Simple
 > 
 > **Función:** $$\vec{F}(x,y) = \begin{bmatrix} x + y \ xy \end{bmatrix}$$
 > 
@@ -186,7 +190,7 @@
 
 ### Ejemplo 2: Coordenadas Polares
 
-> [!example]- 📝 Ejemplo 2: Transformación a Polares
+> [!example] 📝 Ejemplo 2: Transformación a Polares
 > 
 > **Transformación:** De coordenadas cartesianas a polares
 > 
@@ -231,7 +235,7 @@
 
 ### Ejemplo 3: Función $\mathbb{R}^3 \to \mathbb{R}^2$
 
-> [!example]- 📝 Ejemplo 3: Dimensiones Diferentes
+> [!example] 📝 Ejemplo 3: Dimensiones Diferentes
 > 
 > **Función:** $$\vec{F}(x,y,z) = \begin{bmatrix} x^2 + y^2 \ xyz \end{bmatrix}$$
 > 
@@ -272,7 +276,7 @@
 
 ### Ejemplo 4: Coordenadas Esféricas
 
-> [!example]- 📝 Ejemplo 4: Transformación Esférica
+> [!example] 📝 Ejemplo 4: Transformación Esférica
 > 
 > **Transformación:** De coordenadas esféricas a cartesianas
 > 
@@ -316,7 +320,7 @@
 
 ## 🧮 Interpretación Geométrica
 
-> [!note]- 🎨 Visualización de la Jacobiana
+> [!note] 🎨 Visualización de la Jacobiana
 > 
 > ### Aproximación Lineal
 > 
@@ -390,7 +394,7 @@
 
 ## 🔧 Propiedades de la Matriz Jacobiana
 
-> [!note]- ⭐ Propiedades Fundamentales
+> [!note] ⭐ Propiedades Fundamentales
 > 
 > ### 1. Linealidad en las Funciones
 > 
@@ -457,7 +461,7 @@
 
 ## 📐 El Jacobiano (Determinante)
 
-> [!note]- 🎯 Determinante de la Jacobiana
+> [!note] 🎯 Determinante de la Jacobiana
 > 
 > ### Definición
 > 
@@ -520,7 +524,7 @@
 
 ## 📚 Regla de la Cadena Multivariable
 
-> [!note]- 🔗 Composición de Funciones
+> [!note] 🔗 Composición de Funciones
 > 
 > ### Teorema: Regla de la Cadena
 > 
@@ -595,7 +599,7 @@
 
 ### Aplicación 1: Cambio de Variables en Integrales
 
-> [!example]- 🔄 Integrales con Cambio de Coordenadas
+> [!example] 🔄 Integrales con Cambio de Coordenadas
 > 
 > **Problema:** Calcular
 > 
@@ -641,7 +645,7 @@
 
 ### Aplicación 2: Método de Newton para Sistemas
 
-> [!example]- 🔧 Resolución de Sistemas No Lineales
+> [!example] 🔧 Resolución de Sistemas No Lineales
 > 
 > **Problema:** Resolver el sistema no lineal
 > 
@@ -697,7 +701,7 @@
 
 ### Aplicación 3: Robótica - Cinemática Inversa
 
-> [!example]- 🤖 Brazo Robótico
+> [!example] 🤖 Brazo Robótico
 > 
 > **Problema:** Un brazo robótico con dos articulaciones.
 > 
@@ -732,7 +736,7 @@
 
 ### Aplicación 4: Machine Learning - Backpropagation
 
-> [!example]- 🧠 Redes Neuronales
+> [!example] 🧠 Redes Neuronales
 > 
 > **Contexto:** Red neuronal con función de pérdida $L(\vec{w})$ donde $\vec{w}$ son los pesos.
 > 
@@ -767,7 +771,7 @@
 
 ### Aplicación 5: Análisis de Sensibilidad
 
-> [!example]- 📊 Propagación de Errores
+> [!example] 📊 Propagación de Errores
 > 
 > **Problema:** Medir indirectamente una cantidad $\vec{y} = \vec{F}(\vec{x})$ con errores en $\vec{x}$.
 > 
@@ -808,7 +812,7 @@
 
 ## 🧮 Algoritmo: Cálculo de la Jacobiana
 
-> [!note]- 🔧 Procedimiento Sistemático
+> [!note] 🔧 Procedimiento Sistemático
 > 
 > ### Método Directo
 > 
@@ -852,7 +856,7 @@
 
 ## 📊 Tabla de Jacobianas Comunes
 
-> [!note]- 📋 Transformaciones Estándar
+> [!note] 📋 Transformaciones Estándar
 > 
 > |Transformación|Función|Jacobiana|Jacobiano|
 > |---|---|---|---|
@@ -868,7 +872,7 @@
 
 ## 🎓 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Nivel Básico
+> [!example] 💪 Práctica Nivel Básico
 > 
 > **1. Calcular Jacobianas:**
 > 
@@ -907,8 +911,8 @@
 > b) $\vec{F}(x,y) = \begin{bmatrix} x + y \ x - y \end{bmatrix}$
 > 
 > c) $\vec{F}(x,y) = \begin{bmatrix} x\cos\theta - y\sin\theta \ x\sin\theta + y\cos\theta \end{bmatrix}$ (rotación por ángulo $\theta$)
-
-> [!example]- 💪 Práctica Nivel Intermedio
+>
+> [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Regla de la cadena:**
 > 
@@ -945,8 +949,8 @@
 > b) Usar la Jacobiana para aproximar $\vec{F}(0.1, 0.1)$
 > 
 > c) Comparar con el valor exacto
-
-> [!example]- 💪 Práctica Nivel Avanzado
+>
+> [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Teorema de la función inversa:**
 > 
@@ -1002,7 +1006,7 @@
 
 ## ✅ Soluciones Selectas
 
-> [!success]- 🔑 Respuestas Ejercicios Básicos
+> [!success] 🔑 Respuestas Ejercicios Básicos
 > 
 > **1a)** $\vec{F}(x,y) = \begin{bmatrix} x^2 \ y^2 \end{bmatrix}$
 > 
@@ -1039,8 +1043,8 @@
 > $$\det(J_{\vec{F}}) = \cos^2\theta + \sin^2\theta = 1$$
 > 
 > Las rotaciones preservan áreas.
-
-> [!success]- 🔑 Respuestas Ejercicios Intermedios
+>
+> [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **5b)** Coordenadas elípticas:
 > 
@@ -1072,8 +1076,8 @@
 > $$\vec{F}(0.1, 0.1) = \begin{bmatrix} e^{0.2} \ \sin(0.1)\cos(0.1) \end{bmatrix} \approx \begin{bmatrix} 1.2214 \ 0.0995 \end{bmatrix}$$
 > 
 > Error pequeño, la aproximación es buena cerca del origen.
-
-> [!success]- 🔑 Respuestas Ejercicios Avanzados
+>
+> [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7.** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$
 > 
@@ -1157,7 +1161,7 @@
 
 ## 🌟 Conceptos Clave para Recordar
 
-> [!tip]- 💡 Puntos Esenciales
+> [!tip] 💡 Puntos Esenciales
 > 
 > ### Sobre la Matriz Jacobiana
 > 
@@ -1231,7 +1235,7 @@
 
 ## 🔗 Relaciones Importantes
 
-> [!quote]- 🌐 Conexiones con Otros Temas
+> [!quote] 🌐 Conexiones con Otros Temas
 > 
 > ### Prerequisitos:
 > 
@@ -1286,7 +1290,7 @@
 
 ## 📊 Mapa Conceptual
 
-> [!note]- 🌳 Árbol de Conceptos
+> [!note] 🌳 Árbol de Conceptos
 > 
 > ```
 > MATRIZ JACOBIANA
@@ -1345,7 +1349,7 @@
 
 ## ✨ Comentarios Finales
 
-> [!note]- 🎓 Para Llevar
+> [!note] 🎓 Para Llevar
 > 
 > ### Lo Esencial
 > 
@@ -1438,7 +1442,7 @@
 
 ## 📖 Fórmulas de Referencia Rápida
 
-> [!note]- 📋 Resumen de Fórmulas
+> [!note] 📋 Resumen de Fórmulas
 > 
 > ### Definición General
 > 

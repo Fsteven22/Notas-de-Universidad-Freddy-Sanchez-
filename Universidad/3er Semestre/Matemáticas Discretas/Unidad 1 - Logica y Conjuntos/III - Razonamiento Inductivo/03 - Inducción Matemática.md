@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔁 Inducción Matemática
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Para qué sirve la inducción matemática?
+> [!info] 💡 ¿Para qué sirve la inducción matemática?
 > 
 > La **inducción matemática** es una técnica de demostración que permite probar que una proposición $S(n)$ es verdadera para **todos los números naturales** (o para todo entero mayor o igual a un valor inicial $n_0$).
 > 
@@ -12,7 +16,7 @@
 
 ## 📐 Principio de Inducción Matemática (Simple)
 
-> [!note]- 📖 Principio de Inducción Matemática
+> [!note] 📖 Principio de Inducción Matemática
 > 
 > Suponga que se tiene una función proposicional $S(n)$, cuyo dominio de discurso es $\mathbb{N}$. Suponga que:
 > 
@@ -27,7 +31,7 @@
 
 ## 🔧 Estructura de una Demostración por Inducción
 
-> [!tip]- ⚙️ Pasos a seguir
+> [!tip] ⚙️ Pasos a seguir
 > 
 > ```
 > 1. PASO BASE:   Verificar que S(1) es verdadera.
@@ -44,7 +48,7 @@
 
 ## 📝 Ejemplos (Inducción Simple)
 
-> [!example]- 📝 Ejemplo 1 — Suma de los primeros $n$ impares
+> [!example] 📝 Ejemplo 1 — Suma de los primeros $n$ impares
 > 
 > **Teorema:** $1 + 3 + 5 + \cdots + (2n-1) = n^2$, para todo $n \in \mathbb{N}$.
 > 
@@ -72,7 +76,7 @@
 
 ## 📐 Principio Fuerte de Inducción Matemática
 
-> [!note]- 📖 Principio Fuerte de Inducción
+> [!note] 📖 Principio Fuerte de Inducción
 > 
 > Sea $n_0 \in \mathbb{Z}$ y $S(n)$ una función proposicional con dominio de discurso el conjunto de enteros mayores o iguales que $n_0$. Suponga que:
 > 
@@ -90,7 +94,7 @@
 
 ## 🔧 Estructura de la Inducción Fuerte
 
-> [!tip]- ⚙️ Pasos a seguir
+> [!tip] ⚙️ Pasos a seguir
 > 
 > ```
 > 1. PASO BASE:   Verificar S(n₀).
@@ -106,9 +110,9 @@
 
 ---
 
-## 🧮 Definición Auxiliar — Función Piso
+## 🧮 Definición Auxiliar — [[01 - Funciones|Función Piso]]
 
-> [!note]- 📖 Definición — Función Piso $\lfloor x \rfloor$
+> [!note] 📖 Definición — Función Piso $\lfloor x \rfloor$
 > 
 > Dado $x \in \mathbb{R}$, llamaremos **Piso** de $x$, denotado $\lfloor x \rfloor$, al **mayor entero que es menor o igual a $x$**.
 > 
@@ -125,7 +129,7 @@
 
 ## 📝 Ejemplos (Inducción Fuerte)
 
-> [!example]- 📝 Ejemplo 2 — Lista recursiva con función piso
+> [!example] 📝 Ejemplo 2 — Lista recursiva con función piso
 > 
 > Sea $C_n$ una lista de números definida por:
 > $$C_1 = 0 \qquad \text{y} \qquad C_n = C_{\lfloor n/2 \rfloor} + n, \quad \forall n > 1$$
@@ -166,7 +170,7 @@
 
 ## 📊 Comparación: Inducción Simple vs. Fuerte
 
-> [!success]- 🗂️ ¿Cuándo usar cada una?
+> [!success] 🗂️ ¿Cuándo usar cada una?
 > 
 > | Aspecto | Inducción Simple | Inducción Fuerte |
 > |---|---|---|
@@ -180,7 +184,7 @@
 
 ## 🏋️ Ejercicios Propuestos
 
-> [!question]- 📋 Ejercicios de la clase
+> [!question] 📋 Ejercicios de la clase
 > 
 > **Inducción simple:**
 > 
@@ -211,10 +215,10 @@
 
 ```mermaid
 graph TD
-    A[Proposición S n<br/>para todo n ∈ ℕ] --> B{¿Qué forma de inducción?}
+    A[Proposición S n para todo n ∈ ℕ] --> B{¿Qué forma de inducción?}
 
-    B --> C[Inducción Simple<br/>Hipótesis: S n verdadera]
-    B --> D[Inducción Fuerte<br/>Hipótesis: S k verdadera ∀ k menor que n]
+    B --> C[Inducción Simple Hipótesis: S n verdadera]
+    B --> D[Inducción Fuerte Hipótesis: S k verdadera ∀ k menor que n]
 
     C --> E[Paso base: S 1 verdadera]
     C --> F[Paso inductivo: S n → S n+1]
@@ -227,9 +231,6 @@ graph TD
     G --> I
     H --> I
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#4a2d6a,color:#fff
-    style I fill:#2d6a4f,color:#fff
 ```
 
 ---

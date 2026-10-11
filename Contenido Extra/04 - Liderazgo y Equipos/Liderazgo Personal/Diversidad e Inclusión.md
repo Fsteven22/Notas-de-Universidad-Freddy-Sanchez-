@@ -1,7 +1,7 @@
 # Diversidad e Inclusión 🌈
 
 > [!quote] "La diversidad es el motor de la innovación; la inclusión es el combustible que la impulsa hacia el éxito sostenible." - Verna Myers
-
+>
 > [!info]- 📊 **Conceptos Fundamentales**
 > 
 > ## 🎯 Definiciones Clave
@@ -41,7 +41,7 @@
 >     style C fill:#45B7D1,stroke:#2196F3,stroke-width:2px,color:#fff
 >     style D fill:#96CEB4,stroke:#4CAF50,stroke-width:2px,color:#fff
 > ```
-
+>
 > [!success]- 🎯 **Beneficios Estratégicos**
 > 
 > ## 📈 Impacto en el Rendimiento
@@ -83,7 +83,7 @@
 >       🔄 Adaptabilidad
 >       🎨 Perspectivas
 > ```
-
+>
 > [!tip]- 🛠️ **Estrategias de Implementación**
 > 
 > ## 🎯 Marco de Acción D&I
@@ -127,7 +127,7 @@
 > - **🎯 Inclusive Leadership Program**: Certificación para líderes
 > - **📚 Bias Interruption Training**: Talleres prácticos mensuales
 > - **🏆 D&I Champions Network**: Embajadores por área
-
+>
 > [!warning]- ⚠️ **Sesgos Inconscientes Comunes**
 > 
 > ## 🧠 Tipos de Sesgos y Contramedidas
@@ -168,7 +168,7 @@
 >     style D fill:#96CEB4,stroke:#4CAF50,color:#fff
 >     style E fill:#FECA57,stroke:#FF9800,color:#fff
 > ```
-
+>
 > [!gear]- ⚙️ **Herramientas y Métricas**
 > 
 > ## 📊 Dashboard de D&I
@@ -239,7 +239,7 @@
 > - [ ] 📋 Preguntas estructuradas estándar
 > - [ ] 🎯 Criterios de evaluación claros
 > - [ ] 🔄 Calibración entre entrevistadores
-
+>
 > [!example]- 🎯 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🏆 Casos de Éxito Empresarial
@@ -295,7 +295,7 @@
 >     style P fill:#96CEB4,stroke:#4CAF50,color:#fff
 >     style E fill:#FECA57,stroke:#FF9800,color:#fff
 > ```
-
+>
 > [!brain]- 🧠 **Técnica de Estudio: Perspective-Taking Method**
 > 
 > ## 🎯 Metodología de Perspectivas Múltiples
@@ -324,7 +324,7 @@
 > - **🎪 Simulation**: Practica conversaciones difíciles sobre D&I
 > - **📝 Journaling**: Reflexiona sobre biases identificados
 > - **🤝 Peer Discussion**: Comparte insights con perspectivas diferentes
-
+>
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -340,14 +340,14 @@
 > - **📊 Syndio**: Pay equity analytics
 > - **👥 Catalyst**: Research & benchmarking
 > - **🧠 Harvard IAT**: Implicit bias assessment
-
+>
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites
 > 
 > - [[Liderazgo Situacional]] - Base para liderazgo inclusivo
 > - [[Inteligencia Emocional]] - Habilidad para navegar diferencias
-> - [[Comunicación Efectiva]] - Comunicación intercultural
+> - [[La Comunicación Efectiva]] - Comunicación intercultural
 > - [[Gestión de Conflictos]] - Resolución de tensiones por diversidad
 > 
 > ### 🔗 Notas Complementarias

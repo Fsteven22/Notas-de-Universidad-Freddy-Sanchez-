@@ -3,7 +3,7 @@
 ## 🎯 Fundamentos de la Relajación
 
 > [!info] Definición La relajación es un estado de reducción de la tensión física y mental que permite al cuerpo y la mente restaurarse y recuperar energía. Es una respuesta opuesta al estrés que activa el sistema nervioso parasimpático.
-
+>
 > [!tip] Beneficios Comprobados
 > 
 > - 💤 Mejora la calidad del sueño
@@ -85,9 +85,9 @@ graph TD
 ## 📚 Referencias
 
 > [!quote] [[Respiración Consciente]] La respiración es el puente entre la relajación muscular y la calma mental
-
+>
 > [!quote] [[Gestión de la Energía Personal]] Las técnicas de relajación son fundamentales para la conservación y renovación energética
-
+>
 > [!quote] [[Mindfulness]] La atención plena potencia los efectos de cualquier técnica de relajación
 
 ## 📖 Notas Recomendadas

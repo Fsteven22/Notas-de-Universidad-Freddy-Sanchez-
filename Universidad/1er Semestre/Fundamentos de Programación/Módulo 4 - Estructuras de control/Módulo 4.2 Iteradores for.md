@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🔄 Iteradores 'for' en Python
 
 > [!info] 📋 Contexto
@@ -13,7 +17,7 @@
 >     # Bloque de código que se repetirá
 >     # Este código se ejecuta para cada elemento
 > ```
-
+>
 > [!note] 🔧 Elementos Clave
 > - **`for`**: Palabra clave que inicia el bucle
 > - **`variable_temporal`**: Variable que toma el valor de cada elemento

@@ -527,12 +527,12 @@
 > - Yukl, G. & Tracey, B. (1992). "Consequences of influence tactics used with subordinates, peers, and the boss"
 > - Higgins, C. et al. (2003). "Influence tactics and work outcomes: A meta-analysis"
 > - Flynn, F. J. (2003). "How much should I help and how often? The effects of generosity and frequency of favor exchange"
-
+>
 > [!link]+ **Conexiones con Otras Notas**
 > 
 > ### 📋 **Prerrequisitos Esenciales:**
 > 
-> - [[Comunicación Efectiva]] - Base de todas las interacciones
+> - [[La Comunicación Efectiva]] - Base de todas las interacciones
 > - [[Inteligencia Emocional]] - Lectura y manejo de emociones
 > - [[Competencias Interpersonales]] - Habilidades relacionales
 > 

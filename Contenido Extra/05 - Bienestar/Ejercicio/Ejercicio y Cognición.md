@@ -60,7 +60,7 @@ graph TD
 > - **Reducción de fatiga mental** hasta 65%
 > - **Mejora en velocidad** de procesamiento de información
 > - **Incremento en flexibilidad** cognitiva
-
+>
 > [!tip] 📊 Parámetros Óptimos Aeróbicos **Intensidad**: 65-75% frecuencia cardiaca máxima **Duración**: 30-60 minutos por sesión **Frecuencia**: 4-5 veces por semana **Progresión**: Aumentar 10% semanal en duración/intensidad
 
 ### 💪 Entrenamiento de Resistencia
@@ -79,7 +79,7 @@ graph TD
 > - **Reducción de ansiedad** y síntomas depresivos
 > - **Mejora en autoestima** y confianza cognitiva
 > - **Transferencia a tareas** que requieren inhibición
-
+>
 > [!warning] ⚡ Especificaciones de Entrenamiento de Fuerza **Intensidad**: 70-80% de 1RM (repetición máxima) **Series**: 3-4 por ejercicio **Repeticiones**: 8-12 para hipertrofia, 3-6 para fuerza **Frecuencia**: 2-3 veces por semana **Descanso**: 48-72 horas entre sesiones del mismo grupo muscular
 
 ### 🤸‍♀️ Ejercicios de Coordinación y Equilibrio

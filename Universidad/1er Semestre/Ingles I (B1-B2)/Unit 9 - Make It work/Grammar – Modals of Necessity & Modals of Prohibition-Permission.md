@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🎯 Grammar – Modals of Necessity & Modals of Prohibition/Permission
 
 ## 🌟 Part 1: MODALS OF NECESSITY

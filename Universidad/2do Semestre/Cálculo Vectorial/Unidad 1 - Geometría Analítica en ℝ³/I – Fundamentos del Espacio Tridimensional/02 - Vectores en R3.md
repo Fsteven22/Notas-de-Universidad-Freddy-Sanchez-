@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # ➡️ Vectores en ℝ³
 
 ## 🎯 Fundamentos de Vectores en el Espacio
 
-> [!info]- 💡 Introducción a los Vectores Tridimensionales Los **vectores en ℝ³** son magnitudes que poseen tanto **magnitud** (tamaño o longitud) como **dirección** y **sentido** en el espacio tridimensional. Son fundamentales para describir desplazamientos, fuerzas, velocidades y muchas otras cantidades físicas.
+> [!info] 💡 Introducción a los Vectores Tridimensionales Los **vectores en ℝ³** son magnitudes que poseen tanto **magnitud** (tamaño o longitud) como **dirección** y **sentido** en el espacio tridimensional. Son fundamentales para describir desplazamientos, fuerzas, velocidades y muchas otras cantidades físicas.
 > 
 > **Analogías útiles:**
 > 
@@ -24,7 +28,7 @@
 
 ### 📐 Definición Formal de Vector
 
-> [!note]- 🌟 Concepto Matemático de Vector **Definición:**
+> [!note] 🌟 Concepto Matemático de Vector **Definición:**
 > 
 > Un **vector en ℝ³** es un elemento del espacio vectorial tridimensional que puede representarse de múltiples formas:
 > 
@@ -62,17 +66,17 @@
 
 ### ✍️ Formas de Notación
 
-> [!example]- 📝 Convenciones de Escritura **Notaciones equivalentes para el mismo vector:**
+> [!example] 📝 Convenciones de Escritura **Notaciones equivalentes para el mismo vector:**
 > 
 > **1. Notación de flecha (más común):**
 > 
 > - **v**, **u**, **w** (negrita)
-> - v⃗, u⃗, w⃗ (con flecha)
+> - \vec{v}, \vec{u}, \vec{w} (con flecha)
 > 
 > **2. Notación con puntos (vector posición):**
 > 
-> - **Desde el origen:** OP⃗ donde P = (x, y, z)
-> - **Entre dos puntos:** AB⃗ desde A hasta B
+> - **Desde el origen:** O\vec{P} donde P = (x, y, z)
+> - **Entre dos puntos:** A\vec{B} desde A hasta B
 > 
 > **3. Notación de componentes:**
 > 
@@ -90,7 +94,7 @@
 
 ### 🎨 Interpretación Geométrica
 
-> [!tip]- 👁️ Visualización de Vectores **Representación gráfica:**
+> [!tip] 👁️ Visualización de Vectores **Representación gráfica:**
 > 
 > Un vector se dibuja como una **flecha** (segmento dirigido) donde:
 > 
@@ -109,7 +113,7 @@
 > **2. Vector posición:**
 > 
 > - Vector que va desde el origen O hasta un punto P
-> - Si P = (x, y, z), entonces OP⃗ = (x, y, z)
+> - Si P = (x, y, z), entonces O\vec{P} = (x, y, z)
 > 
 > **3. Equipolencia:**
 > 
@@ -120,14 +124,14 @@
 
 ### 📏 Fórmula Fundamental
 
-> [!warning]- 🔷 Cálculo del Vector AB⃗ **Dados dos puntos A y B en ℝ³:**
+> [!warning] 🔷 Cálculo del Vector A\vec{B} **Dados dos puntos A y B en ℝ³:**
 > 
 > - A = (x₁, y₁, z₁)
 > - B = (x₂, y₂, z₂)
 > 
 > **El vector que va de A hasta B es:**
 > 
-> **AB⃗ = B - A = (x₂ - x₁, y₂ - y₁, z₂ - z₁)**
+> **A\vec{B} = B - A = (x₂ - x₁, y₂ - y₁, z₂ - z₁)**
 > 
 > **Interpretación:**
 > 
@@ -139,20 +143,20 @@
 > 
 > **Propiedades:**
 > 
-> 1. **BA⃗ = -AB⃗** (vector opuesto)
-> 2. **AA⃗ = (0, 0, 0) = 0⃗** (vector cero)
-> 3. Si C es punto medio de AB, entonces AC⃗ = ½AB⃗
+> 1. **B\vec{A} = -A\vec{B}** (vector opuesto)
+> 2. **A\vec{A} = (0, 0, 0) = 0⃗** (vector cero)
+> 3. Si C es punto medio de AB, entonces A\vec{C} = ½A\vec{B}
 
 ### 📊 Ejemplos Detallados
 
-> [!example]- 🎯 Casos Prácticos **Ejemplo 1: Vector básico**
+> [!example] 🎯 Casos Prácticos **Ejemplo 1: Vector básico**
 > 
 > Dados A = (1, 2, 3) y B = (4, 6, 8)
 > 
-> Calcular AB⃗:
+> Calcular A\vec{B}:
 > 
 > ```
-> AB⃗ = B - A
+> A\vec{B} = B - A
 >    = (4, 6, 8) - (1, 2, 3)
 >    = (4-1, 6-2, 8-3)
 >    = (3, 4, 5)
@@ -166,10 +170,10 @@
 > 
 > Dados C = (5, -2, 7) y D = (1, 3, 4)
 > 
-> Calcular CD⃗:
+> Calcular C\vec{D}:
 > 
 > ```
-> CD⃗ = D - C
+> C\vec{D} = D - C
 >    = (1, 3, 4) - (5, -2, 7)
 >    = (1-5, 3-(-2), 4-7)
 >    = (-4, 5, -3)
@@ -181,15 +185,15 @@
 > 
 > **Ejemplo 3: Vector opuesto**
 > 
-> Usando los puntos anteriores, calcular DC⃗:
+> Usando los puntos anteriores, calcular D\vec{C}:
 > 
 > ```
-> DC⃗ = C - D
+> D\vec{C} = C - D
 >    = (5, -2, 7) - (1, 3, 4)
 >    = (4, -5, 3)
 > ```
 > 
-> **Verificación:** DC⃗ = -CD⃗ ✓
+> **Verificación:** D\vec{C} = -C\vec{D} ✓
 > 
 > ---
 > 
@@ -198,7 +202,7 @@
 > Un dron está en posición A = (10, 5, 20) metros y debe ir a B = (15, 12, 35) metros. ¿Qué vector de desplazamiento necesita?
 > 
 > ```
-> AB⃗ = (15, 12, 35) - (10, 5, 20)
+> A\vec{B} = (15, 12, 35) - (10, 5, 20)
 >    = (5, 7, 15) metros
 > ```
 > 
@@ -208,7 +212,7 @@
 
 ### 📦 Descomposición en Componentes
 
-> [!success]- 🟢 Análisis de Componentes **Dado un vector v = (v₁, v₂, v₃):**
+> [!success] 🟢 Análisis de Componentes **Dado un vector v = (v₁, v₂, v₃):**
 > 
 > **1. Componente en X (v₁):**
 > 
@@ -236,7 +240,7 @@
 
 ### 🎯 Vectores Unitarios Canónicos
 
-> [!note]- 📏 Base Estándar de ℝ³ **Los tres vectores fundamentales:**
+> [!note] 📏 Base Estándar de ℝ³ **Los tres vectores fundamentales:**
 > 
 > **Vector i (dirección X):**
 > 
@@ -275,7 +279,7 @@
 
 ### 🔍 Propiedades de las Componentes
 
-> [!tip]- ⚡ Características Importantes **1. Independencia:**
+> [!tip] ⚡ Características Importantes **1. Independencia:**
 > 
 > - Las componentes son independientes entre sí
 > - Modificar una componente no afecta las otras
@@ -305,7 +309,7 @@
 
 ### 📏 Definición y Cálculo
 
-> [!warning]- 🔶 Longitud del Vector **Dado un vector v = (v₁, v₂, v₃):**
+> [!warning] 🔶 Longitud del Vector **Dado un vector v = (v₁, v₂, v₃):**
 > 
 > **La magnitud o norma del vector es:**
 > 
@@ -330,7 +334,7 @@
 
 ### 📊 Ejemplos de Cálculo de Magnitud
 
-> [!example]- 🎯 Ejercicios Resueltos **Ejemplo 1: Vector básico**
+> [!example] 🎯 Ejercicios Resueltos **Ejemplo 1: Vector básico**
 > 
 > **v** = (3, 4, 0)
 > 
@@ -376,8 +380,8 @@
 > Un avión se desplaza desde A = (0, 0, 0) hasta B = (300, 400, 100) kilómetros. ¿Qué distancia recorrió?
 > 
 > ```
-> AB⃗ = (300, 400, 100)
-> Distancia = ||AB⃗|| = √(300² + 400² + 100²)
+> A\vec{B} = (300, 400, 100)
+> Distancia = ||A\vec{B}|| = √(300² + 400² + 100²)
 >                     = √(90000 + 160000 + 10000)
 >                     = √260000
 >                     ≈ 509.9 km
@@ -387,7 +391,7 @@
 
 ### ➕ Suma de Vectores
 
-> [!success]- ➕ Operación Fundamental **Dados u = (u₁, u₂, u₃) y v = (v₁, v₂, v₃):**
+> [!success] ➕ Operación Fundamental **Dados u = (u₁, u₂, u₃) y v = (v₁, v₂, v₃):**
 > 
 > **u + v = (u₁ + v₁, u₂ + v₂, u₃ + v₃)**
 > 
@@ -416,7 +420,7 @@
 
 ### ➖ Resta de Vectores
 
-> [!note]- ➖ Diferencia de Vectores **Dados u = (u₁, u₂, u₃) y v = (v₁, v₂, v₃):**
+> [!note] ➖ Diferencia de Vectores **Dados u = (u₁, u₂, u₃) y v = (v₁, v₂, v₃):**
 > 
 > **u - v = (u₁ - v₁, u₂ - v₂, u₃ - v₃)**
 > 
@@ -438,7 +442,7 @@
 
 ### ✖️ Multiplicación por Escalar
 
-> [!info]- ✖️ Escalamiento de Vectores **Dado un vector v = (v₁, v₂, v₃) y un escalar k ∈ ℝ:**
+> [!info] ✖️ Escalamiento de Vectores **Dado un vector v = (v₁, v₂, v₃) y un escalar k ∈ ℝ:**
 > 
 > **k·v = (k·v₁, k·v₂, k·v₃)**
 > 
@@ -470,7 +474,7 @@
 
 ### 🔵 Vector Cero
 
-> [!warning]- ⭕ El Vector Nulo **Definición:**
+> [!warning] ⭕ El Vector Nulo **Definición:**
 > 
 > **0** = (0, 0, 0) = 0**i** + 0**j** + 0**k**
 > 
@@ -489,7 +493,7 @@
 
 ### 🎯 Vectores Unitarios
 
-> [!success]- 📏 Vectores de Magnitud 1 **Definición:**
+> [!success] 📏 Vectores de Magnitud 1 **Definición:**
 > 
 > Un vector **u** es **unitario** si ||**u**|| = 1
 > 
@@ -522,7 +526,7 @@
 
 ### ↔️ Vectores Opuestos
 
-> [!note]- 🔄 Inversión de Sentido **Definición:**
+> [!note] 🔄 Inversión de Sentido **Definición:**
 > 
 > El **vector opuesto** de **v** = (v₁, v₂, v₃) es:
 > 
@@ -553,14 +557,14 @@ graph TD
     A --> D[Propiedades]
     
     B --> B1[Componentes<br/>v₁, v₂, v₃]
-    B --> B2[Notación<br/>v, v⃗, ⟨v₁,v₂,v₃⟩]
+    B --> B2[Notación<br/>v, \vec{v}, ⟨v₁,v₂,v₃⟩]
     B --> B3[Base canónica<br/>i, j, k]
     
     C --> C1[Suma/Resta<br/>u ± v]
     C --> C2[Mult. escalar<br/>k·v]
     C --> C3["Magnitud<br/>||v||"]
     
-    D --> D1[Vector entre puntos<br/>AB⃗ = B - A]
+    D --> D1[Vector entre puntos<br/>A\vec{B} = B - A]
     D --> D2["Vector unitario<br/>û = v/||v||"]
     D --> D3[Vector cero<br/>0 = 0,0,0]
     
@@ -575,19 +579,19 @@ graph TD
 
 ## 🧪 Ejercicios Integrales
 
-> [!example]- 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
 > 
 > 1. Dados A = (2, 1, 3) y B = (5, 4, 7), calcular:
->     - a) AB⃗
->     - b) BA⃗
->     - c) ||AB⃗||
+>     - a) A\vec{B}
+>     - b) B\vec{A}
+>     - c) ||A\vec{B}||
 > 
 > **Solución:**
 > 
 > ```
-> a) AB⃗ = (5-2, 4-1, 7-3) = (3, 3, 4)
-> b) BA⃗ = (2-5, 1-4, 3-7) = (-3, -3, -4) = -AB⃗
-> c) ||AB⃗|| = √(9 + 9 + 16) = √34 ≈ 5.83
+> a) A\vec{B} = (5-2, 4-1, 7-3) = (3, 3, 4)
+> b) B\vec{A} = (2-5, 1-4, 3-7) = (-3, -3, -4) = -A\vec{B}
+> c) ||A\vec{B}|| = √(9 + 9 + 16) = √34 ≈ 5.83
 > ```
 > 
 > 2. Expresar **v** = (4, -2, 6) en términos de **i**, **j**, **k**:
@@ -633,19 +637,19 @@ graph TD
 > **Nivel 3 - Avanzado:** 🔴
 > 
 > 5. Dados A = (1, 0, 2), B = (3, 4, 1) y C = (-1, 2, 3):
->     - a) Calcular AB⃗ + AC⃗
+>     - a) Calcular A\vec{B} + A\vec{C}
 >     - b) Encontrar el punto D tal que ABCD es un paralelogramo
 > 
 > **Solución:**
 > 
 > ```
-> a) AB⃗ = (3-1, 4-0, 1-2) = (2, 4, -1)
->    AC⃗ = (-1-1, 2-0, 3-2) = (-2, 2, 1)
->    AB⃗ + AC⃗ = (2-2, 4+2, -1+1) = (0, 6, 0)
+> a) A\vec{B} = (3-1, 4-0, 1-2) = (2, 4, -1)
+>    A\vec{C} = (-1-1, 2-0, 3-2) = (-2, 2, 1)
+>    A\vec{B} + A\vec{C} = (2-2, 4+2, -1+1) = (0, 6, 0)
 > 
-> b) En un paralelogramo: AB⃗ = DC⃗
->    Entonces: D + AB⃗ = C
->    D = C - AB⃗ = (-1, 2, 3) - (2, 4, -1)
+> b) En un paralelogramo: A\vec{B} = D\vec{C}
+>    Entonces: D + A\vec{B} = C
+>    D = C - A\vec{B} = (-1, 2, 3) - (2, 4, -1)
 >    D = (-3, -2, 4)
 > ```
 > 
@@ -660,16 +664,16 @@ graph TD
 > Punto de recogida P = (100, 80, 30)
 > Punto de entrega E = (150, 120, 40)
 > 
-> a) Vector total: OE⃗ = (150, 120, 40) - (0, 0, 50)
+> a) Vector total: O\vec{E} = (150, 120, 40) - (0, 0, 50)
 >                     = (150, 120, -10) metros
 > 
 > b) Trayectoria: O → P → E
 >    
->    OP⃗ = (100, 80, -20)
->    ||OP⃗|| = √(10000 + 6400 + 400) = √16800 ≈ 129.6 m
+>    O\vec{P} = (100, 80, -20)
+>    ||O\vec{P}|| = √(10000 + 6400 + 400) = √16800 ≈ 129.6 m
 >    
->    PE⃗ = (50, 40, 10)
->    ||PE⃗|| = √(2500 + 1600 + 100) = √4200 ≈ 64.8 m
+>    P\vec{E} = (50, 40, 10)
+>    ||P\vec{E}|| = √(2500 + 1600 + 100) = √4200 ≈ 64.8 m
 >    
 >    Distancia total = 129.6 + 64.8 = 194.4 metros
 > ```
@@ -678,7 +682,7 @@ graph TD
 
 ### ↕️ Definición de Paralelismo
 
-> [!warning]- 📏 Vectores con la Misma Dirección **Definición:**
+> [!warning] 📏 Vectores con la Misma Dirección **Definición:**
 > 
 > Dos vectores **u** y **v** son **paralelos** si uno es múltiplo escalar del otro.
 > 
@@ -717,17 +721,17 @@ graph TD
 
 ### 🔗 Puntos Colineales
 
-> [!tip]- 📍 Tres Puntos en Línea Recta **Definición:**
+> [!tip] 📍 Tres Puntos en Línea Recta **Definición:**
 > 
 > Tres puntos A, B, C son **colineales** si están sobre la misma recta.
 > 
 > **Condición equivalente:**
 > 
-> A, B, C son colineales ⟺ AB⃗ ∥ AC⃗
+> A, B, C son colineales ⟺ A\vec{B} ∥ A\vec{C}
 > 
 > **Método de verificación:**
 > 
-> Calcular AB⃗ y AC⃗, luego verificar si uno es múltiplo del otro.
+> Calcular A\vec{B} y A\vec{C}, luego verificar si uno es múltiplo del otro.
 > 
 > **Ejemplo:**
 > 
@@ -736,15 +740,15 @@ graph TD
 > B = (2, 4, 5)
 > C = (3, 6, 7)
 > 
-> AB⃗ = (1, 2, 2)
-> AC⃗ = (2, 4, 4)
+> A\vec{B} = (1, 2, 2)
+> A\vec{C} = (2, 4, 4)
 > 
-> AC⃗ = 2·AB⃗  → Son colineales ✓
+> A\vec{C} = 2·A\vec{B}  → Son colineales ✓
 > ```
 
 ## 📚 Propiedades Algebraicas Completas
 
-> [!note]- 🔢 Axiomas del Espacio Vectorial ℝ³ **ℝ³ con las operaciones de suma (+) y multiplicación escalar (·) forma un espacio vectorial:**
+> [!note] 🔢 Axiomas del Espacio Vectorial ℝ³ **ℝ³ con las operaciones de suma (+) y multiplicación escalar (·) forma un espacio vectorial:**
 > 
 > **A. Propiedades de la suma:**
 > 
@@ -766,7 +770,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌟 Enlaces Conceptuales
+> [!quote] 🌟 Enlaces Conceptuales
 > 
 > **Prerequisites (Prerrequisitos):**
 > 
@@ -800,7 +804,7 @@ graph TD
 
 ## 💡 Consejos de Estudio y Errores Comunes
 
-> [!tip]- 🧠 Estrategias de Aprendizaje **Para dominar vectores:**
+> [!tip] 🧠 Estrategias de Aprendizaje **Para dominar vectores:**
 > 
 > **1. Visualización:**
 > 
@@ -829,7 +833,7 @@ graph TD
 > 
 > ❌ **Error 2:** Orden en resta de puntos
 > 
-> - AB⃗ = B - A (NO A - B)
+> - A\vec{B} = B - A (NO A - B)
 > - Mnemotecnia: "final menos inicial"
 > 
 > ❌ **Error 3:** Olvidar raíz cuadrada en magnitud
@@ -849,13 +853,13 @@ graph TD
 
 ## 📊 Tabla Resumen de Vectores
 
-> [!example]- 📋 Compendio Completo
+> [!example] 📋 Compendio Completo
 > 
 > |Concepto|Notación|Fórmula|Ejemplo|
 > |---|---|---|---|
-> |**Vector**|**v**, v⃗|(v₁, v₂, v₃)|(3, -2, 5)|
+> |**Vector**|**v**, \vec{v}|(v₁, v₂, v₃)|(3, -2, 5)|
 > |**Magnitud**|\|**v**\||√(v₁² + v₂² + v₃²)|√(9+4+25) = √38|
-> |**Vector entre puntos**|AB⃗|B - A|(5,2,7)-(1,3,4)=(4,-1,3)|
+> |**Vector entre puntos**|A\vec{B}|B - A|(5,2,7)-(1,3,4)=(4,-1,3)|
 > |**Suma**|**u** + **v**|(u₁+v₁, u₂+v₂, u₃+v₃)|(1,2,3)+(4,5,6)=(5,7,9)|
 > |**Resta**|**u** - **v**|(u₁-v₁, u₂-v₂, u₃-v₃)|(5,7,9)-(1,2,3)=(4,5,6)|
 > |**Mult. escalar**|k**v**|(kv₁, kv₂, kv₃)|3(1,2,3)=(3,6,9)|

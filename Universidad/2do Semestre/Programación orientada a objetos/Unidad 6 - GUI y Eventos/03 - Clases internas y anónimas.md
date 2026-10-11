@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎭 Clases Internas y Anónimas (Vista General)
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son las Clases Internas?
+> [!info] 💡 ¿Qué son las Clases Internas?
 > 
 > Las **clases internas** (inner classes) son clases definidas **dentro de otras clases**. Java permite esta estructura para modelar relaciones muy estrechas entre componentes y crear código más organizado y encapsulado.
 > 
@@ -57,7 +61,7 @@ graph TB
 
 ### 📊 Jerarquía y Clasificación
 
-> [!note]- 🌳 Organización de Clases Internas
+> [!note] 🌳 Organización de Clases Internas
 > 
 > ```mermaid
 > classDiagram
@@ -66,31 +70,26 @@ graph TB
 >         +metodoPublico()
 >         // Puede contener:
 >     }
->     
 >     class ClaseInternaMiembro {
 >         <<Inner Class>>
 >         Accede a toda la clase externa
 >         Requiere instancia de externa
 >     }
->     
 >     class ClaseInternaLocal {
 >         <<Local Class>>
 >         Solo en método/bloque
 >         Variables finales/effectively final
 >     }
->     
 >     class ClaseAnonima {
 >         <<Anonymous Class>>
 >         Sin nombre explícito
 >         Implementa/extiende al vuelo
 >     }
->     
 >     class ClaseInternaEstatica {
 >         <<Static Nested Class>>
 >         No accede a instancia externa
 >         Funciona como clase normal
 >     }
->     
 >     ClaseExterna *-- ClaseInternaMiembro
 >     ClaseExterna *-- ClaseInternaLocal
 >     ClaseExterna *-- ClaseAnonima
@@ -108,7 +107,7 @@ graph TB
 
 ### 🔄 Flujo de Creación y Uso
 
-> [!example]- ⚡ Cómo se Relacionan las Clases
+> [!example] ⚡ Cómo se Relacionan las Clases
 > 
 > **Ciclo de vida de clases internas:**
 > 
@@ -117,16 +116,13 @@ graph TB
 >     participant M as Main/Cliente
 >     participant E as ClaseExterna
 >     participant I as ClaseInterna
->     
 >     M->>E: new ClaseExterna()
 >     E->>E: Constructor ejecutado
 >     Note over E: Instancia externa creada
->     
 >     M->>E: externa.new ClaseInterna()
 >     E->>I: Constructor ejecutado
 >     Note over I: Instancia interna creada
 >     Note over I: Tiene referencia a externa
->     
 >     M->>I: interna.metodo()
 >     I->>E: Accede a miembros privados
 >     E-->>I: Datos compartidos
@@ -147,7 +143,7 @@ graph TB
 
 ### 📝 Definición y Sintaxis
 
-> [!tip]- 🎯 Clases Internas No Estáticas
+> [!tip] 🎯 Clases Internas No Estáticas
 > 
 > Una **clase interna miembro** se define como un miembro más de la clase externa, junto con atributos y métodos. Cada instancia de la clase interna está **asociada a una instancia específica** de la clase externa.
 > 
@@ -186,18 +182,16 @@ graph TB
 >     A --> C[Requiere instancia<br/>de externa]
 >     A --> D[Puede tener cualquier<br/>modificador]
 >     A --> E[Referencia implícita<br/>Externa.this]
->     
 >     B --> B1[Atributos privados]
 >     B --> B2[Métodos privados]
 >     B --> B3[Otros miembros internos]
->     
 >     style A fill:#e1ffe1
 >     style B fill:#e1f5ff
 > ```
 
 ### 🛠️ Creación e Instanciación
 
-> [!success]- 🔨 Cómo Crear Instancias
+> [!success] 🔨 Cómo Crear Instancias
 > 
 > **1. Desde dentro de la clase externa:**
 > 
@@ -261,7 +255,6 @@ graph TB
 >     B --> C[3. Usar externa.new<br/>ClaseInterna]
 >     C --> D[4. Instancia interna<br/>creada]
 >     D --> E[5. Vinculada a<br/>instancia externa]
->     
 >     style A fill:#fff4e1
 >     style C fill:#e1f5ff
 >     style E fill:#e1ffe1
@@ -269,7 +262,7 @@ graph TB
 
 ### 💼 Casos de Uso Reales
 
-> [!example]- 🎯 Ejemplos Prácticos
+> [!example] 🎯 Ejemplos Prácticos
 > 
 > **Ejemplo 1: Iterador personalizado**
 > 
@@ -397,7 +390,7 @@ graph TB
 
 ### 📝 Definición y Alcance
 
-> [!tip]- 🔍 Clases Dentro de Métodos
+> [!tip] 🔍 Clases Dentro de Métodos
 > 
 > Una **clase interna local** se define **dentro de un método o bloque de código**. Su alcance se limita al bloque donde fue declarada y es útil para lógica muy específica.
 > 
@@ -438,13 +431,10 @@ graph TB
 >     A --> C[No puede tener<br/>modificadores estáticos]
 >     A --> D[Scope limitado<br/>al bloque]
 >     A --> E[Acceso a miembros<br/>de la externa]
->     
 >     B --> B1[final String x]
 >     B --> B2[int y - no modificada]
->     
 >     C --> C1[❌ No static]
 >     C --> C2[❌ No public/private<br/>en la definición]
->     
 >     style A fill:#fff4e1
 >     style B fill:#ffe1e1
 > ```
@@ -453,7 +443,7 @@ graph TB
 
 ### 🛠️ Casos de Uso
 
-> [!example]- 💡 Cuándo Usar Clases Locales
+> [!example] 💡 Cuándo Usar Clases Locales
 > 
 > **Ejemplo 1: Comparador temporal**
 > 
@@ -543,7 +533,7 @@ graph TB
 
 ### 📝 Concepto y Sintaxis
 
-> [!tip]- 🎨 Clases Sin Nombre
+> [!tip] 🎨 Clases Sin Nombre
 > 
 > Una **clase anónima** es una clase **sin nombre** que se declara e instancia en una sola expresión. Se usa para implementar interfaces o extender clases de forma rápida y directa.
 > 
@@ -576,7 +566,6 @@ graph TB
 >     B --> C[Llaves: cuerpo<br/>de la clase]
 >     C --> D[Implementar<br/>métodos]
 >     D --> E[Punto y coma<br/>final;]
->     
 >     style A fill:#fff4e1
 >     style C fill:#e1f5ff
 >     style E fill:#ffe1e1
@@ -594,7 +583,7 @@ graph TB
 
 ### 🛠️ Implementar Interfaces
 
-> [!success]- 🎯 Caso Más Común: Interfaces
+> [!success] 🎯 Caso Más Común: Interfaces
 > 
 > **Ejemplo 1: Runnable para hilos**
 > 
@@ -698,7 +687,7 @@ graph TB
 
 ### 🔄 Extender Clases
 
-> [!example]- 🏗️ Heredar de Clases Concretas
+> [!example] 🏗️ Heredar de Clases Concretas
 > 
 > **Ejemplo: Personalizar comportamiento de clase base**
 > 
@@ -772,7 +761,7 @@ graph TB
 
 ### 💡 Ventajas y Limitaciones
 
-> [!info]- ⚖️ Pros y Contras de Clases Anónimas
+> [!info] ⚖️ Pros y Contras de Clases Anónimas
 > 
 > **Ventajas:**
 > 
@@ -791,12 +780,10 @@ graph TB
 >     A --> C[❌ Solo 1 interfaz/clase]
 >     A --> D[❌Sin constructor<br/>personalizado]
 > A --> E[❌ Dificulta debugging]
-> 
 > B --> B1[Cada uso requiere<br/>nueva declaración]
 > C --> C1[No múltiples interfaces]
 > D --> D1[Solo constructor<br/>de la clase padre]
 > E --> E1[Nombres autogenerados<br/>Clase$1, Clase$2...]
-> 
 > style A fill:#ffe1e1
 > ```
 > 
@@ -838,7 +825,7 @@ graph TB
 
 ### 📝 Definición y Características
 
-> [!tip]- 🔧 Clases Anidadas Independientes
+> [!tip] 🔧 Clases Anidadas Independientes
 > 
 > Una **clase interna estática** (static nested class) se declara con el modificador `static`. A diferencia de las clases internas normales, **NO tiene acceso a la instancia de la clase externa**.
 > 
@@ -872,10 +859,8 @@ graph TB
 > graph LR
 >     A[Clase Interna<br/>Normal] --> B[Requiere instancia<br/>de externa]
 >     A --> C[Acceso total a<br/>miembros de instancia]
->     
 >     D[Clase Interna<br/>Estática] --> E[Independiente de<br/>instancia externa]
 >     D --> F[Solo miembros<br/>estáticos de externa]
->     
 >     style A fill:#e1ffe1
 >     style D fill:#f0e1ff
 > ```
@@ -892,7 +877,7 @@ graph TB
 
 ### 🛠️ Creación e Instanciación
 
-> [!success]- 🔨 Cómo Usar Clases Estáticas
+> [!success] 🔨 Cómo Usar Clases Estáticas
 > 
 > **Instanciación simple (no requiere instancia de externa):**
 > 
@@ -943,12 +928,10 @@ graph TB
 >     participant E as ClaseExterna
 >     participant I as Interna Normal
 >     participant S as Interna Estática
->     
 >     Note over M,S: Clase Interna Normal
 >     M->>E: externa = new Externa()
 >     M->>I: externa.new Interna()
 >     Note over I: Vinculada a externa
->     
 >     Note over M,S: Clase Interna Estática
 >     M->>S: new Externa.Interna()
 >     Note over S: Completamente independiente
@@ -956,7 +939,7 @@ graph TB
 
 ### 💼 Casos de Uso
 
-> [!example]- 🎯 Ejemplos Prácticos
+> [!example] 🎯 Ejemplos Prácticos
 > 
 > **Ejemplo 1: Builder Pattern**
 > 
@@ -1144,7 +1127,7 @@ graph TB
 
 ### 📊 Tabla Comparativa Completa
 
-> [!info]- 🔍 Todas las Clases Internas en Perspectiva
+> [!info] 🔍 Todas las Clases Internas en Perspectiva
 > 
 > |Característica|Miembro|Local|Anónima|Estática|
 > |---|---|---|---|---|
@@ -1160,22 +1143,18 @@ graph TB
 
 ### 🎯 Guía de Decisión
 
-> [!tip]- 🤔 ¿Qué Tipo Usar?
+> [!tip] 🤔 ¿Qué Tipo Usar?
 > 
 > ```mermaid
 > graph TD
 >     A{¿Necesitas un<br/>nombre?} -->|No| B{¿Método simple?}
 >     A -->|Sí| C{¿Acceso a<br/>instancia externa?}
->     
 >     B -->|Sí - 1 método| D[✅ Clase Anónima]
 >     B -->|No - múltiples| E[✅ Clase Local]
->     
 >     C -->|Sí| F{¿Scope<br/>específico?}
 >     C -->|No| G[✅ Clase Interna<br/>Estática]
->     
 >     F -->|Método| E
 >     F -->|Clase completa| H[✅ Clase Interna<br/>Miembro]
->     
 >     style D fill:#ffe1f5
 >     style E fill:#fff4e1
 >     style G fill:#f0e1ff
@@ -1199,7 +1178,7 @@ graph TB
 
 ### ✅ Checklist de Buenas Prácticas
 
-> [!success]- 🏆 Recomendaciones Profesionales
+> [!success] 🏆 Recomendaciones Profesionales
 > 
 > **1. Encapsulación: Ocultar clases auxiliares**
 > 
@@ -1292,7 +1271,7 @@ graph TB
 
 ### ⚠️ Errores Comunes
 
-> [!warning]- 🚨 Trampas Frecuentes
+> [!warning] 🚨 Trampas Frecuentes
 > 
 > **1. Olvidar que clase interna necesita instancia externa**
 > 
@@ -1386,7 +1365,7 @@ graph TB
 
 ### 📊 Evolución del Lenguaje
 
-> [!info]- 🚀 Desde Java 8: Una Alternativa Más Limpia
+> [!info] 🚀 Desde Java 8: Una Alternativa Más Limpia
 > 
 > **Comparación sintáctica:**
 > 
@@ -1452,7 +1431,7 @@ graph TB
 
 ## 🎓 Ejercicios Prácticos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Ejercicio 1: Implementar ArrayList con iterador**
 > 
@@ -1702,7 +1681,7 @@ mindmap
 
 ### 📋 Tabla de Decisión Rápida
 
-> [!success]- 🎯 Guía Rápida de Elección
+> [!success] 🎯 Guía Rápida de Elección
 > 
 > | Pregunta | Sí → | No → |
 > |----------|------|------|
@@ -1717,7 +1696,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Continuando el Aprendizaje
+> [!quote] 🌟 Continuando el Aprendizaje
 > 
 > **Has aprendido:**
 > 

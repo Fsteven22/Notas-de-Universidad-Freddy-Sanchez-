@@ -3,7 +3,7 @@
 ## 🎯 Contexto
 
 > [!info] Definición Los hábitos de estudio son patrones de comportamiento sistemáticos y repetitivos que facilitan la adquisición, procesamiento y retención de conocimiento. Estos hábitos, cuando se practican consistentemente, se vuelven automáticos y optimizan significativamente el proceso de aprendizaje.
-
+>
 > [!tip] Importancia científica 🧠 La neurociencia demuestra que los hábitos se almacenan en los ganglios basales, liberando recursos cognitivos para el aprendizaje profundo y la comprensión compleja.
 
 ## 🔧 Componentes Fundamentales
@@ -22,7 +22,7 @@
 >    style C fill:#e8f5e8
 >    style D fill:#fff3e0
 > ```
-
+>
 > [!abstract] Variables principales
 > 
 > - **🕐 Tiempo**: Duración, horarios y frecuencia de estudio
@@ -46,7 +46,7 @@
 > - Crear resúmenes después de cada sesión
 > - Mantener un diario de aprendizaje
 > - Organizar archivos digitales sistemáticamente
-
+>
 > [!example] Hábitos de Concentración **🎯 Enfoque**:
 > 
 > - Eliminar distracciones antes de comenzar
@@ -60,7 +60,7 @@
 > - Alternar materias para mantener la atención
 > - Usar técnicas de recuperación activa
 > - Implementar pausas estratégicas
-
+>
 > [!example] Hábitos de Retención **🔄 Repaso**:
 > 
 > - Revisar contenido en intervalos espaciados
@@ -92,7 +92,7 @@
 >    H --> D
 >    I --> J[➕ Agregar nuevo hábito]
 > ```
-
+>
 > [!warning] Reglas de oro para la formación
 > 
 > 1. **🎯 Specificity**: Define hábitos concretos y medibles
@@ -110,7 +110,7 @@
 > - La **repetición consistente** crea mielina en conexiones neuronales
 > - Los **disparadores ambientales** activan respuestas automáticas
 > - Las **recompensas** liberan dopamina, reforzando el comportamiento
-
+>
 > [!tip] Factores de éxito ✅ **Contexto estable**: Mismo lugar y hora  
 > ✅ **Progreso visible**: Tracking y métricas claras  
 > ✅ **Recompensas inmediatas**: Satisfacción instantánea  
@@ -132,7 +132,7 @@
 > - Calendario de pared con stickers
 > - Tablero Kanban físico
 > - Habit tracker imprimible
-
+>
 > [!warning] Errores comunes a evitar ❌ **Sobreambición**: Intentar cambiar todo a la vez  
 > ❌ **Perfeccionismo**: Abandonar tras una falla  
 > ❌ **Falta de especificidad**: Objetivos vagos e inmensurables  
@@ -158,7 +158,7 @@
 > - Disparador: Fin del desayuno
 > - Rutina: 15 min repaso del día anterior
 > - Recompensa: Música motivacional
-
+>
 > [!example] Hábito de notas efectivas
 > 
 > ```mermaid
@@ -192,7 +192,7 @@
 > - Satisfacción con el progreso académico
 > - Reducción del estrés relacionado con estudios
 > - Confianza en las habilidades de aprendizaje
-
+>
 > [!tip] Herramientas de autoevaluación **Preguntas semanales**:
 > 
 > 1. ¿Cuáles hábitos mantuve consistentemente?

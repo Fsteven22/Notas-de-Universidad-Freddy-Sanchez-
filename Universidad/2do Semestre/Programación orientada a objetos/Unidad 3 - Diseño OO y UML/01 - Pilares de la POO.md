@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🏛️ Pilares de la Programación Orientada a Objetos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son los Pilares de la POO?
+> [!info] 💡 ¿Qué son los Pilares de la POO?
 > 
 > Los **4 pilares fundamentales** son principios de diseño que estructuran cómo organizamos y relacionamos clases y objetos. Son la base conceptual que distingue la POO de otros paradigmas.
 > 
@@ -42,7 +46,7 @@ mindmap
 
 ### 📦 Concepto
 
-> [!tip]- 🛡️ ¿Qué es la Encapsulación?
+> [!tip] 🛡️ ¿Qué es la Encapsulación?
 > 
 > La **encapsulación** es el principio de **ocultar los detalles internos** de un objeto y exponer solo lo necesario a través de una interfaz pública.
 > 
@@ -61,7 +65,7 @@ mindmap
 
 ### 🛠️ Implementación
 
-> [!example]- 💰 Ejemplo: Cuenta Bancaria
+> [!example] 💰 Ejemplo: Cuenta Bancaria
 > 
 > **❌ SIN encapsulación:**
 > 
@@ -129,7 +133,7 @@ mindmap
 
 ### 🌳 Concepto
 
-> [!tip]- 🧬 ¿Qué es la Herencia?
+> [!tip] 🧬 ¿Qué es la Herencia?
 > 
 > La **herencia** permite crear nuevas clases basadas en clases existentes, **reutilizando** y **extendiendo** su funcionalidad. Es una relación **"ES-UN"** (is-a).
 > 
@@ -160,7 +164,7 @@ graph TB
 
 ### 🛠️ Implementación
 
-> [!example]- 👔 Ejemplo: Jerarquía de Empleados
+> [!example] 👔 Ejemplo: Jerarquía de Empleados
 > 
 > **Superclase:**
 > 
@@ -224,8 +228,8 @@ graph TB
 > // Salario: $3500
 > // Bono: $500
 > ```
-
-> [!warning]- ⚠️ Puntos Importantes
+>
+> [!warning] ⚠️ Puntos Importantes
 > 
 > **1. Java solo permite herencia simple:**
 > 
@@ -261,7 +265,7 @@ graph TB
 
 ### 🔄 Concepto
 
-> [!tip]- 🎨 ¿Qué es el Polimorfismo?
+> [!tip] 🎨 ¿Qué es el Polimorfismo?
 > 
 > El **polimorfismo** permite que objetos de diferentes clases sean tratados como objetos de una clase común, pero **comportándose de manera específica** según su tipo real.
 > 
@@ -286,7 +290,7 @@ graph TB
 
 ### 🛠️ Implementación
 
-> [!example]- 🐾 Ejemplo: Polimorfismo en Acción
+> [!example] 🐾 Ejemplo: Polimorfismo en Acción
 > 
 > **Jerarquía:**
 > 
@@ -350,8 +354,8 @@ graph TB
 > // Michi: ¡Miau!
 > // Toby: ¡Guau!
 > ```
-
-> [!success]- 🚀 Ventajas del Polimorfismo
+>
+> [!success] 🚀 Ventajas del Polimorfismo
 > 
 > **1. Código extensible sin modificar existente:**
 > 
@@ -387,7 +391,7 @@ graph TB
 
 ### 🌟 Concepto
 
-> [!tip]- 🎯 ¿Qué es la Abstracción?
+> [!tip] 🎯 ¿Qué es la Abstracción?
 > 
 > La **abstracción** es el proceso de **ocultar los detalles de implementación** y mostrar solo la funcionalidad esencial. Define **QUÉ** hace algo, no **CÓMO** lo hace.
 > 
@@ -416,7 +420,7 @@ graph TB
 
 ### 🛠️ Clases Abstractas
 
-> [!example]- 🏗️ Implementación
+> [!example] 🏗️ Implementación
 > 
 > **Definición:**
 > 
@@ -502,7 +506,7 @@ graph TB
 
 ### 🛠️ Interfaces
 
-> [!example]- 🔌 Implementación de Interfaces
+> [!example] 🔌 Implementación de Interfaces
 > 
 > **Definición:**
 > 
@@ -554,8 +558,8 @@ graph TB
 > Nadador n = new Pato();
 > n.nadar();  // El pato nada
 > ```
-
-> [!info]- 📊 Clase Abstracta vs Interface
+>
+> [!info] 📊 Clase Abstracta vs Interface
 > 
 > |Aspecto|Clase Abstracta|Interface|
 > |---|---|---|
@@ -590,7 +594,7 @@ graph LR
     style G fill:#ffe1f5
 ```
 
-> [!example]- 🚗 Ejemplo Integrador
+> [!example] 🚗 Ejemplo Integrador
 > 
 > ```java
 > // ABSTRACCIÓN - Define contrato
@@ -671,7 +675,7 @@ mindmap
       QUÉ no CÓMO
 ```
 
-> [!success]- ✅ Checklist de Aplicación
+> [!success] ✅ Checklist de Aplicación
 > 
 > **Encapsulación:** SIEMPRE
 > 
@@ -697,7 +701,7 @@ mindmap
 
 ## 🎯 Ejemplo Final Completo
 
-> [!example]- 💳 Sistema Bancario Integrador
+> [!example] 💳 Sistema Bancario Integrador
 > 
 > ```java
 > // ABSTRACCIÓN + ENCAPSULACIÓN

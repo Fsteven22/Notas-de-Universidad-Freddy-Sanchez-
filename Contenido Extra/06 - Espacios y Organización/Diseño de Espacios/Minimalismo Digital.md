@@ -5,7 +5,7 @@
 ## 🧠 Fundamentos Filosóficos
 
 > [!tip] 💡 Principios Centrales **1. Principio de Valor**: Solo usar tecnología que sirva algo que valoras profundamente **2. Principio de Optimización**: Determinar la mejor forma de usar la tecnología para apoyar tus valores **3. Principio de Intencionalidad**: Ser consciente y deliberado sobre cuándo y cómo usas la tecnología
-
+>
 > [!warning] ⚠️ El Costo Oculto de la Hiperconexión
 > 
 > - **Fragmentación de la atención**: Cambio constante entre aplicaciones

@@ -14,7 +14,7 @@
 > - **Funcional**: Modificación en la fuerza de las conexiones sinápticas
 > - **Sináptica**: Creación y eliminación de sinapsis
 > - **Neurogénesis**: Formación de nuevas neuronas (principalmente en hipocampo)
-
+>
 > [!warning] 🕐 Ventanas Críticas de Aprendizaje **Períodos Sensibles:**
 > 
 > - **Lenguaje**: 0-7 años (máxima plasticidad)
@@ -81,7 +81,7 @@ graph TD
 > 4. **Activación de cascadas de señalización** (CaMKII, PKA, CREB)
 > 5. **Síntesis de nuevas proteínas** para fortalecer sinapsis
 > 6. **Cambios estructurales duraderos** en espinas dendríticas
-
+>
 > [!info] 🧪 Neurotransmisores Clave **Acetilcolina:**
 > 
 > - Atención y codificación de nueva información

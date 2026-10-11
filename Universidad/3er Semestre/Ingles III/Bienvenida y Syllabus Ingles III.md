@@ -61,7 +61,6 @@ dg-publish: true
 >     A --> E[U4 Media<br/>6h]
 >     A --> F[U5 Chances<br/>5h]
 >     A --> G[U6 Repaso<br/>4h]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1

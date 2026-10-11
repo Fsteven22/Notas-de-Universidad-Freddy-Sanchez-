@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎨 Componentes, Layouts y Eventos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 Los Tres Pilares de una GUI
+> [!info] 💡 Los Tres Pilares de una GUI
 > 
 > Toda interfaz gráfica en Java se construye sobre tres conceptos fundamentales:
 > 
@@ -11,11 +15,9 @@
 >     A[GUI Completa] --> B[🧩 COMPONENTES<br/>Qué mostrar]
 >     A --> C[📐 LAYOUTS<br/>Cómo organizarlo]
 >     A --> D[⚡ EVENTOS<br/>Qué hacer cuando...]
->     
 >     B --> B1[Botones, campos,<br/>etiquetas...]
 >     C --> C1[FlowLayout,<br/>BorderLayout...]
 >     D --> D1[Clicks, teclas,<br/>acciones...]
->     
 >     style B fill:#e1ffe1
 >     style C fill:#e1f5ff
 >     style D fill:#fff4e1
@@ -33,7 +35,7 @@
 
 ### 📝 Componentes de Texto
 
-> [!example]- ✍️ Entrada y Visualización de Texto
+> [!example] ✍️ Entrada y Visualización de Texto
 > 
 > **1. JLabel - Etiquetas**
 > 
@@ -134,7 +136,7 @@
 
 ### 🔘 Componentes de Selección
 
-> [!example]- ☑️ Opciones y Selecciones
+> [!example] ☑️ Opciones y Selecciones
 > 
 > **1. JCheckBox - Casillas de verificación**
 > 
@@ -266,7 +268,7 @@
 
 ### 🔳 Componentes de Acción
 
-> [!example]- 🖱️ Botones y Controles
+> [!example] 🖱️ Botones y Controles
 > 
 > **1. JButton - Botón estándar**
 > 
@@ -368,7 +370,7 @@
 
 ### 📊 Componentes Avanzados
 
-> [!example]- 🔧 Componentes Complejos
+> [!example] 🔧 Componentes Complejos
 > 
 > **1. JTable - Tabla de datos**
 > 
@@ -466,7 +468,7 @@
 
 ### 🎯 Layouts Básicos Detallados
 
-> [!success]- 📏 FlowLayout - Flujo Natural
+> [!success] 📏 FlowLayout - Flujo Natural
 > 
 > ```java
 > // Constructor con alineación
@@ -509,8 +511,8 @@
 > - ✅ Grupos de botones pequeños
 > - ❌ Formularios (usar GridLayout)
 > - ❌ Diseños complejos
-
-> [!success]- 🧭 BorderLayout - Cinco Regiones
+>
+> [!success] 🧭 BorderLayout - Cinco Regiones
 > 
 > ```java
 > JPanel panel = new JPanel(new BorderLayout(10, 10));
@@ -556,8 +558,8 @@
 > JLabel estado = new JLabel("Listo");
 > frame.add(estado, BorderLayout.SOUTH);
 > ```
-
-> [!success]- 🔲 GridLayout - Cuadrícula Uniforme
+>
+> [!success] 🔲 GridLayout - Cuadrícula Uniforme
 > 
 > ```java
 > // 3 filas, 2 columnas, espacio 5px
@@ -602,7 +604,7 @@
 
 ### 🎨 Layouts Avanzados
 
-> [!success]- 📦 BoxLayout - Línea Flexible
+> [!success] 📦 BoxLayout - Línea Flexible
 > 
 > ```java
 > JPanel panel = new JPanel();
@@ -643,8 +645,8 @@
 > btn.setAlignmentX(Component.CENTER_ALIGNMENT);
 > // LEFT_ALIGNMENT, CENTER_ALIGNMENT, RIGHT_ALIGNMENT
 > ```
-
-> [!success]- 🔧 GridBagLayout - Control Total
+>
+> [!success] 🔧 GridBagLayout - Control Total
 > 
 > ```java
 > JPanel panel = new JPanel(new GridBagLayout());
@@ -688,7 +690,7 @@
 
 ### 🎭 Combinación de Layouts
 
-> [!tip]- 🏗️ Layouts Anidados (Patrón Común)
+> [!tip] 🏗️ Layouts Anidados (Patrón Común)
 > 
 > ```java
 > public class FormularioComplejo extends JFrame {
@@ -742,7 +744,7 @@
 
 ### 🎯 Modelo de Eventos
 
-> [!info]- 🔄 Arquitectura de Eventos
+> [!info] 🔄 Arquitectura de Eventos
 > 
 > ```mermaid
 > sequenceDiagram
@@ -750,7 +752,6 @@
 >     participant C as Componente<br/>(Event Source)
 >     participant L as Listener<br/>(Event Listener)
 >     participant H as Handler<br/>(Tu código)
->     
 >     U->>C: Acción (click, tecla)
 >     C->>C: Crear Event Object
 >     C->>L: Notificar listeners
@@ -771,7 +772,7 @@
 
 ### 🖱️ Listeners Principales
 
-> [!example]- 📋 ActionListener - Eventos de Acción
+> [!example] 📋 ActionListener - Eventos de Acción
 > 
 > **Uso:** Botones, menús, campos de texto (Enter), checkboxes
 > 
@@ -823,8 +824,8 @@
 >     }
 > });
 > ````
-
-> [!example]- 🖱️ MouseListener - Eventos del Mouse
+>
+> [!example] 🖱️ MouseListener - Eventos del Mouse
 > 
 > **Métodos de la interfaz:**
 > 
@@ -891,8 +892,8 @@
 >     }
 > });
 > ```
-
-> [!example]- ⌨️ KeyListener - Eventos del Teclado
+>
+> [!example] ⌨️ KeyListener - Eventos del Teclado
 > 
 > **Métodos:**
 > 
@@ -934,8 +935,8 @@
 >     }
 > });
 > ```
-
-> [!example]- 🔄 Otros Listeners Comunes
+>
+> [!example] 🔄 Otros Listeners Comunes
 > 
 > **ItemListener - Cambios de selección:**
 > 
@@ -1014,7 +1015,7 @@
 
 ## 🎯 Ejemplo Completo Integrado
 
-> [!example]- 💼 Calculadora Simple
+> [!example] 💼 Calculadora Simple
 > 
 > ```java
 > import javax.swing.*;

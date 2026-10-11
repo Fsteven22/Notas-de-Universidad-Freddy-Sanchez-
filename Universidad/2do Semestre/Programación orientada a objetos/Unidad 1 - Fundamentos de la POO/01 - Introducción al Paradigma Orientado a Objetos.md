@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎯 Introducción al Paradigma Orientado a Objetos
 
 ## 🌟 ¿Qué es la Programación Orientada a Objetos?
 
-> [!info]- 💡 Del Mundo Real al Código
+> [!info] 💡 Del Mundo Real al Código
 > 
 > La **Programación Orientada a Objetos (POO)** es un paradigma que organiza el código imitando cómo pensamos sobre el mundo real: en términos de **objetos** que tienen características y pueden realizar acciones.
 > 
@@ -42,7 +46,7 @@ graph LR
 
 ### 🎨 Clase vs Objeto
 
-> [!tip]- 📐 El Molde y las Galletas
+> [!tip] 📐 El Molde y las Galletas
 > 
 > **Clase:** El plano o molde que define cómo será algo **Objeto:** Una instancia concreta creada a partir de ese molde
 > 
@@ -51,11 +55,9 @@ graph LR
 >     A[Clase: Estudiante] --> B[Objeto: Juan]
 >     A --> C[Objeto: María]
 >     A --> D[Objeto: Pedro]
->     
 >     B --> B1[nombre: Juan<br/>edad: 20<br/>carrera: Ingeniería]
 >     C --> C1[nombre: María<br/>edad: 19<br/>carrera: Medicina]
 >     D --> D1[nombre: Pedro<br/>edad: 21<br/>carrera: Derecho]
->     
 >     style A fill:#fff4e1
 >     style B fill:#e1ffe1
 >     style C fill:#e1ffe1
@@ -107,7 +109,7 @@ graph LR
 
 ### 🔑 Atributos y Métodos
 
-> [!success]- 🎯 Los Componentes de una Clase
+> [!success] 🎯 Los Componentes de una Clase
 > 
 > **Atributos (Variables de instancia):**
 > 
@@ -164,7 +166,7 @@ graph LR
 
 ### 🏗️ Constructores
 
-> [!example]- ⚙️ Inicialización Automática
+> [!example] ⚙️ Inicialización Automática
 > 
 > Los **constructores** son métodos especiales que se ejecutan automáticamente al crear un objeto, permitiendo inicializarlo con valores específicos.
 > 
@@ -242,7 +244,6 @@ graph LR
 >     C --> F[Objeto<br/>Inicializado]
 >     D --> F
 >     E --> F
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style F fill:#e1ffe1
@@ -254,7 +255,7 @@ graph LR
 
 ### 1️⃣ Encapsulamiento
 
-> [!note]- 🔒 Ocultar la Complejidad Interna
+> [!note] 🔒 Ocultar la Complejidad Interna
 > 
 > El **encapsulamiento** consiste en ocultar los detalles internos de implementación y exponer solo lo necesario mediante una interfaz pública.
 > 
@@ -321,7 +322,7 @@ graph LR
 
 ### 2️⃣ Herencia
 
-> [!tip]- 🌳 Reutilizar y Especializar
+> [!tip] 🌳 Reutilizar y Especializar
 > 
 > La **herencia** permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos.
 > 
@@ -329,7 +330,6 @@ graph LR
 > classDiagram
 >     Vehiculo <|-- Auto
 >     Vehiculo <|-- Moto
->     
 >     class Vehiculo {
 >         -String marca
 >         -String modelo
@@ -337,12 +337,10 @@ graph LR
 >         +encender()
 >         +apagar()
 >     }
->     
 >     class Auto {
 >         -int numPuertas
 >         +abrirMaletero()
 >     }
->     
 >     class Moto {
 >         -String tipoManubrio
 >         +hacerCaballito()
@@ -401,7 +399,7 @@ graph LR
 
 ### 3️⃣ Polimorfismo
 
-> [!success]- 🎭 Múltiples Formas
+> [!success] 🎭 Múltiples Formas
 > 
 > El **polimorfismo** permite que objetos de diferentes clases respondan al mismo mensaje de manera diferente.
 > 
@@ -464,7 +462,7 @@ graph LR
 
 ### 4️⃣ Abstracción
 
-> [!example]- 🎨 Conceptos Generales
+> [!example] 🎨 Conceptos Generales
 > 
 > La **abstracción** permite definir conceptos generales sin especificar todos los detalles de implementación.
 > 
@@ -577,7 +575,7 @@ mindmap
 
 ## 💪 Ejercicios Prácticos
 
-> [!example]- 🎯 Práctica 1: Sistema de Biblioteca
+> [!example] 🎯 Práctica 1: Sistema de Biblioteca
 > 
 > ```java
 > public class Libro {
@@ -612,8 +610,8 @@ mindmap
 >     }
 > }
 > ```
-
-> [!example]- 🎯 Práctica 2: Jerarquía de Empleados
+>
+> [!example] 🎯 Práctica 2: Jerarquía de Empleados
 > 
 > ```java
 > public class Empleado {
@@ -654,7 +652,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Has Aprendido
+> [!quote] 🌟 Has Aprendido
 > 
 > ✅ Qué es la POO y por qué es importante  
 > ✅ Diferencia entre clase y objeto  

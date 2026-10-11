@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🧵 Concurrencia y Ciclo de Vida de Hilos 
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la Concurrencia?
+> [!info] 💡 ¿Qué es la Concurrencia?
 > 
 > La **concurrencia** es la capacidad de un programa para ejecutar múltiples tareas de manera simultánea o intercalada. En Java, esto se logra principalmente mediante **hilos (threads)**, que son flujos de ejecución independientes dentro de un mismo proceso.
 > 
@@ -47,7 +51,7 @@ graph TB
 
 ### 🔍 Proceso vs Hilo
 
-> [!note]- 🏗️ Diferencias Clave
+> [!note] 🏗️ Diferencias Clave
 > 
 > **Comparación visual:**
 > 
@@ -58,18 +62,15 @@ graph TB
 >         P2[Proceso 2<br/>Word]
 >         P3[Proceso 3<br/>Tu App Java]
 >     end
->     
 >     subgraph "Proceso 3 - Tu App Java"
 >         T1[Hilo 1<br/>main]
 >         T2[Hilo 2<br/>UI]
 >         T3[Hilo 3<br/>Background]
 >         M[Memoria Compartida]
->         
 >         T1 -.-> M
 >         T2 -.-> M
 >         T3 -.-> M
 >     end
->     
 >     style P3 fill:#e1f5ff
 >     style M fill:#fff4e1
 > ```
@@ -114,7 +115,7 @@ graph TB
 
 ### 🎭 Tipos de Hilos en Java
 
-> [!tip]- 🔧 Clasificación de Hilos
+> [!tip] 🔧 Clasificación de Hilos
 > 
 > **1. Hilos de Usuario (User Threads)**
 > 
@@ -161,7 +162,6 @@ graph TB
 >     participant JVM
 >     participant HU as Hilo Usuario
 >     participant HD as Hilo Daemon
->     
 >     JVM->>HU: start()
 >     JVM->>HD: start()
 >     HU->>HU: Trabajando...
@@ -187,7 +187,7 @@ graph TB
 
 ### 📊 Estados del Hilo
 
-> [!info]- 🎢 Diagrama de Estados
+> [!info] 🎢 Diagrama de Estados
 > 
 > ```mermaid
 > stateDiagram-v2
@@ -218,7 +218,7 @@ graph TB
 
 ### 🛠️ Transiciones de Estado
 
-> [!example]- 🔀 Ejemplos de Transiciones
+> [!example] 🔀 Ejemplos de Transiciones
 > 
 > **1. NEW → RUNNABLE → TERMINATED**
 > 
@@ -346,7 +346,7 @@ graph TB
 
 ### 📋 Método 1: Extender Thread
 
-> [!example]- 🧬 Herencia de Thread
+> [!example] 🧬 Herencia de Thread
 > 
 > **Sintaxis básica:**
 > 
@@ -416,7 +416,7 @@ graph TB
 
 ### 🎯 Método 2: Implementar Runnable (✅ RECOMENDADO)
 
-> [!success]- 🏆 Forma Preferida en la Industria
+> [!success] 🏆 Forma Preferida en la Industria
 > 
 > **Sintaxis básica:**
 > 
@@ -497,7 +497,7 @@ graph TB
 
 ### ⚡ Método 3: Lambdas y Referencias (Java 8+)
 
-> [!tip]- 🎨 Sintaxis Moderna
+> [!tip] 🎨 Sintaxis Moderna
 > 
 > **1. Expresiones Lambda:**
 > 
@@ -566,7 +566,7 @@ graph TB
 
 ### 📊 Comparación de Métodos
 
-> [!note]- 🔍 ¿Cuál Elegir?
+> [!note] 🔍 ¿Cuál Elegir?
 > 
 > |Método|Cuándo Usar|Ventajas|Desventajas|
 > |---|---|---|---|
@@ -582,11 +582,9 @@ graph TB
 >     A{¿Qué tipo de<br/>tarea?} --> B[Lógica inline<br/>simple]
 >     A --> C[Clase con<br/>estado complejo]
 >     A --> D[Método<br/>existente]
->     
 >     B --> E[✅ Lambda]
 >     C --> F[✅ Runnable]
 >     D --> G[✅ Referencia]
->     
 >     style E fill:#e1ffe1
 >     style F fill:#e1ffe1
 >     style G fill:#e1ffe1
@@ -598,7 +596,7 @@ graph TB
 
 ### ⏸️ Métodos Fundamentales
 
-> [!tip]- 🎛️ Control de Ejecución
+> [!tip] 🎛️ Control de Ejecución
 > 
 > **1. start() - Iniciar un hilo**
 > 
@@ -728,7 +726,7 @@ graph TB
 
 ### ⚙️ Prioridades de Hilos
 
-> [!warning]- ⚖️ Gestión de Prioridades
+> [!warning] ⚖️ Gestión de Prioridades
 > 
 > **Rango de prioridades:**
 > 
@@ -772,11 +770,9 @@ graph TB
 >     B --> C[Dependen del SO]
 >     B --> D[Scheduler puede ignorarlas]
 >     B --> E[Comportamiento varía]
->     
 >     C --> F[Windows: 7 niveles]
 >     C --> G[Linux: diferentes políticas]
 >     C --> H[macOS: tiempo compartido]
->     
 >     style B fill:#ffe1e1
 > ```
 > 
@@ -789,7 +785,7 @@ graph TB
 
 ### 🔧 Métodos Útiles
 
-> [!success]- 🛠️ Herramientas de Inspección y Control
+> [!success] 🛠️ Herramientas de Inspección y Control
 > 
 > **1. Información del hilo:**
 > 
@@ -869,7 +865,7 @@ graph TB
 
 ### 🐛 Race Conditions (Condiciones de Carrera)
 
-> [!danger]- 🏁 El Problema de la Concurrencia
+> [!danger] 🏁 El Problema de la Concurrencia
 > 
 > **¿Qué es una Race Condition?**
 > 
@@ -922,14 +918,12 @@ graph TB
 >     participant H1 as Hilo 1
 >     participant M as Memoria (contador=5)
 >     participant H2 as Hilo 2
->     
 >     H1->>M: Leer valor (5)
 >     H2->>M: Leer valor (5)
 >     H1->>H1: Incrementar (5+1=6)
 >     H2->>H2: Incrementar (5+1=6)
 >     H1->>M: Escribir (6)
 >     H2->>M: Escribir (6) ⚠️ Sobrescribe
->     
 >     Note over M: Valor esperado: 7<br/>Valor real: 6<br/>Se perdió un incremento
 > ```
 > 
@@ -945,7 +939,7 @@ graph TB
 
 ### 🔒 Introducción a la Sincronización
 
-> [!success]- 🛡️ Solución: Palabra Clave synchronized
+> [!success] 🛡️ Solución: Palabra Clave synchronized
 > 
 > **Contador seguro:**
 > 
@@ -992,7 +986,6 @@ graph TB
 >     participant H1 as Hilo 1
 >     participant L as Lock (Monitor)
 >     participant H2 as Hilo 2
->     
 >     H1->>L: Solicitar lock
 >     L->>H1: Lock concedido ✅
 >     H2->>L: Solicitar lock
@@ -1035,7 +1028,7 @@ graph TB
 
 ### 💀 Deadlock (Interbloqueo)
 
-> [!danger]- ⚰️ El Problema Mortal de la Concurrencia
+> [!danger] ⚰️ El Problema Mortal de la Concurrencia
 > 
 > **¿Qué es un Deadlock?**
 > 
@@ -1093,7 +1086,6 @@ graph TB
 >     H1 -->|Espera| R2[Recurso 2]
 >     H2[Hilo 2] -->|Tiene| R2
 >     H2 -->|Espera| R1
->     
 >     style H1 fill:#ffe1e1
 >     style H2 fill:#ffe1e1
 >     style R1 fill:#fff4e1
@@ -1146,7 +1138,7 @@ graph TB
 
 ### ✅ Checklist de Buenas Prácticas
 
-> [!tip]- 🏆 Recomendaciones Profesionales
+> [!tip] 🏆 Recomendaciones Profesionales
 > 
 > **1. Preferir Runnable sobre extends Thread**
 > 
@@ -1260,7 +1252,7 @@ graph TB
 
 ### 🔍 Debugging de Hilos
 
-> [!example]- 🐛 Técnicas de Depuración
+> [!example] 🐛 Técnicas de Depuración
 > 
 > **1. Imprimir información del hilo:**
 > 
@@ -1388,7 +1380,7 @@ mindmap
 
 ### 📋 Tabla Comparativa Final
 
-> [!success]- 🔍 Comparación de Enfoques
+> [!success] 🔍 Comparación de Enfoques
 > 
 > |Aspecto|extends Thread|implements Runnable|Lambda|
 > |---|---|---|---|
@@ -1411,7 +1403,7 @@ mindmap
 
 ## 🎓 Ejercicios Prácticos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Ejercicio 1: Simulador de descarga**
 > 
@@ -1616,7 +1608,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Continuando el Aprendizaje
+> [!quote] 🌟 Continuando el Aprendizaje
 > 
 > **Has aprendido:**
 > 

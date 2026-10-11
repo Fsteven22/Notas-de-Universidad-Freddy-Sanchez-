@@ -81,7 +81,6 @@ dg-publish: true
 > graph LR
 >     A["Zona de ruptura<br/>V < -Vruptura<br/>Corriente inversa crece"] --> B["Zona inversa<br/>-Vruptura < V < 0<br/>I ≈ -Is pequeña"]
 >     B --> C["Zona directa<br/>V > 0.7V Si<br/>Corriente crece exponencialmente"]
-> 
 >     style A fill:#ffe1e1
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1

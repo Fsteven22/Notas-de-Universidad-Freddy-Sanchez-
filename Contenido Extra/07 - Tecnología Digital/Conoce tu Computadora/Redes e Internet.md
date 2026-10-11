@@ -11,7 +11,7 @@
 
 > [!tip]- ## 📊 Tipos de Redes y Conceptos Clave
 > Las redes se clasifican según su tamaño y alcance geográfico.
-
+>
 > [!tip]+ **Tipos de Redes**
 >
 > | Tipo | Descripción | Alcance Típico |
@@ -22,7 +22,7 @@
 > | **WAN (Wide Area Network)** | Red que cubre un área geográfica extensa, conectando múltiples LANs o MANs a través de grandes distancias, como un país o un continente. | Un país o el mundo. |
 >
 > > [!info] 🌐 **Internet es una WAN gigante:** Internet es la mayor WAN, una red global que conecta millones de redes más pequeñas en todo el planeta.
-
+>
 > [!tip]+ **Protocolos y Servicios Clave**
 >
 > | Concepto | Descripción |

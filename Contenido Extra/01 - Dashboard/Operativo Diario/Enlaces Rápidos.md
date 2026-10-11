@@ -47,14 +47,14 @@ mindmap
 > - **Win + Número**: Acceso directo a aplicaciones en la barra de tareas
 > - **Ctrl + Shift + Esc**: Administrador de tareas instantáneo
 > - **Win + E**: Explorador de archivos
-
+>
 > [!tip] macOS
 > 
 > - **Cmd + Space**: Spotlight para búsqueda universal
 > - **Cmd + Tab**: Alternador de aplicaciones
 > - **Cmd + ` **: Cambiar entre ventanas de la misma app
 > - **Control + ↑**: Mission Control
-
+>
 > [!tip] Linux
 > 
 > - **Alt + F2**: Lanzador de aplicaciones

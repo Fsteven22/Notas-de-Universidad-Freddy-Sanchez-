@@ -293,7 +293,7 @@ xychart-beta
 > - **🤐 Recitación mental**: No verbalizar realmente
 > - **📅 Review única**: No programar revisiones posteriores
 > - **📚 Aplicar a todo**: Usar SQ3R para textos inadecuados (ficción ligera)
-
+>
 >[!info] **Estrategias de Mejora**
 >
 > **🚀 Soluciones prácticas:**

@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📐 Rectas en ℝ³
 
 ## 🎯 Fundamentos de Rectas en el Espacio
 
-> [!info]- 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
+> [!info] 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
 > 
 > **Analogías útiles:**
 > 
@@ -24,7 +28,7 @@
 
 ### 📊 Definición Formal
 
-> [!note]- 🌟 Concepto de Recta en ℝ³ **Definición:**
+> [!note] 🌟 Concepto de Recta en ℝ³ **Definición:**
 > 
 > Una **recta L** en ℝ³ queda determinada por:
 > 
@@ -48,7 +52,7 @@
 
 ### ➡️ Forma Vectorial
 
-> [!success]- 🟢 Representación Fundamental **Ecuación vectorial:**
+> [!success] 🟢 Representación Fundamental **Ecuación vectorial:**
 > 
 > Dado un punto P₀ = (x₀, y₀, z₀) y un vector director **v** = (a, b, c):
 > 
@@ -83,7 +87,7 @@
 
 ### 🔗 Recta por Dos Puntos
 
-> [!tip]- 📍 Determinación por Dos Puntos **Dados dos puntos distintos P₁ = (x₁, y₁, z₁) y P₂ = (x₂, y₂, z₂):**
+> [!tip] 📍 Determinación por Dos Puntos **Dados dos puntos distintos P₁ = (x₁, y₁, z₁) y P₂ = (x₂, y₂, z₂):**
 > 
 > **Paso 1:** Calcular el vector director **v** = P₁P₂⃗ = P₂ - P₁ = (x₂ - x₁, y₂ - y₁, z₂ - z₁)
 > 
@@ -114,7 +118,7 @@
 
 ### 🔢 Forma Paramétrica
 
-> [!warning]- 🔷 Ecuaciones con Parámetro **Definición:**
+> [!warning] 🔷 Ecuaciones con Parámetro **Definición:**
 > 
 > Las **ecuaciones paramétricas** expresan cada coordenada en función de un parámetro t:
 > 
@@ -138,7 +142,7 @@
 
 ### 📐 Ejemplos de Ecuaciones Paramétricas
 
-> [!example]- 🎯 Casos Resueltos **Ejemplo 1: De vectorial a paramétrica**
+> [!example] 🎯 Casos Resueltos **Ejemplo 1: De vectorial a paramétrica**
 > 
 > Dada: **r(t) = (2, -1, 3) + t(4, 2, -5)**
 > 
@@ -190,7 +194,7 @@
 
 ### 🔄 Conversión de Formas
 
-> [!note]- 🔀 De Paramétrica a Vectorial y Viceversa **De paramétrica a vectorial:**
+> [!note] 🔀 De Paramétrica a Vectorial y Viceversa **De paramétrica a vectorial:**
 > 
 > Dadas:
 > 
@@ -223,7 +227,7 @@
 
 ### ⚖️ Forma Simétrica
 
-> [!info]- 🔶 Eliminación del Parámetro **Definición:**
+> [!info] 🔶 Eliminación del Parámetro **Definición:**
 > 
 > Las **ecuaciones simétricas** se obtienen despejando el parámetro t de las ecuaciones paramétricas:
 > 
@@ -253,7 +257,7 @@
 
 ### 🔍 Casos Especiales
 
-> [!warning]- ⚠️ Cuando Hay Componentes Nulas **Si alguna componente del vector director es cero:**
+> [!warning] ⚠️ Cuando Hay Componentes Nulas **Si alguna componente del vector director es cero:**
 > 
 > **Caso 1: a = 0 (recta paralela al plano YZ)**
 > 
@@ -289,7 +293,7 @@
 
 ### 📋 Ejemplos de Ecuaciones Simétricas
 
-> [!example]- 🎯 Conversiones Completas **Ejemplo 1: De paramétrica a simétrica**
+> [!example] 🎯 Conversiones Completas **Ejemplo 1: De paramétrica a simétrica**
 > 
 > Dadas:
 > 
@@ -344,7 +348,7 @@
 
 ## 🎨 Tabla Resumen de Formas de Ecuaciones
 
-> [!example]- 📊 Comparación de Representaciones
+> [!example] 📊 Comparación de Representaciones
 > 
 > |Forma|Ecuación|Ventajas|Desventajas|
 > |---|---|---|---|
@@ -364,7 +368,7 @@
 
 ### ↕️ Rectas Paralelas
 
-> [!note]- ∥ Paralelismo en el Espacio **Definición:**
+> [!note] ∥ Paralelismo en el Espacio **Definición:**
 > 
 > Dos rectas L₁ y L₂ son **paralelas** si sus vectores directores son paralelos.
 > 
@@ -398,7 +402,7 @@
 
 ### ⊥ Rectas Perpendiculares
 
-> [!tip]- ⊥ Perpendicularidad **Definición:**
+> [!tip] ⊥ Perpendicularidad **Definición:**
 > 
 > Dos rectas L₁ y L₂ son **perpendiculares** si sus vectores directores son ortogonales.
 > 
@@ -427,7 +431,7 @@
 
 ### ✕ Rectas Secantes
 
-> [!success]- ⚡ Intersección de Rectas **Definición:**
+> [!success] ⚡ Intersección de Rectas **Definición:**
 > 
 > Dos rectas son **secantes** si se intersectan en exactamente un punto.
 > 
@@ -484,7 +488,7 @@
 
 ### 🔀 Rectas Alabeadas
 
-> [!warning]- 🌀 Caso Exclusivo del Espacio 3D **Definición:**
+> [!warning] 🌀 Caso Exclusivo del Espacio 3D **Definición:**
 > 
 > Dos rectas son **alabeadas** (o cruzadas) si:
 > 
@@ -534,7 +538,7 @@
 
 ### 🔺 Definición de Ángulo
 
-> [!info]- 📐 Medida de Inclinación **Definición:**
+> [!info] 📐 Medida de Inclinación **Definición:**
 > 
 > El **ángulo entre dos rectas** L₁ y L₂ es el ángulo θ entre sus vectores directores.
 > 
@@ -560,7 +564,7 @@
 
 ### 📊 Ejemplos de Cálculo de Ángulos
 
-> [!example]- 🎯 Ejercicios Resueltos **Ejemplo 1: Ángulo básico**
+> [!example] 🎯 Ejercicios Resueltos **Ejemplo 1: Ángulo básico**
 > 
 > ```
 > L₁: vector director v₁ = (1, 0, 0)
@@ -625,7 +629,7 @@
 
 ### 📝 Problema 1: Recta por Condiciones
 
-> [!example]- 🎯 Construcción de Recta **Enunciado:** Encontrar la ecuación de la recta que pasa por el punto P = (2, -1, 3) y es paralela a la recta:
+> [!example] 🎯 Construcción de Recta **Enunciado:** Encontrar la ecuación de la recta que pasa por el punto P = (2, -1, 3) y es paralela a la recta:
 > 
 > ```
 > L: x = 1 + 2t,  y = 3 - t,  z = -2 + 4t
@@ -655,7 +659,7 @@
 
 ### 📝 Problema 2: Intersección de Rectas
 
-> [!example]- 🎯 Punto de Corte **Enunciado:** Determinar si las rectas se intersectan y, en caso afirmativo, encontrar el punto de intersección:
+> [!example] 🎯 Punto de Corte **Enunciado:** Determinar si las rectas se intersectan y, en caso afirmativo, encontrar el punto de intersección:
 > 
 > ```
 > L₁: x = 1 + t,   y = 2 - 2t,  z = 3 + t
@@ -694,7 +698,7 @@
 
 ### 📝 Problema 3: Recta Perpendicular
 
-> [!example]- 🎯 Construcción con Condición **Enunciado:** Encontrar la ecuación de la recta que:
+> [!example] 🎯 Construcción con Condición **Enunciado:** Encontrar la ecuación de la recta que:
 > 
 > - Pasa por A = (1, 2, 3)
 > - Es perpendicular a L: (x-1)/2 = (y+1)/1 = (z-3)/(-1)
@@ -733,7 +737,7 @@
 
 ### 📝 Problema 4: Clasificación de Rectas
 
-> [!example]- 🎯 Análisis Completo **Enunciado:** Clasificar la relación entre las rectas:
+> [!example] 🎯 Análisis Completo **Enunciado:** Clasificar la relación entre las rectas:
 > 
 > ```
 > L₁: (x-1)/2 = (y-2)/3 = (z+1)/1
@@ -795,7 +799,7 @@ graph TD
 
 ### 🐍 Clase Recta en Python
 
-> [!success]- 💻 Código Completo
+> [!success] 💻 Código Completo
 > 
 > ```python
 > import math
@@ -976,7 +980,7 @@ graph TD
 
 ## 🧪 Ejercicios Progresivos
 
-> [!example]- 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
 > 
 > 1. Escribir las ecuaciones de la recta que pasa por A = (1, 0, 2) con vector director **v** = (2, -1, 3) en las tres formas.
 > 
@@ -1106,7 +1110,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌟 Enlaces Conceptuales **Prerequisites (Prerrequisitos):**
+> [!quote] 🌟 Enlaces Conceptuales **Prerequisites (Prerrequisitos):**
 > 
 > - [[01.1 Sistema de Referencia Espacial]] - Puntos en ℝ³
 > - [[01.2 Vectores en ℝ³]] - Vector director
@@ -1132,7 +1136,7 @@ graph TD
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip]- 🧠 Estrategias de Éxito **Para dominar rectas en ℝ³:**
+> [!tip] 🧠 Estrategias de Éxito **Para dominar rectas en ℝ³:**
 > 
 > **1. Identificación rápida:**
 > 
@@ -1193,7 +1197,7 @@ graph TD
 
 ## 📊 Tabla Resumen
 
-> [!example]- 📋 Compendio de Rectas
+> [!example] 📋 Compendio de Rectas
 > 
 > |Aspecto|Fórmula/Condición|Notas|
 > |---|---|---|
@@ -1212,7 +1216,7 @@ graph TD
 
 ## 🎯 Fundamentos de Rectas en el Espacio
 
-> [!info]- 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
+> [!info] 💡 Introducción a las Rectas Tridimensionales Una **recta en ℝ³** es un conjunto infinito de puntos que se extienden indefinidamente en ambas direcciones siguiendo una trayectoria rectilínea. A diferencia del plano (ℝ²), donde dos rectas pueden ser paralelas o secantes, en el espacio existe una tercera posibilidad: **rectas alabeadas** (que no se intersectan ni son paralelas).
 > 
 > **Analogías útiles:**
 > 
@@ -1234,7 +1238,7 @@ graph TD
 
 ### 📊 Definición Formal
 
-> [!note]- 🌟 Concepto de Recta en ℝ³ **Definición:**
+> [!note] 🌟 Concepto de Recta en ℝ³ **Definición:**
 > 
 > Una **recta L** en ℝ³ queda determinada por:
 > 
@@ -1258,7 +1262,7 @@ graph TD
 
 ### ➡️ Forma Vectorial
 
-> [!success]- 🟢 Representación Fundamental **Ecuación vectorial:**
+> [!success] 🟢 Representación Fundamental **Ecuación vectorial:**
 > 
 > Dado un punto P₀ = (x₀, y₀, z₀) y un vector director **v** = (a, b, c):
 > 
@@ -1293,7 +1297,7 @@ graph TD
 
 ### 🔗 Recta por Dos Puntos
 
-> [!tip]- 📍 Determinación por Dos Puntos **Dados dos puntos distintos P₁ = (x₁, y₁, z₁) y P₂ = (x₂, y₂, z₂):**
+> [!tip] 📍 Determinación por Dos Puntos **Dados dos puntos distintos P₁ = (x₁, y₁, z₁) y P₂ = (x₂, y₂, z₂):**
 > 
 > **Paso 1:** Calcular el vector director **v** = P₁P₂⃗ = P₂ - P₁ = (x₂ - x₁, y₂ - y₁, z₂ - z₁)
 > 
@@ -1324,7 +1328,7 @@ graph TD
 
 ### 🔢 Forma Paramétrica
 
-> [!warning]- 🔷 Ecuaciones con Parámetro **Definición:**
+> [!warning] 🔷 Ecuaciones con Parámetro **Definición:**
 > 
 > Las **ecuaciones paramétricas** expresan cada coordenada en función de un parámetro t:
 > 
@@ -1348,7 +1352,7 @@ graph TD
 
 ### 📐 Ejemplos de Ecuaciones Paramétricas
 
-> [!example]- 🎯 Casos Resueltos **Ejemplo 1: De vectorial a paramétrica**
+> [!example] 🎯 Casos Resueltos **Ejemplo 1: De vectorial a paramétrica**
 > 
 > Dada: **r(t) = (2, -1, 3) + t(4, 2, -5)**
 > 
@@ -1400,7 +1404,7 @@ graph TD
 
 ### 🔄 Conversión de Formas
 
-> [!note]- 🔀 De Paramétrica a Vectorial y Viceversa **De paramétrica a vectorial:**
+> [!note] 🔀 De Paramétrica a Vectorial y Viceversa **De paramétrica a vectorial:**
 > 
 > Dadas:
 > 
@@ -1433,7 +1437,7 @@ graph TD
 
 ### ⚖️ Forma Simétrica
 
-> [!info]- 🔶 Eliminación del Parámetro **Definición:**
+> [!info] 🔶 Eliminación del Parámetro **Definición:**
 > 
 > Las **ecuaciones simétricas** se obtienen despejando el parámetro t de las ecuaciones paramétricas:
 > 
@@ -1463,7 +1467,7 @@ graph TD
 
 ### 🔍 Casos Especiales
 
-> [!warning]- ⚠️ Cuando Hay Componentes Nulas **Si alguna componente del vector director es cero:**
+> [!warning] ⚠️ Cuando Hay Componentes Nulas **Si alguna componente del vector director es cero:**
 > 
 > **Caso 1: a = 0 (recta paralela al plano YZ)**
 > 
@@ -1499,7 +1503,7 @@ graph TD
 
 ### 📋 Ejemplos de Ecuaciones Simétricas
 
-> [!example]- 🎯 Conversiones Completas **Ejemplo 1: De paramétrica a simétrica**
+> [!example] 🎯 Conversiones Completas **Ejemplo 1: De paramétrica a simétrica**
 > 
 > Dadas:
 > 
@@ -1554,7 +1558,7 @@ graph TD
 
 ## 🎨 Tabla Resumen de Formas de Ecuaciones
 
-> [!example]- 📊 Comparación de Representaciones
+> [!example] 📊 Comparación de Representaciones
 > 
 > |Forma|Ecuación|Ventajas|Desventajas|
 > |---|---|---|---|
@@ -1574,7 +1578,7 @@ graph TD
 
 ### ↕️ Rectas Paralelas
 
-> [!note]- ∥ Paralelismo en el Espacio **Definición:**
+> [!note] ∥ Paralelismo en el Espacio **Definición:**
 > 
 > Dos rectas L₁ y L₂ son **paralelas** si sus vectores directores son paralelos.
 > 
@@ -1608,7 +1612,7 @@ graph TD
 
 ### ⊥ Rectas Perpendiculares
 
-> [!tip]- ⊥ Perpendicularidad **Definición:**
+> [!tip] ⊥ Perpendicularidad **Definición:**
 > 
 > Dos rectas L₁ y L₂ son **perpendiculares** si sus vectores directores son ortogonales.
 > 
@@ -1637,7 +1641,7 @@ graph TD
 
 ### ✕ Rectas Secantes
 
-> [!success]- ⚡ Intersección de Rectas **Definición:**
+> [!success] ⚡ Intersección de Rectas **Definición:**
 > 
 > Dos rectas son **secantes** si se intersectan en exactamente un punto.
 > 
@@ -1694,7 +1698,7 @@ graph TD
 
 ### 🔀 Rectas Alabeadas
 
-> [!warning]- 🌀 Caso Exclusivo del Espacio 3D **Definición:**
+> [!warning] 🌀 Caso Exclusivo del Espacio 3D **Definición:**
 > 
 > Dos rectas son **alabeadas** (o cruzadas) si:
 > 

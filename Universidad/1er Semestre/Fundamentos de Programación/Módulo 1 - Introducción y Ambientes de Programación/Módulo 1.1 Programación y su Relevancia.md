@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Conceptos Fundamentales de Programación 💻
 
 > [!info]+ **¿Qué es la Programación?** La **programación** es el proceso de proporcionar instrucciones claras y precisas a una computadora para que realice tareas específicas. Es el puente entre un problema del mundo real y una solución computacional.
@@ -161,19 +165,14 @@ graph TD
 > ```mermaid
 > graph TD
 >    A["👨‍💻 Programador"] --> B["🖥️ Ambiente de Desarrollo"]
->    
 >    B --> C["📝 Editor de Código"]
 >    B --> D["🔧 Compilador/Intérprete"]
->    
 >    C --> E["📄 Código Fuente"]
 >    E --> F["💻 Lenguaje de Programación"]
->    
 >    D --> G["⚙️ Proceso de Compilación"]
 >    G --> H["📦 Código Ejecutable"]
->    
 >    H --> I["📲 Instalación"]
 >    I --> J["👤 Usuario Final"]
->    
 >    style A fill:#e3f2fd
 >    style J fill:#e8f5e8
 >    style H fill:#fff3e0
@@ -271,7 +270,7 @@ graph TD
 > - **I**terar: practicar constantemente
 > - **G**rupo: aprender en comunidad
 > - **O**rganizar: documentar tu progreso
-
+>
 > [!warning]+ **Errores Comunes de Principiantes**
 > 
 > - ❌ Querer resolver problemas complejos desde el inicio
@@ -327,7 +326,7 @@ graph TD
 > - [[Algoritmos Fundamentales]] - Soluciones optimizadas
 > - [[Programación Orientada a Objetos]] - Modelado del mundo real
 > - [[Bases de Datos]] - Gestión de información
-
+>
 > [!success]+ **Proyecto Práctico: Tu Primer Programa**
 > 
 > ### 🎯 Organizador de Tareas Diarias

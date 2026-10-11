@@ -378,10 +378,10 @@ graph TD
 > - [[Inteligencia Emocional]] - Balance entre análisis racional y comprensión emocional
 > - [[Competencias Interpersonales]] - Aplicación de pensamiento crítico en relaciones
 > - [[Toma de Decisiones]] - Metodología para decisiones basadas en análisis crítico
-> - [[Comunicación Efectiva]] - Expresar argumentos críticos de forma persuasiva
+> - [[La Comunicación Efectiva]] - Expresar argumentos críticos de forma persuasiva
 > - [[Habilidades Sociales]] - Cuestionar ideas manteniendo relaciones positivas
 > - [[Metacognición]] - Reflexión sobre procesos de pensamiento propio
-
+>
 > [!info] **Notas Recomendadas para Profundizar**
 
 ### **Prerrequisitos** 📋

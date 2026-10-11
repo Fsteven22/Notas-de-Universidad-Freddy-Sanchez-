@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🎯 Vocabulary – Experiences & Progress
 
 ## 🌟 Core Concepts
@@ -10,7 +14,7 @@
 
 ### 🔥 Work Hard, Play Hard
 
-> [!example]- Meaning and Usage
+> [!example] Meaning and Usage
 > 
 > **Meaning:** Put maximum effort into your work, and enjoy your free time with equal intensity.
 > 
@@ -37,7 +41,7 @@
 
 ### 💪 No Pain, No Gain
 
-> [!example]- Meaning and Usage
+> [!example] Meaning and Usage
 > 
 > **Meaning:** You must suffer or work hard to achieve something worthwhile.
 > 
@@ -65,7 +69,7 @@
 
 ### 🎉 You Only Live Once (YOLO)
 
-> [!example]- Meaning and Usage
+> [!example] Meaning and Usage
 > 
 > **Meaning:** Life is short, so take risks and enjoy experiences.
 > 
@@ -95,7 +99,7 @@
 
 ### 🌶️ Variety is the Spice of Life
 
-> [!example]- Meaning and Usage
+> [!example] Meaning and Usage
 > 
 > **Meaning:** Doing different things makes life more interesting and enjoyable.
 > 
@@ -123,7 +127,7 @@
 
 ### 🎬 Actions Speak Louder Than Words
 
-> [!example]- Meaning and Usage
+> [!example] Meaning and Usage
 > 
 > **Meaning:** What you do is more important than what you say.
 > 
@@ -155,7 +159,7 @@
 
 ### 🏆 Achievement (noun)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning:** Something accomplished successfully, especially through effort or skill.
 > 
@@ -189,7 +193,7 @@
 
 ### 🚪 Opportunity (noun)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning:** A chance or favorable situation to do something.
 > 
@@ -222,7 +226,7 @@
 
 ### ⚡ Challenge (noun/verb)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning (noun):** A difficult task or situation that tests your abilities. **Meaning (verb):** To question or test someone/something.
 > 
@@ -258,7 +262,7 @@
 
 ### 🔄 Process (noun/verb)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning (noun):** A series of actions to achieve a result. **Meaning (verb):** To deal with or handle something systematically.
 > 
@@ -294,7 +298,7 @@
 
 ### 🔀 Change (noun/verb)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning (noun):** The act of becoming different. **Meaning (verb):** To make or become different.
 > 
@@ -337,7 +341,7 @@
 
 ### 🧹 Chore (noun)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning:** A routine task, especially household work; an unpleasant but necessary task.
 > 
@@ -371,7 +375,7 @@
 
 ### 💼 Job (noun)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning:** 1) Paid employment; 2) A task or piece of work.
 > 
@@ -411,7 +415,7 @@
 
 ### 📊 Project (noun/verb)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning (noun):** A planned piece of work with a specific purpose. **Meaning (verb):** To estimate or plan for the future; to display or show.
 > 
@@ -447,7 +451,7 @@
 
 ### 🎯 Success (noun)
 
-> [!success]- Definition and Usage
+> [!success] Definition and Usage
 > 
 > **Meaning:** The achievement of something desired, planned, or attempted.
 > 
@@ -489,7 +493,7 @@
 
 ## 💪 Practical Application
 
-> [!example]- Using Phrases and Vocabulary Together
+> [!example] Using Phrases and Vocabulary Together
 > 
 > **Example 1: Talking about fitness goals**
 > 
@@ -524,7 +528,7 @@
 
 ## 🎯 Quick Practice
 
-> [!example]- Fill in the Blanks
+> [!example] Fill in the Blanks
 > 
 > ```
 > 1. "I got promoted! This is my biggest __________ so far."

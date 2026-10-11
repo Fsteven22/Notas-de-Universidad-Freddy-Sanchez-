@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Aleatoriedad en Python 🎲
 
 > [!info] 📍 Contexto y Definición La **aleatoriedad** en Python introduce imprevisibilidad y variabilidad controlada en programas. Es esencial para:

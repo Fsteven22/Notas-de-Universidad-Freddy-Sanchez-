@@ -1,7 +1,7 @@
 # Ritmos Circadianos
 
 > [!quote] 🌅 "El ritmo circadiano es el reloj maestro de nuestro cuerpo, sincronizando cada proceso biológico con el ciclo natural de 24 horas. Comprenderlo es la clave para optimizar nuestro rendimiento, salud y bienestar." - Investigación en Cronobiología
-
+>
 > [!info]- ## 🧬 Fundamentos Biológicos
 > 
 > ### Mecanismo del Reloj Circadiano
@@ -35,7 +35,7 @@
 > |**PER1/PER2** ⏰|Proteínas periodo|Picos nocturnos|
 > |**CRY1/CRY2** 🌙|Proteínas criptocromo|Represión nocturna|
 > |**BMAL1** 🌅|Regulador del ciclo|Activación diurna|
-
+>
 > [!tip]- ## ⏰ Cronotipos y Patrones Naturales
 > 
 > ### Tipos de Cronotipos
@@ -56,7 +56,7 @@
 > |**Mejor momento estudio**|6:00-9:00 AM|9:00 AM-1:00 PM|7:00-11:00 PM|
 > |**Hora ideal dormir**|9:30-10:30 PM|10:30-11:30 PM|11:30 PM-1:00 AM|
 > |**Temperatura mín.**|4:00-5:00 AM|4:30-5:30 AM|5:00-6:00 AM|
-
+>
 > [!success]- ## 🌊 Optimización de Ritmos Circadianos
 > 
 > ### Factores de Sincronización (Zeitgebers)
@@ -111,7 +111,7 @@
 > - **Temperatura ambiente**: 18-20°C
 > - **Rutina pre-sueño**: 30-60 min consistente
 > - **Ayuno nocturno**: 12-14 horas sin comer
-
+>
 > [!warning]- ## ⚠️ Disruptores del Ritmo Circadiano
 > 
 > ### Principales Enemigos del Reloj Biológico
@@ -148,7 +148,7 @@
 > |**⚖️ Metabólico**|Glucosa ↑, Hambre ↑|Diabetes ↑, Obesidad ↑|
 > |**🛡️ Inmune**|Resistencia ↓|Cáncer ↑, Infecciones ↑|
 > |**😊 Emocional**|Irritabilidad ↑, Ánimo ↓|Depresión ↑, Ansiedad ↑|
-
+>
 > [!example]- ## 🛠️ Estrategias de Intervención
 > 
 > ### Terapia de Luz
@@ -198,7 +198,7 @@
 > 2. **Semana 2**: 30 min antes del objetivo
 > 3. **Semana 3**: 45 min antes
 > 4. **Semana 4**: Horario objetivo conseguido
-
+>
 > [!brain]- ## 🎯 Técnica de Estudio: Cronoaprendizaje Sincronizado
 > 
 > ### Metodología de Estudio Basada en Ritmos
@@ -236,7 +236,7 @@
 > 3. **Asignación estratégica**: Materias difíciles en picos altos
 > 4. **Implementación gradual**: Cambia horarios progresivamente
 > 5. **Optimización continua**: Ajusta según resultados
-
+>
 > [!quote]- ## 📚 Referencias y Estudios Clave
 > 
 > ### Literatura Científica Fundamental
@@ -253,7 +253,7 @@
 > - **Escala de Somnolencia de Epworth**
 > - **Diario de Sueño de 2 semanas**
 > - **Apps**: Sleep Cycle, AutoSleep, Oura Ring data
-
+>
 > [!link]- ## 🔗 Notas Relacionadas y Prerrequisitos
 > 
 > ### Prerrequisitos Recomendados

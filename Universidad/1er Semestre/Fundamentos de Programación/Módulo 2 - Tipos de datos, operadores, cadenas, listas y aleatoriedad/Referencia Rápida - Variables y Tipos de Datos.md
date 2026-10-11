@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 📊 Tabla de Variables y Tipos de Datos en Python
 
 ## 🎯 Referencia Rápida - Módulo 2: Variables y Tipos de Datos

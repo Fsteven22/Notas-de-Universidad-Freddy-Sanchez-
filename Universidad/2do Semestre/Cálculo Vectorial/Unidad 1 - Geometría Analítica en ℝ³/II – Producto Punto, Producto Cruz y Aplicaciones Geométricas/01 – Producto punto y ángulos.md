@@ -1,12 +1,16 @@
+---
+dg-publish: true
+---
+
 # 🔷 Producto Punto y Ángulos
 
 ## 🎯 Fundamentos del Producto Punto
 
-> [!info]- 💡 Introducción al Producto Escalar El **producto punto** (también llamado **producto escalar** o **producto interno**) es una operación entre dos vectores que resulta en un **número real** (escalar). Es una de las operaciones vectoriales más importantes y útiles en matemáticas, física e ingeniería.
+> [!info] 💡 Introducción al Producto Escalar El **producto punto** (también llamado **producto escalar** o **producto interno**) es una operación entre dos vectores que resulta en un **número real** (escalar). Es una de las operaciones vectoriales más importantes y útiles en matemáticas, física e ingeniería.
 > 
 > **Analogías útiles:**
 > 
-> - **Física:** Trabajo realizado por una fuerza (W = F⃗ · d⃗)
+> - **Física:** Trabajo realizado por una fuerza (W = \vec{F} · \vec{d})
 > - **Geometría:** Medida de "alineación" entre dos vectores
 > - **Proyección:** Sombra de un vector sobre otro
 > - **Similitud:** Qué tan "parecidos" son dos vectores
@@ -25,7 +29,7 @@
 
 ### 📝 Definición Formal
 
-> [!note]- 🌟 Concepto Matemático del Producto Punto **Definición algebraica:**
+> [!note] 🌟 Concepto Matemático del Producto Punto **Definición algebraica:**
 > 
 > Dados dos vectores **u** = (u₁, u₂, u₃) y **v** = (v₁, v₂, v₃) en ℝ³, su producto punto es:
 > 
@@ -52,7 +56,7 @@
 
 ### 🔢 Cálculo del Producto Punto
 
-> [!example]- 📊 Método Algebraico **Fórmula de componentes:**
+> [!example] 📊 Método Algebraico **Fórmula de componentes:**
 > 
 > **u · v = u₁v₁ + u₂v₂ + u₃v₃**
 > 
@@ -102,7 +106,7 @@
 
 ### 🎨 Significado del Producto Punto
 
-> [!tip]- 👁️ Visualización Geométrica **El producto punto mide:**
+> [!tip] 👁️ Visualización Geométrica **El producto punto mide:**
 > 
 > **1. Alineación entre vectores:**
 > 
@@ -126,16 +130,16 @@
 > **Trabajo mecánico:**
 > 
 > ```
-> W = F⃗ · d⃗ = ||F⃗|| · ||d⃗|| · cos(θ)
+> W = \vec{F} · \vec{d} = ||\vec{F}|| · ||\vec{d}|| · cos(θ)
 > ```
 > 
-> - Si F⃗ y d⃗ están alineados (θ = 0°): W máximo
+> - Si \vec{F} y \vec{d} están alineados (θ = 0°): W máximo
 > - Si son perpendiculares (θ = 90°): W = 0
 > - Si son opuestos (θ = 180°): W negativo
 
 ### 📏 Propiedades del Producto Punto
 
-> [!success]- ✅ Propiedades Algebraicas **1. Conmutativa:**
+> [!success] ✅ Propiedades Algebraicas **1. Conmutativa:**
 > 
 > ```
 > u · v = v · u
@@ -187,7 +191,7 @@
 
 ### 🎯 Fórmula del Ángulo
 
-> [!warning]- 📐 Cálculo del Ángulo **Fórmula fundamental:**
+> [!warning] 📐 Cálculo del Ángulo **Fórmula fundamental:**
 > 
 > De la definición geométrica u · v = ||u|| · ||v|| · cos(θ), despejamos:
 > 
@@ -215,7 +219,7 @@
 
 ### 📊 Ejemplos Detallados
 
-> [!example]- 🎯 Casos Prácticos **Ejemplo 1: Ángulo entre vectores básicos**
+> [!example] 🎯 Casos Prácticos **Ejemplo 1: Ángulo entre vectores básicos**
 > 
 > Dados u = (1, 1, 0) y v = (1, 0, 0)
 > 
@@ -292,7 +296,7 @@
 
 ### 🔲 Definición y Criterio
 
-> [!note]- 📐 Ortogonalidad **Definición:**
+> [!note] 📐 Ortogonalidad **Definición:**
 > 
 > Dos vectores **u** y **v** son **perpendiculares** (u **ortogonales**) si forman un ángulo de 90°.
 > 
@@ -320,7 +324,7 @@
 
 ### 📊 Ejemplos de Ortogonalidad
 
-> [!example]- ✅ Verificación de Perpendicularidad **Ejemplo 1: Verificación básica**
+> [!example] ✅ Verificación de Perpendicularidad **Ejemplo 1: Verificación básica**
 > 
 > ¿Son perpendiculares u = (2, -1, 3) y v = (1, 5, -1)?
 > 
@@ -369,7 +373,7 @@
 
 ### 🎯 Proyección de un Vector sobre Otro
 
-> [!success]- 📐 Concepto de Proyección **Definición:**
+> [!success] 📐 Concepto de Proyección **Definición:**
 > 
 > La **proyección** de un vector **u** sobre un vector **v** es el vector que representa la "sombra" de u sobre la línea de v.
 > 
@@ -400,7 +404,7 @@
 
 ### 📊 Ejemplos de Proyecciones
 
-> [!example]- 🎯 Cálculos de Proyecciones **Ejemplo 1: Proyección básica**
+> [!example] 🎯 Cálculos de Proyecciones **Ejemplo 1: Proyección básica**
 > 
 > Proyectar u = (3, 4, 0) sobre v = (1, 0, 0)
 > 
@@ -455,7 +459,7 @@
 
 ### 📐 Componentes Paralela y Perpendicular
 
-> [!tip]- 🎯 Teorema de Descomposición **Todo vector u puede descomponerse respecto a otro vector v como:**
+> [!tip] 🎯 Teorema de Descomposición **Todo vector u puede descomponerse respecto a otro vector v como:**
 > 
 > **u = u‖ + u⊥**
 > 
@@ -509,7 +513,7 @@ graph TD
     C --> C2[Ortogonalidad<br/>u ⊥ v ⟺ u·v = 0]
     C --> C3["Proyecciones<br/>proyᵥu = u·v/||v||² v"]
     
-    D --> D1[Trabajo físico<br/>W = F⃗·d⃗]
+    D --> D1[Trabajo físico<br/>W = \vec{F}·\vec{d}]
     D --> D2[Similitud<br/>cos θ]
     D --> D3[Descomposición<br/>u = u‖ + u⊥]
     
@@ -521,7 +525,7 @@ graph TD
 
 ## 🧪 Ejercicios Integrales
 
-> [!example]- 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
 > 
 > 1. Calcular el producto punto: a) u = (2, 3, 1) y v = (1, -2, 3) b) u = (4, 0, -2) y v = (1, 5, 2)
 > 
@@ -640,7 +644,7 @@ graph TD
 
 ## 📚 Propiedades Avanzadas
 
-> [!note]- 🔬 Teoremas Importantes **1. Desigualdad de Cauchy-Schwarz:**
+> [!note] 🔬 Teoremas Importantes **1. Desigualdad de Cauchy-Schwarz:**
 > 
 > ```
 > |u · v| ≤ ||u|| · ||v||
@@ -682,7 +686,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌟 Enlaces Conceptuales **Prerequisites:**
+> [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
 > 
 > - [[02 - Vectores en R3]] - Base fundamental
 > - [[Trigonometría]] - Funciones cos, arccos
@@ -708,7 +712,7 @@ graph TD
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip]- 🧠 Estrategias de Aprendizaje **Para dominar el producto punto:**
+> [!tip] 🧠 Estrategias de Aprendizaje **Para dominar el producto punto:**
 > 
 > **1. Comprensión conceptual:**
 > 
@@ -767,7 +771,7 @@ graph TD
 
 ## 📊 Tabla Resumen
 
-> [!example]- 📋 Compendio Completo
+> [!example] 📋 Compendio Completo
 > 
 > |Concepto|Fórmula|Interpretación|Ejemplo|
 > |---|---|---|---|
@@ -778,7 +782,7 @@ graph TD
 > |**Proyección**|proyᵥ(u) = [(u·v)/(v·v)]v|Sombra de u sobre v|-|
 > |**Componente escalar**|compᵥ(u) = (u·v)/\|v\||Longitud con signo|-|
 > |**Propiedad consigo mismo**|u · u = \|u\|²|Magnitud al cuadrado|(3,4,0)·(3,4,0) = 25|
-> |**Trabajo**|W = F⃗ · d⃗|Energía transferida|W = 100 J|
+> |**Trabajo**|W = \vec{F} · \vec{d}|Energía transferida|W = 100 J|
 > |**Paralelismo**|u ∥ v ⟺ u·v = ±\|u\| \|v\||Máxima alineación|cos(θ) = ±1|
 
 ---

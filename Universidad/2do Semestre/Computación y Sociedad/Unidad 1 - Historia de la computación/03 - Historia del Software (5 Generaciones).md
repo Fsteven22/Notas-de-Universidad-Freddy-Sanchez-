@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 💾 Historia del Software — Las 5 Generaciones
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Cómo evolucionó la forma de programar?
+> [!info] 💡 ¿Cómo evolucionó la forma de programar?
 >
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
@@ -12,7 +16,6 @@
 >     B --> C[Sistemas operativos<br/>1965-1971]
 >     C --> D[Programación<br/>estructurada<br/>1971-1989]
 >     D --> E[POO y WWW<br/>1990-presente]
->
 >     style A fill:#ffe1e1
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -24,7 +27,7 @@
 
 ## 1️⃣ Primera Generación (1951 – 1959)
 
-> [!note]- 🖥️ Lenguaje máquina y ensamblador
+> [!note] 🖥️ Lenguaje máquina y ensamblador
 >
 > Los primeros programas fueron escritos directamente en **lenguaje de máquina**: secuencias de ceros y unos que la CPU podía ejecutar directamente. Este proceso era extremadamente tedioso y propenso a errores.
 >
@@ -48,7 +51,6 @@
 > graph LR
 >     A[Instrucciones en<br/>ensamblador] --> B[Programa<br/>ensamblador]
 >     B --> C[Instrucciones en<br/>lenguaje máquina]
->
 >     style A fill:#e1f5ff
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
@@ -60,7 +62,7 @@
 
 ## 2️⃣ Segunda Generación (1959 – 1965)
 
-> [!note]- 📝 Lenguajes de alto nivel
+> [!note] 📝 Lenguajes de alto nivel
 >
 > A medida que el hardware se hizo más potente, se necesitaban herramientas más expresivas. Surgieron los **lenguajes de alto nivel**, que permitían escribir instrucciones usando declaraciones en inglés, mucho más cercanas al pensamiento humano.
 >
@@ -75,9 +77,7 @@
 >     A[High-level language<br/>FORTRAN · COBOL · LISP]
 >     B[Assembly language]
 >     C[Machine language]
->
 >     A --> B --> C
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -89,7 +89,7 @@
 
 ## 3️⃣ Tercera Generación (1965 – 1971)
 
-> [!note]- ⚙️ Sistemas operativos y software de sistemas
+> [!note] ⚙️ Sistemas operativos y software de sistemas
 >
 > Durante esta generación se hizo evidente que el **humano estaba ralentizando el proceso de computación**: la CPU quedaba ociosa mientras los programadores preparaban las siguientes instrucciones.
 >
@@ -108,9 +108,7 @@
 >     C[High-level languages]
 >     D[Assembly languages]
 >     E[Machine language]
->
 >     A --> B --> C --> D --> E
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -124,7 +122,7 @@
 
 ## 4️⃣ Cuarta Generación (1971 – 1989)
 
-> [!note]- 🏗️ Programación estructurada y explosión del software
+> [!note] 🏗️ Programación estructurada y explosión del software
 >
 > En los años 70 se introdujeron mejores técnicas de programación llamadas **programación estructurada**, basadas en tres estructuras de control fundamentales:
 >
@@ -165,7 +163,7 @@
 
 ## 5️⃣ Quinta Generación (1990 – presente)
 
-> [!note]- 🌐 Orientación a objetos, Microsoft y la WWW
+> [!note] 🌐 Orientación a objetos, Microsoft y la WWW
 >
 > La quinta generación se destaca por tres eventos fundamentales:
 >
@@ -209,7 +207,7 @@
 
 ## 📅 Línea de Tiempo de Lenguajes
 
-> [!summary]- 📅 Evolución de los lenguajes de programación
+> [!summary] 📅 Evolución de los lenguajes de programación
 >
 > ```mermaid
 > timeline
@@ -229,7 +227,7 @@
 
 ## 📊 Resumen General
 
-> [!summary]- 📊 Las 5 generaciones de un vistazo
+> [!summary] 📊 Las 5 generaciones de un vistazo
 >
 > | Generación | Período | Innovación clave | Lenguajes representativos |
 > |---|---|---|---|

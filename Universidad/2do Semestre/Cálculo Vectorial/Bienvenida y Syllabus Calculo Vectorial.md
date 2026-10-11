@@ -75,7 +75,6 @@ dg-publish: true
 >     A --> E[Unidad 4\nOptimización]
 >     A --> F[Unidad 5\nIntegrales de Línea y Dobles]
 >     A --> G[Unidad 6\nIntegrales Triples y Superficie]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1

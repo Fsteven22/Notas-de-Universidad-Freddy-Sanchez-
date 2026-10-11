@@ -60,7 +60,7 @@ graph LR
 > - **Humedad**: 30-50% - evita sequedad excesiva
 > - **Ruido**: <30 dB - usa tapones o ruido blanco si necesario
 > - **Oscuridad**: Completa - cortinas blackout, máscara ocular
-
+>
 > [!tip] Herramientas Recomendadas
 > 
 > - **Termostato programable**: Reducción automática nocturna
@@ -82,7 +82,7 @@ graph LR
 ### 💡 Gestión de la Exposición Lumínica
 
 > [!warning] Luz Azul y Sueño La luz azul (380-500nm) suprime la melatonina hasta 3 horas después de la exposición. Las pantallas emiten significativas cantidades de esta luz.
-
+>
 > [!tip] Estrategias de Mitigación
 > 
 > - **Regla 3-2-1**: 3h sin comida, 2h sin trabajo, 1h sin pantallas
@@ -125,7 +125,7 @@ graph TD
 > - **Magnesio**: Almendras, espinacas, semillas de calabaza
 > - **Melatonina natural**: Cerezas ácidas, nueces, avena
 > - **Carbohidratos complejos**: Avena, quinoa, batata
-
+>
 > [!info] Infusiones Relajantes
 > 
 > - **Manzanilla**: Apigenina - efecto sedante suave
@@ -151,7 +151,7 @@ graph TD
 > - **Mañana (6-9am)**: Mejora alertness diurna, sincroniza ritmo circadiano
 > - **Tarde (14-17h)**: Rendimiento físico máximo, temperatura corporal elevada
 > - **Evitar 3-4h antes**: Ejercicio intenso eleva temperatura y cortisol
-
+>
 > [!info] Beneficios del Ejercicio Regular
 > 
 > - **Latencia del sueño**: Reducción tiempo para dormirse (13 min promedio)

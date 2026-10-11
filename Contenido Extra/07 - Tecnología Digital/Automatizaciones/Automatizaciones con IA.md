@@ -3,7 +3,7 @@
 ## 🎯 Fundamentos de la Automatización IA
 
 > [!info] Definición La automatización con IA combina flujos de trabajo programados con capacidades de inteligencia artificial para crear sistemas que no solo ejecutan tareas repetitivas, sino que también toman decisiones inteligentes, aprenden de patrones y se adaptan a contextos cambiantes.
-
+>
 > [!tip] Principios Fundamentales
 > 
 > - 🧠 **Inteligencia adaptativa**: Los workflows evolucionan según los datos
@@ -80,7 +80,7 @@
 > - Análisis predictivo y machine learning
 > - Sistemas de recomendación personalizados
 > - Agentes IA conversacionales avanzados
-
+>
 > [!info] Make (Formerly Integromat) - Balance Potencia-Usabilidad **Características Destacadas:**
 > 
 > - Interface visual intuitiva con nodos drag-and-drop
@@ -95,7 +95,7 @@
 > - Automatizaciones con lógica condicional media
 > - Integración con herramientas de marketing
 > - Procesamiento de datos con transformaciones IA
-
+>
 > [!info] Zapier - Simplicidad y Adopción Masiva **Fortalezas Principales:**
 > 
 > - Conocido por su simplicidad y facilidad de uso, incluso para usuarios no técnicos
@@ -195,7 +195,7 @@ graph TD
 > - Programación de recordatorios inteligentes
 > - Respuestas automáticas contextuales
 > - Reenvío a personas relevantes con contexto
-
+>
 > [!code] Ejemplo de Configuración (n8n)
 > 
 > ```json
@@ -439,9 +439,9 @@ graph TD
 > - [ ] Desarrollar agente IA personalizado para tu dominio
 > - [ ] Integrar análisis predictivo en tus procesos clave
 > - [ ] Establecer sistema de mejora continua automatizada
-
+>
 > [!quote] Principio Guía "La automatización con IA no se trata de reemplazar el trabajo humano, sino de amplificar la inteligencia humana. El objetivo es liberar tiempo y energía mental para el trabajo que realmente importa: la creatividad, la estrategia y las conexiones humanas significativas."
-
+>
 >[!quote] **Recursos para Profundizar:**
 >- 🔗 [n8n Workflows Community](https://n8n.io/workflows/) - 2198 plantillas automatizadas de la comunidad global
 >- 🔗 [Make Academy](https://www.make.com/en/academy) - Cursos estructurados de automatización

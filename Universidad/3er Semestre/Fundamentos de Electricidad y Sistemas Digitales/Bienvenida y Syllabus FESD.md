@@ -67,7 +67,6 @@ dg-publish: true
 >     A --> C[Unidad 2\nElectrónica]
 >     A --> D[Unidad 3\nCircuitos Integrados]
 >     A --> E[Unidad 4\nSistemas Digitales]
->
 >     style B fill:#e1f0ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
@@ -200,7 +199,7 @@ dg-publish: true
 >
 > [!quote] 🔗 Conexiones
 > - Entrada principal: [[Fundamentos de Electricidad y Sistemas Digitales]] — landing con Dataview de toda la materia
-> - Unidades: [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 3 - Introducción a los circuitos integrados/00 - Índice Unidad 3]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4]]
+> - Unidades: [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4]]
 
 ---
 

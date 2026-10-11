@@ -85,7 +85,7 @@ flowchart TD
 > - **Quizlet**: Interfaz amigable, funciones sociales
 > - **RemNote**: Integración con toma de notas
 > - **Obsidian + Spaced Repetition Plugin**: Para usuarios de Obsidian
-
+>
 >[!warning] **Configuración del Entorno**
 >
 > 📱 Para maximizar efectividad, combina con:
@@ -144,7 +144,7 @@ flowchart TD
 > - **🎯 Tarjetas demasiado complejas**: Una idea por tarjeta
 > - **📊 Ignorar métricas**: No revisar estadísticas de rendimiento
 > - **🚫 Abandonar temprano**: Los beneficios se ven a largo plazo
-
+>
 >[!info] **Soluciones Preventivas**
 >
 > Consulta [[Hábitos de Estudio]] para desarrollar consistencia y [[Método 9 - Metodología GTD (Getting Things Done)]] para organizar mejor tu sistema de revisiones.

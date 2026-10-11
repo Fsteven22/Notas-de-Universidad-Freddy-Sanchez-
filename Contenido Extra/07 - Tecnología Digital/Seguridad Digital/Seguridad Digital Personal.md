@@ -3,7 +3,7 @@
 ## 🎯 Fundamentos de la Seguridad Digital
 
 > [!info] Definición La seguridad digital personal es el conjunto de prácticas, herramientas y conocimientos necesarios para proteger la información personal, la privacidad y los activos digitales contra amenazas cibernéticas, preservando al mismo tiempo la funcionalidad y usabilidad de los sistemas tecnológicos.
-
+>
 > [!tip] Principios Fundamentales
 > 
 > - 🛡️ **Defensa en profundidad**: Múltiples capas de protección
@@ -98,7 +98,7 @@ graph TD
 > 
 > - `Café-Luna-87-Montaña!` (más fácil de recordar)
 > - `P@ssw0rd123` ❌ (predecible y común)
-
+>
 > [!warning] Contraseñas que NUNCA Usar
 > 
 > - Información personal (nombres, fechas de nacimiento)
@@ -117,7 +117,7 @@ graph TD
 > - **Sincronización multiplataforma** con encriptación end-to-end
 > - **Auditoria de seguridad** identifica contraseñas débiles/reutilizadas
 > - **Notas seguras** para información sensible adicional
-
+>
 > [!tip] Gestores Recomendados por Nivel **Nivel Básico:**
 > 
 > - **Bitwarden**: Gratuito, open source, confiable
@@ -149,7 +149,7 @@ graph TD
 > **Algo que eres** (Inherence)
 > 
 > - Huella dactilar, reconocimiento facial, iris
-
+>
 > [!tip] Métodos 2FA por Seguridad (Más a Menos Seguro) **1. Hardware Security Keys (FIDO2/WebAuthn)**
 > 
 > - **Ejemplos**: YubiKey, Google Titan, SoloKeys
@@ -220,7 +220,7 @@ flowchart TD
 > - **Chrome** con extensiones de privacidad
 > - **Edge** con configuración de privacidad estricta
 > - **Firefox** configuración estándar con extensiones
-
+>
 > [!info] Configuraciones Críticas **Firefox Hardening:**
 > 
 > ```
@@ -262,7 +262,7 @@ flowchart TD
 > 
 > - **Web of Trust (WOT)**: Reputación de sitios web
 > - **PhishTank**: Base de datos de sitios maliciosos
-
+>
 > [!warning] Extensiones a Evitar
 > 
 > - Extensiones con pocos usuarios o reviews
@@ -310,7 +310,7 @@ flowchart TD
 > - Desactivar "Fuentes desconocidas" excepto cuando sea necesario
 > - Usar launcher privado como Nova o Lawnchair
 > - Activar encriptación completa del dispositivo
-
+>
 > [!warning] Configuraciones Riesgosas Comunes
 > 
 > - Permitir instalación de apps desde fuentes desconocidas
@@ -329,7 +329,7 @@ flowchart TD
 > - **Actualizaciones regulares** y parches de seguridad
 > - **Permisos mínimos** necesarios para funcionar
 > - **Open source** cuando sea posible
-
+>
 > [!tip] Apps Recomendadas por Categoría **Comunicación Segura:**
 > 
 > - **Signal**: Mensajería con encriptación E2E perfecta
@@ -391,7 +391,7 @@ graph TD
 > - Minimizar logs de conexión
 > - No requerir número de teléfono real
 > - Permitir comunicación anónima
-
+>
 > [!tip] Ranking de Seguridad en Mensajería **Nivel Máximo:**
 > 
 > - **Signal**: Gold standard, recomendado por expertos
@@ -426,7 +426,7 @@ graph TD
 > - Servidores intermedios pueden leer contenido
 > - Susceptible a interceptación en tránsito
 > - Headers revelan información técnica sensible
-
+>
 > [!tip] Estrategias de Email Seguro **Proveedores Seguros:**
 > 
 > - **ProtonMail**: Zero-access encryption, auditable
@@ -456,7 +456,7 @@ graph TD
 > - **Packet Sniffing**: Captura de datos no encriptados
 > - **Malware Distribution**: Inyección de código malicioso
 > - **Session Hijacking**: Robo de cookies y sesiones
-
+>
 > [!tip] Protocolo de WiFi Público Seguro **Antes de Conectarse:**
 > 
 > 1. Verificar nombre exacto de red con establecimiento
@@ -489,7 +489,7 @@ graph TD
 > - **Desactivar acceso remoto** si no es necesario
 > - **Guest network** separada para visitantes
 > - **Firewall activado** con reglas restrictivas
-
+>
 > [!tip] Configuraciones Avanzadas **DNS Seguro:**
 > 
 > - **Cloudflare**: 1.1.1.1 (privacidad + velocidad)
@@ -512,7 +512,7 @@ graph TD
 > - **Bypass de censura**: Acceder a contenido geo-bloqueado
 > - **Protección en WiFi público**: Capa adicional de seguridad
 > - **Anonimato relativo**: Ocultar actividad del ISP
-
+>
 > [!tip] Criterios de Selección de VPN **Factores Críticos:**
 > 
 > - **No-logs policy** verificable y auditada
@@ -522,7 +522,7 @@ graph TD
 > - **Servidores propios** vs. tercerizados
 > - **Transparencia**: Regular transparency reports
 > - **Performance**: Velocidad y latencia aceptables
-
+>
 > [!warning] VPNs a Evitar
 > 
 > - **VPNs gratuitas**: Monetizan vendiendo datos
@@ -584,7 +584,7 @@ flowchart TD
 > 
 > - **1 copia offline** (no conectada a red)
 > - **0 errores** verificados (testing de backups regular)
-
+>
 > [!tip] Implementación Práctica 3-2-1 **Nivel Básico:**
 > 
 > - **Original**: En computadora principal
@@ -640,7 +640,7 @@ flowchart TD
 > - **Brechas de seguridad** en proveedores
 > - **Órdenes gubernamentales** para acceso a datos
 > - **Ransomware** puede cifrar backups en la red
-
+>
 > [!info] Opciones de Encriptación **Client-side Encryption:**
 > 
 > - **VeraCrypt**: Contenedores encriptados locales
@@ -678,7 +678,7 @@ flowchart TD
 > - Compras o transacciones no autorizadas
 > - Amigos reportan mensajes extraños de tu cuenta
 > - Sesiones activas desde ubicaciones desconocidas
-
+>
 > [!tip] Herramientas de Detección **Análisis de Sistema:**
 > 
 > - **Malwarebytes**: Antimalware especializado
@@ -709,7 +709,7 @@ flowchart TD
 > 5. **Notificar contactos importantes** sobre posible compromiso
 > 6. **Revisar cuentas bancarias** desde dispositivo separado
 > 7. **Activar alertas de fraude** en bancos y tarjetas de crédito
-
+>
 > [!warning] QUÉ NO HACER Durante Respuesta
 > 
 > - ❌ **No introducir más credenciales** en el dispositivo comprometido
@@ -735,7 +735,7 @@ flowchart TD
 > - **Verificar extensiones de navegador** instaladas
 > - **Actualizar TODOS los programas** y sistema operativo
 > - **Cambiar TODAS las contraseñas** desde dispositivo limpio
-
+>
 > [!info] Recuperación de Cuentas Comprometidas **Para Cada Cuenta Afectada:**
 > 
 > 1. **Cambiar contraseña inmediatamente**
@@ -757,7 +757,7 @@ flowchart TD
 > - **Impacto estimado** de la brecha
 > - **Medidas preventivas** que fallaron
 > - **Lecciones aprendidas** para el futuro
-
+>
 > [!info] Análisis Post-Incidente **Preguntas Críticas:**
 > 
 > - ¿Cómo ocurrió el compromiso inicial?
@@ -778,7 +778,7 @@ flowchart TD
 > 5. **Notificar contactos importantes** sobre posible compromiso
 > 6. **Revisar cuentas bancarias** desde dispositivo separado
 > 7. **Activar alertas de fraude** en bancos y tarjetas de crédito
-
+>
 > [!warning] QUÉ NO HACER Durante Respuesta
 > 
 > - ❌ **No introducir más credenciales** en el dispositivo comprometido
@@ -804,7 +804,7 @@ flowchart TD
 > - **Verificar extensiones de navegador** instaladas
 > - **Actualizar TODOS los programas** y sistema operativo (ver [[Automatizaciones Digitales]])
 > - **Cambiar TODAS las contraseñas** desde dispositivo limpio
-
+>
 > [!info] Recuperación de Cuentas Comprometidas **Para Cada Cuenta Afectada:**
 > 
 > 1. **Cambiar contraseña inmediatamente**
@@ -826,7 +826,7 @@ flowchart TD
 > - **Impacto estimado** de la brecha
 > - **Medidas preventivas** que fallaron
 > - **Lecciones aprendidas** para el futuro
-
+>
 > [!info] Análisis Post-Incidente **Preguntas Críticas:**
 > 
 > - ¿Cómo ocurrió el compromiso inicial?
@@ -859,7 +859,7 @@ flowchart TD
 > - Seguir a empleados a través de puertas seguras
 > - Pedir acceso WiFi como "visitante"
 > - Solicitar ayuda con "problemas técnicos"
-
+>
 > [!tip] Señales de Alerta en Comunicaciones **Red Flags Inmediatas:**
 > 
 > - **Urgencia artificial**: "Actúa ahora o perderás..."
@@ -869,7 +869,7 @@ flowchart TD
 > - **Información no solicitada**: Ofertas que no pediste
 > - **Solicitudes de información personal**: Por email/teléfono
 > - **Presión emocional**: Apelar a miedo, codicia, simpatía
-
+>
 > [!info] Técnicas de Verificación **Antes de Actuar:**
 > 
 > 1. **Pausa y reflexiona**: ¿Esperaba esta comunicación?
@@ -914,7 +914,7 @@ flowchart TD
 > - **Darknet Diaries**: Podcast de historias de hacking
 > - **Security Now**: Podcast técnico semanal
 > - **Threatpost**: Noticias de seguridad actualizadas
-
+>
 > [!tip] Plan de Educación Continua **Rutina Mensual:**
 > 
 > - Revisar configuraciones de seguridad de todas las cuentas
@@ -986,7 +986,7 @@ flowchart TD
 > - Ataques a wallets y exchanges
 > - Ransomware pidiendo crypto
 > - Social engineering relacionado con NFTs
-
+>
 > [!info] Estrategias de Adaptación **Mantente Informado:**
 > 
 > - Suscribirse a alertas de CISA/CERT
@@ -1071,7 +1071,7 @@ flowchart TD
 ### 🌟 Mentalidad a Largo Plazo
 
 > [!quote] Principios Guía "La seguridad perfecta no existe, pero la seguridad razonable y adaptativa sí. El objetivo no es eliminar todos los riesgos, sino gestionarlos de manera consciente e informada, manteniendo un balance entre seguridad, privacidad y funcionalidad que permita vivir digitalmente con confianza."
-
+>
 > [!tip] Valores Fundamentales
 > 
 > - **Educación continua**: La tecnología evoluciona, nuestros conocimientos también (ver [[Hábitos de Estudio]])
@@ -1088,6 +1088,6 @@ flowchart TD
 >>- 🔗 [PrivacyTools](https://privacytools.io/) - Herramientas de privacidad recomendadas
 >- 🔗 [NIST Cybersecurity Framework](https://nist.gov/cyberframework) - Marco de referencia
 >- 🔗 [EFF Surveillance Self-Defense](https://ssd.eff.org/) - Guías detalladas de privacidad
-
+>
 >[!success] 💡 **Recuerda**:
  La seguridad digital es un proceso continuo, no un destino. Mantente informado, sé proactivo, y adapta tus medidas según evolucionen las amenazas y tus necesidades personales (ver [[Dashboard Semanal]] para hacer seguimiento de tu progreso).

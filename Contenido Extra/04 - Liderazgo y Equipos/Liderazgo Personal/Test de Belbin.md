@@ -75,7 +75,7 @@ graph TD
 > Ejemplo real: El inventor del equipo, el que aparece en una reunión
 > con una solución completamente inesperada al problema.
 > ```
-
+>
 > [!note]- 🔍 Monitor Evaluador *(Monitor Evaluator)*
 >
 > **¿Quién es?** El analista crítico del equipo. Evalúa opciones con objetividad, detecta fallos en los planes y sopesa los pros y contras antes de tomar decisiones.
@@ -92,7 +92,7 @@ graph TD
 > Ejemplo real: El que en una reunión dice "espera, ¿consideramos
 > este riesgo?" antes de que el equipo se lance sin pensar.
 > ```
-
+>
 > [!note]- 🎓 Especialista *(Specialist)*
 >
 > **¿Quién es?** El experto técnico del equipo. Aporta conocimientos profundos en un área específica. Muy dedicado a su campo, aunque su visión puede ser estrecha.
@@ -130,7 +130,7 @@ graph TD
 > Ejemplo real: El que al inicio de un proyecto dice "tú haces esto,
 > tú aquello, yo coordino" y logra que todos trabajen juntos.
 > ```
-
+>
 > [!note]- 🤝 Cohesionador *(Teamworker)*
 >
 > **¿Quién es?** El corazón del equipo. Suave, diplomático y sensible. Su función es mantener la armonía, resolver conflictos interpersonales y asegurarse de que nadie se sienta excluido.
@@ -147,7 +147,7 @@ graph TD
 > Ejemplo real: El que después de una discusión difícil habla
 > con ambas partes y logra que el equipo siga funcionando.
 > ```
-
+>
 > [!note]- 🌐 Investigador de Recursos *(Resource Investigator)*
 >
 > **¿Quién es?** El conector externo del equipo. Extrovertido, entusiasta y curioso. Busca oportunidades, contactos y recursos fuera del equipo, trayendo ideas y conexiones del exterior.
@@ -185,7 +185,7 @@ graph TD
 > Ejemplo real: El que dice "dejemos de hablar y actuemos" cuando
 > el equipo lleva horas en una reunión sin decidir nada.
 > ```
-
+>
 > [!note]- ⚙️ Implementador *(Implementer)*
 >
 > **¿Quién es?** El ejecutor práctico del equipo. Disciplinado, sistemático y confiable. Convierte las ideas y planes en acciones concretas y organizadas.
@@ -202,7 +202,7 @@ graph TD
 > Ejemplo real: El que toma el plan del Cerebro y dice "bien,
 > esto lo hacemos en pasos: primero X, luego Y, luego Z."
 > ```
-
+>
 > [!note]- ✅ Finalizador *(Completer Finisher)*
 >
 > **¿Quién es?** El perfeccionista del equipo. Concienzudo, detallista y puntual. Se asegura de que todo esté terminado correctamente, sin errores y dentro de los plazos.

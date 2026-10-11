@@ -34,7 +34,7 @@
 > > - **Plugins:** Extensiones que añaden funcionalidades a la aplicación.
 > 
 > ---
-
+>
 > [!success]- ## 🛠️ Características Principales
 > 
 > ### Gráfico de Conocimiento

@@ -3,9 +3,9 @@
 ## 📖 Contexto
 
 > [!info] Definición Deep Work es la habilidad de concentrarse sin distracción en una tarea cognitivamente demandante. Es el trabajo que agrega valor, mejora habilidades y es difícil de replicar. Concepto desarrollado por Cal Newport en su libro homónimo de 2016.
-
+>
 > [!tip] Relevancia en la era digital 🌐 En un mundo cada vez más conectado y lleno de distracciones, la capacidad de realizar trabajo profundo se ha vuelto simultáneamente **más rara** y **más valiosa**. Es la superpotencia del siglo XXI.
-
+>
 > [!warning] El problema actual La **cultura de la hiperconectividad** y las **distracciones digitales constantes** están fragmentando nuestra atención, reduciendo la calidad del trabajo intelectual y limitando nuestro potencial de crecimiento profesional.
 
 ## 🔧 Componentes Fundamentales
@@ -36,7 +36,7 @@
 >      Progreso acumulativo
 >      Momentum sostenido
 > ```
-
+>
 > [!abstract] Deep Work vs Shallow Work
 > 
 > |🎯 **DEEP WORK**|🌊 **SHALLOW WORK**|
@@ -65,7 +65,7 @@
 > - Rutinas extremadamente protegidas
 > 
 > **📊 Ejemplo**: Donald Knuth (Stanford) - revisa email una vez cada 3 meses
-
+>
 > [!example] 🔄 Filosofía Bimodal **Principio**: División clara entre períodos de deep work y conectividad normal
 > 
 > **⏰ Estructura temporal**:
@@ -81,7 +81,7 @@
 > - Jueves/Viernes: Deep work con comunicación limitada
 > 
 > **📊 Ejemplo**: Adam Grant (Wharton) - batching de enseñanza vs investigación
-
+>
 > [!example] 🏃 Filosofía Rítmica **Principio**: Establecer una rutina diaria regular de deep work
 > 
 > **🕐 Patrones comunes**:
@@ -98,7 +98,7 @@
 > - Reduce la fatiga de decisión
 > 
 > **📊 Ejemplo**: Jerry Seinfeld - "Don't break the chain" para escritura diaria
-
+>
 > [!example] ⚡ Filosofía Periodística **Principio**: Capacidad de activar deep work en cualquier momento disponible
 > 
 > **🎯 Habilidades requeridas**:
@@ -126,13 +126,13 @@
 > - **Corteza prefrontal**: El deep work ejercita las funciones ejecutivas
 > - **Atención residual**: Los cambios de tarea dejan "residuos" cognitivos
 > - **Default Mode Network**: La concentración profunda silencia la red neuronal por defecto
-
+>
 > [!tip] Beneficios cognitivos comprobados ✅ **Mejora la memoria de trabajo**: Mayor capacidad de procesamiento  
 > ✅ **Fortalece la concentración**: Músculo atencional más resistente  
 > ✅ **Acelera el aprendizaje**: Mielinización optimizada de circuitos  
 > ✅ **Reduce la fatiga mental**: Menor carga cognitiva por cambios de contexto  
 > ✅ **Potencia la creatividad**: Estados de flujo facilitan conexiones innovadoras
-
+>
 > [!warning] Costos de la multitarea ❌ **Attention Residue**: 23 minutos promedio para recuperar concentración completa  
 > ❌ **Task-switching penalty**: Pérdida de 25% de eficiencia por cambio de contexto  
 > ❌ **Cognitive overload**: Saturación de la memoria de trabajo  
@@ -162,7 +162,7 @@
 > - Métricas de progreso claramente definidas
 > - Protocolo para manejar distracciones internas
 > - Sistema de recompensas por cumplimiento
-
+>
 > [!example] 🚫 Estrategias de aislamiento **🔒 Bloqueo digital**:
 > 
 > ```mermaid
@@ -182,14 +182,14 @@
 >    style G fill:#e3f2fd
 >    style J fill:#fff3e0
 > ```
-
+>
 > **🏠 Diseño de espacio físico**:
 > 
 > - **Zona libre de tecnología**: Solo herramientas esenciales
 > - **Indicadores visuales**: Señales de "no molestar"
 > - **Elementos inspiradores**: Libros, plantas, arte relevante
 > - **Comodidad ergonómica**: Silla, iluminación, temperatura
-
+>
 > [!example] 🧘 Técnicas de preparación mental **🎯 Ritual de activación** (10-15 minutos):
 > 
 > 1. **Respiración profunda**: 5 minutos de respiración 4-7-8
@@ -215,7 +215,7 @@
 > - **Sensación de progreso en habilidades**
 > - **Reducción del estrés y ansiedad**
 > - **Calidad del trabajo producido**
-
+>
 > [!tip] Herramientas de tracking **📱 Apps especializadas**:
 > 
 > - **RescueTime**: Tracking automático de tiempo y distracciones
@@ -252,7 +252,7 @@
 > - Reducción de bugs por mejor concentración
 > - Código más limpio y bien estructurado
 > - Aceleración en el aprendizaje de nuevas tecnologías
-
+>
 > [!example] 📚 Deep Work para estudiantes **🎓 Técnicas académicas**:
 > 
 > - **Active Reading**: Lectura con toma de notas estructuradas
@@ -273,7 +273,7 @@
 > - Problemas resueltos por sesión
 > - Conceptos dominados por semana
 > - Mejora en calificaciones de exámenes
-
+>
 > [!example] ✍️ Deep Work para escritores **📝 Proceso creativo**:
 > 
 > 1. **Morning Pages**: 750 palabras de escritura libre
@@ -342,7 +342,7 @@
 > - ⬇️ 50% reducción en reportes de estrés
 > - ⬆️ 40% mejora en satisfacción laboral
 > - ⬆️ 28% incremento en innovación (nuevas features)
-
+>
 > [!example] 🎓 Programa doctoral acelerado **👤 Perfil**: Estudiante de doctorado en Ciencias de la Computación
 > 
 > **🎯 Objetivo**: Completar disertación en 18 meses (vs 4-6 años promedio)

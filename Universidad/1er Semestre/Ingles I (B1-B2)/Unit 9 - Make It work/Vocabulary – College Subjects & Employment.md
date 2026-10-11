@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🎯 Vocabulary – College Subjects & Employment
 
 ## 📚 College Subjects / Academic Fields

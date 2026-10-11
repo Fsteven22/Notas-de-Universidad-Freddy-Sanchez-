@@ -1,12 +1,16 @@
+---
+dg-publish: true
+---
+
 # Módulo 6.3: Manipulación de Datos  📊
 
 > [!quote] "Los datos son el nuevo petróleo, pero solo cuando sabemos refinarlos y extraer su valor real." 🛢️
-
-> [!info]- La manipulación de datos es una habilidad fundamental en el análisis de información moderna. En la era del Big Data, la capacidad de filtrar, agregar, transformar y visualizar datos determina la calidad de nuestras decisiones. Pandas, la biblioteca más poderosa de Python para análisis de datos, nos proporciona herramientas intuitivas y eficientes para convertir datos crudos en insights accionables. Este módulo te enseñará las técnicas esenciales de manipulación de datos usando el dataset de vuelos como caso de estudio práctico.
+>
+> [!info] La manipulación de datos es una habilidad fundamental en el análisis de información moderna. En la era del Big Data, la capacidad de filtrar, agregar, transformar y visualizar datos determina la calidad de nuestras decisiones. Pandas, la biblioteca más poderosa de Python para análisis de datos, nos proporciona herramientas intuitivas y eficientes para convertir datos crudos en insights accionables. Este módulo te enseñará las técnicas esenciales de manipulación de datos usando el dataset de vuelos como caso de estudio práctico.
 
 ## Conceptos Fundamentales
 
-> [!info]- **Dataset de Referencia: Vuelos de Aerolíneas** ✈️
+> [!info] **Dataset de Referencia: Vuelos de Aerolíneas** ✈️
 > 
 > Para este módulo utilizaremos el dataset `flights` de Seaborn, que contiene registros históricos de pasajeros de aerolíneas (en miles) organizados por mes y año, cubriendo el período 1949-1960. Este dataset es perfecto para análisis temporal y estacional.
 > 
@@ -36,8 +40,8 @@
 > |year|int64|Año (1949-1960)|
 > |month|object|Mes abreviado (Jan, Feb, etc.)|
 > |passengers|int64|Miles de pasajeros transportados|
-
-> [!tip]- **Operadores Lógicos para Filtrado** 🔍
+>
+> [!tip] **Operadores Lógicos para Filtrado** 🔍
 > 
 > Los operadores lógicos son la base del filtrado inteligente en Pandas. Permiten crear condiciones complejas para extraer subconjuntos específicos de datos.
 > 
@@ -67,8 +71,8 @@
 > # Exclusión
 > df[~(df['columna'] == valor)]
 > ```
-
-> [!warning]- **Sustitución Condicional: .where() vs .mask()** 🔄
+>
+> [!warning] **Sustitución Condicional: .where() vs .mask()** 🔄
 > 
 > Estos métodos permiten reemplazar valores basados en condiciones lógicas sin eliminar filas del DataFrame.
 > 
@@ -98,8 +102,8 @@
 > - El parámetro `other` define el valor de reemplazo
 > - Sin `other`, los valores reemplazados se vuelven NaN
 > - Útil para categorización y limpieza de datos
-
-> [!info]- **Estadísticas Descriptivas Esenciales** 📈
+>
+> [!info] **Estadísticas Descriptivas Esenciales** 📈
 > 
 > Las estadísticas descriptivas proporcionan un resumen cuantitativo completo de nuestros datos, revelando patrones, tendencias y anomalías.
 > 
@@ -138,7 +142,7 @@
 
 ## Estrategias y Métodos
 
-> [!tip]- **Método FILTRA para Filtrado Sistemático** 🎯
+> [!tip] **Método FILTRA para Filtrado Sistemático** 🎯
 > 
 > **F**ormular pregunta específica **I**dentificar columnas relevantes  
 > **L**ógica de condiciones (AND/OR/NOT) **T**estear filtro con subset pequeño **R**evisar resultados y validar **A**plicar a análisis completo
@@ -165,8 +169,8 @@
 > # 5. Revisar: ¿Sentido lógico? ¿Cantidad esperada?
 > # 6. Aplicar: Usar para análisis estacional
 > ```
-
-> [!tip]- **Método AGRUPA para GroupBy Efectivo** 🎲
+>
+> [!tip] **Método AGRUPA para GroupBy Efectivo** 🎲
 > 
 > **A**nalizar objetivo de agrupación **G**rupar por categoría relevante **R**evisar grupos formados **U**sar función de agregación apropiada **P**rocesar resultados (ordenar/formatear) **A**nalizar e interpretar patrones
 > 
@@ -197,7 +201,7 @@
 
 ## Ejemplos Prácticos
 
-> [!example]- **Ejemplo 1: Análisis de Filtrado Avanzado** 🔍
+> [!example] **Ejemplo 1: Análisis de Filtrado Avanzado** 🔍
 > 
 > **Objetivo:** Identificar patrones en vuelos de julio posteriores a 1955 y comparar con el resto de datos.
 > 
@@ -233,8 +237,8 @@
 > - Validación de lógica con operador NOT
 > 
 > **Insight:** Los julios recientes muestran el impacto del crecimiento del tráfico aéreo en el período de post-guerra.
-
-> [!example]- **Ejemplo 2: GroupBy para Análisis Temporal y Estacional** 📅
+>
+> [!example] **Ejemplo 2: GroupBy para Análisis Temporal y Estacional** 📅
 > 
 > **Objetivo:** Analizar la evolución anual y los patrones estacionales del tráfico aéreo.
 > 
@@ -285,8 +289,8 @@
 > - Crecimiento sostenido año tras año
 > - Estacionalidad clara con picos en verano
 > - Patrones consistentes a lo largo del período
-
-> [!example]- **Ejemplo 3: Visualización Integrada con Análisis** 📊
+>
+> [!example] **Ejemplo 3: Visualización Integrada con Análisis** 📊
 > 
 > **Objetivo:** Crear visualizaciones que complementen el análisis de datos para identificar tendencias y patrones.
 > 
@@ -370,7 +374,6 @@
 >     G --> H[📊 Visualización]
 >     H --> I[🧠 Interpretación]
 >     I --> J[📝 Conclusiones]
->     
 >     style A fill:#e1f5fe
 >     style F fill:#f3e5f5
 >     style H fill:#fff3e0
@@ -379,7 +382,7 @@
 
 ## Técnicas de Implementación
 
-> [!note]- **Herramientas y Configuración Óptima** 🛠️
+> [!note] **Herramientas y Configuración Óptima** 🛠️
 > 
 > **Librerías Esenciales:**
 > 
@@ -431,7 +434,7 @@
 
 ## Técnicas de Memorización
 
-> [!tip]- **Mnemotecnia: "PANDAS"** 🐼
+> [!tip] **Mnemotecnia: "PANDAS"** 🐼
 > 
 > **P**reguntar qué información necesito **A**plicar filtros con operadores lógicos (&, |, ~)  
 > **N**avegar por grupos con groupby() **D**escribir datos con estadísticas (.describe()) **A**gregar funciones de resumen (sum, mean, count) **S**implificar con visualizaciones (.plot())
@@ -446,8 +449,8 @@
 > - **S - Simplificar:** Una visualización vale más que mil números
 > 
 > **Frase Nemotécnica:** _"Para Analizar Necesito Datos Agregados Sistemáticamente"_
-
-> [!tip]- **Acrónimos para Operadores Lógicos: "YON"** 🎯
+>
+> [!tip] **Acrónimos para Operadores Lógicos: "YON"** 🎯
 > 
 > **Y** → & (AND) - **Y**a que ambas condiciones deben cumplirse **O** → | (OR) - **O**tra opción es que una condición se cumpla  
 > **N** → ~ (NOT) - **N**iega o invierte la condición
@@ -460,7 +463,7 @@
 
 ## Errores Comunes
 
-> [!warning]- **Errores Frecuentes en Filtrado y GroupBy** ⚠️
+> [!warning] **Errores Frecuentes en Filtrado y GroupBy** ⚠️
 > 
 > |Error|Problema|Consecuencia|Corrección|
 > |---|---|---|---|
@@ -491,7 +494,7 @@
 
 ## Criterios de Calidad
 
-> [!info]- **Evaluación de Análisis de Datos** ✅
+> [!info] **Evaluación de Análisis de Datos** ✅
 > 
 > **Lista de Verificación - Filtrado:**
 > 
@@ -534,7 +537,7 @@
 
 ## Aplicaciones Específicas
 
-> [!info]- **Contextos de Aplicación en Diferentes Industrias** 🏢
+> [!info] **Contextos de Aplicación en Diferentes Industrias** 🏢
 > 
 > **Sector Financiero:**
 > 
@@ -587,7 +590,7 @@
 
 ## Referencias Cruzadas
 
-> [!quote]- **Notas Relacionadas**
+> [!quote] **Notas Relacionadas**
 > 
 > **Fundamentos Previos:**
 > 
@@ -615,7 +618,7 @@
 
 ## Prerrequisitos y Temas Avanzados
 
-> [!note]- **Prerrequisitos**
+> [!note] **Prerrequisitos**
 > 
 > **Conocimientos Básicos Requeridos:**
 > 
@@ -638,8 +641,8 @@
 > - Interpretación de medidas de tendencia central
 > - Concepto de variabilidad y dispersión
 > - Lectura básica de gráficos estadísticos
-
-> [!note]- **Temas Avanzados**
+>
+> [!note] **Temas Avanzados**
 > 
 > **Próximos Pasos en Manipulación de Datos:**
 > 

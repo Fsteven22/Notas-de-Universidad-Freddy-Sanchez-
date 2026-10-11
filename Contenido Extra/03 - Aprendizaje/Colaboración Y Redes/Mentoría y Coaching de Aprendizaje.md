@@ -1,7 +1,7 @@
 # Mentoría y Coaching de Aprendizaje
 
 > [!quote] _"El mejor maestro no es el que da respuestas, sino el que hace las preguntas correctas para que el estudiante descubra su propio camino."_ – **John Whitmore**
-
+>
 > [!info] **¿Qué es la Mentoría y Coaching de Aprendizaje?** 🎯  
 > La mentoría y coaching de aprendizaje es un proceso **colaborativo y personalizado** donde un mentor/coach experimentado guía a un aprendiz para desarrollar sus competencias, potenciar sus fortalezas y alcanzar sus objetivos académicos y profesionales.  
 > Se basa en el **crecimiento mutuo**, la confianza y el desarrollo de la autonomía del aprendiz.
@@ -239,7 +239,7 @@ graph TD
 > 
 > - [[Facilitación de Grupos]]
 > - [[Liderazgo Situacional]]
-> - [[Comunicación Efectiva]]
+> - [[La Comunicación Efectiva]]
 > - [[Inteligencia Emocional]]
 > - [[Feedback y Coaching]]
 > - [[Desarrollo de Equipos]]

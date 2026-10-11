@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🌊 Flujos y Archivos en Java
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son los Flujos (Streams)?
+> [!info] 💡 ¿Qué son los Flujos (Streams)?
 > 
 > Un **flujo** es una secuencia de datos que viaja desde un origen hacia un destino. En Java, los flujos son la abstracción fundamental para cualquier operación de entrada/salida (E/S).
 > 
@@ -16,7 +20,6 @@
 > graph LR
 >     A[📁 Origen<br/>Archivo] -->|Flujo de entrada| B[☕ Programa<br/>Java]
 >     B -->|Flujo de salida| C[📄 Destino<br/>Archivo]
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -28,7 +31,7 @@
 
 ### 🔤 Flujos de Bytes vs Caracteres
 
-> [!tip]- 🎭 Dos Familias Principales
+> [!tip] 🎭 Dos Familias Principales
 > 
 > Java proporciona dos jerarquías paralelas de clases para manejar flujos:
 > 
@@ -63,7 +66,7 @@ graph TB
 
 ### 📊 Jerarquía Completa
 
-> [!note]- 🌳 Árbol de Clases de E/S
+> [!note] 🌳 Árbol de Clases de E/S
 > 
 > ```mermaid
 > classDiagram
@@ -72,36 +75,29 @@ graph TB
 >         +read() int
 >         +close()
 >     }
->     
 >     class OutputStream {
 >         <<abstract>>
 >         +write(int)
 >         +flush()
 >         +close()
 >     }
->     
 >     class Reader {
 >         <<abstract>>
 >         +read() int
 >         +close()
 >     }
->     
 >     class Writer {
 >         <<abstract>>
 >         +write(int)
 >         +flush()
 >         +close()
 >     }
->     
 >     InputStream <|-- FileInputStream
 >     InputStream <|-- BufferedInputStream
->     
 >     OutputStream <|-- FileOutputStream
 >     OutputStream <|-- BufferedOutputStream
->     
 >     Reader <|-- FileReader
 >     Reader <|-- BufferedReader
->     
 >     Writer <|-- FileWriter
 >     Writer <|-- BufferedWriter
 > ```
@@ -112,7 +108,7 @@ graph TB
 
 ### 📥 Flujos de Entrada (Input Streams)
 
-> [!example]- 📖 Lectura de Datos
+> [!example] 📖 Lectura de Datos
 > 
 > **Propósito:** Traer datos DESDE una fuente HACIA el programa.
 > 
@@ -139,7 +135,7 @@ graph TB
 
 ### 📤 Flujos de Salida (Output Streams)
 
-> [!example]- ✍️ Escritura de Datos
+> [!example] ✍️ Escritura de Datos
 > 
 > **Propósito:** Enviar datos DESDE el programa HACIA un destino.
 > 
@@ -167,7 +163,7 @@ graph TB
 
 ## 🎨 Concepto de Decorador (Wrapper)
 
-> [!success]- 🎁 Envolver Flujos para Añadir Funcionalidad
+> [!success] 🎁 Envolver Flujos para Añadir Funcionalidad
 > 
 > Java usa el **patrón Decorator** para añadir capacidades a los flujos básicos sin modificarlos.
 > 
@@ -175,7 +171,6 @@ graph TB
 > graph LR
 >     A[FileReader<br/>Lectura básica] --> B[BufferedReader<br/>+ Buffer]
 >     B --> C[Tu Programa<br/>readLine]
->     
 >     style A fill:#ffe1e1
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -207,7 +202,7 @@ graph TB
 
 ### 💾 Persistencia de Datos
 
-> [!info]- 📌 Datos que Sobreviven
+> [!info] 📌 Datos que Sobreviven
 > 
 > Los archivos permiten que la información **persista** más allá de la ejecución del programa.
 > 
@@ -219,7 +214,7 @@ graph TB
 
 ### 🚿 Flujo de Datos Unidireccional
 
-> [!tip]- ➡️ Una Dirección a la Vez
+> [!tip] ➡️ Una Dirección a la Vez
 > 
 > Cada flujo es **unidireccional**:
 > 
@@ -243,7 +238,7 @@ graph TB
 
 ### 🔒 Cierre de Recursos
 
-> [!warning]- ⚠️ SIEMPRE Cerrar Flujos
+> [!warning] ⚠️ SIEMPRE Cerrar Flujos
 > 
 > **Problema:** Los flujos consumen recursos del sistema operativo.
 > 
@@ -253,7 +248,6 @@ graph TB
 >     B --> C{¿Cerrado?}
 >     C -->|❌ No| D[Fuga de recursos<br/>Archivos bloqueados]
 >     C -->|✅ Sí| E[Recursos liberados<br/>Todo OK]
->     
 >     style D fill:#ffe1e1
 >     style E fill:#e1ffe1
 > ```
@@ -271,22 +265,18 @@ graph TB
 
 ## 📊 Resumen Comparativo
 
-> [!summary]- 🎯 Guía Rápida de Decisión
+> [!summary] 🎯 Guía Rápida de Decisión
 > 
 > ```mermaid
 > graph TD
 >     A{¿Tipo de<br/>archivo?} --> B[Texto]
 >     A --> C[Binario]
->     
 >     B --> D{¿Operación?}
 >     C --> E{¿Operación?}
->     
 >     D -->|Lectura| F[BufferedReader +<br/>FileReader]
 >     D -->|Escritura| G[BufferedWriter +<br/>FileWriter]
->     
 >     E -->|Lectura| H[BufferedInputStream +<br/>FileInputStream]
 >     E -->|Escritura| I[BufferedOutputStream +<br/>FileOutputStream]
->     
 >     style F fill:#e1ffe1
 >     style G fill:#e1ffe1
 >     style H fill:#e1f5ff

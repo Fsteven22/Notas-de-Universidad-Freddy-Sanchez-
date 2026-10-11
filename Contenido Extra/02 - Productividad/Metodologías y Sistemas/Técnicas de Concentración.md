@@ -63,7 +63,7 @@ graph LR
 > - **Ambientales**: Ruido, interrupciones, desorden
 > - **Internos**: Pensamientos intrusivos, preocupaciones, fatiga
 > - **Multitarea**: Cambio constante entre actividades
-
+>
 > [!tip] Soluciones Prácticas
 > 
 > - Modo avión o Do Not Disturb
@@ -137,7 +137,7 @@ graph TD
 > - **Antioxidantes**: Arándanos, chocolate negro, té verde
 > - **Proteínas**: Huevos, legumbres, quinoa
 > - **Hidratación**: 2-3 litros de agua diarios
-
+>
 > [!warning] Evitar
 > 
 > - Azúcares refinados (causan picos y caídas de energía)
@@ -168,9 +168,9 @@ pie title Distribución del Tiempo de Trabajo
 ### Problemas Comunes y Soluciones
 
 > [!warning] Fatiga Mental **Síntomas**: Pérdida progresiva de concentración, errores frecuentes **Solución**: Descansos regulares, ejercicio físico, técnicas de recuperación
-
+>
 > [!warning] Procrastinación **Síntomas**: Evitación de tareas importantes, búsqueda de distracciones **Solución**: Técnica de los 2 minutos, reward system, accountability partner
-
+>
 > [!warning] Sobrecarga Cognitiva **Síntomas**: Sensación de abrumamiento, dificultad para priorizar **Solución**: Brain dump, matriz de Eisenhower, single-tasking estricto
 
 ## Referencias y Conexiones 🔗

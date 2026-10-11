@@ -3,11 +3,11 @@
 ## 📖 Contexto
 
 > [!info] Definición Mindfulness o Atención Plena es la capacidad de prestar atención al momento presente de manera intencional, sin juzgar y con aceptación. En el contexto académico y de productividad, es una habilidad metacognitiva que mejora la concentración, reduce el estrés y optimiza el rendimiento intelectual.
-
+>
 > [!tip] Origen y evolución 🏛️ **Raíces milenarias**: Deriva de tradiciones contemplativas budistas (Sati en Pali)  
 > 🔬 **Validación científica**: Jon Kabat-Zinn introdujo MBSR (1979) en medicina occidental  
 > 🎓 **Aplicación educativa**: Integración en curriculas académicas desde los años 2000
-
+>
 > [!warning] Problema contemporáneo La **crisis de atención moderna**: multitasking constante, sobrecarga de información y distracciones digitales han fragmentado nuestra capacidad natural de concentración, creando una epidemia de **déficit atencional adquirido**.
 
 ## 🔧 Componentes Fundamentales
@@ -38,7 +38,7 @@
 >      Sin categorización
 >      Ecuanimidad
 > ```
-
+>
 > [!abstract] Mecanismos neurológicos **🧠 Redes cerebrales involucradas**:
 > 
 > - **Red Atencional Ejecutiva**: Control consciente del foco
@@ -67,7 +67,7 @@
 > - **Pre-estudio**: 3-5 minutos antes de sesiones intensas
 > - **Entre clases**: Reset atencional de 2 minutos
 > - **Pre-examen**: Reducir ansiedad y centrar la mente
-
+>
 > [!example] 🔍 Body Scan (Exploración corporal) **🎯 Desarrolla conciencia interoceptiva y relajación profunda**
 > 
 > **📋 Técnica guiada**:
@@ -93,7 +93,7 @@
 > - Mejora en la calidad del sueño
 > - Mayor conciencia de señales de fatiga
 > - Herramienta efectiva para breaks entre materias
-
+>
 > [!example] 🎯 Mindful Reading (Lectura consciente) **🎯 Aplicación directa al proceso de aprendizaje**
 > 
 > **📚 Protocolo de lectura mindful**:
@@ -120,13 +120,13 @@
 > - **Reducción de amígdala**: Menor reactividad al estrés (-8%)
 > - **Fortalecimiento del corpus calloso**: Mejor comunicación interhemisférica
 > - **Densidad dendrítica**: Mayor conectividad neuronal
-
+>
 > [!tip] Beneficios cognitivos específicos ✅ **Memoria de trabajo**: Mejora en capacidad de procesamiento simultáneo  
 > ✅ **Flexibilidad cognitiva**: Mayor adaptabilidad mental entre tareas  
 > ✅ **Inhibición de respuesta**: Mejor control de impulsos y distracciones  
 > ✅ **Velocidad de procesamiento**: Aceleración en tareas cognitivas complejas  
 > ✅ **Metacognición**: Mayor conciencia sobre los propios procesos mentales
-
+>
 > [!warning] Neuromitos desmitificados ❌ **"Mindfulness calma siempre"**: Puede aumentar awareness de ansiedad inicialmente  
 > ❌ **"Resultados inmediatos"**: Cambios neuroplásticos requieren 4-8 semanas mínimo  
 > ❌ **"Una técnica única"**: Diferentes prácticas activan distintas redes neuronales  
@@ -150,7 +150,7 @@
 > - Reducción de "gaps" informativos
 > - Mejor conexión entre ideas
 > - Menor fatiga mental durante clases largas
-
+>
 > [!example] 🧪 Mindful Problem Solving **🎯 Aplicación en resolución de problemas complejos**
 > 
 > **🔬 Protocolo científico**:
@@ -171,7 +171,7 @@
 >    style F fill:#e3f2fd
 >    style I fill:#fff3e0
 > ```
-
+>
 > [!example] 📊 Mindful Test-Taking **🎯 Estrategias para exámenes con menos ansiedad**
 > 
 > **⏰ Rutina pre-examen** (15 minutos):
@@ -209,7 +209,7 @@
 > - **Breathe** (iOS): Recordatorios de respiración consciente
 > - **Mindfulness Bell**: Campanas aleatorias para awareness
 > - **Petit BamBou**: Sesiones cortas en español
-
+>
 > [!example] 🏠 Creación de espacios mindful **🎯 Ambiente de estudio consciente**:
 > 
 > **📍 Elementos físicos**:
@@ -258,7 +258,7 @@
 > - Mindfulness en decisiones académicas/profesionales
 > - Planificación post-programa
 > - Evaluación de impacto y beneficios
-
+>
 > [!tip] 🏃 Programa Express (2 semanas) **⚡ Para períodos de alta demanda académica**:
 > 
 > **Días 1-3**: **Setup básico**
@@ -304,7 +304,7 @@
 > - **Rendimiento sostenido**: Beneficios académicos mantenidos
 > - **Bienestar general**: Mejoras significativas persistentes
 > - **Habilidades de afrontamiento**: Mayor resiliencia reportada
-
+>
 > [!example] 🧬 Instituto de Tecnología de California - STEM Mindfulness **👤 Perfil**: Estudiantes de ingeniería y ciencias (posgrado)
 > 
 > **🎯 Desafío específico**:
@@ -328,7 +328,7 @@
 > - **Creatividad en soluciones**: Aumento de 42%
 > - **Colaboración en equipos**: Mejora de 35%
 > - **Burnout académico**: Reducción de 48%
-
+>
 > [!example] 📚 Estudiante de Medicina - Caso individual **👤 Perfil**: Estudiante de 4to año, especialización en cirugía
 > 
 > **⚠️ Situación inicial**:
@@ -408,7 +408,7 @@
 > - Concentración unidireccional extrema
 > - Analogía con estados de flujo académico
 > - Aplicación: Proyectos de investigación intensivos
-
+>
 > [!warning] Consideraciones avanzadas **⚠️ Efectos secundarios posibles**:
 > 
 > - **Increased sensitivity**: Mayor awareness puede incrementar percepción de estrés inicialmente
@@ -431,7 +431,7 @@
 > - **Ecuanimidad**: Estabilidad emocional ante desafíos
 > - **Compasión**: Hacia uno mismo y otros durante dificultades
 > - **Sabiduría práctica**: Toma de decisiones más consciente
-
+>
 > [!tip] Herramientas de medición **📊 Cuestionarios validados**:
 > 
 > - **MAAS (Mindful Attention Awareness Scale)**: 15 preguntas, validación global

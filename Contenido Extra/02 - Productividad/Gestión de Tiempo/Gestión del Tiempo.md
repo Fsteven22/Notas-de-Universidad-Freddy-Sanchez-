@@ -5,7 +5,7 @@
 ## 🎯 Principios Fundamentales
 
 > [!tip] ⭐ Ley de Parkinson El trabajo se expande para llenar el tiempo disponible para su finalización. Por eso es crucial establecer límites de tiempo específicos.
-
+>
 > [!warning] ⚠️ Mito del Multitasking El cerebro humano no puede realizar múltiples tareas cognitivas complejas simultáneamente. El "multitasking" en realidad es cambio rápido entre tareas, lo que reduce la eficiencia hasta un 40%.
 
 ## 🔄 Métodos y Técnicas Principales

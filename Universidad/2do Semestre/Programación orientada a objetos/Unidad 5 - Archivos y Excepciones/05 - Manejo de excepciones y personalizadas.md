@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎯 Manejo de Excepciones y Personalizadas
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por Qué Manejar Excepciones?
+> [!info] 💡 ¿Por Qué Manejar Excepciones?
 > 
 > El **manejo de excepciones** permite que tu programa responda elegantemente a situaciones inesperadas en lugar de terminar abruptamente.
 > 
@@ -19,7 +23,6 @@
 >     B -->|Sin manejo| C[💥 Programa termina<br/>Usuario frustrado]
 >     B -->|Con manejo| D[⚠️ Mensaje amigable<br/>Alternativas ofrecidas]
 >     D --> E[✅ Usuario satisfecho<br/>Continúa usando app]
->     
 >     style C fill:#ffe1e1
 >     style E fill:#e1ffe1
 > ```
@@ -30,7 +33,7 @@
 
 ### 📋 Niveles de Manejo
 
-> [!tip]- 🎚️ Dónde Manejar las Excepciones
+> [!tip] 🎚️ Dónde Manejar las Excepciones
 > 
 > **1. Manejo Local (en el método donde ocurre)**
 > 
@@ -98,7 +101,7 @@
 
 ### 🔄 Wrapping de Excepciones
 
-> [!success]- 🎁 Encapsular Excepciones de Bajo Nivel
+> [!success] 🎁 Encapsular Excepciones de Bajo Nivel
 > 
 > **Propósito:** Convertir excepciones técnicas en excepciones de negocio más significativas.
 > 
@@ -146,10 +149,8 @@
 > ```mermaid
 > graph LR
 >     A[IOException<br/>Técnica] -->|Wrapping| B[ErrorAlmacenamientoException<br/>De negocio]
->     
 >     A --> C[❌ Usuario no entiende<br/>'FileNotFoundException']
 >     B --> D[✅ Usuario entiende<br/>'Error al guardar estudiante']
->     
 >     style A fill:#ffe1e1
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
@@ -162,7 +163,7 @@
 
 ### 📐 Diseño de Excepciones
 
-> [!example]- 🎨 Crear Excepciones Significativas
+> [!example] 🎨 Crear Excepciones Significativas
 > 
 > **Estructura completa:**
 > 
@@ -219,41 +220,33 @@
 
 ### 🌳 Jerarquía de Excepciones Personalizadas
 
-> [!note]- 📊 Organizar Excepciones por Dominio
+> [!note] 📊 Organizar Excepciones por Dominio
 > 
 > **Estructura jerárquica:**
 > 
 > ```mermaid
 > classDiagram
 >     class Exception
->     
 >     class AplicacionException {
 >         <<Base de la aplicación>>
 >     }
->     
 >     class ErrorNegocioException {
 >         <<Errores de lógica>>
 >     }
->     
 >     class ErrorTecnicoException {
 >         <<Errores técnicos>>
 >     }
->     
 >     class SaldoInsuficienteException
 >     class CuentaBloqueadaException
 >     class LimiteExcedidoException
->     
 >     class ErrorConexionException
 >     class ErrorAlmacenamientoException
->     
 >     Exception <|-- AplicacionException
 >     AplicacionException <|-- ErrorNegocioException
 >     AplicacionException <|-- ErrorTecnicoException
->     
 >     ErrorNegocioException <|-- SaldoInsuficienteException
 >     ErrorNegocioException <|-- CuentaBloqueadaException
 >     ErrorNegocioException <|-- LimiteExcedidoException
->     
 >     ErrorTecnicoException <|-- ErrorConexionException
 >     ErrorTecnicoException <|-- ErrorAlmacenamientoException
 > ```
@@ -314,7 +307,7 @@
 
 ### 🎯 Checked vs Unchecked Personalizadas
 
-> [!tip]- ⚖️ ¿Exception o RuntimeException?
+> [!tip] ⚖️ ¿Exception o RuntimeException?
 > 
 > **Regla de decisión:**
 > 
@@ -322,13 +315,10 @@
 > graph TD
 >     A{¿El llamador puede<br/>recuperarse?} --> B[¿Es un error<br/>de programación?]
 >     A --> C[¿Es una condición<br/>esperada de negocio?]
->     
 >     B -->|Sí| D[RuntimeException<br/>No verificada]
 >     C -->|Sí| E[Exception<br/>Verificada]
->     
 >     D --> F[Ejemplos:<br/>ArgumentoInvalidoException<br/>EstadoInvalidoException]
 >     E --> G[Ejemplos:<br/>SaldoInsuficienteException<br/>UsuarioNoEncontradoException]
->     
 >     style D fill:#ffe1e1
 >     style E fill:#e1ffe1
 > ```
@@ -387,7 +377,7 @@
 
 ### 🔄 Patrón: Try-Catch-Finally
 
-> [!example]- 🎯 Manejo Completo de Recursos
+> [!example] 🎯 Manejo Completo de Recursos
 > 
 > ```java
 > public class GestorArchivos {
@@ -433,7 +423,7 @@
 
 ### 🎁 Patrón: Try-With-Resources
 
-> [!success]- ⚡ Forma Moderna (Java 7+)
+> [!success] ⚡ Forma Moderna (Java 7+)
 > 
 > ```java
 > public List<String> leerArchivoModerno(String ruta) {
@@ -483,7 +473,7 @@
 
 ### 🔁 Patrón: Reintentos
 
-> [!tip]- 🔄 Intentar Múltiples Veces
+> [!tip] 🔄 Intentar Múltiples Veces
 > 
 > ```java
 > public class ConexionConReintentos {
@@ -539,7 +529,7 @@
 
 ### 🎯 Patrón: Validación con Excepciones
 
-> [!example]- ✅ Validación Defensiva
+> [!example] ✅ Validación Defensiva
 > 
 > ```java
 > public class ValidadorEstudiante {
@@ -615,7 +605,7 @@
 
 ## 🎯 Ejemplo Completo: Sistema Bancario
 
-> [!example]- 💼 Caso Práctico Integral
+> [!example] 💼 Caso Práctico Integral
 > 
 > **1. Jerarquía de excepciones:**
 > 
@@ -853,7 +843,7 @@
 
 ## ✅ Mejores Prácticas Avanzadas
 
-> [!tip]- 🏆 Recomendaciones Profesionales
+> [!tip] 🏆 Recomendaciones Profesionales
 > 
 > **1. Mensajes descriptivos y accionables**
 > 

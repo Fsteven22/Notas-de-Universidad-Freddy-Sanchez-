@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📊 Arreglos Estáticos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es un Arreglo (Array)?
+> [!info] 💡 ¿Qué es un Arreglo (Array)?
 > 
 > Un **arreglo** es una estructura de datos que almacena una **colección de elementos del mismo tipo** en posiciones de memoria contiguas. Es la forma más básica y eficiente de manejar múltiples valores relacionados.
 > 
@@ -20,13 +24,11 @@
 >     A --> C[Tipo HOMOGÉNEO: int]
 >     A --> D[Índices: 0 a 4]
 >     A --> E[Memoria CONTIGUA]
->     
 >     F[scores] --> G["[0] → 85"]
 >     F --> H["[1] → 92"]
 >     F --> I["[2] → 78"]
 >     F --> J["[3] → 90"]
 >     F --> K["[4] → 88"]
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#fff4e1
@@ -47,7 +49,7 @@
 
 ### 📝 Sintaxis Básica
 
-> [!tip]- 🎨 Formas de Declarar Arreglos
+> [!tip] 🎨 Formas de Declarar Arreglos
 > 
 > **Sintaxis general:**
 > 
@@ -103,7 +105,7 @@
 
 ### 🎯 Inicialización de Arreglos
 
-> [!example]- 🔢 Diferentes Formas de Inicializar
+> [!example] 🔢 Diferentes Formas de Inicializar
 > 
 > **1. Inicialización directa con valores:**
 > 
@@ -169,12 +171,10 @@
 >     A[Crear arreglo] --> B{¿Conoces<br/>los valores?}
 >     B -->|Sí| C[Inicialización directa<br/>{v1, v2, v3}]
 >     B -->|No| D[new tipo tamaño]
->     
 >     D --> E{¿Llenar<br/>después?}
 >     E -->|Valor por valor| F[arr 0 = x<br/>arr 1 = y]
 >     E -->|Con patrón| G[Usar bucle for]
 >     E -->|Mismo valor| H[Arrays.fill]
->     
 >     style C fill:#e1ffe1
 >     style F fill:#e1f5ff
 >     style G fill:#e1f5ff
@@ -187,7 +187,7 @@
 
 ### 📍 Uso de Índices
 
-> [!tip]- 🎯 Acceder a Elementos
+> [!tip] 🎯 Acceder a Elementos
 > 
 > **Sintaxis de acceso:**
 > 
@@ -226,10 +226,8 @@
 >     A --> D["[2] Naranja"]
 >     A --> E["[3] Uva"]
 >     A --> F["[4] Pera"]
->     
 >     G[Índices válidos: 0 a 4] --> H["❌ frutas[5] → ERROR"]
 >     G --> I["❌ frutas[-1] → ERROR"]
->     
 >     style A fill:#e1f5ff
 >     style H fill:#ffe1e1
 >     style I fill:#ffe1e1
@@ -253,7 +251,7 @@
 
 ### 🔄 Recorrer Arreglos
 
-> [!success]- 🚶 Formas de Iterar
+> [!success] 🚶 Formas de Iterar
 > 
 > **1. Bucle for tradicional:**
 > 
@@ -334,10 +332,8 @@
 >     A -->|No| C{¿Vas a modificar<br/>elementos?}
 >     C -->|Sí| B
 >     C -->|No| D[Usar for-each]
->     
 >     B --> E[for i = 0; i < arr.length]
 >     D --> F[for tipo elem : arr]
->     
 >     style D fill:#e1ffe1
 >     style B fill:#e1f5ff
 > ```
@@ -348,7 +344,7 @@
 
 ### 🔢 Búsqueda y Cálculos
 
-> [!example]- 🎯 Algoritmos Básicos
+> [!example] 🎯 Algoritmos Básicos
 > 
 > **1. Buscar un valor:**
 > 
@@ -441,7 +437,7 @@
 
 ### 📋 Copiar y Comparar
 
-> [!warning]- ⚠️ Copia de Arreglos
+> [!warning] ⚠️ Copia de Arreglos
 > 
 > **❌ ERROR COMÚN - Asignación por referencia:**
 > 
@@ -459,7 +455,6 @@
 > graph LR
 >     A[original] --> C[Memoria: 1,2,3,4,5]
 >     B[copia] --> C
->     
 >     style C fill:#ffe1e1
 > ```
 > 
@@ -515,7 +510,7 @@
 
 ### 🛠️ Métodos Útiles
 
-> [!success]- 📦 java.util.Arrays
+> [!success] 📦 java.util.Arrays
 > 
 > **Importar la clase:**
 > 
@@ -597,7 +592,7 @@
 
 ### 📐 Matrices (2D)
 
-> [!info]- 🔲 Arreglos de Arreglos
+> [!info] 🔲 Arreglos de Arreglos
 > 
 > **Sintaxis básica:**
 > 
@@ -616,11 +611,9 @@
 >     A["matriz[3][3]"] --> B["Fila 0"]
 >     A --> C["Fila 1"]
 >     A --> D["Fila 2"]
->     
 >     B --> E["[0][0]  [0][1]  [0][2]"]
 >     C --> F["[1][0]  [1][1]  [1][2]"]
 >     D --> G["[2][0]  [2][1]  [2][2]"]
->     
 >     style A fill:#e1f5ff
 > ```
 > 
@@ -700,7 +693,7 @@
 
 ## ⚠️ Errores Comunes y Soluciones
 
-> [!danger]- 🐛 Problemas Frecuentes
+> [!danger] 🐛 Problemas Frecuentes
 > 
 > **1. ArrayIndexOutOfBoundsException:**
 > 
@@ -801,7 +794,7 @@ mindmap
 
 ```
 
-> [!quote]- 🎓 Puntos Clave para Recordar
+> [!quote] 🎓 Puntos Clave para Recordar
 > 
 > ✅ **Tamaño fijo** - se define al crear y no cambia  
 > ✅ **Índice base 0** - primer elemento en `[0]`, último en `[length-1]`  

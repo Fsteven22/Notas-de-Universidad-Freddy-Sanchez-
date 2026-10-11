@@ -122,7 +122,7 @@ graph TD
 > - Cocina: 1945 (Fin Segunda Guerra Mundial)
 > 
 > **Visualización:** Cristóbal Colón abriendo tu puerta, la guillotina en tu sala, celebración de paz en tu cocina
-
+>
 > [!note] 🧪 **Ciencias**
 > 
 > **Tabla Periódica:**
@@ -134,7 +134,7 @@ graph TD
 > **Fórmulas Químicas:**
 > 
 > - H₂O: Hidrógeno y Oxígeno bailando en tu ducha
-
+>
 > [!note] 🗣️ **Idiomas**
 > 
 > **Vocabulario:**
@@ -269,7 +269,7 @@ graph TD
 > 
 > - Problema: Intentar memorizar demasiado muy rápido
 > - Solución: Construir gradualmente la capacidad
-
+>
 > [!danger] 🚫 **Errores Críticos**
 > 
 > - **Mezclar diferentes palacios**: Mantén separación clara

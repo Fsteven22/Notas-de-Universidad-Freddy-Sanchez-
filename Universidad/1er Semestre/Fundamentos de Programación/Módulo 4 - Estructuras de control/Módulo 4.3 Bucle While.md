@@ -1,17 +1,21 @@
+---
+dg-publish: true
+---
+
 # 🔄 Bucle While en Python
 
 ## 🎯 Introducción y Conceptos Fundamentales
 
 >[!info] 💡 **¿Qué es el Bucle While?**
 >El bucle `while` es una estructura de control de flujo que permite **repetir un bloque de código mientras una condición sea verdadera** (`True`). A diferencia del bucle `for` que itera sobre secuencias finitas, el `while` es ideal cuando **no sabes de antemano cuántas veces** necesitas repetir el ciclo. 🔁
-
+>
 >[!tip] ⚡ **Características Principales**
 >- **Repetición condicional**: Se ejecuta mientras la condición sea `True`
 >- **Flexibilidad**: Número de iteraciones variable e impredecible
 >- **Control dinámico**: La condición puede cambiar durante la ejecución
 >- **Riesgo de bucle infinito**: Si la condición nunca se vuelve `False`
 >- **Evaluación previa**: La condición se verifica antes de cada iteración
-
+>
 >[!warning] ⚠️ **Aspectos Críticos**
 >- **Actualización obligatoria**: Dentro del bucle debe haber código que modifique la condición
 >- **Bucles infinitos**: Si la condición nunca cambia a `False`, el programa se bloqueará
@@ -35,7 +39,7 @@
 >- `:`: Indica el inicio del bloque de código indentado
 >- **Bloque indentado**: Código que se repite en cada iteración
 >- **Actualización**: Modificación de variables que afectan la condición
-
+>
 >[!example] 📊 **Estructura Visual**
 >```python
 ># 1. Inicialización (antes del bucle)
@@ -80,7 +84,7 @@
 >
 ># Salida: 1, 2, 4, 5 (omite el 3)
 >```
-
+>
 >[!info] 🔄 **Patrones Comunes de Control**
 >
 >**Bucle con Bandera (Flag):**
@@ -116,7 +120,7 @@
 >- **Mejor caso**: O(1) si la condición es falsa desde el inicio
 >- **Caso promedio**: O(n) donde n es el número de iteraciones
 >- **Peor caso**: O(∞) si hay un bucle infinito
-
+>
 >[!warning] 🔄 **Bucles Infinitos - Causas Comunes**
 >```python
 ># ❌ INCORRECTO - Bucle infinito
@@ -233,7 +237,7 @@ flowchart TD
 ># Número: 5
 ># ¡Fin del bucle!
 >```
-
+>
 >[!example] 🔐 **Validación de Contraseña**
 >```python
 >clave_correcta = "python123"
@@ -260,7 +264,7 @@ flowchart TD
 ># Ingresa la contraseña: python123  
 ># ✅ ¡Acceso concedido!
 >```
-
+>
 >[!example] 🎲 **Juego de Adivinanza**
 >```python
 >import random
@@ -297,7 +301,7 @@ flowchart TD
 >
 >print("🏁 ¡Gracias por jugar!")
 >```
-
+>
 >[!example] 📊 **Calculadora Interactiva**
 >```python
 >print("🧮 Calculadora Simple")
@@ -400,7 +404,7 @@ flowchart TD
 >    
 >print("🏁 Programa terminado")
 >```
-
+>
 >[!tip] 🔄 **Bucles Anidados**
 >```python
 >fila = 1
@@ -417,7 +421,7 @@ flowchart TD
 ># (2,1) (2,2) (2,3) 
 ># (3,1) (3,2) (3,3)
 >```
-
+>
 >[!tip] 🎯 **Optimización y Eficiencia**
 >```python
 ># ✅ Buena práctica - Minimizar evaluaciones costosas

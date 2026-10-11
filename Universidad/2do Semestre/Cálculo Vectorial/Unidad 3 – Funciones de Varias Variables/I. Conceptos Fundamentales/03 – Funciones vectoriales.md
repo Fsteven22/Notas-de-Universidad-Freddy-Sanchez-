@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎯 Funciones Vectoriales
 
 ## 🌟 Introducción a las Funciones Vectoriales
 
-> [!info]- 💡 Concepto Fundamental Una **función vectorial** es una función que asigna a cada número real (o a números en un intervalo) un vector en el espacio.
+> [!info] 💡 Concepto Fundamental Una **función vectorial** es una función que asigna a cada número real (o a números en un intervalo) un vector en el espacio.
 > 
 > **Definición intuitiva:**
 > 
@@ -49,7 +53,7 @@
 
 ### 🔍 Función Vectorial en ℝ³
 
-> [!note]- 🌟 Definición Matemática **Definición:**
+> [!note] 🌟 Definición Matemática **Definición:**
 > 
 > Una **función vectorial** es una función de la forma:
 > 
@@ -90,7 +94,7 @@
 
 ### 📊 Ejemplos Básicos
 
-> [!example]- 🎯 Funciones Vectoriales Fundamentales
+> [!example] 🎯 Funciones Vectoriales Fundamentales
 >
 >#### **Ejemplo 1: Línea recta**
 >
@@ -231,7 +235,7 @@
 
 ### 🛤️ Curvas Parametrizadas
 
-> [!warning]- 📍 La Función Vectorial como Curva **Concepto fundamental:**
+> [!warning] 📍 La Función Vectorial como Curva **Concepto fundamental:**
 > 
 > Una función vectorial **r**(t) define una **curva parametrizada** en el espacio.
 > 
@@ -292,7 +296,7 @@
 
 ### 🔄 Reparametrización
 
-> [!tip]- 🔀 Diferentes Parámetros para la Misma Curva **Concepto:**
+> [!tip] 🔀 Diferentes Parámetros para la Misma Curva **Concepto:**
 > 
 > Dos funciones vectoriales diferentes pueden representar la **misma curva** con diferente parametrización.
 > 
@@ -333,7 +337,7 @@
 
 ### 📏 Límites y Continuidad
 
-> [!success]- ➡️ Análisis de Funciones Vectoriales **Límite de una función vectorial:**
+> [!success] ➡️ Análisis de Funciones Vectoriales **Límite de una función vectorial:**
 > 
 > **Definición:**
 > 
@@ -400,7 +404,7 @@
 
 ### 🔍 Definición de Derivada
 
-> [!note]- 🌟 Vector Tangente y Derivada **Definición:**
+> [!note] 🌟 Vector Tangente y Derivada **Definición:**
 > 
 > La **derivada** de **r**(t) es:
 > 
@@ -425,7 +429,7 @@
 > r'(t)
 > dr/dt
 > ṙ(t)  [notación de Newton]
-> r⃗'(t)
+> \vec{r}'(t)
 > ```
 > 
 > **Interpretación geométrica:**
@@ -461,7 +465,7 @@
 
 ### 📊 Ejemplos de Derivadas
 
-> [!example]- 🎯 Cálculo de Derivadas
+> [!example] 🎯 Cálculo de Derivadas
 >
 >#### **Ejemplo 1: Derivada de una línea recta**
 >
@@ -541,7 +545,7 @@
 
 ### 🎯 Vector Tangente Unitario
 
-> [!warning]- 📍 Normalización del Vector Tangente **Definición:**
+> [!warning] 📍 Normalización del Vector Tangente **Definición:**
 > 
 > El **vector tangente unitario** es:
 > 
@@ -578,7 +582,7 @@
 
 ### 📐 Reglas de Derivación
 
-> [!success]- 🧮 Propiedades de la Derivada Vectorial Sean **r**(t) y **s**(t) funciones vectoriales, f(t) función escalar, y c constante:
+> [!success] 🧮 Propiedades de la Derivada Vectorial Sean **r**(t) y **s**(t) funciones vectoriales, f(t) función escalar, y c constante:
 > 
 > **1. Derivada de suma:**
 > 
@@ -639,7 +643,7 @@
 
 ### 🔍 Definición de Integral
 
-> [!note]- 🌟 Integral Vectorial **Definición:**
+> [!note] 🌟 Integral Vectorial **Definición:**
 > 
 > La **integral indefinida** de **r**(t) es:
 > 
@@ -670,7 +674,7 @@
 
 ### 📊 Ejemplos de Integrales
 
-> [!example]- 🎯 Cálculo de Integrales Vectoriales
+> [!example] 🎯 Cálculo de Integrales Vectoriales
 >
 >#### **Ejemplo 1: Integral indefinida simple**
 >
@@ -735,7 +739,7 @@
 
 ### 🚀 Movimiento en el Espacio
 
-> [!warning]- 📍 Posición, Velocidad y Aceleración **Interpretación física:**
+> [!warning] 📍 Posición, Velocidad y Aceleración **Interpretación física:**
 > 
 > Si **r**(t) representa la posición de una partícula en el tiempo t:
 > 
@@ -781,7 +785,7 @@
 
 ### 📊 Ejemplos de Movimiento
 
-> [!example]- 🎯 Análisis Cinemático Completo
+> [!example] 🎯 Análisis Cinemático Completo
 >
 >#### **Ejemplo 1: Movimiento rectilíneo uniforme**
 >
@@ -897,7 +901,7 @@
 
 ### 🔍 Definición y Cálculo
 
-> [!success]- 📐 Longitud de una Curva **Definición:**
+> [!success] 📐 Longitud de una Curva **Definición:**
 > 
 > La **longitud de arco** de una curva **r**(t) desde t = a hasta t = b es:
 > 
@@ -924,7 +928,7 @@
 
 ### 📊 Ejemplos de Longitud de Arco
 
-> [!example]- 🎯 Cálculo de Longitudes
+> [!example] 🎯 Cálculo de Longitudes
 >
 >#### **Ejemplo 1: Longitud de un segmento de recta**
 >
@@ -1026,7 +1030,7 @@ graph TB
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip]- 🧠 Estrategias de Aprendizaje
+> [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para dominar funciones vectoriales:**
 > 
@@ -1077,7 +1081,7 @@ graph TB
 
 ## 🔗 Conexiones Conceptuales
 
-> [!quote]- 🌟 Enlaces con Otros Temas
+> [!quote] 🌟 Enlaces con Otros Temas
 > 
 > **Prerrequisitos:**
 > 

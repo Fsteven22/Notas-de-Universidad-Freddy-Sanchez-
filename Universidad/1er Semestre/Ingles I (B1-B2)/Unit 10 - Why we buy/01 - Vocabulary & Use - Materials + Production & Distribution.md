@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🛍️ Vocabulary & Use: Materials + Production & Distribution
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por qué es importante este vocabulario?
+> [!info] 💡 ¿Por qué es importante este vocabulario?
 > 
 > El vocabulario de **materiales, producción y distribución** es fundamental para:
 > 
@@ -43,7 +47,7 @@ graph LR
 
 ## 🧵 A. Materials (Describing Products)
 
-> [!example]- 📦 Materiales Básicos
+> [!example] 📦 Materiales Básicos
 > 
 > **Materiales fundamentales:**
 > 
@@ -97,8 +101,8 @@ graph LR
 > |**pure + material**|pure leather, pure silk|
 > |**natural + material**|natural stone, natural wood|
 > |**recycled + material**|recycled plastic, recycled metal|
-
-> [!success]- 🎨 Características de Materiales (Adjectives)
+>
+> [!success] 🎨 Características de Materiales (Adjectives)
 > 
 > **Propiedades físicas:**
 > 
@@ -136,11 +140,9 @@ graph LR
 >     A[Product Description] --> B[Material]
 >     A --> C[Characteristic 1]
 >     A --> D[Characteristic 2]
->     
 >     B --> E[made of cotton]
 >     C --> F[very soft]
 >     D --> G[and comfortable]
->     
 >     style E fill:#e1ffe1
 >     style F fill:#fff4e1
 >     style G fill:#e1f5ff
@@ -161,7 +163,7 @@ graph LR
 
 ## 🏭 B. Production & Distribution (Verbs)
 
-> [!note]- 🔨 Verbos de Producción
+> [!note] 🔨 Verbos de Producción
 > 
 > **Verbos clave del proceso productivo:**
 > 
@@ -183,7 +185,6 @@ graph LR
 >     B --> C[Pick/Harvest]
 >     C --> D[Process/Manufacture]
 >     D --> E[Product]
->     
 >     style A fill:#fff4e1
 >     style D fill:#e1ffe1
 >     style E fill:#e1f5ff
@@ -213,8 +214,8 @@ graph LR
 > ✅ Designers design new models every year.
 > ✅ Factories produce millions of units.
 > ```
-
-> [!tip]- 🚚 Verbos de Distribución
+>
+> [!tip] 🚚 Verbos de Distribución
 > 
 > **Verbos del proceso de distribución:**
 > 
@@ -237,7 +238,6 @@ graph LR
 >     D --> E[Store]
 >     E --> F[Deliver]
 >     F --> G[Customer]
->     
 >     style A fill:#fff4e1
 >     style D fill:#e1f5ff
 >     style G fill:#e1ffe1
@@ -267,7 +267,7 @@ graph LR
 
 ## 📚 C. Mini-Glosario EN → ES
 
-> [!quote]- 📖 Referencia Rápida Completa
+> [!quote] 📖 Referencia Rápida Completa
 > 
 > ### Materials
 > 
@@ -325,7 +325,7 @@ graph LR
 
 ## 💬 D. Collocations & Real Phrases
 
-> [!success]- 🎯 Combinaciones Frecuentes
+> [!success] 🎯 Combinaciones Frecuentes
 > 
 > **1. Material Collocations**
 > 
@@ -367,11 +367,9 @@ graph LR
 >     A[Product Description] --> B[Material]
 >     A --> C[Production]
 >     A --> D[Distribution]
->     
 >     B --> E["This jacket is made of<br/>waterproof polyester"]
 >     C --> F["It's manufactured in<br/>Vietnam using<br/>sustainable methods"]
 >     D --> G["We ship worldwide and<br/>deliver within 5-7 days"]
->     
 >     style E fill:#e1ffe1
 >     style F fill:#fff4e1
 >     style G fill:#e1f5ff
@@ -381,7 +379,7 @@ graph LR
 
 ## 🌍 E. Aplicaciones Reales
 
-> [!example]- 💼 Situaciones Prácticas
+> [!example] 💼 Situaciones Prácticas
 > 
 > **Scenario 1: Shopping for Clothes**
 > 
@@ -439,7 +437,7 @@ graph LR
 
 ## 🎓 Mini Practice Section
 
-> [!tip]- 💪 Quick Exercises
+> [!tip] 💪 Quick Exercises
 > 
 > **Exercise 1: Complete with the correct material**
 > 
@@ -565,7 +563,7 @@ mindmap
 
 ## 🔗 Connection to Next Topics
 
-> [!quote]- 🌟 Preparing for Grammar
+> [!quote] 🌟 Preparing for Grammar
 > 
 > **You've mastered the vocabulary. Now you're ready for:**
 > 
@@ -591,11 +589,9 @@ mindmap
 > graph LR
 >     A[Vocabulary:<br/>Materials &<br/>Verbs] --> B[Grammar:<br/>Passive Voice]
 >     B --> C[Real Use:<br/>Product<br/>Descriptions]
->     
 >     A -.->|Example| D["cotton, manufacture"]
 >     B -.->|Transform| E["is made of cotton"]
 >     C -.->|Apply| F["This shirt is made<br/>of cotton in India"]
->     
 >     style A fill:#e1ffe1
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff

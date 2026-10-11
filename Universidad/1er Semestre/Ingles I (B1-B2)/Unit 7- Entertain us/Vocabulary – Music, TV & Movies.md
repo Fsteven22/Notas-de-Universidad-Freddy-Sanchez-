@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🎯 Vocabulary – Music, TV & Movies
 
 ## 🎵 Music Genres

@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Módulo 6.1: Introducción a NumPy
 
 ## 🎯 Objetivos de Aprendizaje
@@ -54,7 +58,7 @@
 # 🧩 ¿Qué es un Arreglo (Array) en NumPy?
 
 > [!info] 🎯 **Definición Simple** Un **arreglo** (o _array_) en NumPy es como una **caja de herramientas súper organizada** 🧰 donde puedes guardar números de forma ordenada. Imagínalo como una **fila de casilleros numerados** donde cada casillero puede contener un número, y todos los números son del mismo tipo (todos enteros, o todos decimales).
-
+>
 > [!example] 📦 **Analogía Visual: La Caja de Huevos**
 > 
 > **Un arreglo es como una caja de huevos** 🥚:
@@ -90,7 +94,7 @@
 > mi_arreglo = np.array([1, 2, 3, 4, 5])  # ¡Solo números del mismo tipo!
 > # Es como un archivero donde SOLO guardas documentos del mismo tamaño 📁📄📄📄
 > ```
-
+>
 > [!warning] 🚨 **¡Regla Importante!** Los arreglos de NumPy son **"quisquillosos"** - solo aceptan datos del mismo tipo. Si mezclas enteros con decimales, automáticamente convierte todo al tipo más "flexible":
 > 
 > ```python
@@ -176,7 +180,7 @@
 > 3. **Eficiente**: Operaciones matemáticas súper rápidas
 > 4. **Estructurado**: Puede tener múltiples dimensiones (1D, 2D, 3D...)
 > 5. **Fundamental**: Es la base de toda la computación científica en Python
-
+>
 > [!example] 🎮 **Ejemplo del Mundo Real: Videojuego** Imagina que estás programando un videojuego:
 > 
 > ```python
@@ -194,14 +198,14 @@
 ## 🤔 Preguntas Frecuentes
 
 > [!question] ❓ **"¿Es como una lista mejorada?"** ¡Exacto! Es como una lista de Python que fue al gimnasio 💪, aprendió matemáticas 🧮, y se volvió súper eficiente. Pero con la restricción de que solo puede guardar números del mismo tipo.
-
+>
 > [!question] ❓ **"¿Por qué se llama 'ndarray'?"** **ndarray** = **N-Dimensional Array** (Arreglo de N dimensiones)
 > 
 > - Puede ser 1D (como una línea) 📏
 > - Puede ser 2D (como una tabla) 📊
 > - Puede ser 3D (como un cubo) 🧊
 > - O incluso más dimensiones... ¡tu mente puede explotar! 🤯
-
+>
 > [!question] ❓ **"¿Cuándo debo usar arreglos?"** Usa arreglos cuando:
 > 
 > - ✅ Trabajas solo con números
@@ -221,7 +225,7 @@
 > # Arreglo 2D (Matriz)
 > matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 > ```
-
+>
 > [!info] 🏭 Funciones de Creación Especializadas
 > 
 > |Función|Descripción|Ejemplo|
@@ -286,7 +290,7 @@
 > print(arr + arr2)  # [11 22 33 44]
 > print(arr * arr2)  # [10 40 90 160]
 > ```
-
+>
 > [!warning] ⚠️ Multiplicación de Matrices La multiplicación `*` es elemento por elemento, NO multiplicación de matrices.  
 > Para multiplicación de matrices usar: `np.dot()` o el operador `@`
 

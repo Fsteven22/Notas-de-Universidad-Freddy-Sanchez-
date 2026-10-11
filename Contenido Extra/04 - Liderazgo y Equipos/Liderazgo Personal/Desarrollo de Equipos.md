@@ -1,7 +1,7 @@
 # Desarrollo de Equipos
 
 > [!quote] _"Individualmente somos una gota. Juntos somos un océano. El desarrollo de equipos no es solo formar un grupo, es crear una sinergia donde el todo sea exponencialmente mayor que la suma de sus partes."_ - Ryunosuke Satoro (adaptado)
-
+>
 > [!info] 👥 **Definición y Fundamentos** El **desarrollo de equipos** es el proceso sistemático y continuo de mejorar la efectividad de un grupo de personas que trabajan juntas, optimizando su colaboración, comunicación, rendimiento y cohesión para alcanzar objetivos comunes de manera excepcional.
 > 
 > ### Elementos Fundamentales de un Equipo
@@ -11,7 +11,7 @@
 > - **Responsabilidad Colectiva**: Accountability grupal por resultados
 > - **Identidad de Equipo**: Sentido de pertenencia y orgullo grupal
 > - **Sinergia Operacional**: Coordinación fluida y complementariedad
-
+>
 > [!example] 🔄 **Modelo de Desarrollo de Equipos de Tuckman**
 > 
 > ```mermaid
@@ -44,7 +44,7 @@
 > |**Norming**|2-6 semanas|Establecimiento de normas, procesos|Facilitador|
 > |**Performing**|Variable|Optimización continua, desafíos|Delegativo|
 > |**Adjourning**|1-2 semanas|Cierre, celebración, reflexión|Celebrativo|
-
+>
 > [!tip] 🎯 **Características de Equipos de Alto Rendimiento**
 > 
 > ### Los 5 Pilares de la Excelencia Grupal
@@ -83,7 +83,7 @@
 > |**Engagement** 💡|Participación, iniciativa|>85% engagement|Pulse surveys|
 > |**Innovación** 🚀|Ideas implementadas|>5 mejoras/trim|Innovation pipeline|
 > |**Colaboración** 🤝|Cross-functional work|>90% colaboración|Network analysis|
-
+>
 > [!abstract] 🧠 **Dinámicas Psicológicas de Equipos**
 > 
 > ### Seguridad Psicológica - Modelo de Amy Edmondson
@@ -112,7 +112,7 @@
 > - **Rotación de Conversación**: Participación equilibrada
 > - **Proporción de Géneros**: Equipos mixtos superan homogéneos
 > - **Memoria Transactiva**: Conocimiento distribuido especializado
-
+>
 > [!success] 🛠️ **Herramientas de Desarrollo de Equipos**
 > 
 > ### Diagnóstico de Equipos
@@ -145,7 +145,7 @@
 >     style F fill:#fce4ec,stroke:#ad1457
 >     style G fill:#e0f2f1,stroke:#00695c
 > ```
-
+>
 > [!gear] ⚙️ **Metodologías de Desarrollo**
 > 
 > ### Técnicas de Team Building
@@ -179,7 +179,7 @@
 >     style C fill:#fff3e0,stroke:#ef6c00
 >     style D fill:#fce4ec,stroke:#ad1457
 > ```
-
+>
 > [!example] 🎪 **Roles de Equipo - Modelo Belbin**
 > 
 > ### Los 9 Roles Esenciales
@@ -204,7 +204,7 @@
 >     "Roles de Personas" : 35  
 >     "Roles Cerebrales" : 30
 > ```
-
+>
 > [!warning] ⚠️ **Disfunciones de Equipos - Modelo Lencioni**
 > 
 > ### Las 5 Disfunciones Piramidales
@@ -239,7 +239,7 @@
 > |**Sin Compromiso**|Claridad y cierre|Cascading Messages, Deadlines|2-4 semanas|
 > |**Evitar Accountability**|Publicar objetivos|Progress Reviews, Team Scoreboard|1-3 meses|
 > |**Ignorar Resultados**|Scoreboard público|Team Rewards, Individual Sacrifices|Continuo|
-
+>
 > [!quote] 📚 **Técnica de Estudio Específica: Método DEVELOP**
 > 
 > ### D.E.V.E.L.O.P para Maestría en Desarrollo de Equipos
@@ -251,7 +251,7 @@
 > - **L**iderar: Adapta tu estilo de liderazgo a la etapa de desarrollo
 > - **O**ptimizar: Mejora continuamente procesos y rendimiento grupal
 > - **P**rofundizar: Desarrolla relaciones interpersonales sólidas y duraderas
-
+>
 > [!gear] 🔧 **Facilitación de Desarrollo de Equipos**
 > 
 > ### Tipos de Intervenciones por Etapa
@@ -283,7 +283,7 @@
 > - **Cross-Training Programs**: Desarrollo de versatilidad (ongoing)
 > - **Advanced Problem Solving**: Técnicas sofisticadas (6-8 horas)
 > - **Leadership Development**: Rotación y crecimiento (ongoing)
-
+>
 > [!abstract] 📊 **Medición y Evaluación de Equipos**
 > 
 > ### KPIs de Desarrollo de Equipos
@@ -310,7 +310,7 @@
 > |**360° Team Feedback**|Trimestral|20 min individual|Todo el equipo|Desarrollo interpersonal|
 > |**Team Effectiveness Survey**|Semestral|30 min|Todo el equipo|Evaluación integral|
 > |**Peer Recognition System**|Continuo|2-5 min|Individual|Refuerzo positivo|
-
+>
 > [!success] 🌟 **Equipos Virtuales y Remotos**
 > 
 > ### Desafíos Específicos del Trabajo Remoto
@@ -345,7 +345,7 @@
 >       Knowledge bases
 >       Decision logs
 > ```
-
+>
 > [!example] 🎯 **Casos de Éxito en Desarrollo de Equipos**
 > 
 > ### Spotify - Modelo de Squads Ágiles
@@ -381,7 +381,7 @@
 > - **Ownership**: Full ownership de servicios/productos
 > - **APIs**: Comunicación solo through interfaces definidas
 > - **Innovation**: Libertad para experimentar e iterar
-
+>
 > [!quote] 📖 **Referencias y Recursos Adicionales**
 > 
 > ### Lecturas Fundamentales
@@ -397,13 +397,13 @@
 > - **Culture Amp**: Medición de engagement y cultura
 > - **15Five**: Check-ins regulares y feedback continuo
 > - **Retrium**: Retrospectivas estructuradas y análisis
-
+>
 > [!note] 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### Prerrequisitos Recomendados
 > 
 > - [[Liderazgo Situacional]] - Adaptar estilo según madurez del equipo
-> - [[Comunicación Efectiva]] - Base para todas las interacciones grupales
+> - [[La Comunicación Efectiva]] - Base para todas las interacciones grupales
 > - [[Gestión de Conflictos]] - Manejar tensiones constructivamente
 > 
 > ### Conexiones Directas

@@ -1,7 +1,7 @@
 # Design Thinking
 
 > [!quote] "El pensamiento de diseño es una disciplina que usa la sensibilidad y métodos del diseñador para emparejar las necesidades de las personas con lo que es tecnológicamente factible." - Tim Brown, IDEO
-
+>
 > [!abstract]- ## 🎨 Definición y Concepto Central **Design Thinking** es una metodología de innovación centrada en las personas que integra las necesidades humanas, las posibilidades tecnológicas y los requerimientos para el éxito empresarial. Se basa en la lógica, imaginación, intuición y razonamiento sistémico para explorar posibilidades y crear resultados deseables.
 > 
 > ### 🧠 Principios Fundamentales
@@ -11,7 +11,7 @@
 > - **Experimentación**: Prototipado rápido y aprendizaje iterativo
 > - **Optimismo**: Creencia en que todo problema tiene solución
 > - **Enfoque humano**: Las personas como centro del proceso de innovación
-
+>
 > [!process]- ## 🔄 Las 5 Etapas del Design Thinking
 > 
 > ```mermaid
@@ -44,7 +44,7 @@
 > |**💡 Idear**|Generar soluciones|Brainstorming, SCAMPER, mind mapping|Portfolio diverso de ideas creativas|
 > |**🛠️ Prototipar**|Materializar ideas|Mockups, storyboards, role playing|Representaciones tangibles de conceptos|
 > |**🧪 Testear**|Validar soluciones|Testing usuarios, feedback loops, métricas|Aprendizajes para siguientes iteraciones|
-
+>
 > [!lightbulb]- ## 💡 Herramientas y Técnicas Específicas
 > 
 > ### 🎯 Fase de Empatización
@@ -83,7 +83,7 @@
 >      Provocaciones
 >      Analogías
 > ```
-
+>
 > [!warning]- ## ⚠️ Retos y Limitaciones del Design Thinking
 > 
 > ### 🚧 Desafíos Comunes en la Implementación
@@ -103,7 +103,7 @@
 > |Prototipado inadecuado|Definir nivel de fidelidad según objetivo|
 > |Falta diversidad|Equipos multidisciplinarios + inclusión intencional|
 > |Resistencia organizacional|Champions internos + casos de éxito graduales|
-
+>
 > [!rocket]- ## 🚀 Aplicaciones del Design Thinking
 > 
 > ### 🎓 En Contextos Educativos
@@ -125,7 +125,7 @@
 > - **Innovación social**: Soluciones para desafíos comunitarios
 > - **Políticas públicas**: Servicios gubernamentales más efectivos
 > - **Sostenibilidad**: Diseño de soluciones ambientalmente responsables
-
+>
 > [!note]- ## 📝 Conexión con Análisis y Resolución de Problemas (ARP)
 > 
 > ### 🔗 Integración Curricular
@@ -169,7 +169,7 @@
 > - Desarrollar competencias de facilitación de talleres
 > - Crear portfolio de herramientas y técnicas especializadas
 > - Evaluar impacto y efectividad de soluciones diseñadas
-
+>
 > [!lightbulb]- ## 💡 Técnica de Estudio Específica: Método IDEO-Learn
 > 
 > ### 🔍 Estructura IDEO-Learn para Design Thinking
@@ -186,9 +186,9 @@
 > - **Figma**: Herramientas de prototipado digital
 > - **Design Kit de IDEO**: Metodologías y casos de estudio
 > - **Portfolios de innovación**: Documentación de procesos y resultados
-
+>
 > [!books]- ## 📚 Referencias y Profundización
-
+>
 > [!quote]- ### Referencias Académicas
 > 
 > - Brown, T. (2019). _Change by Design: How Design Thinking Transforms Organizations_. Harper Business.
@@ -209,7 +209,7 @@
 > - [[Facilitación de Grupos]] - Conducción de talleres y sesiones creativas
 > - [[Gestión de Proyectos]] - Organización de iniciativas de innovación
 > - [[Toma de Decisiones]] - Evaluación y selección de alternativas
-> - [[Comunicación Efectiva]] - Presentación de propuestas y resultados
+> - [[La Comunicación Efectiva]] - Presentación de propuestas y resultados
 > 
 > **Profundización:**
 > 

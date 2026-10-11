@@ -1,12 +1,16 @@
+---
+dg-publish: true
+---
+
 # Módulo 6.4: Limpieza de Datos
 
 > [!quote] "Los datos sucios son como diamantes en bruto: requieren paciencia, técnica y precisión para revelar su verdadero valor." 💎
-
-> [!info]- La limpieza de datos es una etapa fundamental en cualquier proyecto de análisis. Los datos del mundo real raramente vienen perfectos: tienen valores faltantes, duplicados, tipos incorrectos y inconsistencias. Este módulo te enseñará las técnicas esenciales para transformar datos "sucios" en información confiable y lista para el análisis.
+>
+> [!info] La limpieza de datos es una etapa fundamental en cualquier proyecto de análisis. Los datos del mundo real raramente vienen perfectos: tienen valores faltantes, duplicados, tipos incorrectos y inconsistencias. Este módulo te enseñará las técnicas esenciales para transformar datos "sucios" en información confiable y lista para el análisis.
 
 ## 📋 Objetivos del Módulo
 
-> [!success]- **Al finalizar este módulo podrás:**
+> [!success] **Al finalizar este módulo podrás:**
 > 
 > - Identificar y manejar valores faltantes de manera estratégica
 > - Detectar y eliminar duplicados efectivamente
@@ -17,7 +21,7 @@
 
 ## 🚨 1. El Desafío de los Datos Reales (Messy Data)
 
-> [!warning]- **La Realidad de los Datos** 🌪️
+> [!warning] **La Realidad de los Datos** 🌪️
 > 
 > Los datos perfectos son una utopía. En el mundo real, nos enfrentamos a:
 > 
@@ -29,8 +33,8 @@
 > - **Inconsistencias** en formato y nomenclatura
 > - **Outliers** y valores imposibles
 > - **Codificaciones mixtas** (0/1 vs Si/No)
-
-> [!example]- **Dataset de Ejemplo: Titanic** 🚢
+>
+> [!example] **Dataset de Ejemplo: Titanic** 🚢
 > 
 > Trabajaremos con el famoso dataset del Titanic, que presenta múltiples desafíos reales:
 > 
@@ -63,7 +67,7 @@
 
 ## 🔍 2. Detección y Manejo de Valores Faltantes
 
-> [!tip]- **Estrategia de Detección** 🕵️
+> [!tip] **Estrategia de Detección** 🕵️
 > 
 > Antes de decidir qué hacer con los valores faltantes, debemos entender su patrón:
 > 
@@ -85,8 +89,8 @@
 > print("Análisis de valores faltantes:")
 > print(analizar_nulos(titanic))
 > ```
-
-> [!info]- **Métodos de Detección** 🔎
+>
+> [!info] **Métodos de Detección** 🔎
 > 
 > ### Funciones Principales:
 > 
@@ -117,7 +121,7 @@
 
 ## 🛠️ 3. Estrategias para Valores Faltantes
 
-> [!success]- **Opción 1: Eliminación con `.dropna()`** 🗑️
+> [!success] **Opción 1: Eliminación con `.dropna()`** 🗑️
 > 
 > ### Eliminar Filas:
 > 
@@ -147,8 +151,8 @@
 > 
 > print(f"Columnas restantes: {list(titanic_limpio.columns)}")
 > ```
-
-> [!tip]- **Opción 2: Imputación con `.fillna()`** 🔧
+>
+> [!tip] **Opción 2: Imputación con `.fillna()`** 🔧
 > 
 > ### Estrategias por Tipo de Variable:
 > 
@@ -191,8 +195,8 @@
 > # Interpolación lineal para series temporales
 > titanic_limpio['columna'].interpolate(method='linear', inplace=True)
 > ```
-
-> [!example]- **Ejemplo Completo: Estrategia Híbrida** 🎯
+>
+> [!example] **Ejemplo Completo: Estrategia Híbrida** 🎯
 > 
 > ```python
 > def limpiar_valores_faltantes(df):
@@ -229,7 +233,7 @@
 
 ## 🔄 4. Manejo de Duplicados
 
-> [!warning]- **Detección de Duplicados** 👥
+> [!warning] **Detección de Duplicados** 👥
 > 
 > Los duplicados pueden sesgar significativamente nuestro análisis:
 > 
@@ -247,8 +251,8 @@
 > print("Ejemplos de duplicados:")
 > print(filas_duplicadas)
 > ```
-
-> [!tip]- **Eliminación Inteligente de Duplicados** 🧹
+>
+> [!tip] **Eliminación Inteligente de Duplicados** 🧹
 > 
 > ```python
 > # Eliminar duplicados completos (conservar el primero)
@@ -283,7 +287,7 @@
 
 ## 🔧 5. Transformación y Estandarización de Datos
 
-> [!success]- **Transformación de Tipos de Datos** 📊
+> [!success] **Transformación de Tipos de Datos** 📊
 > 
 > ### Conversiones Básicas:
 > 
@@ -315,8 +319,8 @@
 >     if columna in titanic_limpio.columns:
 >         titanic_limpio[columna] = titanic_limpio[columna].map(mapeo)
 > ```
-
-> [!example]- **Funciones Personalizadas con `.apply()`** ⚙️
+>
+> [!example] **Funciones Personalizadas con `.apply()`** ⚙️
 > 
 > ### Categorización Automática:
 > 
@@ -365,7 +369,7 @@
 
 ## 🔍 6. Filtros y Búsquedas Avanzadas
 
-> [!tip]- **Filtrado con Múltiples Criterios** 🎯
+> [!tip] **Filtrado con Múltiples Criterios** 🎯
 > 
 > ### Usar `.isin()` para Múltiples Valores:
 > 
@@ -381,8 +385,8 @@
 > print(f"Pasajeros de clase premium: {len(pasajeros_premium)}")
 > print(f"Desde puertos principales: {len(desde_puertos_principales)}")
 > ```
-
-> [!example]- **Búsquedas en Texto con `.str`** 🔤
+>
+> [!example] **Búsquedas en Texto con `.str`** 🔤
 > 
 > ```python
 > # Buscar patrones en nombres
@@ -401,8 +405,8 @@
 > print(f"Nombres muy largos: {len(nombres_largos)}")
 > print(f"Con iniciales: {len(con_iniciales)}")
 > ```
-
-> [!warning]- **Query Avanzado** 🔍
+>
+> [!warning] **Query Avanzado** 🔍
 > 
 > ```python
 > # Usar .query() para filtros complejos más legibles
@@ -419,7 +423,7 @@
 
 ## 🧼 7. Pipeline Completo de Limpieza
 
-> [!success]- **Función Integral de Limpieza** 🏭
+> [!success] **Función Integral de Limpieza** 🏭
 > 
 > ```python
 > def pipeline_limpieza_completo(df, config=None):
@@ -513,7 +517,7 @@
 
 ## 📊 8. Validación de la Limpieza
 
-> [!info]- **Verificación de Calidad** ✅
+> [!info] **Verificación de Calidad** ✅
 > 
 > ```python
 > def reporte_calidad_datos(df, df_original):
@@ -567,7 +571,7 @@
 
 ## ⚠️ Errores Comunes y Mejores Prácticas
 
-> [!warning]- **Errores Frecuentes** 🚫
+> [!warning] **Errores Frecuentes** 🚫
 > 
 > ### 1. **Eliminar Datos Sin Análisis Previo**
 > 
@@ -599,8 +603,8 @@
 > assert df_limpio.isnull().sum().sum() == 0, "¡Aún hay valores nulos!"
 > assert df_limpio.duplicated().sum() == 0, "¡Aún hay duplicados!"
 > ```
-
-> [!tip]- **Mejores Prácticas** ⭐
+>
+> [!tip] **Mejores Prácticas** ⭐
 > 
 > ### 1. **Trabajar con Copias**
 > 
@@ -634,7 +638,7 @@
 
 ## 🎯 Ejercicios Prácticos
 
-> [!example]- **Ejercicio 1: Limpieza Completa del Titanic** 🚢
+> [!example] **Ejercicio 1: Limpieza Completa del Titanic** 🚢
 > 
 > Implementa un pipeline personalizado que:
 > 

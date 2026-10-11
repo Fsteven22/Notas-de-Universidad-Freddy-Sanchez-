@@ -5,7 +5,7 @@
 ## ¿Qué es la Procrastinación? 🤔
 
 > [!info] **Definición** La procrastinación es el acto de retrasar o posponer de manera voluntaria e irracional una tarea o decisión, a pesar de conocer las consecuencias negativas que esto puede acarrear. Es la brecha entre la intención y la acción, donde sabemos qué deberíamos hacer pero no lo hacemos.
-
+>
 > [!warning] **Mito vs Realidad** 💡 **Mito:** La procrastinación es simplemente pereza o mala gestión del tiempo **Realidad:** Es un mecanismo complejo de regulación emocional que involucra aspectos psicológicos, neurológicos y conductuales profundos
 
 ## La Neurociencia de la Procrastinación
@@ -50,7 +50,7 @@ graph TD
 > - **Regla del 80/20**: Buscar el 80% de calidad para empezar
 > - **Prototipo rápido**: Crear versiones borradores primero
 > - **Límites temporales**: Establecer tiempo máximo para cada fase
-
+>
 > [!info] **2. Procrastinación por Aversión a la Tarea** 😤
 > 
 > ### Características:
@@ -64,7 +64,7 @@ graph TD
 > - **Gamificación**: Convertir la tarea en un juego con recompensas
 > - **Técnica del sandwich**: Intercalar tareas placenteras con las difíciles
 > - **Conexión con el propósito**: Encontrar el "por qué" profundo
-
+>
 > [!warning] **3. Procrastinación por Ansiedad** 😰
 > 
 > ### Características:
@@ -78,7 +78,7 @@ graph TD
 > - **Técnica de los 2 minutos**: Si toma menos de 2 minutos, hazlo ahora
 > - **Fragmentación**: Dividir en micro-tareas manejables
 > - **Técnicas de relajación**: Respiración y mindfulness antes de comenzar
-
+>
 > [!tip] **4. Procrastinación por Falta de Estructura** 📋
 > 
 > ### Características:
@@ -92,7 +92,7 @@ graph TD
 > - **Método GTD**: Sistema "Getting Things Done" para organización
 > - **Time blocking**: Asignar bloques específicos de tiempo
 > - **Matriz de Eisenhower**: Clasificar por urgencia e importancia
-
+>
 > [!info] **5. Procrastinación por Rebeldía** 🔥
 > 
 > ### Características:
@@ -106,7 +106,7 @@ graph TD
 > - **Autonomía percibida**: Reencuadrar las tareas como elecciones personales
 > - **Negociación interna**: Crear acuerdos contigo mismo
 > - **Propósito personal**: Conectar con valores y metas propias
-
+>
 > [!warning] **6. Procrastinación por Agotamiento** 😴
 > 
 > ### Características:
@@ -155,7 +155,7 @@ flowchart LR
 > 2. **Sin expectativas**: No hay presión de completar nada
 > 3. **Momentum natural**: Frecuentemente continuarás más allá de los 5 minutos
 > 4. **Celebración**: Reconoce el éxito de haber empezado
-
+>
 > [!info] **Método de Temptation Bundling** 🍭
 > 
 > ### Concepto:
@@ -170,7 +170,7 @@ flowchart LR
 > |Hacer ejercicio|Ver series|Solo ver Netflix en la caminadora|
 > |Tareas domésticas|Podcasts|Escuchar mientras limpias|
 > |Trabajo administrativo|Café especial|Preparar tu bebida favorita para acompañar|
-
+>
 > [!warning] **Técnica de Implementation Intentions** 📝
 > 
 > ### Fórmula: "Si... entonces..."
@@ -266,7 +266,7 @@ flowchart LR
 > - Elimina la ansiedad anticipatoria
 > - Crea momentum positivo
 > - Aprovecha la energía matutina
-
+>
 > [!info] **Método de Batching** 📦
 > 
 > ### Principios:
@@ -337,7 +337,7 @@ flowchart LR
 > - Utilizó la exposición pública como accountability
 > 
 > **El Resultado:** Fundó uno de los blogs más exitosos sobre productividad y pensamiento crítico
-
+>
 > [!tip] **Caso 2: Cal Newport - Deep Work** 🧠
 > 
 > **El Enfoque:** Combatió la procrastinación con trabajo profundo estructurado

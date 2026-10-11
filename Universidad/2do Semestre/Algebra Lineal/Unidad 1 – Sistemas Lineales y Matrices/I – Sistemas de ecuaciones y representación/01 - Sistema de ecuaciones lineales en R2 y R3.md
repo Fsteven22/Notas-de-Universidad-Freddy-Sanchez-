@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📐 Sistemas de Ecuaciones Lineales (S.E.L.)
 
 ## 🎯 Fundamentos de los Sistemas
 
-> [!info]- 💡 Introducción a los Sistemas de Ecuaciones Lineales Un **Sistema de Ecuaciones Lineales (S.E.L.)** es un conjunto de dos o más ecuaciones lineales con las mismas incógnitas que deben satisfacerse simultáneamente. Encontrar la solución de un sistema significa hallar los valores de las incógnitas que hacen verdaderas todas las ecuaciones al mismo tiempo.
+> [!info] 💡 Introducción a los Sistemas de Ecuaciones Lineales Un **Sistema de Ecuaciones Lineales (S.E.L.)** es un conjunto de dos o más ecuaciones lineales con las mismas incógnitas que deben satisfacerse simultáneamente. Encontrar la solución de un sistema significa hallar los valores de las incógnitas que hacen verdaderas todas las ecuaciones al mismo tiempo.
 > 
 > **Analogías útiles:**
 > 
@@ -21,7 +25,7 @@
 
 ### 🔢 Forma General de un Sistema
 
-> [!note]- 📋 Estructura Matemática Un sistema de **m ecuaciones** con **n incógnitas** se escribe:
+> [!note] 📋 Estructura Matemática Un sistema de **m ecuaciones** con **n incógnitas** se escribe:
 > 
 > ```
 > a₁₁x₁ + a₁₂x₂ + ... + a₁ₙxₙ = b₁
@@ -46,7 +50,7 @@
 
 ### ✅ Ejemplos de Sistemas
 
-> [!example]- 🎯 Casos Representativos
+> [!example] 🎯 Casos Representativos
 > 
 > **Sistema 2×2 (2 ecuaciones, 2 incógnitas):**
 > 
@@ -84,7 +88,7 @@
 
 ### 🔗 Conexión con Matrices (Recordatorio)
 
-> [!tip]- 📊 Notación Matricial Un sistema se puede expresar en forma matricial compacta:
+> [!tip] 📊 Notación Matricial Un sistema se puede expresar en forma matricial compacta:
 > 
 > **AX = B**
 > 
@@ -116,7 +120,7 @@
 
 ### 📍 Visualización de Sistemas
 
-> [!success]- 🌍 Significado Geométrico
+> [!success] 🌍 Significado Geométrico
 > 
 > **En ℝ² (dos variables):**
 > 
@@ -162,7 +166,7 @@
 
 ### 🎯 Tipos Según Existencia de Soluciones
 
-> [!warning]- 🔴 Sistema Incompatible (Sin Solución)
+> [!warning] 🔴 Sistema Incompatible (Sin Solución)
 > 
 > **Definición:** Un sistema es **incompatible** o **inconsistente** si no tiene ninguna solución. No existe ningún conjunto de valores que satisfaga simultáneamente todas las ecuaciones.
 > 
@@ -191,8 +195,8 @@
 > Las dos primeras ecuaciones son contradictorias
 > 
 > **Identificación algebraica:** Al resolver, se llega a una contradicción como 0 = 5
-
-> [!success]- 🟢 Sistema Compatible (Con Solución)
+>
+> [!success] 🟢 Sistema Compatible (Con Solución)
 > 
 > **Definición:** Un sistema es **compatible** o **consistente** si tiene al menos una solución.
 > 
@@ -200,7 +204,7 @@
 
 #### 🎯 Compatible Determinado
 
-> [!note]- 🔵 Sistema Compatible Determinado (Solución Única)
+> [!note] 🔵 Sistema Compatible Determinado (Solución Única)
 > 
 > **Definición:** El sistema tiene **exactamente una solución única**. Existe un único conjunto de valores que satisface todas las ecuaciones.
 > 
@@ -235,7 +239,7 @@
 
 #### 🎯 Compatible Indeterminado
 
-> [!note]- 🟡 Sistema Compatible Indeterminado (Infinitas Soluciones)
+> [!note] 🟡 Sistema Compatible Indeterminado (Infinitas Soluciones)
 > 
 > **Definición:** El sistema tiene **infinitas soluciones**. Existe un conjunto infinito de valores que satisfacen todas las ecuaciones simultáneamente.
 > 
@@ -298,7 +302,7 @@ graph TD
 
 ### 📋 Tabla Resumen Comparativa
 
-> [!example]- 📊 Comparación de Tipos
+> [!example] 📊 Comparación de Tipos
 > 
 > |Tipo|Soluciones|Interpretación Geométrica (ℝ²)|Interpretación Geométrica (ℝ³)|Condición (Rango)|
 > |---|---|---|---|---|
@@ -310,7 +314,7 @@ graph TD
 
 ### ✏️ Método de Sustitución
 
-> [!tip]- 🔄 Sustitución Paso a Paso
+> [!tip] 🔄 Sustitución Paso a Paso
 > 
 > **Procedimiento:**
 > 
@@ -357,7 +361,7 @@ graph TD
 
 ### ⚖️ Método de Igualación
 
-> [!tip]- ⚖️ Igualación Paso a Paso
+> [!tip] ⚖️ Igualación Paso a Paso
 > 
 > **Procedimiento:**
 > 
@@ -404,7 +408,7 @@ graph TD
 
 ### ➕ Método de Eliminación (Reducción)
 
-> [!tip]- ➕➖ Eliminación por Combinación Lineal
+> [!tip] ➕➖ Eliminación por Combinación Lineal
 > 
 > **Procedimiento:**
 > 
@@ -479,7 +483,7 @@ graph TD
 
 ## 🔢 Operaciones Elementales sobre Ecuaciones
 
-> [!note]- ⚙️ Transformaciones Permitidas
+> [!note] ⚙️ Transformaciones Permitidas
 > 
 > Las siguientes operaciones **no cambian el conjunto de soluciones** del sistema:
 > 
@@ -517,7 +521,7 @@ graph TD
 
 ## 🎓 Ejemplos Completos de Clasificación
 
-> [!example]- 💪 Casos de Estudio Detallados
+> [!example] 💪 Casos de Estudio Detallados
 > 
 > **Caso 1: Sistema Compatible Determinado**
 > 
@@ -576,7 +580,7 @@ graph TD
 
 ## 🎯 Estrategia para Analizar Sistemas
 
-> [!success]- 🗺️ Guía de Análisis
+> [!success] 🗺️ Guía de Análisis
 > 
 > **Pasos para identificar el tipo de sistema:**
 > 
@@ -599,7 +603,7 @@ graph TD
 
 ## 🔗 Conexión con Temas Siguientes
 
-> [!quote]- 🌐 Puentes Conceptuales
+> [!quote] 🌐 Puentes Conceptuales
 > 
 > **Esta nota establece las bases para:**
 > 
@@ -623,7 +627,7 @@ graph TD
 
 ## 🎯 Fundamentos de las Ecuaciones Lineales
 
-> [!info]- 💡 Introducción a las Ecuaciones de Primer Grado Las **ecuaciones de grado 1** (o ecuaciones lineales) son expresiones algebraicas donde las variables aparecen elevadas únicamente a la primera potencia. En espacios bidimensionales y tridimensionales, estas ecuaciones tienen interpretaciones geométricas fundamentales: representan **rectas en ℝ²** y **planos en ℝ³**.
+> [!info] 💡 Introducción a las Ecuaciones de Primer Grado Las **ecuaciones de grado 1** (o ecuaciones lineales) son expresiones algebraicas donde las variables aparecen elevadas únicamente a la primera potencia. En espacios bidimensionales y tridimensionales, estas ecuaciones tienen interpretaciones geométricas fundamentales: representan **rectas en ℝ²** y **planos en ℝ³**.
 > 
 > **Analogías útiles:**
 > 
@@ -641,7 +645,7 @@ graph TD
 
 ### 📊 Formas Generales
 
-> [!note]- 🌟 Ecuaciones Lineales por Dimensión
+> [!note] 🌟 Ecuaciones Lineales por Dimensión
 > 
 > |Espacio|Ecuación General|Representa|Variables|
 > |---|---|---|---|
@@ -660,7 +664,7 @@ graph TD
 
 ### 🔍 Definición y Formas
 
-> [!example]- 🔵 La Ecuación de la Recta
+> [!example] 🔵 La Ecuación de la Recta
 > 
 > **Definición geométrica:** Una recta en ℝ² es el conjunto de todos los puntos (x, y) que satisfacen una ecuación lineal.
 > 
@@ -675,7 +679,7 @@ graph TD
 
 ### 📐 Formas Explícitas de la Recta
 
-> [!success]- 🟢 Múltiples Representaciones
+> [!success] 🟢 Múltiples Representaciones
 > 
 > **1. Forma pendiente-ordenada (explícita):** $$y = mx + b$$
 > 
@@ -708,7 +712,7 @@ graph TD
 
 ### 🎯 Casos Especiales en ℝ²
 
-> [!tip]- ⚡ Rectas Particulares
+> [!tip] ⚡ Rectas Particulares
 > 
 > **1. Rectas horizontales:** $$y = k$$
 > 
@@ -741,7 +745,7 @@ graph TD
 
 ### ✅ Ejemplos de Rectas en ℝ²
 
-> [!example]- 💪 Casos Ilustrativos
+> [!example] 💪 Casos Ilustrativos
 > 
 > **Ejemplo 1 - Conversión de formas:**
 > 
@@ -775,7 +779,7 @@ graph TD
 
 ### 🔍 Definición y Forma General
 
-> [!warning]- 🟡 La Ecuación del Plano
+> [!warning] 🟡 La Ecuación del Plano
 > 
 > **Definición geométrica:** Un plano en ℝ³ es el conjunto de todos los puntos (x, y, z) que satisfacen una ecuación lineal.
 > 
@@ -796,7 +800,7 @@ graph TD
 
 ### 📐 Formas del Plano
 
-> [!note]- 🔷 Representaciones del Plano
+> [!note] 🔷 Representaciones del Plano
 > 
 > **1. Forma general (implícita):** $$ax + by + cz + d = 0$$
 > 
@@ -822,7 +826,7 @@ graph TD
 
 ### 🎯 Casos Especiales de Planos
 
-> [!tip]- ⚡ Planos Particulares en ℝ³
+> [!tip] ⚡ Planos Particulares en ℝ³
 > 
 > **1. Planos coordenados:**
 > 
@@ -856,7 +860,7 @@ graph TD
 
 ### ✅ Ejemplos de Planos en ℝ³
 
-> [!example]- 🌐 Casos Resueltos
+> [!example] 🌐 Casos Resueltos
 > 
 > **Ejemplo 1 - De forma general a explícita:**
 > 
@@ -897,7 +901,7 @@ graph TD
 
 ### 🔍 Definición y Conceptos Básicos
 
-> [!info]- 🔵 ¿Qué es un Sistema de Ecuaciones Lineales?
+> [!info] 🔵 ¿Qué es un Sistema de Ecuaciones Lineales?
 > 
 > **Definición:** Un sistema de ecuaciones lineales es un conjunto de dos o más ecuaciones lineales con las mismas variables que se buscan resolver simultáneamente.
 > 
@@ -917,7 +921,7 @@ graph TD
 
 ### 📋 Tipos de Sistemas
 
-> [!note]- 🎯 Clasificación de S.E.L.
+> [!note] 🎯 Clasificación de S.E.L.
 > 
 > **Por compatibilidad:**
 > 
@@ -957,7 +961,7 @@ graph TD
 
 ### 🎨 Interpretación Geométrica
 
-> [!example]- 🌈 Visualización de Sistemas
+> [!example] 🌈 Visualización de Sistemas
 > 
 > **En ℝ² (2 ecuaciones, 2 incógnitas):**
 > 
@@ -1023,7 +1027,7 @@ graph TD
 
 ### 📐 Representación con Matrices
 
-> [!success]- 🟢 Forma Matricial del Sistema
+> [!success] 🟢 Forma Matricial del Sistema
 > 
 > Un sistema de ecuaciones lineales se puede escribir en **forma matricial**:
 > 
@@ -1047,7 +1051,7 @@ graph TD
 
 ### 🔧 Operaciones Elementales
 
-> [!tip]- ⚡ Transformaciones Permitidas
+> [!tip] ⚡ Transformaciones Permitidas
 > 
 > Las **operaciones elementales por filas** transforman el sistema sin cambiar su conjunto solución:
 > 
@@ -1077,7 +1081,7 @@ graph TD
 
 ### 📝 Métodos Básicos
 
-> [!example]- 💼 Técnicas para Sistemas 2×2 y 3×3
+> [!example] 💼 Técnicas para Sistemas 2×2 y 3×3
 > 
 > **1. Método de Sustitución:**
 > 
@@ -1131,7 +1135,7 @@ graph TD
 
 ### ✅ Ejemplos Completos
 
-> [!example]- 🎯 Sistemas Resueltos Paso a Paso
+> [!example] 🎯 Sistemas Resueltos Paso a Paso
 > 
 > **Ejemplo 1 - Sistema 2×2 (determinado):**
 > 
@@ -1189,7 +1193,7 @@ graph TD
 
 ### 🔍 Fundamento del Método
 
-> [!info]- 🔵 Eliminación Gaussiana
+> [!info] 🔵 Eliminación Gaussiana
 > 
 > **Objetivo:** Transformar la matriz ampliada a **forma escalonada** mediante operaciones elementales.
 > 
@@ -1215,7 +1219,7 @@ graph TD
 
 ### 🔧 Procedimiento de Gauss
 
-> [!success]- 🟢 Algoritmo Paso a Paso
+> [!success] 🟢 Algoritmo Paso a Paso
 > 
 > **Fase 1: Eliminación hacia adelante (Forward Elimination)**
 > 
@@ -1248,7 +1252,7 @@ graph TD
 
 ### 📊 Ejemplo Detallado de Gauss
 
-> [!example]- 💪 Resolución Completa
+> [!example] 💪 Resolución Completa
 > 
 > **Sistema:** $$\begin{cases} 2x + 3y - z = 5 \ 4x + 4y - 3z = 3 \ -2x + 3y - z = 1 \end{cases}$$
 > 
@@ -1293,7 +1297,7 @@ graph TD
 
 ### 🎯 Casos Especiales en Gauss
 
-> [!warning]- ⚠️ Situaciones Particulares
+> [!warning] ⚠️ Situaciones Particulares
 > 
 > **1. Pivote cero:**
 > 
@@ -1325,7 +1329,7 @@ graph TD
 
 ### ✅ Más Ejemplos de Gauss
 
-> [!example]- 🔬 Casos Adicionales
+> [!example] 🔬 Casos Adicionales
 > 
 > **Ejemplo 1 - Sistema 4×4:**
 > 
@@ -1365,7 +1369,7 @@ graph TD
 
 ### 🔍 Definición y Concepto
 
-> [!info]- 🔵 ¿Qué es el Rango?
+> [!info] 🔵 ¿Qué es el Rango?
 > 
 > **Definición:** El **rango** de una matriz A (denotado rang(A) o rk(A)) es el número máximo de filas (o columnas) linealmente independientes.
 > 
@@ -1384,7 +1388,7 @@ graph TD
 
 ### 🔧 Cálculo del Rango
 
-> [!success]- 🟢 Método de Gauss para el Rango
+> [!success] 🟢 Método de Gauss para el Rango
 > 
 > **Procedimiento:**
 > 
@@ -1425,7 +1429,7 @@ graph TD
 
 ### 📊 Rango y Soluciones del Sistema
 
-> [!note]- 🎯 Teorema de Rouché-Frobenius
+> [!note] 🎯 Teorema de Rouché-Frobenius
 > 
 > Dado el sistema $AX = B$:
 > 
@@ -1470,7 +1474,7 @@ graph TD
 
 ### ✅ Ejemplos con Rango
 
-> [!example]- 🔍 Análisis de Sistemas mediante Rango
+> [!example] 🔍 Análisis de Sistemas mediante Rango
 > 
 > **Ejemplo 1 - Compatible determinado:**
 > 
@@ -1563,7 +1567,7 @@ graph TD
 
 ## 🧪 Ejercicios Progresivos
 
-> [!example]- 💪 Práctica Graduada
+> [!example] 💪 Práctica Graduada
 > 
 > **Nivel 1 - Sistemas 2×2:** 🟢
 > 
@@ -1607,7 +1611,7 @@ graph TD
 
 ### 🏭 Ingeniería y Optimización
 
-> [!note]- 🔧 Casos de Uso Industriales
+> [!note] 🔧 Casos de Uso Industriales
 > 
 > **1. Análisis de circuitos eléctricos:**
 > 
@@ -1645,7 +1649,7 @@ graph TD
 
 ### 📈 Economía y Finanzas
 
-> [!example]- 💰 Aplicaciones Económicas
+> [!example] 💰 Aplicaciones Económicas
 > 
 > **1. Modelo de equilibrio de mercado:**
 > 
@@ -1675,7 +1679,7 @@ graph TD
 
 ### 🔬 Ciencias Naturales
 
-> [!success]- 🧬 Aplicaciones Científicas
+> [!success] 🧬 Aplicaciones Científicas
 > 
 > **1. Ajuste de curvas (mínimos cuadrados):**
 > 
@@ -1699,7 +1703,7 @@ graph TD
 
 ### 📐 Espacios Vectoriales y Dimensión
 
-> [!info]- 🔵 Conceptos Avanzados
+> [!info] 🔵 Conceptos Avanzados
 > 
 > **Relación con álgebra lineal:**
 > 
@@ -1724,7 +1728,7 @@ graph TD
 
 ### 🔍 Independencia Lineal
 
-> [!tip]- 🎯 Concepto Fundamental
+> [!tip] 🎯 Concepto Fundamental
 > 
 > **Definición:** Un conjunto de vectores {v₁, v₂, ..., vₖ} es **linealmente independiente** si: $$c_1v_1 + c_2v_2 + \cdots + c_kv_k = 0$$
 > 
@@ -1748,7 +1752,7 @@ graph TD
 
 ### 📊 Determinantes y Sistemas
 
-> [!note]- 🔷 Relación con Determinantes
+> [!note] 🔷 Relación con Determinantes
 > 
 > **Para sistemas cuadrados (m = n):**
 > 
@@ -1769,7 +1773,7 @@ graph TD
 
 ## 📊 Tabla Resumen de Métodos
 
-> [!example]- 📋 Comparación de Técnicas
+> [!example] 📋 Comparación de Técnicas
 > 
 > |Método|Mejor para|Complejidad|Ventajas|Desventajas|
 > |---|---|---|---|---|
@@ -1816,7 +1820,7 @@ graph TD
 
 ## 🌐 Conexiones Conceptuales
 
-> [!quote]- 🔗 Enlaces con Otros Temas
+> [!quote] 🔗 Enlaces con Otros Temas
 > 
 > **Prerrequisitos:**
 > 
@@ -1850,7 +1854,7 @@ graph TD
 
 ## 💡 Consejos de Estudio
 
-> [!tip]- 🧠 Estrategias de Aprendizaje
+> [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para dominar sistemas de ecuaciones:**
 > 
@@ -1895,7 +1899,7 @@ graph TD
 
 ## 🏆 Problemas Desafiantes
 
-> [!example]- 🎯 Ejercicios Avanzados
+> [!example] 🎯 Ejercicios Avanzados
 > 
 > **Desafío 1 - Sistema con parámetros:**
 > 

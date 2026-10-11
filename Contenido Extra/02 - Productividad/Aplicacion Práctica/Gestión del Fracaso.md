@@ -5,7 +5,7 @@
 ## ¿Qué es la Gestión del Fracaso? 🤔
 
 > [!info] **Definición** La gestión del fracaso es la habilidad de transformar experiencias negativas, errores y derrotas en oportunidades de aprendizaje, crecimiento personal y mejora continua. No se trata de evitar el fracaso, sino de desarrollar la capacidad de recuperarse, aprender y adaptarse efectivamente.
-
+>
 > [!tip] **Principio Fundamental** ✨ El fracaso no es lo opuesto al éxito, es parte del camino hacia él. La diferencia entre quienes triunfan y quienes se estancan radica en cómo procesan y utilizan sus fracasos.
 
 ## Marco Conceptual de la Gestión del Fracaso
@@ -44,7 +44,7 @@ graph TD
 > - Permitirse sentir las emociones sin juzgarlas
 > - Evitar decisiones impulsivas inmediatamente después
 > - Buscar perspectiva temporal (¿importará en 5 años?)
-
+>
 > [!tip] **Fase 2: Análisis Constructivo** 🔍
 > 
 > ### Metodología de Análisis:
@@ -65,7 +65,7 @@ graph TD
 > - **A**prendizajes extraídos
 > - **S**oluciones posibles
 > - **O**portunidades de mejora
-
+>
 > [!info] **Fase 3: Extracción de Aprendizajes** 📚
 > 
 > ### Tipos de Aprendizajes:
@@ -87,7 +87,7 @@ graph TD
 > - Gestión del estrés y presión
 > - Tolerancia a la frustración
 > - Desarrollo de resiliencia
-
+>
 > [!warning] **Fase 4: Implementación y Prevención** 🚀
 > 
 > ### Estrategias de Implementación:
@@ -121,7 +121,7 @@ graph TD
 > |"Nunca lo lograré"|"Aún no lo he logrado, pero puedo aprender"|
 > |"Perdí el tiempo"|"Invertí en aprendizaje y experiencia"|
 > |"Todos me juzgarán"|"Los demás también han experimentado fracasos"|
-
+>
 > [!info] **Construcción de Resiliencia** 💪
 > 
 > ### Los 7 Pilares de la Resiliencia:
@@ -176,7 +176,7 @@ graph TD
 > 
 > - Próximos pasos concretos: _____________
 > - Fecha de revisión: _____________
-
+>
 > [!tip] **Técnica del Post-Mortem Constructivo** 🔬
 > 
 > ### Metodología:
@@ -210,7 +210,7 @@ graph TD
 > - Desarrolló nuevas habilidades de gestión y visión empresarial
 > 
 > **El Resultado:** Regresó a Apple con una perspectiva renovada, liderando la creación del iPhone, iPad y la transformación digital de la empresa
-
+>
 > [!tip] **Caso 2: Oprah Winfrey** 📺
 > 
 > **El Fracaso:** Fue despedida de su primer trabajo en televisión por ser "demasiado emocional"
@@ -268,7 +268,7 @@ graph TD
 > - Realizar pequeños experimentos con bajo costo de fracaso
 > - Aprender rápido y ajustar frecuentemente
 > - Mantener múltiples opciones abiertas
-
+>
 > [!tip] **Diversificación de Riesgos** 🎲
 > 
 > - No poner todos los recursos en una sola apuesta
@@ -312,7 +312,7 @@ graph TD
 > ### **Habilidades Complementarias:**
 > 
 > - [[Pensamiento Estratégico]] - Visión de largo plazo post-fracaso
-> - [[Comunicación Efectiva]] - Expresar aprendizajes y buscar apoyo
+> - [[La Comunicación Efectiva]] - Expresar aprendizajes y buscar apoyo
 > - [[Técnicas de Relajación]] - Manejo del estrés asociado
 > - [[Hábitos y Rutinas Saludables]] - Mantener estabilidad durante crisis
 > 

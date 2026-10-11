@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🖼️ Principios de las GUI
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una GUI?
+> [!info] 💡 ¿Qué es una GUI?
 > 
 > Una **GUI** (Graphical User Interface - Interfaz Gráfica de Usuario) es un sistema visual que permite a los usuarios interactuar con una aplicación mediante elementos gráficos como ventanas, botones, menús y campos de texto.
 > 
@@ -17,7 +21,6 @@
 >     B -->|Eventos| C[Programa<br/>Java]
 >     C -->|Actualización| B
 >     B -->|Feedback visual| A
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -37,7 +40,7 @@
 
 ## 🏛️ Historia de las GUI en Java
 
-> [!note]- 📚 Evolución de las Bibliotecas
+> [!note] 📚 Evolución de las Bibliotecas
 > 
 > ```mermaid
 > timeline
@@ -69,7 +72,7 @@
 
 ### 🪟 Contenedores
 
-> [!tip]- 📦 Contenedores Principales
+> [!tip] 📦 Contenedores Principales
 > 
 > Los **contenedores** son componentes que pueden contener otros componentes.
 > 
@@ -79,9 +82,7 @@
 >     B --> C1[JButton]
 >     B --> C2[JLabel]
 >     B --> C3[JTextField]
->     
 >     A --> D[JMenuBar<br/>Barra de menú]
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C1 fill:#e1ffe1
@@ -132,7 +133,7 @@
 
 ### 🎨 Componentes Básicos
 
-> [!example]- 🧰 Componentes Más Comunes
+> [!example] 🧰 Componentes Más Comunes
 > 
 > **Componentes de visualización:**
 > 
@@ -213,7 +214,7 @@
 
 ## 📐 Gestores de Diseño (Layout Managers)
 
-> [!success]- 🎯 Organizar Componentes Automáticamente
+> [!success] 🎯 Organizar Componentes Automáticamente
 > 
 > Los **Layout Managers** controlan cómo se posicionan y dimensionan los componentes dentro de un contenedor.
 > 
@@ -231,7 +232,6 @@
 >     A --> D[GridLayout<br/>Cuadrícula]
 >     A --> E[BoxLayout<br/>Línea/Columna]
 >     A --> F[GridBagLayout<br/>Flexible complejo]
->     
 >     style B fill:#e1ffe1
 >     style C fill:#e1f5ff
 >     style D fill:#fff4e1
@@ -241,7 +241,7 @@
 
 ### 🌊 FlowLayout
 
-> [!example]- 📍 Diseño de Flujo
+> [!example] 📍 Diseño de Flujo
 > 
 > **Comportamiento:** Coloca componentes de izquierda a derecha, como texto en un párrafo.
 > 
@@ -270,7 +270,7 @@
 
 ### 🧭 BorderLayout
 
-> [!example]- 🗺️ Diseño de Bordes
+> [!example] 🗺️ Diseño de Bordes
 > 
 > **Comportamiento:** Divide el contenedor en 5 regiones: NORTH, SOUTH, EAST, WEST, CENTER.
 > 
@@ -304,7 +304,7 @@
 
 ### 📊 GridLayout
 
-> [!example]- 🔲 Diseño de Cuadrícula
+> [!example] 🔲 Diseño de Cuadrícula
 > 
 > **Comportamiento:** Organiza componentes en una cuadrícula de filas y columnas iguales.
 > 
@@ -340,7 +340,7 @@
 
 ### 📏 BoxLayout
 
-> [!example]- ➡️ Diseño en Línea
+> [!example] ➡️ Diseño en Línea
 > 
 > **Comportamiento:** Organiza componentes en una sola línea (horizontal o vertical).
 > 
@@ -376,7 +376,7 @@
 
 ### 🎛️ GridBagLayout
 
-> [!tip]- 🔧 Diseño Flexible (Avanzado)
+> [!tip] 🔧 Diseño Flexible (Avanzado)
 > 
 > **Comportamiento:** El más flexible y complejo. Permite control total sobre posición y tamaño.
 > 
@@ -404,7 +404,7 @@
 
 ### 🚫 Null Layout (Absoluto)
 
-> [!warning]- ⚠️ Posicionamiento Manual
+> [!warning] ⚠️ Posicionamiento Manual
 > 
 > **Comportamiento:** Tú controlas la posición exacta (x, y) y tamaño de cada componente.
 > 
@@ -434,7 +434,7 @@
 
 ## 🎨 Principios de Diseño GUI
 
-> [!tip]- 🏆 Mejores Prácticas
+> [!tip] 🏆 Mejores Prácticas
 > 
 > **1. Consistencia**
 > 
@@ -478,7 +478,6 @@
 >     A[Título grande] --> B[Subtítulo mediano]
 >     B --> C[Contenido normal]
 >     C --> D[Notas pequeñas]
->     
 >     style A fill:#e1f5ff,font-size:20px
 >     style B fill:#fff4e1,font-size:16px
 >     style C fill:#e1ffe1,font-size:14px
@@ -506,7 +505,7 @@
 
 ## 🔄 Modelo de Eventos
 
-> [!info]- ⚡ Programación Basada en Eventos
+> [!info] ⚡ Programación Basada en Eventos
 > 
 > Las GUI funcionan con **eventos**: acciones del usuario que disparan código.
 > 
@@ -516,7 +515,6 @@
 >     participant B as Botón
 >     participant L as Listener
 >     participant P as Programa
->     
 >     U->>B: Click
 >     B->>L: actionPerformed()
 >     L->>P: Ejecutar código
@@ -564,7 +562,7 @@
 
 ## 🎯 Ejemplo Completo
 
-> [!example]- 💼 Formulario de Registro
+> [!example] 💼 Formulario de Registro
 > 
 > ```java
 > import javax.swing.*;

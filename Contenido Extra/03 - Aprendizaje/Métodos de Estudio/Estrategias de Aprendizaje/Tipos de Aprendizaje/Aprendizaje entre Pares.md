@@ -1,7 +1,7 @@
 # Aprendizaje entre Pares
 
 > [!quote] "Si quieres ir rápido, ve solo. Si quieres llegar lejos, ve acompañado." - Proverbio Africano
-
+>
 > [!abstract]- ## 🎯 Definición y Concepto Central El **Aprendizaje entre Pares** (Peer Learning) es una metodología educativa donde estudiantes con niveles similares de conocimiento colaboran activamente para enseñarse mutuamente, construyendo conocimiento de manera recíproca y horizontal.
 > 
 > ### 🧠 Principios Fundamentales
@@ -10,7 +10,7 @@
 > - **Construcción social del conocimiento**: El aprendizaje emerge de la interacción
 > - **Zona de desarrollo próximo compartida**: Niveles similares facilitan la comprensión
 > - **Metacognición grupal**: Reflexión colectiva sobre el proceso de aprendizaje
-
+>
 > [!tip]- ## 🌟 Beneficios del Aprendizaje entre Pares
 > 
 > ### 🧩 Beneficios Cognitivos
@@ -28,7 +28,7 @@
 > - **Desarrollo de habilidades de comunicación**: Práctica constante de explicación
 > - **Motivación intrínseca**: Mayor compromiso y responsabilidad compartida
 > - **Construcción de redes de apoyo**: Relaciones académicas duraderas
-
+>
 > [!gear]- ## ⚙️ Modalidades y Estructuras
 > 
 > ```mermaid
@@ -63,7 +63,7 @@
 > - **Jigsaw Method**: Cada miembro se especializa en un tema y lo enseña al grupo
 > - **Peer Review**: Evaluación y retroalimentación mutua de trabajos
 > - **Collaborative Note-Taking**: Construcción conjunta de apuntes y resúmenes
-
+>
 > [!warning]- ## ⚠️ Desafíos y Limitaciones
 > 
 > ### 🚫 Obstáculos Comunes
@@ -81,7 +81,7 @@
 > |Dinámicas negativas|Roles rotativos y normas claras|
 > |Falta de estructura|Protocolos y metodologías definidas|
 > |Resistencia|Introducción gradual y demostración de beneficios|
-
+>
 > [!rocket]- ## 🚀 Implementación Práctica
 > 
 > ### 📋 Pasos para Formar Grupos Efectivos
@@ -111,7 +111,7 @@
 >    Puesta en común       :60, 80
 >    Reflexión y siguiente sesión :80, 90
 > ```
-
+>
 > [!lightbulb]- ## 💡 Técnica de Estudio Específica: Método PEER
 > 
 > ### 🔍 Acrónimo PEER
@@ -127,7 +127,7 @@
 > - **Documentos compartidos**: Para construcción conjunta de conocimiento
 > - **Rúbricas de autoevaluación**: Para reflexión sobre el proceso
 > - **Bitácoras de aprendizaje**: Para seguimiento individual y grupal
-
+>
 > [!books]- ## 📚 Referencias y Profundización
 > 
 > [!quote]- ### Referencias Académicas

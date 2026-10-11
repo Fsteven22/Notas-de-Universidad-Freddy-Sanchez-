@@ -17,11 +17,9 @@
 >     A[Circuitos Eléctricos] --> B[Serie]
 >     A --> C[Paralelo]
 >     A --> D[Mixto]
->
 >     B --> E[Una sola trayectoria<br/>de corriente]
 >     C --> F[Múltiples trayectorias<br/>de corriente]
 >     D --> G[Combinación de<br/>serie y paralelo]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
@@ -47,7 +45,6 @@
 >     B -->|I| C[R₂]
 >     C -->|I| D[R₃]
 >     D -->|I| A
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1f5ff
@@ -122,7 +119,6 @@
 >     C --> N2
 >     D --> N2
 >     N2 --> A
->
 >     style A fill:#fff4e1
 >     style N1 fill:#e1ffe1
 >     style N2 fill:#e1ffe1
@@ -267,7 +263,6 @@
 >     D --> N2
 >     N2 -->|I| E[R₄]
 >     E --> A
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -286,7 +281,6 @@
 >     P3 --> P4[4️⃣ Sumar resistencias<br/>resultantes en serie]
 >     P4 --> P5[5️⃣ Aplicar Ley de Ohm<br/>para corriente total]
 >     P5 --> P6[6️⃣ Calcular voltajes y<br/>corrientes en cada rama]
->
 >     style P1 fill:#e1f5ff
 >     style P2 fill:#e1ffe1
 >     style P3 fill:#fff4e1
@@ -360,11 +354,9 @@
 > ```mermaid
 > graph LR
 >     A[Fuente Vs] --> B{Tipo de<br/>circuito}
->
 >     B -->|Serie| C[I constante<br/>V se divide<br/>R_eq = ΣRk]
 >     B -->|Paralelo| D[V constante<br/>I se divide<br/>R_eq < R_min]
 >     B -->|Mixto| E[Simplificar<br/>paso a paso<br/>KVL + KCL]
->
 >     style C fill:#e1f5ff
 >     style D fill:#e1ffe1
 >     style E fill:#fff4e1

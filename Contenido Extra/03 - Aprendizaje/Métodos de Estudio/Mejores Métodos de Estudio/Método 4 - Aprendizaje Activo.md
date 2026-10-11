@@ -124,7 +124,7 @@ graph TD
 > - **Flipgrid**: Videos de discusión asíncrona
 > - **Nearpod**: Presentaciones interactivas
 > - **Classcraft**: Gamificación del aula
-
+>
 >[!warning] **Configuración del Entorno Digital**
 >
 > Optimiza tu setup con:
@@ -194,7 +194,7 @@ graph LR
 > - **😰 Ansiedad social**: Miedo a participar activamente
 > - **🧠 Sobrecarga cognitiva**: Demasiada información simultánea
 > - **📱 Distracciones tecnológicas**: Mal uso de herramientas digitales
-
+>
 >[!info] **Estrategias de Superación**
 >
 > Consulta [[Técnicas de Concentración]] para manejar distracciones y [[Método 9 - Metodología GTD (Getting Things Done)]] para organizar el proceso de aprendizaje activo de manera sistemática.

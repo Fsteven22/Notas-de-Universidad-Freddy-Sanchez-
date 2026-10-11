@@ -16,7 +16,6 @@ dg-publish: true
 >     A[Tabla de verdad] --> B["Función lógica<br/>(SOP o POS)"]
 >     B --> C["Minimización<br/>(Álgebra de Boole o<br/>Mapas de Karnaugh)"]
 >     C --> D[Circuito con el<br/>mínimo de compuertas]
-> 
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff
 >     style D fill:#e1ffe1
@@ -157,7 +156,7 @@ graph TD
 
 > [!info] 💡 ¿Por qué usar una sola familia de compuertas?
 > 
-> Como ya viste en [[07 - Circuitos Integrados de Logica Fija y Tablas de Verdad]] (Unidad 3), NAND y NOR son **funcionalmente completas**: cualquier función booleana puede construirse usando únicamente una de ellas. Esto simplifica el inventario de CI necesarios en un diseño real (menos referencias distintas que comprar, almacenar y soldar).
+> Como ya viste en [[07 - Lógica fija y tablas de verdad]] (Unidad 3), NAND y NOR son **funcionalmente completas**: cualquier función booleana puede construirse usando únicamente una de ellas. Esto simplifica el inventario de CI necesarios en un diseño real (menos referencias distintas que comprar, almacenar y soldar).
 >
 > [!success] 📊 Equivalencias: NOT, AND y OR con NAND / NOR únicamente
 > 
@@ -291,7 +290,7 @@ mindmap
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Introducción a la Electrónica Digital]] — tema previo de la unidad: sistemas de numeración, tablas de verdad y lógica positiva/negativa/mixta.
-> - [[07 - Circuitos Integrados de Logica Fija y Tablas de Verdad]] — compuertas lógicas y la propiedad de completitud funcional de NAND/NOR (Unidad 3).
+> - [[07 - Lógica fija y tablas de verdad]] — compuertas lógicas y la propiedad de completitud funcional de NAND/NOR (Unidad 3).
 > - Próxima nota (Unidad 4, punto 4): Circuitos integrados programables.
 
 ---

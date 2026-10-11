@@ -16,7 +16,6 @@
 >     A[Energía Primaria<br/>☀️💧🔥💨] -->|Conversión| B[Generador<br/>Eléctrico]
 >     B -->|Energía Eléctrica| C[Red de<br/>Distribución]
 >     C -->|Consumo| D[Hogares<br/>Industria<br/>Dispositivos]
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -48,7 +47,6 @@
 >     A[Movimiento<br/>Mecánico 🔄] --> B[Variación de<br/>Flujo Magnético]
 >     B --> C[FEM Inducida<br/>ε = -N·dΦ/dt]
 >     C --> D[Corriente<br/>Eléctrica]
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#ffe1e1
@@ -77,7 +75,6 @@
 > graph LR
 >     A[Flujo magnético<br/>AUMENTA ↑] -->|induce| B[Corriente crea campo<br/>que SE OPONE al aumento<br/>↓ campo inducido]
 >     C[Flujo magnético<br/>DISMINUYE ↓] -->|induce| D[Corriente crea campo<br/>que SE OPONE a la disminución<br/>↑ campo inducido]
->
 >     style A fill:#ffe1e1
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
@@ -138,7 +135,6 @@
 > graph LR
 >     A[Rotor<br/>imán] -->|gira| B[Estátor<br/>bobinas]
 >     B --> C[Salida AC<br/>senoidal]
->
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -151,7 +147,6 @@
 >     A[Bobina<br/>giratoria] --> B[Colector<br/>de anillos]
 >     B --> C[Rectificación<br/>mecánica]
 >     C --> D[Salida DC]
->
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#ffe1e1
@@ -180,7 +175,6 @@
 >     D --> E[Red de<br/>Transmisión]
 >     E --> F[Transformador<br/>reductor]
 >     F --> G[Consumidor<br/>🏠🏭]
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -205,7 +199,6 @@
 >     B -->|eje mecánico| C[Generador<br/>AC]
 >     C --> D[Transformador<br/>⚡]
 >     D --> E[Red eléctrica]
->
 >     style A fill:#e1f5ff
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
@@ -234,7 +227,6 @@
 >     B --> C[Turbina<br/>de vapor]
 >     C --> D[Generador<br/>AC]
 >     D --> E[Red eléctrica]
->
 >     style A fill:#ffe1e1
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -263,7 +255,6 @@
 >     B -->|liberan electrones| C[Corriente DC]
 >     C -->|inversor| D[Corriente AC]
 >     D --> E[Red / Consumo]
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -335,7 +326,6 @@
 >     B -->|reduce| C[🔻 Subtransmisión<br/>69 kV]
 >     C -->|reduce| D[🏘️ Distribución<br/>13.8 kV]
 >     D -->|reduce| E[🏠 Consumo<br/>110 V / 220 V]
->
 >     style A fill:#e1f5ff
 >     style B fill:#ffe1e1
 >     style C fill:#fff4e1

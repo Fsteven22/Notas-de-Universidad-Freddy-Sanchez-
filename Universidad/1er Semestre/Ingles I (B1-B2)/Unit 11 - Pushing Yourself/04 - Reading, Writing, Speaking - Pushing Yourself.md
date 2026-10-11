@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟥 Reading / Writing / Speaking - Pushing Yourself
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué aprenderás en esta sección?
+> [!info] 💡 ¿Qué aprenderás en esta sección?
 > 
 > En esta nota final aplicarás **TODO** lo aprendido en Unit 11 a través de:
 > 
@@ -26,9 +30,7 @@
 >     B --> C[Grammar:<br/>Phrasal Verbs &<br/>Conditionals]
 >     C --> D[Functional Language:<br/>Natural expressions]
 >     D --> E[REAL USE:<br/>Read, Write, Speak]
->     
 >     E --> F[Mastery!<br/>You can now discuss<br/>goals & motivation<br/>fluently]
->     
 >     style E fill:#ffe1e1
 >     style F fill:#e1ffe1
 > ```
@@ -37,7 +39,7 @@
 
 ## 📖 A. Reading - Inspiring Stories
 
-> [!note]- 📚 Reading 1: "Never Too Late to Start"
+> [!note] 📚 Reading 1: "Never Too Late to Start"
 > 
 > **Pre-reading: Vocabulary check**
 > 
@@ -101,8 +103,8 @@
 > > 3. **would have** ✅ (Third conditional - past unreal)
 > > 4. **Learning new skills while starting** ✅
 > > 5. **"If I were you, I would take that risk"** / Take risks and push yourself toward your dreams ✅
-
-> [!example]- 📚 Reading 2: "The Power of Not Giving Up"
+>
+> [!example] 📚 Reading 2: "The Power of Not Giving Up"
 > 
 > **Pre-reading: Think about these questions**
 > 
@@ -162,8 +164,8 @@
 > - **reframe** = _____________
 > - **feedback** = _____________
 > - **overwhelmed** = _____________
-
-> [!tip]- 📚 Reading 3: Short Motivational Quotes - Analysis
+>
+> [!tip] 📚 Reading 3: Short Motivational Quotes - Analysis
 > 
 > **Analyze these quotes using Unit 11 grammar:**
 > 
@@ -236,7 +238,7 @@
 
 ## ✍️ B. Writing Tasks
 
-> [!note]- ✏️ Writing Task 1: A Time You Pushed Yourself
+> [!note] ✏️ Writing Task 1: A Time You Pushed Yourself
 > 
 > **Instructions:**
 > 
@@ -304,8 +306,8 @@
 > - [ ] Checked spelling and grammar
 > - [ ] Used functional language naturally
 > - [ ] Made it personal and authentic
-
-> [!success]- ✏️ Writing Task 2: Your Current Goals
+>
+> [!success] ✏️ Writing Task 2: Your Current Goals
 > 
 > **Instructions:**
 > 
@@ -368,8 +370,8 @@
 > _I'm working on improving my speaking skills every day. I'm trying to watch English content without subtitles, and I'm pushing myself to think in English instead of translating. Every day, I study for at least 30 minutes._
 > 
 > _The biggest challenge is finding time to practice. Sometimes I wish I had more hours in the day. If I had a native English speaker to practice with regularly, I would improve much faster..._
-
-> [!tip]- ✏️ Writing Task 3: Letter of Encouragement
+>
+> [!tip] ✏️ Writing Task 3: Letter of Encouragement
 > 
 > **Scenario:**
 > 
@@ -434,7 +436,7 @@
 
 ## 🗣️ C. Speaking Practice
 
-> [!note]- 🎤 Speaking Task 1: Personal Goals Presentation
+> [!note] 🎤 Speaking Task 1: Personal Goals Presentation
 > 
 > **Prepare a 2-3 minute presentation about your goals.**
 > 
@@ -495,8 +497,8 @@
 > **Delivery tips:**
 > 
 > ✅ Speak clearly and not too fast ✅ Make eye contact (if presenting to someone) ✅ Use hand gestures for emphasis ✅ Show emotion (passion about your goals!) ✅ Pause after important points
-
-> [!example]- 🎤 Speaking Task 2: Role-Play Conversations
+>
+> [!example] 🎤 Speaking Task 2: Role-Play Conversations
 > 
 > **Role-play 1: Encouraging a Friend**
 > 
@@ -568,8 +570,8 @@
 > - Switch roles and do it again
 > - Try to speak for at least 2 minutes each
 > - Use natural pronunciation and intonation
-
-> [!success]- 🎤 Speaking Task 3: Discussion Questions
+>
+> [!success] 🎤 Speaking Task 3: Discussion Questions
 > 
 > **Discuss these questions with a partner or record yourself answering:**
 > 
@@ -687,7 +689,7 @@
 
 ## 🎯 D. Integrated Skills Challenge
 
-> [!tip]- 🏆 Final Challenge: "My Goal Journey" Project
+> [!tip] 🏆 Final Challenge: "My Goal Journey" Project
 > 
 > **This is your capstone project for Unit 11!**
 > 
@@ -835,7 +837,7 @@
 
 ## 📊 Self-Assessment & Review
 
-> [!note]- ✅ Unit 11 Mastery Checklist
+> [!note] ✅ Unit 11 Mastery Checklist
 > 
 > **Check off what you can do confidently:**
 > 
@@ -881,8 +883,8 @@
 > **If you checked 15-19 items:** 👍 **Good progress! Review weak areas.**
 > 
 > **If you checked less than 15:** 📚 **Go back and practice more.**
-
-> [!quote]- 💭 Reflection Questions
+>
+> [!quote] 💭 Reflection Questions
 > 
 > **Take a moment to reflect on your learning:**
 > 
@@ -979,7 +981,7 @@ mindmap
 
 ## 🚀 Moving Forward
 
-> [!success]- 🌟 What's Next?
+> [!success] 🌟 What's Next?
 > 
 > **You've completed Unit 11! Here's what to do now:**
 > 
@@ -1010,7 +1012,7 @@ mindmap
 
 ## 📚 Additional Resources
 
-> [!tip]- 🔗 Where to Practice More
+> [!tip] 🔗 Where to Practice More
 > 
 > **For Reading:**
 > 

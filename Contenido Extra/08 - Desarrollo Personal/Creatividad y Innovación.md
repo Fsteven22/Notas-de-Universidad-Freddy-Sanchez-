@@ -139,7 +139,7 @@
 > > Explora esta herramienta visual para organizar ideas y pensamientos complejos.
 > 
 > ---
-
+>
 > [!link]- ## 🔗 Notas Recomendadas y Prerrequisitos
 > 
 > ### Prerrequisitos

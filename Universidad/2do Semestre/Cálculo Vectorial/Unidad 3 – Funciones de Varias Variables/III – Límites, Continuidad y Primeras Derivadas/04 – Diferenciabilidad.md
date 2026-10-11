@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📘 Diferenciabilidad y Plano Tangente
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Por qué es importante la Diferenciabilidad en varias variables?
+> [!info] 💡 ¿Por qué es importante la Diferenciabilidad en varias variables?
 > 
 > La diferenciabilidad extiende el concepto de aproximación lineal a funciones de varias variables, permitiéndonos **aproximar localmente** una función compleja mediante una función lineal simple.
 > 
@@ -34,7 +38,7 @@
 
 ### 🔄 Recordatorio: Caso Unidimensional
 
-> [!note]- 📊 Diferenciabilidad en $\mathbb{R}$
+> [!note] 📊 Diferenciabilidad en $\mathbb{R}$
 > 
 > ### Definición
 > 
@@ -88,7 +92,7 @@
 
 ### 📋 Definición Formal
 
-> [!example]- 🟢 Definición: Diferenciabilidad en $\mathbb{R}^2$
+> [!example] 🟢 Definición: Diferenciabilidad en $\mathbb{R}^2$
 > 
 > **Definición:** Una función $f: \mathbb{R}^2 \to \mathbb{R}$ es **diferenciable** en el punto $(x_0, y_0)$ si existen las derivadas parciales $f_x(x_0, y_0)$ y $f_y(x_0, y_0)$, y además:
 > 
@@ -121,8 +125,8 @@
 > **Notación alternativa:** Usando $h = (h_1, h_2) = (x - x_0, y - y_0)$ y $|h| = \sqrt{h_1^2 + h_2^2}$:
 > 
 > $$f(x_0 + h_1, y_0 + h_2) = f(x_0, y_0) + f_x(x_0, y_0)h_1 + f_y(x_0, y_0)h_2 + o(|h|)$$
-
-> [!example]- 🔵 Definición: Diferenciabilidad en $\mathbb{R}^n$
+>
+> [!example] 🔵 Definición: Diferenciabilidad en $\mathbb{R}^n$
 > 
 > **Generalización:** Una función $f: \mathbb{R}^n \to \mathbb{R}$ es diferenciable en $\mathbf{x}_0 = (x_1^0, x_2^0, \ldots, x_n^0)$ si:
 > 
@@ -142,7 +146,7 @@
 
 ### 🔍 Diferencia con Derivadas Parciales
 
-> [!warning]- ⚠️ Diferenciabilidad vs Derivadas Parciales
+> [!warning] ⚠️ Diferenciabilidad vs Derivadas Parciales
 > 
 > ### ¡CUIDADO! No son lo mismo
 > 
@@ -200,7 +204,7 @@
 
 ## 📊 Teorema Fundamental de Diferenciabilidad
 
-> [!note]- 🎯 Condición Suficiente para Diferenciabilidad
+> [!note] 🎯 Condición Suficiente para Diferenciabilidad
 > 
 > **Teorema:** Si $f: \mathbb{R}^2 \to \mathbb{R}$ tiene derivadas parciales $f_x$ y $f_y$ que son **continuas** en un entorno abierto de $(x_0, y_0)$, entonces $f$ es **diferenciable** en $(x_0, y_0)$.
 > 
@@ -247,7 +251,7 @@
 
 ### 📐 Definición Geométrica
 
-> [!example]- 🟡 Definición: Plano Tangente
+> [!example] 🟡 Definición: Plano Tangente
 > 
 > **Definición:** El **plano tangente** a la superficie $z = f(x,y)$ en el punto $(x_0, y_0, z_0)$ donde $z_0 = f(x_0, y_0)$ es el plano dado por:
 > 
@@ -283,7 +287,7 @@
 
 ### 🎨 Visualización del Plano Tangente
 
-> [!note]- 🖼️ Interpretación Gráfica
+> [!note] 🖼️ Interpretación Gráfica
 > 
 > ### Superficie y Plano Tangente
 > 
@@ -328,7 +332,7 @@
 
 ### Ejemplo 1: Plano Tangente a un Paraboloide
 
-> [!example]- 📐 Ejemplo 1: Paraboloide
+> [!example] 📐 Ejemplo 1: Paraboloide
 > 
 > **Función:** $$f(x,y) = x^2 + y^2$$
 > 
@@ -378,7 +382,7 @@
 
 ### Ejemplo 2: Función Exponencial
 
-> [!example]- 📐 Ejemplo 2: Exponencial
+> [!example] 📐 Ejemplo 2: Exponencial
 > 
 > **Función:** $$f(x,y) = e^{xy}$$
 > 
@@ -418,7 +422,7 @@
 
 ### Ejemplo 3: Función Trigonométrica
 
-> [!example]- 📐 Ejemplo 3: Seno y Coseno
+> [!example] 📐 Ejemplo 3: Seno y Coseno
 > 
 > **Función:** $$f(x,y) = \sin(x)\cos(y)$$
 > 
@@ -454,7 +458,7 @@
 
 ### Ejemplo 4: Función Compuesta
 
-> [!example]- 📐 Ejemplo 4: Logaritmo
+> [!example] 📐 Ejemplo 4: Logaritmo
 > 
 > **Función:** $$f(x,y) = \ln(x^2 + y^2 + 1)$$
 > 
@@ -486,7 +490,7 @@
 
 ### Ejemplo 5: Verificar Diferenciabilidad
 
-> [!example]- 📐 Ejemplo 5: Verificación Directa
+> [!example] 📐 Ejemplo 5: Verificación Directa
 > 
 > **Función:** $$f(x,y) = x^2 + 2xy + y^2$$
 > 
@@ -530,7 +534,7 @@
 
 ### 📐 Vector Normal al Plano Tangente
 
-> [!note]- 🎯 Vector Normal
+> [!note] 🎯 Vector Normal
 > 
 > ### Definición
 > 
@@ -568,7 +572,7 @@
 
 ### Ejemplo 6: Vector Normal
 
-> [!example]- 📐 Ejemplo 6: Calcular Vector Normal
+> [!example] 📐 Ejemplo 6: Calcular Vector Normal
 > 
 > **Superficie:** $z = x^2 + y^2$ en el punto $(1, 2, 5)$
 > 
@@ -606,7 +610,7 @@
 
 ### 📏 Aplicación 1: Aproximación Lineal y Estimación
 
-> [!example]- 📊 Ejemplo 7: Estimación de Valores
+> [!example] 📊 Ejemplo 7: Estimación de Valores
 > 
 > **Problema:** Estimar $f(1.02, 1.97)$ donde $f(x,y) = x^2 + y^2$
 > 
@@ -658,7 +662,7 @@
 
 ### 💰 Aplicación 2: Análisis de Sensibilidad en Economía
 
-> [!example]- 📈 Ejemplo 8: Función de Producción
+> [!example] 📈 Ejemplo 8: Función de Producción
 > 
 > **Situación:** Una empresa tiene función de producción Cobb-Douglas:
 > 
@@ -715,7 +719,7 @@
 
 ### 🌡️ Aplicación 3: Propagación de Errores
 
-> [!example]- 🔬 Ejemplo 9: Medición de Área
+> [!example] 🔬 Ejemplo 9: Medición de Área
 > 
 > **Problema:** Se mide un rectángulo y se obtiene:
 > 
@@ -768,7 +772,7 @@
 
 ### 🏗️ Aplicación 4: Optimización Local
 
-> [!example]- 📐 Ejemplo 10: Condición Necesaria para Extremos
+> [!example] 📐 Ejemplo 10: Condición Necesaria para Extremos
 > 
 > **Teorema:** Si $f$ es diferenciable en $(x_0, y_0)$ y tiene un **extremo local** (máximo o mínimo) en ese punto, entonces:
 > 
@@ -810,7 +814,7 @@
 
 ### 📐 Definición del Diferencial
 
-> [!note]- 📋 Diferencial de una Función
+> [!note] 📋 Diferencial de una Función
 > 
 > ### Definición
 > 
@@ -852,7 +856,7 @@
 
 ### Ejemplo 11: Diferencial Total
 
-> [!example]- 📐 Ejemplo 11: Calcular Diferencial
+> [!example] 📐 Ejemplo 11: Calcular Diferencial
 > 
 > **Función:** $f(x,y) = x^2y + e^{xy}$
 > 
@@ -885,7 +889,7 @@
 
 ### Ejemplo 12: Uso del Diferencial
 
-> [!example]- 📐 Ejemplo 12: Estimación con Diferencial
+> [!example] 📐 Ejemplo 12: Estimación con Diferencial
 > 
 > **Problema:** Una lata cilíndrica tiene radio $r = 5$ cm y altura $h = 10$ cm.
 > 
@@ -929,7 +933,7 @@
 
 ## 🎨 Visualización: Superficie vs Plano Tangente
 
-> [!note]- 🖼️ Comparación Gráfica Detallada
+> [!note] 🖼️ Comparación Gráfica Detallada
 > 
 > ### Para $f(x,y) = x^2 + y^2$ en $(1, 1)$
 > 
@@ -984,7 +988,7 @@
 
 ### 🚫 Contraejemplo 1: Derivadas Existen pero No Diferenciable
 
-> [!warning]- ⚠️ Ejemplo Patológico
+> [!warning] ⚠️ Ejemplo Patológico
 > 
 > **Función:**
 > 
@@ -1026,7 +1030,7 @@
 
 ### 🚫 Contraejemplo 2: Derivadas Parciales Discontinuas
 
-> [!warning]- ⚠️ Derivadas No Continuas
+> [!warning] ⚠️ Derivadas No Continuas
 > 
 > **Función:**
 > 
@@ -1050,7 +1054,7 @@
 
 ### ✅ Ejemplo: Diferenciable pero No $C^1$
 
-> [!note]- 🔍 Caso Interesante
+> [!note] 🔍 Caso Interesante
 > 
 > **Función:**
 > 
@@ -1070,7 +1074,7 @@
 
 ### 📝 Algoritmo para Encontrar el Plano Tangente
 
-> [!tip]- ✅ Método Paso a Paso
+> [!tip] ✅ Método Paso a Paso
 > 
 > **Dado:** Superficie $z = f(x,y)$ y punto $(x_0, y_0)$
 > 
@@ -1114,7 +1118,7 @@
 
 ### 📊 Algoritmo para Verificar Diferenciabilidad
 
-> [!tip]- ✅ Método de Verificación
+> [!tip] ✅ Método de Verificación
 > 
 > **Dado:** Función $f(x,y)$ y punto $(x_0, y_0)$
 > 
@@ -1146,7 +1150,7 @@
 
 ### Ejemplo 13: Superficie Implícita
 
-> [!example]- 📐 Ejemplo 13: Plano Tangente a Superficie Implícita
+> [!example] 📐 Ejemplo 13: Plano Tangente a Superficie Implícita
 > 
 > **Superficie:** $x^2 + y^2 + z^2 = 14$
 > 
@@ -1188,7 +1192,7 @@
 
 ### Ejemplo 14: Optimización con Diferenciabilidad
 
-> [!example]- 📐 Ejemplo 14: Encontrar Extremos
+> [!example] 📐 Ejemplo 14: Encontrar Extremos
 > 
 > **Función:** $f(x,y) = x^2 + y^2 - 2x - 4y + 5$
 > 
@@ -1238,7 +1242,7 @@
 
 ### Ejemplo 15: Aproximación de Funciones Complicadas
 
-> [!example]- 📐 Ejemplo 15: Función Compleja
+> [!example] 📐 Ejemplo 15: Función Compleja
 > 
 > **Función:** $f(x,y) = e^{x} \sin(y) + \ln(1 + x + y)$
 > 
@@ -1292,7 +1296,7 @@
 
 ### 📋 Extensión a $\mathbb{R}^3$
 
-> [!note]- 🎲 Diferenciabilidad en Tres Variables
+> [!note] 🎲 Diferenciabilidad en Tres Variables
 > 
 > ### Definición
 > 
@@ -1324,7 +1328,7 @@
 
 ### Ejemplo 16: Función de Tres Variables
 
-> [!example]- 📐 Ejemplo 16: Temperatura en 3D
+> [!example] 📐 Ejemplo 16: Temperatura en 3D
 > 
 > **Función:** $T(x,y,z) = 100e^{-(x^2+y^2+z^2)}$
 > 
@@ -1376,7 +1380,7 @@
 
 ### 📊 Jerarquía de Propiedades
 
-> [!note]- 🌳 Diagrama de Implicaciones
+> [!note] 🌳 Diagrama de Implicaciones
 > 
 > ```
 > Clase C² (derivadas segundas continuas)
@@ -1409,7 +1413,7 @@
 
 ### 🔄 Conexión con Derivada Direccional
 
-> [!note]- 🎯 Relación con Derivadas Direccionales
+> [!note] 🎯 Relación con Derivadas Direccionales
 > 
 > ### Teorema
 > 
@@ -1446,7 +1450,7 @@
 
 ### 📐 Teorema del Valor Medio (Multivariable)
 
-> [!note]- 🎯 Teorema del Valor Medio
+> [!note] 🎯 Teorema del Valor Medio
 > 
 > **Teorema:** Si $f$ es diferenciable en todos los puntos del segmento que une $(x_0, y_0)$ con $(x_0 + h, y_0 + k)$, entonces existe un punto $(x_0 + \theta h, y_0 + \theta k)$ con $0 < \theta < 1$ tal que:
 > 
@@ -1464,7 +1468,7 @@
 
 ### 📊 Teorema de la Función Implícita
 
-> [!note]- 🔍 Función Implícita (Adelanto)
+> [!note] 🔍 Función Implícita (Adelanto)
 > 
 > **Teorema:** Si $F(x, y, z) = 0$ define implícitamente $z = f(x, y)$ cerca de un punto $(x_0, y_0, z_0)$ donde:
 > 
@@ -1498,7 +1502,7 @@
 
 ### 🤖 Aplicación 5: Machine Learning - Gradiente Descendente
 
-> [!example]- 🧠 Ejemplo 17: Optimización en ML
+> [!example] 🧠 Ejemplo 17: Optimización en ML
 > 
 > **Contexto:** En machine learning, queremos minimizar una función de costo $C(\mathbf{w})$ donde $\mathbf{w} = (w_1, w_2, \ldots, w_n)$ son los pesos del modelo.
 > 
@@ -1556,7 +1560,7 @@
 
 ### 🌊 Aplicación 6: Física - Potencial y Campo
 
-> [!example]- ⚡ Ejemplo 18: Potencial Eléctrico
+> [!example] ⚡ Ejemplo 18: Potencial Eléctrico
 > 
 > **Potencial eléctrico** en el espacio:
 > 
@@ -1594,7 +1598,7 @@
 
 ### 🏔️ Aplicación 7: Topografía - Curvas de Nivel
 
-> [!example]- 🗺️ Ejemplo 19: Mapa Topográfico
+> [!example] 🗺️ Ejemplo 19: Mapa Topográfico
 > 
 > **Función de elevación:** $h(x,y) = 1000 - x^2 - 2y^2$
 > 
@@ -1642,7 +1646,7 @@
 
 ## 🔢 Fórmulas de Referencia Rápida
 
-> [!note]- 📋 Tabla de Fórmulas Esenciales
+> [!note] 📋 Tabla de Fórmulas Esenciales
 > 
 > ### Diferenciabilidad
 > 
@@ -1692,7 +1696,7 @@
 
 ## 🎯 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Nivel Básico
+> [!example] 💪 Práctica Nivel Básico
 > 
 > **1. Calcular el plano tangente:**
 > 
@@ -1729,8 +1733,8 @@
 > b) $z = xy^2$ en $(1, 1)$
 > 
 > c) $z = e^{xy}$ en $(0, 1)$
-
-> [!example]- 💪 Práctica Nivel Intermedio
+>
+> [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Verificar diferenciabilidad:**
 > 
@@ -1771,8 +1775,8 @@
 > b) $f(x,y) = e^{xy}\ln(x+y)$
 > 
 > c) $f(x,y,z) = xyz + x^2 + y^2 + z^2$
-
-> [!example]- 💪 Práctica Nivel Avanzado
+>
+> [!example] 💪 Práctica Nivel Avanzado
 > 
 > **8. Problemas teóricos:**
 > 
@@ -1810,7 +1814,7 @@
 
 ## ✅ Soluciones Selectas
 
-> [!success]- 🔑 Respuestas Ejercicios Básicos
+> [!success] 🔑 Respuestas Ejercicios Básicos
 > 
 > **1a)** $f(x,y) = x^2 + y^2$ en $(1, 1)$
 > 
@@ -1851,8 +1855,8 @@
 > $f_x(1,2) = 2$, $f_y(1,2) = 4$
 > 
 > $$\boxed{\mathbf{n} = (2, 4, -1)}$$
-
-> [!success]- 🔑 Respuestas Ejercicios Intermedios
+>
+> [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = \frac{xy^2}{x^2+y^2}$ en $(0,0)$
 > 
@@ -1908,8 +1912,8 @@
 > $$f_x = 3x^2y^2 + y$$ $$f_y = 2x^3y + x$$
 > 
 > $$\boxed{df = (3x^2y^2 + y)dx + (2x^3y + x)dy}$$
-
-> [!success]- 🔑 Respuestas Ejercicios Avanzados
+>
+> [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **8a)** Demostración de continuidad
 > 
@@ -1983,7 +1987,7 @@
 
 ## 🌟 Conceptos Clave para Recordar
 
-> [!tip]- 💡 Puntos Esenciales
+> [!tip] 💡 Puntos Esenciales
 > 
 > ### Sobre Diferenciabilidad
 > 
@@ -2041,7 +2045,7 @@
 
 ## 🔗 Conexiones con Otros Temas
 
-> [!quote]- 🌐 Relaciones Importantes
+> [!quote] 🌐 Relaciones Importantes
 > 
 > **Este tema es continuación de:**
 > 
@@ -2081,7 +2085,7 @@
 
 ## 📊 Comparación: Una vs Varias Variables
 
-> [!note]- 📈 Tabla Comparativa
+> [!note] 📈 Tabla Comparativa
 
 |Concepto|Una Variable ($f: \mathbb{R} \to \mathbb{R}$)|Dos Variables ($f: \mathbb{R}^2 \to \mathbb{R}$)|
 |---|---|---|
@@ -2099,7 +2103,7 @@
 
 ## 💭 Intuición Geométrica Profunda
 
-> [!note]- 🎨 Visualización Conceptual
+> [!note] 🎨 Visualización Conceptual
 > 
 > ### Analogía: Superficie como "Colina"
 > 
@@ -2165,7 +2169,7 @@
 
 ### 🔬 Método de Taylor (Adelanto)
 
-> [!note]- 📐 Aproximación de Orden Superior
+> [!note] 📐 Aproximación de Orden Superior
 > 
 > - Aproximación lineal = **Taylor de orden 1**.
 >     
@@ -2183,7 +2187,7 @@
 
 ### 🎯 Criterio Práctico de Diferenciabilidad
 
-> [!tip]- ✅ Algoritmo Rápido
+> [!tip] ✅ Algoritmo Rápido
 > 
 > 1. **Verificar $C^1$**: ¿$f_x$, $f_y$ continuas? → Sí → Diferenciable.
 >     
@@ -2205,7 +2209,7 @@
 
 ### 🌀 Funciones Homogéneas
 
-> [!note]- 🔢 Teorema de Euler
+> [!note] 🔢 Teorema de Euler
 > 
 > - Homogénea de grado $k$ si $f(tx,ty) = t^k f(x,y)$.
 >     
@@ -2218,7 +2222,7 @@
 
 ### 🌊 Funciones Armónicas
 
-> [!note]- 🎵 Laplaciano Cero
+> [!note] 🎵 Laplaciano Cero
 > 
 > - $f$ armónica si $\nabla^2 f = f_{xx} + f_{yy} = 0$.
 >     
@@ -2235,7 +2239,7 @@
 
 ## 📚 Resumen Final
 
-> [!note]- 🎯 Lo Más Importante
+> [!note] 🎯 Lo Más Importante
 > 
 > 1. **Diferenciabilidad:**
 >     
@@ -2278,7 +2282,7 @@
 
 ## 🎓 Reflexiones Finales
 
-> [!note]- 💭 Filosofía del Cálculo Multivariable
+> [!note] 💭 Filosofía del Cálculo Multivariable
 > 
 > - **Linealización:** “Localmente, todo lo suave es lineal”.
 >     

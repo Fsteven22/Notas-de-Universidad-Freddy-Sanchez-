@@ -470,13 +470,13 @@
 > - Jehn, K. & Mannix, E. (2001). "The dynamic nature of conflict in teams"
 > - De Dreu, C. K. W. (2008). "The virtue and vice of workplace conflict"
 > - Behfar, K. et al. (2008). "The critical role of conflict resolution in teams"
-
+>
 > [!link]+ **Conexiones con Otras Notas**
 > 
 > ### 📋 **Prerrequisitos Esenciales:**
 > 
 > - [[Inteligencia Emocional]] - Autorregulación y empatía
-> - [[Comunicación Efectiva]] - Habilidades de diálogo constructivo
+> - [[La Comunicación Efectiva]] - Habilidades de diálogo constructivo
 > - [[Técnicas de Comunicación]] - Herramientas específicas de conversación
 > 
 > ### 🔄 **Notas Complementarias:**

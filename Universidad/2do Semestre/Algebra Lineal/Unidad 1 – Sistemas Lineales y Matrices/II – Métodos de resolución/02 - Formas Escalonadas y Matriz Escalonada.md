@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # Formas Escalonadas y Matriz Escalonada
 
 ## 🎯 Fundamentos de las Formas Escalonadas
 
-> [!info]- 💡 Introducción al Concepto de Forma Escalonada La **forma escalonada** de una matriz es una configuración especial que resulta de aplicar el algoritmo de Gauss. Es fundamental porque revela inmediatamente la estructura y propiedades de la matriz original, especialmente su rango y la naturaleza del sistema de ecuaciones asociado.
+> [!info] 💡 Introducción al Concepto de Forma Escalonada La **forma escalonada** de una matriz es una configuración especial que resulta de aplicar el algoritmo de Gauss. Es fundamental porque revela inmediatamente la estructura y propiedades de la matriz original, especialmente su rango y la naturaleza del sistema de ecuaciones asociado.
 > 
 > **Analogías útiles:**
 > 
@@ -29,7 +33,7 @@
 
 ### 🔢 Definición de Forma Escalonada (FE)
 
-> [!note]- 📖 Definición Formal
+> [!note] 📖 Definición Formal
 > 
 > **Definición:** Una matriz está en **forma escalonada** (o **forma de escalón por filas**) si cumple las siguientes condiciones:
 > 
@@ -72,7 +76,7 @@
 
 ### 🎨 Definición de Forma Escalonada Reducida (FER)
 
-> [!note]- 📖 Forma de Gauss-Jordan
+> [!note] 📖 Forma de Gauss-Jordan
 > 
 > **Definición:** Una matriz está en **forma escalonada reducida** (o **forma canónica por filas** o **forma de Gauss-Jordan**) si:
 > 
@@ -120,7 +124,7 @@
 
 ### ✅ Ejemplos de Formas Escalonadas
 
-> [!example]- 🎯 Ejemplo 1: Forma Escalonada Básica 3×4
+> [!example] 🎯 Ejemplo 1: Forma Escalonada Básica 3×4
 > 
 > **Matriz en forma escalonada:**
 > 
@@ -164,8 +168,8 @@
 > 
 > Cada ⬤ está más a la derecha que el anterior
 > ```
-
-> [!example]- 🎯 Ejemplo 2: Forma Escalonada con Fila Nula
+>
+> [!example] 🎯 Ejemplo 2: Forma Escalonada con Fila Nula
 > 
 > **Matriz:**
 > 
@@ -207,8 +211,8 @@
 > - 4 variables
 > - Sistema compatible indeterminado con 2 parámetros
 > ```
-
-> [!example]- 🎯 Ejemplo 3: Forma Escalonada "Irregular"
+>
+> [!example] 🎯 Ejemplo 3: Forma Escalonada "Irregular"
 > 
 > **Matriz:**
 > 
@@ -254,7 +258,7 @@
 
 ### ✅ Ejemplos de Formas Escalonadas Reducidas
 
-> [!example]- 🎯 Ejemplo 1: Forma Reducida Completa
+> [!example] 🎯 Ejemplo 1: Forma Reducida Completa
 > 
 > **Matriz en FER:**
 > 
@@ -308,8 +312,8 @@
 > Las soluciones se leen DIRECTAMENTE de la matriz,
 > sin necesidad de sustitución hacia atrás.
 > ```
-
-> [!example]- 🎯 Ejemplo 2: FER con Patrón Complejo
+>
+> [!example] 🎯 Ejemplo 2: FER con Patrón Complejo
 > 
 > **Matriz:**
 > 
@@ -358,8 +362,8 @@
 > x₄ = b₃ - 4x₅
 > x₅ = t (parámetro libre)
 > ```
-
-> [!example]- 🎯 Ejemplo 3: Comparación FE vs FER
+>
+> [!example] 🎯 Ejemplo 3: Comparación FE vs FER
 > 
 > **Matriz original:**
 > 
@@ -409,7 +413,7 @@
 
 ## ❌ Ejemplos de NO Formas Escalonadas
 
-> [!warning]- 🚫 Matrices que NO están en Forma Escalonada
+> [!warning] 🚫 Matrices que NO están en Forma Escalonada
 > 
 > **Ejemplo 1: Fila nula NO al final**
 > 
@@ -471,7 +475,7 @@
 
 ### 📊 Algoritmo para Forma Escalonada (Gauss)
 
-> [!success]- ✅ Procedimiento Paso a Paso
+> [!success] ✅ Procedimiento Paso a Paso
 > 
 > **Algoritmo de Gauss (para obtener FE):**
 > 
@@ -537,7 +541,7 @@
 
 ### 📊 Algoritmo para Forma Reducida (Gauss-Jordan)
 
-> [!success]- ✅ Extensión del Método de Gauss
+> [!success] ✅ Extensión del Método de Gauss
 > 
 > **Algoritmo de Gauss-Jordan (para obtener FER):**
 > 
@@ -602,7 +606,7 @@
 
 ### ✅ Ejemplo Integrador 1: De Matriz a FER
 
-> [!example]- 🎯 Transformación Completa Paso a Paso
+> [!example] 🎯 Transformación Completa Paso a Paso
 > 
 > **Matriz original:**
 > 
@@ -735,7 +739,7 @@
 
 ### ✅ Ejemplo Integrador 2: Sistema con Parámetro (Continuación)
 
-> [!example]- 🎯 Análisis con Matriz Ampliada (Continuación)
+> [!example] 🎯 Análisis con Matriz Ampliada (Continuación)
 > 
 > **Caso 1: b ≠ a**
 > 
@@ -833,7 +837,7 @@
 
 ### 📊 Propiedades Fundamentales
 
-> [!note]- 📐 Teoremas Importantes
+> [!note] 📐 Teoremas Importantes
 > 
 > **Propiedad 1: Unicidad de la FER**
 > 
@@ -931,7 +935,7 @@
 
 ### 🎯 Propiedades Computacionales
 
-> [!tip]- 💻 Aspectos Prácticos
+> [!tip] 💻 Aspectos Prácticos
 > 
 > **Complejidad temporal:**
 > 
@@ -998,7 +1002,7 @@
 
 ## 🎨 Visualización de Estructuras
 
-> [!success]- 🌈 Patrones Visuales
+> [!success] 🌈 Patrones Visuales
 > 
 > **Patrón de Forma Escalonada:**
 > 
@@ -1070,7 +1074,7 @@
 
 ### ✅ Checklist de Verificación
 
-> [!tip]- ✓ Cómo Verificar Formas Escalonadas
+> [!tip] ✓ Cómo Verificar Formas Escalonadas
 > 
 > **Para verificar si es FORMA ESCALONADA (FE):**
 > 
@@ -1129,7 +1133,7 @@
 
 ## 🎯 Ejercicios Progresivos
 
-> [!example]- 💪 Práctica de Identificación y Transformación
+> [!example] 💪 Práctica de Identificación y Transformación
 > 
 > **Nivel 1: Identificación visual** 🟢
 > 
@@ -1252,7 +1256,7 @@
 
 ## 🔄 Relación con Otros Conceptos
 
-> [!note]- 🌐 Conexiones Conceptuales
+> [!note] 🌐 Conexiones Conceptuales
 > 
 > **1. Relación con el Algoritmo de Gauss:**
 > 
@@ -1317,7 +1321,7 @@
 
 ## 💻 Implementación Computacional
 
-> [!success]- 🖥️ Algoritmos en Código
+> [!success] 🖥️ Algoritmos en Código
 > 
 > **Python (NumPy) - Obtener formas escalonadas:**
 > 
@@ -1475,7 +1479,7 @@
 
 ## ⚠️ Errores Comunes
 
-> [!warning]- 🚫 Problemas Frecuentes y Soluciones
+> [!warning] 🚫 Problemas Frecuentes y Soluciones
 > 
 > **Error 1: Confundir FE con FER**
 > 
@@ -1605,7 +1609,7 @@
 
 ## 📊 Tabla Comparativa Completa
 
-> [!note]- 📋 FE vs FER - Comparación Detallada
+> [!note] 📋 FE vs FER - Comparación Detallada
 > 
 > |Característica|Forma Escalonada (FE)|Forma Escalonada Reducida (FER)|
 > |---|---|---|
@@ -1651,7 +1655,7 @@
 
 ## 🎯 Estrategias de Resolución
 
-> [!tip]- 🧠 Técnicas Efectivas
+> [!tip] 🧠 Técnicas Efectivas
 > 
 > **Estrategia 1: Elegir el mejor método**
 > 
@@ -1748,7 +1752,7 @@
 
 ### ✅ Ejemplo Avanzado 1: Sistema 4×5 Completo
 
-> [!example]- 🎯 Análisis Exhaustivo
+> [!example] 🎯 Análisis Exhaustivo
 > 
 > **Sistema de ecuaciones:**
 > 
@@ -1839,7 +1843,7 @@
 
 ### ✅ Ejemplo Avanzado 2: Sistema Compatible Indeterminado
 
-> [!example]- 🎯 Con Dos Parámetros
+> [!example] 🎯 Con Dos Parámetros
 > 
 > **Sistema modificado (quitando la última ecuación del anterior):**
 > 
@@ -1967,7 +1971,7 @@
 
 ## 📖 Casos Especiales Importantes
 
-> [!info]- 🌟 Situaciones Particulares
+> [!info] 🌟 Situaciones Particulares
 > 
 > **Caso 1: Matriz identidad**
 > 
@@ -2067,7 +2071,7 @@
 
 ## 🔗 Conexión con Teoremas Fundamentales
 
-> [!note]- 📚 Vínculos Teóricos Profundos
+> [!note] 📚 Vínculos Teóricos Profundos
 > 
 > **1. Teorema de la Base (Espacios Vectoriales):**
 > 
@@ -2137,7 +2141,7 @@
 
 ## 🎓 Aplicaciones Avanzadas
 
-> [!success]- 🚀 Usos en Problemas Complejos
+> [!success] 🚀 Usos en Problemas Complejos
 > 
 > **1. Encontrar bases de espacios vectoriales:**
 > 
@@ -2322,7 +2326,7 @@
 
 ## 🧮 Ejercicios Integrados Completos
 
-> [!example]- 🎯 Problemas de Síntesis
+> [!example] 🎯 Problemas de Síntesis
 > 
 > **Ejercicio 1: Análisis completo de un sistema** 🟠
 > 
@@ -2455,7 +2459,7 @@ graph TD
 
 ## 🔍 Diferencias Clave: Resumen Visual
 
-> [!tip]- 📊 Comparación Lado a Lado
+> [!tip] 📊 Comparación Lado a Lado
 > 
 > ```
 > Matriz Original          Forma Escalonada (FE)     Forma Reducida (FER)
@@ -2497,7 +2501,7 @@ graph TD
 
 ## 🎯 Guía de Decisión Rápida
 
-> [!tip]- 🧭 ¿Qué Forma Usar?
+> [!tip] 🧭 ¿Qué Forma Usar?
 > 
 > ```
 > ┌─────────────────────────────────────────────────┐
@@ -2557,7 +2561,7 @@ graph TD
 
 ## 📝 Plantilla para Resolución
 
-> [!tip]- 📋 Formato Estándar de Solución
+> [!tip] 📋 Formato Estándar de Solución
 > 
 > **Para obtener Forma Escalonada:**
 > 
@@ -2628,7 +2632,7 @@ graph TD
 
 ## 🔗 Enlaces con Notas del Sistema
 
-> [!quote]- 🌐 Relaciones Conceptuales
+> [!quote] 🌐 Relaciones Conceptuales
 > 
 > **Depende directamente de:**
 > 
@@ -2659,7 +2663,7 @@ graph TD
 
 ## 🎓 Consejos Finales para Exámenes
 
-> [!tip]- ✍️ Estrategia de Examen
+> [!tip] ✍️ Estrategia de Examen
 > 
 > **Gestión del tiempo:**
 > 
@@ -2717,7 +2721,7 @@ graph TD
 
 ## 📚 Resumen Ejecutivo
 
-> [!summary]- 🎯 Lo Esencial en una Página
+> [!summary] 🎯 Lo Esencial en una Página
 > 
 > **Definiciones clave:**
 > 

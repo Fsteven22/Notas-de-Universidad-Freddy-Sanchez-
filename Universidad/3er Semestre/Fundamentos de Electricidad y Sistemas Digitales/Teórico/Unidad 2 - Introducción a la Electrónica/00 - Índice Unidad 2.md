@@ -30,7 +30,7 @@ graph LR
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Teoremas de Analisis de Circuitos]] (Unidad 1)
-> - Siguiente: [[01 - Introducción a los Circuitos Integrados No Programables]] (Unidad 3)
+> - Siguiente: [[01 - CI no programables]] (Unidad 3)
 > - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---

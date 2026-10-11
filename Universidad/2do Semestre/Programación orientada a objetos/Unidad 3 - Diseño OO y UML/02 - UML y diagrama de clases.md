@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📐 UML y Diagrama de Clases
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es UML?
+> [!info] 💡 ¿Qué es UML?
 > 
 > **UML** (Unified Modeling Language - Lenguaje Unificado de Modelado) es un **lenguaje visual estandarizado** para representar, diseñar y documentar sistemas orientados a objetos.
 > 
@@ -34,7 +38,7 @@ graph LR
     style A fill:#e1f5ff
 ```
 
-> [!note]- 🎯 Enfoque de este Tema
+> [!note] 🎯 Enfoque de este Tema
 > 
 > Nos centraremos en el **Diagrama de Clases**, el más importante para POO y el que usarás en tus proyectos de Java.
 
@@ -44,7 +48,7 @@ graph LR
 
 ### 🔲 Representación de una Clase
 
-> [!tip]- 📋 Estructura de una Clase en UML
+> [!tip] 📋 Estructura de una Clase en UML
 > 
 > Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
@@ -71,7 +75,7 @@ graph LR
 
 ### 🔐 Modificadores de Visibilidad
 
-> [!info]- 🎨 Símbolos de Acceso
+> [!info] 🎨 Símbolos de Acceso
 > 
 > |Símbolo|Modificador|Significado|Uso|
 > |---|---|---|---|
@@ -88,7 +92,7 @@ graph LR
 
 ### 📝 Sintaxis de Atributos y Métodos
 
-> [!example]- ✍️ Formato Completo
+> [!example] ✍️ Formato Completo
 > 
 > **Atributos:**
 > 
@@ -141,7 +145,7 @@ graph LR
 
 ### 📊 Tipos de Relaciones
 
-> [!tip]- 🌐 Relaciones Fundamentales
+> [!tip] 🌐 Relaciones Fundamentales
 > 
 > |Relación|Símbolo|Significado|Ejemplo|
 > |---|---|---|---|
@@ -154,7 +158,7 @@ graph LR
 
 ### 🏛️ Herencia
 
-> [!example]- 👨‍👩‍👧 Jerarquía de Clases
+> [!example] 👨‍👩‍👧 Jerarquía de Clases
 > 
 > **Símbolo:** Flecha con triángulo vacío `<|--`
 > 
@@ -163,7 +167,6 @@ graph LR
 >     Animal <|-- Perro
 >     Animal <|-- Gato
 >     Animal <|-- Ave
->     
 >     class Animal {
 >         #nombre: String
 >         #edad: int
@@ -171,19 +174,16 @@ graph LR
 >         +dormir(): void
 >         +hacerSonido(): void
 >     }
->     
 >     class Perro {
 >         -raza: String
 >         +ladrar(): void
 >         +hacerSonido(): void
 >     }
->     
 >     class Gato {
 >         -color: String
 >         +maullar(): void
 >         +hacerSonido(): void
 >     }
->     
 >     class Ave {
 >         -especie: String
 >         +volar(): void
@@ -195,7 +195,7 @@ graph LR
 
 ### 🔌 Implementación de Interfaces
 
-> [!example]- 📜 Interfaces
+> [!example] 📜 Interfaces
 > 
 > **Símbolo:** Flecha punteada con triángulo `<|..`
 > 
@@ -207,17 +207,14 @@ graph LR
 >         +volar(): void
 >         +aterrizar(): void
 >     }
->     
 >     class Nadador {
 >         <<interface>>
 >         +nadar(): void
 >         +bucear(): void
 >     }
->     
 >     Volador <|.. Pato
 >     Nadador <|.. Pato
 >     Volador <|.. Avion
->     
 >     class Pato {
 >         -nombre: String
 >         +despegar(): void
@@ -226,7 +223,6 @@ graph LR
 >         +nadar(): void
 >         +bucear(): void
 >     }
->     
 >     class Avion {
 >         -modelo: String
 >         +despegar(): void
@@ -239,7 +235,7 @@ graph LR
 
 ### 🔗 Asociación
 
-> [!example]- 🤝 Relación Básica
+> [!example] 🤝 Relación Básica
 > 
 > **Símbolo:** Línea simple `--`
 > 
@@ -249,24 +245,20 @@ graph LR
 > classDiagram
 >     Persona "1" -- "1" Direccion : tiene
 >     Estudiante "1" -- "*" Curso : se inscribe en
->     
 >     class Persona {
 >         -nombre: String
 >         -direccion: Direccion
 >         +getDireccion(): Direccion
 >     }
->     
 >     class Direccion {
 >         -calle: String
 >         -ciudad: String
 >         -codigoPostal: String
 >     }
->     
 >     class Estudiante {
 >         -carnet: String
 >         -cursos: List~Curso~
 >     }
->     
 >     class Curso {
 >         -codigo: String
 >         -nombre: String
@@ -282,7 +274,7 @@ graph LR
 
 ### 🔷 Agregación
 
-> [!example]- 📦 "Tiene-Un" (Débil)
+> [!example] 📦 "Tiene-Un" (Débil)
 > 
 > **Símbolo:** Rombo vacío `o--`
 > 
@@ -292,23 +284,19 @@ graph LR
 > classDiagram
 >     Departamento "1" o-- "*" Empleado : tiene
 >     Universidad "1" o-- "*" Estudiante : contiene
->     
 >     class Departamento {
 >         -nombre: String
 >         -empleados: List~Empleado~
 >         +agregarEmpleado(e: Empleado): void
 >     }
->     
 >     class Empleado {
 >         -nombre: String
 >         -salario: double
 >     }
->     
 >     class Universidad {
 >         -nombre: String
 >         -estudiantes: List~Estudiante~
 >     }
->     
 >     class Estudiante {
 >         -nombre: String
 >         -carnet: String
@@ -319,7 +307,7 @@ graph LR
 
 ### 🔶 Composición
 
-> [!example]- 🏗️ "Tiene-Un" (Fuerte)
+> [!example] 🏗️ "Tiene-Un" (Fuerte)
 > 
 > **Símbolo:** Rombo lleno `*--`
 > 
@@ -330,28 +318,23 @@ graph LR
 >     Coche "1" *-- "1" Motor : tiene
 >     Coche "1" *-- "4" Rueda : tiene
 >     Casa "1" *-- "*" Habitacion : contiene
->     
 >     class Coche {
 >         -marca: String
 >         -motor: Motor
 >         -ruedas: Rueda[4]
 >     }
->     
 >     class Motor {
 >         -cilindrada: int
 >         -potencia: int
 >     }
->     
 >     class Rueda {
 >         -tamaño: int
 >         -presion: double
 >     }
->     
 >     class Casa {
 >         -direccion: String
 >         -habitaciones: List~Habitacion~
 >     }
->     
 >     class Habitacion {
 >         -nombre: String
 >         -area: double
@@ -362,7 +345,7 @@ graph LR
 
 ### ⚡ Dependencia
 
-> [!example]- 🔄 Uso Temporal
+> [!example] 🔄 Uso Temporal
 > 
 > **Símbolo:** Flecha punteada `..>`
 > 
@@ -372,20 +355,16 @@ graph LR
 > classDiagram
 >     Impresora ..> Documento : usa
 >     CalculadoraImpuestos ..> Factura : procesa
->     
 >     class Impresora {
 >         +imprimir(doc: Documento): void
 >     }
->     
 >     class Documento {
 >         -contenido: String
 >         +getContenido(): String
 >     }
->     
 >     class CalculadoraImpuestos {
 >         +calcular(f: Factura): double
 >     }
->     
 >     class Factura {
 >         -monto: double
 >         +getMonto(): double
@@ -398,7 +377,7 @@ graph LR
 
 ### 🔸 Clases Abstractas
 
-> [!example]- 🏗️ Clases No Instanciables
+> [!example] 🏗️ Clases No Instanciables
 > 
 > Se representan con el nombre en **cursiva** o con `<<abstract>>`.
 > 
@@ -412,24 +391,20 @@ graph LR
 >         +calcularPerimetro()* double
 >         +mostrarInfo(): void
 >     }
->     
 >     FiguraGeometrica <|-- Circulo
 >     FiguraGeometrica <|-- Rectangulo
 >     FiguraGeometrica <|-- Triangulo
->     
 >     class Circulo {
 >         -radio: double
 >         +calcularArea(): double
 >         +calcularPerimetro(): double
 >     }
->     
 >     class Rectangulo {
 >         -base: double
 >         -altura: double
 >         +calcularArea(): double
 >         +calcularPerimetro(): double
 >     }
->     
 >     class Triangulo {
 >         -lado1: double
 >         -lado2: double
@@ -443,7 +418,7 @@ graph LR
 
 ### 🔹 Atributos y Métodos Estáticos
 
-> [!example]- ⚡ Miembros de Clase
+> [!example] ⚡ Miembros de Clase
 > 
 > Se **subrayan** para indicar que son `static`.
 > 
@@ -456,7 +431,6 @@ graph LR
 >         +incrementar()$: void
 >         +getContador()$: int
 >     }
->     
 >     class Configuracion {
 >         -URL_BASE: String$
 >         -TIMEOUT: int$
@@ -470,7 +444,7 @@ graph LR
 
 ### 📦 Enumeraciones
 
-> [!example]- 🎯 Tipos Enumerados
+> [!example] 🎯 Tipos Enumerados
 > 
 > ```mermaid
 > classDiagram
@@ -484,7 +458,6 @@ graph LR
 >         SABADO
 >         DOMINGO
 >     }
->     
 >     class TipoCuenta {
 >         <<enumeration>>
 >         AHORRO
@@ -493,9 +466,7 @@ graph LR
 >         --
 >         +getTasa(): double
 >     }
->     
 >     CuentaBancaria --> TipoCuenta : usa
->     
 >     class CuentaBancaria {
 >         -tipo: TipoCuenta
 >         -saldo: double
@@ -508,7 +479,7 @@ graph LR
 
 ### 🏦 Sistema Bancario
 
-> [!example]- 💳 Diagrama Completo
+> [!example] 💳 Diagrama Completo
 > 
 > ```mermaid
 > classDiagram
@@ -525,18 +496,15 @@ graph LR
 >         +calcularInteres()* double
 >         #validarMonto(monto: double): boolean
 >     }
->     
 >     CuentaBancaria <|-- CuentaAhorro
 >     CuentaBancaria <|-- CuentaCorriente
 >     CuentaBancaria <|-- CuentaNomina
->     
 >     class CuentaAhorro {
 >         -tasaInteres: double
 >         --
 >         +CuentaAhorro(titular: String, tasa: double)
 >         +calcularInteres(): double
 >     }
->     
 >     class CuentaCorriente {
 >         -sobregiro: double
 >         --
@@ -544,16 +512,13 @@ graph LR
 >         +calcularInteres(): double
 >         +retirar(monto: double): boolean
 >     }
->     
 >     class CuentaNomina {
 >         -empresa: String
 >         --
 >         +CuentaNomina(titular: String, empresa: String)
 >         +calcularInteres(): double
 >     }
->     
 >     Cliente "1" o-- "*" CuentaBancaria : posee
->     
 >     class Cliente {
 >         -nombre: String
 >         -identificacion: String
@@ -562,9 +527,7 @@ graph LR
 >         +agregarCuenta(cuenta: CuentaBancaria): void
 >         +getSaldoTotal(): double
 >     }
->     
 >     Banco "1" *-- "*" Cliente : gestiona
->     
 >     class Banco {
 >         -nombre: String
 >         -clientes: List~Cliente~
@@ -576,7 +539,7 @@ graph LR
 
 ### 🎓 Sistema Universitario
 
-> [!example]- 📖 Gestión Académica
+> [!example] 📖 Gestión Académica
 > 
 > ```mermaid
 > classDiagram
@@ -590,10 +553,8 @@ graph LR
 >         +getNombre(): String
 >         +mostrarInfo()* void
 >     }
->     
 >     Persona <|-- Estudiante
 >     Persona <|-- Profesor
->     
 >     class Estudiante {
 >         -carnet: String
 >         -creditos: int
@@ -603,7 +564,6 @@ graph LR
 >         +calcularPromedio(): double
 >         +mostrarInfo(): void
 >     }
->     
 >     class Profesor {
 >         -especialidad: String
 >         -cursos: List~Curso~
@@ -611,7 +571,6 @@ graph LR
 >         +asignarCurso(curso: Curso): void
 >         +mostrarInfo(): void
 >     }
->     
 >     class Curso {
 >         -codigo: String
 >         -nombre: String
@@ -622,13 +581,10 @@ graph LR
 >         +agregarEstudiante(e: Estudiante): void
 >         +getProfesor(): Profesor
 >     }
->     
 >     Estudiante "*" -- "*" Curso : se inscribe
 >     Profesor "1" -- "*" Curso : imparte
->     
 >     Departamento "1" o-- "*" Profesor : tiene
 >     Departamento "1" o-- "*" Curso : ofrece
->     
 >     class Departamento {
 >         -nombre: String
 >         -profesores: List~Profesor~
@@ -641,7 +597,7 @@ graph LR
 
 ### 🛒 Sistema de Comercio
 
-> [!example]- 🏪 E-commerce
+> [!example] 🏪 E-commerce
 > 
 > ```mermaid
 > classDiagram
@@ -655,7 +611,6 @@ graph LR
 >         +actualizarStock(cantidad: int): void
 >         +getPrecio(): double
 >     }
->     
 >     class CarritoCompra {
 >         -items: List~ItemCarrito~
 >         --
@@ -664,7 +619,6 @@ graph LR
 >         +calcularTotal(): double
 >         +vaciar(): void
 >     }
->     
 >     class ItemCarrito {
 >         -producto: Producto
 >         -cantidad: int
@@ -672,10 +626,8 @@ graph LR
 >         +ItemCarrito(p: Producto, cant: int)
 >         +getSubtotal(): double
 >     }
->     
 >     CarritoCompra "1" *-- "*" ItemCarrito : contiene
 >     ItemCarrito "*" --> "1" Producto : referencia
->     
 >     class Cliente {
 >         -nombre: String
 >         -email: String
@@ -684,10 +636,8 @@ graph LR
 >         --
 >         +realizarPedido(): Pedido
 >     }
->     
 >     Cliente "1" *-- "1" CarritoCompra : tiene
 >     Cliente "1" o-- "*" Pedido : realiza
->     
 >     class Pedido {
 >         -numero: String
 >         -fecha: Date
@@ -698,7 +648,6 @@ graph LR
 >         +confirmar(): void
 >         +cancelar(): void
 >     }
->     
 >     class EstadoPedido {
 >         <<enumeration>>
 >         PENDIENTE
@@ -707,7 +656,6 @@ graph LR
 >         ENTREGADO
 >         CANCELADO
 >     }
->     
 >     Pedido --> EstadoPedido : usa
 > ```
 
@@ -715,7 +663,7 @@ graph LR
 
 ## 🎯 Buenas Prácticas
 
-> [!success]- ✅ Recomendaciones para Diagramas UML
+> [!success] ✅ Recomendaciones para Diagramas UML
 > 
 > **1. Claridad sobre completitud:**
 > 
@@ -746,8 +694,8 @@ graph LR
 > - Azul: Clases auxiliares
 > - Amarillo: Interfaces
 > - Rojo: Clases abstractas
-
-> [!warning]- ⚠️ Errores Comunes
+>
+> [!warning] ⚠️ Errores Comunes
 > 
 > **❌ Evitar:**
 > 
@@ -769,7 +717,7 @@ graph LR
 
 ## 📊 Comparativa de Relaciones
 
-> [!info]- 🔍 Guía Rápida de Decisión
+> [!info] 🔍 Guía Rápida de Decisión
 > 
 > |Pregunta|Sí →|No →|
 > |---|---|---|
@@ -804,7 +752,7 @@ graph TD
 
 ## 🛠️ Herramientas para UML
 
-> [!tip]- 🔧 Software Recomendado
+> [!tip] 🔧 Software Recomendado
 > 
 > |Herramienta|Tipo|Características|Recomendado Para|
 > |---|---|---|---|
@@ -846,7 +794,7 @@ mindmap
       Miembros static
 ```
 
-> [!quote]- 💡 Recuerda
+> [!quote] 💡 Recuerda
 > 
 > **"Un buen diagrama UML vale más que mil líneas de documentación"**
 > 
@@ -859,7 +807,7 @@ mindmap
 
 ## 🎯 Checklist de Diseño
 
-> [!success]- ✅ Antes de Implementar
+> [!success] ✅ Antes de Implementar
 > 
 > **Diseño de clases:**
 > 

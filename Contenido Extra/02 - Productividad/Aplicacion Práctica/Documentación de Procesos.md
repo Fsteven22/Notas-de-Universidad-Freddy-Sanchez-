@@ -433,7 +433,7 @@
 > - [[Gestión de Proyectos]] - Procesos para ejecución de iniciativas
 > - [[Automatizaciones Digitales]] - Optimización de procesos rutinarios
 > - [[Sistemas de Revisión]] - Mantenimiento de información actualizada
-> - [[Comunicación Efectiva]] - Transmisión clara de procedimientos
+> - [[La Comunicación Efectiva]] - Transmisión clara de procedimientos
 > - [[Planificación Estratégica]] - Procesos de alto nivel organizacional
 > - [[Time Blocking]] - Asignación temporal de procesos
 > - [[Dashboard Semanal]] - Seguimiento de procesos clave
@@ -447,7 +447,7 @@
 > ### Prerrequisitos Esenciales
 > 
 > - [[Pensamiento Crítico]] - Análisis lógico de procesos
-> - [[Comunicación Efectiva]] - Claridad en instrucciones
+> - [[La Comunicación Efectiva]] - Claridad en instrucciones
 > - [[Gestión del Tiempo]] - Estimación y planificación temporal
 > - [[Autoconocimiento]] - Comprensión de estilos de trabajo personal
 > 

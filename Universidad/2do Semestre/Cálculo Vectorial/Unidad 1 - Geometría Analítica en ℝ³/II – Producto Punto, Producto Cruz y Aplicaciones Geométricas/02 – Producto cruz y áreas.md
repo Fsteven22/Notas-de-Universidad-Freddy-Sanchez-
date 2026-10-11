@@ -1,15 +1,19 @@
+---
+dg-publish: true
+---
+
 # ⚡ Producto Cruz y Áreas
 
 ## 🎯 Fundamentos del Producto Cruz
 
-> [!info]- 💡 Introducción al Producto Vectorial El **producto cruz** (también llamado **producto vectorial**) es una operación entre dos vectores en ℝ³ que resulta en un **nuevo vector perpendicular** a ambos vectores originales. Es fundamental en física, ingeniería y geometría espacial.
+> [!info] 💡 Introducción al Producto Vectorial El **producto cruz** (también llamado **producto vectorial**) es una operación entre dos vectores en ℝ³ que resulta en un **nuevo vector perpendicular** a ambos vectores originales. Es fundamental en física, ingeniería y geometría espacial.
 > 
 > **Analogías útiles:**
 > 
-> - **Física:** Momento de una fuerza (torque) τ⃗ = r⃗ × F⃗
+> - **Física:** Momento de una fuerza (torque) τ⃗ = \vec{r} × \vec{F}
 > - **Geometría:** Área del paralelogramo formado por dos vectores
 > - **Rotación:** Eje de rotación perpendicular al plano de giro
-> - **Magnetismo:** Fuerza magnética F⃗ = qv⃗ × B⃗
+> - **Magnetismo:** Fuerza magnética \vec{F} = q\vec{v} × \vec{B}
 > 
 > **Diferencia fundamental:**
 > 
@@ -30,7 +34,7 @@
 
 ### 📝 Definición Formal
 
-> [!note]- 🌟 Concepto Matemático del Producto Cruz **Definición algebraica:**
+> [!note] 🌟 Concepto Matemático del Producto Cruz **Definición algebraica:**
 > 
 > Dados dos vectores **u** = (u₁, u₂, u₃) y **v** = (v₁, v₂, v₃) en ℝ³, su producto cruz es:
 > 
@@ -63,7 +67,7 @@
 
 ### 🔢 Cálculo del Producto Cruz
 
-> [!example]- 📊 Método del Determinante **Método práctico:**
+> [!example] 📊 Método del Determinante **Método práctico:**
 > 
 > **Paso 1:** Formar el determinante 3×3
 > 
@@ -150,7 +154,7 @@
 
 ### ✋ Determinación del Sentido
 
-> [!tip]- 👉 Método Visual **La regla de la mano derecha determina el sentido de u × v:**
+> [!tip] 👉 Método Visual **La regla de la mano derecha determina el sentido de u × v:**
 > 
 > **Método 1 - Dedos curvados:**
 > 
@@ -194,7 +198,7 @@
 
 ### 🔄 Productos de Vectores Base
 
-> [!success]- 📐 Tabla de Productos Cruz Básicos
+> [!success] 📐 Tabla de Productos Cruz Básicos
 > 
 > **Vectores base:** i = (1,0,0), j = (0,1,0), k = (0,0,1)
 > 
@@ -234,7 +238,7 @@
 
 ### ⚖️ Propiedades Algebraicas
 
-> [!note]- 🔢 Propiedades Fundamentales **1. Anticonmutativa:**
+> [!note] 🔢 Propiedades Fundamentales **1. Anticonmutativa:**
 > 
 > ```
 > u × v = -(v × u)
@@ -290,7 +294,7 @@
 
 ### 🎯 Propiedades Geométricas
 
-> [!warning]- 📏 Interpretación Geométrica **1. Perpendicularidad:**
+> [!warning] 📏 Interpretación Geométrica **1. Perpendicularidad:**
 > 
 > ```
 > (u × v) ⊥ u
@@ -340,27 +344,27 @@
 
 ### 🔺 Área de Triángulos
 
-> [!success]- 📐 Fórmula del Área **Dados tres puntos A, B, C en ℝ³:**
+> [!success] 📐 Fórmula del Área **Dados tres puntos A, B, C en ℝ³:**
 > 
 > **Método 1 - Usando vectores:**
 > 
 > ```
-> AB⃗ = B - A
-> AC⃗ = C - A
+> A\vec{B} = B - A
+> A\vec{C} = C - A
 > 
-> Área = ½||AB⃗ × AC⃗||
+> Área = ½||A\vec{B} × A\vec{C}||
 > ```
 > 
 > **Método 2 - Fórmula directa:**
 > 
 > ```
-> Área = ½√[(AB⃗ × AC⃗) · (AB⃗ × AC⃗)]
+> Área = ½√[(A\vec{B} × A\vec{C}) · (A\vec{B} × A\vec{C})]
 > ```
 > 
 > **Interpretación:**
 > 
-> - AB⃗ × AC⃗ es perpendicular al plano del triángulo
-> - ||AB⃗ × AC⃗|| es el área del paralelogramo
+> - A\vec{B} × A\vec{C} es perpendicular al plano del triángulo
+> - ||A\vec{B} × A\vec{C}|| es el área del paralelogramo
 > - El triángulo es la mitad del paralelogramo
 > 
 > **Ejemplo:**
@@ -370,10 +374,10 @@
 > B = (0, 1, 0)
 > C = (0, 0, 1)
 > 
-> AB⃗ = (0, 1, 0) - (1, 0, 0) = (-1, 1, 0)
-> AC⃗ = (0, 0, 1) - (1, 0, 0) = (-1, 0, 1)
+> A\vec{B} = (0, 1, 0) - (1, 0, 0) = (-1, 1, 0)
+> A\vec{C} = (0, 0, 1) - (1, 0, 0) = (-1, 0, 1)
 > 
-> AB⃗ × AC⃗ = |i   j   k |
+> A\vec{B} × A\vec{C} = |i   j   k |
 >            |-1  1   0 |
 >            |-1  0   1 |
 > 
@@ -381,14 +385,14 @@
 >          = i(1) - j(-1) + k(1)
 >          = (1, 1, 1)
 > 
-> ||AB⃗ × AC⃗|| = √(1² + 1² + 1²) = √3
+> ||A\vec{B} × A\vec{C}|| = √(1² + 1² + 1²) = √3
 > 
 > Área = ½√3 ≈ 0.866 unidades²
 > ```
 
 ### ▱ Área de Paralelogramos
 
-> [!info]- 📐 Paralelogramo Formado por Vectores **Dados dos vectores u y v:**
+> [!info] 📐 Paralelogramo Formado por Vectores **Dados dos vectores u y v:**
 > 
 > **Área del paralelogramo:**
 > 
@@ -433,15 +437,15 @@
 > Si tenemos un paralelogramo ABCD:
 > 
 > ```
-> AB⃗ = B - A
-> AD⃗ = D - A
+> A\vec{B} = B - A
+> A\vec{D} = D - A
 > 
-> Área = ||AB⃗ × AD⃗||
+> Área = ||A\vec{B} × A\vec{D}||
 > ```
 
 ### 🔷 Área de Polígonos Generales
 
-> [!tip]- 🔢 Polígonos en el Espacio **Para un polígono con vértices P₁, P₂, ..., Pₙ:**
+> [!tip] 🔢 Polígonos en el Espacio **Para un polígono con vértices P₁, P₂, ..., Pₙ:**
 > 
 > **Método de triangulación:**
 > 
@@ -461,15 +465,15 @@
 > Puntos: A = (0,0,0), B = (1,0,0), C = (1,1,0), D = (0,1,0)
 > 
 > Triángulo 1: ABC
-> AB⃗ = (1, 0, 0)
-> AC⃗ = (1, 1, 0)
-> AB⃗ × AC⃗ = (0, 0, 1)
+> A\vec{B} = (1, 0, 0)
+> A\vec{C} = (1, 1, 0)
+> A\vec{B} × A\vec{C} = (0, 0, 1)
 > Á₁ = ½||(0, 0, 1)|| = ½
 > 
 > Triángulo 2: ACD
-> AC⃗ = (1, 1, 0)
-> AD⃗ = (0, 1, 0)
-> AC⃗ × AD⃗ = (0, 0, 1)
+> A\vec{C} = (1, 1, 0)
+> A\vec{D} = (0, 1, 0)
+> A\vec{C} × A\vec{D} = (0, 0, 1)
 > Á₂ = ½||(0, 0, 1)|| = ½
 > 
 > Área total = ½ + ½ = 1 unidad²
@@ -479,26 +483,26 @@
 
 ### 🔄 Momento de una Fuerza (Torque)
 
-> [!warning]- 🔧 Torque Vectorial **Definición:**
+> [!warning] 🔧 Torque Vectorial **Definición:**
 > 
-> El momento τ⃗ (torque) de una fuerza F⃗ aplicada en un punto, respecto a un punto de referencia O, es:
+> El momento τ⃗ (torque) de una fuerza \vec{F} aplicada en un punto, respecto a un punto de referencia O, es:
 > 
-> **τ⃗ = r⃗ × F⃗**
+> **τ⃗ = \vec{r} × \vec{F}**
 > 
 > Donde:
 > 
-> - **r⃗** = vector posición desde O hasta el punto de aplicación de F⃗
-> - **F⃗** = vector fuerza
-> - **τ⃗** = vector momento (perpendicular al plano r⃗-F⃗)
+> - **\vec{r}** = vector posición desde O hasta el punto de aplicación de \vec{F}
+> - **\vec{F}** = vector fuerza
+> - **τ⃗** = vector momento (perpendicular al plano \vec{r}-\vec{F})
 > 
 > **Magnitud:**
 > 
 > ```
-> ||τ⃗|| = ||r⃗|| · ||F⃗|| · sen(θ)
->       = d · ||F⃗||
+> ||τ⃗|| = ||\vec{r}|| · ||\vec{F}|| · sen(θ)
+>       = d · ||\vec{F}||
 > ```
 > 
-> Donde d es la distancia perpendicular de O a la línea de acción de F⃗.
+> Donde d es la distancia perpendicular de O a la línea de acción de \vec{F}.
 > 
 > **Unidades:** N·m (newton-metro)
 > 
@@ -512,13 +516,13 @@
 > 
 > ```
 > Una llave de 0.3 m se usa para apretar un tornillo.
-> Se aplica una fuerza F⃗ = (0, 50, 0) N al extremo.
+> Se aplica una fuerza \vec{F} = (0, 50, 0) N al extremo.
 > El tornillo está en el origen.
 > 
-> r⃗ = (0.3, 0, 0) m
-> F⃗ = (0, 50, 0) N
+> \vec{r} = (0.3, 0, 0) m
+> \vec{F} = (0, 50, 0) N
 > 
-> τ⃗ = r⃗ × F⃗ = |i    j    k  |
+> τ⃗ = \vec{r} × \vec{F} = |i    j    k  |
 >                |0.3  0    0  |
 >                |0    50   0  |
 > 
@@ -531,48 +535,48 @@
 
 ### 🧲 Fuerza Magnética
 
-> [!info]- ⚡ Fuerza de Lorentz **La fuerza sobre una carga en movimiento en un campo magnético:**
-> **F⃗ = q(v⃗ × B⃗)**
+> [!info] ⚡ Fuerza de Lorentz **La fuerza sobre una carga en movimiento en un campo magnético:**
+> **\vec{F} = q(\vec{v} × \vec{B})**
 > 
 > Donde:
 > 
 > - **q** = carga eléctrica (coulombs)
-> - **v⃗** = velocidad de la partícula (m/s)
-> - **B⃗** = campo magnético (teslas, T)
-> - **F⃗** = fuerza magnética (newtons, N)
+> - **\vec{v}** = velocidad de la partícula (m/s)
+> - **\vec{B}** = campo magnético (teslas, T)
+> - **\vec{F}** = fuerza magnética (newtons, N)
 > 
 > **Propiedades:**
 > 
-> 1. F⃗ ⊥ v⃗ (perpendicular a la velocidad)
-> 2. F⃗ ⊥ B⃗ (perpendicular al campo)
-> 3. F⃗ no realiza trabajo (W = F⃗ · d⃗ = 0)
+> 1. \vec{F} ⊥ \vec{v} (perpendicular a la velocidad)
+> 2. \vec{F} ⊥ \vec{B} (perpendicular al campo)
+> 3. \vec{F} no realiza trabajo (W = \vec{F} · \vec{d} = 0)
 > 4. Cambia dirección pero no rapidez
 > 
 > **Magnitud:**
 > 
 > ```
-> ||F⃗|| = |q| · ||v⃗|| · ||B⃗|| · sen(θ)
+> ||\vec{F}|| = |q| · ||\vec{v}|| · ||\vec{B}|| · sen(θ)
 > ```
 > 
 > **Ejemplo:**
 > 
 > ```
 > Un electrón (q = -1.6 × 10⁻¹⁹ C) se mueve con:
-> v⃗ = (2×10⁶, 0, 0) m/s
+> \vec{v} = (2×10⁶, 0, 0) m/s
 > 
 > En un campo magnético:
-> B⃗ = (0, 0, 0.5) T
+> \vec{B} = (0, 0, 0.5) T
 > 
-> F⃗ = q(v⃗ × B⃗)
+> \vec{F} = q(\vec{v} × \vec{B})
 > 
-> v⃗ × B⃗ = |i         j    k  |
+> \vec{v} × \vec{B} = |i         j    k  |
 >          |2×10⁶     0    0  |
 >          |0         0    0.5|
 > 
 >        = i(0·0.5 - 0·0) - j(2×10⁶·0.5 - 0·0) + k(2×10⁶·0 - 0·0)
 >        = (0, -10⁶, 0) T·m/s
 > 
-> F⃗ = (-1.6×10⁻¹⁹)(0, -10⁶, 0)
+> \vec{F} = (-1.6×10⁻¹⁹)(0, -10⁶, 0)
 >   = (0, 1.6×10⁻¹³, 0) N
 > 
 > La fuerza apunta en dirección +Y
@@ -580,41 +584,41 @@
 
 ### 🌊 Momento Angular
 
-> [!success]- 🔄 Cantidad de Movimiento Angular **Definición:**
+> [!success] 🔄 Cantidad de Movimiento Angular **Definición:**
 > 
-> El momento angular L⃗ de una partícula respecto a un punto O es:
+> El momento angular \vec{L} de una partícula respecto a un punto O es:
 > 
-> **L⃗ = r⃗ × p⃗ = r⃗ × (mv⃗)**
+> **\vec{L} = \vec{r} × \vec{p} = \vec{r} × (m\vec{v})**
 > 
 > Donde:
 > 
-> - **r⃗** = vector posición desde O
-> - **p⃗** = momento lineal = mv⃗
+> - **\vec{r}** = vector posición desde O
+> - **\vec{p}** = momento lineal = m\vec{v}
 > - **m** = masa
-> - **v⃗** = velocidad
+> - **\vec{v}** = velocidad
 > 
 > **Conservación:**
 > 
 > Si τ⃗ₑₓₜ = 0 (no hay torques externos):
 > 
 > ```
-> L⃗ = constante
+> \vec{L} = constante
 > ```
 > 
 > **Relación con torque:**
 > 
 > ```
-> τ⃗ = dL⃗/dt
+> τ⃗ = d\vec{L}/dt
 > ```
 > 
 > **Ejemplo:**
 > 
 > ```
 > Una partícula de masa m = 2 kg en:
-> r⃗ = (3, 0, 0) m
-> v⃗ = (0, 4, 0) m/s
+> \vec{r} = (3, 0, 0) m
+> \vec{v} = (0, 4, 0) m/s
 > 
-> L⃗ = r⃗ × (mv⃗)
+> \vec{L} = \vec{r} × (m\vec{v})
 >   = (3, 0, 0) × (2·(0, 4, 0))
 >   = (3, 0, 0) × (0, 8, 0)
 > 
@@ -631,7 +635,7 @@
 
 ### 📦 Volumen de Paralelepípedos
 
-> [!note]- 🎲 Triple Producto Escalar **Definición:**
+> [!note] 🎲 Triple Producto Escalar **Definición:**
 > 
 > El producto triple escalar de tres vectores u, v, w es:
 > 
@@ -700,15 +704,15 @@
 
 ### 🔺 Volumen de Tetraedros
 
-> [!example]- 📐 Pirámide Triangular **Dado un tetraedro con vértices A, B, C, D:**
+> [!example] 📐 Pirámide Triangular **Dado un tetraedro con vértices A, B, C, D:**
 > 
-> **Volumen = (1/6)|AB⃗ · (AC⃗ × AD⃗)|**
+> **Volumen = (1/6)|A\vec{B} · (A\vec{C} × A\vec{D})|**
 > 
 > **Proceso:**
 > 
-> 1. Calcular vectores desde A: AB⃗, AC⃗, AD⃗
-> 2. Calcular AC⃗ × AD⃗
-> 3. Calcular AB⃗ · (AC⃗ × AD⃗)
+> 1. Calcular vectores desde A: A\vec{B}, A\vec{C}, A\vec{D}
+> 2. Calcular A\vec{C} × A\vec{D}
+> 3. Calcular A\vec{B} · (A\vec{C} × A\vec{D})
 > 4. Tomar valor absoluto y dividir entre 6
 > 
 > **Ejemplo:**
@@ -719,17 +723,17 @@
 > C = (0, 1, 0)
 > D = (0, 0, 1)
 > 
-> AB⃗ = (1, 0, 0)
-> AC⃗ = (0, 1, 0)
-> AD⃗ = (0, 0, 1)
+> A\vec{B} = (1, 0, 0)
+> A\vec{C} = (0, 1, 0)
+> A\vec{D} = (0, 0, 1)
 > 
-> AC⃗ × AD⃗ = |i  j  k|
+> A\vec{C} × A\vec{D} = |i  j  k|
 >            |0  1  0|
 >            |0  0  1|
 > 
 >          = (1, 0, 0)
 > 
-> AB⃗ · (AC⃗ × AD⃗) = (1, 0, 0) · (1, 0, 0) = 1
+> A\vec{B} · (A\vec{C} × A\vec{D}) = (1, 0, 0) · (1, 0, 0) = 1
 > 
 > Volumen = (1/6)|1| = 1/6 unidades³
 > ```
@@ -738,20 +742,20 @@
 
 ### 📐 Vector Normal a un Plano
 
-> [!tip]- ⊥ Perpendicular al Plano **Dados dos vectores u y v en un plano:**
+> [!tip] ⊥ Perpendicular al Plano **Dados dos vectores u y v en un plano:**
 > 
-> **Un vector perpendicular al plano es:** **n⃗ = u × v**
+> **Un vector perpendicular al plano es:** **\vec{n} = u × v**
 > 
 > **Propiedades:**
 > 
-> - n⃗ ⊥ u
-> - n⃗ ⊥ v
-> - n⃗ ⊥ (cualquier combinación lineal de u y v)
+> - \vec{n} ⊥ u
+> - \vec{n} ⊥ v
+> - \vec{n} ⊥ (cualquier combinación lineal de u y v)
 > 
 > **Vector unitario normal:**
 > 
 > ```
-> n̂ = (u × v) / ||u × v||
+> \hat{n} = (u × v) / ||u × v||
 > ```
 > 
 > **Aplicación - Ecuación del plano:**
@@ -759,9 +763,9 @@
 > Si el plano pasa por punto P₀ y tiene vectores directores u y v:
 > 
 > ```
-> n⃗ = u × v
+> \vec{n} = u × v
 > 
-> Ecuación: n⃗ · (P - P₀) = 0
+> Ecuación: \vec{n} · (P - P₀) = 0
 > ```
 > 
 > **Ejemplo:**
@@ -773,11 +777,11 @@
 > C = (0, 0, 1)
 > 
 > Vectores en el plano:
-> AB⃗ = (-1, 1, 0)
-> AC⃗ = (-1, 0, 1)
+> A\vec{B} = (-1, 1, 0)
+> A\vec{C} = (-1, 0, 1)
 > 
 > Normal:
-> n⃗ = AB⃗ × AC⃗ = |i   j   k |
+> \vec{n} = A\vec{B} × A\vec{C} = |i   j   k |
 >                 |-1  1   0 |
 >                 |-1  0   1 |
 > 
@@ -793,45 +797,45 @@
 
 ### 📏 Distancia de Punto a Recta
 
-> [!success]- 📐 Distancia Perpendicular **Dados:**
+> [!success] 📐 Distancia Perpendicular **Dados:**
 > 
 > - Punto P
-> - Recta que pasa por Q con dirección v⃗
+> - Recta que pasa por Q con dirección \vec{v}
 > 
 > **Distancia de P a la recta:**
 > 
-> **d = ||QP⃗ × v⃗|| / ||v⃗||**
+> **d = ||Q\vec{P} × \vec{v}|| / ||\vec{v}||**
 > 
 > **Justificación:**
 > 
-> - QP⃗ × v⃗ tiene magnitud igual al área del paralelogramo
-> - Área = base × altura = ||v⃗|| × d
-> - Entonces: ||QP⃗ × v⃗|| = ||v⃗|| × d
+> - Q\vec{P} × \vec{v} tiene magnitud igual al área del paralelogramo
+> - Área = base × altura = ||\vec{v}|| × d
+> - Entonces: ||Q\vec{P} × \vec{v}|| = ||\vec{v}|| × d
 > 
 > **Ejemplo:**
 > 
 > ```
 > Punto P = (2, 1, 3)
-> Recta por Q = (0, 0, 0) con dirección v⃗ = (1, 0, 0)
+> Recta por Q = (0, 0, 0) con dirección \vec{v} = (1, 0, 0)
 > 
-> QP⃗ = (2, 1, 3)
+> Q\vec{P} = (2, 1, 3)
 > 
-> QP⃗ × v⃗ = |i  j  k|
+> Q\vec{P} × \vec{v} = |i  j  k|
 >           |2  1  3|
 >           |1  0  0|
 > 
 >         = i(1·0 - 3·0) - j(2·0 - 3·1) + k(2·0 - 1·1)
 >         = (0, 3, -1)
 > 
-> ||QP⃗ × v⃗|| = √(0² + 3² + (-1)²) = √10
-> ||v⃗|| = 1
+> ||Q\vec{P} × \vec{v}|| = √(0² + 3² + (-1)²) = √10
+> ||\vec{v}|| = 1
 > 
 > d = √10 / 1 = √10 ≈ 3.16 unidades
 > ```
 
 ## 🔄 Identidades Vectoriales
 
-> [!note]- 🧮 Fórmulas Importantes **1. Producto vectorial triple (BAC-CAB):**
+> [!note] 🧮 Fórmulas Importantes **1. Producto vectorial triple (BAC-CAB):**
 > 
 > ```
 > u × (v × w) = v(u · w) - w(u · v)
@@ -866,7 +870,7 @@
 
 ## 🧪 Ejercicios Integrales
 
-> [!example]- 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
+> [!example] 💪 Práctica Completa **Nivel 1 - Básico:** 🟢
 > 
 > 1. Calcular el producto cruz: a) u = (1, 2, 3) × v = (4, 5, 6) b) i × j c) k × i
 > 
@@ -924,10 +928,10 @@
 > **Solución:**
 > 
 > ```
-> AB⃗ = (-1, 2, 0)
-> AC⃗ = (-1, 0, 3)
+> A\vec{B} = (-1, 2, 0)
+> A\vec{C} = (-1, 0, 3)
 > 
-> AB⃗ × AC⃗ = |i   j   k |
+> A\vec{B} × A\vec{C} = |i   j   k |
 >            |-1  2   0 |
 >            |-1  0   3 |
 > 
@@ -935,7 +939,7 @@
 >          = i(6) - j(-3) + k(2)
 >          = (6, 3, 2)
 > 
-> ||AB⃗ × AC⃗|| = √(36 + 9 + 4) = √49 = 7
+> ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
 > 
 > Área = ½·7 = 3.5 unidades²
 > ```
@@ -945,16 +949,16 @@
 > **Solución:**
 > 
 > ```
-> n⃗ = u × v = |i  j  k|
+> \vec{n} = u × v = |i  j  k|
 >             |1  1  0|
 >             |0  1  1|
 > 
 >           = i(1·1 - 0·1) - j(1·1 - 0·0) + k(1·1 - 1·0)
 >           = (1, -1, 1)
 > 
-> ||n⃗|| = √(1 + 1 + 1) = √3
+> ||\vec{n}|| = √(1 + 1 + 1) = √3
 > 
-> n̂ = n⃗/||n⃗|| = (1/√3, -1/√3, 1/√3)
+> \hat{n} = \vec{n}/||\vec{n}|| = (1/√3, -1/√3, 1/√3)
 >              ≈ (0.577, -0.577, 0.577)
 > ```
 > 
@@ -967,17 +971,17 @@
 > **Solución:**
 > 
 > ```
-> AB⃗ = (2, 0, 0)
-> AC⃗ = (0, 3, 0)
-> AD⃗ = (0, 0, 4)
+> A\vec{B} = (2, 0, 0)
+> A\vec{C} = (0, 3, 0)
+> A\vec{D} = (0, 0, 4)
 > 
-> AC⃗ × AD⃗ = |i  j  k|
+> A\vec{C} × A\vec{D} = |i  j  k|
 >            |0  3  0|
 >            |0  0  4|
 > 
 >          = (12, 0, 0)
 > 
-> AB⃗ · (AC⃗ × AD⃗) = (2, 0, 0) · (12, 0, 0) = 24
+> A\vec{B} · (A\vec{C} × A\vec{D}) = (2, 0, 0) · (12, 0, 0) = 24
 > 
 > Volumen = (1/6)|24| = 4 unidades³
 > ```
@@ -990,7 +994,7 @@
 > **Solución:**
 > 
 > ```
-> a) τ⃗ = r⃗ × F⃗
+> a) τ⃗ = \vec{r} × \vec{F}
 > 
 >    τ⃗ = |i    j    k  |
 >        |0.4  0    0  |
@@ -1012,7 +1016,7 @@
 
 ## 💡 Consejos y Errores Comunes
 
-> [!tip]- 🧠 Estrategias de Aprendizaje **Para dominar el producto cruz:**
+> [!tip] 🧠 Estrategias de Aprendizaje **Para dominar el producto cruz:**
 > 
 > **1. Memorizar la fórmula del determinante:**
 > 
@@ -1077,24 +1081,24 @@
 
 ## 📊 Tabla Resumen
 
-> [!example]- 📋 Compendio Completo
+> [!example] 📋 Compendio Completo
 > 
 > |Concepto|Fórmula|Resultado|Aplicación|
 > |---|---|---|---|
 > |**Producto cruz**|u × v|Vector ⊥ a u y v|Perpendicular|
 > |**Determinante**|\|i j k; u₁ u₂ u₃; v₁ v₂ v₃\||(u₂v₃-u₃v₂, u₃v₁-u₁v₃, u₁v₂-u₂v₁)|Cálculo|
 > |**Magnitud**|\|u × v\| = \|u\|v\|sen(θ)|Escalar ≥ 0|Área paralelogramo|
-> |**Área triángulo**|½\|AB⃗ × AC⃗\||Escalar|Geometría|
-> |**Torque**|τ⃗ = r⃗ × F⃗|Vector|Mecánica|
-> |**Fuerza magnética**|F⃗ = q(v⃗ × B⃗)|Vector|Electromagnetismo|
+> |**Área triángulo**|½\|A\vec{B} × A\vec{C}\||Escalar|Geometría|
+> |**Torque**|τ⃗ = \vec{r} × \vec{F}|Vector|Mecánica|
+> |**Fuerza magnética**|\vec{F} = q(\vec{v} × \vec{B})|Vector|Electromagnetismo|
 > |**Triple escalar**|u · (v × w)|Escalar|Volumen paralelepípedo|
-> |**Volumen tetraedro**|(1/6)\|AB⃗ · (AC⃗ × AD⃗)\||Escalar|Geometría 3D|
+> |**Volumen tetraedro**|(1/6)\|A\vec{B} · (A\vec{C} × A\vec{D})\||Escalar|Geometría 3D|
 > |**Vectores paralelos**|u × v = 0|Vector cero|Colinealidad|
 > |**Anticonmutativa**|u × v = -(v × u)|Propiedad|Álgebra|
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌟 Enlaces Conceptuales **Prerequisites:**
+> [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
 > 
 > - [[02 - Vectores en R3]] - Base fundamental
 > - [[01 - Producto Punto y Ángulos]] - Operación complementaria

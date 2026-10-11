@@ -10,7 +10,7 @@
 > - **🔬 Método Revolucionario**: Primer estudio científico de la memoria
 > - **📊 Autoexperimentación**: Usó sílabas sin sentido para evitar asociaciones previas
 > - **🎯 Descubrimiento**: La pérdida de memoria sigue un patrón matemático predecible
-
+>
 > [!quote] 📖 **Experimento Original** Ebbinghaus memorizó listas de sílabas sin sentido (como "DAX", "BEK", "LUF") y midió cuánto tiempo le tomaba reaprender las listas después de diferentes intervalos de tiempo.
 
 ## 📊 La Fórmula Matemática
@@ -156,7 +156,7 @@ graph TD
 > - **5to repaso**: 2 semanas después
 > - **6to repaso**: 1 mes después
 > - **7mo repaso**: 3 meses después
-
+>
 > [!tip] 💡 **Principio de Expansión** Cada repaso exitoso permite expandir el intervalo antes del siguiente repaso, creando una curva de retención ascendente en lugar de descendente.
 
 ### 🧩 Técnicas de Consolidación

@@ -1,7 +1,7 @@
 # Comprensión Lectora - Niveles y Estrategias
 
 > [!quote] "Leer sin reflexionar es como comer sin digerir." - Edmund Burke
-
+>
 > [!abstract]- ## 📖 Definición y Concepto Central La **Comprensión Lectora** es la capacidad de interpretar, analizar y extraer significado de textos escritos, integrando conocimientos previos con nueva información para construir una representación mental coherente del contenido.
 > 
 > ### 🧠 Componentes Cognitivos Esenciales
@@ -11,7 +11,7 @@
 > - **Conocimiento previo**: Base conceptual para interpretar nueva información
 > - **Metacognición**: Monitoreo y control del proceso de comprensión
 > - **Memoria de trabajo**: Integración temporal de información textual
-
+>
 > [!ladder]- ## 🏗️ Niveles de Comprensión Lectora
 > 
 > ```mermaid
@@ -52,7 +52,7 @@
 > |**🧩 Inferencial**|Interpretar, deducir, conectar|¿Por qué sucedió? ¿Qué significa?|Entender motivaciones no explícitas|
 > |**⚖️ Crítico**|Evaluar, juzgar, analizar|¿Es válido? ¿Qué opinas?|Evaluar credibilidad de argumentos|
 > |**🎨 Creativo**|Crear, aplicar, transferir|¿Cómo aplicarías esto? ¿Qué harías?|Proponer soluciones basadas en el texto|
-
+>
 > [!gear]- ## ⚙️ Estrategias Pre-Lectura
 > 
 > ### 🎯 Activación del Conocimiento Previo
@@ -79,7 +79,7 @@
 >    style E fill:#fce4ec
 >    style F fill:#f1f8e9
 > ```
-
+>
 > [!book]- ## 📚 Estrategias Durante la Lectura
 > 
 > ### 🎪 Técnicas de Lectura Activa
@@ -99,7 +99,7 @@
 > |Información contradictoria|Marcar conflicto → Buscar clarificación|
 > |Atención dispersa|Pausa → Resumen mental → Continuar|
 > |Velocidad inadecuada|Ajustar ritmo según complejidad|
-
+>
 > [!target]- ## 🎯 Estrategias Post-Lectura
 > 
 > ### 🔄 Consolidación del Aprendizaje
@@ -121,7 +121,7 @@
 >    "Evalúa críticamente el contenido" : 12
 >    "Aplica lo aprendido" : 8
 > ```
-
+>
 > [!warning]- ## ⚠️ Obstáculos Comunes y Soluciones
 > 
 > ### 🚧 Barreras Frecuentes
@@ -141,7 +141,7 @@
 > |Velocidad|Ajuste consciente|Técnica de lectura escalonada|
 > |Falta de objetivos|Planificación previa|Establecimiento de propósitos SMART|
 > |Distracciones|Control ambiental|Técnica Pomodoro para lectura|
-
+>
 > [!lightbulb]- ## 💡 Técnica de Estudio Específica: Método PQRST
 > 
 > ### 🔄 Secuencia PQRST
@@ -159,7 +159,7 @@
 > - **Fichas de análisis textual**: Plantillas para diferentes tipos de texto
 > - **Apps de vocabulario**: Herramientas digitales para ampliar léxico
 > - **Grupos de lectura**: Discusión colaborativa de textos
-
+>
 > [!brain]- ## 🧠 Adaptaciones por Tipo de Texto
 > 
 > ### 📚 Textos Académicos
@@ -185,7 +185,7 @@
 > - **Estructura**: Secuencial y procedimental
 > - **Estrategia**: Lectura paso a paso con verificación práctica
 > - **Enfoque**: Comprensión de procesos y aplicación correcta
-
+>
 > [!books]- ## 📚 Referencias y Profundización
 > 
 > [!quote]- ### Referencias Académicas

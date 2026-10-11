@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🌱 Impacto Ambiental, Desechos Electrónicos y Desarrollo Sostenible
 
 ## 🎯 Introducción
 
-> [!info]- 💡 La huella ecológica de la tecnología
+> [!info] 💡 La huella ecológica de la tecnología
 > 
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
@@ -14,7 +18,6 @@
 >     B --> B1["Extracción de minerales<br>Emisiones de CO2<br>Agua utilizada"]
 >     C --> C1["Consumo eléctrico<br>Calor generado<br>Actualizaciones forzadas"]
 >     D --> D1["E-waste<br>Metales tóxicos<br>Exportación de residuos"]
-> 
 >     style A fill:#e1f5ff
 >     style B fill:#ffe1e1
 >     style C fill:#fff4e1
@@ -25,7 +28,7 @@
 
 ## 🗑️ Chatarra Electrónica — E-waste
 
-> [!warning]- 📊 Estadísticas alarmantes
+> [!warning] 📊 Estadísticas alarmantes
 > 
 > Los **desechos electrónicos** (_e-waste_) son la corriente de residuos de más rápido crecimiento a nivel mundial. Incluyen todo dispositivo eléctrico o electrónico descartado: teléfonos, computadoras, televisores, electrodomésticos, baterías.
 > 
@@ -37,8 +40,8 @@
 > |**Valor económico de los materiales**|Estimado en $57 mil millones USD anuales desperdiciados|
 > 
 > > ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
-
-> [!note]- 📱 Composición de un teléfono móvil descartado
+>
+> [!note] 📱 Composición de un teléfono móvil descartado
 > 
 > Un teléfono promedio contiene materiales tanto valiosos como peligrosos:
 > 
@@ -51,8 +54,8 @@
 > |**No especificado / compuestos**|~10%|Mezcla de adhesivos, soldaduras y materiales difíciles de separar|
 > 
 > > 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
-
-> [!danger]- ☠️ Componentes peligrosos
+>
+> [!danger] ☠️ Componentes peligrosos
 > 
 > Muchos dispositivos electrónicos contienen **metales pesados y sustancias tóxicas** que, al ser descartados de forma inadecuada, contaminan suelo, agua y aire:
 > 
@@ -63,8 +66,8 @@
 > |**Cadmio (Cd)**|Baterías recargables, circuitos|Daño renal, carcinógeno|
 > |**Cromo hexavalente**|Recubrimientos metálicos|Carcinógeno, daño al ADN|
 > |**Retardantes de llama bromados**|Carcasas plásticas, placas|Disruptores endocrinos, tóxicos al incinerar|
-
-> [!warning]- 🚢 El flujo global de e-waste
+>
+> [!warning] 🚢 El flujo global de e-waste
 > 
 > Una fracción importante de los desechos electrónicos generados en países desarrollados es **exportada hacia Asia y América Latina**, muchas veces de forma ilegal o bajo etiquetas engañosas como "donaciones" o "equipos usados".
 > 
@@ -76,7 +79,6 @@
 >     C --> D
 >     D --> E["Exposición tóxica<br>en trabajadores"]
 >     D --> F["Contaminación de<br>suelo y agua"]
-> 
 >     style A fill:#e1f5ff
 >     style D fill:#ffe1e1
 >     style E fill:#ffe1e1
@@ -89,7 +91,7 @@
 
 ## ♻️ Green ICT — Tecnología Verde
 
-> [!note]- 🌿 ¿Qué es Green ICT?
+> [!note] 🌿 ¿Qué es Green ICT?
 > 
 > **Green ICT** (Tecnologías de la Información y Comunicación Verdes) es el enfoque que busca minimizar el impacto ambiental de la tecnología a lo largo de todo su ciclo de vida — desde el diseño hasta el descarte.
 > 
@@ -100,8 +102,8 @@
 > |**Videoconferencias en lugar de viajes**|Reducir emisiones de CO2 asociadas a viajes de negocios mediante reuniones virtuales|
 > |**Reparación en lugar de sustitución**|Extender la vida útil de los dispositivos — repararlos en vez de descartarlos al primer fallo|
 > |**Diseño para el desmontaje**|Fabricar equipos que puedan desarmarse fácilmente para recuperar materiales al final de su vida|
-
-> [!important]- 🔄 Economía Circular aplicada a la tecnología
+>
+> [!important] 🔄 Economía Circular aplicada a la tecnología
 > 
 > El modelo tradicional es **lineal**: extraer → fabricar → usar → descartar. La **Economía Circular** propone cerrar ese ciclo:
 > 
@@ -114,7 +116,6 @@
 >     C --> E["Reciclaje<br>de materiales"]
 >     E --> A
 >     C -->|"modelo lineal"| F["🗑️ Vertedero"]
-> 
 >     style A fill:#e1ffe1
 >     style B fill:#e1ffe1
 >     style C fill:#e1f5ff
@@ -131,8 +132,8 @@
 > |**Reutilizar**|Donar equipos funcionales, mercado de segunda mano|
 > |**Reparar**|Talleres de reparación, derecho a reparar (_Right to Repair_)|
 > |**Reciclar**|Entregar en puntos de acopio certificados para recuperar materiales|
-
-> [!tip]- 🇪🇨 Iniciativas en Ecuador
+>
+> [!tip] 🇪🇨 Iniciativas en Ecuador
 > 
 > Ecuador cuenta con programas concretos para la gestión de e-waste:
 > 
@@ -149,7 +150,7 @@
 
 ## 🌍 Desarrollo Sostenible
 
-> [!important]- 📖 Definición y origen
+> [!important] 📖 Definición y origen
 > 
 > El **Desarrollo Sostenible** fue definido por la Comisión Brundtland de la ONU en 1987 como:
 > 
@@ -168,14 +169,13 @@
 >     EC --> EC1["Proteger ecosistemas<br>Reducir emisiones<br>Gestionar residuos"]
 >     SO --> SO1["Equidad<br>Salud<br>Educación"]
 >     EC2 --> EC3["Crecimiento<br>Empleo<br>Innovación"]
-> 
 >     style DS fill:#e1f5ff
 >     style EC fill:#e1ffe1
 >     style SO fill:#fff4e1
 >     style EC2 fill:#f5e1ff
 > ```
-
-> [!note]- 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030
+>
+> [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030
 > 
 > En 2015, la ONU aprobó la **Agenda 2030** con 17 ODS como hoja de ruta global para erradicar la pobreza, proteger el planeta y garantizar prosperidad para todos.
 > 
@@ -200,7 +200,7 @@
 
 ## 📋 Trabajos Grupales
 
-> [!tip]- 👥 Pautas para las tareas grupales de la unidad
+> [!tip] 👥 Pautas para las tareas grupales de la unidad
 > 
 > Al finalizar esta unidad se deben realizar dos trabajos en grupo:
 > 

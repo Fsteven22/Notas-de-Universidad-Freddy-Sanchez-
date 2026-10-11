@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🧑‍💻 Pioneros de la Computación
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Quiénes construyeron los cimientos de la computación?
+> [!info] 💡 ¿Quiénes construyeron los cimientos de la computación?
 >
 > La historia de la computación no es solo la historia de las máquinas — es la historia de las personas que las imaginaron, diseñaron y construyeron. Cada pionero aportó una pieza fundamental al gran rompecabezas que hoy llamamos computación moderna.
 >
@@ -11,7 +15,6 @@
 >     A[Pioneros de la Computación] --> B[Matemáticos<br/>y teóricos]
 >     A --> C[Ingenieros<br/>y constructores]
 >     A --> D[Programadores<br/>y visionarios]
->
 >     style A fill:#f5e1ff
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -22,7 +25,7 @@
 
 ## ⚙️ Pioneros del Hardware y las Máquinas
 
-> [!note]- ⚙️ Los que construyeron las primeras máquinas
+> [!note] ⚙️ Los que construyeron las primeras máquinas
 >
 > ### Blaise Pascal (1623 – 1662)
 >
@@ -99,7 +102,7 @@
 
 ## 🧠 Pioneros de la Teoría y los Algoritmos
 
-> [!important]- 🧠 Los que definieron cómo debía pensar una máquina
+> [!important] 🧠 Los que definieron cómo debía pensar una máquina
 >
 > ### Ada Augusta Lovelace (1815 – 1852)
 >
@@ -140,7 +143,7 @@
 
 ## 🏛️ Pioneros de la Arquitectura y los Sistemas
 
-> [!important]- 🏛️ Los que definieron cómo debía construirse una computadora
+> [!important] 🏛️ Los que definieron cómo debía construirse una computadora
 >
 > ### John von Neumann (1903 – 1957)
 >
@@ -157,7 +160,6 @@
 >     Unidad de Control
 >     ALU · Registros"] <--> MEM[Memoria Principal<br/>Datos + Instrucciones]
 >     CPU <--> IO[Sistema E/S]
->
 >     style CPU fill:#e1f5ff
 >     style MEM fill:#e1ffe1
 >     style IO fill:#fff4e1
@@ -189,7 +191,7 @@
 
 ## 🌐 Pioneros de las Redes y la Web
 
-> [!note]- 🌐 Los que conectaron el mundo
+> [!note] 🌐 Los que conectaron el mundo
 >
 > ### Robert Metcalfe (1946 – presente)
 >
@@ -215,7 +217,7 @@
 
 ## 📅 Línea de Tiempo General
 
-> [!summary]- 📅 Todos los pioneros en perspectiva
+> [!summary] 📅 Todos los pioneros en perspectiva
 >
 > ```mermaid
 > timeline
@@ -239,7 +241,7 @@
 
 ## 📊 Resumen por contribución
 
-> [!summary]- 📊 ¿Quién aportó qué?
+> [!summary] 📊 ¿Quién aportó qué?
 >
 > | Pionero | Época | Contribución principal |
 > |---|---|---|
@@ -261,7 +263,7 @@
 
 ## 🧩 Preguntas de Autoevaluación
 
-> [!example]- ✏️ Sesión 2 — Quiz de repaso
+> [!example] ✏️ Sesión 2 — Quiz de repaso
 >
 > Preguntas de repaso de toda la Unidad 1, basadas en la sesión 2 del curso:
 >

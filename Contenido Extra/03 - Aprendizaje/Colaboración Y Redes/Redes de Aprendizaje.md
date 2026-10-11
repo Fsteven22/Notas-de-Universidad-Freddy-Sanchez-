@@ -1,7 +1,7 @@
 # Redes de Aprendizaje
 
 > [!quote] _"El conocimiento compartido es conocimiento multiplicado. Una red de aprendizaje transforma la sabiduría individual en inteligencia colectiva."_ – **George Siemens**
-
+>
 > [!info] **¿Qué son las Redes de Aprendizaje?** 🌐  
 > Las redes de aprendizaje son **ecosistemas colaborativos** donde individuos y organizaciones se conectan para compartir conocimiento, experiencias y recursos con el objetivo de generar aprendizaje mutuo y continuo.  
 > Se basan en la premisa de que el **aprendizaje es un proceso social** que se potencia a través de las conexiones y relaciones significativas.

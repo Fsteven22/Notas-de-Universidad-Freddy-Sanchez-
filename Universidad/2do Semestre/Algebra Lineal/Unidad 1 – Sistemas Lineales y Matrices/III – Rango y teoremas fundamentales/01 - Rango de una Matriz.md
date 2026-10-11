@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📏 Rango de una Matriz
 
 ## 🎯 Fundamentos del Rango
 
-> [!info]- 💡 Introducción al Concepto de Rango El **rango de una matriz** es un número que mide la "cantidad de información independiente" contenida en la matriz. Es uno de los conceptos más importantes del álgebra lineal, ya que determina completamente las propiedades del sistema de ecuaciones asociado y las características del espacio vectorial que representa.
+> [!info] 💡 Introducción al Concepto de Rango El **rango de una matriz** es un número que mide la "cantidad de información independiente" contenida en la matriz. Es uno de los conceptos más importantes del álgebra lineal, ya que determina completamente las propiedades del sistema de ecuaciones asociado y las características del espacio vectorial que representa.
 > 
 > **Analogías útiles:**
 > 
@@ -29,7 +33,7 @@
 
 ### 🔢 Definición Principal
 
-> [!note]- 📖 Definición Formal
+> [!note] 📖 Definición Formal
 > 
 > **Definición:** El **rango** de una matriz A (denotado rango(A) o rg(A)) es el número máximo de filas (o columnas) linealmente independientes de A.
 > 
@@ -52,7 +56,7 @@
 
 ### 🎨 Interpretaciones del Rango
 
-> [!tip]- 🌈 Diferentes Perspectivas del Mismo Concepto
+> [!tip] 🌈 Diferentes Perspectivas del Mismo Concepto
 > 
 > **1. Interpretación geométrica:**
 > 
@@ -92,7 +96,7 @@
 
 ### 📐 Método Principal: Forma Escalonada
 
-> [!success]- ✅ Algoritmo Estándar para Calcular el Rango
+> [!success] ✅ Algoritmo Estándar para Calcular el Rango
 > 
 > **Procedimiento:**
 > 
@@ -117,7 +121,7 @@
 
 ### ✅ Ejemplos de Cálculo del Rango
 
-> [!example]- 🎯 Ejemplo 1: Matriz 3×3 con Rango Completo
+> [!example] 🎯 Ejemplo 1: Matriz 3×3 con Rango Completo
 > 
 > **Matriz A:**
 > 
@@ -162,8 +166,8 @@
 > **Resultado:** rango(A) = 3
 > 
 > **Interpretación:** La matriz tiene rango completo (máximo posible para 3×3)
-
-> [!example]- 🎯 Ejemplo 2: Matriz 3×3 con Rango 2
+>
+> [!example] 🎯 Ejemplo 2: Matriz 3×3 con Rango 2
 > 
 > **Matriz B:**
 > 
@@ -212,8 +216,8 @@
 > - Solo 2 filas son linealmente independientes
 > - La segunda fila original es múltiplo de la primera (2×R₁)
 > - Los vectores fila generan un plano en ℝ³
-
-> [!example]- 🎯 Ejemplo 3: Matriz 3×4 Rectangular
+>
+> [!example] 🎯 Ejemplo 3: Matriz 3×4 Rectangular
 > 
 > **Matriz C:**
 > 
@@ -254,8 +258,8 @@
 > - De 3 filas, solo 2 son independientes
 > - La matriz tiene 4 columnas pero rango 2
 > - Hay redundancia en la información
-
-> [!example]- 🎯 Ejemplo 4: Matriz con Rango 1
+>
+> [!example] 🎯 Ejemplo 4: Matriz con Rango 1
 > 
 > **Matriz D:**
 > 
@@ -298,7 +302,7 @@
 
 ### 📊 Criterio de Compatibilidad de Sistemas
 
-> [!warning]- ⚡ Teorema Fundamental
+> [!warning] ⚡ Teorema Fundamental
 > 
 > **Teorema de Rouché-Frobenius:**
 > 
@@ -344,7 +348,7 @@
 
 ### 🎯 Aplicación del Teorema
 
-> [!example]- 💡 Ejemplos de Clasificación por Rango
+> [!example] 💡 Ejemplos de Clasificación por Rango
 > 
 > **Ejemplo 1: Sistema Incompatible**
 > 
@@ -425,7 +429,7 @@
 
 ### 🔢 Propiedades Fundamentales
 
-> [!note]- 📐 Teoremas y Propiedades Importantes
+> [!note] 📐 Teoremas y Propiedades Importantes
 > 
 > **Propiedad 1: Simetría fila-columna**
 > 
@@ -486,7 +490,7 @@
 
 ### 📈 Casos Especiales
 
-> [!tip]- 🌟 Situaciones Particulares
+> [!tip] 🌟 Situaciones Particulares
 > 
 > **Matrices con rango completo:**
 > 
@@ -535,7 +539,7 @@
 
 ## 🎨 Visualización Geométrica del Rango
 
-> [!success]- 🌈 Interpretación Visual
+> [!success] 🌈 Interpretación Visual
 > 
 > **En ℝ²:**
 > 
@@ -583,7 +587,7 @@
 
 ### 🔍 Método de Determinantes (Menores)
 
-> [!info]- 📊 Cálculo por Subdeterminantes
+> [!info] 📊 Cálculo por Subdeterminantes
 > 
 > **Definición de menor:** Un **menor de orden k** es el determinante de una submatriz k×k obtenida al seleccionar k filas y k columnas de A.
 > 
@@ -637,7 +641,7 @@
 
 ### 🔄 Método de Ortogonalización (Gram-Schmidt)
 
-> [!note]- 🎯 Mediante Vectores Ortogonales
+> [!note] 🎯 Mediante Vectores Ortogonales
 > 
 > **Idea:** Aplicar el proceso de Gram-Schmidt a las columnas (o filas) de A. El número de vectores no nulos obtenidos es el rango.
 > 
@@ -647,7 +651,7 @@
 
 ## 🎓 Ejercicios Progresivos
 
-> [!example]- 💪 Práctica del Cálculo de Rango
+> [!example] 💪 Práctica del Cálculo de Rango
 > 
 > **Nivel 1: Identificación visual** 🟢
 > 
@@ -765,7 +769,7 @@ graph TD
 
 ## 🔗 Relación Rango-Nulidad
 
-> [!info]- ⚖️ Teorema de la Dimensión
+> [!info] ⚖️ Teorema de la Dimensión
 > 
 > **Teorema Rango-Nulidad:**
 > 
@@ -810,7 +814,7 @@ graph TD
 
 ## 🌐 Aplicaciones Prácticas del Rango
 
-> [!success]- 🚀 Uso en Diversas Áreas
+> [!success] 🚀 Uso en Diversas Áreas
 > 
 > **1. Análisis de datos y estadística:**
 > 
@@ -877,7 +881,7 @@ graph TD
 
 ## 💡 Ejemplo Completo Integrador
 
-> [!example]- 🎯 Análisis Completo: Sistema 4×4
+> [!example] 🎯 Análisis Completo: Sistema 4×4
 > 
 > **Sistema de ecuaciones:**
 > 
@@ -999,7 +1003,7 @@ graph TD
 
 ## 📋 Tabla de Decisión Rápida
 
-> [!tip]- 🎯 Guía Rápida de Clasificación
+> [!tip] 🎯 Guía Rápida de Clasificación
 > 
 > |rango(A) vs rango([A\|B])|rango vs n|Tipo de Sistema|Soluciones|
 > |---|---|---|---|
@@ -1019,7 +1023,7 @@ graph TD
 
 ## ⚠️ Errores Comunes en el Cálculo del Rango
 
-> [!warning]- 🚫 Problemas Frecuentes y Soluciones
+> [!warning] 🚫 Problemas Frecuentes y Soluciones
 > 
 > **Error 1: Contar filas nulas como pivotes**
 > 
@@ -1095,7 +1099,7 @@ graph TD
 
 ## 🎯 Estrategias para Cálculos Eficientes
 
-> [!tip]- 💡 Técnicas de Optimización
+> [!tip] 💡 Técnicas de Optimización
 > 
 > **1. Detección temprana de dependencias:**
 > 
@@ -1145,7 +1149,7 @@ graph TD
 
 ## 🧮 Ejemplo con Parámetros
 
-> [!example]- 🔢 Rango Dependiente de un Parámetro
+> [!example] 🔢 Rango Dependiente de un Parámetro
 > 
 > **Problema:** Determinar para qué valores de _a_ el sistema es compatible.
 > 
@@ -1231,7 +1235,7 @@ graph TD
 
 ## 📊 Resumen Comparativo de Métodos
 
-> [!summary]- 🎯 Comparación de Técnicas de Cálculo
+> [!summary] 🎯 Comparación de Técnicas de Cálculo
 > 
 > |Método|Eficiencia|Dificultad|Uso recomendado|
 > |---|---|---|---|
@@ -1257,7 +1261,7 @@ graph TD
 
 ## 🔍 Relación con Otros Conceptos
 
-> [!note]- 🌐 Conexiones Conceptuales Profundas
+> [!note] 🌐 Conexiones Conceptuales Profundas
 > 
 > **1. Rango y Espacios Vectoriales:**
 > 
@@ -1301,7 +1305,7 @@ graph TD
 
 ## 📚 Teoremas Avanzados sobre el Rango
 
-> [!info]- 🎓 Resultados Importantes
+> [!info] 🎓 Resultados Importantes
 > 
 > **Teorema 1: Rango de una suma**
 > 
@@ -1344,7 +1348,7 @@ graph TD
 
 ## 💻 Implementación Computacional
 
-> [!success]- 🖥️ Código para Calcular el Rango
+> [!success] 🖥️ Código para Calcular el Rango
 > 
 > **Python (NumPy):**
 > 
@@ -1399,7 +1403,7 @@ graph TD
 
 ## 🎯 Consejos para Exámenes
 
-> [!tip]- 📝 Estrategias de Resolución
+> [!tip] 📝 Estrategias de Resolución
 > 
 > **Checklist para problemas de rango:**
 > 
@@ -1435,7 +1439,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌐 Enlaces Conceptuales
+> [!quote] 🌐 Enlaces Conceptuales
 > 
 > **Prerequisites (Prerrequisitos):**
 > 

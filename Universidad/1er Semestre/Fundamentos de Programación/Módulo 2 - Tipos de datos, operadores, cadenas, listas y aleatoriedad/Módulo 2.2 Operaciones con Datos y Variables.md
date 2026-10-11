@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Operaciones con Tipos de Datos en Python 🔄⚡
 
 > [!info] 📍 Contexto y Definición Las **operaciones** son el núcleo dinámico de la programación - transforman datos estáticos en información útil:

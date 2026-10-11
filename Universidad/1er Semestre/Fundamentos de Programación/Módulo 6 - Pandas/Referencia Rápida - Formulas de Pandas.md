@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 📊 Tabla de Fórmulas y Métodos de Pandas
 
 ## 🎯 Referencia Rápida - Módulo 6: Pandas 

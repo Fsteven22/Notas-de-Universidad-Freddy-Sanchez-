@@ -1,23 +1,24 @@
+---
+dg-publish: true
+---
+
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una relación?
+> [!info] 💡 ¿Qué es una relación?
 > 
-> Una **relación** es una generalización de las funciones: también es un subconjunto del producto cartesiano X × Y, pero **sin** la restricción de unicidad. Permite asociar un elemento de X con cero, uno o varios elementos de Y. Toda función es una relación, pero no toda relación es una función.
+> Una **relación** es una generalización de las funciones: también es un subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] X × Y, pero **sin** la restricción de unicidad. Permite asociar un elemento de X con cero, uno o varios elementos de Y. Toda función es una relación, pero no toda relación es una función.
 > 
 > ```mermaid
 > graph LR
 >     A["Relación R ⊆ X × Y"] --> B["Función f : X → Y"]
 >     B --> C["Restricción: unicidad"]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
 > ```
 
 ---
 
 ## 📋 Pares Ordenados y Producto Cartesiano
 
-> [!note]- 📋 Definición 2 — Par Ordenado y Producto Cartesiano
+> [!note] 📋 Definición 2 — Par Ordenado y Producto Cartesiano
 > 
 > Sean a, b dos elementos. El **par ordenado** (a, b) indica que a es el primer elemento y b el segundo. Por ello, (a, b) ≠ (b, a) salvo que a = b.
 > 
@@ -29,7 +30,7 @@
 > 
 > En general, X × Y ≠ Y × X.
 
-> [!example]- 📝 Ejemplo 11 — Producto cartesiano
+> [!example] 📝 Ejemplo 11 — Producto cartesiano
 > 
 > Sean X = {1, 2, 3} e Y = {a, b}:
 > 
@@ -39,7 +40,7 @@
 
 ## 📋 Definición Formal de Relación
 
-> [!note]- 📋 Definición 8 — Relación
+> [!note] 📋 Definición 8 — Relación
 > 
 > Sean X, Y dos conjuntos. Una **relación** R de X en Y es cualquier subconjunto R de X × Y.
 > 
@@ -49,7 +50,7 @@
 > 
 > Si X = Y, diremos que R es una **relación sobre X**.
 
-> [!example]- 📝 Ejemplo 10 — Relación vs. función
+> [!example] 📝 Ejemplo 10 — Relación vs. función
 > 
 > Sean X = {1, 3, 4}, Y = {0, 2, 5}. Entonces:
 > 
@@ -60,7 +61,7 @@
 
 ## 🔍 Dominio, Rango y Matriz
 
-> [!note]- 🔍 Definición 9 — Dominio y Rango de una Relación
+> [!note] 🔍 Definición 9 — Dominio y Rango de una Relación
 > 
 > Si R es una relación de X en Y:
 > 
@@ -68,7 +69,7 @@
 > 
 > $$\text{rang}(R) = {y \in Y : xRy \text{ para algún } x \in X}$$
 
-> [!example]- 📝 Ejemplo 11 — Dominio, rango y matriz
+> [!example] 📝 Ejemplo 11 — Dominio, rango y matriz
 > 
 > Sean X = {2,3,4,8}, Y = {3,4,5,6,7} y la relación R dada por **xRy si x divide a y**:
 > 
@@ -88,7 +89,7 @@
 
 ## 🔁 Relación Inversa y Composición
 
-> [!note]- 🔁 Definición 10 — Relación Inversa
+> [!note] 🔁 Definición 10 — Relación Inversa
 > 
 > Sea R una relación de X en Y. La **inversa** de R, denotada R⁻¹, es la relación de Y en X:
 > 
@@ -96,19 +97,19 @@
 > 
 > Equivalentemente: xR⁻¹y ⟺ yRx.
 
-> [!example]- 📝 Ejemplo 12 — Relación inversa
+> [!example] 📝 Ejemplo 12 — Relación inversa
 > 
 > Del Ejemplo 11, con R = {(2,4),(2,6),(3,3),(3,6),(4,4)}:
 > 
 > $$R^{-1} = {(4,2),(6,2),(3,3),(6,3),(4,4)}$$
 
-> [!note]- 🔁 Definición 11 — Composición de Relaciones
+> [!note] 🔁 Definición 11 — Composición de Relaciones
 > 
 > Sean R₁ de X en Y y R₂ de Y en Z. La **compuesta** de R₂ y R₁, denotada R₂ ∘ R₁, es:
 > 
 > $$R_2 \circ R_1 = {(x,z) : xR_1y \land yR_2z \text{ para algún } y \in Y}$$
 
-> [!example]- 📝 Ejemplo 13 — Composición de relaciones
+> [!example] 📝 Ejemplo 13 — Composición de relaciones
 > 
 > Sean R₁ = {(1,3),(2,3),(2,4)} y R₂ = {(2,0),(3,0),(3,−1),(4,2)}.
 > 
@@ -124,7 +125,7 @@
 
 ## 🗺️ Representaciones de una Relación
 
-> [!note]- 🗺️ Diagrama Sagital
+> [!note] 🗺️ Diagrama Sagital
 > 
 > El **diagrama sagital** de una relación R de X en Y es una representación gráfica con dos columnas de puntos — una para X y otra para Y — donde se traza una **flecha de x hacia y** si xRy.
 > 
@@ -134,7 +135,7 @@
 > > - Un elemento puede tener **varias flechas salientes** (si está relacionado con varios elementos).
 > > - Un elemento puede no tener **ninguna flecha** (si no está relacionado con nadie).
 
-> [!example]- 📝 Ejemplo — Diagrama Sagital
+> [!example] 📝 Ejemplo — Diagrama Sagital
 > 
 > Sean X = {2, 3, 4, 8}, Y = {3, 4, 5, 6, 7} y R dado por **xRy si x divide a y**:
 > 
@@ -160,15 +161,13 @@
 >     3 --> y3
 >     3 --> y6
 >     4 --> y4
->     style X fill:#e1f5ff
->     style Y fill:#ffe1e1
 > ```
 > 
 > El 8 no tiene ninguna flecha saliente porque ningún elemento de Y es múltiplo de 8. El 5 y el 7 no reciben flechas porque ningún elemento de X los divide.
 
 ---
 
-> [!note]- 🔷 Digrafo de una Relación
+> [!note] 🔷 Digrafo de una Relación
 > 
 > Cuando R es una relación **sobre X** (R ⊆ X × X), se puede representar con un **digrafo** (grafo dirigido): un solo conjunto de vértices (uno por cada elemento de X) donde se traza una **flecha de x hacia y** si xRy.
 > 
@@ -180,7 +179,7 @@
 > > - Si xRy e yRx con x ≠ y, hay **dos flechas** entre esos vértices (una en cada sentido) — esto indica simetría en ese par.
 > > - Si xRy pero no yRx, hay **una sola flecha** — esto puede indicar antisimetría.
 
-> [!example]- 📝 Ejemplo — Digrafo
+> [!example] 📝 Ejemplo — Digrafo
 > 
 > Sea X = {1, 3, 4} y R₁ = {(1,1),(1,3),(3,1),(3,3),(4,4)}:
 > 
@@ -211,7 +210,7 @@
 ---
 ## 🏷️ Propiedades de Relaciones sobre X
 
-> [!note]- 🏷️ Definición 12 — Propiedades (resumen)
+> [!note] 🏷️ Definición 12 — Propiedades (resumen)
 > 
 > Sea R una relación **sobre X** (es decir, R ⊆ X × X). Diremos que:
 > 
@@ -222,7 +221,7 @@
 > |**Antisimétrica**|xRy ∧ yRx ⟹ x = y|
 > |**Transitiva**|xRy ∧ yRz ⟹ xRz|
 
-> [!note]- 🔵 Propiedad Reflexiva
+> [!note] 🔵 Propiedad Reflexiva
 > 
 > **Definición:** xRx, ∀x ∈ X — todo elemento está relacionado consigo mismo.
 > 
@@ -236,7 +235,7 @@
 > 
 > **En ℝ:** la relación "≤" es reflexiva (x ≤ x siempre). La relación "<" **no** es reflexiva (x < x es falso).
 
-> [!note]- 🟢 Propiedad Simétrica
+> [!note] 🟢 Propiedad Simétrica
 > 
 > **Definición:** xRy ⟹ yRx — si x está relacionado con y, entonces y está relacionado con x.
 > 
@@ -250,7 +249,7 @@
 > 
 > **En ℝ:** "tener la misma edad" es simétrica. "ser padre de" **no** es simétrica (si A es padre de B, B no es padre de A).
 
-> [!note]- 🔴 Propiedad Antisimétrica
+> [!note] 🔴 Propiedad Antisimétrica
 > 
 > **Definición:** xRy ∧ yRx ⟹ x = y — los únicos pares que pueden "ir y volver" son los lazos (x, x).
 > 
@@ -266,7 +265,7 @@
 > 
 > **En ℝ:** la relación "≤" es antisimétrica (x ≤ y y y ≤ x implica x = y). La relación "ser hermano de" **no** es antisimétrica.
 
-> [!note]- 🟣 Propiedad Transitiva
+> [!note] 🟣 Propiedad Transitiva
 > 
 > **Definición:** xRy ∧ yRz ⟹ xRz — si x llega a y, y y llega a z, entonces x llega directo a z.
 > 
@@ -280,7 +279,7 @@
 > 
 > **En ℝ:** "≤" es transitiva (x ≤ y y y ≤ z implica x ≤ z). "ser amigo de" en la vida real **no** es necesariamente transitiva.
 
-> [!tip]- 💡 Observación 2 — Lectura desde el diagrama sagital
+> [!tip] 💡 Observación 2 — Lectura desde el diagrama sagital
 > 
 > El diagrama sagital de una relación sobre X corresponde a una relación:
 > 
@@ -289,7 +288,7 @@
 > 3. **Antisimétrica** si y solo si ningún par de vértices distintos tiene **camino de ida y vuelta**.
 > 4. **Transitiva** si y solo si para cada par de flechas consecutivas existe una **tercera flecha** del vértice inicial de la primera al vértice final de la segunda.
 
-> [!example]- 📝 Ejemplo 14 — Análisis completo de tres relaciones
+> [!example] 📝 Ejemplo 14 — Análisis completo de tres relaciones
 > 
 > Sea X = {1,3,4} y:
 > 
@@ -327,12 +326,6 @@ graph TD
     H --> H3[Antisimétrica]
     H --> H4[Transitiva]
 
-    style A fill:#1e3a5f,color:#fff
-    style H fill:#fff4e1
-    style H1 fill:#e1f5ff
-    style H2 fill:#e1ffe1
-    style H3 fill:#ffe1e1
-    style H4 fill:#f5e1ff
 ```
 
 ---

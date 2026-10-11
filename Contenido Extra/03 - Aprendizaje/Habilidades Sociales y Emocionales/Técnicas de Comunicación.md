@@ -400,7 +400,7 @@ mindmap
 > ### **Indicadores Cualitativos**
 > 
 > - **Mejora en relaciones personales y profesionales**# Técnicas de Comunicación 🗣️
-
+>
 > _"La comunicación efectiva no es solo hablar bien, sino conectar genuinamente con otros para crear entendimiento mutuo y construir relaciones sólidas."_
 
 ## Definición y Fundamentos

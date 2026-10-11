@@ -35,7 +35,7 @@
 > > - **Listas:** Usa `*`, `+` o `-` para listas no ordenadas, y números seguidos de un punto para las ordenadas (`1.`).
 > 
 > ---
-
+>
 > [!success]- ## 🛠️ Sintaxis Avanzada y Elementos Útiles
 > 
 > ### Tablas, Citas y Bloques de Código
@@ -89,7 +89,7 @@
 > |**Ser consistente**|Define un estilo de Markdown y úsalo de forma consistente en todos tus documentos.|
 > 
 > ---
-
+>
 > [!brain]- ## 🎯 Técnica de Estudio: El Método del "Doble Monitor"
 > 
 > ### Aprende Escribiendo y Comparando
@@ -123,7 +123,7 @@
 > > Un software de toma de notas que usa Markdown para todo su sistema.
 > 
 > ---
-
+>
 > [!link]- ## 🔗 Notas Recomendadas y Prerrequisitos
 > 
 > ### Prerrequisitos

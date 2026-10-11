@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🌐 Redes e Internet
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Cómo se conectaron las computadoras entre sí?
+> [!info] 💡 ¿Cómo se conectaron las computadoras entre sí?
 >
 > Durante décadas, las computadoras trabajaron de forma aislada. La necesidad de compartir información y recursos impulsó el desarrollo de las redes, que eventualmente evolucionaron hasta formar la Internet que conocemos hoy.
 >
@@ -12,7 +16,6 @@
 >     B --> C[ARPANET<br/>red militar]
 >     C --> D[Internet<br/>TCP/IP]
 >     D --> E[World Wide Web<br/>WWW]
->
 >     style A fill:#ffe1e1
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -24,7 +27,7 @@
 
 ## 🔬 ARPANET — El origen de todo (1967)
 
-> [!note]- 🔬 La primera red de computadoras
+> [!note] 🔬 La primera red de computadoras
 >
 > **ARPANET** fue una red patrocinada por el gobierno de los Estados Unidos, creada originalmente con fines militares durante la **Guerra Fría**. Fue desarrollada por la agencia **RAND** y comenzó a operar a finales de los años sesenta.
 >
@@ -55,7 +58,7 @@
 
 ## 🔌 Ethernet — La red local (1973)
 
-> [!note]- 🔌 Conectando computadoras en un mismo espacio
+> [!note] 🔌 Conectando computadoras en un mismo espacio
 >
 > En **1980**, el modelo de una gran máquina con muchos usuarios dio paso a una **red de máquinas más pequeñas conectadas** para compartir recursos como impresoras, software y datos.
 >
@@ -75,7 +78,7 @@
 
 ## 🏢 Redes LAN y Netware (1989)
 
-> [!note]- 🏢 Redes de área local
+> [!note] 🏢 Redes de área local
 >
 > Las estaciones de trabajo o computadoras personales conectadas en red se conocieron como **LAN** (*Local Area Network* — Red de Área Local).
 >
@@ -88,7 +91,6 @@
 >     S --- E3[Estación de trabajo 3]
 >     S --- E4[Estación de trabajo 4]
 >     S --- E5[Estación de trabajo 5]
->
 >     style S fill:#e1f5ff
 >     style E1 fill:#e1ffe1
 >     style E2 fill:#e1ffe1
@@ -108,7 +110,7 @@
 
 ## 🌍 Internet y TCP/IP
 
-> [!important]- 🌍 La red de redes
+> [!important] 🌍 La red de redes
 >
 > **Internet** no es una sola red, sino una **red de muchas redes diferentes** alrededor del mundo que se comunican usando un protocolo común: **TCP/IP** (*Transmission Control Protocol / Internet Protocol*).
 >
@@ -121,7 +123,6 @@
 >     C --- R3[Router]
 >     R3 --- D[Red LAN — Hogar]
 >     R3 --- E[Red LAN — Gobierno]
->
 >     style R1 fill:#fff4e1
 >     style R2 fill:#fff4e1
 >     style R3 fill:#fff4e1
@@ -143,7 +144,7 @@
 
 ## 🕸️ World Wide Web — WWW (1991)
 
-> [!important]- 🕸️ Internet se vuelve accesible para todos
+> [!important] 🕸️ Internet se vuelve accesible para todos
 >
 > En **1991**, **Tim Berners-Lee** creó la **World Wide Web**, un sistema de documentos interconectados mediante **hipervínculos** accesibles a través de Internet usando un navegador.
 >
@@ -169,7 +170,7 @@
 
 ## 📅 Línea de Tiempo General
 
-> [!summary]- 📅 De ARPANET a la WWW
+> [!summary] 📅 De ARPANET a la WWW
 >
 > ```mermaid
 > timeline
@@ -190,7 +191,7 @@
 
 ## 📊 Comparación de tipos de red
 
-> [!summary]- 📊 LAN vs WAN vs Internet
+> [!summary] 📊 LAN vs WAN vs Internet
 >
 > | Característica | LAN | WAN | Internet |
 > |---|---|---|---|

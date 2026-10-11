@@ -1,7 +1,7 @@
 # 🏠 Home - Centro de Comando Personal
 
 > [!tip] 🌟 Bienvenido a tu Sistema de Conocimiento Este es tu punto de entrada principal. Desde aquí puedes acceder a todas las áreas de tu vida personal y profesional de manera organizada y eficiente.
-
+>
 >[!success] Siempre recuerda esto
 >“Lo que me gusta no es un capricho, es **una brújula**.  
 >Puede que hoy camine lento, pero sé exactamente hacia dónde voy.”

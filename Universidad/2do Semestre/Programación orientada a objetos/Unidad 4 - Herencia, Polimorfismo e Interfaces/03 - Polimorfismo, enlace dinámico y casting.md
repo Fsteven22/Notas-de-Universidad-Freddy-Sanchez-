@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🎭 Polimorfismo, Enlace Dinámico y Casting
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es el Polimorfismo?
+> [!info] 💡 ¿Qué es el Polimorfismo?
 > 
 > El **polimorfismo** (del griego "muchas formas") es la capacidad de un objeto de tomar **múltiples formas**. Es uno de los pilares fundamentales de la POO que permite que un mismo código funcione con diferentes tipos de objetos.
 > 
@@ -45,20 +49,17 @@ graph TB
 
 ### 📊 Tipos de Polimorfismo en Java
 
-> [!note]- 🌳 Clasificación del Polimorfismo
+> [!note] 🌳 Clasificación del Polimorfismo
 > 
 > ```mermaid
 > graph TD
 >     A[Polimorfismo] --> B[En Tiempo de Compilación<br/>Estático]
 >     A --> C[En Tiempo de Ejecución<br/>Dinámico]
->     
 >     B --> D[Sobrecarga de métodos<br/>Overloading]
 >     B --> E[Sobrecarga de operadores]
->     
 >     C --> F[Sobrescritura de métodos<br/>Overriding]
 >     C --> G[Interfaces]
 >     C --> H[Clases abstractas]
->     
 >     style C fill:#e1f5ff
 >     style F fill:#e1ffe1
 > ```
@@ -78,7 +79,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 🏗️ ¿Cómo Funciona el Polimorfismo Dinámico?
+> [!tip] 🏗️ ¿Cómo Funciona el Polimorfismo Dinámico?
 > 
 > El polimorfismo dinámico se basa en tres conceptos clave:
 > 
@@ -132,7 +133,7 @@ graph TB
 
 ### 🛠️ Polimorfismo en Acción
 
-> [!success]- 🎯 Ejemplo Completo: Sistema de Empleados
+> [!success] 🎯 Ejemplo Completo: Sistema de Empleados
 > 
 > **JERARQUÍA DE CLASES:**
 > 
@@ -276,7 +277,7 @@ graph TB
 
 ### ✅ Ventajas del Polimorfismo
 
-> [!success]- 🏆 Beneficios Reales
+> [!success] 🏆 Beneficios Reales
 > 
 > **1. Código más flexible y reutilizable**
 > 
@@ -332,7 +333,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 🔗 ¿Qué es el Enlace Dinámico?
+> [!tip] 🔗 ¿Qué es el Enlace Dinámico?
 > 
 > El **enlace dinámico** (dynamic binding o late binding) es el mecanismo por el cual Java decide **en tiempo de ejecución** qué versión de un método llamar, basándose en el **tipo real del objeto**, no en el tipo de la referencia.
 > 
@@ -343,13 +344,10 @@ graph TB
 >     participant C as Código
 >     participant JVM as JVM
 >     participant O as Objeto Real
->     
 >     C->>JVM: animal.hacerSonido()
 >     Note over C: Referencia tipo Animal
->     
 >     JVM->>O: ¿Cuál es tu tipo REAL?
 >     O-->>JVM: Soy un Perro
->     
 >     JVM->>O: Ejecutar hacerSonido() de Perro
 >     O-->>C: "Guau guau!"
 > ```
@@ -376,7 +374,7 @@ graph TB
 
 ### 🔍 Enlace Estático vs Dinámico
 
-> [!note]- ⚖️ Comparación Detallada
+> [!note] ⚖️ Comparación Detallada
 > 
 > |Aspecto|Enlace Estático|Enlace Dinámico|
 > |---|---|---|
@@ -432,7 +430,7 @@ graph TB
 
 ### 🎯 Reglas del Enlace Dinámico
 
-> [!warning]- ⚠️ Reglas Importantes
+> [!warning] ⚠️ Reglas Importantes
 > 
 > **Regla 1: Solo aplica a métodos de instancia sobrescritos**
 > 
@@ -486,7 +484,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 🎭 ¿Qué es el Casting?
+> [!tip] 🎭 ¿Qué es el Casting?
 > 
 > El **casting** es la conversión explícita de un tipo de referencia a otro dentro de una jerarquía de herencia. Hay dos tipos:
 > 
@@ -513,13 +511,10 @@ graph TB
 >     A[Animal<br/>Superclase] 
 >     B[Perro<br/>Subclase]
 >     C[Gato<br/>Subclase]
->     
 >     B -.->|Upcasting<br/>✅ Seguro| A
 >     C -.->|Upcasting<br/>✅ Seguro| A
->     
 >     A ==>|Downcasting<br/>⚠️ Puede fallar| B
 >     A ==>|Downcasting<br/>⚠️ Puede fallar| C
->     
 >     style A fill:#e1f5ff
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
@@ -527,7 +522,7 @@ graph TB
 
 ### 🛠️ Upcasting en Detalle
 
-> [!success]- ⬆️ Casting Hacia Arriba (Upcasting)
+> [!success] ⬆️ Casting Hacia Arriba (Upcasting)
 > 
 > **Características:**
 > 
@@ -597,7 +592,7 @@ graph TB
 
 ### 🔻 Downcasting en Detalle
 
-> [!warning]- ⬇️ Casting Hacia Abajo (Downcasting)
+> [!warning] ⬇️ Casting Hacia Abajo (Downcasting)
 > 
 > **Características:**
 > 
@@ -673,7 +668,7 @@ graph TB
 
 ### 🔍 Operador instanceof
 
-> [!tip]- 🎯 Verificación de Tipos con instanceof
+> [!tip] 🎯 Verificación de Tipos con instanceof
 > 
 > El operador `instanceof` verifica si un objeto es una instancia de una clase o interfaz específica.
 > 
@@ -747,7 +742,7 @@ graph TB
 
 ### 💼 Ejemplo 1: Sistema de Formas Geométricas
 
-> [!example]- 📐 Polimorfismo con Figuras
+> [!example] 📐 Polimorfismo con Figuras
 > 
 > ```java
 > // Clase base abstracta
@@ -917,7 +912,7 @@ graph TB
 
 ### 🎮 Ejemplo 2: Sistema de Juego con Personajes
 
-> [!example]- 🎯 Polimorfismo en Videojuegos
+> [!example] 🎯 Polimorfismo en Videojuegos
 > 
 > ```java
 > // Clase base abstracta
@@ -1110,7 +1105,7 @@ graph TB
 
 ### ✅ Recomendaciones Profesionales
 
-> [!tip]- 🏆 Checklist de Buenas Prácticas
+> [!tip] 🏆 Checklist de Buenas Prácticas
 > 
 > **1. Usa polimorfismo en lugar de condicionales**
 > 
@@ -1219,7 +1214,7 @@ mindmap
 
 ### 📋 Tabla Resumen Final
 
-> [!success]- 🎯 Referencia Rápida
+> [!success] 🎯 Referencia Rápida
 > 
 > |Concepto|Definición|Cuándo Usar|
 > |---|---|---|
@@ -1234,7 +1229,7 @@ mindmap
 
 ## 🎓 Ejercicios Prácticos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Ejercicio 1: Sistema de Instrumentos Musicales**
 > 
@@ -1372,7 +1367,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Continuando el Aprendizaje
+> [!quote] 🌟 Continuando el Aprendizaje
 > 
 > **Has aprendido:**
 > 

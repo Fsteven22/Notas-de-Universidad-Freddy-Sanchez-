@@ -214,7 +214,7 @@ graph LR
 > ├── Same problem para todos los equipos
 > └── Simultaneous reporting de soluciones
 > ```
-
+>
 > Peer Evaluation ├── Assessment de contribuciones individuales ├── Feedback constructivo entre miembros └── Adjustments para mejorar teamwork ```
 
 ### 🔬 Problem-Based Learning Colaborativo
@@ -623,7 +623,7 @@ pie title Efectos del Aprendizaje Colaborativo (Cohen's d)
 > 
 > - [[Método 4 - Aprendizaje Activo]] - Participación activa en grupos
 > - [[Método 10 - Aprendizaje Basado en Problemas]] - PBL colaborativo
-> - [[Comunicación Efectiva]] - Experimentación grupal
+> - [[La Comunicación Efectiva]] - Experimentación grupal
 > - [[Habilidades Sociales]] - Competencias interpersonales
 > - [[Gestión de Proyectos]] - Organización de trabajo grupal
 > - [[Técnicas de Comunicación]] - Comunicación efectiva en equipos

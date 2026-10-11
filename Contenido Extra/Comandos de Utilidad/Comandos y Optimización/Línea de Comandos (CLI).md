@@ -41,7 +41,7 @@
 > > - **Bandera (Flag):** Modifica el comportamiento del comando (ej. `ls -a` para mostrar archivos ocultos).
 > 
 > ---
-
+>
 > [!success]- ## 🛠️ Comandos Esenciales para Empezar
 > 
 > ### Comandos de Navegación y Gestión de Archivos
@@ -91,7 +91,7 @@
 > > ```
 > 
 > ---
-
+>
 > [!warning]- ## ⚠️ Mejores Prácticas y Riesgos
 > 
 > ### Consejos de Seguridad
@@ -111,7 +111,7 @@
 > |`Ctrl + R`|Busca en el historial de comandos.|
 > 
 > ---
-
+>
 > [!brain]- ## 🎯 Técnica de Estudio: El Método del "Hombre"
 > 
 > ### Aprende Usando el Manual Integrado
@@ -149,7 +149,7 @@
 > > El lenguaje Python es ideal para crear scripts y herramientas de la línea de comandos.
 > 
 > ---
-
+>
 > [!link]- ## 🔗 Notas Recomendadas y Prerrequisitos
 > 
 > ### Prerrequisitos

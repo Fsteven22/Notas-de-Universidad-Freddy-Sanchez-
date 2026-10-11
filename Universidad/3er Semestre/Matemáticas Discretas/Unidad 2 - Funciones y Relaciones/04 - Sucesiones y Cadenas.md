@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔢 Sucesiones y Cadenas
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son las sucesiones y cadenas?
+> [!info] 💡 ¿Qué son las sucesiones y cadenas?
 > 
 > Las **sucesiones** son un caso especial de función: asignan a cada entero en un rango dado un elemento de algún conjunto. Las **cadenas** son sucesiones finitas de elementos, con la diferencia de que el orden importa y las repeticiones se permiten.
 > 
@@ -13,16 +17,13 @@
 >     B --> D[Finita si A es finito]
 >     B --> E[Infinita si A es infinito]
 >     D --> F[Cadena sobre X]
->     style A fill:#e1f5ff
->     style B fill:#1e3a5f,color:#fff
->     style F fill:#f5e1ff
 > ```
 
 ---
 
 ## 📋 Sucesiones
 
-> [!note]- 📋 Definición 5 — Sucesión
+> [!note] 📋 Definición 5 — Sucesión
 > 
 > Sea $X$ un conjunto. Una **sucesión en** $X$ es cualquier función $s : A \to X$, donde $A$ es un conjunto de **enteros consecutivos**.
 > 
@@ -30,7 +31,7 @@
 > - A $n$ se le llama **índice** de la sucesión.
 > - Si $s : A \to X$ es una sucesión, la denotaremos por ${s_n}$ o ${s_n}_{n \in A}$.
 
-> [!note]- 📋 Definición 6 — Sucesión finita e infinita
+> [!note] 📋 Definición 6 — Sucesión finita e infinita
 > 
 > - Una sucesión es **finita** si su dominio es finito.
 > - Una sucesión es **infinita** si su dominio es infinito.
@@ -51,7 +52,7 @@
 
 ## 🧮 Ejemplos de Sucesiones
 
-> [!example]- 📝 Ejemplo 17 — Sucesiones básicas
+> [!example] 📝 Ejemplo 17 — Sucesiones básicas
 > 
 > **Sucesión $s$:** $2, 4, 6, \ldots$ con primer índice $1$:
 > 
@@ -61,7 +62,7 @@
 > 
 > $$t_1 = a,\quad t_2 = a,\quad t_3 = b,\quad t_4 = a,\quad t_5 = a$$
 
-> [!example]- 📝 Ejemplo 18 — Sucesión finita
+> [!example] 📝 Ejemplo 18 — Sucesión finita
 > 
 > Sea $x$ la sucesión dada por $x_n = \dfrac{1}{2^n}$, para $-1 \leq n \leq 4$.
 > 
@@ -73,7 +74,7 @@
 
 ## ∑ Suma y Producto de Sucesiones
 
-> [!note]- ∑ Definición 9 — Notación de suma y producto
+> [!note] ∑ Definición 9 — Notación de suma y producto
 > 
 > Sea ${a_i}_{i=m}^{n}$ una sucesión. Se definen:
 > 
@@ -93,7 +94,7 @@
 > 
 > $$\prod_{i \in S} a_i \quad \text{denota el producto de } {a_i : i \in S}$$
 
-> [!example]- 📝 Ejemplo 21
+> [!example] 📝 Ejemplo 21
 > 
 > Sea $a$ la sucesión definida por $a_n = 2n$, $n \geq 1$:
 > 
@@ -105,7 +106,7 @@
 
 ## 🧮 Inducción sobre Productos
 
-> [!note]- 🧮 Técnica — Inducción con notación $\prod$
+> [!note] 🧮 Técnica — Inducción con notación $\prod$
 > 
 > Las demostraciones por inducción sobre **productos** siguen exactamente el mismo esquema que las de sumas, con una diferencia en el paso inductivo:
 > 
@@ -121,7 +122,7 @@
 > > 
 > > Con sumas verificas que el término nuevo **cubre la brecha** entre dos umbrales (en desigualdades) o **completa la fórmula** algebraicamente (en igualdades). Con productos, el término nuevo **escala** el resultado anterior — el razonamiento es análogo pero la manipulación algebraica involucra factorizaciones en vez de sumas.
 
-> [!example]- 📝 Ejemplo — $\displaystyle\prod_{k=1}^{n}(1+2k) = \dfrac{(2n+1)!}{2^n n!}$
+> [!example] 📝 Ejemplo — $\displaystyle\prod_{k=1}^{n}(1+2k) = \dfrac{(2n+1)!}{2^n n!}$
 > 
 > **Demostrar** que para toda $n \in \mathbb{N}$:
 > 
@@ -163,7 +164,7 @@
 > > 
 > > Cuando el denominador de la meta tiene $2^{m+1}(m+1)!$ pero solo tienes $2^m m!$, **multiplica y divide por el factor faltante** — en este caso $2(m+1)$. Eso construye el denominador correcto sin cambiar el valor, y permite que el numerador absorba los factores nuevos en el factorial.
 
-> [!example]- 📝 Ejemplo 22 — Suma geométrica
+> [!example] 📝 Ejemplo 22 — Suma geométrica
 > 
 > La suma geométrica $a + ar + ar^2 + \cdots + ar^n$ se escribe:
 > 
@@ -173,7 +174,7 @@
 
 ## 🔄 Recurrencias
 
-> [!note]- 🔄 Definición — Relación de Recurrencia
+> [!note] 🔄 Definición — [[01 - Relaciones de Recurrencia|Relación de Recurrencia]]
 > 
 > Una **relación de recurrencia** para una sucesión $\{s_n\}$ es una ecuación que expresa $s_n$ en términos de uno o más términos anteriores de la misma sucesión.
 > 
@@ -190,7 +191,7 @@
 
 ---
 
-> [!note]- 📋 Técnica — Cómo trabajar con recurrencias
+> [!note] 📋 Técnica — Cómo trabajar con recurrencias
 > 
 > Dado $s_n$ definido por una fórmula explícita, hay tres operaciones frecuentes:
 > 
@@ -202,7 +203,7 @@
 > 
 > Para **verificar** que $\{s_n\}$ satisface una recurrencia, se sustituyen $s_n$, $s_{n-1}$ y $s_{n-2}$ (o los que correspondan) con sus fórmulas explícitas y se simplifica hasta que ambos lados sean iguales.
 
-> [!example]- 📝 Ejemplo — Sucesión con recurrencia de orden 2
+> [!example] 📝 Ejemplo — Sucesión con recurrencia de orden 2
 > 
 > Sea la sucesión definida por $s_n = 2^n + 4 \cdot 3^n$, $n \geq 0$.
 > 
@@ -248,7 +249,7 @@
 
 ## 🔤 Cadenas
 
-> [!note]- 📋 Definición 10 — Cadena
+> [!note] 📋 Definición 10 — Cadena
 > 
 > Sea $X$ un conjunto. Una **cadena sobre** $X$ es una **sucesión finita** de elementos en $X$.
 > 
@@ -261,7 +262,7 @@
 > - $X^*$ denota el conjunto de **todas** las cadenas sobre $X$.
 > - $X^+$ denota el conjunto de las cadenas **no nulas** sobre $X$.
 
-> [!note]- 📋 Longitud y Concatenación
+> [!note] 📋 Longitud y Concatenación
 > 
 > Sea $\alpha$ una cadena sobre $X$:
 > 
@@ -281,7 +282,7 @@
 
 ## 🧮 Ejemplos de Cadenas
 
-> [!example]- 📝 Ejemplo 23 — Cadena sobre un conjunto
+> [!example] 📝 Ejemplo 23 — Cadena sobre un conjunto
 > 
 > Sea $X = {a, b, c}$. Si hacemos $s_1 = b,\ s_2 = a,\ s_3 = a,\ s_4 = c$, obtenemos la cadena $baac$.
 > 
@@ -311,18 +312,13 @@ graph TD
     C --> J[Concatenación αβ]
     C --> K["Cadena nula λ"]
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#f5e1ff
-    style F fill:#e1ffe1
-    style G fill:#e1ffe1
 ```
 
 ---
 
 ## 📝 Ejercicios Propuestos
 
-> [!question]- 📋 Ejercicios
+> [!question] 📋 Ejercicios
 > 
 > **1.** Sea $a_n = 3n - 1$, $1 \leq n \leq 5$. Calcula $\displaystyle\sum_{i=1}^{5} a_i$ y $\displaystyle\prod_{i=1}^{4} a_i$.
 > 
@@ -332,7 +328,7 @@ graph TD
 > 
 > **4.** Indica si $ab$ es subcadena de $cab$, $aab$, $ba$.
 
-> [!success]- ✅ Respuestas
+> [!success] ✅ Respuestas
 > 
 > **1.** $a_1=2,\ a_2=5,\ a_3=8,\ a_4=11,\ a_5=14$. $\sum = 2+5+8+11+14 = 40$. $\prod = 2 \cdot 5 \cdot 8 \cdot 11 = 880$.
 > 

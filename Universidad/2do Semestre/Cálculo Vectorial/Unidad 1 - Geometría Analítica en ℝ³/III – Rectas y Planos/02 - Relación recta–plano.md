@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔷 Relación Recta-Plano en ℝ³
 
 ## 🎯 Fundamentos de la Relación Recta-Plano
 
-> [!info]- 💡 Introducción a las Interacciones Recta-Plano La **relación entre rectas y planos** es fundamental en geometría analítica espacial. Estudia cómo una recta puede posicionarse respecto a un plano en el espacio tridimensional.
+> [!info] 💡 Introducción a las Interacciones Recta-Plano La **relación entre rectas y planos** es fundamental en geometría analítica espacial. Estudia cómo una recta puede posicionarse respecto a un plano en el espacio tridimensional.
 > 
 > **Analogías útiles:**
 > 
@@ -26,7 +30,7 @@
 
 ### 📊 Clasificación de Posiciones
 
-> [!note]- 🌟 Tipos de Relaciones Posibles
+> [!note] 🌟 Tipos de Relaciones Posibles
 > 
 > |Relación|Descripción|Puntos en común|Condición|
 > |---|---|---|---|
@@ -48,7 +52,7 @@
 
 ### 📐 Criterios de Clasificación
 
-> [!example]- 🎯 Método General de Análisis **Dados:**
+> [!example] 🎯 Método General de Análisis **Dados:**
 > 
 > - Recta L: **r** = **r₀** + t**v** o (x,y,z) = (x₀,y₀,z₀) + t(a,b,c)
 > - Plano π: Ax + By + Cz + D = 0 con normal **n** = (A,B,C)
@@ -84,7 +88,7 @@
 
 ### ✅ Ejemplo Completo de Clasificación
 
-> [!example]- 💪 Análisis Paso a Paso **Problema:** Clasificar la relación entre:
+> [!example] 💪 Análisis Paso a Paso **Problema:** Clasificar la relación entre:
 > 
 > - Recta L: (x,y,z) = (1,2,3) + t(2,1,-1)
 > - Plano π: 2x + 2y - 2z + 6 = 0
@@ -141,7 +145,7 @@
 
 ### 🔍 Definición y Caracterización
 
-> [!success]- 🟢 Perpendicularidad Recta-Plano **Definición:** Una recta L es perpendicular a un plano π si su vector director es paralelo al vector normal del plano.
+> [!success] 🟢 Perpendicularidad Recta-Plano **Definición:** Una recta L es perpendicular a un plano π si su vector director es paralelo al vector normal del plano.
 > 
 > **Condición matemática:** $$\mathbf{v} = k\mathbf{n} \quad \text{para algún } k \in \mathbb{R}, k \neq 0$$
 > 
@@ -162,7 +166,7 @@
 
 ### 📝 Ecuaciones de la Recta Perpendicular
 
-> [!tip]- 🎯 Construcción de Rectas Perpendiculares **Problema tipo:** Encontrar la recta perpendicular al plano π que pasa por un punto P₀.
+> [!tip] 🎯 Construcción de Rectas Perpendiculares **Problema tipo:** Encontrar la recta perpendicular al plano π que pasa por un punto P₀.
 > 
 > **Dado:**
 > 
@@ -183,7 +187,7 @@
 
 ### ✅ Ejemplos de Rectas Perpendiculares
 
-> [!example]- 💪 Casos Prácticos **Ejemplo 1:** Recta perpendicular al plano 2x - y + 3z = 5 que pasa por P(1, 2, -1)
+> [!example] 💪 Casos Prácticos **Ejemplo 1:** Recta perpendicular al plano 2x - y + 3z = 5 que pasa por P(1, 2, -1)
 > 
 > **Solución:**
 > 
@@ -233,7 +237,7 @@
 
 ### 🔧 Aplicaciones de Perpendicularidad
 
-> [!info]- 🎨 Usos Prácticos **1. Proyección ortogonal:**
+> [!info] 🎨 Usos Prácticos **1. Proyección ortogonal:**
 > 
 > - Para proyectar un punto sobre un plano
 > - Se usa la recta perpendicular al plano por el punto
@@ -272,7 +276,7 @@
 
 ### 🔍 Definición y Caracterización
 
-> [!warning]- 🟡 Paralelismo Recta-Plano **Definición:** Una recta L es paralela a un plano π si su vector director es perpendicular al vector normal del plano y la recta no está contenida en el plano.
+> [!warning] 🟡 Paralelismo Recta-Plano **Definición:** Una recta L es paralela a un plano π si su vector director es perpendicular al vector normal del plano y la recta no está contenida en el plano.
 > 
 > **Condiciones necesarias:**
 > 
@@ -294,7 +298,7 @@
 
 ### 📝 Verificación de Paralelismo
 
-> [!tip]- 🎯 Método de Verificación **Dados:**
+> [!tip] 🎯 Método de Verificación **Dados:**
 > 
 > - Recta L: **r** = **r₀** + t**v** con punto P₀(x₀,y₀,z₀)
 > - Plano π: Ax + By + Cz + D = 0
@@ -320,7 +324,7 @@
 
 ### ✅ Ejemplos de Paralelismo
 
-> [!example]- 💪 Casos Ilustrativos **Ejemplo 1:** Verificar si L: (x,y,z) = (1,0,2) + t(2,1,-1) es paralela a π: 2x + 2y - 2z = 5
+> [!example] 💪 Casos Ilustrativos **Ejemplo 1:** Verificar si L: (x,y,z) = (1,0,2) + t(2,1,-1) es paralela a π: 2x + 2y - 2z = 5
 > 
 > **Solución:**
 > 
@@ -410,7 +414,7 @@
 
 ### 🔧 Construcción de Rectas Paralelas
 
-> [!note]- 📐 Crear Recta Paralela a Plano **Problema tipo:** Encontrar una recta paralela al plano π que pase por un punto P.
+> [!note] 📐 Crear Recta Paralela a Plano **Problema tipo:** Encontrar una recta paralela al plano π que pase por un punto P.
 > 
 > **Método 1: Usando dos vectores perpendiculares**
 > 
@@ -447,7 +451,7 @@
 
 ### 🔍 Definición y Método General
 
-> [!example]- 🔵 Punto de Intersección **Definición:** Cuando una recta es secante a un plano, se intersectan en exactamente un punto.
+> [!example] 🔵 Punto de Intersección **Definición:** Cuando una recta es secante a un plano, se intersectan en exactamente un punto.
 > 
 > **Condición:** **v** · **n** ≠ 0
 > 
@@ -474,7 +478,7 @@
 
 ### ✅ Ejemplos de Intersección
 
-> [!example]- 💪 Cálculos Detallados **Ejemplo 1:** Hallar la intersección de:
+> [!example] 💪 Cálculos Detallados **Ejemplo 1:** Hallar la intersección de:
 > 
 > - L: (x,y,z) = (1,2,0) + t(1,-1,2)
 > - π: 2x + y + z = 5
@@ -554,7 +558,7 @@
 
 ### 🎯 Casos Especiales de Intersección
 
-> [!tip]- 🌟 Situaciones Particulares **1. Intersección con planos coordenados:**
+> [!tip] 🌟 Situaciones Particulares **1. Intersección con planos coordenados:**
 > 
 > **Recta L: (x,y,z) = (x₀,y₀,z₀) + t(a,b,c)**
 > 
@@ -597,7 +601,7 @@
 
 ### 🔍 Definición del Ángulo
 
-> [!note]- 📊 Concepto de Ángulo Recta-Plano **Definición:** El ángulo θ entre una recta L y un plano π es el **complemento** del ángulo entre el vector director de la recta y el vector normal al plano.
+> [!note] 📊 Concepto de Ángulo Recta-Plano **Definición:** El ángulo θ entre una recta L y un plano π es el **complemento** del ángulo entre el vector director de la recta y el vector normal al plano.
 > 
 > **Interpretación geométrica:**
 > 
@@ -617,7 +621,7 @@
 
 ### 📝 Fórmula del Ángulo
 
-> [!success]- 🟢 Cálculo del Ángulo **Dados:**
+> [!success] 🟢 Cálculo del Ángulo **Dados:**
 > 
 > - Recta L con vector director **v** = (a,b,c)
 > - Plano π con vector normal **n** = (A,B,C)
@@ -632,7 +636,7 @@
 
 ### ✅ Ejemplos de Cálculo de Ángulos
 
-> [!example]- 💪 Problemas Resueltos **Ejemplo 1:** Ángulo entre L: (x,y,z) = (1,0,2) + t(1,1,1) y π: x + 2y + 2z = 9
+> [!example] 💪 Problemas Resueltos **Ejemplo 1:** Ángulo entre L: (x,y,z) = (1,0,2) + t(1,1,1) y π: x + 2y + 2z = 9
 > 
 > **Solución:**
 > 
@@ -706,7 +710,7 @@
 
 ### 🔧 Aplicaciones del Ángulo
 
-> [!info]- 🎨 Usos Prácticos **1. Óptica:**
+> [!info] 🎨 Usos Prácticos **1. Óptica:**
 > 
 > - Ángulo de incidencia de rayos de luz
 > - Reflexión y refracción en superficies
@@ -738,7 +742,7 @@
 
 ## 📊 Tabla Resumen de Relaciones
 
-> [!example]- 📋 Compendio Completo
+> [!example] 📋 Compendio Completo
 > 
 > |Relación|Condición algebraica|Condición geométrica|Intersección|Ángulo θ|
 > |---|---|---|---|---|
@@ -791,7 +795,7 @@ graph TD
 
 ## 🧪 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Progresiva
+> [!example] 💪 Práctica Progresiva
 > 
 > **Nivel 1 - Clasificación:** 🟢
 > 
@@ -870,7 +874,7 @@ graph TD
 
 ### 🎮 En Computación Gráfica y Videojuegos
 
-> [!success]- 🖥️ Ray Tracing y Colisiones **1. Ray Tracing (Trazado de Rayos):**
+> [!success] 🖥️ Ray Tracing y Colisiones **1. Ray Tracing (Trazado de Rayos):**
 > 
 > El algoritmo fundamental de renderizado 3D:
 > 
@@ -967,7 +971,7 @@ graph TD
 
 ### ✈️ En Navegación y Aviación
 
-> [!info]- 🛫 Trayectorias y Planificación **1. Cálculo de Aterrizaje:**
+> [!info] 🛫 Trayectorias y Planificación **1. Cálculo de Aterrizaje:**
 > 
 > **Problema:** Un avión vuela a 3000m de altura siguiendo la trayectoria: $$L: (x,y,z) = (0, 0, 3000) + t(100, 50, -5)$$ (velocidades en m/s)
 > 
@@ -1018,7 +1022,7 @@ graph TD
 
 ### 🏗️ En Arquitectura e Ingeniería
 
-> [!note]- 🏛️ Diseño Estructural **1. Intersección de Vigas con Planos:**
+> [!note] 🏛️ Diseño Estructural **1. Intersección de Vigas con Planos:**
 > 
 > **Problema:** Una viga sigue la recta: $$L: (x,y,z) = (0,0,5) + t(3,4,0)$$
 > 
@@ -1056,7 +1060,7 @@ graph TD
 
 ### 🔬 En Física
 
-> [!tip]- ⚛️ Trayectorias y Campos **1. Proyectil en Plano Inclinado:**
+> [!tip] ⚛️ Trayectorias y Campos **1. Proyectil en Plano Inclinado:**
 > 
 > **Problema:** Proyectil lanzado desde origen con velocidad $\mathbf{v}_0 = (10, 0, 20)$ m/s. Plano inclinado: $z = 0.5x$
 > 
@@ -1094,7 +1098,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌐 Enlaces Conceptuales
+> [!quote] 🌐 Enlaces Conceptuales
 > 
 > **Prerrequisitos (Prerequisites):**
 > 
@@ -1134,7 +1138,7 @@ graph TD
 
 ## 💡 Consejos de Estudio
 
-> [!tip]- 🧠 Estrategias de Aprendizaje
+> [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para clasificar relaciones:**
 > 
@@ -1211,7 +1215,7 @@ graph TD
 
 ## 📚 Formulario de Referencia Rápida
 
-> [!example]- 📋 Resumen de Fórmulas Esenciales
+> [!example] 📋 Resumen de Fórmulas Esenciales
 > 
 > **Clasificación de relaciones:**
 > 
@@ -1258,7 +1262,7 @@ graph TD
 
 ## 🎓 Resumen Final
 
-> [!summary]- 📖 Puntos Clave para Recordar
+> [!summary] 📖 Puntos Clave para Recordar
 > 
 > **Tipos de relaciones:**
 > 

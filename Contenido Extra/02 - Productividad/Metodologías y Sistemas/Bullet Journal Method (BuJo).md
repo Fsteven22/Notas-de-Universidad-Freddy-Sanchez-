@@ -3,9 +3,9 @@
 ## 📖 Contexto
 
 > [!info] Definición El Bullet Journal Method es un sistema de organización analógico creado por Ryder Carroll, diseñador de productos digitales, que combina planificación, seguimiento de hábitos, diario personal y listas de tareas en un solo cuaderno. Es una práctica de mindfulness enfocada en la productividad intencional.
-
+>
 > [!tip] Filosofía central 🎯 **"Diseñado para ayudarte a vivir intencionalmente"** - Ryder Carroll. El BuJo no es solo una herramienta de organización, sino un método para reflexionar sobre cómo inviertes tu tiempo y energía más valiosos.
-
+>
 > [!warning] Problema que resuelve La **sobrecarga digital** y la **falta de reflexión intencional** sobre nuestras prioridades. En un mundo hiperconectado, el BuJo ofrece un espacio analógico para **desconectar, reflexionar y organizar** de manera consciente.
 
 ## 🔧 Componentes Fundamentales
@@ -33,7 +33,7 @@
 >    style E fill:#f3e5f5
 >    style F fill:#e8eaf6
 > ```
-
+>
 > [!abstract] Sistema de símbolos (Rapid Logging)
 > 
 > |Símbolo|Significado|Uso|
@@ -63,7 +63,7 @@
 > - Actualizar el índice constantemente
 > - Usar solo un color de tinta inicialmente
 > - Escribir la fecha en cada página
-
+>
 > [!example] 📅 Rutina mensual **🔄 Configuración mensual** (15-20 minutos):
 > 
 > ```mermaid
@@ -80,7 +80,7 @@
 >    style F fill:#e8f5e8
 >    style G fill:#fff3e0
 > ```
-
+>
 > [!example] 📝 Rutina diaria **🌅 Ritual matutino** (5-10 minutos):
 > 
 > - Crear nueva entrada diaria con fecha
@@ -104,7 +104,7 @@
 > - **Externalización cognitiva**: Libera la mente de recordar tareas
 > - **Ritual y rutina**: Crea estructura y reduce la fatiga de decisión
 > - **Migración consciente**: Evalúa la relevancia real de las tareas
-
+>
 > [!tip] Beneficios neurocientíficos ✅ **Mejora la memoria**: La escritura manual activa más áreas cerebrales  
 > ✅ **Reduce el estrés**: El ritual de organización calma la mente  
 > ✅ **Aumenta la autoconciencia**: La reflexión desarrolla metacognición  
@@ -148,7 +148,7 @@
 > Hoy logré concentrarme bien en la biblioteca.
 > Necesito mejorar la gestión de tiempo en ensayos.
 > ```
-
+>
 > [!example] 💼 BuJo profesional **🏢 Adaptaciones para el trabajo**:
 > 
 > - **📊 Tracker de proyectos**: Estado de múltiples proyectos
@@ -156,7 +156,7 @@
 > - **🎯 OKRs trimestrales**: Objetivos y resultados clave
 > - **📈 Métricas de productividad**: KPIs personales
 > - **🔄 Retrospectivas semanales**: Qué funcionó y qué mejorar
-
+>
 > [!example] 🎨 Elementos creativos (opcionales) **🌈 Personalización visual**:
 > 
 > - **Color coding**: Diferentes colores por área de vida
@@ -179,7 +179,7 @@
 > 🧘 Meditación      ✗ ✓ ✓ ✓ ✓ ✗ ✓ ✓ ✓ ✓
 > ⏰ Dormir 8h       ✓ ✗ ✗ ✓ ✓ ✓ ✓ ✗ ✓ ✓
 > ```
-
+>
 > [!tip] Métricas de efectividad **📊 Indicadores cuantitativos**:
 > 
 > - **Porcentaje de tareas completadas por día/semana**
@@ -215,7 +215,7 @@
 > - Páginas punteadas (dot grid) para flexibilidad
 > - Papel de 80-90 gsm para evitar sangrado de tinta
 > - 180-250 páginas para durar 6-12 meses
-
+>
 > [!example] ✒️ Herramientas de escritura **🖊️ Bolígrafos recomendados**:
 > 
 > - **Pilot G2 0.7mm**: Flujo consistente, disponible globalmente
@@ -256,7 +256,7 @@
 > - ⬆️ 80% aumento en satisfacción con organización personal
 > - ⬇️ 50% disminución en niveles de estrés académico
 > - 📚 100% cumplimiento en fechas de entrega
-
+>
 > [!example] 💼 Profesional freelance organizado **👤 Perfil**: Diseñador gráfico independiente, múltiples clientes, proyectos simultáneos
 > 
 > **🎯 Desafíos específicos**:
@@ -326,7 +326,7 @@
 > - **YouTube tutorials**: Miles de canales especializados
 > - **Meetups locales**: Comunidades de práctica presenciales
 > - **Challenges mensuales**: Desafíos creativos globales
-
+>
 > [!warning] Errores comunes a evitar ❌ **Perfectionism paralysis**: Obsesionarse con la estética sobre funcionalidad  
 > ❌ **Overcomplication**: Crear sistemas demasiado complejos para mantener  
 > ❌ **Inconsistency**: No mantener las rutinas diarias/semanales básicas  

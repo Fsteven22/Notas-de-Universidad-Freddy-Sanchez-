@@ -459,7 +459,7 @@
 > - Liu, Z. & Huang, X. (2020). "Digital reading vs. traditional reading: Cognitive load perspective"
 > - Chen, M. et al. (2019). "Speed-comprehension trade-offs in multilingual readers"
 > - Rodriguez, A. (2021). "Neuroplasticity in adult reading skill development"
-
+>
 > [!link]+ **Conexiones con Otras Notas**
 > 
 > ### 📋 **Prerrequisitos Esenciales:**

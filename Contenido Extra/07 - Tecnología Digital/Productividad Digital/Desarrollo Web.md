@@ -154,7 +154,7 @@
 > > Conceptos de bases de datos relacionales y no relacionales.
 > 
 > ---
-
+>
 > [!link]- ## 🔗 Notas Recomendadas y Prerrequisitos
 > 
 > ### Prerrequisitos

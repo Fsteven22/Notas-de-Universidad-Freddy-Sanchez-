@@ -3,7 +3,7 @@
 ## 🎯 Fundamentos del Método KonMari
 
 > [!info] Definición El Método KonMari, creado por Marie Kondo, es un sistema revolucionario de organización que se basa en conservar solo aquellos objetos que "despiertan alegría" (spark joy) y crear un estilo de vida que genere felicidad a través del orden consciente.
-
+>
 > [!tip] Filosofía Central
 > 
 > - 💖 **Joy-Based Decision**: Conservar solo lo que genera alegría
@@ -93,7 +93,7 @@ flowchart TD
 > - Abrigos de temporada
 > - Ropa deportiva y de casa
 > - Accesorios (cinturones, bolsos, sombreros)
-
+>
 > [!info] Técnica de Doblado KonMari **Principios del Doblado:**
 > 
 > - Cada prenda debe poder "pararse" por sí sola
@@ -116,7 +116,7 @@ flowchart TD
 > - Quieres releer o consultar específicamente
 > - Te inspiran solo con verlos
 > - Representan quién eres ahora (no quien eras)
-
+>
 > [!warning] Libros a Considerar Descartar
 > 
 > - Libros que "algún día" leerás
@@ -137,7 +137,7 @@ flowchart TD
 > - La mayoría de papeles se pueden conseguir de nuevo
 > - Digitalizar documentos importantes
 > - Crear un sistema simple archivo/descarte
-
+>
 > [!tip] Sistema de Papeles **Conservar solo:**
 > 
 > - Documentos legales únicos
@@ -162,7 +162,7 @@ flowchart TD
 > - Artículos de baño y cosméticos
 > - Herramientas y materiales
 > - Suministros de oficina
-
+>
 > [!tip] Estrategia por Subcategoría **Método de Subcategorías:**
 > 
 > 1. Dividir komono en grupos lógicos
@@ -185,7 +185,7 @@ flowchart TD
 > - Las decisiones son más complejas
 > - Ya tienes práctica con el método
 > - Tu definición de "alegría" está más afinada
-
+>
 > [!tip] Proceso Sentimental **Técnica Especial:**
 > 
 > - Crear ambiente tranquilo y sin prisa
@@ -232,7 +232,7 @@ graph TD
 > - **Fácil acceso** para uso frecuente
 > - **Lógica intuitiva** en la ubicación
 > - **Retorno inmediato** después del uso
-
+>
 > [!tip] Estrategias de Ubicación **Por Frecuencia de Uso:**
 > 
 > - Uso diario: Al alcance de la mano
@@ -249,7 +249,7 @@ graph TD
 > - **Contenedores transparentes**: Visibilidad total
 > - **Etiquetas**: Identificación clara
 > - **Ganchos adhesivos**: Para objetos ligeros
-
+>
 > [!warning] Evitar Estos Errores
 > 
 > - Comprar organizadores antes de descartar
@@ -315,7 +315,7 @@ mindmap
 > - **Papeles**: 0.5-1 día
 > - **Komono**: 1-2 semanas
 > - **Sentimentales**: 2-5 días
-
+>
 > [!warning] Factores que Afectan el Tiempo
 > 
 > - Cantidad de posesiones acumuladas
@@ -379,7 +379,7 @@ mindmap
 > - Compras conscientes: ¿despierta alegría?
 > - Revisión anual ligera por categoría
 > - Gratitud diaria hacia el espacio ordenado
-
+>
 > [!warning] Señales de Alerta
 > 
 > - Acumulación en "zonas de aterrizaje"
@@ -410,9 +410,9 @@ mindmap
 ## 📚 Referencias
 
 > [!quote] [[Minimalismo Digital]] El Método KonMari es una puerta de entrada al minimalismo basado en alegría más que en privación
-
+>
 > [!quote] [[Gestión de la Energía Personal]] Un espacio organizado reduce la carga cognitiva y libera energía mental para actividades importantes
-
+>
 > [!quote] [[Mindfulness]] La práctica de preguntarse sobre la alegría desarrolla mayor consciencia y conexión con el momento presente
 
 ## 📖 Notas Recomendadas

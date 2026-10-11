@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🌐 Brecha Digital
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la Brecha Digital?
+> [!info] 💡 ¿Qué es la Brecha Digital?
 > 
 > La **brecha digital** se define como la separación que existe entre las personas (comunidades, estados, países...) que utilizan las tecnologías de la información y comunicación como una parte rutinaria de su vida diaria y aquéllas que no tienen acceso a las mismas o que aunque las tengan no saben cómo utilizarlas.
 > 
@@ -24,7 +28,6 @@
 >     C --> C3[Desinformación]
 >     C --> C4[Inaccesibilidad a servicios]
 >     C --> C5[Aumenta la desigualdad]
-> 
 >     style B fill:#e1f5ff
 >     style C fill:#ffe1e1
 > ```
@@ -33,13 +36,13 @@
 
 ## 📖 Definición y Características
 
-> [!note]- 📋 ¿Qué implica la Brecha Digital?
+> [!note] 📋 ¿Qué implica la Brecha Digital?
 > 
 > - Es la **desigualdad de posibilidades** que existen para acceder a la información, al conocimiento y la educación mediante las TIC.
 > - **No se relaciona solamente con aspectos exclusivamente de carácter tecnológico.**
 > - Refleja la combinación de **factores socioeconómicos** y en particular de limitaciones y **falta de infraestructura** de telecomunicaciones e informática.
-
-> [!tip]- 💡 ¿Solo entregar computadoras reduce la brecha?
+>
+> [!tip] 💡 ¿Solo entregar computadoras reduce la brecha?
 > 
 > No es suficiente. Existen otras barreras:
 > 
@@ -53,7 +56,7 @@
 
 ## ⚠️ Causas
 
-> [!note]- 🔍 Tipos de causas
+> [!note] 🔍 Tipos de causas
 > 
 > |Causa|Descripción|
 > |---|---|
@@ -70,7 +73,7 @@
 
 ## 📉 Efectos
 
-> [!warning]- ⚡ Consecuencias de la Brecha Digital
+> [!warning] ⚡ Consecuencias de la Brecha Digital
 > 
 > - **Pobreza** — quienes no acceden a la tecnología quedan fuera del mercado laboral digital
 > - **Desaceleración económica** — países con menor conectividad crecen más lento
@@ -82,7 +85,7 @@
 
 ## 📊 Datos Globales
 
-> [!note]- 🌍 Estadísticas
+> [!note] 🌍 Estadísticas
 > 
 > - **2 de cada 3** habitantes del planeta viven en un área con cobertura móvil de banda ancha (3G o superior)
 > - Los servicios de telecomunicaciones son más asequibles cada año en términos económicos
@@ -92,7 +95,7 @@
 
 ## ❓ Reflexión: ¿Cuál es el problema?
 
-> [!question]- 🤔 Preguntas clave sobre la brecha digital
+> [!question] 🤔 Preguntas clave sobre la brecha digital
 > 
 > - ¿Cómo está la brecha digital en este momento? (datos estadísticos)
 > - ¿Qué debe hacer el **gobierno**?

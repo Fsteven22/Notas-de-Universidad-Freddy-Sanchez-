@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # Introducción a Python 🐍
 
 > [!info]+ **¿Qué es Python?** **Python** es un lenguaje de programación de alto nivel, interpretado y de propósito general, ampliamente recomendado para iniciarse en la programación debido a su **sintaxis clara y legible** que se asemeja al lenguaje natural.
@@ -193,7 +197,7 @@ mindmap
 > - **I**nteractuar con la comunidad
 > - **C**comentar tu código siempre
 > - **A**plicar lo aprendido en proyectos reales
-
+>
 > [!warning]+ **Errores Comunes de Principiantes**
 > 
 > - ❌ No practicar regularmente
@@ -241,7 +245,7 @@ mindmap
 > - [[Manejo de Archivos]] - Lectura y escritura
 > - [[APIs y Requests]] - Comunicación con servicios web
 > - [[Bases de Datos con Python]] - SQLite, PostgreSQL
-
+>
 > [!success]+ **Proyecto Práctico Sugerido**
 > 
 > ### 🎯 Tu Primera Aplicación: Calculadora Personal

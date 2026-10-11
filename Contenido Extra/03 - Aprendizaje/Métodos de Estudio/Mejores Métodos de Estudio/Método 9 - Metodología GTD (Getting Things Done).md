@@ -3,9 +3,9 @@
 ## 📖 Contexto
 
 > [!info] Definición Getting Things Done (GTD) es una metodología de productividad personal desarrollada por David Allen que busca liberar la mente de la tarea de recordar pendientes, creando un sistema externo confiable para capturar, organizar y procesar todas las tareas y compromisos.
-
+>
 > [!tip] Filosofía central 🧠 **"Tu mente es para tener ideas, no para guardarlas"** - David Allen. GTD se basa en el principio de que nuestra capacidad cognitiva debe dedicarse a pensar creativamente, no a recordar tareas pendientes.
-
+>
 > [!warning] Problema que resuelve El estrés y la ansiedad causados por la **sobrecarga mental** de intentar recordar múltiples compromisos, fechas límite y tareas simultáneamente, lo que reduce significativamente la productividad y el bienestar.
 
 ## 🔧 Componentes Fundamentales
@@ -26,7 +26,7 @@
 >    style D fill:#fce4ec
 >    style E fill:#e8eaf6
 > ```
-
+>
 > [!abstract] Elementos del sistema
 > 
 > - **📥 Bandejas de entrada**: Lugares designados para capturar todo
@@ -49,7 +49,7 @@
 > - 📄 Bandeja física en el escritorio
 > 
 > **🔑 Regla de oro**: Si algo ocupa tu mente más de 30 segundos, debe ser capturado externamente
-
+>
 > [!example] 🔍 Paso 2: Aclarar (Procesar) **Algoritmo de decisión**:
 > 
 > ```mermaid
@@ -66,7 +66,7 @@
 >    J -->|Sí| K[📅 Programar en calendario]
 >    J -->|No| L[📋 Agregar a lista de acciones]
 > ```
-
+>
 > [!example] 🗂️ Paso 3: Organizar **Sistema de listas por contexto**:
 > 
 > - 📞 **@Llamadas**: Llamadas telefónicas pendientes
@@ -76,7 +76,7 @@
 > - 🛒 **@Compras**: Lista de compras y mandados
 > - 👥 **@Agenda**: Temas para discutir con personas específicas
 > - 🧠 **@Mental**: Tareas que requieren concentración profunda
-
+>
 > [!example] 🔄 Paso 4: Reflexionar **📊 Revisión semanal** (2 horas aproximadamente):
 > 
 > 1. **📥 Procesar bandejas de entrada** hasta vaciarlas
@@ -85,7 +85,7 @@
 > 4. **📅 Revisar calendario** de la semana pasada y próxima
 > 5. **💭 Revisar "Algún día/Tal vez"** para activar proyectos
 > 6. **🎯 Definir objetivos** y próximas acciones para la semana
-
+>
 > [!example] ⚡ Paso 5: Comprometerse (Hacer) **Criterios para elegir qué hacer**:
 > 
 > 1. **🎯 Contexto**: ¿Dónde estoy y qué herramientas tengo?
@@ -101,7 +101,7 @@
 > - **Carga cognitiva**: Liberar memoria de trabajo mejora el rendimiento
 > - **Teoría de la atención**: Un sistema externo confiable reduce la ansiedad
 > - **Flujo (Flow)**: La claridad mental facilita estados de concentración profunda
-
+>
 > [!tip] Beneficios neurocientíficos ✅ **Reduce cortisol**: Menos estrés por tareas "perdidas"  
 > ✅ **Mejora dopamina**: Sistema de recompensas por completar acciones  
 > ✅ **Optimiza memoria de trabajo**: Libera recursos para creatividad  
@@ -114,7 +114,7 @@
 > ❌ **Contextos demasiado específicos**: Crear demasiadas listas micro-contextuales  
 > ❌ **Saltarse la revisión semanal**: Es el corazón del mantenimiento del sistema  
 > ❌ **Perfectionism paralysis**: El sistema debe ser funcional, no perfecto
-
+>
 > [!example] Herramientas digitales recomendadas **📱 Apps especializadas en GTD**:
 > 
 > - **OmniFocus** (iOS/Mac): Implementación más fiel a GTD
@@ -128,7 +128,7 @@
 > - **Obsidian**: Para quien prefiere markdown y enlaces
 > - **Google Tasks + Calendar**: Solución gratuita integrada
 > - **Trello**: Implementación Kanban de GTD
-
+>
 > [!tip] Setup inicial (Primera semana) **Día 1-2**: Configurar herramientas y bandejas de entrada  
 > **Día 3-4**: Hacer "mind sweep" completo (vaciar la mente)  
 > **Día 5-6**: Procesar y organizar todo lo capturado  
@@ -149,7 +149,7 @@
 >    "10,000 ft" : "🎯 Proyectos Actuales"
 >    "Runway" : "⚡ Acciones Siguientes"
 > ```
-
+>
 > [!info] Aplicación de niveles
 > 
 > - **✈️ Runway - Acciones**: Lista diaria de tareas específicas
@@ -176,7 +176,7 @@
 > - 🧠 Mejora de 60% en claridad mental reportada
 > - 📊 Aumento de 35% en proyectos completados
 > - 😌 Disminución de 50% en estrés relacionado con trabajo
-
+>
 > [!example] Estudiante universitario **👤 Perfil**: Estudiante de ingeniería con múltiples materias y proyectos
 > 
 > **🎯 Adaptación GTD para estudios**:
@@ -231,7 +231,7 @@
 > - **Contextos de equipo**: @Reunión-Equipo, @Revisar-con-Jefe
 > - **Proyectos departamentales**: Visibilidad de objetivos comunes
 > - **Revisiones grupales**: Coordinación de esfuerzos semanales
-
+>
 > [!example] Micro-GTD para estudiantes **📚 Simplificación académica**:
 > 
 > 1. **Capturar**: Todas las tareas y fechas en una app
@@ -255,7 +255,7 @@
 > - Reducción en tareas "perdidas" u olvidadas
 > - Mejora en cumplimiento de compromisos
 > - Tiempo libre recuperado para actividades importantes
-
+>
 > [!tip] Evaluación cualitativa **Preguntas de autorreflexión mensual**:
 > 
 > 1. ¿Siento que tengo control sobre mis compromisos?

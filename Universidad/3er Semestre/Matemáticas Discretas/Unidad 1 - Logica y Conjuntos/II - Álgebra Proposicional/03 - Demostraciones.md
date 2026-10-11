@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🧾 Demostraciones
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una demostración matemática?
+> [!info] 💡 ¿Qué es una demostración matemática?
 > 
 > Una **demostración** es un argumento lógico riguroso que establece la verdad de una proposición a partir de **axiomas**, **definiciones** y **resultados previamente probados**.
 > 
@@ -12,7 +16,7 @@
 
 ## 📚 Vocabulario Matemático Fundamental
 
-> [!note]- 📖 Definición 5 — Términos esenciales
+> [!note] 📖 Definición 5 — Términos esenciales
 > 
 > | Término | Definición |
 > |---|---|
@@ -26,7 +30,7 @@
 
 ## 📐 Estructura General de un Teorema
 
-> [!note]- 📋 Forma estándar
+> [!note] 📋 Forma estándar
 > 
 > La mayoría de los teoremas tienen la siguiente forma:
 > 
@@ -42,7 +46,7 @@
 
 ## 🔢 Definición de Paridad
 
-> [!note]- 📖 Definición 6 — Números Pares e Impares
+> [!note] 📖 Definición 6 — Números Pares e Impares
 > 
 > Sea $n$ un número entero:
 > 
@@ -57,7 +61,7 @@
 
 ## 🎯 Técnica 1 — Prueba Directa
 
-> [!tip]- ⚙️ ¿En qué consiste?
+> [!tip] ⚙️ ¿En qué consiste?
 > 
 > Se **supone que $p$ es verdadera** y, mediante razonamiento lógico usando axiomas, definiciones y teoremas previos, se **concluye que $q$ es verdadera**.
 > 
@@ -65,7 +69,7 @@
 > Hipótesis p  →  razonamiento  →  Conclusión q
 > ```
 
-> [!example]- 📝 Ejemplo 12 — Suma de impar y par es impar
+> [!example] 📝 Ejemplo 12 — Suma de impar y par es impar
 > 
 > **Teorema:** Para cualesquiera enteros $m$ y $n$, si $m$ es impar y $n$ es par, entonces $m + n$ es impar.
 > 
@@ -82,7 +86,7 @@
 > 
 > Haciendo $k = k_1 + k_2 \in \mathbb{Z}$, se tiene $m + n = 2k + 1$, es decir, $m + n$ es **impar**. $\blacksquare$
 
-> [!example]- 📝 Ejemplo 15 — El cuadrado de un impar es impar
+> [!example] 📝 Ejemplo 15 — El cuadrado de un impar es impar
 > 
 > **Teorema:** Para todo entero $m$, si $m$ es impar entonces $m^2$ es impar.
 > 
@@ -98,7 +102,7 @@
 
 ## 🔁 Técnica 2 — Prueba por Contradicción
 
-> [!tip]- ⚙️ ¿En qué consiste?
+> [!tip] ⚙️ ¿En qué consiste?
 > 
 > También llamada **prueba indirecta**. Para demostrar $p \to q$:
 > 
@@ -112,7 +116,7 @@
 >                              p → q es verdadera ✅
 > ```
 
-> [!example]- 📝 Ejemplo 13 — Prueba por contradicción
+> [!example] 📝 Ejemplo 13 — Prueba por contradicción
 > 
 > **Teorema:** Para todos $x, y \in \mathbb{R}$, si $x + y \geq 2$ entonces $x \geq 1$ o $y \geq 1$.
 > 
@@ -137,7 +141,7 @@
 
 ## 🔂 Técnica 3 — Prueba por Contrarrecíproco
 
-> [!tip]- ⚙️ ¿En qué consiste?
+> [!tip] ⚙️ ¿En qué consiste?
 > 
 > Es un caso especial de la prueba por contradicción, basado en la equivalencia:
 > 
@@ -154,7 +158,7 @@
 >                         p → q es verdadera ✅
 > ```
 
-> [!example]- 📝 Ejemplo 14 — Prueba por contrarrecíproco
+> [!example] 📝 Ejemplo 14 — Prueba por contrarrecíproco
 > 
 > **Teorema:** Para todo entero $m$, si $m^2$ es impar entonces $m$ es impar.
 > 
@@ -170,7 +174,7 @@
 > 
 > Hemos demostrado $\neg q \to \neg p$, equivalente a $p \to q$. $\blacksquare$
 
-> [!success]- ⭐ Corolario — Equivalencia del cuadrado
+> [!success] ⭐ Corolario — Equivalencia del cuadrado
 > 
 > Combinando los Ejemplos 14 y 15 (usando contrarrecíproco):
 > 
@@ -184,7 +188,7 @@
 
 ## 📚 Técnica 4 — Prueba por Casos
 
-> [!tip]- ⚙️ ¿En qué consiste?
+> [!tip] ⚙️ ¿En qué consiste?
 > 
 > Se emplea cuando la hipótesis se divide en **casos exhaustivos y excluyentes** de manera natural. Si $p \equiv p_1 \vee p_2 \vee \cdots \vee p_n$, entonces:
 > 
@@ -201,7 +205,7 @@
 >    p → q verdadera ✅
 > ```
 
-> [!example]- 📝 Ejemplo 16a — $|x| = |-x|$
+> [!example] 📝 Ejemplo 16a — $|x| = |-x|$
 > 
 > **Teorema:** $\forall x \in \mathbb{R} : |x| = |-x|$
 > 
@@ -215,7 +219,7 @@
 > 
 > En ambos casos se cumple. $\blacksquare$
 
-> [!example]- 📝 Ejemplo 16b — $x \leq |x|$
+> [!example] 📝 Ejemplo 16b — $x \leq |x|$
 > 
 > **Teorema:** $\forall x \in \mathbb{R} : x \leq |x|$
 > 
@@ -229,7 +233,7 @@
 > 
 > En ambos casos $x \leq |x|$. $\blacksquare$
 
-> [!example]- 📝 Ejemplo 16c — Desigualdad Triangular $|x+y| \leq |x| + |y|$
+> [!example] 📝 Ejemplo 16c — Desigualdad Triangular $|x+y| \leq |x| + |y|$
 > 
 > **Teorema:** $\forall x, y \in \mathbb{R} : |x + y| \leq |x| + |y|$
 > 
@@ -247,7 +251,7 @@
 > 
 > En todos los casos $|x+y| \leq |x|+|y|$. $\blacksquare$
 
-> [!example]- 📝 Ejemplo 16d — Fórmulas del máximo y mínimo
+> [!example] 📝 Ejemplo 16d — Fórmulas del máximo y mínimo
 > 
 > **Teoremas:**
 > 
@@ -286,7 +290,7 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 ## 📊 Comparación de Técnicas
 
-> [!success]- 🗂️ ¿Cuándo usar cada técnica?
+> [!success] 🗂️ ¿Cuándo usar cada técnica?
 > 
 > | Técnica | ¿Cuándo usarla? | Estructura |
 > |---|---|---|
@@ -299,7 +303,7 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 ## 🔗 Base Lógica de cada Técnica
 
-> [!note]- 📋 Fundamento en el álgebra de proposiciones
+> [!note] 📋 Fundamento en el [[01 - Algebra de Proposiciones|álgebra de proposiciones]]
 > 
 > Cada técnica se apoya en una equivalencia lógica ya demostrada:
 > 
@@ -317,21 +321,18 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 ```mermaid
 graph TD
-    A[Teorema a demostrar<br/>p → q] --> B{¿Qué estrategia?}
+    A[Teorema a demostrar p → q] --> B{¿Qué estrategia?}
 
-    B --> C[Prueba Directa<br/>Suponer p, concluir q]
-    B --> D[Por Contradicción<br/>Suponer p ∧ ¬q, llegar a r ∧ ¬r]
-    B --> E[Por Contrarrecíproco<br/>Suponer ¬q, concluir ¬p]
-    B --> F[Por Casos<br/>p₁∨p₂∨...∨pₙ → demostrar cada caso]
+    B --> C[Prueba Directa Suponer p, concluir q]
+    B --> D[Por Contradicción Suponer p ∧ ¬q, llegar a r ∧ ¬r]
+    B --> E[Por Contrarrecíproco Suponer ¬q, concluir ¬p]
+    B --> F[Por Casos p₁∨p₂∨...∨pₙ → demostrar cada caso]
 
     C --> G[✅ Demostración completa]
     D --> G
     E --> G
     F --> G
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#4a2d6a,color:#fff
-    style G fill:#2d6a4f,color:#fff
 ```
 
 ---

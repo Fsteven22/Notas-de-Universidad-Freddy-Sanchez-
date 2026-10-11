@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔒 Encapsulamiento y Visibilidad
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es el Encapsulamiento?
+> [!info] 💡 ¿Qué es el Encapsulamiento?
 > 
 > El **encapsulamiento** es uno de los pilares fundamentales de la POO. Consiste en **ocultar los detalles internos** de implementación y exponer solo una interfaz controlada para interactuar con el objeto.
 > 
@@ -44,7 +48,7 @@ graph TB
 
 ### 📊 Los 4 Niveles de Visibilidad
 
-> [!tip]- 🎨 Tabla Completa de Modificadores
+> [!tip] 🎨 Tabla Completa de Modificadores
 > 
 > |Modificador|Clase|Paquete|Subclase|Global|Símbolo|
 > |---|---|---|---|---|---|
@@ -85,28 +89,24 @@ graph TB
 
 ### 🎯 Uso Apropiado de Modificadores
 
-> [!success]- 📋 Guía de Decisión
+> [!success] 📋 Guía de Decisión
 > 
 > ```mermaid
 > graph TD
 >     A{¿Qué estás<br/>declarando?} --> B[Atributo]
 >     A --> C[Método]
 >     A --> D[Clase]
->     
 >     B --> E{¿Debe ser<br/>modificable<br/>externamente?}
 >     E -->|No| F[🔴 private]
 >     E -->|Sí, con control| G[🟢 private + getter/setter]
 >     E -->|Sí, libremente| H[🟢 public - Raramente]
->     
 >     C --> I{¿Parte de la<br/>interfaz pública?}
 >     I -->|Sí| J[🟢 public]
 >     I -->|No| K[🔴 private]
 >     I -->|Solo herencia| L[🟡 protected]
->     
 >     D --> M{¿Usada<br/>externamente?}
 >     M -->|Sí| N[🟢 public]
 >     M -->|Solo en paquete| O[🟠 default]
->     
 >     style F fill:#ffe1e1
 >     style G fill:#e1ffe1
 >     style J fill:#e1ffe1
@@ -129,7 +129,7 @@ graph TB
 
 ### 🔓 Sin Encapsulamiento (Mal diseño)
 
-> [!warning]- ❌ Ejemplo de Código Vulnerable
+> [!warning] ❌ Ejemplo de Código Vulnerable
 > 
 > ```java
 > // ❌ MAL DISEÑO - Atributos públicos
@@ -172,7 +172,7 @@ graph TB
 
 ### 🔐 Con Encapsulamiento (Buen diseño)
 
-> [!success]- ✅ Ejemplo de Código Protegido
+> [!success] ✅ Ejemplo de Código Protegido
 > 
 > ```java
 > // ✅ BUEN DISEÑO - Atributos privados con control
@@ -300,7 +300,7 @@ graph TB
 
 ### 📖 Conceptos Fundamentales
 
-> [!note]- 🔑 Métodos de Acceso
+> [!note] 🔑 Métodos de Acceso
 > 
 > Los **getters** y **setters** son métodos que permiten **leer** y **modificar** atributos privados de forma controlada.
 > 
@@ -360,7 +360,7 @@ graph TB
 
 ### 🎯 Patrones Avanzados
 
-> [!example]- 🚀 Técnicas Especializadas
+> [!example] 🚀 Técnicas Especializadas
 > 
 > **1. Getter con lógica computada:**
 > 
@@ -498,7 +498,7 @@ graph TB
 
 ## 🎨 Ejemplo Completo: Sistema de Empleados
 
-> [!example]- 💼 Implementación Profesional
+> [!example] 💼 Implementación Profesional
 > 
 > ```java
 > public class Empleado {
@@ -714,7 +714,7 @@ Total de empleados: " + Empleado.getTotalEmpleados());
 
 ### ✅ Principios de Encapsulamiento
 
-> [!success]- 💡 Reglas de Oro
+> [!success] 💡 Reglas de Oro
 > 
 > **1. Siempre hacer atributos privados:**
 > 
@@ -835,7 +835,6 @@ mindmap
 ````
 
 > [!success]  🎯 Tabla de Referencia Rápida
-> 
 > |Concepto|Cuándo usar|Ejemplo|
 > |---|---|---|
 > |`private`|Atributos y métodos internos|`private String nombre;`|
@@ -844,40 +843,33 @@ mindmap
 > |Getter|Leer atributo privado|`public String getNombre()`|
 > |Setter|Modificar con validación|`public void setEdad(int edad)`|
 > |Método de negocio|Operaciones específicas|`depositar()`, `retirar()`|
-> 
 ---
 
 ## 💪 Ejercicios Prácticos
 
-> [!example]- 🎯 Práctica 1: Clase Fecha
-> 
+> [!example] 🎯 Práctica 1: Clase Fecha
 > ```java
 > public class Fecha {
 >     // Atributos privados
 >     private int dia;
 >     private int mes;
 >     private int anio;
->     
 >     // Constructor con validación
 >     public Fecha(int dia, int mes, int anio) {
 >         setDia(dia);
 >         setMes(mes);
 >         setAnio(anio);
 >     }
->     
 >     // Getters
 >     public int getDia() {
 >         return dia;
 >     }
->     
 >     public int getMes() {
 >         return mes;
 >     }
->     
 >     public int getAnio() {
 >         return anio;
 >     }
->     
 >     // Setters con validación
 >     public void setDia(int dia) {
 >         if (dia < 1 || dia > 31) {
@@ -885,33 +877,29 @@ mindmap
 >         }
 >         this.dia = dia;
 >     }
->     
 >     public void setMes(int mes) {
 >         if (mes < 1 || mes > 12) {
 >             throw new IllegalArgumentException("Mes debe estar entre 1 y 12");
 >         }
 >         this.mes = mes;
 >     }
->     
 >     public void setAnio(int anio) {
 >         if (anio < 1900 || anio > 2100) {
 >             throw new IllegalArgumentException("Año debe estar entre 1900 y 2100");
 >         }
 >         this.anio = anio;
 >     }
->     
 >     // Método computado
 >     public String getFechaFormateada() {
 >         return String.format("%02d/%02d/%04d", dia, mes, anio);
 >     }
->     
 >     public void mostrarInfo() {
 >         System.out.println("📅 Fecha: " + getFechaFormateada());
 >     }
 > }
 > ```
-
-> [!example]- 🎯 Práctica 2: Clase Temperatura
+>
+> [!example] 🎯 Práctica 2: Clase Temperatura
 > 
 > ```java
 > public class Temperatura {
@@ -969,7 +957,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Has Aprendido
+> [!quote] 🌟 Has Aprendido
 > 
 > ✅ Los 4 modificadores de acceso y cuándo usarlos  
 > ✅ Principios del encapsulamiento  

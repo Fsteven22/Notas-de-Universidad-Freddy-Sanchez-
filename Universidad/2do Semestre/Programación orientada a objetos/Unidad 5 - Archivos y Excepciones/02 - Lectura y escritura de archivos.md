@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📁 Lectura y Escritura de Archivos (Vista General)
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la E/S (Entrada/Salida) de Archivos?
+> [!info] 💡 ¿Qué es la E/S (Entrada/Salida) de Archivos?
 > 
 > La **E/S de archivos** (Input/Output) es el conjunto de operaciones que permiten a los programas **comunicarse con el sistema de archivos** del ordenador. Esta capacidad es fundamental para que las aplicaciones puedan **almacenar y recuperar información** de forma permanente.
 > 
@@ -54,7 +58,7 @@ graph TB
 
 ### 📊 Jerarquía de Clases
 
-> [!note]- 🌳 Organización del paquete java.io
+> [!note] 🌳 Organización del paquete java.io
 > 
 > Java proporciona un rico conjunto de clases para trabajar con archivos, organizadas en una **jerarquía lógica** que separa responsabilidades.
 > 
@@ -68,46 +72,38 @@ graph TB
 >         +length()
 >         +getName()
 >     }
->     
 >     class Reader {
 >         <<Abstracta - Lectura>>
 >         +read()
 >         +close()
 >     }
->     
 >     class Writer {
 >         <<Abstracta - Escritura>>
 >         +write()
 >         +flush()
 >         +close()
 >     }
->     
 >     class FileReader {
 >         <<Lectura básica>>
 >         +read() char
 >     }
->     
 >     class FileWriter {
 >         <<Escritura básica>>
 >         +write(String)
 >     }
->     
 >     class BufferedReader {
 >         <<Lectura eficiente>>
 >         +readLine() String
 >     }
->     
 >     class BufferedWriter {
 >         <<Escritura eficiente>>
 >         +write(String)
 >         +newLine()
 >     }
->     
 >     Reader <|-- FileReader
 >     Reader <|-- BufferedReader
 >     Writer <|-- FileWriter
 >     Writer <|-- BufferedWriter
->     
 >     FileReader --> File : usa
 >     FileWriter --> File : usa
 > ```
@@ -124,7 +120,7 @@ graph TB
 
 ### 🔄 Flujo de Operaciones
 
-> [!example]- ⚡ Cómo Fluyen los Datos
+> [!example] ⚡ Cómo Fluyen los Datos
 > 
 > **Lectura de archivos:**
 > 
@@ -134,7 +130,6 @@ graph TB
 >     participant BR as BufferedReader
 >     participant FR as FileReader
 >     participant F as Archivo (Disco)
->     
 >     P->>BR: readLine()
 >     BR->>BR: ¿Hay datos en buffer?
 >     alt Buffer vacío
@@ -154,7 +149,6 @@ graph TB
 >     participant BW as BufferedWriter
 >     participant FW as FileWriter
 >     participant F as Archivo (Disco)
->     
 >     P->>BW: write("datos")
 >     BW->>BW: Agregar a buffer
 >     alt Buffer lleno o flush/close
@@ -179,7 +173,7 @@ graph TB
 
 ### 🔍 Conceptos Fundamentales
 
-> [!tip]- 📥 ¿Cómo Leer un Archivo?
+> [!tip] 📥 ¿Cómo Leer un Archivo?
 > 
 > **Proceso paso a paso:**
 > 
@@ -191,7 +185,6 @@ graph TB
 >     D --> E{¿Más datos?}
 >     E -->|Sí| C
 >     E -->|No| F[5. Cerrar<br/>archivo]
->     
 >     style A fill:#fff4e1
 >     style C fill:#e1f5ff
 >     style F fill:#e1ffe1
@@ -221,7 +214,7 @@ graph TB
 
 ### 🛠️ Técnicas de Lectura
 
-> [!success]- 🎯 Estrategias Según el Caso de Uso
+> [!success] 🎯 Estrategias Según el Caso de Uso
 > 
 > **1. Leer todo el archivo en memoria:**
 > 
@@ -295,15 +288,12 @@ graph TB
 >     A{Tamaño del<br/>archivo?} --> B[< 1 MB]
 >     A --> C[1-100 MB]
 >     A --> D[> 100 MB]
->     
 >     B --> E[Cargar todo<br/>en memoria]
 >     C --> F[Decidir según<br/>necesidad]
 >     D --> G[Streaming<br/>obligatorio]
->     
 >     F --> H{¿Acceso<br/>aleatorio?}
 >     H -->|Sí| E
 >     H -->|No| G
->     
 >     style E fill:#e1ffe1
 >     style G fill:#e1f5ff
 >     style F fill:#fff4e1
@@ -315,7 +305,7 @@ graph TB
 
 ### 📝 Conceptos Fundamentales
 
-> [!tip]- 📤 ¿Cómo Escribir un Archivo?
+> [!tip] 📤 ¿Cómo Escribir un Archivo?
 > 
 > **Proceso paso a paso:**
 > 
@@ -327,7 +317,6 @@ graph TB
 >     D -->|Sí| C
 >     D -->|No| E[4. Flush<br/>buffer]
 >     E --> F[5. Cerrar<br/>archivo]
->     
 >     style A fill:#fff4e1
 >     style C fill:#e1f5ff
 >     style F fill:#e1ffe1
@@ -364,7 +353,7 @@ graph TB
 
 ### 🔧 Técnicas de Escritura
 
-> [!success]- 🎯 Estrategias Según el Caso de Uso
+> [!success] 🎯 Estrategias Según el Caso de Uso
 > 
 > **1. Escribir colección completa:**
 > 
@@ -446,16 +435,12 @@ graph TB
 > graph TB
 >     A{Modo de<br/>escritura?} --> B[Sobrescribir]
 >     A --> C[Append]
->     
 >     B --> D[FileWriter archivo]
 >     C --> E[FileWriter archivo, true]
->     
 >     D --> F[❌ Contenido anterior<br/>se pierde]
 >     E --> G[✅ Contenido anterior<br/>se conserva]
->     
 >     F --> H[Regenerar archivo<br/>completo]
 >     G --> I[Agregar al final<br/>logs, históricos]
->     
 >     style B fill:#ffe1e1
 >     style C fill:#e1ffe1
 > ```
@@ -466,7 +451,7 @@ graph TB
 
 ### 📋 Clase File: El Inspector
 
-> [!info]- 🗂️ Trabajar con la Clase File
+> [!info] 🗂️ Trabajar con la Clase File
 > 
 > La clase `File` representa una **ruta en el sistema de archivos**, NO el contenido del archivo.
 > 
@@ -549,7 +534,7 @@ graph TB
 
 ### 📁 Trabajar con Directorios
 
-> [!example]- 🗃️ Explorar el Sistema de Archivos
+> [!example] 🗃️ Explorar el Sistema de Archivos
 > 
 > **1. Listar contenido de un directorio:**
 > 
@@ -636,7 +621,6 @@ graph TB
 >     E --> C
 >     F --> C
 >     C --> G[Fin]
->     
 >     style A fill:#e1f5ff
 >     style E fill:#fff4e1
 >     style F fill:#e1ffe1
@@ -648,7 +632,7 @@ graph TB
 
 ### 🛡️ Estrategia Defensiva
 
-> [!warning]- 🚨 Excepciones Comunes en E/S
+> [!warning] 🚨 Excepciones Comunes en E/S
 > 
 > **Jerarquía de excepciones:**
 > 
@@ -658,7 +642,6 @@ graph TB
 >     IOException <|-- FileNotFoundException
 >     IOException <|-- EOFException
 >     Exception <|-- SecurityException
->     
 >     class IOException {
 >         Error general de E/S
 >     }
@@ -729,7 +712,7 @@ graph TB
 
 ### 🎯 Try-with-Resources
 
-> [!success]- ⚡ Gestión Automática de Recursos
+> [!success] ⚡ Gestión Automática de Recursos
 > 
 > **Comparación visual:**
 > 
@@ -778,7 +761,6 @@ graph TB
 >     E --> F[Ejecutar catch]
 >     D --> G[Continuar programa]
 >     F --> G
->     
 >     style A fill:#e1f5ff
 >     style D fill:#e1ffe1
 >     style E fill:#e1ffe1
@@ -791,7 +773,7 @@ graph TB
 
 ### ✅ Checklist de Buenas Prácticas
 
-> [!tip]- 🏆 Recomendaciones Profesionales
+> [!tip] 🏆 Recomendaciones Profesionales
 > 
 > **1. SIEMPRE usar try-with-resources**
 > 
@@ -860,20 +842,17 @@ graph TB
 > graph TD
 >     A{Tipo de<br/>operación?} --> B[Solo metadatos]
 >     A --> C[Lectura/escritura]
->     
 >     B --> D[Usar File]
 >     C --> E{Buffer?}
->     
 >     E -->|Archivo pequeño| F[FileReader/<br/>FileWriter]
 >     E -->|Uso general| G[✅ BufferedReader/<br/>BufferedWriter]
->     
 >     style G fill:#e1ffe1
 >     style D fill:#e1f5ff
 > ```
 
 ### 🔄 Patrón Común: Copiar Archivo
 
-> [!example]- 📋 Ejemplo Completo y Robusto
+> [!example] 📋 Ejemplo Completo y Robusto
 > 
 > ```java
 > public boolean copiarArchivo(String origen, String destino) {
@@ -999,7 +978,7 @@ mindmap
 
 ## 🎓 Ejercicios Prácticos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Ejercicio 1: Contador de palabras**
 > 
@@ -1087,7 +1066,7 @@ mindmap
 
 ## 🚀 Próximos Pasos
 
-> [!quote]- 🌟 Continuando el Aprendizaje
+> [!quote] 🌟 Continuando el Aprendizaje
 > 
 > **Has aprendido:**
 > 

@@ -24,7 +24,7 @@ graph LR
 ## Unidad I — Lógica y Conjuntos *(6h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|📂 Índice]]
 
 > [!note] I — Lógica Proposicional
-> - [[01 - Proposiciones, conectivos lógicos, tablas de verdad , propiedades y circuitos combinatorio|01 — Proposiciones y conectivos]]
+> - [[01 - Proposiciones y conectivos|01 — Proposiciones y conectivos]]
 > - [[02 - Proposiciones Condicionales y Equivalencia Lógica|02 — Condicionales y equivalencia]]
 
 > [!note] II — Álgebra Proposicional

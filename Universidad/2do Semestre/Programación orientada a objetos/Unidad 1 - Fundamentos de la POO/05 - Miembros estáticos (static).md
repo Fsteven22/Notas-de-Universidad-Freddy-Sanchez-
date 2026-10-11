@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔷 Miembros Estáticos (static)
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué significa "static" en Java?
+> [!info] 💡 ¿Qué significa "static" en Java?
 > 
 > La palabra clave **`static`** indica que un miembro (variable o método) pertenece a la **clase en sí misma**, no a instancias individuales de la clase.
 > 
@@ -17,15 +21,12 @@
 > graph TB
 >     A[Clase Persona] --> B[Variable de instancia:<br/>nombre]
 >     A --> C[Variable static:<br/>totalPersonas]
->     
 >     D[Persona 1<br/>Ana] --> E[nombre = Ana]
 >     F[Persona 2<br/>Luis] --> G[nombre = Luis]
 >     H[Persona 3<br/>María] --> I[nombre = María]
->     
 >     D -.-> J[totalPersonas = 3]
 >     F -.-> J
 >     H -.-> J
->     
 >     style C fill:#fff4e1
 >     style J fill:#fff4e1
 >     style E fill:#e1f5ff
@@ -46,7 +47,7 @@
 
 ### 🔢 Conceptos Fundamentales
 
-> [!tip]- 🎲 ¿Cuándo usar variables static?
+> [!tip] 🎲 ¿Cuándo usar variables static?
 > 
 > **Casos de uso comunes:**
 > 
@@ -108,7 +109,7 @@
 
 ### 🆔 Patrón: IDs Autoincrementales
 
-> [!example]- 🔑 Generación Automática de Identificadores
+> [!example] 🔑 Generación Automática de Identificadores
 > 
 > **Implementación completa:**
 > 
@@ -147,18 +148,15 @@
 >     participant P1 as Producto 1
 >     participant P2 as Producto 2
 >     participant P3 as Producto 3
->     
 >     Note over C: contadorId = 1
 >     C->>P1: new Producto("Laptop", 1200)
 >     P1->>P1: id = 1
 >     P1->>C: contadorId++
 >     Note over C: contadorId = 2
->     
 >     C->>P2: new Producto("Mouse", 25)
 >     P2->>P2: id = 2
 >     P2->>C: contadorId++
 >     Note over C: contadorId = 3
->     
 >     C->>P3: new Producto("Teclado", 80)
 >     P3->>P3: id = 3
 >     P3->>C: contadorId++
@@ -185,7 +183,7 @@
 
 ### 🛠️ Características y Limitaciones
 
-> [!warning]- ⚠️ Reglas Importantes de Métodos Static
+> [!warning] ⚠️ Reglas Importantes de Métodos Static
 > 
 > **Restricciones fundamentales:**
 > 
@@ -234,10 +232,8 @@
 >     A[Método static] --> B{¿Existe objeto?}
 >     B -->|No necesita| C[Acceso a miembros static<br/>✅ PERMITIDO]
 >     B -->|Requiere| D[Acceso a miembros de instancia<br/>❌ PROHIBIDO]
->     
 >     E[Método de instancia] --> F[Siempre hay objeto]
 >     F --> G[Acceso a TODO<br/>✅ PERMITIDO]
->     
 >     style C fill:#e1ffe1
 >     style D fill:#ffe1e1
 >     style G fill:#e1ffe1
@@ -245,7 +241,7 @@
 
 ### 🧮 Métodos Utilitarios
 
-> [!success]- 🎯 Patrón: Clases Utility
+> [!success] 🎯 Patrón: Clases Utility
 > 
 > **Ejemplo: Calculadora matemática**
 > 
@@ -327,7 +323,7 @@
 
 ### 📌 Buenas Prácticas
 
-> [!tip]- 🔒 Definición de Constantes
+> [!tip] 🔒 Definición de Constantes
 > 
 > **Convención de nombres:**
 > 
@@ -396,7 +392,7 @@
 
 ### ⚡ Static Initializer Block
 
-> [!info]- 🎬 Ejecución al Cargar la Clase
+> [!info] 🎬 Ejecución al Cargar la Clase
 > 
 > **Sintaxis y uso:**
 > 
@@ -436,13 +432,11 @@
 >     participant JVM
 >     participant Clase
 >     participant Objeto
->     
 >     Note over JVM: Primera referencia a la clase
 >     JVM->>Clase: Cargar clase en memoria
 >     Clase->>Clase: 1. Inicializar variables static
 >     Clase->>Clase: 2. Ejecutar bloque static
 >     Note over Clase: Clase lista para usar
->     
 >     Note over JVM: new Objeto()
 >     JVM->>Objeto: 3. Inicializar variables de instancia
 >     Objeto->>Objeto: 4. Ejecutar constructor
@@ -488,7 +482,7 @@
 
 ### 🔀 Tabla Comparativa Completa
 
-> [!note]- 📋 Diferencias Clave
+> [!note] 📋 Diferencias Clave
 > 
 > |Característica|Miembros de Instancia|Miembros Static|
 > |---|---|---|
@@ -508,21 +502,16 @@
 >     subgraph "Memoria Heap"
 >         A[Área Static<br/>Clase Persona]
 >         A --> B[totalPersonas = 3<br/>COMPARTIDA]
->         
 >         C[Objeto 1: Ana]
 >         C --> D[nombre = Ana]
->         
 >         E[Objeto 2: Luis]
 >         E --> F[nombre = Luis]
->         
 >         G[Objeto 3: María]
 >         G --> H[nombre = María]
->         
 >         C -.referencia.-> B
 >         E -.referencia.-> B
 >         G -.referencia.-> B
 >     end
->     
 >     style A fill:#fff4e1
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff
@@ -536,7 +525,7 @@
 
 ### 🎯 Guía de Uso Correcto
 
-> [!success]- 🏆 Recomendaciones Profesionales
+> [!success] 🏆 Recomendaciones Profesionales
 > 
 > **1. Cuándo usar static:**
 > 
@@ -544,10 +533,8 @@
 > flowchart TD
 >     A{¿El valor/comportamiento<br/>es común a TODAS<br/>las instancias?} -->|Sí| B[✅ Usar static]
 >     A -->|No| C[❌ Usar instancia]
->     
 >     B --> D[Ejemplos:<br/>- Contadores globales<br/>- Constantes<br/>- Métodos utilitarios]
 >     C --> E[Ejemplos:<br/>- Atributos personales<br/>- Estado del objeto]
->     
 >     style B fill:#e1ffe1
 >     style C fill:#e1f5ff
 > ```
@@ -645,7 +632,7 @@ mindmap
       Una sola vez
 ```
 
-> [!quote]- 🎓 Puntos Clave para Recordar
+> [!quote] 🎓 Puntos Clave para Recordar
 > 
 > ✅ **Static = pertenece a la CLASE**, no a objetos  
 > ✅ **Una sola copia en memoria**, compartida por todos  

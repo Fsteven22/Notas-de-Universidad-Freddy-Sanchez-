@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🔄 Tabla de Estructuras de Control en Python
 
 ## 🎯 Referencia Rápida - Módulo 4: Estructuras de Control

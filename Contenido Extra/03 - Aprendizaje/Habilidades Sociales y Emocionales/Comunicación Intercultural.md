@@ -261,7 +261,7 @@ flowchart LR
 > - [[Diversidad e Inclusión]] - Marco organizacional para la comunicación intercultural
 > - [[Gestión de Conflictos]] - Resolución de tensiones culturales
 > - [[Pensamiento Crítico]] - Análisis de situaciones culturales complejas
-
+>
 > [!info] **Notas Recomendadas para Profundizar**
 > 
 > ### **Prerrequisitos** 📋
@@ -273,7 +273,7 @@ flowchart LR
 > 
 > ### **Complementarias** 🔗
 > 
-> - [[Comunicación Efectiva]] - Principios generales de comunicación
+> - [[La Comunicación Efectiva]] - Principios generales de comunicación
 > - [[Liderazgo Situacional]] - Adaptación de liderazgo a contextos culturales
 > - [[Facilitación de Grupos]] - Manejo de grupos multiculturales
 > - [[Influencia sin Autoridad]] - Persuasión en contextos culturales diversos

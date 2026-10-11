@@ -1,7 +1,7 @@
 # 🚀 Automatizaciones Digitales
 
 > [!quote] 🧠 "Automatizar lo simple te permite dedicarte a lo complejo. No se trata de trabajar más duro, sino de trabajar más inteligentemente."
-
+>
 > [!info]- ## 🌐 Fundamentos de la Automatización Digital
 > 
 > ### El Ecosistema Digital de la Automatización
@@ -100,7 +100,7 @@
 > > 3. **Asignar cursos** en plataforma de formación
 > > 4. **Email de bienvenida** automático con agenda del primer día
 > > 5. **Crear tareas** para el mánager en Asana/Trello
-
+>
 > [!tip]- ## 🚀 Consejos y Mejores Prácticas
 > 
 > ### Reglas de Oro de la Automatización
@@ -133,7 +133,7 @@
 > > - **API Keys:** Nunca compartas tus claves de API o tokens. Guárdalos de forma segura.
 > > - **Permisos:** Concede a las herramientas de automatización solo los permisos necesarios.
 > > - **GDPR/CCPA:** Asegúrate de que tus flujos de trabajo cumplan con las regulaciones de privacidad de datos, especialmente si manejas información personal.
-
+>
 > [!brain]- ## 🎯 Técnica de Estudio: Método A.R.P. (Automatizar, Revisar, Probar)
 > 
 > ### Metodología para Aprender a Automatizar
@@ -158,7 +158,7 @@
 > 
 > > [!quote] 📊 [Herramientas de Productividad Digital]([[07 - Tecnología Digital/Apps Productividad/Apps de Productividad]])
 > > Una guía de las herramientas que puedes integrar en tus automatizaciones.
-
+>
 > [!link]- ## 🔗 Notas Recomendadas y Prerrequisitos
 > 
 > ### Prerrequisitos

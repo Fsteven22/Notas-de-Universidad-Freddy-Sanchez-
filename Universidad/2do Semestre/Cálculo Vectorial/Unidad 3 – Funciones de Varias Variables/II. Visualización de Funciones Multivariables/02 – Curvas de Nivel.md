@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📘 Curvas de Nivel
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son las Curvas de Nivel?
+> [!info] 💡 ¿Qué son las Curvas de Nivel?
 > 
 > Las **curvas de nivel** son una herramienta fundamental para visualizar funciones de dos variables $f(x,y)$ sin necesitar gráficos tridimensionales.
 > 
@@ -22,7 +26,7 @@
 
 ### 🔵 Curva de Nivel
 
-> [!example]- 🟢 Definición: Curva de Nivel
+> [!example] 🟢 Definición: Curva de Nivel
 > 
 > **Definición formal:** Sea $f: D \subseteq \mathbb{R}^2 \to \mathbb{R}$ una función de dos variables. La **curva de nivel** de $f$ para el valor $k \in \mathbb{R}$ es el conjunto:
 > 
@@ -44,7 +48,7 @@
 
 ### 🎨 Mapa de Contorno
 
-> [!example]- 🟡 Mapa de Contorno
+> [!example] 🟡 Mapa de Contorno
 > 
 > **Definición:** Un **mapa de contorno** (o **diagrama de curvas de nivel**) es una colección de varias curvas de nivel de una función, graficadas en el mismo plano $xy$.
 > 
@@ -66,7 +70,7 @@
 
 ## 📊 Interpretación Geométrica
 
-> [!note]- 🎭 Relación entre Superficie y Curvas de Nivel
+> [!note] 🎭 Relación entre Superficie y Curvas de Nivel
 > 
 > ### Proceso de Generación
 > 
@@ -113,7 +117,7 @@
 
 ### 📝 Procedimiento General
 
-> [!tip]- 🛠️ Pasos para Encontrar Curvas de Nivel
+> [!tip] 🛠️ Pasos para Encontrar Curvas de Nivel
 > 
 > **Método sistemático:**
 > 
@@ -130,7 +134,7 @@
 
 ## 📚 Ejemplos Fundamentales
 
-> [!example]- 📐 Ejemplo 1: Plano Inclinado
+> [!example] 📐 Ejemplo 1: Plano Inclinado
 > 
 > **Función:** $f(x,y) = x + y$
 > 
@@ -170,8 +174,8 @@
 > - Representan un plano inclinado en 3D
 > 
 > **Superficie 3D:** Un plano que sube uniformemente en dirección noreste
-
-> [!example]- 🎯 Ejemplo 2: Paraboloide Circular
+>
+> [!example] 🎯 Ejemplo 2: Paraboloide Circular
 > 
 > **Función:** $f(x,y) = x^2 + y^2$
 > 
@@ -219,8 +223,8 @@
 > - El centro $(0,0)$ es un **mínimo** (valores crecen hacia afuera)
 > 
 > **Superficie 3D:** Un paraboloide (como un tazón) que se abre hacia arriba
-
-> [!example]- 🏔️ Ejemplo 3: Cono
+>
+> [!example] 🏔️ Ejemplo 3: Cono
 > 
 > **Función:** $f(x,y) = \sqrt{x^2 + y^2}$
 > 
@@ -246,8 +250,8 @@
 > - $k < 0$ no tiene sentido (raíz cuadrada)
 > 
 > **Superficie 3D:** Un cono circular recto con vértice en el origen
-
-> [!example]- 🎪 Ejemplo 4: Paraboloide Hiperbólico (Silla de Montar)
+>
+> [!example] 🎪 Ejemplo 4: Paraboloide Hiperbólico (Silla de Montar)
 > 
 > **Función:** $f(x,y) = y^2 - x^2$
 > 
@@ -304,8 +308,8 @@
 > - Las rectas $y = \pm x$ son asíntotas comunes
 > 
 > **Superficie 3D:** Paraboloide hiperbólico, parece una silla de montar o una papa frita Pringles
-
-> [!example]- 🌊 Ejemplo 5: Función Sinusoidal
+>
+> [!example] 🌊 Ejemplo 5: Función Sinusoidal
 > 
 > **Función:** $f(x,y) = \sin(x) + \cos(y)$
 > 
@@ -333,8 +337,8 @@
 >     - Puntos aislados (mínimos)
 > 
 > **Observación:** Las curvas forman un patrón de ondas cruzadas
-
-> [!example]- 🎨 Ejemplo 6: Función Exponencial
+>
+> [!example] 🎨 Ejemplo 6: Función Exponencial
 > 
 > **Función:** $f(x,y) = e^{-(x^2 + y^2)}$
 > 
@@ -364,8 +368,8 @@
 > - Valores decrecen rápidamente al alejarse del origen
 > 
 > **Superficie 3D:** "Campana gaussiana" o montaña con cima en el origen
-
-> [!example]- 🏞️ Ejemplo 7: Función Racional
+>
+> [!example] 🏞️ Ejemplo 7: Función Racional
 > 
 > **Función:** $f(x,y) = \frac{y}{x}$ para $x \neq 0$
 > 
@@ -402,8 +406,8 @@
 > - Cada recta tiene un "agujero" en el origen
 > 
 > **Superficie 3D:** Superficie tipo "silla" con una singularidad en el eje $x$
-
-> [!example]- 🔷 Ejemplo 8: Elipsoide
+>
+> [!example] 🔷 Ejemplo 8: Elipsoide
 > 
 > **Función:** $f(x,y) = \frac{x^2}{9} + \frac{y^2}{4}$
 > 
@@ -437,7 +441,7 @@
 
 ## 🎯 Tipos de Curvas de Nivel Comunes
 
-> [!note]- 📊 Catálogo de Formas
+> [!note] 📊 Catálogo de Formas
 > 
 > |Función|Ecuación de nivel|Tipo de curva|Ejemplo|
 > |---|---|---|---|
@@ -455,7 +459,7 @@
 
 ## 🔍 Información que Revelan las Curvas de Nivel
 
-> [!tip]- 📖 Lectura e Interpretación
+> [!tip] 📖 Lectura e Interpretación
 > 
 > ### 1. Máximos y Mínimos
 > 
@@ -526,7 +530,7 @@
 
 ## 🗺️ Aplicaciones Prácticas
 
-> [!example]- 🌍 Casos del Mundo Real
+> [!example] 🌍 Casos del Mundo Real
 > 
 > ### 1. Topografía y Mapas
 > 
@@ -599,7 +603,7 @@
 
 ## 🎨 Cómo Dibujar Curvas de Nivel a Mano
 
-> [!tip]- ✏️ Guía Práctica
+> [!tip] ✏️ Guía Práctica
 > 
 > ### Pasos para Dibujar
 > 
@@ -663,7 +667,7 @@
 
 ## 🧮 Ejemplos Avanzados
 
-> [!example]- 🎓 Ejemplo 9: Función con Dominio Restringido
+> [!example] 🎓 Ejemplo 9: Función con Dominio Restringido
 > 
 > **Función:** $f(x,y) = \sqrt{16 - x^2 - y^2}$
 > 
@@ -694,8 +698,8 @@
 > **Superficie 3D:** Hemisferio superior de radio 4
 > 
 > **Interpretación física:** Altura de una cúpula semiesférica
-
-> [!example]- 🌀 Ejemplo 10: Hipérbolas Rectangulares
+>
+> [!example] 🌀 Ejemplo 10: Hipérbolas Rectangulares
 > 
 > **Función:** $f(x,y) = xy$
 > 
@@ -756,8 +760,8 @@
 > - Punto de silla en el origen
 > 
 > **Superficie 3D:** Superficie hiperbólica con forma de "silla de caballo"
-
-> [!example]- 🏔️ Ejemplo 11: Función con Múltiples Extremos
+>
+> [!example] 🏔️ Ejemplo 11: Función con Múltiples Extremos
 > 
 > **Función:** $f(x,y) = (x^2 - 1)(y^2 - 1)$
 > 
@@ -804,8 +808,8 @@
 > - Función tiene **cuatro puntos críticos**: $(\pm 1, \pm 1)$
 > - Patrones simétricos
 > - Curvas complejas excepto en $k = 0$
-
-> [!example]- 🎪 Ejemplo 12: Combinación Lineal-Cuadrática
+>
+> [!example] 🎪 Ejemplo 12: Combinación Lineal-Cuadrática
 > 
 > **Función:** $f(x,y) = x^2 + y^2 - 2x - 4y$
 > 
@@ -837,8 +841,8 @@
 > - Radio aumenta con $\sqrt{k+5}$
 > 
 > **Técnica clave:** Completar cuadrados revela la estructura geométrica
-
-> [!example]- 🌊 Ejemplo 13: Función Gaussiana Bidimensional
+>
+> [!example] 🌊 Ejemplo 13: Función Gaussiana Bidimensional
 > 
 > **Función:** $f(x,y) = e^{-\frac{x^2 + y^2}{2}}$
 > 
@@ -876,7 +880,7 @@
 
 ## 🔬 Curvas de Nivel y Derivadas
 
-> [!info]- 📐 Relación con el Gradiente
+> [!info] 📐 Relación con el Gradiente
 > 
 > ### El Gradiente es Perpendicular a las Curvas de Nivel
 > 
@@ -936,7 +940,7 @@
 
 ## 🎯 Casos Especiales y Consideraciones
 
-> [!warning]- ⚠️ Situaciones Especiales
+> [!warning] ⚠️ Situaciones Especiales
 > 
 > ### 1. Curvas de Nivel Degeneradas
 > 
@@ -999,7 +1003,7 @@
 
 ## 📊 Comparación: Superficie vs Curvas de Nivel
 
-> [!note]- 🎭 Dos Maneras de Visualizar
+> [!note] 🎭 Dos Maneras de Visualizar
 > 
 > | Aspecto | Gráfica 3D ($z = f(x,y)$) | Curvas de Nivel |
 > |---------|---------------------------|-----------------|
@@ -1021,7 +1025,7 @@
 
 ## 💡 Consejos Prácticos
 
-> [!tip]- ⭐ Estrategias para Trabajar con Curvas de Nivel
+> [!tip] ⭐ Estrategias para Trabajar con Curvas de Nivel
 > 
 > ### Para Dibujar
 > 
@@ -1053,7 +1057,7 @@
 
 ## 📝 Ejercicios Propuestos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > ### Nivel Básico
 > 
@@ -1145,7 +1149,7 @@
 
 ## ✅ Soluciones Selectas
 
-> [!success]- 🔑 Respuestas de Ejercicios Básicos
+> [!success] 🔑 Respuestas de Ejercicios Básicos
 > 
 > **1a)** $f(x,y) = 2x + 3y$
 > 
@@ -1204,8 +1208,8 @@
 > **2d)** Elipses $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ con $b = 2a$
 > 
 > **Función:** $f(x,y) = x^2 + \frac{y^2}{4}$ (o similar)
-
-> [!success]- 🔑 Respuestas de Ejercicios Intermedios
+>
+> [!success] 🔑 Respuestas de Ejercicios Intermedios
 > 
 > **3a)** $f(x,y) = e^{x+y}$
 > Curvas de nivel $e^{x+y} = k$:
@@ -1287,8 +1291,8 @@
 > - En $(2, -2)$: $f(2,-2) = -12$ (mínimo)
 > 
 > **Conclusión:** Mínimo absoluto en $(2, -2)$
-
-> [!success]- 🔑 Respuestas de Ejercicios Avanzados
+>
+> [!success] 🔑 Respuestas de Ejercicios Avanzados
 > 
 > **6a)** Demostración: Las curvas de nivel de $f(x,y) = ax + by$ son perpendiculares a $(a,b)$
 > 
@@ -1373,7 +1377,7 @@
 
 ## 🌐 Curvas de Nivel en Tres Variables
 
-> [!info]- 📐 Superficies de Nivel
+> [!info] 📐 Superficies de Nivel
 > 
 > Para funciones de **tres variables** $f(x,y,z)$, el análogo a las curvas de nivel son las **superficies de nivel**.
 > 
@@ -1428,7 +1432,7 @@
 
 ## 🔄 Relación con Otros Conceptos
 
-> [!quote]- 🌉 Conexiones
+> [!quote] 🌉 Conexiones
 > 
 > **Este tema se relaciona con:**
 > 
@@ -1456,7 +1460,7 @@
 
 ## 📊 Tabla Resumen: Funciones Comunes y sus Curvas de Nivel
 
-> [!note]- 📋 Referencia Rápida
+> [!note] 📋 Referencia Rápida
 > 
 > |Función|Curvas de Nivel|Forma Geométrica|Características|
 > |---|---|---|---|
@@ -1476,7 +1480,7 @@
 
 ## 🎓 Conceptos Clave para Recordar
 
-> [!tip]- 💡 Puntos Importantes
+> [!tip] 💡 Puntos Importantes
 > 
 > **Sobre Curvas de Nivel:**
 > 
@@ -1517,7 +1521,7 @@
 
 ## 🔧 Herramientas Computacionales
 
-> [!info]- 💻 Software y Tecnología
+> [!info] 💻 Software y Tecnología
 > 
 > ### Herramientas para Visualizar Curvas de Nivel
 > 
@@ -1572,7 +1576,7 @@
 
 ## 📚 Problemas Tipo Examen
 
-> [!example]- 🎯 Práctica para Evaluación
+> [!example] 🎯 Práctica para Evaluación
 > 
 > ### Problema 1: Análisis Completo
 > 
@@ -1620,7 +1624,7 @@
 
 ## 🎨 Galería Visual
 
-> [!note]- 🖼️ Ejemplos Visualizados
+> [!note] 🖼️ Ejemplos Visualizados
 > 
 > ### Paraboloide Circular
 > 
@@ -1689,7 +1693,7 @@
 
 ## 🔗 Recursos Adicionales
 
-> [!quote]- 📖 Para Profundizar
+> [!quote] 📖 Para Profundizar
 > 
 > ### Videos Recomendados
 > 
@@ -1721,7 +1725,7 @@
 
 ## 🎯 Autoevaluación
 
-> [!tip]- ✔️ Verificación de Comprensión
+> [!tip] ✔️ Verificación de Comprensión
 > 
 > **¿Puedes responder estas preguntas?**
 > 

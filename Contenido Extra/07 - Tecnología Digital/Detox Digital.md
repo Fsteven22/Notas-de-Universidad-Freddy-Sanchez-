@@ -17,7 +17,7 @@
 > - Dificultad para concentrarse en tareas largas
 > - Síndrome del miembro fantasma (sensación de vibración inexistente)
 > - Fatiga mental constante y burnout digital
-
+>
 > [!tip] 🔬 Beneficios del Detox a Nivel Cerebral
 > 
 > - **Restauración de la dopamina** basal natural
@@ -385,7 +385,7 @@ graph LR
 > - ¿Qué tan difícil es concentrarte en tareas largas?
 > - ¿Qué tan satisfecho estás con tus relaciones cara a cara?
 > - ¿Qué tan reparador es tu sueño actual?
-
+>
 > [!info] 📊 Tracking Durante el Detox **Métricas diarias:**
 > 
 > - Nivel de ansiedad (1-10)

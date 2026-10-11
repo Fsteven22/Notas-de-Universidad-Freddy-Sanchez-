@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔢 Algoritmo de Gauss
 
 ## 🎯 Fundamentos del Método
 
-> [!info]- 💡 Introducción al Método de Eliminación Gaussiana El **Algoritmo de Gauss** (o método de eliminación gaussiana) es un procedimiento sistemático para resolver sistemas de ecuaciones lineales mediante operaciones elementales sobre filas. Transforma el sistema original en uno equivalente más simple (forma escalonada) que es fácil de resolver mediante sustitución regresiva.
+> [!info] 💡 Introducción al Método de Eliminación Gaussiana El **Algoritmo de Gauss** (o método de eliminación gaussiana) es un procedimiento sistemático para resolver sistemas de ecuaciones lineales mediante operaciones elementales sobre filas. Transforma el sistema original en uno equivalente más simple (forma escalonada) que es fácil de resolver mediante sustitución regresiva.
 > 
 > **Analogías útiles:**
 > 
@@ -28,7 +32,7 @@
 
 ### 🔗 Representación Matricial del Sistema
 
-> [!note]- 📊 De Ecuaciones a Matriz Ampliada
+> [!note] 📊 De Ecuaciones a Matriz Ampliada
 > 
 > Para aplicar Gauss, primero representamos el sistema como una **matriz ampliada**:
 > 
@@ -64,7 +68,7 @@
 
 ### ✅ Ejemplo de Conversión
 
-> [!example]- 🔄 Del Sistema a la Matriz Ampliada
+> [!example] 🔄 Del Sistema a la Matriz Ampliada
 > 
 > **Sistema:**
 > 
@@ -105,7 +109,7 @@
 
 ## 🔧 Operaciones Elementales sobre Filas
 
-> [!tip]- ⚙️ Las Tres Operaciones Fundamentales
+> [!tip] ⚙️ Las Tres Operaciones Fundamentales
 > 
 > Estas operaciones **no cambian el conjunto de soluciones** del sistema:
 > 
@@ -156,7 +160,7 @@
 
 ### 🎯 Definición y Características
 
-> [!success]- 📐 Forma Escalonada (Row Echelon Form)
+> [!success] 📐 Forma Escalonada (Row Echelon Form)
 > 
 > Una matriz está en **forma escalonada** si cumple:
 > 
@@ -199,7 +203,7 @@
 
 ### 🌟 Forma Escalonada Reducida (Gauss-Jordan)
 
-> [!info]- ✨ Forma Escalonada Reducida (Reduced Row Echelon Form)
+> [!info] ✨ Forma Escalonada Reducida (Reduced Row Echelon Form)
 > 
 > Una forma más simplificada donde:
 > 
@@ -237,7 +241,7 @@
 
 ### 📋 Fase 1: Eliminación hacia Adelante
 
-> [!warning]- 🔽 Transformación a Forma Escalonada
+> [!warning] 🔽 Transformación a Forma Escalonada
 > 
 > **Objetivo:** Crear ceros debajo de cada pivote, columna por columna.
 > 
@@ -263,7 +267,7 @@
 
 ### 🔄 Fase 2: Sustitución Regresiva
 
-> [!success]- 🔼 Encontrar las Soluciones
+> [!success] 🔼 Encontrar las Soluciones
 > 
 > **Objetivo:** Usar la forma escalonada para encontrar los valores de las variables.
 > 
@@ -288,7 +292,7 @@
 
 ## 💡 Ejemplo Completo 2×2
 
-> [!example]- 🎯 Sistema 2×2 Paso a Paso
+> [!example] 🎯 Sistema 2×2 Paso a Paso
 > 
 > **Sistema:**
 > 
@@ -343,7 +347,7 @@
 
 ## 💡 Ejemplo Completo 3×3
 
-> [!example]- 🎯 Sistema 3×3 Detallado
+> [!example] 🎯 Sistema 3×3 Detallado
 > 
 > **Sistema:**
 > 
@@ -439,7 +443,7 @@
 
 ## 💡 Ejemplo de Sistema Incompatible
 
-> [!example]- ❌ Detectando Inconsistencias
+> [!example] ❌ Detectando Inconsistencias
 > 
 > **Sistema:**
 > 
@@ -482,7 +486,7 @@
 
 ## 🔍 Identificación del Tipo de Sistema con Gauss
 
-> [!tip]- 🎯 Criterios de Clasificación Durante Gauss
+> [!tip] 🎯 Criterios de Clasificación Durante Gauss
 > 
 > Después de obtener la forma escalonada:
 > 
@@ -540,7 +544,7 @@
 
 ### 🎲 Estrategias de Pivoteo
 
-> [!warning]- 🔄 Selección Inteligente de Pivotes
+> [!warning] 🔄 Selección Inteligente de Pivotes
 > 
 > **Problema:** ¿Qué hacer cuando el pivote es cero o muy pequeño?
 > 
@@ -577,7 +581,7 @@
 
 ### ➗ Simplificación de Filas
 
-> [!tip]- 🎯 Normalización de Pivotes
+> [!tip] 🎯 Normalización de Pivotes
 > 
 > **Objetivo:** Hacer que el pivote sea 1 (opcional pero útil)
 > 
@@ -605,7 +609,7 @@
 
 ### 🔢 Trabajo con Fracciones
 
-> [!note]- 🧮 Manejo de Números Racionales
+> [!note] 🧮 Manejo de Números Racionales
 > 
 > **Estrategia 1: Mantener fracciones**
 > 
@@ -675,7 +679,7 @@ graph TD
 
 ## 📝 Algoritmo Formal (Pseudocódigo)
 
-> [!note]- 💻 Estructura Algorítmica
+> [!note] 💻 Estructura Algorítmica
 > 
 > ```
 > ALGORITMO Gauss(Matriz_Ampliada)
@@ -721,7 +725,7 @@ graph TD
 
 ## 🎓 Ejercicios Progresivos
 
-> [!example]- 💪 Práctica Guiada
+> [!example] 💪 Práctica Guiada
 > 
 > **Nivel 1: Sistema 2×2 simple** 🟢
 > 
@@ -801,7 +805,7 @@ graph TD
 
 ## 🧮 Ejemplo Completo con Todos los Detalles
 
-> [!example]- 🎯 Resolución Exhaustiva: Sistema 3×3
+> [!example] 🎯 Resolución Exhaustiva: Sistema 3×3
 > 
 > **Sistema:**
 > 
@@ -938,7 +942,7 @@ graph TD
 
 ## ⚠️ Errores Comunes y Cómo Evitarlos
 
-> [!warning]- 🚫 Problemas Frecuentes
+> [!warning] 🚫 Problemas Frecuentes
 > 
 > **Error 1: Modificar la fila de referencia**
 > 
@@ -1018,7 +1022,7 @@ graph TD
 
 ## 🎯 Estrategias y Consejos Prácticos
 
-> [!tip]- 💡 Mejores Prácticas
+> [!tip] 💡 Mejores Prácticas
 > 
 > **1. Organización del trabajo:**
 > 
@@ -1059,7 +1063,7 @@ graph TD
 
 ## 🔗 Relación con el Rango de una Matriz
 
-> [!info]- 📊 Conexión con el Rango
+> [!info] 📊 Conexión con el Rango
 > 
 > El método de Gauss es fundamental para calcular el **rango** de una matriz:
 > 
@@ -1098,7 +1102,7 @@ graph TD
 
 ## 🌐 Aplicaciones del Método de Gauss
 
-> [!success]- 🚀 Uso en Diversas Áreas
+> [!success] 🚀 Uso en Diversas Áreas
 > 
 > **1. Ingeniería:**
 > 
@@ -1151,7 +1155,7 @@ graph TD
 
 ## 🎓 Complejidad Computacional
 
-> [!note]- 💻 Eficiencia del Algoritmo
+> [!note] 💻 Eficiencia del Algoritmo
 > 
 > **Análisis de complejidad:**
 > 
@@ -1181,7 +1185,7 @@ graph TD
 
 ## 📚 Resumen y Puntos Clave
 
-> [!summary]- 🎯 Conceptos Esenciales
+> [!summary] 🎯 Conceptos Esenciales
 > 
 > **El método de Gauss en 5 pasos:**
 > 
@@ -1220,7 +1224,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌐 Enlaces Conceptuales
+> [!quote] 🌐 Enlaces Conceptuales
 > 
 > **Prerequisites (Prerrequisitos):**
 > 

@@ -22,7 +22,7 @@ graph LR
 ```
 
 > [!quote] 🔗 Conexiones
-> - Previo: [[07 - Circuitos Integrados de Logica Fija y Tablas de Verdad]] (Unidad 3)
+> - Previo: [[07 - Lógica fija y tablas de verdad]] (Unidad 3)
 > - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---

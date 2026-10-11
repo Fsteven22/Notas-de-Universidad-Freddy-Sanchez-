@@ -1,9 +1,13 @@
+---
+dg-publish: true
+---
+
 # Machine Learning - Aprendizaje Automático 🤖
 
 [!quote]- Cita Inspiradora
 > *"El aprendizaje automático no es magia; es tecnología. Pero aplicada correctamente, puede parecer mágica."* - Andrew Ng
-
-> [!info]- ## ¿Qué es Machine Learning? 🧠
+>
+> [!info] ## ¿Qué es Machine Learning? 🧠
 El Machine Learning (ML) o Aprendizaje Automático es una rama de la inteligencia artificial que permite a las computadoras aprender y tomar decisiones basadas en datos, sin ser programadas explícitamente para cada tarea específica.
 
 ### 🎯 Objetivos del Machine Learning
@@ -18,7 +22,7 @@ El Machine Learning (ML) o Aprendizaje Automático es una rama de la inteligenci
 - **Adaptativo**: Mejora con más datos
 - **Escalable**: Maneja grandes volúmenes de información
 
-> [!tip]- ## Tipos de Machine Learning 🔄
+> [!tip] ## Tipos de Machine Learning 🔄
 ```mermaid
 graph TD
     A[🤖 Machine Learning] --> B[👨‍🏫 Supervisado]
@@ -49,7 +53,7 @@ graph TD
 | **No Supervisado** 🔍 | Encuentra patrones sin etiquetas | K-means, PCA, DBSCAN | Segmentación de clientes, Detección de fraudes, Análisis de mercado |
 | **Por Refuerzo** 🎮 | Aprende mediante recompensas/castigos | Q-Learning, AlphaGo, Deep Q-Networks | Juegos, Robótica, Trading automático, Coches autónomos |
 
-> [!warning]- ## Proceso Completo de Machine Learning 🔄
+> [!warning] ## Proceso Completo de Machine Learning 🔄
 ```mermaid
 flowchart TB
     A[📥 Recopilación de Datos] --> B[🧹 Preprocesamiento]
@@ -98,7 +102,7 @@ flowchart TB
 - **Complejidad**: Lineal vs no lineal
 - **Interpretabilidad**: Trade-off con precisión
 
-> [!example]- ## Algoritmos Fundamentales por Categoría 🧮
+> [!example] ## Algoritmos Fundamentales por Categoría 🧮
 
 ### 🔄 Algoritmos de Clasificación
 | Algoritmo | Ventajas | Desventajas | Mejor para |
@@ -148,7 +152,7 @@ graph LR
 - **🤝 Ensemble Methods**: Combinar múltiples modelos
 - **📈 Learning Curves**: Monitorear progreso del entrenamiento
 
-> [!success]- ## Métricas de Evaluación 📊
+> [!success] ## Métricas de Evaluación 📊
 
 ### 🎯 Métricas para Clasificación
 ```mermaid

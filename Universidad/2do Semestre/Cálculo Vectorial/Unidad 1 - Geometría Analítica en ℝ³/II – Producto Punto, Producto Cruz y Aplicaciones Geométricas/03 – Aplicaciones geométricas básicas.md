@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📐 Aplicaciones Geométricas Básicas
 
 ## 🎯 Introducción a las Aplicaciones Geométricas
 
-> [!info]- 💡 Puente entre Álgebra y Geometría Las **aplicaciones geométricas** de vectores nos permiten resolver problemas del espacio tridimensional usando herramientas algebraicas. Combinando las operaciones vectoriales básicas con el producto punto y producto cruz, podemos:
+> [!info] 💡 Puente entre Álgebra y Geometría Las **aplicaciones geométricas** de vectores nos permiten resolver problemas del espacio tridimensional usando herramientas algebraicas. Combinando las operaciones vectoriales básicas con el producto punto y producto cruz, podemos:
 > 
 > **Problemas que podemos resolver:**
 > 
@@ -31,15 +35,15 @@
 
 ### 📍 Fórmula de Distancia
 
-> [!warning]- 🎯 Teorema Fundamental de Distancia **Dados dos puntos A = (x₁, y₁, z₁) y B = (x₂, y₂, z₂):**
+> [!warning] 🎯 Teorema Fundamental de Distancia **Dados dos puntos A = (x₁, y₁, z₁) y B = (x₂, y₂, z₂):**
 > 
 > La **distancia** entre A y B es:
 > 
-> **d(A, B) = ||AB⃗|| = √[(x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²]**
+> **d(A, B) = ||A\vec{B}|| = √[(x₂ - x₁)² + (y₂ - y₁)² + (z₂ - z₁)²]**
 > 
 > **Interpretación:**
 > 
-> - Es la longitud del vector AB⃗
+> - Es la longitud del vector A\vec{B}
 > - Es el "camino más corto" entre A y B
 > - Generalización del Teorema de Pitágoras a 3D
 > 
@@ -52,13 +56,13 @@
 > 
 > **Proceso de cálculo:**
 > 
-> 1. Formar el vector AB⃗ = B - A
-> 2. Calcular la magnitud ||AB⃗||
+> 1. Formar el vector A\vec{B} = B - A
+> 2. Calcular la magnitud ||A\vec{B}||
 > 3. El resultado es la distancia
 
 ### 📊 Ejemplos de Distancia
 
-> [!example]- 🎯 Casos Resueltos **Ejemplo 1: Distancia básica**
+> [!example] 🎯 Casos Resueltos **Ejemplo 1: Distancia básica**
 > 
 > Calcular la distancia entre A = (1, 2, 3) y B = (4, 6, 8)
 > 
@@ -70,8 +74,8 @@
 >         = √50 = 5√2 ≈ 7.07 unidades
 > 
 > Método 2 - Vectorial:
-> AB⃗ = (4-1, 6-2, 8-3) = (3, 4, 5)
-> d(A, B) = ||AB⃗|| = √(9 + 16 + 25) = √50
+> A\vec{B} = (4-1, 6-2, 8-3) = (3, 4, 5)
+> d(A, B) = ||A\vec{B}|| = √(9 + 16 + 25) = √50
 > ```
 > 
 > ---
@@ -98,7 +102,7 @@
 >         = √[9 + 16 + 144]
 >         = √169 = 13 unidades
 > 
-> Nota: Esto es simplemente ||OP⃗|| = ||(3, 4, 12)||
+> Nota: Esto es simplemente ||O\vec{P}|| = ||(3, 4, 12)||
 > ```
 > 
 > ---
@@ -118,7 +122,7 @@
 
 ### 🔺 Fórmula del Ángulo
 
-> [!success]- 🎯 Cálculo de Ángulos usando Producto Punto **Dados dos vectores u y v no nulos:**
+> [!success] 🎯 Cálculo de Ángulos usando Producto Punto **Dados dos vectores u y v no nulos:**
 > 
 > El **ángulo θ** entre ellos (0° ≤ θ ≤ 180°) se calcula mediante:
 > 
@@ -151,7 +155,7 @@
 
 ### 📊 Ejemplos de Ángulos
 
-> [!example]- 🎯 Cálculos Detallados **Ejemplo 1: Ángulo entre vectores básicos**
+> [!example] 🎯 Cálculos Detallados **Ejemplo 1: Ángulo entre vectores básicos**
 > 
 > Calcular el ángulo entre **u** = (1, 2, 2) y **v** = (2, 1, -2)
 > 
@@ -200,15 +204,15 @@
 > 
 > ```
 > Vectores desde A:
-> AB⃗ = B - A = (-1, 1, 0)
-> AC⃗ = C - A = (-1, 0, 1)
+> A\vec{B} = B - A = (-1, 1, 0)
+> A\vec{C} = C - A = (-1, 0, 1)
 > 
 > Producto punto:
-> AB⃗ · AC⃗ = (-1)(-1) + (1)(0) + (0)(1) = 1
+> A\vec{B} · A\vec{C} = (-1)(-1) + (1)(0) + (0)(1) = 1
 > 
 > Magnitudes:
-> ||AB⃗|| = √(1 + 1 + 0) = √2
-> ||AC⃗|| = √(1 + 0 + 1) = √2
+> ||A\vec{B}|| = √(1 + 1 + 0) = √2
+> ||A\vec{C}|| = √(1 + 0 + 1) = √2
 > 
 > Ángulo:
 > cos(θ) = 1/(√2 · √2) = 1/2
@@ -234,7 +238,7 @@
 
 ### 📍 Proyección Escalar
 
-> [!note]- 📏 Componente de un Vector sobre Otro **Definición:**
+> [!note] 📏 Componente de un Vector sobre Otro **Definición:**
 > 
 > La **proyección escalar** de **v** sobre **u** es la "longitud" de **v** en la dirección de **u** (puede ser negativa):
 > 
@@ -262,7 +266,7 @@
 
 ### 🎯 Proyección Vectorial
 
-> [!warning]- ➡️ Vector Proyectado **Definición:**
+> [!warning] ➡️ Vector Proyectado **Definición:**
 > 
 > La **proyección vectorial** de **v** sobre **u** es un vector en la dirección de **u**:
 > 
@@ -291,7 +295,7 @@
 
 ### 📊 Ejemplos de Proyecciones
 
-> [!example]- 🎯 Casos Prácticos **Ejemplo 1: Proyección básica**
+> [!example] 🎯 Casos Prácticos **Ejemplo 1: Proyección básica**
 > 
 > Proyectar **v** = (3, 4, 0) sobre **u** = (1, 0, 0)
 > 
@@ -394,7 +398,7 @@
 
 ### 🔷 Área mediante Producto Cruz
 
-> [!success]- 📐 Cálculo de Áreas con Vectores **Para un paralelogramo formado por vectores u y v:**
+> [!success] 📐 Cálculo de Áreas con Vectores **Para un paralelogramo formado por vectores u y v:**
 > 
 > **A_paralelogramo = ||u × v||**
 > 
@@ -412,7 +416,7 @@
 > 
 > Dados A, B, C, el área del triángulo ABC es:
 > 
-> **A = (1/2)||AB⃗ × AC⃗||**
+> **A = (1/2)||A\vec{B} × A\vec{C}||**
 > 
 > **Fórmula en componentes:**
 > 
@@ -428,7 +432,7 @@
 
 ### 📊 Ejemplos de Áreas
 
-> [!example]- 🎯 Cálculo de Áreas **Ejemplo 1: Área de paralelogramo**
+> [!example] 🎯 Cálculo de Áreas **Ejemplo 1: Área de paralelogramo**
 > 
 > Calcular el área del paralelogramo formado por **u** = (2, 0, 0) y **v** = (1, 3, 0)
 > 
@@ -454,11 +458,11 @@
 > 
 > ```
 > Vectores desde A:
-> AB⃗ = (-1, 1, 0)
-> AC⃗ = (-1, 0, 1)
+> A\vec{B} = (-1, 1, 0)
+> A\vec{C} = (-1, 0, 1)
 > 
 > Producto cruz:
-> AB⃗ × AC⃗ = | i   j   k  |
+> A\vec{B} × A\vec{C} = | i   j   k  |
 >             | -1  1   0  |
 >             | -1  0   1  |
 > 
@@ -467,7 +471,7 @@
 > = (1, 1, 1)
 > 
 > Magnitud:
-> ||AB⃗ × AC⃗|| = √(1² + 1² + 1²) = √3
+> ||A\vec{B} × A\vec{C}|| = √(1² + 1² + 1²) = √3
 > 
 > Área del triángulo:
 > A = (1/2)√3 ≈ 0.866 unidades²
@@ -481,11 +485,11 @@
 > 
 > ```
 > Vectores desde P:
-> PQ⃗ = (3, 1, -2)
-> PR⃗ = (1, 3, -1)
+> P\vec{Q} = (3, 1, -2)
+> P\vec{R} = (1, 3, -1)
 > 
 > Producto cruz:
-> PQ⃗ × PR⃗ = | i   j   k  |
+> P\vec{Q} × P\vec{R} = | i   j   k  |
 >             | 3   1  -2  |
 >             | 1   3  -1  |
 > 
@@ -525,7 +529,7 @@
 
 ### 🎲 Triple Producto Escalar
 
-> [!warning]- 📦 Volumen mediante Producto Triple **Definición:**
+> [!warning] 📦 Volumen mediante Producto Triple **Definición:**
 > 
 > El **producto triple escalar** de tres vectores **u**, **v**, **w** es:
 > 
@@ -561,7 +565,7 @@
 
 ### 📊 Ejemplos de Volúmenes
 
-> [!example]- 🎯 Cálculos de Volumen **Ejemplo 1: Volumen básico de paralelepípedo**
+> [!example] 🎯 Cálculos de Volumen **Ejemplo 1: Volumen básico de paralelepípedo**
 > 
 > Calcular el volumen del paralelepípedo formado por: **u** = (2, 0, 0), **v** = (0, 3, 0), **w** = (0, 0, 4)
 > 
@@ -638,9 +642,9 @@
 > Calcular el volumen del tetraedro con vértices: O= (0, 0, 0), A = (2, 0, 0), B = (0, 3, 0), C = (0, 0, 4)
 > ```
 > Vectores desde O:
-> OA⃗ = (2, 0, 0)
-> OB⃗ = (0, 3, 0)
-> OC⃗ = (0, 0, 4)
+> O\vec{A} = (2, 0, 0)
+> O\vec{B} = (0, 3, 0)
+> O\vec{C} = (0, 0, 4)
 > 
 > Volumen del paralelepípedo:
 > V_paralep = |det| 2  0  0 || = |24| = 24
@@ -650,14 +654,14 @@
 > Volumen del tetraedro:
 > V_tetraedro = V_paralep/6 = 24/6 = 4 unidades³
 > 
-> Fórmula general: V_tetraedro = (1/6)|OA⃗ · (OB⃗ × OC⃗)|
+> Fórmula general: V_tetraedro = (1/6)|O\vec{A} · (O\vec{B} × O\vec{C})|
 > ```
 
 ## 🔍 Aplicaciones Especiales
 
 ### 🎯 Distancia de Punto a Recta
 
-> [!tip]- 📏 Distancia Punto-Recta en ℝ³ **Problema:** Encontrar la distancia de un punto P₀ a una recta L que pasa por P₁ con dirección **v**.
+> [!tip] 📏 Distancia Punto-Recta en ℝ³ **Problema:** Encontrar la distancia de un punto P₀ a una recta L que pasa por P₁ con dirección **v**.
 > 
 > **Fórmula:**
 > 
@@ -696,7 +700,7 @@
 
 ### 🎯 Distancia de Punto a Plano
 
-> [!note]- 📏 Distancia Punto-Plano **Problema:** Encontrar la distancia de un punto P₀ a un plano.
+> [!note] 📏 Distancia Punto-Plano **Problema:** Encontrar la distancia de un punto P₀ a un plano.
 > 
 > **Si el plano tiene ecuación:** ax + by + cz = d
 > 
@@ -708,9 +712,9 @@
 > 
 > **Si el plano pasa por P₁ con vector normal n:**
 > 
-> **d = |P₁P₀⃗ · n̂|**
+> **d = |P₁P₀⃗ · \hat{n}|**
 > 
-> Donde n̂ = **n**/||**n**|| es el vector normal unitario
+> Donde \hat{n} = **n**/||**n**|| es el vector normal unitario
 > 
 > **O equivalentemente:**
 > 
@@ -735,7 +739,7 @@
 
 ### 🎯 Ángulo entre Rectas
 
-> [!success]- 📐 Ángulo entre Dos Rectas **Problema:** Encontrar el ángulo entre dos rectas con vectores directores **u** y **v**.
+> [!success] 📐 Ángulo entre Dos Rectas **Problema:** Encontrar el ángulo entre dos rectas con vectores directores **u** y **v**.
 > 
 > **Fórmula:**
 > 
@@ -761,7 +765,7 @@
 
 ### 🎯 Ángulo entre Planos
 
-> [!info]- 📐 Ángulo entre Dos Planos **Problema:** Encontrar el ángulo entre dos planos con vectores normales **n₁** y **n₂**.
+> [!info] 📐 Ángulo entre Dos Planos **Problema:** Encontrar el ángulo entre dos planos con vectores normales **n₁** y **n₂**.
 > 
 > **Fórmula:**
 > 
@@ -803,9 +807,9 @@ graph TD
     A --> C[Ángulos]
     A --> D[Áreas y Volúmenes]
     
-    B --> B1["Punto-Punto<br/>d = ||AB⃗||"]
+    B --> B1["Punto-Punto<br/>d = ||A\vec{B}||"]
     B --> B2["Punto-Recta<br/>d = ||P₁P₀⃗ × v||/||v||"]
-    B --> B3["Punto-Plano<br/>d = |P₁P₀⃗ · n̂|"]
+    B --> B3["Punto-Plano<br/>d = |P₁P₀⃗ · \hat{n}|"]
     
     C --> C1["Entre vectores<br/>cos θ = u·v / ||u||||v||"]
     C --> C2[Entre rectas<br/>usar vectores dirección]
@@ -824,11 +828,11 @@ graph TD
 
 ## 📋 Tabla Resumen de Fórmulas
 
-> [!example]- 📊 Compendio de Fórmulas Principales
+> [!example] 📊 Compendio de Fórmulas Principales
 > 
 > |Aplicación|Fórmula|Nota|
 > |---|---|---|
-> |**Distancia punto-punto**|d(A,B) = \|AB⃗\||Magnitud del vector|
+> |**Distancia punto-punto**|d(A,B) = \|A\vec{B}\||Magnitud del vector|
 > |**Ángulo entre vectores**|cos(θ) = (u·v)/(\|u\|v\|)|0° ≤ θ ≤ 180°|
 > |**Proyección escalar**|proj_u(v) = (v·u)/\|u\||Puede ser negativa|
 > |**Proyección vectorial**|proy_u(v) = [(v·u)/\|u\|²]u|Vector paralelo a u|
@@ -843,7 +847,7 @@ graph TD
 
 ## 🧪 Ejercicios Integrales
 
-> [!example]- 💪 Práctica Completa
+> [!example] 💪 Práctica Completa
 > 
 > **Nivel 1 - Básico:** 🟢
 > 
@@ -906,15 +910,15 @@ graph TD
 > 
 > ```
 > Solución:
-> AB⃗ = (3, 0, 0)
-> AC⃗ = (0, 4, 0)
+> A\vec{B} = (3, 0, 0)
+> A\vec{C} = (0, 4, 0)
 > 
-> AB⃗ × AC⃗ = | i  j  k |
+> A\vec{B} × A\vec{C} = | i  j  k |
 >             | 3  0  0 |
 >             | 0  4  0 |
 >           = (0, 0, 12)
 > 
-> ||AB⃗ × AC⃗|| = 12
+> ||A\vec{B} × A\vec{C}|| = 12
 > 
 > Área = 12/2 = 6 unidades²
 > 
@@ -935,21 +939,21 @@ graph TD
 > Solución:
 > 
 > a) Área del triángulo:
-> AB⃗ = (-1, 2, 0)
-> AC⃗ = (-1, 0, 3)
+> A\vec{B} = (-1, 2, 0)
+> A\vec{C} = (-1, 0, 3)
 > 
-> AB⃗ × AC⃗ = | i   j   k  |
+> A\vec{B} × A\vec{C} = | i   j   k  |
 >             | -1  2   0  |
 >             | -1  0   3  |
 >           = (6, 3, 2)
 > 
-> ||AB⃗ × AC⃗|| = √(36 + 9 + 4) = √49 = 7
+> ||A\vec{B} × A\vec{C}|| = √(36 + 9 + 4) = √49 = 7
 > Área = 7/2 = 3.5 unidades²
 > 
 > b) Volumen del tetraedro:
-> OA⃗ = (1, 0, 0)
-> OB⃗ = (0, 2, 0)
-> OC⃗ = (0, 0, 3)
+> O\vec{A} = (1, 0, 0)
+> O\vec{B} = (0, 2, 0)
+> O\vec{C} = (0, 0, 3)
 > 
 > V = (1/6)|det| 1  0  0 ||
 >              | 0  2  0 ||
@@ -972,11 +976,11 @@ graph TD
 > Solución:
 > 
 > a) Dirección del cable:
-> AB⃗ = (6, 8, -10)
-> ||AB⃗|| = √(36 + 64 + 100) = √200 = 10√2
+> A\vec{B} = (6, 8, -10)
+> ||A\vec{B}|| = √(36 + 64 + 100) = √200 = 10√2
 > 
 > Vector unitario:
-> û = AB⃗/||AB⃗|| = (6, 8, -10)/(10√2)
+> û = A\vec{B}/||A\vec{B}|| = (6, 8, -10)/(10√2)
 >   = (3/(5√2), 4/(5√2), -1/√2)
 > 
 > Componente de F en dirección del cable:
@@ -993,7 +997,7 @@ graph TD
 
 ## 💡 Consejos de Estudio
 
-> [!tip]- 🧠 Estrategias de Aprendizaje
+> [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para dominar aplicaciones geométricas:**
 > 
@@ -1054,7 +1058,7 @@ graph TD
 
 ## 🔗 Conexiones con el Sistema de Notas
 
-> [!quote]- 🌟 Enlaces Conceptuales
+> [!quote] 🌟 Enlaces Conceptuales
 > 
 > **Prerequisites (Prerrequisitos):**
 > 

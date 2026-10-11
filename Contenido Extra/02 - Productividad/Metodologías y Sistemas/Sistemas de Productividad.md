@@ -5,7 +5,7 @@
 ## ¿Qué es un Sistema de Productividad? 🎯
 
 > [!info] **Definición** Un sistema de productividad es un marco organizacional coherente y reproducible que integra métodos, herramientas y procesos para capturar, organizar, procesar y ejecutar tareas de manera eficiente. Es la infraestructura personal que permite transformar el caos de la información y responsabilidades en flujos de trabajo estructurados y resultados consistentes.
-
+>
 > [!tip] **Componentes Fundamentales** ✨
 > 
 > - **Captura universal**: Sistema confiable para registrar toda la información entrante
@@ -75,7 +75,7 @@ graph TD
 > - Procesar inboxes hasta vacío
 > - Revisar calendario de la semana siguiente
 > - Actualizar lista de proyectos
-
+>
 > [!tip] **2. PARA Method - Tiago Forte** 📚
 > 
 > ### Significado del Acrónimo:
@@ -99,7 +99,7 @@ graph TD
 > - **Accionabilidad**: Organizar por nivel de acción requerida
 > - **Progresividad**: Información que se mueve entre niveles
 > - **Contextualidad**: Agrupación por similitud de uso
-
+>
 > [!info] **3. Bullet Journal Method (BuJo) - Ryder Carroll** 📓
 > 
 > ### Componentes Básicos:
@@ -143,7 +143,7 @@ graph TD
 >     style E fill:#ff9999
 >     style K fill:#ff9999
 > ```
-
+>
 > [!warning] **4. Zettelkasten - Niklas Luhmann** 🗂️
 > 
 > ### Principios Fundamentales:
@@ -173,7 +173,7 @@ graph TD
 > - **Enlaces por proximidad**: Notas numericamente cercanas
 > - **Enlaces temáticos**: Tags y categorías
 > - **Enlaces emergentes**: Patrones que surgen del uso
-
+>
 > [!tip] **5. Time Blocking - Cal Newport** ⏰
 > 
 > ### Filosofía Central:
@@ -208,7 +208,7 @@ graph TD
 > 10:30-10:45 🚶 Descanso activo
 > 10:45-11:30 📞 Llamadas programadas
 > ```
-
+>
 > [!info] **6. Objectives and Key Results (OKRs)** 🎯
 > 
 > ### Estructura de OKRs:
@@ -235,7 +235,7 @@ graph TD
 > - **Específicos**: Claramente definidos
 > - **Medibles**: Con métricas concretas
 > - **Limitados en tiempo**: Con fecha límite clara
-
+>
 > [!warning] **7. BASB (Building a Second Brain) - Tiago Forte** 🧠
 > 
 > ### El Método CODE:
@@ -515,7 +515,7 @@ graph TD
 > - Reducción de horas de trabajo sin reducción de ingresos
 > - Mayor enfoque en actividades de alto impacto
 > - Creación de múltiples fuentes de ingreso pasivo
-
+>
 > [!warning] **Caso 2: Cal Newport - Deep Work Practice** 🧠
 > 
 > **Su Enfoque:**
@@ -598,7 +598,7 @@ graph TD
 > - [[Matriz de Eisenhower]] - Priorización por urgencia e importancia
 > - [[Análisis Costo-Beneficio]] - Evaluación de valor de actividades
 > - [[Delegación Efectiva]] - Liberar tiempo para actividades de alto valor
-> - [[Comunicación Efectiva]] - Coordinación eficiente con otros
+> - [[La Comunicación Efectiva]] - Coordinación eficiente con otros
 > - [[Gestión de Proyectos]] - Aplicación de sistemas a proyectos complejos
 > 
 > ### **Aplicación Avanzada:**

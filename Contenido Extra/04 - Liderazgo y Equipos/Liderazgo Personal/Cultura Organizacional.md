@@ -1,7 +1,7 @@
 # Cultura Organizacional
 
 > [!quote] _"La cultura se come a la estrategia en el desayuno. No importa qué tan brillante sea tu estrategia, si la cultura no la apoya, fracasará inevitablemente."_ - Peter Drucker
-
+>
 > [!info] 🏛️ **Definición y Fundamentos** La **cultura organizacional** es el conjunto de valores, creencias, normas, símbolos y prácticas compartidas que definen la identidad de una organización y guían el comportamiento de sus miembros. Es el "ADN invisible" que determina "cómo se hacen las cosas aquí".
 > 
 > ### Componentes Fundamentales
@@ -11,7 +11,7 @@
 > - **Normas de Comportamiento**: Reglas explícitas e implícitas
 > - **Símbolos y Rituales**: Manifestaciones tangibles de la cultura
 > - **Narrativas Organizacionales**: Historias que transmiten valores
-
+>
 > [!example] 🧊 **Modelo del Iceberg Cultural de Schein**
 > 
 > ```mermaid
@@ -26,7 +26,7 @@
 >     style C fill:#fff3e0,stroke:#ef6c00,stroke-width:3px
 >     style E fill:#fce4ec,stroke:#ad1457,stroke-width:3px
 > ```
-
+>
 > [!tip] 🎭 **Tipos de Cultura Organizacional - Modelo Competing Values**
 > 
 > ### Marco de Valores Competitivos (Cameron & Quinn)
@@ -48,7 +48,7 @@
 >     quadrant-3 JERARQUÍA  
 >     quadrant-4 MERCADO
 > ```
-
+>
 > [!abstract] 🔄 **Ciclo de Vida y Evolución Cultural**
 > 
 > ### Etapas de Desarrollo Cultural
@@ -75,7 +75,7 @@
 > - **Fusiones y adquisiciones** organizacionales
 > - **Transformación digital** y tecnológica
 > - **Crisis externas** y adaptación
-
+>
 > [!success] 📊 **Diagnóstico y Evaluación Cultural**
 > 
 > ### Herramientas de Diagnóstico
@@ -118,7 +118,7 @@
 >       Resolución de conflictos
 >       Comunicación efectiva
 > ```
-
+>
 > [!gear] ⚙️ **Gestión del Cambio Cultural**
 > 
 > ### Modelo de Transformación Cultural de Kotter
@@ -148,7 +148,7 @@
 > |**Grupal** 👥|Dinámicas de equipo|Team building, workshops|1-3 meses|
 > |**Departamental** 🏢|Alineación funcional|Reuniones, objetivos|6-12 meses|
 > |**Organizacional** 🌐|Transformación sistémica|Restructura, políticas|1-3 años|
-
+>
 > [!warning] ⚠️ **Desafíos y Resistencias Culturales**
 > 
 > ### Fuentes Comunes de Resistencia
@@ -175,7 +175,7 @@
 > - **Culpa y Castigo** ⚡: Penalizar errores en lugar de aprender
 > - **Comunicación Unidireccional** 📡: Información solo desde arriba
 > - **Favoritismo** 👑: Decisiones basadas en relaciones personales
-
+>
 > [!example] 🛠️ **Herramientas Prácticas de Construcción Cultural**
 > 
 > ### Rituales y Prácticas Organizacionales
@@ -206,7 +206,7 @@
 > |**Culture Newsletter** 📧|Historias y reconocimientos|Semanal|Todos los empleados|
 > |**Leadership Walks** 🚶|Conexión directa|Diario|Equipos específicos|
 > |**Culture Cafés** ☕|Conversaciones informales|Quincenal|Grupos pequeños|
-
+>
 > [!quote] 📚 **Técnica de Estudio Específica: Método CULTURE**
 > 
 > ### C.U.L.T.U.R.E para Dominar la Gestión Cultural
@@ -218,7 +218,7 @@
 > - **U**bicar: Sitúa la cultura en el contexto estratégico organizacional
 > - **R**econocer: Celebra manifestaciones positivas de la cultura deseada
 > - **E**valuar: Mide continuamente el progreso y ajusta estrategias
-
+>
 > [!abstract] 🌍 **Cultura Organizacional en Contextos Diversos**
 > 
 > ### Consideraciones Interculturales
@@ -241,7 +241,7 @@
 >     C[🛠️ SOLUCIONES DIGITALES] --> D[Plataformas colaborativas<br/>Rituales virtuales<br/>Espacios informales online]
 >     E[📈 NUEVAS MÉTRICAS] --> F[Engagement digital<br/>Colaboración virtual<br/>Bienestar remoto]
 > ```
-
+>
 > [!info] 📊 **Medición del ROI Cultural**
 > 
 > ### Métricas de Impacto Financiero
@@ -269,7 +269,7 @@
 >     style E fill:#ffebee,stroke:#c62828
 >     style F fill:#e8f5e8,stroke:#1b5e20
 > ```
-
+>
 > [!success] 🎯 **Casos de Éxito y Mejores Prácticas**
 > 
 > ### Organizaciones con Culturas Excepcionales
@@ -298,7 +298,7 @@
 > - **Coherencia Comportamental**: Líderes modelan valores
 > - **Adaptabilidad Continua**: Evolución con el entorno
 > - **Inclusión Genuina**: Diversidad como ventaja competitiva
-
+>
 > [!quote] 📖 **Referencias y Recursos Adicionales**
 > 
 > ### Lecturas Fundamentales
@@ -314,13 +314,13 @@
 > - **Glint (Microsoft Viva)**: Analytics de employee experience
 > - **15Five**: Herramienta de pulse surveys y feedback
 > - **Culture IQ**: Evaluación y benchmarking cultural
-
+>
 > [!note] 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### Prerrequisitos Recomendados
 > 
 > - [[Liderazgo Situacional]] - Base para influir en cultura
-> - [[Comunicación Efectiva]] - Transmisión de valores culturales
+> - [[La Comunicación Efectiva]] - Transmisión de valores culturales
 > - [[Gestión de Conflictos]] - Navegación de resistencias culturales
 > 
 > ### Conexiones Directas

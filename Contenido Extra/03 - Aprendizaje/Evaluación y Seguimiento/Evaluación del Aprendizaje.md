@@ -1,7 +1,7 @@
 # Evaluación del Aprendizaje
 
 > [!quote] _"La evaluación no es el final del aprendizaje, es el combustible que lo alimenta. Cuando se hace correctamente, la evaluación se convierte en el motor del crecimiento."_ – **Dylan Wiliam**
-
+>
 > [!info] **¿Qué es la Evaluación del Aprendizaje?** 🎯  
 > La evaluación del aprendizaje es un **proceso sistemático y continuo** de recopilación, análisis e interpretación de evidencias sobre el progreso, logros y necesidades de aprendizaje de los estudiantes.  
 > Va más allá de la calificación: busca **mejorar la enseñanza, orientar el aprendizaje** y proporcionar retroalimentación valiosa para todos los actores del proceso educativo.

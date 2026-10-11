@@ -5,7 +5,7 @@
 ## ¿Qué es la Gestión de Proyectos? 🎯
 
 > [!info] **Definición** La gestión de proyectos es la aplicación de conocimientos, habilidades, herramientas y técnicas para ejecutar proyectos de manera efectiva y eficiente. Es el arte de dirigir y coordinar recursos humanos y materiales durante la vida de un proyecto, utilizando técnicas modernas de gestión para lograr objetivos predefinidos de alcance, costo, tiempo, calidad y satisfacción de los participantes.
-
+>
 > [!tip] **Características de un Proyecto** ✨
 > 
 > - **Temporal**: Tiene un inicio y fin definidos
@@ -60,7 +60,7 @@ graph TD
 > - Análisis Costo-Beneficio
 > - Benchmarking
 > - Entrevistas con stakeholders
-
+>
 > [!tip] **Fase 2: Planificación** 📋
 > 
 > ### Componentes del Plan:
@@ -101,7 +101,7 @@ graph TD
 >     style E fill:#fff3e0
 >     style F fill:#fff3e0
 > ```
-
+>
 > [!info] **Fase 3: Ejecución** ⚡
 > 
 > ### Actividades Principales:
@@ -119,7 +119,7 @@ graph TD
 > - Adquisición y desarrollo del equipo
 > - Gestión de las comunicaciones
 > - Gestión del involucramiento de stakeholders
-
+>
 > [!warning] **Fase 4: Monitoreo y Control** 📊
 > 
 > ### Indicadores Clave de Rendimiento (KPIs):
@@ -158,7 +158,7 @@ graph TD
 >     style F fill:#ffcc99
 >     style G fill:#ff9999
 > ```
-
+>
 > [!tip] **Fase 5: Cierre** 🎯
 > 
 > ### Actividades de Cierre:
@@ -199,7 +199,7 @@ graph TD
 > - Poca flexibilidad para cambios
 > - Entrega tardía de valor
 > - Riesgo alto si los requisitos cambian
-
+>
 > [!tip] **Metodologías Ágiles** 🔄
 > 
 > ### Principios Fundamentales:
@@ -234,7 +234,7 @@ graph TD
 > - **Product Owner**: Define qué se construye
 > - **Scrum Master**: Facilita el proceso
 > - **Development Team**: Construye el producto
-
+>
 > [!warning] **Metodologías Híbridas** ⚖️
 > 
 > ### Cuándo Usar Cada Enfoque:
@@ -447,7 +447,7 @@ graph TD
 > - La claridad de propósito puede superar cualquier obstáculo técnico
 > - El liderazgo dual (administrativo-técnico) puede ser muy efectivo
 > - Los proyectos complejos requieren enfoques múltiples y paralelos
-
+>
 > [!warning] **Caso de Fracaso: Berlin Brandenburg Airport** ✈️
 > 
 > **Factores del Fracaso:**
@@ -481,7 +481,7 @@ graph TD
 > - **NPV** (Net Present Value): Valor presente neto
 > - **Payback Period**: Tiempo de recuperación
 > - **Business Value Delivered**: Valor entregado al negocio
-
+>
 > [!info] **KPIs Cualitativos** 🎯
 > 
 > ### **Satisfacción de Stakeholders:**
@@ -506,7 +506,7 @@ graph TD
 > - [[Toma de Decisiones]] - Procesos decisionales en contextos de proyecto
 > - [[Liderazgo Situacional]] - Adaptación del estilo de liderazgo según la fase
 > - [[Gestión de Conflictos]] - Resolución de conflictos entre stakeholders
-> - [[Comunicación Efectiva]] - Habilidades comunicacionales para PM
+> - [[La Comunicación Efectiva]] - Habilidades comunicacionales para PM
 > - [[Análisis Costo-Beneficio]] - Evaluación económica de proyectos
 > - [[Team Building]] - Construcción y desarrollo de equipos de proyecto
 > - [[Objetivos SMART]] - Definición clara de objetivos de proyecto
@@ -524,7 +524,7 @@ graph TD
 > - [[Planificación Estratégica Personal]] - Base conceptual de planificación
 > - [[Análisis Costo-Beneficio]] - Evaluación económica de alternativas
 > - [[Toma de Decisiones]] - Procesos decisionales estructurados
-> - [[Comunicación Efectiva]] - Habilidades comunicacionales esenciales
+> - [[La Comunicación Efectiva]] - Habilidades comunicacionales esenciales
 > 
 > ### **Habilidades Complementarias:**
 > 

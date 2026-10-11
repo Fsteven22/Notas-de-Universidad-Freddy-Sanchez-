@@ -25,13 +25,11 @@
 >     A --> D[Norton]
 >     A --> E[Máxima Transferencia<br/>de Potencia]
 >     A --> F[Transformación<br/>de Fuentes]
-> 
 >     B --> B1[Una fuente<br/>a la vez]
 >     C --> C1[Equivalente<br/>Vs + Rs]
 >     D --> D1[Equivalente<br/>Is + Rp]
 >     E --> E1[RL = RTh<br/>Pmáx]
 >     F --> F1[Voltaje ↔ Corriente]
-> 
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
@@ -66,7 +64,6 @@
 >     P3[3️⃣ Calcular la respuesta<br/>parcial con esa fuente] --> P4
 >     P4[4️⃣ Repetir para cada<br/>fuente restante] --> P5
 >     P5[5️⃣ Sumar algebraicamente<br/>todas las respuestas parciales]
-> 
 >     style P1 fill:#e1f5ff
 >     style P2 fill:#e1ffe1
 >     style P3 fill:#fff4e1
@@ -178,7 +175,6 @@
 >     A[Circuito simple] --> B{¿Tipo?}
 >     B -->|Resistores en SERIE<br/>fuente de voltaje| C["Divisor de voltaje<br/>V_Ri = Vf·Ri / Req"]
 >     B -->|Resistores en PARALELO<br/>fuente de corriente| D["Divisor de corriente<br/>I_Ri = Req·If / Rj"]
-> 
 >     style C fill:#e1f5ff
 >     style D fill:#e1ffe1
 > ```
@@ -210,7 +206,6 @@
 >         VTh --> B2[Terminal B]
 >     end
 >     Original -->|"≡"| Equiv
-> 
 >     style VTh fill:#fff4e1
 >     style RTh fill:#e1f5ff
 > ```
@@ -273,7 +268,6 @@
 >         IN --> A2[Terminal A]
 >         RN --> B2[Terminal B]
 >     end
-> 
 >     style IN fill:#fff4e1
 >     style RN fill:#e1ffe1
 > ```
@@ -296,7 +290,6 @@
 > ```mermaid
 > graph LR
 >     A["Thévenin<br/>VTh + RTh (serie)"] <-->|"Transformación<br/>de fuentes"| B["Norton<br/>IN + RN (paralelo)"]
-> 
 >     style A fill:#e1f5ff
 >     style B fill:#e1ffe1
 > ```
@@ -333,9 +326,7 @@
 >     subgraph I["Fuente de corriente"]
 >         Is[⬆ Is] --- Rs_p[Rs en paralelo]
 >     end
-> 
 >     V <-->|"Is = Vs/Rs<br/>Vs = Is·Rs"| I
-> 
 >     style Vs fill:#fff4e1
 >     style Is fill:#e1ffe1
 > ```
@@ -508,7 +499,6 @@
 >     A[Diagonal principal<br/>Término PROPIO] -->|"Suma de R o G<br/>propios del nodo/malla"| B["Signo POSITIVO ✅"]
 >     C[Fuera de diagonal<br/>Término MUTUO] -->|"R o G compartida<br/>entre nodos/mallas"| D["Signo NEGATIVO ❌"]
 >     E[Vector de fuentes] -->|"Voltaje o corriente<br/>según sentido de recorrido"| F["Signo por convención"]
-> 
 >     style A fill:#e1ffe1
 >     style C fill:#ffe1e1
 >     style E fill:#fff4e1
@@ -534,15 +524,12 @@
 > ```mermaid
 > graph TD
 >     A[Circuito complejo] --> B{¿Qué se busca?}
-> 
 >     B -->|Respuesta ante<br/>varias fuentes| C[Superposición]
 >     B -->|Simplificar<br/>para la carga| D{¿Tipo de equivalente?}
 >     B -->|Optimizar<br/>potencia| E[Máx. transferencia<br/>de potencia]
-> 
 >     D -->|Voltaje + serie| F[Thévenin]
 >     D -->|Corriente + paralelo| G[Norton]
 >     F <-->|Transformación| G
-> 
 >     style C fill:#e1f5ff
 >     style F fill:#e1ffe1
 >     style G fill:#fff4e1

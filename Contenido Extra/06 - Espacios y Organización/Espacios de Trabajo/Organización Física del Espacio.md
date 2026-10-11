@@ -3,7 +3,7 @@
 ## 📋 Principios Fundamentales
 
 > [!info] 🎯 Objetivo Principal La organización física del espacio busca crear ambientes funcionales, estéticamente agradables y que promuevan el bienestar y la productividad de quienes los habitan.
-
+>
 > [!tip] 💡 Principio de las 5S
 > 
 > - **Seiri (Clasificar)**: Separar lo necesario de lo innecesario
@@ -36,7 +36,7 @@ flowchart TD
 > - Iluminación tenue para relajación
 > 
 > **Regla de oro**: Mantener superficies despejadas para promover la calma
-
+>
 > [!warning] ⚠️ Evitar en el Dormitorio
 > 
 > - Acumulación de ropa sobre sillas
@@ -46,7 +46,7 @@ flowchart TD
 ### 🍳 Cocina
 
 > [!info] 👨‍🍳 Triángulo de Trabajo Organizar nevera, fregadero y cocina formando un triángulo eficiente para optimizar movimientos durante la preparación de alimentos.
-
+>
 > [!tip] 📦 Zonas de Almacenamiento
 > 
 > - **Zona fría**: Nevera y despensa
@@ -71,7 +71,7 @@ flowchart TD
 > - Teclado y ratón al nivel de los codos
 > - Silla con soporte lumbar adecuado
 > - Iluminación que evite reflejos en pantalla
-
+>
 > [!warning] 🚨 Errores Comunes
 > 
 > - Cables desordenados (usar organizadores)
@@ -163,7 +163,7 @@ gantt
 > - Equilibrio entre elementos llenos y vacíos
 > - Repetición de formas y texturas
 > - Puntos focales definidos
-
+>
 > [!info] 💡 Iluminación Estratégica
 > 
 > - Luz general para actividades básicas

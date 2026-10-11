@@ -1,6 +1,10 @@
+---
+dg-publish: true
+---
+
 # 🔢 Funciones
 
-> [!info]- 💡 Nota sobre el orden
+> [!info] 💡 Nota sobre el orden
 > Formalmente, una función es un caso especial de relación 
 > (ver 02 - Relaciones). Se estudia primero por convención 
 > del curso, pero la fundamentación teórica completa está 
@@ -9,22 +13,20 @@
 ---
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una función?
+> [!info] 💡 ¿Qué es una función?
 > 
-> Una **función** es un caso especial de relación entre dos conjuntos: una regla que asigna a cada elemento del dominio **exactamente un** elemento del codominio. Formalmente, es cualquier subconjunto del producto cartesiano con una restricción de unicidad.
+> Una **función** es un caso especial de relación entre dos conjuntos: una regla que asigna a cada elemento del dominio **exactamente un** elemento del codominio. Formalmente, es cualquier subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] con una restricción de unicidad.
 > 
 > ```mermaid
 > graph LR
 >     A["Dominio X"] -->|"f(x)"| B["Codominio Y"]
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
 > ```
 
 ---
 
 ## 📋 Definición Formal
 
-> [!note]- 📋 Función
+> [!note] 📋 Función
 > 
 > Sean X e Y dos conjuntos. Una **función** f de X en Y es cualquier subconjunto f de X × Y satisfaciendo que: para cada x ∈ X existe un **único** y ∈ Y tal que (x, y) ∈ f.
 > 
@@ -40,7 +42,7 @@
 > > 1. **Totalidad:** todo x ∈ X tiene al menos una imagen.
 > > 2. **Unicidad:** todo x ∈ X tiene a lo sumo una imagen.
 
-> [!note]- 📋 Definición 1 — Igualdad de funciones
+> [!note] 📋 Definición 1 — Igualdad de funciones
 > 
 > Sean f, g : X → Y dos funciones. Diremos que **f es igual a g** si se cumple que:
 > 
@@ -50,7 +52,7 @@
 
 ## 🔍 Tipos de Funciones
 
-> [!note]- 🔍 Definición 2 — Función Inyectiva
+> [!note] 🔍 Definición 2 — Función Inyectiva
 > 
 > Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **inyectiva** si cada elemento de Y posee **a lo más una** preimagen en X mediante f.
 > 
@@ -64,7 +66,7 @@
 > 
 > Es decir, **elementos distintos tienen imágenes distintas**.
 
-> [!note]- 🔍 Definición 3 — Función Sobreyectiva
+> [!note] 🔍 Definición 3 — Función Sobreyectiva
 > 
 > Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **sobreyectiva** si cada elemento de Y posee **al menos una** preimagen en X mediante f.
 > 
@@ -72,7 +74,7 @@
 > 
 > $$\forall y \in Y,\ \exists x \in X : f(x) = y$$
 
-> [!note]- 🔍 Definición 4 — Función Biyectiva
+> [!note] 🔍 Definición 4 — Función Biyectiva
 > 
 > Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **biyectiva** si es **inyectiva y sobreyectiva** a la vez.
 
@@ -80,7 +82,7 @@
 
 ## 🔗 Composición de Funciones
 
-> [!note]- 🔗 Definición 5 — Función Compuesta
+> [!note] 🔗 Definición 5 — Función Compuesta
 > 
 > Sean X, Y, Z conjuntos y f : X → Y, g : Y → Z funciones. Llamaremos **compuesta de g con f**, denotada g ∘ f, a la función:
 > 
@@ -98,7 +100,7 @@
 
 ## 🔄 Función Invertible e Inversa
 
-> [!note]- 🔄 Definición 6 — Función Invertible e Inversa
+> [!note] 🔄 Definición 6 — Función Invertible e Inversa
 > 
 > Sean X, Y dos conjuntos y f : X → Y una función. Diremos que f es **invertible** si existe una función g : Y → X tal que:
 > 
@@ -106,7 +108,7 @@
 > 
 > Si f es invertible, entonces g es **única**. La llamaremos la **inversa** de f, denotada f⁻¹.
 
-> [!abstract]- 📐 Teorema 1 — Invertible ⟺ Biyectiva
+> [!abstract] 📐 Teorema 1 — Invertible ⟺ Biyectiva
 > 
 > Sea f : X → Y una función. Entonces:
 > 
@@ -116,7 +118,7 @@
 
 ## 📐 Funciones Piso y Techo
 
-> [!note]- 📐 Definición 7 — Piso y Techo
+> [!note] 📐 Definición 7 — Piso y Techo
 > 
 > Sea x ∈ ℝ:
 > 
@@ -127,7 +129,7 @@
 
 ## 🧮 Ejemplos
 
-> [!example]- 📝 Ejemplo 14 — Función vs. no función
+> [!example] 📝 Ejemplo 14 — Función vs. no función
 > 
 > Sean X = {1, 2, 4, 5} e Y = {a, b, c}.
 > 
@@ -143,7 +145,7 @@
 > 
 > El elemento 1 ∈ X no tiene ninguna imagen — viola la totalidad.
 
-> [!example]- 📝 Ejemplo 15 — Funciones como conjuntos de pares
+> [!example] 📝 Ejemplo 15 — Funciones como conjuntos de pares
 > 
 > Los conjuntos A = {(x, x²) : x ∈ ℝ}, B = {(x, x) : x ∈ ℝ}, C = {(n, n+1) : n ∈ ℕ} son funciones.
 > 
@@ -151,7 +153,7 @@
 > 
 > Si f : X → Y es una función, diremos que f está dada por la **regla** f(x), ∀x ∈ X, y que su **gráfico** es el conjunto {(x, f(x)) : x ∈ X}.
 
-> [!example]- 📝 Ejemplo 16 — Gráfico de una función
+> [!example] 📝 Ejemplo 16 — Gráfico de una función
 > 
 > Hallar el gráfico de f(x) = x² y g(x) = x para X = {−2, −1, 0, 1, 2, 3}.
 > 
@@ -168,7 +170,7 @@
 > 
 > Gráfico de g = {(−2,−2),(−1,−1),(0,0),(1,1),(2,2),(3,3)}
 
-> [!example]- 📝 Ejemplo 1 — Inyectividad (discreta)
+> [!example] 📝 Ejemplo 1 — Inyectividad (discreta)
 > 
 > Sean X = {−2, 0, 2, 3} y Y = {−1, 0, 1, 2, 3, 4, 5, 9}.
 > 
@@ -178,7 +180,7 @@
 > **g(x) = x + 1 SÍ es inyectiva:**
 > Elementos distintos producen imágenes distintas.
 
-> [!example]- 📝 Ejemplo 2 — Inyectividad (demostración)
+> [!example] 📝 Ejemplo 2 — Inyectividad (demostración)
 > 
 > Sea h : ℝ → ℝ dada por h(x) = −2x + 3, ∀x ∈ ℝ. Entonces h es inyectiva.
 > 
@@ -186,7 +188,7 @@
 > 
 > $$h(x_1) = h(x_2) \Rightarrow -2x_1 + 3 = -2x_2 + 3 \Rightarrow -2x_1 = -2x_2 \Rightarrow x_1 = x_2 \quad \checkmark$$
 
-> [!example]- 📝 Ejemplo 3 — Sobreyectividad
+> [!example] 📝 Ejemplo 3 — Sobreyectividad
 > 
 > Con X, Y, f, g del Ejemplo 1:
 > 
@@ -201,11 +203,11 @@
 > 
 > Si escogemos x = −½y + 3/2, entonces x ∈ ℝ y h(x) = y. Por tanto h es sobreyectiva. ✓
 
-> [!example]- 📝 Ejemplo 4 — Biyectividad
+> [!example] 📝 Ejemplo 4 — Biyectividad
 > 
 > La función h(x) = −2x + 3 es **biyectiva** (inyectiva y sobreyectiva por los Ejemplos 2 y 3).
 
-> [!example]- 📝 Ejemplo 5 — Composición (no conmutativa)
+> [!example] 📝 Ejemplo 5 — Composición (no conmutativa)
 > 
 > Sean f, g : ℝ → ℝ dadas por f(x) = x² + 1 y g(x) = 3x + 5. Entonces:
 > 
@@ -215,7 +217,7 @@
 > 
 > Como 3x² + 8 ≠ 9x² + 30x + 26, vemos que la composición **no es conmutativa**.
 
-> [!example]- 📝 Ejemplo 6 — Composición (funciones inversas)
+> [!example] 📝 Ejemplo 6 — Composición (funciones inversas)
 > 
 > Sean f, g : ℝ → ℝ dadas por f(x) = ⅓x − 5/3 y g(x) = 3x + 5. Hallar f ∘ g y g ∘ f:
 > 
@@ -225,11 +227,11 @@
 > 
 > Ambas composiciones dan la identidad.
 
-> [!example]- 📝 Ejemplo 7 — Función invertible
+> [!example] 📝 Ejemplo 7 — Función invertible
 > 
 > La función f(x) = ⅓x − 5/3 del ejemplo anterior es invertible y su inversa es g(x) = 3x + 5, esto es f⁻¹ = g y también g⁻¹ = f.
 
-> [!example]- 📝 Ejemplo 8 — Biyectividad de función racional
+> [!example] 📝 Ejemplo 8 — Biyectividad de función racional
 > 
 > Pruebe que f : ℝ − {−1} → ℝ − {1} dada por f(x) = x/(x+1) es biyectiva.
 > 
@@ -245,7 +247,7 @@
 > 
 > Como y ≠ 1, el denominador 1 − y ≠ 0, y se puede verificar que x ≠ −1. Por tanto x ∈ ℝ − {−1} y f(x) = y. ✓
 
-> [!example]- 📝 Ejemplo 9 — Piso y Techo
+> [!example] 📝 Ejemplo 9 — Piso y Techo
 > 
 > | Piso | Resultado | Techo | Resultado |
 > |------|-----------|-------|-----------|
@@ -257,7 +259,7 @@
 
 ## 🔢 Demostraciones con Piso y Techo
 
-> [!note]- 📋 Técnica — Prueba por casos con piso y techo
+> [!note] 📋 Técnica — Prueba por casos con piso y techo
 > 
 > Las demostraciones que involucran $\lfloor x \rfloor$ y $\lceil x \rceil$ casi siempre se resuelven con **prueba por casos**, porque el comportamiento de estas funciones depende de si el argumento es entero o no.
 > 
@@ -270,7 +272,7 @@
 > 
 > En cada caso se aplican directamente las definiciones de piso y techo para verificar la igualdad.
 
-> [!note]- 📋 Propiedades útiles
+> [!note] 📋 Propiedades útiles
 > 
 > Sea $n \in \mathbb{Z}$ y $x \in \mathbb{R}$:
 > 
@@ -282,7 +284,7 @@
 > 
 > $$\lceil x \rceil = \lfloor x \rfloor \quad \text{si } x \in \mathbb{Z}$$
 
-> [!example]- 📝 Ejemplo — $\left\lfloor \dfrac{n+1}{2} \right\rfloor = \left\lceil \dfrac{n}{2} \right\rceil$ para todo $n \in \mathbb{N}$
+> [!example] 📝 Ejemplo — $\left\lfloor \dfrac{n+1}{2} \right\rfloor = \left\lceil \dfrac{n}{2} \right\rceil$ para todo $n \in \mathbb{N}$
 > 
 > **Caso 1 — $n$ par:** existe $m \in \mathbb{N}$ tal que $n = 2m$.
 > 
@@ -309,7 +311,7 @@
 
 ## 🏆 Ejercicio Resuelto — Biyectividad
 
-> [!example]- 📝 Ejercicio Resuelto — f(x) = (−2x+1)/(x−3)
+> [!example] 📝 Ejercicio Resuelto — f(x) = (−2x+1)/(x−3)
 > 
 > **Demostrar que f : ℝ − {3} → ℝ − {−2} dada por f(x) = (−2x+1)/(x−3) es biyectiva.**
 > 
@@ -374,9 +376,6 @@ graph TD
     D --> D1[Inyectiva + Sobreyectiva]
     F --> F2[Teorema: invertible ⟺ biyectiva]
 
-    style A fill:#1e3a5f,color:#fff
-    style D fill:#e1ffe1
-    style F fill:#fff4e1
 ```
 
 ---

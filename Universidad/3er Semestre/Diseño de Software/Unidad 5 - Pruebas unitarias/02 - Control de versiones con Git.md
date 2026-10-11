@@ -68,7 +68,6 @@ graph TB
 >     C --> PR[Pull Request]
 >     PR --> RV[Review + tests]
 >     RV --> M
->
 >     style M fill:#e1ffe1
 > ```
 >

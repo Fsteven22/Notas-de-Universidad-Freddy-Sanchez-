@@ -23,7 +23,7 @@
 > * **Gestión de Proyectos**: Ofrece herramientas visuales para gestionar tareas, errores y discusiones.
 > 
 > ---
-
+>
 > [!success]- ## ⚙️ Características Clave de GitHub
 > 
 > |Característica|Descripción y Utilidad|
@@ -35,7 +35,7 @@
 > |**Gists**|Una forma de compartir fragmentos de código o notas rápidas sin necesidad de crear un repositorio completo.|
 > 
 > ---
-
+>
 > [!tip]- ## 🚀 El Rol de GitHub en el Ecosistema de Conocimiento
 > 
 > Más allá del código, GitHub se ha convertido en una herramienta invaluable para la gestión del conocimiento personal.
@@ -45,7 +45,7 @@
 > 3.  **Portafolio Público**: Tus notas, proyectos y conocimientos pueden ser un portafolio público. Puedes usar GitHub Pages para convertir un repositorio de notas en un sitio web público, mostrando tu trabajo y tu forma de pensar.
 > 
 > ---
-
+>
 > [!example]- **Ejemplo Práctico de un Flujo de Trabajo con Obsidian**
 > **Objetivo:** Sincronizar tu vault de Obsidian con GitHub y hacer un "commit" de tus notas.
 > 
@@ -56,7 +56,7 @@
 > > **Importante:** Recuerda añadir el archivo `.obsidian/workspace` a tu `.gitignore` para no subir la configuración de la interfaz a GitHub.
 > 
 > ---
-
+>
 > [!link]- **🔗 Notas Relacionadas y Prerrequisitos**
 > 
 > ### Prerrequisitos

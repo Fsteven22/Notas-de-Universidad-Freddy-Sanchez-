@@ -16,7 +16,6 @@
 >     B --> C[Elemento<br/>Pasivo]
 >     C --> D[Conductor]
 >     D -->|-| A
->
 >     style A fill:#fff4e1
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
@@ -49,13 +48,10 @@
 > graph TD
 >     A[Fuentes<br/>Dependientes] --> B[De Voltaje]
 >     A --> C[De Corriente]
->
 >     B --> D[VCVS<br/>Voltaje → Voltaje]
 >     B --> E[CCVS<br/>Corriente → Voltaje]
->
 >     C --> F[VCCS<br/>Voltaje → Corriente]
 >     C --> G[CCCS<br/>Corriente → Corriente]
->
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
@@ -113,7 +109,6 @@
 >     A[Material<br/>Conductor] --> B[Electrones<br/>libres abundantes]
 >     B --> C[Baja resistividad<br/>ρ ~ 10⁻⁸ Ω·m]
 >     C --> D[Flujo fácil<br/>de corriente]
->
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -156,15 +151,12 @@
 > graph TD
 >     A[Resistencias] --> B[Fijas]
 >     A --> C[Variables]
->
 >     B --> D[Carbón<br/>comprimido]
 >     B --> E[Película<br/>metálica]
 >     B --> F[Bobinadas]
->
 >     C --> G[Potenciómetro<br/>3 terminales]
 >     C --> H[Reóstato<br/>2 terminales]
 >     C --> I[Termistor NTC/PTC<br/>depende de temperatura]
->
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
 > ```
@@ -237,14 +229,11 @@
 > graph TD
 >     A[Capacitores] --> B[No polarizados]
 >     A --> C[Polarizados]
->
 >     B --> D[Cerámico<br/>pF – nF]
 >     B --> E[Poliéster/Film<br/>nF – µF]
 >     B --> F[Mica<br/>pF – nF]
->
 >     C --> G[Electrolítico<br/>µF – mF]
 >     C --> H[Tántalo<br/>µF]
->
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
 > ```
@@ -294,11 +283,9 @@
 >     A[Inductores] --> B[Núcleo de aire]
 >     A --> C[Núcleo de hierro]
 >     A --> D[Núcleo de ferrita]
->
 >     B --> E[Alta frecuencia<br/>RF]
 >     C --> F[Baja frecuencia<br/>transformadores]
 >     D --> G[Media/alta frecuencia<br/>fuentes conmutadas]
->
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
@@ -352,13 +339,10 @@
 > graph TD
 >     A[Elementos<br/>de Control] --> B[Manuales]
 >     A --> C[Automáticos]
->
 >     B --> D[Interruptor<br/>ON/OFF fijo]
 >     B --> E[Pulsador NA<br/>Normalmente Abierto]
 >     B --> F[Pulsador NC<br/>Normalmente Cerrado]
->
 >     C --> G[Relé<br/>electromagnético]
->
 >     style B fill:#e1f5ff
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
@@ -383,7 +367,6 @@
 >     A[Señal de control<br/>pequeña 🔋] -->|energiza| B[Bobina<br/>del relé]
 >     B -->|campo magnético| C[Contacto<br/>se cierra]
 >     C -->|permite paso| D[Circuito de<br/>potencia 💡]
->
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#ffe1e1
@@ -411,7 +394,6 @@
 >     B -->|Resistencia| C[Disipa como calor<br/>P = I²R]
 >     B -->|Capacitor| D[Almacena y libera<br/>campo eléctrico]
 >     B -->|Inductor| E[Almacena y libera<br/>campo magnético]
->
 >     style C fill:#ffe1e1
 >     style D fill:#e1f5ff
 >     style E fill:#fff4e1

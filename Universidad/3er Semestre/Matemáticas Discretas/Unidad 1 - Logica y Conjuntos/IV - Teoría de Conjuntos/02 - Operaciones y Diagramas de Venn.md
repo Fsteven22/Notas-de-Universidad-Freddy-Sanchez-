@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # ⚙️ Operaciones de Conjuntos y Diagramas de Venn
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué operaciones podemos hacer con conjuntos?
+> [!info] 💡 ¿Qué operaciones podemos hacer con conjuntos?
 >
 > Así como los números tienen operaciones (suma, resta, multiplicación), los conjuntos tienen sus propias operaciones que permiten combinarlos o compararlos. Estas operaciones son la base del álgebra de conjuntos.
 >
@@ -13,12 +17,6 @@
 >     A --> D[Diferencia −]
 >     A --> E[Complemento Xᶜ]
 >     A --> F[Producto Cartesiano ×]
->
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f5e1ff
 > ```
 >
 > | Operación | Símbolo | Descripción breve |
@@ -33,7 +31,7 @@
 
 ## 🔵 Unión
 
-> [!note]- 🔵 Definición — Unión $A \cup B$
+> [!note] 🔵 Definición — Unión $A \cup B$
 >
 > La **unión** de $A$ y $B$ es el conjunto de todos los elementos que pertenecen a $A$, a $B$, o a ambos:
 >
@@ -59,7 +57,7 @@
 
 ## 🟢 Intersección
 
-> [!note]- 🟢 Definición — Intersección $A \cap B$
+> [!note] 🟢 Definición — Intersección $A \cap B$
 >
 > La **intersección** de $A$ y $B$ es el conjunto de todos los elementos que pertenecen simultáneamente a $A$ y a $B$:
 >
@@ -81,7 +79,7 @@
 
 ## 🟡 Diferencia
 
-> [!note]- 🟡 Definición — Diferencia $A - B$
+> [!note] 🟡 Definición — Diferencia $A - B$
 >
 > La **diferencia** de $A$ y $B$ es el conjunto de elementos que pertenecen a $A$ pero **no** a $B$:
 >
@@ -107,7 +105,7 @@
 
 ## 🔴 Complemento
 
-> [!note]- 🔴 Definición — Complemento $A^c$
+> [!note] 🔴 Definición — Complemento $A^c$
 >
 > Dado un **conjunto universal** $U$ y un subconjunto $A \subseteq U$, el **complemento** de $A$, denotado $A^c$, es el conjunto de todos los elementos de $U$ que **no** pertenecen a $A$:
 >
@@ -121,13 +119,13 @@
 >
 > > [!tip]- 💡 Observación
 > >
-> > El complemento de un conjunto **depende del universo** $U$ con el que se trabaje. Si $U$ cambia, $A^c$ también cambia.
+> > El [[03 - Leyes de Conjuntos|complemento de un conjunto]] **depende del universo** $U$ con el que se trabaje. Si $U$ cambia, $A^c$ también cambia.
 
 ---
 
 ## 🟣 Producto Cartesiano
 
-> [!note]- 🟣 Definición — Par ordenado y Producto Cartesiano
+> [!note] 🟣 Definición — Par ordenado y Producto Cartesiano
 >
 > ### Par ordenado
 >
@@ -161,7 +159,7 @@
 
 ## 🔷 Diagramas de Venn
 
-> [!note]- 🔷 Representación visual de operaciones
+> [!note] 🔷 Representación visual de operaciones
 >
 > Los **diagramas de Venn** representan conjuntos como regiones dentro de un rectángulo (el universo $U$). Son útiles para visualizar operaciones e identificar relaciones entre conjuntos.
 >
@@ -202,7 +200,7 @@
 
 ## 🧮 Ejemplo con Diagrama de Venn — Problema de conteo
 
-> [!example]- 📝 Ejemplo — Estudiantes con 3 materias
+> [!example] 📝 Ejemplo — Estudiantes con 3 materias
 >
 > En un grupo de **191 estudiantes**, se sabe que:
 > - 10 toman francés, negocios y música.
@@ -224,7 +222,7 @@
 
 ## 📝 Ejercicios Propuestos
 
-> [!question]- 📋 Ejercicios
+> [!question] 📋 Ejercicios
 >
 > **1.** Sean $A = \{1, 2, 3, 4\}$ y $B = \{3, 4, 5, 6\}$. Calcula:
 > - $A \cup B$
@@ -238,7 +236,7 @@
 >
 > **4.** En un grupo de 50 estudiantes, 30 estudian matemáticas, 25 estudian física y 10 estudian ambas. ¿Cuántos no estudian ninguna?
 
-> [!success]- ✅ Respuestas
+> [!success] ✅ Respuestas
 >
 > **1.**
 > - $A \cup B = \{1, 2, 3, 4, 5, 6\}$
@@ -286,19 +284,13 @@ graph TD
     F --> F1["A × B: pares ordenados (a,b)"]
     F --> F2["Cardinal: |A|·|B|"]
 
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1e1
-    style F fill:#f5e1ff
 ```
 
 ---
 
 ## 🧩 Ejercicios Resueltos
 
-> [!example]- 📝 Ejercicio Resuelto 1 — Operaciones combinadas
+> [!example] 📝 Ejercicio Resuelto 1 — Operaciones combinadas
 >
 > **Problema:** Sean A = {1, 2, 3, 4, 5}, B = {3, 4, 5, 6, 7} y U = {1, 2, ..., 10}. Calcula:
 > a) A ∪ B
@@ -319,7 +311,7 @@ graph TD
 >
 > e) |A × B| = |A| · |B| = 5 · 5 = **25 pares ordenados** $\blacksquare$
 
-> [!example]- 📝 Ejercicio Resuelto 2 — Diagrama de Venn con 3 conjuntos
+> [!example] 📝 Ejercicio Resuelto 2 — Diagrama de Venn con 3 conjuntos
 >
 > **Problema:** En una encuesta de 100 personas sobre streaming:
 > - 60 usan Netflix (N)
@@ -340,7 +332,7 @@ graph TD
 >
 > Personas que no usan ninguno: 100 - 95 = **5 personas** $\blacksquare$
 
-> [!example]- 📝 Ejercicio Resuelto 3 — Producto Cartesiano
+> [!example] 📝 Ejercicio Resuelto 3 — Producto Cartesiano
 >
 > **Problema:** Sea A = {0, 1} y B = {a, b, c}. Encuentra A × B y B × A. ¿Son iguales?
 >

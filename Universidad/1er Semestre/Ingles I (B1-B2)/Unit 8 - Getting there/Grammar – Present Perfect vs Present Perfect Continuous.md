@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 # 🎯 Present Perfect vs Present Perfect Continuous
 
 ## 🌟 What Are These Tenses?
@@ -15,7 +19,7 @@
 
 ### 📖 Historical Context
 
-> [!note]- Development of Perfect Tenses in English
+> [!note] Development of Perfect Tenses in English
 > 
 > **Old English period (450-1100 AD):**
 > 
@@ -48,7 +52,7 @@
 
 ### ✅ Formation and Structure
 
-> [!success]- How to Form Present Perfect
+> [!success] How to Form Present Perfect
 > 
 > **Formula: have/has + past participle**
 > 
@@ -100,7 +104,7 @@
 
 ### 🎯 When to Use Present Perfect
 
-> [!important]- Main Uses of Present Perfect
+> [!important] Main Uses of Present Perfect
 > 
 > **Use 1: Actions completed at an unspecified time in the past**
 > 
@@ -186,7 +190,7 @@
 
 ### 📊 Time Expressions with Present Perfect
 
-> [!tip]- Common Time Markers
+> [!tip] Common Time Markers
 > 
 > **Unspecified time:**
 > 
@@ -245,7 +249,7 @@
 
 ### ⚠️ Common Mistakes with Present Perfect
 
-> [!warning]- Errors to Avoid
+> [!warning] Errors to Avoid
 > 
 > **Mistake 1: Using present perfect with specific past time**
 > 
@@ -321,7 +325,7 @@
 
 ### ✅ Formation and Structure
 
-> [!success]- How to Form Present Perfect Continuous
+> [!success] How to Form Present Perfect Continuous
 > 
 > **Formula: have/has + been + verb-ing**
 > 
@@ -373,7 +377,7 @@
 
 ### 🎯 When to Use Present Perfect Continuous
 
-> [!important]- Main Uses of Present Perfect Continuous
+> [!important] Main Uses of Present Perfect Continuous
 > 
 > **Use 1: Actions that started in the past and are STILL CONTINUING now**
 > 
@@ -460,7 +464,7 @@
 
 ### 📊 Time Expressions with Present Perfect Continuous
 
-> [!tip]- Common Time Markers
+> [!tip] Common Time Markers
 > 
 > **Duration emphasis:**
 > 
@@ -514,7 +518,7 @@
 
 ### 🔍 Key Differences and When to Choose
 
-> [!important]- The Main Distinction
+> [!important] The Main Distinction
 > 
 > **PRESENT PERFECT SIMPLE = Focus on RESULT/COMPLETION**
 > 
@@ -548,7 +552,7 @@
 
 ### 📋 Direct Comparisons
 
-> [!example]- Side-by-Side Examples
+> [!example] Side-by-Side Examples
 > 
 > **Example Set 1: Work/Study**
 > 
@@ -633,7 +637,7 @@
 
 ### 🎯 Choosing Between Them
 
-> [!tip]- Decision Guide
+> [!tip] Decision Guide
 > 
 > **Use PRESENT PERFECT when:**
 > 
@@ -677,7 +681,7 @@
 
 ### ⚠️ Verbs That Usually Don't Take Continuous
 
-> [!warning]- Stative Verbs - No Continuous Form
+> [!warning] Stative Verbs - No Continuous Form
 > 
 > **These verbs describe STATES, not actions, so we normally use Present Perfect (not continuous):**
 > 
@@ -759,7 +763,7 @@
 
 ### 📝 Example Conversations
 
-> [!example]- Real-Life Dialogues
+> [!example] Real-Life Dialogues
 > 
 > **Conversation 1: At the Office**
 > 
@@ -854,7 +858,7 @@
 
 ### 🎯 Practice Scenarios
 
-> [!example]- Common Situations
+> [!example] Common Situations
 > 
 > **Scenario 1: Explaining Tiredness**
 > 
@@ -930,7 +934,7 @@
 
 ## 🎓 Practice Exercises
 
-> [!example]- Exercise 1: Choose the Correct Tense
+> [!example] Exercise 1: Choose the Correct Tense
 > 
 > **Complete with Present Perfect or Present Perfect Continuous:**
 > 
@@ -962,8 +966,8 @@
 > 10. has been raining (evidence visible now)
 > ```
 >
-
-> [!example]- Exercise 2: Correct the Mistakes
+>
+> [!example] Exercise 2: Correct the Mistakes
 >
 > **Find and correct the errors:**
 >
@@ -1016,8 +1020,8 @@
 > ```
 >
 > 
-
-> [!example]- Exercise 3: Complete the Conversations
+>
+> [!example] Exercise 3: Complete the Conversations
 >
 > **Fill in the blanks with the correct form:**
 >
@@ -1075,8 +1079,8 @@
 > ```
 >
 > 
-
-> [!example]- Exercise 4: Rewrite Using the Other Tense
+>
+> [!example] Exercise 4: Rewrite Using the Other Tense
 >
 > **Change the tense while keeping similar meaning (when possible):**
 >
@@ -1111,8 +1115,8 @@
 > ```
 >
 > 
-
-> [!example]- Exercise 5: Choose and Explain
+>
+> [!example] Exercise 5: Choose and Explain
 >
 > **Choose the better option and explain why:**
 >
@@ -1158,8 +1162,8 @@
 > ```
 >
 > 
-
-> [!example]- Exercise 6: Translate from Spanish
+>
+> [!example] Exercise 6: Translate from Spanish
 >
 > **Translate these sentences, choosing the correct tense:**
 >
@@ -1212,8 +1216,8 @@
 > ```
 >
 > 
-
-> [!example]- Exercise 7: Present Perfect Simple or Continuous? Context Matters
+>
+> [!example] Exercise 7: Present Perfect Simple or Continuous? Context Matters
 >
 > **Read the situation and choose the appropriate tense:**
 >
@@ -1297,7 +1301,7 @@
 
 ## 🌍 British vs American English Differences
 
-> [!info]- Regional Variations
+> [!info] Regional Variations
 >
 > **British English tends to use Present Perfect more often:**
 >
@@ -1357,7 +1361,7 @@
 
 ## 📊 Summary Tables
 
-> [!note]- Quick Reference: When to Use Each Tense
+> [!note] Quick Reference: When to Use Each Tense
 >
 > **PRESENT PERFECT SIMPLE**
 >
@@ -1379,8 +1383,8 @@
 > | Emphasis on process, not result | They have been building a house | for, all day |
 > | Temporary situation | I have been feeling tired lately | lately, recently, these days |
 > | Repeated actions over time | He has been calling me daily | lately, recently |
-
-> [!tip]- Signal Words Comparison
+>
+> [!tip] Signal Words Comparison
 >
 > **Words that suggest PRESENT PERFECT SIMPLE:**
 >
@@ -1430,7 +1434,7 @@
 
 ## 🎯 Advanced Concepts
 
-> [!note]- Subtle Meaning Differences
+> [!note] Subtle Meaning Differences
 >
 > **With certain verbs, both tenses are possible but meaning shifts:**
 >
@@ -1493,8 +1497,8 @@
 >   → Common with "lately/recently"
 >   → Often with longer durations
 > ```
-
-> [!important]- Result vs Process: The Core Distinction
+>
+> [!important] Result vs Process: The Core Distinction
 >
 > **Understanding the fundamental difference:**
 >
@@ -1556,7 +1560,7 @@
 
 ## 💬 Common Expressions and Phrases
 
-> [!example]- Fixed Expressions with Present Perfect
+> [!example] Fixed Expressions with Present Perfect
 >
 > **Common phrases you'll hear often:**
 >
@@ -1594,7 +1598,7 @@
 
 ## 🔗 Referencias y Conexiones
 
-> [!quote]- Enlaces Conceptuales
+> [!quote] Enlaces Conceptuales
 >
 > **📖 Fundamentos previos necesarios:**
 >
@@ -1724,7 +1728,7 @@
 
 ## 📖 GLOSSARY - GLOSARIO
 
-> [!note]- Essential Vocabulary (English ↔ Spanish)
+> [!note] Essential Vocabulary (English ↔ Spanish)
 >
 > ### Tense Names:
 >
@@ -1882,7 +1886,7 @@
 
 ## 🎓 Study Plan and Learning Path
 
-> [!success]- 14-Day Mastery Plan
+> [!success] 14-Day Mastery Plan
 > 
 > **Week 1: Present Perfect Simple**
 > 
@@ -1975,8 +1979,8 @@
 > • Write essay using both tenses correctly
 > • Self-evaluate progress and identify next steps
 > ```
-
-> [!tip]- Daily Practice Routine (20 minutes)
+>
+> [!tip] Daily Practice Routine (20 minutes)
 > 
 > **Morning (7 minutes):**
 > 
@@ -2010,7 +2014,7 @@
 
 ## 🎯 Advanced Practice: Real-World Scenarios
 
-> [!example]- Scenario-Based Practice
+> [!example] Scenario-Based Practice
 > 
 > **Scenario 1: Job Interview**
 > 
@@ -2096,7 +2100,7 @@
 
 ## 🔍 Common Mistakes: Deep Dive
 
-> [!warning]- Detailed Error Analysis
+> [!warning] Detailed Error Analysis
 > 
 > **ERROR 1: Using Present Perfect with specific past time**
 > 
@@ -2274,7 +2278,7 @@
 
 ## 📱 Modern Usage and Digital Communication
 
-> [!info]- Present Perfect in Texts, Emails, and Social Media
+> [!info] Present Perfect in Texts, Emails, and Social Media
 > 
 > **Text messages and casual communication:**
 > 
@@ -2342,7 +2346,7 @@
 
 ## 🌟 Tips for Spanish Speakers
 
-> [!important]- Specific Challenges for Native Spanish Speakers
+> [!important] Specific Challenges for Native Spanish Speakers
 > 
 > **Challenge 1: Direct translation doesn't always work**
 > 
@@ -2445,7 +2449,7 @@
 
 ## 🎯 Self-Assessment Checklist
 
-> [!success]- Progress Tracker
+> [!success] Progress Tracker
 > 
 > **Level 1: Basic Understanding ✅**
 > 
@@ -2490,7 +2494,7 @@
 
 ## 📚 Additional Resources
 
-> [!info]- Recommended Materials
+> [!info] Recommended Materials
 > 
 > **Online Practice:**
 > 
@@ -2536,7 +2540,7 @@
 
 ## 💪 Final Tips for Mastery
 
-> [!quote]- Words of Encouragement
+> [!quote] Words of Encouragement
 > 
 > **Remember:**
 > 
@@ -2582,7 +2586,7 @@
 
 ## 📝 Summary and Conclusion
 
-> [!success]- Key Takeaways
+> [!success] Key Takeaways
 > 
 > **PRESENT PERFECT SIMPLE:**
 > 

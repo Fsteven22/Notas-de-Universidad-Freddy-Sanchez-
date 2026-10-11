@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🔄 Serialización de Objetos
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es la Serialización?
+> [!info] 💡 ¿Qué es la Serialización?
 > 
 > La **serialización** es el proceso de convertir un objeto Java en una secuencia de bytes para poder:
 > 
@@ -25,7 +29,6 @@
 >     A[🪑 Objeto Java<br/>en memoria] -->|Serialización| B[📦 Bytes<br/>secuencia]
 >     B -->|Almacenar/Enviar| C[💾 Archivo<br/>o Red]
 >     C -->|Deserialización| D[🪑 Objeto Java<br/>reconstruido]
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#ffe1e1
@@ -38,7 +41,7 @@
 
 ### ✅ Implementar Serializable
 
-> [!tip]- 🔖 La Interfaz Serializable
+> [!tip] 🔖 La Interfaz Serializable
 > 
 > Para que un objeto sea serializable, su clase debe implementar `java.io.Serializable`.
 > 
@@ -65,7 +68,7 @@
 
 ### 🔢 serialVersionUID
 
-> [!warning]- 🆔 Control de Versiones
+> [!warning] 🆔 Control de Versiones
 > 
 > El `serialVersionUID` es un identificador único que garantiza compatibilidad entre versiones.
 > 
@@ -85,7 +88,7 @@
 
 ### 🚫 Campos No Serializables
 
-> [!example]- 🔒 Atributos transient y static
+> [!example] 🔒 Atributos transient y static
 > 
 > **1. Modificador `transient`:**
 > 
@@ -129,7 +132,7 @@
 
 ### 🔧 Uso de ObjectOutputStream
 
-> [!example]- 💾 Guardar Objetos en Archivo
+> [!example] 💾 Guardar Objetos en Archivo
 > 
 > **Proceso:**
 > 
@@ -139,7 +142,6 @@
 >     participant OOS as ObjectOutputStream
 >     participant FOS as FileOutputStream
 >     participant F as Archivo
->     
 >     P->>OOS: writeObject(objeto)
 >     OOS->>OOS: Convertir a bytes
 >     OOS->>FOS: Escribir bytes
@@ -170,7 +172,7 @@
 
 ### 📚 Serializar Colecciones
 
-> [!success]- 🗂️ Guardar Múltiples Objetos
+> [!success] 🗂️ Guardar Múltiples Objetos
 > 
 > **Opción 1: Serializar colección completa**
 > 
@@ -221,7 +223,7 @@
 
 ### 🔧 Uso de ObjectInputStream
 
-> [!example]- 📖 Leer Objetos desde Archivo
+> [!example] 📖 Leer Objetos desde Archivo
 > 
 > **Proceso:**
 > 
@@ -231,7 +233,6 @@
 >     participant FIS as FileInputStream
 >     participant OIS as ObjectInputStream
 >     participant P as Programa
->     
 >     P->>OIS: readObject()
 >     OIS->>FIS: Leer bytes
 >     FIS->>F: Cargar desde disco
@@ -260,7 +261,7 @@
 
 ### 📚 Deserializar Colecciones
 
-> [!success]- 🗂️ Cargar Múltiples Objetos
+> [!success] 🗂️ Cargar Múltiples Objetos
 > 
 > **Opción 1: Cargar colección completa**
 > 
@@ -313,7 +314,7 @@
 
 ## ⚠️ Excepciones Comunes
 
-> [!warning]- 🚨 Manejo de Errores
+> [!warning] 🚨 Manejo de Errores
 > 
 > |Excepción|Causa|Solución|
 > |---|---|---|
@@ -361,7 +362,7 @@
 
 ## 🎯 Ejemplo Completo
 
-> [!example]- 💼 Sistema de Gestión de Estudiantes
+> [!example] 💼 Sistema de Gestión de Estudiantes
 > 
 > **Clase Estudiante:**
 > 
@@ -467,7 +468,7 @@
 
 ## 🆚 Serialización vs Otros Formatos
 
-> [!note]- 📊 Comparación con Alternativas
+> [!note] 📊 Comparación con Alternativas
 > 
 > |Aspecto|Serialización Java|JSON|XML|Base de Datos|
 > |---|---|---|---|---|
@@ -483,15 +484,12 @@
 >     A{¿Qué usar?} --> B{¿Solo Java?}
 >     B -->|Sí| C[Serialización Java]
 >     B -->|No| D{¿Formato?}
->     
 >     D --> E[Datos estructurados<br/>simples]
 >     D --> F[Documentos<br/>complejos]
 >     D --> G[Gran volumen<br/>consultas]
->     
 >     E --> H[JSON]
 >     F --> I[XML]
 >     G --> J[Base de Datos]
->     
 >     style C fill:#e1f5ff
 >     style H fill:#e1ffe1
 >     style I fill:#fff4e1
@@ -502,7 +500,7 @@
 
 ## ✅ Mejores Prácticas
 
-> [!tip]- 🏆 Recomendaciones
+> [!tip] 🏆 Recomendaciones
 > 
 > **1. SIEMPRE incluir serialVersionUID**
 > 

@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟦 Vocabulary & Use - Accidents + Extremes
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué aprenderás en esta sección?
+> [!info] 💡 ¿Qué aprenderás en esta sección?
 > 
 > En esta nota dominarás el vocabulario esencial para hablar sobre:
 > 
@@ -24,13 +28,10 @@
 > graph TD
 >     A[Life's Little Lessons] --> B[Accidents Happen]
 >     A --> C[Strong Reactions]
->     
 >     B --> D[Accident Verbs:<br/>spill, slip, knock off]
 >     B --> E[Responsibility:<br/>blame, feel bad]
->     
 >     C --> F[Extreme Adjectives:<br/>exhausted, terrified]
 >     C --> G[Reactions:<br/>be mad at, feel awful]
->     
 >     style B fill:#ffe1e1
 >     style C fill:#e1f5ff
 >     style D fill:#fff4e1
@@ -41,7 +42,7 @@
 
 ## 🚨 A. Describing Accidents - Verbs & Expressions
 
-> [!example]- 💥 Accident Verbs (What Happened)
+> [!example] 💥 Accident Verbs (What Happened)
 > 
 > **Core accident verbs:**
 > 
@@ -116,8 +117,8 @@
 > damaged = broken but maybe repairable
 > destroyed = completely ruined, can't be fixed
 > ```
-
-> [!success]- 😬 Responsibility & Feelings (What You Do After)
+>
+> [!success] 😬 Responsibility & Feelings (What You Do After)
 > 
 > **Expressing responsibility and reactions:**
 > 
@@ -191,8 +192,8 @@
 > • forget to turn off = leave on
 > • forget to close = leave open
 > ```
-
-> [!tip]- 🔄 Complete Accident Scenarios
+>
+> [!tip] 🔄 Complete Accident Scenarios
 > 
 > **Scenario 1: Kitchen Accident**
 > 
@@ -255,7 +256,7 @@
 
 ## 🌡️ B. Describing Extremes - Extreme Adjectives
 
-> [!note]- ❄️🔥 Temperature & Size Extremes
+> [!note] ❄️🔥 Temperature & Size Extremes
 > 
 > **Why use extreme adjectives?**
 > 
@@ -355,8 +356,8 @@
 > small = pequeño (normal)
 > tiny = diminuto (extremo)
 > ```
-
-> [!example]- 😱😄 Emotional Extremes
+>
+> [!example] 😱😄 Emotional Extremes
 > 
 > **Extreme emotion adjectives:**
 > 
@@ -450,8 +451,8 @@
 > • Often for impressive sights/performances
 > • magnificent view/building/performance
 > ```
-
-> [!success]- ⚖️ Regular vs Extreme - Comparison Chart
+>
+> [!success] ⚖️ Regular vs Extreme - Comparison Chart
 > 
 > **Understanding the scale:**
 > 
@@ -497,7 +498,7 @@
 
 ## 📚 C. Mini-Glosario EN → ES
 
-> [!note]- 📖 Complete Vocabulary Reference
+> [!note] 📖 Complete Vocabulary Reference
 > 
 > **Accidents & Actions:**
 > 
@@ -554,7 +555,7 @@
 
 ## 🔗 D. Collocations & Real Usage
 
-> [!tip]- 🎯 Common Collocations - Accidents
+> [!tip] 🎯 Common Collocations - Accidents
 > 
 > **With SPILL:**
 > 
@@ -621,8 +622,8 @@
 > • The fire completely destroyed the warehouse
 > • The earthquake destroyed the entire city
 > ```
-
-> [!example]- 🎯 Common Collocations - Extremes
+>
+> [!example] 🎯 Common Collocations - Extremes
 > 
 > **Temperature extremes:**
 > 
@@ -701,7 +702,7 @@
 
 ## 💬 E. Frases Modelo - Situaciones Reales
 
-> [!success]- 🗣️ Model Sentences - Accidents
+> [!success] 🗣️ Model Sentences - Accidents
 > 
 > **Describing what happened:**
 > 
@@ -748,8 +749,8 @@
 > ✅ I'll replace it
 > ✅ I'll be more careful next time
 > ```
-
-> [!tip]- 🗣️ Model Sentences - Extreme Reactions
+>
+> [!tip] 🗣️ Model Sentences - Extreme Reactions
 > 
 > **Expressing strong feelings:**
 > 
@@ -827,7 +828,7 @@
 
 ## 🎯 F. Practice Exercises
 
-> [!note]- ✏️ Exercise 1: Accident Verbs
+> [!note] ✏️ Exercise 1: Accident Verbs
 > 
 > **Choose the correct verb:**
 > 
@@ -854,8 +855,8 @@
 > > 6. **pick up**
 > > 7. **left** ... **on**
 > > 8. **damaged**
-
-> [!example]- ✏️ Exercise 2: Extreme Adjectives
+>
+> [!example] ✏️ Exercise 2: Extreme Adjectives
 > 
 > **Replace the underlined word with an extreme adjective:**
 > 
@@ -882,8 +883,8 @@
 > > 6. **freezing**
 > > 7. **enormous**
 > > 8. **miserable**
-
-> [!tip]- ✏️ Exercise 3: Complete the Dialogue
+>
+> [!tip] ✏️ Exercise 3: Complete the Dialogue
 > 
 > **Fill in the gaps with appropriate vocabulary:**
 > 
@@ -972,7 +973,7 @@ mindmap
 
 ## 🔗 Connection to Next Topics
 
-> [!note]- 🌟 Ready for Grammar
+> [!note] 🌟 Ready for Grammar
 > 
 > **You've mastered the vocabulary. Now you'll learn to:**
 > 
@@ -987,7 +988,6 @@ mindmap
 >     A[Vocabulary:<br/>Accidents & Extremes] --> B[Grammar:<br/>Indefinite Pronouns &<br/>Reported Speech]
 >     B --> C[Functional Language:<br/>Reacting & Reporting]
 >     C --> D[Real Use:<br/>Tell stories about<br/>life's little lessons]
->     
 >     style A fill:#e1ffe1
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff

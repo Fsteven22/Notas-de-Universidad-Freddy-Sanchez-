@@ -73,7 +73,6 @@ dg-publish: true
 >     A --> G[Unidad 6\nHerramientas]
 >     A --> H[Unidad 7\nPrivacidad]
 >     A --> I[Unidad 8\nÉtica]
->
 >     style B fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1

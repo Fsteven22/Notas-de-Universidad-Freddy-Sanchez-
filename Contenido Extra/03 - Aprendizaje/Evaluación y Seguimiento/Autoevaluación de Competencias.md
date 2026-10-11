@@ -1,7 +1,7 @@
 # Autoevaluación de Competencias
 
 > [!quote] _"El verdadero viaje del descubrimiento no consiste en buscar nuevos paisajes, sino en tener nuevos ojos para mirarse a uno mismo."_ – **Marcel Proust**
-
+>
 > [!info] **¿Qué es la Autoevaluación de Competencias?** 🎯  
 > La autoevaluación de competencias es un **proceso reflexivo y sistemático** mediante el cual una persona analiza, evalúa y documenta sus conocimientos, habilidades, actitudes y experiencias para identificar fortalezas, áreas de mejora y oportunidades de desarrollo.  
 > Es la base fundamental para el **crecimiento profesional consciente** y la planificación estratégica de carrera.

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Debil-fuerte" id="d1">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v1" value="EMPLOYEE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" value="DEPENDENT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="85" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="DEPENDENT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="312" y="97" width="176" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="rectangulo doble = debil" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="300" y="200" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" value="CURSO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="280" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" value="CLASE&#10;PK heredada" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="280" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" value="linea solida = fuerte" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="300" y="365" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

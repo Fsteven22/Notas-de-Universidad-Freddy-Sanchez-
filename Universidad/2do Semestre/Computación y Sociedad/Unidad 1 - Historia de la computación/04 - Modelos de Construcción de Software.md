@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🏗️ Modelos de Construcción de Software
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Cómo se construye el software de forma organizada?
+> [!info] 💡 ¿Cómo se construye el software de forma organizada?
 >
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
@@ -13,7 +17,6 @@
 >     B --> D[Espiral]
 >     B --> E[Incremental]
 >     B --> F[Ágil / SCRUM]
->
 >     style C fill:#e1f5ff
 >     style D fill:#e1ffe1
 >     style E fill:#fff4e1
@@ -24,7 +27,7 @@
 
 ## 🌊 Modelo Cascada
 
-> [!note]- 🌊 El modelo clásico secuencial
+> [!note] 🌊 El modelo clásico secuencial
 >
 > El **Modelo Cascada** es el más antiguo y tradicional. Las fases se ejecutan de forma **secuencial y lineal**: cada etapa debe completarse antes de pasar a la siguiente, como el agua cayendo en cascada.
 >
@@ -35,7 +38,6 @@
 >     C --> D[Codificación y Depuración]
 >     D --> E[Test y Pruebas]
 >     E --> F[Operación y Mantenimiento]
->
 >     style A fill:#e1f5ff
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
@@ -68,7 +70,7 @@
 
 ## 🌀 Modelo Espiral
 
-> [!note]- 🌀 Iterativo con análisis de riesgos
+> [!note] 🌀 Iterativo con análisis de riesgos
 >
 > El **Modelo Espiral** combina elementos del modelo cascada con la naturaleza iterativa del prototipado. Cada vuelta de la espiral representa una fase del proyecto, con especial énfasis en el **análisis de riesgos** en cada iteración.
 >
@@ -78,7 +80,6 @@
 >     B --> C[Desarrollo y<br/>Verificación del Producto]
 >     C --> D[Planificación de<br/>la siguiente fase]
 >     D --> A
->
 >     style A fill:#e1f5ff
 >     style B fill:#ffe1e1
 >     style C fill:#e1ffe1
@@ -107,7 +108,7 @@
 
 ## 📈 Modelo Incremental
 
-> [!note]- 📈 Entrega por partes funcionales
+> [!note] 📈 Entrega por partes funcionales
 >
 > El **Modelo Incremental** divide el desarrollo en **incrementos**, cada uno de los cuales añade funcionalidad al sistema. El cliente recibe versiones parciales del producto que ya son funcionales y usables.
 >
@@ -116,7 +117,6 @@
 >     A[Incremento 1<br/>Funcionalidad básica] --> B[Entrega 1]
 >     B --> C[Incremento 2<br/>+ Funcionalidades] --> D[Entrega 2]
 >     D --> E[Incremento n<br/>Producto completo] --> F[Entrega final]
->
 >     style A fill:#e1f5ff
 >     style C fill:#e1ffe1
 >     style E fill:#fff4e1
@@ -148,7 +148,7 @@
 
 ## 🔄 Desarrollo Ágil — SCRUM
 
-> [!important]- 🔄 Iterativo, colaborativo y adaptable
+> [!important] 🔄 Iterativo, colaborativo y adaptable
 >
 > **SCRUM** es el marco de trabajo ágil más popular. Organiza el desarrollo en ciclos cortos llamados **sprints** (generalmente de 2 a 4 semanas), al final de los cuales se entrega un incremento funcional del producto.
 >
@@ -162,7 +162,6 @@
 >     F --> B
 >     C --> G[Revisión y<br/>Retrospectiva]
 >     G --> B
->
 >     style A fill:#fff4e1
 >     style C fill:#e1ffe1
 >     style D fill:#f5e1ff
@@ -200,7 +199,7 @@
 
 ## 📐 ¿Qué es el Software según IEEE?
 
-> [!note]- 📐 Definición formal de Software
+> [!note] 📐 Definición formal de Software
 >
 > Según el **IEEE** (*Institute of Electrical and Electronics Engineers*),
 > el software se denomina como:
@@ -225,7 +224,7 @@
 
 ## 📊 Comparación General
 
-> [!summary]- 📊 ¿Cuándo usar cada modelo?
+> [!summary] 📊 ¿Cuándo usar cada modelo?
 >
 > | Modelo | Requisitos | Riesgo | Participación del cliente | Ideal para |
 > |---|---|---|---|---|

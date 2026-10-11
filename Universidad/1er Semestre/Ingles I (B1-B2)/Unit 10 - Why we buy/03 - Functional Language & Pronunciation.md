@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟩 Functional Language & Pronunciation
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es el Functional Language?
+> [!info] 💡 ¿Qué es el Functional Language?
 > 
 > El **Functional Language** (lenguaje funcional) son las frases y expresiones que usamos para cumplir funciones comunicativas específicas en la vida real. No se trata solo de gramática correcta, sino de **sonar natural y apropiado** en diferentes situaciones.
 > 
@@ -44,7 +48,7 @@
 
 ## 🛍️ A. Describing Products
 
-> [!example]- 📦 Frases para Describir Materiales
+> [!example] 📦 Frases para Describir Materiales
 > 
 > **Patrón básico: "It's made of..."**
 > 
@@ -61,13 +65,10 @@
 > graph TD
 >     A{Material Change?} --> B[No visible change]
 >     A --> C[Transformed/processed]
->     
 >     B --> D[Use MADE OF]
 >     C --> E[Use MADE FROM]
->     
 >     D --> F[Example:<br/>This table is made<br/>of wood]
 >     E --> G[Example:<br/>Paper is made<br/>from wood]
->     
 >     style D fill:#e1ffe1
 >     style E fill:#fff4e1
 > ```
@@ -96,8 +97,8 @@
 > |This [product] is made of + material. It's + adj + and + adj|This backpack is made of polyester. It's light and waterproof|
 > |It's + % + material, so it's + characteristic|It's 100% wool, so it's very warm|
 > |Made of + material + with + detail|Made of leather with metal details|
-
-> [!success]- 🎨 Describing Characteristics
+>
+> [!success] 🎨 Describing Characteristics
 > 
 > **Frases para características físicas:**
 > 
@@ -148,12 +149,10 @@
 >     A[Material] --> B[Main<br/>Characteristic]
 >     B --> C[Additional<br/>Characteristic]
 >     C --> D[Benefit]
->     
 >     A -.-> E["It's made of cotton"]
 >     B -.-> F["It's very soft"]
 >     C -.-> G["and breathable"]
 >     D -.-> H["so it's perfect<br/>for summer"]
->     
 >     style E fill:#e1ffe1
 >     style F fill:#fff4e1
 >     style G fill:#e1f5ff
@@ -175,8 +174,8 @@
 > ✅ The bottle is made of stainless steel. 
 >    It's very durable and keeps drinks cold for 24 hours.
 > ```
-
-> [!tip]- 🌍 Describing Origin & Production
+>
+> [!tip] 🌍 Describing Origin & Production
 > 
 > **Frases para el origen:**
 > 
@@ -233,7 +232,7 @@
 
 ## 🏭 B. Talking about Production
 
-> [!note]- 🔨 Production Process Language
+> [!note] 🔨 Production Process Language
 > 
 > **Passive voice en contexto (lo más común):**
 > 
@@ -253,7 +252,6 @@
 >     C --> D[is tested/<br/>inspected]
 >     D --> E[is packaged]
 >     E --> F[is shipped]
->     
 >     style A fill:#fff4e1
 >     style C fill:#e1ffe1
 >     style F fill:#e1f5ff
@@ -286,8 +284,8 @@
 > ✅ Products are delivered worldwide
 > ✅ It's transported by sea
 > ```
-
-> [!success]- 🌱 Sustainability & Quality Language
+>
+> [!success] 🌱 Sustainability & Quality Language
 > 
 > **Frases sobre sostenibilidad:**
 > 
@@ -337,7 +335,7 @@
 
 ## 🚚 C. Discussing Distribution
 
-> [!example]- 📦 Shipping & Delivery Language
+> [!example] 📦 Shipping & Delivery Language
 > 
 > **Frases sobre envío:**
 > 
@@ -396,8 +394,8 @@
 > Shop: Yes, shipping is free on orders over $50. 
 >       Otherwise, it's $5.
 > ```
-
-> [!tip]- 🌍 Import/Export Language
+>
+> [!tip] 🌍 Import/Export Language
 > 
 > **Frases sobre comercio internacional:**
 > 
@@ -446,7 +444,7 @@
 
 ## 🗣️ D. Pronunciation Tips
 
-> [!note]- 🔊 Key Pronunciation Patterns
+> [!note] 🔊 Key Pronunciation Patterns
 > 
 > **1. Word Stress - Palabras clave de Unit 10**
 > 
@@ -467,11 +465,9 @@
 >     B --> C[Say it LOUDER]
 >     B --> D[Say it LONGER]
 >     B --> E[Say it HIGHER pitch]
->     
 >     C --> F[man-u-FAC-ture]
 >     D --> F
 >     E --> F
->     
 >     style B fill:#e1ffe1
 >     style F fill:#fff4e1
 > ```
@@ -487,8 +483,8 @@
 > dis-TRIB-ute       (tap on TRIB)
 > de-LIV-er-y        (tap on LIV)
 > ```
-
-> [!success]- 🔗 Linking & Connected Speech
+>
+> [!success] 🔗 Linking & Connected Speech
 > 
 > **Linking en frases comunes:**
 > 
@@ -535,8 +531,8 @@
 > Written:    It is very durable and strong
 > Natural:    /ɪtsˈveri djʊərəblənd strɒŋ/
 > ```
-
-> [!tip]- 🎯 Intonation Patterns
+>
+> [!tip] 🎯 Intonation Patterns
 > 
 > **Describing products (falling intonation):**
 > 
@@ -581,7 +577,6 @@
 >     C[Yes/No Questions] --> D[↗ Rising]
 >     E[Wh- Questions] --> F[↘ Falling]
 >     G[Lists] --> H[↗ ↗ ↘]
->     
 >     style B fill:#e1ffe1
 >     style D fill:#fff4e1
 >     style F fill:#e1ffe1
@@ -592,7 +587,7 @@
 
 ## 💬 E. Mini Speaking Drills
 
-> [!example]- 🎤 Práctica Oral Guiada
+> [!example] 🎤 Práctica Oral Guiada
 > 
 > **Drill 1: Describe un objeto cerca de ti**
 > 
@@ -739,7 +734,7 @@ mindmap
 
 ## 🔗 Connection to Next Topics
 
-> [!quote]- 🌟 Preparing for Real Communication
+> [!quote] 🌟 Preparing for Real Communication
 > 
 > **You've mastered functional language. Now you're ready for:**
 > 
@@ -754,7 +749,6 @@ mindmap
 >     A[Vocabulary] --> B[Grammar]
 >     B --> C[Functional<br/>Language]
 >     C --> D[Real Use:<br/>Reading/Writing/<br/>Speaking]
->     
 >     style A fill:#e1ffe1
 >     style B fill:#fff4e1
 >     style C fill:#e1f5ff

@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 📦 Colecciones Dinámicas (ArrayList, etc.)
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué son las Colecciones?
+> [!info] 💡 ¿Qué son las Colecciones?
 > 
 > Las **colecciones** son estructuras de datos que almacenan y organizan grupos de objetos de forma dinámica. A diferencia de los arreglos, pueden **crecer y reducirse** automáticamente según sea necesario.
 > 
@@ -20,11 +24,9 @@
 >     A[Arreglo Estático] --> B[❌ Tamaño fijo<br/>new int 5]
 >     A --> C[❌ No se puede<br/>cambiar tamaño]
 >     A --> D[❌ Operaciones<br/>manuales]
->     
 >     E[ArrayList Dinámico] --> F[✅ Tamaño flexible<br/>crece automáticamente]
 >     E --> G[✅ Métodos<br/>incorporados]
 >     E --> H[✅ Fácil de usar<br/>add, remove, etc]
->     
 >     style B fill:#ffe1e1
 >     style C fill:#ffe1e1
 >     style D fill:#ffe1e1
@@ -50,7 +52,7 @@
 
 ### 🔨 Declaración y Creación
 
-> [!tip]- 🎨 Sintaxis Básica
+> [!tip] 🎨 Sintaxis Básica
 > 
 > **Importar la clase:**
 > 
@@ -104,15 +106,12 @@
 > ```mermaid
 > graph TB
 >     A[ArrayList Vacío<br/>size = 0] --> B[Capacidad inicial<br/>10 espacios]
->     
 >     C[Agregar elementos] --> D[size = 1, 2, 3...]
->     
 >     D --> E{¿Capacidad<br/>llena?}
 >     E -->|No| F[Agregar<br/>normalmente]
 >     E -->|Sí| G[Crear array<br/>más grande]
 >     G --> H[Copiar elementos]
 >     H --> I[Capacidad x 1.5]
->     
 >     style A fill:#e1f5ff
 >     style G fill:#fff4e1
 >     style I fill:#e1ffe1
@@ -120,7 +119,7 @@
 
 ### ➕ Operaciones Básicas
 
-> [!success]- 🔧 Métodos Fundamentales
+> [!success] 🔧 Métodos Fundamentales
 > 
 > **1. Agregar elementos:**
 > 
@@ -240,7 +239,7 @@
 
 ### 🔄 Recorrer ArrayList
 
-> [!example]- 🚶 Formas de Iterar
+> [!example] 🚶 Formas de Iterar
 > 
 > **1. For tradicional:**
 > 
@@ -347,7 +346,7 @@
 
 ### 📌 Características
 
-> [!info]- 🔗 Diferencia con ArrayList
+> [!info] 🔗 Diferencia con ArrayList
 > 
 > **Estructura interna:**
 > 
@@ -357,14 +356,12 @@
 >         A1[0: Ana] --> A2[1: Luis] --> A3[2: María]
 >         A4[Array continuo en memoria]
 >     end
->     
 >     subgraph LinkedList
 >         L1[Ana] -.->|next| L2[Luis] -.->|next| L3[María]
 >         L2 -.->|prev| L1
 >         L3 -.->|prev| L2
 >         L4[Nodos enlazados]
 >     end
->     
 >     style A1 fill:#e1f5ff
 >     style L1 fill:#fff4e1
 > ```
@@ -412,11 +409,9 @@
 >     A{Tipo de<br/>operación?} --> B[Acceso aleatorio<br/>frecuente]
 >     A --> C[Inserción/eliminación<br/>al inicio]
 >     A --> D[Agregar al final<br/>principalmente]
->     
 >     B --> E[✅ ArrayList<br/>get es O 1]
 >     C --> F[✅ LinkedList<br/>addFirst es O 1]
 >     D --> E
->     
 >     style E fill:#e1ffe1
 >     style F fill:#fff4e1
 > ```
@@ -432,7 +427,7 @@
 
 ### 🔑 Características Únicas
 
-> [!success]- 🎯 Colección sin Repetidos
+> [!success] 🎯 Colección sin Repetidos
 > 
 > **Propiedades del HashSet:**
 > 
@@ -442,7 +437,6 @@
 >     A --> C[❌ No tiene orden]
 >     A --> D[✅ Búsqueda muy rápida O 1]
 >     A --> E[✅ Ideal para unicidad]
->     
 >     style B fill:#fff4e1
 >     style C fill:#fff4e1
 >     style D fill:#e1ffe1
@@ -518,7 +512,7 @@
 
 ### 📚 Diccionarios en Java
 
-> [!tip]- 🔐 Estructura Clave-Valor
+> [!tip] 🔐 Estructura Clave-Valor
 > 
 > **Concepto:**
 > 
@@ -526,11 +520,9 @@
 > graph LR
 >     A[HashMap] --> B[Clave: DNI]
 >     B --> C[Valor: Nombre]
->     
 >     D["12345678"] --> E["Ana García"]
 >     F["87654321"] --> G["Luis Pérez"]
 >     H["11223344"] --> I["María López"]
->     
 >     style A fill:#e1f5ff
 >     style B fill:#fff4e1
 >     style C fill:#e1ffe1
@@ -641,7 +633,7 @@
 
 ### 🔍 Tabla Resumen
 
-> [!note]- 📋 Cuándo Usar Cada Una
+> [!note] 📋 Cuándo Usar Cada Una
 > 
 > |Colección|Permite Duplicados|Ordenada|Acceso|Uso Principal|
 > |---|---|---|---|---|
@@ -657,14 +649,11 @@
 >     A{¿Qué necesitas?} --> B[Lista ordenada]
 >     A --> C[Elementos únicos]
 >     A --> D[Pares clave-valor]
->     
 >     B --> E{¿Qué operaciones?}
 >     E -->|Acceso por índice| F[ArrayList]
 >     E -->|Insertar al inicio| G[LinkedList]
->     
 >     C --> H[HashSet]
 >     D --> I[HashMap]
->     
 >     style F fill:#e1ffe1
 >     style G fill:#fff4e1
 >     style H fill:#e1f5ff
@@ -677,7 +666,7 @@
 
 ### 🔄 Conversiones entre Colecciones
 
-> [!example]- 🔀 Transformaciones Comunes
+> [!example] 🔀 Transformaciones Comunes
 > 
 > **1. ArrayList ↔ Array:**
 > 
@@ -724,7 +713,7 @@
 
 ### 🎯 Ordenamiento
 
-> [!success]- ↕️ Ordenar Colecciones
+> [!success] ↕️ Ordenar Colecciones
 > 
 > **Ordenar ArrayList:**
 > 
@@ -759,7 +748,7 @@
 
 ## ⚠️ Errores Comunes
 
-> [!danger]- 🐛 Problemas Frecuentes
+> [!danger] 🐛 Problemas Frecuentes
 > 
 > **1. ConcurrentModificationException:**
 > 
@@ -848,7 +837,7 @@ mindmap
       Frecuencias
 ```
 
-> [!quote]- 🎓 Puntos Clave para Recordar
+> [!quote] 🎓 Puntos Clave para Recordar
 > 
 > ✅ **ArrayList** - uso general, tamaño dinámico, acceso rápido por índice  
 > ✅ **LinkedList** - solo si insertas/eliminas al inicio frecuentemente  

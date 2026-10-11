@@ -283,7 +283,7 @@ graph LR
 > - [[Comunicación Intercultural]] - Habilidades sociales en contextos diversos
 > - [[Gestión de Conflictos]] - Aplicación de habilidades sociales en tensiones
 > - [[Pensamiento Crítico]] - Análisis de situaciones sociales complejas
-
+>
 > [!info] **Notas Recomendadas para Profundizar**
 > 
 > ### **Prerrequisitos** 📋

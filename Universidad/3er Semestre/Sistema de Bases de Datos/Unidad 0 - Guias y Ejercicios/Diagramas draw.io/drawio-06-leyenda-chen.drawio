@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Leyenda-Chen" id="d1">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v1" value="entidad fuerte" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" value="entidad debil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="28" width="200" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="entidad debil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="272" y="40" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="relacion" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="40" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" value="atributo" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="140" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" value="derivado" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="140" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" value="clave = subrayado (carnet)" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="430" y="140" width="260" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

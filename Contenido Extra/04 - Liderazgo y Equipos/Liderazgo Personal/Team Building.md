@@ -1,7 +1,7 @@
 # Team Building 🤝
 
 > [!quote] "Los equipos extraordinarios no nacen, se construyen. La verdadera magia ocurre cuando individuos talentosos deciden que juntos pueden lograr algo imposible de alcanzar solos." - Patrick Lencioni
-
+>
 > [!info]- 🏗️ **Fundamentos del Team Building**
 > 
 > ## 🎯 Definición y Propósito Central
@@ -51,7 +51,7 @@
 > |**🤷 Falta de Compromiso**|Ambigüedad, revisitar decisiones|Claridad y buy-in|2-6 semanas|
 > |**👥 Evitar Accountability**|Estándares bajos, resentimiento|Responsabilidad peer-to-peer|6-10 semanas|
 > |**🎯 Falta Atención Resultados**|Ego, status, agendas individuales|Foco colectivo en outcomes|4-8 semanas|
-
+>
 > [!success]- 🎪 **Actividades de Team Building Efectivas**
 > 
 > ## 🏆 High-Impact Activities por Fase de Desarrollo
@@ -130,7 +130,7 @@
 > |**🏃 Cross-training**|Versatilidad del equipo|Trimestral|Día completo|
 > |**🎪 Peer Coaching**|Desarrollo mutuo|Semanal|30 min|
 > |**🌟 Stretch Projects**|Desafíos conjuntos|Por proyecto|Variable|
-
+>
 > [!tip]- 🧠 **Psicología del Team Building**
 > 
 > ## 🔬 Fundamentos Científicos
@@ -195,7 +195,7 @@
 > - **💭 Ideate**: Brainstorm soluciones colaborativas
 > - **🛠️ Prototype**: Experimentar con nuevas dinámicas
 > - **🧪 Test**: Validar efectividad de cambios
-
+>
 > [!warning]- ⚠️ **Errores Comunes y Anti-Patterns**
 > 
 > ## 🚨 Los 10 Errores Fatales del Team Building
@@ -257,7 +257,7 @@
 > - **❌ Video Fatigue**: Demasiadas actividades síncronas
 > - **❌ Timezone Ignorance**: Horarios que excluyen miembros
 > - **✅ Better Approach**: Async challenges, flexible participation
-
+>
 > [!gear]- 📊 **Métricas y Assessment de Efectividad**
 > 
 > ## 🎯 KPIs de Team Health
@@ -344,7 +344,7 @@
 > - Peer recognitions
 > - Thank you messages
 > - Celebration moments
-
+>
 > [!example]- 🏆 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🌟 Casos de Éxito Comprobados
@@ -432,7 +432,7 @@
 >     style D fill:#FECA57,stroke:#FF9800,color:#fff
 >     style E fill:#FF6B6B,stroke:#FF5722,color:#fff
 > ```
-
+>
 > [!brain]- 🧠 **Técnica de Estudio: Experiential Team Learning (ETL)**
 > 
 > ## 🎯 Metodología de Aprendizaje Experiencial en Equipos
@@ -472,7 +472,7 @@
 > - **🎪 Peer Teaching**: Rotar facilitation de team sessions
 > - **🔄 Spaced Practice**: Repetir ejercicios con variaciones
 > - **🌟 Story Creation**: Narrativas compartidas de team journey
-
+>
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -499,13 +499,13 @@
 > - **💬 Slack/Teams**: Communication y team rituals
 > - **🏆 Bonusly**: Peer recognition y team rewards
 > - **🔄 Retrium**: Digital retrospectives y team health
-
+>
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites Fundamentales
 > 
 > - [[Liderazgo Situacional]] - Adaptación de estilo según team maturity
-> - [[Comunicación Efectiva]] - Base para interacción grupal saludable
+> - [[La Comunicación Efectiva]] - Base para interacción grupal saludable
 > - [[Inteligencia Emocional]] - Gestión de dinámicas interpersonales
 > - [[Gestión de Conflictos]] - Resolución constructiva de tensiones team
 > 

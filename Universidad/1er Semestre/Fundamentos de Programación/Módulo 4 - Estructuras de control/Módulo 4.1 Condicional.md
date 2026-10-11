@@ -1,10 +1,14 @@
+---
+dg-publish: true
+---
+
 # 🔀 Estructuras de Control Condicionales
 
 ## 🎯 Introducción y Conceptos Fundamentales
 
 >[!info] 💡 **¿Qué son las Estructuras Condicionales?**
 >Las estructuras de control condicionales son herramientas fundamentales que permiten a un programa **tomar decisiones** y alterar el flujo de ejecución basándose en la evaluación de condiciones lógicas. En esencia, le dicen a tu programa: *"Si esto es cierto, haz esto; de lo contrario, haz aquello."* 🤔
-
+>
 >[!tip] ⚡ **Características Principales**
 >- **Ramificación**: Permiten diferentes caminos de ejecución
 >- **Evaluación booleana**: Trabajan con valores `True` y `False`
@@ -97,7 +101,7 @@
 >| `<` | Menor que | `2 < 5` → `True` |
 >| `>=` | Mayor o igual | `5 >= 5` → `True` |
 >| `<=` | Menor o igual | `3 <= 4` → `True` |
-
+>
 >[!info] 🔗 **Operadores Lógicos**
 >Combinan múltiples condiciones:
 >
@@ -148,7 +152,7 @@
 >    print("Mayor de edad")
 >  print("Puede votar")  # Error: solo 2 espacios
 >```
-
+>
 >[!tip] 📐 **Buenas Prácticas de Indentación**
 >- Usa **4 espacios** por nivel (estándar Python)
 >- **Mantén consistencia** en todo el archivo
@@ -265,7 +269,7 @@ flowchart TD
 >
 ># Salida: El número 7 es impar.
 >```
-
+>
 >[!example] 🌅 **Determinador de Fase del Día**
 >```python
 >hora = 14  # Hora en formato 24h
@@ -282,7 +286,7 @@ flowchart TD
 >print(f"Son las {hora}:00, es de {fase}")
 ># Salida: Son las 14:00, es de tarde 🌤️
 >```
-
+>
 >[!example] 🎫 **Sistema de Control de Acceso**
 >```python
 >edad_usuario = 17
@@ -300,7 +304,7 @@ flowchart TD
 >
 ># Salida: ❌ Acceso denegado - Menor de edad sin acompañante
 >```
-
+>
 >[!example] 🎯 **Calculadora de Calificaciones Avanzada**
 >```python
 >puntuacion = 85
@@ -353,7 +357,7 @@ flowchart TD
 >precio_final = precio * 0.9 if es_estudiante else precio
 >estado = "Activo" if usuario_logueado else "Inactivo"
 >```
-
+>
 >[!tip] 🔗 **Condiciones Anidadas**
 >```python
 >puntuacion = 85
@@ -370,7 +374,7 @@ flowchart TD
 >else:
 >    print("❌ No aprobado")
 >```
-
+>
 >[!tip] 📝 **Validación de Entrada Múltiple**
 >```python
 >def validar_usuario(nombre, edad, email):

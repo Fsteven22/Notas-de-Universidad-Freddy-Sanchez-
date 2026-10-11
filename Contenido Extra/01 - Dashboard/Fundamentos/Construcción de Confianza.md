@@ -203,7 +203,7 @@ graph LR
 > - [[Clarificación de Valores]] - Alineación de acciones con principios
 > - [[Definición de Propósito]] - Dirección clara para desarrollo personal
 > - [[Gestión del Estrés]] - Manejo de presiones que afectan confianza
-> - [[Comunicación Efectiva]] - Herramientas para expresar confianza
+> - [[La Comunicación Efectiva]] - Herramientas para expresar confianza
 > - [[Inteligencia Emocional]] - Comprensión emocional para relaciones
 > - [[Pensamiento Crítico]] - Evaluación objetiva de capacidades
 

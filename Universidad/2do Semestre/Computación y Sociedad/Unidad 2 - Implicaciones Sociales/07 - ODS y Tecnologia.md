@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # 🟩 ODS — Objetivos de Desarrollo Sostenible y Tecnología
 
 ## 🎯 Introducción
 
-> [!info]- 🌍 ¿Qué son los ODS?
+> [!info] 🌍 ¿Qué son los ODS?
 > 
 > Los **Objetivos de Desarrollo Sostenible (ODS)** son un conjunto de **17 objetivos globales** adoptados por los **193 países miembros de la ONU en 2015**, como parte de la **Agenda 2030**. Buscan erradicar la pobreza, proteger el planeta y garantizar una vida digna para todas las personas antes del año 2030.
 > 
@@ -58,7 +62,7 @@ mindmap
 
 ## 🔴 ODS 1 — Fin de la Pobreza
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **700 millones de personas** viven con menos de $2.15 al día. El COVID-19 revirtió décadas de progreso y la inflación global ha empeorado la situación en países ya vulnerables.
 > 
@@ -77,7 +81,7 @@ mindmap
 
 ## 🟠 ODS 2 — Hambre Cero
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **733 millones de personas** sufren hambre crónica. La malnutrición infantil sigue siendo crítica en África subsahariana y Asia meridional. El cambio climático destruye cosechas cada vez con más frecuencia.
 > 
@@ -96,7 +100,7 @@ mindmap
 
 ## 🟡 ODS 3 — Salud y Bienestar
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Millones de personas en países en desarrollo no tienen acceso a atención médica básica. La mortalidad materna e infantil sigue siendo alta en África y Asia. Las enfermedades prevenibles como la malaria siguen matando por falta de acceso a medicamentos.
 > 
@@ -115,7 +119,7 @@ mindmap
 
 ## 🟢 ODS 4 — Educación de Calidad
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **250 millones de niños** no van a la escuela. La calidad educativa es desigual incluso en países con alta escolarización. La brecha digital excluye a millones del aprendizaje en línea.
 > 
@@ -134,7 +138,7 @@ mindmap
 
 ## 🔵 ODS 5 — Igualdad de Género
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Las mujeres siguen ganando en promedio un **20% menos** que los hombres por el mismo trabajo. En muchos países, no tienen derecho a votar, estudiar, trabajar o decidir sobre su propio cuerpo. La violencia de género afecta a 1 de cada 3 mujeres en el mundo.
 > 
@@ -153,7 +157,7 @@ mindmap
 
 ## 💧 ODS 6 — Agua Limpia y Saneamiento
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **2,200 millones de personas** no tienen acceso a agua potable gestionada de forma segura. Más de **3,500 millones** carecen de saneamiento básico. La contaminación de ríos y acuíferos se agrava por la actividad industrial.
 > 
@@ -172,7 +176,7 @@ mindmap
 
 ## ⚡ ODS 7 — Energía Asequible y No Contaminante
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **730 millones de personas** viven sin electricidad. Muchos países siguen dependiendo de combustibles fósiles contaminantes. La energía limpia es cara y su infraestructura no llega a zonas rurales.
 > 
@@ -191,7 +195,7 @@ mindmap
 
 ## 💼 ODS 8 — Trabajo Decente y Crecimiento Económico
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** El desempleo juvenil global supera el **13%**. El trabajo informal sin protecciones afecta al 60% de la fuerza laboral en países en desarrollo. La automatización amenaza con eliminar millones de empleos.
 > 
@@ -210,7 +214,7 @@ mindmap
 
 ## 🏭 ODS 9 — Industria, Innovación e Infraestructura
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Los países en desarrollo carecen de infraestructura básica (carreteras, internet, energía) que frena su crecimiento. La brecha tecnológica entre países ricos y pobres se amplía con la IA.
 > 
@@ -229,7 +233,7 @@ mindmap
 
 ## ⚖️ ODS 10 — Reducción de las Desigualdades
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** El 1% más rico del mundo posee más riqueza que el 99% restante. La desigualdad de ingresos creció en casi todos los países durante la pandemia. Las personas con discapacidad, migrantes y minorías étnicas son sistemáticamente más pobres.
 > 
@@ -248,7 +252,7 @@ mindmap
 
 ## 🏙️ ODS 11 — Ciudades y Comunidades Sostenibles
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **1,100 millones de personas** viven en barrios marginales sin servicios básicos. La urbanización no planificada genera contaminación, tráfico y segregación. Los desastres naturales afectan desproporcionadamente a los más pobres.
 > 
@@ -267,7 +271,7 @@ mindmap
 
 ## ♻️ ODS 12 — Producción y Consumo Responsables
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Se producen más de **2,500 millones de toneladas** de residuos sólidos al año. El desperdicio alimentario representa el 30% de toda la comida producida. Los residuos electrónicos crecen un 4% anual y solo el 17% se recicla formalmente.
 > 
@@ -286,7 +290,7 @@ mindmap
 
 ## 🌡️ ODS 13 — Acción por el Clima
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** **2024 fue el año más cálido registrado** en la historia. Las emisiones de CO₂ están en niveles históricos. Los eventos climáticos extremos (huracanes, sequías, inundaciones) se multiplican e intensifican. Los países más afectados son los que menos contribuyen al problema.
 > 
@@ -305,7 +309,7 @@ mindmap
 
 ## 🐠 ODS 14 — Vida Submarina
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** El **90% de los arrecifes de coral** podrían desaparecer para 2050 si el calentamiento continúa. Más de **8 millones de toneladas** de plástico entran al mar cada año. La sobrepesca amenaza la seguridad alimentaria de millones de personas costeras.
 > 
@@ -324,7 +328,7 @@ mindmap
 
 ## 🌳 ODS 15 — Vida de Ecosistemas Terrestres
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Se pierden más de **10 millones de hectáreas** de bosque al año. La sexta extinción masiva está en curso: más de 1 millón de especies en peligro. Sudamérica registró la mayor pérdida de bosques del planeta en la última década.
 > 
@@ -343,7 +347,7 @@ mindmap
 
 ## 🕊️ ODS 16 — Paz, Justicia e Instituciones Sólidas
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Más de **56 conflictos armados activos** en el mundo en 2024. La corrupción sigue siendo endémica en muchos países. Millones de personas no tienen acceso a sistemas de justicia. La libertad de prensa está en retroceso global.
 > 
@@ -362,7 +366,7 @@ mindmap
 
 ## 🤝 ODS 17 — Alianzas para Lograr los Objetivos
 
-> [!note]- 📌 Análisis Completo
+> [!note] 📌 Análisis Completo
 > 
 > **🔴 Necesidad actual:** Los países en desarrollo necesitan financiamiento que los países ricos prometieron pero no han entregado completamente. La deuda externa aplasta a muchas economías emergentes. La cooperación internacional se debilita con el auge del nacionalismo.
 > 
@@ -381,22 +385,18 @@ mindmap
 
 ## 🌐 Resumen: Países vs. ODS
 
-> [!tip]- 📊 ¿Cómo están los países?
+> [!tip] 📊 ¿Cómo están los países?
 > 
 > ```mermaid
 > graph TD
 >     A[🌍 Países del Mundo] --> B[🟢 Países Líderes]
 >     A --> C[🟡 Países en Progreso]
 >     A --> D[🔴 Países más Rezagados]
-> 
 >     B --> B1["Nórdicos: Suecia, Dinamarca, Finlandia, etc.<br/>Lideran casi todos los ODS"]
 >     B --> B2["Europa Occidental, Japón, Australia, Canadá<br/>Avance sólido con retos climáticos"]
-> 
 >     C --> C1["China, Brasil, India, América Latina<br/>Grandes avances pero desigualdad persistente"]
 >     C --> C2["Asia Oriental: Nepal, Bangladesh, Camboya<br/>Progreso más rápido desde 2015"]
-> 
 >     D --> D1["África Subsahariana, Yemen, Haití, Myanmar<br/>Conflictos + pobreza + falta de infraestructura"]
-> 
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
 >     style D fill:#ffe1e1
@@ -440,7 +440,7 @@ mindmap
 
 ## 📚 Referencias (Formato IEEE)
 
-> [!quote]- 📖 Fuentes Consultadas
+> [!quote] 📖 Fuentes Consultadas
 > 
 > [1] Naciones Unidas, _Informe sobre los Objetivos de Desarrollo Sostenible 2025_, Nueva York: ONU, 2025. [En línea]. Disponible en: https://unstats.un.org/sdgs/report/2025/
 > 
@@ -458,7 +458,7 @@ mindmap
 
 ## 📖 Glosario
 
-> [!info]- 🌍 Países y Regiones mencionados
+> [!info] 🌍 Países y Regiones mencionados
 > 
 > |Término|¿Dónde queda?|¿Por qué aparece en los ODS?|
 > |---|---|---|
@@ -475,8 +475,8 @@ mindmap
 > |**Tuvalu / Kiribati**|Océano Pacífico, islas de baja altitud|Naciones insulares que literalmente desaparecerán bajo el mar si el nivel oceánico sigue subiendo por el cambio climático|
 > |**Sub-Sahara africana**|África al sur del desierto del Sahara|Región de ~50 países con los indicadores de desarrollo más bajos del mundo en casi todos los ODS|
 > |**África Subsahariana**|Mismo concepto que Sub-Sahara|Se usan indistintamente para referirse a la misma región geográfica|
-
-> [!info]- 💻 Tecnologías y Conceptos Técnicos
+>
+> [!info] 💻 Tecnologías y Conceptos Técnicos
 > 
 > |Término|Explicación simple|
 > |---|---|

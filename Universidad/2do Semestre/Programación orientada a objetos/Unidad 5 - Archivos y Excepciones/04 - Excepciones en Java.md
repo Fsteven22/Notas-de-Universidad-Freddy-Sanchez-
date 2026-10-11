@@ -1,8 +1,12 @@
+---
+dg-publish: true
+---
+
 # ⚠️ Excepciones en Java
 
 ## 🎯 Introducción
 
-> [!info]- 💡 ¿Qué es una Excepción?
+> [!info] 💡 ¿Qué es una Excepción?
 > 
 > Una **excepción** es un evento anormal que ocurre durante la ejecución de un programa y que interrumpe el flujo normal de instrucciones.
 > 
@@ -24,7 +28,6 @@
 >     E -->|Sí| F[Ejecutar catch<br/>Recuperarse]
 >     E -->|No| G[💥 Programa<br/>termina]
 >     F --> C
->     
 >     style C fill:#e1ffe1
 >     style F fill:#fff4e1
 >     style G fill:#ffe1e1
@@ -36,7 +39,7 @@
 
 ### 🌳 Árbol de Clases
 
-> [!note]- 🗂️ Organización de Excepciones en Java
+> [!note] 🗂️ Organización de Excepciones en Java
 > 
 > ```mermaid
 > classDiagram
@@ -45,29 +48,24 @@
 >         +getMessage()
 >         +printStackTrace()
 >     }
->     
 >     class Error {
 >         <<Errores graves>>
 >         OutOfMemoryError
 >         StackOverflowError
 >     }
->     
 >     class Exception {
 >         <<Excepciones>>
 >         Recuperables
 >     }
->     
 >     class RuntimeException {
 >         <<No verificadas>>
 >         NullPointerException
 >         ArrayIndexOutOfBounds
 >     }
->     
 >     class IOException {
 >         <<Verificadas>>
 >         FileNotFoundException
 >     }
->     
 >     Throwable <|-- Error
 >     Throwable <|-- Exception
 >     Exception <|-- RuntimeException
@@ -84,7 +82,7 @@
 
 ### 🔍 Excepciones Verificadas vs No Verificadas
 
-> [!tip]- 📋 Diferencias Clave
+> [!tip] 📋 Diferencias Clave
 > 
 > **Excepciones VERIFICADAS (Checked):**
 > 
@@ -151,7 +149,7 @@
 
 ### 🔧 Bloque try-catch
 
-> [!example]- 🎯 Sintaxis Básica
+> [!example] 🎯 Sintaxis Básica
 > 
 > **Estructura:**
 > 
@@ -182,7 +180,6 @@
 >     E -->|Sí| F[Ejecutar finally]
 >     E -->|No| G[Continuar programa]
 >     F --> G
->     
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
 >     style F fill:#e1f5ff
@@ -210,7 +207,7 @@
 
 ### 📦 Múltiples catch
 
-> [!success]- 🎪 Manejar Diferentes Excepciones
+> [!success] 🎪 Manejar Diferentes Excepciones
 > 
 > **Orden IMPORTANTE: De más específico a más general**
 > 
@@ -269,7 +266,7 @@
 
 ### 🔒 Bloque finally
 
-> [!tip]- 🎯 Código que SIEMPRE se Ejecuta
+> [!tip] 🎯 Código que SIEMPRE se Ejecuta
 > 
 > El bloque `finally` se ejecuta **siempre**, haya o no excepción.
 > 
@@ -323,7 +320,7 @@
 
 ### 💥 throw - Lanzar una Excepción
 
-> [!example]- 🎯 Generar Excepciones Manualmente
+> [!example] 🎯 Generar Excepciones Manualmente
 > 
 > **Sintaxis:**
 > 
@@ -371,7 +368,7 @@
 
 ### 📢 throws - Declarar Excepciones
 
-> [!tip]- 📋 Propagar Excepciones
+> [!tip] 📋 Propagar Excepciones
 > 
 > **Propósito:** Indicar que un método **puede lanzar** excepciones verificadas.
 > 
@@ -410,11 +407,9 @@
 >     A[metodoA<br/>throws IOException] --> B[metodoB<br/>throws IOException]
 >     B --> C[metodoC<br/>throws IOException]
 >     C --> D[main<br/>try-catch]
->     
 >     D --> E{¿Manejada?}
 >     E -->|Sí| F[✅ Programa continúa]
 >     E -->|No| G[💥 Programa termina]
->     
 >     style F fill:#e1ffe1
 >     style G fill:#ffe1e1
 > ```
@@ -423,7 +418,7 @@
 
 ## 🎨 Excepciones Personalizadas
 
-> [!success]- 🏗️ Crear Tus Propias Excepciones
+> [!success] 🏗️ Crear Tus Propias Excepciones
 > 
 > **Cuándo crear excepciones personalizadas:**
 > 
@@ -495,7 +490,7 @@
 
 ## 🔍 Información de Excepciones
 
-> [!info]- 🛠️ Métodos Útiles de Throwable
+> [!info] 🛠️ Métodos Útiles de Throwable
 > 
 > |Método|Descripción|Uso|
 > |---|---|---|
@@ -549,7 +544,7 @@
 
 ## 📋 Excepciones Comunes
 
-> [!note]- 🎯 Excepciones Frecuentes en Java
+> [!note] 🎯 Excepciones Frecuentes en Java
 > 
 > **Excepciones NO verificadas (RuntimeException):**
 > 
@@ -602,7 +597,7 @@
 
 ## ✅ Mejores Prácticas
 
-> [!tip]- 🏆 Recomendaciones Profesionales
+> [!tip] 🏆 Recomendaciones Profesionales
 > 
 > **1. Ser específico en los catch**
 > 
@@ -709,7 +704,7 @@
 
 ## 🎯 Ejemplo Completo
 
-> [!example]- 💼 Sistema de Registro de Estudiantes
+> [!example] 💼 Sistema de Registro de Estudiantes
 > 
 > ```java
 > // Excepción personalizada

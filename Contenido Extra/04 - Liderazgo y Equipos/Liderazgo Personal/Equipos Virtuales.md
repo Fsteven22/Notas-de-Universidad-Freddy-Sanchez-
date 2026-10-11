@@ -1,7 +1,7 @@
 # Equipos Virtuales 💻
 
 > [!quote] "El futuro del trabajo no es sobre dónde trabajas, sino sobre cómo colaboras. Los equipos virtuales exitosos no eliminan la distancia, la transforman en ventaja competitiva." - Amy Edmondson
-
+>
 > [!info]- 🌐 **Fundamentos de Equipos Virtuales**
 > 
 > ## 🎯 Definición y Características
@@ -57,7 +57,7 @@
 > - **⏰ Coordinación**: Sincronización entre zonas horarias
 > - **🎭 Cultura**: Mantenimiento de cohesión grupal
 > - **🔧 Tecnología**: Dependencia de herramientas digitales
-
+>
 > [!success]- 🚀 **Estrategias de Formación y Desarrollo**
 > 
 > ## 🎯 Modelo de Madurez de Equipos Virtuales
@@ -114,7 +114,7 @@
 > - **📸 Photo Challenges**: Temas semanales creativos
 > - **🎲 Virtual Icebreakers**: Preguntas random al inicio de reuniones
 > - **🏆 Recognition Rituals**: Celebración de logros individuales
-
+>
 > [!tip]- 🛠️ **Herramientas y Stack Tecnológico**
 > 
 > ## 🎯 Arquitectura de Colaboración Óptima
@@ -169,7 +169,7 @@
 > - **🎯 Priority-based**: Urgencia automática por contexto
 > - **📱 Multi-channel**: Email + Slack + Push según preferencia
 > - **🔇 Do Not Disturb**: Respeta tiempo personal
-
+>
 > [!warning]- ⚠️ **Desafíos Comunes y Soluciones**
 > 
 > ## 🎯 Problemas Críticos y Contramedidas
@@ -230,7 +230,7 @@
 > - **👥 Buddy System**: Pair programming/work partners
 > - **🎯 Goal Reset**: Realineación de expectations
 > - **🔄 Process Audit**: Eliminación de friction points
-
+>
 > [!gear]- 📊 **Métricas y KPIs de Rendimiento**
 > 
 > ## 🎯 Dashboard de Efectividad Virtual
@@ -276,7 +276,7 @@
 > - **🔄 Turnover Probability**: <6/10 satisfaction + external activities
 > - **⚡ Performance Drop**: -20% velocity + increased errors
 > - **🤝 Team Friction**: Decreased cross-collaboration + longer response times
-
+>
 > [!example]- 🏆 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🌟 Casos de Éxito Comprobados
@@ -339,7 +339,7 @@
 >     style T fill:#FECA57,stroke:#FF9800,color:#fff
 >     style E2 fill:#A8E6CF,stroke:#4CAF50,color:#fff
 > ```
-
+>
 > [!brain]- 🧠 **Técnica de Estudio: Virtual Immersion Learning (VIL)**
 > 
 > ## 🎯 Metodología de Aprendizaje Inmersivo Virtual
@@ -373,7 +373,7 @@
 > - **🎮 Gamification**: Convierte métricas en challenges grupales
 > - **🎯 Spaced Repetition**: Revisita conceptos clave semanalmente
 > - **🤝 Peer Teaching**: Enseña a otros lo que aprendes (Feynman Method)
-
+>
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -396,12 +396,12 @@
 > - **🎯 Loom**: Asynchronous video communication
 > - **📝 Notion**: All-in-one workspace management
 > - **⚡ Calendly**: Smart scheduling across timezones
-
+>
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites Esenciales
 > 
-> - [[Comunicación Efectiva]] - Base para interacción virtual
+> - [[La Comunicación Efectiva]] - Base para interacción virtual
 > - [[Gestión de Proyectos]] - Coordinación de trabajo distribuido
 > - [[Liderazgo Situacional]] - Adaptación de estilo según contexto virtual
 > - [[Productividad Digital]] - Herramientas y flujos de trabajo eficientes

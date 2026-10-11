@@ -3,7 +3,7 @@
 ## 📖 Contexto
 
 > [!info] Definición El Método Pomodoro es una técnica de [[gestión del tiempo]] desarrollada por Francesco Cirillo en los años 80. Su objetivo principal es aumentar la concentración y productividad dividiendo el trabajo en intervalos de tiempo fijos y cortos, intercalados con pausas estratégicas.
-
+>
 > [!tip] Origen del nombre 🍅 El nombre "Pomodoro" proviene del temporizador de cocina con forma de tomate que utilizaba Cirillo durante sus estudios universitarios.
 
 ## 🔧 Variables Comunes
@@ -34,7 +34,7 @@
 >    I --> J[🔄 Reiniciar ciclo]
 >    J --> A
 > ```
-
+>
 > [!warning] Reglas importantes
 > 
 > 1. **No interrumpir** un pomodoro en progreso
@@ -50,7 +50,7 @@
 > - **Fatiga cognitiva**: Los descansos previenen el agotamiento mental
 > - **Efecto Zeigarnik**: Las tareas interrumpidas se recuerdan mejor
 > - **Neuroplasticidad**: La práctica repetida fortalece los circuitos de concentración
-
+>
 > [!tip] Beneficios comprobados ✅ Reduce la procrastinación  
 > ✅ Mejora la estimación de tiempo  
 > ✅ Aumenta la sensación de logro  
@@ -70,14 +70,14 @@
 > - 📋 **Focus To-Do**: Combina Pomodoro con gestión de tareas
 > - 🌐 **Tomato Timer**: Extensión web gratuita
 > - 💻 **PomoDone**: Integración con herramientas de productividad
-
+>
 > [!warning] Manejo de distracciones **Técnica "Anotar y Seguir"**:
 > 
 > 1. 📝 Anota la distracción en una hoja
 > 2. 🎯 Vuelve inmediatamente a la tarea
 > 3. 📋 Revisa las anotaciones en la pausa
 > 4. 📅 Programa tiempo para atenderlas después
-
+>
 > [!tip] Personalización del método
 > 
 > - **Pomodoros cortos (15-20 min)**: Para tareas que requieren alta creatividad
@@ -125,7 +125,7 @@
 > 
 > 🍅 **Pomodoro 4** (25 min): Revisión y autoevaluación  
 > 🛌 **Pausa larga** (25 min): Snack saludable y música relajante
-
+>
 > [!success] Métricas de seguimiento
 > 
 > - 📊 **Pomodoros completados por día**
