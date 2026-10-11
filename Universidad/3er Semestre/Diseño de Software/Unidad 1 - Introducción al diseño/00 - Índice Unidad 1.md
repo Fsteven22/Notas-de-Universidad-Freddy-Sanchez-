@@ -14,7 +14,6 @@ tags: [CCPG1042, unidad1, indice, diseno-software]
 - [[02 - Principios de diseño, cohesión y acoplamiento]]
 - [[03 - Paradigmas de programación y diseño]]
 - [[04 - Principios SOLID]]
-- [[Control 01 - Repaso Paradigmas]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Diseño de Software]]
