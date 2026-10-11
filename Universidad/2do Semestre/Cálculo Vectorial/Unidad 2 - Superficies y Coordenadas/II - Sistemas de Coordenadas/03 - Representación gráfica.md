@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [calculo-vectorial, coordenadas, graficas]
 ---
 
 # 🎨 Representación Gráfica de Coordenadas Cilíndricas y Esféricas
