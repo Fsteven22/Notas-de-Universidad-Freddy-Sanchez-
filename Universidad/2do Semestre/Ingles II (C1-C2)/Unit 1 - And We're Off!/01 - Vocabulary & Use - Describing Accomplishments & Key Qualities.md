@@ -118,8 +118,7 @@ dg-publish: true
 > |_He is very success._|_He is very successful._|_Success_ es sustantivo; necesitas el adjetivo _successful_.|
 > |_I need someone reliability._|_I need someone reliable._|Antes de una persona, usa el adjetivo.|
 
-**Ejemplo de párrafo completo** _(inglés → español)_:
-
+> [!example] 🟢 Ejemplo de párrafo completo (inglés → español)
 > _The ideal candidate should be ambitious and creative, with a strong sense of responsibility. We value reliability above all — we need someone who follows through on their commitments. Previous experience is a plus, but determination and enthusiasm can make up for a lack of formal qualifications._
 > 
 > _El candidato ideal debe ser ambicioso y creativo, con un fuerte sentido de la responsabilidad. Valoramos la confiabilidad por encima de todo — necesitamos a alguien que cumpla con sus compromisos. La experiencia previa es una ventaja, pero la determinación y el entusiasmo pueden compensar la falta de credenciales formales._

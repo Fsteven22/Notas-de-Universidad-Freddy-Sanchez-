@@ -87,7 +87,7 @@ dg-publish: true
 > 
 > Se usa para acciones terminadas en un momento específico del pasado, narración de eventos pasados, y secuencias de hechos históricos.
 > 
-> $$\text{S + V-ed \text{ (or irregular form)} + complement}$$
+> $$\text{S + V-ed (or irregular form) + complement}$$
 > 
 > |Ejemplo en inglés|Traducción|
 > |---|---|
