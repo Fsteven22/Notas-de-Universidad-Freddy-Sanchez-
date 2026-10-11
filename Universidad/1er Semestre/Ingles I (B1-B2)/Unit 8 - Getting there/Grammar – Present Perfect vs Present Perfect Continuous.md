@@ -39,7 +39,7 @@ tags: [ingles-a1a2, grammar, present-perfect, continuous, unit8]
 >
 > ### 🎯 Los 4 usos (con su test)
 >
-> 1. **Experiencia de vida** (tiempo5651 especificado): *I have read that book. She has visited Japan.* Test: ¿puedes agregar *yesterday*? Si sí → NO es este uso.
+> 1. **Experiencia de vida** (tiempo NO especificado especificado): *I have read that book. She has visited Japan.* Test: ¿puedes agregar *yesterday*? Si sí → NO es este uso.
 > 2. **Periodo no terminado** (today, this week, so far): *They have bought a new car (this year).*
 > 3. **Resultado visible ahora**: *He has eaten all the cookies!* (migajas como evidencia).
 > 4. **Conteo/logros**: *She has written three books so far. They have visited Paris twice.*
