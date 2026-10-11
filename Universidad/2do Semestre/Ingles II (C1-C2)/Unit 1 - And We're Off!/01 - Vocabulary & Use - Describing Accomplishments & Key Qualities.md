@@ -72,7 +72,7 @@ dg-publish: true
 > |**reach your potential**|alcanzar tu potencial|_Education helps you reach your full potential._|La educación te ayuda a alcanzar tu pleno potencial.|
 > |**overcome an obstacle**|superar un obstáculo|_She overcame many obstacles to finish her degree._|Superó muchos obstáculos para terminar su carrera.|
 > 
-> **Ejemplo de párrafo completo** _(inglés → español)_:
+> > [!example] 🟢 Ejemplo de párrafo completo (inglés → español)
 > 
 > > _I had to really push myself to face my fear of public speaking. It wasn't easy, but I set a goal for myself and followed through on it. Now I take pride in what I accomplished, and I encourage others to step out of their comfort zone too._
 > > 
