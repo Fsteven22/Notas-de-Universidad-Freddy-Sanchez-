@@ -255,6 +255,20 @@ mindmap
 - ¿Elevator clásico vs S3?::Clásico ≤60s para despertar interés; S3 2min para probar credibilidad (5 pasos IEBS caben en los 4 bloques).
 - ¿Fórmula PAR?::Problema → Acción → Resultado con número, para el bloque Prueba.
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Defino identidad, imagen y reputación con ejemplo propio.
+> - [ ] Respondo las 4 preguntas antes de enviar un mensaje importante.
+> - [ ] Presento mi pitch en 1:45–2:00 cronometrado.
+>
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Mapeo públicos por poder/interés y adapto el mensaje.
+> - [ ] Aplico PAR en mi bloque Prueba con número real.
+> - [ ] Gestiono mi I+I+R semanal (identidad, coherencia, mejora).
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando

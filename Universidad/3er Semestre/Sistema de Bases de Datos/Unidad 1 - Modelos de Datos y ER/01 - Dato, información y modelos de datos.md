@@ -419,4 +419,16 @@ flowchart TD
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Índice Unidad 1: [[00 - Índice Unidad 1]] · Índice Unidad 2: [[00 - Índice Unidad 2]]
+> - Siguiente: [[02 - Entidades, atributos, claves y relaciones]]
+> - Conversión a tablas: [[01 - Conversión MC a ML por cardinalidad]]
+> - Syllabus: [[Bienvenida y Syllabus Sistema de Bases de Datos]]
+
+---
+
 **Tags:** #TICG1018 #unidad1 #datos #modelos #bd

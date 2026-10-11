@@ -256,6 +256,19 @@ mindmap
 > - ¿Phillips 6-6, mesa redonda y matriz en 1 línea?::6 personas × 6 min + vocero / turnos de 2 min sin interrupciones / puntuar opciones por impacto-esfuerzo-riesgo.
 > - ¿Roles rotativos y su frase?::Facilitador da turnos, secretario escribe acuerdos, tiempo avisa; rotan cada taller para entrenar liderazgo.
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Monto un Phillips 6-6 con tiempos y roles.
+> - [ ] Armo una matriz de decisión con números.
+> - [ ] Redacto un acta mínima (qué/quién/cuándo).
+>
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Facilito una discrepancia con el protocolo Dato→Impacto→Opciones→Voto.
+> - [ ] Detecto monopolio y lo corto con frase de facilitador.
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando
