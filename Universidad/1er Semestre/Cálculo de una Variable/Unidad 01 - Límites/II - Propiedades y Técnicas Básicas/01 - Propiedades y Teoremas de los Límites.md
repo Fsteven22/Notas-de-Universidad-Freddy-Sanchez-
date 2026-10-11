@@ -26,6 +26,7 @@ dg-publish: true
 > - $\lim_{x \to -2} \pi = \pi$
 > - $\lim_{x \to \infty} (-5) = -5$
 >
+
 > [!success] ✅ Propiedad del Límite de la Variable **Regla:** El límite de la variable independiente es el valor al que tiende.
 > 
 > $$\lim_{x \to a} x = a$$
@@ -51,6 +52,7 @@ dg-publish: true
 > - $\lim_{x \to 2} (x^2 + 3x) = \lim_{x \to 2} x^2 + \lim_{x \to 2} 3x = 4 + 6 = 10$
 > - $\lim_{x \to 1} (2x + 5 + \sin x) = 2 + 5 + \sin(1) = 7 + \sin(1)$
 >
+
 > [!example] 📊 Propiedad de la Resta **Regla:** El límite de una diferencia es la diferencia de los límites.
 > 
 > $$\lim_{x \to a} [f(x) - g(x)] = \lim_{x \to a} f(x) - \lim_{x \to a} g(x) = L - M$$
@@ -540,6 +542,7 @@ graph TD
 > 
 > **Para raíces pares:** $L \geq 0$ (en números reales) **Para raíces impares:** $L$ puede ser cualquier número real **Para exponentes negativos:** $L ≠ 0$ **Para exponentes fraccionarios:** Verificar dominio y restricciones
 >
+
 > [!example] 🎯 Ejemplos de Potencias
 > 
 > **Ejemplo 1: Potencia positiva** $$\lim_{x \to 2} (x^2 - 1)^3$$
@@ -783,6 +786,7 @@ graph TD
 > 
 > **Solución:** $P(2) = 3(8) - 2(4) + 2 - 5 = 24 - 8 + 2 - 5 = 13$
 >
+
 > [!example] 🔄 Funciones Racionales Para funciones racionales $f(x) = \frac{P(x)}{Q(x)}$:
 > 
 > - **Continuas** cuando $Q(a) ≠ 0$
@@ -828,6 +832,7 @@ pie title Funciones Trigonométricas por Continuidad
 > - **Dominio:** $\mathbb{R}$
 > - **Rango:** $(0, +∞)$
 >
+
 > [!success] 📊 Logarítmicas  
 > Las funciones logarítmicas $f(x) = \log_a(x)$ donde $a > 0, a ≠ 1$:
 > 

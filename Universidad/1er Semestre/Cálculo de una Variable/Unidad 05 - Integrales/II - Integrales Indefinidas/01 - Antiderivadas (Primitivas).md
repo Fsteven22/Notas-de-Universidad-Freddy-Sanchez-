@@ -8,6 +8,7 @@ dg-publish: true
 
 > [!info] 💡 Concepto Fundamental Una **antiderivada** (o primitiva) de una función $f(x)$ es cualquier función $F(x)$ tal que $F'(x) = f(x)$. Es el proceso inverso de la derivación y constituye la base fundamental de la **integración indefinida**.
 >
+
 > [!tip] 🎯 ¿Por qué son importantes?
 > 
 > - Son la **base conceptual** de las integrales indefinidas
@@ -61,6 +62,7 @@ mindmap
 > - $C$ es la **constante de integración**
 > - El conjunto de todas las antiderivadas forma una **familia de funciones**
 >
+
 > [!warning] ⚠️ Elementos clave de la notación
 > 
 > - **$f(x)$**: Función integrando (función de la que buscamos la antiderivada)
@@ -69,6 +71,7 @@ mindmap
 > - **$dx$**: Diferencial de $x$ (indica la variable de integración)
 > - **$\int$**: Símbolo de integral (del latín "summa")
 >
+
 > [!example] 🧪 Ejemplo de familia de antiderivadas Si $f(x) = 2x$, entonces:
 > 
 > - $F_1(x) = x^2$ es una antiderivada
@@ -93,8 +96,10 @@ graph LR
 
 > [!info] 📋 Teorema de Existencia Si $f(x)$ es **continua** en un intervalo $I$, entonces $f(x)$ tiene al menos una antiderivada en $I$.
 >
+
 > [!info] 📋 Teorema de Unicidad Si $F(x)$ y $G(x)$ son dos antiderivadas de $f(x)$ en un intervalo $I$, entonces: $$G(x) = F(x) + C$$ donde $C$ es una constante.
 >
+
 > [!note] 🔍 Implicaciones importantes
 > 
 > - Las antiderivadas de una función difieren únicamente por una constante
@@ -115,6 +120,7 @@ graph LR
 > 2. **Linealidad del múltiplo**: $\int k \cdot f(x) , dx = k \int f(x) , dx$ (donde $k$ es constante)
 > 3. **Diferencia**: $\int [f(x) - g(x)] , dx = \int f(x) , dx - \int g(x) , dx$
 >
+
 > [!info] 🔍 Propiedades Adicionales
 > 
 > - **No distributiva para productos**: $\int f(x) \cdot g(x) , dx \neq \int f(x) , dx \cdot \int g(x) , dx$
@@ -131,6 +137,7 @@ graph LR
 > 2. Verifica que $F'(x) = f(x)$
 > 3. Si es correcto, entonces $F(x) + C$ es la antiderivada general
 >
+
 > [!example] 🧪 Ejemplo de Verificación Completa **Problema**: Verificar que $F(x) = \frac{x^4}{4} - 2x^3 + 5x^2 - 7x$ es antiderivada de $f(x) = x^3 - 6x^2 + 10x - 7$
 > 
 > **Verificación**: $$F'(x) = \frac{d}{dx}\left(\frac{x^4}{4} - 2x^3 + 5x^2 - 7x\right)$$ $$= \frac{4x^3}{4} - 6x^2 + 10x - 7$$ $$= x^3 - 6x^2 + 10x - 7 = f(x)$$ ✅
@@ -145,18 +152,21 @@ graph LR
 > 
 > **Desarrollo paso a paso**: $$\int (4x^3 - 6x^2 + 2x - 8) , dx$$ $$= \int 4x^3 , dx - \int 6x^2 , dx + \int 2x , dx - \int 8 , dx$$ $$= 4 \int x^3 , dx - 6 \int x^2 , dx + 2 \int x , dx - 8 \int 1 , dx$$ $$= 4 \cdot \frac{x^4}{4} - 6 \cdot \frac{x^3}{3} + 2 \cdot \frac{x^2}{2} - 8x + C$$ $$= x^4 - 2x^3 + x^2 - 8x + C$$
 >
+
 > [!example] 🎯 Ejemplo 2: Función con radicales **Encontrar**: $\int \left(3\sqrt{x} - \frac{4}{\sqrt{x}} + 2\sqrt[3]{x^2}\right) , dx$
 > 
 > **Reescribir con exponentes**: $$\int (3x^{1/2} - 4x^{-1/2} + 2x^{2/3}) , dx$$
 > 
 > **Aplicar regla de potencia**: $$= 3 \cdot \frac{x^{3/2}}{3/2} - 4 \cdot \frac{x^{1/2}}{1/2} + 2 \cdot \frac{x^{5/3}}{5/3} + C$$ $$= 2x^{3/2} - 8x^{1/2} + \frac{6x^{5/3}}{5} + C$$ $$= 2x\sqrt{x} - 8\sqrt{x} + \frac{6x\sqrt[3]{x^2}}{5} + C$$
 >
+
 > [!example] 🎯 Ejemplo 3: Función racional **Encontrar**: $\int \frac{2x^4 - 3x^2 + 5}{x^3} , dx$
 > 
 > **Separar fracciones**: $$\int \frac{2x^4 - 3x^2 + 5}{x^3} , dx = \int \left(\frac{2x^4}{x^3} - \frac{3x^2}{x^3} + \frac{5}{x^3}\right) , dx$$ $$= \int (2x - 3x^{-1} + 5x^{-3}) , dx$$
 > 
 > **Integrar término a término**: $$= 2 \cdot \frac{x^2}{2} - 3 \ln|x| + 5 \cdot \frac{x^{-2}}{-2} + C$$ $$= x^2 - 3\ln|x| - \frac{5}{2x^2} + C$$
 >
+
 > [!example] 🎯 Ejemplo 4: Funciones trigonométricas **Encontrar**: $\int (2\sin x - 3\cos x + 4\sec^2 x) , dx$
 > 
 > **Solución directa**: $$= 2(-\cos x) - 3(\sin x) + 4(\tan x) + C$$ $$= -2\cos x - 3\sin x + 4\tan x + C$$
@@ -176,6 +186,7 @@ graph LR
 > 2. Usar la condición inicial para determinar $C$
 > 3. Escribir la solución particular
 >
+
 > [!example] 🧪 Ejemplo Completo con Verificación **Problema**: Encuentra $F(x)$ tal que $F'(x) = 3x^2 - 4x + 1$ y $F(2) = 10$
 > 
 > **Paso 1**: Antiderivada general $$F(x) = \int (3x^2 - 4x + 1) , dx = x^3 - 2x^2 + x + C$$
@@ -200,6 +211,7 @@ graph LR
 > - **Pendientes comunes**: En cualquier punto $x = a$, todas las curvas de la familia tienen la misma pendiente $f(a)$
 > - **Campo de pendientes**: $f(x)$ define un campo de direcciones que las antiderivadas "siguen"
 >
+
 > [!example] 🎨 Interpretación Visual Para $f(x) = 2x$:
 > 
 > - Las antiderivadas son $F(x) = x^2 + C$
@@ -243,6 +255,7 @@ graph TD
 > - **Población**: Si $\frac{dP}{dt} = kP$, entonces $P(t) = \int kP , dt$
 > - **Desintegración radioactiva**: $N(t) = \int -\lambda N , dt$
 >
+
 > [!note] 🔬 Aplicaciones en Matemáticas **Ecuaciones Diferenciales**:
 > 
 > - Resolver $\frac{dy}{dx} = f(x)$ mediante $y = \int f(x) , dx$
@@ -273,6 +286,7 @@ graph TD
 > 
 > **Después de integrar**: 9. **Verificar** derivando el resultado 10. **Simplificar** la expresión final si es posible 11. **Aplicar** condiciones iniciales si las hay
 >
+
 > [!example] 🎯 Estrategia para funciones complejas **Problema**: $\int \frac{x^3 + 2x - 1}{x^2} , dx$
 > 
 > **Estrategia - Separar la fracción**: $$\frac{x^3 + 2x - 1}{x^2} = \frac{x^3}{x^2} + \frac{2x}{x^2} - \frac{1}{x^2} = x + 2x^{-1} - x^{-2}$$
@@ -308,6 +322,7 @@ graph TD
 > - ❌ Incorrecto: $\int (x + 1) , dx = \frac{x^2}{2} + C_1 + x + C_2$
 > - ✅ Correcto: $\int (x + 1) , dx = \frac{x^2}{2} + x + C$
 >
+
 > [!tip] 💡 Consejos para el Éxito **Verificación sistemática**:
 > 
 > - Siempre deriva tu resultado para verificar

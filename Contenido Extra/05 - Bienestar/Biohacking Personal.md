@@ -2,6 +2,7 @@
 
 > [!quote] 🧬 "El biohacking es el arte y la ciencia de optimizar tu biología a través de cambios sistemáticos en estilo de vida, nutrición, tecnología y ambientes para alcanzar el máximo rendimiento humano." - Dave Asprey, Fundador del Movimiento Biohacking
 >
+
 > [!info]- ## 🔬 Fundamentos del Biohacking
 > 
 > ### Definición y Principios Core
@@ -42,6 +43,7 @@
 > |**🔋 Energía**|Estabilizar metabolismo|Glucosa, cetonas|CGM, medidores|
 > |**😴 Recuperación**|Mejorar descanso|Sleep stages, REM|Sleep trackers|
 >
+
 > [!success]- ## 📊 Herramientas de Medición y Tracking
 > 
 > ### Wearables y Dispositivos
@@ -87,6 +89,7 @@
 > |**Temperatura Corporal** 🌡️|97.8-99.1°F|Diaria|Oura, termómetro|
 > |**Peso Corporal** ⚖️|Estable ±2%|Diaria AM|Báscula inteligente|
 >
+
 > [!tip]- ## 🧠 Biohacking Cognitivo
 > 
 > ### Nootrópicos y Suplementación Cerebral
@@ -133,6 +136,7 @@
 > 2. **Box Breathing**: 4-4-4-4 para calmar sistema nervioso
 > 3. **4-7-8 Technique**: Activar respuesta parasimpática
 >
+
 > [!warning]- ## ❄️ Terapias de Choque Térmico
 > 
 > ### Crioterapia y Exposición al Frío
@@ -183,6 +187,7 @@
 > - 💪 **Heat Shock Proteins**: Protección celular
 > - 😴 **Calidad de Sueño**: Mejor termorregulación
 >
+
 > [!example]- ## 🍽️ Biohacking Nutricional
 > 
 > ### Ayuno Intermitente y Restricción Calórica
@@ -349,6 +354,7 @@
 > |**Atención Sostenida** 🎯|Vigilance Task|Semanal|>85% accuracy|
 > |**Flexibilidad Cognitiva** 🔄|Wisconsin Card Sort|Mensual|<10% errors|
 >
+
 > [!warning]- ## ⚠️ Precauciones y Contraindicaciones
 > 
 > ### Señales de Alerta - Cuándo Parar
@@ -390,6 +396,7 @@
 > - **Documentar todo** en diario de biohacking
 > - **Buscar mejora del 1%** diario, no cambios drásticos
 >
+
 > [!quote]- ## 📚 Referencias y Recursos Avanzados
 > 
 > ### Literatura Científica Fundamental

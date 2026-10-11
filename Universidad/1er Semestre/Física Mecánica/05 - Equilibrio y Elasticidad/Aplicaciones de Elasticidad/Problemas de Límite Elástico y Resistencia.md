@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La resistencia de un material no se mide solo por su capacidad de soportar fuerzas, sino por su habilidad de volver a su forma original cuando la adversidad cesa." 🔧
 >
+
 > [!info] El límite elástico y la resistencia de los materiales son conceptos fundamentales en la ingeniería y la física aplicada. Estos parámetros determinan las condiciones límite bajo las cuales un material puede operar sin sufrir deformaciones permanentes o fallas estructurales, siendo cruciales para el diseño seguro de estructuras y componentes.
 
 ## 🎯 Conceptos Fundamentales
@@ -32,6 +33,7 @@ dg-publish: true
 > |Cobre|33-400|110|
 > |Concreto|20-40|30|
 >
+
 > [!tip] **Resistencia del Material** 💪
 > 
 > ### Tipos de Resistencia:
@@ -61,6 +63,7 @@ dg-publish: true
 > σᵤₜ ≈ σᵤᶜ > σₑ (para materiales dúctiles)
 > ```
 >
+
 > [!warning] **Factor de Seguridad** ⚠️
 > 
 > ### Definición:
@@ -85,6 +88,7 @@ dg-publish: true
 > - Consecuencias de la falla
 > - Condiciones ambientales
 >
+
 > [!success] 📊 Diagrama Esfuerzo-Deformación
 > 
 > ```mermaid
@@ -102,6 +106,7 @@ dg-publish: true
 >     style F fill:#ffcdd2
 > ```
 >
+
 > [!note] **Relaciones Matemáticas** 📐
 > 
 > ### Ley de Hooke (Región Elástica):
@@ -182,6 +187,7 @@ dg-publish: true
 > 
 > **Conclusión**: Es seguro (FS > 2 para ambos casos)
 >
+
 > [!example] **Problema 2: Diseño de Columna** 🏗️
 > 
 > ### Enunciado:
@@ -204,6 +210,7 @@ dg-publish: true
 > 
 > **Respuesta**: d ≥ 40.3 cm
 >
+
 > [!example] **Problema 3: Análisis de Viga en Flexión** 📏
 > 
 > ### Enunciado:

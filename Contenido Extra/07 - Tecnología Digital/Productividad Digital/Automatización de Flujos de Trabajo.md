@@ -2,6 +2,7 @@
 
 > [!quote] 🔄 "Un flujo de trabajo es el camino de las tareas. La automatización es el turbo que lo convierte en una autopista."
 >
+
 > [!info]- ## 🌐 Fundamentos de los Flujos de Trabajo Automatizados
 > 
 > ### ¿Qué es un Flujo de Trabajo?
@@ -134,6 +135,7 @@
 > > 4.  **Diseña el Flujo Automatizado:** Rediseña el diagrama, reemplazando los pasos manuales por "acciones automatizadas" y "triggers". Esto te enseña a pensar en términos de lógica de automatización.
 > 
 > ---
+
 > [!quote]- ## 📚 Referencias y Recursos
 > 
 > > [!quote] 📄 [Recursos de Automatización de Tareas]([[Automatización de Tareas]])

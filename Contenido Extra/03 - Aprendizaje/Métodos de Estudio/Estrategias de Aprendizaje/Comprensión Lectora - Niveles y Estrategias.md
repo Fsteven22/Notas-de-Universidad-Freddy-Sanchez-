@@ -122,6 +122,7 @@
 >    "Aplica lo aprendido" : 8
 > ```
 >
+
 > [!warning]- ## ⚠️ Obstáculos Comunes y Soluciones
 > 
 > ### 🚧 Barreras Frecuentes
@@ -188,6 +189,7 @@
 >
 > [!books]- ## 📚 Referencias y Profundización
 > 
+
 > [!quote]- ### Referencias Académicas
 > 
 > - Pearson, P. D., & Cervetti, G. N. (2017). "The Psychology of Reading Comprehension". _Annual Review of Psychology_, 68, 413-445.
@@ -195,6 +197,7 @@
 > - Perfetti, C., & Stafura, J. (2014). "Word Knowledge in a Theory of Reading Comprehension". _Scientific Studies of Reading_, 18(1), 22-37.
 > - McNamara, D. S. (2017). _Reading Comprehension Strategies: Theories, Interventions, and Technologies_. Routledge.
 > 
+
 > [!note]- ### Notas Recomendadas **Prerrequisitos:**
 > 
 > - [[Hábitos de Estudio]] - Base para lectura sistemática

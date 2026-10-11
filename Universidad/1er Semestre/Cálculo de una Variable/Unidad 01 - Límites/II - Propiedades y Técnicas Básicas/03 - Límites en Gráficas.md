@@ -167,6 +167,7 @@ flowchart TD
 > 
 > **Conclusión:** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$ ✨
 >
+
 > [!example] 🔍 Ejemplo 2: Función Definida por Partes $g(x) = \begin{cases} x + 1 & \text{si } x < 2 \ 3 & \text{si } x = 2 \ 2x - 1 & \text{si } x > 2 \end{cases}$
 > 
 > **Análisis visual en x = 2:**

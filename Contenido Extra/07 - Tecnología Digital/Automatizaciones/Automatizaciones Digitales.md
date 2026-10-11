@@ -2,6 +2,7 @@
 
 > [!quote] 🧠 "Automatizar lo simple te permite dedicarte a lo complejo. No se trata de trabajar más duro, sino de trabajar más inteligentemente."
 >
+
 > [!info]- ## 🌐 Fundamentos de la Automatización Digital
 > 
 > ### El Ecosistema Digital de la Automatización
@@ -101,6 +102,7 @@
 > > 4. **Email de bienvenida** automático con agenda del primer día
 > > 5. **Crear tareas** para el mánager en Asana/Trello
 >
+
 > [!tip]- ## 🚀 Consejos y Mejores Prácticas
 > 
 > ### Reglas de Oro de la Automatización

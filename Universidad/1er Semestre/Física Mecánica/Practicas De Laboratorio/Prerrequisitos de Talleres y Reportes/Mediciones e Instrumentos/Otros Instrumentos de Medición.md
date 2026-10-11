@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "Un científico es tan bueno como sus instrumentos; conocerlos es dominar la precisión." 🔧
 >
+
 > [!info] Además del calibrador de Vernier, el laboratorio de física mecánica utiliza diversos instrumentos especializados para medir diferentes magnitudes. Cada instrumento tiene características únicas de precisión, rango de medición y aplicaciones específicas. Conocer sus capacidades y limitaciones es fundamental para seleccionar la herramienta apropiada y obtener resultados confiables.
 
 ## 🔧 Instrumentos de Longitud
@@ -42,6 +43,7 @@ dg-publish: true
 > - Escala circular: 0.23 mm
 > - **Total**: 8.73 mm
 >
+
 > [!tip] **Regla Graduada** 🌊
 > 
 > ### Tipos Comunes:
@@ -116,6 +118,7 @@ dg-publish: true
 > - **Electricidad estática**: Atracción/repulsión de objetos
 > - **Vibración**: Movimientos del edificio o equipos cercanos
 >
+
 > [!tip] **Balanza de Brazos** 📊
 > 
 > ### Principio de Funcionamiento:
@@ -186,6 +189,7 @@ dg-publish: true
 > - **Movimiento en plano inclinado**: Definir puntos claros
 > - **Oscilaciones**: Contar múltiples ciclos
 >
+
 > [!success] 🔗 Selección del Cronómetro Apropiado
 > 
 > ```mermaid
@@ -272,6 +276,7 @@ dg-publish: true
 > - Deriva con la temperatura
 > - Fatiga del material con el uso
 >
+
 > [!tip] **Transportador** 📏
 > 
 > ### Medición de Ángulos:
@@ -428,6 +433,7 @@ dg-publish: true
 > - [[Unidades y Magnitudes Físicas]] - Sistema de unidades
 > - **Conocimientos básicos**: Manejo cuidadoso de equipos
 >
+
 > [!note] **Temas Siguientes**
 > 
 > - [[Cifras Significativas]] - Expresión correcta de resultados

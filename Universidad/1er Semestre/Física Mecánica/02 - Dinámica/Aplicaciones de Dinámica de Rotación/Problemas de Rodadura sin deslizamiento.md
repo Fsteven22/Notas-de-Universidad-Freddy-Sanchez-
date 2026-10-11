@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En la rodadura sin deslizamiento, cada punto de la rueda cuenta una historia diferente: el centro avanza uniformemente, el punto de contacto permanece inmóvil, y el punto más alto vuela a doble velocidad." 🎡
 >
+
 > [!info] La rodadura sin deslizamiento representa uno de los fenómenos más elegantes de la mecánica, donde la traslación y rotación se combinan de manera perfecta. Este tipo de movimiento aparece constantemente en nuestra vida diaria: desde las ruedas de vehículos hasta engranajes industriales, pelotas que ruedan y cilindros en planos inclinados. La comprensión de este movimiento requiere integrar conceptos de cinemática y dinámica tanto traslacional como rotacional, estableciendo la relación fundamental v = ωR que conecta ambos tipos de movimiento.
 
 ## 🎯 Fundamentos de la Rodadura
@@ -33,6 +34,7 @@ dg-publish: true
 > - **No deslizamiento**: f_s ≤ μ_s N
 > - **Punto de contacto fijo**: Velocidad relativa = 0
 >
+
 > [!tip] **Cinemática de Puntos en el Objeto** 🌟
 > 
 > ### Velocidades de Puntos Característicos:
@@ -63,6 +65,7 @@ dg-publish: true
 > - **Puntos del borde**: Cicloides
 > - **Punto de contacto**: Serie de arcos
 >
+
 > [!warning] **Dinámica de la Rodadura** ⚡
 > 
 > ### Ecuaciones de Movimiento:
@@ -91,6 +94,7 @@ dg-publish: true
 > - **Cilindro hueco**: E_k = Mv²_cm
 > - **Esfera sólida**: E_k = (7/10)Mv²_cm
 >
+
 > [!success] 🔗 Análisis de Fuerzas en Rodadura
 > 
 > ```mermaid
@@ -115,6 +119,7 @@ dg-publish: true
 >     style D fill:#fff3e0
 > ```
 >
+
 > [!note] **Momentos de Inercia Comunes** 📐
 > 
 > ### Para objetos con masa M y radio R:
@@ -213,6 +218,7 @@ dg-publish: true
 > 
 > c) **Coeficiente mínimo**: μ_min = f_s/N = 3.27/16.97 = **0.193**
 >
+
 > [!example] **Problema 2: Esfera Rodando con Fuerza Aplicada** ⚽
 > 
 > ### Enunciado:
@@ -254,6 +260,7 @@ dg-publish: true
 > 
 > **Verificación**: La esfera acelera hacia adelante, por lo que la fricción debe actuar hacia atrás para generar la rotación necesaria.
 >
+
 > [!example] **Problema 3: Comparación de Objetos en Plano Inclinado** 🏁
 > 
 > ### Enunciado:
@@ -306,12 +313,14 @@ dg-publish: true
 > [!tip] **Mnemotecnia: "RODAS"** 🛞 **R**odadura verificada **O**bjeto caracterizado **D**inámica aplicada  
 > **A**nálisis de fuerzas **S**olución sistemática
 >
+
 > [!tip] **Regla de Velocidades: "0-1-2"** 🎯
 > 
 > - **0**: Punto de contacto (v = 0)
 > - **1**: Centro de masa (v = v_cm)
 > - **2**: Punto más alto (v = 2v_cm)
 >
+
 > [!tip] **Fórmula Rápida para Planos Inclinados** ⚡ **a = g sin θ/(1 + β)** donde β = I/(MR²) es el factor de forma
 
 ## ⚠️ Errores Comunes

@@ -388,16 +388,19 @@ mindmap
 > - [ ] Distingo entre energia primaria y energia electrica con ejemplos (hidro, solar, eolica).
 > - [ ] Diferencio un alternador (AC) de un dinamo (DC) y por que gano AC.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Aplico la Ley de Lenz para determinar la direccion de la corriente inducida.
 > - [ ] Describo el proceso generacion -> transmision -> distribucion -> consumo con voltajes tipicos.
 > - [ ] Comparo fuentes hidro, termo, solar, eolica y nuclear en renovabilidad y costo.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Analizo el experimento de Orsted y predigo el campo inducido por una corriente.
 > - [ ] Estimo la potencia eolica P = 1/2 rho A v3 y discuto su dependencia cubica.
 > - [ ] Justifico la eleccion de una fuente segun disponibilidad y contexto de Ecuador.
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[01 - Conceptos Fundamentales de la Electricidad]] — carga y campo base para induccion
 > - Siguiente: [[03 - Elementos Basicos de un Circuito Electrico]] — del generador a los componentes

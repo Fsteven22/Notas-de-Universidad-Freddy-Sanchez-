@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "El trabajo es la medida del cambio; cada fuerza que actúa sobre un desplazamiento cuenta una historia de energía transferida." 💪
 >
+
 > [!info] El trabajo es una magnitud escalar que representa la transferencia de energía cuando una fuerza actúa sobre un objeto que se desplaza. Comprender cómo calcular el trabajo en diferentes situaciones es fundamental para analizar sistemas mecánicos y aplicar el teorema trabajo-energía.
 
 ## ⚡ Fundamentos del Trabajo
@@ -31,6 +32,7 @@ dg-publish: true
 > |0° < θ < 90°|W > 0|Trabajo positivo (motor)|
 > |90° < θ < 180°|W < 0|Trabajo negativo (resistivo)|
 >
+
 > [!tip] **Teorema Trabajo-Energía** ⚖️
 > 
 > ### Relación Fundamental:
@@ -44,6 +46,7 @@ dg-publish: true
 > - **W_total = 0**: Velocidad constante
 > - **W_neto = Σ W_individual**: Suma de todos los trabajos
 >
+
 > [!success] 🔗 Clasificación de Problemas
 > 
 > ```mermaid
@@ -82,6 +85,7 @@ dg-publish: true
 > - **Fuerza aplicada**: W = F·d·cos θ
 > - **Tensión en cuerda**: W = T·d·cos θ
 >
+
 > [!tip] **Estrategia para Fuerzas Constantes** 🎯
 > 
 > ### Método "FADE":
@@ -89,6 +93,7 @@ dg-publish: true
 > **F**uerza - Identifica todas las fuerzas actuantes **A**ngulo - Determina θ entre cada fuerza y desplazamiento  
 > **D**esplazamiento - Calcula la distancia recorrida **E**valuación - Aplica W = Fd cos θ para cada fuerza
 >
+
 > [!example] **Problema 1: Trabajo con Múltiples Fuerzas** 🚛
 > 
 > ### Enunciado:
@@ -117,6 +122,7 @@ dg-publish: true
 > 
 > **c) Velocidad final**: W_total = ½mv²_f - 0 245 = ½(10)v²_f **v_f = 7 m/s**
 >
+
 > [!example] **Problema 2: Plano Inclinado** 🏔️
 > 
 > ### Enunciado:
@@ -141,6 +147,7 @@ dg-publish: true
 > 
 > **d) Aceleración**: F_neta = mg sen 30° - f = 24.5 - 8.48 = 16.02 N **a = F_neta/m = 16.02/5 = 3.2 m/s²**
 >
+
 > [!example] **Problema 3: Sistema de Poleas** 🔗
 > 
 > ### Enunciado:
@@ -181,6 +188,7 @@ dg-publish: true
 > - **Gravitación**: F = GMm/r² → W = GMm(1/r₁ - 1/r₂)
 > - **Resistencia del aire**: F ∝ v² → Requiere integración
 >
+
 > [!tip] **Estrategia para Fuerzas Variables** 🧮
 > 
 > ### Método "VIGA":
@@ -188,6 +196,7 @@ dg-publish: true
 > **V**ariable - Identifica la función F(x) **I**ntegral - Plantea ∫F(x) dx entre límites **G**ráfica - Visualiza como área bajo curva  
 > **A**plicación - Evalúa la integral definida
 >
+
 > [!example] **Problema 4: Trabajo con Resorte** 🔗
 > 
 > ### Enunciado:
@@ -208,6 +217,7 @@ dg-publish: true
 > 
 > **Verificación**: W_total = ½k(0.65)² = ½×400×0.4225 = **84.5 J** ✓
 >
+
 > [!example] **Problema 5: Fuerza Dependiente de la Posición** 📐
 > 
 > ### Enunciado:
@@ -222,6 +232,7 @@ dg-publish: true
 > 
 > **b) Velocidad final**: Por teorema trabajo-energía: W = ½mv²_f - 0 64.5 = ½(0.5)v²_f v²_f = 64.5/0.25 = 258 **v_f = 16.1 m/s**
 >
+
 > [!example] **Problema 6: Trabajo Gravitatorio** 🌍
 > 
 > ### Enunciado:
@@ -245,6 +256,7 @@ dg-publish: true
 > **T**ransferencia - El trabajo transfiere energía **R**ecorrido - Debe haber desplazamiento  
 > **A**ngulo - cos θ determina la componente efectiva **B**ajo la curva - Área en gráfico F vs x **A**plicada - Solo la componente en dirección del movimiento **J**oules - Unidad de energía y trabajo **O**posición - Trabajo negativo cuando F opone el movimiento
 >
+
 > [!tip] **Fórmulas Clave** 🔑
 > 
 > ### Fuerzas Constantes:

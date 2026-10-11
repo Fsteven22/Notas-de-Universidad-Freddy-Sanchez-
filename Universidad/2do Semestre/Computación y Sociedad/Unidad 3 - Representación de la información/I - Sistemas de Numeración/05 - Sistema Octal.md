@@ -74,6 +74,7 @@ dg-publish: true
 >
 > Mismo procedimiento que decimal → binario (ver [[04 - Conversion Decimal-Binario]]), pero dividiendo entre **8** en lugar de 2.
 >
+
 > [!example] ✏️ Ejemplo — Convertir 768₁₀ a octal
 >
 > $$
@@ -87,6 +88,7 @@ dg-publish: true
 >
 > Leyendo los restos de abajo hacia arriba: $\boxed{768_{10} = 1400_8}$
 >
+
 > [!example] ✏️ Ejemplo con fracción — Convertir 323.625₁₀ a octal
 >
 > **Parte entera (323):**
@@ -119,6 +121,7 @@ dg-publish: true
 >
 > Igual que en binario, pero con potencias de 8: $8^0=1$, $8^1=8$, $8^2=64$, $8^3=512$, $8^4=4096$, $8^5=32768$...
 >
+
 > [!example] ✏️ Ejemplo — Convertir 421₈ a decimal
 >
 > $$4\times8^2 + 2\times8^1 + 1\times8^0 = 256 + 16 + 1$$
@@ -137,6 +140,7 @@ dg-publish: true
 > | **2** | Rellenar con ceros a la izquierda si el último grupo queda incompleto |
 > | **3** | Convertir cada grupo de 3 bits a su dígito octal equivalente (tabla de arriba) |
 >
+
 > [!example] ✏️ Ejemplo — Convertir 001101011011₂ a octal
 >
 > ```
@@ -147,6 +151,7 @@ dg-publish: true
 >
 > $$\boxed{001101011011_2 = 1533_8}$$
 >
+
 > [!example] ✏️ Ejemplo inverso — Convertir 2556₈ a binario
 >
 > Cada dígito octal se expande a sus 3 bits correspondientes:
@@ -159,6 +164,7 @@ dg-publish: true
 >
 > $$\boxed{2556_8 = 010101101110_2}$$
 >
+
 > [!example] ✏️ Ejemplo con decimales — Convertir 101.110₂ a octal
 >
 > **Parte entera (101):** solo tiene 3 bits, así que no necesita relleno
@@ -181,6 +187,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] ✏️ Ejemplo más complejo — Convertir 1011.10101₂ a octal
 >
 > **Parte entera (1011):** agrupa de 3 en 3 desde la derecha

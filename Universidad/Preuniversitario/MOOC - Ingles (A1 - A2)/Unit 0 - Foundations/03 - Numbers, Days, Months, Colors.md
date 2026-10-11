@@ -899,6 +899,7 @@ dg-publish: true
 > 10. three point five (or "three and a half")
 > ```
 >
+
 > [!example] Exercise 2: Ordinal Numbers
 > 
 > **Convert to ordinal numbers:**
@@ -931,6 +932,7 @@ dg-publish: true
 > 10. one hundredth (100th)
 > ```
 >
+
 > [!example] Exercise 3: Days of the Week
 > 
 > **Answer these questions:**
@@ -966,6 +968,7 @@ dg-publish: true
 > 6. Thu, Sat, Sun
 > ```
 >
+
 > [!example] Exercise 4: Months and Dates
 > 
 > **Write these dates in full:**
@@ -1002,6 +1005,7 @@ dg-publish: true
 > 10. 28 days (29 in leap years)
 > ```
 >
+
 > [!example] Exercise 5: Colors
 > 
 > **Name the colors:**
@@ -1040,6 +1044,7 @@ dg-publish: true
 > 12. green
 > ```
 >
+
 > [!example] Exercise 6: Complete the Sentences
 > 
 > **Fill in with numbers, days, months, or colors:**
@@ -1072,6 +1077,7 @@ dg-publish: true
 > 10. (current day - e.g., Wednesday)
 > ```
 >
+
 > [!example] Exercise 7: Math in English
 > 
 > **Say these math problems out loud:**

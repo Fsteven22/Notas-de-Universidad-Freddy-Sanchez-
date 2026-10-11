@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La ecuación de Bernoulli revela que en el flujo de fluidos, energía y velocidad danzan en perfecto equilibrio: donde una crece, la otra decrece." ⚡
 >
+
 > [!info] La ecuación de Bernoulli es la manifestación del principio de conservación de energía en fluidos en movimiento. Permite analizar la relación entre presión, velocidad y altura en sistemas de flujo, siendo fundamental para entender desde el vuelo de aviones hasta el funcionamiento de venturímetros.
 
 ## 🔧 Conceptos Fundamentales
@@ -37,6 +38,7 @@ dg-publish: true
 > - Flujo estacionario (∂/∂t = 0)
 > - A lo largo de una línea de corriente
 >
+
 > [!tip] **Aplicaciones de Bernoulli** 🌊
 > 
 > ### Sistemas Típicos:
@@ -55,6 +57,7 @@ dg-publish: true
 > - **Sustentación**: Diferencia de velocidades genera fuerza
 > - **Cavitación**: Presión local cae por debajo de vapor
 >
+
 > [!warning] **Limitaciones y Consideraciones** ⚠️
 > 
 > ### Cuándo NO aplicar Bernoulli:
@@ -72,6 +75,7 @@ dg-publish: true
 > - **Coeficientes de descarga**: C_d para orificios
 > - **Factor de corrección de energía cinética**: α
 >
+
 > [!success] 🔗 Metodología de Aplicación
 > 
 > ```mermaid
@@ -91,6 +95,7 @@ dg-publish: true
 >     style G fill:#ffebee
 > ```
 >
+
 > [!note] **Fórmulas Específicas** 📐
 > 
 > ### Velocidad de Descarga (Torricelli):
@@ -189,6 +194,7 @@ dg-publish: true
 > 
 > _(Nota: Este es aproximado, ya que la velocidad disminuye conforme baja el nivel)_
 >
+
 > [!example] **Problema 2: Venturímetro** 🌪️
 > 
 > ### Enunciado:
@@ -230,6 +236,7 @@ dg-publish: true
 > 
 > - **Q = A₁v₁ = 0.0314 × 2.16 = 0.0678 m³/s = 67.8 L/s**
 >
+
 > [!example] **Problema 3: Sifón** 🏔️
 > 
 > ### Enunciado:
@@ -286,6 +293,7 @@ dg-publish: true
 > 
 > **Regla de Intercambio**: Presión ↔ Velocidad (inversamente proporcionales)
 >
+
 > [!tip] **Analogía del Tobogán** 🎢
 > 
 > - **Arriba del tobogán**: Energía potencial alta, velocidad baja
@@ -362,6 +370,7 @@ dg-publish: true
 > - Presión hidrostática
 > - Flujo incompresible e invíscido
 >
+
 > [!note] **Aplicaciones Avanzadas**
 > 
 > - **Mecánica de Fluidos Computacional (CFD)**
@@ -377,6 +386,7 @@ dg-publish: true
 
 >[!quote] "El agua encuentra su velocidad perfecta al escapar: Torricelli nos enseñó que la naturaleza convierte la altura en movimiento con la precisión de una ecuación matemática." 💧
 >
+
 > [!info] El Teorema de Torricelli, formulado por Evangelista Torricelli en 1643, describe la velocidad de salida de un fluido a través de un orificio en un recipiente bajo la influencia de la gravedad. Este principio fundamental de la hidrodinámica es una aplicación directa del principio de Bernoulli y tiene innumerables aplicaciones en ingeniería y la vida cotidiana.
 
 ## 🌊 Fundamentos Teóricos
@@ -411,6 +421,7 @@ dg-publish: true
 > |Velocidad teórica|√(2gh)|Sin fricción ni viscosidad|
 > |Equivalencia|v = √(2gh) = gt_caída|Velocidad de caída libre|
 >
+
 > [!tip] **Factores de Corrección Real** 🔧
 > 
 > ### Coeficiente de Velocidad (Cv):
@@ -441,6 +452,7 @@ dg-publish: true
 > - **Acabado superficial**: Rugosidad del borde
 > - **Número de Reynolds**: Régimen de flujo
 >
+
 > [!warning] **Variaciones del Teorema** 🔄
 > 
 > ### Torricelli con Presión Adicional:
@@ -489,6 +501,7 @@ dg-publish: true
 >     style E fill:#fce4ec
 > ```
 >
+
 > [!note] **Ecuaciones Derivadas Importantes** 📊
 > 
 > ### Tiempo de Vaciado:
@@ -582,6 +595,7 @@ dg-publish: true
 > - t = (2 × 3.14)/(0.62 × 1.96×10⁻³) × √(3/(2×9.81))
 > - t = 5164 × 0.392 = 2024 segundos = 33.7 minutos
 >
+
 > [!example] **Problema 2: Alcance de Chorro Horizontal** 🎯
 > 
 > ### Enunciado:
@@ -610,6 +624,7 @@ dg-publish: true
 > - h_max = vᵧ²/(2g) = (3.13)²/(2×9.81) = 0.5 m sobre el orificio
 > - Altura total sobre suelo: 1.5 + 0.5 = 2 m
 >
+
 > [!example] **Problema 3: Vaciado de Tanque Cónico** 🔺
 > 
 > ### Enunciado:
@@ -655,6 +670,7 @@ dg-publish: true
 > **R**elación con caída libre (**R**elation to free fall)
 > **E**nergía potencial a cinética (**E**nergy conversion)
 >
+
 > [!info] **Reglas Nemotécnicas Adicionales** 🎯
 > 
 > ### "AGUA-CAE": **AGUA** **CAE** con velocidad de Torricelli

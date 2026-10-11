@@ -137,6 +137,7 @@ dg-publish: true
 > > 
 > > **Aplicación**: $I = \sum m_i r_i^2$ $$I = (1.0)(0.5)^2 + (2.0)(0.5)^2 = 0.25 + 0.50 = 0.75\text{ kg⋅m}^2$$
 >
+
 > [!warning] 🧮 Problema 2: Cilindro Rodando **Enunciado**: Cilindro sólido de masa $M$ y radio $R$ rueda sobre una superficie. Calcular momento de inercia respecto al punto de contacto.
 > 
 > > [!success] ✅ Solución **Momento de inercia del centro**: $I_{CM} = \frac{1}{2}MR^2$

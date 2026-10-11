@@ -208,6 +208,7 @@ graph TB
 > = 4 + 5 + 2 = 11 ✓
 > ```
 >
+
 > [!example] 🎓 Ejemplo 2: Campo conservativo en 3D
 > 
 > **Enunciado:** Verificar que F = ⟨yz, xz, xy⟩ es conservativo y calcular ∫_C F·dr desde (0,0,0) hasta (1,1,1)
@@ -337,6 +338,7 @@ graph TB
 > (Mucho más laborioso)
 > ```
 >
+
 > [!example] 🎓 Ejemplo 2: Cálculo de área
 > 
 > **Enunciado:** Usar el Teorema de Green para calcular el área de la elipse x²/a² + y²/b² = 1
@@ -577,6 +579,7 @@ graph TB
 > (Mucho más trabajo)
 > ```
 >
+
 > [!example] 🎓 Ejemplo 2: Esfera
 > 
 > **Enunciado:** Calcular ∬_S F·n dS donde F = ⟨x³, y³, z³⟩ y S es la esfera x² + y² + z² = a²

@@ -20,6 +20,7 @@ dg-publish: true
 > 2. $\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = f(a)$
 > 3. Para toda sucesión $(x_n) \to a$: $f(x_n) \to f(a)$
 >
+
 > [!info] 📊 Álgebra de Funciones Continuas
 > 
 > ### Propiedades operacionales
@@ -61,6 +62,7 @@ dg-publish: true
 >    style F fill:#607d8b,color:#fff
 > ```
 >
+
 > [!info] 📈 Ejemplos de Cada Tipo
 > 
 > ### 1. **Discontinuidad Evitable** 🔧
@@ -91,6 +93,7 @@ dg-publish: true
 > - $\lim_{x \to 0} f(x)$ **no existe** por oscilación infinita
 > - La función oscila entre $-1$ y $1$ infinitamente rápido
 >
+
 > [!tip] 🔍 Detección de Discontinuidades
 > 
 > ### Algoritmo sistemático
@@ -131,6 +134,7 @@ dg-publish: true
 > 1. $f$ continua en $[a,b]$
 > 2. $k \in [\min{f(a),f(b)}, \max{f(a),f(b)}]$
 >
+
 > [!info] 🎯 Aplicaciones del TVI
 > 
 > ### Aplicación 1: Existencia de Raíces
@@ -176,6 +180,7 @@ dg-publish: true
 > |**Puntual**|$x$ y $\varepsilon$|Local 📍|Más débil|
 > |**Uniforme**|Solo $\varepsilon$|Global 🌐|Más fuerte|
 >
+
 > [!warning] ⚡ Teorema de Heine-Cantor
 > 
 > ### Resultado fundamental
@@ -190,6 +195,7 @@ dg-publish: true
 > - **NO** es uniformemente continua ❌
 > - Cerca de $x = 0$, la función "crece muy rápido"
 >
+
 > [!info] 🔬 Criterios y Ejemplos
 > 
 > ### Criterio de la Derivada

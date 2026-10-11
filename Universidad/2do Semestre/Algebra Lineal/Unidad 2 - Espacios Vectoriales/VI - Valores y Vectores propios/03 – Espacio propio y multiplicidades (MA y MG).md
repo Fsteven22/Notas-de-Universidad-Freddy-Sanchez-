@@ -886,6 +886,7 @@ graph TB
 > Razón: Deficiencia en λ = 1
 > ```
 >
+
 > [!example] 📝 Ejemplo 2: Matriz Diagonalizable
 > 
 > **Enunciado:** Analizar multiplicidades y diagonalización de:
@@ -948,6 +949,7 @@ graph TB
 > Solo hay 2 vectores propios LI, necesitamos 3
 > ```
 >
+
 > [!example] 📝 Ejemplo 3: Matriz SÍ Diagonalizable
 > 
 > **Enunciado:** Analizar multiplicidades de:

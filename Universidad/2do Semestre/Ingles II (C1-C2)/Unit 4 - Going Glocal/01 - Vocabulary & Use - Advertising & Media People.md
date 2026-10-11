@@ -55,6 +55,7 @@ dg-publish: true
 > |**status symbol**|símbolo de estatus|Un objeto que demuestra la posición social o económica de quien lo posee.|
 > |**fashion statement**|declaración de moda|Algo que se usa/lleva para expresar estilo personal, no necesariamente estatus.|
 >
+
 > [!warning] ⚠️ Diferencias que se confunden fácilmente
 > 
 > - **sponsor (n) vs. sponsor (v):** _Emirates is a sponsor of PSG_ (sustantivo) vs. _Emirates sponsors PSG_ (verbo).
@@ -63,6 +64,7 @@ dg-publish: true
 > - **advertise (v) vs. an advertisement/ad (n) vs. a commercial (n):** _advertise_ es la acción; _ad/advertisement_ es cualquier pieza publicitaria (impresa, digital, etc.); _commercial_ es específicamente en TV o radio.
 > - **status symbol vs. fashion statement:** un _status symbol_ comunica riqueza o estatus (un reloj de lujo); una _fashion statement_ comunica estilo personal, sin implicar necesariamente estatus.
 >
+
 > [!example]- 🟢 Ejemplo en contexto (artículo de marketing deportivo)
 > 
 > El artículo explica que, en el caso de Real Madrid, el patrocinio representa cerca de un tercio de los ingresos totales del equipo, mientras que en PSG el patrocinio y el merchandising juntos superan la mitad de sus ingresos — lo cual sugiere que la marca de PSG podría valer incluso más que el equipo como tal. También señala que ambos clubes comparten el mismo patrocinador principal (una aerolínea), y que las camisetas "de imitación" son comunes precisamente porque el merchandising mueve tanto dinero.
@@ -96,10 +98,12 @@ dg-publish: true
 > |**movie producer**|productor de cine|Persona responsable de organizar/financiar la producción de una película.|
 > |**performer**|intérprete / artista|Término general para quien actúa, canta o se presenta ante un público.|
 >
+
 > [!tip]- 💡 Nota sobre "celebrity" vs. otros términos
 > 
 > _Celebrity_ es el término más general: **cualquier** figura famosa, sin importar el campo (puede ser un científico famoso, no solo un actor o cantante). Los demás términos (_comedian, DJ, filmmaker,_ etc.) son más específicos y describen la **profesión** o el rol concreto de esa persona famosa.
 >
+
 > [!example]- 🟢 Ejemplo en contexto (historia viral)
 > 
 > El libro presenta el caso de un niño afgano que se hizo viral tras ser fotografiado con una réplica casera de la camiseta de su ídolo (Lionel Messi), hecha con una bolsa plástica. La foto se difundió tanto que terminó viajando a Catar y conociendo a su héroe. El punto clave del ejercicio es que **no hace falta ser una celebridad o un ícono cultural para volverse viral** — muchas historias que emocionan al público simplemente ocurren y se comparten.
@@ -160,6 +164,7 @@ graph TD
 > 
 > **3.** Completa: _Nike's __________ (logo/slogan) is "Just Do It."_
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** sponsor = (c), logo = (b), slogan = (a)
@@ -178,6 +183,7 @@ graph TD
 > 
 > **3.** Describe a una persona famosa de tu país usando al menos dos palabras de la sección "people in the media" (que no sea _celebrity_).
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** _Coca-Cola advertises a lot on TV._
@@ -196,6 +202,7 @@ graph TD
 > 
 > **3.** Compara dos personas públicas: una que consideres _icon_ y otra que consideres solo _performer_. Justifica la diferencia.
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas; se espera uso correcto y variado del vocabulario (mínimo 5-6 términos distintos combinados naturalmente), no solo repetición mecánica.
@@ -210,12 +217,14 @@ graph TD
 > - [ ] Reconozco y traduzco correctamente los 12 términos de people in the media.
 > - [ ] Distingo _ad_ de _commercial_ y _advertisement_.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Uso correctamente _sponsor_ como sustantivo y como verbo.
 > - [ ] Explico la diferencia entre _merchandise_ y _merchandising_ sin dudar.
 > - [ ] Elijo el término específico correcto (DJ, filmmaker, comedian...) en vez de usar siempre "celebrity".
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo describir una campaña publicitaria completa (brand, logo, slogan, sponsor) en una conversación fluida.
@@ -228,6 +237,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 4: Going Glocal, pp. 34–37.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]

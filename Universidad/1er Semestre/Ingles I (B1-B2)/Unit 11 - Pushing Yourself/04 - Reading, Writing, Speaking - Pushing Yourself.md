@@ -104,6 +104,7 @@ dg-publish: true
 > > 4. **Learning new skills while starting** ✅
 > > 5. **"If I were you, I would take that risk"** / Take risks and push yourself toward your dreams ✅
 >
+
 > [!example] 📚 Reading 2: "The Power of Not Giving Up"
 > 
 > **Pre-reading: Think about these questions**
@@ -165,6 +166,7 @@ dg-publish: true
 > - **feedback** = _____________
 > - **overwhelmed** = _____________
 >
+
 > [!tip] 📚 Reading 3: Short Motivational Quotes - Analysis
 > 
 > **Analyze these quotes using Unit 11 grammar:**
@@ -307,6 +309,7 @@ dg-publish: true
 > - [ ] Used functional language naturally
 > - [ ] Made it personal and authentic
 >
+
 > [!success] ✏️ Writing Task 2: Your Current Goals
 > 
 > **Instructions:**
@@ -371,6 +374,7 @@ dg-publish: true
 > 
 > _The biggest challenge is finding time to practice. Sometimes I wish I had more hours in the day. If I had a native English speaker to practice with regularly, I would improve much faster..._
 >
+
 > [!tip] ✏️ Writing Task 3: Letter of Encouragement
 > 
 > **Scenario:**
@@ -498,6 +502,7 @@ dg-publish: true
 > 
 > ✅ Speak clearly and not too fast ✅ Make eye contact (if presenting to someone) ✅ Use hand gestures for emphasis ✅ Show emotion (passion about your goals!) ✅ Pause after important points
 >
+
 > [!example] 🎤 Speaking Task 2: Role-Play Conversations
 > 
 > **Role-play 1: Encouraging a Friend**
@@ -571,6 +576,7 @@ dg-publish: true
 > - Try to speak for at least 2 minutes each
 > - Use natural pronunciation and intonation
 >
+
 > [!success] 🎤 Speaking Task 3: Discussion Questions
 > 
 > **Discuss these questions with a partner or record yourself answering:**
@@ -884,6 +890,7 @@ dg-publish: true
 > 
 > **If you checked less than 15:** 📚 **Go back and practice more.**
 >
+
 > [!quote] 💭 Reflection Questions
 > 
 > **Take a moment to reflect on your learning:**

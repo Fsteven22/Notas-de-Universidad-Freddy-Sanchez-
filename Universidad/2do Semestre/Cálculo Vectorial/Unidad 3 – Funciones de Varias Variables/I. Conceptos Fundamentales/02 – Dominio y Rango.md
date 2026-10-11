@@ -91,6 +91,7 @@ dg-publish: true
 > - $f(x,y) = e^{x+y}$
 > - $f(x,y) = \sin(x) + \cos(y)$
 >
+
 > [!example] 📝 Ejemplo 2: Interior de un Círculo
 > 
 > **Función:** $f(x,y) = \sqrt{9 - x^2 - y^2}$
@@ -112,6 +113,7 @@ dg-publish: true
 > - $(3,0)$ → $9 + 0 = 9 \leq 9$ ✅ En el dominio (borde)
 > - $(3,3)$ → $9 + 9 = 18 > 9$ ❌ Fuera del dominio
 >
+
 > [!example] 📝 Ejemplo 3: Exterior de un Círculo
 > 
 > **Función:** $f(x,y) = \ln(x^2 + y^2 - 4)$
@@ -128,6 +130,7 @@ dg-publish: true
 > 
 > **Frontera:** Circunferencia $x^2 + y^2 = 4$ (no incluida)
 >
+
 > [!example] 📝 Ejemplo 4: Semiplano
 > 
 > **Función:** $f(x,y) = \sqrt{y - x^2}$
@@ -149,6 +152,7 @@ dg-publish: true
 > - $(2,3)$ → $3 \geq 4$ ❌ Fuera del dominio
 > - $(0,5)$ → $5 \geq 0$ ✅ En el dominio
 >
+
 > [!example] 📝 Ejemplo 5: Anillo
 > 
 > **Función:** $f(x,y) = \sqrt{25 - x^2 - y^2} + \sqrt{x^2 + y^2 - 9}$
@@ -167,6 +171,7 @@ dg-publish: true
 > - Radio exterior: 5 (incluido)
 > - Región: **acotada**
 >
+
 > [!example] 📝 Ejemplo 6: Cuadrantes
 > 
 > **Función:** $f(x,y) = \ln(xy)$
@@ -185,6 +190,7 @@ dg-publish: true
 > - **Primer y tercer cuadrante** (sin los ejes)
 > - Región: **ilimitada** y **disconectada** (dos partes separadas)
 >
+
 > [!example] 📝 Ejemplo 7: Dominio con Recta Excluida
 > 
 > **Función:** $f(x,y) = \frac{x + y}{x - y}$
@@ -199,6 +205,7 @@ dg-publish: true
 > - La recta $y = x$ es una **discontinuidad**
 > - Región: **ilimitada**
 >
+
 > [!example] 📝 Ejemplo 8: Dominio Complejo
 > 
 > **Función:** $f(x,y) = \frac{\sqrt{16 - x^2 - y^2}}{x + y - 2}$
@@ -228,6 +235,7 @@ dg-publish: true
 > 
 > **Representación:** Todo el espacio tridimensional (no se puede visualizar completamente, pero conceptualmente es "todo")
 >
+
 > [!example] 📝 Ejemplo 10: Interior de una Esfera
 > 
 > **Función:** $f(x,y,z) = \sqrt{25 - x^2 - y^2 - z^2}$
@@ -242,6 +250,7 @@ dg-publish: true
 > - Incluye la superficie esférica
 > - Región: **acotada** en $\mathbb{R}^3$
 >
+
 > [!example] 📝 Ejemplo 11: Región entre Planos
 > 
 > **Función:** $f(x,y,z) = \sqrt{z - x - y} \cdot \sqrt{5 - z}$
@@ -259,6 +268,7 @@ dg-publish: true
 > - Arriba del plano inclinado, abajo del plano horizontal
 > - Región: **ilimitada** (se extiende infinitamente en $x$ e $y$)
 >
+
 > [!example] 📝 Ejemplo 12: Cono Truncado
 > 
 > **Función:** $f(x,y,z) = \ln(z^2 - x^2 - y^2)$
@@ -337,6 +347,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:** La función representa un paraboloide que se abre hacia arriba, con vértice en el origen a altura $z = 0$.
 >
+
 > [!example] 📝 Ejemplo 14: Hemisferio
 > 
 > **Función:** $f(x,y) = \sqrt{9 - x^2 - y^2}$
@@ -353,6 +364,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:** Hemisferio superior de radio 3.
 >
+
 > [!example] 📝 Ejemplo 15: Función Periódica
 > 
 > **Función:** $f(x,y) = \sin(x) + \cos(y)$
@@ -369,6 +381,7 @@ dg-publish: true
 > 
 > **Rango:** $$\text{Ran}(f) = [-2, 2]$$
 >
+
 > [!example] 📝 Ejemplo 16: Función Racional
 > 
 > **Función:** $f(x,y) = \frac{xy}{x^2 + y^2}$ para $(x,y) \neq (0,0)$
@@ -381,6 +394,7 @@ dg-publish: true
 > 
 > **Rango:** $$\text{Ran}(f) = \left[-\frac{1}{2}, \frac{1}{2}\right]$$
 >
+
 > [!example] 📝 Ejemplo 17: Función con Rango Discreto
 > 
 > **Función:** $f(x,y) = \lfloor x \rfloor + \lfloor y \rfloor$
@@ -399,6 +413,7 @@ dg-publish: true
 > 
 > **Observación:** El rango es **discreto**, no un intervalo continuo.
 >
+
 > [!example] 📝 Ejemplo 18: Exponencial
 > 
 > **Función:** $f(x,y) = e^{-(x^2+y^2)}$
@@ -466,6 +481,7 @@ dg-publish: true
 > - Radio = 2
 > - Frontera **incluida** (línea sólida)
 >
+
 > [!example] 🖼️ Ejemplo Visual 2: Región Parabólica
 > 
 > **Función:** $f(x,y) = \sqrt{y - x^2}$
@@ -492,6 +508,7 @@ dg-publish: true
 > - La parábola está **incluida** (línea sólida)
 > - Se extiende infinitamente hacia arriba
 >
+
 > [!example] 🖼️ Ejemplo Visual 3: Anillo
 > 
 > **Función:** Anillo entre $r=1$ y $r=3$
@@ -698,6 +715,7 @@ dg-publish: true
 > - $(1,1)$: $1 + 1 = 2 \leq 9$ ✅
 > - $(4,0)$: $16 + 0 = 16 > 9$ ❌
 >
+
 > [!success] 🔑 Respuestas de Ejercicios Intermedios
 > 
 > **3a)** $f(x,y) = 4 - x^2 - y^2$

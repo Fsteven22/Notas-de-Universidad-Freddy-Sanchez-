@@ -310,6 +310,7 @@ flowchart TD
 > 
 > **G**raficar la función y la región **R**econocer si el área es positiva, negativa o mixta **A**plicar el Teorema Fundamental del Cálculo **F**ormular la integral definida $\int_a^b f(x)dx$ **O**btener el resultado y verificar
 >
+
 > [!success] 📋 Desarrollo Detallado del Método GRAFO
 > ### 
 > 

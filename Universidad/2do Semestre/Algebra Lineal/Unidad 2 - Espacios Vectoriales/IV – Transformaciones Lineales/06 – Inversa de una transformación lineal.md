@@ -276,6 +276,7 @@ dg-publish: true
 >
 > **Q.E.D.**
 >
+
 > [!success] Teorema de Composición de Inversas
 > **TEOREMA 2: Inversa de una composición** ⭐
 >
@@ -319,6 +320,7 @@ dg-publish: true
 >
 > $$\boxed{(T_n \circ \cdots \circ T_2 \circ T_1)^{-1} = T_1^{-1} \circ T_2^{-1} \circ \cdots \circ T_n^{-1}}$$
 >
+
 > [!success] Teorema de Representación Matricial
 > **TEOREMA 3: Matriz de la inversa** ⭐⭐
 >
@@ -360,6 +362,7 @@ dg-publish: true
 >
 > $$\boxed{T \text{ invertible} \iff \det([T]) \neq 0}$$
 >
+
 > [!success] Teorema del Grupo Lineal General
 > **TEOREMA 4: GL(V) como grupo** ⭐
 >
@@ -574,6 +577,7 @@ dg-publish: true
 >
 > Por tanto $T$ no es inyectiva ⇒ no invertible ✓
 >
+
 > [!example] Inversas de Composiciones
 > **EJEMPLO 4: Composición de rotaciones**
 >
@@ -654,6 +658,7 @@ dg-publish: true
 >
 > $$= \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = I$$ ✓
 >
+
 > [!example] Aplicaciones Prácticas
 > **EJEMPLO 6: Cambio de coordenadas**
 >

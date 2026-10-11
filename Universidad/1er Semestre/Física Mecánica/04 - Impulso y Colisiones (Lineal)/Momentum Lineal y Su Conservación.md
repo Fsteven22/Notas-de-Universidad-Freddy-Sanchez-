@@ -289,6 +289,7 @@ graph TB
 > 
 > **3. Resolver para velocidad final:** $$v_f = \frac{25,000}{15,000} = 1.67 \text{ m/s}$$
 >
+
 > [!note] 📝 Análisis Energético **Energía cinética inicial:** $$K_i = \frac{1}{2}(10,000)(2.5)^2 = 31,250 \text{ J}$$
 > 
 > **Energía cinética final:** $$K_f = \frac{1}{2}(15,000)(1.67)^2 = 20,917 \text{ J}$$
@@ -317,6 +318,7 @@ graph TB
 > 
 > **3. Despejar velocidad del hombre:** $$v_{1f} = -\frac{m_2v_{2f}}{m_1} = -\frac{0.2 \times 10}{80} = -0.025 \text{ m/s}$$
 >
+
 > [!tip] 💡 Interpretación Física
 > 
 > - **Signo negativo**: Movimiento en dirección opuesta a la pelota
@@ -375,6 +377,7 @@ mindmap
 > 5. 🧮 **Resolver sistema** de ecuaciones
 > 6. ✅ **Verificar resultados** física y matemáticamente
 >
+
 > [!success] ✅ Estrategias Efectivas
 > 
 > - **Diagramas**: Usar esquemas de antes/después para visualizar
@@ -383,6 +386,7 @@ mindmap
 > - **Casos límite**: Comprobar con masas muy diferentes o velocidades extremas
 > - **Simetría**: Aprovechar simetrías del problema cuando existan
 >
+
 > [!warning] ❌ Errores Frecuentes
 > 
 > - Confundir momentum con energía cinética

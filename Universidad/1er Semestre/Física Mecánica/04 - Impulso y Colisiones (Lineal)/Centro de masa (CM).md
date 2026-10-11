@@ -110,6 +110,7 @@ dg-publish: true
 
 > [!warning] 🧮 Problema Tipo **Enunciado**: Tres partículas con masas $m_1=1\text{ kg}$, $m_2=2\text{ kg}$ y $m_3=3\text{ kg}$ se ubican en las posiciones (1,0), (0,1) y (-1,-1) respectivamente.
 >
+
 > [!success] ✅ Solución Paso a Paso
 > 
 > **1. Masa Total**: $$M_{total} = 1 + 2 + 3 = 6\text{ kg}$$

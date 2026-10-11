@@ -1021,6 +1021,7 @@ dg-publish: true
 > 
 > c) ${x, x^2, x^3}$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Resolver sistema homogéneo:**
@@ -1053,6 +1054,7 @@ dg-publish: true
 > 
 > b) $\left\{ \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}, \begin{bmatrix} 9 & 10 \\ 11 & 12 \end{bmatrix} \right\}$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Conjunto independiente maximal:**
@@ -1173,6 +1175,7 @@ dg-publish: true
 > 
 > Solo solución trivial → $$\boxed{\text{INDEPENDIENTES}}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $S = \left\{ \begin{bmatrix} 1 \ 1 \ 1 \end{bmatrix}, \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}, \begin{bmatrix} 2 \ 3 \ 4 \end{bmatrix} \right\}$
@@ -1255,6 +1258,7 @@ dg-publish: true
 > 
 > Solo solución trivial → $$\boxed{\text{INDEPENDIENTES}}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7a)** $S = \left\{ \begin{bmatrix} 1 \ 2 \ 1 \end{bmatrix}, \begin{bmatrix} 2 \ 4 \ 2 \end{bmatrix}, \begin{bmatrix} 1 \ 1 \ 2 \end{bmatrix}, \begin{bmatrix} 3 \ 5 \ 4 \end{bmatrix} \right\}$

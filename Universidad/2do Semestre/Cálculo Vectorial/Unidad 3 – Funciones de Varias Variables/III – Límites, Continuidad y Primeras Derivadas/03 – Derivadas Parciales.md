@@ -62,6 +62,7 @@ dg-publish: true
 > - Es la **pendiente** de la curva que resulta de intersectar la superficie $z = f(x,y)$ con el plano $y = y_0$
 > - Representa la "inclinación" de la superficie en la dirección $x$
 >
+
 > [!example] 🟡 Definición: Derivada Parcial con respecto a $y$
 > 
 > **Definición:** La **derivada parcial** de $f(x,y)$ con respecto a $y$ en el punto $(x_0, y_0)$ es:
@@ -914,6 +915,7 @@ dg-publish: true
 > 
 > c) $f(x,y) = \sin(x)\cos(y)$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Verificar el Teorema de Schwarz:**
@@ -952,6 +954,7 @@ dg-publish: true
 > 
 > b) Para $xyz = 1$, encontrar $\frac{\partial z}{\partial x}$ y $\frac{\partial z}{\partial y}$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **8. Verificar ecuaciones diferenciales parciales:**
@@ -1026,6 +1029,7 @@ dg-publish: true
 > 
 > $$f_{xx} = 2y$$ $$f_{yy} = 2x$$ $$f_{xy} = 2x + 2y = f_{yx}$$ ✓
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = x^3y^2 - 2xy^3$
@@ -1060,6 +1064,7 @@ dg-publish: true
 > 
 > Análogamente: $$\boxed{\frac{\partial z}{\partial y} = -\frac{y}{z}}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **8a)** $u(x,t) = e^{-t}\sin(x)$

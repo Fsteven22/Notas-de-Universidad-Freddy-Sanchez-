@@ -42,6 +42,7 @@ dg-publish: true
 >
 > En el sentido clásico (estilo RAE): **comunicación** es la acción y efecto de hacer partícipe a otro de lo que se tiene — información, ideas, emociones o instrucciones — mediante un código común y un medio que las transporta.
 >
+
 > [!note] 📚 Definiciones de autor en una sola tabla
 >
 > |Autor|Definición|Enfoque|
@@ -59,6 +60,7 @@ dg-publish: true
 >
 > La comunicación efectiva no es un lujo ni una habilidad opcional: es una necesidad transversal a todas las áreas de la vida. En un mundo hiperconectado, donde la información fluye a velocidad vertiginosa, saber comunicar con claridad, respeto y empatía es una ventaja competitiva y una fuente de bienestar.
 >
+
 > [!success] 🌟 Relevancia personal, profesional, académica y social
 >
 > |Ámbito|Área|Beneficio de una buena comunicación|
@@ -81,6 +83,7 @@ dg-publish: true
 > |**Social**|Prevención de conflictos|El diálogo constructivo evita la escalada de tensiones|
 > |**Social**|Cambio social|Los movimientos sociales dependen de comunicar una visión compartida|
 >
+
 > [!warning] ⚠️ Consecuencias de la mala comunicación
 >
 > |Consecuencia|Descripción|
@@ -100,6 +103,7 @@ dg-publish: true
 >
 > La comunicación es un fenómeno complejo que puede clasificarse desde múltiples perspectivas: por canal de expresión, por canal de transmisión, por alcance y dirección, y por función predominante.
 >
+
 > [!note] 🗂️ Tipos por canal de expresión
 >
 > |Tipo|Descripción|Ejemplos|
@@ -108,6 +112,7 @@ dg-publish: true
 > |**No verbal**|Transmite información sin palabras, con el cuerpo o señales|Expresiones faciales, lenguaje corporal, tono de voz, proxemia|
 > |**Paraverbal**|Aspecto auditivo del mensaje verbal que lo modifica o complementa|Entonación, ritmo, pausas, volumen, énfasis|
 >
+
 > [!note] 🗂️ Tipos por canal de transmisión
 >
 > |Tipo|Descripción|Ejemplos|
@@ -116,6 +121,7 @@ dg-publish: true
 > |**Escrita**|Se registra en un soporte físico o digital con permanencia|Libros, artículos, mensajes de texto, publicaciones en redes|
 > |**Gráfica**|Utiliza imágenes, símbolos o signos visuales|Señales de tránsito, emojis, infografías, logotipos|
 >
+
 > [!note] 🗂️ Tipos por alcance y dirección
 >
 > |Tipo|Descripción|Ejemplos|
@@ -126,6 +132,7 @@ dg-publish: true
 > |**Organizacional**|Dentro de una institución, siguiendo estructuras jerárquicas|Circulares internos, boletines corporativos, reuniones de dirección|
 > |**Masiva**|Dirigida a un público amplio e indefinido por medios de comunicación|Noticieros de TV, periódicos, redes sociales, campañas publicitarias|
 >
+
 > [!note] 🗂️ Tipos por función predominante
 >
 > |Tipo|Función|Ejemplo|
@@ -144,6 +151,7 @@ dg-publish: true
 >
 > Las **barreras de la comunicación** son todos aquellos factores que impiden, distorsionan o dificultan la correcta transmisión y recepción de un mensaje. Pueden originarse en el emisor, en el receptor, en el canal o en el contexto. Identificarlas es el primer paso para superarlas.
 >
+
 > [!warning] 🚧 Tipos de barreras y cómo superarlas
 >
 > |Barrera|Tipo|Ejemplo|Estrategia de superación|
@@ -165,6 +173,7 @@ dg-publish: true
 >
 > Una comunicación es efectiva cuando el mensaje recibido coincide con el mensaje enviado, es decir, cuando el receptor comprende exactamente lo que el emisor quiso transmitir. Esto depende no solo del contenido, sino del tono, el canal, el contexto y la actitud de ambos participantes.
 >
+
 > [!success] ✨ Atributos clave
 >
 > |Característica|Definición|Ejemplo práctico|
@@ -178,6 +187,7 @@ dg-publish: true
 > |**Respeto**|Se evita el uso ofensivo, discriminatorio o irrespetuoso|Agradecer, pedir con cortesía, escuchar sin interrumpir|
 > |**Adaptabilidad**|Se ajusta el mensaje al canal, la audiencia y el contexto|Explicar un tema técnico distinto para un experto y un principiante|
 >
+
 > [!tip] ✅ Estrategias para comunicarte mejor
 >
 > 1. **Escucha activamente:** atiende al contenido, las emociones y el lenguaje corporal del otro.
@@ -191,6 +201,7 @@ dg-publish: true
 > 9. **Estructura tus mensajes:** idea principal primero, luego detalles y acción esperada.
 > 10. **Usa ejemplos concretos:** un caso real facilita la comprensión inmediata.
 >
+
 > [!tip] 📱 Comunicación efectiva en entornos digitales
 >
 > |Consejo|Descripción|
@@ -221,6 +232,7 @@ dg-publish: true
 >     H[Ruido] --> D
 > ```
 >
+
 > [!note] 📐 Modelos clásicos: Shannon-Weaver y Schramm
 >
 > Claude Shannon y Warren Weaver (1949) propusieron un modelo lineal de transmisión de información, concebido para telecomunicaciones y luego adaptado al ámbito humano. Es la base del circuito comunicacional.
@@ -245,6 +257,7 @@ dg-publish: true
 >
 > Los ocho elementos son indispensables: si falta uno o falla, la comunicación se degrada o se interrumpe. La tabla siguiente condensa lo esencial de cada uno; los detalles por tipo se desarrollan en las sub-tablas que siguen.
 >
+
 > [!success] 📊 Los ocho elementos del proceso comunicacional
 >
 > |Elemento|Definición breve|Ejemplo concreto|
@@ -258,6 +271,7 @@ dg-publish: true
 > |**7. Ruido**|Interferencia que distorsiona el mensaje|El ruido del aire acondicionado|
 > |**8. Retroalimentación**|Respuesta del receptor al emisor|El estudiante pregunta si no entendió|
 >
+
 > [!note] 1️⃣ Emisor — Quién comunica
 >
 > El **emisor** es quien inicia el proceso al elaborar y transmitir un mensaje. Puede ser una persona, un grupo, una organización o incluso una máquina (por ejemplo, un sistema de notificaciones automáticas).
@@ -269,6 +283,7 @@ dg-publish: true
 > |**Errores comunes**|Suponer que el receptor sabe lo mismo, usar código inadecuado, no planificar el mensaje|
 > |**Ejemplo**|Un médico que explica un diagnóstico: su vocabulario, empatía y tono determinan la calidad de la transmisión|
 >
+
 > [!note] 2️⃣ Mensaje — Qué se comunica
 >
 > El **mensaje** es el conjunto de información, ideas, emociones o instrucciones que el emisor desea transmitir. Tiene dos dimensiones: **explícito** (contenido literal) e **implícito** (subtexto, connotaciones, emociones no dichas).
@@ -281,6 +296,7 @@ dg-publish: true
 > |**Paraverbal**|Tono de voz, ritmo, énfasis|
 > |**Visual**|Infografías, señales, mapas semánticos|
 >
+
 > [!note] 3️⃣ Código — Cómo se codifica
 >
 > El **código** es el sistema de signos y reglas para transformar la idea en mensaje: idioma, semántica, sintaxis y códigos no verbales. Sin código compartido, la decodificación es imposible.
@@ -294,6 +310,7 @@ dg-publish: true
 > |**Icónico**|Símbolos gráficos, logotipos, emojis|
 > |**Numérico**|Código binario, ecuaciones matemáticas|
 >
+
 > [!note] 4️⃣ Canal — Por dónde viaja
 >
 > El **canal** es el medio físico o virtual por el que viaja el mensaje. Su elección afecta la fidelidad, la velocidad y el alcance.
@@ -306,6 +323,7 @@ dg-publish: true
 > |**Audiovisual (video, TV)**|Combina imagen y sonido|Requiere equipamiento, no siempre interactivo|
 > |**No verbal (cuerpo)**|Espontáneo, complementa lo verbal|Ambiguo, puede contradecir lo dicho|
 >
+
 > [!note] 5️⃣ Receptor — Quién recibe
 >
 > El **receptor** obtiene el mensaje, lo decodifica y le asigna significado. La decodificación depende de sus conocimientos, cultura, estado emocional y atención.
@@ -318,6 +336,7 @@ dg-publish: true
 > |**Expectativas**|Lo que espera escuchar puede filtrar lo que realmente se dice|
 > |**Código compartido**|Si no comparten idioma, la decodificación falla|
 >
+
 > [!note] 6️⃣ Contexto — Dónde ocurre
 >
 > El **contexto** es el conjunto de circunstancias que enmarcan la comunicación: momento, lugar, relación entre participantes, normas sociales y cultura. Determina qué es apropiado decir, cómo decirlo y cómo interpretarlo.
@@ -330,6 +349,7 @@ dg-publish: true
 > |**Cultural**|Gestos normales en una cultura y ofensivos en otra|
 > |**Histórico y político**|Un mensaje sobre derechos humanos en un país en dictadura|
 >
+
 > [!note] 7️⃣ Ruido — Interferencias
 >
 > El **ruido** es cualquier factor que interfiere con la transmisión o recepción, provocando que el receptor obtenga una versión distorsionada o incompleta del mensaje.
@@ -343,6 +363,7 @@ dg-publish: true
 > |**Simbólico**|Significados culturales opuestos|Un gesto positivo en una cultura y negativo en otra|
 > |**Tecnológico**|Fallas en el canal|Señal cortada, correo que llega a spam, pantalla congelada|
 >
+
 > [!note] 8️⃣ Retroalimentación — Respuesta
 >
 > La **retroalimentación** (feedback) es la respuesta del receptor al emisor. Permite verificar si el mensaje fue comprendido, corregir errores y ajustar la comunicación en tiempo real. Sin ella, la comunicación es unidireccional e incompleta.
@@ -368,6 +389,7 @@ dg-publish: true
 >
 > Comprender estas funciones permite el **análisis crítico** de textos, **mejorar la persuasión** en discursos y **detectar la intención real** detrás de cualquier mensaje. El lingüista ruso **Roman Jakobson** formuló en 1960 el modelo más influyente: **seis funciones** vinculadas a los seis elementos del proceso comunicativo.
 >
+
 > [!note] 🧩 El circuito de Jakobson
 >
 > Todo acto comunicativo involucra seis elementos y cada uno activa una función dominante:
@@ -397,6 +419,7 @@ dg-publish: true
 >
 > **¿Cuándo se usa?** En textos científicos, noticias informativas, manuales, reportes de datos y definiciones. Predomina en el lenguaje **denotativo** y la comunicación **expositiva**.
 >
+
 > [!note] 😊 2. Función Emotiva o Expresiva
 >
 > **Elemento dominante:** Emisor.
@@ -407,6 +430,7 @@ dg-publish: true
 >
 > **¿Cuándo se usa?** En expresiones espontáneas, exclamaciones, interjecciones, discursos personales, diarios íntimos y poesía lírica. Predomina en la comunicación **expresiva**.
 >
+
 > [!note] 🎯 3. Función Conativa o Apelativa
 >
 > **Elemento dominante:** Receptor.
@@ -417,6 +441,7 @@ dg-publish: true
 >
 > **¿Cuándo se usa?** En órdenes, mandatos, publicidad, discursos políticos, textos persuasivos y llamados a la acción. Predomina en la comunicación **directiva** e **imperativa**.
 >
+
 > [!note] 📡 4. Función Fática
 >
 > **Elemento dominante:** Canal y contacto.
@@ -427,6 +452,7 @@ dg-publish: true
 >
 > **¿Cuándo se usa?** En saludos ("Hola", "Buenos días"), fórmulas de cortesía ("¿Cómo estás?"), comprobaciones técnicas ("¿Se escucha el micrófono?"). Predomina en la comunicación **interpersonal** e **informal**.
 >
+
 > [!note] 🔄 5. Función Metalingüística
 >
 > **Elemento dominante:** Código.
@@ -437,6 +463,7 @@ dg-publish: true
 >
 > **¿Cuándo se usa?** En definiciones, explicaciones gramaticales, glosarios, correcciones y traducción. Predomina en la enseñanza del idioma y la lingüística.
 >
+
 > [!note] ✨ 6. Función Poética
 >
 > **Elemento dominante:** Mensaje.
@@ -469,6 +496,7 @@ dg-publish: true
 >
 > > 📌 La función **fática** y la **metalingüística** rara vez son dominantes en textos formales, pero son **imprescindibles** para que la comunicación funcione en la vida cotidiana.
 >
+
 > [!note] 📊 Comparación de las 6 funciones del lenguaje
 >
 > |Función|Elemento dominante|Propósito|Ejemplo|Registro|Género y texto típico|
@@ -492,6 +520,7 @@ dg-publish: true
 >
 > Los ejercicios a continuación están diseñados para reforzar los tres bloques de esta nota. Cada uno es colapsable: haz clic en el título para expandirlo. Intenta resolverlos **antes** de ver las respuestas. Los ejercicios 02.1 a 02.4 pertenecen a esta nota integrada por especificación; los de refuerzo condensan lo mejor de las notas originales 01 y 03.
 >
+
 > [!example]- ✏️ Ejercicio 02.1 — Identificar elementos del proceso comunicacional
 >
 > **Instrucción:** Lee cada situación y sitúa cada elemento del proceso comunicacional.
@@ -539,6 +568,7 @@ dg-publish: true
 > |Ruido|Algunos estudiantes no revisan su correo|
 > |Retroalimentación|Los estudiantes envían dudas por el foro|
 >
+
 > [!example]- ✏️ Ejercicio 02.2 — Dibujar diagrama de flujo comunicacional
 >
 > **Instrucción:** Para cada escenario, dibuja un diagrama de flujo que represente el proceso comunicacional completo, señalando cada elemento.
@@ -567,6 +597,7 @@ dg-publish: true
 >
 > **Nota:** En este caso, el jurado también emite retroalimentación que influye en el estudiante, quien a su vez puede responder con aclaraciones.
 >
+
 > [!example]- ✏️ Ejercicio 02.3 — Clasificar tipos de ruido
 >
 > **Instrucción:** Clasifica cada interferencia en el tipo de ruido correspondiente y propón una estrategia para minimizarla.
@@ -580,6 +611,7 @@ dg-publish: true
 > |Un mensaje de texto interpretado como irónico cuando era sincero|Simbólico|Aclarar la intención con una frase explícita o un emoji que desambigue|
 > |Una presentación en línea que se congela por mala conexión|Tecnológico|Tener conexión alternativa, descargar materiales previamente|
 >
+
 > [!example]- ✏️ Ejercicio 02.4 — Evaluar la efectividad de la retroalimentación
 >
 > **Instrucción:** Analiza la retroalimentación en cada escenario: ¿Es efectiva? ¿Por qué? Propón una mejora.
@@ -609,6 +641,7 @@ dg-publish: true
 > |¿Es efectiva la retroalimentación?|No, fue engañosa (falsa conformidad). El paciente no se sintió cómodo mostrando su confusión.|
 > |Propuesta de mejora|Crear mayor confianza, resumir las indicaciones en voz alta y pedir que el paciente las repita con sus palabras (técnica de teach-back).|
 >
+
 > [!example]- ✏️ Ejercicio Refuerzo A — Tipos, barreras y claridad
 >
 > **Parte 1 — Clasificar tipos de comunicación:**
@@ -651,6 +684,7 @@ dg-publish: true
 > |Empatía|Sí|Ofrece alternativa si hay impedimento|
 > |Retroalimentación|Sí|Pregunta si hay dudas|
 >
+
 > [!example]- ✏️ Ejercicio Refuerzo B — Funciones del lenguaje
 >
 > **Parte 1 — Identificar la función dominante:**
@@ -688,6 +722,7 @@ dg-publish: true
 > |**Metalingüística**|Secundaria|Explica "democracia" como poder del pueblo.|
 > |**Poética**|Secundaria|Exclamaciones y ritmo oratorio embellecen el mensaje.|
 >
+
 > [!example]- ✏️ Ejercicio Refuerzo C — Proceso comunicativo en el aula
 >
 > Analiza la siguiente situación: *Una profesora explica un tema en clase, un estudiante levanta la mano para hacer una pregunta, la profesora responde y él asiente con la cabeza.*
@@ -731,6 +766,7 @@ dg-publish: true
 > - [ ] Reconozco las seis funciones de Jakobson y las asocio a su elemento del circuito.
 > - [ ] Distingo un mensaje explícito de uno implícito y un ruido físico de uno semántico.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Clasifico tipos de comunicación, códigos y contextos en casos reales con justificación.
@@ -738,6 +774,7 @@ dg-publish: true
 > - [ ] Evalúo la influencia del contexto y del ruido en un acto comunicativo concreto.
 > - [ ] Selecciono el canal más adecuado según el mensaje, el público y el propósito (informar, persuadir, verificar contacto).
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Diseño un plan comunicativo que minimice el ruido y maximice la retroalimentación efectiva.
@@ -798,6 +835,7 @@ mindmap
 >
 > [6] R. Jakobson, "Linguistics and Poetics," in _Language in Literature_, K. Pomorska y S. Rudy, Eds. Cambridge, MA, USA: Harvard University Press, 1987, pp. 62-94.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1]] — presentación general de la Unidad 1 y su estructura.

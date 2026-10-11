@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La notación científica es el lenguaje universal de las magnitudes: permite expresar desde el radio de un átomo hasta la distancia a las galaxias con igual elegancia." 🔬
 >
+
 > [!info] La notación científica es un sistema de escritura numérica fundamental en ciencias que permite expresar números muy grandes o muy pequeños de manera compacta y precisa. Esta notación facilita los cálculos, comparaciones y la comunicación de resultados experimentales, siendo especialmente crucial en física, química, astronomía y todas las disciplinas cuantitativas.
 
 ## 🔧 Conceptos Fundamentales
@@ -53,6 +54,7 @@ dg-publish: true
 > - Número entre 1 y 10
 > - 10^0 = 1, por lo tanto N = a × 1 = a
 >
+
 > [!tip] **Conversión a Notación Científica** 🎯
 > 
 > ### Proceso para Números Grandes (> 10):
@@ -105,6 +107,7 @@ dg-publish: true
 > 2.3 × 0.00001 = 0.000023 ✓
 > ```
 >
+
 > [!success] 🔗 Algoritmo de Conversión
 > 
 > ```mermaid
@@ -176,6 +179,7 @@ dg-publish: true
 > Por tanto: 8.5 × 10^-1 × 10^3 = 8.5 × 10^2
 > ```
 >
+
 > [!tip] **División en Notación Científica** ➗
 > 
 > ### Regla General:
@@ -214,6 +218,7 @@ dg-publish: true
 > Ajustar mantisa: 5.0 × 10^1
 > ```
 >
+
 > [!note] **Suma y Resta** ➕➖
 > 
 > ### Requisito Fundamental:
@@ -312,6 +317,7 @@ dg-publish: true
 > |**50000 (1 sig)**|50000|5 × 10^4|
 > |**50000 (2 sig)**|50000|5.0 × 10^4|
 >
+
 > [!warning] **Operaciones con Cifras Significativas** ⚡
 > 
 > ### Multiplicación y División:
@@ -418,6 +424,7 @@ dg-publish: true
 > Edad del universo: ~4.3 × 10^17 s
 > ```
 >
+
 > [!note] **Cálculos Típicos en Física** ⚡
 > 
 > ### Ejemplo 1: Energía Cinética Relativista
@@ -576,6 +583,7 @@ dg-publish: true
 >     - ❌ Ingresar 2.3 × 10 × 4 en lugar de 2.3 [EE] 4
 >     - ✅ Usar la función EXP o EE correctamente
 >
+
 > [!warning] **Precauciones en Cálculos** ⚠️
 > 
 > ### Propagación de Errores:
@@ -680,6 +688,7 @@ dg-publish: true
 >    (8 posiciones a la derecha desde 9.1)
 > ```
 >
+
 > [!example] **Problema Tipo 2: Operaciones Aritméticas** ⚡
 > 
 > ### Enunciado:
@@ -731,6 +740,7 @@ dg-publish: true
 > Precisión limitada por 10^5 → 8.2 × 10^6
 > ```
 >
+
 > [!example] **Problema Tipo 3: Aplicación Física Compleja** 🔬
 > 
 > ### Enunciado:
@@ -783,6 +793,7 @@ dg-publish: true
 > 
 > **Interpretación**: El Sol irradia aproximadamente 3.84 × 10^26 watts, equivalente a quemar 4.3 × 10^9 toneladas de carbón por segundo.
 >
+
 > [!example] **Problema Tipo 4: Estimación de Órdenes de Magnitud** 🌍
 > 
 > ### Enunciado:
@@ -867,6 +878,7 @@ dg-publish: true
 > 
 > **Interpretación**: Un agujero negro de masa solar tiene una temperatura increíblemente baja, ¡mucho más fría que el espacio interestelar!
 >
+
 > [!example] **Desafío 2: Análisis de Precisión Experimental** ⚗️
 > 
 > ### Enunciado:

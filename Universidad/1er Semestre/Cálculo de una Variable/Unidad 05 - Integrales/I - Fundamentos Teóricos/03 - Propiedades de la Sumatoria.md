@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] *"La sumatoria es el lenguaje matemático que nos permite expresar la acumulación y totalización de manera elegante y precisa. Sus propiedades no son solo reglas algebraicas, sino herramientas poderosas que simplifican cálculos complejos y revelan patrones ocultos en secuencias y series."*
 >
+
 > [!info]+ Definición y Notación Fundamental 📏
 > La **sumatoria** es una operación matemática que representa la suma de una secuencia de términos. Se denota con la letra griega sigma (Σ) y tiene la forma general:
 > 
@@ -18,6 +19,7 @@ dg-publish: true
 > - **b** = Límite superior  
 > - **f(i)** = Término general de la suma
 >
+
 > [!note] Componentes de la Notación Sigma 📊
 > ### Elementos Básicos
 > ```mermaid
@@ -40,6 +42,7 @@ dg-publish: true
 > - **Un solo término**: Si a = b, entonces Σ = f(a)
 > - **Índice negativo**: Permitido, ej: Σ(i=-2 to 3) i
 >
+
 > [!tip] Propiedades Fundamentales ⚖️
 > ### Propiedad 1: Linealidad (Factor Constante)
 > **$$\sum_{i=a}^{b} c \cdot f(i) = c \sum_{i=a}^{b} f(i)$$**
@@ -63,6 +66,7 @@ dg-publish: true
 > 
 > **Ejemplo:** $\sum_{i=1}^{5} 7 = 7 \cdot (5-1+1) = 7 \cdot 5 = 35$
 >
+
 > [!example] Propiedades Avanzadas y Manipulaciones 🧮
 > ### Propiedad 5: Separación de Sumatorias
 > **$$\sum_{i=a}^{c} f(i) = \sum_{i=a}^{b} f(i) + \sum_{i=b+1}^{c} f(i)$$** (donde a ≤ b < c)
@@ -106,6 +110,7 @@ dg-publish: true
 > Fórmula: 4(4+1)(2·4+1)/6 = 4·5·9/6 = 30 ✓
 > ```
 >
+
 > [!success] Aplicaciones en Cálculo 🎯
 > ### En Límites y Definición de Integral
 > ```mermaid
@@ -128,6 +133,7 @@ dg-publish: true
 > - **Series geométricas**: Convergencia y divergencia
 > - **Series de potencias**: Desarrollo de funciones
 >
+
 > [!warning] Errores Comunes y Precauciones ⚠️
 > ### Errores Frecuentes
 > - **🔄 Confundir límites**: Verificar si incluyen o excluyen los extremos
@@ -141,6 +147,7 @@ dg-publish: true
 > - **⚖️ Consistencia**: Verificar con casos pequeños
 > - **🧮 Cálculo directo**: Comprobar fórmulas con ejemplos simples
 >
+
 > [!summary]+ Resumen de Propiedades Clave 📋
 > ### Propiedades Esenciales
 > ```
@@ -171,6 +178,7 @@ dg-publish: true
 > **M** - Memorizar las fórmulas básicas (1, i², i³)
 > **A** - Aplicar verificación con casos simples
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 1. **📏 Notación estándar**: Σ con límites e índice claramente definidos
 > 2. **⚖️ Linealidad**: Constantes salen, sumas se distribuyen
@@ -196,6 +204,7 @@ dg-publish: true
 > - [[01 - Funciones]] (concepto de función)
 > - Álgebra básica
 >
+
 > [!tip] Continuación del Tema
 > - [[01 - Límites al Infinito y Sucesiones]]
 > - [[01 - Integral de Riemann]]

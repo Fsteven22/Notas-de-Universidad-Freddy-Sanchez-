@@ -102,6 +102,7 @@ graph LR
 > |**natural + material**|natural stone, natural wood|
 > |**recycled + material**|recycled plastic, recycled metal|
 >
+
 > [!success] 🎨 Características de Materiales (Adjectives)
 > 
 > **Propiedades físicas:**
@@ -215,6 +216,7 @@ graph LR
 > ✅ Factories produce millions of units.
 > ```
 >
+
 > [!tip] 🚚 Verbos de Distribución
 > 
 > **Verbos del proceso de distribución:**

@@ -264,6 +264,7 @@ mindmap
 > - [ ] Armo una matriz de decisión con números.
 > - [ ] Redacto un acta mínima (qué/quién/cuándo).
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Facilito una discrepancia con el protocolo Dato→Impacto→Opciones→Voto.

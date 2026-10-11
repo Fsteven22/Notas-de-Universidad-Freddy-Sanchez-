@@ -107,7 +107,7 @@ dg-publish: true
 > $$g \circ f(x) = x, \quad \forall x \in X \qquad \text{y} \qquad f \circ g(y) = y, \quad \forall y \in Y$$
 > 
 > Si f es invertible, entonces g es **única**. La llamaremos la **inversa** de f, denotada f⁻¹.
-
+>
 > [!abstract] 📐 Teorema 1 — Invertible ⟺ Biyectiva
 > 
 > Sea f : X → Y una función. Entonces:

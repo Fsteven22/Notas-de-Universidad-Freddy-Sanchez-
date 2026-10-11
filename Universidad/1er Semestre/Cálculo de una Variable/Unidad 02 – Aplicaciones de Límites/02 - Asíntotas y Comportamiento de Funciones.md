@@ -44,6 +44,7 @@ dg-publish: true
 > |**Parcial**|$L$|$\pm\infty$|Una: $y = L$ (solo un lado) ⚡|
 > |**Explosivo**|$\pm\infty$|$\pm\infty$|Ninguna 💥|
 >
+
 > [!warning] 🔍 Técnicas para Encontrar Asíntotas Horizontales
 > 
 > ### Análisis según el tipo de función
@@ -64,6 +65,7 @@ dg-publish: true
 > - $\lim_{x \to \pm\infty} \frac{\sin x}{x} = 0$ → $y = 0$
 > - $\sin x$, $\cos x$ no tienen asíntotas (oscilan)
 >
+
 > [!tip] 🎯 Ejemplos Paso a Paso
 > 
 > ### Casos representativos
@@ -113,6 +115,7 @@ dg-publish: true
 > - Tangentes en múltiplos impares de $\frac{\pi}{2}$
 > - Raíces con exponentes negativos
 >
+
 > [!info] 🕵️ Algoritmo de Búsqueda
 > 
 > ### Pasos sistemáticos para encontrar asíntotas verticales
@@ -131,6 +134,7 @@ dg-publish: true
 > - **Funciones definidas por partes:** Verificar cada rama
 > - **Composiciones:** Analizar función interna y externa por separado
 >
+
 > [!tip] 🎪 Ejemplos Detallados
 > 
 > ### Análisis completo de casos típicos
@@ -178,6 +182,7 @@ dg-publish: true
 > 2. Si no existe asíntota horizontal → Buscar oblicua
 > 3. Una función puede tener máximo una asíntota oblicua por cada dirección ($+\infty$ y $-\infty$)
 >
+
 > [!warning] 🎯 Proceso de Cálculo
 > 
 > ### Algoritmo paso a paso
@@ -196,6 +201,7 @@ dg-publish: true
 > - Si $m = \pm\infty$: No hay asíntota oblicua
 > - Si $b = \pm\infty$: No hay asíntota oblicua
 >
+
 > [!tip] 🔬 Ejemplos Completos
 > 
 > ### Análisis detallado de funciones

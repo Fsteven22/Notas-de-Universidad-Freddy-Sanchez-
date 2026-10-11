@@ -16,6 +16,7 @@ dg-publish: true
 
 > [!note] 📋 Casos normativos — Usos válidos del gerundio
 >
+
 > [!success]- ✅ Los 3 usos correctos con ejemplos
 >
 > | Uso | Qué expresa | Ejemplo |
@@ -30,6 +31,7 @@ dg-publish: true
 >
 > El gerundio se usa incorrectamente cuando expresa una relación temporal o gramatical que no le corresponde:
 >
+
 > [!warning] ⚠️ Gerundio de posterioridad o consecuencia — INCORRECTO
 >
 > Ocurre cuando el gerundio describe una acción que sucede **después** de la acción principal, como si fuera su consecuencia — el gerundio no puede expresar posterioridad.
@@ -39,6 +41,7 @@ dg-publish: true
 > | *"El puente colapsó, muriendo 5 personas."* | *"El puente colapsó y murieron 5 personas."* / *"El puente colapsó, lo que causó la muerte de 5 personas."* |
 > | *"Aprobó el examen, graduándose ese mismo año."* | *"Aprobó el examen y se graduó ese mismo año."* |
 >
+
 > [!warning] ⚠️ Gerundio especificativo o adjetival — INCORRECTO
 >
 > Ocurre cuando el gerundio se usa para modificar un sustantivo como si fuera un adjetivo, delimitando o especificando cuál de varios elementos se menciona — función que en español corresponde a una oración de relativo, no a un gerundio.
@@ -74,6 +77,7 @@ dg-publish: true
 > 5. I, posterioridad: aterrizar ocurre tres horas después de despegar; corrección: *El avión despegó y aterrizó tres horas después en Lima.*
 > 6. C, simultaneidad: responder y mirar los apuntes son simultáneos.
 >
+
 > [!example]- Ejercicio 05.2 — El error del gerundio de posterioridad
 >
 > **Instrucciones:** detecta el gerundio de posterioridad o consecuencia en cada oración y corrígelo con *y* o con una subordinada explícita.
@@ -92,6 +96,7 @@ dg-publish: true
 > 4. *El precio del cobre cayó, lo que afectó las exportaciones del país.*
 > 5. Porque el gerundio tiene valor adverbial de modo, tiempo simultáneo o anterioridad inmediata, no de acción posterior o consecuencia; esa relación exige conjunción o subordinada causal/consecutiva.
 >
+
 > [!example]- Ejercicio 05.3 — Reescribe: gerundio especificativo y casos mixtos
 >
 > **Instrucciones:** corrige cada oración. Aplica la prueba de *que + verbo conjugado* donde corresponda.
@@ -120,30 +125,35 @@ dg-publish: true
 > 2. Señala si este gerundio es correcto o incorrecto: *"El terremoto destruyó el edificio, dejando a cientos sin hogar."*
 > 3. Convierte a la forma correcta: *"Publicaron un decreto prohibiendo la exportación."*
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Simultaneidad (salir y correr ocurren al mismo tiempo).
 > 2. Incorrecto — es gerundio de consecuencia/posterioridad; corrección: *"El terremoto destruyó el edificio y dejó a cientos sin hogar."*
 > 3. *"Publicaron un decreto que prohíbe la exportación."*
 >
+
 > [!question] 🟡 Ejercicios de refuerzo — Nivel Intermedio
 >
 > 1. Redacta una oración usando correctamente el gerundio de anterioridad inmediata.
 > 2. Redacta una oración con un verbo de percepción (*ver*, *oír*) seguido de gerundio.
 > 3. Explica por qué *"Compró un carro, chocándolo esa misma semana"* es incorrecto y qué regla viola.
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. *"Habiendo terminado el reporte, lo envió al equipo."*
 > 2. *"Escuché a los vecinos discutiendo sobre el proyecto."*
 > 3. Es un gerundio de posterioridad/consecuencia: el choque ocurre después de la compra, no simultáneamente, así que no puede expresarse con gerundio.
 >
+
 > [!question] 🔴 Ejercicios de refuerzo — Nivel Avanzado
 >
 > 1. Revisa un texto propio (informe, ensayo) y busca al menos un gerundio mal usado (de posterioridad o especificativo); corrígelo.
 > 2. Explica por qué el gerundio de posterioridad es tan frecuente en la redacción de noticias, y qué riesgo tiene para la precisión informativa.
 > 3. Redacta un párrafo breve usando los 3 usos normativos del gerundio correctamente, sin caer en ninguna de las dos incorrecciones.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas. Para el punto 2: en las noticias es común narrar hechos consecutivos con gerundio para dar sensación de inmediatez ("el auto se volcó, muriendo el conductor"), pero esto difumina la relación causal real entre los eventos y es normativamente incorrecto — debe preferirse una conjunción (*y*) o una oración subordinada causal/consecutiva explícita.
@@ -158,12 +168,14 @@ dg-publish: true
 > - [ ] Reconozco los 3 usos normativos del gerundio
 > - [ ] Detecto un gerundio de posterioridad evidente
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Redacto oraciones correctas con cada uno de los 3 usos normativos
 > - [ ] Corrijo gerundios de posterioridad sustituyéndolos por conjunciones u oraciones subordinadas
 > - [ ] Corrijo gerundios especificativos sustituyéndolos por "que + verbo conjugado"
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Reviso textos propios y detecto incorrecciones de gerundio sin ayuda
@@ -204,6 +216,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 4 — Resumen y síntesis, Nota 04: "Usos correctos e incorrectos del gerundio".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4]] — mapa general de la unidad.

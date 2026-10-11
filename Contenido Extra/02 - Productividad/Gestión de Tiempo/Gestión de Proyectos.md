@@ -6,6 +6,7 @@
 
 > [!info] **Definición** La gestión de proyectos es la aplicación de conocimientos, habilidades, herramientas y técnicas para ejecutar proyectos de manera efectiva y eficiente. Es el arte de dirigir y coordinar recursos humanos y materiales durante la vida de un proyecto, utilizando técnicas modernas de gestión para lograr objetivos predefinidos de alcance, costo, tiempo, calidad y satisfacción de los participantes.
 >
+
 > [!tip] **Características de un Proyecto** ✨
 > 
 > - **Temporal**: Tiene un inicio y fin definidos
@@ -61,6 +62,7 @@ graph TD
 > - Benchmarking
 > - Entrevistas con stakeholders
 >
+
 > [!tip] **Fase 2: Planificación** 📋
 > 
 > ### Componentes del Plan:
@@ -102,6 +104,7 @@ graph TD
 >     style F fill:#fff3e0
 > ```
 >
+
 > [!info] **Fase 3: Ejecución** ⚡
 > 
 > ### Actividades Principales:
@@ -120,6 +123,7 @@ graph TD
 > - Gestión de las comunicaciones
 > - Gestión del involucramiento de stakeholders
 >
+
 > [!warning] **Fase 4: Monitoreo y Control** 📊
 > 
 > ### Indicadores Clave de Rendimiento (KPIs):
@@ -159,6 +163,7 @@ graph TD
 >     style G fill:#ff9999
 > ```
 >
+
 > [!tip] **Fase 5: Cierre** 🎯
 > 
 > ### Actividades de Cierre:
@@ -200,6 +205,7 @@ graph TD
 > - Entrega tardía de valor
 > - Riesgo alto si los requisitos cambian
 >
+
 > [!tip] **Metodologías Ágiles** 🔄
 > 
 > ### Principios Fundamentales:
@@ -235,6 +241,7 @@ graph TD
 > - **Scrum Master**: Facilita el proceso
 > - **Development Team**: Construye el producto
 >
+
 > [!warning] **Metodologías Híbridas** ⚖️
 > 
 > ### Cuándo Usar Cada Enfoque:
@@ -448,6 +455,7 @@ graph TD
 > - El liderazgo dual (administrativo-técnico) puede ser muy efectivo
 > - Los proyectos complejos requieren enfoques múltiples y paralelos
 >
+
 > [!warning] **Caso de Fracaso: Berlin Brandenburg Airport** ✈️
 > 
 > **Factores del Fracaso:**
@@ -482,6 +490,7 @@ graph TD
 > - **Payback Period**: Tiempo de recuperación
 > - **Business Value Delivered**: Valor entregado al negocio
 >
+
 > [!info] **KPIs Cualitativos** 🎯
 > 
 > ### **Satisfacción de Stakeholders:**

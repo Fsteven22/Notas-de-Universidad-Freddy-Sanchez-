@@ -57,6 +57,7 @@ dg-publish: true
 >
 > Las resistencias disipan calor, los capacitores almacenan energía en su campo eléctrico, y los inductores en campos magnéticos. Se conectan en **serie** o en **paralelo**.
 >
+
 > [!note] 🔵 Ley de Ohm — La relación fundamental
 >
 > $$\boxed{V = R \cdot I}$$
@@ -72,24 +73,28 @@ dg-publish: true
 > |**Elemento lineal**|Cumple $V = IR$ para todo rango|
 > |**Elemento no lineal**|No cumple $V = IR$ (diodos, transistores)|
 >
+
 > [!note] 🟢 KCL — Ley de Corrientes de Kirchhoff
 >
 > $$\boxed{\sum_{k=1}^{n} I_k = 0}$$
 >
 > La suma algebraica de todas las corrientes que entran y salen de un nodo es cero. Corriente que entra = positiva, que sale = negativa.
 >
+
 > [!note] 🟡 KVL — Ley de Voltajes de Kirchhoff
 >
 > $$\boxed{\sum_{k=1}^{n} V_k = 0}$$
 >
 > La suma algebraica de todos los voltajes a lo largo de una malla cerrada es cero.
 >
+
 > [!note] 🔢 Divisor de Tensión
 >
 > Para resistencias en serie, el voltaje en $R_1$:
 >
 > $$V_{R1} = V_{total} \cdot \frac{R_1}{R_1 + R_2}$$
 >
+
 > [!note] 🔢 Divisor de Corriente
 >
 > Para resistencias en paralelo, la corriente por $R_1$:
@@ -107,6 +112,7 @@ dg-publish: true
 > 3. Energizar (presionar OUTPUT) y medir corriente con el amperímetro.
 > 4. Cambiar resistencia a 10 KΩ, 5 KΩ y 1 KΩ. Repetir medición.
 >
+
 > [!note] 📊 Tabla 1 — Resultados del Procedimiento 1
 >
 > |Resistencia|Amperaje (mA)|Teórico $I = V/R$ (mA)|Error %|
@@ -116,6 +122,7 @@ dg-publish: true
 > |5 KΩ| | | |
 > |1 KΩ| | | |
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Cuál es la relación que tiene la corriente con los cambios de resistencia?
@@ -133,6 +140,7 @@ dg-publish: true
 > 4. Cambiar fuente a 15 V, 1 A y repetir mediciones.
 > 5. Contrastar con el método de divisor de corriente.
 >
+
 > [!note] 📊 Tabla 2 — Resultados del Procedimiento 2
 >
 > |Resistencia|10 V, 1 A (mA)|15 V, 1 A (mA)|Divisor de corriente teórico|
@@ -141,6 +149,7 @@ dg-publish: true
 > |2.2 KΩ| | | |
 > |560 Ω| | | |
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Qué pasaría con la fuente de 10 V 1 A si se conectan más cargas en paralelo?
@@ -158,6 +167,7 @@ dg-publish: true
 > 3. Verificar **KVL**: los voltajes deben sumar el total de la fuente.
 > 4. Contrastar con el método de divisor de tensión.
 >
+
 > [!note] 📊 Tabla 3 — Resultados del Procedimiento 3
 >
 > |Resistencia|Voltaje medido (V)|Divisor de tensión teórico (V)|
@@ -166,6 +176,7 @@ dg-publish: true
 > |2.2 KΩ| | |
 > |560 Ω| | |
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Qué pasaría con la fuente de 10 V 1 A si se conectan más cargas en serie?
@@ -194,16 +205,19 @@ dg-publish: true
 > - [ ] Conecto la fuente apagada y verifico polaridad antes de energizar.
 > - [ ] Cambio el rango del amperímetro entre mA y 10A según la corriente estimada.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Explico la Ley de Ohm ($V=IR$) y uso $R=V/I$ para predecir corriente con R de 100 KΩ.
 > - [ ] Leo la corriente en los 4 valores de resistencia y confirmo que crece cuando R disminuye.
 > - [ ] Identifico un nodo y cuento corrientes que entran y salen para verificar KCL.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Mido corriente por cada resistencia en paralelo y confirmo que la suma es igual a la total.
 > - [ ] Uso el divisor de corriente para predecir la fracción por cada rama y la comparo con lo medido.
 > - [ ] Mido voltajes en serie y confirmo que suman el voltaje de la fuente (KVL).
 >
+
 > [!quote] 🔗 Conexiones
 > - Teoría: [[05 - Leyes de Ohm y Kirchhoff]], [[04 - Circuitos en Serie Paralelo y Mixtos]] y [[06 - Teoremas de Analisis de Circuitos]]
 > - Previa: [[Práctica 1 — Manejo de Equipos del Laboratorio]]

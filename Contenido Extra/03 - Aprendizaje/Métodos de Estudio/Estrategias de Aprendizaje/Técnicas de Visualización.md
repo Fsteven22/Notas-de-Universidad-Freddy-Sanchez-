@@ -39,6 +39,7 @@ graph TD
 > - **Colores**: Diferenciación por categorías o importancia
 > - **Símbolos**: Iconos que representen conceptos específicos
 >
+
 > [!tip] 💡 Mejores Prácticas para Mapas Mentales
 > 
 > - Usa **una palabra clave** por rama

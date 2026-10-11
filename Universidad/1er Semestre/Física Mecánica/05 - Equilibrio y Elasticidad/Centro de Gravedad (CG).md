@@ -124,6 +124,7 @@ graph TD
 > 
 > **Aplicación práctica:** Distribución de peso en mesas, sillas, estructuras
 >
+
 > [!tip] 🚶 Ejemplo: Equilibrio Humano **Situación:** Persona inclinándose
 > 
 > **Análisis:**

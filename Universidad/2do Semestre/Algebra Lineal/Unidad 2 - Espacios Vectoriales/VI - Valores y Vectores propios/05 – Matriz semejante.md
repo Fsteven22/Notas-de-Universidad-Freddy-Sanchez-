@@ -701,6 +701,7 @@ mindmap
 > CONCLUSIÓN: Sí son semejantes (misma estructura de Jordan)
 > ```
 >
+
 > [!example] 💪 Ejercicio 2: Diagonalización 3×3
 > 
 > **Problema:** Diagonalizar

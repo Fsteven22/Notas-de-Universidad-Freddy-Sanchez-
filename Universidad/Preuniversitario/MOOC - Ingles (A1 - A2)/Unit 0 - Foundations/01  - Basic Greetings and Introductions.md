@@ -776,6 +776,7 @@ dg-publish: true
 > Person B: Thank you. You too!
 > ```
 >
+
 > [!example] Dialogue 2: Meeting Someone for the First Time (Informal)
 > 
 > **Situation:** Party with friends
@@ -808,6 +809,7 @@ dg-publish: true
 > Person A: See ya!
 > ```
 >
+
 > [!example] Dialogue 3: Greeting a Colleague
 > 
 > **Situation:** Office, morning
@@ -835,6 +837,7 @@ dg-publish: true
 > Person B: Thank you! See you later!
 > ```
 >
+
 > [!example] Dialogue 4: Introducing Two People
 > 
 > **Situation:** Social gathering
@@ -1006,6 +1009,7 @@ dg-publish: true
 >    (Casual, appropriate for close friends)
 > ```
 >
+
 > [!example] Exercise 2: Complete the Dialogue
 > 
 > **Fill in the blanks with appropriate phrases:**
@@ -1058,6 +1062,7 @@ dg-publish: true
 > B: You too, goodbye!
 > ```
 >
+
 > [!example] Exercise 3: Correct the Mistakes
 > 
 > **Identify and correct the errors in these conversations:**
@@ -1109,6 +1114,7 @@ dg-publish: true
 >    (Don't translate "De nada" literally!)
 > ```
 >
+
 > [!example] Exercise 4: Match the Situations
 > 
 > **Match each phrase with the correct situation:**
@@ -1143,6 +1149,7 @@ dg-publish: true
 > 34. E - "How have you been?"
 > ```
 >
+
 > [!example] Exercise 5: Formal or Informal?
 > 
 > **Mark each phrase as F (Formal) or I (Informal):**
@@ -1389,6 +1396,7 @@ dg-publish: true
 > ✓ Keep answers professional but friendly
 > ```
 >
+
 > [!example] Scenario 2: First Day of School/Work
 > 
 > **Situation:** Meeting new classmates/colleagues
@@ -1418,6 +1426,7 @@ dg-publish: true
 > You: See you later! Thanks!
 > ```
 >
+
 > [!example] Scenario 3: At a Social Event
 > 
 > **Situation:** Networking or party
@@ -1500,6 +1509,7 @@ dg-publish: true
 > ✓ "Catch you later!"
 > ```
 >
+
 > [!success] Email Greetings
 > 
 > **Opening an email:**

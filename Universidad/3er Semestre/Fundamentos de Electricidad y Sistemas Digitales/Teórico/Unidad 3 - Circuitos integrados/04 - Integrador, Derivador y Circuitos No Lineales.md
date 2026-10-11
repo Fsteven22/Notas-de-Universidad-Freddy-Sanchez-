@@ -36,6 +36,7 @@ dg-publish: true
 >
 > $$\boxed{v_o(t) = -\frac{1}{RC}\int_0^t v_i(\tau)\,d\tau + v_o(0)}$$
 >
+
 > [!success] 📊 Interpretación
 >
 > |Entrada $v_i$|Salida $v_o$|
@@ -61,6 +62,7 @@ dg-publish: true
 >
 > Donde $R_{eq}$ depende de la red resistiva (PDF usa dos $R$ iguales $\Rightarrow$ $v_o = \frac{2}{RC}\int v_i dt$ en esa topología concreta). Lo esencial: **sigue siendo integral, pero sin inversión**.
 >
+
 > [!warning] ⚠️ Saturación en el integrador real
 >
 > Un $v_i$ con componente DC por pequeña que sea se integra hasta saturar el OPAM ($\pm V_{sat}$). En la práctica se añade una $R$ grande en paralelo con $C$ para dar camino DC y evitar deriva — es el **integrador práctico / LPF activo** que ya viste en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#🌊 Filtros Activos — Extendiendo los Filtros Pasivos|02 - Filtros activos]].
@@ -95,10 +97,12 @@ dg-publish: true
 >
 > Signo positivo, misma magnitud.
 >
+
 > [!warning] ⚠️ El derivador puro es ruidoso
 >
 > Deriva el **ruido de alta frecuencia** (lo amplifica). Por eso en la práctica se añade una $R$ pequeña en serie con $C$ para limitar la ganancia a alta frecuencia — igual que el integrador necesita $R$ en paralelo con $C$.
 >
+
 > [!example]- ✏️ Mini-ejemplo — Integrador vs Derivador
 >
 > $R=10\text{ k}$, $C=100\text{ nF}$ $\Rightarrow$ $RC=1\text{ ms}$.
@@ -153,6 +157,7 @@ dg-publish: true
 >
 > La salida solo cambia cuando $v_i$ supera el umbral correspondiente a su estado actual — **inmunidad a ruido** cerca del umbral.
 >
+
 > [!quote] 🔗 Ya cubierto en parte
 >
 > El comparador con histéresis y su ventaja frente al ruido se desarrolló a fondo en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#🔲 Comparador con Histéresis — Inmunidad en Señales Digitales|02 - Comparador con histéresis]]. Aquí lo ves en su forma genérica del PDF.
@@ -179,6 +184,7 @@ dg-publish: true
 >
 > Estructura: $R_1,R_2$ en primer OPAM + $R_2,R_2$ en segundo.
 >
+
 > [!warning] ⚠️ No es fuente lineal
 >
 > Estos rectificadores son para **señal pequeña** (instrumentación). Para rectificar potencia de red ver [[04 - Circuitos de Filtrado y Fuentes Lineales]] y [[05 - Reguladores en Fuentes Lineales]].
@@ -199,6 +205,7 @@ dg-publish: true
 > - $V_T=kT/q\approx 25\text{ mV}$ a $300\text{ K}$, $I_S$ es corriente de saturación del diodo.
 > - Derivación PDF p.57: $v_o/R_1 = I_S e^{-v_o/V_T}$.
 >
+
 > [!warning] ⚠️ Sensible a temperatura
 >
 > $V_T$ y $I_S$ dependen de $T$. En circuitos reales se compensa con un segundo diodo acoplado térmicamente o se usa un transistor apareado.
@@ -211,6 +218,7 @@ dg-publish: true
 >
 > $$\boxed{v_o = -R_1 I_S\, e^{v_i/V_T}}$$
 >
+
 > [!success] 📊 Log + Antilog = Multiplicador analógico
 >
 > Combinando log, sumador y antilog se puede hacer $v_o\propto v_1\cdot v_2$ o $v_1/v_2$ en dominio analógico — aplicación clásica antes del dominio digital.
@@ -225,12 +233,14 @@ dg-publish: true
 > - [ ] Reconozco un comparador en lazo abierto y predigo $\pm V_{sat}$.
 > - [ ] Distingo rectificador de media onda vs onda completa.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Explico por qué el integrador puro se satura y cómo se corrige con $R$ en paralelo con $C$.
 > - [ ] Calculo los niveles limitados por Zener ($V_Z+0.7$) y el umbral $V_{ref}$.
 > - [ ] Deduzco $v_o=-V_T\ln(v_i/(R I_S))$ a partir de $I_D$.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Diseño un integrador que genere rampa de $1$ V/ms a partir de $1$ V DC eligiendo $RC$.
@@ -276,6 +286,7 @@ mindmap
 > [2] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 y 17 — integrador/derivador y no lineales.
 > [3] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos_, 10th ed., cap. 10-11.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[03 - Configuraciones Lineales Básicas del OPAM]] — inversor/no inversor/sumadores (base sin $C$).

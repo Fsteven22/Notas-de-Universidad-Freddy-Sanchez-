@@ -48,6 +48,7 @@ dg-publish: true
 > 
 > > 📌 $I_S$ del silicio es mucho menor que $I_S$ del germanio — el Si es mejor para bloquear corriente inversa.
 >
+
 > [!warning] ⚡ Polarización directa
 > 
 > Se conecta el terminal positivo de la fuente al ánodo (P) y el negativo al cátodo (N).
@@ -90,6 +91,7 @@ dg-publish: true
 > - **Zona inversa:** corriente prácticamente nula ($\approx -I_S$).
 > - **Zona de ruptura:** si $V_{inv}$ supera $V_{ruptura}$, la corriente inversa crece bruscamente — destructivo en diodos normales, intencional en Zener.
 >
+
 > [!tip] 🔧 Modelos de aproximación del diodo
 > 
 > Para análisis de circuitos se usan modelos simplificados:
@@ -155,11 +157,13 @@ dg-publish: true
 > - [ ] Distingo polarizacion directa (vaciamiento se reduce, conduce) vs inversa (se ensancha, Is).
 > - [ ] Identifico anodo (P) y catodo (N) y el sentido convencional de corriente.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Interpreto la curva I-V en sus 3 zonas (directa exponencial, inversa ~-Is, ruptura) y ubico Zener.
 > - [ ] Aplico modelo ideal (0 V) y 2a aproximacion (0.7 V) para calcular IL en un circuito con diodo.
 > - [ ] Diferencio diodo rectificador, Zener, LED y varicap por aplicacion.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Resuelvo un circuito con 2-3 resistencias y diodo determinando si conduce antes de calcular.
 > - [ ] Justifico por que Is(Si) << Is(Ge) y que implica en bloqueo inverso.
@@ -190,12 +194,14 @@ mindmap
 > 
 > [2] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos y Dispositivos Electrónicos_, 10th ed. México: Pearson, 2009, pp. 1–80.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Semiconductores y Bandas de Energía]] — fundamento de la unión P-N.
 > - [[03 - Transistor BJT]] — dos uniones P-N combinadas forman el transistor.
 >
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[01 - Semiconductores y Bandas de Energía]] — base fisica
 > - Siguiente: [[03 - Transistor BJT]] — dos uniones P-N

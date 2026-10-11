@@ -229,6 +229,7 @@ dg-publish: true
 >    b) *Coming right up!*
 >    c) *Wait a moment, please.*
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 >
 > 1. a) *I'll pass, but thank you.* *(educado y apropiado para contexto formal)*
@@ -254,6 +255,7 @@ dg-publish: true
 > **A:** Would you like more juice?
 > **B:** No, __________________ .
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 >
 > - *Can I get you a refill?*
@@ -274,6 +276,7 @@ dg-publish: true
 > |---|---|---|
 > | | | |
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 >
 > | /aɪ/ (ai) | /iː/ (i larga) | /eɪ/ (ei) |
@@ -292,6 +295,7 @@ dg-publish: true
 > 14. *It's time to eat.* → **time** / **eat** → ¿mismo sonido?
 > 15. *A great plate of food.* → **great** / **plate** → ¿mismo sonido?
 >
+
 > [!success] ✅ Respuestas — Ejercicio 4
 >
 > 11. ✅ Mismo — ambas tienen /aɪ/

@@ -49,6 +49,7 @@ dg-publish: true
 > - [ ] [[02 - Análisis del texto expositivo]]
 > - [ ] [[03 - Conectores textuales y coherencia lógica]]
 >
+
 > [!note] ✅ Ejercicios formativos (22 en total)
 >
 > **Nota 01 — El texto expositivo:**

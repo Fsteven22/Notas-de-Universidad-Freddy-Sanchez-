@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En la realidad, los materiales rara vez experimentan un solo tipo de esfuerzo; es en la combinación donde se revela la verdadera complejidad y belleza de la mecánica de materiales." 🌐
 >
+
 > [!info] Los problemas combinados de tensión y deformación representan situaciones reales donde los materiales están sometidos simultáneamente a múltiples tipos de esfuerzos: normales, cortantes, y cambios volumétricos. Esta complejidad requiere herramientas analíticas avanzadas y una comprensión profunda de la interacción entre diferentes estados de esfuerzo.
 
 ## 🎯 Estados de Esfuerzo Combinado
@@ -41,6 +42,7 @@ dg-publish: true
 > |σm|Esfuerzo medio|(σ₁ + σ₂ + σ₃)/3|
 > |σe|Esfuerzo equivalente|Von Mises o Tresca|
 >
+
 > [!tip] **Círculo de Mohr - Herramienta Fundamental** ⭕
 > 
 > ### Construcción del Círculo:
@@ -66,6 +68,7 @@ dg-publish: true
 > - Cálculo de cortante máximo
 > - Análisis de orientación crítica
 >
+
 > [!warning] **Deformación Volumétrica** 📦
 > 
 > ### Concepto Fundamental:
@@ -99,6 +102,7 @@ dg-publish: true
 > - **Presión hidrostática**: σ₁ = σ₂ = σ₃ = -p
 > - **Dilatación libre**: Sin restricciones externas
 >
+
 > [!success] 🔗 Relaciones entre Deformaciones
 > 
 > ```mermaid
@@ -121,6 +125,7 @@ dg-publish: true
 >     style F fill:#e8f5e8
 > ```
 >
+
 > [!note] **Teorías de Falla** ⚖️
 > 
 > ### Criterios de Falla Principales:
@@ -216,6 +221,7 @@ dg-publish: true
 > - σe = √[(100-50)² + (50-0)² + (0-100)²]/√2 = √(2500+2500+10000)/√2 = 86.6 MPa
 > - FS = σy/σe = 300/86.6 = 3.46
 >
+
 > [!example] **Problema 2: Transformación de Esfuerzos con Círculo de Mohr** ⭕
 > 
 > ### Enunciado:
@@ -246,6 +252,7 @@ dg-publish: true
 > - σy' = C - R×cos(2×30° - 2×22.5°) = 30 - 70.7×cos(25°) = -34.1 MPa
 > - τx'y' = R×sen(2×30° - 2×22.5°) = 70.7×sen(25°) = 29.9 MPa
 >
+
 > [!example] **Problema 3: Deformación Volumétrica en Cubo Bajo Presión** 📦
 > 
 > ### Enunciado:
@@ -288,6 +295,7 @@ dg-publish: true
 > 
 > **M**ohr para transformar esfuerzos (**M**ohr circle) **O**rientación de principales (**O**rientation angles) **H**idrostático para volumen (**H**ydrostatic pressure) **R**adio da cortante máximo (**R**adius = τmax) **V**on Mises para falla (**V**on Mises criterion)
 >
+
 > [!info] **Reglas Nemotécnicas Adicionales** 🎯
 > 
 > ### "3-SIGMAS": Tres **SIGMAS** principales siempre

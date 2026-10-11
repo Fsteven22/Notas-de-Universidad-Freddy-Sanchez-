@@ -131,6 +131,7 @@ dg-publish: true
 > 4. Sustainable fashion is __________________ — it's not going anywhere. *(here to stay / catching on)*
 > 5. The practice of writing letters by hand is slowly __________________ . *(dying out / being trendy)*
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 >
 > 1. come back into fashion
@@ -151,6 +152,7 @@ dg-publish: true
 > 9. Check what's __________________ on Twitter before you post anything.
 > 10. She always wears the most __________________ outfits to class.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 >
 > 6. trendy *(moda general, no solo hoy)*
@@ -174,6 +176,7 @@ dg-publish: true
 > 5. Add the pasta to the pan and __________________ everything together.
 > 6. Before serving, __________________ some parmesan cheese on top.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 >
 > 1. Boil
@@ -195,6 +198,7 @@ dg-publish: true
 > 14. El tema del cambio climático es tendencia en Twitter hoy.
 > 15. Marinamos la carne toda la noche antes de asarla a la parrilla.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 4
 >
 > 11. Social media is here to stay.

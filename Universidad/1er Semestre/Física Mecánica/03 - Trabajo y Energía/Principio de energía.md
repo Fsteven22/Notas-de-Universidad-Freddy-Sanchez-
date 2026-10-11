@@ -10,6 +10,7 @@ dg-publish: true
 > 
 > Este principio establece que en presencia de fuerzas externas (no conservativas) o interacciones con el entorno, el **trabajo neto externo** realizado sobre un sistema es igual al cambio en su **energía total**.
 >
+
 > [!success] Ventaja Principal 🎯 Es una herramienta poderosa para analizar el movimiento y las interacciones sin necesidad de usar las leyes de Newton directamente en cada punto.
 
 ---
@@ -35,10 +36,13 @@ dg-publish: true
 
 > [!note] Ecuación Principal - Principio de Energía General $W_{ext} = \Delta E_{total} = \Delta K + \Delta U + \Delta E_{term} + ...$
 >
+
 > [!info] Conservación de Energía Mecánica _Cuando no hay trabajo externo ni fricción:_ $K_{inicial} + U_{inicial} = K_{final} + U_{final}$
 >
+
 > [!warning] Relación Fuerza-Energía Potencial $F_x = -\frac{dU}{dx}$
 >
+
 > [!tip] Tipos de Energía Potencial
 > 
 > ```mermaid
@@ -142,12 +146,14 @@ dg-publish: true
 >     Note over I,F: W_total = ΔK < 0
 > ```
 >
+
 > [!success] Ejercicio 2: Caja con Resorte
 > 
 > **🎯 Problema**: Caja 2.0 kg a 3.0 m/s comprime un resorte.
 > 
 > **🔧 Solución**: Conservación de energía mecánica $\frac{1}{2}mv^2 = \frac{1}{2}kx^2$
 >
+
 > [!warning] Ejercicio 3: Masa en Curva Sin Fricción
 > 
 > **🎯 Problema**: Masa desde altura h, velocidad al final.
@@ -158,12 +164,14 @@ dg-publish: true
 >     A -.-> C["mgh = ½mv²"]
 > ```
 >
+
 > [!quote] Ejercicio 4: Superficie Rugosa
 > 
 > **🎯 Problema**: Masa con fricción, distancia hasta detenerse.
 > 
 > **🔧 Análisis**: $\Delta U = W_{fricción} = \Delta E_{term}$
 >
+
 > [!info] Ejercicio 5: Resorte en Plano Inclinado
 > 
 > **🎯 Problema**: Objeto comprime resorte, velocidad en equilibrio.
@@ -193,6 +201,7 @@ dg-publish: true
 
 > [!success] Consejos Prácticos 🎯 **Consejo Principal**: Siempre identifica primero qué tipos de energía están presentes en el sistema antes de aplicar las ecuaciones.
 >
+
 > [!warning] Mejores Prácticas
 > 
 > - **✅ Do**: Dibuja diagramas de energía para visualizar las transformaciones

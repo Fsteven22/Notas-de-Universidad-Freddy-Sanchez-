@@ -36,6 +36,7 @@ dg-publish: true
 > |π rad|180°|0.5 rev|
 > |1 rad|57.3°|0.159 rev|
 >
+
 > [!tip] ⚡ **Velocidad Angular (ω)** **Definición:** Razón de cambio de la posición angular con respecto al tiempo.
 > 
 > $$\omega = \frac{d\theta}{dt}$$
@@ -48,6 +49,7 @@ dg-publish: true
 > - Dirección dada por la regla de la mano derecha
 > - En movimiento uniforme: $\omega = \frac{\theta}{t}$
 >
+
 > [!tip] 🚀 **Aceleración Angular (α)** **Definición:** Razón de cambio de la velocidad angular con respecto al tiempo.
 > 
 > $$\alpha = \frac{d\omega}{dt} = \frac{d^2\theta}{dt^2}$$

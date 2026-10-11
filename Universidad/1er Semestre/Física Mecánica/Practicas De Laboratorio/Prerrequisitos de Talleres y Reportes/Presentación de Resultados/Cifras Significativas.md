@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La precisión en la medición no es solo una cuestión de instrumentos, sino de entender qué significa realmente cada dígito." 🔢
 >
+
 > [!info] Las cifras significativas son un concepto fundamental en física experimental que permite expresar correctamente la precisión de las mediciones y cálculos. Representan todos los dígitos que se conocen con certeza más el primer dígito incierto. Su manejo adecuado es esencial para la presentación honesta de resultados experimentales y evita la falsa impresión de precisión excesiva.
 
 ## 🎯 Conceptos Fundamentales
@@ -40,6 +41,7 @@ dg-publish: true
 > Última cifra significativa = posición de la incertidumbre
 > ```
 >
+
 > [!tip] **Reglas para Identificar Cifras Significativas** 🔍
 > 
 > ### Regla 1: Dígitos No Nulos
@@ -83,6 +85,7 @@ dg-publish: true
 > |**1200**|2 o 4|Sin punto decimal, ambiguo|
 > |**1200.**|4|Con punto decimal, todos significativos|
 >
+
 > [!warning] **Casos Especiales y Ambigüedades** ⚠️
 > 
 > ### Números Enteros sin Punto Decimal:
@@ -178,6 +181,7 @@ dg-publish: true
 > = 345 + 12 = 357 → 3.6 × 10² (redondeado a unidades)
 > ```
 >
+
 > [!tip] **Multiplicación y División** ✖️➗
 > 
 > ### Regla Principal:
@@ -226,6 +230,7 @@ dg-publish: true
 > π no limita porque es una constante exacta
 > ```
 >
+
 > [!note] **Potencias y Raíces** 🔺
 > 
 > ### Regla:
@@ -263,6 +268,7 @@ dg-publish: true
 > → resultado: -3.75
 > ```
 >
+
 > [!example] **Cálculos Complejos** 🧮
 > 
 > ### Estrategia General:
@@ -370,6 +376,7 @@ dg-publish: true
 > 15.00 redondeado a 2 cifras → 15. o 1.5 × 10¹
 > ```
 >
+
 > [!warning] **Errores Comunes en Redondeo** ⚠️
 > 
 > ### Error 1: Redondeo Prematuro
@@ -447,6 +454,7 @@ dg-publish: true
 > Reporte: 45.7 ± 1.2
 > ```
 >
+
 > [!tip] **Cálculos de Propagación de Errores** 📐
 > 
 > ### Mantenimiento de Dígitos:
@@ -488,6 +496,7 @@ dg-publish: true
 > (redondeado según la incertidumbre)
 > ```
 >
+
 > [!example] **Ejemplo: Densidad de un Material** ⚖️
 > 
 > ### Problema Experimental:
@@ -585,6 +594,7 @@ dg-publish: true
 > Cifras significativas: 3
 > ```
 >
+
 > [!warning] **Errores Comunes con Instrumentos** ⚠️
 > 
 > ### Error 1: Cifras Falsas
@@ -661,6 +671,7 @@ dg-publish: true
 > round_to_n(12.3456, 3)  # → 12.3
 > ```
 >
+
 > [!tip] **Presentación en Informes** 📄
 > 
 > ### Formato Recomendado:

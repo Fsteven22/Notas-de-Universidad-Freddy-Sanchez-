@@ -11,6 +11,7 @@
 > - **Zona de desarrollo próximo compartida**: Niveles similares facilitan la comprensión
 > - **Metacognición grupal**: Reflexión colectiva sobre el proceso de aprendizaje
 >
+
 > [!tip]- ## 🌟 Beneficios del Aprendizaje entre Pares
 > 
 > ### 🧩 Beneficios Cognitivos
@@ -64,6 +65,7 @@
 > - **Peer Review**: Evaluación y retroalimentación mutua de trabajos
 > - **Collaborative Note-Taking**: Construcción conjunta de apuntes y resúmenes
 >
+
 > [!warning]- ## ⚠️ Desafíos y Limitaciones
 > 
 > ### 🚫 Obstáculos Comunes
@@ -130,6 +132,7 @@
 >
 > [!books]- ## 📚 Referencias y Profundización
 > 
+
 > [!quote]- ### Referencias Académicas
 > 
 > - Topping, K. J. (2005). "Trends in Peer Learning". _Educational Psychology_, 25(6), 631-645.
@@ -137,6 +140,7 @@
 > - Mazur, E. (1997). _Peer Instruction: A User's Manual_. Prentice Hall.
 > - Johnson, D. W., & Johnson, R. T. (2014). _Cooperative Learning in 21st Century_. Anker Publishing.
 > 
+
 > [!note]- ### Notas Recomendadas **Prerrequisitos:**
 > 
 > - [[Habilidades Sociales]] - Base para interacción efectiva

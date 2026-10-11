@@ -33,6 +33,7 @@ dg-publish: true
 > - $\nu$: Viscosidad cinemática (m²/s)
 > - $\rho$: Densidad del fluido (kg/m³)
 >
+
 > [!note]+ Unidades de Viscosidad
 > 
 > ### 📏 Sistemas de Unidades
@@ -97,6 +98,7 @@ dg-publish: true
 > - $\mu$: Viscosidad dinámica (Pa·s)
 > - $\nu$: Viscosidad cinemática (m²/s)
 >
+
 > [!tip]+ Interpretación Física
 > 
 > ### ⚖️ Balance de Fuerzas
@@ -166,6 +168,7 @@ dg-publish: true
 > 
 > **Resultado**: Re > 4000 → **Flujo Turbulento**
 >
+
 > [!example]+ Problema: Flujo de Miel
 > 
 > ### 🍯 Cálculo con Fluido Viscoso
@@ -278,6 +281,7 @@ dg-publish: true
 > - [[Gradientes de Velocidad]]
 > - [[Conceptos de Densidad]]
 >
+
 > [!success]+ Para Profundizar
 > 
 > - [[Flujo Laminar y Ecuación de Poiseuille]]

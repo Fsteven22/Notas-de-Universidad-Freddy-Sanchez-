@@ -556,6 +556,7 @@ graph TB
 > Respuesta: A = 2√6 ≈ 4.899 unidades cuadradas
 > ```
 >
+
 > [!example] 🎓 Problema 2: Cono
 > 
 > **Enunciado:** Hallar el área de la superficie lateral del cono z = √(x² + y²) que está entre z = 0 y z = 3.

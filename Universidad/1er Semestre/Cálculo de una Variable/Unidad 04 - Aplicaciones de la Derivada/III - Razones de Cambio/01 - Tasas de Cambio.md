@@ -49,6 +49,7 @@ graph TD
 > 
 > **Interpretación:** La función crece en promedio 7 unidades por cada unidad de $x$
 >
+
 > [!example] 🚗 Ejemplo 2: Aplicación Física (Velocidad) **Posición:** $s(t) = -16t^2 + 64t + 80$ (altura en pies) **Intervalo de tiempo:** $[1, 3]$ segundos
 > 
 > **Cálculo:**
@@ -74,6 +75,7 @@ graph TD
 > 
 > **Esto es exactamente la definición de la derivada!**
 >
+
 > [!success] 📐 Interpretación Geométrica La tasa de cambio instantánea en $x = a$ es:
 > 
 > - La **pendiente de la recta tangente** a la curva en el punto $(a, f(a))$
@@ -110,6 +112,7 @@ flowchart LR
 > 
 > **Resultado:** $f'(2) = 7$
 >
+
 > [!example] ⚡ Método 2 - Reglas de Derivación Para $f(x) = x^2 + 3x$:
 > 
 > - $f'(x) = 2x + 3$
@@ -128,6 +131,7 @@ flowchart LR
 > - Velocidad: $v(2) = 12 - 24 + 9 = -3$ m/s
 > - Aceleración: $a(2) = 12 - 12 = 0$ m/s²
 >
+
 > [!success] 💰 Economía - Costo Marginal **Función de costo:** $C(q) = 100 + 50q + 0.1q^2$
 > 
 > **Costo marginal:** $C'(q) = 50 + 0.2q$

@@ -174,6 +174,7 @@ dg-publish: true
 > - Siga la estructura de las 5 partes en el mismo orden.
 > - Use frases del banco de Useful Phrases.
 >
+
 > [!tip]- 💡 Modelo de respuesta — Academic Post completo
 > 
 > El siguiente es un modelo de respuesta para que puedas comparar con el tuyo:
@@ -182,6 +183,7 @@ dg-publish: true
 > 
 > _(Aproximadamente 115 palabras)_
 >
+
 > [!success] ✅ Guía de autoevaluación
 > 
 > Antes de entregar tu Academic Post, verifica esta lista:

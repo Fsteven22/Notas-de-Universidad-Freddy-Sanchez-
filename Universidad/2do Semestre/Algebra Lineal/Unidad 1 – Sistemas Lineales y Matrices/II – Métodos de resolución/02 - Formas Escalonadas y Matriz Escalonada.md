@@ -169,6 +169,7 @@ dg-publish: true
 > Cada ⬤ está más a la derecha que el anterior
 > ```
 >
+
 > [!example] 🎯 Ejemplo 2: Forma Escalonada con Fila Nula
 > 
 > **Matriz:**
@@ -212,6 +213,7 @@ dg-publish: true
 > - Sistema compatible indeterminado con 2 parámetros
 > ```
 >
+
 > [!example] 🎯 Ejemplo 3: Forma Escalonada "Irregular"
 > 
 > **Matriz:**
@@ -313,6 +315,7 @@ dg-publish: true
 > sin necesidad de sustitución hacia atrás.
 > ```
 >
+
 > [!example] 🎯 Ejemplo 2: FER con Patrón Complejo
 > 
 > **Matriz:**
@@ -363,6 +366,7 @@ dg-publish: true
 > x₅ = t (parámetro libre)
 > ```
 >
+
 > [!example] 🎯 Ejemplo 3: Comparación FE vs FER
 > 
 > **Matriz original:**

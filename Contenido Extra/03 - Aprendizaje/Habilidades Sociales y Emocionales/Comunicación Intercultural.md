@@ -262,6 +262,7 @@ flowchart LR
 > - [[Gestión de Conflictos]] - Resolución de tensiones culturales
 > - [[Pensamiento Crítico]] - Análisis de situaciones culturales complejas
 >
+
 > [!info] **Notas Recomendadas para Profundizar**
 > 
 > ### **Prerrequisitos** 📋

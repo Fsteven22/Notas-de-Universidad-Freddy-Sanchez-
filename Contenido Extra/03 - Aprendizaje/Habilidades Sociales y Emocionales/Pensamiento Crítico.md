@@ -382,6 +382,7 @@ graph TD
 > - [[Habilidades Sociales]] - Cuestionar ideas manteniendo relaciones positivas
 > - [[Metacognición]] - Reflexión sobre procesos de pensamiento propio
 >
+
 > [!info] **Notas Recomendadas para Profundizar**
 
 ### **Prerrequisitos** 📋

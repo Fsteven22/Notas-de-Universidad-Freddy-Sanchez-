@@ -58,6 +58,7 @@ dg-publish: true
 > 
 > Sitio oficial: `derechosintelectuales.gob.ec`
 >
+
 > [!tip] 🖥️ Relación entre OMPI y SENADI
 > 
 > La OMPI es el organismo **internacional** (188 países, bajo la ONU) que administra los tratados globales sobre propiedad intelectual. SENADI es el organismo **nacional ecuatoriano** que aplica y hace cumplir esos principios dentro del país. Es la misma relación que existe, por ejemplo, entre un tratado internacional y la ley local que lo implementa.
@@ -72,6 +73,7 @@ dg-publish: true
 > 
 > Las obras que se prestan a la protección por derecho de autor van desde los **libros, la música, la pintura, la escultura y las películas** hasta los **programas informáticos, las bases de datos**, los anuncios publicitarios, los mapas y los dibujos técnicos.
 >
+
 > [!warning] ⚠️ El software también es una obra protegida
 > 
 > Vale la pena notar explícitamente que **los programas informáticos y las bases de datos** están dentro del alcance del derecho de autor, igual que un libro o una canción — no es solo un tema de "arte", también aplica directamente a lo que se produce en computación.
@@ -85,6 +87,7 @@ dg-publish: true
 > - **Derechos patrimoniales**: permiten que el titular de los derechos **obtenga compensación financiera** por el uso de sus obras por parte de terceros.
 > - **Derechos morales**: protegen los **intereses no patrimoniales** del autor (por ejemplo, ser reconocido como autor de la obra, o que no se distorsione de forma que dañe su reputación).
 >
+
 > [!note] 📊 Comparación — Derechos patrimoniales vs. morales
 > 
 > | Aspecto | Derechos patrimoniales | Derechos morales |
@@ -126,30 +129,35 @@ flowchart TD
 > 2. ¿Cuál es la diferencia entre OMPI y SENADI en cuanto a su alcance geográfico?
 > 3. Nombra los dos tipos de derechos que abarca el derecho de autor.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > 1. Creaciones de la mente — invenciones, obras literarias/artísticas, símbolos, nombres e imágenes comerciales.
 > 2. La OMPI tiene alcance **internacional** (188 Estados miembros, sede en Ginebra); SENADI tiene alcance **nacional**, aplicando estos principios dentro de Ecuador.
 > 3. Derechos patrimoniales y derechos morales.
 >
+
 > [!question] 📋 Nivel 2 — Análisis de casos
 > 
 > 4. Un desarrollador publica una app y descubre que otra empresa la copió y la vende sin pagarle nada. ¿Qué tipo de derecho se violó?
 > 5. Una editorial publica un libro pero omite el nombre del autor original en la portada. ¿Qué tipo de derecho se violó?
 > 6. ¿Por qué se dice que la protección del derecho de autor sobre software es tan relevante para la industria tecnológica como lo es para la música o la literatura?
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 > 
 > 4. Se violó su **derecho patrimonial** — no recibió compensación económica por el uso de su obra.
 > 5. Se violó su **derecho moral** — no fue reconocido como autor, independientemente de si recibió pago o no.
 > 6. Porque el derecho de autor **explícitamente incluye** "programas informáticos" y "bases de datos" entre las obras protegibles — el software recibe el mismo tipo de protección legal que una novela o una canción, lo que sustenta gran parte del modelo de negocio de la industria tecnológica (licencias, ventas de software, SaaS).
 >
+
 > [!question] 📋 Nivel 3 — Aplicación y síntesis
 > 
 > 7. Explica por qué un derecho moral **no se puede vender**, a diferencia de un derecho patrimonial, usando el ejemplo de un músico que vende los derechos de una canción a una disquera.
 > 8. ¿Por qué crees que la Declaración Universal de los Derechos Humanos reconoce la protección de las creaciones intelectuales como un derecho fundamental, y no solo como una regla comercial?
 > 9. Diseña un escenario donde una misma acción viole simultáneamente un derecho patrimonial y un derecho moral.
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 > 
 > 7. El derecho patrimonial es esencialmente un **derecho económico transferible** — el músico puede vender el derecho a recibir regalías por el uso de la canción. El derecho moral, en cambio, está ligado a la **identidad del autor como creador** — venderlo significaría que alguien más podría reclamar haber creado la obra, lo cual no tiene sentido porque la autoría es un hecho, no una transacción.
@@ -166,12 +174,14 @@ flowchart TD
 > - [ ] Puedo nombrar los organismos OMPI y SENADI y su rol respectivo.
 > - [ ] Puedo distinguir derechos patrimoniales de derechos morales.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo identificar qué tipo de derecho se viola en un caso concreto.
 > - [ ] Puedo explicar por qué el software está protegido por derecho de autor.
 > - [ ] Puedo explicar la relación jerárquica entre OMPI (internacional) y SENADI (nacional).
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo argumentar por qué un derecho moral no es transferible, a diferencia de uno patrimonial.

@@ -35,6 +35,7 @@ dg-publish: true
 > - El usuario es tentado a realizar una acción que vulnera o daña un sistema, por ejemplo, recibiendo un mensaje que lo lleva a **abrir un archivo adjunto**.
 > - El usuario es llevado a **confiar información necesaria** para que el atacante realice una acción fraudulenta con los datos obtenidos — como ocurre en el scam y el phishing.
 >
+
 > [!warning] ⚠️ Por qué funciona
 > 
 > La ingeniería social no explota una vulnerabilidad de software — explota **tendencias humanas naturales**: confiar en una fuente que parece conocida, querer ayudar, actuar rápido ante una urgencia, o evitar el conflicto. Por eso, phishing, spear-phishing y scam son en realidad **variaciones específicas** de esta misma técnica base, no amenazas independientes entre sí.
@@ -60,6 +61,7 @@ dg-publish: true
 > 3. La víctima **abre un correo que contiene malware**.
 > 4. El atacante **usa ese acceso para robar datos** del equipo o la red de la víctima.
 >
+
 > [!note] 📊 Phishing vs. Spear-phishing
 > 
 > | Característica | Phishing | Spear-phishing |
@@ -75,6 +77,7 @@ dg-publish: true
 > 
 > El **pharming** redirecciona con mala intención al usuario hacia un **sitio web falso**, mediante la explotación del sistema **DNS** — de ahí que también se le llame **secuestro o envenenamiento del DNS**. Consiste en cambiar las rutas (host) para atrapar víctimas sin que estas noten nada extraño en la barra de direcciones.
 >
+
 > [!warning] ⚠️ Phishing vs. Pharming — la diferencia clave
 > 
 > En el **phishing**, la víctima debe hacer clic en un enlace engañoso (normalmente desde un correo). En el **pharming**, el usuario puede escribir la dirección correcta y aun así ser **redirigido automáticamente** a un sitio falso, porque el ataque ocurre a nivel de DNS, no del enlace.
@@ -87,6 +90,7 @@ dg-publish: true
 > 
 > Es **todo correo no deseado recibido** por el destinatario, que viene de un envío automático y masivo por parte de quien lo emite. Generalmente se asocia al correo electrónico personal, pero no solo afecta a este — también a foros, blogs y grupos de noticias.
 >
+
 > [!note] 🎭 Scam
 > 
 > Es el nombre utilizado para las **estafas a través de medios tecnológicos**. Los medios utilizados por el scam son similares a los que utiliza el phishing; sin embargo, su objetivo **no es obtener datos, sino lucrar directamente a través del engaño**.
@@ -99,6 +103,7 @@ dg-publish: true
 > 
 > El **typosquatting** (riesgo de dominios similares) ocurre cuando alguien registra un dominio **casi idéntico** a uno legítimo, aprovechando errores comunes al escribir la URL.
 >
+
 > [!example] 📝 Ejemplo — El caso de McDonald's
 > 
 > La dirección legítima podría ser `www.macdonalds.com`. Si una persona escribe esa dirección pero omite la última "s", lo normal sería que el navegador marque un error. Ahí es donde entra el **typosquatter**, quien registra la dirección `www.mcdonald.com` — la gente que teclea mal la URL termina en una página con publicidad (o algo peor).
@@ -150,30 +155,35 @@ flowchart TD
 > 2. Un correo masivo y no solicitado que recibes en tu bandeja de entrada, ¿cómo se llama?
 > 3. Define con tus palabras qué es la ingeniería social.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > 1. El **phishing** busca **obtener datos** personales o financieros; el **scam** busca **lucrar directamente** engañando a la víctima, sin necesariamente robar datos primero.
 > 2. **Spam**.
 > 3. Es una técnica que usa habilidades sociales (engaño, manipulación, urgencia) para lograr que una persona revele información o realice una acción que compromete un sistema — sin explotar ninguna falla técnica.
 >
+
 > [!question] 📋 Nivel 2 — Análisis de casos
 > 
 > 4. Escribiste correctamente `www.tubanco.com` en el navegador, pero terminaste en una página que no es la de tu banco. ¿Qué tipo de ataque es y por qué NO es phishing?
 > 5. Recibes un correo de "premios@correo-falso.com" ofreciendo un premio genérico a miles de personas. ¿Phishing o spear-phishing? Justifica.
 > 6. ¿Por qué el typosquatting es más peligroso en dominios que se parecen visualmente (ej. "rn" vs "m") que en dominios con errores obvios?
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 > 
 > 4. Es **pharming**, porque el ataque ocurre a nivel de DNS: aunque escribiste la dirección correcta, el sistema te redirigió a un sitio falso. No es phishing porque el phishing depende de que la víctima haga clic en un enlace engañoso, no de escribir mal nada.
 > 5. Es **phishing** genérico, no spear-phishing: el mensaje es masivo, no está dirigido específicamente a ti ni usa información personal tuya — es la característica de un ataque "de red amplia", no "de arpón".
 > 6. Porque los errores visualmente casi idénticos (como "rn" que se parece a "m") son mucho más difíciles de detectar a simple vista que un error obvio de tipeo, lo que aumenta la tasa de víctimas que no notan la diferencia.
 >
+
 > [!question] 📋 Nivel 3 — Aplicación y síntesis
 > 
 > 7. Diseña un escenario de ataque combinado que use typosquatting como primer paso y termine en un scam.
 > 8. ¿Por qué se dice que todas las técnicas de esta nota son "variaciones de ingeniería social" y no amenazas completamente independientes?
 > 9. Si tuvieras que priorizar la capacitación de una empresa en solo una de estas amenazas por ser la más difícil de detectar técnicamente, ¿cuál elegirías y por qué?
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 > 
 > 7. Un usuario escribe mal la URL de una tienda conocida y llega a un dominio de typosquatting que imita perfectamente el sitio original; ahí se le ofrece una "oferta exclusiva" que debe pagar por adelantado — el pago nunca resulta en un producto real, consumando el **scam**.
@@ -190,12 +200,14 @@ flowchart TD
 > - [ ] Puedo distinguir spam de scam.
 > - [ ] Puedo reconocer un ejemplo de typosquatting.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo diferenciar phishing de spear-phishing según el grado de personalización del ataque.
 > - [ ] Puedo explicar por qué el pharming es más difícil de detectar que el phishing.
 > - [ ] Puedo identificar qué tipo de fraude corresponde a un escenario dado.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo diseñar un escenario de ataque combinado que use más de una de estas técnicas en distintas etapas.

@@ -37,6 +37,7 @@ dg-publish: true
 > - 🚁 Helicópteros en corrientes de aire
 > - 🪂 Paracaidistas con viento lateral
 >
+
 > [!warning] 🚢 **Barcos en Corrientes** **Situación:** Embarcación navegando en agua que fluye respecto a la costa
 > 
 > ```mermaid
@@ -54,6 +55,7 @@ dg-publish: true
 > - 🛥️ Lanchas en corrientes marinas
 > - 🚤 Travesías en canales con flujo
 >
+
 > [!note] 🌧️ **Lluvia y Movimiento** **Situación:** Observador en movimiento percibiendo lluvia con velocidad aparente
 > 
 > **Ejemplos típicos:**
@@ -152,6 +154,7 @@ dg-publish: true
 > 2. El rumbo compensado debe anular la deriva
 > 3. $\vec{v}_{deseada} = \vec{v}_{vehículo/medio} + \vec{v}_{compensación}$
 >
+
 > [!warning] ⏱️ **Problema del Tiempo de Viaje** **Situación:** Calcular cuánto tiempo tarda un viaje considerando el efecto del medio
 > 
 > **Factores clave:**
@@ -185,6 +188,7 @@ dg-publish: true
 > 
 > **Respuesta:** El avión vuela a 304.1 km/h en dirección 9.46° al Este del Norte.
 >
+
 > [!example] 🚢 **Ejemplo 2: Barco Cruzando Río** **Problema:** Un barco quiere cruzar un río de 200 m de ancho perpendicularmente. La corriente fluye a 3 m/s hacia el Este. El barco puede navegar a 5 m/s respecto al agua. ¿Qué rumbo debe seguir y cuánto tiempo tardará?
 > 
 > **Solución:**

@@ -147,6 +147,7 @@ dg-publish: true
 > 
 > f'(x) = 2x · sin(x) + x² · cos(x)
 >
+
 > [!example] 💡 **Problema 2: Regla de la Cadena** Derivar: h(x) = sin(x³ + 2x)
 > 
 > **Solución:** h'(x) = cos(x³ + 2x) · (3x² + 2)

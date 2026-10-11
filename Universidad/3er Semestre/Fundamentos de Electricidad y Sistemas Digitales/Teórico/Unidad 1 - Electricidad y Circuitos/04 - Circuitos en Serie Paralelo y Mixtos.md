@@ -409,6 +409,7 @@ mindmap
 >
 > > 💡 Siempre redibuja el circuito simplificado después de cada reducción para no perder la topología.
 >
+
 > [!example]- ✏️ Ejercicio 2 — Circuito con Cruce de Corrientes (I1, I2)
 >
 > **Dado** un circuito con dos corrientes de malla I1 e I2 que se cruzan, encontrar los valores de cada corriente.
@@ -447,16 +448,19 @@ mindmap
 > - [ ] Calculo Req en serie y paralelo (caso 2 resistencias: R1·R2/(R1+R2)).
 > - [ ] Aplico divisor de voltaje Vk=Vs·Rk/Req y divisor de corriente.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Simplifico un circuito mixto reduciendo grupos paralelos y sumando en serie.
 > - [ ] Calculo C e L equivalentes en serie/paralelo.
 > - [ ] Verifico con KVL/KCL y balances de potencia.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Resuelvo un mixto con 4+ resistencias y determino voltajes y corrientes.
 > - [ ] Predigo efecto de agregar/quitar una rama paralela sobre Req y potencia.
 > - [ ] Justifico por que un fallo en serie interrumpe todo y en paralelo no.
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[03 - Elementos Basicos de un Circuito Electrico]] — R, C, L que combinas aqui
 > - Siguiente: [[05 - Leyes de Ohm y Kirchhoff]] — KVL/KCL que usas para resolver mixtos

@@ -2,6 +2,7 @@
 
 > [!quote] 🤖 "La automatización no se trata de eliminar trabajos, sino de eliminar el trabajo tedioso y liberar a los humanos para que se enfoquen en lo que realmente importa: la creatividad, la innovación y la resolución de problemas complejos." - Tim Ferriss
 >
+
 > [!info]- ## ⚙️ Fundamentos de la Automatización
 > 
 > ### Principios Core de la Automatización
@@ -62,6 +63,7 @@
 >     style D fill:#95A5A6
 > ```
 >
+
 > [!success]- ## 🛠️ Herramientas y Plataformas Principales
 > 
 > ### Ecosistema de Automatización
@@ -99,6 +101,7 @@
 > |**Power Automate** 🏢|$15-40/mes|Microsoft ecosystem|⭐⭐⭐|Entornos corporativos|
 > |**Python APIs** 🐍|Gratis/hosting|Ilimitadas|⭐⭐⭐⭐⭐|Desarrolladores, custom|
 >
+
 > [!tip]- ## 📧 Automatización de Email y Comunicación
 > 
 > ### Flujos de Trabajo de Email Inteligente
@@ -145,6 +148,7 @@
 > 5. **Follow-up**: Email con resumen + próximos pasos
 > 6. **CRM sync**: Contactos y notas actualizadas
 >
+
 > [!example]- ## 📁 Automatización de Archivos y Documentos
 > 
 > ### Sistema de Organización Automática
@@ -271,6 +275,7 @@
 >     - Instagram: Visual + stories
 >     - Facebook: Conversacional + engagement
 >
+
 > [!warning]- ## ⚠️ Gestión de Errores y Monitoreo
 > 
 > ### Sistema de Alertas y Failsafes
@@ -407,6 +412,7 @@
 > 4. **Resúmenes**: Condensar capítulos en bullet points
 > 5. **Conexiones**: Linking automático entre conceptos relacionados
 >
+
 > [!success]- ## 🚀 Casos de Uso Avanzados
 > 
 > ### Automatización de Workflows Profesionales
@@ -452,6 +458,7 @@
 > 10. **Visualization**: Automated charts + dashboards
 > 11. **Distribution**: Weekly reports + stakeholder emails
 >
+
 > [!quote]- ## 📚 Referencias y Recursos Técnicos
 > 
 > ### Literatura Especializada

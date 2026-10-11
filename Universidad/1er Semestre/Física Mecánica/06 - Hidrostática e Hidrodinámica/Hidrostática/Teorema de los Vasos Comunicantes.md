@@ -6,8 +6,10 @@ dg-publish: true
 
 >[!quote] _"La naturaleza no hace saltos, pero establece equilibrios perfectos. En los vasos comunicantes encontramos la armonía hidrostática que gobierna desde una simple manguera hasta los más complejos sistemas de ingeniería."_
 >
+
 > [!info]+ Definición Fundamental 💧 Los **vasos comunicantes** son recipientes conectados entre sí que contienen un líquido en equilibrio. El principio establece que cuando varios recipientes están conectados por su base, **el líquido alcanza el mismo nivel en todos ellos**, independientemente de la forma o tamaño de cada recipiente.
 >
+
 > [!note] Fundamento Físico ⚖️
 > 
 > ### Presión Hidrostática
@@ -33,6 +35,7 @@ dg-publish: true
 >     style E fill:#e8f5e8
 > ```
 >
+
 > [!tip] Características Principales 🔬
 > 
 > ### Con Líquidos Homogéneos
@@ -49,6 +52,7 @@ dg-publish: true
 > - El líquido más denso queda en la parte inferior
 > - Las alturas son inversamente proporcionales a las densidades
 >
+
 > [!example] Aplicaciones Prácticas 🏗️
 > 
 > ### En la Vida Cotidiana
@@ -93,6 +97,7 @@ dg-publish: true
 > 3. **Observación**: Monitorear cómo el agua se distribuye
 > 4. **Resultado**: El agua alcanza la misma altura en todos los tubos
 >
+
 > [!warning] Condiciones y Limitaciones ⚠️
 > 
 > ### Condiciones Necesarias
@@ -109,6 +114,7 @@ dg-publish: true
 > - **📊 Densidad variable**: Con cambios de temperatura
 > - **📈 Presión externa**: Diferencias de presión atmosférica
 >
+
 > [!summary]+ Fórmulas Importantes 📊
 > 
 > ### Equilibrio Básico
@@ -127,6 +133,7 @@ dg-publish: true
 >
 > [!brain]+ Técnica de Memorización: VACCONE 🧠 **V** - Vasos conectados **A** - Altura igual siempre **C** - Comunicación libre necesaria **C** - Condiciones de equilibrio **O** - Obstáculos impiden funcionamiento **N** - Nivel idéntico resultado **E** - Equilibrio hidrostático base
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 
 > 1. **📐 La forma no importa**: Solo cuenta la altura del líquido
@@ -154,6 +161,7 @@ dg-publish: true
 > - [[Presión y Fuerza]]
 > - [[Densidad y Peso Específico]]
 >
+
 > [!tip] Continuación del Tema
 > 
 > - [[Principio de Arquímedes]]

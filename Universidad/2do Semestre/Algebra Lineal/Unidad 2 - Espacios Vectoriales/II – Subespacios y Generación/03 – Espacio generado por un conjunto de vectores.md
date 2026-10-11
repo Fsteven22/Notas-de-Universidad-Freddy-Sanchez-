@@ -1041,6 +1041,7 @@ dg-publish: true
 > 
 > c) $\text{span}\left\{ \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}, \begin{bmatrix} 2 \\ 4 \\ 6 \end{bmatrix} \right\}$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Redundancia:**
@@ -1107,6 +1108,7 @@ dg-publish: true
 > 
 > c) Describir geométricamente $\text{span}(S_1 \cup S_2)$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Espacio columna:**
@@ -1199,6 +1201,7 @@ dg-publish: true
 > 
 > $$\boxed{\text{Sí, está en el span}}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $S = \left\{ \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \end{bmatrix} \right\}$
@@ -1229,6 +1232,7 @@ dg-publish: true
 > 
 > $$\boxed{x + y - z = 0}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7a)** $A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 3 & 6 & 9 \end{bmatrix}$

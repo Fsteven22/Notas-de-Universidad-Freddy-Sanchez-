@@ -37,6 +37,7 @@ dg-publish: true
 > |**Base**|Lecturas previas, datos, teorías y citas|Referencias a autores y estudios|
 > |**Tono**|Formal, preciso y prudente|Se evita el yo creo y el lenguaje coloquial|
 >
+
 > [!note] 🎓 Por qué importa en la universidad
 >
 > |Razón|Explicación|
@@ -47,6 +48,7 @@ dg-publish: true
 > |**Es transversal**|Se exige en todas las carreras, desde ingeniería hasta comunicación|
 > |**Evita el plagio**|Te obliga a distinguir tu voz de la voz de las fuentes|
 >
+
 > [!note] 🗂️ Géneros académicos más comunes
 >
 > |Género|Propósito|Extensión típica|
@@ -73,6 +75,7 @@ dg-publish: true
 > |**Objetividad**|¿Hablan los hechos o solo mi opinión?|
 > |**Estructura**|¿Cada párrafo tiene una idea y un lugar?|
 >
+
 > [!success] 🔬 1. Rigor — precisión y fuentes verificables
 >
 > El rigor significa que cada dato es exacto, cada término está bien usado y cada afirmación importante tiene respaldo.
@@ -92,6 +95,7 @@ dg-publish: true
 > >
 > > ✅ La concentración de CO2 superó las 420 ppm en 2023 según la NOAA, lo que confirma una tendencia ascendente sostenida.
 >
+
 > [!success] 🎩 2. Formalidad — registro culto y tercera persona
 >
 > La formalidad es el traje del texto académico: vocabulario preciso, sintaxis completa y trato de usted al lector. Se prefiere la tercera persona y las construcciones impersonales.
@@ -112,6 +116,7 @@ dg-publish: true
 > >
 > > ✅ Este tema resulta relevante por la diversidad de enfoques que convoca.
 >
+
 > [!success] ⚖️ 3. Objetividad — hechos sobre opiniones
 >
 > Ser objetivo no es no tener punto de vista, sino **fundamentarlo**. El texto académico privilegia la evidencia sobre la emoción y matiza las afirmaciones.
@@ -131,6 +136,7 @@ dg-publish: true
 > >
 > > ✅ Diversos estudios señalan una correlación entre el uso intensivo de redes sociales y la disminución del tiempo de estudio sostenido.
 >
+
 > [!success] 🏛️ 4. Estructura — introducción, desarrollo y conclusión
 >
 > Un texto académico siempre avanza en tres momentos y cada párrafo desarrolla **una sola idea central** anunciada en su oración temática.
@@ -152,6 +158,7 @@ dg-publish: true
 >
 > > 📌 Un párrafo = una idea. Si puedes ponerle dos títulos distintos a un mismo párrafo, debes dividirlo en dos.
 >
+
 > [!tip] 📊 Tabla resumen de los cuatro rasgos
 >
 > |Rasgo|En qué consiste|Error típico|Antídoto|
@@ -176,6 +183,7 @@ dg-publish: true
 >
 > > 📌 Autotest rápido antes de entregar: subraya los yo, rodea las muletillas, marca cada cita y ponle título a cada párrafo. Si algo falla, corrígelo.
 >
+
 > [!danger] ⛔ Falsos amigos del registro académico
 >
 > |Quita esto|Pon esto|
@@ -207,6 +215,7 @@ dg-publish: true
 >
 > > 📌 Si acertaste 5 de 6, ya distingues el registro. Si fallaste más, repasa la tabla resumen de los cuatro rasgos.
 >
+
 > [!example]- ✏️ Ejercicio 03.2 — Reescritura en registro académico
 >
 > **Consigna:** Reescribe el siguiente párrafo informal en registro académico. Debes corregir primera persona, coloquialismos, falta de citas y ausencia de estructura.
@@ -253,12 +262,14 @@ dg-publish: true
 > - [ ] Nombro los cuatro rasgos esenciales: rigor, formalidad, objetividad y estructura.
 > - [ ] Reconozco marcas coloquiales y las reemplazo por equivalentes formales.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Redacto párrafos académicos con oración temática, desarrollo, evidencia y cierre.
 > - [ ] Cito fuentes de forma básica para respaldar una afirmación sin incurrir en plagio.
 > - [ ] Reescribo un párrafo informal en registro académico corrigiendo los cuatro errores frecuentes.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Estructuro un ensayo breve completo con introducción, desarrollo y conclusión cohesionados.
@@ -314,6 +325,7 @@ mindmap
 >
 > [4] R. Hernández Sampieri, C. Fernández Collado y P. Baptista Lucio, *Metodología de la investigación*, 6ta ed. México: McGraw-Hill, 2014.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[01 - Tipos de texto según su intención]] — base para distinguir la intención demostrativa del texto académico frente a narrar, describir o persuadir.

@@ -48,6 +48,7 @@ mindmap
 > - **Ctrl + Shift + Esc**: Administrador de tareas instantáneo
 > - **Win + E**: Explorador de archivos
 >
+
 > [!tip] macOS
 > 
 > - **Cmd + Space**: Spotlight para búsqueda universal
@@ -55,6 +56,7 @@ mindmap
 > - **Cmd + ` **: Cambiar entre ventanas de la misma app
 > - **Control + ↑**: Mission Control
 >
+
 > [!tip] Linux
 > 
 > - **Alt + F2**: Lanzador de aplicaciones

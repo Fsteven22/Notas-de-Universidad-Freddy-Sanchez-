@@ -346,6 +346,7 @@ graph TD
 > - [[Liderazgo Situacional]] - Aplicación de IE en contextos de liderazgo
 > - [[La Comunicación Efectiva]] - IE como base para comunicación de calidad
 >
+
 > [!info] **Notas Recomendadas para Profundizar**
 
 ### **Prerrequisitos** 📋

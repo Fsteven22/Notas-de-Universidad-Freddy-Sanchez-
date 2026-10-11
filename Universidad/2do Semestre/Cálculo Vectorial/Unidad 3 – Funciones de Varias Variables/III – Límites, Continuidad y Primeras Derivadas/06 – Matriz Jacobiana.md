@@ -912,6 +912,7 @@ dg-publish: true
 > 
 > c) $\vec{F}(x,y) = \begin{bmatrix} x\cos\theta - y\sin\theta \ x\sin\theta + y\cos\theta \end{bmatrix}$ (rotación por ángulo $\theta$)
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Regla de la cadena:**
@@ -950,6 +951,7 @@ dg-publish: true
 > 
 > c) Comparar con el valor exacto
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Teorema de la función inversa:**
@@ -1044,6 +1046,7 @@ dg-publish: true
 > 
 > Las rotaciones preservan áreas.
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **5b)** Coordenadas elípticas:
@@ -1077,6 +1080,7 @@ dg-publish: true
 > 
 > Error pequeño, la aproximación es buena cerca del origen.
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7.** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$

@@ -36,6 +36,7 @@ dg-publish: true
 > 
 > Ejemplo de código **inválido**: $A=0$, $B=01$ — aquí $0$ (código de A) es el prefijo de $01$ (código de B), así que al leer `01` no se sabría si es "A seguido de B" o simplemente "B".
 >
+
 > [!note] 📋 Definición — Árbol de Huffman
 > 
 > Un **árbol de Huffman** es un árbol binario donde:
@@ -54,6 +55,7 @@ dg-publish: true
 > 
 > El algoritmo de Huffman siempre combina los **dos símbolos (o nodos) de menor frecuencia** disponibles en cada paso, construyendo el árbol de abajo hacia arriba. Esta decisión local (siempre tomar los dos más pequeños) garantiza un resultado **globalmente óptimo**: el código prefijo con la menor cantidad de bits promedio posible para esa distribución de frecuencias.
 >
+
 > [!example]- 🟢 Ejemplo paso a paso: construir un árbol de Huffman
 > 
 > Alfabeto y frecuencias: $A=5$, $B=9$, $C=12$, $D=13$, $E=16$, $F=45$ (total: 100 símbolos).
@@ -125,10 +127,12 @@ dg-publish: true
 > 
 > Cuando dos o más nodos tienen la **misma frecuencia**, el orden en que los combines puede generar árboles distintos (y códigos distintos), pero **igualmente óptimos** en cantidad total de bits. No existe un único árbol de Huffman "correcto" para una distribución de frecuencias — pueden existir varias soluciones válidas.
 >
+
 > [!warning] ⚠️ No confundir "código más corto" con "símbolo alfabéticamente primero"
 > 
 > Un error común es asumir que la letra "A" o el primer símbolo de la lista recibe el código más corto. En realidad, el código más corto siempre lo recibe el símbolo con **mayor frecuencia**, sin importar su posición o nombre — en el ejemplo anterior, $F$ (la más frecuente) recibió el código de un solo bit, no $A$.
 >
+
 > [!warning] ⚠️ Huffman necesita transmitir el árbol (o la tabla de frecuencias)
 > 
 > Igual que Keyword Encoding necesita su diccionario, Huffman necesita que el receptor conozca el árbol (o las frecuencias) para poder decodificar. En archivos muy pequeños, este costo adicional puede reducir o incluso eliminar el ahorro obtenido.
@@ -175,18 +179,21 @@ graph TD
 > 2. En un árbol de Huffman, ¿qué determina si un símbolo recibe un código corto o largo?
 > 3. ¿Por qué Huffman se considera un algoritmo "greedy" (voraz)?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Dado el alfabeto $P=2, Q=3, R=5$, construye el árbol de Huffman paso a paso y asigna los códigos.
 > 5. Con los códigos obtenidos en el ejercicio anterior, calcula cuántos bits ocuparía codificar una secuencia con esas frecuencias exactas (10 símbolos totales) usando Huffman, y compáralo contra codificación de longitud fija (2 bits por símbolo, ya que hay 3 símbolos).
 > 6. Verifica si $X=0, Y=10, Z=11$ es un código prefijo válido.
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 7. Dado el alfabeto $M=1, N=2, O=3, P=4$ (total 10), construye el árbol de Huffman completo y calcula el ahorro de bits respecto a codificación de longitud fija de 2 bits por símbolo.
 > 8. Explica por qué, aunque dos árboles de Huffman distintos puedan generar códigos diferentes para el mismo alfabeto, ambos son igualmente "óptimos" en cantidad total de bits.
 > 9. Dado el código de Huffman $A=00, B=01, C=10, D=11$, decodifica la secuencia `00011011` y explica por qué, en este caso particular, el resultado es idéntico al que obtendrías con codificación de longitud fija.
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -209,12 +216,14 @@ graph TD
 > - [ ] Entiendo qué es un árbol de Huffman y cómo se lee un código desde la raíz hasta una hoja.
 > - [ ] Sé que los símbolos más frecuentes reciben códigos más cortos.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo construir un árbol de Huffman completo dado un alfabeto con frecuencias.
 > - [ ] Puedo calcular el total de bits usados por un código de Huffman.
 > - [ ] Puedo comparar el ahorro de Huffman contra codificación de longitud fija.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo manejar empates de frecuencia al construir el árbol y entender por qué distintos árboles pueden ser igualmente óptimos.
@@ -229,6 +238,7 @@ graph TD
 > 
 > [1] Material de clase — Unidad 3: Representación de la información, Computación y Sociedad. [2] Huffman, D. A. (1952). _A Method for the Construction of Minimum-Redundancy Codes_.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Keyword Encoding y ASCII]] — ambos son algoritmos de compresión sin pérdida basados en sustituir símbolos por códigos más cortos.

@@ -77,6 +77,7 @@ dg-publish: true
 > 
 > ---
 >
+
 > [!note] 🔍 Reading Comprehension Questions
 > 
 > **Level 1: Basic Understanding**
@@ -167,6 +168,7 @@ dg-publish: true
 > >     - 1. Quality, 2. Price, 3. Design, 4. Sustainability, 5. Brand
 > >     - (Accept any order with justification)
 >
+
 > [!tip] 📚 Vocabulary from Reading
 > 
 > **Key terms to extract:**
@@ -285,6 +287,7 @@ dg-publish: true
 > ☐ Checked spelling and grammar
 > ```
 >
+
 > [!note] 📝 Writing Task 2: Product Review
 > 
 > **Assignment:**
@@ -459,6 +462,7 @@ dg-publish: true
 > > actual need!"
 > > ```
 >
+
 > [!tip] 🎯 Speaking Task: Product Recommendation
 > 
 > **Task:**
@@ -540,6 +544,7 @@ dg-publish: true
 > > ☐ Eye contact and clear pronunciation
 > > ```
 >
+
 > [!note] 🤝 Pair/Group Discussion Activities
 > 
 > **Activity 1: Debate - Quality vs Price**

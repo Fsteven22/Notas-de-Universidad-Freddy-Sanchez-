@@ -17,6 +17,7 @@ dg-publish: true
 > - Cualquier recta secante queda por **encima** de la curva
 > - Los puntos se alejan de la tangente hacia arriba
 >
+
 > [!tip] Concavidad Hacia Abajo (Cóncava Abajo) ⬇️
 > 
 > - La gráfica tiene forma de "∩" (U invertida)
@@ -107,6 +108,7 @@ graph LR
 
 > [!warning] Condición Necesaria **f''(x) = 0** o **f''(x) no existe**
 >
+
 > [!warning] Condición Suficiente La segunda derivada debe **cambiar de signo** al pasar por el punto candidato.
 
 ### Proceso para Encontrar Puntos de Inflexión
@@ -155,12 +157,14 @@ flowchart LR
 
 > [!tip] Mnemotecnia: "COCA-COLA" **CO**ncavidad **C**on **A**rriba → f''(x) > 0 (forma de **C**opa) **CO**ncavidad **L**leva **A**bajo → f''(x) < 0 (**L**oma invertida)
 >
+
 > [!tip] Método de Estudio: Regla de las Manos ✋
 > 
 > - **Mano derecha hacia arriba** (dedos apuntan arriba) = Cóncava arriba
 > - **Mano izquierda hacia abajo** (dedos apuntan abajo) = Cóncava abajo
 > - **Punto donde cambias de mano** = Punto de inflexión
 >
+
 > [!summary] ### Tabla Resumen para Memorizar
 > 
 > 
@@ -181,6 +185,7 @@ flowchart LR
 > - Cambio de signo: (-,0,+)
 > - **Punto de inflexión: (0,0)**
 >
+
 > [!example] Ejemplo 2: f(x) = x⁴
 > 
 > - f'(x) = 4x³
@@ -274,8 +279,10 @@ graph TD
 
 > [!quote] [[Criterios de Optimización]] Aprende sobre máximos y mínimos usando derivadas
 >
+
 > [!quote] [[01 - Análisis Completo de Funciones]] Estudio completo del comportamiento de funciones
 >
+
 > [!quote] [[Aplicaciones de Derivadas]] Casos prácticos del uso de derivadas en problemas reales
 
 

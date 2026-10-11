@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "No hay medición sin error; la sabiduría está en conocerlos, cuantificarlos y minimizarlos para extraer la verdad de los datos." 📐
 >
+
 > [!info] Los errores en las mediciones son inevitables en cualquier experimento científico. Comprender su naturaleza, origen y métodos de tratamiento es fundamental para obtener resultados confiables y establecer la incertidumbre de nuestras mediciones. La clasificación correcta de errores permite aplicar técnicas estadísticas apropiadas y mejorar la precisión experimental.
 
 ## 🔧 Conceptos Fundamentales
@@ -35,6 +36,7 @@ dg-publish: true
 > |Aleatorio|Variable e impredecible|Dispersa los datos|Promediado estadístico|
 > |Lectura|Limitado por resolución|Error mínimo base|Interpolación cuidadosa|
 >
+
 > [!tip] **Errores Sistemáticos** 🎯
 > 
 > ### Características:
@@ -71,6 +73,7 @@ dg-publish: true
 > - Cambio de instrumento o método
 > - Análisis de tendencias en los datos
 >
+
 > [!warning] **Errores Aleatorios** 🎲
 > 
 > ### Características:
@@ -107,6 +110,7 @@ dg-publish: true
 > - Media tiende al valor verdadero
 > - Desviación estándar caracteriza la dispersión
 >
+
 > [!success] **Errores de Lectura** 📏
 > 
 > ### Definición:
@@ -201,6 +205,7 @@ dg-publish: true
 > - Factor de corrección: +0.141 mm
 > - Valor corregido para futuras mediciones: x_corregido = x_medido + 0.141 mm
 >
+
 > [!example] **Problema 2: Análisis de Error Aleatorio** 🎲
 > 
 > ### Enunciado:
@@ -231,6 +236,7 @@ dg-publish: true
 > - Error aleatorio dominante debido a fluctuaciones del instrumento
 > - La precisión mejora con el promedio de múltiples mediciones
 >
+
 > [!example] **Problema 3: Combinación de Errores** ⚖️
 > 
 > ### Enunciado:
@@ -266,6 +272,7 @@ dg-publish: true
 > **S**istemático → **S**esgo constante, **S**e puede corregir **A**leatorio → **A**lrededor del promedio, se **A**veriga estadísticamente  
 > **L**ectura → **L**imitado por escala, **L**a mitad de la división
 >
+
 > [!tip] **Regla de las 3 C's** 🎯
 > 
 > - **Sistemático**: se puede **C**orregir
@@ -330,6 +337,7 @@ dg-publish: true
 > - **Estadística básica**: Media, desviación estándar, distribuciones
 > - **Metrología**: Conceptos de trazabilidad y calibración
 >
+
 > [!note] **Temas Avanzados**
 > 
 > - **Análisis de regresión**: Para identificar tendencias sistemáticas

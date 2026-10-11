@@ -967,6 +967,7 @@ dg-publish: true
 > ```
 >
 >
+
 > [!example] Exercise 2: Correct the Mistakes
 >
 > **Find and correct the errors:**
@@ -1021,6 +1022,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] Exercise 3: Complete the Conversations
 >
 > **Fill in the blanks with the correct form:**
@@ -1080,6 +1082,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] Exercise 4: Rewrite Using the Other Tense
 >
 > **Change the tense while keeping similar meaning (when possible):**
@@ -1116,6 +1119,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] Exercise 5: Choose and Explain
 >
 > **Choose the better option and explain why:**
@@ -1163,6 +1167,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] Exercise 6: Translate from Spanish
 >
 > **Translate these sentences, choosing the correct tense:**
@@ -1217,6 +1222,7 @@ dg-publish: true
 >
 > 
 >
+
 > [!example] Exercise 7: Present Perfect Simple or Continuous? Context Matters
 >
 > **Read the situation and choose the appropriate tense:**
@@ -1384,6 +1390,7 @@ dg-publish: true
 > | Temporary situation | I have been feeling tired lately | lately, recently, these days |
 > | Repeated actions over time | He has been calling me daily | lately, recently |
 >
+
 > [!tip] Signal Words Comparison
 >
 > **Words that suggest PRESENT PERFECT SIMPLE:**
@@ -1980,6 +1987,7 @@ dg-publish: true
 > • Self-evaluate progress and identify next steps
 > ```
 >
+
 > [!tip] Daily Practice Routine (20 minutes)
 > 
 > **Morning (7 minutes):**

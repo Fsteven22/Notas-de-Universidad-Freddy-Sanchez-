@@ -2,6 +2,7 @@
 
 > [!quote] "Los equipos extraordinarios no nacen, se construyen. La verdadera magia ocurre cuando individuos talentosos deciden que juntos pueden lograr algo imposible de alcanzar solos." - Patrick Lencioni
 >
+
 > [!info]- 🏗️ **Fundamentos del Team Building**
 > 
 > ## 🎯 Definición y Propósito Central
@@ -52,6 +53,7 @@
 > |**👥 Evitar Accountability**|Estándares bajos, resentimiento|Responsabilidad peer-to-peer|6-10 semanas|
 > |**🎯 Falta Atención Resultados**|Ego, status, agendas individuales|Foco colectivo en outcomes|4-8 semanas|
 >
+
 > [!success]- 🎪 **Actividades de Team Building Efectivas**
 > 
 > ## 🏆 High-Impact Activities por Fase de Desarrollo
@@ -131,6 +133,7 @@
 > |**🎪 Peer Coaching**|Desarrollo mutuo|Semanal|30 min|
 > |**🌟 Stretch Projects**|Desafíos conjuntos|Por proyecto|Variable|
 >
+
 > [!tip]- 🧠 **Psicología del Team Building**
 > 
 > ## 🔬 Fundamentos Científicos
@@ -196,6 +199,7 @@
 > - **🛠️ Prototype**: Experimentar con nuevas dinámicas
 > - **🧪 Test**: Validar efectividad de cambios
 >
+
 > [!warning]- ⚠️ **Errores Comunes y Anti-Patterns**
 > 
 > ## 🚨 Los 10 Errores Fatales del Team Building
@@ -345,6 +349,7 @@
 > - Thank you messages
 > - Celebration moments
 >
+
 > [!example]- 🏆 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🌟 Casos de Éxito Comprobados
@@ -473,6 +478,7 @@
 > - **🔄 Spaced Practice**: Repetir ejercicios con variaciones
 > - **🌟 Story Creation**: Narrativas compartidas de team journey
 >
+
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -500,6 +506,7 @@
 > - **🏆 Bonusly**: Peer recognition y team rewards
 > - **🔄 Retrium**: Digital retrospectives y team health
 >
+
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites Fundamentales

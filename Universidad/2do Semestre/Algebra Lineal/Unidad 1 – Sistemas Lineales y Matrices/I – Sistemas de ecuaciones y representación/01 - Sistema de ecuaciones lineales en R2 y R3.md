@@ -196,6 +196,7 @@ dg-publish: true
 > 
 > **Identificación algebraica:** Al resolver, se llega a una contradicción como 0 = 5
 >
+
 > [!success] 🟢 Sistema Compatible (Con Solución)
 > 
 > **Definición:** Un sistema es **compatible** o **consistente** si tiene al menos una solución.

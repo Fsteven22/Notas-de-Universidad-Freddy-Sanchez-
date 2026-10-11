@@ -107,6 +107,7 @@ dg-publish: true
 > ✅ pay off = produce good results
 > ```
 >
+
 > [!tip] 📚 Reading Text 2: "The Risk That Changed My Life"
 > 
 > **Pre-reading task:**
@@ -177,6 +178,7 @@ dg-publish: true
 > > 
 > > - take that risk, pursue, disadvantages, guarantee,Options, rewards, chance
 >
+
 > [!example] 📰 Reading Text 3: "Small Steps, Big Results"
 > 
 > ### Small Steps, Big Results
@@ -297,6 +299,7 @@ dg-publish: true
 > ✅ Did I check for grammar and spelling errors?
 > ```
 >
+
 > [!success] ✅ Sample Essay (Model Answer)
 > 
 > ### Learning to Speak in Public
@@ -315,6 +318,7 @@ dg-publish: true
 > 
 > ✅ Clear structure (intro, challenge, result) ✅ Phrasal verbs: set up, give up, kept going, worked on, found out ✅ Second conditional: "if I gave up, I would never improve" ✅ Unit 11 vocabulary: goal, challenging, overcome, obstacles, confidence, achieve ✅ Personal and authentic ✅ Good conclusion with advice
 >
+
 > [!tip] 📝 Writing Task 2: Goal-Setting Paragraph
 > 
 > **Topic:** Describe a goal you're currently working on
@@ -378,6 +382,7 @@ dg-publish: true
 > 
 > ```
 >
+
 > [!example] 📝 Writing Task 3: Advice Letter
 > 
 > **Situation:** Your friend sent you this message:
@@ -526,6 +531,7 @@ dg-publish: true
 > ✅ Did I speak confidently?
 > ```
 >
+
 > [!success] 🎤 Speaking Activity 2: Paired Discussion
 > 
 > **Task:** Discuss these questions with a partner (15-20 minutes total)
@@ -589,6 +595,7 @@ dg-publish: true
 > ✅ That's interesting! Why do you think that?
 > ```
 >
+
 > [!tip] 🎤 Speaking Activity 3: Role-Play Scenarios
 > 
 > **Scenario 1: The Motivational Coach**
@@ -669,6 +676,7 @@ dg-publish: true
 > • Give practical advice
 > ```
 >
+
 > [!example] 🎤 Speaking Activity 4: Debate
 > 
 > **Motion:** "Taking big risks is necessary for success"

@@ -2,6 +2,7 @@
 
 > [!quote] 🌅 "El ritmo circadiano es el reloj maestro de nuestro cuerpo, sincronizando cada proceso biológico con el ciclo natural de 24 horas. Comprenderlo es la clave para optimizar nuestro rendimiento, salud y bienestar." - Investigación en Cronobiología
 >
+
 > [!info]- ## 🧬 Fundamentos Biológicos
 > 
 > ### Mecanismo del Reloj Circadiano
@@ -36,6 +37,7 @@
 > |**CRY1/CRY2** 🌙|Proteínas criptocromo|Represión nocturna|
 > |**BMAL1** 🌅|Regulador del ciclo|Activación diurna|
 >
+
 > [!tip]- ## ⏰ Cronotipos y Patrones Naturales
 > 
 > ### Tipos de Cronotipos
@@ -57,6 +59,7 @@
 > |**Hora ideal dormir**|9:30-10:30 PM|10:30-11:30 PM|11:30 PM-1:00 AM|
 > |**Temperatura mín.**|4:00-5:00 AM|4:30-5:30 AM|5:00-6:00 AM|
 >
+
 > [!success]- ## 🌊 Optimización de Ritmos Circadianos
 > 
 > ### Factores de Sincronización (Zeitgebers)
@@ -112,6 +115,7 @@
 > - **Rutina pre-sueño**: 30-60 min consistente
 > - **Ayuno nocturno**: 12-14 horas sin comer
 >
+
 > [!warning]- ## ⚠️ Disruptores del Ritmo Circadiano
 > 
 > ### Principales Enemigos del Reloj Biológico
@@ -149,6 +153,7 @@
 > |**🛡️ Inmune**|Resistencia ↓|Cáncer ↑, Infecciones ↑|
 > |**😊 Emocional**|Irritabilidad ↑, Ánimo ↓|Depresión ↑, Ansiedad ↑|
 >
+
 > [!example]- ## 🛠️ Estrategias de Intervención
 > 
 > ### Terapia de Luz
@@ -237,6 +242,7 @@
 > 4. **Implementación gradual**: Cambia horarios progresivamente
 > 5. **Optimización continua**: Ajusta según resultados
 >
+
 > [!quote]- ## 📚 Referencias y Estudios Clave
 > 
 > ### Literatura Científica Fundamental

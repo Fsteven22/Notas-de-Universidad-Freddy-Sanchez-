@@ -43,6 +43,7 @@ dg-publish: true
 > 
 > Según la banda de frecuencias que dejan pasar, se clasifican en cuatro tipos:
 >
+
 > [!note] 🔉 Pasa bajo (LPF - Low Pass Filter)
 > 
 > Deja pasar las frecuencias por debajo de la frecuencia de corte $f_c$ y atenúa las superiores.
@@ -53,6 +54,7 @@ dg-publish: true
 > 
 > Circuito RC (R en serie, C a tierra en la salida) o circuito RL (L en serie, R a tierra en la salida).
 >
+
 > [!note] 🔊 Pasa alto (HPF - High Pass Filter)
 > 
 > Deja pasar las frecuencias por encima de $f_c$ y atenúa las inferiores.
@@ -63,6 +65,7 @@ dg-publish: true
 > 
 > Circuito RC (C en serie, R a tierra en la salida) o circuito RL (R en serie, L a tierra en la salida) — es el complemento del LPF.
 >
+
 > [!note] 📶 Pasa banda (BPF - Band Pass Filter)
 > 
 > Deja pasar solo una banda de frecuencias entre $\omega_1$ y $\omega_2$, atenuando tanto las bajas como las altas fuera de ese rango.
@@ -71,10 +74,12 @@ dg-publish: true
 > 
 > Se puede armar en cascada combinando un HPF (define $\omega_1$) seguido de un LPF (define $\omega_2$).
 >
+
 > [!note] 🚫 Rechaza banda (Notch)
 > 
 > Es el opuesto al BPF: atenúa fuertemente una banda estrecha alrededor de una frecuencia central $f_{NOTCH}$ (por ejemplo, para eliminar el ruido de 60 Hz de la red eléctrica) y deja pasar el resto del espectro.
 >
+
 > [!success] 📊 Resumen de filtros pasivos
 > 
 > |Tipo|Deja pasar|Atenúa|Parámetro clave|
@@ -124,6 +129,7 @@ dg-publish: true
 > - Poco eficiente: se desperdicia medio ciclo completo.
 > - PIV (voltaje inverso pico) que debe soportar el diodo: $PIV = V_m$.
 >
+
 > [!note] 🔌 Rectificador de onda completa
 > 
 > Aprovecha ambos semiciclos de la señal, duplicando la frecuencia de rizado y la eficiencia frente al de media onda. Existen dos variantes:
@@ -147,6 +153,7 @@ dg-publish: true
 > 
 > > 📌 Diodos rectificadores comerciales típicos para esta configuración: **1N4007** (1 A, hasta 1000 V pol. inversa) y **1N5408** (3 A, hasta 700 V pol. inversa) — la elección depende de la corriente de carga esperada.
 >
+
 > [!success] 📊 Comparación de rectificadores
 > 
 > |Característica|Media onda|Onda completa (center-tap)|Onda completa (puente)|
@@ -189,6 +196,7 @@ dg-publish: true
 > 
 > > 📌 A mayor capacitancia $C$ o mayor frecuencia de rizado $f$, menor rizado. Por eso el puente de diodos (que duplica $f$) siempre da menos rizado que el rectificador de media onda para la misma $C$.
 >
+
 > [!warning] ⚠️ Error común
 > 
 > Olvidar que $f$ en la fórmula del rizado es la **frecuencia de rizado**, no la frecuencia de la red. Usar $f_{línea}$ en vez de $2f_{línea}$ en un rectificador de onda completa da un rizado calculado el doble de grande del real.
@@ -239,6 +247,7 @@ dg-publish: true
 > |**3**|$V_r(pp) = \dfrac{I_{DC}}{f \cdot C} = \dfrac{0.02}{60 \times 100\times10^{-6}} \approx 3.33\text{ V}$|
 > |**4**|$V_{DC} \approx V_m - \dfrac{V_r(pp)}{2} = 20 - 1.67 \approx 18.33\text{ V}$|
 >
+
 > [!example]- ✏️ Ejercicio 2 — Puente rectificador con filtro
 > 
 > **Dato:** mismos valores que el Ejercicio 1, pero con **puente de diodos** en vez de media onda.
@@ -264,12 +273,14 @@ dg-publish: true
 > - [ ] Sé qué hace un capacitor de filtro en el circuito.
 > - [ ] Explico en una frase qué función cumple el regulador, sin necesidad de conocer su circuito interno todavía.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Calculo $V_{DC}$ para media onda y onda completa dado $V_m$.
 > - [ ] Calculo el voltaje de rizado $V_r(pp)$ dado $I_{DC}$, $f$ y $C$, identificando correctamente la frecuencia de rizado según el tipo de rectificador.
 > - [ ] Elijo la capacitancia $C$ necesaria para cumplir un rizado máximo permitido.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Comparo PIV, eficiencia y rizado entre las tres configuraciones de rectificador para elegir la más adecuada a un requerimiento dado.
@@ -312,6 +323,7 @@ mindmap
 > 
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018, pp. 510–540.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - El Diodo - Unión P-N]] — el rectificador es una aplicación directa del diodo en polarización directa/inversa.

@@ -15,6 +15,7 @@
 > - 🔄 **Sincronización**: Continuidad entre dispositivos
 > - ⏰ **Aprovechamiento**: Convierte tiempo muerto en productivo
 >
+
 > [!warning] ⚠️ **Trampas Comunes**
 > 
 > - **Multitasking excesivo**: El móvil invita a saltar entre apps
@@ -69,6 +70,7 @@ graph TB
 > |**🎤 Audio Notes**|Voice Memos, Otter|Recorder, Rev|Captura por voz|
 > |**📊 Documentos**|GoodNotes, Notability|Adobe Scan, CamScanner|Digitalización|
 >
+
 > [!example] ⚡ **Apps de Procesamiento Rápido**
 > 
 > ### 📧 **Email y Comunicación:**
@@ -118,6 +120,7 @@ graph TB
 > - **"Enfoque"** 🎯: Apps de deep work
 > - **"Referencia"** 📚: Apps de consulta rápida
 >
+
 > [!tip] 🔧 **Configuraciones Críticas**
 > 
 > ### ⚙️ **Optimizaciones del Sistema:**
@@ -166,6 +169,7 @@ graph TB
 > 3. **✅ Micro-tasks**: 2-3 tareas que toman <2 min
 > 4. **🧘 Reset**: 1-2 min de breathing o meditación
 >
+
 > [!example] 🏠 **Rutinas Diarias Automatizadas**
 > 
 > ### 🌅 **Rutina Matutina (Shortcuts/Tasker):**
@@ -211,6 +215,7 @@ graph TB
 > |**15-30 min**|✅|✅|✅|✅|
 > |**+30 min**|✅|✅|✅|✅|
 >
+
 > [!tip] 📱 **Técnica del Batching Móvil**
 > 
 > ### 📦 **Agrupa tareas similares:**

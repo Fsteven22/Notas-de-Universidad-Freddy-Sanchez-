@@ -177,6 +177,7 @@ dg-publish: true
 > 4. *If the restaurant gets good reviews, it will become very popular.*
 > 5. *If you freeze meat, it lasts much longer.*
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 >
 > 1. Zero Conditional *(ley científica)*
@@ -197,6 +198,7 @@ dg-publish: true
 > 9. Call me if you __________________ (need) help with the recipe.
 > 10. If the trend __________________ (continue), prices will go up.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 >
 > 6. don't rinse
@@ -217,6 +219,7 @@ dg-publish: true
 > 14. *I'll text you when I will get home.*
 > 15. *As soon as the oil will heat up, add the garlic.*
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 >
 > 11. ~~will be~~ → **is** — *When the pasta **is** ready, I'll drain it.*
@@ -237,6 +240,7 @@ dg-publish: true
 > 19. We'll start the barbecue. / The guests arrive. *(when — final)*
 > 20. She might try the new restaurant. / It gets good reviews. *(if — inicio)*
 >
+
 > [!success] ✅ Respuestas — Ejercicio 4
 >
 > 16. *After you finish chopping, add everything to the pan.*

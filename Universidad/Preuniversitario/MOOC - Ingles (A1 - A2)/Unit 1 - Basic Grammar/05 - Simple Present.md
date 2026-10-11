@@ -609,6 +609,7 @@ dg-publish: true
 > 16. watches
 > ```
 >
+
 > [!example] Exercise 2: Make Negative Sentences
 > 
 > **Change to negative:**
@@ -641,6 +642,7 @@ dg-publish: true
 > 10. They are not students. / They aren't students.
 > ```
 >
+
 > [!example] Exercise 3: Make Questions
 > 
 > **Form yes/no questions:**
@@ -673,6 +675,7 @@ dg-publish: true
 > 10. Am I late?
 > ```
 >
+
 > [!example] Exercise 4: WH- Questions
 > 
 > **Complete the questions:**
@@ -705,6 +708,7 @@ dg-publish: true
 > 10. What do you think?
 > ```
 >
+
 > [!example] Exercise 5: Choose Simple Present or Present Continuous
 > 
 > **Fill in with the correct tense:**
@@ -833,6 +837,7 @@ dg-publish: true
 > • What are you doing? (en este momento)
 > ```
 >
+
 > [!tip] Consejos y Trucos de Memoria
 > 
 > **Tip 1: Memoriza "HE/SHE/IT + S"**
@@ -959,6 +964,7 @@ dg-publish: true
 > read, go, don't sleep, am
 > ```
 >
+
 > [!example] Exercise 7: Correct the Errors
 > 
 > **Each sentence has one error. Find and correct it:**
@@ -1011,6 +1017,7 @@ dg-publish: true
 > 20. He always goes to work by bus. (goes, not go)
 > ```
 >
+
 > [!example] Exercise 8: Translation Practice
 > 
 > **Translate from Spanish to English:**
@@ -1053,6 +1060,7 @@ dg-publish: true
 > 30. How much does it cost?
 > ```
 >
+
 > [!example] Exercise 9: Interview Questions
 > 
 > **Create questions using the simple present:**

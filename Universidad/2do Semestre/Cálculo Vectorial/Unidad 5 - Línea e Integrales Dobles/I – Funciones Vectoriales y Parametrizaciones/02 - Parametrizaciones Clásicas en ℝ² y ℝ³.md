@@ -208,6 +208,7 @@ graph TB
 > - Ruedas y engranajes en ingeniería
 > - Órbitas aproximadas en astronomía
 >
+
 > [!success] 🔶 2. Elipse
 > 
 > **Ecuación implícita:** x²/a² + y²/b² = 1
@@ -318,6 +319,7 @@ graph TB
 > Longitud = √(3² + 4²) = 5
 > ```
 >
+
 > [!example] 📊 4. Parábola
 > 
 > **Ecuación explícita:** y = ax² + bx + c
@@ -429,6 +431,7 @@ graph TB
 >     style D fill:#fff4e1
 > ```
 >
+
 > [!tip] 🎯 6. Espiral de Arquímedes
 > 
 > **Ecuación polar:** r = aθ
@@ -464,6 +467,7 @@ graph TB
 >   r(t) = (a·cos(t)/t, a·sin(t)/t)
 > ```
 >
+
 > [!tip] 🌸 7. Rosa (Rhodonea)
 > 
 > **Ecuación polar:** r = a·cos(nθ) o r = a·sin(nθ)
@@ -498,6 +502,7 @@ graph TB
 > Pétalos en ángulos: 0°, 90°, 180°, 270°
 > ```
 >
+
 > [!tip] ∞ 8. Lemniscata de Bernoulli
 > 
 > **Ecuación implícita:** (x² + y²)² = a²(x² - y²)
@@ -605,6 +610,7 @@ graph TB
 >     style G fill:#fff4e1
 > ```
 >
+
 > [!success] 🎢 2. Curva de Viviani
 > 
 > **Definición:** Intersección de una esfera con un cilindro tangente.
@@ -641,6 +647,7 @@ graph TB
 > |**Proyección xy**|Círculo de radio a/2|
 > |**Proyección xz**|Cardioide|
 >
+
 > [!success] 🔗 3. Nudo Trébol
 > 
 > **Parametrización:**
@@ -731,6 +738,7 @@ graph TB
 > style B fill:#e1ffe1
 > ```
 >
+
 > [!note] 🥐 5. Toro (Dona)
 > 
 > **Parametrización:**
@@ -783,6 +791,7 @@ graph TB
 > - Topología: superficie de género 1
 > - Juego del "snake" que envuelve
 >
+
 > [!note] 🎪 6. Cilindro
 > 
 > **Ecuación implícita:** x² + y² = R²
@@ -816,6 +825,7 @@ graph TB
 >   x = u, y = v, z = u²
 > ```
 >
+
 > [!note] 📐 7. Cono
 > 
 > **Ecuación implícita:** z² = a²(x² + y²)
@@ -849,6 +859,7 @@ graph TB
 > 
 > donde R = radio de la base, h = altura
 >
+
 > [!note] 🏔️ 8. Paraboloide
 > 
 > **Paraboloide Elíptico:** z = x²/a² + y²/b²
@@ -944,6 +955,7 @@ graph TB
 > |x²/a² - y²/b² = 1|cosh² - sinh² = 1|(a cosh t, b sinh t)|
 > |xy = c|—|(t, c/t)|
 >
+
 > [!tip] 🔄 Método 2: Parametrización por Proyección
 > 
 > **Para superficies z = f(x, y):**
@@ -976,6 +988,7 @@ graph TB
 > r(u, v) = (u, v, au + bv + c)
 > ```
 >
+
 > [!tip] 🌐 Método 3: Coordenadas Curvilíneas
 > 
 > **Sistemas comunes:**
@@ -1074,6 +1087,7 @@ graph TB
 >            r·sin(v))
 > ```
 >
+
 > [!example] 📐 Técnica: Superficies Regladas
 > 
 > **Definición:** Superficie generada por líneas rectas.

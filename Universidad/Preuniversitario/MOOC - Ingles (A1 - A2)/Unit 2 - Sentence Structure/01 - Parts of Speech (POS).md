@@ -88,6 +88,7 @@ dg-publish: true
 > Future perfect: I will have walked
 > ```
 >
+
 > [!example] Verb Examples in Sentences
 > 
 > **Action verbs:**
@@ -145,6 +146,7 @@ dg-publish: true
 >   (might be = helping verbs, waiting = main verb)
 > ```
 >
+
 > [!tip] How to Identify Verbs
 > 
 > **Test 1: The "action or state" test**
@@ -245,6 +247,7 @@ dg-publish: true
 > team, family, class, audience, government
 > ```
 >
+
 > [!example] Noun Examples in Sentences
 > 
 > **Common nouns:**
@@ -319,6 +322,7 @@ dg-publish: true
 > • John (subject) gave Mary (indirect object) a gift (direct object).
 > ```
 >
+
 > [!tip] How to Identify Nouns
 > 
 > **Test 1: Can you put "a/an" or "the" before it?**
@@ -442,6 +446,7 @@ dg-publish: true
 > • John is the tallest student in class. (superlative)
 > ```
 >
+
 > [!example] Adjective Examples in Sentences
 > 
 > **Descriptive adjectives:**
@@ -530,6 +535,7 @@ dg-publish: true
 >   (highest = superlative)
 > ```
 >
+
 > [!tip] How to Identify Adjectives
 > 
 > **Test 1: Does it answer questions about a noun?**
@@ -675,6 +681,7 @@ dg-publish: true
 > another, other, such, what, which, whose
 > ```
 >
+
 > [!example] Determiner and Quantifier Examples in Sentences
 > 
 > **Articles:**
@@ -780,6 +787,7 @@ dg-publish: true
 >   (second = ordinal number)
 > ```
 >
+
 > [!tip] How to Identify Determiners and Quantifiers
 > 
 > **Test 1: Position before nouns**
@@ -832,6 +840,7 @@ dg-publish: true
 > Both: some, any, all → some books/water ✓
 > ```
 >
+
 > [!warning] Common Mistakes with Determiners and Quantifiers
 > 
 > **Mistake 1: Using articles incorrectly**
@@ -949,6 +958,7 @@ dg-publish: true
 > • Maybe we can help.
 > ```
 >
+
 > [!example] Adverb Examples in Sentences
 > 
 > **Modifying verbs (most common):**
@@ -1015,6 +1025,7 @@ dg-publish: true
 > Order: Manner → Place → Time
 > ```
 >
+
 > [!tip] How to Identify Adverbs
 > 
 > **Test 1: Does it answer these questions?**
@@ -1071,6 +1082,7 @@ dg-publish: true
 > ```
 >
 >
+
 > [!warning] Common Mistakes with Adverbs
 > 
 > **Mistake 1: Confusing adjectives and adverbs**
@@ -1199,6 +1211,7 @@ dg-publish: true
 > • Nobody knows the answer.
 > ```
 >
+
 > [!example] Pronoun Examples in Sentences
 > 
 > **Personal pronouns (subject):**
@@ -1292,6 +1305,7 @@ dg-publish: true
 >   (nobody = no person)
 > ```
 >
+
 > [!tip] How to Identify Pronouns
 > 
 > **Test 1: Can it replace a noun?**
@@ -1342,6 +1356,7 @@ dg-publish: true
 > Give it to me. (it, me = object pronouns)
 > ```
 >
+
 > [!warning] Common Mistakes with Pronouns
 > 
 > **Mistake 1: Confusing subject and object pronouns**
@@ -1449,6 +1464,7 @@ dg-publish: true
 > • She's afraid of dogs.
 > ```
 >
+
 > [!example] Preposition Examples in Sentences
 > 
 > **Prepositions of place:**
@@ -1539,6 +1555,7 @@ dg-publish: true
 >   (after the meeting = tells when)
 > ```
 >
+
 > [!tip] How to Identify Prepositions
 > 
 > **Test 1: Does it show a relationship?**
@@ -1587,6 +1604,7 @@ dg-publish: true
 > good at, interested in, afraid of, proud of
 > ```
 >
+
 > [!warning] Common Mistakes with Prepositions
 > 
 > **Mistake 1: Wrong preposition of time**
@@ -1694,6 +1712,7 @@ dg-publish: true
 > • It's raining; therefore, bring an umbrella.
 > ```
 >
+
 > [!example] Conjunction Examples in Sentences
 > 
 > **Coordinating conjunctions:**
@@ -1782,6 +1801,7 @@ dg-publish: true
 >   (if = condition, and = adds information)
 > ```
 >
+
 > [!tip] How to Identify Conjunctions
 > 
 > **Test 1: Does it connect elements?**
@@ -1832,6 +1852,7 @@ dg-publish: true
 > (Note: requires semicolon or period before it)
 > ```
 >
+
 > [!warning] Common Mistakes with Conjunctions
 > 
 > **Mistake 1: Comma splices**
@@ -1958,6 +1979,7 @@ dg-publish: true
 > • Hmm... Let me think.
 > ```
 >
+
 > [!example] Interjection Examples in Sentences
 > 
 > **Expressing strong emotion:**
@@ -2012,6 +2034,7 @@ dg-publish: true
 > • Wow! The view is incredible. (interjection + sentence)
 > ```
 >
+
 > [!tip] How to Identify Interjections
 > 
 > **Test 1: Does it express emotion?**
@@ -2166,6 +2189,7 @@ dg-publish: true
 >      (down = thing, in sports context)
 > ```
 >
+
 > [!example] More Context-Dependent Examples
 > 
 > **"can"**
@@ -2260,6 +2284,7 @@ dg-publish: true
 > 10. Adverb (describes how he works)
 > ```
 >
+
 > [!example] Exercise 2: Multiple Parts of Speech
 > 
 > **Identify the part of speech for the word "light" in each sentence:**
@@ -2278,6 +2303,7 @@ dg-publish: true
 > 4. Adverb (describes how to travel)
 > ```
 >
+
 > [!example] Exercise 3: Fill in the Blanks
 > 
 > **Choose the correct part of speech to complete each sentence:**
@@ -2503,6 +2529,7 @@ dg-publish: true
 > These lists are relatively stable over time.
 > ```
 >
+
 > [!note] Grammatical vs. Lexical Categories
 > 
 > **Lexical categories** (main content):

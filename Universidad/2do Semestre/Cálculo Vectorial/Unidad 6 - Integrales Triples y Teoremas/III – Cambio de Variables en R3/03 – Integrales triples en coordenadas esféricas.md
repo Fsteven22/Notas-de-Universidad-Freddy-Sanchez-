@@ -293,6 +293,7 @@ graph TD
 > 
 > **Respuesta:** $V = \frac{4\pi a^3}{3}$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 2: Hemisferio Superior
 > 
 > **Problema:**
@@ -330,6 +331,7 @@ graph TD
 > 
 > **Respuesta:** $V = \frac{2\pi R^3}{3}$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 3: Casquete Esférico
 > 
 > **Problema:**
@@ -367,6 +369,7 @@ graph TD
 > 
 > **Respuesta:** $V = \frac{4\pi(b^3 - a^3)}{3}$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 4: Cono dentro de Esfera
 > 
 > **Problema:**
@@ -412,6 +415,7 @@ graph TD
 > 
 > **Respuesta:** $V = \frac{16\pi}{3}\left(1 - \frac{\sqrt{2}}{2}\right) = \frac{16\pi(2-\sqrt{2})}{6} = \frac{8\pi(2-\sqrt{2})}{3}$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 5: Masa con Densidad Radial
 > 
 > **Problema:**

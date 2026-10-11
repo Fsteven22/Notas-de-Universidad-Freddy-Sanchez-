@@ -48,6 +48,7 @@ graph TD
 > - **Estabiliza el estado de ánimo** y reduce irritabilidad
 > - **Optimiza la memoria de trabajo** y procesamiento de información
 >
+
 > [!warning] 🚫 Carbohidratos a Evitar
 > 
 > - Azúcares refinados que causan **picos y caídas energéticas**
@@ -283,6 +284,7 @@ graph TD
 > - **Ginkgo Biloba**: Circulación cerebral
 > - **Rhodiola Rosea**: Adaptógeno para estrés
 >
+
 > [!warning] ⚠️ Precauciones con Suplementos
 > 
 > - **Consultar médico** antes de iniciar suplementación

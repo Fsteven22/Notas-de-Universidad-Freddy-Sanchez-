@@ -29,6 +29,7 @@ dg-publish: true
 > - F₁, F₂: Fuerzas aplicadas
 > - A₁, A₂: Áreas de aplicación
 >
+
 > [!warning]+ Condiciones de Validez
 > 
 > - ⚠️ **Fluido incompresible**: Densidad constante
@@ -163,6 +164,7 @@ graph TD
 > - [[Estática de Fluidos]]
 > - [[Unidades de Presión]]
 >
+
 > [!success]+ Para Profundizar
 > 
 > - [[Hidrodinámica - Ecuación de Bernoulli]]

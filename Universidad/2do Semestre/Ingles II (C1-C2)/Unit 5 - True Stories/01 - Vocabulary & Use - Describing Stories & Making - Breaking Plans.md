@@ -56,16 +56,19 @@ dg-publish: true
 > |**success story**|historia de éxito|Historia centrada en el logro de una meta contra las dificultades.|
 > |**tearjerker**|historia que hace llorar|Historia diseñada deliberadamente para generar una respuesta emocional intensa (llanto).|
 >
+
 > [!tip]- 💡 Insider English — Whodunit
 > 
 > **Whodunit** es una forma coloquial y juguetona de decir _"who has done it?"_ (¿quién lo hizo?), y se usa como sustantivo para referirse a un tipo específico de misterio: aquel centrado en descubrir **quién es el culpable** de un crimen.
 >
+
 > [!example]- 🟢 Ejemplo en contexto (resúmenes de pitch del libro)
 > 
 > - Una historia sobre dos personas que se amaron en secreto durante años sin decírselo, hasta que una carta de amor lo cambia todo, calificaría como **love story** (con un giro hacia la **tragedy**, dado el accidente que sigue).
 > - Una historia sobre alguien que se muda a una casa nueva sin saber que la pareja anterior murió ahí, y empieza a escuchar ruidos extraños, es un ejemplo claro de **mystery** — específicamente un **whodunit**.
 > - Una historia sobre una escritora que guardó sus textos por años por miedo, hasta que su padre los encuentra y los publica con gran éxito, combina **feel-good story** y **success story**.
 >
+
 > [!warning] ⚠️ Términos que se prestan a confusión
 > 
 > - **tall tale vs. hard-luck story:** un _tall tale_ exagera hechos de forma casi cómica o increíble; un _hard-luck story_ es realista, pero centrada en la mala suerte repetida.
@@ -101,6 +104,7 @@ dg-publish: true
 > |**mess (something) up**|arruinar / echar a perder|Estropear un plan o una situación por error o descuido.|
 > |**split up**|separarse|Terminar una relación (de pareja) o dividir un grupo.|
 >
+
 > [!tip]- 💡 Insider English — What's up with...? / Something's up
 > 
 > Estas dos expresiones se usan específicamente para **hablar de problemas**:
@@ -108,10 +112,12 @@ dg-publish: true
 > - **"What's up with...?"** — pregunta sobre qué le pasa a alguien o algo que actúa de forma extraña. _"What's up with Suzie lately?"_
 > - **"Something's up"** — afirma que algo anda mal, sin especificar qué. _"I know! Something's up with her."_
 >
+
 > [!example]- 🟢 Ejemplo en contexto (diálogo del libro)
 > 
 > En el audio, dos amigos comentan que Suzie canceló a último momento un plan para reunirse (_get together_), alegando que la retuvieron en el trabajo (_was held up_). Según el diálogo, ella ya le había fallado antes a la otra persona (_messed things up for me too_) — canceló una salida a un concierto justo antes de que se encontraran, inventando una excusa (_texted, said she was sorry_). Uno de los amigos concluye que está a punto de darse por vencido con ella (_about ready to give up on her_).
 >
+
 > [!warning] ⚠️ Diferencias sutiles
 > 
 > - **give up (something) vs. give up on (someone):** _give up smoking_ (dejar un hábito) es distinto de _give up on someone_ (perder la fe/paciencia con una persona).
@@ -172,6 +178,7 @@ graph TD
 > 
 > **3.** ¿Qué significa "something's up"?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** whodunit
@@ -190,6 +197,7 @@ graph TD
 > 
 > **3.** Explica la diferencia entre "mess up" y "let someone down" con un ejemplo propio.
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** success story (posiblemente también hard-luck story por la lucha inicial)
@@ -208,6 +216,7 @@ graph TD
 > 
 > **3.** Reflexiona: ¿por qué crees que el inglés tiene tantos verbos específicos para "romper planes" (be held up, mess up, let down, give up on)? ¿En español existen equivalentes tan específicos?
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 2 el uso natural y variado del vocabulario (no solo repetición mecánica de una sola frase).
@@ -222,12 +231,14 @@ graph TD
 > - [ ] Reconozco y traduzco los 12 verbos/frases de hacer y romper planes.
 > - [ ] Entiendo qué significa "whodunit".
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Distingo tearjerker de feel-good story y de human interest story.
 > - [ ] Uso correctamente "give up on" (persona) vs. "give up" (hábito/actividad).
 > - [ ] Uso "What's up with...?" y "Something's up" para preguntar sobre problemas.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Clasifico historias reales combinando varios tipos cuando es necesario (ej. success story + hard-luck story).
@@ -240,6 +251,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 5: True Stories, pp. 44–47.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Grammar & Examples - Past Perfect & Was Were Going To]]

@@ -2,6 +2,7 @@
 
 > [!quote] _"La única forma de ver el elefante completo es caminando alrededor de él. Lo mismo sucede con nuestro desempeño: necesitamos múltiples perspectivas para obtener la imagen completa."_ – **Marshall Goldsmith**
 >
+
 > [!info] **¿Qué es la Evaluación 360°?** 🎯  
 > La evaluación 360° es un **sistema integral de feedback** que recopila perspectivas sobre el desempeño, competencias y comportamientos de una persona desde múltiples fuentes: superiores, pares, subordinados, clientes y autoevaluación.  
 > Su objetivo es proporcionar una **visión holística y objetiva** que elimine puntos ciegos y facilite el desarrollo profesional basado en percepción real vs. autopercepción.

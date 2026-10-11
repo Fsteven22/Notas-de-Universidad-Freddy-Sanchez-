@@ -6,6 +6,7 @@
 
 > [!info] **Definición** La procrastinación es el acto de retrasar o posponer de manera voluntaria e irracional una tarea o decisión, a pesar de conocer las consecuencias negativas que esto puede acarrear. Es la brecha entre la intención y la acción, donde sabemos qué deberíamos hacer pero no lo hacemos.
 >
+
 > [!warning] **Mito vs Realidad** 💡 **Mito:** La procrastinación es simplemente pereza o mala gestión del tiempo **Realidad:** Es un mecanismo complejo de regulación emocional que involucra aspectos psicológicos, neurológicos y conductuales profundos
 
 ## La Neurociencia de la Procrastinación
@@ -51,6 +52,7 @@ graph TD
 > - **Prototipo rápido**: Crear versiones borradores primero
 > - **Límites temporales**: Establecer tiempo máximo para cada fase
 >
+
 > [!info] **2. Procrastinación por Aversión a la Tarea** 😤
 > 
 > ### Características:
@@ -65,6 +67,7 @@ graph TD
 > - **Técnica del sandwich**: Intercalar tareas placenteras con las difíciles
 > - **Conexión con el propósito**: Encontrar el "por qué" profundo
 >
+
 > [!warning] **3. Procrastinación por Ansiedad** 😰
 > 
 > ### Características:
@@ -79,6 +82,7 @@ graph TD
 > - **Fragmentación**: Dividir en micro-tareas manejables
 > - **Técnicas de relajación**: Respiración y mindfulness antes de comenzar
 >
+
 > [!tip] **4. Procrastinación por Falta de Estructura** 📋
 > 
 > ### Características:
@@ -93,6 +97,7 @@ graph TD
 > - **Time blocking**: Asignar bloques específicos de tiempo
 > - **Matriz de Eisenhower**: Clasificar por urgencia e importancia
 >
+
 > [!info] **5. Procrastinación por Rebeldía** 🔥
 > 
 > ### Características:
@@ -107,6 +112,7 @@ graph TD
 > - **Negociación interna**: Crear acuerdos contigo mismo
 > - **Propósito personal**: Conectar con valores y metas propias
 >
+
 > [!warning] **6. Procrastinación por Agotamiento** 😴
 > 
 > ### Características:
@@ -156,6 +162,7 @@ flowchart LR
 > 3. **Momentum natural**: Frecuentemente continuarás más allá de los 5 minutos
 > 4. **Celebración**: Reconoce el éxito de haber empezado
 >
+
 > [!info] **Método de Temptation Bundling** 🍭
 > 
 > ### Concepto:
@@ -171,6 +178,7 @@ flowchart LR
 > |Tareas domésticas|Podcasts|Escuchar mientras limpias|
 > |Trabajo administrativo|Café especial|Preparar tu bebida favorita para acompañar|
 >
+
 > [!warning] **Técnica de Implementation Intentions** 📝
 > 
 > ### Fórmula: "Si... entonces..."
@@ -267,6 +275,7 @@ flowchart LR
 > - Crea momentum positivo
 > - Aprovecha la energía matutina
 >
+
 > [!info] **Método de Batching** 📦
 > 
 > ### Principios:
@@ -338,6 +347,7 @@ flowchart LR
 > 
 > **El Resultado:** Fundó uno de los blogs más exitosos sobre productividad y pensamiento crítico
 >
+
 > [!tip] **Caso 2: Cal Newport - Deep Work** 🧠
 > 
 > **El Enfoque:** Combatió la procrastinación con trabajo profundo estructurado

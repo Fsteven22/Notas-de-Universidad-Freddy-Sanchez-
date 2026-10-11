@@ -70,12 +70,14 @@ graph TD
 > - Alternar tipos de problemas dentro de cada tema
 > - Mezclar ejercicios fáciles y difíciles
 >
+
 > [!example] 🌍 **Historia**
 > 
 > - Intercalar: Edad Media → Renacimiento → Revolución → Edad Media
 > - Alternar análisis de causas, consecuencias y cronología
 > - Combinar diferentes fuentes y perspectivas
 >
+
 > [!example] 🔬 **Ciencias**
 > 
 > - Intercalar: Química → Física → Biología → Química
@@ -110,6 +112,7 @@ graph TD
 > - **Requiere planificación**: Necesita más organización previa
 > - **No para todos los temas**: Algunos requieren estudio en bloque primero
 >
+
 > [!danger] 🚫 **Cuándo NO usar**
 > 
 > - Conceptos completamente nuevos que requieren comprensión básica

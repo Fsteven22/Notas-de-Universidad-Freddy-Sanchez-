@@ -4,6 +4,7 @@
 
 > [!info] Definición La iluminación óptima es el diseño consciente del entorno lumínico para maximizar el bienestar, la productividad, la salud circadiana y la calidad de vida, adaptándose a las necesidades específicas de cada actividad y momento del día.
 >
+
 > [!tip] Principios Fundamentales
 > 
 > - ☀️ **Luz natural prioritaria**: Aprovechar al máximo la luz solar
@@ -30,6 +31,7 @@
 > - **Dopamina**: Mejora con exposición a luz natural
 > - **GABA**: Se equilibra con ciclos luz-oscuridad apropiados
 >
+
 > [!warning] Consecuencias de Mala Iluminación
 > 
 > - 😴 **Trastornos del sueño**: Insomnio, sueño fragmentado
@@ -171,6 +173,7 @@ timeline
 > - **Control independiente** de cada fuente de luz
 > - **Evitar LED azules** de dispositivos electrónicos
 >
+
 > [!tip] Configuración Recomendada
 > 
 > - **Luz principal**: Dimmer con LED cálidos regulables
@@ -187,6 +190,7 @@ timeline
 > - **Iluminación de acento**: Para crear ambiente durante comidas
 > - **Flexibilidad**: Múltiples controles y intensidades
 >
+
 > [!tip] Sistema de Capas
 > 
 > 1. **General**: Plafones LED de techo distribución uniforme
@@ -204,6 +208,7 @@ timeline
 > - **Intensidad alta**: 1000-1500 lx en superficie de trabajo
 > - **Reducción de deslumbramiento**: Pantallas anti-reflejo
 >
+
 > [!warning] Errores Comunes en Oficina
 > 
 > - Luz únicamente desde arriba (crea sombras)
@@ -221,6 +226,7 @@ timeline
 > - **TV/Entretenimiento**: Luz tenue ambiente (<200 lx)
 > - **Actividades familiares**: Luz neutra adaptable (3500-4000K)
 >
+
 > [!tip] Configuración Flexible
 > 
 > - **Luz general**: Plafón central con dimmer
@@ -239,6 +245,7 @@ timeline
 > - Interrupción de patrones de sueño
 > - Incremento en miopía (especialmente en niños)
 >
+
 > [!tip] Estrategias de Protección **Software:**
 > 
 > - **f.lux**: Ajuste automático de temperatura de color
@@ -359,6 +366,7 @@ flowchart TD
 > - **Perfiles personalizados**: Diferentes escenas preprogramadas
 > - **Integración domótica**: Conexión con otros sistemas del hogar
 >
+
 > [!tip] Sistemas Recomendados **Entry Level:**
 > 
 > - **Philips Hue**: Ecosystem completo, fácil uso
@@ -389,6 +397,7 @@ flowchart TD
 > - **Cristales selectivos**: Filtran UV manteniendo luz visible
 > - **Estantes de luz**: Rebotan luz profundo en el espacio
 >
+
 > [!tip] Maximización de Luz Natural
 > 
 > - **Colores claros**: Paredes y techos en tonos blancos/claros
@@ -414,6 +423,7 @@ flowchart TD
 > - Personas de 18-30 años
 > - Quienes trabajan en interiores
 >
+
 > [!tip] Tratamiento con Light Therapy **Protocolo Estándar:**
 > 
 > - **Intensidad**: 10,000 lx
@@ -514,6 +524,7 @@ mindmap
 > - Ángulo visual incorrecto
 > - Deslumbramiento y reflejos
 >
+
 > [!tip] Protocolo de Prevención CVS **Regla 20-20-20:**
 > 
 > - Cada 20 minutos
@@ -542,6 +553,7 @@ mindmap
 > 
 > - Solución: Iluminación más uniforme, múltiples fuentes
 >
+
 > [!tip] Prevención de Deslumbramiento
 > 
 > - **Ángulo de corte**: Luminarias con ángulo >30° del campo visual
@@ -566,6 +578,7 @@ mindmap
 > - Medidor de parpadeo (flicker meter)
 > - Espectroradiómetro para análisis completo
 >
+
 > [!tip] Checklist de Evaluación por Espacio **Dormitorio:**
 > 
 > - [ ] <10 lx para dormir (blackout completo)
@@ -616,6 +629,7 @@ mindmap
 
 > [!quote] [[Gestión de la Energía Personal]] La optimización lumínica es fundamental para mantener niveles energéticos sostenibles y prevenir fatiga crónica
 >
+
 > [!quote] [[Feng Shui para Espacios Pequeños]] El diseño consciente de iluminación puede aumentar el rendimiento cognitivo hasta en un 25%
 
 

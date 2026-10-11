@@ -240,6 +240,7 @@ graph TB
 > 
 > (Nota: λ = 5/2 = 2.5, aunque su valor específico no siempre es importante)
 >
+
 > [!example] 🎨 Ejemplo Detallado: Optimización Geométrica
 > 
 > **Problema:**
@@ -333,6 +334,7 @@ graph TB
 > 
 > Son **4 ecuaciones con 4 incógnitas** (x, y, z, λ)
 >
+
 > [!example] 📦 Ejemplo: Caja con Restricción de Área
 > 
 > **Problema:**
@@ -415,6 +417,7 @@ graph TB
 > 
 > Son **5 ecuaciones con 5 incógnitas** (x, y, z, λ₁, λ₂)
 >
+
 > [!example] 🌟 Ejemplo: Dos Restricciones
 > 
 > **Problema:**
@@ -618,6 +621,7 @@ graph TB
 > 
 > - λ indica cuánto material adicional necesitas por unidad adicional de volumen
 >
+
 > [!example] 📊 Ejemplo de Interpretación
 > 
 > En el problema de producción anterior:

@@ -134,6 +134,7 @@ dg-publish: true
 >
 > Los ejercicios anteriores de esta nota trabajan el **concepto** de cada configuración (para qué sirve frente al ruido). La Tarea Autónoma #2 exige además la **habilidad de análisis de circuitos**: aplicar $V_+\approx V_-$ e $I_+=I_-=0$ (ver diapositiva "Aspectos prácticos del Op-Amp", Sesión 12) para resolver redes de OPAMs en cascada con valores de resistencia concretos — la misma habilidad que evaluará el examen, según lo señalado en clase.
 >
+
 > [!example]- ✏️ Ejercicio 1 — Amplificador inversor con red de realimentación en T
 >
 > **Circuito:** $V_i$ a través de $R_1$ hacia la entrada inversora del OPAM. Realimentación en forma de **T**: $R_2$ desde la salida del nodo intermedio hasta la entrada inversora, $R_3$ del nodo intermedio a tierra, y $R_4$ del nodo intermedio hasta $V_o$.
@@ -150,6 +151,7 @@ dg-publish: true
 >
 > > 📌 Esta red en T logra **ganancias altas** sin necesitar una resistencia de realimentación físicamente enorme — muy usado cuando $R_2$ tendría que ser poco práctica de conseguir o generaría demasiado ruido térmico por su valor elevado.
 >
+
 > [!example]- ✏️ Ejercicio 2a — Diferencial de dos etapas (dos OPAMs)
 >
 > **Circuito:** Primera etapa (U1): $V_2$ a través de una resistencia $R$ hacia la entrada inversora, con realimentación $R$ (mismo valor) — inversor de ganancia unitaria. Segunda etapa (U2): suma inversora de $V_1$ (a través de $R_1$) y la salida de U1 (a través de otra $R_1$), con realimentación $R_2$.
@@ -164,10 +166,12 @@ dg-publish: true
 >
 > > 📌 Es el clásico **amplificador diferencial de dos OPAMs**: la primera etapa invierte una de las entradas para que la segunda pueda sumarlas y obtener la resta con una sola resistencia de ganancia ($R_2/R_1$) en vez de dos resistencias emparejadas como en el diferencial de un solo OPAM.
 >
+
 > [!warning] ⚠️ Ejercicio 2b — Pendiente de verificar topología
 >
 > El circuito de la Figura 3 (dos etapas con $V_1$ y $V_2$ conectadas cerca de las entradas no inversoras) no se pudo reconstruir con certeza a partir del archivo — las conexiones exactas de $R_2$, $R_1$ y $R_3$ en cada nodo no son legibles de forma confiable. **Antes de dar por válida cualquier fórmula, confírmame la conexión exacta** (qué resistencia va a qué pin de cada OPAM) y lo resuelvo con el mismo detalle que los demás.
 >
+
 > [!warning] ⚠️ Ejercicio 3 — Pendiente de verificar topología
 >
 > El circuito de tres etapas (U1:A, U1:B, U2:A) con $V_1=6\text{V}$, $V_2=11\text{V}$ y la incógnita $V_3$ tiene varias resistencias con etiquetas repetidas ($R_2$ aparece dos veces, con valores distintos posiblemente para realimentación y para polarización) que no pude distinguir con certeza en la imagen. El método general es:
@@ -178,6 +182,7 @@ dg-publish: true
 >
 > **Confírmame qué resistencia conecta a qué pin** (especialmente las dos etiquetadas $R_2$, y a qué nodo llega $R_4$) y calculo el valor exacto de $V_3$.
 >
+
 > [!example]- ✏️ Ejercicio 4 — Cascada de inversor simple + sumador inversor
 >
 > **Circuito:** Primera etapa: $V_{s1}$ a través de $2R$ hacia la entrada inversora, realimentación $R$ — inversor de ganancia $-R/2R=-1/2$. Segunda etapa: suma inversora de la salida de la primera etapa (a través de $2R$) y $V_{s2}$ (a través de $0.5R$), con realimentación $2R$.
@@ -201,12 +206,14 @@ dg-publish: true
 > - [ ] Explico qué significa "modo común" y por qué el amplificador diferencial lo rechaza.
 > - [ ] Reconozco cuándo usar un comparador con histéresis en vez de uno simple.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Calculo la salida de un amplificador diferencial dado el ruido de modo común y la señal diferencial útil.
 > - [ ] Explico la ventaja de un amplificador de instrumentación (3 OPAMs) sobre un diferencial simple.
 > - [ ] Relaciono el integrador OPAM con un filtro LPF activo.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Diseño una cadena de acondicionamiento de señal (buffer + diferencial/instrumentación + filtro activo) para un sensor ruidoso dado.
@@ -252,6 +259,7 @@ mindmap
 >
 > [4] Ing. Adriana Aguirre Alonso, _Tarea Autónoma #2 — Amplificadores Operacionales_, EYAG1037, FIEC-ESPOL, I PAO 2026.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[06 - Ruido Electrónico e Interferencia]] — el concepto de rechazo de modo común anticipado ahí se desarrolla aquí con el amplificador diferencial.

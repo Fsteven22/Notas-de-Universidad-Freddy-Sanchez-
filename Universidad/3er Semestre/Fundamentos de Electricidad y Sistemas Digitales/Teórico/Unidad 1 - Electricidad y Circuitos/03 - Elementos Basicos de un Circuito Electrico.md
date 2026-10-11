@@ -453,16 +453,19 @@ mindmap
 > - [ ] Leo el codigo de colores de una resistencia y calculo su valor y tolerancia.
 > - [ ] Distingo fuente independiente y dependiente (VCVS, CCVS, VCCS, CCCS).
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Calculo R = rho·l/A y explico el efecto del calibre AWG.
 > - [ ] Diferencio capacitores (C=Q/V) e inductores (VL=L·dI/dt) en DC vs AC.
 > - [ ] Explico el comportamiento de un rele y pulsador NA/NC.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Selecciono tipo de capacitor/inductor segun aplicacion y frecuencia.
 > - [ ] Modelo un BJT/FET/OpAmp como fuente dependiente (IC=beta·IB).
 > - [ ] Comparo simbologia US vs EU y justifico el uso de ANSI.
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[02 - Principios de Generacion de Energia Electrica]] — fuentes que alimentan estos elementos
 > - Siguiente: [[04 - Circuitos en Serie Paralelo y Mixtos]] — como se conectan R, C, L

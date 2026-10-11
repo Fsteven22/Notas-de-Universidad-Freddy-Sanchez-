@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "El impulso es el mensajero del cambio; en cada golpe, en cada empujón, porta consigo la promesa de una nueva velocidad." 🚀
 >
+
 > [!info] El impulso representa el efecto acumulativo de una fuerza actuando durante un tiempo determinado, resultando en un cambio de momentum. Esta aproximación es especialmente útil cuando conocemos las fuerzas y el tiempo de aplicación, pero no necesariamente los detalles del movimiento intermedio.
 
 ## ⚡ Fundamentos del Impulso y Momentum
@@ -33,6 +34,7 @@ dg-publish: true
 > |Efecto acumulativo|Suma de todos los impulsos|kg⋅m/s|
 > |Cambio instantáneo|Δp en tiempo infinitesimal|kg⋅m/s|
 >
+
 > [!tip] **Tipos de Impulso** 🔨
 > 
 > ### 1. Impulso de Fuerza Constante:
@@ -53,6 +55,7 @@ dg-publish: true
 > - **Inelásticas**: Solo se conserva momentum
 > - **Perfectamente inelásticas**: Los objetos se pegan
 >
+
 > [!warning] **Conservación del Momentum** ⚖️
 > 
 > ### Principio Fundamental:
@@ -72,6 +75,7 @@ dg-publish: true
 > - Propulsión a reacción
 > - Interacciones subatómicas
 >
+
 > [!success] 🔗 Estrategia General
 > 
 > ```mermaid
@@ -131,6 +135,7 @@ dg-publish: true
 > - **Método**: Conteo de cuadrículas, regla del trapecio
 > - **Ventaja**: Visualización clara del impulso
 >
+
 > [!tip] **Técnicas de Integración para Impulso** 🔢
 > 
 > ### Funciones Comunes:
@@ -149,6 +154,7 @@ dg-publish: true
 > - **Regla del trapecio**: J ≈ Σ ½(Fᵢ + Fᵢ₊₁)Δt
 > - **Regla de Simpson**: Mayor precisión para curvas suaves
 >
+
 > [!example] **Cálculo 1: Impulso con Fuerza Exponencial** 📈
 > 
 > ### Enunciado:
@@ -173,6 +179,7 @@ dg-publish: true
 > 
 > **F̄ = J/Δt = 1,024,900/30 = 34,163 N**
 >
+
 > [!example] **Cálculo 2: Impulso por Integración Numérica** 📊
 > 
 > ### Enunciado:
@@ -199,6 +206,7 @@ dg-publish: true
 > 
 > **c) Precisión**: La regla del trapecio es generalmente **más precisa** para curvas suaves, pero en este caso ambos métodos dan el mismo resultado debido a la simetría de los datos.
 >
+
 > [!example] **Cálculo 3: Impulso en Función Periódica** 🌊
 > 
 > ### Enunciado:
@@ -301,6 +309,7 @@ dg-publish: true
 > 
 > **Verificación**: Δp = J ✓
 >
+
 > [!example] **Problema 2: Fuerza Variable en Martillo** 🔨
 > 
 > ### Enunciado:
@@ -329,6 +338,7 @@ dg-publish: true
 > 
 > F_max = F(0.01) = 5000(0.01)² = **0.5 N**
 >
+
 > [!example] **Problema 3: Cohete con Empuje Variable** 🚀
 > 
 > ### Enunciado:
@@ -351,6 +361,7 @@ dg-publish: true
 > 
 > ā = Δv/Δt = (204.98 - 0)/15 = **13.67 m/s²**
 >
+
 > [!example] **Problema 4: Colisión de Vehículos** 🚗💥
 > 
 > ### Enunciado:
@@ -383,6 +394,7 @@ dg-publish: true
 > 
 > **Pérdida = 231,000 - 4,305 = 226,695 J** (transformada en calor, sonido, deformación)
 >
+
 > [!example] **Problema 5: Explosión en el Espacio** 💥
 > 
 > ### Enunciado:
@@ -422,6 +434,7 @@ dg-publish: true
 > 
 > **I**ntegral - J = ∫F dt para fuerzas variables **M**omento - Cambia el momentum: J = Δp **P**roducto - J = F×t para fuerzas constantes **U**nidades - Newton-segundo = kg⋅m/s **L**ineal - Solo afecta momentum lineal **S**igno - Dirección importa: impulso vectorial **O**posición - Fuerzas internas se cancelan
 >
+
 > [!tip] **Reglas de Cálculo** 🔑
 > 
 > ### Para Fuerza Constante:

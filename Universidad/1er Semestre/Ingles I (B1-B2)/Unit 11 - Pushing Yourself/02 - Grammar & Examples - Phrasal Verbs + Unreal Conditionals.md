@@ -222,6 +222,7 @@ dg-publish: true
 > - They found out how to succeed
 > ```
 >
+
 > [!tip] 🔥 Más Phrasal Verbs para Pushing Yourself
 > 
 > **6. GET OVER - Superar (algo difícil)**
@@ -365,6 +366,7 @@ dg-publish: true
 > pero "were" es siempre correcto y más formal.
 > ```
 >
+
 > [!example] 💡 Ejemplos con Unit 11 Vocabulary
 > 
 > **Talking about goals:**
@@ -422,6 +424,7 @@ dg-publish: true
 > |If I + past verb, I would + verb|If I tried harder, I would succeed|
 > |If I were you, I would + verb|If I were you, I would take the risk|
 >
+
 > [!success] 🔄 Negative & Questions
 > 
 > **Forma negativa:**
@@ -532,6 +535,7 @@ dg-publish: true
 > ✅ I wish they would help me
 > ```
 >
+
 > [!tip] 🎯 IF ONLY (más enfático que "I wish")
 > 
 > **IF ONLY = I wish (pero más dramático/enfático)**
@@ -562,6 +566,7 @@ dg-publish: true
 > |**Deseo fuerte**|If only I were braver!|
 > |**Situación dramática**|If only things were different!|
 >
+
 > [!example] 🗣️ I wish + WOULD (para comportamientos que queremos cambiar)
 > 
 > **I wish + would** (para acciones/comportamientos de OTROS o situaciones)

@@ -490,6 +490,7 @@ graph TB
 > 
 > **Respuesta:** $V = \frac{32}{3}$ unidades cúbicas
 >
+
 > [!example] 🎓 Problema 6: Sólido de revolución
 > 
 > **Enunciado:** Volumen del sólido generado por $z = \sqrt{1-x^2}$ sobre $-1 \leq x \leq 1$, $-\sqrt{1-x^2} \leq y \leq \sqrt{1-x^2}$.
@@ -534,6 +535,7 @@ graph TB
 > 
 > **Respuesta:** $V = \frac{2\pi}{3}$ unidades cúbicas
 >
+
 > [!example] 🎓 Problema 7: Volumen complejo
 > 
 > **Enunciado:** Volumen entre $z = x^2 + y^2$ y $z = 2 - x^2 - y^2$.

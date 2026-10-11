@@ -70,6 +70,7 @@ graph TD
 > 
 > **Respuesta:** Cuadrado de 5×5 unidades
 >
+
 > [!example] Problema: Minimización de Distancia **Enunciado:** Encontrar el punto de la recta x + y = 1 más cercano al origen.
 > 
 > **Solución:**
@@ -284,6 +285,7 @@ flowchart LR
 > 
 > **En el punto óptimo:** La curva de nivel de la función objetivo es **tangente** a la curva de restricción.
 >
+
 > [!warning] Condición de Tangencia Dos curvas son tangentes cuando tienen la **misma recta tangente**, lo que ocurre cuando sus **vectores normales son paralelos**.
 > 
 > **Vector normal a f(x,y) = c:** ∇f = (∂f/∂x, ∂f/∂y) **Vector normal a g(x,y) = 0:** ∇g = (∂g/∂x, ∂g/∂y)
@@ -390,6 +392,7 @@ graph TD
 
 > [!tip] Mnemotecnia: "LAGRANGE" **L**ocaliza la función objetivo y restricciones **A**naliza si usar sustitución o Lagrange **G**radientes: calcula ∇f y ∇g **R**esuelve el sistema ∇f = λ∇g **A**plica la restricción g = 0 **N**aturaleza: verifica si es máximo o mínimo **G**eometría: interpreta el resultado **E**valúa el significado de λ
 >
+
 > [!tip] Método de Decisión: "SUSTLAG" **SU**stitución si:
 > 
 > - **S**imple despeje de la restricción
@@ -451,12 +454,16 @@ graph TD
 
 > [!quote] [[01 - Problemas de Optimización]] Métodos generales sin restricciones y modelado
 >
+
 > [!quote] [[01 - Análisis Completo de Funciones]] Herramientas para verificar naturaleza de extremos
 >
+
 > [!quote] [[01 – Gradiente y Derivadas Direccionales]] Fundamentos vectoriales del método de Lagrange
 >
+
 > [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de optimización aplicada
 >
+
 > [!quote] [[Cálculo de Varias Variables]] Extensión completa del método de Lagrange
 
 

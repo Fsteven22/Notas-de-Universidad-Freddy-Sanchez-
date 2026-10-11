@@ -9,6 +9,7 @@ dg-publish: true
 > [!info] 💡 Concepto Fundamental
 > La **interpretación geométrica de la derivada** establece que la derivada de una función en un punto específico representa la **pendiente de la recta tangente** a la curva en ese punto. Esta conexión entre el álgebra y la geometría es uno de los conceptos más fundamentales del cálculo diferencial.
 >
+
 > [!tip] 🎯 ¿Por qué es importante?
 > 
 > - Conecta el **concepto abstracto** de límite con la **geometría visual**
@@ -38,6 +39,7 @@ dg-publish: true
 > • Donde $a$ es el punto de tangencia
 > • **Mejor aproximación lineal** a la función en ese punto
 >
+
 > [!warning] ⚠️ **Elementos clave para recordar**
 > 
 > - **Secante**: Une dos puntos de la curva (promedio)
@@ -149,6 +151,7 @@ graph LR
 > • $y = 6x - 18 + 9$
 > • $y = 6x - 9$
 >
+
 > [!example] 🎯 **Ejemplo 2**: Función trigonométrica
 > **Encontrar la tangente a $f(x) = \sin x$ en $x = \frac{\pi}{4}$**
 > 
@@ -162,6 +165,7 @@ graph LR
 > • $y - \frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}(x - \frac{\pi}{4})$
 > • $y = \frac{\sqrt{2}}{2}x - \frac{\sqrt{2}\pi}{8} + \frac{\sqrt{2}}{2}$
 >
+
 > [!example] 🎯 **Ejemplo 3**: Función racional
 > **Tangente a $f(x) = \frac{1}{x}$ en $x = 2$**
 > 
@@ -262,6 +266,7 @@ graph TD
 > • Si $f'(a) = 0$ (tangente horizontal)
 > • Entonces la normal es vertical: $x = a$
 >
+
 > [!example] 🧪 **Ejemplo de Recta Normal**
 > **Para $f(x) = x^2$ en $x = 1$**
 > 
@@ -436,6 +441,7 @@ graph TD
 > • ❌ Incorrecto: "$f'(x) > 0$ significa que la función es positiva"
 > • ✅ Correcto: "$f'(x) > 0$ significa que la función es creciente"
 >
+
 > [!tip] 💡 **Estrategias para Evitar Errores**
 > 
 > **Verificación Sistemática**:

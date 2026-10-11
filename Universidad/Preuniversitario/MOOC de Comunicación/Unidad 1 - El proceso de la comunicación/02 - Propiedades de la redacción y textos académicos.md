@@ -29,6 +29,7 @@ dg-publish: true
 > |**Coherencia**|Las ideas se conectan lógicamente entre sí y respaldan la idea central|Cada párrafo aporta un argumento que sostiene la tesis principal|
 > |**Cohesión**|Uso de conectores, pronombres y referencias que enlazan las oraciones y párrafos|"Sin embargo", "por lo tanto", "además", "en consecuencia" mantienen el hilo del texto|
 >
+
 > [!note] 🔍 Adecuación en detalle
 >
 > La adecuación exige que el escritor ajuste su registro, vocabulario y estructura según:
@@ -45,6 +46,7 @@ dg-publish: true
 > |**Semi-formal**|"Por favor, envíe el informe antes del viernes."|Comunicación con compañeros de trabajo|
 > |**Informal**|"Mándame el reporte el viernes."|Mensajes entre amigos o familiares|
 >
+
 > [!note] 🔍 Coherencia en detalle
 >
 > Un texto es coherente cuando:
@@ -63,6 +65,7 @@ dg-publish: true
 > |**De general a específico**|De lo amplio a lo particular|La comunicación humana incluye verbal, no verbal y escrita; la escrita se divide en académica, literaria y profesional|
 > |**De específico a general**|De los detalles a la idea global|Los verbos irregulares son difíciles; todos los verbos irregulares merecen atención; la gramática requiere estudio|
 >
+
 > [!note] 🔍 Cohesión en detalle
 >
 > Los mecanismos de cohesión incluyen:
@@ -83,6 +86,7 @@ dg-publish: true
 > |**Conclusión**|en resumen, en definitiva, en conclusión, finalmente|**En resumen**, la concordancia es fundamental para la redacción|
 > |**Ejemplificación**|por ejemplo, como, tal como|Los conectores mejoran la cohesión; **por ejemplo**, "sin embargo" enlaza ideas opuestas|
 >
+
 > [!note] ✏️ Tres pilares de la escritura académica
 >
 > |Criterio|Descripción|Consejo práctico|
@@ -118,6 +122,7 @@ dg-publish: true
 > |**Tesis**|100–300+ páginas|Planteamiento del problema, marco teórico, metodología, análisis, conclusiones, bibliografía|Investigación original para obtener un grado académico|
 > |**Ensayo**|3–10 páginas|Introducción con tesis propia, desarrollo argumentativo, conclusión|Texto argumentativo-expositivo de estructura libre donde el autor defiende una tesis propia con argumentos y evidencias|
 >
+
 > [!note] 📝 El ensayo como formato académico
 >
 > El **ensayo** es un texto argumentativo-expositivo de estructura libre con tesis propia. A diferencia del informe o la monografía, no sigue un esquema rígido de capítulos: el autor plantea una postura, la sostiene con argumentos y evidencias, y cierra con una conclusión reflexiva. Exige las mismas propiedades de adecuación, coherencia, cohesión, precisión, claridad y concisión, además de citación rigurosa cuando usa fuentes externas.
@@ -126,6 +131,7 @@ dg-publish: true
 > - **Tono:** formal, pero con voz propia del autor.
 > - **Evaluación típica:** calidad de la tesis, solidez argumentativa y corrección idiomática.
 >
+
 > [!note] 📖 APA vs. IEEE — Dos sistemas de referencia
 >
 > |Aspecto|APA (7.ª ed.)|IEEE|
@@ -160,6 +166,7 @@ dg-publish: true
 > >
 > > La nota [[03 - Errores comunes, acentuación y puntuación]] amplía las discordancias como vicios del lenguaje; aquí se conserva la regla normativa: qué debe concordar con qué.
 >
+
 > [!warning] 🔎 Concordancia en oraciones complejas
 >
 > En oraciones con varios componentes, la concordancia puede ser más difícil de detectar:
@@ -201,6 +208,7 @@ dg-publish: true
 > |7|"La mayoría de los alumnos aprobó"|La mayoría de los alumnos aprobó|Correcto (colectivo singular)|No aplica|
 > |8|"Cada persona tiene sus derechos"|Cada persona tiene sus derechos|Correcto (uso aceptado)|No aplica|
 >
+
 > [!example]- ✏️ Ejercicio 03.2 — Reescribir párrafos con mejor cohesión
 >
 > **Instrucción:** Reescribe los siguientes párrafos incorporando conectores adecuados y mejorando la coherencia entre oraciones.
@@ -223,6 +231,7 @@ dg-publish: true
 > **Párrafo C (sugerencia):**
 > "La escritura académica tiene reglas **que** todo estudiante debe conocer. **En efecto**, muchos profesores las exigen como criterio de evaluación. **Por lo tanto**, el incumplimiento de estas normas genera problemas de calificación."
 >
+
 > [!example]- ✏️ Ejercicio 03.3 — Clasificar y corregir faltas de concordancia
 >
 > **Instrucción:** Clasifica cada error según su tipo (número, género, persona, tiempo verbal) y ofrece la corrección.
@@ -249,6 +258,7 @@ dg-publish: true
 > |7|"Las investigadora han"|Número (sustantivo-adjetivo)|"Las investigadoras han"|
 > |8|"gobierno anunciaron medidas"|Número y género|El gobierno anunció nuevas medidas|
 >
+
 > [!tip] 🛠️ Estrategias de revisión para evitar errores de concordancia
 >
 > |Estrategia|Descripción|Cuándo aplicarla|
@@ -281,6 +291,7 @@ dg-publish: true
 > - [ ] Reconozco errores de número y género en oraciones simples.
 > - [ ] Distingo los registros formal, semi-formal e informal.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Distingo resumen, informe, monografía, tesis y ensayo según extensión y propósito.
@@ -288,6 +299,7 @@ dg-publish: true
 > - [ ] Cito en APA e identifico cuándo corresponde usar IEEE.
 > - [ ] Corrijo concordancia en oraciones complejas y con colectivos.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Reviso textos con múltiples faltas de concordancia de forma integral.
@@ -350,6 +362,7 @@ mindmap
 >
 > [4] C. Escandón, _Manual de redacción y estilo para las ciencias de la salud_. Bogotá: Editorial Médica Panamericana, 2015.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[01 - El proceso y las funciones de la comunicación]] — el proceso y las funciones comunicativas se concretan en textos con adecuación, coherencia y cohesión.

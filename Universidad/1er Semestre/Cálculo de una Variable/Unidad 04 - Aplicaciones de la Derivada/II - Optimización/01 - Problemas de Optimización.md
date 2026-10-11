@@ -79,6 +79,7 @@ graph TD
 > - A''(x) = -2 < 0 → Máximo
 > - **Respuesta:** Cuadrado de 50×50 m
 >
+
 > [!tip] Estrategias Comunes en Problemas de Área **Rectángulos:** A = base × altura **Triángulos:** A = ½ × base × altura  
 > **Círculos:** A = πr² **Sectores:** A = ½r²θ **Figuras Compuestas:** Suma/resta de áreas simples
 
@@ -97,6 +98,7 @@ graph TD
 > - V''(2) = 24(2) - 96 = -48 < 0 → Máximo
 > - **Respuesta:** Cortar cuadrados de 2×2 cm
 >
+
 > [!warning] Fórmulas de Volumen Importantes **Prisma rectangular:** V = largo × ancho × alto **Cilindro:** V = πr²h **Cono:** V = ⅓πr²h **Esfera:** V = ⅘πr³ **Pirámide:** V = ⅓ × área_base × altura
 
 ### Problemas de Superficie
@@ -132,6 +134,7 @@ graph TD
 > 
 > **Principio:** La luz toma el camino que minimiza el tiempo total. **Resultado:** Ángulo de incidencia = Ángulo de reflexión
 >
+
 > [!example] Problema de Refracción La luz viaja más lento en agua que en aire. Encontrar la trayectoria de tiempo mínimo.
 > 
 > **Ley de Snell:** n₁ sen(θ₁) = n₂ sen(θ₂) donde n₁, n₂ son índices de refracción
@@ -170,6 +173,7 @@ flowchart TD
 
 > [!tip] Conceptos Clave **Ingreso:** I(x) = precio × cantidad = p(x) × x **Costo:** C(x) = costos fijos + costos variables **Beneficio:** B(x) = I(x) - C(x) **Condición de óptimo:** Ingreso Marginal = Costo Marginal
 >
+
 > [!example] Problema de Empresa **Enunciado:** Una empresa tiene costos C(x) = 100 + 2x + 0.01x² y puede vender x unidades a precio p = 10 - 0.02x. Encontrar la producción óptima.
 > 
 > **Solución:**
@@ -185,6 +189,7 @@ flowchart TD
 
 > [!warning] Tipos de Costos **Costos Fijos:** No dependen de la producción **Costos Variables:** Proporcionales a la producción **Costos Marginales:** Derivada del costo total **Costos de Inventario:** Almacenamiento vs pedidos frecuentes
 >
+
 > [!example] Modelo EOQ (Economic Order Quantity) **Variables:**
 > 
 > - D = demanda anual
@@ -217,6 +222,7 @@ flowchart TD
 
 > [!tip] Tipos de Variables **Variables de Decisión:** Lo que podemos controlar **Variables de Estado:** Describen el sistema **Variables Auxiliares:** Facilitan los cálculos **Parámetros:** Valores fijos del problema
 >
+
 > [!warning] Errores Comunes en Variables
 > 
 > - **Confundir** variables independientes con dependientes
@@ -274,6 +280,7 @@ graph LR
 > [!tip] Mnemotecnia: "OPTIMIZA" **O**bjetivo - Define claramente qué optimizar **P**arámetros - Identifica variables y constantes  
 > **T**ipo - Clasifica el problema (geométrico, económico, etc.) **I**dentifica - Encuentra restricciones **M**odela - Construye la función objetivo **I**gualación - Resuelve f'(x) = 0 **Z**ona - Determina el dominio válido **A**naliza - Verifica que sea máximo/mínimo
 >
+
 > [!tip] Método de Verificación "SPEC" **S**ignificado - ¿Tiene sentido la respuesta? **P**untos críticos - ¿Se encontraron todos? **E**xtremos - ¿Se evaluaron los bordes del dominio? **C**riterio - ¿Se aplicó el test correcto (1ª o 2ª derivada)?
 
 ### Plantilla de Resolución
@@ -310,6 +317,7 @@ graph LR
 > 
 > **Respuesta:** r ≈ 3.84 cm, h ≈ 7.67 cm
 >
+
 > [!example] Problema Económico: Precio Óptimo **Enunciado:** Un monopolista tiene función de demanda p = 100 - 2x y costos C(x) = 20x + 1000. ¿Cuál es el precio y cantidad que maximizan el beneficio?
 > 
 > **Solución:**
@@ -326,12 +334,16 @@ graph LR
 
 > [!quote] [[01 - Análisis Completo de Funciones]] Herramientas fundamentales para el análisis de candidatos
 >
+
 > [!quote] [[03 - Concavidad y Puntos de Inflexión]] Criterios de segunda derivada para verificar extremos
 >
+
 > [!quote] [[01 - Multiplicaciones de Lagrange]] Técnica para optimización con restricciones de igualdad
 >
+
 > [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de usos prácticos del cálculo
 >
+
 > [!quote] [[Modelado Matemático]] Principios generales para convertir problemas reales en matemáticos
 
 ---

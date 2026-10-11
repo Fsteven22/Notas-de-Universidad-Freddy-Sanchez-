@@ -1005,6 +1005,7 @@ dg-publish: true
 > 
 > d) $f(x,y) = \frac{x-y}{x+y}$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Funciones por casos:**
@@ -1039,6 +1040,7 @@ dg-publish: true
 > 
 > Verificar que $f(x,y) = x^3 - 3xy^2$ es C¹ y encontrar todos los puntos críticos (donde $\nabla f = \vec{0}$).
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Teoría:**
@@ -1135,6 +1137,7 @@ dg-publish: true
 > 
 > $$f \in C^1(\mathbb{R}^2 \setminus {(0,0)})$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = \begin{cases} xy & x \geq 0 \ 0 & x < 0 \end{cases}$
@@ -1183,6 +1186,7 @@ dg-publish: true
 > 
 > **Único punto crítico:** $(0,0)$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7c)** Si $\nabla f = \vec{0}$ en todo punto:

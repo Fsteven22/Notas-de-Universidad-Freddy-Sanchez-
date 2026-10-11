@@ -229,6 +229,7 @@
 >    Síntesis conceptual    :ref3, after ref2, 30
 > ```
 > 
+
 > [!tip]+ **Facilitación de Experiencias ABE** 👨‍🏫
 > 
 > ### **Rol del Facilitador Experiencial**

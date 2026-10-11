@@ -44,6 +44,7 @@ dg-publish: true
 > 
 > > 📌 Si puedes cambiar la persona o el tiempo de la forma sin cambiar la palabra base, es conjugada: *canto, cantas, cantaba, cantaremos*.
 >
+
 > [!note] 🧪 Prueba rápida de conjugación
 > 
 > Para saber si una forma está conjugada, aplica estas dos pruebas:
@@ -96,6 +97,7 @@ dg-publish: true
 > > |**Perífrasis**|Voy **a estudiar**, tengo **que salir**|Auxiliar conjugado + infinitivo|
 > > |**Prohibición / instrucción**|No **fumar**|Infinitivo con valor imperativo en carteles|
 >
+
 > [!example]- ✏️ Mini ejercicio - Reconocer infinitivos
 > 
 > **Dato:** Subraya el infinitivo y di su conjugación: (a) Leer es un placer, (b) Necesito descansar, (c) Van a competir mañana.
@@ -141,6 +143,7 @@ dg-publish: true
 > 
 > > ⚠️ Solo, sin auxiliar conjugado, el participio **no forma predicado**: *Cansado de tanto estudiar* no es oración.
 >
+
 > [!example]- ✏️ Mini ejercicio - Participios regulares e irregulares
 > 
 > **Dato:** Escribe el participio de: cantar, comer, hacer, decir, ver, escribir.
@@ -238,6 +241,7 @@ dg-publish: true
 > 
 > > 📌 Todo verbo conjugado informa, al menos, de **tiempo, modo, número y persona**. Los verboides no informan de nada de eso por sí solos.
 >
+
 > [!success] 📊 Conjugados vs. No conjugados lado a lado
 > 
 > |Oración|Forma señalada|¿Conjugada?|Prueba|
@@ -287,6 +291,7 @@ dg-publish: true
 > > |**Añadir verbo principal**|Caminando por la avenida.|**Caminaba** por la avenida mientras pensaba.|
 > > |**Unir con coma**|Leyendo el informe. Tomó notas.|**Leyendo** el informe, **tomó** notas.|
 >
+
 > [!warning] ⚠️ Falsos verbos conjugados - no te dejes engañar
 > 
 > |Forma|Parece conjugada pero...|Realidad|
@@ -320,6 +325,7 @@ dg-publish: true
 > 
 > > 📌 Autoevaluación: si acertaste 7 u 8, dominas el reconocimiento. Si fallaste en 3, 5 o 7, repasa participios y gerundios irregulares.
 >
+
 > [!example]- ✏️ Ejercicio 03.2 - Corrige los fragmentos
 > 
 > **Instrucción:** Cada ítem es un fragmento con participio o gerundio sin verbo conjugado. Reescríbelo como oración completa de dos maneras cuando sea posible: (a) añadiendo un verbo conjugado, (b) uniéndolo a una oración vecina.
@@ -375,6 +381,7 @@ dg-publish: true
 > - [ ] Reconozco infinitivos en -ar, -er, -ir en oraciones simples (cantar, comer, vivir).
 > - [ ] Distingo cantó (conjugado) de cantado y cantando (no conjugados).
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Aplico el criterio de persona y tiempo para identificar el verbo conjugado en 8 oraciones.
@@ -382,6 +389,7 @@ dg-publish: true
 > - [ ] Explico por qué el auxiliar (haber, estar) es el elemento conjugado en las perífrasis.
 > - [ ] Detecto fragmentos formados por participios o gerundios aislados y los corrijo añadiendo un verbo conjugado.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Analizo oraciones con dos o más verbos (quiero aprender a nadar) y clasifico cada forma.
@@ -455,6 +463,7 @@ mindmap
 > 
 > [4] M. Seco, _Gramática esencial del español_, 3.ª ed. Madrid, España: Espasa Calpe, 1999.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Oraciones compuestas]] — cada proposición coordinada o subordinada necesita su propio verbo conjugado; los verboides no bastan para articularlas.

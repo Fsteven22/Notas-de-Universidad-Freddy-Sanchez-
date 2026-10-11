@@ -174,6 +174,7 @@ dg-publish: true
 > (You = implied subject)
 > ```
 >
+
 > [!example] Subject Examples in Different Positions
 > 
 > **Subject at the beginning (most common):**
@@ -230,6 +231,7 @@ dg-publish: true
 >   (The keys = subject, NOT "my pocket")
 > ```
 >
+
 > [!tip] How to Identify the Subject
 > 
 > **Method 1: Ask "Who?" or "What?"**
@@ -287,6 +289,7 @@ dg-publish: true
 > (your coffee = subject, NOT "here")
 > ```
 >
+
 > [!warning] Common Mistakes with Subjects
 > 
 > **Mistake 1: Confusing the subject with objects in prepositional phrases**
@@ -404,6 +407,7 @@ dg-publish: true
 > (reads books and writes stories in his free time = compound predicate)
 > ```
 >
+
 > [!example] Predicate Examples in Sentences
 > 
 > **Simple predicates (verb phrases):**
@@ -464,6 +468,7 @@ dg-publish: true
 >   (flew away but returned later = compound predicate)
 > ```
 >
+
 > [!tip] How to Identify the Predicate
 > 
 > **Method 1: Find the verb first**
@@ -558,6 +563,7 @@ dg-publish: true
 > • Direct objects are NEVER in prepositional phrases
 > ```
 >
+
 > [!example] Direct Object Examples
 > 
 > ```
@@ -613,6 +619,7 @@ dg-publish: true
 > She told us the story. = She told the story to us.
 > ```
 >
+
 > [!example] Indirect Object Examples
 > 
 > ```
@@ -675,6 +682,7 @@ dg-publish: true
 > become, grow, remain, stay
 > ```
 >
+
 > [!example] Subject Complement Examples
 > 
 > **Predicate nominatives:**
@@ -744,6 +752,7 @@ dg-publish: true
 > (interesting = describes "the book")
 > ```
 >
+
 > [!example] Object Complement Examples
 > 
 > ```
@@ -829,6 +838,7 @@ dg-publish: true
 > • Less common pattern
 > ```
 >
+
 > [!example] Identifying Sentence Patterns
 > 
 > **Practice identifying patterns:**
@@ -999,6 +1009,7 @@ dg-publish: true
 > ✓ She is smart. She works hard.
 > ```
 >
+
 > [!warning] Subject-Verb Agreement Errors
 > 
 > ```
@@ -1100,6 +1111,7 @@ dg-publish: true
    Predicate: needs repairs
 > ```
 >
+
 > [!example] Exercise 2: Identify Sentence Components
 > 
 > **Identify: Subject (S), Verb (V), Direct Object (DO), Indirect Object (IO), Subject Complement (SC)**
@@ -1141,6 +1153,7 @@ dg-publish: true
 >    Pattern: S + V + DO + OC
 > ```
 >
+
 > [!example] Exercise 3: Correct the Errors
 > 
 > **Fix the sentence fragments and run-on sentences:**
@@ -1192,6 +1205,7 @@ dg-publish: true
 >    ✓ My favorite subject is math. It's very interesting.
 > ```
 >
+
 > [!example] Exercise 4: Identify Sentence Patterns
 > 
 > **Identify which of the 5 basic patterns each sentence follows:**
@@ -1310,6 +1324,7 @@ dg-publish: true
 > • Tell me where you live. (functions as direct object)
 > ```
 >
+
 > [!example] Complex Sentence Analysis Examples
 > 
 > **Example 1:**
@@ -1462,6 +1477,7 @@ dg-publish: true
 > or is an emphatic statement
 > ```
 >
+
 > [!example] Sentence Type Examples and Conversion
 > 
 > **Converting between sentence types:**
@@ -1833,6 +1849,7 @@ dg-publish: true
 >    Pattern: Noun clause + linking verb + noun clause
 > ```
 >
+
 > [!example] Exercise 6: Sentence Building
 > 
 > **Build sentences using the specified patterns:**
@@ -2375,6 +2392,7 @@ dg-publish: true
 > 20. Stop that immediately!
 > ```
 >
+
 > [!note] Answer Key
 > 
 > **Part A Answers:**

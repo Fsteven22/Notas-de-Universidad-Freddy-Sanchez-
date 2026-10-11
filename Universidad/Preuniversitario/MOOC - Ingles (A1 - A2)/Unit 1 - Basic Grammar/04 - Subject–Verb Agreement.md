@@ -568,6 +568,7 @@ dg-publish: true
 > 30. are (both = always plural)
 > ```
 >
+
 > [!example] Exercise 2: Correct the Errors
 > 
 > **Each sentence has an agreement error. Fix it:**
@@ -610,6 +611,7 @@ dg-publish: true
 > 60. She doesn't like coffee.
 > ```
 >
+
 > [!example] Exercise 3: Fill in the Blanks
 > 
 > **Complete with the correct form of the verb in parentheses:**
@@ -652,6 +654,7 @@ dg-publish: true
 > 90. is (agrees with first subject: teacher)
 > ```
 >
+
 > [!example] Exercise 4: Real-World Application
 > 
 > **Translate and check agreement:**
@@ -784,6 +787,7 @@ dg-publish: true
 > Estas palabras son SIEMPRE plurales en inglés
 > ```
 >
+
 > [!tip] Consejos y Trucos de Memoria
 > 
 > **Tip 1: La regla "al revés"**
@@ -918,6 +922,7 @@ dg-publish: true
 > 30. have (a number of = plural)
 > ```
 >
+
 > [!example] Exercise 6: Paragraph Correction
 > 
 > **Find and correct all 15 agreement errors in this paragraph:**
@@ -974,6 +979,7 @@ dg-publish: true
 > 45. everyone are → is (everyone = singular)
 > ```
 >
+
 > [!example] Exercise 7: Create Your Own Sentences
 > 
 > **Write correct sentences using these subjects:**

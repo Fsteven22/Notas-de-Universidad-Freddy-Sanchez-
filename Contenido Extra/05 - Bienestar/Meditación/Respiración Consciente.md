@@ -4,6 +4,7 @@
 
 > [!info] Definición La respiración consciente es la práctica deliberada de dirigir la atención hacia el proceso respiratorio, utilizándolo como herramienta para regular el sistema nervioso, las emociones y el estado mental.
 >
+
 > [!tip] Principios Básicos
 > 
 > - 🧠 **Conexión mente-cuerpo**: La respiración es el único proceso vital que puede ser tanto automático como consciente
@@ -191,6 +192,7 @@ flowchart LR
 > - 🚫 **Irregularidad**: La práctica esporádica reduce la efectividad
 > - 🚫 **Expectativas altas**: Los beneficios se desarrollan gradualmente
 >
+
 > [!warning] Contraindicaciones
 > 
 > - Embarazo avanzado (consultar médico)
@@ -202,10 +204,13 @@ flowchart LR
 
 > [!quote] [[Técnicas de Relajación]] La respiración consciente es la base fundamental de todas las técnicas de relajación efectivas
 >
+
 > [!quote] [[Gestión de la Energía Personal]] El control respiratorio es clave para la regulación energética y el manejo de los ritmos circadianos
 >
+
 > [!quote] [[Mindfulness]] La atención a la respiración es el ancla más utilizada en prácticas meditativas
 >
+
 > [!quote] [[Gestión del Estrés]] La respiración consciente es la herramienta más accesible y efectiva para la respuesta inmediata al estrés
 
 

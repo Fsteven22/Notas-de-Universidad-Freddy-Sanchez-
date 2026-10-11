@@ -37,6 +37,7 @@ dg-publish: true
 > |**Ejemplo de ambigüedad**|Sin signos, no se distingue pregunta de afirmación|¡Vamos! / ¿Vamos? / Vamos...|
 > |**Ejemplo de tono**|El mismo contenido cambia de actitud|Dijo «sí». / Dijo ¡sí! / Dijo... sí.|
 >
+
 > [!warning] ⛔ Errores que debes evitar desde el inicio
 >
 > |Error típico|Por qué es error|Forma correcta|
@@ -65,6 +66,7 @@ dg-publish: true
 >
 > > 📌 No se mezclan con la abreviatura «etc.»: se escribe *etc.* **o** *...*, nunca *etc....*
 >
+
 > [!warning] 🔠 Mayúscula o minúscula después de puntos suspensivos
 >
 > |Caso|Regla|Ejemplo|
@@ -95,6 +97,7 @@ dg-publish: true
 >
 > > 📌 Las obras completas (libros, películas) van en *cursiva*, no entre comillas: *Cien años de soledad*.
 >
+
 > [!note] 📌 Posición de las comillas frente al punto
 >
 > |Caso|Regla en español|Ejemplo|
@@ -125,6 +128,7 @@ dg-publish: true
 >
 > > 📌 En textos formales, evita abusar: una exclamación bien puesta vale más que cinco seguidas.
 >
+
 > [!note] 🔗 Coma y mayúscula tras el cierre
 >
 > |Caso|Regla|Ejemplo|
@@ -156,6 +160,7 @@ dg-publish: true
 > |**Nombres de festividades**|Celebraciones oficiales y religiosas|Año Nuevo, Semana Santa, Fiestas Patrias|
 > |**Topónimos con artículo**|El artículo se une al nombre propio|El Cairo, La Paz, El Salvador|
 >
+
 > [!note] 🧭 Mayúscula diacrítica: el mismo término cambia de sentido
 >
 > |Minúscula (genérico)|Mayúscula (propio o institucional)|Ejemplo contrastado|
@@ -169,6 +174,7 @@ dg-publish: true
 >
 > > 📌 Los artículos dentro del nombre forman parte de él cuando van en mayúscula: *El Comercio*, *La República*.
 >
+
 > [!success] ⚠️ Excepciones frecuentes — donde NO va mayúscula
 >
 > |Caso|Error frecuente|Forma correcta|
@@ -229,6 +235,7 @@ dg-publish: true
 >
 > > 📌 Autoevalúate: si acertaste 5–6, dominas la regla de oro «¿pondría aquí un punto o una coma?».
 >
+
 > [!example]- ✏️ Ejercicio 05.2 — Comillas: citas textuales e ironía
 >
 > **Instrucción:** Corrige el uso de comillas y la posición del punto. Marca si es cita, ironía o término especial.
@@ -244,6 +251,7 @@ dg-publish: true
 >
 > > 📌 Recuerda: en español el punto va **fuera** salvo cita completa e independiente.
 >
+
 > [!example]- ✏️ Ejercicio 05.3 — Signos dobles: corrige la omisión de apertura
 >
 > **Instrucción:** Reescribe con apertura y cierre obligatorios. Corrige duplicaciones y comas mal ubicadas.
@@ -259,6 +267,7 @@ dg-publish: true
 >
 > > 📌 Diferencia clave con el inglés: en español la apertura es **obligatoria**, no opcional.
 >
+
 > [!example]- ✏️ Ejercicio 05.4 — Mayúsculas: corrige los textos
 >
 > **Instrucción:** Corrige las mayúsculas indebidas y añade las que falten según la norma.
@@ -307,12 +316,14 @@ dg-publish: true
 > - [ ] Escribo correctamente ¡! y ¿? con apertura y cierre obligatorios.
 > - [ ] Distingo cinco casos donde la mayúscula es obligatoria (nombre propio, institución, apertura, sigla, hecho histórico).
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Decido si va mayúscula o minúscula después de puntos suspensivos según cierren o continúen el enunciado.
 > - [ ] Coloco el punto fuera de las comillas en citas breves y corrijo la ironía con comillas.
 > - [ ] Corrijo textos con cargos, profesiones, días, meses y gentilicios mal escritos en mayúscula.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Justifico cada signo en un párrafo académico sin abusar de exclamaciones ni comillas.
@@ -365,6 +376,7 @@ mindmap
 >
 > [4] A. Gómez Torrego, *Gramática didáctica del español*, 11.ª ed., Madrid, España: SM, 2011.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[03 - Uso correcto del verbo haber]] — la corrección ortográfica continúa: puntuación clara + verbo *haber* bien usado evitan los errores más frecuentes en textos académicos.

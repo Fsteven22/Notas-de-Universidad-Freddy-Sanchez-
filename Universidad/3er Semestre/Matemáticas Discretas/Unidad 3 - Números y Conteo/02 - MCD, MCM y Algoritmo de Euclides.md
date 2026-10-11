@@ -194,7 +194,7 @@ dg-publish: true
 > [!tip] 🧠 En una frase
 > 
 > Esto es solo el nombre elegante de la "división con residuo" que aprendiste en la primaria: cuando divides $n \div d$, siempre obtienes un cociente $q$ (cuántas veces cabe) y un residuo $r$ (lo que sobra, siempre menor que $d$). El "teorema" de abajo solo demuestra formalmente que $q$ y $r$ son únicos — es decir, que no hay dos formas distintas de hacer la misma división.
-
+>
 > [!abstract] 🏛️ Principio del Buen Orden y Teorema del Cociente-Residuo
 > 
 > ### Principio del Buen Orden

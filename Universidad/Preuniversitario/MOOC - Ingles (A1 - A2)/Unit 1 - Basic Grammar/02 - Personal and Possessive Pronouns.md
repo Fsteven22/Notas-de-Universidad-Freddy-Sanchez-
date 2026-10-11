@@ -902,6 +902,7 @@ dg-publish: true
 > 8. It
 > ```
 >
+
 > [!example] Exercise 2: Object Pronouns
 > 
 > **Fill in with the correct object pronoun:**
@@ -930,6 +931,7 @@ dg-publish: true
 > 8. you
 > ```
 >
+
 > [!example] Exercise 3: Possessive Adjectives
 > 
 > **Complete with the correct possessive adjective:**
@@ -958,6 +960,7 @@ dg-publish: true
 > 8. our
 > ```
 >
+
 > [!example] Exercise 4: Possessive Pronouns
 > 
 > **Replace with possessive pronouns:**
@@ -986,6 +989,7 @@ dg-publish: true
 > 8. yours
 > ```
 >
+
 > [!example] Exercise 5: Mixed Pronouns
 > 
 > **Choose the correct pronoun:**
@@ -1018,6 +1022,7 @@ dg-publish: true
 > 10. its (possessive, no apostrophe)
 > ```
 >
+
 > [!example] Exercise 6: Correct the Mistakes
 > 
 > **Find and correct the errors:**
@@ -1061,6 +1066,7 @@ dg-publish: true
 > 8. My mom gave the gift to her.
 > ```
 >
+
 > [!example] Exercise 7: Translation Practice
 > 
 > **Translate to English:**
@@ -1179,6 +1185,7 @@ dg-publish: true
 >            that you're coming.
 > ```
 >
+
 > [!example] Dialogue 2: Lost and Found
 > 
 > ```
@@ -1205,6 +1212,7 @@ dg-publish: true
 > Person D: I will. Thanks again. You're very kind.
 > ```
 >
+
 > [!example] Dialogue 3: Family Discussion
 > 
 > ```
@@ -1234,6 +1242,7 @@ dg-publish: true
 >      Let's all keep our belongings in their proper places.
 > ```
 >
+
 > [!example] Dialogue 4: Shopping Together
 > 
 > ```
@@ -1295,6 +1304,7 @@ dg-publish: true
 > This usage is becoming standard in modern English!
 > ```
 >
+
 > [!info] "One" as Impersonal Pronoun
 > 
 > **Formal/General statements:**
@@ -1315,6 +1325,7 @@ dg-publish: true
 > • "You never know what might happen."
 > ```
 >
+
 > [!info] Pronoun Order in Sentences
 > 
 > **Multiple pronouns together:**

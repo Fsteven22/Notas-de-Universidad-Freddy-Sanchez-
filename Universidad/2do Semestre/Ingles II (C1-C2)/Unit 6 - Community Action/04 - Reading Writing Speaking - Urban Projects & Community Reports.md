@@ -38,6 +38,7 @@ dg-publish: true
 > 
 > La sección 6.4 presenta un podcast sobre el **Intersection Repair Project** en Portland: un proyecto comunitario donde vecinos pintan las intersecciones de sus calles con diseños coloridos, transformándolas en espacios más agradables y seguros. El podcast entrevista a varias personas involucradas (Eric, Isabel, Jeannette), cada una con una actitud distinta hacia el proyecto — el ejercicio de listening pide identificar si cada persona tiene una actitud positiva o negativa, y qué palabras usan para expresarlo.
 >
+
 > [!tip]- 💡 Cómo detectar la actitud del hablante
 > 
 > Más allá de las palabras explícitas ("I love this" o "I don't like it"), el tono, las pausas y el tipo de detalles que una persona elige compartir también revelan su actitud. Presta atención a si describen el proyecto con entusiasmo (detalles positivos, energía en la voz) o con reservas (mencionan dudas, comparan con problemas "más importantes" que atender).
@@ -50,10 +51,12 @@ dg-publish: true
 > 
 > El artículo de lectura describe el proyecto **"Verde Vertical"** en Ciudad de México, que transforma cientos de pilares que sostienen pasos elevados (*overpasses*) en jardines verticales. El objetivo declarado es reducir la contaminación y mejorar el paisaje urbano.
 >
+
 > [!example]- 🟢 Opiniones contrastantes del artículo
 > 
 > El texto presenta dos perspectivas opuestas: un conductor comenta que ver algo verde en su trayecto diario, en medio del tráfico, le resulta relajante. En cambio, un peatón se muestra escéptico, argumentando que las plantas solo disfrazan el hecho de que sigue siendo una carretera, sin cambiar realmente el problema de fondo. El proyecto busca aportar decenas de miles de metros de vegetación adicional para mejorar la calidad del aire y el ánimo de los millones de residentes de la ciudad — aunque, como señala el propio artículo, esto funciona "al menos en teoría".
 >
+
 > [!tip]- 🖥️ Insider English — Glosario
 > 
 > **overpass** (n): un puente que permite que una vía o vía férrea pase por encima de otra.
@@ -66,6 +69,7 @@ dg-publish: true
 > 
 > Al escribir un reporte que incluye las opiniones de distintas personas (como en el artículo de Verde Vertical), es importante usar frases claras para **introducir cada cita** y dejar explícito de quién es esa opinión.
 >
+
 > [!note] 📋 Frases típicas para introducir citas
 > 
 > |Frase|Uso|
@@ -74,6 +78,7 @@ dg-publish: true
 > |**When asked for comment, one driver said...**|Introduce la opinión de alguien afectado directamente|
 > |**However, a pedestrian disagreed...**|Introduce una opinión que contrasta con la anterior|
 >
+
 > [!tip]- 🖥️ Por qué esto importa
 > 
 > Sin estas frases, un texto con varias opiniones puede sentirse confuso o parecer que todas las ideas vienen del mismo narrador. Introducir claramente cada cita (quién la dice, y si contrasta o refuerza la opinión anterior) le da estructura y credibilidad periodística al reporte.
@@ -90,6 +95,7 @@ dg-publish: true
 > 2. Cómo se llevó a cabo.
 > 3. Opiniones positivas **y** negativas de las personas que llamaron al programa, introduciendo cada cita correctamente.
 >
+
 > [!example]- 🟢 Ejemplo de estructura (guía, no el texto del libro)
 > 
 > 1ª oración: presenta el proyecto y su ubicación (Portland, Intersection Repair).
@@ -106,6 +112,7 @@ dg-publish: true
 > 
 > Esta es una tarea de speaking grupal inspirada en el **Morrinho Art Project**, una maqueta a gran escala de una *comunidade* (barrio) de Río de Janeiro, creada por un residente de 14 años, Cirlan Souza de Oliveira, como una forma de mostrar orgullo por su comunidad.
 >
+
 > [!note] 📋 Pasos de la tarea: Research → Decide → Discuss → Return → Present
 > 
 > |Paso|Qué hacer|
@@ -116,6 +123,7 @@ dg-publish: true
 > |**D. Return**|Volver a tu grupo original, comparar notas, hacer ajustes, identificar los puntos clave, ponerle un nombre al proyecto, y preparar la presentación.|
 > |**E. Present**|Presentar la idea a toda la clase; escuchar todas las presentaciones y decidir en conjunto cuál es la más efectiva y original.|
 >
+
 > [!tip]- 🖥️ Frases útiles para cada etapa
 > 
 > **Decide:** *"We're going to focus on... (place) / We're going to create... / The project will help the area because..."*
@@ -124,6 +132,7 @@ dg-publish: true
 > 
 > **Present:** *"Our project is called... / We decided/thought that... / We chose to... because..."*
 >
+
 > [!tip]- 💡 Conexión con el listening skill de 6.4
 > 
 > Al presentar tu proyecto y recibir feedback de otro grupo (paso C), estás practicando exactamente la misma habilidad de **detectar actitud** (positiva/negativa/con reservas) que trabajaste en el listening del Intersection Repair Project — solo que ahora en vivo, con tus compañeros.
@@ -168,6 +177,7 @@ graph TD
 > 
 > **3.** ¿Qué frase se usa para introducir una opinión que contrasta con la anterior?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** Verde Vertical
@@ -186,6 +196,7 @@ graph TD
 > 
 > **3.** Escribe una frase usando "Decide" phrases para proponer un proyecto de arte urbano en un parque de tu ciudad.
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** *"One resident said, 'This project brought our whole street together.'"*
@@ -204,6 +215,7 @@ graph TD
 > 
 > **3.** Reflexiona: ¿estás más de acuerdo con la postura del conductor o del peatón sobre Verde Vertical? Justifica tu opinión.
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 1 el uso correcto de frases para introducir citas y un balance real entre opiniones positivas y negativas (no solo una perspectiva).
@@ -217,11 +229,13 @@ graph TD
 > - [ ] Identifico frases para introducir citas de opinión.
 > - [ ] Sigo la estructura de la tarea de speaking (Research → Decide → Discuss → Return → Present).
 >
+
 > [!success] ✅ Nivel Intermedio
 > - [ ] Escribo un reporte de 120-150 palabras con opiniones citadas correctamente introducidas.
 > - [ ] Detecto actitudes positivas/negativas en un texto o audio, incluso sin palabras explícitas.
 > - [ ] Propongo un proyecto de arte urbano usando las frases de "Decide" con claridad.
 >
+
 > [!success] ✅ Nivel Avanzado
 > - [ ] Comparo críticamente dos proyectos urbanos distintos, evaluando sus enfoques y limitaciones.
 > - [ ] Incorporo opiniones contrastantes en un reporte de forma fluida y periodística.
@@ -233,6 +247,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 6: Community Action, pp. 60–62.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Discussing Good Works & Describing Good Deeds]]

@@ -62,6 +62,7 @@ dg-publish: true
 > - [ ] [[03 - La síntesis de múltiples fuentes]]
 > - [ ] [[04 - Usos correctos e incorrectos del gerundio]]
 >
+
 > [!note] ☑️ Ejercicios formativos (14 en total)
 >
 > **Nota 01 — El resumen académico:**

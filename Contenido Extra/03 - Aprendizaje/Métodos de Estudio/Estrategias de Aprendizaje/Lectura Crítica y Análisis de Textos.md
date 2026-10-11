@@ -112,6 +112,7 @@
 > - Evaluar coherencia interna del texto
 > - Conectar con conocimientos previos y otros textos
 >
+
 > [!warning]+ **Técnica de los 6 Sombreros Críticos** Basada en Edward de Bono, adaptada para análisis textual:
 > 
 > |Sombrero|Enfoque|Preguntas Clave|

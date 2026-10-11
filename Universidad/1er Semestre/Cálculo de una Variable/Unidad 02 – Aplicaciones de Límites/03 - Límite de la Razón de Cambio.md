@@ -21,6 +21,7 @@ dg-publish: true
 > 
 > **Interpretación del cociente:** 🔍 $$\frac{f(a+h) - f(a)}{h} = \frac{\text{Cambio en } f}{\text{Cambio en } x} = \text{Razón de cambio promedio}$$
 >
+
 > [!info] 📊 Formas Alternativas de la Definición
 > 
 > ### Variaciones equivalentes del límite
@@ -36,6 +37,7 @@ dg-publish: true
 > 
 > **Mnemotecnia:** "**C**ambio **D**ividido **T**iende = **CDT** (Cociente Diferencial al Tendiente)"
 >
+
 > [!warning] ⚠️ Formas Indeterminadas en Derivadas
 > 
 > ### Resolución de indeterminaciones
@@ -76,6 +78,7 @@ dg-publish: true
 > 3. **Recta secante:** Pasa por $P$ y $Q$
 > 4. **Límite:** Cuando $h \to 0$, $Q \to P$ y la secante se convierte en **tangente**
 >
+
 > [!tip] 🎯 Pendiente de Rectas Secantes
 > 
 > ### Análisis del comportamiento límite
@@ -93,6 +96,7 @@ dg-publish: true
 > 
 > **Visualización del concepto:** La derivada es la "mejor aproximación lineal" de la función cerca del punto
 >
+
 > [!warning] 🚫 Casos Especiales Geométricos
 > 
 > ### Situaciones donde no existe la derivada
@@ -134,6 +138,7 @@ dg-publish: true
 > - **Temperatura vs altura:** $T'(h) = $ gradiente térmico $(°C/m)$
 > - **Costo vs producción:** $C'(x) = $ costo marginal $($/unidad)$
 >
+
 > [!info] 🔬 Aplicaciones en Ciencias
 > 
 > ### Contextos específicos de razones de cambio
@@ -149,6 +154,7 @@ dg-publish: true
 > 
 > **Regla mnemotécnica:** "**F**ísica **Q**uímica **E**conomía **B**iología **M**edicina = **FQEBM**"
 >
+
 > [!warning] 📈 Interpretación de Signos
 > 
 > ### Significado del signo de la derivada
@@ -193,6 +199,7 @@ dg-publish: true
 > - **Pendiente:** $m = f'(a)$
 > - **Ordenada al origen:** $b = f(a) - a \cdot f'(a)$
 >
+
 > [!info] 🎯 Construcción Paso a Paso
 > 
 > ### Algoritmo para encontrar la recta tangente
@@ -213,6 +220,7 @@ dg-publish: true
 > - **Ecuación:** $y - 4 = 4(x - 2)$
 > - **Simplificado:** $y = 4x - 4$
 >
+
 > [!warning] 🔍 Recta Normal
 > 
 > ### Perpendicular a la tangente
@@ -235,6 +243,7 @@ dg-publish: true
 > |Horizontal|Vertical|Perpendiculares 📐|
 > |Vertical|Horizontal|Perpendiculares 📐|
 >
+
 > [!info] 🎨 Aplicaciones Geométricas
 > 
 > ### Usos prácticos de la recta tangente

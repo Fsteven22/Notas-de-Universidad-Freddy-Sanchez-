@@ -2501,6 +2501,7 @@ dg-publish: true
 > 
 > d) $\vec{v} = (2, 2, 1)$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Dirección de máximo cambio:**
@@ -2537,6 +2538,7 @@ dg-publish: true
 > 
 > c) Verificar que $\nabla f$ es perpendicular a la curva de nivel que pasa por $(2,3)$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Problemas teóricos:**
@@ -2611,6 +2613,7 @@ dg-publish: true
 > 
 > $$|\vec{v}| = \sqrt{9+16} = 5$$ $$\vec{u} = \frac{1}{5}(3,4)$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = x^2 - y^2$ en $(2,1)$
@@ -2647,6 +2650,7 @@ dg-publish: true
 > 
 > **Respuesta:** Bajas a razón de $7\sqrt{2} \approx 9.9$ m por unidad de distancia.
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7c)** Si $\nabla f = \vec{0}$ en todos los puntos

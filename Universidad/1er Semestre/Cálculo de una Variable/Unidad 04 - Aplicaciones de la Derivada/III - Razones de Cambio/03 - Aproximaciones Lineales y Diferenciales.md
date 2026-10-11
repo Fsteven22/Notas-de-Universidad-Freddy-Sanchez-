@@ -18,6 +18,7 @@ dg-publish: true
 > - $f'(x)$ = derivada de la función
 > - $dx$ = cambio pequeño en $x$
 >
+
 > [!example] 🌟 Ejemplo Práctico Para $f(x) = x^2$ en $x = 3$:
 > 
 > - $f'(x) = 2x$, entonces $f'(3) = 6$

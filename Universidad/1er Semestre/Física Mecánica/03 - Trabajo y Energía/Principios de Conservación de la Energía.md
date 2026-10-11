@@ -10,6 +10,7 @@ dg-publish: true
 > 
 > Este tema abarca el estudio completo de la energía en sistemas físicos, introduciendo conceptos fundamentales como energía cinética (movimiento) y energía potencial (posición). Los principios de conservación son herramientas poderosas que permiten analizar el movimiento sin usar directamente las leyes de Newton.
 >
+
 > [!info] Enfoque Principal
 > 
 > ```mermaid
@@ -68,6 +69,7 @@ dg-publish: true
 > 
 > Este teorema reformula la Segunda Ley de Newton: **el trabajo total realizado por todas las fuerzas sobre una partícula es igual al cambio en su energía cinética**.
 >
+
 > [!example] Aplicación Práctica
 > 
 > **🎯 Caso Típico**:
@@ -75,11 +77,13 @@ dg-publish: true
 > - ✅ Empujas una caja → $W > 0$ → $K$ aumenta
 > - ❌ Fricción la detiene → $W < 0$ → $K$ disminuye
 >
+
 > [!info] Relación con Otros Temas
 > 
 > - **📐 Segunda Ley Newton**: Trabajo = Fuerza × desplazamiento
 > - **⚡ Principio Energía**: Caso particular donde solo cambia $K$
 >
+
 > [!tip] Interpretación Gráfica
 > 
 > ```mermaid
@@ -89,6 +93,7 @@ dg-publish: true
 >     C --> D["= Cambio en energía cinética"]
 > ```
 >
+
 > [!example] Ejemplo: Bala que se Detiene 💥
 > 
 > **🎯 Problema**: Bala de 0.01 kg a 300 m/s se detiene en 0.06 m en un tronco.
@@ -105,6 +110,7 @@ dg-publish: true
 > 
 > **🔧 Solución**: $$W_{neto} = \Delta K = K_{final} - K_{inicial}$$ $$-F_{prom} \cdot d = 0 - \frac{1}{2}mv_{inicial}^2$$ $$F_{prom} = \frac{1}{2}\frac{mv_{inicial}^2}{d} = \frac{1}{2}\frac{(0.01)(300)^2}{0.06} = 7500 \text{ N}$$
 >
+
 > [!summary] Síntesis 🔑 **Concepto Clave**: El trabajo neto realizado sobre un objeto es igual al cambio en su energía cinética.
 
 ---
@@ -126,18 +132,21 @@ dg-publish: true
 >     D --> H[🔥 Disipan energía como calor]
 > ```
 >
+
 > [!tip] Fuerzas Conservativas ✅
 > 
 > - **Definición**: Trabajo independiente de la trayectoria
 > - **Característica**: Permiten definir energía potencial $U$
 > - **Ejemplos**: Gravedad, resorte, fuerza eléctrica
 >
+
 > [!warning] Fuerzas No Conservativas ❌
 > 
 > - **Definición**: Trabajo depende de la trayectoria
 > - **Característica**: Disipan energía como calor
 > - **Ejemplos**: Fricción, resistencia del aire
 >
+
 > [!example] Ejemplos Comparativos
 > 
 > **🌍 Gravedad (Conservativa)**
@@ -164,6 +173,7 @@ dg-publish: true
 > 
 > **Resultado**: Más distancia = más trabajo disipado
 >
+
 > [!summary] Síntesis 🔑 **Concepto Clave**: Las fuerzas conservativas no dependen de la trayectoria y permiten definir energía potencial. Las no conservativas disipan energía.
 
 ---
@@ -188,6 +198,7 @@ dg-publish: true
 > 
 > **Definición**: Energía que posee un objeto debido a su posición o configuración respecto a una fuerza conservativa. Es energía "almacenada" con potencial de convertirse en otras formas.
 >
+
 > [!example] Aplicaciones Prácticas
 > 
 > **🏊 Clavadista (Gravitatoria)**
@@ -206,6 +217,7 @@ dg-publish: true
 >     B --> C["🪨 Piedra volando<br/>U_e = 0<br/>K = máxima"]
 > ```
 >
+
 > [!tip] Interpretación Gráfica
 > 
 > **📊 Gráfica U vs x**
@@ -222,6 +234,7 @@ dg-publish: true
 > - **Equilibrio estable**: Mínimos de $U$ (pelota en valle)
 > - **Equilibrio inestable**: Máximos de $U$ (pelota en cima de colina)
 >
+
 > [!summary] Síntesis 🔑 **Concepto Clave**: La energía potencial es energía almacenada debido a la posición. Existe una para cada fuerza conservativa.
 
 ---
@@ -245,6 +258,7 @@ dg-publish: true
 > 
 > **Principio Fundamental**: En sistemas donde solo actúan fuerzas conservativas, la energía mecánica total se conserva. La energía se transforma entre cinética y potencial, pero su suma permanece constante.
 >
+
 > [!example] Aplicación: Pelota que Cae ⚽
 > 
 > ```mermaid
@@ -256,6 +270,7 @@ dg-publish: true
 >     C -.-> D
 > ```
 >
+
 > [!example] Ejemplo Detallado: Resbaladilla Sin Fricción 🛝
 > 
 > **🎯 Problema**: Objeto masa $m$ se suelta desde reposo a altura $h$. ¿Velocidad en la base?
@@ -274,6 +289,7 @@ dg-publish: true
 > 
 > **✨ Resultado**: La velocidad final depende solo de la altura, no de la masa ni la forma de la rampa.
 >
+
 > [!info] Casos Especiales
 > 
 > ```mermaid
@@ -285,6 +301,7 @@ dg-publish: true
 >     D --> F[🔥 Con fricción<br/>💨 Con resistencia<br/>🔨 Con trabajo externo]
 > ```
 >
+
 > [!summary] Síntesis 🔑 **Concepto Clave**: En sistemas con solo fuerzas conservativas, la energía mecánica se conserva, intercambiándose continuamente entre energía cinética y potencial.
 
 ---

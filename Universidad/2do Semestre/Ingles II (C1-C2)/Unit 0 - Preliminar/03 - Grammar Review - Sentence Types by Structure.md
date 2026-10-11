@@ -218,6 +218,7 @@ dg-publish: true
 >
 > **10.** Vegetables are good for your health and easy to digest. &emsp; `________________`
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 >
 > | # | Oración | Tipo | Por qué |
@@ -233,6 +234,7 @@ dg-publish: true
 > | 9 | *Let's go to the theater after lunch.* | **Simple** | *After lunch* es frase preposicional — una sola cláusula independiente |
 > | 10 | *Vegetables are good for your health and easy to digest.* | **Simple** | 1 sujeto + 1 verbo con dos predicados coordinados — no hay segunda cláusula |
 >
+
 > [!example] ✏️ Ejercicio 2 — Construye las oraciones
 >
 > Combina las ideas usando el tipo de oración indicado:
@@ -242,6 +244,7 @@ dg-publish: true
 > 3. *I love coffee.* → **Simple** (añade un complemento)
 > 4. *It was raining. We went outside. We had umbrellas.* → **Compound-Complex**
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 >
 > | # | Respuesta posible | Tipo confirmado |

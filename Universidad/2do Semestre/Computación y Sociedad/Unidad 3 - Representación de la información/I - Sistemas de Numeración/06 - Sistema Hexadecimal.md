@@ -45,6 +45,7 @@ dg-publish: true
 > |14|**E**|1110|
 > |15|**F**|1111|
 >
+
 > [!tip] 💡 Por qué el hexadecimal es tan usado en computación
 >
 > Con 4 bits se pueden representar $2^4 = 16$ valores distintos — exactamente el rango de un dígito hexadecimal. Esto hace que un **byte** (8 bits) se represente con exactamente **2 dígitos hex**, mucho más compacto y legible que escribir 8 ceros y unos.
@@ -59,6 +60,7 @@ dg-publish: true
 >
 > Mismo procedimiento que las conversiones anteriores ([[04 - Conversion Decimal-Binario]], [[05 - Sistema Octal]]), ahora dividiendo entre **16**.
 >
+
 > [!example] ✏️ Ejemplo — Convertir 1957₁₀ a hexadecimal
 >
 > $$
@@ -81,6 +83,7 @@ dg-publish: true
 >
 > Igual que en los demás sistemas, pero con potencias de 16: $16^0=1$, $16^1=16$, $16^2=256$, $16^3=4096$...
 >
+
 > [!example] ✏️ Ejemplo — Convertir 2B6₁₆ a decimal
 >
 > $$2\times16^2 + 11\times16^1 + 6\times16^0$$
@@ -101,6 +104,7 @@ dg-publish: true
 >
 > Cada dígito hexadecimal se traduce directamente a sus 4 bits equivalentes (o viceversa: cada grupo de 4 bits se traduce a un dígito hex), usando la tabla de equivalencia. Igual que con octal, se agrupa desde el punto decimal, o desde la derecha si es un entero.
 >
+
 > [!example] ✏️ Ejemplo — Convertir B6₁₆ a binario
 >
 > ```
@@ -111,6 +115,7 @@ dg-publish: true
 >
 > $$\boxed{B6_{16} = 10110110_2}$$
 >
+
 > [!example] ✏️ Ejemplo con fracción — Convertir A7.5D₁₆ a binario
 >
 > ```
@@ -131,6 +136,7 @@ dg-publish: true
 > 
 > Igual que en binario y octal: la parte entera se divide sucesivamente entre 16, y la parte fraccionaria se **multiplica por 16** repetidamente, tomando la parte entera de cada resultado como el siguiente dígito.
 >
+
 > [!example] ✏️ Ejemplo — Convertir 250.025₁₀ a hexadecimal
 > 
 > **Parte entera (250):**

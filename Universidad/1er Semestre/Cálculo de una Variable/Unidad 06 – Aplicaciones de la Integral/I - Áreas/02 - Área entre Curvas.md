@@ -14,6 +14,7 @@ dg-publish: true
 > 
 > donde $f(x)$ es la **función superior** y $g(x)$ es la **función inferior**.
 >
+
 > [!warning] ⚠️ **Condición Importante** La fórmula anterior solo es válida cuando $f(x) \geq g(x)$ en todo el intervalo $[a,b]$. Si las funciones se cruzan, hay que dividir la región en subintervalos.
 
 ## 🔍 Metodología General

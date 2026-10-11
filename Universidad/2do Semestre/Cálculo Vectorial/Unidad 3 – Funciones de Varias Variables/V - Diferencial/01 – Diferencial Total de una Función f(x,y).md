@@ -1032,6 +1032,7 @@ dg-publish: true
 > 
 > Valor real: $(2.01)^2 + (2.98)^2 = 4.0401 + 8.8804 = 12.9205$ ✓
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** Área del triángulo: $A = \frac{1}{2}bh$

@@ -46,6 +46,7 @@ dg-publish: true
 > |**Digitales**|Señales binarias (0/1)|Compuertas lógicas, flip-flops, microcontroladores|
 > |**Mixtos (mixed-signal)**|Ambas, en el mismo chip|Convertidores ADC/DAC, temporizador 555 (tiene etapas analógicas y salida digital)|
 >
+
 > [!note] 🗂️ Por escala de integración
 > 
 > Según la cantidad de transistores equivalentes dentro del chip:
@@ -57,6 +58,7 @@ dg-publish: true
 > |Integración a gran escala|**LSI**|Miles|Memorias pequeñas, ALUs simples|
 > |Integración a muy gran escala|**VLSI**|Millones o más|Microcontroladores, microprocesadores|
 >
+
 > [!note] 🗂️ Por programabilidad — la clasificación clave de esta unidad
 > 
 > ```mermaid
@@ -130,12 +132,14 @@ dg-publish: true
 > - [ ] Distingo un CI programable de uno no programable con un ejemplo de cada uno.
 > - [ ] Reconozco los encapsulados DIP, SOIC y TO-220.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Clasifico un CI dado como analógico, digital o mixto.
 > - [ ] Ubico un CI dentro de la escala de integración (SSI, MSI, LSI, VLSI).
 > - [ ] Explico por qué el LM317 (visto en fuentes lineales) es un ejemplo de CI no programable ajustable.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Justifico la elección entre un CI no programable de función fija y uno programable para un diseño dado, según flexibilidad y costo.
@@ -176,6 +180,7 @@ mindmap
 > 
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[05 - Reguladores en Fuentes Lineales]] — el 78xx/79xx y el LM317 son, en sí mismos, ejemplos de CI no programables ya estudiados.

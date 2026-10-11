@@ -2,6 +2,7 @@
 
 > [!quote] _"La cultura se come a la estrategia en el desayuno. No importa qué tan brillante sea tu estrategia, si la cultura no la apoya, fracasará inevitablemente."_ - Peter Drucker
 >
+
 > [!info] 🏛️ **Definición y Fundamentos** La **cultura organizacional** es el conjunto de valores, creencias, normas, símbolos y prácticas compartidas que definen la identidad de una organización y guían el comportamiento de sus miembros. Es el "ADN invisible" que determina "cómo se hacen las cosas aquí".
 > 
 > ### Componentes Fundamentales
@@ -12,6 +13,7 @@
 > - **Símbolos y Rituales**: Manifestaciones tangibles de la cultura
 > - **Narrativas Organizacionales**: Historias que transmiten valores
 >
+
 > [!example] 🧊 **Modelo del Iceberg Cultural de Schein**
 > 
 > ```mermaid
@@ -27,6 +29,7 @@
 >     style E fill:#fce4ec,stroke:#ad1457,stroke-width:3px
 > ```
 >
+
 > [!tip] 🎭 **Tipos de Cultura Organizacional - Modelo Competing Values**
 > 
 > ### Marco de Valores Competitivos (Cameron & Quinn)
@@ -76,6 +79,7 @@
 > - **Transformación digital** y tecnológica
 > - **Crisis externas** y adaptación
 >
+
 > [!success] 📊 **Diagnóstico y Evaluación Cultural**
 > 
 > ### Herramientas de Diagnóstico
@@ -149,6 +153,7 @@
 > |**Departamental** 🏢|Alineación funcional|Reuniones, objetivos|6-12 meses|
 > |**Organizacional** 🌐|Transformación sistémica|Restructura, políticas|1-3 años|
 >
+
 > [!warning] ⚠️ **Desafíos y Resistencias Culturales**
 > 
 > ### Fuentes Comunes de Resistencia
@@ -176,6 +181,7 @@
 > - **Comunicación Unidireccional** 📡: Información solo desde arriba
 > - **Favoritismo** 👑: Decisiones basadas en relaciones personales
 >
+
 > [!example] 🛠️ **Herramientas Prácticas de Construcción Cultural**
 > 
 > ### Rituales y Prácticas Organizacionales
@@ -207,6 +213,7 @@
 > |**Leadership Walks** 🚶|Conexión directa|Diario|Equipos específicos|
 > |**Culture Cafés** ☕|Conversaciones informales|Quincenal|Grupos pequeños|
 >
+
 > [!quote] 📚 **Técnica de Estudio Específica: Método CULTURE**
 > 
 > ### C.U.L.T.U.R.E para Dominar la Gestión Cultural
@@ -242,6 +249,7 @@
 >     E[📈 NUEVAS MÉTRICAS] --> F[Engagement digital<br/>Colaboración virtual<br/>Bienestar remoto]
 > ```
 >
+
 > [!info] 📊 **Medición del ROI Cultural**
 > 
 > ### Métricas de Impacto Financiero
@@ -270,6 +278,7 @@
 >     style F fill:#e8f5e8,stroke:#1b5e20
 > ```
 >
+
 > [!success] 🎯 **Casos de Éxito y Mejores Prácticas**
 > 
 > ### Organizaciones con Culturas Excepcionales
@@ -299,6 +308,7 @@
 > - **Adaptabilidad Continua**: Evolución con el entorno
 > - **Inclusión Genuina**: Diversidad como ventaja competitiva
 >
+
 > [!quote] 📖 **Referencias y Recursos Adicionales**
 > 
 > ### Lecturas Fundamentales
@@ -315,6 +325,7 @@
 > - **15Five**: Herramienta de pulse surveys y feedback
 > - **Culture IQ**: Evaluación y benchmarking cultural
 >
+
 > [!note] 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### Prerrequisitos Recomendados

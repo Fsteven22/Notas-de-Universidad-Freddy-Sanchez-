@@ -55,6 +55,7 @@ dg-publish: true
 > |**murder**|asesinato|
 > |**to remove**|quitar / eliminar|
 >
+
 > [!tip]- 💡 Nota sobre el humor de Oscar Wilde
 > 
 > Todo el capítulo se construye sobre una **ironía central**: los americanos, orgullosos de su modernidad, tratan un problema sobrenatural con productos comerciales (el quitamanchas), como si un fantasma centenario pudiera resolverse con un producto de limpieza. Esta mezcla de lo gótico con lo cotidiano/comercial es la base del humor satírico de Wilde en toda la obra.
@@ -87,6 +88,7 @@ dg-publish: true
 > 
 > [1] Wilde, Oscar. _The Canterville Ghost_. 1887. (Obra de dominio público).
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[Capítulo II - The Canterville Ghost]]

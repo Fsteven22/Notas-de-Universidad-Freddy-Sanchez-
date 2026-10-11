@@ -36,6 +36,7 @@
 > 
 > ---
 >
+
 > [!success]- ## 🛠️ Sintaxis Avanzada y Elementos Útiles
 > 
 > ### Tablas, Citas y Bloques de Código

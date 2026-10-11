@@ -63,6 +63,7 @@ dg-publish: true
 > 
 > Los semiconductores tienen un **coeficiente negativo de temperatura**: al aumentar la temperatura, los átomos vibran más y algunos electrones se liberan de sus enlaces, aumentando la conductividad.
 >
+
 > [!note] ⚡ Bandas de energía
 > 
 > Los niveles de energía discretos de los átomos se expanden al cristalizarse en **bandas de energía**. Entre bandas existe una zona prohibida llamada **banda gap** ($E_g$) donde ningún electrón puede existir.
@@ -126,6 +127,7 @@ dg-publish: true
 >     style E fill:#e1ffe1
 > ```
 > 
+
 > [!tip] 🔴 Material Tipo N
 > 
 > Se dopa con impurezas **pentavalentes** (5 electrones de valencia) como Antimonio (Sb) o Fósforo (P).
@@ -137,6 +139,7 @@ dg-publish: true
 > 
 > > 📌 El material tipo N es eléctricamente neutro en conjunto — los iones positivos fijos compensan los electrones libres.
 >
+
 > [!tip] 🔵 Material Tipo P
 > 
 > Se dopa con impurezas **trivalentes** (3 electrones de valencia) como Boro (B) o Galio (Ga).
@@ -189,11 +192,13 @@ mindmap
 > - [ ] Explico banda de valencia, conduccion y band gap (Si 1.1 eV, Ge 0.67 eV) con diagrama.
 > - [ ] Distingo silicio intrinseco (puro) vs extrinseco (dopado) y por que aumenta la conductividad.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Diferencio tipo N (donadores P/Sb, electrones mayoritarios) y tipo P (aceptores B/Ga, huecos).
 > - [ ] Calculo R = delta·l/A y comparo conductividades de Cu, Ge, Si, mica.
 > - [ ] Justifico por que el material dopado sigue neutro pese a tener portadores libres.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Relaciono coeficiente negativo de temperatura con liberacion de portadores.
 > - [ ] Predigo portador mayoritario/minoritario y el ion fijo tras el dopaje.
@@ -211,6 +216,7 @@ mindmap
 > 
 > [4] Ing. Adriana Aguirre Alonso, _Sesión 6,7 — Introducción a la Electrónica_, EYAG1037. Guayaquil, Ecuador: ESPOL — FIEC, 2026.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > Esta nota es la base conceptual para:
@@ -219,6 +225,7 @@ mindmap
 > - [[03 - Transistor BJT]] — dispositivo de tres terminales formado por dos uniones P-N.
 >
 >
+
 > [!quote] 🔗 Conexiones
 > - Siguiente: [[02 - El Diodo - Unión P-N]] — union P-N
 > - Luego: [[03 - Transistor BJT]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]

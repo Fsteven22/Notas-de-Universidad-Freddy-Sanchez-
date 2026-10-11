@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En las profundidades silenciosas de los océanos, cada metro de descenso es un testimonio del peso invisible que la naturaleza acumula gota a gota." 🌊
 >
+
 > [!info] La presión en los fluidos es una magnitud fundamental que describe cómo se distribuye la fuerza por unidad de área en un medio continuo. La comprensión de la presión hidrostática es esencial para el diseño de estructuras subacuáticas, sistemas de distribución de fluidos, y una amplia gama de aplicaciones en ingeniería civil, naval y mecánica.
 
 ## 🎯 Conceptos Fundamentales
@@ -34,6 +35,7 @@ dg-publish: true
 > - **Actúa perpendicular** a cualquier superficie
 > - **Aumenta linealmente** con la profundidad
 >
+
 > [!tip] **Tipos de Presión** 🔍
 > 
 > ### **Presión Absoluta (P)**:
@@ -54,6 +56,7 @@ dg-publish: true
 > - ΔP = P₂ - P₁ = ρg(h₂ - h₁)
 > - Útil para calcular diferencias de nivel
 >
+
 > [!warning] **Propiedades de los Fluidos** 📊
 > 
 > ### Densidades Típicas (a 20°C, 1 atm):
@@ -74,6 +77,7 @@ dg-publish: true
 > - **Variación con altura**: ~1% por cada 100 m
 > - **Equivalencia**: 10.33 m de columna de agua
 >
+
 > [!success] 🌊 Distribución de Presión Hidrostática
 > 
 > ```mermaid
@@ -91,6 +95,7 @@ dg-publish: true
 >     style E fill:#4fc3f7
 > ```
 >
+
 > [!note] **Relaciones Matemáticas** 📐
 > 
 > ### Gradiente de Presión:
@@ -162,6 +167,7 @@ dg-publish: true
 > 
 > **Interpretación**: La presión a 200 m es aproximadamente 21 veces la presión atmosférica.
 >
+
 > [!example] **Problema 2: Tanque con Múltiples Fluidos** 🪣
 > 
 > ### Enunciado:
@@ -185,6 +191,7 @@ dg-publish: true
 > 
 > **Verificación**: P₃ = P₀ + ρ₁gh₁ + ρ₂gh₂ + ρ₃gh₃ = 213.1 kPa ✓
 >
+
 > [!example] **Problema 3: Manómetro en U** 📏
 > 
 > ### Enunciado:
@@ -211,6 +218,7 @@ dg-publish: true
 > 
 > **Equivalencia**: 33.4 kPa corresponde a 25 cm de columna de mercurio.
 >
+
 > [!example] **Problema 4: Presión en Diferentes Planetas** 🪐
 > 
 > ### Enunciado:

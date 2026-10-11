@@ -39,6 +39,7 @@ dg-publish: true
 > |**to blossom**|florecer|
 > |**almond tree**|almendro|
 >
+
 > [!tip]- 💡 El cumplimiento de la profecía
 > 
 > El florecimiento del almendro es el símbolo central del capítulo: representa que la maldición se ha roto y que, tras siglos de sufrimiento, Sir Simon finalmente encuentra la paz gracias a la compasión genuina de Virginia. Es un giro que transforma completamente el tono de la historia, de la comedia inicial a un final casi conmovedor.
@@ -77,6 +78,7 @@ dg-publish: true
 > 
 > [1] Wilde, Oscar. _The Canterville Ghost_. 1887. (Obra de dominio público).
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[Capítulo V - The Canterville Ghost]]

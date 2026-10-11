@@ -39,6 +39,7 @@ graph TD
 > - **Frecuencia**: 1-3 bloques por día
 > - **Ejemplos**: Escritura, programación, análisis complejo, diseño estratégico
 >
+
 > [!info] Shallow Work Blocks (30-60 min)
 > 
 > - **Propósito**: Tareas administrativas y rutinarias
@@ -46,6 +47,7 @@ graph TD
 > - **Frecuencia**: 2-4 bloques por día
 > - **Ejemplos**: Emails, llamadas, organización, tareas repetitivas
 >
+
 > [!warning] Buffer Blocks (15-30 min)
 > 
 > - **Propósito**: Transiciones y imprevistos

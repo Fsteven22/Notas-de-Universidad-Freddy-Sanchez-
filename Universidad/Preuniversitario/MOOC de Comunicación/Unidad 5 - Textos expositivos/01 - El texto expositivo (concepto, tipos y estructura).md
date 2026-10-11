@@ -27,6 +27,7 @@ dg-publish: true
 >
 > El mismo contenido puede exponerse de dos maneras muy distintas según a quién se dirige:
 >
+
 > [!success]- ✅ Cuadro comparativo — Especializado vs. Divulgativo
 >
 > | Rasgo | Texto especializado (técnico/formal) | Texto divulgativo |
@@ -48,6 +49,7 @@ dg-publish: true
 > - **Modo indicativo:** se afirma el contenido como un hecho, sin matices de duda o deseo (evitando el subjuntivo, propio de la incertidumbre o la opinión).
 > - **Desarrollo por párrafos temáticos:** cada párrafo desarrolla una sola idea o subtema, facilitando que el lector siga la progresión del contenido sin mezclarlas.
 >
+
 > [!warning] ⚠️ Errores comunes
 >
 > | ❌ Incorrecto (sesgo o subjetividad) | ✅ Correcto (objetivo) |
@@ -68,6 +70,7 @@ dg-publish: true
 >     B --> C[Conclusion - Sintesis del contenido]
 > ```
 >
+
 > [!success]- ✅ Detalle de cada bloque
 >
 > | Bloque | Función | Contenido esperado |
@@ -98,6 +101,7 @@ dg-publish: true
 > > 5. F — los juicios de valor rompen la neutralidad objetiva.
 > > 6. V — afirma el contenido como hecho.
 >
+
 > [!example]- Ejercicio 02.2 — Tipos según audiencia: especializado vs. divulgativo
 >
 > > **Instrucciones:** Clasifica cada fragmento como ESPECIALIZADO o DIVULGATIVO y justifica por el vocabulario.
@@ -118,6 +122,7 @@ dg-publish: true
 > > 5. DIVULGATIVO — comparación didáctica propia de divulgación.
 > > 6. ESPECIALIZADO — formato de informe técnico con estadística sin contextualizar.
 >
+
 > [!example]- Ejercicio 02.3 — Estructura secuencial canónica
 >
 > > **Instrucciones:** Ordena los bloques e identifica a qué parte (introducción, desarrollo, conclusión) pertenece cada párrafo.
@@ -138,6 +143,7 @@ dg-publish: true
 > > 5. El desarrollo.
 > > 6. Rompe la estructura canónica: la conclusión solo resume lo ya explicado.
 >
+
 > [!example]- Ejercicio 02.4 — Objetividad frente a sesgo
 >
 > > **Instrucciones:** Reescribe cada oración eliminando el sesgo subjetivo o indica "Correcta" si ya es objetiva.
@@ -158,6 +164,7 @@ dg-publish: true
 > > 5. *"El corazón late aproximadamente 100.000 veces al día."* (se elimina *"Sorprendentemente"*).
 > > 6. Correcta — dato objetivo con condición verificable.
 >
+
 > [!example]- Ejercicio 02.5 — Expositivo frente a argumentativo
 >
 > > **Instrucciones:** Clasifica cada enunciado como EXPOSITIVO o ARGUMENTATIVO según haya tesis y persuasión o solo información.
@@ -171,6 +178,7 @@ dg-publish: true
 > > | 5 | *"En 2024 la temperatura media subió 1,2 °C respecto al periodo preindustrial."* | EXPOSITIVO — presenta el dato aislado. |
 > > | 6 | *"Dado que la temperatura subió 1,2 °C, es urgente regular las emisiones industriales."* | ARGUMENTATIVO — usa el dato como evidencia de una tesis. |
 >
+
 > [!example]- Ejercicio 02.6 — Redacción expositiva breve
 >
 > > **Instrucciones:** Completa o corrige cada tarea de redacción aplicando presente intemporal, modo indicativo y un tema por párrafo.
@@ -199,30 +207,35 @@ dg-publish: true
 > 2. Indica si el siguiente texto es especializado o divulgativo: *"El ATP es la molécula que almacena energía celular mediante enlaces fosfato de alta energía."*
 > 3. Señala el error de objetividad en: *"Sorprendentemente, el corazón late unas 100.000 veces al día."*
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Expositivo (describe un hecho biológico sin buscar persuadir).
 > 2. Especializado (usa terminología técnica —ATP, enlaces fosfato— sin explicarla).
 > 3. La palabra *"sorprendentemente"* introduce una valoración subjetiva; un texto expositivo objetivo diría solo *"El corazón late aproximadamente 100.000 veces al día."*
 >
+
 > [!question] 🟡 Ejercicios de refuerzo — Nivel Intermedio
 >
 > 1. Convierte este párrafo especializado en uno divulgativo: *"La mitosis es el proceso de división celular que produce dos células hijas genéticamente idénticas mediante las fases profase, metafase, anafase y telofase."*
 > 2. Reescribe en presente intemporal: *"Ayer los científicos descubrieron que las plantas responden al estrés hídrico."*
 > 3. Identifica los tres bloques de la estructura secuencial en un texto breve de tu elección (puede ser un artículo de Wikipedia).
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. *"La mitosis es el proceso por el cual una célula se divide en dos células idénticas, en varias etapas ordenadas."* (se simplifican los nombres técnicos de las fases o se explican brevemente).
 > 2. *"Las plantas responden al estrés hídrico cerrando sus estomas para reducir la pérdida de agua."* (se generaliza el hecho, no se narra como evento puntual pasado).
 > 3. Respuesta abierta según el texto elegido; verifica que exista un párrafo de contexto, uno o más de desarrollo con ejemplos, y un cierre que sintetice sin agregar datos nuevos.
 >
+
 > [!question] 🔴 Ejercicios de refuerzo — Nivel Avanzado
 >
 > 1. Redacta un texto expositivo breve (100-150 palabras) sobre un tema técnico de tu carrera, dirigido a una audiencia divulgativa.
 > 2. Revisa tu propio texto e identifica cualquier verbo o frase que introduzca sesgo o juicio de valor, y corrígelo.
 > 3. Explica por qué un mismo dato (por ejemplo, una cifra de contaminación) puede aparecer tanto en un texto expositivo como en uno argumentativo, y qué cambiaría entre ambos usos.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas. Para el punto 3: en el texto expositivo, la cifra se presenta como dato aislado, sin interpretación ni llamado a la acción; en el argumentativo, la misma cifra se usa como **evidencia** al servicio de una tesis (por ejemplo, para defender que se debe regular una industria).
@@ -237,12 +250,14 @@ dg-publish: true
 > - [ ] Identifico si un texto es especializado o divulgativo
 > - [ ] Reconozco frases con sesgo subjetivo en un texto que debería ser objetivo
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Adapto un texto especializado a una versión divulgativa
 > - [ ] Uso correctamente el presente intemporal y el modo indicativo
 > - [ ] Identifico los tres bloques de la estructura secuencial en un texto ajeno
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Redacto un texto expositivo completo y objetivo sobre un tema técnico
@@ -289,6 +304,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 5 — Textos expositivos, Nota 01: "El texto expositivo (concepto, tipos y estructura)".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/00 - Índice Unidad 5]] — mapa general de la unidad.

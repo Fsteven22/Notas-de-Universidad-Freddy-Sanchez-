@@ -34,6 +34,7 @@ dg-publish: true
 >
 > Donde $N$ es el número y $r$ es la **base** del sistema (cantidad de dígitos posibles). El sistema **binario** es el caso $r=2$: solo existen 2 dígitos posibles, $\{0, 1\}$, y se denota $(\ )_2$.
 >
+
 > [!success] 📊 Sistemas de numeración más usados en electrónica digital
 >
 > |Sistema|Base $r$|Dígitos válidos|Uso típico|
@@ -52,16 +53,19 @@ dg-publish: true
 > 1. **Notación polinomial**: cada dígito se multiplica por la base elevada a la posición que ocupa.
 > 2. **Usar aritmética decimal** para sumar esos términos.
 >
+
 > [!note] 📋 Técnica — De decimal a otra base: parte entera
 >
 > 1. **Divisiones sucesivas** entre la base deseada.
 > 2. El **primer residuo** obtenido es el bit menos significativo (**LSB**); el **último residuo** (cuando el cociente ya es 0) es el bit más significativo (**MSB**).
 >
+
 > [!note] 📋 Técnica — De decimal a otra base: parte fraccionaria
 >
 > 1. **Multiplicar** la parte fraccionaria sucesivamente por la base (2, en el caso binario).
 > 2. En cada paso, la **parte entera** del resultado es el siguiente bit (el primero obtenido es el más significativo de la fracción); la **parte fraccionaria** restante se vuelve a multiplicar.
 >
+
 > [!example]- 🟢 Ejemplo — Conversión de la parte entera: $(173)_{10} \to (\ )_2$
 >
 > Se divide sucesivamente entre 2, registrando cada residuo:
@@ -81,6 +85,7 @@ dg-publish: true
 >
 > $$(173)_{10} = (10101101)_2$$
 >
+
 > [!example]- 🟢 Ejemplo — Conversión con parte fraccionaria: $(4.824)_{10} \to (\ )_2$ (aproximado)
 >
 > **Parte entera** $(4)_{10}$: por divisiones sucesivas, $4 = (100)_2$.
@@ -99,10 +104,12 @@ dg-publish: true
 >
 > $$(4.824)_{10} \approx (100.11010)_2$$
 >
+
 > [!tip]- 🖥️ Aplicación práctica
 >
 > Esta es exactamente la lógica que usa un microcontrolador al leer un valor de un **ADC** (Unidad 3, nota 03): el conversor entrega un código binario de $n$ bits, y para mostrarlo como un número "humano" en una pantalla, el firmware hace la conversión inversa (binario → decimal) usando notación polinomial. En programación, funciones como `bin()` en Python o los operadores de desplazamiento de bits (`<<`, `>>`) en C automatizan estas mismas divisiones/multiplicaciones sucesivas.
 >
+
 > [!note]- 📋 Pendiente — Operaciones binarias y complemento a base 2
 >
 > El material de esta sesión señala como repaso pendiente las operaciones aritméticas en binario (suma, resta) y el **complemento a base 2** (usado para representar negativos). Se ampliará en una nota posterior cuando se cubra en clase.
@@ -145,6 +152,7 @@ dg-publish: true
 >     F --> S["Salida F"]
 > ```
 >
+
 > [!note] 📋 Las tres compuertas fundamentales
 >
 > |Compuerta|CI típico (familia 74xx)|Operación|Equivale a|
@@ -155,6 +163,7 @@ dg-publish: true
 >
 > > 🔗 Las compuertas derivadas (**NAND, NOR, XOR, XNOR**) junto con sus tablas de verdad completas y los CI comerciales de la familia 74xx ya están documentadas en detalle en [[07 - Lógica fija y tablas de verdad]] (Unidad 3) — no se repiten aquí para evitar duplicidad.
 >
+
 > [!warning] ⚠️ Error común
 >
 > No confundir la **compuerta** (el símbolo/CI físico) con el **operador booleano** (la notación matemática $\cdot$, $+$, $\overline{\ \ }$). Ambos representan la misma operación, pero en un esquemático usarás el símbolo de compuerta; en una ecuación booleana, el operador.
@@ -167,6 +176,7 @@ dg-publish: true
 >
 > Los niveles de voltaje **H** (alto) y **L** (bajo) son hechos físicos del circuito; los valores lógicos **0** y **1** son una interpretación que el diseñador les asigna. Esa asignación se llama **convención de lógica**, y afecta cómo se lee la "lógica de la señal" a partir de la "lógica de la puerta".
 >
+
 > [!success] 📊 Lógica positiva vs. negativa
 >
 > |Convención|L (bajo)|H (alto)|Resistor asociado|
@@ -174,6 +184,7 @@ dg-publish: true
 > |**Lógica positiva**|0|1|Pull-down|
 > |**Lógica negativa**|1|0|Pull-up|
 >
+
 > [!note] 📋 Lógica mixta
 >
 > Cuando conviene combinar ambas convenciones dentro de un mismo circuito (por ejemplo, para aprovechar que una compuerta es más eficiente interpretando una entrada como activa en bajo), se usan **señales equivalentes**:
@@ -232,6 +243,7 @@ graph TD
 >
 > **3.** Completa la tabla de verdad de una compuerta AND de 2 entradas.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 >
 > **1.** $58 = (111010)_2$ (58÷2=29 r0 LSB; 29÷2=14 r1; 14÷2=7 r0; 7÷2=3 r1; 3÷2=1 r1; 1÷2=0 r1 MSB → leyendo de MSB a LSB: 111010).
@@ -240,6 +252,7 @@ graph TD
 >
 > **3.** $A=0,B=0\to F=0$; $A=0,B=1\to F=0$; $A=1,B=0\to F=0$; $A=1,B=1\to F=1$.
 >
+
 > [!question] 📋 Nivel 2 — Intermedio
 >
 > **4.** Convierte $(0.375)_{10}$ a binario (parte fraccionaria) usando multiplicaciones sucesivas.
@@ -248,6 +261,7 @@ graph TD
 >
 > **6.** Reescribe la señal $B.H$ como su equivalente en lógica negativa.
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 >
 > **4.** $0.375 \times 2 = 0.75 \to 0$; $0.75\times2=1.5\to1$; $0.5\times2=1.0\to1$. Resultado: $(0.375)_{10} = (0.011)_2$ exacto.
@@ -256,6 +270,7 @@ graph TD
 >
 > **6.** $B.H \leftrightarrow \overline{B}.L$.
 >
+
 > [!question] 📋 Nivel 3 — Avanzado
 >
 > **7.** Dado el circuito con compuertas: $N_1 = A \cdot B$, $N_2 = \overline{C}$, $N_3 = \overline{A+B}$, $N_4 = N_2 \cdot N_3$, y salida $F = N_1 + N_4$. Expresa $F$ en función únicamente de $A$, $B$ y $C$, y evalúa $F$ para $A=1, B=0, C=1$.
@@ -264,6 +279,7 @@ graph TD
 >
 > **9.** Un circuito mezcla una entrada en lógica positiva ($A.H$) con otra en lógica negativa ($B.L$) hacia una misma compuerta AND. ¿Qué transformación aplicarías antes de conectarlas, y por qué?
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 >
 > **7.** $F = N_1 + N_4 = A\cdot B + \overline{C}\cdot N_3 = A\cdot B + \overline{C}\cdot\overline{(A+B)}$. Evaluando en $A=1,B=0,C=1$: $N_1 = 1\cdot0=0$; $N_2=\overline{1}=0$; $N_3=\overline{1+0}=\overline{1}=0$; $N_4=0\cdot0=0$; $F=0+0=0$.
@@ -282,12 +298,14 @@ graph TD
 > - [ ] Convierto un número decimal entero a binario usando divisiones sucesivas.
 > - [ ] Codifico un número decimal en BCD, dígito por dígito.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Convierto un número decimal con parte fraccionaria a binario (parte entera y fraccionaria por separado).
 > - [ ] Distingo lógica positiva de lógica negativa y asocio cada una con su resistor de polarización (pull-down/pull-up).
 > - [ ] Aplico la equivalencia de lógica mixta ($A.H \leftrightarrow \overline{A}.L$) para traducir una señal entre convenciones.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Resuelvo un circuito lógico de varias etapas (como el ejercicio $N_1$–$N_4$) obteniendo la expresión booleana final y evaluándola para valores concretos.
@@ -330,6 +348,7 @@ mindmap
 >
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre sistemas de numeración y códigos binarios.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[07 - Lógica fija y tablas de verdad]] — tablas de verdad completas de AND/OR/NAND/NOR/XOR/XNOR y CI comerciales de la familia 74xx (Unidad 3).

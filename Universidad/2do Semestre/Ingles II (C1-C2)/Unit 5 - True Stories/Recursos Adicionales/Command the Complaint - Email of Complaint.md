@@ -102,6 +102,7 @@ dg-publish: true
 > - Cuál es el problema (what the problem is)
 > - Dónde lo compraste (where you bought it)
 >
+
 > [!note] 4️⃣ Expresiones útiles
 > 
 > |Expresión|
@@ -112,6 +113,7 @@ dg-publish: true
 > |I was surprised to find that… (+ a sentence)|
 > |The product does not match the description on your website.|
 >
+
 > [!tip]- 🖥️ Vocabulario para detallar un problema de producto
 > 
 > |Adjetivos útiles|Sustantivos útiles|Verbos y frases útiles|
@@ -123,6 +125,7 @@ dg-publish: true
 > |the wrong size/color/model|—|is not what I ordered / is not the correct size|
 > |—|—|was missing from the package / was delivered late|
 >
+
 > [!tip]- 🖥️ Vocabulario para detallar un problema de servicio
 > 
 > |Adjetivos útiles|Sustantivos útiles|Verbos y frases útiles|
@@ -239,6 +242,7 @@ dg-publish: true
 > 
 > **Kind regards, [Your Name]**
 >
+
 > [!tip]- 💡 Por qué este ejemplo funciona
 > 
 > Nota cómo el correo sigue estrictamente las 8 partes: subject claro, saludo formal, opening statement directo, detalles concretos (cuándo, qué pasó), impacto explicado (el evento que se verá afectado), una solicitud específica (reemplazo o reembolso), cierre cortés, y despedida formal. Ningún paso se salta, y el tono se mantiene profesional y calmado en todo momento — coherente con el "register check" de mantener la calma que vimos en la Unidad 5 (nota 03).
@@ -291,6 +295,7 @@ graph TD
 > - Cómo te afectó
 > - Tu solicitud
 >
+
 > [!question] ✍️ Escribe tu email aquí
 > 
 > **Subject:**
@@ -321,6 +326,7 @@ graph TD
 > 
 > Escribe 3-4 oraciones describiendo un problema real o imaginario de un producto o servicio, usando al menos **4 palabras de vocabulario** practicadas en esta nota.
 >
+
 > [!question] ✍️ Tu respuesta
 > 
 > 
@@ -338,11 +344,13 @@ graph TD
 > - [ ] Identifico expresiones útiles para cada parte del correo.
 > - [ ] Distingo vocabulario de "product issue" vs. "service issue".
 >
+
 > [!success] ✅ Nivel Intermedio
 > - [ ] Escribo un opening statement y una request for action apropiados para una situación dada.
 > - [ ] Combino vocabulario de detalles, impacto y solicitud en un párrafo coherente.
 > - [ ] Mantengo un registro formal y calmado en todo el correo.
 >
+
 > [!success] ✅ Nivel Avanzado
 > - [ ] Escribo un email of complaint completo de 100-120 palabras, siguiendo las 8 partes sin omitir ninguna.
 > - [ ] Adapto el vocabulario según se trate de un problema de producto o de servicio.
@@ -354,6 +362,7 @@ graph TD
 > 
 > [1] Yambay de Armijos, Karen. _Command the Complaint: Email Writing Strategies_. Academic Writing Center (AWC), ESPOL — Vicerrectorado de Investigación, Desarrollo e Innovación I+D+i.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]

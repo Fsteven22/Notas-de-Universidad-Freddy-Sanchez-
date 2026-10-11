@@ -559,6 +559,7 @@ graph TB
 > Respuesta: m = (2πh³√2)/3
 > ```
 >
+
 > [!example] 📝 Problema 2: Paraboloide con función cuadrática
 > **Enunciado:** Calcular ∬_S (x² + y²) dS donde S es z = 1 - x² - y² con z ≥ 0
 > 

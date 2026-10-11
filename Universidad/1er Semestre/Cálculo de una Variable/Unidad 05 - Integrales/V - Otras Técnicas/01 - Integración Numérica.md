@@ -240,6 +240,7 @@ flowchart TD
 >**E**rror: comparar con valor exacto si está disponible
 >**Z**ona de validez: verificar condiciones del método
 >
+
 > [!summary] ### 📋 Desarrollo Detallado del Método TRAPEZ
 > 
 > 

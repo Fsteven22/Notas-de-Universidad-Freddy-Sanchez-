@@ -30,6 +30,7 @@ dg-publish: true
 > - **Fidelidad a la terminología del autor:** los términos técnicos o conceptos clave del texto original se conservan tal cual, sin sustituirlos por sinónimos que puedan alterar el significado preciso.
 > - **Redacción formal cohesiva en un solo párrafo:** el resumen académico se presenta como un único párrafo fluido, no como una lista de puntos ni varios párrafos separados.
 >
+
 > [!warning] ⚠️ Diferencia clave con el parafraseo
 >
 > El resumen **reduce** el contenido (mantiene la terminología del autor); el parafraseo **reformula** el contenido con palabras y sintaxis propias, sin necesariamente reducir su extensión. Ver [[02 - Técnicas de parafraseo y citación]] para el contraste completo.
@@ -48,6 +49,7 @@ dg-publish: true
 >     F --> G["7. Revisión final (métrica 25%-30%, fidelidad, objetividad)"]
 > ```
 >
+
 > [!success]- ✅ Detalle de cada fase
 >
 > | Fase | Qué implica |
@@ -82,6 +84,7 @@ dg-publish: true
 > 4. 212 a 255 palabras (850 x 0,25 = 212,5; 850 x 0,30 = 255).
 > 5. No cumple: 90 palabras es el 45% de 200, está por encima del rango; deja de ser resumen y se acerca a una copia parcial.
 >
+
 > [!example]- Ejercicio 02.2 — Objetividad: detectar errores de opinión
 >
 > **Instrucciones:** indica si cada fragmento de resumen es objetivo o contiene opinión personal. Si hay opinión, subraya la expresión problemática y reescríbela objetivamente.
@@ -100,6 +103,7 @@ dg-publish: true
 > 4. No objetivo: *"aunque esta idea es cuestionable"* añade objeción propia; corrección: *La autora sostiene que el teletrabajo aumenta la autonomía.*
 > 5. Objetivo: verbo neutro (*concluye*) sin adjetivos valorativos.
 >
+
 > [!example]- Ejercicio 02.3 — Qué eliminar en la fase 4
 >
 > **Instrucciones:** para cada elemento indica si debe conservarse (C) o eliminarse (E) en un resumen académico según la fase 4, y justifica en una línea.
@@ -120,6 +124,7 @@ dg-publish: true
 > 5. E: los detalles y datos accesorios se descartan; solo se conserva la conclusión que se deriva de ellos.
 > 6. E: los ejemplos ilustran pero no son indispensables.
 >
+
 > [!example]- Ejercicio 02.4 — Fidelidad a la terminología del autor
 >
 > **Instrucciones:** cada par muestra un término original y su sustitución en un resumen. Indica si la sustitución es aceptable o altera el significado preciso.
@@ -138,6 +143,7 @@ dg-publish: true
 > 4. No aceptable: *naturaleza en general* es mucho más vago que *biodiversidad* y cambia el alcance del concepto.
 > 5. No aceptable: *significativo* en Ausubel tiene sentido técnico (anclaje en saberes previos), no equivale a *importante*.
 >
+
 > [!example]- Ejercicio 02.5 — Redacción en un solo párrafo cohesivo
 >
 > **Instrucciones:** evalúa cada propuesta de resumen según el rasgo formal (un solo párrafo cohesivo con conectores).
@@ -164,28 +170,33 @@ dg-publish: true
 > 2. Señala el error en este resumen: *"El autor plantea, muy acertadamente, que el cambio climático es la mayor amenaza del siglo."*
 > 3. Indica qué elementos del texto original NO deben aparecer en un resumen (según la fase 4).
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Entre 100 y 120 palabras (25%-30% de 400).
 > 2. *"Muy acertadamente"* es una opinión personal del que resume, que no debe aparecer — un resumen debe ser objetivo.
 > 3. Citas textuales, ejemplos y detalles accesorios.
 >
+
 > [!question] 🟡 Ejercicios de refuerzo — Nivel Intermedio
 >
 > 1. Toma un artículo corto (300-500 palabras) y calcula el rango de palabras exacto que debería tener su resumen.
 > 2. Redacta ese resumen en un solo párrafo, conservando la terminología clave del autor.
 > 3. Revisa tu resumen: ¿eliminaste todos los ejemplos y citas? ¿hay alguna opinión propia que se haya colado?
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > Respuestas abiertas según el artículo elegido; verifica el cumplimiento estricto de la métrica y de los 4 rasgos esenciales.
 >
+
 > [!question] 🔴 Ejercicios de refuerzo — Nivel Avanzado
 >
 > 1. Compara dos resúmenes propios del mismo texto: uno de 25% y otro de 30% de extensión. ¿Qué información se pierde en el más corto?
 > 2. Identifica en un resumen ajeno (de un compañero, o de internet) alguna violación a los rasgos esenciales (opinión colada, terminología alterada, etc.).
 > 3. Explica por qué un resumen que solo copia y pega frases textuales del original, aunque esté "reducido", no cumple con la definición de resumen académico.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas. Para el punto 3: copiar y pegar frases textuales no es una reconstrucción propia del contenido, sino una selección de fragmentos — el resumen académico exige reformular la organización de las ideas (fase 5), no solo recortar.
@@ -202,12 +213,14 @@ dg-publish: true
 > - [ ] Identifico opiniones personales que no deberían estar en un resumen
 > - [ ] Reconozco qué elementos se eliminan en la fase 4 (citas, ejemplos)
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Aplico las 7 fases completas para producir un resumen de un texto real
 > - [ ] Conservo la terminología clave del autor sin alterar su significado
 > - [ ] Redacto el resumen como un único párrafo cohesivo
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Evalúo si un resumen ajeno cumple con los 4 rasgos esenciales
@@ -249,6 +262,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 4 — Resumen y síntesis, Nota 01: "El resumen académico".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4]] — mapa general de la unidad.

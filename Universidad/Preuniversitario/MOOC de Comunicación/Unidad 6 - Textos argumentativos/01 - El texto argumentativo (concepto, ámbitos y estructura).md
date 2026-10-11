@@ -30,6 +30,7 @@ dg-publish: true
 >
 > El propósito persuasivo es constante, pero **cómo se argumenta cambia según el contexto**: el tipo de evidencia aceptada, el tono, y las convenciones formales varían de un ámbito a otro.
 >
+
 > [!success]- ✅ Tabla comparativa por ámbito
 >
 > | Ámbito | Propósito específico | Ejemplos típicos | Rasgos distintivos |
@@ -54,6 +55,7 @@ dg-publish: true
 >     B --> C["Conclusión Reiteración de la tesis + Propuesta/Recomendación"]
 > ```
 >
+
 > [!success]- ✅ Detalle de cada bloque
 >
 > | Bloque | Función | Contenido esperado |
@@ -74,6 +76,7 @@ dg-publish: true
 > - **Ubicación en la estructura:** aparece al cierre de la introducción, tras contextualizar el conflicto histórico aparente entre ambas esferas.
 > - **Por qué funciona como tesis:** es debatible (admite postura contraria), específica (delimita el criterio de compatibilidad) y aseverativa con verbo conjugado (ver [[02 - Formulación y validación de la tesis]]).
 >
+
 > [!success]- ✅ Desglose: 4 argumentos y conclusión
 >
 > | # | Argumento | Evidencia o razonamiento de apoyo |
@@ -94,6 +97,7 @@ dg-publish: true
 > - **Selecciona verbos precisos.** Preferir "demuestra", "contradice", "refuta" en vez de "dice" o "habla de", que son verbos débiles y poco informativos.
 > - **Cuida la cohesión sintáctica.** Usa conectores lógicos explícitos (*sin embargo*, *en consecuencia*, *no obstante*, *por lo tanto*) para que la relación entre ideas sea clara y no quede implícita.
 >
+
 > [!warning] ⚠️ Errores comunes
 >
 > | ❌ Débil / vago | ✅ Preciso |
@@ -124,6 +128,7 @@ dg-publish: true
 > 4. A — marcador de opinión + tesis + argumento causal.
 > 5. Mixto con propósito global argumentativo: el tramo expositivo (datos del gráfico) funciona como evidencia de la tesis.
 >
+
 > [!example]- Ejercicio 02.2 — Clasificación por ámbitos
 >
 > **Instrucciones:** asigna cada fragmento a su ámbito (político, académico, legal, publicitario o digital) y señala un rasgo distintivo que lo delate.
@@ -146,6 +151,7 @@ dg-publish: true
 > | 5 | Digital | Tono informal, fragmentado, autoridad percibida |
 > | 6 | Publicitario | Persuasión implícita por deseo, sin evidencia |
 >
+
 > [!example]- Ejercicio 02.3 — Estructura tripartita
 >
 > **Instrucciones:** lee cada mini-texto y señala qué bloque falta o está débil (introducción con tesis, desarrollo con argumentos y contraargumentación, conclusión con propuesta).
@@ -164,6 +170,7 @@ dg-publish: true
 > 4. Estructura completa pero **conclusión mejorable**: debe parafrasear la tesis, no copiarla literalmente.
 > 5. Estructura **completa y madura**: incluye contraargumentación y propuesta, que es el modelo a seguir.
 >
+
 > [!example]- Ejercicio 02.4 — Estilo preciso y cohesión
 >
 > **Instrucciones:** reescribe cada frase vaga con un verbo preciso, un sujeto explícito o un dato verificable, y añade el conector lógico adecuado donde se indique.
@@ -194,30 +201,35 @@ dg-publish: true
 > 2. Identifica el ámbito (político, académico, legal, publicitario, digital) de: *"Compra ahora y llévate un 20% de descuento — ¡solo por hoy!"*
 > 3. Señala cuál de los tres bloques de la estructura tripartita falta en un texto que solo presenta tesis y argumentos, sin cerrar con una recomendación.
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Expositivo (es un hecho verificable, no busca persuadir).
 > 2. Publicitario (apela a la urgencia y al deseo de ahorro).
 > 3. Falta la Conclusión.
 >
+
 > [!question] 🟡 Nivel Intermedio
 >
 > 1. Reescribe esta frase vaga con un verbo y dato más precisos: *"El desempleo es un problema grande en el país."*
 > 2. Redacta una oración de contraargumentación para la tesis: *"El teletrabajo mejora la productividad."*
 > 3. Explica por qué un mismo texto puede tener tramos expositivos dentro de un texto argumentativo, sin dejar de ser argumentativo en su conjunto.
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. *"El desempleo alcanzó el 5.7% en el último trimestre, afectando principalmente a jóvenes entre 18 y 24 años."*
 > 2. *"Sin embargo, algunos estudios señalan que el teletrabajo dificulta la coordinación en equipos que requieren colaboración constante."*
 > 3. Porque los tramos expositivos suelen usarse para dar contexto o presentar datos objetivos que luego sirven de evidencia; la argumentación aparece en la interpretación que se hace de esos datos, no en el dato en sí.
 >
+
 > [!question] 🔴 Nivel Avanzado
 >
 > 1. Elige un tema y redacta una introducción completa (contexto + tesis) siguiendo la estructura tripartita.
 > 2. Para el mismo tema, formula un argumento y una contraargumentación explícita que lo ponga a prueba.
 > 3. Compara cómo cambiaría la fuerza persuasiva de tu argumento si lo trasladaras del ámbito académico al publicitario.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Estas respuestas son abiertas y dependen del tema elegido; no hay una única solución correcta. Al revisar tu propia redacción, verifica que: la tesis sea debatible y específica (ver [[02 - Formulación y validación de la tesis]]), el argumento tenga evidencia concreta, y la contraargumentación sea una objeción real (no una versión débil fácil de refutar — la llamada "hombre de paja").
@@ -232,12 +244,14 @@ dg-publish: true
 > - [ ] Identifico el ámbito de un texto argumentativo dado
 > - [ ] Reconozco los tres bloques de la estructura tripartita
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Redacto una introducción con contexto y tesis clara
 > - [ ] Sustituyo lenguaje vago por afirmaciones precisas y verificables
 > - [ ] Construyo una contraargumentación real (no una versión débil)
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Redacto un texto argumentativo completo con los tres bloques
@@ -286,6 +300,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 6 — Textos argumentativos, Nota 01: "El texto argumentativo (concepto, ámbitos y estructura)".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/00 - Índice Unidad 6]] — mapa general de la unidad.

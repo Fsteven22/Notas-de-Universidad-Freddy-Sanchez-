@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "Convertir lo complejo en simple: la linealización transforma curvas intrincadas en rectas comprensibles, revelando la esencia matemática oculta." 📐
 >
+
 > [!info] La linealización de ecuaciones es una técnica fundamental en física experimental que permite convertir relaciones no lineales en formas lineales mediante transformaciones matemáticas apropiadas. Esta herramienta es esencial para determinar parámetros físicos, validar teorías y extraer información cuantitativa de datos experimentales de manera eficiente usando técnicas de regresión lineal.
 
 ## 🔧 Métodos de Linealización
@@ -53,6 +54,7 @@ dg-publish: true
 > |Cálculo directo de parámetros|Restricciones en el dominio|
 > |Propagación de errores conocida|Algunos datos pueden no ser transformables|
 >
+
 > [!success] 🎯 Clasificación de Métodos de Linealización
 > 
 > ```mermaid
@@ -83,6 +85,7 @@ dg-publish: true
 >     style F fill:#f1f8e9
 > ```
 >
+
 > [!tip] **Selección del Método Apropiado** 🎯
 > 
 > ### Estrategia Sistemática:
@@ -126,6 +129,7 @@ dg-publish: true
 > |Curva de saturación|y → constante|Múltiples opciones según contexto|
 > |Oscilaciones|Periódico|Transformaciones trigonométricas|
 >
+
 > [!example] **Ejemplo: Selección de Método** 🔍
 > 
 > ### Datos Experimentales Misteriosos:
@@ -223,6 +227,7 @@ dg-publish: true
 > ln(e^x) = x
 > ```
 >
+
 > [!warning] **Precauciones con Transformación Logarítmica** ⚠️
 > 
 > ### Restricciones Importantes:
@@ -261,6 +266,7 @@ dg-publish: true
 > Propagación de incertidumbres más compleja
 > ```
 >
+
 > [!success] 🔬 Aplicaciones Físicas de Transformación Logarítmica
 > 
 > ```mermaid
@@ -292,6 +298,7 @@ dg-publish: true
 >     style C fill:#fff3e0
 > ```
 >
+
 > [!example] **Ejemplo Detallado: Decaimiento Radiactivo** ☢️
 > 
 > ### Situación Experimental:
@@ -375,6 +382,7 @@ dg-publish: true
 > 
 > **Calidad del ajuste**: R² = 0.9994 (excelente)
 >
+
 > [!example] **Ejemplo: Ley de Potencia - Escalamiento** 🔬
 > 
 > ### Situación: Relación Área-Volumen
@@ -488,6 +496,7 @@ dg-publish: true
 > Variable transformada: X = √x (x ≥ 0)
 > ```
 >
+
 > [!tip] **Aplicaciones Físicas de Transformaciones de Potencias** 🌍
 > 
 > ### Fenómenos Comunes:
@@ -542,6 +551,7 @@ dg-publish: true
 > Linealización: F vs v²
 > ```
 >
+
 > [!example] **Ejemplo: Análisis del Péndulo Simple** ⏰
 > 
 > ### Situación Experimental:
@@ -619,6 +629,7 @@ dg-publish: true
 > - Intercepto ≈ 0 (consistente con teoría)
 > - Residuos sin patrón sistemático
 >
+
 > [!warning] **Cuidados en Transformaciones de Potencias** ⚠️
 > 
 > ### Problemas Comunes:
@@ -718,6 +729,7 @@ dg-publish: true
 > - Analizar posibles fuentes de error sistemático
 > ```
 >
+
 > [!success] 🔍 Proceso de Análisis Sistemático
 > 
 > ```mermaid
@@ -742,6 +754,7 @@ dg-publish: true
 >     style H fill:#ffebee
 > ```
 >
+
 > [!tip] **Interpretación de Parámetros Linealizados** 🎯
 > 
 > ### Transformación Inversa:
@@ -806,6 +819,7 @@ dg-publish: true
 > Y = √y → σ_y ≈ 2√y · σ_Y
 > ```
 >
+
 > [!warning] **Problemas en el Análisis de Datos Linealizados** ⚠️
 > 
 > ### Errores de Interpretación:
@@ -861,6 +875,7 @@ dg-publish: true
 > Solución: Preservar toda la información relevante
 > ```
 >
+
 > [!example] **Ejemplo Integral: Absorción de Luz (Ley de Beer-Lambert)** 🔬
 > 
 > ### Situación Experimental:
@@ -965,6 +980,7 @@ dg-publish: true
 > - **μ = 0.402 ± 0.008 cm⁻¹**
 > - **Ecuación**: I = 100.0·e^(-0.402x)
 >
+
 > [!example] **Estudio Comparativo: Múltiples Transformaciones** 📊
 > 
 > ### Situación: Datos con Patrón Incierto
@@ -1084,6 +1100,7 @@ dg-publish: true
 > |**Predictiva**|0.1|8|7|6|6|
 > |**Total**|-|8.0|7.1|6.7|5.9|
 >
+
 > [!tip] **Validación Cruzada y Robustez** ✅
 > 
 > ### Técnicas de Validación:
@@ -1131,6 +1148,7 @@ dg-publish: true
 > Error de validación >> Error de entrenamiento → Sobreajuste
 > ```
 >
+
 > [!warning] **Errores Graves en Linealización** 🚫
 > 
 > ### Errores Conceptuales:
@@ -1334,6 +1352,7 @@ dg-publish: true
 > - T₀ ≈ 80°C
 > - Tiempo de relajación τ = 1/k ≈ 11 min
 >
+
 > [!example] **Problema Avanzado: Comparación de Modelos** 🏆
 > 
 > ### Situación:
@@ -1453,6 +1472,7 @@ dg-publish: true
 > Encontrar máximos y mínimos para determinar A, C
 > ```
 >
+
 > [!tip] **Estrategias para Modelos Complejos** 🎛️
 > 
 > ### Enfoque Jerárquico:
@@ -1504,6 +1524,7 @@ dg-publish: true
 > Verificar continuidad en las fronteras
 > ```
 >
+
 > [!example] **Ejemplo: Crecimiento Logístico** 🌱
 > 
 > ### Situación: Crecimiento de Población con Saturación
@@ -1589,6 +1610,7 @@ dg-publish: true
 >           P_observado = 92 → Error = 0.3% ✓
 > ```
 >
+
 > [!warning] **Limitaciones y Problemas Avanzados** ⚠️
 > 
 > ### Limitaciones Fundamentales:
@@ -1740,6 +1762,7 @@ dg-publish: true
 > 8. Limitaciones y recomendaciones
 > ```
 >
+
 > [!tip] **Consejos Prácticos Avanzados** 💡
 > 
 > ### Para Estudiantes:

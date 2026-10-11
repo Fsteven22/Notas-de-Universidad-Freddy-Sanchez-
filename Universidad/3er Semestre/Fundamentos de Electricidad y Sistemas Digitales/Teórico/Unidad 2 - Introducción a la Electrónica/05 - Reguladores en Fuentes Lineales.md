@@ -72,6 +72,7 @@ dg-publish: true
 > - $C_O$ (típico 1.0 µF) a la salida, para estabilidad.
 > - $R_1$ suele fijarse en un valor pequeño (p. ej. 240 Ω) y $R_2$ es la resistencia (o potenciómetro) que define el voltaje deseado.
 >
+
 > [!success] 📊 Fijos vs. ajustables
 > 
 > |Característica|78xx/79xx (fijos)|LM317/LM337/LM137 (ajustables)|
@@ -108,12 +109,14 @@ dg-publish: true
 > - [ ] Distingo un regulador fijo (78xx/79xx) de uno ajustable (LM317/LM337/LM137).
 > - [ ] Identifico los terminales típicos de un regulador de 3 pines (entrada, tierra/ajuste, salida).
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Calculo $R_2$ dado $R_1$ y el $V_O$ deseado en un LM317 (o viceversa).
 > - [ ] Explico para qué sirven los capacitores de entrada y salida en estos reguladores.
 > - [ ] Sé cuándo usar 79xx/LM337/LM137 en vez de 78xx/LM317 (tensiones negativas).
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Comparo el criterio de selección entre un regulador fijo y uno ajustable para un diseño dado.
@@ -149,12 +152,14 @@ mindmap
 > 
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018, pp. 510–540.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — etapas previas de la fuente lineal (transformador, rectificador, filtro capacitivo) que entregan el voltaje que este regulador estabiliza.
 > - [[02 - El Diodo - Unión P-N]] — el diodo Zener, mencionado como alternativa sencilla de regulación, es una aplicación de la unión PN en polarización inversa.
 >
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — rizado que regula
 > - Siguiente: [[06 - Ruido Electrónico e Interferencia]] — lo que filtra

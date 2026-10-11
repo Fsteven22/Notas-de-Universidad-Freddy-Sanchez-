@@ -68,6 +68,7 @@ dg-publish: true
 >
 > En una señal senoidal, el diodo solo deja pasar el **semiciclo positivo** → rectificación.
 >
+
 > [!note] 🟢 Transistor BJT — Switch electrónico
 >
 > El BJT tiene 3 terminales: **Base** (B), **Colector** (C), **Emisor** (E). Configuración NPN.
@@ -90,6 +91,7 @@ dg-publish: true
 > 3. Conectar CH1 (entrada) y CH2 (salida) en el osciloscopio.
 > 4. Observar la forma de onda de salida.
 >
+
 > [!note] 📊 Tabla 1 — Salida del diodo
 >
 > |Condición|$V_{max}$ (V)|$V_{min}$ (V)|Observación|
@@ -97,6 +99,7 @@ dg-publish: true
 > |Polarización directa| | |Solo pasa semiciclo positivo|
 > |Polarización inversa| | |Se bloquea el semiciclo negativo|
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Qué es el tiempo de recuperación inversa de un diodo?
@@ -113,6 +116,7 @@ dg-publish: true
 > 3. Medir las mismas variables con pulsador **PRESIONADO**.
 > 4. Completar la tabla.
 >
+
 > [!note] 📊 Tabla 2 — Mediciones del BJT
 >
 > |Variable|Pulsador sin presionar|Pulsador presionado|Modo|
@@ -121,6 +125,7 @@ dg-publish: true
 > |$V_{BE}$| | |Corte / Saturación|
 > |$V_{CE}$| | |Corte / Saturación|
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Qué función cumple el diodo D1 en el circuito del Procedimiento 2?
@@ -137,6 +142,7 @@ dg-publish: true
 > 3. Acercar linterna a LDR hasta que se apague el LED. Ajustar potenciómetro hasta re-encender.
 > 4. Alejar linterna y observar comportamiento.
 >
+
 > [!question]- ❓ Análisis
 >
 > - ¿Cómo influye el ajuste del potenciómetro para el accionamiento de la carga (LED)?
@@ -165,16 +171,19 @@ dg-publish: true
 > - [ ] Uso el osciloscopio para observar la rectificación de un semiciclo en la salida del diodo.
 > - [ ] Distinguo la diferencia entre entrada (cuadrada) y salida (rectificada) en CH1 vs CH2.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Identifico terminales B, C, E del 2N3904 y verifico la orientación NPN en el circuito.
 > - [ ] Mido $V_{BE}$ y determino si el transistor está en corte ($V_{BE} < 0.7\text{ V}$) o saturación.
 > - [ ] Explico por qué $V_{CE(sat)}$ es aprox. 0.2 V cuando el transistor conduce completamente.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Reconozco la función de protección del diodo 1N4007 en el circuito del relé.
 > - [ ] Monto el circuito con LDR y ajusto el potenciómetro para controlar la sensibilidad del LED.
 > - [ ] Relaciono el comportamiento del sensor de luz con la región de operación del BJT (corte vs saturación).
 >
+
 > [!quote] 🔗 Conexiones
 > - Teoría: [[01 - Semiconductores y Bandas de Energía]], [[02 - El Diodo - Unión P-N]] y [[03 - Transistor BJT]]
 > - Previa: [[Práctica 2 — Ley de Ohm y Kirchhoff]]

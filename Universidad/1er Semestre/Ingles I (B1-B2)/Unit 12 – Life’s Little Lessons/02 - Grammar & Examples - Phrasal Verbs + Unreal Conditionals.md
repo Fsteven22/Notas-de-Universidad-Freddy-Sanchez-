@@ -150,6 +150,7 @@ dg-publish: true
 > ✅ Somebody told me you were looking for me
 > ```
 >
+
 > [!example] 📦 SOMETHING (algo)
 > 
 > **Uso:**
@@ -181,6 +182,7 @@ dg-publish: true
 > ✅ There's something I feel bad about
 > ```
 >
+
 > [!tip] 📍 SOMEWHERE (en algún lugar)
 > 
 > **Uso:**
@@ -283,6 +285,7 @@ dg-publish: true
 >    (Cualquiera se sentiría mal por esto)
 > ```
 >
+
 > [!example] 📦 ANYTHING (algo/nada - en preguntas/negativos)
 > 
 > **En preguntas:**
@@ -342,6 +345,7 @@ dg-publish: true
 >    (Cualquier cosa es posible)
 > ```
 >
+
 > [!tip] 📍 ANYWHERE (en algún/ningún lugar)
 > 
 > **En preguntas:**
@@ -457,6 +461,7 @@ dg-publish: true
 > El tag question es POSITIVO porque nobody ya es negativo
 > ```
 >
+
 > [!example] 📦 NOTHING (nada)
 > 
 > **Uso básico:**
@@ -506,6 +511,7 @@ dg-publish: true
 > There wasn't anything = There was nothing (mismo significado)
 > ```
 >
+
 > [!tip] 📍 NOWHERE (en ningún lugar)
 > 
 > **Uso:**
@@ -571,6 +577,7 @@ dg-publish: true
 > ✅ Everybody did their best
 > ```
 >
+
 > [!example] 📦 EVERYTHING (todo)
 > 
 > **Uso:**
@@ -601,6 +608,7 @@ dg-publish: true
 > ✅ Everything looks good (NOT: Everything look good)
 > ```
 >
+
 > [!tip] 📍 EVERYWHERE (en todas partes)
 > 
 > **Uso:**
@@ -810,6 +818,7 @@ dg-publish: true
 > (No cambies porque "says" es presente)
 > ```
 >
+
 > [!success] 👤 Cambios de Pronombres y Posesivos
 > 
 > **Regla:** Los pronombres cambian según la perspectiva.
@@ -845,6 +854,7 @@ dg-publish: true
 > Direct: "You should pick up the broken glass" Reported: She told me I should pick up the broken glass ↑ ↑ She I not you
 > ```
 >
+
 > [!tip] 📅 Cambios de Expresiones de Tiempo y Lugar
 > 
 > **Cuando reportas algo que se dijo en el pasado, las expresiones de tiempo y lugar también cambian:**
@@ -1074,6 +1084,7 @@ dg-publish: true
 > > 9. **Everyone / Everybody** (all people)
 > > 10. **anywhere** (negative)
 >
+
 > [!example] ✏️ Exercise 2: Reported Speech - Transform
 > 
 > **Change from Direct to Reported Speech:**
@@ -1115,6 +1126,7 @@ dg-publish: true
 > > 7. He told me **(that) everyone made / makes mistakes**
 > > 8. She said **(that) she had left the lights on the previous night / the night before**
 >
+
 > [!note] ✏️ Exercise 3: SAID vs TOLD
 > 
 > **Choose SAID or TOLD and complete the sentence:**

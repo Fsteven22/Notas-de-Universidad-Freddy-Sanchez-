@@ -42,6 +42,7 @@
 > 
 > ---
 >
+
 > [!success]- ## 🛠️ Comandos Esenciales para Empezar
 > 
 > ### Comandos de Navegación y Gestión de Archivos
@@ -92,6 +93,7 @@
 > 
 > ---
 >
+
 > [!warning]- ## ⚠️ Mejores Prácticas y Riesgos
 > 
 > ### Consejos de Seguridad

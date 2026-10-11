@@ -79,6 +79,7 @@ dg-publish: true
 > ✅ I'm aiming to change careers next year
 > ```
 >
+
 > [!tip] 🔥 Talking About Your Progress
 > 
 > **Positive progress:**
@@ -119,6 +120,7 @@ dg-publish: true
 > ✅ I'm finding it difficult to balance work and study
 > ```
 >
+
 > [!example] 💭 Expressing Determination & Persistence
 > 
 > **Strong commitment expressions:**
@@ -209,6 +211,7 @@ dg-publish: true
 > |"I'm tired"|**Take a break, but don't quit. You've got this**|
 > |"I keep failing"|**Failure is part of learning. Keep trying!**|
 >
+
 > [!success] 🎯 Giving Advice with Conditionals
 > 
 > **Using "If I were you" (Second Conditional):**
@@ -260,6 +263,7 @@ dg-publish: true
 > ✅ It could be useful to set a deadline
 > ```
 >
+
 > [!tip] 🌟 Motivational Phrases (Like a Coach!)
 > 
 > **Power phrases for motivation:**
@@ -359,6 +363,7 @@ dg-publish: true
 >                   ↑ UP
 > ```
 >
+
 > [!example] 🔗 Linking & Connected Speech
 > 
 > **Linking consonant to vowel:**
@@ -402,6 +407,7 @@ dg-publish: true
 > 
 > **⚠️ Use in speaking, not formal writing!**
 >
+
 > [!tip] 🎯 Intonation for Encouragement
 > 
 > **Rising intonation = Encouraging / Enthusiastic:**
@@ -502,6 +508,7 @@ dg-publish: true
 > 5. The most challenging thing I'm working on is _________________________
 > ```
 >
+
 > [!tip] 🎤 Drill 2: Encouraging a Friend
 > 
 > **Scenario: Your friend wants to give up on learning guitar**
@@ -540,6 +547,7 @@ dg-publish: true
 > |Classmate failing a difficult subject|___________________________|
 > |Colleague thinking of abandoning a project|___________________________|
 >
+
 > [!example] 🎤 Drill 3: Responding to Challenges
 > 
 > **Practice responding naturally to these statements:**

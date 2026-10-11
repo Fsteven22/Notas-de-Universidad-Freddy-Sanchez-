@@ -20,6 +20,7 @@ dg-publish: true
 > - m = masa (kg)
 > - V = volumen (m³)
 >
+
 > [!example] 📊 **Densidades Comunes**
 > 
 > |Sustancia|Densidad (kg/m³)|Densidad (g/cm³)|
@@ -55,6 +56,7 @@ dg-publish: true
 > Masa:        m = ρ × V
 > ```
 >
+
 > [!example] Aplicación Práctica 🧮
 > 
 > ### Ejemplo Rápido
@@ -76,6 +78,7 @@ dg-publish: true
 > - 🚢 Analizar condiciones de flotación
 > - 📏 Resolver problemas de equilibrio en fluidos
 >
+
 > [!tip] Conexión con Otros Conceptos 🔗
 > 
 > ### En Problemas de Flotación
@@ -101,6 +104,7 @@ dg-publish: true
 > - F = fuerza (N)
 > - A = área (m²)
 >
+
 > [!info] 📏 **Unidades de Presión**
 > 
 > - **Pascal (Pa)**: Unidad del SI
@@ -148,6 +152,7 @@ graph TD
 > 
 > **Aplicación**: Sistemas hidráulicos, frenos de automóviles, prensas hidráulicas.
 >
+
 > [!note] 🌍 **Presión Atmosférica**
 > 
 > - **Valor estándar**: 101,325 Pa = 1 atm

@@ -4,6 +4,7 @@
 
 > [!info] Definición Integral La gestión de la energía personal es el arte y la ciencia de optimizar, conservar y renovar los recursos energéticos físicos, mentales, emocionales y espirituales para maximizar el rendimiento sostenible y el bienestar integral.
 >
+
 > [!tip] Principios Básicos
 > 
 > - 🔋 **Energía como recurso finito**: Cada día tenemos una cantidad limitada que debemos gestionar sabiamente
@@ -22,6 +23,7 @@
 > - **Metabólica**: Eficiencia en la producción de ATP
 > - **Neurológica**: Función del sistema nervioso
 >
+
 > [!tip] Estrategias de Optimización
 > 
 > - 🏃‍♂️ **Ejercicio regular**: 150 min/semana de actividad moderada
@@ -38,6 +40,7 @@
 > - **Flexibilidad cognitiva**: Adaptación a nuevas situaciones
 > - **Control inhibitorio**: Resistencia a distracciones
 >
+
 > [!warning] Agotadores Mentales
 > 
 > - 🔄 **Multitasking excesivo**: Reduce eficiencia hasta 40%
@@ -54,6 +57,7 @@
 > - **Motivación intrínseca**: Impulso interno hacia objetivos
 > - **Empatía**: Conexión emocional con otros
 >
+
 > [!tip] Técnicas de Renovación
 > 
 > - 😊 **Gratitud diaria**: 3 cosas por las que agradecer
@@ -163,6 +167,7 @@ graph TD
 > - ☀️ **Exposición solar**: 10-15 min de luz natural
 > - 🤸‍♂️ **Movimiento dinámico**: Saltos, estiramientos
 >
+
 > [!info] Renovación Profunda (30-60 min)
 > 
 > - 🧘‍♀️ **Meditación**: Mindfulness o trascendental
@@ -181,6 +186,7 @@ graph TD
 > - 🔄 **Perfeccionismo**: Aplicar principio 80/20
 > - 💭 **Preocupación improductiva**: Técnica de "tiempo de preocupación"
 >
+
 > [!tip] Micro-Hábitos de Conservación
 > 
 > - 🚫 **Decir "No"**: Proteger tiempo y energía para prioridades
@@ -292,10 +298,13 @@ timeline
 
 > [!quote] [[Técnicas de Relajación]] La relajación sistemática es fundamental para la renovación energética y prevención del agotamiento
 >
+
 > [!quote] [[Respiración Consciente]] Las técnicas respiratorias son herramientas inmediatas para regular y optimizar los niveles de energía
 >
+
 > [!quote] [[Ritmos Circadianos]] La sincronización con los ritmos naturales es clave para la gestión energética sostenible
 >
+
 > [!quote] [[Mindfulness]] La atención consciente permite una gestión más eficiente de los recursos energéticos
 
 

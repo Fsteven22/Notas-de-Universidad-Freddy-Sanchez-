@@ -28,6 +28,7 @@ dg-publish: false
 > - `🍽️ Snack + 📚 ARP`
 > - `👥 Ayudantía + 🍽️ Break`
 >
+
 > [!warning] ⚠️ **Horarios Fijos (NO modificar)**
 > - **⏰ 7:00-8:00**: Despertar + Desayuno + Preparación
 > - **🚌 8:00-9:00**: Traslado Universidad (1 hora)
@@ -72,6 +73,7 @@ dg-publish: false
 > [!warning] 🚨 **Problema Identificado: Desveladas Frecuentes**
 > El cansancio acumulado afecta tu rendimiento académico. Aquí algunas estrategias:
 >
+
 > [!tip] 🌙 **Plan de Recuperación Gradual**
 > 
 > **Semana 1-2: Estabilización**
@@ -84,6 +86,7 @@ dg-publish: false
 > - Power naps estratégicas: 1:00-1:20 PM (si es posible)
 > - Rutina pre-sueño: 30 min antes de dormir
 >
+
 > [!success] ⚡ **Aprovechar Traslados para Descanso**
 > 
 > **En el transporte:**
@@ -136,6 +139,7 @@ dg-publish: false
 >   - Ejemplo: `🍽️ Merienda (17:00-17:30) + 📚 Física (17:30-19:30) + 🍽️ Cena (19:30-20:30) + 📚 Programación (20:30-22:00)`
 > - 22:00 - 22:30: **😴 Rutina Pre-sueño**
 >
+
 > [!example] 📋 **Ejemplo Martes (Salida 5 PM)**
 > 
 > ### Martes [Fecha: __________]
@@ -168,16 +172,19 @@ dg-publish: false
 > - Práctica ejercicios: 1-2 horas
 > - Ayudantía: Según disponibilidad
 >
+
 > [!tip] 🧮 **Cálculo de una Variable**
 > - Repaso conceptos: 1 hora
 > - Ejercicios prácticos: 2-3 horas
 > - Ayudantía: 1-2 horas
 >
+
 > [!tip] 🔬 **Física Mecánica**
 > - Teoría + fórmulas: 1-2 horas
 > - Problemas aplicados: 2-3 horas
 > - Laboratorio: Según cronograma
 >
+
 > [!tip] 💻 **Fundamentos de Programación**
 > - Código práctico: 2-3 horas
 > - Proyectos: Tiempo variable

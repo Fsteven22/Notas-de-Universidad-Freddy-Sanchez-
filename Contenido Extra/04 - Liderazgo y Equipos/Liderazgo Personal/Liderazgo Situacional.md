@@ -2,6 +2,7 @@
 
 > [!quote] "No hay líderes buenos o malos, solo líderes que adaptan su estilo a las necesidades de la situación y la madurez de su equipo. El mejor líder es aquel que sabe cuándo dirigir, cuándo entrenar, cuándo apoyar y cuándo delegar." - Ken Blanchard
 >
+
 > [!info]- 📊 **Fundamentos del Liderazgo Situacional**
 > 
 > ## 🎯 Modelo SLII® (Situational Leadership II)
@@ -52,6 +53,7 @@
 > |**🏃 Autonomía**|Requiere dirección|Necesita coaching|Busca apoyo|Totalmente autónomo|
 > |**📊 Resultados**|Inconsistentes|Mejorando|Buenos|Excelentes consistentes|
 >
+
 > [!success]- 🎭 **Los Cuatro Estilos de Liderazgo**
 > 
 > ## 📢 S1 - DIRECTING (Dirigir)
@@ -133,6 +135,7 @@
 > |**🔄 Follow-up**|Calendario de check-ins|□ Reuniones programadas|
 > |**🏆 Recognition**|Plan de reconocimiento|□ Sistema de rewards definido|
 >
+
 > [!tip]- 🔄 **Flexibilidad y Adaptación del Estilo**
 > 
 > ## 🎯 Matriz de Transición entre Estilos
@@ -193,6 +196,7 @@
 > |**🏆 Tareas Rutinarias**|S4 - Delegating|Maximizar eficiencia|
 > |**👥 Equipos Multiculturales**|S2/S3 híbrido|Sensibilidad cultural|
 >
+
 > [!warning]- ⚠️ **Errores Comunes y Pitfalls**
 > 
 > ## 🚨 Los 7 Errores Fatales del Liderazgo Situacional
@@ -302,6 +306,7 @@
 > - 4-5 promedio = D2 (Coaching)
 > - <4 promedio = D1 (Directing)
 >
+
 > [!example]- 🏆 **Casos de Estudio y Aplicaciones Prácticas**
 > 
 > ## 🌟 Casos de Éxito Empresarial
@@ -412,6 +417,7 @@
 > - **🎯 Outcome Prediction**: Predecir resultados de diferentes estilos
 > - **👥 Peer Coaching**: Enseñar conceptos aumenta retención 90%
 >
+
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -435,6 +441,7 @@
 > - **📊 SLII® Dashboard**: Analytics de efectividad de liderazgo
 > - **🤝 Ken Blanchard Exchange**: Comunidad de práctica global
 >
+
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites Fundamentales

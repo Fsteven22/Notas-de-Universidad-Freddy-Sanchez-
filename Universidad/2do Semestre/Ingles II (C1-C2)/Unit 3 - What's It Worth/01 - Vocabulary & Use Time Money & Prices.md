@@ -147,6 +147,7 @@ dg-publish: true
 > 4. Finding a good __________________ between work and personal life is essential for well-being. _(balance / boost / cost)_
 > 5. Better access to healthcare can __________________ the standard of living for entire communities. _(raise / spend / charge)_
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 > 
 > 6. cost of living
@@ -167,6 +168,7 @@ dg-publish: true
 > 9. Take advantage ________ the promotion before it expires.
 > 10. How much do you spend ________ transport every month?
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 > 
 > 11. for
@@ -187,6 +189,7 @@ dg-publish: true
 > 14. My phone has lasted 4 years with no problems. → It was __________________.
 > 15. The buyer offered $50 and the seller accepted immediately. → They __________________ a fair price.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 > 
 > 16. rip-off
@@ -207,6 +210,7 @@ dg-publish: true
 > 19. Es difícil encontrar un equilibrio entre los estudios y el trabajo.
 > 20. Me cobraron $15 extra por el envío sin avisarme antes.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 4
 > 
 > 21. _The cost of living in Guayaquil has increased a lot in recent years._

@@ -54,6 +54,7 @@ dg-publish: true
 > 
 > Nota que $+5$ y $-5$ comparten exactamente la misma magnitud (`0000101`); solo cambia el primer bit.
 >
+
 > [!warning]- ⚠️ El problema del "cero doble"
 > 
 > Signo-magnitud tiene una falla importante: **existen dos representaciones distintas para el cero**.
@@ -87,12 +88,14 @@ dg-publish: true
 > > 
 > > Por lo tanto: $-5 = 11111011$ en complemento a 2 (8 bits).
 >
+
 > [!success]- ✅ Principio clave: por qué complemento a 2 es superior
 > 
 > - **Cero único:** solo existe una representación de $0$ (`00000000`). Si intentas obtener el complemento a 2 de $0$, el resultado vuelve a ser $0$.
 > - **Suma y resta con el mismo circuito:** el hardware puede restar simplemente sumando el complemento a 2 del sustraendo — no necesita un circuito separado para resta.
 > - **El bit de signo participa en la aritmética:** no hay que "separarlo" como en signo-magnitud, lo que simplifica el diseño del procesador.
 >
+
 > [!tip]- 🖥️ Aplicación práctica en programación
 > 
 > Cuando declaras `int x = -5;` en C, Java o Python (a bajo nivel), el valor se guarda en memoria en complemento a 2. Esto explica por qué el **overflow** de enteros con signo se comporta de forma predecible: en un `int` de 8 bits, el rango es $-128$ a $127$, y si sumas $127 + 1$, el resultado "da la vuelta" a $-128$ (esto se llama _wraparound_).
@@ -150,6 +153,7 @@ graph TD
 > 
 > Resultado: $-12 = 11110100$
 >
+
 > [!example]- 🟢 Ejemplo 2 — Verificar que una suma da 0
 > 
 > Sumemos $5 + (-5)$ usando las representaciones en complemento a 2 de 8 bits:
@@ -158,6 +162,7 @@ graph TD
 > 
 > El resultado dentro de los 8 bits es `00000000` (el noveno bit "se pierde" por desbordamiento, lo cual es el comportamiento esperado). ✅ Esto confirma que $5 + (-5) = 0$.
 >
+
 > [!example]- 🟢 Ejemplo 3 — Volver de complemento a 2 a decimal
 > 
 > Dado el número en complemento a 2: `11110110` (8 bits). ¿Qué decimal representa?
@@ -177,18 +182,21 @@ graph TD
 > 2. Representa $-9$ en signo-magnitud usando 8 bits.
 > 3. ¿Cuántas representaciones distintas tiene el número 0 en signo-magnitud?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Convierte $-20$ a complemento a 2 usando 8 bits (muestra los 3 pasos).
 > 5. Dado el número en complemento a 2 `11101001` (8 bits), encuentra su valor decimal.
 > 6. ¿Cuál es el rango de valores representables con complemento a 2 usando 4 bits?
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 7. Suma $(-15) + (-10)$ usando complemento a 2 de 8 bits y verifica que el resultado sea correcto.
 > 8. Explica por qué $-128$ **no tiene** una representación válida en signo-magnitud de 8 bits, pero sí en complemento a 2 de 8 bits.
 > 9. Un programa en C usa un `int` de 8 bits sin verificar límites. Si el valor actual es $127$ y se le suma $1$, ¿qué valor resultará? Explica el fenómeno de _overflow_.
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -211,12 +219,14 @@ graph TD
 > - [ ] Puedo representar un número positivo y negativo en signo-magnitud.
 > - [ ] Entiendo por qué signo-magnitud tiene dos ceros.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo convertir un número decimal negativo a complemento a 2 siguiendo los 3 pasos.
 > - [ ] Puedo convertir un número en complemento a 2 de vuelta a decimal.
 > - [ ] Puedo calcular el rango de valores representables con $n$ bits en complemento a 2.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo sumar dos números negativos en complemento a 2 y verificar el resultado.
@@ -231,6 +241,7 @@ graph TD
 > 
 > [1] Material de clase — Unidad 3: Representación de la información, Computación y Sociedad. [2] Patterson, D. & Hennessy, J. _Computer Organization and Design_, capítulo sobre representación de enteros con signo.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[06 - Sistema Hexadecimal]] — base para entender la representación compacta de estos valores en binario.

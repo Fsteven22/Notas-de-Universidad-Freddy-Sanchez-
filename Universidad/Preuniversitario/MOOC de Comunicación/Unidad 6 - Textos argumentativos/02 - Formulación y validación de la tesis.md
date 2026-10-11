@@ -35,6 +35,7 @@ dg-publish: true
 >     F5 -->|Sí| OK[Tesis válida]
 > ```
 >
+
 > [!success]- ✅ Los 5 filtros con ejemplos comparativos
 >
 > | # | Filtro | Qué exige | ❌ Incorrecto | ✅ Correcto |
@@ -75,6 +76,7 @@ dg-publish: true
 > - Antes de redactar el texto, la tesis candidata debe pasar los 5 filtros (debatible, específica, aseverativa, cierta, gramaticalmente completa); si falla uno, se reformula en vez de intentar sostenerla.
 > - Los marcadores de opinión (*considero que*, *sostengo que*) marcan el paso del contexto objetivo a la postura y evitan que la tesis se confunda con un hecho.
 >
+
 > [!example]- Ejercicio 04.1 — Formular tesis válidas
 >
 > **Instrucciones:** convierte cada tema o frase defectuosa en una tesis que cumpla los 5 filtros. Compara con la solución propuesta (hay más de una redacción válida).
@@ -95,6 +97,7 @@ dg-publish: true
 > 5. No puede ser tesis: es un hecho no debatible (falla filtro 1). Tesis alternativa: *"La enseñanza de ciencias básicas debería priorizar la experimentación sobre la memorización."*
 > 6. Respuesta abierta; verifica: debatible, sin absolutos, aseverativa, con certeza y verbo conjugado.
 >
+
 > [!example]- Ejercicio 04.2 — Validar con los 5 filtros
 >
 > **Instrucciones:** indica para cada enunciado si es tesis válida; si no lo es, señala el primer filtro que incumple y propone una corrección.
@@ -117,6 +120,7 @@ dg-publish: true
 > | 5 | Sí | Pasa los 5 filtros: debatible, específica, aseverativa, cierta y completa |
 > | 6 | Sí | Pasa los 5 filtros; el marcador *a mi juicio* explicita la postura sin debilitarla |
 >
+
 > [!example]- Ejercicio 04.3 — Marcadores de opinión
 >
 > **Instrucciones:** reescribe cada tesis usando el marcador indicado y explica brevemente qué efecto retórico produce.
@@ -145,30 +149,35 @@ dg-publish: true
 > 2. Indica qué filtro incumple: *"Nadie respeta las leyes de tránsito en esta ciudad."*
 > 3. Convierte en tesis aseverativa: *"¿Debería subir el salario mínimo?"*
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Incumple el filtro 3 (carácter aseverativo) — es una pregunta retórica.
 > 2. Incumple el filtro 2 (especificidad) — generalización absoluta con "nadie".
 > 3. *"El salario mínimo debe incrementarse para reflejar el costo de vida actual."*
 >
+
 > [!question] 🟡 Nivel Intermedio
 >
 > 1. Reescribe eliminando la condicionalidad: *"Si se prohibieran los plásticos de un solo uso, quizás se reduciría la contaminación."*
 > 2. Da un ejemplo de tesis que pase los filtros 1, 2 y 3, pero falle en el filtro 5 (estructura gramatical).
 > 3. Explica por qué *"Es evidente que la educación pública necesita reforma"* podría considerarse una tesis débil aunque pase los 5 filtros.
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. *"La prohibición de plásticos de un solo uso reduce la contaminación marina."*
 > 2. *"La necesidad urgente de reformar el sistema de salud."* (es debatible, específica y aseverativa en intención, pero es una frase nominal, no una oración con verbo conjugado).
 > 3. Porque el marcador *"es evidente que"* presupone que el lector ya está de acuerdo, lo que puede sonar a que el autor evita defender realmente la postura con argumentos — es una tesis válida formalmente, pero retóricamente puede debilitar la persuasión si no va seguida de argumentos sólidos.
 >
+
 > [!question] 🔴 Nivel Avanzado
 >
 > 1. Formula una tesis original sobre un tema de tu carrera (ingeniería, tecnología, etc.) que pase los 5 filtros.
 > 2. Identifica un error de cada uno de los 5 filtros en tesis que veas en redes sociales durante una semana, citando el ejemplo real (sin datos identificables de terceros).
 > 3. Explica la diferencia entre una tesis "débil pero válida" (pasa los filtros pero es poco persuasiva) y una tesis "inválida" (no pasa algún filtro).
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas. Al autoevaluar el punto 3: una tesis inválida falla en algo estructural (es un hecho, una pregunta, una generalización absoluta, un condicional o una frase incompleta) y por tanto no puede defenderse como tesis. Una tesis débil sí es formalmente válida, pero puede ser poco específica, poco original o fácil de refutar sin esfuerzo — el problema no es de forma sino de fuerza argumentativa.
@@ -183,12 +192,14 @@ dg-publish: true
 > - [ ] Identifico generalizaciones absolutas en una tesis
 > - [ ] Reconozco preguntas retóricas disfrazadas de tesis
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Reescribo tesis condicionales como afirmaciones ciertas
 > - [ ] Corrijo tesis con estructura gramatical incompleta
 > - [ ] Uso marcadores de opinión apropiados al abrir una tesis
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Formulo tesis originales que pasan los 5 filtros sin ayuda
@@ -235,6 +246,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 6 — Textos argumentativos, Nota 02: "Formulación y validación de la tesis".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/00 - Índice Unidad 6]] — mapa general de la unidad.

@@ -573,6 +573,7 @@ dg-publish: true
 > ---
 > 
 > ### Estrategia 4: Usar Propiedades Algebraicas Conocidas
+
 > [!tip] 🎓 Aprovecha Estructuras Familiares
 > 
 > **Reconocer operaciones logarítmicas/exponenciales:**

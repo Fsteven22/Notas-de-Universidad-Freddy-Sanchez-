@@ -512,6 +512,7 @@ dg-publish: true
 > - ❌ Formularios (usar GridLayout)
 > - ❌ Diseños complejos
 >
+
 > [!success] 🧭 BorderLayout - Cinco Regiones
 > 
 > ```java
@@ -559,6 +560,7 @@ dg-publish: true
 > frame.add(estado, BorderLayout.SOUTH);
 > ```
 >
+
 > [!success] 🔲 GridLayout - Cuadrícula Uniforme
 > 
 > ```java
@@ -646,6 +648,7 @@ dg-publish: true
 > // LEFT_ALIGNMENT, CENTER_ALIGNMENT, RIGHT_ALIGNMENT
 > ```
 >
+
 > [!success] 🔧 GridBagLayout - Control Total
 > 
 > ```java
@@ -825,6 +828,7 @@ dg-publish: true
 > });
 > ````
 >
+
 > [!example] 🖱️ MouseListener - Eventos del Mouse
 > 
 > **Métodos de la interfaz:**
@@ -893,6 +897,7 @@ dg-publish: true
 > });
 > ```
 >
+
 > [!example] ⌨️ KeyListener - Eventos del Teclado
 > 
 > **Métodos:**
@@ -936,6 +941,7 @@ dg-publish: true
 > });
 > ```
 >
+
 > [!example] 🔄 Otros Listeners Comunes
 > 
 > **ItemListener - Cambios de selección:**

@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "El momento de inercia es la memoria rotacional de la materia; cada partícula recuerda su distancia al eje y resiste el cambio con la fuerza de su posición." 🌀
 >
+
 > [!info] El momento de inercia es una propiedad fundamental de los cuerpos rígidos que cuantifica su resistencia a cambios en el movimiento rotacional. Su cálculo correcto es esencial para resolver problemas de dinámica rotacional, especialmente cuando se aplica el Teorema de los Ejes Paralelos.
 
 ## 🔧 Fundamentos del Momento de Inercia
@@ -42,6 +43,7 @@ dg-publish: true
 > |Naturaleza|Escalar positivo|---|
 > |Distribución|Función de la geometría|---|
 >
+
 > [!tip] **Momentos de Inercia de Figuras Básicas** 📐
 > 
 > ### Respecto al Centro de Masa:
@@ -59,6 +61,7 @@ dg-publish: true
 > |**Cilindro hueco**|I = (1/2)M(R₁² + R₂²)|Eje longitudinal|
 > |**Placa rectangular**|I = (1/12)M(a² + b²)|Eje ⊥ por el centro|
 >
+
 > [!warning] **Teorema de los Ejes Paralelos (Steiner)** ⚡
 > 
 > ### Enunciado:
@@ -120,6 +123,7 @@ dg-publish: true
 > I = 18 + 16 + 15 = 49 kg·m²
 > ```
 >
+
 > [!example] **Varilla con Densidad Variable** 📏
 > 
 > ### Enunciado:
@@ -158,6 +162,7 @@ dg-publish: true
 > - ✅ d = 0 → I = I_CM (mismo eje)
 > - ✅ Unidades consistentes (kg·m²)
 >
+
 > [!example] **Ejemplo Básico: Disco Desplazado** 💿
 > 
 > ### Enunciado:
@@ -190,6 +195,7 @@ dg-publish: true
 > 
 > **Verificación**: I > I_CM ✓ (1.025 > 0.225)
 >
+
 > [!example] **Problema Avanzado: Varilla en Diferentes Ejes** 📐
 > 
 > ### Enunciado:
@@ -238,6 +244,7 @@ dg-publish: true
 > I = I_CM + Md² = 0.36 + (3)(1.2)² = 0.36 + 4.32 = 4.68 kg·m²
 > ```
 >
+
 > [!example] **Sistema Compuesto: Múltiples Objetos** 🔗
 > 
 > ### Enunciado:
@@ -317,6 +324,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!example] **Problema Complejo: Placa en L** 📐
 > 
 > ### Enunciado:
@@ -398,6 +406,7 @@ dg-publish: true
 > 
 > **S**iempre busca el centro de masa primero **T**eorema: I = I_CM + Md² **E**jes deben ser paralelos **I**nercia aumenta al alejarse del CM **N**unca olvides la masa total M **E**cuación válida solo para cuerpos rígidos **R**esultado siempre mayor que I_CM
 >
+
 > [!tip] **Regla Nemotécnica para Fórmulas** 📝
 > 
 > - **"Medio Erre cuadrado"** → Disco: I = (1/2)MR²
@@ -452,6 +461,7 @@ dg-publish: true
 > Si masa × k → I × k
 > ```
 >
+
 > [!note] **Tabla de Distancias Típicas** 📋
 > 
 > |Configuración|Distancia d|Observaciones|

@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] *"En el mundo de la ingeniería y la física aplicada, no medimos la presión absoluta que incluye el peso invisible de toda la atmósfera. Medimos la diferencia, la presión que excede lo normal, la presión manométrica: el verdadero indicador de las fuerzas adicionales que actúan en nuestros sistemas."*
 >
+
 > [!info]+ Definición Fundamental 📏
 > La **presión manométrica** (P_man) es la **diferencia entre la presión absoluta en un punto y la presión atmosférica local**. Es la presión que miden la mayoría de instrumentos de medición como manómetros, ya que toman como referencia la presión atmosférica.
 > 
@@ -18,6 +19,7 @@ dg-publish: true
 > - P_abs = Presión absoluta total
 > - P_atm = Presión atmosférica (≈ 101,325 Pa al nivel del mar)
 >
+
 > [!note] Fundamento Teórico y Tipos de Presión 📊
 > ### Clasificación de Presiones
 > ```mermaid
@@ -42,6 +44,7 @@ dg-publish: true
 > - **P_abs = P_atm - |P_man|** (cuando P_man < 0, vacío)
 > - **P_man = 0** significa que la presión es igual a la atmosférica
 >
+
 > [!tip] Instrumentos de Medición 🔬
 > ### Tipos de Manómetros
 > | Tipo | Principio | Aplicación | Rango Típico |
@@ -66,6 +69,7 @@ dg-publish: true
 >     style G fill:#ffcdd2
 > ```
 >
+
 > [!example] Cálculos y Ejemplos Prácticos 🧮
 > ### Ejemplo 1: Manómetro en U con Mercurio
 > **Problema:** Un manómetro en U conectado a un tanque muestra una diferencia de altura de mercurio de 25 cm. ¿Cuál es la presión manométrica del gas?
@@ -142,6 +146,7 @@ dg-publish: true
 > - **📊 Relevancia operacional**: Mide la presión "útil" del sistema
 > - **⚖️ Comparación directa**: Fácil interpretación para operadores
 >
+
 > [!warning] Consideraciones y Limitaciones ⚠️
 > ### Factores que Afectan la Medición
 > - **🏔️ Altitud**: P_atm varía con la elevación (≈ -12 Pa/m)
@@ -160,6 +165,7 @@ dg-publish: true
 > - **🌪️ Vacío excesivo**: Puede colapsar recipientes no diseñados
 > - **🔧 Mantenimiento**: Instrumentos requieren calibración regular
 >
+
 > [!summary]+ Fórmulas y Conversiones Clave 📊
 > ### Ecuaciones Fundamentales
 > ```
@@ -196,6 +202,7 @@ dg-publish: true
 > **R** - Relativa al nivel del mar
 > **O** - Operacional y práctica medición
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 1. **📏 Referencia atmosférica**: P_man = P_abs - P_atm
 > 2. **🔄 Signo importa**: Positiva (sobrepresión), negativa (vacío)
@@ -221,6 +228,7 @@ dg-publish: true
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Equilibrio]]
 >
+
 > [!tip] Continuación del Tema
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Ecuación de Continuidad y Bernoulli]]

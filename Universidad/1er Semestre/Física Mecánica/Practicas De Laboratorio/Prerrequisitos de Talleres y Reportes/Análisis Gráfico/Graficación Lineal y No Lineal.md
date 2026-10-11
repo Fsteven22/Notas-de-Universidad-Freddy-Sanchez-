@@ -76,6 +76,7 @@ dg-publish: true
 > - Inclinación: vertical o 75° (consistente)
 > ```
 >
+
 > [!tip] **Técnicas de Interpolación y Extrapolación** 📈
 > 
 > ### Interpolación en Escalas Logarítmicas:
@@ -155,6 +156,7 @@ dg-publish: true
 > - Comparación con otros métodos independientes
 > - Análisis de sensibilidad a pequeños cambios
 >
+
 > [!warning] **Control de Calidad y Verificación** ✅
 > 
 > ### Protocolo de Revisión Sistemática:
@@ -256,10 +258,12 @@ dg-publish: true
 > 
 > **E**xaminar datos y determinar rangos **S**eleccionar tipo de papel apropiado **C**alcular factores de escala "amigables" **A**justar ejes y marcar divisiones **L**ocalizar puntos con precisión **A**justar línea de mejor ajuste
 >
+
 > [!tip] **Mnemotecnia: "LOGARITMO"** 📊
 > 
 > **L**inealizar la ecuación matemáticamente **O**btener el papel log apropiado (log-log o semilog) **G**raficar usando valores directos (no logaritmos) **A**rregar puntos en línea recta **R**ecordar: una década = factor de 10 **I**nterpretar pendiente como exponente/constante **T**omar dos puntos extremos para cálculos **M**edir parámetros usando propiedades logarítmicas **O**btener resultado final con incertidumbres
 >
+
 > [!tip] **Reglas Nemotécnicas para Selección de Papel** 📋
 > 
 > ### "Si-Entonces" para Tipos de Relación:
@@ -277,6 +281,7 @@ dg-publish: true
 > 
 > **L**ogaritmo de ambas variables **O**rigin no necesariamente en (1,1) **G**raficar valores directos, no logaritmos
 >
+
 > [!tip] **Fórmulas Clave para Memorizar** 🔢
 > 
 > ### Papel Milimetrado:
@@ -608,8 +613,10 @@ dg-publish: true
 > 
 > **# Graficación Lineal y No Lineal 📊
 >
+
 > [!quote] "Un gráfico vale más que mil números; pero solo si está construido con precisión y método." 📈
 >
+
 > [!info] La graficación es una herramienta fundamental en física experimental que permite visualizar relaciones entre variables, identificar patrones, determinar parámetros físicos y validar teorías. Existen múltiples enfoques: graficación lineal en papel milimetrado (para relaciones directamente lineales), graficación logarítmica en papel log-log (para relaciones de potencia), graficación semilogarítmica (para relaciones exponenciales), y técnicas modernas computacionales. Cada método requiere pasos específicos de preparación, técnicas particulares de construcción, y criterios de evaluación rigurosos. El dominio de estas técnicas es esencial para el análisis cuantitativo en ciencias experimentales, ingeniería y investigación aplicada.
 
 ## 🔧 Conceptos Fundamentales
@@ -667,6 +674,7 @@ dg-publish: true
 > - Para crecimiento/decaimiento exponencial
 > - Común en finanzas, biología, radiactividad
 >
+
 > [!tip] **Selección del Tipo de Graficación** 🎯
 > 
 > ### Criterios de Decisión:
@@ -724,6 +732,7 @@ dg-publish: true
 > En papel log-log debe dar línea recta
 > ```
 >
+
 > [!warning] **Construcción de Escalas y Factores** 📏
 > 
 > ### Cálculo del Factor de Escala:
@@ -794,6 +803,7 @@ dg-publish: true
 > - La precisión en la pendiente es más importante
 > ```
 >
+
 > [!success] **Técnicas de Graficación en Papel Milimetrado** 📐
 > 
 > ### Materiales y Herramientas Profesionales:
@@ -920,6 +930,7 @@ dg-publish: true
 > - Leer valor donde x = 0
 > - Si el eje X no incluye x = 0: usar ecuación b = y - mx
 >
+
 > [!warning] **Graficación Logarítmica y Log-Log** 📊
 > 
 > ### Fundamentos del Papel Logarítmico:
@@ -1038,6 +1049,7 @@ dg-publish: true
 > - Significado físico específico del problema
 > - Ejemplo péndulo: a = 2π/√g
 >
+
 > [!info] **Graficación Semilogarítmica** 📈
 > 
 > ### Aplicaciones de Papel Semilog:
@@ -1247,6 +1259,7 @@ dg-publish: true
 >     - Limitaciones y fuentes de error identificadas
 >     - Recomendaciones para mejorar el experimento
 >
+
 > [!warning] **Análisis de Residuos y Control de Calidad** 📊
 > 
 > ### ¿Qué son los Residuos?
@@ -1456,6 +1469,7 @@ dg-publish: true
 > - R² = 0.9994 (excelente ajuste)
 > - No hay patrón sistemático en residuos ✓
 >
+
 > [!example] **Ejemplo 2: Péndulo Simple - Análisis Log-Log Avanzado** ⏰
 > 
 > ### Marco Teórico:
@@ -1587,6 +1601,7 @@ dg-publish: true
 > - Visualización directa de desviaciones del modelo
 > - Método más general para otras leyes de potencia
 >
+
 > [!example] **Ejemplo 3: Descarga de Capacitor - Graficación Semilog** ⚡
 > 
 > ### Marco Teórico:

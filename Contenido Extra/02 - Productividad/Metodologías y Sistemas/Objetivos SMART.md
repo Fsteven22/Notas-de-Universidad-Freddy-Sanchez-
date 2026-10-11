@@ -14,6 +14,7 @@
 > |**R**|**Relevant** (Relevante)|Alinea con tus VALORES y prioridades|¿Por qué es importante esto?|
 > |**T**|**Time-bound** (Temporal)|Define CUÁNDO debe completarse|¿Cuál es mi fecha límite?|
 >
+
 > [!warning] ❌ Errores Comunes vs ✅ Mejores Prácticas
 > 
 > ### Transformación de Objetivos
@@ -55,6 +56,7 @@
 >     class B1,C1,D1,E1,F1,G1,H1 answerNode
 > ```
 >
+
 > [!info] 📊 Matriz de Evaluación SMART
 > 
 > ### Scorecard de Validación (0-5 puntos cada criterio)
@@ -113,6 +115,7 @@
 > - ¿Fecha límite? → _31 de marzo de 2025_
 > - ¿Milestones? → _1 km (semana 3), 3 km (semana 8)_
 >
+
 > [!warning] 🔄 Sistema de Revisión y Ajuste
 > 
 > ### Protocolo de Seguimiento Semanal
@@ -154,6 +157,7 @@
 >     class S1,S2,S3,S4,S5,S6 tactical
 > ```
 >
+
 > [!tip] 📊 Matriz de Priorización
 > 
 > ### Framework ICE (Impact-Confidence-Ease)
@@ -189,6 +193,7 @@
 > - **AI Coaching**: ChatGPT para ajustes de estrategia
 > - **Predictive**: Análisis de tendencias y forecasting
 >
+
 > [!info] 🎯 Template Obsidian para Objetivos SMART
 > 
 > ### Estructura de Nota Individual
@@ -259,6 +264,7 @@
 > - [[Clarificación de Valores]] - Base para relevancia de objetivos
 > - [[Pensamiento Estratégico]] - Capacidad de planificación a largo plazo
 >
+
 > [!tip] 🚀 Complementarias
 > 
 > - [[Gestión del Tiempo]] - Optimización de recursos temporales
@@ -266,6 +272,7 @@
 > - [[Gestión de Atención Avanzada]] - Foco en ejecución de objetivos
 > - [[Time Blocking]] - Asignación temporal específica
 >
+
 > [!warning] 🔄 Metodologías Avanzadas
 > 
 > - [[Bullet Journal Method (BuJo)]] - Sistema de organización y seguimiento

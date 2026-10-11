@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "El error no está en equivocarse, sino en no saber cuánto nos equivocamos." 🎯
 >
+
 > [!info] Toda medición experimental contiene inevitablemente cierto grado de incertidumbre. Los errores absolutos y relativos son herramientas fundamentales para cuantificar y comparar la precisión de nuestras mediciones, permitiéndonos evaluar la confiabilidad de nuestros resultados experimentales.
 
 ## 🔧 Conceptos Fundamentales
@@ -30,6 +31,7 @@ dg-publish: true
 > - **Error porcentual**: Se expresa en **porcentaje (%)**
 > - **Signo del error**: Positivo si se sobrestima, negativo si se subestima
 >
+
 > [!tip] **Tipos de Errores** 🌊
 > 
 > ### Clasificación por Origen:
@@ -63,6 +65,7 @@ dg-publish: true
 > |**Moderado**|5-10%|⚠️ Aceptable|Mediciones técnicas|
 > |**Grande**|> 10%|❌ Inaceptable|Requiere mejora del método|
 >
+
 > [!warning] **Fórmulas Fundamentales** ⚡
 > 
 > ### Error Absoluto:
@@ -89,6 +92,7 @@ dg-publish: true
 > 
 > **Como porcentaje**: u_% = (u / x_promedio) × 100%
 >
+
 > [!success] 🔗 Proceso de Análisis de Errores
 > 
 > ```mermaid
@@ -108,6 +112,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!note] **Métodos de Cálculo** 📝
 > 
 > ### Para Medición Única:
@@ -193,6 +198,7 @@ dg-publish: true
 > - **Error relativo del 1.0%** (aceptable para mediciones con regla)
 > - **Posible causa**: Paralaje, deformación de la regla, error de lectura
 >
+
 > [!example] **Ejemplo 2: Múltiples Mediciones** 🔢
 > 
 > ### Situación:
@@ -225,6 +231,7 @@ dg-publish: true
 > 
 > **T = (2.002 ± 0.011) s** con error relativo de **0.1%**
 >
+
 > [!example] **Ejemplo 3: Comparación de Instrumentos** 🔍
 > 
 > ### Situación:
@@ -265,6 +272,7 @@ dg-publish: true
 > **M**edición vs valor verdadero **E**rror absoluto = diferencia  
 > **D**ividir entre verdadero **I**rrelativo = sin unidades **R**esultado en porcentaje × 100
 >
+
 > [!tip] **Reglas Prácticas** 📏
 > 
 > ### Para Error Relativo:
@@ -375,6 +383,7 @@ dg-publish: true
 > - **Estadística básica**: Promedio, desviación estándar
 > - **Álgebra**: Operaciones con decimales y porcentajes
 >
+
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Propagación de errores

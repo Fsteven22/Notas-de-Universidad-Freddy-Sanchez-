@@ -4,9 +4,10 @@ dg-publish: true
 
 # Machine Learning - Aprendizaje Automático 🤖
 
-[!quote]- Cita Inspiradora
+> [!quote]- Cita Inspiradora
 > *"El aprendizaje automático no es magia; es tecnología. Pero aplicada correctamente, puede parecer mágica."* - Andrew Ng
 >
+
 > [!info] ## ¿Qué es Machine Learning? 🧠
 El Machine Learning (ML) o Aprendizaje Automático es una rama de la inteligencia artificial que permite a las computadoras aprender y tomar decisiones basadas en datos, sin ser programadas explícitamente para cada tarea específica.
 
@@ -185,7 +186,7 @@ graph TD
 | **RMSE** 📊 | Root MSE | En unidades originales |
 | **R²** 🎯 | Coefficient of Determination | Porcentaje de varianza explicada |
 
-[!question]- ## Técnica de Estudio Eficaz: Método CRISP-DM + Flashcards 🧠
+> [!question]- ## Técnica de Estudio Eficaz: Método CRISP-DM + Flashcards 🧠
 
 ### 🎯 Mnemotecnia: "**C**ada **R**eto **I**nteligente **S**e **P**uede **D**ominar **M**ejor"
 
@@ -229,7 +230,7 @@ Ejemplo:
 - **Anverso**: "Random Forest 🌲🌲🌲"
 - **Reverso**: "Ensemble de árboles de decisión | Reduce overfitting | Usado en: clasificación con alta precisión"
 
-[!quote]- ## Referencias y Conexiones 🔗
+> [!quote]- ## Referencias y Conexiones 🔗
 
 ### 📖 Enlaces a Otras Notas
 - ![[Fundamentos de Programación]] - Base para implementar algoritmos de ML
@@ -239,7 +240,7 @@ Ejemplo:
 - ![[Estadística y Probabilidad]] - Fundamento matemático del ML
 - ![[Visualización de Datos]] - Comunicar resultados de modelos
 
-[!note]- ## Prerrequisitos y Notas Recomendadas 📋
+> [!note]- ## Prerrequisitos y Notas Recomendadas 📋
 
 ### 🧮 **Fundamentos Matemáticos (Esenciales)**
 - ![[Cálculo de una Variable]] - Para entender optimización y gradientes

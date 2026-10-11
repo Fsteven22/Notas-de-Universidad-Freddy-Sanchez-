@@ -36,11 +36,13 @@ dg-publish: true
 > 6. **A**grupa términos sin $\frac{dy}{dx}$ al otro lado
 > 7. **D**espeja $\frac{dy}{dx}$ factorizando
 >
+
 > [!example] 🧠 Método Visual: "La Cadena Invisible"
 > Imagina que $y$ tiene una "cadena invisible" conectada a $x$:
 > - Cada vez que derivas algo con $y$, la cadena "tira" y aparece $\frac{dy}{dx}$
 > - La regla de la cadena actúa automáticamente: $\frac{d}{dx}[g(y)] = g'(y) \cdot \frac{dy}{dx}$
 >
+
 > [!note] 📝 Técnica de Identificación: "BUSCA Y MARCA"
 > 1. **BUSCA**: Términos que contienen solo $x$ → derivan normal
 > 2. **BUSCA**: Términos que contienen solo $y$ → derivan con $\frac{dy}{dx}$
@@ -107,6 +109,7 @@ flowchart TD
 > 
 > **Interpretación**: Para elipses $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$, la fórmula general es $\frac{dy}{dx} = -\frac{b^2x}{a^2y}$
 >
+
 > [!example] 🔢 Ejemplo 2: Ecuación con Productos
 > **Resolver**: Si $x^2y + xy^2 = 6$, encuentra $\frac{dy}{dx}$
 > 
@@ -201,6 +204,7 @@ flowchart TD
 > **Como** $x^2 + y^2 = 25$:
 > $\frac{d^2y}{dx^2} = -\frac{25}{y^3}$
 >
+
 > [!example] 🔢 Segunda Derivada - Elipse
 > **De la elipse**: $\frac{x^2}{16} + \frac{y^2}{9} = 1$, donde $\frac{dy}{dx} = -\frac{9x}{16y}$
 > 
@@ -215,6 +219,7 @@ flowchart TD
 > 
 > $= -\frac{9}{16} \cdot \frac{\frac{16y^2 + 9x^2}{16y}}{y^2} = -\frac{9(16y^2 + 9x^2)}{16^2 y^3}$
 >
+
 > [!example] 🔢 Segunda Derivada - Paramétrica (Parábola)
 > **De la parábola**: $x = t^2$, $y = 2t$, donde $\frac{dy}{dx} = \frac{1}{t}$
 > 
@@ -272,6 +277,7 @@ flowchart TD
 > **Verificación**: Si eliminamos el parámetro: $x^2 + y^2 = 25$
 > Por derivación implícita: $\frac{dy}{dx} = -\frac{x}{y} = -\frac{5\cos(t)}{5\sin(t)} = -\cot(t)$ ✓
 >
+
 > [!example] 🔢 Ejemplo Paramétrico 2: Parábola
 > **Curva**: $x = t^2$, $y = 2t$ (parábola)
 > 
@@ -285,6 +291,7 @@ flowchart TD
 > **Segunda derivada**:
 > $\frac{d^2y}{dx^2} = \frac{d}{dx}\left[\frac{1}{t}\right] = \frac{\frac{d}{dt}\left[\frac{1}{t}\right]}{\frac{dx}{dt}} = \frac{-\frac{1}{t^2}}{2t} = -\frac{1}{2t^3}$
 >
+
 > [!example] 🔢 Ejemplo Paramétrico 3: Cicloide
 > **Curva**: $x = r(t - \sin t)$, $y = r(1 - \cos t)$ (cicloide)
 > 
@@ -336,6 +343,7 @@ flowchart TD
 > ❌ **Problema**: Asumir que siempre existe $\frac{dy}{dx}$
 > ✅ **Correcto**: Verificar que la curva pasa la prueba de línea vertical
 >
+
 > [!tip] 💡 Estrategias Anti-Error
 > 
 > 1. **Marca cada $y$**: Cuando veas $y$, recuerda que necesita $\frac{dy}{dx}$
@@ -373,6 +381,7 @@ flowchart TD
 > 3. Sustituir los valores conocidos
 > 4. Resolver para la razón de cambio deseada
 >
+
 > [!example] 🔢 Ejemplo de Razones Relacionadas
 > **Problema**: Un globo esférico se infla a razón de 50 cm³/min. ¿A qué velocidad aumenta el radio cuando el radio es 10 cm?
 > 

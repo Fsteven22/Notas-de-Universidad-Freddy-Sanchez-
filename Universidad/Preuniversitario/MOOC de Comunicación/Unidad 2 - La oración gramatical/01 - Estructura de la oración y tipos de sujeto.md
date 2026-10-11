@@ -45,6 +45,7 @@ dg-publish: true
 > > 📌 Cita de referencia: la *Nueva gramática de la lengua española* señala que la oración es la unidad mínima capaz de constituir un enunciado con sentido completo. Todo lo que estudiaremos en esta unidad parte de esa idea.
 >
 >
+
 > [!warning] ⚠️ Lo que NO es una oración
 >
 > |Caso|Ejemplo|Por qué no es oración|
@@ -87,6 +88,7 @@ dg-publish: true
 > ```
 >
 >
+
 > [!success] 🔍 Método en 3 pasos para separar sujeto y predicado
 >
 > |Paso|Qué hacer|Ejemplo aplicado|
@@ -96,6 +98,7 @@ dg-publish: true
 > |**3. Comprueba la concordancia**|Cambia el número del sujeto y el verbo debe cambiar también|*El compañero entregó* frente a *Los compañeros entregaron*|
 >
 >
+
 > [!warning] ⚠️ Errores frecuentes al separar la oración
 >
 > |Error|Ejemplo incorrecto|Corrección|
@@ -165,6 +168,7 @@ dg-publish: true
 > |*Tú y yo presentaremos el trabajo*|Tú, yo|y|
 >
 >
+
 > [!warning] ⚠️ Sujeto simple con modificadores largos NO es compuesto
 >
 > |Caso|Análisis|Explicación|
@@ -198,6 +202,7 @@ dg-publish: true
 > |*Llueve mucho en invierno*|Sin sujeto recuperable|Verbo impersonal, caso especial|
 >
 >
+
 > [!success] 📊 Tabla comparativa - los tres tipos frente a frente
 >
 > |Rasgo|Sujeto simple|Sujeto compuesto|Sujeto tácito|
@@ -210,6 +215,7 @@ dg-publish: true
 > |**Error típico**|Confundirlo con compuesto cuando tiene adjetivos largos|Confundirlo con simple cuando los núcleos están lejos|Inventar un sujeto que el verbo no permite|
 >
 >
+
 > [!note] 🧭 Guía rápida para no confundirlos
 >
 > |Pregunta|Si respondes sí|Entonces es|
@@ -266,6 +272,7 @@ style F fill:#fff4e1
 > |6|*Las ideas principales*|*sostienen todo el párrafo*|ideas|sostienen|
 >
 >
+
 > [!example]- ✏️ Ejercicio 02.2 - Clasifica el sujeto
 >
 > **Instrucción:** Indica si el sujeto es **simple**, **compuesto** o **tácito**. Si es tácito, escribe entre paréntesis el pronombre recuperado.
@@ -291,6 +298,7 @@ style F fill:#fff4e1
 > |6|*El cuaderno, el lapicero y la regla*|Compuesto|Tres núcleos enumerados|
 >
 >
+
 > [!example]- ✏️ Ejercicio 02.3 - Transforma el tipo de sujeto
 >
 > **Instrucción:** Reescribe cada oración cambiando el tipo de sujeto que se indica, sin alterar el sentido básico. Cuida la concordancia del verbo.
@@ -337,6 +345,7 @@ style F fill:#fff4e1
 > - [ ] Reconozco un sujeto simple como en *El estudiante aprueba*.
 >
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Distingo sujeto simple, compuesto y tácito sin dudar en oraciones nuevas.
@@ -345,6 +354,7 @@ style F fill:#fff4e1
 > - [ ] Clasifico correctamente 6 oraciones en simple, compuesto o tácito.
 >
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Transformo oraciones cambiando el tipo de sujeto y ajustando la concordancia.
@@ -392,6 +402,7 @@ mindmap
 > [4] J. M. Gómez Torrego, *Gramática didáctica del español*, 8.ª ed. Madrid, España: SM, 2007.
 >
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 2 - La oración gramatical/00 - Índice Unidad 2]] — mapa general de la unidad La oración gramatical, objetivos y orden de estudio.

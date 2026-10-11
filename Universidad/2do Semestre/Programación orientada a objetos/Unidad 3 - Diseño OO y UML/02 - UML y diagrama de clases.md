@@ -695,6 +695,7 @@ graph LR
 > - Amarillo: Interfaces
 > - Rojo: Clases abstractas
 >
+
 > [!warning] ⚠️ Errores Comunes
 > 
 > **❌ Evitar:**

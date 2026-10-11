@@ -48,6 +48,7 @@ graph TD
 > |Distancia|$r$|m|Entre centros de masa 📏|
 > |Aceleración gravitacional|$g$|$9.8 \text{ m/s}^2$|En superficie terrestre 🌍|
 >
+
 > [!warning] Punto Importante La distancia $r$ se mide entre los **centros de masa** de los objetos, no entre sus superficies. Para objetos esféricos, esto simplifica considerablemente los cálculos.
 
 ---
@@ -198,6 +199,7 @@ graph LR
 > - Distancia promedio: $r = 1.496 \times 10^{11}$ m (1 UA)
 > - Constante: $G = 6.674 \times 10^{-11} \frac{\text{N} \cdot \text{m}^2}{\text{kg}^2}$
 >
+
 > [!note] Desarrollo del Cálculo **Aplicando la fórmula:** $$F_g = G \frac{M_{☀️} \times M_{🌍}}{r^2}$$
 > 
 > **Sustituyendo valores:** $$F_g = (6.674 \times 10^{-11}) \frac{(1.989 \times 10^{30})(5.972 \times 10^{24})}{(1.496 \times 10^{11})^2}$$

@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] _"Las integrales notables son los cimientos del cálculo integral. Como herramientas fundamentales, nos permiten resolver de manera directa una amplia gama de funciones sin recurrir a técnicas complejas de integración. Dominar estas fórmulas es esencial para construir el conocimiento integral más avanzado."_
 >
+
 > [!info]+ Concepto Fundamental 📚
 > 
 > ### ¿Qué son las Integrales Notables?
@@ -22,6 +23,7 @@ dg-publish: true
 > 
 > **$$\int [af(x) + bg(x)]dx = a\int f(x)dx + b\int g(x)dx$$**
 >
+
 > [!tip] Integrales Algebraicas Básicas 🔢
 > 
 > ### 1. Integral de una Constante
@@ -69,6 +71,7 @@ dg-publish: true
 > Por tanto: ∫(1/x)dx = ln|x| + C
 > ```
 >
+
 > [!example] Integrales Exponenciales 📈
 > 
 > ### 4. Integral de e^x
@@ -103,6 +106,7 @@ dg-publish: true
 > - $\int 2^x dx = \frac{2^x}{\ln 2} + C$
 > - $\int 10^x dx = \frac{10^x}{\ln 10} + C$
 >
+
 > [!success] Integrales Trigonométricas Básicas 📐
 > 
 > ### 6. Integral del Seno
@@ -202,6 +206,7 @@ dg-publish: true
 > ∫cot x dx = ∫(1/u) du = ln|u| + C = ln|sen x| + C
 > ```
 >
+
 > [!note] Integrales Logarítmicas de Funciones Trigonométricas 📝
 > 
 > ### 14. Integral de la Secante
@@ -236,6 +241,7 @@ dg-publish: true
 > ∫csc x dx = ∫(1/u) du = ln|u| + C = ln|csc x - cot x| + C
 > ```
 >
+
 > [!tip] Integrales que Resultan en Funciones Trigonométricas Inversas 🔄
 > 
 > ### 16. Integral Arcoseno
@@ -281,6 +287,7 @@ dg-publish: true
 >                           = 1/(x√(x^2-a^2))
 > ```
 >
+
 > [!example] Integrales Hiperbólicas 🌊
 > 
 > ### 19. Integral del Seno Hiperbólico
@@ -309,6 +316,7 @@ dg-publish: true
 > Por tanto: ∫cosh x dx = senh x + C
 > ```
 >
+
 > [!warning] Casos Especiales y Observaciones Importantes ⚠️
 > 
 > ### Restricciones y Dominios
@@ -333,6 +341,7 @@ dg-publish: true
 >                   = F(x) + G(x) + C  (donde C = C₁ + C₂)
 > ```
 >
+
 > [!success] Ejemplos de Aplicación Práctica 📚
 > 
 > ### Ejemplo 1: Combinación Lineal
@@ -377,6 +386,7 @@ dg-publish: true
 >
 > [!brain]+ Técnica de Memorización: INTEGRAL 🧠 **I** - Identificar el tipo de función (algebraica, trigonométrica, exponencial) **N** - Nombrar la fórmula correspondiente **T** - Transformar si es necesario (factores constantes) **E** - Evaluar usando la fórmula directa **G** - Garantizar que se incluya la constante C **R** - Revisar el resultado derivando **A** - Aplicar restricciones del dominio si existen **L** - Limpiar la expresión final
 >
+
 > [!summary]+ Tabla de Referencias Rápidas 📋
 > 
 > ### Las 20 Integrales Notables Fundamentales
@@ -384,6 +394,7 @@ dg-publish: true
 >
 > _Esta tabla contiene las fórmulas directas más importantes para la integración inmediata. Cada fórmula representa una antiderivada que debe memorizarse para resolver integrales de manera eficiente._
 >
+
 > [!info] Estrategias de Resolución 🎯
 > 
 > ### Pasos para Resolver Integrales Notables
@@ -408,6 +419,7 @@ dg-publish: true
 > - Derivar el resultado para comprobar
 > - Verificar restricciones del dominio
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 
 > 1. **📝 Constante C**: Siempre incluir en integrales indefinidas
@@ -436,6 +448,7 @@ dg-publish: true
 > - [[Funciones Elementales]]
 > - [[Límites de Funciones]]
 >
+
 > [!tip] Continuación del Tema
 > 
 > - [[Cambio de Variable en Integrales]]

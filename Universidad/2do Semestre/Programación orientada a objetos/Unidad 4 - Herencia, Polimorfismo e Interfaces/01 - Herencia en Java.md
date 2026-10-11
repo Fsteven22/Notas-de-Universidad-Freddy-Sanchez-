@@ -188,6 +188,7 @@ graph TB
 > }
 > ```
 >
+
 > [!warning] ⚠️ Reglas Importantes de super()
 > 
 > **1. super() DEBE ser la primera línea:**
@@ -307,6 +308,7 @@ graph TB
 > pez.moverse();         // El pez nada
 > ```
 >
+
 > [!example] 🎯 Sobrescritura con super
 > 
 > Puedes **reutilizar** el código del padre y **agregar** funcionalidad:
@@ -481,6 +483,7 @@ graph TB
 > El coche Ford acelera suavemente
 > ```
 >
+
 > [!example] 🎯 Métodos Polimórficos
 > 
 > ```java
@@ -609,6 +612,7 @@ graph TB
 > }
 > ```
 >
+
 > [!tip] 💡 Buenas Prácticas
 > 
 > **Recomendaciones:**
@@ -759,6 +763,7 @@ graph TB
 > }
 > ```
 >
+
 > [!example] 🌲 Jerarquía Multinivel
 > 
 > **Múltiples niveles - Herencia en cadena:**
@@ -819,6 +824,7 @@ graph TB
 > }
 > ```
 >
+
 > [!example] 🌿 Jerarquía Jerárquica
 > 
 > **Una superclase, múltiples subclases:**
@@ -1121,6 +1127,7 @@ graph TB
 > - Prefiere private + getters/setters protected
 > - Mantiene encapsulación
 >
+
 > [!warning] ⚠️ Antipatrones a Evitar
 > 
 > **1. Jerarquías muy profundas:**

@@ -1006,6 +1006,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 10. The recipe requires flour, sugar, eggs, and butter.
 > ```
 >
+
 > [!example] Exercise 2: Compound Sentences
 > 
 > **Add commas where needed. If no comma is needed, write "correct":**
@@ -1048,6 +1049,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 30. The sun was shining, and the birds were singing.
 > ```
 >
+
 > [!example] Exercise 3: Introductory Elements
 > 
 > **Add commas where needed:**
@@ -1090,6 +1092,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 60. First, mix all the ingredients together.
 > ```
 >
+
 > [!example] Exercise 4: Essential vs Nonessential Elements
 > 
 > **Add commas where needed. Mark "correct" if no commas needed:**
@@ -1132,6 +1135,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 90. My sister, who is a teacher, lives in Cuenca. (nonessential)
 > ```
 >
+
 > [!example] Exercise 5: Direct Address and Tag Questions
 > 
 > **Add commas where needed:**
@@ -1174,6 +1178,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 120. My dear friend, I need your help.
 > ```
 >
+
 > [!example] Exercise 6: Dates, Addresses, and Numbers
 > 
 > **Add commas where needed:**
@@ -1206,6 +1211,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 140. The year 2025 is going to be great. (correct - no comma)
 > ```
 >
+
 > [!example] Exercise 7: Coordinate Adjectives
 > 
 > **Add commas where needed. Mark "correct" if no comma needed:**
@@ -1248,6 +1254,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 170. Correct (age + color - not coordinate)
 > ```
 >
+
 > [!example] Exercise 8: Quotations
 > 
 > **Add commas (and other punctuation) where needed:**
@@ -1280,6 +1287,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 190. She said, "I don't understand."
 > ```
 >
+
 > [!example] Exercise 9: Find and Correct Errors
 > 
 > **Each sentence has comma errors. Correct them:**
@@ -1322,6 +1330,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > 220. When I arrived home, everyone was sleeping. (comma after clause, not after "arrived")
 > ```
 >
+
 > [!example] Exercise 10: Mixed Practice
 > 
 > **Add all necessary commas:**
@@ -1455,6 +1464,7 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > En inglés: número primero, luego calle
 > ```
 >
+
 > [!tip] Consejos y Trucos de Memoria
 > 
 > **Tip 1: FANBOYS para oraciones compuestas**

@@ -44,6 +44,7 @@ dg-publish: true
 >     1991 : Tim Berners-Lee crea la World Wide Web (WWW)
 > ```
 >
+
 > [!example]- 🟢 Detalle de cada hito
 > 
 > - **1967 — RAND crea ARPANET:** la agencia RAND (financiada por el gobierno de EE.UU.) desarrolla ARPANET, pensada para que la comunicación militar pudiera sobrevivir a un ataque, al no depender de un único punto central.
@@ -65,6 +66,7 @@ dg-publish: true
 > - **DNS (Domain Name System):** como recordar números de IP sería poco práctico para las personas, el DNS funciona como una "guía telefónica" de Internet: traduce nombres fáciles de recordar (como `google.com`) a la dirección IP real del servidor donde vive ese sitio.
 > - **TCP/IP:** el conjunto de reglas (protocolos) que define cómo se empaquetan, envían, enrutan y reensamblan los datos entre dispositivos, sin importar qué tipo de red o hardware use cada uno en el camino.
 >
+
 > [!example]- 🟢 El modelo cliente-servidor: cómo se carga una página web
 > 
 > Cuando escribes una URL o haces clic en un enlace, ocurre un intercambio de solicitud/respuesta entre tu computadora (**cliente**) y la computadora que aloja el sitio (**servidor**):
@@ -93,6 +95,7 @@ dg-publish: true
 > 
 > Un error frecuente es decir "no tengo Internet" cuando en realidad el problema es solo con el navegador o un sitio específico. Internet puede estar funcionando (correo, apps, videollamadas) mientras la Web tiene un problema puntual, y viceversa.
 >
+
 > [!warning] ⚠️ ARPANET no fue "creada por el gobierno para el público"
 > 
 > ARPANET nació como un proyecto de investigación con fines militares/de defensa durante la Guerra Fría, no como un servicio pensado para uso civil masivo. Su apertura al público y su transformación en la Internet actual fue un proceso gradual de décadas, no una decisión única.
@@ -124,16 +127,19 @@ graph TD
 > 2. ¿Qué evento de 1983 marcó una separación importante entre uso militar y uso académico/civil de la red?
 > 3. ¿Qué función cumple el DNS y por qué es necesario?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Ordena cronológicamente y explica brevemente qué pasó en cada año: 1967, 1983, 1990, 1991.
 > 5. Describe, en orden, los pasos que ocurren desde que escribes una URL hasta que ves la página cargada (modelo cliente-servidor).
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 6. Explica por qué se dice que TCP/IP "sustituyó a la mayoría de los protocolos" en 1990, y qué problema resolvía tener un protocolo estándar común.
 > 7. Argumenta por qué es más preciso decir que "la Web se construyó sobre Internet" que decir que "Internet y la Web nacieron juntas".
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -162,11 +168,13 @@ graph TD
 > - [ ] Conozco los hitos principales de la historia de las redes (ARPANET, MILNET, TCP/IP, WWW).
 > - [ ] Entiendo para qué sirve el DNS.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo describir el modelo cliente-servidor y los pasos al cargar una página web.
 > - [ ] Puedo ubicar cronológicamente los hitos clave de 1967 a 1991.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo explicar por qué TCP/IP fue clave para conectar redes distintas entre sí.
@@ -180,6 +188,7 @@ graph TD
 > 
 > [1] Material de clase — Unidad 4: Internet, Computación y Sociedad. [2] Leiner, B. M., et al. (2009). _A Brief History of the Internet_. ACM SIGCOMM Computer Communication Review.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Evolución de la Web]] — continúa esta historia: qué pasó con la Web una vez creada en 1991.

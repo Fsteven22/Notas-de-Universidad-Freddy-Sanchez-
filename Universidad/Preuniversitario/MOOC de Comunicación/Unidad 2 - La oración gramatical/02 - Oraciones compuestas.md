@@ -37,6 +37,7 @@ dg-publish: true
 > 3. Cuenta solo los **verbos conjugados** (los que tienen persona, número, tiempo y modo).
 > 4. Si hay **uno** → oración simple. Si hay **dos o más** → oración compuesta.
 >
+
 > [!success] 📊 Simple vs. compuesta — la tabla que lo resume todo
 >
 > |Característica|Oración simple|Oración compuesta|
@@ -48,6 +49,7 @@ dg-publish: true
 > |**Nexo**|No necesita|Casi siempre hay uno (y, que, porque, cuando…), salvo yuxtaposición|
 > |**Idea expresada**|Una sola acción o estado|Dos o más acciones o estados relacionados|
 >
+
 > [!warning] ⚠️ El error más común — confundir formas no conjugadas con verbos
 >
 > No todo lo que "parece verbo" cuenta. Solo los **conjugados** mandan.
@@ -62,6 +64,7 @@ dg-publish: true
 >
 > > 📌 Regla de oro: el infinitivo (-ar, -er, -ir), el gerundio (-ando, -iendo) y el participio (-ado, -ido) **nunca** convierten una oración en compuesta por sí solos.
 >
+
 > [!note] 🗺️ Cómo se ve una oración compuesta por dentro
 >
 > ```mermaid
@@ -104,6 +107,7 @@ dg-publish: true
 >
 > > 📌 Truco: si puedes separar la oración en dos simples con el mismo sujeto (*María estudia. María trabaja.*), es este caso.
 >
+
 > [!note] 👥 Caso 2 — Múltiples sujetos realizando acciones distintas
 >
 > Cada proposición tiene su propio sujeto y su propia acción. Las proposiciones se relacionan por **coordinación** o por **subordinación**.
@@ -121,6 +125,7 @@ dg-publish: true
 > |*María estudia mientras Juan trabaja.*|*María estudia mientras Juan trabajo.*|*Trabaja* debe concordar con Juan (3.ª singular), no con María ni con yo.|
 > |*Los niños juegan y la madre los vigila.*|*Los niños juegan y la madre los vigilan.*|*Vigila* concuerda con *la madre* (singular).|
 >
+
 > [!success] 📊 Coordinación vs. subordinación — tabla esencial
 >
 > |Criterio|Coordinación|Subordinación|
@@ -133,6 +138,7 @@ dg-publish: true
 >
 > > 📌 Para clasificar rápido: tapa el nexo y lee cada parte por separado. Si ambas "sobreviven" solas → coordinación. Si una queda coja → subordinación.
 >
+
 > [!note] 🔗 Los nexos más usados — tabla de referencia
 >
 > |Tipo|Nexos|Ejemplo|
@@ -146,6 +152,7 @@ dg-publish: true
 > |**Condicionales** (ponen condición)|si, siempre que, con tal de que|*Si estudias, aprobarás.*|
 > |**Completivos** (completan al verbo)|que, si|*Creo que tienes razón.*|
 >
+
 > [!warning] ⚠️ Yuxtaposición — la compuesta "sin nexo visible"
 >
 > Dos proposiciones pueden unirse solo con **coma, punto y coma o dos puntos**, sin nexo escrito. Sigue siendo compuesta porque hay 2+ verbos conjugados.
@@ -202,6 +209,7 @@ dg-publish: true
 >
 > > 📌 Autoevaluación: si clasificaste bien las 6, ya dominas el criterio. El par 3 vs. 4 es la clave: el infinitivo no cuenta, el subjuntivo (*aprendas*) sí.
 >
+
 > [!example]- ✏️ Ejercicio 02.5 — Identifica los sujetos
 >
 > **Instrucción:** Para cada oración compuesta, indica cada verbo conjugado con su sujeto correspondiente.
@@ -216,6 +224,7 @@ dg-publish: true
 >
 > > 📌 Fíjate en el N.º 1 vs. N.º 2: mismo ejemplo base, distinto análisis de sujetos. Esa es exactamente la diferencia entre el Caso 1 y el Caso 2 de esta nota.
 >
+
 > [!example]- ✏️ Ejercicio 02.6 — Coordinación o subordinación
 >
 > **Instrucción:** Clasifica cada oración como coordinada o subordinada y nombra el tipo de nexo.
@@ -231,6 +240,7 @@ dg-publish: true
 >
 > > 📌 Prueba de verificación: separa las partes del N.º 2 (*"Hace frío" / "es invierno"*): la segunda explica a la primera, no es independiente → subordinada. En el N.º 1 ambas sobreviven solas → coordinada.
 >
+
 > [!example]- ✏️ Ejercicio 02.7 — Une con el nexo adecuado
 >
 > **Instrucción:** Une cada par de oraciones simples con el nexo indicado entre paréntesis para formar una compuesta correcta.
@@ -245,6 +255,7 @@ dg-publish: true
 >
 > > 📌 Observa que el nexo cambia el sentido: con *porque* das una causa, con *pero* un contraste, con *cuando* un tiempo. Elegir el nexo correcto es elegir el significado.
 >
+
 > [!example]- ✏️ Ejercicio 02.8 — Corrige los errores de concordancia
 >
 > **Instrucción:** Cada oración tiene un error de concordancia entre sujeto y verbo. Detecta y corrige.
@@ -283,12 +294,14 @@ dg-publish: true
 > - [ ] Distingo un verbo conjugado de un infinitivo, un gerundio y un participio en cualquier ejemplo.
 > - [ ] Clasifico 6 oraciones dadas como simples o compuestas sin equivocarme.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Identifico el sujeto de cada proposición en oraciones de los Casos 1 y 2.
 > - [ ] Distingo coordinación de subordinación aplicando la prueba de separar las proposiciones.
 > - [ ] Uno pares de oraciones simples con el nexo adecuado (y, pero, porque, aunque, cuando, que).
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Detecto y corrijo errores de concordancia sujeto-verbo dentro de oraciones compuestas.
@@ -344,6 +357,7 @@ mindmap
 >
 > [4] L. Gómez Torrego, *Gramática didáctica del español*, 10.ª ed. Madrid, España: SM, 2011.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[01 - Estructura de la oración y tipos de sujeto]] — la base previa: qué es sujeto y predicado y cómo reconocer el verbo principal de una oración simple antes de pasar a las compuestas.

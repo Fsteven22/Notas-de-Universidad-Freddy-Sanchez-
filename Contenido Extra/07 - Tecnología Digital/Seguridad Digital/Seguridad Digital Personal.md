@@ -4,6 +4,7 @@
 
 > [!info] Definición La seguridad digital personal es el conjunto de prácticas, herramientas y conocimientos necesarios para proteger la información personal, la privacidad y los activos digitales contra amenazas cibernéticas, preservando al mismo tiempo la funcionalidad y usabilidad de los sistemas tecnológicos.
 >
+
 > [!tip] Principios Fundamentales
 > 
 > - 🛡️ **Defensa en profundidad**: Múltiples capas de protección
@@ -99,6 +100,7 @@ graph TD
 > - `Café-Luna-87-Montaña!` (más fácil de recordar)
 > - `P@ssw0rd123` ❌ (predecible y común)
 >
+
 > [!warning] Contraseñas que NUNCA Usar
 > 
 > - Información personal (nombres, fechas de nacimiento)
@@ -118,6 +120,7 @@ graph TD
 > - **Auditoria de seguridad** identifica contraseñas débiles/reutilizadas
 > - **Notas seguras** para información sensible adicional
 >
+
 > [!tip] Gestores Recomendados por Nivel **Nivel Básico:**
 > 
 > - **Bitwarden**: Gratuito, open source, confiable
@@ -150,6 +153,7 @@ graph TD
 > 
 > - Huella dactilar, reconocimiento facial, iris
 >
+
 > [!tip] Métodos 2FA por Seguridad (Más a Menos Seguro) **1. Hardware Security Keys (FIDO2/WebAuthn)**
 > 
 > - **Ejemplos**: YubiKey, Google Titan, SoloKeys
@@ -221,6 +225,7 @@ flowchart TD
 > - **Edge** con configuración de privacidad estricta
 > - **Firefox** configuración estándar con extensiones
 >
+
 > [!info] Configuraciones Críticas **Firefox Hardening:**
 > 
 > ```
@@ -263,6 +268,7 @@ flowchart TD
 > - **Web of Trust (WOT)**: Reputación de sitios web
 > - **PhishTank**: Base de datos de sitios maliciosos
 >
+
 > [!warning] Extensiones a Evitar
 > 
 > - Extensiones con pocos usuarios o reviews
@@ -311,6 +317,7 @@ flowchart TD
 > - Usar launcher privado como Nova o Lawnchair
 > - Activar encriptación completa del dispositivo
 >
+
 > [!warning] Configuraciones Riesgosas Comunes
 > 
 > - Permitir instalación de apps desde fuentes desconocidas
@@ -330,6 +337,7 @@ flowchart TD
 > - **Permisos mínimos** necesarios para funcionar
 > - **Open source** cuando sea posible
 >
+
 > [!tip] Apps Recomendadas por Categoría **Comunicación Segura:**
 > 
 > - **Signal**: Mensajería con encriptación E2E perfecta
@@ -392,6 +400,7 @@ graph TD
 > - No requerir número de teléfono real
 > - Permitir comunicación anónima
 >
+
 > [!tip] Ranking de Seguridad en Mensajería **Nivel Máximo:**
 > 
 > - **Signal**: Gold standard, recomendado por expertos
@@ -427,6 +436,7 @@ graph TD
 > - Susceptible a interceptación en tránsito
 > - Headers revelan información técnica sensible
 >
+
 > [!tip] Estrategias de Email Seguro **Proveedores Seguros:**
 > 
 > - **ProtonMail**: Zero-access encryption, auditable
@@ -457,6 +467,7 @@ graph TD
 > - **Malware Distribution**: Inyección de código malicioso
 > - **Session Hijacking**: Robo de cookies y sesiones
 >
+
 > [!tip] Protocolo de WiFi Público Seguro **Antes de Conectarse:**
 > 
 > 1. Verificar nombre exacto de red con establecimiento
@@ -490,6 +501,7 @@ graph TD
 > - **Guest network** separada para visitantes
 > - **Firewall activado** con reglas restrictivas
 >
+
 > [!tip] Configuraciones Avanzadas **DNS Seguro:**
 > 
 > - **Cloudflare**: 1.1.1.1 (privacidad + velocidad)
@@ -513,6 +525,7 @@ graph TD
 > - **Protección en WiFi público**: Capa adicional de seguridad
 > - **Anonimato relativo**: Ocultar actividad del ISP
 >
+
 > [!tip] Criterios de Selección de VPN **Factores Críticos:**
 > 
 > - **No-logs policy** verificable y auditada
@@ -523,6 +536,7 @@ graph TD
 > - **Transparencia**: Regular transparency reports
 > - **Performance**: Velocidad y latencia aceptables
 >
+
 > [!warning] VPNs a Evitar
 > 
 > - **VPNs gratuitas**: Monetizan vendiendo datos
@@ -585,6 +599,7 @@ flowchart TD
 > - **1 copia offline** (no conectada a red)
 > - **0 errores** verificados (testing de backups regular)
 >
+
 > [!tip] Implementación Práctica 3-2-1 **Nivel Básico:**
 > 
 > - **Original**: En computadora principal
@@ -641,6 +656,7 @@ flowchart TD
 > - **Órdenes gubernamentales** para acceso a datos
 > - **Ransomware** puede cifrar backups en la red
 >
+
 > [!info] Opciones de Encriptación **Client-side Encryption:**
 > 
 > - **VeraCrypt**: Contenedores encriptados locales
@@ -679,6 +695,7 @@ flowchart TD
 > - Amigos reportan mensajes extraños de tu cuenta
 > - Sesiones activas desde ubicaciones desconocidas
 >
+
 > [!tip] Herramientas de Detección **Análisis de Sistema:**
 > 
 > - **Malwarebytes**: Antimalware especializado
@@ -710,6 +727,7 @@ flowchart TD
 > 6. **Revisar cuentas bancarias** desde dispositivo separado
 > 7. **Activar alertas de fraude** en bancos y tarjetas de crédito
 >
+
 > [!warning] QUÉ NO HACER Durante Respuesta
 > 
 > - ❌ **No introducir más credenciales** en el dispositivo comprometido
@@ -736,6 +754,7 @@ flowchart TD
 > - **Actualizar TODOS los programas** y sistema operativo
 > - **Cambiar TODAS las contraseñas** desde dispositivo limpio
 >
+
 > [!info] Recuperación de Cuentas Comprometidas **Para Cada Cuenta Afectada:**
 > 
 > 1. **Cambiar contraseña inmediatamente**
@@ -758,6 +777,7 @@ flowchart TD
 > - **Medidas preventivas** que fallaron
 > - **Lecciones aprendidas** para el futuro
 >
+
 > [!info] Análisis Post-Incidente **Preguntas Críticas:**
 > 
 > - ¿Cómo ocurrió el compromiso inicial?
@@ -779,6 +799,7 @@ flowchart TD
 > 6. **Revisar cuentas bancarias** desde dispositivo separado
 > 7. **Activar alertas de fraude** en bancos y tarjetas de crédito
 >
+
 > [!warning] QUÉ NO HACER Durante Respuesta
 > 
 > - ❌ **No introducir más credenciales** en el dispositivo comprometido
@@ -805,6 +826,7 @@ flowchart TD
 > - **Actualizar TODOS los programas** y sistema operativo (ver [[Automatizaciones Digitales]])
 > - **Cambiar TODAS las contraseñas** desde dispositivo limpio
 >
+
 > [!info] Recuperación de Cuentas Comprometidas **Para Cada Cuenta Afectada:**
 > 
 > 1. **Cambiar contraseña inmediatamente**
@@ -827,6 +849,7 @@ flowchart TD
 > - **Medidas preventivas** que fallaron
 > - **Lecciones aprendidas** para el futuro
 >
+
 > [!info] Análisis Post-Incidente **Preguntas Críticas:**
 > 
 > - ¿Cómo ocurrió el compromiso inicial?
@@ -860,6 +883,7 @@ flowchart TD
 > - Pedir acceso WiFi como "visitante"
 > - Solicitar ayuda con "problemas técnicos"
 >
+
 > [!tip] Señales de Alerta en Comunicaciones **Red Flags Inmediatas:**
 > 
 > - **Urgencia artificial**: "Actúa ahora o perderás..."
@@ -870,6 +894,7 @@ flowchart TD
 > - **Solicitudes de información personal**: Por email/teléfono
 > - **Presión emocional**: Apelar a miedo, codicia, simpatía
 >
+
 > [!info] Técnicas de Verificación **Antes de Actuar:**
 > 
 > 1. **Pausa y reflexiona**: ¿Esperaba esta comunicación?
@@ -915,6 +940,7 @@ flowchart TD
 > - **Security Now**: Podcast técnico semanal
 > - **Threatpost**: Noticias de seguridad actualizadas
 >
+
 > [!tip] Plan de Educación Continua **Rutina Mensual:**
 > 
 > - Revisar configuraciones de seguridad de todas las cuentas
@@ -987,6 +1013,7 @@ flowchart TD
 > - Ransomware pidiendo crypto
 > - Social engineering relacionado con NFTs
 >
+
 > [!info] Estrategias de Adaptación **Mantente Informado:**
 > 
 > - Suscribirse a alertas de CISA/CERT
@@ -1072,6 +1099,7 @@ flowchart TD
 
 > [!quote] Principios Guía "La seguridad perfecta no existe, pero la seguridad razonable y adaptativa sí. El objetivo no es eliminar todos los riesgos, sino gestionarlos de manera consciente e informada, manteniendo un balance entre seguridad, privacidad y funcionalidad que permita vivir digitalmente con confianza."
 >
+
 > [!tip] Valores Fundamentales
 > 
 > - **Educación continua**: La tecnología evoluciona, nuestros conocimientos también (ver [[Hábitos de Estudio]])

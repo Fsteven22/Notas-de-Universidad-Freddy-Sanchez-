@@ -785,6 +785,7 @@ dg-publish: true
 > 
 > ∎
 > ```
+
 > [!example] Ejemplos **En ℝ²:**
 > 
 > ```

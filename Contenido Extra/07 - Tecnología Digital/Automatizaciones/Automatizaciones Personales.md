@@ -15,6 +15,7 @@
 > - 🎯 **Hábitos**: Ejercicio, alimentación, sueño
 > - 📱 **Digital**: Notificaciones, backups, organización
 >
+
 > [!warning] ⚠️ **Precauciones Importantes**
 > 
 > - No automatices decisiones que requieren reflexión personal
@@ -68,6 +69,7 @@ mindmap
 > - Revisa y ajusta trimestralmente
 > - Mantén un fondo de emergencia manual
 >
+
 > [!example] 🏠 **Automatizaciones del Hogar**
 > 
 > ### 🤖 **Casa Inteligente:**
@@ -99,6 +101,7 @@ mindmap
 >     Filtros aire       :0, 1
 > ```
 >
+
 > [!example] 🎯 **Automatizaciones de Hábitos**
 > 
 > ### 🏃‍♂️ **Salud y Bienestar:**
@@ -156,6 +159,7 @@ flowchart TD
 > - Activar WiFi al llegar a casa
 > - Backup de fotos cuando se conecta a WiFi
 >
+
 > [!info] 🏠 **Ecosistemas de Casa Inteligente**
 > 
 > |Ecosistema|Fortalezas|Ideal para|

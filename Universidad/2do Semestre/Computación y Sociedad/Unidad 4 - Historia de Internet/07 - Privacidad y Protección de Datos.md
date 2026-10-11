@@ -38,12 +38,14 @@ dg-publish: true
 > - Impedir la vida familiar.
 > - Intervenir en sus medios/datos digitales.
 >
+
 > [!note] 📋 Derecho a la privacidad en Internet
 > 
 > La tecnología ha hecho que la **definición convencional de información personalmente identificable quede obsoleta** — hoy en día, datos que antes no se consideraban "identificables" (patrones de navegación, ubicación, metadatos) pueden combinarse para identificar a una persona igual de bien que un nombre o número de cédula.
 > 
 > Marco legal (parafraseado del material de clase): las entidades **no podrán difundir, distribuir o comercializar** los datos personales contenidos en los sistemas de información desarrollados en el ejercicio de sus funciones, **salvo que haya mediado el consentimiento expreso** — por escrito o por un medio de autenticación similar — de los individuos a quienes hace referencia la información.
 >
+
 > [!warning] ⚠️ El impacto no es solo "molestia"
 > 
 > El acceso y uso no autorizado **genera impacto real**: se produce cada vez que un individuo gana acceso a un ordenador, red, archivo u otro recurso sin permiso y lo utiliza para beneficio propio, **dañando la honra y la economía** de las demás personas — no es un problema abstracto, tiene consecuencias concretas y medibles.
@@ -90,6 +92,7 @@ dg-publish: true
 > - **Confirmación** vía correo electrónico o teléfono (verificación en dos pasos).
 > - **Registro de IP** (detectar accesos desde ubicaciones inusuales).
 >
+
 > [!warning] ⚠️ Ninguna medida es suficiente sola
 > 
 > Ninguno de estos métodos es infalible por sí solo: una contraseña puede ser robada por phishing (ver nota de Ingeniería Social), un firewall no protege contra ingeniería social, y la biometría puede tener falsos positivos. La seguridad real viene de **combinar varias capas** — esto se conoce como *defensa en profundidad*.
@@ -154,30 +157,35 @@ flowchart TD
 > 2. Nombra dos tecnologías biométricas mencionadas en clase.
 > 3. Define con tus palabras el derecho a la privacidad.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > 1. Los **datos en tránsito** (y en algunos casos en reposo) — no protege el perímetro de la red (eso lo hace el firewall) ni verifica identidad (eso lo hacen contraseñas/biometría).
 > 2. Cualquiera de: huella digital, reconocimiento facial, reconocimiento de iris, geometría de la mano, reconocimiento de voz, reconocimiento dinámico de firma.
 > 3. Es el derecho humano fundamental a excluir o negar a otros el conocimiento de aspectos de la vida propia que solo a uno le incumben.
 >
+
 > [!question] 📋 Nivel 2 — Análisis de casos
 > 
 > 4. Una empresa tiene firewall y contraseñas fuertes, pero un empleado cae en un correo de phishing y entrega su contraseña. ¿Qué capa de protección falló y cuál NO habría evitado este ataque de todas formas?
 > 5. ¿Por qué se dice que una contraseña "no asegura que el dueño sea quien dice ser"? Relaciona tu respuesta con la biometría.
 > 6. Un sitio web usa HTTPS pero no tiene firewall en su servidor. ¿Qué tipo de ataque de la nota de Sabotaje seguiría siendo posible?
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 > 
 > 4. Falló la **capa humana** (el empleado reveló su contraseña) — ni el firewall ni la contraseña fuerte por sí sola habrían evitado esto, porque el ataque fue de ingeniería social, no técnico. La verificación en dos pasos sí podría haber mitigado el daño, ya que el atacante necesitaría también el segundo factor.
 > 5. Porque una contraseña solo demuestra que quien la ingresó **la conocía**, no que sea el dueño legítimo — pudo haberla robado, adivinado o comprado. La biometría, en cambio, intenta verificar una característica física o de comportamiento **propia de la persona**, difícil (aunque no imposible) de replicar.
 > 6. Un ataque de **DoS/DDoS** seguiría siendo posible: HTTPS protege la confidencialidad de los datos en tránsito, pero no evita que el servidor sea inundado de solicitudes — eso requiere mitigación específica de DDoS, no solo cifrado.
 >
+
 > [!question] 📋 Nivel 3 — Aplicación y síntesis
 > 
 > 7. Diseña un esquema de "defensa en profundidad" (mínimo 3 capas) para proteger una cuenta bancaria en línea, explicando qué amenaza específica de las notas anteriores mitiga cada capa.
 > 8. La nota menciona que "el acceso no autorizado daña la honra y la economía de las demás personas". Conecta esta idea con el cyberbullying y el cyberstalking: ¿por qué se agrupan como "consecuencias" y no como "amenazas técnicas"?
 > 9. Evalúa críticamente: ¿por qué la definición legal de "información personalmente identificable" quedar obsoleta (según la diapositiva) representa un desafío incluso para las medidas de protección técnica vistas en esta nota (firewall, encriptación, biometría)?
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 > 
 > 7. Ejemplo de esquema: (1) **Encriptación/HTTPS** en el sitio del banco, mitigando sniffers; (2) **Contraseña fuerte + verificación en dos pasos**, mitigando el robo de credenciales vía phishing; (3) **Firewall** en el lado del banco, mitigando accesos no autorizados a la red interna; (4) opcionalmente, **biometría** en la app móvil del banco, como capa adicional de verificación de identidad.
@@ -194,12 +202,14 @@ flowchart TD
 > - [ ] Puedo nombrar los principales métodos de protección vistos en clase.
 > - [ ] Puedo distinguir cyberbullying de cyberstalking.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo explicar qué protege específicamente cada método (biometría, encriptación, firewall, contraseñas).
 > - [ ] Puedo explicar por qué ninguna medida de protección es suficiente por sí sola.
 > - [ ] Puedo identificar qué método de protección mitigaría una amenaza específica de notas anteriores.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo diseñar un esquema de defensa en profundidad con varias capas justificadas.

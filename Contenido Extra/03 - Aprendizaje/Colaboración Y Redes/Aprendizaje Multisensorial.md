@@ -6,6 +6,7 @@
 
 > [!info] **Definición** El aprendizaje multisensorial es un enfoque educativo que involucra múltiples sentidos simultáneamente para facilitar la adquisición, procesamiento y retención de información. Se basa en el principio de que cuando el cerebro recibe información a través de varios canales sensoriales, se crean más conexiones neuronales, lo que resulta en un aprendizaje más profundo, duradero y efectivo.
 >
+
 > [!tip] **Principio Fundamental** ✨ Nuestro cerebro está diseñado para procesar información de manera multisensorial. Cuando integramos vista, oído, tacto, movimiento y otros sentidos en el proceso de aprendizaje, activamos múltiples redes neuronales que se refuerzan mutuamente, creando una "autopista de aprendizaje" más robusta y eficiente.
 
 ## La Neurociencia del Aprendizaje Multisensorial
@@ -63,6 +64,7 @@ graph TD
 > |**Excalidraw**|Diagramas a mano alzada|Naturalidad y flexibilidad|
 > |**Miro**|Pizarras visuales colaborativas|Brainstorming visual|
 >
+
 > [!tip] **2. Canal Auditivo** 👂
 > 
 > ### Fortalezas del Procesamiento:
@@ -99,6 +101,7 @@ graph TD
 >       Silencio estratégico
 > ```
 >
+
 > [!info] **3. Canal Kinestésico-Táctil** ✋
 > 
 > ### Principios del Aprendizaje Táctil:
@@ -122,6 +125,7 @@ graph TD
 > - Mejora de la **memoria procedural**
 > - Integración **sensorio-motora** más robusta
 >
+
 > [!warning] **4. Canal Olfativo** 👃
 > 
 > ### Neurociencia del Olfato:
@@ -140,6 +144,7 @@ graph TD
 > - **Asociaciones olfativas**: Usar mismo aroma durante estudio y examen
 > - **Ambientes diferenciados**: Aromas específicos para diferentes materias
 >
+
 > [!tip] **5. Canal Gustativo** 👅
 > 
 > ### Conexiones Neurológicas:
@@ -157,6 +162,7 @@ graph TD
 > - **Hidratación funcional**: Tés e infusiones con propiedades específicas
 > - **Asociaciones gustativas**: Sabor específico durante estudio de cada materia
 >
+
 > [!info] **6. Canal Propioceptivo** 🤸‍♂️
 > 
 > ### Definición:
@@ -177,6 +183,7 @@ graph TD
 > - **Fidget tools**: Objetos para mantener actividad motora fina
 > - **Brain gym**: Ejercicios específicos para integración cerebral
 >
+
 > [!warning] **7. Canal Vestibular** 🌀
 > 
 > ### Función en el Aprendizaje:
@@ -237,6 +244,7 @@ graph TD
 >     style G fill:#99ff99
 > ```
 >
+
 > [!warning] **Matemáticas y Ciencias** 🔢
 > 
 > ### Enfoque Concreto → Abstracto:
@@ -266,6 +274,7 @@ graph TD
 > - **Color Coding**: Códigos de color para diferentes operaciones
 > - **Story Problems**: Narrativas que contextualizan problemas
 >
+
 > [!tip] **Historia y Ciencias Sociales** 📚
 > 
 > ### Estrategia de Inmersión Temporal:
@@ -301,6 +310,7 @@ graph TD
 > - **Seguridad**: Exploración sin riesgos físicos
 > - **Repetibilidad**: Experiencias idénticas para todos los estudiantes
 >
+
 > [!warning] **Inteligencia Artificial Multisensorial** 🤖
 > 
 > ### Tendencias Emergentes:
@@ -378,6 +388,7 @@ graph TD
 > 4. **Practicar recorrido físico** mientras se repasa mentalmente
 > 5. **Crear historias multisensoriales** que conecten los puntos
 >
+
 > [!tip] **Sistema de Codificación Multisensorial** 🎨
 > 
 > ### Códigos por Tipo de Información:
@@ -484,6 +495,7 @@ graph TD
 > - **Cocina educativa**: Medidas, ciencia y experiencia sensorial
 > - **Jardinería infantil**: Conexión con naturaleza multisensorial
 >
+
 > [!info] **Infancia (6-12 años)** 🧒
 > 
 > ### Desarrollo de Habilidades Integradas:
@@ -500,6 +512,7 @@ graph TD
 > - **Microscopios y lupas**: Exploración visual detallada
 > - **Kits de ciencia**: Experimentos seguros y educativos
 >
+
 > [!warning] **Adolescencia (12-18 años)** 👦👧
 > 
 > ### Adaptación a Cambios Cerebrales:
@@ -516,6 +529,7 @@ graph TD
 > - **Presión social**: Ambientes seguros para experimentación
 > - **Pensamiento abstracto**: Puentes entre concreto y abstracto
 >
+
 > [!tip] **Adultos (18+ años)** 👨👩
 > 
 > ### Aprendizaje Multisensorial Profesional:
@@ -579,6 +593,7 @@ graph TD
 > - Mejor integración sensorial y regulación emocional
 > - Creatividad y pensamiento divergente más desarrollados
 >
+
 > [!warning] **Caso 2: Programa Orton-Gillingham** 📖
 > 
 > **Enfoque para Dislexia:**
@@ -644,6 +659,7 @@ graph TD
 >     style J fill:#99ccff
 > ```
 >
+
 > [!info] **Diferencias Individuales** 👥
 > 
 > ### Factores de Variabilidad:
@@ -699,6 +715,7 @@ graph TD
 > |**Historia**|Timeline físico + roleplay + multimedia|Artefactos, disfraces, documentales|
 > |**Arte**|Multimedia + experimentación + reflexión|Diversos materiales, crítica grupal|
 >
+
 > [!info] **Educación en Línea** 💻
 > 
 > ### Desafíos Únicos:

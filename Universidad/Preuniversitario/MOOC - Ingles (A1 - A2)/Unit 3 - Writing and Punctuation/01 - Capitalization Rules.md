@@ -836,6 +836,7 @@ dg-publish: true
 > 10. Doctor Smith said, "The test results are good."
 > ```
 >
+
 > [!example] Exercise 2: Capitalize Titles Correctly
 > 
 > **Capitalize these titles properly:**
@@ -864,6 +865,7 @@ dg-publish: true
 > 8. The Hunger Games
 > ```
 >
+
 > [!example] Exercise 3: True or False
 > 
 > **Decide if the capitalization is correct:**

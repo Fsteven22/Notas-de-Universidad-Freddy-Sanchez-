@@ -166,6 +166,7 @@ graph LR
 > - **Proximidad**: Respeto del espacio personal
 > - **Contacto visual**: Conexión y credibilidad
 >
+
 > [!warning] ⚠️ **Inconsistencias Comunes**
 > 
 > |Mensaje Verbal|Señal No Verbal|Impacto|
@@ -200,6 +201,7 @@ graph LR
 > **C** - **C**ontext awareness (Considerar el entorno) 
 > **T** - **T**iming apropiado (Momento y lugar adecuados)
 >
+
 > [!info] 🎨 **Visualización del Método** Imagina la comunicación como **construir un puente**: necesitas claridad en el diseño (C), observar el terreno (O), conocer quién lo cruzará (N), alinear todos los elementos (N), escuchar a los ingenieros (E), considerar el clima (C) y elegir el momento perfecto para construir (T).
 
 ## 🛠️ Herramientas y Técnicas Avanzadas

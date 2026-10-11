@@ -35,6 +35,7 @@ dg-publish: true
 > 
 > La sección 4.4 presenta un reporte auditivo sobre la creación de **Havaianas**, la marca brasileña de sandalias/chanclas que pasó de ser un producto popular local a un fenómeno de moda internacional. El reporte cubre varios ángulos: el origen de la marca, su plan publicitario, su crecimiento internacional, problemas del negocio, y el proceso de fabricación.
 >
+
 > [!example]- 🟢 Datos clave del caso (resumen)
 > 
 > - En sus inicios, en la década de 1960, **no todo Brasil** usaba Havaianas — el producto ganó popularidad progresivamente, no de forma inmediata y masiva.
@@ -43,6 +44,7 @@ dg-publish: true
 > - El precio internacional es considerablemente **más alto** que el precio dentro de Brasil.
 > - Gran parte del éxito internacional del producto se explica más por la **estrategia de marketing** que por el producto en sí mismo — un punto central del caso.
 >
+
 > [!tip]- 💡 Insider English — Origen de "flip-flop"
 > 
 > La palabra **flip-flop** es **onomatopéyica**: describe el sonido que hacen las sandalias al caminar (_flip-flop, flip-flop_). El inglés tiene varias palabras que imitan sonidos de esta manera, como **clap** (aplaudir, imita el sonido de las palmas) o **bark** (ladrar, imita el sonido del ladrido de un perro).
@@ -57,6 +59,7 @@ dg-publish: true
 > 
 > El objetivo del **writing skill** es identificar expresiones que marcan **razón** (por qué ocurre algo) y **consecuencia** (qué resultado tuvo), para poder usarlas tú mismo al escribir tu propia respuesta.
 >
+
 > [!note] 📋 Expresiones de razón y consecuencia
 > 
 > |Categoría|Expresiones típicas|Función|
@@ -64,6 +67,7 @@ dg-publish: true
 > |**Razón (because of)**|because, because of, due to, thanks to (fact that)|Explican **por qué** ocurre algo|
 > |**Consecuencia (so)**|so, as a result, consequently|Explican **qué pasó después** como resultado|
 >
+
 > [!tip]- 🖥️ Cómo identificarlas en un texto
 > 
 > Al leer un texto de opinión o análisis, subraya primero las expresiones de razón (suelen aparecer cerca de explicaciones o justificaciones) y luego las de consecuencia (suelen aparecer cerca de resultados o efectos observables). Este ejercicio de "encontrarlas y escribirlas" es exactamente lo que pide el libro antes de redactar tu propia respuesta.
@@ -80,6 +84,7 @@ dg-publish: true
 > 2. Una descripción de los negocios **antiguos** (los que existían antes).
 > 3. Las **razones** y **consecuencias** del cambio, usando el vocabulario de esta sección.
 >
+
 > [!example]- 🟢 Ejemplo de estructura (no es el texto del libro, es una guía)
 > 
 > 1ª oración: describe qué negocio nuevo llegó a tu zona. 2ª-3ª oración: explica, usando "because of" o "due to", por qué tuvo éxito o por qué cambió la dinámica local. 4ª-5ª oración: explica, usando "as a result" o "so", qué consecuencia tuvo esto para los negocios tradicionales o para la comunidad. Última oración: cierra con tu opinión personal sobre si el cambio fue positivo o negativo.
@@ -92,6 +97,7 @@ dg-publish: true
 > 
 > Esta es una tarea de speaking grupal: diseñar un anuncio para un producto (auto, cosméticos, producto alimenticio, joyería, equipo deportivo, programa de TV) aplicando conscientemente una o más técnicas publicitarias reales.
 >
+
 > [!note] 📋 Las 5 técnicas publicitarias del libro
 > 
 > |Técnica|Descripción|
@@ -102,6 +108,7 @@ dg-publish: true
 > |**4. Technology**|El producto usa o representa la tecnología más nueva y avanzada disponible.|
 > |**5. Guilt**|El anuncio genera en el cliente la sensación de estar "fallando" si no tiene el producto (por ejemplo, un asiento de auto más seguro para niños).|
 >
+
 > [!example]- 🟢 Ejemplo del libro
 > 
 > Los anuncios de relojes de alta gama suelen incluir atletas famosos en su publicidad — un ejemplo claro de la técnica de **endorsement**: una figura respetada (el deportista) transmite credibilidad y prestigio al producto.
@@ -119,6 +126,7 @@ dg-publish: true
 > |**C. Present**|Explicar la idea del grupo a un estudiante de otro grupo, pedir retroalimentación y refinar el anuncio con ese feedback.|
 > |**D. Agree**|Presentar el anuncio final a toda la clase, explicar qué técnica(s) usaron, y como clase decidir cuál anuncio fue el más efectivo y original.|
 >
+
 > [!tip]- 🖥️ Frases útiles para cada etapa
 > 
 > **Research:** _"The ad for... uses... / The people in the ad look like they... / Ads for... make me feel..."_
@@ -167,6 +175,7 @@ graph TD
 > 
 > **3.** ¿De dónde viene la palabra "flip-flop"?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** Endorsement
@@ -185,6 +194,7 @@ graph TD
 > 
 > **3.** Explica con tus palabras la diferencia entre "association of ideas" y "endorsement".
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** _"The store closed due to a lack of customers."_
@@ -203,6 +213,7 @@ graph TD
 > 
 > **3.** Reflexiona: ¿qué técnica publicitaria te parece más efectiva sobre ti mismo como consumidor, y por qué crees que funciona particularmente bien contigo?
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 1 el uso correcto y natural de al menos 4 expresiones de razón/consecuencia distintas, y coherencia entre descripción, razón y consecuencia (no frases sueltas sin conexión lógica).
@@ -217,12 +228,14 @@ graph TD
 > - [ ] Identifico expresiones de razón y consecuencia en un texto.
 > - [ ] Entiendo el caso Havaianas y sus puntos clave (crecimiento, precio, marketing).
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Uso "because of / due to" y "as a result / consequently" correctamente en mis propias oraciones.
 > - [ ] Puedo identificar qué técnica publicitaria se está usando en un anuncio real que veo.
 > - [ ] Escribo un texto de 100-120 palabras con estructura clara de razón-consecuencia.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Diseño y justifico un concepto publicitario completo (producto + técnica + idea central + slogan).
@@ -235,6 +248,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 4: Going Glocal, pp. 40–42.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Advertising & Media People]]

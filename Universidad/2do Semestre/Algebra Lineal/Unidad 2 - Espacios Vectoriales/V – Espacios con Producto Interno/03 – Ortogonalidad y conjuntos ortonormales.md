@@ -2556,6 +2556,7 @@ flowchart TD
 > El conjunto {w₁, w₂, w₃} es ortogonal.
 > ```
 >
+
 > [!example] 💪 Ejercicio 2: Normalización
 > 
 > **Problema:** Normalizar los siguientes vectores:
@@ -2613,6 +2614,7 @@ flowchart TD
 > {u₁, u₂} = {(1/√2, 1/√2, 0), (1/√6, −1/√6, 2/√6)}
 > ```
 >
+
 > [!example] 💪 Ejercicio 4: Proyección Ortogonal
 > 
 > **Problema:** Proyectar **y** = (1, 2, 3) sobre el subespacio W generado por:

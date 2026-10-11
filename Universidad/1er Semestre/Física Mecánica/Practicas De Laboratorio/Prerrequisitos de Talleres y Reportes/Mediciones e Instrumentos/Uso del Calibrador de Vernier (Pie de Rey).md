@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La precisión en la medición es el primer paso hacia la excelencia científica; el vernier es tu aliado en esta búsqueda." 📏
 >
+
 > [!info] El calibrador de Vernier, también conocido como pie de rey o calibre, es un instrumento de medición de alta precisión utilizado para medir dimensiones internas, externas, profundidades y alturas. Su invención revolucionó las mediciones mecánicas al permitir lecturas con precisión de hasta 0.02 mm o incluso 0.01 mm.
 
 ## 🔧 Anatomía del Calibrador
@@ -37,6 +38,7 @@ dg-publish: true
 > - Permite lecturas fraccionarias
 > - Precisión típica: 0.1 mm, 0.05 mm o 0.02 mm
 >
+
 > [!tip] **Tipos de Calibradores** 🌊
 > 
 > ### Según su Precisión:
@@ -63,6 +65,7 @@ dg-publish: true
 > - ❌ Requiere batería
 > - ❌ Más sensible a interferencias
 >
+
 > [!warning] **Principio del Vernier** ⚡
 > 
 > ### Fundamento Físico:
@@ -87,6 +90,7 @@ dg-publish: true
 > - **1 división del vernier** = **49/50 mm = 0.98 mm**
 > - **Diferencia** = 1.0 - 0.98 = **0.02 mm** ← Esta es la precisión
 >
+
 > [!success] 🔗 Método de Lectura (Vernier 0.1 mm)
 > 
 > ```mermaid
@@ -104,6 +108,7 @@ dg-publish: true
 >     style F fill:#f1f8e9
 > ```
 >
+
 > [!note] **Procedimiento de Lectura Paso a Paso** 📝
 > 
 > ### Para Vernier de 0.1 mm (10 divisiones):
@@ -162,6 +167,7 @@ dg-publish: true
 > - ❌ Medir superficies rugosas o sucias
 > - ❌ Inclinar el calibrador durante la medición
 >
+
 > [!tip] **Mediciones Internas** 📊
 > 
 > ### Procedimiento:
@@ -186,6 +192,7 @@ dg-publish: true
 > - Requiere mayor cuidado en el manejo
 > - La presión excesiva puede deformar piezas delgadas
 >
+
 > [!tip] **Medición de Profundidades** 📏
 > 
 > ### Procedimiento:
@@ -226,6 +233,7 @@ dg-publish: true
 > 
 > **Diámetro = 15.4 ± 0.05 mm** (incertidumbre = precisión/2)
 >
+
 > [!example] **Ejemplo 2: Lectura de Vernier 0.02 mm** 🔍
 > 
 > ### Situación:
@@ -247,6 +255,7 @@ dg-publish: true
 > 
 > La línea 35 en un vernier de 50 divisiones corresponde a 35/50 = 0.70 mm ✓
 >
+
 > [!example] **Ejemplo 3: Medición Interna** 🕳️
 > 
 > ### Problema:
@@ -278,6 +287,7 @@ dg-publish: true
 > 
 > **C**ero del vernier en escala principal **L**eer número completo anterior **A**ñadir coincidencia del vernier **V**erificar resultado coherente **E**xpresar con incertidumbre apropiada
 >
+
 > [!tip] **Reglas de Oro para el Vernier** 📏
 > 
 > 1. **Siempre verificar el cero** antes de medir
@@ -298,6 +308,7 @@ dg-publish: true
 > 5. **Precisión errónea**: Usar decimales incorrectos según el tipo de vernier
 > 6. **Cero mal ajustado**: No verificar que las mordazas cerradas den 0.00
 >
+
 > [!warning] **Cuidados del Instrumento** 🛠️
 > 
 > ### Mantenimiento Preventivo:
@@ -376,6 +387,7 @@ dg-publish: true
 > - **Aritmética básica**: Suma, multiplicación decimal
 > - **Conceptos de precisión**: Diferencia entre exactitud y precisión
 >
+
 > [!note] **Temas Siguientes**
 > 
 > - [[Micrómetro]] - Instrumento de mayor precisión

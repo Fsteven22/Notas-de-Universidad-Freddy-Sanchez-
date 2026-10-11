@@ -282,6 +282,7 @@ graph TD
 > - Técnicas de apoyo: ________________
 > - Plan B si surge dificultad: ________________
 >
+
 > [!tip] 🔍 **Lista de Verificación de Monitoreo**
 > 
 > **Durante el Estudio (cada 25 min):**
@@ -292,6 +293,7 @@ graph TD
 > - ☑️ ¿Necesito un descanso o cambio de método?
 > - ☑️ ¿Estoy cumpliendo con el cronograma?
 >
+
 > [!success] 📊 **Formato de Evaluación Post-Estudio**
 > 
 > **📈 Resultados Obtenidos:**

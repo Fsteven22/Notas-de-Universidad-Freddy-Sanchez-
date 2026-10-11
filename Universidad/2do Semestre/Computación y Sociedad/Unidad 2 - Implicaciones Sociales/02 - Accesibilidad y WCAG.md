@@ -57,6 +57,7 @@ dg-publish: true
 > 
 > 🔗 https://www.w3.org/TR/WCAG20/
 >
+
 > [!tip] 🕰️ Versiones de WCAG
 > 
 > WCAG ha evolucionado en varias versiones. El material del curso y el reglamento ecuatoriano se basan específicamente en **WCAG 2.0**.
@@ -80,6 +81,7 @@ dg-publish: true
 > |**U**nderstandable|Comprensible|¿Puede el usuario entender el contenido y su funcionamiento?|
 > |**R**obust|Robusto|¿Funciona el contenido en distintos navegadores y tecnologías de apoyo, presentes y futuras?|
 >
+
 > [!note] 🏆 Niveles de conformidad WCAG
 > 
 > WCAG define tres niveles de conformidad que indican qué tan accesible es un sitio web. Cada nivel es **acumulativo**: para alcanzar AA hay que cumplir también todos los criterios de A.
@@ -224,6 +226,7 @@ dg-publish: true
 > 
 > 🔗 http://accesibilidadweb.dlsi.ua.es/?menu=ecuador
 >
+
 > [!info] 📐 Alcance y mecanismo de cumplimiento
 > 
 > - **Aplica a:** contenidos web publicados en sitios del **sector público y privado** que presten servicios públicos.

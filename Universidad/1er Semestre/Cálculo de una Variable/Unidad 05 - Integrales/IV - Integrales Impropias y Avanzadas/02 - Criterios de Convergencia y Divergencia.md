@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] *"En el infinito matemático, no todas las sumas llegan a un destino finito. Los criterios de convergencia son las brújulas que nos guían en el vasto océano de las series infinitas, distinguiendo entre aquellas que convergen hacia un valor específico y las que divergen hacia el infinito o la oscilación eterna."*
 >
+
 > [!info]+ Definiciones Fundamentales 📏
 > ### Convergencia de Series
 > Una **serie infinita** $\sum_{n=1}^{\infty} a_n$ **converge** si la sucesión de sumas parciales $S_n = \sum_{k=1}^{n} a_k$ tiene un límite finito cuando $n \to \infty$.
@@ -21,6 +22,7 @@ dg-publish: true
 > ### Convergencia de Sucesiones
 > Una sucesión $\{a_n\}$ **converge** a $L$ si: $\lim_{n \to \infty} a_n = L$
 >
+
 > [!note] Clasificación de Comportamientos ⚖️
 > ### Tipos de Convergencia y Divergencia
 > ```mermaid
@@ -40,6 +42,7 @@ dg-publish: true
 >     style E fill:#fff3e0
 > ```
 >
+
 > [!tip] Criterios de Convergencia para Series Positivas 🔬
 > ### 1. Criterio de Comparación
 > **Sean $\sum a_n$ y $\sum b_n$ series con $a_n, b_n \geq 0$ y $a_n \leq b_n$ para $n$ suficientemente grande:**
@@ -66,6 +69,7 @@ dg-publish: true
 > - Si $L > 1$ → Serie diverge
 > - Si $L = 1$ → Criterio no decide
 >
+
 > [!example] Criterios Especiales y Avanzados 🧮
 > ### 5. Criterio de Condensación de Cauchy
 > **Para sucesiones decrecientes $a_n \geq a_{n+1} \geq 0$:**
@@ -130,6 +134,7 @@ dg-publish: true
 > Por tanto, converge (de hecho, converge a e-1)
 > ```
 >
+
 > [!success] Series Alternadas y Convergencia Condicional 🔄
 > ### Criterio de Leibniz (Series Alternadas)
 > **Para series de la forma $\sum_{n=1}^{\infty} (-1)^{n+1} a_n$ donde $a_n > 0$:**
@@ -158,6 +163,7 @@ dg-publish: true
 >     style F fill:#ffcdd2
 > ```
 >
+
 > [!warning] Estrategia para Aplicar Criterios ⚠️
 > ### Orden de Aplicación Recomendado
 > 
@@ -183,6 +189,7 @@ dg-publish: true
 > - **⚠️ No verificar las condiciones del criterio**
 > - **🔍 Concluir cuando el criterio no decide (L=1)**
 >
+
 > [!summary]+ Tabla Resumen de Criterios 📋
 > ### Criterios Principales
 > | Criterio | Condición | Conclusión | Mejor Uso |
@@ -214,6 +221,7 @@ dg-publish: true
 > **I** - Integral para funciones continuas decrecientes
 > **V** - Verificar convergencia absoluta en alternadas
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 1. **🔍 Condición necesaria**: Si $\lim a_n \neq 0$, la serie diverge
 > 2. **📊 Criterio apropiado**: Elegir según la estructura de la serie
@@ -239,6 +247,7 @@ dg-publish: true
 > - [[03 - Propiedades de la Sumatoria]]
 > - [[01 - Concepto y Definición Formal del Límite]]
 >
+
 > [!tip] Continuación del Tema
 > - [[Series de Potencias]]
 > - [[Series de Taylor y Maclaurin]]
@@ -253,6 +262,7 @@ dg-publish: true
 
 >[!quote] *"Cuando los límites de integración se extienden al infinito o cuando la función presenta discontinuidades, entramos en el reino de las integrales impropias. Aquí, los criterios de convergencia son nuestros guardianes, determinando si estas integrales tienen valores finitos o se pierden en la inmensidad del infinito matemático."*
 >
+
 > [!info]+ Definiciones Fundamentales 📏
 > ### Integrales Impropias - Tipos
 > Una **integral impropia** es aquella que tiene al menos una de estas características:
@@ -266,6 +276,7 @@ dg-publish: true
 > - $\int_a^b f(x)dx$ donde $f$ tiene discontinuidad en $a$, $b$, o punto interior
 > - $\int_a^b \frac{1}{(x-c)^p}dx$ donde $a < c < b$
 >
+
 > [!note] Clasificación de Convergencia y Divergencia 📊
 > ### Estados de una Integral Impropia
 > ```mermaid
@@ -285,6 +296,7 @@ dg-publish: true
 >     style E fill:#fff3e0
 > ```
 >
+
 > [!tip] Criterios de Convergencia para Integrales Tipo I (∞) 🔬
 > ### 1. Criterio de Comparación Directa
 > **Para funciones $f(x), g(x) \geq 0$ en $[a,\infty)$ con $0 \leq f(x) \leq g(x)$:**
@@ -308,6 +320,7 @@ dg-publish: true
 > 
 > **Resultado:** $\int_1^{\infty} \frac{1}{x^p}dx = \frac{1}{p-1}$ si $p > 1$
 >
+
 > [!example] Criterios para Integrales Tipo II (Discontinuidades) 🧮
 > ### 4. Criterio p en Discontinuidades
 > **Para discontinuidad en $x = a$:** $\int_a^b \frac{1}{(x-a)^p}dx$
@@ -375,6 +388,7 @@ dg-publish: true
 > La integral diverge debido a la rama negativa
 > ```
 >
+
 > [!success] Criterios Especiales y Avanzados 🎯
 > ### 7. Criterio de Dirichlet para Integrales
 > **Para $\int_a^{\infty} f(x)g(x)dx$ donde:**
@@ -412,6 +426,7 @@ dg-publish: true
 >     style I fill:#c8e6c9
 > ```
 >
+
 > [!warning] Estrategia y Errores Comunes ⚠️
 > ### Estrategia de Análisis
 > **1. Identificar el tipo de integral impropia:**
@@ -439,6 +454,7 @@ dg-publish: true
 > - **📈 Convergencia condicional**: Puede cambiar con reordenamiento
 > - **⚖️ Valor principal de Cauchy**: Para integrales simétricas divergentes
 >
+
 > [!summary]+ Tabla Resumen de Criterios 📋
 > ### Criterios Principales
 > | Criterio | Tipo | Condiciones | Uso Típico |
@@ -469,6 +485,7 @@ dg-publish: true
 > **I** - Intervalos: dividir en partes manejables
 > **A** - Asintótico: comportamiento en límites
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 1. **🔍 Identificación correcta**: Tipo I (∞) vs Tipo II (discontinuidades)
 > 2. **⚖️ Criterios p opuestos**: >1 para ∞, <1 para discontinuidades
@@ -495,6 +512,7 @@ dg-publish: true
 > - [[01 - Límites al Infinito y Sucesiones]]
 > - [[01 - Límites al Infinito y Sucesiones]]
 >
+
 > [!tip] Continuación del Tema
 > - [[01 - Integración Numérica]]
 > - [[01 - Métodos de Integración Definida]]

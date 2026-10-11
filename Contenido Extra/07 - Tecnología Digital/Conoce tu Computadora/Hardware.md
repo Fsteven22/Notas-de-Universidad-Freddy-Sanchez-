@@ -15,6 +15,7 @@
 > ## 📊 Componentes Principales  
 > Los componentes se pueden dividir en dos categorías principales: internos y externos.
 >
+
 > [!tip]+ **Componentes Internos**  
 > | Componente                  | Función Principal                                 |  
 > | :------------------------- | :----------------------------------------------- |  
@@ -24,6 +25,7 @@
 > | **Disco Duro (HDD/SSD)**                    | Almacenamiento permanente de datos, archivos y programas.             |  
 > | **Tarjeta Gráfica (GPU)**                   | Procesamiento de gráficos y video para la visualización.              |
 >
+
 > [!tip]+ **Componentes Externos (Periféricos)**  
 > | Componente                | Función Principal                    | Tipo                     |  
 > | :----------------------- | :--------------------------------- | :----------------------- |  

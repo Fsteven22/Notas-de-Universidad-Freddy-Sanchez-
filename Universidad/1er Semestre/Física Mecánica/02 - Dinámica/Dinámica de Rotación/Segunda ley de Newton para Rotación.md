@@ -144,6 +144,7 @@ dg-publish: true
 > > 
 > > El signo negativo indica rotación hacia la posición de equilibrio.
 >
+
 > [!warning] 🧮 Problema 2: Cilindro en Plano Inclinado **Enunciado**: Cilindro sólido de masa $M$ y radio $R$ rueda sin deslizar por un plano inclinado de ángulo $\theta$. Encontrar la aceleración del centro de masa.
 > 
 > > [!success] ✅ Solución **Fuerzas sobre el cilindro**:

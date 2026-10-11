@@ -266,6 +266,7 @@ graph TD
 > 
 > **Respuesta:** $V = 12\pi$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 2: Cilindro con Tapa Parabólica
 > 
 > **Problema:**
@@ -309,6 +310,7 @@ graph TD
 > 
 > **Respuesta:** $V = 8\pi$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 3: Cono (entre superficies)
 > 
 > **Problema:**
@@ -354,6 +356,7 @@ graph TD
 > 
 > **Respuesta:** $V = \frac{8\pi}{3}$ unidades cúbicas
 >
+
 > [!example] 📝 Ejemplo 4: Masa con Densidad Variable
 > 
 > **Problema:**

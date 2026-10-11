@@ -4,6 +4,7 @@
 
 > [!info] 🔬 La Ciencia del Hábito Los hábitos se forman a través del **bucle neurológico**: Señal → Rutina → Recompensa. El cerebro automatiza estas secuencias para conservar energía, creando senderos neuronales que se fortalecen con la repetición.
 >
+
 > [!tip] ⚡ Regla de los 21-66 Días
 > 
 > - **21 días**: Tiempo mínimo para establecer un hábito simple
@@ -33,6 +34,7 @@ flowchart LR
 > - **Emocionales**: Estados de ánimo (estrés - meditación)
 > - **Sociales**: Personas específicas (compañero - caminar)
 >
+
 > [!warning] ⚠️ Errores en la Formación de Hábitos
 > 
 > - Intentar cambios muy drásticos de una vez
@@ -129,6 +131,7 @@ pie title Distribución Nutricional Diaria
 > - **19:00 PM**: Cena ligera
 > - **21:00 PM**: Cierre ventana alimentaria
 >
+
 > [!warning] 🚫 Alimentos que Sabotean la Energía
 > 
 > - Azúcares refinados (picos de glucosa)
@@ -152,6 +155,7 @@ pie title Distribución Nutricional Diaria
 > - Incrementar caminata a 15 minutos
 > - Introducir yoga básico
 >
+
 > [!info] 🔥 Intermedio (30-45 min/día) **Estructura semanal:**
 > 
 > - **Lun/Mié/Vie**: Cardio + Fuerza
@@ -159,6 +163,7 @@ pie title Distribución Nutricional Diaria
 > - **Sáb**: Actividad recreativa
 > - **Dom**: Descanso activo
 >
+
 > [!warning] ⚡ Avanzado (45-60 min/día)
 > 
 > - Periodización planificada
@@ -186,6 +191,7 @@ pie title Distribución Nutricional Diaria
 > - **Investigar**: ¿Dónde siento esto en mi cuerpo?
 > - **No-identificación**: No soy esta emoción
 >
+
 > [!tip] 📝 Journaling Terapéutico **Prompts diarios:**
 > 
 > - ¿Qué me generó alegría hoy?
@@ -262,6 +268,7 @@ radar
 > 
 > - Nike Training, Freeletics, Seven
 >
+
 > [!info] 📚 Técnicas de Refuerzo **Accountability:**
 > 
 > - Compañero de hábitos
@@ -278,6 +285,7 @@ radar
 > 3. **Ajusta**: Modifica el sistema, no el objetivo
 > 4. **Recomienza**: Al día siguiente, no el lunes
 >
+
 > [!tip] 🎯 Regla del 80/20 Si cumples tus hábitos el 80% del tiempo, estás en el camino correcto. La perfección no es el objetivo, la consistencia sí.
 
 ## 🔗 Referencias
@@ -416,6 +424,7 @@ graph TD
 > - **Entrenamiento de fuerza**: Rutina completa
 > - **Deportes**: Tenis, natación, artes marciales
 >
+
 > [!tip] 🎯 Beneficios Cognitivos Inmediatos **Efectos en las Primeras 2-4 Horas:**
 > 
 > - **Aumento del BDNF** (factor neurotrófico) hasta 200%
@@ -477,6 +486,7 @@ graph TD
 > - **Opción 3**: Smoothie verde + proteína + semillas de chía
 > - **Opción 4**: Quinoa + frutas + almendras + miel
 >
+
 > [!info] ☕ Gestión de Cafeína **Protocolo de Cafeína Estratégica:**
 > 
 > - **Timing**: 90-120 minutos post-despertar (no inmediatamente)

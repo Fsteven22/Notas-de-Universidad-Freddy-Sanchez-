@@ -107,6 +107,7 @@ dg-publish: true
 > • d es la métrica sobre X
 > ```
 >
+
 > [!example] Verificación de Axiomas
 > 
 > **Ejemplo: Métrica euclidiana en ℝ**
@@ -171,6 +172,7 @@ dg-publish: true
 > • Proviene de un producto interno: d(x,y) = ||x - y||₂
 > ```
 >
+
 > [!example] Ejemplos Numéricos
 > 
 > **En ℝ:**
@@ -238,6 +240,7 @@ dg-publish: true
 > • Distancia del taxi: 3 + 2 = 5
 > ```
 >
+
 > [!example] Ejemplos de Métrica del Taxi
 > 
 > **En ℝ²:**
@@ -305,6 +308,7 @@ dg-publish: true
 >                     = 4
 > ```
 >
+
 > [!example] Comparación de las Tres Métricas
 > 
 > **Mismo ejemplo con las tres métricas:**
@@ -377,6 +381,7 @@ dg-publish: true
 >              la suma es ≥ 1 ✓
 > ```
 >
+
 > [!example] Ejemplos de Métrica Discreta
 > 
 > **En cualquier conjunto:**
@@ -483,6 +488,7 @@ dg-publish: true
 > • Las bolas cerradas son conjuntos cerrados
 > ```
 >
+
 > [!example] Ejemplos de Bolas
 > 
 > **En ℝ con métrica euclidiana:**
@@ -729,6 +735,7 @@ dg-publish: true
 >    Todos los axiomas se verifican ✓
 > ```
 >
+
 > [!example] Ejercicio 2: Calcular Distancias
 > 
 > **Instrucciones:** Calcula las distancias indicadas.
@@ -761,6 +768,7 @@ dg-publish: true
 >              4 ≤ 5 ≤ 7 ✓
 > ```
 >
+
 > [!example] Ejercicio 3: Bolas en Diferentes Métricas
 > 
 > **Instrucciones:** Describe las bolas unitarias en ℝ² con centro en el origen.
@@ -794,6 +802,7 @@ dg-publish: true
 >      B₂ (círculo) contiene B₁ (diamante) en su interior
 > ```
 >
+
 > [!example] Ejercicio 4: Métrica Discreta
 > 
 > **Instrucciones:** En X = {a, b, c, d} con métrica discreta d.
@@ -877,6 +886,7 @@ dg-publish: true
 > ✗ Diferentes tasas de convergencia
 > ```
 >
+
 > [!tip] Completitud
 > 
 > **Sucesión de Cauchy:**
@@ -915,6 +925,7 @@ dg-publish: true
 > Ejemplo: ℝ es la completación de ℚ
 > ```
 >
+
 > [!tip] Isometrías
 > 
 > **Definición:**

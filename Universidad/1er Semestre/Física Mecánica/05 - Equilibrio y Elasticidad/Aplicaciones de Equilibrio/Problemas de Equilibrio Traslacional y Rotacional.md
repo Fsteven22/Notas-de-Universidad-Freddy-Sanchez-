@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En equilibrio, las fuerzas se anulan y los torques se equilibran; la estática es la sinfonía perfecta entre la traslación y la rotación en reposo." ⚖️
 >
+
 > [!info] Los problemas de equilibrio traslacional y rotacional forman la base de la estática, donde los cuerpos permanecen en reposo o en movimiento rectilíneo uniforme. Estos problemas requieren la aplicación simultánea de las condiciones de equilibrio de fuerzas y torques para determinar fuerzas desconocidas, puntos de aplicación y condiciones de estabilidad.
 
 ## ⚖️ Condiciones de Equilibrio
@@ -30,6 +31,7 @@ dg-publish: true
 > |ΣFᵧ = 0|No hay aceleración vertical|vᵧ = constante|
 > |Ambas cumplen|Equilibrio traslacional completo|\vec{v} = constante|
 >
+
 > [!tip] **Equilibrio Rotacional** 🔄
 > 
 > ### Condición Fundamental:
@@ -49,6 +51,7 @@ dg-publish: true
 > - **Dirección**: Determinada por la regla de la mano derecha
 > - **Unidades**: N·m (Newton-metro)
 >
+
 > [!warning] **Equilibrio Estático Completo** 🏗️
 > 
 > ### Condiciones Simultáneas:
@@ -70,6 +73,7 @@ dg-publish: true
 > - Altura del CG afecta la estabilidad
 > - Base más amplia proporciona mayor estabilidad
 >
+
 > [!success] 🔗 Estrategia de Análisis
 > 
 > ```mermaid
@@ -88,6 +92,7 @@ dg-publish: true
 >     style G fill:#e8f5e8
 > ```
 >
+
 > [!note] **Tipos de Apoyos y Reacciones** 🔧
 > 
 > ### Apoyos Simples:
@@ -153,6 +158,7 @@ dg-publish: true
 > 15. Verifica signos y unidades
 > 16. Comprueba coherencia física
 >
+
 > [!tip] **Estrategias Avanzadas** 🎯
 > 
 > ### **Elección Inteligente del Punto de Referencia**:
@@ -201,6 +207,7 @@ dg-publish: true
 > 
 > **Verificación** (momentos respecto a B): ΣΜᵦ = 0: Rₐ(8) - W(4) - P(5) = 412.5(8) - 200(4) - 500(5) = 0 ✓
 >
+
 > [!example] **Problema 2: Viga en Voladizo** 🏗️
 > 
 > ### Enunciado:
@@ -223,6 +230,7 @@ dg-publish: true
 > 
 > **Equilibrio rotacional** (respecto a A): ΣΜₐ = 0: Mₐ - W(3) - Wᵈ(2) = 0 Mₐ = 300(3) + 400(2) = 900 + 800 **Mₐ = 1700 N·m** (antihorario)
 >
+
 > [!example] **Problema 3: Estructura con Cable** 🎪
 > 
 > ### Enunciado:
@@ -251,6 +259,7 @@ dg-publish: true
 > 
 > **Reacciones en A**: Rₐₓ = 115.47/2 = **57.74 N** (→) Rₐᵧ = 200 - 115.47(√3/2) = **100 N** (↑)
 >
+
 > [!example] **Problema 4: Escalera Apoyada en Pared** 🪜
 > 
 > ### Enunciado:
@@ -299,6 +308,7 @@ dg-publish: true
 > 7. Aplicar ΣF = 0 y ΣΜ = 0
 > 8. Máximo 3 barras cortadas por sección
 >
+
 > [!tip] **Centros de Gravedad Compuestos** ⚖️
 > 
 > ### Para áreas compuestas:
@@ -312,6 +322,7 @@ dg-publish: true
 > - **Semicírculo**: CG a 4R/(3π) desde el diámetro
 > - **Cuarto de círculo**: CG a 4R/(3π) de cada eje
 >
+
 > [!tip] **Estabilidad de Estructuras** 🏗️
 > 
 > ### Criterios de Estabilidad:

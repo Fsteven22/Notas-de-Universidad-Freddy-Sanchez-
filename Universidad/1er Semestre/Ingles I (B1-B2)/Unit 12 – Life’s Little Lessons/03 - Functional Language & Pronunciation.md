@@ -116,6 +116,7 @@ dg-publish: true
 > • I've set a goal to...
 > ```
 >
+
 > [!tip] 🔥 Talking About Progress & Effort
 > 
 > **Describing your effort:**
@@ -162,6 +163,7 @@ dg-publish: true
 > ✅ I'm 100% focused on this
 > ```
 >
+
 > [!example] 💬 Natural Conversation Examples
 > 
 > **Conversation 1: Talking about a personal goal**
@@ -267,6 +269,7 @@ dg-publish: true
 > ✅ Why don't you give it one more shot?
 > ```
 >
+
 > [!tip] 🌟 More Ways to Encourage
 > 
 > **Recognizing effort:**
@@ -313,6 +316,7 @@ dg-publish: true
 > ✅ You deserve this!
 > ```
 >
+
 > [!example] 💬 Advice & Encouragement Dialogues
 > 
 > **Dialogue 1: Friend feeling discouraged**
@@ -402,6 +406,7 @@ dg-publish: true
 > ✅ WORK it out (not work it OUT)
 > ```
 >
+
 > [!tip] 🔗 Linking in Functional Phrases
 > 
 > **What is linking?**
@@ -452,6 +457,7 @@ dg-publish: true
 > 5. Find_out_about_it → "Fin-dou-ta-bou-tit"
 > ```
 >
+
 > [!success] 🎯 Intonation Patterns
 > 
 > **Rising intonation (questions & uncertainty):**
@@ -549,6 +555,7 @@ dg-publish: true
 > ✅ I wish I were confident
 > ```
 >
+
 > [!example] 💬 Natural Ways to Express Regret
 > 
 > **Soft regrets:**
@@ -622,6 +629,7 @@ dg-publish: true
 > 10. I've made progress in my pronunciation and confidence
 > ```
 >
+
 > [!success] 🎤 Drill 2: Giving Encouragement
 > 
 > **Scenario: Your friend says these things. Respond!**
@@ -649,6 +657,7 @@ dg-publish: true
 > - Calm/supportive: "I know it's hard, but don't give up"
 > - Motivating: "Think how proud you'll be when you succeed!"
 >
+
 > [!example] 🎤 Drill 3: Wishes & Hypotheticals
 > 
 > **Complete these sentences about yourself:**
@@ -763,6 +772,7 @@ dg-publish: true
 > you think."
 > ```
 >
+
 > [!success] 🌟 Situation 2: Encouraging a Colleague
 > 
 > **Your colleague is struggling with a project:**
@@ -791,6 +801,7 @@ dg-publish: true
 > - You've got this
 > - Keep going
 >
+
 > [!example] 🌟 Situation 3: Talking About Personal Goals
 > 
 > **Casual conversation at a coffee break:**

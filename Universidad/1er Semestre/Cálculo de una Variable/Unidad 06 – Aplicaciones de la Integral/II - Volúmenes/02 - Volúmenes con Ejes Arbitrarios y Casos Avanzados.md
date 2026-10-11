@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!info] 💡 **Concepto Central** Esta nota extiende los métodos básicos de volúmenes de revolución (disco, arandelas, capas cilíndricas) a casos más complejos: revolución alrededor de ejes arbitrarios, integración respecto a y, y situaciones problemáticas que requieren estrategias avanzadas.
 >
+
 > [!warning] 🔗 **Prerrequisito** Esta nota asume familiaridad con los conceptos básicos de [[01 - Volúmenes de Sólidos de Revolución]] - métodos de disco, arandelas y capas cilíndricas alrededor de ejes x e y.
 
 ## 🎯 Revolución Alrededor de Ejes Arbitrarios
@@ -134,6 +135,7 @@ dg-publish: true
 > 
 > **Revolución alrededor del eje y**: Para $x = f(y)$ en $[c,d]$: $$V = 2\pi \int_c^d y \cdot f(y) , dy$$
 >
+
 > [!tip] 🍩 **Método de Arandelas con dy**
 > 
 > **Entre curvas $x = f(y)$ y $x = g(y)$**: $$V = \pi \int_c^d \left[f(y)^2 - g(y)^2\right] dy$$

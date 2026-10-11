@@ -126,6 +126,7 @@ dg-publish: true
 > 
 > $$f(x_0 + h_1, y_0 + h_2) = f(x_0, y_0) + f_x(x_0, y_0)h_1 + f_y(x_0, y_0)h_2 + o(|h|)$$
 >
+
 > [!example] 🔵 Definición: Diferenciabilidad en $\mathbb{R}^n$
 > 
 > **Generalización:** Una función $f: \mathbb{R}^n \to \mathbb{R}$ es diferenciable en $\mathbf{x}_0 = (x_1^0, x_2^0, \ldots, x_n^0)$ si:
@@ -1734,6 +1735,7 @@ dg-publish: true
 > 
 > c) $z = e^{xy}$ en $(0, 1)$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Verificar diferenciabilidad:**
@@ -1776,6 +1778,7 @@ dg-publish: true
 > 
 > c) $f(x,y,z) = xyz + x^2 + y^2 + z^2$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **8. Problemas teóricos:**
@@ -1856,6 +1859,7 @@ dg-publish: true
 > 
 > $$\boxed{\mathbf{n} = (2, 4, -1)}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $f(x,y) = \frac{xy^2}{x^2+y^2}$ en $(0,0)$
@@ -1913,6 +1917,7 @@ dg-publish: true
 > 
 > $$\boxed{df = (3x^2y^2 + y)dx + (2x^3y + x)dy}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **8a)** Demostración de continuidad

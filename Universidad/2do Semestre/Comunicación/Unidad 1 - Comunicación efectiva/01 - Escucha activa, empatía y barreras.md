@@ -593,6 +593,7 @@ mindmap
 > - [ ] Distingo las 3 barreras del syllabus con ejemplo propio.
 > - [ ] Explico oír vs escuchar y los 6 elementos del proceso.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Mapeo las 6 técnicas CCL a CARE sin mirar.

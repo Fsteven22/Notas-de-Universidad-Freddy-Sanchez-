@@ -167,6 +167,7 @@ graph TD
 > - **Relaciones geométricas:** forma del recipiente
 > - **Velocidades de flujo:** dV/dt constante o variable
 >
+
 > [!example] Problema: Tanque Cónico **Enunciado:** Un tanque cónico invertido (vértice hacia abajo) tiene radio superior 3 m y altura 6 m. Se llena con agua a 2 m³/min. ¿A qué velocidad sube el nivel cuando el agua tiene 4 m de profundidad?
 > 
 > **Solución:**
@@ -303,6 +304,7 @@ flowchart TD
 > 
 > **Aplicación:** En tuberías de sección variable, si conocemos cómo cambia el área y la velocidad en un punto, podemos encontrar la velocidad en otro punto.
 >
+
 > [!example] Problema: Flujo en Tubería Cónica **Enunciado:** Agua fluye por una tubería que se estrecha linealmente. En el extremo ancho (r₁ = 5 cm) la velocidad es 2 m/s y aumenta a 0.1 m/s². En el extremo angosto (r₂ = 2 cm), ¿cuál es la aceleración del agua?
 > 
 > **Solución:**
@@ -329,6 +331,7 @@ flowchart TD
 > 
 > **Si el ángulo de incidencia cambia:** n₁cos(θ₁)(dθ₁/dt) = n₂cos(θ₂)(dθ₂/dt)
 >
+
 > [!example] Problema: Prisma Rotatorio **Enunciado:** Un rayo de luz incide en un prisma de índice n = 1.5. Si el prisma rota de modo que el ángulo de incidencia aumenta a 0.02 rad/s cuando θ₁ = 30°, ¿a qué velocidad cambia el ángulo de refracción?
 > 
 > **Solución:**
@@ -357,6 +360,7 @@ flowchart TD
 
 > [!tip] Mnemotecnia: "RELACIONA" **R**ecurre al diagrama siempre **E**cuación que vincule las variables **L**a derivada implícita aplicar **A**ntes de sustituir, derivar **C**uidado con los signos de dirección **I**dentifica lo conocido y lo buscado **O**rganiza los datos por momento **N**o sustituyas números al principio **A**naliza si la respuesta tiene sentido
 >
+
 > [!tip] Estrategia de Resolución "RAPID" **R**ead - Leer cuidadosamente e identificar qué cambia **A**ssign - Asignar variables a todas las cantidades **P**icture - Dibujar diagrama con variables etiquetadas **I**mplicit - Derivar implícitamente la ecuación de relación **D**etermine - Determinar la respuesta sustituyendo valores
 
 ### Plantilla de Análisis
@@ -405,12 +409,16 @@ flowchart TD
 
 > [!quote] [[Aplicaciones de Derivadas]] Marco general de aplicaciones del cálculo diferencial
 >
+
 > [!quote] [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] Fundamento matemático de la derivación implícita
 >
+
 > [!quote] [[01 - Derivación Implícita]] Técnicas para derivar ecuaciones no despejadas
 >
+
 > [!quote] [[01 - Problemas de Optimización]] Otros tipos de problemas aplicados de cálculo
 >
+
 > [!quote] [[Modelado Matemático]] Principios para traducir problemas reales a matemáticas
 
 ## Notas Recomendadas para Complementar 📖

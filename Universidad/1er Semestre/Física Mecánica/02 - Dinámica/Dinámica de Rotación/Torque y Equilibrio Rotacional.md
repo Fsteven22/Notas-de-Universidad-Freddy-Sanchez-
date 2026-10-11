@@ -147,6 +147,7 @@ dg-publish: true
 > > 
 > > **Cálculo**: $$\tau = (0.5\text{ m})(50\text{ N})\sin(90°) = (0.5)(50)(1) = 25\text{ N⋅m}$$
 >
+
 > [!warning] 🧮 Problema 2: Torque Máximo y Mínimo en Puerta **Enunciado**: Una fuerza de 10 N se aplica a una puerta a 0.8 m de las bisagras. Determinar el torque máximo y mínimo posible.
 > 
 > > [!success] ✅ Solución **Datos**: $F = 10\text{ N}$, $r = 0.8\text{ m}$

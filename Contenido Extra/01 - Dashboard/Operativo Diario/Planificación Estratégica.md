@@ -78,6 +78,7 @@ graph TD
 > |---|---|---|
 > |**Factores del Entorno**|- Tendencias favorables<br>- Nuevos mercados<br>- Tecnologías emergentes|- Competencia<br>- Cambios regulatorios<br>- Riesgos económicos|
 >
+
 > [!tip] 🎯 **Herramientas de Análisis**
 > 
 > - **Análisis PESTEL**: Político, Económico, Social, Tecnológico, Ecológico, Legal

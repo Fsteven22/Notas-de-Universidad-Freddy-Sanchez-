@@ -451,6 +451,7 @@ dg-publish: true
 > • Present Perfect: It has always cost $50.
 > ```
 >
+
 > [!success] Type 2: Past Simple = Past Participle (Different from Base)
 > 
 > **Pattern: Two different forms**
@@ -547,6 +548,7 @@ dg-publish: true
 > • She has taught math for 10 years. (present perfect)
 > ```
 >
+
 > [!success] Type 3: All Three Forms Different
 > 
 > **Pattern: Three distinct forms**
@@ -641,6 +643,7 @@ dg-publish: true
 > • She has written many poems. (present perfect)
 > ```
 >
+
 > [!success] Type 4: Base Form = Past Participle (Different Past Simple)
 > 
 > **Pattern: First and third forms are the same**
@@ -896,6 +899,7 @@ dg-publish: true
 > 10. I (irregular)
 > ```
 >
+
 > [!example] Exercise 2: Write the Past Simple Form
 > 
 > **Complete with the correct past simple form:**
@@ -928,6 +932,7 @@ dg-publish: true
 > 10. thought (irregular: think → thought → thought)
 > ```
 >
+
 > [!example] Exercise 3: Write the Past Participle Form
 > 
 > **Complete with the correct past participle (for present perfect):**
@@ -960,6 +965,7 @@ dg-publish: true
 > 10. seen (irregular: see → saw → seen)
 > ```
 >
+
 > [!example] Exercise 4: Correct the Mistakes
 > 
 > **Find and correct the verb errors:**
@@ -992,6 +998,7 @@ dg-publish: true
 > 10. They have come home. (plural subject needs "have")
 > ```
 >
+
 > [!example] Exercise 5: Fill in All Three Forms
 > 
 > **Complete the table:**
@@ -1020,6 +1027,7 @@ dg-publish: true
 > |choose|chose|chosen|elegir|
 > |put|put|put|poner|
 >
+
 > [!example] Exercise 6: Pronunciation Practice (-ed endings)
 > 
 > **Identify the -ed sound: /t/, /d/, or /ɪd/**
@@ -1255,6 +1263,7 @@ dg-publish: true
 > • dived (regular) - British English
 > ```
 >
+
 > [!warning] Commonly Confused Irregular Verb Pairs
 > 
 > **1. LIE vs LAY**
@@ -1426,6 +1435,7 @@ dg-publish: true
 > • By the time you arrive, we will have eaten.
 > ```
 >
+
 > [!info] Irregular Verbs in Passive Voice
 > 
 > **Formation: be + past participle**
@@ -1952,6 +1962,7 @@ dg-publish: true
 > • Celebrate your progress!
 > ```
 >
+
 > [!tip] Daily Practice Routine (15 minutes)
 > 
 > **Morning (5 minutes):**

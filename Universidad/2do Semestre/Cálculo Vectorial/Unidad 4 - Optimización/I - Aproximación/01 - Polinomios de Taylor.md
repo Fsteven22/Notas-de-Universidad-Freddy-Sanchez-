@@ -169,6 +169,7 @@ graph TB
 > 
 > _Nota: El error crece al alejarnos del origen_
 >
+
 > [!example] 🎨 Aproximación de sen(x)·cos(y) en (0,0)
 > 
 > **Función:** f(x,y) = sen(x)·cos(y)
@@ -251,6 +252,7 @@ graph TB
 > - $\nabla f(\mathbf{a})^T \mathbf{h}$ = término lineal
 > - $\mathbf{h}^T H_f(\mathbf{a}) \mathbf{h}$ = término cuadrático
 >
+
 > [!example] 📐 Ejemplo con Notación Matricial
 > 
 > Para f(x,y) = x² + xy + 2y² en (1,1):
@@ -291,6 +293,7 @@ graph TB
 > |D < 0|**Punto silla**|
 > |D = 0|Indeterminado|
 >
+
 > [!example] 🎲 Ejemplo de Optimización
 > 
 > **Función:** f(x,y) = x² - 2xy + 3y²
@@ -358,6 +361,7 @@ graph TB
 > - Disminuye con mayor orden del polinomio
 > - Depende de las derivadas de la función
 >
+
 > [!example] 📊 Comparación de Errores
 > 
 > Para f(x,y) = e^(x+y) en (0,0):

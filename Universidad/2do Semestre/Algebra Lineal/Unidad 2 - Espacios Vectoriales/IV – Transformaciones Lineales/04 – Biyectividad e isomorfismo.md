@@ -233,6 +233,7 @@ dg-publish: true
 > 
 > **Q.E.D.**
 >
+
 > [!success] Teorema Fundamental de Clasificación **TEOREMA 2: Clasificación dimensional** ⭐⭐⭐
 > 
 > Sean $V$ y $W$ espacios vectoriales de dimensión finita sobre el mismo campo $\mathbb{F}$.
@@ -307,6 +308,7 @@ dg-publish: true
 > 
 > $$\boxed{\dim_{\mathbb{F}}(V) = n \implies V \cong \mathbb{F}^n}$$
 >
+
 > [!success] Teorema de Preservación de Propiedades **TEOREMA 3: Los isomorfismos preservan estructura**
 > 
 > Sea $T: V \to W$ isomorfismo. Entonces $T$ preserva:
@@ -352,6 +354,7 @@ dg-publish: true
 > 
 > **(8):** $T(\vec{0}) = T(0 \cdot \vec{v}) = 0 \cdot T(\vec{v}) = \vec{0}$ ✓
 >
+
 > [!success] Teoremas de Isomorfismo de Noether **PRIMER TEOREMA DE ISOMORFISMO:** ⭐⭐⭐
 > 
 > Sea $T: V \to W$ transformación lineal. Entonces:

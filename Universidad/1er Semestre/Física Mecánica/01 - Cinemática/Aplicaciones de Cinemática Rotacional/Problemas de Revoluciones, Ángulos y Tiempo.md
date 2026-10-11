@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En cada revolución se escriben infinitos ángulos, y en cada ángulo vive la historia completa del tiempo que lo creó." 🌀
 >
+
 > [!info] Los problemas de revoluciones, ángulos y tiempo forman la base fundamental para comprender el movimiento rotacional. Estas magnitudes están íntimamente relacionadas y nos permiten describir completamente el estado rotacional de cualquier objeto, desde una partícula hasta planetas enteros, conectando la geometría circular con la física temporal.
 
 ## 🔄 Magnitudes Angulares Fundamentales
@@ -28,6 +29,7 @@ dg-publish: true
 > |Revoluciones|N|rev|1 rev = 360° = 2π rad|
 > |Arco de circunferencia|s|m|s = rθ (θ en rad)|
 >
+
 > [!tip] **Velocidad Angular (ω)** 🌪️
 > 
 > ### Características Principales:
@@ -44,6 +46,7 @@ dg-publish: true
 > - **1 rad/s = 30/π rpm ≈ 9.549 rpm**
 > - **Velocidad lineal**: v = ωr (para movimiento circular)
 >
+
 > [!warning] **Aceleración Angular (α)** ⚡
 > 
 > ### Características Principales:
@@ -60,6 +63,7 @@ dg-publish: true
 > - **α = 0**: Rotación uniforme (ω constante)
 > - **Relación lineal**: a_tangencial = αr
 >
+
 > [!success] 🔗 Ecuaciones Cinemáticas Rotacionales
 > 
 > ```mermaid
@@ -76,6 +80,7 @@ dg-publish: true
 >     style F fill:#f0f8ff
 > ```
 >
+
 > [!note] **Relaciones Temporales y Periódicas** 📐
 > 
 > ### Magnitudes Periódicas:
@@ -149,6 +154,7 @@ dg-publish: true
 > - θ = ωt = 377 × 150 = 56,550 rad
 > - Verificación: θ = 9000 × 2π = 56,549 rad ✓
 >
+
 > [!example] **Problema 2: Rotación Uniformemente Acelerada** ⚡
 > 
 > ### Enunciado:
@@ -175,6 +181,7 @@ dg-publish: true
 > 
 > - N = θ/(2π) = 100.5/(2π) = 16 revoluciones
 >
+
 > [!example] **Problema 3: Análisis Temporal Complejo** 🕐
 > 
 > ### Enunciado:

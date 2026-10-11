@@ -12,6 +12,7 @@
 > [!tip]- ## 📊 Tipos de Redes y Conceptos Clave
 > Las redes se clasifican según su tamaño y alcance geográfico.
 >
+
 > [!tip]+ **Tipos de Redes**
 >
 > | Tipo | Descripción | Alcance Típico |
@@ -23,6 +24,7 @@
 >
 > > [!info] 🌐 **Internet es una WAN gigante:** Internet es la mayor WAN, una red global que conecta millones de redes más pequeñas en todo el planeta.
 >
+
 > [!tip]+ **Protocolos y Servicios Clave**
 >
 > | Concepto | Descripción |

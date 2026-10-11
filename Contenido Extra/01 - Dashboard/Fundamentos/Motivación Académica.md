@@ -72,6 +72,7 @@ graph TB
 > - **E**valuate (Evaluar progreso)
 > - **R**eadjust (Reajustar según necesidad)
 >
+
 > [!warning] Evitar Metas Contraproducentes
 > 
 > - Metas demasiado ambiciosas que generen frustración
@@ -133,6 +134,7 @@ flowchart LR
 > - **Falta de claridad**: No saber por dónde empezar
 > - **Baja autoeficacia**: Dudas sobre las propias capacidades
 >
+
 > [!tip] Estrategias Anti-Procrastinación **Técnica de los 2 Minutos** ⏱️: Si toma menos de 2 minutos, hazlo ahora **Método Swiss Cheese** 🧀: Hacer "agujeros" aleatorios en tareas grandes **Regla del 25%** 📊: Comprometerse solo con 25% del tiempo total disponible **Pomodoro Micro** 🍅: Sesiones de 10-15 minutos para empezar
 
 ### Síndrome del Impostor Académico
@@ -144,6 +146,7 @@ flowchart LR
 > - Miedo constante a ser "descubierto" como fraude
 > - Comparación constante con compañeros "más inteligentes"
 >
+
 > [!tip] Estrategias de Manejo
 > 
 > - **Documentar logros**: Lista de éxitos y aprendizajes
@@ -160,6 +163,7 @@ flowchart LR
 > - **Reducción de logro**: Sensación de incompetencia
 > - **Síntomas físicos**: Problemas de sueño, dolores de cabeza
 >
+
 > [!tip] Estrategias de Prevención y Recuperación
 > 
 > - **Equilibrio vida-estudio**: Tiempo para hobbies y relaciones
@@ -258,12 +262,14 @@ graph TD
 > - **Desafíos**: Presión social, incertidumbre sobre el futuro
 > - **Estrategias**: Conexión entre materias y vida real, mentores
 >
+
 > [!info] Universidad/Pregrado
 > 
 > - **Enfoque**: Desarrollo de expertise y pensamiento crítico
 > - **Desafíos**: Mayor autonomía, carga de trabajo intensa
 > - **Estrategias**: Networking profesional, proyectos aplicados
 >
+
 > [!info] Posgrado/Investigación
 > 
 > - **Enfoque**: Contribución original al conocimiento
@@ -302,6 +308,7 @@ graph TD
 > - **Participación** en clases/foros/grupos de estudio
 > - **Búsqueda activa** de recursos adicionales
 >
+
 > [!info] Indicadores Cualitativos
 > 
 > - **Nivel de disfrute** durante el estudio (escala 1-10)
@@ -325,8 +332,10 @@ graph TD
 
 > [!warning] "He perdido el sentido de por qué estudio esto" **Síntomas**: Desconexión emocional, rutina mecánica, cuestionamiento constante **Solución**: Ejercicio del "¿Por qué?" profundo, conexión con valores personales, exploración de aplicaciones prácticas
 >
+
 > [!warning] "Siento que no soy lo suficientemente inteligente" **Síntomas**: Comparación constante, evitación de desafíos, autodiálogo negativo **Solución**: Growth mindset, celebración de progreso vs perfección, mentoría y support groups
 >
+
 > [!warning] "La carga de trabajo me abruma completamente" **Síntomas**: Parálisis por análisis, procrastinación extrema, ansiedad **Solución**: Priorización ruthless, técnica del Swiss Cheese, búsqueda de ayuda profesional
 
 ### Plan de Emergencia Motivacional
@@ -370,6 +379,7 @@ graph TD
 > - Achievement Goal Theory (Dweck & Leggett)
 > - Social Cognitive Theory (Bandura)
 >
+
 > [!tip] Podcasts y Videos
 > 
 > - "The Tim Ferriss Show" (episodios sobre aprendizaje)

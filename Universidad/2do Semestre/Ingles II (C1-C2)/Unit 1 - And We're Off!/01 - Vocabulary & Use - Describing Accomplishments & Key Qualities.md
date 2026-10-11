@@ -109,6 +109,7 @@ dg-publish: true
 > |**reliable**|**reliability**|La consistencia de cumplir lo que se promete.|
 > |**determined**|**determination**|La persistencia activa frente a dificultades.|
 >
+
 > [!warning] ⚠️ Errores comunes con estas palabras
 > 
 > |❌ Incorrecto|✅ Correcto|Explicación|
@@ -137,6 +138,7 @@ dg-publish: true
 > 4. She didn't let her early failures stop her. She knew she had to __________________ to reach the next level. _(push herself / work with her hands / run a marathon)_
 > 5. Better training helped the whole team __________________ and perform at a higher level. _(reach their potential / set a goal / get a lot of likes)_
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 > 
 > 6. face her fear
@@ -157,6 +159,7 @@ dg-publish: true
 > 9. Being __________________ is essential in design roles. _(creative / creativity)_
 > 10. The manager appreciated her __________________ to succeed despite the obstacles. _(determined / determination)_
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 > 
 > 11. ambition _(sustantivo — después de "great")_
@@ -177,6 +180,7 @@ dg-publish: true
 > 14. Me enorgullece haber roto el récord del equipo.
 > 15. Necesitas salir de tu zona de confort para crecer profesionalmente.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 > 
 > 16. _I set a goal for myself to become fluent in English before graduating._

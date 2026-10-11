@@ -94,6 +94,7 @@ dg-publish: true
 > ✅ Bananas are exported to Europe.
 > ```
 >
+
 > [!note] 🔍 Cuándo OMITIR "by + agent"
 > 
 > **Casos donde NO usamos "by":**
@@ -124,6 +125,7 @@ dg-publish: true
 >     style D fill:#ffe1e1
 > ```
 >
+
 > [!success] 🎨 Negative & Questions
 > 
 > **Forma negativa:**
@@ -224,6 +226,7 @@ dg-publish: true
 > |**two days ago**|The order was shipped two days ago|
 > |**on Monday**|The products were transported on Monday|
 >
+
 > [!tip] 🔄 Active to Passive Transformation
 > 
 > **Paso a paso:**
@@ -275,6 +278,7 @@ dg-publish: true
 >           (no "by someone" - desconocido/no relevante)
 > ```
 >
+
 > [!success] 🎨 Negative & Questions (Past)
 > 
 > **Forma negativa:**

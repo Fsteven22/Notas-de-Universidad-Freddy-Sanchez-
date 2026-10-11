@@ -435,6 +435,7 @@ dg-publish: true
 > 
 > **Conclusión:** $$\boxed{\lim_{(x,y) \to (0,0)} \frac{x^3 + y^3}{x^2 + y^2} = 0}$$
 >
+
 > [!example] 📝 Ejemplo 12: Límite que Depende del Camino
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{x^2y}{x^4 + y^2}$$
@@ -449,6 +450,7 @@ dg-publish: true
 > 
 > $$\boxed{\text{El límite NO existe}}$$
 >
+
 > [!example] 📝 Ejemplo 13: Límite Trigonométrico
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{\sin(x^2 + y^2)}{x^2 + y^2}$$
@@ -463,6 +465,7 @@ dg-publish: true
 > 
 > Por lo tanto: $$\boxed{\lim_{(x,y) \to (0,0)} \frac{\sin(x^2 + y^2)}{x^2 + y^2} = 1}$$
 >
+
 > [!example] 📝 Ejemplo 14: Límite Exponencial
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{e^{x+y} - 1}{x + y}$$
@@ -477,6 +480,7 @@ dg-publish: true
 > 
 > **Respuesta:** $\boxed{1}$
 >
+
 > [!example] 📝 Ejemplo 15: Límite con Valor Absoluto
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{|xy|}{\sqrt{x^2 + y^2}}$$
@@ -586,6 +590,7 @@ dg-publish: true
 > 
 > Cuando $(x,y,z) \to (0,0,0)$: $\rho \to 0$
 >
+
 > [!example] 📝 Ejemplo 17: Límite en Tres Variables
 > 
 > $$\lim_{(x,y,z) \to (0,0,0)} \frac{xyz}{x^2 + y^2 + z^2}$$
@@ -604,6 +609,7 @@ dg-publish: true
 > 
 > **Conclusión:** $$\boxed{\lim_{(x,y,z) \to (0,0,0)} \frac{xyz}{x^2 + y^2 + z^2} = 0}$$
 >
+
 > [!example] 📝 Ejemplo 18: Límite en 3D que NO Existe
 > 
 > $$\lim_{(x,y,z) \to (0,0,0)} \frac{x^2 + y^2}{x^2 + y^2 + z^2}$$
@@ -651,6 +657,7 @@ dg-publish: true
 > - ¿Todos los términos tienden a cero suficientemente rápido?
 > - ¿Las cotas son correctas?
 >
+
 > [!tip] 🎯 Errores Comunes a Evitar
 > 
 > ❌ **Error 1:** Confiar solo en los ejes coordenados
@@ -677,6 +684,7 @@ dg-publish: true
 > 
 > - $\lim_{(x,y) \to (0,0)} f(x,y)$ no requiere que $f(0,0)$ esté definida
 >
+
 > [!tip] 🔍 Caminos Útiles para Probar
 > 
 > |Tipo de Camino|Ecuación|Cuándo Usar|
@@ -732,6 +740,7 @@ dg-publish: true
 > 
 > **Respuesta:** $\boxed{2}$
 >
+
 > [!example] 📝 Ejemplo 20: Límite Logarítmico
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{\ln(1 + x^2 + y^2)}{x^2 + y^2}$$
@@ -746,6 +755,7 @@ dg-publish: true
 > 
 > Por lo tanto: $$\boxed{\lim_{(x,y) \to (0,0)} \frac{\ln(1 + x^2 + y^2)}{x^2 + y^2} = 1}$$
 >
+
 > [!example] 📝 Ejemplo 21: Límite con Sen y Cos
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{1 - \cos(x^2 + y^2)}{x^2 + y^2}$$
@@ -770,6 +780,7 @@ dg-publish: true
 > 
 > **Respuesta:** $\boxed{0}$
 >
+
 > [!example] 📝 Ejemplo 22: Límite Exponencial Complejo
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{e^{xy} - 1 - xy}{x^2y^2}$$
@@ -790,6 +801,7 @@ dg-publish: true
 > 
 > $$\boxed{\lim_{(x,y) \to (0,0)} \frac{e^{xy} - 1 - xy}{x^2y^2} = \frac{1}{2}}$$
 >
+
 > [!example] 📝 Ejemplo 23: Límite que Requiere Análisis Cuidadoso
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{x^3 - y^3}{x^2 + y^2}$$
@@ -812,6 +824,7 @@ dg-publish: true
 > 
 > **Conclusión:** $$\boxed{\lim_{(x,y) \to (0,0)} \frac{x^3 - y^3}{x^2 + y^2} = 0}$$
 >
+
 > [!example] 📝 Ejemplo 24: Límite con Raíces
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{xy}{\sqrt{x^2 + y^2}}$$
@@ -830,6 +843,7 @@ dg-publish: true
 > 
 > $$\boxed{\lim_{(x,y) \to (0,0)} \frac{xy}{\sqrt{x^2 + y^2}} = 0}$$
 >
+
 > [!example] 📝 Ejemplo 25: Un Límite Tramposo
 > 
 > $$\lim_{(x,y) \to (0,0)} \frac{x^2y}{x^4 + 3y^2}$$
@@ -882,6 +896,7 @@ dg-publish: true
 > 
 > c) $\lim_{(x,y) \to (0,0)} \frac{x^4 + y^4}{x^2 + y^2}$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Límites con indeterminaciones:**
@@ -916,6 +931,7 @@ dg-publish: true
 > 
 > c) $f(x,y) = \frac{xy}{x + y}$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Límites desafiantes:**
@@ -1014,6 +1030,7 @@ dg-publish: true
 > 
 > **Respuesta:** $\boxed{0}$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $\lim_{(x,y) \to (0,0)} \frac{x^2y}{x^4 + y^2}$
@@ -1079,6 +1096,7 @@ dg-publish: true
 > 
 > Los límites iterados son **diferentes**, y ya sabemos que el límite doble **NO existe**.
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **7a)** $\lim_{(x,y) \to (0,0)} \frac{x^3 + y^3}{x^2 + xy + y^2}$

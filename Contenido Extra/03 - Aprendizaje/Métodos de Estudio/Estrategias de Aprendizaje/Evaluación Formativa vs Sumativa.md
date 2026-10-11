@@ -163,6 +163,7 @@
 > |**Metacognición**|Conciencia del propio aprendizaje|Autonomía y autorregulación|
 > |**Motivación intrínseca**|Enfoque en crecimiento personal|Mayor engagement académico|
 >
+
 > [!warning]- ## ⚠️ Desafíos y Limitaciones de Cada Enfoque
 > 
 > ### 🌱 Limitaciones de la Evaluación Formativa
@@ -239,6 +240,7 @@
 >
 > [!books]- ## 📚 Referencias y Profundización
 > 
+
 > [!quote]- ### Referencias Académicas
 > 
 > - Black, P., & Wiliam, D. (2018). "Classroom Assessment and Pedagogy". _Assessment in Education_, 25(6), 551-575.
@@ -247,6 +249,7 @@
 > - Shepard, L. A. (2019). "Classroom Assessment to Support Teaching and Learning". _Annals of the American Academy_, 683(1), 183-200.
 > - Wiliam, D. (2017). _Embedded Formative Assessment: Strategies for Classroom Assessment_. Solution Tree Press.
 > 
+
 > [!note]- ### Notas Recomendadas **Prerrequisitos:**
 > 
 > - [[Metacognición]] - Autoconciencia del proceso de aprendizaje

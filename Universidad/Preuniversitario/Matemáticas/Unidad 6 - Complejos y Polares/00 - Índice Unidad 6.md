@@ -74,12 +74,14 @@ graph TD
 > - [ ] Represento $z = a + bi$ en el plano de Argand y ubico $(r, \theta)$ en papel polar.
 > - [ ] Convierto entre forma binómica, forma polar y coordenadas cartesianas.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Opero complejos en la forma adecuada (rectangular para sumas, polar para productos y potencias).
 > - [ ] Grafico curvas polares con tabla, simetría y dominio, e identifico su familia.
 > - [ ] Calculo áreas polares con $A = \frac{1}{2}\int r^2\,d\theta$ y clasifico cónicas por $e$.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Demuestro identidades con conjugado, módulo y De Moivre.

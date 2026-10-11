@@ -61,6 +61,7 @@ dg-publish: true
 > - "El vector $\vec{w}$ está en el span de ${\vec{v}_1, \ldots, \vec{v}_k}$"
 > - "$\vec{w} \in \text{span}{\vec{v}_1, \ldots, \vec{v}_k}$"
 >
+
 > [!note] 🎯 Interpretación Geométrica
 > 
 > ### En $\mathbb{R}^2$
@@ -343,6 +344,7 @@ dg-publish: true
 > 
 > **En símbolos:** $\text{span}{\vec{v}_1, \ldots, \vec{v}_k} \subseteq \text{span}{\vec{w}_1, \ldots, \vec{w}_m}$
 >
+
 > [!note] 🟡 Teorema: Equivalencia con Span
 > 
 > **Teorema:** Un vector $\vec{w}$ es combinación lineal de ${\vec{v}_1, \ldots, \vec{v}_k}$ si y solo si:
@@ -452,6 +454,7 @@ dg-publish: true
 > 
 > $$\boxed{\vec{w} = 2\vec{v}_1 + \vec{v}_2 + \vec{v}_3}$$
 >
+
 > [!example] 📍 Ejemplo 7: Caso sin Solución
 > 
 > **Pregunta:** ¿Es $\vec{w} = \begin{pmatrix} 1 \ 2 \ 3 \end{pmatrix}$ combinación lineal de:
@@ -484,6 +487,7 @@ dg-publish: true
 > 
 > El vector $\vec{w}$ tiene $z = 3 \neq 0$, por lo que no está en ese plano.
 >
+
 > [!example] 📍 Ejemplo 8: Infinitas Soluciones
 > 
 > **Pregunta:** ¿Es $\vec{w} = \begin{pmatrix} 3 \ 6 \end{pmatrix}$ combinación lineal de:
@@ -572,6 +576,7 @@ dg-publish: true
 > 3. **Rango:** $\text{rango}(A) = \dim(\text{Col}(A))$ = dimensión del espacio generado por las columnas
 >     
 >
+
 > [!example] 📍 Ejemplo 9: Interpretación Matricial
 > 
 > **Sistema:** $A\vec{x} = \vec{b}$ donde
@@ -886,6 +891,7 @@ dg-publish: true
 > 
 > **Nota:** Este método solo funciona si $A$ es invertible (vectores linealmente independientes).
 >
+
 > [!example] 📍 Ejemplo 10: Usando Inversa
 > 
 > **Expresar $\vec{w} = \begin{pmatrix} 7 \ 11 \end{pmatrix}$ como combinación de:**
@@ -1011,6 +1017,7 @@ dg-publish: true
 > 
 > c) ¿El vector cero es siempre combinación lineal de cualquier conjunto de vectores?
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Sistemas con parámetros:**
@@ -1053,6 +1060,7 @@ dg-publish: true
 > 
 > b) Encuentra todas las matrices $2 \times 2$ que son combinación de $\begin{pmatrix} 1 & 0 \ 0 & -1 \end{pmatrix}$ y $\begin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}$
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **9. Problemas teóricos:**
@@ -1139,6 +1147,7 @@ dg-publish: true
 > 
 > $$\boxed{\text{SÍ, estos vectores generan todo } \mathbb{R}^2}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** ¿Para qué $k$ es $\begin{pmatrix} k \ 2k \end{pmatrix}$ combinación de $\begin{pmatrix} 1 \ 2 \end{pmatrix}$ y $\begin{pmatrix} 2 \ 3 \end{pmatrix}$?
@@ -1187,6 +1196,7 @@ dg-publish: true
 > 
 > $$\boxed{\text{SÍ: } p(x) = 1 \cdot q(x) + 2 \cdot r(x)}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **9a)** Demostración de transitividad

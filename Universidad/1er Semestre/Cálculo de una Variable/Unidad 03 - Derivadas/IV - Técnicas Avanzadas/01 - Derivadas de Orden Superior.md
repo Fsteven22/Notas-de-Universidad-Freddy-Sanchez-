@@ -80,6 +80,7 @@ flowchart TD
 > 
 > **Resultado general**: $\frac{d^n}{dx^n}[e^x] = e^x$
 >
+
 > [!example] 🔢 Ejemplo 3: Exponencial con Base Diferente
 > **Encontrar** $f^{(n)}(x)$ para: $f(x) = e^{ax}$ donde $a$ es constante
 > 
@@ -151,6 +152,7 @@ flowchart LR
 > 
 > **Resultado general**: $\frac{d^n}{dx^n}[\ln(x)] = \frac{(-1)^{n+1}(n-1)!}{x^n}$
 >
+
 > [!example] 🔢 Ejemplo 6: Potencias Generales
 > **Encontrar** $f^{(n)}(x)$ para: $f(x) = x^m$ donde $m$ es constante
 > 
@@ -187,6 +189,7 @@ flowchart LR
 > - $n=2$: $(fg)'' = f''g + 2f'g' + fg''$
 > - $n=3$: $(fg)''' = f'''g + 3f''g' + 3f'g'' + fg'''$
 >
+
 > [!example] 🔢 Ejemplo 7: Aplicación de Leibniz
 > **Encontrar** $\frac{d^3}{dx^3}[x^2 e^x]$
 > 
@@ -211,6 +214,7 @@ flowchart LR
 > - $n=1$: $\frac{dy}{dx} = f'(g(x)) \cdot g'(x)$
 > - $n=2$: $\frac{d^2y}{dx^2} = f''(g(x)) \cdot [g'(x)]^2 + f'(g(x)) \cdot g''(x)$
 >
+
 > [!example] 🔢 Ejemplo 8: Segunda Derivada con Regla de la Cadena
 > **Encontrar** $\frac{d^2}{dx^2}[\sin(x^2)]$
 > 
@@ -241,6 +245,7 @@ flowchart LR
 > - **Aceleración**: $a(t) = s''(t) = v'(t)$
 > - **Jerk**: $j(t) = s'''(t) = a'(t)$ (tasa de cambio de aceleración)
 >
+
 > [!example] 🔢 Ejemplo 9: Análisis Completo de Función
 > **Analizar** $f(x) = x^4 - 4x^3 + 6x^2$
 > 
@@ -263,6 +268,7 @@ flowchart LR
 > 
 > Las derivadas de orden superior son los **coeficientes** de la serie de Taylor
 >
+
 > [!example] 🔢 Ejemplo 10: Serie de Taylor de $e^x$
 > **Desarrollar** $e^x$ alrededor de $x = 0$
 > 
@@ -322,6 +328,7 @@ flowchart LR
 > - **No verificar puntos de inflexión**: $f''(x) = 0$ no garantiza inflexión
 > - **Ignorar discontinuidades**: En las derivadas de orden superior
 >
+
 > [!tip] 💡 Estrategias de Éxito
 > 
 > ### Cálculo Sistemático

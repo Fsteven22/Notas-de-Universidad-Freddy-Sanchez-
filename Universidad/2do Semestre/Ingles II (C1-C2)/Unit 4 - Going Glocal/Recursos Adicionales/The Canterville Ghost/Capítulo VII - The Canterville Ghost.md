@@ -39,6 +39,7 @@ dg-publish: true
 > |**epilogue**|epílogo|
 > |**to owe (someone) a lot**|deberle mucho a alguien|
 >
+
 > [!tip]- 💡 Un final abierto y agridulce
 > 
 > Oscar Wilde cierra la historia sin revelar por completo qué le dijo el fantasma a Virginia — una decisión narrativa deliberada que deja un aire de misterio incluso después de resuelto el conflicto principal. El mensaje final gira en torno a temas universales (la vida, la muerte y el amor) sin caer en explicaciones simples, lo cual le da a la obra un cierre más maduro del que su inicio cómico sugería.
@@ -85,6 +86,7 @@ dg-publish: true
 > 
 > [1] Wilde, Oscar. _The Canterville Ghost_. 1887. (Obra de dominio público).
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[Capítulo VI - The Canterville Ghost]]

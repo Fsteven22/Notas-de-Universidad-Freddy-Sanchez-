@@ -8,6 +8,7 @@ dg-publish: true
 
 > [!info] 📖 Definición Principal El **impulso** es una magnitud física vectorial que describe el **efecto acumulado** de una fuerza sobre un objeto durante un intervalo de tiempo específico. Está directamente relacionado con el cambio en el momento lineal del objeto y es fundamental para analizar colisiones y eventos de corta duración.
 >
+
 > [!example] 🎯 Aplicaciones Clave
 > 
 > - 🚗 **Sistemas de seguridad**: Airbags y zonas de deformación
@@ -236,6 +237,7 @@ graph TB
 > 4. ⚖️ Aplicar teorema impulso-momentum
 > 5. ✅ Verificar unidades y sentido físico
 >
+
 > [!warning] ❌ Errores Comunes
 > 
 > - Confundir impulso con trabajo (J ≠ W)
@@ -243,6 +245,7 @@ graph TB
 > - Olvidar considerar todas las fuerzas externas
 > - Mezclar sistemas de referencia
 >
+
 > [!success] ✅ Buenas Prácticas
 > 
 > - Usar gráficas F vs t para fuerzas variables

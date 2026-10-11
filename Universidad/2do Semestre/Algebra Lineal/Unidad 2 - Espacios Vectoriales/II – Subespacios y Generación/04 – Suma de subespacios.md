@@ -66,6 +66,7 @@ dg-publish: true
 > - $U \oplus W$ - suma directa (caso especial)
 > - $\langle U, W \rangle$ - subespacio generado
 >
+
 > [!warning] ⚠️ Diferencia con Unión
 > 
 > **CUIDADO:** $U + W \neq U \cup W$ en general
@@ -79,6 +80,7 @@ dg-publish: true
 > 
 > **Regla:** La unión NO es subespacio (no cerrada bajo suma)
 >
+
 > [!example] 📝 Ejemplos Básicos
 > 
 > **1. Rectas en $\mathbb{R}^2$:**
@@ -148,6 +150,7 @@ dg-publish: true
 > - Suma directa: los subespacios son "independientes"
 > - No directa: hay "solapamiento" entre subespacios
 >
+
 > [!tip] 🛠️ Cómo Verificar Suma Directa
 > 
 > **Método 1:** Verificar $U \cap W = {\vec{0}}$
@@ -206,6 +209,7 @@ dg-publish: true
 > |**$U = W$**|$\dim(U + W) = \dim(U)$|Mismo subespacio|
 > |**Máxima intersección**|$\dim(U \cap W) = \min(\dim U, \dim W)$|Un subespacio contiene al otro|
 >
+
 > [!example] 📝 Ejemplo de Cálculo Detallado
 > 
 > En $\mathbb{R}^4$:

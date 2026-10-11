@@ -84,6 +84,7 @@
 >      Analogías
 > ```
 >
+
 > [!warning]- ## ⚠️ Retos y Limitaciones del Design Thinking
 > 
 > ### 🚧 Desafíos Comunes en la Implementación
@@ -126,6 +127,7 @@
 > - **Políticas públicas**: Servicios gubernamentales más efectivos
 > - **Sostenibilidad**: Diseño de soluciones ambientalmente responsables
 >
+
 > [!note]- ## 📝 Conexión con Análisis y Resolución de Problemas (ARP)
 > 
 > ### 🔗 Integración Curricular
@@ -189,6 +191,7 @@
 >
 > [!books]- ## 📚 Referencias y Profundización
 >
+
 > [!quote]- ### Referencias Académicas
 > 
 > - Brown, T. (2019). _Change by Design: How Design Thinking Transforms Organizations_. Harper Business.
@@ -197,6 +200,7 @@
 > - Plattner, H., Meinel, C., & Leifer, L. (2016). _Design Thinking Research: Understanding Innovation_. Springer.
 > - Liedtka, J., & Ogilvie, T. (2011). _Designing for Growth: A Design Thinking Tool Kit for Managers_. Columbia Business School.
 > 
+
 > [!note]- ### Notas Recomendadas **Prerrequisitos:**
 > 
 > - [[Pensamiento Crítico]] - Base analítica para evaluación de problemas

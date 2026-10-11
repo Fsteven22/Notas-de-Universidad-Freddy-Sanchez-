@@ -139,6 +139,7 @@ graph TB
 > 
 > **Círculo de radio R centrado en (h, k):** $$\mathbf{r}(t) = \langle h + R\cos(t), k + R\sin(t) \rangle$$
 >
+
 > [!example] 🌀 Espiral
 > 
 > **Espiral de Arquímedes:** $$\mathbf{r}(t) = \langle t\cos(t), t\sin(t) \rangle, \quad t \geq 0$$
@@ -153,6 +154,7 @@ graph TB
 > 
 > El radio crece exponencialmente
 >
+
 > [!example] 📈 Parábola
 > 
 > **Forma paramétrica:** $$\mathbf{r}(t) = \langle t, t^2 \rangle, \quad t \in \mathbb{R}$$
@@ -188,6 +190,7 @@ graph TB
 > 
 > Hélice de radio 2, que sube 2π unidades por cada vuelta completa.
 >
+
 > [!example] 📊 Curva de Intersección
 > 
 > **Intersección de cilindro y plano:**
@@ -201,6 +204,7 @@ graph TB
 > - x² + y² = 4cos²(t) + 4sin²(t) = 4 ✓
 > - z = 2cos(t) = x ✓
 >
+
 > [!example] 🎯 Trayectoria de Proyectil
 > 
 > **Física: Lanzamiento parabólico**
@@ -244,6 +248,7 @@ graph TB
 > 
 > $$0 < |t - a| < \delta \implies |\mathbf{r}(t) - \mathbf{L}| < \varepsilon$$
 >
+
 > [!example] ✏️ Ejemplos de Límites
 > 
 > **Ejemplo 1:**
@@ -311,6 +316,7 @@ graph TB
 > - Apunta en la dirección del movimiento
 > - Su magnitud representa la rapidez de cambio
 >
+
 > [!example] ✏️ Ejemplos de Derivadas
 > 
 > **Ejemplo 1: Círculo**
@@ -362,6 +368,7 @@ graph TB
 > 
 > **6. Regla de la cadena:** $$\frac{d}{dt}[\mathbf{r}(f(t))] = \mathbf{r}'(f(t)) \cdot f'(t)$$
 >
+
 > [!example] 🎯 Aplicación de Reglas
 > 
 > **Ejemplo: Derivada de la norma al cuadrado**
@@ -394,6 +401,7 @@ graph TB
 > 
 > $$\mathbf{r}^{(n)}(t) = \langle x^{(n)}(t), y^{(n)}(t), z^{(n)}(t) \rangle$$
 >
+
 > [!example] ✏️ Ejemplo de Derivadas de Orden Superior
 > 
 > $$\mathbf{r}(t) = \langle t^3, \cos(2t), e^t \rangle$$
@@ -426,6 +434,7 @@ graph TB
 > 
 > Si **r**(t) es la posición de una partícula, **T**(t) indica la dirección instantánea del movimiento.
 >
+
 > [!example] ✏️ Cálculo de Vector Tangente Unitario
 > 
 > **Para la hélice:** $$\mathbf{r}(t) = \langle \cos(t), \sin(t), t \rangle$$
@@ -453,6 +462,7 @@ graph TB
 > - Apunta hacia el "centro de curvatura"
 > - Indica la dirección en que la curva se está doblando
 >
+
 > [!example] ✏️ Cálculo de Vector Normal
 > 
 > **Para el círculo:** $$\mathbf{r}(t) = \langle \cos(t), \sin(t) \rangle$$
@@ -484,6 +494,7 @@ graph TB
 > - Completa un sistema ortonormal {**T**, **N**, **B**}
 > - Define el "plano osculador"
 >
+
 > [!tip] 📊 Triedro de Frenet (Marco Móvil)
 > 
 > Los tres vectores **T**, **N**, **B** forman el **triedro de Frenet** o **marco móvil** de la curva:
@@ -523,6 +534,7 @@ graph TB
 > - ‖**r**'(t)‖ = rapidez instantánea
 > - Integrar la rapidez da la distancia total recorrida
 >
+
 > [!example] ✏️ Ejemplos de Longitud de Arco
 > 
 > **Ejemplo 1: Hélice circular**
@@ -592,6 +604,7 @@ graph TB
 > 
 > **Magnitud de la aceleración:** $$a(t) = |\mathbf{a}(t)|$$
 >
+
 > [!example] 🎯 Ejemplo: Movimiento Circular Uniforme
 > 
 > **Posición:** $$\mathbf{r}(t) = \langle R\cos(\omega t), R\sin(\omega t) \rangle$$
@@ -612,6 +625,7 @@ graph TB
 > - **a** apunta hacia el centro (aceleración centrípeta)
 > - Magnitud: ‖**a**‖ = Rω² = v²/R
 >
+
 > [!example] 🚀 Ejemplo: Proyectil con Resistencia del Aire
 > 
 > **Ecuación de movimiento:** $$\mathbf{r}''(t) = \langle 0, -g \rangle - k\mathbf{r}'(t)$$
@@ -661,6 +675,7 @@ graph TB
 > 
 > **Verificación:** $$\frac{d}{dt}\left[\int \mathbf{r}(t) , dt\right] = \mathbf{r}(t)$$
 >
+
 > [!example] ✏️ Ejemplo de Integral Indefinida
 > 
 > $$\mathbf{r}(t) = \langle 2t, \cos(t), e^{3t} \rangle$$
@@ -683,6 +698,7 @@ graph TB
 > 
 > $$\int_a^b \mathbf{r}(t) , dt = \mathbf{R}(b) - \mathbf{R}(a)$$
 >
+
 > [!example] ✏️ Ejemplo de Integral Definida
 > 
 > $$\int_0^{\pi/2} \langle \sin(t), \cos(t), 1 \rangle , dt$$

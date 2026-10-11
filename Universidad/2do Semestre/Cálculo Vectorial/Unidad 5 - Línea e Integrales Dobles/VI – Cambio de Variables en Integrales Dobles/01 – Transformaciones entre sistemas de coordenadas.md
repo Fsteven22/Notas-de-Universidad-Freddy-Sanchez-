@@ -422,6 +422,7 @@ graph LR
 > 
 > **Respuesta:** $P(x, y) = (2.5, 4.33)$
 >
+
 > [!example] 📝 Ejemplo: Cartesiana → Polar
 > 
 > **Convertir** $P(x, y) = (-3, 3)$ **a polares.**
@@ -483,6 +484,7 @@ graph LR
 > 
 > **Respuesta:** $P(x, y, z) = (2\sqrt{3}, 2, 3)$
 >
+
 > [!example] 📝 Ejemplo: Cartesiana → Cilíndrica
 > 
 > **Convertir** $P(x, y, z) = (1, -1, 5)$ **a cilíndricas.**
@@ -557,6 +559,7 @@ graph LR
 > 
 > **Respuesta:** $P(x, y, z) = (3\sqrt{6}/2, 3\sqrt{6}/2, 3)$
 >
+
 > [!example] 📝 Ejemplo: Cartesiana → Esférica
 > 
 > **Convertir** $P(x, y, z) = (0, 0, -5)$ **a esféricas.**
@@ -765,6 +768,7 @@ graph TD
 > 
 > **Respuesta:** $r = 5$ (mucho más simple!)
 >
+
 > [!example] 📝 Ejemplo 2: Cilindro en Esféricas
 > 
 > **Transformar** $x^2 + y^2 = 16$ **a esféricas.**
@@ -790,6 +794,7 @@ graph TD
 > 
 > **Respuesta:** $\rho\sin\phi = 4$
 >
+
 > [!example] 📝 Ejemplo 3: Cono en Cilíndricas
 > 
 > **Transformar** $z = \sqrt{x^2 + y^2}$ **a cilíndricas.**
@@ -806,6 +811,7 @@ graph TD
 > 
 > **Interpretación:** Un cono con ángulo de 45° desde el eje $z$.
 >
+
 > [!example] 📝 Ejemplo 4: Esfera en Cilíndricas
 > 
 > **Transformar** $x^2 + y^2 + z^2 = 36$ **a cilíndricas.**

@@ -576,16 +576,19 @@ mindmap
 > - [ ] Enuncio KCL sum Ik=0 y KVL sum Vk=0 con su convencion de signos.
 > - [ ] Identifico nodos, mallas y lazos en un circuito.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Resuelvo circuito de 2 mallas con KVL y 2 nodos con KCL paso a paso.
 > - [ ] Aplico forma matricial R·I=V y G·V=If.
 > - [ ] Combino fuentes de voltaje en serie y de corriente en paralelo.
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Elijo entre mallas vs nodos segun incognitas y resuelvo por inspeccion.
 > - [ ] Interpreto curva V-I y determino R por pendiente.
 > - [ ] Integro Ohm+KCL+KVL para hallar corrientes y voltajes completos.
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas KVL/KCL
 > - Siguiente: [[06 - Teoremas de Analisis de Circuitos]] — atajos que derivan de estas leyes

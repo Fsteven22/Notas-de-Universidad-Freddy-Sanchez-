@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] "En el universo de las colisiones, la masa no solo importa por su cantidad, sino por cómo transforma el baile del momentum en una sinfonía de proporciones extraordinarias." ⚖️💫
 >
+
 > [!info] Los choques entre objetos de masas muy diferentes revelan comportamientos fascinantes y contraintuitivos. Cuando un objeto ligero colisiona con uno masivo, o viceversa, emergen patrones únicos que desafían nuestra intuición cotidiana. Estos casos extremos nos permiten comprender mejor los límites y aplicaciones de los principios de conservación, desde el rebote de una pelota de tenis hasta el impacto de asteroides.
 
 ## ⚖️ Regímenes de Masa
@@ -35,6 +36,7 @@ dg-publish: true
 > Para λ >> 1: μ ≈ m₂ (masa del objeto pesado)
 > ```
 >
+
 > [!warning] **Caso Extremo: Objeto Ligero contra Objeto Masivo (λ << 1)** 🏓
 > 
 > ### Características del Sistema:
@@ -70,6 +72,7 @@ dg-publish: true
 > - Transferencia de momentum despreciable al objeto masivo
 > - Conservación casi perfecta de energía cinética del ligero
 >
+
 > [!danger] **Caso Extremo: Objeto Masivo contra Objeto Ligero (λ >> 1)** 🚛
 > 
 > ### Características del Sistema:
@@ -200,6 +203,7 @@ dg-publish: true
 > ### Interpretación Física:
 > La raqueta transfiere energía a la pelota, amplificando su velocidad debido al movimiento relativo alto.
 >
+
 > [!example] **Problema 2: Bola de Billar vs. Bola Inmóvil** 🎱
 > 
 > ### Enunciado:
@@ -243,6 +247,7 @@ dg-publish: true
 > #### Interpretación:
 > Con la bola pesada, la bola blanca rebota hacia atrás con 2/3 de su velocidad original, mientras que la bola pesada adquiere solo 1/3 de la velocidad inicial.
 >
+
 > [!example] **Problema 3: Martillo y Clavo** 🔨
 > 
 > ### Enunciado:

@@ -78,6 +78,7 @@ flowchart TD
 
 > [!info] 📈 Métricas de Progreso Revisa cada domingo en tu [[Dashboard Semanal]] para identificar patrones y optimizar.
 >
+
 > [!tip] 🏆 Scorecard Semanal Completa esta tabla cada domingo para visualizar tu progreso y identificar áreas de mejora.
 
 ```mermaid
@@ -110,6 +111,7 @@ pie title Distribución de Hábitos por Área
 
 > [!tip] 🏃‍♂️ Momentum Building Los streaks crean momentum psicológico. ¡No rompas la cadena!
 >
+
 > [!warning] 🌟 Streaks Actuales Actualiza estos datos diariamente para mantener visibilidad de tu progreso.
 
 |Hábito|🔥 Streak|🏆 Record|📅 Última vez|🎯 Meta|
@@ -160,6 +162,7 @@ flowchart TD
 
 > [!tip] 🎮 Gamificación Personal Convierte tus hábitos en un juego personal para mantener motivación.
 >
+
 > [!success] 🏅 Sistema de Puntos Cada acción completada suma a tu progreso general hacia la maestría.
 
 - ✅ Hábito completado = **1 punto**
@@ -179,6 +182,7 @@ flowchart TD
 
 > [!info] 🔧 Tech Stack para Hábitos Integra estas herramientas con tu sistema analógico para máxima efectividad.
 >
+
 > [!tip] 📊 Apps de Tracking Estas aplicaciones complementan tu sistema Obsidian con tracking móvil y notificaciones.
 
 - **Streaks** (iOS) - Para tracking visual simple
@@ -239,6 +243,7 @@ flowchart TD
 > - [[Gestión del Estrés]] - Mantener hábitos bajo presión
 > - [[Mindfulness]] - Conciencia presente en la ejecución
 >
+
 > [!tip] 🎯 Productividad y Ejecución Integra estos métodos con tus hábitos para maximizar efectividad.
 > 
 > - [[Deep Work]] - Hábitos para trabajo profundo
@@ -246,6 +251,7 @@ flowchart TD
 > - [[Técnicas de Concentración]] - Hábitos de enfoque
 > - [[Productividad en la Vida Real]] - Implementación práctica
 >
+
 > [!success] 💪 Bienestar Integral Construye una base sólida de salud física y mental.
 > 
 > - [[Ejercicio y Cognición]] - Hábitos de movimiento y fitness
@@ -253,6 +259,7 @@ flowchart TD
 > - [[Higiene de Sueño]] - Rutinas de descanso reparador
 > - [[Técnicas de Relajación]] - Práctica contemplativa diaria
 >
+
 > [!warning] 🏠 Ambiente y Contexto Tu entorno determina el éxito de tus hábitos. Optimízalo estratégicamente.
 > 
 > - [[Organización Física del Espacio]] - Diseñar ambiente que apoye hábitos
@@ -260,6 +267,7 @@ flowchart TD
 > - [[Minimalismo Digital]] - Hábitos digitales saludables
 > - [[Detox Digital]] - Boundaries con tecnología
 >
+
 > [!info] 🛠️ Herramientas y Métodos Complementa tu sistema con estas herramientas específicas.
 > 
 > - Carpeta Apps Productividad - Herramientas digitales para tracking

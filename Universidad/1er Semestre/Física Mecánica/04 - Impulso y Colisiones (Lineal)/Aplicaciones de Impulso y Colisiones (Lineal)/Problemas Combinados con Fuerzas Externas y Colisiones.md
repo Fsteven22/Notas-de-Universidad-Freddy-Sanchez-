@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "Cuando las fuerzas externas se combinan con las colisiones, la física se vuelve una sinfonía compleja donde cada nota importa y el tiempo es el director de orquesta." ⚡💥
 >
+
 > [!info] Los problemas combinados representan situaciones reales donde las colisiones no ocurren en condiciones ideales aisladas. Aquí, fuerzas externas como fricción, gravedad, fuerzas aplicadas o resistencia del aire actúan simultáneamente con los procesos de colisión, creando escenarios más complejos pero tremendamente útiles para entender fenómenos del mundo real.
 
 ## 🔄 Naturaleza de los Problemas Combinados
@@ -28,6 +29,7 @@ dg-publish: true
 > |**Conservación de Momentum**|Solo si ΣF_ext = 0|Rara vez se cumple|
 > |**Segunda Ley de Newton**|Siempre|Requiere análisis detallado de fuerzas|
 >
+
 > [!success] **Clasificación de Fuerzas Externas** 🎯
 > 
 > ### Por Naturaleza:
@@ -137,6 +139,7 @@ dg-publish: true
 > mv₂' - μmgt₂ = 0 (hasta detenerse)
 > ```
 >
+
 > [!example] **Caso 2: Fuerza Aplicada Constante** ⚡
 > 
 > ### Descripción Física:
@@ -212,6 +215,7 @@ dg-publish: true
 > - b) |J| = 24,420 N·s
 > - c) d_total = 46.28 m (no hay movimiento post-colisión)
 >
+
 > [!example] **Problema 2: Proyectil con Colisión en Vuelo** 🎯
 > 
 > ### Enunciado:
@@ -264,6 +268,7 @@ dg-publish: true
 > Distancia horizontal adicional: d = 15 × 0.5 = 7.5 m
 > ```
 >
+
 > [!example] **Problema 3: Sistema con Resorte y Colisión** 🌀
 > 
 > ### Enunciado:

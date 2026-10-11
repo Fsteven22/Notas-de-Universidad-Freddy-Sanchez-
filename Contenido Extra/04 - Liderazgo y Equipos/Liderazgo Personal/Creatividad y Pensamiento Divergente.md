@@ -2,6 +2,7 @@
 
 > [!quote] _"La creatividad es la inteligencia divirtiéndose. No es solo generar ideas nuevas, sino conectar lo aparentemente inconectable para resolver problemas de manera innovadora."_ - Albert Einstein (adaptado)
 >
+
 > [!info] 🧠 **Definición y Fundamentos** La **creatividad** es la capacidad de generar ideas originales, útiles y apropiadas para un contexto específico. El **pensamiento divergente** es el proceso cognitivo que permite explorar múltiples soluciones posibles a un problema, rompiendo patrones mentales establecidos.
 > 
 > ### Componentes Esenciales
@@ -12,6 +13,7 @@
 > - **Elaboración**: Desarrollo detallado de las ideas
 > - **Sensibilidad**: Detección de problemas y oportunidades
 >
+
 > [!example] 🎨 **Proceso Creativo - Las 4 Etapas de Wallas**
 > 
 > ```mermaid
@@ -26,6 +28,7 @@
 >     style D fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
 > ```
 >
+
 > [!tip] 🚀 **Técnicas de Pensamiento Divergente**
 > 
 > ### Técnicas Clásicas
@@ -73,6 +76,7 @@
 > - **Activación del sistema dopaminérgico**
 > - **Estados alfa cerebrales** (8-13 Hz) favorecen insights
 >
+
 > [!success] 📈 **Desarrollo del Pensamiento Creativo**
 > 
 > ### Estrategias de Entrenamiento
@@ -91,6 +95,7 @@
 > 3. **Storytelling Colaborativo**: Construir historias en equipo
 > 4. **Mejoramiento Forzado**: Rediseñar productos comunes
 >
+
 > [!warning] ⚠️ **Barreras de la Creatividad**
 > 
 > ### Bloqueos Mentales Comunes
@@ -132,6 +137,7 @@
 > - **Ruido**: 70dB (café) estimula creatividad vs. silencio
 > - **Tiempo**: Momentos de mayor energía personal + descansos
 >
+
 > [!quote] 📚 **Técnica de Estudio Específica: Método CREATIVE**
 > 
 > ### C.R.E.A.T.I.V.E para Dominar la Creatividad
@@ -145,6 +151,7 @@
 > - **V**isuralizar: Crea mapas mentales de tu progreso creativo
 > - **E**valuar: Reflexiona semanalmente sobre tu desarrollo creativo
 >
+
 > [!example] 🛠️ **Aplicaciones Prácticas por Contexto**
 > 
 > ### En el Ámbito Académico 🎓
@@ -168,6 +175,7 @@
 > - **Objetivos personales**: Visualización creativa de futuros
 > - **Relaciones interpersonales**: Comunicación creativa
 >
+
 > [!info] 📊 **Medición y Evaluación de la Creatividad**
 > 
 > ### Tests y Herramientas de Evaluación
@@ -185,6 +193,7 @@
 > - **Cualitativos**: Originalidad, viabilidad, impacto potencial
 > - **Longitudinales**: Evolución en el tiempo, transferencia entre dominios
 >
+
 > [!quote] 📖 **Referencias y Recursos Adicionales**
 > 
 > ### Lecturas Fundamentales
@@ -200,6 +209,7 @@
 > - **Creativity Post**: Blog sobre investigación en creatividad
 > - **TED Talks sobre Creatividad**: Charlas inspiracionales especializadas
 >
+
 > [!note] 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### Prerrequisitos Recomendados

@@ -2,6 +2,7 @@
 
 > [!quote] "El futuro del trabajo no es sobre dónde trabajas, sino sobre cómo colaboras. Los equipos virtuales exitosos no eliminan la distancia, la transforman en ventaja competitiva." - Amy Edmondson
 >
+
 > [!info]- 🌐 **Fundamentos de Equipos Virtuales**
 > 
 > ## 🎯 Definición y Características
@@ -58,6 +59,7 @@
 > - **🎭 Cultura**: Mantenimiento de cohesión grupal
 > - **🔧 Tecnología**: Dependencia de herramientas digitales
 >
+
 > [!success]- 🚀 **Estrategias de Formación y Desarrollo**
 > 
 > ## 🎯 Modelo de Madurez de Equipos Virtuales
@@ -115,6 +117,7 @@
 > - **🎲 Virtual Icebreakers**: Preguntas random al inicio de reuniones
 > - **🏆 Recognition Rituals**: Celebración de logros individuales
 >
+
 > [!tip]- 🛠️ **Herramientas y Stack Tecnológico**
 > 
 > ## 🎯 Arquitectura de Colaboración Óptima
@@ -170,6 +173,7 @@
 > - **📱 Multi-channel**: Email + Slack + Push según preferencia
 > - **🔇 Do Not Disturb**: Respeta tiempo personal
 >
+
 > [!warning]- ⚠️ **Desafíos Comunes y Soluciones**
 > 
 > ## 🎯 Problemas Críticos y Contramedidas
@@ -277,6 +281,7 @@
 > - **⚡ Performance Drop**: -20% velocity + increased errors
 > - **🤝 Team Friction**: Decreased cross-collaboration + longer response times
 >
+
 > [!example]- 🏆 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🌟 Casos de Éxito Comprobados
@@ -374,6 +379,7 @@
 > - **🎯 Spaced Repetition**: Revisita conceptos clave semanalmente
 > - **🤝 Peer Teaching**: Enseña a otros lo que aprendes (Feynman Method)
 >
+
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -397,6 +403,7 @@
 > - **📝 Notion**: All-in-one workspace management
 > - **⚡ Calendly**: Smart scheduling across timezones
 >
+
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites Esenciales

@@ -899,6 +899,7 @@ mindmap
 > }
 > ```
 >
+
 > [!example] 🎯 Práctica 2: Clase Temperatura
 > 
 > ```java

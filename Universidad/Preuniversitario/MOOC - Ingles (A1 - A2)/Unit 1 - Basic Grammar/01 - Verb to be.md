@@ -971,6 +971,7 @@ dg-publish: true
 > 10. are
 > ```
 >
+
 > [!example] Exercise 2: Make Negative Sentences
 > 
 > **Change to negative:**
@@ -1014,6 +1015,7 @@ dg-publish: true
 > 8. I'm not hungry. / I am not hungry.
 > ```
 >
+
 > [!example] Exercise 3: Make Questions
 > 
 > **Change to yes/no questions:**
@@ -1057,6 +1059,7 @@ dg-publish: true
 > 8. Are you tired?
 > ```
 >
+
 > [!example] Exercise 4: Short Answers
 > 
 > **Answer these questions:**
@@ -1100,6 +1103,7 @@ dg-publish: true
 > 8. No, I'm not.
 > ```
 >
+
 > [!example] Exercise 5: WH- Questions
 > 
 > **Complete with the correct question word:**
@@ -1143,6 +1147,7 @@ dg-publish: true
 > 8. How
 > ```
 >
+
 > [!example] Exercise 6: Correct the Mistakes
 > 
 > **Find and correct the errors:**
@@ -1186,6 +1191,7 @@ dg-publish: true
 > 8. I am a student.
 > ```
 >
+
 > [!example] Exercise 7: Translation Practice
 > 
 > **Translate to English:**
@@ -1400,6 +1406,7 @@ dg-publish: true
 > A: You too! See you around!
 > ```
 >
+
 > [!example] Dialogue 2: At a Doctor's Office
 > 
 > ```
@@ -1434,6 +1441,7 @@ dg-publish: true
 > Patient: Thank you, doctor!
 > ```
 >
+
 > [!example] Dialogue 3: Describing Yourself
 > 
 > ```

@@ -786,6 +786,7 @@ dg-publish: true
 > 30. fish (or fishes)
 > ```
 >
+
 > [!example] Exercise 2: Choose A or AN
 > 
 > **Fill in with "a" or "an":**
@@ -828,6 +829,7 @@ dg-publish: true
 > 60. a year (consonant sound "yeer")
 > ```
 >
+
 > [!example] Exercise 3: Use THE or No Article
 > 
 > **Fill in with "the" or leave blank (Ø):**
@@ -870,6 +872,7 @@ dg-publish: true
 > 90. The (specific)
 > ```
 >
+
 > [!example] Exercise 4: Correct the Errors
 > 
 > **Find and correct the mistakes:**
@@ -1158,6 +1161,7 @@ dg-publish: true
 > PERO: "The music at the party was great." (música específica)
 > ```
 >
+
 > [!tip] Consejos y Trucos de Memoria
 > 
 > **Tip 1: Regla del sonido para A/AN**
@@ -1306,6 +1310,7 @@ dg-publish: true
 >     (country name = no article, but "a country")
 > ```
 >
+
 > [!example] Exercise 6: Fill in the Blank Story
 > 
 > **Complete with the correct article (a/an/the) or leave blank (Ø):**
@@ -1344,6 +1349,7 @@ dg-publish: true
 > I've ever eaten!
 > ```
 >
+
 > [!example] Exercise 7: Error Correction Challenge
 > 
 > **Each sentence has 1-2 errors. Find and correct them:**

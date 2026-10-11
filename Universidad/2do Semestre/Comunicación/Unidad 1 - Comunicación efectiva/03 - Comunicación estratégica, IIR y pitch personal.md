@@ -263,6 +263,7 @@ mindmap
 > - [ ] Respondo las 4 preguntas antes de enviar un mensaje importante.
 > - [ ] Presento mi pitch en 1:45–2:00 cronometrado.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Mapeo públicos por poder/interés y adapto el mensaje.

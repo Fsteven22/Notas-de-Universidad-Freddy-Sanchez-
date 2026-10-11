@@ -57,6 +57,7 @@ graph LR
 > - **SÍ necesitamos** que $x$ se acerque a $a$
 > - **SÍ debe existir** un valor específico al que se acercan $f(x)$
 >
+
 > [!example] 🎪 Ejemplo con Función Discontinua Sea $g(x) = \begin{cases} x^2 & \text{si } x \neq 2 \ 10 & \text{si } x = 2 \end{cases}$
 > 
 > Para $\lim_{x \to 2} g(x)$:
@@ -136,6 +137,7 @@ graph TD
 > 3. **👀 Observar:** Hacia qué valor tienden $f(x)$
 > 4. **🎯 Concluir:** Ese es el límite (si existe)
 >
+
 > [!example] 🧪 Ejemplo Práctico: $\lim_{x \to 0} \frac{\sin x}{x}$
 > 
 > |$x$|$\frac{\sin x}{x}$|
@@ -250,6 +252,7 @@ graph TD
 > |$\|f(x) - L\|$|Distancia vertical entre $f(x)$ y $L$|Altura desde la función al límite|
 > |$\|x - a\|$|Distancia horizontal entre $x$ y $a$|Distancia desde $x$ al punto de interés|
 >
+
 > [!note] 🖼️ Interpretación Visual
 > 
 > ```mermaid
@@ -283,6 +286,7 @@ graph TD
 > - **🔗 Dependencia:** Generalmente depende de $\varepsilon$: $\delta = \delta(\varepsilon)$
 > - **💭 Interpretación:** "Radio de acción" alrededor de $a$
 >
+
 > [!warning] ⚠️ Condiciones Importantes
 > 
 > ### 🚫 Exclusiones Críticas

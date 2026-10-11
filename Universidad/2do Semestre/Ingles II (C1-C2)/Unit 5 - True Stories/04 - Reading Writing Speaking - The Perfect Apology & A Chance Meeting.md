@@ -35,10 +35,12 @@ dg-publish: true
 > 
 > El artículo relata cómo una fuerte tormenta de nieve en EE.UU. en el invierno de 2007 obligó a cancelar cientos de vuelos. En un aeropuerto, pasajeros que ya habían abordado aviones de JetBlue quedaron atrapados dentro de las naves, en tierra, durante **11 horas**, antes de que se cancelara su vuelo. Lo que hizo memorable el caso no fue el error en sí, sino la **disculpa pública** que hizo el CEO de la aerolínea poco después.
 >
+
 > [!example]- 🟢 Qué incluyó la disculpa (resumen, no cita textual)
 > 
 > El CEO reconoció abiertamente que la aerolínea había manejado mal la situación y que muchos pasajeros habían sufrido las consecuencias. Ofreció compensación a todos los afectados — un gesto que le costó a la empresa más de $20 millones — y explicó con detalle qué había salido mal y qué cambios harían para evitar que volviera a ocurrir.
 >
+
 > [!note] 📋 Las tres reglas de una disculpa perfecta
 > 
 > Según el artículo, cualquier disculpa corporativa efectiva debería seguir estas tres reglas:
@@ -68,6 +70,7 @@ dg-publish: true
 > 
 > El libro presenta un extracto de otra disculpa corporativa famosa (de Apple, sobre un problema con su app de mapas) para compararla con la de JetBlue. La pregunta clave es: **¿sigue también las tres reglas de una buena disculpa?** El ejercicio pide identificar a qué se refiere una frase como _"this commitment"_ dentro del texto — es decir, entender cómo el escritor **evita repetir** la misma idea con las mismas palabras.
 >
+
 > [!note] ✍️ Writing Skill — Sustituir en vez de repetir
 > 
 > Para evitar sonar repetitivo al mencionar el mismo problema dos veces en un texto corto, se puede reemplazar la descripción original por una frase corta que la resuma, como:
@@ -79,6 +82,7 @@ dg-publish: true
 > |Descripción del acuerdo original|**our agreement**|
 > |Promesa hecha al cliente|**this promise to you**|
 >
+
 > [!tip]- 🖥️ Cómo aplicarlo
 > 
 > En vez de escribir dos veces la misma descripción larga ("releasing the personal data of some of our customers"), la segunda vez se puede resumir con una frase corta como _"this mistake"_ o _"this situation"_. Esto hace el texto más fluido y evita que suene mecánico o repetitivo — una habilidad de escritura formal muy valorada en cartas de disculpa, informes y correos corporativos.
@@ -104,6 +108,7 @@ dg-publish: true
 > 
 > Escribe una disculpa pública del CEO de una empresa automotriz que descubrió un problema mecánico peligroso y debe informar a sus clientes (ofreciendo reemplazar los autos afectados). Debes escribir **unas 80 palabras**, siguiendo las tres reglas de una buena disculpa y evitando la repetición.
 >
+
 > [!example]- 🟢 Ejemplo de estructura (guía, no el texto del libro)
 > 
 > 1ª oración: reconoce el problema y pide disculpas claramente. 2ª oración: explica brevemente qué pasó, sin entrar en excesivo detalle técnico. 3ª oración: promete que se está solucionando y que no volverá a pasar. 4ª oración: describe la acción concreta de compensación (reemplazo de vehículos). Última oración: usa una frase corta de sustitución en vez de repetir toda la descripción del problema otra vez ("this issue", "this situation").
@@ -116,6 +121,7 @@ dg-publish: true
 > 
 > Esta es una tarea de speaking colaborativa: la clase se divide en dos grupos, cada uno recibe una "historia de fondo" (_backstory_) diferente sobre dos personajes que están por encontrarse. A partir de ahí, cada estudiante debe **predecir y narrar** cómo se desarrolla el encuentro, sin conocer la versión completa del otro grupo.
 >
+
 > [!note] 📋 Pasos de la tarea: Prepare → Discuss → Present → Share
 > 
 > |Paso|Qué hacer|
@@ -126,6 +132,7 @@ dg-publish: true
 > |**D. Present**|Unirse a otra pareja de estudiantes y **actuar** la historia completa, desde el encuentro hasta el final propuesto, respondiendo preguntas de los demás.|
 > |**E. Share**|Compartir las historias con toda la clase, comparar los distintos finales inventados, y revisar cuál es el final real según el libro.|
 >
+
 > [!tip]- 🖥️ Frases útiles para cada etapa
 > 
 > **Prepare:** _"They are going to... / I think they're planning to..."_
@@ -134,6 +141,7 @@ dg-publish: true
 > 
 > **Present:** _"So this is what I know: ... / She/He was supposed to... / But instead she/he... / From the woman's/man's point of view..."_
 >
+
 > [!tip]- 💡 Conexión con la gramática de esta unidad
 > 
 > Fíjate que las frases de "Present" (_"was supposed to... but instead..."_) conectan directamente con la gramática de **02 - Grammar & Examples** de esta unidad (`was/were supposed to` para hablar de planes que cambiaron). Esta tarea de speaking es una oportunidad perfecta para poner en práctica esa estructura en un contexto narrativo real.
@@ -181,6 +189,7 @@ graph TD
 > 
 > **3.** En la tarea de speaking, ¿qué grupo recibe qué información al inicio?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** Decir que lo sientes, prometer que no volverá a pasar, y hacer algo para compensar.
@@ -199,6 +208,7 @@ graph TD
 > 
 > **3.** Usando "was/were supposed to", describe lo que se suponía que iba a pasar en el encuentro casual antes de que algo cambiara el plan.
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** Falta la acción de compensación (regla 3) — solo se disculpan y prometen, pero no ofrecen nada concreto.
@@ -217,6 +227,7 @@ graph TD
 > 
 > **3.** Reflexiona: ¿por qué crees que las disculpas corporativas que solo dicen "lo sentimos" sin ofrecer una acción concreta suelen sentirse insuficientes para el público?
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 1 la presencia clara de las tres reglas y al menos una sustitución para evitar repetición; en la pregunta 2, uso correcto de la estructura gramatical de planes cambiados vista en la nota 02.
@@ -231,12 +242,14 @@ graph TD
 > - [ ] Entiendo el vocabulario clave del artículo (suffer, corporate, compensation, make up for).
 > - [ ] Sigo la estructura de la tarea de speaking (Prepare → Discuss → Present → Share).
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Escribo una disculpa formal de ~80 palabras siguiendo las tres reglas.
 > - [ ] Sustituyo frases repetidas por resúmenes cortos ("this mistake", "this situation") en un texto formal.
 > - [ ] Narro predicciones usando frases de "Discuss" (I think they're probably going to...).
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Analizo críticamente si una disculpa real (de una empresa, figura pública) cumple o no las tres reglas.
@@ -249,6 +262,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 5: True Stories, pp. 50–52.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]

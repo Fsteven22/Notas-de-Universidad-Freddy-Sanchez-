@@ -284,6 +284,7 @@ graph LR
 > - [[Gestión de Conflictos]] - Aplicación de habilidades sociales en tensiones
 > - [[Pensamiento Crítico]] - Análisis de situaciones sociales complejas
 >
+
 > [!info] **Notas Recomendadas para Profundizar**
 > 
 > ### **Prerrequisitos** 📋

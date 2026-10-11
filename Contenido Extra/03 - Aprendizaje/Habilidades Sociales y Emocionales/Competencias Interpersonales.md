@@ -84,6 +84,7 @@ mindmap
 > |**Dificultad para conflictos** 😤|Evitación o escalamiento|Entrenamiento en mediación|
 > |**Resistencia al feedback** 🛡️|Estancamiento personal|Mentalidad de crecimiento|
 >
+
 > [!tip] **Estrategias de Desarrollo Efectivas**
 > 
 > ### **Método CARE para Relaciones Interpersonales** 🎯
@@ -187,6 +188,7 @@ graph LR
 > - [[Pensamiento Crítico]] - Habilidad complementaria para análisis de situaciones sociales
 > - [[Liderazgo Situacional]] - Aplicación de competencias interpersonales en liderazgo
 >
+
 > [!info] **Notas Recomendadas para Profundizar**
 > 
 > ### **Prerrequisitos** 📋

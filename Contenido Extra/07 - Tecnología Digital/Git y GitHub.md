@@ -24,6 +24,7 @@
 > 
 > ---
 >
+
 > [!success]- ## ⚙️ Características Clave de GitHub
 > 
 > |Característica|Descripción y Utilidad|
@@ -36,6 +37,7 @@
 > 
 > ---
 >
+
 > [!tip]- ## 🚀 El Rol de GitHub en el Ecosistema de Conocimiento
 > 
 > Más allá del código, GitHub se ha convertido en una herramienta invaluable para la gestión del conocimiento personal.
@@ -46,6 +48,7 @@
 > 
 > ---
 >
+
 > [!example]- **Ejemplo Práctico de un Flujo de Trabajo con Obsidian**
 > **Objetivo:** Sincronizar tu vault de Obsidian con GitHub y hacer un "commit" de tus notas.
 > 

@@ -21,6 +21,7 @@ dg-publish: true
 > 
 > **Unidades:** Newton (N) = kg·m/s², libras (lb), dinas (dyn)
 >
+
 > [!info] 📐 **¿Qué es un Diagrama de Cuerpo Libre (DCL)?** Un DCL es una representación gráfica que muestra todas las fuerzas que actúan sobre un objeto específico, aislándolo de su entorno.
 > 
 > **Propósito:**
@@ -59,6 +60,7 @@ dg-publish: true
 > - Puede ser en cualquier dirección
 > - Incluye empujes, tirones, etc.
 >
+
 > [!tip] 🚀 **Fuerzas de Campo (a distancia)** Fuerzas que actúan sin contacto físico directo:
 > 
 > **1. Peso (W o mg)**
@@ -138,6 +140,7 @@ dg-publish: true
 > - Eje x: $$F_{app} - f = ma_x$$
 > - Eje y: $$N - mg = 0$$ (sin aceleración vertical)
 >
+
 > [!example] 📐 **Objeto en Plano Inclinado** **Situación:** Bloque sobre rampa con ángulo θ
 > 
 > **Sistema de coordenadas:** x paralelo al plano, y perpendicular
@@ -152,6 +155,7 @@ dg-publish: true
 > - Eje x: $$mg\sin θ - f = ma_x$$
 > - Eje y: $$N - mg\cos θ = 0$$
 >
+
 > [!example] 🪢 **Sistema de Poleas** **Situación:** Dos masas conectadas por cuerda sobre polea
 > 
 > **Para cada masa por separado:**
@@ -202,6 +206,7 @@ dg-publish: true
 > 
 > **Resultado:** El bloque NO se moverá.
 >
+
 > [!example] 💡 **Problema 2: Sistema Atwood Modificado** Dos masas m₁ = 5 kg y m₂ = 3 kg están conectadas por una cuerda sobre una polea sin fricción. Encontrar la aceleración del sistema.
 > 
 > **Solución:** **Para m₁ (descendente):** $$m_1g - T = m_1a$$ $$5g - T = 5a$$ ... (1)

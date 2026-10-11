@@ -37,6 +37,7 @@ dg-publish: true
 > 
 > Por ejemplo, la palabra `"HOLA"` tiene 4 caracteres, así que ocupa $4 \times 8 = 32$ bits en ASCII, sin importar qué letras sean.
 >
+
 > [!note] 📋 Definición — Keyword Encoding
 > 
 > **Keyword encoding** consiste en construir un **diccionario** de palabras o símbolos frecuentes en un texto y reemplazarlos por códigos más cortos (por ejemplo, números o símbolos de pocos bits), guardando el diccionario junto con el texto codificado para poder revertir el proceso.
@@ -55,6 +56,7 @@ dg-publish: true
 > 
 > Un ahorro de $0% significa que la compresión no redujo nada el tamaño; un ahorro cercano a $100%$ significa que el archivo comprimido es casi despreciable en comparación con el original.
 >
+
 > [!example]- 🟢 Ejemplo paso a paso: ahorro de bits con Keyword Encoding
 > 
 > Supongamos el texto: `"el perro corre y el perro salta"` (32 caracteres incluyendo espacios).
@@ -79,6 +81,7 @@ dg-publish: true
 > 
 > Un error frecuente es olvidar que el **diccionario de códigos** (qué código representa qué palabra) también debe guardarse o transmitirse junto con el texto codificado — si no, no se puede revertir la compresión. En textos muy cortos, el diccionario puede terminar ocupando más espacio del que se ahorra, haciendo la "compresión" contraproducente.
 >
+
 > [!warning] ⚠️ ASCII vs. Unicode
 > 
 > No confundas ASCII (8 bits, 256 caracteres posibles, principalmente inglés) con Unicode/UTF-8 (soporta miles de caracteres de todos los idiomas, y usa una cantidad **variable** de bits por carácter — de 8 a 32 bits dependiendo del símbolo). Un emoji o una letra con tilde ya no ocupa 8 bits fijos como en ASCII puro.
@@ -124,18 +127,21 @@ graph TD
 > 2. ¿Cuántos bits ocupa en ASCII una oración de 50 caracteres (incluyendo espacios)?
 > 3. ¿Por qué ASCII no es, por sí solo, una forma de compresión?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Un texto de 100 caracteres se comprime a un tamaño equivalente a 60 caracteres. Calcula el porcentaje de ahorro de bits.
 > 5. Un texto ocupa originalmente 400 bits. Después de Keyword Encoding (incluyendo el diccionario), ocupa 350 bits. Calcula el porcentaje de ahorro.
 > 6. Explica con tus palabras por qué guardar el diccionario de códigos es obligatorio, aunque reduzca el ahorro total.
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 7. Un texto de 200 caracteres (1600 bits en ASCII) contiene la palabra `"computadora"` (11 caracteres) repetida 6 veces. Si se sustituye cada aparición por un código de 8 bits, y el diccionario ocupa 96 bits adicionales, calcula el porcentaje de ahorro final.
 > 8. ¿En qué escenario Keyword Encoding podría resultar en un archivo **más grande** que el original? Da un ejemplo numérico.
 > 9. Compara conceptualmente Keyword Encoding con Huffman Encoding: ¿en qué se parecen y en qué se diferencian? (No necesitas conocer Huffman en detalle todavía, razona desde la idea general).
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -158,12 +164,14 @@ graph TD
 > - [ ] Entiendo qué es un diccionario de códigos en Keyword Encoding.
 > - [ ] Sé que ASCII por sí solo no es compresión, sino codificación base.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo calcular el porcentaje de ahorro de bits dado un tamaño original y comprimido.
 > - [ ] Entiendo por qué el diccionario debe incluirse en el cálculo del tamaño comprimido.
 > - [ ] Puedo identificar cuándo Keyword Encoding no conviene (textos cortos).
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo calcular el ahorro de bits en escenarios con múltiples repeticiones y diccionario incluido.
@@ -178,6 +186,7 @@ graph TD
 > 
 > [1] Material de clase — Unidad 3: Representación de la información, Computación y Sociedad.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Introducción a la Compresión]] — Keyword Encoding es un ejemplo concreto de compresión sin pérdida introducida ahí.

@@ -55,6 +55,7 @@ flowchart TD
 > - $du = 2x , dx$
 > - $\int u^3 , du = \frac{u^4}{4} + C = \frac{(x^2 + 1)^4}{4} + C$
 >
+
 > [!example] 🔢 Ejemplo 2: Exponencial **Resolver**: $\int 3x^2 e^{x^3} , dx$
 > 
 > **Solución**:
@@ -63,6 +64,7 @@ flowchart TD
 > - $du = 3x^2 , dx$
 > - $\int e^u , du = e^u + C = e^{x^3} + C$
 >
+
 > [!example] 🔢 Ejemplo 3: Logarítmica **Resolver**: $\int \frac{6x}{x^2 + 1} , dx$
 > 
 > **Solución**:
@@ -80,6 +82,7 @@ flowchart TD
 > - No confundir los límites en integrales definidas
 > - Recordar sustituir de vuelta la variable original
 >
+
 > [!tip] 💡 Estrategias
 > 
 > - Buscar funciones compuestas $f(g(x))$
@@ -184,6 +187,7 @@ flowchart TD
 > - $t = \arcsin\left(\frac{x}{2}\right)$
 > - **Resultado**: $\arcsin\left(\frac{x}{2}\right) + C$
 >
+
 > [!example] 🔢 Ejemplo 2: Caso $\sqrt{a^2 + x^2}$ **Resolver**: $\int \frac{dx}{x^2 + 9}$
 > 
 > **Solución**:
@@ -194,6 +198,7 @@ flowchart TD
 > - $t = \arctan\left(\frac{x}{3}\right)$
 > - **Resultado**: $\frac{1}{3}\arctan\left(\frac{x}{3}\right) + C$
 >
+
 > [!example] 🔢 Ejemplo 3: Caso $\sqrt{x^2 - a^2}$ **Resolver**: $\int \frac{\sqrt{x^2 - 1}}{x} , dx$
 > 
 > **Solución**:

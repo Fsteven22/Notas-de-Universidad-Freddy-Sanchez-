@@ -154,6 +154,7 @@ mindmap
 >     "Palabras" : 7
 > ```
 > 
+
 > [!info]+ **Elementos del Lenguaje No Verbal**
 > 
 > ### **Contacto Visual** 👁️
@@ -267,6 +268,7 @@ mindmap
 >     style C fill:#e8f5e8
 > ```
 > 
+
 > [!info]+ **Modelo SOLER para Escucha Activa** 👂
 > 
 > - **S**quare shoulders: Orientar cuerpo hacia el hablante
@@ -327,7 +329,7 @@ mindmap
 
 ## Referencias y Conexiones
 
-[!quote]+ **Notas Relacionadas**
+> [!quote]+ **Notas Relacionadas**
 
 - [[Habilidades Sociales]] - Fundamentos para interacción social
 - [[Inteligencia Emocional]] - Base emocional de la comunicación
@@ -337,7 +339,7 @@ mindmap
 
 ## Notas Recomendadas para Complementar
 
-[!info]+ **Prerrequisitos y Temas Complementarios**
+> [!info]+ **Prerrequisitos y Temas Complementarios**
 
 - [[Autoconocimiento]] - Conocer tu estilo de comunicación
 - [[Construcción de Confianza]] - Base para comunicación efectiva
@@ -555,6 +557,7 @@ mindmap
 >     "Palabras" : 7
 > ```
 > 
+
 > [!info]+ **Elementos del Lenguaje No Verbal**
 > 
 > ### **Contacto Visual** 👁️
@@ -668,6 +671,7 @@ mindmap
 >     style C fill:#e8f5e8
 > ```
 > 
+
 > [!info]+ **Modelo SOLER para Escucha Activa** 👂
 > 
 > - **S**quare shoulders: Orientar cuerpo hacia el hablante
@@ -728,7 +732,7 @@ mindmap
 
 ## Referencias y Conexiones
 
-[!quote]+ **Notas Relacionadas**
+> [!quote]+ **Notas Relacionadas**
 
 - [[Habilidades Sociales]] - Fundamentos para interacción social
 - [[Inteligencia Emocional]] - Base emocional de la comunicación
@@ -738,7 +742,7 @@ mindmap
 
 ## Notas Recomendadas para Complementar
 
-[!info]+ **Prerrequisitos y Temas Complementarios**
+> [!info]+ **Prerrequisitos y Temas Complementarios**
 
 - [[Autoconocimiento]] - Conocer tu estilo de comunicación
 - [[Construcción de Confianza]] - Base para comunicación efectiva

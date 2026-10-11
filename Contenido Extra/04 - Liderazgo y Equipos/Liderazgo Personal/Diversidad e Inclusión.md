@@ -2,6 +2,7 @@
 
 > [!quote] "La diversidad es el motor de la innovación; la inclusión es el combustible que la impulsa hacia el éxito sostenible." - Verna Myers
 >
+
 > [!info]- 📊 **Conceptos Fundamentales**
 > 
 > ## 🎯 Definiciones Clave
@@ -42,6 +43,7 @@
 >     style D fill:#96CEB4,stroke:#4CAF50,stroke-width:2px,color:#fff
 > ```
 >
+
 > [!success]- 🎯 **Beneficios Estratégicos**
 > 
 > ## 📈 Impacto en el Rendimiento
@@ -84,6 +86,7 @@
 >       🎨 Perspectivas
 > ```
 >
+
 > [!tip]- 🛠️ **Estrategias de Implementación**
 > 
 > ## 🎯 Marco de Acción D&I
@@ -128,6 +131,7 @@
 > - **📚 Bias Interruption Training**: Talleres prácticos mensuales
 > - **🏆 D&I Champions Network**: Embajadores por área
 >
+
 > [!warning]- ⚠️ **Sesgos Inconscientes Comunes**
 > 
 > ## 🧠 Tipos de Sesgos y Contramedidas
@@ -240,6 +244,7 @@
 > - [ ] 🎯 Criterios de evaluación claros
 > - [ ] 🔄 Calibración entre entrevistadores
 >
+
 > [!example]- 🎯 **Casos de Estudio y Mejores Prácticas**
 > 
 > ## 🏆 Casos de Éxito Empresarial
@@ -325,6 +330,7 @@
 > - **📝 Journaling**: Reflexiona sobre biases identificados
 > - **🤝 Peer Discussion**: Comparte insights con perspectivas diferentes
 >
+
 > [!quote]- 📚 **Referencias y Recursos Clave**
 > 
 > ### 📖 Literatura Fundamental
@@ -341,6 +347,7 @@
 > - **👥 Catalyst**: Research & benchmarking
 > - **🧠 Harvard IAT**: Implicit bias assessment
 >
+
 > [!note]- 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### 📋 Prerequisites

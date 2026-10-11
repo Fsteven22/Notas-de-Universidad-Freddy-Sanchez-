@@ -35,6 +35,7 @@ dg-publish: true
 > 
 > Todo algoritmo de compresión trabaja sobre la misma idea: identificar **redundancia** (información repetida o predecible) y **codificarla de forma más compacta**.
 >
+
 > [!note] 📋 Definición — Compresión con pérdida vs. sin pérdida
 > 
 > - **Sin pérdida (lossless):** el archivo descomprimido es **idéntico bit a bit** al original. No se descarta ninguna información, solo se reorganiza de forma más eficiente.
@@ -50,6 +51,7 @@ dg-publish: true
 > 
 > Ejemplos de formatos y algoritmos: `.zip`, `.png`, `.flac`, Run Length Encoding, Huffman Encoding.
 >
+
 > [!example] 🟢 Ejemplo intuitivo
 > 
 > Imagina el texto `AAAAAAAABBBBCCCCCCCCCCDD`. En vez de guardar cada carácter individualmente (24 caracteres), podrías guardar "8 A's, 4 B's, 10 C's, 2 D's" — mucho más compacto, y puedes reconstruir el texto original exactamente.
@@ -64,10 +66,12 @@ dg-publish: true
 > 
 > Ejemplos de formatos: `.jpg`, `.mp3`, `.mp4`, la mayoría de streaming de video.
 >
+
 > [!example] 🟢 Ejemplo intuitivo
 > 
 > Un archivo `.jpg` puede descartar variaciones de color que el ojo humano casi no distingue, o reducir la resolución en zonas de la imagen sin mucho detalle (como un cielo despejado). El resultado se ve prácticamente igual a simple vista, pero el archivo puede ser 10 veces más pequeño.
 >
+
 > [!warning] ⚠️ Error común: aplicar compresión con pérdida donde no corresponde
 > 
 > Nunca uses un formato con pérdida para código fuente, archivos ejecutables, o cualquier dato donde la exactitud bit a bit sea crítica. Comprimir un `.txt` con un algoritmo con pérdida podría literalmente cambiar palabras o corromper el archivo, ya que el algoritmo no entiende qué información es "prescindible" en texto estructurado.
@@ -113,18 +117,21 @@ graph TD
 > 2. Clasifica cada formato como con o sin pérdida: `.png`, `.mp3`, `.zip`, `.jpg`.
 > 3. ¿Por qué no se debería comprimir un archivo ejecutable (`.exe`) con un algoritmo con pérdida?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Un estudiante quiere enviar sus apuntes de clase (documento de texto) por correo y quiere que ocupen menos espacio. ¿Qué tipo de compresión debería usar? Justifica.
 > 5. Una app de streaming necesita transmitir video en tiempo real con ancho de banda limitado. ¿Qué tipo de compresión conviene más y por qué?
 > 6. Explica por qué la compresión con pérdida generalmente logra tasas de compresión más altas que la compresión sin pérdida.
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 7. ¿Podría un archivo comprimido con pérdida, una vez descomprimido, volver a comprimirse sin pérdida para recuperar el archivo original? Explica por qué sí o por qué no.
 > 8. Investiga: ¿por qué los archivos `.gif` usan compresión sin pérdida, a pesar de ser imágenes (donde normalmente uno esperaría compresión con pérdida como en `.jpg`)?
 > 9. Un hospital almacena imágenes de resonancias magnéticas. ¿Qué tipo de compresión recomendarías y qué riesgos tendría elegir el tipo incorrecto?
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -147,12 +154,14 @@ graph TD
 > - [ ] Puedo clasificar formatos de archivo comunes según su tipo de compresión.
 > - [ ] Entiendo por qué la compresión reduce el tamaño de los datos (redundancia).
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo justificar qué tipo de compresión conviene según el contexto de uso.
 > - [ ] Entiendo por qué la compresión con pérdida logra tasas más altas que la sin pérdida.
 > - [ ] Puedo identificar riesgos de usar el tipo de compresión incorrecto.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo explicar por qué la compresión con pérdida es irreversible.
@@ -166,6 +175,7 @@ graph TD
 > 
 > [1] Material de clase — Unidad 3: Representación de la información, Computación y Sociedad.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[07 - Números Negativos]] — ambas notas forman parte del bloque de representación de la información de la Unidad 3.

@@ -110,6 +110,7 @@ dg-publish: true
 > • Is it blue or green?
 > ```
 >
+
 > [!example] Direct Question Examples
 > 
 > **Simple present questions:**
@@ -215,6 +216,7 @@ dg-publish: true
 > • He hasn't finished, has he?
 > ```
 >
+
 > [!example] Tag Question Examples
 > 
 > **Positive → Negative:**
@@ -301,6 +303,7 @@ dg-publish: true
 > ✓ I wonder why he said that.
 > ```
 >
+
 > [!example] Indirect Question Examples
 > 
 > **Common mistakes (incorrect question marks):**
@@ -378,6 +381,7 @@ dg-publish: true
 > • "Why does this always happen to me?"
 > ```
 >
+
 > [!example] Rhetorical Question Examples
 > 
 > **Classic rhetorical questions:**
@@ -576,6 +580,7 @@ dg-publish: true
 > 30. Who called last night?
 > ```
 >
+
 > [!example] Exercise 2: Correct the Errors
 > 
 > **Instructions:** Find and fix the question mark error in each sentence.
@@ -608,6 +613,7 @@ dg-publish: true
 > 50. I don't know when they will arrive. (indirect - period)
 > ```
 >
+
 > [!example] Exercise 3: Tag Questions
 > 
 > **Instructions:** Complete each tag question correctly.
@@ -640,6 +646,7 @@ dg-publish: true
 > 70. You can help me, can't you?
 > ```
 >
+
 > [!example] Exercise 4: Direct vs. Indirect Questions
 > 
 > **Instructions:** Convert each direct question to an indirect question.

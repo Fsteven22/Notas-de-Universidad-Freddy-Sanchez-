@@ -62,6 +62,7 @@ dg-publish: true
 > 
 > Si $W$ es subespacio de $V$, entonces $W$ es **automáticamente** un espacio vectorial con las operaciones heredadas de $V$.
 >
+
 > [!tip] ✅ Criterio del Subespacio (Versión Compacta)
 > 
 > **Teorema:** Un subconjunto no vacío $W \subseteq V$ es un subespacio si y solo si:
@@ -401,6 +402,7 @@ dg-publish: true
 > 
 > $$\boxed{W_1 \cup W_2 \text{ NO es subespacio en general}}$$
 >
+
 > [!note] 🟡 Teorema 2: Caracterización por Combinaciones Lineales
 > 
 > **Teorema:** $W$ es subespacio de $V$ si y solo si $W$ contiene todas las combinaciones lineales de sus elementos.
@@ -443,6 +445,7 @@ dg-publish: true
 > 2. Es el **subespacio más pequeño** que contiene a $\vec{v}_1, \ldots, \vec{v}_k$
 > 3. Si $W = \text{span}{\vec{v}_1, \ldots, \vec{v}_k}$, decimos que ${\vec{v}_1, \ldots, \vec{v}_k}$ **genera** o **engendra** a $W$
 >
+
 > [!tip] ✅ Teorema: El Span es un Subespacio
 > 
 > **Teorema:** Para cualquier conjunto de vectores ${\vec{v}_1, \ldots, \vec{v}_k} \subseteq V$:
@@ -505,6 +508,7 @@ dg-publish: true
 > 
 > **Interpretación:** Agregar vectores dependientes no "expande" el span.
 >
+
 > [!example] 📍 Ejemplo 7: Span en $\mathbb{R}^3$
 > 
 > **a) Span de un vector (recta)**
@@ -537,6 +541,7 @@ dg-publish: true
 > - 2 vectores independientes → plano (dimensión 2)
 > - 3 vectores independientes → todo $\mathbb{R}^3$ (dimensión 3)
 >
+
 > [!example] 📍 Ejemplo 8: Span en Polinomios
 > 
 > Sea $P_2$ el espacio de polinomios de grado ≤ 2.
@@ -635,6 +640,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:** Los subespacios son "complementarios" y no se "traslapan" (excepto en el origen).
 >
+
 > [!example] 📍 Ejemplo 10: Suma Directa
 > 
 > **a) En $\mathbb{R}^2$**
@@ -718,6 +724,7 @@ dg-publish: true
 > 
 > Si $W$ es el núcleo o imagen de una transformación lineal, entonces es subespacio (tema futuro).
 >
+
 > [!warning] ⚠️ Trampas Comunes
 > 
 > ### ❌ Errores Frecuentes
@@ -830,6 +837,7 @@ dg-publish: true
 > 
 > c) $\text{span}{1, x, x^2}$ en $P_3$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Verificar subespacios de matrices:**
@@ -868,6 +876,7 @@ dg-publish: true
 > 
 > b) $(W_1 + W_2) + W_3 = W_1 + (W_2 + W_3)$ (asociatividad)
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **8. Problemas teóricos:**
@@ -962,6 +971,7 @@ dg-publish: true
 > 
 > **Interpretación:** La recta $y = 2x$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** Matrices con traza cero
@@ -1015,6 +1025,7 @@ dg-publish: true
 > 
 > Ejemplo: $p(x) = x(x-1) = x^2 - x$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **9)** Complemento ortogonal
@@ -1586,6 +1597,7 @@ dg-publish: true
 > 
 > **Hint:** Usa contradicción. Supón que existen $\vec{w}_1 \in W_1 \setminus W_2$ y $\vec{w}_2 \in W_2 \setminus W_1$.
 >
+
 > [!example] 📝 Problemas de Cálculo
 > 
 > **Problema 4:** Encontrar intersección y suma

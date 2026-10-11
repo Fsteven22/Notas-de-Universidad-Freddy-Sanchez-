@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "Las poleas no solo cambian la dirección de las fuerzas; revelan la elegante danza entre la dinámica traslacional y rotacional en perfecta armonía." ⚙️
 >
+
 > [!info] Los sistemas de poleas representan una aplicación fundamental de la dinámica de cuerpos rígidos, donde se combinan los movimientos de traslación y rotación. Estos problemas integran conceptos de torque, momento de inercia, y las leyes de Newton tanto para traslación como para rotación.
 
 ## 🔧 Fundamentos de Sistemas con Poleas
@@ -28,6 +29,7 @@ dg-publish: true
 > |Cilindro hueco|I = ½M(R₁² + R₂²)|Poleas con grosor|
 > |Disco con agujero|I = ½M(R₂² + r²)|Poleas perforadas|
 >
+
 > [!tip] **Condiciones de Rodadura sin Deslizamiento** 🎯
 > 
 > ### Relación Cinemática Fundamental:
@@ -51,6 +53,7 @@ dg-publish: true
 > - Cada punto de la cuerda mantiene contacto con la polea
 > - La velocidad tangencial de la polea = velocidad de la cuerda
 >
+
 > [!warning] **Análisis de Fuerzas y Torques** ⚡
 > 
 > ### Para las Masas (Dinámica Traslacional):
@@ -80,6 +83,7 @@ dg-publish: true
 > - **Cuerda masiva**: T₁ ≠ T₂ (tensión variable)
 > - **Cuerda ideal**: T₁ = T₂ = T (tensión constante)
 >
+
 > [!success] 🔗 Estrategia de Resolución
 > 
 > ```mermaid
@@ -99,6 +103,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!note] **Ecuaciones de Conservación** 📐
 > 
 > ### Conservación de la Energía:
@@ -206,6 +211,7 @@ dg-publish: true
 > v = 5.49 m/s
 > ```
 >
+
 > [!example] **Problema 2: Sistema de Doble Polea** ⚙️⚙️
 > 
 > ### Enunciado:
@@ -262,6 +268,7 @@ dg-publish: true
 > a = 2.18 m/s²
 > ```
 >
+
 > [!example] **Problema 3: Polea en Plano Inclinado** 🔺
 > 
 > ### Enunciado:

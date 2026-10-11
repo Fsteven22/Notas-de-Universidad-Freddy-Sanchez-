@@ -25,6 +25,7 @@ dg-publish: true
 
 > [!note] 📋 Clasificación y catálogo de conectores
 >
+
 > [!success]- ✅ Tabla de referencia rápida por relación lógica
 >
 > | Relación lógica | Conectores comunes | Ejemplo |
@@ -73,6 +74,7 @@ dg-publish: true
 > > 5. Compuesto — locución de varias palabras.
 > > 6. Muletilla oral (*o sea*) y causa vacía (*porque sí*); reformular: *"El sistema falló debido a la sobrecarga."*
 >
+
 > [!example]- Ejercicio 04.2 — Conectores de consecuencia
 >
 > > **Instrucciones:** Une causa y efecto con *por lo tanto, en consecuencia, por consiguiente, así que*.
@@ -93,6 +95,7 @@ dg-publish: true
 > > 5. Consecuencia — equivale a *por lo tanto*.
 > > 6. Usar solo uno: *"Por lo tanto, el proceso mejoró."* Los tres juntos son saturación redundante.
 >
+
 > [!example]- Ejercicio 04.3 — Conectores de contraste
 >
 > > **Instrucciones:** Completa con *sin embargo, no obstante, en cambio, por el contrario*.
@@ -113,6 +116,7 @@ dg-publish: true
 > > 5. *En cambio* compara dos elementos paralelos; *sin embargo* objeta o matiza lo anterior dentro del mismo tema.
 > > 6. No — es ejemplificación (*por ejemplo*), no contraste.
 >
+
 > [!example]- Ejercicio 04.4 — Conectores de adición
 >
 > > **Instrucciones:** Completa con *además, asimismo, también, incluso* sin caer en redundancia.
@@ -133,6 +137,7 @@ dg-publish: true
 > > 5. Sobran dos de los tres: *además, asimismo* y *también* repiten la misma relación de adición.
 > > 6. *"Además, el sistema es rápido y eficiente."*
 >
+
 > [!example]- Ejercicio 04.5 — Conectores de secuencia temporal
 >
 > > **Instrucciones:** Ordena el protocolo con *primero, a continuación, posteriormente, finalmente, mientras tanto*.
@@ -153,6 +158,7 @@ dg-publish: true
 > > 5. Para una acción simultánea: *"Mientras tanto, el asistente prepara la siguiente muestra."*
 > > 6. Porque marca el orden cronológico y evita que el lector deba adivinar qué paso va antes o después.
 >
+
 > [!example]- Ejercicio 04.6 — Conectores de ejemplificación
 >
 > > **Instrucciones:** Completa con *por ejemplo, tal como, a modo de ilustración* y distingue de otras relaciones.
@@ -173,6 +179,7 @@ dg-publish: true
 > > 5. Es ejemplo, no contraste: *"El cobre es buen conductor; por ejemplo, se usa en cables."*
 > > 6. Modelo: *"A modo de ilustración, el campus redujo 30% su consumo tras cambiar la iluminación."*
 >
+
 > [!example]- Ejercicio 05.1 — Refuerzo: conectores combinados (causa + contraste)
 >
 > > **Instrucciones:** Elige los dos conectores correctos en cada párrafo (uno causal y uno de contraste).
@@ -193,6 +200,7 @@ dg-publish: true
 > > 5. *"Debido a la lluvia y a la saturación del suelo, el camino se cerró."* (evita repetir *porque*).
 > > 6. Saturación y mezcla indebida; correcto: *"A pesar de que llovió, avanzamos."* o *"Lluvió; sin embargo, avanzamos."* (uno solo).
 >
+
 > [!example]- Ejercicio 05.2 — Refuerzo: conectores combinados (adición + secuencia + ejemplo)
 >
 > > **Instrucciones:** Completa el minitexto con un conector de adición, uno de secuencia y uno de ejemplo, sin repetir.
@@ -215,6 +223,7 @@ dg-publish: true
 > > 5. Modelo: *"El laboratorio actualizó sus equipos. Además, mejoró el protocolo. Primero se valida cada muestra; posteriormente se archiva el reporte. Por ejemplo, el año pasado se procesaron 2.000 muestras sin errores."*
 > > 6. Porque es saturación redundante: tres marcas de la misma relación cansan y no añaden matices.
 >
+
 > [!example]- Ejercicio 05.3 — Refuerzo: reparación de la coherencia (repetición y concordancia)
 >
 > > **Instrucciones:** Corrige cada párrafo: sustituye repeticiones y ajusta la concordancia.
@@ -235,6 +244,7 @@ dg-publish: true
 > > 5. *"El informe describe el método, los resultados y las conclusiones."* (enumeración en vez de repetición).
 > > 6. Casos 1, 3 y 5: variedad léxica y fusión; casos 2 y 4: concordancia de género y número.
 >
+
 > [!example]- Ejercicio 05.4 — Refuerzo: reparación de la coherencia (párrafo fragmentado)
 >
 > > **Instrucciones:** Inserta el conector que falta en cada texto fragmentado (elige de la tabla de referencia).
@@ -255,6 +265,7 @@ dg-publish: true
 > > 5. *"Primero se tomaron muestras; posteriormente se analizaron y finalmente se publicaron los resultados."*
 > > 6. Modelo: *"Primero se tomaron y analizaron las muestras; finalmente se publicaron los resultados."*
 >
+
 > [!example]- Ejercicio 05.5 — Refuerzo: validación por lectura en voz alta
 >
 > > **Instrucciones:** Lee cada oración en voz alta y aplica el criterio: si te quedas sin aire o tropiezas, divide o añade conector.
@@ -275,6 +286,7 @@ dg-publish: true
 > > 5. Ver diagnósticos en cada punto anterior.
 > > 6. Ver propuesta del punto 1; verifica leyendo de nuevo en voz alta sin tropezar.
 >
+
 > [!example]- Ejercicio 05.6 — Refuerzo integral: redacción coherente completa
 >
 > > **Instrucciones:** Redacta un párrafo expositivo de 5-6 oraciones sobre "El reciclaje en el campus" que cumpla todas las condiciones y luego autoevalúalo.
@@ -304,30 +316,35 @@ dg-publish: true
 > 2. Clasifica el conector *"por consiguiente"* según su relación lógica.
 > 3. Identifica el conector que sobra por redundante: *"Además, el sistema es rápido. Asimismo, también es eficiente."*
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. *"sin embargo"* (contraste).
 > 2. Conclusión (equivalente a "por lo tanto", "en consecuencia").
 > 3. Sobra uno de los tres: usar solo *"Además"* o *"Asimismo"*, no los tres juntos.
 >
+
 > [!question] 🟡 Ejercicios adicionales — Nivel Intermedio
 >
 > 1. Redacta un párrafo de 4 oraciones usando al menos tres relaciones lógicas distintas de la tabla (sin repetir el mismo conector dos veces).
 > 2. Sustituye la muletilla oral en: *"O sea, el motor se detiene si la temperatura sube demasiado."* por un conector textual adecuado.
 > 3. Detecta el problema de concordancia en: *"Los resultados obtenido demuestra una mejora significativa."*
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. Respuesta abierta; verifica variedad de relaciones lógicas (por ejemplo: causa-efecto + contraste + ejemplificación).
 > 2. *"Es decir, el motor se detiene si la temperatura sube demasiado."* o simplemente reformular sin la muletilla: *"El motor se detiene si la temperatura sube demasiado."*
 > 3. Debería ser *"Los resultados obtenidos demuestran una mejora significativa"* (concordancia de número entre sustantivo/adjetivo y sujeto/verbo).
 >
+
 > [!question] 🔴 Ejercicios adicionales — Nivel Avanzado
 >
 > 1. Toma un párrafo propio de un trabajo anterior (de cualquier materia) y revisa: ¿hay repeticiones léxicas? ¿hay saturación de conectores? Corrígelo.
 > 2. Redacta un párrafo expositivo completo (introducción-desarrollo-conclusión) usando al menos 5 relaciones lógicas distintas, sin sonar forzado.
 > 3. Lee tu párrafo en voz alta y anota en qué punto exacto sentiste que faltaba un conector o que la oración era demasiado larga.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas y dependientes del texto elegido. La validación por lectura en voz alta es subjetiva pero efectiva: si tropiezas o pierdes el aire, casi siempre hay una oración que debe dividirse o a la que le falta un conector que marque la pausa lógica.
@@ -342,12 +359,14 @@ dg-publish: true
 > - [ ] Reconozco muletillas orales que no deberían usarse en texto escrito
 > - [ ] Detecto errores simples de concordancia
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Uso conectores variados sin caer en saturación redundante
 > - [ ] Sustituyo repeticiones léxicas por sinónimos o referencias pronominales
 > - [ ] Corrijo errores de concordancia en oraciones propias
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Redacto párrafos completos combinando múltiples relaciones lógicas con naturalidad
@@ -395,6 +414,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 5 — Textos expositivos, Nota 03: "Conectores textuales y coherencia lógica".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/00 - Índice Unidad 5]] — mapa general de la unidad.

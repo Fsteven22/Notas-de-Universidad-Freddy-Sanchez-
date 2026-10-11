@@ -582,6 +582,7 @@ dg-publish: true
 > - [ ] Reconozco errores de concordancia de número y género en oraciones simples.
 > - [ ] Explico por qué una palabra lleva o no tilde según su categoría.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Corrijo discordancias con sujetos compuestos y complementos preposicionales.
@@ -589,6 +590,7 @@ dg-publish: true
 > - [ ] Aplico punto y coma correctamente, evitando la coma criminal.
 > - [ ] Uso bien las homófonas (él/el, tú/tu, sí/si, más/mas) y diferencio diptongos de hiatos.
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Reescribo textos académicos o profesionales sin perder formalidad ni precisión.
@@ -637,6 +639,7 @@ mindmap
 >
 > [6] J. Alcina Franch y J. M. Blecua, _Gramática española_, Barcelona: Ariel, 2001.
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[02 - Propiedades de la redacción y textos académicos]] — las propiedades de adecuación, coherencia y cohesión enmarcan estos errores: la concordancia y la concisión son su aplicación directa.

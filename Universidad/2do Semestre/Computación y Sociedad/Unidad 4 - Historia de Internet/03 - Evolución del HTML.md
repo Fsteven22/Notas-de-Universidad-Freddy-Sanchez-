@@ -9,6 +9,7 @@ dg-publish: true
 > 
 > A diferencia de las otras notas de esta unidad, este tema no vino directamente de los videos vistos en clase — quedó planteado como una **investigación aparte** sobre lo estático vs. lo dinámico. Esta nota es un punto de partida con el panorama general; conviene ampliarla con las fuentes específicas que pida el profesor.
 >
+
 > [!info] 💡 ¿Por qué importa la evolución de HTML?
 > 
 > HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de cualquier página web. Su evolución —de un lenguaje simple para enlazar documentos de texto, a una plataforma capaz de soportar aplicaciones completas— explica en buena parte cómo fue posible el salto de la [[02 - Evolución de la Web|Web 1.0 estática a la Web 2.0+ dinámica]].
@@ -32,6 +33,7 @@ dg-publish: true
 > 
 > - El contenido era **estático**: no cambiaba a menos que alguien editara el archivo manualmente y lo volviera a subir al servidor.
 >
+
 > [!note] 📋 HTML 4.0 (1997) — Llega el diseño y la interactividad
 > 
 > Un punto de inflexión importante: introdujo soporte oficial para dos tecnologías que cambiarían todo:
@@ -41,12 +43,14 @@ dg-publish: true
 > 
 > Este fue el inicio real del salto de páginas estáticas a páginas con comportamiento dinámico.
 >
+
 > [!note] 📋 XHTML (2000) — El intento más estricto
 > 
 > Buscaba aplicar las reglas rígidas de XML a HTML, exigiendo sintaxis más consistente (etiquetas siempre cerradas, anidamiento correcto, etc.) para lograr mayor uniformidad entre navegadores.
 > 
 > - Resultó **demasiado rígido** para el uso práctico: un solo error de sintaxis podía romper toda la página. Los desarrolladores prefirieron la flexibilidad de HTML tradicional, y XHTML nunca reemplazó a HTML.
 >
+
 > [!note] 📋 HTML5 (finalizado en 2014) — La plataforma de aplicaciones
 > 
 > Desarrollado por WHATWG (Web Hypertext Application Technology Working Group) y adoptado formalmente por el W3C. Es la versión que consolidó a la Web como una **plataforma de aplicaciones**, no solo de documentos.
@@ -67,6 +71,7 @@ dg-publish: true
 > 
 > El contenido dinámico se logra combinando HTML con lenguajes del **lado del servidor** (que generan el HTML antes de enviarlo, como PHP) y del **lado del cliente** (que modifican la página ya cargada en el navegador, como JavaScript).
 >
+
 > [!example]- 🟢 Ejemplo comparativo
 > 
 > - **Página estática:** un archivo `about.html` con la historia de una empresa. Todos los visitantes ven exactamente el mismo texto e imágenes, sin importar quién sean o cuándo entren.
@@ -80,6 +85,7 @@ dg-publish: true
 > 
 > HTML sigue siendo, en esencia, un lenguaje de **estructura** (marcado), no de lógica o comportamiento. Lo que hace posible el contenido dinámico es la combinación de HTML con otras tecnologías (CSS para diseño, JavaScript para interactividad, y lenguajes del servidor para generar contenido personalizado) — no un cambio en la naturaleza del propio HTML.
 >
+
 > [!warning] ⚠️ XHTML no fue "una versión de HTML5"
 > 
 > Es un error común mezclar el orden: XHTML (2000) es anterior a HTML5 (2014) y fue, en la práctica, un experimento que no prosperó por su rigidez, no un paso intermedio necesario hacia HTML5.
@@ -94,16 +100,19 @@ dg-publish: true
 > 2. Define con tus propias palabras "contenido estático" y "contenido dinámico".
 > 3. ¿Qué dos tecnologías introdujo oficialmente HTML 4.0 en 1997?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Explica por qué XHTML no logró reemplazar a HTML, a pesar de buscar mayor consistencia.
 > 5. Da un ejemplo propio (distinto al de la nota) de una página estática y una dinámica, explicando por qué cada una encaja en esa categoría.
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 6. Compara HTML 1.0 con HTML5: ¿qué cambió en términos de contenido estático vs. dinámico, y qué tecnologías hicieron posible ese cambio?
 > 7. Explica por qué se dice que "HTML por sí solo sigue siendo un lenguaje de estructura", incluso después de HTML5, que se asocia tanto con aplicaciones dinámicas.
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -131,11 +140,13 @@ dg-publish: true
 > - [ ] Puedo ordenar cronológicamente las versiones principales de HTML (1.0, 4.0, XHTML, HTML5).
 > - [ ] Puedo definir contenido estático y contenido dinámico.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Entiendo qué aportó cada versión de HTML (CSS/JS en 4.0, rigidez de XHTML, multimedia/APIs en HTML5).
 > - [ ] Puedo dar ejemplos propios de páginas estáticas y dinámicas.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo explicar por qué HTML sigue siendo un lenguaje de estructura aunque soporte aplicaciones dinámicas.
@@ -149,6 +160,7 @@ dg-publish: true
 > 
 > [1] Investigación complementaria — Unidad 4: Internet, Computación y Sociedad (tema no cubierto directamente en los videos de clase). [2] World Wide Web Consortium (W3C) / WHATWG — historial de especificaciones de HTML5.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Historia de Internet y Cómo Funciona]] — contexto de cuándo y por qué se creó HTML junto con la Web.

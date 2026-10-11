@@ -398,6 +398,7 @@ graph TB
 > 
 > **Respuesta:** $A = \frac{9}{2}$ unidades cuadradas
 >
+
 > [!example] 🎓 Problema 2: Región entre parábola y recta
 > 
 > **Enunciado:** Calcular el área entre $y = x^2 - 4$ y $y = 2x - 1$.
@@ -432,6 +433,7 @@ graph TB
 > 
 > **Respuesta:** $A = \frac{32}{3}$ unidades cuadradas
 >
+
 > [!example] 🎓 Problema 3: Región entre dos parábolas
 > 
 > **Enunciado:** Área entre $x = y²$ y $y = x²$.

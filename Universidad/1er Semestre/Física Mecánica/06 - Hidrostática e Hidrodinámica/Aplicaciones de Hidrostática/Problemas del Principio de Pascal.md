@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La presión aplicada a un fluido confinado se transmite íntegramente en todas las direcciones; así, una pequeña fuerza puede mover montañas cuando la naturaleza de los fluidos conspira a nuestro favor." ⚡
 >
+
 > [!info] El Principio de Pascal es uno de los fundamentos más importantes de la hidráulica moderna. Establece que cualquier cambio de presión aplicado a un fluido incompresible confinado se transmite íntegramente a todas las partes del fluido y a las paredes del recipiente. Este principio es la base de innumerables aplicaciones tecnológicas que han revolucionado la ingeniería.
 
 ## 🎯 Conceptos Fundamentales
@@ -37,6 +38,7 @@ dg-publish: true
 > - Fluido en **equilibrio** estático
 > - **Misma altura** (o diferencias de altura despreciables)
 >
+
 > [!tip] **Ventaja Mecánica Hidráulica** 💪
 > 
 > ### Amplificación de Fuerza:
@@ -59,6 +61,7 @@ dg-publish: true
 > - **Trabajo total** permanece constante (ideal)
 > - **W₁ = W₂** → F₁ × d₁ = F₂ × d₂
 >
+
 > [!warning] **Sistemas Hidráulicos Reales** ⚙️
 > 
 > ### Componentes Principales:
@@ -92,6 +95,7 @@ dg-publish: true
 > - Fugas en sellos y conexiones
 > - Pérdidas por calor
 >
+
 > [!success] 🔄 Sistema Hidráulico Básico
 > 
 > ```mermaid
@@ -111,6 +115,7 @@ dg-publish: true
 >     style F fill:#f3e5f5
 > ```
 >
+
 > [!note] **Relaciones Matemáticas** 📐
 > 
 > ### Ecuación de Continuidad (Conservación de Volumen):
@@ -184,6 +189,7 @@ dg-publish: true
 > 
 > **Verificación**: W₁ = 200 × 0.12 = 24 J; W₂ = 7200 × 0.0033 = 24 J ✓
 >
+
 > [!example] **Problema 2: Elevador Hidráulico** 🚗
 > 
 > ### Enunciado:
@@ -207,6 +213,7 @@ dg-publish: true
 > 
 > **Interpretación**: Se amplifica la fuerza 100 veces, pero el desplazamiento se reduce 100 veces.
 >
+
 > [!example] **Problema 3: Sistema Hidráulico de Frenos** 🚙
 > 
 > ### Enunciado:
@@ -235,6 +242,7 @@ dg-publish: true
 > 
 > **Composición**: VM = (Palanca) × (Hidráulico) = 4 × 16.1 = 64.2 ✓
 >
+
 > [!example] **Problema 4: Máquina Compactadora** 🏗️
 > 
 > ### Enunciado:

@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La naturaleza rara vez es lineal: las gráficas no lineales revelan la verdadera complejidad y belleza de los fenómenos físicos." 📈
 >
+
 > [!info] Las gráficas no lineales son fundamentales para analizar la mayoría de los fenómenos físicos reales. Mientras que las relaciones lineales proporcionan una base sólida, la naturaleza exhibe comportamientos exponenciales, parabólicos, hiperbólicos y de otros tipos no lineales. Dominar el reconocimiento de patrones y las técnicas de análisis para estas gráficas es esencial para la física experimental moderna.
 
 ## 🔍 Identificación de Patrones
@@ -65,6 +66,7 @@ dg-publish: true
 > |**Hiperbólica**|Curva asintótica|Variable|Tiende a asíntotas|
 > |**Logarítmica**|Crecimiento saturado|Cóncava abajo|Crecimiento lento|
 >
+
 > [!tip] **Estrategias de Identificación** 🎯
 > 
 > ### Método Sistemático:
@@ -203,6 +205,7 @@ dg-publish: true
 > Tiempo para que y cambie por un factor e
 > ```
 >
+
 > [!success] 🔬 Aplicaciones Físicas Exponenciales
 > 
 > ```mermaid
@@ -228,6 +231,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!example] **Análisis de Gráficas Exponenciales** 📊
 > 
 > ### Ejemplo: Descarga de un Capacitor
@@ -305,6 +309,7 @@ dg-publish: true
 > 
 > **Constante de tiempo**: τ = RC = 1.04 s **Vida media**: t₁/₂ = ln(2)·τ = 0.72 s **Significado**: El voltaje se reduce a 1/e ≈ 37% cada 1.04 s
 >
+
 > [!warning] **Precauciones en Análisis Exponencial** ⚠️
 > 
 > ### Errores Comunes:
@@ -415,6 +420,7 @@ dg-publish: true
 > Directriz: y = -1/4a
 > ```
 >
+
 > [!tip] **Aplicaciones Físicas Parabólicas** 🌍
 > 
 > ### Fenómenos Físicos Comunes:
@@ -481,6 +487,7 @@ dg-publish: true
 > - Cambio de curvatura constante
 > - Aceleración/desaceleración constante en sistemas mecánicos
 >
+
 > [!success] 🔧 Análisis de Gráficas Parabólicas
 > 
 > ```mermaid
@@ -502,6 +509,7 @@ dg-publish: true
 >     style D fill:#e8f5e8
 > ```
 >
+
 > [!example] **Ejemplo: Análisis de Movimiento Parabólico** 🎯
 > 
 > ### Experimento: Lanzamiento de Proyectil
@@ -594,6 +602,7 @@ dg-publish: true
 > 
 > **Coeficiente de determinación**: R² = 0.9990 **Residuos máximos**: ±0.02 m **Conclusión**: Excelente ajuste parabólico, confirma teoría
 >
+
 > [!warning] **Cuidados en Análisis Parabólico** 📋
 > 
 > ### Problemas Comunes:
@@ -705,6 +714,7 @@ dg-publish: true
 > y = a/x² es simétrica respecto al eje y
 > ```
 >
+
 > [!success] 🌌 Aplicaciones Físicas Hiperbólicas
 > 
 > ```mermaid
@@ -730,6 +740,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!tip] **Técnicas de Análisis Hiperbólico** 🔬
 > 
 > ### Identificación Visual:
@@ -805,6 +816,7 @@ dg-publish: true
 > Resolver denominador = 0
 > ```
 >
+
 > [!example] **Ejemplo: Ley de Gravitación Universal** 🌍
 > 
 > ### Experimento: Fuerza vs Distancia
@@ -891,6 +903,7 @@ dg-publish: true
 > - Intercepto ≈ 0 (consistente con teoría)
 > - Linealización perfecta confirma ley 1/r²
 >
+
 > [!warning] **Precauciones en Análisis Hiperbólico** ⚠️
 > 
 > ### Problemas Experimentales:
@@ -995,6 +1008,7 @@ dg-publish: true
 > y = ax^n + b     →  Ajuste no lineal directo
 > ```
 >
+
 > [!success] 🔧 Proceso Sistemático de Análisis
 > 
 > ```mermaid
@@ -1095,6 +1109,7 @@ dg-publish: true
 > Tiempo de relajación: τ = 1/γ = 1.89 s
 > ```
 >
+
 > [!example] **Estudio de Caso: Ley de Enfriamiento de Newton** 🌡️
 > 
 > ### Experimento: Enfriamiento de Agua Caliente
@@ -1233,6 +1248,7 @@ dg-publish: true
 > - Evitar sobreajuste con muchos parámetros
 > - Capacidad predictiva sobre complejidad
 >
+
 > [!warning] **Errores Comunes en Selección de Modelos** ❌
 > 
 > ### Problemas Frecuentes:

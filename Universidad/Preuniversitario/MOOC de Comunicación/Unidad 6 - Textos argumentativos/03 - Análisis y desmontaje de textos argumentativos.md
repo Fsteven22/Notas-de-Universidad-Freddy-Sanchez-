@@ -30,6 +30,7 @@ dg-publish: true
 >     G --> H
 > ```
 >
+
 > [!success]- ✅ Qué revisar en cada fase
 >
 > | Fase | Pregunta guía | Qué buscar |
@@ -80,6 +81,7 @@ dg-publish: true
 > 4. Arg. 1 sólido si la fuente es verificable; Arg. 2 más débil por posible sesgo de confirmación (solo reportes de participantes). Pediría muestra, metodología y fuentes contrarias.
 > 5. Oración 1: introducción (tesis). Oraciones 2-3: desarrollo (argumentos). Oración 4: conclusión (reiteración + propuesta legislativa).
 >
+
 > [!example]- Ejercicio 03.2 — Identificar falacias comunes I
 >
 > **Instrucciones:** nombra la falacia de cada enunciado (ad hominem, falso dilema, generalización apresurada, autoridad irrelevante, pendiente resbaladiza) y justifica en una frase.
@@ -102,6 +104,7 @@ dg-publish: true
 > | 5 | Pendiente resbaladiza | Predice una cadena exagerada sin probar el vínculo causal |
 > | 6 | Generalización apresurada | Un caso anecdótico no prueba causalidad ni eficacia general |
 >
+
 > [!example]- Ejercicio 03.3 — Sesgo de confirmación y calidad de la evidencia
 >
 > **Instrucciones:** evalúa la evidencia de cada caso y señala si hay sesgo de confirmación o evidencia insuficiente. Propón cómo mejorarla.
@@ -120,6 +123,7 @@ dg-publish: true
 > 4. Evidencia legítima pero desactualizada; actualizar con estudios recientes o justificar la vigencia.
 > 5. Dato selectivo / verdad a medias; mostrar la serie completa y explicar el cambio de tendencia.
 >
+
 > [!example]- Ejercicio 03.4 — Redactar refutaciones sin falacias
 >
 > **Instrucciones:** refuta cada argumento atacando su evidencia o razonamiento, nunca a la persona. Usa datos verificables o preguntas críticas.
@@ -138,6 +142,7 @@ dg-publish: true
 > 4. *"Regular un producto no implica censurar otros; habría que mostrar el mecanismo legal que llevaría de una medida a la otra."* Exige probar la pendiente.
 > 5. *"Un caso no establece causalidad; haría falta un estudio con grupo control antes de recomendarlo a todos."* Señala la generalización apresurada.
 >
+
 > [!example]- Ejercicio 03.5 — Contraargumentación y análisis completo
 >
 > **Instrucciones:** toma la tesis *"El teletrabajo regulado mejora la productividad"* y realiza un análisis completo.
@@ -166,30 +171,35 @@ dg-publish: true
 > 2. Identifica la falacia: *"O reducimos impuestos a cero, o el país se queda sin empresas."*
 > 3. Señala qué falta validar en: *"Este suplemento funciona, mi vecino lo tomó y mejoró."*
 >
+
 > [!example]- 🟢 Respuestas — Nivel Básico
 >
 > 1. Podría ser una apelación a la autoridad irrelevante *a la inversa* (descartar por falta de credenciales sin evaluar el contenido) — depende del contexto; lo clave es que descarta el argumento sin analizar su evidencia.
 > 2. Falso dilema — omite opciones intermedias (reducción parcial, incentivos focalizados, etc.).
 > 3. Falta evidencia más allá de un caso anecdótico (generalización apresurada); un solo caso no permite establecer causalidad.
 >
+
 > [!question] 🟡 Nivel Intermedio
 >
 > 1. Toma un argumento publicitario real (de una marca que conozcas) y evalúa qué tipo de evidencia usa y si hay sesgo de confirmación.
 > 2. Explica la diferencia entre una generalización apresurada y una estadística legítima basada en una muestra representativa.
 > 3. Reescribe este argumento ad hominem como una crítica válida al contenido: *"No hay que escuchar su propuesta, ese político siempre miente."*
 >
+
 > [!example]- 🟡 Respuestas — Nivel Intermedio
 >
 > 1. Respuesta abierta según el ejemplo elegido; la clave es distinguir evidencia verificable de apelación emocional.
 > 2. La diferencia está en el tamaño y representatividad de la muestra: una estadística legítima usa una muestra suficientemente grande y aleatoria; la generalización apresurada extrapola de 1-2 casos no representativos.
 > 3. *"Antes de aceptar esta propuesta, conviene verificar sus cifras con fuentes independientes, dado el historial de declaraciones no verificadas de este político."* — critica la fiabilidad de la fuente sin descartar la propuesta sin análisis.
 >
+
 > [!question] 🔴 Nivel Avanzado
 >
 > 1. Elige un texto argumentativo real (editorial, publicidad, discurso) y aplica las 4 fases de la metodología completa: tesis, argumentos, evidencias, falacias/sesgos.
 > 2. Redacta una refutación fundamentada (no ad hominem) para el argumento más débil que encontraste.
 > 3. Evalúa si el propio texto que elegiste podría estar afectado por sesgo de confirmación del autor, y cómo lo notaste.
 >
+
 > [!example]- 🔴 Respuestas — Nivel Avanzado
 >
 > Respuestas abiertas y dependientes del texto elegido. Al autoevaluar, verifica que la refutación (punto 2) ataque la evidencia o el razonamiento — nunca a la persona — y que la detección de sesgo (punto 3) se apoye en algo verificable (por ejemplo, omisión sistemática de fuentes que contradicen la tesis).
@@ -204,12 +214,14 @@ dg-publish: true
 > - [ ] Reconozco al menos 3 falacias comunes por su nombre
 > - [ ] Distingo evidencia verificable de apelación emocional
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Evalúo la calidad de la evidencia de cada argumento por separado
 > - [ ] Detecto sesgo de confirmación en un texto
 > - [ ] Diferencio una crítica legítima de un ataque ad hominem
 >
+
 > [!note] 🎯 Nivel Avanzado
 >
 > - [ ] Aplico la metodología completa de 4 fases a un texto real
@@ -256,6 +268,7 @@ mindmap
 >
 > [1] MOOC *Comunicación Efectiva*, Unidad 6 — Textos argumentativos, Nota 03: "Análisis y desmontaje de textos argumentativos".
 >
+
 > [!quote] 🔗 Conexiones
 >
 > - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/00 - Índice Unidad 6]] — mapa general de la unidad.

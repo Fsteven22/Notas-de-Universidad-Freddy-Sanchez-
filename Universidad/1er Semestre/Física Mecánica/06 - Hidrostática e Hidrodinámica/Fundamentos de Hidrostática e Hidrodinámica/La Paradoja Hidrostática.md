@@ -37,6 +37,7 @@ dg-publish: true
 > - **Realidad física**: Solo importa la altura de la columna
 > - **Principio subyacente**: La presión se transmite por igual (Pascal)
 >
+
 > [!warning]+ Condiciones de Aplicación
 > 
 > - ⚠️ **Fluido incompresible**: Densidad constante
@@ -242,6 +243,7 @@ dg-publish: true
 > 
 > **Resultado**: La presión es la misma independientemente del tanque considerado.
 >
+
 > [!example]+ Problema Resuelto: Torre de Agua
 > 
 > ### 🗼 Cálculo de Presión de Servicio
@@ -275,6 +277,7 @@ dg-publish: true
 > - [[Equilibrio de Fluidos]]
 > - [[El Principio de Pascal]]
 >
+
 > [!success]+ Para Profundizar
 > 
 > - [[Hidrostática Avanzada]]

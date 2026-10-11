@@ -14,6 +14,7 @@ dg-publish: true
 > 
 > $$\int_{-a}^a f(x) dx = 2\int_0^a f(x) dx$$
 >
+
 > [!info] 🎨 **Interpretación Geométrica** La gráfica de una función par es **simétrica respecto al eje y**. Por tanto, el área bajo la curva desde $-a$ hasta $0$ es igual al área desde $0$ hasta $a$.
 
 ### 📐 Funciones Impares
@@ -23,6 +24,7 @@ dg-publish: true
 > 
 > $$\int_{-a}^a f(x) dx = 0$$
 >
+
 > [!info] 🎨 **Interpretación Geométrica** La gráfica de una función impar tiene **simetría puntual respecto al origen**. Las áreas positiva y negativa se cancelan exactamente.
 
 ```mermaid
@@ -117,6 +119,7 @@ graph TD
 
 > [!info] 🔄 **Definición de Función Periódica** Una función $f$ es **periódica** con período $T > 0$ si: $$f(x + T) = f(x) \text{ para todo } x \text{ en el dominio}$$
 >
+
 > [!tip] 🏆 **Teorema Fundamental de Periodicidad** Si $f$ es continua y periódica con período $T$, entonces para cualquier número real $a$:
 > 
 > $$\int_a^{a+T} f(x) dx = \int_0^T f(x) dx$$
@@ -402,6 +405,7 @@ flowchart TD
 > 
 > Equivalentemente: $$f(c) = \frac{1}{b-a}\int_a^b f(x) dx$$
 >
+
 > [!warning] 📋 **Condiciones Necesarias**
 > 
 > - $f$ debe ser **continua** en $[a,b]$

@@ -139,6 +139,7 @@ dg-publish: true
 > - El plano tangente existe en todo punto
 > - La regla de la cadena funciona
 >
+
 > [!example] 📝 Contraejemplo 1: Derivadas Existen pero NO es Diferenciable
 > 
 > **Función:**
@@ -193,6 +194,7 @@ dg-publish: true
 > 
 > **Moraleja:** Existencia de derivadas parciales NO implica diferenciabilidad.
 >
+
 > [!example] 📝 Contraejemplo 2: Función NO C¹
 > 
 > **Función:**
@@ -310,6 +312,7 @@ dg-publish: true
 > - De hecho, múltiples valores de $\theta$ dan el mismo punto $(0,0)$
 > - No hay inversa única en el origen
 >
+
 > [!example] 📝 Ejemplo 2: Función Compleja
 > 
 > **Función:** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$ (corresponde a $f(z) = z^2$ en el plano complejo)
@@ -339,6 +342,7 @@ dg-publish: true
 > 
 > **Interpretación:** Localmente cerca de $(1,0)$, la inversa es aproximadamente $(x,y) \mapsto (x/2, y/2)$ más términos de orden superior.
 >
+
 > [!example] 📝 Ejemplo 3: Transformación NO Invertible
 > 
 > **Función:**
@@ -576,6 +580,7 @@ dg-publish: true
 > - ¡Podemos despejar $x$ como función de $y$!
 > - $x = \sqrt{1-y^2}$ cerca de $y=0$
 >
+
 > [!example] 📝 Ejemplo 2: Superficie en 3D
 > 
 > **Ecuación:** $$F(x,y,z) = x^2 + y^2 + z^2 - z = 0$$
@@ -629,6 +634,7 @@ dg-publish: true
 > 
 > El plano tangente en $(0,0,1)$ es horizontal: $z = 1$.
 >
+
 > [!example] 📝 Ejemplo 3: Sistema de Ecuaciones
 > 
 > **Sistema:**
@@ -952,6 +958,7 @@ dg-publish: true
 > 
 > c) $\sin(xy) + \cos(x+y) = 1$ en el punto $(0, 0)$
 >
+
 > [!example] 💪 Práctica Nivel Intermedio
 > 
 > **4. Teorema de la función inversa:**
@@ -988,6 +995,7 @@ dg-publish: true
 > 
 > c) Calcular la Jacobiana de la función implícita
 >
+
 > [!example] 💪 Práctica Nivel Avanzado
 > 
 > **7. Demostración:**
@@ -1084,6 +1092,7 @@ dg-publish: true
 > 
 > $$\boxed{\frac{dy}{dx} = -\frac{3}{4}}$$
 >
+
 > [!success] 🔑 Respuestas Ejercicios Intermedios
 > 
 > **4a)** $\vec{F}(x,y) = \begin{bmatrix} x + y \ xy \end{bmatrix}$
@@ -1132,6 +1141,7 @@ dg-publish: true
 > 
 > Solución correcta: buscar puntos que satisfagan ambas ecuaciones.
 >
+
 > [!success] 🔑 Respuestas Ejercicios Avanzados
 > 
 > **9a)** $\vec{F}(x,y) = \begin{bmatrix} x^2 - y^2 \ 2xy \end{bmatrix}$

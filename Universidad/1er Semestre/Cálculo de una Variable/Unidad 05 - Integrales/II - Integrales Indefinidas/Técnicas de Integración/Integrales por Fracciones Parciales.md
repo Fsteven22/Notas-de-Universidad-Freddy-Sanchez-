@@ -8,6 +8,7 @@ dg-publish: true
 
 > [!info] 💡 Concepto Clave La **integración por fracciones parciales** es una técnica fundamental para resolver integrales de funciones racionales. Consiste en descomponer una fracción compleja en suma de fracciones más simples que podemos integrar fácilmente.
 >
+
 > [!tip] 📌 ¿Cuándo usar este método?
 > 
 > - Cuando tenemos una función racional $\frac{P(x)}{Q(x)}$
@@ -25,6 +26,7 @@ dg-publish: true
 > - **$\frac{P(x)}{Q(x)}$**: Función racional a integrar
 > - **$A, B, C, ...$**: Constantes a determinar en la descomposición
 >
+
 > [!warning] ⚠️ Tipos de factores en el denominador
 > 
 > - 🔹 **Lineales distintos**: $(ax + b)$
@@ -42,6 +44,7 @@ dg-publish: true
 > 
 > **Si** $\text{grado}(P(x)) < \text{grado}(Q(x))$: ✅ Continuar al paso 2
 >
+
 > [!tip] 🧱 **Paso 2: Factorización del denominador**
 > 
 > Descomponer $Q(x)$ completamente:
@@ -50,6 +53,7 @@ dg-publish: true
 > - Identificar factores cuadráticos irreducibles
 > - Determinar multiplicidades
 >
+
 > [!tip] 🧮 **Paso 3: Establecer la descomposición**
 
 ```mermaid
@@ -73,6 +77,7 @@ graph TD
 > - Expande el lado derecho
 > - Iguala coeficientes de potencias semejantes
 >
+
 > [!tip] 🧘‍♂️ **Paso 5: Integración**
 > 
 > Integra cada fracción parcial usando fórmulas básicas:
@@ -111,6 +116,7 @@ flowchart LR
 > - **Sistemas de ecuaciones lineales**: Para resolver constantes
 > - **Integración básica**: Aplicación de fórmulas elementales
 >
+
 > [!note] 🔬 **Aplicaciones en Ingeniería**
 > 
 > - **Transformada de Laplace**: Inversión de transformadas racionales
@@ -123,6 +129,7 @@ flowchart LR
 
 > [!example] 🧪 **Problema**: Calcular $\int \frac{x+5}{x^2 + x - 2} dx$
 >
+
 > [!tip] 📝 **Solución paso a paso**
 > 
 > **1. Verificar grado:** ✅ Numerador grado 1 < Denominador grado 2
@@ -140,6 +147,7 @@ flowchart LR
 > 
 > **Forma compacta:** $\ln\left|\frac{(x-1)^2}{x+2}\right| + C$
 >
+
 > [!success] ✅ **Verificación** Podemos verificar derivando el resultado para obtener la función original.
 
 ---
@@ -176,6 +184,7 @@ graph LR
 > - **Usa valores estratégicos** de $x$ para simplificar cálculos
 > - **Verifica tu resultado** derivando la integral obtenida
 >
+
 > [!warning] ⚠️ **Errores comunes**
 > 
 > - Olvidar casos de factores repetidos

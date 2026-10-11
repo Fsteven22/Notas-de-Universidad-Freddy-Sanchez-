@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "Medir es conocer; sin medición precisa, la física sería solo especulación." 📏
 >
+
 > [!info] La medición es el proceso de comparar una cantidad física con un patrón establecido llamado unidad. En física mecánica, las mediciones precisas son fundamentales para validar teorías, diseñar experimentos y obtener resultados confiables que puedan ser reproducidos por otros científicos.
 
 ## 🔧 Conceptos Fundamentales
@@ -35,6 +36,7 @@ dg-publish: true
 > 
 > Ejemplo: L = (1.25 ± 0.01) m
 >
+
 > [!tip] **Tipos de Magnitudes** 🌊
 > 
 > ### Clasificación Principal:
@@ -62,6 +64,7 @@ dg-publish: true
 > |Energía|E = Fd|J (N⋅m)|
 > |Potencia|P = E/t|W (J/s)|
 >
+
 > [!warning] **Sistema Internacional de Unidades (SI)** ⚡
 > 
 > ### Características del SI:
@@ -88,6 +91,7 @@ dg-publish: true
 > |nano|n|10⁻⁹|1 nm = 10⁻⁹ m|
 > |pico|p|10⁻¹²|1 pm = 10⁻¹² m|
 >
+
 > [!success] 🔗 Proceso de Medición
 > 
 > ```mermaid
@@ -107,6 +111,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!note] **Conversión de Unidades** 📝
 > 
 > ### Método del Factor de Conversión:
@@ -175,6 +180,7 @@ dg-publish: true
 > |✅ Pocas fuentes de error|❌ No siempre es posible|
 > |✅ Fácil interpretación|❌ Puede requerir instrumentos específicos|
 >
+
 > [!tip] **Método de Medición Indirecta** 📊
 > 
 > ### Características:
@@ -224,6 +230,7 @@ dg-publish: true
 > 
 > **v = (8.0 ± 0.1) m/s**
 >
+
 > [!example] **Ejemplo 2: Conversión de Unidades** 🔄
 > 
 > ### Problema:
@@ -252,6 +259,7 @@ dg-publish: true
 > 90 km/h × (100000 cm/1 km) × (1 h/3600 s) = 90 × 100000/3600 = 2500 cm/s ✓
 > ```
 >
+
 > [!example] **Ejemplo 3: Análisis Dimensional** 📐
 > 
 > ### Problema:
@@ -281,6 +289,7 @@ dg-publish: true
 > **M**agnitud a medir **U**nidad apropiada  
 > **I**nstrumento correcto **F**actor de conversión **Á**rea de incertidumbre **C**ifras significativas **I**nterpretación física **L**imitaciones del método
 >
+
 > [!tip] **Reglas de Oro para Conversiones** 📏
 > 
 > 1. **Siempre verificar** que las unidades se cancelen correctamente
@@ -339,6 +348,7 @@ dg-publish: true
 > - **Conceptos de proporcionalidad**: Razones y proporciones
 > - **Sistema decimal**: Manejo de potencias de 10
 >
+
 > [!note] **Temas Siguientes**
 > 
 > - [[Uso del Calibrador de Vernier]] - Instrumento de precisión

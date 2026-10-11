@@ -49,6 +49,7 @@ dg-publish: true
 > - [ ] [[02 - Formulación y validación de la tesis]]
 > - [ ] [[03 - Análisis y desmontaje de textos argumentativos]]
 >
+
 > [!note] 📋 Ejercicios formativos (12 en total)
 >
 > **Nota 01 — El texto argumentativo:**

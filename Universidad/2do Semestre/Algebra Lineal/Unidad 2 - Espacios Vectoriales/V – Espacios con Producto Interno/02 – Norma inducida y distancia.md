@@ -1484,6 +1484,7 @@ graph TD
 > 
 > **Respuesta:** La desigualdad se cumple. ✓
 >
+
 > [!example] ✏️ Ejercicio 2: Caso de Igualdad
 > 
 > **Enunciado:** Encontrar λ tal que para u = (2, 1) y v = (λ·2, λ·1), se alcance la igualdad en la desigualdad triangular.
@@ -1551,6 +1552,7 @@ graph TD
 > 
 > **Respuesta:** Queda demostrado por inducción matemática. ∎
 >
+
 > [!example] ✏️ Ejercicio 4: Aplicación Práctica
 > 
 > **Enunciado:** Una persona camina 3 km al este, luego 4 km al norte. ¿Cuál es la distancia mínima al punto de partida? ¿Se cumple la desigualdad triangular?
@@ -1646,6 +1648,7 @@ graph TD
 > 
 > **Respuesta:** Queda demostrado. ∎
 >
+
 > [!example] ✏️ Ejercicio 6: Optimización con Restricciones
 > 
 > **Enunciado:** Dados u, v ∈ ℝ² con ||u|| = 3, ||v|| = 4, encontrar el valor máximo y mínimo posibles para ||u + v||.

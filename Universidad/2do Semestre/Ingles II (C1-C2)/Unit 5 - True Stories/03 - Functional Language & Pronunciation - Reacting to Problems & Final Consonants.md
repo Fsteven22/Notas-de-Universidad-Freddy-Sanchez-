@@ -49,10 +49,12 @@ dg-publish: true
 > |**Asking for a solution**|There must be something you can do. / I'd like to speak to the manager, please. / Is there someone else I could speak to about this, please?|Pedir que alguien resuelva el problema|
 > |**Accepting a solution**|That'll work. / I'm glad it's settled.|Confirmar que la solución ofrecida es aceptable|
 >
+
 > [!example]- 🟢 Ejemplo del libro (resumen del diálogo)
 > 
 > El cliente reacciona pidiendo que revisen de nuevo la reservación y afirmando que debe haber algún error. Al confirmar que no hay mesa disponible, escala pidiendo hablar con el gerente porque debía celebrar el cumpleaños de su esposa esa noche. Cuando le ofrecen una mesa una hora después junto con una disculpa y un gesto de cortesía, el cliente acepta la solución mostrando alivio de que el asunto quedó resuelto.
 >
+
 > [!tip]- 💡 Patrón de escalamiento
 > 
 > Nota el patrón progresivo: primero se **señala el problema** con cortesía (_"I don't understand"_), luego se **pide una solución concreta** (_"I'd like to speak to the manager"_), y solo al final se **acepta** la solución ofrecida. Saltarse directamente a pedir el gerente sin dar oportunidad de resolverlo primero puede sonar innecesariamente agresivo.
@@ -70,6 +72,7 @@ dg-publish: true
 > - **Well, that's life.**
 > - **That's too bad, but hey, ...**
 >
+
 > [!tip]- 💡 Diferencia con "asking for a solution"
 > 
 > Estas frases se usan **después** de haber intentado buscar una solución (o cuando queda claro que no la hay) — no reemplazan el proceso de pedir ayuda primero, sino que marcan el punto en el que decides no insistir más y aceptar la situación con una actitud tranquila.
@@ -82,6 +85,7 @@ dg-publish: true
 > 
 > Cuando algo sale mal en un contexto de servicio al cliente — incluso si el error fue del negocio — el libro recomienda usar un **tono calmado y educado**, en lugar de mostrar enojo o gritar. Levantar la voz o mostrar enojo tiende a hacer que el personal esté **menos dispuesto a ayudar**, no más.
 >
+
 > [!example]- 🟢 Ejemplos de tono apropiado
 > 
 > - _"I'm sorry, sir, but I just rented out the last car."_
@@ -99,10 +103,12 @@ dg-publish: true
 > 
 > Palabras de práctica del libro: **check, mistake, celebrate, ticket, bad, glad**.
 >
+
 > [!warning] ⚠️ Este ejercicio requiere el audio del libro
 > 
 > El ejercicio de práctica (audios 1.51 y 1.52) pide identificar quién pronuncia claramente el sonido consonántico final en cada palabra (columna A o B). **No incluyo aquí las respuestas** porque dependen del audio original. Te recomiendo escuchar los audios 1.51 y 1.52 y completar la tabla tú mismo — si me compartes las respuestas después, las agrego a esta nota.
 >
+
 > [!tip]- 🖥️ Truco para practicar
 > 
 > Exagera deliberadamente la consonante final al practicar en voz alta — pronuncia _check_ casi como si añadieras un pequeño "eco" al final del sonido /k/, sin llegar a agregar una vocal extra (evita decir "check-e"). Practicar frases completas como _"Can you check again, please?"_ ayuda más que practicar la palabra aislada, porque fuerza a mantener la claridad incluso dentro del ritmo natural de la oración.
@@ -158,6 +164,7 @@ graph TD
 > 
 > **3.** ¿Por qué el libro recomienda mantener la calma cuando algo sale mal en un negocio?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** Asking for a solution
@@ -176,6 +183,7 @@ graph TD
 > 
 > **3.** Da un ejemplo de una situación donde no hay solución posible, y responde usando una frase de "accepting bad news".
 >
+
 > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
 > 
 > **1.** _"There must be something you can do — is there another room available?"_
@@ -194,6 +202,7 @@ graph TD
 > 
 > **3.** Reflexiona: ¿por qué crees que mantener un registro calmado es una habilidad importante incluso cuando tienes razón en un reclamo?
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 1 el uso de al menos una frase de cada etapa (reacting, asking, accepting), y un tono consistente con el "register check" del libro (calmado, educado, sin agresividad).
@@ -208,12 +217,14 @@ graph TD
 > - [ ] Reconozco las frases para aceptar una mala noticia.
 > - [ ] Entiendo por qué el tono calmado es más efectivo en un reclamo.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Uso el patrón de escalamiento correcto: reaccionar → pedir solución → aceptar.
 > - [ ] Distingo cuándo usar "accepting a solution" vs. "accepting bad news".
 > - [ ] Pronuncio con claridad las consonantes finales en palabras clave (check, ticket, glad).
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Manejo una conversación completa de reclamo de servicio de forma fluida y educada.
@@ -226,6 +237,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 5: True Stories, pp. 48–49.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]

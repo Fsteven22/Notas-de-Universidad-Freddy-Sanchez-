@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "En la inclinación de un plano se revelan todas las fuerzas fundamentales de la mecánica: el peso, la normal, la fricción y la tensión danzan en perfecta armonía matemática." 📐
 >
+
 > [!info] Los planos inclinados constituyen uno de los sistemas más fundamentales en la mecánica clásica, donde convergen conceptos de cinemática, dinámica, trabajo y energía. Desde rampas simples hasta sistemas complejos con poleas y múltiples objetos, estos problemas nos permiten analizar cómo las fuerzas se descomponen y interactúan en superficies no horizontales, siendo esenciales para comprender desde el movimiento en pendientes hasta máquinas simples.
 
 ## 🎯 Tipos de Planos Inclinados
@@ -33,6 +34,7 @@ dg-publish: true
 > - N = mg cos θ
 > - v² = 2as (para MRUV)
 >
+
 > [!tip] **Plano Inclinado con Fricción** 🏔️
 > 
 > ### Características Principales:
@@ -59,6 +61,7 @@ dg-publish: true
 > - **Subida**: a = -g(sin θ + μₖ cos θ)
 > - **Bajada**: a = g(sin θ - μₖ cos θ)
 >
+
 > [!warning] **Sistemas con Poleas** 🔗
 > 
 > ### Características Principales:
@@ -76,6 +79,7 @@ dg-publish: true
 > 4. **Usar restricciones** del sistema (misma |a|)
 > 5. **Resolver sistema** de ecuaciones
 >
+
 > [!success] 🔗 Descomposición de Fuerzas en Planos Inclinados
 > 
 > ```mermaid
@@ -97,6 +101,7 @@ dg-publish: true
 >     style K fill:#fce4ec
 > ```
 >
+
 > [!note] **Relaciones Trigonométricas Esenciales** 📐
 > 
 > ### En plano inclinado con ángulo θ:
@@ -172,6 +177,7 @@ dg-publish: true
 > 
 > **Paso 5: Velocidad final** v = v₀ + at = 0 + 4.9(1.28) = **6.27 m/s**
 >
+
 > [!example] **Problema 2: Plano Inclinado con Fricción** 🏔️
 > 
 > ### Enunciado:
@@ -199,6 +205,7 @@ dg-publish: true
 > 
 > **Paso 6: Aceleración bajando** ΣF = ma → 12.44 - 7.99 = 3a a = 4.45/3 = **1.48 m/s²**
 >
+
 > [!example] **Problema 3: Sistema con Polea** 🔗
 > 
 > ### Enunciado:
@@ -239,6 +246,7 @@ dg-publish: true
 
 > [!tip] **Mnemotecnia: "PESO"** ⚖️ **P**aralela → **E**s **S**eno del ángulo **E**s la que causa movimiento **S**erpendicular → **O**btiene coseno **O**pone resistencia (normal)
 >
+
 > [!tip] **Regla Visual: "Triángulo de Fuerzas"** 📐
 > 
 > ```

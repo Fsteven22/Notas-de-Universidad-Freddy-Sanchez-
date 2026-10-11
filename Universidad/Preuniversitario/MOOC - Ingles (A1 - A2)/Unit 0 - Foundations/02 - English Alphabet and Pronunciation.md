@@ -166,6 +166,7 @@ dg-publish: true
 > • Beginning of a word: yes /jɛs/, yellow /ˈjɛloʊ/
 > ```
 >
+
 > [!example] Vowel Examples in Words
 > 
 > **Short vowels:**
@@ -269,6 +270,7 @@ dg-publish: true
 > /θ/ - /ð/ (tongue-teeth): think - this
 > ```
 >
+
 > [!success] Consonants by Place of Articulation
 > 
 > **Lips (Bilabial):**
@@ -618,6 +620,7 @@ dg-publish: true
 > 10. S = C   10. L = C    15. G = C    20. B = C
 > ```
 >
+
 > [!example] Exercise 2: Voiced vs Voiceless
 > 
 > **Identify if the consonant sound is voiced (VD) or voiceless (VL):**
@@ -645,6 +648,7 @@ dg-publish: true
 > 25. VL (voiceless)   10. VD (voiced)
 > ```
 >
+
 > [!example] Exercise 3: Pronunciation Practice
 > 
 > **Practice these minimal pairs (words that differ by only one sound):**

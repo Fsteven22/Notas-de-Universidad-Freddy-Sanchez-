@@ -111,6 +111,7 @@ graph TB
 > 
 > **Punto crítico:** (1, 2)
 >
+
 > [!example] 🎯 Ejemplo con Múltiples Puntos Críticos
 > 
 > **Función:** f(x,y) = x³ - 3x + y²
@@ -169,6 +170,7 @@ graph TB
 > 
 > **Nota:** Cuando D > 0, también puedes usar fyy en lugar de fxx para determinar el tipo.
 >
+
 > [!tip] 💡 Mnemónica del Criterio
 > 
 > **Recordatorio fácil:**
@@ -249,6 +251,7 @@ graph TB
 > 
 > **Valor en el mínimo:** $$f(1,2) = 1² + 2² - 2(1) - 4(2) + 5 = 1 + 4 - 2 - 8 + 5 = 0$$
 >
+
 > [!example] 🎨 Ejemplo con Punto Silla: f(x,y) = x² - y²
 > 
 > **PASO 1: Puntos críticos**
@@ -286,6 +289,7 @@ graph TB
 > - En la dirección y: la función baja (parábola -y²)
 > - Parece una silla de montar en el origen
 >
+
 > [!example] 🔥 Ejemplo Complejo: f(x,y) = x³ - 3xy²
 > 
 > **PASO 1: Puntos críticos**
@@ -366,6 +370,7 @@ graph TB
 > |4ac - b² < 0|Paraboloide hiperbólico (silla)|
 > |4ac - b² = 0|Degenerado (cilindro parabólico)|
 >
+
 > [!example] 🎯 Ejemplo Rápido de Cuadrática
 > 
 > f(x,y) = 2x² + xy + 3y² - 4x - 6y + 10
@@ -429,6 +434,7 @@ graph TB
 > |D₁ < 0, D₂ > 0, D₃ < 0|**Máximo relativo**|
 > |Signos alternados diferentes|**Punto silla**|
 >
+
 > [!example] 📊 Ejemplo en 3D
 > 
 > f(x,y,z) = x² + 2y² + 3z²

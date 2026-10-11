@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La presión es la huella que deja la fuerza sobre cada centímetro cuadrado; entender esta relación es dominar los fluidos en equilibrio." 💧
 >
+
 > [!info] La presión en fluidos actúa perpendicular a cualquier superficie sumergida, creando fuerzas que dependen tanto de la profundidad como del área de contacto. Estos problemas son fundamentales para entender fenómenos desde la presión atmosférica hasta el diseño de presas y submarinos.
 
 ## 🔧 Conceptos Fundamentales
@@ -29,6 +30,7 @@ dg-publish: true
 > |Independiente de forma|Solo depende de h vertical|Igual P a misma profundidad|
 > |Transmisión total|Principio de Pascal|ΔP se transmite íntegramente|
 >
+
 > [!tip] **Tipos de Presión** 🌊
 > 
 > ### Clasificación:
@@ -45,6 +47,7 @@ dg-publish: true
 > - **Manómetros**: Presión manométrica
 > - **Altimetría**: Variación de presión atmosférica
 >
+
 > [!warning] **Fuerza sobre Superficies Sumergidas** ⚡
 > 
 > ### Para Superficies Horizontales:
@@ -64,6 +67,7 @@ dg-publish: true
 > - **Componente normal**: F_n = ρg × h̄ × A
 > - **Centro de presión**: h_cp = h_c + I_c/(h_c × A)
 >
+
 > [!success] 🔗 Métodos de Resolución
 > 
 > ```mermaid
@@ -81,6 +85,7 @@ dg-publish: true
 >     style F fill:#f1f8e9
 > ```
 >
+
 > [!note] **Fórmulas Clave** 📐
 > 
 > ### Presión:
@@ -159,6 +164,7 @@ dg-publish: true
 > - h_cp = h̄ + I_c/(h̄ × A) = 5.5 + 4.5/(5.5 × 6) = 5.5 + 0.136 = 5.636m
 > - **El centro de presión está 0.136m por debajo del centroide**
 >
+
 > [!example] **Problema 2: Tanque con Superficie Inclinada** 📐
 > 
 > ### Enunciado:
@@ -185,6 +191,7 @@ dg-publish: true
 > - Presión en el centroide: P̄ = ρgh̄ = 1000 × 9.8 × 2 = 19,600 Pa
 > - **Fuerza normal: F = P̄ × A = 19,600 × 6 = 117,600 N = 117.6 kN**
 >
+
 > [!example] **Problema 3: Presión sobre Superficie Curva** 🌙
 > 
 > ### Enunciado:
@@ -217,6 +224,7 @@ dg-publish: true
 > 
 > **P**rofundidad del centroide → Presión media **R**esultante = Presión × Área **O**rientación perpendicular a superficie **F**uerza actúa en centro de presión (no centroide)
 >
+
 > [!tip] **Regla de los Tercios** 📏
 > 
 > Para superficies rectangulares verticales:
@@ -283,6 +291,7 @@ dg-publish: true
 > - [[Conocimientos Previos a las Prácticas]] - Conceptos básicos
 > - **Matemáticas**: Cálculo integral, centroides y momentos de inercia
 >
+
 > [!note] **Temas Avanzados**
 > 
 > - [[Módulo Volumétrico]] - Compresibilidad de fluidos

@@ -138,6 +138,7 @@ dg-publish: true
 > ✓ Fire!
 > ```
 >
+
 > [!example] Emotion Expression Examples
 > 
 > **Everyday expressions:**
@@ -217,6 +218,7 @@ dg-publish: true
 > ✓ Stop right there!
 > ```
 >
+
 > [!example] Command Examples in Context
 > 
 > **Safety warnings:**
@@ -318,6 +320,7 @@ dg-publish: true
 > ✓ Oh no!
 > ```
 >
+
 > [!example] Interjection Usage Examples
 > 
 > **In sentences:**
@@ -396,6 +399,7 @@ dg-publish: true
 > ✓ How fast time goes!
 > ```
 >
+
 > [!example] Exclamatory Sentence Examples
 > 
 > **With "What":**
@@ -618,6 +622,7 @@ dg-publish: true
 > 30. The store opens at 9 AM. (statement)
 > ```
 >
+
 > [!example] Exercise 2: Appropriate or Inappropriate?
 > 
 > **Instructions:** Decide if the exclamation mark is appropriate (✓) or inappropriate (✗).
@@ -665,6 +670,7 @@ dg-publish: true
 >     → According to the data, sales increased by 10%.
 > ```
 >
+
 > [!example] Exercise 3: Create Exclamatory Sentences
 > 
 > **Instructions:** Transform these statements into exclamatory sentences using "What" or "How".
@@ -721,6 +727,7 @@ dg-publish: true
 >    or: How amazing the view is!
 > ```
 >
+
 > [!example] Exercise 4: Fix the Exclamation Errors
 > 
 > **Instructions:** Correct the exclamation mark errors in these sentences.

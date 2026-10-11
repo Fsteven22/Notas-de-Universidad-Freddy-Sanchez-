@@ -175,6 +175,7 @@
 > - **Scaffolding peer support**: Sistemas que facilitan ayuda entre compañeros
 > - **Multiple contribution paths**: Diferentes formas de aportar valor al equipo
 >
+
 > [!warning]- ## ⚠️ Desafíos y Limitaciones
 > 
 > ### 🚧 Obstáculos Comunes
@@ -259,6 +260,7 @@
 >
 > [!books]- ## 📚 Referencias y Profundización
 > 
+
 > [!quote]- ### Referencias Académicas
 > 
 > - McGonigal, J. (2011). _Reality Is Broken: Why Games Make Us Better and How They Can Change the World_. Penguin Press.
@@ -267,6 +269,7 @@
 > - Hamari, J., Koivisto, J., & Sarsa, H. (2014). "Does Gamification Work? A Literature Review". _Hawaii International Conference on System Sciences_, 3025-3034.
 > - Dichev, C., & Dicheva, D. (2017). "Gamifying Education: What is Known, What is Believed and What Remains Uncertain". _International Journal of Educational Technology_, 14(1), 1-36.
 > 
+
 > [!note]- ### Notas Recomendadas **Prerrequisitos:**
 > 
 > - [[Aprendizaje Colaborativo]] - Fundamentos del trabajo en equipo educativo

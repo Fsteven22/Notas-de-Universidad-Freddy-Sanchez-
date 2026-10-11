@@ -603,16 +603,19 @@ mindmap
 > - [ ] Explico como apagar una fuente (voltaje->corto, corriente->abierto).
 > - [ ] Aplico divisor de voltaje y de corriente como atajo.
 >
+
 > [!note] Nivel Intermedio
 > - [ ] Calculo Vth (circuito abierto) y Rth y hallo IL=Vth/(Rth+RL).
 > - [ ] Convierto Thevenin<->Norton con Vth=IN·RN.
 > - [ ] Determino RL para Pmax y calculo Pmax=Vth2/(4Rth).
 >
+
 > [!note] Nivel Avanzado
 > - [ ] Resuelvo red con 2 fuentes por superposicion sumando respuestas parciales.
 > - [ ] Armo matriz R·I=V y G·V=If por inspeccion.
 > - [ ] Decido teorema optimo segun lo que se pide y topologia.
 >
+
 > [!quote] 🔗 Conexiones
 > - Previo: [[05 - Leyes de Ohm y Kirchhoff]] — base para Thevenin/Norton y mallas/nodos
 > - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — Thevenin aplicado a fuentes

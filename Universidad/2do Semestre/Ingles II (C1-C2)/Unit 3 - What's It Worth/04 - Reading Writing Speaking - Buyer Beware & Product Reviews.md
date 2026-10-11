@@ -261,6 +261,7 @@ dg-publish: true
 > 4. Intentas devolver algo pero el vendedor no acepta devoluciones. → _(return policy / customer service)_
 > 5. El producto llegó exactamente como lo describían. → _(as described / misleading)_
 >
+
 > [!success] ✅ Respuestas — Ejercicio 1
 > 
 > 6. misleading description
@@ -281,6 +282,7 @@ dg-publish: true
 > 9. Compraste la versión más cara de un producto y la calidad fue superior a todas las demás.
 > 10. Compraste algo barato que resultó ser de muy buena calidad inesperadamente.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 2
 > 
 > 11. ✅ Aplica — pagaste poco y obtuviste poca calidad
@@ -303,6 +305,7 @@ dg-publish: true
 > > 
 > > _(D)_ If you need headphones for occasional use, these might be fine. But if you rely on them daily, I'd recommend spending a bit more.
 >
+
 > [!success] ✅ Respuestas — Ejercicio 3
 > 
 > - (A) → Contexto de la compra
@@ -322,6 +325,7 @@ dg-publish: true
 > 14. _THE QUALITY IS BAD THE COLOR IS WRONG THE DELIVERY WAS LATE._
 > 15. _The size runs small — order at least ONE SIZE UP._
 >
+
 > [!success] ✅ Respuestas — Ejercicio 4
 > 
 > 16. ✅ — una sola palabra en CAPS para énfasis positivo

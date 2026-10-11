@@ -128,7 +128,7 @@ dg-publish: true
 > son particiones de X.
 > 
 > Sin embargo, {{1,2},{2,3}} **no** es partición porque los conjuntos no son disjuntos (el 2 aparece en ambos).
-
+>
 > [!abstract] 📐 Teorema 2 — Partición ⟹ Equivalencia
 > 
 > Sea 𝒮 una partición de X. Definamos una relación R sobre X por:
@@ -153,7 +153,7 @@ dg-publish: true
 > - [x] = [b] ⟺ aRb.
 > - Si [a] ≠ [b], entonces [a] ∩ [b] = ∅ (son disjuntas).
 > - ⋃ₐ [a] = X (cubren todo X).
-
+>
 > [!abstract] 📐 Teorema 3 — Equivalencia ⟹ Partición (Conjunto Cociente)
 > 
 > Si R es una relación de equivalencia sobre X, entonces la familia:

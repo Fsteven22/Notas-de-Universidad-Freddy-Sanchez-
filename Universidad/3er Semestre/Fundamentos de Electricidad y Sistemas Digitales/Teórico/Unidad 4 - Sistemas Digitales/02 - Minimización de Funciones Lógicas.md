@@ -34,6 +34,7 @@ dg-publish: true
 > 
 > Por ejemplo, para la combinación $A=1, B=0, C=1$: el minterm es $m = A\overline{B}C$, y el maxterm es $M = \overline{A}+B+\overline{C}$.
 >
+
 > [!note] 📋 SOP — Sum of Products (Suma de Productos)
 > 
 > La forma **SOP** es la **suma de todos los minterms** cuya salida sea 1 en la tabla de verdad.
@@ -51,6 +52,7 @@ dg-publish: true
 > 
 > $$F_1 = \sum(m_1,m_2,m_6,m_7) = \sum(1,2,6,7) = \overline{A},\overline{B}C + \overline{A}B\overline{C} + AB\overline{C} + ABC$$
 >
+
 > [!note] 📋 POS — Product of Sums (Producto de Sumas)
 > 
 > La forma **POS** es el **producto de todos los maxterms** cuya salida sea 0 en la tabla de verdad.
@@ -59,6 +61,7 @@ dg-publish: true
 > 
 > $$F_1 = \prod(M_0,M_3,M_4,M_5) = \prod(0,3,4,5) = (A+B+C)(A+\overline{B}+C)(A+\overline{B}+\overline{C})(\overline{A}+\overline{B}+\overline{C})$$
 >
+
 > [!success] 📊 SOP vs. POS
 > 
 > |Característica|SOP (Suma de Productos)|POS (Producto de Sumas)|
@@ -92,6 +95,7 @@ graph TD
 > 
 > Un **mapa de Karnaugh (MK)** es una representación gráfica de la tabla de verdad, ordenada de forma que **cada celda difiere de sus vecinas en solo 1 bit** (código Gray). Se crea un mapa por cada salida del sistema digital. En la práctica se usa hasta con **5 variables**; con más variables el mapa deja de ser manejable a mano y se prefieren métodos algorítmicos (como Quine-McCluskey).
 >
+
 > [!note] 📋 Adyacencia lógica
 > 
 > Si una función tiene $n$ variables de entrada, cada celda del mapa tiene exactamente $n$ celdas **vecinas** con adyacencia lógica (horizontal o vertical — nunca diagonal). Esta adyacencia es la representación visual del **teorema de adyacencia**:
@@ -100,6 +104,7 @@ graph TD
 > 
 > Es decir, dos minterms adyacentes que difieren en una sola variable se combinan eliminando esa variable.
 >
+
 > [!note] 📋 Reglas para formar grupos
 > 
 > - Se agrupan **1's** entre celdas vecinas (adyacencia horizontal o vertical).
@@ -107,6 +112,7 @@ graph TD
 > - **Mientras más grande el grupo, mejor la minimización** (más variables se eliminan).
 > - Los **bordes y esquinas** del mapa también son adyacentes entre sí (el mapa "se envuelve" como un cilindro/toro) — no lo olvides al buscar grupos.
 >
+
 > [!example]- 🟢 Ejemplo — Mapa de 2 variables
 > 
 > Tabla con $F=1$ en $A=1,B=0$ y $A=1,B=1$ (columna $A=1$ completa):
@@ -120,6 +126,7 @@ graph TD
 > 
 > $$\overline{A}B + AB = B(\overline{A}+A) = B$$
 >
+
 > [!example]- 🟢 Ejemplo — Mapa de 3 variables ($A$, $B$, $C$)
 > 
 > |AB\C|0|1|
@@ -136,6 +143,7 @@ graph TD
 > 
 > $$F = \overline{A},\overline{C} + A\overline{B}$$
 >
+
 > [!example]- 🟢 Ejemplo — Mapa de 4 variables, combinando grupos en dos pasos
 > 
 > Se identifican primero parejas y luego se combinan entre sí si son adyacentes:
@@ -158,6 +166,7 @@ graph TD
 > 
 > Como ya viste en [[07 - Lógica fija y tablas de verdad]] (Unidad 3), NAND y NOR son **funcionalmente completas**: cualquier función booleana puede construirse usando únicamente una de ellas. Esto simplifica el inventario de CI necesarios en un diseño real (menos referencias distintas que comprar, almacenar y soldar).
 >
+
 > [!success] 📊 Equivalencias: NOT, AND y OR con NAND / NOR únicamente
 > 
 > |Función|Con puertas NAND|Con puertas NOR|
@@ -182,6 +191,7 @@ graph TD
 > 
 > **3.** Escribe la expresión SOP directa (sin minimizar) de una función de 2 variables que vale 1 únicamente cuando $A=1,B=0$.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** $m = \overline{A}BC$; $M = A+\overline{B}+\overline{C}$.
@@ -190,6 +200,7 @@ graph TD
 > 
 > **3.** $F = A\overline{B}$ (un único minterm, ya que solo hay una combinación en 1).
 >
+
 > [!question] 📋 Nivel 2 — Intermedio
 > 
 > **4.** Verifica algebraicamente que $F_1=\sum(1,2,6,7)$ (ver tabla de la sección SOP) corresponde efectivamente a $\overline{A},\overline{B}C+\overline{A}B\overline{C}+AB\overline{C}+ABC$, evaluando la expresión en $A=1,B=1,C=0$ (fila del minterm 6).
@@ -198,6 +209,7 @@ graph TD
 > 
 > **6.** Implementa una compuerta OR de 2 entradas usando únicamente compuertas NOR (usa la tabla de equivalencias).
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 > 
 > **4.** En $A=1,B=1,C=0$: $\overline{A},\overline{B}C=0$, $\overline{A}B\overline{C}=0$, $AB\overline{C}=1\cdot1\cdot1=1$, $ABC=0$. Suma total $=1$, que coincide con $F_1=1$ en la fila $A=1,B=1,C=0$ (minterm 6) de la tabla. ✅
@@ -206,6 +218,7 @@ graph TD
 > 
 > **6.** $OR(A,B) = NOR(NOR(A,B),NOR(A,B))$ — es decir, se conecta una compuerta NOR normal, y su salida se vuelve a pasar por otra NOR con ambas entradas unidas (actuando como inversor), negando el resultado de la primera NOR.
 >
+
 > [!question] 📋 Nivel 3 — Avanzado
 > 
 > **7.** Minimiza $F(A,B,C,D)=\sum m(1,2,4,6,9)$ usando mapa de Karnaugh.
@@ -214,6 +227,7 @@ graph TD
 > 
 > **9.** Retoma el circuito de la nota anterior ($N_1=A\cdot B$, $N_2=\overline{C}$, $N_3=\overline{A+B}$, $N_4=N_2\cdot N_3$, $F=N_1+N_4$) y describe, usando la tabla de equivalencias, cómo reimplementarlo empleando **únicamente** compuertas NAND.
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 > 
 > **7.** Ubicando los minterms 1, 2, 4, 6, 9 en el mapa de 4 variables se forman tres parejas primas (ninguna se puede agrandar a grupo de 4):
@@ -242,12 +256,14 @@ graph TD
 > - [ ] Distingo la forma SOP de la forma POS y sé cuándo se construye cada una (a partir de 1's o de 0's).
 > - [ ] Aplico el teorema de adyacencia ($AB+\overline{A}B=B$) para simplificar un par de términos.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > 
 > - [ ] Construyo un mapa de Karnaugh de 3 o 4 variables a partir de una lista de minterms.
 > - [ ] Identifico grupos válidos de $2^k$ celdas adyacentes, incluyendo adyacencias por borde/esquina.
 > - [ ] Implemento AND, OR o NOT usando únicamente compuertas NAND o únicamente NOR.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > 
 > - [ ] Minimizo una función de 4 variables completa usando MK, identificando los grupos primos esenciales.
@@ -287,6 +303,7 @@ mindmap
 > 
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre mapas de Karnaugh y minimización booleana.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Introducción a la Electrónica Digital]] — tema previo de la unidad: sistemas de numeración, tablas de verdad y lógica positiva/negativa/mixta.

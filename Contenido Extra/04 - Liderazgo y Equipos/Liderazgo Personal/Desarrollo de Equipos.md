@@ -2,6 +2,7 @@
 
 > [!quote] _"Individualmente somos una gota. Juntos somos un océano. El desarrollo de equipos no es solo formar un grupo, es crear una sinergia donde el todo sea exponencialmente mayor que la suma de sus partes."_ - Ryunosuke Satoro (adaptado)
 >
+
 > [!info] 👥 **Definición y Fundamentos** El **desarrollo de equipos** es el proceso sistemático y continuo de mejorar la efectividad de un grupo de personas que trabajan juntas, optimizando su colaboración, comunicación, rendimiento y cohesión para alcanzar objetivos comunes de manera excepcional.
 > 
 > ### Elementos Fundamentales de un Equipo
@@ -12,6 +13,7 @@
 > - **Identidad de Equipo**: Sentido de pertenencia y orgullo grupal
 > - **Sinergia Operacional**: Coordinación fluida y complementariedad
 >
+
 > [!example] 🔄 **Modelo de Desarrollo de Equipos de Tuckman**
 > 
 > ```mermaid
@@ -45,6 +47,7 @@
 > |**Performing**|Variable|Optimización continua, desafíos|Delegativo|
 > |**Adjourning**|1-2 semanas|Cierre, celebración, reflexión|Celebrativo|
 >
+
 > [!tip] 🎯 **Características de Equipos de Alto Rendimiento**
 > 
 > ### Los 5 Pilares de la Excelencia Grupal
@@ -113,6 +116,7 @@
 > - **Proporción de Géneros**: Equipos mixtos superan homogéneos
 > - **Memoria Transactiva**: Conocimiento distribuido especializado
 >
+
 > [!success] 🛠️ **Herramientas de Desarrollo de Equipos**
 > 
 > ### Diagnóstico de Equipos
@@ -180,6 +184,7 @@
 >     style D fill:#fce4ec,stroke:#ad1457
 > ```
 >
+
 > [!example] 🎪 **Roles de Equipo - Modelo Belbin**
 > 
 > ### Los 9 Roles Esenciales
@@ -205,6 +210,7 @@
 >     "Roles Cerebrales" : 30
 > ```
 >
+
 > [!warning] ⚠️ **Disfunciones de Equipos - Modelo Lencioni**
 > 
 > ### Las 5 Disfunciones Piramidales
@@ -240,6 +246,7 @@
 > |**Evitar Accountability**|Publicar objetivos|Progress Reviews, Team Scoreboard|1-3 meses|
 > |**Ignorar Resultados**|Scoreboard público|Team Rewards, Individual Sacrifices|Continuo|
 >
+
 > [!quote] 📚 **Técnica de Estudio Específica: Método DEVELOP**
 > 
 > ### D.E.V.E.L.O.P para Maestría en Desarrollo de Equipos
@@ -311,6 +318,7 @@
 > |**Team Effectiveness Survey**|Semestral|30 min|Todo el equipo|Evaluación integral|
 > |**Peer Recognition System**|Continuo|2-5 min|Individual|Refuerzo positivo|
 >
+
 > [!success] 🌟 **Equipos Virtuales y Remotos**
 > 
 > ### Desafíos Específicos del Trabajo Remoto
@@ -346,6 +354,7 @@
 >       Decision logs
 > ```
 >
+
 > [!example] 🎯 **Casos de Éxito en Desarrollo de Equipos**
 > 
 > ### Spotify - Modelo de Squads Ágiles
@@ -382,6 +391,7 @@
 > - **APIs**: Comunicación solo through interfaces definidas
 > - **Innovation**: Libertad para experimentar e iterar
 >
+
 > [!quote] 📖 **Referencias y Recursos Adicionales**
 > 
 > ### Lecturas Fundamentales
@@ -398,6 +408,7 @@
 > - **15Five**: Check-ins regulares y feedback continuo
 > - **Retrium**: Retrospectivas estructuradas y análisis
 >
+
 > [!note] 🔗 **Notas Relacionadas y Prerequisites**
 > 
 > ### Prerrequisitos Recomendados

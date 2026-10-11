@@ -98,6 +98,7 @@ dg-publish: true
 > |It's + % + material, so it's + characteristic|It's 100% wool, so it's very warm|
 > |Made of + material + with + detail|Made of leather with metal details|
 >
+
 > [!success] 🎨 Describing Characteristics
 > 
 > **Frases para características físicas:**
@@ -175,6 +176,7 @@ dg-publish: true
 >    It's very durable and keeps drinks cold for 24 hours.
 > ```
 >
+
 > [!tip] 🌍 Describing Origin & Production
 > 
 > **Frases para el origen:**
@@ -285,6 +287,7 @@ dg-publish: true
 > ✅ It's transported by sea
 > ```
 >
+
 > [!success] 🌱 Sustainability & Quality Language
 > 
 > **Frases sobre sostenibilidad:**
@@ -395,6 +398,7 @@ dg-publish: true
 >       Otherwise, it's $5.
 > ```
 >
+
 > [!tip] 🌍 Import/Export Language
 > 
 > **Frases sobre comercio internacional:**
@@ -484,6 +488,7 @@ dg-publish: true
 > de-LIV-er-y        (tap on LIV)
 > ```
 >
+
 > [!success] 🔗 Linking & Connected Speech
 > 
 > **Linking en frases comunes:**
@@ -532,6 +537,7 @@ dg-publish: true
 > Natural:    /ɪtsˈveri djʊərəblənd strɒŋ/
 > ```
 >
+
 > [!tip] 🎯 Intonation Patterns
 > 
 > **Describing products (falling intonation):**

@@ -35,6 +35,7 @@ dg-publish: true
 > 
 > El **past perfect** se usa para hablar de algo que ocurrió **antes** de otro evento en el pasado. Cuando hay dos eventos completados en el pasado, el evento que ocurrió **primero** (el más antiguo) se marca con past perfect, y el evento que ocurrió **después** se marca con simple past.
 >
+
 > [!note] 📋 Reglas básicas
 > 
 > |Regla|Detalle|
@@ -43,15 +44,18 @@ dg-publish: true
 > |**Con dos eventos pasados**|El evento que ocurrió **después** se marca con **simple past**.|
 > |**Formación**|`had` + **participio pasado**|
 >
+
 > [!example]- 🟢 Ejemplos del libro (contexto: historias enviadas a PitchMasters)
 > 
 > - _It's about a man and a woman who **had secretly loved** each other for years, but they'd never even spoken._ → el amor secreto (past perfect) es anterior al hecho de nunca haberse hablado.
 > - _A woman **had written** stories for years but hadn't had the courage to submit them._ → escribir por años (past perfect) es anterior al hecho de no tener el valor de enviarlas.
 >
+
 > [!tip]- 💡 Truco para identificar cuál evento va primero
 > 
 > Pregúntate: _¿cuál de los dos eventos, si los pongo en una línea de tiempo, ocurrió más atrás en el pasado?_ Ese evento **siempre** lleva `had + participio`, sin importar el orden en que aparezcan las cláusulas en la oración. Por ejemplo: _"He was surprised that he had never seen that photo before"_ — aunque "was surprised" aparece primero en la oración, el evento que ocurrió antes cronológicamente es "had never seen" (nunca haber visto la foto es anterior al momento de la sorpresa).
 >
+
 > [!warning] ⚠️ Error común
 > 
 > No asumas que el orden de las palabras en la oración indica el orden cronológico de los eventos. El **past perfect** es precisamente la herramienta gramatical que aclara ese orden, independientemente de qué cláusula se mencione primero.
@@ -64,6 +68,7 @@ dg-publish: true
 > 
 > Estas dos formas describen una acción que **fue planeada**, pero se usan específicamente para decir que ese plan **no se cumplió** (o cambió). Suelen ir seguidas de `but` y una explicación de qué pasó en realidad.
 >
+
 > [!note] 📋 Reglas básicas
 > 
 > |Regla|Detalle|
@@ -72,11 +77,13 @@ dg-publish: true
 > |**Se usan para decir**|Que un plan **no ocurrió** como se esperaba.|
 > |**Suelen ir seguidas de**|`but` + una explicación de lo que realmente pasó.|
 >
+
 > [!example]- 🟢 Ejemplos del libro
 > 
 > - _We **were going to** get together last night, but she was held up at work._
 > - _An hour before we **were supposed to** meet, she texted me to cancel._
 >
+
 > [!warning] ⚠️ Error común — No omitas el verbo "be"
 > 
 > Es un error frecuente **eliminar el verbo `be`** en estas construcciones, dejando solo `supposed to` o `going to` sueltos.
@@ -85,6 +92,7 @@ dg-publish: true
 > |---|---|
 > |_The show **supposed to** start at 7:30._|_The show **was supposed to** start at 7:30._|
 >
+
 > [!tip]- 💡 ¿Cómo elegir entre going to y supposed to?
 > 
 > En la práctica, ambas formas comunican la misma idea central (un plan que cambió) y en la mayoría de los contextos son intercambiables. La diferencia de matiz es sutil: `was/were supposed to` suena ligeramente más formal o más orientado a una **obligación/expectativa externa** (algo que "debía" pasar), mientras que `was/were going to` suena más neutro, como una simple intención personal que cambió.
@@ -146,6 +154,7 @@ graph TD
 > 
 > **3.** ¿Qué evento ocurrió primero: "She had finished dinner when he called" — cenar o llamar?
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > **1.** had left
@@ -164,6 +173,7 @@ graph TD
 > 
 > **3.** Combina las dos oraciones usando past perfect: _"We arrived at the station. The train had left five minutes earlier."_
 >
+
 > [!success]- ✅ Respuestas — Nivel 2
 > 
 > **1.** had given up
@@ -182,6 +192,7 @@ graph TD
 > 
 > **3.** Explica con tus propias palabras por qué el orden de las palabras en una oración no siempre coincide con el orden cronológico de los eventos, y cómo el past perfect resuelve ese problema.
 >
+
 > [!success]- ✅ Guía de respuesta — Nivel 3
 > 
 > Respuestas abiertas. Se espera en la pregunta 2 el uso correcto del verbo `be` en las construcciones de plan, y al menos dos formas de past perfect bien formadas gramaticalmente.
@@ -196,12 +207,14 @@ graph TD
 > - [ ] Reconozco `was/were going to` y `was/were supposed to` como formas de hablar de planes pasados.
 > - [ ] Identifico el error de omitir el verbo `be` en estas construcciones.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Identifico correctamente cuál de dos eventos pasados ocurrió primero, sin importar el orden en la oración.
 > - [ ] Combino `was/were going to/supposed to` con `but` + explicación de forma natural.
 > - [ ] Distingo el matiz entre `going to` (intención) y `supposed to` (expectativa/obligación externa).
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Narro una historia de fondo completa (biografía o anécdota) combinando past perfect con simple past de forma fluida.
@@ -214,6 +227,7 @@ graph TD
 > 
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 5: True Stories, pp. 44–47.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]

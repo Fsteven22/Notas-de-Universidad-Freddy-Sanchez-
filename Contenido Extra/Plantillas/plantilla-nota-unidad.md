@@ -36,6 +36,7 @@ graph TB
 >
 > (Enunciado preciso con notación. Numerar para poder citarla desde otras notas.)
 >
+
 > [!note] 📋 Definición 2 — (Nombre)
 >
 > (Enunciado preciso. Solo numerar en notas teóricas; en aplicadas basta 1-2.)

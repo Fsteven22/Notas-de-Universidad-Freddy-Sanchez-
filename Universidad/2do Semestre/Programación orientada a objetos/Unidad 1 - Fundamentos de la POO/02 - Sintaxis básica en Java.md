@@ -626,6 +626,7 @@ mindmap
 > }
 > ```
 >
+
 > [!example] 🎯 Práctica 2: Validador de Edad
 > 
 > ```java
@@ -655,6 +656,7 @@ mindmap
 > }
 > ```
 >
+
 > [!example] 🎯 Práctica 3: Conversor de Temperatura
 > 
 > ```java

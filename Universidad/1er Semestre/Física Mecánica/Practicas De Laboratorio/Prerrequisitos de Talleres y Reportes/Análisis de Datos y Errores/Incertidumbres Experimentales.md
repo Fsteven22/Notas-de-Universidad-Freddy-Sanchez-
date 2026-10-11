@@ -6,6 +6,7 @@ dg-publish: true
 
 > [!quote] "La incertidumbre no es ignorancia, sino conocimiento preciso de lo que no podemos conocer con exactitud." 🔍
 >
+
 > [!info] Las incertidumbres experimentales describen el rango de valores dentro del cual esperamos que se encuentre el valor verdadero de una magnitud. Cuando combinamos mediciones para calcular resultados indirectos, las incertidumbres se propagan siguiendo reglas matemáticas específicas que nos permiten estimar la confiabilidad del resultado final.
 
 ## 🔧 Conceptos Fundamentales
@@ -28,6 +29,7 @@ dg-publish: true
 > - **Nivel de confianza**: Generalmente 68% (1σ) o 95% (2σ)
 > - **Distribución**: Asumimos distribución normal para la mayoría de casos
 >
+
 > [!tip] **Fuentes de Incertidumbre** 🌊
 > 
 > ### Instrumentales:
@@ -62,6 +64,7 @@ dg-publish: true
 > - **Deformación**: En mediciones de sólidos
 > - **Fricción**: En experimentos de mecánica
 >
+
 > [!warning] **Propagación de Incertidumbres** ⚡
 > 
 > ### Reglas Fundamentales:
@@ -101,6 +104,7 @@ dg-publish: true
 > |z = √x|u_z = u_x/(2√x)|Reduce incertidumbre relativa|
 > |z = ln(x)|u_z = u_x/x|Incertidumbre relativa se conserva|
 >
+
 > [!success] 🔗 Proceso de Análisis de Incertidumbres
 > 
 > ```mermaid
@@ -120,6 +124,7 @@ dg-publish: true
 >     style G fill:#e0f2f1
 > ```
 >
+
 > [!note] **Método de Derivadas Parciales** 📝
 > 
 > ### Fundamento Matemático:
@@ -216,6 +221,7 @@ dg-publish: true
 > 
 > **v = (8.00 ± 0.13) m/s** con incertidumbre relativa de 1.6%
 >
+
 > [!example] **Ejemplo 2: Área de un Círculo** 🔵
 > 
 > ### Situación:
@@ -248,6 +254,7 @@ dg-publish: true
 > 
 > **A = (86.3 ± 1.6) cm²** con incertidumbre relativa de 1.9%
 >
+
 > [!example] **Ejemplo 3: Densidad (Función Compuesta)** ⚖️
 > 
 > ### Situación:
@@ -291,6 +298,7 @@ dg-publish: true
 > 
 > **S**uma cuadrática para suma/resta **U**sa relativas para producto/división **M**ultiplica por |n| para potencias **A**plica derivadas para funciones complejas **R**edondea apropiadamente el resultado
 >
+
 > [!tip] **Reglas Rápidas de Propagación** 📏
 > 
 > ### Jerarquía de Operaciones:
@@ -423,6 +431,7 @@ dg-publish: true
 > - **Cálculo diferencial**: Derivadas parciales básicas
 > - **Álgebra**: Operaciones con radicales
 >
+
 > [!note] **Temas Siguientes**
 > 
 > - [[Derivadas Parciales]] - Matemáticas para propagación

@@ -33,6 +33,7 @@ dg-publish: true
 > - Tecnología principal: HTML básico.
 > - Ejemplos típicos: páginas corporativas informativas, portales de noticias de solo lectura, primeras versiones de sitios como MSN.
 >
+
 > [!note] 📋 Web 2.0 — La Web social
 > 
 > **Época aproximada:** mediados de los 2000s en adelante.
@@ -42,6 +43,7 @@ dg-publish: true
 > - Tecnologías clave: AJAX (permite actualizar partes de una página sin recargarla completa), lo que habilitó aplicaciones más interactivas.
 > - Ejemplos típicos: redes sociales, blogs, wikis, plataformas de video como YouTube.
 >
+
 > [!note] 📋 Web 3.0 — La Web semántica
 > 
 > **Época aproximada:** concepto en desarrollo desde inicios de los 2000s, sin una fecha de "inicio" tan clara como 1.0/2.0.
@@ -51,6 +53,7 @@ dg-publish: true
 > - Tecnologías asociadas: datos estructurados, ontologías, algoritmos de IA aplicados a grandes volúmenes de datos.
 > - Ejemplos típicos: motores de búsqueda que entienden intención (no solo palabras clave), sistemas de recomendación personalizados.
 >
+
 > [!note] 📋 Web 4.0 — La Web simbiótica
 > 
 > **Concepto emergente**, aún más difuso en su definición que las generaciones anteriores.
@@ -81,6 +84,7 @@ dg-publish: true
 > 
 > A diferencia de versiones de software con lanzamientos formales, las generaciones de la Web (especialmente 3.0 y 4.0) son categorías **retrospectivas y conceptuales** creadas por distintos autores para describir tendencias, no anuncios oficiales de un solo organismo. No hay una definición 100% estandarizada de cuándo empieza cada una.
 >
+
 > [!warning] ⚠️ Web 2.0 no fue un cambio de tecnología pura, sino de uso
 > 
 > Un error común es pensar que Web 2.0 fue "una nueva versión de HTML" o un cambio técnico exclusivamente. En realidad, el cambio más importante fue de **comportamiento**: los usuarios empezaron a generar contenido masivamente, y la tecnología (como AJAX) fue lo que hizo posible soportar ese comportamiento de forma fluida.
@@ -95,16 +99,19 @@ dg-publish: true
 > 2. Da un ejemplo de sitio o servicio típico de Web 1.0 y uno típico de Web 2.0.
 > 3. ¿Qué significa que la Web 3.0 sea "semántica"?
 >
+
 > [!question] 🟨 Nivel 2 — Intermedio
 > 
 > 4. Explica qué tipo de tecnología permitió el salto de Web 1.0 (estática) a Web 2.0 (interactiva).
 > 5. Compara Web 3.0 y Web 4.0: ¿en qué se parecen y en qué se diferencian sus objetivos?
 >
+
 > [!question] 🟥 Nivel 3 — Avanzado
 > 
 > 6. Argumenta por qué Web 3.0 y Web 4.0 son conceptos más difíciles de "fechar" que Web 1.0 y Web 2.0.
 > 7. Un sitio permite a los usuarios comentar y compartir contenido, pero además personaliza automáticamente lo que cada usuario ve según su comportamiento pasado usando IA. ¿En qué generación(es) de la Web encaja este ejemplo? Justifica.
 >
+
 > [!success]- ✅ Respuestas
 > 
 > **Nivel 1:**
@@ -132,11 +139,13 @@ dg-publish: true
 > - [ ] Puedo nombrar y diferenciar las cuatro generaciones de la Web (1.0 a 4.0).
 > - [ ] Puedo dar un ejemplo típico de cada generación.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Entiendo qué cambio tecnológico permitió el salto de Web 1.0 a 2.0.
 > - [ ] Puedo explicar la diferencia de enfoque entre Web 3.0 y Web 4.0.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo argumentar por qué las últimas generaciones de la Web son conceptos más difusos que las primeras.
@@ -150,6 +159,7 @@ dg-publish: true
 > 
 > [1] Material de clase — Unidad 4: Internet, Computación y Sociedad. [2] Aghaei, S., Nematbakhsh, M. A., Farsani, H. K. (2012). _Evolution of the World Wide Web: From Web 1.0 to Web 4.0_. International Journal of Web & Semantic Technology.
 >
+
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Historia de Internet y Cómo Funciona]] — el punto de partida: cómo se creó la Web en 1991 sobre la infraestructura de Internet.

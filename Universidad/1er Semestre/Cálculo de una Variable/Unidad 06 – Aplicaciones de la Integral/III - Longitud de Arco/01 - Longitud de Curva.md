@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] *"La geometría se revela en el movimiento: cada curva traza una historia en el espacio, y su longitud es la medida de ese viaje infinitesimal. Desde el arco más simple hasta las espirales más complejas, la longitud de curva transforma el análisis diferencial en un instrumento de medición geométrica."*
 >
+
 > [!info]+ Definiciones Fundamentales 📏
 > ### Longitud de Arco
 > La **longitud de arco** de una curva es la distancia medida a lo largo de la curva entre dos puntos específicos.
@@ -21,6 +22,7 @@ dg-publish: true
 > ### Curva Rectificable
 > Una curva es **rectificable** si su longitud es finita, es decir, si la integral de longitud de arco converge.
 >
+
 > [!note] Clasificación de Representaciones de Curvas 📐
 > ### Tipos de Parametrizaciones
 > ```mermaid
@@ -41,6 +43,7 @@ dg-publish: true
 >     style E fill:#f3e5f5
 > ```
 >
+
 > [!tip]+ Fórmulas para Diferentes Representaciones 🔬
 > ### 1. Forma Paramétrica
 > **Para $\mathbf{r}(t) = (x(t), y(t))$ con $t \in [a,b]$:**
@@ -62,6 +65,7 @@ dg-publish: true
 > 
 > $$L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2} \, dt = \int_a^b \|\mathbf{r}'(t)\| \, dt$$
 >
+
 > [!example] Ejemplos Clásicos y Cálculos Paso a Paso 📚
 > ### Ejemplo 1: Semicírculo
 > **Curva:** Semicírculo superior de radio $R$: $x^2 + y^2 = R^2$, $y \geq 0$
@@ -144,6 +148,7 @@ dg-publish: true
 >     style F fill:#c8e6c9
 > ```
 >
+
 > [!success] Aplicaciones y Contextos Físicos 🌍
 > ### Aplicaciones en Física
 > 
@@ -173,6 +178,7 @@ dg-publish: true
 > - Medición de distancias reales en mapas
 > - Cálculo de longitudes de ríos y costas
 >
+
 > [!warning] Consideraciones Importantes y Errores Comunes ⚠️
 > ### Condiciones para la Existencia
 > 
@@ -205,6 +211,7 @@ dg-publish: true
 > **R** - Revisar la convergencia de la integral
 > **C** - Comprobar el resultado con casos conocidos
 >
+
 > [!summary]+ Tabla Resumen de Fórmulas 📋
 > ### Fórmulas Principales
 > | Representación | Forma | Fórmula de Longitud | Mejor Uso |
@@ -224,6 +231,7 @@ dg-publish: true
 > Espiral:        Depende del tipo, generalmente compleja
 > ```
 >
+
 > [!success] Puntos Clave para Recordar 🎯
 > 1. **📐 Elemento diferencial**: $ds = ||\mathbf{r}'(t)|| \, dt$ es fundamental
 > 2. **🔧 Elección de parametrización**: Puede simplificar enormemente el cálculo
@@ -251,6 +259,7 @@ dg-publish: true
 > - [[02 - Coordenadas polares]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
+
 > [!tip] Continuación del Tema
 > - [[Área de Superficies de Revolución]]
 > - [[Integrales de Línea]]
@@ -265,6 +274,7 @@ dg-publish: true
 
 > [!info] 💡 **Concepto Central** La longitud de arco es la medida de la distancia a lo largo de una curva entre dos puntos. A diferencia de la distancia en línea recta, considera toda la curvatura del camino. Se calcula mediante integrales definidas que suman infinitos segmentos infinitesimales de la curva.
 >
+
 > [!tip] 🎯 **Idea Fundamental** Imaginemos una curva como una sucesión de segmentos rectos muy pequeños. La longitud total es la suma de todos estos segmentos. Cuando el tamaño tiende a cero, obtenemos la integral que representa la longitud exacta.
 
 ## 📐 Fórmula Fundamental para y = f(x)
@@ -304,6 +314,7 @@ dg-publish: true
 > - $\sqrt{1 + [f'(x)]^2}$: factor de corrección por curvatura
 > - Límites $[a,b]$: intervalo de integración
 >
+
 > [!warning] ⚠️ **Condiciones de Validez**
 > 
 > - $f(x)$ debe ser **continua** en $[a,b]$
@@ -701,6 +712,7 @@ dg-publish: true
 > 
 > **Pista**: $f'(x) = -\tan x$, entonces $1 + [f'(x)]^2 = \sec^2 x$
 >
+
 > [!example] 🧩 **Problema 2: Parametrización inteligente**
 > 
 > Para la astroide $x^{2/3} + y^{2/3} = a^{2/3}$, usa la parametrización: $x = a\cos^3 t, y = a\sin^3 t$

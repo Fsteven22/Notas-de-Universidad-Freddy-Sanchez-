@@ -35,6 +35,7 @@
 > 
 > ---
 >
+
 > [!success]- ## 🛠️ Características Principales
 > 
 > ### Gráfico de Conocimiento
@@ -58,6 +59,7 @@
 >
 > ---
 > 
+
 > [!warning]- ## ⚠️ Un Enfoque diferente a la toma de notas
 > 
 > ### La filosofía de Obsidian

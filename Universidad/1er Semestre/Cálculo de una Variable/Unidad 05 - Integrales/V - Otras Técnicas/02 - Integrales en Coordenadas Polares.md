@@ -6,6 +6,7 @@ dg-publish: true
 
 >[!quote] *"Cuando las curvas danzan en círculos y espirales, el lenguaje cartesiano se vuelve torpe. Las coordenadas polares nos ofrecen la gracia natural para describir el mundo circular, transformando integrales complejas en elegantes expresiones radiales."*
 >
+
 > [!info]+ Fundamentos de Coordenadas Polares 🌀
 > ### Sistema de Coordenadas Polares
 > Un punto en el plano se describe mediante:
@@ -28,6 +29,7 @@ dg-publish: true
 > ### Jacobiano de la Transformación
 > **$$J = \left|\frac{\partial(x,y)}{\partial(r,\theta)}\right| = \begin{vmatrix} \cos\theta & -r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = r$$**
 >
+
 > [!note] Elemento Diferencial de Área 📐
 > ### Deducción del Elemento de Área
 > ```mermaid
@@ -58,6 +60,7 @@ dg-publish: true
 > **Por tanto:**
 > $$dA = \text{anchura} \times \text{altura} = dr \times (r \cdot d\theta) = r \, dr \, d\theta$$
 >
+
 > [!tip] Integral Doble en Coordenadas Polares 🔄
 > ### Fórmula General
 > **Para una función $f(x,y) = f(r\cos\theta, r\sin\theta) = g(r,\theta)$:**
@@ -81,6 +84,7 @@ dg-publish: true
 > 
 > **$$\iint_R f(x,y) \, dA = \int_{\alpha}^{\beta} \int_0^R g(r,\theta) \cdot r \, dr \, d\theta$$**
 >
+
 > [!example] Cálculo de Áreas con Sectores Circulares 📊
 > ### Ejemplo 1: Área de un Círculo
 > **Región:** $x^2 + y^2 \leq a^2$
@@ -164,6 +168,7 @@ dg-publish: true
 > = ∫₀^{2π} 8/3 dθ = (8/3) × 2π = 16π/3
 > ```
 >
+
 > [!success] Casos Especiales y Técnicas Avanzadas 🎯
 > ### Regiones con Simetría Radial
 > **Para funciones que dependen solo de $r$:**
@@ -184,6 +189,7 @@ dg-publish: true
 > | Espiral | $r = a\theta$ | $[0, n\pi]$ |
 > | Lemniscata | $r^2 = a^2\cos(2\theta)$ | $[-\pi/4, \pi/4] \cup [3\pi/4, 5\pi/4]$ |
 >
+
 > [!warning] Errores Comunes y Precauciones ⚠️
 > ### Errores Frecuentes
 > 
@@ -230,6 +236,7 @@ dg-publish: true
 > 3. **🌀 Curvas** definidas naturalmente en polares
 > 4. **⚡ Integrales** que se simplifican con la transformación
 >
+
 > [!summary]+ Fórmulas Clave y Resultados Importantes 📋
 > ### Fórmulas Fundamentales
 > 
@@ -252,6 +259,7 @@ dg-publish: true
 > ∬ e^{-(x²+y²)} dA sobre ℝ²:      I = π
 > ```
 >
+
 > [!success] Conexiones y Aplicaciones 🔗
 > ### Aplicaciones Físicas
 > - **🌡️ Distribuciones de temperatura** con simetría radial
@@ -285,6 +293,7 @@ dg-publish: true
 > - [[Límites y Continuidad]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
+
 > [!tip] Continuación del Tema
 > - [[01 - Coordenadas cilíndricas y esféricas]]
 > - [[Integrales de Línea]]

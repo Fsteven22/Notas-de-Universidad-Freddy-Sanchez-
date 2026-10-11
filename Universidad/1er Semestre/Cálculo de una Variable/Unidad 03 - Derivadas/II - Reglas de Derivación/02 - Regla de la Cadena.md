@@ -34,12 +34,14 @@ dg-publish: true
 > 5. **N**otación: Mantén la notación clara
 > 6. **A**decuada: Simplifica el resultado
 >
+
 > [!example] 🧠 Método Visual: "Cebolla Matemática"
 > Imagina pelar una cebolla matemática:
 > - **Capa externa**: $f(u)$ → deriva $f'(u)$
 > - **Capa interna**: $u = g(x)$ → deriva $g'(x)$
 > - **Resultado**: Multiplica las "cáscaras" derivadas
 >
+
 > [!note] 📝 Técnica de Identificación: "DENTRO-FUERA"
 > 1. **DENTRO**: ¿Qué función está adentro de los paréntesis?
 > 2. **FUERA**: ¿Qué operación se aplica a toda la expresión?
@@ -91,6 +93,7 @@ flowchart TD
 > - $g'(x) = 3$
 > - $\frac{d}{dx}[(3x + 1)^5] = 5(3x + 1)^4 \cdot 3 = 15(3x + 1)^4$
 >
+
 > [!example] 🔢 Ejemplo 2: Función Trigonométrica Compuesta
 > **Resolver**: $\frac{d}{dx}[\sin(x^2)]$
 > 
@@ -103,6 +106,7 @@ flowchart TD
 > - $g'(x) = 2x$
 > - $\frac{d}{dx}[\sin(x^2)] = \cos(x^2) \cdot 2x = 2x\cos(x^2)$
 >
+
 > [!example] 🔢 Ejemplo 3: Exponencial Compuesta
 > **Resolver**: $\frac{d}{dx}[e^{x^3 + 2x}]$
 > 
@@ -115,6 +119,7 @@ flowchart TD
 > - $g'(x) = 3x^2 + 2$
 > - $\frac{d}{dx}[e^{x^3 + 2x}] = e^{x^3 + 2x} \cdot (3x^2 + 2)$
 >
+
 > [!example] 🔢 Ejemplo 4: Composición Triple
 > **Resolver**: $\frac{d}{dx}[\sin(\cos(x^2))]$
 > 
@@ -138,6 +143,7 @@ flowchart TD
 > 
 > Aquí aplicamos regla de la cadena a $y^2$: $\frac{d}{dx}[y^2] = 2y \cdot \frac{dy}{dx}$
 >
+
 > [!info] 📐 Regla de la Cadena Generalizada
 > Para $n$ funciones compuestas:
 > 
@@ -173,6 +179,7 @@ flowchart TD
 > ❌ **Incorrecto**: Aplicar regla de la cadena a $\sin(x)$
 > ✅ **Correcto**: Solo aplicar cuando hay composición real
 >
+
 > [!tip] 💡 Estrategias para Evitar Errores
 > 
 > 1. **Identifica claramente** qué es función externa e interna

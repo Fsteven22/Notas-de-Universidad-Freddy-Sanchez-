@@ -12,8 +12,10 @@ dg-publish: true
 
 > [!info] 💡 Definición Base La **rodadura** es el movimiento de un objeto rígido que gira mientras su centro de masa se traslada. En una **rodadura sin deslizar**, el punto del objeto en contacto con la superficie está instantáneamente en reposo.
 >
+
 > [!note] ⚖️ Condición Universal de Rodadura Sin Deslizar $$v_{CM} = \omega R \quad \text{y} \quad a_{CM} = \alpha R$$
 >
+
 > [!warning] ⚠️ Punto Clave Esta condición cinemática es **fundamental** para ambos métodos y conecta los movimientos lineal y rotacional.
 
 ---
@@ -42,6 +44,7 @@ dg-publish: true
 > - Cuando requieres calcular **aceleraciones**
 > - Para análisis detallado de todas las fuerzas actuantes
 >
+
 > [!note] ⚖️ Sistema de Ecuaciones Fundamentales
 > 
 > ### 1️⃣ Segunda Ley de Newton (Lineal)
@@ -56,6 +59,7 @@ dg-publish: true
 > 
 > $$a_{CM} = \alpha R$$
 >
+
 > [!info] 🔄 Proceso de Resolución (Método Dinámico)
 > 
 > ```mermaid
@@ -90,6 +94,7 @@ dg-publish: true
 > - Aceleración: $a_{CM} = \frac{2F}{3M}$
 > - Fricción: $f_s = \frac{F}{3}$
 >
+
 > [!example] 🔺 Ejemplo 2: Cilindro en Plano Inclinado
 > 
 > **📋 Problema:** Un cilindro rueda por un plano inclinado de ángulo $\theta$. Encontrar la aceleración del centro de masa.
@@ -113,6 +118,7 @@ dg-publish: true
 > - Cuando las fuerzas no conservativas **no realizan trabajo**
 > - Para resolver problemas de manera **más directa**
 >
+
 > [!note] 🔋 Ecuaciones Fundamentales
 > 
 > ### Energía Cinética Total de Rodadura
@@ -127,6 +133,7 @@ dg-publish: true
 > 
 > $$E_{inicial} = E_{final}$$ $$K_{total,i} + U_{g,i} = K_{total,f} + U_{g,f}$$
 >
+
 > [!info] 🔄 Proceso de Resolución (Método Energético)
 > 
 > ```mermaid
@@ -159,6 +166,7 @@ dg-publish: true
 > 
 > **📊 Resultado:** $$v_{CM} = \sqrt{\frac{2gh}{1+\frac{I}{MR^2}}}$$
 >
+
 > [!example] 🏁 Ejemplo 2: Carrera de Objetos
 > 
 > **📋 Problema:** Un disco y un aro con la misma masa y radio se sueltan desde la misma altura. ¿Cuál llega primero?
@@ -185,6 +193,7 @@ dg-publish: true
 >    "Aro: 50% traslación, 50% rotación" : 50
 > ```
 >
+
 > [!note] 📊 Comparación de Velocidades Finales
 > 
 > Para la misma altura $h$:
@@ -203,6 +212,7 @@ dg-publish: true
 > |**📊 Información**|Detalles del movimiento|Resultado final|
 > |**⚡ Aplicación**|Análisis completo|Resultados rápidos|
 >
+
 > [!tip] 🎯 Estrategia de Selección **Usa método dinámico** cuando necesites fuerzas o aceleraciones
 > 
 > **Usa método energético** cuando solo necesites velocidades finales
@@ -267,6 +277,7 @@ dg-publish: true
 > - > [[Energía Cinética]] - Traslacional y rotacional
 >     
 >
+
 > [!quote] 📖 Material de Referencia
 > 
 > - > Tutorial: S25 Rodadura método dinámico.pdf

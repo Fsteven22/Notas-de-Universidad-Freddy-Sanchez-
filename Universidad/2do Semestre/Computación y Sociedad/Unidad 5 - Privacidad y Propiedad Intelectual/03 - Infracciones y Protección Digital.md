@@ -69,6 +69,7 @@ flowchart LR
 > - **Confusión**: aprovechar la similitud para confundir a los usuarios y atraer tráfico hacia otro sitio.
 > - **Aprovechamiento de reputación**: usar el prestigio de la marca ajena para obtener visitas, publicidad o datos.
 >
+
 > [!example] 📝 Ejemplos de cybersquatting
 > 
 > - Un dominio que **simula la marca** para confundir y atraer visitantes (ej. una variación del dominio de Coca-Cola).
@@ -76,6 +77,7 @@ flowchart LR
 > - Un dominio que **aprovecha la confianza del usuario** para redirigirlo a otro sitio o tienda no oficial.
 > - Un dominio que **ofrece supuestos descuentos** de una marca conocida para atraer tráfico o capturar datos.
 >
+
 > [!warning] ⚠️ Cybersquatting vs. Typosquatting — no confundir
 > 
 > Ambos abusan de nombres de dominio, pero de forma distinta:
@@ -95,6 +97,7 @@ flowchart LR
 > 
 > En otras palabras: una plataforma (como una red social o un sitio de hosting) generalmente **no es responsable automáticamente** por contenido infractor que suban sus usuarios — pero **sí adquiere responsabilidad** si, tras ser notificada por el titular de los derechos, **no actúa** para bloquear o eliminar ese contenido.
 >
+
 > [!tip] 🖥️ El mecanismo de "notificación y retiro" en la práctica
 > 
 > Este es el principio detrás de sistemas como los "reportes de copyright" en YouTube o las notificaciones DMCA: la plataforma actúa como intermediario protegido **siempre que responda correctamente** cuando el titular de los derechos reclama una infracción — no se espera que la plataforma vigile proactivamente todo el contenido subido, pero sí que actúe una vez notificada.
@@ -112,6 +115,7 @@ flowchart LR
 > - **Evitar el pirateo** y otras actividades ilegales.
 > - **Establecer un rango de usos permitidos y no permitidos**, en base a diferentes circunstancias y condiciones.
 >
+
 > [!note] 📊 Dos enfoques de restricción DRM
 > 
 > | Enfoque | Cómo funciona |
@@ -119,6 +123,7 @@ flowchart LR
 > | **Restricciones basadas en tecnología (DRM technology based)** | Las restricciones **permanecen adjuntas a la información** cuando se migra, mueve, guarda o copia — el archivo "lleva consigo" la protección a donde vaya. |
 > | **Restricciones basadas en sistema (System based)** | Permiten que los registros e información sean migrados, movidos, guardados o copiados **solo dentro de un sistema cerrado específico** — la protección depende del entorno, no del archivo en sí. |
 >
+
 > [!warning] ⚠️ DRM no es lo mismo que "derecho de autor"
 > 
 > El derecho de autor es el **derecho legal**; el DRM es el **mecanismo técnico** que un titular de derechos usa para hacer cumplir ese derecho de forma automática, sin depender de que alguien lo denuncie después (a diferencia del Safe Harbor, que actúa *después* de una notificación, el DRM intenta **prevenir el uso no autorizado desde el inicio**, técnicamente).
@@ -157,12 +162,14 @@ flowchart TD
 > 2. ¿Por qué Napster fue un caso relevante en el derecho de autor, si la plataforma no subía música directamente?
 > 3. Define con tus palabras qué es el DRM.
 >
+
 > [!success]- ✅ Respuestas — Nivel 1
 > 
 > 1. La **ingeniería directa** sigue el flujo normal de diseño (prediseño → construcción); la **ingeniería inversa** parte de un producto ya construido y trabaja hacia atrás para entender su diseño original.
 > 2. Porque estableció que una plataforma puede ser considerada **contribuidora** a una infracción de derechos de autor si **facilita** que sus usuarios cometan esa infracción a gran escala, aunque no la cometa directamente ella misma.
 > 3. Es un sistema técnico (hardware + software, típicamente cifrado) que un titular de derechos usa para establecer y hacer cumplir qué usos están permitidos sobre una obra digital.
 >
+
 > [!question] 📋 Nivel 2 — Análisis de casos
 > 
 > 4. Alguien registra el dominio "nike-decuento.com" (con una falta de ortografía deliberada) ofreciendo supuestos descuentos de Nike. ¿Es cybersquatting, typosquatting, o ambos a la vez? Justifica.
@@ -175,12 +182,14 @@ flowchart TD
 > > 5. Al no actuar oportunamente tras la notificación, la plataforma **arriesga perder la protección de Safe Harbor** para ese caso específico, ya que el principio exige actuar (bloquear o eliminar el contenido) tras recibir la notificación del titular de los derechos.
 > > 6. Porque las restricciones basadas en tecnología **viajan con el archivo** sin importar a dónde se mueva o copie, mientras que las restricciones basadas en sistema **solo funcionan dentro de un entorno cerrado específico** — si el archivo sale de ese sistema, la protección puede perderse.
 >
+
 > [!question] 📋 Nivel 3 — Aplicación y síntesis
 > 
 > 7. Relaciona la ingeniería inversa con los trade secrets (nota anterior): ¿por qué una empresa que protege su producto solo con trade secret está más expuesta frente a la ingeniería inversa que una empresa que lo protegió con patente?
 > 8. Diseña un escenario donde el mismo actor cometa cybersquatting Y se beneficie de una laguna en el sistema Safe Harbor.
 > 9. ¿Por qué crees que el DRM, siendo una medida puramente técnica, no sustituye la necesidad de mecanismos legales como el Safe Harbor o el derecho de autor?
 >
+
 > [!success]- ✅ Respuestas — Nivel 3
 > 
 > 7. Porque el **trade secret** solo protege contra la apropiación indebida (robo, espionaje), pero **no** contra alguien que llega al mismo resultado de forma legítima mediante ingeniería inversa de un producto legalmente adquirido — mientras que una **patente** protege contra cualquier uso no autorizado de la invención, sin importar el método usado para replicarla.
@@ -197,12 +206,14 @@ flowchart TD
 > - [ ] Puedo definir cybersquatting y distinguirlo de typosquatting.
 > - [ ] Puedo definir el principio de Safe Harbor y el DRM.
 >
+
 > [!success] ✅ Nivel Intermedio
 > 
 > - [ ] Puedo explicar por qué Napster es un caso de referencia legal.
 > - [ ] Puedo identificar si una plataforma mantiene o pierde su protección de Safe Harbor en un escenario dado.
 > - [ ] Puedo diferenciar los dos enfoques de restricción DRM.
 >
+
 > [!success] ✅ Nivel Avanzado
 > 
 > - [ ] Puedo relacionar la vulnerabilidad de los trade secrets frente a la ingeniería inversa con lo visto en la nota anterior.

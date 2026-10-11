@@ -41,6 +41,7 @@ dg-publish: true
 > 
 > > ⚠️ El resto — más del 80% — termina en vertederos, incineradoras o es exportado informalmente hacia países en desarrollo.
 >
+
 > [!note] 📱 Composición de un teléfono móvil descartado
 > 
 > Un teléfono promedio contiene materiales tanto valiosos como peligrosos:
@@ -55,6 +56,7 @@ dg-publish: true
 > 
 > > 💡 El 10% no especificado refleja la complejidad real de la composición — los fabricantes no divulgan todos los materiales, lo que dificulta el reciclaje eficiente.
 >
+
 > [!danger] ☠️ Componentes peligrosos
 > 
 > Muchos dispositivos electrónicos contienen **metales pesados y sustancias tóxicas** que, al ser descartados de forma inadecuada, contaminan suelo, agua y aire:
@@ -67,6 +69,7 @@ dg-publish: true
 > |**Cromo hexavalente**|Recubrimientos metálicos|Carcinógeno, daño al ADN|
 > |**Retardantes de llama bromados**|Carcasas plásticas, placas|Disruptores endocrinos, tóxicos al incinerar|
 >
+
 > [!warning] 🚢 El flujo global de e-waste
 > 
 > Una fracción importante de los desechos electrónicos generados en países desarrollados es **exportada hacia Asia y América Latina**, muchas veces de forma ilegal o bajo etiquetas engañosas como "donaciones" o "equipos usados".
@@ -133,6 +136,7 @@ dg-publish: true
 > |**Reparar**|Talleres de reparación, derecho a reparar (_Right to Repair_)|
 > |**Reciclar**|Entregar en puntos de acopio certificados para recuperar materiales|
 >
+
 > [!tip] 🇪🇨 Iniciativas en Ecuador
 > 
 > Ecuador cuenta con programas concretos para la gestión de e-waste:
@@ -175,6 +179,7 @@ dg-publish: true
 >     style EC2 fill:#f5e1ff
 > ```
 >
+
 > [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030
 > 
 > En 2015, la ONU aprobó la **Agenda 2030** con 17 ODS como hoja de ruta global para erradicar la pobreza, proteger el planeta y garantizar prosperidad para todos.
