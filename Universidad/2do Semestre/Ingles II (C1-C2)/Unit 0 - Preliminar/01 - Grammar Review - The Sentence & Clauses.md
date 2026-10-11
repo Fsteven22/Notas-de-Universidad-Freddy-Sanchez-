@@ -210,4 +210,14 @@ dg-publish: true
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar Review - Gerund, FANBOYS & NOR]]
+> - Complemento: [[03 - Grammar Review - Sentence Types by Structure]]
+
+---
+
 **Tags:** #grammar #review #sentences #clauses #independent #dependent #English #IDIG1007 #ESPOL #unit0

@@ -251,4 +251,14 @@ dg-publish: true
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Grammar Review - The Sentence & Clauses]]
+> - Siguiente: [[03 - Grammar Review - Sentence Types by Structure]]
+
+---
+
 **Tags:** #grammar #review #gerund #fanboys #nor #conjunctions #English #IDIG1007 #ESPOL #unit0

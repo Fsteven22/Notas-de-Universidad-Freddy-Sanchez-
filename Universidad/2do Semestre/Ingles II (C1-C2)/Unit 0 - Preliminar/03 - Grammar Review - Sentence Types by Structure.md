@@ -231,4 +231,14 @@ dg-publish: true
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[02 - Grammar Review - Gerund, FANBOYS & NOR]]
+> - Repaso base: [[01 - Grammar Review - The Sentence & Clauses]]
+
+---
+
 **Tags:** #grammar #review #sentences #simple #compound #complex #compoundcomplex #structure #English #IDIG1007 #ESPOL #unit0
