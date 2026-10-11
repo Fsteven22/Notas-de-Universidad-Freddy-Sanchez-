@@ -1,29 +1,26 @@
 ---
 dg-publish: true
-tags: [IDIG2012, unidad1, comunicacion-grupal, estrategia, comunicacion]
+tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 ---
 
-# 👥 Comunicación Grupal y Estratégica
+# 👥 Comunicación Grupal y Toma de Decisiones
 
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por Qué el Grupo Decide Mejor (o Peor)?
 >
-> La **comunicación grupal** define si un equipo ESPOL entrega un informe TED sólido o un collage de partes inconexas. Y la **comunicación estratégica** define cómo te perciben: identidad, imagen y reputación.
+> La **comunicación grupal** define si un equipo ESPOL entrega un informe sólido o un collage de partes inconexas: roles, turnos, criterios y acta.
 >
 > **Analogía del mundo real:** Piensa en un equipo de desarrollo:
 >
 > - **Sin técnica grupal** → Todos hablan a la vez, nadie decide, el repo tiene 5 versiones
 > - **Con técnica grupal** → Roles claros, turnos, acta, decisión por criterios
-> - **Sin estrategia** → Subes cualquier foto y texto a LinkedIn
-> - **Con estrategia** → Tu identidad (quién eres) + imagen (qué muestras) = reputación (qué recuerdan)
 >
 > | Razón | Sin Técnica | Con Técnica |
 > |---|---|---|
 > | **Decisiones** | Por grito o por voto rápido | Por criterios y datos |
 > | **Conflictos** | Se evitan y explotan | Se gestionan y resuelven |
 > | **Cohesión** | Subgrupos enfrentados | Compromiso compartido |
-> | **Imagen profesional** | Improvisada | Planificada y coherente |
 
 ```mermaid
 graph TB
@@ -109,39 +106,6 @@ graph TB
 
 ---
 
-## 🛡️ Comunicación Estratégica: Identidad, Imagen, Reputación
-
-### 🎯 Definiciones Operativas
-
-> [!success] 🏆 El Triángulo Profesional
->
-> **No es marketing vacío, es coherencia entre lo que eres, muestras y recuerdan.**
->
-> ```mermaid
-> graph TB
->     ID[Identidad<br/>Quién soy]
->     IM[Imagen<br/>Qué muestro]
->     RE[Reputación<br/>Qué recuerdan]
->     ID -->|comunico| IM
->     IM -->|repito coherente| RE
->     RE -->|valida| ID
->     style ID fill:#e1f5ff
->     style IM fill:#fff4e1
->     style RE fill:#e1ffe1
-> ```
->
-> | Concepto | Pregunta | Ejemplo ingeniero |
-> |---|---|---|
-> | **Identidad** | ¿Quién soy y qué valores tengo? | "Soy dev que documenta y cumple fechas" |
-> | **Imagen** | ¿Qué muestro en clase/redes? | Diapos limpias, correo formal, GitHub ordenado |
-> | **Reputación** | ¿Qué dicen cuando no estoy? | "Es el que entrega a tiempo y explica claro" |
->
-> **Fórmula:**
->
-> Identidad clara + Imagen coherente x Tiempo = Reputación sólida
-
----
-
 ## 🎨 Patrones para Taller 1 (S2)
 
 ### 📥 Patrón: Caso de Estudio en Equipo
@@ -195,13 +159,13 @@ graph TB
 
 > [!tip] 🏆 Checklist S2
 >
-> **1. Prepara tu identidad profesional desde ya**
+> **1. Asigna roles antes de empezar**
 >
 > - ❌ EVITAR
-> Correo "dark_gamer123@..." para entregar informe
+> "Ya vemos sobre la marcha quién hace qué"
 >
 > - ✅ PREFERIR
-> nombre.apellido@espol.edu.ec + asunto claro + firma
+> Facilitador + secretario + tiempo, rotando cada taller
 >
 > **2. Lleva acta siempre**
 >
@@ -218,20 +182,19 @@ graph TB
 
 ```mermaid
 mindmap
-  root((Grupal y<br/>Estratégica))
-    Grupal
-      Dinámicas
-      Facilitación
+  root((Grupal))
+    Dinámicas
+      Phillips 6-6
+      Mesa redonda
       Matriz decisión
+    Facilitación
+      Turnos
+      Roles rotativos
       Acta
     Conflictos
       Sobre ideas
       Con datos
-      Roles rotativos
-    Estratégica
-      Identidad
-      Imagen
-      Reputación
+      Sin pelea
 ```
 
 > [!success] 🔍 Comparación Final
@@ -241,10 +204,57 @@ mindmap
 > | **Habla** | ❌ Monopolio | ✅ Turnos |
 > | **Decide** | Por impulso | Por criterios |
 > | **Registra** | Nada | Acta trazable |
-> | **Imagen** | Improvisada | Estratégica |
+> | **Conflicto** | Personal | Sobre ideas con datos |
 > | **Uso Recomendado** | Ninguno académico | ✅ **Estándar ESPOL** |
 
 ---
+
+## 📝 Ejercicios Propuestos
+
+> [!info] ℹ️ Cómo trabajarlos
+> Práctica directa para el Taller 1 y el trabajo en equipo. Tapa la solución, resuelve, compara.
+
+### ✏️ Ejercicio 1 — Monta tu Phillips 6-6
+
+> [!example] 📋 Planteamiento
+>
+> Tu equipo de 6 debe diagnosticar por qué el informe anterior salió flojo, en 6 minutos. Escribe el guion minuto a minuto (quién habla, qué entrega cada uno, qué hace el facilitador).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Min 0-1: facilitador lee la pregunta y reglas. Min 1-5: cada uno 40s de diagnóstico (hecho, no culpa). Min 5-6: vocero resume en 3 causas máximo. Secretario anota desde el min 0.
+
+### ✏️ Ejercicio 2 — Matriz de decisión real
+
+> [!example] 📋 Planteamiento
+>
+> Tu equipo duda entre 2 temas de exposición. Arma la matriz impacto/esfuerzo/riesgo (1-5) y decide con números, no con gritos.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Puntúa cada opción en las 3 columnas, suma y gana el mayor. Si empatan, el desempate es un criterio previo (ej. tiempo disponible), nunca el que habló más fuerte.
+
+### ✏️ Ejercicio 3 — Redacta el acta
+
+> [!example] 📋 Planteamiento
+>
+> Tras una reunión de 30 min de tu equipo, escribe el acta mínima: fecha, asistentes, acuerdos (qué/quién/cuándo).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Sin "qué/quién/cuándo" no es acta, es crónica. Todo acuerdo sin responsable y fecha se olvida: esa es la regla de oro que evalúan.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/comunicacion-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Reglas de oro del grupo universitario?::Todo acuerdo escrito (qué/quién/cuándo) + ninguna decisión larga sin criterios previos.
+> - ¿Phillips 6-6, mesa redonda y matriz en 1 línea?::6 personas × 6 min + vocero / turnos de 2 min sin interrupciones / puntuar opciones por impacto-esfuerzo-riesgo.
+> - ¿Roles rotativos y su frase?::Facilitador da turnos, secretario escribe acuerdos, tiempo avisa; rotan cada taller para entrenar liderazgo.
 
 ## 🚀 Próximos Pasos
 
@@ -254,7 +264,7 @@ mindmap
 >
 > ✅ Dinámicas y su efecto en decisiones
 > ✅ Técnicas: Phillips, mesa redonda, matriz
-> ✅ Identidad vs imagen vs reputación
+> ✅ Roles rotativos + acta trazable
 > ✅ Patrones para Taller 1 S2
 >
 > **Próximo tema Unidad 2:**
@@ -272,6 +282,7 @@ mindmap
 > - Mapa de contenido: [[Comunicación]]
 > - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[01 - Escucha activa, empatía y barreras]]
+> - Siguiente: [[03 - Comunicación estratégica, IIR y pitch personal]]
 > - Syllabus: [[Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Base específica: [[Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/01 - El proceso y las funciones de la comunicación|MOOC U1 — Proceso y funciones]]
@@ -281,10 +292,9 @@ mindmap
 > [!quote] 📖 Fuentes
 >
 > - Sílabo IDIG2012, Unidad 1: comunicación grupal, dinámicas, toma de decisiones (4h).
-> - Planificación PAO 2-2026 S2: dinámicas de grupo + comunicación estratégica (identidad, imagen, reputación) + Taller 1 caso.
+> - Planificación PAO 2-2026 S2: dinámicas de grupo + Taller 1 caso.
 > - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
-> - [2] P. Capriotti, *Planificación Estratégica de la Imagen Corporativa*, 2013.
 
 ---
 
-**Tags:** #IDIG2012 #unidad1 #grupal #estrategia #comunicacion
+**Tags:** #IDIG2012 #unidad1 #grupal #taller1 #comunicacion

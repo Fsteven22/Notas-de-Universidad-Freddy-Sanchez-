@@ -11,7 +11,8 @@ tags: [IDIG2012, unidad1, indice, comunicacion]
 ## 📑 Notas de la Unidad
 
 - [[01 - Escucha activa, empatía y barreras]]
-- [[02 - Comunicación grupal y estratégica]]
+- [[02 - Comunicación grupal y toma de decisiones]]
+- [[03 - Comunicación estratégica, IIR y pitch personal]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Comunicación]]

@@ -66,7 +66,6 @@ dg-publish: true
 > graph LR
 >     A[🗄️ SBD\nTICG1018] --> B[U1 Modelos<br/>y ER]
 >     A --> C[U2+ SQL y<br/>diseño físico]
->
 >     style B fill:#e1ffe1
 >     style C fill:#fff4e1
 > ```
@@ -76,7 +75,7 @@ dg-publish: true
 > | **1** | Modelos de datos, ER, relacional | BD01 + unidad1.3-1.5.pdf |
 > | **2+** | SQL y resto (cuando la docente avance) | Pendiente AV |
 >
-> **Bibliografía guía:** se anunciará (diapos citan Codd, Chen 1976).
+> **Bibliografía guía:** C. Coronel, S. Morris, *Database Systems: Design, Implementation, and Management*, 9th ed. (lectura asignada: cap. 4 §§4.1.3–4.1.7). Diapos citan Codd, Chen 1976.
 
 ---
 

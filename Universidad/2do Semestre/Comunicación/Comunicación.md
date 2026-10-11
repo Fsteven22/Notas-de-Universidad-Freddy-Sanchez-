@@ -15,7 +15,8 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad I — Comunicación efectiva *(4h)* → [[00 - Índice Unidad 1|📂 Índice]]
 
 - [[01 - Escucha activa, empatía y barreras]]
-- [[02 - Comunicación grupal y estratégica]]
+- [[02 - Comunicación grupal y toma de decisiones]]
+- [[03 - Comunicación estratégica, IIR y pitch personal]]
 
 ---
 

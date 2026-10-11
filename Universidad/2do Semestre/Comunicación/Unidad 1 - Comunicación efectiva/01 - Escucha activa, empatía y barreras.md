@@ -79,7 +79,7 @@ graph TB
 > | **Preguntas** | ❌ No pregunto | ✅ Aclaro datos | ✅ Exploro emociones |
 > | **Lenguaje corporal** | Miro el celular | Contacto visual | Asiento, reflejo |
 > | **Resultado** | Asumo | Comprendo | Conecto |
-
+>
 > [!note] 📋 Diferencia Clave: Oír vs. Escuchar
 >
 > Esta distinción es la base de los 3 niveles anteriores:
@@ -90,6 +90,39 @@ graph TB
 > | **Esfuerzo** | Ninguno | Requiere atención y voluntad |
 > | **Proceso** | Automático | Consciente y voluntario |
 > | **Resultado** | Solo percibes sonido | Comprendes, retienes, respondes |
+
+---
+
+## 📡 El Proceso Clásico: 6 Elementos + Ruido
+
+> [!note] 📋 Definición — El circuito completo
+>
+> Todo evento comunicativo tiene 6 elementos: **emisor** (produce y envía), **receptor** (recibe e interpreta), **código** (reglas y signos compartidos: el mismo idioma), **canal** (medio físico), **mensaje** (la información) y **contexto** (la situación de ambos).
+>
+> ```mermaid
+> graph LR
+>     E["Emisor"] -->|"codifica"| M["Mensaje<br/>código + canal"]
+>     M -->|"decodifica"| R["Receptor"]
+>     R -->|"retroalimentación"| E
+>     CTX["Contexto"] -.rodea.-> M
+>     RU["Ruido"] -.interfiere.-> M
+>     style RU fill:#ffe1e1
+>     style R fill:#e1ffe1
+> ```
+>
+> **Se lee así:** el emisor codifica, el receptor decodifica; la **retroalimentación** (respuesta que confirma recepción) invierte los roles y cierra el circuito. El **ruido** es cualquier interferencia sobre los elementos y debe evitarse.
+>
+> | Tipo | Criterio | Ejemplo |
+> |---|---|---|
+> | **Formal / informal** | Formalidad | Capacitación (formal) vs charla de pasillo (informal) |
+> | **Vertical** | Jerarquía distinta | Jefe informa un cambio (descendente) |
+> | **Horizontal** | Misma jerarquía | Dos compañeros organizan reunión |
+>
+> > [!quote] 📖 Efectiva vs asertiva (Giani, 2019)
+> >
+> > La **efectiva** busca transmisión y comprensión simples y eficaces; la **asertiva** transmite lo que quieres **respetando al receptor** (equilibra tus necesidades con las suyas). Suelen darse juntas, pero evalúan distinto: una mide claridad, la otra respeto.
+
+---
 
 ---
 
@@ -139,6 +172,25 @@ graph TB
 > [Sin CARE] "Ya, haz el informe así nomás"
 > [Con CARE] "¿Me confirmas si el informe es técnico para el profe o ejecutivo para el cliente?"
 
+### 🌍 Las 6 técnicas CCL y su mapeo con CARE
+
+> [!quote] 📖 D. Bergeron y A. Loignon, Center for Creative Leadership (2025) — base externa
+>
+> - **1. Prestar atención:** tono cómodo, tiempo de espera antes de responder, contacto visual, sin interrumpir ni completar frases. → *C de CARE.*
+> - **2. Suspender el juicio:** mente abierta, postura corporal abierta, no vender tu punto de inmediato. → *base de A (Asentir).*
+> - **3. Reflejar y validar:** parafrasea puntos clave y nombra la emoción (*"suenan frustrados y atascados"*). → *R + E de CARE.*
+> - **4. Aclarar:** pregunta lo ambiguo (*"¿hablas de…?"*); el énfasis está en **preguntar**, no en decir. → *R de CARE.*
+> - **5. Resumir:** reexpresa temas centrales y pide confirmación (*"¿lo entendí bien?"*). → *cierre de R.*
+> - **6. Compartir:** primero entender al otro, **después** ser entendido; guía sin dictar la solución. → *orden correcto: escucha antes de proponer.*
+> - **7. (La que falta en CARE): actuar después.** Investigación CCL: la percepción de "me escucharon" es **2x mayor** cuando el líder actúa sobre lo oído. Escuchar sin actuar = no haber escuchado.
+> - **Reglas de oro:** 80% escuchar / 20% hablar; pregunta al inicio *"¿quieres que sea espejo, que aconseje o que co-creemos?"*; el silencio también trabaja.
+>
+> > [!warning] ⚠️ Auto-test: ¿necesitas repasar? (CCL)
+> >
+> > Marcas si: te cuesta concentrarte con quejas; planeas tu respuesta mientras hablan; te molesta que discrepen; das consejo antes de tiempo; dices "no sientas eso"; hablas más que el otro. Un solo sí = vuelve a CARE.
+
+---
+
 ---
 
 ## 📋 Ventajas de la Práctica de Escucha Activa
@@ -185,7 +237,7 @@ graph TB
 > | 😡 **Emociones** | Con estrés, todo suena a ataque | Respirar, nombrar emoción, pedir pausa si hace falta |
 > | 📱 **Distractores** | Revisar celular en exposición | Modo avión, contacto visual |
 > | 🗣️ **Lenguaje corporal cerrado** | Brazos cruzados, sin contacto visual | Postura abierta, asentir |
-
+>
 > [!warning] ⚠️ Clasificación Ampliada (material de clase)
 >
 > Más allá de las 3 barreras del syllabus, el material de clase distingue estas categorías adicionales:
@@ -211,6 +263,12 @@ graph TB
 > | **Tics** | Movimientos repetitivos |
 > | **Muletillas** | "eh", "este", "o sea" |
 > | **Aseo** | Higiene personal |
+>
+> **Barreras administrativas (organizaciones):** sobrecarga de información, pérdida en la cadena, falta de planificación, comunicación impersonal. En equipos ESPOL se ven como: 50 mensajes sin resumen, actas que nadie lee, reuniones sin agenda.
+>
+> **Cómo detectarlas (señales):** silencios frecuentes, frases inconclusas, tono que no calza con las palabras, lenguaje no verbal cerrado. Si ves 2+ señales, frena y verifica (*"¿me confirmas qué entendiste?"*).
+>
+> > [!quote] 📖 L. Ruiz Mitjana, "Las 5 barreras de la comunicación", Psicología y Mente, 2020 — https://psicologiaymente.com/social/barreras-de-comunicacion (semánticas, psicológicas, fisiológicas, físicas, administrativas + detección).
 
 ---
 
@@ -234,7 +292,7 @@ graph TB
 > ```
 >
 > **Implicación práctica:** la escucha activa no es solo técnica — activa el sistema de neuronas espejo, mejorando la empatía natural con práctica deliberada.
-
+>
 > [!success] 🏆 Empatía Operativa: la Herramienta Estándar
 >
 > **Empatía no es estar de acuerdo, es entender el marco del otro.**
@@ -277,7 +335,7 @@ graph TB
 > | **4** | **Incide** en entornos y en el individuo | Crea entorno seguro para la comunicación |
 >
 > **Resultado:** el interlocutor se siente escuchado, validado en sus expresiones e individualidad.
-
+>
 > [!note] 🎭 Guía Práctica: Antes / Durante / Después
 >
 > | Fase | Qué Hacer | Qué Evitar |
@@ -288,7 +346,7 @@ graph TB
 > | **Durante** | Observe indicios no verbales (gestos, tono, postura) | Ignore lo no verbal |
 > | **Después** | No juzgue verbales ni no verbales | Etiquete al interlocutor |
 > | **Después** | Reafirme lo comprendido, valide | Desestime lo expresado |
-
+>
 > [!tip] 🎭 Checklist Rápido: Qué Hacer / Qué Evitar
 >
 > | Qué Hacer | Qué Evitar |
@@ -308,13 +366,13 @@ graph TB
 > [!example] 📺 Caso 1: Everybody Loves Raymond
 >
 > El material de clase incluye un extracto de la serie *Everybody Loves Raymond* que ilustra la diferencia entre oír y escuchar activamente. El extracto muestra cómo la falta de escucha activa genera malentendidos familiares que se resuelven cuando los personajes aplican los componentes de la escucha activa.
-
+>
 > [!example] 📺 Caso 2: The Big Bang Theory
 >
 > El material de clase incluye un extracto de la serie *The Big Bang Theory* para observar y determinar qué acciones permiten la regulación de las emociones en una conversación. El extracto muestra cómo los personajes aplican (o fallan en) la identificación y gestión emocional durante una conversación técnica acalorada.
 >
 > **Actividad sugerida:** observa el video, identifica qué acciones permiten la regulación emocional y qué barreras aparecen (filtros mentales, distracciones, ruido semántico).
-
+>
 > [!example] 📺 Caso 3: Los Simpson
 >
 > El material de clase incluye un extracto de *Los Simpson* para identificar emociones en imágenes y gestos: ¿qué transmiten los personajes y cómo inciden sus expresiones en quien escucha? Conecta directo con neuronas espejo y comunicación multimodal.
@@ -329,7 +387,7 @@ graph TB
 > 2. Reformula: "Entonces necesitas [producto] para [audiencia] el [fecha], ¿correcto?"
 > 3. Pide el criterio de éxito: "¿Cómo sabremos que quedó bien?"
 > 4. Deja constancia escrita en el chat del curso / Aula Virtual
-
+>
 > [!example] 💿 Patrón: Feedback sin Juicio (Corregir sin Romper Relación)
 >
 > 1. Dato observable: "En la diapo 3 hay 3 faltas de tilde"
@@ -359,7 +417,7 @@ graph TB
 > - Anota tu idea en 3 palabras y vuelve a escuchar
 > - Espera 2 segundos tras que termine para responder
 > - Reformula antes de opinar
-
+>
 > [!danger] ❌ Señales de que NO Practicas la Escucha (viola **atención plena, Parte 1**)
 >
 > **Ejemplo completo:**
@@ -440,6 +498,84 @@ mindmap
 
 ---
 
+## 📝 Ejercicios Propuestos
+
+> [!info] ℹ️ Cómo trabajarlos
+> Evalúan lo mismo que la semana de evaluación: aplicar, no recitar. Tapa la solución, resuelve, compara.
+
+### ✏️ Ejercicio 1 — Aplica CARE en vivo
+
+> [!example] 📋 Planteamiento
+>
+> Un compañero llega quejándose: *"El proyecto es injusto, siempre me toca la parte difícil"*. Escribe qué harías en cada letra CARE (Concentrarse, Asentir, Reformular, Emocionar).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > - **C:** apaga el celular, míralo, 2 min sin interrumpir.
+> > - **A:** asiente + "te sigo, cuéntame qué parte".
+> > - **R:** "Si entiendo bien, sientes que el reparto es desigual, ¿correcto?".
+> > - **E:** "Suena frustrante; es válido sentirse así antes de la entrega".
+
+### ✏️ Ejercicio 2 — Detecta la barrera
+
+> [!example] 📋 Planteamiento
+>
+> Clasifica cada caso (percepción selectiva / juicio de valor / emoción) y da el antídoto:
+> (a) Solo escuchas lo que confirma que el docente "es estricto".
+> (b) Interrumpes porque "eso ya lo sé".
+> (c) Después de una mala nota no atiendes nada.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > (a) Percepción selectiva → reformula lo que dijo, no lo que esperabas oír. (b) Juicio de valor → suspende el veredicto 2 min y pregunta. (c) Emoción → nombra lo que sientes antes de seguir ("estoy frustrado, dame un minuto").
+
+### ✏️ Ejercicio 3 — Oír vs escuchar en tu semana
+
+> [!example] 📋 Planteamiento
+>
+> Registra 3 momentos del día: uno donde solo oíste, uno donde escuchaste activamente y qué cambió en el resultado.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Respuesta libre; el criterio es: si puedes reformular lo que el otro dijo y nombrar su emoción, escuchaste. Si solo recuerdas el tema general, oíste.
+
+### ✏️ Ejercicio 4 — Mensaje asertivo en 4 etapas
+
+> [!example] 📋 Planteamiento
+>
+> Un compañero entrega siempre tarde su parte. Escribe el mensaje asertivo en 4 etapas: hechos → sentimientos → consecuencias → solución (Forner).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > *"Las últimas 2 entregas llegaron 1 día tarde (hecho). Me preocupa porque retrasa al equipo (sentimiento). Si sigue así, no llegamos al viernes (consecuencia). ¿Puedes comprometerte al miércoles 18h? (solución)"*. Sin juicios ("eres irresponsable"), sin pasividad (callar).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/comunicacion-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Oír vs escuchar?::Involuntario sin esfuerzo vs acto intencional consciente.
+<!--SR:!2026-10-11,4,270-->
+> - ¿3 componentes de la escucha activa?::Comprensión-retención, intención comunicativa y gestión emocional.
+<!--SR:!2026-10-10,3,250-->
+> - ¿CARE?::Concentrarse, Asentir, Reformular, Emocionar (nombrar la emoción).
+<!--SR:!2026-10-08,1,230-->
+> - ¿Qué son las neuronas espejo?::Se activan al observar y al actuar: base biológica de la empatía.
+<!--SR:!2026-10-10,3,250-->
+> - ¿3 barreras del syllabus + antídoto común?::Percepción selectiva, juicios de valor, emociones; antídoto: reformular y nombrar.
+- ¿6 elementos del proceso clásico?::Emisor, receptor, código, canal, mensaje y contexto (+ retroalimentación y ruido).
+- ¿Efectiva vs asertiva?::Efectiva = claridad de transmisión; asertiva = decir lo tuyo respetando al otro.
+- ¿6 técnicas CCL en orden?::Atender, suspender juicio, reflejar, aclarar, resumir, compartir (y después: actuar).
+- ¿Por qué actuar después de escuchar?::Percepción de "me escucharon" 2x mayor; sin acción no cuenta.
+- ¿5 barreras externas (Ruiz Mitjana)?::Semánticas, psicológicas, fisiológicas, físicas y administrativas.
+- ¿4 etapas del mensaje asertivo?::Hechos → sentimientos → consecuencias → solución (Forner).
+<!--SR:!2026-10-10,3,250-->
+
+---
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando
@@ -466,10 +602,12 @@ mindmap
 >
 > - Mapa de contenido: [[Comunicación]]
 > - Índice Unidad 1: [[00 - Índice Unidad 1]]
-> - Siguiente: [[02 - Comunicación grupal y estratégica]]
+> - Siguiente: [[02 - Comunicación grupal y toma de decisiones]]
 > - Syllabus: [[Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Base específica: [[Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/01 - El proceso y las funciones de la comunicación|MOOC U1 — Proceso y funciones]]
+
+---
 
 ## 📚 Referencias
 
@@ -484,6 +622,10 @@ mindmap
 > - Hernández, A. y Lesmes, A. (2017). *La escucha activa como elemento necesario para el diálogo*. Convicciones, 9(1), 83-87. https://www.fesc.edu.co/Revistas/0JS/Index.pnp/convicciones/article/view/272
 > - Rogers, C. y Farson, R. (1987). *Active listening*. https://wholebeinginstitute.com/wp-content/uploads/Rogers-Farson_Active-Listening.pdf
 > - Newman, R. G., Danziger, M. A. y Cohen, M. (eds.). *Communication in Business Today*. Washington C.C. https://archive.org/details/communicatinginb0000newm/page/n665/mode/2up
+> - C. Giani, "Comunicación efectiva: qué es, características y elementos", Concepto.de, 2019 — https://concepto.de/comunicacion-efectiva/ (proceso clásico, tipos, efectiva vs asertiva).
+> - D. Bergeron y A. Loignon, "Active Listening Techniques: Best Practices for Leaders", Center for Creative Leadership, 2025 — https://www.ccl.org/articles/leading-effectively-articles/coaching-others-use-active-listening-skills/ (6 técnicas + actuar después).
+> - L. Ruiz Mitjana, "Las 5 barreras de la comunicación", Psicología y Mente, 2020 (tipología + detección).
+> - P. Forner, "Qué es la asertividad y 10 claves", Habilidad Social, 2016 — https://habilidadsocial.com/asertividad-10-claves/ (mensaje asertivo en 4 etapas).
 > - Wang, S. y Lu, J. (2022). *"I'm listening, did it make any difference to your negative emotions?" Evidence from hyperscanning*. Neuroscience Letters, 788(25). https://doi.org/10.1016/j.neulet.2022.136867
 > - Forner, P. (s.f.). *Escucha activa: técnicas prácticas para convertirte en un experto*. Habilidad Social. https://habilidadsocial.com/escucha-activa/
 > - Martins, J. (2021). *Escuchar para comprender: cómo practicar la escucha activa (con ejemplos)*. Asana. https://asana.com/es/resources/active-listening

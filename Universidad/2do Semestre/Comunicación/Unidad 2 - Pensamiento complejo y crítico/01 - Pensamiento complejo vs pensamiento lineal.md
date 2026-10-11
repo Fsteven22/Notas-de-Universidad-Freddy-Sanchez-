@@ -94,6 +94,20 @@ graph TB
 
 ---
 
+### 📜 Fundamentación teórica
+
+> [!quote] 📖 Área de Comunicación ESPOL — base de cátedra
+>
+> - **Pensar (RAE):** examinar mentalmente algo con atención para formar un juicio. **Jara (2012):** el pensamiento es el resultado de pensar desde lo que se ve, se conoce y se siente — solo se conoce a través del lenguaje, su medio de expresión.
+> - **Melgar (2000):** pensar es desarrollar nuevos sentidos ante las situaciones. **McGuinness (1999):** el estudiante es creador activo de su conocimiento, no receptor.
+> - **Incertidumbre (Campos 2008, citando a Fried 2005):** cuestiona la visión determinista, mecanicista y lineal heredada del siglo XVIII; el mundo tiene evoluciones impredecibles y relaciones no lineales causa-efecto.
+> - **De Bono (lateral vs vertical):** el pensador vertical afirma *"sé lo que estoy buscando"*; el lateral dice *"busco, pero no sabré lo que estoy buscando hasta que lo encuentre"*. Ojo: lateral ≠ complejo — lo complejo abre múltiples formas (crítico, lineal, lateral, evolutivo).
+> - **Tobón (2013), 3 ejes de formación:** laboral/empresarial (ser eficaces), integración sociocultural (ser solidarios), autorrealización (proyecto ético de vida).
+> - **Cadena ESPOL:** conocimientos (saber) + habilidades (saber hacer) + aptitudes (poder hacer) + actitudes (querer hacer) → competencias profesionales (saber ser).
+> - **Tesis del documento:** el pensamiento complejo es el punto de partida del pensamiento crítico; no se opone al lineal, lo integra (separar-reducir + distinguir-conectar).
+
+---
+
 ## 🛠️ Del Pensamiento Complejo al Crítico (Puente)
 
 > [!success] 🏆 Conexión Directa
@@ -175,6 +189,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/comunicacion-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Pensar según la RAE?::Examinar mentalmente algo con atención para formar un juicio.
+> - ¿Vertical vs lateral (De Bono)?::Vertical: "sé lo que estoy buscando". Lateral: "busco, pero no sabré lo que estoy buscando hasta que lo encuentre".
+> - ¿3 ejes de Tobón?::Laboral/empresarial, integración sociocultural y autorrealización.
+> - ¿Cadena ESPOL del saber al ser?::Saber + saber hacer + poder hacer + querer hacer → saber ser (competencias).
+> - ¿Relación complejo-crítico según el documento?::Lo complejo es el punto de partida de lo crítico; integra al lineal, no lo elimina.
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando
@@ -211,6 +237,7 @@ mindmap
 > - Planificación PAO 2-2026 S3: realidades emergentes + Evaluación 2 TAP.
 > - [1] E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
 > - [2] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - [3] Área de Comunicación ESPOL, *Fundamentación teórica: Pensamiento complejo* (material de cátedra, PAO 2-2026): Jara, Melgar, McGuinness, Morin, De Bono, Campos, Domínguez, Tobón, Facione.
 
 ---
 

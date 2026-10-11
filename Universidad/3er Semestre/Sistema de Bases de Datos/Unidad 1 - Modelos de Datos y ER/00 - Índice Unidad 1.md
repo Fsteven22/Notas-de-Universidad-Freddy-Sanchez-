@@ -11,8 +11,8 @@ tags: [TICG1018, unidad1, indice, bd]
 ## 📑 Notas de la Unidad
 
 - [[01 - Dato, información y modelos de datos]]
-- [[02 - Entidades, atributos, relaciones y reglas de negocio]]
-- [[03 - Modelo relacional y modelo entidad-relación]]
+- [[02 - Entidades, atributos, claves y relaciones]]
+- [[03 - Modelo relacional, ERM y casos Tiny College]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Sistema de Bases de Datos]]

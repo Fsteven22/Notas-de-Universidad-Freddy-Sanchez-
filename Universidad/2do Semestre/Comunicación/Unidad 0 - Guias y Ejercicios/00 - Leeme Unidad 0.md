@@ -29,4 +29,21 @@ tags: [IDIG2012, unidad0, recursos]
 
 ---
 
+## 📜 Fundamentación teórica (cátedra)
+
+![[Fundamentación Teórica Pensamiento Complejo (1).pdf]]
+
+![[Fundamentación teórica Comunicación Estratégica.pdf]]
+
+---
+
+## 🎬 Capturas de clase (PDF por sesión)
+
+![[Clase S3 - Comunicación estratégica (capturas).pdf]]
+
+> [!warning] 🎬 Video solo local (no se publica)
+> `Dinámicas grupales y trabajo en equipo.wmv` (58 MB): el Garden no embebe `.wmv` ni archivos así de pesados. Queda como recurso local; si lo necesitas en el sitio, conviértelo a MP4 ligero o súbelo a YouTube y enlázalo.
+
+---
+
 **Tags:** #IDIG2012 #unidad0 #recursos

@@ -198,11 +198,13 @@ flowchart TD
 >
 > **Síntomas:** todo con clases aunque el problema pida transformar datos; o todo funcional aunque haya estado compartido real.
 >
+> - ❌ **EL ERROR ESTÁ AQUÍ:** elegir el paradigma por costumbre, no por el problema — "lo hago en OO porque es lo que sé".
+>
 > **Solución:**
 >
 > - Pregunta "¿qué varía aquí?" antes de elegir (ver diagrama de decisión).
 > - Mezcla declarada: funcional adentro (lógica pura), OO afuera (estructura).
-
+>
 > [!danger] ❌ Error 2: Seguridad (y Logs) Regados por Todo el Código (viola **separación de concerns/AOP**)
 >
 > **Síntomas:** la misma guarda copiada en cada método:
@@ -218,10 +220,12 @@ flowchart TD
 > ```
 >
 > **Solución:** muévelo a un aspecto con pointcut + advice; los módulos quedan con una sola responsabilidad.
-
+>
 > [!danger] ❌ Error 3: Reescribir lo que ya Existe como Componente (viola **reuso antes que construcción**)
 >
 > **Síntomas:** reinventar autenticación, paginación o reportes pudiendo integrar un COTS o servicio.
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** codear desde cero lo que ya existe probado — cada línea propia es deuda futura.
 >
 > **Solución:** aplica las 4 etapas (análisis → ajuste de requerimientos → diseño con reuso → integración) antes de codear desde cero.
 
@@ -270,7 +274,7 @@ flowchart TD
 > > - **3.** Un asunto que cruza clases/paquetes (ej. seguridad en el paquete Foro, que existe para mostrar posts pero debe validar moderadores).
 > > - **4.** Unidad independiente/desplegable accedida solo por interfaces. Tipos: servicios web (remotos), colecciones de objetos (.NET/JEE), stand-alone configurables.
 > > - **5.** Estructurado quita `goto` (Dijkstra 1968); OO quita punteros a función (Dahl/Nygaard 1966); funcional quita asignación (Church 1936).
-
+>
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica tangling vs scattering con un ejemplo propio de un proyecto universitario.
@@ -290,7 +294,7 @@ flowchart TD
 > > - **8.** Análisis: buscar pasarela que ajuste; modificación: ajustar requerimientos a lo que la pasarela soporta; diseño: organizar reserva + pagos + framework; integración: conectar y probar el flujo.
 > > - **9.** Porque combina dos modelos mentales (qué vs cómo) sin frontera clara: se pierde legibilidad y cada parte asume garantías que la otra no da.
 > > - **10.** Inmutable: historial de commits (event sourcing real — nada se reescribe). Mutable: working directory y staging, protegidos por convenciones de ramas/PRs.
-
+>
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta con Martin por qué probablemente no veremos un cuarto paradigma "negativo" como los tres grandes.
@@ -332,12 +336,12 @@ flowchart TD
 > - [ ] Explico cross-cutting concern con el caso foro-seguridad.
 > - [ ] Defino componente y nombro sus 3 tipos.
 > - [ ] Digo qué quita cada paradigma de Martin con autor y año.
-
+>
 > [!note] 🎯 Nivel Intermedio
 > - [ ] Diferencio tangling de scattering con ejemplo propio.
 > - [ ] Defino join point, pointcut, advice y weaving con Account/credit().
 > - [ ] Aplico las 4 etapas de componentes a un caso de reuso.
-
+>
 > [!note] 🎯 Nivel Avanzado
 > - [ ] Diseño la migración de un monolito acoplado a aspectos.
 > - [ ] Argumento monolito modular vs microservicios para un equipo chico.
@@ -375,6 +379,18 @@ mindmap
 > | **Uso Recomendado** | Nunca por defecto | ✅ **Justificado por problema** |
 
 ---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Paradigma en 1 línea?::Estilo de programación: qué estructuras usar y cuándo, independiente del lenguaje.
+> - ¿Imperativo vs declarativo?::Imperativo dice cómo (pasos); declarativo dice qué (resultado).
+> - ¿AOP resuelve qué?::Lo transversal (seguridad, logs) regado: pointcut + advice en un aspecto.
+> - ¿Componente vs objeto?::Componente: unidad desplegable con interfaces; se reusa sin codear.
+> - ¿Dijkstra y las pruebas?::Probar muestra presencia de bugs, no ausencia; el software es ciencia (falsable).
 
 ## 🚀 Próximos Pasos
 
