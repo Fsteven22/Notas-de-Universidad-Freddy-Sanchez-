@@ -62,4 +62,12 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
+- [[Unidad 1 - Comunicación efectiva/00 - Índice Unidad 1.md|📂 Unidad 1 - Comunicación efectiva]]
+
+- [[Unidad 2 - Pensamiento complejo y crítico/00 - Índice Unidad 2.md|📂 Unidad 2 - Pensamiento complejo y crítico]]
+
+- [[Unidad 3 - Redacción/00 - Índice Unidad 3.md|📂 Unidad 3 - Redacción]]
+
+- [[Unidad 4 - Comportamiento comunicacional/00 - Índice Unidad 4.md|📂 Unidad 4 - Comportamiento comunicacional]]
+
 **Tags:** #comunicacion #ESPOL #IDIG2012

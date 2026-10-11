@@ -117,4 +117,16 @@ graph LR
 
 - [[00 - Recursos Unidad 0]]
 
+- [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1.md|📂 Unidad 1 - Logica y Conjuntos]]
+
+- [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2.md|📂 Unidad 2 - Funciones y Relaciones]]
+
+- [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3.md|📂 Unidad 3 - Números y Conteo]]
+
+- [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4.md|📂 Unidad 4 - Recurrencia y Algoritmos]]
+
+- [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5.md|📂 Unidad 5 - Grafos y Árboles]]
+
+- [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6.md|📂 Unidad 6 - Lenguajes y Autómatas]]
+
 **Tags:** #matematicas #discretas #ESPOL #MATG1051

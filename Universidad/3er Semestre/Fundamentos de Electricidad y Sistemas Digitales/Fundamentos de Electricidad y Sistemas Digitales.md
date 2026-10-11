@@ -95,4 +95,12 @@ graph TD
 
 - [[00 - Recursos Unidad 0]]
 
+- [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1.md|📂 Unidad 1 - Electricidad y Circuitos]]
+
+- [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2.md|📂 Unidad 2 - Introducción a la Electrónica]]
+
+- [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3.md|📂 Unidad 3 - Circuitos integrados]]
+
+- [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4.md|📂 Unidad 4 - Sistemas Digitales]]
+
 **Tags:** #FESD #EYAG1037 #ESPOL #indice #mapa-de-contenido

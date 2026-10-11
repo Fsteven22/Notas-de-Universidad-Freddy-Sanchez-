@@ -71,4 +71,14 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 - [[00 - Leeme Unidad 0]]
 
+- [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1.md|📂 Unidad 1 - Introducción al diseño]]
+
+- [[Unidad 2 - Diseño orientado a objetos/00 - Índice Unidad 2.md|📂 Unidad 2 - Diseño orientado a objetos]]
+
+- [[Unidad 3 - Patrones de diseño/00 - Índice Unidad 3.md|📂 Unidad 3 - Patrones de diseño]]
+
+- [[Unidad 4 - Refactorización/00 - Índice Unidad 4.md|📂 Unidad 4 - Refactorización]]
+
+- [[Unidad 5 - Pruebas unitarias/00 - Índice Unidad 5.md|📂 Unidad 5 - Pruebas unitarias]]
+
 **Tags:** #diseno-software #ESPOL #CCPG1042

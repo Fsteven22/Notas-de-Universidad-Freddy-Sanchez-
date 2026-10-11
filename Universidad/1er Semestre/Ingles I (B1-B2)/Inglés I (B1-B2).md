@@ -56,4 +56,10 @@ dg-publish: true
 
 - [[Welcome & Syllabus English I]]
 
+- [[Unit 10 - Why we buy/00 - Índice.md|📂 Unit 10 - Why we buy]]
+
+- [[Unit 11 - Pushing Yourself/00 - Índice.md|📂 Unit 11 - Pushing Yourself]]
+
+- [[Unit 12 – Life’s Little Lessons/00 - Índice.md|📂 Unit 12 – Life’s Little Lessons]]
+
 **Tags:** #english #english1 #ESPOL #semester1

@@ -51,4 +51,16 @@ dg-publish: true
 
 - [[00 - Índice Unidad 6]]
 
+- [[Unidad 1 - Lógica y Conjuntos/00 - Índice Unidad 1.md|📂 Unidad 1 - Lógica y Conjuntos]]
+
+- [[Unidad 2 - Números Reales/00 - Índice Unidad 2.md|📂 Unidad 2 - Números Reales]]
+
+- [[Unidad 3 - Funciones y Trigonometría/00 - Índice Unidad 3.md|📂 Unidad 3 - Funciones y Trigonometría]]
+
+- [[Unidad 4 - Matrices y Sistemas/00 - Índice Unidad 4.md|📂 Unidad 4 - Matrices y Sistemas]]
+
+- [[Unidad 5 - Geometría/00 - Índice Unidad 5.md|📂 Unidad 5 - Geometría]]
+
+- [[Unidad 6 - Complejos y Polares/00 - Índice Unidad 6.md|📂 Unidad 6 - Complejos y Polares]]
+
 **Tags:** #matematicas #preuniversitario #ESPOL

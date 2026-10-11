@@ -129,4 +129,6 @@ dg-publish: true
 
 - [[03 – Teorema de cambio de variables]]
 
+- [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice.md|📂 II - Sistemas de Coordenadas]]
+
 **Tags:** #calculo #vectorial #ESPOL #MATG1046

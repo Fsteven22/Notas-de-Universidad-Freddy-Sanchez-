@@ -53,4 +53,8 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 - [[00 - Leeme Unidad 0]]
 
+- [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1.md|📂 Unidad 1 - Modelos de Datos y ER]]
+
+- [[Unidad 2 - Modelo lógico y conversión/00 - Índice Unidad 2.md|📂 Unidad 2 - Modelo lógico y conversión]]
+
 **Tags:** #bases-de-datos #ESPOL #TICG1018
