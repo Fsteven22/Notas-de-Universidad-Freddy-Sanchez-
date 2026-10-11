@@ -42,19 +42,10 @@ dg-publish: true
 >
 > **Ejemplos:**
 >
-> ```
-> ✅ She runs every morning.
->    (Subject = She | Verb = runs | Complete thought ✔)
->
-> ✅ The students studied hard.
->    (Subject = The students | Verb = studied | Complete thought ✔)
->
-> ❌ Because she was tired.
->    (Incomplete — leaves us asking: "What happened?")
->
-> ❌ Running in the park.
->    (No subject — who is running?)
-> ```
+> - ✅ *She runs every morning.* (Subject = She | Verb = runs | Complete thought ✔)
+> - ✅ *The students studied hard.* (Subject = The students | Verb = studied | Complete thought ✔)
+> - ❌ *Because she was tired.* (Incomplete — leaves us asking: "What happened?")
+> - ❌ *Running in the park.* (No subject — who is running?)
 
 ---
 
@@ -74,15 +65,15 @@ dg-publish: true
 >
 > **Estructura visual:**
 >
+> ```mermaid
+> graph LR
+>     C["Mayúscula"] --> S["Sujeto"]
+>     S --> V["Verbo"]
+>     V --> X["Complemento"]
+>     X --> P[". ? !"]
 > ```
-> ┌─────────────────────────────────────────────────────┐
-> │  [Capital Letter]  SUBJECT  +  VERB  + ...  [. ? !] │
-> └─────────────────────────────────────────────────────┘
 >
->   She       runs      every morning.
->   ↑         ↑         ↑
->   Capital   Subject   Verb + Complement   Period
-> ```
+> *She runs every morning.* — Mayúscula + Sujeto + Verbo + Complemento + Punto.
 
 ---
 
@@ -110,11 +101,9 @@ dg-publish: true
 >
 > Can stand alone as a complete sentence. It expresses a complete thought.
 >
-> ```
-> ✅ The teacher explained the lesson.
-> ✅ I love learning languages.
-> ✅ He works every day.
-> ```
+> - ✅ *The teacher explained the lesson.*
+> - ✅ *I love learning languages.*
+> - ✅ *He works every day.*
 >
 > ---
 >
@@ -122,19 +111,15 @@ dg-publish: true
 >
 > Cannot stand alone — it depends on an independent clause to complete its meaning. It starts with a **subordinating conjunction** (because, although, when, if, since, while, after, before, unless…).
 >
-> ```
-> ❌ Because she was tired...       (¿Qué pasó?)
-> ❌ Although it was raining...     (¿Y entonces?)
-> ❌ When I finish my homework...   (¿Qué harás?)
-> ```
+> - ❌ *Because she was tired...* (¿Qué pasó?)
+> - ❌ *Although it was raining...* (¿Y entonces?)
+> - ❌ *When I finish my homework...* (¿Qué harás?)
 >
 > Cuando se combina con una cláusula independiente, la oración queda completa:
 >
-> ```
-> ✅ Because she was tired, she went to bed early.
-> ✅ Although it was raining, we went outside.
-> ✅ When I finish my homework, I will watch a movie.
-> ```
+> - ✅ *Because she was tired, she went to bed early.*
+> - ✅ *Although it was raining, we went outside.*
+> - ✅ *When I finish my homework, I will watch a movie.*
 >
 > ---
 >

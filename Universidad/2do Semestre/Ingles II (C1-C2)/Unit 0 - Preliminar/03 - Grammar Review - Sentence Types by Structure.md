@@ -44,28 +44,16 @@ dg-publish: true
 >
 > A **simple sentence** contains **one independent clause** only. It can have one or more subjects and verbs, but they all belong to a single complete thought.
 >
-> ```
-> ✅ The dog barked.
->    (1 sujeto, 1 verbo — una sola cláusula)
->
-> ✅ Maria and Pedro study together.
->    (2 sujetos, 1 verbo — sigue siendo simple)
->
-> ✅ She woke up, got dressed, and left quickly.
->    (1 sujeto, 3 verbos — sigue siendo simple)
-> ```
+> - ✅ *The dog barked.* (1 sujeto, 1 verbo — una sola cláusula)
+> - ✅ *Maria and Pedro study together.* (2 sujetos, 1 verbo — sigue siendo simple)
+> - ✅ *She woke up, got dressed, and left quickly.* (1 sujeto, 3 verbos — sigue siendo simple)
 >
 > > [!tip]- ⚠️ Error común
 > >
 > > Tener múltiples verbos o múltiples sujetos NO hace una oración compuesta. Lo que importa es si hay **dos cláusulas independientes completas** o solo una.
 > >
-> > ```
-> > ✅ SIMPLE:   She runs and swims every day.
-> >              (Un sujeto — She — con dos verbos)
-> >
-> > ✅ COMPOUND: She runs every day, and she swims on weekends.
-> >              (Dos sujetos independientes con sus propios verbos)
-> > ```
+> > - ✅ SIMPLE: *She runs and swims every day.* (Un sujeto — She — con dos verbos)
+> > - ✅ COMPOUND: *She runs every day, and she swims on weekends.* (Dos sujetos independientes con sus propios verbos)
 
 ---
 
@@ -75,26 +63,16 @@ dg-publish: true
 >
 > A **compound sentence** contains **two or more independent clauses** joined by a **coordinating conjunction (FANBOYS)** or a **semicolon**.
 >
-> ```
-> ✅ I wanted to go, but it was raining.
->    [Independent Clause] , but [Independent Clause]
->
-> ✅ She studied hard, so she passed the exam.
->    [Independent Clause] , so [Independent Clause]
->
-> ✅ He likes coffee; she prefers tea.
->    [Independent Clause] ; [Independent Clause]
->    (El punto y coma puede reemplazar la conjunción)
-> ```
+> - ✅ *I wanted to go, but it was raining.* ([Independent Clause] , but [Independent Clause])
+> - ✅ *She studied hard, so she passed the exam.* ([Independent Clause] , so [Independent Clause])
+> - ✅ *He likes coffee; she prefers tea.* ([Independent Clause] ; [Independent Clause] — el punto y coma puede reemplazar la conjunción)
 >
 > > [!tip]- 💡 Regla de puntuación
 > >
 > > Siempre va una **coma antes de la conjunción FANBOYS** cuando une dos cláusulas independientes:
 > >
-> > ```
-> > ✅ I was tired, but I finished the project.
-> > ❌ I was tired but I finished the project.
-> > ```
+> > - ✅ *I was tired, but I finished the project.*
+> > - ❌ *I was tired but I finished the project.*
 
 ---
 
@@ -104,26 +82,14 @@ dg-publish: true
 >
 > A **complex sentence** contains **one independent clause** and **at least one dependent clause**, joined by a **subordinating conjunction** (because, although, when, if, since, while…).
 >
-> ```
-> ✅ Although it was raining, we went outside.
->    [Dependent Clause] , [Independent Clause]
->
-> ✅ She passed the exam because she studied hard.
->    [Independent Clause] because [Dependent Clause]
->
-> ✅ When I finish my homework, I will watch a movie.
->    [Dependent Clause] , [Independent Clause]
-> ```
+> - ✅ *Although it was raining, we went outside.* ([Dependent Clause] , [Independent Clause])
+> - ✅ *She passed the exam because she studied hard.* ([Independent Clause] because [Dependent Clause])
+> - ✅ *When I finish my homework, I will watch a movie.* ([Dependent Clause] , [Independent Clause])
 >
 > > [!tip]- 💡 Regla de la coma en Complex Sentences
 > >
-> > ```
-> > Dependent clause PRIMERO → usa coma:
-> > ✅ Although she was tired, she kept working.
-> >
-> > Dependent clause SEGUNDO → no uses coma:
-> > ✅ She kept working although she was tired.
-> > ```
+> > - Dependent clause PRIMERO → usa coma: ✅ *Although she was tired, she kept working.*
+> > - Dependent clause SEGUNDO → no uses coma: ✅ *She kept working although she was tired.*
 
 ---
 
@@ -133,15 +99,8 @@ dg-publish: true
 >
 > A **compound-complex sentence** contains **two or more independent clauses** AND **at least one dependent clause**.
 >
-> ```
-> ✅ Although she was tired, she finished the project,
->    and her boss was impressed.
->    [Dep. Clause] + [Ind. Clause] + and + [Ind. Clause]
->
-> ✅ I wanted to travel, but I had no money
->    because I lost my job.
->    [Ind. Clause] + but + [Ind. Clause] + because + [Dep. Clause]
-> ```
+> - ✅ *Although she was tired, she finished the project, and her boss was impressed.* ([Dep. Clause] + [Ind. Clause] + and + [Ind. Clause])
+> - ✅ *I wanted to travel, but I had no money because I lost my job.* ([Ind. Clause] + but + [Ind. Clause] + because + [Dep. Clause])
 >
 > > [!tip]- 💡 Cómo identificarla rápido
 > >

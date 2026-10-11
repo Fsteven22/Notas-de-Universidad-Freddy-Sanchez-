@@ -52,28 +52,21 @@ dg-publish: true
 >
 > ### Verbos comunes seguidos de gerundio
 >
-> ```
-> ✅ enjoy    → She enjoys swimming.
-> ✅ avoid    → He avoids eating sugar.
-> ✅ finish   → They finished working.
-> ✅ keep     → Keep trying!
-> ✅ suggest  → I suggest leaving early.
-> ✅ mind     → Do you mind waiting?
-> ✅ miss     → I miss traveling.
-> ✅ practice → She practices speaking English every day.
-> ```
+> - ✅ *enjoy* → She enjoys swimming.
+> - ✅ *avoid* → He avoids eating sugar.
+> - ✅ *finish* → They finished working.
+> - ✅ *keep* → Keep trying!
+> - ✅ *suggest* → I suggest leaving early.
+> - ✅ *mind* → Do you mind waiting?
+> - ✅ *miss* → I miss traveling.
+> - ✅ *practice* → She practices speaking English every day.
 >
 > ---
 >
 > ### ⚠️ Gerund vs. Present Participle — no los confundas
 >
-> ```
-> Gerund (NOUN):         Swimming is fun.
->                        ↑ actúa como sujeto — es un sustantivo
->
-> Present Participle:    She is swimming right now.
->                        ↑ parte del verbo — forma el tiempo continuo
-> ```
+> - **Gerundio (sustantivo):** *Swimming is fun.* — actúa como sujeto.
+> - **Participio presente:** *She is swimming right now.* — parte del verbo (continuo).
 >
 > > [!tip]- 💡 ¿Cómo diferenciarlos?
 > >
@@ -106,28 +99,18 @@ dg-publish: true
 >
 > Cuando usas FANBOYS para unir dos cláusulas independientes, siempre va una **coma antes de la conjunción**:
 >
-> ```
-> [Independent Clause] , [FANBOYS] [Independent Clause]
->
-> ✅ I wanted to go, but it was raining.
-> ✅ She studied hard, so she passed the exam.
-> ✅ He likes coffee, and she prefers tea.
->
-> ❌ I wanted to go but it was raining.
->    (Falta la coma antes de but)
-> ```
+> **Fórmula:** [Independent Clause] , [FANBOYS] [Independent Clause]
+> - ✅ *I wanted to go, but it was raining.*
+> - ✅ *She studied hard, so she passed the exam.*
+> - ✅ *He likes coffee, and she prefers tea.*
+> - ❌ *I wanted to go but it was raining.* (Falta la coma antes de *but*)
 >
 > > [!tip]- 💡 ¿Cuándo NO usar coma con FANBOYS?
 > >
 > > Si FANBOYS une dos verbos o dos sustantivos pero **no** dos cláusulas independientes completas, no se usa coma:
 > >
-> > ```
-> > ✅ She runs and swims every day.
-> >    (Un solo sujeto, dos verbos — no hay segunda cláusula independiente)
-> >
-> > ✅ I ordered coffee and cake.
-> >    (Une dos sustantivos, no dos cláusulas)
-> > ```
+> > - ✅ *She runs and swims every day.* (Un solo sujeto, dos verbos — no hay segunda cláusula independiente)
+> > - ✅ *I ordered coffee and cake.* (Une dos sustantivos, no dos cláusulas)
 
 ---
 
@@ -143,18 +126,10 @@ dg-publish: true
 >
 > Se usa para negar dos elementos al mismo tiempo. No requiere inversión de sujeto y auxiliar.
 >
-> ```
-> Formula: Neither + [elemento 1] + nor + [elemento 2]
->
-> ✅ She speaks neither Spanish nor French.
->    (No habla ni español ni francés.)
->
-> ✅ Neither the teacher nor the students were late.
->    (Ni el maestro ni los estudiantes llegaron tarde.)
->
-> ✅ I have neither the time nor the energy to argue.
->    (No tengo ni el tiempo ni la energía para discutir.)
-> ```
+> **Fórmula:** Neither + [elemento 1] + nor + [elemento 2]
+> - ✅ *She speaks neither Spanish nor French.* (No habla ni español ni francés.)
+> - ✅ *Neither the teacher nor the students were late.* (Ni el maestro ni los estudiantes llegaron tarde.)
+> - ✅ *I have neither the time nor the energy to argue.* (No tengo ni el tiempo ni la energía para discutir.)
 >
 > ---
 >
@@ -162,18 +137,11 @@ dg-publish: true
 >
 > Cuando **nor** une dos cláusulas independientes, el **sujeto y el auxiliar se invierten** en la segunda cláusula (estructura similar a una pregunta).
 >
-> ```
-> Formula: [Negative Ind. Clause] , nor + [auxiliary] + [subject] + [verb]...
->
-> ✅ He doesn't smoke, nor does he drink.
->    ↑ Inversión: "nor DOES he" — no "nor he does"
->
-> ✅ She didn't call, nor did she send a message.
->
-> ✅ I am not angry, nor am I disappointed.
->
-> ✅ They won't give up, nor will they accept defeat.
-> ```
+> **Fórmula:** [Negative Ind. Clause] , nor + [auxiliary] + [subject] + [verb]...
+> - ✅ *He doesn't smoke, nor does he drink.* (Inversión: "nor DOES he" — no "nor he does")
+> - ✅ *She didn't call, nor did she send a message.*
+> - ✅ *I am not angry, nor am I disappointed.*
+> - ✅ *They won't give up, nor will they accept defeat.*
 >
 > ---
 >
@@ -184,11 +152,8 @@ dg-publish: true
 > | **OR** | Positiva o neutra | *You can call me **or** text me.* |
 > | **NOR** | Siempre después de una cláusula negativa | *She didn't call, **nor** did she text me.* |
 >
-> ```
-> ✅ CORRECTO:  I don't like coffee, nor do I like tea.
-> ❌ INCORRECTO: I don't like coffee, or do I like tea.
->               (OR no puede seguir una cláusula negativa para añadir otra negación)
-> ```
+> - ✅ CORRECTO: *I don't like coffee, nor do I like tea.*
+> - ❌ INCORRECTO: *I don't like coffee, or do I like tea.* (OR no puede seguir una cláusula negativa para añadir otra negación)
 
 ---
 
