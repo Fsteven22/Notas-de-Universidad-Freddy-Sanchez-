@@ -416,12 +416,12 @@ graph TB
 > ### Aplicaciones Directas
 > 
 > - [[Trabajo y Energía]] - Análisis energético de choques
-> - [[Centro de Masa]] - Para sistemas de múltiples partículas
+> - [[Centro de masa (CM)]] - Para sistemas de múltiples partículas
 > - [[Dinámica de Sistemas]] - Extensión a muchas partículas
 > 
 > ### Conceptos Relacionados
 > 
-> - [[Momento Angular]] - Choques con rotación
+> - [[Momentum Angular]] - Choques con rotación
 > - [[Oscilaciones]] - Choques en sistemas vibratorios
 > - [[Ondas]] - Choques elásticos y transmisión de energía
 > 

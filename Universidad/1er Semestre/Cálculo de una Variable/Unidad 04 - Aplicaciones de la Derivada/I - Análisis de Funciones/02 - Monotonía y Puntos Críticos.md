@@ -484,7 +484,7 @@ flowchart TD
 > - [[Derivadas]] - Cálculo de la primera derivada
 > - [[Reglas de Derivación]] - Técnicas de derivación
 > - [[Límites]] - Comportamiento local de funciones
-> - [[Continuidad]] - Base para aplicar teoremas
+> - [[02 – Continuidad]] - Base para aplicar teoremas
 > 
 > **Temas relacionados:**
 > 

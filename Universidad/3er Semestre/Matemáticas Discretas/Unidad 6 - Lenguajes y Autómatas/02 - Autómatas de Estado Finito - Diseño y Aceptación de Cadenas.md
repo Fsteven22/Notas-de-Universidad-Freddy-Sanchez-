@@ -208,7 +208,7 @@ dg-publish: true
 > | **Conjunto de salida $O$** | Cualquier conjunto finito | Restringido a $\{0,1\}$ (o se omite) |
 > | **Pregunta que responde** | ¿Qué salida se produce en cada paso? | ¿Se acepta o rechaza la cadena completa? |
 > | **Elemento distintivo** | Función de salida $g$ | Conjunto de estados aceptantes $\mathcal{A}$ |
-> | **Diagrama** | Etiquetas $i/o$ en cada [[01 - Grafos I - Conceptos Básicos y Recorridos\|arista]] | Solo etiqueta $i$; aceptantes con doble círculo |
+> | **Diagrama** | Etiquetas $i/o$ en cada [[01 - Grafos I - Conceptos Básicos y Recorridos|arista]] | Solo etiqueta $i$; aceptantes con doble círculo |
 > | **Ejemplo típico** | Sumador en serie | Validador de patrones (regex) |
 
 ---

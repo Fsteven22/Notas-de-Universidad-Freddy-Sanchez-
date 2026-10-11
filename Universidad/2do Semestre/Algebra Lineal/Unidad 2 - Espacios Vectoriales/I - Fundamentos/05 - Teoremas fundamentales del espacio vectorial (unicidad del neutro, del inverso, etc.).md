@@ -1313,16 +1313,16 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[Espacio Vectorial]] - Definición axiomática
+> - [[02 - Espacio Vectorial]] - Definición axiomática
 > - [[Subespacios]] - Heredan propiedades
-> - [[Transformaciones Lineales]] - Preservan estructura
+> - [[01 – Transformaciones lineales]] - Preservan estructura
 > - [[Independencia Lineal]] - Usa estos teoremas
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Bases y Dimensión]] - Representación única
+> - [[02 – Base y dimensión]] - Representación única
 > - [[Sistemas de Ecuaciones]] - Resolución formal
-> - [[Determinantes]] - Propiedades algebraicas
+> - [[04 - Determinantes]] - Propiedades algebraicas
 > - [[Espacios Normados]] - Estructura adicional
 > - [[Análisis Funcional]] - Extensión infinita
 

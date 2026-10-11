@@ -310,8 +310,8 @@ flowchart TD
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Formas Indeterminadas 0/0]] - Contexto general de indeterminaciones
-> - [[Identidades Trigonométricas]] - Herramientas de transformación
+> - [[01 - Formas Indeterminadas]] - Contexto general de indeterminaciones
+> - [[05 - Identidades trigonométricas]] - Herramientas de transformación
 > - [[Teorema del Sandwich]] - Método de demostración geométrica
 > - [[Derivadas Trigonométricas]] - Aplicación principal de estos límites
 > - [[Series de Taylor]] - Desarrollo alternativo para casos complejos
@@ -607,7 +607,7 @@ flowchart TD
 > - [[01 - Límites al Infinito y Sucesiones]] - Casos donde exponenciales tienden a infinito
 > - [[01 - Formas Indeterminadas]] - Herramienta para formas indeterminadas
 > - [[Serie de Taylor]] - Para aproximaciones de funciones
-> - [[Función Exponencial]] - Propiedades de $e^x$ y $a^x$
+> - [[13 - Funciones exponenciales]] - Propiedades de $e^x$ y $a^x$
 >
 > [!info] 📖 **Notas Recomendadas para Complementar**
 > 
@@ -616,7 +616,7 @@ flowchart TD
 > - [[01 - Concepto y Definición Formal del Límite]] - Conceptos fundamentales
 > - [[Propiedades de Logaritmos]] - Esencial para método logarítmico
 > - [[Límites Fundamentales]] - Base para límites trigonométricos
-> - [[Formas Indeterminadas]] - Clasificación general
+> - [[01 - Formas Indeterminadas]] - Clasificación general
 > 
 > ### Temas Relacionados:
 > 
@@ -772,7 +772,7 @@ graph TD
 > - [[01 - Formas Indeterminadas]] - Herramienta principal para resolver estas indeterminaciones
 > - [[Funciones Logarítmicas]] - Propiedades fundamentales del logaritmo
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento asintótico general
-> - [[Formas Indeterminadas]] - Clasificación completa de indeterminaciones
+> - [[01 - Formas Indeterminadas]] - Clasificación completa de indeterminaciones
 > - [[Crecimiento Asintótico]] - Comparación detallada de funciones
 
 ## Notas Recomendadas 📚

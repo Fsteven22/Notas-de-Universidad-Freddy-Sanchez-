@@ -360,7 +360,7 @@ flowchart TD
 > 
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para todas las integrales definidas
 > - [[03 - Teoremas Especiales para Integrales Definidas]] - Propiedades complementarias de integrales
-> - [[Propiedades de la Integral Definida]] - Linealidad y aditividad
+> - [[02 - Propiedades de la Integral]] - Linealidad y aditividad
 > - [[Funciones Trigonométricas]] - Ejemplos principales de funciones periódicas
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > 
@@ -368,7 +368,7 @@ flowchart TD
 > 
 > - [[Series de Fourier]] - Aplicación directa de propiedades de simetría
 > - [[Análisis de Señales]] - Aplicaciones en ingeniería
-> - [[Funciones Especiales]] - Más ejemplos de funciones con simetrías
+> - [[06 - Funciones Especiales]] - Más ejemplos de funciones con simetrías
 > - [[Transformadas Integrales]] - Uso avanzado de propiedades de simetría
 > 
 > ### 🎯 Notas Recomendadas
@@ -654,7 +654,7 @@ graph LR
 > 
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para la demostración
 > - [[Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
-> - [[Propiedades de la Integral Definida]] - Propiedades utilizadas en la demostración
+> - [[02 - Propiedades de la Integral]] - Propiedades utilizadas en la demostración
 > - [[01 - Integral de Riemann]] - Definición formal de la integral
 > - [[Funciones Continuas]] - Condición necesaria para el teorema
 > 

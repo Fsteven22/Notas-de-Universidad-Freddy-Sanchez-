@@ -255,7 +255,7 @@ graph LR
 
 > [!quote]+ Enlaces a Otras Notas
 > 
-> - [[El Principio de Arquímedes y Flotación 1]]
+> - [[El Principio de Arquímedes y Flotación]]
 > - [[El Principio de Pascal]]
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]

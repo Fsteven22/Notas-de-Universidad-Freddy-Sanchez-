@@ -1271,19 +1271,19 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[08 - Derivadas Parciales]]** - Base para todo
+> - **[[Derivadas Parciales]]** - Base para todo
 > - **[[09 - Derivada Direccional]]** - Caso especial
-> - **[[10 - Diferenciabilidad]]** - Concepto fundamental
-> - **[[11 - Funciones de Clase C¹]]** - Hipótesis central
-> - **[[12 - Matriz Jacobiana]]** - Herramienta principal
+> - **[[04 – Diferenciabilidad]]** - Concepto fundamental
+> - **[[05 – Funciones de Clase C¹]]** - Hipótesis central
+> - **[[06 – Matriz Jacobiana]]** - Herramienta principal
 > - **Álgebra Lineal: Determinantes** - Criterio de invertibilidad
 > - **Álgebra Lineal: Sistemas lineales** - Resolución local
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[14 - Multiplicadores de Lagrange]]** - Usa función implícita
-> - **[[15 - Optimización con Restricciones]]** - Aplicación directa
-> - **[[16 - Integrales Múltiples]]** - Cambio de variables válido
+> - **[[01 - Multiplicaciones de Lagrange]]** - Usa función implícita
+> - **[[02 - Optimización con Restricciones]]** - Aplicación directa
+> - **[[01 – Integrales múltiples]]** - Cambio de variables válido
 > - **[[17 - Teoremas Integrales]]** - Condiciones de regularidad
 > - **Geometría Diferencial** - Superficies y variedades
 > - **Ecuaciones Diferenciales** - Existencia y unicidad
@@ -1316,7 +1316,7 @@ dg-publish: true
 > 
 > ### Siguiente tema recomendado:
 > 
-> **[[14 - Multiplicadores de Lagrange]]** - Aplicación importante de estos teoremas
+> **[[01 - Multiplicaciones de Lagrange]]** - Aplicación importante de estos teoremas
 
 ---
 

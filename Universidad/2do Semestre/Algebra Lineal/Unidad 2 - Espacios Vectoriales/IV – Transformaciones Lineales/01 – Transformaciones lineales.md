@@ -735,7 +735,7 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales]] - Espacios vectoriales
-> - [[05 - Combinaciones lineales]] - Estructura lineal
+> - [[02 – Combinación lineal]] - Estructura lineal
 > - [[06 - Independencia lineal]] - Bases
 > - [[05 – Espacio columna]] - Imagen
 > - [[06 – Espacio fila]] - Dualidad

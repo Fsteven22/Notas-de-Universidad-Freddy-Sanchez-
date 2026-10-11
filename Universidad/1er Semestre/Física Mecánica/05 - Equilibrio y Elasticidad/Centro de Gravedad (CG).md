@@ -202,10 +202,10 @@ graph TD
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
 > - [[Equilibrio: Estático, Estable e Inestable]]
-> - [[Centro de Masa]]
+> - [[Centro de masa (CM)]]
 > - [[Momento de Torsión]]
 > - [[Estática]]
-> - [[Dinámica Rotacional]]
+> - [[Cinemática Rotacional]]
 > - [[Diseño Estructural]]
 
 ---

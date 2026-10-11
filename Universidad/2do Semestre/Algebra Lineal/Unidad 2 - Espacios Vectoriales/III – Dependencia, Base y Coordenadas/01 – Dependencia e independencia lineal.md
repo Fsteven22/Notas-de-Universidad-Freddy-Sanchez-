@@ -1477,8 +1477,8 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[06 - Combinaciones Lineales]]** - Base de la definición
-> - **[[07 - Sistemas de Ecuaciones Lineales]]** - Método de verificación
+> - **[[02 – Combinación lineal]]** - Base de la definición
+> - **[[05 - Sistemas de ecuaciones lineales]]** - Método de verificación
 > - **[[08 - Matrices y Operaciones]]** - Representación matricial
 > - **[[09 - Espacio Generado]]** - Contexto de span
 > 
@@ -1488,7 +1488,7 @@ dg-publish: true
 > - **[[12 - Espacio Columna y Rango]]** - Independencia de columnas
 > - **[[13 - Espacio Nulo]]** - Soluciones y dependencia
 > - **[[14 - Coordenadas y Cambio de Base]]** - Representación única
-> - **[[15 - Transformaciones Lineales]]** - Núcleo e inyectividad
+> - **[[01 – Transformaciones lineales]]** - Núcleo e inyectividad
 > 
 > ### Conceptos relacionados:
 > 

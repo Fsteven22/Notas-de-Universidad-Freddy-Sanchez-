@@ -216,7 +216,7 @@ graph TD
 >
 > [!quote] 🔗 Conexiones
 > 
-> - [[01 - Vocabulary & Use - Describing Stories & Making Breaking Plans]]
+> - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]
 > - [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]
 > - [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 

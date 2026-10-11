@@ -302,7 +302,7 @@ graph TD
 > 
 > **Para Profundizar:**
 > 
-> - [[Módulo 5.2: Iteración de Diccionarios]] - Recorrer diccionarios
+> - [[Módulo 5.2 Iterar Diccionarios]] - Recorrer diccionarios
 > - [[Collections Module]] - defaultdict, Counter, OrderedDict
 > - [[JSON y APIs]] - Trabajo con datos web estructurados
 > - [[Manejo de Errores]] - Try/except con KeyError

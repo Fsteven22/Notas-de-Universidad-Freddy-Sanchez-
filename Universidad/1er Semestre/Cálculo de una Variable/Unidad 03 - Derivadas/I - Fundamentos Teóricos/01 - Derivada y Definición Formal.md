@@ -195,7 +195,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[01 - Derivada y Definición Formal]] - Definición formal de derivada
-> - [[Funciones]] - Conceptos básicos de funciones
+> - [[01 - Funciones]] - Conceptos básicos de funciones
 > - [[Álgebra]] - Manipulación algebraica
 > - [[Trigonometría]] - Para derivadas trigonométricas
 > 

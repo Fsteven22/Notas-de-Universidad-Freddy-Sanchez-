@@ -942,10 +942,10 @@ dg-publish: true
 > **Este tema es prerequisito para:**
 > 
 > - [[03 - Gráfico de Funciones]] - Para graficar, primero necesitas saber dónde está definida
-> - [[04 - Curvas de Nivel]] - Las curvas de nivel solo existen en el dominio
+> - [[02 – Curvas de Nivel]] - Las curvas de nivel solo existen en el dominio
 > - [[06 - Límites]] - Los límites se analizan en puntos del dominio o frontera
-> - [[07 - Continuidad]] - Una función solo es continua en su dominio
-> - [[08 - Derivadas Parciales]] - Solo se calculan en puntos del dominio
+> - [[02 – Continuidad]] - Una función solo es continua en su dominio
+> - [[Derivadas Parciales]] - Solo se calculan en puntos del dominio
 > 
 > **Conceptos relacionados:**
 > 
@@ -954,7 +954,7 @@ dg-publish: true
 > - **Fronteras** - Puntos límite entre dominio y exterior
 > - **Conexidad** - ¿El dominio es una sola pieza o varias?
 > 
-> **Siguiente tema recomendado:** [[03 - Gráfico de una función z=f(x,y)]]
+> **Siguiente tema recomendado:** [[01 – Gráfico de una función z=f(x,y)]]
 
 ---
 

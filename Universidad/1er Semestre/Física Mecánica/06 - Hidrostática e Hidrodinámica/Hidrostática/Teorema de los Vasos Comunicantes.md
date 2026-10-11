@@ -142,7 +142,7 @@ dg-publish: true
 > [!quote] Notas Relacionadas
 > 
 > - [[Presión Hidrostática]]
-> - [[Principio de Pascal]]
+> - [[El Principio de Pascal]]
 > - [[Densidad de Fluidos]]
 > - [[Sistemas Hidráulicos]]
 

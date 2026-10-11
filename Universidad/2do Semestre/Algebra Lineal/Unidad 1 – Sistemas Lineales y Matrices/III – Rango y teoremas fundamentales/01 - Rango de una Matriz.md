@@ -1443,22 +1443,22 @@ graph TD
 > 
 > **Prerequisites (Prerrequisitos):**
 > 
-> - [[Sistemas de Ecuaciones Lineales]] - Base conceptual
-> - [[Algoritmo de Gauss]] - Método de cálculo principal
+> - [[05 - Sistemas de ecuaciones lineales]] - Base conceptual
+> - [[01 - Algoritmo de Gauss]] - Método de cálculo principal
 > - [[Matrices]] - Operaciones y propiedades
 > 
 > **Temas directamente relacionados:**
 > 
-> - [[Teorema de Rouché-Frobenius]] - Clasificación de sistemas
-> - [[Espacios Vectoriales]] - Dimensión y bases
-> - [[Dependencia e Independencia Lineal]] - Concepto fundamental
+> - [[02 - Teorema de Rouché-Frobenius]] - Clasificación de sistemas
+> - [[01 - Subespacios Vectoriales]] - Dimensión y bases
+> - [[01 – Dependencia e independencia lineal]] - Concepto fundamental
 > 
 > **Aplicaciones del rango:**
 > 
-> - [[Determinantes]] - Relación con invertibilidad
-> - [[Matriz Inversa]] - Condición de existencia
-> - [[Transformaciones Lineales]] - Núcleo e imagen
-> - [[Valores y Vectores Propios]] - Análisis espectral
+> - [[04 - Determinantes]] - Relación con invertibilidad
+> - [[06 - Matriz Inversa]] - Condición de existencia
+> - [[01 – Transformaciones lineales]] - Núcleo e imagen
+> - [[01 - Valores y Vectores propios]] - Análisis espectral
 > 
 > **Temas avanzados:**
 > 

@@ -273,7 +273,7 @@ dg-publish: true
 > - [[Conceptos de Presión]]
 > - [[Densidad y Peso Específico]]
 > - [[Equilibrio de Fluidos]]
-> - [[Principio de Pascal]]
+> - [[El Principio de Pascal]]
 >
 > [!success]+ Para Profundizar
 > 

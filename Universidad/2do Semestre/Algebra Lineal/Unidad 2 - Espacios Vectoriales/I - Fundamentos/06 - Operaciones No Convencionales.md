@@ -1797,13 +1797,13 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[01 - Espacios Vectoriales]]** - Definición formal y axiomas
-> - **[[02 - Subespacios Vectoriales]]** - Verificación de propiedades
-> - **[[06 - Combinaciones Lineales]]** - Operaciones fundamentales
+> - **[[01 - Subespacios Vectoriales]]** - Definición formal y axiomas
+> - **[[01 - Subespacios Vectoriales]]** - Verificación de propiedades
+> - **[[02 – Combinación lineal]]** - Operaciones fundamentales
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[16 - Transformaciones Lineales]]** - Morfismos entre espacios
+> - **[[01 – Transformaciones lineales]]** - Morfismos entre espacios
 > - **[[20 - Isomorfismos]]** - Equivalencia entre espacios con operaciones diferentes
 > - **Álgebra Abstracta** - Grupos, anillos, campos
 > - **Geometría Diferencial** - Espacios tangentes con operaciones no estándar

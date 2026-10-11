@@ -474,12 +474,12 @@ dg-publish: true
 > 
 > - [[01 - Métricas y Espacios Métricos]] - Definición de distancia
 > - [[Espacios Métricos]] - Bolas abiertas y cerradas
-> - [[Sucesiones]] - Convergencia de sucesiones
+> - [[15 - Sucesiones]] - Convergencia de sucesiones
 > 
 > **Conceptos relacionados:**
 > 
 > - [[Topología]] - Conjuntos abiertos y cerrados
-> - [[Continuidad]] - Relación con imágenes de conjuntos
+> - [[02 – Continuidad]] - Relación con imágenes de conjuntos
 > - [[Compacidad]] - Relación con subsucesiones convergentes
 > 
 > **Aplicaciones:**
@@ -885,12 +885,12 @@ graph TD
 > - [[01 - Métricas y Espacios Métricos]] - Definición de función de distancia
 > - [[01 - Métricas y Espacios Métricos]] - Bolas abiertas y cerradas
 > - [[Conjuntos]] - Teoría básica de conjuntos
-> - [[Sucesiones]] - Convergencia de sucesiones
+> - [[15 - Sucesiones]] - Convergencia de sucesiones
 > 
 > **Conceptos relacionados:**
 > 
 > - [[Topología]] - Conjuntos abiertos y cerrados
-> - [[Continuidad]] - Relación con imágenes de conjuntos
+> - [[02 – Continuidad]] - Relación con imágenes de conjuntos
 > - [[Compacidad]] - Relación con subsucesiones convergentes
 > - [[Límites]] - Definición usando puntos de acumulación
 > 

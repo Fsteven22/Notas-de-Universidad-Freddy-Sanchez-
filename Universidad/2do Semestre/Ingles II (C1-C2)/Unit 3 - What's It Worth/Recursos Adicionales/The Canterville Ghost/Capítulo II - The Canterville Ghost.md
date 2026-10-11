@@ -72,7 +72,7 @@ dg-publish: true
 >
 > [!quote] 🔗 Conexiones
 > 
-> - [[Capítulo I - The Canterville Ghost]]
+> - [[Capitulo I - The Canterville Ghost]]
 > - [[Capítulo III - The Canterville Ghost]]
 
 ---

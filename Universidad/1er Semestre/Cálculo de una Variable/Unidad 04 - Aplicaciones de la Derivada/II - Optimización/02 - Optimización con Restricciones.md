@@ -453,7 +453,7 @@ graph TD
 >
 > [!quote] [[01 - Análisis Completo de Funciones]] Herramientas para verificar naturaleza de extremos
 >
-> [!quote] [[Gradiente y Derivadas Direccionales]] Fundamentos vectoriales del método de Lagrange
+> [!quote] [[01 – Gradiente y Derivadas Direccionales]] Fundamentos vectoriales del método de Lagrange
 >
 > [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de optimización aplicada
 >

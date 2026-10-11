@@ -248,7 +248,7 @@ graph TD
 > ### 🔗 Notas Relacionadas
 > - [[04 - Teorema Fundamental del Cálculo]] - Conexión integral-derivada
 > - [[01 - Área bajo la Curva]] - Interpretación geométrica
-> - [[Propiedades de la Integral Definida]] - Operaciones con integrales
+> - [[02 - Propiedades de la Integral]] - Operaciones con integrales
 > - [[01 - Métodos de Integración Definida]] - Técnicas de cálculo
 > - [[01 - Integrales Impropias]] - Extensión del concepto
 > 

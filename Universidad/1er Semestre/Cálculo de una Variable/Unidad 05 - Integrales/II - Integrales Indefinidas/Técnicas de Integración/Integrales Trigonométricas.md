@@ -325,7 +325,7 @@ flowchart TD
 > 
 > ### Prerequisitos
 > 
-> - [[Identidades Trigonométricas]] - Fundamento esencial
+> - [[05 - Identidades trigonométricas]] - Fundamento esencial
 > - **Carpeta Técnicas de Integración** - u-substitución, integración por partes
 > - **Funciones Trigonométricas** - Definiciones y propiedades
 > 

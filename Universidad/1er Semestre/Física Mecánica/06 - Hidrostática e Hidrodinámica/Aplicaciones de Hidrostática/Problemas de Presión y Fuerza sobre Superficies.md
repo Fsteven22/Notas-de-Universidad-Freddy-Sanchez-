@@ -286,7 +286,7 @@ dg-publish: true
 > [!note] **Temas Avanzados**
 > 
 > - [[Módulo Volumétrico]] - Compresibilidad de fluidos
-> - [[Presión Manométrica]] - Medición de presiones
+> - [[Presión Manómetrica]] - Medición de presiones
 > - [[Ecuación de Continuidad y Bernoulli]] - Fluidos en movimiento
 
 ---

@@ -228,7 +228,7 @@ graph TD
 >
 > [!quote] 🔗 Conexiones
 > 
-> - [[01 - Vocabulary & Use - Describing Stories & Making Breaking Plans]]
+> - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]
 > - [[02 - Grammar & Examples - Past Perfect & Was Were Going To]]
 > - [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 

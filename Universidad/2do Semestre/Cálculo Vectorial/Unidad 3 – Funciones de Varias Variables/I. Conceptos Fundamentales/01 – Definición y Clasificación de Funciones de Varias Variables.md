@@ -411,10 +411,10 @@ dg-publish: true
 > 
 > **Este tema es base para:**
 > 
-> - [[02 - Dominio y Rango]] - Determinar dónde están definidas
+> - [[02 – Dominio y Rango]] - Determinar dónde están definidas
 > - [[03 - Gráfico de Funciones]] - Visualizar funciones escalares
-> - [[04 - Curvas de Nivel]] - Representar funciones de 2 variables
-> - [[08 - Derivadas Parciales]] - Calcular tasas de cambio
+> - [[02 – Curvas de Nivel]] - Representar funciones de 2 variables
+> - [[Derivadas Parciales]] - Calcular tasas de cambio
 > - [[11 - Gradiente]] - Vector de derivadas parciales
 > 
 > **Prerequisitos:**

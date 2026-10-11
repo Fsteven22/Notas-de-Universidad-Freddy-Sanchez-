@@ -300,7 +300,7 @@ flowchart TD
 > 
 > ### Temas Relacionados
 > - [[Ecuaciones Paramétricas]] - Definición de las curvas
-> - [[Coordenadas Polares]] - Otro sistema de coordenadas
+> - [[02 - Coordenadas polares]] - Otro sistema de coordenadas
 > - [[Longitud de Arco]] - Aplicación directa
 > - [[Curvatura]] - Usa segunda derivada paramétrica
 > 

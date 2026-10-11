@@ -103,7 +103,7 @@ dg-publish: true
 > |**Determinismo**|Cada resultado intermedio depende únicamente de la entrada y de los pasos anteriores|
 > |**Carácter finito**|Termina tras un número finito de instrucciones|
 > |**Corrección**|La salida producida es correcta — resuelve el problema sin errores|
-> |**Generalidad**|Se aplica a un [[04 - Cardinalidad y Leyes de Cardinalidad\|Cardinalidad]] de entradas, no a un solo caso|
+> |**Generalidad**|Se aplica a un [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] de entradas, no a un solo caso|
 
 > [!example] 🟢 Ejemplo — máximo de tres números (con rastreo)
 > 

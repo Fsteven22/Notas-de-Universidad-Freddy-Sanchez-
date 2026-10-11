@@ -1273,7 +1273,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - [[Gráficas Lineales]] - Fundamento necesario previo
+> - [[Graficas Lineales]] - Fundamento necesario previo
 > - [[Gráficas no lineales]] - Identificación de patrones
 > - [[Estadística Básica]] - Base matemática
 > - [[Incertidumbres Experimentales]] - Propagación de errores

@@ -434,12 +434,12 @@ mindmap
 > ### Aplicaciones Directas
 > 
 > - [[Choques Uni-Bidimensionales]] - Aplicación práctica principal del principio
-> - [[Centro de Masa]] - Movimiento del punto representativo del sistema
+> - [[Centro de masa (CM)]] - Movimiento del punto representativo del sistema
 > - [[Dinámica de Sistemas]] - Análisis de múltiples partículas
 > 
 > ### Conceptos Relacionados
 > 
-> - [[Momento Angular]] - Análogo rotacional del Momentum lineal
+> - [[Momentum Angular]] - Análogo rotacional del Momentum lineal
 > - [[Principios de Conservación de la Energía]] - Principio complementario
 > - [[Dinámica de Fluidos]] - Momentum en medios continuos
 > 

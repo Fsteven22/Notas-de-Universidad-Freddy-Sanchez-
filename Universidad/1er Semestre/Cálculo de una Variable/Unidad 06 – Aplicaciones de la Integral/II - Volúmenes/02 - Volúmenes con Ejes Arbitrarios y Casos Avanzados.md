@@ -402,7 +402,7 @@ dg-publish: true
 
 ### 📖 Para Profundizar
 
-- [[Superficies de Revolución]] - Cálculo de áreas de superficie
+- [[03 - Superficies de revolución]] - Cálculo de áreas de superficie
 - [[Teorema de Pappus-Guldinus]] - Métodos alternativos usando centroides
 - [[Coordenadas Cilíndricas]] - Sistemas de coordenadas naturales para sólidos de revolución
 - [[Cálculo Vectorial]] - Extensiones a campos vectoriales
@@ -410,7 +410,7 @@ dg-publish: true
 ### 🎯 Aplicaciones Especializadas
 
 - [[Centros de Masa de Sólidos]] - Centroides de sólidos de revolución
-- [[Momentos de Inercia]] - Para objetos en rotación
+- [[Momento de Inercia]] - Para objetos en rotación
 - [[Optimización en Ingeniería]] - Diseño óptimo de componentes
 - [[Modelado Matemático]] - Aplicaciones en ciencias e ingeniería
 

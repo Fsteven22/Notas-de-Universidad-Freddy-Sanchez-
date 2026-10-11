@@ -354,7 +354,7 @@ graph TD
 > 
 > 
 > ### 🔗 Notas Relacionadas
-> - [[Propiedades de la Integral Definida]] - Base algebraica para las desigualdades
+> - [[02 - Propiedades de la Integral]] - Base algebraica para las desigualdades
 > - [[03 - Teoremas Especiales para Integrales Definidas]] - Herramienta para acotaciones
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > - [[04 - Teorema Fundamental del Cálculo]] - Evaluación exacta cuando es posible

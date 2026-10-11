@@ -1326,8 +1326,8 @@ dg-publish: true
 > **Este tema es prerequisito para:**
 > 
 > - [[09 - Independencia Lineal]] - Cuando la única combinación que da $\vec{0}$ es la trivial
-> - [[10 - Bases y Dimensión]] - Conjuntos que generan mediante combinaciones lineales
-> - [[11 - Transformaciones Lineales]] - Preservan combinaciones lineales
+> - [[02 – Base y dimensión]] - Conjuntos que generan mediante combinaciones lineales
+> - [[01 – Transformaciones lineales]] - Preservan combinaciones lineales
 > - [[12 - Espacios Columna y Nulo]] - Definidos por combinaciones de columnas
 > - [[13 - Rango y Nulidad]] - Dimensiones de espacios generados
 > - [[14 - Sistemas de Ecuaciones]] - Interpretación como combinaciones

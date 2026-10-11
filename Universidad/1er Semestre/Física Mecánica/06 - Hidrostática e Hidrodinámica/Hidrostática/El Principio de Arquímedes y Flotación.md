@@ -210,7 +210,7 @@ flowchart TD
 > - [[Conceptos de Densidad]]
 > - [[Fuerzas y Equilibrio]]
 > - [[Presión en Fluidos]]
-> - [[Centro de Masa]]
+> - [[Centro de masa (CM)]]
 >
 > [!success]+ Para Profundizar
 > 

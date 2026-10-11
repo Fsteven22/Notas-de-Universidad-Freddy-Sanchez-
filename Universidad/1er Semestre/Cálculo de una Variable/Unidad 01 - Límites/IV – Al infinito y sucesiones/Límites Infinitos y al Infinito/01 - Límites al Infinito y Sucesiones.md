@@ -199,9 +199,9 @@ flowchart TD
 > 
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento cuando x tiende a infinito
 > - [[Asíntotas]] - Estudio completo de comportamiento asintótico
-> - [[Continuidad]] - Relación con discontinuidades infinitas
+> - [[02 – Continuidad]] - Relación con discontinuidades infinitas
 > - [[02 - Límites Laterales]] - Herramienta fundamental para el análisis
-> - [[Funciones Racionales]] - Casos más comunes de límites infinitos
+> - [[12 - Funciones racionales]] - Casos más comunes de límites infinitos
 >
 > [!info] 📖 **Notas Recomendadas para Complementar**
 > 
@@ -376,14 +376,14 @@ flowchart TD
 > - [[01 - Concepto y Definición Formal del Límite]] - Fundamentos teóricos
 > - [[02 - Límites Laterales]] - Para casos puntuales
 > - [[Asíntotas]] - Comportamiento gráfico completo
-> - [[Continuidad]] - Relación con límites
+> - [[02 – Continuidad]] - Relación con límites
 > - [[01 - Derivada y Definición Formal]] - Aplicación en tasas de cambio
 >
 > [!info] 📖 **Notas Recomendadas para Complementar**
 > 
 > ### Prerrequisitos:
 > 
-> - [[Funciones Polinómicas]] - Base algebraica necesaria
+> - [[11 - Funciones polinomiales]] - Base algebraica necesaria
 > - [[Álgebra de Límites]] - Propiedades operacionales
 > - [[Función Racional]] - Características específicas
 > 
@@ -604,7 +604,7 @@ flowchart TD
 > 
 > - [[Límites de Funciones]] - Relación entre límites funcionales y sucesiones
 > - [[Series Numéricas]] - Aplicación de sucesiones en series
-> - [[Continuidad]] - Caracterización secuencial de continuidad
+> - [[02 – Continuidad]] - Caracterización secuencial de continuidad
 > - [[Topología de los Reales]] - Conceptos de supremo e ínfimo
 > - [[Criterios de Convergencia]] - Herramientas avanzadas para series
 

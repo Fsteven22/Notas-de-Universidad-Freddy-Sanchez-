@@ -956,19 +956,19 @@ dg-publish: true
 > 
 > - [[Axiomas de espacios vectoriales]] - Propiedades básicas
 > - [[Grupos y estructuras algebraicas]] - Contexto general
-> - [[Operaciones binarias]] - Suma y producto
+> - [[03 - Operaciones binarias]] - Suma y producto
 > - [[Elemento neutro e inverso]] - Requisitos para cancelación
 > 
 > **Temas relacionados:**
 > 
 > - [[Matrices invertibles]] - Cancelación matricial
-> - [[Determinantes]] - Condición de invertibilidad
+> - [[04 - Determinantes]] - Condición de invertibilidad
 > - [[Núcleo de transformación]] - Inyectividad
 > - [[Divisores de cero]] - Cuando falla cancelación
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Sistemas de ecuaciones lineales]] - Resolución
+> - [[05 - Sistemas de ecuaciones lineales]] - Resolución
 > - [[Independencia lineal]] - Unicidad de coeficientes
 > - [[Isomorfismos]] - Biyecciones cancelables
 > - [[Teorema de rango-nulidad]] - Dimensiones

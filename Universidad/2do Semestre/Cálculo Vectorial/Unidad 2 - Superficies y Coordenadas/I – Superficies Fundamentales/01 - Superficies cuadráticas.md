@@ -1083,23 +1083,23 @@ dg-publish: true
 > 
 > - [[Ecuación de la recta en ℝ³]] - Para entender generatrices
 > - [[Ecuación del plano]] - Para secciones planas
-> - [[Vectores en ℝ³]] - Vectores normales y tangentes
+> - [[02 - Vectores en R3]] - Vectores normales y tangentes
 > - [[Producto vectorial]] - Para cálculos de área
 > - [[Cónicas]] - Base bidimensional
 > 
 > **Temas relacionados:**
 > 
-> - [[Coordenadas cilíndricas y esféricas]] - Simplifica ecuaciones
-> - [[Superficies de revolución]] - Caso especial de cuádricas
-> - [[Superficies cilíndricas]] - Cuádricas sin variable z
+> - [[01 - Coordenadas cilíndricas y esféricas]] - Simplifica ecuaciones
+> - [[03 - Superficies de revolución]] - Caso especial de cuádricas
+> - [[02 - Superficies cilíndricas]] - Cuádricas sin variable z
 > - [[Cálculo vectorial]] - Gradientes y normales
-> - [[Curvas de nivel]] - Secciones planas
+> - [[02 – Curvas de Nivel]] - Secciones planas
 > 
 > **Aplicaciones directas:**
 > 
 > - [[Funciones de varias variables]] - Superficies de nivel
 > - [[Optimización]] - Extremos sobre superficies
-> - [[Integrales múltiples]] - Volúmenes y regiones
+> - [[01 – Integrales múltiples]] - Volúmenes y regiones
 > - [[Ecuaciones diferenciales]] - Soluciones geométricas
 > 
 > **Temas avanzados:**

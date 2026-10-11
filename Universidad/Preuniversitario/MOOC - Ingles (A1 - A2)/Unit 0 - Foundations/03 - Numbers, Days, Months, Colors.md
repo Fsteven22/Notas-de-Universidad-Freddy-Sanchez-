@@ -1490,7 +1490,7 @@ dg-publish: true
 > - Edad: "I am... years old"
 > ```
 > 
-> **[[05 - Personal and Possessive Pronouns]]**
+> **[[02 - Personal and Possessive Pronouns]]**
 > 
 > ```
 > Conexión: Usas pronombres para hablar de números, días, colores:

@@ -2092,8 +2092,8 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[06 - Combinaciones Lineales]]** - Construcción de vectores
-> - **[[07 - Sistemas de Ecuaciones Lineales]]** - Resolución de sistemas
+> - **[[02 – Combinación lineal]]** - Construcción de vectores
+> - **[[05 - Sistemas de ecuaciones lineales]]** - Resolución de sistemas
 > - **[[08 - Matrices y Operaciones]]** - Representación matricial
 > - **[[09 - Espacio Generado (Span)]]** - Conjuntos generadores
 > - **[[01 – Dependencia e independencia lineal]]** - Conjuntos independientes
@@ -2104,8 +2104,8 @@ dg-publish: true
 > - **[[13 - Espacio Nulo y Nulidad]]** - Bases de espacios nulos
 > - **[[14 - Coordenadas y Cambio de Base]]** - Representación en bases
 > - **[[15 - Teorema del Rango]]** - Relación dimensional
-> - **[[16 - Transformaciones Lineales]]** - Dimensión de imagen y núcleo
-> - **[[17 - Valores y Vectores Propios]]** - Bases especiales
+> - **[[01 – Transformaciones lineales]]** - Dimensión de imagen y núcleo
+> - **[[01 - Valores y Vectores propios]]** - Bases especiales
 > - **[[18 - Diagonalización]]** - Bases de vectores propios
 > - **[[19 - Espacios con Producto Interno]]** - Bases ortonormales
 > 

@@ -343,7 +343,7 @@ dg-publish: true
 > - [[Viscosidad y Número de Reynolds]] - Caracterización del flujo
 > - [[Flujo Laminar y Ecuación de Poiseuille]] - Teoría fundamental
 > - [[Problemas de Ecuación de Continuidad]] - Conservación de masa
-> - **Próximo tema**: [[Problemas de Flotabilidad en Fluidos en Movimiento]]
+> - **Próximo tema**: [[Problemas de Flotabilidad y Empuje en Fluidos en Movimiento]]
 
 ## 📚 Notas Recomendadas
 

@@ -420,7 +420,7 @@ graph TD
 >
 > [!quote] [[Optimización de Funciones]] Aplicaciones prácticas del análisis completo
 >
-> [!quote] [[Funciones Racionales]] Casos específicos y técnicas especializadas
+> [!quote] [[12 - Funciones racionales]] Casos específicos y técnicas especializadas
 
 
 ---

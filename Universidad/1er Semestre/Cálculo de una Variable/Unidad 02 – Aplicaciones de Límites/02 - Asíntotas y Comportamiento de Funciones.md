@@ -340,9 +340,9 @@ graph TD
 > 
 > - [[01 - Límites al Infinito y Sucesiones]] - Base teórica para asíntotas horizontales
 > - [[02 - Límites Laterales]] - Fundamental para asíntotas verticales
-> - [[Funciones Racionales]] - Tipo más común con asíntotas
+> - [[12 - Funciones racionales]] - Tipo más común con asíntotas
 > - [[Derivadas y Gráficas]] - Análisis completo de funciones
-> - [[Continuidad]] - Relación con discontinuidades
+> - [[02 – Continuidad]] - Relación con discontinuidades
 > - [[Optimización]] - Aplicación de extremos y comportamiento
 
 ## Notas Recomendadas

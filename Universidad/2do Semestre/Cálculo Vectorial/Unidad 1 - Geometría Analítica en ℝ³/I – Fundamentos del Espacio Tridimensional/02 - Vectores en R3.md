@@ -774,15 +774,15 @@ graph TD
 > 
 > **Prerequisites (Prerrequisitos):**
 > 
-> - [[01.1 Sistema de Referencia Espacial]] - Base del espacio ℝ³
+> - [[01 - Sistema de referencia espacial en R3]] - Base del espacio ℝ³
 > - [[Números Reales]] - Componentes de vectores
 > - [[Álgebra Básica]] - Operaciones fundamentales
 > 
 > **Temas siguientes:**
 > 
 > - [[01.3 Distancia en el Espacio]] - Usa magnitud de vectores
-> - [[01.4 Rectas en ℝ³]] - Ecuaciones vectoriales de rectas
-> - [[01.5 Planos en ℝ³]] - Vectores normales a planos
+> - [[01 - Rectas en R3]] - Ecuaciones vectoriales de rectas
+> - [[02 - Planos en R3]] - Vectores normales a planos
 > 
 > **Operaciones avanzadas:**
 > 
@@ -794,12 +794,12 @@ graph TD
 > 
 > - [[Cinemática Vectorial]] - Movimiento en el espacio
 > - [[Fuerzas y Equilibrio]] - Estática vectorial
-> - [[Transformaciones Lineales]] - Matrices y vectores
+> - [[01 – Transformaciones lineales]] - Matrices y vectores
 > 
 > **Temas relacionados:**
 > 
-> - [[Espacios Vectoriales]] - Generalización abstracta
-> - [[Bases y Dimensión]] - Vectores linealmente independientes
+> - [[01 - Subespacios Vectoriales]] - Generalización abstracta
+> - [[02 – Base y dimensión]] - Vectores linealmente independientes
 > - [[Álgebra Lineal]] - Teoría completa
 
 ## 💡 Consejos de Estudio y Errores Comunes

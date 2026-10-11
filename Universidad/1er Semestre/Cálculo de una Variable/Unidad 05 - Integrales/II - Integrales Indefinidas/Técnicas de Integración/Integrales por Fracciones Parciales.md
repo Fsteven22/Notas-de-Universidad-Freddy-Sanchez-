@@ -201,7 +201,7 @@ graph LR
 > [!note] 📖 **Para profundizar**
 > 
 > - [[Teorema Fundamental del Álgebra]]
-> - [[Sistemas de Ecuaciones Lineales]]
+> - [[05 - Sistemas de ecuaciones lineales]]
 > - [[Transformada de Laplace]]
 > - [[Funciones Racionales y sus Propiedades]]
 > - [[Métodos de Integración - Resumen General]]

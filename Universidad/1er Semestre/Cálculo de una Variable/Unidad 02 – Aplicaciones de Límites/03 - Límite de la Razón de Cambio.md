@@ -302,7 +302,7 @@ graph TD
 > - [[Límites de Funciones]] - Base conceptual para la definición de derivada
 > - [[Reglas de Derivación]] - Técnicas para calcular derivadas
 > - [[Aplicaciones de la Derivada]] - Usos en optimización y análisis
-> - [[Continuidad]] - Relación entre continuidad y derivabilidad
+> - [[02 – Continuidad]] - Relación entre continuidad y derivabilidad
 > - [[Diferencial]] - Concepto relacionado con aproximaciones lineales
 > - [[Cinemática]] - Aplicaciones físicas de razones de cambio
 

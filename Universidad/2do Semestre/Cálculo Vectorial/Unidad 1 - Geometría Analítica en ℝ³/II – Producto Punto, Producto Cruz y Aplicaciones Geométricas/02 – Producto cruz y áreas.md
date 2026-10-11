@@ -1101,12 +1101,12 @@ dg-publish: true
 > [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
 > 
 > - [[02 - Vectores en R3]] - Base fundamental
-> - [[01 - Producto Punto y Ángulos]] - Operación complementaria
-> - [[Determinantes]] - Método de cálculo
+> - [[01 – Producto punto y ángulos]] - Operación complementaria
+> - [[04 - Determinantes]] - Método de cálculo
 > 
 > **Temas siguientes:**
 > 
-> - [[03 - Aplicaciones Geométricas Básicas]] - Uso combinado
+> - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
 > - [[Rectas y Planos en R3]] - Ecuaciones vectoriales
 > - [[Superficies en R3]] - Vectores normales
 > 
@@ -1118,7 +1118,7 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[Momento Angular]] - Mecánica rotacional
+> - [[Momentum Angular]] - Mecánica rotacional
 > - [[Campos Vectoriales]] - Rotacional
 > - [[Geometría Diferencial]] - Formas diferenciales
 

@@ -199,7 +199,7 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > 
 > - [[Viscosidad y Número de Reynolds]]
-> - [[El Principio de Arquímedes y Flotación 1]]
+> - [[El Principio de Arquímedes y Flotación]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]
 
 ---

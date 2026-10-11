@@ -2647,7 +2647,7 @@ dg-publish: true
 > - [[01 - Rango de una Matriz]] - Concepto fundamental del teorema
 > - [[02 - Formas Escalonadas y Matriz Escalonada]] - Método para calcular rangos
 > - [[01 - Algoritmo de Gauss]] - Herramienta de cálculo
-> - [[02 - Sistemas de ecuaciones lineales]] - Objeto de estudio
+> - [[05 - Sistemas de ecuaciones lineales]] - Objeto de estudio
 > - [[Matrices]] - Estructura algebraica base
 > 
 > **Es prerequisito para:**
@@ -2659,8 +2659,8 @@ dg-publish: true
 > 
 > **Conceptos relacionados:**
 > 
-> - [[Espacios Vectoriales]] - Espacio solución como subespacio
-> - [[Dependencia e Independencia Lineal]] - Relación con el rango
+> - [[01 - Subespacios Vectoriales]] - Espacio solución como subespacio
+> - [[01 – Dependencia e independencia lineal]] - Relación con el rango
 > - [[01 - Subespacios Vectoriales]] - Conjunto solución de sistemas compatibles
 > - [[Dimensión de un espacio vectorial]] - Grados de libertad
 > 

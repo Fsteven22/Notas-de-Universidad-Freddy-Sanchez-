@@ -694,8 +694,8 @@ graph TD
 > 
 > **Temas siguientes:**
 > 
-> - [[02 - Producto Cruz y Áreas]] - Otra operación vectorial
-> - [[03 - Aplicaciones Geométricas]] - Uso combinado
+> - [[02 – Producto cruz y áreas]] - Otra operación vectorial
+> - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
 > - [[Rectas y Planos]] - Ecuaciones usando producto punto
 > 
 > **Aplicaciones avanzadas:**
@@ -706,7 +706,7 @@ graph TD
 > 
 > **Temas relacionados:**
 > 
-> - [[Proyecciones Ortogonales]] - Aplicaciones detalladas
+> - [[04 – Proyección ortogonal]] - Aplicaciones detalladas
 > - [[Bases Ortonormales]] - Sistemas perpendiculares
 > - [[Descomposición QR]] - Ortogonalización de Gram-Schmidt
 

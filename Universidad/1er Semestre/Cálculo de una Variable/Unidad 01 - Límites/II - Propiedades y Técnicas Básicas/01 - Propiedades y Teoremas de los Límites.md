@@ -373,7 +373,7 @@ flowchart TD
 > **Aplicaciones:**
 > 
 > - [[Derivadas]] - Límites en la definición de derivada
-> - [[Continuidad]] - Criterio de continuidad
+> - [[02 – Continuidad]] - Criterio de continuidad
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento asintótico
 > 
 > **Extensiones:**
@@ -673,7 +673,7 @@ flowchart TD
 > - [[Continuidad de Funciones]] - Requisito para composición
 > - [[Límites Indeterminados]] - Casos donde los teoremas no aplican directamente
 > - [[Álgebra de Funciones]] - Operaciones básicas entre funciones
-> - [[Funciones Compuestas]] - Teoría de composición de funciones
+> - [[05 - Funciones compuestas]] - Teoría de composición de funciones
 
 ## 📖 Notas Recomendadas para Estudio Complementario
 
@@ -892,7 +892,7 @@ flowchart TD
 > 
 > - [[Continuidad de Funciones]] - Fundamento teórico para sustitución directa
 > - [[Límites Indeterminados]] - Casos donde NO aplicar sustitución
-> - [[Dominio y Rango]] - Verificación previa a la evaluación
+> - [[02 – Dominio y Rango]] - Verificación previa a la evaluación
 > - [[Funciones Elementales]] - Catálogo de funciones continuas
 > - [[Gráficas de Funciones]] - Interpretación visual de continuidad
 
@@ -907,7 +907,7 @@ flowchart TD
 > 
 > **Temas Paralelos:** 3. **[[Álgebra de Límites]]** - Operaciones con límites 4. **[[03 - Límites en Gráficas]]** - Visualización de límites
 > 
-> **Siguientes Pasos:** 5. **[[02 - Límites Laterales]]** - Extensión del concepto 6. **[[Formas Indeterminadas]]** - Casos complejos
+> **Siguientes Pasos:** 5. **[[02 - Límites Laterales]]** - Extensión del concepto 6. **[[01 - Formas Indeterminadas]]** - Casos complejos
 
 ## 🎯 Ejercicios de Práctica Progresiva
 

@@ -1285,7 +1285,7 @@ dg-publish: true
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[15 - Matriz de una Transformación Lineal]]** - Representación en diferentes bases
+> - **[[07 - Matriz de una Transformación Lineal]]** - Representación en diferentes bases
 > - **[[16 - Cambio de Base para Transformaciones]]** - Similaridad de matrices
 > - **[[22 - Eigenvalores y Eigenvectores]]** - Diagonalización
 > - **[[23 - Diagonalización]]** - Cambio a base de eigenvectores

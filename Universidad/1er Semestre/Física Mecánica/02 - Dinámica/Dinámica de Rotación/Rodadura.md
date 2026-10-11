@@ -250,7 +250,7 @@ dg-publish: true
 > 
 > - > [[Dinámica Lineal]] - Segunda Ley de Newton
 >     
-> - > [[Dinámica Rotacional]] - Torque y momento de inercia
+> - > [[Cinemática Rotacional]] - Torque y momento de inercia
 >     
 > - > [[Cinemática Rotacional]] - Relaciones angulares
 >     

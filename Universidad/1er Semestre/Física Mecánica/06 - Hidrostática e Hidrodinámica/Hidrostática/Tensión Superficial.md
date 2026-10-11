@@ -262,14 +262,14 @@ Esta es la forma más fundamental, donde el trabajo infinitesimal para crear ár
 >- [[Fuerzas Intermoleculares]] - Origen microscópico del fenómeno
 >- [[Termodinámica de Superficies]] - Aspectos energéticos
 >- [[Ecuación de Continuidad y Bernoulli]] - Flujo con efectos superficiales
->- [[Presión y Densidad 1]] - Conceptos fundamentales relacionados
+>- [[Presión y Densidad]] - Conceptos fundamentales relacionados
 
 ## 📖 Notas Recomendadas para Complementar
 
 >[!info] 🎯 **Prerrequisitos y Temas Relacionados**
 >
 >**Prerrequisitos esenciales:**
->- [[Presión y Densidad 1]] - Conceptos fundamentales de fluidos
+>- [[Presión y Densidad]] - Conceptos fundamentales de fluidos
 >- [[Fuerzas y Equilibrio]] - Para análisis de fuerzas en superficies
 >- [[Geometría]] - Para cálculos de áreas y volúmenes
 >- [[Trigonometría]] - Para ángulos de contacto

@@ -264,7 +264,7 @@ graph TD
 > **Prerrequisitos necesarios:**
 > 
 > - [[Límites Básicos]] - Concepto de límite y límites laterales
-> - [[Dominio y Rango]] - Conceptos básicos de funciones
+> - [[02 – Dominio y Rango]] - Conceptos básicos de funciones
 > - [[Intervalos y Conjuntos]] - Notación de intervalos
 > - [[Desigualdades]] - Manipulación de desigualdades con valor absoluto
 > 

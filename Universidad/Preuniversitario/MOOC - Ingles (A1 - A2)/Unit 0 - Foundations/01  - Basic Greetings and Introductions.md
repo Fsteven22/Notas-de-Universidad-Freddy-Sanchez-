@@ -1582,7 +1582,7 @@ dg-publish: true
 > → "Let's meet on Monday"
 > ```
 > 
-> **[[04 - Verb _to be_]]**
+> **[[01 - Verb to be]]**
 > 
 > ```
 > Conexión: Muchos saludos e introducciones usan el verbo "to be":
@@ -1598,7 +1598,7 @@ dg-publish: true
 > - Formas afirmativa, negativa, interrogativa
 > ```
 > 
-> **[[05 - Personal and Possessive Pronouns]]**
+> **[[02 - Personal and Possessive Pronouns]]**
 > 
 > ```
 > Conexión: Las introducciones usan muchos pronombres:
@@ -1613,7 +1613,7 @@ dg-publish: true
 > - Possessive adjectives: my, your, his, her, its, our, their
 > ```
 > 
-> **[[13 - Parts of Speech (POS)]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: Los saludos contienen diferentes partes de la oración:

@@ -1738,7 +1738,7 @@ dg-publish: true
 > 
 > **Siguiente paso natural:**
 > 
-> - [[Multiplicadores de Lagrange]] → Optimización con restricciones
+> - [[01 - Multiplicaciones de Lagrange]] → Optimización con restricciones
 > - [[Campos Vectoriales]] → Generalización a funciones vectoriales
 
 ---

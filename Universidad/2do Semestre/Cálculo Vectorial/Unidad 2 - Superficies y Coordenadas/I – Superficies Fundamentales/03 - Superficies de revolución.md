@@ -1269,11 +1269,11 @@ dg-publish: true
 > - [[Coordenadas Cilíndricas]] - Sistema natural para superficies de revolución
 > - [[Coordenadas Esféricas]] - Para esfera y elipsoides
 > - [[Curvas Paramétricas]] - Generatrices
-> - [[Vectores en ℝ³]] - Normal y tangentes a superficies
+> - [[02 - Vectores en R3]] - Normal y tangentes a superficies
 > - [[Cálculo Integral]] - Áreas y volúmenes
 > 
 > **Temas relacionados:**
-> - [[Superficies Cuádricas]] - Clasificación algebraica
+> - [[01 - Superficies cuadráticas]] - Clasificación algebraica
 > - [[Sólidos de Revolución]] - Volúmenes
 > - [[Curvaturas]] - Análisis geométrico diferencial
 > - [[Ecuaciones Paramétricas en 3D]] - Representación

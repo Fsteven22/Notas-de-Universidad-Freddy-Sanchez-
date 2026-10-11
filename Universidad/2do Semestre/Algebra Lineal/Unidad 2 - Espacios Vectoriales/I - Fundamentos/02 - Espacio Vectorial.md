@@ -1452,16 +1452,16 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[02.1 Conjuntos]] - Definición de conjunto
-> - [[02.3 Funciones]] - Operaciones como funciones
-> - [[03.1 Conjuntos Numéricos]] - Campo de escalares ℝ, ℂ
+> - [[01 - Funciones]] - Operaciones como funciones
+> - [[01 - Conjuntos Numéricos]] - Campo de escalares ℝ, ℂ
 > - [[06.1 Matrices]] - M_{m×n} como espacio vectorial
-> - [[06.2 Operaciones con Matrices]] - Suma y multiplicación
+> - [[02 - Operaciones con matrices]] - Suma y multiplicación
 > 
 > **Temas relacionados:**
 > 
 > - [[Álgebra Lineal]] - Teoría completa
-> - [[Transformaciones Lineales]] - Funciones entre espacios
-> - [[Producto Interno]] - Estructura adicional
+> - [[01 – Transformaciones lineales]] - Funciones entre espacios
+> - [[01 – Producto interno]] - Estructura adicional
 > - [[Normas]] - Medida de longitud
 > - [[Ortogonalidad]] - Perpendicularidad generalizada
 > 

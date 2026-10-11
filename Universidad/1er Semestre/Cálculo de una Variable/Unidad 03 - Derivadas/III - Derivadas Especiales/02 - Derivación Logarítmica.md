@@ -282,7 +282,7 @@ flowchart TD
 > 
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Conexión con casos complejos
-> - [[Funciones Exponenciales]] - Casos $a^{f(x)}$ y $f(x)^a$
+> - [[13 - Funciones exponenciales]] - Casos $a^{f(x)}$ y $f(x)^a$
 > - [[Límites Indeterminados]] - Aplicación para formas $1^\infty$, $0^0$
 > - [[Optimización]] - Derivadas complejas en máximos/mínimos
 

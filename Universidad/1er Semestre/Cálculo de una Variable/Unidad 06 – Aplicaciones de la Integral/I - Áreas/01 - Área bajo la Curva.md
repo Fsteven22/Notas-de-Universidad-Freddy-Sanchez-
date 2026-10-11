@@ -408,7 +408,7 @@ flowchart TD
 > 
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > - [[04 - Teorema Fundamental del Cálculo]] - Herramienta principal de evaluación
-> - [[Propiedades de la Integral Definida]] - Herramientas para simplificar cálculos
+> - [[02 - Propiedades de la Integral]] - Herramientas para simplificar cálculos
 > - [[01 - Métodos de Integración Definida]] - Técnicas para evaluación
 >
 > [!NOTE] 📖 Para Profundizar

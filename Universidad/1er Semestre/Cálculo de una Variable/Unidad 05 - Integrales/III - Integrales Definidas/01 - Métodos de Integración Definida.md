@@ -356,7 +356,7 @@ mindmap
 > 
 > ### 🔗 Notas Relacionadas
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para evaluación
-> - [[Propiedades de la Integral Definida]] - Herramientas para simplificar
+> - [[02 - Propiedades de la Integral]] - Herramientas para simplificar
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
 > - [[Volúmenes de Revolución]] - Aplicación de estas técnicas
@@ -364,7 +364,7 @@ mindmap
 > ### 📖 Técnicas Relacionadas
 > - [[01 - Integrales Impropias]] - Extensión a límites infinitos
 > - [[01 - Integración Numérica]] - Métodos aproximados
-> - [[Funciones Especiales]] - Integrales no elementales
+> - [[06 - Funciones Especiales]] - Integrales no elementales
 > - [[Cálculo de Variaciones]] - Técnicas avanzadas
 > 
 > ### 🎯 Aplicaciones Prácticas

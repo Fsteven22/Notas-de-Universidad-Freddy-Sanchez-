@@ -298,7 +298,7 @@ flowchart TD
 > - [[Funciones Inversas]] - Definición y propiedades básicas
 > - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Para composiciones con inversas
 > - [[01 - Derivación Implícita]] - Base del método teórico
-> - [[Identidades Trigonométricas]] - Para simplificar derivadas
+> - [[05 - Identidades trigonométricas]] - Para simplificar derivadas
 > 
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Proceso inverso

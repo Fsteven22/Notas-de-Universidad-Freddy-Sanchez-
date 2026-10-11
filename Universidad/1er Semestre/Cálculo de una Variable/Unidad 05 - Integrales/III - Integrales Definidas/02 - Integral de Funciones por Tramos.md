@@ -413,7 +413,7 @@ graph TD
 
 > [!quote] 📖 Notas relacionadas
 >
-> - [[Propiedades de la Integral Definida]] - Aditividad respecto al intervalo
+> - [[02 - Propiedades de la Integral]] - Aditividad respecto al intervalo
 > - [[04 - Teorema Fundamental del Cálculo]] - Evaluación en cada tramo
 > - [[01 - Área bajo la Curva]] - Interpretación geométrica
 
@@ -423,7 +423,7 @@ graph TD
 
 > [!info] 📚 Para profundizar y complementar
 > - [[Continuidad y Discontinuidades]] - Análisis de puntos de ruptura
-> - [[Funciones Especiales]] - Heaviside, Dirac, escalón
+> - [[06 - Funciones Especiales]] - Heaviside, Dirac, escalón
 > - [[Aplicaciones Geometricas]] - Problemas con condiciones variables
 > - [[01 - Integrales Impropias]] - Cuando hay discontinuidades infinitas
 > - [[Métodos de Integració...]] - Técnicas para cada tramo

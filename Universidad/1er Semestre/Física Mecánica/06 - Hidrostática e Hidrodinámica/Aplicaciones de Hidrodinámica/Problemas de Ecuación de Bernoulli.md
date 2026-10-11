@@ -346,7 +346,7 @@ dg-publish: true
 > - [[Ecuación de Continuidad y Bernoulli]] - Teoría fundamental
 > - [[Presión y Densidad]] - Propiedades básicas
 > - [[Flujo Laminar y Ecuación de Poiseuille]] - Efectos de viscosidad
-> - **Próximo tema**: [[Problemas de Flujo con Viscosidad]]
+> - **Próximo tema**: [[Problemas de Flujo con Viscosidad (Poiseuille)]]
 
 ## 📚 Notas Recomendadas
 

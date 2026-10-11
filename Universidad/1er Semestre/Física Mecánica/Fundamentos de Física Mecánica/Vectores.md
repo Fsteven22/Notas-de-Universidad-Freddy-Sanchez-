@@ -242,14 +242,14 @@ dg-publish: true
 > - [[Funciones Trigonométricas]] - Para ángulos y componentes
 > - [[Álgebra]] - Para operaciones algebraicas
 > - [[Geometría]] - Para interpretación geométrica
-> - [[Funciones]] - Para vectores como funciones del tiempo
+> - [[01 - Funciones]] - Para vectores como funciones del tiempo
 > 
 > **Temas complementarios:**
 > 
 > - [[Campos Vectoriales]] - Vectores que varían en el espacio
 > - [[Derivadas Vectoriales]] - Tasas de cambio de vectores
 > - [[Integrales Vectoriales]] - Integración de campos vectoriales
-> - [[Transformaciones de Coordenadas]] - Cambios entre sistemas
+> - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ## 🔧 Herramientas de Verificación
 

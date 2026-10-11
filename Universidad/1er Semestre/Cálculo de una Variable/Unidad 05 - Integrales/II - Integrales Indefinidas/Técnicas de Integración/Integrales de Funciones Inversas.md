@@ -272,7 +272,7 @@ flowchart TD
 > ### Prerequisitos
 > 
 > - [[Integración por Partes]] - Técnica fundamental para estas integrales
-> - [[Identidades Trigonométricas]] - Necesarias para simplificaciones
+> - [[05 - Identidades trigonométricas]] - Necesarias para simplificaciones
 > - [[Funciones Trigonométricas]] - Base para entender las inversas
 > 
 > ### Temas Relacionados

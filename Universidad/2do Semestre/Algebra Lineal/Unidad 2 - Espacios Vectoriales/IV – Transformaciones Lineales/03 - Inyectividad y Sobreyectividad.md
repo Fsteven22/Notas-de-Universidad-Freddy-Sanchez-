@@ -901,7 +901,7 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[01 - Transformaciones lineales]] - Definición básica
+> - [[01 – Transformaciones lineales]] - Definición básica
 > - [[19 - Núcleo e Imagen]] - Subespacios fundamentales
 > - [[03 - Teorema de la dimensión]] - Relación rank-nullity
 > - [[06 - Independencia lineal]] - Bases y generadores
@@ -909,21 +909,21 @@ dg-publish: true
 > **Temas directamente relacionados:**
 > 
 > - [[04 - Isomorfismos]] - Biyecciones lineales
-> - [[05 - Espacio columna]] - Caracterización de imagen
+> - [[05 – Espacio columna]] - Caracterización de imagen
 > - [[17 - Espacio nulo]] - Caracterización de núcleo
 > - [[21 - Rango de matrices]] - Aplicación matricial
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[22 - Sistemas de ecuaciones lineales]] - Existencia y unicidad
-> - [[23 - Matriz inversa]] - Biyectividad y matrices
+> - [[05 - Sistemas de ecuaciones lineales]] - Existencia y unicidad
+> - [[06 - Matriz Inversa]] - Biyectividad y matrices
 > - [[24 - Valores propios]] - Análisis de Ker(T - λI)
 > - [[30 - Proyecciones]] - Casos no inyectivos
 > - [[35 - SVD]] - Descomposición fundamental
 > 
 > **Conceptos avanzados:**
 > 
-> - [[40 - Teorema espectral]] - Operadores biyectivos
+> - [[08 – Teorema espectral]] - Operadores biyectivos
 > - [[45 - Teoría de categorías]] - Monomorfismos/epimorfismos
 > - [[50 - Análisis funcional]] - Operadores en espacios infinitos
 

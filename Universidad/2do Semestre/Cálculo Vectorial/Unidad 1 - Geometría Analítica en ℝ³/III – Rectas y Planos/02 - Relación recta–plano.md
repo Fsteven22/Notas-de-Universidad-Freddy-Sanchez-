@@ -1102,9 +1102,9 @@ graph TD
 > 
 > **Prerrequisitos (Prerequisites):**
 > 
-> - [[04. Rectas en R3]] - Ecuaciones y propiedades de rectas
-> - [[05. Planos en R3]] - Ecuaciones y propiedades de planos
-> - [[02. Vectores en R3]] - Operaciones vectoriales
+> - [[01 - Rectas en R3]] - Ecuaciones y propiedades de rectas
+> - [[02 - Planos en R3]] - Ecuaciones y propiedades de planos
+> - [[02 - Vectores en R3]] - Operaciones vectoriales
 > - [[02.1 Producto Punto]] - Para ángulos y perpendicularidad
 > - [[02.2 Producto Cruz]] - Para vectores normales
 > 
@@ -1117,16 +1117,16 @@ graph TD
 > 
 > **Aplicaciones directas:**
 > 
-> - [[07. Distancias en R3]] - Distancias relacionadas
+> - [[01 - Distancias en ℝ³]] - Distancias relacionadas
 > - [[07.1 Distancia Punto-Plano]] - Usando perpendiculares
 > - [[07.2 Distancia Punto-Recta]] - Geometría relacionada
 > - [[Proyecciones en R3]] - Proyección ortogonal
 > 
 > **Temas avanzados:**
 > 
-> - [[Sistemas de Ecuaciones Lineales]] - Intersecciones múltiples
+> - [[05 - Sistemas de ecuaciones lineales]] - Intersecciones múltiples
 > - [[Geometría Proyectiva]] - Puntos al infinito
-> - [[Transformaciones Lineales]] - Matrices de rotación
+> - [[01 – Transformaciones lineales]] - Matrices de rotación
 > - [[Espacios Afines]] - Formalización abstracta
 > 
 > **Aplicaciones interdisciplinarias:**

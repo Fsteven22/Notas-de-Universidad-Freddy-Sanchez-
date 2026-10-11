@@ -1730,8 +1730,8 @@ dg-publish: true
 > 
 > ### Ya estudiados:
 > 
-> - [[02 - Dominio y Rango]] - Las superficies existen solo en el dominio
-> - [[04 - Curvas de Nivel]] - Las superficies de nivel son la extensión 3D
+> - [[02 – Dominio y Rango]] - Las superficies existen solo en el dominio
+> - [[02 – Curvas de Nivel]] - Las superficies de nivel son la extensión 3D
 > 
 > ### Por estudiar:
 > 

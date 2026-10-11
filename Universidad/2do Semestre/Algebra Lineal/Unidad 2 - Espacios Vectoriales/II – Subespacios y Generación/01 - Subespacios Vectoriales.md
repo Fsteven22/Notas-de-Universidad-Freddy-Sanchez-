@@ -1115,11 +1115,11 @@ dg-publish: true
 > **Este tema es prerequisito para:**
 > 
 > - [[08 - Independencia Lineal]] - Vectores que no son combinación lineal de otros
-> - [[09 - Bases y Dimensión]] - Conjuntos generadores linealmente independientes
-> - [[10 - Transformaciones Lineales]] - Núcleo e imagen son subespacios
+> - [[02 – Base y dimensión]] - Conjuntos generadores linealmente independientes
+> - [[01 – Transformaciones lineales]] - Núcleo e imagen son subespacios
 > - [[11 - Espacios con Producto Interno]] - Subespacios ortogonales
 > - [[12 - Diagonalización]] - Espacios propios son subespacios
-> - [[13 - Teorema Espectral]] - Descomposición en subespacios ortogonales
+> - [[08 – Teorema espectral]] - Descomposición en subespacios ortogonales
 > 
 > **Conceptos relacionados:**
 > 

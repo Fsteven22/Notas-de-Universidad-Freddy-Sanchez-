@@ -315,4 +315,4 @@ flowchart TB
 > 
 > - `[[Simulaciones N-Cuerpos]]` - Modelado numérico
 > - `[[Métodos de Perturbación]]` - Aproximaciones analíticas
-> - `[[Integración Numérica]]` - Solución de ecuaciones de movimiento
+> - `[[01 - Integración Numérica]]` - Solución de ecuaciones de movimiento

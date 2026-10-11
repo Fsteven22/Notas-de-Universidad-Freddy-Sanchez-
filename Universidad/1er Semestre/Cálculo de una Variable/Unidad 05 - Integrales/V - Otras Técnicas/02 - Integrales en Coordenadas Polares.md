@@ -273,9 +273,9 @@ dg-publish: true
 
 > [!quote] Notas Relacionadas
 > - [[Integrales Dobles]]
-> - [[Transformaciones de Coordenadas]]
-> - [[Jacobiano de Transformaciones]]
-> - [[Coordenadas Cilíndricas y Esféricas]]
+> - [[02 - Transformaciones entre Coordenadas]]
+> - [[02 – Jacobiano de la transformación]]
+> - [[01 - Coordenadas cilíndricas y esféricas]]
 
 ## Notas Recomendadas
 
@@ -286,7 +286,7 @@ dg-publish: true
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
 > [!tip] Continuación del Tema
-> - [[Coordenadas Cilíndricas y Esféricas]]
+> - [[01 - Coordenadas cilíndricas y esféricas]]
 > - [[Integrales de Línea]]
 > - [[Teoremas de Green y Stokes]]
 > - [[Análisis Vectorial]]

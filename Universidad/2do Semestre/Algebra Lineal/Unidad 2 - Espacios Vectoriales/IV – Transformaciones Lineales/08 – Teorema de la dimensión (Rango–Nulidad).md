@@ -834,7 +834,7 @@ dg-publish: true
 > 
 > - [[01 - Vectores en espacios vectoriales]] - Espacios vectoriales
 > - [[06 - Independencia lineal]] - Bases y dimensión
-> - [[08 - Subespacios vectoriales]] - Teoría de subespacios
+> - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > - [[19 - Núcleo e Imagen]] - Subespacios fundamentales
 > 
@@ -843,7 +843,7 @@ dg-publish: true
 > - [[05 – Espacio columna]] - Imagen como espacio columna
 > - [[17 - Espacio nulo]] - Núcleo como espacio nulo
 > - [[21 - Rango de matrices]] - Aplicación a matrices
-> - [[22 - Sistemas de ecuaciones lineales]] - Solubilidad
+> - [[05 - Sistemas de ecuaciones lineales]] - Solubilidad
 > 
 > **Aplicaciones posteriores:**
 > 
@@ -851,7 +851,7 @@ dg-publish: true
 > - [[25 - Diagonalización]] - Análisis espectral
 > - [[30 - Proyecciones]] - Descomposición
 > - [[35 - SVD]] - Descomposición fundamental
-> - [[40 - Teorema espectral]] - Operadores autoadjuntos
+> - [[08 – Teorema espectral]] - Operadores autoadjuntos
 
 ## 📚 Bibliografía Esencial
 

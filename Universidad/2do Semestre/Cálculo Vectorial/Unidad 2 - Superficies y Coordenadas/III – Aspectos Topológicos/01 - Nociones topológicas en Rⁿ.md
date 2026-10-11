@@ -1744,7 +1744,7 @@ dg-publish: true
 > 
 > - [[Cálculo Multivariable]] - Límites y continuidad
 > - [[Funciones de Varias Variables]] - Dominios abiertos
-> - [[Integrales Múltiples]] - Regiones de integración
+> - [[01 – Integrales múltiples]] - Regiones de integración
 > - [[Análisis Vectorial]] - Campos vectoriales
 > 
 > **Aplicaciones directas:**

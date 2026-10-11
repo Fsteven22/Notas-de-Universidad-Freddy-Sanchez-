@@ -1334,7 +1334,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - [[Gráficas Lineales]] - Fundamento previo necesario
+> - [[Graficas Lineales]] - Fundamento previo necesario
 > - [[Estadística Básica]] - Base matemática
 > - [[Incertidumbres Experimentales]] - Análisis de errores
 > - [[Regresión No Lineal]] - Técnicas avanzadas

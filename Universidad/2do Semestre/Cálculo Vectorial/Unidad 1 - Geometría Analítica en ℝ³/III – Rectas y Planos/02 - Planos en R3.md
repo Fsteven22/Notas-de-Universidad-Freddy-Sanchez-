@@ -1031,25 +1031,25 @@ graph TD
 > 
 > **Prerrequisitos (Prerequisites):**
 > 
-> - [[01. Sistema de Referencia Espacial]] - Coordenadas en ℝ³
-> - [[02. Vectores en R3]] - Operaciones vectoriales fundamentales
+> - [[01 - Sistema de referencia espacial en R3]] - Coordenadas en ℝ³
+> - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[02.1 Producto Cruz]] - Cálculo de vectores normales
 > - [[02.2 Producto Punto]] - Perpendicularidad y ángulos
 > - [[03. Distancia en el Espacio]] - Fundamentos métricos
-> - [[04. Rectas en R3]] - Relación recta-plano
+> - [[01 - Rectas en R3]] - Relación recta-plano
 > 
 > **Aplicaciones directas:**
 > 
-> - [[06. Relación Recta-Plano]] - Intersecciones y paralelismo
-> - [[07. Distancias en R3]] - Distancia punto-plano, plano-plano
+> - [[02 - Relación recta–plano]] - Intersecciones y paralelismo
+> - [[01 - Distancias en ℝ³]] - Distancia punto-plano, plano-plano
 > - [[07.1 Distancia Punto-Plano]] - Fórmula y aplicaciones
 > - [[07.4 Distancia entre Planos Paralelos]] - Caso especial
 > 
 > **Temas relacionados:**
 > 
-> - [[Transformaciones Lineales]] - Planos como núcleo/imagen
-> - [[Sistemas de Ecuaciones Lineales]] - Intersección de planos
-> - [[Espacios Vectoriales]] - Planos como subespacios
+> - [[01 – Transformaciones lineales]] - Planos como núcleo/imagen
+> - [[05 - Sistemas de ecuaciones lineales]] - Intersección de planos
+> - [[01 - Subespacios Vectoriales]] - Planos como subespacios
 > - [[Álgebra de Matrices]] - Representación matricial
 > 
 > **Aplicaciones avanzadas:**

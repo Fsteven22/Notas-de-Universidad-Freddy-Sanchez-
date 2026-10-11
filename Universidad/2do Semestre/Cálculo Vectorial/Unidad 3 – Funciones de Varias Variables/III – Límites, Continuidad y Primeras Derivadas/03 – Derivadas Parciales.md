@@ -1146,12 +1146,12 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[09 - Diferenciabilidad]] - Derivadas parciales continuas → diferenciabilidad
-> - [[10 - Regla de la Cadena]] - Composición de funciones diferenciables
+> - [[04 – Diferenciabilidad]] - Derivadas parciales continuas → diferenciabilidad
+> - [[02 - Regla de la Cadena]] - Composición de funciones diferenciables
 > - [[11 - Gradiente]] - Vector formado por derivadas parciales
 > - [[12 - Derivadas Direccionales]] - Generalización de derivadas parciales
 > - [[15 - Optimización]] - Condiciones de primer y segundo orden
-> - [[16 - Multiplicadores de Lagrange]] - Optimización con restricciones
+> - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
 > 
 > **Conceptos relacionados:**
 > 

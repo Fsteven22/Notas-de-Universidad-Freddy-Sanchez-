@@ -282,8 +282,8 @@ graph TB
 > ### Aplicaciones Directas
 > 
 > - [[Choques Uni-Bidimensionales]] - Aplicación práctica principal
-> - [[Centro de Masa]] - Para sistemas de partículas
-> - [[Dinámica Rotacional]] - Extensión al momentum angular
+> - [[Centro de masa (CM)]] - Para sistemas de partículas
+> - [[Cinemática Rotacional]] - Extensión al momentum angular
 > 
 > ### Temas Avanzados
 > 

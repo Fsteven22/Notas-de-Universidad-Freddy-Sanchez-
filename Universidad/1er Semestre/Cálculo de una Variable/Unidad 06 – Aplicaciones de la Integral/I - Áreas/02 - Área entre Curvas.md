@@ -314,7 +314,7 @@ dg-publish: true
 
 ### 📖 Para Profundizar
 
-- [[Coordenadas Polares]] - Extensión a otros sistemas de coordenadas
+- [[02 - Coordenadas polares]] - Extensión a otros sistemas de coordenadas
 - [[Curvas Paramétricas]] - Representaciones alternativas de curvas
 - [[Teorema de Green]] - Método alternativo para cálculo de áreas
 - [[01 - Integración Numérica]] - Métodos computacionales
@@ -329,7 +329,7 @@ dg-publish: true
 ### 🧮 Aplicaciones Especializadas
 
 - [[Centros de Masa y Centroides]] - Usando áreas entre curvas
-- [[Momentos de Inercia]] - Aplicaciones en física e ingeniería
+- [[Momento de Inercia]] - Aplicaciones en física e ingeniería
 - [[Análisis de Costos Marginales]] - Aplicaciones en economía
 - [[Biodisponibilidad y Farmacocinética]] - Aplicaciones en medicina
 

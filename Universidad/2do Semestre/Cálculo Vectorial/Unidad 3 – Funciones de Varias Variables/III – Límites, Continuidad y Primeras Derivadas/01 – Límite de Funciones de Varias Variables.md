@@ -1452,10 +1452,10 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[07 - Continuidad]] - Los límites definen la continuidad
-> - [[08 - Derivadas Parciales]] - Las derivadas son límites especiales
-> - [[09 - Diferenciabilidad]] - Requiere existencia de ciertos límites
-> - [[10 - Regla de la Cadena]] - Se basa en continuidad y límites
+> - [[02 – Continuidad]] - Los límites definen la continuidad
+> - [[Derivadas Parciales]] - Las derivadas son límites especiales
+> - [[04 – Diferenciabilidad]] - Requiere existencia de ciertos límites
+> - [[02 - Regla de la Cadena]] - Se basa en continuidad y límites
 > 
 > **Conceptos relacionados:**
 > 

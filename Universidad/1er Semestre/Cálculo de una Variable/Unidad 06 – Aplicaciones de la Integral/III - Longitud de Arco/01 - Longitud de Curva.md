@@ -248,7 +248,7 @@ dg-publish: true
 > [!info] Prerrequisitos
 > - [[Derivadas de Funciones Paramétricas]]
 > - [[Técnicas de Integración]]
-> - [[Coordenadas Polares]]
+> - [[02 - Coordenadas polares]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
 > [!tip] Continuación del Tema
@@ -891,12 +891,12 @@ dg-publish: true
 - [[Métodos de Integración]] - Técnicas necesarias para resolver las integrales
 - [[02 - Área entre Curvas]] - Concepto dual de medida geométrica
 - [[01 - Volúmenes de Sólidos de Revolución]] - Otra aplicación geométrica de integrales
-- [[Coordenadas Polares]] - Para curvas con simetría radial
+- [[02 - Coordenadas polares]] - Para curvas con simetría radial
 - [[Curvas Paramétricas]] - Representación alternativa de curvas
 
 ### 📖 Para Profundizar
 
-- [[Superficies de Revolución]] - Área de superficies generadas por revolución
+- [[03 - Superficies de revolución]] - Área de superficies generadas por revolución
 - [[Curvatura y Torsión]] - Propiedades geométricas locales de curvas
 - [[Cálculo Vectorial]] - Extensión a curvas en el espacio 3D
 - [[Geometría Diferencial]] - Estudio sistemático de curvas y superficies

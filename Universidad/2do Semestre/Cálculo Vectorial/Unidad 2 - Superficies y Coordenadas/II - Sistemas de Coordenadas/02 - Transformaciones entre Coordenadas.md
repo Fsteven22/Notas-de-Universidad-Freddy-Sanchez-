@@ -939,14 +939,14 @@ graph TB
 > 
 > **Prerrequisitos:**
 > 
-> - [[01.1 Sistema de Referencia Espacial]] - Base de coordenadas cartesianas
+> - [[01 - Sistema de referencia espacial en R3]] - Base de coordenadas cartesianas
 > - [[02 - Vectores en R3]] - Magnitudes y operaciones
 > - [[Trigonometría]] - Funciones seno, coseno, arctan
 > 
 > **Temas relacionados:**
 > 
 > - [[01.3 Distancia en el Espacio]] - Fórmulas en diferentes sistemas
-> - [[Integrales Múltiples]] - dV en diferentes coordenadas
+> - [[01 – Integrales múltiples]] - dV en diferentes coordenadas
 > - [[Campos Vectoriales]] - Representación en distintos sistemas
 > 
 > **Aplicaciones:**

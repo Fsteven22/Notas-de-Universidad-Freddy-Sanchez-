@@ -1606,17 +1606,17 @@ dg-publish: true
 > [!quote] 🔗 Enlaces con Otros Temas
 > 
 > **Prerequisitos:**
-> - [[Coordenadas Polares 2D]] - Base para cilíndricas
-> - [[Vectores en ℝ³]] - Vectores unitarios y bases
+> - [[02 - Coordenadas polares]] - Base para cilíndricas
+> - [[02 - Vectores en R3]] - Vectores unitarios y bases
 > - [[Trigonometría]] - Funciones circulares
 > - [[Cálculo Integral]] - Integrales múltiples
 > - [[Cambio de Variable]] - Jacobiano
 > 
 > **Temas relacionados:**
-> - [[Superficies de Revolución]] - Naturales en cilíndricas/esféricas
-> - [[Distancias en ℝ³]] - Métricas en diferentes sistemas
+> - [[03 - Superficies de revolución]] - Naturales en cilíndricas/esféricas
+> - [[01 - Distancias en ℝ³]] - Métricas en diferentes sistemas
 > - [[Producto Vectorial]] - Rotacional en curvilíneas
-> - [[Integrales Múltiples]] - Aplicaciones de coordenadas
+> - [[01 – Integrales múltiples]] - Aplicaciones de coordenadas
 > 
 > **Aplicaciones directas:**
 > - [[Ecuaciones Diferenciales Parciales]] - Separación de variables

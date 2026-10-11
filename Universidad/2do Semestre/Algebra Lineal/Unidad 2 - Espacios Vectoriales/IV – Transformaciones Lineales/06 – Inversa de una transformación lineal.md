@@ -1194,24 +1194,24 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
-> - [[01 - Transformaciones lineales]] - Definición básica
+> - [[01 – Transformaciones lineales]] - Definición básica
 > - [[02 - Núcleo e Imagen]] - Caracterización de inyectividad
 > - [[03 - Inyectividad y sobreyectividad]] - Biyectividad
-> - [[04 - Biyectividad e isomorfismo]] - Equivalencia con isomorfismo
+> - [[04 – Biyectividad e isomorfismo]] - Equivalencia con isomorfismo
 >
 > **Temas directamente relacionados:**
-> - [[06 - Matriz de una transformación]] - Representación matricial
+> - [[07 - Matriz de una Transformación Lineal]] - Representación matricial
 > - [[07 - Composición de transformaciones]] - $(S \circ T)^{-1} = T^{-1} \circ S^{-1}$
-> - [[08 - Matriz inversa]] - Inversión de matrices
+> - [[06 - Matriz Inversa]] - Inversión de matrices
 > - [[09 - Cambio de base]] - Matrices de cambio son invertibles
-> - [[10 - Determinantes]] - Criterio $\det \neq 0$
+> - [[04 - Determinantes]] - Criterio $\det \neq 0$
 >
 > **Aplicaciones posteriores:**
 > - [[15 - Valores propios]] - Matriz $A - \lambda I$ invertible ⟺ $\lambda$ no es valor propio
 > - [[16 - Diagonalización]] - $P^{-1}AP = D$
 > - [[20 - Forma de Jordan]] - Similitud vía invertibles
 > - [[25 - Descomposición SVD]] - Pseudoinversa
-> - [[30 - Teorema espectral]] - Transformaciones unitarias
+> - [[08 – Teorema espectral]] - Transformaciones unitarias
 >
 > **Temas avanzados:**
 > - [[35 - Operadores adjuntos]] - Relación con inversas

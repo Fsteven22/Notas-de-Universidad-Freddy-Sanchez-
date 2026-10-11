@@ -12,7 +12,7 @@ dg-publish: true
 > |---|---|---|
 > |1.1|Proposiciones, tablas de verdad y circuitos|1–6|
 > |1.2|Condicionales y equivalencia lógica|7–12|
-> |1.3|Demostraciones e [[03 - Inducción Matemática\|inducción matemática]]|15–22|
+> |1.3|Demostraciones e [[12 - Inducción matemática|inducción matemática]]|15–22|
 > |1.4|Conjuntos, operaciones y demostraciones|23–28|
 
 ---
@@ -401,7 +401,7 @@ dg-publish: true
 > |---|---|---|
 > |1|$e$|Premisa 4|
 > |2|$e \to \neg p$|Premisa 3|
-> |3|$\neg p$|[[01 - Reglas de Inferencia\|Modus Ponens]] (1, 2)|
+> |3|$\neg p$|[[01 - Reglas de Inferencia|Modus Ponens]] (1, 2)|
 > |4|$\neg b \lor p$|Premisa 5|
 > |5|$\neg b$|Resolución (3, 4): de $\neg p$ y $\neg b \lor p$ → $\neg b$|
 > |6|$v \to b$|Premisa 2|

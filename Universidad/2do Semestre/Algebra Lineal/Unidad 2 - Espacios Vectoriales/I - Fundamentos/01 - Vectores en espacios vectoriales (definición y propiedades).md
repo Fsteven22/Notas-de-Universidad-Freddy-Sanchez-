@@ -1221,16 +1221,16 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[05.1 - Vectores en Rⁿ]] - Caso concreto ℝⁿ
+> - [[02 - Vectores en R3]] - Caso concreto ℝⁿ
 > - [[05.2 - Operaciones con vectores]] - Suma y producto
 > - [[Álgebra abstracta]] - Estructuras algebraicas
 > 
 > **Temas relacionados:**
 > 
-> - [[09.2 - Transformaciones lineales]] - Funciones entre espacios
+> - [[01 – Transformaciones lineales]] - Funciones entre espacios
 > - [[09.3 - Matrices y transformaciones]] - Representación
-> - [[09.4 - Valores y vectores propios]] - Diagonalización
-> - [[Producto interno]] - Espacios con geometría
+> - [[01 - Valores y Vectores propios]] - Diagonalización
+> - [[01 – Producto interno]] - Espacios con geometría
 > 
 > **Aplicaciones posteriores:**
 > 

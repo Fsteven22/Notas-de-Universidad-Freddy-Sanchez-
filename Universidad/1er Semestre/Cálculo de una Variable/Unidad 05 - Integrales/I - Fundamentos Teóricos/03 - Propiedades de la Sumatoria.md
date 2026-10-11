@@ -193,7 +193,7 @@ dg-publish: true
 
 > [!info] Prerrequisitos
 > - [[Variables y Tipos de Datos]] (conceptos de índices)
-> - [[Funciones]] (concepto de función)
+> - [[01 - Funciones]] (concepto de función)
 > - Álgebra básica
 >
 > [!tip] Continuación del Tema

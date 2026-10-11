@@ -244,7 +244,7 @@ dg-publish: true
 > 
 > - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Fundamento de la energía rotacional
 >     
-> - > [[Dinámica Rotacional]] - Torque y aceleración angular
+> - > [[Cinemática Rotacional]] - Torque y aceleración angular
 >     
 > - > [[Rodadura]] - Aplicación principal de energía rotacional
 >     

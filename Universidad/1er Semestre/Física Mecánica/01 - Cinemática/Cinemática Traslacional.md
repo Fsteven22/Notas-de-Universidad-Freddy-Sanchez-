@@ -201,7 +201,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[Álgebra]] - Manipulación de ecuaciones
-> - [[Funciones]] - Conceptos de función del tiempo
+> - [[01 - Funciones]] - Conceptos de función del tiempo
 > - [[Gráficas]] - Interpretación de gráficas x-t, v-t, a-t
 > - [[Vectores]] - Para movimiento bidimensional
 > 
@@ -445,7 +445,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[Álgebra]] - Manipulación de ecuaciones
-> - [[Funciones]] - Conceptos de función del tiempo
+> - [[01 - Funciones]] - Conceptos de función del tiempo
 > - [[Gráficas]] - Interpretación de gráficas x-t, v-t, a-t
 > - [[Vectores]] - Para movimiento bidimensional
 > 

@@ -608,9 +608,9 @@ graph TD
 > **Esta nota establece las bases para:**
 > 
 > - **[[Matriz Ampliada y Gauss]]** - Método sistemático de solución
-> - **[[Rango de una Matriz]]** - Criterio algebraico de clasificación
-> - **[[Espacios Vectoriales]]** - Interpretación en términos de dependencia lineal
-> - **[[Determinantes]]** - Criterio para sistemas cuadrados
+> - **[[07 - Rango de una Matriz]]** - Criterio algebraico de clasificación
+> - **[[01 - Subespacios Vectoriales]]** - Interpretación en términos de dependencia lineal
+> - **[[04 - Determinantes]]** - Criterio para sistemas cuadrados
 > 
 > **Aplicaciones directas:**
 > 
@@ -1825,20 +1825,20 @@ graph TD
 > **Prerrequisitos:**
 > 
 > - [[Vectores en ℝⁿ]] - Representación de soluciones
-> - [[Operaciones con Matrices]] - Notación matricial
-> - [[Determinantes]] - Criterio de invertibilidad
+> - [[02 - Operaciones con matrices]] - Notación matricial
+> - [[04 - Determinantes]] - Criterio de invertibilidad
 > - [[Geometría Analítica]] - Interpretación geométrica
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Espacios Vectoriales]] - Imagen y núcleo
-> - [[Transformaciones Lineales]] - Sistemas como transformaciones
+> - [[01 - Subespacios Vectoriales]] - Imagen y núcleo
+> - [[01 – Transformaciones lineales]] - Sistemas como transformaciones
 > - [[Diagonalización]] - Sistemas de ecuaciones diferenciales
 > - [[Mínimos Cuadrados]] - Sistemas sobredeterminados
 > 
 > **Temas avanzados:**
 > 
-> - [[Valores y Vectores Propios]] - Sistemas de ecuaciones especiales
+> - [[01 - Valores y Vectores propios]] - Sistemas de ecuaciones especiales
 > - [[Descomposición LU]] - Factorización para resolver sistemas
 > - [[Métodos Iterativos]] - Jacobi, Gauss-Seidel
 > - [[Sistemas No Lineales]] - Generalización

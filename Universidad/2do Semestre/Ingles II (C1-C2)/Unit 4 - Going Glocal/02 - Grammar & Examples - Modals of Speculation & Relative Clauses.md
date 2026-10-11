@@ -243,8 +243,8 @@ graph TD
 > [!quote] 🔗 Conexiones
 > 
 > - [[01 - Vocabulary & Use - Advertising & Media People]]
-> - [[03 - Functional Language & Pronunciation - Exchanging Opinions & Vowel Sounds]]
-> - [[04 - Reading Writing Speaking - Building a Brand & Designing Ads]]
+> - [[03 - Functional Language & Pronunciation — Exchanging Opinions & Vowel Sounds]]
+> - [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 ---
 

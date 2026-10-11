@@ -1112,15 +1112,15 @@ graph TD
 
 > [!quote] 🌟 Enlaces Conceptuales **Prerequisites (Prerrequisitos):**
 > 
-> - [[01.1 Sistema de Referencia Espacial]] - Puntos en ℝ³
-> - [[01.2 Vectores en ℝ³]] - Vector director
+> - [[01 - Sistema de referencia espacial en R3]] - Puntos en ℝ³
+> - [[02 - Vectores en R3]] - Vector director
 > - [[01.3 Distancia en el Espacio]] - Cálculos de distancia
 > 
 > **Temas siguientes:**
 > 
-> - [[01.5 Planos en ℝ³]] - Intersección recta-plano
-> - [[01.6 Relación Recta-Plano]] - Posiciones relativas
-> - [[01.7 Distancias en ℝ³]] - Distancia punto-recta, recta-recta
+> - [[02 - Planos en R3]] - Intersección recta-plano
+> - [[02 - Relación recta–plano]] - Posiciones relativas
+> - [[01 - Distancias en ℝ³]] - Distancia punto-recta, recta-recta
 > 
 > **Conceptos relacionados:**
 > 

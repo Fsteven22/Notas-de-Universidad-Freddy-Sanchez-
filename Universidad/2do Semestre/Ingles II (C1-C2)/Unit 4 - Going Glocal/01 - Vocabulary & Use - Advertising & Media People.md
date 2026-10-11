@@ -231,8 +231,8 @@ graph TD
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]
-> - [[03 - Functional Language & Pronunciation - Exchanging Opinions & Vowel Sounds]]
-> - [[04 - Reading Writing Speaking - Building a Brand & Designing Ads]]
+> - [[03 - Functional Language & Pronunciation — Exchanging Opinions & Vowel Sounds]]
+> - [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 ---
 

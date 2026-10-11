@@ -717,7 +717,7 @@ graph TD
 > 
 > **Prerequisitos:**
 > 
-> - [[Vectores en ℝ³]] - Operaciones vectoriales fundamentales
+> - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[Producto Vectorial]] - Necesario para distancia punto-recta
 > - [[Producto Escalar]] - Proyecciones y ángulos
 > - [[Ecuaciones de Rectas]] - Formas paramétricas y simétricas
@@ -727,7 +727,7 @@ graph TD
 > 
 > - [[Ángulos en ℝ³]] - Complementa el estudio geométrico
 > - [[Proyecciones]] - Relacionado con distancias perpendiculares
-> - [[Superficies Cuádricas]] - Distancias a objetos curvos
+> - [[01 - Superficies cuadráticas]] - Distancias a objetos curvos
 > - [[Optimización en ℝ³]] - Minimización de distancias
 > 
 > **Temas avanzados:**

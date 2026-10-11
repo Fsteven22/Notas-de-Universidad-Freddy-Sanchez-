@@ -1023,14 +1023,14 @@ graph TD
 > [!quote] 🔗 Enlaces con Otros Temas **Prerequisitos:**
 > 
 > - [[Cónicas en el plano]] - Directrices de los cilindros
-> - [[Vectores en ℝ³]] - Generatrices como rectas
+> - [[02 - Vectores en R3]] - Generatrices como rectas
 > - [[Ecuaciones de rectas]] - Generatrices
 > - [[Ecuaciones de planos]] - Intersecciones
 > 
 > **Relacionado directamente:**
 > 
-> - [[Superficies cuadráticas]] - Los cilindros son casos especiales
-> - [[Superficies de revolución]] - Comparación con superficies rotadas
+> - [[01 - Superficies cuadráticas]] - Los cilindros son casos especiales
+> - [[03 - Superficies de revolución]] - Comparación con superficies rotadas
 > - [[Coordenadas cilíndricas]] - Sistema natural para cilindros circulares
 > 
 > **Aplicaciones avanzadas:**
@@ -1042,8 +1042,8 @@ graph TD
 > 
 > **Temas posteriores:**
 > 
-> - [[Coordenadas cilíndricas y esféricas]] - Sistemas de coordenadas
-> - [[Nociones topológicas]] - Conjuntos abiertos y cerrados en cilindros
+> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas de coordenadas
+> - [[01 - Nociones topológicas en Rⁿ]] - Conjuntos abiertos y cerrados en cilindros
 > - [[Campos Vectoriales]] - Flujo a través de cilindros
 
 ## 💡 Consejos de Estudio

@@ -1070,8 +1070,8 @@ graph TD
 > **Temas relacionados:**
 > 
 > - [[01.3 Distancia en el Espacio]] - Métrica en ℝ³
-> - [[01.4 Rectas en ℝ³]] - Ecuaciones y propiedades
-> - [[01.5 Planos en ℝ³]] - Ecuaciones de planos
+> - [[01 - Rectas en R3]] - Ecuaciones y propiedades
+> - [[02 - Planos en R3]] - Ecuaciones de planos
 > - [[Ecuaciones Paramétricas]] - Representación de curvas
 > 
 > **Aplicaciones avanzadas:**
@@ -1085,8 +1085,8 @@ graph TD
 > 
 > - [[Superficies en ℝ³]] - Estudio de superficies
 > - [[Curvas en el Espacio]] - Geometría diferencial
-> - [[Transformaciones Lineales]] - Cambios de base
-> - [[Coordenadas Cilíndricas y Esféricas]] - Sistemas alternativos
+> - [[01 – Transformaciones lineales]] - Cambios de base
+> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
 
 ---
 

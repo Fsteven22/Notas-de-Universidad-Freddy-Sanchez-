@@ -249,7 +249,7 @@ Ejemplo:
 
 ### 💻 **Programación (Requeridos)**
 - ![[Variables y Tipos de Datos]] - Fundamentos de Python
-- ![[Funciones]] - Modularización de código
+- ![[01 - Funciones]] - Modularización de código
 - ![[Pandas]] - Manipulación de datos
 - ![[NumPy]] - Cálculos numéricos
 - ![[Matplotlib/Seaborn]] - Visualización

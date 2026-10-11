@@ -505,7 +505,7 @@
 >
 > 4.  Crea una nota con el ID `01` y el título `Zettelkasten`.
 > 5.  Crea una segunda nota sobre "Notas Atómicas" con el ID `01a`. Este ID indica que esta nota es una continuación o un concepto secundario de la nota principal `01`.
-> 6.  Dentro de la nota `01a`, puedes enlazar de nuevo a la nota principal con un enlace simple `[[01 - Zettelkasten]]`.
+> 6.  Dentro de la nota `01a`, puedes enlazar de nuevo a la nota principal con un enlace simple `[[Zettelkasten]]`.
 > 7.  Esto crea una estructura donde sabes que la nota `01a` está directamente relacionada con la nota `01` en tu jerarquía de conocimiento.
 
 ---

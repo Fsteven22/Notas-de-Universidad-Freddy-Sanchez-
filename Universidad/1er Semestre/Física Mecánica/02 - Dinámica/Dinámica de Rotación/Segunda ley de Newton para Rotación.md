@@ -257,7 +257,7 @@ dg-publish: true
 > - [[Cinemática Rotacional]]
 > - [[Dinámica Lineal - Segunda Ley de Newton]]
 > - [[Energía Cinética Rotacional]]
-> - [[Centro de Masa]]
+> - [[Centro de masa (CM)]]
 > - [[Equilibrio Rotacional]]
 > 
 > ### 📖 Temas Avanzados

@@ -1391,14 +1391,14 @@ graph TB
 > 
 > **Prerrequisitos:**
 > 
-> - [[01.1 Sistema de Referencia Espacial]] - Coordenadas cartesianas base
+> - [[01 - Sistema de referencia espacial en R3]] - Coordenadas cartesianas base
 > - [[02 - Vectores en R3]] - Vectores y operaciones
 > - [[02 - Transformaciones entre coordenadas]] - Fórmulas de conversión
 > 
 > **Temas relacionados:**
 > 
 > - [[Cálculo Vectorial]] - Gradiente, divergencia, rotacional
-> - [[Integrales Triples]] - Cambios de variable
+> - [[01 – Integral triple]] - Cambios de variable
 > - [[Ecuaciones Diferenciales]] - Laplaciano en diferentes coordenadas
 > 
 > **Aplicaciones:**

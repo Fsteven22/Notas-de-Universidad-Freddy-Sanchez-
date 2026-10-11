@@ -560,7 +560,7 @@ dg-publish: true
 
 > [!quote] Enlace a Puntos de Acumulación
 > 
-> **[[Puntos de Acumulación]]**
+> **[[02 - Puntos de Acumulación]]**
 > 
 > ```
 > Las métricas permiten definir puntos de acumulación:
@@ -1039,7 +1039,7 @@ dg-publish: true
 > • Estudiar compacidad
 > ```
 > 
-> **[[Puntos de Acumulación]]**
+> **[[02 - Puntos de Acumulación]]**
 > 
 > ```
 > Conexión: La métrica determina qué puntos se "acumulan"
@@ -1082,7 +1082,7 @@ dg-publish: true
 > • Completitud
 > ```
 > 
-> **[[Continuidad]]**
+> **[[02 – Continuidad]]**
 > 
 > ```
 > • f: X → Y continua si preserva límites
@@ -1690,7 +1690,7 @@ dg-publish: true
 > 
 > - [[01 - Métricas y Espacios Métricos]] - Definición de función de distancia
 > - [[Conjuntos]] - Teoría básica de conjuntos
-> - [[Funciones]] - Concepto de función
+> - [[01 - Funciones]] - Concepto de función
 > 
 > **Temas relacionados:**
 > 
@@ -1700,7 +1700,7 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Continuidad]] - Definición con bolas (ε-δ)
+> - [[02 – Continuidad]] - Definición con bolas (ε-δ)
 > - [[Algoritmos de Búsqueda]] - Búsqueda por proximidad
 > - [[Clustering]] - Agrupamiento por distancia
 

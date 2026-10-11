@@ -1564,7 +1564,7 @@ dg-publish: true
 > 
 > **📜 Fundación previa:**
 > 
-> **[[00 - English Alphabet and Pronunciation]]**
+> **[[02 - English Alphabet and Pronunciation]]**
 > 
 > ```
 > Conexión: La pronunciación correcta es esencial:
@@ -1579,7 +1579,7 @@ dg-publish: true
 > - Pronunciar correctamente "they're" /ðeɪr/
 > ```
 > 
-> **[[01 - Basic Greetings and Introductions]]**
+> **[[01  - Basic Greetings and Introductions]]**
 > 
 > ```
 > Conexión: "To be" es fundamental para presentaciones:
@@ -1612,7 +1612,7 @@ dg-publish: true
 > 
 > **📜 Continuación inmediata:**
 > 
-> **[[05 - Personal and Possessive Pronouns]]**
+> **[[02 - Personal and Possessive Pronouns]]**
 > 
 > ```
 > Conexión: "To be" siempre se usa con pronombres:
@@ -1628,7 +1628,7 @@ dg-publish: true
 > We/You/They → are
 > ```
 > 
-> **[[06 - Plurals and Articles]]**
+> **[[03 - Plurals and Articles]]**
 > 
 > ```
 > Conexión: "To be" cambia con singular/plural:
@@ -1643,7 +1643,7 @@ dg-publish: true
 > • "She is an engineer" (a/an según sonido)
 > ```
 > 
-> **[[08 - Simple Present]]**
+> **[[05 - Simple Present]]**
 > 
 > ```
 > Conexión: "To be" es el primer verbo del presente simple:
@@ -1658,7 +1658,7 @@ dg-publish: true
 > - "I'm not ready" vs "I don't work"
 > ```
 > 
-> **[[13 - Parts of Speech]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: "To be" es un verbo especial:

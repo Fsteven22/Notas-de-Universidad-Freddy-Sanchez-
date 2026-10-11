@@ -867,15 +867,15 @@ graph TD
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[02 - Vectores en R3]] - Fundamentos vectoriales
-> - [[03 - Aplicaciones geométricas básicas]] - Geometría en 3D
+> - [[03 – Aplicaciones geométricas básicas]] - Geometría en 3D
 > - [[Cónicas]] - Círculos, elipses, parábolas, hipérbolas en 2D
 > - [[Álgebra de ecuaciones cuadráticas]] - Formas canónicas
 > 
 > **Temas relacionados:**
 > 
-> - [[Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
+> - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
 > - [[Ecuaciones de superficies]] - Representaciones
-> - [[Curvas de nivel]] - Visualización 2D
+> - [[02 – Curvas de Nivel]] - Visualización 2D
 > - [[Gradiente y superficies de nivel]] - Cálculo vectorial
 > 
 > **Aplicaciones:**
@@ -887,7 +887,7 @@ graph TD
 > 
 > **Temas siguientes:**
 > 
-> - [[05 - Superficies de revolución]] - Rotación de curvas
+> - [[03 - Superficies de revolución]] - Rotación de curvas
 > - [[06 - Ecuaciones paramétricas de superficies]] - Parametrización
 > - [[Topología de superficies]] - Propiedades globales
 

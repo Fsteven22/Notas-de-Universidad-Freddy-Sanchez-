@@ -926,9 +926,9 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[01 - Vectores en espacios vectoriales]] - Estructura de espacios
-> - [[05 - Combinaciones lineales]] - Generación de subespacios
+> - [[02 – Combinación lineal]] - Generación de subespacios
 > - [[06 - Independencia lineal]] - Bases
-> - [[08 - Subespacios vectoriales]] - Teoría de subespacios
+> - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > 
 > **Temas directamente relacionados:**
@@ -936,7 +936,7 @@ dg-publish: true
 > - [[05 – Espacio columna]] - Im(T) = Col(A)
 > - [[17 - Espacio nulo]] - Ker(T) = Nul(A)
 > - [[20 - Rango y nulidad]] - Teorema fundamental
-> - [[21 - Sistemas de ecuaciones lineales]] - Solubilidad
+> - [[05 - Sistemas de ecuaciones lineales]] - Solubilidad
 > 
 > **Aplicaciones posteriores:**
 > 

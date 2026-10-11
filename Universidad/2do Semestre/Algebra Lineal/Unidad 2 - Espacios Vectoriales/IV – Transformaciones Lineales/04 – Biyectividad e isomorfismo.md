@@ -761,14 +761,14 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[01 - Transformaciones lineales]] - Definición básica
+> - [[01 – Transformaciones lineales]] - Definición básica
 > - [[03 - Inyectividad y sobreyectividad]] - Biyectividad
 > - [[03 - Teorema de la dimensión]] - Clasificación dimensional
 > - [[06 - Independencia lineal]] - Preservación de bases
 > 
 > **Temas directamente relacionados:**
 > 
-> - [[05 - Matriz inversa]] - Representación matricial
+> - [[06 - Matriz Inversa]] - Representación matricial
 > - [[06 - Cambio de base]] - Isomorfismos coordenados
 > - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
 > - [[19 - Núcleo e Imagen]] - Caracterización
@@ -779,7 +779,7 @@ dg-publish: true
 > - [[25 - Diagonalización]] - Isomorfismo diagonal
 > - [[30 - Formas canónicas]] - Clasificación
 > - [[35 - Espacios con producto interno]] - Isomorfismos isométricos
-> - [[40 - Teorema espectral]] - Isomorfismos unitarios
+> - [[08 – Teorema espectral]] - Isomorfismos unitarios
 > 
 > **Conceptos avanzados:**
 > 

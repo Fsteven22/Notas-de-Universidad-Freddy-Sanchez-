@@ -717,15 +717,15 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales]] - Espacios y subespacios
-> - [[05 - Combinaciones lineales]] - Generación de vectores
+> - [[02 – Combinación lineal]] - Generación de vectores
 > - [[06 - Independencia lineal]] - Bases
-> - [[08 - Sistemas de ecuaciones lineales]] - Consistencia
+> - [[05 - Sistemas de ecuaciones lineales]] - Consistencia
 > 
 > **Temas relacionados:**
 > - [[06 – Espacio fila]] - Dual del espacio columna
 > - [[18 - Espacio nulo]] - Kernel de transformación
 > - [[19 - Rango y nulidad]] - Teorema fundamental
-> - [[20 - Transformaciones lineales]] - Imagen
+> - [[01 – Transformaciones lineales]] - Imagen
 > 
 > **Aplicaciones posteriores:**
 > - [[25 - Mínimos cuadrados]] - Proyecciones

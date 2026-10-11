@@ -903,14 +903,14 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales]] - Subespacios
-> - [[05 - Combinaciones lineales]] - Span
+> - [[02 – Combinación lineal]] - Span
 > - [[06 - Independencia lineal]] - Bases
 > - [[05 – Espacio columna]] - Concepto dual
 > 
 > **Temas relacionados:**
 > - [[18 - Espacio nulo]] - Complemento ortogonal
 > - [[19 - Rango y nulidad]] - Teorema dimensional
-> - [[20 - Transformaciones lineales]] - Dualidad
+> - [[01 – Transformaciones lineales]] - Dualidad
 > - [[22 - Ortogonalidad]] - Proyecciones
 > 
 > **Aplicaciones posteriores:**

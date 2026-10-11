@@ -328,7 +328,7 @@ graph LR
 >
 > [!quote] [[03 - Concavidad y Puntos de Inflexión]] Criterios de segunda derivada para verificar extremos
 >
-> [!quote] [[Multiplicadores de Lagrange]] Técnica para optimización con restricciones de igualdad
+> [!quote] [[01 - Multiplicaciones de Lagrange]] Técnica para optimización con restricciones de igualdad
 >
 > [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de usos prácticos del cálculo
 >

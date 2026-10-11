@@ -714,7 +714,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[El Principio de Arquímedes y Flotación]] - Fundamentos teóricos
-> - [[Presión Manométrica]] - Cálculos de presión
+> - [[Presión Manómetrica]] - Cálculos de presión
 > - [[Presión y Densidad]] - Propiedades de fluidos
 > - [[Hidrostática]] - Fundamentos de fluidos en reposo
 

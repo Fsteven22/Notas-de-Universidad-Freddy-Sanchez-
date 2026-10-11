@@ -190,8 +190,8 @@ graph TD
 > 
 > **Temas Complementarios**
 > 
-> - [[Coordenadas Polares]] - Para casos más complejos
-> - [[Superficies de Revolución]] - Extensión natural
+> - [[02 - Coordenadas polares]] - Para casos más complejos
+> - [[03 - Superficies de revolución]] - Extensión natural
 > - [[Momentos y Centros de Masa]] - Otras aplicaciones
 > - [[Longitud de Arco]] - Medidas en curvas
 

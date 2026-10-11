@@ -796,7 +796,7 @@ dg-publish: true
 > 
 > **Related punctuation marks:**
 > 
-> **[[Period (.)]]**
+> **[[02 - Period]]**
 > 
 > ```
 > Conexión: Periods end statements; question marks end questions.
@@ -807,7 +807,7 @@ dg-publish: true
 > • Indirect questions use periods, not question marks
 > ```
 > 
-> **[[Exclamation Mark (!)]]**
+> **[[04 - Exclamation Mark]]**
 > 
 > ```
 > Conexión: Both show emotion, but different types.

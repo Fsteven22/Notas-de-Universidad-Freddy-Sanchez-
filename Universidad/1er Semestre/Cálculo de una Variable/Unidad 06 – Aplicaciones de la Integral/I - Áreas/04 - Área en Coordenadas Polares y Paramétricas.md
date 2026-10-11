@@ -266,10 +266,10 @@ dg-publish: true
 ### 🔗 Temas Relacionados
 
 - [[02 - Área entre Curvas]] - Concepto base en coordenadas rectangulares
-- [[Coordenadas Polares]] - Sistema de coordenadas fundamental
+- [[02 - Coordenadas polares]] - Sistema de coordenadas fundamental
 - [[Curvas Paramétricas]] - Representación paramétrica de curvas
 - [[Teorema de Green]] - Método alternativo usando teoremas vectoriales
-- [[Transformaciones de Coordenadas]] - Cambios entre sistemas
+- [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ### 📖 Para Profundizar
 

@@ -284,11 +284,11 @@ dg-publish: true
 
 > [!quote] 🔗 Links a Otras Notas
 > 
-> - > [[Momento Angular]] - Concepto fundamental para giroscopios
+> - > [[Momentum Angular]] - Concepto fundamental para giroscopios
 >     
 > - > [[Conservación del Momento Angular]] - Principio base del comportamiento
 >     
-> - > [[Dinámica Rotacional]] - Segunda Ley de Newton rotacional
+> - > [[Cinemática Rotacional]] - Segunda Ley de Newton rotacional
 >     
 > - > [[Producto Vectorial]] - Matemáticas de torque y momento angular
 >     

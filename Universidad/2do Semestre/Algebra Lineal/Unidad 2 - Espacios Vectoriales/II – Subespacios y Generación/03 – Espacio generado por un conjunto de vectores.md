@@ -1344,9 +1344,9 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[05 - Subespacios Vectoriales]]** - El span es un subespacio
-> - **[[06 - Combinaciones Lineales]]** - Definición fundamental del span
-> - **[[07 - Sistemas de Ecuaciones Lineales]]** - Para verificar pertenencia
+> - **[[01 - Subespacios Vectoriales]]** - El span es un subespacio
+> - **[[02 – Combinación lineal]]** - Definición fundamental del span
+> - **[[05 - Sistemas de ecuaciones lineales]]** - Para verificar pertenencia
 > - **[[08 - Matrices y Operaciones]]** - Método de reducción por filas
 > 
 > ### Este tema es prerequisito para:
@@ -1356,7 +1356,7 @@ dg-publish: true
 > - **[[12 - Espacio Columna y Rango]]** - Span de columnas de una matriz
 > - **[[13 - Espacio Nulo]]** - Soluciones como span
 > - **[[14 - Coordenadas y Cambio de Base]]** - Representación única
-> - **[[15 - Transformaciones Lineales]]** - Imagen como span
+> - **[[01 – Transformaciones lineales]]** - Imagen como span
 > 
 > ### Conceptos relacionados:
 > 

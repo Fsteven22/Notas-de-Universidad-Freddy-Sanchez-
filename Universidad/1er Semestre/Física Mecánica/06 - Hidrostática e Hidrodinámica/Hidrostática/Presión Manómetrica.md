@@ -209,7 +209,7 @@ dg-publish: true
 ## Referencias
 
 > [!quote] Notas Relacionadas
-> - [[Presión y Densidad 1]]
+> - [[Presión y Densidad]]
 > - [[El Principio de Pascal]]
 > - [[Principio de los Vasos Comunicantes]]
 > - [[Módulo de Compresibilidad]]
@@ -217,7 +217,7 @@ dg-publish: true
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - [[Presión y Densidad 1]]
+> - [[Presión y Densidad]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Equilibrio]]
 >

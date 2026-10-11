@@ -271,10 +271,10 @@ graph TD
 > 
 > **Base para:**
 > 
-> - [[01.2 Vectores en ℝ³]] - Operaciones con magnitudes dirigidas
+> - [[02 - Vectores en R3]] - Operaciones con magnitudes dirigidas
 > - [[01.3 Distancia en el Espacio]] - Métrica euclidiana
-> - [[01.4 Rectas en ℝ³]] - Objetos lineales unidimensionales
-> - [[01.5 Planos en ℝ³]] - Objetos lineales bidimensionales
+> - [[01 - Rectas en R3]] - Objetos lineales unidimensionales
+> - [[02 - Planos en R3]] - Objetos lineales bidimensionales
 > 
 > **Conceptos relacionados:**
 > 
@@ -284,7 +284,7 @@ graph TD
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Transformaciones Lineales]] - Cambios de base
+> - [[01 – Transformaciones lineales]] - Cambios de base
 > - [[Producto Vectorial]] - Operaciones en ℝ³
 > - [[Ecuaciones Paramétricas]] - Curvas en el espacio
 

@@ -990,8 +990,8 @@ dg-publish: true
 > 
 > - [[09 - Vectores en espacios vectoriales]] - Estructura general
 > - [[01 - Subespacios Vectoriales]] - Herencia de operaciones
-> - [[Transformaciones lineales]] - Preservación de operaciones
-> - [[Producto interno]] - Operación adicional
+> - [[01 – Transformaciones lineales]] - Preservación de operaciones
+> - [[01 – Producto interno]] - Operación adicional
 > 
 > **Aplicaciones posteriores:**
 > 

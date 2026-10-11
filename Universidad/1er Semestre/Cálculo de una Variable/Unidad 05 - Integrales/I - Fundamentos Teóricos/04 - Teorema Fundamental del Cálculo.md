@@ -261,7 +261,7 @@ flowchart TD
 > 
 > ### 🔗 Notas Relacionadas
 > - [[01 - Integral de Riemann]] - Definición formal de la integral definida
-> - [[Propiedades de la Integral Definida]] - Herramientas para manipular integrales
+> - [[02 - Propiedades de la Integral]] - Herramientas para manipular integrales
 > - [[01 - Métodos de Integración Definida]] - Técnicas para encontrar antiderivadas
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
 > - [[Ecuaciones Diferenciales]] - Aplicación del teorema para resolver EDOs

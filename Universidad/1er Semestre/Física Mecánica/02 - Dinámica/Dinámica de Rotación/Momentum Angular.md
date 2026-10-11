@@ -259,11 +259,11 @@ dg-publish: true
 
 > [!quote] 🔗 Links a Otras Notas
 > 
-> - > [[Dinámica Rotacional]] - Torque y momento de inercia
+> - > [[Cinemática Rotacional]] - Torque y momento de inercia
 >     
 > - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Cálculo para diferentes formas
 >     
-> - > [[Segunda Ley de Newton Rotacional]] - Fundamento teórico
+> - > [[Segunda ley de Newton para Rotación]] - Fundamento teórico
 >     
 > - > [[Conservación del Momentum Lineal]] - Analogía lineal
 >     
@@ -416,7 +416,7 @@ graph LR
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
 > - [[Conservación del Momentum Angular]]
-> - [[Dinámica Rotacional]]
+> - [[Cinemática Rotacional]]
 > - [[Momento de Inercia]]
 > - [[Torque y Equilibrio Rotacional]]
 > - [[Impulso y Momentum Lineal]]

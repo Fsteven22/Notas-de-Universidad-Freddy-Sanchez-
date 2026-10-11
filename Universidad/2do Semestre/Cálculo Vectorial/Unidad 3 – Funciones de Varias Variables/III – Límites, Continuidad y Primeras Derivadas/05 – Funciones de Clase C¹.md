@@ -1780,11 +1780,11 @@ dg-publish: true
 > 
 > Este tema es prerequisito para:
 > 
-> - [[10 - Diferenciabilidad]] - C¹ es condición suficiente para diferenciabilidad
+> - [[04 – Diferenciabilidad]] - C¹ es condición suficiente para diferenciabilidad
 > - [[12 - Regla de la Cadena Multivariable]] - Requiere C¹ para funcionar
-> - [[13 - Teorema de la Función Implícita]] - Hipótesis esencial
+> - [[04 - Teorema de la Función Implícita]] - Hipótesis esencial
 > - [[14 - Teorema de la Función Inversa]] - Requiere C¹
-> - [[15 - Multiplicadores de Lagrange]] - Necesita gradientes continuos
+> - [[01 - Multiplicaciones de Lagrange]] - Necesita gradientes continuos
 > - [[16 - Fórmula de Taylor Multivariable]] - Extensión a C²
 > - [[17 - Teorema de Schwarz]] - Igualdad de derivadas mixtas
 > 

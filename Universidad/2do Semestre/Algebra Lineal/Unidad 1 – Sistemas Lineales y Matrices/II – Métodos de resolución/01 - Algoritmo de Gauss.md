@@ -1228,21 +1228,21 @@ graph TD
 > 
 > **Prerequisites (Prerrequisitos):**
 > 
-> - [[Sistemas de Ecuaciones Lineales]] - Conceptos básicos y clasificación
+> - [[05 - Sistemas de ecuaciones lineales]] - Conceptos básicos y clasificación
 > - [[Matrices]] - Operaciones matriciales fundamentales
 > - [[Operaciones Elementales]] - Base teórica
 > 
 > **Temas relacionados:**
 > 
-> - [[Rango de una Matriz]] - Cálculo mediante forma escalonada
+> - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
 > - [[Método de Gauss-Jordan]] - Extensión a forma escalonada reducida
 > - [[Factorización LU]] - Descomposición relacionada con Gauss
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Espacios Vectoriales]] - Dependencia e independencia lineal
-> - [[Determinantes]] - Cálculo mediante forma triangular
-> - [[Matriz Inversa]] - Algoritmo de inversión
+> - [[01 - Subespacios Vectoriales]] - Dependencia e independencia lineal
+> - [[04 - Determinantes]] - Cálculo mediante forma triangular
+> - [[06 - Matriz Inversa]] - Algoritmo de inversión
 > 
 > **Temas avanzados:**
 > 

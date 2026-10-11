@@ -377,7 +377,7 @@ mindmap
 > 
 >
 > - [[01 - Integral de Riemann]] - Fundamento teórico de las integrales definidas
-> - [[Propiedades de la Integral Definida]] - Propiedades fundamentales de integración
+> - [[02 - Propiedades de la Integral]] - Propiedades fundamentales de integración
 > - [[04 - Teorema Fundamental del Cálculo]] - Marco teórico principal
 > - [[03 - Teoremas de Comparación y Desigualdades]] - Criterios de convergencia
 

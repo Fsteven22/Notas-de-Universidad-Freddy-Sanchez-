@@ -4406,16 +4406,16 @@ graph TD
 > 
 > **Utiliza conceptos de:**
 > - [[01 - Algoritmo de Gauss]]
-> - [[02 - Sistemas de ecuaciones lineales]]
-> - [[Espacios Vectoriales]]
+> - [[05 - Sistemas de ecuaciones lineales]]
+> - [[01 - Subespacios Vectoriales]]
 > - [[Subespacios y generadores]]
 > 
 > **Se conecta con:**
 > - [[Espacio Nulo y Espacio Columna]]
 > - [[Teorema Rango-Nulidad]]
 > - [[Independencia Lineal]]
-> - [[Bases y Dimensión]]
-> - [[Transformaciones Lineales]]
+> - [[02 – Base y dimensión]]
+> - [[01 – Transformaciones lineales]]
 > 
 > **Aplicaciones en:**
 > - [[Sistemas de ecuaciones diferenciales]]

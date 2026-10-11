@@ -322,7 +322,7 @@ dg-publish: true
 > |Nombre|Expresión|
 > |---|---|
 > |Tercio excluido|$p \vee \neg p$|
-> |[[01 - Reglas de Inferencia\|Modus Ponens]]|$(p \wedge (p \rightarrow q)) \rightarrow q$|
+> |[[01 - Reglas de Inferencia|Modus Ponens]]|$(p \wedge (p \rightarrow q)) \rightarrow q$|
 > |Modus Tollens|$(\neg q \wedge (p \rightarrow q)) \rightarrow \neg p$|
 > |Silogismo hipotético|$((p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow (p \rightarrow r)$|
 > |Adición|$p \rightarrow (p \vee q)$|

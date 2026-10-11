@@ -218,7 +218,7 @@ dg-publish: true
 
 > [!quote] Notas Relacionadas
 > 
-> - [[El Principio de Arquímedes y Flotación 1]]
+> - [[El Principio de Arquímedes y Flotación]]
 > - [[Obsidian/Universidad/Física Mecanica/Notas nuevas/06 - Hidrostática e hidrodinámica/Presión y Densidad]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Leyes de Newton]]
@@ -233,7 +233,7 @@ dg-publish: true
 >
 > [!tip] Continuación del Tema
 > 
-> - [[El Principio de Arquímedes y Flotación 1]]
+> - [[El Principio de Arquímedes y Flotación]]
 > - [[Centro de Gravedad (CG)]]
 > - [[Equilibrio]]
 

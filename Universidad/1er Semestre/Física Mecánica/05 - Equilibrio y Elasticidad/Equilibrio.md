@@ -202,7 +202,7 @@ graph TD
 > 
 > - [[Centro de Gravedad y Centro de Masa]]
 > - [[Equilibrio Rotacional]]
-> - [[Dinámica Rotacional]]
+> - [[Cinemática Rotacional]]
 > - [[Energía Potencial]]
 > - [[Estática]]
 > - [[Fuerzas y Torques]]

@@ -211,7 +211,7 @@ flowchart TD
 > **Fundamentos previos:**
 > 
 > - [[01 - Propiedades y Teoremas de los Límites]] - Base para calcular derivadas
-> - [[Función Lineal]] - Pendiente constante vs variable
+> - [[05 - Función lineal]] - Pendiente constante vs variable
 > - [[Geometría Analítica]] - Pendientes de rectas
 > 
 > **Aplicaciones futuras:**

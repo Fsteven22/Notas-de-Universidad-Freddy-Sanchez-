@@ -1346,7 +1346,7 @@ dg-publish: true
 > 
 > **📜 Fundación previa:**
 > 
-> **[[00 - English Alphabet and Pronunciation]]**
+> **[[02 - English Alphabet and Pronunciation]]**
 > 
 > ```
 > Conexión: Pronunciación correcta de pronombres:
@@ -1395,7 +1395,7 @@ dg-publish: true
 > 
 > **📜 Continuación inmediata:**
 > 
-> **[[06 - Plurals and Articles]]**
+> **[[03 - Plurals and Articles]]**
 > 
 > ```
 > Conexión: Pronombres con singular/plural:
@@ -1410,7 +1410,7 @@ dg-publish: true
 > - ✓ "My book"
 > ```
 > 
-> **[[07 - Subject-Verb Agreement]]**
+> **[[04 - Subject–Verb Agreement]]**
 > 
 > ```
 > Conexión: El pronombre determina la conjugación:
@@ -1425,7 +1425,7 @@ dg-publish: true
 > - "They go" (3rd person plural)
 > ```
 > 
-> **[[13 - Parts of Speech]]**
+> **[[01 - Parts of Speech (POS)]]**
 > 
 > ```
 > Conexión: Los pronombres son una parte de la oración:

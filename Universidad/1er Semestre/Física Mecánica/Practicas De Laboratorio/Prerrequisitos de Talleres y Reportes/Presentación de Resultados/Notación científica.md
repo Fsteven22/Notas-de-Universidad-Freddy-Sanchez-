@@ -641,7 +641,7 @@ dg-publish: true
 > 
 > - [[Logaritmos y Exponenciales]] - Base matemática fundamental
 > - [[Análisis Dimensional]] - Consistencia de unidades
-> - [[Gráficas Lineales]] - Representación de datos experimentales
+> - [[Graficas Lineales]] - Representación de datos experimentales
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 > - [[Estadística Básica]] - Análisis de datos científicos
 

@@ -151,7 +151,7 @@ dg-publish: true
 
 > [!note] 🌐 Relaciones Conceptuales
 > 
-> ### [[Dinámica Rotacional]]
+> ### [[Cinemática Rotacional]]
 > 
 > - **Segunda Ley de Newton rotacional**: $\sum \tau = I\alpha$
 > - El momento de inercia es la "masa rotacional" en esta ecuación
@@ -161,12 +161,12 @@ dg-publish: true
 > - **Fórmula**: $K_{rot} = \frac{1}{2}I\omega^2$
 > - Análoga a $K = \frac{1}{2}mv^2$ pero para rotación
 > 
-> ### [[Centro de Masa]]
+> ### [[Centro de masa (CM)]]
 > 
 > - **Teorema de ejes paralelos** conecta momento de inercia con centro de masa
 > - Permite calcular $I$ para cualquier eje conociendo $I_{CM}$
 > 
-> ### [[Momento Angular]]
+> ### [[Momentum Angular]]
 > 
 > - **Relación**: $L = I\omega$
 > - **Conservación**: Explica fenómenos como el patinador girando
@@ -208,10 +208,10 @@ dg-publish: true
 > 
 > ### 🔗 Notas Relacionadas
 > 
-> - [[Dinámica Rotacional]]
-> - [[Momento Angular]]
+> - [[Cinemática Rotacional]]
+> - [[Momentum Angular]]
 > - [[Energía Cinética Rotacional]]
-> - [[Centro de Masa]]
+> - [[Centro de masa (CM)]]
 > - [[Torque y Momento de Torsión]]
 > - [[Conservación del Momento Angular]]
 > - [[Teorema de Ejes Paralelos]]

@@ -1063,7 +1063,7 @@ dg-publish: true
 > 
 > ### Siguiente tema:
 > 
-> **[[15 - Derivadas Implícitas]]** - Extensión natural usando la regla de la cadena
+> **[[03 – Derivadas Implícitas]]** - Extensión natural usando la regla de la cadena
 
 ---
 

@@ -1078,8 +1078,8 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[04 - Curvas de Nivel]] - Proyección de las trazas horizontales
-> - [[08 - Derivadas Parciales]] - Pendiente de la superficie en direcciones
+> - [[02 – Curvas de Nivel]] - Proyección de las trazas horizontales
+> - [[Derivadas Parciales]] - Pendiente de la superficie en direcciones
 > - [[11 - Gradiente]] - Vector perpendicular a curvas de nivel
 > - **Planos Tangentes** - Aproximación lineal a la superficie
 > - **Optimización** - Encontrar puntos más altos/bajos
@@ -1087,7 +1087,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[01 - Definición de Funciones]] - Qué estamos graficando
-> - [[02 - Dominio y Rango]] - Dónde existe la superficie
+> - [[02 – Dominio y Rango]] - Dónde existe la superficie
 > - **Geometría Analítica 3D** - Ecuaciones de superficies
 > - **Cálculo Vectorial** - Campos vectoriales sobre superficies
 > 
@@ -1099,7 +1099,7 @@ dg-publish: true
 > - 📊 **Estadística** - Distribuciones de probabilidad 2D
 > - 🎮 **Gráficos por computadora** - Modelado 3D
 > 
-> **Siguiente tema recomendado:** [[04 - Curvas de Nivel]]
+> **Siguiente tema recomendado:** [[02 – Curvas de Nivel]]
 
 ---
 

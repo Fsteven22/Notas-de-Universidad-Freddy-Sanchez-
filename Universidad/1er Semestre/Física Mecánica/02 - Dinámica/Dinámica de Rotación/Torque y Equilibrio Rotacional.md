@@ -178,7 +178,7 @@ dg-publish: true
 
 > [!note] 🌐 Relaciones Conceptuales
 > 
-> ### [[Dinámica Rotacional]]
+> ### [[Cinemática Rotacional]]
 > 
 > - **Segunda Ley**: $\sum \tau = I\alpha$ (ecuación fundamental)
 > - El torque es la **causa** de la aceleración angular
@@ -198,7 +198,7 @@ dg-publish: true
 > - **Condición**: $\sum \tau = 0$ (torques se cancelan)
 > - **Aplicación**: Balanzas, palancas, estructuras
 > 
-> ### [[Momento Angular]]
+> ### [[Momentum Angular]]
 > 
 > - **Relación temporal**: $\tau = \frac{dL}{dt}$ (torque cambia momento angular)
 > - **Conservación**: Sin torque externo → $L$ constante
@@ -248,7 +248,7 @@ dg-publish: true
 > ### 🔗 Notas Relacionadas
 > 
 > - [[Momento de Inercia]]
-> - [[Momento Angular]]
+> - [[Momentum Angular]]
 > - [[Equilibrio Rotacional]]
 > - [[Trabajo y Energía Rotacional]]
 > - [[Palancas y Máquinas Simples]]
@@ -447,11 +447,11 @@ graph TD
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
 > - [[Momento de Torsión]]
-> - [[Dinámica Rotacional]]
+> - [[Cinemática Rotacional]]
 > - [[Estática]]
 > - [[Fuerzas y Equilibrio]]
 > - [[Diagramas de Cuerpo Libre]]
-> - [[Centro de Masa]]
+> - [[Centro de masa (CM)]]
 
 ---
 

@@ -925,7 +925,7 @@ dg-publish: true
 > 
 > **Related punctuation marks:**
 > 
-> **[[Period (.)]]**
+> **[[02 - Period]]**
 > 
 > ```
 > Conexión: Period = neutral; Exclamation = emotional
@@ -937,7 +937,7 @@ dg-publish: true
 > Choose based on emotional level needed
 > ```
 > 
-> **[[Question Mark (?)]]**
+> **[[03 - Question Mark]]**
 > 
 > ```
 > Conexión: Both show specific sentence types
