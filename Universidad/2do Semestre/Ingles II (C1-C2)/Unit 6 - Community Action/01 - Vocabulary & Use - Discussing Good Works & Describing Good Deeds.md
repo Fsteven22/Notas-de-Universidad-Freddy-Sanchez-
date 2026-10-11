@@ -166,14 +166,13 @@ graph TD
 > 
 > **3.** ¿Cuál es el sustantivo relacionado con el adjetivo "grateful"?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** volunteer
-> 
-> **2.** appreciate
-> 
-> **3.** gratitude
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** volunteer
+> > 
+> > **2.** appreciate
+> > 
+> > **3.** gratitude
 
 ---
 
@@ -185,14 +184,13 @@ graph TD
 > 
 > **3.** Completa la familia de palabras: verbo = think, sustantivo = __________, adjetivo = thoughtful.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** *"I got involved with a local charity two years ago."*
-> 
-> **2.** *Help out* es asistir puntualmente con una tarea ("I helped out at the shelter this weekend"); *take care of* implica una responsabilidad continua sobre el bienestar de alguien/algo ("I take care of the shelter's cats every day").
-> 
-> **3.** thought
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** *"I got involved with a local charity two years ago."*
+> > 
+> > **2.** *Help out* es asistir puntualmente con una tarea ("I helped out at the shelter this weekend"); *take care of* implica una responsabilidad continua sobre el bienestar de alguien/algo ("I take care of the shelter's cats every day").
+> > 
+> > **3.** thought
 
 ---
 
@@ -244,5 +242,12 @@ graph TD
 > - [[04 - Reading Writing Speaking - Urban Projects & Community Reports]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Present Past Passive & Passive with Modals]]
 
 **Tags:** #vocabulary #volunteering #kindness #community #English #IDIG1007 #ESPOL #unit6

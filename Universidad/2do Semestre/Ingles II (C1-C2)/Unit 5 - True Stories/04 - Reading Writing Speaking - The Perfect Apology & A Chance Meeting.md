@@ -189,14 +189,13 @@ graph TD
 > 
 > **3.** En la tarea de speaking, ¿qué grupo recibe qué información al inicio?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** Decir que lo sientes, prometer que no volverá a pasar, y hacer algo para compensar.
-> 
-> **2.** Dinero que recibes cuando has tenido un problema.
-> 
-> **3.** Cada grupo recibe una historia de fondo (backstory) distinta sobre uno de los dos personajes del encuentro.
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** Decir que lo sientes, prometer que no volverá a pasar, y hacer algo para compensar.
+> > 
+> > **2.** Dinero que recibes cuando has tenido un problema.
+> > 
+> > **3.** Cada grupo recibe una historia de fondo (backstory) distinta sobre uno de los dos personajes del encuentro.
 
 ---
 
@@ -208,14 +207,13 @@ graph TD
 > 
 > **3.** Usando "was/were supposed to", describe lo que se suponía que iba a pasar en el encuentro casual antes de que algo cambiara el plan.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** Falta la acción de compensación (regla 3) — solo se disculpan y prometen, pero no ofrecen nada concreto.
-> 
-> **2.** _"We made a mistake with your order. We are sorry for this."_
-> 
-> **3.** _"They were supposed to meet at the entrance, but instead she got held up at work."_
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** Falta la acción de compensación (regla 3) — solo se disculpan y prometen, pero no ofrecen nada concreto.
+> > 
+> > **2.** _"We made a mistake with your order. We are sorry for this."_
+> > 
+> > **3.** _"They were supposed to meet at the entrance, but instead she got held up at work."_
 
 ---
 
@@ -270,5 +268,12 @@ graph TD
 > - [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]
 
 **Tags:** #reading #writing #speaking #apology #storytelling #English #IDIG1007 #ESPOL #unit5

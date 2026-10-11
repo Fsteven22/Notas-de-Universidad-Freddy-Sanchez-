@@ -113,4 +113,11 @@ graph TD
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Grammar Review - Sentence Types by Structure]]
+
 **Tags:** #english #speaking #hardware #software #script #FIEC

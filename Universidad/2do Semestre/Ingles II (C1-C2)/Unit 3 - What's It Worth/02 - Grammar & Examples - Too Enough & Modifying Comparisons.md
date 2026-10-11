@@ -195,14 +195,13 @@ dg-publish: true
 > 4. Is the hotel room big ________ for four people?
 > 5. She isn't experienced ________ to manage the whole team alone.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
-> 6. _The price is **too** high **to** buy._
-> 7. _I don't earn **enough** money to travel every month._
-> 8. _This bag is **too** heavy to carry on a long trip._
-> 9. _Is the hotel room big **enough** for four people?_
-> 10. _She isn't experienced **enough** to manage the whole team alone._
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
+> > 6. _The price is **too** high **to** buy._
+> > 7. _I don't earn **enough** money to travel every month._
+> > 8. _This bag is **too** heavy to carry on a long trip._
+> > 9. _Is the hotel room big **enough** for four people?_
+> > 10. _She isn't experienced **enough** to manage the whole team alone._
 
 ---
 
@@ -216,14 +215,13 @@ dg-publish: true
 > 9. _She's too enough qualified for the position._
 > 10. _We don't have enough of money to invest._
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> 11. ~~time enough~~ → **enough time** — _I don't have **enough time** to finish by Friday._
-> 12. ~~very~~ → **too** — _This coffee is **too** hot to drink right now._
-> 13. ~~enough big~~ → **big enough** — _The apartment is **big enough** for two people._
-> 14. ~~too enough~~ → solo **enough** — _She's **enough** qualified / She's **qualified enough** for the position._
-> 15. ~~enough of money~~ → **enough money** — _We don't have **enough money** to invest._
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > 11. ~~time enough~~ → **enough time** — _I don't have **enough time** to finish by Friday._
+> > 12. ~~very~~ → **too** — _This coffee is **too** hot to drink right now._
+> > 13. ~~enough big~~ → **big enough** — _The apartment is **big enough** for two people._
+> > 14. ~~too enough~~ → solo **enough** — _She's **enough** qualified / She's **qualified enough** for the position._
+> > 15. ~~enough of money~~ → **enough money** — _We don't have **enough money** to invest._
 
 ---
 
@@ -237,14 +235,13 @@ dg-publish: true
 > 14. My current salary is ________ enough to save for a house in this city. _(muy lejos de suficiente)_
 > 15. Version 2.0 of the app is ________ smoother than the beta. _(diferencia grande, informal)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 16. much / far / significantly
-> 17. a little / a bit / slightly
-> 18. by far
-> 19. nowhere near
-> 20. a whole lot / a lot / much
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 16. much / far / significantly
+> > 17. a little / a bit / slightly
+> > 18. by far
+> > 19. nowhere near
+> > 20. a whole lot / a lot / much
 
 ---
 
@@ -258,14 +255,13 @@ dg-publish: true
 > 19. _That price is not enough._ → _(nowhere near)_
 > 20. _The quality is higher in handmade products._ → _(significantly)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 4
-> 
-> 21. _This version is **a whole lot** better than the last one._
-> 22. _The new phone is **slightly** more expensive._
-> 23. _This is **by far** the worst deal I've ever seen._
-> 24. _That price is **nowhere near** enough._
-> 25. _The quality is **significantly** higher in handmade products._
+> > [!success]- ✅ Respuestas — Ejercicio 4
+> > 
+> > 21. _This version is **a whole lot** better than the last one._
+> > 22. _The new phone is **slightly** more expensive._
+> > 23. _This is **by far** the worst deal I've ever seen._
+> > 24. _That price is **nowhere near** enough._
+> > 25. _The quality is **significantly** higher in handmade products._
 
 ---
 
@@ -303,5 +299,13 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 3: Worth It?, pp. 30–43.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use Time Money & Prices]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Apologies & S-Sounds]]
 
 **Tags:** #grammar #too #enough #comparisons #modifiers #English #IDIG1007 #ESPOL #unit3

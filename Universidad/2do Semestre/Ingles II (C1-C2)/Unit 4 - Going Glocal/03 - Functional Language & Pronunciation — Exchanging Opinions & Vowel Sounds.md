@@ -172,14 +172,13 @@ graph TD
 > 
 > **3.** ¿Qué frase es más fuerte: "That's true, but..." o "You have it all wrong"?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** _I couldn't disagree more_ = enfatizar desacuerdo; _As I see it_ = dar opinión; _That's a good point, but..._ = discutir/matizar.
-> 
-> **2.** it's just that
-> 
-> **3.** "You have it all wrong" es más fuerte/enfática.
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** _I couldn't disagree more_ = enfatizar desacuerdo; _As I see it_ = dar opinión; _That's a good point, but..._ = discutir/matizar.
+> > 
+> > **2.** it's just that
+> > 
+> > **3.** "You have it all wrong" es más fuerte/enfática.
 
 ---
 
@@ -191,14 +190,13 @@ graph TD
 > 
 > **3.** Usa la estructura "It's not so much that..., it's just that..." para explicar por qué no te gusta un tema de la escuela.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** _"That's a good point, but there's actually a lot of strategy happening even when the score is low."_
-> 
-> **2.** _"I couldn't disagree more."_ / _"That's not true at all."_
-> 
-> **3.** _"It's not so much that I dislike math, it's just that I never had a teacher who explained it well."_
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** _"That's a good point, but there's actually a lot of strategy happening even when the score is low."_
+> > 
+> > **2.** _"I couldn't disagree more."_ / _"That's not true at all."_
+> > 
+> > **3.** _"It's not so much that I dislike math, it's just that I never had a teacher who explained it well."_
 
 ---
 
@@ -253,5 +251,13 @@ graph TD
 > - [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]
+> - Siguiente: [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 **Tags:** #functional-language #pronunciation #opinions #English #IDIG1007 #ESPOL #unit4

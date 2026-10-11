@@ -184,14 +184,13 @@ graph TD
 > 
 > **3.** ¿Qué frase usarías para insistir en una oferta después de que la rechazaron?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** Refusing an offer
-> 
-> **2.** kind
-> 
-> **3.** "I insist."
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** Refusing an offer
+> > 
+> > **2.** kind
+> > 
+> > **3.** "I insist."
 
 ---
 
@@ -203,14 +202,13 @@ graph TD
 > 
 > **3.** Identifica el sonido de conexión: *"She and I worked together."* — ¿qué dos palabras se conectan con /j/?
 >
-
-> [!success]- ✅ Respuestas — Nivel 2
-> 
-> **1.** *"Let me give you a hand with those bags."*
-> 
-> **2.** *"I'm sorry to have to ask, but would you mind turning down the music?"*
-> 
-> **3.** "she" + "and" (she termina en /i/, and empieza con vocal)
+> > [!success]- ✅ Respuestas — Nivel 2
+> > 
+> > **1.** *"Let me give you a hand with those bags."*
+> > 
+> > **2.** *"I'm sorry to have to ask, but would you mind turning down the music?"*
+> > 
+> > **3.** "she" + "and" (she termina en /i/, and empieza con vocal)
 
 ---
 
@@ -262,5 +260,13 @@ graph TD
 > - [[04 - Reading Writing Speaking - Urban Projects & Community Reports]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[02 - Grammar & Examples - Present Past Passive & Passive with Modals]]
+> - Siguiente: [[04 - Reading Writing Speaking - Urban Projects & Community Reports]]
 
 **Tags:** #functional-language #pronunciation #offering-help #community #English #IDIG1007 #ESPOL #unit6

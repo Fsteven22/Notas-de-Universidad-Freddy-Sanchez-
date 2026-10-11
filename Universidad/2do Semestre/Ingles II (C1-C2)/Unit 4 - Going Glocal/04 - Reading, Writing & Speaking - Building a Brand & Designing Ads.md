@@ -175,14 +175,13 @@ graph TD
 > 
 > **3.** ¿De dónde viene la palabra "flip-flop"?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** Endorsement
-> 
-> **2.** Consecuencia
-> 
-> **3.** Es onomatopéyica: imita el sonido que hacen las sandalias al caminar.
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** Endorsement
+> > 
+> > **2.** Consecuencia
+> > 
+> > **3.** Es onomatopéyica: imita el sonido que hacen las sandalias al caminar.
 
 ---
 
@@ -194,14 +193,13 @@ graph TD
 > 
 > **3.** Explica con tus palabras la diferencia entre "association of ideas" y "endorsement".
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** _"The store closed due to a lack of customers."_
-> 
-> **2.** Technology
-> 
-> **3.** _Endorsement_ usa a una persona real y respetada para dar credibilidad; _association of ideas_ conecta el producto con un concepto o sentimiento (no una persona), como libertad o aventura.
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** _"The store closed due to a lack of customers."_
+> > 
+> > **2.** Technology
+> > 
+> > **3.** _Endorsement_ usa a una persona real y respetada para dar credibilidad; _association of ideas_ conecta el producto con un concepto o sentimiento (no una persona), como libertad o aventura.
 
 ---
 
@@ -256,5 +254,12 @@ graph TD
 > - [[03 - Functional Language & Pronunciation — Exchanging Opinions & Vowel Sounds]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Functional Language & Pronunciation — Exchanging Opinions & Vowel Sounds]]
 
 **Tags:** #reading #writing #speaking #advertising #branding #English #IDIG1007 #ESPOL #unit4

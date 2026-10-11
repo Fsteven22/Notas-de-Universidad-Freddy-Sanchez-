@@ -370,4 +370,10 @@ graph TD
 
 ---
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+
 **Tags:** #writing #complaint-email #awc #exam-prep #English #IDIG1007 #ESPOL #unit5

@@ -177,14 +177,13 @@ graph TD
 > 
 > **3.** ¿Qué frase se usa para introducir una opinión que contrasta con la anterior?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** Verde Vertical
-> 
-> **2.** Un puente que permite que una vía pase por encima de otra.
-> 
-> **3.** "However, [persona] disagreed..."
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** Verde Vertical
+> > 
+> > **2.** Un puente que permite que una vía pase por encima de otra.
+> > 
+> > **3.** "However, [persona] disagreed..."
 
 ---
 
@@ -196,14 +195,13 @@ graph TD
 > 
 > **3.** Escribe una frase usando "Decide" phrases para proponer un proyecto de arte urbano en un parque de tu ciudad.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** *"One resident said, 'This project brought our whole street together.'"*
-> 
-> **2.** Intersection Repair se enfoca en la comunidad y la convivencia vecinal (lo hacen los propios vecinos); Verde Vertical se enfoca en el impacto ambiental y visual a gran escala (lo hace una empresa).
-> 
-> **3.** *"We're going to focus on the old park near downtown, because it needs more color and community activity."*
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** *"One resident said, 'This project brought our whole street together.'"*
+> > 
+> > **2.** Intersection Repair se enfoca en la comunidad y la convivencia vecinal (lo hacen los propios vecinos); Verde Vertical se enfoca en el impacto ambiental y visual a gran escala (lo hace una empresa).
+> > 
+> > **3.** *"We're going to focus on the old park near downtown, because it needs more color and community activity."*
 
 ---
 
@@ -255,5 +253,12 @@ graph TD
 > - [[03 - Functional Language & Pronunciation - Offering Refusing Help & Consonant Sounds]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Functional Language & Pronunciation - Offering Refusing Help & Consonant Sounds]]
 
 **Tags:** #reading #writing #speaking #urban-projects #community #English #IDIG1007 #ESPOL #unit6

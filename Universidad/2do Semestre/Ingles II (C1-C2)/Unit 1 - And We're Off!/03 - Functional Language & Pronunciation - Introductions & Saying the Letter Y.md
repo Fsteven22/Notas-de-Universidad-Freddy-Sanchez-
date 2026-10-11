@@ -148,9 +148,8 @@ dg-publish: true
 > > 
 > > **Ana:** __________________ , David! How long have you been working here?
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
 > > **Carlos:** Hey Ana, _let me introduce you to_ my colleague David. He just joined the team.
 > > 
 > > **Ana:** Oh wait — _actually, we've already met_ / _I think we've met before_! We actually went to university together.
@@ -173,16 +172,15 @@ dg-publish: true
 > |---|---|---|---|
 > |(inicio)|(medio)|(final bisílaba)|(final monosílaba)|
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> |Sonido /j/|Sonido /ɪ/|Sonido /iː/|Sonido /aɪ/|
-> |---|---|---|---|
-> |year|system|city|fly|
-> |yellow|crystal|ready|by|
-> |yet|gym|busy|sky|
-> |you|||why|
-> ||||try|
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > |Sonido /j/|Sonido /ɪ/|Sonido /iː/|Sonido /aɪ/|
+> > |---|---|---|---|
+> > |year|system|city|fly|
+> > |yellow|crystal|ready|by|
+> > |yet|gym|busy|sky|
+> > |you|||why|
+> > ||||try|
 
 ---
 
@@ -195,13 +193,12 @@ dg-publish: true
 > 18. Entras a una nueva empresa el primer día. Ves a alguien que parece también ser nuevo. ¿Cómo empiezas la conversación?
 > 19. En una reunión, no estás seguro si dos de tus colegas ya se conocen. ¿Qué preguntas antes de presentarlos?
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 16. _Let me introduce you to [name]. / Have you met [name]?_
-> 17. _Oh, actually we go way back — we've been working together for two years!_ / _Yes, we know each other! Nice to see you again._
-> 18. _Is this your first day? / You're new here, right? I'm [name]._
-> 19. _Do you two know each other?_
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 16. _Let me introduce you to [name]. / Have you met [name]?_
+> > 17. _Oh, actually we go way back — we've been working together for two years!_ / _Yes, we know each other! Nice to see you again._
+> > 18. _Is this your first day? / You're new here, right? I'm [name]._
+> > 19. _Do you two know each other?_
 
 ---
 
@@ -230,5 +227,13 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 1: And We're Off!, pp. 1–15.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[02 - Grammar & Examples - Tense Review & Dynamic vs Stative Verbs]]
+> - Siguiente: [[04 - Reading, Writing, Speaking - Flipping Your Job Interview & Time to Speak]]
 
 **Tags:** #functional #pronunciation #introductions #letterY #phonetics #English #IDIG1007 #ESPOL #unit1

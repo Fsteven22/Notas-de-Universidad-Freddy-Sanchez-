@@ -52,4 +52,11 @@ dg-publish: true
 
 - [[Command the Complaint - Email of Complaint]]
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[Welcome & Syllabus English II]]
+
 **Tags:** #english #english2 #ESPOL #IDIG1007

@@ -164,14 +164,13 @@ graph TD
 > 
 > **3.** Completa: _Nike's __________ (logo/slogan) is "Just Do It."_
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** sponsor = (c), logo = (b), slogan = (a)
-> 
-> **2.** celebrity
-> 
-> **3.** slogan
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** sponsor = (c), logo = (b), slogan = (a)
+> > 
+> > **2.** celebrity
+> > 
+> > **3.** slogan
 
 ---
 
@@ -183,14 +182,13 @@ graph TD
 > 
 > **3.** Describe a una persona famosa de tu país usando al menos dos palabras de la sección "people in the media" (que no sea _celebrity_).
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** _Coca-Cola advertises a lot on TV._
-> 
-> **2.** _Merchandise_ = las camisetas y tazas que vende un equipo; _merchandising_ = la estrategia de diseñarlas, producirlas y venderlas para generar ingresos.
-> 
-> **3.** Respuesta abierta — ej.: _"She's a well-known entertainer and also an icon in Ecuadorian music."_
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** _Coca-Cola advertises a lot on TV._
+> > 
+> > **2.** _Merchandise_ = las camisetas y tazas que vende un equipo; _merchandising_ = la estrategia de diseñarlas, producirlas y venderlas para generar ingresos.
+> > 
+> > **3.** Respuesta abierta — ej.: _"She's a well-known entertainer and also an icon in Ecuadorian music."_
 
 ---
 
@@ -245,5 +243,12 @@ graph TD
 > - [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]
 
 **Tags:** #vocabulary #advertising #media #marketing #English #IDIG1007 #ESPOL #unit4

@@ -177,14 +177,13 @@ dg-publish: true
 > 4. *If the restaurant gets good reviews, it will become very popular.*
 > 5. *If you freeze meat, it lasts much longer.*
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
->
-> 1. Zero Conditional *(ley científica)*
-> 2. First Conditional *(predicción posible)*
-> 3. Zero Conditional *(hábito personal)*
-> 4. First Conditional *(consecuencia futura probable)*
-> 5. Zero Conditional *(hecho general)*
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> >
+> > 1. Zero Conditional *(ley científica)*
+> > 2. First Conditional *(predicción posible)*
+> > 3. Zero Conditional *(hábito personal)*
+> > 4. First Conditional *(consecuencia futura probable)*
+> > 5. Zero Conditional *(hecho general)*
 
 ---
 
@@ -198,14 +197,13 @@ dg-publish: true
 > 9. Call me if you __________________ (need) help with the recipe.
 > 10. If the trend __________________ (continue), prices will go up.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
->
-> 6. don't rinse
-> 7. sleeps
-> 8. reaches
-> 9. need
-> 10. continues
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> >
+> > 6. don't rinse
+> > 7. sleeps
+> > 8. reaches
+> > 9. need
+> > 10. continues
 
 ---
 
@@ -219,14 +217,13 @@ dg-publish: true
 > 14. *I'll text you when I will get home.*
 > 15. *As soon as the oil will heat up, add the garlic.*
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
->
-> 11. ~~will be~~ → **is** — *When the pasta **is** ready, I'll drain it.*
-> 12. ~~will cool~~ → **cools** — *Don't touch it until it **cools** down.*
-> 13. ~~will finish~~ → **finishes** — *After she **finishes** cooking, we'll eat.*
-> 14. ~~will get~~ → **get** — *I'll text you when I **get** home.*
-> 15. ~~will heat~~ → **heats** — *As soon as the oil **heats** up, add the garlic.*
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> >
+> > 11. ~~will be~~ → **is** — *When the pasta **is** ready, I'll drain it.*
+> > 12. ~~will cool~~ → **cools** — *Don't touch it until it **cools** down.*
+> > 13. ~~will finish~~ → **finishes** — *After she **finishes** cooking, we'll eat.*
+> > 14. ~~will get~~ → **get** — *I'll text you when I **get** home.*
+> > 15. ~~will heat~~ → **heats** — *As soon as the oil **heats** up, add the garlic.*
 
 ---
 
@@ -240,14 +237,13 @@ dg-publish: true
 > 19. We'll start the barbecue. / The guests arrive. *(when — final)*
 > 20. She might try the new restaurant. / It gets good reviews. *(if — inicio)*
 >
-
-> [!success] ✅ Respuestas — Ejercicio 4
->
-> 16. *After you finish chopping, add everything to the pan.*
-> 17. *Until the sauce thickens, don't remove it from the heat.*
-> 18. *I'll go to the market if you tell me what you need.*
-> 19. *We'll start the barbecue when the guests arrive.*
-> 20. *If it gets good reviews, she might try the new restaurant.*
+> > [!success]- ✅ Respuestas — Ejercicio 4
+> >
+> > 16. *After you finish chopping, add everything to the pan.*
+> > 17. *Until the sauce thickens, don't remove it from the heat.*
+> > 18. *I'll go to the market if you tell me what you need.*
+> > 19. *We'll start the barbecue when the guests arrive.*
+> > 20. *If it gets good reviews, she might try the new restaurant.*
 
 ---
 
@@ -282,5 +278,13 @@ dg-publish: true
 > [1] *Keynote Upper-Intermediate*, National Geographic Learning / Cengage, Student's Book, Unit 2: Food for Thought, pp. 16–29.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use - Describing Trends & Preparing Food]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Offers & Vowel Sounds]]
 
 **Tags:** #grammar #conditionals #timeclauses #realconditionals #English #IDIG1007 #ESPOL #unit2

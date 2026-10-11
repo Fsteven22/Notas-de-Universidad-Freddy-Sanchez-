@@ -262,14 +262,13 @@ dg-publish: true
 > 19. ¿Por qué estás interesado en este puesto en particular?
 > 20. Todos estuvimos de acuerdo en que la candidata más fuerte fue María — estudió turismo y habla tres idiomas.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 21. _I completely agree with the idea that candidates should also evaluate companies._
-> 22. _I see your point, but I think there's another side to this argument._
-> 23. _In the past, I have worked as a volunteer tour guide for two summers._
-> 24. _Why are you interested in this particular role?_
-> 25. _We all agreed that the strongest candidate was María — she studied tourism and speaks three languages._
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 21. _I completely agree with the idea that candidates should also evaluate companies._
+> > 22. _I see your point, but I think there's another side to this argument._
+> > 23. _In the past, I have worked as a volunteer tour guide for two summers._
+> > 24. _Why are you interested in this particular role?_
+> > 25. _We all agreed that the strongest candidate was María — she studied tourism and speaks three languages._
 
 ---
 
@@ -298,5 +297,13 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 1: And We're Off!, pp. 1–15.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Functional Language & Pronunciation - Introductions & Saying the Letter Y]]
+> - Siguiente: [[05 - Academic Post - And We're Off!]]
 
 **Tags:** #reading #writing #speaking #jobinterview #blogcomments #roleplay #English #IDIG1007 #ESPOL #unit1

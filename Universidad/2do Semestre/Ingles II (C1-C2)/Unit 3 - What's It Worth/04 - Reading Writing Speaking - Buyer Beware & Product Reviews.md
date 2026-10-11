@@ -261,14 +261,13 @@ dg-publish: true
 > 4. Intentas devolver algo pero el vendedor no acepta devoluciones. → _(return policy / customer service)_
 > 5. El producto llegó exactamente como lo describían. → _(as described / misleading)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
-> 6. misleading description
-> 7. damaged goods
-> 8. counterfeit product
-> 9. return policy
-> 10. as described
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
+> > 6. misleading description
+> > 7. damaged goods
+> > 8. counterfeit product
+> > 9. return policy
+> > 10. as described
 
 ---
 
@@ -282,14 +281,13 @@ dg-publish: true
 > 9. Compraste la versión más cara de un producto y la calidad fue superior a todas las demás.
 > 10. Compraste algo barato que resultó ser de muy buena calidad inesperadamente.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> 11. ✅ Aplica — pagaste poco y obtuviste poca calidad
-> 12. ❌ No aplica — pagaste mucho pero la calidad no justificó el precio (_overpriced_)
-> 13. ❌ No aplica — obtuviste más de lo que pagaste (_a bargain_)
-> 14. ✅ Aplica — el precio alto reflejó la calidad
-> 15. ❌ No aplica — la expresión asume que precio = calidad, y aquí no fue así
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > 11. ✅ Aplica — pagaste poco y obtuviste poca calidad
+> > 12. ❌ No aplica — pagaste mucho pero la calidad no justificó el precio (_overpriced_)
+> > 13. ❌ No aplica — obtuviste más de lo que pagaste (_a bargain_)
+> > 14. ✅ Aplica — el precio alto reflejó la calidad
+> > 15. ❌ No aplica — la expresión asume que precio = calidad, y aquí no fue así
 
 ---
 
@@ -305,13 +303,12 @@ dg-publish: true
 > > 
 > > _(D)_ If you need headphones for occasional use, these might be fine. But if you rely on them daily, I'd recommend spending a bit more.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> - (A) → Contexto de la compra
-> - (B) → Aspectos positivos
-> - (C) → Aspectos negativos
-> - (D) → Recomendación
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > - (A) → Contexto de la compra
+> > - (B) → Aspectos positivos
+> > - (C) → Aspectos negativos
+> > - (D) → Recomendación
 
 ---
 
@@ -325,14 +322,13 @@ dg-publish: true
 > 14. _THE QUALITY IS BAD THE COLOR IS WRONG THE DELIVERY WAS LATE._
 > 15. _The size runs small — order at least ONE SIZE UP._
 >
-
-> [!success] ✅ Respuestas — Ejercicio 4
-> 
-> 16. ✅ — una sola palabra en CAPS para énfasis positivo
-> 17. ❌ — frase entera en CAPS, tono agresivo, pierde credibilidad
-> 18. ✅ — advertencia clara con DO NOT, útil para el lector
-> 19. ❌ — todo en CAPS, sin puntuación, suena a spam agresivo
-> 20. ✅ — dos palabras en CAPS para énfasis en información útil
+> > [!success]- ✅ Respuestas — Ejercicio 4
+> > 
+> > 16. ✅ — una sola palabra en CAPS para énfasis positivo
+> > 17. ❌ — frase entera en CAPS, tono agresivo, pierde credibilidad
+> > 18. ✅ — advertencia clara con DO NOT, útil para el lector
+> > 19. ❌ — todo en CAPS, sin puntuación, suena a spam agresivo
+> > 20. ✅ — dos palabras en CAPS para énfasis en información útil
 
 ---
 
@@ -370,5 +366,12 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 3: Worth It?, pp. 30–43.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[03 - Functional Language & Pronunciation - Apologies & S-Sounds]]
 
 **Tags:** #reading #writing #product-review #buyer-beware #register #all-caps #English #IDIG1007 #ESPOL #unit3

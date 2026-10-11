@@ -178,14 +178,13 @@ graph TD
 > 
 > **3.** ¿Qué significa "something's up"?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** whodunit
-> 
-> **2.** looking forward
-> 
-> **3.** Que algo anda mal, sin especificar exactamente qué.
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** whodunit
+> > 
+> > **2.** looking forward
+> > 
+> > **3.** Que algo anda mal, sin especificar exactamente qué.
 
 ---
 
@@ -197,14 +196,13 @@ graph TD
 > 
 > **3.** Explica la diferencia entre "mess up" y "let someone down" con un ejemplo propio.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** success story (posiblemente también hard-luck story por la lucha inicial)
-> 
-> **2.** _"She let me down again when she cancelled."_
-> 
-> **3.** _Mess up_ se centra en el error concreto ("I messed up the reservation"); _let someone down_ se centra en cómo se sintió la otra persona por ese error.
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** success story (posiblemente también hard-luck story por la lucha inicial)
+> > 
+> > **2.** _"She let me down again when she cancelled."_
+> > 
+> > **3.** _Mess up_ se centra en el error concreto ("I messed up the reservation"); _let someone down_ se centra en cómo se sintió la otra persona por ese error.
 
 ---
 
@@ -259,5 +257,12 @@ graph TD
 > - [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Past Perfect & Was Were Going To]]
 
 **Tags:** #vocabulary #stories #plans #English #IDIG1007 #ESPOL #unit5

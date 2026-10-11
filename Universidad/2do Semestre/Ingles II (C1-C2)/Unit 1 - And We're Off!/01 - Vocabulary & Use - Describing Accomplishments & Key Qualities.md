@@ -138,14 +138,13 @@ dg-publish: true
 > 4. She didn't let her early failures stop her. She knew she had to __________________ to reach the next level. _(push herself / work with her hands / run a marathon)_
 > 5. Better training helped the whole team __________________ and perform at a higher level. _(reach their potential / set a goal / get a lot of likes)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
-> 6. face her fear
-> 7. take pride in
-> 8. follow through on it
-> 9. push herself
-> 10. reach their potential
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
+> > 6. face her fear
+> > 7. take pride in
+> > 8. follow through on it
+> > 9. push herself
+> > 10. reach their potential
 
 ---
 
@@ -159,14 +158,13 @@ dg-publish: true
 > 9. Being __________________ is essential in design roles. _(creative / creativity)_
 > 10. The manager appreciated her __________________ to succeed despite the obstacles. _(determined / determination)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> 11. ambition _(sustantivo — después de "great")_
-> 12. reliable _(adjetivo — describe a una persona)_
-> 13. enthusiasm _(sustantivo — sujeto de la oración)_
-> 14. creative _(adjetivo — después de "being")_
-> 15. determination _(sustantivo — objeto de "appreciated")_
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > 11. ambition _(sustantivo — después de "great")_
+> > 12. reliable _(adjetivo — describe a una persona)_
+> > 13. enthusiasm _(sustantivo — sujeto de la oración)_
+> > 14. creative _(adjetivo — después de "being")_
+> > 15. determination _(sustantivo — objeto de "appreciated")_
 
 ---
 
@@ -180,14 +178,13 @@ dg-publish: true
 > 14. Me enorgullece haber roto el récord del equipo.
 > 15. Necesitas salir de tu zona de confort para crecer profesionalmente.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 16. _I set a goal for myself to become fluent in English before graduating._
-> 17. _She faced her fear of heights and completed the climbing course._
-> 18. _The ideal candidate should have experience and be creative._
-> 19. _I take pride in having broken the team's record._
-> 20. _You need to step out of your comfort zone to grow professionally._
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 16. _I set a goal for myself to become fluent in English before graduating._
+> > 17. _She faced her fear of heights and completed the climbing course._
+> > 18. _The ideal candidate should have experience and be creative._
+> > 19. _I take pride in having broken the team's record._
+> > 20. _You need to step out of your comfort zone to grow professionally._
 
 ---
 
@@ -226,5 +223,12 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 1: And We're Off!, pp. 1–15.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Tense Review & Dynamic vs Stative Verbs]]
 
 **Tags:** #vocabulary #accomplishments #qualities #adjectives #nouns #English #IDIG1007 #ESPOL #unit1

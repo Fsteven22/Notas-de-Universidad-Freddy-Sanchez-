@@ -164,14 +164,13 @@ graph TD
 > 
 > **3.** ¿Por qué el libro recomienda mantener la calma cuando algo sale mal en un negocio?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** Asking for a solution
-> 
-> **2.** is what it is
-> 
-> **3.** Porque el enojo o los gritos hacen que el personal esté menos dispuesto a ayudar; un tono calmado es más efectivo.
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** Asking for a solution
+> > 
+> > **2.** is what it is
+> > 
+> > **3.** Porque el enojo o los gritos hacen que el personal esté menos dispuesto a ayudar; un tono calmado es más efectivo.
 
 ---
 
@@ -183,14 +182,13 @@ graph TD
 > 
 > **3.** Da un ejemplo de una situación donde no hay solución posible, y responde usando una frase de "accepting bad news".
 >
-
-> [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
-> 
-> **1.** _"There must be something you can do — is there another room available?"_
-> 
-> **2.** _"I don't understand — I think there might be a mistake with my order. Can you check again, please?"_
-> 
-> **3.** Ej.: perder un vuelo por retraso del aeropuerto → _"Well, that's life. I'll just book the next one."_
+> > [!success]- ✅ Respuestas — Nivel 2 (ejemplo de respuesta)
+> > 
+> > **1.** _"There must be something you can do — is there another room available?"_
+> > 
+> > **2.** _"I don't understand — I think there might be a mistake with my order. Can you check again, please?"_
+> > 
+> > **3.** Ej.: perder un vuelo por retraso del aeropuerto → _"Well, that's life. I'll just book the next one."_
 
 ---
 
@@ -245,5 +243,13 @@ graph TD
 > - [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[02 - Grammar & Examples - Past Perfect & Was Were Going To]]
+> - Siguiente: [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 
 **Tags:** #functional-language #pronunciation #problems #complaints #English #IDIG1007 #ESPOL #unit5

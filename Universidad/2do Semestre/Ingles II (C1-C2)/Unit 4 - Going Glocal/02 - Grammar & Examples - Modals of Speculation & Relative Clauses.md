@@ -179,14 +179,13 @@ graph TD
 > 
 > **3.** ¿Sujeto u objeto? _"the jersey that he made"_ — ¿qué tipo de cláusula relativa es?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** can't
-> 
-> **2.** who
-> 
-> **3.** Objeto (`he` es el sujeto, `that` es el objeto de `made`)
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** can't
+> > 
+> > **2.** who
+> > 
+> > **3.** Objeto (`he` es el sujeto, `that` es el objeto de `made`)
 
 ---
 
@@ -198,14 +197,13 @@ graph TD
 > 
 > **3.** Reescribe omitiendo el pronombre relativo si es posible: _"The stories that we see online are often about ordinary people."_
 >
-
-> [!success]- ✅ Respuestas — Nivel 2
-> 
-> **1.** might / may / could
-> 
-> **2.** _Murtaza was a boy who loved Lionel Messi._ (subject relative clause)
-> 
-> **3.** _The stories we see online are often about ordinary people._ (se puede omitir porque es objeto)
+> > [!success]- ✅ Respuestas — Nivel 2
+> > 
+> > **1.** might / may / could
+> > 
+> > **2.** _Murtaza was a boy who loved Lionel Messi._ (subject relative clause)
+> > 
+> > **3.** _The stories we see online are often about ordinary people._ (se puede omitir porque es objeto)
 
 ---
 
@@ -260,5 +258,13 @@ graph TD
 > - [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use - Advertising & Media People]]
+> - Siguiente: [[03 - Functional Language & Pronunciation — Exchanging Opinions & Vowel Sounds]]
 
 **Tags:** #grammar #modals #relative-clauses #speculation #English #IDIG1007 #ESPOL #unit4

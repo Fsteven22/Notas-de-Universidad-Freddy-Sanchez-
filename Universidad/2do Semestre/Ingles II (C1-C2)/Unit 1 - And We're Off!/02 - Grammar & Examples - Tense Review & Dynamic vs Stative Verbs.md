@@ -230,14 +230,13 @@ dg-publish: true
 > 4. He __________________ (reads / is reading) the newspaper every morning — it's his routine.
 > 5. We __________________ (have been waiting / waited) for two hours and they still haven't arrived.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
-> 6. **has worked** _(Present Perfect — "since" indica duración desde el pasado hasta el presente)_
-> 7. **was studying** _(Past Continuous — acción en progreso interrumpida por "you called")_
-> 8. **have already finished** _(Present Perfect — "already" indica resultado reciente con relevancia presente)_
-> 9. **reads** _(Simple Present — hábito diario con "every morning")_
-> 10. **have been waiting** _(Present Perfect Continuous — duración enfatizada que continúa hasta el presente)_
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
+> > 6. **has worked** _(Present Perfect — "since" indica duración desde el pasado hasta el presente)_
+> > 7. **was studying** _(Past Continuous — acción en progreso interrumpida por "you called")_
+> > 8. **have already finished** _(Present Perfect — "already" indica resultado reciente con relevancia presente)_
+> > 9. **reads** _(Simple Present — hábito diario con "every morning")_
+> > 10. **have been waiting** _(Present Perfect Continuous — duración enfatizada que continúa hasta el presente)_
 
 ---
 
@@ -251,14 +250,13 @@ dg-publish: true
 > 9. He **is believing** everything she says.
 > 10. We **are thinking** of moving to a new city.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> 11. ❌ Estativo (S) → _I **know** the answer to that question._ (_know_ = comprensión; no va en continuo)
-> 12. ✅ Dinámico (D) → Correcto. (_run_ = acción física en progreso)
-> 13. ✅ Dinámico (D) → Correcto. (_have_ aquí = actividad, no posesión)
-> 14. ❌ Estativo (S) → _He **believes** everything she says._ (_believe_ = estado mental)
-> 15. ✅ Dinámico (D) → Correcto. (_think_ aquí = proceso mental activo, no opinión)
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > 11. ❌ Estativo (S) → _I **know** the answer to that question._ (_know_ = comprensión; no va en continuo)
+> > 12. ✅ Dinámico (D) → Correcto. (_run_ = acción física en progreso)
+> > 13. ✅ Dinámico (D) → Correcto. (_have_ aquí = actividad, no posesión)
+> > 14. ❌ Estativo (S) → _He **believes** everything she says._ (_believe_ = estado mental)
+> > 15. ✅ Dinámico (D) → Correcto. (_think_ aquí = proceso mental activo, no opinión)
 
 ---
 
@@ -272,14 +270,13 @@ dg-publish: true
 > 14. _He has been working here in 2018._
 > 15. _They are knowing each other since university._
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 16. ❌ → _I **saw** that movie last Friday._ _(Simple Past — "last Friday" es un tiempo específico del pasado, no va con Present Perfect)_
-> 17. ❌ → _She **has** a car and a motorcycle._ _(have = posesión; verbo estativo, no va en continuo)_
-> 18. ❌ → _We were waiting for the bus when it **started** to rain._ _(la interrupción va en Simple Past, no en Present)_
-> 19. ❌ → _He **has worked** here **since** 2018._ _(Present Perfect + since para duración desde el pasado)_
-> 20. ❌ → _They **have known** each other since university._ _(know = estativo; Present Perfect, no continuo)_
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 16. ❌ → _I **saw** that movie last Friday._ _(Simple Past — "last Friday" es un tiempo específico del pasado, no va con Present Perfect)_
+> > 17. ❌ → _She **has** a car and a motorcycle._ _(have = posesión; verbo estativo, no va en continuo)_
+> > 18. ❌ → _We were waiting for the bus when it **started** to rain._ _(la interrupción va en Simple Past, no en Present)_
+> > 19. ❌ → _He **has worked** here **since** 2018._ _(Present Perfect + since para duración desde el pasado)_
+> > 20. ❌ → _They **have known** each other since university._ _(know = estativo; Present Perfect, no continuo)_
 
 ---
 
@@ -307,5 +304,13 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 1: And We're Off!, pp. 1–15.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use - Describing Accomplishments & Key Qualities]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Introductions & Saying the Letter Y]]
 
 **Tags:** #grammar #tenses #verbs #stative #dynamic #presentperfect #English #IDIG1007 #ESPOL #unit1

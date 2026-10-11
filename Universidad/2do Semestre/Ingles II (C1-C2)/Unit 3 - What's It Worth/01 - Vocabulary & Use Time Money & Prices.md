@@ -147,14 +147,13 @@ dg-publish: true
 > 4. Finding a good __________________ between work and personal life is essential for well-being. _(balance / boost / cost)_
 > 5. Better access to healthcare can __________________ the standard of living for entire communities. _(raise / spend / charge)_
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
-> 
-> 6. cost of living
-> 7. boost
-> 8. trade-off
-> 9. balance
-> 10. raise
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> > 
+> > 6. cost of living
+> > 7. boost
+> > 8. trade-off
+> > 9. balance
+> > 10. raise
 
 ---
 
@@ -168,14 +167,13 @@ dg-publish: true
 > 9. Take advantage ________ the promotion before it expires.
 > 10. How much do you spend ________ transport every month?
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
-> 
-> 11. for
-> 12. on
-> 13. in
-> 14. of
-> 15. on
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> > 
+> > 11. for
+> > 12. on
+> > 13. in
+> > 14. of
+> > 15. on
 
 ---
 
@@ -189,14 +187,13 @@ dg-publish: true
 > 14. My phone has lasted 4 years with no problems. → It was __________________.
 > 15. The buyer offered $50 and the seller accepted immediately. → They __________________ a fair price.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
-> 
-> 16. rip-off
-> 17. bargain
-> 18. overpriced
-> 19. worth every penny
-> 20. agreed on / paid
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> > 
+> > 16. rip-off
+> > 17. bargain
+> > 18. overpriced
+> > 19. worth every penny
+> > 20. agreed on / paid
 
 ---
 
@@ -210,14 +207,13 @@ dg-publish: true
 > 19. Es difícil encontrar un equilibrio entre los estudios y el trabajo.
 > 20. Me cobraron $15 extra por el envío sin avisarme antes.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 4
-> 
-> 21. _The cost of living in Guayaquil has increased a lot in recent years._
-> 22. _You can't rely on cheap products if you want quality._
-> 23. _I took advantage of the sale and bought the course at 50% off._
-> 24. _It's hard to find a balance between studying and working._
-> 25. _They charged me $15 extra for shipping without telling me beforehand._
+> > [!success]- ✅ Respuestas — Ejercicio 4
+> > 
+> > 21. _The cost of living in Guayaquil has increased a lot in recent years._
+> > 22. _You can't rely on cheap products if you want quality._
+> > 23. _I took advantage of the sale and bought the course at 50% off._
+> > 24. _It's hard to find a balance between studying and working._
+> > 25. _They charged me $15 extra for shipping without telling me beforehand._
 
 ---
 
@@ -254,5 +250,12 @@ dg-publish: true
 > [1] _Keynote Upper-Intermediate_, National Geographic Learning / Cengage, Student's Book, Unit 3: Worth It?, pp. 30–43.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Too Enough & Modifying Comparisons]]
 
 **Tags:** #vocabulary #money #time #prices #value #English #IDIG1007 #ESPOL #unit3

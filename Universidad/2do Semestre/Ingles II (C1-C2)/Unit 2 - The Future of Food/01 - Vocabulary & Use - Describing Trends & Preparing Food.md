@@ -131,14 +131,13 @@ dg-publish: true
 > 4. Sustainable fashion is __________________ — it's not going anywhere. *(here to stay / catching on)*
 > 5. The practice of writing letters by hand is slowly __________________ . *(dying out / being trendy)*
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
->
-> 1. come back into fashion
-> 2. a fad
-> 3. on the way out
-> 4. here to stay
-> 5. dying out
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> >
+> > 1. come back into fashion
+> > 2. a fad
+> > 3. on the way out
+> > 4. here to stay
+> > 5. dying out
 
 ---
 
@@ -152,14 +151,13 @@ dg-publish: true
 > 9. Check what's __________________ on Twitter before you post anything.
 > 10. She always wears the most __________________ outfits to class.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
->
-> 6. trendy *(moda general, no solo hoy)*
-> 7. trending *(tendencia inmediata en redes)*
-> 8. trendy *(moda de varios años)*
-> 9. trending *(tendencia en tiempo real)*
-> 10. trendy *(estilo de moda en general)*
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> >
+> > 6. trendy *(moda general, no solo hoy)*
+> > 7. trending *(tendencia inmediata en redes)*
+> > 8. trendy *(moda de varios años)*
+> > 9. trending *(tendencia en tiempo real)*
+> > 10. trendy *(estilo de moda en general)*
 
 ---
 
@@ -176,15 +174,14 @@ dg-publish: true
 > 5. Add the pasta to the pan and __________________ everything together.
 > 6. Before serving, __________________ some parmesan cheese on top.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
->
-> 1. Boil
-> 2. chop
-> 3. Fry
-> 4. Drain
-> 5. stir
-> 6. grate
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> >
+> > 1. Boil
+> > 2. chop
+> > 3. Fry
+> > 4. Drain
+> > 5. stir
+> > 6. grate
 
 ---
 
@@ -198,14 +195,13 @@ dg-publish: true
 > 14. El tema del cambio climático es tendencia en Twitter hoy.
 > 15. Marinamos la carne toda la noche antes de asarla a la parrilla.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 4
->
-> 11. Social media is here to stay.
-> 12. First, rinse the rice, then boil it for 20 minutes.
-> 13. That clothing style is old-fashioned now. / That style went out of fashion years ago.
-> 14. The topic of climate change is trending on Twitter today.
-> 15. We marinated the meat all night before barbecuing it.
+> > [!success]- ✅ Respuestas — Ejercicio 4
+> >
+> > 11. Social media is here to stay.
+> > 12. First, rinse the rice, then boil it for 20 minutes.
+> > 13. That clothing style is old-fashioned now. / That style went out of fashion years ago.
+> > 14. The topic of climate change is trending on Twitter today.
+> > 15. We marinated the meat all night before barbecuing it.
 
 ---
 
@@ -242,5 +238,12 @@ dg-publish: true
 > [1] *Keynote Upper-Intermediate*, National Geographic Learning / Cengage, Student's Book, Unit 2: Food for Thought, pp. 16–29.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Siguiente: [[02 - Grammar & Examples - Real Conditionals & Time Clauses]]
 
 **Tags:** #vocabulary #trends #food #cooking #English #IDIG1007 #ESPOL #unit2

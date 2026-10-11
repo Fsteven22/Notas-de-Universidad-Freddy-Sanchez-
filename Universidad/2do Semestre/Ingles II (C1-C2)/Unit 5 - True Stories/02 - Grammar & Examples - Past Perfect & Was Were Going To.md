@@ -154,14 +154,13 @@ graph TD
 > 
 > **3.** ¿Qué evento ocurrió primero: "She had finished dinner when he called" — cenar o llamar?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** had left
-> 
-> **2.** _"The meeting was supposed to start at 9."_
-> 
-> **3.** Cenar (había terminado de cenar antes de que él llamara).
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** had left
+> > 
+> > **2.** _"The meeting was supposed to start at 9."_
+> > 
+> > **3.** Cenar (había terminado de cenar antes de que él llamara).
 
 ---
 
@@ -173,14 +172,13 @@ graph TD
 > 
 > **3.** Combina las dos oraciones usando past perfect: _"We arrived at the station. The train had left five minutes earlier."_
 >
-
-> [!success]- ✅ Respuestas — Nivel 2
-> 
-> **1.** had given up
-> 
-> **2.** _"I was going to go to the party, but I got sick and stayed home instead."_
-> 
-> **3.** _"By the time we arrived at the station, the train had already left."_
+> > [!success]- ✅ Respuestas — Nivel 2
+> > 
+> > **1.** had given up
+> > 
+> > **2.** _"I was going to go to the party, but I got sick and stayed home instead."_
+> > 
+> > **3.** _"By the time we arrived at the station, the train had already left."_
 
 ---
 
@@ -235,5 +233,13 @@ graph TD
 > - [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]
 
 **Tags:** #grammar #past-perfect #past-plans #English #IDIG1007 #ESPOL #unit5

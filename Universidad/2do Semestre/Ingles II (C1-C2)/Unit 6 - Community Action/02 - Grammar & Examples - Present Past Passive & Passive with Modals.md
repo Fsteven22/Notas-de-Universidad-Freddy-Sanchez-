@@ -162,14 +162,13 @@ graph TD
 > 
 > **3.** ¿Qué modal usarías para algo "necesario/definitivo": might o must?
 >
-
-> [!success]- ✅ Respuestas — Nivel 1
-> 
-> **1.** *"The shelter is run by volunteers."*
-> 
-> **2.** *"Our program is designed for elderly people."*
-> 
-> **3.** must
+> > [!success]- ✅ Respuestas — Nivel 1
+> > 
+> > **1.** *"The shelter is run by volunteers."*
+> > 
+> > **2.** *"Our program is designed for elderly people."*
+> > 
+> > **3.** must
 
 ---
 
@@ -181,14 +180,13 @@ graph TD
 > 
 > **3.** Explica la diferencia entre "can be interpreted" y "must be interpreted" en el contexto de un acto de bondad.
 >
-
-> [!success]- ✅ Respuestas — Nivel 2
-> 
-> **1.** might be donated
-> 
-> **2.** *"This organization was founded in 1990."*
-> 
-> **3.** *"Can be interpreted"* indica una posibilidad entre varias (podría malinterpretarse, pero no necesariamente); *"must be interpreted"* indicaría una necesidad/certeza absoluta, lo cual no encaja con el matiz real de esa idea (la interpretación de un gesto de bondad nunca es 100% segura).
+> > [!success]- ✅ Respuestas — Nivel 2
+> > 
+> > **1.** might be donated
+> > 
+> > **2.** *"This organization was founded in 1990."*
+> > 
+> > **3.** *"Can be interpreted"* indica una posibilidad entre varias (podría malinterpretarse, pero no necesariamente); *"must be interpreted"* indicaría una necesidad/certeza absoluta, lo cual no encaja con el matiz real de esa idea (la interpretación de un gesto de bondad nunca es 100% segura).
 
 ---
 
@@ -240,5 +238,13 @@ graph TD
 > - [[04 - Reading Writing Speaking - Urban Projects & Community Reports]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Welcome & Syllabus English II]]
+> - Anterior: [[01 - Vocabulary & Use - Discussing Good Works & Describing Good Deeds]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Offering Refusing Help & Consonant Sounds]]
 
 **Tags:** #grammar #passive-voice #modals #English #IDIG1007 #ESPOL #unit6
