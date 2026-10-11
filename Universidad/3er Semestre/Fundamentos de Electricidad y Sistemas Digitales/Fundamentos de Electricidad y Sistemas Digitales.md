@@ -76,6 +76,7 @@ graph TD
 > [!note] Fundamentos
 > - [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]]
 >
+
 > [!note] Prácticas
 > - [[Práctica 1 — Manejo de Equipos del Laboratorio|Práctica 1 — Manejo de Equipos]]
 > - [[Práctica 2 — Ley de Ohm y Kirchhoff|Práctica 2 — Ohm y Kirchhoff]]

@@ -29,6 +29,7 @@ dg-publish: true
 >
 > Aplicar diseño e implementación de bases de datos con SQL y modelos relacionales para administrar información.
 
+
 > [!success] ✅ Reglas del juego (políticas)
 >
 > - 40% de faltas (≈11) = reprobado. Sin celulares en clase (los retiran).

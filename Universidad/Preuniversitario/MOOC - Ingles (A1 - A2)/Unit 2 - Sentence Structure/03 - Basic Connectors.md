@@ -689,6 +689,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 > 10. Moreover (adding negative information)
 > ```
 >
+
 > [!example] Exercise 2: Combine Sentences
 > 
 > **Use the connector in parentheses to combine the sentences:**
@@ -721,6 +722,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 > 10. She speaks English. She also speaks Spanish. / She speaks English and Spanish.
 > ```
 >
+
 > [!example] Exercise 3: Add Correct Punctuation
 > 
 > **Add commas, semicolons, or periods where needed:**
@@ -753,6 +755,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 > 10. He's rich, yet he's not happy.
 > ```
 >
+
 > [!example] Exercise 4: Identify the Relationship
 > 
 > **What relationship does the connector show?**
@@ -881,6 +884,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 > "So" = resultado o pregunta conversacional
 > ```
 >
+
 > [!tip] Consejos y Trucos de Memoria
 > 
 > **Tip 1: FANBOYS para coordinación**

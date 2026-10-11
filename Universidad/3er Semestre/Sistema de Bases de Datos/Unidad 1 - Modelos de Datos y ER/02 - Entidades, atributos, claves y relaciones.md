@@ -457,12 +457,14 @@ graph TB
 > - [ ] Leo un ERD en voz alta en ambas direcciones.
 > - [ ] Elijo la PK correcta justificando unicidad, nulidad y estabilidad.
 >
+
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Clasifico 1:1/1:M/M:N escribiendo ambas frases.
 > - [ ] Escribo cardinalidades (x,y) del lado correcto según notación.
 > - [ ] Distingo entidad fuerte de dependiente con ejemplo propio.
 >
+
 > [!note] 📋 Nivel Avanzado
 >
 > - [ ] Aplico el método de 6 pasos a un enunciado nuevo sin ayuda.

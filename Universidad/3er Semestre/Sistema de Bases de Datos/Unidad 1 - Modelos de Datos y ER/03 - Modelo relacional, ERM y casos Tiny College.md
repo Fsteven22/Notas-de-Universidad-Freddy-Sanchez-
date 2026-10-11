@@ -275,6 +275,7 @@ graph TB
 > **Versión fuerte (sólida):** la PK de CLASS hereda `CRS_CODE` — sin el curso, la clase no se identifica.
 >
 
+
 > [!example] 🟢 Ejemplo — Clasificar DIVISION–EMPLOYEE
 >
 > Solo sabes *"Una DIVISIÓN es manejada por un EMPLEADO"* — insuficiente:
@@ -420,12 +421,14 @@ flowchart TD
 > - [ ] Dibujo los 7 símbolos Chen con su significado.
 > - [ ] Traduzco un ER simple a tablas con PKs y FKs.
 >
+
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Decido débil vs fuerte por la PK y dibujo su línea.
 > - [ ] Resuelvo N:M con intermedia correcta.
 > - [ ] Ordeno creación y carga sin romper integridad.
 >
+
 > [!note] 📋 Nivel Avanzado
 >
 > - [ ] Comparo CLASS débil vs fuerte justificando por transacciones.
