@@ -21,7 +21,7 @@ dg-publish: true
 >     A --> D[Pronunciation: /s/ inicial]
 >     B --> E[Frases para disculparse<br/>por daños o pérdidas]
 >     C --> F[Estrategias para<br/>aceptar y aliviar]
->     D --> G[/s/ vs. /es/<br/>al inicio de palabra]
+>     D --> G["/s/ vs. /es/<br/>al inicio de palabra"]
 >     style B fill:#fce4ec
 >     style C fill:#e8f5e9
 >     style D fill:#e3f2fd
