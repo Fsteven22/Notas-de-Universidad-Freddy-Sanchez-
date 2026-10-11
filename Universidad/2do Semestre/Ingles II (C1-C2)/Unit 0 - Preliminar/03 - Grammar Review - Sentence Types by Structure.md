@@ -17,6 +17,8 @@ dg-publish: true
 > | **Independent Clause** | Grupo de palabras con sujeto y verbo que tiene sentido solo. Puede ser una oración completa. |
 > | **Dependent Clause** | Grupo de palabras con sujeto y verbo que NO tiene sentido solo. Empieza con una conjunción subordinante. |
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > 💡 **Conjunciones subordinantes comunes:** because, although, when, while, if, since, after, before, as, even though, unless
 > >
 > > 💡 **FANBOYS** (conjunciones coordinantes): **F**or · **A**nd · **N**or · **B**ut · **O**r · **Y**et · **S**o

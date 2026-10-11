@@ -61,7 +61,7 @@ dg-publish: true
 > |_Water boils at 100°C._|El agua hierve a 100°C.|
 > |_He reads the newspaper every morning._|Él lee el periódico todas las mañanas.|
 > 
-> > ⚠️ Recuerda: en tercera persona singular (he/she/it), el verbo lleva **-s** o **-es**: _work → works_, _teach → teaches_.
+> ⚠️ Recuerda: en tercera persona singular (he/she/it), el verbo lleva **-s** o **-es**: _work → works_, _teach → teaches_.
 
 ---
 
@@ -111,7 +111,7 @@ dg-publish: true
 > |_They were working all morning._|Estuvieron trabajando toda la mañana.|
 > |_She was running when it started to rain._|Ella estaba corriendo cuando empezó a llover.|
 > 
-> > 💡 Patrón clave: **Past Continuous + when + Simple Past** → acción larga en progreso interrumpida por un evento puntual.
+> 💡 Patrón clave: **Past Continuous + when + Simple Past** → acción larga en progreso interrumpida por un evento puntual.
 
 ---
 
@@ -129,6 +129,8 @@ dg-publish: true
 > |_She has never been to Europe._|Ella nunca ha estado en Europa.|
 > |_He has worked here since 2019._|Él ha trabajado aquí desde 2019.|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > ⚠️ Diferencia clave con el Simple Past:
 > > 
 > > - _I lost my keys._ → hecho pasado terminado, sin conexión con el presente.
@@ -152,6 +154,8 @@ dg-publish: true
 > 
 > **Ejemplo de párrafo completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _She graduated from ESPOL in 2020 and has worked at the same company since then. Lately, she has been thinking about starting her own business. When her manager called yesterday, she was preparing a business plan._
 > > 
 > > _Se graduó de ESPOL en 2020 y ha trabajado en la misma empresa desde entonces. Últimamente, ha estado pensando en iniciar su propio negocio. Cuando su gerente llamó ayer, ella estaba preparando un plan de negocios._
@@ -208,10 +212,12 @@ dg-publish: true
 > |**be**|_She is responsible._ _(característica permanente)_|_She is being difficult today._ _(comportamiento temporal)_|
 > |**taste**|_This soup tastes great._ _(propiedad del objeto)_|_The chef is tasting the sauce._ _(acción de probar)_|
 > 
-> > 💡 La clave está en preguntarse: ¿es un **estado permanente** o una **acción/experiencia en curso**? Si es lo segundo, el continuo puede ser válido.
+> 💡 La clave está en preguntarse: ¿es un **estado permanente** o una **acción/experiencia en curso**? Si es lo segundo, el continuo puede ser válido.
 > 
 > **Ejemplo de párrafo completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I think this is a great opportunity — I've been thinking about it all week. I have a meeting tomorrow with the team, and I'm having coffee with the manager before that. She seems interested in the project._
 > > 
 > > _Creo que es una gran oportunidad — he estado pensándolo toda la semana. Tengo una reunión mañana con el equipo, y antes de eso estaré tomando café con la gerente. Ella parece interesada en el proyecto._

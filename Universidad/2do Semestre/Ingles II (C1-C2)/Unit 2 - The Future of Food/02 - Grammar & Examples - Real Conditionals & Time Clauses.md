@@ -46,6 +46,8 @@ dg-publish: true
 >
 > **Estructura:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > **If + sujeto + verbo presente** → **sujeto + verbo presente**
 >
 > Se usa cuando la condición **siempre** produce el mismo resultado. Es como una regla o ley.
@@ -67,6 +69,8 @@ dg-publish: true
 >
 > **Estructura:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > **If + sujeto + verbo presente** → **sujeto + will / might / can + verbo base**
 >
 > Se usa para hablar de algo que **es probable que pase** en el futuro si se cumple la condición.
@@ -79,6 +83,8 @@ dg-publish: true
 >
 > **Más ejemplos en contexto** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *If you don't rinse the vegetables, they might still have pesticides.*
 > > *Si no enjuagas las verduras, podrían tener todavía pesticidas.*
 > >
@@ -125,6 +131,8 @@ dg-publish: true
 >
 > **Ejemplos en contexto** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *When the pasta is ready, drain it immediately.*
 > > *Cuando la pasta esté lista, escúrrela de inmediato.*
 > >

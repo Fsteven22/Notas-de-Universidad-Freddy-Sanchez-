@@ -126,10 +126,12 @@ dg-publish: true
 > |_The conclusion is abrupt._|_The conclusion feels a bit abrupt._|Más respetuoso|
 > |_The examples are unclear._|_The examples are a little unclear._|Mantiene la crítica sin agredir|
 > 
-> > 💡 **A bit** es ligeramente más informal que **a little**. Ambos funcionan en comentarios formales e informales, pero **a little** suena más cuidadoso y académico.
+> 💡 **A bit** es ligeramente más informal que **a little**. Ambos funcionan en comentarios formales e informales, pero **a little** suena más cuidadoso y académico.
 > 
 > **Ejemplo de comentario completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I completely agree with the idea that job interviews should be a two-way conversation. You make a valid argument when you say that candidates need to evaluate companies too. That said, I find the advice a little idealistic for entry-level positions, where asking too many questions could feel a bit risky. Still, this was really eye-opening — thank you for sharing this perspective._
 > > 
 > > _Estoy completamente de acuerdo con la idea de que las entrevistas deben ser una conversación de dos vías. Presentas un argumento sólido cuando dices que los candidatos también deben evaluar a las empresas. Dicho esto, encuentro el consejo un poco idealista para puestos de nivel inicial, donde hacer demasiadas preguntas podría sentirse un poco arriesgado. Aun así, esto fue realmente revelador — gracias por compartir esta perspectiva._
@@ -198,6 +200,8 @@ dg-publish: true
 > 
 > **Ejemplo de intercambio completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _— Why do you want to be a tour guide?_ _— I'm particularly interested in this role because I love meeting people from different cultures. In the past, I have volunteered as a campus guide at ESPOL for two years._ _— Do you have any language skills?_ _— Yes, I speak Spanish and English fluently, and I'm currently learning Mandarin._
 > > 
 > > _— ¿Por qué quieres ser guía turístico?_ _— Estoy especialmente interesado en este rol porque me encanta conocer personas de diferentes culturas. En el pasado, fui voluntario como guía de campus en ESPOL durante dos años._ _— ¿Tienes habilidades en idiomas?_ _— Sí, hablo español e inglés con fluidez, y actualmente estoy aprendiendo mandarín._
@@ -233,6 +237,8 @@ dg-publish: true
 > 
 > En parejas o grupos de tres, practica el siguiente escenario. Usa las frases de las tres etapas:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Puesto:** Junior Software Engineer en una empresa de tecnología en Guayaquil.
 > > 
 > > - **Persona A (entrevistador):** Prepara 3 preguntas usando las frases de la etapa _Present_.
@@ -248,7 +254,7 @@ dg-publish: true
 > |**Present**|¿El entrevistador hizo al menos 2 preguntas del banco? ¿El candidato hizo 2 preguntas sobre la empresa?|
 > |**Agree**|¿Se usó _I think … is the best candidate_ o _… would be a good employer because …_?|
 > 
-> > 💡 El libro sugiere que tanto el candidato como el entrevistador evalúen la experiencia al final, no solo el entrevistador.
+> 💡 El libro sugiere que tanto el candidato como el entrevistador evalúen la experiencia al final, no solo el entrevistador.
 
 ---
 

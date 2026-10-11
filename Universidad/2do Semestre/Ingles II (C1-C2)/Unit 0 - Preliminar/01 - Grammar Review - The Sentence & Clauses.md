@@ -38,7 +38,7 @@ dg-publish: true
 >
 > A **sentence** is a group of words that expresses a **complete thought**. It always has at least a **subject** and a **verb**, and it makes sense on its own.
 >
-> > 💡 **Analogía práctica:** Una oración es como una historia mínima — siempre hay alguien (sujeto) que hace algo (verbo), y juntos forman una idea completa.
+> 💡 **Analogía práctica:** Una oración es como una historia mínima — siempre hay alguien (sujeto) que hace algo (verbo), y juntos forman una idea completa.
 >
 > **Ejemplos:**
 >

@@ -59,6 +59,8 @@ dg-publish: true
 >
 > **Ejemplos en contexto** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *Nearly half of those surveyed said they check food labels before buying.*
 > > *Casi la mitad de los encuestados dijo que revisa las etiquetas de los alimentos antes de comprar.*
 > >
@@ -85,6 +87,8 @@ dg-publish: true
 >
 > **Ejemplo de párrafo completo de resultados:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *The survey revealed that 72% of respondents read food labels regularly. Interestingly, nearly half of them said they did not fully understand the information provided. In contrast, only 15% said they found labels confusing. This suggests that while awareness is high, comprehension remains a challenge.*
 > >
 > > *La encuesta reveló que el 72% de los encuestados lee las etiquetas regularmente. Curiosamente, casi la mitad dijo que no comprende completamente la información. En contraste, solo el 15% consideró las etiquetas confusas. Esto sugiere que, si bien la conciencia es alta, la comprensión sigue siendo un desafío.*
@@ -108,6 +112,8 @@ dg-publish: true
 
 > [!note] 🔹 Estructura general
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > **Sujeto + verbo *to be* (conjugado) + participio pasado**
 >
 > | Tiempo verbal | Fórmula activa | Fórmula pasiva |
@@ -134,11 +140,15 @@ dg-publish: true
 >
 > En lugar de decir *"We asked 500 people..."*, en un texto formal se prefiere:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *Five hundred people **were surveyed** about their eating habits.*
 > > *Quinientas personas fueron encuestadas sobre sus hábitos alimenticios.*
 >
 > Más ejemplos de voz pasiva en contexto de encuestas *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *The data **was collected** over a period of three months.*
 > > *Los datos fueron recopilados durante un período de tres meses.*
 > >
@@ -214,6 +224,8 @@ dg-publish: true
 >
 > **Ejemplos en contexto** *(lo que ves escrito → lo que realmente escuchas)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *I want to eat something.* → *"I wanna eat something."*
 > > *Quiero comer algo.*
 > >

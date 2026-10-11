@@ -51,6 +51,8 @@ dg-publish: true
 >
 > **Ejemplos en contexto** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *Fidget spinners were just a fad — nobody uses them anymore.*
 > > *Los fidget spinners fueron solo una moda pasajera — ya nadie los usa.*
 > >
@@ -73,6 +75,8 @@ dg-publish: true
 > | **be trendy** | estar de moda (en general, durante un período) | ropa, estilos de vida, tecnología |
 > | **be trending** | ser tendencia *en este momento* (especialmente en redes) | Twitter/X, noticias, redes sociales |
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *That topic is trending on X right now — everyone's talking about it.*
 > > *Ese tema es tendencia en X ahora mismo — todo el mundo está hablando de él.*
 > >
@@ -108,6 +112,8 @@ dg-publish: true
 >
 > **Ejemplos en contexto** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > *First, rinse the vegetables under cold water, then chop them into small pieces.*
 > > *Primero, enjuaga las verduras bajo agua fría, luego córtalas en trozos pequeños.*
 > >

@@ -160,6 +160,8 @@ dg-publish: true
 > 
 > Este es el ejercicio de práctica oficial del PDF:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Professor:** What helps students succeed at university?
 > > 
 > > **Lizzy:** Having supportive teachers is the most important factor.

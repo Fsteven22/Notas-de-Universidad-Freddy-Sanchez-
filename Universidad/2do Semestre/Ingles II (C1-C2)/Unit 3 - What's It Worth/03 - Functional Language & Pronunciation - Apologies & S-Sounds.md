@@ -59,6 +59,8 @@ dg-publish: true
 > 
 > **Ejemplos en contexto** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I'm really sorry — I accidentally deleted your files. I'll try to recover them._ _Lo siento mucho de verdad — borré tus archivos sin querer. Voy a intentar recuperarlos._
 > > 
 > > _I just did the dumbest thing. I left your charger on the bus._ _Acabo de hacer la cosa más tonta. Dejé tu cargador en el bus._
@@ -120,6 +122,8 @@ dg-publish: true
 
 > [!example] 💬 Diálogo de referencia
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Alex:** Hey, I'm so sorry — I just did the dumbest thing. I borrowed your umbrella this morning and I left it on the bus. _Hey, lo siento mucho — acabo de hacer la cosa más tonta. Tomé prestado tu paraguas esta mañana y lo dejé en el bus._
 > > 
 > > **Sam:** Oh no! That was my favorite one. _¡Oh no! Era mi favorito._
@@ -180,6 +184,8 @@ dg-publish: true
 > |speak|"es-peak"|"speak"|
 > |spend|"es-pend"|"spend"|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _She's under a lot of stress at school this week._ _Ella está bajo mucho estrés en la escuela esta semana._
 > > 
 > > _(Practica diciendo esta oración 5 veces seguidas sin el "es-" extra en "stress" o "school")_

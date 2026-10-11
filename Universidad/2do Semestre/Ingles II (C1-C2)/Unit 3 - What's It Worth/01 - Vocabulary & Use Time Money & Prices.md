@@ -72,6 +72,8 @@ dg-publish: true
 > 
 > **Ejemplo de párrafo completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _The cost of living in big cities is rising fast, which makes it harder to maintain a good standard of living without boosting your income. Many people face a difficult trade-off: work longer hours to make more money, or protect their time and find a better balance._
 > > 
 > > _El costo de vida en las grandes ciudades sube rápido, lo que hace más difícil mantener un buen nivel de vida sin aumentar los ingresos. Muchas personas enfrentan un difícil sacrificio: trabajar más horas para ganar más dinero, o proteger su tiempo y encontrar un mejor equilibrio._
@@ -125,6 +127,8 @@ dg-publish: true
 > 
 > **Ejemplos en contexto** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I suggested a price of $30, but they wouldn't accept anything under $50._ _Sugerí un precio de $30, pero no aceptaban nada por debajo de $50._
 > > 
 > > _This laptop is expensive, but it's worth every penny — it's lasted five years._ _Esta laptop es cara, pero vale cada centavo — ha durado cinco años._

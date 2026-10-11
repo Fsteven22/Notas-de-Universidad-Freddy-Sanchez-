@@ -67,6 +67,8 @@ dg-publish: true
 > 
 > **Ejemplo de historia de compra problemática** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I ordered a dress online that looked beautiful in the photos. When it arrived, the color was completely different, the fabric felt cheap, and the size was nowhere near what I ordered. The seller's description was totally misleading. When I contacted customer service, they told me the return policy didn't cover color differences. It was a complete waste of money._
 > > 
 > > _Pedí un vestido en línea que se veía hermoso en las fotos. Cuando llegó, el color era completamente diferente, la tela se sentía barata y la talla no era ni remotamente lo que pedí. La descripción del vendedor era totalmente engañosa. Cuando contacté al servicio al cliente, me dijeron que la política de devoluciones no cubría diferencias de color. Fue una pérdida total de dinero._
@@ -295,6 +297,8 @@ dg-publish: true
 > 
 > Lee el siguiente fragmento de reseña e identifica qué parte de la estructura es cada párrafo (contexto / positivos / negativos / recomendación):
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _(A)_ I purchased these headphones to use during long study sessions, hoping for good sound and comfort.
 > > 
 > > _(B)_ The sound quality is genuinely impressive for the price, and they are very comfortable even after hours of use.

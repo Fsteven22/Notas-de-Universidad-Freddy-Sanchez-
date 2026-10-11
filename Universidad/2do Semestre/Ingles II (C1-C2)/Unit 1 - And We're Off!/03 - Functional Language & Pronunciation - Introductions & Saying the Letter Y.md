@@ -50,6 +50,8 @@ dg-publish: true
 > |_Do you know anyone here?_|¿Conoces a alguien aquí?|En eventos o reuniones sociales.|
 > |_Nice to meet you._|Mucho gusto / Encantado de conocerte.|Respuesta estándar al ser presentado.|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > ⚠️ **Accuracy Check del libro:** ❌ _Nice to know you._ → ✅ _Nice to meet you._
 > > 
 > > _Know_ describe una relación continua que ya existe. _Meet_ describe el acto puntual de conocerse por primera vez. Solo en el primer encuentro puedes decir _nice to meet you_.
@@ -69,6 +71,8 @@ dg-publish: true
 > 
 > **Ejemplo de diálogo completo** _(inglés → español)_:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _— Hey María, do you two know each other?_ _— I don't think we've met before. Hi, I'm María._ _— Nice to meet you, María. I'm Andrés — we work together at ESPOL._
 > > 
 > > _— Oye María, ¿se conocen ustedes dos?_ _— No creo que nos hayamos conocido. Hola, soy María._ _— Mucho gusto, María. Soy Andrés — trabajamos juntos en ESPOL._
@@ -87,7 +91,7 @@ dg-publish: true
 > |Se conocen bien (desde hace tiempo)|_Yeah, we go way back. How's it going?_|Sí, nos conocemos de hace mucho. ¿Cómo te va?|
 > |No se conocen|_No, I haven't / don't. Hi, I'm …_|No, no nos conocemos. Hola, soy…|
 > 
-> > 💡 _We go way back_ es una expresión idiomática. _Way back_ significa "muy atrás en el tiempo". Se usa para indicar que la amistad o relación viene de mucho antes. Ejemplo: _"We go way back — we studied together at ESPOL in 2019!"_
+> 💡 _We go way back_ es una expresión idiomática. _Way back_ significa "muy atrás en el tiempo". Se usa para indicar que la amistad o relación viene de mucho antes. Ejemplo: _"We go way back — we studied together at ESPOL in 2019!"_
 
 ---
 
@@ -138,6 +142,8 @@ dg-publish: true
 > 
 > Usa las frases del bloque de Functional Language para completar el diálogo de manera natural:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Carlos:** Hey Ana, __________________ my colleague David. He just joined the team.
 > > 
 > > **Ana:** Oh wait — __________________ ! We actually went to university together.

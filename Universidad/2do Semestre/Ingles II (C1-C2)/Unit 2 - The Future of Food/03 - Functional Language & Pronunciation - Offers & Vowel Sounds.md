@@ -91,6 +91,8 @@ dg-publish: true
 >
 > **Ejemplo de diálogo completo** *(inglés → español)*:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > **Host:** Can I get you a refill?
 > > **Anfitrión:** ¿Le sirvo más?
 > >

@@ -74,6 +74,8 @@ dg-publish: true
 > 
 > > [!example] 🟢 Ejemplo de párrafo completo (inglés → español)
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > _I had to really push myself to face my fear of public speaking. It wasn't easy, but I set a goal for myself and followed through on it. Now I take pride in what I accomplished, and I encourage others to step out of their comfort zone too._
 > > 
 > > _Tuve que esforzarme mucho para enfrentar mi miedo a hablar en público. No fue fácil, pero me fijé una meta y la cumplí. Ahora me enorgullezco de lo que logré, y animo a los demás a salir de su zona de confort también._

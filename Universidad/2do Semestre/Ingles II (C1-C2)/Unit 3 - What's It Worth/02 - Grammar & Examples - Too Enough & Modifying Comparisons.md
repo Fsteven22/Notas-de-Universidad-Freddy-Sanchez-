@@ -46,6 +46,8 @@ dg-publish: true
 
 > [!note] 🔹 Estructura: _too_ + adjetivo/adverbio
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Too + adjetivo/adverbio** → indica que algo es excesivo para un propósito
 > 
 > |Oración en inglés|Traducción|¿Qué implica?|
@@ -71,6 +73,8 @@ dg-publish: true
 > 
 > La posición de _enough_ cambia según lo que acompaña:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > - **Enough + sustantivo** → _I don't have enough time._
 > > - **Adjetivo + enough** → _Is this good enough?_
 > 
@@ -96,6 +100,8 @@ dg-publish: true
 > 
 > En inglés, _too_ y _enough_ frecuentemente van seguidos de **to + verbo** para explicar _por qué_ la situación es un problema o una solución:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Too + adj + to + verbo** **Adj + enough + to + verbo**
 > 
 > |Oración en inglés|Traducción|
