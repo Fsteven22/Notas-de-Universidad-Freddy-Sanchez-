@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [ingles-a1a2, unit2, connectors, mooc]
 ---
 
 # 🎯 Basic Connectors (Linking Words)
@@ -976,3 +977,17 @@ dg-publish: true
 > BUT = siempre ENTRE dos oraciones (mismo enunciado):
 > • I like tea, but I don't
 > ```
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Índice Unit 2: [[00 - Índice]]
+> - Anterior: [[02 - Parts of a Sentence]]
+> - Mapa: [[Inglés (A1-A2)]]
+
+---
+
+**Tags:** #ingles-a1a2 #unit2 #connectors #mooc
