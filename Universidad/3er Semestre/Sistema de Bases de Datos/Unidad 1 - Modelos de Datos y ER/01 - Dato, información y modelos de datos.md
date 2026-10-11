@@ -378,6 +378,7 @@ flowchart TD
 > - [ ] Explico archivos vs BD con 3 diferencias y 1 ejemplo propio.
 > - [ ] Ubico los 6 modelos en su generación con un ejemplo cada uno.
 >
+
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Aplico el método de 5 pasos a un enunciado nuevo.

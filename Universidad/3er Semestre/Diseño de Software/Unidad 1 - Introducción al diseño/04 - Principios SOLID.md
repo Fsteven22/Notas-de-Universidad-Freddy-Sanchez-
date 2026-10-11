@@ -80,6 +80,7 @@ graph TB
 > - **Malentendido común:** SRP **no** significa "una clase con un solo método". Significa un solo motivo de cambio.
 > - **Caso clásico (freeCodeCamp/Sabalete 2022):** `Factura` con `calculaTotal()` + `imprimeFactura()` + `guardarArchivo()` = 3 razones para cambiar (cálculo, formato, persistencia). Remedio: `FacturaImpresion` + `FacturaPersistencia` separadas. Si ves impresión o guardado dentro de lógica de negocio, es SRP roto.
 >
+
 > [!example]- 💻 Código — SRP antes y después
 >
 > ```java
@@ -116,6 +117,7 @@ graph TB
 > - **Violación típica:** `switch`/`if` en cascada en la lógica de negocio.
 > - **Matiz importante:** el sistema nunca queda 100 % cerrado. Eliges **frente a qué tipo de cambio** quieres protegerte (el que ya viste ocurrir o es muy probable) y dejas el resto simple.
 >
+
 > [!example]- 💻 Código — OCP con descuentos
 >
 > ```java
@@ -163,6 +165,7 @@ graph TB
 > - **Violación típica:** `override` que lanza `UnsupportedOperationException`, métodos que hacen `instanceof` para saber con qué subclase tratan.
 > - **Idea clave:** que la relación "es un" exista en el mundo real no basta; debe existir en el **comportamiento**.
 >
+
 > [!example]- 💻 Código — LSP con Rectángulo y Cuadrado
 >
 > ```java
@@ -206,6 +209,7 @@ graph TB
 > - **Violación típica:** la "interfaz única para todo el sistema" o interfaces que crecen cada vez que alguien necesita "un método más".
 > - **Beneficio:** cambiar un método que no te importa deja de obligarte a recompilar y retestear.
 >
+
 > [!example]- 💻 Código — ISP con trabajadores y robots
 >
 > ```java
@@ -387,24 +391,28 @@ flowchart TD
 > - **Soluciones:** separar datos (`EmployeeData` sin métodos) de funciones en 3 clases que no se conocen; o **Facade** (`EmployeeFacade` que instancia y delega); o conservar el método clave en `Employee` y usarla como fachada.
 > - **Proyección:** SRP reaparece como Principio de Cierre Común (componentes) y como Eje de Cambio (fronteras arquitectónicas).
 >
+
 > [!example] 💡 Reporte financiero web→impresora (OCP, cap. 8)
 >
 > - **Experimento mental:** resumen financiero en web (rojo = negativos) que ahora debe salir en impresora B/N paginada (paréntesis = negativos). Buena arquitectura: **cero líneas viejas modificadas**.
 > - **Cómo:** SRP separa cálculo de presentación; DIP organiza dependencias en una dirección: si el componente A debe protegerse de cambios en B, **B depende de A**. El **Interactor** (reglas de negocio, máximo nivel) queda protegido de Base de Datos, Controlador, Presentadores y Vistas.
 > - **Conclusión OCP:** particionar en componentes y ordenarlos en jerarquía que proteja lo de alto nivel. Ojo con dependencias transitivas (violan el "no dependas de lo que no usas": anticipo del ISP).
 >
+
 > [!example] 💡 License/Billing, Square y taxis Acme (LSP, cap. 9)
 >
 > - **Caso bueno:** `License.calcFee()` usada por `Billing` con `PersonalLicense` y `BusinessLicense` intercambiables: la app no depende de cuál subtipo recibe.
 > - **Square/Rectangle (violación canónica):** `Square` no es subtipo válido de `Rectangle` porque alto y ancho mutan juntos; `r.setW(5); r.setH(2); assert(area==10)` falla si `r` es un cuadrado. Defenderse con `if` en el cliente = prueba de que no son sustituibles.
 > - **Taxis Acme (LSP arquitectónico):** todas las compañías deben respetar el mismo REST (`destination`); Acme manda `dest` y el sistema se contamina con `if (uri.startsWith("acme.com"))` + tabla de configuración por URI. Moraleja: una violación de sustituibilidad ensucia la arquitectura con mecanismos extra.
 >
+
 > [!example] 💡 OPS/User1-3 y framework con base de datos (ISP, cap. 10)
 >
 > - **Caso base:** `User1` solo usa `op1` de `OPS`, pero en Java su código depende también de `op2`/`op3` → un cambio ajeno lo obliga a recompilar y redesplegar. Remedio: segregar en interfaces (`U1Ops`...).
 > - **Lenguajes dinámicos (Ruby, Python):** sin declaraciones `import`, no hay dependencia de código fuente que fuerce recompilación — por eso acoplan menos. Pero ISP sigue valiendo a nivel arquitectura.
 > - **Caso arquitectónico:** sistema S incluye framework F atado a base de datos D con funciones que nadie usa; un cambio o una falla en lo no usado tumba F y S. Lección: depender de algo con lastre innecesario trae problemas inesperados (puente con el Principio de Reutilización Común, cap. 13).
 >
+
 > [!example] 💡 String estable, 4 prácticas y la línea curva (DIP, cap. 11)
 >
 > - **Matiz clave:** no toda dependencia concreta es mala. `String` es concreta pero estable y controlada: se tolera. El enemigo es lo concreto **volátil** (lo que desarrollas y cambia siempre).
@@ -438,6 +446,7 @@ flowchart TD
 > - 1 principio por semana de práctica: SRP esta semana en tu proyecto.
 > - El *code review* pregunta "¿qué principio protege este cambio?".
 >
+
 > [!danger] ❌ Error 2: Sobreingeniería, interfaz para todo (viola **simplicidad/YAGNI**)
 >
 > **Síntomas:** una interfaz con una única implementación "por si acaso":
@@ -452,6 +461,7 @@ flowchart TD
 >
 > **Solución:** aplica el principio cuando hay **evidencia de variación** (ya cambió o cambiará seguro). Regla práctica: abstrae a la segunda variante, no a la primera.
 >
+
 > [!danger] ❌ Error 3: Interpretar SRP como "un método por clase" (viola **SRP real: razones de cambio**)
 >
 > **Síntomas:** cientos de clases diminutas donde seguir un flujo exige abrir 10 archivos:
@@ -466,6 +476,7 @@ flowchart TD
 >
 > **Solución:** SRP se mide por **razones de cambio**, no por número de métodos. Una clase con 10 métodos cohesivos que cambian juntos cumple SRP.
 >
+
 > [!danger] ❌ Error 4: Herencia solo para reutilizar código (viola **LSP**)
 >
 > **Síntomas:** la subclase hereda métodos que no tienen sentido para ella:
@@ -479,6 +490,7 @@ flowchart TD
 >
 > **Solución:** prefiere **composición** sobre herencia. Si no puedes decir "toda `B` se comporta como una `A` en todos los contextos", no heredes (LSP).
 >
+
 > [!danger] ❌ Error 5: DIP sin dueño de la abstracción (viola **DIP**)
 >
 > **Síntomas:** la interfaz vive en el paquete de la BD y el negocio sigue atado a infraestructura:
@@ -538,6 +550,7 @@ flowchart TD
 > > - **4.** Violación de ISP (la interfaz es demasiado grande) o de LSP (la subclase no cumple lo que prometía la base).
 > > - **5.** Viola DIP: depende de una clase concreta. Debe recibir una interfaz `Pago` por constructor.
 >
+
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica por qué `Cuadrado extends Rectangulo` viola LSP aunque "un cuadrado es un rectángulo" en geometría.
@@ -564,6 +577,7 @@ flowchart TD
 > > - **10b.** Síntoma 1: duplicación accidental. El cambio pedido por el CFO (contabilidad) corrompe silenciosamente los reportes de la COO (RRHH): código de actores distintos en proximidad, acoplados por algoritmo compartido.
 > > - **10c.** Porque `String` es estable: cambia rara vez y bajo control estricto, así que nadie teme sus cambios. Criterio: se tolera lo concreto **estable** (plataforma, SO); se evita lo concreto **volátil** (módulos en desarrollo activo con cambios frecuentes).
 >
+
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta por qué OCP depende de que se cumplan SRP, LSP y DIP.
@@ -611,12 +625,14 @@ flowchart TD
 > - [ ] Reconozco una violación típica de cada principio en un fragmento de código.
 > - [ ] Aplico el chequeo de 10 segundos a una clase dada.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > - [ ] Refactorizo código con `if/switch` hacia polimorfismo (OCP).
 > - [ ] Divido una interfaz grande por roles (ISP) y una clase con varios actores (SRP).
 > - [ ] Explico por qué `Cuadrado extends Rectangulo` viola LSP.
 > - [ ] Relaciono cada caso del libro (Employee, reporte financiero, Square, Acme, OPS, Factory) con su principio.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > - [ ] Diseño un módulo con DIP e inyección por constructor, probable con falsos.
 > - [ ] Explico cómo SRP, ISP, DIP y LSP habilitan OCP.

@@ -205,6 +205,7 @@ flowchart TD
 > - Pregunta "¿qué varía aquí?" antes de elegir (ver diagrama de decisión).
 > - Mezcla declarada: funcional adentro (lógica pura), OO afuera (estructura).
 >
+
 > [!danger] ❌ Error 2: Seguridad (y Logs) Regados por Todo el Código (viola **separación de concerns/AOP**)
 >
 > **Síntomas:** la misma guarda copiada en cada método:
@@ -221,6 +222,7 @@ flowchart TD
 >
 > **Solución:** muévelo a un aspecto con pointcut + advice; los módulos quedan con una sola responsabilidad.
 >
+
 > [!danger] ❌ Error 3: Reescribir lo que ya Existe como Componente (viola **reuso antes que construcción**)
 >
 > **Síntomas:** reinventar autenticación, paginación o reportes pudiendo integrar un COTS o servicio.
@@ -275,6 +277,7 @@ flowchart TD
 > > - **4.** Unidad independiente/desplegable accedida solo por interfaces. Tipos: servicios web (remotos), colecciones de objetos (.NET/JEE), stand-alone configurables.
 > > - **5.** Estructurado quita `goto` (Dijkstra 1968); OO quita punteros a función (Dahl/Nygaard 1966); funcional quita asignación (Church 1936).
 >
+
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica tangling vs scattering con un ejemplo propio de un proyecto universitario.
@@ -295,6 +298,7 @@ flowchart TD
 > > - **9.** Porque combina dos modelos mentales (qué vs cómo) sin frontera clara: se pierde legibilidad y cada parte asume garantías que la otra no da.
 > > - **10.** Inmutable: historial de commits (event sourcing real — nada se reescribe). Mutable: working directory y staging, protegidos por convenciones de ramas/PRs.
 >
+
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta con Martin por qué probablemente no veremos un cuarto paradigma "negativo" como los tres grandes.
@@ -337,11 +341,13 @@ flowchart TD
 > - [ ] Defino componente y nombro sus 3 tipos.
 > - [ ] Digo qué quita cada paradigma de Martin con autor y año.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > - [ ] Diferencio tangling de scattering con ejemplo propio.
 > - [ ] Defino join point, pointcut, advice y weaving con Account/credit().
 > - [ ] Aplico las 4 etapas de componentes a un caso de reuso.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > - [ ] Diseño la migración de un monolito acoplado a aspectos.
 > - [ ] Argumento monolito modular vs microservicios para un equipo chico.

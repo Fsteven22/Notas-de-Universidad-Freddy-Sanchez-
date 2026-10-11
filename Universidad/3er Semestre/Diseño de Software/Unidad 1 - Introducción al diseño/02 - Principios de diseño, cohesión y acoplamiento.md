@@ -74,6 +74,7 @@ graph TB
 >
 > **Test de 10 segundos:** describe tu clase en 1 frase sin usar "y". Si necesitas "y", divídela.
 >
+
 > [!example]- 💻 Código — Cohesión Funcional vs. Lógica
 >
 > ```java
@@ -99,6 +100,7 @@ graph TB
 >
 > Si cambia la lógica de validación de emails, en la versión cohesiva solo tocas `ValidadorEmail`. En `Utilidades`, ese cambio obliga a revisar una clase con responsabilidades que no tienen nada que ver entre sí.
 >
+
 > [!tip] 🎯 Caso límite: no todo necesita ser puramente funcional
 >
 > En la práctica, la cohesión **secuencial** y **comunicacional** suelen ser aceptables. El problema real empieza en **procedimental** hacia abajo, donde las partes agrupadas ya no comparten ni datos ni un flujo natural, solo "convivencia forzada".
@@ -118,6 +120,7 @@ graph TB
 > | **Común** | Comparten estado global mutable | `public static Config x` tocada por 6 clases |
 > | **Contenido** ❌ | Una modifica el interior de otra | Acceso directo a campos privados ajenos |
 >
+
 > [!example]- 💻 Código — Acoplamiento de Control vs. Datos
 >
 > ```java
@@ -137,6 +140,7 @@ graph TB
 > }
 > ```
 >
+
 > [!note] ✅ Datos — Acoplamiento ideal
 >
 > Solo parámetros simples (primitivos, strings, records inmutables). La función no conoce estructura ni ciclo de vida del dato.
@@ -145,6 +149,7 @@ graph TB
 > - **Regla:** si pasas un objeto, usa solo lo que necesitas (Ley de Demeter).
 > - **Anti-patrón:** pasar un `DTO` entero cuando solo necesitas un campo.
 >
+
 > [!note] 🟡 Sello (Stamp) — Acoplamiento medio
 >
 > Pasa una estructura completa pero usa solo una parte de ella.
@@ -153,6 +158,7 @@ graph TB
 > - **Mejora:** extrae el dato necesario antes de llamar, o usa un parámetro específico.
 > - **Señal de alerta:** si tu test debe construir un objeto complejo solo por un campo, es acoplamiento de sello.
 >
+
 > [!warning] 🎚️ Control — Acoplamiento a evitar
 >
 > Una función decide qué hace otra mediante banderas/booleanos.
@@ -161,6 +167,7 @@ graph TB
 > - **Solución:** polimorfismo (`ReportePDF` vs `ReporteHTML`) o patrón Strategy.
 > - **Test:** 3+ booleanos en una firma son 3 clases esperando nacer.
 >
+
 > [!warning] 🔌 Externo — Acoplamiento frágil
 >
 > Depende de algo fuera del sistema: formato de archivo, protocolo, variable de entorno hardcodeada.
@@ -168,6 +175,7 @@ graph TB
 > - **Ejemplo:** leer `APP_CONFIG` directamente desde `System.getenv()` en la lógica de negocio.
 > - **Solución:** aislar detrás de una interfaz (`ConfigProvider`) e inyectar la dependencia.
 >
+
 > [!danger] 🌐 Común — Acoplamiento peligroso
 >
 > Comparten estado global mutable.
@@ -176,6 +184,7 @@ graph TB
 > - **Solución:** inyección de dependencias (constructor/setter) + inmutabilidad.
 > - **Regla de oro:** nada de `static` mutable en el dominio.
 >
+
 > [!danger] 🚫 Contenido — Acoplamiento prohibido
 >
 > Una clase accede directamente a campos privados de otra (reflexión, `friend` en C++, paquetes abiertos en Java).
@@ -196,6 +205,7 @@ graph TB
 >
 > Si para usar tu clase debo leer su código fuente, tu abstracción falló.
 >
+
 > [!example]- 💻 Código — Ocultamiento en una Pila (Stack)
 >
 > ```java
@@ -210,6 +220,7 @@ graph TB
 >
 > Quien usa `Pila<T>` solo conoce `push`, `pop` y `estaVacia` — no sabe si por dentro usa un `ArrayList`, un arreglo nativo o una lista enlazada. Si cambias la implementación interna, ningún código externo se entera ni se rompe.
 >
+
 > [!note] 📋 Cómo se relacionan los tres conceptos
 >
 > | Concepto | Qué resuelve | Mecanismo |
@@ -253,7 +264,7 @@ flowchart TD
 > ```
 >
 > **Solución:** agrupa por misión real (`ValidadorEmail`, `FormateadorFecha`...); prohíbe crear métodos "generales" — toda función nueva nace en una clase con misión clara.
->
+
 > [!danger] ❌ Error 2: Getters y Setters para Todo (viola **ocultamiento**)
 >
 > **Síntomas:** la clase expone su estado interno completo y la lógica vive fuera:
@@ -270,6 +281,7 @@ flowchart TD
 >
 > **Solución:** expón comportamiento (`retirar(monto)` con validación adentro), no acceso crudo. Si el código que llama a tus getters hace lógica que debería vivir dentro de la clase, muévela adentro.
 >
+
 > [!danger] ❌ Error 3: La "Clase Dios" (viola **cohesión + acoplamiento a la vez**)
 >
 > **Síntomas:** una sola clase conoce y controla casi todo:
@@ -324,6 +336,7 @@ flowchart TD
 > > - **4.** Acoplamiento de contenido (el prohibido).
 > > - **5.** Respuesta libre — una función que solo recibe parámetros simples, sin estructuras completas ni banderas.
 >
+
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Refactoriza (en prosa) una clase `GestorPedidos` que valida, calcula descuento, genera factura y notifica — divídela por cohesión funcional.
@@ -344,6 +357,7 @@ flowchart TD
 > > - **9.** Respuesta libre — ej. una clase `Fecha` que expone `siguienteDia()` sin revelar si guarda día/mes/año o un timestamp.
 > > - **10.** Porque agrupar por pasos mezcla código que cambia por razones distintas; agrupar por "qué cambiará" aísla cada futuro cambio en un solo módulo.
 >
+
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta por qué el Principio de Responsabilidad Única (SRP) es una reformulación de "alta cohesión funcional".
@@ -385,11 +399,13 @@ flowchart TD
 > - [ ] Ubico un módulo dado en la escala de cohesión.
 > - [ ] Identifico acoplamiento de datos vs. de control en un ejemplo de código.
 >
+
 > [!note] 🎯 Nivel Intermedio
 > - [ ] Aplico el "test de 10 segundos" para diagnosticar baja cohesión.
 > - [ ] Explico por qué getters/setters para todo rompe el ocultamiento de información.
 > - [ ] Refactorizo (en prosa) una clase con múltiples responsabilidades.
 >
+
 > [!note] 🎯 Nivel Avanzado
 > - [ ] Relaciono cohesión/acoplamiento con SRP y otros principios SOLID.
 > - [ ] Diseño una interfaz que aísle correctamente una dependencia externa.
