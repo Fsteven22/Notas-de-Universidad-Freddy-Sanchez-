@@ -261,12 +261,11 @@ dg-publish: true
 > - When did this happen?
 > - Why was it important to you?
 > 
-> ```
-> Example opening:
+> > Example opening:
 > "Two years ago, I decided to push myself to learn English. 
 > If someone had told me how challenging it would be, I might 
 > have been scared, but I'm glad I didn't know..."
-> ```
+> 
 > 
 > **Paragraph 2: The Challenge (80-100 words)**
 > 
@@ -275,14 +274,13 @@ dg-publish: true
 > - What kept you going?
 > - Use phrasal verbs here!
 > 
-> ```
-> Key phrases to include:
+> > Key phrases to include:
 > - "I was working on..."
 > - "I struggled with..."
 > - "Many times I wanted to give up, but..."
 > - "I kept going because..."
 > - "If I had given up..."
-> ```
+> 
 > 
 > **Paragraph 3: The Result & Reflection (80-100 words)**
 > 
@@ -290,13 +288,12 @@ dg-publish: true
 > - What did you learn?
 > - What advice would you give?
 > 
-> ```
-> Key phrases:
+> > Key phrases:
 > - "Looking back, if I had..."
 > - "I wish I had known..."
 > - "If I were you, I would..."
 > - "Now I understand that..."
-> ```
+> 
 > 
 > ---
 > 
@@ -327,42 +324,37 @@ dg-publish: true
 > 
 > **1. State your main goal:**
 > 
-> ```
-> My main goal right now is to _______________________________
+> > My main goal right now is to _______________________________
 > This is important to me because _____________________________
-> ```
+> 
 > 
 > **2. What you're currently doing:**
 > 
-> ```
-> I'm working on _________________________________________
+> > I'm working on _________________________________________
 > I'm trying to __________________________________________
 > I'm pushing myself to ___________________________________
 > Every day, I ___________________________________________
-> ```
+> 
 > 
 > **3. Challenges and wishes:**
 > 
-> ```
-> The biggest challenge is _________________________________
+> > The biggest challenge is _________________________________
 > Sometimes I wish I _____________________________________
 > If I had more __________, I would _______________________
-> ```
+> 
 > 
 > **4. What keeps you going:**
 > 
-> ```
-> I keep going because ____________________________________
+> > I keep going because ____________________________________
 > If I gave up now, I would ________________________________
 > I'm determined to ______________________________________
-> ```
+> 
 > 
 > **5. Advice to yourself:**
 > 
-> ```
-> If I were giving advice to myself, I would say: "______________
+> > If I were giving advice to myself, I would say: "______________
 > _______________________________________________________"
-> ```
+> 
 > 
 > ---
 > 
@@ -393,8 +385,7 @@ dg-publish: true
 > 
 > **Letter structure:**
 > 
-> ```
-> Dear [Friend's name],
+> > Dear [Friend's name],
 > 
 > [Opening: Acknowledge their feelings]
 > I heard that you're thinking about giving up on your business idea. 
@@ -415,7 +406,7 @@ dg-publish: true
 > [Sign off]
 > You've got this!
 > [Your name]
-> ```
+> 
 > 
 > ---
 > 
@@ -448,43 +439,39 @@ dg-publish: true
 > 
 > **Part 1: Introduction (30 seconds)**
 > 
-> ```
-> "Hello, today I want to talk about my personal goals.
+> > "Hello, today I want to talk about my personal goals.
 > Right now, I'm working on ___________...
 > This is important to me because ___________..."
-> ```
+> 
 > 
 > **Part 2: The Goal & Progress (1 minute)**
 > 
-> ```
-> "My main goal is to ___________...
+> > "My main goal is to ___________...
 > I'm trying to ___________ every day.
 > So far, I'm making progress / I'm struggling with ___________...
 > 
 > If I had more ___________, I would ___________...
 > I wish I were more ___________, but I'm working on it."
-> ```
+> 
 > 
 > **Part 3: Challenges & Determination (1 minute)**
 > 
-> ```
-> "The biggest challenge is ___________...
+> > "The biggest challenge is ___________...
 > Sometimes I want to give up, especially when ___________...
 > But I keep going because ___________...
 > 
 > If I gave up now, I would ___________...
 > I'm determined to succeed, and nothing will stop me."
-> ```
+> 
 > 
 > **Part 4: Advice & Conclusion (30 seconds)**
 > 
-> ```
-> "If I were giving advice to someone with similar goals, 
+> > "If I were giving advice to someone with similar goals, 
 > I would say: ___________...
 > 
 > In conclusion, I believe that if you don't give up and 
 > you keep working on your goals, you will eventually succeed."
-> ```
+> 
 > 
 > ---
 > 
@@ -513,22 +500,20 @@ dg-publish: true
 > 
 > **Student A (Friend - the one who wants to quit):**
 > 
-> ```
-> "I'm thinking about giving up on learning to code. 
+> > "I'm thinking about giving up on learning to code. 
 > It's too difficult, and I keep making mistakes. 
 > I don't think I'm good enough..."
-> ```
+> 
 > 
 > **Student B (You - the encourager):**
 > 
-> ```
-> [Use functional language from Unit 11]
+> > [Use functional language from Unit 11]
 > - Don't give up!
 > - If I were you, I would...
 > - Keep going because...
 > - You're making progress...
 > - I believe in you...
-> ```
+> 
 > 
 > ---
 > 
@@ -540,14 +525,13 @@ dg-publish: true
 > 
 > **Your answer should include:**
 > 
-> ```
-> ✅ "I was working on ___________ when I faced ___________...
+> > ✅ "I was working on ___________ when I faced ___________...
 > ✅ At first, I struggled with ___________, but I didn't give up.
 > ✅ I kept going by ___________...
 > ✅ If I had given up, I would have ___________...
 > ✅ In the end, I successfully ___________...
 > ✅ This experience taught me that ___________..."
-> ```
+> 
 > 
 > ---
 > 
@@ -559,13 +543,12 @@ dg-publish: true
 > 
 > **Your response using Unit 11 language:**
 > 
-> ```
-> ✅ "If I were you, I would consider..."
+> > ✅ "If I were you, I would consider..."
 > ✅ "What are the risks and rewards?"
 > ✅ "If you took this opportunity, you would/wouldn't..."
 > ✅ "Have you thought about...?"
 > ✅ "If you don't take this chance, you might regret..."
-> ```
+> 
 > 
 > ---
 > 
@@ -585,31 +568,28 @@ dg-publish: true
 > 
 > 1. **Have you ever wanted to give up on something but didn't? What happened?**
 >     
->     ```
->     Answer template:
+>     >     Answer template:
 >     "Yes, when I was ___________, I wanted to give up because ___________...
 >     But I kept going because ___________...
 >     If I had given up, I would have ___________...
 >     Now I'm glad I didn't quit because ___________..."
->     ```
+>     
 >     
 > 2. **What goal are you currently working on? What challenges are you facing?**
 >     
->     ```
->     "Right now, I'm working on ___________...
+>     >     "Right now, I'm working on ___________...
 >     The main challenge is ___________...
 >     I'm trying to ___________ every day...
 >     Sometimes I wish I ___________, but I keep pushing myself..."
->     ```
+>     
 >     
 > 3. **Who has encouraged you when you wanted to give up? What did they say?**
 >     
->     ```
->     "___________ encouraged me when I ___________...
+>     >     "___________ encouraged me when I ___________...
 >     They said, '___________...'
 >     If they hadn't encouraged me, I would have ___________...
 >     Their support helped me to ___________..."
->     ```
+>     
 >     
 > 
 > ---
@@ -618,31 +598,28 @@ dg-publish: true
 > 
 > 4. **If you had no fear of failure, what would you try?**
 >     
->     ```
->     "If I had no fear of failure, I would ___________...
+>     >     "If I had no fear of failure, I would ___________...
 >     I would set up ___________...
 >     I would take on the challenge of ___________...
 >     If I succeeded, I would ___________..."
->     ```
+>     
 >     
 > 5. **If you could give advice to your younger self, what would you say?**
 >     
->     ```
->     "If I could talk to my younger self, I would say:
+>     >     "If I could talk to my younger self, I would say:
 >     'Don't give up on ___________...
 >     Keep working on ___________...
 >     If I were you, I would ___________...
 >     Don't be afraid to ___________...'"
->     ```
+>     
 >     
 > 6. **What would you do differently if you could start your current goal over?**
 >     
->     ```
->     "If I could start over, I would ___________...
+>     >     "If I could start over, I would ___________...
 >     I wouldn't ___________ like I did...
 >     I wish I had ___________ from the beginning...
 >     But I've learned that ___________..."
->     ```
+>     
 >     
 > 
 > ---
@@ -651,31 +628,28 @@ dg-publish: true
 > 
 > 7. **What advice would you give someone who wants to start their own business?**
 >     
->     ```
->     "If I were you, I would ___________...
+>     >     "If I were you, I would ___________...
 >     Make sure you ___________ before you ___________...
 >     Don't give up when ___________...
 >     Keep working on ___________ even when ___________...
 >     If you're determined and you don't give up, you will ___________..."
->     ```
+>     
 >     
 > 8. **Do you think it's better to take risks or play it safe? Why?**
 >     
->     ```
->     "I think it's better to ___________ because ___________...
+>     >     "I think it's better to ___________ because ___________...
 >     If you always play it safe, you will ___________...
 >     If you take risks, you might ___________, but ___________...
 >     In my opinion, ___________..."
->     ```
+>     
 >     
 > 9. **What's the most important quality for achieving goals?**
 >     
->     ```
->     "I believe the most important quality is ___________...
+>     >     "I believe the most important quality is ___________...
 >     If you don't have ___________, you will ___________...
 >     For example, ___________...
 >     Even if you ___________, you need to keep ___________..."
->     ```
+>     
 >     
 > 
 > ---
@@ -719,14 +693,13 @@ dg-publish: true
 > 
 > **Take notes on:**
 > 
-> ```
-> 1. What was their goal? ___________
+> > 1. What was their goal? ___________
 > 2. What challenges did they face? ___________
 > 3. Did they want to give up? When? ___________
 > 4. What kept them going? ___________
 > 5. What was the result? ___________
 > 6. What can you learn from their story? ___________
-> ```
+> 
 > 
 > ---
 > 
@@ -736,17 +709,15 @@ dg-publish: true
 > 
 > **Section 1: Your Goal**
 > 
-> ```
-> - What is your goal?
+> > - What is your goal?
 > - Why is it important?
 > - When do you want to achieve it?
 > - What inspired you (maybe the story you read)?
-> ```
+> 
 > 
 > **Section 2: Your Action Plan**
 > 
-> ```
-> - What are you currently working on?
+> > - What are you currently working on?
 > - What specific steps will you take?
 > - What resources do you need?
 > - How will you measure progress?
@@ -756,12 +727,11 @@ dg-publish: true
 > ✅ I will work on... every day/week
 > ✅ I need to find out about...
 > ✅ If I face challenges, I will...
-> ```
+> 
 > 
 > **Section 3: Anticipating Challenges**
 > 
-> ```
-> - What challenges do you expect?
+> > - What challenges do you expect?
 > - What might make you want to give up?
 > - How will you stay motivated?
 > 
@@ -769,18 +739,17 @@ dg-publish: true
 > ✅ If I struggle with..., I will...
 > ✅ If I feel like giving up, I will remember...
 > ✅ If I had unlimited resources, I would...
-> ```
+> 
 > 
 > **Section 4: Commitment Statement**
 > 
-> ```
-> Write a powerful statement about your determination:
+> > Write a powerful statement about your determination:
 > 
 > ✅ I'm determined to...
 > ✅ I will never give up on... because...
 > ✅ Even if..., I will keep going
 > ✅ If I succeed, I will...
-> ```
+> 
 > 
 > ---
 > 
@@ -1002,14 +971,13 @@ mindmap
 > 
 > **Your Unit 11 action plan:**
 > 
-> ```
-> This week, I will:
+> > This week, I will:
 > 1. _________________________________________ (specific goal)
 > 2. Use these phrasal verbs: _________________ (choose 3)
 > 3. Practice speaking about: _________________ (topic)
 > 4. Write in my journal using: _______________ (grammar structure)
 > 5. Encourage someone by: ___________________ (specific action)
-> ```
+> 
 > 
 > **Remember:**
 > 
@@ -1073,5 +1041,12 @@ mindmap
 > _You've got this!_ ⭐
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[03 - Functional Language & Pronunciation]]
 
 **Tags:** #english #reading #writing #speaking #unit11 #pushing-yourself #integrated-skills #practice #real-use #mastery #goals #success #motivation

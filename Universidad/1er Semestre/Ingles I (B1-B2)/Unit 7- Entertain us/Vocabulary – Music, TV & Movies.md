@@ -16,8 +16,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈklæsɪkəl/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Orchestras, symphonies, operas
 > • Composers: Mozart, Beethoven, Bach
 > • Instruments: violin, piano, cello, flute
@@ -33,7 +32,7 @@ dg-publish: true
 > • orchestra = orquesta
 > • composer = compositor
 > • concert hall = sala de conciertos
-> ```
+> 
 
 ### 🎤 Hip Hop
 
@@ -45,8 +44,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /hɪp hɒp/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Rapping/MCing
 > • DJing, beatboxing
 > • Strong bass and rhythm
@@ -63,7 +61,7 @@ dg-publish: true
 > • beat = ritmo base
 > • freestyle = improvisación
 > • DJ = disc jockey
-> ```
+> 
 
 ### 🤠 Country
 
@@ -75,8 +73,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈkʌntri/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Guitars, banjos, fiddles
 > • Stories about life, love, heartbreak
 > • Southern/Western American culture
@@ -92,7 +89,7 @@ dg-publish: true
 > • honky-tonk = estilo de country animado
 > • Nashville = capital of country music
 > • guitar = guitarra
-> ```
+> 
 
 ### 🎷 Jazz
 
@@ -104,8 +101,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /dʒæz/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Improvisation
 > • Saxophone, trumpet, piano
 > • Originated in African-American communities
@@ -122,7 +118,7 @@ dg-publish: true
 > • swing = estilo jazz con ritmo bailable
 > • blues = género musical relacionado
 > • jazz band = banda de jazz
-> ```
+> 
 
 ### 🎧 EDM (Electronic Dance Music)
 
@@ -134,8 +130,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /iː diː em/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Electronic synthesizers
 > • Strong beat, repetitive
 > • Club/festival music
@@ -155,7 +150,7 @@ dg-publish: true
 > • drop = momento culminante en EDM
 > • beat = ritmo
 > • remix = remezcla
-> ```
+> 
 
 ### 🎤 Pop
 
@@ -167,8 +162,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /pɒp/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Catchy, easy to remember
 > • Radio-friendly
 > • Wide audience appeal
@@ -185,7 +179,7 @@ dg-publish: true
 > • chart-topper = número uno en listas
 > • mainstream = corriente principal
 > • catchy = pegajoso/pegadizo
-> ```
+> 
 
 ### 🎸 Folk
 
@@ -197,8 +191,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /fəʊk/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Acoustic instruments
 > • Storytelling lyrics
 > • Cultural/traditional roots
@@ -214,7 +207,7 @@ dg-publish: true
 > • ballad = balada
 > • traditional = tradicional
 > • singer-songwriter = cantautor
-> ```
+> 
 
 ### 🌴 Reggae
 
@@ -226,8 +219,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈreɡeɪ/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Originated in Jamaica
 > • Relaxed tempo, offbeat rhythm
 > • Often features social/political messages
@@ -243,7 +235,7 @@ dg-publish: true
 > • dreadlocks = rastas
 > • ska = género musical relacionado
 > • riddim = ritmo reggae
-> ```
+> 
 
 ### 🤘 Heavy Metal
 
@@ -255,8 +247,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈhevi ˈmetl/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Loud, distorted guitars
 > • Fast tempo, aggressive
 > • Powerful drums
@@ -272,7 +263,7 @@ dg-publish: true
 > • mosh pit = área de baile agresivo
 > • guitar solo = solo de guitarra
 > • power chord = acorde de poder
-> ```
+> 
 
 ### 🎸 Rock
 
@@ -284,8 +275,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /rɒk/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Electric guitars
 > • Strong beat
 > • Originated in 1950s
@@ -302,14 +292,13 @@ dg-publish: true
 > • rock concert = concierto de rock
 > • guitar riff = riff de guitarra
 > • rock and roll = rock and roll
-> ```
+> 
 
 ### 🎵 Other Common Genres
 
 > [!note] Additional Music Styles
 > 
-> ```
-> R&B (Rhythm and Blues):
+> > R&B (Rhythm and Blues):
 > • Soul, smooth vocals
 > • "She sings R&B."
 > 
@@ -333,7 +322,7 @@ dg-publish: true
 > Soul:
 > • Emotional, gospel-influenced
 > • "Soul music touches the heart."
-> ```
+> 
 
 ---
 
@@ -349,8 +338,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /səʊp ˈɒpərə/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Daily/weekly episodes
 > • Continuous storylines
 > • Dramatic, emotional
@@ -362,7 +350,7 @@ dg-publish: true
 > • "I'm addicted to this soap opera!"
 > 
 > Origin: Called "soap opera" because soap companies sponsored them
-> ```
+> 
 
 ### 😂 Comedy / Sitcom
 
@@ -374,8 +362,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈkɒmədi/ / /ˈsɪtkɒm/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Funny situations
 > • Usually 20-30 minutes
 > • Laugh track (sometimes)
@@ -390,7 +377,7 @@ dg-publish: true
 > • laugh track = risa grabada
 > • punchline = remate de chiste
 > • stand-up comedy = comedia de pie
-> ```
+> 
 
 ### 🎤 Talk Show
 
@@ -402,8 +389,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /tɔːk ʃəʊ/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Host + guests
 > • Interviews, discussions
 > • Often includes games/performances
@@ -415,7 +401,7 @@ dg-publish: true
 > • "Talk shows often feature celebrities."
 > 
 > Famous examples: The Tonight Show, Ellen, Oprah
-> ```
+> 
 
 ### 🎬 Reality Show
 
@@ -427,8 +413,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /riˈæləti ʃəʊ/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • "Real" people (not actors)
 > • Unscripted situations
 > • Often competitive
@@ -440,7 +425,7 @@ dg-publish: true
 > • "Survivor is a popular reality show."
 > 
 > Types: Competition, dating, lifestyle, talent
-> ```
+> 
 
 ### 🎮 Game Show
 
@@ -452,8 +437,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ɡeɪm ʃəʊ/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Contestants compete
 > • Questions, puzzles, challenges
 > • Prizes or money
@@ -465,7 +449,7 @@ dg-publish: true
 > • "Game shows are fun to watch."
 > 
 > Famous examples: Jeopardy!, Wheel of Fortune, Who Wants to Be a Millionaire?
-> ```
+> 
 
 ### 🎭 Drama
 
@@ -477,8 +461,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈdrɑːmə/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Serious tone
 > • Complex characters
 > • Emotional situations
@@ -490,7 +473,7 @@ dg-publish: true
 > • "This drama series is award-winning."
 > 
 > Can be: crime drama, medical drama, legal drama, family drama
-> ```
+> 
 
 ### 📚 Documentary
 
@@ -502,8 +485,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˌdɒkjuˈmentri/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Educational
 > • Real footage
 > • Narration and interviews
@@ -515,7 +497,7 @@ dg-publish: true
 > • "Netflix has great documentaries."
 > 
 > Topics: nature, history, science, crime, biography
-> ```
+> 
 
 ---
 
@@ -531,8 +513,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈænɪmeɪtɪd ˈmuːvi/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Drawn or CGI characters
 > • Often for children (but not always)
 > • Voice actors
@@ -545,7 +526,7 @@ dg-publish: true
 > 
 > Types: 2D animation, 3D/CGI, stop-motion
 > Studios: Disney, Pixar, DreamWorks
-> ```
+> 
 
 ### 😱 Horror
 
@@ -557,8 +538,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈhɒrər/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Scary, frightening
 > • Suspenseful
 > • Monsters, ghosts, killers
@@ -570,7 +550,7 @@ dg-publish: true
 > • "What's your favorite horror movie?"
 > 
 > Subgenres: slasher, supernatural, psychological horror
-> ```
+> 
 
 ### 😂 Comedy
 
@@ -582,8 +562,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈkɒmədi/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Humorous situations
 > • Funny dialogue
 > • Light-hearted
@@ -595,7 +574,7 @@ dg-publish: true
 > • "Comedies are great after a hard day."
 > 
 > Types: slapstick, dark comedy, parody
-> ```
+> 
 
 ### 🎵 Musical
 
@@ -607,8 +586,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈmjuːzɪkəl/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Songs integrated into story
 > • Dance numbers
 > • Often theatrical
@@ -620,7 +598,7 @@ dg-publish: true
 > • "Musicals aren't for everyone."
 > 
 > Famous examples: The Sound of Music, Les Misérables, La La Land
-> ```
+> 
 
 ### 😨 Thriller
 
@@ -632,8 +610,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈθrɪlər/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Suspenseful
 > • Plot twists
 > • Tension building
@@ -645,7 +622,7 @@ dg-publish: true
 > • "Thrillers are exciting and unpredictable."
 > 
 > Types: psychological thriller, crime thriller, spy thriller
-> ```
+> 
 
 ### 💕 Romantic Comedy (Rom-Com)
 
@@ -657,8 +634,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /rəʊˈmæntɪk ˈkɒmədi/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Love story + comedy
 > • Happy ending (usually)
 > • Light, feel-good
@@ -671,7 +647,7 @@ dg-publish: true
 > 
 > Often shortened to: "rom-com"
 > Classic formula: boy meets girl, obstacles, happy ending
-> ```
+> 
 
 ### 🚀 Science Fiction (Sci-Fi)
 
@@ -683,8 +659,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈsaɪəns ˈfɪkʃən/
 > 
-> ```
-> Characteristics:
+> > Characteristics:
 > • Futuristic settings
 > • Advanced technology
 > • Space, aliens, robots
@@ -697,14 +672,13 @@ dg-publish: true
 > 
 > Often shortened to: "sci-fi"
 > Themes: space travel, AI, time travel, dystopia
-> ```
+> 
 
 ### 🎬 Other Common Movie Genres
 
 > [!note] Additional Film Types
 > 
-> ```
-> Action:
+> > Action:
 > • Exciting, fast-paced
 > • Fighting, chases, explosions
 > • "Action movies are full of excitement."
@@ -736,7 +710,7 @@ dg-publish: true
 > • Set in the past
 > • Based on historical events
 > • "Historical films are educational."
-> ```
+> 
 
 ---
 
@@ -746,8 +720,7 @@ dg-publish: true
 
 > [!example] Common Phrases
 > 
-> ```
-> Preferences:
+> > Preferences:
 > • "What kind of music do you like?"
 > • "I'm into hip hop and R&B."
 > • "I can't stand country music."
@@ -767,14 +740,13 @@ dg-publish: true
 > • "Turn up the music!"
 > • "This song is on repeat."
 > • "Have you heard their new album?"
-> ```
+> 
 
 ### Talking About TV & Movies
 
 > [!example] Common Phrases
 > 
-> ```
-> Asking about preferences:
+> > Asking about preferences:
 > • "What kind of movies do you like?"
 > • "Have you seen any good shows lately?"
 > • "Are you watching anything on Netflix?"
@@ -794,7 +766,7 @@ dg-publish: true
 > • "No spoilers, please!"
 > • "I've watched it three times."
 > • "It's my guilty pleasure."
-> ```
+> 
 
 ---
 
@@ -804,8 +776,7 @@ dg-publish: true
 > 
 > ### Exercise 1: Match the Genre
 > 
-> ```
-> Match the description to the genre:
+> > Match the description to the genre:
 > 
 > 1. Features singing and dancing          a) Horror
 > 2. Makes you laugh                       b) Documentary
@@ -814,12 +785,11 @@ dg-publish: true
 > 5. Set in the future with technology    e) Science Fiction
 > 
 > Answers: 1-c, 2-d, 3-b, 4-a, 5-e
-> ```
+> 
 > 
 > ### Exercise 2: Complete the Sentences
 > 
-> ```
-> 6. I love __________ music - the guitar solos are amazing! (rock/classical)
+> > 6. I love __________ music - the guitar solos are amazing! (rock/classical)
 > 7. __________ shows feature real people in unscripted situations.
 > 8. __________ movies are designed to scare you.
 > 9. I'm watching a __________ about World War II. (documentary)
@@ -830,10 +800,17 @@ dg-publish: true
 > 
 > Answers: 1-rock, 2-Reality, 3-Horror, 4-documentary, 
 > 5-comedy, 6-Reggae, 7-soap, 8-Romantic comedies/Rom-coms
-> ```
+> 
 > 
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[Grammar – Used to - Comparisons (not) as...as]]
 
 **Tags:** #vocabulary #music #tv-shows #movies #genres #entertainment #media #preferences #pop-culture
 

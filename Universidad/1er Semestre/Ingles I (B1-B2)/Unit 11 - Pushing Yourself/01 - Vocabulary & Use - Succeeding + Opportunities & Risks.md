@@ -118,53 +118,48 @@ graph TD
 > 
 > **Succeed/Success:**
 > 
-> ```
-> ✅ I want to succeed in life
+> > ✅ I want to succeed in life
 > ✅ She succeeded in getting the job
 > ✅ Success doesn't come easily
 > ✅ The key to success is hard work
 > ✅ They're working towards success
-> ```
+> 
 > 
 > **Achieve/Achievement:**
 > 
-> ```
-> ✅ I want to achieve my goals
+> > ✅ I want to achieve my goals
 > ✅ She achieved great results
 > ✅ That's a huge achievement
 > ✅ I'm proud of my achievements
 > ✅ We can achieve anything together
-> ```
+> 
 > 
 > **Improve/Improvement:**
 > 
-> ```
-> ✅ I'm trying to improve my English
+> > ✅ I'm trying to improve my English
 > ✅ There's room for improvement
 > ✅ I've improved a lot this year
 > ✅ Keep improving every day
 > ✅ Improvement takes time
-> ```
+> 
 > 
 > **Overcome/Challenge:**
 > 
-> ```
-> ✅ We need to overcome this challenge
+> > ✅ We need to overcome this challenge
 > ✅ She overcame many obstacles
 > ✅ This is a big challenge for me
 > ✅ I love a good challenge
 > ✅ Challenges make us stronger
-> ```
+> 
 > 
 > **Effort/Discipline:**
 > 
-> ```
-> ✅ It requires a lot of effort
+> > ✅ It requires a lot of effort
 > ✅ I'm putting in the effort
 > ✅ You need discipline to succeed
 > ✅ Discipline yourself every day
 > ✅ Success = effort + discipline
-> ```
+> 
 > 
 > **Collocations importantes:**
 > 
@@ -239,64 +234,58 @@ graph TD
 > 
 > **Talking about advantages:**
 > 
-> ```
-> ✅ The main advantage is...
+> > ✅ The main advantage is...
 > ✅ One advantage of this is...
 > ✅ The advantages outweigh the disadvantages
 > ✅ A big advantage is that...
 > ✅ This has several advantages
-> ```
+> 
 > 
 > **Talking about disadvantages:**
 > 
-> ```
-> ✅ The main disadvantage is...
+> > ✅ The main disadvantage is...
 > ✅ One disadvantage is that...
 > ✅ There are some disadvantages to consider
 > ✅ A major disadvantage is...
 > ✅ We need to consider the disadvantages
-> ```
+> 
 > 
 > **Talking about risks:**
 > 
-> ```
-> ✅ There's a risk that...
+> > ✅ There's a risk that...
 > ✅ It's worth the risk
 > ✅ I'm willing to take the risk
 > ✅ The risks are too high
 > ✅ We need to minimize the risks
 > ✅ Taking risks is part of success
-> ```
+> 
 > 
 > **Talking about rewards:**
 > 
-> ```
-> ✅ The reward is worth it
+> > ✅ The reward is worth it
 > ✅ The potential rewards are huge
 > ✅ Risk and reward go together
 > ✅ What's the reward for doing this?
 > ✅ The rewards outweigh the risks
-> ```
+> 
 > 
 > **Talking about goals:**
 > 
-> ```
-> ✅ My goal is to...
+> > ✅ My goal is to...
 > ✅ I'm working towards my goal
 > ✅ I've set a goal to...
 > ✅ This will help me reach my goal
 > ✅ I'm determined to achieve my goal
-> ```
+> 
 > 
 > **Talking about options:**
 > 
-> ```
-> ✅ What are my options?
+> > ✅ What are my options?
 > ✅ We have several options
 > ✅ I'm considering my options
 > ✅ That's not the only option
 > ✅ I need to explore all options
-> ```
+> 
 > 
 > **Estructura de evaluación completa:**
 > 
@@ -382,47 +371,43 @@ graph TD
 > 
 > **2. Success Collocations**
 > 
-> ```
-> ✅ achieve success → lograr el éxito
+> > ✅ achieve success → lograr el éxito
 > ✅ road to success → camino al éxito
 > ✅ key to success → clave del éxito
 > ✅ guarantee success → garantizar el éxito
 > ✅ taste success → probar el éxito
 > ✅ measure success → medir el éxito
-> ```
+> 
 > 
 > **3. Risk Collocations**
 > 
-> ```
-> ✅ take a risk → tomar un riesgo
+> > ✅ take a risk → tomar un riesgo
 > ✅ run a risk → correr un riesgo
 > ✅ minimize risks → minimizar riesgos
 > ✅ assess the risk → evaluar el riesgo
 > ✅ high risk → alto riesgo
 > ✅ calculated risk → riesgo calculado
-> ```
+> 
 > 
 > **4. Effort Collocations**
 > 
-> ```
-> ✅ make an effort → hacer un esfuerzo
+> > ✅ make an effort → hacer un esfuerzo
 > ✅ put in effort → poner esfuerzo
 > ✅ require effort → requerir esfuerzo
 > ✅ worth the effort → vale la pena el esfuerzo
 > ✅ extra effort → esfuerzo adicional
 > ✅ great effort → gran esfuerzo
-> ```
+> 
 > 
 > **5. Challenge Collocations**
 > 
-> ```
-> ✅ face a challenge → enfrentar un desafío
+> > ✅ face a challenge → enfrentar un desafío
 > ✅ meet a challenge → cumplir un desafío
 > ✅ rise to the challenge → estar a la altura del desafío
 > ✅ accept a challenge → aceptar un desafío
 > ✅ big challenge → gran desafío
 > ✅ overcome a challenge → superar un desafío
-> ```
+> 
 > 
 > **Patrones de uso completos:**
 > 
@@ -445,8 +430,7 @@ graph TD
 > 
 > **Scenario 1: Job Interview**
 > 
-> ```
-> Interviewer: What are your career goals?
+> > Interviewer: What are your career goals?
 > 
 > Candidate: My main goal is to develop my skills in project 
 > management. I'm very motivated and determined to succeed 
@@ -454,12 +438,11 @@ graph TD
 > but I'm willing to put in the work. I've already achieved 
 > some success in my previous role, where I overcame several 
 > challenges and improved team efficiency by 30%.
-> ```
+> 
 > 
 > **Scenario 2: Personal Development Discussion**
 > 
-> ```
-> A: I'm thinking about starting my own business.
+> > A: I'm thinking about starting my own business.
 > 
 > B: That's ambitious! Have you considered all the risks?
 > 
@@ -473,24 +456,22 @@ graph TD
 > A: My goal is to be my own boss within two years. I know 
 > I need discipline and determination, but I'm ready for 
 > the challenge.
-> ```
+> 
 > 
 > **Scenario 3: Motivational Speech**
 > 
-> ```
-> "Success doesn't come without effort. You need to set clear 
+> > "Success doesn't come without effort. You need to set clear 
 > goals and work towards them every day. Don't be afraid to 
 > fail – failure is part of learning. Every challenge you 
 > overcome makes you stronger. Be persistent, stay motivated, 
 > and never give up on your dreams. Take calculated risks, 
 > evaluate your options carefully, and always keep improving. 
 > Remember: the reward is worth the effort!"
-> ```
+> 
 > 
 > **Scenario 4: Decision-Making Process**
 > 
-> ```
-> Situation: Should I study abroad?
+> > Situation: Should I study abroad?
 > 
 > Advantages:
 > - Gain international experience
@@ -515,18 +496,17 @@ graph TD
 > Decision: I've decided to take the risk because the potential 
 > rewards outweigh the disadvantages. It's a big challenge, but 
 > I'm determined to succeed.
-> ```
+> 
 > 
 > **Frases motivacionales comunes:**
 > 
-> ```
-> ✅ "No pain, no gain" (effort → success)
+> > ✅ "No pain, no gain" (effort → success)
 > ✅ "Where there's a will, there's a way" (determination)
 > ✅ "Failure is the stepping stone to success" (learning)
 > ✅ "Success is a journey, not a destination" (progress)
 > ✅ "The only way to do great work is to love what you do" (motivation)
 > ✅ "Don't watch the clock; do what it does. Keep going" (persistence)
-> ```
+> 
 
 ---
 
@@ -536,15 +516,14 @@ graph TD
 > 
 > **Exercise 1: Complete with the correct word**
 > 
-> ```
-> achieve • overcome • effort • motivated • goal
+> > achieve • overcome • effort • motivated • goal
 > 
 > 1. My _________ is to speak English fluently.
 > 2. I'm very _________ to learn new things.
 > 3. It takes a lot of _________ to succeed.
 > 4. She wants to _________ her dreams.
 > 5. We can _________ any obstacle together.
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 1
 > > 
@@ -582,8 +561,7 @@ graph TD
 > 
 > **Exercise 3: Advantages vs Disadvantages**
 > 
-> ```
-> Topic: Living in a big city
+> > Topic: Living in a big city
 > 
 > Write 2 advantages and 2 disadvantages:
 > 
@@ -594,7 +572,7 @@ graph TD
 > Disadvantages:
 > 8. _________________________________________________
 > 9. _________________________________________________
-> ```
+> 
 > 
 > > [!success]- ✅ Sample Answers - Exercise 3
 > > 
@@ -617,14 +595,13 @@ graph TD
 > 
 > **Exercise 4: Complete the motivational quote**
 > 
-> ```
-> succeed • effort • challenge • goal • overcome
+> > succeed • effort • challenge • goal • overcome
 > 
 > "If you want to _________ in life, you need to set a clear 
 > _________ and put in the _________. Every _________ is an 
 > opportunity to grow. Don't give up when things get difficult – 
 > you can _________ anything if you stay determined!"
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 4
 > > 
@@ -634,8 +611,7 @@ graph TD
 > 
 > **Exercise 5: Personal Response**
 > 
-> ```
-> Answer these questions about yourself:
+> > Answer these questions about yourself:
 > 
 > 10. What's your main goal right now?
 >    _________________________________________________
@@ -648,7 +624,7 @@ graph TD
 > 
 > 13. Have you taken any risks recently? What were they?
 >    _________________________________________________
-> ```
+> 
 > 
 > > [!success]- ✅ Sample Personal Answers
 > > 
@@ -721,21 +697,19 @@ mindmap
 > 
 > **Preview - Phrasal Verbs:**
 > 
-> ```
-> ✅ give up → Don't give up on your dreams
+> > ✅ give up → Don't give up on your dreams
 > ✅ keep going → Keep going, you're doing great
 > ✅ set up → I want to set up my own business
 > ✅ work on → I'm working on improving my skills
-> ```
+> 
 > 
 > **Preview - Unreal Conditionals:**
 > 
-> ```
-> ✅ If I had more time, I would study harder
+> > ✅ If I had more time, I would study harder
 > ✅ If I were you, I would take the risk
 > ✅ I wish I were more confident
 > ✅ I wish I had started earlier
-> ```
+> 
 > 
 > **Connection map:**
 > 
@@ -752,5 +726,12 @@ mindmap
 > ```
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Siguiente: [[02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
 
 **Tags:** #english #vocabulary #success #goals #risks #opportunities #motivation #determination #unit11 #pushing-yourself

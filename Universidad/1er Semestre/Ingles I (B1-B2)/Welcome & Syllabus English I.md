@@ -106,8 +106,7 @@ dg-publish: true
 
 > [!tip] 📂 Repository structure
 >
-> ```
-> 📁 Ingles I (B1-B2)/
+> > 📁 Ingles I (B1-B2)/
 > ├── 📄 Welcome & Syllabus English I.md   ← you are here
 > │
 > ├── 📁 Unit 7 - Entertain us/
@@ -116,7 +115,7 @@ dg-publish: true
 > ├── 📁 Unit 10 - Why we buy/
 > ├── 📁 Unit 11 - Pushing Yourself/
 > └── 📁 Unit 12 - Life's Little Lessons/
-> ```
+> 
 
 ---
 

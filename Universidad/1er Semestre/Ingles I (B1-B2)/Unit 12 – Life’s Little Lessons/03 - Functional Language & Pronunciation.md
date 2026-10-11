@@ -48,8 +48,7 @@ dg-publish: true
 > 
 > **Pattern 1: I'm pushing myself to...**
 > 
-> ```
-> Formula: I'm pushing myself to + base verb
+> > Formula: I'm pushing myself to + base verb
 > Use: Cuando te estás esforzando mucho por lograr algo
 > 
 > ✅ I'm pushing myself to finish this project
@@ -61,12 +60,11 @@ dg-publish: true
 > • I'm really pushing myself to...
 > • I've been pushing myself to...
 > • I need to push myself to...
-> ```
+> 
 > 
 > **Pattern 2: I'm working on...**
 > 
-> ```
-> Formula: I'm working on + noun/gerund
+> > Formula: I'm working on + noun/gerund
 > Use: Para hablar de áreas de mejora personal
 > 
 > ✅ I'm working on my confidence
@@ -78,12 +76,11 @@ dg-publish: true
 > • I've been working on...
 > • I'm really working on...
 > • I need to work on...
-> ```
+> 
 > 
 > **Pattern 3: I don't want to give up**
 > 
-> ```
-> Formula: I don't want to give up (on + noun/gerund)
+> > Formula: I don't want to give up (on + noun/gerund)
 > Use: Expresar determinación
 > 
 > ✅ I don't want to give up now
@@ -96,12 +93,11 @@ dg-publish: true
 > • I'll never give up
 > • I won't give up easily
 > • Giving up is not an option
-> ```
+> 
 > 
 > **Pattern 4: My goal is to...**
 > 
-> ```
-> Formula: My goal is to + base verb
+> > Formula: My goal is to + base verb
 > Use: Declarar objetivos claramente
 > 
 > ✅ My goal is to speak English fluently
@@ -114,89 +110,82 @@ dg-publish: true
 > • One of my goals is...
 > • My biggest goal is...
 > • I've set a goal to...
-> ```
+> 
 >
 
 > [!tip] 🔥 Talking About Progress & Effort
 > 
 > **Describing your effort:**
 > 
-> ```
-> ✅ I'm doing my best
+> > ✅ I'm doing my best
 > ✅ I'm trying my hardest
 > ✅ I'm giving it my all
 > ✅ I'm putting in a lot of effort
 > ✅ I'm working really hard on this
 > ✅ I'm committed to achieving this
-> ```
+> 
 > 
 > **Talking about progress:**
 > 
-> ```
-> ✅ I'm making progress
+> > ✅ I'm making progress
 > ✅ I'm getting better every day
 > ✅ I'm slowly improving
 > ✅ I've come a long way
 > ✅ I'm on the right track
 > ✅ I'm moving in the right direction
-> ```
+> 
 > 
 > **When facing difficulties:**
 > 
-> ```
-> ✅ It's challenging, but I'm not giving up
+> > ✅ It's challenging, but I'm not giving up
 > ✅ It's tough, but I'm pushing through
 > ✅ I'm struggling a bit, but I'll keep going
 > ✅ It's hard, but it's worth it
 > ✅ I'm facing some obstacles, but I'm determined
 > ✅ It's not easy, but I'm learning a lot
-> ```
+> 
 > 
 > **Expressing determination:**
 > 
-> ```
-> ✅ I'm determined to succeed
+> > ✅ I'm determined to succeed
 > ✅ I'm committed to this goal
 > ✅ I won't let anything stop me
 > ✅ I'm going to make this happen
 > ✅ Nothing will stand in my way
 > ✅ I'm 100% focused on this
-> ```
+> 
 >
 
 > [!example] 💬 Natural Conversation Examples
 > 
 > **Conversation 1: Talking about a personal goal**
 > 
-> ```
-> A: What are you working on these days?
+> > A: What are you working on these days?
 > B: I'm pushing myself to improve my English. 
 >    It's challenging, but I'm making progress.
 > A: That's great! How's it going?
 > B: I'm getting better every day. My goal is to 
 >    speak fluently by the end of the year.
-> ```
+> 
 > 
 > **Conversation 2: When someone asks about your progress**
 > 
-> ```
-> A: How's your business plan coming along?
+> > A: How's your business plan coming along?
 > B: I'm working really hard on it. It's not easy, 
 >    but I don't want to give up now.
 > A: That's the spirit! Keep pushing!
 > B: Thanks! I'm determined to make it happen.
-> ```
+> 
 > 
 > **Conversation 3: Discussing motivation**
 > 
-> ```
-> A: Do you ever feel like giving up?
+> > A: Do you ever feel like giving up?
 > B: Sometimes, yeah. But then I remember my goals 
 >    and I keep going.
 > A: What keeps you motivated?
 > B: I'm pushing myself because I know it'll be 
 >    worth it in the end.
-> ```
+> 
 
 ---
 
@@ -206,8 +195,7 @@ dg-publish: true
 > 
 > **Pattern 1: Keep going!**
 > 
-> ```
-> Direct encouragement (very common):
+> > Direct encouragement (very common):
 > 
 > ✅ Keep going!
 > ✅ Don't give up!
@@ -221,12 +209,11 @@ dg-publish: true
 > ✅ Don't give up now, you've come so far!
 > ✅ Keep pushing, it'll be worth it!
 > ✅ Hang in there, things will get better!
-> ```
+> 
 > 
 > **Pattern 2: You should...**
 > 
-> ```
-> Formula: You should + base verb
+> > Formula: You should + base verb
 > Use: Dar consejos suaves
 > 
 > ✅ You should keep going
@@ -239,12 +226,11 @@ dg-publish: true
 > • You really should...
 > • You definitely should...
 > • I think you should...
-> ```
+> 
 > 
 > **Pattern 3: If I were you...**
 > 
-> ```
-> Formula: If I were you, I would/wouldn't + base verb
+> > Formula: If I were you, I would/wouldn't + base verb
 > Use: Consejos más directos usando 2nd conditional
 > 
 > ✅ If I were you, I'd keep trying
@@ -254,12 +240,11 @@ dg-publish: true
 > ✅ If I were you, I wouldn't let fear hold me back
 > 
 > Note: "I'd" = "I would" (contraction común en conversación)
-> ```
+> 
 > 
 > **Pattern 4: Why don't you...?**
 > 
-> ```
-> Formula: Why don't you + base verb?
+> > Formula: Why don't you + base verb?
 > Use: Sugerencias amables
 > 
 > ✅ Why don't you try again?
@@ -267,74 +252,68 @@ dg-publish: true
 > ✅ Why don't you take a break and come back to it?
 > ✅ Why don't you ask for help?
 > ✅ Why don't you give it one more shot?
-> ```
+> 
 >
 
 > [!tip] 🌟 More Ways to Encourage
 > 
 > **Recognizing effort:**
 > 
-> ```
-> ✅ You're doing great!
+> > ✅ You're doing great!
 > ✅ I'm proud of you!
 > ✅ You're making real progress!
 > ✅ Look how far you've come!
 > ✅ You should be proud of yourself!
 > ✅ You're on the right track!
-> ```
+> 
 > 
 > **Building confidence:**
 > 
-> ```
-> ✅ I believe in you
+> > ✅ I believe in you
 > ✅ You've got this
 > ✅ I know you can do it
 > ✅ You're stronger than you think
 > ✅ You're capable of more than you realize
 > ✅ Trust yourself
-> ```
+> 
 > 
 > **Motivating during hard times:**
 > 
-> ```
-> ✅ This is just temporary
+> > ✅ This is just temporary
 > ✅ You'll get through this
 > ✅ It gets easier with time
 > ✅ Everyone struggles at first
 > ✅ Failure is part of success
 > ✅ You learn more from challenges
-> ```
+> 
 > 
 > **Congratulating success:**
 > 
-> ```
-> ✅ Well done!
+> > ✅ Well done!
 > ✅ Great job!
 > ✅ I knew you could do it!
 > ✅ You did it!
 > ✅ That's amazing!
 > ✅ You deserve this!
-> ```
+> 
 >
 
 > [!example] 💬 Advice & Encouragement Dialogues
 > 
 > **Dialogue 1: Friend feeling discouraged**
 > 
-> ```
-> A: I feel like giving up. This is too hard.
+> > A: I feel like giving up. This is too hard.
 > B: Don't give up now! You've come so far already.
 > A: But I keep failing...
 > B: Failure is part of success. If I were you, 
 >    I'd keep trying. You're learning from each attempt.
 > A: You really think so?
 > B: Absolutely! I believe in you. Just keep going!
-> ```
+> 
 > 
 > **Dialogue 2: Giving advice about goals**
 > 
-> ```
-> A: I don't know if I should take this risk...
+> > A: I don't know if I should take this risk...
 > B: What's holding you back?
 > A: I'm afraid of failing.
 > B: If I were you, I wouldn't let fear stop me. 
@@ -342,18 +321,17 @@ dg-publish: true
 > A: Maybe you're right...
 > B: Why don't you give it a shot? You'll regret 
 >    it more if you don't try.
-> ```
+> 
 > 
 > **Dialogue 3: Encouraging someone's progress**
 > 
-> ```
-> A: I'm trying to improve my English, but it's slow.
+> > A: I'm trying to improve my English, but it's slow.
 > B: Hey, you're doing great! Look how much you've 
 >    improved since last year!
 > A: You think so?
 > B: Definitely! You should be proud of yourself. 
 >    Just keep going, you're on the right track.
-> ```
+> 
 
 ---
 
@@ -363,15 +341,14 @@ dg-publish: true
 > 
 > **Key Rule: Stress the PARTICLE (second word)**
 > 
-> ```
-> Pattern: verb PARTICLE
+> > Pattern: verb PARTICLE
 > 
 > ✅ give UP (not GIVE up)
 > ✅ keep GOing (not KEEP going)
 > ✅ work ON (not WORK on)
 > ✅ set UP (not SET up)
 > ✅ find OUT (not FIND out)
-> ```
+> 
 > 
 > **Practice Pairs:**
 > 
@@ -388,23 +365,21 @@ dg-publish: true
 > 
 > **In sentences - stress stays on particle:**
 > 
-> ```
-> ✅ Don't give UP!
+> > ✅ Don't give UP!
 > ✅ Keep GOing!
 > ✅ I'm working ON it
 > ✅ She set UP a business
 > ✅ I need to figure OUT what to do
-> ```
+> 
 > 
 > **⚠️ Exception: When particle is a pronoun**
 > 
-> ```
-> When the object is a pronoun, stress the VERB:
+> > When the object is a pronoun, stress the VERB:
 > 
 > ✅ GIVE it up (not give it UP)
 > ✅ SET it up (not set it UP)
 > ✅ WORK it out (not work it OUT)
-> ```
+> 
 >
 
 > [!tip] 🔗 Linking in Functional Phrases
@@ -415,8 +390,7 @@ dg-publish: true
 > 
 > **Common linking patterns:**
 > 
-> ```
-> Pattern 1: Consonant + Vowel
+> > Pattern 1: Consonant + Vowel
 > Connect the sounds smoothly
 > 
 > ✅ give_up → "gi-vup"
@@ -424,86 +398,79 @@ dg-publish: true
 > ✅ work_on → "wor-kon"
 > ✅ keep_on → "kee-pon"
 > ✅ I'm_on_it → "I-mo-nit"
-> ```
+> 
 > 
 > **Pattern 2: Same consonant**
 > 
-> ```
-> Say the consonant once, but hold it longer:
+> > Say the consonant once, but hold it longer:
 > 
 > ✅ keep pushing → "kee-pushing" (one 'p')
 > ✅ don't take → "don-take" (one 't')
 > ✅ get through → "ge-through" (one 't')
-> ```
+> 
 > 
 > **Pattern 3: Common functional phrases**
 > 
-> ```
-> ✅ I'm working on it → "I'm-wor-king-o-nit"
+> > ✅ I'm working on it → "I'm-wor-king-o-nit"
 > ✅ I want to achieve → "I-wan-to-wa-chieve"
 > ✅ Don't give up → "Don-tgi-vup"
 > ✅ You can do it → "You-can-do-wit"
 > ✅ I've got this → "I've-go-this"
 > ✅ If I were you → "I-fI-were-you"
-> ```
+> 
 > 
 > **Practice sentences with linking:**
 > 
-> ```
-> 1. Keep_it_up! → "Kee-pi-tup"
+> > 1. Keep_it_up! → "Kee-pi-tup"
 > 2. Work_on_it → "Wor-ko-nit"
 > 3. I'm_almost_there → "I-mal-mos-there"
 > 4. Set_up_a goal → "Se-tu-pa-goal"
 > 5. Find_out_about_it → "Fin-dou-ta-bou-tit"
-> ```
+> 
 >
 
 > [!success] 🎯 Intonation Patterns
 > 
 > **Rising intonation (questions & uncertainty):**
 > 
-> ```
-> Use rising tone ↗ at the end:
+> > Use rising tone ↗ at the end:
 > 
 > ✅ Should I keep going? ↗
 > ✅ Do you think I can do it? ↗
 > ✅ Are you working on your goals? ↗
 > ✅ Why don't you try again? ↗
-> ```
+> 
 > 
 > **Falling intonation (statements & commands):**
 > 
-> ```
-> Use falling tone ↘ at the end:
+> > Use falling tone ↘ at the end:
 > 
 > ✅ Don't give up ↘
 > ✅ Keep going ↘
 > ✅ I'm working on it ↘
 > ✅ You can do it ↘
-> ```
+> 
 > 
 > **Emphasis for encouragement:**
 > 
-> ```
-> Stress the key word for stronger emotion:
+> > Stress the key word for stronger emotion:
 > 
 > ✅ You CAN do it!
 > ✅ DON'T give up!
 > ✅ KEEP going!
 > ✅ I REALLY believe in you!
 > ✅ You're doing GREAT!
-> ```
+> 
 > 
 > **Intonation in conditional advice:**
 > 
-> ```
-> If I were you ↗, I would keep trying ↘
+> > If I were you ↗, I would keep trying ↘
 > (rising in condition, falling in result)
 > 
 > ✅ If I were you ↗, I wouldn't give up ↘
 > ✅ If you worked harder ↗, you'd succeed ↘
 > ✅ Why don't you try ↗? It might work ↘
-> ```
+> 
 
 ---
 
@@ -513,8 +480,7 @@ dg-publish: true
 > 
 > **Pattern 1: I wish I were/had...**
 > 
-> ```
-> Use: Express desires about present situations
+> > Use: Express desires about present situations
 > 
 > ✅ I wish I were more confident
 > ✅ I wish I had more time
@@ -525,12 +491,11 @@ dg-publish: true
 > In conversation:
 > "What do you wish you could change?"
 > "I wish I were more disciplined."
-> ```
+> 
 > 
 > **Pattern 2: If only...**
 > 
-> ```
-> Use: More dramatic/emotional than "I wish"
+> > Use: More dramatic/emotional than "I wish"
 > 
 > ✅ If only I were more motivated!
 > ✅ If only I had started sooner!
@@ -538,12 +503,11 @@ dg-publish: true
 > ✅ If only I could try again!
 > 
 > Note: Often used with exclamation (!) for emphasis
-> ```
+> 
 > 
 > **Pattern 3: I wish [someone] would...**
 > 
-> ```
-> Use: Want someone else to change behavior
+> > Use: Want someone else to change behavior
 > 
 > ✅ I wish he would help me more
 > ✅ I wish she would stop giving up so easily
@@ -553,35 +517,32 @@ dg-publish: true
 > ⚠️ NOT with "I": 
 > ❌ I wish I would be confident
 > ✅ I wish I were confident
-> ```
+> 
 >
 
 > [!example] 💬 Natural Ways to Express Regret
 > 
 > **Soft regrets:**
 > 
-> ```
-> ✅ I should have tried harder
+> > ✅ I should have tried harder
 > ✅ I could have done better
 > ✅ I wish I had worked on this sooner
 > ✅ If only I hadn't given up
 > ✅ I regret not taking that opportunity
-> ```
+> 
 > 
 > **Learning from mistakes:**
 > 
-> ```
-> ✅ I learned my lesson
+> > ✅ I learned my lesson
 > ✅ I won't make that mistake again
 > ✅ Next time, I'll do things differently
 > ✅ Looking back, I should have...
 > ✅ If I could do it over, I would...
-> ```
+> 
 > 
 > **Conversation examples:**
 > 
-> ```
-> A: Do you have any regrets?
+> > A: Do you have any regrets?
 > B: I wish I had started learning English earlier. 
 >    But I'm working on it now, so better late than never!
 > 
@@ -592,7 +553,7 @@ dg-publish: true
 > A: Any advice for your younger self?
 > B: I'd tell myself: "Don't give up so easily. 
 >    Keep pushing yourself!"
-> ```
+> 
 
 ---
 
@@ -602,8 +563,7 @@ dg-publish: true
 > 
 > **Answer these questions out loud:**
 > 
-> ```
-> 1. What are you working on right now?
+> > 1. What are you working on right now?
 >    → "I'm working on..."
 > 
 > 2. What's your main goal?
@@ -617,25 +577,23 @@ dg-publish: true
 > 
 > 5. What progress have you made?
 >    → "I've made progress in..."
-> ```
+> 
 > 
 > **Sample responses:**
 > 
-> ```
-> 6. I'm working on improving my English speaking skills
+> > 6. I'm working on improving my English speaking skills
 > 7. My main goal is to speak English fluently by next year
 > 8. I'm pushing myself to practice speaking every day
 > 9. I refuse to give up on my dream of studying abroad
 > 10. I've made progress in my pronunciation and confidence
-> ```
+> 
 >
 
 > [!success] 🎤 Drill 2: Giving Encouragement
 > 
 > **Scenario: Your friend says these things. Respond!**
 > 
-> ```
-> Friend: "I feel like giving up..."
+> > Friend: "I feel like giving up..."
 > You: → "Don't give up now! You're doing great!"
 > 
 > Friend: "I don't think I can do this..."
@@ -649,7 +607,7 @@ dg-publish: true
 > 
 > Friend: "I'm not good enough..."
 > You: → "That's not true! You're making real progress!"
-> ```
+> 
 > 
 > **Practice with different tones:**
 > 
@@ -662,8 +620,7 @@ dg-publish: true
 > 
 > **Complete these sentences about yourself:**
 > 
-> ```
-> 1. I wish I were more...
+> > 1. I wish I were more...
 >    → "I wish I were more disciplined"
 > 
 > 2. If I had more time, I would...
@@ -677,7 +634,7 @@ dg-publish: true
 > 
 > 5. If only I...
 >    → "If only I had started learning English earlier!"
-> ```
+> 
 > 
 > **Now practice saying them with emotion!**
 
@@ -689,52 +646,47 @@ dg-publish: true
 > 
 > **Talking about goals:**
 > 
-> ```
-> ✅ I'm pushing myself to...
+> > ✅ I'm pushing myself to...
 > ✅ I'm working on...
 > ✅ My goal is to...
 > ✅ I'm committed to...
 > ✅ I don't want to give up on...
-> ```
+> 
 > 
 > **Encouragement:**
 > 
-> ```
-> ✅ Keep going!
+> > ✅ Keep going!
 > ✅ Don't give up!
 > ✅ You can do it!
 > ✅ You're doing great!
 > ✅ I believe in you!
-> ```
+> 
 > 
 > **Giving advice:**
 > 
-> ```
-> ✅ You should...
+> > ✅ You should...
 > ✅ If I were you, I'd...
 > ✅ Why don't you...?
 > ✅ You might want to...
 > ✅ Have you considered...?
-> ```
+> 
 > 
 > **Wishes:**
 > 
-> ```
-> ✅ I wish I were...
+> > ✅ I wish I were...
 > ✅ I wish I had...
 > ✅ I wish I could...
 > ✅ If only I...
-> ```
+> 
 > 
 > **Determination:**
 > 
-> ```
-> ✅ I'm determined to...
+> > ✅ I'm determined to...
 > ✅ I won't give up
 > ✅ I'm not quitting
 > ✅ Nothing will stop me
 > ✅ I'm going to make this happen
-> ```
+> 
 
 ---
 
@@ -746,17 +698,15 @@ dg-publish: true
 > 
 > **Good response structure:**
 > 
-> ```
-> 1. Situation: What was the challenge?
+> > 1. Situation: What was the challenge?
 > 2. Action: What did you do?
 > 3. Result: What happened?
 > 4. Learning: What did you learn?
-> ```
+> 
 > 
 > **Sample answer:**
 > 
-> ```
-> "Last year, I was working on improving my English. 
+> > "Last year, I was working on improving my English. 
 > It was really challenging because I didn't have much 
 > time, but I pushed myself to practice every single day. 
 > 
@@ -770,15 +720,14 @@ dg-publish: true
 > I learned that if you don't give up and keep 
 > pushing yourself, you can achieve more than 
 > you think."
-> ```
+> 
 >
 
 > [!success] 🌟 Situation 2: Encouraging a Colleague
 > 
 > **Your colleague is struggling with a project:**
 > 
-> ```
-> Colleague: "This project is impossible. I think 
+> > Colleague: "This project is impossible. I think 
 >            I should just tell the boss I can't do it."
 > 
 > You: "Hey, don't give up now! You've already done 
@@ -791,7 +740,7 @@ dg-publish: true
 >       
 >       Remember, everyone struggles at first. You've 
 >       got this! Just keep going!"
-> ```
+> 
 > 
 > **Key phrases used:**
 > 
@@ -806,8 +755,7 @@ dg-publish: true
 > 
 > **Casual conversation at a coffee break:**
 > 
-> ```
-> Friend: "What are you up to these days?"
+> > Friend: "What are you up to these days?"
 > 
 > You: "I'm really pushing myself to get healthier. 
 >       I'm working on exercising regularly and 
@@ -825,7 +773,7 @@ dg-publish: true
 > 
 > You: "Thanks! I'm not giving up this time. 
 >       I've come too far already!"
-> ```
+> 
 
 ---
 
@@ -882,11 +830,10 @@ mindmap
 > 
 > **Pronunciation priorities:**
 > 
-> ```
-> 1. Stress the PARTICLE in phrasal verbs: give UP, work ON
+> > 1. Stress the PARTICLE in phrasal verbs: give UP, work ON
 > 2. Link words together: work_on_it, keep_going
 > 3. Use falling tone for encouragement: Keep GOing ↘
-> ```
+> 
 > 
 > **Practice daily:**
 > 
@@ -928,5 +875,13 @@ mindmap
 > - 🗣️ Have extended conversations using everything you've learned
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
+> - Siguiente: [[04 - Reading, Writing, Speaking - Pushing Yourself]]
 
 **Tags:** #english #functional-language #pronunciation #unit11 #speaking #encouragement #advice #motivation #goals #communication

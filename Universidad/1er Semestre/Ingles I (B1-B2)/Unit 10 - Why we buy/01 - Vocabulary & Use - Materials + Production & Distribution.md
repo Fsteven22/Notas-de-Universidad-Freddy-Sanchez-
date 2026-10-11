@@ -84,13 +84,12 @@ graph LR
 > 
 > **Ejemplos en contexto:**
 > 
-> ```
-> ✅ This shirt is made of cotton.
+> > ✅ This shirt is made of cotton.
 > ✅ The window is made of glass.
 > ✅ My jacket is made of leather.
 > ✅ The toy is made of plastic.
 > ✅ This sweater is made of wool.
-> ```
+> 
 > 
 > **Collocations importantes:**
 > 
@@ -151,14 +150,13 @@ graph LR
 > 
 > **Frases modelo para descripción:**
 > 
-> ```
-> Pattern: This [product] is made of [material]. It's [adj1] and [adj2].
+> > Pattern: This [product] is made of [material]. It's [adj1] and [adj2].
 > 
 > ✅ This backpack is made of polyester. It's light and waterproof.
 > ✅ The table is made of wood. It's natural and warm.
 > ✅ My boots are made of leather. They're strong and durable.
 > ✅ This bottle is made of glass. It's fragile but recyclable.
-> ```
+> 
 
 ---
 
@@ -195,26 +193,23 @@ graph LR
 > 
 > **Agriculture:**
 > 
-> ```
-> ✅ They grow coffee in Colombia.
+> > ✅ They grow coffee in Colombia.
 > ✅ Farmers pick apples in autumn.
 > ✅ We freeze berries to preserve them.
-> ```
+> 
 > 
 > **Fishing:**
 > 
-> ```
-> ✅ Fishermen catch tuna in the Pacific.
+> > ✅ Fishermen catch tuna in the Pacific.
 > ✅ They freeze the fish immediately.
-> ```
+> 
 > 
 > **Manufacturing:**
 > 
-> ```
-> ✅ Samsung manufactures smartphones in Korea.
+> > ✅ Samsung manufactures smartphones in Korea.
 > ✅ Designers design new models every year.
 > ✅ Factories produce millions of units.
-> ```
+> 
 >
 
 > [!tip] 🚚 Verbos de Distribución
@@ -258,12 +253,11 @@ graph LR
 > 
 > **Métodos de transporte:**
 > 
-> ```
-> 🚢 by sea/ship → slow but cheap (furniture, cars)
+> > 🚢 by sea/ship → slow but cheap (furniture, cars)
 > ✈️ by air/plane → fast but expensive (electronics, flowers)
 > 🚛 by truck → flexible, medium distance (food, goods)
 > 🚂 by train → economical, large volumes (coal, grain)
-> ```
+> 
 
 ---
 
@@ -342,25 +336,23 @@ graph LR
 > 
 > **2. Production Collocations**
 > 
-> ```
-> ✅ mass-produce products → producción en masa
+> > ✅ mass-produce products → producción en masa
 > ✅ locally produced goods → productos locales
 > ✅ hand-crafted items → artículos hechos a mano
 > ✅ factory-made products → productos de fábrica
 > ✅ sustainably grown → cultivado sosteniblemente
 > ✅ organically grown → cultivado orgánicamente
-> ```
+> 
 > 
 > **3. Distribution Collocations**
 > 
-> ```
-> ✅ export products abroad → exportar al extranjero
+> > ✅ export products abroad → exportar al extranjero
 > ✅ import goods from → importar de
 > ✅ ship worldwide → enviar a todo el mundo
 > ✅ deliver within 24 hours → entregar en 24h
 > ✅ free shipping → envío gratis
 > ✅ same-day delivery → entrega el mismo día
-> ```
+> 
 > 
 > **Frases completas modelo:**
 > 
@@ -385,46 +377,42 @@ graph LR
 > 
 > **Scenario 1: Shopping for Clothes**
 > 
-> ```
-> Customer: What is this jacket made of?
+> > Customer: What is this jacket made of?
 > Sales: It's made of waterproof polyester with a soft cotton lining.
 > Customer: Is it warm enough for winter?
 > Sales: Yes, it's very warm and light. It's also machine washable.
 > Customer: Where is it manufactured?
 > Sales: It's produced in Portugal using sustainable materials.
-> ```
+> 
 > 
 > **Scenario 2: Business Meeting**
 > 
-> ```
-> Manager: Where do we manufacture our products?
+> > Manager: Where do we manufacture our products?
 > Team: We manufacture shoes in Italy and bags in Spain.
 > Manager: And our materials?
 > Team: We import high-quality leather from Argentina 
 >        and export finished products to over 50 countries.
 > Manager: How do we ship them?
 > Team: Small orders go by air, large orders by sea.
-> ```
+> 
 > 
 > **Scenario 3: Product Review**
 > 
-> ```
-> Review: ⭐⭐⭐⭐⭐
+> > Review: ⭐⭐⭐⭐⭐
 > "This backpack is made of strong, waterproof material.
 > It's light but very durable. I've used it for 2 years
 > and it still looks new. The company ships fast - 
 > I received it in 3 days. Highly recommended!"
-> ```
+> 
 > 
 > **Scenario 4: Sustainability Discussion**
 > 
-> ```
-> A: I try to buy products made of natural materials.
+> > A: I try to buy products made of natural materials.
 > B: Me too. I prefer cotton over polyester.
 > A: Do you know where your clothes are manufactured?
 > B: Most of mine are produced locally or in Europe.
 > A: That's good. Less transportation means less pollution.
-> ```
+> 
 > 
 > **Práctica de descripción de productos:**
 > 
@@ -443,13 +431,12 @@ graph LR
 > 
 > **Exercise 1: Complete with the correct material**
 > 
-> ```
-> 1. My T-shirt is made of _________ (soft, natural, breathable)
+> > 1. My T-shirt is made of _________ (soft, natural, breathable)
 > 2. The window is made of _________ (transparent, fragile)
 > 3. Her boots are made of _________ (strong, durable, natural)
 > 4. The toy is made of _________ (light, colorful, cheap)
 > 5. This sweater is made of _________ (warm, soft, natural)
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 1
 > > 
@@ -487,8 +474,7 @@ graph LR
 > 
 > **Exercise 3: Describe these products** (use the pattern)
 > 
-> ```
-> Pattern: This [product] is made of [material]. It's [adj] and [adj].
+> > Pattern: This [product] is made of [material]. It's [adj] and [adj].
 > 
 > 6. Raincoat (polyester, waterproof, light)
 > → _________________________________________________
@@ -498,7 +484,7 @@ graph LR
 > 
 > 8. Glass vase (glass, fragile, beautiful)
 > → _________________________________________________
-> ```
+> 
 > 
 > > [!success]- ✅ Sample Answers - Exercise 3
 > > 
@@ -577,13 +563,12 @@ mindmap
 > 
 > **Preview of Passive Voice:**
 > 
-> ```
-> Active: They make shoes in Italy.
+> > Active: They make shoes in Italy.
 > Passive: Shoes are made in Italy.
 > 
 > Active: They exported the coffee yesterday.
 > Passive: The coffee was exported yesterday.
-> ```
+> 
 > 
 > **How vocabulary connects to grammar:**
 > 
@@ -600,5 +585,12 @@ mindmap
 > ```
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Siguiente: [[02 - Grammar & Examples - Passive Voice (Present + Past)]]
 
 **Tags:** #english #vocabulary #materials #production #distribution #unit10 #whywebuy #collocations #business-english

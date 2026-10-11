@@ -56,8 +56,7 @@ dg-publish: true
 > 
 > **Formula: have/has + past participle**
 > 
-> ```
-> Positive statements:
+> > Positive statements:
 > I/You/We/They + have + past participle
 > He/She/It + has + past participle
 > 
@@ -65,42 +64,39 @@ dg-publish: true
 > • I have finished my homework.
 > • She has visited Paris three times.
 > • They have lived here for ten years.
-> ```
+> 
 > 
 > **Negative statements:**
 > 
-> ```
-> I/You/We/They + have not (haven't) + past participle
+> > I/You/We/They + have not (haven't) + past participle
 > He/She/It + has not (hasn't) + past participle
 > 
 > Examples:
 > • I haven't seen that movie.
 > • He hasn't called me yet.
 > • We haven't eaten lunch.
-> ```
+> 
 > 
 > **Questions:**
 > 
-> ```
-> Have + I/you/we/they + past participle?
+> > Have + I/you/we/they + past participle?
 > Has + he/she/it + past participle?
 > 
 > Examples:
 > • Have you finished your work?
 > • Has she arrived yet?
 > • Have they told you the news?
-> ```
+> 
 > 
 > **Short answers:**
 > 
-> ```
-> Yes, I/you/we/they have. / No, I/you/we/they haven't.
+> > Yes, I/you/we/they have. / No, I/you/we/they haven't.
 > Yes, he/she/it has. / No, he/she/it hasn't.
 > 
 > Examples:
 > • Have you been to London? - Yes, I have. / No, I haven't.
 > • Has John called? - Yes, he has. / No, he hasn't.
-> ```
+> 
 
 ### 🎯 When to Use Present Perfect
 
@@ -108,8 +104,7 @@ dg-publish: true
 > 
 > **Use 1: Actions completed at an unspecified time in the past**
 > 
-> ```
-> Focus: The result is important, NOT when it happened
+> > Focus: The result is important, NOT when it happened
 > 
 > • I have read that book. (sometime in my life, don't know exactly when)
 > • She has visited Japan. (the experience exists, time isn't specified)
@@ -120,12 +115,11 @@ dg-publish: true
 > ✓ I have been to Paris.
 > ✗ I have been to Paris yesterday. (WRONG - use past simple instead)
 > ✓ I went to Paris yesterday.
-> ```
+> 
 > 
 > **Use 2: Actions that happened in a time period that is NOT finished**
 > 
-> ```
-> Time expressions: today, this week, this month, this year, etc.
+> > Time expressions: today, this week, this month, this year, etc.
 > 
 > • I have drunk three coffees today. (today isn't finished yet)
 > • She has called me twice this morning. (this morning continues)
@@ -135,12 +129,11 @@ dg-publish: true
 > Compare:
 > ✓ I have seen him twice today. (today isn't finished)
 > ✓ I saw him twice yesterday. (yesterday is finished - use past simple)
-> ```
+> 
 > 
 > **Use 3: Actions that started in the past and continue to the present**
 > 
-> ```
-> Time expressions: for, since, how long
+> > Time expressions: for, since, how long
 > 
 > • I have known her for ten years. (I still know her now)
 > • He has worked here since 2020. (he still works here)
@@ -149,12 +142,11 @@ dg-publish: true
 > 
 > FOR = duration (for 2 hours, for 5 years, for a long time)
 > SINCE = starting point (since Monday, since 2020, since I was born)
-> ```
+> 
 > 
 > **Use 4: Recent actions with present results (just, already, yet)**
 > 
-> ```
-> • I have just finished my homework. (it's finished now)
+> > • I have just finished my homework. (it's finished now)
 > • She has already left. (she's not here now)
 > • Have you done it yet? (is it done now or not?)
 > • The train has just arrived. (it's here now)
@@ -162,12 +154,11 @@ dg-publish: true
 > JUST = very recently
 > ALREADY = sooner than expected (positive/questions)
 > YET = up to now (negative/questions)
-> ```
+> 
 > 
 > **Use 5: Life experiences (ever, never, before)**
 > 
-> ```
-> • Have you ever eaten sushi? (in your life)
+> > • Have you ever eaten sushi? (in your life)
 > • I have never been to Australia. (not in my entire life)
 > • We have met before. (at some point in the past)
 > • She has traveled to 30 countries. (life experience total)
@@ -175,18 +166,17 @@ dg-publish: true
 > EVER = at any time (questions)
 > NEVER = not at any time
 > BEFORE = at some previous time
-> ```
+> 
 > 
 > **Use 6: Repeated actions up to now**
 > 
-> ```
-> • I have seen that movie five times. (total up to now)
+> > • I have seen that movie five times. (total up to now)
 > • She has called me several times today. (repeated action)
 > • We have had three meetings this week. (multiple occasions)
 > • He has visited his grandmother many times this year.
 > 
 > Focus: The number or frequency, not the specific occasions
-> ```
+> 
 
 ### 📊 Time Expressions with Present Perfect
 
@@ -194,8 +184,7 @@ dg-publish: true
 > 
 > **Unspecified time:**
 > 
-> ```
-> • ever (alguna vez) - questions
+> > • ever (alguna vez) - questions
 > • never (nunca) - negative
 > • already (ya) - positive/questions
 > • yet (todavía/ya) - negative/questions
@@ -210,12 +199,11 @@ dg-publish: true
 > • She has already finished.
 > • Haven't you done it yet?
 > • They have just arrived.
-> ```
+> 
 > 
 > **Unfinished time periods:**
 > 
-> ```
-> • today (hoy)
+> > • today (hoy)
 > • this morning/afternoon/evening (esta mañana/tarde/noche)
 > • this week/month/year (esta semana/mes/año)
 > • so far (hasta ahora)
@@ -227,12 +215,11 @@ dg-publish: true
 > • We have had two meetings this week.
 > • She has called three times this morning.
 > • They have sold 100 tickets so far.
-> ```
+> 
 > 
 > **Duration from past to present:**
 > 
-> ```
-> • for + period of time (durante/por)
+> > • for + period of time (durante/por)
 >   - for 2 hours, for 3 days, for 5 years, for a long time
 > 
 > • since + starting point (desde)
@@ -245,7 +232,7 @@ dg-publish: true
 > • She has worked here since 2015.
 > • How long have you known him?
 > • We have been friends since high school.
-> ```
+> 
 
 ### ⚠️ Common Mistakes with Present Perfect
 
@@ -253,8 +240,7 @@ dg-publish: true
 > 
 > **Mistake 1: Using present perfect with specific past time**
 > 
-> ```
-> ✗ I have seen him yesterday.
+> > ✗ I have seen him yesterday.
 > ✓ I saw him yesterday.
 > 
 > ✗ She has visited Paris last year.
@@ -265,12 +251,11 @@ dg-publish: true
 > 
 > Rule: Don't use present perfect with: yesterday, last week/month/year, 
 > ago, in 2020, when I was young, etc.
-> ```
+> 
 > 
 > **Mistake 2: Confusing "for" and "since"**
 > 
-> ```
-> ✗ I have lived here since 5 years.
+> > ✗ I have lived here since 5 years.
 > ✓ I have lived here for 5 years.
 > 
 > ✗ She has worked here for 2020.
@@ -278,12 +263,11 @@ dg-publish: true
 > 
 > FOR = duration (amount of time)
 > SINCE = starting point (specific moment)
-> ```
+> 
 > 
 > **Mistake 3: Wrong past participle form**
 > 
-> ```
-> ✗ I have went to the store.
+> > ✗ I have went to the store.
 > ✓ I have gone to the store.
 > 
 > ✗ She has wrote a letter.
@@ -293,31 +277,29 @@ dg-publish: true
 > ✓ They have eaten lunch.
 > 
 > Remember: Use past participle (3rd form), not past simple (2nd form)
-> ```
+> 
 > 
 > **Mistake 4: Using present perfect for finished time periods**
 > 
-> ```
-> ✗ I have seen him twice yesterday.
+> > ✗ I have seen him twice yesterday.
 > ✓ I saw him twice yesterday.
 > 
 > ✗ We have visited three museums last week.
 > ✓ We visited three museums last week.
 > 
 > Rule: Yesterday, last week, last year = finished time = past simple
-> ```
+> 
 > 
 > **Mistake 5: Forgetting "have/has"**
 > 
-> ```
-> ✗ I seen that movie before.
+> > ✗ I seen that movie before.
 > ✓ I have seen that movie before.
 > 
 > ✗ She gone to work.
 > ✓ She has gone to work.
 > 
 > Always include the auxiliary verb have/has!
-> ```
+> 
 
 ---
 
@@ -329,8 +311,7 @@ dg-publish: true
 > 
 > **Formula: have/has + been + verb-ing**
 > 
-> ```
-> Positive statements:
+> > Positive statements:
 > I/You/We/They + have been + verb-ing
 > He/She/It + has been + verb-ing
 > 
@@ -338,42 +319,39 @@ dg-publish: true
 > • I have been studying for three hours.
 > • She has been working here since January.
 > • They have been living in Tokyo for two years.
-> ```
+> 
 > 
 > **Negative statements:**
 > 
-> ```
-> I/You/We/They + have not (haven't) been + verb-ing
+> > I/You/We/They + have not (haven't) been + verb-ing
 > He/She/It + has not (hasn't) been + verb-ing
 > 
 > Examples:
 > • I haven't been sleeping well lately.
 > • He hasn't been feeling good this week.
 > • We haven't been seeing each other much.
-> ```
+> 
 > 
 > **Questions:**
 > 
-> ```
-> Have + I/you/we/they + been + verb-ing?
+> > Have + I/you/we/they + been + verb-ing?
 > Has + he/she/it + been + verb-ing?
 > 
 > Examples:
 > • Have you been waiting long?
 > • Has she been studying all day?
 > • Have they been working on the project?
-> ```
+> 
 > 
 > **Short answers:**
 > 
-> ```
-> Yes, I/you/we/they have. / No, I/you/we/they haven't.
+> > Yes, I/you/we/they have. / No, I/you/we/they haven't.
 > Yes, he/she/it has. / No, he/she/it hasn't.
 > 
 > Examples:
 > • Have you been exercising? - Yes, I have. / No, I haven't.
 > • Has it been raining? - Yes, it has. / No, it hasn't.
-> ```
+> 
 
 ### 🎯 When to Use Present Perfect Continuous
 
@@ -381,8 +359,7 @@ dg-publish: true
 > 
 > **Use 1: Actions that started in the past and are STILL CONTINUING now**
 > 
-> ```
-> Focus: The action is in progress and ongoing
+> > Focus: The action is in progress and ongoing
 > 
 > • I have been studying for three hours. (still studying now)
 > • She has been working here since 2020. (still works here, ongoing)
@@ -390,12 +367,11 @@ dg-publish: true
 > • We have been waiting for you! (still waiting now)
 > 
 > Emphasis: The DURATION and CONTINUITY of the action
-> ```
+> 
 > 
 > **Use 2: Recently finished actions with PRESENT EVIDENCE**
 > 
-> ```
-> Focus: You can see the results or effects now
+> > Focus: You can see the results or effects now
 > 
 > • I'm tired because I have been running.
 >   (Evidence: I'm tired, sweaty, out of breath)
@@ -409,12 +385,11 @@ dg-publish: true
 > • They have been painting the house. (Evidence: Paint on their clothes)
 > 
 > The action just stopped, but we see/feel the effects NOW
-> ```
+> 
 > 
 > **Use 3: Emphasis on the DURATION or PROCESS, not the result**
 > 
-> ```
-> Focus: HOW LONG the activity has been happening
+> > Focus: HOW LONG the activity has been happening
 > 
 > • I have been reading this book for weeks.
 >   (focus on time spent, not completion)
@@ -431,12 +406,11 @@ dg-publish: true
 > Questions often ask "How long?":
 > • How long have you been learning English?
 > • How long has she been working there?
-> ```
+> 
 > 
 > **Use 4: Repeated actions over a period of time**
 > 
-> ```
-> Focus: The repetition and frequency over time
+> > Focus: The repetition and frequency over time
 > 
 > • I have been going to the gym regularly.
 >   (repeated action, ongoing habit)
@@ -449,18 +423,17 @@ dg-publish: true
 > 
 > • We have been meeting weekly since September.
 >   (repeated meetings, still happening)
-> ```
+> 
 > 
 > **Use 5: Temporary situations (recently, lately)**
 > 
-> ```
-> • I have been feeling tired lately. (temporary state)
+> > • I have been feeling tired lately. (temporary state)
 > • She has been staying with friends. (temporary arrangement)
 > • We have been having connection issues. (temporary problem)
 > • He has been working from home recently. (temporary situation)
 > 
 > Time expressions: lately, recently, these days, this week
-> ```
+> 
 
 ### 📊 Time Expressions with Present Perfect Continuous
 
@@ -468,8 +441,7 @@ dg-publish: true
 > 
 > **Duration emphasis:**
 > 
-> ```
-> • for + period of time
+> > • for + period of time
 >   - for 2 hours, for all day, for weeks, for years
 > 
 > • since + starting point
@@ -484,12 +456,11 @@ dg-publish: true
 > • She has been living here since last year.
 > • How long have you been waiting?
 > • They have been studying all morning.
-> ```
+> 
 > 
 > **Recent time (temporary situations):**
 > 
-> ```
-> • lately (últimamente)
+> > • lately (últimamente)
 > • recently (recientemente)
 > • these days (estos días)
 > • this week/month (esta semana/mes)
@@ -499,18 +470,17 @@ dg-publish: true
 > • She has been working a lot recently.
 > • We have been having issues these days.
 > • They have been arguing this week.
-> ```
+> 
 > 
 > **Continuous activity:**
 > 
-> ```
-> • all morning/afternoon/evening (toda la mañana/tarde/noche)
+> > • all morning/afternoon/evening (toda la mañana/tarde/noche)
 > • the whole day/week (todo el día/semana)
 > 
 > Examples:
 > • I have been cleaning all morning.
 > • He has been talking on the phone the whole afternoon.
-> ```
+> 
 
 ---
 
@@ -522,8 +492,7 @@ dg-publish: true
 > 
 > **PRESENT PERFECT SIMPLE = Focus on RESULT/COMPLETION**
 > 
-> ```
-> Emphasis: What has been ACHIEVED or COMPLETED
+> > Emphasis: What has been ACHIEVED or COMPLETED
 > 
 > • I have read three books this month.
 >   (Focus: The number completed, the achievement)
@@ -533,12 +502,11 @@ dg-publish: true
 > 
 > • They have painted the house.
 >   (Focus: The house is painted, job done)
-> ```
+> 
 > 
 > **PRESENT PERFECT CONTINUOUS = Focus on DURATION/ACTIVITY**
 > 
-> ```
-> Emphasis: HOW LONG or the ONGOING PROCESS
+> > Emphasis: HOW LONG or the ONGOING PROCESS
 > 
 > • I have been reading for three hours.
 >   (Focus: The time spent reading, still reading or just stopped)
@@ -548,7 +516,7 @@ dg-publish: true
 > 
 > • They have been painting the house for weeks.
 >   (Focus: The time spent, ongoing work)
-> ```
+> 
 
 ### 📋 Direct Comparisons
 
@@ -556,8 +524,7 @@ dg-publish: true
 > 
 > **Example Set 1: Work/Study**
 > 
-> ```
-> Present Perfect (result):
+> > Present Perfect (result):
 > • I have written five emails today.
 >   (5 emails are done - focus on completion)
 > 
@@ -574,12 +541,11 @@ dg-publish: true
 > Present Perfect Continuous (duration):
 > • She has been learning English for two years.
 >   (focus on the duration of study, ongoing)
-> ```
+> 
 > 
 > **Example Set 2: Exercise/Activity**
 > 
-> ```
-> Present Perfect (result):
+> > Present Perfect (result):
 > • I have run 5 kilometers.
 >   (5 km complete - focus on distance achieved)
 > 
@@ -596,12 +562,11 @@ dg-publish: true
 > Present Perfect Continuous (duration):
 > • We have been playing for hours.
 >   (focus on time spent playing)
-> ```
+> 
 > 
 > **Example Set 3: Evidence/Result**
 > 
-> ```
-> Present Perfect (completion):
+> > Present Perfect (completion):
 > • He has painted the door.
 >   (The door is painted, job complete)
 > 
@@ -618,12 +583,11 @@ dg-publish: true
 > Present Perfect Continuous (evidence):
 > • I have been cleaning the kitchen.
 >   (I'm tired, still messy, or just stopped)
-> ```
+> 
 > 
 > **Example Set 4: Living/Staying**
 > 
-> ```
-> Present Perfect (state, permanent):
+> > Present Perfect (state, permanent):
 > • I have lived here for ten years.
 >   (Focus on the fact, more permanent feeling)
 > 
@@ -633,7 +597,7 @@ dg-publish: true
 > 
 > Note: With "live," both can be used, but continuous suggests 
 > more temporary or emphasizes the experience of living there.
-> ```
+> 
 
 ### 🎯 Choosing Between Them
 
@@ -641,8 +605,7 @@ dg-publish: true
 > 
 > **Use PRESENT PERFECT when:**
 > 
-> ```
-> ✓ You want to emphasize COMPLETION or RESULT
+> > ✓ You want to emphasize COMPLETION or RESULT
 > ✓ You're counting completed actions (3 times, 5 books, etc.)
 > ✓ The specific achievement matters
 > ✓ The action is finished
@@ -657,12 +620,11 @@ dg-publish: true
 > • I have finished my work. (done!)
 > • She has visited 20 countries. (counting achievement)
 > • They have bought a house. (result: they own it)
-> ```
+> 
 > 
 > **Use PRESENT PERFECT CONTINUOUS when:**
 > 
-> ```
-> ✓ You want to emphasize DURATION or TIME SPENT
+> > ✓ You want to emphasize DURATION or TIME SPENT
 > ✓ The action is (or was) IN PROGRESS
 > ✓ You can see EVIDENCE or EFFECTS now
 > ✓ The process or activity matters more than completion
@@ -677,7 +639,7 @@ dg-publish: true
 > • I have been working for 8 hours. (duration, tired now)
 > • She has been studying all day. (ongoing process)
 > • They have been building a house. (in progress, evidence visible)
-> ```
+> 
 
 ### ⚠️ Verbs That Usually Don't Take Continuous
 
@@ -687,56 +649,50 @@ dg-publish: true
 > 
 > **Mental states:**
 > 
-> ```
-> • know → I have known her for years. (NOT: have been knowing)
+> > • know → I have known her for years. (NOT: have been knowing)
 > • understand → I have understood this since yesterday.
 > • believe → She has believed in ghosts since childhood.
 > • remember → I have remembered his name.
 > • forget → They have forgotten the password.
 > • think (= have an opinion) → I have thought so all along.
-> ```
+> 
 > 
 > **Emotions:**
 > 
-> ```
-> • love → I have loved this song since I first heard it.
+> > • love → I have loved this song since I first heard it.
 > • hate → She has hated vegetables all her life.
 > • like → We have liked this restaurant for ages.
 > • want → He has wanted a dog for years.
 > • need → They have needed help since Monday.
 > • prefer → I have always preferred tea to coffee.
-> ```
+> 
 > 
 > **Possession:**
 > 
-> ```
-> • have (= possess) → I have had this car for 5 years.
+> > • have (= possess) → I have had this car for 5 years.
 > • own → She has owned that house since 2015.
 > • belong → This has belonged to my family for generations.
 > • possess → We have possessed this land for decades.
-> ```
+> 
 > 
 > **Senses (involuntary):**
 > 
-> ```
-> • see (= perceive) → I have seen many changes here.
+> > • see (= perceive) → I have seen many changes here.
 > • hear (= perceive sound) → We have heard nothing since then.
 > • smell (= have an odor) → The room has smelled bad since yesterday.
 > • taste (= have a flavor) → This milk has tasted strange all week.
-> ```
+> 
 > 
 > **Appearance:**
 > 
-> ```
-> • seem → It has seemed strange lately.
+> > • seem → It has seemed strange lately.
 > • appear → She has appeared happier recently.
 > • look (= seem) → You have looked tired all week.
-> ```
+> 
 > 
 > **Other stative verbs:**
 > 
-> ```
-> • be → I have been here since 9 AM.
+> > • be → I have been here since 9 AM.
 > • contain → The box has contained old photos for years.
 > • consist → The team has consisted of 5 members.
 > • depend → Success has depended on timing.
@@ -744,18 +700,17 @@ dg-publish: true
 > • weigh (= have weight) → The package has weighed 5 kg.
 > • cost → The tickets have cost $50 each.
 > • owe → I have owed him money since last year.
-> ```
+> 
 > 
 > **EXCEPTION: Some stative verbs can be used in continuous when they describe actions:**
 > 
-> ```
-> • think (= consider, process) → I have been thinking about you.
+> > • think (= consider, process) → I have been thinking about you.
 > • have (= experience) → We have been having problems.
 > • see (= meet) → I have been seeing a doctor.
 > • taste (= actively test) → She has been tasting the soup.
 > • smell (= actively sniff) → He has been smelling the flowers.
 > • weigh (= measure) → They have been weighing the options.
-> ```
+> 
 
 ---
 
@@ -767,8 +722,7 @@ dg-publish: true
 > 
 > **Conversation 1: At the Office**
 > 
-> ```
-> A: You look tired. What have you been doing?
+> > A: You look tired. What have you been doing?
 >    (asking about activity/duration)
 > 
 > B: I have been working on the report all morning.
@@ -785,12 +739,11 @@ dg-publish: true
 > 
 > B: I have been working on it for three days.
 >    (emphasis on time spent)
-> ```
+> 
 > 
 > **Conversation 2: Meeting a Friend**
 > 
-> ```
-> A: Sorry I'm late! Have you been waiting long?
+> > A: Sorry I'm late! Have you been waiting long?
 >    (asking about duration of waiting)
 > 
 > B: Yes! I have been waiting for 30 minutes!
@@ -807,12 +760,11 @@ dg-publish: true
 > 
 > B: Yes, I have eaten here many times.
 >    (emphasis on completed experiences)
-> ```
+> 
 > 
 > **Conversation 3: Job Interview**
 > 
-> ```
-> Interviewer: I see you have worked in marketing. How long have you been 
+> > Interviewer: I see you have worked in marketing. How long have you been 
 >              working in this field?
 >              (asking about duration in the field)
 > 
@@ -831,12 +783,11 @@ dg-publish: true
 > 
 > Candidate: Yes, I have been leading a team of 5 people since last year.
 >           (emphasis on ongoing activity)
-> ```
+> 
 > 
 > **Conversation 4: Weekend Plans**
 > 
-> ```
-> A: What have you been doing this weekend?
+> > A: What have you been doing this weekend?
 >    (asking about activities/how time was spent)
 > 
 > B: I have been cleaning the house. It's so tiring!
@@ -854,7 +805,7 @@ dg-publish: true
 > 
 > B: Yes, I have been at it since 9 AM!
 >    (emphasis on time spent)
-> ```
+> 
 
 ### 🎯 Practice Scenarios
 
@@ -862,8 +813,7 @@ dg-publish: true
 > 
 > **Scenario 1: Explaining Tiredness**
 > 
-> ```
-> Why are you tired?
+> > Why are you tired?
 > 
 > Present Perfect Continuous (emphasis on activity):
 > • I have been exercising for two hours.
@@ -875,12 +825,11 @@ dg-publish: true
 > • I have run 10 kilometers.
 > • I have completed three projects today.
 > • I have done all the housework.
-> ```
+> 
 > 
 > **Scenario 2: Visible Evidence**
 > 
-> ```
-> Your hands are dirty. / You're covered in paint.
+> > Your hands are dirty. / You're covered in paint.
 > 
 > Present Perfect Continuous (activity just finished):
 > • I have been gardening.
@@ -892,12 +841,11 @@ dg-publish: true
 > • I have planted 20 flowers.
 > • I have painted the whole fence.
 > • I have repaired the engine.
-> ```
+> 
 > 
 > **Scenario 3: Progress Updates**
 > 
-> ```
-> Project update:
+> > Project update:
 > 
 > Present Perfect (completed tasks):
 > • We have finished the research phase.
@@ -910,12 +858,11 @@ dg-publish: true
 > • The team has been testing different approaches.
 > • I have been writing the report all week.
 > • They have been developing new features.
-> ```
+> 
 > 
 > **Scenario 4: Explaining Changes**
 > 
-> ```
-> You look different. / Something has changed.
+> > You look different. / Something has changed.
 > 
 > Present Perfect (visible result):
 > • I have lost 10 pounds.
@@ -928,7 +875,7 @@ dg-publish: true
 > • She has been going to a new hairstylist.
 > • They have been looking for a new place.
 > • He has been saving money for years.
-> ```
+> 
 
 ---
 
@@ -938,8 +885,7 @@ dg-publish: true
 > 
 > **Complete with Present Perfect or Present Perfect Continuous:**
 > 
-> ```
-> 1. I __________ (study) English for three years.
+> > 1. I __________ (study) English for three years.
 > 2. She __________ (write) three books so far.
 > 3. How long __________ you __________ (wait)?
 > 4. They __________ (visit) Paris twice.
@@ -949,12 +895,11 @@ dg-publish: true
 > 8. You look tired. __________ you __________ (exercise)?
 > 9. She __________ (know) him since childhood.
 > 10. The ground is wet. It __________ (rain).
-> ```
+> 
 > 
 > **📖 Answers**
 > 
-> ```
-> 1. have been studying (duration, ongoing)
+> > 1. have been studying (duration, ongoing)
 > 2. has written (completed achievement, counting)
 > 3. have you been waiting (duration of waiting)
 > 4. have visited (completed experiences, counting)
@@ -964,7 +909,7 @@ dg-publish: true
 > 8. Have you been exercising (evidence of recent activity)
 > 9. has known (stative verb, no continuous)
 > 10. has been raining (evidence visible now)
-> ```
+> 
 >
 >
 
@@ -972,8 +917,7 @@ dg-publish: true
 >
 > **Find and correct the errors:**
 >
-> ```
-> 11. I have been knowing her for ten years.
+> > 11. I have been knowing her for ten years.
 > 12. She has been visiting Paris three times.
 > 13. How long do you live here?
 > 14. They have been finishing their homework.
@@ -983,13 +927,12 @@ dg-publish: true
 > 18. She has been having a car for five years.
 > 19. Have you been ever to Japan?
 > 20. They have been already left.
-> ```
+> 
 >
 > 
 > 📖 Answers
 >
-> ```
-> 21. I have known her for ten years.
+> > 21. I have known her for ten years.
 >    (know is stative, no continuous)
 >
 > 22. She has visited Paris three times.
@@ -1018,7 +961,7 @@ dg-publish: true
 >
 > 30. They have already left.
 >     (left is a completed action, use simple)
-> ```
+> 
 >
 > 
 >
@@ -1027,8 +970,7 @@ dg-publish: true
 >
 > **Fill in the blanks with the correct form:**
 >
-> ```
-> Conversation 1:
+> > Conversation 1:
 > A: You look exhausted! What __________ you __________ (do)?
 > B: I __________ (run) for an hour.
 > A: How far __________ you __________ (run)?
@@ -1051,13 +993,12 @@ dg-publish: true
 > B: Yes, she __________ (be) in the library since 2 PM.
 > A: What __________ she __________ (do)?
 > B: She __________ (study) for her exam.
-> ```
+> 
 >
 > 
 >📖 Answers
 >
-> ```
-> Conversation 1:
+> > Conversation 1:
 > A: What have you been doing?
 > B: I have been running for an hour.
 > A: How far have you run?
@@ -1078,7 +1019,7 @@ dg-publish: true
 > B: Yes, she has been in the library since 2 PM.
 > A: What has she been doing?
 > B: She has been studying for her exam.
-> ```
+> 
 >
 > 
 >
@@ -1087,19 +1028,17 @@ dg-publish: true
 >
 > **Change the tense while keeping similar meaning (when possible):**
 >
-> ```
-> 31. I have read three books this month. (→ continuous)
+> > 31. I have read three books this month. (→ continuous)
 > 32. She has been cooking for two hours. (→ simple)
 > 33. They have lived here for ten years. (→ continuous)
 > 34. We have been playing tennis all afternoon. (→ simple)
 > 35. He has written five reports today. (→ continuous)
-> ```
+> 
 >
 > 
 > 📖 Answers
 >
-> ```
-> 36. I have been reading books this month.
+> > 36. I have been reading books this month.
 >    (Changes focus from number completed to ongoing activity)
 >
 > 37. She has cooked dinner. / She has made three dishes.
@@ -1115,7 +1054,7 @@ dg-publish: true
 >    (Changes focus from number completed to time spent)
 >
 > Note: The meaning shifts slightly based on what's emphasized!
-> ```
+> 
 >
 > 
 >
@@ -1124,8 +1063,7 @@ dg-publish: true
 >
 > **Choose the better option and explain why:**
 >
-> ```
-> 41. Your eyes are red. Have you (cried / been crying)?
+> > 41. Your eyes are red. Have you (cried / been crying)?
 > 42. I (have read / have been reading) that book - it's excellent!
 > 43. She (has lived / has been living) in Paris for six months.
 > 44. How many countries (have you visited / have you been visiting)?
@@ -1133,13 +1071,12 @@ dg-publish: true
 > 46. I (have known / have been knowing) her since university.
 > 47. We (have had / have been having) three meetings today.
 > 48. He (has run / has been running) - he's out of breath.
-> ```
+> 
 >
 > 
 > 📖 Answers
 >
-> ```
-> 49. Have you been crying?
+> > 49. Have you been crying?
 >    Reason: Evidence visible now (red eyes), recent activity
 >
 > 50. I have read that book
@@ -1163,7 +1100,7 @@ dg-publish: true
 >
 > 56. Has been running
 >    Reason: Evidence visible now (out of breath), recent activity
-> ```
+> 
 >
 > 
 >
@@ -1172,8 +1109,7 @@ dg-publish: true
 >
 > **Translate these sentences, choosing the correct tense:**
 >
-> ```
-> 57. He estado estudiando toda la noche.
+> > 57. He estado estudiando toda la noche.
 > 58. He visitado Londres tres veces.
 > 59. ¿Cuánto tiempo has estado esperando?
 > 60. Ella ha escrito un libro.
@@ -1183,13 +1119,12 @@ dg-publish: true
 > 64. He conocido a María por cinco años.
 > 65. La casa está limpia - he estado limpiando todo el día.
 > 66. ¿Alguna vez has comido sushi?
-> ```
+> 
 >
 > 
 > 📖 Answers
 >
-> ```
-> 67. I have been studying all night.
+> > 67. I have been studying all night.
 >    (Continuous: emphasis on duration)
 >
 > 68. I have visited London three times.
@@ -1218,7 +1153,7 @@ dg-publish: true
 >
 > 76. Have you ever eaten sushi?
 >     (Simple: life experience question)
-> ```
+> 
 >
 > 
 >
@@ -1227,8 +1162,7 @@ dg-publish: true
 >
 > **Read the situation and choose the appropriate tense:**
 >
-> ```
-> Situation 1: Your friend's clothes are dirty and wet.
+> > Situation 1: Your friend's clothes are dirty and wet.
 > You ask: "What __________ (you/do)?"
 > a) have you done
 > b) have you been doing
@@ -1268,13 +1202,12 @@ dg-publish: true
 > You explain: "Sorry, I __________ (wait) for the bus for ages."
 > a) have waited
 > b) have been waiting
-> ```
+> 
 >
 > 
 > 📖 Answers
 >
-> ```
-> Situation 1: b) have you been doing
+> > Situation 1: b) have you been doing
 > Reason: Evidence visible (dirty/wet), asking about recent activity
 >
 > Situation 2: a) have you written
@@ -1299,7 +1232,7 @@ dg-publish: true
 >
 > Situation 8: b) have been waiting
 > Reason: Recent/ongoing activity, emphasis on duration of waiting
-> ```
+> 
 >
 > 
 
@@ -1311,8 +1244,7 @@ dg-publish: true
 >
 > **British English tends to use Present Perfect more often:**
 >
-> ```
-> British: I've just seen him.
+> > British: I've just seen him.
 > American: I just saw him.
 >
 > British: Have you eaten yet?
@@ -1323,12 +1255,11 @@ dg-publish: true
 >
 > British: I've lost my keys.
 > American: I lost my keys.
-> ```
+> 
 >
 > **American English uses Past Simple where British uses Present Perfect:**
 >
-> ```
-> With words like: just, already, yet, ever
+> > With words like: just, already, yet, ever
 >
 > British: I've already done it.
 > American: I already did it. (also acceptable: I've already done it)
@@ -1338,22 +1269,20 @@ dg-publish: true
 >
 > British: She hasn't arrived yet.
 > American: She didn't arrive yet. / She hasn't arrived yet.
-> ```
+> 
 >
 > **Present Perfect Continuous is similar in both:**
 >
-> ```
-> Both British and American use the continuous form similarly:
+> > Both British and American use the continuous form similarly:
 >
 > • I have been working all day. (both)
 > • She has been studying for hours. (both)
 > • How long have you been waiting? (both)
-> ```
+> 
 >
 > **"Got" vs "Gotten" (Past Participle of "get"):**
 >
-> ```
-> British: I have got a new car. (= I have/possess)
+> > British: I have got a new car. (= I have/possess)
 >         I have got to work. (= I must)
 >
 > American: I have gotten a new car. (= I obtained/received)
@@ -1361,7 +1290,7 @@ dg-publish: true
 >          I have got a car. (= I have/possess)
 >
 > Note: In American English, "gotten" emphasizes the process of obtaining
-> ```
+> 
 
 ---
 
@@ -1395,8 +1324,7 @@ dg-publish: true
 >
 > **Words that suggest PRESENT PERFECT SIMPLE:**
 >
-> ```
-> • ever (alguna vez)
+> > • ever (alguna vez)
 > • never (nunca)
 > • already (ya)
 > • yet (todavía/ya)
@@ -1406,12 +1334,11 @@ dg-publish: true
 > • up to now (hasta ahora) - with numbers/achievements
 > • before (antes)
 > • recently (when emphasizing result)
-> ```
+> 
 >
 > **Words that suggest PRESENT PERFECT CONTINUOUS:**
 >
-> ```
-> • for + duration (por/durante)
+> > • for + duration (por/durante)
 > • since + starting point (desde)
 > • how long (cuánto tiempo)
 > • all day/morning/week (todo el día/mañana/semana)
@@ -1419,12 +1346,11 @@ dg-publish: true
 > • recently (recientemente) - with continuous
 > • these days (estos días)
 > • this week/month (esta semana/mes) - ongoing situation
-> ```
+> 
 >
 > **Words that work with BOTH (context dependent):**
 >
-> ```
-> • today
+> > • today
 >   - I have written 3 emails today. (completed, counting)
 >   - I have been writing emails all day. (ongoing activity)
 >
@@ -1435,7 +1361,7 @@ dg-publish: true
 > • for/since
 >   - I have lived here for 10 years. (state, fact)
 >   - I have been living here for 3 months. (temporary, ongoing)
-> ```
+> 
 
 ---
 
@@ -1447,8 +1373,7 @@ dg-publish: true
 >
 > **LIVE:**
 >
-> ```
-> Present Perfect:
+> > Present Perfect:
 > • I have lived here for 20 years.
 >   → Feels more permanent, stating a fact
 >   → Focus on the length of residence as a fact
@@ -1458,12 +1383,11 @@ dg-publish: true
 >   → Feels more temporary or recent
 >   → Emphasizes the experience/duration
 >   → Often with shorter time periods
-> ```
+> 
 >
 > **WORK:**
 >
-> ```
-> Present Perfect:
+> > Present Perfect:
 > • I have worked here for 5 years.
 >   → Stating a fact about employment
 >   → More formal, factual
@@ -1473,12 +1397,11 @@ dg-publish: true
 >   → Emphasizing the ongoing nature
 >   → Feels more experiential
 >   → Can imply it might be temporary
-> ```
+> 
 >
 > **RAIN:**
 >
-> ```
-> Present Perfect:
+> > Present Perfect:
 > • It has rained a lot this month.
 >   → Focus on the amount/frequency
 >   → Completed rain events
@@ -1488,12 +1411,11 @@ dg-publish: true
 >   → Focus on continuous action
 >   → The rain is/was ongoing
 >   → Evidence: ground is wet
-> ```
+> 
 >
 > **FEEL:**
 >
-> ```
-> Present Perfect:
+> > Present Perfect:
 > • I have felt sick since yesterday.
 >   → Usually OK with shorter time
 >   → More common in questions
@@ -1503,14 +1425,13 @@ dg-publish: true
 >   → Emphasizes ongoing nature
 >   → Common with "lately/recently"
 >   → Often with longer durations
-> ```
+> 
 >
 > [!important] Result vs Process: The Core Distinction
 >
 > **Understanding the fundamental difference:**
 >
-> ```
-> RESULT-FOCUSED (Present Perfect):
+> > RESULT-FOCUSED (Present Perfect):
 > 
 > Focus: What has been ACHIEVED or ACCOMPLISHED
 > Answer to: "What have you done?"
@@ -1521,10 +1442,9 @@ dg-publish: true
 > • We have solved the problem. (Problem no longer exists)
 > 
 > Key question: What's the RESULT? What's been COMPLETED?
-> ```
+> 
 >
-> ```
-> PROCESS-FOCUSED (Present Perfect Continuous):
+> > PROCESS-FOCUSED (Present Perfect Continuous):
 > 
 > Focus: The ACTIVITY, DURATION, or ONGOING PROCESS
 > Answer to: "What have you been doing?"
@@ -1535,12 +1455,11 @@ dg-publish: true
 > • We have been trying to solve the problem. (Still working on it)
 > 
 > Key question: How LONG? What ACTIVITY? Is it ONGOING?
-> ```
+> 
 >
 > **Practical decision tree:**
 >
-> ```
-> Ask yourself these questions:
+> > Ask yourself these questions:
 > 
 > 1. Am I counting completed things? (3 books, 5 times, 10 emails)
 >    → YES: Use Present Perfect Simple
@@ -1561,7 +1480,7 @@ dg-publish: true
 > 5. Is it a completed action with present relevance?
 >    → YES: Use Present Perfect Simple
 >    → NO: Consider your intended meaning
-> ```
+> 
 
 ---
 
@@ -1571,8 +1490,7 @@ dg-publish: true
 >
 > **Common phrases you'll hear often:**
 >
-> ```
-> With PRESENT PERFECT SIMPLE:
+> > With PRESENT PERFECT SIMPLE:
 > 
 > • How have you been? (greeting, asking about wellbeing)
 > • I've had enough! (exasperation)
@@ -1584,10 +1502,9 @@ dg-publish: true
 > • I've always wanted to...
 > • Haven't we met before?
 > • How have things been?
-> ```
+> 
 >
-> ```
-> With PRESENT PERFECT CONTINUOUS:
+> > With PRESENT PERFECT CONTINUOUS:
 > 
 > • What have you been up to? (What have you been doing?)
 > • I've been meaning to... (intention over time)
@@ -1599,7 +1516,7 @@ dg-publish: true
 > • I've been dying to tell you... (eager to share)
 > • You've been working too hard.
 > • How long have you been at it? (How long working on something?)
-> ```
+> 
 
 ---
 
@@ -1611,8 +1528,7 @@ dg-publish: true
 >
 > **[[01 - Regular and Irregular Verbs]]**
 >
-> ```
-> Conexión CRÍTICA: Debes dominar los verbos irregulares primero
+> > Conexión CRÍTICA: Debes dominar los verbos irregulares primero
 > 
 > El Present Perfect usa PAST PARTICIPLES (la tercera forma):
 > • go → went → gone → "I have GONE"
@@ -1625,12 +1541,11 @@ dg-publish: true
 > • Los 50 verbos irregulares más comunes
 > • La diferencia entre past simple y past participle
 > • Verbos que cambian completamente (go-went-gone)
-> ```
+> 
 >
 > **[[Verb Tenses Overview]]** (tema previo recomendado)
 >
-> ```
-> Conexión: Debes entender el sistema de tiempos verbales
+> > Conexión: Debes entender el sistema de tiempos verbales
 > 
 > Present Perfect es parte del sistema de "Perfect Tenses":
 > • Present Perfect: have/has + past participle
@@ -1641,14 +1556,13 @@ dg-publish: true
 > • Simple vs Continuous aspects
 > • Cómo los tiempos se relacionan entre sí
 > • La línea temporal del inglés
-> ```
+> 
 >
 > **📜 Continuación inmediata:**
 >
 > **[[Past Perfect vs Past Perfect Continuous]]** (siguiente tema sugerido)
 >
-> ```
-> Conexión directa: El mismo concepto, pero en el pasado
+> > Conexión directa: El mismo concepto, pero en el pasado
 > 
 > Si dominas Present Perfect vs Present Perfect Continuous,
 > el Past Perfect será más fácil:
@@ -1660,12 +1574,11 @@ dg-publish: true
 > Past Perfect Continuous: I had been working
 > 
 > La lógica es la misma: Simple = resultado, Continuous = duración
-> ```
+> 
 >
 > **[[Future Perfect and Future Perfect Continuous]]**
 >
-> ```
-> Conexión: Completando el sistema de Perfect Tenses
+> > Conexión: Completando el sistema de Perfect Tenses
 > 
 > Misma estructura, proyectada al futuro:
 > • Future Perfect: will have + past participle
@@ -1674,14 +1587,13 @@ dg-publish: true
 > Ejemplo:
 > • By tomorrow, I will have finished. (resultado futuro)
 > • By tomorrow, I will have been working for 10 hours. (duración)
-> ```
+> 
 >
 > **📊 Aplicaciones en temas relacionados:**
 >
 > **[[Time Expressions in English]]**
 >
-> ```
-> Conexión importante: Palabras que determinan qué tiempo usar
+> > Conexión importante: Palabras que determinan qué tiempo usar
 > 
 > Aprenderás en detalle:
 > • for vs since vs ago vs during
@@ -1691,24 +1603,22 @@ dg-publish: true
 > • today vs yesterday
 > 
 > Estas palabras DETERMINAN si usas Present Perfect o Past Simple
-> ```
+> 
 >
 > **[[Past Simple vs Present Perfect]]**
 >
-> ```
-> Confusión MUY común para hispanohablantes:
+> > Confusión MUY común para hispanohablantes:
 > 
 > Español: "He ido al supermercado" puede significar ambas:
 > • I went to the supermarket. (ayer, tiempo específico)
 > • I have been to the supermarket. (experiencia de vida)
 > 
 > Un tema completo dedicado a esta distinción crítica
-> ```
+> 
 >
 > **[[Stative vs Dynamic Verbs]]**
 >
-> ```
-> Conexión esencial para Present Perfect Continuous
+> > Conexión esencial para Present Perfect Continuous
 > 
 > Algunos verbos NO pueden usar continuous:
 > • know, understand, believe (mental states)
@@ -1718,18 +1628,17 @@ dg-publish: true
 > Esto afecta directamente Present Perfect Continuous:
 > ✓ I have known him for years.
 > ✗ I have been knowing him for years.
-> ```
+> 
 >
 > **[[Reported Speech]]** (tema futuro)
 >
-> ```
-> Present Perfect cambia en reported speech:
+> > Present Perfect cambia en reported speech:
 > 
 > Direct: "I have finished my work."
 > Reported: She said she had finished her work.
 > 
 > Present Perfect → Past Perfect
-> ```
+> 
 
 ---
 
@@ -1739,19 +1648,17 @@ dg-publish: true
 >
 > ### Tense Names:
 >
-> ```
-> - Present Perfect = Pretérito Perfecto Compuesto / Presente Perfecto
+> > - Present Perfect = Pretérito Perfecto Compuesto / Presente Perfecto
 > - Present Perfect Continuous = Presente Perfecto Continuo
 > - Present Perfect Progressive = Presente Perfecto Progresivo (mismo que continuous)
 > - Simple = Simple
 > - Continuous = Continuo
 > - Progressive = Progresivo (sinónimo de continuous)
-> ```
+> 
 >
 > ### Key Terms:
 >
-> ```
-> - Auxiliary verb = Verbo auxiliar
+> > - Auxiliary verb = Verbo auxiliar
 > - Have/Has = Haber (en este contexto)
 > - Been = Estado/Sido (past participle de "be")
 > - Past participle = Participio pasado
@@ -1767,12 +1674,11 @@ dg-publish: true
 > - Unfinished = Inacabado/Sin terminar
 > - Temporary = Temporal/Temporario
 > - Permanent = Permanente
-> ```
+> 
 >
 > ### Time Expressions:
 >
-> ```
-> - Ever = Alguna vez
+> > - Ever = Alguna vez
 > - Never = Nunca
 > - Already = Ya (en afirmativo)
 > - Yet = Todavía/Ya (en negativo y preguntas)
@@ -1791,12 +1697,11 @@ dg-publish: true
 > - Today = Hoy
 > - Before = Antes
 > - Times (three times) = Veces (tres veces)
-> ```
+> 
 >
 > ### Common Verbs in Examples:
 >
-> ```
-> - Finish = Terminar/Acabar
+> > - Finish = Terminar/Acabar
 > - Complete = Completar
 > - Start/Begin = Empezar/Comenzar
 > - Continue = Continuar
@@ -1823,12 +1728,11 @@ dg-publish: true
 > - Talk = Hablar
 > - Cry = Llorar
 > - Sleep = Dormir
-> ```
+> 
 >
 > ### Stative Verbs (No Continuous):
 >
-> ```
-> - Know = Saber/Conocer
+> > - Know = Saber/Conocer
 > - Understand = Entender/Comprender
 > - Believe = Creer
 > - Think (opinion) = Pensar/Creer
@@ -1848,12 +1752,11 @@ dg-publish: true
 > - Seem = Parecer
 > - Appear = Aparecer/Parecer
 > - Be = Ser/Estar
-> ```
+> 
 >
 > ### Grammar Terminology:
 >
-> ```
-> - Emphasis = Énfasis
+> > - Emphasis = Énfasis
 > - Focus = Enfoque
 > - Aspect = Aspecto (gramatical)
 > - State = Estado
@@ -1869,12 +1772,11 @@ dg-publish: true
 > - Single action = Acción única
 > - Completed action = Acción completada
 > - Ongoing action = Acción en curso
-> ```
+> 
 >
 > ### Useful Phrases:
 >
-> ```
-> - What have you been doing? = ¿Qué has estado haciendo?
+> > - What have you been doing? = ¿Qué has estado haciendo?
 > - How long have you been...? = ¿Cuánto tiempo has estado...?
 > - I have just finished = Acabo de terminar
 > - She has already left = Ella ya se fue
@@ -1887,7 +1789,7 @@ dg-publish: true
 > - It's been a while = Ha pasado un tiempo
 > - What have you done? = ¿Qué has hecho?
 > - Where have you been? = ¿Dónde has estado?
-> ```
+> 
 
 ---
 
@@ -1897,8 +1799,7 @@ dg-publish: true
 > 
 > **Week 1: Present Perfect Simple**
 > 
-> ```
-> Day 1: Formation and Basic Structure
+> > Day 1: Formation and Basic Structure
 > • Learn have/has + past participle formula
 > • Review top 30 irregular past participles
 > • Practice positive statements
@@ -1939,12 +1840,11 @@ dg-publish: true
 > • Take comprehensive test
 > • Write a short paragraph using only Present Perfect
 > • Identify areas needing more practice
-> ```
+> 
 > 
 > **Week 2: Present Perfect Continuous + Comparison**
 > 
-> ```
-> Day 8: Present Perfect Continuous Formation
+> > Day 8: Present Perfect Continuous Formation
 > • Learn have/has been + verb-ing formula
 > • Practice forming positive statements
 > • Master questions and negatives
@@ -1985,38 +1885,35 @@ dg-publish: true
 > • Take final assessment test
 > • Write essay using both tenses correctly
 > • Self-evaluate progress and identify next steps
-> ```
+> 
 >
 
 > [!tip] Daily Practice Routine (20 minutes)
 > 
 > **Morning (7 minutes):**
 > 
-> ```
-> • Review 5 irregular past participles
+> > • Review 5 irregular past participles
 > • Create 3 Present Perfect sentences about your life
 > • Say them aloud focusing on pronunciation
 > • Think: What have I done so far today?
-> ```
+> 
 > 
 > **Afternoon (7 minutes):**
 > 
-> ```
-> • Write 3 Present Perfect Continuous sentences
+> > • Write 3 Present Perfect Continuous sentences
 > • Focus on: What have you been doing?
 > • Practice the difference between result and duration
 > • Do 5 quick multiple-choice exercises
-> ```
+> 
 > 
 > **Evening (6 minutes):**
 > 
-> ```
-> • Reflect on your day in English
+> > • Reflect on your day in English
 > • Use Present Perfect to summarize achievements
 > • Use Present Perfect Continuous for activities
 > • Example: "Today I have completed 3 tasks. I have been 
 >   studying English for 2 hours."
-> ```
+> 
 
 ---
 
@@ -2026,8 +1923,7 @@ dg-publish: true
 > 
 > **Scenario 1: Job Interview**
 > 
-> ```
-> Interviewer questions (you answer):
+> > Interviewer questions (you answer):
 > 
 > 1. How long have you been working in this field?
 >    Your answer: _________________________________
@@ -2045,12 +1941,11 @@ dg-publish: true
 >    Your answer: _________________________________
 > 
 > Tip: Use Simple for achievements, Continuous for ongoing responsibilities
-> ```
+> 
 > 
 > **Scenario 2: Catching Up With a Friend**
 > 
-> ```
-> Create a natural conversation:
+> > Create a natural conversation:
 > 
 > Friend: "Hey! It's been ages! What have you been up to?"
 > You: ____________________________________________
@@ -2066,12 +1961,11 @@ dg-publish: true
 > 
 > Friend: "How long have you been living in your current place?"
 > You: ____________________________________________
-> ```
+> 
 > 
 > **Scenario 3: Doctor's Appointment**
 > 
-> ```
-> Doctor: "How long have you been feeling this way?"
+> > Doctor: "How long have you been feeling this way?"
 > Patient: _________________________________________
 > 
 > Doctor: "Have you been taking any medication?"
@@ -2084,12 +1978,11 @@ dg-publish: true
 > Patient: _________________________________________
 > 
 > Note: Health contexts often use Present Perfect for duration
-> ```
+> 
 > 
 > **Scenario 4: Progress Report at Work**
 > 
-> ```
-> Manager: "What has the team accomplished this month?"
+> > Manager: "What has the team accomplished this month?"
 > You: ____________________________________________
 > 
 > Manager: "Have you been facing any challenges?"
@@ -2102,7 +1995,7 @@ dg-publish: true
 > You: ____________________________________________
 > 
 > Tip: Simple for completed tasks/numbers, Continuous for ongoing work
-> ```
+> 
 
 ---
 
@@ -2112,8 +2005,7 @@ dg-publish: true
 > 
 > **ERROR 1: Using Present Perfect with specific past time**
 > 
-> ```
-> ✗ I have seen him yesterday.
+> > ✗ I have seen him yesterday.
 > ✓ I saw him yesterday.
 > 
 > ✗ She has visited London last year.
@@ -2132,12 +2024,11 @@ dg-publish: true
 > SPANISH INTERFERENCE:
 > Spanish "He visto" can work with "ayer"
 > English "I have seen" CANNOT work with "yesterday"
-> ```
+> 
 > 
 > **ERROR 2: Using continuous with stative verbs**
 > 
-> ```
-> ✗ I have been knowing her for 10 years.
+> > ✗ I have been knowing her for 10 years.
 > ✓ I have known her for 10 years.
 > 
 > ✗ She has been having a car since 2020.
@@ -2159,12 +2050,11 @@ dg-publish: true
 > EXCEPTION: Some verbs can be both
 > • think (opinion) = stative → I have thought so
 > • think (process) = dynamic → I have been thinking about it
-> ```
+> 
 > 
 > **ERROR 3: Confusing FOR and SINCE**
 > 
-> ```
-> ✗ I have lived here since 5 years.
+> > ✗ I have lived here since 5 years.
 > ✓ I have lived here for 5 years.
 > 
 > ✗ She has worked here for 2020.
@@ -2185,12 +2075,11 @@ dg-publish: true
 > MEMORY TIP:
 > FOR measures the LENGTH of time (4 letters = period)
 > SINCE points to a MOMENT in time (5 letters = specific)
-> ```
+> 
 > 
 > **ERROR 4: Wrong past participle form**
 > 
-> ```
-> ✗ I have went to the store.
+> > ✗ I have went to the store.
 > ✓ I have gone to the store.
 > (go → went → gone)
 > 
@@ -2215,12 +2104,11 @@ dg-publish: true
 > 
 > Common confusion:
 > "I went" (past simple) vs "I have gone" (present perfect)
-> ```
+> 
 > 
 > **ERROR 5: Using Simple when Continuous is better**
 > 
-> ```
-> ✗ A: Why are you tired?
+> > ✗ A: Why are you tired?
 >    B: I have worked all day.
 > ✓ B: I have been working all day.
 > 
@@ -2238,12 +2126,11 @@ dg-publish: true
 > SIMPLE would focus on result/completion:
 > • I have worked 8 hours today. (counting hours - result)
 > • I have been working all day. (emphasizing duration - process)
-> ```
+> 
 > 
 > **ERROR 6: Forgetting auxiliary "have/has"**
 > 
-> ```
-> ✗ I seen that movie before.
+> > ✗ I seen that movie before.
 > ✓ I have seen that movie before.
 > 
 > ✗ She gone to work already.
@@ -2261,12 +2148,11 @@ dg-publish: true
 > NOTE: In informal speech you might hear:
 > "I seen it" (non-standard)
 > But write/speak: "I have seen it" or "I've seen it"
-> ```
+> 
 > 
 > **ERROR 7: Using Present Perfect for actions in progress NOW**
 > 
-> ```
-> ✗ I have been reading right now.
+> > ✗ I have been reading right now.
 > ✓ I am reading right now.
 > ✓ I have been reading for an hour. (and still reading)
 > 
@@ -2280,7 +2166,7 @@ dg-publish: true
 > 
 > Use "right now," "at this moment" → Present Continuous
 > Use "for," "since," "all day" → Present Perfect Continuous
-> ```
+> 
 
 ---
 
@@ -2290,8 +2176,7 @@ dg-publish: true
 > 
 > **Text messages and casual communication:**
 > 
-> ```
-> Common shortenings:
+> > Common shortenings:
 > • I've = I have
 > • You've = You have
 > • He's/She's = He has/She has (or He is/She is - context matters!)
@@ -2309,12 +2194,11 @@ dg-publish: true
 > 
 > Note: Very informal texts may drop "have"
 > "Been busy?" (instead of "Have you been busy?")
-> ```
+> 
 > 
 > **Social media posts:**
 > 
-> ```
-> Common patterns:
+> > Common patterns:
 > 
 > • "I've just finished..." (sharing recent achievement)
 > • "Has anyone been to...?" (asking for experiences)
@@ -2327,12 +2211,11 @@ dg-publish: true
 > ✓ "Has anyone tried this new restaurant?"
 > ✓ "We've been developing this app for 6 months!"
 > ✓ "Been feeling grateful lately ❤️"
-> ```
+> 
 > 
 > **Professional emails:**
 > 
-> ```
-> Formal usage (don't drop auxiliaries):
+> > Formal usage (don't drop auxiliaries):
 > 
 > Opening:
 > • "I have reviewed your proposal and..."
@@ -2348,7 +2231,7 @@ dg-publish: true
 > • "I have attached the requested files."
 > • "We have scheduled a meeting for next week."
 > • "Please let me know if you have any questions."
-> ```
+> 
 
 ---
 
@@ -2358,8 +2241,7 @@ dg-publish: true
 > 
 > **Challenge 1: Direct translation doesn't always work**
 > 
-> ```
-> SPANISH: Pretérito Perfecto Compuesto
+> > SPANISH: Pretérito Perfecto Compuesto
 > Example: "He comido"
 > 
 > Can mean BOTH:
@@ -2373,12 +2255,11 @@ dg-publish: true
 > Spanish: "He ido al supermercado hoy"
 > English: "I went to the supermarket today" (NOT "I have gone")
 > OR: "I have been to the supermarket" (experience, no time specified)
-> ```
+> 
 > 
 > **Challenge 2: Use of "desde" vs "desde hace"**
 > 
-> ```
-> SPANISH:
+> > SPANISH:
 > • "Vivo aquí desde 2020" (since)
 > • "Vivo aquí desde hace 5 años" (for)
 > 
@@ -2389,12 +2270,11 @@ dg-publish: true
 > Don't translate word-for-word:
 > ✗ I have lived here since 5 years. (trying to translate "desde hace")
 > ✓ I have lived here for 5 years.
-> ```
+> 
 > 
 > **Challenge 3: "Have been" vs "Have gone"**
 > 
-> ```
-> SPANISH often uses "ir" (go) for both concepts:
+> > SPANISH often uses "ir" (go) for both concepts:
 > • "He ido a París" (I have been to Paris - experience)
 > • "Ha ido al banco" (He has gone to the bank - and is still there)
 > 
@@ -2406,12 +2286,11 @@ dg-publish: true
 > • HAVE GONE = went and is still there/away
 >   "He has gone to the bank" (he's there now, not here)
 >   "She has gone to Mexico" (she's away, in Mexico)
-> ```
+> 
 > 
 > **Challenge 4: Present Perfect with "ya," "todavía," "aún"**
 > 
-> ```
-> SPANISH placement is flexible:
+> > SPANISH placement is flexible:
 > • "Ya he comido" / "He comido ya"
 > • "Todavía no he comido" / "No he comido todavía"
 > 
@@ -2432,12 +2311,11 @@ dg-publish: true
 > • Goes BEFORE auxiliary in negatives
 > ✓ I still haven't eaten.
 > ✗ I haven't still eaten.
-> ```
+> 
 > 
 > **Challenge 5: Continuous aspect**
 > 
-> ```
-> SPANISH: Only has one Present Perfect form
+> > SPANISH: Only has one Present Perfect form
 > • "He estado estudiando" = continuous concept
 > • "He estudiado" = simple concept
 > 
@@ -2451,7 +2329,7 @@ dg-publish: true
 > (NOT: I have been studying 3 chapters)
 > 
 > RULE: Counting completed things → use Simple, not Continuous
-> ```
+> 
 
 ---
 
@@ -2461,20 +2339,18 @@ dg-publish: true
 > 
 > **Level 1: Basic Understanding ✅**
 > 
-> ```
-> □ I can form Present Perfect with have/has + past participle
+> > □ I can form Present Perfect with have/has + past participle
 > □ I know the past participle of 50 common irregular verbs
 > □ I can form negatives and questions
 > □ I understand FOR vs SINCE
 > □ I know when to use ever, never, already, yet, just
 > □ I understand Present Perfect ≠ Past Simple
 > □ I can write 10 correct Present Perfect sentences
-> ```
+> 
 > 
 > **Level 2: Intermediate Usage ✅**
 > 
-> ```
-> □ I can form Present Perfect Continuous correctly
+> > □ I can form Present Perfect Continuous correctly
 > □ I understand result-focused vs duration-focused
 > □ I can choose between Simple and Continuous appropriately
 > □ I know which verbs don't take continuous (stative verbs)
@@ -2482,12 +2358,11 @@ dg-publish: true
 > □ I can explain the difference to someone else
 > □ I can write a paragraph using both tenses correctly
 > □ I can ask and answer questions about life experiences
-> ```
+> 
 > 
 > **Level 3: Advanced Mastery ✅**
 > 
-> ```
-> □ I use Present Perfect naturally in conversation
+> > □ I use Present Perfect naturally in conversation
 > □ I can distinguish subtle meaning differences (live vs been living)
 > □ I recognize and correct my own mistakes
 > □ I can understand Present Perfect in native speech/media
@@ -2496,7 +2371,7 @@ dg-publish: true
 > □ I can write complex paragraphs using both tenses accurately
 > □ I feel confident using both tenses in professional situations
 > □ I can teach these concepts to others
-> ```
+> 
 
 ---
 
@@ -2506,43 +2381,39 @@ dg-publish: true
 > 
 > **Online Practice:**
 > 
-> ```
-> • British Council: Present Perfect exercises
+> > • British Council: Present Perfect exercises
 > • Perfect English Grammar: Detailed explanations
 > • English Grammar in Use (Cambridge): Units 7-14
 > • BBC Learning English: Present Perfect section
 > • EnglishPage.com: Present Perfect tutorial
-> ```
+> 
 > 
 > **Listening Practice:**
 > 
-> ```
-> • Watch English interviews (notice how natives use it)
+> > • Watch English interviews (notice how natives use it)
 > • Listen to podcasts, mark Present Perfect usage
 > • YouTube: Grammar videos on Present Perfect
 > • News broadcasts (British especially use Present Perfect more)
 > • Songs with Present Perfect (many pop songs use it)
-> ```
+> 
 > 
 > **Speaking Practice:**
 > 
-> ```
-> • Language exchange partners
+> > • Language exchange partners
 > • Talk about your life experiences using "Have you ever...?"
 > • Describe your day using Present Perfect
 > • Role-play job interviews
 > • Practice explaining what you've been doing lately
-> ```
+> 
 > 
 > **Writing Practice:**
 > 
-> ```
-> • Keep a journal using both tenses
+> > • Keep a journal using both tenses
 > • Write about achievements this week/month/year
 > • Describe ongoing projects
 > • Email practice (professional and casual)
 > • Social media posts in English
-> ```
+> 
 
 ---
 
@@ -2552,8 +2423,7 @@ dg-publish: true
 > 
 > **Remember:**
 > 
-> ```
-> ✓ Present Perfect is ONE OF THE MOST DIFFICULT tenses for learners
+> > ✓ Present Perfect is ONE OF THE MOST DIFFICULT tenses for learners
 > ✓ Even advanced students make mistakes sometimes
 > ✓ Native speakers might not know the grammar rules but use it naturally
 > ✓ You need LOTS of exposure and practice
@@ -2561,12 +2431,11 @@ dg-publish: true
 > ✓ Focus on understanding the CONCEPT, not just memorizing rules
 > ✓ Listen to how natives use it in real contexts
 > ✓ Practice a little every day rather than cramming
-> ```
+> 
 > 
 > **Key Success Principles:**
 > 
-> ```
-> 1. MASTER irregular past participles first (essential foundation)
+> > 1. MASTER irregular past participles first (essential foundation)
 > 2. UNDERSTAND the difference: result vs duration vs process
 > 3. PRACTICE with real-life contexts, not just exercises
 > 4. LISTEN to native speakers and notice patterns
@@ -2574,12 +2443,11 @@ dg-publish: true
 > 6. THINK in English time concepts
 > 7. REVIEW regularly - this tense needs constant reinforcement
 > 8. BE PATIENT - mastery takes months of consistent practice
-> ```
+> 
 > 
 > **The Golden Rule:**
 > 
-> ```
-> When choosing between Present Perfect Simple and Continuous,
+> > When choosing between Present Perfect Simple and Continuous,
 > ask yourself:
 > 
 > "What do I want to emphasize?"
@@ -2588,7 +2456,7 @@ dg-publish: true
 > DURATION/PROCESS/ACTIVITY? → Use Continuous
 > 
 > This one question will guide 90% of your decisions!
-> ```
+> 
 
 ---
 
@@ -2598,8 +2466,7 @@ dg-publish: true
 > 
 > **PRESENT PERFECT SIMPLE:**
 > 
-> ```
-> Formation: have/has + past participle
+> > Formation: have/has + past participle
 > 
 > Use for:
 > • Completed actions (unspecified time)
@@ -2610,12 +2477,11 @@ dg-publish: true
 > • Counting completed achievements
 > 
 > Focus: RESULT, COMPLETION, ACHIEVEMENT
-> ```
+> 
 > 
 > **PRESENT PERFECT CONTINUOUS:**
 > 
-> ```
-> Formation: have/has + been + verb-ing
+> > Formation: have/has + been + verb-ing
 > 
 > Use for:
 > • Actions still in progress
@@ -2625,12 +2491,11 @@ dg-publish: true
 > • Repeated actions over time
 > 
 > Focus: DURATION, PROCESS, ACTIVITY
-> ```
+> 
 > 
 > **THE FUNDAMENTAL DIFFERENCE:**
 > 
-> ```
-> SIMPLE = What has been DONE? (result)
+> > SIMPLE = What has been DONE? (result)
 > CONTINUOUS = How LONG have you been DOING it? (duration)
 > 
 > • I have read the book. (finished, focus on completion)
@@ -2641,29 +2506,34 @@ dg-publish: true
 > 
 > • We have lived here for 10 years. (fact, more permanent)
 > • We have been living here for 3 months. (temporary, experiential)
-> ```
+> 
 > 
 > **CRITICAL RULES:**
 > 
-> ```
-> ✓ Don't use Present Perfect with specific past time
+> > ✓ Don't use Present Perfect with specific past time
 > ✓ Don't use Continuous with stative verbs
 > ✓ FOR = duration, SINCE = starting point
 > ✓ Always use past participle (3rd form), not past simple
 > ✓ British English uses Present Perfect more than American English
-> ```
+> 
 > 
 > **Next Steps:**
 > 
-> ```
-> → Practice daily with real-life contexts
+> > → Practice daily with real-life contexts
 > → Review irregular verb forms regularly
 > → Continue to Past Perfect (next logical step)
 > → Study time expressions in depth
 > → Watch/listen to English media actively
 > → Keep a learning journal using both tenses
-> ```
+> 
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Siguiente: [[Vocabulary – Experiences & Progress]]
 
 **Tags:** #grammar #present-perfect #present-perfect-continuous #verb-tenses #perfect-tenses #continuous-aspect #time-expressions #for-since #irregular-verbs #past-participle #result-vs-duration #english-grammar #advanced-grammar #tense-comparison #stative-verbs

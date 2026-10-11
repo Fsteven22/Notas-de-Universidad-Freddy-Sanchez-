@@ -45,8 +45,7 @@ dg-publish: true
 > 
 > **Estructura básica:**
 > 
-> ```
-> SOME-  +  -ONE / -BODY / -THING / -WHERE
+> > SOME-  +  -ONE / -BODY / -THING / -WHERE
 > ANY-
 > NO-
 > EVERY-
@@ -56,7 +55,7 @@ dg-publish: true
 > anything = cualquier cosa
 > nowhere = ningún lugar
 > everybody = todos
-> ```
+> 
 > 
 > **Las 4 familias:**
 > 
@@ -86,8 +85,7 @@ dg-publish: true
 > 
 > **⚠️ Nota importante:**
 > 
-> ```
-> -ONE vs -BODY:
+> > -ONE vs -BODY:
 > • someone = somebody (mismo significado)
 > • anyone = anybody (mismo significado)
 > • no one = nobody (mismo significado)
@@ -97,7 +95,7 @@ dg-publish: true
 > -BODY es más común en inglés hablado.
 > 
 > Ambas formas son correctas y intercambiables.
-> ```
+> 
 
 ---
 
@@ -121,8 +119,7 @@ dg-publish: true
 > 
 > **Ejemplos detallados:**
 > 
-> ```
-> Afirmativo (sabemos que hay alguien, pero no sabemos quién):
+> > Afirmativo (sabemos que hay alguien, pero no sabemos quién):
 > ✅ Someone spilled coffee in the kitchen
 > ✅ I think someone knocked off the vase
 > ✅ Someone called you while you were out
@@ -139,16 +136,15 @@ dg-publish: true
 > ✅ I think someone damaged the car
 > ✅ Someone is going to be mad about this
 > ✅ Someone needs to pick up this mess
-> ```
+> 
 > 
 > **SOMEBODY** (exactamente igual):
 > 
-> ```
-> ✅ Somebody left their bag here
+> > ✅ Somebody left their bag here
 > ✅ Can somebody help me with this?
 > ✅ I heard somebody outside
 > ✅ Somebody told me you were looking for me
-> ```
+> 
 >
 
 > [!example] 📦 SOMETHING (algo)
@@ -161,8 +157,7 @@ dg-publish: true
 > 
 > **Ejemplos:**
 > 
-> ```
-> Afirmativo:
+> > Afirmativo:
 > ✅ Something fell off the shelf
 > ✅ I need to tell you something important
 > ✅ Something is wrong with my phone
@@ -180,7 +175,7 @@ dg-publish: true
 > ✅ Something terrible happened yesterday
 > ✅ I think something is broken
 > ✅ There's something I feel bad about
-> ```
+> 
 >
 
 > [!tip] 📍 SOMEWHERE (en algún lugar)
@@ -192,8 +187,7 @@ dg-publish: true
 > 
 > **Ejemplos:**
 > 
-> ```
-> Afirmativo:
+> > Afirmativo:
 > ✅ I left my phone somewhere
 > ✅ Let's go somewhere quiet to talk
 > ✅ I've seen this somewhere before
@@ -207,7 +201,7 @@ dg-publish: true
 > ✅ I left the window open somewhere
 > ✅ The water spilled somewhere near the computer
 > ✅ I knocked something off somewhere in the kitchen
-> ```
+> 
 
 ---
 
@@ -224,8 +218,7 @@ dg-publish: true
 > 
 > **Uso en preguntas:**
 > 
-> ```
-> ✅ Did anyone see what happened?
+> > ✅ Did anyone see what happened?
 >    (¿Alguien vio qué pasó?)
 > 
 > ✅ Is anyone here?
@@ -242,12 +235,11 @@ dg-publish: true
 > ✅ Did anyone leave the door open?
 > ✅ Is anyone mad at me about the accident?
 > ✅ Can anyone help me pick this up?
-> ```
+> 
 > 
 > **Uso en negativo:**
 > 
-> ```
-> ✅ I didn't see anyone
+> > ✅ I didn't see anyone
 >    (No vi a nadie)
 > 
 > ✅ There isn't anyone in the office
@@ -264,12 +256,11 @@ dg-publish: true
 > ✅ There wasn't anyone around when it happened
 > ✅ I don't want anyone to be mad at me
 > ✅ Nobody blamed anyone for the mistake
-> ```
+> 
 > 
 > **Uso con "if" y significado "cualquiera":**
 > 
-> ```
-> Con "if":
+> > Con "if":
 > ✅ If anyone asks, tell them I'm in a meeting
 > ✅ If anyone needs help, let me know
 > ✅ Call me if anyone complains
@@ -283,15 +274,14 @@ dg-publish: true
 > 
 > ✅ Anyone would feel bad about this
 >    (Cualquiera se sentiría mal por esto)
-> ```
+> 
 >
 
 > [!example] 📦 ANYTHING (algo/nada - en preguntas/negativos)
 > 
 > **En preguntas:**
 > 
-> ```
-> ✅ Did you see anything?
+> > ✅ Did you see anything?
 >    (¿Viste algo?)
 > 
 > ✅ Is anything wrong?
@@ -308,12 +298,11 @@ dg-publish: true
 > ✅ Is anything broken?
 > ✅ Did you spill anything?
 > ✅ Was anything destroyed in the accident?
-> ```
+> 
 > 
 > **En negativo:**
 > 
-> ```
-> ✅ I didn't do anything wrong
+> > ✅ I didn't do anything wrong
 >    (No hice nada malo)
 > 
 > ✅ There isn't anything to worry about
@@ -330,12 +319,11 @@ dg-publish: true
 > ✅ Nothing was destroyed, but something was damaged
 > ✅ I don't feel bad about anything
 > ✅ There isn't anything to pick up
-> ```
+> 
 > 
 > **Significado "cualquier cosa":**
 > 
-> ```
-> ✅ You can eat anything you want
+> > ✅ You can eat anything you want
 >    (Puedes comer cualquier cosa que quieras)
 > 
 > ✅ I'll do anything to make it right
@@ -343,15 +331,14 @@ dg-publish: true
 > 
 > ✅ Anything is possible
 >    (Cualquier cosa es posible)
-> ```
+> 
 >
 
 > [!tip] 📍 ANYWHERE (en algún/ningún lugar)
 > 
 > **En preguntas:**
 > 
-> ```
-> ✅ Did you go anywhere yesterday?
+> > ✅ Did you go anywhere yesterday?
 >    (¿Fuiste a algún lugar ayer?)
 > 
 > ✅ Can you see it anywhere?
@@ -363,12 +350,11 @@ dg-publish: true
 > Con Unit 12:
 > ✅ Did you leave your keys anywhere?
 > ✅ Can you see any damage anywhere?
-> ```
+> 
 > 
 > **En negativo:**
 > 
-> ```
-> ✅ I can't find it anywhere
+> > ✅ I can't find it anywhere
 >    (No lo encuentro en ningún lugar)
 > 
 > ✅ There isn't anywhere to sit
@@ -380,17 +366,16 @@ dg-publish: true
 > Con Unit 12:
 > ✅ I can't find my phone anywhere
 > ✅ There isn't anywhere safe to put this
-> ```
+> 
 > 
 > **Significado "cualquier lugar":**
 > 
-> ```
-> ✅ You can sit anywhere
+> > ✅ You can sit anywhere
 >    (Puedes sentarte en cualquier lugar)
 > 
 > ✅ Put it anywhere
 >    (Ponlo en cualquier lugar)
-> ```
+> 
 
 ---
 
@@ -400,8 +385,7 @@ dg-publish: true
 > 
 > **Características importantes:**
 > 
-> ```
-> ⚠️ NO ONE / NOBODY ya es negativo
+> > ⚠️ NO ONE / NOBODY ya es negativo
 > Por lo tanto, NO usar con otro negativo
 > 
 > ✅ Nobody knows (CORRECTO)
@@ -409,7 +393,7 @@ dg-publish: true
 > 
 > ✅ No one saw me (CORRECTO)
 > ❌ No one didn't see me (INCORRECTO)
-> ```
+> 
 > 
 > **Uso básico:**
 > 
@@ -421,8 +405,7 @@ dg-publish: true
 > 
 > **Ejemplos detallados:**
 > 
-> ```
-> Básico:
+> > Básico:
 > ✅ Nobody knows who did it
 >    (Nadie sabe quién lo hizo)
 > 
@@ -445,12 +428,11 @@ dg-publish: true
 > Comparación:
 > I didn't see anyone = Nobody saw me (mismo significado)
 > There wasn't anyone = There was no one (mismo significado)
-> ```
+> 
 > 
 > **⚠️ Gramática especial con NO ONE/NOBODY:**
 > 
-> ```
-> Con verbos auxiliares:
+> > Con verbos auxiliares:
 > ✅ Nobody can help me (NOT: Nobody can't help me)
 > ✅ No one has called (NOT: No one hasn't called)
 > 
@@ -459,15 +441,14 @@ dg-publish: true
 > ✅ No one saw you, did they? (NOT: didn't they?)
 > 
 > El tag question es POSITIVO porque nobody ya es negativo
-> ```
+> 
 >
 
 > [!example] 📦 NOTHING (nada)
 > 
 > **Uso básico:**
 > 
-> ```
-> ✅ Nothing happened
+> > ✅ Nothing happened
 >    (No pasó nada / Nada pasó)
 > 
 > ✅ Nothing is wrong
@@ -489,12 +470,11 @@ dg-publish: true
 > ⚠️ Remember:
 > ✅ Nothing is broken (CORRECTO)
 > ❌ Nothing isn't broken (INCORRECTO - doble negativo)
-> ```
+> 
 > 
 > **Patterns comunes:**
 > 
-> ```
-> nothing + to + verb:
+> > nothing + to + verb:
 > ✅ There's nothing to do
 > ✅ There's nothing to eat
 > ✅ There's nothing to worry about
@@ -509,15 +489,14 @@ dg-publish: true
 > Comparación:
 > I didn't see anything = I saw nothing (mismo significado)
 > There wasn't anything = There was nothing (mismo significado)
-> ```
+> 
 >
 
 > [!tip] 📍 NOWHERE (en ningún lugar)
 > 
 > **Uso:**
 > 
-> ```
-> ✅ There's nowhere to sit
+> > ✅ There's nowhere to sit
 >    (No hay ningún lugar donde sentarse)
 > 
 > ✅ I have nowhere to go
@@ -536,7 +515,7 @@ dg-publish: true
 > ⚠️ Remember:
 > ✅ It's nowhere (CORRECTO)
 > ❌ It isn't nowhere (INCORRECTO - doble negativo)
-> ```
+> 
 
 ---
 
@@ -546,8 +525,7 @@ dg-publish: true
 > 
 > **Uso básico:**
 > 
-> ```
-> ✅ Everyone makes mistakes
+> > ✅ Everyone makes mistakes
 >    (Todos cometen errores)
 > 
 > ✅ Everybody was there
@@ -575,15 +553,14 @@ dg-publish: true
 > Pero con pronombres de retorno, se usa "they":
 > ✅ Everyone brought their lunch
 > ✅ Everybody did their best
-> ```
+> 
 >
 
 > [!example] 📦 EVERYTHING (todo)
 > 
 > **Uso:**
 > 
-> ```
-> ✅ Everything is fine
+> > ✅ Everything is fine
 >    (Todo está bien)
 > 
 > ✅ Everything will be okay
@@ -606,15 +583,14 @@ dg-publish: true
 > 
 > ✅ Everything is ready (NOT: Everything are ready)
 > ✅ Everything looks good (NOT: Everything look good)
-> ```
+> 
 >
 
 > [!tip] 📍 EVERYWHERE (en todas partes)
 > 
 > **Uso:**
 > 
-> ```
-> ✅ I've looked everywhere
+> > ✅ I've looked everywhere
 >    (He buscado en todas partes)
 > 
 > ✅ There's water everywhere
@@ -631,7 +607,7 @@ dg-publish: true
 > ✅ There's broken glass everywhere
 > ✅ I've looked everywhere for my keys
 > ✅ Water was dripping everywhere after I left the tap on
-> ```
+> 
 
 ---
 
@@ -659,8 +635,7 @@ dg-publish: true
 > 
 > **Equivalencias (mismo significado):**
 > 
-> ```
-> not...anyone = no one = nobody
+> > not...anyone = no one = nobody
 > ✅ I didn't see anyone = I saw no one = I saw nobody
 > 
 > not...anything = nothing
@@ -670,7 +645,7 @@ dg-publish: true
 > ✅ I can't find it anywhere = I can find it nowhere (formal)
 > 
 > ⚠️ Pero la forma con "not...any" es más común en conversación
-> ```
+> 
 
 ---
 
@@ -689,8 +664,7 @@ dg-publish: true
 > 
 > **Visual comparison:**
 > 
-> ```
-> DIRECT SPEECH:
+> > DIRECT SPEECH:
 > "I'm exhausted"
 > [Las palabras exactas de la persona]
 > 
@@ -699,12 +673,11 @@ dg-publish: true
 > REPORTED SPEECH:
 > She said (that) she was exhausted
 > [Reportando lo que dijo, no las palabras exactas]
-> ```
+> 
 > 
 > **Estructura básica:**
 > 
-> ```
-> REPORTING VERB + (that) + REPORTED CLAUSE
+> > REPORTING VERB + (that) + REPORTED CLAUSE
 > 
 > ✅ He said (that) he was sorry
 >     ↑         ↑        ↑
@@ -718,7 +691,7 @@ dg-publish: true
 > • mentioned
 > • replied
 > • answered
-> ```
+> 
 > 
 > **¿Por qué usar Reported Speech?**
 > 
@@ -752,8 +725,7 @@ dg-publish: true
 > 
 > **Ejemplos detallados con Unit 12 vocabulary:**
 > 
-> ```
-> PRESENT SIMPLE → PAST SIMPLE:
+> > PRESENT SIMPLE → PAST SIMPLE:
 > Direct: "I feel bad about the accident"
 > Reported: She said she felt bad about the accident
 > 
@@ -797,12 +769,11 @@ dg-publish: true
 > 
 > Direct: "Anyone can make mistakes"
 > Reported: She said anyone could make mistakes
-> ```
+> 
 > 
 > **⚠️ Excepciones - Cuándo NO cambiar el tiempo:**
 > 
-> ```
-> 1. Si lo que se dijo sigue siendo verdad ahora:
+> > 1. Si lo que se dijo sigue siendo verdad ahora:
 > Direct: "The Earth is round"
 > Reported: He said the Earth is round
 > (No cambies - sigue siendo verdad)
@@ -816,7 +787,7 @@ dg-publish: true
 > Direct: "I'm tired"
 > Reported: He says he's tired
 > (No cambies porque "says" es presente)
-> ```
+> 
 >
 
 > [!success] 👤 Cambios de Pronombres y Posesivos
@@ -836,23 +807,21 @@ dg-publish: true
 > 
 > **Ejemplos con Unit 12:**
 > 
-> ```
-> Direct: "I damaged my laptop"
+> > Direct: "I damaged my laptop"
 > Reported: She said she had damaged her laptop
 >           ↑          ↑            ↑
 >        she not I   had not has   her not my
 > 
 > Direct: "I'm mad at you for spilling coffee"
 > Reported: He told me he was mad at me for spilling coffee
-> ```
+> 
 >       ↑        ↑       ↑            ↑
 >   He not I  told me  he not I    me not you
-> ```
-> 
+> > 
 > Direct: "We left the window open" Reported: They said they had left the window open ↑ ↑ They not We they not we
 > 
 > Direct: "You should pick up the broken glass" Reported: She told me I should pick up the broken glass ↑ ↑ She I not you
-> ```
+> 
 >
 
 > [!tip] 📅 Cambios de Expresiones de Tiempo y Lugar
@@ -874,8 +843,7 @@ dg-publish: true
 > 
 > **Ejemplos completos con Unit 12:**
 > 
-> ```
-> Direct: "I spilled coffee this morning"
+> > Direct: "I spilled coffee this morning"
 > Reported: She said she had spilled coffee that morning
 > 
 > Direct: "Someone left the door open yesterday"
@@ -895,7 +863,7 @@ dg-publish: true
 > 
 > Direct: "Everyone was terrified last night"
 > Reported: They said everyone had been terrified the previous night
-> ```
+> 
 
 ---
 
@@ -905,15 +873,14 @@ dg-publish: true
 > 
 > **Estructura:**
 > 
-> ```
-> SAID:
+> > SAID:
 > ✅ said (that) + clause
 > ✅ said + to + person + (that) + clause
 > 
 > TOLD:
 > ✅ told + person + (that) + clause
 > ❌ told (that) + clause [WRONG - needs person]
-> ```
+> 
 > 
 > **Comparación:**
 > 
@@ -925,8 +892,7 @@ dg-publish: true
 > 
 > **Ejemplos correctos:**
 > 
-> ```
-> SAID:
+> > SAID:
 > ✅ She said she was sorry
 > ✅ He said that he had damaged the car
 > ✅ They said nothing was broken
@@ -947,12 +913,11 @@ dg-publish: true
 > ✅ She told me she was sorry
 > ✅ He told me (that) he was tired
 > ✅ She told me she was late
-> ```
+> 
 > 
 > **Con Unit 12 vocabulary:**
 > 
-> ```
-> SAID:
+> > SAID:
 > ✅ He said someone had spilled coffee
 > ✅ She said she had knocked off the vase
 > ✅ They said nothing was damaged
@@ -963,7 +928,7 @@ dg-publish: true
 > ✅ She told her roommate she had knocked off the vase
 > ✅ They told us nothing was damaged
 > ✅ He told me he was exhausted
-> ```
+> 
 
 ---
 
@@ -973,8 +938,7 @@ dg-publish: true
 > 
 > **Scenario 1: Reporting an accident**
 > 
-> ```
-> What actually happened (Direct Speech):
+> > What actually happened (Direct Speech):
 > Maria: "I spilled coffee on the laptop this morning. 
 >         Someone left it on the table and I didn't see it. 
 >         Everything is ruined! I'm absolutely terrified about 
@@ -995,12 +959,11 @@ dg-publish: true
 > • Tense changes: spilled → had spilled, is → was, will → would
 > • Time changes: this morning → that morning
 > • Pronoun changes: I → she, my → her
-> ```
+> 
 > 
 > **Scenario 2: Explaining what happened**
 > 
-> ```
-> Direct (what witnesses said):
+> > Direct (what witnesses said):
 > Witness 1: "I didn't see anyone near the car"
 > Witness 2: "Nothing unusual happened"
 > Witness 3: "Someone must have damaged it during the night"
@@ -1020,12 +983,11 @@ dg-publish: true
 > • Indefinite pronouns: anyone, nothing, someone
 > • Extreme adjectives: miserable, destroyed
 > • Tense changes throughout
-> ```
+> 
 > 
 > **Scenario 3: Taking responsibility**
 > 
-> ```
-> Direct:
+> > Direct:
 > John: "I left the window open last night. I feel terrible 
 >        about it. The rain damaged everything on the desk. 
 >        Nobody is blaming me, but I blame myself. I can 
@@ -1046,7 +1008,7 @@ dg-publish: true
 > • Feelings: feel terrible, blame
 > • Multiple tense changes
 > • Time change: last night → the previous night
-> ```
+> 
 
 ---
 
@@ -1056,8 +1018,7 @@ dg-publish: true
 > 
 > **Choose the correct pronoun:**
 > 
-> ```
-> someone/anyone/no one • something/anything/nothing • somewhere/anywhere/nowhere
+> > someone/anyone/no one • something/anything/nothing • somewhere/anywhere/nowhere
 > 
 > 1. Did __________ see what happened?
 > 2. __________ spilled coffee on my desk!
@@ -1069,7 +1030,7 @@ dg-publish: true
 > 8. There's __________ to sit in this tiny room.
 > 9. __________ feels bad when they make a mistake.
 > 10. I can't find my phone __________!
-> ```
+> 
 > 
 > > [!success]- ✅ Answers
 > > 
@@ -1089,8 +1050,7 @@ dg-publish: true
 > 
 > **Change from Direct to Reported Speech:**
 > 
-> ```
-> 1. "I'm exhausted," she said.
+> > 1. "I'm exhausted," she said.
 >    → She said __________
 > 
 > 2. "Someone knocked off the vase," he told me.
@@ -1113,7 +1073,7 @@ dg-publish: true
 > 
 > 8. "I left the lights on last night," she said.
 >    → She said __________
-> ```
+> 
 > 
 > > [!success]- ✅ Answers
 > > 
@@ -1131,8 +1091,7 @@ dg-publish: true
 > 
 > **Choose SAID or TOLD and complete the sentence:**
 > 
-> ```
-> 1. She __________ that she was sorry.
+> > 1. She __________ that she was sorry.
 > 2. He __________ me he had spilled coffee.
 > 3. They __________ nothing was broken.
 > 4. I __________ her I felt bad about it.
@@ -1140,7 +1099,7 @@ dg-publish: true
 > 6. Nobody __________ anything about the accident.
 > 7. He __________ his boss he would pay for the damage.
 > 8. Everyone __________ it was an accident.
-> ```
+> 
 > 
 > > [!success]- ✅ Answers
 > > 
@@ -1227,5 +1186,13 @@ mindmap
 > ```
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[01 - Vocabulary & Use - Succeeding + Opportunities & Risks]]
+> - Siguiente: [[03 - Functional Language & Pronunciation]]
 
 **Tags:** #english #grammar #indefinite-pronouns #reported-speech #unit12 #life-lessons #someone #anyone #said-told #tense-changes

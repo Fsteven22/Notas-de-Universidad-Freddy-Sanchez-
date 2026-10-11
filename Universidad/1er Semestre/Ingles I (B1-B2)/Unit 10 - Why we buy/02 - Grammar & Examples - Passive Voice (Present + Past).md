@@ -44,9 +44,8 @@ dg-publish: true
 > 
 > **Fórmula básica:**
 > 
-> ```
-> Subject + am/is/are + past participle (+ by + agent)
-> ```
+> > Subject + am/is/are + past participle (+ by + agent)
+> 
 > 
 > **Tabla de conjugación:**
 > 
@@ -85,14 +84,13 @@ dg-publish: true
 > 
 > **Patrones comunes con productos:**
 > 
-> ```
-> ✅ This phone is made in Korea.
+> > ✅ This phone is made in Korea.
 > ✅ These shoes are made of leather.
 > ✅ Coffee is grown in many countries.
 > ✅ Electronics are manufactured in Asia.
 > ✅ The products are shipped worldwide.
 > ✅ Bananas are exported to Europe.
-> ```
+> 
 >
 
 > [!note] 🔍 Cuándo OMITIR "by + agent"
@@ -130,9 +128,8 @@ dg-publish: true
 > 
 > **Forma negativa:**
 > 
-> ```
-> Subject + am/is/are + NOT + past participle
-> ```
+> > Subject + am/is/are + NOT + past participle
+> 
 > 
 > |Affirmative|Negative|
 > |---|---|
@@ -142,9 +139,8 @@ dg-publish: true
 > 
 > **Preguntas:**
 > 
-> ```
-> Am/Is/Are + subject + past participle?
-> ```
+> > Am/Is/Are + subject + past participle?
+> 
 > 
 > |Question|Short Answer|
 > |---|---|
@@ -154,12 +150,10 @@ dg-publish: true
 > 
 > **Wh- Questions:**
 > 
-> ```
-> Wh- word + am/is/are + subject + past participle?
-> ```
+> > Wh- word + am/is/are + subject + past participle?
 > 
-> ```
-> ✅ Where is coffee grown?
+> 
+> > ✅ Where is coffee grown?
 >    → Coffee is grown in Colombia, Brazil, and Ethiopia.
 > 
 > ✅ What are these bags made of?
@@ -170,7 +164,7 @@ dg-publish: true
 > 
 > ✅ When are the goods delivered?
 >    → They are delivered within 5 days.
-> ```
+> 
 
 ---
 
@@ -180,9 +174,8 @@ dg-publish: true
 > 
 > **Fórmula básica:**
 > 
-> ```
-> Subject + was/were + past participle (+ by + agent)
-> ```
+> > Subject + was/were + past participle (+ by + agent)
+> 
 > 
 > **Tabla de conjugación:**
 > 
@@ -247,8 +240,7 @@ dg-publish: true
 > 
 > **Example 1:**
 > 
-> ```
-> Active:   They grew the coffee in Colombia.
+> > Active:   They grew the coffee in Colombia.
 >           ↓
 > Object:   the coffee
 >           ↓
@@ -259,33 +251,30 @@ dg-publish: true
 > PP:       The coffee was grown...
 >           ↓
 > Complete: The coffee was grown in Colombia.
-> ```
+> 
 > 
 > **Example 2:**
 > 
-> ```
-> Active:   The company manufactured these shoes in Italy.
+> > Active:   The company manufactured these shoes in Italy.
 >           ↓
 > Passive:  These shoes were manufactured in Italy.
-> ```
+> 
 > 
 > **Example 3:**
 > 
-> ```
-> Active:   Someone stole my bike last night.
+> > Active:   Someone stole my bike last night.
 >           ↓
 > Passive:  My bike was stolen last night.
 >           (no "by someone" - desconocido/no relevante)
-> ```
+> 
 >
 
 > [!success] 🎨 Negative & Questions (Past)
 > 
 > **Forma negativa:**
 > 
-> ```
-> Subject + was/were + NOT + past participle
-> ```
+> > Subject + was/were + NOT + past participle
+> 
 > 
 > |Affirmative|Negative|
 > |---|---|
@@ -295,9 +284,8 @@ dg-publish: true
 > 
 > **Preguntas:**
 > 
-> ```
-> Was/Were + subject + past participle?
-> ```
+> > Was/Were + subject + past participle?
+> 
 > 
 > |Question|Short Answer|
 > |---|---|
@@ -307,8 +295,7 @@ dg-publish: true
 > 
 > **Wh- Questions:**
 > 
-> ```
-> ✅ Where was this jacket made?
+> > ✅ Where was this jacket made?
 >    → It was made in Vietnam.
 > 
 > ✅ When were the products shipped?
@@ -319,7 +306,7 @@ dg-publish: true
 > 
 > ✅ Why was the order delayed?
 >    → It was delayed because of bad weather.
-> ```
+> 
 
 ---
 
@@ -329,46 +316,41 @@ dg-publish: true
 > 
 > **1. El agente (quien hace la acción) no es importante**
 > 
-> ```
-> ❌ Active: People speak English in many countries.
+> > ❌ Active: People speak English in many countries.
 > ✅ Passive: English is spoken in many countries.
 > 
 > ❌ Active: Someone stole my wallet.
 > ✅ Passive: My wallet was stolen.
-> ```
+> 
 > 
 > **2. El agente es obvio o desconocido**
 > 
-> ```
-> ✅ The thief was arrested. (obviamente por la policía)
+> > ✅ The thief was arrested. (obviamente por la policía)
 > ✅ My car was damaged. (no sabemos por quién)
 > ✅ The letter was delivered. (obviamente por el cartero)
-> ```
+> 
 > 
 > **3. Queremos enfatizar el objeto/producto**
 > 
-> ```
-> ✅ This phone was designed by Apple. (énfasis en el teléfono)
+> > ✅ This phone was designed by Apple. (énfasis en el teléfono)
 > ✅ Coffee is grown in over 50 countries. (énfasis en el café)
 > ✅ The package was delivered on time. (énfasis en el paquete)
-> ```
+> 
 > 
 > **4. Lenguaje formal, científico o técnico**
 > 
-> ```
-> ✅ The experiment was conducted in 2020.
+> > ✅ The experiment was conducted in 2020.
 > ✅ The results were analyzed carefully.
 > ✅ The products are tested before shipping.
-> ```
+> 
 > 
 > **5. Descripciones de productos y procesos**
 > 
-> ```
-> ✅ This jacket is made of waterproof material.
+> > ✅ This jacket is made of waterproof material.
 > ✅ Our shoes are manufactured in Italy.
 > ✅ The goods are transported by sea.
 > ✅ Coffee beans are picked by hand.
-> ```
+> 
 > 
 > **Decisión visual:**
 > 
@@ -429,8 +411,7 @@ dg-publish: true
 > 
 > **Exercise 1: Transform to Passive (Present)**
 > 
-> ```
-> 1. They grow bananas in Ecuador.
+> > 1. They grow bananas in Ecuador.
 >    → _________________________________________________
 > 
 > 2. The company manufactures phones in China.
@@ -444,7 +425,7 @@ dg-publish: true
 > 
 > 5. People make this cheese in France.
 >    → _________________________________________________
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 1
 > > 
@@ -458,8 +439,7 @@ dg-publish: true
 > 
 > **Exercise 2: Transform to Passive (Past)**
 > 
-> ```
-> 6. They shipped the products yesterday.
+> > 6. They shipped the products yesterday.
 >    → _________________________________________________
 > 
 > 7. Someone stole my bike last night.
@@ -473,7 +453,7 @@ dg-publish: true
 > 
 > 10. Apple designed this phone in 2020.
 >    → _________________________________________________
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 2
 > > 
@@ -487,8 +467,7 @@ dg-publish: true
 > 
 > **Exercise 3: Choose Active or Passive**
 > 
-> ```
-> 11. Coffee ________ (grow) in Colombia.
+> > 11. Coffee ________ (grow) in Colombia.
 >    a) grows    b) is grown    c) was grown
 > 
 > 12. They ________ (export) bananas to Europe last year.
@@ -502,7 +481,7 @@ dg-publish: true
 > 
 > 15. People ________ (speak) English here.
 >    a) speak    b) are spoken    c) is spoken
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 3
 > > 
@@ -516,14 +495,13 @@ dg-publish: true
 > 
 > **Exercise 4: Complete with the correct passive form**
 > 
-> ```
-> 16. This phone ________ (manufacture) in Korea.
+> > 16. This phone ________ (manufacture) in Korea.
 > 17. The products ________ (ship) last week.
 > 18. Coffee ________ (grow) in many countries.
 > 19. My car ________ (steal) yesterday.
 > 20. These shoes ________ (make) of leather.
 > 21. The letter ________ (deliver) this morning.
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 4
 > > 
@@ -538,8 +516,7 @@ dg-publish: true
 > 
 > **Exercise 5: Make questions**
 > 
-> ```
-> 22. (where / coffee / grow)
+> > 22. (where / coffee / grow)
 >    → _________________________________________________?
 > 
 > 23. (this product / make / in China)
@@ -550,7 +527,7 @@ dg-publish: true
 > 
 > 25. (these shoes / make / of leather)
 >    → _________________________________________________?
-> ```
+> 
 > 
 > > [!success]- ✅ Answers - Exercise 5
 > > 
@@ -596,30 +573,27 @@ mindmap
 > 
 > **Product Descriptions (Present):**
 > 
-> ```
-> ✅ This [product] is made of [material].
+> > ✅ This [product] is made of [material].
 > ✅ [Products] are manufactured in [country].
 > ✅ [Product] is produced locally.
 > ✅ [Products] are exported to [place].
-> ```
+> 
 > 
 > **Past Events:**
 > 
-> ```
-> ✅ The [product] was shipped yesterday.
+> > ✅ The [product] was shipped yesterday.
 > ✅ [Products] were delivered last week.
 > ✅ This was designed in [year].
 > ✅ The order was placed on Monday.
-> ```
+> 
 > 
 > **Questions:**
 > 
-> ```
-> ✅ Where is [product] made?
+> > ✅ Where is [product] made?
 > ✅ What is it made of?
 > ✅ When was it delivered?
 > ✅ Is it manufactured locally?
-> ```
+> 
 
 ---
 
@@ -647,5 +621,13 @@ mindmap
 > ```
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[01 - Vocabulary & Use - Materials + Production & Distribution]]
+> - Siguiente: [[03 - Functional Language & Pronunciation]]
 
 **Tags:** #english #grammar #passivevoice #present #past #unit10 #transformations #exercises

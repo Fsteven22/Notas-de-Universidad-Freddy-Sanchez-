@@ -16,8 +16,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈɑːrkɪtektʃər/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Building design
 > • Structural engineering
 > • Urban planning
@@ -39,7 +38,7 @@ dg-publish: true
 > • "study architecture" = estudiar arquitectura
 > • "architectural design" = diseño arquitectónico
 > • "building structures" = estructuras de edificios
-> ```
+> 
 
 ### 🧪 Chemistry
 
@@ -51,8 +50,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈkemɪstri/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Chemical reactions
 > • Atoms and molecules
 > • Laboratory experiments
@@ -75,7 +73,7 @@ dg-publish: true
 > • laboratory = laboratorio
 > • experiment = experimento
 > • formula = fórmula
-> ```
+> 
 
 ### 📖 Education
 
@@ -87,8 +85,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˌedʒuˈkeɪʃən/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Teaching methods
 > • Child development
 > • Curriculum design
@@ -110,7 +107,7 @@ dg-publish: true
 > • early childhood education = educación infantil
 > • special education = educación especial
 > • physical education = educación física
-> ```
+> 
 
 ### ⚕️ Medicine
 
@@ -122,8 +119,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈmedɪsɪn/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Human anatomy
 > • Diseases and treatments
 > • Surgery techniques
@@ -144,7 +140,7 @@ dg-publish: true
 > 
 > Note: "Medicine" can also mean medication (medicamento)
 > Context determines meaning!
-> ```
+> 
 
 ### 🧬 Biology
 
@@ -156,8 +152,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /baɪˈɒlədʒi/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Living organisms
 > • Cells and genetics
 > • Evolution
@@ -181,7 +176,7 @@ dg-publish: true
 > • molecular biology = biología molecular
 > • zoology = zoología
 > • botany = botánica
-> ```
+> 
 
 ### 💻 Computer Science
 
@@ -193,8 +188,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /kəmˈpjuːtər ˈsaɪəns/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Programming languages
 > • Software development
 > • Algorithms and data structures
@@ -215,7 +209,7 @@ dg-publish: true
 > 
 > Often abbreviated: CS or CompSci
 > Very popular and well-paid field!
-> ```
+> 
 
 ### ⚙️ Engineering
 
@@ -227,8 +221,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˌendʒɪˈnɪərɪŋ/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Mathematics and physics
 > • Design and construction
 > • Problem-solving
@@ -251,7 +244,7 @@ dg-publish: true
 > • "Engineering requires strong math skills."
 > • "I'm an engineering major."
 > • "What type of engineering are you studying?"
-> ```
+> 
 
 ### ⚛️ Physics
 
@@ -263,8 +256,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈfɪzɪks/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Laws of motion
 > • Energy and matter
 > • Electricity and magnetism
@@ -288,7 +280,7 @@ dg-publish: true
 > • force = fuerza
 > • velocity = velocidad
 > • experiment = experimento
-> ```
+> 
 
 ### 💼 Business
 
@@ -300,8 +292,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈbɪznɪs/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Management principles
 > • Marketing
 > • Finance and accounting
@@ -324,7 +315,7 @@ dg-publish: true
 > • MBA = Master of Business Administration
 > • Business management = gestión empresarial
 > • International business = negocios internacionales
-> ```
+> 
 
 ### 💰 Economics
 
@@ -336,8 +327,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˌiːkəˈnɒmɪks/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Supply and demand
 > • Market systems
 > • Economic theory
@@ -361,7 +351,7 @@ dg-publish: true
 > • economic = económico
 > • microeconomics = microeconomía
 > • macroeconomics = macroeconomía
-> ```
+> 
 
 ### ⚖️ Law
 
@@ -373,8 +363,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /lɔː/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Legal systems
 > • Constitutional law
 > • Criminal law
@@ -398,7 +387,7 @@ dg-publish: true
 > • Law degree = título en derecho
 > • Bar exam = examen de la barra (para ejercer)
 > • Practice law = ejercer la abogacía
-> ```
+> 
 
 ### 🏛️ Political Science
 
@@ -410,8 +399,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /pəˈlɪtɪkəl ˈsaɪəns/
 > 
-> ```
-> What you study:
+> > What you study:
 > • Government systems
 > • Political theory
 > • International relations
@@ -433,7 +421,7 @@ dg-publish: true
 > 
 > Often abbreviated: PoliSci
 > Related to: international relations, public administration
-> ```
+> 
 
 ---
 
@@ -449,8 +437,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /əˈplaɪ/
 > 
-> ```
-> Grammar:
+> > Grammar:
 > • apply for + job/position
 > • apply to + company/university
 > 
@@ -475,7 +462,7 @@ dg-publish: true
 > • "job application" = solicitud de empleo
 > • "application form" = formulario de solicitud
 > • "apply for a scholarship" = solicitar una beca
-> ```
+> 
 
 ### 👔 Manage (verb)
 
@@ -487,8 +474,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈmænɪdʒ/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "She manages a team of 10 people."
 >   (Ella maneja/dirige un equipo de 10 personas)
 > 
@@ -511,7 +497,7 @@ dg-publish: true
 > • "project management" = gestión de proyectos
 > • "middle management" = gerencia media
 > • "manage a business" = administrar un negocio
-> ```
+> 
 
 ### 🎯 Career (noun)
 
@@ -523,8 +509,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /kəˈrɪər/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "I want a career in medicine."
 >   (Quiero una carrera en medicina)
 > 
@@ -547,7 +532,7 @@ dg-publish: true
 > • "career change" = cambio de carrera
 > • "build a career" = construir una carrera
 > • "career fair" = feria de empleo
-> ```
+> 
 
 ### 👨‍⚕️ Profession (noun)
 
@@ -559,8 +544,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /prəˈfeʃən/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "Teaching is a respected profession."
 >   (La enseñanza es una profesión respetada)
 > 
@@ -582,7 +566,7 @@ dg-publish: true
 > 
 > Note: "Profession" usually implies higher education
 > and specialized training
-> ```
+> 
 
 ### 📄 Contract (noun)
 
@@ -594,8 +578,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈkɒntrækt/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "I signed a two-year contract."
 >   (Firmé un contrato de dos años)
 > 
@@ -619,7 +602,7 @@ dg-publish: true
 > • "employment contract" = contrato de empleo
 > • "breach of contract" = incumplimiento de contrato
 > • "under contract" = bajo contrato
-> ```
+> 
 
 ### 🏖️ Retirement (noun)
 
@@ -631,8 +614,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /rɪˈtaɪərmənt/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "She's planning for retirement."
 >   (Ella está planeando su jubilación)
 > 
@@ -655,7 +637,7 @@ dg-publish: true
 > • "retirement party" = fiesta de jubilación
 > • "go into retirement" = jubilarse
 > • "come out of retirement" = volver a trabajar después de jubilarse
-> ```
+> 
 
 ### 🏢 Employer (noun)
 
@@ -667,8 +649,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ɪmˈplɔɪər/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "My employer provides health insurance."
 >   (Mi empleador provee seguro médico)
 > 
@@ -689,7 +670,7 @@ dg-publish: true
 > • "potential employer" = empleador potencial
 > • "former employer" = ex empleador
 > • "employer responsibilities" = responsabilidades del empleador
-> ```
+> 
 
 ### 💵 Salary (noun)
 
@@ -701,8 +682,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈsæləri/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "What's your expected salary?"
 >   (¿Cuál es tu salario esperado?)
 > 
@@ -726,7 +706,7 @@ dg-publish: true
 > • "salary increase/raise" = aumento de salario
 > • "salary range" = rango salarial
 > • "competitive salary" = salario competitivo
-> ```
+> 
 
 ### 🔥 Fire (verb)
 
@@ -738,8 +718,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /faɪər/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "He was fired for being late repeatedly."
 >   (Fue despedido por llegar tarde repetidamente)
 > 
@@ -765,7 +744,7 @@ dg-publish: true
 > 
 > Note: "Fire" is direct/informal. In professional contexts,
 > use "dismiss" or "terminate employment"
-> ```
+> 
 
 ### 💰 Wage (noun)
 
@@ -777,8 +756,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /weɪdʒ/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "She earns $15 per hour wage."
 >   (Ella gana $15 por hora de salario)
 > 
@@ -803,7 +781,7 @@ dg-publish: true
 > • "low wages" = salarios bajos
 > 
 > Note: Often used in plural "wages"
-> ```
+> 
 
 ### ✅ Hire (verb)
 
@@ -815,8 +793,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /haɪər/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "The company is hiring new employees."
 >   (La compañía está contratando nuevos empleados)
 > 
@@ -840,7 +817,7 @@ dg-publish: true
 > • "We're hiring!" = ¡Estamos contratando!
 > • "newly hired" = recién contratado
 > • "hiring manager" = gerente de contratación
-> ```
+> 
 
 ### ⏰ Working Hours (noun phrase)
 
@@ -852,8 +829,7 @@ dg-publish: true
 > 
 > **Pronunciation:** /ˈwɜːrkɪŋ aʊərz/
 > 
-> ```
-> Examples:
+> > Examples:
 > • "My working hours are 9 to 5."
 >   (Mi horario de trabajo es de 9 a 5)
 > 
@@ -879,7 +855,7 @@ dg-publish: true
 > • "overtime" = horas extras
 > • "work schedule" = horario de trabajo
 > • "9-to-5 job" = trabajo de 9 a 5
-> ```
+> 
 
 ---
 
@@ -889,8 +865,7 @@ dg-publish: true
 
 > [!example] Common Phrases
 > 
-> ```
-> Asking about studies:
+> > Asking about studies:
 > • "What are you studying?"
 > • "What's your major?"
 > • "What field are you in?"
@@ -908,14 +883,13 @@ dg-publish: true
 > • "Chemistry requires a lot of lab work."
 > • "Law school is very demanding."
 > • "Physics is my hardest subject."
-> ```
+> 
 
 ### Talking About Employment
 
 > [!example] Common Phrases
 > 
-> ```
-> Job search:
+> > Job search:
 > • "I'm looking for a job."
 > • "I'm applying to several companies."
 > • "I have a job interview tomorrow."
@@ -938,7 +912,7 @@ dg-publish: true
 > • "I'm thinking about changing careers."
 > • "He was fired last month."
 > • "She's planning to retire next year."
-> ```
+> 
 
 ---
 
@@ -948,8 +922,7 @@ dg-publish: true
 > 
 > ### Exercise 1: Match Subject to Career
 > 
-> ```
-> Match the subject with the most common career:
+> > Match the subject with the most common career:
 > 
 > 1. Medicine                    a) Software developer
 > 2. Law                        b) Teacher
@@ -958,12 +931,11 @@ dg-publish: true
 > 5. Architecture               e) Lawyer
 > 
 > Answers: 1-d, 2-e, 3-a, 4-b, 5-c
-> ```
+> 
 > 
 > ### Exercise 2: Fill in the Blanks
 > 
-> ```
-> 6. I need to __________ for the job online. (apply)
+> > 6. I need to __________ for the job online. (apply)
 > 7. My __________ provides health insurance. (employer)
 > 8. She earns a good __________ as a manager. (salary)
 > 9. The company is __________ new employees. (hiring)
@@ -976,12 +948,11 @@ dg-publish: true
 > 
 > Answers: 1-apply, 2-employer, 3-salary, 4-hiring, 5-fired,
 > 6-working hours, 7-contract, 8-retirement, 9-career, 10-manages
-> ```
+> 
 > 
 > ### Exercise 3: Choose the Correct Word
 > 
-> ```
-> 16. I need to (apply/hire) for this position.
+> > 16. I need to (apply/hire) for this position.
 > 17. Teachers receive a monthly (wage/salary).
 > 18. Construction workers are paid an hourly (wage/salary).
 > 19. My (employer/employee) is very supportive.
@@ -990,7 +961,7 @@ dg-publish: true
 > 
 > Answers: 1-apply, 2-salary, 3-wage, 4-employer,
 > 5-architecture, 6-career
-> ```
+> 
 > 
 
 ---
@@ -999,17 +970,23 @@ dg-publish: true
 
 > [!note] Related Topics
 > 
-> ```
-> These topics connect to:
+> > These topics connect to:
 > 
 > • Present Perfect (Have you graduated? I've worked here for 5 years)
 > • Used to (I used to study biology, but I changed to chemistry)
 > • Future plans (I'm going to apply for that job)
 > • Comparisons (Engineering is harder than business)
 > • Modal verbs (I should apply soon, I must finish my degree)
-> ```
+> 
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Anterior: [[Grammar – Modals of Necessity & Modals of Prohibition-Permission]]
 
 **Tags:** #vocabulary #education #college #university #employment #jobs #careers #subjects #work #professional-development #academic-fields #salary #hiring
 

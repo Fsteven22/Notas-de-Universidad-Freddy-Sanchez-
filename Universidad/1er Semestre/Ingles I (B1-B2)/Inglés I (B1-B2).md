@@ -62,4 +62,11 @@ dg-publish: true
 
 - [[Unit 12 – Life’s Little Lessons/00 - Índice.md|📂 Unit 12 – Life’s Little Lessons]]
 
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa: [[Inglés I (B1-B2)]]
+> - Siguiente: [[Welcome & Syllabus English I]]
+
 **Tags:** #english #english1 #ESPOL #semester1
