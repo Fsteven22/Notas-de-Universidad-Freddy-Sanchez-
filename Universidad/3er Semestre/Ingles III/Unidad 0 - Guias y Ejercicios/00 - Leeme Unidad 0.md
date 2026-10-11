@@ -8,3 +8,5 @@ Sube aquí:
 - Guías y talleres
 
 Cuando los subas, los pasaré por `markitdown` a texto plano para crear las notas sin saturarme con PDFs página por página.
+
+- [[Recursos Unidad 0]]

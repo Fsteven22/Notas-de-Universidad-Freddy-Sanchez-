@@ -115,4 +115,6 @@ graph LR
 
 ---
 
+- [[00 - Recursos Unidad 0]]
+
 **Tags:** #matematicas #discretas #ESPOL #MATG1051

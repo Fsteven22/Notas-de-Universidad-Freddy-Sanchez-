@@ -30,6 +30,7 @@ dg-publish: true
 - [[02 - Transformaciones entre Coordenadas]]
 - [[03 - Representación gráfica de coordenadas cilíndricas]]
 - [[01 - Nociones topológicas en Rⁿ]]
+- [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice|📂 Índice Sistemas de Coordenadas]]
 
 ## Unidad 3 — Funciones de Varias Variables *(15h)*
 
@@ -107,5 +108,25 @@ dg-publish: true
 - [[01 – Teoremas de la teoría vectorial]]
 
 ---
+
+- [[03 – Derivadas Parciales]]
+
+- [[03 – Interpretación geométrica del plano tangente y la aproximación lineal]]
+
+- [[01 - Extremos relativos]]
+
+- [[01 – Área de una región en R2]]
+
+- [[02 – Volumen bajo una superficie]]
+
+- [[03 – Masa de una lámina con densidad variable]]
+
+- [[04 – Teorema del valor medio para integrales dobles]]
+
+- [[05 – Valor promedio de una función]]
+
+- [[01 – Transformaciones entre sistemas de coordenadas]]
+
+- [[03 – Teorema de cambio de variables]]
 
 **Tags:** #calculo #vectorial #ESPOL #MATG1046

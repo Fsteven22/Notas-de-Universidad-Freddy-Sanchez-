@@ -51,4 +51,6 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
+- [[00 - Leeme Unidad 0]]
+
 **Tags:** #bases-de-datos #ESPOL #TICG1018

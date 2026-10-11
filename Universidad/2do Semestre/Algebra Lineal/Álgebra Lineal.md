@@ -69,4 +69,10 @@ dg-publish: true
 
 ---
 
+- [[03 - Operaciones en un espacio vectorial (conmutativa, asociativa, neutro, inverso, etc.)]]
+
+- [[05 - Teoremas fundamentales del espacio vectorial (unicidad del neutro, del inverso, etc.)]]
+
+- [[09 – Proyección ortogonal sobre un subespacio (forma matricial)]]
+
 **Tags:** #algebra #lineal #ESPOL #MATG1049

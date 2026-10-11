@@ -173,3 +173,5 @@ flowchart TD
 ---
 
 #productividad #digital #eficiencia #herramientas #metodología #organización #automatización #gestión-tiempo #workflow #optimización
+
+- [[Productividad Móvil]]
