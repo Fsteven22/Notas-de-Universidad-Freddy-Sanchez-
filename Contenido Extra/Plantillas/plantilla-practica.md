@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 tags: [practica, laboratorio, <% tp.system.prompt("Código materia (ej: EYAG1037)") %>]
 ---
 

@@ -1,3 +1,7 @@
+---
+dg-publish: false
+---
+
 # 📅 Horario de Estudios Flexible
 
 > [!info] 📌 **Instrucciones de Uso**

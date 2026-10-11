@@ -1,3 +1,7 @@
+---
+dg-publish: false
+---
+
 # 📅 Mi Horario de Clases
 
 ## 🗓️ Semestre Actual — Campus Gustavo Galindo

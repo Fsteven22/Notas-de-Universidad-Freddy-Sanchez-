@@ -1,3 +1,7 @@
+---
+dg-publish: false
+---
+
 # 🟪 Test de Belbin — Roles de Equipo
 
 ## 🎯 Introducción
