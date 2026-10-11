@@ -177,22 +177,21 @@ dg-publish: true
 >
 > **10.** Vegetables are good for your health and easy to digest. &emsp; `________________`
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
->
-> | # | Oración | Tipo | Por qué |
-> |---|---|---|---|
-> | 1 | *I love listening to music.* | **Simple** | 1 sujeto + 1 verbo — una sola cláusula independiente |
-> | 2 | *We ran home and took a hot shower.* | **Simple** | 1 sujeto (*We*) con dos verbos coordinados — sigue siendo una sola cláusula |
-> | 3 | *Although the problem was not difficult…* | **Complex** | Cláusula dependiente (*Although…*) + cláusula independiente |
-> | 4 | *We didn't see the new movie.* | **Simple** | 1 sujeto, 1 verbo, una sola cláusula independiente |
-> | 5 | *As I arrived, they all had finished dinner.* | **Complex** | Cláusula dependiente (*As I arrived*) + cláusula independiente |
-> | 6 | *She had an enjoyable graduation party.* | **Simple** | 1 sujeto (*She*) + 1 verbo (*had*) — una sola cláusula |
-> | 7 | *After the movie, they all went for ice cream.* | **Simple** | *After the movie* es frase preposicional, no cláusula dependiente |
-> | 8 | *Yesterday I went out with Tom, who is a friend…* | **Complex** | Cláusula independiente + cláusula relativa dependiente (*who…*) |
-> | 9 | *Let's go to the theater after lunch.* | **Simple** | *After lunch* es frase preposicional — una sola cláusula independiente |
-> | 10 | *Vegetables are good for your health and easy to digest.* | **Simple** | 1 sujeto + 1 verbo con dos predicados coordinados — no hay segunda cláusula |
->
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> >
+> > | # | Oración | Tipo | Por qué |
+> > |---|---|---|---|
+> > | 1 | *I love listening to music.* | **Simple** | 1 sujeto + 1 verbo — una sola cláusula independiente |
+> > | 2 | *We ran home and took a hot shower.* | **Simple** | 1 sujeto (*We*) con dos verbos coordinados — sigue siendo una sola cláusula |
+> > | 3 | *Although the problem was not difficult…* | **Complex** | Cláusula dependiente (*Although…*) + cláusula independiente |
+> > | 4 | *We didn't see the new movie.* | **Simple** | 1 sujeto, 1 verbo, una sola cláusula independiente |
+> > | 5 | *As I arrived, they all had finished dinner.* | **Complex** | Cláusula dependiente (*As I arrived*) + cláusula independiente |
+> > | 6 | *She had an enjoyable graduation party.* | **Simple** | 1 sujeto (*She*) + 1 verbo (*had*) — una sola cláusula |
+> > | 7 | *After the movie, they all went for ice cream.* | **Simple** | *After the movie* es frase preposicional, no cláusula dependiente |
+> > | 8 | *Yesterday I went out with Tom, who is a friend…* | **Complex** | Cláusula independiente + cláusula relativa dependiente (*who…*) |
+> > | 9 | *Let's go to the theater after lunch.* | **Simple** | *After lunch* es frase preposicional — una sola cláusula independiente |
+> > | 10 | *Vegetables are good for your health and easy to digest.* | **Simple** | 1 sujeto + 1 verbo con dos predicados coordinados — no hay segunda cláusula |
+> >
 
 > [!example] ✏️ Ejercicio 2 — Construye las oraciones
 >
@@ -203,15 +202,14 @@ dg-publish: true
 > 3. *I love coffee.* → **Simple** (añade un complemento)
 > 4. *It was raining. We went outside. We had umbrellas.* → **Compound-Complex**
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
->
-> | # | Respuesta posible | Tipo confirmado |
-> |---|---|---|
-> | 1 | *She was tired, yet she kept working.* | **Compound** — dos cláusulas independientes unidas por FANBOYS |
-> | 2 | *He failed the exam because he didn't study.* | **Complex** — cláusula independiente + dependiente con *because* |
-> | 3 | *I love coffee in the morning.* | **Simple** — un sujeto, un verbo, una sola cláusula |
-> | 4 | *Although it was raining, we went outside, and we had umbrellas.* | **Compound-Complex** — dependiente + dos independientes |
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> >
+> > | # | Respuesta posible | Tipo confirmado |
+> > |---|---|---|
+> > | 1 | *She was tired, yet she kept working.* | **Compound** — dos cláusulas independientes unidas por FANBOYS |
+> > | 2 | *He failed the exam because he didn't study.* | **Complex** — cláusula independiente + dependiente con *because* |
+> > | 3 | *I love coffee in the morning.* | **Simple** — un sujeto, un verbo, una sola cláusula |
+> > | 4 | *Although it was raining, we went outside, and we had umbrellas.* | **Compound-Complex** — dependiente + dos independientes |
 
 ---
 

@@ -151,18 +151,17 @@ dg-publish: true
 > 5. Although he tried very hard.
 > 6. My professor explained the assignment clearly.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
->
-> | # | Respuesta | Por qué |
-> |---|---|---|
-> | 1 | ✅ Completa | Sujeto (*The students*) + verbo (*finished*) + idea completa |
-> | 2 | ❌ Incompleta | Cláusula dependiente — *because* introduce una razón pero no hay cláusula principal |
-> | 3 | ❌ Incompleta | No hay sujeto — ¿quién está corriendo? |
-> | 4 | ✅ Completa | Sujeto (*She*) + verbo (*decided*) + idea completa |
-> | 5 | ❌ Incompleta | Cláusula dependiente — *although* introduce un contraste pero no hay cláusula principal |
-> | 6 | ✅ Completa | Sujeto (*My professor*) + verbo (*explained*) + idea completa |
->
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> >
+> > | # | Respuesta | Por qué |
+> > |---|---|---|
+> > | 1 | ✅ Completa | Sujeto (*The students*) + verbo (*finished*) + idea completa |
+> > | 2 | ❌ Incompleta | Cláusula dependiente — *because* introduce una razón pero no hay cláusula principal |
+> > | 3 | ❌ Incompleta | No hay sujeto — ¿quién está corriendo? |
+> > | 4 | ✅ Completa | Sujeto (*She*) + verbo (*decided*) + idea completa |
+> > | 5 | ❌ Incompleta | Cláusula dependiente — *although* introduce un contraste pero no hay cláusula principal |
+> > | 6 | ✅ Completa | Sujeto (*My professor*) + verbo (*explained*) + idea completa |
+> >
 
 > [!example] ✏️ Ejercicio 2 — Independent o Dependent?
 >
@@ -177,19 +176,18 @@ dg-publish: true
 > 7. The coffee is too hot.
 > 8. Unless you study harder.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
->
-> | # | Cláusula | Tipo | Por qué |
-> |---|---|---|---|
-> | 1 | *She loves reading novels.* | **I** | Sujeto + verbo + idea completa |
-> | 2 | *When the class ends.* | **D** | *When* es subordinante — no tiene sentido sola |
-> | 3 | *I will call you later.* | **I** | Sujeto + verbo + idea completa |
-> | 4 | *Although the exam was difficult.* | **D** | *Although* es subordinante — ¿y entonces qué? |
-> | 5 | *They arrived on time.* | **I** | Sujeto + verbo + idea completa |
-> | 6 | *Because he forgot his homework.* | **D** | *Because* es subordinante — ¿qué pasó como resultado? |
-> | 7 | *The coffee is too hot.* | **I** | Sujeto + verbo + idea completa |
-> | 8 | *Unless you study harder.* | **D** | *Unless* es subordinante — no tiene sentido sola |
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> >
+> > | # | Cláusula | Tipo | Por qué |
+> > |---|---|---|---|
+> > | 1 | *She loves reading novels.* | **I** | Sujeto + verbo + idea completa |
+> > | 2 | *When the class ends.* | **D** | *When* es subordinante — no tiene sentido sola |
+> > | 3 | *I will call you later.* | **I** | Sujeto + verbo + idea completa |
+> > | 4 | *Although the exam was difficult.* | **D** | *Although* es subordinante — ¿y entonces qué? |
+> > | 5 | *They arrived on time.* | **I** | Sujeto + verbo + idea completa |
+> > | 6 | *Because he forgot his homework.* | **D** | *Because* es subordinante — ¿qué pasó como resultado? |
+> > | 7 | *The coffee is too hot.* | **I** | Sujeto + verbo + idea completa |
+> > | 8 | *Unless you study harder.* | **D** | *Unless* es subordinante — no tiene sentido sola |
 
 ---
 

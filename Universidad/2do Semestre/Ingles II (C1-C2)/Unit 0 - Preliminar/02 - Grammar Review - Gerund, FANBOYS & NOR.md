@@ -172,20 +172,19 @@ dg-publish: true
 > 7. She suggested ***leaving*** early.
 > 8. The kids are ***playing*** in the park.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 1
->
-> | # | Respuesta | Por qué |
-> |---|---|---|
-> | 1 | **G** | *Reading* es el sujeto de la oración — actúa como sustantivo |
-> | 2 | **PP** | *is reading* forma el Present Continuous — parte del verbo |
-> | 3 | **G** | Objeto del verbo *avoids* — actúa como sustantivo |
-> | 4 | **PP** | *were working* forma el Past Continuous — parte del verbo |
-> | 5 | **G** | *Swimming* es el sujeto de la oración — actúa como sustantivo |
-> | 6 | **PP** | *am studying* forma el Present Continuous — parte del verbo |
-> | 7 | **G** | Objeto del verbo *suggested* — actúa como sustantivo |
-> | 8 | **PP** | *are playing* forma el Present Continuous — parte del verbo |
->
+> > [!success]- ✅ Respuestas — Ejercicio 1
+> >
+> > | # | Respuesta | Por qué |
+> > |---|---|---|
+> > | 1 | **G** | *Reading* es el sujeto de la oración — actúa como sustantivo |
+> > | 2 | **PP** | *is reading* forma el Present Continuous — parte del verbo |
+> > | 3 | **G** | Objeto del verbo *avoids* — actúa como sustantivo |
+> > | 4 | **PP** | *were working* forma el Past Continuous — parte del verbo |
+> > | 5 | **G** | *Swimming* es el sujeto de la oración — actúa como sustantivo |
+> > | 6 | **PP** | *am studying* forma el Present Continuous — parte del verbo |
+> > | 7 | **G** | Objeto del verbo *suggested* — actúa como sustantivo |
+> > | 8 | **PP** | *are playing* forma el Present Continuous — parte del verbo |
+> >
 
 > [!example] ✏️ Ejercicio 2 — Completa con la conjunción FANBOYS correcta
 >
@@ -199,19 +198,18 @@ dg-publish: true
 > 6. She was nervous, ________ she had practiced many times.
 > 7. He left early, ________ he had an appointment.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 2
->
-> | # | Conjunción | Por qué |
-> |---|---|---|
-> | 1 | **so** | Expresa resultado — el hambre llevó a hacer un sándwich |
-> | 2 | **yet** | Contraste inesperado — estudió mucho pero igual falló |
-> | 3 | **or** | Presenta dos alternativas |
-> | 4 | **nor** | Añade segunda idea negativa — requiere inversión (*nor does he*) |
-> | 5 | **but** | Contraste directo entre querer y no poder |
-> | 6 | **yet** | Contraste — estaba nerviosa a pesar de haber practicado |
-> | 7 | **for** | Explica la razón de salir temprano |
->
+> > [!success]- ✅ Respuestas — Ejercicio 2
+> >
+> > | # | Conjunción | Por qué |
+> > |---|---|---|
+> > | 1 | **so** | Expresa resultado — el hambre llevó a hacer un sándwich |
+> > | 2 | **yet** | Contraste inesperado — estudió mucho pero igual falló |
+> > | 3 | **or** | Presenta dos alternativas |
+> > | 4 | **nor** | Añade segunda idea negativa — requiere inversión (*nor does he*) |
+> > | 5 | **but** | Contraste directo entre querer y no poder |
+> > | 6 | **yet** | Contraste — estaba nerviosa a pesar de haber practicado |
+> > | 7 | **for** | Explica la razón de salir temprano |
+> >
 
 > [!example] ✏️ Ejercicio 3 — Neither … nor o NOR con inversión?
 >
@@ -222,15 +220,14 @@ dg-publish: true
 > 10. ________ the manager ________ the employees were informed.
 > 11. I am not tired, ________ ________ I hungry.
 >
-
-> [!success] ✅ Respuestas — Ejercicio 3
->
-> | # | Respuesta | Patrón usado |
-> |---|---|---|
-> | 1 | *She speaks **neither** Italian **nor** Portuguese.* | Neither…nor (correlativo) |
-> | 2 | *He didn't apologize, **nor did** he explain his behavior.* | NOR + inversión |
-> | 3 | ***Neither** the manager **nor** the employees were informed.* | Neither…nor (correlativo) |
-> | 4 | *I am not tired, **nor am** I hungry.* | NOR + inversión |
+> > [!success]- ✅ Respuestas — Ejercicio 3
+> >
+> > | # | Respuesta | Patrón usado |
+> > |---|---|---|
+> > | 1 | *She speaks **neither** Italian **nor** Portuguese.* | Neither…nor (correlativo) |
+> > | 2 | *He didn't apologize, **nor did** he explain his behavior.* | NOR + inversión |
+> > | 3 | ***Neither** the manager **nor** the employees were informed.* | Neither…nor (correlativo) |
+> > | 4 | *I am not tired, **nor am** I hungry.* | NOR + inversión |
 
 ---
 
