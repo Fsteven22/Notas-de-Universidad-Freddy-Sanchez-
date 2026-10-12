@@ -10,6 +10,8 @@ dg-publish: true
 > 
 > Considera el enunciado:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > $p$: "$n$ es un número entero."
 > 
 > Este enunciado **no es una proposición** por sí solo, ya que su valor lógico depende del valor de $n$:
@@ -54,6 +56,8 @@ dg-publish: true
 > 
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > "**Para toda** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada universalmente**, y se escribe:
@@ -69,6 +73,8 @@ dg-publish: true
 > | $P(x)$ es verdadera **para toda** $x \in D$ | $\forall x \in D : P(x)$ es **verdadera** |
 > | $P(x)$ es falsa **para al menos un** $x \in D$ | $\forall x \in D : P(x)$ es **falsa** |
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > Un valor $x \in D$ que hace a $P(x)$ **falsa** se llama un **contraejemplo** de la proposición $\forall x \in D : P(x)$.
 
 > [!example] ✅ Ejemplo 3 — Proposición Universal Verdadera
@@ -93,6 +99,8 @@ dg-publish: true
 > 
 > Como $x = 5$ hace la proposición falsa, es un contraejemplo y la proposición universal es **falsa**. ❌
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > Aunque para muchos $x \in \mathbb{R}$ la proposición sea verdadera, **basta un contraejemplo** para que sea falsa.
 
 ---
@@ -103,6 +111,8 @@ dg-publish: true
 > 
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > "**Existe** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada existencialmente**, y se escribe:
@@ -153,6 +163,8 @@ dg-publish: true
 >
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > "**Existe un único** $x$ en $D$, $P(x)$"
 >
 > es una proposición **cuantificada de existencia única**, y se escribe:
@@ -193,6 +205,8 @@ dg-publish: true
 >
 > **Demostración:** Tanto $x = 2$ como $x = -2$ satisfacen $x^2 = 4$. Como hay **dos** valores distintos que cumplen $P(x)$, no hay unicidad. ❌
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > Aunque $\exists x \in \mathbb{R} : x^2 = 4$ sí es verdadera, el $\exists!$ exige **exactamente uno**.
 
 ---

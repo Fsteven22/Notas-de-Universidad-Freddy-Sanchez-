@@ -39,6 +39,8 @@ dg-publish: true
 >
 > **Ejemplo:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
 > >
 > > $A \cup B = \{1, 2, 3, 4, 5\}$
@@ -65,6 +67,8 @@ dg-publish: true
 >
 > **Ejemplo:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
 > >
 > > $A \cap B = \{3\}$
@@ -87,6 +91,8 @@ dg-publish: true
 >
 > **Ejemplo:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$
 > >
 > > $A - B = \{1, 2\}$
@@ -113,6 +119,8 @@ dg-publish: true
 >
 > **Ejemplo:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > $U = \{1, 2, 3, 4, 5\}$, $A = \{1, 3, 5\}$
 > >
 > > $A^c = \{2, 4\}$
@@ -143,6 +151,8 @@ dg-publish: true
 >
 > **Ejemplo:**
 >
+> > [!example] 🟢 Ejemplo
+> >
 > > $A = \{1, 2\}$, $B = \{a, b, c\}$
 > >
 > > $A \times B = \{(1,a),\ (1,b),\ (1,c),\ (2,a),\ (2,b),\ (2,c)\}$

@@ -57,6 +57,8 @@ dg-publish: true
 > |6|Algunos números primos son positivos.|✅ Sí|Es verdadera|
 > |7|El 12 de Mayo de 1026 fue Martes.|✅ Sí|Tiene un valor V o F determinado|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Respuesta:** Los enunciados **1, 3, 6 y 7** son proposiciones. Los enunciados **2, 4 y 5** no lo son.
 
 ---
@@ -119,6 +121,8 @@ dg-publish: true
 > |F|V|V|
 > |F|F|**F**|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > La disyunción es **falsa solo cuando ambas proposiciones son falsas**; en cualquier otro caso es verdadera.
 > 
 > **Fórmula:** $VL(p \vee q) = \max{VL(p),\ VL(q)}$
@@ -138,6 +142,8 @@ dg-publish: true
 > |F|V|F|
 > |F|F|F|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > La conjunción es **verdadera solo cuando ambas proposiciones son verdaderas**; en cualquier otro caso es falsa.
 > 
 > **Fórmula:** $VL(p \wedge q) = \min{VL(p),\ VL(q)}$
@@ -157,6 +163,8 @@ dg-publish: true
 > |F|V|**V**|
 > |F|F|F|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > La disyunción exclusiva es **verdadera solo cuando $p$ y $q$ tienen valores lógicos distintos**.
 > 
 > **Fórmula:** $VL(p \veebar q) = |VL(p) - VL(q)|$
@@ -187,6 +195,8 @@ dg-publish: true
 > - $q$ es la **conclusión** (consecuente)
 >     
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > El condicional es **falso solo cuando el antecedente es verdadero y el consecuente es falso**.  
 > > Cuando el antecedente es falso, el condicional es **verdadero por omisión** (superficialmente verdadero).
 > 
@@ -241,6 +251,8 @@ dg-publish: true
 > |F|V|F|
 > |F|F|**V**|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > El bicondicional es **verdadero cuando $p$ y $q$ tienen el mismo valor lógico**.
 > 
 > **Fórmula:** $VL(p \leftrightarrow q) = 1 - |VL(p) - VL(q)|$

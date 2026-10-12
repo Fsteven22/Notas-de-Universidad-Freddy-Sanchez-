@@ -36,6 +36,8 @@ dg-publish: true
 > 
 > No se está afirmando que la conclusión es cierta; sólo se dice que si se garantiza la hipótesis, también se debe garantizar la conclusión.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Un argumento es válido por su forma, no por su contenido.**
 
 ---
@@ -156,6 +158,8 @@ dg-publish: true
 > 
 > Supongamos que $p \to q$ y $\neg p$ son verdaderas. Así, $p$ es falsa, pero independientemente de que $q$ sea verdadera o falsa, $p \to q$ es verdadera **por omisión**. No podemos concluir nada sobre $q$.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > El argumento es **inválido**. Esta es la falacia de **negación del antecedente**. $\blacksquare$
 
 > [!example] 📝 Ejemplo 3 — Cadena de inferencia con De Morgan
@@ -192,6 +196,8 @@ dg-publish: true
 > 
 > Concluimos que el razonamiento es **válido**. $\blacksquare$
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Ejercicio propuesto:** Demuestre que $p \to r,\ p \to (r \to q) \Rightarrow p \to r \wedge q$.
 
 ---

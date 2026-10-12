@@ -12,6 +12,8 @@ dg-publish: true
 > 
 > Ya conocemos las leyes (de las notas de Lógica Proposicional). Ahora las usamos como **herramientas de demostración**.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Notación:** Los símbolos $\equiv$ y $\Leftrightarrow$ se usan indistintamente para indicar equivalencia lógica.
 
 ---

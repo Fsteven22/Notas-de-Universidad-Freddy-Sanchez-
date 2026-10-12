@@ -767,6 +767,8 @@ dg-publish: true
 > 
 >
 > >[!note] 📌 Nota — Lo que muestran las imágenes
+> > [!example] 🟢 Ejemplo
+> >
 > > Las imágenes ilustran el paso inductivo: al insertar el vértice $V_{k+1}$ sobre el lado $\overline{AB}$, ocurren dos cosas simultáneamente:
 > >
 > > 1. $\overline{AB}$ **deja de ser un lado** del polígono y se convierte en **diagonal** — de ahí el $+1$ en el conteo.

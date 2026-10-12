@@ -34,6 +34,8 @@ dg-publish: true
 > 
 > La mayoría de los teoremas tienen la siguiente forma:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > "Para todo $x_1, x_2, \ldots, x_n$, **si** $p(x_1, \ldots, x_n)$ **entonces** $q(x_1, \ldots, x_n)$."
 > 
 > Esta es una proposición **cuantificada universalmente**, y es verdadera si:
@@ -53,6 +55,8 @@ dg-publish: true
 > - $n$ es **par** si existe un entero $k$ tal que $n = 2k$.
 > - $n$ es **impar** si existe un entero $k$ tal que $n = 2k + 1$.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > Todo número entero es par **o** impar, y nunca ambos a la vez.
 > 
 > Esta definición es la base de muchos ejemplos de demostración.
@@ -178,10 +182,14 @@ dg-publish: true
 > 
 > Combinando los Ejemplos 14 y 15 (usando contrarrecíproco):
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Para todo entero $m$: $m^2$ es impar $\Leftrightarrow$ $m$ es impar.**
 > 
 > Y aplicando la ley del contrarrecíproco:
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > **Para todo entero $m$: $m^2$ es par $\Leftrightarrow$ $m$ es par.**
 
 ---

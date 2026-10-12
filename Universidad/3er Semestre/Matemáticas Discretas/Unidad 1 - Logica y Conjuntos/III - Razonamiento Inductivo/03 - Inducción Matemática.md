@@ -25,6 +25,8 @@ dg-publish: true
 > 
 > Entonces $S(n)$ es verdadera **para cada $n \in \mathbb{N}$**.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > La condición (1) se llama **paso base** y la condición (2) se llama **paso inductivo**. La suposición de que $S(n)$ es verdadera en el paso inductivo se llama **hipótesis inductiva**.
 
 ---
@@ -127,6 +129,13 @@ dg-publish: true
 > 
 > **4.** Usando el ejercicio anterior, demuestre que si $0 < r < 1$ entonces:
 > $$1 \cdot r + 2 \cdot r^2 + \cdots + n \cdot r^n < \frac{r}{(1-r)^2}, \quad \forall n \in \mathbb{N}$$
+>
+> **Guía 1 (por caso):**
+>
+> - Caso 1: ej. 16 ($\sum k^2 = \frac{n(n+1)(2n+1)}{6}$), ej. 17 (suma alternante $= \frac{(-1)^n n(n+1)}{2}$), ej. 21 ($\sum k^3 = [\frac{n(n+1)}{2}]^2$).
+> - Caso 2: ej. 18 (si $2 \mid n^2-1$ entonces $4 \mid n^2-1$), ej. 19 ($7^{n+1} + 8^{2n-1}$ divisible por $57$).
+> - Caso 3: ej. 15 ($3^n \geq 2n+1$), ej. 20 (armónicos $> 2(\sqrt{n+1}-1)$).
+> - Estructural: ej. 22 (polígono convexo de $n$ lados tiene $\frac{n(n-3)}{2}$ diagonales: quita un vértice y usa la hipótesis).
 
 ---
 
@@ -179,6 +188,7 @@ dg-publish: true
 > - ¿Base que no es 1?::Base en n₀ y conclusión ∀n ≥ n₀.
 > - ¿Cuándo la forma fuerte?::Cuando S(n) necesita varios predecesores (recursiones); son equivalentes.
 > - ¿Error típico del paso inductivo?::Probar S(n+1) sin usar la hipótesis S(n).
+> - ¿Guía 1 por caso?::16/17/21 sumatorias, 18/19 divisibilidad, 15/20 desigualdades, 22 polígono.
 
 ---
 

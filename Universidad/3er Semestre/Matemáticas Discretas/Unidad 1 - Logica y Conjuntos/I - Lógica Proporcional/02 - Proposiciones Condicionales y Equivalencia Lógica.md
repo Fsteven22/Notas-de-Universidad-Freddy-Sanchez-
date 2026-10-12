@@ -41,6 +41,8 @@ dg-publish: true
 > |**una condición necesaria para** $p$ **es** $q$|Una condición necesaria para estudiar es aprobar.|
 > |**una condición suficiente para** $q$ **es** $p$|Una condición suficiente para aprobar es estudiar.|
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > ⚠️ **Clave para no confundirse:**
 > > 
 > > - "**Necesario para $p$**" → el resultado va en $q$ (consecuente)
@@ -84,6 +86,8 @@ dg-publish: true
 >     A -.-|"≢"| D
 > ```
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > ✅ El original y su contrarrecíproco son **lógicamente equivalentes**.  
 > > ✅ El recíproco y el inverso son **lógicamente equivalentes** entre sí.  
 > > ❌ El original y el recíproco **no son equivalentes** en general.
@@ -140,7 +144,7 @@ dg-publish: true
 > |Si $2 + 2 = 4$ entonces el sol es caliente.|V|V|**V**|Verdadera normalmente|
 > |Si $2 + 2 = 4$ entonces el sol es frío.|V|F|**F**|Falsa|
 > 
-> > 💡 En lógica, cuando el antecedente es falso, "no se promete nada", por eso el condicional es verdadero independientemente del consecuente.
+💡 En lógica, cuando el antecedente es falso, "no se promete nada", por eso el condicional es verdadero independientemente del consecuente.
 
 ---
 
@@ -152,6 +156,8 @@ dg-publish: true
 > 
 > **Equivalencia lógica:** Sean $P$ y $Q$ dos formas proposicionales. Se dice que $P$ y $Q$ son **lógicamente equivalentes**, denotado $P \equiv Q$ (o $P \Leftrightarrow Q$), si tienen los **mismos valores lógicos** para **todos** los posibles valores de las variables.
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > Dicho de otra forma: $P \equiv Q$ si y solo si $P \leftrightarrow Q$ es una **tautología**.
 > 
 > **Tautología:** Forma proposicional que es **siempre verdadera**.  

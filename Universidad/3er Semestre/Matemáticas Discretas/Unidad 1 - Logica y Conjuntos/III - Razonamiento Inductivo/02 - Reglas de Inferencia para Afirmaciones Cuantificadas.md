@@ -38,6 +38,8 @@ dg-publish: true
 > 
 > $$\frac{\forall x \in D : P(x)}{\therefore\ P(d), \quad \text{si } d \in D}$$
 > 
+> > [!example] 🟢 Ejemplo
+> >
 > > Esta es la regla más usada al inicio de demostraciones: tomamos un elemento particular del dominio y le aplicamos la propiedad universal.
 
 ---
@@ -50,7 +52,7 @@ dg-publish: true
 > 
 > $$\frac{P(d), \quad \text{para toda } d \in D}{\therefore\ \forall x \in D : P(x)}$$
 > 
-> > ⚠️ El elemento $d$ debe ser **arbitrario**: no puede tener propiedades especiales que no compartan todos los elementos del dominio.
+⚠️ El elemento $d$ debe ser **arbitrario**: no puede tener propiedades especiales que no compartan todos los elementos del dominio.
 
 ---
 
