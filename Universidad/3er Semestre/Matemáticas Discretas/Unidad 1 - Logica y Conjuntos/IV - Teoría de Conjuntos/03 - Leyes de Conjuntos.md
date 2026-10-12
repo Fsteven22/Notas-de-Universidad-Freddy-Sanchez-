@@ -18,6 +18,9 @@ dg-publish: true
 >     A --> E[Leyes distributivas]
 >     A --> F[Leyes de De Morgan]
 > ```
+>
+> **En esta nota:** tabla completa de leyes, dualidad, y cómo cada ley de conjuntos espeja una ley proposicional (De Morgan, distributiva) — si dominas las de lógica, estas salen gratis.
+>
 
 ---
 

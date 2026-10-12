@@ -10,7 +10,18 @@ dg-publish: true
 > 
 > El **álgebra de proposiciones** nos permite **demostrar equivalencias lógicas sin tablas de verdad**, manipulando expresiones paso a paso como en el álgebra ordinaria, justificando cada paso con una ley.
 > 
-> Ya conocemos las leyes (de las notas de Lógica Proposicional). Ahora las usamos como **herramientas de demostración**.
+> Ya conocemos las leyes (de las notas de Lógica Proposicional). Ahora las usamos para **transformar** una proposición en otra equivalente, paso a paso y citando la ley de cada paso.
+>
+> ```mermaid
+> graph LR
+>     A["Expresión"] --> B["Aplica ley<br/>(De Morgan, distributiva...)"]
+>     B --> C{"¿Llegaste<br/>al objetivo?"}
+>     C -->|"No"| B
+>     C -->|"Sí"| D["Equivalencia probada ✅"]
+>     style D fill:#e1ffe1
+> ```
+>
+> **En esta nota:** tabla de leyes de referencia, formato estándar de demostración algebraica y errores típicos (aplicar De Morgan a medias, olvidar la doble negación).
 > 
 > > [!example] 🟢 Ejemplo
 > >

@@ -20,6 +20,21 @@ dg-publish: true
 > - $p$ = **hipótesis** (antecedente)
 > - $q$ = **conclusión** (consecuente)
 > - **Solo es falso** cuando el antecedente es verdadero y el consecuente es falso.
+>
+> ```mermaid
+> graph LR
+>     P["p → q"] --> R["Recíproca<br/>q → p"]
+>     P --> I["Inversa<br/>¬p → ¬q"]
+>     P --> C["Contrarrecíproca<br/>¬q → ¬p"]
+>     C --> E["Equivalente a p → q ✅"]
+>     R --> N["NO equivalente ❌"]
+>     I --> N
+>     style C fill:#e1ffe1
+>     style N fill:#ffe1e1
+> ```
+>
+> **En esta nota:** las formas del condicional en lenguaje natural (*solo si*, *es necesario*), sus 3 variantes con equivalencia, y equivalencias lógicas para simplificar — lo que evalúan los ejercicios 7–12 de la Guía 1.
+>
 > 
 > **Fórmula:** $VL(p \rightarrow q) = \max{1 - VL(p),\ VL(q)}$
 

@@ -17,6 +17,19 @@ dg-publish: true
 > Cualquier argumento tiene la forma:
 > 
 > $$\text{Si } p_1 \text{ y } p_2 \text{ y } \cdots \text{ y } p_n \text{ entonces } q.$$
+>
+> ```mermaid
+> graph LR
+>     H["Hipótesis<br/>p₁…pₙ"] --> R["Regla<br/>MP, MT, Silogismo..."]
+>     R --> C{"¿Conclusión<br/>forzada?"}
+>     C -->|"Sí"| V["Válido ✅"]
+>     C -->|"No"| I["Inválido ❌<br/>falacia"]
+>     style V fill:#e1ffe1
+>     style I fill:#ffe1e1
+> ```
+>
+> **En esta nota:** validez vs verdad (premisas verdaderas + forma válida = conclusión verdadera), reglas clásicas (Modus Ponens/Tollens, silogismo, dilema) y falacias típicas (afirmar el consecuente, negar el antecedente).
+>
 
 ---
 

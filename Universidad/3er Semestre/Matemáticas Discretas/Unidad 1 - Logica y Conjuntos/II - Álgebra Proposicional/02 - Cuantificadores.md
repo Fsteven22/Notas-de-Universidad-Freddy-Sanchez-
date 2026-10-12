@@ -20,6 +20,19 @@ dg-publish: true
 > - $p$ es **falsa** si $n = \tfrac{1}{3},\ \sqrt{2},\ \pi$
 > 
 > Para poder trabajar con este tipo de enunciados necesitamos las **funciones proposicionales** y los **cuantificadores**.
+>
+> ```mermaid
+> graph LR
+>     P["P(x)<br/>abierto"] --> U["∀ cierra<br/>para todo"]
+>     P --> E["∃ cierra<br/>existe"]
+>     E --> U1["∃! cierra<br/>uno solo"]
+>     U --> Q["Proposición<br/>V o F"]
+>     E --> Q
+>     U1 --> Q
+>     style Q fill:#e1ffe1
+> ```
+>
+> **En esta nota:** funciones proposicionales y dominios, $\forall$/$\exists$/$\exists!$ con negación (De Morgan cuantificado), orden de cuantificadores y el error clásico: negar $\forall$ como $\forall\neg$ en vez de $\exists\neg$.
 
 ---
 

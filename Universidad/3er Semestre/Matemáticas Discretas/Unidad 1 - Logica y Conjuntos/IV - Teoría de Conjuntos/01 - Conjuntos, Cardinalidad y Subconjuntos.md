@@ -24,6 +24,9 @@ dg-publish: true
 > | **Cardinal** | Número de elementos de un conjunto finito |
 > | **Subconjunto** | Conjunto cuyos elementos pertenecen todos a otro |
 > | **Conjunto potencia** | Conjunto de todos los subconjuntos de un conjunto |
+>
+> **En esta nota:** notación (extensión, comprensión), finitos vs infinitos, subconjunto propio e impropio, potencia $|P(A)| = 2^{|A|}$ y conjuntos especiales ($\emptyset$, $U$, $\mathbb{N}$, $\mathbb{Z}$).
+>
 
 ---
 

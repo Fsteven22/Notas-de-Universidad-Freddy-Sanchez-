@@ -26,6 +26,9 @@ dg-publish: true
 > | **Diferencia** | $A - B$ | Elementos de $A$ que **no** están en $B$ |
 > | **Complemento** | $A^c$ | Elementos del universo que **no** están en $A$ |
 > | **Producto Cartesiano** | $A \times B$ | Todos los pares ordenados $(a, b)$ con $a \in A$, $b \in B$ |
+>
+> **En esta nota:** cada operación con su región de Venn sombreada, diferencia simétrica, complemento relativo al universo y producto cartesiano con cardinalidad $|A \times B| = |A|\cdot|B|$.
+>
 
 ---
 

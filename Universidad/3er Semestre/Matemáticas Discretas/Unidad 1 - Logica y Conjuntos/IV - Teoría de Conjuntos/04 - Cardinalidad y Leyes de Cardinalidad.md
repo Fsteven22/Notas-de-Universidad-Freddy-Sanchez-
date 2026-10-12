@@ -17,6 +17,9 @@ dg-publish: true
 >     A --> D[Principio de Inclusión-Exclusión]
 >     A --> E[Problemas con Diagramas de Venn]
 > ```
+>
+> **En esta nota:** $|A \cup B| = |A| + |B| - |A \cap B|$ (inclusión-exclusión de 2 y 3 conjuntos), cardinalidad de diferencia y complemento, y problemas tipo conteo con Venn sombreado.
+>
 
 ---
 

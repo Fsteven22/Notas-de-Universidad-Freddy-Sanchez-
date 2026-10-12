@@ -18,6 +18,19 @@ dg-publish: true
 > |**Matemática Discreta**|Discreto|Números enteros, grafos, proposiciones lógicas|
 > 
 > Sus técnicas son especialmente útiles en **computación** y **ciencias de la información**.
+>
+> ```mermaid
+> graph TD
+>     A[Lógica Proposicional] --> B[Proposiciones<br/>V o F]
+>     A --> C[Conectivos<br/>¬ ∧ ∨ → ↔]
+>     A --> D[Tablas de verdad]
+>     D --> E[Tautología / Contradicción]
+>     style B fill:#e1f5ff
+>     style D fill:#e1ffe1
+> ```
+>
+> **En esta nota:** qué cuenta como proposición (y qué no: preguntas, órdenes, predicados abiertos), los 5 conectivos con su tabla, y cómo leer tautologías y contradicciones — la base de todo el curso.
+>
 > 
 > **Algunas aplicaciones:**
 > 
@@ -261,25 +274,28 @@ dg-publish: true
 
 ## 📊 Resumen de Conectivos
 
-```mermaid
-graph TD
-    A[Conectivos Lógicos] --> B["¬p  Negación (unitario)"]
-    A --> C["p ∨ q  Disyunción (binario)"]
-    A --> D["p ∧ q  Conjunción (binario)"]
-    A --> E["p ⊻ q  Disyunción Exclusiva (binario)"]
-    A --> F["p → q  Condicional (binario)"]
-    A --> G["p ↔ q  Bicondicional (binario)"]
-
-```
-
-| Conectivo            | Símbolo               | Nombre               | Falso cuando...              |
-| -------------------- | --------------------- | -------------------- | ---------------------------- |
-| Negación             | $\neg p$              | NO $p$               | $p$ es verdadero             |
-| Disyunción           | $p \vee q$            | $p$ O $q$            | Ambas son falsas             |
-| Conjunción           | $p \wedge q$          | $p$ Y $q$            | Al menos una es falsa        |
-| Disyunción exclusiva | $p \veebar q$         | O $p$ o $q$          | Ambas tienen el mismo VL     |
-| Condicional          | $p \rightarrow q$     | Si $p$ entonces $q$  | $p$ verdadera y $q$ falsa    |
-| Bicondicional        | $p \leftrightarrow q$ | $p$ si y solo si $q$ | $p$ y $q$ tienen distinto VL |
+> [!note] 📋 Resumen de Contectivos
+> 
+> ```mermaid
+> graph TD
+>     A[Conectivos Lógicos] --> B["¬p  Negación (unitario)"]
+>     A --> C["p ∨ q  Disyunción (binario)"]
+>     A --> D["p ∧ q  Conjunción (binario)"]
+>     A --> E["p ⊻ q  Disyunción Exclusiva (binario)"]
+>     A --> F["p → q  Condicional (binario)"]
+>     A --> G["p ↔ q  Bicondicional (binario)"]
+> 
+> ```
+> 
+> | Conectivo            | Símbolo               | Nombre               | Falso cuando...              |
+> | -------------------- | --------------------- | -------------------- | ---------------------------- |
+> | Negación             | $\neg p$              | NO $p$               | $p$ es verdadero             |
+> | Disyunción           | $p \vee q$            | $p$ O $q$            | Ambas son falsas             |
+> | Conjunción           | $p \wedge q$          | $p$ Y $q$            | Al menos una es falsa        |
+> | Disyunción exclusiva | $p \veebar q$         | O $p$ o $q$          | Ambas tienen el mismo VL     |
+> | Condicional          | $p \rightarrow q$     | Si $p$ entonces $q$  | $p$ verdadera y $q$ falsa    |
+> | Bicondicional        | $p \leftrightarrow q$ | $p$ si y solo si $q$ | $p$ y $q$ tienen distinto VL |
+> 
 
 ---
 

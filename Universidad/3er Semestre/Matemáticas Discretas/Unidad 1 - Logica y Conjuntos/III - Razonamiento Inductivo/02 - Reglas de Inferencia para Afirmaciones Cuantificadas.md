@@ -11,6 +11,18 @@ dg-publish: true
 > Cuando las proposiciones involucran [[02 - Cuantificadores|cuantificadores]] $\forall$ y $\exists$, las reglas proposicionales no son suficientes. Necesitamos reglas que permitan **pasar entre lo universal y lo particular**, y entre lo existencial y lo concreto.
 > 
 > Estas reglas combinan naturalmente con las reglas proposicionales para construir argumentos más complejos.
+>
+> ```mermaid
+> graph TD
+>     A["¿Dirección?"] --> B["∀ → caso<br/>Particularización"]
+>     A --> C["casos → ∀<br/>Generalización"]
+>     A --> D["∃ → testigo<br/>Particularización"]
+>     A --> E["testigo → ∃<br/>Generalización"]
+>     style B fill:#e1f5ff
+> ```
+>
+> **En esta nota:** las 4 reglas con su restricción (el testigo existencial debe ser **nuevo**, no usado antes), combinadas con MP/MT, y el error clásico: generalizar desde un caso particular.
+>
 
 ---
 

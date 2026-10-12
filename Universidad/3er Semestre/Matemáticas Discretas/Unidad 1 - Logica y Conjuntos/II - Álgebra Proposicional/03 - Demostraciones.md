@@ -11,6 +11,19 @@ dg-publish: true
 > Una **demostración** es un argumento lógico riguroso que establece la verdad de una proposición a partir de **axiomas**, **definiciones** y **resultados previamente probados**.
 > 
 > A diferencia de las demostraciones algebraicas (que manipulan equivalencias lógicas paso a paso), aquí se trabaja con proposiciones matemáticas del mundo real: propiedades de enteros, desigualdades, existencia de objetos, etc.
+>
+> ```mermaid
+> graph TD
+>     A["¿Qué quieres probar?"] --> B{"¿Forma del enunciado?"}
+>     B -->|"Si P entonces Q"| C["Directa: supone P, llega a Q"]
+>     B -->|"No Q → No P"| D["Contrapositiva / Contradicción"]
+>     B -->|"Existe x tal que..."| E["Constructiva: exhibe el x"]
+>     B -->|"Para todo n..."| F["Inducción"]
+>     style A fill:#e1f5ff
+> ```
+>
+> **En esta nota:** vocabulario (axioma, teorema, lema, corolario), estructura de teorema, métodos directo/indirecto/contradicción/constructivo y cómo elegir método según la forma del enunciado.
+>
 
 ---
 
