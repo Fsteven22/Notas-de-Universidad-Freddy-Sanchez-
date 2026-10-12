@@ -92,6 +92,62 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (pp. 76–78, 148)
+
+> [!example] ✏️ Ejercicio 1 — Definiciones de jobs (8.1 drill A)
+>
+> Une cada definición con su palabra (*challenging, desk job, dream job, freelance, full-time, government job, high-paying, main job, part-time, permanent, second job, stressful, temporary, tough*):
+>
+> - It only lasts a few months.
+> - This means there are often a lot of problems to deal with.
+> - You get a good salary.
+> - This is what you've always wanted to do.
+> - You usually have one of these to get some extra money.
+> - You don't have a contract with one company; you work for different ones.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***temporary*** — dura pocos meses.
+> > - ***challenging*** — muchos problemas que resolver.
+> > - ***high-paying*** — buen salario.
+> > - ***dream job*** — lo que siempre quisiste.
+> > - ***second job*** — el extra para más dinero.
+> > - ***freelance*** — sin contrato fijo, varios clientes.
+
+> [!example] ✏️ Ejercicio 2 — Balance match (8.2 drill B)
+>
+> Une con su definición (*downtime, time off, commitments, seminar, chill out, shift*):
+>
+> - things you have agreed or arranged to do
+> - the period a person is scheduled to work
+> - a time when you can relax
+> - a meeting of a group with a teacher
+> - time you do not work (illness/vacations)
+> - rest, relax, or be calm
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***commitments*** — cosas acordadas.
+> > - ***shift*** — turno programado.
+> > - ***downtime*** — relax real.
+> > - ***seminar*** — grupo con profesor.
+> > - ***time off*** — ausencia (enfermedad/vacaciones).
+> > - ***chill out*** — descansar, calmarse.
+
+> [!example] ✏️ Ejercicio 3 — La carrera (8.1 drill B)
+>
+> Elige la palabra correcta: *The first years were really 'part-time / tough'. It was very 'tiring / freelance'. It wasn't a 'desk job / temporary' job. Salary was 'permanent / high-paying'. I also worked a 'second job / part-time'.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***tough*** (duros, no *part-time* = jornada).
+> > - ***tiring*** (agotador, no *freelance* = contrato).
+> > - ***desk job*** en *"the total opposite of a **desk job**"* (es trabajo físico, lo contrario de oficina).
+> > - ***high-paying*** (salario, no *permanent* = contrato).
+> > - ***second job*** (el extra).
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — *part-time* por *freelance* (viola **jornada vs contrato**)

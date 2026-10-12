@@ -90,6 +90,47 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (8.3 drills)
+
+> [!example] ✏️ Ejercicio 1 — /ɜː/ o /ʊ/ (8.3 drill B)
+>
+> Escribe A (/ɜː/) o B (/ʊ/): *schedule, alternative, you, school, birthday, few*.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***schedule* → B** (/ˈʃedjuːl/ — redonda corta).
+> > - ***alternative* → A** (/ɔːlˈtɜːnətɪv/).
+> > - ***you* → B**.
+> > - ***school* → B**.
+> > - ***birthday* → A** (/ˈbɜːθdeɪ/).
+> > - ***few* → B**.
+
+> [!example] ✏️ Ejercicio 2 — Warn the bad ideas (8.3C)
+>
+> Da un warning para cada mala idea:
+>
+> - "I need to cancel my meeting saying I'm sick."
+> - "I just won't go to Dale's birthday party."
+> - "I'll go to Ben's party instead of studying (I failed the last test)."
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - ***I wouldn't do that** if I were you — **it can't hurt** to tell the truth instead.*
+> > - ***You might not want to** just disappear — send a message at least.*
+> > - ***I'd avoid that** if I were you — one party isn't worth another fail.*
+
+> [!example] ✏️ Ejercicio 3 — Laptop bag role play (8.3, modelo)
+>
+> Customer quiere laptop bag (no sabe cuál); clerk recomienda. Modelo compacto:
+>
+> > [!success]- ✅ Respuesta modelo
+> >
+> > - *Customer: I want a bag for my laptop. **Is there anything** light but strong?*
+> > - *Clerk: **You could try** this one — **I've always had luck with** this brand. **That could work** for daily use.*
+> > - *Customer: **I like that option**. I'll take it!*
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Ordenar en vez de sugerir (viola **recomendar ≠ imponer**)

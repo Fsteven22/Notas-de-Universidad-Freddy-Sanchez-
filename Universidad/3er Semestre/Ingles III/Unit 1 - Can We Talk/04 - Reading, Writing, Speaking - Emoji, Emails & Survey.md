@@ -84,6 +84,34 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (7.4 drills + WRITE IT)
+
+> [!example] ✏️ Ejercicio 1 — Equivalentes formales (7.4C)
+>
+> Da el equivalente formal de Email B para:
+>
+> - *Very boring meeting!*
+> - *OK with you???*
+> - *Speak soon!*
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***I have a meeting all morning.***
+> > - ***Does that time suit you?***
+> > - ***Looking forward to speaking with you.***
+
+> [!example] ✏️ Ejercicio 2 — WRITE IT: tus 2 emails (7.4E, máx. 100 palabras)
+>
+> Escribe un email formal a un coworker y uno informal a un amigo: actualiza (trabajo/tiempo libre) + propón cita. Modelo compacto:
+>
+> > [!success]- ✅ Respuesta modelo (formal, 58 palabras)
+> >
+> > *"Dear Mr. Paredes, I am writing to update you on the report: I finished the first part this morning. I have a meeting all morning tomorrow. Does Thursday suit you to review it together? Looking forward to your reply. Freddy."*
+> >
+> > Informal espejo: *"Hi Luis! Finished half the report 😅 Can we meet Thursday? Does that time suit you? Speak soon!"*
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Registros cruzados (viola **traje vs camiseta**)

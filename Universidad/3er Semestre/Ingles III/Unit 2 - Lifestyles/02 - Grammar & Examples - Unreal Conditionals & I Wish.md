@@ -85,6 +85,51 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (grammar ref pp. 136–137)
+
+> [!example] ✏️ Ejercicio 1 — Present unreal choose (8.1 drill A)
+>
+> Elige la forma correcta:
+>
+> - If I had / I'd have more time, I did / I'd take piano lessons.
+> - If I lived / I'd live in a smaller town, I can / I'd get to work faster.
+> - If my job had paid / paid better, I felt / I'd feel happier.
+> - If I could / I'd be able to live anywhere, I chose / I'd choose the Rockies.
+> - Would / Had you move for a job if you didn't know / hadn't known anyone?
+> - I don't think I would agree / agreed to live alone, even if the place were / had been beautiful.
+>
+> > [!success]- ✅ Solución
+> >
+> > - *If I **had**…, I**'d take**…* (*would* nunca en el *if*).
+> > - *If I **lived**…, I**'d get**…*
+> > - *If my job **paid** better, I**'d feel** happier.* (present unreal: *paid* + *would*).
+> > - *If I **could**…, I**'d choose**…*
+> > - ***Would** you move… if you **didn't know**…?*
+> > - *…I **would agree**…, even if the place **were**…* (*were* formal para todos).
+
+> [!example] ✏️ Ejercicio 2 — Statements → wishes (8.2 drill A)
+>
+> Reescribe con *I wish*:
+>
+> - I'm leaving tomorrow. → *I wish I wasn't leaving tomorrow.* (modelo)
+> - I can't speak Japanese.
+> - I didn't finish my report last night.
+> - I don't have any free time this weekend.
+> - I can't go on vacation this summer.
+> - I have an assignment to finish tonight.
+> - I spent all my money on my new computer.
+>
+> > [!success]- ✅ Solución
+> >
+> > - *I wish I **could speak** Japanese.* (futuro/capacidad → *could*).
+> > - *I wish I **had finished** my report last night.* (pasado → past perfect).
+> > - *I wish I **had** some free time this weekend.* (presente → past simple).
+> > - *I wish I **could go** on vacation…* (*could*).
+> > - *I wish I **didn't have** an assignment…* (presente negativo → pasado: *didn't have*).
+> > - *I wish I **hadn't spent** all my money…* (pasado → *hadn't* + participle).
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — *would* en el *if* (viola **if + past, would + base**)

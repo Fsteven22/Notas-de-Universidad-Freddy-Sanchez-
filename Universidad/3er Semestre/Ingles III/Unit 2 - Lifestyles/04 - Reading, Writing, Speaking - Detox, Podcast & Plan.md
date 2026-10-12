@@ -84,6 +84,30 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (8.2C + Review U8)
+
+> [!example] ✏️ Ejercicio 1 — Completa los wishes (Review 4, U8)
+>
+> Completa con tu situación real:
+>
+> - I waste so much time playing video games. → *I wish I __________.*
+> - It's so cold outside. → *I wish it __________ warmer outside.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - *I wish I **didn't waste / didn't spend** so much time playing video games.* (presente → past).
+> > - *I wish it **wasn't** so cold / **were** warmer outside.* (*wasn't/were* + adjetivo).
+
+> [!example] ✏️ Ejercicio 2 — Past unreal speaking (Review 4, U8 — modelo)
+>
+> *What have you done today? What would have happened if things had been different?* Modelo del libro:
+>
+> > [!success]- ✅ Respuesta modelo
+> >
+> > *"Today I overslept, so I didn't have time for breakfast. I'm really hungry now. **If I hadn't overslept, I'd have had breakfast, and I wouldn't be so hungry now.**"* (pasado perdido → *had + would have*).
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Comentario de 1 línea (viola **3 partes**)

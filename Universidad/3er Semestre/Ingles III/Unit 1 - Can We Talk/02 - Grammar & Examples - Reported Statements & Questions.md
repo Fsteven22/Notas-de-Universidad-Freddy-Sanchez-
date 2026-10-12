@@ -85,6 +85,46 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (grammar ref pp. 135–137)
+
+> [!example] ✏️ Ejercicio 1 — Direct → reported statements (7.1)
+>
+> Reporta cada oración:
+>
+> - "I prefer speaking face to face over texting." (He said that…)
+> - "Get a new computer!" (She told…)
+> - "That's why you should buy a tablet." (He convinced…)
+> - "We won first prize in the competition." (They explained…)
+> - "I will text you when I leave work." (She said…)
+>
+> > [!success]- ✅ Solución
+> >
+> > - *He said (that) he **preferred** speaking face to face…* (present → past).
+> > - *She **told them to get** a new computer.* (orden → *told + to*).
+> > - *He **convinced them (that)** buying a new tablet was a good idea.* (consejo → convencer + gerundio/that).
+> > - *They **explained (that) they had won** first prize…* (past → past perfect).
+> > - *She **said (that) she would text** when she left work.* (*will → would*).
+
+> [!example] ✏️ Ejercicio 2 — Direct → reported questions (7.2)
+>
+> Reporta cada pregunta:
+>
+> - Why did you buy a new smartphone? (He asked…)
+> - Do you prefer phone or text? (She asked…)
+> - Will you get a new tablet for your birthday? (We asked her…)
+> - Can you help me with this computer problem? (I asked them…)
+> - How many friends did you meet on Facebook? (She asked him…)
+>
+> > [!success]- ✅ Solución
+> >
+> > - *He asked **why I had bought** a new smartphone.* (past → past perfect, sin auxiliar).
+> > - *She asked **if I preferred** phone or text.* (yes/no → *if* + afirmativo).
+> > - *We asked her **if she would get** a new tablet…* (*will → would*).
+> > - *I asked them **if they could help** me…* (*can → could*).
+> > - *She asked him **how many friends he had met** on Facebook.* (wh- + past perfect, sin *if*).
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Pregunta con orden de pregunta (viola **orden afirmativo**)

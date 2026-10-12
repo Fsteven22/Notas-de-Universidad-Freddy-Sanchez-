@@ -101,6 +101,60 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (pp. 66–69, 147)
+
+> [!example] ✏️ Ejercicio 1 — Preposiciones (7.1 drill A)
+>
+> Elige la preposición correcta:
+>
+> - He never replied **with / to** my email.
+> - I was informed **by / of** the problem too late.
+> - It was great to catch up **in / with** all my cousins.
+>
+> > [!success]- ✅ Solución
+> >
+> > - *replied **to*** — *reply/respond* siempre con *to*.
+> > - *informed **of*** (pasiva: *informed **by*** sería el agente; aquí es *of* = acerca de).
+> > - *catch up **with*** (con personas; *with* fijo).
+
+> [!example] ✏️ Ejercicio 2 — Reporting verbs (7.1 drill B)
+>
+> Completa con *comment, congratulate, gossip, persuade*:
+>
+> - "A good thing about social media is that you can read a post and then ____ on it."
+> - "I use social media to ____ people on their birthdays."
+> - "I never ____ about people's private lives. That's not nice."
+> - "It's hard to ____ somebody to use social media if they don't like the idea."
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***comment*** (comentar una publicación).
+> > - ***congratulate*** (felicitar en cumpleaños).
+> > - ***gossip*** (chismear vidas privadas).
+> > - ***persuade*** (convencer a alguien).
+
+> [!example] ✏️ Ejercicio 3 — Definiciones online (7.2 drill A)
+>
+> Une cada definición con su término (*newsfeed, podcaster, status update, lurker, clickbait, trending topic, profile, tag*):
+>
+> - part of a website that updates often to show the latest news
+> - a person who produces audio stories to download or stream
+> - internet content that encourages clicks on links
+> - someone who puts everything about themselves on social media
+> - a story that became popular online
+> - add someone's name to your post or photo
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***newsfeed*** — muro que se actualiza.
+> > - ***podcaster*** — produce audio descargable.
+> > - ***clickbait*** — anzuelo de clics.
+> > - ***lifecaster*** — lo publica todo (trampa: no es *lurker*, que solo mira).
+> > - ***trending topic*** — historia popular.
+> > - ***tag*** — etiquetar con el nombre.
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Preposición equivocada (viola **collocation**)

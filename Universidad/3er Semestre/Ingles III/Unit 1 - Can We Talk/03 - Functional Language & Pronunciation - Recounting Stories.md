@@ -87,6 +87,41 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (7.3 drills + pair work pp. 157–158)
+
+> [!example] ✏️ Ejercicio 1 — /s/ o /z/ (7.3 drill B)
+>
+> Escribe A (/s/) o B (/z/): *boss, as, bus, turns, office, lose*.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***boss* → A** (/s/ silba).
+> > - ***as* → B** (/z/ zumba).
+> > - ***bus* → A**.
+> > - ***turns* → B**.
+> > - ***office* → A**.
+> > - ***lose* → B** (¡no confundir con *loose*!).
+
+> [!example] ✏️ Ejercicio 2 — Role play: la fiesta desastrosa (7.3 Student A/B)
+>
+> Tú eres A: cuenta que la fiesta de Marcus terminó en desastre (fuego en la casa, evacuaron, nadie herido). Tu compañero es B: muestra interés y sorpresa.
+>
+> > [!success]- ✅ Respuesta modelo (A)
+> >
+> > *"**You'll never believe** what happened! Marcus' birthday party ended in disaster — there was a fire at the house! **Apparently**, someone left candles near newspapers. **In the end**, everyone evacuated and nobody was hurt."*
+> >
+> > B responde: *"No way! **That sounds awful**. Were they OK?"*
+
+> [!example] ✏️ Ejercicio 3 — Role play: Jane Carter (7.3 Student B)
+>
+> Cuenta la historia de Jane (manejó a sus vacaciones, vio a Jane en el súper: problemas de carro, pero bien y feliz en casa). Usa 3 marcadores.
+>
+> > [!success]- ✅ Respuesta modelo
+> >
+> > *"**I heard that** Jane Carter drove somewhere for summer vacation. **Someone told me that** they had car problems, but **it turns out** they were all fine and very happy to be home."*
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Contar sin marcadores (viola **hook + cierre**)
