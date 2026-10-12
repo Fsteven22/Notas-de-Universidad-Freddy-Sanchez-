@@ -79,6 +79,11 @@ graph TB
 >
 > (Demostración completa paso a paso SOLO si el curso la exige; si no, resultado + 1 ejemplo.)
 
+> [!tip] 📏 Reglas de formato de ejemplos/ejercicios
+>
+> - **Multipartes como listas:** si hay literales (a), (b), (c)… o varios casos, CADA uno va como ítem de lista `-` (enunciado y solución por separado). Nunca inline con `·`: en el render se pegan lado a lado.
+> - **Entre callouts hermanos, línea REALMENTE vacía** (`>` solo los fusiona y el segundo header se ve como texto).
+
 ---
 
 ## 📋 Tablas Comparativas
