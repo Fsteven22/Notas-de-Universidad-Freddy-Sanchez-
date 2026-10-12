@@ -41,6 +41,20 @@ dg-publish: true
 
 ---
 
+
+> [!note] 📐 Mapa — Vocabulario de demostración
+>
+> ```mermaid
+> graph TD
+>     A["Axioma<br/>se asume"] --> T["Teorema<br/>se prueba"]
+>     T --> L["Lema<br/>auxiliar"]
+>     T --> C["Corolario<br/>consecuencia"]
+>     style A fill:#fff4e1
+>     style T fill:#e1ffe1
+> ```
+>
+> **Se lee así:** todo nace de axiomas; el teorema es la meta, el lema el andamio, el corolario el regalo.
+
 ## 📐 Estructura General de un Teorema
 
 > [!note] 📋 Forma estándar

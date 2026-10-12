@@ -40,6 +40,18 @@ dg-publish: true
 
 ---
 
+
+> [!note] 🔍 Mapa — Las 4 direcciones
+>
+> ```mermaid
+> graph TD
+>     A["∀ → caso: particulariza"] --> B["casos → ∀: generaliza"]
+>     C["∃ → testigo nuevo"] --> D["testigo → ∃"]
+>     style A fill:#e1f5ff
+> ```
+>
+> **Se lee así:** universal baja a caso, casos suben a universal; existencial exige testigo fresco.
+
 ## 🔍 Reglas Detalladas
 
 ### 1 — Particularización Universal

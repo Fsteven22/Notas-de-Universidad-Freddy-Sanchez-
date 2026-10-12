@@ -50,6 +50,24 @@ dg-publish: true
 
 ---
 
+
+> [!note] 🔍 Mapa — Inyectiva, sobreyectiva, biyectiva
+>
+> ```mermaid
+> flowchart TD
+>     A["f : X → Y"] --> B{"¿Elementos distintos<br/>→ imágenes distintas?"}
+>     B -->|"Sí"| C["Inyectiva"]
+>     B -->|"No"| D["No inyectiva"]
+>     A --> E{"¿Toda y tiene<br/>preimagen?"}
+>     E -->|"Sí"| F["Sobreyectiva"]
+>     C --> G{"¿Ambas?"}
+>     F --> G
+>     G -->|"Sí"| H["Biyectiva ✅"]
+>     style H fill:#e1ffe1
+> ```
+>
+> **Se lee así:** dos preguntas independientes; biyectiva exige sí en ambas.
+
 ## 🔍 Tipos de Funciones
 
 > [!note] 🔍 Definición 2 — Función Inyectiva
@@ -390,12 +408,12 @@ graph TD
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** afirmar $g(x) = x+1$ inyectiva "porque la fórmula se ve lineal" sin revisar dominio.
 > - ✅ Así sí: toma $x_1 \neq x_2$ cualesquiera y deduce $x_1 = x_2$ (Ej. 2 verificado con SymPy).
->
+
 > [!danger] ❌ Error 2: Inversa sin restringir dominio (viola **existencia**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** $g(y) = \frac{1+3y}{y+2}$ "para todo $y$" — en $y=-2$ no existe.
 > - ✅ Así sí: declara $g : \mathbb{R}-\{-2\} \to \mathbb{R}-\{3\}$ y verifica $x \neq 3$ por contradicción ($1=6$).
->
+
 > [!danger] ❌ Error 3: Piso/techo como redondeo (viola **definición**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** $\lfloor -2.3 \rfloor = -2$ (redondear) — es $-3$ (mayor entero $\leq x$).
@@ -410,7 +428,7 @@ graph TD
 > - [ ] Decido si una relación finita es función (totalidad + unicidad).
 > - [ ] Pruebo inyectividad con $x_1 \neq x_2$ y sobreyectividad despejando $x$.
 > - [ ] Calculo piso/techo sin redondear.
->
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Hallo inversas con dominio restringido y verifico $g \circ f = id$.

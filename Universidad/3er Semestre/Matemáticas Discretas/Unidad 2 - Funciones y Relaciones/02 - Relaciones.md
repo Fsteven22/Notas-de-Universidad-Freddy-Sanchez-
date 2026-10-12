@@ -212,6 +212,19 @@ dg-publish: true
 > > | Transitiva | Si hay camino x→y→z, existe flecha x→z |
 
 ---
+
+> [!note] 🏷️ Mapa — Reflexiva, simétrica, transitiva
+>
+> ```mermaid
+> graph LR
+>     A["R sobre X"] --> R["¿xRx siempre?<br/>Reflexiva"]
+>     A --> S["¿xRy ⇒ yRx?<br/>Simétrica"]
+>     A --> T["¿xRy ∧ yRz ⇒ xRz?<br/>Transitiva"]
+>     style R fill:#e1f5ff
+> ```
+>
+> **Se lee así:** tres preguntas sí/no; cada combinación define una familia (orden, equivalencia...).
+
 ## 🏷️ Propiedades de Relaciones sobre X
 
 > [!note] 🏷️ Definición 12 — Propiedades (resumen)
@@ -340,12 +353,12 @@ graph TD
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** calcular $M_R$ mezclando órdenes de X e Y — la matriz sale distinta y "correcta" a la vez.
 > - ✅ Así sí: fija el orden primero (filas = X, columnas = Y) y no lo cambies (verificado arriba).
->
+
 > [!danger] ❌ Error 2: Componer al revés (viola **orden $R_2 \circ R_1$**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** leer $R_2 \circ R_1$ como "primero $R_2$" — se aplica $R_1$ primero (de X a Y) y luego $R_2$.
 > - ✅ Así sí: busca el $y$ intermedio: $xR_1y \land yR_2z$.
->
+
 > [!danger] ❌ Error 3: Inversa mal volteada (viola **definición**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** $R^{-1} = \{(2,4),(2,6),\ldots\}$ (copiar sin voltear).
@@ -359,7 +372,7 @@ graph TD
 >
 > - [ ] Hallo dominio, rango y matriz fijando el orden primero.
 > - [ ] Invierto y compongo relaciones con el $y$ intermedio.
->
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Decido representaciones (pares, matriz, digrafo) según lo que piden.

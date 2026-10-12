@@ -22,6 +22,20 @@ dg-publish: true
 
 ---
 
+
+> [!note] 📋 Mapa — Orden vs equivalencia
+>
+> ```mermaid
+> graph TD
+>     A["R + reflexiva + transitiva"] --> B{"¿Antisimétrica<br/>o simétrica?"}
+>     B -->|"Antisimétrica"| C["Orden parcial"]
+>     B -->|"Simétrica"| D["Equivalencia<br/>→ partición"]
+>     style C fill:#fff4e1
+>     style D fill:#e1ffe1
+> ```
+>
+> **Se lee así:** reflexiva + transitiva es la base; la tercera propiedad decide la familia.
+
 ## 📋 Relaciones de Orden y de Equivalencia
 
 > [!note] 📋 Definición 13 — Relación de Orden y de Equivalencia
@@ -112,6 +126,18 @@ dg-publish: true
 > | **Orden parcial** | no necesariamente | ✅ |
 
 ---
+
+> [!note] 🧩 Mapa — Partición ↔ equivalencia
+>
+> ```mermaid
+> graph LR
+>     P["Partición<br/>disjuntos + cubren"] --> E["Equivalencia<br/>clases"]
+>     E --> Q["Cociente<br/>conjunto de clases"]
+>     style P fill:#e1ffe1
+> ```
+>
+> **Se lee así:** partir y equivaler son lo mismo visto de dos lados; el cociente reúne las clases.
+
 ## 🧩 Particiones
 
 > [!note] 🧩 Definición 14 — Partición
@@ -229,7 +255,7 @@ graph TD
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** asumir $xRy \Rightarrow yRx$ para antisimetría — eso es simetría.
 > - ✅ Así sí: asume $xRy \land yRx$ **juntas** y deduce $x=y$ (como $b=ka$, $a=mb$ $\Rightarrow mk=1$).
->
+
 > [!danger] ❌ Error 2: Confundir partición con cualquier familia (viola **disjuntos + cubren**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** $\{\{1,2\},\{2,3\}\}$ "particiona" $\{1,2,3\}$ — se solapan.
@@ -243,7 +269,7 @@ graph TD
 >
 > - [ ] Verifico reflexiva/antisimétrica/transitiva una por una (con contraejemplo si falla).
 > - [ ] Calculo clases $[a]$ y el cociente en casos mod $n$.
->
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Distingo orden parcial de total con incomparables (2 y 3 en divisibilidad).

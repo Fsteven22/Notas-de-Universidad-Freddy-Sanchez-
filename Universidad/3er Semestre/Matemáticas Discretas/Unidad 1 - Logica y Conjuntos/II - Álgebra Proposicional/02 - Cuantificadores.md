@@ -224,6 +224,20 @@ dg-publish: true
 
 ---
 
+
+> [!note] 🔄 Mapa — Negar cuantificadores
+>
+> ```mermaid
+> graph LR
+>     A["¬∀x P(x)"] --> B["∃x ¬P(x)"]
+>     C["¬∃x P(x)"] --> D["∀x ¬P(x)"]
+>     E["Orden ∀∃ ≠ ∃∀"] --> F["El orden cambia el significado"]
+>     style B fill:#e1f5ff
+>     style D fill:#e1f5ff
+> ```
+>
+> **Se lee así:** negar intercambia el cuantificador y niega adentro; el orden nunca se permuta gratis.
+
 ## 🔄 Negación de Cuantificadores
 
 > [!important] ⭐ Teorema 2 — Negación de Proposiciones Cuantificadas

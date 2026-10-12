@@ -78,6 +78,23 @@ dg-publish: true
 
 ---
 
+
+> [!note] 🔁 Mapa — Derivadas de p → q
+>
+> ```mermaid
+> graph LR
+>     P["p → q"] --> R["Recíproca<br/>q → p"]
+>     P --> I["Inversa<br/>¬p → ¬q"]
+>     P --> C["Contrapositiva<br/>¬q → ¬p"]
+>     C --> E["≡ original ✅"]
+>     R --> N["No equivalentes ❌"]
+>     I --> N
+>     style C fill:#e1ffe1
+>     style N fill:#ffe1e1
+> ```
+>
+> **Se lee así:** solo la contrapositiva conserva el valor; recíproca e inversa son independientes.
+
 ## 🔁 Proposiciones Derivadas del Condicional
 
 > [!note] 📐 Recíproco, Inverso y Contrarrecíproco

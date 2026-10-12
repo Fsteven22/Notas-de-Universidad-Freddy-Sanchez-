@@ -101,6 +101,22 @@ dg-publish: true
 
 ---
 
+
+> [!note] 🗺️ Mapa — ¿Cuándo es verdadero cada conectivo?
+>
+> ```mermaid
+> flowchart TD
+>     A["¿Qué conectivo?"] --> N["¬ invierte"]
+>     A --> O["∨ solo F con F,F"]
+>     A --> Y["∧ solo V con V,V"]
+>     A --> C["→ solo F con V,F"]
+>     A --> B["↔ V si iguales"]
+>     style O fill:#ffe1e1
+>     style Y fill:#e1ffe1
+> ```
+>
+> **Se lee así:** memoriza el único caso que rompe cada conectivo; todo lo demás es el caso contrario.
+
 ### 1️⃣ Negación ($\neg p$)
 
 > [!info] 📋 Definición y Tabla de Verdad

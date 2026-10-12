@@ -55,6 +55,20 @@ dg-publish: true
 
 ---
 
+
+> [!note] 📋 Mapa — Reglas clásicas
+>
+> ```mermaid
+> graph LR
+>     A["p → q"] --> MP["+ p ⇒ q<br/>Modus Ponens"]
+>     A --> MT["+ ¬q ⇒ ¬p<br/>Modus Tollens"]
+>     B["p → q, q → r"] --> S["⇒ p → r<br/>Silogismo"]
+>     style MP fill:#e1ffe1
+>     style MT fill:#e1ffe1
+> ```
+>
+> **Se lee así:** Ponens afirma el antecedente; Tollens niega el consecuente; el silogismo encadena.
+
 ## 📋 Tabla de Reglas de Inferencia
 
 > [!note] 📖 Reglas fundamentales
