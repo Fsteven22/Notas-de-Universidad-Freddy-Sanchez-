@@ -421,6 +421,22 @@ flowchart TD
 > - **Abstract Factory:** `Application` usa `ConcreteImpl` vía interfaz `Service`, pero la crea vía `ServiceFactory` (interfaz) implementada por `ServiceFactoryImpl`. La **línea curva** separa lo abstracto de lo concreto: las dependencias de código la cruzan hacia lo abstracto, mientras el control fluye al revés — de ahí el nombre *inversión*.
 > - **Componente concreto (`main`):** las violaciones DIP no se eliminan, se concentran en pocos componentes separados del resto. La línea curva anticipa las fronteras arquitectónicas y la **Regla de Dependencia** de los capítulos siguientes.
 
+### 🧪 Caso integrador Main.java (práctica Control02)
+
+> [!example] 💡 Nómina ds2026 — las 5 violaciones en un solo archivo ([[Main.java]])
+>
+> - **SRP:** `Employee` calcula bono + genera PDF + manda email (3 razones para cambiar).
+> - **OCP:** `BonusReport.describe()` decide con cadena `instanceof` — cada tipo nuevo obliga a modificarlo.
+> - **LSP:** `TemporaryEmployee.calculateBonus()` y `manage()` lanzan `UnsupportedOperationException` — no sustituye a `Employee`.
+> - **ISP:** `EmployeeTasks` obliga `manage()` a quien no gerencia (los temporales la heredan rota).
+> - **DIP:** `ServicePerson` hace `new MySql()` adentro — depende de lo concreto volátil.
+>
+> > [!success]- ✅ Prueba en vivo (compilado y ejecutado con `javac`/`java`)
+> >
+> > `Payroll.totalBonus()` itera `List<Employee>` y revienta con Luis: `Exception in thread "main" java.lang.UnsupportedOperationException: Temp earns no bonus at ds2026.TemporaryEmployee.calculateBonus(Main.java:62)`. El programa compila perfecto y muere en ejecución — esa es exactamente la firma de una violación LSP: el subtipo no aguanta el contrato del padre.
+> >
+> > Arreglos en 1 línea cada uno: bonus polimórfico sin excepción (LSP) · interfaces `Workable`/`Manageable` separadas (ISP) · `BonusReport` por polimorfismo, no `instanceof` (OCP) · `EmployeeRepository` inyectado en `ServicePerson` (DIP) · `PayslipService` y `EmailService` fuera de `Employee` (SRP).
+
 ---
 
 ## ⚠️ Problemas Comunes y Soluciones

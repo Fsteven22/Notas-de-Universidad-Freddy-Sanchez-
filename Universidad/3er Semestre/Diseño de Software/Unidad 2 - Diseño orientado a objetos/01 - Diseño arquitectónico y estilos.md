@@ -80,8 +80,36 @@ graph TB
 > | **Cliente-servidor** | Front pide, back responde por API | App + API REST | El contrato API es sagrado |
 > | **Microservicios** | Servicios pequeños e independientes | Escala y equipos grandes | Operación compleja (overkill en curso) |
 > | **Monolito modular** | Un despliegue, módulos internos claros | Proyecto semestral, equipo chico ✅ | Disciplina para no mezclar |
+> | **MVC** | Modelo (datos) + Vista (UI) + Controlador (flujo) | App interactiva / web | Vista gorda con lógica de negocio |
 >
 > **Recomendación para tu proyecto:** monolito modular en capas.
+
+### 🎭 MVC: Modelo-Vista-Controlador (Semana 4)
+
+> [!note] 🎨 MVC desacopla interfaz, navegación y comportamiento
+>
+> Patrón arquitectónico (desde 1988) que separa la app en 3 capas, cada una con una sola responsabilidad:
+>
+> | Capa | Responsabilidad | Ejemplo |
+> |---|---|---|
+> | **Modelo** | Objetos de contenido + acceso a datos + funcionalidad específica | `EmployeeRepository`, reglas de nómina |
+> | **Vista** | Presentación al usuario final | Pantalla de rol de pagos, PDF |
+> | **Controlador** | Recibe la petición, pide al Modelo y actualiza la Vista | `PayrollController` |
+>
+> **Flujo de una petición web:** usuario → **Controlador** (selecciona vista + pide datos) → **Modelo** (lee BD, calcula) → **Vista** (formatea) → browser. El Controlador coordina; Modelo y Vista no se hablan directo.
+>
+> ```mermaid
+> flowchart LR
+>     U["Usuario"] --> C["Controlador"]
+>     C --> M["Modelo"]
+>     M --> V["Vista"]
+>     V --> U
+>     M -.datos.-> C
+> ```
+>
+> **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[Main.java]] en U1-04).
+>
+> 📎 Slides de clase: ![[04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11).
 
 ### 🔍 Vistas Mínimas: Componentes y Despliegue
 
@@ -318,6 +346,7 @@ mindmap
 > [!quote] 📖 Fuentes
 >
 > - Deck docente `01bDisenoSoftware.pdf`: dos niveles, qué decide cada uno, estilos.
+> - Slides Semana 4 `04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf` (MSc. Jurado / Dr. Mera): SOLID + MVC.
 > - R. Pressman, B. Maxim, *Software Engineering: A Practitioner's Approach*, 9th ed., cap. 10.
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
 
