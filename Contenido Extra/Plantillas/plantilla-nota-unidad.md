@@ -17,6 +17,8 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 > |---|---|
 > | (costo) | (beneficio) |
 > | (costo) | (beneficio) |
+>
+> **En esta nota:** (lista de lo que cubre, 1 línea por bloque.)
 
 ```mermaid
 graph TB
@@ -79,10 +81,28 @@ graph TB
 >
 > (Demostración completa paso a paso SOLO si el curso la exige; si no, resultado + 1 ejemplo.)
 
-> [!tip] 📏 Reglas de formato de ejemplos/ejercicios
+---
+
+## 📝 Ejercicios Propuestos (Guía N)
+
+> [!example] ✏️ Ejercicio 1 — (Título) (Guía N, ej. X)
 >
-> - **Multipartes como listas:** si hay literales (a), (b), (c)… o varios casos, CADA uno va como ítem de lista `-` (enunciado y solución por separado). Nunca inline con `·`: en el render se pegan lado a lado.
-> - **Entre callouts hermanos, línea REALMENTE vacía** (`>` solo los fusiona y el segundo header se ve como texto).
+> (Enunciado. Si tiene literales (a), (b), (c)… o varios casos, CADA uno como ítem de lista `-`, nunca inline con `·`: en el render se pegan lado a lado.)
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > - (a) **Resultado** — procedimiento en 1 línea.
+> > - (b) **Resultado** — procedimiento en 1 línea.
+
+> [!example] ✏️ Ejercicio 2 — (Título) (Guía N, ej. Y)
+>
+> (Enunciado como lista si es multi-parte.)
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > (Procedimiento completo, no solo el resultado.)
+
+> [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal).
 
 ---
 
@@ -98,28 +118,45 @@ graph TB
 
 ## ⚠️ Errores Comunes y Principios Lógicos
 
-> [!warning] ⚠️ Errores Frecuentes
+> [!danger] ❌ Error 1 — (Nombre) (viola **(principio o definición)**)
 >
-> - **(Nombre del error):** síntoma → solución en 1 línea.
-> - **(Nombre del error):** síntoma → solución en 1 línea.
+> - ❌ **EL ERROR ESTÁ AQUÍ:** (qué se hace mal, concreto).
+> - ✅ Así sí: (cómo hacerlo bien en 1 línea).
+
+> [!danger] ❌ Error 2 — (Nombre) (viola **(principio)**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** (qué se hace mal, concreto).
+> - ✅ Así sí: (cómo hacerlo bien en 1 línea).
 
 ---
 
 ## 🎯 Metas de Aprendizaje
 
-> [!note] 📋 Nivel Básico
+> [!note] 🎯 Nivel Básico
 >
 > - [ ] (Puedo definir / identificar sin mirar.)
 > - [ ] (Reconozco el concepto en un ejemplo.)
 
-> [!note] 📋 Nivel Intermedio
+> [!note] 🎯 Nivel Intermedio
 >
 > - [ ] (Aplico el método a un caso nuevo.)
 > - [ ] (Comparo variantes y elijo bien.)
 
-> [!note] 📋 Nivel Avanzado
+> [!note] 🎯 Nivel Avanzado
 >
 > - [ ] (Justifico decisiones / detecto errores en casos ajenos.)
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/<% tp.system.prompt("Mazo SR (ej: bd-u1, discretas-u1)") %>
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿(Pregunta)?::(Respuesta corta, 1 línea.)
+> - ¿(Pregunta)?::(Respuesta corta, 1 línea.)
+> - ¿(Pregunta)?::(Respuesta corta, 1 línea.)
 
 ---
 
