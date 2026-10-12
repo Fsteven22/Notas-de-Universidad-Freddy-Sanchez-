@@ -612,4 +612,32 @@ graph TD
 
 ---
 
+## 📝 Ejercicios Propuestos (Guía 1)
+
+> [!example] ✏️ Ejercicio 1 — Tabla y clasificación (Guía 1, ej. 4)
+>
+> Para $[(p \to q) \to (\neg r \to p)] \to (q \to r)$: (a) construye la tabla completa, (b) clasifica en tautología/contradicción/contingencia, (c) simplifica con equivalencias y verifica.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Tabla de $2^3 = 8$ filas. La proposición resulta **contingencia** (no siempre V ni siempre F). Simplificación: $p \to q \equiv \neg p \vee q$ aplicada de adentro hacia afuera + De Morgan; verifica que la simplificada coincide fila por fila.
+
+> [!example] ✏️ Ejercicio 2 — Valor con asignación (Guía 1, ej. 5)
+>
+> Si $p, q$ verdaderas y $r, s$ falsas, halla el valor de $(\neg p \to q) \to (\neg r \to s) \to (\neg s \to p) \to (p \to \neg s)$.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Sustituye primero: $(\neg V \to V) \to (\neg F \to F) \to (\neg F \to V) \to (V \to \neg F)$ = $(F \to V) \to (V \to F) \to (V \to V) \to (V \to V)$ = $V \to F \to V \to V$. Evaluando $\to$ de izquierda a derecha con $V \to F \equiv F$: resulta **F**.
+
+> [!example] ✏️ Ejercicio 3 — Bóveda de 3 entradas (Guía 1, ej. 6)
+>
+> Gerente (A), subgerente (B), supervisor (C). $Y=1$ si A autoriza; si $A=0$, solo si B y C a la vez; si $A=B=C=1$, $Y=0$ (coacción). Da tabla, expresión simplificada y circuito AND/OR/NOT.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Tabla: $Y=1$ en $(1,0,0), (1,1,0), (1,0,1), (0,1,1)$; $Y=0$ en el resto (incluido $(1,1,1)$). Expresión: $Y = (A \wedge \neg B \wedge \neg C) \vee (A \wedge B \wedge \neg C) \vee (A \wedge \neg B \wedge C) \vee (\neg A \wedge B \wedge C)$, simplificable a $Y = (A \wedge \neg(B \wedge C)) \vee (\neg A \wedge B \wedge C)$.
+
+---
+
 **Tags:** #matematicas-discretas #logica-proposicional #conectivos-logicos #tablas-de-verdad #equivalencias #circuitos-combinatorios #compuertas-logicas #MATG1051

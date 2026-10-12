@@ -445,4 +445,32 @@ graph TD
 
 ---
 
+## 📝 Ejercicios Propuestos (Guía 1)
+
+> [!example] ✏️ Ejercicio 1 — Traducción + 3 variantes (Guía 1, ej. 7)
+>
+> $p$: 10% descuento predial; $q$: cancelo en enero. Formaliza "Obtengo el descuento, dado que cancelo en enero" y da recíproca, inversa y contrarrecíproca en formal y común.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Formal: $q \to p$. Recíproca $p \to q$ ("si obtengo el descuento, entonces cancelé en enero"). Inversa $\neg q \to \neg p$. Contrarrecíproca $\neg p \to \neg q$ (única equivalente).
+
+> [!example] ✏️ Ejercicio 2 — Validez con trofeo (Guía 1, ej. 8)
+>
+> "Si no llueve o no hay niebla, la carrera se realiza y sigue. Si se realiza, se entrega el trofeo. No se entregó. ∴ Llovió." ¿Válido?
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Sean $p$: llueve, $q$: hay niebla, $r$: se realiza, $s$: se entrega. Premisas: $(\neg p \vee \neg q) \to r$, $r \to s$, $\neg s$. Por Tollens en la 2da: $\neg r$; por Tollens en la 1ra: $\neg(\neg p \vee \neg q) \equiv p \wedge q$. Luego $p$: **llovió. Válido** (Modus Tollens ×2).
+
+> [!example] ✏️ Ejercicio 3 — Submarinistas (Guía 1, ej. 9)
+>
+> Formaliza y decide: mar calmo + sin tormenta → buena visibilidad; buena visibilidad → bajamos a 50m; expertos → tiburones no preocupan; somos expertos; no bajamos o nos preocupan. ∴ Mar agitado o hay tormenta.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > $m$: mar agitado, $t$: tormenta, $v$: buena visibilidad, $b$: bajar, $e$: expertos, $s$: preocupan. De $\neg b \vee s$ con $e$ y $e \to \neg s$: $\neg b$. Con $v \to b$: $\neg v$. Con $(\neg m \wedge \neg t) \to v$: $\neg(\neg m \wedge \neg t) \equiv m \vee t$. **Válido.**
+
+---
+
 **Tags:** #matematicas-discretas #logica-proposicional #condicional #equivalencia-logica #tautologia #contradiccion #contrarreciproco #leyes-de-morgan #MATG1051
