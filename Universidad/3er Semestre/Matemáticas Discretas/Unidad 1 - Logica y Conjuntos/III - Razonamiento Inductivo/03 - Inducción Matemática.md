@@ -32,17 +32,10 @@ dg-publish: true
 ## 🔧 Estructura de una Demostración por Inducción
 
 > [!tip] ⚙️ Pasos a seguir
-> 
-> ```
-> 1. PASO BASE:   Verificar que S(1) es verdadera.
-> 
-> 2. PASO INDUCTIVO:
->    - Hipótesis inductiva: Suponer que S(n) es verdadera para algún n ∈ ℕ.
->    - Meta: Demostrar que S(n+1) es verdadera.
->    - Usar la hipótesis inductiva para llegar a S(n+1).
-> 
-> 3. CONCLUSIÓN: Por el principio de inducción, S(n) es verdadera ∀n ∈ ℕ.
-> ```
+>
+> 1. **PASO BASE:** verificar que $S(n_0)$ es verdadera (casi siempre $n_0 = 1$, pero puede ser $0$ u otro).
+> 2. **PASO INDUCTIVO:** suponer $S(n)$ verdadera para algún $n$ (hipótesis inductiva) y demostrar $S(n+1)$ usándola.
+> 3. **CONCLUSIÓN:** por el principio de inducción, $S(n)$ vale $\forall n \geq n_0$.
 
 ---
 
@@ -74,111 +67,47 @@ dg-publish: true
 
 ---
 
-## 📐 Principio Fuerte de Inducción Matemática
+## 🧭 Todos los Casos de Inducción Simple
 
-> [!note] 📖 Principio Fuerte de Inducción
-> 
-> Sea $n_0 \in \mathbb{Z}$ y $S(n)$ una función proposicional con dominio de discurso el conjunto de enteros mayores o iguales que $n_0$. Suponga que:
-> 
-> 1. $S(n_0)$ es verdadera, **y**
-> 2. Para todo $n > n_0$, si $S(k)$ es verdadera para **todos** los $k$ satisfaciendo $n_0 \leq k < n$, entonces $S(n)$ es verdadera.
-> 
-> Entonces $S(n)$ es verdadera **para todo entero $n \geq n_0$**.
-> 
-> > ⚠️ Las dos formas de inducción matemática son **lógicamente equivalentes**.
-> 
-> **¿Cuándo usar la forma fuerte?**
-> Se usa cuando para demostrar $S(n)$ necesitamos información de **varios predecesores** de $n$, no solo del anterior $S(n-1)$.
-
----
-
-## 🔧 Estructura de la Inducción Fuerte
-
-> [!tip] ⚙️ Pasos a seguir
-> 
+> [!note] 📋 Cómo reconocer cada caso
+>
+> ```mermaid
+> flowchart TD
+>     A["¿Qué afirma S(n)?"] --> B{"¿Igualdad con suma/"}
+>     B -->|"Suma cerrada"| C["Caso 1: Sumatorias"]
+>     B -->|"Divisibilidad"| D["Caso 2: Divisibilidad"]
+>     B -->|"Desigualdad"| E["Caso 3: Desigualdades"]
+>     B -->|"Fórmula cerrada"| F["Caso 4: Geométricas y potencias"]
+>     style C fill:#e1ffe1
 > ```
-> 1. PASO BASE:   Verificar S(n₀).
-> 
-> 2. PASO INDUCTIVO:
->    - Hipótesis inductiva (fuerte): Suponer que S(k) es verdadera
->      para todo k con n₀ ≤ k < n (no solo para n-1).
->    - Meta: Demostrar que S(n) es verdadera.
->    - Usar la hipótesis para cualquier predecesor que se necesite.
-> 
-> 3. CONCLUSIÓN: Por el principio fuerte de inducción, S(n) es verdadera ∀n ≥ n₀.
-> ```
+>
+> ### Caso 1 — Sumatorias (el clásico)
+>
+> Forma: $\sum_{k=1}^{n} a_k = F(n)$. Paso inductivo: $t_{n+1} = t_n + a_{n+1}$, sustituyes la hipótesis y simplificas hasta $F(n+1)$. Ejemplo: impares $= n^2$ (arriba).
+>
+> ### Caso 2 — Divisibilidad
+>
+> Forma: $d \mid E(n)$ para todo $n$. Paso inductivo: escribe $E(n+1)$ separando un múltiplo de $d$ más algo que la hipótesis ya garantiza divisible. Ejemplo: $8 \cdot 7^n - 3 \cdot 2^n$ divisible por $5$ (ejercicio 1: resta $E(n+1) - 7E(n)$ y factoriza).
+>
+> ### Caso 3 — Desigualdades
+>
+> Forma: $A(n) < B(n)$ (o $\leq$). Paso inductivo: parte de la hipótesis como desigualdad y encadena ($\leq$ es transitivo). La base suele necesitar varios $n_0$ si la desigualdad "despierta" tarde. Ejemplo: $r^0 + \cdots + r^n < \frac{1}{1-r}$ con $0 < r < 1$ (ejercicios 3–4: mayora cada término).
+>
+> ### Caso 4 — Fórmulas cerradas (geométricas y potencias)
+>
+> Forma: suma con razón o potencias $= $ expresión cerrada. Paso inductivo: factoriza la razón común. Ejemplo: suma geométrica $a + ar + \cdots + ar^n = a\frac{1-r^{n+1}}{1-r}$ (ejercicio 2: $S_{n+1} = S_n + ar^{n+1}$, factoriza y simplifica).
+>
+> ### Caso especial — Base que no es $1$
+>
+> Si $S(n)$ solo vale desde $n_0$ (ej. $\forall n \geq 0$ en la geométrica): base en $n_0$ y el inductivo igual. La conclusión es $\forall n \geq n_0$, no $\forall n \in \mathbb{N}$.
 
 ---
 
-## 🧮 Definición Auxiliar — [[01 - Funciones|Función Piso]]
+## 📌 Mención — Inducción Fuerte (solo cuándo usarla)
 
-> [!note] 📖 Definición — Función Piso $\lfloor x \rfloor$
-> 
-> Dado $x \in \mathbb{R}$, llamaremos **Piso** de $x$, denotado $\lfloor x \rfloor$, al **mayor entero que es menor o igual a $x$**.
-> 
-> **Ejemplos:**
-> 
-> | Expresión | Valor |
-> |:---:|:---:|
-> | $\lfloor 4/3 \rfloor$ | $1$ |
-> | $\lfloor 0.999 \rfloor$ | $0$ |
-> | $\lfloor -2 \rfloor$ | $-2$ |
-> | $\lfloor 4 \rfloor$ | $4$ |
-
----
-
-## 📝 Ejemplos (Inducción Fuerte)
-
-> [!example] 📝 Ejemplo 2 — Lista recursiva con función piso
-> 
-> Sea $C_n$ una lista de números definida por:
-> $$C_1 = 0 \qquad \text{y} \qquad C_n = C_{\lfloor n/2 \rfloor} + n, \quad \forall n > 1$$
-> 
-> **Teorema:** $C_n < 4n$, $\forall n \geq 1$.
-> 
-> **Demostración:**
-> 
-> **Paso base:** $C_1 = 0 < 4 \cdot 1$ ✅
-> 
-> Verificamos algunos términos adicionales:
-> 
-> | $n$ | $C_n$ | $4n$ | ¿$C_n < 4n$? |
-> |:---:|:---:|:---:|:---:|
-> | 1 | 0 | 4 | ✅ |
-> | 2 | $C_1 + 2 = 2$ | 8 | ✅ |
-> | 3 | $C_1 + 3 = 3$ | 12 | ✅ |
-> | 4 | $C_2 + 4 = 6$ | 16 | ✅ |
-> | 5 | $C_2 + 5 = 7$ | 20 | ✅ |
-> 
-> **Paso inductivo (inducción fuerte):**
-> 
-> Dado $n > 1$, supongamos que $C_k < 4k$ para todo $1 \leq k < n$ *(hipótesis inductiva fuerte)*.
-> 
-> Sabemos que $1 \leq \lfloor n/2 \rfloor \leq n/2 < n$ ya que $n > 1$.
-> 
-> Tomando $k = \lfloor n/2 \rfloor$ tenemos que $1 \leq k < n$, por lo que por la hipótesis inductiva:
-> 
-> $$C_{\lfloor n/2 \rfloor} = C_k < 4k = 4\lfloor n/2 \rfloor$$
-> 
-> Entonces:
-> 
-> $$C_n = C_{\lfloor n/2 \rfloor} + n < 4\lfloor n/2 \rfloor + n \leq 4\cdot\frac{n}{2} + n = 2n + n = 3n < 4n$$
-> 
-> Concluimos que $C_n < 4n$, $\forall n \geq 1$, por el **principio fuerte de inducción matemática**. $\blacksquare$
-
----
-
-## 📊 Comparación: Inducción Simple vs. Fuerte
-
-> [!success] 🗂️ ¿Cuándo usar cada una?
-> 
-> | Aspecto | Inducción Simple | Inducción Fuerte |
-> |---|---|---|
-> | **Hipótesis** | $S(n)$ es verdadera | $S(k)$ es verdadera para todo $k < n$ |
-> | **Uso** | Basta con el paso anterior | Se necesitan varios predecesores |
-> | **Ejemplos típicos** | Fórmulas de sumas, potencias | Recursiones, secuencias tipo $C_{\lfloor n/2 \rfloor}$ |
-> | **Equivalencia** | Ambas son lógicamente equivalentes | ✅ |
-> ![[file_00000000f17c71fba96939a05e098492.png]]
+> [!note] 📖 Inducción fuerte en 5 líneas
+>
+> Hipótesis reforzada: supones $S(k)$ verdadera para **todos** los $k$ con $n_0 \leq k < n$ (no solo $n-1$). Úsala cuando $S(n)$ necesita **varios predecesores** (recursiones como $C_n = C_{\lfloor n/2 \rfloor} + n$). Ambas formas son **lógicamente equivalentes**. Detalle completo y ejemplos en el historial git de esta nota.
 
 ---
 
@@ -198,39 +127,88 @@ dg-publish: true
 > 
 > **4.** Usando el ejercicio anterior, demuestre que si $0 < r < 1$ entonces:
 > $$1 \cdot r + 2 \cdot r^2 + \cdots + n \cdot r^n < \frac{r}{(1-r)^2}, \quad \forall n \in \mathbb{N}$$
-> 
-> ---
-> 
-> **Inducción fuerte:**
-> 
-> **5.** Demuestre que cualquier grupo con al menos 6 estudiantes se puede dividir en subgrupos de 3 o 4 estudiantes.
-> 
-> **6.** Sea $C_n$ definida por $C_1 = 0$ y $C_n = 4C_{\lfloor n/2 \rfloor} + n$, $\forall n > 1$. Demuestre que $C_n \leq 4(n-1)^2$, $\forall n \geq 1$.
-> 
-> **7.** Sea $C_n$ definida por $C_1 = 1$, $C_2 = 5$, $C_3 = 7$ y $C_n = 4C_{n-1} - C_{n-2} - 6C_{n-3}$, $\forall n \geq 4$. Encuentre una fórmula para $C_n$ y demuéstrela por inducción.
+
+---
+
+## ⚠️ Errores Comunes y Principios Lógicos
+
+> [!danger] ❌ Error 1: Probar $S(n+1)$ sin usar la hipótesis (viola **el paso inductivo**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** demostrar $S(n+1)$ desde cero sin invocar $S(n)$ — eso es prueba directa, no inducción.
+> - ✅ Así sí: $t_{n+1} = t_n + a_{n+1}$, y $t_n$ se reemplaza **por la hipótesis**.
+>
+> [!danger] ❌ Error 2: Base en $n$ equivocado (viola **dominio de $S$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** probar base $n=1$ cuando el teorema vale $\forall n \geq 0$ (o al revés).
+> - ✅ Así sí: la base es el **menor** $n_0$ del enunciado; la conclusión hereda ese $n_0$.
+>
+> [!danger] ❌ Error 3: Sumar mal el término $(n+1)$ (viola **álgebra del paso**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** escribir $2(n+1)-1$ como $2n-1$ (olvidar distribuir) y que "no salga" $(n+1)^2$.
+> - ✅ Así sí: expande con calma y verifica que cierra en $F(n+1)$ antes de concluir.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Enuncio el principio simple con base e inductivo sin mirar.
+> - [ ] Clasifico un ejercicio en su caso (suma, divisibilidad, desigualdad, fórmula).
+> - [ ] Ejecuto base + inductivo + conclusión en un caso 1.
+>
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Resuelvo divisibilidad separando el múltiplo en el paso inductivo.
+> - [ ] Mayoro desigualdades encadenando $\leq$ sin romper la cadena.
+> - [ ] Explico cuándo se necesitaría la forma fuerte (varios predecesores).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Principio simple en 2 condiciones?::S(1) verdadera + (S(n) → S(n+1)) ∀n.
+> - ¿4 casos de inducción simple?::Sumatorias, divisibilidad, desigualdades y fórmulas cerradas.
+> - ¿Base que no es 1?::Base en n₀ y conclusión ∀n ≥ n₀.
+> - ¿Cuándo la forma fuerte?::Cuando S(n) necesita varios predecesores (recursiones); son equivalentes.
+> - ¿Error típico del paso inductivo?::Probar S(n+1) sin usar la hipótesis S(n).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
+> - Lógica previa: [[03 - Demostraciones]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Material de clase MATG1051: principio simple, casos y ejercicios 1–4 (los de inducción fuerte viven en el historial git de esta nota).
+
+---
+
+**Tags:** #matematicas-discretas #induccion-matematica #demostraciones #MATG1051
 
 ---
 
 ## 📊 Resumen Visual
 
 ```mermaid
-graph TD
-    A[Proposición S n para todo n ∈ ℕ] --> B{¿Qué forma de inducción?}
-
-    B --> C[Inducción Simple Hipótesis: S n verdadera]
-    B --> D[Inducción Fuerte Hipótesis: S k verdadera ∀ k menor que n]
-
-    C --> E[Paso base: S 1 verdadera]
-    C --> F[Paso inductivo: S n → S n+1]
-
-    D --> G[Paso base: S n₀ verdadera]
-    D --> H[Paso inductivo: S k para k menor que n → S n]
-
-    E --> I[✅ S n verdadera para todo n]
-    F --> I
-    G --> I
-    H --> I
-
+flowchart TD
+    A["S(n) para n ≥ n₀"] --> B["Base: verifica S(n₀)"]
+    B --> C["Hipótesis: supone S(n)"]
+    C --> D["Demuestra S(n+1)<br/>usando la hipótesis"]
+    D --> E["✅ S(n) ∀n ≥ n₀"]
+    F["¿Fuerte? Solo si S(n)<br/>pide varios predecesores"] -.mención.-> A
+    style E fill:#e1ffe1
 ```
 
 ---
