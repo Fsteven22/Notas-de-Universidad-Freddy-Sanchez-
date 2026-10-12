@@ -7,9 +7,25 @@ dg-publish: true
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Para qué sirve la inducción matemática?
-> 
+>
 > La **inducción matemática** es una técnica de demostración que permite probar que una proposición $S(n)$ es verdadera para **todos los números naturales** (o para todo entero mayor o igual a un valor inicial $n_0$).
-> 
+>
+> **La idea en 1 imagen (dominó):** tumbar infinitas fichas una por una es imposible; basta probar 2 cosas: que cae la **primera** (base) y que **cada ficha tumba a la siguiente** (paso). Con eso, caen todas sin tocarlas una por una.
+>
+> ```mermaid
+> graph LR
+>     B["Base: cae S(1)"] --> P["Paso: S(n) tumba S(n+1)"]
+>     P --> T["Caen todas"]
+>     style T fill:#e1ffe1
+> ```
+>
+> **Dónde la usarás en esta nota:**
+>
+> - Sumatorias: probar fórmulas cerradas ($\sum k^2$, geométricas).
+> - Divisibilidad: $d \mid E(n)$ para todo $n$ (ej. Guía 1, ej. 18–19).
+> - Desigualdades: $A(n) < B(n)$ que valen desde cierto $n$ (ej. 15, 20).
+> - Recursión (Unidad 4): sucesiones definidas por casos anteriores — ahí nace la forma fuerte.
+>
 > Es especialmente útil cuando queremos demostrar fórmulas de sumas, desigualdades, propiedades de divisibilidad, o cualquier propiedad que dependa de $n \in \mathbb{N}$.
 
 ---
