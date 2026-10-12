@@ -154,7 +154,7 @@ dg-publish: true
 > son particiones de X.
 > 
 > Sin embargo, {{1,2},{2,3}} **no** es partición porque los conjuntos no son disjuntos (el 2 aparece en ambos).
->
+
 > [!abstract] 📐 Teorema 2 — Partición ⟹ Equivalencia
 > 
 > Sea 𝒮 una partición de X. Definamos una relación R sobre X por:
@@ -176,10 +176,11 @@ dg-publish: true
 > **Propiedades de las clases:**
 > 
 > - a ∈ [a] para todo a ∈ X (por reflexividad).
-> - [x] = [b] ⟺ aRb.
+> - Bicondicional de: [x] = [b] ⟺ aRb.
 > - Si [a] ≠ [b], entonces [a] ∩ [b] = ∅ (son disjuntas).
 > - ⋃ₐ [a] = X (cubren todo X).
->
+
+
 > [!abstract] 📐 Teorema 3 — Equivalencia ⟹ Partición (Conjunto Cociente)
 > 
 > Si R es una relación de equivalencia sobre X, entonces la familia:
@@ -194,9 +195,9 @@ dg-publish: true
 > 
 > Las clases de equivalencia son:
 > 
-> - [1] = {x ∈ X : xR₁1} = {1, 3}  (porque 1R₁1 y 3R₁1)
-> - [3] = {x ∈ X : xR₁3} = {1, 3} = [1]  (misma clase)
-> - [4] = {x ∈ X : xR₁4} = {4}
+> - $[1] = \{x \in X : xR_11\} = \{1, 3\}$ (porque $1R_11$ y $3R_11$)
+> - $[3] = \{x \in X : xR_13\} = \{1, 3\} = [1]$ (misma clase)
+> - $[4] = \{x \in X : xR_14\} = \{4\}$
 > 
 > Por el Teorema 3, el **conjunto cociente** es:
 > 
