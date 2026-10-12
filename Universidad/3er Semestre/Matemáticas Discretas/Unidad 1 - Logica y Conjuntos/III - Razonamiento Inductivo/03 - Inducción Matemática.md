@@ -137,11 +137,13 @@ dg-publish: true
 > - ❌ **EL ERROR ESTÁ AQUÍ:** demostrar $S(n+1)$ desde cero sin invocar $S(n)$ — eso es prueba directa, no inducción.
 > - ✅ Así sí: $t_{n+1} = t_n + a_{n+1}$, y $t_n$ se reemplaza **por la hipótesis**.
 >
+
 > [!danger] ❌ Error 2: Base en $n$ equivocado (viola **dominio de $S$**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** probar base $n=1$ cuando el teorema vale $\forall n \geq 0$ (o al revés).
 > - ✅ Así sí: la base es el **menor** $n_0$ del enunciado; la conclusión hereda ese $n_0$.
 >
+
 > [!danger] ❌ Error 3: Sumar mal el término $(n+1)$ (viola **álgebra del paso**)
 >
 > - ❌ **EL ERROR ESTÁ AQUÍ:** escribir $2(n+1)-1$ como $2n-1$ (olvidar distribuir) y que "no salga" $(n+1)^2$.
@@ -157,6 +159,7 @@ dg-publish: true
 > - [ ] Clasifico un ejercicio en su caso (suma, divisibilidad, desigualdad, fórmula).
 > - [ ] Ejecuto base + inductivo + conclusión en un caso 1.
 >
+
 > [!note] 🎯 Nivel Intermedio
 >
 > - [ ] Resuelvo divisibilidad separando el múltiplo en el paso inductivo.
