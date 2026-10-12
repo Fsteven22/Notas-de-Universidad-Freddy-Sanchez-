@@ -315,4 +315,70 @@ graph TD
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Distribuir a medias (viola **ley distributiva completa**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** escribir $A \cup (B \cap C) = (A \cup B) \cap C$ (falta distribuir sobre el segundo término).
+> - ✅ Así sí: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ — la $A$ aparece en ambos lados.
+
+> [!danger] ❌ Error 2: De Morgan sin cambiar el operador (viola **dualidad $\cup$/$\cap$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** escribir $(A \cup B)^c = A^c \cup B^c$ (complementar sin voltear la operación).
+> - ✅ Así sí: el complemento **voltea** la operación: $(A \cup B)^c = A^c \cap B^c$.
+
+> [!danger] ❌ Error 3: Sumar cardinales sin restar la intersección (viola **inclusión-exclusión**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $|A \cup B| = |A| + |B|$ con conjuntos que se solapan.
+> - ✅ Así sí: $|A \cup B| = |A| + |B| - |A \cap B|$ — la suma directa solo vale si son disjuntos.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Enuncio identidad, dominación, idempotencia y complemento sin mirar.
+> - [ ] Aplico De Morgan en ambas direcciones.
+> - [ ] Simplifico expresiones nombrando cada ley usada.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Demuestro igualdades por doble contención ($\subseteq$ + $\supseteq$).
+> - [ ] Traduzco cada ley a su espejo proposicional ($\cup$/$\lor$, $\cap$/$\land$, $^c$/$\neg$).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿De Morgan 1 (conjuntos)?::$(A \cup B)^c = A^c \cap B^c$.
+> - ¿De Morgan 2 (conjuntos)?::$(A \cap B)^c = A^c \cup B^c$.
+> - ¿Distributiva de $\cap$ sobre $\cup$?::$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
+> - ¿Absorción?::$A \cup (A \cap B) = A$ y $A \cap (A \cup B) = A$.
+> - ¿Método de doble contención para $A = B$?::Probar $A \subseteq B$ y $B \subseteq A$.
+> - ¿Espejo lógico de $^c$?::La negación $\neg$ (con $\cup$/$\lor$ y $\cap$/$\land$).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[02 - Operaciones y Diagramas de Venn]]
+> - Siguiente: [[04 - Cardinalidad y Leyes de Cardinalidad]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 2 (identidades de conjuntos y De Morgan).
+> - Material de clase MATG1051: tabla de leyes, dualidad lógica y ejercicios 1–5.
+
+---
+
 **Tags:** #matematicas-discretas #conjuntos #leyes-de-conjuntos #de-morgan #inclusion-exclusion #demostraciones #MATG1051

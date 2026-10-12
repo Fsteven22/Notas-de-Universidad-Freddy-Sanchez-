@@ -480,4 +480,49 @@ graph TD
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]] — principios de conteo
 > - Relacionado: [[05 - Permutaciones y Combinaciones]] — conteo avanzado
 
+---
+
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Sumar sin restar la intersección (viola **inclusión-exclusión**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $|A \cup B| = |A| + |B|$ aunque $A \cap B \neq \emptyset$.
+> - ✅ Así sí: resta siempre $|A \cap B|$; la suma directa solo vale con disjuntos.
+
+> [!danger] ❌ Error 2: "Solo dos" igual a la intersección (viola **regiones de Venn**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** usar $|A \cap B|$ como "A y B pero no C" sin restar el centro.
+> - ✅ Así sí: $|(A \cap B) \text{ solo}| = |A \cap B| - |A \cap B \cap C|$ — el centro hay que sacarlo.
+
+> [!danger] ❌ Error 3: No verificar que las regiones suman $|U|$ (viola **cierre del conteo**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** entregar el llenado del Venn sin comprobar el total.
+> - ✅ Así sí: solo + pares + centro + ninguno debe dar $|U|$ exacto — si no, hay región mal calculada.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Inclusión-exclusión con 2 conjuntos?::$|A \cup B| = |A| + |B| - |A \cap B|$.
+> - ¿Región "A y B solo" (3 conjuntos)?::$|A \cap B| - |A \cap B \cap C|$.
+> - ¿Región "ninguno"?::$|U| - |A \cup B \cup C|$.
+> - ¿Estrategia de llenado del Venn?::De adentro hacia afuera: centro → pares → solos → ninguno.
+> - ¿Verificación obligatoria del conteo?::Las 8 (o 4) regiones deben sumar $|U|$.
+> - ¿$|A - B|$ en una fórmula?::$|A| - |A \cap B|$.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 2 y cap. 8 (inclusión-exclusión).
+> - Material de clase MATG1051: estrategia adentro-hacia-afuera y ejercicios 1–5.
+
+---
+
 **Tags:** #matematicas-discretas #conjuntos #cardinalidad #inclusion-exclusion #venn #MATG1051

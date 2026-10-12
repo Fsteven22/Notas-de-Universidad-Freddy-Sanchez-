@@ -359,4 +359,70 @@ graph TD
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Suponer $A - B = B - A$ (viola **no-conmutatividad de la diferencia**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** calcular una sola diferencia y usarla para ambos lados.
+> - ✅ Así sí: $A - B = A \cap B^c$ y $B - A = B \cap A^c$ — calcula cada una por separado.
+
+> [!danger] ❌ Error 2: Complementar sin fijar $U$ (viola **$A^c = U - A$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** dar $A^c$ como respuesta absoluta sin decir respecto a qué universo.
+> - ✅ Así sí: escribe siempre $U$ primero; si $U$ cambia, $A^c$ cambia.
+
+> [!danger] ❌ Error 3: Suponer $A \times B = B \times A$ (viola **orden del par ordenado**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** listar los mismos pares en ambos productos.
+> - ✅ Así sí: $(a,b) \neq (b,a)$ si $a \neq b$ — el cardinal coincide ($|A|\cdot|B|$) pero los conjuntos no.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Calculo $A \cup B$, $A \cap B$, $A - B$ y $A^c$ con conjuntos dados.
+> - [ ] Ubico cada operación en su región de Venn (2 y 3 conjuntos).
+> - [ ] Listo $A \times B$ y verifico $|A \times B| = |A|\cdot|B|$.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Aplico inclusión-exclusión para hallar "ninguno" en conteos.
+> - [ ] Uso $A - B = A \cap B^c$ para reescribir diferencias.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿$A \cup B$ en una línea?::$\{x : x \in A \lor x \in B\}$.
+> - ¿$A - B$ reescrito con complemento?::$A \cap B^c$.
+> - ¿$A^c$ depende de qué?::Del universo $U$: $A^c = U - A$.
+> - ¿$|A \times B|$?::$|A|\cdot|B|$.
+> - ¿$A \times B = B \times A$?::No en general — el orden del par importa.
+> - ¿Conjuntos disjuntos cuándo?::$A \cap B = \emptyset$.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[01 - Conjuntos, Cardinalidad y Subconjuntos]]
+> - Siguiente: [[03 - Leyes de Conjuntos]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 2 (operaciones, Venn, producto cartesiano).
+> - Material de clase MATG1051: problema de conteo con 3 materias y ejercicios 1–4.
+
+---
+
 **Tags:** #matematicas-discretas #conjuntos #union #interseccion #diferencia #complemento #producto-cartesiano #venn #MATG1051

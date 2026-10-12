@@ -302,4 +302,70 @@ graph TD
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Confundir $\emptyset$, $\{0\}$ y $\{\emptyset\}$ (viola **cardinal**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** decir que $\emptyset = \{0\}$ o que $|\{\emptyset\}| = 0$.
+> - ✅ Así sí: $|\emptyset| = 0$, $|\{0\}| = 1$, $|\{\emptyset\}| = 1$ — el vacío como *elemento* cuenta.
+
+> [!danger] ❌ Error 2: Mezclar $\in$ con $\subseteq$ (viola **definición de subconjunto**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** afirmar $\{1\} \subseteq A$ solo porque $\{1\} \in A$ (ver Resuelto 2: $\{1\} \in A$ pero $\{1\} \not\subseteq A$).
+> - ✅ Así sí: $X \subseteq A$ exige que cada *elemento de X* esté en $A$, no que $X$ mismo sea elemento.
+
+> [!danger] ❌ Error 3: Contar $|P(A)|$ como $2\cdot|A|$ (viola **fórmula $2^n$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** listar "los subconjuntos" y olvidar $\emptyset$ o el propio $A$.
+> - ✅ Así sí: si $|A| = n$, $|P(A)| = 2^n$ — verifica siempre que tu lista tenga $2^n$ elementos.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Distingo $\emptyset$, $\{0\}$ y $\{\emptyset\}$ con sus cardinales.
+> - [ ] Decido $A \subseteq B$, $A \subset B$ y $A = B$ con ejemplos.
+> - [ ] Listo $P(A)$ completo y verifico $|P(A)| = 2^{|A|}$.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Demuestro $\emptyset \subseteq X$ por contradicción.
+> - [ ] Resuelvo el caso trampa $\{1\} \in A$ vs $\{1\} \subseteq A$ sin dudar.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Cardinal de $\emptyset$, $\{0\}$ y $\{\emptyset\}$?::0, 1 y 1 — el vacío como elemento cuenta.
+> - ¿$|P(A)|$ si $|A| = n$?::$2^n$ (incluye $\emptyset$ y el propio $A$).
+> - ¿$\emptyset \subseteq X$ siempre?::Sí, por contradicción (no hay contraejemplo posible).
+> - ¿$A \subset B$ exige qué además de $A \subseteq B$?::Que $A \neq B$.
+> - ¿$\{1\} \in A$ implica $\{1\} \subseteq A$?::No — pide que el elemento $1$ esté en $A$.
+> - ¿$A = B$ cuándo?::Mismos elementos, sin importar orden ni repeticiones.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[03 - Inducción Matemática]]
+> - Siguiente: [[02 - Operaciones y Diagramas de Venn]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 2 (conjuntos, cardinalidad, potencia).
+> - Material de clase MATG1051: notación por extensión/comprensión y ejercicios 1–5.
+
+---
+
 **Tags:** #matematicas-discretas #conjuntos #cardinalidad #subconjuntos #conjunto-potencia #MATG1051
