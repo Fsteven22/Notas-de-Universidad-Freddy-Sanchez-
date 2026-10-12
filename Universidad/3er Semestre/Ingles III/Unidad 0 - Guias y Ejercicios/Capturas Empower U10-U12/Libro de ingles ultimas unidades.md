@@ -7,6 +7,8 @@ dg-publish: false
 > [!info] 📌 Qué es esto
 >
 > Segunda tanda de capturas (pp. 98–158): Unidad 10, Unidad 11, Unidad 12 + gramática/vocabulario de referencia, Progress Checks y pair-work pages. Archivos con `-unverified` se nombran por posición: confirmar al usar.
+>
+> 📕 Versiones lectura: [[Empower U10-U12 lessons.pdf]] · [[Empower Back Matter drills.pdf]] (drills y referencia para practicar)
 
 ## U10 — 10.1 Accidental Discoveries (pp. 98–99)
 
