@@ -275,6 +275,21 @@ graph TD
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Aplico Modus Ponens, Modus Tollens y silogismo hipotético/disyuntivo sin mirar.
+> - [ ] Verifico validez con tabla o con la forma (no con el contenido).
+> - [ ] Detecto afirmación del consecuente y negación del antecedente.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Encadeno 2–3 reglas en una demostración con premisas numeradas.
+> - [ ] Explico por qué cada falacia falla usando la tabla del condicional.
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/discretas-u1
@@ -294,6 +309,15 @@ graph TD
 > - Mapa de contenido: [[Matemáticas Discretas]]
 > - Siguiente: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]] · Inducción: [[03 - Inducción Matemática]]
 > - Base: [[03 - Demostraciones]]
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (reglas de inferencia y falacias).
+> - Material de clase MATG1051: tabla de reglas y argumentos de la Guía 1.
 
 ---
 

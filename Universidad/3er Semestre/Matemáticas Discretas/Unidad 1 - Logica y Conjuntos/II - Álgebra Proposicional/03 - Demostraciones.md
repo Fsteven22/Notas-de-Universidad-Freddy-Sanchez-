@@ -352,6 +352,25 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Contradicción sin negar la conclusión (viola **$(p \to q) \equiv \neg(p \wedge \neg q)$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** suponer $p$ y derivar cualquier absurdo sin haber supuesto $\neg q$.
+> - ✅ Así sí: supone $p \wedge \neg q$ completo y deriva la contradicción desde ahí.
+
+> [!danger] ❌ Error 2: Contrarrecíproco sin negar (viola **$p \to q \equiv \neg q \to \neg p$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "probar" $q \to p$ creyendo que es el contrarrecíproco.
+> - ✅ Así sí: niega **ambos** lados y voltea: parte de $\neg q$ y llega a $\neg p$.
+
+> [!danger] ❌ Error 3: Casos que no cubren todo (viola **exhaustividad**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** probar par/impar pero olvidar el $0$, o cubrir $n > 0$ sin el $n = 0$.
+> - ✅ Así sí: verifica que la unión de tus casos es todo el dominio antes de concluir.
+
+---
+
 ## 📊 Resumen Visual
 
 ```mermaid
@@ -382,6 +401,21 @@ graph TD
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Elijo la técnica (directa, contradicción, contrarrecíproco, casos) según el enunciado.
+> - [ ] Ejecuto par/impar con prueba directa sin mirar.
+> - [ ] Verifico que mis casos cubren todo el dominio.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Cito la equivalencia lógica que justifica cada técnica.
+> - [ ] Reescribo una prueba por contradicción como contrarrecíproca y viceversa.
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/discretas-u1
@@ -401,6 +435,15 @@ graph TD
 > - Mapa de contenido: [[Matemáticas Discretas]]
 > - Anterior: [[02 - Cuantificadores]] · Inducción: [[03 - Inducción Matemática]]
 > - Reglas: [[01 - Reglas de Inferencia]]
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (métodos de demostración).
+> - Material de clase MATG1051: las 4 técnicas y paridad.
 
 ---
 

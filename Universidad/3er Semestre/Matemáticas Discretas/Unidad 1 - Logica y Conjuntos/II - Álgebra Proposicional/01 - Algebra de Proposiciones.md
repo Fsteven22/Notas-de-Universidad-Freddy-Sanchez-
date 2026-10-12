@@ -218,6 +218,21 @@ graph LR
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Cito la ley usada en cada paso (De Morgan, distributiva, condicional, absorción).
+> - [ ] Transformo $p \to q$ en $\neg p \vee q$ cuando el objetivo pide forma normal.
+> - [ ] Resuelvo los ejercicios de simplificación sin tablas.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Elijo la ley inicial según el objetivo (qué forma final busco).
+> - [ ] Explico el Problema de los Baúles como equivalencia paso a paso.
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/discretas-u1

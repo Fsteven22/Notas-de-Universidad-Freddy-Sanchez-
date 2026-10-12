@@ -163,6 +163,25 @@ dg-publish: true
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Generalizar desde un elemento con historia (viola **arbitrariedad en GU**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** probar $P(c)$ para una $c$ con supuestos previos y concluir $\forall x\,P(x)$.
+> - ✅ Así sí: la generalización universal exige una $c$ **arbitraria**, sin propiedades asumidas.
+
+> [!danger] ❌ Error 2: Particularizar $\forall$ fuera del dominio (viola **dominio de discurso**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** de $\forall x \in \mathbb{N}\,P(x)$ concluir $P(-3)$.
+> - ✅ Así sí: la particularización solo instancia elementos **del dominio** declarado.
+
+> [!danger] ❌ Error 3: Reutilizar el nombre del testigo $\exists$ (viola **frescura del testigo**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** de $\exists x\,P(x)$ y $\exists x\,Q(x)$ concluir $P(c) \wedge Q(c)$ con la misma $c$.
+> - ✅ Así sí: cada existencial da su propio testigo ($c_1$, $c_2$) — podrían ser distintos.
+
+---
+
 ## 📊 Resumen Visual
 
 ```mermaid
@@ -191,6 +210,21 @@ graph TD
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Aplico las 4 reglas (PU, GU, PE, GE) en la dirección correcta.
+> - [ ] Particularizo $\forall$ solo dentro del dominio declarado.
+> - [ ] Doy testigo fresco en cada particularización existencial.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Generalizo a $\forall$ solo desde elemento arbitrario.
+> - [ ] Combino reglas proposicionales y cuantificadas en una demostración.
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/discretas-u1
@@ -210,6 +244,15 @@ graph TD
 > - Mapa de contenido: [[Matemáticas Discretas]]
 > - Anterior: [[01 - Reglas de Inferencia]] · Siguiente: [[03 - Inducción Matemática]]
 > - Base: [[02 - Cuantificadores]]
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (inferencia con cuantificadores).
+> - Material de clase MATG1051: las 4 reglas y restricciones del testigo.
 
 ---
 

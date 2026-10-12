@@ -387,6 +387,25 @@ dg-publish: true
 
 ---
 
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Negar el cuantificador sin cambiarlo (viola **negación de cuantificadores**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $\neg\forall x\,P(x) \equiv \forall x\,\neg P(x)$.
+> - ✅ Así sí: la negación voltea el cuantificador: $\neg\forall x\,P(x) \equiv \exists x\,\neg P(x)$ (y al revés).
+
+> [!danger] ❌ Error 2: Conmutar anidados de distinto tipo (viola **dependencia del orden**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** tratar $\forall x\,\exists y$ igual que $\exists y\,\forall x$.
+> - ✅ Así sí: el orden importa — "$\forall x\,\exists y$" (cada $x$ tiene su $y$) no es "$\exists y\,\forall x$" (un $y$ para todos).
+
+> [!danger] ❌ Error 3: Particularizar $\exists$ con nombre ya usado (viola **novedad del testigo**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** de $\exists x\,P(x)$ concluir $P(c)$ con una $c$ que ya aparece en la prueba.
+> - ✅ Así sí: el testigo existencial debe ser un nombre **fresco**, sin supuestos previos sobre él.
+
+---
+
 ## 📊 Resumen Visual
 
 ```mermaid
@@ -420,6 +439,21 @@ graph TD
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Niego $\forall$/$\exists$ volteando el cuantificador de memoria.
+> - [ ] Distingo $\forall x\,\exists y$ de $\exists y\,\forall x$ con un ejemplo.
+> - [ ] Particularizo $\forall$ y generalizo $\exists$ en ejercicios simples.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Resuelvo anidados con testigo fresco en la particularización existencial.
+> - [ ] Traduzco frases ("todo", "alguien", "el único") a su cuantificador exacto.
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/discretas-u1
@@ -439,6 +473,15 @@ graph TD
 > - Mapa de contenido: [[Matemáticas Discretas]]
 > - Anterior: [[01 - Algebra de Proposiciones]] · Siguiente: [[03 - Demostraciones]]
 > - Reglas con cuantificadores: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (predicados y cuantificadores).
+> - Material de clase MATG1051: negación de cuantificadores y anidados.
 
 ---
 

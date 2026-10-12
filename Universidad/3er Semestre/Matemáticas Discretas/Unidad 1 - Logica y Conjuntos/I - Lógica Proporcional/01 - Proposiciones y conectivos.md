@@ -640,4 +640,72 @@ graph TD
 
 ---
 
+---
+
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Creer que $F \to V$ es $F$ (viola **tabla del condicional**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "si la hipótesis es falsa, el condicional es falso" — con antecedente $F$, el condicional siempre es $V$.
+> - ✅ Así sí: el único caso $F$ es $V \to F$; memoriza la fila 2 de la tabla.
+
+> [!danger] ❌ Error 2: Negar $\wedge$/$\vee$ sin voltear (viola **De Morgan**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $\neg(p \wedge q) \equiv \neg p \wedge \neg q$.
+> - ✅ Así sí: la negación voltea el conectivo: $\neg(p \wedge q) \equiv \neg p \vee \neg q$.
+
+> [!danger] ❌ Error 3: Ignorar el caso coacción en circuitos (viola **lectura del enunciado**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** en la bóveda, poner $Y = 1$ cuando $A = B = C = 1$ porque "todos autorizan".
+> - ✅ Así sí: el enunciado manda — con coacción $(1,1,1) \to Y = 0$; la tabla decide, no la intuición.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Distingo proposición de no-proposición y escribo las 6 tablas de memoria.
+> - [ ] Aplico De Morgan y $p \to q \equiv \neg p \vee q$ para simplificar.
+> - [ ] Traduzco un circuito serie/paralelo a su fórmula AND/OR/NOT.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Clasifico tautología/contradicción/contingencia con tabla completa.
+> - [ ] Resuelvo la bóveda y el submarinista (Guía 1, ej. 6–9) sin mirar.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Único caso donde $p \to q$ es $F$?::$p = V$, $q = F$ (fila 2); el resto es $V$.
+> - ¿$p \to q$ sin $\to$?::$\neg p \vee q$.
+> - ¿De Morgan para $\wedge$?::$\neg(p \wedge q) \equiv \neg p \vee \neg q$.
+> - ¿Tautología vs contingencia?::Tautología: toda la columna $V$; contingencia: mezcla $V$/$F$.
+> - ¿Serie y paralelo en circuitos?::Serie = AND ($\wedge$), paralelo = OR ($\vee$).
+> - ¿Guía 1 ej. 4–6 qué piden?::Tabla+clasificación, valor con asignación y circuito de la bóveda.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[00 - Índice Unidad 1]]
+> - Siguiente: [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (proposiciones, conectivos, tablas).
+> - Material de clase MATG1051: compuertas, circuitos y Guía 1 (ej. 4–6).
+
+---
+
 **Tags:** #matematicas-discretas #logica-proposicional #conectivos-logicos #tablas-de-verdad #equivalencias #circuitos-combinatorios #compuertas-logicas #MATG1051

@@ -473,4 +473,72 @@ graph TD
 
 ---
 
+---
+
+## ⚠️ Errores Comunes y Principios
+
+> [!danger] ❌ Error 1: Tratar recíproca o inversa como equivalentes (viola **equivalencia real**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** asumir que $q \to p$ o $\neg p \to \neg q$ "dicen lo mismo" que $p \to q$.
+> - ✅ Así sí: la única equivalente es la **contrarrecíproca** $\neg q \to \neg p$; recíproca e inversa son falacias clásicas.
+
+> [!danger] ❌ Error 2: Traducir "solo si" al revés (viola **traducción del condicional**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** "$p$ solo si $q$" formalizado como $q \to p$.
+> - ✅ Así sí: "$p$ solo si $q$" es $p \to q$ ($p$ no puede ser $V$ sin $q$); "es necesario" marca el consecuente.
+
+> [!danger] ❌ Error 3: Declarar tautología con una fila (viola **verificación completa**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** ver una fila $V$ y concluir tautología sin la tabla entera.
+> - ✅ Así sí: tautología exige **todas** las filas $V$ ($2^n$ filas); una sola $V$ no prueba nada.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Escribo recíproca, inversa y contrarrecíproca y digo cuál equivale.
+> - [ ] Traduzco "solo si", "es necesario" y "a menos que" a $\to$.
+> - [ ] Verifico equivalencias con tabla completa.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Simplifico cadenas de condicionales con $p \to q \equiv \neg p \vee q$ + De Morgan.
+> - [ ] Formalizo argumentos en lenguaje natural (submarinistas, ej. 7–9) y decido validez.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Variante equivalente al condicional?::Solo la contrarrecíproca $\neg q \to \neg p$.
+> - ¿"$p$ solo si $q$" es…?::$p \to q$ (q es necesaria para p).
+> - ¿Recíproca de $p \to q$?::$q \to p$ — NO equivalente.
+> - ¿Tautología exige qué?::Toda la columna $V$ en las $2^n$ filas.
+> - ¿$VL(p \to q)$ con la fórmula max?::$\max(1 - VL(p), VL(q))$.
+> - ¿Guía 1 ej. 7–9 qué evalúan?::Traducción del condicional y validez de argumentos.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[01 - Proposiciones y conectivos]]
+> - Siguiente: [[01 - Algebra de Proposiciones]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes
+>
+> - Rosen, *Discrete Mathematics and Its Applications* — cap. 1 (condicional, equivalencias, tautologías).
+> - Material de clase MATG1051: formas en lenguaje natural y Guía 1 (ej. 7–9).
+
+---
+
 **Tags:** #matematicas-discretas #logica-proposicional #condicional #equivalencia-logica #tautologia #contradiccion #contrarreciproco #leyes-de-morgan #MATG1051
