@@ -10,7 +10,14 @@ tags: [IDIG1008, unit1, indice, english]
 
 ## 📑 Notas de la Unidad
 
-- *Pendiente: obligation modals, comparatives/superlatives, group discussion, 3-paragraph outline.*
+- [[01 - Obligation Modals (Customs)]] — must/mustn't/have to/should + discutir costumbres
+- [[02 - Comparatives and Superlatives (Food)]] — formación, irregulares + describir comidas
+- [[03 - Group Discussion Strategies]] — 6 frases-llave + método de 4 turnos
+- [[04 - Three-Paragraph Outline]] — thesis + 2 apoyos + conclusión
+
+## 📎 Recursos
+
+- [[Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]] — flooding, guion + Q&A
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Ingles III]]
