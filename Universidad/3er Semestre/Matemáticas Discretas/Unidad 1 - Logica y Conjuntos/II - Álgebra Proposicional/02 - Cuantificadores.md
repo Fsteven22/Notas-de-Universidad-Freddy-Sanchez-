@@ -387,6 +387,27 @@ dg-publish: true
 
 ---
 
+## 📝 Ejercicios Propuestos (Guía 1)
+
+> [!example] ✏️ Ejercicio 1 — Orden de cuantificadores en $\mathbb{R} \times \mathbb{R}$ (Guía 1, ej. 13)
+>
+> Decide el valor lógico de cada proposición con dominio $\mathbb{R} \times \mathbb{R}$:
+> (a) $\forall x\,\forall y\ (x^2 < y+1)$ · (b) $\forall x\,\exists y\ (x^2 < y+1)$ · (c) $\exists x\,\forall y\ (x^2 < y+1)$ · (e) $\exists y\,\forall x\ (x^2 < y+1)$ · (f) $\forall y\,\exists x\ (x^2 < y+1)$ · (ñ) $\forall x\,\forall y\ ((x < y) \to (x^2 < y^2))$.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > (a) **F** — contraejemplo $x = 2, y = 0$: $4 < 1$ es falso. (b) **V** — dado $x$, toma $y = x^2$: $x^2 < x^2+1$. (c) **F** — fijado $x$, con $y = -x^2-1$ queda $y+1 = -x^2 \leq x^2$. (e) **F** — fijado $y$, $x^2$ no es acotada. (f) **F** — con $y = -2$ pediría $x^2 < -1$, imposible en $\mathbb{R}$. (ñ) **F** — contraejemplo $x = -3, y = 1$: $-3 < 1$ pero $9 \not< 1$. Nota el contraste (b)✓ vs (f)✗: el **orden** decide.
+
+> [!example] ✏️ Ejercicio 2 — Valor lógico de cuantificadas (Guía 1, ej. 14)
+>
+> Decide: (a) $\exists x \in \mathbb{R} : 7 - 4x < 5 - 4x^2$ · (c) $\exists x \in \mathbb{R} : 2x^2 - 5x + 3 \leq 1 - x$ · (d) $\forall x > 0,\ \exists y \in \mathbb{R} : 4y^2 - 3xy + 1 < 0$.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > (a) **F** — equivale a $2(2x^2-2x+1) < 0$; el discriminante de $2x^2-2x+1$ es $\Delta = 4-8 = -4 < 0$ con líder positivo: siempre positiva, nunca $< 0$. (c) **V** — equivale a $2(x-1)^2 \leq 0$, solo posible con $x = 1$ (verifica: $0 \leq 0$ ✓). (d) **F** — haría falta $\Delta = 9x^2-16 > 0$, i.e. $x > 4/3$; falla para $x = 1$ (ahí la cuadrática nunca es negativa), y el $\forall$ exige todos los $x > 0$.
+
+---
+
 ## ⚠️ Errores Comunes y Principios
 
 > [!danger] ❌ Error 1: Negar el cuantificador sin cambiarlo (viola **negación de cuantificadores**)

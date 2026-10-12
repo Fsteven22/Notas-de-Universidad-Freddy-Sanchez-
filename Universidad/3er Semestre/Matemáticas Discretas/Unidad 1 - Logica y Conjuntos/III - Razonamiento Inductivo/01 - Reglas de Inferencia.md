@@ -229,6 +229,34 @@ dg-publish: true
 
 ---
 
+## 📝 Ejercicios Propuestos (Guía 1)
+
+> [!example] ✏️ Ejercicio 1 — Juan y la procrastinación (Guía 1, ej. 10)
+>
+> Premisas: (1) $\forall x: d(x) \to r(x)$ — quien aplaza es procrastinador; (2) $\forall x: r(x) \to \neg v(x)$ — no pueden revisar; (3) $\forall x: b(x) \to v(x)$ — buena nota requiere revisar; (4) $d(j)$ — Juan aplaza. Demuestra $\neg b(j)$ (Juan no tiene buena nota).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Instancia a Juan y encadena: $d(j)$ (P4) + IU en (1) → $r(j)$ por MP; IU en (2) → $\neg v(j)$ por MP; IU en (3) da $b(j) \to v(j)$, y con $\neg v(j)$ → $\neg b(j)$ por **Modus Tollens**. Válido. ✅
+
+> [!example] ✏️ Ejercicio 2 — Argumento con 5 premisas (Guía 1, ej. 11)
+>
+> De $\neg s \to \neg p$; $u$; $t \to \neg u$; $\neg p \to \neg(\neg q \land \neg r)$; $s \to t$ — demuestra $\neg q \to r$.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > De $u$ y $t \to \neg u$ → $\neg t$ (MT); de $\neg t$ y $s \to t$ → $\neg s$ (MT); con $\neg s \to \neg p$ → $\neg p$ (MP); con la premisa 4 → $\neg(\neg q \land \neg r)$ (MP) → $q \vee r$ (De Morgan) → $\neg q \to r$. Válido. ✅
+
+> [!example] ✏️ Ejercicio 3 — Argumento con 3 premisas (Guía 1, ej. 12)
+>
+> De $p \wedge q \to r$; $(p \to r) \to s$; $t \vee \neg q$ — demuestra $q \to (s \wedge t)$ por reducción al absurdo.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > Supón $\neg[q \to (s \wedge t)] \equiv q \wedge (\neg s \vee \neg t)$. De $q$ y $t \vee \neg q$ → $t$ (silogismo disyuntivo); con $\neg s \vee \neg t$ → $\neg s$. La contrarrecíproca de la premisa 2 da $\neg s \to \neg(p \to r)$ → $\neg(p \to r) \equiv p \wedge \neg r$ (MP + equivalencia): $p$ y $\neg r$. Con $q$: $p \wedge q$ → $r$ (MP con premisa 1): $r \wedge \neg r$ = ⊥. Contradicción → la conclusión vale. ✅
+
+---
+
 ## ⚠️ Falacias Comunes
 
 > [!warning] 🚫 Errores de razonamiento frecuentes
