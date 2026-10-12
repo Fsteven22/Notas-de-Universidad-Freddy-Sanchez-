@@ -340,6 +340,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u3
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Strategy?::Algoritmos intercambiables tras una interfaz — desde la 2da variante.
+> - ¿Decorator?::Responsabilidades apilables sin herencia explosiva.
+> - ¿Observer?::Publica/suscribe, con desuscripción pareja.
+> - ¿Diagrama de decisión para qué?::Para no aplicar el patrón equivocado.
+> - ¿Strategy con 1 solo algoritmo?::Directo, sin patrón (YAGNI).
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

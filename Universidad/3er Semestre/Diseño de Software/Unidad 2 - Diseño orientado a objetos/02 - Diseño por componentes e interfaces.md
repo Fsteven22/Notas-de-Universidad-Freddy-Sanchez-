@@ -324,6 +324,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Componente en 3 verbos?::Provee + requiere + oculta — accedido solo por interfaces.
+> - ¿Interfaces cómo?::Pequeñas, estables, explícitas y sustituibles.
+> - ¿Fachada cuándo?::Para el subsistema que duele; si no duele, directo.
+> - ¿Cambio de contrato?::Se versiona, nunca en silencio.
+> - ¿Por qué solo por interfaces?::Para ocultar implementación y poder sustituir.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

@@ -326,6 +326,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u5
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿AAA?::Arrange + Act + Assert — siempre en ese orden.
+> - ¿JUnit 5 básico?::`@Test` + aserciones + ciclo de vida; dobles para lo externo.
+> - ¿Tests cómo?::Rápidos, independientes y con nombre que cuente la historia.
+> - ¿La suite cuándo corre?::Antes de cada commit — semáforo del equipo.
+> - ¿Dobles para qué?::Para aislar lo externo (BD, red, tiempo).
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

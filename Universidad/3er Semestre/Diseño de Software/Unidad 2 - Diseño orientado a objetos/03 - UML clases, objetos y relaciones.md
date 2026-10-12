@@ -296,6 +296,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Multiplicidad dónde?::Siempre en ambos extremos de la relación.
+> - ¿Herencia cuándo?::Solo con "es-un" real; lo demás es asociación o composición.
+> - ¿Cómo validas un diagrama?::Narrando escenarios ("Ana se inscribe").
+> - ¿Rombo vs flechas?::Rombo en ER; en clases, flechas tipadas.
+> - ¿Caja UML qué es?::Una clase (nombre + atributos + operaciones).
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

@@ -413,7 +413,7 @@ mindmap
 > | Tema | Qué verás | Por qué importa |
 > |---|---|---|
 > | **Principios SOLID** | 5 reglas OO (S3 del docente) | El examen de diseño bien hecho |
-> | **Repasa** | [[Control 01 - Repaso Paradigmas]] | Control lunes 23:59 en papel |
+> | **Repasa** | [[00 - Índice Unidad 1]] (repaso general U1) | Control lunes 23:59 en papel |
 
 ---
 

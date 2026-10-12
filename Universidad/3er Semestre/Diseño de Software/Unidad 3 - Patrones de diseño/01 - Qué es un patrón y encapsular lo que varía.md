@@ -313,6 +313,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u3
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Patrón en 4 partes?::Nombre + problema + solución + consecuencias.
+> - ¿Origen de "patrón"?::Alexander 1977 (arquitectura) → GoF 1994 (software).
+> - ¿2 principios que explican casi todo?::Encapsula lo que varía + diseña a interfaces.
+> - ¿Sin variación real?::No hay patrón (YAGNI).
+> - ¿El nombre compartido para qué sirve?::Es documentación entre desarrolladores.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

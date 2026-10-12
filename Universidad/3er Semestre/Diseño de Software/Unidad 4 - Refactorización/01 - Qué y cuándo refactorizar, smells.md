@@ -323,6 +323,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u4
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Refactorizar qué es?::Reestructurar sin cambiar comportamiento, con tests en verde.
+> - ¿3 momentos para hacerlo?::Regla de tres + preparatorio + limpieza.
+> - ¿Ciclo de trabajo?::5 minutos por paso.
+> - ¿12 smells organizados cómo?::En 3 familias, cada uno con su técnica de cura.
+> - ¿Qué smell ataco?::Solo el del código que voy a tocar.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

@@ -262,6 +262,17 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u5
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿CI vs entrega vs despliegue?::Integra+prueba por push / deja artefacto listo / suelta (manual o auto).
+> - ¿Orden del pipeline?::Tests → build → CI → entrega → despliegue, sin saltos.
+> - ¿Despliegue cómo?::Como código versionado, nunca oral.
+> - ¿Entrega deja qué?::Un artefacto listo para soltar.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

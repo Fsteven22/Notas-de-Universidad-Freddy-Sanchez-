@@ -320,6 +320,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u3
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Factory?::Centraliza la creación de objetos.
+> - ¿Adapter?::Compatibiliza interfaces — si es temporal, con fecha de muerte.
+> - ¿Facade?::Simplifica un subsistema tras una cara única.
+> - ¿Singleton?::Casi nunca — solo sin estado compartido.
+> - ¿Template Method?::Fija el esqueleto y deja huecos a las subclases.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

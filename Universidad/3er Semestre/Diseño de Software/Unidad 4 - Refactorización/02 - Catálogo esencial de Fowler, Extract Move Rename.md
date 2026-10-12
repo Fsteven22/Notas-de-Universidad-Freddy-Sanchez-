@@ -354,6 +354,17 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u4
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Extract / Move / Rename?::Divide + ubica + aclara (Inline/Split simplifican).
+> - ¿Orden y ritmo?::Orden canónico + 1 técnica por commit + tests verdes siempre.
+> - ¿El catálogo vive dónde?::En tu IDE — aprende sus atajos.
+> - ¿1 técnica por commit por qué?::Commits atómicos, revisables y reversibles.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

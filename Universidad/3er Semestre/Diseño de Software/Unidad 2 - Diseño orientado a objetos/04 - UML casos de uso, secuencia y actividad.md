@@ -285,6 +285,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Casos de uso qué son?::Menú de objetivos del actor: 5–9 por sistema, nada a nivel botón.
+> - ¿Secuencia qué muestra?::Quién llama a quién en orden — 1 escenario por diagrama, `alt`/`loop` marcados.
+> - ¿Actividad cuándo?::Solo con ramas o paralelos reales; lo lineal va en lista.
+> - ¿Flecha de secuencia = ?::Una llamada a método — diseñas código al dibujar.
+> - ¿1 escenario por diagrama por qué?::Para que cada diagrama cuente una historia legible.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

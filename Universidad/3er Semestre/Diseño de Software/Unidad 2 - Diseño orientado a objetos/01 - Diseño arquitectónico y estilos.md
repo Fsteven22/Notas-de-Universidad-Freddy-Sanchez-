@@ -332,6 +332,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Lo más caro de revertir?::La arquitectura (piezas + comunicación + restricciones).
+> - ¿Dos niveles del diseño?::Arquitectural (qué piezas) y detallado (qué clases) — no se codifica sin ambos.
+> - ¿4 partes de todo estilo?::Componentes + conectores + restricciones + semántica.
+> - ¿Estilo para tu proyecto?::Monolito modular en capas + ADR de 5 líneas por decisión.
+> - ¿MVC en 3 capas?::Modelo (datos) + Vista (UI) + Controlador (flujo).
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando

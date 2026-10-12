@@ -18,10 +18,10 @@ dg-publish: true
 > | **Horario** | Lun y Mié — Par 01: 13:00-14:50 · Par 03: 15:00-16:45 (CL lunes, talleres miércoles) |
 > | **Prerrequisito** | Programación Orientada a Objetos |
 > | **Docente** | MSc. David Jurado (djurado@espol.edu.ec, djurado@fiec.espol.edu.ec) — oficina por Teams |
-> | **Syllabus base** | 📎 [[Unidad 0 - Guias y Ejercicios/SPA-SyllabusEUR_ACE-CCPG1042.pdf\|SPA-SyllabusEUR_ACE-CCPG1042.pdf]] (EUR-ACE) |
-> | **Políticas oficiales** | 📎 [[Unidad 0 - Guias y Ejercicios/01aPoliticasCurso-2026-2.pdf\|01aPoliticasCurso-2026-2.pdf]] |
-> | **Deck Semana 1** | 📎 [[Unidad 0 - Guias y Ejercicios/01bDisenoSoftware.pdf\|01bDisenoSoftware.pdf]] |
-> | **Enlaces Aula Virtual** | 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual\|Enlaces del Aula Virtual]] |
+> | **Syllabus base** | 📎 [[Unidad 0 - Guias y Ejercicios/SPA-SyllabusEUR_ACE-CCPG1042.pdf|SPA-SyllabusEUR_ACE-CCPG1042.pdf]] (EUR-ACE) |
+> | **Políticas oficiales** | 📎 [[Unidad 0 - Guias y Ejercicios/01aPoliticasCurso-2026-2.pdf|01aPoliticasCurso-2026-2.pdf]] |
+> | **Deck Semana 1** | 📎 [[Unidad 0 - Guias y Ejercicios/01bDisenoSoftware.pdf|01bDisenoSoftware.pdf]] |
+> | **Enlaces Aula Virtual** | 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] |
 
 ---
 

@@ -301,6 +301,18 @@ mindmap
 
 ---
 
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/diseno-u5
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Ramas cómo?::Una rama por función, cortas y sincronizadas a diario.
+> - ¿Commits cómo?::Atómicos, con PR y review; main siempre verde.
+> - ¿`.gitignore` cuándo?::Desde el día 1.
+> - ¿Secretos dónde?::En variables de entorno, nunca en el repo.
+> - ¿Rebase o merge?::Rebase en local, merge al integrar.
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
