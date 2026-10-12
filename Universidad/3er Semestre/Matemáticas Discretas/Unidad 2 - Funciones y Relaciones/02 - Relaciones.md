@@ -80,6 +80,10 @@ dg-publish: true
 > La **matriz de la relación** (filas = X en orden, columnas = Y en orden) tiene un 1 en la posición (i,j) si xᵢRyⱼ:
 > 
 > $$M_R = \begin{pmatrix} 0&1&0&1&0 \\ 1&0&0&1&0 \\ 0&1&0&0&0 \\ 0&0&0&0&0 \end{pmatrix}$$
+>
+> ![[U2-02-matriz-relacion.png]]
+>
+> *Figura generada con Python (verificada: divisibilidad, dom/rango y matriz coinciden).*
 > 
 > > [!warning]- ⚠️ Observación 1
 > > 
@@ -327,6 +331,61 @@ graph TD
     H --> H4[Transitiva]
 
 ```
+
+---
+
+## ⚠️ Errores Comunes y Principios Lógicos
+
+> [!danger] ❌ Error 1: Matriz sin fijar orden (viola **convención previa**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** calcular $M_R$ mezclando órdenes de X e Y — la matriz sale distinta y "correcta" a la vez.
+> - ✅ Así sí: fija el orden primero (filas = X, columnas = Y) y no lo cambies (verificado arriba).
+>
+> [!danger] ❌ Error 2: Componer al revés (viola **orden $R_2 \circ R_1$**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** leer $R_2 \circ R_1$ como "primero $R_2$" — se aplica $R_1$ primero (de X a Y) y luego $R_2$.
+> - ✅ Así sí: busca el $y$ intermedio: $xR_1y \land yR_2z$.
+>
+> [!danger] ❌ Error 3: Inversa mal volteada (viola **definición**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $R^{-1} = \{(2,4),(2,6),\ldots\}$ (copiar sin voltear).
+> - ✅ Así sí: cada par se invierte: $R^{-1} = \{(4,2),(6,2),(3,3),(6,3),(4,4)\}$.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Hallo dominio, rango y matriz fijando el orden primero.
+> - [ ] Invierto y compongo relaciones con el $y$ intermedio.
+>
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Decido representaciones (pares, matriz, digrafo) según lo que piden.
+> - [ ] Verifico propiedades (reflexiva, simétrica, transitiva) sobre matriz y digrafo.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Dominio vs rango?::$\text{dom}$ = $x$ con pareja; $\text{rang}$ = $y$ con pareja.
+> - ¿Inversa y composición?::$R^{-1}$ voltea pares; $R_2 \circ R_1$ aplica $R_1$ primero (busca $y$ intermedio).
+> - ¿Matriz: qué fija primero?::El orden de X (filas) e Y (columnas).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Índice Unidad 2: [[00 - Índice Unidad 2]]
+> - Anterior: [[01 - Funciones]] · Siguiente: [[03 - Propiedades y Equivalencia]]
 
 ---
 

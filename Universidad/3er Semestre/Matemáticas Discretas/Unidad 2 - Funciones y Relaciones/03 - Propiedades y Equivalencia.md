@@ -219,7 +219,58 @@ graph TD
 > 
 > **2.** [1]=[4]={1,4}, [2]=[5]={2,5}, [3]=[6]={3,6}.
 > 
-> **3.** Sí es relación de equivalencia. Las clases son todas las cadenas de longitud 0, todas las de longitud 1, todas las de longitud 2, etc.
+> **3.** Sí es relación de equivalencia. Las clases son todas las cadenas de longitud 0, todas las de longitud 1, todas las de longitud 2, etc. (verificado con Python: divisibilidad en 1..30 y clases mod 2/3).
+
+---
+
+## ⚠️ Errores Comunes y Principios Lógicos
+
+> [!danger] ❌ Error 1: Probar antisimetría como simetría (viola **dirección de la implicación**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** asumir $xRy \Rightarrow yRx$ para antisimetría — eso es simetría.
+> - ✅ Así sí: asume $xRy \land yRx$ **juntas** y deduce $x=y$ (como $b=ka$, $a=mb$ $\Rightarrow mk=1$).
+>
+> [!danger] ❌ Error 2: Confundir partición con cualquier familia (viola **disjuntos + cubren**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** $\{\{1,2\},\{2,3\}\}$ "particiona" $\{1,2,3\}$ — se solapan.
+> - ✅ Así sí: disjuntos dos a dos y unión $= X$.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Verifico reflexiva/antisimétrica/transitiva una por una (con contraejemplo si falla).
+> - [ ] Calculo clases $[a]$ y el cociente en casos mod $n$.
+>
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Distingo orden parcial de total con incomparables (2 y 3 en divisibilidad).
+> - [ ] Voy de partición a equivalencia y de vuelta (Teoremas 2 y 3).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Orden parcial (3)?::Reflexiva + antisimétrica + transitiva (verificar una por una).
+> - ¿Antisimétrica en 1 línea?::$xRy \land yRx \Rightarrow x=y$ (¡no es simetría!).
+> - ¿Partición (2)?::Disjuntos dos a dos + unión $= X$; equivale a clases de equivalencia.
+> - ¿Parcial vs total?::Total = todo par comparable; parcial admite incomparables (2,3 en $\mid$).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Índice Unidad 2: [[00 - Índice Unidad 2]]
+> - Anterior: [[02 - Relaciones]] · Siguiente: [[04 - Sucesiones y Cadenas]]
 
 ---
 
