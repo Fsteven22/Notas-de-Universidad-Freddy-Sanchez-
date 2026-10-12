@@ -172,7 +172,7 @@ dg-publish: true
 >
 > ![[U2-01-grafico-funcion.png]]
 >
-> *Figura generada con Python (matplotlib): puntos discretos de $f(x)=x^2$ vs $g(x)=x$ en $X$. Nota cómo $f$ repite imágenes (no inyectiva) y $g$ no.*
+> *Figura generada con Python (matplotlib): las curvas muestran las funciones reales $x^2$ y $x$; los puntos, su restricción discreta a $X$. Nota cómo $f$ repite imágenes (no inyectiva) y $g$ no.*
 
 > [!example] 📝 Ejemplo 1 — Inyectividad (discreta)
 > 
