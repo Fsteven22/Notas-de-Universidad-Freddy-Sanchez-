@@ -1,4 +1,4 @@
----
+ ---
 dg-publish: true
 ---
 
@@ -205,6 +205,38 @@ graph LR
     D -->|"Ley n"| E[Expresión final ✅]
 
 ```
+
+---
+
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - El álgebra proposicional **transforma** expresiones en equivalentes citando una ley por paso (sin tablas).
+> - Leyes clave: De Morgan, distributiva, condicional ($p \to q \equiv \neg p \vee q$), absorción, doble negación.
+> - Formato: una equivalencia por línea + ley al margen; el objetivo manda qué ley probar primero.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿De Morgan (2)?::$\neg(p \vee q) \equiv \neg p \wedge \neg q$; $\neg(p \wedge q) \equiv \neg p \vee \neg q$.
+> - ¿Condicional como disyunción?::$p \to q \equiv \neg p \vee q$.
+> - ¿Absorción?::$p \vee (p \wedge q) \equiv p$ (y dual con $\wedge$).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Base: [[01 - Proposiciones y conectivos]] · [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
+> - Siguiente: [[02 - Cuantificadores]] · [[03 - Demostraciones]]
 
 ---
 

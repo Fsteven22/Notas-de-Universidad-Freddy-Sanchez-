@@ -358,4 +358,36 @@ graph TD
 
 ---
 
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - Vocabulario: axioma (se asume), teorema (se prueba), lema (auxiliar), corolario (consecuencia inmediata).
+> - 4 técnicas: directa (supón P, llega a Q), contradicción (supón $\neg$Q, absurdo), contrapositiva ($\neg Q \to \neg P$), casos (parte el dominio).
+> - Elige por la forma: "existe" → constructiva; "para todo n" → inducción; "si...entonces" → directa o contrapositiva.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
+> - ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
+> - ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[02 - Cuantificadores]] · Inducción: [[03 - Inducción Matemática]]
+> - Reglas: [[01 - Reglas de Inferencia]]
+
+---
+
 **Tags:** #matematicas-discretas #algebra-proposicional #demostraciones #prueba-directa #contradiccion #contrarreciproco #prueba-por-casos #axiomas #teoremas #MATG1051

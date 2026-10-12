@@ -396,4 +396,36 @@ graph TD
 
 ---
 
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - $P(x)$ es abierta; $\forall$/$\exists$/$\exists!$ la cierran en proposición V o F.
+> - Negar intercambia y niega adentro: $\neg\forall \equiv \exists\neg$, $\neg\exists \equiv \forall\neg$.
+> - El **orden importa**: $\forall x \exists y \neq \exists y \forall x$; el dominio manda el valor.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿$\forall$ vs $\exists$ vs $\exists!$?::Para todo / existe al menos uno / existe exactamente uno.
+> - ¿Negar $\forall x P(x)$?::$\exists x \neg P(x)$ (y dual).
+> - ¿Orden $\forall\exists$ vs $\exists\forall$?::Distinto: el segundo da un $y$ único que sirve para todo $x$.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[01 - Algebra de Proposiciones]] · Siguiente: [[03 - Demostraciones]]
+> - Reglas con cuantificadores: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
+
+---
+
 **Tags:** #matematicas-discretas #cuantificadores #cuantificador-universal #cuantificador-existencial #cuantificador-existencia-unica #cuantificadores-anidados #funciones-proposicionales #MATG1051
