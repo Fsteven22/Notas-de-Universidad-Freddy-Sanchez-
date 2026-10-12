@@ -67,7 +67,7 @@ graph TB
 
 > [!quote] 📜 Slide 1 — Introduction
 >
-> “Good morning, everyone. My name is Steven. Today I’m going to talk about a serious problem in our city: flooding in several areas of Guayaquil. First, I will explain the problem. Then, I will suggest two solutions.”
+> “Good morning, everyone. My name is Steven Sánchez. Today I’m going to talk about a serious problem in our city: flooding in several areas of Guayaquil. First, I will explain the problem. Then, I will suggest two solutions.”
 
 > [!quote] 📜 Slide 2 — The Problem
 >
@@ -88,6 +88,16 @@ graph TB
 > [!quote] 📜 Slide 6 — Closing
 >
 > “In conclusion, flooding is a big problem, but it has solutions. I think the best idea is to combine both: better drainage plus more green spaces. If the government and citizens work together, Guayaquil can be a safer city. Thank you very much for your attention.”
+
+---
+
+## 📎 Presentación (PDF)
+
+![[Flooding Guayaquil Freddy Sánchez.pdf]]
+
+> [!tip] 🔗 Cómo usarla
+>
+> Abre el PDF junto a esta nota: cada slide del guion 📜 corresponde a una diapositiva. Ensaya pasando las slides del PDF mientras dices el guion en voz alta.
 
 ---
 
