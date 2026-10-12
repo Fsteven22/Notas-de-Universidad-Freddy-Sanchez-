@@ -1,0 +1,175 @@
+---
+dg-publish: true
+---
+
+# 📐 Grammar & Examples - Reported Statements & Questions (U7)
+
+## 🎯 Introducción
+
+> [!info] 💡 ¿Por Qué Importa?
+>
+> Contar lo que otro dijo es el corazón de la unidad: *Bernard said that he used WhatsApp…* — y el inglés **retrocede los tiempos** (*use → used, will → would*). Sin backshift suenas en presente equivocado; con él, reportas como nativo.
+>
+> **Analogía del mundo real:** el estilo indirecto es citar con eco — todo lo que oíste vuelve un paso atrás en el tiempo.
+>
+> | Sin Backshift | Con Backshift |
+> |---|---|
+> | *"Manny explained that he lives with his family"* ❌ | *"Manny explained that he **lived** with his family."* ✅ |
+> | *"She asked what did I do"* ❌ | *"She asked me what **I did**."* ✅ |
+>
+> **En esta nota:** statements (7.1) + questions (7.2) con reglas, fórmula en texto y accuracy checks del libro.
+
+```mermaid
+graph TB
+    A[Reportas] --> B{¿Afirmación o pregunta?}
+    B -->|Afirmación| C["present→past, past→past perfect"]
+    B -->|Pregunta| D["sin ?, sujeto antes del verbo, if si es yes/no"]
+    C --> E["verbo + that + backshift"]
+    D --> E
+
+    style E fill:#e1ffe1
+```
+
+---
+
+## 📋 Definiciones Formales
+
+> [!note] 📋 Reported statements (7.1) — el tiempo retrocede 1 paso
+>
+> Fórmula en texto: *reporting verb (said/explained/commented) + (that) + sujeto + verbo-una-época-atrás*.
+>
+> | Directo | Indirecto | Ejemplo del libro |
+> |---|---|---|
+> | present | **past** | *"I live with my family" → Manny explained that he **lived**…* |
+> | past | **past perfect** | *"WhatsApp eased…" → commented that it **had eased**…* |
+> | present perfect | **past perfect** | *"use has increased" → reported that use **had increased**…* |
+> | instrucción/orden | **present + pronombre + to** | *"buy a smartphone" → persuaded them **to buy**…* |
+> | hecho/hábito general | **se queda igual** | *"unemployment **is** lower" → reported that it **is** lower.* |
+
+> [!note] 📋 Reported questions (7.2) — orden afirmativo, sin auxiliares
+>
+> Fórmula en texto: *asked + (if) + sujeto + verbo en pasado, sin ? ni do/does/did*.
+>
+> | Directa | Indirecta | Ejemplo del libro |
+> |---|---|---|
+> | *"Do you prefer text or face?"* | **if + afirmativo** | *We asked them **if they preferred** to text…* |
+> | *"Who is it for?"* | **wh- + afirmativo** | *We asked them **who they thought** it was for.* |
+> | *"How often do you post?"* | **wh- + pasado** | *We asked them **how often they posted**…* |
+> | *"What did I do?"* ❌ | ✅ | *She asked me **what I did**.* (accuracy check) |
+
+---
+
+## 🛠️ Método / Procedimiento (Reportar en 3 pasos)
+
+> [!note] 📋 Procedimiento General
+>
+> 1. **Elige el verbo** (*said, asked, explained, mentioned, reported*).
+> 2. **Retrocede el tiempo** 1 paso (salvo hechos generales).
+> 3. **Si es pregunta:** quita `?`, pon sujeto antes del verbo, borra *do/does/did*, usa *if* para yes/no.
+>
+> **Principio clave:** primero el tiempo, después el orden — en ese orden siempre.
+
+---
+
+## 🎨 Ejemplos Trabajados (Bilingües)
+
+> [!example] 🟢 Ejemplo 1 — Statements (7.1C, con tu compañero)
+>
+> - Tú: *"I live with my family."* → Reportas: *Manny explained that he **lived** with his family.* (Manny explicó que vivía con su familia.)
+> - Tú: *"My brother won a prize."* → *My brother mentioned that he **had won** a prize at school.* (Mencionó que había ganado.)
+
+> [!example] 🟢 Ejemplo 2 — Questions (7.2B, con otro compañero)
+>
+> - Te preguntaron: *"Do you prefer email, text or phone?"* → Reportas: *Maria asked me **if I preferred** email, text or phone.* (María me preguntó si prefería…)
+> - Error clásico del libro: *She asked what **did I do*** ❌ → *She asked me what **I did*** ✅.
+
+---
+
+## ⚠️ Errores Comunes y Principios Lógicos
+
+> [!danger] ❌ Error 1 — Pregunta con orden de pregunta (viola **orden afirmativo**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** *"She asked what did I do."*
+> - ✅ Así sí: *She asked me what **I did**.* — en indirecto no hay inversión ni auxiliar.
+
+> [!danger] ❌ Error 2 — *if* donde no va (viola **if solo yes/no**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** *"They asked me if who came."*
+> - ✅ Así sí: con *wh-* no hay *if* — *They asked me **who came**.*
+
+> [!danger] ❌ Error 3 — Olvidar el backshift (viola **1 paso atrás**)
+>
+> - ❌ **EL ERROR ESTÁ AQUÍ:** *"He said he **is** tired"* (ayer lo dijo).
+> - ✅ Así sí: *He said he **was** tired.* (hechos generales sí se quedan: *is lower this quarter*).
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 🎯 Nivel Básico
+>
+> - [ ] Retrocedo present→past y past→past perfect sin mirar.
+> - [ ] Reporto yes/no con *if* y orden afirmativo.
+
+> [!note] 🎯 Nivel Intermedio
+>
+> - [ ] Reporto las respuestas de mi compañero (7.1C + 7.2B) sin errores.
+> - [ ] Decido cuándo NO mover el tiempo (hechos/hábitos).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/ingles-iii-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Past en indirecto pasa a…?::Past perfect (*eased → had eased*).
+> - ¿Pregunta indirecta lleva *?* o auxiliar?::No: orden afirmativo, sin do/does/did.
+> - ¿Yes/no question usa…?::*If* + afirmativo en pasado.
+> - ¿Cuándo NO hay backshift?::Hechos generales y hábitos (*is lower this quarter*).
+
+---
+
+## 📊 Resumen Visual
+
+```mermaid
+mindmap
+  root((Reported))
+    Statements
+      present to past
+      past to past perfect
+      facts stay
+    Questions
+      no question mark
+      subject first
+      if for yes-no
+```
+
+> [!success] 🔍 Comparación Final
+>
+> | Aspecto | Sin Esto | Con Esto |
+> |---|---|---|
+> | Tiempos | Todo en presente | 1 paso atrás |
+> | Preguntas | *"what did I do"* | *"what I did"* |
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Índice: [[00 - Índice Unit 1]]
+> - Anterior: [[01 - Vocabulary & Use - Communication & Online Life]]
+> - Siguiente: [[03 - Functional Language & Pronunciation - Recounting Stories]]
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Empower B1+ (Cambridge): Unit 7, grammar 7.1–7.2 (pp. 66–69).
+> - Capturas: [[Libro de ingles las primeras unidades]] (§ 7.1, 7.2).
+
+---
+
+**Tags:** #IDIG1008 #unit1 #grammar #reported-speech #english
