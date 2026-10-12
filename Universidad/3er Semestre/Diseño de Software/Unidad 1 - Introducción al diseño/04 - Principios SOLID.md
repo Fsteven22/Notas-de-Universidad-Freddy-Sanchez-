@@ -437,6 +437,19 @@ flowchart TD
 > >
 > > Arreglos en 1 línea cada uno: bonus polimórfico sin excepción (LSP) · interfaces `Workable`/`Manageable` separadas (ISP) · `BonusReport` por polimorfismo, no `instanceof` (OCP) · `EmployeeRepository` inyectado en `ServicePerson` (DIP) · `PayslipService` y `EmailService` fuera de `Employee` (SRP).
 
+### 🧪 Casos de las slides Semana 4 (Jurado/Mera — los que el docente proyectó)
+
+> [!example] 💡 Bad Coding, áreas, pato, Messenger y House
+>
+> - **Bad Coding (por qué existe SOLID):** **rigidez** (un cambio afecta muchas partes), **fragilidad** (fallos donde no debería), **inmovilidad** (código irreusable fuera de su contexto).
+> - **OCP, áreas:** `calculateArea()` por forma + `AreaCalculator` que ejecuta sin conocer las formas — agregar un triángulo no toca código existente (abierto a extensión, cerrado a modificación).
+> - **LSP, pato eléctrico:** `ElectricDuck.Swim()` apagado no nada (o lanza excepción que la base no) → viola LSP. Parche con `if (duck is ElectricDuck) ...TurnOn()` → viola OCP (cada pato nuevo toca el cliente). Solución: que `Swim()` auto-encienda (`TurnOnDuck()` adentro) y cumpla el contrato siempre.
+> - **ISP, Messenger/cajero + habilidades del pato:** interfaz `Messenger` con todo lo mostrable obliga a la App de depósitos a depender de lo que no usa → segregar por cliente. La lista (volar, correr, nadar, comer, cantar, graznar, planear, caminar, hablar, poner huevo) es el test: ningún cliente necesita las 10.
+> - **DIP, House:** `House` con `new Door()` + `new Window()` adentro (incumple: depende de lo concreto volátil) vs `House(IDoor, IWindow)` inyectadas (cumple: depende de abstracciones).
+> - **Auto-test (Puntos para recordar de las slides):** ¿características del código limpio? · ¿qué es SOLID? · ¿objetivo de cada principio? · ¿un ejemplo por principio? · ¿cuántas capas tiene MVC y qué hace cada una?
+>
+> 📎 Slides: `04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf` (Unidad 0). Lecturas que dejan: Martin *Clean Architecture* caps. 7–11, Pressman & Maxim cap. 17 (WebApp), Martin *Clean Code* cap. 1.
+
 ---
 
 ## ⚠️ Problemas Comunes y Soluciones
