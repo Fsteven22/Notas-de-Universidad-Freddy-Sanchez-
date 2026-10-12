@@ -169,4 +169,36 @@ graph TD
 
 ---
 
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - 4 direcciones: $\forall$→caso (particularización), casos→$\forall$ (generalización), $\exists$→testigo, testigo→$\exists$.
+> - Testigo existencial **nuevo**: no usado antes en la prueba.
+> - Se combinan con MP/MT proposicionales; no generalizar desde un caso.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿4 reglas cuantificadas?::PU, GU, PE, GE (universal/existencial × particular/general).
+> - ¿Testigo nuevo por qué?::Si ya se usó, la prueba colapsa (particularización existencial).
+> - ¿Error típico?::Generalizar $\forall$ desde un solo caso.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Anterior: [[01 - Reglas de Inferencia]] · Siguiente: [[03 - Inducción Matemática]]
+> - Base: [[02 - Cuantificadores]]
+
+---
+
 **Tags:** #matematicas-discretas #logica-predicados #cuantificadores #particularizacion-universal #generalizacion-existencial #reglas-de-inferencia #MATG1051

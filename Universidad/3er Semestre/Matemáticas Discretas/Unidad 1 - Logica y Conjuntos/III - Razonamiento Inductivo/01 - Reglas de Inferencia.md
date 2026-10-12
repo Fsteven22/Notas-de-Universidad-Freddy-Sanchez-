@@ -251,4 +251,36 @@ graph TD
 
 ---
 
+## 📋 Resumen Ejecutivo
+
+> [!summary] 📋 Lo Esencial
+>
+> - Argumento = hipótesis + conclusión; **válido** = hipótesis verdaderas fuerzan conclusión verdadera.
+> - Reglas: Modus Ponens, Modus Tollens, silogismo hipotético/disyuntivo, adición, simplificación, dilema.
+> - Falacias: afirmar el consecuente, negar el antecedente (parecen válidas, no lo son).
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/discretas-u1
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Modus Ponens vs Tollens?::$p \to q, p \vdash q$ vs $p \to q, \neg q \vdash \neg p$.
+> - ¿Afirmar el consecuente?::Falacia: $p \to q, q \not\vdash p$.
+> - ¿Argumento válido?::Hipótesis verdaderas ⇒ conclusión verdadera, siempre.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Siguiente: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]] · Inducción: [[03 - Inducción Matemática]]
+> - Base: [[03 - Demostraciones]]
+
+---
+
 **Tags:** #matematicas-discretas #logica-proposicional #reglas-de-inferencia #modus-ponens #modus-tollens #silogismo #falacias #MATG1051
