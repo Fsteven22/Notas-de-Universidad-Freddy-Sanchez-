@@ -364,11 +364,21 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 > [!example] ✏️ Ejercicio 2 — Elige la técnica (de la clase)
 >
-> Para cada enunciado, di qué técnica usarías y por qué: (a) "Si $n^2$ es par, $n$ es par" · (b) "$\sqrt{2}$ es irracional" · (c) "Todo entero $n \geq 8$ se escribe como $3a+5b$" · (d) "$|x\cdot y| = |x|\cdot|y|$ para $x, y \in \mathbb{R}$".
+> Para cada enunciado, di qué técnica usarías y por qué:
+>
+> - (a) "Si $n^2$ es par, $n$ es par"
+> - (b) "$\sqrt{2}$ es irracional"
+> - (c) "Todo entero $n \geq 8$ se escribe como $3a+5b$"
+> - (d) "$|x\cdot y| = |x|\cdot|y|$ para $x, y \in \mathbb{R}$"
 >
 > > [!success]- ✅ Solución guiada
 > >
-> > (a) **Contrarrecíproco**: "si $n$ es impar, $n^2$ es impar" sale directo ($n = 2k+1$). (b) **Contradicción**: supone $\sqrt{2} = p/q$ irreducible y llega a $p$ y $q$ pares. (c) **Casos** (módulo 3: $n = 3k$, $3k+1$, $3k+2$ desde base $8, 9, 10$). (d) **Casos** por signos de $x$ e $y$. Regla: la forma del enunciado manda la técnica.
+> > - (a) **Contrarrecíproco**: "si $n$ es impar, $n^2$ es impar" sale directo ($n = 2k+1$).
+> > - (b) **Contradicción**: supone $\sqrt{2} = p/q$ irreducible y llega a $p$ y $q$ pares.
+> > - (c) **Casos** (módulo 3: $n = 3k$, $3k+1$, $3k+2$ desde base $8, 9, 10$).
+> > - (d) **Casos** por signos de $x$ e $y$.
+> >
+> > Regla: la forma del enunciado manda la técnica.
 
 ---
 
