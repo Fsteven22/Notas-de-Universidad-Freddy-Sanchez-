@@ -255,6 +255,23 @@ dg-publish: true
 > >
 > > Supón $\neg[q \to (s \wedge t)] \equiv q \wedge (\neg s \vee \neg t)$. De $q$ y $t \vee \neg q$ → $t$ (silogismo disyuntivo); con $\neg s \vee \neg t$ → $\neg s$. La contrarrecíproca de la premisa 2 da $\neg s \to \neg(p \to r)$ → $\neg(p \to r) \equiv p \wedge \neg r$ (MP + equivalencia): $p$ y $\neg r$. Con $q$: $p \wedge q$ → $r$ (MP con premisa 1): $r \wedge \neg r$ = ⊥. Contradicción → la conclusión vale. ✅
 
+> [!example] ✏️ Ejercicio 4 — El comité (Lección P4: 6 premisas, MP en cadena)
+>
+> - $p$: el comité aprueba el presupuesto.
+> - $q$: se contrata personal. $r$: se compran equipos.
+> - $s$: el laboratorio está disponible. $t$: el proyecto inicia.
+> - $u$: se entrega el informe final.
+>
+> Premisas: (1) $p \to (q \vee r)$ · (2) $(r \land s) \to t$ · (3) $t \to u$ · (4) $p$ · (5) $\neg q$ · (6) $s$. Demuestra $u$.
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > - De (1) y (4): $p \to (q \vee r)$, $p \vdash q \vee r$ por **MP** (7).
+> > - De (7) y (5): $q \vee r$, $\neg q \vdash r$ por **silogismo disyuntivo** (8). (Ojo de examen: esto vale porque (7) es **disyunción**; si fuera $q \to r$, de $\neg q$ nada se seguiría — verifica siempre la forma antes de citar la regla.)
+> > - De (8) $r$ y (6) $s$: $r \land s$ por **conjunción** (9).
+> > - De (2) y (9): $(r \land s) \to t \vdash t$ por **MP** (10).
+> > - De (3) y (10): $t \to u \vdash u$ por **MP**. Válido. ✅
+
 ---
 
 ## ⚠️ Falacias Comunes

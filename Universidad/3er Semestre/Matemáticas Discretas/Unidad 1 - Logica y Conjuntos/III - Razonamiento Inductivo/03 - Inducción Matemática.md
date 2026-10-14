@@ -214,6 +214,38 @@ dg-publish: true
 > - **Paso 4** — sustituye y simplifica:
 >
 > $$\frac{p+1}{2p}\cdot\frac{p(p+2)}{(p+1)^2} = \frac{p+2}{2(p+1)} \quad ✅$$
+
+> [!example] ✏️ Lección P4 — Sumatoria con peso $\sum_{k=1}^{n} k^2 2^k = (n^2-2n+3)2^{n+1} - 6$ (Caso 1)
+>
+> - **Base** $n = 1$:
+>
+> $$1^2\cdot 2^1 = 2 = (1-2+3)\cdot 2^{2} - 6 \quad ✅$$
+>
+> - **HI explícita** (para $n \geq 1$ fijo):
+>
+> $$\sum_{k=1}^{n} k^2 2^k = (n^2-2n+3)2^{n+1} - 6$$
+>
+> - **Meta** (para $n+1$):
+>
+> $$\sum_{k=1}^{n+1} k^2 2^k = ((n+1)^2-2(n+1)+3)2^{n+2} - 6$$
+>
+> - **Paso 1** — separa el último término y sustituye la HI:
+>
+> $$= \left[(n^2-2n+3)2^{n+1} - 6\right] + (n+1)^2 2^{n+1}$$
+>
+> - **Paso 2** — factoriza $2^{n+1}$:
+>
+> $$= 2^{n+1}\left[(n^2-2n+3) + (n+1)^2\right] - 6$$
+>
+> - **Paso 3** — desarrolla el corchete:
+>
+> $$(n^2-2n+3) + (n^2+2n+1) = 2n^2+4 = 2(n^2+2)$$
+>
+> - **Paso 4** — compara con la meta: $((n+1)^2-2(n+1)+3) = n^2+2$, luego la meta es $(n^2+2)2^{n+2} - 6 = 2^{n+1}\cdot 2(n^2+2) - 6$ ✅. ∎
+>
+> > [!success]- ✅ Qué mirar
+> >
+> > El $-6$ sobrevive intacto todo el paso (no lo toques); el trabajo es solo el corchete. Verifica la meta **antes** de operar: $((n+1)^2-2(n+1)+3) = n^2+2$.
 >
 > > [!success]- ✅ Qué mirar
 > >
@@ -271,8 +303,8 @@ dg-publish: true
 > - ¿Cuándo la forma fuerte?::Cuando S(n) necesita varios predecesores (recursiones); son equivalentes.
 > - ¿Error típico del paso inductivo?::Probar S(n+1) sin usar la hipótesis S(n).
 > - ¿Guía 1 por caso?::16/17/21 sumatorias, 18/19 divisibilidad, 15/20 desigualdades, 22 polígono.
-- ¿Lección 2026 qué pidió?::$2^n > n^2$ con base en $n_0 = 6$ + lema $k(k-2) \geq 24$.
-- ¿Taller 2026 caso nuevo?::Producto telescópico: separar último factor + HI + álgebra.
+> - ¿Lección 2026 qué pidió?::$2^n > n^2$ con base en $n_0 = 6$ + lema $k(k-2) \geq 24$.
+> - ¿Taller 2026 caso nuevo?::Producto telescópico: separar último factor + HI + álgebra.
 
 ---
 

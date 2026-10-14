@@ -638,6 +638,31 @@ graph TD
 > >
 > > Tabla: $Y=1$ en $(1,0,0), (1,1,0), (1,0,1), (0,1,1)$; $Y=0$ en el resto (incluido $(1,1,1)$). Expresión: $Y = (A \wedge \neg B \wedge \neg C) \vee (A \wedge B \wedge \neg C) \vee (A \wedge \neg B \wedge C) \vee (\neg A \wedge B \wedge C)$, simplificable a $Y = (A \wedge \neg(B \wedge C)) \vee (\neg A \wedge B \wedge C)$.
 
+> [!example] ✏️ Ejercicio 4 — Circuito 4 compuertas (Lección P4: simplificar por bloques)
+>
+> Del circuito sale:
+>
+> $$C = \neg[((x_1 \wedge x_2) \vee \neg(\neg x_1 \wedge x_2)) \vee (\neg(x_3 \wedge x_4) \vee \neg x_3)]$$
+>
+> Simplifica por bloques hasta 4 compuertas (1 NOT + 2 AND + 1 OR).
+>
+> > [!success]- ✅ Solución guiada
+> >
+> > - **Bloque 1** — $(x_1 \wedge x_2) \vee \neg(\neg x_1 \wedge x_2)$:
+> >
+> > $$\neg(\neg x_1 \wedge x_2) \equiv x_1 \vee \neg x_2 \quad \text{(De Morgan + involución)}$$
+> >
+> > $$(x_1 \wedge x_2) \vee (x_1 \vee \neg x_2) \equiv x_1 \vee \neg x_2 \quad \text{(absorción)}$$
+> >
+> > - **Bloque 2** — $\neg(x_3 \wedge x_4) \vee \neg x_3$:
+> >
+> > $$\neg(x_3 \wedge x_4) \equiv \neg x_3 \vee \neg x_4 \quad \text{(De Morgan)}$$
+> >
+> > $$(\neg x_3 \vee \neg x_4) \vee \neg x_3 \equiv \neg x_3 \vee \neg x_4 \quad \text{(idempotencia)}$$
+> >
+> > - **Junta exterior** — el oficial da $C = (\neg x_1 \wedge x_2) \vee (x_3 \wedge x_4)$ con 4 compuertas: NOT($x_1$) + AND($\neg x_1,x_2$) + AND($x_3,x_4$) + OR final ✅.
+> > - ⚠️ Ojo: verifica en tu hoja el conectivo exterior entre bloques (la extracción del PDF lo muestra ambiguo); los bloques simplificados están verificados, la junta sigue al oficial.
+
 ---
 
 ---
