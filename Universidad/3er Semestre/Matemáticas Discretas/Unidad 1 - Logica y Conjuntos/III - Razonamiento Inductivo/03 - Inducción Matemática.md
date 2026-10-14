@@ -155,6 +155,26 @@ dg-publish: true
 
 ---
 
+## 🏋️ Lección y Taller 2026 (casos reales)
+
+> [!example] ✏️ Lección 1 (2026) — $2^n > n^2$ con base en $n_0 = 6$ (Caso 3)
+>
+> Para todo natural $n > 5$: base $P(6)$: $64 > 36$ ✅. HI: $2^k > k^2$ con $k \geq 6$. Paso: $2^{k+1} = 2\cdot 2^k > 2k^2$; falta $2k^2 \geq (k+1)^2 = k^2+2k+1$, i.e. $k^2-2k-1 \geq 0$: con $k \geq 6$, $k(k-2) \geq 24 > 1$ ✅. Por transitividad $2^{k+1} > (k+1)^2$. ∎
+>
+> > [!success]- ✅ Qué mirar
+> >
+> > Base **no** en 1 (en $n_0 = 6$) + lema intermedio que se prueba con la cota $k \geq 6$. Si olvidas usar $k \geq 6$, el paso no cierra.
+
+> [!example] ✏️ Taller 1 (2026) — Producto telescópico $\prod_{k=2}^{n}(1 - 1/k^2) = (n+1)/(2n)$
+>
+> Base $n = 2$: $(1-1/4) = 3/4 = (2+1)/(2\cdot 2)$ ✅. HI para $p$. Paso: separa el último factor, sustituye HI y simplifica $\frac{p+1}{2p}\cdot\frac{(p+1)^2-1}{(p+1)^2} = \frac{p+2}{2(p+1)}$ ✅.
+>
+> > [!success]- ✅ Qué mirar
+> >
+> > Mismo esqueleto que sumatorias pero con **producto**: separar el último factor + HI + álgebra. Si el álgebra no cierra, revisa $(p+1)^2-1 = p(p+2)$.
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1: Probar $S(n+1)$ sin usar la hipótesis (viola **el paso inductivo**)
@@ -205,6 +225,8 @@ dg-publish: true
 > - ¿Cuándo la forma fuerte?::Cuando S(n) necesita varios predecesores (recursiones); son equivalentes.
 > - ¿Error típico del paso inductivo?::Probar S(n+1) sin usar la hipótesis S(n).
 > - ¿Guía 1 por caso?::16/17/21 sumatorias, 18/19 divisibilidad, 15/20 desigualdades, 22 polígono.
+- ¿Lección 2026 qué pidió?::$2^n > n^2$ con base en $n_0 = 6$ + lema $k(k-2) \geq 24$.
+- ¿Taller 2026 caso nuevo?::Producto telescópico: separar último factor + HI + álgebra.
 
 ---
 

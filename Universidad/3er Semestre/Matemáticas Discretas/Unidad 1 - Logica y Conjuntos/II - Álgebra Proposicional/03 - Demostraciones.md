@@ -431,6 +431,18 @@ graph TD
 
 ---
 
+## 🏋️ Lección 1 (2026) — Conjuntos por comprensión
+
+> [!example] ✏️ $A \subseteq B \cap C$ cazando elementos
+>
+> $A = \{n : n-4$ múltiplo de $12\}$, $B = \{n : $ múltiplo de $4\}$, $C = \{n : n+2$ múltiplo de $3\}$. Toma $x \in A$: $x-4 = 12k$, o sea $x = 12k+4 = 4(3k+1)$ → $x \in B$ ✅. Además $x+2 = 12k+6 = 3(4k+2)$ → $x \in C$ ✅. Como $x$ era arbitrario, $A \subseteq B \cap C$. ∎
+>
+> > [!success]- ✅ Qué mirar
+> >
+> > Prueba **directa** con elemento arbitrario + factorizar el número pedido ($4$ para B, $3$ para C) + cerradura de $\mathbb{Z}$ para nombrar el testigo ($m = 3k+1$).
+
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
@@ -455,6 +467,7 @@ graph TD
 > - ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
 > - ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
 > - ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
+- ¿Lección 2026 conjuntos?::$A \subseteq B \cap C$ con $x = 12k+4$: factoriza $4$ (B) y $3$ de $x+2$ (C).
 
 ---
 
