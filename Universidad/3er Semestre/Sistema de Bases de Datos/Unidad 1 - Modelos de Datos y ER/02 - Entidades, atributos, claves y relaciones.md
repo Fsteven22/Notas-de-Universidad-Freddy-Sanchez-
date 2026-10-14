@@ -68,6 +68,21 @@ graph TB
 >
 > **Ejemplo:** `cedula` identifica (clave, subrayada); `nombre` y `direccion` describen. Si un dato describe a otro dato, es atributo, no entidad.
 
+> [!note] 📋 Taxonomía — Simple, compuesto, derivado, multivaluado (unidad1.3-1.5 §15)
+>
+> | Tipo | Qué es | Ejemplo | A tablas |
+> |---|---|---|---|
+> | **Simple** | Atómico, no se subdivide | `salario`, `cargo` | Columna directa |
+> | **Compuesto** | Se parte en sub-atributos | `direccion` → calle + mz; `fecha` → dd-mm-yyyy | Columnas por parte |
+> | **Derivado** | Se calcula de otros | `edad` ← `fecha_nacimiento`; `subtotal` | Preferir el base (no volátil) |
+> | **Multivaluado** | N valores por instancia (1..*) | `telefono`, **`idiomas`** | ⚠️ Pide tabla propia (1FN) |
+>
+> **Volátil vs no volátil:** la *edad* cambia sola (volátil, mala PK y mala columna); la *fecha_nacimiento* no (úsala a ella).
+>
+> **Caso Idiomas (tu captura ERDPlus):** ☑ Multivalued en `Idiomas` = un empleado habla varios → en el lógico nace `IDIOMA(cedula PK,FK + idioma PK)`. Marcar Unique sería mentir (se repite); Derived no (no se calcula); Composite no (no se parte).
+>
+> **Se lee así:** ante un atributo pregunta *¿uno o varios?* (multivaluado), *¿se parte?* (compuesto), *¿se calcula?* (derivado). Lo que sobre es simple.
+
 ### 3️⃣ Relación — el verbo que conecta
 
 > [!note] 📋 Definición — Relación
@@ -108,6 +123,14 @@ graph TB
 >
 >
 > **Ejemplo:** en MATRÍCULA ni `carnet` ni `codigo` identifican solos; juntos sí → PK compuesta donde cada parte es FK a su tabla.
+>
+> > [!tip]- 💡 PK artificial + vocabulario ERDPlus (tu captura Dicta)
+> >
+> > - **Artificial:** incremental sin significado (`id_pref`, `idRenta`) — úsala cuando ninguna candidata es estable; nunca describe nada.
+> > - **Min (Mandatory/Optional/Unspecified):** Mandatory = mínimo 1 (todo curso se dicta); Optional = mínimo 0 (puede no participar). Es tu `x` de `(x,y)`.
+> > - **Max (One/Many):** One = a lo más 1; Many = N. Es tu `y` — y decide si la FK viaja o nace intermedia.
+> > - **☑ Identifying:** prendido = la PK del padre **entra a la PK** del hijo (MATRÍCULA, débil). Apagado = FK normal (Dicta: el curso se dicta exista o no esa fila).
+> > - **Exact constraints:** para topes exactos (1..4) en vez de rangos.
 
 ### 5️⃣ Restricción — lo que el negocio manda
 
@@ -252,7 +275,7 @@ graph TB
 > ```mermaid
 > flowchart TD
 >     A["Una DIVISION es<br/>manejada por un EMPLEADO"] --> B{"Puede un empleado<br/>manejar varias?"}
->     B -->|"Si"| C["1:M<br/>Un EMPLEADO maneja<br/>muchas DIVISIONes"]
+>     B -->|"Si"| C["1:M<br/>Un EMPLEADO maneja<br/>muchas DIVISIONES"]
 >     B -->|"No"| D["1:1<br/>Un EMPLEADO maneja<br/>una sola DIVISION"]
 >     style C fill:#e1ffe1
 >     style D fill:#fff4e1
@@ -411,6 +434,18 @@ graph TB
 >
 > Carga el lado 1 primero o violas integridad referencial.
 
+### ❌ Error 6: Multivaluado como columna
+
+> [!danger] ❌ Viola: 1 celda = 1 valor (1FN desde ya)
+>
+> Columna `telefonos` con "099,088" o columnas `tel1, tel2, tel3` → el multivaluado pide tabla propia `TELEFONO(cedula PK,FK + numero PK)` (ver U2-02 §6).
+
+### ❌ Error 7: `edad` como PK o columna estrella
+
+> [!danger] ❌ Viola: la PK debe ser estable (no volátil)
+>
+> La edad cambia sola cada año → cascada de updates y rupturas de FK. Usa `fecha_nacimiento` (no volátil) y deriva la edad.
+
 ---
 ## 📝 Ejercicios Propuestos
 
@@ -446,6 +481,30 @@ graph TB
 > > [!success]- ✅ Solución
 > >
 > > Falta: verbo (*genera*), clasificación en ambas direcciones y cardinalidad (x,y). Frases: "un cliente genera muchas facturas" + "cada factura es de un cliente" → 1:M con (1,N)-(1,1).
+
+### ✏️ Ejercicio 4 — Entidad o instancia (unidad1.3-1.5 §12)
+
+> [!example] 📋 Planteamiento
+>
+> Clasifica: *Coca Cola, Vehículo, $4.5, Cliente, Colgate, Tarjeta de Crédito, Labrador, 0987654321, Ciudad, Quito, Windows, RAM, Basket, Evento, Centro Comercial, BMW.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - **Entidades (tipos):** Vehículo, Cliente, Tarjeta de Crédito, Ciudad, Evento, Centro Comercial.
+> > - **Instancias (valores):** Coca Cola, Colgate (marcas), Labrador, BMW (objetos concretos), Quito, $4.5, 0987654321, Windows, RAM, Basket.
+> > - Regla: si lo puedes contar como *un ejemplar de…*, es instancia; si agrupa ejemplares, es entidad.
+
+### ✏️ Ejercicio 5 — PK de tablas y de la calle (unidad1.3-1.5 §§19–22)
+
+> [!example] 📋 Planteamiento
+>
+> a) Tablas a/b/c con filas (1,3,1),(1,2,2),(2,3,3): ¿qué columna(s) identifican? b) Elige PK para: Vehículo, Persona, Estudiante, Factura, Usuario, Producto, Libro, País. c) ¿Qué atributo selecciona UN alumno de tu clase? ¿y un libro en biblioteca?
+>
+> > [!success]- ✅ Solución
+> >
+> > - a) Columna **b** (3,2,3… verifica unicidad real en tus datos; el punto es: la PK se **comprueba** contra instancias, no se decreta).
+> > - b) Vehículo→`placa`, Persona→`cedula`, Estudiante→`carnet`, Factura→`numero`, Usuario→`username`, Producto→`codigo`, Libro→`ISBN`, País→`codigo_ISO`. Todas: únicas + no nulas + estables.
+> > - c) Alumno→`carnet` (el nombre se repite: hay dos Pepes); libro→`ISBN` (el título no basta).
 
 ---
 
@@ -494,6 +553,11 @@ graph TB
 > - ¿Entidad débil (2 condiciones)?::Existencia-dependiente + PK derivada del padre.
 > - ¿Cómo sé si una relación es 1:M y no 1:1?::Escribiendo ambas direcciones (pregunta de vuelta).
 - ¿Trampa CALIFICACIÓN?::La nota no existe sola (alumno + asignatura a la vez): atributo de la relación, no entidad.
+- ¿Simple/compuesto/derivado/multivaluado?::Atómico / se parte / se calcula / N valores (pide tabla).
+- ¿Volátil vs no volátil?::Edad cambia sola (mala); fecha_nacimiento no (úsala).
+- ¿PK artificial cuándo?::Incremental sin significado, cuando ninguna candidata es estable.
+- ¿Mandatory vs Optional (ERDPlus)?::Mínimo 1 vs mínimo 0 (tu x de (x,y)).
+- ¿Identifying prendido/apagado?::PK del padre entra a la PK del hijo vs FK normal.
 
 ---
 
