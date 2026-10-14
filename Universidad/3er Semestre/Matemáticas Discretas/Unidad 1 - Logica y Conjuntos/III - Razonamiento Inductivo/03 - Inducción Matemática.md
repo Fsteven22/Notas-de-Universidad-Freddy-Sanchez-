@@ -165,9 +165,16 @@ dg-publish: true
 >
 > $$64 > 36 \quad ✅$$
 >
-> - **HI:** $2^k > k^2$ con $k \geq 6$.
-> - **Paso:** $2^{k+1} = 2\cdot 2^k > 2k^2$.
-> - **Lema:** falta $2k^2 \geq (k+1)^2 = k^2+2k+1$, i.e.:
+> - **HI explícita:** $2^k > k^2$ con $k \geq 6$.
+> - **Meta** (lo que hay que probar):
+>
+> $$2^{k+1} > (k+1)^2$$
+>
+> - **Paso 1** — parte de la izquierda y usa la HI:
+>
+> $$2^{k+1} = 2\cdot 2^k > 2k^2$$
+>
+> - **Paso 2 (lema)** — falta $2k^2 \geq (k+1)^2 = k^2+2k+1$, i.e.:
 >
 > $$k^2-2k-1 \geq 0$$
 >
@@ -184,10 +191,29 @@ dg-publish: true
 >
 > $$(1-1/4) = 3/4 = (2+1)/(2\cdot 2) \quad ✅$$
 >
-> - **HI** para $p$.
-> - **Paso:** separa el último factor, sustituye HI y simplifica:
+> - **HI explícita** (para $p \geq 2$ fijo):
 >
-> $$\frac{p+1}{2p}\cdot\frac{(p+1)^2-1}{(p+1)^2} = \frac{p+2}{2(p+1)} \quad ✅$$
+> $$\prod_{k=2}^{p}(1 - 1/k^2) = \frac{p+1}{2p}$$
+>
+> - **Meta** (lo que hay que probar para $p+1$):
+>
+> $$\prod_{k=2}^{p+1}(1 - 1/k^2) = \frac{p+2}{2(p+1)}$$
+>
+> - **Paso 1** — separa el último factor:
+>
+> $$\prod_{k=2}^{p+1}(1 - 1/k^2) = \left[\prod_{k=2}^{p}(1 - 1/k^2)\right]\cdot\left(1 - \frac{1}{(p+1)^2}\right)$$
+>
+> - **Paso 2** — sustituye la HI en el corchete:
+>
+> $$= \frac{p+1}{2p}\cdot\frac{(p+1)^2-1}{(p+1)^2}$$
+>
+> - **Paso 3** — desarrolla el numerador:
+>
+> $$(p+1)^2-1 = p^2+2p = p(p+2)$$
+>
+> - **Paso 4** — sustituye y simplifica:
+>
+> $$\frac{p+1}{2p}\cdot\frac{p(p+2)}{(p+1)^2} = \frac{p+2}{2(p+1)} \quad ✅$$
 >
 > > [!success]- ✅ Qué mirar
 > >

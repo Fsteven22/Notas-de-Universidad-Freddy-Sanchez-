@@ -105,6 +105,8 @@ graph TB
 > [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal).
 >
 > [!tip] 📏 Reglas de pasos matemáticos: cada paso en su propia línea de lista `-` (nunca 2 pasos en 1 línea) y cada ecuación importante en bloque `$$` centrado.
+>
+> [!tip] 📏 Regla de oro en inducción (se evalúa): la HI se escribe **explícita y completa** (nunca "HI para p"), la **meta P(p+1)** se escribe antes de empezar, y el álgebra va **paso a paso sin saltos** (separar → sustituir → desarrollar → simplificar).
 
 ---
 
