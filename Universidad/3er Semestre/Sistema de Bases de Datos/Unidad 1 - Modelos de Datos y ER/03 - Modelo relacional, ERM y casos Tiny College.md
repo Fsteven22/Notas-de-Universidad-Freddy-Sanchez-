@@ -162,6 +162,33 @@ graph TB
 >
 > **Se lee en patas:** la línea **punteada** = no identifica (la hija tiene PK propia); la **sólida** = identifica (la PK hija hereda la del padre).
 
+### 6️⃣ Supertipo–subtipo — lo común arriba, lo propio abajo (unidad1.3-1.5 §§41–45)
+
+> [!note] 📋 Definición — Supertipo y subtipo
+>
+> - **Supertipo:** 2+ entidades comparten atributos o relaciones (CLIENTES: idCliente, nombre, dirección…).
+> - **Subtipo:** tiene atributos o relaciones **propias** (EMPRESA: RUC; Persona: cédula) y **hereda todo** lo del supertipo, incluido el **identificador compartido**.
+>
+> **Notación:** línea **simple** = subtipo opcional; línea **doble** = supertipo obligatorio. Círculo **d** = solo un subtipo (disjunto); **o** = varios a la vez (sobrelapado).
+>
+> **Ejemplo:** todo EMPLEADO tiene idEmp/nombre; solo VENDEDOR tiene numVentas. La conversión a tablas depende del caso (a/b/c/d) — ver Regla 6 de la Unidad 2.
+
+### 7️⃣ Recursiva — la entidad que se relaciona consigo misma
+
+> [!note] 📋 Definición — Relación reflexiva
+>
+> La misma entidad en dos roles: EMPLEADO *supervisa* EMPLEADO (jefe vs supervisado). En tablas nace FK a sí misma (`idSupervisor` → `idEmpleado`); si es M:N, tabla puente con doble FK.
+>
+> **Ejemplo:** sin roles etiquetados el diagrama es ilegible — rotula cada rama.
+
+### 8️⃣ Ternaria vs entidad + binarias — cuándo partir
+
+> [!note] 📋 Definición — Ternaria (unidad1.3-1.5 §§37–38)
+>
+> Tres entidades en UNA relación (Cliente–Producto–Compra–Tienda) solo si el hecho necesita a las tres a la vez. Si se puede contar por pares, parte en binarias. En tablas: una tabla con las 3 PK como (PK,FK) + atributos propios (calificación).
+>
+> **Ejemplo:** REGISTRO(idProf, matricula, idMateria PK,FK + calificacion): la nota solo existe con profe + alumno + materia juntos.
+
 ---
 ## 🧵 Notación de Chen a Fondo
 
@@ -375,6 +402,14 @@ flowchart TD
 >
 > Sin intermedia no hay modelo que funcione: toda M:N produce tabla con las 2 FK (ver Regla 2 de la Unidad 2).
 
+### ❌ Error 5: Subtipo sin nada propio (o ternaria que era binaria)
+
+> [!danger] ❌ Viola: el subtipo debe aportar + la ternaria debe necesitar a los tres
+>
+> Subtipo sin atributos ni relaciones propias = no es subtipo, es un valor (usa discriminador o bandera). Y ternaria separable en pares = dos binarias con sus intermedias.
+>
+> **EL ERROR ESTÁ AQUÍ:** crear VENDEDOR sin numVentas "por si acaso", o dibujar ternaria Cliente–Producto–Tienda cuando Compra se cuenta por pares.
+
 ---
 ## 📝 Ejercicios Propuestos
 
@@ -410,6 +445,18 @@ flowchart TD
 > > [!success]- ✅ Solución
 > >
 > > `ESTUDIANTE(carnet PK)`, `MATERIA(codigo PK)`, `MATRICULA(carnet PK,FK, codigo PK,FK)`. Carga: padres primero (las 2 entidades), intermedia al final. Sin intermedia no hay modelo que funcione.
+
+### ✏️ Ejercicio 4 — Supertipo, recursiva y ternaria
+
+> [!example] 📋 Planteamiento
+>
+> a) CLIENTES(idCliente, nombre) con EMPRESA(RUC) y Persona(cédula): ¿qué hereda cada subtipo y qué identificador usan? b) Dibuja EMPLEADO *supervisa* EMPLEADO con roles. c) ¿Compra de cliente/producto/tienda es ternaria o binarias? Justifica.
+>
+> > [!success]- ✅ Solución
+> >
+> > - a) Ambos heredan idCliente/nombre y el identificador compartido; EMPRESA aporta RUC, Persona aporta cédula. Sin aporte propio no hay subtipo.
+> > - b) Una entidad, dos roles (jefe/supervisado); en tablas: `idSupervisor` FK a `idEmpleado`.
+> > - c) Ternaria solo si la compra exige a los tres a la vez (REGISTRO con 3 FK + calificacion); si se cuenta por pares, parte en binarias.
 
 ---
 
@@ -458,6 +505,9 @@ flowchart TD
 > - ¿N:M al relacional?::Tabla intermedia con las 2 FK.
 > - ¿Símbolo Chen de entidad débil y de derivado?::Rectángulo doble; óvalo con línea punteada.
 - ¿Por qué "relacional" se llama así?::Porque guarda datos como relaciones (= tablas), no por las FK.
+- ¿Supertipo vs subtipo?::Común arriba (identificador compartido); propio abajo (hereda todo).
+- ¿d vs o (círculo)?::Disjunto (solo uno) vs sobrelapado (varios a la vez).
+- ¿Ternaria cuándo?::Solo si el hecho exige a las tres entidades a la vez.
 
 ---
 

@@ -349,19 +349,19 @@ graph LR
 
 ---
 
-### 🔍 Regla 6 — Supertipo–subtipo → una tabla por tipo
+### 🔍 Regla 6 — Supertipo–subtipo → el caso manda: (a) 3 tablas, (b) 1 tabla, (c) mixto, (d) ancha
 
-> [!note] 📋 Cada subtipo hereda la PK del supertipo
+> [!note] 📋 Las 4 conversiones del deck BD02 (una por combinación)
 >
+> **(a) {obligatorio, sobrelapado} → 3 tablas** (cada tipo la suya, banderas en el padre):
 >
 > ```mermaid
 > erDiagram
->     EMPLEADO ||--o| VENDEDOR : es
->     EMPLEADO ||--o| TECNICO : es
 >     EMPLEADO {
 >         int idEmp PK
 >         string nombre
->         string direccion
+>         string esVendedor
+>         string esTecnico
 >     }
 >     VENDEDOR {
 >         int idEmp PK, FK
@@ -373,10 +373,25 @@ graph LR
 >     }
 > ```
 >
+> **(b) {obligatorio, disjunto} → 1 sola tabla** con discriminador (nadie es dos cosas: no hacen falta hijos):
 >
-> **Se lee así:** el supertipo guarda lo común; cada subtipo solo lo suyo, identificado por la misma PK (que además referencia al supertipo).
+> ```mermaid
+> erDiagram
+>     EMPLEADO {
+>         int idEmp PK
+>         string nombre
+>         string direccion
+>         int numVentas
+>         string licencia
+>         string tipo
+>     }
+> ```
 >
-> **Las 4 combinaciones del diagrama de clase:** (a) {obligatorio, sobrelapado}: tablas tal cual, con banderas `esVendedor, esTecnico`; (b) {obligatorio, disjunto}: se agrega discriminante `tipo`; (c) {opcional, disjunto}: `Tipo` admite nulo; (d) {opcional, sobrelapado}: banderas en el supertipo, subtipos solo si aplican.
+> **(c) {opcional, disjunto} → supertabla + hijos solo si aplican** (`Tipo` admite nulo; el hijo lleva la PK como (PK,FK) cuando existe).
+>
+> **(d) {opcional, sobrelapado} → 1 tabla ancha** (banderas + todos los atributos propios juntos; sin tablas hijas).
+>
+> **Se lee así:** (a) separa porque hay solape real; (b) colapsa porque el discriminador basta; (c) respeta lo opcional con nulos; (d) todo junto porque nada obliga a partir. La regla vieja *"una tabla por tipo"* solo valía para (a).
 >
 > **Cómo detectar la jerarquía (caso empleados):** caza 2 frases — *"hay personal que no encaja"* = parcial; *"nadie desempeña dos perfiles"* = exclusiva. Si el enunciado calla, **pregunta al cliente**: no se adivina.
 >
@@ -689,7 +704,7 @@ flowchart TD
 > ```
 >
 >
-> **Regla que lo evita:** cada subtipo lleva la PK del supertipo como (PK,FK).
+> **Regla que lo evita:** cada subtipo lleva la PK del supertipo como (PK,FK) — en los casos (a) y (c); en (b) y (d) no hay tablas hijas que hereden.
 
 ---
 
@@ -845,7 +860,7 @@ flowchart TD
 > - ¿M:N al lógico?::Tabla intermedia con las PK de ambos lados como (PK,FK) + atributos de la relación.
 > - ¿1:M dónde va la FK?::En el hijo (lado M); el padre (lado 1) no recibe nada.
 > - ¿1:1 caso A, B y C?::A: (0,1)-(1,1) propaga PK del 1,1 al 0,1. B: parcial, PK del padre al hijo. C: (1,1)-(1,1) unifica en una tabla.
-> - ¿Supertipo-subtipo al lógico?::Una tabla por tipo; cada subtipo lleva la PK del supertipo como (PK,FK).
+> - ¿Supertipo-subtipo al lógico?::(a) 3 tablas con banderas; (b) 1 tabla con discriminante tipo; (c) supertabla + hijos opcionales; (d) 1 tabla ancha.
 > - ¿Débil y recursiva?::Débil: PK del fuerte como (PK,FK). Recursiva 1:M: FK a sí misma; M:N: intermedia con doble FK.
 > - ¿Fusión de tablas en 1 línea?::Mínimo de tablas: elimina las de 1 atributo y fusiona 1:1 total-total.
 - ¿Cómo detecto jerarquía parcial/exclusiva?::"No encaja en ninguno" = parcial; "nadie dos perfiles" = exclusiva; si calla, pregunto.
