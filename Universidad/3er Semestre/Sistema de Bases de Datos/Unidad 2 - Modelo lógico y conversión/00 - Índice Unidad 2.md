@@ -12,6 +12,7 @@ tags: [TICG1018, unidad2, indice, bd]
 
 - [[01 - Conversión MC a ML por cardinalidad]]
 - [[02 - Primera forma normal y diccionario de datos]]
+- [[03 - Segunda y tercera forma normal]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Sistema de Bases de Datos]]

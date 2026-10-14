@@ -16,8 +16,8 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | Forma | Idea en 1 línea | La verás en... |
 > |---|---|---|
 > | **1FN** | Sin grupos repetitivos: un valor por celda | Esta nota (Lección 1) |
-> | **2FN** | Sin dependencias parciales (vista previa) | Próximas clases |
-> | **3FN** | Sin dependencias transitivas (vista previa) | Próximas clases |
+> | **2FN** | Sin dependencias parciales | [[03 - Segunda y tercera forma normal]] |
+> | **3FN** | Sin dependencias transitivas | [[03 - Segunda y tercera forma normal]] |
 
 ---
 
