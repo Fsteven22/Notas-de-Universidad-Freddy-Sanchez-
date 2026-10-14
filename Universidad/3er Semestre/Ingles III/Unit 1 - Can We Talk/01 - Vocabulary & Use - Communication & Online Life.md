@@ -159,6 +159,17 @@ graph TB
 > > - ***status update*** — la novedad que publicas (*newest info*).
 > > - ***profile*** — tu ficha biográfica (*biographical info*).
 
+> [!example] ✏️ Ejercicio 4 — Categorize by meaning (7.1 drill A, p. 66)
+>
+> Agrupa el box (*catch up with, comment, congratulate, contact, explain, gossip, inform of, reply to*) con: A *respond to*, ___ · B *mention, report*, ___, ___, ___ · C *keep in touch with*, ___, ___ · D *criticize, persuade*, ___, ___.
+>
+> > [!success]- ✅ Solución
+> >
+> > - **A (responder):** *respond to, **reply to***.
+> > - **B (decir algo sobre):** *mention, report, **comment, inform of, gossip***.
+> > - **C (seguir en contacto):** *keep in touch with, **catch up with, contact***.
+> > - **D (influir/opinar fuerte):** *criticize, persuade, **congratulate, explain***.
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos
