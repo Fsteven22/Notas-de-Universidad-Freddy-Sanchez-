@@ -81,6 +81,15 @@ graph TB
 > - Situación: cena barata / nuevo deporte / laptop bag.
 > - Modelo: ***We could try** the food court. **There's a good salad bar there**.* → *But it's so crowded… **I don't think** the mall works. → There are salads AND quiet corners — **I like that option**.*
 
+> [!example] ✏️ Ejercicio 1 — Situaciones 11.3D (cena + deporte)
+>
+> Recomienda con el chart (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - Cena barata: ***We could try** the food court. **There's a good salad bar there**.* → *But it's so crowded… **I don't think** the mall works. → Salads AND quiet corners — **I like that option**.*
+> > - Nuevo deporte (sin tiempo): *I want to try a new sport but have no time. → **You could try** weekend yoga — **I've always had luck with** morning classes. → **That could work**!*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

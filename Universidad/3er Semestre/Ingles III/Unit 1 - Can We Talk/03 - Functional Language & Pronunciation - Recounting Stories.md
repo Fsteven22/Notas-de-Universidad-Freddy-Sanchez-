@@ -120,6 +120,23 @@ graph TB
 > >
 > > *"**I heard that** Jane Carter drove somewhere for summer vacation. **Someone told me that** they had car problems, but **it turns out** they were all fine and very happy to be home."*
 
+> [!example] ✏️ Ejercicio 4 — La pintora de 13 años (7.3 Student A, p. 157)
+>
+> Cuenta la historia de Gabrielle: ganó el primer premio de pintura con 13 años (la menor), era su primera vez, pintó un paisaje cerca de su casa. Usa 3 marcadores.
+>
+> > [!success]- ✅ Respuesta modelo
+> >
+> > *"**You'll never guess** what happened! Gabrielle won first prize out of 20 candidates in the school painting contest. **Apparently** she had just started painting. **The funny thing is**, she painted a landscape of the area near her house!"*
+
+> [!example] ✏️ Ejercicio 5 — Situaciones 7.3C (cena + deporte)
+>
+> Reacciona con el chart (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - Cena (cansado, prometió a Ellen): *"OK, I mean, **can I ask you something**? Have you tried calling her? **If I were in your shoes**, I'd rest — **you've got nothing to lose**."*
+> > - Deporte nuevo (sin tiempo): *"**Is there any way** you can try weekends? **You could also** join morning yoga. **That could work**!"*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

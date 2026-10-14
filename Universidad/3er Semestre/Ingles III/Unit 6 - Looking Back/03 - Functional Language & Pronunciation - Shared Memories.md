@@ -72,6 +72,18 @@ graph TB
 >
 > - *Don't tell me you don't remember the time we…? / I don't quite recall that. / Come on. We were in Hawaii…*
 
+> [!example] ✏️ Ejercicio 1 — Pronunciation pair (12.3C, sin clave: práctica oral)
+>
+> Con tu compañero, practiquen los 2 diálogos marcando clusters y memoria:
+>
+> - A: *What are you doing for your birthday?* → B: *Not much. I have to go to school.*
+> - A: *This room is a little small. Should we ask for a nicer one?* → B: *It can't hurt to ask. We've got nothing to lose.*
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - Clusters completos (*birthday, school, small, ask, can't, lost*).
+> > - Memoria invitada al final (*Has that ever happened to you?*).
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

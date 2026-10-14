@@ -79,6 +79,20 @@ graph TB
 > - En contra: *No human touch / no banter / jobs lost.*
 > - Los más convincentes: elige 1 de cada lado y defiende con *Where I strongly disagree…*.
 
+> [!example] ✏️ Ejercicio 1 — Phrases por propósito (11.4 drill B)
+>
+> Clasifica del modelo: *First of all, I'd like to say that… / Where I strongly disagree with the article is… / Additionally, they will help… / And finally, they're optional.*
+>
+> - begin an argument
+> - add a new argument
+> - conclude
+>
+> > [!success]- ✅ Solución
+> >
+> > - Begin: ***First of all**, I'd like to say that…*
+> > - Add: ***Where I strongly disagree…*** + ***Additionally**, they will help…*
+> > - Conclude: ***And finally**, they're optional.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

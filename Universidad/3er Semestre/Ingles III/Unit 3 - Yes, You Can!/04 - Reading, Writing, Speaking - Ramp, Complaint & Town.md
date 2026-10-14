@@ -80,6 +80,31 @@ graph TB
 
 ---
 
+## 📝 Ejercicios del Libro (9.4 drills)
+
+> [!example] ✏️ Ejercicio 1 — Gist + números (9.4A–B)
+>
+> - ¿Cuál es el mejor título? *a) Ed Roberts and the movement / b) A short history of wheelchair ramps / c) Student life at Berkeley.*
+> - ¿A qué refieren? *1960s / 1972 / 400 / 1990 / 1995.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - Título ***b*** — el artículo recorre rampas y movimiento, no solo Berkeley.
+> > - ***1960s*** — Roberts entra a Berkeley; ***1972*** — primer centro; ***400*** — centros hoy en USA; ***1990*** — Disabilities Act; ***1995*** — campus en su memoria.
+
+> [!example] ✏️ Ejercicio 2 — Adverbs de actitud (9.4B–C)
+>
+> Subraya en el mensaje 3 adverbios que muestran actitud + agrega 1 del box (*amazingly, luckily, sadly, surprisingly, unfortunately, unluckily*).
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***Fortunately**, the website showed a ramp…* (alivio).
+> > - ***Embarrassingly**, I had to ask staff for help…* (vergüenza).
+> > - ***Happily**, from then on everything was wonderful.* (alivio final).
+> > - Uno más del box a tu elección (*surprisingly / sadly / unluckily*) — justifica dónde lo pondrías.
+
+---
+
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!danger] ❌ Error 1 — Queja sin pedido (viola **problem + want**)

@@ -128,6 +128,9 @@ graph TB
 > > - *Customer: I want a bag for my laptop. **Is there anything** light but strong?*
 > > - *Clerk: **You could try** this one — **I've always had luck with** this brand. **That could work** for daily use.*
 > > - *Customer: **I like that option**. I'll take it!*
+> >
+> > - Cena barata: ***We could try** the food court — **there's a good salad bar there**. But it's so crowded… **I don't think** the mall works. → There are salads AND quiet corners — **I like that option**.*
+> > - Nuevo deporte (sin tiempo): *I want to try a new sport but have no time. → **You could try** weekend yoga — **I've always had luck with** morning classes. → **That could work**!*
 
 ---
 

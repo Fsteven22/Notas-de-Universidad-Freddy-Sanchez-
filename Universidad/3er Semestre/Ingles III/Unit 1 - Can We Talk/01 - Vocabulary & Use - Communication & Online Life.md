@@ -79,7 +79,11 @@ graph TB
 > [!note] 📋 Procedimiento (ejercicio 7.1A / 7.2A del libro)
 >
 > 1. Lee cada palabra y pregúntate: ¿hablar, escribir o reaccionar?
-> 2. Agrupa: *respond, reply, mention, report* (responder) · *gossip, criticize* (opinar) · *persuade, congratulate* (influir).
+> 2. **Agrupa por significado:**
+>
+> - Responder: *respond, reply, mention, report*.
+> - Opinar: *gossip, criticize*.
+> - Influir: *persuade, congratulate, inform of*.
 > 3. Verifica con ejemplo propio: 1 frase por grupo.
 >
 > **Principio clave:** nunca memorices listas sueltas — cada palabra entra con su grupo + 1 frase tuya.
@@ -152,6 +156,8 @@ graph TB
 > > - ***lifecaster*** — lo publica todo (trampa: no es *lurker*, que solo mira).
 > > - ***trending topic*** — historia popular.
 > > - ***tag*** — etiquetar con el nombre.
+> > - ***status update*** — la novedad que publicas (*newest info*).
+> > - ***profile*** — tu ficha biográfica (*biographical info*).
 
 ---
 

@@ -126,6 +126,26 @@ graph TB
 > > - ***registration*** (*start your registration process*).
 > > - ***limited*** (*is limited to 50*).
 
+> [!example] ✏️ Ejercicio 4 — Los 6 places restantes (9.1 drill A)
+>
+> Une con su descripción: *boardwalk, city hall, consulate, construction site, courthouse, residential area.*
+>
+> - a place where you pay for your parking permit / apply for documents
+> - where you go for a visa to another country
+> - where workers build, with helmets and machines
+> - where trials happen, with a judge
+> - a wooden walk by the sea with shops
+> - where people live (houses, not downtown)
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***city hall*** — alcaldía, permisos y documentos.
+> > - ***consulate*** — visas (*I came for a visa to Egypt*).
+> > - ***construction site*** — obra (*hard hat area*).
+> > - ***courthouse*** — juzgado (*My mom works as a judge* → *courthouse*).
+> > - ***boardwalk*** — malecón de madera junto al mar.
+> > - ***residential area*** — zona de casas.
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos
