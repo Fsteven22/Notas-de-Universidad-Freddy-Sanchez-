@@ -104,6 +104,17 @@ graph TB
 > > - *If I **hadn't bought** the car, I **would have spent** all my savings.* (past unreal).
 > > - *And I **wouldn't have had to** borrow…* (*wouldn't have had to* — ¡triple verbo!).
 
+> [!example] ✏️ Ejercicio 3 — Debate + linkers (12.4B–D, modelos)
+>
+> Escucha, decide y escribe (modelos + contenido verificable):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Who mentions the pictured dogs, Kenan or Lucia? → Escucha **nombres + ejemplos** (*For instance…*): marca quién dice cada foto (🎧 audio 2.53–54).*
+> > - *Phrases to introduce examples: **For instance,… / For example,…**.*
+> > - *Stronger case? → **Lucia**: service dogs aren't pets — that point **isn't relevant** to *pets*, so Kenan's photos don't save him. (Guíate: ¿responde al **topic**?)*
+> > - *Linkers to circle in a summary: **although / however / while** (contraste).*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

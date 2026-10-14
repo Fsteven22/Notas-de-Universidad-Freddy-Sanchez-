@@ -98,6 +98,25 @@ graph TB
 > > - *People **generally don't** tip taxi drivers…* (generalmente no).
 > > - ***On average**, people tip around 10%…* (*on average* + cifra).
 
+> [!example] ✏️ Ejercicio 2 — US customs vs yours (9.3C pair, modelos)
+>
+> Responde las 3 comparando con Ecuador:
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Coffee refills free? → **In Ecuador, refills aren't common** — we pay per cup. **That's not how we do it** here.*
+> > - *Anthem before games? → **We don't do it that way**; we sing it only on civic dates.*
+> > - *Escalator right side? → **On the whole**, people stand right here too — same as the US.*
+
+> [!example] ✏️ Ejercicio 3 — Who says /d/? (Pron B · 🎧 con audio 2.28)
+>
+> Escucha y marca quién (A o B) dice la /d/: *drop, different, depend, do, difficult, deep.*
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - Marca A/B **solo por oído** (audio 2.28) — la /d/ inicial plena no se adivina en papel.
+> > - Después repite con tu compañero (Pron C): ¿tu /d/ suena clara?
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

@@ -111,6 +111,26 @@ graph TB
 > > - ***scientifically*** (adverbio antes de *proven*).
 > > - ***based*** (*studies based on…*).
 
+> [!example] ✏️ Ejercicio 3 — Brochure + freshman life (11.1A/C, modelos)
+>
+> Responde con el brochure y tu vida (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Academic vs social: **labs and libraries** = academic; **clubs and dorms** = social. Lee loves **societies** (social); Allie reencontró los **grades** (academic).*
+> > - *Best/worst freshman thing: best = **societies and friends**; worst = **partying hurt my grades**. Dorm or apartment as sophomore? **Dorm: cheaper + near classes**.*
+> > - *Coolest major: **oceanography** — field trips at sea. Would I study it? **I could try** marine biology first.*
+
+> [!example] ✏️ Ejercicio 4 — What does science say? (11.2B veredictos)
+>
+> Da el veredicto de Dr. Wendt (del audio script):
+>
+> > [!success]- ✅ Solución
+> >
+> > - *Carrots/night vision: **backed by real science** — vitamin A **is scientifically proven**.*
+> > - *Honey/cough: **true** — tested, **proof** it works like medicine.*
+> > - *Cheese/nightmares: **no basis** — heavy meals **disturb sleep / make you remember dreams**, but cheese doesn't cause them.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

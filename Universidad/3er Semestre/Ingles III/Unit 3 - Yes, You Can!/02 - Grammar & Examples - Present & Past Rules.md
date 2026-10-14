@@ -124,6 +124,22 @@ graph TB
 > > - *Teachers **weren't allowed to** marry in some places — that **had to** be hard.* (prohibición + obligación pasadas).
 > > - Regla del juego: cada argumento usa 1 modal pasado.
 
+> [!example] ✏️ Ejercicio 4 — Infer from Eno (9.2 drill C)
+>
+> Marca lo que el texto permite inferir (con la línea que lo sostiene):
+>
+> - Before cars, there were very few problems with traffic in big cities.
+> - There was no traffic code before cars.
+> - Eno's "Rules" included more than just rules for drivers.
+> - Eno was not physically able to drive a car.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ✓ — *rules were desperately needed* porque el caos ya existía.
+> > - ✓ — ***the first official** traffic code* (antes no había).
+> > - ✓ — incluyó *pedestrians, parking, crosswalks, plates*.
+> > - ✗ — nunca aprendió (*never learned*), no que no **pudiera** físicamente.
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

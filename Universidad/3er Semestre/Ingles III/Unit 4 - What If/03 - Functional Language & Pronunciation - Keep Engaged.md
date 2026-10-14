@@ -107,6 +107,15 @@ graph TB
 > > - ***the funny thing is, they offered me*** (3: giro cómico).
 > > - ***You won't believe this*** (4: remate increíble).
 
+> [!example] ✏️ Ejercicio 3 — Tell + react (10.3 Speaking B pair, modelos)
+>
+> Cuenta una historia real y reacciona a la de tu compañero (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *I found $20 in an old jacket. → **Let me guess** — you kept it? → **You won't believe this**, but I returned it and got $50 reward!*
+> > - Regla del oyente: 1 adivinanza (*Let me guess*) + 1 reacción (*That's so…*) por historia.
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

@@ -103,6 +103,16 @@ graph TB
 > > - ***Happily**, from then on everything was wonderful.* (alivio final).
 > > - Uno más del box a tu elección (*surprisingly / sadly / unluckily*) — justifica dónde lo pondrías.
 
+> [!example] ✏️ Ejercicio 3 — Who pays for access? (9.4C group, modelos)
+>
+> Discute con tu grupo (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Can wheelchairs access ESPOL easily? → **Generally**, no — stairs everywhere, few ramps.*
+> > - *Is access required by law? → **By law**, public buildings **are required to** have access.*
+> > - *Who should pay? → **Local authorities should** fund ramps; businesses **have to** adapt entrances.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

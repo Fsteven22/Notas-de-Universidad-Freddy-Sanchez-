@@ -132,6 +132,32 @@ graph TB
 > > - Cena barata: ***We could try** the food court — **there's a good salad bar there**. But it's so crowded… **I don't think** the mall works. → There are salads AND quiet corners — **I like that option**.*
 > > - Nuevo deporte (sin tiempo): *I want to try a new sport but have no time. → **You could try** weekend yoga — **I've always had luck with** morning classes. → **That could work**!*
 
+> [!example] ✏️ Ejercicio 4 — Talking-through chart (8.3 drill B)
+>
+> Completa con el audio: *Is there any ___1___ you can (get out of it)? Have you ___2___ (talking to him)? If I were in your ___3___, I'd explain… You might ___4___ to suggest meeting Monday. Maybe you ___5___ (offer remote). It can't ___6___. I'd (try that) if I ___7___ you. It wouldn't ___8___ (to ask). You've got nothing to ___9___.*
+>
+> > [!success]- ✅ Solución (según script; confirma con audio 2.14)
+> >
+> > - ***way*** — *Is there any **way**…?*.
+> > - ***tried*** — *Have you **tried** talking to him?*.
+> > - ***shoes*** — *If I were in your **shoes**…*.
+> > - ***want*** — *You might **want** to suggest…*.
+> > - ***could offer*** — *Maybe you **could offer** to work remotely?*.
+> > - ***hurt*** — *It can't **hurt**.*.
+> > - ***were*** — *…if I **were** you.*.
+> > - ***hurt*** — *It wouldn't **hurt** (to ask).*.
+> > - ***lose*** — *…**nothing to lose**.*.
+
+> [!example] ✏️ Ejercicio 5 — Options per topic (8.3 Speaking A, modelos)
+>
+> Una opción + consejo por tema:
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - Family: *too much phone at dinner → **You could try** a no-phone basket. **It can't hurt**!*
+> > - Money: *no savings → **Have you tried** a weekly budget? **I'd avoid** daily delivery.*
+> > - Studies: *bad grades → **If I were in your shoes**, I'd study 1h before phone. **You've got nothing to lose**.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

@@ -106,6 +106,33 @@ graph TB
 > >
 > > *"Today I overslept, so I didn't have time for breakfast. I'm really hungry now. **If I hadn't overslept, I'd have had breakfast, and I wouldn't be so hungry now.**"* (pasado perdido → *had + would have*).
 
+> [!example] ✏️ Ejercicio 3 — Who said it, Tim or Kayla? (8.4C · 🎧 con audio 2.20)
+>
+> Lee los 7 extracts y asigna T/K por postura (él = pro-teléfono 24/7, ella = control):
+>
+> - *I love my phone too much!*
+> - *I would never do that, not for a million dollars!*
+> - *You don't always have to share everything.*
+> - *What's wrong with sharing?*
+> - *It's so important that we know what's going on in the world.*
+> - *I could be doing something better.*
+> - *I am very happy with my 24/7, always connected life.*
+>
+> > [!success]- ✅ Solución (por postura + audio)
+> >
+> > - Pro-teléfono (Tim): ***love my phone / never do that (detox) / happy 24/7***.
+> > - Control (Kayla): ***don't always share / doing something better / wrong with sharing?***.
+> > - Regla: si celebra conexión → T; si pide control → K. Confirma con el audio.
+
+> [!example] ✏️ Ejercicio 4 — Referencing voices (8.4 Writing B/C)
+>
+> Subraya frases que citan a otra persona + discute con tu compañero (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - Referencias: ***as Tim says… / like Kayla said… / according to the podcast…***.
+> > - Opinión: *Do smartphones help better relationships? **Personally**, no — they replace talking. **In my house**, phones sleep outside bedrooms.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

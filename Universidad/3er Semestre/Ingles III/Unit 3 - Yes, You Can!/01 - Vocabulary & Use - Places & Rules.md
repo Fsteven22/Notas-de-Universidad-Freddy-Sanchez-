@@ -146,6 +146,17 @@ graph TB
 > > - ***boardwalk*** — malecón de madera junto al mar.
 > > - ***residential area*** — zona de casas.
 
+> [!example] ✏️ Ejercicio 5 — Signs + new rules (9.1C + Speaking, modelos)
+>
+> Responde y propón (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *What signs do you see daily? → **No parking** at ESPOL gates; **no entry** at labs.*
+> > - *Do people obey them? → Cars **generally** obey; motos **sometimes** ignore them.*
+> > - *New rule + sign: **No phones in exams** — draw a phone with ❌. **You aren't allowed to** use phones here.*
+> > - *Work/school rules to follow: **We're required to** sign attendance; **we're supposed to** wear ID.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

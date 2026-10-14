@@ -146,6 +146,24 @@ graph TB
 > > - ***high-paying*** (salario, no *permanent* = contrato).
 > > - ***second job*** (el extra).
 
+> [!example] ✏️ Ejercicio 4 — In the post? Positive or negative? (8.1 drill A)
+>
+> Del post del lighthouse: ¿cuáles de estas están? ¿positivas o negativas? *tough, high-paying, stressful, amazing, basic, fantastic, awesome, pretty.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - En el post: ***tough*** (*not a tough job* — aquí dice que NO es duro), ***amazing*** (*views are amazing*), ***fantastic*** (*wildlife is fantastic*), ***awesome*** (*that was awesome*), ***basic*** (*pretty basic*).
+> > - Positivas aquí: *amazing, fantastic, awesome*; neutras/negadas: *tough* (negado), *basic* (modesto).
+
+> [!example] ✏️ Ejercicio 5 — Underline or Circle (8.1 drill B)
+>
+> Del mismo post: subraya lo **factual** y encierra la **opinión**.
+>
+> > [!success]- ✅ Solución
+> >
+> > - Factual (subraya): *six months, no TV/internet, lighthouse runs automatically, report data from weather station.*
+> > - Opinión (encierra): ***amazing** views, **fantastic** wildlife, **awesome** experience, falls in love.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

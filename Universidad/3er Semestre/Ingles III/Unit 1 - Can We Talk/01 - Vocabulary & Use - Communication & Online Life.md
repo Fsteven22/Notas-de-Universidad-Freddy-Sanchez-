@@ -107,6 +107,18 @@ graph TB
 
 ## 📝 Ejercicios del Libro (pp. 66–69, 147)
 
+> [!example] ✏️ Ejercicio 0 — Smartphone lifeline (7.1B, p. 66)
+>
+> Elige la frase correcta según el artículo:
+>
+> - For migrants, a messaging app is often *a fun way / the only way* to communicate with family.
+> - Charities now provide *charging stations / messaging apps* to help refugees stay in touch.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***the only way*** — sin apps no hay contacto con casa.
+> > - ***charging stations*** — Greenpeace da estaciones de carga (las apps las traen ellos).
+
 > [!example] ✏️ Ejercicio 1 — Preposiciones (7.1 drill A)
 >
 > Elige la preposición correcta:
@@ -160,15 +172,39 @@ graph TB
 > > - ***profile*** — tu ficha biográfica (*biographical info*).
 
 > [!example] ✏️ Ejercicio 4 — Categorize by meaning (7.1 drill A, p. 66)
+
+> [!example] ✏️ Ejercicio 5 — Interview check (7.2B, p. 68 · 🎧 con audio 2.04)
+>
+> Escucha la entrevista completa y marca (✓) las verdaderas:
+>
+> - Millennials prefer digital communication, except at work.
+> - Older people felt text messages are professional enough for work.
+> - All age groups use text messages with family members at home.
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - Marca solo lo que el audio **dice literalmente** (nombres de grupos + *reported/claimed*).
+> > - Sin audio a la mano: es tarea de clase — no inventes el ✓.
+
+> [!example] ✏️ Ejercicio 6 — Tus redes (7.2C + Speaking A, modelos)
+>
+> Responde y luego reporta con tu compañero:
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *What do you look at on social media? → I look at **photos, memes and trending topics**.*
+> > - *What clickbait do you enjoy? → Animal videos — but clicking has consequences: **wasted time**.*
+> > - *Do you prefer email, text or phone for coworkers? → **Text for quick things, email for formal ones**.*
+> > - Reportas: *Luis said that he **preferred texting his coworkers**.*
 >
 > Agrupa el box (*catch up with, comment, congratulate, contact, explain, gossip, inform of, reply to*) con: A *respond to*, ___ · B *mention, report*, ___, ___, ___ · C *keep in touch with*, ___, ___ · D *criticize, persuade*, ___, ___.
 >
 > > [!success]- ✅ Solución
 > >
 > > - **A (responder):** *respond to, **reply to***.
-> > - **B (decir algo sobre):** *mention, report, **comment, inform of, gossip***.
+> > - **B (decir algo sobre):** *mention, report, **comment, inform of, explain***.
 > > - **C (seguir en contacto):** *keep in touch with, **catch up with, contact***.
-> > - **D (influir/opinar fuerte):** *criticize, persuade, **congratulate, explain***.
+> > - **D (influir/opinar fuerte):** *criticize, persuade, **congratulate, gossip***.
 
 ---
 

@@ -123,6 +123,38 @@ graph TB
 > > - *I asked them **if they could help** me…* (*can → could*).
 > > - *She asked him **how many friends he had met** on Facebook.* (wh- + past perfect, sin *if*).
 
+> [!example] ✏️ Ejercicio 3 — Rules: reported statements (7.1 drill 3A)
+>
+> Elige la opción correcta de cada regla:
+>
+> - To report a present tense statement, use the **present / past**.
+> - To report a past tense statement, use the **past / past perfect**.
+> - To report a present perfect statement, use the **past / past perfect**.
+> - To report instructions, use the **present / past** + pronoun + *(not) to* + verb.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***past*** (*live → lived*).
+> > - ***past perfect*** (*eased → had eased*).
+> > - ***past perfect*** (*has increased → had increased*).
+> > - ***present*** + pronoun + *to* (*persuaded them **to buy**…*).
+
+> [!example] ✏️ Ejercicio 4 — Rules: reported questions (7.2 drill 3A)
+>
+> Elige la opción correcta de cada regla:
+>
+> - To report a question, **use / do not use** a question mark at the end.
+> - The subject comes **before / after** the verb. **Use / Do not use** *do/does/did*.
+> - Yes/no or preference questions use **that / if**.
+> - Verbs in reported questions change to the **present / past**.
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***Do not use*** (*no* hay *?* en indirecto).
+> > - ***before*** + ***Do not use*** (*…they **preferred**…*, sujeto primero, sin auxiliar).
+> > - ***if*** (*asked them **if** they preferred…*).
+> > - ***past*** (igual backshift que statements).
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

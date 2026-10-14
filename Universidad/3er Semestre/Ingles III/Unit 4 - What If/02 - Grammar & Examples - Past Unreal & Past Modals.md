@@ -112,6 +112,25 @@ graph TB
 > > - *I **could/might have gotten** that job if I'd tried.* (posibilidad).
 > > - *He **couldn't have come** (no visa).* (imposible).
 
+> [!example] ✏️ Ejercicio 3 — Crum + Goldman (10.1C pair, las 2 restantes)
+>
+> Completa con tu compañero (respuestas):
+>
+> > [!success]- ✅ Solución
+> >
+> > - *If George Crum **hadn't sliced** his potatoes extra thin, he **wouldn't have created** this popular snack.*
+> > - *Sylvan Goldman **would never have thought of** this grocery item if his office chair **hadn't been** on wheels.* (main primero: sin coma.)
+
+> [!example] ✏️ Ejercicio 4 — Regrets + photos (10.2C + Speaking A, modelos)
+>
+> Responde (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Have you ever regretted something you said? → I **shouldn't have posted** that photo — **I could have asked** first.*
+> > - *Cookies on the edge: what **shouldn't** they have done? → They **shouldn't have put** the plate so close — the dog **could have jumped** on the table.*
+> > - *Man with stain: what **might** have happened? → He **might not have noticed** — or it **could have been** coffee.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

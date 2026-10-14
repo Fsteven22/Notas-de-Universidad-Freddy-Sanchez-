@@ -84,6 +84,25 @@ graph TB
 > > - Clusters completos (*birthday, school, small, ask, can't, lost*).
 > > - Memoria invitada al final (*Has that ever happened to you?*).
 
+> [!example] ✏️ Ejercicio 2 — Airport conversation (12.3C, verifica con audio 2.50)
+>
+> Completa con el chart: *___1___ that time you went to the airport without your passport? / Oh, come on. I never did that. / Yes, you did! ___2___ you don't remember! We had to go back home… / Oh, OK. That ___3___ — we were going to Cancun, right? / Yes! And we had to wait 5 hours… / OK, yeah. It's ___4___ to me now! I don't think I ever paid Mom and Dad back.*
+>
+> > [!success]- ✅ Solución (según script; confirma con el audio)
+> >
+> > - ***Do you remember*** (1: pedir el recuerdo).
+> > - ***Don't tell me*** (2: insistir — *Don't tell me you don't remember!*).
+> > - ***rings a bell*** (3: *That **rings a bell*** — ¡le suena!).
+> > - ***coming back*** (4: *It's **coming back** to me now!*).
+
+> [!example] ✏️ Ejercicio 3 — Third person joins (Speaking B group, modelo)
+>
+> Expande el role play con C (modelo):
+>
+> > [!success]- ✅ Respuesta modelo
+> >
+> > - *C: **That reminds me of** my graduation trip — we also lost documents! **Has that ever happened to you?** → A+B: **That's like the time that**… (suman detalles, cambian roles).*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

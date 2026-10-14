@@ -109,6 +109,30 @@ graph TB
 > > - *false memories / my mistakes / accurate lesson / false memories* se repiten → ***them / it / this / ones***.
 > > - Modelo: *Your podcast was interesting, but how can I learn from my past if I can't remember **it** correctly? Maybe some lessons are based on accurate memories and others on false **ones**. How could I tell?*
 
+> [!example] ✏️ Ejercicio 3 — Nolan & Rivas (12.2 listen, del script)
+>
+> Responde según el audio script:
+>
+> - Did Nolan and David stay friends or lose contact?
+> - Do they recall their time together the same way or differently?
+> - Dr. Rivas compares recalling distant memories to…?
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***Lost contact*** — *he didn't recognize me at first*.
+> > - ***Differently*** — vague vs shocked; *was shocked!*.
+> > - ***Making copies of copies*** — each recall distorts, like copy-of-copy.
+
+> [!example] ✏️ Ejercicio 4 — Your fondest look-back (Speaking B, modelos)
+>
+> Responde las 3 (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *School/family/sports event looked back fondly? → **Family beach trips**: the ones I **look back on** most fondly.*
+> > - *Met an old friend — same or different memories? → **Differently** — he **recalls** parties I **don't recognize** at all.*
+> > - *Nice early memory told (not lived)? → Grandma's stories — **someone told me**, so is it **real or vague**?*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

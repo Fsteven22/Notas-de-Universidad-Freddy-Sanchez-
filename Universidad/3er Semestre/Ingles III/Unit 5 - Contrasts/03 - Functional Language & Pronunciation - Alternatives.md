@@ -90,6 +90,15 @@ graph TB
 > > - Cena barata: ***We could try** the food court. **There's a good salad bar there**.* → *But it's so crowded… **I don't think** the mall works. → Salads AND quiet corners — **I like that option**.*
 > > - Nuevo deporte (sin tiempo): *I want to try a new sport but have no time. → **You could try** weekend yoga — **I've always had luck with** morning classes. → **That could work**!*
 
+> [!example] ✏️ Ejercicio 2 — Stress circle + new role play (Pron B/C + Speaking B)
+>
+> Marca la tónica y actúa (modelos):
+>
+> > [!success]- ✅ Solución + modelo
+> >
+> > - ***sci**entifically (6) · al**ter**natives (4) · disad**van**tages (4) · situ**a**tion (4) · recommen**da**tion (5).*
+> > - *New role play (store/coworker/friend): A asks, B recommends with **This one's always worked for me** + 1 honest con. Switch roles.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

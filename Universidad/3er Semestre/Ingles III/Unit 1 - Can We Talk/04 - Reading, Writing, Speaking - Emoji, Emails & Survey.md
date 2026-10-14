@@ -110,6 +110,41 @@ graph TB
 > >
 > > Informal espejo: *"Hi Luis! Finished half the report 😅 Can we meet Thursday? Does that time suit you? Speak soon!"*
 
+> [!example] ✏️ Ejercicio 3 — Opinions Patel vs Yilmaz (7.4C)
+>
+> Relee y responde:
+>
+> - Why does Patel think modern symbols ARE language? What comparison does he make?
+> - Why does Yilmaz claim emojis are NOT language? What does he think of emoji menus?
+> - What do both agree on? What is their shared opinion?
+>
+> > [!success]- ✅ Solución
+> >
+> > - Patel: **sí son lenguaje** — mensaje inmediato y claro; los compara con **body language** (comunican sin palabras).
+> > - Yilmaz: **no son lenguaje** — atajo "simple"; los menús **piensan por ti** (*the easy road*).
+> > - Acuerdo: los **hashtags no son lenguaje, son política** — unen gente alrededor de ideas.
+
+> [!example] ✏️ Ejercicio 4 — Register + content (7.4-2B/2D)
+>
+> - ¿Cómo cambian los emojis el registro? (2B)
+> - ¿Qué temas van en email formal? Marca: *gossip / health / changes at work / scheduling meetings / free time / work problem.*
+>
+> > [!success]- ✅ Solución
+> >
+> > - Los emojis **bajan** el registro: con emojis = informal (A); sin ellos + *I look forward* = formal (B).
+> > - Formal: ***scheduling meetings, changes at work, work problem***. Informal: todo, incluido *gossip/health/free time*.
+
+> [!example] ✏️ Ejercicio 5 — Survey 7.5 (con tu compañero)
+>
+> Respondan 1–4 + inventen 5–7, presenten y voten desacuerdos (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *I have **2 accounts**: WhatsApp (family) and Instagram (news).*
+> > - *I write ~**30 texts** a day, mostly to **my mom**.*
+> > - *I keep up with news on **X/Twitter** — fastest source.*
+> > - Presenta: ***The results clearly show** we text more than call. **We can conclude** phones replaced calls.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

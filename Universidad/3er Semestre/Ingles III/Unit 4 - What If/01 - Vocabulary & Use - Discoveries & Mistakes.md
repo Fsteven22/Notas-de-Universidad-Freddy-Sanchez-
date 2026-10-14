@@ -119,6 +119,15 @@ graph TB
 > > - *an **epic fail***.
 > > - *my **fault***.
 
+> [!example] ✏️ Ejercicio 3 — Which matters most? (10.1B/C pair, modelos)
+>
+> Discute con tu compañero (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Which discovery is more important, microwave or Terracotta Army? → The Army: it **provided knowledge** about 2,300 years of Chinese society — the microwave just heats food.*
+> > - *What issues affect society today using this vocab? → AI **carries out research** but **faces the challenge** of bias; we need **breakthroughs** with **solutions**, not just hype.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

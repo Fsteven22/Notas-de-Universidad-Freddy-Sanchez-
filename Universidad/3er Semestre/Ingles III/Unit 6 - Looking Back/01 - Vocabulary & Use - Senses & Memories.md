@@ -126,6 +126,25 @@ graph TB
 > > - ***vague*** (a los 4 años: vago, quizá falso).
 > > - ***brings back*** (el olor *trae* los más vívidos).
 
+> [!example] ✏️ Ejercicio 4 — Who is who? (12.1A match)
+>
+> Une persona→foto: Gary + Milo / Sonia + grandma / Alex + grandpa — con cocina, bebé-perro, vinilo.
+>
+> > [!success]- ✅ Solución
+> >
+> > - **Cocina (Sonia + grandma)** — especias, horneando, *helper*.
+> > - **Bebé + perro (Gary + Milo)** — patio, *smooth fur*, 10 años.
+> > - **Vinilo (Alex + grandpa)** — *record cabinet, deep melodic voice*.
+
+> [!example] ✏️ Ejercicio 5 — Senses Q&A (12.1B, modelos)
+>
+> Responde con las historias (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Touch/smell/taste/sound/sight — who mentions what? → Gary: **touch** (smooth fur) + **smell** (damp breath); Sonia: **smell** (spices) + **taste** (icing); Alex: **sound** (music) + **sight** (records).*
+> > - *What exactly? → Sonia talks about **the smell of spices in the air**.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

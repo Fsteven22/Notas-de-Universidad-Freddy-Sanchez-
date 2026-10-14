@@ -113,6 +113,27 @@ graph TB
 > > - ***to make*** (*used to make me do* — obligar; ¡*used to* sí lleva *to*!).
 > > - ***help*** (*help me carry* — base, sin *to*).
 
+> [!example] ✏️ Ejercicio 3 — Minimal pairs (11.1 drill B, con tu compañero)
+>
+> Di cada par dejando CLARO el distinto significado:
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - *I'll never forget **meeting** my advisor (ya lo conocí) vs I can't forget **to meet** my advisor tomorrow (cita pendiente).*
+> > - *I remember **putting** my keys in my bag (recuerdo) vs I have to **remember to put** the key out (alarma).*
+> > - *I **stopped buying** groceries there (dejé la tienda) vs I **stopped to buy** groceries home (paré de camino).*
+> > - Tu compañero adivina cuál versión dijiste: si acierta las 3, pasas.
+
+> [!example] ✏️ Ejercicio 4 — Topics + tell (Speaking A–C, modelos)
+>
+> Elige 1 topic y cuéntalo (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *First day on campus: **I remember getting lost** looking for building C — I **stopped to ask** 3 people!*
+> > - *Giving up a sport: I **stopped playing** football to study. I **remember missing** the team, but grades first.*
+> > - *Tell with details + ask back: …**Have you ever quit** something you loved?*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

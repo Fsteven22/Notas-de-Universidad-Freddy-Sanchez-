@@ -93,6 +93,17 @@ graph TB
 > > - Add: ***Where I strongly disagree…*** + ***Additionally**, they will help…*
 > > - Conclude: ***And finally**, they're optional.*
 
+> [!example] ✏️ Ejercicio 2 — Mediation tasks (11.5A–D, modelos)
+>
+> Prepara, discute, presenta y vota (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Tree problems: roots break sidewalks; shade kills grass; **one argument for keeping** it is clean air.*
+> > - *Group A: **Another good argument** is birds and beauty. Group B: parking helps workers — **we need to consider** jobs.*
+> > - *Mediator C: **As an alternative, we could** trim roots + keep the tree. **Would you consider** half parking?*
+> > - *Present: **The main arguments for keeping it were** air and beauty. **In the end, we decided to** trim + keep. Vote: best solution wins.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

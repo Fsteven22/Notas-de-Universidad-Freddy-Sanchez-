@@ -137,6 +137,42 @@ graph TB
 > > - Cena (cansado, prometió a Ellen): *"OK, I mean, **can I ask you something**? Have you tried calling her? **If I were in your shoes**, I'd rest — **you've got nothing to lose**."*
 > > - Deporte nuevo (sin tiempo): *"**Is there any way** you can try weekends? **You could also** join morning yoga. **That could work**!"*
 
+> [!example] ✏️ Ejercicio 6 — Keeping engaged chart (7.3 drill B)
+>
+> Completa con el audio: *But that's not ___1___! ___2___ you know it? You won't ___3___ this, but… You can ___4___! You ___5___ what? Are you ___6___ for this? Isn't that ___7___?*
+>
+> > [!success]- ✅ Solución
+> >
+> > - ***all*** — *But that's not **all**!* (hay más).
+> > - ***Wouldn't*** — ***Wouldn't** you know it?* (¡quién lo diría!).
+> > - ***believe*** — *You won't **believe** this, but…*.
+> > - ***imagine*** — *You can **imagine**!*.
+> > - ***So*** — ***So**, what happened then?*.
+> > - ***ready*** — *Are you **ready** for this?*.
+> > - ***amazing*** — *Isn't that **amazing**?*.
+
+> [!example] ✏️ Ejercicio 7 — Conversation 7.3C (verifica con audio 2.10)
+>
+> Completa con el chart: *OK, ___1___? I had a job interview… / …I was wondering that myself. And, ___2___ I was in the wrong interview. / But that's not funny! … But ___3___. I got it. I got the job! / ___4___? I got the wrong job!*
+>
+> > [!success]- ✅ Solución (según script; confirma con el audio)
+> >
+> > - ***I mean, can I ask you something*** (1: pedir la palabra).
+> > - ***—wait, do you mean*** (2: frenar lo increíble).
+> > - ***the funny thing is, they offered me*** (3: giro cómico).
+> > - ***You won't believe this*** (4: remate).
+
+> [!example] ✏️ Ejercicio 8 — Diálogos 2.19 (7.3C pair, práctica oral)
+>
+> Practica con tu compañero (sin clave: pronunciación + memoria):
+>
+> - A: *What are you doing for your birthday?* → B: *Not much. I have to go to school.*
+> - A: *This room is a little small. Should we ask for a nicer one?* → B: *It can't hurt to ask. We've got nothing to lose.*
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - Clusters completos + 1 marcador de engaged por diálogo (*Let me guess / That's so…*).
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

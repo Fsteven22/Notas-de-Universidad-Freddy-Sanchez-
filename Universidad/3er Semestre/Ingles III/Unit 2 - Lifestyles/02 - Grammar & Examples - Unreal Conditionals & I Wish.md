@@ -128,6 +128,26 @@ graph TB
 > > - *I wish I **didn't have** an assignment…* (presente negativo → pasado: *didn't have*).
 > > - *I wish I **hadn't spent** all my money…* (pasado → *hadn't* + participle).
 
+> [!example] ✏️ Ejercicio 3 — Dream job pair (8.1C, con tu compañero)
+>
+> Pregunta y responde las 3 (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *If you **could do** any job, what **would** you choose? → I**'d be** a drone pilot: I love cameras and travel.*
+> > - *Would you **consider** a job you loved if you **were** badly paid? → Yes, if it **made** me happy — money isn't everything.*
+> > - *What **would** you do with free time if you **didn't have to** work? → I**'d learn** guitar and surf.*
+
+> [!example] ✏️ Ejercicio 4 — Common wishes (8.2 Speaking A/B)
+>
+> De la lista (*different college, harder study, instrument, travel, younger/older, different job*): ¿cuáles son más comunes? + 3 tuyos con quién los tendría (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *I wish I **could travel** more — students with no money have this one.*
+> > - *I wish I **had studied** harder in high school — workers with tough jobs say this.*
+> > - *I wish I **were** younger — adults with **busy schedules** say this.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos

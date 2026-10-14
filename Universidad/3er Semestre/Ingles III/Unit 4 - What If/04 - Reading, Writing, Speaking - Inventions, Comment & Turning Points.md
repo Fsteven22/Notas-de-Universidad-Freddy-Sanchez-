@@ -80,6 +80,25 @@ graph TB
 > - *Fire changed cooking and protection; without it, no…* (El fuego cambió cocina y defensa.)
 > - *Decide el mayor impacto (5 diferencias pro/contra) → presenta → votan.*
 
+> [!example] ✏️ Ejercicio 1 — Podcast details (10.4B · 🎧 con audio 2.37)
+>
+> Escucha y responde: *3 bad inventions at the start? / What does Renato compare to the car? / What other 3 inventions? / Which one do they finally agree about?*
+>
+> > [!success]- ✅ Cómo verificarlo
+> >
+> > - Responde **solo con lo que el audio dice** (nombres + comparación de Renato + acuerdo final).
+> > - Sin audio: tarea de clase — no inventes detalles.
+
+> [!example] ✏️ Ejercicio 2 — Turning Points tasks (10.5A–C, modelos)
+>
+> Ordena, agrega y decide (modelos):
+>
+> > [!success]- ✅ Respuestas modelo
+> >
+> > - *Order (fire → hieroglyphs → corn): fire first (cooking/protection), then writing, then farming — no dates given, order by logic.*
+> > - *2 more: **the wheel** (transport) and **vaccines** (health) — both changed history.*
+> > - *Greatest impact: **vaccines** — 5 differences: less death / longer life / school safety / travel confidence / …but inequality in access.*
+
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos
