@@ -435,7 +435,19 @@ graph TD
 
 > [!example] ✏️ $A \subseteq B \cap C$ cazando elementos
 >
-> $A = \{n : n-4$ múltiplo de $12\}$, $B = \{n : $ múltiplo de $4\}$, $C = \{n : n+2$ múltiplo de $3\}$. Toma $x \in A$: $x-4 = 12k$, o sea $x = 12k+4 = 4(3k+1)$ → $x \in B$ ✅. Además $x+2 = 12k+6 = 3(4k+2)$ → $x \in C$ ✅. Como $x$ era arbitrario, $A \subseteq B \cap C$. ∎
+> $A = \{n : n-4$ múltiplo de $12\}$, $B = \{n : $ múltiplo de $4\}$, $C = \{n : n+2$ múltiplo de $3\}$.
+>
+> - Toma $x \in A$: $x-4 = 12k$, o sea:
+>
+> $$x = 12k+4 = 4(3k+1)$$
+>
+> - Luego $x \in B$ ✅.
+> - Además:
+>
+> $$x+2 = 12k+6 = 3(4k+2)$$
+>
+> - Luego $x \in C$ ✅.
+> - Como $x$ era arbitrario, $A \subseteq B \cap C$. ∎
 >
 > > [!success]- ✅ Qué mirar
 > >

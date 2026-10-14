@@ -159,7 +159,20 @@ dg-publish: true
 
 > [!example] ✏️ Lección 1 (2026) — $2^n > n^2$ con base en $n_0 = 6$ (Caso 3)
 >
-> Para todo natural $n > 5$: base $P(6)$: $64 > 36$ ✅. HI: $2^k > k^2$ con $k \geq 6$. Paso: $2^{k+1} = 2\cdot 2^k > 2k^2$; falta $2k^2 \geq (k+1)^2 = k^2+2k+1$, i.e. $k^2-2k-1 \geq 0$: con $k \geq 6$, $k(k-2) \geq 24 > 1$ ✅. Por transitividad $2^{k+1} > (k+1)^2$. ∎
+> Para todo natural $n > 5$:
+>
+> - **Base** $P(6)$:
+>
+> $$64 > 36 \quad ✅$$
+>
+> - **HI:** $2^k > k^2$ con $k \geq 6$.
+> - **Paso:** $2^{k+1} = 2\cdot 2^k > 2k^2$.
+> - **Lema:** falta $2k^2 \geq (k+1)^2 = k^2+2k+1$, i.e.:
+>
+> $$k^2-2k-1 \geq 0$$
+>
+> - Con $k \geq 6$: $k(k-2) \geq 24 > 1$ ✅.
+> - **Cierre:** por transitividad $2^{k+1} > (k+1)^2$. ∎
 >
 > > [!success]- ✅ Qué mirar
 > >
@@ -167,7 +180,14 @@ dg-publish: true
 
 > [!example] ✏️ Taller 1 (2026) — Producto telescópico $\prod_{k=2}^{n}(1 - 1/k^2) = (n+1)/(2n)$
 >
-> Base $n = 2$: $(1-1/4) = 3/4 = (2+1)/(2\cdot 2)$ ✅. HI para $p$. Paso: separa el último factor, sustituye HI y simplifica $\frac{p+1}{2p}\cdot\frac{(p+1)^2-1}{(p+1)^2} = \frac{p+2}{2(p+1)}$ ✅.
+> - **Base** $n = 2$:
+>
+> $$(1-1/4) = 3/4 = (2+1)/(2\cdot 2) \quad ✅$$
+>
+> - **HI** para $p$.
+> - **Paso:** separa el último factor, sustituye HI y simplifica:
+>
+> $$\frac{p+1}{2p}\cdot\frac{(p+1)^2-1}{(p+1)^2} = \frac{p+2}{2(p+1)} \quad ✅$$
 >
 > > [!success]- ✅ Qué mirar
 > >

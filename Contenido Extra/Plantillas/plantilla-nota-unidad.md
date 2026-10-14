@@ -103,6 +103,8 @@ graph TB
 > > (Procedimiento completo, no solo el resultado.)
 
 > [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal).
+>
+> [!tip] 📏 Reglas de pasos matemáticos: cada paso en su propia línea de lista `-` (nunca 2 pasos en 1 línea) y cada ecuación importante en bloque `$$` centrado.
 
 ---
 
