@@ -1,0 +1,7 @@
+flowchart TD
+    A["Lee el diagrama"] --> B{"Simbolo en la pata?"}
+    B -->|"Muchos palitos<br/>los dos lados"| C["Es M:N → intermedia"]
+    B -->|"Palito + pata"| D["Es 1:M → FK al lado pata"]
+    B -->|"Palito + palito"| E["Es 1:1 → mira el circulo"]
+    E -->|"Hay circulo<br/>un lado"| F["Caso A: propaga al opcional"]
+    E -->|"Sin circulo"| G["Caso C: unifica"]

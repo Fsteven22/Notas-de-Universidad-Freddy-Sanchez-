@@ -16,14 +16,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > - **Lección 1:** detectar parcial vs transitiva en un diagrama de dependencias es pregunta segura.
 > - **Proyecto:** tablas en 3FN no duplican hechos.
 >
-> ```mermaid
-> graph LR
->     A["1FN<br/>repetidos"] --> B["2FN<br/>parciales fuera"]
->     B --> C["3FN<br/>transitivas fuera"]
->     C --> D["BCNF<br/>determinantes = claves"]
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-01-graph.svg]]
 
 ---
 
@@ -96,27 +89,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 >
 > Entrada: `1NF(PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS)`.
 >
-> ```mermaid
-> erDiagram
->     PROJECT {
->         int PROJ_NUM PK
->         string PROJ_NAME
->     }
->     EMPLOYEE {
->         int EMP_NUM PK
->         string EMP_NAME
->         string JOB_CLASS FK
->     }
->     JOB {
->         string JOB_CLASS PK
->         float CHG_HOUR
->     }
->     ASSIGNMENT {
->         int PROJ_NUM PK, FK
->         int EMP_NUM PK, FK
->         float ASSIGN_HOURS
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-02-er.svg]]
 >
 > **Se lee así:** parciales → PROJECT + EMPLOYEE (+ASSIGNMENT con lo completo); transitiva → JOB. 4 tablas, 0 duplicados: cambiar `CHG_HOUR` toca **una** fila.
 

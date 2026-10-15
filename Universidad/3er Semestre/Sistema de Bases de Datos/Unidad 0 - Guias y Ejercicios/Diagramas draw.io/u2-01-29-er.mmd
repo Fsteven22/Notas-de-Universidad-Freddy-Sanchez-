@@ -1,0 +1,9 @@
+erDiagram
+    USUARIO ||--o{ RESERVACION : "✅ BIEN: con atributos"
+    RESERVACION {
+        int idReservacion PK
+        int idUsuario FK
+        date fechaReservacion
+        time horaReservacion
+        date fechaLlegada
+    }

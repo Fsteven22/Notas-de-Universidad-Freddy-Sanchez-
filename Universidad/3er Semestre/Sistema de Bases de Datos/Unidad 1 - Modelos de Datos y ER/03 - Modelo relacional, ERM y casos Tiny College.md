@@ -23,15 +23,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > | **Conexión** | Columna en común | Rombo/verbo + cardinalidad |
 > | **Notaciones ERD** | — (no se dibuja: se escribe en tablas) | Chen, pata de gallo, clases |
 
-```mermaid
-graph TB
-    A[Mundo real] --> B[ERD<br/>Chen / crow's foot]
-    B --> C[Tablas<br/>relacional]
-    C --> D[SQL<br/>Unidad 2+]
-
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-01-graph.svg]]
 
 ---
 
@@ -49,13 +41,7 @@ graph TB
 > - **Atributo/columna:** una casilla (nombre, código).
 >
 >
-> ```mermaid
-> erDiagram
->     ESTUDIANTE {
->         int carnet PK
->         string nombre
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-02-er.svg]]
 >
 >
 > **Ejemplo:** la tabla es la relación; cada fila una tupla (`0876, Jorge`); cada columna un atributo (`nombre`). Sí: **relacional = tablas** — Codd propuso guardar todo en tablas relacionadas por columnas comunes, con base matemática.
@@ -73,14 +59,7 @@ graph TB
 > [!note] 📋 Definición — Niveles conceptual, lógico y físico
 >
 >
-> ```mermaid
-> graph TB
->     C["1. Conceptual<br/>ERD sin motor"] --> L["2. Logico<br/>tablas, PK/FK, tipos"]
->     L --> F["3. Fisico<br/>indices, almacenamiento"]
->     style C fill:#e1f5ff
->     style L fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-03-graph.svg]]
 >
 >
 > **Ejemplo:** el rombo *toma* (conceptual) → tabla MATRÍCULA con (PK,FK) (lógico) → índice sobre `carnet` (físico). Cada nivel decide cosas distintas.
@@ -91,16 +70,7 @@ graph TB
 >
 > Entidad → tabla; atributo → columna; clave → PK; N:M → intermedia con 2 FK; 1:N → FK del lado N.
 >
-> ```mermaid
-> graph LR
->     E["Rectángulo<br/>entidad"] --> T["Tabla"]
->     A["Óvalo<br/>atributo"] --> C["Columna"]
->     K["Subrayado<br/>clave"] --> P["PK"]
->     R["Rombo M:N<br/>relación"] --> I["Intermedia<br/>2 FK"]
->     style T fill:#e1ffe1
->     style P fill:#e1ffe1
->     style I fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-04-graph.svg]]
 >
 > **Ejemplo:** ESTUDIANTE(entidad) → tabla; `carnet`(clave) → PK; *toma*(N:M) → MATRÍCULA con 2 FK. El detalle completo vive en la Unidad 2.
 
@@ -111,12 +81,7 @@ graph TB
 > Cumple AMBAS: existencia-dependiente + PK derivada del padre. Chen: rectángulo **doble**.
 >
 >
-> ```mermaid
-> graph TB
->     E["EMPLEADO"]
->     W[["DEPENDIENTE<br/>EMP_NUM + DEP_NUM"]]
->     E --- W
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-05-graph.svg]]
 >
 >
 > **Ejemplo:** DEPENDENT se identifica con `EMP_NUM + DEP_NUM` juntos: `EMP_NUM` dice *de qué empleado es* (heredado del padre) y `DEP_NUM` lo distingue *entre los dependientes de ese empleado* (1º, 2º...). Ni uno solo identifica: el mismo `DEP_NUM = 1` existe en mil empleados. Sin el empleado no existe ni se identifica.
@@ -125,13 +90,7 @@ graph TB
 >
 > > [!quote] 📖 C. Zavaleta, *MER: guía completa*, caso entidad bancaria (2026)
 >
-> ```mermaid
-> graph TB
->     E["EMPLOYEE<br/>fuerte, existe solo"]
->     W[["DEPENDENT<br/>débil, doble rectángulo"]]
->     P["PART<br/>fuerte si hay partes propias"]
->     E --- W
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-06-graph.svg]]
 >
 > **Se lee así:** rectángulo doble = débil (DEPENDENT cuelga de EMPLOYEE); rectángulo simple que existe solo = fuerte (PART con partes propias no necesita a VENDOR).
 
@@ -146,18 +105,7 @@ graph TB
 > **Figuras:** ver los dos diagramas de CLASS en Ejemplos Trabajados (versión débil y versión fuerte).
 >
 >
-> ```mermaid
-> erDiagram
->     CURSO ||..o{ CLASE_DEBIL : "débil, punteada"
->     CURSO ||--o{ CLASE_FUERTE : "fuerte, sólida"
->     CLASE_DEBIL {
->         string CLASS_CODE PK
->     }
->     CLASE_FUERTE {
->         string CRS_CODE PK, FK
->         string CLASS_SECTION PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-07-er.svg]]
 >
 >
 > **Se lee en patas:** la línea **punteada** = no identifica (la hija tiene PK propia); la **sólida** = identifica (la PK hija hereda la del padre).
@@ -211,22 +159,7 @@ graph TB
 > *(Leyenda Chen: ver el diagrama dibujable de abajo — rectángulo, rombo, óvalo, punteada y subrayado.)*
 >
 >
-> ```mermaid
-> graph TB
->     E1["ESTUDIANTE<br/><u>carnet</u>"]
->     R{"toma"}
->     E2["MATERIA<br/><u>codigo</u>"]
->     W[["DEPENDIENTE<br/>carnet+dep"]]
->     R2{"tiene"}
->     A1(["nombre"])
->     A2(["edad*<br/>derivada"])
->     E1 --- R
->     R --- E2
->     E1 --- A1
->     E1 -.- A2
->     E2 --- R2
->     R2 --- W
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-08-graph.svg]]
 >
 >
 > **Cómo leerlo:** rectángulo = entidad (`[[ ]]` = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
@@ -246,15 +179,7 @@ graph TB
 >
 > **Principio clave:** el orden de carga no es decorativo — violarlo rompe integridad referencial.
 >
-> ```mermaid
-> flowchart TD
->     A["Verifica ERD<br/>PK + verbo + (x,y)"] --> B["Una tabla<br/>por entidad"]
->     B --> C["N:M → intermedia"]
->     C --> D["FK del lado N"]
->     D --> E["¿Hereda PK?<br/>punteada/sólida"]
->     E --> F["Carga: 1 primero"]
->     style F fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-09-flow.svg]]
 
 ---
 
@@ -270,33 +195,13 @@ graph TB
 > | **Fuerte** | `CLASS(CRS_CODE, CLASS_SECTION, ...)` — PK heredada | Sólida | Identidad ligada al padre |
 >
 >
-> ```mermaid
-> erDiagram
->     CURSO ||--o{ CLASE : genera
->     CURSO {
->         string CRS_CODE PK
->     }
->     CLASE {
->         string CLASS_CODE PK
->         string CRS_CODE FK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-10-er.svg]]
 >
 >
 > **Versión débil (punteada):** CLASS tiene PK propia; solo referencia al padre con FK.
 >
 >
-> ```mermaid
-> erDiagram
->     CURSO ||--o{ CLASE : genera
->     CURSO {
->         string CRS_CODE PK
->     }
->     CLASE {
->         string CRS_CODE PK, FK
->         string CLASS_SECTION PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-11-er.svg]]
 >
 >
 > **Versión fuerte (sólida):** la PK de CLASS hereda `CRS_CODE` — sin el curso, la clase no se identifica.
@@ -314,15 +219,7 @@ graph TB
 > | Si no | 1:1: "Un EMPLEADO maneja una sola DIVISIÓN" |
 >
 
-```mermaid
-flowchart TD
-    A["¿Pregunta de vuelta?"] --> B{"¿Puede manejar varias?"}
-    B -->|"Si"| C["Dibuja 1:M<br/>FK en DIVISION"]
-    B -->|"No"| D["Dibuja 1:1<br/>caso A, B o C"]
-    C --> E["Verifica: ¿el lado N<br/>carga al ultimo?"]
-    D --> E
-    style E fill:#e1ffe1
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-12-flow.svg]]
 
 
 ---
@@ -355,13 +252,7 @@ flowchart TD
 > [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
 >
-> ```mermaid
-> graph LR
->     A["❌ Tablas directo"] --> R["Columnas repetidas<br/>FKs inventadas<br/>N:M sin intermedia"]
->     B["✅ ERD → tablas → SQL"] --> T["Modelo trazable"]
->     style R fill:#ffe1e1
->     style T fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-13-graph.svg]]
 
 
 ### ❌ Error 2: Herencia de PK indecisa
@@ -371,13 +262,7 @@ flowchart TD
 > PK compuesta en el diagrama pero FK simple en tablas (o al revés): decide si hereda primero, verifica después.
 >
 >
-> ```mermaid
-> erDiagram
->     CURSO ||--o{ CLASE : "❌ MAL: dice fuerte<br/>pero no hereda"
->     CLASE {
->         string CLASS_CODE PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-14-er.svg]]
 >
 >
 > Si la línea es sólida, la PK hija **debe** contener la del padre. Si es punteada, la hija tiene PK propia.
@@ -387,13 +272,7 @@ flowchart TD
 > [!danger] ❌ Viola: padres antes que hijas
 >
 >
-> ```mermaid
-> flowchart TD
->     A["❌ MATRICULA primero"] --> B["FK a ESTUDIANTE<br/>que no existe"]
->     C["✅ ESTUDIANTE + MATERIA"] --> D["✅ MATRICULA al final"]
->     style B fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-15-flow.svg]]
 
 
 ### ❌ Error 4: M:N directo al relacional
@@ -468,14 +347,12 @@ flowchart TD
 > - [ ] Dibujo los 7 símbolos Chen con su significado.
 > - [ ] Traduzco un ER simple a tablas con PKs y FKs.
 >
-
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Decido débil vs fuerte por la PK y dibujo su línea.
 > - [ ] Resuelvo N:M con intermedia correcta.
 > - [ ] Ordeno creación y carga sin romper integridad.
 >
-
 > [!note] 📋 Nivel Avanzado
 >
 > - [ ] Comparo CLASS débil vs fuerte justificando por transacciones.

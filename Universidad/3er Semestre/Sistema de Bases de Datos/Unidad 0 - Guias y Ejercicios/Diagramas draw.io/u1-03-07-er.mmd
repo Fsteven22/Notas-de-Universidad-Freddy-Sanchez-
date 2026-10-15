@@ -1,0 +1,10 @@
+erDiagram
+    CURSO ||..o{ CLASE_DEBIL : "débil, punteada"
+    CURSO ||--o{ CLASE_FUERTE : "fuerte, sólida"
+    CLASE_DEBIL {
+        string CLASS_CODE PK
+    }
+    CLASE_FUERTE {
+        string CRS_CODE PK, FK
+        string CLASS_SECTION PK
+    }

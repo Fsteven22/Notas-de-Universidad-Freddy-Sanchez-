@@ -27,15 +27,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > | **Relación** | Rombo | FK o tabla intermedia |
 > | **Regla de oro** | Qué existe | Cómo se guarda |
 
-```mermaid
-graph LR
-    ER[Modelo Conceptual<br/>ER] --> T[Tablas +<br/>claves]
-    T --> N[Normalizar<br/>1FN...]
-    N --> DD[Diccionario<br/>de datos]
-    style ER fill:#e1f5ff
-    style T fill:#fff4e1
-    style N fill:#e1ffe1
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-01-graph.svg]]
 
 ---
 
@@ -58,14 +50,7 @@ graph LR
 >
 > **Ejemplo:** la columna `nombre` tiene dominio texto; el campo (102, nombre) vale `Luis`.
 >
-> ```mermaid
-> graph TB
->     T["TABLA<br/>relación"]
->     T --> F["FILA<br/>tupla: un empleado"]
->     T --> C["COLUMNA<br/>atributo + dominio"]
->     F --> K["CAMPO<br/>intersección: un valor"]
->     C --> K
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-02-graph.svg]]
 >
 > **Se lee así:** la tabla contiene filas y columnas; donde se cruzan hay un campo con exactamente un valor.
 
@@ -77,18 +62,7 @@ graph LR
 >
 > **Ejemplo:** en REGISTRO ninguna columna sola identifica (un profesor dicta varias materias); `idProf + matricula + idMateria` sí → PK compuesta de 3.
 >
-> ```mermaid
-> erDiagram
->     CURSO ||--o{ MATRICULA : tiene
->     CURSO {
->         string codigo PK
->         string nombre UK
->     }
->     MATRICULA {
->         string codigo PK, FK
->         int carnet PK, FK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-03-er.svg]]
 >
 > **Se lee así:** `PK` identifica, `FK` referencia, `UK` es candidata no elegida (`nombre` único pero no PK), `PK, FK` es compuesta que además referencia.
 
@@ -99,16 +73,7 @@ graph LR
 > - **De entidad:** la PK nunca es nula ni se repite.
 > - **Referencial:** toda FK apunta a una PK que existe (la FK no necesita ser única donde está, pero sí donde apunta).
 >
->
-> ```mermaid
-> flowchart TD
->     A["Insertar MATRICULA<br/>carnet=999"] --> B{"¿Existe 999<br/>en ESTUDIANTE?"}
->     B -->|"No"| R["❌ Rechazado<br/>integridad referencial"]
->     B -->|"Si"| O["✅ Aceptado"]
->     style R fill:#ffe1e1
->     style O fill:#e1ffe1
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-04-flow.svg]]
 >
 > **Ejemplo:** matricular el carnet 999 inexistente se rechaza; la BD protege sola lo que en archivos había que programar.
 
@@ -118,19 +83,7 @@ graph LR
 >
 > El lado `1` es **padre**; el lado `M` es **hijo** y recibe la FK.
 >
->
-> ```mermaid
-> erDiagram
->     DEPARTAMENTO ||--o{ EMPLEADO : "padre 1 → hijo M"
->     DEPARTAMENTO {
->         int idDepartamento PK
->     }
->     EMPLEADO {
->         int idEmpleado PK
->         int idDepartamento FK
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-05-er.svg]]
 >
 > **Ejemplo:** rotula el `1` primero y la dirección sale sola (ver Regla 3).
 
@@ -140,13 +93,7 @@ graph LR
 >
 > El ML debe tener el **mínimo de tablas posible**: las de un solo atributo se eliminan y las 1:1 total-total se fusionan.
 >
->
-> ```mermaid
-> graph LR
->     A["EQUIPO +<br/>PRESIDENTE"] --> B["EQUIPO<br/>unificada"]
->     style B fill:#e1ffe1
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-06-graph.svg]]
 >
 > **Ejemplo:** EQUIPO–PRESIDENTE (1,1)-(1,1) → una sola tabla con `cedula_presi` dentro (ver Regla 4, caso C).
 
@@ -156,17 +103,12 @@ graph LR
 >
 > Refinamiento del conceptual donde se reducen/aumentan entidades y solo quedan las que serán tablas; después **se normaliza**.
 >
-> ```mermaid
-> graph LR
->     R["Rombo toma<br/>conceptual"] --> T["Tabla MATRICULA<br/>lógico"]
->     T --> N["1FN: sin grupos<br/>repetitivos"]
->     style T fill:#fff4e1
->     style N fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-07-graph.svg]]
 >
 > **Ejemplo:** el rombo *toma* (conceptual) se vuelve tabla MATRÍCULA (lógico); luego 1FN verifica que no tenga grupos repetitivos.
 
 ---
+
 ## 🛠️ Método: Convertir Paso a Paso
 
 > [!success] 🏆 Protocolo de conversión (úsalo en la Lección 1)
@@ -184,17 +126,7 @@ graph LR
 >
 > Cada entidad del modelo conceptual se transforma directamente en una tabla: los atributos pasan a ser columnas y la clave primaria se mantiene.
 >
->
-> ```mermaid
-> erDiagram
->     CLIENTE {
->         int idCliente PK
->         string nombre
->         string direccion
->         int telefono
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-08-er.svg]]
 >
 > **Se lee así:** la entidad CLIENTE con 4 atributos produce una tabla de 4 columnas donde `idCliente` identifica cada fila.
 
@@ -206,28 +138,7 @@ graph LR
 >
 > La relación se convierte en tabla con las claves primarias de **ambas** entidades (cada una PK y FK a la vez), más los atributos propios de la relación.
 >
->
-> ```mermaid
-> erDiagram
->     CLIENTE ||--o{ RENTAR : realiza
->     PROPIEDAD ||--o{ RENTAR : incluye
->     CLIENTE {
->         int idCliente PK
->         string nombre
->     }
->     RENTAR {
->         int idRenta PK
->         int idCliente PK, FK
->         int idPropiedad PK, FK
->         date fechaInicioRenta
->         date fechaFinRenta
->     }
->     PROPIEDAD {
->         int idPropiedad PK
->         string direccion
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-09-er.svg]]
 >
 > **Se lee así:** `RENTAR` no existía como entidad, nace de la relación; sus dos claves apuntan a cada lado y las fechas viven con ella.
 >
@@ -241,22 +152,7 @@ graph LR
 >
 > El lado `1` es el **padre** y el lado `M` es el **hijo**: se copia la PK del padre como FK en la tabla del hijo. Si la relación tiene atributos propios, también bajan al hijo.
 >
->
-> ```mermaid
-> erDiagram
->     DEPARTAMENTO ||--o{ EMPLEADO : trabaja
->     DEPARTAMENTO {
->         int idDepartamento PK
->         string nombre
->     }
->     EMPLEADO {
->         int idEmpleado PK
->         string nombre
->         int idDepartamento FK
->         date fechaTrabaja
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-10-er.svg]]
 >
 > **Se lee así:** un departamento tiene muchos empleados; cada empleado guarda `idDepartamento` diciendo a cuál pertenece. `fechaTrabaja` (atributo del rombo) baja con él.
 >
@@ -270,56 +166,19 @@ graph LR
 >
 > **Caso A — (0,1) vs (1,1): propaga del (1,1) al (0,1).** Ejemplo CLIENTE–PREFERENCIA (`establece`):
 >
->
-> ```mermaid
-> erDiagram
->     CLIENTE ||--o| PREFERENCIA : establece
->     CLIENTE {
->         int idCliente PK
->         string nombre
->     }
->     PREFERENCIA {
->         int id_pref PK
->         string tipoPref
->         int maxRent
->         int idCliente FK
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-11-er.svg]]
 >
 > **Se lee así:** no todo cliente fija preferencia (0,1), pero toda preferencia es de un cliente (1,1); la PK viaja al lado opcional.
 >
 > **Caso B — participación parcial: decide PADRE e HIJO.** Ejemplo PERSONA–LICENCIA (`posee`): no toda persona tiene licencia (parcial), pero toda licencia es de una persona. La persona es padre, la licencia hija:
 >
-> ```mermaid
-> erDiagram
->     PERSONA ||--o| LICENCIA : posee
->     PERSONA {
->         string cedula PK
->         string nombre
->     }
->     LICENCIA {
->         string numero PK
->         string categoria
->         string cedula FK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-12-er.svg]]
 >
 > **Se lee así:** la PK del padre (`cedula`) se copia al hijo como FK. `PERSONA` no recibe nada. Sin persona no hay licencia (pero sí hay personas sin licencia).
 >
 > **Caso C — (1,1) vs (1,1): unifica en una sola tabla.** Ejemplo EQUIPO–PRESIDENTE (`tiene`):
 >
-> ```mermaid
-> erDiagram
->     EQUIPO {
->         int codigo PK
->         string nombre
->         int anoFundacion
->         int cedula_presi
->         string nombre_presi
->         string apellido_presi
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-13-er.svg]]
 >
 > **Se lee así:** una sola tabla con la PK de cualquiera de las dos; los datos del presidente viven como columnas (`cedula_presi, nombre_presi...`).
 
@@ -329,21 +188,7 @@ graph LR
 
 > [!example] 🧪 Registro (PROFESOR–MATERIA–ESTUDIANTE)
 >
->
-> ```mermaid
-> erDiagram
->     PROFESOR ||--o{ REGISTRO : dicta
->     MATERIA ||--o{ REGISTRO : contiene
->     ESTUDIANTE ||--o{ REGISTRO : cursa
->     REGISTRO {
->         int idProf PK, FK
->         int idMateria PK, FK
->         int matricula PK, FK
->         float calificacion
->         time hora
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-14-er.svg]]
 >
 > **Se lee así:** `REGISTRO` combina las 3 PK como clave compuesta (las 3 son FK a la vez) y cuelga `calificacion, hora` de la combinación completa.
 
@@ -355,37 +200,11 @@ graph LR
 >
 > **(a) {obligatorio, sobrelapado} → 3 tablas** (cada tipo la suya, banderas en el padre):
 >
-> ```mermaid
-> erDiagram
->     EMPLEADO {
->         int idEmp PK
->         string nombre
->         string esVendedor
->         string esTecnico
->     }
->     VENDEDOR {
->         int idEmp PK, FK
->         int numVentas
->     }
->     TECNICO {
->         int idEmp PK, FK
->         string licencia
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-15-er.svg]]
 >
 > **(b) {obligatorio, disjunto} → 1 sola tabla** con discriminador (nadie es dos cosas: no hacen falta hijos):
 >
-> ```mermaid
-> erDiagram
->     EMPLEADO {
->         int idEmp PK
->         string nombre
->         string direccion
->         int numVentas
->         string licencia
->         string tipo
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-16-er.svg]]
 >
 > **(c) {opcional, disjunto} → supertabla + hijos solo si aplican** (`Tipo` admite nulo; el hijo lleva la PK como (PK,FK) cuando existe).
 >
@@ -405,22 +224,7 @@ graph LR
 
 > [!example] 🧪 Edificio–Departamento
 >
->
-> ```mermaid
-> erDiagram
->     EDIFICIO ||--o{ DEPARTAMENTO : contiene
->     EDIFICIO {
->         int idEdificio PK
->         string nombre
->         string direccion
->     }
->     DEPARTAMENTO {
->         int idEdificio PK, FK
->         int hab_num PK
->         int piso
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-17-er.svg]]
 >
 > **Se lee así:** el departamento débil no se identifica solo (`hab_num` se repite entre edificios); su PK es compuesta: la del fuerte heredada + su número.
 
@@ -432,17 +236,7 @@ graph LR
 >
 > **Recursiva 1:M** (un jefe supervisa empleados):
 >
->
-> ```mermaid
-> erDiagram
->     EMPLEADO ||--o{ EMPLEADO : supervisa
->     EMPLEADO {
->         int idEmpleado PK
->         string nombre
->         int idSupervisor FK
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-18-er.svg]]
 >
 > **Se lee así:** `idSupervisor` es FK que apunta a `idEmpleado` de la **misma** tabla (`idEmpleado = idSupervisor`).
 >
@@ -454,22 +248,59 @@ graph LR
 
 ---
 
+## 🔁 Conversión inversa — del ML al MC (viceversa)
+
+> [!note] 📋 Definición — Leer tablas y reconstruir el ER
+>
+> Dadas las tablas con sus PK/FK, recupera el conceptual: cada tabla es una entidad, cada FK es una relación y cada tabla intermedia es un rombo. Es la lectura inversa del protocolo MC→ML: si sabes convertir hacia adelante, sabes leer hacia atrás buscando las huellas que dejó cada regla.
+>
+> | Huella en las tablas | Origen en el ER |
+> |---|---|
+> | Tabla con PK compuesta de 2 (PK,FK) + atributos propios | M:N con intermedia (Regla 2) |
+> | Tabla con PK compuesta de 3 (PK,FK) | Ternaria (Regla 5) |
+> | FK simple en una tabla | 1:M: la tabla con la FK es el hijo (Regla 3) |
+> | PK que es a la vez FK a otra tabla | Supertipo→subtipo o 1:1 fusionable (Regla 6 / caso C) |
+> | FK que apunta a la misma tabla | Recursiva 1:M (Regla 8) |
+> | Tabla intermedia con doble FK a la misma tabla | Recursiva M:N (Regla 8) |
+> | Tabla de (FK + un valor) con PK compuesta | Multivaluado (U2-02 §6) |
+> | PK heredada del fuerte + número local | Entidad débil (Regla 7) |
+>
+> **Protocolo inverso (en orden):**
+>
+> 1. Marca todas las PK y FK de cada tabla.
+> 2. Las tablas cuya PK es compuesta solo de FK → intermedias: dibuja el rombo con sus participantes.
+> 3. Las FK simples → flechas 1:M hacia el padre (la tabla referenciada).
+> 4. Las PK compartidas → supertipo (padre) y subtipos (hijos); si no hay atributos propios, era una 1:1 fusionable.
+> 5. Reconstruye cardinalidades preguntando el negocio en ambas direcciones (U1-02 §frases): las tablas no guardan (x,y), tú las deduces.
+
+### ✏️ Ejercicio inverso 1 — MATRÍCULA
+
+> [!example] 🧪 Planteamiento
+> - Tablas: `ESTUDIANTE(carnet PK, nombre)`, `MATERIA(cod PK, nombre)`, `MATRICULA(carnet PK/FK, cod PK/FK, nota)`. Reconstruye el ER.
+>
+> > [!success]- Solución
+> > - MATRICULA tiene PK compuesta de 2 FK + atributo propio (nota) → intermedia de M:N.
+> > - ER: ESTUDIANTE —*toma*— MATERIA (M:N, atributo nota en el rombo); carnet y cod subrayados como PK.
+
+### ✏️ Ejercicio inverso 2 — El supervisor fantasma
+
+> [!example] 🧪 Planteamiento
+> - Tablas: `EMPLEADO(id PK, nombre, idSup FK→EMPLEADO)`, `VENDEDOR(id PK/FK→EMPLEADO, numVentas)`, `VENTA(id PK, fecha, idEmp FK→EMPLEADO)`. Reconstruye el ER.
+>
+> > [!success]- Solución
+> > - idSup a la misma tabla → recursiva *supervisa* 1:M con roles (supervisor/supervisado).
+> > - VENDEDOR con PK compartida + atributo propio → subtipo de EMPLEADO (supertipo, caso a).
+> > - VENTA con FK simple → EMPLEADO 1:M *realiza* (cuelga del supertipo: cualquiera vende, como el caso subsidio de la Guía 1).
+
+---
+
 ## 🎨 Ejemplo Trabajado Completo
 
 > [!example] 💡 De ER a tablas: trabaja (EMPLEADO–DEPARTAMENTO)
 >
 > **ER de partida:** `EMPLEADO(idEmpleado, nombre, dirección, teléfono)` —(trabaja, fechaTrabaja)→ `DEPARTAMENTO(idDepartamento, nombre)`, cardinalidad M:1.
 >
-> ```mermaid
-> graph TB
->     E["EMPLEADO<br/><u>idEmpleado</u>"]
->     R{"trabaja<br/>M:1"}
->     D["DEPARTAMENTO<br/><u>idDepartamento</u>"]
->     A(["fechaTrabaja"])
->     E --- R
->     R --- D
->     R --- A
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-19-graph.svg]]
 >
 > **Conversión:**
 >
@@ -483,22 +314,7 @@ graph LR
 > | **EMPLEADO** | idEmpleado PK int, nombre char(30), dirección char(50), teléfono int, **FK** idDepartamento int, fechaTrabaja date |
 > | **DEPARTAMENTO** | idDepartamento PK int, nombre char(30) |
 >
-> ```mermaid
-> erDiagram
->     DEPARTAMENTO ||--o{ EMPLEADO : trabaja
->     DEPARTAMENTO {
->         int idDepartamento PK
->         string nombre
->     }
->     EMPLEADO {
->         int idEmpleado PK
->         string nombre
->         string direccion
->         int telefono
->         int idDepartamento FK
->         date fechaTrabaja
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-20-er.svg]]
 >
 > **Se lee así:** el Chen de arriba convertido: el rombo desaparece, nace la FK en el hijo y `fechaTrabaja` baja con ella. Compara ambos dibujos línea por línea.
 >
@@ -508,22 +324,7 @@ graph LR
 
 ## 🗺️ Diagrama de Decisión: ¿Cómo Convierto Esta Relación?
 
-```mermaid
-flowchart TD
-    A["Mira la cardinalidad"] --> B{"Es M:N o ternaria?"}
-    B -->|"Si"| C["Tabla intermedia<br/>con PK,FK de cada lado"]
-    B -->|"No"| D{"Es 1:M?"}
-    D -->|"Si"| E["FK del padre 1<br/>en el hijo M"]
-    D -->|"No"| F{"Es 1:1?"}
-    F -->|"Si"| G{"Participacion?"}
-    G -->|"(0,1)-(1,1)"| H["Propaga PK del 1,1<br/>al 0,1"]
-    G -->|"Parcial"| I["Padre-Hijo:<br/>PK padre al hijo"]
-    G -->|"1,1-1,1"| J["Unifica en<br/>una tabla"]
-    F -->|"No"| K{"Es especial?"}
-    K -->|"Supertipo"| L["Tabla por tipo<br/>PK,FK heredada"]
-    K -->|"Debil"| M["PK fuerte como<br/>PK,FK"]
-    K -->|"Recursiva"| N["FK a si misma<br/>o intermedia doble"]
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-21-flow.svg]]
 
 ---
 
@@ -538,27 +339,11 @@ flowchart TD
 >
 > Poner la FK en el padre (lado 1) es absurdo: un departamento tendría que apuntar a **uno** de sus 50 empleados.
 >
+> ❌ Así NO:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-22-er.svg]]
 >
-> ```mermaid
-> erDiagram
->     DEPARTAMENTO ||--o{ EMPLEADO : "❌ MAL: FK aqui"
->     DEPARTAMENTO {
->         int idDepartamento PK
->         int idEmpleado FK
->     }
-> ```
->
->
->
-> ```mermaid
-> erDiagram
->     DEPARTAMENTO ||--o{ EMPLEADO : "✅ BIEN: FK aqui"
->     EMPLEADO {
->         int idEmpleado PK
->         int idDepartamento FK
->     }
-> ```
->
+> ✅ Así SÍ:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-23-er.svg]]
 >
 > **Regla que lo evita:** en 1:M el hijo (M) recibe; el padre (1) no apunta a nadie.
 
@@ -570,30 +355,11 @@ flowchart TD
 >
 > Aplanar la relación en columnas numeradas crea un grupo repetitivo: ¿y si una venta lleva 4 productos?
 >
+> ❌ Así NO:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-24-er.svg]]
 >
-> ```mermaid
-> erDiagram
->     VENTA {
->         int codigo PK
->         int idProd1
->         int idProd2
->         int idProd3
->     }
-> ```
->
->
->
-> ```mermaid
-> erDiagram
->     PRODUCTO ||--o{ DETALLE : "✅ BIEN: intermedia"
->     VENTA ||--o{ DETALLE : "✅ BIEN: intermedia"
->     DETALLE {
->         int idProd PK, FK
->         int codigo PK, FK
->         int cantidad
->     }
-> ```
->
+> ✅ Así SÍ:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-25-er.svg]]
 >
 > **Regla que lo evita:** toda M:N produce tabla intermedia con las PK de ambos lados.
 
@@ -605,33 +371,11 @@ flowchart TD
 >
 > Si cada equipo tiene exactamente un presidente y viceversa, dos tablas solo generan un JOIN obligatorio en cada consulta.
 >
+> ❌ Así NO:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-26-er.svg]]
 >
-> ```mermaid
-> erDiagram
->     EQUIPO ||--|| PRESIDENTE : "❌ MAL: dos tablas"
->     EQUIPO {
->         int codigo PK
->         int cedula_presi FK
->     }
->     PRESIDENTE {
->         int cedula PK
->         int codigo FK
->     }
-> ```
->
->
->
-> ```mermaid
-> erDiagram
->     EQUIPO {
->         int codigo PK
->         string nombre
->         int anoFundacion
->         int cedula_presi
->         string nombre_presi
->     }
-> ```
->
+> ✅ Así SÍ:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-27-er.svg]]
 >
 > **Regla que lo evita:** caso C (1,1)-(1,1) se unifica en una sola tabla.
 
@@ -643,31 +387,11 @@ flowchart TD
 >
 > Convertir `Registra` bajando solo la FK pero perdiendo `fechaReservacion, horaReservacion` destruye datos del conceptual.
 >
+> ❌ Así NO:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-28-er.svg]]
 >
-> ```mermaid
-> erDiagram
->     USUARIO ||--o{ RESERVACION : registra
->     RESERVACION {
->         int idReservacion PK
->         int idUsuario FK
->         date fechaLlegada
->     }
-> ```
->
->
->
-> ```mermaid
-> erDiagram
->     USUARIO ||--o{ RESERVACION : "✅ BIEN: con atributos"
->     RESERVACION {
->         int idReservacion PK
->         int idUsuario FK
->         date fechaReservacion
->         time horaReservacion
->         date fechaLlegada
->     }
-> ```
->
+> ✅ Así SÍ:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-29-er.svg]]
 >
 > **Regla que lo evita:** todo atributo del rombo viaja a la tabla que absorbe la relación.
 
@@ -679,30 +403,11 @@ flowchart TD
 >
 > Darle al subtipo una PK propia rompe el vínculo: ya no se sabe qué empleado es ese vendedor.
 >
+> ❌ Así NO:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-30-er.svg]]
 >
-> ```mermaid
-> erDiagram
->     EMPLEADO ||--o| VENDEDOR : "❌ MAL: PK propia"
->     VENDEDOR {
->         int idVendedor PK
->         int numVentas
->     }
-> ```
->
->
->
-> ```mermaid
-> erDiagram
->     EMPLEADO ||--o| VENDEDOR : "✅ BIEN: PK heredada"
->     EMPLEADO {
->         int idEmp PK
->     }
->     VENDEDOR {
->         int idEmp PK, FK
->         int numVentas
->     }
-> ```
->
+> ✅ Así SÍ:
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-31-er.svg]]
 >
 > **Regla que lo evita:** cada subtipo lleva la PK del supertipo como (PK,FK) — en los casos (a) y (c); en (b) y (d) no hay tablas hijas que hereden.
 
@@ -735,23 +440,7 @@ flowchart TD
 >
 > Convierte esta relación ternaria: `ESTUDIANTE(Matrícula PK, nombre, apellido)` —registra(calificación, hora)→ `MATERIA(idMateria PK, nombre, descripción)`, con `PROFESOR(idProf PK, ...)` como tercer participante.
 >
->
-> ```mermaid
-> erDiagram
->     PROFESOR ||--o{ REGISTRO : dicta
->     MATERIA ||--o{ REGISTRO : contiene
->     ESTUDIANTE ||--o{ REGISTRO : cursa
->     ESTUDIANTE {
->         int matricula PK
->     }
->     MATERIA {
->         int idMateria PK
->     }
->     PROFESOR {
->         int idProf PK
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-32-er.svg]]
 >
 > > [!success]- ✅ Solución guiada
 > >
@@ -774,17 +463,7 @@ flowchart TD
 >
 > `PRODUCT` supertipo con subtipos `CD` y `BOOK`. ¿Es obligatorio que toda instancia de PRODUCT esté asociada a un CD? ¿Puede un BOOK no aparecer en PRODUCT? Dibuja la implementación según tu respuesta.
 >
->
-> ```mermaid
-> erDiagram
->     PRODUCT ||--o| CD : es
->     PRODUCT ||--o| BOOK : es
->     PRODUCT {
->         int idProd PK
->         string tipo
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-33-er.svg]]
 >
 > > [!success]- ✅ Solución guiada
 > >
@@ -802,17 +481,7 @@ flowchart TD
 >
 > Convierte a lógico el diagrama del taller en notación pata de gallo (ejercicio de clase).
 >
->
-> ```mermaid
-> flowchart TD
->     A["Lee el diagrama"] --> B{"Simbolo en la pata?"}
->     B -->|"Muchos palitos<br/>los dos lados"| C["Es M:N → intermedia"]
->     B -->|"Palito + pata"| D["Es 1:M → FK al lado pata"]
->     B -->|"Palito + palito"| E["Es 1:1 → mira el circulo"]
->     E -->|"Hay circulo<br/>un lado"| F["Caso A: propaga al opcional"]
->     E -->|"Sin circulo"| G["Caso C: unifica"]
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-34-flow.svg]]
 >
 > > [!success]- ✅ Solución guiada
 > >
@@ -828,18 +497,7 @@ flowchart TD
 >
 > `CLIENTE(cédula PK, nombre, dirección, teléfono)` + `PREFERENCIA(id_pref PK, tipoPref, maxRent)`, relación `establece` con (0,1) del lado cliente y (1,1) del lado preferencia. ¿Qué caso 1:1 es y dónde va la FK?
 >
->
-> ```mermaid
-> erDiagram
->     CLIENTE ||--o| PREFERENCIA : establece
->     CLIENTE {
->         int cedula PK
->     }
->     PREFERENCIA {
->         int id_pref PK
->     }
-> ```
->
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-01-35-er.svg]]
 >
 > > [!success]- ✅ Solución guiada
 > >
@@ -852,20 +510,21 @@ flowchart TD
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
-
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
->
-> - ¿3 pasos del diseño de BD?::Requerimientos → conceptual (ER) → lógico/físico (tablas + triggers).
-> - ¿Equivalencias tabla/fila/columna?::Archivo/registro/campo = relación/tupla/atributo.
-> - ¿M:N al lógico?::Tabla intermedia con las PK de ambos lados como (PK,FK) + atributos de la relación.
-> - ¿1:M dónde va la FK?::En el hijo (lado M); el padre (lado 1) no recibe nada.
-> - ¿1:1 caso A, B y C?::A: (0,1)-(1,1) propaga PK del 1,1 al 0,1. B: parcial, PK del padre al hijo. C: (1,1)-(1,1) unifica en una tabla.
-> - ¿Supertipo-subtipo al lógico?::(a) 3 tablas con banderas; (b) 1 tabla con discriminante tipo; (c) supertabla + hijos opcionales; (d) 1 tabla ancha.
-> - ¿Débil y recursiva?::Débil: PK del fuerte como (PK,FK). Recursiva 1:M: FK a sí misma; M:N: intermedia con doble FK.
-> - ¿Fusión de tablas en 1 línea?::Mínimo de tablas: elimina las de 1 atributo y fusiona 1:1 total-total.
+- ¿3 pasos del diseño de BD?::Requerimientos → conceptual (ER) → lógico/físico (tablas + triggers).
+- ¿Equivalencias tabla/fila/columna?::Archivo/registro/campo = relación/tupla/atributo.
+- ¿M:N al lógico?::Tabla intermedia con las PK de ambos lados como (PK,FK) + atributos de la relación.
+- ¿1:M dónde va la FK?::En el hijo (lado M); el padre (lado 1) no recibe nada.
+- ¿1:1 caso A, B y C?::A: (0,1)-(1,1) propaga PK del 1,1 al 0,1. B: parcial, PK del padre al hijo. C: (1,1)-(1,1) unifica en una tabla.
+- ¿Supertipo-subtipo al lógico?::(a) 3 tablas con banderas; (b) 1 tabla con discriminante tipo; (c) supertabla + hijos opcionales; (d) 1 tabla ancha.
+- ¿Débil y recursiva?::Débil: PK del fuerte como (PK,FK). Recursiva 1:M: FK a sí misma; M:N: intermedia con doble FK.
+- ¿Fusión de tablas en 1 línea?::Mínimo de tablas: elimina las de 1 atributo y fusiona 1:1 total-total.
 - ¿Cómo detecto jerarquía parcial/exclusiva?::"No encaja en ninguno" = parcial; "nadie dos perfiles" = exclusiva; si calla, pregunto.
 - ¿Reflexiva bien dibujada?::Etiqueto roles (principal/dependiente) en cada rama.
+- ¿Intermedia con 2 FK en la PK qué fue?::M:N con atributos propios (el rombo): la leo como relación, no como entidad.
+- ¿PK compartida como (PK,FK) qué fue?::Subtipo del supertipo referenciado (o 1:1 total-total si no aporta nada).
+- ¿FK a sí misma qué fue?::Recursiva 1:M con roles; doble FK a la misma tabla: recursiva M:N.
 
+> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando

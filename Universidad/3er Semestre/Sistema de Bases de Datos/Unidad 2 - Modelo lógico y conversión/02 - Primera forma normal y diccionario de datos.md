@@ -1,4 +1,4 @@
-?---
+---
 dg-publish: true
 tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 ---
@@ -34,15 +34,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo:** CLIENTE con una fila por cliente y un teléfono por celda es fiel; con `telefono1, telefono2` es un formulario disfrazado, no una relación.
 >
-> ```mermaid
-> graph LR
->     E["Entidad"] --> T["Tabla"]
->     T --> V{"¿Fiel?<br/>sin repetidos"}
->     V -->|"Si"| O["✅ 1FN"]
->     V -->|"No"| R["❌ Formulario<br/>disfrazado"]
->     style O fill:#e1ffe1
->     style R fill:#ffe1e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-01-graph.svg]]
 
 ### 2️⃣ Las 5 condiciones — el checklist
 
@@ -55,17 +47,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > 5. Columnas regulares (sin IDs de fila, IDs de objeto ni timestamps ocultos).
 >
 >
-> ```mermaid
-> flowchart TD
->     A["¿Tabla en 1FN?"] --> C1{"¿Filas con orden<br/>o duplicadas?"}
->     C1 -->|"Si"| R["❌ Falla 1, 2 o 3"]
->     C1 -->|"No"| C2{"¿Celda con<br/>varios valores?"}
->     C2 -->|"Si"| R2["❌ Falla 4"]
->     C2 -->|"No"| C3{"¿Columnas<br/>raras?"}
->     C3 -->|"Si"| R3["❌ Falla 5"]
->     C3 -->|"No"| O["✅ 1FN"]
->     style O fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-02-flow.svg]]
 >
 >
 > **Cómo usarlo:** ante cualquier tabla sospechosa, recorre las 5 en orden y cita el número que falla.
@@ -78,12 +60,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo:** `productos = "arroz, leche, pan"` viola la 4; `materia1, materia2` viola la 4 disfrazada de columnas; dos filas idénticas violan la 3.
 >
-> ```mermaid
-> graph TB
->     V["Viola 1 condición"] --> N["No es estrictamente<br/>relacional"]
->     N --> F["No está en 1FN<br/>aunque tenga PK"]
->     style F fill:#ffe1e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-03-graph.svg]]
 >
 > **Se lee así:** basta 1 falla de 5 para reprobar; la PK no salva una tabla con grupos repetitivos.
 
@@ -95,12 +72,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo:** una tabla en 1FN puede seguir mintiendo si un dato depende solo de parte de la PK — eso lo mide 2FN (próximas clases).
 >
-> ```mermaid
-> graph LR
->     A["1FN<br/>repetidos"] --> B["2FN<br/>parciales"]
->     B --> C["3FN<br/>transitivas"]
->     style A fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-04-graph.svg]]
 >
 > **Se lee así:** termómetro de 3 niveles; cada FN mide una vulnerabilidad distinta y se lee en orden.
 
@@ -124,14 +96,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo:** `TELEFONO(cedula PK,FK, numero PK)`: el teléfono deja de ser columna repetida y pasa a ser filas identificadas.
 >
-> ```mermaid
-> erDiagram
->     CLIENTE ||--o{ TELEFONO : tiene
->     TELEFONO {
->         int cedula PK, FK
->         int numero PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-05-er.svg]]
 >
 > **Se lee así:** el multivaluado se vuelve entidad débil con PK compuesta; un cliente, N filas.
 
@@ -151,32 +116,13 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > **Contraejemplo (grupos repetitivos):** `CLIENTE(cédula, nombre, telefono1, telefono2, telefono3)` — viola (d): los teléfonos son un grupo repetitivo. Remedio: tabla `TELEFONO(cédula FK, numero)` o filas separadas.
 >
 >
-> ```mermaid
-> erDiagram
->     CLIENTE_MAL {
->         int cedula PK
->         int telefono1
->         int telefono2
->         int telefono3
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-06-er.svg]]
 >
 >
 > **❌ Así NO:** columnas numeradas = grupo repetitivo disfrazado.
 >
 >
-> ```mermaid
-> erDiagram
->     CLIENTE ||--o{ TELEFONO : tiene
->     CLIENTE {
->         int cedula PK
->         string nombre
->     }
->     TELEFONO {
->         int cedula PK, FK
->         int numero PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-07-er.svg]]
 >
 >
 > **✅ Así SÍ:** un teléfono por fila; la PK compuesta impide duplicados.
@@ -208,26 +154,13 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > [!danger] ❌ Viola: 1FN condición (d) — un valor por celda
 >
 >
-> ```mermaid
-> erDiagram
->     REPORTE {
->         int id PK
->         string productos
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-08-er.svg]]
 >
 >
 > ❌ **EL ERROR ESTÁ AQUÍ:** `productos = "arroz, leche, pan"` en una sola celda: imposible filtrar, contar o unir por producto.
 >
 >
-> ```mermaid
-> erDiagram
->     REPORTE ||--o{ DETALLE_REPORTE : contiene
->     DETALLE_REPORTE {
->         int idReporte PK, FK
->         string producto PK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-09-er.svg]]
 >
 >
 > ✅ **Así SÍ:** una fila por producto; cada celda, un valor.
@@ -237,15 +170,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > [!danger] ❌ Viola: grupos repetitivos
 >
 >
-> ```mermaid
-> erDiagram
->     ESTUDIANTE {
->         int matricula PK
->         string materia1
->         string materia2
->         string materia3
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-10-er.svg]]
 >
 >
 > ❌ **EL ERROR ESTÁ AQUÍ:** `materia1, materia2, materia3` — ¿y la cuarta materia? Columnas finitas para relaciones infinitas.
@@ -287,14 +212,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > ¿Esta tabla está en 1FN? `REPORTE(id, cliente, productos)` con `productos = "arroz, leche, pan"` en una celda. Justifica y corrige.
 >
 >
-> ```mermaid
-> erDiagram
->     REPORTE {
->         int id PK
->         string cliente
->         string productos
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-11-er.svg]]
 >
 >
 > > [!success]- ✅ Solución
@@ -321,15 +239,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > Nombra las 3 FN y qué vulnerabilidad mide cada nivel en una frase.
 >
 >
-> ```mermaid
-> graph LR
->     A["1FN"] --> B["2FN"]
->     B --> C["3FN"]
->     A -->|"mide"| V1["grupos<br/>repetitivos"]
->     B -->|"mide"| V2["dependencias<br/>parciales"]
->     C -->|"mide"| V3["dependencias<br/>transitivas"]
->     style A fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-12-graph.svg]]
 >
 >
 > > [!success]- ✅ Solución

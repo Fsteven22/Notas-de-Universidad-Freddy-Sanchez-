@@ -1,0 +1,5 @@
+flowchart TD
+    A["❌ Cargar MATRICULA<br/>antes que ESTUDIANTE"] --> B["FK apunta a nada<br/>insercion rechazada"]
+    C["✅ Orden: 1 primero<br/>ESTUDIANTE, MATERIA"] --> D["Despues el N<br/>MATRICULA"]
+    style B fill:#ffe1e1
+    style D fill:#e1ffe1

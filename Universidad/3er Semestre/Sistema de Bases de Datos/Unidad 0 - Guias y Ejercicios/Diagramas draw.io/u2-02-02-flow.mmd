@@ -1,0 +1,9 @@
+flowchart TD
+    A["¿Tabla en 1FN?"] --> C1{"¿Filas con orden<br/>o duplicadas?"}
+    C1 -->|"Si"| R["❌ Falla 1, 2 o 3"]
+    C1 -->|"No"| C2{"¿Celda con<br/>varios valores?"}
+    C2 -->|"Si"| R2["❌ Falla 4"]
+    C2 -->|"No"| C3{"¿Columnas<br/>raras?"}
+    C3 -->|"Si"| R3["❌ Falla 5"]
+    C3 -->|"No"| O["✅ 1FN"]
+    style O fill:#e1ffe1

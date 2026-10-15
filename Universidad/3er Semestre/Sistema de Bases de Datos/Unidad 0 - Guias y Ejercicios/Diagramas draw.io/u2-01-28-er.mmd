@@ -1,0 +1,7 @@
+erDiagram
+    USUARIO ||--o{ RESERVACION : registra
+    RESERVACION {
+        int idReservacion PK
+        int idUsuario FK
+        date fechaLlegada
+    }

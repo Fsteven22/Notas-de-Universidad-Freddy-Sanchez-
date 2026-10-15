@@ -1,0 +1,19 @@
+erDiagram
+    PROJECT {
+        int PROJ_NUM PK
+        string PROJ_NAME
+    }
+    EMPLOYEE {
+        int EMP_NUM PK
+        string EMP_NAME
+        string JOB_CLASS FK
+    }
+    JOB {
+        string JOB_CLASS PK
+        float CHG_HOUR
+    }
+    ASSIGNMENT {
+        int PROJ_NUM PK, FK
+        int EMP_NUM PK, FK
+        float ASSIGN_HOURS
+    }

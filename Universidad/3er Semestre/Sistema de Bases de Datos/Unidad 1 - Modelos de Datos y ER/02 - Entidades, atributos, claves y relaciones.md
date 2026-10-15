@@ -16,16 +16,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > - **Validación:** leer un ER en voz alta detecta relaciones falsas en segundos.
 > - **Lección 1 (13-oct):** definir cada pieza con ejemplo propio es pregunta segura.
 
-```mermaid
-graph TB
-    E1["ESTUDIANTE<br/><u>carnet</u>"]
-    R1{"realiza"}
-    M["MATRICULA"]
-    R2{"contiene"}
-    E2["MATERIA<br/><u>codigo</u>"]
-    P["PROFESOR"] --- D{"dicta"} --- E2
-    E1 --- R1 --- M --- R2 --- E2
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-01-graph.svg]]
 
 ---
 
@@ -40,14 +31,7 @@ graph TB
 >
 > Objeto distinguible del mundo real; cada instancia es única y se identifica por clave. Dibuja rectángulo.
 >
-> ```mermaid
-> graph TB
->     E["ESTUDIANTE<br/><u>carnet</u>"]
->     A1(["nombre"])
->     A2(["carrera"])
->     E --- A1
->     E --- A2
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-02-graph.svg]]
 >
 > **Ejemplo:** ESTUDIANTE existe aunque nadie lo mencione; `nombre` y `carrera` lo describen pero no son entidades.
 
@@ -57,14 +41,7 @@ graph TB
 >
 > Propiedad que describe a una entidad (óvalo) o a una relación. La **clave** identifica; el resto describe.
 >
-> ```mermaid
-> graph TB
->     E["CLIENTE<br/><u>cedula</u>"]
->     A1(["nombre"])
->     A2(["direccion"])
->     E --- A1
->     E --- A2
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-03-graph.svg]]
 >
 > **Ejemplo:** `cedula` identifica (clave, subrayada); `nombre` y `direccion` describen. Si un dato describe a otro dato, es atributo, no entidad.
 
@@ -90,14 +67,7 @@ graph TB
 > Asociación con significado entre entidades (rombo con verbo). Se lee en voz alta: *"¿quién toma qué?"*.
 >
 >
-> ```mermaid
-> graph TB
->     E1["ESTUDIANTE"]
->     R{"toma"}
->     E2["MATERIA"]
->     E1 --- R
->     R --- E2
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-04-graph.svg]]
 >
 >
 > **Ejemplo:** *toma* conecta ESTUDIANTE con MATERIA. Sin verbo no hay relación (ver Error 1: línea muda).
@@ -112,14 +82,7 @@ graph TB
 > - **Compuesta:** PK de 2+ atributos que solo juntos identifican.
 >
 >
-> ```mermaid
-> graph TB
->     E["MATRICULA"]
->     K1(["<u>carnet</u><br/>PK+FK"])
->     K2(["<u>codigo</u><br/>PK+FK"])
->     E --- K1
->     E --- K2
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-05-graph.svg]]
 >
 >
 > **Ejemplo:** en MATRÍCULA ni `carnet` ni `codigo` identifican solos; juntos sí → PK compuesta donde cada parte es FK a su tabla.
@@ -138,14 +101,7 @@ graph TB
 >
 > Límite que el diagrama debe cumplir: cardinalidad, cupos, prerrequisitos. Las **reglas de negocio** mandan sobre el dibujo: si el negocio dice "máximo 4 materias", el ER lo refleja.
 >
-> ```mermaid
-> graph LR
->     R["Regla de negocio"] --> D["¿Dónde vive en el ER?"]
->     D --> C1["Cardinalidad (x,y)"]
->     D --> C2["FK obligatoria"]
->     D --> C3["Entidad débil"]
->     style R fill:#fff4e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-06-graph.svg]]
 >
 > **Se lee así:** cada regla cae en un elemento del dibujo. *"Sin cupo no hay matrícula"* → FK obligatoria no nula. *"Máximo 4 materias"* → (1,4).
 >
@@ -158,24 +114,13 @@ graph TB
 > Clasificación 1:1, 1:M, M:N — siempre en **ambas direcciones**: *"un CLIENTE genera muchas FACTURAS"* + *"cada FACTURA es de un CLIENTE"* → 1:M.
 >
 >
-> ```mermaid
-> graph LR
->     P["PROFESOR"]
->     C["CLASE"]
->     P ---|"(1,1)<br/>cada clase, un profesor"| D{"dicta"}
->     D ---|"(1,4)<br/>cada profesor, 1 a 4"| C
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-07-graph.svg]]
 >
 >
 > **Ejemplo:** lee el dibujo en voz alta en los dos sentidos antes de clasificar.
 >
 >
-> ```mermaid
-> erDiagram
->     A ||--|| B : "1:1"
->     C ||--o{ D : "1:M"
->     E }o--o{ F : "M:N"
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-08-er.svg]]
 >
 >
 > **Leyenda pata de gallo → (x,y):**
@@ -199,11 +144,7 @@ graph TB
 > - `(1,4)` = de 1 a 4: mínimo 1 (todo profesor dicta al menos una) y máximo 4 (a lo más cuatro).
 > - `(0,N)` = opcionales muchos: mínimo 0 (puede no tener) y máximo sin tope.
 >
-> ```mermaid
-> graph LR
->     P["PROFESOR"] ---|"(1,1)<br/>exactamente 1"| D{"dicta"}
->     D ---|"(1,4)<br/>de 1 a 4"| C["CLASE"]
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-09-graph.svg]]
 >
 > **Cómo colocarlo:** Chen lo escribe del lado de la entidad **relacionada**; Crow's Foot/UML junto a la entidad a la que aplica. Y ojo: el DBMS **no** implementa cardinalidad en tablas — vive en la app o en triggers.
 >
@@ -221,13 +162,7 @@ graph TB
 > - **Fuerte (regular):** existe sola. Ej.: PART existe sin VENDOR si algunas partes son propias.
 >
 >
-> ```mermaid
-> graph TB
->     E["EMPLEADO<br/>fuerte"]
->     D["DEPENDIENTE<br/>débil"]
->     E --- D
->     style D fill:#ffe1e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-10-graph.svg]]
 >
 >
 > **Ejemplo:** borra al empleado y sus dependientes pierden sentido; borra un proveedor y tus partes propias siguen existiendo.
@@ -246,17 +181,7 @@ graph TB
 >
 > **Principio clave:** lo que no está dibujado no existe; lo que no tiene clave no es entidad.
 >
-> ```mermaid
-> flowchart TD
->     A["Subraya sustantivos<br/>y verbos"] --> B["Asigna PK<br/>a cada entidad"]
->     B --> C["Nombra relaciones<br/>con verbo"]
->     C --> D["Clasifica en<br/>ambas direcciones"]
->     D --> E["Anota (x,y)<br/>y reglas"]
->     E --> F{"¿Se lee en voz alta<br/>y todo tiene PK?"}
->     F -->|"No"| C
->     F -->|"Si"| G["ERD valido"]
->     style G fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-11-flow.svg]]
 
 ---
 
@@ -272,14 +197,7 @@ graph TB
 > Solo sabes: *"Una DIVISIÓN es manejada por un EMPLEADO"* — insuficiente (¿1:1 o 1:M?).
 >
 >
-> ```mermaid
-> flowchart TD
->     A["Una DIVISION es<br/>manejada por un EMPLEADO"] --> B{"Puede un empleado<br/>manejar varias?"}
->     B -->|"Si"| C["1:M<br/>Un EMPLEADO maneja<br/>muchas DIVISIONES"]
->     B -->|"No"| D["1:1<br/>Un EMPLEADO maneja<br/>una sola DIVISION"]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-12-flow.svg]]
 >
 >
 > **Moraleja:** sin la segunda frase, clasificar es adivinar. Escribe siempre ambas direcciones.
@@ -289,16 +207,7 @@ graph TB
 > [!example] 🟢 Elegir PK como profesional
 >
 >
-> ```mermaid
-> graph TB
->     E["ESTUDIANTE<br/><u>carnet</u>"]
->     R{"matriculado"}
->     M["MATERIA<br/><u>codigo</u>"]
->     A1(["email<br/>cambia: no es PK"])
->     E ---|"(0,N)"| R
->     R ---|"(0,N)"| M
->     E --- A1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-13-graph.svg]]
 >
 >
 > **Se lee así (Chen puro):** el estudiante *se matricula* en materias; `carnet` (estable) identifica, `email` (cambia) solo describe. Al traducir nacerá MATRÍCULA con clave compuesta (Unidad 2).
@@ -311,19 +220,7 @@ graph TB
 > | Nombres | `STU_LNAME`, `CRS_CODE` | Prefijo de entidad: autodocumenta (Coronel 2.4.3) |
 >
 >
-> ```mermaid
-> erDiagram
->     ESTUDIANTE ||--o{ MATRICULA : tiene
->     ESTUDIANTE {
->         int carnet PK
->         string email UK
->         string nombre
->     }
->     MATRICULA {
->         int carnet PK, FK
->         string codigo PK, FK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-14-er.svg]]
 >
 >
 > **Anatomía de llaves:** `PK` = identifica la fila; `FK` = apunta a otra tabla; `UK` (candidata) = única pero no elegida; `PK, FK` juntas = compuesta que además referencia. Toda entidad nace con PK.
@@ -335,16 +232,7 @@ graph TB
 >
 > Caso control académico: ALUMNO–ASIGNATURA con *matricula(nota, fecha, intento)*. Casi todos crean la entidad CALIFICACION — **error**.
 >
-> ```mermaid
-> graph TB
->     E1["ALUMNO"]
->     R{"matricula"}
->     E2["ASIGNATURA"]
->     A(["nota*<br/>de la relación"])
->     E1 --- R
->     R --- E2
->     R --- A
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-15-graph.svg]]
 >
 > **Regla:** ¿existe por sí sola? Una nota solo existe con un alumno Y una asignatura a la vez → es **atributo de la relación**, no entidad. Trampa inversa a la del taller (allí sobraba un atributo que debía ser entidad).
 >
@@ -378,13 +266,7 @@ graph TB
 > [!danger] ❌ Viola: toda relación se lee en voz alta
 >
 >
-> ```mermaid
-> graph LR
->     A["❌ ESTUDIANTE —— MATERIA<br/>¿quien hace que?"] --> B["nadie lo sabe"]
->     C["✅ ESTUDIANTE --toma--> MATERIA"] --> D["se lee en voz alta"]
->     style B fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-16-graph.svg]]
 >
 >
 > Dos rectángulos unidos que nadie sabe leer: nómbrala con verbo o bórrala.
@@ -400,14 +282,7 @@ graph TB
 > [!danger] ❌ Viola: la PK debe ser estable
 >
 >
-> ```mermaid
-> graph TB
->     E["ESTUDIANTE"]
->     A(["<u>email</u><br/>❌ cambia"])
->     B(["<u>carnet</u><br/>✅ estable"])
->     E --- A
->     E --- B
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-17-graph.svg]]
 >
 >
 > Email o nombre como PK → cascada de updates cuando cambian. Usa código estable (`carnet`, `codigo`): lo significativo describe, no identifica.
@@ -423,13 +298,7 @@ graph TB
 > [!danger] ❌ Viola: integridad referencial (carga el 1 primero)
 >
 >
-> ```mermaid
-> flowchart TD
->     A["❌ Cargar MATRICULA<br/>antes que ESTUDIANTE"] --> B["FK apunta a nada<br/>insercion rechazada"]
->     C["✅ Orden: 1 primero<br/>ESTUDIANTE, MATERIA"] --> D["Despues el N<br/>MATRICULA"]
->     style B fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-18-flow.svg]]
 >
 >
 > Carga el lado 1 primero o violas integridad referencial.
@@ -516,14 +385,12 @@ graph TB
 > - [ ] Leo un ERD en voz alta en ambas direcciones.
 > - [ ] Elijo la PK correcta justificando unicidad, nulidad y estabilidad.
 >
-
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Clasifico 1:1/1:M/M:N escribiendo ambas frases.
 > - [ ] Escribo cardinalidades (x,y) del lado correcto según notación.
 > - [ ] Distingo entidad fuerte de dependiente con ejemplo propio.
 >
-
 > [!note] 📋 Nivel Avanzado
 >
 > - [ ] Aplico el método de 6 pasos a un enunciado nuevo sin ayuda.

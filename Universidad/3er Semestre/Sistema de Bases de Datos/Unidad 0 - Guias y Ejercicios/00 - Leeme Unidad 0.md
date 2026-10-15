@@ -18,6 +18,10 @@ tags: [TICG1018, unidad0, recursos]
 
 ![[unidad1.3-1.5.pdf]]
 
+## 📝 Guías de problemas
+
+- [[Guía de Problemas 1 - MC, ML y Normalización]] — recopilación Taller 1 (casos Chen, dependencias, normalización, conceptos).
+
 ## 🔄 Diapositivas Unidad 2 (modelo lógico)
 
 ![[BD 02 MC_a_ML.pdf]]

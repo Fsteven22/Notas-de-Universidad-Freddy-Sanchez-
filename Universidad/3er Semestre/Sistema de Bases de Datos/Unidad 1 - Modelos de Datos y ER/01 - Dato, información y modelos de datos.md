@@ -16,23 +16,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > - **Migraciones:** pasar de Excel/archivos a tablas sin perder nada.
 > - **Lección 1 (13-oct):** dato vs información + archivos vs BD, seguro evaluado.
 
-```mermaid
-graph TB
-    A[Dato crudo] --> B{¿Contexto + estructura?}
-    B --> C[❌ Archivos sueltos]
-    B --> D[✅ Modelo de datos]
-
-    C --> C1[Redundancia]
-    C --> C2[Inconsistencia]
-    C --> C3[Programas a medida]
-
-    D --> D1[Estructura + relaciones]
-    D --> D2[Restricciones]
-    D --> D3[Información confiable]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-01-graph.svg]]
 
 ---
 
@@ -48,11 +32,7 @@ graph TB
 > Valor crudo sin contexto. Por sí solo no dice nada ni permite decidir.
 >
 >
-> ```mermaid
-> graph LR
->     D["Dato: 19"]
->     style D fill:#fff4e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-02-graph.svg]]
 >
 >
 > **Ejemplos:** `"19"`, `"Irene"`, `"2026-10-13"`. ¿19 qué? Sin contexto es solo un símbolo guardado.
@@ -64,11 +44,7 @@ graph TB
 > Dato interpretado en un contexto que permite decidir o actuar.
 >
 >
-> ```mermaid
-> graph LR
->     D["Dato: 19"] --> C["Contexto:<br/>aprobados SBD"] --> I["Información:<br/>19 aprobaron"]
->     style I fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-03-graph.svg]]
 >
 >
 > **Ejemplo:** *"19 estudiantes aprobaron SBD"* — ahora sí hay decisión posible (¿festejar? ¿reforzar?). El modelo de datos existe para producir información, no para acumular datos.
@@ -80,14 +56,7 @@ graph TB
 > Representación lógica y estructurada que define estructura, relaciones, restricciones y transformaciones. Es iterativo y es el lenguaje común entre cliente, analista y dev.
 >
 >
-> ```mermaid
-> graph LR
->     R["Requerimiento"] --> M["Modelo ER"]
->     M --> T["Tablas"]
->     T --> I["Información confiable"]
->     style M fill:#e1f5ff
->     style I fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-04-graph.svg]]
 >
 >
 > **Por qué importa (diapositivas):** cubre requerimientos desde el diseño; minimiza cambios continuos, redundancia y problemas de acceso; sin buen diseño no hay hardware ni UI que salve el desempeño.
@@ -106,13 +75,7 @@ graph TB
 > | **Escala** | Colapsa con usuarios | Concurrente y segura |
 >
 >
-> ```mermaid
-> graph TB
->     A["Mismo dato<br/>en 3 archivos"] --> D["Cambia en 1<br/>los otros mienten"]
->     B["Dato una vez<br/>+ restricción"] --> C["Cambia en 1<br/>todos ven lo mismo"]
->     style D fill:#ffe1e1
->     style C fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-05-graph.svg]]
 >
 >
 > **Historia real:** egipcios en papiros (2000 a.C.) — el medio cambia, la necesidad de registrar no. Los archivos repiten el problema del papiro (copias que se desincronizan); la BD lo resuelve con unicidad + restricciones.
@@ -140,14 +103,7 @@ graph TB
 >
 > Historia: *Ana trabaja en las direcciones Norte y Sur. Como cada hijo tiene un solo padre, su ficha debe copiarse bajo cada dirección.*
 >
-> ```mermaid
-> graph TB
->     D["DIRECCION Norte<br/>(original)"] --> C1["EMPLEADO Ana"]
->     D --> C2["EMPLEADO Luis"]
->     D2["DIRECCION Sur<br/>(copia)"] --> C3["EMPLEADO Ana<br/>(copia)"]
->     style D2 fill:#ffe1e1
->     style C3 fill:#ffe1e1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-06-graph.svg]]
 >
 > **Se lee así:** `dup` = duplicado por obligación del modelo. Cambia el teléfono de Ana y debes cambiarlo en 2 fichas o mienten (redundancia + inconsistencia, los 2 males de archivos).
 >
@@ -155,43 +111,18 @@ graph TB
 > **Red (multipadre):** grafo con schema/subschema; murió por falta de consultas ad hoc.
 >
 >
-> ```mermaid
-> graph TB
->     A["PROYECTO X"] --> E1["EMPLEADO Ana"]
->     B["PROYECTO Y"] --> E1
->     B --> E2["EMPLEADO Luis"]
->     style E1 fill:#e1f5ff
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-07-graph.svg]]
 >
 >
 > **Relacional (Codd 1970):** tablas + SQL declarativo + independencia física.
 >
 >
-> ```mermaid
-> erDiagram
->     EMPLEADO ||--o{ PROYECTO : asignado
->     EMPLEADO {
->         int idEmp PK
->     }
->     PROYECTO {
->         int idProy PK
->         int idEmp FK
->     }
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-08-er.svg]]
 >
 >
 > **ER (Chen 1976):** el plano gráfico del relacional — rectángulos, rombos y óvalos antes de crear tablas.
 >
-> ```mermaid
-> graph TB
->     E["EMPLEADO<br/><u>idEmp</u>"]
->     R{"trabaja"}
->     P["PROYECTO<br/><u>idProy</u>"]
->     A(["nombre"])
->     E --- R
->     R --- P
->     E --- A
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-09-graph.svg]]
 >
 > **Se lee así:** el mismo EMPLEADO–PROYECTO del relacional, pero en Chen puro: todavía no hay tablas ni FK, solo qué existe y cómo se conecta.
 >
@@ -215,16 +146,7 @@ graph TB
 > **Principio clave:** modela lo permanente (Estudiantes, Materias), no los formularios — las pantallas cambian, el negocio no.
 >
 
-```mermaid
-flowchart TD
-    A["Enunciado"] --> B["Subraya sustantivos<br/>y verbos"]
-    B --> C["¿Que decision se toma<br/>con cada tabla futura?"]
-    C -->|"Ninguna"| X["❌ Sobra la tabla"]
-    C -->|"Hay decision"| D["Dibuja ERD<br/>con claves dia 1"]
-    D --> E["Traduce a tablas"]
-    E --> F["Verifica reglas<br/>de negocio"]
-    F --> G["Itera"]
-```
+![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-10-flow.svg]]
 
 
 ---
@@ -242,20 +164,7 @@ flowchart TD
 > | Clasificación | PROFESOR–MATERIA 1:M; ESTUDIANTE–MATERIA M:N (pide intermedia) |
 >
 >
-> ```mermaid
-> graph TB
->     P["PROFESOR<br/><u>idProf</u>"]
->     D{"dicta<br/>1:M"}
->     M["MATERIA<br/><u>codigo</u>"]
->     T{"toma<br/>M:N"}
->     E["ESTUDIANTE<br/><u>carnet</u>"]
->     A1(["nombre"])
->     P ---|"(1,1)"| D
->     D ---|"(0,N)"| M
->     E ---|"(0,N)"| T
->     T ---|"(0,N)"| M
->     E --- A1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-11-graph.svg]]
 >
 >
 > **Se lee así (Chen puro, sin tablas todavía):** Irene (PROFESOR) *dicta* SBD1; cada estudiante *toma* varias materias. La M:N *toma* pedirá una intermedia al traducir (Unidad 2), pero en el conceptual solo existe el rombo.
@@ -285,13 +194,7 @@ flowchart TD
 > [!danger] ❌ Viola: permanencia del modelo
 >
 >
-> ```mermaid
-> graph LR
->     P["❌ Pantalla<br/>Formulario"] --> T["Tabla FORMULARIO"]
->     N["✅ Negocio<br/>Estudiante-Materia"] --> T2["Tablas ESTUDIANTE<br/>MATERIA"]
->     style T fill:#ffe1e1
->     style T2 fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-12-graph.svg]]
 >
 >
 > Al cambiar la UI muere la BD. Modela entidades permanentes: las pantallas cambian, el negocio no.
@@ -313,13 +216,7 @@ flowchart TD
 > [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
 >
-> ```mermaid
-> graph LR
->     A["❌ Tablas<br/>directo"] --> R["N:M olvidadas<br/>FKs inventadas"]
->     B["✅ ERD<br/>primero"] --> T["Tablas<br/>trazables"]
->     style R fill:#ffe1e1
->     style T fill:#e1ffe1
-> ```
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-13-graph.svg]]
 >
 >
 > Ir directo a tablas garantiza N:M olvidadas y FKs inventadas.
@@ -378,7 +275,6 @@ flowchart TD
 > - [ ] Explico archivos vs BD con 3 diferencias y 1 ejemplo propio.
 > - [ ] Ubico los 6 modelos en su generación con un ejemplo cada uno.
 >
-
 > [!note] 📋 Nivel Intermedio
 >
 > - [ ] Aplico el método de 5 pasos a un enunciado nuevo.

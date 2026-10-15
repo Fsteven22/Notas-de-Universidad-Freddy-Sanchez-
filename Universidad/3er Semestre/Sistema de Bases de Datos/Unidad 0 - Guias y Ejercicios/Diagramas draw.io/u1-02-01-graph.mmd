@@ -1,0 +1,8 @@
+graph TB
+   E1["ESTUDIANTE<br/><u>carnet</u>"]
+   R1{"realiza"}
+   M["MATRICULA"]
+   R2{"contiene"}
+   E2["MATERIA<br/><u>codigo</u>"]
+   P["PROFESOR"] --- D{"dicta"} --- E2
+   E1 --- R1 --- M --- R2 --- E2

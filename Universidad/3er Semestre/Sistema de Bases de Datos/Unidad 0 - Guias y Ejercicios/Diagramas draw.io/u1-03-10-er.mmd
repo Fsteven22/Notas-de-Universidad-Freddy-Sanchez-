@@ -1,0 +1,9 @@
+erDiagram
+    CURSO ||--o{ CLASE : genera
+    CURSO {
+        string CRS_CODE PK
+    }
+    CLASE {
+        string CLASS_CODE PK
+        string CRS_CODE FK
+    }

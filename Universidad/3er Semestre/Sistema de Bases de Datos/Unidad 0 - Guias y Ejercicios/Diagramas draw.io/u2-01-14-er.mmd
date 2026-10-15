@@ -1,0 +1,11 @@
+erDiagram
+    PROFESOR ||--o{ REGISTRO : dicta
+    MATERIA ||--o{ REGISTRO : contiene
+    ESTUDIANTE ||--o{ REGISTRO : cursa
+    REGISTRO {
+        int idProf PK, FK
+        int idMateria PK, FK
+        int matricula PK, FK
+        float calificacion
+        time hora
+    }

@@ -1,0 +1,9 @@
+flowchart TD
+    A["Subraya sustantivos<br/>y verbos"] --> B["Asigna PK<br/>a cada entidad"]
+    B --> C["Nombra relaciones<br/>con verbo"]
+    C --> D["Clasifica en<br/>ambas direcciones"]
+    D --> E["Anota (x,y)<br/>y reglas"]
+    E --> F{"¿Se lee en voz alta<br/>y todo tiene PK?"}
+    F -->|"No"| C
+    F -->|"Si"| G["ERD valido"]
+    style G fill:#e1ffe1

@@ -102,7 +102,13 @@ graph TB
 > >
 > > (Procedimiento completo, no solo el resultado.)
 
-> [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal).
+> [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal). El `success` de solución va SIEMPRE anidado DENTRO del `example` del ejercicio (un `> > [!success]` suelto, fuera del example, se renderiza roto).
+>
+> [!tip] 📏 Regla de ejercicios legibles: el planteamiento con mucha información va como lista `-` (entidades, datos, DF, pedido) para no cansar la vista; la solución se complementa con su diagrama (`erDiagram`/`flowchart`) o función Python cuando el tema lo pida (clausura, normalización).
+>
+> [!tip] 📏 Regla de enunciado original: todo ejercicio de examen/taller/lección trae su resumen en lista MÁS el enunciado original verbatim en un `> > [!quote]- 📄 Enunciado original` colapsado debajo del pedido (con fuente y nota de figuras si las hay).
+>
+> [!tip] 📏 Regla de código dentro de callouts: un fence (```mermaid/```python) dentro de un callout NO lleva líneas vacías (cortan el callout en Live Preview) ni líneas solo con `>` (se ven literales dentro del código). Separa con comentarios reales (`# …`) o líneas continuas.
 >
 > [!tip] 📏 Reglas de pasos matemáticos: cada paso en su propia línea de lista `-` (nunca 2 pasos en 1 línea) y cada ecuación importante en bloque `$$` centrado.
 >

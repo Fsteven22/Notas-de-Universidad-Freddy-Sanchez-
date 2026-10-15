@@ -1,0 +1,6 @@
+flowchart TD
+    A["Una DIVISION es<br/>manejada por un EMPLEADO"] --> B{"Puede un empleado<br/>manejar varias?"}
+    B -->|"Si"| C["1:M<br/>Un EMPLEADO maneja<br/>muchas DIVISIONES"]
+    B -->|"No"| D["1:1<br/>Un EMPLEADO maneja<br/>una sola DIVISION"]
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
