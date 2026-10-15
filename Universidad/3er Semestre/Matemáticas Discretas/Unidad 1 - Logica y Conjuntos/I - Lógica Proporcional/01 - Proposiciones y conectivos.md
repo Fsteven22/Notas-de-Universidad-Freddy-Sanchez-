@@ -628,7 +628,23 @@ graph TD
 >
 > > [!success]- ✅ Solución guiada
 > >
-> > Sustituye primero: $(\neg V \to V) \to (\neg F \to F) \to (\neg F \to V) \to (V \to \neg F)$ = $(F \to V) \to (V \to F) \to (V \to V) \to (V \to V)$ = $V \to F \to V \to V$. Evaluando $\to$ de izquierda a derecha con $V \to F \equiv F$: resulta **F**.
+> > - **Paso 1** — sustituye ($V = $ verdadero, $F = $ falso):
+> >
+> > $$(\neg V \to V) \to (\neg F \to F) \to (\neg F \to V) \to (V \to \neg F)$$
+> >
+> > - **Paso 2** — niega adentro:
+> >
+> > $$(F \to V) \to (V \to F) \to (V \to V) \to (V \to V)$$
+> >
+> > - **Paso 3** — evalúa cada condicional:
+> >
+> > $$V \to F \to V \to V$$
+> >
+> > - **Paso 4** — encadena de izquierda a derecha:
+> >
+> > $$(V \to F) = F, \quad (F \to V) = V, \quad (V \to V) = \boxed{V}$$
+> >
+> > El único $F$ es $(\neg r \to s) = (V \to F)$; al encadenar queda absorbido porque $F \to V \equiv V$. Resultado: **V** (verificado por tabla exhaustiva: la cadena da $V$ en cualquier asociación).
 
 > [!example] ✏️ Ejercicio 3 — Bóveda de 3 entradas (Guía 1, ej. 6)
 >
