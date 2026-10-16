@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [TICG1018, bienvenida, syllabus]
 ---
 
 # 🗄️ Bienvenida y Syllabus Sistema de Bases de Datos
@@ -17,9 +18,9 @@ dg-publish: true
 > | **Horario** | Paralelo 1: Mar y Jue 11:00-13:00 |
 > | **Oficina** | Vie 10:30-11:30 (previa cita) + foro 24h + Teams horario laboral |
 > | **Plataformas** | Aula Virtual, Teams, Datacamp (cuenta con nombre completo + mail ESPOL + foto) |
-> | **Políticas** | 📎 [[Unidad 0 - Guias y Ejercicios/BD00 Políticas.pdf\|BD00 Políticas.pdf]] |
+> | **Políticas** | 📎 [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD00 Políticas.pdf\|BD00 Políticas.pdf]] |
 >
-> > Las diapos usan códigos viejos (TICG1001/CCPG1043): es material reutilizado, el código oficial es TICG1018.
+> Las diapos usan códigos viejos (TICG1001/CCPG1043): es material reutilizado, el código oficial es TICG1018.
 
 ---
 
@@ -28,7 +29,6 @@ dg-publish: true
 > [!note] 📌 Qué vamos a lograr
 >
 > Aplicar diseño e implementación de bases de datos con SQL y modelos relacionales para administrar información.
-
 
 > [!success] ✅ Reglas del juego (políticas)
 >
@@ -63,13 +63,7 @@ dg-publish: true
 
 > [!tip] 📚 Unidad 1 — Modelos de datos
 >
-> ```mermaid
-> graph LR
->     A[🗄️ SBD\nTICG1018] --> B[U1 Modelos<br/>y ER]
->     A --> C[U2+ SQL y<br/>diseño físico]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas draw.io/bienv-01-map.svg]]
 >
 > | Unidad | Tema | Fuente |
 > |---|---|---|

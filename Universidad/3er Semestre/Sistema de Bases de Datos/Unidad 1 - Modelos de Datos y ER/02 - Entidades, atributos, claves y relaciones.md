@@ -66,9 +66,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > Asociación con significado entre entidades (rombo con verbo). Se lee en voz alta: *"¿quién toma qué?"*.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-04-graph.svg]]
->
 >
 > **Ejemplo:** *toma* conecta ESTUDIANTE con MATERIA. Sin verbo no hay relación (ver Error 1: línea muda).
 
@@ -81,9 +79,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > - **Candidata:** podría ser PK pero no fue elegida (queda como reserva única).
 > - **Compuesta:** PK de 2+ atributos que solo juntos identifican.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-05-graph.svg]]
->
 >
 > **Ejemplo:** en MATRÍCULA ni `carnet` ni `codigo` identifican solos; juntos sí → PK compuesta donde cada parte es FK a su tabla.
 >
@@ -113,15 +109,11 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > Clasificación 1:1, 1:M, M:N — siempre en **ambas direcciones**: *"un CLIENTE genera muchas FACTURAS"* + *"cada FACTURA es de un CLIENTE"* → 1:M.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-07-graph.svg]]
->
 >
 > **Ejemplo:** lee el dibujo en voz alta en los dos sentidos antes de clasificar.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-08-er.svg]]
->
 >
 > **Leyenda pata de gallo → (x,y):**
 >
@@ -150,8 +142,6 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **El cero importa:** `ALUMNO (0,n)` en *matricula* = un recién ingresado aún no se matriculó en nada. Lee siempre el mínimo: el 0 cuenta historias.
 >
->
->
 > **Se lee en patas:** del lado PROFESOR la barra `||` = cada clase tiene exactamente 1 profesor (1,1); del lado CLASE la pata `o{` = cada profesor dicta 0 a N clases (0,N). El (1,4) del ejemplo es una pata con tope: de 1 a 4.
 
 ### 8️⃣ Dependencia — existir gracias a otro
@@ -161,13 +151,12 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > - **Dependiente:** solo existe asociada a otra (FK obligatoria no nula). Ej.: DEPENDENT sin EMPLOYEE no existe.
 > - **Fuerte (regular):** existe sola. Ej.: PART existe sin VENDOR si algunas partes son propias.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-10-graph.svg]]
->
 >
 > **Ejemplo:** borra al empleado y sus dependientes pierden sentido; borra un proveedor y tus partes propias siguen existiendo.
 
 ---
+
 ## 🛠️ Método para Construir el Vocabulario ER
 
 > [!note] 📋 Procedimiento General
@@ -196,9 +185,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > Solo sabes: *"Una DIVISIÓN es manejada por un EMPLEADO"* — insuficiente (¿1:1 o 1:M?).
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-12-flow.svg]]
->
 >
 > **Moraleja:** sin la segunda frase, clasificar es adivinar. Escribe siempre ambas direcciones.
 
@@ -206,9 +193,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!example] 🟢 Elegir PK como profesional
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-13-graph.svg]]
->
 >
 > **Se lee así (Chen puro):** el estudiante *se matricula* en materias; `carnet` (estable) identifica, `email` (cambia) solo describe. Al traducir nacerá MATRÍCULA con clave compuesta (Unidad 2).
 >
@@ -219,13 +204,12 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > | FKs en MATRÍCULA | `carnet + codigo` (compuesta) | Conecta ambas + identifica la matrícula |
 > | Nombres | `STU_LNAME`, `CRS_CODE` | Prefijo de entidad: autodocumenta (Coronel 2.4.3) |
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-14-er.svg]]
->
 >
 > **Anatomía de llaves:** `PK` = identifica la fila; `FK` = apunta a otra tabla; `UK` (candidata) = única pero no elegida; `PK, FK` juntas = compuesta que además referencia. Toda entidad nace con PK.
 
 ---
+
 ### ✏️ Ejemplo 3 — La trampa CALIFICACIÓN (atributo que parecía entidad)
 
 > [!example] 🟢 ¿Existe una nota por sí sola?
@@ -265,9 +249,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!danger] ❌ Viola: toda relación se lee en voz alta
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-16-graph.svg]]
->
 >
 > Dos rectángulos unidos que nadie sabe leer: nómbrala con verbo o bórrala.
 
@@ -281,9 +263,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!danger] ❌ Viola: la PK debe ser estable
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-17-graph.svg]]
->
 >
 > Email o nombre como PK → cascada de updates cuando cambian. Usa código estable (`carnet`, `codigo`): lo significativo describe, no identifica.
 
@@ -297,9 +277,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!danger] ❌ Viola: integridad referencial (carga el 1 primero)
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-18-flow.svg]]
->
 >
 > Carga el lado 1 primero o violas integridad referencial.
 
@@ -316,6 +294,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > La edad cambia sola cada año → cascada de updates y rupturas de FK. Usa `fecha_nacimiento` (no volátil) y deriva la edad.
 
 ---
+
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos

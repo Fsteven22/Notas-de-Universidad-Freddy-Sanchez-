@@ -643,22 +643,19 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 
 ## 🔁 Repaso SR (flashcards)
 
-> [!note] 🔁 Repaso SR
->
-> #flashcards/bd-guia1
->
-> - ¿Recursiva vs ternaria?::1 entidad en 2 roles (FK a sí misma) vs 3 entidades que se necesitan a la vez (intermedia triple).
-> - ¿Histórico propietario (subsidio) cómo?::M:N con vigencia desde/hasta; la venta referencia al propietario de ese momento.
-> - ¿Multivaluado al lógico?::Tabla propia con (PK original como FK + valor) en PK compuesta.
-> - ¿Supervisor que vende (subsidio)?::Recursiva 1:M; la venta cuelga de EMPLEADO sin distinguir.
-> - ¿PK de (cod_estud, cod_curso) por qué?::La nota depende del par; ni del uno ni del otro solos.
-> - ¿2FN automática cuándo?::PK de un solo atributo (no hay parte de la cual depender).
-> - ¿Transitiva típica?::No-primo → no-primo (instructor → nombre; servidor → región; línea → marca).
-> - ¿Reenvío AZM es artículo nuevo?::No: mismo artículo, versión/ronda como atributo.
-> - ¿Lugar jerárquico (Pho-grah) cómo?::Recursiva 1:M (FK padre), profundidad libre.
-> - ¿Asignación semanal con cambios (expreso)?::Intermedia con vigencia; cambio = cerrar fila + abrir otra.
-> - ¿Precio en PROMO (Ej. 16) por qué en la intermedia?::Depende del par (SKU, PromotionID): es total, no parcial.
-> - ¿Clausura para qué?::Verificar que la PK candidata determine todo el universo antes de partir.
+#flashcards/bd-guia1
+- ¿Recursiva vs ternaria?::1 entidad en 2 roles (FK a sí misma) vs 3 entidades que se necesitan a la vez (intermedia triple).
+- ¿Histórico propietario (subsidio) cómo?::M:N con vigencia desde/hasta; la venta referencia al propietario de ese momento.
+- ¿Multivaluado al lógico?::Tabla propia con (PK original como FK + valor) en PK compuesta.
+- ¿Supervisor que vende (subsidio)?::Recursiva 1:M; la venta cuelga de EMPLEADO sin distinguir.
+- ¿PK de (cod_estud, cod_curso) por qué?::La nota depende del par; ni del uno ni del otro solos.
+- ¿2FN automática cuándo?::PK de un solo atributo (no hay parte de la cual depender).
+- ¿Transitiva típica?::No-primo → no-primo (instructor → nombre; servidor → región; línea → marca).
+- ¿Reenvío AZM es artículo nuevo?::No: mismo artículo, versión/ronda como atributo.
+- ¿Lugar jerárquico (Pho-grah) cómo?::Recursiva 1:M (FK padre), profundidad libre.
+- ¿Asignación semanal con cambios (expreso)?::Intermedia con vigencia; cambio = cerrar fila + abrir otra.
+- ¿Precio en PROMO (Ej. 16) por qué en la intermedia?::Depende del par (SKU, PromotionID): es total, no parcial.
+- ¿Clausura para qué?::Verificar que la PK candidata determine todo el universo antes de partir.
 
 ## 🧭 Seguir con
 

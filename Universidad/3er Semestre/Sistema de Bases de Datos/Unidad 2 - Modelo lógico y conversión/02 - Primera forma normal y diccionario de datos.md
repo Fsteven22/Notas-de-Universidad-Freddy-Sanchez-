@@ -46,9 +46,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > 4. Cada celda, exactamente un valor del dominio.
 > 5. Columnas regulares (sin IDs de fila, IDs de objeto ni timestamps ocultos).
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-02-flow.svg]]
->
 >
 > **Cómo usarlo:** ante cualquier tabla sospechosa, recorre las 5 en orden y cita el número que falla.
 
@@ -101,6 +99,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > **Se lee así:** el multivaluado se vuelve entidad débil con PK compuesta; un cliente, N filas.
 
 ---
+
 ## 🎨 Ejemplo Trabajado: CLIENTE
 
 > [!example] 💡 Verificando 1FN con datos reales
@@ -115,15 +114,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Contraejemplo (grupos repetitivos):** `CLIENTE(cédula, nombre, telefono1, telefono2, telefono3)` — viola (d): los teléfonos son un grupo repetitivo. Remedio: tabla `TELEFONO(cédula FK, numero)` o filas separadas.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-06-er.svg]]
->
 >
 > **❌ Así NO:** columnas numeradas = grupo repetitivo disfrazado.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-07-er.svg]]
->
 >
 > **✅ Así SÍ:** un teléfono por fila; la PK compuesta impide duplicados.
 
@@ -153,15 +148,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 > [!danger] ❌ Viola: 1FN condición (d) — un valor por celda
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-08-er.svg]]
->
 >
 > ❌ **EL ERROR ESTÁ AQUÍ:** `productos = "arroz, leche, pan"` en una sola celda: imposible filtrar, contar o unir por producto.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-09-er.svg]]
->
 >
 > ✅ **Así SÍ:** una fila por producto; cada celda, un valor.
 
@@ -169,9 +160,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 > [!danger] ❌ Viola: grupos repetitivos
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-10-er.svg]]
->
 >
 > ❌ **EL ERROR ESTÁ AQUÍ:** `materia1, materia2, materia3` — ¿y la cuarta materia? Columnas finitas para relaciones infinitas.
 >
@@ -186,6 +175,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > ✅ **Así SÍ:** diccionario con las 4 columnas (atributo, tipo, dominio, descripción) por cada atributo. La docente lo pide explícito.
 
 ---
+
 ## 🎯 Mejores Prácticas
 
 > [!tip] 🏆 Checklist 1FN
@@ -211,9 +201,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > ¿Esta tabla está en 1FN? `REPORTE(id, cliente, productos)` con `productos = "arroz, leche, pan"` en una celda. Justifica y corrige.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-11-er.svg]]
->
 >
 > > [!success]- ✅ Solución
 > >
@@ -238,15 +226,14 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > Nombra las 3 FN y qué vulnerabilidad mide cada nivel en una frase.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-12-graph.svg]]
->
 >
 > > [!success]- ✅ Solución
 > >
 > > 1FN (grupos repetitivos), 2FN (dependencias parciales de la PK), 3FN (dependencias transitivas entre no-claves). Todas miden vulnerabilidad a inconsistencias y anomalías.
 
 ---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2

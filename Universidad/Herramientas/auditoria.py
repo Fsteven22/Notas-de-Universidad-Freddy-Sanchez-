@@ -150,6 +150,11 @@ def main() -> int:
             if len(table_group) < 2:
                 table_group.clear()
                 return
+            first_stripped = re.sub(r"^(?:>\s*)*", "", table_group[0][1]).lstrip()
+            if not first_stripped.startswith("|"):
+                # list items with | (e.g. `- a || b`) are not tables
+                table_group.clear()
+                return
             # find separator to confirm it's a table
             has_sep = any(is_separator_row(ln) for _, ln in table_group)
             if not has_sep:
@@ -197,10 +202,8 @@ def main() -> int:
                         c5_total += 1
                         if len(c5_det) < DETAIL_CAP:
                             c5_det.append(f"{rel}:{idx}: `style` directive: {line.strip()[:160]}")
-                    if BR_RE.search(line):
-                        c5_total += 1
-                        if len(c5_det) < DETAIL_CAP:
-                            c5_det.append(f"{rel}:{idx}: <br> usage: {line.strip()[:160]}")
+                    # NOTE: <br/> is valid mermaid line-break syntax (mmdc renders
+                    # it); it is intentionally NOT flagged.
                 continue
 
             # ---- outside fences ----
@@ -215,6 +218,13 @@ def main() -> int:
                         continue
                     low = tgt.lower()
                     if low.endswith(SKIP_WIKILINK_EXTS):
+                        continue
+                    if "." in basename_of(tgt):
+                        # file with extension: check against ALL vault files
+                        if basename_of(tgt).lower() not in all_names:
+                            c1_total += 1
+                            if len(c1_det) < DETAIL_CAP:
+                                c1_det.append(f"{rel}:{idx}: [[{inner}]] -> ?{base}?")
                         continue
                     if low.endswith(".md"):
                         tgt = tgt[: -len(".md")]

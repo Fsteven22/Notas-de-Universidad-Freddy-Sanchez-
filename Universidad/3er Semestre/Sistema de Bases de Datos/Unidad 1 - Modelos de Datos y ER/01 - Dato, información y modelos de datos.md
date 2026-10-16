@@ -31,9 +31,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > Valor crudo sin contexto. Por sí solo no dice nada ni permite decidir.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-02-graph.svg]]
->
 >
 > **Ejemplos:** `"19"`, `"Irene"`, `"2026-10-13"`. ¿19 qué? Sin contexto es solo un símbolo guardado.
 
@@ -43,9 +41,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > Dato interpretado en un contexto que permite decidir o actuar.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-03-graph.svg]]
->
 >
 > **Ejemplo:** *"19 estudiantes aprobaron SBD"* — ahora sí hay decisión posible (¿festejar? ¿reforzar?). El modelo de datos existe para producir información, no para acumular datos.
 
@@ -55,9 +51,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > Representación lógica y estructurada que define estructura, relaciones, restricciones y transformaciones. Es iterativo y es el lenguaje común entre cliente, analista y dev.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-04-graph.svg]]
->
 >
 > **Por qué importa (diapositivas):** cubre requerimientos desde el diseño; minimiza cambios continuos, redundancia y problemas de acceso; sin buen diseño no hay hardware ni UI que salve el desempeño.
 >
@@ -74,13 +68,12 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > | **Acceso** | Programas a medida | Lenguaje común (SQL) |
 > | **Escala** | Colapsa con usuarios | Concurrente y segura |
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-05-graph.svg]]
->
 >
 > **Historia real:** egipcios en papiros (2000 a.C.) — el medio cambia, la necesidad de registrar no. Los archivos repiten el problema del papiro (copias que se desincronizan); la BD lo resuelve con unicidad + restricciones.
 
 ---
+
 ## 🧵 Evolución de los Modelos (Coronel cap. 2)
 
 > [!note] 📋 Un Modelo por Época
@@ -95,6 +88,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > | Cuarta | 1980s-hoy | **OO / Objeto-Relacional** | Objetos con métodos; tipos extensibles |
 > | Siguiente | Hoy-futuro | **XML, híbridas, nube** | No estructurado + servicios |
 >
+
 ### 🔍 Cada generación, dibujada
 
 > [!example] 🧪 Ver los 4 modelos clave
@@ -107,18 +101,13 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Se lee así:** `dup` = duplicado por obligación del modelo. Cambia el teléfono de Ana y debes cambiarlo en 2 fichas o mienten (redundancia + inconsistencia, los 2 males de archivos).
 >
->
 > **Red (multipadre):** grafo con schema/subschema; murió por falta de consultas ad hoc.
->
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-07-graph.svg]]
 >
->
 > **Relacional (Codd 1970):** tablas + SQL declarativo + independencia física.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-08-er.svg]]
->
 >
 > **ER (Chen 1976):** el plano gráfico del relacional — rectángulos, rombos y óvalos antes de crear tablas.
 >
@@ -126,10 +115,8 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Se lee así:** el mismo EMPLEADO–PROYECTO del relacional, pero en Chen puro: todavía no hay tablas ni FK, solo qué existe y cómo se conecta.
 >
-> 
 > **Detalles que evalúan:** el jerárquico duplica lo compartido; la red murió por falta de consultas ad hoc; Codd publicó en CACM (junio 1970); M:N existe en conceptual pero no va al relacional.
 >
-
 
 ---
 
@@ -148,8 +135,8 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-10-flow.svg]]
 
-
 ---
+
 ## 🎨 Ejemplo Trabajado
 
 > [!example] 🟢 Mini-caso SBD
@@ -163,13 +150,12 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > | Claves | carnet, código |
 > | Clasificación | PROFESOR–MATERIA 1:M; ESTUDIANTE–MATERIA M:N (pide intermedia) |
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-11-graph.svg]]
->
 >
 > **Se lee así (Chen puro, sin tablas todavía):** Irene (PROFESOR) *dicta* SBD1; cada estudiante *toma* varias materias. La M:N *toma* pedirá una intermedia al traducir (Unidad 2), pero en el conceptual solo existe el rombo.
 
 ---
+
 ## 🗂️ ¿Cuándo Bastan Archivos?
 
 > [!note] 📋 La excepción que confirma la regla
@@ -193,9 +179,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 > [!danger] ❌ Viola: permanencia del modelo
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-12-graph.svg]]
->
 >
 > Al cambiar la UI muere la BD. Modela entidades permanentes: las pantallas cambian, el negocio no.
 
@@ -215,13 +199,12 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 > [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-01-13-graph.svg]]
->
 >
 > Ir directo a tablas garantiza N:M olvidadas y FKs inventadas.
 
 ---
+
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
@@ -231,9 +214,9 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 > [!example] 📋 Planteamiento
 >
-> Clasifica: 
-> - (a) `"19"`, 
-> - (b) *"19 estudiantes aprobaron SBD"*, 
+> Clasifica:
+> - (a) `"19"`,
+> - (b) *"19 estudiantes aprobaron SBD"*,
 > - (c) tabla ESTUDIANTE con PK `carnet`.
 >
 > > [!success]- ✅ Solución
@@ -244,7 +227,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 > [!example] 📋 Planteamiento
 >
-> - Caso A: app de 1 usuario con 2 reportes fijos y datos de una semana. 
+> - Caso A: app de 1 usuario con 2 reportes fijos y datos de una semana.
 > - Caso B: matrícula multiusuario con reportes nuevos cada mes. ¿Qué pide cada uno y por qué?
 >
 > > [!success]- ✅ Solución

@@ -1,24 +1,26 @@
-# ¡Hola! Te doy la bienvenida 👋✨
+# 🎓 Notas ESPOL — Ingeniería Computacional
 
-Mi nombre es **Steven** y te doy la bienvenida a mi repositorio de GitHub. 🌟
+Apuntes vivos de la carrera, organizados por semestre. Cada materia tiene notas densas de estudio: definiciones, método paso a paso, errores típicos, ejercicios resueltos y flashcards de repaso espaciada.
 
-En este espacio encontrarás una gran variedad de **notas académicas** que te ayudarán a estudiar a medida de que avances en tu carrera. 📚💻
+🌐 **Jardín digital:** https://notas-espol.vercel.app/ (se actualiza al publicar desde Obsidian)
 
 ---
 
-## 🎓 Materias Disponibles
+## 🎓 Qué hay aquí
 
-*   **Ingeniería Computacional** 🖥️ *(Actualmente disponible)*
-*   *¡Próximamente agregaremos más materias de distintas carreras para que tu experiencia sea la más agradable posible!* 🚀
+*   **Preuniversitario, 1er, 2do y 3er semestre** de Ingeniería Computacional (ESPOL).
+*   **PAO 2-2026 (en curso):** Comunicación, Sistema de Bases de Datos, Diseño de Software, Inglés III, Matemáticas Discretas.
+*   Guías de problemas con enunciados reales de talleres, lecciones y exámenes + soluciones guiadas.
+*   PDFs de apoyo, diapositivas y diagramas junto a cada unidad.
 
 ---
 
 ## 🛠️ ¿Cómo usar este repositorio?
 
-Tienes dos opciones geniales para explorar todo este conocimiento:
+Tienes dos opciones para explorar todo este conocimiento:
 
-1.  **En tu Obsidian (Recomendado):** Puedes descargar este repositorio y abrirlo como un **Vault (Bóveda)** en la aplicación [Obsidian](https://obsidian.md/). Así podrás ver todo el contenido con su diseño original, sus conexiones y enlaces interactivos. 🧠🌱
-2.  **Directamente desde aquí:** Si lo prefieres, puedes navegar por las carpetas y leer las notas en formato Markdown directamente desde GitHub.
+1.  **En tu Obsidian (Recomendado):** descarga este repositorio y ábrelo como un **Vault (Bóveda)** en la aplicación [Obsidian](https://obsidian.md/). Así verás el contenido con su diseño original, callouts, diagramas y enlaces interactivos. Las líneas `Pregunta::Respuesta` con tag `#flashcards/...` funcionan con el plugin [Spaced Repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition).
+2.  **Directamente desde aquí:** navega por las carpetas y lee las notas en Markdown desde GitHub, o visita el jardín digital.
 
 ---
 

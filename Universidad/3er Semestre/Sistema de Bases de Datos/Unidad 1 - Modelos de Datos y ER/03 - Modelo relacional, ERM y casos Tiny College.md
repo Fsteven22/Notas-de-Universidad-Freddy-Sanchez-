@@ -6,7 +6,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 # 🗃️ Modelo Relacional, ERM y Casos Tiny College
 
 ## 🎯 Introducción
-	
+
 > [!info] 💡 ¿Por Qué las Tablas Ganaron y el Dibujo Manda?
 >
 > Desde 1970 casi todo lo que consultas vive en tablas, y desde 1976 casi todo lo que se diseña se dibuja primero. Entender por qué ganó cada uno —y qué resuelve cada notación— es lo que separa traducir un ER mecánicamente de diseñar uno que no se rompa al implementar.
@@ -40,9 +40,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > - **Tupla/fila:** una ocurrencia (un estudiante concreto).
 > - **Atributo/columna:** una casilla (nombre, código).
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-02-er.svg]]
->
 >
 > **Ejemplo:** la tabla es la relación; cada fila una tupla (`0876, Jorge`); cada columna un atributo (`nombre`). Sí: **relacional = tablas** — Codd propuso guardar todo en tablas relacionadas por columnas comunes, con base matemática.
 >
@@ -58,9 +56,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > [!note] 📋 Definición — Niveles conceptual, lógico y físico
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-03-graph.svg]]
->
 >
 > **Ejemplo:** el rombo *toma* (conceptual) → tabla MATRÍCULA con (PK,FK) (lógico) → índice sobre `carnet` (físico). Cada nivel decide cosas distintas.
 
@@ -80,9 +76,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > Cumple AMBAS: existencia-dependiente + PK derivada del padre. Chen: rectángulo **doble**.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-05-graph.svg]]
->
 >
 > **Ejemplo:** DEPENDENT se identifica con `EMP_NUM + DEP_NUM` juntos: `EMP_NUM` dice *de qué empleado es* (heredado del padre) y `DEP_NUM` lo distingue *entre los dependientes de ese empleado* (1º, 2º...). Ni uno solo identifica: el mismo `DEP_NUM = 1` existe en mil empleados. Sin el empleado no existe ni se identifica.
 >
@@ -104,9 +98,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Figuras:** ver los dos diagramas de CLASS en Ejemplos Trabajados (versión débil y versión fuerte).
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-07-er.svg]]
->
 >
 > **Se lee en patas:** la línea **punteada** = no identifica (la hija tiene PK propia); la **sólida** = identifica (la PK hija hereda la del padre).
 
@@ -138,6 +130,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > **Ejemplo:** REGISTRO(idProf, matricula, idMateria PK,FK + calificacion): la nota solo existe con profe + alumno + materia juntos.
 
 ---
+
 ## 🧵 Notación de Chen a Fondo
 
 ### 🎭 Cada Símbolo Tiene un Trabajo
@@ -158,9 +151,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > *(Leyenda Chen: ver el diagrama dibujable de abajo — rectángulo, rombo, óvalo, punteada y subrayado.)*
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-08-graph.svg]]
->
 >
 > **Cómo leerlo:** rectángulo = entidad (`[[ ]]` = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
 
@@ -194,19 +185,14 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > | **Débil** | `CLASS(CLASS_CODE, CRS_CODE, ...)` — PK propia | Punteada | Identidad independiente |
 > | **Fuerte** | `CLASS(CRS_CODE, CLASS_SECTION, ...)` — PK heredada | Sólida | Identidad ligada al padre |
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-10-er.svg]]
->
 >
 > **Versión débil (punteada):** CLASS tiene PK propia; solo referencia al padre con FK.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-11-er.svg]]
->
 >
 > **Versión fuerte (sólida):** la PK de CLASS hereda `CRS_CODE` — sin el curso, la clase no se identifica.
 >
-
 
 > [!example] 🟢 Ejemplo — Clasificar DIVISION–EMPLOYEE
 >
@@ -220,7 +206,6 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-12-flow.svg]]
-
 
 ---
 
@@ -251,9 +236,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-13-graph.svg]]
-
 
 ### ❌ Error 2: Herencia de PK indecisa
 
@@ -261,9 +244,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > PK compuesta en el diagrama pero FK simple en tablas (o al revés): decide si hereda primero, verifica después.
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-14-er.svg]]
->
 >
 > Si la línea es sólida, la PK hija **debe** contener la del padre. Si es punteada, la hija tiene PK propia.
 
@@ -271,9 +252,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > [!danger] ❌ Viola: padres antes que hijas
 >
->
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-15-flow.svg]]
-
 
 ### ❌ Error 4: M:N directo al relacional
 
@@ -290,6 +269,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > **EL ERROR ESTÁ AQUÍ:** crear VENDEDOR sin numVentas "por si acaso", o dibujar ternaria Cliente–Producto–Tienda cuando Compra se cuenta por pares.
 
 ---
+
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
