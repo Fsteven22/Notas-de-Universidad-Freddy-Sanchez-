@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Así como los números tienen operaciones (suma, resta, multiplicación), los conjuntos tienen sus propias operaciones que permiten combinarlos o compararlos. Estas operaciones son la base del álgebra de conjuntos.
 >
-> ```mermaid
-> graph TD
->     A[Operaciones de Conjuntos] --> B[Unión ∪]
->     A --> C[Intersección ∩]
->     A --> D[Diferencia −]
->     A --> E[Complemento Xᶜ]
->     A --> F[Producto Cartesiano ×]
-> ```
+> ![[../../Diagramas/dis-u1-12-01-graph.svg]]
 >
 > | Operación | Símbolo | Descripción breve |
 > |---|---|---|
@@ -178,13 +171,7 @@ dg-publish: true
 >
 > ### Diagramas de Venn para 2 conjuntos
 >
-> ```mermaid
-> graph LR
->     subgraph U["Universo U"]
->         A((A))
->         B((B))
->     end
-> ```
+> ![[../../Diagramas/dis-u1-12-02-graph.svg]]
 >
 > | Operación | Región sombreada |
 > |---|---|
@@ -275,29 +262,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Operaciones] --> B[Union]
-    A --> C[Interseccion]
-    A --> D[Diferencia]
-    A --> E[Complemento]
-    A --> F[Producto Cartesiano]
-
-    B --> B1["A ∪ B: x ∈ A o x ∈ B"]
-    B --> B2["Cardinal: |A|+|B|-|A∩B|"]
-
-    C --> C1["A ∩ B: x ∈ A y x ∈ B"]
-
-    D --> D1["A - B: x ∈ A y x ∉ B"]
-    D --> D2["A - B = A ∩ Bᶜ"]
-
-    E --> E1["Aᶜ = U - A"]
-    E --> E2["Depende del universo U"]
-
-    F --> F1["A × B: pares ordenados (a,b)"]
-    F --> F2["Cardinal: |A|·|B|"]
-
-```
+![[../../Diagramas/dis-u1-12-03-graph.svg]]
 
 ---
 

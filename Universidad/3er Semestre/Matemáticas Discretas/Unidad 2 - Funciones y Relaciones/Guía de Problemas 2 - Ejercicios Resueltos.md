@@ -240,53 +240,11 @@ dg-publish: true
 > 
 > El diagrama sagital tiene dos copias del [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] $A$ (dominio a la izquierda, codominio a la derecha), con flechas de $x$ a $y$ para cada $(x,y) \in R$:
 > 
-> ```mermaid
-> graph LR
->   subgraph Dominio
->     a2[2]
->     a3[3]
->     a5[5]
->     a6[6]
->     a9[9]
->     a15[15]
->   end
->   subgraph Codominio
->     b2[2]
->     b3[3]
->     b5[5]
->     b6[6]
->     b9[9]
->     b15[15]
->   end
->   a2 --> b2
->   a2 --> b6
->   a3 --> b3
->   a3 --> b6
->   a3 --> b9
->   a3 --> b15
->   a5 --> b5
->   a5 --> b15
->   a6 --> b6
->   a9 --> b9
->   a15 --> b15
-> ```
+> ![[../Diagramas/dis-u2-06-01-graph.svg]]
 > 
 > **(b) Digrafo:** Nodos: 2, 3, 5, 6, 9, 15. Aristas reflexivas en todos; aristas adicionales: $2\to6$, $3\to6$, $3\to9$, $3\to15$, $5\to15$.
 > 
-> ```mermaid
-> graph TD
->   n2[2] --> n2
->   n3[3] --> n3
->   n5[5] --> n5
->   n6[6] --> n6
->   n9[9] --> n9
->   n15[15] --> n15
->   n2 --> n6
->   n3 --> n6
->   n3 --> n9
->   n3 --> n15
->   n5 --> n15
-> ```
+> ![[../Diagramas/dis-u2-06-02-graph.svg]]
 > 
 > **(c) Matriz relativa al orden $2,3,5,6,9,15$:**
 > 
@@ -832,26 +790,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Guia 2 Funciones y Relaciones"]
-    R --> A["Funciones"]
-    R --> B["Relaciones"]
-    R --> C["Equivalencia y orden"]
-    R --> D["Sucesiones"]
-    A --> A1["Inyectiva"]
-    A --> A2["Sobreyectiva"]
-    A --> A3["Composicion de funciones"]
-    B --> B1["Matriz"]
-    B --> B2["Digrafo"]
-    B --> B3["Composicion de relaciones"]
-    C --> C1["Reflexiva simetrica"]
-    C --> C2["Antisimetrica transitiva"]
-    C --> C3["Clases"]
-    D --> D1["Sigma y producto"]
-    D --> D2["Induccion"]
-    D --> D3["Divisibilidad"]
-```
+![[../Diagramas/dis-u2-06-03-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[Guía de problemas 2 MD.pdf]] en Unidad 0 - Guias y Ejercicios.

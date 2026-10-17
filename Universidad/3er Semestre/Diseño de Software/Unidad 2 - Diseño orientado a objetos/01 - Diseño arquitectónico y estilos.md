@@ -28,23 +28,7 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > | **Atributos** | Rendimiento por accidente | Decisiones que garantizan calidad |
 > | **Costo del cambio** | Exponencial | Localizado por capa |
 
-```mermaid
-graph TB
-    A[Requerimientos + atributos] --> B{¿Estilo decidido?}
-    B --> C[❌ Improvisar]
-    B --> D[✅ Decidir estilo]
-
-    C --> C1[Todo conectado]
-    C --> C2[Cuello de botella sorpresa]
-    C --> C3[Reescritura]
-
-    D --> D1[Capas / servicios]
-    D --> D2[Interfaces entre piezas]
-    D --> D3[Evolución planificada]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u2-02-01-graph.svg]]
 
 ---
 
@@ -98,14 +82,7 @@ graph TB
 >
 > **Flujo de una petición web:** usuario → **Controlador** (selecciona vista + pide datos) → **Modelo** (lee BD, calcula) → **Vista** (formatea) → browser. El Controlador coordina; Modelo y Vista no se hablan directo.
 >
-> ```mermaid
-> flowchart LR
->     U["Usuario"] --> C["Controlador"]
->     C --> M["Modelo"]
->     M --> V["Vista"]
->     V --> U
->     M -.datos.-> C
-> ```
+> ![[../Diagramas/dsw-u2-02-02-flow.svg]]
 >
 > **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[Main.java]] en U1-04).
 >
@@ -125,16 +102,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Estilo Elijo?
 
-```mermaid
-flowchart TD
-    A["Nuevo sistema"] --> B{"¿Equipos<br/>independientes?"}
-    B -->|"Sí, varios"| C["Microservicios<br/>o servicios"]
-    B -->|"No, equipo chico"| D{"¿Dato central<br/>compartido?"}
-    D -->|"Sí"| E["Centrada en datos<br/>+ caché"]
-    D -->|"No"| F{"¿Flujo por<br/>etapas?"}
-    F -->|"Sí"| G["Flujo de datos<br/>(tuberías)"]
-    F -->|"No"| H["Monolito modular<br/>en capas"]
-```
+![[../Diagramas/dsw-u2-02-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -285,23 +253,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Arquitectura"))
-    Niveles
-      Arquitectural
-      Detallado
-    Estilos
-      Capas
-      Datos y flujo
-      Servicios
-    Vistas
-      Componentes
-      Despliegue
-    Reglas
-      Sin atajos
-      ADR escrito
-```
+![[../Diagramas/dsw-u2-02-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

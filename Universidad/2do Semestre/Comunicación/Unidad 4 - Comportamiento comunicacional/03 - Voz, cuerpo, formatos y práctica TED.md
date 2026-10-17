@@ -25,25 +25,7 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 > | **No verbal** | Confianza inmediata | Sin contacto visual, manos en bolsillos |
 > | **Estratégica** | Formato correcto | TED de 14 min (fuera de tiempo) |
 
-```mermaid
-graph TB
-    A[Guion aprobado] --> B{¿Ensayo integral?}
-    B --> C[❌ Solo leer]
-    B --> D[✅ Voz + cuerpo + formato]
-
-    C --> C1[Voz plana]
-    C --> C2[Cuerpo rígido]
-    C --> C3[Fuera de tiempo]
-    C --> C4[Nota baja S14]
-
-    D --> D1[Modulación y pausas]
-    D --> D2[Gestos y mirada]
-    D --> D3[8 min clavados]
-    D --> D4[Final Voces con Ciencia]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_01.svg]]
 
 ---
 
@@ -65,14 +47,7 @@ graph TB
 >
 > **No verbal (4.4): gestos, posturas, contacto visual, proxémica, imagen y marca personal.**
 >
-> ```mermaid
-> graph LR
->     O[Orador] --> G[Gestos abiertos]
->     O --> M[Mirada 3 puntos]
->     O --> P[Postura base]
->     O --> E[Espacio / proxémica]
->     style M fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_02.svg]]
 >
 > | Señal | Haz | Evita |
 > |---|---|---|
@@ -165,22 +140,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Voz, Cuerpo<br/>y Formato))
-    Paraverbal
-      Volumen
-      Ritmo y pausas
-      Entonación
-    No verbal
-      Mirada
-      Gestos
-      Proxémica
-    Estratégica
-      TED 8 min
-      Formato correcto
-      Ensayo grabado
-```
+![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

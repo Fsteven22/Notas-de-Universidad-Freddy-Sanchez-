@@ -13,16 +13,7 @@ dg-publish: true
 > 
 > **Aplicaciones modernas:** compresión de archivos (ZIP, JPEG usan variantes de Huffman), bases de datos e índices, autocompletado y diccionarios, árboles de decisión en machine learning, y expresiones aritméticas en compiladores (donde los recorridos preorden/entreorden/postorden generan notación prefija, infija y postfija respectivamente).
 > 
-> ```mermaid
-> graph TD
->     A[Árbol Binario] --> B[Árbol binario completo]
->     A --> C[Árbol de búsqueda binaria]
->     A --> D[Árbol de codificación Huffman]
->     A --> E[Recorridos]
->     E --> F[Preorden]
->     E --> G[Entreorden]
->     E --> H[Postorden]
-> ```
+> ![[../Diagramas/dis-u5-06-01-graph.svg]]
 
 ---
 
@@ -188,38 +179,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Árbol Binario] --> B[¿Cada vértice tiene 0 o 2 hijos?]
-    B -->|Sí| C[Árbol binario completo]
-    B -->|No necesariamente| D[Árbol binario general]
-    C --> E["i internos → i+1 terminales, 2i+1 total"]
-    C --> F["Código Huffman: hojas = caracteres"]
-    A --> G[¿Datos ordenados en cada subárbol?]
-    G -->|Sí| H[Árbol de búsqueda binaria]
-    A --> I[Recorridos]
-    I --> J["Preorden: Raíz-Izq-Der"]
-    I --> K["Entreorden: Izq-Raíz-Der"]
-    I --> L["Postorden: Izq-Der-Raíz"]
-
-```
+![[../Diagramas/dis-u5-06-02-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-```mermaid
-graph TD
-    Start["¿Qué necesitas del árbol binario?"] --> Q1{"¿Buscar/insertar datos ordenados?"}
-    Q1 -->|Sí| BST["Usar árbol de búsqueda binaria + Entreorden"]
-    Q1 -->|No| Q2{"¿Comprimir datos por frecuencia?"}
-    Q2 -->|Sí| Huffman["Construir árbol Huffman"]
-    Q2 -->|No| Q3{"¿Qué necesitas hacer con el recorrido?"}
-    Q3 -->|Copiar/serializar el árbol| Pre["Preorden"]
-    Q3 -->|Liberar memoria / evaluar postfijo| Post["Postorden"]
-    Q3 -->|Obtener datos ordenados| In["Entreorden"]
-
-```
+![[../Diagramas/dis-u5-06-03-graph.svg]]
 
 ---
 

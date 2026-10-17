@@ -25,24 +25,7 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 > | **Evaluación** | Esquema flojo S8 | Esquema aprobado → guion S10 |
 > | **TED final** | Charla olvidable | Charla finalista Voces con Ciencia |
 
-```mermaid
-graph TB
-    A[Tesis: IA declarada mejora informes] --> B{¿Sostén?}
-    B --> C[❌ Opinión]
-    B --> D[✅ Argumento]
-
-    C --> C1[Sin datos]
-    C --> C2[Nadie actúa]
-    C --> C3[Esquema rechazado]
-
-    D --> D1[Dato + fuente APA]
-    D --> D2[Garantía lógica]
-    D --> D3[Llamado a la acción]
-    D --> D4[Esquema aprobado]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_01.svg]]
 
 ---
 
@@ -54,18 +37,7 @@ graph TB
 >
 > **Estructura que pide el syllabus 4.1:**
 >
-> ```mermaid
-> graph LR
->     T[Tesis] --> A1[Arg 1<br/>dato]
->     T --> A2[Arg 2<br/>ejemplo]
->     T --> A3[Arg 3<br/>autoridad]
->     A1 --> S[Subargumentos]
->     A2 --> S
->     A3 --> S
->     S --> C[Conclusión derivada<br/>+ acción]
->     style T fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_02.svg]]
 >
 > | Tipo de argumento | Cuándo usarlo en tu charla | Ejemplo |
 > |---|---|---|
@@ -148,22 +120,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Argumentación))
-    Estructura
-      Tesis
-      Argumentos
-      Derivada
-    Tipos
-      Dato
-      Ejemplo
-      Autoridad
-    Estrategia
-      Convencer
-      Persuadir
-      Refutar
-```
+![[Diagramas/01_-_Argumentación_efectiva,_convencer_vs_persuadir_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

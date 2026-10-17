@@ -11,18 +11,7 @@ dg-publish: true
 > 
 > En esta sección se cubren tres bloques muy usados en la práctica:
 > 
-> ```mermaid
-> graph LR
->     A[Señal analógica<br/>o temporizada] --> B[555<br/>Temporizador]
->     A --> C[PWM<br/>Modulación]
->     A --> D[ADC<br/>Conversión A/D]
->     B --> E[Temporización,<br/>osciladores, PWM]
->     C --> F[Control de<br/>potencia promedio]
->     D --> G[Dato digital<br/>para un micro]
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
 
 ---
 
@@ -68,15 +57,7 @@ dg-publish: true
 >
 > Ambos pines de control (2 y 4) se mantienen normalmente en ALTO mediante resistencias **pull-up** (típicamente 10 kΩ) hacia $V_{CC}$; el cambio de estado ocurre al llevarlos momentáneamente a BAJO (por ejemplo, con un pulsador a tierra).
 >
-> ```mermaid
-> graph TD
->     A["Pin 2 (Trigger) en BAJO<br/>(pulso SET)"] --> B["Salida (Pin 3) → ALTO<br/>se enclava"]
->     C["Pin 4 (Reset) en BAJO<br/>(pulso RESET)"] --> D["Salida (Pin 3) → BAJO<br/>se enclava"]
->     E["Ambos pines en ALTO<br/>(reposo)"] --> F["La salida mantiene<br/>su último estado (memoria)"]
->     style B fill:#e1ffe1
->     style D fill:#ffe1e1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
 >
 > > 📌 Es, en esencia, una **memoria de 1 bit**: no mide tiempo, solo recuerda cuál de los dos botones se presionó por última vez.
 >
@@ -121,14 +102,7 @@ dg-publish: true
 > 
 > Donde $D$ es el ciclo de trabajo (0 a 1) y $V_{max}$ es el voltaje del pulso en alto.
 > 
-> ```mermaid
-> graph LR
->     A["Onda triangular<br/>(referencia)"] --> C{Comparador}
->     B["Voltaje de control<br/>(nivel deseado)"] --> C
->     C --> D["Salida PWM<br/>(ancho ∝ nivel)"]
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
 > 
 > **Formas comunes de generar PWM:**
 > 
@@ -148,16 +122,7 @@ dg-publish: true
 > 
 > Un **ADC (Analog-to-Digital Converter)** transforma una señal analógica continua en un número digital que un sistema digital (microcontrolador, FPGA, etc.) puede procesar. El proceso involucra tres pasos:
 > 
-> ```mermaid
-> graph LR
->     A[Señal analógica] --> B[Muestreo<br/>Sampling]
->     B --> C[Cuantización<br/>Quantization]
->     C --> D[Codificación<br/>Encoding]
->     D --> E[Palabra digital<br/>de n bits]
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
 >
 
 > [!note] 🎯 Resolución y LSB
@@ -263,28 +228,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((555, PWM y ADC))
-    Temporizador 555
-      Modo astable
-        f y duty cycle
-      Modo monoestable
-        Retardo t = 1.1RC
-      Modo biestable
-        Flip-flop SR
-        Sin red RC
-        Trigger = SET, Reset = RESET
-        Memoria de 1 bit
-    PWM
-      Voltaje promedio
-      Generación por 555 o comparador
-      Aplicaciones de potencia
-    ADC
-      Muestreo - Nyquist
-      Cuantización - LSB
-      Tipos: Flash, SAR, Rampa, Sigma-Delta
-```
+![[Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
 
 ---
 

@@ -12,12 +12,7 @@ dg-publish: true
 >
 > **La idea en 1 imagen (dominó):** tumbar infinitas fichas una por una es imposible; basta probar 2 cosas: que cae la **primera** (base) y que **cada ficha tumba a la siguiente** (paso). Con eso, caen todas sin tocarlas una por una.
 >
-> ```mermaid
-> graph LR
->     B["Base: cae S(1)"] --> P["Paso: S(n) tumba S(n+1)"]
->     P --> T["Caen todas"]
->     style T fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-10-01-graph.svg]]
 >
 > **Dónde la usarás en esta nota:**
 >
@@ -89,15 +84,7 @@ dg-publish: true
 
 > [!note] 📋 Cómo reconocer cada caso
 >
-> ```mermaid
-> flowchart TD
->     A["¿Qué afirma S(n)?"] --> B{"¿Igualdad con suma/"}
->     B -->|"Suma cerrada"| C["Caso 1: Sumatorias"]
->     B -->|"Divisibilidad"| D["Caso 2: Divisibilidad"]
->     B -->|"Desigualdad"| E["Caso 3: Desigualdades"]
->     B -->|"Fórmula cerrada"| F["Caso 4: Geométricas y potencias"]
->     style C fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-10-02-flow.svg]]
 >
 > ### Caso 1 — Sumatorias (el clásico)
 >
@@ -330,15 +317,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-flowchart TD
-    A["S(n) para n ≥ n₀"] --> B["Base: verifica S(n₀)"]
-    B --> C["Hipótesis: supone S(n)"]
-    C --> D["Demuestra S(n+1)<br/>usando la hipótesis"]
-    D --> E["✅ S(n) ∀n ≥ n₀"]
-    F["¿Fuerte? Solo si S(n)<br/>pide varios predecesores"] -.mención.-> A
-    style E fill:#e1ffe1
-```
+![[../../Diagramas/dis-u1-10-03-flow.svg]]
 
 ---
 

@@ -28,21 +28,7 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > | **Pruebas** | Necesitan todo real | Mocks del contrato (Unidad 5) |
 > | **Reutilización** | Copiar-pegar | Importar componente |
 
-```mermaid
-graph TB
-    A[Cliente] --> B{¿Contrato?}
-    B --> C[❌ Código directo]
-    B --> D[✅ Interfaz]
-
-    C --> C1[Bloqueado]
-    C --> C2[Cambio rompe todo]
-
-    D --> D1[Paralelo real]
-    D --> D2[Cambio invisible]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u2-03-01-graph.svg]]
 
 ---
 
@@ -56,12 +42,7 @@ graph TB
 > - **Requiere:** qué necesita para funcionar (fuente de `datos` válida).
 > - **Oculta:** qué nadie debe tocar (caché interna, queries crudas).
 >
-> ```mermaid
-> graph LR
->     C[Componente] --> P[🔌 Provee:<br/>qué ofrece]
->     R[🔌 Requiere:<br/>qué necesita] --> C
->     style C fill:#e1f5ff
-> ```
+> ![[../Diagramas/dsw-u2-03-02-graph.svg]]
 >
 > **Principios de diseño de interfaces:**
 >
@@ -95,14 +76,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Fachada, Delegación o Directo?
 
-```mermaid
-flowchart TD
-    A["Necesito usar<br/>un subsistema"] --> B{"¿Cuántos pasos<br/>le toma al cliente?"}
-    B -->|"Uno ideal"| C["Fachada:<br/>un método orquesta"]
-    B -->|"Ya es uno"| D{"¿La lógica cabe<br/>en una clase?"}
-    D -->|"No"| E["Delegación/<br/>composición"]
-    D -->|"Sí"| F["Directo,<br/>sin ceremonia"]
-```
+![[../Diagramas/dsw-u2-03-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -279,21 +253,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Componentes"))
-    Contrato
-      Provee
-      Requiere
-      Oculta
-    Principios
-      Pequeña
-      Estable
-      Sustituible
-    Patrones
-      Fachada
-      Delegación
-```
+![[../Diagramas/dsw-u2-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

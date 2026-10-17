@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** podcast tone + weak *would* (10.4), comment con *Personally* y Turning Points 10.5.
 
-```mermaid
-graph TB
-    A[Lección 10.4-10.5] --> B[Listening: tone]
-    A --> C[Writing: comment]
-    A --> D[Speaking: turning points]
-    B --> E[Renato vs Paula + weak would]
-    C --> F[Personally + similarities]
-    D --> G[Discuss Decide Present Agree]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u4-05-01-graph.svg]]
 
 ---
 
@@ -144,19 +134,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U10 Close))
-    Listening
-      tone matters
-      weak would
-    Writing
-      Personally
-      similarities
-    Speaking
-      Turning points
-      4 steps
-```
+![[../Diagramas/en3-u4-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

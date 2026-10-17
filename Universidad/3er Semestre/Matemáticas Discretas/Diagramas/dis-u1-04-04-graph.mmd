@@ -1,0 +1,17 @@
+graph TD
+   A["Proposición Condicional p → q"] --> B["Formas lingüísticas equivalentes"]
+   A --> C["Proposiciones derivadas"]
+   A --> D["Equivalencias lógicas"]
+
+   B --> B1["q si p"]
+   B --> B2["p solo si q"]
+   B --> B3["q necesario para p"]
+   B --> B4["p suficiente para q"]
+
+   C --> C1["Recíproco: q → p ❌ No equiv. al original"]
+   C --> C2["Inverso: ¬p → ¬q ❌ No equiv. al original"]
+   C --> C3["Contrarrecíproco: ¬q → ¬p ✅ Equiv. al original"]
+
+   D --> D1["p → q ≡ ¬p ∨ q"]
+   D --> D2["¬(p → q) ≡ p ∧ ¬q"]
+   D --> D3["p ↔ q ≡ (p→q) ∧ (q→p)"]

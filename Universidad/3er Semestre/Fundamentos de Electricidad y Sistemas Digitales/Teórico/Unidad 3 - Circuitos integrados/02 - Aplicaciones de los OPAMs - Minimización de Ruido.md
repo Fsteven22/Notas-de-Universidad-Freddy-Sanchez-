@@ -11,14 +11,7 @@ dg-publish: true
 > 
 > Como se trata de un **circuito integrado no programable** (ver [[01 - CI no programables]]), su función interna es fija; lo que cambia según la aplicación es la red de resistencias/capacitores externos que lo rodean — exactamente las configuraciones que se resolvieron en la guía de ejercicios de amplificador operacional.
 > 
-> ```mermaid
-> graph LR
->     A[Señal con ruido] --> B[Configuración OPAM<br/>adecuada]
->     B --> C[Señal limpia<br/>o rechazo de ruido]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
 
 ---
 
@@ -97,15 +90,7 @@ dg-publish: true
 > 
 > El **comparador con histéresis** (Schmitt trigger) resuelve esto definiendo **dos umbrales distintos** (uno de subida, otro de bajada) mediante realimentación positiva, de modo que un pequeño ruido superpuesto ya no alcanza a provocar conmutaciones falsas.
 > 
-> ```mermaid
-> graph LR
->     A["Señal ruidosa<br/>cerca del umbral"] --> B{Comparador simple}
->     A --> C{Comparador con histéresis}
->     B --> D["Salida oscila<br/>falsamente"]
->     C --> E["Salida estable<br/>una sola transición"]
->     style D fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
 > 
 > > 📌 Es la configuración recomendada siempre que una señal analógica ruidosa deba convertirse en una señal digital limpia — puente directo hacia el siguiente tema de esta unidad (555, ADC, PWM).
 
@@ -224,28 +209,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((OPAMs para<br/>Minimizacion de Ruido))
-    Seguidor de tension
-      Aislamiento de impedancias
-    Amplificador diferencial
-      Rechazo modo comun
-      CMRR
-    Amplificador instrumentacion
-      3 OPAMs
-      Alta impedancia + alto CMRR
-    Filtros activos
-      LPF/HPF con ganancia
-      Integrador como LPF
-    Comparador con histeresis
-      Schmitt trigger
-      Inmunidad a ruido cerca del umbral
-    Analisis de redes en cascada
-      Red en T
-      Diferencial de 2 OPAMs
-      Sumador inversor multi-etapa
-```
+![[Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
 
 ---
 

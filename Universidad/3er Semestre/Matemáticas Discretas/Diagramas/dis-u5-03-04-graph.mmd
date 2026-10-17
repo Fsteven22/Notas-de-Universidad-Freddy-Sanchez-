@@ -1,0 +1,10 @@
+graph TD
+   A["¿Qué problema tengo?"] --> B{"¿Busco la ruta más corta ENTRE DOS vértices?"}
+   A --> C{"¿Busco visitar TODOS los vértices al menor costo?"}
+   B --> D{"¿Todos los pesos son positivos?"}
+   D -->|Sí| E["Usar Dijkstra"]
+   D -->|No| F["Necesitas otro algoritmo (ej. Bellman-Ford)"]
+   C --> G["Es un problema de Agente Viajero (TSP)"]
+   G --> H{"¿Pocos vértices (grafo pequeño)?"}
+   H -->|Sí| I["Explorar ciclos de Hamilton y comparar longitudes"]
+   H -->|No| J["Usar cotas mínimas o heurísticas (no exacto)"]

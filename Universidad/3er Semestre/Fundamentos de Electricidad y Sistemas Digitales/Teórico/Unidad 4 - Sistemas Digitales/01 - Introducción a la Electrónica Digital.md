@@ -11,16 +11,7 @@ dg-publish: true
 >
 > Esta nota abre la Unidad 4 retomando esa conexión: un **ADC** (Unidad 3) no hace otra cosa que traducir una señal analógica del mundo real a un número representado en binario, y las **compuertas lógicas** (Unidad 3, nota 04) operan precisamente sobre esos unos y ceros. Aquí formalizamos cómo se representan, convierten y codifican esos números, y cómo se interpretan eléctricamente los niveles de voltaje que los transportan.
 >
-> ```mermaid
-> graph LR
->     A[Magnitud del mundo real<br/>continua] --> B[ADC<br/>Unidad 3]
->     B --> C[Número binario<br/>discreto]
->     C --> D[Compuertas lógicas<br/>procesan 0 y 1]
->     D --> E[Niveles de voltaje<br/>H / L]
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
 
 ---
 
@@ -145,12 +136,7 @@ dg-publish: true
 >
 > Una **tabla de verdad** enumera todas las combinaciones posibles de entrada de un circuito lógico y la salida correspondiente. Los valores lógicos se representan indistintamente como `True/False`, `V/F` o `1/0`.
 >
-> ```mermaid
-> graph LR
->     A["Entrada A"] --> F["Circuito<br/>lógico"]
->     B["Entrada B"] --> F
->     F --> S["Salida F"]
-> ```
+> ![[Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
 >
 
 > [!note] 📋 Las tres compuertas fundamentales
@@ -217,19 +203,7 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué convención de lógica usar?
 
-```mermaid
-graph TD
-    A["¿La señal viene de un datasheet<br/>o especificación externa?"] -->|Sí, especifica activo en H| B["Usa lógica positiva<br/>para esa señal"]
-    A -->|Sí, especifica activo en L<br/>ej: Reset activo bajo| C["Usa lógica negativa<br/>para esa señal"]
-    A -->|No hay restricción externa| D["Elige la convención que<br/>minimice el número de<br/>inversores necesarios"]
-    D --> E{"¿Se combinan señales<br/>de ambas convenciones<br/>en el mismo circuito?"}
-    E -->|Sí| F["Usa lógica mixta:<br/>A.H ↔ Ā.L"]
-    E -->|No| G["Mantén una sola<br/>convención en todo<br/>el circuito"]
-
-    style B fill:#e1ffe1
-    style C fill:#e1f5ff
-    style F fill:#fff4e1
-```
+![[Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
 
 ---
 
@@ -316,29 +290,7 @@ graph TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Introducción a la<br/>Electrónica Digital))
-    Sistemas de numeración
-      Binario, octal, decimal, hex
-      Notación N r
-    Conversión
-      A decimal - polinomial
-      Desde decimal - divisiones/multiplicaciones
-    BCD
-      1 nibble por dígito
-    Tablas de verdad
-      AND OR NOT
-      Ver nota 04 Unidad 3
-    Lógica positiva y negativa
-      H a 1 / L a 0
-      Pull-down / Pull-up
-      Lógica mixta
-    Pendiente
-      Operaciones binarias
-      Complemento a base 2
-      Minimización SOP-POS
-```
+![[Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
 
 ---
 

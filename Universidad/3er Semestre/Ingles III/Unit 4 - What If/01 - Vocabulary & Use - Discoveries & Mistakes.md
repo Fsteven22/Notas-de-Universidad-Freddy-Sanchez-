@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** collocations de descubrimiento (10.1), right vs wrong (10.2) y drills p. 150.
 
-```mermaid
-graph TB
-    A[U10 Vocab] --> B[Discoveries 10.1]
-    A --> C[Right vs Wrong 10.2]
-    B --> D["make a breakthrough"]
-    C --> E["blunder vs epic fail"]
-
-    style D fill:#fff3c4
-    style E fill:#fff3c4
-```
+![[../Diagramas/en3-u4-02-01-graph.svg]]
 
 ---
 
@@ -173,18 +164,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U10 Vocab))
-    Discoveries
-      make breakthrough
-      carry out research
-      gain knowledge
-    Mistakes
-      blunder
-      epic fail
-      mix-up
-```
+![[../Diagramas/en3-u4-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

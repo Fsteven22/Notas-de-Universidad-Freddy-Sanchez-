@@ -11,16 +11,7 @@
 > - Generar electricidad es como llenar un tanque de agua: necesitas una fuente (río, lluvia, pozo) que convierta algo disponible en algo utilizable.
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
-> ```mermaid
-> graph LR
->     A[Energía Primaria<br/>☀️💧🔥💨] -->|Conversión| B[Generador<br/>Eléctrico]
->     B -->|Energía Eléctrica| C[Red de<br/>Distribución]
->     C -->|Consumo| D[Hogares<br/>Industria<br/>Dispositivos]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
 
@@ -42,16 +33,7 @@
 > - $\Phi$ = Flujo magnético (Webers, Wb)
 > - $t$ = Tiempo (segundos, s)
 >
-> ```mermaid
-> graph TD
->     A[Movimiento<br/>Mecánico 🔄] --> B[Variación de<br/>Flujo Magnético]
->     B --> C[FEM Inducida<br/>ε = -N·dΦ/dt]
->     C --> D[Corriente<br/>Eléctrica]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
 >
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
@@ -71,15 +53,7 @@
 >
 > > "La naturaleza se resiste a los cambios en el flujo magnético."
 >
-> ```mermaid
-> graph LR
->     A[Flujo magnético<br/>AUMENTA ↑] -->|induce| B[Corriente crea campo<br/>que SE OPONE al aumento<br/>↓ campo inducido]
->     C[Flujo magnético<br/>DISMINUYE ↓] -->|induce| D[Corriente crea campo<br/>que SE OPONE a la disminución<br/>↑ campo inducido]
->     style A fill:#ffe1e1
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
 >
 > **Procedimiento para determinar la dirección de la corriente inducida:**
 >
@@ -131,27 +105,11 @@
 >
 > **Generador de Corriente Alterna (Alternador):**
 >
-> ```mermaid
-> graph LR
->     A[Rotor<br/>imán] -->|gira| B[Estátor<br/>bobinas]
->     B --> C[Salida AC<br/>senoidal]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
 >
 > **Generador de Corriente Continua (Dínamo):**
 >
-> ```mermaid
-> graph LR
->     A[Bobina<br/>giratoria] --> B[Colector<br/>de anillos]
->     B --> C[Rectificación<br/>mecánica]
->     C --> D[Salida DC]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
 >
 > | Característica | Alternador (AC) | Dínamo (DC) |
 > |---|---|---|
@@ -167,22 +125,7 @@
 
 > [!info]- 🏭 De la Fuente a tu Enchufe
 >
-> ```mermaid
-> graph LR
->     A[Materia Prima<br/>💧🔥☀️💨⚛️] --> B[Turbina<br/>⚙️]
->     B --> C[Generador<br/>🔌]
->     C --> D[Transformador<br/>elevador]
->     D --> E[Red de<br/>Transmisión]
->     E --> F[Transformador<br/>reductor]
->     F --> G[Consumidor<br/>🏠🏭]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
->     style E fill:#f5e1ff
->     style F fill:#ffe1e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
 
 ---
 ## 🌊 Fuentes de Generación Eléctrica
@@ -193,18 +136,7 @@
 >
 > Convierte la energía **potencial del agua** en energía eléctrica mediante turbinas.
 >
-> ```mermaid
-> graph LR
->     A[Embalse<br/>💧 Agua] -->|caída| B[Turbina<br/>hidráulica]
->     B -->|eje mecánico| C[Generador<br/>AC]
->     C --> D[Transformador<br/>⚡]
->     D --> E[Red eléctrica]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -221,18 +153,7 @@
 >
 > Quema combustibles fósiles (gas, petróleo, carbón) para producir vapor que mueve turbinas.
 >
-> ```mermaid
-> graph LR
->     A[Combustible<br/>🔥] -->|calor| B[Caldera<br/>vapor]
->     B --> C[Turbina<br/>de vapor]
->     C --> D[Generador<br/>AC]
->     D --> E[Red eléctrica]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -249,18 +170,7 @@
 >
 > Convierte directamente la luz solar en electricidad mediante el **efecto fotoeléctrico** en celdas semiconductoras de silicio.
 >
-> ```mermaid
-> graph LR
->     A[Fotones<br/>☀️] -->|impactan| B[Celda Solar<br/>Silicio]
->     B -->|liberan electrones| C[Corriente DC]
->     C -->|inversor| D[Corriente AC]
->     D --> E[Red / Consumo]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -320,18 +230,7 @@
 
 > [!tip]- 🔌 Etapas y Voltajes Típicos
 >
-> ```mermaid
-> graph LR
->     A[⚙️ Generación<br/>13.8 kV] -->|eleva| B[🔺 Transmisión<br/>230 kV / 500 kV]
->     B -->|reduce| C[🔻 Subtransmisión<br/>69 kV]
->     C -->|reduce| D[🏘️ Distribución<br/>13.8 kV]
->     D -->|reduce| E[🏠 Consumo<br/>110 V / 220 V]
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
 >
 > | Etapa | Voltaje típico | Función |
 > |---|---|---|
@@ -344,28 +243,7 @@
 ---
   
 ## 📊 Resumen Visual 
-```mermaid
-mindmap
-	root((Generacion<br/>Electrica))
-		Principio Base
-			Ley de Faraday
-			Efecto fotovoltaico
-			Reacción química
-		Tipos de Generador
-			Alternador AC
-			Dinamo DC
-		Fuentes
-			Hidroelectrica
-			Termoeléctrica
-			Solar
-			Eólica
-			Nuclear
-		Sistema de Potencia
-			Generación
-			Transmisión
-			Distribución
-			Consumo
-```
+![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 
 ## 📚 Referencias
 

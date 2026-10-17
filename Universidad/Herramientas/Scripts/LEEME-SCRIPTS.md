@@ -38,9 +38,12 @@ Convención de nombres BD: `uX-NN-tipo.svg` (unidad-nota-posición-tipo: `er`, `
 
 `Temp/opencode/bdstrips.py` genera tiras de dependencias estilo examen (cajas + flechas arriba/abajo + corchete PK) en SVG. Es desechable por figura; si se vuelve rutina, traer la función aquí.
 
-## Reglas aprendidas (no repetir)
+## Registro de patrones (error → fix → script)
+
+- Ejercicio/example vacío (header sin cuerpo, ej. Inglés U1-01 Ej.4): completar con el drill real; detecta con `detectar_vacios.py`. Falsos positivos conocidos: `###`→`####` con contenido, callout usado como título de sección, contenido inline en la línea del header.
+- `> [!example]` usado como título (`Machine Learning.md`): convertir a `###`.
 
 - Dentro de fences en callouts: ni líneas vacías (cortan el quote) ni líneas solo con `>` (salen literales) — separar con comentarios reales.
 - El `success` de solución va anidado DENTRO del `example`, nunca suelto.
-- Flashcards (`Pregunta::Respuesta`) siempre a nivel superior, fuera de callouts.
+- Flashcards (`Pregunta::Respuesta`): para notas nuevas, siempre a nivel superior, fuera de callouts (formato documentado). Las que ya viven en callouts con datos `<!--SR:...-->` SÍ las lee el plugin (probado) — no migrar mazos que funcionan; solo unificar secciones mezcladas moviendo tarjeta + comentario juntos.
 - Rutas de embeds: relativas a la carpeta de la nota; tras mover archivos, re-verificar.

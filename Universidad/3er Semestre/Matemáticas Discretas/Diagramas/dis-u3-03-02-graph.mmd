@@ -1,0 +1,7 @@
+graph TD
+    P1["1️⃣ Inicio: par (a, b)"] --> P2
+    P2["2️⃣ Calcular r = a mod b"] --> P3
+    P3{¿r = 0?}
+    P3 -->|Sí| P4["mcd = b ✅"]
+    P3 -->|No| P5["Nuevo par: (b, r)"]
+    P5 --> P2

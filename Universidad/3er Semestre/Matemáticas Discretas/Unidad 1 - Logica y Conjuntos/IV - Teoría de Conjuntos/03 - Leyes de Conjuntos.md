@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Las **leyes de conjuntos** son identidades que permiten simplificar y transformar expresiones con conjuntos, de manera similar a como el álgebra transforma expresiones numéricas. Todas se obtienen de las correspondientes leyes para proposiciones lógicas.
 >
-> ```mermaid
-> graph TD
->     A[Leyes de Conjuntos] --> B[Leyes de identidad y dominación]
->     A --> C[Leyes de complemento]
->     A --> D[Leyes conmutativas y asociativas]
->     A --> E[Leyes distributivas]
->     A --> F[Leyes de De Morgan]
-> ```
+> ![[../../Diagramas/dis-u1-13-01-graph.svg]]
 >
 > **En esta nota:** tabla completa de leyes, dualidad, y cómo cada ley de conjuntos espeja una ley proposicional (De Morgan, distributiva) — si dominas las de lógica, estas salen gratis.
 >
@@ -235,31 +228,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Leyes de Conjuntos] --> B[Identidad y Dominacion]
-    A --> C[Complemento]
-    A --> D[Conmutativa y Asociativa]
-    A --> E[Distributiva]
-    A --> F[De Morgan]
-    A --> G[Absorcion]
-
-    B --> B1["A ∪ ∅ = A"]
-    B --> B2["A ∩ U = A"]
-    B --> B3["A ∪ U = U"]
-    B --> B4["A ∩ ∅ = ∅"]
-
-    C --> C1["A ∪ Aᶜ = U"]
-    C --> C2["A ∩ Aᶜ = ∅"]
-    C --> C3["(Aᶜ)ᶜ = A"]
-
-    E --> E1["A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)"]
-    E --> E2["A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)"]
-
-    F --> F1["(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ"]
-    F --> F2["(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ"]
-
-```
+![[../../Diagramas/dis-u1-13-02-graph.svg]]
 
 ---
 

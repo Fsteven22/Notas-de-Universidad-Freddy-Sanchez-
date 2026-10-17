@@ -1,0 +1,6 @@
+flowchart TD
+   A["Voy a cambiar<br/>código"] --> B{"¿Toca main<br/>directo?"}
+   B -->|"Solo mi rama"| C["Commit directo<br/>en tu rama"]
+   B -->|"Main compartido"| D{"¿Cambio<br/>trivial?"}
+   D -->|"Typo, 1 línea"| E["Commit directo<br/>con buen mensaje"]
+   D -->|"Feature/fix real"| F["Rama + PR<br/>+ review"]

@@ -78,14 +78,7 @@ dg-publish: true
 > 
 > La curva muestra tres zonas claramente diferenciadas:
 > 
-> ```mermaid
-> graph LR
->     A["Zona de ruptura<br/>V < -Vruptura<br/>Corriente inversa crece"] --> B["Zona inversa<br/>-Vruptura < V < 0<br/>I ≈ -Is pequeña"]
->     B --> C["Zona directa<br/>V > 0.7V Si<br/>Corriente crece exponencialmente"]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
 > 
 > - **Zona directa:** para $V_D > V_{umbral}$, la corriente crece exponencialmente.
 > - **Zona inversa:** corriente prácticamente nula ($\approx -I_S$).
@@ -173,18 +166,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Diodo unión P-N))
-    Región de vaciamiento
-    Directa conduce Id
-    Inversa bloquea Is
-    Umbral 0.7V Si
-    Umbral 0.3V Ge
-    Ruptura breakdown
-    Modelos ideal y 2da aprox
-    Tipos Zener LED Varicap
-```
+![[Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
 
 ---
 

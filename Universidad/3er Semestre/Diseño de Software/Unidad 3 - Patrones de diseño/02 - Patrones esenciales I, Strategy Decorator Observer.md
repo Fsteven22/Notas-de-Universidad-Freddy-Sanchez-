@@ -27,17 +27,7 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > | **Decorator** | Herencia explosiva | Envuelve y suma comportamiento |
 > | **Observer** | Acoplamiento N-a-N manual | Sujeto notifica, observadores reaccionan |
 
-```mermaid
-graph TB
-    A[Dolor de diseño] --> B{¿Cuál?}
-    B --> S[Algoritmos<br/>cambian → Strategy]
-    B --> D[Responsabilidades<br/>se acumulan → Decorator]
-    B --> O[Muchos deben<br/>enterarse → Observer]
-
-    style S fill:#e1f5ff
-    style D fill:#fff4e1
-    style O fill:#e1ffe1
-```
+![[../Diagramas/dsw-u3-03-01-graph.svg]]
 
 ---
 
@@ -132,13 +122,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Cuál de los Tres?
 
-```mermaid
-flowchart TD
-    A["Necesito flexibilidad"] --> B{"¿Qué varía?"}
-    B -->|"Algoritmo completo"| C["Strategy:<br/>una clase por variante"]
-    B -->|"Capas opcionales"| D["Decorator:<br/>envuelve y suma"]
-    B -->|"Quién se entera"| E["Observer:<br/>publica y suscribe"]
-```
+![[../Diagramas/dsw-u3-03-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -297,19 +281,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Esenciales I"))
-    Strategy
-      Algoritmos
-      Sin if
-    Decorator
-      Capas
-      Sin herencia
-    Observer
-      Suscripción
-      Sin acople
-```
+![[../Diagramas/dsw-u3-03-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

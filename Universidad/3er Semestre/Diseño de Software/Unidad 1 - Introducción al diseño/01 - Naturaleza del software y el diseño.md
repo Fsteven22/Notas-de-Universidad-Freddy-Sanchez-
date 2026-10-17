@@ -29,25 +29,7 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | **Calidad** | Se prueba al final | Se valida desde el modelo |
 > | **Equipo** | Pisan su código | Interfaces claras, trabajo paralelo |
 
-```mermaid
-graph TB
-    A[Requerimientos] --> B{¿Diseñas?}
-    B --> C[❌ Código directo]
-    B --> D[✅ Modelo de diseño]
-
-    C --> C1[Todo conectado]
-    C --> C2[Cambios caros]
-    C --> C3[Deuda técnica]
-    C --> C4[Proyecto frágil]
-
-    D --> D1[Arquitectura clara]
-    D --> D2[Componentes + UML]
-    D --> D3[Cambios baratos]
-    D --> D4[Producto mantenible]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u1-02-01-graph.svg]]
 
 ---
 
@@ -57,14 +39,7 @@ graph TB
 >
 > **Software = instrucciones + estructuras de datos + documentación.** No es solo código: incluye lo que permite operar y mantener el programa.
 >
-> ```mermaid
-> graph LR
->     U[Necesidad] --> E[Instrucciones]
->     E --> D[Datos]
->     D --> DOC[Documentación]
->     DOC --> S[Software útil]
->     style S fill:#e1ffe1
-> ```
+> ![[../Diagramas/dsw-u1-02-02-graph.svg]]
 >
 > | Cara | Qué es | Ejemplo en tu proyecto |
 > |---|---|---|
@@ -158,16 +133,7 @@ graph TB
 >
 > En la práctica, esto se traduce en tres capas que trabajan juntas:
 >
-> ```mermaid
-> graph TD
->     A["Un compromiso<br/>con la calidad"] --> B["Proceso<br/>(como organizas el trabajo)"]
->     B --> C["Metodos<br/>(tecnicas tecnicas: diseno, pruebas)"]
->     C --> D["Herramientas<br/>(UML, IDEs, control de versiones)"]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#f5e1ff
-> ```
+> ![[../Diagramas/dsw-u1-02-03-graph.svg]]
 >
 > - **Proceso:** el marco de trabajo (ej. ágil, cascada) que organiza cuándo ocurre cada actividad.
 > - **Métodos:** las técnicas concretas — cómo modelar requerimientos, cómo diseñar, cómo probar.
@@ -179,17 +145,7 @@ graph TB
 
 ## 🗺️ ¿Cuánto Diseño Necesito? — Diagrama de Decisión
 
-```mermaid
-flowchart TD
-    A["Nuevo modulo o proyecto"] --> B{"Mas de 1 persona<br/>lo va a tocar?"}
-    B -->|"Si"| C["Diseña arquitectura<br/>y interfaces antes de codear"]
-    B -->|"No, soy solo yo"| D{"Se va a mantener<br/>mas de unas semanas?"}
-    D -->|"Si"| C
-    D -->|"No, script desechable"| E["Codigo directo<br/>es aceptable"]
-    C --> F{"Mas de 7 clases<br/>sin agrupar?"}
-    F -->|"Si"| G["Falta arquitectura:<br/>define subsistemas"]
-    F -->|"No"| H["Boceto UML<br/>y sigue adelante"]
-```
+![[../Diagramas/dsw-u1-02-04-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -364,35 +320,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Naturaleza del<br/>Software y Diseño"))
-    Software
-      Instrucciones
-      Datos
-      Documentacion
-    Vs Hardware
-      No se fabrica en serie
-      No se desgasta
-      Se deteriora por cambios
-    Tipos de aplicacion
-      Sistema y aplicacion
-      Cientifico y embebido
-      Linea de producto
-      Web movil e IA
-    Ingenieria de software
-      Proceso
-      Metodos
-      Herramientas
-    Diseno
-      Datos
-      Arquitectonico
-      Interfaces
-      Componente
-    Costo de cambio
-      Curva de Boehm
-      Mas barato temprano
-```
+![[../Diagramas/dsw-u1-02-05-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

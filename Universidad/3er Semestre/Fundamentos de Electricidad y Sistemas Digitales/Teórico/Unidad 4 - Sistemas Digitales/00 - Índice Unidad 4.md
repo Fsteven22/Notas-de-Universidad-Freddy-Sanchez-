@@ -14,12 +14,7 @@ tags: [FESD, unidad4, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 - Electrónica Digital] --> B[02 - Minimización]
-    B --> C[03 - Karnaugh]
-    C --> D[04 - CI Programables]
-```
+![[Diagramas/00_-_Índice_Unidad_4_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[07 - Lógica fija y tablas de verdad]] (Unidad 3)

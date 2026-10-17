@@ -28,19 +28,7 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > | **Reversión** | Horas | 1 click / 1 comando |
 > | **Nota** | Demo frágil | Entrega verificable |
 
-```mermaid
-graph TB
-    A[Commit] --> B[Build]
-    B --> T[Tests JUnit]
-    T --> P[Paquete]
-    P --> D[Despliegue]
-
-    T -->|🔴 Rojo| X[Se detiene aquí]
-
-    style T fill:#e1ffe1
-    style D fill:#e1f5ff
-    style X fill:#ffe1e1
-```
+![[../Diagramas/dsw-u5-04-01-graph.svg]]
 
 ---
 
@@ -71,17 +59,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Automatizo Primero?
 
-```mermaid
-flowchart TD
-    A["Quiero pipeline"] --> B{"¿Tests<br/>automatizados?"}
-    B -->|"No"| C["Primero U5-01:<br/>sin tests no hay CI"]
-    B -->|"Sí"| D{"¿Build<br/>repetible?"}
-    D -->|"No"| E["Scripts de build<br/>versionados"]
-    D -->|"Sí"| F["CI por push<br/>+ artefacto"]
-    F --> G{"¿Deploy<br/>manual duele?"}
-    G -->|"Sí"| H["Automatiza deploy<br/>(CD)"]
-    G -->|"No aún"| I["Quédate en entrega<br/>continua"]
-```
+![[../Diagramas/dsw-u5-04-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -231,16 +209,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((DevOps))
-    CI
-      Build + tests
-    CD
-      Deploy 1 click
-    Base
-      Git + main verde
-```
+![[../Diagramas/dsw-u5-04-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

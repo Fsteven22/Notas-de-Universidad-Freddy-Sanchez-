@@ -16,14 +16,7 @@ dg-publish: true
 > - Redes de telecomunicaciones (matrices de adyacencia para representar conexiones)
 > - Diseño de circuitos impresos (minimizar el recorrido de un taladro entre agujeros, como en el ejemplo de la hoja de metal)
 > 
-> ```mermaid
-> graph TD
->     A["Grafos II"] --> B["Subgrafos y Componentes"]
->     A --> C["Matrices: Adyacencia e Incidencia"]
->     A --> D["Algoritmos"]
->     D --> E["Agente Viajero (TSP)"]
->     D --> F["Dijkstra (ruta más corta)"]
-> ```
+> ![[../Diagramas/dis-u5-03-01-graph.svg]]
 
 ---
 
@@ -43,14 +36,7 @@ dg-publish: true
 > 
 > Grafo original $G$ con vértices ${v_1,\ldots,v_8}$ y aristas ${e_1,\ldots,e_{11}}$. Un subgrafo $G'$ válido puede tomar solo algunas aristas y sus vértices incidentes, por ejemplo:
 > 
-> ```mermaid
-> graph LR
->     v3 ---|e8| v4
->     v1 ---|e10| v6
->     v1 ---|e11| v7
->     v6 ---|e5| v7
->     v2["v2 (no incluido en E')"]
-> ```
+> ![[../Diagramas/dis-u5-03-02-graph.svg]]
 > 
 > $G'$ conserva únicamente ${v_1,v_3,v_4,v_6,v_7}$ y las aristas ${e_5,e_8,e_{10},e_{11}}$ — cada arista incluida trae consigo sus dos vértices.
 
@@ -67,14 +53,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 2 — Grafo disconexo y sus componentes
 > 
-> ```mermaid
-> graph LR
->     v1 --- v2
->     v2 --- v3
->     v3 --- v1
->     v4["v4 (aislado)"]
->     v5 --- v6
-> ```
+> ![[../Diagramas/dis-u5-03-03-graph.svg]]
 > 
 > Este grafo **no es conexo**: tiene 3 componentes:
 > 
@@ -223,36 +202,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué algoritmo necesito?
 
-```mermaid
-graph TD
-    A["¿Qué problema tengo?"] --> B{"¿Busco la ruta más corta ENTRE DOS vértices?"}
-    A --> C{"¿Busco visitar TODOS los vértices al menor costo?"}
-    B --> D{"¿Todos los pesos son positivos?"}
-    D -->|Sí| E["Usar Dijkstra"]
-    D -->|No| F["Necesitas otro algoritmo (ej. Bellman-Ford)"]
-    C --> G["Es un problema de Agente Viajero (TSP)"]
-    G --> H{"¿Pocos vértices (grafo pequeño)?"}
-    H -->|Sí| I["Explorar ciclos de Hamilton y comparar longitudes"]
-    H -->|No| J["Usar cotas mínimas o heurísticas (no exacto)"]
-```
+![[../Diagramas/dis-u5-03-04-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-```mermaid
-graph TD
-    A["Grafos II"] --> B["Subgrafos"]
-    A --> C["Componentes"]
-    A --> D["Suma de grados = 2m"]
-    A --> E["Matrices"]
-    E --> F["Adyacencia"]
-    E --> G["Incidencia"]
-    A --> H["Algoritmos"]
-    H --> I["Agente Viajero (TSP)"]
-    H --> J["Dijkstra"]
-
-```
+![[../Diagramas/dis-u5-03-05-graph.svg]]
 
 ---
 

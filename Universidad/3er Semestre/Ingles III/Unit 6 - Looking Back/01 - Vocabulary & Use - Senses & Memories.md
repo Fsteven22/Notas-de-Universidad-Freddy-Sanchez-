@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** senses (12.1), memory words (12.2) y drills pp. 152.
 
-```mermaid
-graph TB
-    A[U12 Vocab] --> B[Senses 12.1]
-    A --> C[Memory 12.2]
-    B --> D["smell sound touch taste sight"]
-    C --> E["bring back vague vivid"]
-
-    style D fill:#fff3c4
-    style E fill:#fff3c4
-```
+![[../Diagramas/en3-u6-02-01-graph.svg]]
 
 ---
 
@@ -190,17 +181,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U12 Vocab))
-    Senses
-      smell scented
-      sound melodic
-      touch smooth
-    Memory
-      bring back
-      vague vivid
-```
+![[../Diagramas/en3-u6-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

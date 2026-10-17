@@ -1,0 +1,8 @@
+sequenceDiagram
+   participant E as Estudiante
+   participant S as Sistema
+   participant B as BD
+   E->>S: inscribirse(curso)
+   S->>B: verificar cupo
+   B-->>S: cupo OK
+   S-->>E: matrícula confirmada

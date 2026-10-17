@@ -10,13 +10,7 @@ dg-publish: true
 >
 > La **Teoría de Conjuntos** es la base formal de las Matemáticas Discretas. Un conjunto es la estructura más fundamental sobre la que se construyen relaciones, funciones y estructuras más complejas.
 >
-> ```mermaid
-> graph TD
->     A[Teoría de Conjuntos] --> B[Definición y notación]
->     A --> C[Cardinalidad]
->     A --> D[Subconjuntos]
->     A --> E[Conjunto potencia y conjuntos especiales]
-> ```
+> ![[../../Diagramas/dis-u1-11-01-graph.svg]]
 >
 > | Concepto | Descripción breve |
 > |---|---|
@@ -220,27 +214,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Conjuntos] --> B[Definición]
-    A --> C[Cardinalidad]
-    A --> D[Subconjuntos]
-    A --> E[Conjunto Potencia]
-
-    B --> B1[Colección de objetos]
-    B --> B2[Notación por lista o propiedad]
-
-    C --> C1["Cardinal: número de elementos"]
-    C --> C2["Conjunto vacío: ∅, cardinal 0"]
-
-    D --> D1["A ⊆ B: todo elemento de A está en B"]
-    D --> D2["A ⊂ B: subconjunto propio"]
-    D --> D3["∅ ⊆ X siempre"]
-
-    E --> E1["P(A): todos los subconjuntos de A"]
-    E --> E2["Cardinal de P(A) = 2^n"]
-
-```
+![[../../Diagramas/dis-u1-11-02-graph.svg]]
 
 ---
 

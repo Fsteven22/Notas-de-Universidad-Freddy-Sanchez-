@@ -11,17 +11,7 @@ dg-publish: true
 >
 > Esta nota cierra ese hueco y recoge **todo el bloque lineal básico** del PDF guía *EjREsAmpOp* [3] que faltaba: inversor, no inversor, sumadores ponderados, amplificador con eliminación de nivel DC y convertidores tensión↔corriente — incluido el caso de **ganancia de intensidad con carga flotante** (p. 18 del PDF). Son las piezas con las que luego se construyen integradores, derivadores y los circuitos no lineales de [[04 - Integrador, Derivador y Circuitos No Lineales]].
 >
-> ```mermaid
-> graph LR
->     A[OPAM ideal<br/>V+≈V-, I≈0] --> B[Inversor / No inversor]
->     B --> C[Sumadores<br/>ponderados]
->     B --> D[Eliminación de DC<br/>con C]
->     B --> E[Convertidores<br/>V-I / I-V]
->     E --> F[Amplificador de<br/>intensidad]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
 >
 
 > [!note] 🗂️ Qué ya viste y qué es nuevo
@@ -227,31 +217,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Lineales Básicas<br/>del OPAM))
-    Inversor
-      vo = -R2/R1 vi
-      Desfase 180°
-      Zin ≈ R1
-    No inversor
-      vo = 1+R2/R1
-      En fase
-      Zin muy alta
-    Sumadores
-      Inversor ponderado
-      No inversor ponderado
-      Inversor+inversor
-    Eliminación DC
-      C en serie
-      FDT RpCs/(1+RpCs)
-    Convertidores
-      V-I is = vi/R
-      I-V vo = -R ie
-    Intensidad flotante
-      Ai = 1+R2/R1
-      Carga no a masa
-```
+![[Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
 
 ---
 

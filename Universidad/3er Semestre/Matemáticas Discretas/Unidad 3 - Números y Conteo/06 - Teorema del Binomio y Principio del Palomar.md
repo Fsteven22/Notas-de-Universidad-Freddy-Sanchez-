@@ -9,16 +9,7 @@ dg-publish: true
 > 
 > Esta nota cubre las dos últimas herramientas del capítulo de conteo:
 > 
-> ```mermaid
-> graph TD
->     A[Herramientas de Conteo Avanzadas] --> B[Teorema Binomial]
->     A --> C[Principio del Palomar]
->     B --> D["Expansión de (a+b)ⁿ"]
->     B --> E["Identidades combinatorias"]
->     B --> F["Identidad de Pascal"]
->     C --> G["Versión 1: existencia de colisión"]
->     C --> H["Versión 2: cuántas colisiones mínimo"]
-> ```
+> ![[../Diagramas/dis-u3-07-01-graph.svg]]
 
 ---
 

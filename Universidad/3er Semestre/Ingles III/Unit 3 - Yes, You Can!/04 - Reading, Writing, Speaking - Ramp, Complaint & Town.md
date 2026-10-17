@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** reading rampa (9.4), complaint letter y mejoras 9.5.
 
-```mermaid
-graph TB
-    A[Lección 9.4-9.5] --> B[Reading: ramp]
-    A --> C[Writing: complaint]
-    A --> D[Speaking: town plan]
-    B --> E[Roberts 1960s-1995]
-    C --> F[Problem + want + why]
-    D --> G[Discuss Decide Present Agree]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u3-05-01-graph.svg]]
 
 ---
 
@@ -158,19 +148,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U9 Close))
-    Reading
-      Roberts ramp
-      4 numbers
-    Writing
-      Problem want
-      look forward
-    Speaking
-      Town plan
-      vote best
-```
+![[../Diagramas/en3-u3-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

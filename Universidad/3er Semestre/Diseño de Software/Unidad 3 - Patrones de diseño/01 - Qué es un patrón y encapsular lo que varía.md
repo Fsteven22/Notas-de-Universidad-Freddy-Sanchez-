@@ -28,23 +28,7 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > | **Flexibilidad** | Cambios rompen todo | Lo que varía está encapsulado |
 > | **Aprendizaje** | Años de cicatrices | Cicatrices ajenas, gratis |
 
-```mermaid
-graph TB
-    A[Problema recurrente] --> B{¿Existe patrón?}
-    B --> C[❌ Invento propio]
-    B --> D[✅ Adapto patrón]
-
-    C --> C1[Prueba y error]
-    C --> C2[Deuda oculta]
-    C --> C3[Nadie lo entiende]
-
-    D --> D1[Solución probada]
-    D --> D2[Nombre compartido]
-    D --> D3[Consecuencias conocidas]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u3-02-01-graph.svg]]
 
 ---
 
@@ -100,17 +84,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Necesito un Patrón?
 
-```mermaid
-flowchart TD
-    A["Problema de diseño"] --> B{"¿Lo has visto<br/>antes?"}
-    B -->|"No, es único"| C["Diseño directo<br/>sin patrón"]
-    B -->|"Sí, recurrente"| D{"¿Qué varía?"}
-    D -->|"Algoritmo intercambiable"| E["Strategy"]
-    D -->|"Responsabilidades apilables"| F["Decorator"]
-    D -->|"Varios deben enterarse"| G["Observer"]
-    D -->|"Creación acoplada"| H["Factory"]
-    D -->|"Incompatibilidad"| I["Adapter"]
-```
+![[../Diagramas/dsw-u3-02-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -268,21 +242,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Patrones"))
-    Anatomía
-      Nombre
-      Contexto
-      Consecuencias
-    Familias
-      Creacional
-      Estructural
-      Comportamiento
-    Principios
-      Encapsular varía
-      A interfaces
-```
+![[../Diagramas/dsw-u3-02-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

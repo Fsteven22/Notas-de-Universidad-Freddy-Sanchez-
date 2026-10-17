@@ -1,0 +1,13 @@
+graph TD
+   A[Función f : X → Y] --> B[Inyectiva]
+   A --> C[Sobreyectiva]
+   A --> D[Biyectiva]
+   A --> E[Compuesta g∘f]
+   A --> F[Invertible]
+   A --> G[Piso y Techo]
+   B --> B1["Cada y tiene A LO MÁS una preimagen"]
+   B --> B2["f(x₁)=f(x₂) ⟹ x₁=x₂"]
+   C --> C1["Cada y tiene AL MENOS una preimagen"]
+   C --> C2["∀y ∈ Y, ∃x : f(x)=y"]
+   D --> D1[Inyectiva + Sobreyectiva]
+   F --> F2[Teorema: invertible ⟺ biyectiva]

@@ -21,17 +21,7 @@ dg-publish: true
 > - $q$ = **conclusión** (consecuente)
 > - **Solo es falso** cuando el antecedente es verdadero y el consecuente es falso.
 >
-> ```mermaid
-> graph LR
->     P["p → q"] --> R["Recíproca<br/>q → p"]
->     P --> I["Inversa<br/>¬p → ¬q"]
->     P --> C["Contrarrecíproca<br/>¬q → ¬p"]
->     C --> E["Equivalente a p → q ✅"]
->     R --> N["NO equivalente ❌"]
->     I --> N
->     style C fill:#e1ffe1
->     style N fill:#ffe1e1
-> ```
+> ![[../../Diagramas/dis-u1-04-01-graph.svg]]
 >
 > **En esta nota:** las formas del condicional en lenguaje natural (*solo si*, *es necesario*), sus 3 variantes con equivalencia, y equivalencias lógicas para simplificar — lo que evalúan los ejercicios 7–12 de la Guía 1.
 >
@@ -81,17 +71,7 @@ dg-publish: true
 
 > [!note] 🔁 Mapa — Derivadas de p → q
 >
-> ```mermaid
-> graph LR
->     P["p → q"] --> R["Recíproca<br/>q → p"]
->     P --> I["Inversa<br/>¬p → ¬q"]
->     P --> C["Contrapositiva<br/>¬q → ¬p"]
->     C --> E["≡ original ✅"]
->     R --> N["No equivalentes ❌"]
->     I --> N
->     style C fill:#e1ffe1
->     style N fill:#ffe1e1
-> ```
+> ![[../../Diagramas/dis-u1-04-02-graph.svg]]
 >
 > **Se lee así:** solo la contrapositiva conserva el valor; recíproca e inversa son independientes.
 
@@ -110,13 +90,7 @@ dg-publish: true
 > 
 > **Relaciones de equivalencia:**
 > 
-> ```mermaid
-> graph LR
->     A["p → q (Original)"] <-->|"≡"| B["¬q → ¬p (Contrarrecíproco)"]
->     C["q → p (Recíproco)"] <-->|"≡"| D["¬p → ¬q (Inverso)"]
->     A -.-|"≢"| C
->     A -.-|"≢"| D
-> ```
+> ![[../../Diagramas/dis-u1-04-03-graph.svg]]
 > 
 > > [!example] 🟢 Ejemplo
 > >
@@ -396,52 +370,13 @@ dg-publish: true
 
 ## 🗺️ Mapa Conceptual
 
-```mermaid
-graph TD
-    A["Proposición Condicional p → q"] --> B["Formas lingüísticas equivalentes"]
-    A --> C["Proposiciones derivadas"]
-    A --> D["Equivalencias lógicas"]
-
-    B --> B1["q si p"]
-    B --> B2["p solo si q"]
-    B --> B3["q necesario para p"]
-    B --> B4["p suficiente para q"]
-
-    C --> C1["Recíproco: q → p ❌ No equiv. al original"]
-    C --> C2["Inverso: ¬p → ¬q ❌ No equiv. al original"]
-    C --> C3["Contrarrecíproco: ¬q → ¬p ✅ Equiv. al original"]
-
-    D --> D1["p → q ≡ ¬p ∨ q"]
-    D --> D2["¬(p → q) ≡ p ∧ ¬q"]
-    D --> D3["p ↔ q ≡ (p→q) ∧ (q→p)"]
-
-```
+![[../../Diagramas/dis-u1-04-04-graph.svg]]
 
 ---
 
 ## 📊 Resumen de Equivalencias Clave
 
-```mermaid
-graph TD
-    A["Equivalencia Logica"] --> B["Condicional"]
-    A --> C["Bicondicional"]
-    A --> D["Leyes De Morgan"]
-    A --> E["Tautologias"]
-    A --> F["Contradicciones"]
-    B --> B1["p->q = no p o q"]
-    B --> B2["no p->q = p y no q"]
-    B --> B3["Contrarreciproco"]
-    B --> B4["Reciproco: q->p NO equiv"]
-    B3 --> B31["p->q = no q -> no p"]
-    C --> C1["p<->q = p->q y q->p"]
-    D --> D1["no p o q = no p y no q"]
-    D --> D2["no p y q = no p o no q"]
-    E --> E1["p o no p siempre V"]
-    E --> E2["Modus Ponens"]
-    E --> E3["Modus Tollens"]
-    F --> F1["p y no p siempre F"]
-
-```
+![[../../Diagramas/dis-u1-04-05-graph.svg]]
 
 ---
 

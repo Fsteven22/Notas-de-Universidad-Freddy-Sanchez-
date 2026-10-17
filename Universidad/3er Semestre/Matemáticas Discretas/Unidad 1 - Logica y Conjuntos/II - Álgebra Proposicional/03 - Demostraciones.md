@@ -12,15 +12,7 @@ dg-publish: true
 > 
 > A diferencia de las demostraciones algebraicas (que manipulan equivalencias lógicas paso a paso), aquí se trabaja con proposiciones matemáticas del mundo real: propiedades de enteros, desigualdades, existencia de objetos, etc.
 >
-> ```mermaid
-> graph TD
->     A["¿Qué quieres probar?"] --> B{"¿Forma del enunciado?"}
->     B -->|"Si P entonces Q"| C["Directa: supone P, llega a Q"]
->     B -->|"No Q → No P"| D["Contrapositiva / Contradicción"]
->     B -->|"Existe x tal que..."| E["Constructiva: exhibe el x"]
->     B -->|"Para todo n..."| F["Inducción"]
->     style A fill:#e1f5ff
-> ```
+> ![[../../Diagramas/dis-u1-07-01-graph.svg]]
 >
 > **En esta nota:** vocabulario (axioma, teorema, lema, corolario), estructura de teorema, métodos directo/indirecto/contradicción/constructivo y cómo elegir método según la forma del enunciado.
 >
@@ -44,14 +36,7 @@ dg-publish: true
 
 > [!note] 📐 Mapa — Vocabulario de demostración
 >
-> ```mermaid
-> graph TD
->     A["Axioma<br/>se asume"] --> T["Teorema<br/>se prueba"]
->     T --> L["Lema<br/>auxiliar"]
->     T --> C["Corolario<br/>consecuencia"]
->     style A fill:#fff4e1
->     style T fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-07-02-graph.svg]]
 >
 > **Se lee así:** todo nace de axiomas; el teorema es la meta, el lema el andamio, el corolario el regalo.
 
@@ -403,21 +388,7 @@ La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lu
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Teorema a demostrar p → q] --> B{¿Qué estrategia?}
-
-    B --> C[Prueba Directa Suponer p, concluir q]
-    B --> D[Por Contradicción Suponer p ∧ ¬q, llegar a r ∧ ¬r]
-    B --> E[Por Contrarrecíproco Suponer ¬q, concluir ¬p]
-    B --> F[Por Casos p₁∨p₂∨...∨pₙ → demostrar cada caso]
-
-    C --> G[✅ Demostración completa]
-    D --> G
-    E --> G
-    F --> G
-
-```
+![[../../Diagramas/dis-u1-07-03-graph.svg]]
 
 ---
 
@@ -475,10 +446,10 @@ graph TD
 #flashcards/discretas-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
-> - ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
-> - ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
+
+- ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
+- ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
+- ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
 - ¿Lección 2026 conjuntos?::$A \subseteq B \cap C$ con $x = 12k+4$: factoriza $4$ (B) y $3$ de $x+2$ (C).
 
 ---

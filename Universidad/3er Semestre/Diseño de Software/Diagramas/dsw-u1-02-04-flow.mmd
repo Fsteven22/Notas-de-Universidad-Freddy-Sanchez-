@@ -1,0 +1,9 @@
+flowchart TD
+   A["Nuevo modulo o proyecto"] --> B{"Mas de 1 persona<br/>lo va a tocar?"}
+   B -->|"Si"| C["Diseña arquitectura<br/>y interfaces antes de codear"]
+   B -->|"No, soy solo yo"| D{"Se va a mantener<br/>mas de unas semanas?"}
+   D -->|"Si"| C
+   D -->|"No, script desechable"| E["Codigo directo<br/>es aceptable"]
+   C --> F{"Mas de 7 clases<br/>sin agrupar?"}
+   F -->|"Si"| G["Falta arquitectura:<br/>define subsistemas"]
+   F -->|"No"| H["Boceto UML<br/>y sigue adelante"]

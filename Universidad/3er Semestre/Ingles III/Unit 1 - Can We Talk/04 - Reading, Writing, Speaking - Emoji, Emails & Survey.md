@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** lectura #WORLD, emails A/B con equivalentes, WRITE IT (100 palabras) y survey 7.5.
 
-```mermaid
-graph TB
-    A[Lección 7.4-7.5] --> B[Reading: emoji debate]
-    A --> C[Writing: 2 registers]
-    A --> D[Speaking: survey]
-    B --> E[Patel vs Yilmaz + tu opinión]
-    C --> F[Informal A vs Formal B]
-    D --> G[Prepare Discuss Present Agree]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u1-05-01-graph.svg]]
 
 ---
 
@@ -196,18 +186,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U7 Close))
-    Reading
-      Patel yes
-      Yilmaz no
-    Writing
-      Informal emojis
-      Formal look forward
-    Speaking
-      Survey 4 steps
-```
+![[../Diagramas/en3-u1-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -48,7 +48,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 - [[Unidad 0 - Guias y Ejercicios/Sílabo de la Asignatura IDIG2012|Syllabus IDIG2012.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Políticas de la asignatura PAO 2_2026_PRESENCIAL|Políticas PAO 2-2026.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Planificación Académica actualizada_PAO 2_2026 - Estudiante|Planificación PAO 2-2026.pdf]]
-- [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+- [[Universidad/2do Semestre/Comunicación/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 ---
 

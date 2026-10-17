@@ -8,11 +8,7 @@ dg-publish: true
 > 
 > Una **relación** es una generalización de las funciones: también es un subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] X × Y, pero **sin** la restricción de unicidad. Permite asociar un elemento de X con cero, uno o varios elementos de Y. Toda función es una relación, pero no toda relación es una función.
 > 
-> ```mermaid
-> graph LR
->     A["Relación R ⊆ X × Y"] --> B["Función f : X → Y"]
->     B --> C["Restricción: unicidad"]
-> ```
+> ![[../Diagramas/dis-u2-03-01-graph.svg]]
 
 ---
 
@@ -145,27 +141,7 @@ dg-publish: true
 > 
 > $$R = \{(2,4),(2,6),(3,3),(3,6),(4,4)\}$$
 > 
-> ```mermaid
-> graph LR
->     subgraph X
->         2
->         3
->         4
->         8
->     end
->     subgraph Y
->         y3["3"]
->         y4["4"]
->         y5["5"]
->         y6["6"]
->         y7["7"]
->     end
->     2 --> y4
->     2 --> y6
->     3 --> y3
->     3 --> y6
->     4 --> y4
-> ```
+> ![[../Diagramas/dis-u2-03-02-graph.svg]]
 > 
 > El 8 no tiene ninguna flecha saliente porque ningún elemento de Y es múltiplo de 8. El 5 y el 7 no reciben flechas porque ningún elemento de X los divide.
 
@@ -187,14 +163,7 @@ dg-publish: true
 > 
 > Sea X = {1, 3, 4} y R₁ = {(1,1),(1,3),(3,1),(3,3),(4,4)}:
 > 
-> ```mermaid
-> graph LR
->     1 -->|"R"| 1
->     1 -->|"R"| 3
->     3 -->|"R"| 1
->     3 -->|"R"| 3
->     4 -->|"R"| 4
-> ```
+> ![[../Diagramas/dis-u2-03-03-graph.svg]]
 > 
 > - Los lazos en 1, 3 y 4 indican **reflexividad**.
 > - Las flechas (1→3) y (3→1) en ambos sentidos indican **simetría** en ese par.
@@ -215,13 +184,7 @@ dg-publish: true
 
 > [!note] 🏷️ Mapa — Reflexiva, simétrica, transitiva
 >
-> ```mermaid
-> graph LR
->     A["R sobre X"] --> R["¿xRx siempre?<br/>Reflexiva"]
->     A --> S["¿xRy ⇒ yRx?<br/>Simétrica"]
->     A --> T["¿xRy ∧ yRz ⇒ xRz?<br/>Transitiva"]
->     style R fill:#e1f5ff
-> ```
+> ![[../Diagramas/dis-u2-03-04-graph.svg]]
 >
 > **Se lee así:** tres preguntas sí/no; cada combinación define una familia (orden, equivalencia...).
 
@@ -329,21 +292,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Relación R ⊆ X × Y] --> B[Definición 8]
-    A --> C[Dominio dom R]
-    A --> D[Rango rang R]
-    A --> E[Matriz de la relación]
-    A --> F[Inversa R⁻¹]
-    A --> G[Composición R₂∘R₁]
-    A --> H[Propiedades sobre X]
-    H --> H1[Reflexiva]
-    H --> H2[Simétrica]
-    H --> H3[Antisimétrica]
-    H --> H4[Transitiva]
-
-```
+![[../Diagramas/dis-u2-03-05-graph.svg]]
 
 ---
 

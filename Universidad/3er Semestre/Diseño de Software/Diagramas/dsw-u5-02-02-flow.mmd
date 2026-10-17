@@ -1,0 +1,6 @@
+flowchart TD
+   A["Quiero verificar<br/>algo"] --> B{"¿Una unidad<br/>aislada?"}
+   B -->|"Sí"| C["Unitaria JUnit:<br/>rápida + mocks"]
+   B -->|"No, varias piezas"| D{"¿Con BD/red<br/>real?"}
+   D -->|"Sí"| E["Integración<br/>(otra suite)"]
+   D -->|"No, con dobles"| C

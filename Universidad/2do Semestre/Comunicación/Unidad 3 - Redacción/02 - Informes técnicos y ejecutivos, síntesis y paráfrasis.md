@@ -25,23 +25,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 > | **Originalidad** | Copia-pega detectable | Paráfrasis citada APA |
 > | **Evaluación** | Taller 2 flojo + PAC débil | Taller 2 sólido + PAC lista |
 
-```mermaid
-graph TB
-    A[3 fuentes leídas] --> B{¿Qué informe<br/>piden?}
-    B --> C[📄 Técnico]
-    B --> D[📋 Ejecutivo]
-
-    C --> C1[Completo: método + datos]
-    C --> C2[5-8 páginas / manuscrito S5]
-    C --> C3[Para docente / pares]
-
-    D --> D1[1 página: hallazgo + decisión]
-    D --> D2[Para directivo sin tiempo]
-    D --> D3[Verbos de acción]
-
-    style C fill:#e1f5ff
-    style D fill:#e1ffe1
-```
+![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_01.svg]]
 
 ---
 
@@ -147,20 +131,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Informes y<br/>Síntesis))
-    Técnico
-      Método + datos
-      Trazable APA
-    Ejecutivo
-      1 página
-      Decisión
-    Técnicas
-      Resumen
-      Síntesis
-      Paráfrasis
-```
+![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -1,0 +1,8 @@
+graph TD
+    A["Selección de r elementos de n disponibles"] --> B{¿Importa el orden?}
+    B -->|Sí| C[PERMUTACIÓN]
+    B -->|No| D[COMBINACIÓN]
+    C --> E["P(n,r) = n! / (n-r)!"]
+    D --> F["C(n,r) = n! / ((n-r)! r!)"]
+    C --> G["Con repetición: n! / (k₁! k₂! … kᵣ!)"]
+    D --> H["Con repetición: C(n+r-1, r)"]

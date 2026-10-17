@@ -76,21 +76,7 @@ dg-publish: true
 > 
 > Siguiendo la analogía de la llave: **corte** = llave cerrada (nada pasa), **activa** = llave a medio abrir (tú controlas cuánto pasa), **saturación** = llave abierta al máximo (ya no puedes controlar más, pasa todo lo que la tubería permite).
 > 
-> ```mermaid
-> graph TD
->     A{Estado del<br/>transistor} --> B[CORTE<br/>Ib = 0<br/>Ic ~ 0<br/>Vce = Vcc]
->     A --> C[ACTIVA<br/>Ic = beta·Ib<br/>Vce variable]
->     A --> D[SATURACION<br/>Ic = Icmax<br/>Vce ~ 0]
->     B --> B1[Switch ABIERTO]
->     C --> C1[AMPLIFICADOR]
->     D --> D1[Switch CERRADO]
->     style B fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style B1 fill:#ffe1e1
->     style C1 fill:#fff4e1
->     style D1 fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Transistor_BJT_01.svg]]
 > 
 > |Región|Condición|$I_C$|$V_{CE}$|Uso|
 > |---|---|---|---|---|
@@ -104,22 +90,7 @@ dg-publish: true
 
 > [!warning] 🧮 Pasos para determinar la región de operación
 > 
-> ```mermaid
-> graph TD
->     P1[1 Asumir region activa<br/>Ic = beta·Ib] --> P2
->     P2[2 Calcular Ib<br/>con KVL en malla de base] --> P3
->     P3[3 Calcular Ic = beta·Ib] --> P4
->     P4[4 Calcular Vce<br/>con KVL en malla de colector] --> P5
->     P5{Vce > Vce_sat?}
->     P5 -->|Si| P6[Region ACTIVA confirmada]
->     P5 -->|No| P7[Transistor en SATURACION<br/>Vce = Vce_sat]
->     style P1 fill:#e1f5ff
->     style P2 fill:#e1ffe1
->     style P3 fill:#fff4e1
->     style P4 fill:#e1f5ff
->     style P6 fill:#e1ffe1
->     style P7 fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Transistor_BJT_02.svg]]
 > 
 > **Datos típicos del problema:**
 > 
@@ -161,22 +132,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Transistor BJT))
-    Analogia llave de agua
-      Ib abre o cierra
-      Ic fluye controlado
-    Base Colector Emisor
-    NPN vs PNP
-      Flecha del simbolo
-      Polaridades tipicas
-    Ie = Ic + Ib
-    Ic = beta·Ib activa
-    Corte switch abierto
-    Activa amplificador
-    Saturacion switch cerrado
-```
+![[Diagramas/03_-_Transistor_BJT_03.svg]]
 
 ---
 

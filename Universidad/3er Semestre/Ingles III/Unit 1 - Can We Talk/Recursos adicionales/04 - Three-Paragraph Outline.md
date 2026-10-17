@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** anatomía de los 3 párrafos, plantilla copiable, ejemplo con comidas y errores de estructura.
 
-```mermaid
-graph TB
-    A[Outline] --> B["P1: Hook + thesis"]
-    A --> C["P2: Topic + supports + details"]
-    A --> D["P3: Restate + opinion"]
-    B --> E["1 idea por párrafo"]
-    C --> E
-    D --> E
-
-    style E fill:#e1ffe1
-```
+![[../../Diagramas/en3-u1-10-01-graph.svg]]
 
 ---
 
@@ -116,19 +106,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Outline))
-    P1 Intro
-      Hook
-      Thesis X-Y-A-B
-    P2 Body
-      Apoyo A + detalle
-      Apoyo B + detalle
-    P3 Conclusion
-      Otras palabras
-      Opinion
-```
+![[../../Diagramas/en3-u1-10-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

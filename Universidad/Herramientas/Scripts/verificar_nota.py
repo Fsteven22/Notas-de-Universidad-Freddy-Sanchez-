@@ -71,12 +71,14 @@ def main() -> int:
     if len(opens) % 2:
         rep(f"FENCES desbalanceados: {len(opens)} marcas ```")
     inside = [False] * len(L)
+    quoted_fence = [False] * len(L)
     for k in range(0, len(opens) - 1, 2):
         a, b = opens[k], opens[k + 1]
         if a[1] != b[1]:
             rep(f"FENCE quoting mismatch L{a[0]} vs L{b[0]}")
         for i in range(a[0] - 1, b[0]):
             inside[i] = True
+            quoted_fence[i] = bool(a[1])
         info = L[a[0] - 1].strip().lstrip(">").strip()
         if info.startswith("```mermaid") and a[1]:
             warn.append(f"mermaid-en-callout L{a[0]} (en Live Preview se ve como codigo; mejor SVG)")
@@ -84,8 +86,9 @@ def main() -> int:
     for i, l in enumerate(L):
         n = i + 1
         if inside[i]:
-            if l == "" or l.strip() in (">", "> >"):
-                rep(f"L{n}: linea vacia/suelta DENTRO de fence (corta el callout o sale literal)")
+            # vacios solo rompen dentro de callouts; a nivel superior son legibles
+            if quoted_fence[i] and (l == "" or l.strip() in (">", "> >")):
+                rep(f"L{n}: linea vacia/suelta DENTRO de fence en callout (corta el quote o sale literal)")
             continue
         # 3. blank-line disease: empty strictly inside a quote run, EXCEPT
         # sibling separation (one side is a `> [!...]` callout header).
@@ -113,6 +116,13 @@ def main() -> int:
 
     # 6. embeds
     for i, l in enumerate(L):
+        if inside[i]:
+            continue
+        # 6b. HTML-eaters: <<stereotipo>> en prosa se lo traga el renderer
+        # (en fences o `codigo` esta bien). Regla: backticks o nada.
+        t = re.sub(r"`[^`]*`", "", l)
+        for m in re.finditer(r"<<[A-Za-z]+>>", t):
+            rep(f"L{i + 1}: <<..>> en prosa rompe el render (usa `codigo`): {m.group(0)}")
         for m in re.finditer(r"!\[\[([^\]]+)\]\]", l):
             tgt = m.group(1).split("|")[0].split("#")[0]
             if tgt.endswith((".svg", ".png", ".jpg", ".jpeg", ".pdf", ".mmd")) \

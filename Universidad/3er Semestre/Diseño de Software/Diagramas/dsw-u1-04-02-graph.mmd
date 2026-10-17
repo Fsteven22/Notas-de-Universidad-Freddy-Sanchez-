@@ -1,0 +1,4 @@
+graph LR
+    F["Paquete Foro<br/>(posts)"] -.->|"sin AOP:<br/>seguridad regada"| S["if(esModerador)...<br/>en cada método"]
+    F2["Paquete Foro<br/>(limpio)"] --> A["Aspecto Seguridad<br/>(un solo lugar)"]
+    style A fill:#e1ffe1

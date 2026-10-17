@@ -1,0 +1,8 @@
+graph TB
+   A[Cliente pide] --> B{¿Qué haces?}
+   B -->|Pides opciones| C[Do you have anything else]
+   B -->|Sugieres| D[You could also try]
+   B -->|Admites contras| E[It might not be best]
+   D --> F[Cierras: I like that option]
+
+   style F fill:#e1ffe1

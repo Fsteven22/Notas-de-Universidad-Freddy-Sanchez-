@@ -355,12 +355,12 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 #flashcards/bd-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Relacional en 1 frase (Codd)?::Todo en tablas unidas por columna común, con base matemática.
-> - ¿Chen 1976 aportó qué?::El ERD gráfico que complementa al relacional para diseñar.
-> - ¿Débil vs fuerte (línea y PK)?::Débil: solo FK, punteada. Fuerte: PK heredada compuesta, sólida.
-> - ¿N:M al relacional?::Tabla intermedia con las 2 FK.
-> - ¿Símbolo Chen de entidad débil y de derivado?::Rectángulo doble; óvalo con línea punteada.
+
+- ¿Relacional en 1 frase (Codd)?::Todo en tablas unidas por columna común, con base matemática.
+- ¿Chen 1976 aportó qué?::El ERD gráfico que complementa al relacional para diseñar.
+- ¿Débil vs fuerte (línea y PK)?::Débil: solo FK, punteada. Fuerte: PK heredada compuesta, sólida.
+- ¿N:M al relacional?::Tabla intermedia con las 2 FK.
+- ¿Símbolo Chen de entidad débil y de derivado?::Rectángulo doble; óvalo con línea punteada.
 - ¿Por qué "relacional" se llama así?::Porque guarda datos como relaciones (= tablas), no por las FK.
 - ¿Supertipo vs subtipo?::Común arriba (identificador compartido); propio abajo (hereda todo).
 - ¿d vs o (círculo)?::Disjunto (solo uno) vs sobrelapado (varios a la vez).

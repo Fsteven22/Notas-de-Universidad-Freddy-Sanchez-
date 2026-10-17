@@ -12,18 +12,7 @@
 > - Un circuito en **paralelo** es como los carriles de una autopista: si uno se cierra, los demás siguen funcionando.
 > - Un circuito **mixto** combina ambas configuraciones, como las instalaciones eléctricas de un edificio.
 >
-> ```mermaid
-> graph TD
->     A[Circuitos Eléctricos] --> B[Serie]
->     A --> C[Paralelo]
->     A --> D[Mixto]
->     B --> E[Una sola trayectoria<br/>de corriente]
->     C --> F[Múltiples trayectorias<br/>de corriente]
->     D --> G[Combinación de<br/>serie y paralelo]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
 >
 > | Configuración | Corriente | Voltaje | Aplicación típica |
 > |---|---|---|---|
@@ -39,17 +28,7 @@
 >
 > En un **circuito en serie**, los elementos están conectados uno tras otro formando una única trayectoria. La misma corriente recorre todos los elementos secuencialmente.
 >
-> ```mermaid
-> graph LR
->     A[🔋 Vs] -->|I| B[R₁]
->     B -->|I| C[R₂]
->     C -->|I| D[R₃]
->     D -->|I| A
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1f5ff
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
 >
 > ### ⚙️ Leyes fundamentales en serie
 >
@@ -109,23 +88,7 @@
 >
 > En un **circuito en paralelo**, los elementos comparten los mismos dos nodos (terminales), por lo que el voltaje en todos ellos es idéntico. La corriente total se reparte entre las ramas disponibles.
 >
-> ```mermaid
-> graph LR
->     A[🔋 Vs] --> N1[Nodo +]
->     N1 -->|I₁| B[R₁]
->     N1 -->|I₂| C[R₂]
->     N1 -->|I₃| D[R₃]
->     B --> N2[Nodo -]
->     C --> N2
->     D --> N2
->     N2 --> A
->     style A fill:#fff4e1
->     style N1 fill:#e1ffe1
->     style N2 fill:#e1ffe1
->     style B fill:#e1f5ff
->     style C fill:#e1f5ff
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
 >
 > ### ⚙️ Leyes fundamentales en paralelo
 >
@@ -253,41 +216,11 @@
 >
 > El método de análisis consiste en **simplificar progresivamente** el circuito, reduciendo grupos paralelos o series a su equivalente, hasta obtener un único $R_{eq}$.
 >
-> ```mermaid
-> graph LR
->     A[🔋 Vs] -->|I| B[R₁]
->     B --> N1[Nodo]
->     N1 -->|I₂| C[R₂]
->     N1 -->|I₃| D[R₃]
->     C --> N2[Nodo]
->     D --> N2
->     N2 -->|I| E[R₄]
->     E --> A
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#e1f5ff
->     style N1 fill:#f5e1ff
->     style N2 fill:#f5e1ff
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
 >
 > ### 🧮 Metodología de simplificación paso a paso
 >
-> ```mermaid
-> graph TD
->     P1[1️⃣ Identificar grupos<br/>en paralelo] --> P2[2️⃣ Calcular R_eq<br/>de cada grupo paralelo]
->     P2 --> P3[3️⃣ Reemplazar grupo por<br/>su resistencia equivalente]
->     P3 --> P4[4️⃣ Sumar resistencias<br/>resultantes en serie]
->     P4 --> P5[5️⃣ Aplicar Ley de Ohm<br/>para corriente total]
->     P5 --> P6[6️⃣ Calcular voltajes y<br/>corrientes en cada rama]
->     style P1 fill:#e1f5ff
->     style P2 fill:#e1ffe1
->     style P3 fill:#fff4e1
->     style P4 fill:#e1f5ff
->     style P5 fill:#e1ffe1
->     style P6 fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
 >
 > **Ejemplo resuelto:**
 >
@@ -351,44 +284,13 @@
 > | **Fallo de un elemento** | Interrumpe todo | Solo esa rama | Depende de la ubicación |
 > | **Ejemplo real** | Luces navideñas antiguas | Tomacorrientes del hogar | Circuitos electrónicos |
 >
-> ```mermaid
-> graph LR
->     A[Fuente Vs] --> B{Tipo de<br/>circuito}
->     B -->|Serie| C[I constante<br/>V se divide<br/>R_eq = ΣRk]
->     B -->|Paralelo| D[V constante<br/>I se divide<br/>R_eq < R_min]
->     B -->|Mixto| E[Simplificar<br/>paso a paso<br/>KVL + KCL]
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Circuitos<br/>Eléctricos))
-    Serie
-      I constante
-      V se divide
-      KVL
-      Divisor de voltaje
-    Paralelo
-      V constante
-      I se divide
-      KCL
-      Divisor de corriente
-    Mixto
-      Simplificación
-      Paso a paso
-      KVL + KCL
-      Aplicaciones reales
-    Leyes de Kirchhoff
-      KCL - Nodos
-      KVL - Mallas
-      Conservación
-```
+![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
 
 ---
 

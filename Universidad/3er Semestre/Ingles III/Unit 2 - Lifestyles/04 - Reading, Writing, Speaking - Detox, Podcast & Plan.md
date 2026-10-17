@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** listening detox (8.4), énfasis en pronunciación, podcast comment y plan 8.5.
 
-```mermaid
-graph TB
-    A[Lección 8.4-8.5] --> B[Listening: detox]
-    A --> C[Writing: podcast comment]
-    A --> D[Speaking: detox plan]
-    B --> E[Tim vs Kayla + attitude]
-    C --> F[Refer + opinion + invite]
-    D --> G[Discuss Decide Present Agree]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u2-05-01-graph.svg]]
 
 ---
 
@@ -184,19 +174,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U8 Close))
-    Listening
-      Tim 24-7
-      Kayla control
-    Writing
-      Refer back
-      Invite more
-    Speaking
-      Detox plan
-      4 steps
-```
+![[../Diagramas/en3-u2-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

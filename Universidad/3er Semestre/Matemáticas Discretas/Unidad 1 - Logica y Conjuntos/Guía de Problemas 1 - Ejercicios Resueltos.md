@@ -909,27 +909,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Guia 1 Logica y Conjuntos"]
-    R --> A["Circuitos y tablas"]
-    R --> B["Condicionales"]
-    R --> C["Cuantificadores"]
-    R --> D["Induccion"]
-    R --> E["Conjuntos"]
-    A --> A1["Expresion booleana"]
-    A --> A2["Tabla de verdad"]
-    A --> A3["Clasificacion"]
-    B --> B1["Reciproca e inversa"]
-    B --> B2["Reglas de inferencia"]
-    B --> B3["Reduccion al absurdo"]
-    C --> C1["Contraejemplos"]
-    C --> C2["Cotas y discriminante"]
-    D --> D1["Base e hipotesis"]
-    D --> D2["Paso inductivo"]
-    E --> E1["Doble contencion"]
-    E --> E2["Algebra de conjuntos"]
-```
+![[../Diagramas/dis-u1-02-01-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[GUÍA 1 DE PROBLEMAS MD (1).pdf]] en Unidad 0 - Guias y Ejercicios.

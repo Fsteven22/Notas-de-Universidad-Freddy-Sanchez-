@@ -19,15 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** places (9.1), rule words verbo→sustantivo (9.2), *I get it* y drills p. 149.
 
-```mermaid
-graph TB
-    A[U9 Vocab] --> B[Places 9.1]
-    A --> C[Rule words 9.2]
-    B --> D["courthouse toll plaza"]
-    C --> E["ban control limit"]
-
-    style E fill:#fff3c4
-```
+![[../Diagramas/en3-u3-02-01-graph.svg]]
 
 ---
 
@@ -202,19 +194,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U9 Vocab))
-    Places
-      courthouse
-      toll plaza
-      playground
-    Rule words
-      ban prohibit
-      require register
-    Insider
-      I get it
-```
+![[../Diagramas/en3-u3-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart keep-engaged (10.3), *anyway* (insider), vocales largas/cortas y wallet story.
 
-```mermaid
-graph TB
-    A[Escuchas historia] --> B{¿Reaccionas?}
-    B -->|Adivinas| C[Let me guess]
-    B -->|Te asombra| D[You must be joking]
-    B -->|Te encanta| E[That's so sweet]
-    B -->|Retomas tema| F[anyway vuelve al punto]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u4-04-01-graph.svg]]
 
 ---
 
@@ -162,21 +153,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Engaged))
-    Guess
-      Let me guess
-      Don't tell me
-    React
-      That's so sweet
-      You must be joking
-    Return
-      Anyway
-    Vowels
-      short closed
-      long open
-```
+![[../Diagramas/en3-u4-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -1,0 +1,6 @@
+graph TD
+    A[Calcular mcd o mcm] --> B{¿Números pequeños?}
+    B -->|Sí| C[Inspección directa o factorización]
+    B -->|No| D{¿Solo MCD o también MCM?}
+    D -->|Solo MCD| E[Algoritmo de Euclides más eficiente]
+    D -->|Ambos| F[Factorización prima luego mcd·mcm = m·n]

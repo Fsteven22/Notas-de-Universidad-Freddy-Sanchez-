@@ -29,23 +29,7 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > | **Errores** | Reescribir a mano | `revert` de 1 commit |
 > | **Colaboración** | Turnos | Revisión por pull request |
 
-```mermaid
-graph TB
-    A[Cambio en rama] --> B{¿Flujo?}
-    B --> C[❌ Push directo a main]
-    B --> D[✅ Rama + PR + review]
-
-    C --> C1[Rompe a todos]
-    C --> C2[Sin revisión]
-    C --> C3[Culpa difusa]
-
-    D --> D1[Tests en verde]
-    D --> D2[2 ojos revisan]
-    D --> D3[Merge limpio]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u5-03-01-graph.svg]]
 
 ---
 
@@ -61,15 +45,7 @@ graph TB
 > 4. **Review con checklist:** ¿compila? ¿tests verdes? ¿respeta capas? (ver Unidad 2).
 > 5. **Merge y borra la rama:** main siempre verde y desplegable.
 >
-> ```mermaid
-> graph LR
->     M[main verde] --> R[rama feat]
->     R --> C[commits chicos]
->     C --> PR[Pull Request]
->     PR --> RV[Review + tests]
->     RV --> M
->     style M fill:#e1ffe1
-> ```
+> ![[../Diagramas/dsw-u5-03-02-graph.svg]]
 >
 > **Comandos que cubren el 90% del curso:**
 >
@@ -98,14 +74,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Directo, Rama o PR?
 
-```mermaid
-flowchart TD
-    A["Voy a cambiar<br/>código"] --> B{"¿Toca main<br/>directo?"}
-    B -->|"Solo mi rama"| C["Commit directo<br/>en tu rama"]
-    B -->|"Main compartido"| D{"¿Cambio<br/>trivial?"}
-    D -->|"Typo, 1 línea"| E["Commit directo<br/>con buen mensaje"]
-    D -->|"Feature/fix real"| F["Rama + PR<br/>+ review"]
-```
+![[../Diagramas/dsw-u5-03-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -256,21 +225,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Git equipo))
-    Flujo
-      Rama por función
-      PR + review
-      Main verde
-    Higiene
-      Commits atómicos
-      .gitignore
-      Sin secretos
-    Historia
-      Rebase local
-      Merge al integrar
-```
+![[../Diagramas/dsw-u5-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

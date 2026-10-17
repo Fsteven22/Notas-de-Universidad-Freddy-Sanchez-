@@ -1,0 +1,7 @@
+graph TB
+    SRP["SRP<br/>clases enfocadas"] --> OCP["OCP<br/>extender sin editar"]
+    ISP["ISP<br/>interfaces justas"] --> OCP
+    DIP["DIP<br/>depender de abstracciones"] --> OCP
+    LSP["LSP<br/>implementaciones confiables"] --> OCP
+    LSP --> DIP
+    style OCP fill:#e1ffe1

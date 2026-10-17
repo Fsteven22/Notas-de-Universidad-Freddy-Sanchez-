@@ -25,24 +25,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > | **Riesgo** | Plagio / datos falsos | Declarado y verificado |
 > | **Evaluación** | Cero por deshonestidad | Participación 4 S6 a favor |
 
-```mermaid
-graph TB
-    A[Tarea de redacción] --> B{¿Cómo usas IA?}
-    B --> C[❌ Delegar todo]
-    B --> D[✅ Asistir + verificar]
-
-    C --> C1[Pegas sin leer]
-    C --> C2[Citas inventadas]
-    C --> C3[Cero + reporte]
-
-    D --> D1[Prompt con contexto]
-    D --> D2[Verificas 2-3 fuentes]
-    D --> D3[Redacción final propia]
-    D --> D4[Declara uso]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_01.svg]]
 
 ---
 
@@ -133,23 +116,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((IA Ética))
-    Prompt RCFV
-      Rol
-      Contexto
-      Formato
-      Verificación
-    Verificar
-      Fuentes reales
-      Marcar dudas
-      Declarar uso
-    Riesgos
-      Citas falsas
-      Plagio
-      Cero
-```
+![[Diagramas/03_-_IA_ética_y_prompts_para_redacción_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

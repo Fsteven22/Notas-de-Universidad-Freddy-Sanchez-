@@ -280,12 +280,12 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 #flashcards/bd-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Dato vs información?::Valor crudo sin contexto vs dato interpretado en contexto.
-> - ¿Tres problemas de archivos tradicionales?::Redundancia, inconsistencia y programas a medida.
-> - ¿Modelo jerárquico en 1 línea?::Árbol invertido: un padre, N hijos (solo un padre por hijo).
-> - ¿Qué aportó la red y por qué murió?::Multipadre + schema/subschema/DML/DDL; murió por falta de consultas ad hoc.
-> - ¿Codd, año y aporte?::1970: tablas + SQL declarativo e independencia física.
+
+- ¿Dato vs información?::Valor crudo sin contexto vs dato interpretado en contexto.
+- ¿Tres problemas de archivos tradicionales?::Redundancia, inconsistencia y programas a medida.
+- ¿Modelo jerárquico en 1 línea?::Árbol invertido: un padre, N hijos (solo un padre por hijo).
+- ¿Qué aportó la red y por qué murió?::Multipadre + schema/subschema/DML/DDL; murió por falta de consultas ad hoc.
+- ¿Codd, año y aporte?::1970: tablas + SQL declarativo e independencia física.
 
 ---
 

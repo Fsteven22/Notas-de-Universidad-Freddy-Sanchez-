@@ -12,14 +12,7 @@ dg-publish: true
 > 
 > Estas reglas combinan naturalmente con las reglas proposicionales para construir argumentos más complejos.
 >
-> ```mermaid
-> graph TD
->     A["¿Dirección?"] --> B["∀ → caso<br/>Particularización"]
->     A --> C["casos → ∀<br/>Generalización"]
->     A --> D["∃ → testigo<br/>Particularización"]
->     A --> E["testigo → ∃<br/>Generalización"]
->     style B fill:#e1f5ff
-> ```
+> ![[../../Diagramas/dis-u1-09-01-graph.svg]]
 >
 > **En esta nota:** las 4 reglas con su restricción (el testigo existencial debe ser **nuevo**, no usado antes), combinadas con MP/MT, y el error clásico: generalizar desde un caso particular.
 >
@@ -43,12 +36,7 @@ dg-publish: true
 
 > [!note] 🔍 Mapa — Las 4 direcciones
 >
-> ```mermaid
-> graph TD
->     A["∀ → caso: particulariza"] --> B["casos → ∀: generaliza"]
->     C["∃ → testigo nuevo"] --> D["testigo → ∃"]
->     style A fill:#e1f5ff
-> ```
+> ![[../../Diagramas/dis-u1-09-02-graph.svg]]
 >
 > **Se lee así:** universal baja a caso, casos suben a universal; existencial exige testigo fresco.
 
@@ -184,19 +172,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Proposición universal ∀x ∈ D : P x] -->|Particularización Universal| B[P d , para d ∈ D específico]
-    C[P d , para todo d ∈ D arbitrario] -->|Generalización Universal| D[∀x ∈ D : P x]
-
-    E[Proposición existencial ∃x ∈ D : P x] -->|Particularización Existencial| F[P d , para algún d ∈ D]
-    G[P d , para algún d concreto] -->|Generalización Existencial| H[∃x ∈ D : P x]
-
-    B --> I[Combinar con reglas proposicionales]
-    F --> I
-    I --> J[✅ Conclusión]
-
-```
+![[../../Diagramas/dis-u1-09-03-graph.svg]]
 
 ---
 

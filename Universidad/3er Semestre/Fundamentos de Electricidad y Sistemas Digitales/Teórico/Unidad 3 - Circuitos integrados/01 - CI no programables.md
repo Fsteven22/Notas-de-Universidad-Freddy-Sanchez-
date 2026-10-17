@@ -11,13 +11,7 @@ dg-publish: true
 > 
 > Este tema cierra el círculo de lo visto en la Unidad 2: los diodos ([[02 - El Diodo - Unión P-N]]), transistores BJT ([[03 - Transistor BJT]]) y los circuitos de filtrado/regulación ([[04 - Circuitos de Filtrado y Fuentes Lineales]], [[05 - Reguladores en Fuentes Lineales]]) que estudiaste como componentes o etapas discretas, en la práctica suelen venir **ya integrados** dentro de un solo chip (por ejemplo, el propio regulador 7805 que viste es en sí mismo un circuito integrado).
 > 
-> ```mermaid
-> graph LR
->     A[Componentes discretos<br/>diodos, transistores, R, C] -->|Miniaturización| B[Circuito Integrado - CI]
->     B --> C[Mismo comportamiento<br/>menor tamaño y costo]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_CI_no_programables_01.svg]]
 
 ---
 
@@ -61,15 +55,7 @@ dg-publish: true
 
 > [!note] 🗂️ Por programabilidad — la clasificación clave de esta unidad
 > 
-> ```mermaid
-> graph TD
->     A[Circuitos Integrados] --> B[No programables]
->     A --> C[Programables]
->     B --> D["Función fija de fábrica<br/>(no se puede reprogramar)"]
->     C --> E["Función definida por el usuario<br/>mediante software/configuración"]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_CI_no_programables_02.svg]]
 > 
 > |Tipo|Definición|Ejemplos|
 > |---|---|---|
@@ -149,26 +135,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Circuitos Integrados<br/>No Programables))
-    Que es un CI
-      Miniaturizacion
-      Ventajas vs discreto
-    Clasificacion
-      Por señal - analogico digital mixto
-      Por escala - SSI MSI LSI VLSI
-      Por programabilidad
-    Encapsulados
-      DIP
-      SOIC
-      TO-220
-    Ejemplos no programables
-      OPAMs
-      555
-      Reguladores 78xx/LM317
-      Compuertas logicas fijas
-```
+![[Diagramas/01_-_CI_no_programables_03.svg]]
 
 ---
 

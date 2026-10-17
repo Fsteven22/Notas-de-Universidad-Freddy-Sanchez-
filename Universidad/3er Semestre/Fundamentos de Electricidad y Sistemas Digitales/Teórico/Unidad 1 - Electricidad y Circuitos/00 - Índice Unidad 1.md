@@ -20,15 +20,7 @@ tags: [FESD, unidad1, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 - Conceptos Fundamentales] --> B[03 - Elementos Básicos]
-    B --> C[04 - Serie/Paralelo/Mixtos]
-    C --> D[05 - Ohm y Kirchhoff]
-    D --> E[06 - Teoremas]
-    E --> F[02 - Generación de Energía]
-    F --> G[Ejercicios Recopilados]
-```
+![[Diagramas/00_-_Índice_Unidad_1_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Semiconductores y Bandas de Energía]] (Unidad 2)

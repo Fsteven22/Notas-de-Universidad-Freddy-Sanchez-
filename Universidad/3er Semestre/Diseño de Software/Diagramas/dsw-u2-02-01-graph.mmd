@@ -1,0 +1,15 @@
+graph TB
+   A[Requerimientos + atributos] --> B{¿Estilo decidido?}
+   B --> C[❌ Improvisar]
+   B --> D[✅ Decidir estilo]
+
+   C --> C1[Todo conectado]
+   C --> C2[Cuello de botella sorpresa]
+   C --> C3[Reescritura]
+
+   D --> D1[Capas / servicios]
+   D --> D2[Interfaces entre piezas]
+   D --> D3[Evolución planificada]
+
+   style C fill:#ffe1e1
+   style D fill:#e1ffe1

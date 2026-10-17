@@ -25,25 +25,7 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 > | **Solución** | Parche rápido | Intervención en varios puntos |
 > | **En comunicación** | "Habla más claro" | Ajusta mensaje + canal + audiencia + contexto |
 
-```mermaid
-graph TB
-    A[Problema: taller sale mal] --> B{¿Cómo lo piensas?}
-    B --> C[❌ Lineal]
-    B --> D[✅ Complejo]
-
-    C --> C1[Una causa]
-    C --> C2[Culpa individual]
-    C --> C3[Parche que falla]
-    C --> C4[Se repite]
-
-    D --> D1[Mapea actores y relaciones]
-    D --> D2[Detecta patrones emergentes]
-    D --> D3[Interviene en 2-3 puntos]
-    D --> D4[Aprendizaje del sistema]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_01.svg]]
 
 ---
 
@@ -57,15 +39,7 @@ graph TB
 >
 > Es pensar el todo sin mutilar las partes: orden + desorden + organización interactuando. Un equipo, un texto y una audiencia son sistemas, no sumas de piezas.
 >
-> ```mermaid
-> graph LR
->     U[Partes] --> E[Interacciones]
->     E --> S[Sistema]
->     S --> EM[Emergencia]
->     EM --> R[Retroalimenta a partes]
->     style S fill:#e1f5ff
->     style EM fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_02.svg]]
 >
 > **Principios operativos para tus talleres:**
 >
@@ -160,23 +134,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Pensamiento<br/>Complejo))
-    Principios
-      Dialógico
-      Recursivo
-      Hologramático
-      Emergencia
-    Vs Lineal
-      Una causa
-      Culpa única
-      Parche
-    Aplicación
-      Mapear sistema
-      Intervenir 2-3 puntos
-      Aprender
-```
+![[Diagramas/01_-_Pensamiento_complejo_vs_pensamiento_lineal_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

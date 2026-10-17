@@ -16,14 +16,7 @@ dg-publish: true
 > - **Validación de formatos**: correos electrónicos, números de tarjeta, protocolos de red.
 > - **Videojuegos e IA simple**: NPCs con comportamientos que cambian según una secuencia de eventos aceptada o no.
 >
-> ```mermaid
-> graph TD
->     A["Autómata de estado finito"] --> B["Lee una cadena α"]
->     B --> C["Sigue la trayectoria de estados"]
->     C --> D{"¿Termina en estado de aceptación?"}
->     D -->|"Sí"| E["α es ACEPTADA"]
->     D -->|"No"| F["α es RECHAZADA"]
-> ```
+> ![[../Diagramas/dis-u6-03-01-graph.svg]]
 
 ---
 
@@ -74,16 +67,7 @@ dg-publish: true
 
 > [!note] 📋 Diagrama del ejemplo — cadenas que terminan en $a$
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("σ₀"))
->     s0 -->|"b"| s0
->     s0 -->|"a"| s1(("σ₁"))
->     s1 -->|"b"| s0
->     s1 -->|"a"| s2(("((σ₂))"))
->     s2 -->|"a"| s2
->     s2 -->|"b"| s0
-> ```
+> ![[../Diagramas/dis-u6-03-02-graph.svg]]
 >
 > **Lectura:** este diagrama acepta cadenas cuya trayectoria termina en $\sigma_1$ o $\sigma_2$ — es decir, cadenas cuyos últimos dos símbolos leídos no son ambos $b$ consecutivos, equivalentemente, cadenas que **no terminan en al menos dos símbolos $b$ consecutivos**.
 
@@ -173,13 +157,7 @@ dg-publish: true
 >
 > Se usan dos estados: $NA$ (no se ha encontrado una $a$) y $A$ (ya se encontró una $a$). El estado inicial y único estado aceptante es $NA$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> na(("((NA))"))
->     na -->|"b"| na
->     na -->|"a"| a(("A"))
->     a -->|"a, b"| a
-> ```
+> ![[../Diagramas/dis-u6-03-03-graph.svg]]
 
 > [!example] 🟢 Diseño 2 — Número impar de símbolos $a$
 >
@@ -187,14 +165,7 @@ dg-publish: true
 >
 > Se usan dos estados: $E$ (número par de $a$ leídas) y $O$ (número impar). El estado inicial es $E$; el estado aceptante es $O$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> e(("E"))
->     e -->|"b"| e
->     e -->|"a"| o(("((O))"))
->     o -->|"b"| o
->     o -->|"a"| e
-> ```
+> ![[../Diagramas/dis-u6-03-04-graph.svg]]
 
 ---
 
@@ -215,17 +186,7 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: Proceso de Diseño y Verificación
 
-```mermaid
-graph TD
-    A["¿Cuál es el lenguaje (conjunto de cadenas) a reconocer?"] --> B["Identificar la información mínima relevante del pasado"]
-    B --> C["Definir los estados S (uno por cada 'clase de historia')"]
-    C --> D["Elegir estado inicial σ"]
-    D --> E["Marcar estados aceptantes 𝒜"]
-    E --> F["Definir f para cada (estado, símbolo)"]
-    F --> G["Probar con cadenas de ejemplo: ¿aceptadas y rechazadas son correctas?"]
-    G -->|"No"| B
-    G -->|"Sí"| H["Autómata completo"]
-```
+![[../Diagramas/dis-u6-03-05-graph.svg]]
 
 ---
 
@@ -282,14 +243,7 @@ graph TD
 >
 > **5.** Estados $S=\{S_0,S_1\}$: $S_0$ = "el último símbolo leído no fue 1 (o no se ha leído nada)", $S_1$ = "el último símbolo leído fue 1". Estado inicial $S_0$; estado aceptante $\{S_1\}$. Transiciones: $f(S_0,0)=S_0$, $f(S_0,1)=S_1$, $f(S_1,0)=S_0$, $f(S_1,1)=S_1$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("S₀"))
->     s0 -->|"0"| s0
->     s0 -->|"1"| s1(("((S₁))"))
->     s1 -->|"1"| s1
->     s1 -->|"0"| s0
-> ```
+> ![[../Diagramas/dis-u6-03-06-graph.svg]]
 >
 > **6.** Igual al "Diseño 1" pero invirtiendo los estados aceptantes: $NA$ (aún no se lee $a$, no aceptante) y $A$ (ya se leyó una $a$, **aceptante**). Estado inicial $NA$; $\mathcal{A}=\{A\}$. Transiciones: $f(NA,a)=A$, $f(NA,b)=NA$, $f(A,a)=A$, $f(A,b)=A$ (una vez en $A$ se permanece ahí, ya que la condición "contiene al menos una $a$" no puede dejar de cumplirse).
 

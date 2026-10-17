@@ -17,17 +17,7 @@ dg-publish: true
 > 
 > Un criterio de divisibilidad es como mirar solo el último dígito de un precio para saber si es divisible entre 2 o 5, sin necesidad de hacer la división. Y un sistema de numeración es como cambiar de moneda: el valor es el mismo, solo cambia la forma de representarlo.
 > 
-> ```mermaid
-> graph TD
->     A[Representación de Enteros] --> B[Criterios de Divisibilidad]
->     A --> C[Sistemas de Numeración]
->     B --> D[Divisible por 3 y 9 suma de dígitos]
->     B --> E[Divisible por 2 y 5 último dígito]
->     C --> F[Base 2: binario dígitos 0,1]
->     C --> G[Base 10: decimal dígitos 0–9]
->     C --> H[Base 16: hexadecimal dígitos 0–9, A–F]
->     C --> I[Conversión entre bases divisiones sucesivas]
-> ```
+> ![[../Diagramas/dis-u3-04-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -147,15 +137,7 @@ dg-publish: true
 > 
 > Se divide repetidamente el número entre $b$. Los **residuos leídos de abajo hacia arriba** forman la representación en base $b$.
 > 
-> ```mermaid
-> graph TD
->     P1["1️⃣ Dividir n entre b anotar residuo r₀"] --> P2
->     P2["2️⃣ Dividir cociente entre b anotar residuo r₁"] --> P3
->     P3{¿Cociente = 0?}
->     P3 -->|No| P4["Continuar dividiendo"]
->     P4 --> P2
->     P3 -->|Sí| P5["Leer residuos de abajo hacia arriba ✅"]
-> ```
+> ![[../Diagramas/dis-u3-04-02-graph.svg]]
 > 
 > **Ejemplo — decimal 146 a binario:**
 > 
@@ -212,42 +194,13 @@ dg-publish: true
 > |Binario → hexadecimal|Agrupar bits de 4 en 4|Cada grupo de 4 bits = 1 dígito hex|
 > |Hexadecimal → binario|Expandir cada dígito|Cada dígito hex = 4 bits|
 > 
-> ```mermaid
-> graph LR
->     A[Número en base b] -->|Evaluación directa Σ dᵢ · bⁱ| B[Decimal]
->     B -->|Divisiones sucesivas residuos de abajo arriba| A
->     C[Binario] -->|Agrupar de 4 en 4| D[Hexadecimal]
->     D -->|Expandir cada dígito en 4 bits| C
-> ```
+> ![[../Diagramas/dis-u3-04-03-graph.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A["Criterios y Numeracion"] --> B["Criterios de Divisibilidad"]
-    A --> C["Sistemas de Numeracion"]
-    A --> D["Conversion a Decimal"]
-    A --> E["Conversion desde Decimal"]
-    A --> F["Numero de bits"]
-    B --> B1["Por 3: suma de digitos div por 3"]
-    B --> B2["Por 9: suma de digitos div por 9"]
-    B --> B3["Por 2: ultimo digito par"]
-    B --> B4["Por 5: ultimo digito 0 o 5"]
-    B --> B5["Demostracion: descomposicion posicional"]
-    C --> C1["Base b: digitos 0 a b-1"]
-    C --> C2["Binario base 2"]
-    C --> C3["Decimal base 10"]
-    C --> C4["Hexadecimal base 16"]
-    D --> D1["Suma de di por b elevado a i"]
-    D --> D2["Evaluar directamente"]
-    E --> E1["Divisiones sucesivas entre b"]
-    E --> E2["Residuos de abajo hacia arriba"]
-    F --> F1["2k <= n < 2k+1"]
-    F --> F2["Bits = 1 + log2 n"]
-
-```
+![[../Diagramas/dis-u3-04-04-graph.svg]]
 
 ---
 

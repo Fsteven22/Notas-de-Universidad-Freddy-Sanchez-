@@ -10,14 +10,7 @@ dg-publish: true
 > 
 > Las **sucesiones** son un caso especial de función: asignan a cada entero en un rango dado un elemento de algún conjunto. Las **cadenas** son sucesiones finitas de elementos, con la diferencia de que el orden importa y las repeticiones se permiten.
 > 
-> ```mermaid
-> graph TD
->     A[Función f : X → Y] --> B[Sucesión s : A → X]
->     B --> C[A es conjunto de enteros consecutivos]
->     B --> D[Finita si A es finito]
->     B --> E[Infinita si A es infinito]
->     D --> F[Cadena sobre X]
-> ```
+> ![[../Diagramas/dis-u2-05-01-graph.svg]]
 
 ---
 
@@ -175,14 +168,7 @@ dg-publish: true
 
 > [!note] 🔄 Mapa — Recurrencia completa
 >
-> ```mermaid
-> graph TD
->     A["Ecuación<br/>sₙ en términos pasados"] --> B["Orden<br/>mayor − menor"]
->     A --> C["Iniciales<br/>tantas como el orden"]
->     B --> D["Sucesión definida ✅"]
->     C --> D
->     style D fill:#e1ffe1
-> ```
+> ![[../Diagramas/dis-u2-05-02-graph.svg]]
 >
 > **Se lee así:** sin iniciales la ecuación no define nada; el orden dice cuántas necesitas.
 
@@ -264,13 +250,7 @@ dg-publish: true
 
 > [!note] 🔤 Mapa — Cadena y operaciones
 >
-> ```mermaid
-> graph LR
->     A["Cadena<br/>sucesión finita"] --> B["Concatenar"]
->     A --> C["Longitud"]
->     A --> D["Subcadena<br/>bloque contiguo"]
->     style D fill:#fff4e1
-> ```
+> ![[../Diagramas/dis-u2-05-03-graph.svg]]
 >
 > **Se lee así:** la subcadena exige contigüidad; sin bloque contiguo no hay subcadena.
 
@@ -326,20 +306,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Sucesiones y Cadenas] --> B[Sucesión s : A → X]
-    A --> C[Cadena sobre X]
-    B --> D[Finita: dominio finito]
-    B --> E[Infinita: dominio infinito]
-    B --> F["Suma: Σ aᵢ"]
-    B --> G["Producto: Π aᵢ"]
-    C --> H[Sucesión finita de elementos]
-    C --> I["Longitud |α|"]
-    C --> J[Concatenación αβ]
-    C --> K["Cadena nula λ"]
-
-```
+![[../Diagramas/dis-u2-05-04-graph.svg]]
 
 ---
 

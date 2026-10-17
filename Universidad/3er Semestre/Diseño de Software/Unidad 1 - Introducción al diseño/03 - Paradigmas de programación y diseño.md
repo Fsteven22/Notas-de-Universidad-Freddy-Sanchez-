@@ -27,21 +27,7 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > | **Mantenimiento** | Todo con el mismo martillo | Cada parte en su estilo natural |
 > | **Equipo** | Todos piensan igual (punto ciego) | Vocabulario más rico de diseños |
 
-```mermaid
-graph TB
-    A[Problema] --> B{¿Un paradigma<br/>alcanza?}
-    B --> C[❌ Solo el que sé]
-    B --> D[✅ El que mejor ajusta]
-
-    C --> C1[Forzado y descabellado]
-    C --> C2[Deuda de diseño]
-
-    D --> D1[Subsistemas mixtos]
-    D --> D2[Mantenible]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u1-04-01-graph.svg]]
 
 ---
 
@@ -109,12 +95,7 @@ graph TB
 >
 > La POO modulariza en métodos, clases y paquetes — pero algunos *concerns* cruzan esos límites (ej. **seguridad**: el paquete Foro existe para mostrar posts, pero igual debe validar que solo moderadores aprueben o borren). **AOP** mueve cada concern transversal a su propio paquete y deja a los objetos con una sola responsabilidad clara.
 >
-> ```mermaid
-> graph LR
->     F["Paquete Foro<br/>(posts)"] -.->|"sin AOP:<br/>seguridad regada"| S["if(esModerador)...<br/>en cada método"]
->     F2["Paquete Foro<br/>(limpio)"] --> A["Aspecto Seguridad<br/>(un solo lugar)"]
->     style A fill:#e1ffe1
-> ```
+> ![[../Diagramas/dsw-u1-04-02-graph.svg]]
 >
 > | Concepto AOP | Qué Es | Ejemplo (clase Account) |
 > |---|---|---|
@@ -175,16 +156,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Paradigma Uso?
 
-```mermaid
-flowchart TD
-    A["Nuevo módulo"] --> B{"¿Hay un concern<br/>transversal?"}
-    B -->|"Sí: seguridad, log, etc."| C["Aísla en aspecto<br/>(AOP)"]
-    B -->|"No"| D{"¿Existe componente<br/>que lo resuelva?"}
-    D -->|"Sí"| E["Reusa e integra<br/>(componentes)"]
-    D -->|"No"| F{"¿El problema es<br/>transformar datos?"}
-    F -->|"Sí"| G["Estilo funcional<br/>+ inmutable"]
-    F -->|"No"| H["OO con contratos<br/>y patrones"]
-```
+![[../Diagramas/dsw-u1-04-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -357,23 +329,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Paradigmas"))
-    Estilos
-      Imperativo
-      Declarativo
-    AOP
-      Concerns
-      Weaving
-    Componentes
-      Interfaces
-      COTS
-    Martin
-      Quita algo
-      Prueba
-      Inmutable
-```
+![[../Diagramas/dsw-u1-04-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

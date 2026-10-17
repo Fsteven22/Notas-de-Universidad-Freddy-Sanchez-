@@ -13,18 +13,7 @@ dg-publish: true
 > 
 > **Aplicaciones modernas:** sistemas de archivos (carpetas y subcarpetas), bases de datos (índices B-tree), inteligencia artificial (árboles de decisión, minimax en juegos), redes de telecomunicaciones (árboles de expansión mínima para tender cableado al menor costo), y compresión de datos (códigos Huffman — tema que ya viste en Computación y Sociedad, y al que volveremos en la nota [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman|Árboles II]]).
 > 
-> ```mermaid
-> graph TD
->     A[Árbol T] --> B[Árbol libre]
->     A --> C[Árbol con raíz]
->     B --> D[Trayectoria simple única entre cualquier par de vértices]
->     C --> E[Un vértice designado como raíz]
->     C --> F[Nivel y Altura]
->     C --> G[Árbol de expansión de un grafo G]
->     G --> H["Búsqueda a lo ancho (BFS)"]
->     G --> I["Búsqueda a profundidad (DFS)"]
->     G --> J["Árbol de expansión mínima (Prim)"]
-> ```
+> ![[../Diagramas/dis-u5-05-01-graph.svg]]
 
 ---
 
@@ -44,15 +33,7 @@ dg-publish: true
 > 
 > Dado el árbol $T$ con vértices $v_1, \ldots, v_7$, si se elige $v_1$ como raíz:
 > 
-> ```mermaid
-> graph TD
->     v1((v1)) --> v2((v2))
->     v1 --> v3((v3))
->     v2 --> v4((v4))
->     v2 --> v5((v5))
->     v3 --> v6((v6))
->     v3 --> v7((v7))
-> ```
+> ![[../Diagramas/dis-u5-05-02-graph.svg]]
 > 
 > - $v_1$ está en el **nivel 0**
 > - $v_2$ y $v_3$ están en el **nivel 1**
@@ -254,33 +235,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Árbol de Expansión de G] --> B{"¿Objetivo?"}
-    B -->|Explorar por niveles| C[BFS]
-    B -->|Explorar profundo primero| D[DFS]
-    B -->|Minimizar costo total| E["Prim (grafo ponderado)"]
-    C --> F[Árbol de expansión válido]
-    D --> F
-    E --> G[Árbol de expansión MÍNIMA]
-
-```
+![[../Diagramas/dis-u5-05-03-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-```mermaid
-graph TD
-    Start["¿Qué necesitas hacer con el grafo G?"] --> Q1{"¿G es conexo?"}
-    Q1 -->|No| NoTree["No existe árbol de expansión"]
-    Q1 -->|Sí| Q2{"¿Las aristas tienen peso/costo?"}
-    Q2 -->|No| Q3{"¿Necesitas explorar por niveles o por profundidad?"}
-    Q3 -->|Niveles| BFS["Usar BFS"]
-    Q3 -->|Profundidad| DFS["Usar DFS"]
-    Q2 -->|Sí, y quiero el costo mínimo| Prim["Usar algoritmo de Prim"]
-
-```
+![[../Diagramas/dis-u5-05-04-graph.svg]]
 
 ---
 

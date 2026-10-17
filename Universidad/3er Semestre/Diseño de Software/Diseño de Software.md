@@ -69,7 +69,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
 
 - [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1.md|📂 Unidad 1 - Introducción al diseño]]
 

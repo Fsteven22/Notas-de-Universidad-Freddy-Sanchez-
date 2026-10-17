@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** adding emphasis (12.1) + substitution/referencing (12.2).
 
-```mermaid
-graph TB
-    A[Quieres decir] --> B{¿Enfatizar o no repetir?}
-    B -->|Enfatizar| C["What I + be / The thing I + be"]
-    B -->|No repetir| D["one-ones / so-do / it-them-this"]
-    C --> E[Lo importante al final]
-    D --> E
-
-    style E fill:#e1ffe1
-```
+![[../Diagramas/en3-u6-03-01-graph.svg]]
 
 ---
 
@@ -178,17 +169,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((No Repeat))
-    Emphasis
-      What I is
-      The thing was
-    Substitute
-      one ones
-      so do
-      it them this
-```
+![[../Diagramas/en3-u6-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

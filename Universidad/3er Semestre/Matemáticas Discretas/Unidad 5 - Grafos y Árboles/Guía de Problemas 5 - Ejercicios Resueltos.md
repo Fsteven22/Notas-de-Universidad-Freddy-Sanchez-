@@ -42,18 +42,7 @@ dg-publish: true
 >
 > Cada paso une $X$ con $Y$ (arista que existe por ser bipartito completo), pasa por los $2m$ vértices exactamente una vez y regresa al inicio. Es un ciclo de Hamilton.
 >
-> > ```mermaid
-> > graph TD
-> >   X1 --- Y1
-> >   X1 --- Y2
-> >   X1 --- Y3
-> >   X2 --- Y1
-> >   X2 --- Y2
-> >   X2 --- Y3
-> >   X3 --- Y1
-> >   X3 --- Y2
-> >   X3 --- Y3
-> > ```
+> >  ![[../Diagramas/dis-u5-07-01-graph.svg]]
 >
 > El diagrama muestra $K_{3,3}$ como ejemplo ($m = 3$); un ciclo de Hamilton es $X1-Y1-X2-Y2-X3-Y3-X1$.
 >
@@ -77,15 +66,7 @@ dg-publish: true
 >
 > Todos los grados son pares, pero $G$ es **disconexo** (dos componentes). Ningún recorrido cerrado puede saltar de $\{a,b,c\}$ a $\{d,e,f\}$.
 >
-> > ```mermaid
-> > graph TD
-> >   A --- B
-> >   B --- C
-> >   C --- A
-> >   D --- E
-> >   E --- F
-> >   F --- D
-> > ```
+> >  ![[../Diagramas/dis-u5-07-02-graph.svg]]
 >
 > **Paso 3 — Conclusión:**
 >
@@ -117,10 +98,7 @@ dg-publish: true
 > - **Ciclo de Hamilton: no existe.** Nótese que $v_1$ solo es adyacente a $v_2, v_{10}$, así que todo ciclo hamiltoniano usaría $v_2-v_1-v_{10}$; análogamente usaría $v_2-v_3-v_4$ (pues $v_3$ solo ve a $v_2, v_4$) y $v_4-v_7-v_8$. Entonces $v_2$ ya ocuparía sus dos incidencias del ciclo ($v_1, v_3$) y $v_4$ las suyas ($v_3$ más $v_5$ o $v_7$). En el caso $v_4 \in \{v_3, v_7\}$, a $v_5$ (vecinos $v_2, v_4, v_6$) solo le quedaría $v_6$ libre: imposible. En el caso $v_4 \in \{v_3, v_5\}$, a $v_7$ (vecinos $v_4, v_8$) solo le quedaría $v_8$: imposible. Contradicción en ambos casos.
 > - **Camino de Hamilton: sí existe:**
 >
-> > ```mermaid
-> > graph LR
-> >   v3 --- v4 --- v7 --- v8 --- v10 --- v1 --- v2 --- v5 --- v6 --- v9
-> > ```
+> >  ![[../Diagramas/dis-u5-07-03-graph.svg]]
 >
 > Se verifica arista por arista: $v_3v_4, v_4v_7, v_7v_8, v_8v_{10}, v_{10}v_1, v_1v_2, v_2v_5, v_5v_6, v_6v_9$ todas existen. ✅
 >
@@ -138,21 +116,7 @@ dg-publish: true
 >
 > **Supuesto de trabajo:** los cinco restantes tienen grados distintos entre sí y distintos de $4$ (el de $M, N$) y de $7$ (el de $U$); como todos conocen a $U$, sus grados están en $\{1,2,3,5,6\}$, es decir son exactamente $\{1,2,3,5,6\}$.
 >
-> > ```mermaid
-> > graph TD
-> >   U --- M
-> >   U --- N
-> >   U --- A
-> >   U --- B
-> >   U --- C
-> >   U --- D
-> >   U --- E
-> >   B --- M
-> >   B --- N
-> >   B --- C
-> >   B --- D
-> >   B --- E
-> > ```
+> >  ![[../Diagramas/dis-u5-07-04-graph.svg]]
 >
 > El esquema muestra el esqueleto forzado: $U$ unido a todos y $B$ (grado $6$) unido a todos salvo $A$ (grado $1$).
 >
@@ -268,14 +232,7 @@ dg-publish: true
 >
 > Peso total $= 3 + 2 + 5 + 1 + 2 = 13$.
 >
-> > ```mermaid
-> > graph TD
-> >   A ---|3| C
-> >   C ---|2| B
-> >   B ---|5| D
-> >   D ---|1| E
-> >   E ---|2| F
-> > ```
+> >  ![[../Diagramas/dis-u5-07-05-graph.svg]]
 >
 > $$\boxed{MST = \{AC, CB, BD, DE, EF\} \text{ con peso } 13}$$
 
@@ -305,17 +262,7 @@ dg-publish: true
 >
 > **Paso 2 — Reconstruir el camino:** $J \leftarrow I \leftarrow G \leftarrow F \leftarrow E \leftarrow D \leftarrow B \leftarrow C \leftarrow A$; verificación: $2+1+5+2+3+1+3+2 = 19$. ✅
 >
-> > ```mermaid
-> > graph LR
-> >   A ---|2| C
-> >   C ---|1| B
-> >   B ---|5| D
-> >   D ---|2| E
-> >   E ---|3| F
-> >   F ---|1| G
-> >   G ---|3| I
-> >   I ---|2| J
-> > ```
+> >  ![[../Diagramas/dis-u5-07-06-graph.svg]]
 >
 > ![[g5-ej08-dijkstra.png]]
 > **Figura generada con Python — camino mínimo A→J del Ej. 8 en verde (d = 19).**
@@ -353,23 +300,7 @@ dg-publish: true
 >
 > **Supuesto (grafo reconstruido de la figura, pesos):** aristas: $A$-$B$ $2$, $A$-$D$ $7$, $B$-$C$ $3$, $B$-$E$ $5$, $C$-$F$ $4$, $D$-$E$ $1$, $D$-$G$ $6$, $E$-$F$ $2$, $E$-$H$ $8$, $F$-$I$ $3$, $G$-$H$ $2$, $G$-$J$ $9$, $H$-$I$ $1$, $H$-$J$ $4$.
 >
-> > ```mermaid
-> > graph TD
-> >   A ---|2| B
-> >   A ---|7| D
-> >   B ---|3| C
-> >   B ---|5| E
-> >   C ---|4| F
-> >   D ---|1| E
-> >   D ---|6| G
-> >   E ---|2| F
-> >   E ---|8| H
-> >   F ---|3| I
-> >   G ---|2| H
-> >   G ---|9| J
-> >   H ---|1| I
-> >   H ---|4| J
-> > ```
+> >  ![[../Diagramas/dis-u5-07-07-graph.svg]]
 >
 > **Paso 1 — Tabla de Dijkstra desde $A$ ($*$ = finalizado):**
 >
@@ -389,15 +320,7 @@ dg-publish: true
 >
 > **Paso 2 — Reconstruir el camino:** $J \leftarrow H \leftarrow I \leftarrow F \leftarrow E \leftarrow B \leftarrow A$; verificación: $2+5+2+3+1+4 = 17$. ✅
 >
-> > ```mermaid
-> > graph LR
-> >   A ---|2| B
-> >   B ---|5| E
-> >   E ---|2| F
-> >   F ---|3| I
-> >   I ---|1| H
-> >   H ---|4| J
-> > ```
+> >  ![[../Diagramas/dis-u5-07-08-graph.svg]]
 >
 > $$\boxed{d(A,J) = 17 \text{ vía } A-B-E-F-I-H-J}$$
 
@@ -422,15 +345,7 @@ dg-publish: true
 >
 > **Paso 2 — Reconstruir el camino:** $v_7 \leftarrow v_6 \leftarrow v_5 \leftarrow v_3 \leftarrow v_2 \leftarrow v_1 \leftarrow v_4$; verificación: $3+2+4+1+3+2 = 15$. ✅
 >
-> > ```mermaid
-> > graph LR
-> >   v4 ---|3| v1
-> >   v1 ---|2| v2
-> >   v2 ---|4| v3
-> >   v3 ---|1| v5
-> >   v5 ---|3| v6
-> >   v6 ---|2| v7
-> > ```
+> >  ![[../Diagramas/dis-u5-07-09-graph.svg]]
 >
 > ![[g5-ej11-dijkstra.png]]
 > **Figura generada con Python — camino mínimo v4→v7 del Ej. 11 en verde (d = 15).**
@@ -474,21 +389,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Unidad 5 Grafos y Arboles"]
-    R --> A["Grafos"]
-    R --> B["Arboles"]
-    R --> C["Caminos"]
-    A --> A1["Hamilton"]
-    A --> A2["Euler"]
-    A --> A3["Grados"]
-    B --> B1["BFS"]
-    B --> B2["DFS"]
-    B --> B3["Prim"]
-    C --> C1["Dijkstra"]
-    C --> C2["TSP"]
-```
+![[../Diagramas/dis-u5-07-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 >

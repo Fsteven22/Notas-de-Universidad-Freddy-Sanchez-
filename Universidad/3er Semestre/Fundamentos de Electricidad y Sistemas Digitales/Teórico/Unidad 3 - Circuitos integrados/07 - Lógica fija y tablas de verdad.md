@@ -9,12 +9,7 @@ dg-publish: true
 > 
 > Un **circuito integrado de lógica fija** implementa una función booleana predeterminada por su fabricación (por ejemplo, una compuerta AND o un decodificador), a diferencia de los dispositivos **programables** (como una FPGA), cuya función se define después de fabricados. Son la base de casi todo sistema digital: desde un simple circuito combinacional hasta la lógica de control de un procesador.
 > 
-> ```mermaid
-> graph LR
->     A[Entradas<br/>0 / 1] --> B[Compuerta o CI<br/>de lógica fija]
->     B --> C[Salida<br/>0 / 1]
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
 
 ---
 
@@ -160,25 +155,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Lógica Fija y<br/>Tablas de Verdad))
-    Compuertas básicas
-      AND, OR, NOT
-      NAND, NOR
-      XOR, XNOR
-    Familias lógicas
-      TTL - serie 74xx
-      CMOS - serie 40xx
-    CI comerciales
-      7400, 7404, 7408, 7432, 7486
-    Funcionalidad completa
-      Todo con NAND
-      Todo con NOR
-    Siguiente unidad
-      Codificación y álgebra de Bool
-      Minimización de funciones
-```
+![[Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
 
 ---
 

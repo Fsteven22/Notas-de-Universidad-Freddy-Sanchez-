@@ -392,12 +392,12 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 #flashcards/bd-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Entidad vs atributo vs relación?::Sustantivo que existe / propiedad que describe / verbo que conecta.
-> - ¿Reglas de una buena PK?::Única + no nula + estable + mínima.
-> - ¿Conectividad vs cardinalidad?::Clasificación 1:1/1:M/M:N vs mínimo-máximo (x,y).
-> - ¿Entidad débil (2 condiciones)?::Existencia-dependiente + PK derivada del padre.
-> - ¿Cómo sé si una relación es 1:M y no 1:1?::Escribiendo ambas direcciones (pregunta de vuelta).
+
+- ¿Entidad vs atributo vs relación?::Sustantivo que existe / propiedad que describe / verbo que conecta.
+- ¿Reglas de una buena PK?::Única + no nula + estable + mínima.
+- ¿Conectividad vs cardinalidad?::Clasificación 1:1/1:M/M:N vs mínimo-máximo (x,y).
+- ¿Entidad débil (2 condiciones)?::Existencia-dependiente + PK derivada del padre.
+- ¿Cómo sé si una relación es 1:M y no 1:1?::Escribiendo ambas direcciones (pregunta de vuelta).
 - ¿Trampa CALIFICACIÓN?::La nota no existe sola (alumno + asignatura a la vez): atributo de la relación, no entidad.
 - ¿Simple/compuesto/derivado/multivaluado?::Atómico / se parte / se calcula / N valores (pide tabla).
 - ¿Volátil vs no volátil?::Edad cambia sola (mala); fecha_nacimiento no (úsala).

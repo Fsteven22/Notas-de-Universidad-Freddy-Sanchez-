@@ -42,14 +42,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("s0"))
->     s0 -->|"b"| s0
->     s0 -->|"a"| s1((("s1")))
->     s1 -->|"b"| s1
->     s1 -->|"a"| s0
-> ```
+> ![[../Diagramas/dis-u6-04-01-graph.svg]]
 >
 > **Paso 2 — Pregunta guía:** ¿cuántas veces se cambia de estado al leer una $a$?
 >
@@ -88,14 +81,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("s0"))
->     s0 -->|"0"| s0
->     s0 -->|"1"| s1((("s1")))
->     s1 -->|"1"| s1
->     s1 -->|"0"| s0
-> ```
+> ![[../Diagramas/dis-u6-04-02-graph.svg]]
 >
 > **Paso 2 — Trazas de prueba:**
 >
@@ -130,14 +116,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("s0"))
->     s0 -->|"b"| s0
->     s0 -->|"a"| s1((("s1")))
->     s1 -->|"a"| s1
->     s1 -->|"b"| s1
-> ```
+> ![[../Diagramas/dis-u6-04-03-graph.svg]]
 >
 > **Paso 2 — Prueba de correctitud (acepta todas y sólo las pedidas):**
 >
@@ -165,14 +144,7 @@ dg-publish: true
 >
 > Leyenda del diagrama: $s_0$ representa $\sigma_0$, $s_1$ representa $\sigma_1$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("s0"))
->     s0 -->|"a/0"| s0
->     s0 -->|"b/1"| s1(("s1"))
->     s1 -->|"a/1"| s1
->     s1 -->|"b/0"| s1
-> ```
+> ![[../Diagramas/dis-u6-04-04-graph.svg]]
 >
 > **Paso 2 — Tabla paso a paso para $\alpha = bbaba$:**
 >
@@ -208,14 +180,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_0\}$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0((("s0")))
->     s0 -->|"0"| s0
->     s0 -->|"1"| s1(("s1"))
->     s1 -->|"0"| s1
->     s1 -->|"1"| s0
-> ```
+> ![[../Diagramas/dis-u6-04-05-graph.svg]]
 >
 > **Paso 2 — Trazas:**
 >
@@ -252,16 +217,7 @@ dg-publish: true
 >
 > Estado inicial: $q_0$. Conjunto de aceptación: $\mathcal{A} = \{q_2\}$. Se necesitan **3 estados mínimos**: hay que distinguir "nada", "llevo una $a$ final pendiente" y "completé $ab$".
 >
-> ```mermaid
-> graph LR
->     start(( )) --> q0(("q0"))
->     q0 -->|"a"| q1(("q1"))
->     q0 -->|"b"| q0
->     q1 -->|"a"| q1
->     q1 -->|"b"| q2((("q2")))
->     q2 -->|"a"| q1
->     q2 -->|"b"| q0
-> ```
+> ![[../Diagramas/dis-u6-04-06-graph.svg]]
 >
 > **Paso 2 — Trazas:**
 >
@@ -295,14 +251,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_0\}$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0((("s0")))
->     s0 -->|"b"| s0
->     s0 -->|"a"| s1(("s1"))
->     s1 -->|"a"| s1
->     s1 -->|"b"| s1
-> ```
+> ![[../Diagramas/dis-u6-04-07-graph.svg]]
 >
 > **Paso 2 — Trazas y argumento:**
 >
@@ -419,16 +368,7 @@ dg-publish: true
 >
 > Leyenda: $s_0$ representa $\sigma_0$, $s_1$ representa $\sigma_1$, $s_2$ representa $\sigma_2$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("s0"))
->     s0 -->|"a"| s0
->     s0 -->|"b"| s1(("s1"))
->     s1 -->|"a"| s0
->     s1 -->|"b"| s2((("s2")))
->     s2 -->|"b"| s2
->     s2 -->|"a"| s0
-> ```
+> ![[../Diagramas/dis-u6-04-08-graph.svg]]
 >
 > **Paso 2 — Trazas pedidas:**
 >
@@ -472,18 +412,7 @@ dg-publish: true
 >
 > Detalle clave: en $q_2$ con $a$ se va a $q_1$ (esa $a$ puede iniciar un nuevo $abb$), no a $q_0$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> q0(("q0"))
->     q0 -->|"a"| q1(("q1"))
->     q0 -->|"b"| q0
->     q1 -->|"a"| q1
->     q1 -->|"b"| q2(("q2"))
->     q2 -->|"a"| q1
->     q2 -->|"b"| q3((("q3")))
->     q3 -->|"a"| q3
->     q3 -->|"b"| q3
-> ```
+> ![[../Diagramas/dis-u6-04-09-graph.svg]]
 >
 > **Paso 2 — Dos trazas de verificación:**
 >
@@ -525,25 +454,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Guia 6 Automatas"]
-    R --> A["Actividades"]
-    R --> B["Propuestos"]
-    R --> C["Complementarios"]
-    A --> A1["Paridad de a"]
-    A --> A2["Termina en 1"]
-    A --> A3["Al menos una a"]
-    B --> B1["MEF salida bbaba"]
-    B --> B2["Paridad de unos"]
-    B --> B3["Termina en ab"]
-    B --> B4["Limpio o contaminado"]
-    B --> B5["Dos estados del sumador"]
-    C --> C1["Suma 101 mas 011"]
-    C --> C2["MEF salida aababb"]
-    C --> C3["Ultimo bloque bb"]
-    C --> C4["Subcadena abb"]
-```
+![[../Diagramas/dis-u6-04-10-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - MEF, tabla $S \backslash I$ y sumador en serie: [[01 - Máquinas de Estado Finito - Definición y Estructura]] — base de los Ej. 4, 8, 9 y 10.

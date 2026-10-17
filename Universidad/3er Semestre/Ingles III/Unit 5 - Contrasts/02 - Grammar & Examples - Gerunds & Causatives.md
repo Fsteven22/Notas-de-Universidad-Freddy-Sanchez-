@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** *forget/remember/stop* + gerund/inf (11.1) y causativos (11.2).
 
-```mermaid
-graph TB
-    A[Verbo] --> B{¿forget remember stop?}
-    B -->|Recuerdo pasado| C["gerund: getting seeing doing"]
-    B -->|Pendiente futuro| D["to + verb: to eat to study"]
-    A --> E{¿help let make?}
-    E --> F["base: help see, let sleep, make have"]
-
-    style C fill:#fff3c4
-    style D fill:#fff3c4
-```
+![[../Diagramas/en3-u5-03-01-graph.svg]]
 
 ---
 
@@ -179,19 +169,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U11 Grammar))
-    Gerund past
-      getting seeing
-      stopped doing
-    Infinitive future
-      to eat to study
-      stopped to buy
-    Causatives
-      help let make
-      person plus base
-```
+![[../Diagramas/en3-u5-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -31,21 +31,7 @@ tags: [CCPG1042, unidad1, solid, principios]
 > | **I**SP | Interfaces pequeñas por rol | Clientes obligados a implementar métodos inútiles |
 > | **D**IP | Depende de abstracciones | `new Concreta()` regado por todos lados |
 
-```mermaid
-graph TB
-    A["Clase con problemas"] --> B{"SOLID?"}
-    B --> S["S: una mision"]
-    B --> O["O: extiende sin editar"]
-    B --> L["L: sustituye sin romper"]
-    B --> I["I: interfaces justas"]
-    B --> D["D: abstracciones"]
-
-    style S fill:#e1f5ff
-    style O fill:#e1f5ff
-    style L fill:#e1f5ff
-    style I fill:#e1f5ff
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u1-05-01-graph.svg]]
 
 ---
 
@@ -246,18 +232,7 @@ graph TB
 > - **Violación típica:** `new Concreto()` regado por el código: impide probar con mocks y cambiar de proveedor implica reescribir.
 > - **No confundir:** **DIP** es el principio (la dirección de las dependencias). **Inyección de dependencias (DI)** es una *técnica* para cumplirlo (Spring, constructores). Se puede cumplir DIP sin ningún framework.
 
-```mermaid
-graph LR
-    subgraph ANTES["Sin DIP"]
-        A1["PedidoService<br/>alto nivel"] --> B1["PagoConTarjeta<br/>bajo nivel"]
-    end
-    subgraph DESPUES["Con DIP"]
-        A2["PedidoService<br/>alto nivel"] --> I["interface Pago"]
-        B2["PagoConTarjeta<br/>bajo nivel"] -.implementa.-> I
-        C2["PagoPayPal<br/>bajo nivel"] -.implementa.-> I
-    end
-    style I fill:#e1ffe1
-```
+![[../Diagramas/dsw-u1-05-02-graph.svg]]
 
 > [!example]- 💻 Código — DIP con inyección por constructor y prueba con un falso
 >
@@ -326,15 +301,7 @@ graph LR
 
 > [!tip] 🔄 Los Cinco no Son Independientes
 >
-> ```mermaid
-> graph TB
->     SRP["SRP<br/>clases enfocadas"] --> OCP["OCP<br/>extender sin editar"]
->     ISP["ISP<br/>interfaces justas"] --> OCP
->     DIP["DIP<br/>depender de abstracciones"] --> OCP
->     LSP["LSP<br/>implementaciones confiables"] --> OCP
->     LSP --> DIP
->     style OCP fill:#e1ffe1
-> ```
+> ![[../Diagramas/dsw-u1-05-03-graph.svg]]
 >
 > - **OCP es el objetivo**: un sistema que crece agregando código, no editándolo.
 > - **SRP** da las piezas pequeñas; **DIP** y **ISP** definen cómo se conectan; **LSP** garantiza que cualquier pieza intercambiable de verdad lo sea.
@@ -344,20 +311,7 @@ graph LR
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Principio Estoy Violando?
 
-```mermaid
-flowchart TD
-    A["Revisa una clase"] --> B{"Cambia por mas de<br/>una razon o actor?"}
-    B -->|"Si"| C["SRP: divide por responsabilidad"]
-    B -->|"No"| D{"Agregar una variante<br/>obliga a editar if / switch?"}
-    D -->|"Si"| E["OCP: extrae interfaz<br/>una clase por variante"]
-    D -->|"No"| F{"Una subclase no puede<br/>usarse donde va la base?"}
-    F -->|"Si"| G["LSP: revisa contrato<br/>o evita la herencia"]
-    F -->|"No"| H{"Hay metodos vacios o<br/>UnsupportedOperation?"}
-    H -->|"Si"| I["ISP: divide la interfaz por rol"]
-    H -->|"No"| J{"Hay new Concreta()<br/>en la logica de negocio?"}
-    J -->|"Si"| K["DIP: recibe interfaz<br/>por constructor"]
-    J -->|"No"| L["Diseno sano"]
-```
+![[../Diagramas/dsw-u1-05-04-flow.svg]]
 
 > [!note] 👃 Olores de Código → Principio
 >
@@ -671,29 +625,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("SOLID"))
-    SRP
-      Una mision
-      Un actor
-    OCP
-      Extiende sin editar
-      Polimorfismo
-    LSP
-      Sustituye sin romper
-      Contrato
-    ISP
-      Interfaces por rol
-      Sin metodos vacios
-    DIP
-      Abstracciones
-      Inyeccion por constructor
-    Errores comunes
-      Decoracion
-      Sobreingenieria
-      Herencia por reutilizacion
-```
+![[../Diagramas/dsw-u1-05-05-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

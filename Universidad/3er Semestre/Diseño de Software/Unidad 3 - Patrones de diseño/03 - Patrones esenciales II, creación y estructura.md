@@ -31,17 +31,7 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > | **Singleton** | Creacional | Una sola instancia global ⚠️ |
 > | **Template Method** | Comportamiento | Esqueleto fijo + pasos variables |
 
-```mermaid
-graph TB
-    A[Necesidad] --> B{¿Cuál?}
-    B --> F[Crear sin<br/>acoplar → Factory]
-    B --> AD[Compatibilizar<br/>→ Adapter]
-    B --> FA[Simplificar<br/>acceso → Facade]
-    B --> TM[Fijar pasos<br/>→ Template]
-
-    style F fill:#e1f5ff
-    style AD fill:#fff4e1
-```
+![[../Diagramas/dsw-u3-04-01-graph.svg]]
 
 ---
 
@@ -112,16 +102,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Patrón de Creación/Estructura?
 
-```mermaid
-flowchart TD
-    A["Necesidad"] --> B{"¿Crear,<br/>compatibilizar<br/>o simplificar?"}
-    B -->|"Crear con lógica"| C["Factory:<br/>un solo lugar crea"]
-    B -->|"Compatibilizar"| D["Adapter:<br/>traduce interfaces"]
-    B -->|"Simplificar uso"| E["Facade:<br/>cara simple"]
-    B -->|"Una sola instancia"| F{"¿Sin estado<br/>mutable?"}
-    F -->|"Sí"| G["Singleton<br/>aceptable"]
-    F -->|"No"| H["Inyección<br/>en su lugar"]
-```
+![[../Diagramas/dsw-u3-04-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -276,20 +257,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Esenciales II"))
-    Factory
-      Crear sin acoplar
-    Adapter
-      Compatibilizar
-    Facade
-      Simplificar
-    Singleton
-      Uno solo, cuidado
-    Template
-      Esqueleto fijo
-```
+![[../Diagramas/dsw-u3-04-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

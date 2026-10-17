@@ -1,0 +1,15 @@
+graph TB
+   A[Cambio en rama] --> B{¿Flujo?}
+   B --> C[❌ Push directo a main]
+   B --> D[✅ Rama + PR + review]
+
+   C --> C1[Rompe a todos]
+   C --> C2[Sin revisión]
+   C --> C3[Culpa difusa]
+
+   D --> D1[Tests en verde]
+   D --> D2[2 ojos revisan]
+   D --> D3[Merge limpio]
+
+   style C fill:#ffe1e1
+   style D fill:#e1ffe1

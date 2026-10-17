@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** talking through options, warnings (8.3), *I guess* (insider) y /ɜː/ vs /ʊ/.
 
-```mermaid
-graph TB
-    A[Aconsejas] --> B{¿Qué tono?}
-    B -->|Explorar opciones| C["Is there any way, Have you tried"]
-    B -->|Sugerir| D["If I were you, You could"]
-    B -->|Advertir| E["I wouldn't, I'd avoid"]
-    C --> F[Cierra: It can't hurt]
-
-    style E fill:#ffe1e1
-    style F fill:#e1ffe1
-```
+![[../Diagramas/en3-u2-04-01-graph.svg]]
 
 ---
 
@@ -209,21 +199,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Advice))
-    Explore
-      Is there any way
-      Have you tried
-    Suggest
-      If I were you
-      You could
-    Warn
-      I wouldn't
-      might not want
-    Close
-      It can't hurt
-```
+![[../Diagramas/en3-u2-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

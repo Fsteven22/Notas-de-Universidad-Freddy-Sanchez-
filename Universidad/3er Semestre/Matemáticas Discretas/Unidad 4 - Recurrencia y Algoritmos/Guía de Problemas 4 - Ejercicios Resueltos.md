@@ -243,13 +243,7 @@ dg-publish: true
 >
 > **Paso 2 — Conexión con Fibonacci:** Con $F_1 = 1$, $F_2 = 1$, $F_{k} = F_{k-1} + F_{k-2}$, se tiene $a_n = F_{n+1}$.
 >
-> ```mermaid
-> graph TD
->   A[Formas de subir n] --> B[Primer paso 1]
->   A --> C[Primer paso 2]
->   B --> D[Restan n menos 1]
->   C --> E[Restan n menos 2]
-> ```
+> ![[../Diagramas/dis-u4-07-01-graph.svg]]
 >
 > **Paso 3 — Fórmula explícita (Binet):** La ecuación característica $t^2 - t - 1 = 0$ tiene raíces $\phi = \frac{1+\sqrt{5}}{2}$ y $\psi = \frac{1-\sqrt{5}}{2}$. Con $a_1 = 1$, $a_2 = 2$:
 >
@@ -499,29 +493,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Guia 4 Recurrencia y Algoritmos"]
-    R --> A["Pseudocodigo"]
-    R --> B["Asintotica"]
-    R --> C["Recurrencias"]
-    R --> D["Lineales"]
-    R --> E["Conteo"]
-    A --> A1["Perfecto"]
-    A --> A2["Ultima ocurrencia"]
-    A --> A3["Funcion y sobreyectiva"]
-    B --> B1["Prueba O de n3"]
-    B --> B2["Theta cubica"]
-    C --> C1["Escalera Fibonacci"]
-    C --> C2["Mitades 2n menos 1"]
-    C --> C3["Galapagos 1 punto 3"]
-    D --> D1["Promedio y fracciones"]
-    D --> D2["Orden 2 con 21 y 2"]
-    D --> D3["No homogenea mas 4"]
-    E --> E1["n log n"]
-    E --> E2["log n"]
-    E --> E3["n3 con raiz"]
-```
+![[../Diagramas/dis-u4-07-02-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[01 - Relaciones de Recurrencia]] — definición y método iterativo

@@ -17,14 +17,7 @@ dg-publish: true
 > - Diseño de circuitos y planificación de tareas (dependencias entre procesos)
 > - Biología computacional (redes de interacción de proteínas)
 > 
-> ```mermaid
-> graph TD
->     A["Teoría de Grafos"] --> B["Grafos no dirigidos"]
->     A --> C["Digrafos (dirigidos)"]
->     B --> D["Tipos: simples, completos, bipartitos, ponderados"]
->     B --> E["Recorridos: Euler y Hamilton"]
->     B --> F["Conectividad"]
-> ```
+> ![[../Diagramas/dis-u5-02-01-graph.svg]]
 
 ---
 
@@ -82,14 +75,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 1 — Identificando lazos, aristas paralelas y vértices aislados
 > 
-> ```mermaid
-> graph LR
->     v1 ---|e1| v2
->     v1 ---|e2| v2
->     v2 ---|e3| v2
->     v2 ---|e4| v3
->     v4["v4 (aislado)"]
-> ```
+> ![[../Diagramas/dis-u5-02-02-graph.svg]]
 > 
 > - $e_3$ es un **lazo** (incide dos veces en $v_2$).
 > - $e_1$ y $e_2$ son **aristas paralelas** (ambas unen $v_1$ con $v_2$).
@@ -119,15 +105,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 2 — $K_4$
 > 
-> ```mermaid
-> graph LR
->     v1 --- v2
->     v1 --- v3
->     v1 --- v4
->     v2 --- v3
->     v2 --- v4
->     v3 --- v4
-> ```
+> ![[../Diagramas/dis-u5-02-03-graph.svg]]
 > 
 > $K_4$ tiene $4$ vértices y $\binom{4}{2} = 6$ aristas — todos los pares están conectados.
 
@@ -143,24 +121,11 @@ dg-publish: true
 > 
 > **Bipartito** (con $V_1 = {v_1, v_2, v_3}$, $V_2 = {v_4, v_5}$):
 > 
-> ```mermaid
-> graph LR
->     v1 --- v4
->     v1 --- v5
->     v2 --- v4
->     v3 --- v5
-> ```
+> ![[../Diagramas/dis-u5-02-04-graph.svg]]
 > 
 > **No bipartito** (contiene un ciclo de longitud impar):
 > 
-> ```mermaid
-> graph LR
->     v1 --- v2
->     v2 --- v3
->     v3 --- v4
->     v4 --- v5
->     v5 --- v1
-> ```
+> ![[../Diagramas/dis-u5-02-05-graph.svg]]
 > 
 > $K_4$ tampoco es bipartito — inténtalo probar por qué.
 
@@ -197,15 +162,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 4 — Trayectorias, ciclos y grados
 > 
-> ```mermaid
-> graph LR
->     v1 ---|e1| v2
->     v1 ---|e2| v2
->     v2 ---|e3| v2
->     v2 ---|e4| v3
->     v4["v4"]
->     v5 ---|e5| v6
-> ```
+> ![[../Diagramas/dis-u5-02-06-graph.svg]]
 > 
 > - $(v_1, e_2, v_2, e_4, v_3)$ es una **trayectoria simple** de $v_1$ a $v_3$.
 >     
@@ -237,15 +194,7 @@ dg-publish: true
 > 
 > El primer artículo de teoría de grafos fue de **Leonhard Euler en 1736**. Dos islas en el río Pregel en Königsberg estaban conectadas entre sí y con las orillas por **7 puentes**. El problema: comenzar en cualquier lugar ($A$, $B$, $C$ o $D$), cruzar cada puente **exactamente una vez** y regresar al punto de inicio.
 > 
-> ```mermaid
-> graph LR
->     A((A)) --- B((B))
->     A --- B
->     B --- C((C))
->     B --- C
->     B --- D((D))
->     C --- D
-> ```
+> ![[../Diagramas/dis-u5-02-07-graph.svg]]
 > 
 > Al modelar el problema como grafo (vértices = regiones de tierra, aristas = puentes), se reduce a encontrar un **ciclo de Euler**. Como algunos vértices tienen grado impar, **el problema no tiene solución** — este fue precisamente el resultado que Euler demostró.
 
@@ -261,15 +210,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 5 — Ciclo hamiltoniano
 > 
-> ```mermaid
-> graph LR
->     v1 --- v2
->     v1 --- v4
->     v2 --- v3
->     v2 --- v5
->     v3 --- v4
->     v3 --- v5
-> ```
+> ![[../Diagramas/dis-u5-02-08-graph.svg]]
 > 
 > El ciclo $(v_1, v_2, v_5, v_3, v_4, v_1)$ es un **ciclo hamiltoniano** — pasa por todos los vértices exactamente una vez y regresa al inicio. El grafo tiene además varios caminos hamiltonianos posibles.
 
@@ -326,39 +267,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de recorrido busco?
 
-```mermaid
-graph TD
-    A["¿Qué necesito recorrer?"] --> B{"¿Todas las ARISTAS una sola vez?"}
-    A --> C{"¿Todos los VÉRTICES una sola vez?"}
-    B --> D["Buscar ciclo/camino de EULER"]
-    D --> E{"¿Grafo conexo y todos los grados pares?"}
-    E -->|Sí| F["Existe ciclo de Euler ✅"]
-    E -->|No, pero exactamente 2 vértices de grado impar| G["Existe camino de Euler (no ciclo)"]
-    E -->|No| H["No existe recorrido de Euler ❌"]
-    C --> I["Buscar ciclo/camino de HAMILTON"]
-    I --> J{"¿Cumple Dirac u Ore?"}
-    J -->|Sí| K["Garantizado que existe ✅"]
-    J -->|No| L["No hay garantía — revisar caso por caso"]
-```
+![[../Diagramas/dis-u5-02-09-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-```mermaid
-graph TD
-    A["Grafos I"] --> B["Grafo G = (V, E)"]
-    A --> C["Digrafo"]
-    B --> D["Simple: sin lazos ni paralelas"]
-    B --> E["Completo Kn"]
-    B --> F["Bipartito / Bipartito completo Km,n"]
-    B --> G["Ponderado"]
-    B --> H["Conexo / Disconexo"]
-    B --> I["Recorridos"]
-    I --> J["Euler: todas las aristas"]
-    I --> K["Hamilton: todos los vértices"]
-
-```
+![[../Diagramas/dis-u5-02-10-graph.svg]]
 
 ---
 

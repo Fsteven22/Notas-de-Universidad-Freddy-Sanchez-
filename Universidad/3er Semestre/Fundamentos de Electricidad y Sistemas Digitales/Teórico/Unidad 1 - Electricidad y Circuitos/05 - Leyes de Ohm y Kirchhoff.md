@@ -15,19 +15,7 @@
 > - KCL es como un cruce de tuberías: el agua que entra debe ser igual al agua que sale.
 > - KVL es como una ruta circular de montaña: si subes 1000 m, al volver al punto de inicio habrás bajado exactamente 1000 m.
 > 
-> ```mermaid
-> graph TD
->     A[Análisis de Circuitos] --> B[Ley de Ohm]
->     A --> C[Leyes de Kirchhoff]
->     B --> D[Relación V, I, R<br/>en un elemento]
->     C --> E[KCL — Nodos<br/>Conservación de carga]
->     C --> F[KVL — Mallas<br/>Conservación de energía]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
 > 
 > |Ley|Postulado|Aplica a|
 > |---|---|---|
@@ -59,16 +47,7 @@
 > 
 > $$I = \frac{V}{R} \qquad\qquad R = \frac{V}{I}$$
 > 
-> ```mermaid
-> graph TD
->     A["V = I · R"] --> B["I = V / R<br/>¿Cuánta corriente fluye?"]
->     A --> C["R = V / I<br/>¿Cuál es la resistencia?"]
->     A --> D["V = I · R<br/>¿Cuál es la caída de voltaje?"]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
 > 
 > ### 📐 Relación gráfica: curva V-I
 > 
@@ -137,15 +116,7 @@
 > 
 > Un **nodo** es cualquier punto de conexión entre dos o más elementos. Un **nodo principal** conecta tres o más elementos.
 > 
-> ```mermaid
-> graph TD
->     I1[I₁ →] --> N((Nodo A))
->     I2[I₂ →] --> N
->     N --> I3[→ I₃]
->     N --> I4[→ I₄]
->     N --> I5[→ I₅]
->     style N fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
 > 
 > > KCL en el nodo A: $I_1 + I_2 - I_3 - I_4 - I_5 = 0$
 > > 
@@ -197,17 +168,7 @@
 > |**Resistencia**|La corriente asumida va en el mismo sentido del recorrido|−|
 > |**Resistencia**|La corriente asumida va en sentido contrario al recorrido|+|
 > 
-> ```mermaid
-> graph LR
->     A["🔋 Vs (+)"] -->|"+ V_s"| B[R₁]
->     B -->|"- V_R1"| C[R₂]
->     C -->|"- V_R2"| D[R₃]
->     D -->|"- V_R3"| A
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1f5ff
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
 > 
 > > KVL: $+V_s - V_{R1} - V_{R2} - V_{R3} = 0$
 > > 
@@ -233,20 +194,7 @@
 > 
 > Para circuitos con múltiples mallas, se asigna una **corriente de malla** a cada malla independiente y se aplica KVL en cada una. Esto genera un sistema de ecuaciones que se resuelve simultáneamente.
 > 
-> ```mermaid
-> graph LR
->     Vs1[🔋 Vs1] -->|I₁| R1[R₁]
->     R1 --> N1[Nodo]
->     N1 -->|I₁-I₂| R2[R₂]
->     N1 -->|I₂| R3[R₃]
->     R2 --> N2[Nodo]
->     R3 --> N2
->     N2 --> Vs1
->     style Vs1 fill:#fff4e1
->     style R1 fill:#e1f5ff
->     style R2 fill:#e1ffe1
->     style R3 fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
 > 
 > **Procedimiento:**
 > 
@@ -350,18 +298,7 @@
 > 
 > > Una vez memorizado el patrón, construir la matriz toma **menos de un minuto** por circuito. No se necesita recorrer mallas ni escribir KVL/KCL paso a paso — el sistema completo surge directamente de la topología del circuito.
 > 
-> ```mermaid
-> graph TD
->     A[Identificar mallas o nodos] --> B[Llenar diagonal: términos propios<br/>suma de R o G conectados]
->     B --> C[Llenar fuera de diagonal: términos mutuos<br/>R o G compartidos, signo negativo]
->     C --> D[Llenar vector de fuentes<br/>con signo según sentido]
->     D --> E[Resolver sistema: regla de Cramer<br/>o sustitución]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
 
 ---
 
@@ -448,14 +385,7 @@
 > 
 > > ⚠️ Dos fuentes de corriente **no pueden conectarse en serie** a menos que entreguen exactamente la misma corriente; de lo contrario, violan KCL.
 > 
-> ```mermaid
-> graph LR
->     A["Fuentes en SERIE<br/>→ sumar voltajes<br/>V_eq = ΣVₖ"] --> C["Fuente equivalente<br/>única"]
->     B["Fuentes en PARALELO<br/>→ sumar corrientes<br/>I_eq = ΣIₖ"] --> C
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
 
 ---
 
@@ -469,16 +399,7 @@
 > |**Mallas (KVL)**|$\sum V = 0$|Corrientes de malla|Hay pocas mallas y muchos nodos|
 > |**Nodos (KCL)**|$\sum I = 0$|Tensiones de nodo|Hay pocos nodos y muchas mallas|
 > 
-> ```mermaid
-> graph TD
->     A[Circuito a analizar] --> B{¿Cuántas<br/>mallas vs nodos?}
->     B -->|Pocas mallas| C[Método de<br/>corrientes de malla<br/>KVL]
->     B -->|Pocos nodos| D[Método de<br/>tensiones de nodo<br/>KCL]
->     B -->|Elemento único| E[Ley de Ohm<br/>directa]
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
 > 
 > > 💡 Ambos métodos producen el mismo resultado. La elección depende de la estructura del circuito y la cantidad de incógnitas que genera cada enfoque.
 
@@ -490,19 +411,7 @@
 > 
 > En la práctica, las tres leyes se aplican de manera conjunta e iterativa para resolver cualquier circuito:
 > 
-> ```mermaid
-> graph LR
->     A[Ley de Ohm<br/>V = IR] --> D[Análisis<br/>completo del<br/>circuito]
->     B[KCL<br/>ΣI = 0<br/>en nodos] --> D
->     C[KVL<br/>ΣV = 0<br/>en mallas] --> D
->     D --> E[Corrientes<br/>en cada rama]
->     D --> F[Voltajes<br/>en cada elemento]
->     D --> G[Potencia<br/>disipada/entregada]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
 > 
 > **Resumen de fórmulas esenciales:**
 > 
@@ -520,38 +429,7 @@
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Ohm y<br/>Kirchhoff))
-    Ley de Ohm
-      V = IR
-      Elemento lineal
-      Tres formas
-      Curva V-I
-    KCL
-      Nodos
-      Suma corrientes = 0
-      Conservación de carga
-      Paralelo
-    KVL
-      Mallas
-      Suma voltajes = 0
-      Conservación de energía
-      Serie
-    Métodos de análisis
-      Corrientes de malla
-      Tensiones de nodo
-      Sistema de ecuaciones
-    Forma Matricial
-      Matriz R·I = V para mallas
-      Matriz G·V = I para nodos
-      Término propio positivo
-      Término mutuo negativo
-    Interconexión de Fuentes
-      Voltaje en serie → sumar algebraicamente
-      Corriente en paralelo → sumar algebraicamente
-      Restricciones de conexión
-```
+![[Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
 
 ---
 

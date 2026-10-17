@@ -17,15 +17,7 @@ dg-publish: true
 > 
 > Resolver una recurrencia con la ecuación característica es como usar una llave maestra: en vez de ir probando manualmente término por término (método iterativo), planteas una ecuación cuadrática, la resuelves una sola vez, y esa solución abre la fórmula para _cualquier_ $n$.
 > 
-> ```mermaid
-> graph TD
->     A[Recurrencia lineal de orden 2] --> B{¿Homogénea?}
->     B -->|Sí| C[Ecuación característica t² - c₁t - c₂ = 0]
->     B -->|No| D[Términos independientes fuera de este alcance]
->     C --> E{Tipo de raíces}
->     E -->|Distintas r₁ ≠ r₂| F[aₙ = b·r₁ⁿ + c·r₂ⁿ]
->     E -->|Raíz doble r| G[aₙ = b·rⁿ + c·n·rⁿ]
-> ```
+> ![[../Diagramas/dis-u4-03-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -136,21 +128,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A["Recurrencia Homogenea"] --> B["Clasificacion"]
-    A --> C["Ecuacion Caracteristica"]
-    A --> D["Raices Distintas"]
-    A --> E["Raiz Doble"]
-    B --> B1["Homogenea: sin termino independiente"]
-    B --> B2["No homogenea: con termino independiente f de n"]
-    C --> C1["t2 - c1 t - c2 = 0"]
-    C --> C2["Se obtiene proponiendo an = tn"]
-    D --> D1["an = b r1n + c r2n"]
-    E --> E1["an = b rn + c n rn"]
-    E --> E2["Factor n por independencia lineal"]
-
-```
+![[../Diagramas/dis-u4-03-02-graph.svg]]
 
 ---
 

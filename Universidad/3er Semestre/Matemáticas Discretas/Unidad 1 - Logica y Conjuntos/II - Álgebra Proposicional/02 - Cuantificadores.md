@@ -21,16 +21,7 @@ dg-publish: true
 > 
 > Para poder trabajar con este tipo de enunciados necesitamos las **funciones proposicionales** y los **cuantificadores**.
 >
-> ```mermaid
-> graph LR
->     P["P(x)<br/>abierto"] --> U["∀ cierra<br/>para todo"]
->     P --> E["∃ cierra<br/>existe"]
->     E --> U1["∃! cierra<br/>uno solo"]
->     U --> Q["Proposición<br/>V o F"]
->     E --> Q
->     U1 --> Q
->     style Q fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-06-01-graph.svg]]
 >
 > **En esta nota:** funciones proposicionales y dominios, $\forall$/$\exists$/$\exists!$ con negación (De Morgan cuantificado), orden de cuantificadores y el error clásico: negar $\forall$ como $\forall\neg$ en vez de $\exists\neg$.
 
@@ -227,14 +218,7 @@ dg-publish: true
 
 > [!note] 🔄 Mapa — Negar cuantificadores
 >
-> ```mermaid
-> graph LR
->     A["¬∀x P(x)"] --> B["∃x ¬P(x)"]
->     C["¬∃x P(x)"] --> D["∀x ¬P(x)"]
->     E["Orden ∀∃ ≠ ∃∀"] --> F["El orden cambia el significado"]
->     style B fill:#e1f5ff
->     style D fill:#e1f5ff
-> ```
+> ![[../../Diagramas/dis-u1-06-02-graph.svg]]
 >
 > **Se lee así:** negar intercambia el cuantificador y niega adentro; el orden nunca se permuta gratis.
 
@@ -448,24 +432,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Funciones Proposicionales] --> B[Cuantificador Universal ∀]
-    A --> C[Cuantificador Existencial ∃]
-    A --> U[Existencia Única ∃!]
-    
-    B --> D["∀x∈D: P(x) Verdadera si P(x) V para todo x Falsa si hay un contraejemplo"]
-    C --> E["∃x∈D: P(x) Verdadera si P(x) V para algún x Falsa si P(x) F para todo x"]
-    U --> V["∃!x∈D: P(x) Verdadera si P(x) V para exactamente un x"]
-    
-    D --> F["Negación: ∃x∈D: ¬P(x)"]
-    E --> G["Negación: ∀x∈D: ¬P(x)"]
-    
-    B --> H[Cuantificadores Anidados]
-    C --> H
-    H --> I[∀∀ ∀∃ ∃∀ ∃∃]
-    
-```
+![[../../Diagramas/dis-u1-06-03-graph.svg]]
 
 ---
 

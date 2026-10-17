@@ -16,10 +16,7 @@ tags: [MATG1051, unidad6, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 Máquinas de Estado Finito] --> B[02 Autómatas]
-```
+![[../Diagramas/dis-u6-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman]] (Unidad 5)

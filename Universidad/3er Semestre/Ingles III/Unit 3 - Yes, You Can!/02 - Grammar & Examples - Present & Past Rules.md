@@ -19,18 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present (9.1) + past (9.2) + pasiva de autoridad + accuracy check.
 
-```mermaid
-graph TB
-    A[Regla] --> B{¿Presente o pasado?}
-    B -->|Presente| C["aren't allowed / may / required"]
-    B -->|Pasado| D["couldn't / could / had to"]
-    C --> E{¿Autoridad visible?}
-    D --> E
-    E -->|No| F["Pasiva: Cars are allowed"]
-    E -->|Sí| G["Activa: City allows cars"]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u3-03-01-graph.svg]]
 
 ---
 
@@ -185,21 +174,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Rules))
-    Present 9.1
-      prohibit may not
-      permit allowed
-      oblige required
-    Past 9.2
-      couldn't
-      could
-      had to
-    Voice
-      unknown passive
-      known active
-```
+![[../Diagramas/en3-u3-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

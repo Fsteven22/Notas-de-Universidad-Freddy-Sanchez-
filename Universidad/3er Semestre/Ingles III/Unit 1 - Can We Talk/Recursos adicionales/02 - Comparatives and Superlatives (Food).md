@@ -18,16 +18,7 @@ dg-publish: true
 >
 > **En esta nota:** formación (cortos, largos, irregulares + ortografía), tabla 1×1, comidas del Ecuador y errores clásicos.
 
-```mermaid
-graph TB
-    A[Adjetivo] --> B{¿Cuántas sílabas?}
-    B -->|corta| C["-er / -est: tall-taller-tallest"]
-    B -->|larga| D["more / most: expensive"]
-    A --> E{¿Irregular?}
-    E -->|good/bad/far| F["better-best / worse-worst"]
-
-    style F fill:#fff3c4
-```
+![[../../Diagramas/en3-u1-08-01-graph.svg]]
 
 ---
 
@@ -128,21 +119,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Comparison))
-    Comparative
-      Cortos -er
-      Largos more
-      Cierra con than
-    Superlative
-      Cortos -est
-      Largos most
-      Abre con the
-    Irregulares
-      good-better-best
-      bad-worse-worst
-```
+![[../../Diagramas/en3-u1-08-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

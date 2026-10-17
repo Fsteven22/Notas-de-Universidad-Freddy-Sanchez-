@@ -20,16 +20,7 @@ tags: [FESD, unidad3, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones — Bloque OPAM + 555 + Lógica
 
-```mermaid
-graph LR
-    A[01 - CI No Programables] --> B[02 - OPAM Ruido]
-    B --> C[03 - Lineales Básicas]
-    C --> D[04 - Integrador/Derivador/No Lineales]
-    D --> E[05 - Ejercicios Oposición]
-    E --> F[06 - 555/ADC/PWM]
-    F --> G[07 - Lógica Fija]
-    G --> H[Unidad 4 - Digital]
-```
+![[Diagramas/00_-_Índice_Unidad_3_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Ruido Electrónico e Interferencia]] (Unidad 2)

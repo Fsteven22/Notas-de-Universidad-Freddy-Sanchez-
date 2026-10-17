@@ -19,15 +19,7 @@ dg-publish: true
 > 
 > Sus técnicas son especialmente útiles en **computación** y **ciencias de la información**.
 >
-> ```mermaid
-> graph TD
->     A[Lógica Proposicional] --> B[Proposiciones<br/>V o F]
->     A --> C[Conectivos<br/>¬ ∧ ∨ → ↔]
->     A --> D[Tablas de verdad]
->     D --> E[Tautología / Contradicción]
->     style B fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-03-01-graph.svg]]
 >
 > **En esta nota:** qué cuenta como proposición (y qué no: preguntas, órdenes, predicados abiertos), los 5 conectivos con su tabla, y cómo leer tautologías y contradicciones — la base de todo el curso.
 >
@@ -104,16 +96,7 @@ dg-publish: true
 
 > [!note] 🗺️ Mapa — ¿Cuándo es verdadero cada conectivo?
 >
-> ```mermaid
-> flowchart TD
->     A["¿Qué conectivo?"] --> N["¬ invierte"]
->     A --> O["∨ solo F con F,F"]
->     A --> Y["∧ solo V con V,V"]
->     A --> C["→ solo F con V,F"]
->     A --> B["↔ V si iguales"]
->     style O fill:#ffe1e1
->     style Y fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-03-02-flow.svg]]
 >
 > **Se lee así:** memoriza el único caso que rompe cada conectivo; todo lo demás es el caso contrario.
 
@@ -292,16 +275,7 @@ dg-publish: true
 
 > [!note] 📋 Resumen de Contectivos
 > 
-> ```mermaid
-> graph TD
->     A[Conectivos Lógicos] --> B["¬p  Negación (unitario)"]
->     A --> C["p ∨ q  Disyunción (binario)"]
->     A --> D["p ∧ q  Conjunción (binario)"]
->     A --> E["p ⊻ q  Disyunción Exclusiva (binario)"]
->     A --> F["p → q  Condicional (binario)"]
->     A --> G["p ↔ q  Bicondicional (binario)"]
-> 
-> ```
+> ![[../../Diagramas/dis-u1-03-03-graph.svg]]
 > 
 > | Conectivo            | Símbolo               | Nombre               | Falso cuando...              |
 > | -------------------- | --------------------- | -------------------- | ---------------------------- |
@@ -461,12 +435,7 @@ dg-publish: true
 > 
 > Los **circuitos combinatorios** (o circuitos lógicos) son sistemas digitales cuya salida depende **únicamente** de los valores actuales de las entradas. Están construidos con **compuertas lógicas** que implementan directamente los conectivos de la lógica proposicional.
 > 
-> ```mermaid
-> graph LR
->     A[Proposiciones Lógicas] -->|Se implementan como| B[Compuertas Lógicas]
->     B -->|Se combinan en| C[Circuitos Combinatorios]
->     C -->|Se aplican en| D[Computadoras y Electrónica]
-> ```
+> ![[../../Diagramas/dis-u1-03-04-graph.svg]]
 
 ### 🔌 Compuertas Lógicas Básicas
 
@@ -580,35 +549,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A["Logica Proposicional"] --> B["Proposiciones"]
-    A --> C["Conectivos Logicos"]
-    A --> D["Tablas de Verdad"]
-    A --> E["Propiedades"]
-    A --> F["Circuitos Combinatorios"]
-    B --> B1["Atomicas"]
-    B --> B2["Variables proposicionales"]
-    B --> B3["Valor logico V/F"]
-    C --> C1["Negacion NOT"]
-    C --> C2["Conjuncion AND"]
-    C --> C3["Disyuncion OR"]
-    C --> C4["Disyuncion Exclusiva XOR"]
-    C --> C5["Condicional IF-THEN"]
-    C --> C6["Bicondicional IFF"]
-    D --> D1["Precedencia de operadores"]
-    D --> D2["2^n filas para n variables"]
-    D --> D3["Verificar equivalencias"]
-    E --> E1["Tautologias"]
-    E --> E2["Contradicciones"]
-    E --> E3["Equivalencias logicas"]
-    E --> E4["Leyes De Morgan"]
-    F --> F1["Compuertas NOT AND OR XOR"]
-    F --> F2["NAND NOR"]
-    F --> F3["Medio Sumador"]
-    F --> F4["Expresiones a circuitos"]
-
-```
+![[../../Diagramas/dis-u1-03-05-graph.svg]]
 
 ---
 

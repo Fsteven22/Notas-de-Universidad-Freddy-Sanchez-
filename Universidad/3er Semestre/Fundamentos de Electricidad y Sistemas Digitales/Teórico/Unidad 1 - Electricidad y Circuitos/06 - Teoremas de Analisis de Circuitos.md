@@ -18,24 +18,7 @@
 > - El **Teorema de Norton** es el equivalente usando una fuente de corriente.
 > - La **Máxima Transferencia de Potencia** responde cuándo una carga extrae el máximo de energía posible de la fuente.
 > 
-> ```mermaid
-> graph TD
->     A[Teoremas de Circuitos] --> B[Superposición]
->     A --> C[Thévenin]
->     A --> D[Norton]
->     A --> E[Máxima Transferencia<br/>de Potencia]
->     A --> F[Transformación<br/>de Fuentes]
->     B --> B1[Una fuente<br/>a la vez]
->     C --> C1[Equivalente<br/>Vs + Rs]
->     D --> D1[Equivalente<br/>Is + Rp]
->     E --> E1[RL = RTh<br/>Pmáx]
->     F --> F1[Voltaje ↔ Corriente]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#f5e1ff
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
 > 
 > |Teorema|Utilidad principal|
 > |---|---|
@@ -57,19 +40,7 @@
 > 
 > ### ⚙️ Procedimiento
 > 
-> ```mermaid
-> graph TD
->     P1[1️⃣ Identificar todas las<br/>fuentes independientes] --> P2
->     P2[2️⃣ Dejar activa UNA fuente;<br/>apagar las demás] --> P3
->     P3[3️⃣ Calcular la respuesta<br/>parcial con esa fuente] --> P4
->     P4[4️⃣ Repetir para cada<br/>fuente restante] --> P5
->     P5[5️⃣ Sumar algebraicamente<br/>todas las respuestas parciales]
->     style P1 fill:#e1f5ff
->     style P2 fill:#e1ffe1
->     style P3 fill:#fff4e1
->     style P4 fill:#e1f5ff
->     style P5 fill:#f5e1ff
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
 > 
 > ### 🔕 Cómo "apagar" una fuente
 > 
@@ -170,14 +141,7 @@
 > |**Fórmula**|$V_{R_i} = \dfrac{V_f \cdot R_i}{R_{eq}}$|$I_{R_i} = \dfrac{R_{eq} \cdot I_f}{R_j}$|
 > |**Estructura**|Una sola malla|Un solo par de nodos|
 > 
-> ```mermaid
-> graph LR
->     A[Circuito simple] --> B{¿Tipo?}
->     B -->|Resistores en SERIE<br/>fuente de voltaje| C["Divisor de voltaje<br/>V_Ri = Vf·Ri / Req"]
->     B -->|Resistores en PARALELO<br/>fuente de corriente| D["Divisor de corriente<br/>I_Ri = Req·If / Rj"]
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 
 ![[ChatGPT Image 17 jun 2026, 00_10_30.png]]
 
@@ -194,21 +158,7 @@
 > 
 > Fue enunciado por el ingeniero francés **Léon Charles Thévenin** en 1883.
 > 
-> ```mermaid
-> graph LR
->     subgraph Original["Red original compleja"]
->         F1[Fuentes y resistencias] --> A1[Terminal A]
->         F1 --> B1[Terminal B]
->     end
->     subgraph Equiv["Equivalente Thévenin"]
->         VTh["🔋 VTh"] --> RTh[RTh]
->         RTh --> A2[Terminal A]
->         VTh --> B2[Terminal B]
->     end
->     Original -->|"≡"| Equiv
->     style VTh fill:#fff4e1
->     style RTh fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
 > 
 > ### ⚙️ Procedimiento para obtener $V_{Th}$ y $R_{Th}$
 > 
@@ -261,16 +211,7 @@
 > 
 > Fue enunciado por **Edward Lawry Norton** en 1926.
 > 
-> ```mermaid
-> graph LR
->     subgraph Equiv["Equivalente Norton"]
->         IN["⬆ IN"] --> RN[RN]
->         IN --> A2[Terminal A]
->         RN --> B2[Terminal B]
->     end
->     style IN fill:#fff4e1
->     style RN fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
 > 
 > ### ⚙️ Parámetros del equivalente Norton
 > 
@@ -287,12 +228,7 @@
 > 
 > $$V_{Th} = I_N \cdot R_N \qquad\qquad I_N = \frac{V_{Th}}{R_{Th}}$$
 > 
-> ```mermaid
-> graph LR
->     A["Thévenin<br/>VTh + RTh (serie)"] <-->|"Transformación<br/>de fuentes"| B["Norton<br/>IN + RN (paralelo)"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
 > 
 > ### 🧮 Ejemplo resuelto
 > 
@@ -318,18 +254,7 @@
 > 
 > Es la base práctica de la relación Thévenin-Norton.
 > 
-> ```mermaid
-> graph LR
->     subgraph V["Fuente de voltaje"]
->         Vs[🔋 Vs] --- Rs_s[Rs en serie]
->     end
->     subgraph I["Fuente de corriente"]
->         Is[⬆ Is] --- Rs_p[Rs en paralelo]
->     end
->     V <-->|"Is = Vs/Rs<br/>Vs = Is·Rs"| I
->     style Vs fill:#fff4e1
->     style Is fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
 > 
 > ### ⚙️ Fórmulas de transformación
 > 
@@ -494,15 +419,7 @@
 > 
 > ### ⚡ Regla mnemotécnica — mismo patrón para mallas y nodos
 > 
-> ```mermaid
-> graph TD
->     A[Diagonal principal<br/>Término PROPIO] -->|"Suma de R o G<br/>propios del nodo/malla"| B["Signo POSITIVO ✅"]
->     C[Fuera de diagonal<br/>Término MUTUO] -->|"R o G compartida<br/>entre nodos/mallas"| D["Signo NEGATIVO ❌"]
->     E[Vector de fuentes] -->|"Voltaje o corriente<br/>según sentido de recorrido"| F["Signo por convención"]
->     style A fill:#e1ffe1
->     style C fill:#ffe1e1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
 
 ![[ChatGPT Image 17 jun 2026, 00_30_37.png]]
@@ -521,64 +438,13 @@
 > |**Transf. de fuentes**|Intercambia Vs ↔ Is|Fuente + resistencia|Simplifica nodos o mallas sucesivos|
 > |**Máx. transferencia**|$R_L = R_{Th}$|Red Thévenin conocida|Optimiza la potencia entregada|
 > 
-> ```mermaid
-> graph TD
->     A[Circuito complejo] --> B{¿Qué se busca?}
->     B -->|Respuesta ante<br/>varias fuentes| C[Superposición]
->     B -->|Simplificar<br/>para la carga| D{¿Tipo de equivalente?}
->     B -->|Optimizar<br/>potencia| E[Máx. transferencia<br/>de potencia]
->     D -->|Voltaje + serie| F[Thévenin]
->     D -->|Corriente + paralelo| G[Norton]
->     F <-->|Transformación| G
->     style C fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Teoremas de<br/>Circuitos))
-    Superposición
-      Una fuente a la vez
-      Apagar fuentes
-      Sumar respuestas
-      Solo cantidades lineales
-    Divisores
-      Voltaje → serie → Vf·Ri/Req
-      Corriente → paralelo → Req·If/Rj
-      Circuito simple de una malla/par de nodos
-    Thévenin
-      VTh = Voc
-      RTh = Req sin fuentes
-      Serie con carga
-      Léon Thévenin 1883
-    Norton
-      IN = Isc
-      RN = RTh
-      Paralelo con carga
-      Dual de Thévenin
-    Transformación
-      Vs/Rs ↔ Is·Rs
-      Serie ↔ Paralelo
-      Simplificación
-    Máx. Transferencia
-      RL = RTh
-      Pmáx = VTh²/4RTh
-      Eficiencia 50%
-      Telecomunicaciones
-    Métodos Matriciales
-      Mallas R·I = V
-      Nodos G·V = If
-      Término propio positivo
-      Término mutuo negativo
-      G simétrica si solo fuentes independientes
-      Circuito plano para mallas
-```
+![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 
 ---
 

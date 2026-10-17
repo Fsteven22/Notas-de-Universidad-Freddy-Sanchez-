@@ -14,14 +14,7 @@ dg-publish: true
 >
 > Todos usan el mismo método: **OPAM ideal** $\Rightarrow$ $V_+\approx V_-$, $I_+\approx I_-\approx 0$, luego **KCL en nodos clave**.
 >
-> ```mermaid
-> graph LR
->     A[OPAM ideal] --> B[V+ = V-<br/>I+ = I- = 0]
->     B --> C[KCL en nodo inversor<br/>y nodos intermedios]
->     C --> D[Expresión Vo/Vi]
->     C --> E[Rin = Vin/Iin]
->     C --> F[Thevenin visto<br/>desde la fuente]
-> ```
+> ![[Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_01.svg]]
 >
 
 > [!note] 🧭 Cómo usar esta nota
@@ -267,25 +260,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Ejercicios<br/>Resueltos))
-    Método
-      V+≈V- I≈0
-      KCL en nodo C/X
-      Rin = Vs/I1
-      Thevenin Vth/Rth
-    Numéricos PDF
-      V2/V1 = -6.4
-      vs = sin100t
-      Nodo C 3V y 6V
-      Dos etapas
-    Oposiciones
-      Murcia 04 - inversor con Rs
-      Valladolid 96 - sumador
-      MEC 94 - instrumentación x2
-      Extremadura 00 - corriente
-```
+![[Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
 
 ---
 

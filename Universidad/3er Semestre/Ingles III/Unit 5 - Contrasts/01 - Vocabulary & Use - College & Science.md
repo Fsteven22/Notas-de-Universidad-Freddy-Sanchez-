@@ -19,15 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** college (11.1), science word families (11.2), *snake oil* y drills.
 
-```mermaid
-graph TB
-    A[U11 Vocab] --> B[College 11.1]
-    A --> C[Science 11.2]
-    B --> D["freshman dorm major"]
-    C --> E["research researcher research-based"]
-
-    style E fill:#fff3c4
-```
+![[../Diagramas/en3-u5-02-01-graph.svg]]
 
 ---
 
@@ -176,18 +168,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U11 Vocab))
-    College
-      freshman dorm
-      major degree
-    Science
-      research family
-      proven forms
-    Insider
-      snake oil
-```
+![[../Diagramas/en3-u5-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

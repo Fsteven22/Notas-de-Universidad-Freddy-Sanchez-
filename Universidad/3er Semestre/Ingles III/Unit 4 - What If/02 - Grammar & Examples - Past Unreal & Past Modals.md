@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** past unreal (10.1) + *should/could/might/couldn't have* (10.2) + accuracy checks.
 
-```mermaid
-graph TB
-    A[Pasado irreal] --> B{¿Especulas o criticas?}
-    B -->|Especulas resultado| C["had + would have"]
-    B -->|Criticas acción| D["should have"]
-    B -->|Posibilidad perdida| E["could/might have"]
-    B -->|Imposible| F["couldn't have"]
-
-    style F fill:#ffe1e1
-```
+![[../Diagramas/en3-u4-03-01-graph.svg]]
 
 ---
 
@@ -181,19 +172,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Past Unreal))
-    If clause
-      had melted
-      hadn't sat
-    Main clause
-      would have made
-      wouldn't have found
-    Past modals
-      should have critica
-      could might posibilidad
-```
+![[../Diagramas/en3-u4-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

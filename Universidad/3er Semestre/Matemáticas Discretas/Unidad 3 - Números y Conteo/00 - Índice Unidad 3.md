@@ -20,14 +20,7 @@ tags: [MATG1051, unidad3, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 Divisibilidad] --> B[02 MCD/MCM]
-    B --> C[03 Criterios]
-    D[04 Principios Suma/Mult] --> E[05 Permutaciones]
-    E --> F[06 Binomio/Palomar]
-    A --> D
-```
+![[../Diagramas/dis-u3-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Sucesiones y Cadenas]] (Unidad 2)

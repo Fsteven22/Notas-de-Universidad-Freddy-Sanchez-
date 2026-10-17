@@ -1,0 +1,10 @@
+graph TD
+   A[Problema de cardinalidad] --> B{Cuantos conjuntos?}
+   B -- 2 conjuntos --> C["PIE: A∪B = A + B - A∩B"]
+   B -- 3 conjuntos --> D[Inclusion-exclusion con 7 terminos]
+   D --> E[Llenar diagrama de adentro hacia afuera]
+   E --> F["Centro: A∩B∩C"]
+   E --> G["Pares: A∩B menos A∩B∩C"]
+   E --> H["Solos: A menos pares menos centro"]
+   C --> I["Verificar: suma de regiones = U"]
+   H --> I

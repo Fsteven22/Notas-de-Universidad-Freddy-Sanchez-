@@ -17,17 +17,7 @@ dg-publish: true
 > 
 > Imagina dos engranajes con $30$ y $105$ dientes. El MCD es el tamaño del engranaje auxiliar más grande que encaja perfectamente en ambos. El MCM es el número mínimo de dientes que deben girar para que ambos engranajes vuelvan simultáneamente a su posición inicial.
 > 
-> ```mermaid
-> graph TD
->     A[Dos enteros m y n] --> B[MCD]
->     A --> C[MCM]
->     B --> D[Divisor común más grande]
->     C --> E[Múltiplo común más pequeño]
->     B --> F[Método 1: Factorización prima mínimos exponentes]
->     B --> G[Método 2: Algoritmo de Euclides divisiones sucesivas]
->     C --> H[Factorización prima máximos exponentes]
->     C --> I[Relación con MCD: mcd · mcm = m · n]
-> ```
+> ![[../Diagramas/dis-u3-03-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -244,15 +234,7 @@ dg-publish: true
 > 
 > ### ⚙️ Procedimiento
 > 
-> ```mermaid
-> graph TD
->     P1["1️⃣ Inicio: par (a, b)"] --> P2
->     P2["2️⃣ Calcular r = a mod b"] --> P3
->     P3{¿r = 0?}
->     P3 -->|Sí| P4["mcd = b ✅"]
->     P3 -->|No| P5["Nuevo par: (b, r)"]
->     P5 --> P2
-> ```
+> ![[../Diagramas/dis-u3-03-02-graph.svg]]
 > 
 > ---
 > 
@@ -280,14 +262,7 @@ dg-publish: true
 > |**Factorización prima**|Factorizar ambos, tomar mínimos exponentes|Se necesita también el MCM|
 > |**Algoritmo de Euclides**|Divisiones sucesivas hasta residuo $0$|Números grandes, solo se necesita el MCD|
 > 
-> ```mermaid
-> graph TD
->     A[Calcular mcd o mcm] --> B{¿Números pequeños?}
->     B -->|Sí| C[Inspección directa o factorización]
->     B -->|No| D{¿Solo MCD o también MCM?}
->     D -->|Solo MCD| E[Algoritmo de Euclides más eficiente]
->     D -->|Ambos| F[Factorización prima luego mcd·mcm = m·n]
-> ```
+> ![[../Diagramas/dis-u3-03-03-graph.svg]]
 
 ---
 
@@ -314,28 +289,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A["MCD, MCM y Euclides"] --> B["MCD"]
-    A --> C["MCM"]
-    A --> D["Algoritmo de Euclides"]
-    A --> E["Algoritmo de la Division"]
-    A --> F["Principio del Buen Orden"]
-    B --> B1["Divisor comun mas grande"]
-    B --> B2["Factorizacion: minimos exponentes"]
-    C --> C1["Multiplo comun mas pequeno"]
-    C --> C2["Factorizacion: maximos exponentes"]
-    D --> D1["Divisiones sucesivas"]
-    D --> D2["Termina cuando r = 0"]
-    D --> D3["Eficiente para numeros grandes"]
-    E --> E1["n = d q + r con 0 <= r < d"]
-    E --> E2["Cociente q y residuo r unicos"]
-    E --> E3["n mod d = r"]
-    F --> F1["Todo subconjunto no vacio tiene minimo"]
-    F --> F2["Base del Algoritmo de la Division"]
-    F --> F3["Equivalente a induccion"]
-
-```
+![[../Diagramas/dis-u3-03-04-graph.svg]]
 
 ---
 

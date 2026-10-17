@@ -19,13 +19,7 @@ tags: [MATG1051, unidad5, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 Grafos I] --> B[02 Grafos II]
-    B --> C[03 Isomorfismo]
-    D[04 Árboles I] --> E[05 Árboles II]
-    A --> D
-```
+![[../Diagramas/dis-u5-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] (Unidad 4)

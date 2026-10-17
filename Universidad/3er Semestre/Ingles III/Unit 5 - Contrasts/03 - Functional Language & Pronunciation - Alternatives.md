@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart de alternativas (11.3), register check y word stress.
 
-```mermaid
-graph TB
-    A[Cliente pide] --> B{¿Qué haces?}
-    B -->|Pides opciones| C[Do you have anything else]
-    B -->|Sugieres| D[You could also try]
-    B -->|Admites contras| E[It might not be best]
-    D --> F[Cierras: I like that option]
-
-    style F fill:#e1ffe1
-```
+![[../Diagramas/en3-u5-04-01-graph.svg]]
 
 ---
 
@@ -150,19 +141,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Alternatives))
-    Ask
-      anything else
-    Suggest
-      You could try
-      That could work
-    Honest con
-      might not be best
-    Stress
-      one queen only
-```
+![[../Diagramas/en3-u5-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

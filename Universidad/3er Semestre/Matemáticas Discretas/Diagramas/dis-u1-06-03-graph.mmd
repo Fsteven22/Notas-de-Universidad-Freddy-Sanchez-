@@ -1,0 +1,16 @@
+graph TD
+   A[Funciones Proposicionales] --> B[Cuantificador Universal ∀]
+   A --> C[Cuantificador Existencial ∃]
+   A --> U[Existencia Única ∃!]
+   
+   B --> D["∀x∈D: P(x) Verdadera si P(x) V para todo x Falsa si hay un contraejemplo"]
+   C --> E["∃x∈D: P(x) Verdadera si P(x) V para algún x Falsa si P(x) F para todo x"]
+   U --> V["∃!x∈D: P(x) Verdadera si P(x) V para exactamente un x"]
+   
+   D --> F["Negación: ∃x∈D: ¬P(x)"]
+   E --> G["Negación: ∀x∈D: ¬P(x)"]
+   
+   B --> H[Cuantificadores Anidados]
+   C --> H
+   H --> I[∀∀ ∀∃ ∃∀ ∃∃]
+   

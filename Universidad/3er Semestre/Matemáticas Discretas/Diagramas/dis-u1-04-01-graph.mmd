@@ -1,0 +1,9 @@
+graph LR
+    P["p → q"] --> R["Recíproca<br/>q → p"]
+    P --> I["Inversa<br/>¬p → ¬q"]
+    P --> C["Contrarrecíproca<br/>¬q → ¬p"]
+    C --> E["Equivalente a p → q ✅"]
+    R --> N["NO equivalente ❌"]
+    I --> N
+    style C fill:#e1ffe1
+    style N fill:#ffe1e1

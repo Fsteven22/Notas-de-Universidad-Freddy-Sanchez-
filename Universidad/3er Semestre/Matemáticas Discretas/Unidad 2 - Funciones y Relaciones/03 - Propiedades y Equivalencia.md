@@ -10,29 +10,14 @@ dg-publish: true
 > 
 > Dos tipos especiales de relaciones sobre X surgen de combinar las cuatro propiedades básicas de maneras distintas. La **relación de equivalencia** generaliza la idea de igualdad; la **relación de orden** generaliza la idea de "menor o igual que".
 > 
-> ```mermaid
-> graph TD
->     A[Propiedades de R sobre X] --> B[Reflexiva]
->     A --> C[Simétrica]
->     A --> D[Antisimétrica]
->     A --> E[Transitiva]
->     B & C & E --> F[Relación de Equivalencia]
->     B & D & E --> G[Relación de Orden Parcial]
-> ```
+> ![[../Diagramas/dis-u2-04-01-graph.svg]]
 
 ---
 
 
 > [!note] 📋 Mapa — Orden vs equivalencia
 >
-> ```mermaid
-> graph TD
->     A["R + reflexiva + transitiva"] --> B{"¿Antisimétrica<br/>o simétrica?"}
->     B -->|"Antisimétrica"| C["Orden parcial"]
->     B -->|"Simétrica"| D["Equivalencia<br/>→ partición"]
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[../Diagramas/dis-u2-04-02-graph.svg]]
 >
 > **Se lee así:** reflexiva + transitiva es la base; la tercera propiedad decide la familia.
 
@@ -129,12 +114,7 @@ dg-publish: true
 
 > [!note] 🧩 Mapa — Partición ↔ equivalencia
 >
-> ```mermaid
-> graph LR
->     P["Partición<br/>disjuntos + cubren"] --> E["Equivalencia<br/>clases"]
->     E --> Q["Cociente<br/>conjunto de clases"]
->     style P fill:#e1ffe1
-> ```
+> ![[../Diagramas/dis-u2-04-03-graph.svg]]
 >
 > **Se lee así:** partir y equivaler son lo mismo visto de dos lados; el cociente reúne las clases.
 
@@ -209,19 +189,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Relación de equivalencia R] --> B[Clases de equivalencia]
-    B --> C["[a] = {x ∈ X : xRa}"]
-    B --> D["[a] = [b] ⟺ aRb"]
-    B --> E["[a] ∩ [b] = ∅ si distintas"]
-    A --> F[Conjunto cociente]
-    F --> G["𝒮 = {[a] : a ∈ X}"]
-    G --> H[Partición de X]
-    H --> I[Teorema 2: toda partición genera equivalencia]
-    H --> J[Teorema 3: toda equivalencia genera partición]
-
-```
+![[../Diagramas/dis-u2-04-04-graph.svg]]
 
 ---
 

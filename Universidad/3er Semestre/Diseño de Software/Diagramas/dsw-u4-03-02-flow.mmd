@@ -1,0 +1,7 @@
+flowchart TD
+   A["Smell detectado"] --> B{"¿Qué tipo?"}
+   B -->|"Grande/mezclado"| C["Extract<br/>(function/variable/class)"]
+   B -->|"Mal ubicado"| D["Move<br/>(function/field)"]
+   B -->|"Confuso"| E["Rename"]
+   B -->|"Inútil/pequeño"| F["Inline"]
+   B -->|"Etapas mezcladas"| G["Split<br/>(phase/loop)"]

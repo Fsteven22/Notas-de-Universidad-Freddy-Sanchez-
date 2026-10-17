@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** jobs (8.1), work/life balance (8.2), el Venn work–commitments–home y drills del libro.
 
-```mermaid
-graph TB
-    A[U8 Vocab] --> B[Jobs 8.1]
-    A --> C[Balance 8.2]
-    B --> D["full-time vs part-time"]
-    C --> E["downtime vs time off"]
-
-    style D fill:#fff3c4
-    style E fill:#fff3c4
-```
+![[../Diagramas/en3-u2-02-01-graph.svg]]
 
 ---
 
@@ -209,20 +200,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U8 Vocab))
-    Jobs 8.1
-      full-time part-time
-      high-paying
-      freelance
-    Balance 8.2
-      busy schedule
-      downtime
-      me time
-    Venn
-      commitments centro
-```
+![[../Diagramas/en3-u2-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

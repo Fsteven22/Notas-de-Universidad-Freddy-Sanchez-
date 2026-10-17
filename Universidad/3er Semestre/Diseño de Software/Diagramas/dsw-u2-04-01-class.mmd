@@ -1,0 +1,10 @@
+classDiagram
+   class Estudiante {
+       -String carnet
+       +inscribirse(curso)
+   }
+   class Curso {
+       -int cupo
+       +matricular(e)
+   }
+   Estudiante "*" --> "1..*" Curso : se inscribe

@@ -9,16 +9,7 @@ dg-publish: true
 > 
 > La distinción fundamental en conteo es si el **orden de selección importa** o no:
 > 
-> ```mermaid
-> graph TD
->     A["Selección de r elementos de n disponibles"] --> B{¿Importa el orden?}
->     B -->|Sí| C[PERMUTACIÓN]
->     B -->|No| D[COMBINACIÓN]
->     C --> E["P(n,r) = n! / (n-r)!"]
->     D --> F["C(n,r) = n! / ((n-r)! r!)"]
->     C --> G["Con repetición: n! / (k₁! k₂! … kᵣ!)"]
->     D --> H["Con repetición: C(n+r-1, r)"]
-> ```
+> ![[../Diagramas/dis-u3-06-01-graph.svg]]
 
 ---
 

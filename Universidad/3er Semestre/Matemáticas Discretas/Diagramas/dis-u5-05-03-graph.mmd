@@ -1,0 +1,8 @@
+graph TD
+   A[Árbol de Expansión de G] --> B{"¿Objetivo?"}
+   B -->|Explorar por niveles| C[BFS]
+   B -->|Explorar profundo primero| D[DFS]
+   B -->|Minimizar costo total| E["Prim (grafo ponderado)"]
+   C --> F[Árbol de expansión válido]
+   D --> F
+   E --> G[Árbol de expansión MÍNIMA]

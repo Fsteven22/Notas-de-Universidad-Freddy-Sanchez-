@@ -17,17 +17,7 @@ dg-publish: true
 > 
 > Una relación de recurrencia es como una receta de cocina que dice "para preparar la porción $n$, toma la porción $n-1$ y agrégale un ingrediente". Sin saber cómo se ve la primera porción (condición inicial), no puedes reconstruir ninguna de las siguientes.
 > 
-> ```mermaid
-> graph TD
->     A[Relación de Recurrencia] --> B[Concepto y Condiciones Iniciales]
->     A --> C[Modelado de Sucesiones Clásicas]
->     A --> D[Método Iterativo de Resolución]
->     A --> E[Torre de Hanoi]
->     C --> F[Fibonacci fₙ = fₙ₋₁ + fₙ₋₂]
->     C --> G[Interés Compuesto Aₙ = 1,12·Aₙ₋₁]
->     D --> H[Fórmula explícita por sustitución]
->     E --> I[cₙ = 2cₙ₋₁ + 1 solución: 2ⁿ - 1]
-> ```
+> ![[../Diagramas/dis-u4-02-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -89,15 +79,7 @@ dg-publish: true
 > 
 > El **método iterativo** consiste en sustituir repetidamente la relación en sí misma hasta detectar un patrón generalizable.
 > 
-> ```mermaid
-> graph TD
->     P1["1️⃣ Escribir aₙ en función de aₙ₋₁"] --> P2
->     P2["2️⃣ Sustituir aₙ₋₁ por su propia expresión"] --> P3
->     P3["3️⃣ Repetir la sustitución varias veces"] --> P4
->     P4{"¿Se reconoce el patrón?"}
->     P4 -->|No| P3
->     P4 -->|Sí| P5["4️⃣ Generalizar en función de n ✅"]
-> ```
+> ![[../Diagramas/dis-u4-02-02-graph.svg]]
 > 
 > ### 🧮 Ejemplo resuelto — interés compuesto
 > 
@@ -149,23 +131,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A["Relaciones de Recurrencia"] --> B["Concepto"]
-    A --> C["Sucesiones Clasicas"]
-    A --> D["Metodo Iterativo"]
-    A --> E["Torre de Hanoi"]
-    B --> B1["an en funcion de predecesores"]
-    B --> B2["Requiere condiciones iniciales"]
-    C --> C1["Fibonacci: fn = fn-1 + fn-2"]
-    C --> C2["Interes compuesto: An = 1.12 An-1"]
-    D --> D1["Sustitucion repetida"]
-    D --> D2["Detectar patron"]
-    D --> D3["Generalizar formula explicita"]
-    E --> E1["cn = 2cn-1 + 1"]
-    E --> E2["Solucion optima: cn = 2n - 1"]
-
-```
+![[../Diagramas/dis-u4-02-03-graph.svg]]
 
 ---
 

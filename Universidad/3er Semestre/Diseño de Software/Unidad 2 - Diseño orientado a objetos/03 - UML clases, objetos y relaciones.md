@@ -27,18 +27,7 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | **Equipo** | Cada quien su estilo | Un solo idioma |
 > | **Evaluación** | Diagrama ambiguo | Diagrama calificable |
 
-```mermaid
-classDiagram
-    class Estudiante {
-        -String carnet
-        +inscribirse(curso)
-    }
-    class Curso {
-        -int cupo
-        +matricular(e)
-    }
-    Estudiante "*" --> "1..*" Curso : se inscribe
-```
+![[../Diagramas/dsw-u2-04-01-class.svg]]
 
 ---
 
@@ -78,14 +67,7 @@ classDiagram
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Relación Uso?
 
-```mermaid
-flowchart TD
-    A["Dos clases<br/>relacionadas"] --> B{"¿Una es parte<br/>de la otra?"}
-    B -->|"No, solo se usan"| C["Asociación<br/>simple"]
-    B -->|"Sí"| D{"¿Sobrevive<br/>sin el todo?"}
-    D -->|"Sí"| E["Agregación<br/>rombo blanco"]
-    D -->|"No"| F["Composición<br/>rombo negro"]
-```
+![[../Diagramas/dsw-u2-04-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -251,21 +233,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("UML Clases"))
-    Caja
-      Atributos
-      Operaciones
-    Relaciones
-      Asociación
-      Agregación
-      Composición
-      Herencia
-    Reglas
-      Multiplicidad
-      Sustantivos
-```
+![[../Diagramas/dsw-u2-04-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -18,13 +18,7 @@ tags: [MATG1051, unidad2, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 Funciones] --> B[02 Relaciones]
-    B --> C[03 Propiedades y Equivalencia]
-    C --> D[04 Sucesiones y Cadenas]
-    A --> C
-```
+![[../Diagramas/dis-u2-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Cardinalidad y Leyes de Cardinalidad]] (Unidad 1)

@@ -17,19 +17,7 @@ dg-publish: true
 > 
 > Imagina que quieres repartir $72$ caramelos en grupos iguales. ¿En cuántos grupos diferentes puedes hacerlo sin que sobre ninguno? Eso es divisibilidad: $72$ es divisible por $1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72$ — exactamente $12$ formas.
 > 
-> ```mermaid
-> graph TD
->     A[Divisibilidad y Numeros Primos] --> B[Divisibilidad]
->     A --> C[Numeros Primos]
->     A --> D[Teorema Fundamental de la Aritmetica]
->     A --> E[Infinitud de Primos]
->     B --> B1["d n = d q"]
->     B --> B2["Propiedades: d m mas menos n"]
->     C --> C1["m > 1 con divisores 1 y m"]
->     C --> C2["Test: probar hasta raiz n"]
->     D --> D1["Factorizacion unica en primos"]
->     E --> E1["Demostracion por contradiction"]
-> ```
+> ![[../Diagramas/dis-u3-02-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -206,22 +194,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    root["Divisibilidad y Numeros Primos"] --> B[Divisibilidad]
-    root --> C[Numeros Primos]
-    root --> D[TFA]
-    root --> E[Infinitud]
-    B --> B1["d | n = d q"]
-    B --> B2["Multiplo / divisor / factor"]
-    B --> B3["Si d|n y d|m entonces d|m mas menos n"]
-    C --> C1["m > 1 con divisores solo 1 y m"]
-    C --> C2["Test: probar hasta raiz n"]
-    D --> D1["Todo n > 1 = producto de primos"]
-    D --> D2["Factorizacion unica"]
-    E --> E1["Demostracion por contradiction"]
-
-```
+![[../Diagramas/dis-u3-02-02-graph.svg]]
 
 ---
 

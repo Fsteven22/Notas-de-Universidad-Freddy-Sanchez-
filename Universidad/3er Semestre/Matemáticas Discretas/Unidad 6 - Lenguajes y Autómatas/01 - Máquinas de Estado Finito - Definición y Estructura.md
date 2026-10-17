@@ -18,14 +18,7 @@ dg-publish: true
 > - Protocolos de red y validación de formatos (expresiones regulares).
 > - Control industrial y sistemas embebidos (semáforos, ascensores, máquinas expendedoras).
 >
-> ```mermaid
-> graph TD
->     A["Sistema secuencial"] --> B["Entrada actual"]
->     A --> C["Estado interno (memoria finita)"]
->     B --> D["Nueva salida"]
->     C --> D
->     C --> E["Nuevo estado"]
-> ```
+> ![[../Diagramas/dis-u6-02-01-graph.svg]]
 
 ---
 
@@ -49,10 +42,7 @@ dg-publish: true
 >
 > Un **retraso unitario de tiempo** acepta como entrada un bit $x_t$ en el tiempo $t$ y produce como salida $x_{t-1}$, el bit recibido en el tiempo $t-1$.
 >
-> ```mermaid
-> graph LR
->     A["x_t"] --> B["Retraso"] --> C["x_{t-1}"]
-> ```
+> ![[../Diagramas/dis-u6-02-02-graph.svg]]
 >
 > **Observación:** el retraso unitario permite almacenar información del instante anterior — es el bloque más simple que introduce "memoria" en un sistema digital.
 
@@ -87,16 +77,7 @@ dg-publish: true
 
 > [!note] 🔩 Estructura del sumador en serie
 >
-> ```mermaid
-> graph LR
->     xt["x_t"] --> S["Sumador completo"]
->     yt["y_t"] --> S
->     ct1["c_{t-1}"] --> S
->     S --> zt["z_t"]
->     S --> ct["c_t"]
->     ct --> R["Retraso"]
->     R --> ct1
-> ```
+> ![[../Diagramas/dis-u6-02-03-graph.svg]]
 >
 > El **sumador completo** calcula el bit de suma $z_t$ y el nuevo acarreo $c_t$. El **retraso** guarda $c_t$ para usarlo como $c_{t-1}$ en el siguiente instante — esto es exactamente lo que le da "memoria" al sumador.
 
@@ -191,14 +172,7 @@ dg-publish: true
 
 > [!note] 📊 Diagrama del ejemplo de dos estados
 >
-> ```mermaid
-> graph LR
->     start(( )) --> s0(("σ₀"))
->     s0 -->|"a/0"| s0
->     s0 -->|"b/1"| s1(("σ₁"))
->     s1 -->|"a/1"| s1
->     s1 -->|"b/0"| s1
-> ```
+> ![[../Diagramas/dis-u6-02-04-graph.svg]]
 
 ---
 
@@ -240,16 +214,7 @@ dg-publish: true
 >
 > donde $NC$: no hay acarreo, $C$: hay acarreo. El estado inicial es $NC$.
 >
-> ```mermaid
-> graph LR
->     start(( )) --> nc(("NC"))
->     nc -->|"00/0"| nc
->     nc -->|"01/1, 10/1"| nc
->     nc -->|"11/0"| c(("C"))
->     c -->|"00/1"| nc
->     c -->|"01/0, 10/0"| c
->     c -->|"11/1"| c
-> ```
+> ![[../Diagramas/dis-u6-02-05-graph.svg]]
 >
 > La salida de cada transición es el bit de suma; el nuevo estado indica si queda acarreo para el siguiente paso.
 
@@ -270,15 +235,7 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué modelo usar?
 
-```mermaid
-graph TD
-    A["¿La salida depende solo de la entrada actual?"] -->|"Sí"| B["Circuito combinacional"]
-    A -->|"No"| C["¿Necesito registrar solo el símbolo anterior?"]
-    C -->|"Sí"| D["Retraso unitario"]
-    C -->|"No, depende de una historia más compleja"| E["¿La salida es un símbolo de un conjunto O?"]
-    E -->|"Sí"| F["Máquina de estado finito M = (I,O,S,f,g,σ)"]
-    E -->|"No, solo quiero saber si la cadena es válida"| G["Autómata de estado finito (ver nota relacionada)"]
-```
+![[../Diagramas/dis-u6-02-06-graph.svg]]
 
 ---
 

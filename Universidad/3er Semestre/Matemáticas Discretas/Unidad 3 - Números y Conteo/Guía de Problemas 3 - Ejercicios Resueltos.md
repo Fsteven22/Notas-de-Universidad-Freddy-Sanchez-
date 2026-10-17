@@ -356,13 +356,7 @@ dg-publish: true
 > - Paraguas: 4 opciones.
 > - Sombrero: 2 sombreros + no llevar ninguno = 3 opciones.
 >
-> ```mermaid
-> graph TD
->   A[Inicio] --> B[Impermeable 3 opciones]
->   B --> C[Paraguas 4 opciones]
->   C --> D[Sombrero 2 opciones o ninguno]
->   D --> E[Total 3 x 4 x 3]
-> ```
+> ![[../Diagramas/dis-u3-08-01-graph.svg]]
 >
 > $$3 \cdot 4 \cdot 3 = 36$$
 >
@@ -570,14 +564,7 @@ dg-publish: true
 >
 > **Supuesto:** Los jugadores llevan dorsales $1$–$12$ (uno cada uno) y se suma el dorsal.
 >
-> ```mermaid
-> graph TD
->   A[Suponer toda terna consecutiva suma 19 o menos] --> B[Sumar las 12 ternas]
->   B --> C[Cada jugador aparece en 3 ternas]
->   C --> D[Total 3 x 78 igual 234]
->   D --> E[Pero 12 x 19 igual 228]
->   E --> F[Contradiccion 234 mayor que 228]
-> ```
+> ![[../Diagramas/dis-u3-08-02-graph.svg]]
 >
 > **Paso 1 — Supuesto de contradicción:** cada terna de consecutivos suma $\leq 19$.
 >
@@ -757,30 +744,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    R["Guia 3 Numeros y Conteo"]
-    R --> A["Divisibilidad"]
-    R --> B["MCD y MCM"]
-    R --> C["Conteo"]
-    R --> D["Permutaciones"]
-    R --> E["Binomio"]
-    A --> A1["Modulo 3"]
-    A --> A2["Induccion"]
-    A --> A3["Criterios del 3 y 9"]
-    B --> B1["Factorizacion"]
-    B --> B2["Euclides"]
-    B --> B3["Bases"]
-    C --> C1["Suma y producto"]
-    C --> C2["Divisores"]
-    C --> C3["Digitos"]
-    D --> D1["Comites"]
-    D --> D2["Bloques"]
-    D --> D3["Casillas"]
-    E --> E1["Pascal"]
-    E --> E2["Estrellas y barras"]
-    E --> E3["Termino general"]
-```
+![[../Diagramas/dis-u3-08-03-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 >

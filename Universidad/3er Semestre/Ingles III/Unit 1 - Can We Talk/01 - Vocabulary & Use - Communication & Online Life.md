@@ -19,18 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** classroom language, 12 verbos de comunicación (7.1), 13 términos online (7.2) y drill de categorización.
 
-```mermaid
-graph TB
-    A[Communication words] --> B[Classroom]
-    A --> C[Verbs 7.1]
-    A --> D[Online 7.2]
-    B --> E["How should we start?"]
-    C --> F["gossip vs inform"]
-    D --> G["clickbait vs newsfeed"]
-
-    style F fill:#fff3c4
-    style G fill:#fff3c4
-```
+![[../Diagramas/en3-u1-02-01-graph.svg]]
 
 ---
 
@@ -172,6 +161,18 @@ graph TB
 > > - ***profile*** — tu ficha biográfica (*biographical info*).
 
 > [!example] ✏️ Ejercicio 4 — Categorize by meaning (7.1 drill A, p. 66)
+>
+> Agrupa el box por significado parecido (audio 2.02 para verificar):
+>
+> - Box: *catch up with, comment, congratulate, contact, explain, gossip, inform of, reply to*.
+> - A *respond to*, ___ · B *mention, report*, ___, ___, ___ · C *keep in touch with*, ___, ___ · D *criticize, persuade*, ___, ___.
+>
+> > [!success]- ✅ Solución (clave del libro)
+> >
+> > - **A (responder):** *respond to, **reply to**, contact*.
+> > - **B (decir algo sobre):** *mention, report, **comment, explain, inform of***.
+> > - **C (seguir en contacto):** *keep in touch with, **catch up with***.
+> > - **D (influir/opinar fuerte):** *criticize, persuade, **congratulate, gossip***.
 
 > [!example] ✏️ Ejercicio 5 — Interview check (7.2B, p. 68 · 🎧 con audio 2.04)
 >
@@ -252,22 +253,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U7 Vocab))
-    Classroom
-      Roles
-      Time
-      Teacher
-    Verbs 7.1
-      gossip about
-      congratulate on
-      persuade
-    Online 7.2
-      clickbait
-      lurker
-      hashtag
-```
+![[../Diagramas/en3-u1-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

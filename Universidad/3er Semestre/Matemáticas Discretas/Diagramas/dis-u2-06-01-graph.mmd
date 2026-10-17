@@ -1,0 +1,28 @@
+graph LR
+  subgraph Dominio
+    a2[2]
+    a3[3]
+    a5[5]
+    a6[6]
+    a9[9]
+    a15[15]
+  end
+  subgraph Codominio
+    b2[2]
+    b3[3]
+    b5[5]
+    b6[6]
+    b9[9]
+    b15[15]
+  end
+  a2 --> b2
+  a2 --> b6
+  a3 --> b3
+  a3 --> b6
+  a3 --> b9
+  a3 --> b15
+  a5 --> b5
+  a5 --> b15
+  a6 --> b6
+  a9 --> b9
+  a15 --> b15

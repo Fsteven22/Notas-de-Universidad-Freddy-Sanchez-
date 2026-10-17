@@ -15,15 +15,7 @@ dg-publish: true
 > - **Electricidad** → Como el agua en una tubería: el voltaje es la presión, la corriente es el caudal, y la resistencia es el diámetro de la tubería.
 > - **Sin diferencia de presión** → Sin voltaje = sin flujo de corriente.
 > 
-> ```mermaid
-> graph LR
->     A[Fuente de<br/>Energía 🔋] -->|Voltaje V| B[Conductor]
->     B -->|Corriente I| C[Carga<br/>Resistiva]
->     C -->|Retorno| A
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
 > 
 > **Las tres magnitudes esenciales:**
 > 
@@ -41,17 +33,7 @@ dg-publish: true
 > 
 > La **carga eléctrica** es la propiedad fundamental de la materia que da origen a los fenómenos eléctricos. Existe en dos tipos: positiva (+) y negativa (−).
 > 
-> ```mermaid
-> graph TD
->     A[Átomo] --> B[Núcleo]
->     A --> C[Electrones ⊖]
->     B --> D[Protones ⊕]
->     B --> E[Neutrones]
->     style A fill:#f5e1ff
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
->     style E fill:#f0f0f0
-> ```
+> ![[Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
 > 
 > **Propiedades de la carga:**
 > 
@@ -114,15 +96,7 @@ dg-publish: true
 > |Mismo signo ($++$ o $--$)|Repulsiva (se alejan)|
 > |Signo opuesto ($+-$)|Atractiva (se acercan)|
 > 
-> ```mermaid
-> graph LR
->     A[⊕ Carga +] -->|Repulsión| B[⊕ Carga +]
->     C[⊕ Carga +] -->|Atracción| D[⊖ Carga −]
->     style A fill:#ffe1e1
->     style B fill:#ffe1e1
->     style C fill:#ffe1e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
 > 
 > **Ejemplo resuelto:**
 > 
@@ -208,17 +182,7 @@ dg-publish: true
 > - $Q$ = Carga (Culombios, C)
 > - $t$ = Tiempo (Segundos, s)
 > 
-> ```mermaid
-> graph LR
->     A[Corriente<br/>Eléctrica] --> B[DC<br/>Corriente Continua]
->     A --> C[AC<br/>Corriente Alterna]
->     B --> D[Flujo constante<br/>en un sentido]
->     C --> E[Flujo que cambia<br/>de dirección periódicamente]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
 > 
 > **Comparación DC vs AC:**
 > 
@@ -253,30 +217,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sesión 1<br/>Conceptos Fundamentales))
-    Carga Eléctrica
-      Q = n·e
-      Culombio C
-      Millikan 1909
-    Fuerza Eléctrica
-      Ley de Coulomb
-      Fe = Ke·q1·q2 / r²
-      Atracción y Repulsión
-    Campo Eléctrico
-      E = kQ / r²
-      N/C = V/m
-      Líneas de campo
-    Potencial Eléctrico
-      U = Fe·r
-      V = U/q
-      ΔV = W/q
-    Corriente Eléctrica
-      I = Q/t
-      Amperio A
-      DC vs AC
-```
+![[Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
 
 ---
 

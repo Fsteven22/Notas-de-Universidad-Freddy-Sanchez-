@@ -1,5 +1,6 @@
  ---
 dg-publish: true
+
 ---
 
 # 🧮 Álgebra de Proposiciones
@@ -12,14 +13,7 @@ dg-publish: true
 > 
 > Ya conocemos las leyes (de las notas de Lógica Proposicional). Ahora las usamos para **transformar** una proposición en otra equivalente, paso a paso y citando la ley de cada paso.
 >
-> ```mermaid
-> graph LR
->     A["Expresión"] --> B["Aplica ley<br/>(De Morgan, distributiva...)"]
->     B --> C{"¿Llegaste<br/>al objetivo?"}
->     C -->|"No"| B
->     C -->|"Sí"| D["Equivalencia probada ✅"]
->     style D fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-05-01-graph.svg]]
 >
 > **En esta nota:** tabla de leyes de referencia, formato estándar de demostración algebraica y errores típicos (aplicar De Morgan a medias, olvidar la doble negación).
 > 
@@ -197,14 +191,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph LR
-    A[Expresión inicial] -->|"Ley 1"| B[Paso 1]
-    B -->|"Ley 2"| C[Paso 2]
-    C -->|"Ley 3"| D[...]
-    D -->|"Ley n"| E[Expresión final ✅]
-
-```
+![[../../Diagramas/dis-u1-05-02-graph.svg]]
 
 ---
 

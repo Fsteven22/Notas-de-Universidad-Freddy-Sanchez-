@@ -1,0 +1,7 @@
+graph TD
+   A["¿La salida depende solo de la entrada actual?"] -->|"Sí"| B["Circuito combinacional"]
+   A -->|"No"| C["¿Necesito registrar solo el símbolo anterior?"]
+   C -->|"Sí"| D["Retraso unitario"]
+   C -->|"No, depende de una historia más compleja"| E["¿La salida es un símbolo de un conjunto O?"]
+   E -->|"Sí"| F["Máquina de estado finito M = (I,O,S,f,g,σ)"]
+   E -->|"No, solo quiero saber si la cadena es válida"| G["Autómata de estado finito (ver nota relacionada)"]

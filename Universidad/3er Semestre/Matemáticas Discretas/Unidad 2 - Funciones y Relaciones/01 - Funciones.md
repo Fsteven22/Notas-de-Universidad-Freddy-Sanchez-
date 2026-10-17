@@ -17,10 +17,7 @@ dg-publish: true
 > 
 > Una **función** es un caso especial de relación entre dos conjuntos: una regla que asigna a cada elemento del dominio **exactamente un** elemento del codominio. Formalmente, es cualquier subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] con una restricción de unicidad.
 > 
-> ```mermaid
-> graph LR
->     A["Dominio X"] -->|"f(x)"| B["Codominio Y"]
-> ```
+> ![[../Diagramas/dis-u2-02-01-graph.svg]]
 
 ---
 
@@ -53,18 +50,7 @@ dg-publish: true
 
 > [!note] 🔍 Mapa — Inyectiva, sobreyectiva, biyectiva
 >
-> ```mermaid
-> flowchart TD
->     A["f : X → Y"] --> B{"¿Elementos distintos<br/>→ imágenes distintas?"}
->     B -->|"Sí"| C["Inyectiva"]
->     B -->|"No"| D["No inyectiva"]
->     A --> E{"¿Toda y tiene<br/>preimagen?"}
->     E -->|"Sí"| F["Sobreyectiva"]
->     C --> G{"¿Ambas?"}
->     F --> G
->     G -->|"Sí"| H["Biyectiva ✅"]
->     style H fill:#e1ffe1
-> ```
+> ![[../Diagramas/dis-u2-02-02-flow.svg]]
 >
 > **Se lee así:** dos preguntas independientes; biyectiva exige sí en ambas.
 
@@ -383,22 +369,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Función f : X → Y] --> B[Inyectiva]
-    A --> C[Sobreyectiva]
-    A --> D[Biyectiva]
-    A --> E[Compuesta g∘f]
-    A --> F[Invertible]
-    A --> G[Piso y Techo]
-    B --> B1["Cada y tiene A LO MÁS una preimagen"]
-    B --> B2["f(x₁)=f(x₂) ⟹ x₁=x₂"]
-    C --> C1["Cada y tiene AL MENOS una preimagen"]
-    C --> C2["∀y ∈ Y, ∃x : f(x)=y"]
-    D --> D1[Inyectiva + Sobreyectiva]
-    F --> F2[Teorema: invertible ⟺ biyectiva]
-
-```
+![[../Diagramas/dis-u2-02-03-graph.svg]]
 
 ---
 

@@ -178,15 +178,15 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 #flashcards/bd-u2
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿DF en 1 línea?::X→Y: conociendo X conoces Y (X determinante).
-> - ¿3 anomalías?::Inserción (dummy), eliminación (borra de más), actualización (a medias corrompe).
-> - ¿2FN?::1FN sin parciales; PK simple ⇒ automática.
-> - ¿3FN?::2FN sin transitivas (no-primo → no-primo fuera).
-> - ¿Caso PROJECT?::Parciales→PROJECT+EMPLOYEE; transitiva→JOB; completo queda en ASSIGNMENT.
-> - ¿Determinante se va o se queda?::Se queda como FK (copiar, no mudar).
-> - ¿BCNF en 1 línea?::Todo determinante es clave candidata.
-> - ¿Parcial vs transitiva?::Parte de la PK vs no-primo que determina a otro no-primo.
+
+- ¿DF en 1 línea?::X→Y: conociendo X conoces Y (X determinante).
+- ¿3 anomalías?::Inserción (dummy), eliminación (borra de más), actualización (a medias corrompe).
+- ¿2FN?::1FN sin parciales; PK simple ⇒ automática.
+- ¿3FN?::2FN sin transitivas (no-primo → no-primo fuera).
+- ¿Caso PROJECT?::Parciales→PROJECT+EMPLOYEE; transitiva→JOB; completo queda en ASSIGNMENT.
+- ¿Determinante se va o se queda?::Se queda como FK (copiar, no mudar).
+- ¿BCNF en 1 línea?::Todo determinante es clave candidata.
+- ¿Parcial vs transitiva?::Parte de la PK vs no-primo que determina a otro no-primo.
 
 ---
 

@@ -16,14 +16,7 @@ dg-publish: true
 > | **2** | Present continuous — am/is/are + -ing |
 > | **3** | Conexión con reported speech (Unit 1) |
 >
-> ```mermaid
-> graph TD
->     A[Grammar Review] --> B[Object pronouns]
->     A --> C[Present continuous]
->     B --> D[asked ME · told HIM · persuaded THEM]
->     C --> E[is happening NOW]
->     D --> F[Reported speech · Unit 1]
-> ```
+> ![[../Diagramas/en3-pre-01-01-graph.svg]]
 
 ---
 

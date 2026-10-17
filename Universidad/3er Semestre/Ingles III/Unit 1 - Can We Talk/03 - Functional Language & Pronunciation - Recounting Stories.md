@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart de recounting (7.3), back on track, /s/ vs /z/ y role play.
 
-```mermaid
-graph TB
-    A[Cuentas historia] --> B[Hook: you'll never believe]
-    B --> C[ markers: apparently, turns out]
-    C --> D[Cierre: in the end]
-    B --> E{¿Te interrumpen?}
-    E -->|Sí| F[Where was I? I lost my train]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u1-04-01-graph.svg]]
 
 ---
 
@@ -224,23 +215,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Recounting))
-    Hook
-      you'll never believe
-      I heard that
-    Markers
-      apparently
-      turns out
-      in the end
-    Back on track
-      Where was I
-      lost my train
-    Pronunciation
-      s course
-      z was
-```
+![[../Diagramas/en3-u1-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

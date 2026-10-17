@@ -12,19 +12,7 @@ dg-publish: true
 > 
 > Su historia moderna comienza en los años cuarenta con la introducción del transistor semiconductor, que hizo posible la **miniaturización** de los circuitos y dio origen a toda la electrónica moderna.
 > 
-> ```mermaid
-> graph TD
->     A[Electrónica] --> B[Semiconductores]
->     B --> C[Diodos]
->     B --> D[Transistores]
->     C --> C1[Rectificación<br/>Regulación<br/>Emisión de luz]
->     D --> D1[Switch<br/>Amplificador]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style C1 fill:#e1ffe1
->     style D1 fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
 > 
 > |Elemento|Tipo|Función principal|
 > |---|---|---|
@@ -68,27 +56,7 @@ dg-publish: true
 > 
 > Los niveles de energía discretos de los átomos se expanden al cristalizarse en **bandas de energía**. Entre bandas existe una zona prohibida llamada **banda gap** ($E_g$) donde ningún electrón puede existir.
 > 
-> ```mermaid
-> graph TD
->     subgraph AISLANTE
->         A1[Banda de conducción]
->         A2["Eg > 5 eV — grande"]
->         A3[Banda de valencia]
->     end
->     subgraph SEMICONDUCTOR
->         B1[Banda de conducción]
->         B2["Eg = 1.1 eV Si / Eg = 0.67 eV Ge"]
->         B3[Banda de valencia]
->     end
->     subgraph CONDUCTOR
->         C1[Banda de conducción]
->         C2[Se solapan]
->         C3[Banda de valencia]
->     end
->     style A2 fill:#ffe1e1
->     style B2 fill:#fff4e1
->     style C2 fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
 > 
 > |Material|Band gap $E_g$|Comportamiento|
 > |---|---|---|
@@ -116,16 +84,7 @@ dg-publish: true
 > - Se agrega una impureza controlada (**dopaje**) para crear estados de energía permisibles en la banda prohibida, reduciendo $E_g$ efectivo.
 > - Resultado: mayor conductividad controlada.
 > 
-> ```mermaid
-> graph LR
->     A[Semiconductor<br/>de Silicio] --> B[Intrínseco<br/>Si puro]
->     A --> C[Extrínseco<br/>Dopado]
->     C --> D[Tipo N<br/>Dopante: P o Sb<br/>Portador: e⁻]
->     C --> E[Tipo P<br/>Dopante: B o Ga<br/>Portador: h⁺]
->     style B fill:#e1f5ff
->     style D fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
 > 
 
 > [!tip] 🔴 Material Tipo N
@@ -169,19 +128,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Semiconductores))
-    Intrínsecos puros Si
-    Extrínsecos dopados
-    Tipo N electrones Sb P
-    Tipo P huecos B Ga
-    Bandas de energía
-    Band gap Eg
-    Aplicación siguiente
-      Diodo unión P-N
-      Transistor BJT
-```
+![[Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
 
 ---
 

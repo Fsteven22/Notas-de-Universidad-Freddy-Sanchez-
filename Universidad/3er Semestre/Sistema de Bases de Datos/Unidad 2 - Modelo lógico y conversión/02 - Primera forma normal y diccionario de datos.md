@@ -239,11 +239,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 #flashcards/bd-u2
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
->
-> - ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
-> - ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
-> - ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
-> - ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
+
+- ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
+- ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
+- ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
+- ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
 
 ## 🚀 Próximos Pasos
 

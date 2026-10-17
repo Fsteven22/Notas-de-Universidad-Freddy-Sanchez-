@@ -25,24 +25,7 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 > | **IA** | Pega salida sin revisar | Promptea, verifica y declara uso ético |
 > | **Equipo** | Repite opiniones | Aporta evidencia y alternativas |
 
-```mermaid
-graph TB
-    A[Afirmación viral] --> B{¿Filtro crítico?}
-    B --> C[❌ Compartir directo]
-    B --> D[✅ Verificar]
-
-    C --> C1[Desinformación]
-    C --> C2[Cita débil en tu texto]
-    C --> C3[Baja nota + reputación]
-
-    D --> D1[Fuente + fecha + autor]
-    D --> D2[Contraste 2-3 fuentes]
-    D --> D3[Síntesis propia + APA]
-    D --> D4[Texto sólido]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_01.svg]]
 
 ---
 
@@ -54,14 +37,7 @@ graph TB
 >
 > **Test rápido para cualquier lectura S3-S4:**
 >
-> ```mermaid
-> graph LR
->     U[Afirmación] --> E[Evidencia?]
->     E --> F[Fuente confiable?]
->     F --> G[¿Sesgo?]
->     G --> R[Juicio: usar / descartar / matizar]
->     style R fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_02.svg]]
 >
 > | Criterio | Pregunta | Señal de alerta |
 > |---|---|---|
@@ -88,14 +64,7 @@ graph TB
 >
 > **Prosumidor = produces + consumes con criterio.** En esta materia se potencia con lecturas académicas y redacción de informes.
 >
-> ```mermaid
-> graph TB
->     C[Consumidor] -->|lee con criterio| S[Sintetiza]
->     S -->|cita APA| P[Produce informe]
->     P -->|comparte| E[Comunidad aprende]
->     E -->|retroalimenta| C
->     style P fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_03.svg]]
 >
 > **Niveles:**
 >
@@ -173,23 +142,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Pensamiento<br/>Crítico))
-    Criterios
-      Claridad
-      Evidencia
-      Fuente
-      Sesgo
-    Sesgos
-      Confirmación
-      Autoridad
-      Grupo
-    Prosumidor
-      Curar
-      Producir
-      Compartir
-```
+![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_04.svg]]
 
 > [!success] 🔍 Comparación Final
 >

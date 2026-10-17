@@ -1,0 +1,8 @@
+flowchart TD
+   A["Quiero mostrar<br/>algo del sistema"] --> B{"¿Estructura<br/>o tiempo?"}
+   B -->|"Estructura"| C["Diagrama<br/>de clases"]
+   B -->|"Tiempo"| D{"¿Vista de usuario<br/>o de objetos?"}
+   D -->|"Usuario"| E["Casos de uso<br/>(objetivos)"]
+   D -->|"Objetos"| F{"¿Hay ramas o<br/>paralelo?"}
+   F -->|"Sí"| G["Actividad"]
+   F -->|"No, lineal"| H["Secuencia"]

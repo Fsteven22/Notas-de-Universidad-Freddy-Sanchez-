@@ -28,23 +28,7 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 > | **Lectura** | Solo el autor entiende | Cualquiera se ubica |
 > | **Costo** | Reescritura total al final | Inversión diaria pequeña |
 
-```mermaid
-graph TB
-    A[Código con smells] --> B{¿Refactorizo?}
-    B --> C[❌ Parche encima]
-    B --> D[✅ Pasos pequeños + tests]
-
-    C --> C1[Funciona hoy]
-    C --> C2[Deuda crece]
-    C --> C3[Reescritura]
-
-    D --> D1[Mismo comportamiento]
-    D --> D2[Diseño más simple]
-    D --> D3[Cambios baratos]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u4-02-01-graph.svg]]
 
 ---
 
@@ -81,14 +65,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Refactorizo Ahora?
 
-```mermaid
-flowchart TD
-    A["Veo un smell"] --> B{"¿Tengo tests<br/>verdes?"}
-    B -->|"No"| C["Escribe 3 asserts<br/>primero"]
-    B -->|"Sí"| D{"¿Voy a tocar<br/>ese código pronto?"}
-    D -->|"No"| E["Anótalo y sigue<br/>(YAGNI)"]
-    D -->|"Sí"| F["Refactoriza en pasos<br/>de 5 min + commit"]
-```
+![[../Diagramas/dsw-u4-02-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -277,22 +254,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Refactor))
-    Cuándo
-      Regla de tres
-      Preparatorio
-      Limpieza
-    Smells
-      Nombres
-      Datos
-      Acoplamiento
-    Cómo
-      1 técnica
-      Tests verdes
-      Commit chico
-```
+![[../Diagramas/dsw-u4-02-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

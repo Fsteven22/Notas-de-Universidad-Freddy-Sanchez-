@@ -28,16 +28,7 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > | **Secuencia** | ¿Quién llama a quién y en qué orden? | Antes de codear un flujo clave |
 > | **Actividad** | ¿Qué decisiones y caminos hay? | Procesos con ramas/paralelo |
 
-```mermaid
-sequenceDiagram
-    participant E as Estudiante
-    participant S as Sistema
-    participant B as BD
-    E->>S: inscribirse(curso)
-    S->>B: verificar cupo
-    B-->>S: cupo OK
-    S-->>E: matrícula confirmada
-```
+![[../Diagramas/dsw-u2-05-01-seq.svg]]
 
 ---
 
@@ -49,8 +40,8 @@ sequenceDiagram
 >
 > - **Actor** = rol externo (Estudiante, Docente, SistemaPagos), no persona concreta.
 > - **Caso** = objetivo con valor ("Inscribirse", no "Clic en botón").
-> - **<<include>>** = siempre incluido (Validar identidad).
-> - **<<extend>>** = opcional/extensión (Aplicar descuento).
+> - **`<<include>>`** = siempre incluido (Validar identidad).
+> - **`<<extend>>`** = opcional/extensión (Aplicar descuento).
 >
 > | Bien | Mal | Por qué |
 > |---|---|---|
@@ -82,16 +73,7 @@ sequenceDiagram
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Diagrama Dibujo?
 
-```mermaid
-flowchart TD
-    A["Quiero mostrar<br/>algo del sistema"] --> B{"¿Estructura<br/>o tiempo?"}
-    B -->|"Estructura"| C["Diagrama<br/>de clases"]
-    B -->|"Tiempo"| D{"¿Vista de usuario<br/>o de objetos?"}
-    D -->|"Usuario"| E["Casos de uso<br/>(objetivos)"]
-    D -->|"Objetos"| F{"¿Hay ramas o<br/>paralelo?"}
-    F -->|"Sí"| G["Actividad"]
-    F -->|"No, lineal"| H["Secuencia"]
-```
+![[../Diagramas/dsw-u2-05-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -242,19 +224,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("UML Dinámica"))
-    Casos de uso
-      Actor + objetivo
-      include/extend
-    Secuencia
-      Tiempo vertical
-      alt/loop
-    Actividad
-      Ramas
-      Paralelo
-```
+![[../Diagramas/dsw-u2-05-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

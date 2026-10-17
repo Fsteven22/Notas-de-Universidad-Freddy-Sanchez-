@@ -38,20 +38,7 @@ tags: [MATG1051, unidad1, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[I.1 Proposiciones] --> B[I.2 Condicionales]
-    C[II.1 Algebra] --> D[II.2 Cuantificadores]
-    D --> E[II.3 Demostraciones]
-    F[III.1 Reglas de Inferencia] --> G[III.2 Afirmaciones Cuantificadas]
-    G --> H[III.3 Inducción Matemática]
-    I[IV.1 Conjuntos] --> J[IV.2 Operaciones Venn]
-    J --> K[IV.3 Leyes de Conjuntos]
-    K --> L[IV.4 Cardinalidad]
-    B --> E
-    A --> F
-    I --> A
-```
+![[../Diagramas/dis-u1-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Funciones]] (Unidad 2)

@@ -65,7 +65,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
 
 - [[Unit 1 - Different Cultures/00 - Índice Unit 1.md|📂 Unit 1 - Different Cultures]]
 

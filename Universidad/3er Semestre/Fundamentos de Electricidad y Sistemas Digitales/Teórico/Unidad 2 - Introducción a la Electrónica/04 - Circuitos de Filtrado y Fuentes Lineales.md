@@ -11,18 +11,7 @@ dg-publish: true
 > 
 > Este enfoque —anterior a las fuentes conmutadas (switching)— sigue siendo relevante en equipos de audio de alta fidelidad, instrumentación de precisión y aplicaciones donde el ruido eléctrico debe ser mínimo, precisamente porque no genera la interferencia de alta frecuencia típica de un convertidor conmutado.
 > 
-> ```mermaid
-> graph LR
->     A[CA de línea<br/>110V/220V] --> B[Transformador]
->     B --> C[Rectificador]
->     C --> D[Filtro]
->     D --> E[Regulador]
->     E --> F[CD estable<br/>a la carga]
->     style A fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_01.svg]]
 > 
 > |Etapa|Función|Elemento típico|
 > |---|---|---|
@@ -117,11 +106,7 @@ dg-publish: true
 > 
 > El circuito más simple: un solo diodo en serie con la carga (ver [[02 - El Diodo - Unión P-N]]). Solo deja pasar el semiciclo positivo (o negativo, según orientación) de la señal de entrada.
 > 
-> ```mermaid
-> graph LR
->     A["Vin = Vm·sen(wt)"] --> B((Diodo)) --> C[Carga RL]
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_02.svg]]
 > 
 > $$V_{DC} = \frac{V_m}{\pi} \approx 0.318 \times V_m$$
 > 
@@ -173,16 +158,7 @@ dg-publish: true
 > 
 > Un capacitor en paralelo con la carga se carga hasta el pico de la señal rectificada y se descarga lentamente a través de $R_L$ mientras el rectificador no conduce, "rellenando" el valle entre pulsos.
 > 
-> ```mermaid
-> graph TD
->     A[Salida del<br/>rectificador] --> B["Capacitor C<br/>en paralelo con RL"]
->     B --> C[Carga en picos]
->     B --> D[Descarga entre picos<br/>a través de RL]
->     C --> E[Voltaje de rizado Vr]
->     D --> E
->     style B fill:#e1f5ff
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_03.svg]]
 > 
 > **Voltaje de rizado pico a pico:**
 > 
@@ -219,16 +195,7 @@ dg-publish: true
 
 > [!note] 🧭 Cómo elegir la configuración
 > 
-> ```mermaid
-> graph TD
->     A{¿Cuánto rizado<br/>tolera la carga?} -->|Poco rizado| B{¿Se dispone de<br/>transformador con<br/>derivación central?}
->     A -->|Rizado aceptable| C[Media onda +<br/>filtro capacitivo]
->     B -->|Sí| D[Onda completa<br/>center-tap]
->     B -->|No| E[Puente de diodos]
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_04.svg]]
 > 
 > > 📌 La etapa de **regulación** (Zener, serie o IC) es un tema aparte — ver [[05 - Reguladores en Fuentes Lineales]].
 
@@ -291,27 +258,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Filtrado y<br/>Fuentes Lineales))
-    Filtros por frecuencia
-      LPF
-      HPF
-      BPF
-      Notch
-    Transformador
-      Relación de vueltas
-      Aislamiento galvánico
-    Rectificación
-      Media onda
-      Onda completa center-tap
-      Puente de diodos - Graetz
-    Filtro capacitivo
-      Voltaje de rizado Vr
-      Vdc aproximado
-    Siguiente tema
-      Reguladores en serie
-```
+![[Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
 
 ---
 

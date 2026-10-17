@@ -26,23 +26,7 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > | **Probar** | Necesitas todo el sistema | Prueba unitaria aislada (Unidad 5) |
 > | **Equipo** | Conflictos en Git | Cada quien su módulo |
 
-```mermaid
-graph TB
-    A["Clase Dios<br/>hace todo"] --> B{"Diseno sano?"}
-    B --> C["Baja cohesion<br/>Alto acoplamiento"]
-    B --> D["Alta cohesion<br/>Bajo acoplamiento"]
-
-    C --> C1["Cambia todo junto"]
-    C --> C2["Nadie la reutiliza"]
-    C --> C3["Refactor doloroso"]
-
-    D --> D1["Una mision por modulo"]
-    D --> D2["Interfaces minimas"]
-    D --> D3["Evoluciona sin miedo"]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u1-03-01-graph.svg]]
 
 ---
 
@@ -50,17 +34,7 @@ graph TB
 
 > [!note] 📊 Escala de Cohesión (de peor a mejor)
 >
-> ```mermaid
-> graph LR
->     P["Coincidente"] --> L["Logica"]
->     L --> T["Temporal"]
->     T --> PR["Procedimental"]
->     PR --> C["Comunicacional"]
->     C --> S["Secuencial"]
->     S --> F["Funcional"]
->     style F fill:#e1ffe1
->     style P fill:#ffe1e1
-> ```
+> ![[../Diagramas/dsw-u1-03-02-graph.svg]]
 >
 > | Nivel | Qué significa | Ejemplo |
 > |---|---|---|
@@ -235,16 +209,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Ajustar en mi Diseño?
 
-```mermaid
-flowchart TD
-    A["Revisa un modulo existente"] --> B{"Puedes describirlo<br/>en 1 frase sin 'y'?"}
-    B -->|"No"| C["Problema de cohesion:<br/>divide por responsabilidad"]
-    B -->|"Si"| D{"Sus metodos reciben<br/>3+ booleanos o el objeto<br/>completo de otro modulo?"}
-    D -->|"Si"| E["Problema de acoplamiento:<br/>pasa datos simples o usa Strategy"]
-    D -->|"No"| F{"Puedes usarlo sin leer<br/>su codigo fuente?"}
-    F -->|"No"| G["Problema de abstraccion:<br/>revisa que la interfaz baste"]
-    F -->|"Si"| H["Diseno sano"]
-```
+![[../Diagramas/dsw-u1-03-03-flow.svg]]
 
 ---
 
@@ -415,28 +380,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Cohesion y<br/>Acoplamiento"))
-    Cohesion
-      Funcional ideal
-      Secuencial y comunicacional ok
-      Procedimental logica temporal mal
-    Acoplamiento
-      Datos ideal
-      Sello medio
-      Control evitar
-      Externo fragil
-      Comun peligroso
-      Contenido prohibido
-    Mecanismos
-      Abstraccion
-      Ocultamiento de informacion
-    Errores comunes
-      Clase Utilidades
-      Getters y setters para todo
-      Clase Dios
-```
+![[../Diagramas/dsw-u1-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

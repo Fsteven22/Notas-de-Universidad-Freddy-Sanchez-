@@ -25,25 +25,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, apa, redaccion]
 > | **Evaluación** | Baja en Evaluación 3 y 4 (S4) | Puntos seguros gramaticales y APA |
 > | **Profesionalismo** | Correo confuso al jefe | Correo ejecutivo preciso |
 
-```mermaid
-graph TB
-    A[Idea en tu cabeza] --> B{¿Texto claro?}
-    B --> C[❌ Ambiguo]
-    B --> D[✅ Preciso + APA]
-
-    C --> C1[Concordancia rota]
-    C --> C2[Sin estructura]
-    C --> C3[Fuentes sin citar]
-    C --> C4[Rechazo / baja nota]
-
-    D --> D1[Sujeto-verbo claro]
-    D --> D2[Estructura IMRaD/ejecutiva]
-    D --> D3[Cita APA verificable]
-    D --> D4[Aprobación + reputación]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Texto_expositivo,_claridad_y_APA_01.svg]]
 
 ---
 
@@ -55,15 +37,7 @@ graph TB
 >
 > **Precisión:** palabra exacta, dato exacto. *Hecho vs opinión*: "el taller duró 2h" (hecho) vs "el taller fue bueno" (opinión).
 >
-> ```mermaid
-> graph LR
->     U[Idea] --> E[Oración]
->     E --> P[Precisión]
->     P --> C[Concordancia]
->     C --> H[Cohesión]
->     H --> T[Texto claro]
->     style T fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Texto_expositivo,_claridad_y_APA_02.svg]]
 >
 > | Regla | Qué revisa | Ejemplo malo → bueno |
 > |---|---|---|
@@ -168,22 +142,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Texto<br/>Expositivo))
-    Claridad
-      Precisión
-      Concordancia
-      Cohesión
-    Estructura
-      Intro
-      Desarrollo citado
-      Cierre
-    APA
-      Libro
-      Paráfrasis
-      Web
-```
+![[Diagramas/01_-_Texto_expositivo,_claridad_y_APA_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

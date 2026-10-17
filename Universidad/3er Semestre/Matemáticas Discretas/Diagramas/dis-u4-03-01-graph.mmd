@@ -1,0 +1,7 @@
+graph TD
+    A[Recurrencia lineal de orden 2] --> B{¿Homogénea?}
+    B -->|Sí| C[Ecuación característica t² - c₁t - c₂ = 0]
+    B -->|No| D[Términos independientes fuera de este alcance]
+    C --> E{Tipo de raíces}
+    E -->|Distintas r₁ ≠ r₂| F[aₙ = b·r₁ⁿ + c·r₂ⁿ]
+    E -->|Raíz doble r| G[aₙ = b·rⁿ + c·n·rⁿ]

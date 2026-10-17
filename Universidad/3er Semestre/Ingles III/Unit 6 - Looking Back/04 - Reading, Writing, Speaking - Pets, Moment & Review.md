@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** debate pets (12.4), summary/response, national moment y Review 4.
 
-```mermaid
-graph TB
-    A[Lección 12.4-12.5] --> B[Listening: debate]
-    A --> C[Writing: summary + response]
-    A --> D[Speaking: national moment]
-    B --> E[Kenan vs Lucia + transitions]
-    C --> F[Mention agree-disagree + contrast]
-    D --> G[Where were you + vote]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u6-05-01-graph.svg]]
 
 ---
 
@@ -160,17 +150,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U12 Close))
-    Debate
-      Kenan Lucia
-      transitions loud
-    Summary
-      2 lines verdict
-    Moment
-      no name guess
-```
+![[../Diagramas/en3-u6-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

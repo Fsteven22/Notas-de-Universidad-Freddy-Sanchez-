@@ -12,14 +12,7 @@ dg-publish: true
 > - Esta nota cubre la **sintaxis básica** (asignación, `if`, `while`, `for`, funciones) y la noción formal de **algoritmo**.
 > - Se conecta con [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] y [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]], donde estos mismos algoritmos se analizan para obtener sus cotas asintóticas.
 > 
-> ```mermaid
-> graph TD
->     A[Pseudocódigo y Algoritmos] --> B[Sintaxis básica asignación, if, comentarios]
->     A --> C[Concepto de Algoritmo]
->     A --> D[Funciones y return]
->     A --> E[Estructuras de control: while, for]
->     A --> F[Ejemplos clásicos]
-> ```
+> ![[../Diagramas/dis-u4-04-01-graph.svg]]
 
 ---
 

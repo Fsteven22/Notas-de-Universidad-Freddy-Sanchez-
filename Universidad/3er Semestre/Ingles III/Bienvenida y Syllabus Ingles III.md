@@ -53,21 +53,7 @@ dg-publish: true
 
 > [!tip] 📚 Programa IDIG1008
 >
-> ```mermaid
-> graph LR
->     A[🇬🇧 English III\nIDIG1008] --> B[U1 Cultures<br/>5h]
->     A --> C[U2 Homes<br/>6h]
->     A --> D[U3 News<br/>6h]
->     A --> E[U4 Media<br/>6h]
->     A --> F[U5 Chances<br/>5h]
->     A --> G[U6 Repaso<br/>4h]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
->     style G fill:#e1fff4
-> ```
+> ![[Diagramas/en3-bienv-map.svg]]
 >
 > | Unidad | Tema | Gramática | Oral + Escritura | Horas |
 > |---|---|---|---|---|

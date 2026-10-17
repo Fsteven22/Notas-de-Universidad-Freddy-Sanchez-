@@ -1,0 +1,8 @@
+graph TB
+   A[Reportas] --> B{¿Afirmación o pregunta?}
+   B -->|Afirmación| C["present→past, past→past perfect"]
+   B -->|Pregunta| D["sin ?, sujeto antes del verbo, if si es yes/no"]
+   C --> E["verbo + that + backshift"]
+   D --> E
+
+   style E fill:#e1ffe1

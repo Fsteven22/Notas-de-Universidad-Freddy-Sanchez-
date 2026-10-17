@@ -28,23 +28,7 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > | **Documentación** | README que miente | Tests que muestran uso real |
 > | **Nota** | Validación improvisada | Evidencia de calidad |
 
-```mermaid
-graph TB
-    A[Cambio en código] --> B{¿Tests?}
-    B --> C[❌ Sin red]
-    B --> D[✅ Suite JUnit]
-
-    C --> C1[Probar todo a mano]
-    C --> C2[Se escapa el bug]
-    C --> C3[Miedo al cambio]
-
-    D --> D1[Corren en segundos]
-    D --> D2[Fallo apunta al método]
-    D --> D3[Refactor sin miedo]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[../Diagramas/dsw-u5-02-01-graph.svg]]
 
 ---
 
@@ -113,14 +97,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Tipo de Prueba Escribo?
 
-```mermaid
-flowchart TD
-    A["Quiero verificar<br/>algo"] --> B{"¿Una unidad<br/>aislada?"}
-    B -->|"Sí"| C["Unitaria JUnit:<br/>rápida + mocks"]
-    B -->|"No, varias piezas"| D{"¿Con BD/red<br/>real?"}
-    D -->|"Sí"| E["Integración<br/>(otra suite)"]
-    D -->|"No, con dobles"| C
-```
+![[../Diagramas/dsw-u5-02-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -280,22 +257,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Unitarias"))
-    Estructura
-      Arrange
-      Act
-      Assert
-    JUnit 5
-      @Test
-      Aserciones
-      Ciclo vida
-    Foco
-      Negocio
-      Bordes
-      Excepciones
-```
+![[../Diagramas/dsw-u5-02-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

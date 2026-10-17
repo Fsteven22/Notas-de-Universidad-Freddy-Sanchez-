@@ -1,0 +1,22 @@
+graph TD
+   A[Leyes de Conjuntos] --> B[Identidad y Dominacion]
+   A --> C[Complemento]
+   A --> D[Conmutativa y Asociativa]
+   A --> E[Distributiva]
+   A --> F[De Morgan]
+   A --> G[Absorcion]
+
+   B --> B1["A ∪ ∅ = A"]
+   B --> B2["A ∩ U = A"]
+   B --> B3["A ∪ U = U"]
+   B --> B4["A ∩ ∅ = ∅"]
+
+   C --> C1["A ∪ Aᶜ = U"]
+   C --> C2["A ∩ Aᶜ = ∅"]
+   C --> C3["(Aᶜ)ᶜ = A"]
+
+   E --> E1["A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)"]
+   E --> E2["A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)"]
+
+   F --> F1["(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ"]
+   F --> F2["(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ"]

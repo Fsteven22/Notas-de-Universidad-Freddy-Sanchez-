@@ -9,15 +9,7 @@ dg-publish: true
 > 
 > Los **métodos de conteo** permiten determinar cuántos elementos tiene un [[01 - Conjuntos, Cardinalidad y Subconjuntos|conjunto]] o cuántas formas existen de realizar una tarea, **sin listarlos todos**. Los dos principios fundamentales son:
 > 
-> ```mermaid
-> graph TD
->     A[Métodos de Conteo] --> B[Principio de la Multiplicación]
->     A --> C[Principio de la Suma]
->     B --> D["Tarea en pasos SUCESIVOS (se hacen todos)"]
->     C --> E["Tarea en casos EXCLUYENTES (se hace uno u otro)"]
->     D --> F["n₁ · n₂ · … · nₜ"]
->     E --> G["n₁ + n₂ + … + nₜ"]
-> ```
+> ![[../Diagramas/dis-u3-05-01-graph.svg]]
 
 ---
 
@@ -156,13 +148,7 @@ En la práctica, la mayoría de los problemas requieren **ambos principios** jun
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph LR
-    P["Problema de conteo"] --> Q{¿Tipo de tarea?}
-    Q -->|"Pasos sucesivos (todos)"| M["Principio de la MULTIPLICACIÓN n₁ · n₂ · … · nₜ"]
-    Q -->|"Casos excluyentes (uno)"| S["Principio de la SUMA n₁ + n₂ + … + nₜ"]
-    Q -->|"Mezcla"| C["Suma de productos ∑ ∏ nᵢⱼ"]
-```
+![[../Diagramas/dis-u3-05-02-graph.svg]]
 
 ||Multiplicación|Suma|
 |---|---|---|

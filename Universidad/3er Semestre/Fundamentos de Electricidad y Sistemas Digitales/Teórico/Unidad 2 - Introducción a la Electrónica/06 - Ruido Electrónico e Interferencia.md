@@ -11,17 +11,7 @@ dg-publish: true
 > 
 > Este tema conecta directamente con lo visto en [[04 - Circuitos de Filtrado y Fuentes Lineales]] (el rizado de una fuente lineal es, en el fondo, un tipo de ruido de baja frecuencia) y sirve de puente hacia las aplicaciones de amplificadores operacionales para minimización de ruido de la Unidad 3.
 > 
-> ```mermaid
-> graph LR
->     A[Perturbación] --> B{¿Origen?}
->     B -->|Interno<br/>del componente| C[Ruido electrónico]
->     B -->|Externo<br/>al circuito| D[Interferencia EMI/RFI]
->     C --> E[Señal degradada]
->     D --> E
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
 
 ---
 
@@ -64,14 +54,7 @@ dg-publish: true
 > 
 > Una señal de ruido externa (motores, líneas de potencia, radiofrecuencia, conmutación digital) puede acoplarse al circuito de cuatro maneras:
 > 
-> ```mermaid
-> graph TD
->     A[Fuente de<br/>interferencia] --> B[Conducido<br/>por cables compartidos]
->     A --> C[Capacitivo<br/>campos eléctricos]
->     A --> D[Inductivo<br/>campos magnéticos]
->     A --> E[Radiado<br/>ondas electromagnéticas]
->     style A fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
 > 
 > |Modo|Mecanismo|Mitigación típica|
 > |---|---|---|
@@ -147,28 +130,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Ruido e<br/>Interferencia))
-    Ruido interno
-      Termico Johnson-Nyquist
-      Shot noise
-      Flicker 1/f
-    Interferencia externa
-      Conducida
-      Capacitiva
-      Inductiva
-      Radiada
-    Mitigacion
-      Desacople
-      Filtros pasivos
-      Zener / TVS
-      Optoacoplador
-      Blindaje
-      Twisted pair
-    Siguiente tema
-      Amplificador diferencial - OPAMs
-```
+![[Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
 
 ---
 

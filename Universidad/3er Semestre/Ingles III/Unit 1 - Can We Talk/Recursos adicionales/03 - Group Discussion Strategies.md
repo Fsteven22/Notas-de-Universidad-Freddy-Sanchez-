@@ -19,18 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** 6 frases-llave bilingües, método de 4 turnos, errores de interacción y drill.
 
-```mermaid
-graph TB
-    A[Discusión] --> B[Abre con opinión]
-    B --> C[Retoma al anterior]
-    C --> D{¿De acuerdo?}
-    D -->|Sí| E[Suma ejemplo]
-    D -->|No| F[Discrepa con respeto]
-    E --> G[Invita a otro]
-    F --> G
-
-    style G fill:#e1ffe1
-```
+![[../../Diagramas/en3-u1-09-01-graph.svg]]
 
 ---
 
@@ -122,22 +111,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Discussion))
-    Abre
-      In my opinion
-    Retoma
-      As Ana said
-    Acuerda
-      I agree
-    Discrepa
-      I see your point
-    Invita
-      What do you think
-    Cierra
-      So we all agree
-```
+![[../../Diagramas/en3-u1-09-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

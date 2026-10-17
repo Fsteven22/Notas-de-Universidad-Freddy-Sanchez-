@@ -18,15 +18,7 @@ dg-publish: true
 > 
 > $$\text{Si } p_1 \text{ y } p_2 \text{ y } \cdots \text{ y } p_n \text{ entonces } q.$$
 >
-> ```mermaid
-> graph LR
->     H["Hipótesis<br/>p₁…pₙ"] --> R["Regla<br/>MP, MT, Silogismo..."]
->     R --> C{"¿Conclusión<br/>forzada?"}
->     C -->|"Sí"| V["Válido ✅"]
->     C -->|"No"| I["Inválido ❌<br/>falacia"]
->     style V fill:#e1ffe1
->     style I fill:#ffe1e1
-> ```
+> ![[../../Diagramas/dis-u1-08-01-graph.svg]]
 >
 > **En esta nota:** validez vs verdad (premisas verdaderas + forma válida = conclusión verdadera), reglas clásicas (Modus Ponens/Tollens, silogismo, dilema) y falacias típicas (afirmar el consecuente, negar el antecedente).
 >
@@ -58,14 +50,7 @@ dg-publish: true
 
 > [!note] 📋 Mapa — Reglas clásicas
 >
-> ```mermaid
-> graph LR
->     A["p → q"] --> MP["+ p ⇒ q<br/>Modus Ponens"]
->     A --> MT["+ ¬q ⇒ ¬p<br/>Modus Tollens"]
->     B["p → q, q → r"] --> S["⇒ p → r<br/>Silogismo"]
->     style MP fill:#e1ffe1
->     style MT fill:#e1ffe1
-> ```
+> ![[../../Diagramas/dis-u1-08-02-graph.svg]]
 >
 > **Se lee así:** Ponens afirma el antecedente; Tollens niega el consecuente; el silogismo encadena.
 
@@ -289,23 +274,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Premisas conocidas] --> B{Que regla aplica?}
-    B --> C["Modus Ponens: p, p->q |= q"]
-    B --> D["Modus Tollens: no q, p->q |= no p"]
-    B --> E["Sil. Hipotetico: p->q, q->r |= p->r"]
-    B --> F["Sil. Disyuntivo: p o q, no p |= q"]
-    B --> G["Adicion / Simplificacion / Union"]
-    C --> H[Nueva proposicion derivada]
-    D --> H
-    E --> H
-    F --> H
-    G --> H
-    H --> I{Es la conclusion?}
-    I -->|Si| J[Argumento valido]
-    I -->|No| B
-```
+![[../../Diagramas/dis-u1-08-03-graph.svg]]
 
 
 ---

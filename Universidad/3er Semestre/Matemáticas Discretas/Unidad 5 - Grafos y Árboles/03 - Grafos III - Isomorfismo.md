@@ -16,14 +16,7 @@ dg-publish: true
 > - Comparación de redes (¿esta red social tiene la misma estructura que aquella?)
 > - Criptografía: el problema de isomorfismo de grafos es la base de algunos esquemas de conocimiento cero
 > 
-> ```mermaid
-> graph TD
->     A["Isomorfismo de Grafos"] --> B["Definición: biyecciones f, g"]
->     A --> C["Relación de equivalencia"]
->     A --> D["Invariantes"]
->     D --> E["Descartar isomorfismo rápido"]
->     A --> F["Certificar isomorfismo: construir biyección"]
-> ```
+> ![[../Diagramas/dis-u5-04-01-graph.svg]]
 
 ---
 
@@ -173,34 +166,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Son isomorfos $G_1$ y $G_2$?
 
-```mermaid
-graph TD
-    A["¿G1 y G2 son isomorfos?"] --> B{"¿|V1| = |V2| y |E1| = |E2|?"}
-    B -->|No| C["No son isomorfos ❌"]
-    B -->|Sí| D{"¿Coinciden las secuencias de grados?"}
-    D -->|No| C
-    D -->|Sí| E{"¿Coinciden invariantes finos (triángulos, ciclos)?"}
-    E -->|No| C
-    E -->|Sí| F["Intentar construir biyección f explícita"]
-    F --> G{"¿f preserva todas las adyacencias?"}
-    G -->|Sí| H["Son isomorfos ✅"]
-    G -->|No| I["Probar otra f o buscar invariante más fino"]
-```
+![[../Diagramas/dis-u5-04-02-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-```mermaid
-graph TD
-    A["Grafos III — Isomorfismo"] --> B["Definición: f, g biyectivas"]
-    A --> C["Relación de equivalencia"]
-    A --> D["Teorema: matrices de adyacencia iguales"]
-    A --> E["Invariantes"]
-    E --> F["|V|, |E|, grados, ciclos"]
-    A --> G["Estrategia: descartar rápido, certificar con biyección"]
-
-```
+![[../Diagramas/dis-u5-04-03-graph.svg]]
 
 ---
 

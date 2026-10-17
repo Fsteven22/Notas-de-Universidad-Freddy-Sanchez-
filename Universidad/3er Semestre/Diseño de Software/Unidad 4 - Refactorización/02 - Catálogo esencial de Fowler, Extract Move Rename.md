@@ -30,21 +30,7 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 > | **Inline** | Elimina indirección inútil | Clase/método perezoso |
 > | **Split Phase / Split Loop** | Separa etapas mezcladas | Cambio divergente |
 
-```mermaid
-graph TB
-    A[Smell detectado] --> B{¿Cuál técnica?}
-    B --> E[Grande → Extract]
-    B --> M[Mal ubicado → Move]
-    B --> R[Confuso → Rename]
-    B --> I[Inútil → Inline]
-
-    E --> T[Tests verdes]
-    M --> T
-    R --> T
-    I --> T
-
-    style T fill:#e1ffe1
-```
+![[../Diagramas/dsw-u4-03-01-graph.svg]]
 
 ---
 
@@ -143,15 +129,7 @@ graph TB
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Técnica Aplico?
 
-```mermaid
-flowchart TD
-    A["Smell detectado"] --> B{"¿Qué tipo?"}
-    B -->|"Grande/mezclado"| C["Extract<br/>(function/variable/class)"]
-    B -->|"Mal ubicado"| D["Move<br/>(function/field)"]
-    B -->|"Confuso"| E["Rename"]
-    B -->|"Inútil/pequeño"| F["Inline"]
-    B -->|"Etapas mezcladas"| G["Split<br/>(phase/loop)"]
-```
+![[../Diagramas/dsw-u4-03-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -307,23 +285,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Catálogo))
-    Extract
-      Function
-      Variable
-      Class
-    Move
-      Function
-      Field
-    Rename/Split
-      Nombres
-      Fases
-    Cierre
-      Tests
-      Commit
-```
+![[../Diagramas/dsw-u4-03-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

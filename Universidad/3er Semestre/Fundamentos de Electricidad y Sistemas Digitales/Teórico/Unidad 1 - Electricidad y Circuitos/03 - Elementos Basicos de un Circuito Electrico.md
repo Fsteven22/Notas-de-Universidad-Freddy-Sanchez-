@@ -10,17 +10,7 @@
 >
 > - Un circuito eléctrico es como un sistema de tuberías cerrado: la **fuente** es la bomba, los **conductores** son las tuberías, y los **elementos pasivos** (resistencias, capacitores, inductores) son válvulas, depósitos y serpentines que controlan o almacenan el flujo.
 >
-> ```mermaid
-> graph LR
->     A[Fuente<br/>de Voltaje 🔋] -->|+| B[Conductor]
->     B --> C[Elemento<br/>Pasivo]
->     C --> D[Conductor]
->     D -->|-| A
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
 >
 > **Condición esencial:** El circuito debe ser **cerrado** para que la corriente fluya. Un circuito abierto interrumpe el flujo.
 >
@@ -44,21 +34,7 @@
 >
 > > A diferencia de las fuentes independientes (batería, generador), las fuentes dependientes **no tienen valor fijo**: su salida varía proporcionalmente a una variable de control $V_x$ o $I_x$ medida en otro punto del circuito.
 >
-> ```mermaid
-> graph TD
->     A[Fuentes<br/>Dependientes] --> B[De Voltaje]
->     A --> C[De Corriente]
->     B --> D[VCVS<br/>Voltaje → Voltaje]
->     B --> E[CCVS<br/>Corriente → Voltaje]
->     C --> F[VCCS<br/>Voltaje → Corriente]
->     C --> G[CCCS<br/>Corriente → Corriente]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
 >
 > **Los cuatro tipos y su simbología:**
 >
@@ -104,16 +80,7 @@
 >
 > Los **conductores** son materiales que permiten el flujo libre de electrones con muy poca oposición. Son el medio por el que la corriente viaja entre los componentes del circuito.
 >
-> ```mermaid
-> graph LR
->     A[Material<br/>Conductor] --> B[Electrones<br/>libres abundantes]
->     B --> C[Baja resistividad<br/>ρ ~ 10⁻⁸ Ω·m]
->     C --> D[Flujo fácil<br/>de corriente]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
 >
 > **Materiales conductores más usados:**
 >
@@ -147,19 +114,7 @@
 >
 > $$P = I^2 \cdot R \qquad \text{(Calor disipado)}$$
 >
-> ```mermaid
-> graph TD
->     A[Resistencias] --> B[Fijas]
->     A --> C[Variables]
->     B --> D[Carbón<br/>comprimido]
->     B --> E[Película<br/>metálica]
->     B --> F[Bobinadas]
->     C --> G[Potenciómetro<br/>3 terminales]
->     C --> H[Reóstato<br/>2 terminales]
->     C --> I[Termistor NTC/PTC<br/>depende de temperatura]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
 > 
 > $$R = \frac{\rho \cdot l}{A}$$
 >
@@ -225,18 +180,7 @@
 >
 > $$E = \frac{1}{2} C V^2$$
 >
-> ```mermaid
-> graph TD
->     A[Capacitores] --> B[No polarizados]
->     A --> C[Polarizados]
->     B --> D[Cerámico<br/>pF – nF]
->     B --> E[Poliéster/Film<br/>nF – µF]
->     B --> F[Mica<br/>pF – nF]
->     C --> G[Electrolítico<br/>µF – mF]
->     C --> H[Tántalo<br/>µF]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
 >
 > **Comparación de tipos:**
 >
@@ -278,18 +222,7 @@
 >
 > $$E = \frac{1}{2} L I^2$$
 >
-> ```mermaid
-> graph TD
->     A[Inductores] --> B[Núcleo de aire]
->     A --> C[Núcleo de hierro]
->     A --> D[Núcleo de ferrita]
->     B --> E[Alta frecuencia<br/>RF]
->     C --> F[Baja frecuencia<br/>transformadores]
->     D --> G[Media/alta frecuencia<br/>fuentes conmutadas]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
 >
 > **Comportamiento en DC y AC:**
 >
@@ -335,21 +268,7 @@
 >
 > Los **elementos de control** permiten abrir o cerrar un circuito, ya sea manualmente o de forma automática/eléctrica.
 >
-> ```mermaid
-> graph TD
->     A[Elementos<br/>de Control] --> B[Manuales]
->     A --> C[Automáticos]
->     B --> D[Interruptor<br/>ON/OFF fijo]
->     B --> E[Pulsador NA<br/>Normalmente Abierto]
->     B --> F[Pulsador NC<br/>Normalmente Cerrado]
->     C --> G[Relé<br/>electromagnético]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
->     style F fill:#e1ffe1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
 >
 > | Elemento | Descripción | Estado por defecto | Acción |
 > |---|---|---|---|
@@ -362,16 +281,7 @@
 >
 > > Una pequeña corriente de control energiza la **bobina** del relé, generando un campo magnético que atrae un contacto metálico y cierra (o abre) un circuito de mayor potencia. Permite controlar cargas grandes con señales pequeñas.
 >
-> ```mermaid
-> graph LR
->     A[Señal de control<br/>pequeña 🔋] -->|energiza| B[Bobina<br/>del relé]
->     B -->|campo magnético| C[Contacto<br/>se cierra]
->     C -->|permite paso| D[Circuito de<br/>potencia 💡]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
 ![[ChatGPT Image 30 may 2026, 18_49_08.png]]
 
 ---
@@ -388,16 +298,7 @@
 > | **En AC** | Igual para toda f | Impide baja f | Impide alta f |
 > | **Relación V-I** | $V = IR$ | $I = C\frac{dV}{dt}$ | $V = L\frac{dI}{dt}$ |
 >
-> ```mermaid
-> graph LR
->     A[Señal AC] --> B{Elemento}
->     B -->|Resistencia| C[Disipa como calor<br/>P = I²R]
->     B -->|Capacitor| D[Almacena y libera<br/>campo eléctrico]
->     B -->|Inductor| E[Almacena y libera<br/>campo magnético]
->     style C fill:#ffe1e1
->     style D fill:#e1f5ff
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
 > 
 ![[ChatGPT Image 19 may 2026, 23_02_18.png]]
 
@@ -405,30 +306,7 @@
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Elementos<br/>de un Circuito))
-    Conductores
-      Cobre
-      Aluminio
-      AWG
-      PCB
-    Resistencias
-      Fijas
-      Variables
-      Código colores
-      Efecto Joule
-    Capacitores
-      Cerámico
-      Electrolítico
-      Almacena carga
-      Bloquea DC
-    Inductores
-      Núcleo aire
-      Núcleo ferrita
-      Almacena campo B
-      Bloquea AC
-```
+![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
 
 ---
 

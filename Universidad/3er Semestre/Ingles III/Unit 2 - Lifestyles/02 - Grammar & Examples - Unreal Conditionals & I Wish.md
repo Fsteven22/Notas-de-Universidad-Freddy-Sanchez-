@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present unreal (8.1) + *I wish* presente/futuro/pasado (8.2) + *wish vs hope*.
 
-```mermaid
-graph TB
-    A[Deseo] --> B{¿De cuándo?}
-    B -->|Presente o futuro| C["past simple: I wish I had"]
-    B -->|Pasado perdido| D["past perfect: I wish I had studied"]
-    C --> E{¿Con could?}
-    E -->|Sí| F["I wish I could travel"]
-
-    style D fill:#fff3c4
-```
+![[../Diagramas/en3-u2-03-01-graph.svg]]
 
 ---
 
@@ -198,21 +189,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Unreal Wish))
-    Present unreal 8.1
-      if past
-      would base
-      were formal
-    I wish 8.2
-      present past simple
-      future would could
-      past past perfect
-    wish vs hope
-      imposible wish
-      posible hope
-```
+![[../Diagramas/en3-u2-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

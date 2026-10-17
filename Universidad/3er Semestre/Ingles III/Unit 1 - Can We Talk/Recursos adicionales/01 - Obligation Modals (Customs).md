@@ -19,18 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** *must / mustn't / have to / don't have to / should* con fórmula, tabla 1×1, método para discutir costumbres, errores clásicos y drill.
 
-```mermaid
-graph TB
-    A[Dices una norma] --> B{¿Qué fuerza tiene?}
-    B -->|Ley o regla fuerte| C[must / have to]
-    B -->|Prohibición| D[must not]
-    C --> E{¿Es necesario?}
-    E -->|No| F[don't have to]
-    B -->|Consejo| G[should]
-
-    style D fill:#ffe1e1
-    style F fill:#e1ffe1
-```
+![[../../Diagramas/en3-u1-07-01-graph.svg]]
 
 ---
 
@@ -129,20 +118,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Modals))
-    must
-      Regla fuerte
-    must not
-      Prohibido
-    have to
-      Obligacion externa
-    don't have to
-      Innecesario
-    should
-      Consejo
-```
+![[../../Diagramas/en3-u1-07-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

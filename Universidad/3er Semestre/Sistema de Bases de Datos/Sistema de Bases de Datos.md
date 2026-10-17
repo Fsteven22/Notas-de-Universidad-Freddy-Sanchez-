@@ -51,7 +51,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
 
 - [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1.md|📂 Unidad 1 - Modelos de Datos y ER]]
 

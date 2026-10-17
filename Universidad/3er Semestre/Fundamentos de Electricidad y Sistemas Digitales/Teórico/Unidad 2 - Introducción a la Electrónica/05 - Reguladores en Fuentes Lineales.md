@@ -9,13 +9,7 @@ dg-publish: true
 > 
 > El [[04 - Circuitos de Filtrado y Fuentes Lineales|filtro capacitivo]] deja un voltaje CD con un rizado residual, y ese voltaje además **varía** si cambia la corriente que consume la carga o si fluctúa el voltaje de la red. El **regulador** es la cuarta y última etapa de la fuente lineal: fija la tensión de salida a un valor constante y seguro, sin importar esas variaciones de entrada o de carga.
 > 
-> ```mermaid
-> graph LR
->     A[V3: CD con<br/>rizado] --> B[Regulador]
->     B --> C[Vs: CD estable<br/>a la carga]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Reguladores_en_Fuentes_Lineales_01.svg]]
 > 
 > Pueden ser tan sencillos como un diodo Zener, o circuitos integrados dedicados — que son la solución más común en la práctica.
 
@@ -32,13 +26,7 @@ dg-publish: true
 > |**78AXX**|Tensiones positivas|3.3 V a 24 V / 0.1 A a 10 A|
 > |**79XXX**|Tensiones negativas|Equivalente en negativo|
 > 
-> ```mermaid
-> graph LR
->     A[Input] --> B[LM78XX]
->     B --> C[Output]
->     B --- D[GND]
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Reguladores_en_Fuentes_Lineales_02.svg]]
 > 
 > - Capacitor de entrada ($C_I$, típico 0.33 µF): estabiliza si el regulador queda alejado del filtro capacitivo principal.
 >     
@@ -55,14 +43,7 @@ dg-publish: true
 > 
 > A diferencia de la familia 78xx/79xx, estos reguladores permiten **ajustar** el voltaje de salida mediante un divisor resistivo externo, en vez de tener un valor fijo de fábrica.
 > 
-> ```mermaid
-> graph LR
->     A[Vin] --> B[LM317]
->     B --> C[Vout]
->     B --> D[Adjust] --> E[R2] --> F[GND]
->     C --> G[R1] --> D
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Reguladores_en_Fuentes_Lineales_03.svg]]
 > 
 > $$V_O = 1.25 \cdot \left(1 + \frac{R_2}{R_1}\right)$$
 > 
@@ -126,21 +107,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Reguladores en<br/>Fuentes Lineales))
-    Fijos
-      78AXX positivo
-      79XXX negativo
-    Ajustables
-      LM317 positivo
-      LM337 / LM137 negativo
-      Vo = 1.25(1+R2/R1)
-    Componentes externos
-      Cin
-      Cout
-      Divisor R1 R2
-```
+![[Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
 
 ---
 

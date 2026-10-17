@@ -1,0 +1,5 @@
+graph LR
+    A[Número en base b] -->|Evaluación directa Σ dᵢ · bⁱ| B[Decimal]
+    B -->|Divisiones sucesivas residuos de abajo arriba| A
+    C[Binario] -->|Agrupar de 4 en 4| D[Hexadecimal]
+    D -->|Expandir cada dígito en 4 bits| C

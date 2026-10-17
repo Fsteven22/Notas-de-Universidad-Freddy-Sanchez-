@@ -19,17 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** reading driverless (11.4), argument comment y mediación del árbol (11.5).
 
-```mermaid
-graph TB
-    A[Lección 11.4-11.5] --> B[Reading: driverless]
-    A --> C[Writing: argument comment]
-    A --> D[Speaking: mediation]
-    B --> E[Author vs you]
-    C --> F[First Additionally Finally]
-    D --> G[A vs B, C mediates, vote]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u5-05-01-graph.svg]]
 
 ---
 
@@ -150,18 +140,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((U11 Close))
-    Reading
-      driverless debate
-    Writing
-      First Finally
-      150 words
-    Speaking
-      A vs B C mediates
-      vote best
-```
+![[../Diagramas/en3-u5-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

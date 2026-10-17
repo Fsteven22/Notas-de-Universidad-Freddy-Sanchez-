@@ -12,17 +12,7 @@ dg-publish: true
 > 1. **Con memoria ($C$)**: integrador y derivador — la salida depende de la **historia** de la entrada (integral/derivada en el tiempo).
 > 2. **No lineales (saturación, diodos)**: comparadores, rectificadores y log/antilog — el OPAM ya **no está en zona lineal**, satura a $\pm V_{sat}$ o usa la exponencial del diodo.
 >
-> ```mermaid
-> graph TD
->     A[OPAM con R y C] --> B[Integrador<br/>1/sCs en realimentación]
->     A --> C[Derivador<br/>Cs en entrada]
->     D[OPAM en lazo abierto<br/>o con diodo] --> E[Comparadores<br/>paso por cero / Zener / Vref / histéresis]
->     D --> F[Rectificadores<br/>media/onda completa]
->     D --> G[Log / Antilog<br/>con diodo exponencial]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
 
 ---
 
@@ -251,32 +241,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Integrador/Derivador<br/>y No Lineales))
-    Integrador
-      RC en realimentación
-      vo = -1/RC ∫ vi
-      Flotante y no inversor
-      Saturación DC
-    Derivador
-      C en entrada
-      vo = -RC dvi/dt
-      No inversor
-      Amplifica ruido
-    Comparadores
-      Paso por cero
-      Con Zener Vz+0.7
-      Con Vref
-      Con histéresis
-    Rectificadores
-      Media onda
-      Onda completa
-    Log / Antilog
-      Diodo exponencial
-      vo = -VT ln(vi/RI_S)
-      vo = -R Is e^(vi/VT)
-```
+![[Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
 
 ---
 

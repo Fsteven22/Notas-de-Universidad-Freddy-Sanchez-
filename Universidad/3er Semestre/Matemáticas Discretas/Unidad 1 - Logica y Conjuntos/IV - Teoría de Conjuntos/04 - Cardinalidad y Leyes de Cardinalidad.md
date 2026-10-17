@@ -10,13 +10,7 @@ dg-publish: true
 >
 > La **cardinalidad** no solo nos dice cuántos elementos tiene un [[01 - Conjuntos, Cardinalidad y Subconjuntos|conjunto]]: también nos permite *calcular* el tamaño de conjuntos formados por operaciones (unión, intersección, diferencia) sin tener que listar todos sus elementos. Es la herramienta clave para los problemas de conteo con diagramas de Venn.
 >
-> ```mermaid
-> graph TD
->     A[Cardinalidad] --> B[Definición y propiedades básicas]
->     A --> C[Cardinalidad de operaciones]
->     A --> D[Principio de Inclusión-Exclusión]
->     A --> E[Problemas con Diagramas de Venn]
-> ```
+> ![[../../Diagramas/dis-u1-14-01-graph.svg]]
 >
 > **En esta nota:** $|A \cup B| = |A| + |B| - |A \cap B|$ (inclusión-exclusión de 2 y 3 conjuntos), cardinalidad de diferencia y complemento, y problemas tipo conteo con Venn sombreado.
 >
@@ -120,21 +114,7 @@ dg-publish: true
 >
 > **Mapa visual — las 4 regiones particionan el universo:**
 >
-> ```mermaid
-> graph TD
->     U["Universo U"] --> SA["Solo A"]
->     U --> SB["Solo B"]
->     U --> AB["Ambos"]
->     U --> N["Ninguno"]
->     SA --> F1["A menos interseccion"]
->     SB --> F2["B menos interseccion"]
->     AB --> F3["Interseccion"]
->     N --> F4["U menos union"]
->     F1 --> T["Suma total = U"]
->     F2 --> T
->     F3 --> T
->     F4 --> T
-> ```
+> ![[../../Diagramas/dis-u1-14-02-graph.svg]]
 >
 > **Diagrama de Venn real** (con los valores del Ejercicio 1: 22 solo M, 14 solo F, 8 ambos, 6 ninguno):
 >
@@ -169,19 +149,7 @@ dg-publish: true
 >
 > **Mapa visual — las 8 regiones en 3 niveles:**
 >
-> ```mermaid
-> graph TD
->     U["Universo U"] --> L1["Exactamente 1"]
->     U --> L2["Exactamente 2"]
->     U --> L3["Los 3"]
->     U --> L0["Ninguno"]
->     L1 --> A["Solo A"]
->     L1 --> B["Solo B"]
->     L1 --> C["Solo C"]
->     L2 --> AB["A y B solo"]
->     L2 --> AC["A y C solo"]
->     L2 --> BC["B y C solo"]
-> ```
+> ![[../../Diagramas/dis-u1-14-03-graph.svg]]
 >
 > **Diagrama de Venn real** (con los valores del Ejercicio 2 de deportes: 23, 18, 13, 10, 7, 5, 5, 19 ninguno):
 >
@@ -440,19 +408,7 @@ dg-publish: true
 > | Diferencia simétrica | $\lvert A \triangle B\rvert = \lvert A\rvert + \lvert B\rvert - 2\lvert A \cap B\rvert$ |
 > | Conjunto potencia | $\lvert\mathcal{P}(A)\rvert = 2^{\lvert A\rvert}$ |
 
-```mermaid
-graph TD
-    A[Problema de cardinalidad] --> B{Cuantos conjuntos?}
-    B -- 2 conjuntos --> C["PIE: A∪B = A + B - A∩B"]
-    B -- 3 conjuntos --> D[Inclusion-exclusion con 7 terminos]
-    D --> E[Llenar diagrama de adentro hacia afuera]
-    E --> F["Centro: A∩B∩C"]
-    E --> G["Pares: A∩B menos A∩B∩C"]
-    E --> H["Solos: A menos pares menos centro"]
-    C --> I["Verificar: suma de regiones = U"]
-    H --> I
-
-```
+![[../../Diagramas/dis-u1-14-04-graph.svg]]
 
 ---
 

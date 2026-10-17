@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** statements (7.1) + questions (7.2) con reglas, fórmula en texto y accuracy checks del libro.
 
-```mermaid
-graph TB
-    A[Reportas] --> B{¿Afirmación o pregunta?}
-    B -->|Afirmación| C["present→past, past→past perfect"]
-    B -->|Pregunta| D["sin ?, sujeto antes del verbo, if si es yes/no"]
-    C --> E["verbo + that + backshift"]
-    D --> E
-
-    style E fill:#e1ffe1
-```
+![[../Diagramas/en3-u1-03-01-graph.svg]]
 
 ---
 
@@ -205,18 +196,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Reported))
-    Statements
-      present to past
-      past to past perfect
-      facts stay
-    Questions
-      no question mark
-      subject first
-      if for yes-no
-```
+![[../Diagramas/en3-u1-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

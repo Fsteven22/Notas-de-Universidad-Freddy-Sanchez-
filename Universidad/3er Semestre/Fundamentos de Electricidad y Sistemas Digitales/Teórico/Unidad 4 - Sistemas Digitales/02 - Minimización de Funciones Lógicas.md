@@ -11,15 +11,7 @@ dg-publish: true
 > 
 > Esta idea no es exclusiva del papel y lápiz: las herramientas modernas de síntesis lógica (usadas para programar FPGAs o diseñar circuitos integrados completos) aplican exactamente estos mismos principios de simplificación booleana, solo que a una escala de millones de variables mediante algoritmos automatizados.
 > 
-> ```mermaid
-> graph LR
->     A[Tabla de verdad] --> B["Función lógica<br/>(SOP o POS)"]
->     B --> C["Minimización<br/>(Álgebra de Boole o<br/>Mapas de Karnaugh)"]
->     C --> D[Circuito con el<br/>mínimo de compuertas]
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
 
 ---
 
@@ -76,16 +68,7 @@ dg-publish: true
 
 ## 🔀 ¿SOP o POS? Criterio de elección
 
-```mermaid
-graph TD
-    A["Contar los 1 y los 0<br/>en la tabla de verdad"] --> B{"¿Hay menos 1<br/>que 0?"}
-    B -->|Sí| C["Usar SOP<br/>(menos minterms que sumar)"]
-    B -->|No, hay menos 0| D["Usar POS<br/>(menos maxterms que multiplicar)"]
-    B -->|Cantidad similar| E["Cualquiera; el resultado<br/>final tras minimizar suele<br/>ser equivalente en costo"]
-
-    style C fill:#e1ffe1
-    style D fill:#e1f5ff
-```
+![[Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
 
 ---
 
@@ -274,26 +257,7 @@ graph TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Minimización de<br/>Funciones Lógicas))
-    Formas canónicas
-      Minterm m
-      Maxterm M
-      SOP - suma de minterms
-      POS - producto de maxterms
-    Mapas de Karnaugh
-      Correspondencia tabla-mapa
-      Adyacencia logica
-      Grupos de 2 elevado k
-      Bordes y esquinas adyacentes
-      Don't care
-    Una sola familia de compuertas
-      Todo con NAND
-      Todo con NOR
-    Siguiente tema
-      4.4 Circuitos integrados programables
-```
+![[Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
 
 ---
 

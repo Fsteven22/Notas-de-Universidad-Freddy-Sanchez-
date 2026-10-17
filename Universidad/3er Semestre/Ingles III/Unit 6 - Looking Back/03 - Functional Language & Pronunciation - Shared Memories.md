@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** prompting/recalling chart (12.3), sharing strategy y clusters.
 
-```mermaid
-graph TB
-    A[Recuerdas algo] --> B{¿Solo o compartido?}
-    B -->|Pides memoria| C["Do you remember that, Remember"]
-    B -->|Recuerdas| D["I don't quite recall, That rings a bell"]
-    B -->|Compartes| E["That reminds me, Has that ever happened"]
-    D --> F[Cierra: Come on, Hawaii]
-
-    style F fill:#e1ffe1
-```
+![[../Diagramas/en3-u6-04-01-graph.svg]]
 
 ---
 
@@ -148,19 +139,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Memories))
-    Prompt
-      Do you remember
-      Don't tell me
-    Recall
-      rings a bell
-      coming back
-    Share
-      reminds me
-      ever happened
-```
+![[../Diagramas/en3-u6-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

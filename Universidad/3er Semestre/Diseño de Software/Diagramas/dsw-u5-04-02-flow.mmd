@@ -1,0 +1,9 @@
+flowchart TD
+   A["Quiero pipeline"] --> B{"¿Tests<br/>automatizados?"}
+   B -->|"No"| C["Primero U5-01:<br/>sin tests no hay CI"]
+   B -->|"Sí"| D{"¿Build<br/>repetible?"}
+   D -->|"No"| E["Scripts de build<br/>versionados"]
+   D -->|"Sí"| F["CI por push<br/>+ artefacto"]
+   F --> G{"¿Deploy<br/>manual duele?"}
+   G -->|"Sí"| H["Automatiza deploy<br/>(CD)"]
+   G -->|"No aún"| I["Quédate en entrega<br/>continua"]

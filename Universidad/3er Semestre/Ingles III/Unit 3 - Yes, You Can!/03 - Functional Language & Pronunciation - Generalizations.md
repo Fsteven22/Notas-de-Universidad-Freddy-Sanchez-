@@ -19,16 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** generalizing chart (9.3), contrasting culture y /d/ inicial.
 
-```mermaid
-graph TB
-    A[Generalizas] --> B{¿Con número?}
-    B -->|Sí| C["On average + cifra: 5-10%"]
-    B -->|No| D["Generally / On the whole"]
-    A --> E{¿Contrastas?}
-    E --> F["We don't nearly as much"]
-
-    style F fill:#fff3c4
-```
+![[../Diagramas/en3-u3-04-01-graph.svg]]
 
 ---
 
@@ -162,19 +153,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Generalize))
-    Markers
-      Generally speaking
-      On average + number
-      On the whole
-    Contrast
-      nearly as much
-      that way
-    Pronunciation
-      initial d
-```
+![[../Diagramas/en3-u3-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

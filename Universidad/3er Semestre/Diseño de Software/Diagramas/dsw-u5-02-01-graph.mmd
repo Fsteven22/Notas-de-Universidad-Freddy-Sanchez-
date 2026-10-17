@@ -1,0 +1,15 @@
+graph TB
+   A[Cambio en código] --> B{¿Tests?}
+   B --> C[❌ Sin red]
+   B --> D[✅ Suite JUnit]
+
+   C --> C1[Probar todo a mano]
+   C --> C2[Se escapa el bug]
+   C --> C3[Miedo al cambio]
+
+   D --> D1[Corren en segundos]
+   D --> D2[Fallo apunta al método]
+   D --> D3[Refactor sin miedo]
+
+   style C fill:#ffe1e1
+   style D fill:#e1ffe1

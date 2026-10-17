@@ -25,16 +25,7 @@ tags: [IDIG2012, unidad4, storytelling, divulgacion, ted]
 > | **Acción** | Aplauden y nada | Adoptan tu recomendación |
 > | **Concurso** | Eliminada en semifinal | Finalista Voces con Ciencia |
 
-```mermaid
-graph TB
-    A[Personajes: tu equipo + audiencia] --> B[Conflicto: problema real S1-S7]
-    B --> C[Desarrollo: 3 intentos con datos]
-    C --> D[Clímax: hallazgo clave]
-    D --> E[Resolución: recomendación accionable]
-
-    style B fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/02_-_Storytelling_para_comunicar_ciencia_01.svg]]
 
 ---
 
@@ -111,20 +102,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Storytelling))
-    Bloques
-      Gancho
-      Conflicto
-      Desarrollo
-      Clímax
-      Resolución
-    Ingredientes
-      Personajes
-      Dato APA
-      Emoción ética
-```
+![[Diagramas/02_-_Storytelling_para_comunicar_ciencia_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

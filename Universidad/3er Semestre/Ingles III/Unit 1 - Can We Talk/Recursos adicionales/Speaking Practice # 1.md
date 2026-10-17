@@ -20,24 +20,7 @@ dg-publish: false
 >
 > **En esta nota:** tu guion original completo e intacto (sección 📜), vocabulario, estructura en 6 slides (~370 palabras ≈ 3:00), drill de Q&A y checklist.
 
-```mermaid
-graph TB
-    A[Flooding in Guayaquil] --> B{4 causas}
-    B --> C[Lluvia record 2024]
-    B --> D[Marea 5 m]
-    B --> E[Red de 1970]
-    B --> F[Basura 4000 t/dia]
-    C --> G[Zonas afectadas]
-    D --> G
-    E --> G
-    F --> G
-    G --> H[Drenaje]
-    G --> I[Manglares]
-    H --> J[Combinar ambas]
-    I --> J
-
-    style J fill:#e1ffe1
-```
+![[../../Diagramas/en3-u1-11-01-graph.svg]]
 
 ---
 
@@ -261,24 +244,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Flooding GYE))
-    4 causas
-      400 L/m2
-      Marea 5 m
-      Red 1970
-      4000 t/dia
-    Zonas
-      Samanes Sauces
-      Suroeste
-    2 soluciones
-      Drenaje Interagua
-      Manglar 200 m
-    Cierre
-      Combinar ambas
-      3 minutos
-```
+![[../../Diagramas/en3-u1-11-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

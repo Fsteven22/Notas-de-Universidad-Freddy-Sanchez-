@@ -19,14 +19,7 @@ tags: [MATG1051, unidad4, indice, discretas]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 Recurrencia] --> B[02 Homogénea]
-    C[03 Pseudocódigo] --> D[04 Análisis Algoritmos I]
-    D --> E[05 Análisis Algoritmos II]
-    A --> C
-    B --> D
-```
+![[../Diagramas/dis-u4-01-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Teorema del Binomio y Principio del Palomar]] (Unidad 3)

@@ -18,15 +18,7 @@ tags: [FESD, unidad2, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-```mermaid
-graph LR
-    A[01 - Semiconductores] --> B[02 - Diodo Unión P-N]
-    B --> C[03 - Transistor BJT]
-    C --> D[04 - Filtrado y Fuentes]
-    D --> E[05 - Reguladores]
-    E --> F[06 - Ruido e Interferencia]
-    F --> G[Unidad 3 - OPAMs]
-```
+![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Teoremas de Analisis de Circuitos]] (Unidad 1)
