@@ -1,0 +1,10 @@
+graph LR
+    subgraph V["Fuente de voltaje"]
+        Vs[🔋 Vs] --- Rs_s[Rs en serie]
+    end
+    subgraph I["Fuente de corriente"]
+        Is[⬆ Is] --- Rs_p[Rs en paralelo]
+    end
+    V <-->|"Is = Vs/Rs<br/>Vs = Is·Rs"| I
+    style Vs fill:#fff4e1
+    style Is fill:#e1ffe1

@@ -1,0 +1,12 @@
+graph LR
+    Vs1[🔋 Vs1] -->|I₁| R1[R₁]
+    R1 --> N1[Nodo]
+    N1 -->|I₁-I₂| R2[R₂]
+    N1 -->|I₂| R3[R₃]
+    R2 --> N2[Nodo]
+    R3 --> N2
+    N2 --> Vs1
+    style Vs1 fill:#fff4e1
+    style R1 fill:#e1f5ff
+    style R2 fill:#e1ffe1
+    style R3 fill:#e1ffe1

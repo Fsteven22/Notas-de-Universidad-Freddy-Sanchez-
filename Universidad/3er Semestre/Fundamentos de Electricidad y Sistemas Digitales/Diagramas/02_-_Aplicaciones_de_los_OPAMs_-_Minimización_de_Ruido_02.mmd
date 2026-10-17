@@ -1,0 +1,7 @@
+graph LR
+    A["Señal ruidosa<br/>cerca del umbral"] --> B{Comparador simple}
+    A --> C{Comparador con histéresis}
+    B --> D["Salida oscila<br/>falsamente"]
+    C --> E["Salida estable<br/>una sola transición"]
+    style D fill:#ffe1e1
+    style E fill:#e1ffe1

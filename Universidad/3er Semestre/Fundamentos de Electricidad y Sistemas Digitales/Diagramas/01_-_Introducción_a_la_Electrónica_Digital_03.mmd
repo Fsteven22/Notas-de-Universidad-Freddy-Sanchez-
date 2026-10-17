@@ -1,0 +1,11 @@
+graph TD
+    A["¿La señal viene de un datasheet<br/>o especificación externa?"] -->|Sí, especifica activo en H| B["Usa lógica positiva<br/>para esa señal"]
+    A -->|Sí, especifica activo en L<br/>ej: Reset activo bajo| C["Usa lógica negativa<br/>para esa señal"]
+    A -->|No hay restricción externa| D["Elige la convención que<br/>minimice el número de<br/>inversores necesarios"]
+    D --> E{"¿Se combinan señales<br/>de ambas convenciones<br/>en el mismo circuito?"}
+    E -->|Sí| F["Usa lógica mixta:<br/>A.H ↔ Ā.L"]
+    E -->|No| G["Mantén una sola<br/>convención en todo<br/>el circuito"]
+
+    style B fill:#e1ffe1
+    style C fill:#e1f5ff
+    style F fill:#fff4e1

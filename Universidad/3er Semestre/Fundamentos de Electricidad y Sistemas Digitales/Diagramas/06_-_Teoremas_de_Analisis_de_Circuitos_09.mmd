@@ -1,0 +1,12 @@
+graph TD
+    A[Circuito complejo] --> B{¿Qué se busca?}
+    B -->|Respuesta ante<br/>varias fuentes| C[Superposición]
+    B -->|Simplificar<br/>para la carga| D{¿Tipo de equivalente?}
+    B -->|Optimizar<br/>potencia| E[Máx. transferencia<br/>de potencia]
+    D -->|Voltaje + serie| F[Thévenin]
+    D -->|Corriente + paralelo| G[Norton]
+    F <-->|Transformación| G
+    style C fill:#e1f5ff
+    style F fill:#e1ffe1
+    style G fill:#fff4e1
+    style E fill:#f5e1ff

@@ -10,16 +10,7 @@ dg-publish: true
 >
 > Los **filtros activos** usan OPAMPs para selectar frecuencias deseadas y atenuar ruido. En esta práctica construyes un filtro activo y un acondicionador de señal, midiendo la respuesta en frecuencia y la ganancia en cada punto.
 >
-> ```mermaid
-> graph TD
->     A[Práctica 5] --> B[Procedimiento 1<br/>Filtro activo LM358]
->     A --> C[Procedimiento 2<br/>Acondicionador de señal]
->     B --> D[Respuesta en frecuencia<br/>10 KHz – 1 MHz]
->     C --> E[Mapeo 0-10V → -5V a +5V]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
 
 ---
 

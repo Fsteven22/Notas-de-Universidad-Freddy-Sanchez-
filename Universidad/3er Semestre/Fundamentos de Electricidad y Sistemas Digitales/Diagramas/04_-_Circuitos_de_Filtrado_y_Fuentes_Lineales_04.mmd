@@ -1,0 +1,8 @@
+graph TD
+    A{¿Cuánto rizado<br/>tolera la carga?} -->|Poco rizado| B{¿Se dispone de<br/>transformador con<br/>derivación central?}
+    A -->|Rizado aceptable| C[Media onda +<br/>filtro capacitivo]
+    B -->|Sí| D[Onda completa<br/>center-tap]
+    B -->|No| E[Puente de diodos]
+    style C fill:#fff4e1
+    style D fill:#e1ffe1
+    style E fill:#e1f5ff

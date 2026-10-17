@@ -1,0 +1,14 @@
+graph TD
+    P1[1 Asumir region activa<br/>Ic = beta·Ib] --> P2
+    P2[2 Calcular Ib<br/>con KVL en malla de base] --> P3
+    P3[3 Calcular Ic = beta·Ib] --> P4
+    P4[4 Calcular Vce<br/>con KVL en malla de colector] --> P5
+    P5{Vce > Vce_sat?}
+    P5 -->|Si| P6[Region ACTIVA confirmada]
+    P5 -->|No| P7[Transistor en SATURACION<br/>Vce = Vce_sat]
+    style P1 fill:#e1f5ff
+    style P2 fill:#e1ffe1
+    style P3 fill:#fff4e1
+    style P4 fill:#e1f5ff
+    style P6 fill:#e1ffe1
+    style P7 fill:#ffe1e1

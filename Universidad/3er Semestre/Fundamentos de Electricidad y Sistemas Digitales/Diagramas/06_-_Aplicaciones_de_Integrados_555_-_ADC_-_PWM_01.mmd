@@ -1,0 +1,10 @@
+graph LR
+    A[Señal analógica<br/>o temporizada] --> B[555<br/>Temporizador]
+    A --> C[PWM<br/>Modulación]
+    A --> D[ADC<br/>Conversión A/D]
+    B --> E[Temporización,<br/>osciladores, PWM]
+    C --> F[Control de<br/>potencia promedio]
+    D --> G[Dato digital<br/>para un micro]
+    style B fill:#fff4e1
+    style C fill:#e1f5ff
+    style D fill:#e1ffe1

@@ -1,0 +1,8 @@
+graph TD
+    A[Circuito a analizar] --> B{¿Cuántas<br/>mallas vs nodos?}
+    B -->|Pocas mallas| C[Método de<br/>corrientes de malla<br/>KVL]
+    B -->|Pocos nodos| D[Método de<br/>tensiones de nodo<br/>KCL]
+    B -->|Elemento único| E[Ley de Ohm<br/>directa]
+    style C fill:#e1f5ff
+    style D fill:#e1ffe1
+    style E fill:#fff4e1

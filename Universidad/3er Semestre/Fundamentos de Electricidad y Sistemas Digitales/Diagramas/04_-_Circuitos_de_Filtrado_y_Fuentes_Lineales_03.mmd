@@ -1,0 +1,8 @@
+graph TD
+    A[Salida del<br/>rectificador] --> B["Capacitor C<br/>en paralelo con RL"]
+    B --> C[Carga en picos]
+    B --> D[Descarga entre picos<br/>a través de RL]
+    C --> E[Voltaje de rizado Vr]
+    D --> E
+    style B fill:#e1f5ff
+    style E fill:#fff4e1

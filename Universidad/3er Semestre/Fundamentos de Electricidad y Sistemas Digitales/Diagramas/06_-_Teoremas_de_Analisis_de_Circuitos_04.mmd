@@ -1,0 +1,13 @@
+graph LR
+    subgraph Original["Red original compleja"]
+        F1[Fuentes y resistencias] --> A1[Terminal A]
+        F1 --> B1[Terminal B]
+    end
+    subgraph Equiv["Equivalente Thévenin"]
+        VTh["🔋 VTh"] --> RTh[RTh]
+        RTh --> A2[Terminal A]
+        VTh --> B2[Terminal B]
+    end
+    Original -->|"≡"| Equiv
+    style VTh fill:#fff4e1
+    style RTh fill:#e1f5ff

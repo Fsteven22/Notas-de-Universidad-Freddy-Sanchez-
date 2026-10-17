@@ -10,19 +10,7 @@ dg-publish: true
 >
 > Esta práctica valida experimentalmente las leyes que viste en teoría: **Ley de Ohm** ($V=IR$), **KCL** ($\sum I = 0$ en nodos) y **KVL** ($\sum V = 0$ en mallas). Además aplicas los métodos de **divisor de tensión** y **divisor de corriente** para dimensionar redes eléctricas.
 >
-> ```mermaid
-> graph TD
->     A[Práctica 2] --> B[Procedimiento 1<br/>Ley de Ohm]
->     A --> C[Procedimiento 2<br/>Divisor de corriente + KCL]
->     A --> D[Procedimiento 3<br/>Divisor de tensión + KVL]
->     B --> E[Medir I vs R]
->     C --> F[Medir I por rama]
->     D --> G[Medir V por elemento]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
 
 ---
 

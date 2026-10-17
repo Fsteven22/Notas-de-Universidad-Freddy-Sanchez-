@@ -28,14 +28,7 @@ dg-publish: true
 > - **Puntos grandes**: aislados entre sí eléctricamente.
 > - **Puntos pequeños alrededor de un punto grande**: comparten potencial con él (arriba, abajo, izquierda, derecha).
 > 
-> ```mermaid
-> graph LR
->     A[Punto Grande] --- B[↑ pequeño]
->     A --- C[↓ pequeño]
->     A --- D[← pequeño]
->     A --- E[→ pequeño]
->     style A fill:#fff4e1
-> ```
+> ![[Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
 > 
 > > ⚠️ Los puntos grandes están **aislados entre sí**. No confundir con el protoboard.
 > 

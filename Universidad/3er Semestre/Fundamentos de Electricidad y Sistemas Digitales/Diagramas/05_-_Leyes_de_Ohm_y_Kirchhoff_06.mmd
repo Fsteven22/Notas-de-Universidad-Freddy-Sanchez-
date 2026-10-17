@@ -1,0 +1,10 @@
+graph TD
+    A[Identificar mallas o nodos] --> B[Llenar diagonal: términos propios<br/>suma de R o G conectados]
+    B --> C[Llenar fuera de diagonal: términos mutuos<br/>R o G compartidos, signo negativo]
+    C --> D[Llenar vector de fuentes<br/>con signo según sentido]
+    D --> E[Resolver sistema: regla de Cramer<br/>o sustitución]
+    style A fill:#fff4e1
+    style B fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#f5e1ff
+    style E fill:#ffe1e1

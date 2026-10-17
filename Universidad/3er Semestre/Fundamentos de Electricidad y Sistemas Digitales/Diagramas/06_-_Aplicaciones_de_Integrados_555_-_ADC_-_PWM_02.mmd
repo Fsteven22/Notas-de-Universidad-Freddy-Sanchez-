@@ -1,0 +1,7 @@
+graph TD
+    A["Pin 2 (Trigger) en BAJO<br/>(pulso SET)"] --> B["Salida (Pin 3) → ALTO<br/>se enclava"]
+    C["Pin 4 (Reset) en BAJO<br/>(pulso RESET)"] --> D["Salida (Pin 3) → BAJO<br/>se enclava"]
+    E["Ambos pines en ALTO<br/>(reposo)"] --> F["La salida mantiene<br/>su último estado (memoria)"]
+    style B fill:#e1ffe1
+    style D fill:#ffe1e1
+    style F fill:#fff4e1

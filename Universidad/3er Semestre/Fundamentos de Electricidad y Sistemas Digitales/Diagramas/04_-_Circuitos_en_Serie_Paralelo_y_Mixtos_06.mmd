@@ -1,0 +1,8 @@
+graph LR
+    A[Fuente Vs] --> B{Tipo de<br/>circuito}
+    B -->|Serie| C[I constante<br/>V se divide<br/>R_eq = ΣRk]
+    B -->|Paralelo| D[V constante<br/>I se divide<br/>R_eq < R_min]
+    B -->|Mixto| E[Simplificar<br/>paso a paso<br/>KVL + KCL]
+    style C fill:#e1f5ff
+    style D fill:#e1ffe1
+    style E fill:#fff4e1

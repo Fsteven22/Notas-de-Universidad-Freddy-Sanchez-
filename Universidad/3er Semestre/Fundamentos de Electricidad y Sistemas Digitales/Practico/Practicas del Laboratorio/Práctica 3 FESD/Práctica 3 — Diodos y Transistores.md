@@ -13,19 +13,7 @@ dg-publish: true
 > - El BJT como **switch electrónico** (corte vs saturación).
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
-> ```mermaid
-> graph TD
->     A[Práctica 3] --> B[Procedimiento 1<br/>Diodo 1N4007]
->     A --> C[Procedimiento 2<br/>BJT 2N3904]
->     A --> D[Procedimiento 3<br/>Sensor LDR]
->     B --> E[Rectificación senoidal]
->     C --> F[Switch: corte/saturación]
->     D --> G[Sensibilidad de luz]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
 
 ---
 

@@ -1,0 +1,9 @@
+graph LR
+    A[Perturbación] --> B{¿Origen?}
+    B -->|Interno<br/>del componente| C[Ruido electrónico]
+    B -->|Externo<br/>al circuito| D[Interferencia EMI/RFI]
+    C --> E[Señal degradada]
+    D --> E
+    style C fill:#fff4e1
+    style D fill:#ffe1e1
+    style E fill:#e1f5ff

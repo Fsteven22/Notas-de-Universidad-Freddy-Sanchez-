@@ -10,19 +10,7 @@ dg-publish: true
 >
 > Esta práctica integra **acondicionamiento de señales**, **compuertas lógicas** y **Arduino** para controlar actuadores. Comparas la implementación con hardware puro (compuertas 74LS/74HC) vs software embebido (Arduino), y analizas las ventajas de cada enfoque.
 >
-> ```mermaid
-> graph TD
->     A[Práctica 6] --> B[Procedimiento 1<br/>Acondicionamiento LM358]
->     A --> C[Procedimiento 2<br/>Lógica combinatoria]
->     A --> D[Procedimiento 3<br/>Arduino + sensores]
->     B --> E[Comparador con umbrales]
->     C --> F[F = A' + BC]
->     D --> G[analogRead + LEDs]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
 
 ---
 

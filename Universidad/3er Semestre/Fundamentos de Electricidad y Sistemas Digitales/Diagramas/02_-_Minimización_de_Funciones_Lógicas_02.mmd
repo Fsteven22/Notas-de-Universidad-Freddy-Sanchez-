@@ -1,0 +1,8 @@
+graph TD
+    A["Contar los 1 y los 0<br/>en la tabla de verdad"] --> B{"¿Hay menos 1<br/>que 0?"}
+    B -->|Sí| C["Usar SOP<br/>(menos minterms que sumar)"]
+    B -->|No, hay menos 0| D["Usar POS<br/>(menos maxterms que multiplicar)"]
+    B -->|Cantidad similar| E["Cualquiera; el resultado<br/>final tras minimizar suele<br/>ser equivalente en costo"]
+
+    style C fill:#e1ffe1
+    style D fill:#e1f5ff
