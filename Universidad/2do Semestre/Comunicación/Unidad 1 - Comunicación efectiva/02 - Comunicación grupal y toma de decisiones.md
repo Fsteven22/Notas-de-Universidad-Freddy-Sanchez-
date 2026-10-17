@@ -22,25 +22,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 > | **Conflictos** | Se evitan y explotan | Se gestionan y resuelven |
 > | **Cohesión** | Subgrupos enfrentados | Compromiso compartido |
 
-```mermaid
-graph TB
-    A[Grupo se reúne] --> B{¿Hay técnica<br/>de manejo?}
-    B --> C[❌ Sin técnica]
-    B --> D[✅ Con técnica]
-
-    C --> C1[Caos y ruido]
-    C --> C2[Uno domina]
-    C --> C3[Sin acta ni acuerdo]
-    C --> C4[Retrabajo]
-
-    D --> D1[Roles y turnos]
-    D --> D2[Escucha + criterios]
-    D --> D3[Acta y responsables]
-    D --> D4[Decisión trazable]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_01.svg]]
 
 ---
 
@@ -54,20 +36,7 @@ graph TB
 >
 > Es el patrón invisible de interacción: quién habla, quién calla, cómo se decide. Si no la gestionas, ella te gestiona a ti.
 >
-> ```mermaid
-> graph LR
->     U[Problema] --> E[Opciones]
->     E --> G[Deliberación<br/>grupal]
->     G --> R[Decisión]
->     G --> A[Conflicto gestionado]
->     W1[Facilitador] -.Ordena turnos.-> G
->     W2[Secretario] -.Registra acuerdos.-> G
->     W3[Tiempo] -.Limita debate.-> G
->     style G fill:#e1f5ff
->     style W1 fill:#fff4e1
->     style W2 fill:#fff4e1
->     style W3 fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_02.svg]]
 >
 > **Regla de Oro del grupo universitario:**
 >
@@ -180,22 +149,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Grupal))
-    Dinámicas
-      Phillips 6-6
-      Mesa redonda
-      Matriz decisión
-    Facilitación
-      Turnos
-      Roles rotativos
-      Acta
-    Conflictos
-      Sobre ideas
-      Con datos
-      Sin pelea
-```
+![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

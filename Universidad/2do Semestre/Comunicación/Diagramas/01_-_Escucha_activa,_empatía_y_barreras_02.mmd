@@ -1,0 +1,11 @@
+graph LR
+    U[Mensaje] --> E[Palabras]
+    E --> I[Intención]
+    I --> EA[Escucha activa]
+    EA --> R[Respuesta ajustada]
+    N1[Nivel 1<br/>Oír] -.Superficial.-> E
+    N2[Nivel 2<br/>Entender] -.Contenido.-> I
+    N3[Nivel 3<br/>Empatizar] -.Emoción + contexto.-> EA
+    style EA fill:#e1f5ff
+    style N1 fill:#ffe1e1
+    style N3 fill:#e1ffe1

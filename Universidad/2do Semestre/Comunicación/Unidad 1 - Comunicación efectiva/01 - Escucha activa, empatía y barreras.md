@@ -27,25 +27,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > | **Trabajo en equipo** | Decisiones apresuradas | Decisiones con información completa |
 > | **Liderazgo** | Equipo se siente ignorado | Equipo se siente validado |
 
-```mermaid
-graph TB
-    A[Emisor habla] --> B{¿Cómo escucha<br/>el receptor?}
-    B --> C[❌ Escucha pasiva]
-    B --> D[✅ Escucha activa]
-
-    C --> C1[Oye palabras]
-    C --> C2[Prepara respuesta]
-    C --> C3[Interrumpe / juzga]
-    C --> C4[Malentendido]
-
-    D --> D1[Comprende contenido]
-    D --> D2[Capta intención y emoción]
-    D --> D3[Confirma y retroalimenta]
-    D --> D4[Acuerdo claro]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_01.svg]]
 
 ---
 
@@ -57,19 +39,7 @@ graph TB
 >
 > Es el propósito detrás del mensaje: informar, pedir, persuadir, expresar emoción. Escuchar activamente es detectar esa intención, no solo las palabras.
 >
-> ```mermaid
-> graph LR
->     U[Mensaje] --> E[Palabras]
->     E --> I[Intención]
->     I --> EA[Escucha activa]
->     EA --> R[Respuesta ajustada]
->     N1[Nivel 1<br/>Oír] -.Superficial.-> E
->     N2[Nivel 2<br/>Entender] -.Contenido.-> I
->     N3[Nivel 3<br/>Empatizar] -.Emoción + contexto.-> EA
->     style EA fill:#e1f5ff
->     style N1 fill:#ffe1e1
->     style N3 fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_02.svg]]
 >
 > **Comparación visual:**
 >
@@ -100,16 +70,7 @@ graph TB
 >
 > Todo evento comunicativo tiene 6 elementos: **emisor** (produce y envía), **receptor** (recibe e interpreta), **código** (reglas y signos compartidos: el mismo idioma), **canal** (medio físico), **mensaje** (la información) y **contexto** (la situación de ambos).
 >
-> ```mermaid
-> graph LR
->     E["Emisor"] -->|"codifica"| M["Mensaje<br/>código + canal"]
->     M -->|"decodifica"| R["Receptor"]
->     R -->|"retroalimentación"| E
->     CTX["Contexto"] -.rodea.-> M
->     RU["Ruido"] -.interfiere.-> M
->     style RU fill:#ffe1e1
->     style R fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_03.svg]]
 >
 > **Se lee así:** el emisor codifica, el receptor decodifica; la **retroalimentación** (respuesta que confirma recepción) invierte los roles y cierra el circuito. El **ruido** es cualquier interferencia sobre los elementos y debe evitarse.
 >
@@ -133,13 +94,7 @@ graph TB
 >
 > El material de clase define **tres componentes inseparables**:
 >
-> ```mermaid
-> graph LR
->     A[Escucha Activa] --> B[1. Comprensión<br/>y retención]
->     A --> C[2. Identificación<br/>intención comunicativa]
->     A --> D[3. Identificación y<br/>gestión de emociones]
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_04.svg]]
 >
 > | Componente | Qué Hace | Clave |
 > |---|---|---|
@@ -215,19 +170,7 @@ graph TB
 
 > [!danger] 🚫 Las 3 Barreras del Syllabus (marco base)
 >
-> ```mermaid
-> graph TD
->     A[Mensaje claro] --> B{¿Qué barrera<br/>aparece?}
->     B --> C[👁️ Percepción selectiva]
->     B --> D[⚖️ Juicios de valor]
->     B --> E[😡 Emociones]
->     C --> C1[Solo oigo lo que me conviene]
->     D --> D1[Etiqueto antes de entender]
->     E --> E1[Ansiedad/enojo distorsiona]
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_05.svg]]
 >
 > **Síntomas y antídotos:**
 >
@@ -285,13 +228,7 @@ graph TB
 > - Explican por qué "sentimos" la emoción del otro al ver su expresión facial o escuchar su tono.
 > - Base neurofisiológica del **contagio emocional** y la **resonancia empática**.
 >
-> ```mermaid
-> graph LR
->     A[Observo acción/emoción] --> B[Neuronas espejo<br/>se activan]
->     B --> C[Simulación interna<br/>de la experiencia]
->     C --> D[Resonancia empática<br/>entiendo/siento lo que sientes]
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_06.svg]]
 >
 > **Implicación práctica:** la escucha activa no es solo técnica — activa el sistema de neuronas espejo, mejorando la empatía natural con práctica deliberada.
 >
@@ -300,19 +237,7 @@ graph TB
 >
 > **Empatía no es estar de acuerdo, es entender el marco del otro.**
 >
-> ```mermaid
-> graph TB
->     EDT[Yo escucho]
->     WT[Otro habla]
->     EDT -->|1. Pausa| SW[No juzgo aún]
->     SW -->|2. Pregunto| WT
->     WT -->|3. Explica| EDT
->     EDT -->|4. Reflejo| UI[Valido emoción]
->     WT -->|5. Confirma| WT
->     style EDT fill:#e1f5ff
->     style WT fill:#fff4e1
->     style SW fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_07.svg]]
 >
 > **Frases plantilla:**
 >
@@ -468,33 +393,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Escucha<br/>Activa))
-    Niveles
-      Oír
-      Entender
-      Empatizar
-    Componentes
-      Comprensión
-      Intención
-      Gestión emocional
-    Barreras
-      Percepción selectiva
-      Juicios de valor
-      Emociones
-      Ruido y filtros mentales
-    Empatía
-      Neuronas espejo
-      Empatía operativa
-    Antídotos
-      CARE
-      Reformular
-      Nombrar emoción
-    Equipo
-      Confirmar requerimiento
-      Feedback sin juicio
-```
+![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_08.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -565,16 +464,16 @@ mindmap
 #flashcards/comunicacion-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
->
-> - ¿Oír vs escuchar?::Involuntario sin esfuerzo vs acto intencional consciente.
+
+- ¿Oír vs escuchar?::Involuntario sin esfuerzo vs acto intencional consciente.
 <!--SR:!2026-10-11,4,270-->
-> - ¿3 componentes de la escucha activa?::Comprensión-retención, intención comunicativa y gestión emocional.
+- ¿3 componentes de la escucha activa?::Comprensión-retención, intención comunicativa y gestión emocional.
 <!--SR:!2026-10-10,3,250-->
-> - ¿CARE?::Concentrarse, Asentir, Reformular, Emocionar (nombrar la emoción).
+- ¿CARE?::Concentrarse, Asentir, Reformular, Emocionar (nombrar la emoción).
 <!--SR:!2026-10-08,1,230-->
-> - ¿Qué son las neuronas espejo?::Se activan al observar y al actuar: base biológica de la empatía.
+- ¿Qué son las neuronas espejo?::Se activan al observar y al actuar: base biológica de la empatía.
 <!--SR:!2026-10-10,3,250-->
-> - ¿3 barreras del syllabus + antídoto común?::Percepción selectiva, juicios de valor, emociones; antídoto: reformular y nombrar.
+- ¿3 barreras del syllabus + antídoto común?::Percepción selectiva, juicios de valor, emociones; antídoto: reformular y nombrar.
 - ¿6 elementos del proceso clásico?::Emisor, receptor, código, canal, mensaje y contexto (+ retroalimentación y ruido).
 - ¿Efectiva vs asertiva?::Efectiva = claridad de transmisión; asertiva = decir lo tuyo respetando al otro.
 - ¿6 técnicas CCL en orden?::Atender, suspender juicio, reflejar, aclarar, resumir, compartir (y después: actuar).

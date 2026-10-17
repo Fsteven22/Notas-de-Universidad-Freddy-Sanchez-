@@ -1,0 +1,12 @@
+graph LR
+    U[Problema] --> E[Opciones]
+    E --> G[Deliberación<br/>grupal]
+    G --> R[Decisión]
+    G --> A[Conflicto gestionado]
+    W1[Facilitador] -.Ordena turnos.-> G
+    W2[Secretario] -.Registra acuerdos.-> G
+    W3[Tiempo] -.Limita debate.-> G
+    style G fill:#e1f5ff
+    style W1 fill:#fff4e1
+    style W2 fill:#fff4e1
+    style W3 fill:#fff4e1
