@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Cuatro reglas: IU ($\forall\to$ caso), GU (caso arbitrario $\to\forall$), IE ($\exists\to$ testigo nuevo), GE (caso $\to\exists$). El testigo de IE nunca es arbitrario — GU sobre él es inválida.
 >
-> ```mermaid
-> graph LR
->     A["Para todo<br/>IU baja"] --> B["Testigo<br/>IE nuevo"]
->     B --> C["Arbitrario<br/>GU sube"]
->     C --> D["Existe<br/>GE cierra"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Razonamientos_con_predicados_y_cuantificadores_01.svg]]
 
 ---
 

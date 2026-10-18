@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $(a_n)$ con fórmula o recurrencia: aritmética ($+d$), geométrica ($\times r$), Fibonacci ($F_{n}=F_{n-1}+F_{n-2}$). Monótona + acotada $\therefore$ converge; el límite de la recurrencia sale del punto fijo.
 >
-> ```mermaid
-> graph LR
->     A["Fórmula<br/>a(n)"] --> B["Arit/geom<br/>d,r"]
->     B --> C["Recurre<br/>Fibonacci"]
->     C --> D["Límite<br/>punto fijo"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/15_-_Sucesiones_01.svg]]
 
 ![[15-sucesion.png]]
 

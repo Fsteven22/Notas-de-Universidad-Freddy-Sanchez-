@@ -10,14 +10,7 @@ dg-publish: true
 >
 > El conjunto $\{P:d(P,O)=r\}$ (curva) y el **círculo** su interior: $(x-h)^2+(y-k)^2=r^2$. Con arco $s=r\theta$, sector $r^2\theta/2$ y tangentes $PT^2=d^2-r^2$ se mide todo lo circular.
 >
-> ```mermaid
-> graph LR
->     A["Centro<br/>O y radio r"] --> B["Ecuación<br/>(x-h)2+(y-k)2=r2"]
->     B --> C["Arco y sector<br/>s=rθ"]
->     C --> D["Tangentes<br/>PT2=d2-r2"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/08_-_Circunferencia_y_círculo_01.svg]]
 
 ![[U5-tangente.png]]
 

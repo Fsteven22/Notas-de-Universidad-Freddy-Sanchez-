@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Identifica el tipo por la forma ($a\pm b\sin\theta$ cardioide, $a\sin n\theta$ rosa, $r^2=a^2\cos2\theta$ lemniscata), usa simetría para media tabla, marca ceros y máximos, y recuerda que $r<0$ dibuja opuesto.
 >
-> ```mermaid
-> graph LR
->     A["Forma<br/>r=f(theta)"] --> B["Simetría<br/>media tabla"]
->     B --> C["Ceros y max<br/>puntos clave"]
->     C --> D["Une<br/>r neg opuesto"]
->     style A fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Graficación_en_coordenadas_polares_01.svg]]
 
 ![[U6-galeria.png]]
 

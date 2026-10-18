@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Relación total (todo $a$ tiene imagen) y única (una sola): inyectiva (distintos $\to$ distintos), sobreyectiva ($\text{Ran}=B$), biyectiva (ambas, con inversa). $|B|^{|A|}$ funciones; palomar limita inyecciones.
 >
-> ```mermaid
-> graph LR
->     A["Total<br/>única"] --> B["Iny<br/>1-1"]
->     B --> C["Sobre<br/>Ran=B"]
->     C --> D["Biy<br/>inversa"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/10_-_Funciones_en_Conjuntos_01.svg]]
 
 ---
 

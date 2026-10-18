@@ -23,21 +23,7 @@ dg-publish: true
 > |**5. ✅ Solución**|Programa funcional|💻 Software|
 > |**6. 🚀 Implementación**|Uso por parte del cliente|👤 Usuario Final|
 
-```mermaid
-graph TD
-    A["🔍 Problema Identificado"] --> B["🧑‍💻 Programador Analiza"]
-    B --> C["📋 Análisis del Problema"]
-    C --> D["🎨 Diseño de la Solución"]
-    D --> E["🔧 Construcción del Código"]
-    E --> F["🧪 Pruebas y Validación"]
-    F --> G["💻 Programa Terminado"]
-    G --> H["📦 Instalación"]
-    H --> I["👤 Usuario Final"]
-    
-    style A fill:#ffebee
-    style I fill:#e8f5e8
-    style G fill:#e3f2fd
-```
+![[Diagramas/Módulo_1.1_Programación_y_su_Relevancia_01.svg]]
 
 ## Fundamentos Teóricos 📚
 
@@ -91,21 +77,7 @@ graph TD
 > 
 > **🎯 Lección**: La computadora, como ese chef, no adivina. Solo sigue tus pasos exactos.
 
-```mermaid
-flowchart LR
-    A["🧑‍🍳 Chef Humano<br/>(Intuitivo)"] --> B["🤔 Interpreta<br/>instrucciones vagas"]
-    B --> C["✅ Resultado correcto"]
-    
-    D["🤖 Chef Robot<br/>(Computadora)"] --> E["📋 Requiere<br/>instrucciones precisas"]
-    E --> F["✅ Resultado exacto"]
-    
-    G["❌ Instrucción vaga:<br/>'Mezclar ingredientes'"] --> H["🤖 Error o resultado<br/>inesperado"]
-    
-    style A fill:#e8f5e8
-    style D fill:#e3f2fd
-    style F fill:#c8e6c9
-    style H fill:#ffcdd2
-```
+![[Diagramas/Módulo_1.1_Programación_y_su_Relevancia_02.svg]]
 
 ## Del Problema a la Solución Digital 🔄
 
@@ -120,20 +92,7 @@ flowchart LR
 > - 💭 **Problemas reales** → Soluciones digitales
 > - 🎯 **Objetivos complejos** → Tareas automatizadas
 
-```mermaid
-graph TD
-    A["🧠 Problema Humano"] --> B["💭 Análisis Mental"]
-    B --> C["📝 Algoritmo en Papel"]
-    C --> D["⌨️ Código Fuente"]
-    D --> E["🔧 Compilador/Intérprete"]
-    E --> F["01010101<br/>Código Máquina"]
-    F --> G["💻 Ejecución"]
-    G --> H["✅ Solución Digital"]
-    
-    style A fill:#fff3e0
-    style H fill:#e8f5e8
-    style F fill:#f3e5f5
-```
+![[Diagramas/Módulo_1.1_Programación_y_su_Relevancia_03.svg]]
 
 ## Beneficios y Habilidades Desarrolladas 🎯
 
@@ -162,21 +121,7 @@ graph TD
 > 
 > ### 🏗️ Ecosistema de Desarrollo
 > 
-> ```mermaid
-> graph TD
->    A["👨‍💻 Programador"] --> B["🖥️ Ambiente de Desarrollo"]
->    B --> C["📝 Editor de Código"]
->    B --> D["🔧 Compilador/Intérprete"]
->    C --> E["📄 Código Fuente"]
->    E --> F["💻 Lenguaje de Programación"]
->    D --> G["⚙️ Proceso de Compilación"]
->    G --> H["📦 Código Ejecutable"]
->    H --> I["📲 Instalación"]
->    I --> J["👤 Usuario Final"]
->    style A fill:#e3f2fd
->    style J fill:#e8f5e8
->    style H fill:#fff3e0
-> ```
+> ![[Diagramas/Módulo_1.1_Programación_y_su_Relevancia_04.svg]]
 
 ## Lenguajes de Programación 🌐
 

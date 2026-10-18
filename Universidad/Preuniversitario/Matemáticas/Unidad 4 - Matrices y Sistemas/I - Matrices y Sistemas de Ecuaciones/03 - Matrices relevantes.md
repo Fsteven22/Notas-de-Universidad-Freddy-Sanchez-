@@ -10,15 +10,7 @@ dg-publish: true
 >
 > La **inversa** ($AA^{-1}=I$), las **geométricas** (rotación, reflexión, proyección), las **de modelo** (permutación, Markov) y **Vandermonde** (interpolación). Cada una resuelve un problema típico que reaparece en [[06 - Matriz Inversa]] y [[05 - Sistemas de ecuaciones lineales]].
 >
-> ```mermaid
-> graph LR
->     A["Matriz<br/>especial"] --> B["Qué hace?"]
->     B -->|Invierte| C["Inversa<br/>AA-1=I"]
->     B -->|Transforma| D["Rot/Ref/Proy"]
->     B -->|Modela| E["Markov/Perm"]
->     style C fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Matrices_relevantes_01.svg]]
 
 ---
 

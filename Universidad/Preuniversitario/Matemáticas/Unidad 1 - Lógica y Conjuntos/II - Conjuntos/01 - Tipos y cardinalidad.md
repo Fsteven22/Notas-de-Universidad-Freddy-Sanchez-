@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Vacío, unitario, finito, infinito numerable ($\mathbb{N},\mathbb{Z},\mathbb{Q}$) y continuo ($\mathbb{R}$): la cardinalidad $|A|$ cuenta elementos y $|\mathcal{P}(A)|=2^{|A|}$ cuenta subconjuntos. Cantor separa numerable de no numerable.
 >
-> ```mermaid
-> graph LR
->     A["Vacío<br/>unitario"] --> B["Finito<br/>|A|=n"]
->     B --> C["Numerable<br/>aleph0"]
->     C --> D["Continuo<br/>R"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Tipos_y_cardinalidad_01.svg]]
 
 ---
 

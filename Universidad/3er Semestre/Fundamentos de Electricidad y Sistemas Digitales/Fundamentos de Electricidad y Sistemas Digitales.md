@@ -9,19 +9,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 # ⚡ Fundamentos de Electricidad y Sistemas Digitales
 **EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus FESD|📖 Ver Syllabus completo]]
 
-```mermaid
-graph TD
-    FESD[⚡ FESD EYAG1037] --> U1[Unidad 1<br/>Electricidad y Circuitos<br/>8h]
-    FESD --> U2[Unidad 2<br/>Electrónica<br/>6h]
-    FESD --> U3[Unidad 3<br/>Circuitos Integrados<br/>6h]
-    FESD --> U4[Unidad 4<br/>Sistemas Digitales<br/>8h]
-    U1 --> L1[7 notas]
-    U2 --> L2[6 notas]
-    U3 --> L3[7 notas]
-    U4 --> L4[2 notas]
-
-    style FESD fill:#fff4e1,stroke:#f0a500,stroke-width:2px
-```
+![[Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
 
 ---
 

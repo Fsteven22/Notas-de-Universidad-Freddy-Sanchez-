@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $|x|$, piso $\lfloor x\rfloor$, techo $\lceil x\rceil$, signo, parte fraccionaria, Heaviside $H$ y sigmoide $\sigma$: modelan distancias, escalones y conmutaciones — con saltos donde hay que dibujar ○/●.
 >
-> ```mermaid
-> graph LR
->     A["|x|<br/>distancia"] --> B["Piso<br/>escalones"]
->     B --> C["H<br/>conmuta"]
->     C --> D["Sigma<br/>suaviza"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Funciones_Especiales_01.svg]]
 
 ---
 

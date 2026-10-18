@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Las inversas con dominio restringido ($\arcsin:[-1,1]\to[-\pi/2,\pi/2]$): devuelven **el** ángulo principal. $\arcsin(\sin\theta)=\theta$ solo si $\theta$ ya está en el rango.
 >
-> ```mermaid
-> graph LR
->     A["Restringe<br/>dominio"] --> B["Invierte<br/>arcsin"]
->     B --> C["Rango<br/>principal"]
->     C --> D["Reduce<br/>al rango"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Funciones_trigonométricas_inversas_01.svg]]
 
 ---
 

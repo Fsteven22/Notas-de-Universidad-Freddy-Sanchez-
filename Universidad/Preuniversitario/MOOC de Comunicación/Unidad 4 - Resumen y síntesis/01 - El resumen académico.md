@@ -12,10 +12,7 @@ dg-publish: true
 >
 > El **resumen académico** es un texto expositivo breve que **condensa entre el 25% y el 30% del contenido original**, conservando las ideas esenciales del texto fuente sin agregar interpretación ni opinión propia. No es una selección arbitraria de frases: es una reconstrucción fiel, en menor extensión, de lo que el autor original dijo.
 >
-> ```mermaid
-> graph LR
->     A["Texto original (100%)"] --> B["Resumen (25%-30%)"]
-> ```
+> ![[Diagramas/01_-_El_resumen_académico_01.svg]]
 >
 > Un texto que reduce más allá de ese rango corre el riesgo de perder ideas esenciales; uno que se queda muy por encima deja de ser un resumen y se acerca a una simple copia parcial.
 
@@ -39,15 +36,7 @@ dg-publish: true
 
 > [!note] 📋 Flujo metodológico — Las 7 fases de elaboración
 >
-> ```mermaid
-> graph TD
->     A["1. Lectura comprensiva del texto completo"] --> B["2. Identificar tesis/idea central"]
->     B --> C["3. Localizar ideas secundarias esenciales por párrafo"]
->     C --> D["4. Eliminar ejemplos, citas y detalles accesorios"]
->     D --> E["5. Reorganizar las ideas en un orden lógico propio"]
->     E --> F["6. Redactar en un solo párrafo cohesivo"]
->     F --> G["7. Revisión final (métrica 25%-30%, fidelidad, objetividad)"]
-> ```
+> ![[Diagramas/01_-_El_resumen_académico_02.svg]]
 >
 
 > [!success]- ✅ Detalle de cada fase
@@ -231,22 +220,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Resumen Academico))
-    Concepto y metrica
-      Condensa 25%-30% del original
-      Sin opinion ni interpretacion propia
-    Rasgos esenciales
-      Objetividad estricta
-      Fidelidad a la terminologia del autor
-      Un solo parrafo cohesivo
-    Fases de elaboracion
-      Lectura y tesis central
-      Ideas secundarias esenciales
-      Eliminar citas y ejemplos
-      Reorganizar redactar y revisar
-```
+![[Diagramas/01_-_El_resumen_académico_03.svg]]
 
 > [!summary] 📋 Resumen ejecutivo
 >

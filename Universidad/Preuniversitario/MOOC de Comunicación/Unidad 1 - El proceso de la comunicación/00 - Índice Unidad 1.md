@@ -10,14 +10,7 @@ dg-publish: true
 > 
 > Esta unidad establece las bases de la **comunicación efectiva**: desde su definición y elementos fundamentales hasta las reglas de escritura que garantizan claridad. Tres notas condensan el recorrido completo: el proceso comunicativo y sus funciones, las propiedades de la redacción académica, y los errores comunes con su normativa ortográfica.
 > 
-> ```mermaid
-> graph LR
->     A[Proceso y funciones] --> B[Redaccion academica]
->     B --> C[Errores y normativa]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style C fill:#e1e1ff
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_1_01.svg]]
 
 ---
 

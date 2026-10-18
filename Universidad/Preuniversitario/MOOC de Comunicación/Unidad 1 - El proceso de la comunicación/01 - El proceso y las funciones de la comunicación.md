@@ -13,17 +13,7 @@ dg-publish: true
 >
 > Esta nota integra tres temas de la Unidad 1: la **definición e importancia** de la comunicación, los **ocho elementos del circuito comunicacional** y las **seis funciones del lenguaje de Jakobson**. Cada elemento del circuito activa una función dominante, por lo que los tres temas forman una sola unidad lógica.
 >
-> ```mermaid
-> graph LR
->     A[Emisor] --> B[Mensaje]
->     B --> C[Canal]
->     C --> D[Receptor]
->     D --> E[Retroalimentacion]
->     E --> A
->     F[Codigo] --> B
->     G[Contexto] --> D
->     H[Ruido] --> C
-> ```
+> ![[Diagramas/01_-_El_proceso_y_las_funciones_de_la_comunicación_01.svg]]
 
 ---
 
@@ -220,17 +210,7 @@ dg-publish: true
 >
 > Todo acto de comunicación se estructura como un **circuito** con componentes interconectados: emisor, mensaje, código, canal, receptor, contexto, ruido y retroalimentación. Estudiar estos elementos permite diagnosticar por qué un mensaje falla, diseñar mensajes más efectivos y mejorar la comprensión en salud, educación, empresa y vida cotidiana.
 >
-> ```mermaid
-> graph LR
->     A[Emisor] --> B[Codifica mensaje]
->     B --> C[Canal]
->     C --> D[Receptor]
->     D --> E[Decodifica y responde]
->     E --> A
->     F[Codigo compartido] --> B
->     G[Contexto] --> C
->     H[Ruido] --> D
-> ```
+> ![[Diagramas/01_-_El_proceso_y_las_funciones_de_la_comunicación_02.svg]]
 >
 
 > [!note] 📐 Modelos clásicos: Shannon-Weaver y Schramm
@@ -575,25 +555,13 @@ dg-publish: true
 >
 > **Escenario 1:** Un locutor de radio transmite un boletín de noticias por la frecuencia FM a sus oyentes en la ciudad.
 >
-> ```mermaid
-> graph LR
->     A[Locutor Emisor] --> B[Boletin de noticias]
->     B --> C[Ondas FM]
->     C --> D[Radio del oyente]
->     D --> E[Pregunta del oyente]
-> ```
+> ![[Diagramas/01_-_El_proceso_y_las_funciones_de_la_comunicación_03.svg]]
 >
 > ---
 >
 > **Escenario 2:** Un estudiante presenta su proyecto final ante un jurado de tres profesores en un salón de actos.
 >
-> ```mermaid
-> graph LR
->     A[Estudiante Emisor] --> B[Proyecto]
->     B --> C[Salon de actos]
->     C --> D[Jurado Receptor]
->     D --> E[Retroalimentacion]
-> ```
+> ![[Diagramas/01_-_El_proceso_y_las_funciones_de_la_comunicación_04.svg]]
 >
 > **Nota:** En este caso, el jurado también emite retroalimentación que influye en el estudiante, quien a su vez puede responder con aclaraciones.
 >
@@ -786,38 +754,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Proceso y funciones de la comunicacion))
-    Fundamentos
-      Definicion bidireccional y dinamica
-      Autores Berlo Schramm Pasquali Watzlawick
-      Relevancia personal profesional academica social
-      Tipos por expresion transmision alcance funcion
-    Elementos del circuito
-      Emisor genera el mensaje
-      Mensaje explicito e implicito
-      Codigo linguistico kinesico iconico
-      Canal voz escrito digital audiovisual
-      Receptor decodifica y asigna sentido
-      Contexto fisico temporal social cultural
-      Ruido fisico semantico psicologico tecnologico
-      Retroalimentacion inmediata diferida constructiva
-    Funciones de Jakobson
-      Referencial informa sobre el contexto
-      Emotiva expresa al emisor
-      Conativa apela al receptor
-      Fatica verifica el canal
-      Metalinguistica explica el codigo
-      Poetica cuida la forma del mensaje
-      Regla una dominante mas secundarias
-    Practica
-      Identificar elementos 02punto1
-      Diagramas de flujo 02punto2
-      Clasificar ruidos 02punto3
-      Evaluar retroalimentacion 02punto4
-      Refuerzo tipos barreras claridad funciones
-```
+![[Diagramas/01_-_El_proceso_y_las_funciones_de_la_comunicación_05.svg]]
 
 ---
 

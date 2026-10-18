@@ -28,26 +28,7 @@ dg-publish: true
 > |**Filtrado**|Extraer componentes deseadas|Procesamiento de señales, imágenes|
 > |**Geometría**|Distancias y ángulos|Colisiones, renderizado 3D|
 
-```mermaid
-graph TB
-    A[Vector Original v] --> B{Proyectar sobre}
-    B --> C[Vector u<br/>Proyección 1D]
-    B --> D[Subespacio W<br/>Proyección nD]
-    
-    C --> E[Componente paralela<br/>proj_u v]
-    C --> F[Componente perpendicular<br/>v - proj_u v]
-    
-    D --> G[Aproximación en W<br/>proj_W v]
-    D --> H[Error perpendicular<br/>v - proj_W v]
-    
-    E --> I[v = proj + perp]
-    F --> I
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style I fill:#f0e1ff
-```
+![[Diagramas/04_–_Proyección_ortogonal_01.svg]]
 
 ---
 
@@ -80,22 +61,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Vector v] --> B[Descomponer respecto a u]
->     B --> C[Componente paralela<br/>proj_u v]
->     B --> D[Componente perpendicular<br/>perp_u v]
->     C --> E["Fórmula: (⟨v,u⟩/||u||²)u"]
->     D --> F["Fórmula: v - proj_u v"]
->     E --> G[En la dirección de u]
->     F --> H[Ortogonal a u]
->     G --> I["||proj_u v|| = |⟨v,u⟩|/||u||"]
->     H --> J["⟨perp_u v, u⟩ = 0"]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style I fill:#e1f5ff
->     style J fill:#f0e1ff
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_02.svg]]
 > 
 > **Propiedades fundamentales:**
 > 
@@ -276,21 +242,7 @@ graph TB
 > 
 > **Diferencia con proyección sobre vector:**
 > 
-> ```mermaid
-> graph TB
->     A[Proyección] --> B[Sobre Vector u<br/>Línea 1D]
->     A --> C[Sobre Subespacio W<br/>Plano nD]
->     B --> D[Fórmula: ⟨v,u⟩/||u||² · u]
->     B --> E[Resultado: en span u]
->     C --> F[Fórmula: Σ ⟨v,uᵢ⟩uᵢ]
->     C --> G[Resultado: en W]
->     D --> H[Caso especial n=1]
->     F --> I[Caso general n≥1]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style H fill:#e1f5ff
->     style I fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_03.svg]]
 > 
 > **Caracterización del subespacio:**
 > 
@@ -328,20 +280,7 @@ graph TB
 > 
 > **Algoritmo de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector v a proyectar] --> B{¿Base de W es ortogonal?}
->     B -->|Sí| C[Usar fórmula directa]
->     B -->|No| D[Ortonormalizar base<br/>Gram-Schmidt]
->     D --> C
->     C --> E[Para cada uᵢ en base:]
->     E --> F[Calcular cᵢ = ⟨v,uᵢ⟩/||uᵢ||²]
->     F --> G[Sumar: proj_W v = Σ cᵢuᵢ]
->     G --> H[Resultado en W]
->     style C fill:#e1ffe1
->     style G fill:#e1f5ff
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_04.svg]]
 > 
 > **Ejemplo completo: Proyección sobre plano**
 > 
@@ -460,16 +399,7 @@ graph TB
 > 
 > **Comparación de métodos:**
 > 
-> ```mermaid
-> graph LR
->     A[Base Arbitraria] --> B{Método?}
->     B -->|Gram-Schmidt| C[Ortonormalizar<br/>luego proyectar]
->     B -->|Ecuaciones normales| D[Resolver AᵀAx=Aᵀv]
->     C --> E[+ Interpretación geométrica<br/>+ Estable numéricamente<br/>- Más pasos]
->     D --> F[+ Directo<br/>+ Matricial<br/>- Puede ser inestable]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_05.svg]]
 
 ---
 
@@ -491,16 +421,7 @@ graph TB
 > 
 > **Algoritmo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector v y subespacio W] --> B[Calcular proj_W v]
->     B --> C[Calcular residuo:<br/>r = v - proj_W v]
->     C --> D[Distancia: d = ||r||]
->     B --> E[Punto más cercano<br/>en W]
->     D --> F[Distancia mínima<br/>a W]
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_06.svg]]
 > 
 > **Ejemplo 1: Distancia punto-línea en ℝ²**
 > 
@@ -587,19 +508,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Vector v fuera de W] --> B[Buscar w ∈ W<br/>más cercano]
->     B --> C{¿Cuál w minimiza ||v-w||?}
->     C --> D[Cualquier otro w<br/>Mayor distancia]
->     C --> E[proj_W v<br/>Mínima distancia]
->     E --> F[Distancia:<br/>||perp_W v||]
->     D --> G[Distancia:<br/>> ||perp_W v||]
->     style E fill:#e1ffe1
->     style F fill:#e1ffe1
->     style D fill:#ffe1e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_07.svg]]
 > 
 > **Aplicación: Ajuste de curvas**
 > 
@@ -915,20 +824,7 @@ graph TB
 > 
 > **Comparación de métodos:**
 > 
-> ```mermaid
-> graph LR
->     A[Base de W] --> B{¿Es ortonormal?}
->     B -->|Sí| C[P = UU^T<br/>Directo]
->     B -->|No| D{¿Ortonormalizar?}
->     D -->|Sí| E[Gram-Schmidt<br/>luego P = UU^T]
->     D -->|No| F[P = AA^TA^{-1}A^T<br/>Requiere inversa]
->     C --> G[✅ Más simple<br/>✅ Más estable]
->     E --> H[✅ Interpretación clara<br/>⚠️ Más pasos]
->     F --> I[✅ Directo<br/>❌ Puede ser inestable]
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_08.svg]]
 
 ---
 
@@ -946,19 +842,7 @@ graph TB
 > - Buscar **\hat{x}** tal que **A\hat{x}** sea la proyección de **b** sobre Col(A)
 > - Minimizar ||**b** - **Ax**||² (error cuadrático)
 > 
-> ```mermaid
-> graph TD
->     A[Sistema Ax = b] --> B{¿Tiene solución exacta?}
->     B -->|Sí| C[Resolver normalmente]
->     B -->|No| D[b no está en ColA]
->     D --> E[Buscar \hat{x} que minimize<br/>||b - Ax||]
->     E --> F[Proyectar b sobre ColA]
->     F --> G[A\hat{x} = proj_ColA b]
->     G --> H[Solución de<br/>mínimos cuadrados]
->     style D fill:#ffe1e1
->     style G fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_09.svg]]
 > 
 > **Ecuación normal:**
 > 
@@ -1179,20 +1063,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Espacio V] --> B[Subespacio W]
->     A --> C[Complemento W⊥]
->     B --> D[Todos los vectores en W]
->     C --> E[Todos los vectores ⊥ a W]
->     D --> F[Dimensión: k]
->     E --> G[Dimensión: n - k]
->     F --> H[V = W ⊕ W⊥]
->     G --> H
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Proyección_ortogonal_10.svg]]
 > 
 > **Ejemplos en ℝ³:**
 > 
@@ -1337,51 +1208,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual
 
-```mermaid
-flowchart TD
-    A["Proyección Ortogonal"]
-
-    A --> B["Proyección sobre Vector"]
-    B --> B1["Fórmula: <v,u> / ||u||^2 · u"]
-    B --> B2["Propiedades"]
-    B2 --> B21["Linealidad"]
-    B2 --> B22["Idempotencia"]
-    B --> B3["Descomposición"]
-    B3 --> B31["Paralela"]
-    B3 --> B32["Perpendicular"]
-
-    A --> C["Proyección sobre Subespacio"]
-    C --> C1["Base ortogonal"]
-    C1 --> C11["Σ <v,u_i> / ||u_i||^2 · u_i"]
-    C --> C2["Base ortonormal"]
-    C2 --> C21["Σ <v,u_i> · u_i"]
-    C --> C3["Base arbitraria"]
-    C3 --> C31["A (A^T A)^-1 A^T"]
-
-    A --> D["Matrices de Proyección"]
-    D --> D1["Construcción"]
-    D1 --> D11["P = U U^T"]
-    D --> D2["Propiedades"]
-    D2 --> D21["P^2 = P"]
-    D2 --> D22["P^T = P"]
-    D2 --> D23["Autovalores {0,1}"]
-
-    A --> E["Aplicaciones"]
-    E --> E1["Mínimos cuadrados"]
-    E1 --> E11["A^T A \hat{x} = A^T b"]
-    E --> E2["Distancias"]
-    E2 --> E21["||v - proj_W(v)||"]
-    E --> E3["Regresión lineal"]
-    E --> E4["Filtrado de señales"]
-
-    A --> F["Complemento Ortogonal"]
-    F --> F1["Definición"]
-    F1 --> F11["<v,w> = 0"]
-    F --> F2["Propiedades"]
-    F2 --> F21["V = W ⊕ W_perp"]
-    F2 --> F22["dim(W) + dim(W_perp) = dim(V)"]
-
-```
+![[Diagramas/04_–_Proyección_ortogonal_11.svg]]
 
 ### 📋 Tabla Resumen de Fórmulas
 
@@ -1399,30 +1226,7 @@ flowchart TD
 
 ### 🎯 Diagrama de Flujo de Decisión
 
-```mermaid
-flowchart TD
-    A[Problema de Proyección] --> B{¿Sobre qué proyectar?}
-    B -->|Vector u| C[Proyección 1D]
-    B -->|Subespacio W| D[Proyección nD]
-    
-    C --> E{¿u es unitario?}
-    E -->|Sí| F[proj = ⟨v,u⟩u]
-    E -->|No| G["proj = ⟨v,u⟩/||u||² · u"]
-    
-    D --> H{¿Base de W?}
-    H -->|Ortonormal| I[proj = Σ⟨v,uᵢ⟩uᵢ]
-    H -->|Ortogonal| J["proj = Σ⟨v,uᵢ⟩/||uᵢ||² · uᵢ"]
-    H -->|Arbitraria| K{¿Ortonormalizar?}
-    
-    K -->|Sí| L[Gram-Schmidt<br/>luego usar I o J]
-    K -->|No| M["Usar P = AA^TA^{-1}A^T"]
-    
-    style F fill:#e1ffe1
-    style I fill:#e1ffe1
-    style J fill:#fff4e1
-    style L fill:#e1f5ff
-    style M fill:#ffe1e1
-```
+![[Diagramas/04_–_Proyección_ortogonal_12.svg]]
 
 ---
 

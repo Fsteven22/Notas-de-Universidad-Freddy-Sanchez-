@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $*:S\times S\to S$ (cerrada por definición): conmutativa, asociativa, neutro e inverso deciden la estructura (monoide, grupo, campo). $\mathbb{Z}_5$ es campo; $\mathbb{Z}_6$ no.
 >
-> ```mermaid
-> graph LR
->     A["Cerrada<br/>SxS a S"] --> B["Asoc+neutro<br/>monoide"]
->     B --> C["Inverso<br/>grupo"]
->     C --> D["Conmuta<br/>abeliano"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Operaciones_binarias_01.svg]]
 
 ![[03-cayley.png]]
 

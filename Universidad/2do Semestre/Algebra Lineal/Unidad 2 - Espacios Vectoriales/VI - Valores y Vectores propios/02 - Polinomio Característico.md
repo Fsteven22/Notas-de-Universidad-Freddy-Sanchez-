@@ -32,17 +32,7 @@ dg-publish: true
 > | **Clasificación** | Distingue matrices similares | Teoría de matrices |
 > | **Herramienta computacional** | Base para algoritmos numéricos | Cálculo práctico |
 
-```mermaid
-graph LR
-    A[Matriz A] --> B["p(λ) = det(A - λI)"]
-    B --> C[Polinomio<br/>característico]
-    C --> D[Raíces del<br/>polinomio]
-    D --> E[Valores propios<br/>de A]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/02_-_Polinomio_Característico_01.svg]]
 
 ---
 
@@ -54,17 +44,7 @@ graph LR
 > 
 > **Pasos fundamentales:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A<br/>n×n] --> B[Restar λI<br/>de A]
->     B --> C[A - λI<br/>matriz con λ]
->     C --> D[Calcular<br/>determinante]
->     D --> E[Expandir<br/>expresión]
->     E --> F["p(λ)<br/>polinomio de grado n"]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_02.svg]]
 > 
 > **Ejemplo detallado para matriz 2×2:**
 > 
@@ -214,20 +194,7 @@ graph LR
 > - $m_i$ es la multiplicidad algebraica de $\lambda_i$
 > - $\sum_{i=1}^k m_i = n$
 > 
-> ```mermaid
-> graph TD
->     A[Polinomio característico<br/>grado n] --> B[Forma expandida]
->     A --> C[Forma factorizada]
->     B --> D[λⁿ + ... + c₁λ + c₀]
->     C --> E[(λ-λ₁)^m₁...(λ-λₖ)^mₖ]
->     D --> F[Coeficientes]
->     E --> G[Raíces]
->     F --> H[Traza, determinante]
->     G --> I[Valores propios]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_03.svg]]
 
 ### 🎯 Coeficientes Significativos
 
@@ -280,17 +247,7 @@ graph LR
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Coeficientes<br/>del polinomio] --> B[c_{n-1}]
->     A --> C[c_0]
->     B --> D[Traza<br/>suma diagonal]
->     C --> E[Determinante<br/>volumen]
->     D --> F[Suma de λ]
->     E --> G[Producto de λ]
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_04.svg]]
 
 ---
 
@@ -367,18 +324,7 @@ graph LR
 > 
 > **Métodos de cálculo:**
 > 
-> ```mermaid
-> graph TD
->     A[Calcular p(λ)<br/>para 3×3] --> B[Método 1:<br/>Regla de Sarrus]
->     A --> C[Método 2:<br/>Expansión por cofactores]
->     A --> D[Método 3:<br/>Si es triangular]
->     B --> E[Para determinante<br/>directo]
->     C --> F[Para estructura<br/>con ceros]
->     D --> G[Lectura<br/>inmediata]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_05.svg]]
 > 
 > **Ejemplo con expansión por cofactores:**
 > 
@@ -456,19 +402,7 @@ graph LR
 > 
 > **Estrategias según estructura:**
 > 
-> ```mermaid
-> graph TD
->     A[Matriz n×n] --> B{¿Tipo?}
->     B -->|Diagonal| C[Leer diagonal<br/>O(n)]
->     B -->|Triangular| D[Leer diagonal<br/>O(n)]
->     B -->|Simétrica| E[Métodos<br/>especializados]
->     B -->|Dispersa| F[Aprovechar<br/>estructura]
->     B -->|Densa| G[QR o<br/>Hessenberg]
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_06.svg]]
 > 
 > **Forma general n×n:**
 > 
@@ -548,15 +482,7 @@ graph LR
 > - Si A tiene n valores propios distintos → A es diagonalizable
 > - Valores propios complejos aparecen en **pares conjugados** (si A es real)
 > 
-> ```mermaid
-> graph LR
->     A[p(λ) = 0] <--> B[λ es valor propio]
->     B --> C[Existe v ≠ 0:<br/>Av = λv]
->     C --> D[det(A - λI) = 0]
->     D --> A
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_07.svg]]
 > 
 > ---
 > 
@@ -697,19 +623,7 @@ graph LR
 > 
 > **Diagrama de relaciones:**
 > 
-> ```mermaid
-> graph TD
->     A[Polinomio<br/>característico] --> B[Coeficientes]
->     A --> C[Raíces]
->     B --> D[Traza]
->     B --> E[Determinante]
->     C --> F[Valores propios]
->     F --> G[Multiplicidad]
->     D --> H[Suma de λ]
->     E --> I[Producto de λ]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_08.svg]]
 
 ---
 
@@ -824,19 +738,7 @@ graph LR
 > 
 > **Resumen visual:**
 > 
-> ```mermaid
-> graph TD
->     A[Tipo de Matriz] --> B[Diagonal/Triangular<br/>λ = diagonal]
->     A --> C[Simétrica<br/>λ reales]
->     A --> D[Antis simétrica<br/>λ imaginarios]
->     A --> E[Ortogonal<br/>|λ| = 1]
->     A --> F[Idempotente<br/>λ ∈ {0,1}]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#ffe8f0
->     style F fill:#f0f0f0
-> ```
+> ![[Diagramas/02_-_Polinomio_Característico_09.svg]]
 
 ### 🌟 Patrones Notables
 
@@ -1210,42 +1112,7 @@ graph LR
 > 
 ## 📊 Resumen Visual Completo
 
-```mermaid
-graph LR
-    A[Polinomio<br/>Característico<br/>p λ = det A - λI] --> B[Definición]
-    A --> C[Construcción]
-    A --> D[Propiedades]
-    A --> E[Raíces]
-    A --> F[Casos Especiales]
-    
-    B --> B1[Grado n]
-    B --> B2[Coeficientes]
-    
-    C --> C1[Restar λI]
-    C --> C2[Calcular det]
-    C --> C3[Expandir]
-    
-    D --> D1[Invariante similitud]
-    D --> D2[Cayley-Hamilton]
-    D --> D3[Traza y det]
-    D --> D4[Multiplicidad]
-    
-    E --> E1[Valores propios]
-    E --> E2[Mult. algebraica]
-    E --> E3[Reales vs complejas]
-    
-    F --> F1[Diagonal]
-    F --> F2[Triangular]
-    F --> F3[Simétrica]
-    F --> F4[Ortogonal]
-    
-    style A fill:#e1ffe1
-    style B fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#ffe1e1
-    style F fill:#f5e1ff
-```
+![[Diagramas/02_-_Polinomio_Característico_10.svg]]
 
 ### Tabla Resumen Global
 
@@ -1272,20 +1139,7 @@ graph LR
 
 **Has dominado:**
 
-```mermaid
-graph LR
-    A[Polinomio<br/>Característico] --> B[Base teórica]
-    A --> C[Cálculo práctico]
-    A --> D[Propiedades]
-    
-    B --> E[Valores propios]
-    C --> F[Determinantes]
-    D --> G[Invariantes]
-    
-    style A fill:#e1ffe1
-    style E fill:#fff4e1
-    style G fill:#e1f5ff
-```
+![[Diagramas/02_-_Polinomio_Característico_11.svg]]
 
 **Próximos pasos:**
 
@@ -1299,18 +1153,7 @@ graph LR
 
 **Roadmap:**
 
-```mermaid
-graph TD
-    A[Polinomio<br/>Característico] --> B[Polinomio<br/>Minimal]
-    B --> C[Forma de<br/>Jordan]
-    A --> D[Ecuación<br/>Característica]
-    D --> E[Localización<br/>de Eigenvalores]
-    C --> F[Descomposición<br/>Espectral]
-    
-    style A fill:#e1ffe1
-    style C fill:#fff4e1
-    style F fill:#e1f5ff
-```
+![[Diagramas/02_-_Polinomio_Característico_12.svg]]
 
 ---
 

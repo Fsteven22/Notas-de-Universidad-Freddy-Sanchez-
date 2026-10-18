@@ -10,15 +10,7 @@ dg-publish: true
 >
 > Un **texto argumentativo** es aquel cuyo propósito central es la **persuasión**: defender una postura (la tesis) frente a una audiencia con el objetivo de que la acepte, la comparta o actúe en consecuencia. Esto lo diferencia radicalmente del **texto expositivo**, cuyo propósito es informar o explicar hechos de la manera más objetiva y neutral posible, sin buscar cambiar la opinión del lector.
 >
-> ```mermaid
-> graph TD
->     A[Texto] --> B[Expositivo]
->     A --> C[Argumentativo]
->     B --> D["Informa / describe / explica"]
->     B --> E["Busca objetividad"]
->     C --> F["Persuade / defiende una postura"]
->     C --> G["Presenta una tesis"]
-> ```
+> ![[Diagramas/01_-_El_texto_argumentativo_(concepto,_ámbitos_y_estructura)_01.svg]]
 >
 > La diferencia no siempre es absoluta: un mismo texto puede combinar tramos expositivos (para dar contexto o presentar datos) con tramos claramente argumentativos (donde se defiende una interpretación de esos datos).
 
@@ -49,11 +41,7 @@ dg-publish: true
 >
 > Todo texto argumentativo bien formado —independientemente del ámbito— sigue (al menos implícitamente) tres bloques:
 >
-> ```mermaid
-> graph TD
->     A["Introducción Contexto + Tesis"] --> B["Desarrollo Argumentos + Evidencias + Contraargumentación"]
->     B --> C["Conclusión Reiteración de la tesis + Propuesta/Recomendación"]
-> ```
+> ![[Diagramas/01_-_El_texto_argumentativo_(concepto,_ámbitos_y_estructura)_02.svg]]
 >
 
 > [!success]- ✅ Detalle de cada bloque
@@ -262,27 +250,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Texto Argumentativo))
-    Concepto
-      Persuade no solo informa
-      Tesis como postura central
-    Ambitos
-      Politico
-      Academico
-      Legal
-      Publicitario
-      Digital
-    Estructura tripartita
-      Introduccion con tesis
-      Desarrollo con contraargumentacion
-      Conclusion con propuesta
-    Estilo
-      Lenguaje preciso
-      Verbos fuertes
-      Conectores logicos
-```
+![[Diagramas/01_-_El_texto_argumentativo_(concepto,_ámbitos_y_estructura)_03.svg]]
 
 ---
 

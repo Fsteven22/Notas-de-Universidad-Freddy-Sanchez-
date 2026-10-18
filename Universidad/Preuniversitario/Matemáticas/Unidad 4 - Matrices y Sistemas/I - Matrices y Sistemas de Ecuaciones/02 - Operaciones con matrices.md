@@ -10,14 +10,7 @@ dg-publish: true
 >
 > La **suma** es elemento a elemento (mismo orden) y el **producto** es fila por columna ($[AB]_{ij}=\sum_kA_{ik}B_{kj}$, exige columnas de $A$ = filas de $B$). La **transpuesta** intercambia filas y columnas. El producto **no conmuta** en general.
 >
-> ```mermaid
-> graph LR
->     A["A m x n<br/>B n x p"] --> B["AB<br/>m x p"]
->     B --> C{"Conmuta?"}
->     C -->|Casi nunca| D["AB distinto BA"]
->     style B fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Operaciones_con_matrices_01.svg]]
 
 ---
 

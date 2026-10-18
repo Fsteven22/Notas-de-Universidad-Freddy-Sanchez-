@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Plantilla con huecos ($P(x)$, $P(x,y)$) que al sustituir da proposición. Su conjunto de verdad traduce conectivos a operaciones, y cuantificar ($\forall x\exists y$) cierra los huecos — con el orden de $\forall$/$\exists$ cambiando el valor.
 >
-> ```mermaid
-> graph LR
->     A["P(x,y)<br/>plantilla"] --> B["Verdad<br/>V_P"]
->     B --> C["Cuantifica<br/>todo/alguno"]
->     C --> D["Orden<br/>importa"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Predicados_de_una_variable_01.svg]]
 
 ---
 

@@ -26,27 +26,7 @@ dg-publish: true
 > |**Unicidad**|Descomposición única|Estabilidad|
 > |**Geometría**|Visualización clara|Intuición|
 
-```mermaid
-graph TB
-    A[Complemento Ortogonal] --> B[Subespacio W]
-    
-    B --> C[W⊥ perpendicular a W]
-    C --> D[v · w = 0 ∀w ∈ W]
-    
-    A --> E[Propiedades]
-    E --> F[dim W + dim W⊥ = n]
-    E --> G["W ∩ W⊥ = {0}"]
-    E --> H[W ⊕ W⊥ = ℝⁿ]
-    
-    A --> I[Aplicaciones]
-    I --> J[Proyecciones]
-    I --> K[Mínimos cuadrados]
-    I --> L[Descomposición]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/06_–_Complemento_ortogonal_01.svg]]
 
 ---
 
@@ -79,17 +59,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> flowchart TB
->     A[Espacio ℝⁿ] --> B[Subespacio W]
->     A --> C[Complemento W⊥]
->     B --> D[Contiene vectores<br/>de W]
->     C --> E[Contiene vectores<br/>perpendiculares a W]
->     D -.->|v · w = 0| E
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/06_–_Complemento_ortogonal_02.svg]]
 
 ### 🔍 Criterio Práctico
 
@@ -244,21 +214,7 @@ graph TB
 > 
 > **Diagrama de los cuatro subespacios:**
 > 
-> ```mermaid
-> graph TB
->     A[ℝⁿ] --> B[Fila A<br/>dim = r]
->     A --> C[Nul A<br/>dim = n-r]
->     D[ℝᵐ] --> E[Col A<br/>dim = r]
->     D --> F[Nul A^T<br/>dim = m-r]
->     B -.->|A| E
->     C -.->|A| F
->     B ---|⊥| C
->     E ---|⊥| F
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style E fill:#e1f5ff
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/06_–_Complemento_ortogonal_03.svg]]
 > 
 > **Fórmulas de dimensión:**
 > 
@@ -769,32 +725,7 @@ graph TB
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Complemento<br/>Ortogonal))
-    Definición
-      W⊥ perpendicular a W
-      v · w = 0 ∀w∈W
-      Subespacio de ℝⁿ
-    Propiedades
-      dim W + dim W⊥ = n
-      W ∩ W⊥ = 0
-      W ⊕ W⊥ = ℝⁿ
-      W⊥⊥ = W
-    Espacios fundamentales
-      Nul A ⊥ = Fila A
-      Col A ⊥ = Nul A^T
-      Cuatro subespacios
-    Proyección
-      proy_W v
-      Descomposición única
-      Matriz P = QQ^T
-      P² = P
-    Aplicaciones
-      Mínimos cuadrados
-      Aproximación
-      Descomposición
-```
+![[Diagramas/06_–_Complemento_ortogonal_04.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -1054,22 +985,7 @@ mindmap
 > 
 > **Progresión natural:**
 > 
-> ```mermaid
-> graph LR
->     A[Complemento Ortogonal] --> B[Proyecciones Ortogonales]
->     A --> C[Mínimos Cuadrados]
->     A --> D[Descomposición QR]
->     B --> E[Aproximación óptima]
->     C --> F[Regresión lineal]
->     D --> G[Algoritmos numéricos]
->     E --> H[Aplicaciones prácticas]
->     F --> H
->     G --> H
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/06_–_Complemento_ortogonal_05.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

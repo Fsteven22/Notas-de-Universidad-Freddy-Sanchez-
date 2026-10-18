@@ -10,16 +10,7 @@ dg-publish: true
 >
 > Los **poliedros** tienen caras planas y cumplen Euler $V-A+C=2$; los **cuerpos redondos** (cilindro, cono, esfera, toro) tienen superficies curvas y salen de revolución. Compararlos decide qué fórmula usar y explica por qué la esfera minimiza superficie a volumen dado.
 >
-> ```mermaid
-> graph LR
->     A["Sólido"] --> B{"Caras<br/>planas?"}
->     B -->|Sí| C["Poliedro<br/>Euler"]
->     B -->|No| D["Redondo<br/>revolución"]
->     C --> E["Prisma/Pirámide<br/>Regular"]
->     D --> E
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Poliedros_y_cuerpos_redondos_01.svg]]
 
 ---
 

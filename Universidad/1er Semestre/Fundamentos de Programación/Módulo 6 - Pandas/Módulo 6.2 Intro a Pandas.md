@@ -6,27 +6,7 @@ dg-publish: true
 
 > [!quote] "Los datos son el nuevo petróleo, pero Pandas es la refinería que los transforma en conocimiento valioso." - Carlos Cedeño 🛢️→💎
 
-```mermaid
-graph TB
-    A[🐼 Pandas] --> B[📊 Series]
-    A --> C[📋 DataFrame]
-    A --> D[📁 I/O Operations]
-    
-    B --> E[🔢 Array 1D]
-    B --> F[🏷️ Índices]
-    
-    C --> G[🏢 Tabla 2D]
-    C --> H[📈 Análisis]
-    
-    D --> I[📄 CSV]
-    D --> J[📊 Excel]
-    D --> K[🌐 JSON]
-    
-    style A fill:#ff9999,stroke:#333,stroke-width:3px
-    style B fill:#99ccff,stroke:#333,stroke-width:2px
-    style C fill:#99ff99,stroke:#333,stroke-width:2px
-    style D fill:#ffcc99,stroke:#333,stroke-width:2px
-```
+![[Diagramas/Módulo_6.2_Intro_a_Pandas_01.svg]]
 
 ## 📋 Objetivos del Módulo
 
@@ -75,22 +55,7 @@ graph TB
 
 ## 📊 2. Estructuras de Datos Fundamentales
 
-```mermaid
-graph LR
-    A[🏗️ Estructuras de Datos] --> B[📈 Series]
-    A --> C[📋 DataFrame]
-    
-    B --> D[📊 Array 1D]
-    B --> E[🏷️ Índices personalizados]
-    B --> F[🔢 Homogéneo]
-    
-    C --> G[📋 Tabla 2D]
-    C --> H[📊 Múltiples Series]
-    C --> I[🔍 Análisis completo]
-    
-    style B fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-```
+![[Diagramas/Módulo_6.2_Intro_a_Pandas_02.svg]]
 
 > [!success] **📈 Series: La Columna Inteligente** Una **Series** es un array unidimensional con etiquetas (índices). Es como una columna de Excel con superpoderes.
 > 
@@ -211,29 +176,7 @@ graph LR
 
 ## 📁 3. Lectura y Escritura de Archivos
 
-```mermaid
-graph TB
-    A[📁 Archivos] --> B[📄 CSV]
-    A --> C[📊 Excel]
-    A --> D[🌐 JSON]
-    A --> E[🔄 Otros]
-    
-    B --> F[pd.read_csv]
-    B --> G[df.to_csv]
-    
-    C --> H[pd.read_excel]
-    C --> I[df.to_excel]
-    
-    D --> J[pd.read_json]
-    D --> K[df.to_json]
-    
-    E --> L[Parquet, SQL, HTML]
-    
-    style A fill:#fff3e0,stroke:#e65100,stroke-width:3px
-    style B fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    style C fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style D fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-```
+![[Diagramas/Módulo_6.2_Intro_a_Pandas_03.svg]]
 
 > [!success] **📄 Lectura de Archivos CSV** Los archivos CSV son fundamentales en el análisis de datos. Pandas los maneja con elegancia.
 > 
@@ -465,26 +408,7 @@ graph TB
 
 ## 🎯 5. Selección de Datos
 
-```mermaid
-graph TB
-    A[🎯 Selección de Datos] --> B[📊 Columnas]
-    A --> C[📋 Filas]
-    A --> D[🔍 Filtros]
-    
-    B --> E[🔤 Por nombre]
-    B --> F[📝 Múltiples]
-    B --> G[🔍 Por tipo]
-    
-    C --> H[.loc - etiquetas]
-    C --> I[.iloc - posición]
-    
-    D --> J[❓ Condicionales]
-    D --> K[🔗 Combinados]
-    
-    style A fill:#e8f5e8,stroke:#388e3c,stroke-width:3px
-    style H fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style I fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-```
+![[Diagramas/Módulo_6.2_Intro_a_Pandas_04.svg]]
 
 > [!success] **📊 Selección de Columnas**
 > 

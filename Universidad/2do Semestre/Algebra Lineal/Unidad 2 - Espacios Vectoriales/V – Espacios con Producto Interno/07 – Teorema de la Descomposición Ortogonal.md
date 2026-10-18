@@ -34,25 +34,7 @@ dg-publish: true
 > |**Geometría**|Entender distancias y ángulos|Gráficos computacionales|
 > |**Optimización**|Resolver problemas de aproximación|Regresión lineal|
 
-```mermaid
-graph TB
-    A[Vector y en ℝⁿ] --> B[Descomposición Ortogonal]
-    B --> C[\hat{y} componente en W]
-    B --> D[z componente en W⊥]
-    
-    C --> E[\hat{y} ∈ W]
-    D --> F[z ⊥ W]
-    
-    E --> G[y = \hat{y} + z]
-    F --> G
-    
-    G --> H[Única descomposición]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style H fill:#ffe1e1
-```
+![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_01.svg]]
 
 ---
 
@@ -92,18 +74,7 @@ graph TB
 > 
 > **Visualización de subespacios:**
 > 
-> ```mermaid
-> graph TB
->     A[Subespacios de ℝ³] --> B[Dimensión 0<br/>Origen]
->     A --> C[Dimensión 1<br/>Líneas]
->     A --> D[Dimensión 2<br/>Planos]
->     A --> E[Dimensión 3<br/>Todo ℝ³]
->     C --> F[Ejemplo: span 1,0,0 ]
->     D --> G[Ejemplo: plano xy]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_02.svg]]
 > 
 > **Base de un subespacio:**
 > 
@@ -163,20 +134,7 @@ graph TB
 > 
 > **Propiedades fundamentales:**
 > 
-> ```mermaid
-> graph TB
->     A[Complemento Ortogonal W⊥] --> B[Es un subespacio]
->     A --> C[dim W + dim W⊥ = n]
->     A --> D[W ∩ W⊥ = 0]
->     A --> E[ W⊥ ⊥ = W]
->     B --> F[Cerrado bajo suma<br/>y mult. escalar]
->     C --> G[Dimensiones<br/>complementarias]
->     D --> H[Solo intersección<br/>en origen]
->     E --> I[Doble ortogonal<br/>regresa a W]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_03.svg]]
 > 
 > **Teorema de la dimensión:**
 > 
@@ -290,20 +248,7 @@ graph TB
 > 
 > **Flujo de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector y] --> B{¿Base de W?}
->     B -->|Ortogonal| C[Usar fórmula directa]
->     B -->|No ortogonal| D[Ortonormalizar<br/>Gram-Schmidt]
->     C --> E[\hat{y} = Σ y·uᵢ/uᵢ·uᵢ uᵢ]
->     D --> F[Obtener base ortonormal]
->     F --> E
->     E --> G[Calcular z = y - \hat{y}]
->     G --> H[Verificar: \hat{y} · z = 0]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_04.svg]]
 > 
 > **Propiedades de la proyección:**
 > 
@@ -338,20 +283,7 @@ graph TB
 > 
 > **Componentes del teorema:**
 > 
-> ```mermaid
-> graph TB
->     A[Teorema de Descomposición] --> B[Existencia]
->     A --> C[Unicidad]
->     A --> D[Fórmula explícita]
->     B --> E[Siempre existe<br/>\hat{y} y z]
->     C --> F[Solo hay una<br/>descomposición]
->     D --> G[Podemos calcular<br/>\hat{y} usando base]
->     E --> H[y = \hat{y} + z]
->     F --> H
->     G --> H
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_05.svg]]
 > 
 > **Notación y terminología:**
 > 
@@ -435,24 +367,7 @@ graph TB
 > 
 > **Diagrama de la demostración:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Inicio Demostración] --> B[Existencia]
->     A --> C[Unicidad]
->     B --> D[Definir \hat{y} usando<br/>base ortogonal]
->     D --> E[Definir z = y - \hat{y}]
->     E --> F[Probar \hat{y} ∈ W]
->     E --> G[Probar z ∈ W⊥]
->     F --> H[Existencia probada ✅]
->     G --> H
->     C --> I[Suponer dos<br/>descomposiciones]
->     I --> J[Restar ecuaciones]
->     J --> K[Mostrar diferencia<br/>en W ∩ W⊥]
->     K --> L[W ∩ W⊥ = 0]
->     L --> M[Unicidad probada ✅]
->     style H fill:#e1ffe1
->     style M fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_06.svg]]
 
 ### 🎯 Consecuencias Importantes
 
@@ -586,25 +501,7 @@ graph TB
 > 
 > **Flujo del proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector y y subespacio W] --> B{¿Base ortogonal?}
->     B -->|Sí| C[Calcular coeficientes<br/>cᵢ = y·uᵢ/‖uᵢ‖²]
->     B -->|No| D[Ortonormalizar base<br/>Gram-Schmidt]
->     D --> C
->     C --> E[\hat{y} = Σ cᵢuᵢ]
->     E --> F[z = y - \hat{y}]
->     F --> G[Verificar \hat{y} · z = 0]
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
->     style G fill:#e1f5ff
-> ````
-
-### 🔄 Usando Base Ortonormal
-
-> [!success] ⚡ Simplificación con Vectores Unitarios
-> **Ventaja:** Si la base es ortonormal, los cálculos se simplifican considerablemente.
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_07.svg]]
 > Si {q₁, q₂, ..., qₖ} es base ortonormal de W:
 > - qᵢ · qⱼ = 0 para i ≠ j (ortogonales)
 > - ‖qᵢ‖ = 1 para todo i (unitarios)
@@ -730,21 +627,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Base arbitraria<br/> v₁, v₂, ..., vₖ ] --> B[Tomar v₁]
->     B --> C[Normalizar: q₁ = v₁/‖v₁‖]
->     C --> D[Tomar v₂]
->     D --> E[Restar proyección<br/>sobre q₁]
->     E --> F[Normalizar: q₂]
->     F --> G[Tomar v₃]
->     G --> H[Restar proyecciones<br/>sobre q₁, q₂]
->     H --> I[Normalizar: q₃]
->     I --> J[Continuar...]
->     J --> K[Base ortonormal<br/> q₁, q₂, ..., qₖ ]
->     style A fill:#ffe1e1
->     style K fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_08.svg]]
 
 ---
 
@@ -779,16 +662,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TB
->     A[Vector b<br/>fuera de Col A ] --> B[Proyectar sobre Col A ]
->     B --> C[b̂ = proj_Col A  b]
->     C --> D[Resolver A\hat{x} = b̂]
->     D --> E[\hat{x} solución de<br/>mínimos cuadrados]
->     F[‖Ax - b‖] --> G[Minimizado cuando<br/>Ax = b̂]
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_09.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -905,17 +779,7 @@ graph TB
 > 
 > **Proceso de compresión:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Imagen original<br/>8×8 píxeles] --> B[Aplicar DCT<br/>64 coeficientes]
->     B --> C[Cuantizar<br/>reducir precisión]
->     C --> D[Codificar<br/>Huffman]
->     D --> E[Imagen comprimida]
->     F[Descomposición<br/>ortogonal] -.-> B
->     G[Retener solo<br/>componentes grandes] -.-> C
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_10.svg]]
 > 
 > **Ventaja de la ortogonalidad:**
 > 
@@ -1169,27 +1033,7 @@ graph TB
 > 
 > **Teorema fundamental:**
 > 
-> ```mermaid
-> mindmap
->   root((Descomposición<br/>Ortogonal))
->     Enunciado
->       y = \hat{y} + z
->       \hat{y} ∈ W
->       z ∈ W⊥
->       Única
->     Propiedades
->       \hat{y} · z = 0
->       y² = \hat{y}² + z²
->       \hat{y} minimiza distancia
->     Cálculo
->       Base ortogonal
->       Base ortonormal
->       Gram-Schmidt
->     Aplicaciones
->       Mínimos cuadrados
->       Fourier
->       Compresión
-> ```
+> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_11.svg]]
 > 
 > **Fórmulas esenciales:**
 > 

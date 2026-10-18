@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $P(x)=a_nx^n+\cdots+a_0$: el grado $n$ manda (máximo $n$ raíces, $n-1$ giros). Ruffini + factor + resto cero factoriza; el líder decide los extremos en $\pm\infty$.
 >
-> ```mermaid
-> graph LR
->     A["Grado n<br/>líder an"] --> B["Ruffini<br/>factoriza"]
->     B --> C["Raíces<br/>mult"]
->     C --> D["Extremos<br/>líder"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/11_-_Funciones_polinomiales_01.svg]]
 
 ---
 

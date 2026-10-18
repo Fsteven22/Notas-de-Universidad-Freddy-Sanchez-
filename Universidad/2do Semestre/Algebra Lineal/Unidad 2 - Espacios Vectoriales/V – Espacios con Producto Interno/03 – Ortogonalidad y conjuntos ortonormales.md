@@ -26,23 +26,7 @@ dg-publish: true
 > |**Interpretabilidad**|Componentes claramente separadas|Análisis de datos, PCA|
 > |**Eficiencia**|Optimización de cálculos|Gráficos por computadora, compresión|
 
-```mermaid
-graph TB
-    A[Concepto de Ortogonalidad] --> B[Producto Interno Cero]
-    A --> C[Independencia Geométrica]
-    A --> D[Aplicaciones]
-    
-    B --> E[⟨u,v⟩ = 0]
-    C --> F[Ángulo de 90°]
-    D --> G[Bases ortogonales]
-    D --> H[Proyecciones]
-    D --> I[Descomposición]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#f0e1ff
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_01.svg]]
 
 ---
 
@@ -89,25 +73,7 @@ graph TB
 > 
 > **Propiedades fundamentales:**
 > 
-> ```mermaid
-> mindmap
->   root((Producto Interno))
->     Propiedades Algebraicas
->       Conmutatividad
->         ⟨u,v⟩ = ⟨v,u⟩
->       Linealidad
->         ⟨au+bv,w⟩ = a⟨u,w⟩ + b⟨v,w⟩
->       Definido positivo
->         ⟨u,u⟩ ≥ 0
->         ⟨u,u⟩ = 0 ⟺ u = 0
->     Interpretación Geométrica
->       Proyección
->         Componente en dirección
->       Ángulo
->         cos θ = ⟨u,v⟩/(||u|| ||v||)
->       Norma
->         ||u|| = √⟨u,u⟩
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_02.svg]]
 
 ### ⊥ Definición de Ortogonalidad
 
@@ -119,16 +85,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Producto Interno] --> B{⟨u,v⟩ = ?}
->     B -->|= 0| C[✅ Ortogonales<br/>Ángulo = 90°]
->     B -->|> 0| D[❌ Ángulo agudo<br/>0° < θ < 90°]
->     B -->|< 0| E[❌ Ángulo obtuso<br/>90° < θ < 180°]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_03.svg]]
 > 
 > **Casos especiales importantes:**
 > 
@@ -163,18 +120,7 @@ graph TB
 > 
 > $$||u + v||^2 = ||u||^2 + ||v||^2$$
 > 
-> ```mermaid
-> graph TD
->     A[u ⊥ v] --> B[Aplicar Teorema de Pitágoras]
->     B --> C["||u + v||² = ||u||² + ||v||²" ]
->     C --> D[Ejemplo numérico]
->     D --> E[u = 3,0, v = 0,4]
->     E --> F["||u+v||² = |3,4|² = 25" ]
->     E --> G["||u||² + ||v||² = 9 + 16 = 25 ✓" ]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_04.svg]]
 
 ### 📐 Relación con Ángulos
 
@@ -213,21 +159,7 @@ graph TB
 > 
 > **Diagrama de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Calcular ⟨u,v⟩] --> B{Valor?}
->     B -->|= 0| C[θ = 90°<br/>✅ ORTOGONALES]
->     B -->|≠ 0| D[Calcular ||u|| y ||v||]
->     D --> E[cos θ = ⟨u,v⟩ / ||u|| ||v||]
->     E --> F[θ = arccos valor]
->     C --> G[Relación<br/>perpendicular]
->     F --> H{θ < 90°?}
->     H -->|Sí| I[Ángulo agudo]
->     H -->|No| J[Ángulo obtuso]
->     style C fill:#e1ffe1
->     style I fill:#fff4e1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_05.svg]]
 
 ---
 
@@ -303,22 +235,7 @@ graph TB
 > 
 > **Ventajas sobre bases arbitrarias:**
 > 
-> ```mermaid
-> graph LR
->     A[Base Ortogonal] --> B[Coordenadas Simples]
->     A --> C[Proyecciones Directas]
->     A --> D[Cálculos Rápidos]
->     A --> E[Estabilidad Numérica]
->     B --> F["cᵢ = ⟨v,uᵢ⟩/||uᵢ||²"]
->     C --> G[No hay interferencia]
->     D --> H[Sin resolver sistemas]
->     E --> I[Menor error de redondeo]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_06.svg]]
 > 
 > **Fórmula de coordenadas:**
 > 
@@ -385,21 +302,7 @@ graph TB
 > 
 > **Relación entre conceptos:**
 > 
-> ```mermaid
-> graph TD
->     A[Conjunto de Vectores] --> B{¿Independientes?}
->     B -->|Sí| C[Puede ser base]
->     B -->|No| D[No es base]
->     C --> E{¿Ortogonales?}
->     E -->|Sí| F[Base Ortogonal]
->     E -->|No| G[Base cualquiera]
->     F --> H{¿Norma 1?}
->     H -->|Sí| I[⭐ BASE ORTONORMAL]
->     H -->|No| J[Solo ortogonal]
->     style I fill:#e1ffe1
->     style F fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_07.svg]]
 > 
 > **Ejemplo clásico - Base estándar de ℝⁿ:**
 > 
@@ -451,17 +354,7 @@ graph TB
 > 
 > **Algoritmo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector v] --> B["Calcular norma<br/>||v|| = √⟨v,v⟩"]
->     B --> C{"||v|| = 0?"}
->     C -->|Sí| D["❌ Error<br/>No se puede normalizar"]
->     C -->|No| E["Dividir cada componente<br/>û = v/||v||"]
->     E --> F["Verificar: ||û|| = 1"]
->     F --> G[✅ Vector normalizado]
->     style D fill:#ffe1e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_08.svg]]
 > 
 > **Ejemplos numéricos:**
 > 
@@ -565,43 +458,7 @@ graph TB
 > 
 > **Ventajas en aplicaciones:**
 > 
-> ```mermaid
-> mindmap
->   root((Bases Ortonormales))
->     Computación
->       Algoritmos estables
->       Menor error numérico
->       Cálculos rápidos
->     Geometría
->       Interpretación clara
->       Coordenadas = proyecciones
->       Distancias preservadas
->     Aplicaciones
->       Procesamiento de señales
->       Compresión de datos
->       Gráficos por computadora
->       Análisis de componentes principales
-> ````
-
----
-
-## 🔄 Proceso de Gram-Schmidt
-
-### 🏗️ Algoritmo de Ortonormalización
-
-> [!example] 🛠️ Construcción de Bases Ortonormales
-> El **proceso de Gram-Schmidt** transforma cualquier base en una base ortonormal, preservando el espacio generado.
-> **Idea intuitiva:**
-> ```mermaid
-> graph LR
->     A["Base Cualquiera<br/>v₁, v₂, v₃" ] --> B["Ortogonalizar<br/>Gram-Schmidt" ]
->     B --> C["Base Ortogonal<br/>w₁, w₂, w₃" ]
->     C --> D[Normalizar<br/>Dividir por normas]
->     D --> E[Base Ortonormal<br/>u₁, u₂, u₃]
->     style A fill:#ffe1e1
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_09.svg]]
 > 
 > **Algoritmo paso a paso:**
 > 
@@ -756,19 +613,7 @@ graph TB
 > 
 > **Cuándo usar alternativas:**
 > 
-> ```mermaid
-> flowchart TD
->     A[¿Necesitas base ortonormal?] --> B{Tamaño del problema}
->     B -->|Pequeño n<20| C[Gram-Schmidt clásico<br/>Simple y suficiente]
->     B -->|Mediano 20-100| D[Gram-Schmidt modificado<br/>Más estable]
->     B -->|Grande n>100| E[Factorización QR<br/>Householder/Givens]
->     C --> F{¿Precisión crítica?}
->     F -->|Sí| G[Usar MGS o QR]
->     F -->|No| H[CGS es OK]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_10.svg]]
 
 ---
 
@@ -800,19 +645,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Vector v] --> B[Proyectar sobre u]
->     B --> C[proj_u v<br/>Componente paralela]
->     B --> D[perp_u v<br/>Componente perpendicular]
->     C --> E[En dirección de u]
->     D --> F[Ortogonal a u]
->     E --> G[v = proj_u v + perp_u v]
->     F --> G
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_11.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -905,16 +738,7 @@ graph TB
 > 
 > **Proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Imagen Original<br/>n × n píxeles] --> B[Transformar a<br/>base ortonormal]
->     B --> C[Obtener<br/>coeficientes]
->     C --> D[Descartar<br/>coeficientes pequeños]
->     D --> E[Reconstruir<br/>imagen comprimida]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_12.svg]]
 > 
 > **Ejemplo con DCT (Discrete Cosine Transform):**
 > 
@@ -944,41 +768,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual Completo
 
-```mermaid
-mindmap
-  root((Ortogonalidad y<br/>Ortonormalidad))
-    Producto Interno
-      Definición: ⟨u,v⟩ = Σuᵢvᵢ
-      Propiedades
-        Conmutativo
-        Lineal
-        Definido positivo
-      Interpretación
-        Ángulo entre vectores
-        Proyección
-    Ortogonalidad
-      Criterio: ⟨u,v⟩ = 0
-      Conjuntos ortogonales
-      Bases ortogonales
-      Complemento ortogonal
-    Ortonormalidad
-      Ortogonal + Norma 1
-      Bases ortonormales
-      Propiedades especiales
-        Coordenadas simples
-        Preserva norma
-        Matriz ortogonal
-    Gram-Schmidt
-      Ortogonalización
-      Normalización
-      Versión modificada
-      Estabilidad numérica
-    Aplicaciones
-      Proyecciones
-      Mínimos cuadrados
-      Compresión
-      PCA
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_13.svg]]
 
 ### 📋 Tabla Comparativa de Conceptos
 
@@ -993,30 +783,7 @@ mindmap
 
 ### 🎯 Flujo de Trabajo Típico
 
-```mermaid
-flowchart TD
-    A["Base Arbitraria<br/>v₁, v₂, ..., vₙ"] --> B["¿Ya es ortogonal?"]
-    B -->|Sí| C[Normalizar vectores]
-    B -->|No| D[Aplicar Gram-Schmidt]
-    
-    D --> E["Obtener base ortogonal<br/>{w₁, w₂, ..., wₙ}"]
-    E --> C
-    
-    C --> F["Base ortonormal<br/>{u₁, u₂, ..., uₙ}"]
-    
-    F --> G[Usar para:]
-    G --> H["Calcular coordenadas<br/>cᵢ = ⟨v,uᵢ⟩"]
-    G --> I["Proyectar vectores<br/>proj = Σ⟨v,uᵢ⟩uᵢ"]
-    G --> J["Resolver sistemas<br/>mínimos cuadrados"]
-    
-    style A fill:#ffe1e1
-    style E fill:#fff4e1
-    style F fill:#e1ffe1
-    style H fill:#e1f5ff
-    style I fill:#e1f5ff
-    style J fill:#e1f5ff
-
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_14.svg]]
 
 ---
 
@@ -1140,18 +907,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> graph LR
->     A[Producto Interno] --> B[Ortogonalidad]
->     B --> C[Ortonormalidad]
->     C --> D[Gram-Schmidt]
->     D --> E[Aplicaciones]
->     style A fill:#e1ffe1
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_15.svg]]
 > 
 > **Próximos temas naturales:**
 > 
@@ -1165,22 +921,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph TB
->     A[Ortogonalidad] --> B[QR Factorization]
->     A --> C[Proyecciones]
->     B --> D[Eigen-descomposición]
-> C --> E[Mínimos Cuadrados]
-> D --> F[SVD]
-> E --> F
-> F --> G[PCA]
-> F --> H[Compresión]
-> G --> I[Machine Learning]
-> H --> I
-> style A fill:#e1ffe1
-> style F fill:#fff4e1
-> style I fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_16.svg]]
 > 
 > ```
 > 
@@ -1217,20 +958,7 @@ flowchart TD
 > |**Descomposición**|Representar vectores como combinaciones|Análisis de Fourier, compresión|
 > |**Geometría**|Ángulos y distancias simples|Gráficos por computadora, física|
 
-```mermaid
-graph TB
-    A[Vectores en ℝⁿ] --> B{¿Producto interno cero?}
-    B -->|Sí| C[Vectores Ortogonales]
-    B -->|No| D[Vectores Oblicuos]
-    C --> E{¿Norma = 1?}
-    E -->|Sí| F[Vectores Ortonormales]
-    E -->|No| G[Ortogonales no normalizados]
-    F --> H[Base Ortonormal]
-    
-    style C fill:#e1ffe1
-    style F fill:#e1f5ff
-    style H fill:#fff4e1
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_17.svg]]
 
 ---
 
@@ -1284,16 +1012,7 @@ graph TB
 > 
 > **Visualización en ℝ²:**
 > 
-> ```mermaid
-> graph LR
->     A[Origen O] --> B[Vector u]
->     A --> C[Vector v]
->     B -.->|"⟨u,v⟩ = 0"| D[Ángulo 90°]
->     C -.-> D
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_18.svg]]
 
 ### 🧮 Propiedades del Producto Interno
 
@@ -1333,19 +1052,7 @@ graph TB
 > 
 > **Consecuencias importantes:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Propiedades del<br/>Producto Interno] --> B[Permite definir norma]
->     A --> C[Permite definir ángulo]
->     A --> D[Permite proyecciones]
->     B --> E["||u|| = √⟨u,u⟩"]
->     C --> F["cos θ = ⟨u,v⟩/(||u|| ||v||)"]
->     D --> G["proyᵥ(u) = (⟨u,v⟩/⟨v,v⟩)v"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_19.svg]]
 
 ### 📐 Norma y Normalización
 
@@ -1403,16 +1110,7 @@ graph TB
 > 
 > **Visualización de normalización:**
 > 
-> ```mermaid
-> graph LR
->     A["Vector u<br/>||u|| = 5] -->|Dividir por 5| B[Vector û<br/>||û|| = 1" ]
->     A -.->|Mantiene<br/>dirección| B
->     C[u = 3, 4] --> D[û = 0.6, 0.8]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_20.svg]]
 
 ---
 
@@ -1494,19 +1192,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Conjunto Ortogonal] --> B[Vectores perpendiculares<br/>dos a dos]
->     A --> C[Vectores no ceros]
->     B --> D[Independencia Lineal<br/>Garantizada]
->     C --> D
->     D --> E[Puede formar base]
->     D --> F[Cálculos simplificados]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_21.svg]]
 
 ### 🎨 Representación de Vectores
 
@@ -1573,22 +1259,7 @@ graph TB
 > 
 > **Flujo de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector u a representar] --> B[Base ortogonal<br/> v₁, v₂, ..., vₖ]
->     B --> C1[Calcular ⟨u, v₁⟩/||v₁||²]
->     B --> C2[Calcular ⟨u, v₂⟩/||v₂||²]
->     B --> C3[Calcular ⟨u, vₖ⟩/||vₖ||²]
->     C1 --> D[c₁]
->     C2 --> E[c₂]
->     C3 --> F[cₖ]
->     D --> G[u = c₁v₁ + c₂v₂ + ... + cₖvₖ]
->     E --> G
->     F --> G
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_22.svg]]
 
 ---
 
@@ -1659,16 +1330,7 @@ graph TB
 > 
 > **Proceso de ortonormalización:**
 > 
-> ```mermaid
-> flowchart LR
->     A["Conjunto Ortogonal<br/>v₁, v₂, ..., vₖ"] --> B["Calcular normas<br/>||v₁||, ||v₂||, ..., ||vₖ||" ]
->     B --> C["Normalizar cada vector<br/>uᵢ = vᵢ/||vᵢ||"]
->     C --> D[Conjunto Ortonormal<br/>u₁, u₂, ..., uₖ]
->     D --> E[Verificar:<br/>⟨uᵢ,uⱼ⟩ = δᵢⱼ]
->     style A fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_23.svg]]
 
 ### 🧮 Representación en Bases Ortonormales
 
@@ -1736,32 +1398,7 @@ graph TB
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> graph TD
->     A[Vector v] --> B[Base ortonormal<br/>u₁, u₂, ..., uₙ]
->     B --> C1["c₁ = ⟨v, u₁⟩"]
->     B --> C2["c₂ = ⟨v, u₂⟩"]
->     B --> C3["cₙ = ⟨v, uₙ⟩"]
->     C1 --> D["v = Σcᵢuᵢ"]
->     C2 --> D
->     C3 --> D
->     D --> E["||v||² = Σcᵢ²<br/>(Parseval)"]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
-> ````
-
----
-
-## 🔄 Proceso de Gram-Schmidt
-
-### 🎨 Algoritmo de Ortonormalización
-
-> [!example] 🛠️ Método de Gram-Schmidt
-> **Objetivo:** Transformar una base arbitraria {**v₁**, **v₂**, ..., **vₙ**} en una base ortonormal {**u₁**, **u₂**, ..., **uₙ**} que genere el mismo espacio.
-> **Algoritmo paso a paso:**
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_24.svg]]
 > Entrada: Base {v₁, v₂, ..., vₙ} (linealmente independiente)
 > Salida: Base ortonormal {u₁, u₂, ..., uₙ}
 > 
@@ -1865,20 +1502,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A["Base original<br/>v₁, v₂, ..., vₙ"] --> B["Normalizar v₁<br/>u₁ = v₁/||v₁||" ]
->     B --> C[Para k = 2 hasta n]
->     C --> D["Restar proyecciones<br/>wₖ = vₖ - Σ⟨vₖ,uⱼ⟩uⱼ"]
->     D --> E["Normalizar<br/>uₖ = wₖ/||wₖ||"]
->     E --> F{¿Terminado?}
->     F -->|No| C
->     F -->|Sí| G["Base ortonormal<br/>u₁, u₂, ..., uₙ"]
->     style A fill:#ffe1e1
->     style G fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_25.svg]]
 
 ### ⚠️ Consideraciones Numéricas
 
@@ -2016,17 +1640,7 @@ graph TB
 > 
 > donde **\hat{y}** ∈ W y **z** ∈ W^⊥ (complemento ortogonal de W)
 > 
-> ```mermaid
-> graph TD
->     A[Vector y] --> B[Proyección \hat{y} ∈ W]
->     A --> C[Componente z ∈ W^⊥]
->     B --> D["\hat{y} = Σ⟨y,uᵢ⟩uᵢ"]
->     C --> E["z = y - \hat{y}"]
->     D -.->|⊥| E
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_26.svg]]
 
 ### 📈 Regresión Lineal y Mínimos Cuadrados
 
@@ -2203,16 +1817,7 @@ graph TB
 > - ‖Q**x**‖ = ‖**x**‖ para todo **x**
 > - ⟨Q**x**, Q**y**⟩ = ⟨**x**, **y**⟩ para todos **x**, **y**
 > 
-> ```mermaid
-> graph LR
->     A[Vector x] -->|Multiplic. Q| B[Vector Qx]
-> A -.->|"||x||"| C[Norma preservada]
-> B -.->|"||Qx|| = ||x||"| C
-> D[Ángulo θ] -.->|Sin cambio| E[Ángulo θ]
-> style A fill:#e1f5ff
-> style B fill:#e1f5ff
-> style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_27.svg]]
 
 ### 🔄 Descomposición QR
 
@@ -2350,19 +1955,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[ℝⁿ] --> B[Subespacio W]
->     A --> C[Complemento W^⊥]
->     B -.->|⊥| C
->     B -.->|dim = k| D[Dimensión]
->     C -.->|dim = n-k| D
->     B --> E[Base: v₁, ..., vₖ]
->     C --> F[Base: u₁, ..., uₙ₋ₖ]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_28.svg]]
 
 ### 🔄 Teorema de Descomposición
 
@@ -2430,40 +2023,7 @@ graph TB
 
 ### Mapa Conceptual Global
 
-```mermaid
-mindmap
-  root((Conjuntos<br/>Ortogonales y<br/>Ortonormales))
-    Producto Interno
-      Definición
-      Propiedades
-      Ortogonalidad
-      Norma
-    Conjuntos Ortogonales
-      Definición
-      Independencia lineal
-      Bases ortogonales
-      Coordenadas
-    Conjuntos Ortonormales
-      Normalización
-      Bases ortonormales
-      Fórmulas simples
-      Matrices ortogonales
-    Gram-Schmidt
-      Algoritmo
-      Versión modificada
-      Estabilidad numérica
-      Descomposición QR
-    Proyecciones
-      Sobre subespacios
-      Componente ortogonal
-      Mínimos cuadrados
-      Descomposición
-    Aplicaciones
-      Regresión lineal
-      Series de Fourier
-      Compresión de datos
-      Procesamiento señales
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_29.svg]]
 
 ### Tabla Comparativa Final
 
@@ -2494,36 +2054,7 @@ mindmap
 
 ### Diagrama de Flujo de Decisiones
 
-```mermaid
-flowchart TD
-    A[Tengo vectores] --> B{¿Son ortogonales?}
-    
-    B -->|No| C[Aplicar Gram-Schmidt]
-    B -->|Sí| D{¿Son unitarios?}
-    
-    C --> E[Conjunto ortogonal]
-    E --> D
-    
-    D -->|No| F[Normalizar]
-    D -->|Sí| G[Ya son ortonormales]
-    
-    F --> G
-    
-    G --> H{¿Qué necesito?}
-    
-    H -->|Representar vector| I[Calcular coordenadas<br/>cᵢ = ⟨v,uᵢ⟩]
-    H -->|Proyectar| J[proj = Σ⟨y,uᵢ⟩uᵢ]
-    H -->|Resolver sistema| K[Usar QR o ecuaciones normales]
-    H -->|Cambiar base| L[Matriz con uᵢ como columnas]
-    
-    style B fill:#fff4e1
-    style D fill:#fff4e1
-    style G fill:#e1ffe1
-    style I fill:#e1f5ff
-    style J fill:#e1f5ff
-    style K fill:#e1f5ff
-    style L fill:#e1f5ff
-```
+![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_30.svg]]
 
 ---
 
@@ -2699,18 +2230,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Conjuntos<br/>Ortonormales] --> B[Eigenvalores y<br/>Eigenvectores]
->     B --> C[Diagonalización]
->     C --> D[Formas Cuadráticas]
->     D --> E[SVD]
->     A -.-> F[Espacios con<br/>Producto Interno]
->     F -.-> G[Análisis Funcional]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Ortogonalidad_y_conjuntos_ortonormales_31.svg]]
 > 
 > **Aplicaciones futuras:**
 > 

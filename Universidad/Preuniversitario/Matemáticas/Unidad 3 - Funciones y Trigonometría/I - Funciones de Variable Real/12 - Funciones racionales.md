@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $P(x)/Q(x)$: ceros de $P$, verticales en ceros de $Q$, horizontal/oblicua por grados, huecos donde se cancela — y el signo sale de la tabla de críticos.
 >
-> ```mermaid
-> graph LR
->     A["P/Q<br/>ceros"] --> B["Verticales<br/>Q=0"]
->     B --> C["Horiz<br/>grados"]
->     C --> D["Signo<br/>tabla"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/12_-_Funciones_racionales_01.svg]]
 
 ---
 

@@ -18,16 +18,7 @@ dg-publish: true
 > - **Compiladores:** demuestran que una optimización no cambia el comportamiento del programa.
 > - **Bases de datos:** las consultas SQL con `JOIN` correctos dependen de propiedades algebraicas demostradas.
 >
-> ```mermaid
-> graph LR
->     A["Axiomas y<br/>definiciones"] --> B["Reglas validas<br/>MP, MT, SH"]
->     B --> C["Cadena finita<br/>de pasos"]
->     C --> D["Teorema<br/>certeza total"]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/07_-_Demostraciones_01.svg]]
 
 ---
 
@@ -278,19 +269,7 @@ dg-publish: true
 
 ## 🗺️ Cómo Elegir el Método
 
-```mermaid
-flowchart TD
-    A["Que quiero demostrar?"] --> B{"Es para todo n natural?"}
-    B -->|"Si"| C["Induccion<br/>(simple o fuerte)"]
-    B -->|"No"| D{"La tesis es P a Q?"}
-    D -->|"Conexion directa clara"| E["Directa"]
-    D -->|"Negar Q da mas info"| F["Contrapositiva"]
-    D -->|"Tesis niega existencia<br/>o posibilidad"| G["Contradiccion"]
-    D -->|"Hay particion natural<br/>de casos"| H["Casos"]
-    A --> I{"Es existencial: existe x?"}
-    I -->|"Puedo exhibir x"| J["Constructiva"]
-    I -->|"Solo pruebo que existe"| K["No constructiva"]
-```
+![[Diagramas/07_-_Demostraciones_02.svg]]
 
 ---
 
@@ -403,35 +382,7 @@ flowchart TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root(("Metodos de<br/>Demostracion"))
-    Directa
-      Asume P deriva Q
-      Conexion algebraica clara
-    Contrapositiva
-      No Q a no P
-      Equivalente logico
-      Cuidado con reciproca
-    Contradiccion
-      Asume no P
-      Deriva absurdo
-      Existencia e infinitud
-    Casos
-      Particion exhaustiva
-      Prueba cada caso
-    Induccion
-      Base y paso
-      Simple vs fuerte
-      Buen orden de N
-    Constructiva y no constructiva
-      Exhibe el objeto
-      O solo prueba que existe
-    Errores comunes
-      Peticion de principio
-      Probar la conversa
-      Ejemplos no bastan
-```
+![[Diagramas/07_-_Demostraciones_03.svg]]
 
 ---
 

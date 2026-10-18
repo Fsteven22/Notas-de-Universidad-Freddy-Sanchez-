@@ -20,20 +20,7 @@ dg-publish: true
 >
 > Antes de dar por buena una tesis, debe pasar estos cinco filtros:
 >
-> ```mermaid
-> graph TD
->     T[Tesis propuesta] --> F1{"¿Es debatible?"}
->     F1 -->|No, es un hecho| X1[Rechazar]
->     F1 -->|Sí| F2{"¿Es específica?"}
->     F2 -->|No, es una generalización absoluta| X2[Rechazar]
->     F2 -->|Sí| F3{"¿Es aseverativa?"}
->     F3 -->|No, es pregunta retórica| X3[Rechazar]
->     F3 -->|Sí| F4{"¿Tiene certeza enunciativa?"}
->     F4 -->|No, es condicional hipotético| X4[Rechazar]
->     F4 -->|Sí| F5{"¿Estructura gramatical completa?"}
->     F5 -->|No, es frase nominal/infinitivo| X5[Rechazar]
->     F5 -->|Sí| OK[Tesis válida]
-> ```
+> ![[Diagramas/02_-_Formulación_y_validación_de_la_tesis_01.svg]]
 >
 
 > [!success]- ✅ Los 5 filtros con ejemplos comparativos
@@ -210,25 +197,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Tesis valida))
-    Filtros de validez
-      Debatibilidad
-      Especificidad
-      Caracter aseverativo
-      Certeza enunciativa
-      Estructura gramatical
-    Marcadores de opinion
-      A mi juicio
-      Considero que
-      Sostengo que
-    Errores tipicos
-      Hechos no debatibles
-      Preguntas retoricas
-      Generalizaciones absolutas
-      Condicionales hipoteticos
-```
+![[Diagramas/02_-_Formulación_y_validación_de_la_tesis_02.svg]]
 
 ---
 

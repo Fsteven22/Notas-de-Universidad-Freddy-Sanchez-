@@ -26,25 +26,7 @@ dg-publish: true
 > |**Biyección**|Correspondencia uno a uno|No se pierde ni duplica información|
 > |**Invertibilidad**|Transformación reversible|Puedo ir y volver sin pérdida|
 
-```mermaid
-graph LR
-    A[Espacio V] <-->|Isomorfismo T| B[Espacio W]
-    
-    A --> C[dim V = n]
-    B --> D[dim W = n]
-    
-    C -.->|misma dimensión| D
-    
-    A --> E[Operaciones en V]
-    B --> F[Operaciones en W]
-    
-    E -.->|se preservan| F
-    
-    style A fill:#e1f5ff
-    style B fill:#ffe1f5
-    style C fill:#e1ffe1
-    style D fill:#e1ffe1
-```
+![[Diagramas/05_–_Espacios_isomorfos_01.svg]]
 
 > [!notes] *Definición formal:*
 > 
@@ -87,35 +69,7 @@ graph LR
 
 **Ejemplo visual:**
 
-```mermaid
-graph TB
-    subgraph "Espacio V"
-    V1[v₁] 
-    V2[v₂]
-    V3[v₃]
-    V4[Base de V]
-    end
-    
-    subgraph "Transformación T"
-    T[Isomorfismo<br/>T: V → W]
-    end
-    
-    subgraph "Espacio W"
-    W1[w₁ = T v₁]
-    W2[w₂ = T v₂]
-    W3[w₃ = T v₃]
-    W4[Base de W]
-    end
-    
-    V1 --> T --> W1
-    V2 --> T --> W2
-    V3 --> T --> W3
-    V4 -.->|se mapea a| W4
-    
-    style T fill:#e1ffe1
-    style V4 fill:#e1f5ff
-    style W4 fill:#ffe1f5
-```
+![[Diagramas/05_–_Espacios_isomorfos_02.svg]]
 
 ### ✅ Criterios para Verificar Isomorfismo
 
@@ -127,21 +81,7 @@ graph TB
 > 
 > **Proceso de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[¿V ≅ W?] --> B{¿dim V = dim W?}
->     B -->|No| C[❌ NO son isomorfos<br/>GARANTIZADO]
->     B -->|Sí| D{¿Mismo campo?}
->     D -->|No| C
->     D -->|Sí| E[✅ SÍ son isomorfos<br/>existe isomorfismo]
->     E --> F[Construir T explícitamente]
->     F --> G[Elegir bases]
->     G --> H[Definir T en base]
->     H --> I[Extender linealmente]
->     style C fill:#ffe1e1
->     style E fill:#e1ffe1
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_03.svg]]
 > 
 > **Checklist para verificar isomorfismo:**
 > 
@@ -258,29 +198,13 @@ graph TB
 > 3. $T \circ T^{-1} = I_W$ (identidad en $W$)
 > 4. $(T^{-1})^{-1} = T$
 > 
-> ```mermaid
-> graph LR
->     A[V] -->|T| B[W]
->     B -->|T⁻¹| A
->     A -.->|T⁻¹ ∘ T = I_V| A
->     B -.->|T ∘ T⁻¹ = I_W| B
->     style A fill:#e1f5ff
->     style B fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_04.svg]]
 > 
 > **Teorema 2: Composición de isomorfismos**
 > 
 > Si $T: U \to V$ y $S: V \to W$ son isomorfismos, entonces $S \circ T: U \to W$ es un isomorfismo.
 > 
-> ```mermaid
-> graph LR
->     A[U] -->|T| B[V]
->     B -->|S| C[W]
->     A -.->|S ∘ T| C
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style C fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_05.svg]]
 > 
 > **Demostración:**
 > 
@@ -347,15 +271,7 @@ graph TB
 > 
 > $$T(2, -3, 5) = 2 - 3x + 5x^2$$ $$T^{-1}(1 + 4x - 2x^2) = (1, 4, -2)$$
 > 
-> ```mermaid
-> graph LR
->     A["(2, -3, 5)<br/>∈ ℝ³"] -->|T| B["2 - 3x + 5x²<br/>∈ 𝒫₂ ℝ"]
->     B -->|T⁻¹| A
->     C["(a, b, c)"] -->|T| D["a + bx + cx²"]
->     D -->|T⁻¹| C
->     style A fill:#e1f5ff
->     style B fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_06.svg]]
 >
 
 > [!example] 🔢 Ejemplo 2: $\mathbb{R}^4 \cong M_{2 \times 2}(\mathbb{R})$
@@ -408,17 +324,7 @@ graph TB
 > 
 > Este isomorfismo muestra que trabajar con polinomios de grado ≤ n es equivalente a trabajar con vectores en $\mathbb{R}^{n+1}$.
 > 
-> ```mermaid
-> graph TD
->     A[Polinomio<br/>p x = a₀ + a₁x + ... + aₙxⁿ] -->|T| B[Vector<br/> a₀, a₁, ..., aₙ ]
->     C[Operaciones<br/>en polinomios] -.->|equivalen| D[Operaciones<br/>en ℝⁿ⁺¹]
->     A --> C
->     B --> D
->     style A fill:#ffe1f5
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_07.svg]]
 
 ---
 
@@ -456,20 +362,7 @@ graph TB
 > 
 > **Diagrama conceptual:**
 > 
-> ```mermaid
-> graph TB
->     A[Espacio Abstracto V<br/>dim V = n] -->|isomorfismo de coordenadas| B[ℝⁿ<br/>espacio concreto]
->     C[Vector v ∈ V] -->|v _ℬ| D[Vector de coordenadas<br/> c₁, c₂, ..., cₙ ]
->     E[Operaciones en V<br/>abstractas] -.->|se traducen a| F[Operaciones en ℝⁿ<br/>concretas]
->     A --> C
->     B --> D
->     A --> E
->     B --> F
->     style A fill:#ffe1f5
->     style B fill:#e1f5ff
->     style E fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_08.svg]]
 >
 
 > [!example] 📐 Ejemplo: Coordenadas en $\mathcal{P}_2(\mathbb{R})$
@@ -537,15 +430,7 @@ graph TB
 > 
 > **Diagrama:**
 > 
-> ```mermaid
-> graph LR
->     A["[v]_ℬ<br/>coordenadas en base ℬ"] -->|P_𝒞←ℬ| B["[v]_𝒞<br/>coordenadas en base 𝒞"]
->     B -->|P_ℬ←𝒞| A
->     C["P_ℬ←𝒞 = P_𝒞←ℬ⁻¹"]
->     style A fill:#e1f5ff
->     style B fill:#ffe1f5
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_09.svg]]
 > 
 > **Propiedades:**
 > 
@@ -605,16 +490,7 @@ graph TB
 > 3. Resolver problema en espacio concreto
 > 4. Traducir solución al espacio original
 > 
-> ```mermaid
-> flowchart LR
->     A[Problema en<br/>espacio abstracto V] -->|isomorfismo T| B[Problema en ℝⁿ]
->     B -->|resolver| C[Solución en ℝⁿ]
->     C -->|T⁻¹| D[Solución en V]
->     style A fill:#ffe1e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#ccffcc
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_10.svg]]
 > 
 > **Ejemplo: Encontrar base ortogonal en $\mathcal{P}_2(\mathbb{R})$**
 > 
@@ -647,18 +523,7 @@ graph TB
 > 
 > **Perspectiva 2:** Matrices 2×2 (arreglos numéricos)
 > 
-> ```mermaid
-> graph TD
->     A[Mismo Objeto Matemático]
->     B[Transformación Lineal<br/>T: ℝ² → ℝ²]
->     C[Matriz<br/>A ∈ M₂ₓ₂ ℝ ]
->     A --> B
->     A --> C
->     B <-.->|isomorfismo| C
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style C fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_11.svg]]
 > 
 > **Ventajas:**
 > 
@@ -672,30 +537,7 @@ graph TB
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Espacios<br/>Isomorfos))
-    Definición
-      Transformación lineal
-      Biyectiva
-      Preserva estructura
-    Criterio
-      Misma dimensión
-      Mismo campo
-      dim V = dim W → V ≅ W
-    Propiedades
-      Inversa existe
-      Composición
-      Relación de equivalencia
-    Ejemplos
-      ℝⁿ ≅ 𝒫ₙ₋₁ ℝ 
-      ℝ⁴ ≅ M₂ₓ₂ ℝ 
-      Todo V dim n ≅ ℝⁿ
-    Aplicaciones
-      Coordenadas
-      Cambio de base
-      Simplificar problemas
-```
+![[Diagramas/05_–_Espacios_isomorfos_12.svg]]
 
 ### Tabla Resumen
 
@@ -729,26 +571,7 @@ mindmap
 
 ### Diagrama de Flujo: ¿Son Isomorfos?
 
-```mermaid
-flowchart TD
-    A[¿V ≅ W?] --> B{¿Mismo campo?}
-    B -->|No| C[❌ NO son isomorfos]
-    B -->|Sí| D{¿dim V = dim W?}
-    
-    D -->|No| C
-    D -->|Sí| E[✅ SÍ son isomorfos]
-    
-    E --> F[Construir isomorfismo explícito]
-    F --> G[1. Elegir base de V: ℬ_V]
-    G --> H[2. Elegir base de W: ℬ_W]
-    H --> I[3. Definir T: v_i ↦ w_i]
-    I --> J[4. Extender linealmente]
-    J --> K[5. Verificar biyectividad]
-    
-    style C fill:#ffe1e1
-    style E fill:#e1ffe1
-    style K fill:#ccffcc
-```
+![[Diagramas/05_–_Espacios_isomorfos_13.svg]]
 
 ---
 
@@ -825,19 +648,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Espacios Isomorfos] --> B[Transformaciones<br/>Lineales]
->     B --> C[Valores y Vectores<br/>Propios]
->     C --> D[Diagonalización]
->     D --> E[Formas Canónicas]
->     A --> F[Cambio de Base]
->     F --> C
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Espacios_isomorfos_14.svg]]
 
 ---
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Razones en el triángulo ($op/hip$, $ady/hip$, $op/ady$) extendidas al círculo unitario: el cuadrante da el signo, el ángulo de referencia da el valor, y $\sin^2+\cos^2=1$ las ata.
 >
-> ```mermaid
-> graph LR
->     A["Triángulo<br/>op/hip"] --> B["Círculo<br/>unitario"]
->     B --> C["Signo<br/>cuadrante"]
->     C --> D["Valor<br/>referencia"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Funciones_trigonométricas_elementales_01.svg]]
 
 ![[U3-trig.png]]
 

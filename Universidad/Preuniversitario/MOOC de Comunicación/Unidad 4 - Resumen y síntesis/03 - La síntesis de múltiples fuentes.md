@@ -12,14 +12,7 @@ dg-publish: true
 >
 > Mientras que el **resumen** se apega a **una sola fuente** y condensa su contenido conservando la terminología del autor (ver [[01 - El resumen académico]]), la **síntesis integra varias fuentes** distintas sobre un mismo tema, construyendo una **estructura y una voz propias** que no pertenecen a ninguna de las fuentes originales por separado.
 >
-> ```mermaid
-> graph TD
->     A[Resumen] --> B["Una sola fuente"]
->     A --> C["Conserva estructura y terminología del autor"]
->     D[Síntesis] --> E["Varias fuentes"]
->     D --> F["Estructura y voz propias del autor de la síntesis"]
->     D --> G["Contrasta ideas divergentes o complementarias"]
-> ```
+> ![[Diagramas/03_-_La_síntesis_de_múltiples_fuentes_01.svg]]
 >
 > La síntesis no es "pegar" resúmenes de cada fuente uno tras otro: es reorganizar el conocimiento de todas ellas alrededor de los propios ejes temáticos que el autor de la síntesis decide establecer.
 
@@ -29,16 +22,7 @@ dg-publish: true
 >
 > Elaborar una síntesis exige un proceso más complejo que resumir una sola fuente:
 >
-> ```mermaid
-> graph TD
->     A["Leer cada fuente por separado"] --> B["Identificar puntos de encuentro y desencuentro"]
->     B --> C{"¿Las ideas son complementarias o divergentes?"}
->     C -->|Complementarias| D["Integrarlas bajo un mismo eje temático"]
->     C -->|Divergentes| E["Presentar el contraste explícitamente"]
->     D --> F["Redactar el texto nuevo con estructura propia"]
->     E --> F
->     F --> G["Citar cada fuente en su aporte específico"]
-> ```
+> ![[Diagramas/03_-_La_síntesis_de_múltiples_fuentes_02.svg]]
 >
 
 > [!success]- ✅ Pautas para cada etapa
@@ -193,21 +177,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sintesis de Fuentes))
-    Resumen vs sintesis
-      Una fuente vs varias fuentes
-      Voz del autor vs voz propia
-    Proceso de integracion
-      Leer cada fuente por separado
-      Complementarias o divergentes
-      Ejes tematicos propios
-    Redaccion final
-      Estructura y voz propias
-      Citar cada aporte especifico
-      Evitar sintesis fuente por fuente
-```
+![[Diagramas/03_-_La_síntesis_de_múltiples_fuentes_03.svg]]
 
 > [!summary] 📋 Resumen ejecutivo
 >

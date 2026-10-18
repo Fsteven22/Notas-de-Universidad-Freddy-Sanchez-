@@ -10,14 +10,7 @@ dg-publish: true
 >
 > **Arquímedes** $r=a\theta$ (brazos equidistantes), **logarítmica** $r=ae^{b\theta}$ (ángulo radio-tangente constante, autosimilar), **hiperbólica** $r=a/\theta$ (asíntota), **Fermat** $r^2=a^2\theta$.
 >
-> ```mermaid
-> graph LR
->     A["r=a t<br/>Arquímedes"] --> B["r=ae bt<br/>logarítmica"]
->     B --> C["r=a/t<br/>hiperbólica"]
->     C --> D["r2=a2 t<br/>Fermat"]
->     style A fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/09_-_Espirales_en_coordenadas_polares_01.svg]]
 
 ![[U6-espirales.png]]
 

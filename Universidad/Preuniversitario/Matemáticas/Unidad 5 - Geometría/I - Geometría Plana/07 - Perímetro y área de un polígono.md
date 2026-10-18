@@ -10,15 +10,7 @@ dg-publish: true
 >
 > El **perímetro** suma lados ($P=\sum L_i$) y el **área** cuenta superficie: fórmulas directas en regulares ($P=na$, $A=P\cdot ap/2$), **shoelace** con vértices y **Pick** en retículas ($A=I+B/2-1$).
 >
-> ```mermaid
-> graph LR
->     A["Polígono"] --> B{"Datos?"}
->     B -->|Regular| C["P=na<br/>A=P·ap/2"]
->     B -->|Vértices| D["Shoelace"]
->     B -->|Retícula| E["Pick"]
->     style C fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/07_-_Perímetro_y_área_de_un_polígono_01.svg]]
 
 ![[U5-pick.png]]
 

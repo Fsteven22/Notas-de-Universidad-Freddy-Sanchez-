@@ -245,21 +245,7 @@ dg-publish: true
 > [!note] Visualización del Espacio Columna
 > **En $\mathbb{R}^3$:**
 > 
-> ```mermaid
-> graph TD
->     A[Matriz A: 3×2] --> B[Col A es subespacio de ℝ³]
->     B --> C{Rango de A}
->     C -->|rank = 2| D[Plano por el origen]
->     C -->|rank = 1| E[Recta por el origen]
->     C -->|rank = 0| F[Solo el origen]
->     D --> G[2 columnas LI]
->     E --> H[Columnas paralelas]
->     F --> I[Matriz cero]
->     style B fill:#e1f5ff
->     style D fill:#c8e6c9
->     style E fill:#fff9c4
->     style F fill:#ffccbc
-> ```
+> ![[Diagramas/05_–_Espacio_columna_01.svg]]
 > 
 > **Casos visuales:**
 > 
@@ -319,25 +305,7 @@ dg-publish: true
 > 
 > **Relaciones de ortogonalidad:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "ℝⁿ (dominio)"
->         A[Row A<br/>dim = r]
->         B[Nul A<br/>dim = n-r]
->     end
->     subgraph "ℝᵐ (codominio)"
->         C[Col A<br/>dim = r]
->         D[Nul Aᵀ<br/>dim = m-r]
->     end
->     A -.ortogonal.- B
->     C -.ortogonal.- D
->     A -->|A mapea| C
->     B -->|A aniquila| E[0⃗]
->     style A fill:#c8e6c9
->     style B fill:#ffccbc
->     style C fill:#c8e6c9
->     style D fill:#ffccbc
-> ```
+> ![[Diagramas/05_–_Espacio_columna_02.svg]]
 > 
 > **Teorema de la dimensión:**
 > 

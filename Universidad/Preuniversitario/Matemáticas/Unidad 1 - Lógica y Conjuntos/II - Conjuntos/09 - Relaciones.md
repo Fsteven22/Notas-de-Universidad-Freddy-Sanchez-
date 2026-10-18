@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $R\subseteq A\times A$ con propiedades (reflexiva, simétrica, transitiva): equivalencia (R+S+T) parte en clases; orden parcial (R+A+T) dibuja Hasse. La matriz y el dígrafo la muestran.
 >
-> ```mermaid
-> graph LR
->     A["R subset<br/>AxA"] --> B["R+S+T<br/>equiv"]
->     B --> C["R+A+T<br/>orden"]
->     C --> D["Clases<br/>Hasse"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/09_-_Relaciones_01.svg]]
 
 ---
 

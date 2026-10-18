@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Puntos $(x,f(x))$ con esqueleto (interceptos, simetría, asíntotas) + checklist de 6 pasos + transformaciones $f(x-h)+k$: el esqueleto dice dónde, las transformaciones mueven el dibujo hecho.
 >
-> ```mermaid
-> graph LR
->     A["Puntos<br/>(x,f(x))"] --> B["Esqueleto<br/>inter/sim/as"]
->     B --> C["Checklist<br/>6 pasos"]
->     C --> D["Transforma<br/>h,k"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Representación_gráfica_01.svg]]
 
 ---
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Razón $a:b$ (comparación) y proporción $a/b=c/d$ (igualdad, $ad=bc$): directa ($y=kx$) o inversa ($xy=k$). Porcentajes, escalas, mezclas e interés son proporciones disfrazadas.
 >
-> ```mermaid
-> graph LR
->     A["a:b<br/>razón"] --> B["a/b=c/d<br/>proporción"]
->     B --> C["Directa<br/>y=kx"]
->     C --> D["Inversa<br/>xy=k"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/08_-_Razones_y_proporciones_01.svg]]
 
 ---
 

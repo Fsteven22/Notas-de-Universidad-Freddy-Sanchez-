@@ -26,26 +26,7 @@ dg-publish: true
 > |**Aplicaciones**|Resolver sistemas, ecuaciones diferenciales|Diagonalización|
 > |**Comprensión**|Ver transformación desde mejor ángulo|Intuición geométrica|
 
-```mermaid
-graph TB
-    A[Matrices Semejantes] --> B[Misma Transformación]
-    B --> C[Diferentes Bases]
-    
-    A --> D[Propiedades Compartidas]
-    D --> E[Mismo determinante]
-    D --> F[Misma traza]
-    D --> G[Mismos valores propios]
-    D --> H[Mismo rango]
-    
-    A --> I[Aplicaciones]
-    I --> J[Diagonalización]
-    I --> K[Forma de Jordan]
-    I --> L[Clasificación]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/05_–_Matriz_semejante_01.svg]]
 
 ---
 
@@ -74,17 +55,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Vector v<br/>en base estándar] -->|A| B[Av<br/>transformado<br/>base estándar]
->     C[Vector v'<br/>en nueva base] -->|B| D[Bv'<br/>transformado<br/>nueva base]
->     A -->|P⁻¹| C
->     B -->|P⁻¹| D
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Matriz_semejante_02.svg]]
 
 ### 🔄 Transformación de Semejanza
 
@@ -115,17 +86,7 @@ graph TB
 > 
 > **Secuencia de operaciones:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Base original] -->|P⁻¹| B[Nueva base]
->     B -->|Aplicar A<br/>como B| C[Transformación]
->     C -->|P| D[Regresar a<br/>base original]
->     A -.->|Directamente<br/>aplicar A| D
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Matriz_semejante_03.svg]]
 
 ---
 
@@ -186,18 +147,7 @@ graph TB
 > 
 > **Resumen visual:**
 > 
-> ```mermaid
-> graph TB
->     A[Relación de Equivalencia]
->     A --> B[Reflexiva<br/>A ~ A]
->     A --> C[Simétrica<br/>A ~ B ⟹ B ~ A]
->     A --> D[Transitiva<br/>A ~ B, B ~ C ⟹ A ~ C]
->     B --> E[Particiona matrices<br/>en clases de equivalencia]
->     C --> E
->     D --> E
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Matriz_semejante_04.svg]]
 
 ### 🔢 Invariantes de Semejanza
 
@@ -268,24 +218,7 @@ graph TB
 > |**Vectores propios**|$\mathbf{v}_i$|❌ NO (cambian)|
 > |**Entradas de matriz**|$a_{ij}$|❌ NO (cambian)|
 
-```mermaid
-graph TB
-    A[Matrices Semejantes<br/>A ~ B] --> B[Invariantes]
-    A --> C[Variables]
-    
-    B --> D[det A = det B]
-    B --> E[tr A = tr B]
-    B --> F[rango A = rango B]
-    B --> G[Valores propios iguales]
-    B --> H[p_A λ = p_B λ]
-    
-    C --> I[Entradas diferentes]
-    C --> J[Vectores propios diferentes]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#ffe1e1
-```
+![[Diagramas/05_–_Matriz_semejante_05.svg]]
 
 ---
 
@@ -434,18 +367,7 @@ graph TB
 > 
 > **Proceso de diagonalización:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A] --> B[Calcular valores propios]
->     B --> C[Encontrar vectores propios]
->     C --> D{¿n vectores<br/>independientes?}
->     D -->|Sí| E[Formar P con vectores propios]
->     D -->|No| F[NO diagonalizable]
->     E --> G[D = P⁻¹AP<br/>diagonal]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/05_–_Matriz_semejante_06.svg]]
 
 ### 📐 Ejemplo Completo de Diagonalización
 
@@ -600,33 +522,7 @@ graph TB
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Matrices<br/>Semejantes))
-    Definición
-      B = P⁻¹AP
-      P invertible
-      Misma transformación
-    Propiedades
-      Relación equivalencia
-        Reflexiva
-        Simétrica
-        Transitiva
-      Invariantes
-        Determinante
-        Traza
-        Valores propios
-        Rango
-    Diagonalización
-      Caso especial
-      n vectores propios
-      P con vectores
-      D con valores
-    Aplicaciones
-      Potencias Aⁿ
-      Ecuaciones difer.
-      Simplificación
-```
+![[Diagramas/05_–_Matriz_semejante_07.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -741,22 +637,7 @@ mindmap
 > 
 > **Progresión natural:**
 > 
-> ```mermaid
-> graph LR
->     A[Matrices Semejantes] --> B[Forma de Jordan]
->     A --> C[Diagonalización]
->     A --> D[Teorema Espectral]
->     B --> E[Bloques de Jordan]
->     C --> F[Aplicaciones EDO]
->     D --> G[Matrices simétricas]
->     E --> H[Clasificación completa]
->     F --> H
->     G --> H
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/05_–_Matriz_semejante_08.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

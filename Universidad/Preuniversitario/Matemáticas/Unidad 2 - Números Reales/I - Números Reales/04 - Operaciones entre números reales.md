@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Suma/resta por signos, producto/cociente por fracciones, PEMDAS para el orden, y potencias/radicales con sus leyes: extraer factores ($\sqrt{75}=5\sqrt3$) y racionalizar dejan todo exacto.
 >
-> ```mermaid
-> graph LR
->     A["+ -<br/>signos"] --> B["x /<br/>fracciones"]
->     B --> C["PEMDAS<br/>orden"]
->     C --> D["Pot/rad<br/>leyes"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Operaciones_entre_números_reales_01.svg]]
 
 ![[U2-operaciones.png]]
 

@@ -11,11 +11,7 @@ dg-publish: true
 >
 > Además de la concordancia, toda redacción efectiva se apoya en tres propiedades fundamentales —adecuación, coherencia y cohesión— y en tres criterios académicos —precisión, claridad y concisión— que transforman ideas dispersas en textos comprensibles, rigurosos y persuasivos. Esta nota conserva el núcleo normativo de concordancia y organiza las propiedades, los formatos académicos y las normas de citación.
 >
-> ```mermaid
-> graph LR
->     A[Ideas del autor] --> B[Texto claro y efectivo]
->     B --> C[Lector comprende el mensaje]
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_redacción_y_textos_académicos_01.svg]]
 
 ---
 
@@ -310,45 +306,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Propiedades de redaccion))
-    Propiedades basicas
-      Adecuacion
-        Contexto
-        Receptor
-        Registros
-      Coherencia
-        Sentido logico
-        Secuencias
-        Tema central
-      Cohesion
-        Conectores
-        Pronombres
-        Sinonimos
-    Criterios academicos
-      Precision lexica
-      Claridad
-      Concision
-    Formatos
-      Resumen
-      Informe
-      Monografia
-      Tesis
-      Ensayo
-    Citacion
-      APA autor fecha
-      IEEE numerica
-    Concordancia
-      Numero
-      Genero
-      Persona
-      Tiempo verbal
-    Revision
-      Voz alta
-      Por tipos
-      Inversa
-```
+![[Diagramas/02_-_Propiedades_de_la_redacción_y_textos_académicos_02.svg]]
 
 ---
 

@@ -13,14 +13,7 @@ dg-publish: true
 >
 > Dominar este registro es lo que separa un trabajo aprobado de un trabajo destacado. Es la herramienta con la que participas en la conversación universitaria.
 >
-> ```mermaid
-> graph LR
->     A[Experiencia y opinion] --> B[Texto academico]
->     B --> C[Rigor y evidencia]
->     B --> D[Estructura clara]
->     C --> E[Conocimiento universitario]
->     D --> E
-> ```
+> ![[Diagramas/02_-_El_texto_académico_01.svg]]
 
 ---
 
@@ -280,38 +273,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Texto academico))
-    Definicion
-      Escritura formal universitaria
-      Expone y demuestra
-      Audiencia especializada
-    Rasgos esenciales
-      Rigor
-        Datos exactos
-        Fuentes verificables
-      Formalidad
-        Tercera persona
-        Vocabulario preciso
-      Objetividad
-        Evidencia
-        Matices prudentes
-      Estructura
-        Introduccion
-        Desarrollo
-        Conclusion
-    Errores frecuentes
-      Primera persona
-      Muletillas
-      Falta de citas
-      Parrafo sin idea
-    Generos
-      Resumen
-      Informe
-      Ensayo
-      Monografia
-```
+![[Diagramas/02_-_El_texto_académico_02.svg]]
 
 ---
 

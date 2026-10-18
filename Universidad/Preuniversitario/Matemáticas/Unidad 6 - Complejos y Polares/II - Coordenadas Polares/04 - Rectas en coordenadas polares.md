@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Recta: $r\cos(\theta-\alpha)=d$ (normal $(d,\alpha)$; multiplica el denominador y cae $Ax+By=C$). Círculo por el polo: $r=2a\cos\theta$ (centro $(a,0)$) o $r=2a\sin\theta$ (el coeficiente ya es el diámetro).
 >
-> ```mermaid
-> graph LR
->     A["Normal<br/>(d,a)"] --> B["Recta<br/>r cos=d"]
->     B --> C["Círculo<br/>r=2a cos"]
->     C --> D["Centro<br/>radio=a"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Rectas_en_coordenadas_polares_01.svg]]
 
 ![[U6-rectapolar.png]]
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Puntos $(x,y)$ con distancia $d=\sqrt{\Delta x^2+\Delta y^2}$ y **rectas** en sus formas (punto-pendiente, general, simétrica): con pendiente $m$, posiciones relativas y distancias se decide todo sin dibujar.
 >
-> ```mermaid
-> graph LR
->     A["Puntos<br/>(x,y)"] --> B["Recta<br/>Ax+By=C"]
->     B --> C["Pendiente<br/>m=dy/dx"]
->     C --> D["Posición<br/>paralela/perp"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Puntos_y_rectas_01.svg]]
 
 ---
 

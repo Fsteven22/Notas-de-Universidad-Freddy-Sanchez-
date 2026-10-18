@@ -12,15 +12,7 @@ dg-publish: true
 >
 > El **parafraseo** es el mecanismo de **reformular una idea con palabras y sintaxis propias**, sin necesariamente reducir su extensión. A diferencia del resumen —que condensa y conserva la terminología del autor (ver [[01 - El resumen académico]])—, el parafraseo puede mantener una extensión similar a la del original, pero cambia por completo la forma de expresarlo.
 >
-> ```mermaid
-> graph TD
->     A[Texto original] --> B[Resumen]
->     A --> C[Parafraseo]
->     B --> D["Reduce extensión (25%-30%)"]
->     B --> E["Conserva terminología del autor"]
->     C --> F["Extensión similar al original"]
->     C --> G["Cambia palabras y sintaxis propias"]
-> ```
+> ![[Diagramas/02_-_Técnicas_de_parafraseo_y_citación_01.svg]]
 
 ---
 
@@ -190,21 +182,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Parafraseo y Citacion))
-    Parafraseo
-      Reformula con palabras propias
-      Extension similar al original
-    Directrices de estilo
-      Uso de sinonimos
-      Reestructuracion gramatical
-      Omision de comillas
-    Integridad academica
-      Citar siempre la fuente
-      Normas APA e IEEE
-      Evitar plagio conceptual
-```
+![[Diagramas/02_-_Técnicas_de_parafraseo_y_citación_02.svg]]
 
 > [!summary] 📋 Resumen ejecutivo
 >

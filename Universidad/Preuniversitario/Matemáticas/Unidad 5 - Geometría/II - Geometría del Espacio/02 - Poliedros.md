@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Poliedros (caras planas: Euler $V-A+C=2$, 5 regulares, prismas y pirámides) y redondos (cilindro, cono, esfera: girar un perfil los genera, y Pappus da volúmenes girando áreas).
 >
-> ```mermaid
-> graph LR
->     A["Caras<br/>planas"] --> B["Euler<br/>V-A+C=2"]
->     B --> C["Prisma<br/>pirámide"]
->     C --> D["Gira<br/>redondos"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Poliedros_01.svg]]
 
 ![[U5-solidos.png]]
 

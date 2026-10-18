@@ -10,14 +10,7 @@ dg-publish: true
 >
 > La región entre dos semirrectas con vértice común, medida en **grados** ($360°$ la vuelta) o **radianes** ($2\pi$ la vuelta, $180°=\pi$). Se clasifica por magnitud (agudo/recto/obtuso), por posición (adyacentes/opuestos) y cumple leyes en triángulos, polígonos y circunferencias.
 >
-> ```mermaid
-> graph LR
->     A["Dos rayos<br/>vértice común"] --> B["Medida<br/>grados/rad"]
->     B --> C["Clasifica<br/>magnitud/posición"]
->     C --> D["Leyes<br/>triángulo/polígono"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Ángulos_01.svg]]
 
 ![[U5-angulos.png]]
 

@@ -13,13 +13,7 @@ dg-publish: true
 >
 > En esta nota estudiarás la **tríada fundamental** de la tipología textual por intención: textos **narrativos**, **expositivos** y **argumentativos**. Aprenderás a reconocerlos, a describir su estructura interna y a aplicar la distinción más importante de la lectura crítica: **hecho verificable frente a opinión**.
 >
-> ```mermaid
-> graph LR
->     A[Intencion del autor] --> B[Estructura del texto]
->     B --> C[Efecto en el lector]
->     A --> D[Tipo narrativo expositivo argumentativo]
->     D --> B
-> ```
+> ![[Diagramas/01_-_Tipos_de_texto_según_su_intención_01.svg]]
 
 ---
 
@@ -63,14 +57,7 @@ dg-publish: true
 > - **Nudo:** qué conflicto rompe el equilibrio. Es el centro más extenso.
 > - **Desenlace:** cómo se resuelve el conflicto y qué estado final queda.
 >
-> ```mermaid
-> graph LR
->     A[Presentacion] --> B[Nudo]
->     B --> C[Desenlace]
->     A --> D[Marco y personajes]
->     B --> E[Conflicto y climax]
->     C --> F[Resolucion final]
-> ```
+> ![[Diagramas/01_-_Tipos_de_texto_según_su_intención_02.svg]]
 >
 > |Parte|Contenido|Marcas textuales|Ejemplo breve|
 > |---|---|---|---|
@@ -87,14 +74,7 @@ dg-publish: true
 > - **Desarrollo:** explica con definiciones, clasificaciones, causas, datos y ejemplos.
 > - **Conclusión:** sintetiza lo esencial y cierra sin agregar información nueva.
 >
-> ```mermaid
-> graph LR
->     A[Introduccion] --> B[Desarrollo]
->     B --> C[Conclusion]
->     A --> D[Tema y objetivo]
->     B --> E[Hechos datos y ejemplos]
->     C --> F[Sintesis final]
-> ```
+> ![[Diagramas/01_-_Tipos_de_texto_según_su_intención_03.svg]]
 >
 > |Parte|Función|Recursos típicos|Pregunta guía|
 > |---|---|---|---|
@@ -111,14 +91,7 @@ dg-publish: true
 > - **Argumentos:** razones, evidencias, ejemplos y autoridad que la sostienen. Incluye anticipación de objeciones.
 > - **Conclusión:** reafirmación de la tesis y llamado a aceptar o actuar.
 >
-> ```mermaid
-> graph LR
->     A[Tesis] --> B[Argumentos]
->     B --> C[Conclusion]
->     A --> D[Postura central]
->     B --> E[Evidencia y refutacion]
->     C --> F[Reafirmacion y llamado]
-> ```
+> ![[Diagramas/01_-_Tipos_de_texto_según_su_intención_04.svg]]
 >
 > |Parte|Contenido|Marcas textuales|Ejemplo breve|
 > |---|---|---|---|
@@ -380,26 +353,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Tipos de texto segun su intencion))
-    Narrativo
-      Cuenta sucesos en el tiempo
-      Presentacion nudo desenlace
-      Verbos de accion y cronologia
-    Expositivo
-      Explica hechos objetivos
-      Introduccion desarrollo conclusion
-      Definiciones datos y sintesis
-    Argumentativo
-      Defiende una tesis
-      Tesis argumentos conclusion
-      Persuasion con evidencia
-    Lectura critica
-      Hecho comprobable con datos
-      Opinion con juicio de valor
-      Test de cuatro preguntas
-```
+![[Diagramas/01_-_Tipos_de_texto_según_su_intención_05.svg]]
 
 ---
 

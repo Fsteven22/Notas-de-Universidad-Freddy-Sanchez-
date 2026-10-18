@@ -19,16 +19,7 @@ dg-publish: true
 > - La **norma** es usar esa regla para medir la longitud de una flecha
 > - La **distancia** es usar esa regla para medir cuán separados están dos puntos
 > 
-> ```mermaid
-> graph LR
->     A[Producto Interno<br/>⟨·,·⟩] --> B[Norma<br/>‖·‖]
->     B --> C[Distancia<br/>d·,·]
->     A -.->|También define| D[Ángulo<br/>θ]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_01.svg]]
 > 
 > **Jerarquía de estructuras:**
 > 
@@ -55,16 +46,7 @@ dg-publish: true
 > 
 > La norma $|\mathbf{v}|$ representa la **longitud** o **magnitud** del vector $\mathbf{v}$.
 > 
-> ```mermaid
-> graph TD
->     A[Vector v] --> B[Producto interno<br/>consigo mismo]
->     B --> C[⟨v, v⟩]
->     C --> D[Raíz cuadrada]
->     D --> E[‖v‖ = √⟨v,v⟩<br/>Longitud]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_02.svg]]
 > 
 > **Notación:**
 > 
@@ -86,22 +68,7 @@ dg-publish: true
 > 
 > **Verificación de axiomas:**
 > 
-> ```mermaid
-> graph TD
->     A[Norma ‖·‖ inducida] --> B[N1: ‖v‖ ≥ 0]
->     A --> C[N2: ‖v‖ = 0 ⟺ v = 0]
->     A --> D[N3: ‖αv‖ = |α|‖v‖]
->     A --> E[N4: ‖u+v‖ ≤ ‖u‖ + ‖v‖]
->     B --> F[✅ De PI3]
->     C --> G[✅ De PI4]
->     D --> H[✅ De PI1]
->     E --> I[✅ De Cauchy-Schwarz]
->     style A fill:#e1ffe1
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#e1ffe1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_03.svg]]
 
 ### 📊 Demostración de Propiedades
 
@@ -171,16 +138,7 @@ dg-publish: true
 > - En $\mathbb{R}^2$: Es la longitud de la hipotenusa (Teorema de Pitágoras)
 > - En $\mathbb{R}^3$: Es la diagonal del paralelepípedo
 > 
-> ```mermaid
-> graph TD
->     A[Vector v = ·3, 4] --> B[Componente x: 3]
->     A --> C[Componente y: 4]
->     B --> D[Triángulo rectángulo]
->     C --> D
->     D --> E[Hipotenusa = ‖v‖ = 5]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_04.svg]]
 > 
 > **Casos especiales:**
 > 
@@ -331,14 +289,7 @@ dg-publish: true
 > 
 > La distancia $d(\mathbf{u}, \mathbf{v})$ es la longitud del vector diferencia $\mathbf{u} - \mathbf{v}$.
 > 
-> ```mermaid
-> graph TD
->     A[Vectores u y v] --> B[Diferencia u - v]
->     B --> C[Norma de la diferencia]
->     C --> D[d·u,v = ‖u - v‖]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_05.svg]]
 > 
 > **Expandiendo la definición:**
 > 
@@ -359,18 +310,7 @@ dg-publish: true
 > 
 > **Verificación de axiomas:**
 > 
-> ```mermaid
-> graph TD
->     A[Distancia d·,·] --> B[M1: d·u,v ≥ 0]
->     A --> C[M2: d·u,v = 0 ⟺ u = v]
->     A --> D[M3: d·u,v = d·v,u]
->     A --> E[M4: Desigualdad triangular]
->     B --> F[✅ De N1]
->     C --> G[✅ De N2]
->     D --> H[✅ De simetría de ‖·‖]
->     E --> I[✅ De N4]
->     style A fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_06.svg]]
 
 ### 📊 Demostración de Propiedades
 
@@ -607,19 +547,7 @@ dg-publish: true
 > 
 > ### En $\mathbb{R}^2$
 > 
-> ```mermaid
-> graph TD
->     A[Punto u = ·3,2] --> B[Norma ‖u‖]
->     B --> C[Radio desde origen<br/>‖u‖ = √13]
->     D[Punto v = ·1,4] --> E[Norma ‖v‖]
->     E --> F[Radio desde origen<br/>‖v‖ = √17]
->     A --> G[Distancia d·u,v]
->     D --> G
->     G --> H[Línea recta u→v<br/>d·u,v = √8]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_07.svg]]
 > 
 > ### Bolas y Esferas
 > 
@@ -718,18 +646,7 @@ dg-publish: true
 > 
 > ### Jerarquía de Estructuras
 > 
-> ```mermaid
-> graph TD
->     A[Producto Interno] --> B[Norma]
->     B --> C[Distancia]
->     C --> D[Topología]
->     A -.->|Define| E[Ángulos]
->     B -.->|Define| F[Longitudes]
->     C -.->|Define| G[Cercanía]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_08.svg]]
 > 
 > ### Próximo Tema
 > 
@@ -764,19 +681,7 @@ dg-publish: true
 > |**Compresión de datos**|Estimar tamaños de representaciones|Algoritmos de compresión|
 > |**Geometría computacional**|Validar construcciones geométricas|Gráficos por computadora|
 
-```mermaid
-graph TD
-    A[Punto A] -->|"Distancia directa d(A,C)"| C[Punto C]
-    A -->|"d(A,B)"| B[Punto B]
-    B -->|"d(B,C)"| C
-    
-    Note1["d(A,C) ≤ d(A,B) + d(B,C)"]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style Note1 fill:#ffe1e1
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_09.svg]]
 
 ---
 
@@ -823,23 +728,7 @@ graph TD
 > |**ℝⁿ estándar**|\|\|u + v\|\|₂ ≤ \|
 > |**Números complejos**|\|z₁ + z₂\| ≤ \|z₁\| + \|z₂\||Complejos|Análisis complejo|
 
-```mermaid
-graph TB
-    A[Desigualdad Triangular] --> B[Espacios Normados]
-    A --> C[Espacios Métricos]
-    A --> D[Casos Específicos]
-    
-    B --> E["||u + v|| ≤ ||u|| + ||v||"]
-    C --> F["d(x,z) ≤ d(x,y) + d(y,z)"]
-    D --> G[ℝⁿ]
-    D --> H[ℂ]
-    D --> I[Funciones]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_10.svg]]
 
 ### 🔍 Interpretación Geométrica
 
@@ -853,17 +742,7 @@ graph TB
 > - B = (3, 4)
 > - C = (6, 0)
 > 
-> ```mermaid
-> graph LR
->     A["A(0,0)"] -->|"d(A,B) = 5"| B["B(3,4)"]
->     B -->|"d(B,C) = 5"| C["C(6,0)"]
->     A -.->|"d(A,C) = 6"| C
->     Note["6 ≤ 5 + 5<br/>6 ≤ 10 ✓"]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style Note fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_11.svg]]
 > 
 > **Cálculo de distancias:**
 > 
@@ -885,30 +764,7 @@ graph TB
 > 
 > **Visualización de casos:**
 
-```mermaid
-graph TD
-    subgraph "Caso 1: Igualdad (Colineales)"
-    A1[u] --> B1[u+v]
-    A1 --> C1[v]
-    C1 --> B1
-    end
-    
-    subgraph "Caso 2: Desigualdad estricta"
-    A2[u] --> B2[u+v]
-    A2 -.-> C2[v]
-    C2 -.-> B2
-    end
-    
-    subgraph "Caso 3: Vectores opuestos"
-    A3[u] --> B3[0]
-    A3 --> C3[-u]
-    C3 --> B3
-    end
-    
-    style B1 fill:#e1ffe1
-    style B2 fill:#fff4e1
-    style B3 fill:#ffe1e1
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_12.svg]]
 
 ---
 
@@ -989,22 +845,7 @@ graph TD
 > Por lo tanto, la desigualdad se cumple. ∎
 > 
 > **Flujo lógico de la demostración:**
-> ```mermaid
-> flowchart TD
->     A["Objetivo: ||u + v|| ≤ ||u|| + ||v||"] --> B[Elevar al cuadrado]
->     B --> C["||u + v||² ≤ ||u|| + ||v||²"]
->     C --> D[Expandir usando<br/>producto interno]
->     D --> E["||u||² + 2⟨u,v⟩ + ||v||²"]
->     D --> F["||u||² + 2||u||||v|| + ||v||²"]
->     E --> G[Simplificar]
->     F --> G
->     G --> H["⟨u,v⟩ ≤ ||u||||v||"]
->     H --> I[Aplicar<br/>Cauchy-Schwarz]
->     I --> J[Demostración<br/>completa ✓]
->     style A fill:#e1f5ff
->     style I fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_13.svg]]
 > **Caso de igualdad:**
 > 
 > La igualdad ||u + v|| = ||u|| + ||v|| se alcanza cuando:
@@ -1136,25 +977,7 @@ graph TD
 > |**Inversa**|\| \|\|u\|
 > |**n-dimensional**|d(x,z) ≤ Σd(xᵢ,xᵢ₊₁)|Caminos en grafos|
 
-```mermaid
-graph TD
-    A[Desigualdad Triangular] --> B[Forma Básica]
-    A --> C[Generalizaciones]
-    A --> D[Forma Inversa]
-    
-    B --> E[2 vectores]
-    C --> F[n vectores]
-    C --> G[Series infinitas]
-    D --> H[Diferencia de normas]
-    
-    F --> I[Inducción matemática]
-    G --> J[Convergencia]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_14.svg]]
 
 ### 🔄 Variantes Importantes
 
@@ -1209,19 +1032,7 @@ graph TD
 > |**Supremo**|C[a,b]|\|\|f+g\|
 > |**Matricial**|Mₙₓₙ(ℝ)|\|\|A+B\|
 
-```mermaid
-graph LR
-    A[Norma p=1<br/>Manhattan] --> B[Norma p=2<br/>Euclidiana]
-    B --> C[Norma p=∞<br/>Supremo]
-    
-    A -.-> D[Caminos en cuadrícula]
-    B -.-> E[Distancia en línea recta]
-    C -.-> F[Mayor diferencia]
-    
-    style B fill:#e1ffe1
-    style A fill:#fff4e1
-    style C fill:#e1f5ff
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_15.svg]]
 
 ---
 
@@ -1321,17 +1132,7 @@ graph LR
 > 
 > **3. Jerarquía de fuerza:**
 
-```mermaid
-graph TD
-    A[Desigualdad de Hölder] --> B[Desigualdad de Cauchy-Schwarz<br/>caso especial p=q=2]
-    B --> C[Desigualdad Triangular]
-    C --> D[Desigualdad de Minkowski<br/>generalización a normas p]
-    
-    style A fill:#ffe1e1
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#e1f5ff
-```
+![[Diagramas/02_–_Norma_inducida_y_distancia_16.svg]]
 
 ---
 
@@ -1739,17 +1540,7 @@ graph TD
 > 
 > **Conexión con otras desigualdades:**
 > 
-> ```mermaid
-> graph TD
->     A[Cauchy-Schwarz] --> B[Desigualdad Triangular]
->     B --> C[Minkowski]
->     B --> D[Espacios Métricos]
->     C --> E[Normas Lp]
->     D --> F[Topología]
->     style B fill:#e1ffe1
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_17.svg]]
 > 
 ---
 
@@ -1759,26 +1550,7 @@ graph TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Desigualdad<br/>Triangular))
->     Definición
->       Espacios normados
->       Espacios métricos
->       Casos especiales
->     Demostración
->       Cauchy-Schwarz
->       Producto interno
->       Casos de igualdad
->     Aplicaciones
->       Navegación
->       Machine Learning
->       Análisis numérico
->     Variantes
->       Inversa
->       Minkowski
->       Múltiples vectores
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_18.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1792,20 +1564,7 @@ graph TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Producto Interno] --> B[Cauchy-Schwarz]
->     B --> C[Desigualdad Triangular]
->     C --> D[Espacios Métricos]
->     D --> E[Topología]
->     C --> F[Minkowski]
->     F --> G[Espacios Lp]
->     C --> H[Optimización]
->     H --> I[Algoritmos de grafos]
->     style C fill:#e1ffe1
->     style B fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Norma_inducida_y_distancia_19.svg]]
 
 ---
 

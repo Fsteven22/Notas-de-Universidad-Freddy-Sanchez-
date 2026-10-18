@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Identidad, dominación, De Morgan, distributiva, absorción y condicional ($p\to q\equiv\lnot p\lor q$): simplifican fórmulas sin tablas. El método CLAVE (Conoce, Localiza, Aplica, Verifica, Expande) ordena el trabajo.
 >
-> ```mermaid
-> graph LR
->     A["Fórmula<br/>larga"] --> B["Localiza<br/>patrón"]
->     B --> C["Aplica<br/>ley"]
->     C --> D["Verifica<br/>tabla"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Propiedades_de_los_operadores_lógicos_01.svg]]
 
 ---
 

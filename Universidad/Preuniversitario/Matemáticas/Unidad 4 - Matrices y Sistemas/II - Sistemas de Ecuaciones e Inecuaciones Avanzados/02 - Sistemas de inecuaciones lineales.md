@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Un conjunto de desigualdades $ax+by\le c$ que deben cumplirse **a la vez**. Cada una define un **semiplano**; la solución es su **intersección**: la región factible (acotada, infinita, un punto o vacía). Sus vértices son la clave de la optimización lineal.
 >
-> ```mermaid
-> graph LR
->     A["Inecuaciones<br/>ax+by<=c"] --> B["Semiplanos<br/>frontera + lado"]
->     B --> C["Intersección<br/>región factible"]
->     C --> D["Vértices<br/>óptimo"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Sistemas_de_inecuaciones_lineales_01.svg]]
 
 ![[U4-factible.png]]
 

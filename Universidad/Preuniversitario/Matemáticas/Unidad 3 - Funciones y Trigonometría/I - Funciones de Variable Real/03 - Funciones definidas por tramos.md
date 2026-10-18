@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Reglas distintas según el intervalo ($|x|$, $\text{sgn}$, tarifas): se evalúa eligiendo el tramo del punto, y en las fronteras se decide continuidad comparando límites laterales con el valor.
 >
-> ```mermaid
-> graph LR
->     A["Punto x<br/>¿qué tramo?"] --> B["Evalúa<br/>regla local"]
->     B --> C["Frontera<br/>límites lat"]
->     C --> D["Continua<br/>si coinciden"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Funciones_definidas_por_tramos_01.svg]]
 
 ---
 

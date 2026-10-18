@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $\cup$ (o), $\cap$ (y), $-$ (quitar), $^c$ (complemento), $\triangle$ (o-exclusivo): cada una tiene su prueba de pertenencia ($x\in A\cup B\iff x\in A\lor x\in B$) y De Morgan las conecta.
 >
-> ```mermaid
-> graph LR
->     A["x en A<br/>x en B"] --> B["Union<br/>inter"]
->     B --> C["Dif<br/>compl"]
->     C --> D["De Morgan<br/>conecta"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Operaciones_entre_Conjuntos_01.svg]]
 
 ---
 

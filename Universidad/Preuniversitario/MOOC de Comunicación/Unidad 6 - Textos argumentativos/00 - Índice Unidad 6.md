@@ -10,12 +10,7 @@ dg-publish: true
 >
 > Servir como mapa de navegación y control de avance para la Unidad 6 del MOOC *Comunicación Efectiva*, dedicada a los textos argumentativos: su concepto y estructura, la formulación de tesis válidas, y el análisis/desmontaje crítico de argumentos.
 >
-> ```mermaid
-> graph LR
->     A[00 - Índice] --> B[01 - Concepto y estructura]
->     B --> C[02 - Formulación de la tesis]
->     C --> D[03 - Análisis y desmontaje]
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_6_01.svg]]
 
 ---
 

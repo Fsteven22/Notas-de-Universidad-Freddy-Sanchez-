@@ -10,16 +10,7 @@ dg-publish: true
 >
 > Esta unidad establece los fundamentos del razonamiento matemático en dos bloques: la **lógica proposicional** (proposiciones, conectores, clasificación semántica, estructuras formales, propiedades, razonamientos y demostraciones) y la **teoría de conjuntos** (tipos y cardinalidad, cuantificadores, operaciones, predicados, razonamientos cuantificados, producto cartesiano, relaciones y funciones). Siete notas de lógica más diez de conjuntos cubren el recorrido completo.
 >
-> ```mermaid
-> graph LR
->     A["Logica proposicional"] --> B["Conectores y clases"]
->     B --> C["Estructuras y propiedades"]
->     C --> D["Razonamientos y demostraciones"]
->     E["Conjuntos y cardinalidad"] --> F["Operaciones y propiedades"]
->     F --> G["Predicados y cuantificadores"]
->     G --> H["Relaciones y funciones"]
->     D --> G
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_1_01.svg]]
 
 ---
 

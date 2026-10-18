@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $f:D\to\mathbb{R}$ ($D\subseteq\mathbb{R}$) asigna a cada $x$ un único $y=f(x)$: el **dominio** son las entradas válidas, el **rango** las salidas alcanzadas, y la prueba vertical decide si una gráfica es función.
 >
-> ```mermaid
-> graph LR
->     A["Dominio<br/>D"] --> B["f<br/>regla"]
->     B --> C["Rango<br/>Im(f)"]
->     C --> D["Gráfica<br/>(x,f(x))"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Definición,_dominio_y_rango_01.svg]]
 
 ![[U3-01-dominio.png]]
 

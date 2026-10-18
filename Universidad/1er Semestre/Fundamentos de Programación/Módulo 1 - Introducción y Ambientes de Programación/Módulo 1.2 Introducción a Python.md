@@ -54,23 +54,7 @@ dg-publish: true
 > python mi_primer_programa.py
 > ```
 
-```mermaid
-graph TD
-    A["📝 Escribir código .py"] --> B["🐍 Intérprete Python"]
-    B --> C["🔄 Lectura línea por línea"]
-    C --> D["⚡ Traducción a lenguaje máquina"]
-    D --> E["💻 Ejecución inmediata"]
-    E --> F["📤 Resultado visible"]
-    
-    G["📋 Código fuente"] --> H["🔧 Compilador"]
-    H --> I["📦 Archivo ejecutable"]
-    I --> J["▶️ Ejecución"]
-    
-    style A fill:#e8f5e8
-    style F fill:#e1f5fe
-    style G fill:#fff3e0
-    style J fill:#fce4ec
-```
+![[Diagramas/Módulo_1.2_Introducción_a_Python_01.svg]]
 
 ## Analogía del Traductor Simultáneo 🗣️
 
@@ -156,32 +140,7 @@ graph TD
 > |🔧 **Automatización**|Scripts y tareas|Selenium, BeautifulSoup|
 > |🎮 **Juegos**|Desarrollo de videojuegos|Pygame|
 
-```mermaid
-mindmap
-    root((🐍 Python))
-        🌐 Desarrollo Web
-            Django
-            Flask
-            FastAPI
-        📊 Ciencia de Datos
-            Pandas
-            NumPy
-            Matplotlib
-        🤖 IA y ML
-            TensorFlow
-            PyTorch
-            Scikit-learn
-        🔧 Automatización
-            Selenium
-            Requests
-            OS Module
-        🎮 Juegos
-            Pygame
-            Arcade
-        💻 Desktop
-            Tkinter
-            PyQt
-```
+![[Diagramas/Módulo_1.2_Introducción_a_Python_02.svg]]
 
 ## Técnicas de Estudio Eficaces 🎓
 

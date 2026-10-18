@@ -10,14 +10,7 @@ dg-publish: true
 >
 > El conjunto $\{P:PF_1+PF_2=2a\}$ (suma constante a los focos): $x^2/a^2+y^2/b^2=1$ con $c^2=a^2-b^2$ y excentricidad $e=c/a$. El círculo es su caso $e=0$.
 >
-> ```mermaid
-> graph LR
->     A["Focos F1 F2<br/>suma 2a"] --> B["Eje mayor<br/>2a"]
->     B --> C["Eje menor<br/>2b"]
->     C --> D["Excentricidad<br/>e=c/a"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Elipse_01.svg]]
 
 ![[U5-elipse.png]]
 

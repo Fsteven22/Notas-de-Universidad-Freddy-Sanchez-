@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Letras + números + operaciones: monomios se suman por semejanza, notables se expanden de memoria ($(x+3)^2=x^2+6x+9$) y factorizar es el camino inverso — siempre con el dominio anotado al cancelar.
 >
-> ```mermaid
-> graph LR
->     A["Monomios<br/>semejantes"] --> B["Notables<br/>expande"]
->     B --> C["Factoriza<br/>invierte"]
->     C --> D["Simplifica<br/>dominio"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/07_-_Expresiones_algebraicas_01.svg]]
 
 ---
 

@@ -11,14 +11,7 @@ dg-publish: true
 >
 > Esas son **oraciones compuestas**: estructuras que combinan dos o más proposiciones (cada una con su propio verbo conjugado) unidas por un **nexo** o por yuxtaposición. Dominarlas es lo que te permite escribir párrafos fluidos, argumentar y no sonar "cortado" o repetitivo.
 >
-> ```mermaid
-> graph LR
->     A[Oracion simple<br/>un verbo conjugado] -->|Se combina con otra proposicion| B[Oracion compuesta]
->     B --> C[Dos o mas verbos conjugados<br/>unidos por un nexo]
->     style A fill:#ffe1e1
->     style B fill:#e1e1ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Oraciones_compuestas_01.svg]]
 >
 > > 📌 Esta nota te enseña el **único criterio** que nunca falla para distinguirlas (contar verbos conjugados), los dos grandes casos de sujetos y la diferencia entre **coordinación** y **subordinación**.
 
@@ -67,16 +60,7 @@ dg-publish: true
 
 > [!note] 🗺️ Cómo se ve una oración compuesta por dentro
 >
-> ```mermaid
-> graph LR
->     A[Oracion compuesta] --> B[Proposicion 1<br/>verbo conjugado 1]
->     A --> C[Nexo<br/>y, pero, que, porque]
->     A --> D[Proposicion 2<br/>verbo conjugado 2]
->     style A fill:#e1e1ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Oraciones_compuestas_02.svg]]
 >
 > |Parte|Ejemplo en *"María estudia porque quiere graduarse"*|
 > |---|---|
@@ -312,38 +296,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Oraciones compuestas))
-    Criterio
-      Dos o mas verbos conjugados
-      Uno solo es simple
-      Infinitivo no cuenta
-      Gerundio no cuenta
-      Participio no cuenta
-    Caso 1
-      Un solo sujeto
-      Varias acciones
-      Ejemplo Maria estudia y trabaja
-    Caso 2
-      Varios sujetos
-      Acciones distintas
-      Cada verbo con su sujeto
-    Coordinacion
-      Independientes
-      Nexos y o pero
-    Subordinacion
-      Dependientes
-      Nexos porque aunque cuando que
-    Yuxtaposicion
-      Sin nexo visible
-      Solo coma o punto y coma
-    Metodo
-      Subrayar verbos
-      Descartar no conjugados
-      Localizar nexo
-      Clasificar
-```
+![[Diagramas/02_-_Oraciones_compuestas_03.svg]]
 
 ---
 

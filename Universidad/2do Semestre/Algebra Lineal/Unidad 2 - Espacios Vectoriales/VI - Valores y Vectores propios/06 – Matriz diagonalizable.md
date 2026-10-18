@@ -26,28 +26,7 @@ dg-publish: true
 > |**Comprensión**|Ver estructura esencial|Análisis de transformaciones|
 > |**Estabilidad**|Análisis de comportamiento|Sistemas dinámicos|
 
-```mermaid
-graph TB
-    A[Matriz Diagonalizable] --> B[Ventajas]
-    A --> C[Requisitos]
-    A --> D[Proceso]
-    
-    B --> E[Cálculo A^n fácil]
-    B --> F[Resolver EDOs]
-    B --> G[Análisis simplificado]
-    
-    C --> H[n valores propios]
-    C --> I[n vectores independientes]
-    
-    D --> J[Encontrar λ]
-    D --> K[Encontrar v]
-    D --> L[Formar P y D]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-```
+![[Diagramas/06_–_Matriz_diagonalizable_01.svg]]
 
 ---
 
@@ -132,24 +111,7 @@ graph TB
 > Por tanto: A = PDP⁻¹ ✓
 > ```
 
-```mermaid
-flowchart TD
-    A[Matriz A n×n] --> B{¿Diagonalizable?}
-    
-    B -->|Sí| C[Tiene n vectores propios<br/>linealmente independientes]
-    B -->|No| D[No tiene suficientes<br/>vectores propios]
-    
-    C --> E[Formar P con vectores propios]
-    E --> F[D = P⁻¹AP diagonal]
-    
-    D --> G[No existe descomposición<br/>A = PDP⁻¹]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style F fill:#e1ffe1
-    style D fill:#ffe1e1
-    style G fill:#ffe1e1
-```
+![[Diagramas/06_–_Matriz_diagonalizable_02.svg]]
 
 ---
 
@@ -235,22 +197,7 @@ flowchart TD
 > A NO es diagonalizable. ❌
 > ```
 
-```mermaid
-flowchart TD
-    A[Analizar Matriz A] --> B[Calcular valores propios]
-    B --> C{¿Todos distintos?}
-    
-    C -->|Sí| D[✅ Diagonalizable]
-    C -->|No| E[Calcular multiplicidades]
-    
-    E --> F{Para cada λ:<br/>mult.geom = mult.alg?}
-    
-    F -->|Sí para todos| D
-    F -->|No para alguno| G[❌ NO diagonalizable]
-    
-    style D fill:#e1ffe1
-    style G fill:#ffe1e1
-```
+![[Diagramas/06_–_Matriz_diagonalizable_03.svg]]
 
 ---
 
@@ -303,25 +250,7 @@ flowchart TD
 > 
 > Calcular $PD$ y $AP$, verificar que son iguales.
 
-```mermaid
-flowchart TD
-    A[Inicio] --> B[Calcular p λ = det A-λI]
-    B --> C[Encontrar raíces λ₁, ..., λₖ]
-    C --> D[Para cada λᵢ]
-    D --> E[Resolver A-λᵢI v = 0]
-    E --> F[Base de E_λᵢ]
-    F --> G{¿Más valores propios?}
-    G -->|Sí| D
-    G -->|No| H{∑ dim E_λᵢ = n?}
-    H -->|No| I[❌ NO diagonalizable]
-    H -->|Sí| J[Formar P con vectores propios]
-    J --> K[Formar D con valores propios]
-    K --> L[✅ A = PDP⁻¹]
-    
-    style A fill:#e1f5ff
-    style L fill:#e1ffe1
-    style I fill:#ffe1e1
-```
+![[Diagramas/06_–_Matriz_diagonalizable_04.svg]]
 
 ### 💡 Ejemplo Completo 2×2
 
@@ -635,32 +564,7 @@ flowchart TD
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Matriz<br/>Diagonalizable))
-    Definición
-      A = PDP⁻¹
-      D diagonal
-      P invertible
-    Condiciones
-      n vectores propios l.i.
-      Valores distintos → diagonalizable
-      mult.geom = mult.alg
-    Proceso
-      Calcular λᵢ
-      Encontrar vᵢ
-      Formar P y D
-      Verificar
-    Aplicaciones
-      Potencias Aⁿ
-      EDOs lineales
-      Cadenas de Markov
-      Análisis estabilidad
-    No diagonalizable
-      mult.geom < mult.alg
-      Forma de Jordan
-      Bloques nilpotentes
-```
+![[Diagramas/06_–_Matriz_diagonalizable_05.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -784,22 +688,7 @@ mindmap
 > 
 > **Progresión natural:**
 > 
-> ```mermaid
-> graph LR
->     A[Matriz Diagonalizable] --> B[Formas Canónicas]
->     A --> C[Diagonalización Ortogonal]
->     A --> D[Descomposición SVD]
->     B --> E[Forma de Jordan]
->     C --> F[Teorema Espectral]
->     D --> G[Análisis de Datos]
->     E --> H[Clasificación completa]
->     F --> H
->     G --> H
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/06_–_Matriz_diagonalizable_06.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

@@ -22,21 +22,7 @@ dg-publish: true
 > |**Gráficos**|Análisis de componentes principales|Reducción de dimensionalidad|
 > |**Mecánica cuántica**|Estados estacionarios|Niveles de energía|
 
-```mermaid
-graph TB
-    A[Matriz A] --> B[Valores propios λ]
-    B --> C[Vector propio v]
-    C --> D[Espacio propio E_λ]
-    D --> E[Subespacios invariantes]
-    
-    F[Aplicaciones] --> G[Diagonalización]
-    F --> H[Sistemas dinámicos]
-    F --> I[PCA]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style F fill:#fff4e1
-```
+![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_01.svg]]
 
 ---
 ## 🏗️ Definición de Espacio Propio
@@ -69,22 +55,7 @@ graph TB
 > 
 > **Verificación de subespacio:**
 > 
-> ```mermaid
-> graph TD
->     A["E_λ = Nul(A - λI)"] --> B[¿Contiene 0?]
->     B -->|Sí: A0 = λ0| C[✓]
->     A --> D[¿Cerrado bajo suma?]
->     D -->|v₁,v₂ ∈ E_λ| E["A(v₁+v₂) = λ(v₁+v₂)?"]
->     E -->|Sí| F[✓]
->     A --> G[¿Cerrado bajo mult. escalar?]
->     G -->|v ∈ E_λ, c ∈ ℝ| H["A(cv) = λ(cv)?"]
->     H -->|Sí| I[✓]
->     C --> J[E_λ es subespacio]
->     F --> J
->     I --> J
->     style A fill:#e1f5ff
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_02.svg]]
 
 ### 🔧 Cálculo de Espacios Propios
 
@@ -150,16 +121,7 @@ graph TB
 > 
 > **Interpretación geométrica (2D):**
 > 
-> ```mermaid
-> graph LR
->     A[Plano ℝ²] --> B[E₄: recta y = x]
->     A --> C[E₂: recta y = -x]
->     B --> D[Vectores se estiran 4×]
->     C --> E[Vectores se estiran 2×]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_03.svg]]
 
 ---
 ## 🎓 Propiedades de los Espacios Propios
@@ -227,22 +189,7 @@ graph TB
 > - **Columnas de P:** vectores propios de A
 > - **Diagonal de D:** valores propios correspondientes
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A] --> B[Calcular valores propios]
->     B --> C[Calcular espacios propios]
->     C --> D{Σ dim(E_λᵢ) = n?}
->     D -->|Sí| E[A es diagonalizable]
->     D -->|No| F[A NO es diagonalizable]
->     E --> G[Formar P con vectores propios]
->     E --> H[Formar D con valores propios]
->     G --> I[A = PDP⁻¹]
->     H --> I
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
->     style I fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_04.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -330,30 +277,7 @@ graph TB
 
 > [!note] 📐 Mapa Conceptual
 > 
-> ```mermaid
-> mindmap
->   root((Espacios<br/>Propios))
->     Valores propios λ
->       Ecuación característica
->       det(A - λI) = 0
->       Raíces del polinomio
->     Vectores propios v
->       Av = λv
->       v ≠ 0
->       Dirección invariante
->     Espacio propio E_λ
->       Subespacio
->       E_λ = Nul(A - λI)
->       dim(E_λ) ≥ 1
->     Multiplicidades
->       Algebraica MA
->       Geométrica MG  
->       1 ≤ MG ≤ MA
->     Aplicaciones
->       Diagonalización
->       Potencias de matrices
->       Sistemas dinámicos
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_05.svg]]
 > 
 > **Tabla de fórmulas clave:**
 > 
@@ -449,26 +373,7 @@ graph TB
 > |**Sistemas dinámicos**|Comportamiento a largo plazo|Estabilidad de soluciones|
 > |**Dimensión**|Contar vectores propios independientes|Bases de espacios propios|
 
-```mermaid
-graph TB
-    A[Valor propio λ] --> B[Multiplicidad Algebraica MA]
-    A --> C[Multiplicidad Geométrica MG]
-    
-    B --> D[Del polinomio característico]
-    C --> E[Del espacio propio E_λ]
-    
-    D --> F[Raíces repetidas]
-    E --> G[Vectores LI]
-    
-    H[Relación] --> I[1 ≤ MG ≤ MA]
-    I --> J{MG = MA?}
-    J -->|Para todos λ| K[Diagonalizable]
-    J -->|Existe λ con MG < MA| L[NO diagonalizable]
-    
-    style A fill:#e1f5ff
-    style K fill:#e1ffe1
-    style L fill:#ffe1e1
-```
+![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_06.svg]]
 
 ---
 
@@ -502,15 +407,7 @@ graph TB
 > 
 > **Propiedades fundamentales:**
 > 
-> ```mermaid
-> graph LR
->     A[Matriz A n×n] --> B[Polinomio p_A de grado n]
->     B --> C[n raíces contadas con multiplicidad]
->     C --> D["Σ MA(λᵢ) = n"]
->     E[Cada valor propio] --> F["MA(λ) ≥ 1"]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_07.svg]]
 > 
 > **Tabla de propiedades:**
 > 
@@ -606,17 +503,7 @@ graph TB
 > 
 > **Proceso de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Valor propio λ] --> B[Formar A - λI]
->     B --> C[Resolver A - λI v = 0]
->     C --> D[Encontrar espacio solución]
->     D --> E[Determinar base del espacio]
->     E --> F[Contar vectores en la base]
->     F --> G[MG = # vectores en base]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_08.svg]]
 > 
 > **Relación con el rango:**
 > 
@@ -744,17 +631,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph LR
->     A[MG = 1] --> B[Mínimo: un vector propio]
->     C[MG < MA] --> D[Deficiente: matriz NO diagonalizable]
->     E[MG = MA] --> F[Ideal: suficientes vectores propios]
->     G[MG > MA] --> H[IMPOSIBLE]
->     style B fill:#e1f5ff
->     style D fill:#ffe1e1
->     style F fill:#e1ffe1
->     style H fill:#ff0000
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_09.svg]]
 > 
 > **Casos posibles:**
 > 
@@ -782,22 +659,7 @@ graph TB
 > 
 > **Análisis de casos:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A n×n] --> B[Calcular todos los valores propios]
->     B --> C[Para cada λᵢ]
->     C --> D[Calcular MA λᵢ]
->     C --> E[Calcular MG λᵢ]
->     D --> F{¿MG = MA?}
->     E --> F
->     F -->|Para todos λᵢ| G[A es DIAGONALIZABLE]
->     F -->|Existe λᵢ con MG < MA| H[A NO es diagonalizable]
->     G --> I[Existe base de vectores propios]
->     H --> J[Insuficientes vectores propios]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_10.svg]]
 > 
 > **Checklist de verificación:**
 > 
@@ -1049,23 +911,6 @@ graph TB
 ## 🎯 Estrategia de Análisis
 
 > [!tip] 🗺️ Guía Paso a Paso
-> ```mermaid
-> flowchart TD
->     A[Matriz A]
->     A --> B[Calcular polinomio característico]
->     B --> C["Factorizar p_A(λ)"]
->     C --> D[Identificar valores propios]
->     D --> E[Determinar MA de cada λ]
->     E --> F[Para cada valor propio λᵢ]
->     F --> G[Formar A − λᵢI]
->     G --> H["Resolver (A − λᵢI)v = 0"]
->     H --> I[Encontrar base de E_λᵢ]
->     I --> J["Calcular MG(λᵢ)"]
->     J --> K{"¿MG(λᵢ) = MA(λᵢ)?"}
->     K -->|Sí, todos| L[DIAGONALIZABLE]
->     K -->|No| M[NO diagonalizable]
->     L --> N[Formar matriz P]
->     L --> O[Formar matriz D]
-> ```
+> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_11.svg]]
 
 **Tags:** #algebra-lineal #multiplicidad #algebraica #geometrica #diagonalizacion #valores-propios #espacios-propios #vectores-propios

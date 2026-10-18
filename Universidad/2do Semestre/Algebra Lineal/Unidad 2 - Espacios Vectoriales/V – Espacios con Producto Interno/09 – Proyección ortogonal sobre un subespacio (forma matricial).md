@@ -32,22 +32,7 @@ dg-publish: true
 > |**Implementación numérica**|Directo en software (MATLAB, Python)|Algoritmos computacionales|
 > |**Generalización**|Mismo marco para cualquier dimensión|Escalabilidad|
 
-```mermaid
-graph TB
-    A[Vector y en ℝⁿ] --> B[Matriz de Proyección P]
-    B --> C[\hat{y} = Py]
-    
-    D[Subespacio W] --> E[Base: columnas de A]
-    E --> F[Calcular P = A A^T A ^-1 A^T]
-    F --> B
-    
-    C --> G[Proyección sobre W]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style F fill:#ffe1e1
-```
+![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_01.svg]]
 
 ---
 
@@ -118,20 +103,7 @@ graph TB
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Subespacio W] --> B[Elegir base]
->     B --> C[Formar matriz A<br/>columnas = base]
->     C --> D[Calcular A^T A]
->     D --> E[Invertir: A^T A ^-1]
->     E --> F[P = A A^T A ^-1 A^T]
->     G[Vector y] --> H[Multiplicar: \hat{y} = Py]
->     F --> H
->     H --> I[Proyección \hat{y} ∈ W]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
->     style I fill:#e1f5ff
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_02.svg]]
 > 
 > **Propiedades fundamentales:**
 > 
@@ -169,19 +141,7 @@ graph TB
 > 
 > **Ventajas computacionales:**
 > 
-> ```mermaid
-> graph TB
->     A[Base de W] --> B{¿Ortonormal?}
->     B -->|No| C[P = A A^T A ^-1 A^T]
->     B -->|Sí| D[P = QQ^T]
->     C --> E[Requiere inversión<br/>Más costoso]
->     D --> F[Solo multiplicación<br/>Muy eficiente]
->     E --> G[O n³ operaciones]
->     F --> H[O n² operaciones]
->     style D fill:#e1ffe1
->     style F fill:#e1ffe1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_03.svg]]
 > 
 > **Ejemplo en ℝ³:**
 > 
@@ -298,16 +258,7 @@ graph TB
 > 
 > **Estructura de aa^T:**
 > 
-> ```mermaid
-> graph LR
->     A[Vector a<br/>n×1] --> B[a^T<br/>1×n]
->     A --> C[aa^T<br/>n×n]
->     B --> C
->     C --> D[Matriz de rango 1]
->     D --> E[Todas las filas<br/>son múltiplos]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_04.svg]]
 
 ---
 
@@ -375,16 +326,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> flowchart LR
->     A[y fuera de W] -->|P| B[\hat{y} en W]
->     B -->|P| C[\hat{y} mismo]
->     C -->|P| D[\hat{y} mismo]
->     E[P² = P<br/>P³ = P<br/>...] -.-> B
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_05.svg]]
 
 ### 🔄 Simetría
 
@@ -504,17 +446,7 @@ graph TB
 > 
 > **Diagrama de espacios:**
 > 
-> ```mermaid
-> graph TB
->     A[ℝⁿ] --> B[Aplicar P]
->     B --> C{Resultado}
->     C --> D[Im P = W<br/>rango = dim W ]
->     C --> E[Nul P = W⊥<br/>nulidad = n - dim W ]
->     F[Teorema del rango:<br/>rango + nulidad = n] -.-> C
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_06.svg]]
 
 ### 🔢 Valores y Vectores Propios
 
@@ -704,25 +636,7 @@ graph TB
 > 
 > **Flujo del algoritmo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Base de W:<br/> v₁,...,vₖ ] --> B[Formar A = v₁...vₖ ]
->     B --> C[Calcular A^T A]
->     C --> D{¿Invertible?}
->     D -->|No| E[❌ Vectores no<br/>independientes]
->     D -->|Sí| F[Calcular A^T A ^-1]
->     F --> G[Calcular A^T]
->     G --> H[P = A A^T A ^-1 A^T]
->     H --> I[Verificar propiedades]
->     style H fill:#e1ffe1
->     style I fill:#fff4e1
-> ````
-
-### ⚡ Optimización: Usar Base Ortonormal
-
-> [!success] 🚀 Método Eficiente
-> **Estrategia recomendada:**
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_07.svg]]
 > En lugar de usar la base original directamente:
 > 
 > 1. Aplicar Gram-Schmidt a {v₁, ..., vₖ}
@@ -905,18 +819,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TB
->     A[Vector b] --> B[Proyectar sobre Col A ]
->     B --> C[b̂ = Pb]
->     C --> D[Resolver A\hat{x} = b̂]
->     D --> E[\hat{x} = A^T A ^-1 A^T b]
->     F[Error: z = b - b̂] -.-> G[z ⊥ Col A ]
->     G -.-> H[A^T z = 0]
->     H -.-> E
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_08.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -1001,17 +904,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Señal original s] --> B[Matriz P<br/>bajas frecuencias]
->     B --> C[s_bajo = Ps]
->     A --> D[Matriz I-P<br/>altas frecuencias]
->     D --> E[s_alto = I-P s]
->     C --> F[Señal filtrada]
->     E --> G[Ruido eliminado]
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_09.svg]]
 
 ### 🖼️ Compresión y Aproximación
 
@@ -1312,24 +1205,7 @@ graph TB
 > 
 > **Fórmulas fundamentales:**
 > 
-> ```mermaid
-> mindmap
->   root((Proyección<br/>Matricial))
->     Fórmula general
->       P = A A^T A ^-1 A^T
->       \hat{y} = Py
->     Base ortonormal
->       P = QQ^T
->       Más eficiente
->     Propiedades
->       P^T = P
->       P² = P
->       valores propios ∈ 0,1
->     Aplicaciones
->       Mínimos cuadrados
->       Filtrado señales
->       Compresión datos
-> ```
+> ![[Diagramas/09_–_Proyección_ortogonal_sobre_un_subespacio_(forma_matricial)_10.svg]]
 > 
 > **Tabla de fórmulas:**
 > 

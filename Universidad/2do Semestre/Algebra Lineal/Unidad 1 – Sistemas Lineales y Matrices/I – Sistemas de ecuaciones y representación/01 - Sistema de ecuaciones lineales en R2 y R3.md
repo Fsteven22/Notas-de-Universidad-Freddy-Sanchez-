@@ -278,28 +278,7 @@ dg-publish: true
 
 ### 📊 Diagrama de Clasificación
 
-```mermaid
-graph TD
-    A[Sistema de Ecuaciones Lineales] --> B{¿Tiene solución?}
-    
-    B -->|NO| C[Incompatible<br/>❌ Sin solución<br/>Ecuaciones contradictorias]
-    
-    B -->|SÍ| D[Compatible<br/>✓ Con solución]
-    
-    D --> E{¿Cuántas soluciones?}
-    
-    E -->|UNA| F[Compatible Determinado<br/>🎯 Solución única<br/>rango A = rango AB = n]
-    
-    E -->|INFINITAS| G[Compatible Indeterminado<br/>∞ Infinitas soluciones<br/>rango A = rango AB < n]
-    
-    style A fill:#e3f2fd
-    style B fill:#fff9c4
-    style C fill:#ffcdd2
-    style D fill:#c8e6c9
-    style E fill:#fff9c4
-    style F fill:#bbdefb
-    style G fill:#ffe0b2
-```
+![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]
 
 ### 📋 Tabla Resumen Comparativa
 
@@ -1535,36 +1514,7 @@ graph TD
 
 ## 🎨 Diagrama de Flujo para Resolver S.E.L.
 
-```mermaid
-graph TD
-    A[Sistema de Ecuaciones Lineales] --> B[Escribir matriz ampliada AB]
-    B --> C[Aplicar eliminación de Gauss]
-    C --> D[Obtener forma escalonada]
-    D --> E{¿Hay fila<br/>0 0 ... 0  k<br/>con k ≠ 0?}
-    
-    E -->|Sí| F[Sistema INCOMPATIBLE<br/>Sin solución]
-    E -->|No| G[Calcular rangos]
-    
-    G --> H{¿rang A =<br/>rang AB?}
-    H -->|No| F
-    H -->|Sí| I{¿rang A = n?<br/>n = núm. incógnitas}
-    
-    I -->|Sí| J[Sistema COMPATIBLE<br/>DETERMINADO<br/>Solución única]
-    I -->|No| K[Sistema COMPATIBLE<br/>INDETERMINADO<br/>Infinitas soluciones]
-    
-    J --> L[Sustitución regresiva]
-    K --> M[Expresar en forma paramétrica<br/>Variables libres = n - rang A]
-    
-    L --> N[Solución: x₁, x₂, ..., xₙ]
-    M --> O[Solución: f s, t, ...]
-    
-    style A fill:#e3f2fd
-    style F fill:#ffcdd2
-    style J fill:#c8e6c9
-    style K fill:#fff9c4
-    style N fill:#a5d6a7
-    style O fill:#ffe082
-```
+![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_02.svg]]
 
 ## 🧪 Ejercicios Progresivos
 
@@ -1795,29 +1745,7 @@ graph TD
 
 ## 🎨 Visualización de Soluciones
 
-```mermaid
-graph TD
-    A[Solución de S.E.L.<br/>en ℝ² y ℝ³] --> B[En ℝ²<br/>2 ecuaciones, 2 incógnitas]
-    A --> C[En ℝ³<br/>3 ecuaciones, 3 incógnitas]
-    
-    B --> B1[Compatible Determinado<br/>Rectas se intersectan<br/>1 punto]
-    B --> B2[Incompatible<br/>Rectas paralelas<br/>No hay solución]
-    B --> B3[Indeterminado<br/>Rectas coincidentes<br/>∞ soluciones: una recta]
-    
-    C --> C1[Compatible Determinado<br/>3 planos → 1 punto<br/>Solución única]
-    C --> C2[Incompatible<br/>No hay punto común<br/>Sin solución]
-    C --> C3[Indeterminado<br/>3 planos → recta o plano<br/>∞ soluciones]
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style B1 fill:#c8e6c9
-    style B2 fill:#ffcdd2
-    style B3 fill:#fff9c4
-    style C1 fill:#a5d6a7
-    style C2 fill:#ef9a9a
-    style C3 fill:#ffe082
-```
+![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_03.svg]]
 
 ## 🌐 Conexiones Conceptuales
 

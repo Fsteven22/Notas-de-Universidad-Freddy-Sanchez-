@@ -10,14 +10,7 @@ dg-publish: true
 >
 > **Caracoles** $r=a+b\cos\theta$ ($\lambda=a/b$ decide bucle, cardioide, hoyuelo), **rosas** $r=a\cos n\theta$ ($n$ impar $\to n$ pétalos, par $\to2n$), **lemniscatas** $r^2=a^2\cos2\theta$ (dos bucles $\infty$): la forma de la ecuación predice el dibujo.
 >
-> ```mermaid
-> graph LR
->     A["a+b cos<br/>caracol"] --> B["a cos nt<br/>rosa"]
->     B --> C["r2=a2cos2<br/>lemniscata"]
->     C --> D["Simetría<br/>media tabla"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Caracoles_en_coordenadas_polares_01.svg]]
 
 ![[U6-galeria.png]]
 

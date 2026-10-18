@@ -10,16 +10,7 @@ dg-publish: true
 >
 > El **determinante** $\det(A)$ es un escalar asociado a cada matriz **cuadrada**: mide cuánto escala volúmenes la transformación, y decide **invertibilidad** ($\det\neq0\iff A^{-1}$ existe). Es la herramienta de [[06 - Matriz Inversa]] y de la regla de Cramer en [[05 - Sistemas de ecuaciones lineales]].
 >
-> ```mermaid
-> graph LR
->     A["Matriz<br/>cuadrada A"] --> B["det(A)<br/>escalar"]
->     B --> C{"det = 0?"}
->     C -->|Sí| D["Singular<br/>sin inversa"]
->     C -->|No| E["Regular<br/>existe A-1"]
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Determinantes_01.svg]]
 
 ---
 

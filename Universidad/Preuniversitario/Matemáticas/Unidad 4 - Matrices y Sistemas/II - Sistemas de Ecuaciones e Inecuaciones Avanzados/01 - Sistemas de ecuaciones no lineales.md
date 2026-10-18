@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Con potencias, raíces o exponenciales ($x^2$, $\sqrt{x}$, $e^x$) no hay un método único como Gauss: se combinan **sustitución** (reducir a una incógnita), **lectura gráfica** (intersección de curvas) y **métodos numéricos** (Newton). Los sistemas **simétricos** sí tienen técnica propia ($s=x+y$, $p=xy$).
 >
-> ```mermaid
-> graph LR
->     A["Ecs no lineales"] --> B["Sustitución"]
->     A --> C["Gráfico"]
->     A --> D["Numérico<br/>Newton"]
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Sistemas_de_ecuaciones_no_lineales_01.svg]]
 
 ---
 

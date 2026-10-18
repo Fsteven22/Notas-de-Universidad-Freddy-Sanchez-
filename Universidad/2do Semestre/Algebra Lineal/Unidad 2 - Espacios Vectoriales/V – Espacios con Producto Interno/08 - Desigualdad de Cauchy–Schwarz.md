@@ -28,25 +28,7 @@ dg-publish: true
 > |**Probabilística**|Correlación y covarianza|Coeficiente de Pearson ≤ 1|
 > |**Optimización**|Límites en problemas de máximos|Teoría de aproximación|
 
-```mermaid
-graph TB
-    A[Desigualdad de<br/>Cauchy-Schwarz] --> B[Casos]
-    
-    B --> C["<u,v> = ||u|| ||v||<br/>Vectores paralelos"]
-    B --> D["<u,v> < ||u|| ||v||<br/>Vectores oblicuos"]
-    B --> E["<u,v> = 0<br/>Vectores ortogonales"]
-    
-    A --> F[Aplicaciones]
-    F --> G[Desigualdad triangular]
-    F --> H[Definición de ángulo]
-    F --> I[Estadística]
-    F --> J[Análisis funcional]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1e1
-```
+![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
 
 ---
 
@@ -119,17 +101,7 @@ graph TB
 > 
 > **Visualización en ℝ²:**
 > 
-> ```mermaid
-> graph LR
->     A[Origen] -->|u| B[Extremo u]
->     A -->|v| C[Extremo v]
->     B -.->|"⟨u,v⟩"| D[Proyección]
->     C -.->|"||v||"| E[Longitud v]
->     F["⟨u,v⟩ ≤ ||u|| ||v||"] --> G[Siempre cierto]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_02.svg]]
 
 ### 🔄 Formulaciones Equivalentes
 
@@ -180,15 +152,7 @@ graph TB
 > 
 > **Equivalencias:**
 > 
-> ```mermaid
-> graph TD
->     A[Cauchy-Schwarz] <--> B[|⟨u,v⟩| ≤ ||u|| ||v||]
->     B <--> C["(Σuᵢvᵢ)² ≤ (Σuᵢ²)(Σvᵢ²)"]
->     B <--> D["|cos θ| ≤ 1"]
->     B <--> E["-1 ≤ ⟨u,v⟩/(||u||||v||) ≤ 1"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_03.svg]]
 
 ---
 
@@ -242,17 +206,7 @@ graph TB
 > 
 > La igualdad ocurre cuando la componente ortogonal es cero, es decir, cuando **u** es paralelo a **v**.
 > 
-> ```mermaid
-> graph TD
->     A[Vector u] --> B[Proyección sobre v]
->     A --> C[Componente ortogonal]
->     B -.->|"Longitud = |⟨u,v⟩|/||v||"| D[Acotada por ||u||]
->     C -.->|"≥ 0"| E[Pitágoras]
->     D --> F[Cauchy-Schwarz]
->     E --> F
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_04.svg]]
 
 ### 🧮 Demostración Algebraica
 
@@ -393,20 +347,7 @@ graph TB
 > 
 > **Diagrama de casos:**
 > 
-> ```mermaid
-> flowchart TD
->     A{Vectores u y v} --> B{¿Uno es cero?}
->     B -->|Sí| C[Igualdad trivial<br/>0 = 0]
->     B -->|No| D{¿Paralelos?}
->     D -->|Sí| E[Igualdad alcanzada<br/>|⟨u,v⟩| = ||u|| ||v||]
->     D -->|No| F{¿Ortogonales?}
->     F -->|Sí| G[Desigualdad estricta<br/>0 < ||u|| ||v||]
->     F -->|No| H[Desigualdad estricta<br/>|⟨u,v⟩| < ||u|| ||v||]
->     style C fill:#e1ffe1
->     style E fill:#e1ffe1
->     style G fill:#fff4e1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_05.svg]]
 
 ---
 
@@ -529,18 +470,7 @@ graph TB
 > 2. **Forma general (n vectores):** ‖**v₁** + **v₂** + ⋯ + **vₙ**‖ ≤ ‖**v₁**‖ + ‖**v₂**‖ + ⋯ + ‖**vₙ**‖
 >     
 > 
-> ```mermaid
-> graph LR
->     A[Origen] -->|u| B[Punto B]
->     A -->|v| C[Punto C]
->     B -->|v| D[u + v]
->     A -->|u + v| D
->     B -.->|"||u||"| E[Longitud u]
->     C -.->|"||v||"| F[Longitud v]
->     D -.->|"||u + v|| ≤ ||u|| + ||v||"| G[Desigualdad triangular]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_06.svg]]
 
 ### 📊 Coeficiente de Correlación
 
@@ -858,33 +788,7 @@ graph TB
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Cauchy-Schwarz))
-    Enunciado
-      |⟨u,v⟩| ≤ ||u|| ||v||
-      Forma algebraica
-      Con ángulo
-      Normalizada
-    Demostraciones
-      Geométrica
-      Algebraica
-      Por discriminante
-      Casos especiales
-    Igualdad
-      Vectores paralelos
-      u = λv
-      Dependencia lineal
-    Aplicaciones
-      Definir ángulo
-      Desigualdad triangular
-      Correlación
-      Teoría de aproximación
-    Generalizaciones
-      Hölder
-      Minkowski
-      Espacios abstractos
-```
+![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
 
 ### Tabla Resumen
 

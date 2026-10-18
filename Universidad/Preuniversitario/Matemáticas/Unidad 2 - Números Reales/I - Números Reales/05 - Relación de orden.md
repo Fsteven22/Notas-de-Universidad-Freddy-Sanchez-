@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $a<b\iff b-a$ positivo: compatible con $+$ (se preserva) pero $\times-1$ invierte. Cotas, $\sup$/$\inf$ e intervalos describen conjuntos; $\mathbb{Q}$ es denso pero $\mathbb{R}$ es completo.
 >
-> ```mermaid
-> graph LR
->     A["a menor b<br/>resta +"] --> B["Suma<br/>preserva"]
->     B --> C["Por -1<br/>invierte"]
->     C --> D["Sup/inf<br/>cotas"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Relación_de_orden_01.svg]]
 
 ![[05-sup.png]]
 

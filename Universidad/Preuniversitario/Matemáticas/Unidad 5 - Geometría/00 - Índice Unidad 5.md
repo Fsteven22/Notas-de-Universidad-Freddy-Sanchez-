@@ -12,31 +12,7 @@ dg-publish: true
 >
 > Cada nota conserva su teoría matemática original con el mismo rigor, ahora en formato uniforme: introducción, teoría en callouts y tablas, ejercicios resueltos, práctica colapsable, metas de aprendizaje, resumen ejecutivo y resumen visual.
 
-```mermaid
-graph TD
-  U5[Unidad 5 Geometria] --> P1[Geometria Plana]
-  U5 --> P2[Geometria del Espacio]
-  U5 --> P3[Geometria Analitica]
-  P1 --> A01[01 Figuras en el plano]
-  P1 --> A02[02 Rectas en el plano]
-  P1 --> A03[03 Angulos]
-  P1 --> A04[04 Poligonales y poligonos]
-  P1 --> A05[05 Triangulos]
-  P1 --> A06[06 Cuadrilateros]
-  P1 --> A07[07 Perimetro y area]
-  P1 --> A08[08 Circunferencia y circulo]
-  P1 --> A09[09 Poligonos y circunferencia]
-  P1 --> A10[10 Figuras circulares]
-  P2 --> B01[01 Sistema tridimensional]
-  P2 --> B02[02 Poliedros]
-  P2 --> B03[03 Solidos de revolucion]
-  P2 --> B04[04 Poliedros y redondos]
-  P3 --> C01[01 Puntos y rectas]
-  P3 --> C02[02 Circunferencia]
-  P3 --> C03[03 Parabola]
-  P3 --> C04[04 Elipse]
-  P3 --> C05[05 Hiperbola]
-```
+![[Diagramas/00_-_Índice_Unidad_5_01.svg]]
 
 ---
 
@@ -135,22 +111,7 @@ graph TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Unidad 5))
-    Plana
-      Rectas y angulos
-      Poligonos y triangulos
-      Circulo y figuras
-    Espacio
-      Sistema 3D
-      Poliedros
-      Solidos de giro
-    Analitica
-      Puntos y rectas
-      Circunferencia
-      Conicas
-```
+![[Diagramas/00_-_Índice_Unidad_5_02.svg]]
 
 ---
 

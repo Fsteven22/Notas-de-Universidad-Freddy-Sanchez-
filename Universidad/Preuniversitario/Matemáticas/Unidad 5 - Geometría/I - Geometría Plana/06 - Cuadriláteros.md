@@ -10,15 +10,7 @@ dg-publish: true
 >
 > Un polígono de $4$ lados con $\alpha+\beta+\gamma+\delta=360°$. Se clasifica por pares paralelos (trapecio, paralelogramo, trapezoide) y de ahí a rombo, rectángulo y cuadrado — cada nivel añade propiedades a diagonales y áreas.
 >
-> ```mermaid
-> graph LR
->     A["Cuadrilátero<br/>4 lados"] --> B{"Pares<br/>paralelos?"}
->     B -->|Uno| C["Trapecio"]
->     B -->|Dos| D["Paralelogramo<br/>rombo/rect/cuad"]
->     B -->|Cero| E["Trapezoide"]
->     style D fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Cuadriláteros_01.svg]]
 
 ![[U5-varignon.png]]
 

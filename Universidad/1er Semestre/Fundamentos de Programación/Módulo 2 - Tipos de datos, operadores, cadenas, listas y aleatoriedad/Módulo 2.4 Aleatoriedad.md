@@ -78,19 +78,7 @@ dg-publish: true
 > - 🎯 Suficientes para juegos y simulaciones
 > - 🔒 Para criptografía usar `secrets` module
 
-```mermaid
-graph TD
-    A[Semilla Inicial] --> B[Algoritmo PRNG]
-    B --> C[Número Pseudoaleatorio]
-    C --> D{¿Uso Seguro?}
-    D -->|Sí| E[Módulo secrets]
-    D -->|No| F[Módulo random]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style E fill:#ffebee
-    style F fill:#e8f5e8
-```
+![[Diagramas/Módulo_2.4_Aleatoriedad_01.svg]]
 
 ## 🎨 Analogía Visual
 
@@ -127,26 +115,7 @@ graph TD
 > - Salts para hashing
 > - IDs únicos
 
-```mermaid
-mindmap
-  root((Aleatoriedad))
-    Gaming
-      Procedural Generation
-      Random Events
-      NPC Behavior
-    Science
-      Monte Carlo
-      Statistical Sampling
-      Noise Generation
-    Security
-      Password Generation
-      Token Creation
-      Unique IDs
-    Testing
-      Mock Data
-      Edge Cases
-      Load Testing
-```
+![[Diagramas/Módulo_2.4_Aleatoriedad_02.svg]]
 
 ## 💻 Ejemplos Prácticos
 

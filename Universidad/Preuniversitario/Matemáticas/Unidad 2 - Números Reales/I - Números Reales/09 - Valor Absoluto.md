@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $|x|=\max(x,-x)$: distancia al origen. $|x-a|<r$ es el intervalo $(a-r,a+r)$; $|x-a|=|x-b|$ da el punto medio. Triangular: $|a+b|\le|a|+|b|$.
 >
-> ```mermaid
-> graph LR
->     A["|x|<br/>distancia"] --> B["Ecuación<br/>=a: dos"]
->     B --> C["Desigual<br/>intervalo"]
->     C --> D["Triangular<br/>suma"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/09_-_Valor_Absoluto_01.svg]]
 
 ![[09-abs.png]]
 

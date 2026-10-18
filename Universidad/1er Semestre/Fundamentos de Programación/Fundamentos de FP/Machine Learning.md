@@ -24,27 +24,7 @@ El Machine Learning (ML) o Aprendizaje Automático es una rama de la inteligenci
 - **Escalable**: Maneja grandes volúmenes de información
 
 > [!tip] ## Tipos de Machine Learning 🔄
-```mermaid
-graph TD
-    A[🤖 Machine Learning] --> B[👨‍🏫 Supervisado]
-    A --> C[🔍 No Supervisado]
-    A --> D[🎮 Por Refuerzo]
-    
-    B --> E[📋 Clasificación]
-    B --> F[📈 Regresión]
-    
-    C --> G[🎯 Clustering]
-    C --> H[📉 Reducción Dimensionalidad]
-    C --> I[⚠️ Detección Anomalías]
-    
-    D --> J[🧠 Q-Learning]
-    D --> K[🎲 Policy Gradients]
-    
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:3px
-    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style C fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
-    style D fill:#fff3e0,stroke:#e65100,stroke-width:2px
-```
+![[Diagramas/Machine_Learning_01.svg]]
 
 ### 📊 Comparativa de Tipos
 
@@ -55,31 +35,7 @@ graph TD
 | **Por Refuerzo** 🎮 | Aprende mediante recompensas/castigos | Q-Learning, AlphaGo, Deep Q-Networks | Juegos, Robótica, Trading automático, Coches autónomos |
 
 > [!warning] ## Proceso Completo de Machine Learning 🔄
-```mermaid
-flowchart TB
-    A[📥 Recopilación de Datos] --> B[🧹 Preprocesamiento]
-    B --> C[🔍 Exploración de Datos]
-    C --> D[🎯 Selección de Modelo]
-    D --> E[🏋️ Entrenamiento]
-    E --> F[📊 Evaluación]
-    F --> G[⚙️ Ajuste de Hiperparámetros]
-    G --> H[✅ Validación]
-    H --> I[🚀 Implementación]
-    I --> J[📈 Monitoreo]
-    J --> K[🔄 Mantenimiento]
-    
-    style A fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    style B fill:#f8bbd9,stroke:#c2185b,stroke-width:2px
-    style C fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px
-    style D fill:#c5cae9,stroke:#3f51b5,stroke-width:2px
-    style E fill:#bbdefb,stroke:#1976d2,stroke-width:2px
-    style F fill:#b2dfdb,stroke:#00796b,stroke-width:2px
-    style G fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style H fill:#dcedc8,stroke:#689f38,stroke-width:2px
-    style I fill:#f0f4c3,stroke:#afb42b,stroke-width:2px
-    style J fill:#ffecb3,stroke:#ffa000,stroke-width:2px
-    style K fill:#ffe0b2,stroke:#f57c00,stroke-width:2px
-```
+![[Diagramas/Machine_Learning_02.svg]]
 
 ### 🛠️ Fases Detalladas del Proceso
 
@@ -121,18 +77,7 @@ flowchart TB
 - **Support Vector Regression** ⚡: Versión de SVM para regresión
 
 ### 🔍 Algoritmos de Clustering
-```mermaid
-graph LR
-    A[🎯 K-Means] --> B[Grupos esféricos]
-    C[🌳 Hierarchical] --> D[Estructura jerárquica]
-    E[🔍 DBSCAN] --> F[Grupos de densidad variable]
-    G[📊 Gaussian Mixture] --> H[Distribuciones probabilísticas]
-    
-    style A fill:#e3f2fd
-    style C fill:#f1f8e9
-    style E fill:#fff3e0
-    style G fill:#fce4ec
-```
+![[Diagramas/Machine_Learning_03.svg]]
 
 [!bug]- ## Desafíos y Problemas Comunes ⚠️
 
@@ -156,27 +101,7 @@ graph LR
 > [!success] ## Métricas de Evaluación 📊
 
 ### 🎯 Métricas para Clasificación
-```mermaid
-graph TD
-    A[📊 Métricas de Clasificación] --> B[🎯 Accuracy]
-    A --> C[🔍 Precision]
-    A --> D[📈 Recall]
-    A --> E[⚖️ F1-Score]
-    A --> F[📈 ROC-AUC]
-    
-    B --> G[Casos correctos / Total casos]
-    C --> H[VP / VP + FP]
-    D --> I[VP / VP + FN]
-    E --> J[2 × Precision × Recall / Precision + Recall]
-    F --> K[Área bajo curva ROC]
-    
-    style A fill:#e8f5e8
-    style B fill:#bbdefb
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#e1f5fe
-    style F fill:#fce4ec
-```
+![[Diagramas/Machine_Learning_04.svg]]
 
 ### 📈 Métricas para Regresión
 | Métrica | Fórmula | Interpretación |
@@ -200,27 +125,7 @@ graph TD
 7. **M**antener y mejorar (Maintenance)
 
 ### 🔄 Sistema de Repaso Espaciado
-```mermaid
-gantt
-    title Cronograma de Estudio ML
-    dateFormat X
-    axisFormat %d
-    
-    section Conceptos Básicos
-    Tipos de ML :done, day1, 1d
-    Algoritmos Fundamentales :done, day3, 1d
-    
-    section Proceso
-    CRISP-DM Completo :active, day7, 1d
-    Métricas y Evaluación :day15, 1d
-    
-    section Aplicación
-    Implementación Práctica :day21, 1d
-    Casos de Estudio :day30, 1d
-    
-    section Revisión
-    Repaso General :day45, 1d
-```
+![[Diagramas/Machine_Learning_05.svg]]
 
 ### 🃏 Técnica de Flashcards Digitales
 **Anverso**: Concepto o algoritmo
@@ -284,25 +189,7 @@ Ejemplo:
 ### 🛠️ **Stack Tecnológico Esencial**
 
 #### 🐍 **Python Ecosystem**
-```mermaid
-graph LR
-    A[🐍 Python] --> B[📊 Pandas]
-    A --> C[🔢 NumPy]
-    A --> D[📈 Matplotlib]
-    A --> E[🤖 Scikit-learn]
-    A --> F[🧠 TensorFlow]
-    A --> G[🔥 PyTorch]
-    A --> H[📊 Seaborn]
-    
-    style A fill:#306998
-    style B fill:#150458
-    style C fill:#013243
-    style D fill:#11557c
-    style E fill:#f7931e
-    style F fill:#ff6f00
-    style G fill:#ee4c2c
-    style H fill:#3776ab
-```
+![[Diagramas/Machine_Learning_06.svg]]
 
 #### 📊 **Herramientas de Visualización**
 - **Plotly**: Gráficos interactivos

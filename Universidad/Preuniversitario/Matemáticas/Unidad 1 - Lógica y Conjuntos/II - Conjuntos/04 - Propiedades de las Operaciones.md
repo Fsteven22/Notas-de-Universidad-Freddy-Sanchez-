@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Conmutativa, asociativa, distributiva, absorción, De Morgan y dualidad: simplifican expresiones sin elementos. Probar es doble inclusión o pertenencia traducida a $\lor$/$\land$.
 >
-> ```mermaid
-> graph LR
->     A["Expresión<br/>larga"] --> B["Patrón<br/>abs/DM"]
->     B --> C["Simplifica<br/>ley"]
->     C --> D["Dual<br/>intercambia"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Propiedades_de_las_Operaciones_01.svg]]
 
 ---
 

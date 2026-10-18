@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Divisibilidad ($a\mid b$), primos (factorización única), MCD/mcm (Euclides) y congruencias ($a\equiv b\bmod n$): con resto $r\ge0$ la división es única y $\mathbb{Z}_p$ es campo si $p$ es primo.
 >
-> ```mermaid
-> graph LR
->     A["a|b<br/>divide"] --> B["Primos<br/>factoriza"]
->     B --> C["MCD<br/>Euclides"]
->     C --> D["Mod n<br/>congruencia"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Conceptos_asociados_a_los_números_enteros_01.svg]]
 
 ![[06-criba.png]]
 

@@ -13,13 +13,7 @@ dg-publish: true
 >
 > La mayoria de los errores —hubieron, habian, habemos— nace de tratar la forma impersonal como si fuera personal, es decir, de conjugarla en plural cuando debe quedar siempre en singular.
 >
-> ```mermaid
-> graph LR
->     A[Verbo haber] --> B[Funcion auxiliar]
->     A --> C[Funcion impersonal]
->     B --> D[Tiempos compuestos]
->     C --> E[Expresa existencia]
-> ```
+> ![[Diagramas/03_-_Uso_correcto_del_verbo_haber_01.svg]]
 
 ---
 
@@ -86,13 +80,7 @@ dg-publish: true
 
 > [!note] 🔧 Diagrama de la funcion auxiliar
 >
-> ```mermaid
-> graph LR
->     A[Haber auxiliar] --> B[Persona y numero variables]
->     B --> C[Mas participio invariable]
->     C --> D[Tiempo compuesto]
->     D --> E[He has ha hemos han mas ado ido]
-> ```
+> ![[Diagramas/03_-_Uso_correcto_del_verbo_haber_02.svg]]
 
 ---
 
@@ -155,12 +143,7 @@ dg-publish: true
 
 > [!note] 👁️ Diagrama de la funcion impersonal
 >
-> ```mermaid
-> graph LR
->     A[Haber impersonal] --> B[Siempre tercera singular]
->     B --> C[Mas sustantivo objeto directo]
->     C --> D[Hay habia hubo habra haya hubiera]
-> ```
+> ![[Diagramas/03_-_Uso_correcto_del_verbo_haber_03.svg]]
 
 ---
 
@@ -321,44 +304,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Verbo haber))
-    Funcion auxiliar
-      Estructura fija
-        Haber conjugado
-        Mas participio ado ido
-      Todas las personas
-        Yo he
-        Tu has
-        El ha
-        Nosotros hemos
-        Ellos han
-      Participio invariable
-        No concuerda
-        La han invitado
-    Funcion impersonal
-      Solo singular
-        Hay presente
-        Habia imperfecto
-        Hubo pasado simple
-        Habra futuro
-        Haya subjuntivo
-        Hubiera subjuntivo pasado
-      Sustantivo es objeto
-        No es sujeto
-        No hay plural
-    Errores tipicos
-      Hubieron por hubo
-      Habian por habia
-      Habemos por estamos
-      Han habido por ha habido
-      Hayan por hay
-    Trucos de control
-      Sustituir por eso
-      Buscar participio detras
-      Preguntar que existe
-```
+![[Diagramas/03_-_Uso_correcto_del_verbo_haber_04.svg]]
 
 ---
 

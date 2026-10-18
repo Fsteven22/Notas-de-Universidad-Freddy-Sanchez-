@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Hallar $x$ con igualdad verdadera: lineales despejando, cuadráticas con $\Delta$, $|f|=a$ con $\pm$, radicales elevando (y verificando), sistemas por sustitución. Elevar crea extrañas — verifica siempre.
 >
-> ```mermaid
-> graph LR
->     A["Lineal<br/>despeja"] --> B["Cuadrática<br/>Delta"]
->     B --> C["|f|, raiz<br/>casos/eleva"]
->     C --> D["Verifica<br/>extrañas"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/10_-_Ecuaciones_01.svg]]
 
 ![[10-parabola.png]]
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > La matriz que satisface $AA^{-1}=A^{-1}A=I$. Existe si y solo si $A$ es cuadrada con $\det(A)\neq0$, y resuelve $Ax=b$ como $x=A^{-1}b$.
 >
-> ```mermaid
-> graph LR
->     A["A<br/>n x n"] --> B{"det distinto 0?"}
->     B -->|Sí| C["Existe inversa<br/>AA-1=I"]
->     B -->|No| D["Singular<br/>sin inversa"]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Matriz_Inversa_01.svg]]
 
 ---
 

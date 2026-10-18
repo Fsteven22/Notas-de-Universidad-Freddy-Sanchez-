@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Las fronteras son **curvas** (círculos, parábolas, hipérbolas) en vez de rectas: la solución sigue siendo la intersección de regiones, pero los "vértices" son cortes curva-curva y la región puede ser no conexa (varias piezas). El método es el mismo: frontera + punto de prueba + intersección.
 >
-> ```mermaid
-> graph LR
->     A["Curvas<br/>frontera"] --> B["Lado<br/>punto prueba"]
->     B --> C["Intersección<br/>región curva"]
->     C --> D["Cortes<br/>curva-curva"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Sistemas_de_inecuaciones_no_lineales_01.svg]]
 
 ![[U4-nolineal.png]]
 

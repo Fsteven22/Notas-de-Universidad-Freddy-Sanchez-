@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Punto a punto ($f+g$, $fg$, $f/g$ con dominio intersección) y por **composición** $(g\circ f)(x)=g(f(x))$ (de adentro hacia afuera): el orden importa y el dominio se restringe dos veces.
 >
-> ```mermaid
-> graph LR
->     A["f,g<br/>punto a punto"] --> B["Compón<br/>g(f(x))"]
->     B --> C["Dominio<br/>doble filtro"]
->     C --> D["Inversa<br/>deshace"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/09_-_Operaciones_con_funciones_de_variable_real_01.svg]]
 
 ---
 

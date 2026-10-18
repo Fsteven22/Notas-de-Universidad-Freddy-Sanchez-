@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $f(x)=mx+b$: $m$ pendiente (subida por paso), $b$ corte en $y$. Paralelas comparten $m$, perpendiculares usan $-1/m$ — y todo sistema $2\times2$ es una intersección de rectas.
 >
-> ```mermaid
-> graph LR
->     A["m<br/>pendiente"] --> B["y=mx+b<br/>recta"]
->     B --> C["Paralela<br/>m igual"]
->     C --> D["Perp<br/>-1/m"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Función_lineal_01.svg]]
 
 ---
 

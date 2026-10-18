@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Una cadena cerrada de $n$ segmentos (lados) con $n$ vértices. Se clasifica por lados (triángulo, cuadrilátero...), por regularidad y por convexidad; sus leyes (suma $(n-2)180°$, diagonales $n(n-3)/2$) se prueban triangulando desde un vértice.
 >
-> ```mermaid
-> graph LR
->     A["n segmentos<br/>cerrados"] --> B["Polígono<br/>n vértices"]
->     B --> C["Triangula<br/>n-2 triángulos"]
->     C --> D["Leyes<br/>ángulos/diagonales"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Poligonales_y_polígonos_01.svg]]
 
 ![[U5-poligono.png]]
 

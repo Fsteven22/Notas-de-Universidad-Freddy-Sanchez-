@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Por su tabla: **tautología** (todo V), **contradicción** (todo F), **contingencia** (mezcla) — pero solo las fórmulas bien formadas (FBF) admiten tabla. Equivalencia ($\equiv$) y consecuencia ($\vDash$) comparan columnas, y FND/FNC son sus formas canónicas.
 >
-> ```mermaid
-> graph LR
->     A["FBF<br/>sintaxis"] --> B["Tabla<br/>2n filas"]
->     B --> C["Clase<br/>V/F/mezcla"]
->     C --> D["Equiv<br/>FND/FNC"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Clases_de_Proposiciones_01.svg]]
 
 ---
 

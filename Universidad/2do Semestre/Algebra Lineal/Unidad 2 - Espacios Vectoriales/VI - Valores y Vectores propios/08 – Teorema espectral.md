@@ -26,26 +26,7 @@ dg-publish: true
 > |**Universalidad**|Aplica a gran variedad de matrices|Física, estadística, ML|
 > |**Interpretación**|Da significado geométrico profundo|Visualización de datos|
 
-```mermaid
-graph TB
-    A[Teorema Espectral] --> B[Matrices Simétricas]
-    A --> C[Matrices Hermitianas]
-    A --> D[Operadores Normales]
-    
-    B --> E[Valores propios<br/>REALES]
-    C --> F[Valores propios<br/>REALES]
-    D --> G[Valores propios<br/>COMPLEJOS]
-    
-    E --> H[Vectores propios<br/>ORTOGONALES]
-    F --> H
-    G --> I[Vectores propios<br/>ORTONORMALES]
-    
-    H --> J[Diagonalización<br/>A = QΛQ^T]
-    I --> J
-    
-    style A fill:#e1f5ff
-    style J fill:#e1ffe1
-```
+![[Diagramas/08_–_Teorema_espectral_01.svg]]
 
 ---
 
@@ -78,16 +59,7 @@ graph TB
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Espacio Original] -->|Q^T| B[Sistema de<br/>Ejes Principales]
->     B -->|Λ escalar| C[Escalado en<br/>Ejes Principales]
->     C -->|Q| D[Regreso al<br/>Espacio Original]
->     E[Transformación A] -.equivale a.-> F[Rotar + Escalar + Rotar]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/08_–_Teorema_espectral_02.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -241,18 +213,7 @@ graph TB
 > 
 > **4. Interpretación geométrica**
 > 
-> ```mermaid
-> graph TB
->     A[Matriz Simétrica A] --> B[Define transformación]
->     B --> C[En coordenadas estándar:<br/>mezcla componentes]
->     A --> D[Cambio a base de<br/>vectores propios]
->     D --> E[En nuevas coordenadas:<br/>solo escalado]
->     E --> F[Eje i se escala por λᵢ]
->     F --> G[Sin rotación ni mezcla]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/08_–_Teorema_espectral_03.svg]]
 
 ---
 
@@ -750,17 +711,7 @@ graph TB
 > 
 > **Jerarquía de matrices:**
 > 
-> ```mermaid
-> graph TB
->     A[Operadores Normales<br/>AA† = A†A] --> B[Hermitianas<br/>A = A†]
->     A --> C[Unitarias<br/>A†A = I]
->     A --> D[Antihhermitianas<br/>A† = -A]
->     B --> E[Simétricas reales<br/>A = A^T]
->     C --> F[Ortogonales reales<br/>A^T A = I]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/08_–_Teorema_espectral_04.svg]]
 > 
 > **Teorema espectral para operadores normales:**
 > 
@@ -1248,30 +1199,7 @@ graph TB
 > 
 > **Aplicaciones principales:**
 > 
-> ```mermaid
-> mindmap
->   root((Teorema<br/>Espectral))
->     Formas Cuadráticas
->       Clasificación
->       Optimización
->       Superficies
->     PCA
->       Reducción dimensión
->       Componentes principales
->       Análisis datos
->     Física
->       Mecánica cuántica
->       Niveles energía
->       Estados propios
->     Sistemas Dinámicos
->       EDOs lineales
->       Estabilidad
->       Modos normales
->     Matemática
->       Potencias matrices
->       Funciones matrices
->       Geometría
-> ```
+> ![[Diagramas/08_–_Teorema_espectral_05.svg]]
 > 
 > **Fórmulas clave:**
 > 

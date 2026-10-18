@@ -10,20 +10,7 @@ dg-publish: true
 >
 > Esta unidad estudia la **oración gramatical**: su estructura básica de sujeto y predicado, los tipos de oraciones compuestas y las formas verbales. Dominar estos temas es clave para redactar con claridad y corrección.
 >
-> ```mermaid
-> graph LR
->     A[La oracion gramatical] --> B[Sujeto y predicado]
->     B --> C[Oraciones compuestas]
->     C --> D[Formas verbales]
->     classDef c1 fill:#ffe1e1
->     classDef c2 fill:#e1e1ff
->     classDef c3 fill:#e1ffe1
->     classDef c4 fill:#fff4e1
->     class A c1
->     class B c2
->     class C c3
->     class D c4
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
 
 ---
 

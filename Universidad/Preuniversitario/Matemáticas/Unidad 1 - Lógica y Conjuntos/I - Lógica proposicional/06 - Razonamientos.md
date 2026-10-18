@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Premisas $\therefore$ conclusión donde la conclusión sigue necesariamente (premisas V $\implies$ conclusión V): modus ponens/tollens, silogismos y dilemas son válidos; afirmar el consecuente no. Válido + premisas V $=$ sólido.
 >
-> ```mermaid
-> graph LR
->     A["Premisas<br/>lista"] --> B["Regla<br/>MP/MT/SH"]
->     B --> C["Conclusión<br/>necesaria"]
->     C --> D["Sólido<br/>+V premisas"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/06_-_Razonamientos_01.svg]]
 
 ---
 

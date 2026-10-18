@@ -18,17 +18,7 @@ dg-publish: true
 >
 > El análisis integra lectura y observación en cuatro fases secuenciales:
 >
-> ```mermaid
-> graph TD
->     A[Leer el texto completo] --> B["Identificar la tesis (aplicar los 5 filtros)"]
->     B --> C["Aislar los argumentos que la sostienen"]
->     C --> D["Validar la evidencia de cada argumento"]
->     D --> E{"¿Evidencia solida y relevante?"}
->     E -->|No| F["Marcar como argumento debil o posible falacia"]
->     E -->|Sí| G["Marcar como argumento solido"]
->     F --> H["Redactar conclusion del analisis"]
->     G --> H
-> ```
+> ![[Diagramas/03_-_Análisis_y_desmontaje_de_textos_argumentativos_01.svg]]
 >
 
 > [!success]- ✅ Qué revisar en cada fase
@@ -232,25 +222,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Analisis argumentativo))
-    Metodologia en 4 fases
-      Identificar la tesis
-      Aislar los argumentos
-      Validar la evidencia
-      Detectar falacias y sesgos
-    Falacias comunes
-      Ad hominem
-      Falso dilema
-      Generalizacion apresurada
-      Autoridad irrelevante
-      Pendiente resbaladiza
-      Sesgo de confirmacion
-    Buena refutacion
-      Ataca la evidencia no la persona
-      Se apoya en datos verificables
-```
+![[Diagramas/03_-_Análisis_y_desmontaje_de_textos_argumentativos_02.svg]]
 
 ---
 

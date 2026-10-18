@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Domino infinito: base $P(1)$ + paso $P(k)\to P(k+1)$ tumba todo $\mathbb{N}$. Sirve para sumas ($n(n+1)/2$), divisibilidad ($4^n-1$ por $3$) y desigualdades ($2^n<n!$ desde $n=4$).
 >
-> ```mermaid
-> graph LR
->     A["Base<br/>P(1)"] --> B["Hipótesis<br/>P(k)"]
->     B --> C["Paso<br/>P(k+1)"]
->     C --> D["Todo N<br/>cae"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/12_-_Inducción_matemática_01.svg]]
 
 ---
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Un conjunto de puntos del plano $\mathbb{R}^2$ con forma definida: **rectas** (1D), **polígonos** (cadenas cerradas de segmentos) y **curvas** (círculos, cónicas). Cada una se describe por vértices o ecuación, y se mide con perímetro y área.
 >
-> ```mermaid
-> graph LR
->     A["Puntos<br/>(x,y)"] --> B["Rectas<br/>Ax+By=C"]
->     B --> C["Polígonos<br/>vértices"]
->     C --> D["Curvas<br/>círculo/cónicas"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Figuras_geométricas_en_el_plano_01.svg]]
 
 ![[U5-figuras.png]]
 

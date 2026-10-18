@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $r=\ell/(1+e\cos\theta)$ con el foco en el polo: $e$ decide (elipse, parábola, hipérbola), $\ell$ escala. Perihelio $r_p=\ell/(1+e)$, afelio $r_a=\ell/(1-e)$ — Kepler en una línea.
 >
-> ```mermaid
-> graph LR
->     A["r=l/(1+e cos)<br/>foco en polo"] --> B["e menor 1<br/>elipse"]
->     B --> C["e=1<br/>parábola"]
->     C --> D["e mayor 1<br/>hipérbola"]
->     style A fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/10_-_Secciones_cónicas_en_coordenadas_polares_01.svg]]
 
 ![[U6-conicaspolar.png]]
 

@@ -377,26 +377,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Conectores y Coherencia))
-    Coherencia
-      Un parrafo una idea
-      Evitar repeticiones
-      Cuidar concordancia
-      Leer en voz alta
-    Conectores por relacion
-      Adicion y contraste
-      Causa-efecto
-      Tiempo y ejemplificacion
-      Resumen y conclusion
-      Comparacion y enfasis
-      Condicion
-    Criterios de uso
-      Simples vs compuestos
-      Evitar saturacion
-      Sin muletillas orales
-```
+![[Diagramas/03_-_Conectores_textuales_y_coherencia_lógica_01.svg]]
 
 ---
 

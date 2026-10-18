@@ -10,14 +10,7 @@ dg-publish: true
 >
 > El conjunto $\{P:d(P,F)=d(P,\ell)\}$ (equidista del foco $F$ y la directriz $\ell$): $(x-h)^2=4p(y-k)$ si abre vertical, con vértice $V$, parámetro $p$ y lado recto $4p$.
 >
-> ```mermaid
-> graph LR
->     A["Foco F<br/>directriz l"] --> B["Equidista<br/>d(P,F)=d(P,l)"]
->     B --> C["Vértice<br/>punto medio"]
->     C --> D["Ecuación<br/>4p"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Parábola_01.svg]]
 
 ![[U5-parabola.png]]
 

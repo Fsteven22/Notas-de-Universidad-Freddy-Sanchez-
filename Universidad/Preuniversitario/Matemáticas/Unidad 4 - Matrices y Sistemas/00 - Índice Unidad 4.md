@@ -12,27 +12,7 @@ dg-publish: true
 >
 > Ruta sugerida: Parte I en orden (01 → 07) y luego Parte II (01 → 03). Cada nota tiene metas de aprendizaje, resumen ejecutivo y resumen visual.
 
-```mermaid
-graph TD
-  U4[Unidad 4 - Matrices y Sistemas] --> PI[Parte I - Lineales]
-  U4 --> PII[Parte II - Avanzados]
-  PI --> N01[01 - Definicion y clases]
-  PI --> N02[02 - Operaciones]
-  PI --> N03[03 - Relevantes]
-  PI --> N04[04 - Determinantes]
-  PI --> N05[05 - Sistemas lineales]
-  PI --> N06[06 - Inversa]
-  PI --> N07[07 - Rango]
-  PII --> M01[01 - No lineales]
-  PII --> M02[02 - Inecuaciones lineales]
-  PII --> M03[03 - Inecuaciones no lineales]
-  N01 --> N02
-  N02 --> N04
-  N04 --> N06
-  N05 --> N07
-  N06 --> N07
-  N05 --> M01
-```
+![[Diagramas/00_-_Índice_Unidad_4_01.svg]]
 
 ---
 

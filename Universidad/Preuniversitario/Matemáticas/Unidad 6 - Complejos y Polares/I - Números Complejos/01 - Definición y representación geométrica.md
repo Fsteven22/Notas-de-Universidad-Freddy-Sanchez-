@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $z=a+bi$ con $i^2=-1$: punto $(a,b)$ del plano complejo (Argand). Suma/resta son vectoriales, el producto usa $i^2=-1$ y el conjugado $\bar z=a-bi$ da el módulo $|z|=\sqrt{a^2+b^2}$.
 >
-> ```mermaid
-> graph LR
->     A["z=a+bi<br/>punto (a,b)"] --> B["Conjugado<br/>a-bi"]
->     B --> C["Módulo<br/>raiz(a2+b2)"]
->     C --> D["Polar<br/>r(cos+isen)"]
->     style A fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Definición_y_representación_geométrica_01.svg]]
 
 ![[U6-argand.png]]
 

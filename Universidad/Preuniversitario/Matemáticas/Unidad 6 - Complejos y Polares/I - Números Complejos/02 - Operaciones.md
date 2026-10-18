@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Binómica para sumar/restar por componentes; **polar** para multiplicar (módulos $\times$, ángulos $+$) con De Moivre $z^n=r^n(\cos n\theta+i\sin n\theta)$; Euler $re^{i\theta}$ para dividir y raíces $n$-ésimas.
 >
-> ```mermaid
-> graph LR
->     A["Binómica<br/>a+bi"] --> B["Polar<br/>r ang t"]
->     B --> C["De Moivre<br/>r n ang nt"]
->     C --> D["Euler<br/>r e it"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Operaciones_01.svg]]
 
 ![[U6-demoivre.png]]
 

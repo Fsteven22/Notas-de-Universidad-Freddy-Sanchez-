@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Funciones de verdad que combinan proposiciones: $\lnot$ (NOT), $\land$ (AND), $\lor$ (OR), $\to$ (THEN), $\leftrightarrow$ (IFF). El conector principal (menor precedencia) manda en la fórmula.
 >
-> ```mermaid
-> graph LR
->     A["p,q<br/>simples"] --> B["Conector<br/>5 ops"]
->     B --> C["Compuesta<br/>V/F"]
->     C --> D["Principal<br/>manda"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Operadores_Lógicos_01.svg]]
 
 ---
 

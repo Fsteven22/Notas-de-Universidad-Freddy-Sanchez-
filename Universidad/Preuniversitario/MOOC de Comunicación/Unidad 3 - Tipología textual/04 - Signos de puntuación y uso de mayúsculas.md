@@ -15,12 +15,7 @@ dg-publish: true
 >
 > Al final podrás autocorregir tus propios párrafos con una lista de control breve y cuatro ejercicios graduados.
 >
-> ```mermaid
-> graph LR
->     A[Puntuacion y mayusculas] --> B[Organizan las ideas]
->     B --> C[Evitan ambiguedad]
->     C --> D[Texto claro y formal]
-> ```
+> ![[Diagramas/04_-_Signos_de_puntuación_y_uso_de_mayúsculas_01.svg]]
 
 ---
 
@@ -334,35 +329,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Puntuacion y mayusculas))
-    Signos delimitadores
-      Puntos suspensivos
-        Tres puntos
-        Mayuscula si cierra
-        Minuscula si continua
-      Comillas
-        Citas textuales
-        Ironia y tecnicismos
-        Punto fuera en espanol
-      Signos dobles
-        Apertura obligatoria
-        Sin duplicar
-        Coma tras el cierre
-    Guia de mayusculas
-      Casos normativos
-        Nombres propios
-        Instituciones
-        Siglas e historia
-      Excepciones
-        Cargos en minuscula
-        Dias meses estaciones
-        Gentilicios e idiomas
-    Regla de oro
-      Ante la duda minuscula
-      No a bloques en mayusculas
-```
+![[Diagramas/04_-_Signos_de_puntuación_y_uso_de_mayúsculas_02.svg]]
 
 ---
 

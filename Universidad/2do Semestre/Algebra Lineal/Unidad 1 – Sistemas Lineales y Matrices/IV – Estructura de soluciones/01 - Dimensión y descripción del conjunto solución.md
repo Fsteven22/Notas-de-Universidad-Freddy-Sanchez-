@@ -1712,51 +1712,7 @@ dg-publish: true
 
 ## 📊 Diagrama Conceptual
 
-```mermaid
-graph TD
-    A[Sistema Ax = b] --> B{Compatibilidad}
-    B -->|rango A ≠ rango AB| C[INCOMPATIBLE]
-    B -->|rango A = rango AB| D[COMPATIBLE]
-    
-    C --> C1[No hay solución]
-    C --> C2[dim no definida]
-    
-    D --> E{Dimensión}
-    E -->|dim = n - rango A| F[Calcular dim]
-    
-    F --> G{dim = 0?}
-    G -->|Sí| H[Compatible Determinado]
-    G -->|No| I[Compatible Indeterminado]
-    
-    H --> H1[Solución única]
-    H --> H2[x = vector específico]
-    H --> H3[Punto en ℝⁿ]
-    
-    I --> I1{dim = 1?}
-    I1 -->|Sí| J[Recta]
-    I1 -->|No| K{dim = 2?}
-    K -->|Sí| L[Plano]
-    K -->|No| M[Hiperplano dim k]
-    
-    J --> J1[x = x₀ + tv]
-    L --> L1[x = x₀ + sv₁ + tv₂]
-    M --> M1[x = x₀ + Σtᵢvᵢ]
-    
-    J1 --> N[Forma Vectorial]
-    L1 --> N
-    M1 --> N
-    
-    N --> O[x₀ + Nul A]
-    O --> P[Interpretación Geométrica]
-    
-    style A fill:#e3f2fd
-    style C fill:#ffebee
-    style D fill:#e8f5e9
-    style H fill:#fff9c4
-    style I fill:#f3e5f5
-    style N fill:#c8e6c9
-    style O fill:#ffe0b2
-```
+![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_01.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -3583,51 +3539,7 @@ graph TD
 
 ## 📊 Diagrama Conceptual
 
-```mermaid
-graph TD
-    A[Sistema Ax = b] --> B{Compatibilidad}
-    B -->|rango A ≠ rango AB| C[INCOMPATIBLE]
-    B -->|rango A = rango AB| D[COMPATIBLE]
-    
-    C --> C1[No hay solución]
-    C --> C2[dim no definida]
-    
-    D --> E{Dimensión}
-    E -->|dim = n - rango A| F[Calcular dim]
-    
-    F --> G{dim = 0?}
-    G -->|Sí| H[Compatible Determinado]
-    G -->|No| I[Compatible Indeterminado]
-    
-    H --> H1[Solución única]
-    H --> H2[x = vector específico]
-    H --> H3[Punto en ℝⁿ]
-    
-    I --> I1{dim = 1?}
-    I1 -->|Sí| J[Recta]
-    I1 -->|No| K{dim = 2?}
-    K -->|Sí| L[Plano]
-    K -->|No| M[Hiperplano dim k]
-    
-    J --> J1[x = x₀ + tv]
-    L --> L1[x = x₀ + sv₁ + tv₂]
-    M --> M1[x = x₀ + Σtᵢvᵢ]
-    
-    J1 --> N[Forma Vectorial]
-    L1 --> N
-    M1 --> N
-    
-    N --> O[x₀ + Nul A]
-    O --> P[Interpretación Geométrica]
-    
-    style A fill:#e3f2fd
-    style C fill:#ffebee
-    style D fill:#e8f5e9
-    style H fill:#fff9c4
-    style I fill:#f3e5f5
-    style N fill:#c8e6c9
-    style O fill:#ffe0b2
-```
+![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_02.svg]]
 
 ## 🔗 Relación con Otros Conceptos
 
@@ -5783,36 +5695,7 @@ graph TD
 
 > [!note] 🗺️ Flujo de Clasificación Visual
 > 
-> ```mermaid
-> graph TD
->     A[Sistema AX = B] --> B[Formar matriz ampliada A B]
->     B --> C[Aplicar Gauss para obtener FE]
->     C --> D[Calcular r = rango A]
->     C --> E[Calcular r' = rango A B]
->     D --> F{¿r = r'?}
->     E --> F
->     F -->|NO| G[INCOMPATIBLE]
->     G --> G1[Sin solución]
->     G1 --> G2[S = ∅]
->     F -->|SÍ| H[COMPATIBLE]
->     H --> I{¿r = n?}
->     I -->|SÍ| J[Compatible DETERMINADO]
->     J --> J1[Solución ÚNICA]
->     J1 --> J2[Resolver por Gauss-Jordan, Cramer, o sustitución]
->     J2 --> J3[S = punto]
->     I -->|NO| K[Compatible INDETERMINADO]
->     K --> K1[INFINITAS soluciones]
->     K1 --> K2[k = n - r parámetros]
->     K2 --> K3[Obtener FER]
->     K3 --> K4[Solución paramétrica: X = X₀ + t₁v₁ + ... + tₖvₖ]
->     K4 --> K5[S = subespacio afín de dim k]
-> style A fill:#e3f2fd
-> style G fill:#ffebee
-> style J fill:#e8f5e9
-> style K fill:#fff3e0
-> style F fill:#f3e5f5
-> style I fill:#f3e5f5
-> ```
+> ![[Diagramas/01_-_Dimensión_y_descripción_del_conjunto_solución_03.svg]]
 > 
 > ```
 > Leyenda del diagrama:

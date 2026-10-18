@@ -10,27 +10,7 @@ dg-publish: true
 >
 > Esta unidad construye el sistema de los **números reales** desde sus cimientos (conjuntos numéricos y representación decimal) hasta sus herramientas de cálculo (operaciones, orden, valor absoluto, ecuaciones e inecuaciones) y cierra con la matemática discreta que nace de los enteros (inducción, conteo, binomio y sucesiones).
 >
-> ```mermaid
-> graph TD
->     U2[Unidad 2 Numeros Reales] --> F[Fundamentos 01 a 05]
->     U2 --> E[Enteros y algebra 06 a 09]
->     U2 --> C[Ecuaciones 10 y 11]
->     U2 --> D[Discreta 12 a 15]
->     F --> N01[01 Conjuntos Numericos]
->     F --> N02[02 Representacion decimal]
->     F --> N03[03 Operaciones binarias]
->     F --> N04[04 Operaciones en reales]
->     F --> N05[05 Relacion de orden]
->     E --> N06[06 Enteros divisibilidad]
->     E --> N07[07 Expresiones algebraicas]
->     E --> N08[08 Razones y proporciones]
->     E --> N09[09 Valor Absoluto]
->     C --> N10[10 Ecuaciones]
->     C --> N11[11 Inecuaciones]
->     D --> N12[12 Induccion]
->     D --> N13[13 Conteo y Binomio]
->     D --> N15[15 Sucesiones]
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
 
 ---
 

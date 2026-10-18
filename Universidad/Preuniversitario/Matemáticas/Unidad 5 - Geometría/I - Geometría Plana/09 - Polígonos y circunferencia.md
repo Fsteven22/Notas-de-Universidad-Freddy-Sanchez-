@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Un polígono es **inscrito** (vértices sobre el círculo) o **circunscrito** (lados tangentes). Los inscritos cumplen Ptolomeo y Brahmagupta; los circunscritos, Pitot — y los regulares son **bicéntricos** (ambos a la vez).
 >
-> ```mermaid
-> graph LR
->     A["Polígono<br/>+ círculo"] --> B{"Vértices<br/>o lados?"}
->     B -->|Vértices en O| C["Inscrito<br/>Ptolomeo"]
->     B -->|Lados tangentes| D["Circunscrito<br/>Pitot"]
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/09_-_Polígonos_y_circunferencia_01.svg]]
 
 ![[U5-ciclico.png]]
 

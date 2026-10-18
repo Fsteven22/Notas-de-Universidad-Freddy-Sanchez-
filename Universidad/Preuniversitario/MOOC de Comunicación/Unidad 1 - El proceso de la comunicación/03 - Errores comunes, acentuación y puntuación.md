@@ -13,12 +13,7 @@ dg-publish: true
 >
 > Esta nota fusiona tres temas complementarios: **vicios de escritura** (discordancias y verbosidad), **normativa ortográfica** (tildes, punto y coma) y **práctica guiada** (ejercicios resueltos). El detalle normativo de la concordancia se estudia en la nota 02; aquí se mantiene el enfoque de vicio y error con ejemplos.
 >
-> ```mermaid
-> graph LR
->   A[Texto con vicios<br/>redundante y ambiguo] --> B[Normativa ortografica<br/>tilde punto y coma]
->   B --> C[Texto claro<br/>conciso y correcto]
->   C --> D[Comunicacion efectiva]
-> ```
+> ![[Diagramas/03_-_Errores_comunes,_acentuación_y_puntuación_01.svg]]
 
 ---
 
@@ -602,26 +597,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Errores Comunes y Ortografia))
-    Vicios de escritura
-      Discordancia de numero y genero
-      Tautologias y pleonasmos
-      Tecnicas de reescritura
-    Normativa ortografica
-      Tildes agudas graves esdrujulas
-      Homofonas con tilde diacritica
-      Punto final seguido aparte
-      Coma y coma criminal
-    Practica guiada
-      Ejercicios 04.1 a 04.5
-      Refuerzo A B y C
-    Metodo en tres pasos
-      Silabear la palabra
-      Hallar la tonica
-      Aplicar la regla
-```
+![[Diagramas/03_-_Errores_comunes,_acentuación_y_puntuación_02.svg]]
 
 ---
 

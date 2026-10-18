@@ -10,15 +10,7 @@ dg-publish: true
 >
 > $Ax=b$ con $A$ matriz $m\times n$ busca $x$ que cumpla **todas** las ecuaciones a la vez. El teorema de **Rouché-Frobenius** (comparar rangos de $A$ y de la ampliada $A|b$) decide si hay solución única, infinitas o ninguna.
 >
-> ```mermaid
-> graph LR
->     A["A x = b"] --> B{"Rango A<br/>vs A|b"}
->     B -->|Iguales = n| C["Única<br/>x=A-1b"]
->     B -->|Iguales menor n| D["Infinitas<br/>parámetros"]
->     B -->|Distintos| E["Incompatible<br/>vacío"]
->     style C fill:#e1ffe1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/05_-_Sistemas_de_ecuaciones_lineales_01.svg]]
 
 ---
 

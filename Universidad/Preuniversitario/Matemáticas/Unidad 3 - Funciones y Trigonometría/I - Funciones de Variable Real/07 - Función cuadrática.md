@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $f(x)=ax^2+bx+c$: parábola con vértice $(-b/2a,f(-b/2a))$, apertura según $a$ y raíces según $\Delta=b^2-4ac$. Optimizar es leer el vértice.
 >
-> ```mermaid
-> graph LR
->     A["a,b,c<br/>coeficientes"] --> B["Vértice<br/>-b/2a"]
->     B --> C["Raíces<br/>Delta"]
->     C --> D["Óptimo<br/>vértice"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/07_-_Función_cuadrática_01.svg]]
 
 ---
 

@@ -16,18 +16,7 @@ dg-publish: true
 >
 > La disección de un párrafo expositivo sigue un proceso reconocible:
 >
-> ```mermaid
-> graph TD
->     A[Leer el parrafo completo] --> B[Buscar la oracion que resume el parrafo]
->     B --> C{Al inicio, al final o implicita}
->     C -->|Al inicio| D[Idea central - oracion tematica inicial]
->     C -->|Al final| E[Idea central - oracion de cierre]
->     C -->|Implicita| F[Idea central - inferida por el lector]
->     D --> G[Clasificar el resto como ideas de apoyo]
->     E --> G
->     F --> G
->     G --> H[Verificar - cada apoyo se conecta con la idea central]
-> ```
+> ![[Diagramas/02_-_Análisis_del_texto_expositivo_01.svg]]
 >
 
 > [!success]- ✅ Idea central vs. idea de apoyo
@@ -199,27 +188,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Analisis del Texto Expositivo))
-    Idea central
-      Oracion mas general
-      Al inicio - deductiva
-      Al final - inductiva
-      Implicita - inferida
-    Ideas de apoyo
-      Ejemplos y datos
-      Definiciones
-      Explicaciones puntuales
-    Tecnica de diseccion
-      Leer el parrafo
-      Ubicar la idea central
-      Clasificar los apoyos
-      Verificar la conexion
-    Aplicacion
-      Resumen por ideas centrales
-      Un parrafo un tema
-```
+![[Diagramas/02_-_Análisis_del_texto_expositivo_02.svg]]
 
 ---
 

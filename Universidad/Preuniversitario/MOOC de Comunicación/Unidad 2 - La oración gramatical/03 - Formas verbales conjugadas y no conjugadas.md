@@ -13,17 +13,7 @@ dg-publish: true
 > 
 > Este tema conecta directamente con [[02 - Oraciones compuestas]]: las subordinadas y coordinadas se articulan gracias a los verbos conjugados de cada proposición.
 > 
-> ```mermaid
-> graph LR
->     A[Verbo en la oracion] --> B[Conjugado]
->     A --> C[No conjugado - Verboide]
->     B --> D[Predicado completo<br/>oracion gramatical]
->     C --> E[Sin tiempo ni persona<br/>no forma predicado solo]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#e1e1ff
-> ```
+> ![[Diagramas/03_-_Formas_verbales_conjugadas_y_no_conjugadas_01.svg]]
 
 ---
 
@@ -210,19 +200,7 @@ dg-publish: true
 > |**¿Constituye predicado solo?**|No|No|No|
 > |**Necesita**|Verbo conjugado cerca|Auxiliar haber o estar|Auxiliar estar / seguir|
 > 
-> ```mermaid
-> graph LR
->     A[Verboides] --> B[Infinitivo -ar -er -ir]
->     A --> C[Participio -ado -ido]
->     A --> D[Gerundio -ando -iendo]
->     B --> E[Funciona como nombre]
->     C --> F[Funciona como adjetivo]
->     D --> G[Funciona como adverbio]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#e1e1ff
-> ```
+> ![[Diagramas/03_-_Formas_verbales_conjugadas_y_no_conjugadas_02.svg]]
 
 ---
 
@@ -360,15 +338,7 @@ dg-publish: true
 > |**hacer**|hecho|haciendo|Ella **hizo** la tarea|Hecho (participio irregular)|
 > |**decir**|dicho|diciendo|Me **dijo** la verdad|Dicho (participio irregular)|
 > 
-> ```mermaid
-> graph LR
->     A[Quiero aprobar] --> B[quiero = conjugado]
->     A --> C[aprobar = infinitivo]
->     D[Estoy cantando] --> E[estoy = conjugado]
->     D --> F[cantando = gerundio]
->     style A fill:#e1ffe1
->     style D fill:#e1e1ff
-> ```
+> ![[Diagramas/03_-_Formas_verbales_conjugadas_y_no_conjugadas_03.svg]]
 
 ---
 
@@ -401,37 +371,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Formas Verbales))
-    Conjugadas
-      Expresan persona y numero
-      Expresan tiempo y modo
-      Nucleo del predicado
-      Ejemplo canto cantan cantare
-    No conjugadas Verboides
-      Infinitivo
-        Terminacion ar er ir
-        Cantar comer vivir
-        Funciona como nombre
-      Participio
-        Terminacion ado ido
-        Cantado comido
-        Irregulares hecho dicho visto
-        Funciona como adjetivo
-      Gerundio
-        Terminacion ando iendo
-        Cantando comiendo
-        Irregulares leyendo yendo
-        Funciona como adverbio
-    Regla de oro
-      Un predicado necesita un conjugado
-      Verboide solo es fragmento
-      Auxiliar mas verboide es correcto
-    Error tipico
-      Cansado de estudiar es fragmento
-      Estaba cansado es oracion
-```
+![[Diagramas/03_-_Formas_verbales_conjugadas_y_no_conjugadas_04.svg]]
 
 ---
 

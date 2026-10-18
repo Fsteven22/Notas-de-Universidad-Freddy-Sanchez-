@@ -10,14 +10,7 @@ dg-publish: true
 >
 > El conjunto $\{P:|PF_1-PF_2|=2a\}$ (diferencia constante): $x^2/a^2-y^2/b^2=1$ con $c^2=a^2+b^2$, asíntotas $y=\pm(b/a)x$ y $e=c/a>1$.
 >
-> ```mermaid
-> graph LR
->     A["Focos F1 F2<br/>diferencia 2a"] --> B["Eje transverso<br/>2a"]
->     B --> C["Asíntotas<br/>y=+-b/a x"]
->     C --> D["Excentricidad<br/>e mayor 1"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Hipérbola_01.svg]]
 
 ![[U5-hiperbola.png]]
 

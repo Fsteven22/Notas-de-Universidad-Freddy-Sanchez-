@@ -10,16 +10,7 @@ dg-publish: true
 >
 > El **rango** $r(A)$ es el número máximo de filas (o columnas) linealmente independientes de $A$. Cuenta las ecuaciones "útiles" de un sistema: con él, Rouché-Frobenius decide si $Ax=b$ tiene solución única, infinitas o ninguna.
 >
-> ```mermaid
-> graph LR
->     A["Matriz A"] --> B["Filas/cols<br/>indep"]
->     B --> C["r(A)"]
->     C --> D{"r = n?"}
->     D -->|Sí| E["Invertible"]
->     D -->|No| F["Singular"]
->     style C fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Rango_de_una_Matriz_01.svg]]
 
 ---
 

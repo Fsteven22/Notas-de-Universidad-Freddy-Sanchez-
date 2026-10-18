@@ -10,16 +10,7 @@ dg-publish: true
 >
 > Dos rectas son **paralelas** ($m_1=m_2$, nunca se cortan), **perpendiculares** ($m_1m_2=-1$, ángulo $90°$), **secantes** (un corte) o **coincidentes** (la misma). Con las pendientes y los coeficientes $A_1/A_2=B_1/B_2$ se decide sin graficar.
 >
-> ```mermaid
-> graph LR
->     A["L1, L2"] --> B{"m1 = m2?"}
->     B -->|No| C["Secantes<br/>un corte"]
->     B -->|Sí| D{"b1 = b2?"}
->     D -->|Sí| E["Coincidentes"]
->     D -->|No| F["Paralelas"]
->     style C fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Clases_de_rectas_en_el_plano_01.svg]]
 
 ![[U5-rectas.png]]
 

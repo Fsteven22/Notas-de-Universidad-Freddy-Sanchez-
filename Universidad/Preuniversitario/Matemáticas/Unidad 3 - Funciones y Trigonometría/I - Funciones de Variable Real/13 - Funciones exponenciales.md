@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Inversas mutuas ($y=a^x\iff x=\log_ay$): la exponencial crece con asíntota $y=0$; el logaritmo crece lento con asíntota $x=0$ y dominio $(0,\infty)$. Juntas convierten productos en sumas y potencias en multiplicaciones.
 >
-> ```mermaid
-> graph LR
->     A["a x<br/>crece"] --> B["Inversa<br/>reflejo y=x"]
->     B --> C["log x<br/>lento"]
->     C --> D["Producto<br/>suma"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/13_-_Funciones_exponenciales_01.svg]]
 
 ![[U3-1314-explog.png]]
 

@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $(r,\theta)$ con $x=r\cos\theta$, $y=r\sin\theta$: multiplicar por $r$ convierte $r=a\sin\theta$ en círculos, y $A=\frac12\int r^2d\theta$ da áreas como $6\pi$ para $r=2+2\cos\theta$.
 >
-> ```mermaid
-> graph LR
->     A["(x,y)<br/>cartesiano"] --> B["(r,theta)<br/>polar"]
->     B --> C["Curvas<br/>r=f(theta)"]
->     C --> D["Área<br/>1/2 int r2"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Coordenadas_polares_01.svg]]
 
 ![[U6-cardioide.png]]
 

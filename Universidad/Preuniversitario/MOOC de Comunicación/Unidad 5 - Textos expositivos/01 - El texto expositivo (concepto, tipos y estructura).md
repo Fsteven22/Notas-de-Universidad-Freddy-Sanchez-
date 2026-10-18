@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Un **texto expositivo** tiene como propósito **informar, explicar o describir** un tema de la manera más **objetiva, clara y neutral** posible. A diferencia del texto argumentativo (ver [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]] de la Unidad 6), no busca persuadir ni defender una postura: no hay tesis que sostener, sino contenido que transmitir con precisión.
 >
-> ```mermaid
-> graph TD
->     A[Texto] --> B[Expositivo]
->     A --> C[Argumentativo]
->     B --> D["Informa / describe / explica"]
->     B --> E["Objetivo, sin sesgo persuasivo ni emocional"]
->     C --> F["Persuade / defiende una tesis"]
-> ```
+> ![[Diagramas/01_-_El_texto_expositivo_(concepto,_tipos_y_estructura)_01.svg]]
 >
 > La clave del texto expositivo es que su valor se mide por **cuánto informa con precisión**, no por cuánto convence.
 
@@ -64,11 +57,7 @@ dg-publish: true
 >
 > Todo texto expositivo bien formado sigue tres bloques ordenados:
 >
-> ```mermaid
-> graph TD
->     A[Introduccion - Contexto del tema] --> B[Desarrollo - Explicacion y ejemplos]
->     B --> C[Conclusion - Sintesis del contenido]
-> ```
+> ![[Diagramas/01_-_El_texto_expositivo_(concepto,_tipos_y_estructura)_02.svg]]
 >
 
 > [!success]- ✅ Detalle de cada bloque
@@ -268,25 +257,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Texto Expositivo))
-    Concepto
-      Informa explica describe
-      Objetivo y neutral
-      Sin tesis ni persuasion
-    Tipos por audiencia
-      Especializado
-      Divulgativo
-    Rasgos de estilo
-      Presente intemporal
-      Modo indicativo
-      Parrafos tematicos
-    Estructura secuencial
-      Introduccion
-      Desarrollo
-      Conclusion
-```
+![[Diagramas/01_-_El_texto_expositivo_(concepto,_tipos_y_estructura)_03.svg]]
 
 ---
 

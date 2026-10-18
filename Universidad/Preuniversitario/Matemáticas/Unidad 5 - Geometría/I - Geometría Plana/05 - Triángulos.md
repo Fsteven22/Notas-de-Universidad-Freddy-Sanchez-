@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Tres lados determinan forma rígida (a diferencia de cuadriláteros) y todo polígono se triangula. Sus leyes —Pitágoras, senos, cosenos— resuelven lados y ángulos, y sus puntos notables (baricentro, incentro, circuncentro) concentran la geometría del triángulo.
 >
-> ```mermaid
-> graph LR
->     A["3 lados<br/>rígido"] --> B["Leyes<br/>Pit/sen/cos"]
->     B --> C["Resolver<br/>lados y ángulos"]
->     C --> D["Notables<br/>G/I/O"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Triángulos_01.svg]]
 
 ![[U5-triangulo.png]]
 

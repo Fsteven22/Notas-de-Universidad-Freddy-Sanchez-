@@ -299,21 +299,7 @@ dg-publish: true
 > 
 > **INTERPRETACIÓN GEOMÉTRICA:**
 > 
-> ```mermaid
-> graph TB
->     A[Matriz A: m×n]
->     B[Row A ⊆ ℝⁿ]
->     C[Col A ⊆ ℝᵐ]
->     A --> B
->     A --> C
->     B --> D[dim = r]
->     C --> E[dim = r]
->     D -.mismo rango.- E
->     style B fill:#c8e6c9
->     style C fill:#bbdefb
->     style D fill:#fff9c4
->     style E fill:#fff9c4
-> ```
+> ![[Diagramas/06_–_Espacio_fila_01.svg]]
 > 
 > **Espacios diferentes, misma dimensión:**
 > 
@@ -350,29 +336,7 @@ dg-publish: true
 > [!note] Visualización del Espacio Fila
 > **Comparación visual Row vs Col:**
 > 
-> ```mermaid
-> graph LR
->     subgraph "Matriz 3×4"
->         A[A]
->     end
->     subgraph "Espacio Fila"
->         B[Row A ⊆ ℝ⁴]
->         B1[dim ≤ 3]
->         B --> B1
->     end
->     subgraph "Espacio Columna"
->         C[Col A ⊆ ℝ³]
->         C1[dim ≤ 3]
->         C --> C1
->     end
->     A --> B
->     A --> C
->     B1 -.misma dim.- C1
->     style B fill:#c8e6c9
->     style C fill:#bbdefb
->     style B1 fill:#fff9c4
->     style C1 fill:#fff9c4
-> ```
+> ![[Diagramas/06_–_Espacio_fila_02.svg]]
 > 
 > **CASO 1: Matriz 2×3 con filas LI**
 > 
@@ -418,26 +382,7 @@ dg-publish: true
 > [!success] Teorema de los Cuatro Subespacios
 > **Para matriz $A$ de $m \times n$ con rango $r$:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Dominio: ℝⁿ"
->         A[Row A<br/>Espacio Fila<br/>dim = r]
->         B[Nul A<br/>Espacio Nulo<br/>dim = n-r]
->     end
->     subgraph "Codominio: ℝᵐ"
->         C[Col A<br/>Espacio Columna<br/>dim = r]
->         D[Nul Aᵀ<br/>Nulo Izquierdo<br/>dim = m-r]
->     end
->     A -->|transformación| C
->     B -->|aniquilado| E[0]
->     A -.ortogonal.- B
->     C -.ortogonal.- D
->     A -.misma dim.- C
->     style A fill:#c8e6c9
->     style B fill:#ffccbc
->     style C fill:#bbdefb
->     style D fill:#ffccbc
-> ```
+> ![[Diagramas/06_–_Espacio_fila_03.svg]]
 > 
 > **TABLA COMPARATIVA:**
 > 

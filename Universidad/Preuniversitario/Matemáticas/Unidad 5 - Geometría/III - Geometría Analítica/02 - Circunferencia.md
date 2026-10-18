@@ -10,14 +10,7 @@ dg-publish: true
 >
 > El conjunto $\{(x,y):(x-h)^2+(y-k)^2=r^2\}$ — puntos a distancia $r$ del centro $(h,k)$. Completando cuadrados se lee centro y radio desde la forma general, y con $T_xx+T_yy=r^2$ se traza la tangente en un punto.
 >
-> ```mermaid
-> graph LR
->     A["Centro<br/>(h,k) + r"] --> B["Canónica<br/>(x-h)2+.."]
->     B --> C["General<br/>completar"]
->     C --> D["Tangente<br/>Txx+Tyy=r2"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Circunferencia_01.svg]]
 
 ---
 

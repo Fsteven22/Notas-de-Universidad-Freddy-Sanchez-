@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$ con $\mathbb{I}=\mathbb{R}-\mathbb{Q}$ — y el decimal delata cada uno: finito o periódico $\iff$ racional (el denominador manda: solo $2^m5^n$ da finito), no periódico $\iff$ irracional.
 >
-> ```mermaid
-> graph LR
->     A["N Z Q<br/>cadena"] --> B["R<br/>Q union I"]
->     B --> C["Decimal<br/>delata"]
->     C --> D["Fracción<br/>10k resta"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Conjuntos_Numéricos_01.svg]]
 
 ![[01-conjuntos-numericos.png]]
 

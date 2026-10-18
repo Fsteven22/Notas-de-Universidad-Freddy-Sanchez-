@@ -32,25 +32,7 @@ dg-publish: true
 > |**Estabilidad numérica**|No amplifica errores|Computación científica|
 > |**Cambios de base**|Transforma coordenadas|Física, ingeniería|
 
-```mermaid
-graph TB
-    A[Matriz Ortogonal Q] --> B[Columnas ortonormales]
-    A --> C[Filas ortonormales]
-    A --> D[Q^T · Q = I]
-    
-    B --> E[Perpendiculares<br/>entre sí]
-    B --> F[Longitud unitaria]
-    
-    C --> E
-    C --> F
-    
-    D --> G[Q^-1 = Q^T]
-    G --> H[Fácil de invertir]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style G fill:#fff4e1
-```
+![[Diagramas/07_–_Matriz_ortogonal_01.svg]]
 
 ---
 
@@ -103,17 +85,7 @@ graph TB
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Origen] --> B[Vector u]
->     A --> C[Vector v]
->     B -.-> D[Ángulo = 90°]
->     C -.-> D
->     E[u · v = 0] --> F[Perpendiculares]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_02.svg]]
 > 
 > **4. Vectores ortonormales:**
 > 
@@ -197,23 +169,7 @@ graph TB
 > 
 > **Propiedades equivalentes:**
 > 
-> ```mermaid
-> graph TD
->     A[Matriz Ortogonal Q] --> B[Q^T Q = I]
->     A --> C[Q Q^T = I]
->     A --> D[Q^-1 = Q^T]
->     A --> E[Columnas ortonormales]
->     A --> F[Filas ortonormales]
->     A --> G[det Q = ±1]
->     B -.-> H[Todas son<br/>equivalentes]
->     C -.-> H
->     D -.-> H
->     E -.-> H
->     F -.-> H
->     G -.-> H
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_03.svg]]
 > 
 > **Matriz identidad como matriz ortogonal:**
 > 
@@ -277,24 +233,7 @@ graph TB
 > 
 > **Flujo de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz Q cuadrada] --> B{¿Calcular Q^T Q?}
->     B -->|Sí| C[Multiplicar matrices]
->     C --> D{¿Resultado = I?}
->     D -->|Sí| E[✅ ES ORTOGONAL]
->     D -->|No| F[❌ NO ES ORTOGONAL]
->     B -->|No| G[Extraer columnas]
->     G --> H[Verificar producto punto<br/>entre cada par]
->     H --> I{¿Todos = 0?}
->     I -->|No| F
->     I -->|Sí| J[Calcular norma<br/>de cada columna]
->     J --> K{¿Todas = 1?}
->     K -->|Sí| E
->     K -->|No| F
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_04.svg]]
 > 
 > **Casos de matrices NO ortogonales:**
 > 
@@ -360,19 +299,7 @@ graph TB
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph TB
->     A[Vector Original] --> B[Aplicar R θ ]
->     B --> C[Vector Rotado]
->     D[Propiedades:] --> E[✅ Mantiene longitud]
->     D --> F[✅ Mantiene ángulos]
->     D --> G[✅ Preserva orientación]
->     H[det R θ = 1] --> I[Rotación pura<br/>sin reflexión]
->     style B fill:#e1ffe1
->     style E fill:#e1f5ff
->     style F fill:#e1f5ff
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_05.svg]]
 > 
 > **Composición de rotaciones:**
 > 
@@ -457,18 +384,7 @@ graph TB
 > 
 > **Comparación rotación vs reflexión:**
 > 
-> ```mermaid
-> graph LR
->     A[Matriz Ortogonal] --> B{det Q = ?}
->     B -->|det = +1| C[🔄 Rotación]
->     B -->|det = -1| D[🪞 Reflexión]
->     C --> E[Preserva orientación]
->     D --> F[Invierte orientación]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_06.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -567,18 +483,7 @@ graph TB
 > 
 > **Importancia computacional:**
 > 
-> ```mermaid
-> graph TD
->     A[Necesito calcular Q^-1] --> B{¿Q es ortogonal?}
->     B -->|No| C[Algoritmo general<br/>Eliminación gaussiana<br/>O n³ operaciones]
->     B -->|Sí| D[Simplemente transponer<br/>O n² operaciones]
->     C --> E[Lento y costoso]
->     D --> F[✅ Rápido y eficiente]
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_07.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -684,17 +589,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Matriz Ortogonal Q] --> B[Preserva normas<br/>Qv = v]
->     A --> C[Preserva productos<br/>Qu · Qv = u · v]
->     B --> D[Preserva distancias<br/>d Qu,Qv = d u,v]
->     C --> E[Preserva ángulos<br/>∠ Qu,Qv = ∠ u,v]
->     D --> F[🎯 Isometría]
->     E --> F
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_08.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -740,16 +635,7 @@ graph TB
 > - **det(Q) = +1**: Preserva orientación (rotación)
 > - **det(Q) = -1**: Invierte orientación (reflexión)
 > 
-> ```mermaid
-> graph LR
->     A[Matriz Ortogonal Q] --> B{det Q = ?}
->     B -->|+1| C[Rotación propia<br/>SO n ]
->     B -->|-1| D[Rotación impropia<br/>reflexión]
->     C --> E[Ejemplos:<br/>Rotaciones<br/>Identidad]
->     D --> F[Ejemplos:<br/>Reflexiones<br/>Inversiones]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_09.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -862,17 +748,7 @@ graph TB
 > 
 > **Pipeline gráfico:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Modelo 3D<br/>Vértices] --> B[Rotación Q₁<br/>Matriz ortogonal]
->     B --> C[Escalado S]
->     C --> D[Traslación T]
->     D --> E[Proyección<br/>Pantalla 2D]
->     F[Ortogonalidad] -.-> B
->     F -.-> G[✅ Sin deformación<br/>✅ Inversión rápida]
->     style B fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_10.svg]]
 
 ### 🔬 Física y Mecánica
 
@@ -972,17 +848,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Datos originales<br/>X correlacionados] --> B[Aplicar PCA<br/>Calcular Q ortogonal]
->     B --> C[Datos transformados<br/>Y = X Q]
->     D[Propiedades de Q] --> E[✅ Vectores ortogonales]
->     D --> F[✅ Preserva distancias]
->     D --> G[✅ Maximiza varianza]
->     C --> H[Componentes<br/>independientes]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_11.svg]]
 > 
 > **Otras aplicaciones estadísticas:**
 > 
@@ -1112,21 +978,7 @@ graph TB
 > 
 > **Flujo del algoritmo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Columnas de A] --> B[Primera columna a₁]
->     B --> C[Normalizar:<br/>q₁ = a₁/‖a₁‖]
->     C --> D[Segunda columna a₂]
->     D --> E[Restar proyección:<br/>v₂ = a₂ - a₂·q₁q₁]
->     E --> F[Normalizar:<br/>q₂ = v₂/‖v₂‖]
->     F --> G[Tercera columna a₃]
->     G --> H[Restar proyecciones:<br/>v₃ = a₃ - a₃·q₁q₁ - a₃·q₂q₂]
->     H --> I[Normalizar:<br/>q₃ = v₃/‖v₃‖]
->     I --> J[Continuar...]
->     style C fill:#e1ffe1
->     style F fill:#e1ffe1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_12.svg]]
 > 
 > **Aplicaciones:**
 > 
@@ -1172,19 +1024,7 @@ graph TB
 > 2. **Σ**: Escalado a lo largo de direcciones principales
 > 3. **U**: Rotación en espacio destino
 > 
-> ```mermaid
-> graph LR
->     A[Vector x] --> B[Rotar: V^T x]
->     B --> C[Escalar: Σ V^T x]
->     C --> D[Rotar: U Σ V^T x]
->     D --> E[Resultado: Ax]
->     F[Ortogonal V] -.-> B
->     G[Valores singulares] -.-> C
->     H[Ortogonal U] -.-> D
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_13.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -1313,20 +1153,7 @@ graph TB
 > 
 > **Aplicaciones:**
 > 
-> ```mermaid
-> graph TB
->     A[Descomposición Espectral<br/>A = QΛQ^T] --> B[Potencias de matriz]
->     A --> C[Función de matriz]
->     A --> D[Formas cuadráticas]
->     B --> E[A^n = QΛ^nQ^T]
->     C --> F[f A = Qf Λ Q^T]
->     D --> G[x^T Ax = y^T Λy]
->     F --> H[e^A, sin A, √A...]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_14.svg]]
 > 
 > **Cálculo de funciones matriciales:**
 > 
@@ -1364,19 +1191,7 @@ graph TB
 > 
 > **Esquema de equivalencias:**
 > 
-> ```mermaid
-> graph TD
->     A[1. Q ortogonal] <--> B[2. Q^T Q = I]
->     B <--> C[3. Q Q^T = I]
->     C <--> D[4. Q^-1 = Q^T]
->     D <--> E[5. Columnas ortonormales]
->     E <--> F[6. Filas ortonormales]
->     F <--> G[7. Preserva producto]
->     G <--> H[8. Preserva norma]
->     H <--> I[9. det = ±1]
->     I <--> A
->     style A fill:#e1f5ff
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_15.svg]]
 > 
 > **Demostración de algunas implicaciones:**
 > 
@@ -1433,20 +1248,7 @@ graph TB
 > 
 > **Estructura de grupo:**
 > 
-> ```mermaid
-> graph TB
->     A[Conjunto de matrices<br/>ortogonales n×n] --> B[Operación: Multiplicación]
->     B --> C[✅ Cerradura:<br/>Q₁Q₂ ortogonal]
->     B --> D[✅ Asociatividad:<br/> Q₁ Q₂Q₃ =  Q₁Q₂ Q₃]
->     B --> E[✅ Identidad:<br/>I ortogonal]
->     B --> F[✅ Inversos:<br/>Q^-1 = Q^T ortogonal]
->     C --> G[Grupo Ortogonal O n ]
->     D --> G
->     E --> G
->     F --> G
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_16.svg]]
 > 
 > **Propiedades adicionales:**
 > 
@@ -1487,17 +1289,7 @@ graph TB
 > 
 > **Relación entre O(n) y SO(n):**
 > 
-> ```mermaid
-> graph TB
->     A[O n <br/>Matrices ortogonales] --> B[det = +1]
->     A --> C[det = -1]
->     B --> D[SO n <br/>Rotaciones]
->     C --> E[Reflexiones e<br/>inversiones]
->     F[Tamaño de O n ] --> G[2 × Tamaño de SO n ]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_17.svg]]
 > 
 > **Ejemplos en dimensiones bajas:**
 > 
@@ -1751,26 +1543,7 @@ graph TB
 > 
 > **Definiciones fundamentales:**
 > 
-> ```mermaid
-> mindmap
->   root((Matriz<br/>Ortogonal))
->     Definición matemática
->       Q^T Q = I
->       Q^-1 = Q^T
->       det Q = ±1
->     Columnas/Filas
->       Ortonormales
->       Base ortonormal
->       Perpendiculares unitarios
->     Propiedades geométricas
->       Preserva normas
->       Preserva ángulos
->       Isometría
->     Tipos
->       Rotaciones det=+1
->       Reflexiones det=-1
->       Permutaciones
-> ```
+> ![[Diagramas/07_–_Matriz_ortogonal_18.svg]]
 > 
 > **Propiedades esenciales:**
 > 

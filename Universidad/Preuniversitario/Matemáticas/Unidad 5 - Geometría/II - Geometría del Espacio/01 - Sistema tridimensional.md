@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Puntos $(x,y,z)$ con distancia $d=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}$, 8 octantes por signos y vectores en $\mathbb{R}^3$ con producto escalar — la extensión directa del plano hacia poliedros y superficies.
 >
-> ```mermaid
-> graph LR
->     A["Punto<br/>(x,y,z)"] --> B["Distancia<br/>3D"]
->     B --> C["Vectores<br/>R3"]
->     C --> D["Planos y<br/>superficies"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Sistema_tridimensional_01.svg]]
 
 ![[U5-3d.png]]
 

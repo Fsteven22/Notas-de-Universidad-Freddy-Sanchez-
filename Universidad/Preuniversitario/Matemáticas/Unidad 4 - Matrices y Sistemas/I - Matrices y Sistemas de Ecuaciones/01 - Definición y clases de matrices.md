@@ -10,13 +10,7 @@ dg-publish: true
 >
 > Una **matriz** $A=(a_{ij})$ de orden $m\times n$ es un arreglo rectangular de $m$ filas y $n$ columnas. Su **clase** (cuadrada, diagonal, identidad, simétrica, triangular) determina qué operaciones admite: solo las cuadradas tienen determinante e inversa.
 >
-> ```mermaid
-> graph LR
->     A["Datos<br/>tabla m x n"] --> B["Matriz<br/>A = (a_ij)"]
->     B --> C{"¿Cuadrada?"}
->     C -->|"Sí"| D["Diagonal / Id / Sim<br/>det e inversa"]
->     C -->|No| E["Rectangular<br/>solo + y por escalar"]
-> ```
+> ![[Diagramas/01_-_Definición_y_clases_de_matrices_01.svg]]
 
 ---
 
@@ -69,20 +63,7 @@ dg-publish: true
 
 ### 🔀 Diagrama de decisión: ¿qué clase es?
 
-```mermaid
-graph TD
-    A["Matriz A de orden m x n"] --> B{"¿m = n?"}
-    B -->|No| C["Rectangular:<br/>fila, columna o general"]
-    B -->|Sí| D{"¿Ceros fuera<br/>de la diagonal?"}
-    D -->|Sí| E["Diagonal<br/>¿unos? → Identidad"]
-    D -->|No| F{"¿A^T = A?"}
-    F -->|Sí| G["Simétrica"]
-    F -->|No| H{"¿A^T = -A?"}
-    H -->|Sí| I["Antisimétrica"]
-    H -->|No| J{"¿Ceros arriba<br/>o abajo?"}
-    J -->|Sí| K["Triangular"]
-    J -->|No| L["Cuadrada general"]
-```
+![[Diagramas/01_-_Definición_y_clases_de_matrices_02.svg]]
 
 ---
 

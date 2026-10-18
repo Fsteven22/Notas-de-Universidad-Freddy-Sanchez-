@@ -32,18 +32,7 @@ dg-publish: true
 > | **Vibraciones** | Modos naturales de oscilación | Análisis estructural, cuerdas |
 > | **Ranking** | Importancia de elementos | PageRank de Google |
 
-```mermaid
-graph LR
-    A[Matriz A] --> B{Transformación}
-    B --> C[Vectores generales<br/>cambian dirección]
-    B --> D[Vectores propios<br/>mantienen dirección]
-    D --> E[Solo se escalan<br/>por λ]
-    
-    style A fill:#e1f5ff
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-    style E fill:#fff4e1
-```
+![[Diagramas/01_-_Valores_y_Vectores_propios_01.svg]]
 
 ---
 
@@ -55,15 +44,7 @@ graph LR
 > 
 > **Comparación visual de vectores:**
 > 
-> ```mermaid
-> graph TD
->     A[Vector cualquiera] --> B[Transformación A]
->     B --> C[Cambia dirección<br/>Y magnitud]
->     D[Vector propio] --> E[Transformación A]
->     E --> F[Solo cambia magnitud<br/>mantiene dirección]
->     style C fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_02.svg]]
 > 
 > **Ejemplo concreto:**
 > 
@@ -78,20 +59,7 @@ graph LR
 > 
 > **Representación gráfica:**
 > 
-> ```mermaid
-> graph LR
->     A[Vector v] -->|Multiplicar por A| B{¿Es vector propio?}
->     B -->|No| C[Av cambia<br/>dirección y magnitud]
->     B -->|Sí| D[Av = λv<br/>solo escala]
->     D --> E[λ > 1: estira]
->     D --> F[0 < λ < 1: contrae]
->     D --> G[λ < 0: invierte]
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
->     style E fill:#ccffcc
->     style F fill:#fff4cc
->     style G fill:#ffcccc
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_03.svg]]
 > 
 > **Casos especiales de valores propios:**
 > 
@@ -129,17 +97,7 @@ graph LR
 > 
 > **Proceso paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A] --> B[Formar A - λI]
->     B --> C[Calcular determinante]
->     C --> D[Igualar a cero]
->     D --> E[Resolver ecuación<br/>polinomial]
->     E --> F[Obtener valores propios λ]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_04.svg]]
 > 
 > **Ejemplo detallado (2×2):**
 > 
@@ -250,18 +208,7 @@ graph LR
 > 
 > **Casos especiales:**
 > 
-> ```mermaid
-> graph TD
->     A[Tipo de Matriz] --> B[Diagonal]
->     A --> C[Triangular]
->     A --> D[Simétrica]
->     B --> E[λ = elementos<br/>diagonales]
->     C --> F[λ = elementos<br/>diagonales]
->     D --> G[λ siempre<br/>REALES]
->     style E fill:#e1ffe1
->     style F fill:#e1ffe1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_05.svg]]
 
 ---
 
@@ -278,18 +225,7 @@ graph LR
 > 
 > **Proceso algorítmico:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Valor propio λ conocido] --> B[Formar A - λI]
->     B --> C[Plantear sistema<br/>homogéneo]
->     C --> D[Reducir a forma<br/>escalonada]
->     D --> E[Identificar variables<br/>libres]
->     E --> F[Expresar solución<br/>general]
->     F --> G[Vector propio v]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_06.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -369,17 +305,7 @@ graph LR
 > 
 > **Base de vectores propios:**
 > 
-> ```mermaid
-> graph LR
->     A[Matriz A<br/>n×n] --> B{¿n vectores propios<br/>linealmente independientes?}
->     B -->|Sí| C[A es diagonalizable]
->     B -->|No| D[A no es diagonalizable]
->     C --> E[Base de vectores<br/>propios]
->     E --> F[Representación<br/>simplificada]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_07.svg]]
 
 ---
 
@@ -411,31 +337,11 @@ graph LR
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Espacio<br/>Original] -->|P⁻¹¹| B[Espacio de<br/>Vectores Propios]
->     B -->|D escala| C[Transformación<br/>Simple]
->     C -->|P| D[Vuelta al<br/>Espacio Original]
->     A -.->|A transforma<br/>complicado| D
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_08.svg]]
 > 
 > **Proceso de diagonalización:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Matriz A] --> B[Calcular valores<br/>propios λ]
->     B --> C[Calcular vectores<br/>propios v]
->     C --> D{¿n vectores LI?}
->     D -->|Sí| E[Formar matriz P<br/>columnas = vectores propios]
->     D -->|No| F[❌ No diagonalizable]
->     E --> G[Formar matriz D<br/>diagonal = λ]
->     G --> H[✓ A = PDP⁻¹¹]
->     style D fill:#fff4e1
->     style F fill:#ffe1e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_09.svg]]
 
 ### 📊 Ejemplo Completo
 
@@ -548,18 +454,7 @@ graph LR
 > 
 > Si A = Aᵄ (simétrica):
 > 
-> ```mermaid
-> graph TD
->     A[Matriz Simétrica<br/>A = Aᵄ] --> B[λ siempre REALES]
->     A --> C[Vectores propios<br/>ORTOGONALES]
->     A --> D[SIEMPRE<br/>diagonalizable]
->     C --> E[Podemos formar<br/>base ortonormal]
->     D --> F[A = QΛQᵄ<br/>Q ortogonal]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_10.svg]]
 > 
 > **Ventajas:**
 > - Q⁻ = Qᵄ (fácil de calcular)
@@ -608,14 +503,7 @@ graph LR
 > 
 > **Regla:** Multiplicidad geométrica ≄ Multiplicidad algebraica
 > 
-> ```mermaid
-> graph TD
->     A[λ con multiplicidad m] --> B{Geométrica = Algebraica?}
->     B -->|Sí| C[✓ Diagonalizable<br/>en ese λ]
->     B -->|No| D[❌ Deficiente<br/>no diagonalizable]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_11.svg]]
 
 ### 🔢 Casos Especiales
 
@@ -700,17 +588,7 @@ graph LR
 > 
 > **Resumen comparativo:**
 > 
-> ```mermaid
-> graph TD
->     A[Tipo de Matriz] --> B[Ortogonal<br/>|λ|=1]
->     A --> C[Proyección<br/>λ ∄ {0,1}]
->     A --> D[Markov<br/>λ_max=1]
->     A --> E[Def. Positiva<br/>λ>0]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe8f0
-> ```
+> ![[Diagramas/01_-_Valores_y_Vectores_propios_12.svg]]
 
 ---
 ## 🎓 Ejercicios Guiados
@@ -987,42 +865,7 @@ graph LR
 
 ### Mapa Conceptual General
 
-```mermaid
-flowchart TD
-    A[Valores y Vectores Propios]
-
-    A --> B[Definición]
-    B --> B1[Av = λv]
-    B --> B2[λ es valor propio]
-    B --> B3[v es vector propio]
-    B --> B4[Ecuación característica]
-
-    A --> C[Cálculo]
-    C --> C1["Calcular det(A − λI) = 0"]
-    C --> C2[Resolver para λ]
-    C --> C3[Encontrar v para cada λ]
-    C --> C4[Normalizar vectores]
-
-    A --> D[Diagonalización]
-    D --> D1[A = P D P⁻¹]
-    D --> D2[P: vectores propios]
-    D --> D3[D: valores propios]
-    D --> D4[Simplifica potencias de A]
-
-    A --> E[Aplicaciones]
-    E --> E1[Sistemas dinámicos]
-    E --> E2[PCA]
-    E --> E3[PageRank]
-    E --> E4[Vibraciones]
-    E --> E5[Estabilidad]
-
-    A --> F[Propiedades]
-    F --> F1[Matrices simétricas]
-    F --> F2[Traza y determinante]
-    F --> F3[Ortogonalidad]
-    F --> F4[Multiplicidad]
-
-```
+![[Diagramas/01_-_Valores_y_Vectores_propios_13.svg]]
 
 ### Tabla Resumen Completa
 
@@ -1100,28 +943,7 @@ flowchart TD
 
 **Has dominado:**
 
-```mermaid
-mindmap
-  root((Valores y Vectores<br/>Propios))
-    Fundamentos
-      Definición Av=λv
-      Ecuación característica
-      Interpretación geométrica
-    Técnicas
-      Cálculo de λ
-      Cálculo de v
-      Diagonalización
-      Métodos numéricos
-    Aplicaciones
-      Sistemas dinámicos
-      PCA
-      PageRank
-      Vibraciones
-    Propiedades
-      Matrices especiales
-      Teoremas
-      Multiplicidad
-```
+![[Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
 
 
 ---

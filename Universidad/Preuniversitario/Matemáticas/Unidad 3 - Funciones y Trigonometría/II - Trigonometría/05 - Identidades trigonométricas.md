@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Igualdades que valen para todo $\theta$: pitagóricas ($\sin^2+\cos^2=1$), suma ($\sin(A+B)$), doble ($\sin2\theta=2\sin\theta\cos\theta$) y mitad. Demostrar es reducir un lado al otro.
 >
-> ```mermaid
-> graph LR
->     A["Pitagórica<br/>base"] --> B["Suma<br/>A+B"]
->     B --> C["Doble<br/>2t"]
->     C --> D["Mitad<br/>t/2"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_-_Identidades_trigonométricas_01.svg]]
 
 ---
 

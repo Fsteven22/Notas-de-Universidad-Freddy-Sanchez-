@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $y=A\sin(Bx-C)+D$: $A$ amplitud, $T=2\pi/B$ período, $C/B$ fase, $D$ eje. $\tan$ repite cada $\pi$ con asíntotas donde $\cos=0$.
 >
-> ```mermaid
-> graph LR
->     A["A<br/>amplitud"] --> B["T=2pi/B<br/>período"]
->     B --> C["Fase<br/>C/B"]
->     C --> D["Eje<br/>D"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Gráficas_de_funciones_trigonométricas_01.svg]]
 
 ![[U3-onda.png]]
 

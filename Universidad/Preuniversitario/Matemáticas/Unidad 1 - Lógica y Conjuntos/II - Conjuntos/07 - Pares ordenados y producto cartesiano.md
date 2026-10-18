@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Todos los pares $(a,b)$ con $a\in A$, $b\in B$: el orden importa ($(2,3)\neq(3,2)$), $|A\times B|=|A||B|$, y un factor vacío anula todo. Relaciones y funciones son subconjuntos de productos.
 >
-> ```mermaid
-> graph LR
->     A["A x B<br/>pares"] --> B["Orden<br/>importa"]
->     B --> C["Cuenta<br/>|A||B|"]
->     C --> D["Relación<br/>subconjunto"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/07_-_Pares_ordenados_y_producto_cartesiano_01.svg]]
 
 ---
 

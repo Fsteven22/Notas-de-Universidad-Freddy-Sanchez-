@@ -25,19 +25,7 @@ dg-publish: true
 > |**Análisis**|Estudiar propiedades (eigenvalores, determinante)|Estabilidad de sistemas|
 > |**Inversión**|Deshacer transformaciones|Criptografía, compresión|
 
-```mermaid
-graph TB
-    A[Transformación Lineal T] --> B{¿Cómo representarla?}
-    B --> C[Matriz A]
-    C --> D[Columnas = Imágenes de la base]
-    D --> E["T(v) = Av"]
-    E --> F[Cálculo práctico]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#ffe1f5
-```
+![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_01.svg]]
 
 ---
 
@@ -51,16 +39,7 @@ graph TB
 > 
 > **Proceso paso a paso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Base estándar<br/>e₁, e₂, ..., eₙ] --> B[Aplicar T]
->     B --> C["T(e₁), T(e₂), ..., T(eₙ)"]
->     C --> D[Escribir como columnas]
->     D --> E["Matriz [T]"]
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_02.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -103,25 +82,7 @@ graph TB
 > 
 > **1. Rotación por ángulo θ (sentido antihorario)**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Vector Original"
->     A1[e₁ = 1,0] 
->     A2[e₂ = 0,1]
->     end
->     subgraph "Rotación θ"
->     B[Aplicar Rotación]
->     end
->     subgraph "Vectores Rotados"
->     C1["T(e₁) = cos(θ), sin(θ)"]
->     C2["T(e₂) = -sin(θ), cos(θ)"]
->     end
->     A1 --> B
->     A2 --> B
->     B --> C1
->     B --> C2
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_03.svg]]
 > 
 > **Matriz de rotación:**
 > 
@@ -152,12 +113,7 @@ graph TB
 > 
 > **2. Reflexión sobre el eje x**
 > 
-> ```mermaid
-> graph LR
->     A["[x, y]"] --> B[Reflexión eje x]
->     B --> C["[x, -y]"]
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_04.svg]]
 > 
 > ```
 > Ref_x = [1   0]
@@ -224,12 +180,7 @@ graph TB
 > 
 > **1. Rotación alrededor del eje z**
 > 
-> ```mermaid
-> graph TB
->     A[Plano xy rota] --> B[Eje z fijo]
->     B --> C["Rz(θ)"]
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_05.svg]]
 > 
 > ```
 > Rz(θ) = [cos(θ)  -sin(θ)  0]
@@ -294,17 +245,7 @@ graph TB
 > 
 > **Algoritmo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Vector v] --> B[Multiplicar fila 1 por v]
->     B --> C[Resultado = componente 1]
->     A --> D[Multiplicar fila 2 por v]
->     D --> E[Resultado = componente 2]
->     C --> F[Vector transformado]
->     E --> F
->     style A fill:#e1ffe1
->     style F fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_06.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -354,15 +295,7 @@ graph TB
 > 
 > La composición S∘T tiene matriz [S][T]
 > 
-> ```mermaid
-> flowchart LR
->     A[ℝⁿ] -->|T| B[ℝᵐ]
->     B -->|S| C[ℝᵖ]
->     A -.->|S∘T = S·T| C
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_07.svg]]
 > 
 > **⚠️ IMPORTANTE: El orden importa**
 > 
@@ -418,18 +351,7 @@ graph TB
 > 
 > **Casos especiales:**
 > 
-> ```mermaid
-> graph TD
->     A[Composición] --> B{¿Conmutan?}
->     B -->|Sí| C[Rotaciones alrededor<br/>del mismo eje]
->     B -->|Sí| D[Escalamientos<br/>uniformes]
->     B -->|No| E[Rotación + Reflexión]
->     B -->|No| F[Rotación + Cizalladura]
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#ffe1e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_08.svg]]
 
 ### 🔄 Transformación Inversa
 
@@ -448,16 +370,7 @@ graph TB
 > 
 > T es invertible ⟺ det([T]) ≠ 0
 > 
-> ```mermaid
-> flowchart TD
->     A[Transformación T] --> B{"det[T] ≠ 0?"}
->     B -->|Sí| C[✅ Invertible]
->     B -->|No| D[❌ No invertible]
->     C --> E["Existe [T]⁻¹"]
->     D --> F[Información perdida]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_09.svg]]
 > 
 > **Cálculo de la inversa en ℝ²:**
 > 
@@ -536,19 +449,7 @@ graph TB
 > - Base rotada: "4 cuadras en diagonal noreste"
 > - **Misma ubicación, diferente descripción**
 > 
-> ```mermaid
-> graph TB
->     A[Transformación T<br/>única e invariante] --> B[Base estándar E]
->     A --> C[Base B]
->     A --> D[Base C]
->     B --> E["Matriz [T]_E"]
->     C --> F["Matriz [T]_B"]
->     D --> G["Matriz [T]_C"]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_10.svg]]
 > 
 > **Notación:**
 > 
@@ -569,17 +470,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Vector en base B] -->|P| B[Vector en base E]
->     B -->|"[T]_E"| C[Transformado en E]
->     C -->|P⁻¹| D[Resultado en base B]
->     A -.->|"[T]_B"| D
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_11.svg]]
 
 ### 🛠️ Ejemplo Completo de Cambio de Base
 
@@ -629,13 +520,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph LR
->     A[Base E] -->|Complicada| B["[3 1]<br>[1 3]"]
->     C[Base B] -->|Simple| D["[4 0]<br>[0 2]"]
->     style B fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_12.svg]]
 > 
 > En la base B:
 > 
@@ -666,16 +551,7 @@ graph TB
 > 
 > A es diagonalizable ⟺ Tiene n eigenvectores linealmente independientes
 > 
-> ```mermaid
-> graph TB
->     A[Matriz A] --> B{¿Diagonalizable?}
->     B -->|Sí| C[Encontrar eigenvectores]
->     C --> D[Formar base con ellos]
->     D --> E[Matriz diagonal D]
->     B -->|No| F[Mantener forma general]
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_13.svg]]
 > 
 > **Fórmula de diagonalización:**
 > 
@@ -717,21 +593,7 @@ graph TB
 > 
 > **Criterios de diagonalización:**
 > 
-> ```mermaid
-> graph TD
->     A[Matriz n×n] --> B{¿Simétrica?}
->     B -->|Sí| C[✅ Siempre diagonalizable]
->     B -->|No| D{¿n eigenvalores<br/>distintos?}
->     D -->|Sí| E[✅ Diagonalizable]
->     D -->|No| F[Verificar multiplicidad]
->     F --> G{¿Suficientes<br/>eigenvectores?}
->     G -->|Sí| H[✅ Diagonalizable]
->     G -->|No| I[❌ No diagonalizable]
->     style C fill:#e1ffe1
->     style E fill:#e1ffe1
->     style H fill:#e1ffe1
->     style I fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_14.svg]]
 
 ---
 
@@ -756,17 +618,7 @@ graph TB
 > 
 > **Visualización en ℝ²:**
 > 
-> ```mermaid
-> graph LR
->     A[Cuadrado<br/>Área = 1] -->|T| B{det T}
->     B -->|"det = 2"| C[Paralelogramo<br/>Área = 2]
->     B -->|"det = 0.5"| D[Paralelogramo<br/>Área = 0.5]
->     B -->|"det = 0"| E[Línea<br/>Área = 0]
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_15.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -795,16 +647,7 @@ graph TB
 > 
 > **Signo del determinante:**
 > 
-> ```mermaid
-> graph TD
->     A[det T] --> B{Signo?}
->     B -->|"+"|C[Preserva orientación]
->     B -->|"-"|D[Invierte orientación]
->     B -->|"0"|E[Reduce dimensión]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_16.svg]]
 > 
 > **Ejemplo de orientación:**
 > 
@@ -892,14 +735,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[ℝⁿ] -->|T| B[Im T ⊂ ℝᵐ]
->     B --> C{dim Im T}
->     C --> D[rango A]
->     style B fill:#e1ffe1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_17.svg]]
 > 
 > **Casos en ℝ³ → ℝ³:**
 > 
@@ -935,15 +771,7 @@ graph TB
 > 
 > **Métodos para calcular rango:**
 > 
-> ```mermaid
-> graph TD
->     A[Calcular rango] --> B[Reducción por filas]
->     A --> C[Determinantes de submatrices]
->     A --> D[Contar pivotes]
->     B --> E[Forma escalonada]
->     E --> F[Contar filas no nulas]
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_18.svg]]
 > 
 > **Propiedades:**
 > 
@@ -960,31 +788,7 @@ graph TB
 
 ### Mapa Conceptual General
 
-```mermaid
-mindmap
-  root((Matriz de<br/>Transformación))
-    Construcción
-      Columnas = T de base
-      Ejemplos 2D
-      Ejemplos 3D
-    Operaciones
-      Multiplicar por vector
-      Composición
-      Inversa
-    Cambio de Base
-      Fórmula P⁻¹AP
-      Diagonalización
-      Eigenvectores
-    Propiedades
-      Determinante
-      Traza
-      Rango
-    Aplicaciones
-      Gráficos
-      Robótica
-      Criptografía
-      PCA
-```
+![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_19.svg]]
 
 >[!success] ### Tabla Resumen de Transformaciones Clásicas
 > 
@@ -998,32 +802,7 @@ mindmap
 > 
 ### Diagrama de Flujo: Trabajar con Matrices
 
-```mermaid
-flowchart TD
-    A[Transformación T] --> B{¿Qué hacer?}
-    
-    B -->|Representar| C[Aplicar T a base]
-    C --> D[Escribir columnas]
-    D --> E["Matriz [T]"]
-    
-    B -->|Aplicar| F["Multiplicar [T]·v"]
-    
-    B -->|Componer| G["Multiplicar [S][T]"]
-    G --> H[Orden: derecha a izq]
-    
-    B -->|Invertir| I{det ≠ 0?}
-    I -->|Sí| J["Calcular [T]⁻¹"]
-    I -->|No| K[No invertible]
-    
-    B -->|Cambiar base| L["Calcular P⁻¹[T]P"]
-    L --> M[¿Diagonal?]
-    M -->|Sí| N[✅ Base de eigenvectores]
-    
-    style E fill:#e1ffe1
-    style J fill:#e1ffe1
-    style K fill:#ffe1e1
-    style N fill:#e1ffe1
-```
+![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_20.svg]]
 
 ---
 
@@ -1139,24 +918,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Matrices de<br/>Transformación))
->     Construcción
->       Columnas de base
->       Ejemplos clásicos
->     Operaciones
->       Aplicar
->       Componer
->       Invertir
->     Cambio de Base
->       Fórmula
->       Diagonalización
->     Propiedades
->       Determinante
->       Traza
->       Rango
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_21.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1171,21 +933,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Matrices de Transformación] --> B[Eigenvalores]
->     B --> C[Diagonalización]
->     C --> D[Forma de Jordan]
->     D --> E[Descomposición SVD]
->     A -.-> F[Aplicaciones]
->     F -.-> G[PCA]
->     F -.-> H[Gráficos 3D]
->     F -.-> I[Machine Learning]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1f5
-> ```
+> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_22.svg]]
 > 
 > **Conceptos clave que siguen:**
 > 

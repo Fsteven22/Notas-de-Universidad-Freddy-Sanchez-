@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Enunciado con valor de verdad único (V o F): "Guayaquil está en Ecuador" sí; "¿cómo estás?", órdenes y paradojas no. El método VADO (Verificable, Aseverativo, Definido, Objetivo) decide en segundos.
 >
-> ```mermaid
-> graph LR
->     A["Enunciado<br/>cualquiera"] --> B["VADO<br/>4 filtros"]
->     B --> C["P<br/>V o F"]
->     C --> D["NP<br/>pregunta/etc"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Proposiciones_01.svg]]
 
 ---
 

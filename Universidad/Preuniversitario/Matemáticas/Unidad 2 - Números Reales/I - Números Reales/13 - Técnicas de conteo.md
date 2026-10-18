@@ -10,14 +10,7 @@ dg-publish: true
 >
 > $P(n,k)$ si importa el orden, $C(n,k)$ si no — y esos mismos $\binom{n}{k}$ son los coeficientes de $(a+b)^n$ (Pascal). Contar subconjuntos por tamaño suma $2^n$; expandir $(a+b)^n$ los usa como pesos.
 >
-> ```mermaid
-> graph LR
->     A["Orden<br/>P o C"] --> B["Pascal<br/>binom"]
->     B --> C["Expande<br/>(a+b)n"]
->     C --> D["Suma filas<br/>2n"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/13_-_Técnicas_de_conteo_01.svg]]
 
 ![[13-pascal.png]]
 

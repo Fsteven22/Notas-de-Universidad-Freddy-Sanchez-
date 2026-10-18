@@ -11,20 +11,7 @@ dg-publish: true
 >
 > En la vida universitaria y profesional necesitas construir oraciones claras para redactar informes, responder exámenes de desarrollo, argumentar en debates y escribir correos formales. Esta nota te enseña la estructura mínima de toda oración y los tres tipos de sujeto que verás en la Unidad 2.
 >
-> ```mermaid
-> graph LR
-> A[Oracion gramatical] --> B[Sujeto]
-> A --> C[Predicado]
-> B --> D[Simple]
-> B --> E[Compuesto]
-> B --> F[Tacito]
-> style A fill:#ffe1e1
-> style B fill:#e1e1ff
-> style C fill:#e1ffe1
-> style D fill:#fff4e1
-> style E fill:#fff4e1
-> style F fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Estructura_de_la_oración_y_tipos_de_sujeto_01.svg]]
 >
 
 ---
@@ -72,20 +59,7 @@ dg-publish: true
 > |**Núcleo del predicado**|Verbo principal conjugado|Siempre un verbo en forma personal|*aprueba*|
 > |**Complementos**|Acompañan a los núcleos para precisar el mensaje|Adjetivos, artículos, adverbios, complementos verbales|*El* estudiante aprueba *el examen final*|
 >
-> ```mermaid
-> graph LR
-> A[Oracion bimembre] --> B[Sujeto]
-> A --> C[Predicado]
-> B --> D[Nucleo nominal]
-> C --> E[Verbo conjugado]
-> C --> F[Complementos]
-> style A fill:#ffe1e1
-> style B fill:#e1e1ff
-> style C fill:#e1ffe1
-> style D fill:#fff4e1
-> style E fill:#fff4e1
-> style F fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Estructura_de_la_oración_y_tipos_de_sujeto_02.svg]]
 >
 >
 
@@ -227,21 +201,7 @@ dg-publish: true
 > |¿Hay verbo en tercera persona singular sin sujeto a la vista?|Revisa el contexto|Puede ser tácito de *él*, *ella*, *usted*|
 >
 
-```mermaid
-graph TD
-A[Sujeto] --> B[Expreso]
-A --> C[Tacito]
-B --> D[Simple un nucleo]
-B --> E[Compuesto dos o mas]
-C --> F[Se deduce del verbo]
-
-style A fill:#ffe1e1
-style B fill:#e1e1ff
-style C fill:#e1ffe1
-style D fill:#fff4e1
-style E fill:#fff4e1
-style F fill:#fff4e1
-```
+![[Diagramas/01_-_Estructura_de_la_oración_y_tipos_de_sujeto_03.svg]]
 
 ---
 
@@ -367,27 +327,7 @@ style F fill:#fff4e1
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Oracion gramatical))
-    Estructura base
-      Sujeto mas Predicado
-      Nucleo nominal
-      Verbo conjugado
-    Sujeto simple
-      Un solo nucleo
-      El estudiante aprueba
-    Sujeto compuesto
-      Dos o mas nucleos
-      Estudiante y profesor conversan
-    Sujeto tacito
-      Omitido recuperable
-      Nosotros Estudiamos
-    Metodo
-      Localizar verbo
-      Preguntar quien
-      Verificar concordancia
-```
+![[Diagramas/01_-_Estructura_de_la_oración_y_tipos_de_sujeto_04.svg]]
 
 ---
 

@@ -28,17 +28,7 @@ dg-publish: true
 > |**Geometría**|Crea sistemas de coordenadas ortogonales|Gráficos 3D, animación|
 > |**Señales**|Análisis de Fourier y wavelets|Procesamiento de audio/video|
 
-```mermaid
-graph LR
-    A[Vectores originales<br/>cualquiera] --> B{Gram-Schmidt}
-    B --> C[Vectores ortogonales<br/>perpendiculares]
-    C --> D[Normalización]
-    D --> E["Vectores ortonormales<br/>||u|| = 1"]
-    
-    style A fill:#ffe1e1
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/05_–_Proceso_de_Gram-Schmidt_01.svg]]
 
 ---
 
@@ -50,16 +40,7 @@ graph LR
 > 
 > **Transformación visual de vectores:**
 > 
-> ```mermaid
-> graph TD
->     A[Vectores originales<br/>v₁, v₂, v₃] --> B[Paso 1: Mantener v₁<br/>normalizar → u₁]
->     B --> C[Paso 2: Proyectar v₂<br/>eliminar componente en u₁]
->     C --> D[Paso 3: Proyectar v₃<br/>eliminar componentes en u₁, u₂]
->     D --> E[Resultado: Base<br/>ortonormal]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_02.svg]]
 > 
 > **Ejemplo concreto en 2D:**
 > 
@@ -73,19 +54,7 @@ graph LR
 > 
 > **Representación gráfica del proceso:**
 > 
-> ```mermaid
-> graph LR
->     A[v₁] -->|Normalizar| B[u₁ = v₁/||v₁||]
->     C[v₂] -->|Proyección| D[proyᵤ₁v₂]
->     C -->|Restar| E[v₂' = v₂ - proyᵤ₁v₂]
->     E -->|Normalizar| F[u₂ = v₂'/||v₂'||]
->     B --> G[✓ ||u₁|| = 1]
->     F --> H[✓ ||u₂|| = 1]
->     F --> I[✓ u₁ ⊥ u₂]
->     style G fill:#e1ffe1
->     style H fill:#e1ffe1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_03.svg]]
 > 
 > **Propiedades visuales clave:**
 > 
@@ -102,16 +71,7 @@ graph LR
 > 
 > **Conceptos relacionados pero distintos:**
 > 
-> ```mermaid
-> graph TD
->     A[Vectores linealmente<br/>independientes] --> B{Gram-Schmidt}
->     B -->|Paso 1| C["Vectores<br/>ORTOGONALES"]
->     C -->|Paso 2| D["Vectores<br/>ORTONORMALES"]
->     C --> E[Perpendiculares<br/>uᵢ · uⱼ = 0]
->     D --> F["Perpendiculares<br/>Y unitarios<br/>||uᵢ|| = 1"]
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_04.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -165,23 +125,7 @@ graph LR
 > 
 > **Proceso algorítmico:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Inicio: v₁, v₂, ..., vₙ] --> B[k = 1]
->     B --> C[Normalizar v₁ → u₁]
->     C --> D[k = k + 1]
->     D --> E{k ≤ n?}
->     E -->|No| F[Fin: u₁, u₂, ..., uₙ]
->     E -->|Sí| G[wₖ = vₖ]
->     G --> H[Para j = 1 hasta k-1]
->     H --> I[wₖ = wₖ - proyᵤⱼvₖ]
->     I --> J["uₖ = wₖ/||wₖ||"]
->     J --> D
->     style C fill:#e1f5ff
->     style I fill:#fff4e1
->     style J fill:#e1ffe1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_05.svg]]
 > 
 > **Propiedades importantes:**
 > 
@@ -349,21 +293,7 @@ graph LR
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph TD
->     A[Gram-Schmidt Clásico] --> B[v₂ - proy₁ - proy₂ - ...]
->     A --> C[Todas las proyecciones<br/>sobre vectores originales]
->     C --> D[⚠️ Acumula errores]
->     E[Gram-Schmidt Modificado] --> F[v₂ - proy₁]
->     F --> G[Actualizar v₂]
->     G --> H[v₃ - proy₁']
->     H --> I[Actualizar v₃]
->     I --> J[✓ Reduce errores]
->     style D fill:#ffe1e1
->     style J fill:#e1ffe1
-> ````
-> **Ejemplo de diferencia numérica:**
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_06.svg]]
 > Vectores casi paralelos:
 > v₁ = [1, 0, 0]
 > v₂ = [1, 1e-10, 0]
@@ -408,17 +338,7 @@ graph LR
 > 
 > **Proceso de construcción:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Matriz A<br/>columnas = v₁, v₂, v₃] --> B[Gram-Schmidt]
->     B --> C[Matriz Q<br/>columnas = u₁, u₂, u₃]
->     B --> D[Matriz R<br/>coeficientes]
->     C --> E[A = QR]
->     D --> E
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_07.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -470,17 +390,7 @@ graph LR
 > 
 > **Solución usando QR:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema: min ||Ax - b||] --> B[Factorizar A = QR]
->     B --> C[Sustituir: min ||QRx - b||]
->     C --> D[Multiplicar por Qᵀ]
->     D --> E[min ||Rx - Qᵀb||]
->     E --> F[Resolver Rx = Qᵀb<br/>sistema triangular]
->     F --> G[Solución x*]
->     style F fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_08.svg]]
 > 
 > **Ventajas sobre ecuaciones normales (AᵀAx = Aᵀb):**
 > 
@@ -546,18 +456,7 @@ graph LR
 > 
 > **Proceso con Gram-Schmidt:**
 > 
-> ```mermaid
-> graph LR
->     A[Señal original] --> B[Muestrear]
->     B --> C[Vectores de datos]
->     C --> D[Gram-Schmidt]
->     D --> E[Base ortogonal]
->     E --> F[Coeficientes]
->     F --> G[Comprimir/<br/>Filtrar]
->     G --> H[Reconstruir]
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_09.svg]]
 > 
 > **Ejemplo: Wavelets de Haar**
 > 
@@ -603,16 +502,7 @@ graph LR
 > 
 > **Caso típico: Cámara virtual**
 > 
-> ```mermaid
-> graph TD
->     A[Posición cámara] --> B[Vector hacia<br/>objetivo: forward]
->     B --> C[Vector up<br/>aproximado]
->     C --> D[Gram-Schmidt:<br/>ortogonalizar]
->     D --> E[forward, right, up<br/>base ortonormal]
->     E --> F[Matriz de vista]
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_10.svg]]
 > 
 > **Algoritmo:**
 > 
@@ -750,19 +640,7 @@ graph LR
 > 
 > **Situaciones problemáticas:**
 > 
-> ```mermaid
-> graph TD
->     A[Vectores de entrada] --> B{¿Linealmente<br/>independientes?}
->     B -->|No| C[❌ GS FALLA]
->     B -->|Sí| D{¿Bien<br/>condicionados?}
->     D -->|No| E[⚠️ Problemas<br/>numéricos]
->     D -->|Sí| F[✓ GS funciona]
->     C --> G[wₖ = 0 en algún paso]
->     E --> H[Pérdida de<br/>ortogonalidad]
->     style C fill:#ffe1e1
->     style E fill:#fff4cc
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Proceso_de_Gram-Schmidt_11.svg]]
 > 
 > **Caso 1: Dependencia lineal**
 > 
@@ -1019,57 +897,7 @@ graph LR
 
 ### 🗺️ Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Gram-Schmidt))
-    Concepto
-      Ortogonalización
-      Normalización
-      Base ortonormal
-      Preserva espacio
-    Algoritmo
-      Clásico
-      Modificado
-      Proyecciones
-      Normalización
-    Aplicaciones
-      Factorización QR
-      Mínimos cuadrados
-      Procesamiento señales
-      Gráficos 3D
-    Propiedades
-      Teoremas
-      Estabilidad
-      Condiciones de fallo
-      Complejidad O(mn²)
-````
-
-
----
-
-## 🔗 Conexión con Próximos Temas
-
-```mermaid
-graph LR
-    A[Gram-Schmidt] --> B[Factorización QR]
-    B --> C[Mínimos cuadrados]
-    C --> D[Regresión lineal]
-    
-    A --> E[Espacios con<br/>producto interno]
-    E --> F[Polinomios<br/>ortogonales]
-    F --> G[Series de Fourier]
-    
-    A --> H[Valores propios]
-    H --> I[Algoritmo QR]
-    I --> J[Diagonalización]
-    
-    B --> K[SVD]
-    K --> L[PCA]
-    
-    style A fill:#e1ffe1
-    style B fill:#fff4e1
-    style K fill:#e1f5ff
-```
+![[Diagramas/05_–_Proceso_de_Gram-Schmidt_12.svg]]
 
 ---
 

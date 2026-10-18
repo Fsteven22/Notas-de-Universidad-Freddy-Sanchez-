@@ -12,23 +12,7 @@ dg-publish: true
 >
 > Los complejos en forma polar $z = r(\cos\theta + i\,\mathrm{sen}\,\theta) = re^{i\theta}$ son el puente natural entre ambos bloques: el módulo y el argumento **son** coordenadas polares.
 
-```mermaid
-graph TD
-  U6[Unidad 6 - Complejos y Polares] --> C1[Numeros Complejos]
-  U6 --> C2[Coordenadas Polares]
-  C1 --> N01[Definicion y representacion geometrica]
-  C1 --> N02[Operaciones]
-  C2 --> N03[Plano polar]
-  C2 --> N04[Coordenadas polares]
-  C2 --> N05[Graficacion en polares]
-  C2 --> N06[Rectas]
-  C2 --> N07[Circunferencias]
-  C2 --> N08[Caracoles y cardioide]
-  C2 --> N09[Rosas]
-  C2 --> N10[Lemniscatas]
-  C2 --> N11[Espirales]
-  C2 --> N12[Conicas y Kepler]
-```
+![[Diagramas/00_-_Índice_Unidad_6_01.svg]]
 
 ---
 
@@ -102,25 +86,7 @@ graph TD
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Unidad 6))
-    Complejos
-      Definicion y plano
-      Operaciones
-      Euler y De Moivre
-    Polares base
-      Plano y conversion
-      Graficacion
-      Areas y tangentes
-    Curvas
-      Rectas y circulos
-      Caracoles y rosas
-      Lemniscatas y espirales
-    Conicas
-      Ecuacion unificada
-      Kepler y Hohmann
-```
+![[Diagramas/00_-_Índice_Unidad_6_02.svg]]
 
 ---
 

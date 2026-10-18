@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Por **fórmula** (algebraicas vs trascendentes) y por **comportamiento** (inyectiva, sobreyectiva, par/impar, periódica, monótona): la prueba horizontal decide inyectividad y $f(-x)$ la paridad.
 >
-> ```mermaid
-> graph LR
->     A["Fórmula<br/>alg o trasc"] --> B["Inyectiva<br/>horiz"]
->     B --> C["Par/impar<br/>f(-x)"]
->     C --> D["Periódica<br/>monótona"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Tipos_de_funciones_01.svg]]
 
 ---
 

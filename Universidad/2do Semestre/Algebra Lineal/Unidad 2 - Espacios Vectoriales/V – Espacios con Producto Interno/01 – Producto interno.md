@@ -20,15 +20,7 @@ dg-publish: true
 > 
 > **Desde lo conocido a lo abstracto:**
 > 
-> ```mermaid
-> graph LR
->     A[Producto Punto en ℝⁿ<br/>u·v = u₁v₁ + ... + uₙvₙ] --> B[Generalización]
->     B --> C[Producto Interno ⟨u,v⟩<br/>Espacio abstracto V]
->     C --> D[Mantiene propiedades<br/>esenciales]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Producto_interno_01.svg]]
 
 ---
 
@@ -53,22 +45,7 @@ dg-publish: true
 > 
 > **Visualización de los axiomas:**
 > 
-> ```mermaid
-> graph TD
->     A[Producto Interno ⟨·,·⟩] --> B[PI1: Linealidad]
->     A --> C[PI2: Simetría]
->     A --> D[PI3: Positividad]
->     A --> E[PI4: Definición Positiva]
->     B --> F[⟨αu+v,w⟩ = α⟨u,w⟩ + ⟨v,w⟩]
->     C --> G[⟨u,v⟩ = ⟨v,u⟩]
->     D --> H[⟨v,v⟩ ≥ 0]
->     E --> I[⟨v,v⟩ = 0 ⟺ v = 0]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Producto_interno_02.svg]]
 > 
 > ### Axiomas para Espacios Complejos
 > 
@@ -169,14 +146,7 @@ dg-publish: true
 > 
 > **Aplicación práctica:**
 > 
-> ```mermaid
-> graph LR
->     A[Datos: temperatura, humedad, presión] --> B[Pesos: 1, 3, 2]
->     B --> C[Producto ponderado]
->     C --> D[Humedad tiene más<br/>impacto en el resultado]
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Producto_interno_03.svg]]
 
 ### 📊 Ejemplo 3: Producto Interno en $C[a,b]$
 
@@ -193,14 +163,7 @@ dg-publish: true
 > - Si $f$ y $g$ son ambas positivas: el producto interno mide el "área de solapamiento"
 > - Si $f$ y $g$ tienen signos opuestos en algunos lugares: el producto puede ser pequeño o cero
 > 
-> ```mermaid
-> graph TD
->     A[Funciones f y g] --> B[Multiplicar punto a punto<br/>f·x·g·x]
->     B --> C["Integrar sobre [a,b]"]
->     C --> D[⟨f,g⟩ = ∫ f·x·g·x dx]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Producto_interno_04.svg]]
 > 
 > **Ejemplo 1: Funciones polinomiales**
 > 
@@ -286,15 +249,7 @@ dg-publish: true
 > 
 > **Aplicación en polinomios ortogonales:**
 > 
-> ```mermaid
-> graph TD
->     A[Intervalo y función peso] --> B[Definen familia de<br/>polinomios ortogonales]
->     B --> C{Ejemplos}
->     C --> D["w·x = 1 en [-1,1]<br/>→ Polinomios de Legendre"]
->     C --> E["w·x = 1/√·1-x² en [-1,1]<br/>→ Polinomios de Chebyshev"]
->     C --> F["w·x = e⁻ˣ en [0,∞]<br/>→ Polinomios de Laguerre"]
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Producto_interno_05.svg]]
 
 ### 📊 Ejemplo 5: Producto de Frobenius en Matrices
 
@@ -415,13 +370,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Paralelogramo con<br/>lados u y v] --> B[Suma de cuadrados<br/>de diagonales]
->     B --> C[= 2 × suma de cuadrados<br/>de los lados]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Producto_interno_06.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -460,16 +409,7 @@ dg-publish: true
 > 
 > donde $|\mathbf{v}| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$ es la norma inducida.
 > 
-> ```mermaid
-> graph TD
->     A[⟨u,v⟩] --> B{Signo del<br/>producto}
->     B -->|> 0| C[Ángulo agudo<br/>0° < θ < 90°]
->     B -->|= 0| D[Ortogonales<br/>θ = 90°]
->     B -->|< 0| E[Ángulo obtuso<br/>90° < θ < 180°]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Producto_interno_07.svg]]
 > 
 > **Casos especiales:**
 > 
@@ -523,23 +463,7 @@ dg-publish: true
 > 
 > ### Checklist de Verificación
 > 
-> ```mermaid
-> graph TD
->     A[Candidato a<br/>producto interno] --> B{PI1: Linealidad?}
->     B -->|No| Z1[❌ NO es producto interno]
->     B -->|Sí| C{PI2: Simetría?}
->     C -->|No| Z2[❌ NO es producto interno]
->     C -->|Sí| D{PI3: Positividad?}
->     D -->|No| Z3[❌ NO es producto interno]
->     D -->|Sí| E{PI4: Definición positiva?}
->     E -->|No| Z4[❌ NO es producto interno]
->     E -->|Sí| F[✅ SÍ es producto interno]
->     style F fill:#e1ffe1
->     style Z1 fill:#ffe1e1
->     style Z2 fill:#ffe1e1
->     style Z3 fill:#ffe1e1
->     style Z4 fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Producto_interno_08.svg]]
 
 ---
 
@@ -654,30 +578,7 @@ dg-publish: true
 > - **Regresión** por mínimos cuadrados
 > - **Análisis multivariado**
 > 
-> ```mermaid
-> mindmap
->   root((Producto<br/>Interno))
->     Geometría
->       Ángulos
->       Distancias
->       Proyecciones
->     Física
->       Trabajo
->       Campos
->       Cuántica
->     Señales
->       Correlación
->       Fourier
->       Filtros
->     ML/AI
->       Similitud
->       Kernels
->       PCA
->     Estadística
->       Correlación
->       Regresión
->       Multivariado
-> ```
+> ![[Diagramas/01_–_Producto_interno_09.svg]]
 
 ---
 

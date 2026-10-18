@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Puntos $P(r,\theta)$: $r$ distancia al polo, $\theta$ ángulo desde el eje polar. Conversión $x=r\cos\theta$, $y=r\sin\theta$; $r$ negativo invierte la dirección ($\theta+\pi$).
 >
-> ```mermaid
-> graph LR
->     A["Polo O<br/>eje polar"] --> B["Punto<br/>(r,theta)"]
->     B --> C["Cartesiano<br/>x=rcos y=rsen"]
->     C --> D["Distancia<br/>ley cosenos"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Plano_polar_01.svg]]
 
 ![[U6-polar.png]]
 

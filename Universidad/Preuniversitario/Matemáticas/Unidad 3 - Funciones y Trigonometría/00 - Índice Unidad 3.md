@@ -10,17 +10,7 @@ dg-publish: true
 >
 > Esta unidad estudia las **funciones de variable real** (definición, gráficas, operaciones y familias elementales) y la **trigonometría** (ángulos, razones, gráficas, identidades y ecuaciones). Es la base del cálculo: límites, derivadas e integrales operan sobre las funciones que aquí se aprenden a analizar y graficar.
 >
-> ```mermaid
-> graph TD
->     U[Unidad 3 - Funciones y Trigonometria] --> F[Funciones de Variable Real]
->     U --> T[Trigonometria]
->     F --> F1[Base: definicion dominio rango]
->     F --> F2[Analisis: graficas y operaciones]
->     F --> F3[Familias: lineal a logaritmica]
->     T --> T1[Angulos y razones]
->     T --> T2[Graficas e inversas]
->     T --> T3[Identidades y ecuaciones]
-> ```
+> ![[Diagramas/00_-_Índice_Unidad_3_01.svg]]
 
 ---
 
@@ -78,28 +68,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Unidad 3 Funciones y Trigonometria))
-    Funciones base
-      Definicion dominio rango
-      Representacion grafica
-      Tramos y tipos
-    Analisis
-      Tecnicas de graficacion
-      Operaciones y composicion
-      Funcion inversa
-    Familias
-      Lineal y cuadratica
-      Polinomial y racional
-      Exponencial y logaritmo
-      Especiales
-    Trigonometria
-      Angulos y medidas
-      Razones elementales
-      Graficas e inversas
-      Identidades y ecuaciones
-```
+![[Diagramas/00_-_Índice_Unidad_3_02.svg]]
 
 ---
 

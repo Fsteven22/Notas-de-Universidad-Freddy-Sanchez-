@@ -10,14 +10,7 @@ dg-publish: true
 >
 > Grados ($360°$ la vuelta) y radianes ($2\pi$ la vuelta, $\pi$ rad $=180°$): con $s=r\theta$ y $A=r^2\theta/2$ el radián vuelve arco y sector multiplicaciones directas.
 >
-> ```mermaid
-> graph LR
->     A["Grados<br/>360"] --> B["Radianes<br/>2pi"]
->     B --> C["Arco<br/>s=rt"]
->     C --> D["Sector<br/>r2t/2"]
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Ángulos_y_sus_medidas_01.svg]]
 
 ---
 
