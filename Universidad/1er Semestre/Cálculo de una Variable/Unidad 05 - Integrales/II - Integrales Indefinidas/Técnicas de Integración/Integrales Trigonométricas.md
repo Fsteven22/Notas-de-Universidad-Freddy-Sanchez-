@@ -15,21 +15,7 @@ dg-publish: true
 > **Caso 1**: Si $m$ es impar → usar $u = \cos(x)$, $du = -\sin(x)dx$ **Caso 2**: Si $n$ es impar → usar $u = \sin(x)$, $du = \cos(x)dx$  
 > **Caso 3**: Si ambos son pares → usar identidades de reducción de potencia **Caso 4**: Si ambos son impares → elegir la sustitución más conveniente
 
-```mermaid
-flowchart TD
-    A["∫ sin^m(x) cos^n(x) dx"] --> B{"¿m es impar?"}
-    B -->|Sí| C["u = cos(x)<br/>du = -sin(x)dx<br/>sin²(x) = 1 - cos²(x)"]
-    B -->|No| D{"¿n es impar?"}
-    D -->|Sí| E["u = sin(x)<br/>du = cos(x)dx<br/>cos²(x) = 1 - sin²(x)"]
-    D -->|No| F{"¿Ambos son pares?"}
-    F -->|Sí| G["Usar identidades:<br/>sin²(x) = (1-cos(2x))/2<br/>cos²(x) = (1+cos(2x))/2"]
-    F -->|No| H["Caso mixto:<br/>Usar la sustitución<br/>más conveniente"]
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style E fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style G fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
-    style H fill:#E6E6FA,stroke:#9370DB,stroke-width:2px
-```
+![[Diagramas/Integrales_Trigonométricas_01.svg]]
 
 > [!example] 🔢 Ejemplo 1: Exponente Impar **Resolver**: $\int \sin^3(x) \cos^2(x) , dx$
 > 
@@ -57,18 +43,7 @@ flowchart TD
 > 
 > **Caso 1**: Si $n$ es par → usar $u = \tan(x)$, $du = \sec^2(x)dx$ **Caso 2**: Si $m$ es impar y $n$ es impar → usar $u = \sec(x)$, $du = \sec(x)\tan(x)dx$ **Caso 3**: Si $m$ es par y $n$ es impar → usar $\tan^2(x) = \sec^2(x) - 1$ repetidamente **Caso 4**: Si $m$ es impar y $n$ es par → combinar métodos o usar reducción
 
-```mermaid
-flowchart TD
-    A["∫ tan^m(x) sec^n(x) dx"] --> B{"¿n es par?"}
-    B -->|Sí| C["u = tan(x)<br/>du = sec²(x)dx<br/>sec²(x) = 1 + tan²(x)"]
-    B -->|No| D{"¿m es impar?"}
-    D -->|Sí| E["u = sec(x)<br/>du = sec(x)tan(x)dx<br/>tan²(x) = sec²(x) - 1"]
-    D -->|No| F["m par, n impar<br/>Usar tan²(x) = sec²(x) - 1<br/>y reducir potencias"]
-    
-    style C fill:#98FB98,stroke:#228B22,stroke-width:2px
-    style E fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style F fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-```
+![[Diagramas/Integrales_Trigonométricas_02.svg]]
 
 > [!example] 🔢 Ejemplo 3: Secante Par **Resolver**: $\int \tan^3(x) \sec^4(x) , dx$
 > 
@@ -190,25 +165,7 @@ flowchart TD
 > 3. **Si $R(-\sin(x), -\cos(x)) = R(\sin(x), \cos(x))$** → usar $u = \tan(x)$
 > 4. **En otros casos** → usar sustitución de Weierstrass
 
-```mermaid
-flowchart TD
-    A["Integral Trigonométrica"] --> B{"¿Método directo<br/>funciona?"}
-    B -->|Sí| C["Aplicar caso específico<br/>(seno/coseno, tan/sec, etc.)"]
-    B -->|No| D["Usar identidades<br/>trigonométricas"]
-    D --> E{"¿Se simplifica?"}
-    E -->|Sí| F["Resolver integral<br/>resultante"]
-    E -->|No| G{"¿Es función racional<br/>en sin y cos?"}
-    G -->|Sí| H["Verificar simetrías<br/>para elegir sustitución"]
-    G -->|No| I["Sustitución de<br/>Weierstrass"]
-    H --> J["u = sin(x), cos(x),<br/>tan(x), o Weierstrass"]
-    I --> K["t = tan(x/2)"]
-    J --> F
-    K --> F
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style F fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style K fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-```
+![[Diagramas/Integrales_Trigonométricas_03.svg]]
 
 ## 📊 Tabla Completa de Integrales Trigonométricas
 

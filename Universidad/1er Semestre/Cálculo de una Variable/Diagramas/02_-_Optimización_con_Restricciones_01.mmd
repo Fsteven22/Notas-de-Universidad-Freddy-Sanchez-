@@ -1,0 +1,24 @@
+graph TD
+    A[Problema con Restricciones] --> B[f x,y objetivo, g x,y = 0 restricción]
+    B --> C[Despejar variable de la restricción]
+    C --> D[y = h x]
+    D --> E[Sustituir en función objetivo]
+    E --> F[F x = f x, h x]
+    F --> G[Derivar y resolver F prima = 0]
+    G --> H[Encontrar puntos críticos]
+    H --> I[Calcular y usando restricción]
+    I --> J[Verificar naturaleza del extremo]
+    
+    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
+    classDef setupNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef substitutionNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
+    classDef calculusNode fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef verificationNode fill:#e0f2f1,stroke:#00695c,stroke-width:3px
+    
+    class A startNode
+    class B,C setupNode
+    class D,E substitutionNode
+    class F,G calculusNode
+    class H,I solutionNode
+    class J verificationNode

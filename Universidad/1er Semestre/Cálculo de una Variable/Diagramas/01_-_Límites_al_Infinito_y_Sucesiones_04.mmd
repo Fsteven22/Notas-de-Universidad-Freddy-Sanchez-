@@ -1,0 +1,15 @@
+flowchart TD
+    A["Funcion racional f(x) = P(x) / Q(x)"] --> B["Identifica grados n y m"]
+    B --> C{"Compara n y m"}
+    
+    C -->|n < m| D["Limite = 0\ny = 0 (asintota horizontal)"]
+    C -->|n = m| E["Limite = an/bm\ny = an/bm (asintota horizontal)"]
+    C -->|n > m| F["Limite = ±infinito\nSin asintota horizontal"]
+    
+    D --> G["Comportamiento: decae a cero"]
+    E --> H["Comportamiento: se estabiliza"]
+    F --> I["Comportamiento: crece sin limite"]
+    
+    style D fill:#E6F3FF
+    style E fill:#E6FFE6  
+    style F fill:#FFE6E6

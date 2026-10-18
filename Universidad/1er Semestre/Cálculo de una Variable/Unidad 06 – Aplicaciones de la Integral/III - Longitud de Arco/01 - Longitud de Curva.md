@@ -25,23 +25,7 @@ dg-publish: true
 
 > [!note] Clasificación de Representaciones de Curvas 📐
 > ### Tipos de Parametrizaciones
-> ```mermaid
-> graph TB
->     A[Representaciones de Curvas] --> B[Paramétrica]
->     A --> C[Cartesiana]
->     A --> D[Polar]
->     A --> E[Vectorial 3D]
->     B --> F["r(t) = (x(t), y(t))<br/>L = ∫√(x'² + y'²)dt"]
->     C --> G["y = f(x)<br/>L = ∫√(1 + (f'(x))²)dx"]
->     D --> H["r = f(θ)<br/>L = ∫√(r² + (dr/dθ)²)dθ"]
->     E --> I["r(t) = (x(t), y(t), z(t))<br/>L = ∫√(x'² + y'² + z'²)dt"]
->     J[Ejemplos] --> K[Círculo: 2πR<br/>Semicírculo: πR<br/>Espiral: Integral compleja]
->     style A fill:#e8f5e8
->     style B fill:#e1f5fe
->     style C fill:#fff3e0
->     style D fill:#e8eaf6
->     style E fill:#f3e5f5
-> ```
+> ![[Diagramas/01_-_Longitud_de_Curva_01.svg]]
 >
 
 > [!tip]+ Fórmulas para Diferentes Representaciones 🔬
@@ -133,20 +117,7 @@ dg-publish: true
 > - Cuadratura Gaussiana
 > 
 > ### Casos Especiales Integrables
-> ```mermaid
-> graph LR
->     A["Curvas con Longitud Exacta"] --> B["Línea Recta<br/>L = √((x₂-x₁)² + (y₂-y₁)²)"]
->     A --> C["Círculo<br/>L = 2πr"]
->     A --> D["Elipse<br/>L ≈ π(a+b) aproximado"]
->     A --> E["Catenaria<br/>y = a cosh(x/a)<br/>Integrable exacta"]
->     A --> F[Cicloide<br/>L = 8a]
->     style A fill:#e8f5e8
->     style B fill:#c8e6c9
->     style C fill:#c8e6c9
->     style D fill:#fff3e0
->     style E fill:#c8e6c9
->     style F fill:#c8e6c9
-> ```
+> ![[Diagramas/01_-_Longitud_de_Curva_02.svg]]
 >
 
 > [!success] Aplicaciones y Contextos Físicos 🌍
@@ -484,24 +455,7 @@ dg-publish: true
 
 > [!info] 💡 **¿Cuándo usar cada método?**
 > 
-> ```mermaid
-> flowchart TD
->     A["Curva dada"] --> B{"¿En qué forma está expresada?"}
->     B -->|"y = f(x)"| C{"¿f'(x) es simple?"}
->     B -->|"x = g(y)"| D{"¿g'(y) es simple?"}
->     B -->|"r = h(θ)"| E["Usar coordenadas polares"]
->     B -->|"x(t), y(t)"| F["Usar forma paramétrica"]
->     C -->|Sí| G["Usar L = ∫√(1+[f'(x)]²)dx"]
->     C -->|No| H["Considerar parametrización"]
->     D -->|Sí| I["Usar L = ∫√(1+[g'(y)]²)dy"]
->     D -->|No| J["Considerar otra forma"]
->     E --> K["L = ∫√(r² + [r']²)dθ"]
->     F --> L["L = ∫√([x']² + [y']²)dt"]
->     style G fill:#96ceb4
->     style I fill:#96ceb4
->     style K fill:#ffb3ba
->     style L fill:#ffd93d
-> ```
+> ![[Diagramas/01_-_Longitud_de_Curva_03.svg]]
 
 ### 📋 Tabla de Decisión
 

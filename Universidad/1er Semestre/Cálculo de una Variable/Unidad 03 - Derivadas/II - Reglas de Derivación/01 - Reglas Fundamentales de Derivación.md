@@ -358,29 +358,7 @@ dg-publish: true
 > • $\frac{d}{dx}[\tan x] = \sec^2 x$ (memorizar, no derivar $\frac{\sin x}{\cos x}$ cada vez)
 > • $\frac{d}{dx}[x^n e^x]$ aparece frecuentemente → patrón de producto
 
-```mermaid
-graph TD
-    A[Función a derivar] --> B{Tipo de función}
-    B --> C[Simple - Tabla]
-    B --> D[Suma/Diferencia]
-    B --> E[Producto]
-    B --> F[Cociente]
-    
-    C --> G[Aplicar fórmula directa]
-    D --> H[Derivar término a término]
-    E --> I[Regla del producto]
-    F --> J[Regla del cociente]
-    
-    G --> K[Resultado final]
-    H --> K
-    I --> K
-    J --> K
-    
-    style A fill:#fff3e0
-    style K fill:#e8f5e8
-    style I fill:#ffecb3
-    style J fill:#ffcdd2
-```
+![[Diagramas/01_-_Reglas_Fundamentales_de_Derivación_01.svg]]
 
 ---
 
@@ -479,36 +457,7 @@ graph TD
 > • Modelo logístico: $P(t) = \frac{K}{1 + ae^{-rt}}$
 > • Tasa de crecimiento: $P'(t) = \frac{rKae^{-rt}}{(1 + ae^{-rt})^2}$
 
-```mermaid
-graph TD
-    A[Reglas de Derivación] --> B{Áreas de Aplicación}
-    B --> C[Física]
-    B --> D[Economía]
-    B --> E[Ingeniería]
-    B --> F[Ciencias Naturales]
-    
-    C --> G[Cinemática]
-    C --> H[Dinámica]
-    C --> I[Ondas y Oscilaciones]
-    
-    D --> J[Análisis Marginal]
-    D --> K[Optimización Económica]
-    D --> L[Modelos Financieros]
-    
-    E --> M[Control de Sistemas]
-    E --> N[Análisis Estructural]
-    E --> O[Circuitos Eléctricos]
-    
-    F --> P[Química Cinética]
-    F --> Q[Biología Poblacional]
-    F --> R[Modelos Ambientales]
-    
-    style A fill:#fff3e0
-    style G fill:#e8f5e8
-    style J fill:#ffecb3
-    style M fill:#e1bee7
-    style P fill:#f3e5f5
-```
+![[Diagramas/01_-_Reglas_Fundamentales_de_Derivación_02.svg]]
 
 ---
 
@@ -578,31 +527,7 @@ graph TD
 > • **Biología** - Modelos de crecimiento poblacional
 > • **Química** - Cinética de reacciones
 
-```mermaid
-mindmap
-  root((Reglas de Derivación))
-    Reglas Básicas
-      Constante
-      Potencia
-      Múltiplo constante
-      Suma y diferencia
-    Reglas Avanzadas
-      Producto
-      Cociente
-      Cadena
-      Implícita
-    Funciones Elementales
-      Algebraicas
-      Trigonométricas
-      Exponenciales
-      Logarítmicas
-      Hiperbólicas
-    Aplicaciones
-      Física
-      Economía
-      Ingeniería
-      Optimización
-```
+![[Diagramas/01_-_Reglas_Fundamentales_de_Derivación_03.svg]]
 
 ---
 

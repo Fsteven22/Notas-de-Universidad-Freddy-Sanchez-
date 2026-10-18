@@ -32,24 +32,7 @@ dg-publish: true
 >
 >Los métodos numéricos aproximan esta suma con un número finito de términos, eligiendo diferentes formas de seleccionar $x_i^*$ y aproximar $f(x)$.
 
-```mermaid
-flowchart TD
-    A["Integral ∫f(x)dx"] --> B["Dividir [a,b] en n subintervalos"]
-    B --> C["Elegir puntos de muestra"]
-    C --> D{"¿Cómo aproximar f(x)?"}
-    
-    D -->|Constante| E["Regla del Rectángulo"]
-    D -->|Lineal| F["Regla del Trapecio"]
-    D -->|Cuadrática| G["Regla de Simpson"]
-    
-    E --> H["Suma de áreas rectangulares"]
-    F --> I["Suma de áreas trapezoidales"]
-    G --> J["Suma de áreas parabólicas"]
-    
-    style H fill:#ff6b6b
-    style I fill:#96ceb4
-    style J fill:#45b7d1
-```
+![[Diagramas/01_-_Integración_Numérica_01.svg]]
 
 ## 📊 Regla del Rectángulo (Riemann)
 

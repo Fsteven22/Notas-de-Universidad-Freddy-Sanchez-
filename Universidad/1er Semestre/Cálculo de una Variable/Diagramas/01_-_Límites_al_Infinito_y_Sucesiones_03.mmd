@@ -1,0 +1,13 @@
+flowchart TD
+    A["Funcion f(x)"] --> B{"Existe limite cuando x tiende a infinito?"}
+    B -->|Si, L finito| C["Asintota horizontal y = L"]
+    B -->|Si, infinito| D["No hay asintota horizontal"]
+    B -->|No existe| E["Comportamiento oscilatorio"]
+    
+    C --> F["La funcion se estabiliza"]
+    D --> G["Crecimiento ilimitado"]
+    E --> H["Funciones como seno y coseno"]
+    
+    style C fill:#90EE90
+    style D fill:#FFB6C1
+    style E fill:#FFE4B5

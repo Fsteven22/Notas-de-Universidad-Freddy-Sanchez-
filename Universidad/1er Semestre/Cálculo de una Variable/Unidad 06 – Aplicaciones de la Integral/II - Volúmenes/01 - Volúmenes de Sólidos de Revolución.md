@@ -34,17 +34,7 @@ dg-publish: true
 > 
 > **Solución**: $$V = \pi \int_0^4 (\sqrt{x})^2 , dx = \pi \int_0^4 x , dx = \pi \left[\frac{x^2}{2}\right]_0^4 = 8\pi$$
 
-```mermaid
-graph TD
-    A["Función f(x)"] --> B["Rotar alrededor del eje"]
-    B --> C["Generar discos"]
-    C --> D["Radio = f(x)"]
-    D --> E["Área = π[f(x)]²"]
-    E --> F["Volumen = ∫ π[f(x)]² dx"]
-    
-    style A fill:#e1f5fe
-    style F fill:#c8e6c9
-```
+![[Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_01.svg]]
 
 ## Método de las Arandelas 🍩
 
@@ -75,19 +65,7 @@ graph TD
 > 
 > **Solución**: $$V = \pi \int_{-1}^2 \left[(x+2)^2 - (x^2)^2\right] dx$$ $$= \pi \int_{-1}^2 \left[x^2 + 4x + 4 - x^4\right] dx$$
 
-```mermaid
-flowchart LR
-    A["Región entre curvas"] --> B["f(x) función exterior"]
-    A --> C["g(x) función interior"]
-    B --> D["Radio R = f(x)"]
-    C --> E["Radio r = g(x)"]
-    D --> F["Arandela: π(R² - r²)"]
-    E --> F
-    F --> G["V = π∫(R² - r²)dx"]
-    
-    style A fill:#fff3e0
-    style G fill:#e8f5e8
-```
+![[Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_02.svg]]
 
 ## Método de las Capas Cilíndricas 🥤
 
@@ -123,20 +101,7 @@ flowchart LR
 > 
 > **Solución**: $$V = 2\pi \int_0^2 x \cdot x^2 , dx = 2\pi \int_0^2 x^3 , dx$$ $$= 2\pi \left[\frac{x^4}{4}\right]_0^2 = 2\pi \cdot 4 = 8\pi$$
 
-```mermaid
-graph TD
-    A["Función f(x)"] --> B["Rotar alrededor eje y"]
-    B --> C["Formar cilindros concéntricos"]
-    C --> D["Radio = x"]
-    C --> E["Altura = f(x)"]
-    D --> F["Circunferencia = 2πx"]
-    E --> F
-    F --> G["Área lateral = 2πx·f(x)"]
-    G --> H["V = 2π∫x·f(x)dx"]
-    
-    style A fill:#f3e5f5
-    style H fill:#e1f5fe
-```
+![[Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_03.svg]]
 
 ## Comparación de Métodos 📊
 

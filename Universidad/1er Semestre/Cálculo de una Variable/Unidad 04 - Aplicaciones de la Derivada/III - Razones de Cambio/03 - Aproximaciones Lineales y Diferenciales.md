@@ -38,17 +38,7 @@ dg-publish: true
 > 
 > Esta es la **ecuación de la recta tangente** en el punto $(a, f(a))$.
 
-```mermaid
-graph TD
-    A["🎯 Función Original f(x)"] --> B["📐 Punto de Tangencia (a, f(a))"]
-    B --> C["📏 Recta Tangente"]
-    C --> D["🔍 Aproximación Local"]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-```
+![[Diagramas/03_-_Aproximaciones_Lineales_y_Diferenciales_01.svg]]
 
 > [!warning] ⚠️ Limitaciones de la Aproximación
 > 
@@ -86,17 +76,7 @@ graph TD
 > 
 > Por tanto: $V = 523.6 \pm 31.4 \text{ cm}^3$ 📐
 
-```mermaid
-flowchart LR
-    A["📏 Medición Inicial<br/>r = 5.0 ± 0.1 cm"] --> B["🔄 Aplicar Diferencial<br/>dV = V'(r)dr"]
-    B --> C["🧮 Calcular<br/>V'(r) = 4πr²"]
-    C --> D["📊 Resultado Final<br/>V = 523.6 ± 31.4 cm³"]
-    
-    style A fill:#e3f2fd
-    style B fill:#f1f8e9
-    style C fill:#fce4ec
-    style D fill:#fff8e1
-```
+![[Diagramas/03_-_Aproximaciones_Lineales_y_Diferenciales_02.svg]]
 
 > [!tip] 🎓 Técnica de Estudio: Mnemotecnia "DALE" Para recordar el proceso de aproximaciones lineales:
 > 

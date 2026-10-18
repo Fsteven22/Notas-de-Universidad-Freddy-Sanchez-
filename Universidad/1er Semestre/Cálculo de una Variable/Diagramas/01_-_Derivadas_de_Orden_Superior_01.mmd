@@ -1,0 +1,17 @@
+flowchart TD
+    A["f(x) - Función original"] --> B["f'(x) - Primera derivada<br/>(Pendiente, Velocidad)"]
+    B --> C["f''(x) - Segunda derivada<br/>(Curvatura, Aceleración)"]
+    C --> D["f'''(x) - Tercera derivada<br/>(Tasa de cambio de curvatura)"]
+    D --> E["f⁽⁴⁾(x) - Cuarta derivada<br/>(y órdenes superiores)"]
+    
+    A -.-> A1["Información: Valor"]
+    B -.-> B1["Información: Crecimiento/Decrecimiento"]
+    C -.-> C1["Información: Concavidad"]
+    D -.-> D1["Información: Puntos de inflexión"]
+    E -.-> E1["Información: Comportamiento complejo"]
+    
+    style A fill:#E6F3FF,stroke:#0066CC,stroke-width:2px
+    style B fill:#90EE90,stroke:#2E8B57,stroke-width:2px
+    style C fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
+    style D fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
+    style E fill:#FFB6C1,stroke:#DC143C,stroke-width:2px

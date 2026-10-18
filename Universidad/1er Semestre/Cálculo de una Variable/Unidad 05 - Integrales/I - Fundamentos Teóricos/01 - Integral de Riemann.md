@@ -30,16 +30,7 @@ $$\Delta x_i = x_i - x_{i-1} \quad \text{(puede variar para cada } i\text{)}$$
 > [!info] 📈 **Refinamiento**
 > Una partición $P'$ es un **refinamiento** de $P$ si $P \subseteq P'$ (contiene todos los puntos de $P$ y posiblemente más).
 
-```mermaid
-graph LR
-    A[Partición Inicial P] --> B[Agregar más puntos]
-    B --> C[Partición Refinada P']
-    C --> D[Mejor aproximación]
-    
-    style A fill:#ff6b6b
-    style C fill:#4ecdc4
-    style D fill:#45b7d1
-```
+![[Diagramas/01_-_Integral_de_Riemann_01.svg]]
 
 ## 📊 Norma de una Partición
 
@@ -57,21 +48,7 @@ graph LR
 > - **Condición de límite**: Para que exista la integral, necesitamos $\|P\| \to 0$
 > - **Independencia de $n$**: No basta con $n \to \infty$, debe cumplirse $\|P\| \to 0$
 
-```mermaid
-flowchart TD
-    A[Norma Grande] --> B[Subintervalos Anchos]
-    B --> C[Aproximación Burda]
-    
-    D[Norma Pequeña] --> E[Subintervalos Finos]
-    E --> F[Aproximación Precisa]
-    
-    F --> G[Límite norma → 0]
-    G --> H[Integral Exacta]
-    
-    style C fill:#ff6b6b
-    style F fill:#96ceb4
-    style H fill:#45b7d1
-```
+![[Diagramas/01_-_Integral_de_Riemann_02.svg]]
 
 ## 🧮 Notación Sigma y Suma de Riemann
 
@@ -122,18 +99,7 @@ Para partición regular con $\Delta x = \frac{b-a}{n}$:
 
 ### 🔍 Interpretación del Límite
 
-```mermaid
-graph TD
-    A[Partición P con norma pequeña] --> B[Calcular Suma de Riemann]
-    B --> C{Norma → 0?}
-    C -->|Sí| D[Sumas convergen a I]
-    C -->|No| E[Refinar partición]
-    E --> A
-    D --> F[I = Integral de Riemann]
-    
-    style F fill:#45b7d1
-    style D fill:#96ceb4
-```
+![[Diagramas/01_-_Integral_de_Riemann_03.svg]]
 
 ## 🧪 Ejemplo Detallado
 
@@ -179,19 +145,7 @@ graph TD
 > ### 🎯 Teorema 3: Discontinuidades Finitas
 > Si $f$ es acotada en $[a,b]$ y tiene un número finito de discontinuidades, entonces $f$ es Riemann integrable en $[a,b]$.
 > 
-```mermaid
-flowchart LR
-    A["Función f en intervalo cerrado"] --> B{"¿Continua?"}
-    B -->|Sí| C[Riemann Integrable]
-    B -->|No| D{"¿Monótona?"}
-    D -->|Sí| C
-    D -->|No| E{"¿Acotada + Finitas discontinuidades?"}
-    E -->|Sí| C
-    E -->|No| F[Puede no ser integrable]
-    
-    style C fill:#96ceb4
-    style F fill:#ff6b6b
-```
+![[Diagramas/01_-_Integral_de_Riemann_04.svg]]
 
 ## 🛠️ Propiedades Fundamentales
 
@@ -225,21 +179,7 @@ flowchart LR
 > - **Área con signo**: Cuando $f(x)$ cambia de signo, se obtiene el área neta
 > - **Aproximación**: Los rectángulos aproximan cada vez mejor la región curva
 
-```mermaid
-graph TD
-    A["Función f(x)"] --> B["Dividir intervalo en subintervalos"]
-    B --> C[Crear rectángulos]
-    C --> D["Altura = f(x*)"]
-    C --> E["Base = Δx"]
-    D --> F["Área de rectángulo = f(x*)Δx"]
-    E --> F
-    F --> G[Sumar todas las áreas]
-    G --> H[Tomar límite norma → 0]
-    H --> I[Integral de Riemann = Área exacta]
-    
-    style I fill:#45b7d1
-    style H fill:#96ceb4
-```
+![[Diagramas/01_-_Integral_de_Riemann_05.svg]]
 
 ---
 

@@ -168,29 +168,7 @@ dg-publish: true
 
 ## 📊 Algoritmo de Aplicación
 
-```mermaid
-flowchart TD
-    A[Límite Complejo] --> B{Operación Principal?}
-    B -->|Suma/Resta| C[Límites Separados]
-    B -->|Producto| D[Producto de Límites]
-    B -->|División| E{Denominador ≠ 0?}
-    B -->|Potencia/Raíz| F{Condiciones de Dominio?}
-    
-    C --> G[L ± M]
-    D --> H[L × M]
-    E -->|Sí| I[L / M]
-    E -->|No| J[Técnicas Especiales]
-    F -->|Sí| K[L^n o ⁿ√L]
-    F -->|No| L[Redefinir Dominio]
-    
-    style A fill:#e3f2fd
-    style G fill:#e8f5e8
-    style H fill:#e8f5e8
-    style I fill:#e8f5e8
-    style K fill:#e8f5e8
-    style J fill:#ffebee
-    style L fill:#fff3e0
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_01.svg]]
 
 ## ⚠️ Casos Especiales y Limitaciones
 
@@ -490,25 +468,7 @@ flowchart TD
 > - $\lim_{x \to 2} (x + 3) = 5 ≠ 0$ ✅
 > - **Resultado:** $\frac{3}{5}$
 
-```mermaid
-graph TD
-    A[Evaluar Producto o Cociente] --> B{Limites individuales existen?}
-    B -->|No| C[No se puede aplicar teorema]
-    B -->|Si| D{Es producto o cociente?}
-    D -->|Producto| E[Multiplicar limites]
-    D -->|Cociente| F{Denominador diferente de cero?}
-    F -->|Si| G[Dividir limites]
-    F -->|No| H[Forma indeterminada o infinito]
-    E --> I[Resultado final]
-    G --> I
-    
-    style A fill:#e3f2fd
-    style E fill:#e8f5e8
-    style G fill:#e8f5e8
-    style I fill:#f3e5f5
-    style C fill:#ffebee
-    style H fill:#fff3e0
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_02.svg]]
 
 ## 📊 Límite de una potencia
 
@@ -583,22 +543,7 @@ graph TD
 > 
 > **Paso 3:** Aplicar $\lim_{x \to a} f(g(x)) = f(L)$
 
-```mermaid
-flowchart TD
-    A[Limite de composicion f de g] --> B[Calcular limite de g]
-    B --> C{g tiene limite L?}
-    C -->|No| D[Limite no existe]
-    C -->|Si| E{f continua en L?}
-    E -->|No| F[No aplicar teorema]
-    E -->|Si| G[Aplicar f en L]
-    G --> H[Resultado f de L]
-    
-    style A fill:#e3f2fd
-    style G fill:#e8f5e8
-    style H fill:#f3e5f5
-    style D fill:#ffebee
-    style F fill:#fff3e0
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_03.svg]]
 
 ### 📊 Tipos Comunes de Composiciones
 
@@ -764,19 +709,7 @@ flowchart TD
 > 
 > **Condición clave:** Si la función es continua → Aplicamos sustitución directa
 
-```mermaid
-graph TD
-    A[Evaluar Limite] --> B{Funcion continua?}
-    B -->|Si| C[Sustitucion Directa]
-    B -->|No| D[Otras Tecnicas]
-    C --> E[Resultado f de a]
-    D --> F[Factorizacion L Hopital]
-    
-    style A fill:#e1f5fe
-    style C fill:#e8f5e8
-    style E fill:#f3e5f5
-    style D fill:#fff3e0
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_04.svg]]
 
 ### 🔢 Polinomios y Funciones Racionales
 
@@ -818,11 +751,7 @@ graph TD
 > 
 > **Ejemplo 3:** $\lim_{x \to \pi/3} \tan(x) = \tan(\pi/3) = \sqrt{3}$
 
-```mermaid
-pie title Funciones Trigonométricas por Continuidad
-    "Continuas en ℝ" : 40
-    "Continuas excepto puntos específicos" : 60
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_05.svg]]
 
 ### 📈 Funciones Exponenciales y Logarítmicas
 
@@ -872,24 +801,7 @@ pie title Funciones Trigonométricas por Continuidad
 
 ## 📊 Algoritmo de Decisión
 
-```mermaid
-flowchart TD
-    A[Limite a Evaluar] --> B{x en dominio?}
-    B -->|No| C[Fuera del dominio]
-    B -->|Si| D{Funcion continua?}
-    D -->|No| E[Limites laterales]
-    D -->|Si| F[Sustitucion Directa]
-    F --> G[f de a es Resultado]
-    C --> H[Tecnicas especiales]
-    E --> I[Analizar discontinuidad]
-    
-    style A fill:#e3f2fd
-    style F fill:#e8f5e8  
-    style G fill:#f3e5f5
-    style C fill:#ffebee
-    style E fill:#fff3e0
-    style H fill:#fce4ec
-```
+![[Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_06.svg]]
 
 ## 📚 Referencias y Conexiones
 

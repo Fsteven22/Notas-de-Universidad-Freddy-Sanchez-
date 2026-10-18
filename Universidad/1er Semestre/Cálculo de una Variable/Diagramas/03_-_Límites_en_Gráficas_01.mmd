@@ -1,0 +1,11 @@
+flowchart TD
+    A["📊 Gráfica de f(x)"] --> B["📍 Localizar x = a"]
+    B --> C["👈 Aproximarse por la izquierda"]
+    B --> D["👉 Aproximarse por la derecha"]
+    C --> E{"🤔 ¿Mismo valor?"}
+    D --> E
+    E -->|Sí| F["✅ Límite existe = L"]
+    E -->|No| G["❌ Límite no existe"]
+    
+    style F fill:#c8e6c9
+    style G fill:#ffcdd2

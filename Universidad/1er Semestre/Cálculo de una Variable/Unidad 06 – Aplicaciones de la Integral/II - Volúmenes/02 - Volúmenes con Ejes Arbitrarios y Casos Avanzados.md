@@ -112,20 +112,7 @@ dg-publish: true
 > - Rotar alrededor del eje x pero es más fácil integrar en y
 > - Evitar funciones inversas complicadas
 > 
-> ```mermaid
-> flowchart TD
->     A["Problema de volumen"] --> B{"¿Rotación alrededor de?"}
->     B -->|"Eje x"| C{"¿Funciones dadas como?"}
->     B -->|"Eje y"| D{"¿Funciones dadas como?"}
->     C -->|"y = f(x)"| E["Usar dx"]
->     C -->|"x = g(y)"| F["Usar dy"]
->     D -->|"x = g(y)"| G["Usar dy"] 
->     D -->|"y = f(x)"| H["Usar dx con capas"]
->     style E fill:#96ceb4
->     style F fill:#ffb3ba
->     style G fill:#ffb3ba
->     style H fill:#96ceb4
-> ```
+> ![[Diagramas/02_-_Volúmenes_con_Ejes_Arbitrarios_y_Casos_Avanzados_01.svg]]
 
 ### 🔄 Fórmulas Adaptadas para dy
 

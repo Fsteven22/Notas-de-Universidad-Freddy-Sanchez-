@@ -38,17 +38,7 @@ dg-publish: true
 >
 >**Conclusión**: $\int_a^b f(x) dx \leq \int_a^b g(x) dx$ ✓
 
-```mermaid
-flowchart TD
-    A["f(x) ≤ g(x) en [a,b]"] --> B["h(x) = g(x) - f(x) ≥ 0"]
-    B --> C["∫h(x)dx ≥ 0"]
-    C --> D["∫[g(x) - f(x)]dx ≥ 0"]
-    D --> E["∫g(x)dx - ∫f(x)dx ≥ 0"]
-    E --> F["∫f(x)dx ≤ ∫g(x)dx"]
-    
-    style F fill:#45b7d1
-    style A fill:#96ceb4
-```
+![[Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_01.svg]]
 
 ## 📊 Corolarios Importantes
 
@@ -151,25 +141,7 @@ flowchart TD
 >**Convergencia**: Si $\int g(x) dx$ converge → $\int f(x) dx$ converge
 >**Divergencia**: Si $\int f(x) dx$ diverge → $\int g(x) dx$ diverge
 
-```mermaid
-graph TD
-    A["f(x) y g(x) funciones"] --> B{"¿Tipo de comparación?"}
-    
-    B -->|"Directa"| C["0 ≤ f(x) ≤ g(x)"]
-    B -->|"Límite"| D["lim f(x)/g(x) = L"]
-    
-    C --> E["Si ∫g converge → ∫f converge"]
-    C --> F["Si ∫f diverge → ∫g diverge"]
-    
-    D --> G{"Valor de L?"}
-    G -->|"0 < L < ∞"| H["Misma convergencia"]
-    G -->|"L = 0"| I["∫g converge → ∫f converge"]
-    G -->|"L = ∞"| J["∫g diverge → ∫f diverge"]
-    
-    style H fill:#96ceb4
-    style E fill:#45b7d1
-    style F fill:#ff6b6b
-```
+![[Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_02.svg]]
 
 ## 🌟 Funciones de Referencia Estándar
 

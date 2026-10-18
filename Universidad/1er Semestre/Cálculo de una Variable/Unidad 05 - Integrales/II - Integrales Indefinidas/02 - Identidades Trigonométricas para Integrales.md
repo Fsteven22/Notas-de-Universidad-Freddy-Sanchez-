@@ -16,25 +16,7 @@ dg-publish: true
 > 
 > $$\sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]$$ $$\cos A \sin B = \frac{1}{2}[\sin(A+B) - \sin(A-B)]$$ $$\cos A \cos B = \frac{1}{2}[\cos(A+B) + \cos(A-B)]$$ $$\sin A \sin B = \frac{1}{2}[\cos(A-B) - \cos(A+B)]$$
 
-```mermaid
-graph TD
-    A[Producto Trigonométrico] --> B{Tipo de Producto}
-    B --> C[sen·cos]
-    B --> D[cos·cos]
-    B --> E[sen·sen]
-    C --> F["1/2[sen(A+B) ± sen(A-B)]"]
-    D --> G["1/2[cos(A+B) + cos(A-B)]"]
-    E --> H["1/2[cos(A-B) - cos(A+B)]"]
-    F --> I[Integral de sumas simples]
-    G --> I
-    H --> I
-    
-    style A fill:#e1f5fe
-    style I fill:#e8f5e8
-    style F fill:#fff3e0
-    style G fill:#fff3e0
-    style H fill:#fff3e0
-```
+![[Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_01.svg]]
 
 > [!example] 🔍 Ejemplo Clásico: Producto sen·cos **Integral:** $\int \sin(3x)\cos(5x) , dx$
 > 
@@ -64,21 +46,7 @@ graph TD
 > 
 > $$\sin A + \sin B = 2\sin\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)$$ $$\sin A - \sin B = 2\cos\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)$$ $$\cos A + \cos B = 2\cos\left(\frac{A+B}{2}\right)\cos\left(\frac{A-B}{2}\right)$$ $$\cos A - \cos B = -2\sin\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)$$
 
-```mermaid
-flowchart LR
-    A[Suma Trigonométrica] --> B[Factorización]
-    B --> C[Producto de factores]
-    C --> D[Sustitución u=...]
-    D --> E[Integral estándar]
-    
-    A2[sen A + sen B] --> B2["2sen((A+B)/2)cos((A-B)/2)"]
-    A3[cos A - cos B] --> B3["-2sen((A+B)/2)sen((A-B)/2)"]
-    
-    style A fill:#ffebee
-    style E fill:#e8f5e8
-    style B2 fill:#f3e5f5
-    style B3 fill:#f3e5f5
-```
+![[Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_02.svg]]
 
 ### 🎭 Identidades de Ángulo Doble y Mitad
 
@@ -122,31 +90,7 @@ flowchart LR
 
 ## 🎯 Estrategias de Selección de Identidades
 
-```mermaid
-graph TD
-    A[Integral Trigonométrica] --> B{Tipo de Expresión}
-    B --> C[Producto de funciones]
-    B --> D[Potencias]
-    B --> E[Suma de funciones]
-    B --> F[Expresión racional]
-    
-    C --> G[Identidades Producto→Suma]
-    D --> H[Identidades de reducción]
-    E --> I[Identidades Suma→Producto]
-    F --> J[Sustitución Weierstrass]
-    
-    G --> K[Integrar sumas simples]
-    H --> L[Integrar términos lineales]
-    I --> M[Factorizar y sustituir]
-    J --> N[Integral racional en t]
-    
-    style A fill:#e3f2fd
-    style G fill:#e8f5e8
-    style H fill:#e8f5e8
-    style I fill:#e8f5e8
-    style J fill:#e8f5e8
-    style K fill:#f3e5f5
-```
+![[Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_03.svg]]
 
 ## 🧠 Técnica de Estudio: Mnemotecnia "PRISA"
 

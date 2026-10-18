@@ -23,22 +23,7 @@ dg-publish: true
 > 
 > **Por esto necesitamos métodos geométricos y analíticos especiales.**
 
-```mermaid
-graph TD
-    A[Limites Trigonometricos] --> B[Limite fundamental sin x / x]
-    A --> C[Limite fundamental 1 - cos x / x]
-    B --> D[Derivada de sin x]
-    C --> E[Derivada de cos x]
-    B --> F[Limites derivados]
-    C --> F
-    F --> G[Aplicaciones en calculo]
-    
-    style A fill:#e3f2fd
-    style B fill:#e8f5e8
-    style C fill:#e8f5e8
-    style F fill:#fff3e0
-    style G fill:#f3e5f5
-```
+![[Diagramas/01_-_Límites_Especiales_01.svg]]
 
 ## 📐 Límite fundamental: $\lim_{x \to 0} \frac{\sin x}{x} = 1$
 
@@ -224,25 +209,7 @@ graph TD
 > - $\sin(2x) - 2\sin x = 2\sin x(\cos x - 1)$
 > - Resultado: $-\frac{2}{3}$
 
-```mermaid
-flowchart TD
-    A[Limite trigonometrico] --> B{Forma del limite}
-    B -->|sin u / u| C[Aplicar limite fundamental = 1]
-    B -->|1 - cos u / u| D[Aplicar limite fundamental = 0]
-    B -->|tan u / u| E[Convertir a sin u / u y 1 / cos u]
-    B -->|Combinacion| F[Descomponer usando identidades]
-    C --> G[Resultado directo]
-    D --> G
-    E --> G
-    F --> H[Aplicar limites fundamentales]
-    H --> G
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style D fill:#e8f5e8
-    style E fill:#fff3e0
-    style G fill:#f3e5f5
-```
+![[Diagramas/01_-_Límites_Especiales_02.svg]]
 
 ### 📊 Tabla de Límites Derivados Importantes
 
@@ -431,33 +398,7 @@ flowchart TD
 > |**$0^0$**|$\lim_{x \to 0^+} x^x$|Logaritmos: $\ln(f^g) = g \ln f$|
 > |**$\infty^0$**|$\lim_{x \to \infty} x^{1/x}$|Logaritmos: $\ln(f^g) = g \ln f$|
 
-```mermaid
-flowchart TD
-    A[Límite Exponencial f^g] --> B{Evaluar forma}
-    
-    B --> C[Forma 1^∞]
-    B --> D[Forma 0^0] 
-    B --> E[Forma ∞^0]
-    B --> F[Forma Determinada]
-    
-    C --> G[Usar límite fundamental de e]
-    D --> H[Método logarítmico]
-    E --> I[Método logarítmico]
-    F --> J[Evaluación directa]
-    
-    G --> K[Reescribir como 1 + algo pequeño]
-    H --> L[Calcular lim g·ln f]
-    I --> M[Calcular lim g·ln f]
-    
-    K --> N[Aplicar fórmula de e]
-    L --> O[Exponenciar resultado]
-    M --> O
-    
-    style C fill:#FFE4B5
-    style D fill:#FFB6C1  
-    style E fill:#E6FFE6
-    style F fill:#E6F3FF
-```
+![[Diagramas/01_-_Límites_Especiales_03.svg]]
 
 ## Método del Límite Fundamental de e
 
@@ -577,37 +518,7 @@ flowchart TD
 > |$\lim_{x \to 0} \left(1 + ax\right)^{b/x}$|$e^{ab}$|Generalización|
 > |$\lim_{x \to \infty} \left(1 + \frac{a}{x}\right)^{bx}$|$e^{ab}$|Forma al infinito|
 
-```mermaid
-flowchart TD
-    A[Límite Exponencial] --> B{Identificar forma}
-    
-    B --> C[1^∞: Base→1, Exp→∞]
-    B --> D[0^0: Base→0, Exp→0]
-    B --> E[∞^0: Base→∞, Exp→0]
-    
-    C --> F[Método del número e]
-    D --> G[Método logarítmico]
-    E --> G
-    
-    F --> H[Reescribir como 1+u]
-    F --> I[Calcular límite u·v]
-    F --> J[Resultado: e^límite]
-    
-    G --> K[y = f^g, ln y = g ln f]
-    G --> L[Evaluar lim g ln f]
-    G --> M[Resultado: e^límite]
-    
-    H --> J
-    I --> J
-    K --> M
-    L --> M
-    
-    style C fill:#90EE90
-    style D fill:#FFB6C1
-    style E fill:#FFE4B5
-    style J fill:#87CEEB
-    style M fill:#87CEEB
-```
+![[Diagramas/01_-_Límites_Especiales_04.svg]]
 
 ---
 
@@ -702,16 +613,7 @@ flowchart TD
 > 
 > ### Orden de crecimiento (de menor a mayor):
 > 
-> ```mermaid
-> graph LR
->    A[ln x] --> B[x^α, α > 0]
->    B --> C[e^x]
->    C --> D[x!]
->    style A fill:#e1f5fe
->    style B fill:#f3e5f5
->    style C fill:#fff3e0
->    style D fill:#ffebee
-> ```
+> ![[Diagramas/01_-_Límites_Especiales_05.svg]]
 > 
 > 1. **Logarítmico**: $\ln x$ 🐌
 > 2. **Polinomial**: $x^n$ (n > 0) 🚶
@@ -747,25 +649,7 @@ flowchart TD
 > 
 > $$\lim_{x \to \infty} \frac{\ln x}{\sqrt{x}} = \lim_{x \to \infty} \frac{\ln x}{x^{1/2}} = 0$$
 
-```mermaid
-graph TD
-    A["Limites logaritmicos"] --> B["x ln x → 0"]
-    A --> C["ln x / x → 0"]
-    A --> D["Comparacion de crecimientos"]
-    
-    B --> E["Forma 0 * (-infinito)"]
-    C --> F["ln crece lento"]
-    D --> G["Jerarquia de crecimiento"]
-    
-    E --> H["L'Hopital"]
-    F --> I["Aplicaciones"]
-    G --> J["ln < x^n < e^x"]
-    
-    style A fill:#4fc3f7,color:#000
-    style B fill:#81c784,color:#000
-    style C fill:#ffb74d,color:#000
-    style D fill:#f06292,color:#000
-```
+![[Diagramas/01_-_Límites_Especiales_06.svg]]
 
 ## Técnica de Estudio: Método SHARP 🎯
 

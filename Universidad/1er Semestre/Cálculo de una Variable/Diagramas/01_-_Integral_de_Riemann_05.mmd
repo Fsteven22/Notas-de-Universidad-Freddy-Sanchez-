@@ -1,0 +1,13 @@
+graph TD
+    A["Función f(x)"] --> B["Dividir intervalo en subintervalos"]
+    B --> C[Crear rectángulos]
+    C --> D["Altura = f(x*)"]
+    C --> E["Base = Δx"]
+    D --> F["Área de rectángulo = f(x*)Δx"]
+    E --> F
+    F --> G[Sumar todas las áreas]
+    G --> H[Tomar límite norma → 0]
+    H --> I[Integral de Riemann = Área exacta]
+    
+    style I fill:#45b7d1
+    style H fill:#96ceb4

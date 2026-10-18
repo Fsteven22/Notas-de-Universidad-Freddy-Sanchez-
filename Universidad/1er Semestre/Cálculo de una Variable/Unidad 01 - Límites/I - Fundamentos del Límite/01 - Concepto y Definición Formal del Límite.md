@@ -14,17 +14,7 @@ dg-publish: true
 > 
 > **Notación:** $$\lim_{x \to a} f(x) = L$$
 
-```mermaid
-graph LR
-    A["🎯 x se acerca a 'a'"] --> B["🔄 f(x) se calcula"]
-    B --> C["📈 f(x) se acerca a 'L'"]
-    C --> D["✨ Límite = L"]
-    
-    style A fill:#e3f2fd
-    style B fill:#f1f8e9  
-    style C fill:#fce4ec
-    style D fill:#fff8e1
-```
+![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_01.svg]]
 
 > [!example] 🌈 Ejemplo Visual Simple Considera $f(x) = 2x + 1$ y queremos $\lim_{x \to 3} f(x)$
 > 
@@ -81,20 +71,7 @@ graph LR
 > - 🎯 **No importa** si hay un "hueco" o "salto" en ese punto exacto
 > - ✨ **Importa** la "tendencia" o "dirección" de la función
 
-```mermaid
-graph TD
-    A["📊 Gráfica de f(x)"] --> B{"🔍 ¿Hacia dónde apunta<br/>cuando x → a?"}
-    B --> C["⬆️ Hacia un valor L"]
-    B --> D["⬇️ Hacia -∞ o +∞"]  
-    B --> E["🔄 No converge"]
-    C --> F["✅ Límite = L"]
-    D --> G["♾️ Límite infinito"]
-    E --> H["❌ Límite no existe"]
-    
-    style F fill:#c8e6c9
-    style G fill:#fff3e0
-    style H fill:#ffcdd2
-```
+![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_02.svg]]
 
 ## Situaciones Comunes 🎭
 
@@ -222,20 +199,7 @@ graph TD
 > 
 > **En otras palabras:** No importa qué tan pequeño sea $\varepsilon$ (qué tan cerca queremos estar del límite), siempre podemos encontrar un $\delta$ (qué tan cerca debemos estar del punto) que garantice esa precisión.
 
-```mermaid
-graph TD
-    A["🎯 Queremos demostrar límite"] --> B["📏 Elegimos ε > 0 arbitrario"]
-    B --> C["🔍 Encontramos δ > 0 apropiado"]
-    C --> D["📊 Verificamos la condición"]
-    D --> E{"✅ ¿Se cumple para todo ε?"}
-    E -->|Sí| F["🎉 Límite demostrado"]
-    E -->|No| G["❌ Límite no existe o es diferente"]
-    
-    style F fill:#c8e6c9
-    style G fill:#ffcdd2
-    style B fill:#e3f2fd
-    style C fill:#fff3e0
-```
+![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_03.svg]]
 
 ## Interpretación Geométrica 📊
 
@@ -255,18 +219,7 @@ graph TD
 
 > [!note] 🖼️ Interpretación Visual
 > 
-> ```mermaid
-> graph LR
->    A["🎯 Punto (a,L)"] --> B["📏 Banda ε alrededor de L"]
->    A --> C["📏 Banda δ alrededor de a"]
->    B --> D["✅ f(x) debe quedar dentro"]
->    C --> E["🔍 Para toda x en esta banda"]
->    D --> F["🎉 Definición satisfecha"]
->    E --> F
->    style F fill:#c8e6c9
->    style B fill:#e8f5e8
->    style C fill:#fff3e0
-> ```
+> ![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_04.svg]]
 
 ## Análisis de los Componentes 🔍
 
@@ -750,43 +703,11 @@ graph TD
 
 ### 📊 Diagrama para Asíntotas Verticales
 
-```mermaid
-graph TD
-    A[x se acerca a a] --> B{Tipo de límite?}
-    B -->|"f(x) → +∞"| C[Para todo M > 0]
-    B -->|"f(x) → -∞"| D[Para todo M > 0]
-    C --> E[Existe δ > 0]
-    D --> F[Existe δ > 0]
-    E --> G["Si 0 < |x-a| < δ entonces f(x) > M"]
-    F --> H["Si 0 < |x-a| < δ entonces f(x) < -M"]
-    G --> I[Asíntota Vertical]
-    H --> I
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style D fill:#ffcdd2
-    style I fill:#f3e5f5
-```
+![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_05.svg]]
 
 ### 📊 Diagrama para Asíntotas Horizontales
 
-```mermaid
-graph TD
-    A[x → ±∞] --> B{Dirección?}
-    B -->|x → +∞| C[Para todo ε > 0]
-    B -->|x → -∞| D[Para todo ε > 0]
-    C --> E[Existe N > 0]
-    D --> F[Existe N > 0]
-    E --> G["Si x > N entonces |f(x) - L| < ε"]
-    F --> H["Si x < -N entonces |f(x) - L| < ε"]
-    G --> I[Asíntota Horizontal y = L]
-    H --> I
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style D fill:#e8f5e8
-    style I fill:#f3e5f5
-```
+![[Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_06.svg]]
 
 ## ⚠️ Errores Comunes en Demostraciones
 

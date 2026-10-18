@@ -42,24 +42,7 @@ dg-publish: true
 > • **Ecuaciones diferenciales** - Soluciones con condiciones de frontera
 > • **Análisis complejo** - Integrales de contorno
 
-```mermaid
-mindmap
-  root((Integrales Impropias))
-    Tipos
-      Tipo I: Límites infinitos
-      Tipo II: Discontinuidades
-      Tipo Mixto: Ambos casos
-    Evaluación
-      Límites
-      Convergencia
-      Divergencia
-      Criterios de comparación
-    Aplicaciones
-      Probabilidad
-      Transformadas
-      Física matemática
-      Series infinitas
-```
+![[Diagramas/01_-_Integrales_Impropias_01.svg]]
 
 ---
 

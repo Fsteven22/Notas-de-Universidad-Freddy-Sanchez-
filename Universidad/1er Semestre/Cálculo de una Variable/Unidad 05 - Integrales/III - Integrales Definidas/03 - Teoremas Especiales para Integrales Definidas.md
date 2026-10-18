@@ -27,25 +27,7 @@ dg-publish: true
 
 > [!info] 🎨 **Interpretación Geométrica** La gráfica de una función impar tiene **simetría puntual respecto al origen**. Las áreas positiva y negativa se cancelan exactamente.
 
-```mermaid
-graph TD
-    A["Función f en intervalo [-a,a]"] --> B{"¿Tipo de simetría?"}
-    
-    B -->|"f(-x) = f(x)"| C["Función PAR"]
-    B -->|"f(-x) = -f(x)"| D["Función IMPAR"]
-    B -->|"Sin simetría"| E["Calcular integral completa"]
-    
-    C --> F["∫f(x)dx = 2∫₀ᵃf(x)dx"]
-    D --> G["∫f(x)dx = 0"]
-    
-    F --> H["Ahorro: cálculo de la mitad"]
-    G --> I["Resultado inmediato"]
-    
-    style F fill:#96ceb4
-    style G fill:#45b7d1
-    style H fill:#ffd93d
-    style I fill:#ffd93d
-```
+![[Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_01.svg]]
 
 ## 🧮 Demostraciones
 
@@ -201,24 +183,7 @@ graph TD
 > - Verificar paridad: $f(-x) = (-x)\sin((-x)^2) = -x\sin(x^2) = -f(x)$ (impar)
 > - Por tanto: $\int_{-a}^a x\sin(x^2) dx = 0$
 
-```mermaid
-flowchart TD
-    A["Función f(x)"] --> B{"¿Periódica?"}
-    A --> C{"¿Simétrica?"}
-    
-    B -->|Sí| D["Usar teorema de periodicidad"]
-    B -->|No| E["Evaluar normalmente"]
-    
-    C -->|Par| F["∫f(x)dx = 2∫₀ᵃf(x)dx"]
-    C -->|Impar| G["∫f(x)dx = 0"]
-    C -->|Ni par ni impar| H["Separar en parte par + impar"]
-    
-    D --> I["∫ₐᵃ⁺ᵀf(x)dx = ∫₀ᵀf(x)dx"]
-    
-    style F fill:#96ceb4
-    style G fill:#45b7d1
-    style I fill:#ffd93d
-```
+![[Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_02.svg]]
 
 ## 🛠️ Estrategias y Técnicas de Aplicación
 
@@ -420,23 +385,7 @@ flowchart TD
 > - **Altura**: $f(c)$ (valor de la función en algún punto $c$)
 > - **Área**: igual al área bajo la curva $y = f(x)$ desde $a$ hasta $b$
 
-```mermaid
-graph TD
-    A["Función continua f(x)"] --> B["Área bajo la curva"]
-    B --> C["∫f(x)dx de a hasta b"]
-    
-    D["Rectángulo equivalente"] --> E["Base = b-a"]
-    D --> F["Altura = f(c)"]
-    E --> G["Área = f(c)(b-a)"]
-    F --> G
-    
-    C --> H["Áreas iguales"]
-    G --> H
-    H --> I["f(c) = valor medio de f"]
-    
-    style H fill:#45b7d1
-    style I fill:#96ceb4
-```
+![[Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_03.svg]]
 
 > [!tip] 🎯 **Interpretación del Valor Medio** El número $\frac{1}{b-a}\int_a^b f(x) dx$ se llama el **valor medio** (o **promedio**) de $f$ en $[a,b]$.
 > 
@@ -454,20 +403,7 @@ graph TD
 > 
 > **Paso 4**: Por el **Teorema del Valor Intermedio**, existe $c \in [a,b]$ tal que: $$f(c) = \frac{1}{b-a}\int_a^b f(x) dx$$
 
-```mermaid
-flowchart TD
-    A["f continua en [a,b]"] --> B["Alcanza min m y max M"]
-    B --> C["m ≤ f(x) ≤ M para todo x"]
-    C --> D["Integrar desigualdad"]
-    D --> E["m(b-a) ≤ ∫f(x)dx ≤ M(b-a)"]
-    E --> F["Dividir por (b-a)"]
-    F --> G["m ≤ (1/(b-a))∫f(x)dx ≤ M"]
-    G --> H["Teorema del Valor Intermedio"]
-    H --> I["∃c: f(c) = valor medio"]
-    
-    style I fill:#96ceb4
-    style H fill:#45b7d1
-```
+![[Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_04.svg]]
 
 ## 🧪 Ejemplos Detallados
 
@@ -567,19 +503,7 @@ flowchart TD
 
 ### 🌟 Relación con el Teorema del Valor Medio para Derivadas
 
-```mermaid
-graph LR
-    A["TVM para Derivadas"] --> B["f'(c) = (f(b)-f(a))/(b-a)"]
-    C["TVM para Integrales"] --> D["f(c) = (1/(b-a))∫f(x)dx"]
-    
-    B --> E["Pendiente promedio"]
-    D --> F["Altura promedio"]
-    
-    E --> G["Se alcanza en algún punto"]
-    F --> G
-    
-    style G fill:#45b7d1
-```
+![[Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_05.svg]]
 
 > [!info] 🔄 **Conexión Profunda** Si aplicamos el Segundo Teorema Fundamental del Cálculo a una función $F(x) = \int_a^x f(t)dt$:
 > 

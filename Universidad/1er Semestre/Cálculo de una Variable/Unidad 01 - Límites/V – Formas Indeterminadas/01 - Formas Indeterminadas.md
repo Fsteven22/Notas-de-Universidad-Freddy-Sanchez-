@@ -19,24 +19,7 @@ dg-publish: true
 > - $\lim_{x \to 0} \frac{2x}{x} = 2$ (ambos tienden a 0, resultado = 2)
 > - $\lim_{x \to 0} \frac{x^2}{x} = 0$ (ambos tienden a 0, resultado = 0)
 
-```mermaid
-graph TD
-    A[Limite del cociente] --> B{Sustitucion directa}
-    B --> C{Resultado es 0/0?}
-    C -->|No| D[Usar teorema del cociente]
-    C -->|Si| E[Forma indeterminada 0/0]
-    E --> F[Usar tecnicas especiales]
-    F --> G[Factorizacion]
-    F --> H[Racionalizacion]
-    F --> I[Cancelacion]
-    
-    style A fill:#e3f2fd
-    style E fill:#fff3e0
-    style G fill:#e8f5e8
-    style H fill:#e8f5e8
-    style I fill:#e8f5e8
-    style D fill:#f3e5f5
-```
+![[Diagramas/01_-_Formas_Indeterminadas_01.svg]]
 
 ## 🔢 Factorización Algebraica
 
@@ -166,21 +149,7 @@ graph TD
 
 ### 🔍 Patrones Comunes en Racionalización
 
-```mermaid
-flowchart TD
-    A[Forma 0/0 con radicales] --> B{Ubicacion del radical}
-    B -->|Numerador| C[Racionalizar numerador]
-    B -->|Denominador| D[Racionalizar denominador]
-    C --> E[Multiplicar por conjugado del numerador]
-    D --> F[Multiplicar por conjugado del denominador]
-    E --> G[Aplicar diferencia de cuadrados]
-    F --> G
-    G --> H[Simplificar y evaluar]
-    
-    style A fill:#e3f2fd
-    style G fill:#e8f5e8
-    style H fill:#f3e5f5
-```
+![[Diagramas/01_-_Formas_Indeterminadas_02.svg]]
 
 > [!tip] 🎯 Identificación Rápida **¿Cuándo racionalizar?**
 > 
@@ -295,30 +264,7 @@ flowchart TD
 
 ## 📊 Diagrama de Flujo Completo
 
-```mermaid
-flowchart TD
-    A[Limite con posible 0/0] --> B[Sustituir directamente]
-    B --> C{Resultado es 0/0?}
-    C -->|No| D[Usar teoremas normales]
-    C -->|Si| E[Forma indeterminada 0/0]
-    E --> F{Hay radicales?}
-    F -->|Si| G[Racionalizar]
-    F -->|No| H{Se puede factorizar?}
-    G --> H
-    H -->|Si| I[Factorizar num y den]
-    H -->|No| J[Usar otras tecnicas]
-    I --> K[Cancelar factores comunes]
-    K --> L[Evaluar limite simplificado]
-    J --> M[L Hopital o sustitucion]
-    
-    style A fill:#e3f2fd
-    style E fill:#fff3e0
-    style G fill:#e8f5e8
-    style I fill:#e8f5e8
-    style K fill:#e8f5e8
-    style L fill:#f3e5f5
-    style D fill:#f3e5f5
-```
+![[Diagramas/01_-_Formas_Indeterminadas_03.svg]]
 
 ## 📚 Referencias y Conexiones
 
@@ -426,17 +372,7 @@ flowchart TD
 
 > [!success] ✅ Interpretación Gráfica
 > 
-> ```mermaid
-> graph TD
->     A["Función Superior h(x)"] --> B["Función Emparedada g(x)"]
->     B --> C["Función Inferior f(x)"]
->     D[Límite Común L] --> E[Todas convergen a L]
->     style A fill:#ffcdd2
->     style B fill:#e8f5e8
->     style C fill:#bbdefb
->     style D fill:#f3e5f5
->     style E fill:#fff3e0
-> ```
+> ![[Diagramas/01_-_Formas_Indeterminadas_04.svg]]
 > 
 > **Características visuales:**
 > 
@@ -564,23 +500,7 @@ flowchart TD
 
 ## 📊 Algoritmo de Aplicación
 
-```mermaid
-flowchart TD
-    A[Límite Difícil de Evaluar] --> B{Función acotada?}
-    B -->|No| C[Buscar otra técnica]
-    B -->|Sí| D["Encontrar f(x) ≤ g(x) ≤ h(x)"]
-    D --> E{"lim f(x) = lim h(x)?"}
-    E -->|No| F[Buscar mejores cotas]
-    E -->|Sí| G[Aplicar Teorema]
-    G --> H["lim g(x) = L"]
-    F --> D
-    
-    style A fill:#e3f2fd
-    style G fill:#e8f5e8
-    style H fill:#f3e5f5
-    style C fill:#ffebee
-    style F fill:#fff3e0
-```
+![[Diagramas/01_-_Formas_Indeterminadas_05.svg]]
 
 ## 🚫 Errores Comunes
 
@@ -726,23 +646,7 @@ flowchart TD
 
 > [!warning] ⚠️ Importancia Histórica Aunque se llama "Regla de L'Hôpital" por Guillaume de l'Hôpital (1661-1704), **fue desarrollada por Johann Bernoulli**. L'Hôpital la publicó en el primer libro de cálculo de la historia.
 
-```mermaid
-graph TD
-    A[Limite con forma indeterminada] --> B{Verificar condiciones}
-    B -->|Se cumplen| C[Derivar numerador y denominador]
-    B -->|No se cumplen| D[Usar otras tecnicas]
-    C --> E[Evaluar limite de las derivadas]
-    E --> F{Resultado determinado?}
-    F -->|Si| G[Resultado final]
-    F -->|No - Otra indeterminada| H[Aplicar L Hopital otra vez]
-    H --> E
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style G fill:#f3e5f5
-    style D fill:#fff3e0
-    style H fill:#fce4ec
-```
+![[Diagramas/01_-_Formas_Indeterminadas_06.svg]]
 
 ## ✅ Condiciones de Aplicación
 
@@ -913,27 +817,7 @@ graph TD
 > 
 > **Transformación:** Sea $y = \left(1 + \frac{1}{x}\right)^x$, entonces $\ln y = x \ln\left(1 + \frac{1}{x}\right)$ **Evaluar:** $\lim_{x \to ∞} x \ln\left(1 + \frac{1}{x}\right)$ (forma $∞ \cdot 0$) **Reescribir:** $\lim_{x \to ∞} \frac{\ln(1 + 1/x)}{1/x}$ (forma $\frac{0}{0}$) **L'Hôpital:** Resultado = 1, por tanto $\lim y = e^1 = e$
 
-```mermaid
-flowchart TD
-    A[Forma indeterminada] --> B{Tipo de forma}
-    B -->|0/0 o inf/inf| C[Aplicar L Hopital directamente]
-    B -->|0 por inf| D[Transformar a cociente]
-    B -->|inf - inf| E[Denominador comun]
-    B -->|0^0, 1^inf, inf^0| F[Usar logaritmos]
-    D --> G[Forma 0/0 o inf/inf]
-    E --> G
-    F --> H[Forma 0 por inf]
-    H --> D
-    G --> C
-    C --> I[Evaluar limite]
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style I fill:#f3e5f5
-    style D fill:#fff3e0
-    style E fill:#fff3e0
-    style F fill:#fce4ec
-```
+![[Diagramas/01_-_Formas_Indeterminadas_07.svg]]
 
 ## ⚠️ Limitaciones y Precauciones
 

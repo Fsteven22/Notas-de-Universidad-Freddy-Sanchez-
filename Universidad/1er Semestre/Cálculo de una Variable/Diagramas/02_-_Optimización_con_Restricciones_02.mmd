@@ -1,0 +1,27 @@
+flowchart LR
+    A[Problema de Optimización] --> B{Número de Restricciones}
+    B -->|Una| C{Fácil de despejar?}
+    B -->|Múltiples| D[Multiplicadores de Lagrange]
+    
+    C -->|Sí| E[Método de Sustitución]
+    C -->|No| F[Multiplicadores de Lagrange]
+    
+    E --> G[Función de una variable]
+    F --> H[Sistema de ecuaciones]
+    D --> I[Sistema complejo]
+    
+    G --> J[Derivada = 0]
+    H --> K[∇f = λ∇g]
+    I --> L[Múltiples λ]
+    
+    classDef problemNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    classDef decisionNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef methodNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef processNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
+    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class A problemNode
+    class B,C decisionNode
+    class D,E,F methodNode
+    class G,H,I processNode
+    class J,K,L solutionNode

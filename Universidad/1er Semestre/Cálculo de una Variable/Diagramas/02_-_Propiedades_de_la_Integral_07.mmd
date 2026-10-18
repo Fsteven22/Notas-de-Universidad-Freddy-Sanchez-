@@ -1,0 +1,11 @@
+flowchart LR
+    A[f(x) dada] --> B[Integrar]
+    B --> C[F(x) + C<br/>Familia infinita]
+    C --> D{¿Hay condición<br/>inicial?}
+    D -->|No| E[Mantener C<br/>Solución general]
+    D -->|Sí| F[Calcular C]
+    F --> G[F(x) específica<br/>Solución particular]
+    style A fill:#ffe1e1
+    style C fill:#fff4e1
+    style E fill:#e1f5ff
+    style G fill:#e1ffe1

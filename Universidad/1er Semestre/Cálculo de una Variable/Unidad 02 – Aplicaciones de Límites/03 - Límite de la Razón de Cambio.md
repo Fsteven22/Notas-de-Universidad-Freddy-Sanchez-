@@ -59,17 +59,7 @@ dg-publish: true
 > 
 > ### De la secante a la tangente
 > 
-> ```mermaid
-> graph TD
->    A[Puntos P y Q en la curva] --> B[Recta secante PQ]
->    B --> C[Q se acerca a P]
->    C --> D[Secante se convierte en tangente]
->    D --> E["Pendiente = f'(a)"]
->    F[Razón de cambio promedio] --> G[Razón de cambio instantánea]
->    style D fill:#4caf50,color:#fff
->    style E fill:#4caf50,color:#fff
->    style G fill:#ff9800,color:#fff
-> ```
+> ![[Diagramas/03_-_Límite_de_la_Razón_de_Cambio_01.svg]]
 > 
 > **Proceso geométrico:** 🎪
 > 
@@ -264,31 +254,7 @@ dg-publish: true
 > - Análisis de trayectorias en ingeniería
 > - Optimización de formas aerodinámicas
 
-```mermaid
-graph TD
-    A["Función f de x"] --> B["Punto a y f(a)"]
-    B --> C["Calcular derivada en a"]
-    C --> D{"¿Existe derivada?"}
-    
-    D -->|Sí| E["Recta Tangente"]
-    D -->|No| F["No derivable"]
-    
-    E --> G["Ecuación de la recta tangente"]
-    G --> H["Interpretación geométrica"]
-    G --> I["Razón de cambio instantánea"]
-    
-    F --> J["Analizar tipo de singularidad"]
-    J --> K["Esquina, cúspide o discontinuidad"]
-    
-    H --> L["Aproximación lineal"]
-    I --> M["Aplicaciones físicas"]
-    
-    style E fill:#4caf50,color:#fff
-    style F fill:#f44336,color:#fff
-    style L fill:#2196f3,color:#fff
-    style M fill:#ff9800,color:#fff
-
-```
+![[Diagramas/03_-_Límite_de_la_Razón_de_Cambio_02.svg]]
 
 ## Técnica de Estudio: Método DELTA
 

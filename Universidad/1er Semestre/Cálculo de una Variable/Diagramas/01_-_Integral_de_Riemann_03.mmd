@@ -1,0 +1,10 @@
+graph TD
+    A[Partición P con norma pequeña] --> B[Calcular Suma de Riemann]
+    B --> C{Norma → 0?}
+    C -->|Sí| D[Sumas convergen a I]
+    C -->|No| E[Refinar partición]
+    E --> A
+    D --> F[I = Integral de Riemann]
+    
+    style F fill:#45b7d1
+    style D fill:#96ceb4

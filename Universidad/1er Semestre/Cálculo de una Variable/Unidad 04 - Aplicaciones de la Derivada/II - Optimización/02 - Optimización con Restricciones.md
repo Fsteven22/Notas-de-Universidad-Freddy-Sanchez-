@@ -19,32 +19,7 @@ dg-publish: true
 > 5. **Encontrar** el valor de la otra variable usando la restricción
 > 6. **Verificar** que sea máximo o mínimo
 
-```mermaid
-graph TD
-    A[Problema con Restricciones] --> B[f x,y objetivo, g x,y = 0 restricción]
-    B --> C[Despejar variable de la restricción]
-    C --> D[y = h x]
-    D --> E[Sustituir en función objetivo]
-    E --> F[F x = f x, h x]
-    F --> G[Derivar y resolver F prima = 0]
-    G --> H[Encontrar puntos críticos]
-    H --> I[Calcular y usando restricción]
-    I --> J[Verificar naturaleza del extremo]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef setupNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef substitutionNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef calculusNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef verificationNode fill:#e0f2f1,stroke:#00695c,stroke-width:3px
-    
-    class A startNode
-    class B,C setupNode
-    class D,E substitutionNode
-    class F,G calculusNode
-    class H,I solutionNode
-    class J verificationNode
-```
+![[Diagramas/02_-_Optimización_con_Restricciones_01.svg]]
 
 ### Ventajas y Limitaciones
 
@@ -153,35 +128,7 @@ graph TD
 > |**Elegancia**|Directa|Sistemática|
 > |**Interpretación económica**|Limitada|Rica|
 
-```mermaid
-flowchart LR
-    A[Problema de Optimización] --> B{Número de Restricciones}
-    B -->|Una| C{Fácil de despejar?}
-    B -->|Múltiples| D[Multiplicadores de Lagrange]
-    
-    C -->|Sí| E[Método de Sustitución]
-    C -->|No| F[Multiplicadores de Lagrange]
-    
-    E --> G[Función de una variable]
-    F --> H[Sistema de ecuaciones]
-    D --> I[Sistema complejo]
-    
-    G --> J[Derivada = 0]
-    H --> K[∇f = λ∇g]
-    I --> L[Múltiples λ]
-    
-    classDef problemNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
-    classDef decisionNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef methodNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef processNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A problemNode
-    class B,C decisionNode
-    class D,E,F methodNode
-    class G,H,I processNode
-    class J,K,L solutionNode
-```
+![[Diagramas/02_-_Optimización_con_Restricciones_02.svg]]
 
 ## Problemas Prácticos 🛠️
 
@@ -294,38 +241,7 @@ flowchart LR
 
 ### Visualización Gráfica
 
-```mermaid
-graph TD
-    A[Interpretación Geométrica] --> B[Curvas de Nivel de f x,y]
-    A --> C[Curva de Restricción g x,y = 0]
-    
-    B --> D[Familia de Curvas f = c₁, c₂, c₃...]
-    C --> E[Curva Única en el Plano]
-    
-    D --> F[Buscar Tangencia]
-    E --> F
-    
-    F --> G{Tipo de Tangencia}
-    G -->|Externa| H[Máximo Local]
-    G -->|Interna| I[Mínimo Local]
-    G -->|Silla| J[Punto de Silla]
-    
-    H --> K[Curva de nivel no intersecta restricción]
-    I --> L[Curva de nivel encierra restricción]
-    J --> M[Análisis de segunda derivada requerido]
-    
-    classDef mainNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef conceptNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef processNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef typeNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef resultNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A mainNode
-    class B,C,D,E conceptNode
-    class F processNode
-    class G,H,I,J typeNode
-    class K,L,M resultNode
-```
+![[Diagramas/02_-_Optimización_con_Restricciones_03.svg]]
 
 ### Casos Especiales Geométricos
 

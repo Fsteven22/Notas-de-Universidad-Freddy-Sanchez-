@@ -26,30 +26,7 @@ dg-publish: true
 > 
 > **Desarrollos Posteriores**: • **Integrales definidas** - Aplicación del Teorema Fundamental del Cálculo • **Métodos de integración** - Técnicas avanzadas (sustitución, por partes, etc.) • **Aplicaciones de la integral** - Áreas, volúmenes, trabajo, etc. • **Ecuaciones diferenciales** - Uso directo de antiderivadas • **Series de potencias** - Integración término a término
 
-```mermaid
-mindmap
-  root((Antiderivadas))
-    Fundamentos
-      Definición
-      Existencia y unicidad
-      Notación
-      Verificación
-    Técnicas
-      Fórmulas básicas
-      Propiedades lineales
-      Casos especiales
-      Estrategias de simplificación
-    Aplicaciones
-      Problemas de valor inicial
-      Modelado físico
-      Reconstrucción de funciones
-      Base para integrales definidas
-    Conexiones
-      Derivadas
-      Integrales definidas
-      Ecuaciones diferenciales
-      Análisis matemático
-```
+![[Diagramas/01_-_Antiderivadas_(Primitivas)_01.svg]]
 
 ---
 
@@ -79,16 +56,7 @@ mindmap
 > - $F_3(x) = x^2 - 3$ es otra antiderivada
 > - En general: $F(x) = x^2 + C$ representa toda la familia
 
-```mermaid
-graph LR
-    A[f] -->|Antiderivación| B[F + C]
-    B -->|Derivación| A
-    C[Familia de funciones] --> B
-    
-    style A fill:#ffecb3
-    style B fill:#c8e6c9
-    style C fill:#e1bee7
-```
+![[Diagramas/01_-_Antiderivadas_(Primitivas)_02.svg]]
 
 ---
 
@@ -219,21 +187,7 @@ graph LR
 > - Todas tienen la misma forma, solo cambia su posición vertical
 > - En $x = 1$, todas tienen pendiente $f(1) = 2$
 
-```mermaid
-graph TD
-    A[Función f] --> B{Campo de direcciones}
-    B --> C[Familia de antiderivadas F + C]
-    C --> D[C = 0: Curva de referencia]
-    C --> E[C > 0: Curvas superiores]
-    C --> F[C < 0: Curvas inferiores]
-    
-    G[Condición inicial] --> H[Determina valor específico de C]
-    H --> I[Una curva única de la familia]
-    
-    style A fill:#fff3e0
-    style I fill:#e8f5e8
-    style B fill:#e3f2fd
-```
+![[Diagramas/01_-_Antiderivadas_(Primitivas)_03.svg]]
 
 ---
 

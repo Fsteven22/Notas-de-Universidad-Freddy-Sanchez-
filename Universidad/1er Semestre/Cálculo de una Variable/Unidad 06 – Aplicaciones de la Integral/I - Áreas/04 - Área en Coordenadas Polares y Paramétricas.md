@@ -33,21 +33,7 @@ dg-publish: true
 > 
 > **Paso 5**: Aplicar la fórmula $A = \frac{1}{2}\int_\alpha^\beta [r_{\text{ext}}^2 - r_{\text{int}}^2] d\theta$
 > 
-> ```mermaid
-> flowchart TD
->     A["Curvas polares r₁(θ), r₂(θ)"] --> B["Encontrar intersecciones"]
->     B --> C["f(θ) = g(θ)"]
->     C --> D["Puntos de intersección: θ₁, θ₂, ..."]
->     D --> E["Determinar límites de integración"]
->     E --> F["¿r₁(θ) ≥ r₂(θ) en el intervalo?"]
->     F -->|Sí| G["A = ½∫[r₁²(θ) - r₂²(θ)]dθ"]
->     F -->|No| H["A = ½∫[r₂²(θ) - r₁²(θ)]dθ"]
->     G --> I["Evaluar la integral"]
->     H --> I
->     I --> J["Área total"]
->     style J fill:#45b7d1
->     style I fill:#96ceb4
-> ```
+> ![[Diagramas/04_-_Área_en_Coordenadas_Polares_y_Paramétricas_01.svg]]
 
 ### 🧪 Ejemplos en Coordenadas Polares
 

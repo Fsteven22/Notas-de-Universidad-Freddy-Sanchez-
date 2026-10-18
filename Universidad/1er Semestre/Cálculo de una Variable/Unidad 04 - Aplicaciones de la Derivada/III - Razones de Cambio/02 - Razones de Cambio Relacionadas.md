@@ -18,33 +18,7 @@ dg-publish: true
 
 > [!tip] Proceso Sistemático DERIVA **D**efinir todas las variables y sus unidades **E**stablecer la ecuación que relaciona las variables **R**elacionar mediante derivación implícita respecto al tiempo **I**dentificar los datos conocidos y lo que se busca **V**alores: sustituir los datos en el momento específico **A**nálisis: resolver para la incógnita y verificar unidades
 
-```mermaid
-graph TD
-    A[Problema de Razones Relacionadas] --> B[PASO 1: Definir Variables]
-    B --> C[PASO 2: Dibujar Diagrama]
-    C --> D[PASO 3: Establecer Ecuación]
-    D --> E[PASO 4: Derivar Implícitamente]
-    E --> F[PASO 5: Identificar Datos Conocidos]
-    F --> G[PASO 6: Sustituir Valores]
-    G --> H[PASO 7: Resolver para Incógnita]
-    H --> I[PASO 8: Verificar Respuesta]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef setupNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef modelingNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef derivativeNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef dataNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef verificationNode fill:#fce4ec,stroke:#8e24aa,stroke-width:3px
-    
-    class A startNode
-    class B,C setupNode
-    class D modelingNode
-    class E derivativeNode
-    class F,G dataNode
-    class H solutionNode
-    class I verificationNode
-```
+![[Diagramas/02_-_Razones_de_Cambio_Relacionadas_01.svg]]
 
 ### Tipos de Variables Comunes
 
@@ -234,33 +208,7 @@ graph TD
 
 ### Problemas de Ángulos Variables
 
-```mermaid
-flowchart TD
-    A[Problemas Geométricos Dinámicos] --> B[Área Variable]
-    A --> C[Perímetros/Circunferencias]
-    A --> D[Ángulos Variables]
-    A --> E[Volúmenes Variables]
-    
-    B --> F[Triángulos, Rectángulos, Círculos]
-    C --> G[Figuras que crecen/decrecen uniformemente]
-    D --> H[Rotación, Oscilación, Observación]
-    E --> I[Sólidos de revolución, Recipientes]
-    
-    F --> J[dA/dt = función de dimensiones]
-    G --> K[dP/dt proporcional a crecimiento]
-    H --> L[dθ/dt relacionado con movimiento]
-    I --> M[dV/dt por forma del recipiente]
-    
-    classDef mainNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef categoryNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef typeNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef formulaNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A mainNode
-    class B,C,D,E categoryNode
-    class F,G,H,I typeNode
-    class J,K,L,M formulaNode
-```
+![[Diagramas/02_-_Razones_de_Cambio_Relacionadas_02.svg]]
 
 > [!example] Problema: Observador y Avión **Enunciado:** Un avión vuela horizontalmente a 150 m/s y a 1000 m de altura. Un observador en tierra lo sigue con binoculares. ¿A qué velocidad angular giran los binoculares cuando el avión está a 1200 m horizontalmente del observador?
 > 

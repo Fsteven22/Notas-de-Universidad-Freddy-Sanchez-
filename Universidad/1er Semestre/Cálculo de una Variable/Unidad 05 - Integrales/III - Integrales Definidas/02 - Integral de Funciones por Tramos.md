@@ -36,30 +36,7 @@ dg-publish: true
 > • **Transformadas** - Fourier de funciones por tramos
 > • **Ecuaciones diferenciales** - Con coeficientes por tramos
 
-```mermaid
-mindmap
-  root((Funciones Por Tramos))
-    Definición
-      Múltiples expresiones
-      Intervalos diferentes
-      Puntos de ruptura
-      Continuidad
-    Integración
-      División del intervalo
-      Integral por tramos
-      Suma de resultados
-      Evaluación de límites
-    Tipos Especiales
-      Función escalón
-      Función valor absoluto
-      Función signo
-      Funciones trigonométricas modificadas
-    Aplicaciones
-      Modelos físicos
-      Economía
-      Procesamiento señales
-      Probabilidad
-```
+![[Diagramas/02_-_Integral_de_Funciones_por_Tramos_01.svg]]
 
 ---
 
@@ -314,24 +291,7 @@ mindmap
 > - **Puntos de ruptura**: No afectan el valor de la integral
 > - **Discontinuidades de salto**: Se manejan automáticamente
 
-```mermaid
-graph TD
-    A[Función por tramos] --> B[División en intervalos]
-    B --> C[Cálculo de área en cada tramo]
-    C --> D[Suma algebraica de áreas]
-    
-    E[Tramo 1: Área A₁] --> F[Suma total]
-    G[Tramo 2: Área A₂] --> F
-    H[Tramo 3: Área A₃] --> F
-    I[...] --> F
-    J[Tramo n: Área Aₙ] --> F
-    
-    F --> K["∫f(x)dx = A₁ + A₂ + A₃ + ... + Aₙ"]
-    
-    style A fill:#ffecb3
-    style F fill:#c8e6c9
-    style K fill:#e8f5e8
-```
+![[Diagramas/02_-_Integral_de_Funciones_por_Tramos_02.svg]]
 
 ---
 

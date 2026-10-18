@@ -1,0 +1,11 @@
+flowchart LR
+    A["Función f en intervalo cerrado"] --> B{"¿Continua?"}
+    B -->|Sí| C[Riemann Integrable]
+    B -->|No| D{"¿Monótona?"}
+    D -->|Sí| C
+    D -->|No| E{"¿Acotada + Finitas discontinuidades?"}
+    E -->|Sí| C
+    E -->|No| F[Puede no ser integrable]
+    
+    style C fill:#96ceb4
+    style F fill:#ff6b6b

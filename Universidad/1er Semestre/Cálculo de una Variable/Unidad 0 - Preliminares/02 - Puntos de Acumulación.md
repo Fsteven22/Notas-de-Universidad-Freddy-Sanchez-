@@ -490,29 +490,7 @@ dg-publish: true
 
 ## 📚 Resumen Visual
 
-```mermaid
-graph TD
-    A[Punto x₀ y Conjunto A] --> B{¿Tipo de punto?}
-    
-    B --> C[Punto de Acumulación<br/>Hay infinitos puntos de A<br/>arbitrariamente cerca]
-    B --> D[Punto Aislado<br/>Hay una bola que solo<br/>contiene a x₀]
-    B --> E[Punto Exterior<br/>Hay una bola sin<br/>puntos de A]
-    
-    C --> F[Puede estar en A<br/>o no estar en A]
-    C --> G[Caracterización:<br/>∃ sucesión en A\{x₀}<br/>convergente a x₀]
-    
-    D --> H[Debe estar en A<br/>no está cerca de otros]
-    
-    A --> I[Operaciones]
-    I --> J[Clausura: Ā = A ∪ A']
-    I --> K[A cerrado ⟺ A' ⊆ A]
-    
-    style A fill:#e3f2fd
-    style C fill:#c8e6c9
-    style D fill:#fff9c4
-    style E fill:#ffccbc
-    style I fill:#e1bee7
-```
+![[Diagramas/02_-_Puntos_de_Acumulación_01.svg]]
 
 ## 🎯 Conceptos Clave para Recordar
 

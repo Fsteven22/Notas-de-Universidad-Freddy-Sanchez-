@@ -1,0 +1,22 @@
+graph TD
+    A["Función f de x"] --> B["Punto a y f(a)"]
+    B --> C["Calcular derivada en a"]
+    C --> D{"¿Existe derivada?"}
+    
+    D -->|Sí| E["Recta Tangente"]
+    D -->|No| F["No derivable"]
+    
+    E --> G["Ecuación de la recta tangente"]
+    G --> H["Interpretación geométrica"]
+    G --> I["Razón de cambio instantánea"]
+    
+    F --> J["Analizar tipo de singularidad"]
+    J --> K["Esquina, cúspide o discontinuidad"]
+    
+    H --> L["Aproximación lineal"]
+    I --> M["Aplicaciones físicas"]
+    
+    style E fill:#4caf50,color:#fff
+    style F fill:#f44336,color:#fff
+    style L fill:#2196f3,color:#fff
+    style M fill:#ff9800,color:#fff

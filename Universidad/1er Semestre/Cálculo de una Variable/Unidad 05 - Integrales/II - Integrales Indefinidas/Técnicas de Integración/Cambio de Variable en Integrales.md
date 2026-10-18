@@ -16,18 +16,7 @@ dg-publish: true
 > 4. **Resolver**: Integrar respecto a $u$
 > 5. **Regresar**: Sustituir $u$ por $g(x)$
 
-```mermaid
-flowchart TD
-    A["∫ f(g(x)) · g'(x) dx"] --> B["Identificar u = g(x)"]
-    B --> C["Calcular du = g'(x) dx"]
-    C --> D["Sustituir: ∫ f(u) du"]
-    D --> E["Integrar respecto a u"]
-    E --> F["Sustituir u por g(x)"]
-    F --> G["Resultado final + C"]
-    
-    style A fill:#ffebee
-    style G fill:#e8f5e8
-```
+![[Diagramas/Cambio_de_Variable_en_Integrales_01.svg]]
 
 ## 🧮 Casos Comunes
 
@@ -101,15 +90,7 @@ flowchart TD
 > 
 > **Opción 2**: Resolver y evaluar normalmente
 
-```mermaid
-flowchart LR
-    A["Límites originales: a, b"] --> B["u = g(x)"]
-    B --> C["Nuevos límites: g(a), g(b)"]
-    C --> D["∫ f(u) du entre nuevos límites"]
-    
-    style A fill:#e3f2fd
-    style D fill:#e8f5e8
-```
+![[Diagramas/Cambio_de_Variable_en_Integrales_02.svg]]
 
 > [!example] 🔢 Ejemplo de Integral Definida **Resolver**: $\int_0^1 2x e^{x^2} , dx$
 > 
@@ -159,21 +140,7 @@ flowchart LR
 > - $\sqrt{x^2 - a^2} = a \tan(t)$
 > - **Triángulo**: hipotenusa = $x$, opuesto = $\sqrt{x^2 - a^2}$, adyacente = $a$
 
-```mermaid
-flowchart TD
-    A["Expresión con Raíz"] --> B{"¿Qué forma tiene?"}
-    B -->|"√(a² - x²)"| C["x = a sin(t)"]
-    B -->|"√(a² + x²)"| D["x = a tan(t)"]  
-    B -->|"√(x² - a²)"| E["x = a sec(t)"]
-    
-    C --> F["√(a² - x²) = a cos(t)"]
-    D --> G["√(a² + x²) = a sec(t)"]
-    E --> H["√(x² - a²) = a tan(t)"]
-    
-    style C fill:#ffcdd2
-    style D fill:#c8e6c9
-    style E fill:#bbdefb
-```
+![[Diagramas/Cambio_de_Variable_en_Integrales_03.svg]]
 
 ## 🧮 Ejemplos Resueltos
 
@@ -213,42 +180,7 @@ flowchart TD
 
 > [!info] 📐 Construcción de Triángulos Para regresar a la variable original, construir triángulos rectángulos según cada caso:
 
-```mermaid
-graph TD
-    subgraph C1 ["Caso 1: x = a sin(t)"]
-        direction TB
-        A1["Hipotenusa: a"] 
-        B1["Opuesto: x"]
-        C1_1["Adyacente: √(a² - x²)"]
-        A1 -.-> B1
-        A1 -.-> C1_1
-        B1 -.-> C1_1
-    end
-    
-    subgraph C2 ["Caso 2: x = a tan(t)"]
-        direction TB
-        A2["Hipotenusa: √(a² + x²)"]
-        B2["Opuesto: x"] 
-        C2_1["Adyacente: a"]
-        A2 -.-> B2
-        A2 -.-> C2_1
-        B2 -.-> C2_1
-    end
-    
-    subgraph C3 ["Caso 3: x = a sec(t)"]
-        direction TB
-        A3["Hipotenusa: x"]
-        B3["Opuesto: √(x² - a²)"]
-        C3_1["Adyacente: a"]
-        A3 -.-> B3
-        A3 -.-> C3_1
-        B3 -.-> C3_1
-    end
-    
-    style C1 fill:#ffebee
-    style C2 fill:#e8f5e8
-    style C3 fill:#e3f2fd
-```
+![[Diagramas/Cambio_de_Variable_en_Integrales_04.svg]]
 
 ## 🎯 Cuándo Usar Cada Sustitución
 

@@ -40,35 +40,7 @@ dg-publish: true
 > 3. **Cálculo** - Usar derivadas para encontrar extremos
 > 4. **Transformaciones** - Aplicar cambios a funciones conocidas
 
-```mermaid
-graph TD
-    A[Función f x] --> B[Identificar tipo de función]
-    B --> C{Tipo?}
-    C -->|Polinomial| D[D = ℝ, analizar grado para R]
-    C -->|Racional| E[Excluir ceros del denominador]
-    C -->|Radical| F[Restricciones bajo la raíz]
-    C -->|Logarítmica| G[Argumento > 0]
-    C -->|Exponencial| H[D = ℝ, R > 0]
-    C -->|Trigonométrica| I[Considerar periodicidad]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef decisionNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef polynomialNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef rationalNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef radicalNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef logNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef expNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    classDef trigNode fill:#fce4ec,stroke:#8e24aa,stroke-width:2px
-    
-    class A startNode
-    class B,C decisionNode
-    class D polynomialNode
-    class E rationalNode
-    class F radicalNode
-    class G logNode
-    class H expNode
-    class I trigNode
-```
+![[Diagramas/01_-_Análisis_Completo_de_Funciones_01.svg]]
 
 ## Asíntotas 📏
 
@@ -127,41 +99,7 @@ graph TD
 > - b = lim[x→±∞] [(x² + 1)/x - x] = lim[x→±∞] 1/x = 0
 > - **Asíntota oblicua: y = x**
 
-```mermaid
-flowchart TD
-    A[Buscar asíntotas] --> B{Verticales}
-    A --> C{Horizontales}  
-    A --> D{Oblicuas}
-    
-    B --> E[Ceros del denominador]
-    E --> F[Verificar límites laterales]
-    
-    C --> G[lim x→±∞ f x]
-    G --> H{Existe y es finito?}
-    H -->|Sí| I[Asíntota horizontal y = L]
-    H -->|No| J[No hay asíntota horizontal]
-    
-    D --> K{Hay asíntota horizontal?}
-    K -->|No| L[Calcular m y b]
-    K -->|Sí| M[No hay asíntota oblicua]
-    L --> N[Asíntota oblicua y = mx + b]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef processNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef decisionNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef verticalNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef horizontalNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef obliqueNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef resultNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    
-    class A startNode
-    class E,F,G,L processNode
-    class B,C,D,H,K decisionNode
-    class F verticalNode
-    class I,J horizontalNode
-    class N obliqueNode
-    class M resultNode
-```
+![[Diagramas/01_-_Análisis_Completo_de_Funciones_02.svg]]
 
 ## Intersecciones con Ejes 📍
 
@@ -294,33 +232,7 @@ flowchart TD
 
 ### Proceso de Graficación
 
-```mermaid
-graph TD
-    A[Función f x] --> B[PASO 1: Dominio y Rango]
-    B --> C[PASO 2: Intersecciones]
-    C --> D[PASO 3: Simetría y Periodicidad]
-    D --> E[PASO 4: Primera Derivada]
-    E --> F[PASO 5: Segunda Derivada]
-    F --> G[PASO 6: Asíntotas]
-    G --> H[PASO 7: Comportamiento en Infinito]
-    H --> I[PASO 8: Puntos Adicionales]
-    I --> J[PASO 9: Construcción de Gráfica]
-    J --> K[PASO 10: Verificación]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:4px
-    classDef algebraNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef calculusNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef asymptoticNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef constructionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
-    classDef verificationNode fill:#e0f2f1,stroke:#00695c,stroke-width:3px
-    
-    class A startNode
-    class B,C,D algebraNode
-    class E,F calculusNode
-    class G,H asymptoticNode
-    class I,J constructionNode
-    class K verificationNode
-```
+![[Diagramas/01_-_Análisis_Completo_de_Funciones_03.svg]]
 
 ### Orden de Prioridad en el Análisis
 

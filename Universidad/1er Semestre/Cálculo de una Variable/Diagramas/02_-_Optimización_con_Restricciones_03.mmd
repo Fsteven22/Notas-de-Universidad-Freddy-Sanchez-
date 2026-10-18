@@ -1,0 +1,30 @@
+graph TD
+    A[Interpretación Geométrica] --> B[Curvas de Nivel de f x,y]
+    A --> C[Curva de Restricción g x,y = 0]
+    
+    B --> D[Familia de Curvas f = c₁, c₂, c₃...]
+    C --> E[Curva Única en el Plano]
+    
+    D --> F[Buscar Tangencia]
+    E --> F
+    
+    F --> G{Tipo de Tangencia}
+    G -->|Externa| H[Máximo Local]
+    G -->|Interna| I[Mínimo Local]
+    G -->|Silla| J[Punto de Silla]
+    
+    H --> K[Curva de nivel no intersecta restricción]
+    I --> L[Curva de nivel encierra restricción]
+    J --> M[Análisis de segunda derivada requerido]
+    
+    classDef mainNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
+    classDef conceptNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef processNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
+    classDef typeNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef resultNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class A mainNode
+    class B,C,D,E conceptNode
+    class F processNode
+    class G,H,I,J typeNode
+    class K,L,M resultNode

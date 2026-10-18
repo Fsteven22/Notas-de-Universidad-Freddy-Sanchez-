@@ -20,20 +20,7 @@ dg-publish: true
 > 
 > **Interpretación**: La pendiente de la curva en el punto $(x, y)$ correspondiente al parámetro $t$
 
-```mermaid
-flowchart TD
-    A["Curva Paramétrica<br/>x = f(t), y = g(t)"] --> B["Calcular dx/dt y dy/dt"]
-    B --> C["dx/dt = f'(t)<br/>dy/dt = g'(t)"]
-    C --> D{"¿dx/dt ≠ 0?"}
-    D -->|Sí| E["dy/dx = (dy/dt)/(dx/dt)<br/>= g'(t)/f'(t)"]
-    D -->|No| F["Tangente vertical<br/>o punto singular"]
-    E --> G["Evaluar en valor<br/>específico de t"]
-    F --> H["Analizar comportamiento<br/>especial"]
-    
-    style E fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style F fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-    style G fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-```
+![[Diagramas/03_-_Derivadas_Paramétricas_01.svg]]
 
 ### 🧮 Justificación Matemática
 
@@ -114,18 +101,7 @@ flowchart TD
 > 2. Derivar respecto a $t$: $\frac{d}{dt}\left(\frac{dy}{dx}\right)$
 > 3. Dividir por $\frac{dx}{dt} = f'(t)$
 
-```mermaid
-flowchart TD
-    A["Calcular dy/dx = g'(t)/f'(t)"] --> B["Derivar respecto a t"]
-    B --> C["d/dt[dy/dx] usando regla del cociente"]
-    C --> D["d/dt[g'(t)/f'(t)] = [g''(t)f'(t) - g'(t)f''(t)]/[f'(t)]²"]
-    D --> E["Dividir por dx/dt = f'(t)"]
-    E --> F["d²y/dx² = [g''(t)f'(t) - g'(t)f''(t)]/[f'(t)]³"]
-    
-    style A fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style C fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style F fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-```
+![[Diagramas/03_-_Derivadas_Paramétricas_02.svg]]
 
 > [!example] 🔢 Ejemplo 5: Segunda Derivada del Círculo
 > **Encontrar** $\frac{d^2y}{dx^2}$ para: $x = r\cos(t)$, $y = r\sin(t)$

@@ -27,19 +27,7 @@ dg-publish: true
 > - $F'(x) = f(x)$ significa que la **tasa de cambio** del área acumulada es igual al **valor de la función** en ese punto
 > - La "altura" de la función determina qué tan rápido crece el área
 
-```mermaid
-graph TD
-    A["Función continua f(t)"] --> B["Área acumulada F(x)"]
-    B --> C["Derivar F(x)"]
-    C --> D["Recuperamos f(x)"]
-    
-    E["Integral desde a hasta x"] --> F["F(x) = área bajo curva"]
-    F --> G["F'(x) = altura de la curva"]
-    G --> H["F'(x) = f(x)"]
-    
-    style D fill:#45b7d1
-    style H fill:#96ceb4
-```
+![[Diagramas/04_-_Teorema_Fundamental_del_Cálculo_01.svg]]
 
 ### 🧮 Demostración (Esquema)
 
@@ -76,19 +64,7 @@ graph TD
 > 
 > **Paso 3**: Calcular $F(b) - F(a)$
 
-```mermaid
-flowchart LR
-    A["Integral definida"] --> B["Encontrar antiderivada F(x)"]
-    B --> C["Evaluar F(b)"]
-    B --> D["Evaluar F(a)"]
-    C --> E["Calcular F(b) - F(a)"]
-    D --> E
-    E --> F["Resultado final"]
-    
-    style B fill:#ff6b6b
-    style E fill:#45b7d1
-    style F fill:#96ceb4
-```
+![[Diagramas/04_-_Teorema_Fundamental_del_Cálculo_02.svg]]
 
 ## 🧪 Ejemplos Detallados
 
@@ -167,26 +143,7 @@ flowchart LR
 > #### 🎯 Corolario 2: Caracterización de Antiderivadas
 > Si $F'(x) = G'(x) = f(x)$ en un intervalo, entonces $F(x) = G(x) + C$ para alguna constante $C$.
 > 
-```mermaid
-mindmap
-  root((Teorema Fundamental))
-    Parte I
-      Derivada de integral
-      F prima x igual f x
-      Área acumulada
-    Parte II
-      Evaluación de integrales
-      F b menos F a
-      Antiderivadas
-    Aplicaciones
-      Cálculo de áreas
-      Resolución de EDOs
-      Física matemática
-    Conexiones
-      Límites variables
-      Valor medio
-      Continuidad
-```
+![[Diagramas/04_-_Teorema_Fundamental_del_Cálculo_03.svg]]
 
 ## 🎨 Aplicaciones Importantes
 
@@ -241,19 +198,7 @@ mindmap
 
 ### 🧠 Impacto Conceptual
 
-```mermaid
-flowchart TD
-    A[Problema de Tangentes] --> C[Teorema Fundamental]
-    B[Problema de Áreas] --> C
-    C --> D[Unificación del Cálculo]
-    D --> E[Revolución Científica]
-    E --> F[Física Moderna]
-    E --> G[Ingeniería]
-    E --> H[Matemática Aplicada]
-    
-    style C fill:#45b7d1
-    style D fill:#96ceb4
-```
+![[Diagramas/04_-_Teorema_Fundamental_del_Cálculo_04.svg]]
 
 ---
 

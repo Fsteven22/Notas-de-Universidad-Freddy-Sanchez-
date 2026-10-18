@@ -43,24 +43,7 @@ dg-publish: true
 > 
 > ### Taxonomía completa de discontinuidades
 > 
-> ```mermaid
-> flowchart TD
->    A[Discontinuidad en x = a] --> B[Evitable/Removible]
->    A --> C[No Evitable]
->    C --> D[Salto Finito]
->    C --> E[Salto Infinito]
->    C --> F[Esencial/Oscilante]
->    B --> G["límite existe pero ≠ f(a)"]
->    D --> H["Límites laterales finitos pero distintos"]
->    E --> I["Al menos un límite lateral infinito"]
->    F --> J["Límite no existe por oscilación"]
->    style A fill:#f44336,color:#fff
->    style B fill:#4caf50,color:#fff
->    style C fill:#ff9800,color:#fff
->    style D fill:#2196f3,color:#fff
->    style E fill:#9c27b0,color:#fff
->    style F fill:#607d8b,color:#fff
-> ```
+> ![[Diagramas/01_-_Continuidad_y_Límites_01.svg]]
 >
 
 > [!info] 📈 Ejemplos de Cada Tipo
@@ -118,16 +101,7 @@ dg-publish: true
 > 
 > **Versión geométrica:** 📐 Una función continua que conecta dos puntos debe pasar por todos los valores intermedios
 > 
-> ```mermaid
-> graph LR
->    A["f(a)"] --> B["k"] --> C["f(b)"]
->    D[a] --> E[c] --> F[b]
->    A -.-> D
->    B -.-> E
->    C -.-> F
->    style B fill:#4caf50,color:#fff
->    style E fill:#4caf50,color:#fff
-> ```
+> ![[Diagramas/01_-_Continuidad_y_Límites_02.svg]]
 > 
 > **Condiciones necesarias:** ⚠️
 > 
@@ -214,29 +188,7 @@ dg-publish: true
 > |$f(x) = \frac{1}{x}$|$(0,1]$|❌ No|No acotada cerca de 0|
 > |$f(x) = \sqrt{x}$|$[0,\infty)$|✅ Sí|$f'(x) = \frac{1}{2\sqrt{x}}$ controlable|
 
-```mermaid
-graph TD
-    A[Función f] --> B{¿Continua?}
-    B -->|No| C[Estudiar discontinuidades]
-    B -->|Sí| D{¿En compacto?}
-    
-    D -->|Sí| E[Uniformemente continua] 
-    D -->|No| F{¿Derivada acotada?}
-    
-    F -->|Sí| E
-    F -->|No| G[Verificar definición]
-    
-    C --> H[Clasificar tipo]
-    H --> I[Evitable/Salto/Infinita/Esencial]
-    
-    G --> J{¿Cumple condición ε-δ global?}
-    J -->|Sí| E
-    J -->|No| K[Solo continua puntualmente]
-    
-    style E fill:#4caf50,color:#fff
-    style K fill:#ff9800,color:#fff
-    style C fill:#f44336,color:#fff
-```
+![[Diagramas/01_-_Continuidad_y_Límites_03.svg]]
 
 ## Técnica de Estudio: Método TRACE
 

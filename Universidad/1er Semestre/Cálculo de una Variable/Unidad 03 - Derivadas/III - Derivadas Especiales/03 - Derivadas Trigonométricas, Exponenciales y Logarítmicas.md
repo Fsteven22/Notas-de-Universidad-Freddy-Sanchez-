@@ -53,37 +53,7 @@ dg-publish: true
 > - **Pareja 2**: $\tan$ y $\sec$ bailan juntos ($\tan \rightarrow \sec^2$, $\sec \rightarrow \sec \tan$)
 > - **Pareja 3**: $\cot$ y $\csc$ bailan juntos ($\cot \rightarrow -\csc^2$, $\csc \rightarrow -\csc \cot$)
 
-```mermaid
-flowchart LR
-    subgraph "Funciones Básicas"
-        A["sin(x) → cos(x)"]
-        B["cos(x) → -sin(x)"]
-    end
-    
-    subgraph "Funciones Tangente/Secante"
-        C["tan(x) → sec²(x)"]
-        D["sec(x) → sec(x)tan(x)"]
-    end
-    
-    subgraph "Funciones Cotangente/Cosecante"
-        E["cot(x) → -csc²(x)"]
-        F["csc(x) → -csc(x)cot(x)"]
-    end
-    
-    A -.-> B
-    B -.-> A
-    C -.-> D
-    D -.-> C
-    E -.-> F
-    F -.-> E
-    
-    style A fill:#ffcdd2
-    style B fill:#ffcdd2
-    style C fill:#c8e6c9
-    style D fill:#c8e6c9
-    style E fill:#bbdefb
-    style F fill:#bbdefb
-```
+![[Diagramas/03_-_Derivadas_Trigonométricas,_Exponenciales_y_Logarítmicas_01.svg]]
 
 ## 🧮 Ejemplos con Regla de la Cadena
 
@@ -322,27 +292,7 @@ flowchart LR
 > - **Exponencial**: $a^x$ → $a^x \ln(a)$ (multiplica por ADN)
 > - **Logarítmica**: $\log_a(x)$ → $\frac{1}{x \ln(a)}$ (divide por ADN)
 
-```mermaid
-flowchart TD
-    A["Función Exponencial/Logarítmica"] --> B{"¿Qué tipo es?"}
-    
-    B -->|"e^x o ln(x)"| C["Fórmulas Naturales<br/>e^x → e^x<br/>ln(x) → 1/x"]
-    B -->|"Base a ≠ e"| D["Necesita ln(a)<br/>a^x → a^x·ln(a)<br/>log_a(x) → 1/(x·ln(a))"]
-    
-    C --> E{"¿Hay composición?"}
-    D --> E
-    
-    E -->|"Sí"| F["Aplicar Regla de la Cadena<br/>f(g(x)) → f'(g(x))·g'(x)"]
-    E -->|"No"| G["Aplicar fórmula directa"]
-    
-    F --> H["Resultado Final"]
-    G --> H
-    
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style F fill:#e3f2fd
-    style H fill:#ffebee
-```
+![[Diagramas/03_-_Derivadas_Trigonométricas,_Exponenciales_y_Logarítmicas_02.svg]]
 
 ## 🧮 Ejemplos Básicos
 

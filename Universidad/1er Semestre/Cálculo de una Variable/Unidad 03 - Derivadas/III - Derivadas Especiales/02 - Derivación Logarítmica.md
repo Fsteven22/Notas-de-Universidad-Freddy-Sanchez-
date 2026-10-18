@@ -17,21 +17,7 @@ dg-publish: true
 > 
 > Por lo tanto: $$\frac{dy}{dx} = y \cdot \frac{d}{dx}[\ln|y|]$$
 
-```mermaid
-flowchart TD
-    A["y = f(x) compleja"] --> B["Aplicar ln a ambos lados"]
-    B --> C["ln|y| = ln|f(x)|"]
-    C --> D["Usar propiedades del ln<br/>para simplificar"]
-    D --> E["ln(AB) = ln(A) + ln(B)<br/>ln(A/B) = ln(A) - ln(B)<br/>ln(A^n) = n·ln(A)"]
-    E --> F["Derivar ambos lados<br/>implícitamente"]
-    F --> G["1/y · dy/dx = expresión simplificada"]
-    G --> H["dy/dx = y · (expresión simplificada)"]
-    H --> I["Sustituir y = f(x) original"]
-    
-    style D fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style F fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style I fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-```
+![[Diagramas/02_-_Derivación_Logarítmica_01.svg]]
 
 ## 📊 Casos de Aplicación
 
@@ -89,18 +75,7 @@ flowchart TD
 > 
 > **Patrón de memoria**: *"g prima por ln de f, más g por f prima sobre f"*
 
-```mermaid
-flowchart TD
-    A["y = f(x)^g(x)"] --> B["Aplicar ln"]
-    B --> C["ln y = g(x) · ln f(x)"]
-    C --> D["Derivar usando regla del producto"]
-    D --> E["1/y · dy/dx = g'(x)ln f(x) + g(x) · f'(x)/f(x)"]
-    E --> F["dy/dx = f(x)^g(x) · [g'(x)ln f(x) + g(x) · f'(x)/f(x)]"]
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style D fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style F fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-```
+![[Diagramas/02_-_Derivación_Logarítmica_02.svg]]
 
 > [!example] 🔢 Ejemplo 3: $x^x$
 > **Encontrar**: $\frac{d}{dx}[x^x]$ para $x > 0$
@@ -176,21 +151,7 @@ flowchart TD
 
 ### Patrones de Reconocimiento Visual
 
-```mermaid
-flowchart TD
-    A["Ver función complicada"] --> B{"¿Cuántos factores<br/>multiplicando/dividiendo?"}
-    B -->|"1-2"| C["Métodos directos<br/>probablemente mejores"]
-    B -->|"3+"| D["¿Hay exponentes<br/>variables?"]
-    C --> E["Regla producto/cociente"]
-    D -->|"Sí"| F["Derivación logarítmica<br/>OBLIGATORIA ✅"]
-    D -->|"No"| G["¿Hay raíces/potencias<br/>fraccionarias?"]
-    G -->|"Sí"| H["Derivación logarítmica<br/>MUY RECOMENDADA ✅"]
-    G -->|"No"| I["Derivación logarítmica<br/>vs. métodos directos<br/>(ambos viables)"]
-    
-    style F fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style H fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style E fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-```
+![[Diagramas/02_-_Derivación_Logarítmica_03.svg]]
 
 ### Casos Donde la Simplificación es Dramática
 

@@ -58,23 +58,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ```mermaid
-> graph LR
->     A[📐 Cálculo<br>de una Variable] --> B[Unidad 0<br>Preliminares]
->     A --> C[Unidad 1<br>Límites y Continuidad]
->     A --> D[Unidad 2<br>Aplicaciones de Límites]
->     A --> E[Unidad 3<br>Derivadas]
->     A --> F[Unidad 4 Aplicaciones de la Derivada]
->     A --> G[Unidad 5<br>Integrales]
->     A --> H[Unidad 6<br>Aplicaciones de la Integral]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
->     style G fill:#e1fff4
->     style H fill:#fff0e1
-> ```
+> ![[Diagramas/Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|

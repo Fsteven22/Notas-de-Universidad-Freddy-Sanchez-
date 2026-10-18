@@ -17,23 +17,7 @@ dg-publish: true
 > - **du = ?** (usar derivada de función inversa)
 > - **Resultado**: x·f⁻¹(x) - ∫ x·(df⁻¹/dx) dx
 
-```mermaid
-flowchart TD
-    A["∫ f⁻¹(x) dx"] --> B["Integración por Partes"]
-    B --> C["u = f⁻¹(x)<br/>dv = dx"]
-    C --> D["du = 1/f'(f⁻¹(x)) dx<br/>v = x"]
-    D --> E["x·f⁻¹(x) - ∫ x/(f'(f⁻¹(x))) dx"]
-    E --> F{"¿Se puede simplificar<br/>el denominador?"}
-    F -->|Sí| G["Usar identidad<br/>trigonométrica/algebraica"]
-    F -->|No| H["Usar sustitución<br/>y = f⁻¹(x)"]
-    G --> I["Resolver integral<br/>resultante"]
-    H --> I
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style G fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style H fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-    style I fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-```
+![[Diagramas/Integrales_de_Funciones_Inversas_01.svg]]
 
 ## 📐 Funciones Trigonométricas Inversas
 
@@ -139,22 +123,7 @@ flowchart TD
 > - Después de resolver: $\int \frac{x\arctan(x)}{1+x^2} , dx = \frac{1}{2}\arctan(x)\ln(1+x^2) - \frac{x}{2} + \frac{1}{2}\arctan(x)$
 > - **Resultado complejo**: Requiere múltiples aplicaciones de integración por partes
 
-```mermaid
-flowchart TD
-    A["∫ [f⁻¹(x)]ⁿ dx"] --> B{"¿n = 1?"}
-    B -->|Sí| C["Integración por partes<br/>directa"]
-    B -->|No| D{"¿n es pequeño<br/>(2, 3)?"}
-    D -->|Sí| E["Integración por partes<br/>iterada"]
-    D -->|No| F["Usar fórmulas de<br/>reducción específicas"]
-    
-    C --> G["u = f⁻¹(x), dv = dx"]
-    E --> H["u = [f⁻¹(x)]ⁿ, dv = dx<br/>Aplicar múltiples veces"]
-    F --> I["Consultar tablas<br/>o métodos numéricos"]
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style E fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
-    style F fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-```
+![[Diagramas/Integrales_de_Funciones_Inversas_02.svg]]
 
 ## 🔄 Identidades y Relaciones Útiles
 
@@ -318,22 +287,7 @@ flowchart TD
 
 ## 🎯 Patrones de Reconocimiento
 
-```mermaid
-flowchart TD
-    A["Ver función inversa"] --> B{"¿Está sola?"}
-    B -->|Sí| C["Integración por partes<br/>u = f⁻¹(x), dv = dx"]
-    B -->|No| D{"¿Multiplicada por x?"}
-    D -->|Sí| E["Integración por partes<br/>u = f⁻¹(x), dv = x dx"]
-    D -->|No| F{"¿En denominador?"}
-    F -->|Sí| G["Buscar sustitución<br/>o integración por partes"]
-    F -->|No| H{"¿Composición?"}
-    H -->|Sí| I["Cambio de variable<br/>primero"]
-    H -->|No| J["Caso especial<br/>analizar individualmente"]
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style E fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style I fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
-```
+![[Diagramas/Integrales_de_Funciones_Inversas_03.svg]]
 
 ---
 

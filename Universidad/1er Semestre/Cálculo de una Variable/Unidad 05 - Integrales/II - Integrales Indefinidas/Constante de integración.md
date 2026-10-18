@@ -27,24 +27,7 @@ dg-publish: true
 > 
 > Por tanto, $F(x) + C$ también es antiderivada de $f(x)$.
 
-```mermaid
-graph TD
-    A["Función f(x)"] --> B["Una antiderivada F(x)"]
-    B --> C["F'(x) = f(x)"]
-    
-    D["Familia de antiderivadas"] --> E["F(x) + C₁"]
-    D --> F["F(x) + C₂"]  
-    D --> G["F(x) + C₃"]
-    D --> H["F(x) + Cₙ"]
-    
-    E --> I["Todas tienen derivada f(x)"]
-    F --> I
-    G --> I
-    H --> I
-    
-    style D fill:#45b7d1
-    style I fill:#96ceb4
-```
+![[Diagramas/Constante_de_integración_01.svg]]
 
 ## 🌊 Interpretación Geométrica
 
@@ -68,20 +51,7 @@ graph TD
 > 
 > **Observación**: Todas tienen pendiente $2x$ en cualquier punto $x$.
 
-```mermaid
-graph LR
-    A["y = x² - 3"] --> B["C = -3"]
-    C["y = x²"] --> D["C = 0"]
-    E["y = x² + 2"] --> F["C = 2"]
-    G["y = x² + 5"] --> H["C = 5"]
-    
-    I["Todas las curvas"] --> J["Misma forma"]
-    I --> K["Misma derivada 2x"]
-    I --> L["Diferentes posiciones verticales"]
-    
-    style I fill:#45b7d1
-    style J fill:#96ceb4
-```
+![[Diagramas/Constante_de_integración_02.svg]]
 
 ## 🔧 Determinación de la Constante
 
@@ -348,31 +318,7 @@ graph LR
 > 
 > $$\ker(D) = \{f : Df = 0\} = \{\text{funciones constantes}\}$$
 
-```mermaid
-mindmap
-  root((Constante Integración))
-    Significado Geométrico
-      Familia de curvas
-      Desplazamiento vertical
-      Misma pendiente
-    Determinación
-      Condiciones iniciales
-      Condiciones frontera
-      Información física
-    Aplicaciones
-      Ecuaciones diferenciales
-      Física cinemática
-      Circuitos eléctricos
-      Crecimiento poblacional
-    Propiedades
-      Arbitraria hasta determinación
-      Lineal en operaciones
-      Una por cada integración
-    Errores Comunes
-      Omisión completa
-      Valores restringidos
-      Malentendidos teóricos
-```
+![[Diagramas/Constante_de_integración_03.svg]]
 
 ---
 

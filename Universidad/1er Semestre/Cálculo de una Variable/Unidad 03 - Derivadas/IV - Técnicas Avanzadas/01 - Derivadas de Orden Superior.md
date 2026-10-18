@@ -26,25 +26,7 @@ dg-publish: true
 > - $f''(x)$: Tasa de cambio de la tasa de cambio (aceleración)
 > - $f'''(x)$: Tasa de cambio de la aceleración
 
-```mermaid
-flowchart TD
-    A["f(x) - Función original"] --> B["f'(x) - Primera derivada<br/>(Pendiente, Velocidad)"]
-    B --> C["f''(x) - Segunda derivada<br/>(Curvatura, Aceleración)"]
-    C --> D["f'''(x) - Tercera derivada<br/>(Tasa de cambio de curvatura)"]
-    D --> E["f⁽⁴⁾(x) - Cuarta derivada<br/>(y órdenes superiores)"]
-    
-    A -.-> A1["Información: Valor"]
-    B -.-> B1["Información: Crecimiento/Decrecimiento"]
-    C -.-> C1["Información: Concavidad"]
-    D -.-> D1["Información: Puntos de inflexión"]
-    E -.-> E1["Información: Comportamiento complejo"]
-    
-    style A fill:#E6F3FF,stroke:#0066CC,stroke-width:2px
-    style B fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style C fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
-    style D fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-    style E fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
-```
+![[Diagramas/01_-_Derivadas_de_Orden_Superior_01.svg]]
 
 ## 📊 Cálculo de Derivadas de Orden Superior
 
@@ -119,21 +101,7 @@ flowchart TD
 > 
 > **Fórmula general**: $\frac{d^n}{dx^n}[\cos(x)] = \cos\left(x + \frac{n\pi}{2}\right)$
 
-```mermaid
-flowchart LR
-    A["sin(x)"] --> B["cos(x)"]
-    B --> C["-sin(x)"]
-    C --> D["-cos(x)"]
-    D --> A
-    
-    A1["cos(x)"] --> B1["-sin(x)"]
-    B1 --> C1["-cos(x)"]
-    C1 --> D1["sin(x)"]
-    D1 --> A1
-    
-    style A fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style A1 fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-```
+![[Diagramas/01_-_Derivadas_de_Orden_Superior_02.svg]]
 
 ### 4️⃣ Logaritmos y Potencias
 

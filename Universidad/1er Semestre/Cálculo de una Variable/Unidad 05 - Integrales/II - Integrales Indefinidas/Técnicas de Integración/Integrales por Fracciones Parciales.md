@@ -56,14 +56,7 @@ dg-publish: true
 
 > [!tip] 🧮 **Paso 3: Establecer la descomposición**
 
-```mermaid
-graph TD
-    A[Factor del denominador] --> B{Tipo de factor}
-    B -->|Lineal simple| C["$$\frac{A}{ax + b}$$"]
-    B -->|Lineal repetido n veces| D["$$\frac{A_1}{ax + b} + \frac{A_2}{(ax + b)^2} + ... + \frac{A_n}{(ax + b)^n}$$"]
-    B -->|Cuadrático irreducible| E["$$\frac{Ax + B}{ax^2 + bx + c}$$"]
-    B -->|Cuadrático repetido n veces| F["$$\frac{A_1x + B_1}{ax^2 + bx + c} + ... + \frac{A_nx + B_n}{(ax^2 + bx + c)^n}$$"]
-```
+![[Diagramas/Integrales_por_Fracciones_Parciales_01.svg]]
 
 > [!tip] 🧩 **Paso 4: Resolver para las constantes**
 > 
@@ -96,15 +89,7 @@ graph TD
 > - Propiedades algebraicas de los cuerpos
 > - Teorema fundamental del álgebra
 
-```mermaid
-flowchart LR
-    A[Función Racional Compleja] --> B[Descomposición en Fracciones Parciales]
-    B --> C[Suma de Integrales Simples]
-    C --> D[Resultado Final]
-    
-    style A fill:#ffcccc
-    style D fill:#ccffcc
-```
+![[Diagramas/Integrales_por_Fracciones_Parciales_02.svg]]
 
 ---
 
@@ -154,18 +139,7 @@ flowchart LR
 
 ## 📈 Visualización Gráfica
 
-```mermaid
-graph LR
-    A["$$f(x) = \frac{x+5}{x^2+x-2}$$"] --> B["$$\frac{-1}{x+2}$$"]
-    A --> C["$$\frac{2}{x-1}$$"]
-    B --> D["Integral: $-\ln|x+2|$"]
-    C --> E["Integral: $2\ln|x-1|$"]
-    D --> F[Resultado Final]
-    E --> F
-    
-    style A fill:#e1f5fe
-    style F fill:#e8f5e8
-```
+![[Diagramas/Integrales_por_Fracciones_Parciales_03.svg]]
 
 > [!info] 📊 **Interpretación gráfica**
 > 

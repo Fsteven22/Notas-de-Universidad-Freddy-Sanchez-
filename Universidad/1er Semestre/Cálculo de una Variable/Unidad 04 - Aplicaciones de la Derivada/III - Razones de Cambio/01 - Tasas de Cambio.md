@@ -19,23 +19,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:** Es la **pendiente de la recta secante** que une los puntos $(a, f(a))$ y $(b, f(b))$
 
-```mermaid
-graph TD
-    A["Tasa de Cambio] --> B[Promedio]"]
-    A --> C[Instantánea]
-    B --> D[Recta Secante]
-    B --> E["Intervalo [a,b]"]
-    C --> F[Recta Tangente]
-    C --> G[Punto específico]
-    D --> H[Pendiente = Δy/Δx]
-    F --> I["Pendiente = f'(a)"]
-    
-    style A fill:#e1f5fe
-    style B fill:#e8f5e8
-    style C fill:#fff3e0
-    style H fill:#f3e5f5
-    style I fill:#f3e5f5
-```
+![[Diagramas/01_-_Tasas_de_Cambio_01.svg]]
 
 ### 🔢 Ejemplos de Tasa de Cambio Promedio
 
@@ -82,20 +66,7 @@ graph TD
 > - El **límite de las pendientes de las rectas secantes**
 > - La **derivada** $f'(a)$ evaluada en el punto
 
-```mermaid
-flowchart LR
-    A[Recta Secante] --> B[h → 0]
-    B --> C[Recta Tangente]
-    A --> D[Tasa Promedio]
-    C --> E[Tasa Instantánea]
-    D --> F[Δy/Δx]
-    E --> G["f'(a)"]
-    
-    style A fill:#ffebee
-    style C fill:#e8f5e8
-    style E fill:#f3e5f5
-    style G fill:#e3f2fd
-```
+![[Diagramas/01_-_Tasas_de_Cambio_02.svg]]
 
 ### 🧮 Cálculo de Tasas Instantáneas
 
@@ -150,12 +121,7 @@ flowchart LR
 
 ### 📊 Comparación Visual: Promedio vs Instantánea
 
-```mermaid
-pie title Características de las Tasas de Cambio
-    "Tasa Promedio - Intervalo" : 40
-    "Tasa Instantánea - Punto específico" : 35
-    "Ambas - Pendiente geométrica" : 25
-```
+![[Diagramas/01_-_Tasas_de_Cambio_03.svg]]
 
 > [!warning] ⚠️ Diferencias Clave **Tasa de Cambio Promedio:**
 > 
@@ -187,26 +153,7 @@ pie title Características de las Tasas de Cambio
 
 ## 📊 Algoritmo de Decisión
 
-```mermaid
-flowchart TD
-    A[Problema de Tasa de Cambio] --> B{Intervalo o Punto?}
-    B -->|"Intervalo [a,b]"| C[Tasa Promedio]
-    B -->|"Punto específico x=a"| D[Tasa Instantánea]
-    C --> E[Usar Δy/Δx]
-    D --> F{"Conoces f'(x)?"}
-    F -->|Sí| G["Evaluar f'(a)"]
-    F -->|No| H[Definición de límite]
-    E --> I["Calcular f(b)-f(a)/b-a"]
-    G --> J[Resultado e interpretación]
-    H --> K[Límite h→0]
-    I --> J
-    K --> J
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8  
-    style D fill:#fff3e0
-    style J fill:#f3e5f5
-```
+![[Diagramas/01_-_Tasas_de_Cambio_04.svg]]
 
 ## 🔗 Conexiones Conceptuales
 

@@ -41,28 +41,7 @@ dg-publish: true
 > - $\lim_{x \to a^+} f(x) = \pm\infty$ (límite lateral derecho)
 > - $\lim_{x \to a^-} f(x) = \pm\infty$ (límite lateral izquierdo)
 
-```mermaid
-flowchart TD
-    A["Funcion f(x) cerca de x = a"] --> B{"Evaluar limites laterales"}
-    B --> C["Limite por la derecha"]
-    B --> D["Limite por la izquierda"]
-    
-    C -->|Infinito| E["Asintota vertical x = a"]
-    D -->|Infinito| E
-    C -->|Finito| F{"Ambos limites finitos"}
-    D -->|Finito| F
-    
-    F -->|Iguales| G["Limite existe, no hay asintota"]
-    F -->|Diferentes| H["Limite no existe, discontinuidad"]
-    
-    E --> I["Comportamiento: la funcion explota"]
-    G --> J["Comportamiento: funcion continua"]
-    H --> K["Comportamiento: salto finito"]
-    
-    style E fill:#FFB6C1
-    style G fill:#90EE90
-    style H fill:#FFE4B5
-```
+![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_01.svg]]
 
 > [!info] 🎯 **Tipos de Asíntotas Verticales**
 > 
@@ -169,33 +148,7 @@ flowchart TD
 > - $0 \cdot \infty$: Reescribir como cociente
 > - $\frac{0}{0}$ que puede llevar a $\infty$: Factorización y simplificación
 
-```mermaid
-flowchart TD
-    A[Límite con posible comportamiento infinito] --> B{Tipo de función}
-    
-    B --> C[Función Racional]
-    B --> D[Función Exponencial] 
-    B --> E[Función Logarítmica]
-    B --> F[Función Trigonométrica]
-    
-    C --> G[Analizar ceros del denominador]
-    D --> H[Evaluar base y exponente]
-    E --> I[Verificar dominio]
-    F --> J[Identificar discontinuidades]
-    
-    G --> K[Método de signos]
-    H --> L[Límites exponenciales]
-    I --> M[Comportamiento cerca de cero]
-    J --> N[Análisis de tangente y secante]
-    
-    K --> O[Asíntota vertical]
-    L --> O
-    M --> O
-    N --> O
-    
-    style O fill:#FFB6C1
-    style A fill:#E6F3FF
-```
+![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_02.svg]]
 
 ---
 
@@ -290,21 +243,7 @@ flowchart TD
 > - $\lim_{x \to +\infty} f(x) = L$ y/o
 > - $\lim_{x \to -\infty} f(x) = L$
 
-```mermaid
-flowchart TD
-    A["Funcion f(x)"] --> B{"Existe limite cuando x tiende a infinito?"}
-    B -->|Si, L finito| C["Asintota horizontal y = L"]
-    B -->|Si, infinito| D["No hay asintota horizontal"]
-    B -->|No existe| E["Comportamiento oscilatorio"]
-    
-    C --> F["La funcion se estabiliza"]
-    D --> G["Crecimiento ilimitado"]
-    E --> H["Funciones como seno y coseno"]
-    
-    style C fill:#90EE90
-    style D fill:#FFB6C1
-    style E fill:#FFE4B5
-```
+![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_03.svg]]
 
 > [!info] 🎯 **Interpretación Geométrica**
 > 
@@ -358,23 +297,7 @@ flowchart TD
 > |$\infty - \infty$|$\lim_{x \to \infty} (x^2 - x^2)$|Factorizar o racionalizar|
 > |$1^\infty$|$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$|Usar límites exponenciales|
 
-```mermaid
-flowchart TD
-    A["Funcion racional f(x) = P(x) / Q(x)"] --> B["Identifica grados n y m"]
-    B --> C{"Compara n y m"}
-    
-    C -->|n < m| D["Limite = 0\ny = 0 (asintota horizontal)"]
-    C -->|n = m| E["Limite = an/bm\ny = an/bm (asintota horizontal)"]
-    C -->|n > m| F["Limite = ±infinito\nSin asintota horizontal"]
-    
-    D --> G["Comportamiento: decae a cero"]
-    E --> H["Comportamiento: se estabiliza"]
-    F --> I["Comportamiento: crece sin limite"]
-    
-    style D fill:#E6F3FF
-    style E fill:#E6FFE6  
-    style F fill:#FFE6E6
-```
+![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_04.svg]]
 
 ---
 
@@ -437,13 +360,7 @@ flowchart TD
 > 
 > **Interpretación geométrica:** 🎪 A partir de cierto término $N$, todos los términos de la sucesión están dentro de una "banda" de anchura $2\varepsilon$ alrededor de $L$
 > 
-> ```mermaid
-> graph LR
->    A[a₁] --> B[a₂] --> C[a₃] --> D[...] --> E[aₙ] --> F[L]
->    style F fill:#4caf50,color:#fff
->    style E fill:#81c784,color:#000
->    style A fill:#ffcdd2,color:#000
-> ```
+> ![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_05.svg]]
 
 ## Convergencia de Sucesiones
 
@@ -487,18 +404,7 @@ flowchart TD
 > 
 > **Entonces:** $\lim_{n \to \infty} b_n = L$
 > 
-> ```mermaid
-> graph TD
->    A[Sucesión aₙ] --> D[Límite L]
->    B[Sucesión bₙ] --> D
->    C[Sucesión cₙ] --> D
->    A -.->|"≤"| B
->    B -.->|"≤"| C
->    style D fill:#4caf50,color:#fff
->    style B fill:#ffeb3b,color:#000
->    style A fill:#2196f3,color:#fff
->    style C fill:#f44336,color:#fff
-> ```
+> ![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_06.svg]]
 > 
 > **Visualización:** La sucesión $b_n$ está "atrapada" entre dos sucesiones que convergen al mismo límite 🎯
 >
@@ -578,26 +484,7 @@ flowchart TD
 > 
 > **Resultado:** Converge al **número áureo** $\phi = \frac{1 + \sqrt{5}}{2} \approx 1.618$ 🌟
 
-```mermaid
-flowchart TD
-    A["Sucesion {an}"] --> B["Es monotona?"]
-    B -->|Si| C["Es acotada?"]
-    B -->|No| D["Analizar otros metodos"]
-    
-    C -->|Si| E["CONVERGE por Teorema Monotono"] 
-    C -->|No| F["DIVERGE"]
-    
-    D --> G["Teorema del Sandwich"]
-    D --> H["Analisis directo"]
-    
-    G --> I["Cumple condiciones?"]
-    I -->|Si| E
-    I -->|No| J["Otros metodos"]
-    
-    style E fill:#4caf50,color:#fff
-    style F fill:#f44336,color:#fff
-    style A fill:#2196f3,color:#fff
-```
+![[Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_07.svg]]
 
 ## Técnica de Estudio: Método CLIMB 🧗
 

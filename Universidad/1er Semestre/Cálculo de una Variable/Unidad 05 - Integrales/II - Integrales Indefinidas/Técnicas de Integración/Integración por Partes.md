@@ -55,25 +55,7 @@ dg-publish: true
 > 
 > $e^x$, $a^x$
 
-```mermaid
-flowchart TD
-    A["¿Qué función elegir como u?"] --> B["L: Logarítmicas<br/>ln(x), log(x)"]
-    B --> C["I: Inversas trigonométricas<br/>arcsin(x), arctan(x)"]
-    C --> D["A: Algebraicas<br/>x^n, polinomios"]
-    D --> E["T: Trigonométricas<br/>sin(x), cos(x)"]
-    E --> F["E: Exponenciales<br/>e^x, a^x"]
-    
-    G["Mayor prioridad"] -.-> B
-    H["Menor prioridad"] -.-> F
-    
-    style B fill:#ff9999
-    style C fill:#ffcc99
-    style D fill:#ffff99
-    style E fill:#99ff99
-    style F fill:#99ccff
-    style G fill:#f0f0f0
-    style H fill:#f0f0f0
-```
+![[Diagramas/Integración_por_Partes_01.svg]]
 
 ## 🧮 Ejemplos Resueltos
 
@@ -132,25 +114,7 @@ flowchart TD
 
 ## 📊 Método Paso a Paso
 
-```mermaid
-flowchart TD
-    A["∫ f(x)g(x) dx"] --> B["Identificar u y dv usando LIATE"]
-    B --> C["Calcular du y v"]
-    C --> D["Aplicar fórmula: uv - ∫v du"]
-    D --> E{"¿∫v du es más simple?"}
-    E -->|"Sí"| F["Resolver ∫v du"]
-    E -->|"No"| G["¿Es integral cíclica?"]
-    G -->|"Sí"| H["Resolver sistema de ecuaciones"]
-    G -->|"No"| I["Aplicar por partes nuevamente"]
-    F --> J["Resultado final + C"]
-    H --> J
-    I --> C
-    
-    style A fill:#ffebee
-    style J fill:#e8f5e8
-    style E fill:#fff3e0
-    style G fill:#fff3e0
-```
+![[Diagramas/Integración_por_Partes_02.svg]]
 
 ## 🎲 Integrales Definidas
 
@@ -249,23 +213,7 @@ flowchart TD
 > |...|...|...|
 > |±|$0$|...|
 
-```mermaid
-flowchart TD
-    A["Función que se deriva<br/>(hasta llegar a 0)"] --> B["Columna de Derivadas"]
-    C["Función que se integra<br/>(fácil de integrar)"] --> D["Columna de Integrales"]
-    
-    B --> E["f(x) → f'(x) → f''(x) → ... → 0"]
-    D --> F["∫g(x)dx → ∫∫g(x)dx → ∫∫∫g(x)dx → ..."]
-    
-    E --> G["Conectar con líneas diagonales"]
-    F --> G
-    G --> H["Alternar signos: +, -, +, -, ..."]
-    H --> I["Sumar productos diagonales"]
-    
-    style A fill:#ffcdd2
-    style C fill:#c8e6c9
-    style I fill:#e1f5fe
-```
+![[Diagramas/Integración_por_Partes_03.svg]]
 
 ## 🧮 Ejemplos Paso a Paso
 
@@ -359,27 +307,7 @@ flowchart TD
 > 
 > **Resultado**: $\sum (\text{signo} \times \text{derivada} \times \text{integral siguiente})$
 
-```mermaid
-flowchart LR
-    subgraph tabla ["Método de Tabla"]
-        direction TB
-        A["Columna 1:<br/>Derivadas<br/>f(x) → f'(x) → f''(x) → ... → 0"]
-        B["Columna 2:<br/>Integrales<br/>∫g(x)dx → ∫∫g(x)dx → ∫∫∫g(x)dx → ..."]
-        C["Signos:<br/>+ - + - + - ..."]
-    end
-    
-    D["Conectar diagonalmente<br/>cada fila de derivadas<br/>con la siguiente fila<br/>de integrales"]
-    
-    E["Sumar todos los productos<br/>con sus signos correspondientes"]
-    
-    tabla --> D
-    D --> E
-    
-    style A fill:#ffcdd2
-    style B fill:#c8e6c9
-    style C fill:#fff3e0
-    style E fill:#e1f5fe
-```
+![[Diagramas/Integración_por_Partes_04.svg]]
 
 ## ⚙️ Algoritmo del Método
 

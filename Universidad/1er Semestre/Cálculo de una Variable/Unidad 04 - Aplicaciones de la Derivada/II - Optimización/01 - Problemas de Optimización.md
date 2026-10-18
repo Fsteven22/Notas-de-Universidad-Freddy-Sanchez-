@@ -12,33 +12,7 @@ dg-publish: true
 
 > [!tip] Metodología MODELO (Técnica de Memorización) **M**odelado - Identificar variables y función objetivo **O**rganizar - Establecer restricciones y dominio **D**erivar - Calcular la primera derivada **E**cuacionar - Resolver f'(x) = 0 **L**ocalizar - Encontrar puntos críticos **O**ptimizar - Verificar máximos/mínimos
 
-```mermaid
-graph TD
-    A[Problema de Optimización] --> B[PASO 1: Leer y Comprender]
-    B --> C[PASO 2: Identificar Variables]
-    C --> D[PASO 3: Establecer Función Objetivo]
-    D --> E[PASO 4: Encontrar Restricciones]
-    E --> F[PASO 5: Expresar en Una Variable]
-    F --> G[PASO 6: Determinar Dominio]
-    G --> H[PASO 7: Calcular Derivada]
-    H --> I[PASO 8: Encontrar Puntos Críticos]
-    I --> J[PASO 9: Evaluar Candidatos]
-    J --> K[PASO 10: Verificar y Responder]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef readingNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef modelingNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef calculusNode fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef evaluationNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef verificationNode fill:#e0f2f1,stroke:#00695c,stroke-width:3px
-    
-    class A startNode
-    class B,C readingNode
-    class D,E,F,G modelingNode
-    class H,I calculusNode
-    class J evaluationNode
-    class K verificationNode
-```
+![[Diagramas/01_-_Problemas_de_Optimización_01.svg]]
 
 ### Tipos de Puntos Candidatos
 
@@ -141,29 +115,7 @@ graph TD
 
 ### Problemas de Ruta Óptima
 
-```mermaid
-flowchart TD
-    A[Problema de Ruta] --> B{Tipo de Medio}
-    B -->|Homogéneo| C[Línea Recta]
-    B -->|Dos Medios| D[Ley de Snell]
-    B -->|Obstáculos| E[Problema de Reflexión]
-    B -->|Múltiples Puntos| F[Problema del Viajante]
-    
-    C --> G[Distancia Euclidiana]
-    D --> H[Optimizar tiempo total]
-    E --> I[Principio de reflexión]
-    F --> J[Combinatoria + Optimización]
-    
-    classDef problemNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
-    classDef typeNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef methodNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A problemNode
-    class B typeNode
-    class C,D,E,F methodNode
-    class G,H,I,J solutionNode
-```
+![[Diagramas/01_-_Problemas_de_Optimización_02.svg]]
 
 ## Aplicaciones Económicas 💰
 
@@ -238,34 +190,7 @@ flowchart TD
 
 > [!tip] Clasificación de Restricciones **Explícitas:** Claramente establecidas en el problema **Implícitas:** Se derivan del contexto físico/lógico **Activas:** Afectan la solución óptima **Inactivas:** No limitan el óptimo
 
-```mermaid
-graph LR
-    A[Problema Original] --> B[Identificar Variables]
-    B --> C{Tipo de Restricción}
-    C -->|Igualdad| D[Sustitución Directa]
-    C -->|Desigualdad| E[Multiplicadores de Lagrange]
-    C -->|Sin Restricciones| F[Derivada Ordinaria]
-    
-    D --> G[Función de Una Variable]
-    E --> H[Sistema de Ecuaciones]
-    F --> I[Ecuación f prima = 0]
-    
-    G --> J[Optimización Clásica]
-    H --> K[Método de Lagrange]
-    I --> L[Cálculo Estándar]
-    
-    classDef problemNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
-    classDef variableNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef constraintNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef methodNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A problemNode
-    class B variableNode
-    class C constraintNode
-    class D,E,F methodNode
-    class G,H,I,J,K,L solutionNode
-```
+![[Diagramas/01_-_Problemas_de_Optimización_03.svg]]
 
 ### Técnicas de Simplificación
 

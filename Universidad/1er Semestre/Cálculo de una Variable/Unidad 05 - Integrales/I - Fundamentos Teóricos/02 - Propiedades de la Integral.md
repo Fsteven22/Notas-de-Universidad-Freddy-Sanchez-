@@ -26,20 +26,7 @@ dg-publish: true
 > |**Probabilidad**|Distribuciones continuas|Cálculo de probabilidades|
 > |**Economía**|Análisis de cambios acumulativos|Costos totales, beneficios|
 
-```mermaid
-graph LR
-    A["Función f(x)"] --> B{Operación}
-    B --> C[Derivación]
-    B --> D[Integración]
-    C --> E["f'(x)<br/>Tasa de cambio"]
-    D --> F["∫f(x)dx<br/>Acumulación"]
-    
-    style A fill:#e1f5ff
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#e1f5ff
-```
+![[Diagramas/02_-_Propiedades_de_la_Integral_01.svg]]
 
 ---
 
@@ -63,17 +50,7 @@ graph LR
 > 
 > **Relación fundamental:** $$\frac{d}{dx}[F(x)] = f(x) \quad \Leftrightarrow \quad \int f(x),dx = F(x) + C$$
 > 
-> ```mermaid
-> graph LR
->     A[f(x) = 2x] --> B[Integración]
->     B --> C[F(x) = x² + C]
->     C --> D[Derivación]
->     D --> A
->     style A fill:#ffe1e1
->     style C fill:#e1ffe1
->     style B fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_02.svg]]
 > 
 > **Ejemplo simple:**
 > 
@@ -117,19 +94,7 @@ graph LR
 > |∫(6x² + 3x - 5)dx|6∫x²dx + 3∫xdx - 5∫dx|2x³ + (3x²)/2 - 5x + C|
 > |∫(x + 1)²dx|∫(x² + 2x + 1)dx|x³/3 + x² + x + C|
 > 
-> ```mermaid
-> flowchart TD
->     A[∫ af(x) + bg(x) dx] --> B{Linealidad}
->     B --> C[a∫f(x)dx]
->     B --> D[b∫g(x)dx]
->     C --> E[aF(x)]
->     D --> F[bG(x)]
->     E --> G[aF(x) + bG(x) + C]
->     F --> G
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_03.svg]]
 > 
 > **⚠️ Importante:**
 > 
@@ -152,20 +117,7 @@ graph LR
 > 
 > **Visualización gráfica:**
 > 
-> ```mermaid
-> graph TD
->     A[f'(x) = 2x] --> B[f(x) = x² + C]
->     B --> C[C = 0: y = x²]
->     B --> D[C = 2: y = x² + 2]
->     B --> E[C = -3: y = x² - 3]
->     B --> F[C = k: y = x² + k]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_04.svg]]
 > 
 > **Interpretación geométrica:**
 > 
@@ -222,19 +174,7 @@ graph LR
 > 
 > **Diagrama de relación:**
 > 
-> ```mermaid
-> graph LR
->     A[F(x) = x³] -->|Derivación| B[f(x) = 3x²]
->     B -->|Integración| C[F(x) = x³ + C]
->     D[F(x) + C] -->|Derivación| E[f(x)]
->     E -->|Integración| F[F(x) + C]
->     style A fill:#e1ffe1
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_05.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -275,24 +215,7 @@ graph LR
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[f(x) = 2x] --> B[Primitivas]
->     B --> C[F₁(x) = x² + 0]
->     B --> D[F₂(x) = x² + 5]
->     B --> E[F₃(x) = x² - 3]
->     B --> F[F₄(x) = x² + π]
->     B --> G[Fₙ(x) = x² + C]
->     C -.-> H[Todas tienen<br/>la misma derivada]
->     D -.-> H
->     E -.-> H
->     F -.-> H
->     G -.-> H
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style G fill:#e1ffe1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_06.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -326,19 +249,7 @@ graph LR
 > 
 > **Flujo de solución:**
 > 
-> ```mermaid
-> flowchart LR
->     A[f(x) dada] --> B[Integrar]
->     B --> C[F(x) + C<br/>Familia infinita]
->     C --> D{¿Hay condición<br/>inicial?}
->     D -->|No| E[Mantener C<br/>Solución general]
->     D -->|Sí| F[Calcular C]
->     F --> G[F(x) específica<br/>Solución particular]
->     style A fill:#ffe1e1
->     style C fill:#fff4e1
->     style E fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_07.svg]]
 
 ---
 
@@ -369,20 +280,7 @@ graph LR
 > |**Constante C**|Sí incluye|No incluye|
 > |**Interpretación**|Familia de funciones|Área o acumulación|
 > 
-> ```mermaid
-> graph TD
->     A[Integración] --> B[Indefinida<br/>∫f(x)dx]
->     A --> C[Definida<br/>∫ₐᵇf(x)dx]
->     B --> D[Resultado:<br/>F(x) + C]
->     C --> E[Resultado:<br/>Número]
->     D --> F[Antiderivada]
->     E --> G[Área / Acumulación]
->     style A fill:#fff4e1
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#ffcccc
->     style E fill:#ccffcc
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_08.svg]]
 > 
 > **Interpretación geométrica:**
 > 
@@ -429,19 +327,7 @@ graph LR
 > |∫₀¹(3x² + 2x)dx|3∫₀¹x²dx + 2∫₀¹xdx|3(1/3) + 2(1/2) = 2|
 > |∫₁²(4x - 5)dx|4∫₁²xdx - 5∫₁²dx|4(3/2) - 5(1) = 1|
 > 
-> ```mermaid
-> flowchart TD
->     A[∫ₐᵇ cf(x)+dg(x) dx] --> B{Linealidad}
->     B --> C[c∫ₐᵇf(x)dx]
->     B --> D[d∫ₐᵇg(x)dx]
->     C --> E[c·A₁]
->     D --> F[d·A₂]
->     E --> G[Resultado:<br/>c·A₁ + d·A₂]
->     F --> G
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_09.svg]]
 
 ### 🔄 Cambio de Límites
 
@@ -473,18 +359,7 @@ graph LR
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[∫ₐᵇf(x)dx] -->|Inverso| B[∫ᵇₐf(x)dx]
->     A -->|Área| C[+ A]
->     B -->|Área| D[- A]
->     E[∫ₐₐf(x)dx] --> F[Ancho = 0]
->     F --> G[Área = 0]
->     style A fill:#e1ffe1
->     style B fill:#ffe1e1
->     style E fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_10.svg]]
 > 
 > **Tabla resumen:**
 > 
@@ -508,19 +383,7 @@ graph LR
 > 
 > El área total es la suma de las áreas parciales.
 > 
-> ```mermaid
-> graph TD
->     A[Área total<br/>∫ₐᵇf(x)dx] --> B{Dividir en c}
->     B --> C[Área 1<br/>∫ₐᶜf(x)dx]
->     B --> D[Área 2<br/>∫ᶜᵇf(x)dx]
->     C --> E[Total = Área1 + Área2]
->     D --> E
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
->     style D fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_11.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -569,12 +432,7 @@ graph LR
 > 
 > **Interpretación:** Si una función está "debajo" de otra, su integral es menor.
 > 
-> ```mermaid
-> graph TD
->     A["f(x) ≤ g(x)"] --> B["∫ₐᵇf(x)dx ≤ ∫ₐᵇg(x)dx"]
->     C["f(x) ≥ 0"] --> D["∫ₐᵇf(x)dx ≥ 0"]
->     E["m ≤ f(x) ≤ M"] --> F["m(b-a)0"]
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_12.svg]]
 > **Propiedad 3: Cotas para la integral**
 > 
 > Si m ≤ f(x) ≤ M para todo x ∈ [a,b], entonces: $$m(b-a) \leq \int_a^b f(x),dx \leq M(b-a)$$
@@ -620,18 +478,7 @@ graph LR
 > |**Mixto**|f(x) cambia signo|Área neta|A₁ - A₂|
 > |**Sobre el eje**|f(x) = 0|Sin área|0|
 > 
-> ```mermaid
-> graph TD
->     A[∫ₐᵇf(x)dx] --> B{Signo de f(x)}
->     B -->|f(x) > 0| C[Área sobre eje<br/>Resultado: +]
->     B -->|f(x) < 0| D[Área bajo eje<br/>Resultado: -]
->     B -->|f(x) cambia| E[Área neta<br/>Suma algebraica]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
->     style E fill:#e1e1ff
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_13.svg]]
 > 
 > **Ejemplo visual 1: Área positiva**
 > 
@@ -701,22 +548,7 @@ graph LR
 > 
 > **Notación compacta:** $$\int_a^b f(x),dx = \left[F(x)\right]_a^b = F(b) - F(a)$$
 > 
-> ```mermaid
-> graph TD
->     A[Teorema Fundamental<br/>del Cálculo] --> B[Primera Parte]
->     A --> C[Segunda Parte]
->     B --> D[d/dx ∫ₐˣf(t)dt = f(x)]
->     B --> E[La integral<br/>acumula]
->     B --> F[La derivada<br/>extrae]
->     C --> G[∫ₐᵇf(x)dx = F(b)-F(a)]
->     C --> H[Evaluar<br/>antiderivada]
->     C --> I[Restar límites]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_14.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -750,18 +582,7 @@ graph LR
 > 
 > **Algoritmo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[∫ₐᵇf(x)dx] --> B[Paso 1:<br/>Encontrar F(x)<br/>antiderivada de f(x)]
->     B --> C[Paso 2:<br/>Evaluar F(b)]
->     C --> D[Paso 3:<br/>Evaluar F(a)]
->     D --> E[Paso 4:<br/>Calcular F(b) - F(a)]
->     E --> F[Resultado final]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_15.svg]]
 > 
 > **Tabla de proceso:**
 > 
@@ -925,24 +746,7 @@ graph LR
 > 13. Primera parte: $$\frac{d}{dx}\int_a^x f(t),dt = f(x)$$
 > 14. Segunda parte: $$\int_a^b f(x),dx = F(b) - F(a)$$
 > 
-> ```mermaid
-> mindmap
->   root((Integración))
->     Indefinida
->       Función + C
->       Linealidad
->       Primitivas
->       Inversa de derivada
->     Definida
->       Número
->       Área neta
->       Límites [a,b]
->       Aditividad
->     TFC
->       Une ambas
->       Evaluación práctica
->       F(b) - F(a)
-> ```
+> ![[Diagramas/02_-_Propiedades_de_la_Integral_16.svg]]
 
 ---
 

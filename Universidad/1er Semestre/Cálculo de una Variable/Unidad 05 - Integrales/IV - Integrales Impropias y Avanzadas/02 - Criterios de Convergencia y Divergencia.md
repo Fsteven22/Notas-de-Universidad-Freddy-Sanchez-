@@ -25,22 +25,7 @@ dg-publish: true
 
 > [!note] Clasificación de Comportamientos ⚖️
 > ### Tipos de Convergencia y Divergencia
-> ```mermaid
-> graph TB
->     A[Series Infinitas] --> B[Convergentes]
->     A --> C[Divergentes]
->     B --> D["Convergencia Absoluta<br/>Σ|an| converge"]
->     B --> E["Convergencia Condicional<br/>Σan converge, Σ|an| diverge"]
->     C --> F["Divergencia a +∞<br/>Sn → +∞"]
->     C --> G["Divergencia a -∞<br/>Sn → -∞"]
->     C --> H["Divergencia Oscilatoria<br/>Sn oscila sin límite"]
->     I[Ejemplos] --> J["Geométrica |r|<1: Converge<br/>Armónica: Diverge<br/>Alternada armónica: Conv. Cond."]
->     style A fill:#e8f5e8
->     style B fill:#e1f5fe
->     style C fill:#ffcdd2
->     style D fill:#c8e6c9
->     style E fill:#fff3e0
-> ```
+> ![[Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_01.svg]]
 >
 
 > [!tip] Criterios de Convergencia para Series Positivas 🔬
@@ -151,17 +136,7 @@ dg-publish: true
 > ```
 > 
 > ### Convergencia Absoluta vs Condicional
-> ```mermaid
-> graph LR
->     A["Serie Σan"] --> B{"¿Σ|an| converge?"}
->     B -->|Sí| C[Convergencia Absoluta<br/>Σan converge]
->     B -->|No| D{¿Σan converge?}
->     D -->|Sí| E[Convergencia Condicional]
->     D -->|No| F[Divergencia]
->     style C fill:#c8e6c9
->     style E fill:#fff3e0
->     style F fill:#ffcdd2
-> ```
+> ![[Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_02.svg]]
 >
 
 > [!warning] Estrategia para Aplicar Criterios ⚠️
@@ -279,22 +254,7 @@ dg-publish: true
 
 > [!note] Clasificación de Convergencia y Divergencia 📊
 > ### Estados de una Integral Impropia
-> ```mermaid
-> graph TB
->     A[Integral Impropia] --> B[Convergente]
->     A --> C[Divergente]
->     B --> D["Convergencia Absoluta<br/>∫|f(x)|dx converge"]
->     B --> E["Convergencia Condicional<br/>∫f(x)dx converge, ∫|f(x)|dx diverge"]
->     C --> F["Diverge a +∞<br/>Límite = +∞"]
->     C --> G["Diverge a -∞<br/>Límite = -∞"]
->     C --> H[Oscila<br/>Límite no existe]
->     I[Ejemplos Clásicos] --> J["∫₁^∞ 1/x² dx = 1 (Converge)<br/>∫₁^∞ 1/x dx = ∞ (Diverge)<br/>∫₀¹ 1/√x dx = 2 (Converge)"]
->     style A fill:#e8f5e8
->     style B fill:#c8e6c9
->     style C fill:#ffcdd2
->     style D fill:#e1f5fe
->     style E fill:#fff3e0
-> ```
+> ![[Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_03.svg]]
 >
 
 > [!tip] Criterios de Convergencia para Integrales Tipo I (∞) 🔬
@@ -409,22 +369,7 @@ dg-publish: true
 > $$\int_1^{\infty} f(x)dx \text{ y } \sum_{n=0}^{\infty} 2^n f(2^n) \text{ tienen el mismo comportamiento}$$
 > 
 > ### Integrales de Referencia Importantes
-> ```mermaid
-> graph LR
->     A[Integrales de Referencia] --> B[∫₁^∞ 1/xᵖ dx]
->     A --> C[∫₀¹ 1/xᵖ dx] 
->     A --> D["∫₀^∞ e^(-ax) dx"]
->     A --> E["∫₋∞^∞ e^(-x²) dx"]
->     B --> F[p>1: Converge<br/>p≤1: Diverge]
->     C --> G[p<1: Converge<br/>p≥1: Diverge]
->     D --> H[a>0: Converge a 1/a<br/>a≤0: Diverge]
->     E --> I[Converge a √π]
->     style A fill:#e8f5e8
->     style F fill:#c8e6c9
->     style G fill:#c8e6c9
->     style H fill:#c8e6c9
->     style I fill:#c8e6c9
-> ```
+> ![[Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_04.svg]]
 >
 
 > [!warning] Estrategia y Errores Comunes ⚠️

@@ -22,19 +22,7 @@ dg-publish: true
 > **Forma alternativa**: Si $y = f^{-1}(x)$, entonces $x = f(y)$
 > $$\frac{dy}{dx} = \frac{1}{\frac{dx}{dy}} = \frac{1}{f'(y)}$$
 
-```mermaid
-flowchart TD
-    A["f tiene función inversa f⁻¹"] --> B["Conocemos f'(x)"]
-    B --> C["Queremos encontrar (f⁻¹)'(x)"]
-    C --> D["Usar relación:<br/>y = f⁻¹(x) ⟺ x = f(y)"]
-    D --> E["Derivar implícitamente:<br/>1 = f'(y) · dy/dx"]
-    E --> F["Despejar:<br/>dy/dx = 1/f'(y)"]
-    F --> G["Sustituir y = f⁻¹(x):<br/>(f⁻¹)'(x) = 1/f'(f⁻¹(x))"]
-    
-    style D fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style E fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style G fill:#DDA0DD,stroke:#9932CC,stroke-width:2px
-```
+![[Diagramas/02_-_Derivadas_de_Funciones_Inversas_01.svg]]
 
 ### 🧮 Justificación Geométrica
 
@@ -119,19 +107,7 @@ flowchart TD
 
 ### Proceso Sistemático
 
-```mermaid
-flowchart TD
-    A["Función inversa f⁻¹(x)"] --> B["Escribir y = f⁻¹(x)"]
-    B --> C["Expresar como x = f(y)"]
-    C --> D["Derivar implícitamente:<br/>1 = f'(y) · dy/dx"]
-    D --> E["Despejar dy/dx = 1/f'(y)"]
-    E --> F["Sustituir y en términos de x"]
-    F --> G["Simplificar usando identidades<br/>trigonométricas/algebraicas"]
-    
-    style C fill:#90EE90,stroke:#2E8B57,stroke-width:2px
-    style E fill:#87CEEB,stroke:#4682B4,stroke-width:2px
-    style G fill:#FFE4B5,stroke:#CD853F,stroke-width:2px
-```
+![[Diagramas/02_-_Derivadas_de_Funciones_Inversas_02.svg]]
 
 > [!example] 🔢 Ejemplo 5: Derivada de $\text{arcsec}(x)$
 > **Encontrar**: $\frac{d}{dx}[\text{arcsec}(x)]$

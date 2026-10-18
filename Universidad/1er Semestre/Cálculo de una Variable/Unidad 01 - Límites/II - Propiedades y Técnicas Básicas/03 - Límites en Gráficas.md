@@ -15,19 +15,7 @@ dg-publish: true
 > 3. **👀 Observa** hacia dónde "apuntan" los valores de $f(x)$
 > 4. **🎯 Determina** si ambos lados convergen al mismo valor
 
-```mermaid
-flowchart TD
-    A["📊 Gráfica de f(x)"] --> B["📍 Localizar x = a"]
-    B --> C["👈 Aproximarse por la izquierda"]
-    B --> D["👉 Aproximarse por la derecha"]
-    C --> E{"🤔 ¿Mismo valor?"}
-    D --> E
-    E -->|Sí| F["✅ Límite existe = L"]
-    E -->|No| G["❌ Límite no existe"]
-    
-    style F fill:#c8e6c9
-    style G fill:#ffcdd2
-```
+![[Diagramas/03_-_Límites_en_Gráficas_01.svg]]
 
 ## Casos Visuales Fundamentales 🎭
 
@@ -35,13 +23,7 @@ flowchart TD
 
 > [!example] ✅ Límite Existe y Coincide con el Valor de la Función
 > 
-> ```mermaid
-> graph LR
->    A["📈 Función suave"] --> B["📍 Punto en a"]
->    B --> C["🎯 Límite = f(a)"]
->    style B fill:#e8f5e8
->    style C fill:#c8e6c9
-> ```
+> ![[Diagramas/03_-_Límites_en_Gráficas_02.svg]]
 > 
 > **Características visuales:**
 > 

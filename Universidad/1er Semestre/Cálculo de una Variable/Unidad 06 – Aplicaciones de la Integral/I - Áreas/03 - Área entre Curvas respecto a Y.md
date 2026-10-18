@@ -85,23 +85,7 @@ dg-publish: true
 > 
 > **Paso 5**: Evaluar la integral
 > 
-> ```mermaid
-> flowchart TD
->     A["Curvas dadas"] --> B{"¿Fácil expresar como x = f(y)?"}
->     B -->|Sí| C["Expresar x = f(y), x = g(y)"]
->     B -->|No| D["¿Conviene usar dx mejor?"]
->     C --> E["Encontrar límites en y: [c,d]"]
->     E --> F["Verificar: ¿f(y) ≥ g(y)?"]
->     F -->|Sí| G["A = ∫[f(y) - g(y)]dy"]
->     F -->|No| H["A = ∫[g(y) - f(y)]dy"]
->     G --> I["Evaluar integral"]
->     H --> I
->     I --> J["Área total"]
->     D --> K["Usar método dx"]
->     style J fill:#45b7d1
->     style K fill:#ffd93d
->     style I fill:#96ceb4
-> ```
+> ![[Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_01.svg]]
 
 ## 🧪 Ejemplos Fundamentales
 
@@ -241,28 +225,7 @@ dg-publish: true
 
 > [!info] 💡 **Criterios de Decisión**
 > 
-> ```mermaid
-> flowchart TD
->     A["Problema de área entre curvas"] --> B{"¿Cómo están dadas las funciones?"}
->     B -->|"y = f(x)"| C{"¿Límites verticales naturales?"}
->     B -->|"x = g(y)"| D{"¿Límites horizontales naturales?"}
->     B -->|"Ambas formas"| E["Comparar complejidad"]
->     C -->|Sí| F["Usar dx"]
->     C -->|No| G["Considerar dy"]
->     D -->|Sí| H["Usar dy"]
->     D -->|No| I["Considerar dx"]
->     E --> J{"¿Cuál es más simple?"}
->     J -->|dx| F
->     J -->|dy| H
->     G --> K{"¿Múltiples ramas en x?"}
->     K -->|Sí| H
->     K -->|No| F
->     I --> L{"¿Múltiples ramas en y?"}
->     L -->|Sí| F
->     L -->|No| H
->     style F fill:#96ceb4
->     style H fill:#ffb3ba
-> ```
+> ![[Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_02.svg]]
 
 ### 📊 Tabla Comparativa
 

@@ -1,0 +1,12 @@
+graph TD
+    A["Función f(x)"] --> B["Rotar alrededor eje y"]
+    B --> C["Formar cilindros concéntricos"]
+    C --> D["Radio = x"]
+    C --> E["Altura = f(x)"]
+    D --> F["Circunferencia = 2πx"]
+    E --> F
+    F --> G["Área lateral = 2πx·f(x)"]
+    G --> H["V = 2π∫x·f(x)dx"]
+    
+    style A fill:#f3e5f5
+    style H fill:#e1f5fe

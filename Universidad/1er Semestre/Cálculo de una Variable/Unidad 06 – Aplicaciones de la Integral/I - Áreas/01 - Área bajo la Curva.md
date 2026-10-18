@@ -16,22 +16,7 @@ dg-publish: true
 
 ### 🎨 Interpretación Geométrica
 
-```mermaid
-graph TD
-    A["Función f(x) ≥ 0 en [a,b]"] --> B["Región bajo la curva"]
-    B --> C["Aproximar con rectángulos"]
-    C --> D["Suma de Riemann"]
-    D --> E["Límite cuando n → ∞"]
-    E --> F["Integral definida = Área exacta"]
-    
-    G["Interpretación visual"] --> H["Base: intervalo [a,b]"]
-    G --> I["Altura variable: f(x)"]
-    H --> J["Área = ∫f(x)dx"]
-    I --> J
-    
-    style F fill:#45b7d1
-    style J fill:#96ceb4
-```
+![[Diagramas/01_-_Área_bajo_la_Curva_01.svg]]
 
 ### 📋 Condiciones y Limitaciones
 
@@ -278,22 +263,7 @@ graph TD
 
 ### 🎯 Estrategia General
 
-```mermaid
-flowchart TD
-    A["Función f(x) en [a,b]"] --> B{"¿f(x) ≥ 0 siempre?"}
-    B -->|Sí| C["Área = ∫f(x)dx"]
-    B -->|No| D["Encontrar raíces f(x)=0"]
-    D --> E[Dividir en subintervalos]
-    E --> F["Calcular |∫f(x)dx| en cada parte"]
-    F --> G[Sumar todas las áreas]
-    
-    H{¿Hay simetría?} --> I[Función par: 2∫₀ᵃ]
-    H --> J[Función impar: especial cuidado]
-    
-    style C fill:#96ceb4
-    style G fill:#45b7d1
-    style I fill:#ffd93d
-```
+![[Diagramas/01_-_Área_bajo_la_Curva_02.svg]]
 
 ### 🧠 Técnicas de Visualización
 

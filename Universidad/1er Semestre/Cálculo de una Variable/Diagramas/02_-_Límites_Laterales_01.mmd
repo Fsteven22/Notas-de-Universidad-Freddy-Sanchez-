@@ -1,0 +1,14 @@
+graph TD
+    A["🎯 Punto x = a"] --> B["👈 Aproximación por la izquierda"]
+    A --> C["👉 Aproximación por la derecha"]
+    B --> D["📊 Límite izquierdo: L₁"]
+    C --> E["📊 Límite derecho: L₂"]
+    D --> F{"🤔 ¿L₁ = L₂?"}
+    E --> F
+    F -->|Sí| G["✅ Límite existe = L₁ = L₂"]
+    F -->|No| H["❌ Límite no existe"]
+    
+    style G fill:#c8e6c9
+    style H fill:#ffcdd2
+    style D fill:#e3f2fd
+    style E fill:#fff3e0

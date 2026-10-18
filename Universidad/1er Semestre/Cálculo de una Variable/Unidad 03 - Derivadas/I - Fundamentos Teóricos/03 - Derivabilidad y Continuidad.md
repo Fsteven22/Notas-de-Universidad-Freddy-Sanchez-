@@ -59,19 +59,7 @@ dg-publish: true
 > 
 > **Conclusión**: $f$ es continua en $a$ ✓
 
-```mermaid
-graph TD
-    A["f derivable en a"] --> B["f'(a) existe y es finito"]
-    B --> C["lim[h→0] (f(a+h)-f(a))/h = f'(a)"]
-    C --> D["lim[h→0] [f(a+h)-f(a)] = f'(a)·0 = 0"]
-    D --> E["lim[h→0] f(a+h) = f(a)"]
-    E --> F["lim[x→a] f(x) = f(a)"]
-    F --> G["f es continua en a"]
-    
-    style A fill:#ff6b6b
-    style G fill:#96ceb4
-    style D fill:#45b7d1
-```
+![[Diagramas/03_-_Derivabilidad_y_Continuidad_01.svg]]
 
 ## 🚫 El Recíproco NO es Cierto
 
@@ -116,18 +104,7 @@ graph TD
 | **Tipo C** | ❌ | ❌ | Discontinuidad de salto | Salto finito |
 | **Tipo D** | ❌ | ❌ | $f(x) = \frac{1}{x}$ en $x = 0$ | Discontinuidad infinita |
 
-```mermaid
-flowchart TD
-    A["Punto en función f"] --> B{¿Es continua en el punto?}
-    B -->|No| C["Tipo C o D: No derivable"]
-    B -->|Sí| D{¿Es derivable?}
-    D -->|Sí| E["Tipo A: Función suave"]
-    D -->|No| F["Tipo B: Esquina o cúspide"]
-    
-    style E fill:#96ceb4
-    style F fill:#ffd93d
-    style C fill:#ff6b6b
-```
+![[Diagramas/03_-_Derivabilidad_y_Continuidad_02.svg]]
 
 ## 🧪 Ejemplos Detallados
 
@@ -348,37 +325,7 @@ flowchart TD
 > - **Optimización**: Determinar dónde buscar extremos
 > - **Aproximaciones**: Saber dónde aplicar métodos lineales
 
-```mermaid
-flowchart TD
-    A(Derivabilidad vs Continuidad)
-    
-    A --> B(Teorema Principal)
-        B --> B1(Derivable implica Continua)
-        B --> B2(Demostracion formal)
-        B --> B3(No hay reciproco)
-
-    A --> C(Clasificacion de Puntos)
-        C --> C1(Tipo A: ambas)
-        C --> C2(Tipo B: solo continua)
-        C --> C3(Tipo C y D: ninguna)
-
-    A --> D(Ejemplos Clave)
-        D --> D1(Valor absoluto: esquina clasica)
-        D --> D2("x^(2/3): tangente vertical")
-        D --> D3(Funciones por partes)
-
-    A --> E(Metodos de Verificacion)
-        E --> E1(Derivadas laterales)
-        E --> E2(Limites)
-        E --> E3(Definicion formal)
-
-    A --> F(Aplicaciones)
-        F --> F1(Teoremas de valor medio)
-        F --> F2(Optimizacion)
-        F --> F3(Ecuaciones diferenciales)
-        F --> F4(Aproximaciones)
-
-```
+![[Diagramas/03_-_Derivabilidad_y_Continuidad_03.svg]]
 
 ---
 

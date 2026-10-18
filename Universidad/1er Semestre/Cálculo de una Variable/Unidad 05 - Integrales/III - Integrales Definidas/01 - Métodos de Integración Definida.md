@@ -20,21 +20,7 @@ dg-publish: true
 
 ### 🔧 Metodología Paso a Paso
 
-```mermaid
-flowchart TD
-    A["Integral ∫[a→b] f(x)dx"] --> B["Identificar sustitución x = g(u)"]
-    B --> C["Calcular dx = g'(u)du"]
-    C --> D["Encontrar nuevos límites"]
-    D --> E["u₁ tal que g(u₁) = a"]
-    D --> F["u₂ tal que g(u₂) = b"]
-    E --> G["Integral ∫[u₁→u₂] f(g(u))g'(u)du"]
-    F --> G
-    G --> H["Evaluar en nuevos límites"]
-    
-    style B fill:#ff6b6b
-    style D fill:#45b7d1
-    style H fill:#96ceb4
-```
+![[Diagramas/01_-_Métodos_de_Integración_Definida_01.svg]]
 
 ### 🧪 Ejemplos de Sustitución
 
@@ -91,21 +77,7 @@ flowchart TD
 > 4. **T**rigonométricas: $\sin(x)$, $\cos(x)$
 > 5. **E**xponenciales: $e^x$, $a^x$
 
-```mermaid
-graph TD
-    A[Identificar funciones] --> B{Aplicar LIATE}
-    B --> C[u = función prioritaria]
-    B --> D[dv = función restante dx]
-    C --> E[Calcular du]
-    D --> F[Calcular v = ∫dv]
-    E --> G[Aplicar fórmula]
-    F --> G
-    G --> H[Evaluar límites]
-    
-    style B fill:#ff6b6b
-    style G fill:#45b7d1
-    style H fill:#96ceb4
-```
+![[Diagramas/01_-_Métodos_de_Integración_Definida_02.svg]]
 
 ### 🧪 Ejemplos de Integración por Partes
 
@@ -291,26 +263,7 @@ graph TD
 
 ### 🎯 Algoritmo de Decisión
 
-```mermaid
-flowchart TD
-    A[Integral definida] --> B{¿Forma estándar?}
-    B -->|Sí| C[Aplicar TFC directo]
-    B -->|No| D{¿Producto de funciones?}
-    D -->|Sí| E{¿Una deriva la otra?}
-    E -->|Sí| F[Sustitución]
-    E -->|No| G[Integración por partes]
-    D -->|No| H{¿Fracción racional?}
-    H -->|Sí| I[Fracciones parciales]
-    H -->|No| J{¿Radical con cuadrática?}
-    J -->|Sí| K[Sustitución trigonométrica]
-    J -->|No| L[Técnicas especiales]
-    
-    style C fill:#96ceb4
-    style F fill:#45b7d1
-    style G fill:#ff6b6b
-    style I fill:#ffd93d
-    style K fill:#6bcf7f
-```
+![[Diagramas/01_-_Métodos_de_Integración_Definida_03.svg]]
 
 ### 📋 Lista de Verificación
 
@@ -323,30 +276,7 @@ flowchart TD
 
 ## 🌐 Conexiones y Aplicaciones
 
-```mermaid
-mindmap
-  root((Métodos Integración))
-    Sustitución
-      Cambio variable
-      Límites nuevos
-      Verificación
-    Por Partes
-      LIATE
-      Recursión
-      Evaluación límites
-    Fracciones Parciales
-      Descomposición
-      Factorización
-      Integración término a término
-    Trigonométricas
-      Identidades
-      Sustituciones estándar
-      Geometría
-    Aplicaciones
-      Áreas
-      Volúmenes
-      Física
-```
+![[Diagramas/01_-_Métodos_de_Integración_Definida_04.svg]]
 
 ---
 

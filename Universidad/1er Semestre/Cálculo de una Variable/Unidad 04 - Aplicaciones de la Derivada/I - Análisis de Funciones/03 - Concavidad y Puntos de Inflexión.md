@@ -77,28 +77,7 @@ dg-publish: true
 > |f''(x)|(-)|0|(+)|
 > |Concavidad|⬇️ Abajo|Inflexión|⬆️ Arriba|
 
-```mermaid
-graph LR
-    A[Dominio de la función] --> B[Encontrar f doble prima = 0]
-    B --> C[Puntos críticos de curvatura]
-    C --> D[Dividir en intervalos]
-    D --> E[Evaluar signo en cada intervalo]
-    E --> F[Clasificar concavidad]
-    
-    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
-    classDef processNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef criticalNode fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    classDef intervalNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    classDef evaluationNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef resultNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    
-    class A startNode
-    class B processNode
-    class C criticalNode
-    class D intervalNode
-    class E evaluationNode
-    class F resultNode
-```
+![[Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_01.svg]]
 
 ## Puntos de Inflexión 🎯
 
@@ -121,29 +100,7 @@ graph LR
 > 4. **Verificar** cambio de signo usando tabla de signos
 > 5. **Calcular** f(x) en los puntos confirmados
 
-```mermaid
-flowchart LR
-    A[Segunda derivada = 0] --> B[Candidatos a PI]
-    B --> C[Tabla de signos]
-    C --> D{Cambio de signo?}
-    D -->|Sí| E[Punto de Inflexión]
-    D -->|No| F[No es PI]
-    E --> G[Calcular valor de la función]
-    G --> H[Coordenadas del punto]
-    
-    classDef startNode fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
-    classDef processNode fill:#f1f8e9,stroke:#388e3c,stroke-width:2px
-    classDef decisionNode fill:#fff8e1,stroke:#f57c00,stroke-width:2px
-    classDef successNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
-    classDef failureNode fill:#ffebee,stroke:#d32f2f,stroke-width:2px
-    classDef resultNode fill:#fce4ec,stroke:#8e24aa,stroke-width:2px
-    
-    class A startNode
-    class B,C processNode
-    class D decisionNode
-    class E,G,H successNode
-    class F failureNode
-```
+![[Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_02.svg]]
 
 ## Interpretación Geométrica 📐
 
@@ -213,31 +170,7 @@ flowchart LR
 
 ### Pasos para Construir la Gráfica
 
-```mermaid
-graph TD
-    A[Función f x] --> B[Calcular f prima x]
-    B --> C[Calcular f doble prima x]
-    C --> D[Encontrar puntos críticos]
-    D --> E[Encontrar puntos de inflexión]
-    E --> F[Determinar intervalos de monotonía]
-    F --> G[Determinar intervalos de concavidad]
-    G --> H[Evaluar puntos especiales]
-    H --> I[Construir gráfica completa]
-    
-    classDef functionNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
-    classDef derivativeNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef criticalNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef intervalNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-    classDef evaluationNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef finalNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
-    
-    class A functionNode
-    class B,C derivativeNode
-    class D,E criticalNode
-    class F,G intervalNode
-    class H evaluationNode
-    class I finalNode
-```
+![[Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_03.svg]]
 
 ### Información que Proporciona cada Derivada
 

@@ -1,0 +1,11 @@
+flowchart TD
+    A["f tiene función inversa f⁻¹"] --> B["Conocemos f'(x)"]
+    B --> C["Queremos encontrar (f⁻¹)'(x)"]
+    C --> D["Usar relación:<br/>y = f⁻¹(x) ⟺ x = f(y)"]
+    D --> E["Derivar implícitamente:<br/>1 = f'(y) · dy/dx"]
+    E --> F["Despejar:<br/>dy/dx = 1/f'(y)"]
+    F --> G["Sustituir y = f⁻¹(x):<br/>(f⁻¹)'(x) = 1/f'(f⁻¹(x))"]
+    
+    style D fill:#90EE90,stroke:#2E8B57,stroke-width:2px
+    style E fill:#87CEEB,stroke:#4682B4,stroke-width:2px
+    style G fill:#DDA0DD,stroke:#9932CC,stroke-width:2px

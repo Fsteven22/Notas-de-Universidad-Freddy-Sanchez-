@@ -71,23 +71,7 @@ dg-publish: true
 > 
 > **Funciones exponenciales y logarítmicas:**
 > 
-> ```mermaid
-> graph TD
->    A[Funciones Especiales] --> B[Exponenciales]
->    A --> C[Logarítmicas]
->    A --> D[Trigonométricas]
->    B --> E["(e^x)' = e^x"]
->    B --> F["(a^x)' = a^x ln(a)"]
->    C --> G["(ln x)' = 1/x"]
->    C --> H["(log_a x)' = 1/(x ln a)"]
->    D --> I["(sin x)' = cos x"]
->    D --> J["(cos x)' = -sin x"]
->    D --> K["(tan x)' = sec²x"]
->    style A fill:#e1f5fe
->    style B fill:#f3e5f5
->    style C fill:#fff3e0
->    style D fill:#e8f5e8
-> ```
+> ![[Diagramas/01_-_Derivada_y_Definición_Formal_01.svg]]
 > 
 > **Funciones trigonométricas inversas:**
 > 
@@ -258,17 +242,7 @@ dg-publish: true
 > #### Para derivada en punto general $x$
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 > 
-> ```mermaid
-> graph TD
->     A["Función f(x)"] --> B["Dos puntos cercanos"]
->     B --> C["(a, f(a)) y (a+h, f(a+h))"]
->     C --> D["Pendiente secante"]
->     D --> E["m = [f(a+h) - f(a)]/h"]
->     E --> F["Límite cuando h → 0"]
->     F --> G["Pendiente tangente = f'(a)"]
->     style G fill:#45b7d1
->     style F fill:#96ceb4
-> ```
+> ![[Diagramas/01_-_Derivada_y_Definición_Formal_02.svg]]
 > 
 ## 🎨 Interpretación Geométrica
 
@@ -456,26 +430,7 @@ dg-publish: true
 > 
 > El límite es infinito, por lo tanto la derivada no existe (tangente vertical).
 
-```mermaid
-flowchart TD
-    A["¿f es continua en a?"] --> B{No}
-    A --> C{Sí}
-    B --> D["f'(a) no existe"]
-    C --> E["¿Límites laterales de f'(a) iguales?"]
-    E --> F{No}
-    E --> G{Sí}
-    F --> H["f'(a) no existe (esquina)"]
-    G --> I["¿El límite es finito?"]
-    I --> J{No}
-    I --> K{Sí}
-    J --> L["f'(a) no existe (tangente vertical)"]
-    K --> M["f'(a) existe"]
-    
-    style D fill:#ff6b6b
-    style H fill:#ff6b6b
-    style L fill:#ff6b6b
-    style M fill:#96ceb4
-```
+![[Diagramas/01_-_Derivada_y_Definición_Formal_03.svg]]
 
 ## 🧠 Método de Estudio: "DELTA"
 
@@ -548,31 +503,7 @@ flowchart TD
 > - Derivadas parciales en cálculo multivariable
 > - Análisis real y teoría de funciones
 
-```mermaid
-mindmap
-  root((Definición Derivada))
-    Interpretación Geométrica
-      Pendiente tangente
-      Recta secante → tangente
-      Ecuación de tangente
-    Interpretación Física
-      Velocidad instantánea
-      Razón de cambio
-      Aceleración
-    Métodos de Cálculo
-      Expansión algebraica
-      Factorización
-      Racionalización
-      Cancelación de h
-    Existencia
-      Continuidad necesaria
-      Límites laterales
-      Casos especiales
-    Aplicaciones
-      Reglas de derivación
-      Optimización
-      Análisis de funciones
-```
+![[Diagramas/01_-_Derivada_y_Definición_Formal_04.svg]]
 
 ---
 
@@ -599,4 +530,3 @@ mindmap
 
 ### 🏷️ Tags
 #matematicas/calculo/derivadas #fundamentos/limites #definicion/formal #interpretacion/geometrica #interpretacion/fisica #metodos/calculo #existencia/derivada
-

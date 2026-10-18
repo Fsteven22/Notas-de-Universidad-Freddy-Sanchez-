@@ -47,21 +47,7 @@ dg-publish: true
 > - **Derivada**: Pendiente de la tangente = límite de pendientes de secantes
 > - **Punto de tangencia**: Donde la recta tangente toca la curva
 
-```mermaid
-graph TD
-    A[Función f] --> B[Dos puntos en la curva]
-    B --> C[Recta Secante]
-    C --> D[Pendiente promedio]
-    
-    E[Acercar los puntos] --> F[h tiende a 0]
-    F --> G[Recta Tangente]
-    G --> H[Pendiente instantánea]
-    H --> I[Derivada f prima]
-    
-    style A fill:#fff3e0
-    style I fill:#e8f5e8
-    style G fill:#e3f2fd
-```
+![[Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_01.svg]]
 
 ---
 
@@ -86,20 +72,7 @@ graph TD
 > • La recta secante "converge" a la recta tangente
 > • Obtenemos la pendiente instantánea
 
-```mermaid
-graph LR
-    A[Secante con h grande] --> B[Secante con h mediano]
-    B --> C[Secante con h pequeño]
-    C --> D[Tangente h tiende a 0]
-    
-    E[Pendiente aproximada] --> F[Mejor aproximación]
-    F --> G[Excelente aproximación]  
-    G --> H[Pendiente exacta]
-    
-    style A fill:#ffcdd2
-    style D fill:#c8e6c9
-    style H fill:#e8f5e8
-```
+![[Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_02.svg]]
 
 ---
 
@@ -220,24 +193,7 @@ graph LR
 > • Función cambia lentamente
 > • Curva es "plana"
 
-```mermaid
-graph TD
-    A[Gráfica de f] --> B{Análisis de Pendientes}
-    B --> C[f prima > 0: Creciente]
-    B --> D[f prima < 0: Decreciente]  
-    B --> E[f prima = 0: Horizontal]
-    
-    C --> F[Tangentes con pendiente positiva]
-    D --> G[Tangentes con pendiente negativa]
-    E --> H[Tangentes horizontales]
-    
-    H --> I[Máximos y mínimos locales]
-    
-    style A fill:#fff3e0
-    style I fill:#ffcdd2
-    style F fill:#c8e6c9
-    style G fill:#ffccbc
-```
+![[Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_03.svg]]
 
 ---
 
@@ -394,26 +350,7 @@ graph TD
 > • $P'(t) < 0$: población disminuyendo
 > • $P'(t) = 0$: población estable
 
-```mermaid
-graph TD
-    A[Función Física] --> B{Tipo de Fenómeno}
-    B --> C[Posición s t]
-    B --> D[Temperatura T t]
-    B --> E[Población P t]
-    
-    C --> F[Derivada = Velocidad]
-    D --> G[Derivada = Tasa térmica]
-    E --> H[Derivada = Tasa poblacional]
-    
-    F --> I[Interpretación: Rapidez de movimiento]
-    G --> J[Interpretación: Rapidez de cambio térmico]
-    H --> K[Interpretación: Rapidez de crecimiento]
-    
-    style A fill:#fff3e0
-    style I fill:#e8f5e8
-    style J fill:#ffecb3
-    style K fill:#e1bee7
-```
+![[Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_04.svg]]
 
 ---
 
@@ -475,30 +412,7 @@ graph TD
 > • **Integrales** - Proceso inverso, Teorema Fundamental del Cálculo
 > • **Ecuaciones Diferenciales** - Modelado de fenómenos dinámicos
 
-```mermaid
-mindmap
-  root((Interpretación Geométrica))
-    Conceptos Base
-      Límites
-      Pendiente
-      Rectas
-      Funciones
-    Elementos Clave
-      Tangente
-      Secante
-      Normal
-      Ecuaciones
-    Aplicaciones
-      Física
-      Economía
-      Ingeniería
-      Optimización
-    Conexiones
-      Derivadas
-      Integrales
-      Ecuaciones Diferenciales
-      Análisis de Funciones
-```
+![[Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_05.svg]]
 
 ---
 

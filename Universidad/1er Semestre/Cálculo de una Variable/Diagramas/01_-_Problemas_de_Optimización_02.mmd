@@ -1,0 +1,21 @@
+flowchart TD
+    A[Problema de Ruta] --> B{Tipo de Medio}
+    B -->|Homogéneo| C[Línea Recta]
+    B -->|Dos Medios| D[Ley de Snell]
+    B -->|Obstáculos| E[Problema de Reflexión]
+    B -->|Múltiples Puntos| F[Problema del Viajante]
+    
+    C --> G[Distancia Euclidiana]
+    D --> H[Optimizar tiempo total]
+    E --> I[Principio de reflexión]
+    F --> J[Combinatoria + Optimización]
+    
+    classDef problemNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    classDef typeNode fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef methodNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef solutionNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class A problemNode
+    class B typeNode
+    class C,D,E,F methodNode
+    class G,H,I,J solutionNode

@@ -1,0 +1,18 @@
+flowchart TD
+    A[Problema de Tasa de Cambio] --> B{Intervalo o Punto?}
+    B -->|"Intervalo [a,b]"| C[Tasa Promedio]
+    B -->|"Punto específico x=a"| D[Tasa Instantánea]
+    C --> E[Usar Δy/Δx]
+    D --> F{"Conoces f'(x)?"}
+    F -->|Sí| G["Evaluar f'(a)"]
+    F -->|No| H[Definición de límite]
+    E --> I["Calcular f(b)-f(a)/b-a"]
+    G --> J[Resultado e interpretación]
+    H --> K[Límite h→0]
+    I --> J
+    K --> J
+    
+    style A fill:#e3f2fd
+    style C fill:#e8f5e8  
+    style D fill:#fff3e0
+    style J fill:#f3e5f5

@@ -21,22 +21,7 @@ dg-publish: true
 > 
 > **En otras palabras:** $x > a$ y $x \to a$
 
-```mermaid
-graph TD
-    A["🎯 Punto x = a"] --> B["👈 Aproximación por la izquierda"]
-    A --> C["👉 Aproximación por la derecha"]
-    B --> D["📊 Límite izquierdo: L₁"]
-    C --> E["📊 Límite derecho: L₂"]
-    D --> F{"🤔 ¿L₁ = L₂?"}
-    E --> F
-    F -->|Sí| G["✅ Límite existe = L₁ = L₂"]
-    F -->|No| H["❌ Límite no existe"]
-    
-    style G fill:#c8e6c9
-    style H fill:#ffcdd2
-    style D fill:#e3f2fd
-    style E fill:#fff3e0
-```
+![[Diagramas/02_-_Límites_Laterales_01.svg]]
 
 ## Teorema Fundamental de Límites Laterales 🔑
 
@@ -147,20 +132,7 @@ graph TD
 > |📈📉 Salto|✅ Existe|✅ Existe|❌ No existe|
 > |♾️ Asíntota vertical|♾️ Infinito|♾️ Infinito|Depende del caso|
 
-```mermaid
-graph LR
-    A["📊 Gráfica"] --> B["👈 Seguir desde izquierda"]
-    A --> C["👉 Seguir desde derecha"]
-    B --> D["📍 ¿A qué valor apunta?"]
-    C --> E["📍 ¿A qué valor apunta?"]
-    D --> F{"🔍 ¿Misma altura?"}
-    E --> F
-    F -->|Sí| G["✅ Límite existe"]
-    F -->|No| H["❌ Límite no existe"]
-    
-    style G fill:#c8e6c9
-    style H fill:#ffcdd2
-```
+![[Diagramas/02_-_Límites_Laterales_02.svg]]
 
 ## Funciones Definidas por Partes 🧩
 

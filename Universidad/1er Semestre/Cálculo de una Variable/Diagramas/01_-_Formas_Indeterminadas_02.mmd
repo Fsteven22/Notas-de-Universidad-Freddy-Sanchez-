@@ -1,0 +1,13 @@
+flowchart TD
+    A[Forma 0/0 con radicales] --> B{Ubicacion del radical}
+    B -->|Numerador| C[Racionalizar numerador]
+    B -->|Denominador| D[Racionalizar denominador]
+    C --> E[Multiplicar por conjugado del numerador]
+    D --> F[Multiplicar por conjugado del denominador]
+    E --> G[Aplicar diferencia de cuadrados]
+    F --> G
+    G --> H[Simplificar y evaluar]
+    
+    style A fill:#e3f2fd
+    style G fill:#e8f5e8
+    style H fill:#f3e5f5

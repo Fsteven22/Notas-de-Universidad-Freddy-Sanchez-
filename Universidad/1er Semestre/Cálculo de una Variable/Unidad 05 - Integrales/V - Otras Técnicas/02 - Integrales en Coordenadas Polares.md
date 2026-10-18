@@ -32,20 +32,7 @@ dg-publish: true
 
 > [!note] Elemento Diferencial de Área 📐
 > ### Deducción del Elemento de Área
-> ```mermaid
-> graph TB
->     A[Sector Circular Infinitesimal] --> B[Dimensiones del Sector]
->     B --> C["Δr × rΔθ"]
->     C --> D[Elemento de Área: dA = r dr dθ]
->     E[Visualización] --> F["┌─────┐ <- r + dr"]
->     F --> G["│ ░░░ │"]
->     G --> H["│░░░ │ <- altura ≈ r"]  
->     H --> I["└─────┘ <- r"]
->     I --> J["↖─ dθ ─↗"]
->     style A fill:#e8f5e8
->     style D fill:#c8e6c9
->     style E fill:#e1f5fe
-> ```
+> ![[Diagramas/02_-_Integrales_en_Coordenadas_Polares_01.svg]]
 > 
 > ### Construcción del Sector Circular
 > **Consideremos un sector circular infinitesimal:**
