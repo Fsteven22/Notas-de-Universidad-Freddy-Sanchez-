@@ -63,18 +63,7 @@ dg-publish: true
 
 > [!info] 🌀 Análisis Vectorial de la Precesión
 > 
-> ```mermaid
-> flowchart TD
->    A[🌀 Giroscopio Girando] --> B[⚖️ Se Aplica Torque Externo]
->    B --> C{🎯 Dirección del Cambio}
->    C -->|❌ NO en dirección del torque| D[🔄 Cambio Perpendicular]
->    D --> E[📐 Vector L cambia dirección]
->    E --> F[🌀 Precesión del Eje]
->    F --> G[✅ Equilibrio Dinámico]
->    style A fill:#e1f5fe
->    style D fill:#fff3e0
->    style G fill:#c8e6c9
-> ```
+> ![[Diagramas/Giroscopios_y_Precesión_01.svg]]
 >
 
 > [!note] 📐 Diagrama Vectorial En un giroscopio típico:
@@ -222,33 +211,7 @@ dg-publish: true
 
 > [!info] 🌐 Red de Conceptos
 > 
-> ```mermaid
-> mindmap
->  root((🌀 Giroscopios y Precesión))
->    📐 Fundamentos Vectoriales
->      Momento Angular Vectorial
->      Torque como Vector
->      Producto Vectorial
->      Regla Mano Derecha
->    ⚖️ Conservación
->      Momento Angular
->      Estabilidad Direccional
->      Resistencia al Cambio
->    🛠️ Aplicaciones
->      Navegación
->      Estabilización
->      Control de Vehículos
->      Instrumentos de Precisión
->    🌍 Ejemplos Naturales
->      Precesión Terrestre
->      Estabilidad Bicicleta
->      Efectos en Helicópteros
->    📱 Tecnología
->      MEMS
->      Fibra Óptica
->      Smartphones
->      Drones
-> ```
+> ![[Diagramas/Giroscopios_y_Precesión_02.svg]]
 >
 
 > [!tip] 🎯 Estrategias de Comprensión

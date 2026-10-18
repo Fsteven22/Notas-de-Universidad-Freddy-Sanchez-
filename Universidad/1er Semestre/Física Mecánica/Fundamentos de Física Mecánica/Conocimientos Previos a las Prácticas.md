@@ -43,19 +43,7 @@ Este tema es transversal a **todas** las prácticas de laboratorio. Es la base p
 - La **validación de modelos teóricos** comparando los resultados experimentales (con sus incertidumbres) con las predicciones.
 
 ### 1.7 Gráficas
-```mermaid
-graph TD
-    A[Medición Experimental] --> B{Fuentes de Error}
-    B --> B1[Errores Sistemáticos]
-    B --> B2[Errores Aleatorios]
-    B2 --> C[Cuantificación de Incertidumbre]
-    C --> C1[Incertidumbre Absoluta]
-    C --> C2[Incertidumbre Relativa]
-    C1 --> D[Reporte de Medición: X ± ΔX]
-    C2 --> E[Comparación de Precisión]
-    D --> F[Propagación de Errores]
-    F --> G[Cálculo de Magnitudes Indirectas con Incertidumbre]
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_01.svg]]
 ### 1.8 Ejemplo de aplicación: Medición del Tiempo de Caída de un Objeto
 
 #### Contexto
@@ -128,17 +116,7 @@ Imagina que estás en el laboratorio midiendo el tiempo que tarda una canica en 
 #### Gráficas
 Este ejemplo, al ser una única medición de un valor promedio, no se presta a una gráfica de datos $(x,y)$ como la anterior. Sin embargo, podríamos visualizar el proceso de medición:
 
-```mermaid
-graph TD
-    A[Objeto y Cronometro] --> B[Identificar evento a medir]
-    B --> C[Realizar multiples mediciones del tiempo t_i]
-    C --> D[Calcular promedio: t_prom]
-    C --> E[Estimar incertidumbre: Delta_t]
-    D --> F[Aplicar cifras significativas y redondeo]
-    E --> F
-    F --> G["Reportar resultado: (t_prom +/- Delta_t) unidades"]
-
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_02.svg]]
 
 ## Tema General 2: Cifras Significativas y Redondeo
 
@@ -180,17 +158,7 @@ Cuando se toman lecturas en el laboratorio, se registran los dígitos que el ins
 
 ### 2.7 Gráficas
 
-```mermaid
-graph TD
-    A[Medicion Bruta] --> B{Aplicar Reglas de CS}
-    B --> B1[Contar CS]
-    B --> B2[Operaciones: Suma/Resta]
-    B --> B3[Operaciones: Multiplicacion/Division]
-    B2 --> C[Redondeo a decimales correctos]
-    B3 --> D[Redondeo a CS correctas]
-    C --> E[Resultado reportado con precision adecuada]
-    D --> E
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_03.svg]]
 ### 2.8 Ejemplo de aplicación: Cálculo Sencillo de un Área de un Rectángulo (Cifras Significativas)
 
 #### Contexto
@@ -243,15 +211,7 @@ Imagina que un amigo mide una mesa con una cinta métrica muy vieja. El largo es
 #### Gráficas
 Para este ejemplo específico de cálculo de área, no se genera una gráfica de datos como tal. Es una aplicación directa de las reglas de cálculo.
 
-```mermaid
-graph TD
-    A["Medir Largo (L) → Determinar CS de L"] --> B
-    B["Medir Ancho (A) → Determinar CS de A"] --> C
-    C{"Multiplicar L × A"} --> D["Identificar el número con MENOS CS"]
-    D --> E["Redondear el Área al número de CS identificado"]
-    E --> F["Reportar Área con CS correctas (Ej. Notación Científica)"]
-
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_04.svg]]
 ## Tema General 3: Graficación de Datos
 
 ### 3.1 Contexto
@@ -290,21 +250,7 @@ Imagina que mides la posición de un carrito en diferentes momentos. Pones el ti
 -   Te permite **confirmar leyes físicas**; por ejemplo, si la teoría dice que algo debe ser una línea recta, y tu gráfica lo es, ¡bingo!
 
 ### 3.7 Gráficas
-```mermaid
-graph TD
-    A["Datos Medidos (tabla de x, y)"] --> B{"¿Qué tipo de relación buscas?"}
-    B --> B1["Directa / Lineal"]
-    B --> B2["Curva / No Lineal (ej. Potencia, Exponencial)"]
-    B1 --> C["Usar Papel Milimetrado"]
-    B2 --> D["Transformar datos (ej. logaritmos)"]
-    D --> D1["Usar Papel Logarítmico"]
-    C --> E["Plotear puntos con barras de error"]
-    D1 --> E
-    E --> F["Dibujar línea de mejor ajuste"]
-    F --> G["Calcular pendiente e intersección"]
-    G --> H["Interpretar resultados físicos"]
-
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_05.svg]]
 ### 3.8 Ejemplo de aplicación: Medición de la Distancia recorrida por un Carrito a Velocidad Constante
 
 #### Contexto
@@ -384,13 +330,4 @@ Un estudiante que realiza este experimento verá una **línea recta al graficar 
 
 #### Gráfica de Flujo del Procedimiento
 
-```mermaid
-graph TD
-    A["Datos (Tiempo vs. Distancia)"] --> B["Preparar Ejes y Escala"]
-    B --> C["Plotear Puntos"]
-    C --> D["Trazar Línea Recta (Mejor Ajuste)"]
-    D --> E["Calcular Pendiente de la Línea"]
-    E --> F["Interpretar Pendiente (Velocidad)"]
-    F --> G["Confirmar Movimiento Constante"]
-
-```
+![[Diagramas/Conocimientos_Previos_a_las_Prácticas_06.svg]]

@@ -1,0 +1,19 @@
+graph TB
+    M[👋 Mano] 
+    B[📦 Bloque]
+    P[📐 Plano]
+    T[🌍 Tierra]
+    
+    M -.->|F_m/b| B
+    B -.->|F_b/m| M
+    
+    B -.->|N_b/p & f_s| P
+    P -.->|N_p/b & f_s| B
+    
+    B -.->|W_b| T
+    T -.->|R_t/b| B
+    
+    style M fill:#ffcdd2
+    style B fill:#e1f5fe
+    style P fill:#f3e5f5
+    style T fill:#e8f5e8

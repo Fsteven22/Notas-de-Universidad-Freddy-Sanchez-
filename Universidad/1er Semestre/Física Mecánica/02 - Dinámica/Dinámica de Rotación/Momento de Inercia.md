@@ -64,21 +64,7 @@ dg-publish: true
 
 > [!abstract] 📊 Mapa de Relaciones
 > 
-> ```mermaid
-> graph TD
->    A[Objeto Rotando] --> B[Momento de Inercia I]
->    B --> C[Depende de masa: m]
->    B --> D[Depende de distribución: r²]
->    E[Geometría del Objeto] --> F[Fórmulas Específicas]
->    F --> G[Anillo: MR²]
->    F --> H[Disco: ½MR²]
->    F --> I[Esfera: ⅖MR²]
->    F --> J[Varilla: 1/12 ML²]
->    K[Teorema Ejes Paralelos] --> L[I = I_CM + Md²]
->    B --> M[Dinámica Rotacional]
->    M --> N[τ = Iα]
->    M --> O[K_rot = ½Iω²]
-> ```
+> ![[Diagramas/Momento_de_Inercia_01.svg]]
 
 ---
 
@@ -109,21 +95,7 @@ dg-publish: true
 
 > [!info] 🛠️ Flujo de Resolución
 > 
-> ```mermaid
-> flowchart TD
->    A[Identificar el Sistema] --> B{¿Partícula o Cuerpo Rígido?}
->    B -->|Partícula| C[Usar I = mr²]
->    B -->|Sistema de Partículas| D[Usar I = Σm_i r_i²]
->    B -->|Cuerpo Rígido| E[Identificar Geometría]
->    E --> F[Aplicar Fórmula Específica]
->    F --> G{¿Eje por Centro de Masa?}
->    G -->|Sí| H[Resultado Final]
->    G -->|No| I[Aplicar Teorema Ejes Paralelos]
->    I --> J[I = I_CM + Md²]
->    J --> H
->    C --> H
->    D --> H
-> ```
+> ![[Diagramas/Momento_de_Inercia_02.svg]]
 
 ---
 

@@ -29,18 +29,7 @@ dg-publish: true
 > 
 > ### 📊 Distribución de Velocidades
 > 
-> ```mermaid
-> graph TD
->     A[Pared del tubo<br/>v = 0] --> B[Perfil Parabólico]
->     B --> C[Centro del tubo<br/>v = vmáx]
->     B --> D[Velocidad promedio<br/>v̄ = vmáx/2]
->     E[Características] --> F[Sin mezclado<br/>entre capas]
->     E --> G[Pérdidas mínimas<br/>por fricción]
->     E --> H[Flujo predecible<br/>y estable]
->     style A fill:#ff6b6b,stroke:#d63384,color:#fff
->     style C fill:#45b7d1,stroke:#0d6efd,color:#fff
->     style D fill:#96ceb4,stroke:#198754,color:#fff
-> ```
+> ![[Diagramas/Flujo_Laminar_y_Ecuación_de_Poiseuille_01.svg]]
 
 ## Ecuación de Poiseuille
 

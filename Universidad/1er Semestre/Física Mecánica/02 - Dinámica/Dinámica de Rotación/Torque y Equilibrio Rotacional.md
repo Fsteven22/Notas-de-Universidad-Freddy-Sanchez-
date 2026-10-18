@@ -69,23 +69,7 @@ dg-publish: true
 
 > [!abstract] 📊 Mapa de Relaciones
 > 
-> ```mermaid
-> graph TD
->    A[Fuerza Aplicada F] --> B[Torque: tau = r × F]
->    C[Brazo de Palanca r] --> B
->    D[Ángulo theta] --> B
->    B --> E[tau = rF sin theta]
->    F[Casos Especiales] --> G[theta = 90°: tau = rF]
->    F --> H[theta = 0°/180°: tau = 0]
->    B --> I[Segunda Ley Rotacional]
->    I --> J[Suma tau = I alpha]
->    J --> K[Aceleración Angular alpha]
->    L[Momento de Inercia I] --> J
->    B --> M[Trabajo Rotacional]
->    M --> N[W = tau Delta theta]
->    B --> O[Potencia Rotacional]
->    O --> P[P = tau omega]
-> ```
+> ![[Diagramas/Torque_y_Equilibrio_Rotacional_01.svg]]
 
 ---
 
@@ -117,23 +101,7 @@ dg-publish: true
 
 > [!info] 🛠️ Flujo de Resolución
 > 
-> ```mermaid
-> flowchart TD
->    A[Identificar el Sistema] --> B[Ubicar Eje de Rotación]
->    B --> C[Identificar Fuerzas Aplicadas]
->    C --> D[Medir Brazos de Palanca r]
->    D --> E[Determinar Ángulos theta]
->    E --> F{¿Múltiples Fuerzas?}
->    F -->|Una Fuerza| G[Calcular: tau = rF sin theta]
->    F -->|Varias Fuerzas| H[Calcular: Suma de torques]
->    G --> I[Resultado Final]
->    H --> I
->    I --> J{¿Análisis Dinámico?}
->    J -->|Sí| K[Aplicar: Suma tau = I alpha]
->    J -->|No| L[Análisis de Equilibrio]
->    K --> M[Encontrar alpha o I]
->    L --> N[Suma tau = 0]
-> ```
+> ![[Diagramas/Torque_y_Equilibrio_Rotacional_02.svg]]
 
 ---
 
@@ -318,22 +286,7 @@ dg-publish: true
 > 
 > - Agregar: $\sum \vec{F}_{ext} = 0$
 
-```mermaid
-flowchart TD
-    A[Identificar Sistema] --> B[Elegir Eje de Rotación]
-    B --> C[Diagrama de Cuerpo Libre]
-    C --> D[Calcular Torques Individuales]
-    D --> E[Aplicar Convención de Signos]
-    E --> F[∑τ = 0]
-    F --> G{¿Equilibrio Completo?}
-    G -->|Sí| H[Agregar ∑F = 0]
-    G -->|No| I[Resolver Ecuaciones]
-    H --> I
-    
-    style A fill:#ff9999
-    style F fill:#99ccff
-    style I fill:#99ff99
-```
+![[Diagramas/Torque_y_Equilibrio_Rotacional_03.svg]]
 
 ### Convención de Signos 🔄
 
@@ -388,19 +341,7 @@ flowchart TD
 > 
 > **Equilibrio traslacional:** $$F_1 + 245 - 490 - 196 = 0$$ $$F_1 = 441 \text{ N}$$
 
-```mermaid
-graph TD
-    A[Viga 5m, 20kg] --> B[Objeto 50kg a 1m]
-    A --> C[Soporte Izq: F₁]
-    A --> D[Soporte Der: F₂ a 4m]
-    B --> E[Peso = 490N]
-    A --> F[Peso viga = 196N a 2.5m]
-    
-    style C fill:#99ff99
-    style D fill:#99ff99
-    style E fill:#ff9999
-    style F fill:#ff9999
-```
+![[Diagramas/Torque_y_Equilibrio_Rotacional_04.svg]]
 
 ### Conexiones Conceptuales 🔗
 

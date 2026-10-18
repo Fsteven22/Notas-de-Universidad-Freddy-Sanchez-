@@ -89,22 +89,7 @@ dg-publish: true
 
 > [!success] 🔄 Métodos de Cálculo de Energía Elástica
 > 
-> ```mermaid
-> graph TD
->     A[Energía Elástica] --> B[Método Directo]
->     A --> C[Método del Trabajo]
->     A --> D[Método de Integración]
->     B --> E[U = ½·F·δ]
->     C --> F[W = ∫F·dx]
->     D --> G[U = ∫u·dV]
->     E --> H[Resortes y Barras]
->     F --> I[Cargas Variables]
->     G --> J[Campos de Esfuerzo]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_de_Energía_Elástica_01.svg]]
 >
 
 > [!note] **Relaciones Energéticas Fundamentales** 📐

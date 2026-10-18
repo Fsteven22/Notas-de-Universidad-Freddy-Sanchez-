@@ -52,23 +52,7 @@ dg-publish: true
 > 
 > Aquí se explica el concepto de flotación.
 
-```mermaid
-flowchart TD
-    A["Cuerpo en Fluido"] --> B{"Comparar Fuerzas"}
-    B --> C["Peso > Empuje (W > E)"]
-    B --> D["Peso = Empuje (W = E)"]
-    B --> E["Peso < Empuje (W < E)"]
-    C --> F["🔽 HUNDIMIENTO (densidad cuerpo > fluido)"]
-    D --> G["⚖️ FLOTACIÓN NEUTRAL (densidades iguales)"]
-    E --> H["🔼 FLOTACIÓN (densidad cuerpo < fluido)"]
-    F --> I["Aceleración hacia abajo: a = g*(dc - df)/dc"]
-    G --> J["Equilibrio estático: a = 0"]
-    H --> K["Flotación en superficie (parcialmente sumergido)"]
-    style F fill:#ff6b6b,stroke:#d63384,color:#fff
-    style G fill:#96ceb4,stroke:#198754,color:#fff
-    style H fill:#45b7d1,stroke:#0d6efd,color:#fff
-
-```
+![[Diagramas/El_Principio_de_Arquímedes_y_Flotación_01.svg]]
 
 
 
@@ -121,18 +105,7 @@ flowchart TD
 > 
 > ### ⚓ Tipos de Equilibrio
 > 
-> ```mermaid
-> graph LR
->     A[Equilibrio de Flotación] --> B[Estable]
->     A --> C[Inestable]  
->     A --> D[Indiferente]
->     B --> B1[Centro de carena<br/>por encima del<br/>centro de gravedad]
->     C --> C1[Centro de carena<br/>por debajo del<br/>centro de gravedad]
->     D --> D1[Centros<br/>coincidentes]
->     style B fill:#96ceb4,stroke:#198754,color:#fff
->     style C fill:#ff6b6b,stroke:#d63384,color:#fff
->     style D fill:#ffd93d,stroke:#fd7e14,color:#fff
-> ```
+> ![[Diagramas/El_Principio_de_Arquímedes_y_Flotación_02.svg]]
 
 ## Problemas Cuantitativos
 

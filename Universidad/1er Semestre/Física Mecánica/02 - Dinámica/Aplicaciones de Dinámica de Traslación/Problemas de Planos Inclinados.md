@@ -82,24 +82,7 @@ dg-publish: true
 
 > [!success] 🔗 Descomposición de Fuerzas en Planos Inclinados
 > 
-> ```mermaid
-> graph TD
->     A[Peso mg] --> B[Componente Paralela]
->     A --> C[Componente Perpendicular]
->     B --> D[mg sin θ]
->     B --> E[Causa movimiento]
->     C --> F[mg cos θ]
->     C --> G[Equilibra con Normal]
->     H[Fricción f] --> I[Paralela al plano]
->     H --> J[Opuesta al movimiento]
->     K[Normal N] --> L[Perpendicular al plano]
->     K --> M[N = mg cos θ + otras fuerzas ⊥]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#e8f5e8
->     style H fill:#fff3e0
->     style K fill:#fce4ec
-> ```
+> ![[Diagramas/Problemas_de_Planos_Inclinados_01.svg]]
 >
 
 > [!note] **Relaciones Trigonométricas Esenciales** 📐

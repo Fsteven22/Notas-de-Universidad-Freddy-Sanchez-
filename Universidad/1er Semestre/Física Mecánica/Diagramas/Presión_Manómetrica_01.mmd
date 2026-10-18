@@ -1,0 +1,14 @@
+graph TB
+    A[Presión Absoluta<br/>P_abs = P_atm + P_man] --> B[Presión Atmosférica<br/>P_atm ≈ 101.325 kPa]
+    A --> C[Presión Manométrica<br/>P_man = P_abs - P_atm]
+    D[Casos Especiales] --> E[P_man > 0<br/>Presión Positiva<br/>Sobrepresión]
+    D --> F[P_man = 0<br/>Presión Atmosférica<br/>Sin diferencia]
+    D --> G[P_man < 0<br/>Presión Negativa<br/>Vacío Parcial]
+    H[Referencia] --> I[Vacío Absoluto<br/>P = 0 Pa<br/>Referencia teórica]
+    H --> J[Nivel del Mar<br/>P_atm = 1 atm<br/>Referencia práctica]
+    style A fill:#e8f5e8
+    style B fill:#e1f5fe
+    style C fill:#fff3e0
+    style E fill:#ffcdd2
+    style F fill:#f3e5f5
+    style G fill:#e0f2f1

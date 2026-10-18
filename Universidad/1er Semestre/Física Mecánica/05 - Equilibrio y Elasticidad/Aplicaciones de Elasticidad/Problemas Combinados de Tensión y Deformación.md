@@ -105,25 +105,7 @@ dg-publish: true
 
 > [!success] 🔗 Relaciones entre Deformaciones
 > 
-> ```mermaid
-> graph TD
->     A[Estado de Esfuerzo] --> B[Esfuerzos Principales σ₁,σ₂,σ₃]
->     B --> C[Deformaciones Principales ε₁,ε₂,ε₃]
->     C --> D[Deformación Volumétrica εv = ε₁+ε₂+ε₃]
->     C --> E[Deformación Distorsional εd]
->     F[Módulos Elásticos] --> G[E - Módulo Young]
->     F --> H[ν - Coeficiente Poisson]  
->     F --> I[G - Módulo Cortante]
->     F --> J[K - Módulo Volumétrico]
->     G --> C
->     H --> C
->     I --> E
->     J --> D
->     style A fill:#e1f5fe
->     style D fill:#f3e5f5
->     style E fill:#fff3e0
->     style F fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_Combinados_de_Tensión_y_Deformación_01.svg]]
 >
 
 > [!note] **Teorías de Falla** ⚖️

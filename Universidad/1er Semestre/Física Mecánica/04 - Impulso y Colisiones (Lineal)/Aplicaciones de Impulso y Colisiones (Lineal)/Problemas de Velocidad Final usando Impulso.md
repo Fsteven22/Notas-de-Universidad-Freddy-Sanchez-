@@ -78,26 +78,7 @@ dg-publish: true
 
 > [!success] 🔗 Estrategia General
 > 
-> ```mermaid
-> graph TD
->     A[Problema de Velocidad Final] --> B[Tipo de Análisis]
->     B --> C[Impulso Directo]
->     B --> D[Conservación Momentum]
->     B --> E[Combinado]
->     C --> C1[J = FΔt]
->     C --> C2[J = ∫F dt]
->     C --> C3[J = Δp]
->     D --> D1[Sistema Aislado]
->     D --> D2[Colisiones]
->     D --> D3[Explosiones]
->     E --> E1[Múltiples Fuerzas]
->     E --> E2[Sistemas Complejos]
->     E --> E3[Análisis por Etapas]
->     style A fill:#e1f5fe
->     style C fill:#f3e5f5
->     style D fill:#fff3e0
->     style E fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_de_Velocidad_Final_usando_Impulso_01.svg]]
 
 ## 🧮 Cálculo de Impulso
 

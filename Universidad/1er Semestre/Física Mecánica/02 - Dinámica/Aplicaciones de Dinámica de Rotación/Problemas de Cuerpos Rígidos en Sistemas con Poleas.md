@@ -86,22 +86,7 @@ dg-publish: true
 
 > [!success] 🔗 Estrategia de Resolución
 > 
-> ```mermaid
-> graph TD
->     A[Identificar Sistema] -->|1| B[Diagrama de Cuerpo Libre]
->     B -->|2| C[Ecuaciones de Movimiento]
->     C -->|3| D[Condiciones de Enlace]
->     D -->|4| E[Sistema de Ecuaciones]
->     E -->|5| F[Resolución Matemática]
->     F -->|6| G[Verificación Física]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
->     style G fill:#e0f2f1
-> ```
+> ![[Diagramas/Problemas_de_Cuerpos_Rígidos_en_Sistemas_con_Poleas_01.svg]]
 >
 
 > [!note] **Ecuaciones de Conservación** 📐

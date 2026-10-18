@@ -1,0 +1,12 @@
+graph TD
+    A["Paradoja Hidrostática"] --> B["Recipiente Cilíndrico"]
+    A --> C["Recipiente Cónico"]
+    A --> D["Recipiente con Estrechamiento"]
+    B --> B1["Volumen: πr²h<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
+    C --> C1["Volumen: ⅓πr²h<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
+    D --> D1["Volumen: Variable<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
+    B1 --> E["MISMA PRESIÓN EN EL FONDO"]
+    C1 --> E
+    D1 --> E
+    style E fill:#96ceb4,stroke:#198754,color:#fff
+    style A fill:#45b7d1,stroke:#0d6efd,color:#fff

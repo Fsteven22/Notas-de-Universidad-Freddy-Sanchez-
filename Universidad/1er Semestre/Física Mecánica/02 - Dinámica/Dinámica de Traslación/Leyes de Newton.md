@@ -12,26 +12,7 @@ Este tutorial aborda situaciones donde es necesario aplicar las **tres leyes de 
 
 ### 🎯 Sistemas de Estudio
 
-```mermaid
-mindmap
-  root)⚖️ Leyes de Newton(
-    📐 Planos Inclinados
-      Con fricción
-      Sin fricción
-      Múltiples masas
-    🔗 Poleas
-      Sistemas conectados
-      Cuerdas y tensiones
-      Aceleraciones vinculadas
-    📦 Sistemas Conectados
-      Múltiples objetos
-      Fuerzas internas
-      Análisis independiente
-    💪 Fuerzas Externas
-      Empuje y tracción
-      Componentes vectoriales
-      Equilibrio dinámico
-```
+![[Diagramas/Leyes_de_Newton_01.svg]]
 
 ---
 
@@ -77,16 +58,7 @@ $$f = \mu N$$
 
 ### 🎯 Las Tres Leyes Fundamentales
 
-```mermaid
-graph TD
-    A[⚖️ Leyes de Newton] --> B[1️⃣ Primera Ley<br/>📍 Inercia]
-    A --> C[2️⃣ Segunda Ley<br/>🚀 F = ma]
-    A --> D[3️⃣ Tercera Ley<br/>↔️ Acción-Reacción]
-    
-    B --> E[Objeto en reposo o<br/>velocidad constante<br/>ΣF = 0]
-    C --> F[Aceleración proporcional<br/>a fuerza neta<br/>a = F/m]
-    D --> G[Fuerzas en pares<br/>Misma magnitud<br/>Direcciones opuestas]
-```
+![[Diagramas/Leyes_de_Newton_02.svg]]
 
 ---
 
@@ -94,18 +66,7 @@ graph TD
 
 ### 🎯 Tipos de Problemas Característicos
 
-```mermaid
-flowchart TD
-    A[📚 Problemas Típicos] --> B[📐 Plano Inclinado + Fricción]
-    A --> C[🔗 Sistema Polea + 2 Masas]
-    A --> D[📦 Cajas Empujadas]
-    A --> E[🔄 Sistemas Múltiples]
-    
-    B --> F[Descomponer peso<br/>Calcular normal<br/>Aplicar fricción]
-    C --> G[DCL independientes<br/>Vincular aceleraciones<br/>Resolver sistema]
-    D --> H[Componentes de fuerza<br/>Fricción resultante<br/>Aceleración neta]
-    E --> I[Análisis por separado<br/>Relacionar ecuaciones<br/>Solución conjunta]
-```
+![[Diagramas/Leyes_de_Newton_03.svg]]
 
 ---
 
@@ -113,20 +74,7 @@ flowchart TD
 
 ### 📐 Ejemplo: Bloque en Plano Inclinado
 
-```mermaid
-graph TD
-    A[📦 Bloque en plano θ] --> B[🌍 Peso mg]
-    A --> C[📏 Normal N]
-    A --> D[🔥 Fricción f]
-    A --> E[🔗 Tensión T]
-    
-    B --> F[📐 Componentes del peso]
-    F --> G[📏 Perpendicular: mg cos θ]
-    F --> H[📐 Paralela: mg sin θ]
-    
-    style A fill:#e1f5fe
-    style F fill:#fff3e0
-```
+![[Diagramas/Leyes_de_Newton_04.svg]]
 
 ### 🧮 Ecuaciones Asociadas
 
@@ -147,19 +95,7 @@ $$ma = mg \sin(\theta) - f - T$$
 
 ## 📌 Estrategia de Resolución
 
-```mermaid
-flowchart TD
-    A[📋 1. Identificar sistema] --> B[🎯 2. DCL para cada objeto]
-    B --> C[📐 3. Definir ejes coordenados]
-    C --> D[🧮 4. Descomponer fuerzas]
-    D --> E[⚖️ 5. Aplicar ΣF = ma]
-    E --> F[🔗 6. Relacionar aceleraciones]
-    F --> G[📊 7. Resolver sistema]
-    G --> H[✅ 8. Verificar resultado]
-    
-    style A fill:#e8f5e8
-    style H fill:#e8f5e8
-```
+![[Diagramas/Leyes_de_Newton_05.svg]]
 
 ---
 
@@ -169,14 +105,7 @@ flowchart TD
 
 **🎯 Problema**: Bloque de 5 kg empujado con 30 N en superficie sin fricción.
 
-```mermaid
-graph LR
-    A[📦 Bloque 5 kg] --> B[💪 F = 30 N]
-    B --> C[🚀 a = ?]
-    
-    style A fill:#e1f5fe
-    style C fill:#e8f5e8
-```
+![[Diagramas/Leyes_de_Newton_06.svg]]
 
 **🔧 Solución**: $$F = ma \Rightarrow a = \frac{F}{m} = \frac{30}{5} = 6 \text{ m/s}^2$$
 
@@ -188,15 +117,7 @@ graph LR
 
 **🎯 Problema**: Bloque 10 kg en plano inclinado 30°, sin fricción.
 
-```mermaid
-graph TD
-    A["📦 m = 10 kg"] --> B["📐 θ = 30°"]
-    B --> C["🌍 Componente paralela<br/>mg sin θ"]
-    C --> D["🚀 a = ?"]
-    
-    style A fill:#e1f5fe
-    style D fill:#e8f5e8
-```
+![[Diagramas/Leyes_de_Newton_07.svg]]
 
 **🔧 Solución**:
 
@@ -213,18 +134,7 @@ graph TD
 
 **🎯 Problema**: Dos bloques conectados por cuerda y polea. $m_1 = 4$ kg (horizontal), $m_2 = 2$ kg (colgante).
 
-```mermaid
-graph TD
-    A["📦 m₁ = 4 kg<br/>(sobre mesa)"] --> B["🔗 Cuerda"]
-    B --> C["⚙️ Polea"]
-    C --> D["📦 m₂ = 2 kg<br/>(colgante)"]
-    
-    A --> E["🔗 Tensión T →"]
-    D --> F["🌍 Peso m₂g ↓<br/>🔗 Tensión T ↑"]
-    
-    style A fill:#e1f5fe
-    style D fill:#e1f5fe
-```
+![[Diagramas/Leyes_de_Newton_08.svg]]
 
 **🔧 Análisis por DCL**:
 
@@ -248,16 +158,7 @@ $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 
 ### ✅ Buenas Prácticas
 
-```mermaid
-graph TD
-    A[🎯 Estrategia Exitosa] --> B[📐 Dibuja DCL SIEMPRE]
-    A --> C[📏 Define ejes claros]  
-    A --> D[🧮 Descompón correctamente]
-    A --> E[🔍 Verifica signos]
-    A --> F[📝 Símbolos consistentes]
-    
-    style A fill:#e8f5e8
-```
+![[Diagramas/Leyes_de_Newton_09.svg]]
 
 - **📐 DCL primero**: Nunca apliques fórmulas sin dibujar el diagrama
 - **📏 Ejes coherentes**: Define x, y de manera consistente para todo el problema
@@ -267,16 +168,7 @@ graph TD
 
 ### ❌ Errores Comunes a Evitar
 
-```mermaid
-graph TD
-    A[⚠️ Errores Frecuentes] --> B[❌ No dibujar DCL]
-    A --> C[❌ Confundir masa y peso]
-    A --> D[❌ Mal manejo de signos]
-    A --> E[❌ Olvidar vincular aceleraciones]
-    A --> F[❌ Aplicar 3ª ley en mismo DCL]
-    
-    style A fill:#ffebee
-```
+![[Diagramas/Leyes_de_Newton_10.svg]]
 
 ---
 
@@ -296,27 +188,7 @@ graph TD
 
 ### 🌟 Jerarquía de Análisis
 
-```mermaid
-flowchart TD
-    A[🌟 Sistema Completo] --> B[📦 Objeto 1]
-    A --> C[📦 Objeto 2]
-    A --> D[📦 Objeto n]
-    
-    B --> E[📐 DCL₁]
-    C --> F[📐 DCL₂]  
-    D --> G[📐 DCLₙ]
-    
-    E --> H[⚖️ ΣF₁ = m₁a₁]
-    F --> I[⚖️ ΣF₂ = m₂a₂]
-    G --> J[⚖️ ΣFₙ = mₙaₙ]
-    
-    H --> K[🔗 Relacionar aceleraciones]
-    I --> K
-    J --> K
-    
-    K --> L[📊 Sistema de ecuaciones]
-    L --> M[✅ Solución]
-```
+![[Diagramas/Leyes_de_Newton_11.svg]]
 
 ---
 

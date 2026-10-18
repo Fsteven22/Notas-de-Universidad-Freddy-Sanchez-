@@ -10,22 +10,7 @@ dg-publish: true
 >
 > [!important] 🏛️ Principio de Conservación El **principio de conservación del momentum** es una de las leyes de conservación más fundamentales de la física, aplicable desde partículas subatómicas hasta sistemas galácticos. Es esencial para analizar colisiones, explosiones y cualquier interacción entre cuerpos.
 
-```mermaid
-flowchart TD
-    A[📊 Momentum Individual<br/>p = mv] --> B[🎯 Sistema de Partículas<br/>P = Σp_i]
-    B --> C{¿F_ext = 0?}
-    C -->|Sí| D[✅ Momentum Conservado<br/>P_inicial = P_final]
-    C -->|No| E[❌ Momentum Cambia<br/>ΔP = J_ext]
-    
-    F[💥 Aplicaciones] --> G[🚗 Colisiones]
-    F --> H[🚀 Propulsión]
-    F --> I[⚾ Deportes]
-    
-    style A fill:#e1f5fe
-    style D fill:#c8e6c9
-    style E fill:#ffcdd2
-    style F fill:#fff3e0
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_01.svg]]
 
 ---
 
@@ -60,26 +45,7 @@ flowchart TD
 
 ### 📈 Análisis Vectorial
 
-```mermaid
-graph TB
-    subgraph "🎯 Propiedades Vectoriales"
-        A[📏 Magnitud: p = mv]
-        B[🧭 Dirección: Igual a velocidad]
-        C[➡️ Sentido: Según movimiento]
-        D[📊 Componentes: px, py, pz]
-    end
-    
-    subgraph "🔗 Relaciones"
-        E[⚡ Con Impulso: J = Δp]
-        F[🔋 Con Energía: K = p²/2m]
-        G[💪 Con Fuerza: F = dp/dt]
-    end
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_02.svg]]
 
 > [!example] 🔍 Análisis en 2D **Para un objeto moviéndose en el plano:**
 > 
@@ -114,23 +80,7 @@ graph TB
 
 ### 🎯 Análisis de Fuerzas
 
-```mermaid
-flowchart TD
-    A[🎲 Sistema de n Partículas] --> B[📊 Momentum Total<br/>P = Σp_i]
-    
-    C[💪 Fuerzas Internas] --> D[⚖️ Se cancelan en pares<br/>3ª Ley Newton]
-    E[🌍 Fuerzas Externas] --> F{¿Σ F_ext = 0?}
-    
-    F -->|Sí| G[✅ P se conserva]
-    F -->|No| H[❌ P cambia<br/>dP/dt = Σ F_ext]
-    
-    D --> I[🔄 No afectan P_total]
-    
-    style B fill:#ffeb3b
-    style D fill:#c8e6c9
-    style G fill:#4caf50
-    style H fill:#f44336
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_03.svg]]
 
 > [!info] 📖 Fuerzas Internas vs Externas
 > 
@@ -185,19 +135,7 @@ flowchart TD
 
 #### 🔗 Colisión Perfectamente Inelástica
 
-```mermaid
-graph LR
-    A[📦 Antes<br/>m₁v₁ + m₂v₂] --> B[💥 Colisión<br/>Se unen]
-    B --> C[📦 Después<br/>m₁+m₂ v_f]
-    
-    D[✅ Se conserva: Momentum] 
-    E[❌ Se pierde: Energía Cinética]
-    
-    style A fill:#e3f2fd
-    style C fill:#e8f5e8
-    style D fill:#c8e6c9
-    style E fill:#ffcdd2
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_04.svg]]
 
 > [!example] 🔍 Fórmula para Choque Inelástico **Objetos que se unen tras la colisión:** $$m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = (m_1 + m_2)\vec{v}_f$$
 > 
@@ -223,23 +161,7 @@ graph LR
 > - ⚛️ Fisión nuclear
 > - 🌟 Desintegración radiactiva
 
-```mermaid
-graph TB
-    subgraph "🚀 Sistema de Propulsión"
-        A[🚀 Estado Inicial<br/>Cohete + Combustible<br/>P_inicial = 0]
-        B[💨 Expulsión Gases<br/>m_gas × v_gas]
-        C[🚀 Cohete Acelerado<br/>m_cohete × v_cohete]
-        
-        A --> B
-        A --> C
-        D[⚖️ Balance: p_gas + p_cohete = 0]
-    end
-    
-    style A fill:#e3f2fd
-    style B fill:#ffcdd2
-    style C fill:#c8e6c9
-    style D fill:#fff3e0
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_05.svg]]
 
 ---
 
@@ -342,25 +264,7 @@ graph TB
 
 ### 🌌 Momentum en Diferentes Escalas
 
-```mermaid
-mindmap
-  root((🎯 Aplicaciones<br/>Momentum))
-    🔬 Escala Microscópica
-      Colisiones moleculares
-      Teoría cinética gases
-      Dispersión partículas
-      Física cuántica
-    🏠 Escala Cotidiana
-      Deportes pelotas
-      Colisiones vehículos
-      Armas de fuego
-      Maquinaria
-    🌌 Escala Astronómica
-      Órbitas planetarias
-      Choques asteroides
-      Formación sistemas
-      Galaxias interactuando
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_06.svg]]
 
 ---
 
@@ -399,29 +303,7 @@ mindmap
 
 ## 🔗 Conexiones Conceptuales
 
-```mermaid
-mindmap
-  root((🎯 Momentum y<br/>Conservación))
-    ⚡ Impulso
-      Teorema J = Δp
-      Fuerzas contacto
-      Análisis temporal
-      Gráficas F vs t
-    🏛️ Leyes Newton
-      2ª Ley: F = dp/dt
-      3ª Ley: fuerzas internas
-      1ª Ley: caso especial
-    ⚖️ Conservaciones
-      Conservación energía
-      Momento angular
-      Simetrías Noether
-      Invariancias
-    🎯 Mecánica Avanzada
-      Momentum relativista
-      Lagrangiana
-      Hamiltoniana
-      Teoría campos
-```
+![[Diagramas/Momentum_Lineal_y_Su_Conservación_07.svg]]
 
 ---
 
@@ -488,4 +370,3 @@ mindmap
 ---
 
 _Tags: #física #mecánica #momentum #conservación #dinámica #colisiones #sistemas_
-

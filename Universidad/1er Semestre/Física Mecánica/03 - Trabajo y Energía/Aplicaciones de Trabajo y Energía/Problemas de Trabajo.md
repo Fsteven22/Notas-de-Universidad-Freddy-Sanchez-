@@ -49,22 +49,7 @@ dg-publish: true
 
 > [!success] 🔗 Clasificación de Problemas
 > 
-> ```mermaid
-> graph TD
->     A[Problemas de Trabajo] --> B[Fuerzas Constantes]
->     A --> C[Fuerzas Variables]
->     B --> B1[Fuerza Única]
->     B --> B2[Múltiples Fuerzas]
->     B --> B3[Planos Inclinados]
->     B --> B4[Fricción]
->     C --> C1[Resortes: F = -kx]
->     C --> C2[Gravitación: F ∝ 1/r²]
->     C --> C3["Funciones Generales: F(x)"]
->     C --> C4[Integrales Definidas]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
-> ```
+> ![[Diagramas/Problemas_de_Trabajo_01.svg]]
 
 ## 🔧 Trabajo con Fuerzas Constantes
 

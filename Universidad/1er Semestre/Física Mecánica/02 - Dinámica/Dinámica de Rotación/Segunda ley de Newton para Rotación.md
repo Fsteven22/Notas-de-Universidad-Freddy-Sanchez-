@@ -69,22 +69,7 @@ dg-publish: true
 
 > [!abstract] 📊 Mapa de Relaciones
 > 
-> ```mermaid
-> graph TD
->    A[Fuerzas Aplicadas] --> B[Cálculo de Torques]
->    B --> C[Torque Neto: Suma tau]
->    D[Geometría del Objeto] --> E[Momento de Inercia I]
->    C --> F[Segunda Ley Rotacional]
->    E --> F
->    F --> G[Suma tau = I alpha]
->    G --> H[Aceleración Angular alpha]
->    H --> I[Cinemática Rotacional]
->    I --> J[Velocidad angular omega]
->    I --> K[Desplazamiento angular theta]
->    L[Condiciones Iniciales] --> I
->    H --> M[Movimiento Tangencial]
->    M --> N[a_t = alpha × r]
-> ```
+> ![[Diagramas/Segunda_ley_de_Newton_para_Rotación_01.svg]]
 
 ---
 
@@ -92,19 +77,7 @@ dg-publish: true
 
 > [!info] 🔄 Procedimiento Sistemático
 > 
-> ```mermaid
-> flowchart TD
->    A[1. Identificar Fuerzas] --> B[2. Diagrama de Cuerpo Libre]
->    B --> C[3. Ubicar Eje de Rotación]
->    C --> D[4. Calcular Torques Individuales]
->    D --> E[5. Sumar Torques: Suma tau]
->    F[6. Determinar Momento de Inercia I] --> G[7. Aplicar Segunda Ley]
->    E --> G
->    G --> H[Suma tau = I alpha]
->    H --> I[8. Despejar alpha]
->    I --> J[9. Aplicar Cinemática Rotacional]
->    J --> K[10. Encontrar omega o theta]
-> ```
+> ![[Diagramas/Segunda_ley_de_Newton_para_Rotación_02.svg]]
 
 ---
 

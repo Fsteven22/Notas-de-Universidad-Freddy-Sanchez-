@@ -65,16 +65,7 @@ dg-publish: true
 
 > [!success] 🔗 Relaciones Entre Gráficas Angulares
 > 
-> ```mermaid
-> graph TD
->     A[Gráfica θ-t] -->|Derivada| B[Gráfica ω-t]
->     B -->|Derivada| C[Gráfica α-t]
->     C -->|Integral| B
->     B -->|Integral| A
->     style A fill:#e8f5e8
->     style B fill:#fff2e8
->     style C fill:#f0e8ff
-> ```
+> ![[Diagramas/Problemas_con_Gráficas_Angulares_(θ-t,_ω-t,_α-t)_01.svg]]
 >
 
 > [!note] **Relaciones Matemáticas** 📐

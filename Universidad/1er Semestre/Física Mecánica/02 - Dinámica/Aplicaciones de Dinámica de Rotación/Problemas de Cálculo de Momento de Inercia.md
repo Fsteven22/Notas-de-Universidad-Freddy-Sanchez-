@@ -307,22 +307,7 @@ dg-publish: true
 > 
 > ### Estrategia General:
 > 
-> ```mermaid
-> graph TD
->     A[Identificar Componentes] -->|1| B[Centro de Masa Individual]
->     B -->|2| C[I_CM de cada componente]
->     C -->|3| D[Distancia al nuevo eje]
->     D -->|4| E[Aplicar Steiner a cada uno]
->     E -->|5| F[Sumar todos los momentos]
->     F -->|6| G[Verificación física]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
->     style G fill:#e0f2f1
-> ```
+> ![[Diagramas/Problemas_de_Cálculo_de_Momento_de_Inercia_01.svg]]
 >
 
 > [!example] **Problema Complejo: Placa en L** 📐

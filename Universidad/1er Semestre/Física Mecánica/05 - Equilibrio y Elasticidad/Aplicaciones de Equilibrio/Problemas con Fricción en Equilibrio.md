@@ -47,16 +47,7 @@ dg-publish: true
 > 
 > ### Comparación con Fricción Estática:
 > 
-> ```mermaid
-> graph LR
->     A[Reposo] -->|Fuerza aplicada aumenta| B[f_s aumenta]
->     B -->|f_s = μ_s N| C[Punto crítico]
->     C -->|Fuerza continúa| D[Deslizamiento]
->     D -->|f_k = μ_k N| E[Fricción constante]
->     style A fill:#e8f5e8
->     style C fill:#fff3e0
->     style E fill:#ffebee
-> ```
+> ![[Diagramas/Problemas_con_Fricción_en_Equilibrio_01.svg]]
 >
 
 > [!warning] **Coeficientes de Fricción** 📊
@@ -86,25 +77,7 @@ dg-publish: true
 
 > [!success] 🔗 Tipos de Problemas con Fricción
 > 
-> ```mermaid
-> graph TD
->     A[Problemas con Fricción] --> B[Objetos en Superficie Horizontal]
->     A --> C[Objetos en Plano Inclinado]
->     A --> D[Escaleras y Estructuras]
->     A --> E[Sistemas con Múltiples Contactos]
->     B --> B1[Fuerza horizontal aplicada]
->     B --> B2[Múltiples objetos]
->     C --> C1[Ángulo crítico]
->     C --> C2[Fuerza adicional]
->     D --> D1[Escaleras contra pared]
->     D --> D2[Vigas con fricción]
->     E --> E1[Cajas apiladas]
->     E --> E2[Sistemas articulados]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_con_Fricción_en_Equilibrio_02.svg]]
 >
 
 > [!note] **Análisis de Impendencia** ⚠️

@@ -65,22 +65,7 @@ dg-publish: true
 
 > [!success] 🔗 Estrategia de Resolución
 > 
-> ```mermaid
-> graph TD
->     A[Identificar Sistema] --> B[Definir Estados Inicial y Final]
->     B --> C[Establecer Nivel de Referencia]
->     C --> D[Calcular Energías en Cada Estado]
->     D --> E[Aplicar Conservación: E₁ = E₂]
->     E --> F[Resolver para la Incógnita]
->     F --> G[Verificar Resultado Físicamente]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#fff8e1
->     style G fill:#f1f8e9
-> ```
+> ![[Diagramas/Problemas_de_Conservación_de_Energía_Mecánica_01.svg]]
 >
 
 > [!note] **Ecuaciones Fundamentales** 📐

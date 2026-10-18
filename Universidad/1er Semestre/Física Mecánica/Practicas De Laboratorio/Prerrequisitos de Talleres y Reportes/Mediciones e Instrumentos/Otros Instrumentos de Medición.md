@@ -192,22 +192,7 @@ dg-publish: true
 
 > [!success] 🔗 Selección del Cronómetro Apropiado
 > 
-> ```mermaid
-> graph TD
->     A[¿Qué tiempo mides?] --> B{< 1 segundo}
->     A --> C{1-10 segundos}
->     A --> D{> 10 segundos}
->     B --> E[Fotocélula o<br/>Sistema automático]
->     C --> F[Cronómetro digital<br/>Múltiples mediciones]  
->     D --> G[Cronómetro manual<br/>Aceptable]
->     style A fill:#e1f5fe
->     style B fill:#fff3e0
->     style C fill:#fff3e0  
->     style D fill:#fff3e0
->     style E fill:#e8f5e8
->     style F fill:#fce4ec
->     style G fill:#f1f8e9
-> ```
+> ![[Diagramas/Otros_Instrumentos_de_Medición_01.svg]]
 
 ## 🌡️ Instrumentos de Temperatura
 

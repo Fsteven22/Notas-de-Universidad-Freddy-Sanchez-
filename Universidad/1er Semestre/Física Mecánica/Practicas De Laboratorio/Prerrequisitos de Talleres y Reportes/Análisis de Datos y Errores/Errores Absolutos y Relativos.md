@@ -95,22 +95,7 @@ dg-publish: true
 
 > [!success] 🔗 Proceso de Análisis de Errores
 > 
-> ```mermaid
-> graph TD
->     A[Realizar Mediciones] --> B[Calcular Promedio]
->     B --> C[Determinar Error Absoluto]
->     C --> D[Calcular Error Relativo]
->     D --> E[Evaluar Aceptabilidad]
->     E --> F[Decidir: ¿Repetir o Aceptar?]
->     F --> G[Expresar Resultado Final]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
->     style G fill:#e0f2f1
-> ```
+> ![[Diagramas/Errores_Absolutos_y_Relativos_01.svg]]
 >
 
 > [!note] **Métodos de Cálculo** 📝

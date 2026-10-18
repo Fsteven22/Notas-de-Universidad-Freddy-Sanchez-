@@ -70,20 +70,7 @@ dg-publish: true
 
 > [!success] 🔗 Métodos de Resolución
 > 
-> ```mermaid
-> graph TD
->     A[Identificar Geometría] --> B[Determinar Tipo de Presión]
->     B --> C[Calcular Presión Media]
->     C --> D[Encontrar Fuerza Total]
->     D --> E[Localizar Centro de Presión]
->     E --> F[Verificar Resultados]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
-> ```
+> ![[Diagramas/Problemas_de_Presión_y_Fuerza_sobre_Superficies_01.svg]]
 >
 
 > [!note] **Fórmulas Clave** 📐

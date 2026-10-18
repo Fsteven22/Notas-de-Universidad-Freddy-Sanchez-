@@ -50,22 +50,7 @@ dg-publish: true
 > 
 > ### 🌊 Clasificación por Viscosidad
 > 
-> ```mermaid
-> graph TD
->     A[Fluidos] --> B[Newtonianos]
->     A --> C[No Newtonianos]
->     B --> D[Viscosidad constante<br/>τ ∝ du/dy]
->     B --> E[Ejemplos:<br/>Agua, Aire, Aceites]
->     C --> F[Pseudoplásticos<br/>Adelgazantes]
->     C --> G[Dilatantes<br/>Espesantes]
->     C --> H[Plásticos<br/>Bingham]
->     F --> I[Pintura, Sangre<br/>μ disminuye con velocidad]
->     G --> J[Almidón, Arena húmeda<br/>μ aumenta con velocidad]
->     H --> K[Pasta dental, Lodo<br/>Requiere τ mínimo]
->     style B fill:#96ceb4,stroke:#198754,color:#fff
->     style C fill:#ff6b6b,stroke:#d63384,color:#fff
->     style D fill:#45b7d1,stroke:#0d6efd,color:#fff
-> ```
+> ![[Diagramas/Viscosidad_y_Número_de_Reynolds_01.svg]]
 
 ## Tabla de Viscosidades
 

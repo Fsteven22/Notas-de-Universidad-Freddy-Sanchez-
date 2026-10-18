@@ -15,24 +15,7 @@ dg-publish: true
 >
 > [!abstract] Principio Universal Esta ley se aplica a **todas las masas** en el universo, desde partículas microscópicas hasta galaxias enteras, siendo una de las **cuatro fuerzas fundamentales** de la naturaleza.
 
-```mermaid
-graph TD
-    A[🌍 Gravitación Universal] --> B[🪐 Sistema Solar]
-    A --> C[🌙 Sistema Tierra-Luna]
-    A --> D[🏃‍♂️ Objetos en Superficie]
-    A --> E[⭐ Escalas Galácticas]
-    
-    B --> F[☀️ Sol atrae planetas]
-    C --> G[🌍 Tierra atrae Luna]
-    D --> H[📏 Peso de objetos]
-    E --> I[🌌 Estructura cósmica]
-    
-    style A fill:#ff6b6b
-    style B fill:#ffd93d
-    style C fill:#6bcf7f
-    style D fill:#4ecdc4
-    style E fill:#a8e6cf
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_01.svg]]
 
 ---
 
@@ -74,17 +57,7 @@ graph TD
 > 
 > **Peso de un objeto**: $$W = mg$$
 
-```mermaid
-graph LR
-    A[🌍 Masa Tierra] --> B[📏 Radio Tierra]
-    A --> C[🧮 Constante G]
-    B --> D[⚖️ Gravedad Superficie]
-    C --> D
-    D --> E[📊 Peso Objetos]
-    
-    style D fill:#4ecdc4
-    style E fill:#45b7d1
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_02.svg]]
 
 ---
 
@@ -108,22 +81,7 @@ graph LR
 
 ### 📈 Dependencia de Variables
 
-```mermaid
-graph TB
-    A[📊 Fuerza Gravitacional] --> B{Dependencias}
-    B --> C[📈 Masas]
-    B --> D[📉 Distancia]
-    
-    C --> E[👥 Proporcional a m₁ × m₂]
-    D --> F[📏 Proporcional a 1/r²]
-    
-    E --> G[⬆️ Más masa = Más fuerza]
-    F --> H[⬆️ Más distancia = Menos fuerza]
-    
-    style A fill:#e1f5fe
-    style C fill:#c8e6c9
-    style D fill:#ffcdd2
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_03.svg]]
 
 ---
 
@@ -169,20 +127,7 @@ graph TB
 > - 📉 **Lejos del objeto**: Fuerza decrece rápidamente
 > - ♾️ **Nunca llega a cero**: Alcance infinito (teóricamente)
 
-```mermaid
-graph LR
-    A[📏 r pequeño] --> B[📈 F grande]
-    C[📏 r mediano] --> D[📊 F moderada]  
-    E[📏 r grande] --> F[📉 F pequeña]
-    
-    B --> G[🔴 Zona de alta gravedad]
-    D --> H[🟡 Zona intermedia]
-    F --> I[🟢 Zona de baja gravedad]
-    
-    style G fill:#ffcdd2
-    style H fill:#fff3e0
-    style I fill:#c8e6c9
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_04.svg]]
 
 ---
 
@@ -212,26 +157,7 @@ graph LR
 
 ## 🔗 Conexiones Conceptuales
 
-```mermaid
-mindmap
-  root((🌍 Gravitación Universal))
-    🧮 Fundamentos Matemáticos
-      📐 Ley del inverso cuadrado
-      🧲 Fuerza siempre atractiva
-      ⚖️ Proporcional a masas
-    🪐 Aplicaciones Astronómicas
-      ☀️ Órbitas planetarias
-      🌙 Sistema Tierra-Luna
-      🚀 Trayectorias espaciales
-    🌍 Efectos Terrestres
-      ⚖️ Peso de objetos
-      🌊 Mareas oceánicas
-      🏔️ Variaciones altitudinales
-    🔬 Principios Físicos
-      💫 Fuerza conservativa
-      ⚡ Energía potencial
-      🎯 Dinámica newtoniana
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_05.svg]]
 
 > [!success] Relaciones Clave
 > 
@@ -264,25 +190,7 @@ mindmap
 > - **Órbitas** planetarias y satelitales
 > - **Mareas** y efectos astronómicos
 
-```mermaid
-flowchart TB
-    A[🌍 Ley de Gravitación] --> B[🧮 Fórmula Universal]
-    B --> C[🪐 Aplicaciones Cósmicas]
-    B --> D[🌍 Aplicaciones Terrestres]
-    
-    C --> E[☀️ Sistema Solar]
-    C --> F[🌙 Sistema Tierra-Luna]
-    C --> G[🚀 Misiones Espaciales]
-    
-    D --> H[⚖️ Peso de Objetos]
-    D --> I[🌊 Mareas]
-    D --> J[📡 Satélites]
-    
-    style A fill:#ff6b6b
-    style B fill:#4ecdc4
-    style C fill:#ffd93d
-    style D fill:#6bcf7f
-```
+![[Diagramas/Ley_de_la_Gravitación_Universal_06.svg]]
 
 ---
 

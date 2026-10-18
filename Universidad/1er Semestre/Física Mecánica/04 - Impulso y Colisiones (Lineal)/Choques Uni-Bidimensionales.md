@@ -15,30 +15,7 @@ dg-publish: true
 > - ⚖️ **Conservación del momentum**: Principio fundamental que siempre se mantiene
 > - 🔋 **Energía variable**: Puede conservarse, perderse o transformarse según el tipo
 
-```mermaid
-flowchart TD
-    A[💥 Choques] --> B[📏 Unidimensionales]
-    A --> C[📐 Bidimensionales]
-    A --> D[🎲 Tridimensionales]
-    
-    B --> E[✅ Perfectamente Elásticos]
-    B --> F[⚡ Inelásticos Generales]
-    B --> G[🔗 Completamente Inelásticos]
-    
-    C --> H[🎱 Elásticos 2D]
-    C --> I[🚗 Inelásticos 2D]
-    
-    E --> J[📊 Conserva: p y K]
-    F --> K[📊 Conserva: p, pierde K]
-    G --> L[📊 Conserva: p, máxima pérdida K]
-    
-    style A fill:#ff6b6b
-    style B fill:#4ecdc4
-    style C fill:#45b7d1
-    style E fill:#2ecc71
-    style F fill:#f39c12
-    style G fill:#e74c3c
-```
+![[Diagramas/Choques_Uni-Bidimensionales_01.svg]]
 
 ---
 
@@ -102,25 +79,7 @@ flowchart TD
 
 ## 🔬 Clasificación de Choques 1D
 
-```mermaid
-graph TB
-    A[💥 Choque 1D] --> B{¿Se conserva energía cinética?}
-    B -->|Sí| C[✅ ELÁSTICO<br/>e = 1]
-    B -->|No| D[❌ INELÁSTICO<br/>e < 1]
-    
-    C --> E[🎾 Rebote perfecto<br/>Conserva p y K]
-    
-    D --> F{¿Los objetos se pegan?}
-    F -->|Sí| G[🔗 COMPLETAMENTE<br/>INELÁSTICO<br/>e = 0]
-    F -->|No| H[⚡ INELÁSTICO<br/>GENERAL<br/>0 < e < 1]
-    
-    G --> I[🚂 Se mueven juntos<br/>Máxima pérdida energía]
-    H --> J[🏈 Se separan<br/>Pérdida parcial energía]
-    
-    style C fill:#2ecc71
-    style G fill:#e74c3c
-    style H fill:#f39c12
-```
+![[Diagramas/Choques_Uni-Bidimensionales_02.svg]]
 
 ### ✅ Choque Perfectamente Elástico
 
@@ -231,22 +190,7 @@ graph TB
 
 ## 🛠️ Metodología de Resolución 2D
 
-```mermaid
-flowchart TD
-    A[📊 1. Diagrama del problema<br/>Estado inicial y final] --> B[📐 2. Descomposición vectorial<br/>vx, vy para cada objeto]
-    B --> C[⚖️ 3. Conservación eje X<br/>Σpx,i = Σpx,f]
-    B --> D[⚖️ 4. Conservación eje Y<br/>Σpy,i = Σpy,f]
-    C --> E[🧮 5. Sistema de ecuaciones<br/>Resolver simultáneamente]
-    D --> E
-    E --> F{¿Elástico?}
-    F -->|Sí| G[🔋 6. Conservación energía<br/>Ecuación adicional]
-    F -->|No| H[✅ 7. Solución final<br/>Verificar resultados]
-    G --> H
-    
-    style A fill:#e1f5fe
-    style E fill:#fff3e0
-    style H fill:#c8e6c9
-```
+![[Diagramas/Choques_Uni-Bidimensionales_03.svg]]
 
 > [!tip] 💡 Estrategia de Resolución
 > 
@@ -317,19 +261,7 @@ flowchart TD
 > - 📐 **Ángulos**: Determinar direcciones de movimiento
 > - ⚖️ **Responsabilidades**: Asignar culpabilidades basadas en física
 
-```mermaid
-graph LR
-    A[🚗 Evidencia física] --> B[📊 Análisis momentum]
-    B --> C[🧮 Cálculos velocidades]
-    C --> D[⚖️ Conclusiones legales]
-    
-    E[🔍 Marcas frenado] --> A
-    F[📏 Daños vehículos] --> A
-    G[📐 Posiciones finales] --> A
-    
-    style A fill:#e3f2fd
-    style D fill:#c8e6c9
-```
+![[Diagramas/Choques_Uni-Bidimensionales_04.svg]]
 
 ### ⚽ Aplicaciones Deportivas
 
@@ -361,18 +293,7 @@ graph LR
 > |**⚡ Inelástico**|✅ Sí|❌ No|0 < e < 1|Se separan|🏈 Deportes, 🚗 Colisiones|
 > |**🔗 C. Inelástico**|✅ Sí|❌ No|e = 0|Se pegan|🚂 Vagones, 🎯 Proyectiles|
 
-```mermaid
-graph TB
-    subgraph "📊 Comparación Visual"
-        A[⚖️ Momentum<br/>SIEMPRE conservado] --> D[💥 Todos los choques]
-        B[🔋 Energía Cinética<br/>Solo en elásticos] --> E[✅ Choques elásticos]
-        C[🔗 Objetos unidos<br/>Solo c. inelásticos] --> F[🚂 Máxima pérdida energía]
-    end
-    
-    style A fill:#c8e6c9
-    style B fill:#fff3e0
-    style C fill:#ffcdd2
-```
+![[Diagramas/Choques_Uni-Bidimensionales_05.svg]]
 
 ---
 
@@ -482,4 +403,3 @@ graph TB
 ---
 
 _Tags: #física #mecánica #choques #colisiones #momentum #conservación #dinámica #impulso_
-

@@ -94,15 +94,7 @@ dg-publish: true
 > 
 > ### Comparación Visual:
 > 
-> ```mermaid
-> graph LR
->     A[Fuerza Perpendicular] -->|τ = F·r| B[Torque Máximo]
->     C[Fuerza Inclinada] -->|τ = F·r·sin θ| D[Torque Reducido]
->     style A fill:#4caf50
->     style B fill:#81c784
->     style C fill:#ff9800
->     style D fill:#ffb74d
-> ```
+> ![[Diagramas/Problemas_de_Torque_01.svg]]
 >
 
 > [!example] **Uso de τ = F · r · sin θ** 🔄

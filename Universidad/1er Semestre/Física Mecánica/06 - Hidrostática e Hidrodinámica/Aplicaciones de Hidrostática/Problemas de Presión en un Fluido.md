@@ -80,20 +80,7 @@ dg-publish: true
 
 > [!success] 🌊 Distribución de Presión Hidrostática
 > 
-> ```mermaid
-> graph TD
->     A[Superficie Libre P₀] -->|h = 0| B[P = P₀]
->     B -->|Profundidad h₁| C[P = P₀ + ρgh₁]
->     C -->|Profundidad h₂| D[P = P₀ + ρgh₂]
->     D -->|Fondo h_max| E[P = P₀ + ρgh_max]
->     F[Presión] --> G[Aumenta Linealmente]
->     G --> H[Gradiente: ρg]
->     style A fill:#e3f2fd
->     style B fill:#e1f5fe
->     style C fill:#b3e5fc
->     style D fill:#81d4fa
->     style E fill:#4fc3f7
-> ```
+> ![[Diagramas/Problemas_de_Presión_en_un_Fluido_01.svg]]
 >
 
 > [!note] **Relaciones Matemáticas** 📐

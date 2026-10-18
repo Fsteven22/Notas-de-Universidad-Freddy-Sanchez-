@@ -90,22 +90,7 @@ dg-publish: true
 > - Las fuerzas interatómicas actúan como "resortes microscópicos"
 > - En el rango elástico, las fuerzas de restitución restauran la configuración original
 
-```mermaid
-graph TB
-    subgraph "🔬 Comportamiento Microscópico"
-        A[Posición Equilibrio<br/>Sin fuerza externa]
-        B[Desplazamiento Atómico<br/>Con fuerza aplicada]
-        C[Restitución<br/>Al eliminar fuerza]
-        
-        A --> B
-        B --> C
-        C --> A
-    end
-    
-    style A fill:#e8f5e8
-    style B fill:#fff3e0
-    style C fill:#e1f5fe
-```
+![[Diagramas/Elasticidad_01.svg]]
 
 ### 📊 Interpretación del Módulo de Young
 
@@ -127,19 +112,7 @@ graph TB
 
 ### 🎯 Regiones Características
 
-```mermaid
-graph LR
-    subgraph "📈 Curva σ vs ε"
-        A[Región Elástica<br/>Lineal] --> B[Límite Elástico<br/>Punto crítico]
-        B --> C[Región Plástica<br/>Deformación permanente]
-        C --> D[Punto de Fractura<br/>Rotura del material]
-    end
-    
-    style A fill:#c8e6c9
-    style B fill:#fff3e0
-    style C fill:#ffcdd2
-    style D fill:#b71c1c
-```
+![[Diagramas/Elasticidad_02.svg]]
 
 > [!success] ✅ Región Elástica (Lineal) **Características:**
 > 
@@ -246,44 +219,13 @@ graph LR
 > 
 > Donde V es el volumen del material deformado.
 
-```mermaid
-graph TB
-    subgraph "🔋 Transformaciones Energéticas"
-        A[Trabajo Mecánico<br/>W = F·Δx] --> B[Energía Potencial<br/>U = ½kx²]
-        B --> C[Energía Cinética<br/>Al liberarse]
-        C --> D[Aplicaciones<br/>Catapultas, resortes]
-    end
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e8
-    style D fill:#f3e5f5
-```
+![[Diagramas/Elasticidad_03.svg]]
 
 ---
 
 ## 🔗 Conexiones Conceptuales
 
-```mermaid
-mindmap
-  root((🔧 Elasticidad))
-    ⚖️ Equilibrio Estático
-      Análisis de estructuras
-      Distribución de fuerzas
-      Condiciones de estabilidad
-    ⚡ Trabajo y Energía
-      Energía potencial elástica
-      Conservación energética
-      Transformaciones energéticas
-    🏛️ Leyes de Newton
-      Fuerzas de restitución
-      Equilibrio dinámico
-      Análisis de fuerzas
-    🔄 Oscilaciones
-      Movimiento armónico simple
-      Sistemas masa-resorte
-      Análisis de vibraciones
-```
+![[Diagramas/Elasticidad_04.svg]]
 
 ### 🎯 Interrelaciones Fundamentales
 

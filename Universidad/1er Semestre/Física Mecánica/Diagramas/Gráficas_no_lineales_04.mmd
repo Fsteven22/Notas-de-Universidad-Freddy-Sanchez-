@@ -1,0 +1,24 @@
+graph TD
+    A[Datos Experimentales] --> B[Inspección Visual]
+    B --> C{¿Patrón Evidente?}
+    C -->|Lineal| D[Regresión Lineal Directa]
+    C -->|Exponencial| E["Transformación ln(y) vs x"]
+    C -->|Potencial| F["Transformación ln(y) vs ln(x)"]  
+    C -->|Parabólico| G[Regresión Cuadrática o y vs x²]
+    C -->|Hiperbólico| H[Transformación apropiada 1/x]
+    C -->|Incierto| I[Pruebas Múltiples]
+    D --> J[Análisis de Residuos]
+    E --> J
+    F --> J  
+    G --> J
+    H --> J
+    I --> J
+    J --> K{¿Ajuste Satisfactorio?}
+    K -->|Sí| L[Interpretación Física]
+    K -->|No| M[Modelo Más Complejo]
+    M --> N[Funciones Híbridas]
+    M --> O[Análisis No Lineal]
+    M --> P[Revisión de Datos]
+    style A fill:#e1f5fe
+    style L fill:#e8f5e8
+    style M fill:#ffebee

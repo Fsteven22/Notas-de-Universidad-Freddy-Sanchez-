@@ -33,17 +33,7 @@ dg-publish: true
 > 
 > **Principio clave:** Si la línea de acción del peso pasa por el punto de apoyo, el torque gravitatorio neto es **cero**.
 
-```mermaid
-flowchart TD
-    A[Objeto Complejo] --> B[Múltiples Partículas<br/>con Pesos Wi]
-    B --> C[Simplificación:<br/>Una Fuerza W en CG]
-    C --> D[Análisis de Torque<br/>Simplificado]
-    D --> E[Determinación de<br/>Equilibrio y Estabilidad]
-    
-    style A fill:#ff9999
-    style C fill:#99ccff
-    style E fill:#99ff99
-```
+![[Diagramas/Centro_de_Gravedad_(CG)_01.svg]]
 
 ### Métodos de Localización 🔍
 
@@ -62,17 +52,7 @@ flowchart TD
 > - Encontrar punto donde objeto se equilibra
 > - Útil para formas regulares
 
-```mermaid
-graph TD
-    subgraph "Método de Suspensión"
-        A[Punto A] --> A1[Línea Vertical 1]
-        B[Punto B] --> B1[Línea Vertical 2]
-        A1 --> C[Intersección = CG]
-        B1 --> C
-    end
-    
-    style C fill:#99ff99
-```
+![[Diagramas/Centro_de_Gravedad_(CG)_02.svg]]
 
 ### Relación con Estabilidad 🏗️
 
@@ -135,18 +115,7 @@ graph TD
 > 
 > **Aplicación:** Análisis de postura, rehabilitación, deportes
 
-```mermaid
-graph TD
-    subgraph "Estabilidad vs Posición CG"
-        A[CG Centrado] --> A1[Máxima Estabilidad 🟢]
-        B[CG en Borde] --> B1[Límite de Estabilidad 🟡]
-        C[CG Exterior] --> C1[Vuelco 🔴]
-    end
-    
-    style A1 fill:#99ff99
-    style B1 fill:#ffcc99
-    style C1 fill:#ff9999
-```
+![[Diagramas/Centro_de_Gravedad_(CG)_03.svg]]
 
 ### Conexiones Conceptuales 🔗
 

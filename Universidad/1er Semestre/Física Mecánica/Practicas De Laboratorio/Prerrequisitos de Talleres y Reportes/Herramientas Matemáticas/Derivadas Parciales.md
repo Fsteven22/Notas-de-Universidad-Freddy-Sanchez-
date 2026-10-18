@@ -111,22 +111,7 @@ dg-publish: true
 
 > [!success] 🔗 Algoritmo de Cálculo
 > 
-> ```mermaid
-> graph TD
->     A["Identificar la función f(x,y,z,...)"] --> B[Seleccionar variable de derivación]
->     B --> C[Tratar otras variables como constantes]
->     C --> D[Aplicar reglas de derivación ordinaria]
->     D --> E[Simplificar expresión resultante]
->     E --> F[Verificar dimensiones físicas]
->     F --> G[Evaluar en punto específico si es necesario]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
->     style G fill:#e0f2f1
-> ```
+> ![[Diagramas/Derivadas_Parciales_01.svg]]
 
 ## 🎯 Derivadas Parciales en Física
 

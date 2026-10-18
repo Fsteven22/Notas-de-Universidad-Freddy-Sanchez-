@@ -22,18 +22,7 @@ dg-publish: true
 > 
 > ### Condición de Equilibrio
 > 
-> ```mermaid
-> graph TB
->     A[Recipiente 1<br/>P₁ = P₀ + ρgh₁] --> C[Conexión Basal]
->     B[Recipiente 2<br/>P₂ = P₀ + ρgh₂] --> C
->     D[Recipiente 3<br/>P₃ = P₀ + ρgh₃] --> C
->     C --> E[Equilibrio: h₁ = h₂ = h₃]
->     style A fill:#e1f5fe
->     style B fill:#e1f5fe
->     style D fill:#e1f5fe
->     style C fill:#fff3e0
->     style E fill:#e8f5e8
-> ```
+> ![[Diagramas/Teorema_de_los_Vasos_Comunicantes_01.svg]]
 >
 
 > [!tip] Características Principales 🔬
@@ -64,22 +53,7 @@ dg-publish: true
 > 
 > ### En Ingeniería y Tecnología
 > 
-> ```mermaid
-> mindmap
->   root((Aplicaciones))
->     Medición
->       Manómetros en U
->       Niveles de agua
->       Instrumentos de presión
->     Construcción
->       Cimientos nivelados
->       Sistemas de drenaje
->       Canales de riego
->     Industria
->       Sistemas hidráulicos
->       Transmisión de fuerza
->       Control de procesos
-> ```
+> ![[Diagramas/Teorema_de_los_Vasos_Comunicantes_02.svg]]
 >
 > [!abstract] Experimento Clásico 🧪
 > 

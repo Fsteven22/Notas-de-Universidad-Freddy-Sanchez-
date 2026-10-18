@@ -78,22 +78,7 @@ dg-publish: true
 
 > [!success] 🔗 Metodología de Aplicación
 > 
-> ```mermaid
-> graph TD
->     A[Verificar Condiciones de Validez] --> B[Seleccionar Puntos de Referencia]
->     B --> C[Definir Plano de Referencia]
->     C --> D[Aplicar Ecuación de Bernoulli]
->     D --> E[Combinar con Continuidad]
->     E --> F[Resolver Sistema de Ecuaciones]
->     F --> G[Verificar Coherencia Física]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
->     style G fill:#ffebee
-> ```
+> ![[Diagramas/Problemas_de_Ecuación_de_Bernoulli_01.svg]]
 >
 
 > [!note] **Fórmulas Específicas** 📐
@@ -480,26 +465,7 @@ dg-publish: true
 >
 >[!success] 🔗 Aplicaciones del Teorema de Torricelli
 > 
-> ```mermaid
-> graph TD
->     A[Teorema de Torricelli] --> B[Vaciado de Tanques]
->     A --> C[Sistemas de Riego]
->     A --> D[Medición de Flujo]
->     A --> E[Fuentes Ornamentales]
->     B --> F[Tiempo de vaciado]
->     B --> G[Velocidad variable]
->     C --> H[Aspersores]
->     C --> I[Goteo controlado]
->     D --> J[Orificios calibrados]
->     D --> K[Aforadores]
->     E --> L[Altura del chorro]
->     E --> M[Alcance horizontal]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
-> ```
+> ![[Diagramas/Problemas_de_Ecuación_de_Bernoulli_02.svg]]
 >
 
 > [!note] **Ecuaciones Derivadas Importantes** 📊

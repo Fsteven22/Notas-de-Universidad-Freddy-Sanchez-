@@ -31,19 +31,7 @@ dg-publish: true
 > 
 > ### Relación con Otras Propiedades
 > 
-> ```mermaid
-> graph TB
->     A[Módulo de Compresibilidad K] --> B[Compresibilidad β = 1/K]
->     A --> C[Velocidad del Sonido<br/>v = √K/ρ]
->     A --> D[Densidad del Material ρ]
->     E[Presión ΔP] --> A
->     A --> F[Deformación Volumétrica<br/>ΔV/V₀]
->     style A fill:#e8f5e8
->     style B fill:#fff3e0
->     style C fill:#e1f5fe
->     style E fill:#fce4ec
->     style F fill:#f3e5f5
-> ```
+> ![[Diagramas/Módulo_Volumétrico_01.svg]]
 >
 
 > [!tip] Tipos de Módulo de Compresibilidad 🔬
@@ -84,26 +72,7 @@ dg-publish: true
 > 
 > ### Aplicaciones Prácticas
 > 
-> ```mermaid
-> mindmap
->   root((Aplicaciones))
->     Ingeniería Civil
->       Cimentaciones profundas
->       Estructuras submarinas
->       Presas y embalses
->     Industria Petrolífera
->       Exploración marina
->       Cálculo de reservorios
->       Transporte por tuberías
->     Sistemas Hidráulicos
->       Frenos hidráulicos
->       Prensas industriales
->       Elevadores hidráulicos
->     Geofísica
->       Propagación de ondas sísmicas
->       Estudios de la corteza terrestre
->       Exploración sísmica
-> ```
+> ![[Diagramas/Módulo_Volumétrico_02.svg]]
 >
 > [!abstract] Cálculos y Ejemplos Prácticos 🧮
 > 

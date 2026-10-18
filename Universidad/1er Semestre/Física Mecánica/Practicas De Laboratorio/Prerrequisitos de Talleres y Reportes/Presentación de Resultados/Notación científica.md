@@ -110,27 +110,7 @@ dg-publish: true
 
 > [!success] 🔗 Algoritmo de Conversión
 > 
-> ```mermaid
-> graph TD
->     A[Número Original] --> B{¿Mayor que 10?}
->     B -->|Sí| C[Mover coma a la izquierda]
->     B -->|No| D{¿Menor que 1?}
->     D -->|Sí| E[Mover coma a la derecha]
->     D -->|No| F[Exponente = 0]
->     C --> G[Contar posiciones]
->     E --> H[Contar posiciones]
->     G --> I[Exponente positivo]
->     H --> J[Exponente negativo]
->     I --> K["Verificar mantisa 1≤|a|<10"]
->     J --> K
->     F --> K
->     K --> L[Notación Científica Final]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style D fill:#fff3e0
->     style K fill:#e8f5e8
->     style L fill:#fce4ec
-> ```
+> ![[Diagramas/Notación_científica_01.svg]]
 
 ## 🔢 Operaciones Aritméticas
 

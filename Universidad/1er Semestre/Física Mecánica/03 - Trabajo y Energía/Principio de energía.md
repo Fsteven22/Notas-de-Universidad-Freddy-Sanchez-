@@ -45,13 +45,7 @@ dg-publish: true
 
 > [!tip] Tipos de Energía Potencial
 > 
-> ```mermaid
-> graph TD
->     A[🔋 Energía Potencial] --> B[🌍 Gravitatoria]
->     A --> C[🌀 Elástica]
->     B --> D["U = mgh"]
->     C --> E["U = ½kx²"]
-> ```
+> ![[Diagramas/Principio_de_energía_01.svg]]
 
 ---
 
@@ -59,16 +53,7 @@ dg-publish: true
 
 > [!quote] Concepto Fundamental El principio de energía funciona como una **contabilidad energética**:
 > 
-> ```mermaid
-> flowchart LR
->     A[⚡ Energía Inicial] --> B{🔄 Transformaciones}
->     B --> C[🏃 Cinética]
->     B --> D[📍 Potencial]
->     B --> E[🔥 Térmica]
->     C --> F[⚡ Energía Final]
->     D --> F
->     E --> F
-> ```
+> ![[Diagramas/Principio_de_energía_02.svg]]
 > 
 > Un sistema puede tener múltiples formas de energía que se transforman entre sí. El **trabajo externo** es el mecanismo de transferencia de energía hacia o desde el sistema.
 
@@ -78,12 +63,7 @@ dg-publish: true
 
 > [!example] Carro en Plano Inclinado 🚗
 > 
-> ```mermaid
-> graph LR
->     A["🚗 Inicio<br/>h = altura<br/>v = 0"] --> B["🏁 Final<br/>h = 0<br/>v = ?"]
->     A -.-> C["Sin fricción:<br/>mgh = ½mv²"]
->     A -.-> D["Con fricción:<br/>mgh = ½mv² + Q"]
-> ```
+> ![[Diagramas/Principio_de_energía_03.svg]]
 > 
 > **🔍 Análisis:**
 > 
@@ -96,22 +76,7 @@ dg-publish: true
 
 > [!info] Conexiones Conceptuales
 > 
-> ```mermaid
-> mindmap
->   root)⚡ Principio de Energía(
->     🔨 Trabajo-Energía Cinética
->       Caso particular
->       W_neto = ΔK
->     🌟 Fuerzas Conservativas
->       Definen U
->       Gravedad, resortes
->     💨 Fuerzas No Conservativas  
->       Fricción
->       Disipan energía
->     📐 Segunda Ley Newton
->       Formulación alternativa
->       Mismos fenómenos
-> ```
+> ![[Diagramas/Principio_de_energía_04.svg]]
 
 ---
 
@@ -119,14 +84,7 @@ dg-publish: true
 
 > [!note] Gráfica Fuerza vs. Desplazamiento
 > 
-> ```mermaid
-> graph LR
->     A["📊 F vs x"] --> B["📐 Área bajo curva"]
->     B --> C["= Trabajo realizado"]
->     C --> D{"🤔 ¿Fuerza conservativa?"}
->     D -->|Sí| E["W = -ΔU"]
->     D -->|No| F["W = energía disipada"]
-> ```
+> ![[Diagramas/Principio_de_energía_05.svg]]
 
 ---
 
@@ -136,15 +94,7 @@ dg-publish: true
 > 
 > **🎯 Problema**: Bloque de 5.0 kg, velocidad inicial 10 m/s, se detiene a los 5.0 m.
 > 
-> ```mermaid
-> sequenceDiagram
->     participant I as 🚀 Estado Inicial
->     participant F as 🛑 Estado Final
->     I->>F: v₀ = 10 m/s → v = 0
->     Note over I,F: W_normal < 0 (contra movimiento)
->     Note over I,F: W_gravedad > 0 (favor movimiento)
->     Note over I,F: W_total = ΔK < 0
-> ```
+> ![[Diagramas/Principio_de_energía_06.svg]]
 >
 
 > [!success] Ejercicio 2: Caja con Resorte
@@ -158,11 +108,7 @@ dg-publish: true
 > 
 > **🎯 Problema**: Masa desde altura h, velocidad al final.
 > 
-> ```mermaid
-> graph TD
->     A["🏔️ Altura h<br/>v = 0<br/>E = mgh"] --> B["🏁 Suelo<br/>h = 0<br/>E = ½mv²"]
->     A -.-> C["mgh = ½mv²"]
-> ```
+> ![[Diagramas/Principio_de_energía_07.svg]]
 >
 
 > [!quote] Ejercicio 4: Superficie Rugosa
@@ -184,16 +130,7 @@ dg-publish: true
 
 > [!tip] Metodología de Resolución
 > 
-> ```mermaid
-> flowchart TD
->     A[📋 Identificar sistema] --> B[🎯 Estados inicial/final]
->     B --> C{🤔 ¿Fuerzas externas?}
->     C -->|No| D[✅ Conservación energía]
->     C -->|Sí| E[⚡ Principio energía general]
->     D --> F[📝 Aplicar ecuaciones]
->     E --> F
->     F --> G[✨ Resolver]
-> ```
+> ![[Diagramas/Principio_de_energía_08.svg]]
 
 ---
 

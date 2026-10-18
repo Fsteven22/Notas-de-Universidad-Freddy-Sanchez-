@@ -86,18 +86,7 @@ dg-publish: true
 
 > [!success] 🔗 Distribución de Esfuerzos Cortantes
 > 
-> ```mermaid
-> graph TD
->     A[Cortante Directo] --> B[Distribución Uniforme]
->     A --> C[τ = V/A]
->     D[Cortante por Torsión] --> E[Distribución Lineal]
->     D --> F[τmax = Tr/J en r = R]
->     G[Cortante por Flexión] --> H[Distribución Parabólica]
->     G --> I[τmax en fibra neutra]
->     style A fill:#e1f5fe
->     style D fill:#f3e5f5
->     style G fill:#fff3e0
-> ```
+> ![[Diagramas/Problemas_de_Deformación_por_Cortante_(Esfuerzo_Cortante)_01.svg]]
 >
 
 > [!note] **Propiedades de Materiales en Cortante** 📊

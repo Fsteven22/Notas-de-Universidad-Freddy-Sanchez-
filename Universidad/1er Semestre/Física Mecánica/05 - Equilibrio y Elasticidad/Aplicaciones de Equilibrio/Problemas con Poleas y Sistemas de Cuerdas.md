@@ -80,23 +80,7 @@ dg-publish: true
 
 > [!success] 🔗 Configuraciones de Sistemas
 > 
-> ```mermaid
-> graph TD
->     A[Sistema de Poleas] --> B[Poleas Fijas]
->     A --> C[Poleas Móviles]
->     A --> D[Sistemas Combinados]
->     B --> B1[Una Polea]
->     B --> B2[Múltiples Poleas]
->     C --> C1[Una Polea Móvil]
->     C --> C2[Polipastos]
->     D --> D1[Fijas + Móviles]
->     D --> D2[Planos Inclinados]
->     D --> D3[Masas Múltiples]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_con_Poleas_y_Sistemas_de_Cuerdas_01.svg]]
 >
 
 > [!note] **Restricciones Geométricas** 📐

@@ -62,20 +62,7 @@ dg-publish: true
 
 > [!info] 🔄 Proceso de Resolución (Método Dinámico)
 > 
-> ```mermaid
-> flowchart TD
->    A[🎯 Problema de Rodadura] --> B[📐 Diagrama de Cuerpo Libre]
->    B --> C[⚖️ Segunda Ley Newton Lineal]
->    B --> D[🔄 Segunda Ley Newton Rotacional]
->    C --> E[📝 Sistema de Ecuaciones]
->    D --> E
->    E --> F[🔗 Aplicar Condición: a = αR]
->    F --> G[🧮 Resolver Sistema]
->    G --> H[✅ Obtener a, f, etc.]
->    style A fill:#e1f5fe
->    style H fill:#c8e6c9
->    style F fill:#fff3e0
-> ```
+> ![[Diagramas/Rodadura_01.svg]]
 
 ## 🎲 Ejemplos Método Dinámico
 
@@ -136,20 +123,7 @@ dg-publish: true
 
 > [!info] 🔄 Proceso de Resolución (Método Energético)
 > 
-> ```mermaid
-> flowchart TD
->    A[🎯 Problema de Rodadura] --> B[⚡ Identificar Estados Inicial y Final]
->    B --> C[📊 Calcular Energías Iniciales]
->    B --> D[📊 Calcular Energías Finales]
->    C --> E[⚖️ Aplicar Conservación de Energía]
->    D --> E
->    E --> F[🔗 Usar Condición: v = ωR]
->    F --> G[🧮 Resolver para Incógnita]
->    G --> H[✅ Obtener v, h, etc.]
->    style A fill:#e1f5fe
->    style H fill:#c8e6c9
->    style F fill:#fff3e0
-> ```
+> ![[Diagramas/Rodadura_02.svg]]
 
 ## 🎲 Ejemplos Método Energético
 
@@ -186,12 +160,7 @@ dg-publish: true
 
 > [!info] 🔋 Análisis Energético La fracción de energía que se convierte en rotación depende del momento de inercia:
 > 
-> ```mermaid
-> pie title Energía Cinética en Rodadura
->    "Esfera: 71% traslación, 29% rotación" : 71
->    "Cilindro: 67% traslación, 33% rotación" : 67
->    "Aro: 50% traslación, 50% rotación" : 50
-> ```
+> ![[Diagramas/Rodadura_03.svg]]
 >
 
 > [!note] 📊 Comparación de Velocidades Finales
@@ -221,36 +190,7 @@ dg-publish: true
 
 > [!info] 🔗 Conexiones Conceptuales
 > 
-> ```mermaid
-> mindmap
->  root((🎯 Rodadura))
->    🔧 Método Dinámico
->      ⚖️ Segunda Ley Newton
->        Lineal
->        Rotacional
->      🔄 Análisis de Fuerzas
->        Fricción estática
->        Peso
->        Normales
->      📊 Resultados
->        Aceleraciones
->        Fuerzas
->    ⚡ Método Energético
->      🔋 Conservación Energía
->        Cinética traslacional
->        Cinética rotacional
->        Potencial gravitatoria
->      📈 Comparaciones
->        Diferentes formas
->        Velocidades finales
->      📊 Resultados
->        Velocidades
->        Alturas
->    🔗 Conceptos Comunes
->      Condición rodadura
->      Momento de inercia
->      Fricción estática
-> ```
+> ![[Diagramas/Rodadura_04.svg]]
 
 ---
 

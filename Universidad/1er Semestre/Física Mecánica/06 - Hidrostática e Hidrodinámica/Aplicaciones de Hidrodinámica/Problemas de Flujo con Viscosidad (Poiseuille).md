@@ -86,22 +86,7 @@ dg-publish: true
 
 > [!success] 🔗 Resistencia Hidráulica
 > 
-> ```mermaid
-> graph TD
->     A[Flujo Viscoso] --> B[Resistencia Lineal]
->     A --> C[Resistencia Local]
->     B --> D[Fricción en Paredes]
->     C --> E[Cambios de Dirección]
->     C --> F[Cambios de Sección]
->     D --> G[Factor de Fricción f]
->     E --> H[Coeficiente K]
->     F --> I[Pérdidas Menores]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style G fill:#fce4ec
-> ```
+> ![[Diagramas/Problemas_de_Flujo_con_Viscosidad_(Poiseuille)_01.svg]]
 >
 
 > [!note] **Analogía con Circuitos Eléctricos** ⚡

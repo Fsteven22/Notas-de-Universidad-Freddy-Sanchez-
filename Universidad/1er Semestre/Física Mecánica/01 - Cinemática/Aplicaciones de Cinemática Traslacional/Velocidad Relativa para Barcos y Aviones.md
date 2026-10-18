@@ -22,14 +22,7 @@ dg-publish: true
 
 > [!tip] 🌪️ **Aviones con Viento** **Situación:** Aeronave volando en un medio (aire) que se mueve con respecto a tierra
 > 
-> ```mermaid
-> graph LR
->     subgraph "Vuelo con Viento"
->         A[Velocidad del Avión<br/>respecto al aire] -->|vₐₐ| B[Velocidad resultante<br/>respecto a tierra]
->         C[Velocidad del Viento<br/>respecto a tierra] -->|vw| B
->     end
->     style B fill:#87CEEB
-> ```
+> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_01.svg]]
 > 
 > **Casos típicos:**
 > 
@@ -40,14 +33,7 @@ dg-publish: true
 
 > [!warning] 🚢 **Barcos en Corrientes** **Situación:** Embarcación navegando en agua que fluye respecto a la costa
 > 
-> ```mermaid
-> graph TB
->     subgraph "Navegación con Corriente"
->         A[Velocidad del Barco<br/>respecto al agua] -->|vba| B[Velocidad resultante<br/>respecto a tierra]
->         C[Velocidad de la Corriente<br/>respecto a tierra] -->|vc| B
->     end
->     style B fill:#98FB98
-> ```
+> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_02.svg]]
 > 
 > **Casos típicos:**
 > 
@@ -140,13 +126,7 @@ dg-publish: true
 
 > [!tip] 🧭 **Problema del Rumbo de Compensación** **Situación:** Determinar qué rumbo debe seguir un vehículo para alcanzar un destino específico cuando hay viento/corriente lateral.
 > 
-> ```mermaid
-> graph TB
->     A[Origen] --> B[Destino Deseado]
->     A --> C[Rumbo Aparente<br/>con deriva]
->     A --> D[Rumbo Real<br/>compensado]
->     style D fill:#FFD700
-> ```
+> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_03.svg]]
 > 
 > **Método:**
 > 
@@ -217,19 +197,7 @@ dg-publish: true
 
 > [!note] 📈 **Diagrama de Vectores de Velocidad**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Composición Vectorial"
->         A[Velocidad del Vehículo<br/>respecto al Medio] --> C[Velocidad Resultante<br/>respecto a Tierra]
->         B[Velocidad del Medio<br/>respecto a Tierra] --> C
->         C --> D{Magnitud y Dirección}
->     end
->     subgraph "Casos Especiales"
->         E[Paralelo: v_total = v_veh ± v_medio]
->         F["Perpendicular: v_total = √(v_veh² + v_medio²)"]
->         G[Ángulo θ: v_total requiere componentes]
->     end
-> ```
+> ![[Diagramas/Velocidad_Relativa_para_Barcos_y_Aviones_04.svg]]
 > 
 > **🎯 Interpretación del diagrama:**
 > 

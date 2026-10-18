@@ -1,0 +1,15 @@
+flowchart TD
+    A[🎲 Sistema de n Partículas] --> B[📊 Momentum Total<br/>P = Σp_i]
+    
+    C[💪 Fuerzas Internas] --> D[⚖️ Se cancelan en pares<br/>3ª Ley Newton]
+    E[🌍 Fuerzas Externas] --> F{¿Σ F_ext = 0?}
+    
+    F -->|Sí| G[✅ P se conserva]
+    F -->|No| H[❌ P cambia<br/>dP/dt = Σ F_ext]
+    
+    D --> I[🔄 No afectan P_total]
+    
+    style B fill:#ffeb3b
+    style D fill:#c8e6c9
+    style G fill:#4caf50
+    style H fill:#f44336

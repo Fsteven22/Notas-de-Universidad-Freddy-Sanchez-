@@ -31,17 +31,7 @@ dg-publish: true
 
 ### ⚡ Relaciones Energéticas
 
-```mermaid
-graph LR
-    A[Energía Total E] --> B[Energía Cinética K]
-    A --> C[Energía Potencial U]
-    B --> D["K = E - U"]
-    C --> E["F_x = -dU/dx"]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-```
+![[Diagramas/Diagramas_de_Energía_01.svg]]
 
 ---
 
@@ -63,20 +53,7 @@ graph LR
 
 ### 🎨 Elementos Visuales
 
-```mermaid
-graph TB
-    subgraph "📊 Diagrama Energía"
-        A[Eje Y: Energía E, U, K]
-        B[Eje X: Posición x]
-        C[Curva U de x: Energía Potencial]
-		D[Línea E: Energía Total horizontal]
-        E[Distancia K = E - U]
-    end
-    
-    style C fill:#ffeb3b
-    style D fill:#f44336
-    style E fill:#4caf50
-```
+![[Diagramas/Diagramas_de_Energía_02.svg]]
 
 ### 🔍 Regiones de Movimiento
 
@@ -98,30 +75,11 @@ graph TB
 > - Velocidad = 0 ($v = 0$)
 > - El objeto **invierte** su dirección de movimiento
 
-```mermaid
-graph LR
-    A[Objeto se acerca] --> B[Punto de Retorno<br/>v = 0, K = 0]
-    B --> C[Objeto se aleja<br/>Dirección opuesta]
-    
-    style B fill:#ff9800
-```
+![[Diagramas/Diagramas_de_Energía_03.svg]]
 
 ### ⚖️ Puntos de Equilibrio
 
-```mermaid
-flowchart TD
-    A[Puntos de Equilibrio<br/>F_x = 0] --> B[Equilibrio Estable]
-    A --> C[Equilibrio Inestable]
-    A --> D[Equilibrio Neutro]
-    
-    B --> E["Mínimos locales<br/>d²U/dx² > 0<br/>🏔️ Valles"]
-    C --> F["Máximos locales<br/>d²U/dx² < 0<br/>⛰️ Picos"]
-    D --> G["Regiones planas<br/>d²U/dx² = 0<br/>🏞️ Mesetas"]
-    
-    style B fill:#e8f5e8
-    style C fill:#ffebee
-    style D fill:#fff3e0
-```
+![[Diagramas/Diagramas_de_Energía_04.svg]]
 
 #### 🏔️ Equilibrio Estable
 
@@ -154,22 +112,7 @@ flowchart TD
 
 ## 🔗 Conexiones Conceptuales
 
-```mermaid
-mindmap
-  root((📊 Diagramas<br/>Energía))
-    🔄 Trabajo y Fuerzas Conservativas
-      Energía potencial definida
-      Trabajo independiente del camino
-    ⚖️ Conservación Energía
-      Línea horizontal E
-      Principio fundamental
-    🌊 Movimiento Oscilatorio
-      Análisis de oscilaciones
-      Período y amplitud
-    🎯 Dinámica de Partículas
-      Predicción trayectorias
-      Análisis de fuerzas
-```
+![[Diagramas/Diagramas_de_Energía_05.svg]]
 
 ---
 
@@ -260,5 +203,4 @@ mindmap
 > - Movimiento limitado a regiones donde $E ≥ U$
 > - Puntos de retorno donde $E = U$
 > - Equilibrio estable en valles, inestable en picos
-
 

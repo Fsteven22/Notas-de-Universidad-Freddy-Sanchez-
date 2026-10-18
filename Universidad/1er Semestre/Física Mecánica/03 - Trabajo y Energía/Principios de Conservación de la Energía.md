@@ -13,22 +13,7 @@ dg-publish: true
 
 > [!info] Enfoque Principal
 > 
-> ```mermaid
-> mindmap
->   root)⚡ Conservación Energía(
->     🏃 Energía Cinética
->       Movimiento
->       Velocidad
->     📍 Energía Potencial
->       Posición
->       Fuerzas conservativas
->     🔄 Conservación
->       Intercambio K ↔ U
->       Energía total constante
->     🔨 Trabajo
->       Transferencia energía
->       Fuerzas no conservativas
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_01.svg]]
 
 ---
 
@@ -60,12 +45,7 @@ dg-publish: true
 >
 > [!abstract] Explicación Teórica
 > 
-> ```mermaid
-> flowchart LR
->     A[🔨 Trabajo Neto] --> B[📈 Cambio en K]
->     B --> C[⚡ Nueva velocidad]
->     A -.-> D[Reformulación de<br/>Segunda Ley Newton]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_02.svg]]
 > 
 > Este teorema reformula la Segunda Ley de Newton: **el trabajo total realizado por todas las fuerzas sobre una partícula es igual al cambio en su energía cinética**.
 >
@@ -86,27 +66,14 @@ dg-publish: true
 
 > [!tip] Interpretación Gráfica
 > 
-> ```mermaid
-> graph TD
->     A["📊 Gráfica F vs x"] --> B["📐 Área bajo curva"]
->     B --> C["= Trabajo realizado"]
->     C --> D["= Cambio en energía cinética"]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_03.svg]]
 >
 
 > [!example] Ejemplo: Bala que se Detiene 💥
 > 
 > **🎯 Problema**: Bala de 0.01 kg a 300 m/s se detiene en 0.06 m en un tronco.
 > 
-> ```mermaid
-> sequenceDiagram
->     participant B as 💥 Bala (v₀ = 300 m/s)
->     participant T as 🌳 Tronco
->     participant F as 🛑 Reposo (v = 0)
->     B->>T: Penetra 0.06 m
->     T->>F: Fuerza de resistencia
->     Note over B,F: W_neto = ΔK
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_04.svg]]
 > 
 > **🔧 Solución**: $$W_{neto} = \Delta K = K_{final} - K_{inicial}$$ $$-F_{prom} \cdot d = 0 - \frac{1}{2}mv_{inicial}^2$$ $$F_{prom} = \frac{1}{2}\frac{mv_{inicial}^2}{d} = \frac{1}{2}\frac{(0.01)(300)^2}{0.06} = 7500 \text{ N}$$
 >
@@ -121,16 +88,7 @@ dg-publish: true
 >
 > [!abstract] Explicación Teórica
 > 
-> ```mermaid
-> graph TD
->     A[🔋 Fuerzas] --> B{🛤️ ¿Depende de trayectoria?}
->     B -->|NO| C[✅ CONSERVATIVAS]
->     B -->|SÍ| D[❌ NO CONSERVATIVAS]
->     C --> E[🌍 Gravedad<br/>🌀 Resorte<br/>⚡ Eléctrica]
->     D --> F[🔥 Fricción<br/>💨 Resistencia aire<br/>🌊 Viscosidad]
->     C --> G[📍 Definen energía potencial U]
->     D --> H[🔥 Disipan energía como calor]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_05.svg]]
 >
 
 > [!tip] Fuerzas Conservativas ✅
@@ -151,25 +109,13 @@ dg-publish: true
 > 
 > **🌍 Gravedad (Conservativa)**
 > 
-> ```mermaid
-> graph TD
->     A["🏔️ Altura 10m"] --> B["🏁 Suelo"]
->     A -.-> C["Trayectoria 1:<br/>Caída libre"]
->     A -.-> D["Trayectoria 2:<br/>Zigzag"]
->     C --> E["W = mgh"]
->     D --> E
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_06.svg]]
 > 
 > **Resultado**: Mismo trabajo independiente del camino
 > 
 > **🔥 Fricción (No Conservativa)**
 > 
-> ```mermaid
-> graph LR
->     A["📦 Punto A"] --> B["📦 Punto B"]
->     A -.-> C["Camino corto<br/>W_fricción pequeño"]
->     A -.-> D["Camino largo<br/>W_fricción grande"]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_07.svg]]
 > 
 > **Resultado**: Más distancia = más trabajo disipado
 >
@@ -188,13 +134,7 @@ dg-publish: true
 >
 > [!abstract] Explicación Teórica
 > 
-> ```mermaid
-> flowchart TD
->     A[📍 Energía Potencial] --> B[💤 Energía "almacenada"]
->     B --> C[📍 Depende de posición/configuración]
->     C --> D[🔄 Puede convertirse en cinética]
->     D --> E[⚡ Cuando objeto se mueve]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_08.svg]]
 > 
 > **Definición**: Energía que posee un objeto debido a su posición o configuración respecto a una fuerza conservativa. Es energía "almacenada" con potencial de convertirse en otras formas.
 >
@@ -203,31 +143,18 @@ dg-publish: true
 > 
 > **🏊 Clavadista (Gravitatoria)**
 > 
-> ```mermaid
-> graph TD
->     A["🏊 Trampolín alto<br/>U_g = mgh<br/>K = 0"] --> B["🏊 Cayendo<br/>U_g disminuye<br/>K aumenta"]
->     B --> C["💦 Al agua<br/>U_g = 0<br/>K = máxima"]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_09.svg]]
 > 
 > **🎯 Resortera (Elástica)**
 > 
-> ```mermaid
-> graph LR
->     A["🎯 Resortera estirada<br/>U_e = ½kx²<br/>K = 0"] --> B["🎯 Liberas<br/>U_e disminuye<br/>K aumenta"]
->     B --> C["🪨 Piedra volando<br/>U_e = 0<br/>K = máxima"]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_10.svg]]
 >
 
 > [!tip] Interpretación Gráfica
 > 
 > **📊 Gráfica U vs x**
 > 
-> ```mermaid
-> graph TD
->     A["📈 Gráfica U vs posición"] --> B["📐 Pendiente = -F"]
->     B --> C["🎯 Mínimos = equilibrio estable"]
->     B --> D["⚡ Máximos = equilibrio inestable"]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_11.svg]]
 > 
 > **🎯 Puntos Clave**:
 > 
@@ -249,41 +176,21 @@ dg-publish: true
 >
 > [!abstract] Explicación Teórica
 > 
-> ```mermaid
-> flowchart LR
->     A[🏃 Energía Cinética K] --> B[🔄 Intercambio]
->     C[📍 Energía Potencial U] --> B
->     B --> D[⚖️ Suma total constante<br/>E_mec = K + U]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_12.svg]]
 > 
 > **Principio Fundamental**: En sistemas donde solo actúan fuerzas conservativas, la energía mecánica total se conserva. La energía se transforma entre cinética y potencial, pero su suma permanece constante.
 >
 
 > [!example] Aplicación: Pelota que Cae ⚽
 > 
-> ```mermaid
-> graph TD
->     A["⚽ Altura máxima<br/>K = 0<br/>U = máxima<br/>E = U"] --> B["⚽ Cayendo<br/>U disminuye<br/>K aumenta<br/>E = K + U"]
->     B --> C["⚽ Suelo<br/>U = 0<br/>K = máxima<br/>E = K"]
->     A -.-> D["E_total = constante"]
->     B -.-> D
->     C -.-> D
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_13.svg]]
 >
 
 > [!example] Ejemplo Detallado: Resbaladilla Sin Fricción 🛝
 > 
 > **🎯 Problema**: Objeto masa $m$ se suelta desde reposo a altura $h$. ¿Velocidad en la base?
 > 
-> ```mermaid
-> sequenceDiagram
->     participant I as 🏔️ Inicio (altura h)
->     participant F as 🏁 Final (altura 0)
->     I->>I: K₀ = 0, U₀ = mgh
->     I->>F: Conservación energía
->     F->>F: K_f = ½mv², U_f = 0
->     Note over I,F: mgh = ½mv²
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_14.svg]]
 > 
 > **🔧 Solución**: $$K_{inicial} + U_{inicial} = K_{final} + U_{final}$$ $$0 + mgh = \frac{1}{2}mv^2 + 0$$ $$v = \sqrt{2gh}$$
 > 
@@ -292,14 +199,7 @@ dg-publish: true
 
 > [!info] Casos Especiales
 > 
-> ```mermaid
-> graph TD
->     A[🔄 Conservación Energía] --> B{🤔 ¿Solo fuerzas conservativas?}
->     B -->|SÍ| C[✅ E_mec = constante<br/>Análisis simple]
->     B -->|NO| D[❌ E_mec cambia<br/>Usar principio general]
->     C --> E[🎢 Montaña rusa<br/>🎯 Péndulo<br/>🛝 Rampa lisa]
->     D --> F[🔥 Con fricción<br/>💨 Con resistencia<br/>🔨 Con trabajo externo]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_15.svg]]
 >
 
 > [!summary] Síntesis 🔑 **Concepto Clave**: En sistemas con solo fuerzas conservativas, la energía mecánica se conserva, intercambiándose continuamente entre energía cinética y potencial.
@@ -310,17 +210,7 @@ dg-publish: true
 
 > [!tip] Metodología de Resolución
 > 
-> ```mermaid
-> flowchart TD
->     A[📋 Identificar sistema] --> B[🔍 Clasificar fuerzas]
->     B --> C{🤔 ¿Solo conservativas?}
->     C -->|SÍ| D[⚖️ Usar conservación<br/>K₁ + U₁ = K₂ + U₂]
->     C -->|NO| E[⚡ Usar principio general<br/>W_ext = ΔE_total]
->     D --> F[📝 Definir estados inicial/final]
->     E --> F
->     F --> G[🧮 Aplicar ecuaciones]
->     G --> H[✅ Verificar resultado]
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_16.svg]]
 
 ---
 
@@ -328,22 +218,7 @@ dg-publish: true
 
 > [!abstract] Mapa Conceptual
 > 
-> ```mermaid
-> mindmap
->   root)⚡ Conservación Energía(
->     🔨 Trabajo-Energía K
->       Base teórica
->       W_neto = ΔK
->     🌟 Fuerzas Conservativas
->       Definen U
->       Independientes trayectoria
->     📍 Energías Potenciales
->       Gravitatoria: mgh
->       Elástica: ½kx²
->     🔄 Conservación E_mec
->       K + U = constante
->       Solo fuerzas conservativas
-> ```
+> ![[Diagramas/Principios_de_Conservación_de_la_Energía_17.svg]]
 
 ---
 

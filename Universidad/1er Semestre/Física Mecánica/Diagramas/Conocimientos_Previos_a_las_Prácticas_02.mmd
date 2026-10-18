@@ -1,0 +1,8 @@
+graph TD
+    A[Objeto y Cronometro] --> B[Identificar evento a medir]
+    B --> C[Realizar multiples mediciones del tiempo t_i]
+    C --> D[Calcular promedio: t_prom]
+    C --> E[Estimar incertidumbre: Delta_t]
+    D --> F[Aplicar cifras significativas y redondeo]
+    E --> F
+    F --> G["Reportar resultado: (t_prom +/- Delta_t) unidades"]

@@ -23,25 +23,7 @@ dg-publish: true
 > - **Magnitudes Fundamentales** → Definidas de forma independiente, no dependen de otras magnitudes (ej. longitud, tiempo, masa).  
 > - **Magnitudes Derivadas** → Se obtienen a partir de las fundamentales por medio de fórmulas (ej. velocidad, fuerza, energía).  
 > 
-> ```mermaid
-> graph TD
->     A[MAGNITUDES FÍSICAS] --> B[Fundamentales]
->     A --> C[Derivadas]
->     B --> B1[Longitud]
->     B --> B2[Masa]
->     B --> B3[Tiempo]
->     B --> B4[Corriente Eléctrica]
->     B --> B5[Temperatura]
->     B --> B6[Cantidad de Sustancia]
->     B --> B7[Intensidad Luminosa]
->     C --> C1[Velocidad]
->     C --> C2[Fuerza]
->     C --> C3[Energía]
->     C --> C4[Presión]
->     style A fill:#fef3c7,stroke:#000
->     style B fill:#d9f99d,stroke:#000
->     style C fill:#93c5fd,stroke:#000
-> ```
+> ![[Diagramas/Unidades_y_Magnitudes_Físicas_01.svg]]
 
 ---
 

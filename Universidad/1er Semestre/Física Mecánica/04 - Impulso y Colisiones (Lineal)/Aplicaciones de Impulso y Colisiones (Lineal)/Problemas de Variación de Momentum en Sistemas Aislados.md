@@ -72,20 +72,7 @@ dg-publish: true
 
 > [!success] 🔗 Relaciones Matemáticas Fundamentales
 > 
-> ```mermaid
-> graph TD
->     A[Sistema Aislado] -->|ΣF_ext = 0| B[Conservación de Momentum]
->     B --> C[Momentum Inicial = Momentum Final]
->     C --> D[m₁v₁ᵢ + m₂v₂ᵢ = m₁v₁f + m₂v₂f]
->     D --> E{Tipo de Colisión}
->     E -->|Elástica| F[Conserva K también]
->     E -->|Inelástica| G[No conserva K]
->     E -->|Perfectamente Inelástica| H[v₁f = v₂f]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_de_Variación_de_Momentum_en_Sistemas_Aislados_01.svg]]
 >
 
 > [!note] **Coeficiente de Restitución** 🔄

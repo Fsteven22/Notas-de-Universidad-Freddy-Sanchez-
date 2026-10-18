@@ -80,26 +80,7 @@ dg-publish: true
 
 > [!success] 🔗 Equilibrio Dinámico en Flujo
 > 
-> ```mermaid
-> graph TD
->     A[Objeto en Fluido en Movimiento] --> B[Fuerzas Estáticas]
->     A --> C[Fuerzas Dinámicas]
->     B --> D[Empuje Arquímedes]
->     B --> E[Peso Propio]
->     C --> F[Resistencia al Avance]
->     C --> G[Fuerza de Corriente]
->     D --> H[Equilibrio Vertical]
->     E --> H
->     F --> I[Equilibrio Horizontal]
->     G --> I
->     H --> J[Flotabilidad Neta]
->     I --> K[Velocidad Terminal]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style H fill:#e8f5e8
->     style I fill:#fce4ec
-> ```
+> ![[Diagramas/Problemas_de_Flotabilidad_y_Empuje_en_Fluidos_en_Movimiento_01.svg]]
 >
 
 > [!note] **Ecuaciones de Equilibrio** 📐

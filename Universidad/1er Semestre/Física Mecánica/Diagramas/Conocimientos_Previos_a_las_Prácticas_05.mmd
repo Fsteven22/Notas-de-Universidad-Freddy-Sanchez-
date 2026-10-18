@@ -1,0 +1,12 @@
+graph TD
+    A["Datos Medidos (tabla de x, y)"] --> B{"¿Qué tipo de relación buscas?"}
+    B --> B1["Directa / Lineal"]
+    B --> B2["Curva / No Lineal (ej. Potencia, Exponencial)"]
+    B1 --> C["Usar Papel Milimetrado"]
+    B2 --> D["Transformar datos (ej. logaritmos)"]
+    D --> D1["Usar Papel Logarítmico"]
+    C --> E["Plotear puntos con barras de error"]
+    D1 --> E
+    E --> F["Dibujar línea de mejor ajuste"]
+    F --> G["Calcular pendiente e intersección"]
+    G --> H["Interpretar resultados físicos"]

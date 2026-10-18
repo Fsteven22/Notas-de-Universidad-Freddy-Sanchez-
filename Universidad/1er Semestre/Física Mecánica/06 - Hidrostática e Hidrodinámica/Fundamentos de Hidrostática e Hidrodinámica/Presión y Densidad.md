@@ -129,22 +129,7 @@ dg-publish: true
 > - g = aceleración gravitacional (9.8 m/s²)
 > - h = profundidad
 
-```mermaid
-graph TD
-    A[🌊 Superficie del Fluido] -->|P₀| B[Presión Atmosférica]
-    A -->|h₁| C[🔵 Punto 1]
-    A -->|h₂| D[🔵 Punto 2]
-    A -->|h₃| E[🔵 Punto 3]
-    
-    C -->|P₁ = P₀ + ρgh₁| F[Presión menor]
-    D -->|P₂ = P₀ + ρgh₂| G[Presión media]
-    E -->|P₃ = P₀ + ρgh₃| H[Presión mayor]
-    
-    style A fill:#87CEEB
-    style C fill:#4169E1
-    style D fill:#0000FF
-    style E fill:#000080
-```
+![[Diagramas/Presión_y_Densidad_01.svg]]
 
 ## Principios Fundamentales 🏗️
 
@@ -161,17 +146,7 @@ graph TD
 
 ## Relación entre Presión y Densidad 🔗
 
-```mermaid
-flowchart LR
-    A[Mayor Densidad ρ] -->|Causa| B[Mayor Presión P]
-    C[Mayor Profundidad h] -->|Causa| B
-    B -->|Resulta en| D[Mayor Fuerza F]
-    
-    style A fill:#FF6B6B
-    style B fill:#4ECDC4
-    style C fill:#45B7D1
-    style D fill:#96CEB4
-```
+![[Diagramas/Presión_y_Densidad_02.svg]]
 
 > [!example] 🧮 **Ejemplo Práctico** **Problema**: Calcular la presión en el fondo de una piscina de 3 m de profundidad.
 > 

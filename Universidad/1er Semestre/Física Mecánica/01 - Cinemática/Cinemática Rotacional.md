@@ -85,21 +85,7 @@ dg-publish: true
 
 > [!info] 🔗 **Correspondencias Fundamentales** Para un punto a distancia **r** del eje de rotación:
 > 
-> ```mermaid
-> graph TD
->    A[Variables Angulares] --> B[Variables Lineales]
->    C[θ posición angular] --> D[s = rθ arco recorrido]
->    E[ω velocidad angular] --> F[v = rω velocidad tangencial]
->    G[α aceleración angular] --> H[at = rα aceleración tangencial]
->    style A fill:#e1f5fe
->    style B fill:#f3e5f5
->    style C fill:#fff3e0
->    style D fill:#fff3e0
->    style E fill:#e8f5e8
->    style F fill:#e8f5e8
->    style G fill:#fce4ec
->    style H fill:#fce4ec
-> ```
+> ![[Diagramas/Cinemática_Rotacional_01.svg]]
 > 
 > **Importante:** También existe aceleración centrípeta: $a_c = \frac{v^2}{r} = \omega^2 r$
 

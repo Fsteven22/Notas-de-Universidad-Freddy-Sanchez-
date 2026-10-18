@@ -93,20 +93,7 @@ dg-publish: true
 
 > [!success] 🔗 Método de Lectura (Vernier 0.1 mm)
 > 
-> ```mermaid
-> graph TD
->     A[Realizar la Medición] --> B[Leer Escala Principal]
->     B --> C[Identificar el Cero del Vernier]
->     C --> D[Buscar Coincidencia en Vernier]
->     D --> E[Sumar: Principal + Vernier]
->     E --> F[Verificar y Registrar]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
-> ```
+> ![[Diagramas/Uso_del_Calibrador_de_Vernier_(Pie_de_Rey)_01.svg]]
 >
 
 > [!note] **Procedimiento de Lectura Paso a Paso** 📝

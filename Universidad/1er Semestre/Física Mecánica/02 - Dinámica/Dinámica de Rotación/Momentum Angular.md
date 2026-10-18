@@ -58,20 +58,7 @@ dg-publish: true
 
 > [!info] 🎯 Proceso de Conservación
 > 
-> ```mermaid
-> flowchart TD
->    A[🌟 Sistema Rotacional] --> B{🔍 ¿Torque externo neto = 0?}
->    B -->|Sí| C[✅ Momento Angular se Conserva]
->    B -->|No| D[❌ Momento Angular cambia]
->    C --> E[📐 L_inicial = L_final]
->    D --> F[⚖️ Aplicar Segunda Ley Newton]
->    E --> G[🔄 I₁ω₁ = I₂ω₂]
->    F --> H[📈 τ = dL/dt]
->    style A fill:#e1f5fe
->    style C fill:#c8e6c9
->    style D fill:#ffcdd2
->    style G fill:#fff3e0
-> ```
+> ![[Diagramas/Momentum_Angular_01.svg]]
 
 ---
 
@@ -122,16 +109,7 @@ dg-publish: true
 
 > [!info] 📊 Gráfica: Momento Angular vs Tiempo
 > 
-> ```mermaid
-> graph LR
->    A[📈 Gráfica L vs t] --> B{Forma de la curva}
->    B -->|Línea horizontal| C[✅ τ = 0, L conservado]
->    B -->|Pendiente constante| D[⚖️ τ constante]
->    B -->|Curva| E[📈 τ variable]
->    style C fill:#c8e6c9
->    style D fill:#fff3e0
->    style E fill:#ffcdd2
-> ```
+> ![[Diagramas/Momentum_Angular_02.svg]]
 > 
 > **Interpretación:** La pendiente de $L$ vs $t$ representa el torque neto externo.
 
@@ -228,29 +206,7 @@ dg-publish: true
 
 > [!info] 🌐 Red de Conceptos
 > 
-> ```mermaid
-> mindmap
->  root((🌟 Conservación Momento Angular))
->    🔄 Dinámica Rotacional
->      Momento de Inercia
->      Velocidad Angular  
->      Torque
->      Segunda Ley Newton
->    ➡️ Dinámica Lineal
->      Momentum Lineal
->      Conservación Momentum
->      Impulso
->      Analogías
->    ⚡ Energía
->      Energía Cinética Rotacional
->      No se conserva energía
->      Trabajo realizado
->    🌍 Aplicaciones
->      Patinaje artístico
->      Clavados
->      Astronomía
->      Giroscopios
-> ```
+> ![[Diagramas/Momentum_Angular_03.svg]]
 >
 
 > [!tip] 🎯 Estrategias de Resolución
@@ -336,17 +292,7 @@ dg-publish: true
 > 
 > Al integrar: $\int \vec{\tau} dt = \Delta \vec{L}$
 
-```mermaid
-graph TD
-    A[Torque Neto τ] -->|Aplicado durante Δt| B[Impulso Angular Jτ]
-    B --> C[Cambio en Momento Angular ΔL]
-    C --> D[Nueva Velocidad Angular ωf]
-    
-    style A fill:#ff9999
-    style B fill:#99ccff
-    style C fill:#99ff99
-    style D fill:#ffcc99
-```
+![[Diagramas/Momentum_Angular_04.svg]]
 
 ### Aplicaciones Prácticas 🔧
 
@@ -372,12 +318,7 @@ graph TD
 > - Útil para torques variables en el tiempo
 > - Aplicación directa en motores eléctricos
 
-```mermaid
-graph LR
-    A[Área bajo curva τ-t] --> B[Impulso Angular Jτ]
-    B --> C[Cambio en L]
-    C --> D[Velocidad final ωf]
-```
+![[Diagramas/Momentum_Angular_05.svg]]
 
 ### Ejemplos Resueltos 📝
 

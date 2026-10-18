@@ -34,24 +34,7 @@ dg-publish: true
 > 
 > ### Diagrama de Fuerzas
 > 
-> ```mermaid
-> graph TB
->     A[Objeto Sumergido] --> B[Peso Real W↓<br/>m × g]
->     A --> C[Fuerza de Flotación F↑<br/>ρ_fluido × V × g]
->     D[Resultado Neto] --> E[Peso Aparente<br/>W_aparente = W_real - F_flotación]
->     B --> D
->     C --> D
->     F[En el Aire] --> G[W_aparente ≈ W_real<br/>Flotación despreciable]
->     H[En el Agua] --> I[W_aparente < W_real<br/>Flotación significativa]
->     J[Flotando] --> K[W_aparente = 0<br/>Flotación = Peso real]
->     style A fill:#e1f5fe
->     style B fill:#ffcdd2
->     style C fill:#c8e6c9
->     style E fill:#fff3e0
->     style G fill:#f3e5f5
->     style I fill:#e0f2f1
->     style K fill:#fce4ec
-> ```
+> ![[Diagramas/Peso_Real_vs_Peso_Aparente_01.svg]]
 >
 
 > [!tip] Casos y Situaciones 🔬
@@ -68,15 +51,7 @@ dg-publish: true
 > 
 > ### Grados de Inmersión
 > 
-> ```mermaid
-> graph LR
->     A[Totalmente Sumergido] --> B[W_ap = W_real - ρ_f×V_total×g]
->     C[Parcialmente Sumergido] --> D[W_ap = W_real - ρ_f×V_sumergido×g]
->     E[En Equilibrio Flotando] --> F[W_ap = 0<br/>W_real = F_flotación]
->     style A fill:#e1f5fe
->     style C fill:#fff3e0
->     style E fill:#e8f5e8
-> ```
+> ![[Diagramas/Peso_Real_vs_Peso_Aparente_02.svg]]
 >
 
 > [!example] Ejemplos Prácticos y Cálculos 🧮
@@ -137,26 +112,7 @@ dg-publish: true
 > 
 > ### En Ciencias e Investigación
 > 
-> ```mermaid
-> mindmap
->   root((Aplicaciones))
->     Geología
->       Clasificación de minerales
->       Análisis de sedimentos
->       Estudios de suelos
->     Biología Marina
->       Adaptaciones de organismos
->       Flotabilidad de peces
->       Migración vertical
->     Ingeniería
->       Sistemas de flotación
->       Separadores industriales
->       Control de procesos
->     Medicina
->       Densitometría ósea
->       Análisis de tejidos
->       Implantes biomédicos
-> ```
+> ![[Diagramas/Peso_Real_vs_Peso_Aparente_03.svg]]
 >
 
 > [!warning] Factores que Afectan la Medición ⚠️

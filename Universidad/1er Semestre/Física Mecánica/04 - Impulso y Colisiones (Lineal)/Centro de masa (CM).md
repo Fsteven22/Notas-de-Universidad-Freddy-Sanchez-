@@ -56,19 +56,7 @@ dg-publish: true
 
 > [!abstract] 📊 Mapa de Relaciones
 > 
-> ```mermaid
-> graph TD
->    A[Sistema de Partículas] --> B[Cálculo del Centro de Masa]
->    B --> C[Posición: r_CM = Σm_i·r_i / M_total]
->    B --> D[Velocidad: v_CM = P_total / M_total]
->    B --> E[Aceleración: a_CM = ΣF_ext / M_total]
->    F[Fuerzas Externas] --> E
->    G[Fuerzas Internas] -.-> H[No afectan al CM]
->    C --> I[Simplificación del Sistema]
->    D --> I
->    E --> I
->    I --> J[Análisis como Partícula Única]
-> ```
+> ![[Diagramas/Centro_de_masa_(CM)_01.svg]]
 
 ---
 
@@ -93,16 +81,7 @@ dg-publish: true
 
 > [!info] 🛠️ Metodología de Solución
 > 
-> ```mermaid
-> flowchart LR
->    A[Identificar Partículas] --> B[Determinar Masas m_i]
->    B --> C[Localizar Posiciones r_i]
->    C --> D[Calcular Masa Total M]
->    D --> E[Aplicar Fórmula del CM]
->    E --> F[Obtener r_CM]
->    G[Si se requiere] --> H[Calcular v_CM]
->    H --> I[Calcular a_CM]
-> ```
+> ![[Diagramas/Centro_de_masa_(CM)_02.svg]]
 
 ---
 

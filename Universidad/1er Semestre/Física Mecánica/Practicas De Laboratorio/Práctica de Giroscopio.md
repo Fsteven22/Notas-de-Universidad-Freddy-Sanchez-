@@ -48,32 +48,7 @@ dg-publish: true
 > - I_G = momento de inercia del giroscopio
 > - ω_G = velocidad angular de giro del disco
 
-```mermaid
-flowchart TD
-    A[Disco Giratorio ωG] --> B[Momento Angular L = IGωG]
-    B --> C[Torque Aplicado τ = mgr]
-    C --> D[Precesión Ω = τ/L]
-    D --> E[Semicircunferencia π rad]
-    E --> F[Tiempo de Precesión T]
-    F --> G[Velocidad Precesión Ω = π/T]
-    
-    H[Mediciones] --> I[Tiempo Giro Inicial]
-    H --> J[Tiempo Precesión ½ vuelta]
-    H --> K[Tiempo Giro Final]
-    
-    I --> L[ωG inicial = 2π/Ti]
-    K --> M[ωG final = 2π/Tf]
-    L --> N[ωG promedio]
-    M --> N
-    
-    G --> O[Momento Inercia IG = mgr/(Ω·ωG)]
-    N --> O
-    
-    style A fill:#e1f5fe
-    style D fill:#f3e5f5
-    style O fill:#e8f5e8
-    style H fill:#fff3e0
-```
+![[Diagramas/Práctica_de_Giroscopio_01.svg]]
 
 ## 🛠️ Materiales y Equipos
 
@@ -149,17 +124,7 @@ flowchart TD
 > - Distancia: ±0.05 cm
 > - Masa: ±0.01 g
 
-```mermaid
-graph LR
-    A[Datos Experimentales] --> B[Cálculo Ωₚ]
-    B --> C[Comparación Teórica]
-    C --> D[Análisis de Error]
-    D --> E[Gráfica Ωₚ vs 1/ω]
-    E --> F[Validación Modelo]
-    
-    style A fill:#fff3e0
-    style F fill:#e8f5e8
-```
+![[Diagramas/Práctica_de_Giroscopio_02.svg]]
 
 ## 🔍 Fenómenos Observados
 

@@ -76,21 +76,7 @@ dg-publish: true
 
 > [!success] 🔗 Estrategia de Análisis
 > 
-> ```mermaid
-> graph TD
->     A[Problema de Equilibrio] --> B[Identificar el Cuerpo]
->     B --> C[Dibujar DCL]
->     C --> D[Elegir Sistema de Coordenadas]
->     D --> E[Elegir Punto de Referencia para Torques]
->     E --> F[Aplicar ΣF = 0]
->     F --> G[Aplicar Στ = 0]
->     G --> H[Resolver Sistema de Ecuaciones]
->     H --> I[Verificar Resultados]
->     style A fill:#e1f5fe
->     style C fill:#f3e5f5
->     style F fill:#fff3e0
->     style G fill:#e8f5e8
-> ```
+> ![[Diagramas/Problemas_de_Equilibrio_Traslacional_y_Rotacional_01.svg]]
 >
 
 > [!note] **Tipos de Apoyos y Reacciones** 🔧

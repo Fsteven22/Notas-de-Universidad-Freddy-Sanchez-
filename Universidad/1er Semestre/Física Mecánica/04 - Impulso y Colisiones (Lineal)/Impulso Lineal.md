@@ -33,22 +33,7 @@ dg-publish: true
 
 ### 🔗 Relaciones Conceptuales
 
-```mermaid
-graph LR
-    A[⚡ Fuerza F] --> B[🔄 Impulso J]
-    C[⏱️ Tiempo Δt] --> B
-    B --> D[📈 Cambio Momentum Δp]
-    D --> E[🏃 Cambio Velocidad Δv]
-    
-    F[📊 Gráfica F vs t] --> G[📐 Área bajo curva]
-    G --> B
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-    style E fill:#c8e6c9
-```
+![[Diagramas/Impulso_Lineal_01.svg]]
 
 ---
 
@@ -78,23 +63,7 @@ graph LR
 
 ### 📊 Análisis de Gráfica Fuerza vs Tiempo
 
-```mermaid
-graph TB
-    subgraph "📈 Interpretación Visual"
-        A[📊 Eje Y: Fuerza F]
-        B[📊 Eje X: Tiempo t]
-        C[🟨 Área = Impulso J]
-        D[📏 Altura promedio = Fprom]
-        E[📐 Base = Δt]
-    end
-    
-    F[💡 Fuerza variable] --> G[🔍 Usar integración]
-    H[💡 Fuerza constante] --> I[🧮 Usar multiplicación]
-    
-    style C fill:#ffeb3b
-    style G fill:#f44336
-    style I fill:#4caf50
-```
+![[Diagramas/Impulso_Lineal_02.svg]]
 
 > [!example] 🔍 Casos Prácticos
 > 
@@ -119,23 +88,7 @@ graph TB
 
 ### 🎯 Teorema Impulso-Momentum Explicado
 
-```mermaid
-flowchart TD
-    A[🔴 Fuerza Aplicada F] --> B[⏰ Durante Tiempo Δt]
-    B --> C[⚡ Genera Impulso J = F·Δt]
-    C --> D[📈 Cambia Momentum Δp = J]
-    D --> E[🏃 Modifica Velocidad Δv = Δp/m]
-    
-    F[🏛️ Segunda Ley Newton] --> G[F = ma = m Δv/Δt]
-    G --> H[📐 Multiplicar por Δt]
-    H --> I[⚡ F·Δt = m·Δv]
-    I --> C
-    
-    style A fill:#e3f2fd
-    style C fill:#fff3e0
-    style E fill:#e8f5e8
-    style I fill:#c8e6c9
-```
+![[Diagramas/Impulso_Lineal_03.svg]]
 
 > [!info] 🔗 Conexión con Newton El teorema de impulso es una **reformulación integral** de la Segunda Ley:
 > 
@@ -157,22 +110,7 @@ flowchart TD
 > - Fuerza reducida: F = J/Δt (↑tiempo → ↓fuerza)
 > - Resultado: Menor daño a ocupantes
 
-```mermaid
-graph TB
-    subgraph "❌ Colisión Rígida"
-        A1[⏱️ Δt muy pequeño] --> B1[💥 F muy grande] --> C1[🩸 Daño severo]
-    end
-    
-    subgraph "✅ Con Sistemas Seguridad"
-        A2[⏱️ Δt aumentado] --> B2[💨 F reducida] --> C2[🛡️ Daño mínimo]
-    end
-    
-    D[🚗 Airbags, zonas deformación] --> A2
-    
-    style C1 fill:#ffcdd2
-    style C2 fill:#c8e6c9
-    style D fill:#e1f5fe
-```
+![[Diagramas/Impulso_Lineal_04.svg]]
 
 ### ⚾ Aplicaciones Deportivas
 
@@ -325,4 +263,3 @@ graph TB
 ---
 
 _Tags: #física #mecánica #impulso #momentum #dinámica #choques
-

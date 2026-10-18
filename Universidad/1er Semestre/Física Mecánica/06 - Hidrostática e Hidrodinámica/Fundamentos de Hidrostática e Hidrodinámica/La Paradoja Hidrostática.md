@@ -51,20 +51,7 @@ dg-publish: true
 > 
 > ### 🔍 Recipientes de Diferentes Formas
 > 
-> ```mermaid
-> graph TD
->     A["Paradoja Hidrostática"] --> B["Recipiente Cilíndrico"]
->     A --> C["Recipiente Cónico"]
->     A --> D["Recipiente con Estrechamiento"]
->     B --> B1["Volumen: πr²h<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
->     C --> C1["Volumen: ⅓πr²h<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
->     D --> D1["Volumen: Variable<br/>Presión fondo: ρgh<br/>Fuerza total: πr²ρgh"]
->     B1 --> E["MISMA PRESIÓN EN EL FONDO"]
->     C1 --> E
->     D1 --> E
->     style E fill:#96ceb4,stroke:#198754,color:#fff
->     style A fill:#45b7d1,stroke:#0d6efd,color:#fff
-> ```
+> ![[Diagramas/La_Paradoja_Hidrostática_01.svg]]
 
 ## Explicación Física
 
@@ -113,15 +100,7 @@ dg-publish: true
 > 
 > ### 🧪 Materiales y Procedimiento
 > 
-> ```mermaid
-> graph LR
->     A[Tubo en U] --> B[Recipiente Ancho]
->     A --> C[Recipiente Estrecho]
->     B --> D[Mismo Nivel]
->     C --> D
->     D --> E[PARADOJA DEMOSTRADA]
->     style E fill:#ffd93d,stroke:#fd7e14,color:#fff
-> ```
+> ![[Diagramas/La_Paradoja_Hidrostática_02.svg]]
 > 
 > **Observación**: A pesar de contener volúmenes muy diferentes, el agua alcanza el mismo nivel en ambos brazos.
 >

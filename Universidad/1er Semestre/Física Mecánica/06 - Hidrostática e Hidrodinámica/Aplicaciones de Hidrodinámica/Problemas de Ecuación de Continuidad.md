@@ -75,20 +75,7 @@ dg-publish: true
 
 > [!success] 🔗 Metodología de Resolución
 > 
-> ```mermaid
-> graph TD
->     A[Identificar Puntos de Interés] --> B[Definir Áreas Transversales]
->     B --> C[Aplicar Ecuación de Continuidad]
->     C --> D[Verificar Unidades]
->     D --> E[Interpretar Resultados]
->     E --> F[Validar Coherencia Física]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
->     style D fill:#e8f5e8
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
-> ```
+> ![[Diagramas/Problemas_de_Ecuación_de_Continuidad_01.svg]]
 >
 
 > [!note] **Fórmulas Clave** 📐
@@ -432,21 +419,7 @@ dg-publish: true
 >
 >[!success] 🔗 Funcionamiento del Tubo de Venturi
 > 
-> ```mermaid
-> graph LR
->     A[Entrada D₁] -->|Convergencia| B[Garganta D₂]
->     B -->|Divergencia| C[Salida D₁]
->     D[Alta Presión P₁] --> E[Baja Presión P₂]
->     E --> F[Recuperación P₃]
->     G[Baja Velocidad v₁] --> H[Alta Velocidad v₂]
->     H --> I[Velocidad v₁]
->     J[Medición ΔP] --> K[Cálculo de Q]
->     K --> L[Caudal Conocido]
->     style A fill:#e1f5fe
->     style B fill:#ffcdd2
->     style C fill:#e1f5fe
->     style J fill:#f3e5f5
-> ```
+> ![[Diagramas/Problemas_de_Ecuación_de_Continuidad_02.svg]]
 >
 
 > [!note] **Relaciones Fundamentales** 📊

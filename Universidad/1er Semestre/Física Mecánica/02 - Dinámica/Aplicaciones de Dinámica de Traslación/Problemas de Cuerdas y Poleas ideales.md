@@ -84,25 +84,7 @@ dg-publish: true
 
 > [!success] 🔗 Análisis de Sistemas de Partículas
 > 
-> ```mermaid
-> graph TD
->     A[Sistema de Partículas] --> B[Identificar Componentes]
->     A --> C[Establecer Restricciones]
->     A --> D[Analizar Fuerzas]
->     B --> E[Masas]
->     B --> F[Cuerdas]
->     B --> G[Poleas]
->     C --> H[Longitud de cuerda constante]
->     C --> I[Relación de aceleraciones]
->     C --> J[Dirección del movimiento]
->     D --> K[DCL para cada masa]
->     D --> L[Tensiones en cuerdas]
->     D --> M[Fuerzas externas]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#e8f5e8
->     style D fill:#fff3e0
-> ```
+> ![[Diagramas/Problemas_de_Cuerdas_y_Poleas_ideales_01.svg]]
 >
 
 > [!note] **Relaciones Cinemáticas Fundamentales** 📐

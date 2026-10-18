@@ -25,13 +25,7 @@ dg-publish: true
 
 > [!tip] 📏 **Movimiento por Tramos con Datos Completos** **Situación:** Se conocen velocidad y tiempo (o distancia) de cada tramo
 > 
-> ```mermaid
-> graph LR
->     A[Tramo 1<br/>v₁, t₁ → d₁] --> B[Tramo 2<br/>v₂, t₂ → d₂]
->     B --> C[Tramo 3<br/>v₃, t₃ → d₃]
->     C --> D[Totales<br/>Σdᵢ, Σtᵢ, v̄]
->     style D fill:#98FB98
-> ```
+> ![[Diagramas/Problemas_de_Tiempo-Distancia_01.svg]]
 > 
 > **Ejemplos típicos:**
 > 
@@ -206,21 +200,7 @@ dg-publish: true
 
 > [!note] 📈 **Gráficos y Diagramas Útiles**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Análisis por Tramos"
->         A[Tramo 1: d₁, v₁, t₁] --> B[Tramo 2: d₂, v₂, t₂]
->         B --> C[Tramo 3: d₃, v₃, t₃]
->         C --> D[Resultados Totales]
->     end
->     subgraph "Verificaciones"
->         E[Unidades Consistentes] --> F[Datos Completos]
->         F --> G[Cálculo de v̄]
->         G --> H{¿Es razonable?}
->     end
->     style D fill:#90EE90
->     style H fill:#FFB6C1
-> ```
+> ![[Diagramas/Problemas_de_Tiempo-Distancia_02.svg]]
 > 
 > ### Interpretación del Gráfico v-t
 > 

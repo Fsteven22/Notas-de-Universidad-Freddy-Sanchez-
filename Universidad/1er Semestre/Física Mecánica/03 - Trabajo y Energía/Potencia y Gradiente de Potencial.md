@@ -93,22 +93,7 @@ dg-publish: true
 
 ## 🔗 Conexiones con Otros Temas
 
-```mermaid
-graph TD
-    A[⚡ Potencia] --> B[📊 Trabajo]
-    A --> C[⏱️ Tiempo]
-    B --> D[🔋 Energía]
-    
-    E[📈 Gradiente de Potencial] --> F[💪 Fuerzas Conservativas]
-    E --> G[🎯 Energía Potencial]
-    F --> H[🌍 Gravedad]
-    F --> I[🔄 Fuerza Elástica]
-    
-    style A fill:#ffeb3b
-    style E fill:#4caf50
-    style D fill:#2196f3
-    style G fill:#ff9800
-```
+![[Diagramas/Potencia_y_Gradiente_de_Potencial_01.svg]]
 
 > [!tip] Relaciones Clave
 > 
@@ -128,11 +113,7 @@ graph TD
 > - Potencia constante → Rectángulo
 > - Potencia variable → Área irregular
 
-```mermaid
-graph LR
-    A[📊 P vs t] --> B[📐 Área bajo curva]
-    B --> C[💼 Trabajo total]
-```
+![[Diagramas/Potencia_y_Gradiente_de_Potencial_02.svg]]
 
 ### 📉 Gráfica Energía Potencial vs. Posición
 
@@ -177,19 +158,7 @@ graph LR
 > - **Gradiente**: $\vec{F} = -\nabla U$ (fuerza apunta hacia donde $U$ disminuye) 📈
 > - **Conexión**: Potencia describe la **velocidad** del cambio energético, gradiente describe el **mecanismo** del cambio
 
-```mermaid
-flowchart TB
-    A[🔋 Energía] --> B[💼 Trabajo]
-    A --> C[🎯 Energía Potencial]
-    B --> D[⚡ Potencia]
-    C --> E[📈 Gradiente]
-    D --> F[⏱️ Rapidez del cambio]
-    E --> G[🎯 Dirección del cambio]
-    
-    style A fill:#e1f5fe
-    style D fill:#fff3e0
-    style E fill:#e8f5e8
-```
+![[Diagramas/Potencia_y_Gradiente_de_Potencial_03.svg]]
 ## 🔗 Referencias y Enlaces
 
 > [!quote]  Notas Relacionadas

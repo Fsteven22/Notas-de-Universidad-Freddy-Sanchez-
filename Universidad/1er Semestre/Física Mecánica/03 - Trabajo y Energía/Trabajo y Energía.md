@@ -61,24 +61,12 @@ dg-publish: true
 
 > [!example] Signos del Trabajo según el Ángulo
 > 
-> ```mermaid
-> graph TD
->     A[🔨 Trabajo] --> B{📐 Ángulo θ}
->     B -->|θ < 90°| C[✅ W > 0<br/>Fuerza ayuda al movimiento<br/>⚡ Energía AL objeto]
->     B -->|θ = 90°| D[⚪ W = 0<br/>Fuerza perpendicular<br/>🚫 Sin transferencia]
->     B -->|θ > 90°| E[❌ W < 0<br/>Fuerza opone movimiento<br/>⚡ Energía DEL objeto]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_01.svg]]
 >
 
 > [!info] Interpretación Física
 > 
-> ```mermaid
-> flowchart LR
->     A[💪 Fuerza] --> B[📏 Componente Paralela]
->     B --> C[🔨 Realiza Trabajo]
->     A --> D[📐 Componente Perpendicular]
->     D --> E[🚫 No realiza trabajo]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_02.svg]]
 
 ---
 
@@ -86,26 +74,7 @@ dg-publish: true
 
 > [!example] Casos Comunes de Trabajo
 > 
-> ```mermaid
-> mindmap
->   root)🔨 Trabajo(
->     🔥 Fricción
->       Siempre W < 0
->       θ = 180°
->       Se opone al movimiento
->     🌍 Gravedad (horizontal)
->       W = 0
->       θ = 90°
->       Perpendicular
->     📐 Plano Inclinado
->       Subir: W < 0
->       Bajar: W > 0
->       Depende dirección
->     📏 Normal
->       Generalmente W = 0
->       θ = 90°
->       Perpendicular al movimiento
-> ```
+> ![[Diagramas/Trabajo_y_Energía_03.svg]]
 
 ---
 
@@ -113,15 +82,7 @@ dg-publish: true
 
 > [!abstract] Conexiones Importantes
 > 
-> ```mermaid
-> graph LR
->     A[🔨 Trabajo] --> B[⚡ Principio de Energía]
->     B --> C[W = mecanismo de<br/>transferencia de energía]
->     A --> D[🏃 Teorema W-K]
->     D --> E[W_neto = ΔK]
->     A --> F[📐 Segunda Ley Newton]
->     F --> G[Formulación alternativa<br/>para resolver problemas]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_04.svg]]
 
 ---
 
@@ -129,12 +90,7 @@ dg-publish: true
 
 > [!tip] Gráfica Fuerza vs. Desplazamiento
 > 
-> ```mermaid
-> graph TD
->     A["📈 Gráfica F vs x"] --> B["📐 Área bajo la curva"]
->     B --> C["= Trabajo realizado"]
->     C --> D[🌀 Especialmente útil para<br/>fuerzas variables como resortes]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_05.svg]]
 > 
 > **🎯 Casos Especiales:**
 > 
@@ -150,11 +106,7 @@ dg-publish: true
 > 
 > **🎯 Problema**: Pato jala trineo con 40 N a 20°, moviéndolo 50 m.
 > 
-> ```mermaid
-> graph LR
->     A["🦆 Pato<br/>F = 40 N<br/>θ = 20°"] --> B["🛷 Trineo<br/>d = 50 m"]
->     A -.-> C["W = Fd cos θ"]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_06.svg]]
 > 
 > **🔧 Solución**: $$W = Fd\cos\theta = (40 \text{ N})(50 \text{ m})\cos(20°) = 1879.38 \text{ J}$$
 > 
@@ -165,18 +117,7 @@ dg-publish: true
 > 
 > **🎯 Problema**: Bloque 10 kg empujado 2 m con F = 10 N a 30°, μ = 0.3
 > 
-> ```mermaid
-> sequenceDiagram
->     participant F as 💪 Fuerza Empuje
->     participant N as 📏 Normal  
->     participant G as 🌍 Gravedad
->     participant Fr as 🔥 Fricción
->     F->>F: W_F = Fd cos 30° = +17.32 J
->     N->>N: W_N = 0 J (θ = 90°)
->     G->>G: W_g = 0 J (θ = 90°)
->     Fr->>Fr: W_f = -55.86 J (θ = 180°)
->     Note over F,Fr: W_neto = -38.54 J
-> ```
+> ![[Diagramas/Trabajo_y_Energía_07.svg]]
 > 
 > **🔍 Análisis Detallado:**
 > 
@@ -200,17 +141,7 @@ dg-publish: true
 
 > [!tip] Metodología de Resolución
 > 
-> ```mermaid
-> flowchart TD
->     A[📋 Identificar todas las fuerzas] --> B[📐 Determinar ángulos con desplazamiento]
->     B --> C[🔢 Calcular trabajo individual]
->     C --> D[➕ Sumar todos los trabajos]
->     D --> E[📊 Interpretar resultado]
->     E --> F{W_neto}
->     F -->|> 0| G[⚡ Objeto acelera]
->     F -->|= 0| H[↔️ Velocidad constante]  
->     F -->|< 0| I[🛑 Objeto desacelera]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_08.svg]]
 
 ---
 
@@ -232,15 +163,7 @@ dg-publish: true
 
 > [!example] Casos Especiales
 > 
-> ```mermaid
-> graph TD
->     A[🔨 Casos Especiales] --> B[🔄 Movimiento Circular]
->     A --> C[🌀 Fuerzas Variables]
->     A --> D[🎢 Trayectorias Curvas]
->     B --> E[Fuerza centrípeta W = 0]
->     C --> F[Usar integración o gráficas]
->     D --> G[Solo importa desplazamiento neto]
-> ```
+> ![[Diagramas/Trabajo_y_Energía_09.svg]]
 
 ---
 

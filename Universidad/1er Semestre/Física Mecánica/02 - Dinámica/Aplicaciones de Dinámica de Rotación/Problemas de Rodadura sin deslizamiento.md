@@ -97,27 +97,7 @@ dg-publish: true
 
 > [!success] 🔗 Análisis de Fuerzas en Rodadura
 > 
-> ```mermaid
-> graph TD
->     A[Objeto Rodando] --> B[Fuerzas Externas]
->     A --> C[Fuerzas de Contacto]
->     A --> D[Movimiento Resultante]
->     B --> E[Peso Mg]
->     B --> F[Fuerzas Aplicadas]
->     B --> G[Componentes Gravitacionales]
->     C --> H[Normal N]
->     C --> I[Fricción Estática f_s]
->     D --> J[Traslación CM]
->     D --> K[Rotación sobre CM]
->     I --> L[Previene Deslizamiento]
->     I --> M[Genera Torque]
->     J --> N[v_cm = ωR]
->     K --> N
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#e8f5e8
->     style D fill:#fff3e0
-> ```
+> ![[Diagramas/Problemas_de_Rodadura_sin_deslizamiento_01.svg]]
 >
 
 > [!note] **Momentos de Inercia Comunes** 📐

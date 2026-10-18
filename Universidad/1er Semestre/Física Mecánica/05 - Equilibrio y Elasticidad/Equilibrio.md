@@ -41,19 +41,7 @@ dg-publish: true
 > 3. **Aplicar condiciones de equilibrio** ⚖️
 > 4. **Resolver ecuaciones** 🔢
 
-```mermaid
-flowchart TD
-    A[Sistema en Reposo] --> B{¿Cumple Condiciones?}
-    B -->|∑F = 0| C[Equilibrio Traslacional ✓]
-    B -->|∑τ = 0| D[Equilibrio Rotacional ✓]
-    C --> E[Equilibrio Estático]
-    D --> E
-    E --> F[Analizar Estabilidad]
-    
-    style A fill:#ff9999
-    style E fill:#99ccff
-    style F fill:#99ff99
-```
+![[Diagramas/Equilibrio_01.svg]]
 
 ## Tipos de Estabilidad 🎢
 
@@ -84,18 +72,7 @@ flowchart TD
 > - **Ejemplo:** Pelota sobre superficie plana
 > - **Aplicación:** Ruedas sobre terreno horizontal
 
-```mermaid
-graph TD
-    subgraph "Tipos de Equilibrio"
-        A[Estable 📈] --> A1[CG sube<br/>Regresa al origen]
-        B[Inestable 📉] --> B1[CG baja<br/>Se aleja del origen]
-        C[Neutro ➡️] --> C1[CG constante<br/>Nueva posición]
-    end
-    
-    style A fill:#99ff99
-    style B fill:#ff9999
-    style C fill:#ffcc99
-```
+![[Diagramas/Equilibrio_02.svg]]
 
 ### Análisis Energético 🔋
 
@@ -141,19 +118,7 @@ graph TD
 > 
 > **Equilibrio Traslacional:** $$F_1 + F_2 = m_1 g + m_2 g$$ $$F_1 = (100 + 1000) \times 9.8 - 2940 = 7840 \text{ N}$$
 
-```mermaid
-graph TD
-    A[Puente L, 100kg] --> B[Auto 1000kg a L/4]
-    A --> C[Pilar Izq: F₁]
-    A --> D[Pilar Der: F₂]
-    B --> E[Peso = 9800N]
-    A --> F[Peso puente = 980N a L/2]
-    
-    style C fill:#99ff99
-    style D fill:#99ff99
-    style E fill:#ff9999
-    style F fill:#ff9999
-```
+![[Diagramas/Equilibrio_03.svg]]
 
 ### Conexiones Conceptuales 🔗
 

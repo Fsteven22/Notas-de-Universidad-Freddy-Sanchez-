@@ -158,19 +158,7 @@ dg-publish: true
 
 > [!example] 🎯 **Cinemática Vectorial**
 > 
-> ```mermaid
-> graph TD
->    A[Vectores en Cinemática] --> B[Posición]
->    A --> C[Velocidad]
->    A --> D[Aceleración]
->    B --> E["\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}"]
->    C --> F["\vec{v} = d\vec{r}/dt"]
->    D --> G["\vec{a} = d\vec{v}/dt = d²\vec{r}/dt²"]
->    H[Movimiento Proyectil] --> I["\vec{v}₀ = v₀cos(θ)\hat{i} + v₀sin(θ)\hat{j}"]
->    H --> J["\vec{r}(t) = (v₀cos(θ)t)\hat{i} + (v₀sin(θ)t - ½gt²)\hat{j}"]
->    style A fill:#e1f5fe
->    style H fill:#f3e5f5
-> ```
+> ![[Diagramas/Vectores_01.svg]]
 >
 
 > [!example] ⚖️ **Dinámica Vectorial** **Segunda Ley de Newton:** $$\sum \vec{F} = m\vec{a}$$

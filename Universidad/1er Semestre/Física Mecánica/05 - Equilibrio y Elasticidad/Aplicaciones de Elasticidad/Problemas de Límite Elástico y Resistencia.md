@@ -91,20 +91,7 @@ dg-publish: true
 
 > [!success] 📊 Diagrama Esfuerzo-Deformación
 > 
-> ```mermaid
-> graph TD
->     A[σ = 0] -->|Carga| B[Región Elástica]
->     B -->|σ = σₑ| C[Límite Elástico]
->     C -->|Deformación Plástica| D[Región Plástica]
->     D -->|σ = σᵤ| E[Resistencia Última]
->     E -->|Fractura| F[Falla del Material]
->     style A fill:#e8f5e8
->     style B fill:#e1f5fe
->     style C fill:#fff3e0
->     style D fill:#fce4ec
->     style E fill:#ffebee
->     style F fill:#ffcdd2
-> ```
+> ![[Diagramas/Problemas_de_Límite_Elástico_y_Resistencia_01.svg]]
 >
 
 > [!note] **Relaciones Matemáticas** 📐

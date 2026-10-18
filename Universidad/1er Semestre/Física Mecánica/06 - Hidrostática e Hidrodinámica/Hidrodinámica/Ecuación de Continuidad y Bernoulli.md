@@ -43,19 +43,7 @@ dg-publish: true
 
 ## Diagrama de Continuidad
 
-```mermaid
-graph LR
-    A[Entrada<br/>A₁ = 10 cm²<br/>v₁ = 2 m/s] --> B[Tubería Variable]
-    B --> C[Estrangulamiento<br/>A₂ = 5 cm²<br/>v₂ = 4 m/s]
-    C --> D[Salida<br/>A₃ = 8 cm²<br/>v₃ = 2.5 m/s]
-    
-    E[Caudal Q = 20 cm³/s] --> F[Constante en todo<br/>el sistema]
-    
-    style A fill:#45b7d1,stroke:#0d6efd,color:#fff
-    style C fill:#ff6b6b,stroke:#d63384,color:#fff
-    style D fill:#96ceb4,stroke:#198754,color:#fff
-    style F fill:#ffd93d,stroke:#fd7e14,color:#000
-```
+![[Diagramas/Ecuación_de_Continuidad_y_Bernoulli_01.svg]]
 
 ## Ecuación de Bernoulli
 
@@ -113,19 +101,7 @@ graph LR
 > 
 > ### 🔄 Balance Energético
 > 
-> ```mermaid
-> flowchart TD
->     A[Energía Total del Fluido] --> B[Energía de Presión<br/>P]
->     A --> C[Energía Cinética<br/>½ρv²]
->     A --> D[Energía Potencial<br/>ρgh]
->     B --> E[Intercambio<br/>Energético]
->     C --> E
->     D --> E
->     E --> F[Conservación:<br/>E₁ = E₂]
->     style A fill:#4ecdc4,stroke:#20c997,color:#fff
->     style E fill:#ffd93d,stroke:#fd7e14,color:#000
->     style F fill:#96ceb4,stroke:#198754,color:#fff
-> ```
+> ![[Diagramas/Ecuación_de_Continuidad_y_Bernoulli_02.svg]]
 >
 
 > [!tip]+ Formas Alternativas de Bernoulli

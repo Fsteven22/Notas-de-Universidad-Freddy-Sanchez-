@@ -22,22 +22,7 @@ dg-publish: true
 
 > [!note] Fundamento Teórico y Tipos de Presión 📊
 > ### Clasificación de Presiones
-> ```mermaid
-> graph TB
->     A[Presión Absoluta<br/>P_abs = P_atm + P_man] --> B[Presión Atmosférica<br/>P_atm ≈ 101.325 kPa]
->     A --> C[Presión Manométrica<br/>P_man = P_abs - P_atm]
->     D[Casos Especiales] --> E[P_man > 0<br/>Presión Positiva<br/>Sobrepresión]
->     D --> F[P_man = 0<br/>Presión Atmosférica<br/>Sin diferencia]
->     D --> G[P_man < 0<br/>Presión Negativa<br/>Vacío Parcial]
->     H[Referencia] --> I[Vacío Absoluto<br/>P = 0 Pa<br/>Referencia teórica]
->     H --> J[Nivel del Mar<br/>P_atm = 1 atm<br/>Referencia práctica]
->     style A fill:#e8f5e8
->     style B fill:#e1f5fe
->     style C fill:#fff3e0
->     style E fill:#ffcdd2
->     style F fill:#f3e5f5
->     style G fill:#e0f2f1
-> ```
+> ![[Diagramas/Presión_Manómetrica_01.svg]]
 > 
 > ### Relaciones Fundamentales
 > - **P_abs = P_atm + P_man** (cuando P_man > 0)
@@ -55,19 +40,7 @@ dg-publish: true
 > | 🌡️ **Digital** | Sensores electrónicos | Versatilidad, registro | Variable |
 > 
 > ### Manómetro en U - Principio
-> ```mermaid
-> graph TB
->     A[Recipiente con Gas<br/>Presión P_gas] --> B[Tubo en U<br/>con Mercurio]
->     B --> C[Rama Abierta<br/>Presión Atmosférica]
->     B --> D[Diferencia de Altura h]
->     E[Equilibrio de Presiones] --> F[P_gas = P_atm + ρ_Hg × g × h]
->     F --> G[P_manométrica = ρ_Hg × g × h]
->     style A fill:#fff3e0
->     style B fill:#e1f5fe
->     style C fill:#f3e5f5
->     style E fill:#e8f5e8
->     style G fill:#ffcdd2
-> ```
+> ![[Diagramas/Presión_Manómetrica_02.svg]]
 >
 
 > [!example] Cálculos y Ejemplos Prácticos 🧮
@@ -119,26 +92,7 @@ dg-publish: true
 > - **💨 Sistemas neumáticos**: Control de aire comprimido
 > 
 > ### En Procesos Industriales
-> ```mermaid
-> mindmap
->   root((Aplicaciones))
->     Petroquímica
->       Reactores a presión
->       Destilación
->       Transporte por ductos
->     Manufactura
->       Prensas hidráulicas
->       Moldeado por inyección
->       Control de calidad
->     Medicina
->       Respiradores artificiales
->       Cámaras hiperbáricas
->       Equipos de diálisis
->     Alimentaria
->       Esterilización
->       Envasado al vacío
->       Procesamiento HPP
-> ```
+> ![[Diagramas/Presión_Manómetrica_03.svg]]
 > 
 > ### Ventajas de la Medición Manométrica
 > - **📏 Referencia práctica**: Elimina variaciones atmosféricas normales

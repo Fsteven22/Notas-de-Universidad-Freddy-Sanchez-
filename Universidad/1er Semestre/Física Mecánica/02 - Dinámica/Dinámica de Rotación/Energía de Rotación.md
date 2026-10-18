@@ -72,17 +72,7 @@ dg-publish: true
 > 
 > $$E_{inicial} = E_{final}$$ $$K_{total,i} + U_{g,i} = K_{total,f} + U_{g,f}$$
 > 
-> ```mermaid
-> flowchart LR
->    A[🏔️ Energía Potencial] --> B[⚡ Energía Cinética Total]
->    B --> C[🏃 Traslacional]
->    B --> D[🔄 Rotacional]
->    C --> E[½Mv²]
->    D --> F[½Iω²]
->    style A fill:#81c784
->    style C fill:#64b5f6
->    style D fill:#ffb74d
-> ```
+> ![[Diagramas/Energía_de_Rotación_01.svg]]
 
 ---
 
@@ -99,11 +89,7 @@ dg-publish: true
 
 > [!info] 📊 Visualización de Distribución Energética
 > 
-> ```mermaid
-> pie title Energía Cinética: Cilindro Rodando
->    "Traslacional (67%)" : 67
->    "Rotacional (33%)" : 33
-> ```
+> ![[Diagramas/Energía_de_Rotación_02.svg]]
 >
 
 > [!tip] 🎯 Implicación Práctica **Los objetos con menor momento de inercia llegan más rápido** al final de una rampa porque dedican más energía a la traslación que a la rotación.
@@ -209,31 +195,7 @@ dg-publish: true
 
 > [!info] 🌐 Red de Conceptos
 > 
-> ```mermaid
-> mindmap
->  root((⚡ Energía Rotación))
->    🔄 Fundamentos
->      Momento de Inercia
->      Velocidad Angular
->      Energía Cinética
->    ⚖️ Conservación
->      Energía Mecánica
->      Conversión Potencial-Cinética
->      Método Energético
->    🎯 Aplicaciones
->      Rodadura
->      Volantes de Inercia
->      Discos Duros
->      Motores
->    🔧 Trabajo y Potencia
->      Trabajo Rotacional
->      Potencia Rotacional
->      Teorema Trabajo-Energía
->    📊 Análisis
->      Distribución Energética
->      Comparación Objetos
->      Eficiencia Energética
-> ```
+> ![[Diagramas/Energía_de_Rotación_03.svg]]
 >
 
 > [!tip] 🎯 Estrategias de Resolución

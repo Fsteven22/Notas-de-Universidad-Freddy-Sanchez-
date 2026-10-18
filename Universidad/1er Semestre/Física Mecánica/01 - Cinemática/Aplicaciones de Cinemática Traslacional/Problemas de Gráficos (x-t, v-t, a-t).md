@@ -65,16 +65,7 @@ dg-publish: true
 >
 >[!success] 🔗 Relaciones Entre Gráficos
 > 
-> ```mermaid
-> graph TD
->     A[Gráfico x-t] -->|Derivada| B[Gráfico v-t]
->     B -->|Derivada| C[Gráfico a-t]
->     C -->|Integral| B
->     B -->|Integral| A
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#fff3e0
-> ```
+> ![[Diagramas/Problemas_de_Gráficos_(x-t,_v-t,_a-t)_01.svg]]
 > 
 >
 

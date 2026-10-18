@@ -20,12 +20,7 @@ dg-publish: true
 
 > [!tip] 📍 **Encuentro Frontal (Convergencia)** **Situación:** Dos móviles parten desde puntos diferentes y **se dirigen uno hacia el otro**
 > 
-> ```mermaid
-> graph LR
->     A[Móvil A] -->|vA| C[Punto de Encuentro]
->     B[Móvil B] -->|vB| C
->     style C fill:#ff9999
-> ```
+> ![[Diagramas/Problemas_de_Encuentro_01.svg]]
 > 
 > **Ejemplos típicos:**
 > 
@@ -36,13 +31,7 @@ dg-publish: true
 
 > [!warning] 🏃‍♂️ **Persecución y Alcance** **Situación:** Un móvil **persigue** a otro que tiene ventaja inicial
 > 
-> ```mermaid
-> graph LR
->     A[Perseguidor] -->|v1 > v2| B[Objetivo]
->     B -->|v2| C[Punto de Alcance]
->     A -->|v1| C
->     style C fill:#99ff99
-> ```
+> ![[Diagramas/Problemas_de_Encuentro_02.svg]]
 > 
 > **Ejemplos típicos:**
 > 
@@ -153,17 +142,7 @@ dg-publish: true
 
 > [!note] 📈 **Gráficos Posición vs Tiempo**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Encuentro Frontal"
->         A1[t=0: xA=0, xB=d] --> B1[Las líneas se cruzan]
->         B1 --> C1[t=encuentro: xA=xB]
->     end
->     subgraph "Persecución"
->         A2[t=0: Ventaja inicial] --> B2[Móvil rápido gana terreno]
->         B2 --> C2[t=alcance: Posiciones iguales]
->     end
-> ```
+> ![[Diagramas/Problemas_de_Encuentro_03.svg]]
 > 
 > **🎯 Interpretación visual:**
 > 

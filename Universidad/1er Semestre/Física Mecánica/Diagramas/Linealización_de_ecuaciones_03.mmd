@@ -1,0 +1,19 @@
+graph TD
+    A[Datos Experimentales] --> B[Selección de Transformación]
+    B --> C[Aplicación de Transformación]
+    C --> D[Regresión Lineal]
+    D --> E[Evaluación de Calidad]
+    E --> F{¿Linealización Exitosa?}
+    F -->|Sí| G[Interpretación de Parámetros]
+    F -->|No| H[Prueba Nueva Transformación]
+    G --> I[Transformación Inversa]
+    I --> J[Validación con Datos Originales]
+    J --> K[Reporte de Resultados]
+    H --> B
+    E --> E1[Coeficiente r]
+    E --> E2[Análisis de Residuos]  
+    E --> E3[Significado Físico]
+    E --> E4[Comparación Teórica]
+    style A fill:#e1f5fe
+    style K fill:#e8f5e8
+    style H fill:#ffebee

@@ -76,20 +76,7 @@ dg-publish: true
 
 > [!success] 🔗 Relaciones Fundamentales
 > 
-> ```mermaid
-> graph TD
->     A[Aceleración Angular α] -->|aₜ = α × r| B[Aceleración Tangencial aₜ]
->     C[Velocidad Angular ω] -->|aₓ = ω²r| D[Aceleración Centrípeta aₓ]
->     B --> E[Aceleración Total a]
->     D --> E
->     E -->|a = √(aₜ² + aₓ²)| F[Magnitud Total]
->     style A fill:#e1f5fe
->     style B fill:#f3e5f5
->     style C fill:#e8f5e8
->     style D fill:#fff3e0
->     style E fill:#fce4ec
->     style F fill:#f1f8e9
-> ```
+> ![[Diagramas/Problemas_con_aceleraciones_(tangencial_y_centrípeta)_01.svg]]
 >
 
 > [!note] **Relaciones Matemáticas** 📐

@@ -83,24 +83,7 @@ dg-publish: true
 
 > [!warning] 🛠️ **Pasos para Construir un DCL**
 > 
-> ```mermaid
-> flowchart TD
->    A[1. Identificar el objeto de interés] --> B[2. Aislarlo mentalmente]
->    B --> C[3. Dibujar el objeto como un punto o forma simple]
->    C --> D[4. Identificar todas las superficies de contacto]
->    D --> E[5. Dibujar fuerzas de contacto]
->    E --> F[6. Agregar fuerzas de campo peso]
->    F --> G[7. Etiquetar cada fuerza claramente]
->    G --> H[8. Verificar que no falten fuerzas]
->    style A fill:#e1f5fe
->    style B fill:#f3e5f5
->    style C fill:#fff3e0
->    style D fill:#e8f5e8
->    style E fill:#fce4ec
->    style F fill:#f1f8e9
->    style G fill:#fef7e0
->    style H fill:#e8eaf6
-> ```
+> ![[Diagramas/Fuerzas_y_Diagramas_de_Cuerpo_Libre_01.svg]]
 > 
 > **Reglas importantes:**
 > 

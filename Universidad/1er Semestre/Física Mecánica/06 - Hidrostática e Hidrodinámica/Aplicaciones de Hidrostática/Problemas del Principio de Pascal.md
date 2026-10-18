@@ -98,22 +98,7 @@ dg-publish: true
 
 > [!success] 🔄 Sistema Hidráulico Básico
 > 
-> ```mermaid
-> graph TD
->     A[Cilindro Maestro A₁] -->|Presión P| B[Fluido Hidráulico]
->     B -->|Misma Presión P| C[Cilindro Esclavo A₂]
->     D[Fuerza F₁] --> A
->     A -->|Desplazamiento d₁| E[Volumen V₁]
->     C --> F[Fuerza F₂ = F₁ × A₂/A₁]
->     G[Desplazamiento d₂ = d₁ × A₁/A₂] --> C
->     E -->|V₁ = V₂| H[Volumen V₂]
->     H --> G
->     style A fill:#e3f2fd
->     style B fill:#e8f5e8
->     style C fill:#fff3e0
->     style D fill:#fce4ec
->     style F fill:#f3e5f5
-> ```
+> ![[Diagramas/Problemas_del_Principio_de_Pascal_01.svg]]
 >
 
 > [!note] **Relaciones Matemáticas** 📐
