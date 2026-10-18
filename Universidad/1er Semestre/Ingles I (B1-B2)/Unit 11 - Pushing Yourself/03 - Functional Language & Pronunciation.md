@@ -24,20 +24,7 @@ dg-publish: true
 > 
 > **Conexión práctica:**
 > 
-> ```mermaid
-> graph TD
->     A[Vocabulary] --> B[Grammar]
->     B --> C[Functional Language]
->     C --> D[Real Conversations]
->     C --> E[Talking about<br/>your goals]
->     C --> F[Motivating<br/>others]
->     C --> G[Sounding<br/>natural]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
->     style F fill:#ffe1e1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_01.svg]]
 
 ---
 
@@ -563,40 +550,7 @@ dg-publish: true
 
 ## 📊 Functional Language Summary
 
-```mermaid
-mindmap
-  root((Functional<br/>Language))
-    Talking about Goals
-      I'm working on...
-      I'm trying to...
-      My goal is to...
-      I'm pushing myself to...
-    Talking about Progress
-      I'm making progress
-      I'm getting better
-      I'm on track
-      I'm struggling with...
-    Giving Encouragement
-      Keep going!
-      Don't give up!
-      You can do it!
-      You're doing great!
-    Giving Advice
-      If I were you...
-      Maybe you could...
-      Have you considered...
-      I wouldn't recommend...
-    Pronunciation
-      Stress on particles
-        give UP
-        keep GOing
-      Linking sounds
-        give_up
-        work_on
-      Intonation
-        Rising ↗️ enthusiasm
-        Falling ↘️ reassurance
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_02.svg]]
 
 ---
 
@@ -661,16 +615,7 @@ mindmap
 > |**Pronunciation patterns**|Writing your story|Apply everything you know|
 > |**Natural conversations**|Speaking practice|Put it all together|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary] --> B[Grammar]
->     B --> C[Functional Language]
->     C --> D[Reading/Writing/<br/>Speaking]
->     D --> E[REAL English<br/>Mastery]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_03.svg]]
 > 
 > **In the next note, you'll:**
 > 

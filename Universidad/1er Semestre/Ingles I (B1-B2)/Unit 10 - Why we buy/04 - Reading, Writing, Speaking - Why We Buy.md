@@ -21,19 +21,7 @@ dg-publish: true
 > 
 > **Conexión con habilidades previas:**
 > 
-> ```mermaid
-> graph TD
->     A[Vocabulary:<br/>Materials &<br/>Production] --> D[Reading:<br/>Articles about<br/>consumer behavior]
->     B[Grammar:<br/>Passive Voice] --> E[Writing:<br/>Product<br/>descriptions]
->     C[Functional<br/>Language] --> F[Speaking:<br/>Discussions &<br/>recommendations]
->     D --> G[Complete<br/>Communication]
->     E --> G
->     F --> G
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Why_We_Buy_01.svg]]
 
 ---
 
@@ -212,16 +200,7 @@ dg-publish: true
 > 
 > **Writing Framework:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Introduction:<br/>What is it?] --> B[Material:<br/>What's it made of?]
->     B --> C[Origin:<br/>Where's it made?]
->     C --> D[Characteristics:<br/>Describe it]
->     D --> E[Recommendation:<br/>Why buy it?]
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Why_We_Buy_02.svg]]
 > 
 > **Useful phrases for product descriptions:**
 > 
@@ -297,17 +276,7 @@ dg-publish: true
 > 
 > **Review Structure:**
 > 
-> ```mermaid
-> graph TD
->     A[Star Rating +<br/>Title] --> B[Opening:<br/>Overall impression]
->     B --> C[Positives:<br/>What's good]
->     C --> D[Negatives:<br/>What could improve]
->     D --> E[Conclusion:<br/>Recommendation]
->     style A fill:#e1ffe1
->     style C fill:#ccffcc
->     style D fill:#ffcccc
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Why_We_Buy_03.svg]]
 > 
 > **Useful review language:**
 > 
@@ -464,16 +433,7 @@ dg-publish: true
 > 
 > **Presentation Structure:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Hook:<br/>Get attention] --> B[Description:<br/>What is it?]
->     B --> C[Features:<br/>What makes it special?]
->     C --> D[Benefits:<br/>Why it's useful]
->     D --> E[Recommendation:<br/>Who should buy it?]
->     style A fill:#ffe1e1
->     style C fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Why_We_Buy_04.svg]]
 > 
 > **Opening hooks:**
 > 
@@ -699,47 +659,7 @@ dg-publish: true
 
 ## 📊 Visual Summary - Complete Unit
 
-```mermaid
-mindmap
-  root((UNIT 10<br/>Why We Buy))
-    Vocabulary
-      Materials
-        Cotton, Leather
-        Plastic, Metal
-        Wood, Glass
-      Characteristics
-        Soft, Durable
-        Waterproof, Light
-      Production
-        Grow, Manufacture
-        Export, Ship
-    Grammar
-      Passive Voice
-        Present: is/are made
-        Past: was/were made
-      Active to Passive
-        Transformations
-    Functional Language
-      Describing Products
-        It's made of...
-        It's very + adj
-      Production Talk
-        is produced in...
-        shipped to...
-      Pronunciation
-        Stress, Linking
-        Intonation
-    Real Use
-      Reading
-        Consumer behavior
-        Product articles
-      Writing
-        Descriptions
-        Reviews
-      Speaking
-        Recommendations
-        Discussions
-```
+![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Why_We_Buy_05.svg]]
 
 ---
 

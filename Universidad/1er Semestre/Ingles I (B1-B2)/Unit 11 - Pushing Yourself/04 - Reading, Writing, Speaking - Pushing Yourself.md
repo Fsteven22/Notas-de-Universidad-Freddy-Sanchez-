@@ -24,16 +24,7 @@ dg-publish: true
 > 
 > **El ciclo completo del aprendizaje:**
 > 
-> ```mermaid
-> graph TD
->     A[Unit 11 Journey] --> B[Vocabulary:<br/>Success & Risk]
->     B --> C[Grammar:<br/>Phrasal Verbs &<br/>Conditionals]
->     C --> D[Functional Language:<br/>Natural expressions]
->     D --> E[REAL USE:<br/>Read, Write, Speak]
->     E --> F[Mastery!<br/>You can now discuss<br/>goals & motivation<br/>fluently]
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Pushing_Yourself_01.svg]]
 
 ---
 
@@ -907,51 +898,7 @@ dg-publish: true
 
 ## 🎯 Key Takeaways - Unit 11 Summary
 
-```mermaid
-mindmap
-  root((Unit 11<br/>Pushing Yourself<br/>COMPLETE))
-    Vocabulary
-      Success words
-        achieve, succeed
-        improve, overcome
-      Risks & Rewards
-        opportunity, challenge
-        advantage, disadvantage
-      Goals
-        goal, purpose
-        effort, progress
-    Grammar
-      Phrasal Verbs
-        give up
-        keep going
-        work on
-        set up
-      Conditionals
-        2nd: If I were...
-        3rd: If I had...
-        I wish + past
-    Functional Language
-      Talking about goals
-        I'm working on...
-        My goal is to...
-      Encouragement
-        Don't give up!
-        Keep going!
-      Advice
-        If I were you...
-        Maybe you could...
-    Skills Applied
-      Reading
-        Success stories
-        Motivation articles
-      Writing
-        Goal statements
-        Encouragement letters
-      Speaking
-        Presentations
-        Discussions
-        Role-plays
-```
+![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Pushing_Yourself_02.svg]]
 
 ---
 

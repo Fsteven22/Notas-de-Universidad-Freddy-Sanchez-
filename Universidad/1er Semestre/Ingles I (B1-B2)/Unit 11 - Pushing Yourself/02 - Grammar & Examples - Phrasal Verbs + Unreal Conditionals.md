@@ -22,19 +22,7 @@ dg-publish: true
 > 
 > **Conexión práctica:**
 > 
-> ```mermaid
-> graph TD
->     A[Talking about Goals] --> B[Phrasal Verbs]
->     A --> C[Unreal Conditionals]
->     B --> D["I'm working on<br/>improving my skills"]
->     C --> E["If I were braver,<br/>I would take more risks"]
->     D --> F[Real Actions]
->     E --> F
->     F --> G[Express yourself<br/>naturally about<br/>pushing yourself]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_01.svg]]
 
 ---
 
@@ -64,14 +52,7 @@ dg-publish: true
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph LR
->     A[VERB:<br/>give] --> B[Meaning:<br/>dar]
->     C[PHRASAL VERB:<br/>give + up] --> D[NEW Meaning:<br/>rendirse]
->     style A fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_02.svg]]
 > 
 > **Tipos de phrasal verbs:**
 > 
@@ -306,16 +287,7 @@ dg-publish: true
 > 
 > **Estructura visual:**
 > 
-> ```mermaid
-> graph LR
->     A[IF clause<br/>Past Simple] --> B[Main clause<br/>would + base verb]
->     C["If I were rich"] --> D["I would travel the world"]
->     E[Hypothetical<br/>condition] --> F[Hypothetical<br/>result]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_03.svg]]
 > 
 > **Cuándo usar Second Conditional:**
 > 
@@ -710,46 +682,7 @@ dg-publish: true
 
 ## 📊 Visual Summary - Grammar Structures
 
-```mermaid
-mindmap
-  root((Unit 11<br/>Grammar))
-    Phrasal Verbs
-      Structure
-        Verb + Particle
-        New meaning
-      Common ones
-        give up
-        keep going
-        work on
-        set up
-        find out
-        In context 
-	        Don't give up! 
-	        Keep going! 
-	        Work on yourself 
-	    Second Conditional 
-		    Structure 
-			    If + past simple 
-			    would + base verb 
-			Uses 
-				Hypothetical 
-				Advice 
-				Imagination 
-			Examples 
-				If I were you... 
-				If I had time... 
-			Wishes 
-				I wish + past 
-					Present regrets 
-					I wish I were... 
-				I wish + would 
-					Behavior changes 
-					Others only 
-				If only 
-					Stronger emotion 
-					If only I had...
-
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_04.svg]]
 
 ---
 
@@ -795,16 +728,7 @@ mindmap
 > | **Conditionals** | Real conversations | Express desires and advice naturally |
 > | **Grammar structures** | Functional language | Use it fluently in speech |
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Goals & Success] --> B[Grammar:<br/>Phrasal Verbs &<br/>Conditionals]
->     B --> C[Functional Language:<br/>Motivation &<br/>Advice]
->     C --> D[Real Use:<br/>Conversations<br/>about goals]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_05.svg]]
 
 ---
 

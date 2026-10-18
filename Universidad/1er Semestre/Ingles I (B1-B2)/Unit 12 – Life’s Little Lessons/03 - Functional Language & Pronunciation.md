@@ -20,17 +20,7 @@ dg-publish: true
 > 
 > **Conexión con Grammar:**
 > 
-> ```mermaid
-> graph TD
->     A[Grammar you learned] --> B[Functional Language]
->     C[Phrasal verbs:<br/>give up, keep going] --> D[Natural expressions:<br/>"Don't give up!"]
->     E[Second Conditional:<br/>If I were...] --> F[Giving advice:<br/>"If I were you, I'd..."]
->     G[I wish / If only] --> H[Expressing desires:<br/>"I wish I were more..."]
->     B --> I[Real conversations<br/>about goals]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style I fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_01.svg]]
 > 
 > **En esta nota aprenderás a:**
 > 
@@ -779,38 +769,7 @@ dg-publish: true
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Functional<br/>Language))
-    Talking about Goals
-      I'm pushing myself to...
-      I'm working on...
-      My goal is to...
-      I don't want to give up
-    Encouragement
-      Keep going!
-      Don't give up!
-      You can do it!
-      I believe in you!
-    Giving Advice
-      You should...
-      If I were you...
-      Why don't you...?
-    Wishes & Regrets
-      I wish I were...
-      I wish I had...
-      If only...
-    Pronunciation
-      Stress on particle
-        give UP
-        keep GOing
-      Linking
-        work_on_it
-        give_it_up
-      Intonation
-        Rising for questions
-        Falling for commands
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_02.svg]]
 
 ---
 
@@ -856,17 +815,7 @@ mindmap
 > |**Speaking drills**|Extended conversations|
 > |**Pronunciation**|Fluent communication|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary] --> B[Grammar]
->     B --> C[Functional Language]
->     C --> D[Reading/Writing/Speaking]
->     E[Words] --> F[Structures]
->     F --> G[Natural phrases]
->     G --> H[Real communication]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_03.svg]]
 > 
 > **In the next note, you'll:**
 > 

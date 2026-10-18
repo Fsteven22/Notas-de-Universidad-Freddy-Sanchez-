@@ -24,19 +24,7 @@ dg-publish: true
 > 
 > **Conexión práctica:**
 > 
-> ```mermaid
-> graph TD
->     A[Life's Little Lessons] --> B[Accidents Happen]
->     A --> C[Strong Reactions]
->     B --> D[Accident Verbs:<br/>spill, slip, knock off]
->     B --> E[Responsibility:<br/>blame, feel bad]
->     C --> F[Extreme Adjectives:<br/>exhausted, terrified]
->     C --> G[Reactions:<br/>be mad at, feel awful]
->     style B fill:#ffe1e1
->     style C fill:#e1f5ff
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_01.svg]]
 
 ---
 
@@ -913,46 +901,7 @@ dg-publish: true
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Unit 12<br/>Vocabulary))
-    Accidents
-      Actions
-        spill derramar
-        slip resbalar
-        knock off tirar
-        fall out caerse
-      Damage
-        damage dañar
-        destroy destruir
-      Responsibility
-        blame culpar
-        be mad at enojarse con
-        feel bad sentirse mal
-      Fixing
-        pick up recoger
-      Mistakes
-        leave on dejar encendido
-        leave open dejar abierto
-    Extremes
-      Temperature
-        freezing helado
-        boiling hirviendo
-      Size
-        enormous enorme
-        huge gigante
-        tiny diminuto
-      Emotions
-        exhausted agotado
-        terrified aterrorizado
-        thrilled emocionadísimo
-        miserable miserable
-      Quality
-        terrific fantástico
-        magnificent magnífico
-      Hunger
-        starving muerto de hambre
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_02.svg]]
 
 ---
 
@@ -968,16 +917,7 @@ mindmap
 > |**Extreme adjectives**|Reported speech|"She said she was exhausted"|
 > |**Real situations**|Report what happened|"He told me he'd damaged the car"|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Accidents & Extremes] --> B[Grammar:<br/>Indefinite Pronouns &<br/>Reported Speech]
->     B --> C[Functional Language:<br/>Reacting & Reporting]
->     C --> D[Real Use:<br/>Tell stories about<br/>life's little lessons]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_03.svg]]
 
 ---
 

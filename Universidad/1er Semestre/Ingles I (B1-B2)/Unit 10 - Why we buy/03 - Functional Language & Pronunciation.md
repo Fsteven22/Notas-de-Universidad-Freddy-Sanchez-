@@ -23,26 +23,7 @@ dg-publish: true
 > 
 > **Funciones comunicativas en Unit 10:**
 > 
-> ```mermaid
-> mindmap
->   root((Functional<br/>Language))
->     Describing Products
->       Materials
->       Characteristics
->       Origin
->     Talking about Production
->       Where it's made
->       How it's produced
->       Quality details
->     Discussing Distribution
->       Shipping methods
->       Delivery times
->       International trade
->     Making Recommendations
->       Why buy it
->       What makes it special
->       Value for money
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_01.svg]]
 
 ---
 
@@ -61,17 +42,7 @@ dg-publish: true
 > 
 > **Diferencia importante: OF vs FROM**
 > 
-> ```mermaid
-> graph TD
->     A{Material Change?} --> B[No visible change]
->     A --> C[Transformed/processed]
->     B --> D[Use MADE OF]
->     C --> E[Use MADE FROM]
->     D --> F[Example:<br/>This table is made<br/>of wood]
->     E --> G[Example:<br/>Paper is made<br/>from wood]
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_02.svg]]
 > 
 > **Ejemplos prácticos:**
 > 
@@ -143,20 +114,7 @@ dg-publish: true
 > 
 > **Estructura de descripción completa:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Material] --> B[Main<br/>Characteristic]
->     B --> C[Additional<br/>Characteristic]
->     C --> D[Benefit]
->     A -.-> E["It's made of cotton"]
->     B -.-> F["It's very soft"]
->     C -.-> G["and breathable"]
->     D -.-> H["so it's perfect<br/>for summer"]
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#e1f5ff
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_03.svg]]
 > 
 > **Ejemplos de descripciones completas:**
 > 
@@ -242,17 +200,7 @@ dg-publish: true
 > 
 > **Secuencia de producción:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Raw Material] --> B[is grown/<br/>harvested]
->     B --> C[is processed/<br/>manufactured]
->     C --> D[is tested/<br/>inspected]
->     D --> E[is packaged]
->     E --> F[is shipped]
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_04.svg]]
 > 
 > **Frases para cada etapa:**
 > 
@@ -450,18 +398,7 @@ dg-publish: true
 > 
 > **Regla general: palabras de 3+ sílabas**
 > 
-> ```mermaid
-> graph TD
->     A[Long words] --> B[Find stressed syllable]
->     B --> C[Say it LOUDER]
->     B --> D[Say it LONGER]
->     B --> E[Say it HIGHER pitch]
->     C --> F[man-u-FAC-ture]
->     D --> F
->     E --> F
->     style B fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_05.svg]]
 > 
 > **Práctica con tapping (golpear la mesa):**
 > 
@@ -557,17 +494,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph LR
->     A[Statements] --> B[↘ Falling]
->     C[Yes/No Questions] --> D[↗ Rising]
->     E[Wh- Questions] --> F[↘ Falling]
->     G[Lists] --> H[↗ ↗ ↘]
->     style B fill:#e1ffe1
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_06.svg]]
 
 ---
 
@@ -685,30 +612,7 @@ dg-publish: true
 
 ## 📊 Visual Summary - Functional Language
 
-```mermaid
-mindmap
-  root((Functional<br/>Language))
-    Describing Products
-      It's made of...
-      It's very + adj
-      Made in + country
-      Characteristics
-    Production Talk
-      is grown/manufactured
-      handmade/mass-produced
-      sustainably produced
-      quality-checked
-    Distribution
-      We ship...
-      Delivery within...
-      Free shipping
-      International delivery
-    Pronunciation
-      Word stress
-      Linking
-      Weak forms
-      Intonation
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_07.svg]]
 
 ---
 
@@ -724,16 +628,7 @@ mindmap
 > |**Natural expressions**|Speaking practice|Real conversations|
 > |**Pronunciation**|Fluency|Sound confident|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary] --> B[Grammar]
->     B --> C[Functional<br/>Language]
->     C --> D[Real Use:<br/>Reading/Writing/<br/>Speaking]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_08.svg]]
 > 
 > **Next: Apply everything in authentic contexts!**
 

@@ -28,20 +28,7 @@ dg-publish: true
 > |**Sustainability**|"I prefer products made from recycled plastic"|
 > |**Product reviews**|"The material is soft but very strong"|
 
-```mermaid
-graph LR
-    A[Product] --> B{What is it<br/>made of?}
-    A --> C{How was it<br/>produced?}
-    A --> D{How did it<br/>get here?}
-    
-    B --> E[Materials]
-    C --> F[Production]
-    D --> G[Distribution]
-    
-    style E fill:#e1ffe1
-    style F fill:#fff4e1
-    style G fill:#e1f5ff
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_01.svg]]
 
 ---
 
@@ -65,22 +52,7 @@ graph LR
 > 
 > **Visualización de materiales:**
 > 
-> ```mermaid
-> mindmap
->   root((Materials))
->     Natural
->       Cotton
->       Leather
->       Stone
->       Wood
->       Wool
->     Synthetic
->       Plastic
->       Polyester
->     Mixed
->       Glass
->       Metal
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_02.svg]]
 > 
 > **Ejemplos en contexto:**
 > 
@@ -135,18 +107,7 @@ graph LR
 > 
 > **Combinaciones frecuentes:**
 > 
-> ```mermaid
-> graph TD
->     A[Product Description] --> B[Material]
->     A --> C[Characteristic 1]
->     A --> D[Characteristic 2]
->     B --> E[made of cotton]
->     C --> F[very soft]
->     D --> G[and comfortable]
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_03.svg]]
 > 
 > **Frases modelo para descripción:**
 > 
@@ -178,16 +139,7 @@ graph LR
 > 
 > **Flujo del proceso de producción:**
 > 
-> ```mermaid
-> graph LR
->     A[Raw Materials] --> B[Grow/Catch/Extract]
->     B --> C[Pick/Harvest]
->     C --> D[Process/Manufacture]
->     D --> E[Product]
->     style A fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_04.svg]]
 > 
 > **Ejemplos por categoría:**
 > 
@@ -227,18 +179,7 @@ graph LR
 > 
 > **Cadena de distribución:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Factory] --> B[Store]
->     B --> C[Transport/Ship]
->     C --> D[Import/Export]
->     D --> E[Store]
->     E --> F[Deliver]
->     F --> G[Customer]
->     style A fill:#fff4e1
->     style D fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_05.svg]]
 > 
 > **Patrones de uso comunes:**
 > 
@@ -356,18 +297,7 @@ graph LR
 > 
 > **Frases completas modelo:**
 > 
-> ```mermaid
-> graph TD
->     A[Product Description] --> B[Material]
->     A --> C[Production]
->     A --> D[Distribution]
->     B --> E["This jacket is made of<br/>waterproof polyester"]
->     C --> F["It's manufactured in<br/>Vietnam using<br/>sustainable methods"]
->     D --> G["We ship worldwide and<br/>deliver within 5-7 days"]
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_06.svg]]
 
 ---
 
@@ -505,47 +435,7 @@ graph LR
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Unit 10<br/>Vocabulary))
-    Materials
-      Natural
-        Cotton
-        Leather
-        Wood
-        Wool
-        Stone
-      Synthetic
-        Plastic
-        Polyester
-    Characteristics
-      Physical
-        Hard/Soft
-        Heavy/Light
-        Strong/Fragile
-      Functional
-        Waterproof
-        Warm
-        Natural/Artificial
-    Production
-      Agriculture
-        Grow
-        Pick
-        Freeze
-      Manufacturing
-        Design
-        Manufacture
-        Produce
-    Distribution
-      International
-        Export
-        Import
-      Logistics
-        Ship
-        Transport
-        Store
-        Deliver
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_07.svg]]
 
 ---
 
@@ -572,17 +462,7 @@ mindmap
 > 
 > **How vocabulary connects to grammar:**
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Materials &<br/>Verbs] --> B[Grammar:<br/>Passive Voice]
->     B --> C[Real Use:<br/>Product<br/>Descriptions]
->     A -.->|Example| D["cotton, manufacture"]
->     B -.->|Transform| E["is made of cotton"]
->     C -.->|Apply| F["This shirt is made<br/>of cotton in India"]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Materials_+_Production_&_Distribution_08.svg]]
 
 ---
 

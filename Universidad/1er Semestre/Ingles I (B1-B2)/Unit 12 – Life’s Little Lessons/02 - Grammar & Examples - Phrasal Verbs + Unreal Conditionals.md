@@ -22,18 +22,7 @@ dg-publish: true
 > 
 > **Conexión práctica:**
 > 
-> ```mermaid
-> graph TD
->     A[Telling Stories About<br/>Life's Little Lessons] --> B[Indefinite Pronouns]
->     A --> C[Reported Speech]
->     B --> D["Someone spilled coffee"<br/>"I didn't see anyone"<br/>"Nothing was damaged"]
->     C --> E["She said she was sorry"<br/>"He told me he felt bad"<br/>"They said it was an accident"]
->     D --> F[Tell complete stories<br/>about what happened]
->     E --> F
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_01.svg]]
 
 ---
 
@@ -1116,49 +1105,7 @@ dg-publish: true
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Unit 12<br/>Grammar))
-    Indefinite Pronouns
-      SOME-
-        someone/somebody
-        something
-        somewhere
-        Use: affirmative, offers
-      ANY-
-        anyone/anybody
-        anything
-        anywhere
-        Use: questions, negatives
-      NO-
-        no one/nobody
-        nothing
-        nowhere
-        Use: negative meaning
-      EVERY-
-        everyone/everybody
-        everything
-        everywhere
-        Use: all/complete
-    Reported Speech
-      Structure
-        said (that)
-        told + person
-      Tense Changes
-        present → past
-        past → past perfect
-        will → would
-        can → could
-      Pronoun Changes
-        I → he/she
-        my → his/her
-        you → I/we
-      Time Changes
-        today → that day
-        yesterday → the day before
-        tomorrow → the next day
-        now → then
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_02.svg]]
 
 ---
 
@@ -1174,16 +1121,7 @@ mindmap
 > |**Reported speech**|Telling stories|Report accidents naturally|
 > |**Grammar structures**|Real expressions|Sound fluent in English|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Accidents & Extremes] --> B[Grammar:<br/>Indefinite Pronouns &<br/>Reported Speech]
->     B --> C[Functional Language:<br/>Reacting & Telling Stories]
->     C --> D[Real Use:<br/>Share experiences<br/>and lessons]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Phrasal_Verbs_+_Unreal_Conditionals_03.svg]]
 
 ---
 

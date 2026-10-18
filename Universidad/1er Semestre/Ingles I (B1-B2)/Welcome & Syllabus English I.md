@@ -58,21 +58,7 @@ dg-publish: true
 
 > [!tip] 📚 Units
 >
-> ```mermaid
-> graph LR
->     A[🗣️ English I] --> B[Unit 7\nEntertain Us]
->     A --> C[Unit 8\nGetting There]
->     A --> D[Unit 9\nMake It Work]
->     A --> E[Unit 10\nWhy We Buy]
->     A --> F[Unit 11\nPushing Yourself]
->     A --> G[Unit 12\nLife's Little Lessons]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
->     style G fill:#e1fff4
-> ```
+> ![[Diagramas/Welcome_&_Syllabus_English_I_01.svg]]
 >
 > | Unit | Topic | Hours |
 > |---|---|---|

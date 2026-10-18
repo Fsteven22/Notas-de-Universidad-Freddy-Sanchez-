@@ -24,17 +24,7 @@ dg-publish: true
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph LR
->     A[Active Voice] --> B[Subject<br/>WHO does it]
->     B --> C[Verb]
->     C --> D[Object<br/>WHAT receives]
->     E[Passive Voice] --> F[Subject<br/>WHAT receives]
->     F --> G[be + past participle]
->     G --> H[by + agent<br/>optional]
->     style A fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_01.svg]]
 
 ---
 
@@ -59,17 +49,7 @@ dg-publish: true
 > 
 > **Proceso de transformación:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Active:<br/>They make shoes] --> B[Identify object:<br/>shoes]
->     B --> C[Move to front:<br/>Shoes...]
->     C --> D[Add be:<br/>Shoes are...]
->     D --> E[Past participle:<br/>Shoes are made]
->     E --> F[Optional by:<br/>Shoes are made<br/>by them]
->     style A fill:#ffe1e1
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_02.svg]]
 > 
 > **Ejemplos con vocabulario de Unit 10:**
 > 
@@ -112,16 +92,7 @@ dg-publish: true
 > |**Persona famosa**|The iPhone was designed **by Steve Jobs**|Enfatizar el creador|
 > |**Contraste**|This is made **by hand**, not by machine|Distinguir métodos|
 > 
-> ```mermaid
-> graph TD
->     A{¿Usar BY?} --> B{¿Es importante<br/>QUIÉN lo hizo?}
->     B -->|Sí| C[✅ USE by + agent]
->     B -->|No| D[❌ OMIT by + agent]
->     C --> E[This book was written<br/>by García Márquez]
->     D --> F[Coffee is grown<br/>in Colombia]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_03.svg]]
 >
 
 > [!success] 🎨 Negative & Questions
@@ -189,15 +160,7 @@ dg-publish: true
 > 
 > **Diferencia temporal:**
 > 
-> ```mermaid
-> graph LR
->     A[Present Passive] --> B[is/are + PP]
->     B --> C[General facts<br/>Current situations]
->     D[Past Passive] --> E[was/were + PP]
->     E --> F[Completed actions<br/>Historical facts]
->     style B fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_04.svg]]
 > 
 > **Ejemplos comparativos:**
 > 
@@ -224,17 +187,7 @@ dg-publish: true
 > 
 > **Paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Active: They exported<br/>the bananas yesterday] --> B[Step 1: Find object<br/>the bananas]
->     B --> C[Step 2: Move to front<br/>The bananas...]
->     C --> D[Step 3: Change verb<br/>exported → was/were]
->     D --> E[Step 4: Add past participle<br/>The bananas were exported]
->     E --> F[Step 5: Add time<br/>The bananas were<br/>exported yesterday]
->     style A fill:#ffe1e1
->     style E fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_05.svg]]
 > 
 > **Ejemplos detallados:**
 > 
@@ -354,17 +307,7 @@ dg-publish: true
 > 
 > **Decisión visual:**
 > 
-> ```mermaid
-> graph TD
->     A{¿Qué es más importante?} --> B[WHO does it]
->     A --> C[WHAT receives it]
->     B --> D[Use ACTIVE]
->     C --> E[Use PASSIVE]
->     D --> F[Example:<br/>Steve Jobs designed<br/>the iPhone]
->     E --> G[Example:<br/>The iPhone was<br/>designed in 2007]
->     style D fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_06.svg]]
 
 ---
 
@@ -540,30 +483,7 @@ dg-publish: true
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Passive Voice))
-    Present Simple
-      is/are + PP
-      General facts
-      Current situations
-      Product descriptions
-    Past Simple
-      was/were + PP
-      Completed actions
-      Historical facts
-      Past events
-    When to Use
-      Unknown agent
-      Obvious agent
-      Focus on object
-      Formal writing
-    Structure
-      Subject
-      be verb
-      Past Participle
-      by + agent optional
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_07.svg]]
 
 ---
 
@@ -609,16 +529,7 @@ mindmap
 > |**Passive forms**|Product descriptions|Sound natural and professional|
 > |**Transformations**|Speaking practice|Apply grammar fluently|
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Materials] --> B[Grammar:<br/>Passive Voice]
->     B --> C[Functional Language:<br/>Real Descriptions]
->     C --> D[Speaking:<br/>Natural Use]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Passive_Voice_(Present_+_Past)_08.svg]]
 
 ---
 

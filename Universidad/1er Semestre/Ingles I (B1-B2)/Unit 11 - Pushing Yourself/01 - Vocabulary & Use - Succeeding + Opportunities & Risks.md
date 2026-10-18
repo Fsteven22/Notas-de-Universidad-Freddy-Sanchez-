@@ -34,23 +34,7 @@ dg-publish: true
 > |**Motivation**|"Don't give up, keep pushing yourself"|
 > |**Goal-setting**|"My goal is to succeed in this challenge"|
 
-```mermaid
-graph TD
-    A[Personal Growth] --> B[Set Goals]
-    B --> C[Face Challenges]
-    C --> D[Take Risks]
-    D --> E{Evaluate}
-    E -->|Positive| F[Rewards &<br/>Success]
-    E -->|Negative| G[Learn &<br/>Improve]
-    G --> B
-    F --> H[New Goals]
-    H --> B
-    
-    style B fill:#e1ffe1
-    style D fill:#fff4e1
-    style F fill:#e1f5ff
-    style G fill:#ffe1e1
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_01.svg]]
 
 ---
 
@@ -96,22 +80,7 @@ graph TD
 > 
 > **Visualización del proceso de éxito:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Motivation] --> B[Set Goal]
->     B --> C[Make Effort]
->     C --> D[Face Challenge]
->     D --> E{Overcome?}
->     E -->|Yes| F[Progress]
->     E -->|No| G[Learn from Failure]
->     G --> C
->     F --> H[Achieve Success]
->     H --> I[Improve Further]
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
->     style G fill:#ffe1e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_02.svg]]
 >
 
 > [!success] 🎯 Frases Comunes con Vocabulario de Éxito
@@ -208,26 +177,7 @@ graph TD
 > 
 > **Matriz de decisión:**
 > 
-> ```mermaid
-> graph TD
->     A[Opportunity] --> B{Evaluate}
->     B --> C[Consider Advantages]
->     B --> D[Consider Disadvantages]
->     B --> E[Assess Risks]
->     B --> F[Identify Rewards]
->     C --> G[Make Decision]
->     D --> G
->     E --> G
->     F --> G
->     G --> H{Result}
->     H -->|Positive| I[Success!]
->     H -->|Negative| J[Learn & Adjust]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style G fill:#e1f5ff
->     style I fill:#ccffcc
->     style J fill:#ffcccc
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_03.svg]]
 >
 
 > [!tip] 🎯 Frases para Analizar Decisiones
@@ -643,43 +593,7 @@ graph TD
 
 ## 📊 Visual Summary
 
-```mermaid
-mindmap
-  root((Unit 11<br/>Vocabulary))
-    Succeeding
-      Verbs
-        succeed
-        achieve
-        improve
-        overcome
-      Nouns
-        effort
-        challenge
-        progress
-        motivation
-        discipline
-      Adjectives
-        motivated
-        determined
-        ambitious
-        persistent
-    Opportunities & Risks
-      Evaluation
-        consider
-        evaluate
-        analyze
-        weigh
-      Factors
-        advantage
-        disadvantage
-        risk
-        reward
-      Decision
-        goal
-        option
-        purpose
-        result
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_04.svg]]
 
 ---
 
@@ -713,17 +627,7 @@ mindmap
 > 
 > **Connection map:**
 > 
-> ```mermaid
-> graph LR
->     A[Vocabulary:<br/>Goals & Success] --> B[Grammar:<br/>Phrasal Verbs]
->     A --> C[Grammar:<br/>Conditionals]
->     B --> D[Real Use:<br/>Motivational<br/>Language]
->     C --> D
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Succeeding_+_Opportunities_&_Risks_05.svg]]
 
 ---
 

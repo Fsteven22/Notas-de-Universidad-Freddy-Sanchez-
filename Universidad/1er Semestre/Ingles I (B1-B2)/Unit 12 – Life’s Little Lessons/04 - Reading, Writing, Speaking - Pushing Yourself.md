@@ -20,23 +20,7 @@ dg-publish: true
 > 
 > **Conexión con las secciones anteriores:**
 > 
-> ```mermaid
-> graph TD
->     A[Section 1:<br/>Vocabulary] --> E[Section 4:<br/>Real Application]
->     B[Section 2:<br/>Grammar] --> E
->     C[Section 3:<br/>Functional Language] --> E
->     E --> F[Reading:<br/>Understand texts<br/>about success]
->     E --> G[Writing:<br/>Express your<br/>experiences]
->     E --> H[Speaking:<br/>Discuss goals<br/>& motivation]
->     F --> I[Real-world<br/>English mastery]
->     G --> I
->     H --> I
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1e1
->     style I fill:#f0e1ff
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Pushing_Yourself_01.svg]]
 > 
 > **En esta nota desarrollarás:**
 > 
@@ -1074,35 +1058,7 @@ dg-publish: true
 
 ## 📈 Visual Summary
 
-```mermaid
-mindmap
-  root((Unit 11<br/>Application))
-    Reading
-      Success stories
-      Motivational texts
-      Comprehension skills
-      Vocabulary in context
-    Writing
-      Personal essays
-      Goal descriptions
-      Advice letters
-      Motivational content
-    Speaking
-      Presentations
-      Discussions
-      Role-plays
-      Debates
-    Integrated Tasks
-      Video scripts
-      Workshops
-      Podcasts
-      Real-world practice
-    Self-Assessment
-      Skills checklist
-      Reflection
-      Action planning
-      Continuous improvement
-```
+![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Pushing_Yourself_02.svg]]
 
 ---
 
@@ -1159,16 +1115,7 @@ mindmap
 > 
 > ✅ **Vocabulary** about success, goals, risks, and opportunities ✅ **Grammar** including phrasal verbs and unreal conditionals ✅ **Functional language** for motivation and encouragement ✅ **Real communication** through reading, writing, and speaking
 > 
-> ```mermaid
-> graph LR
->     A[Unit 11<br/>Started] --> B[Vocabulary<br/>Learned]
->     B --> C[Grammar<br/>Mastered]
->     C --> D[Functions<br/>Practiced]
->     D --> E[Skills<br/>Applied]
->     E --> F[Confidence<br/>Achieved!]
->     style A fill:#e1ffe1
->     style F fill:#ffd700
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Pushing_Yourself_03.svg]]
 > 
 > **Remember:**
 > 

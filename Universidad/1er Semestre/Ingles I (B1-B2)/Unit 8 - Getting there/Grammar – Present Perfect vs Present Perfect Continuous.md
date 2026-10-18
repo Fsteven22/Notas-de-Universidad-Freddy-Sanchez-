@@ -16,15 +16,7 @@ tags: [ingles-a1a2, grammar, present-perfect, continuous, unit8]
 > | **Present Perfect Simple** | ¿Qué pasó (y qué importa ahora)? | *I have finished.* |
 > | **Present Perfect Continuous** | ¿Cuánto lleva pasando? | *I have been waiting.* |
 >
-> ```mermaid
-> graph TD
->     A[PRESENT PERFECT] --> B[Simple<br/>resultado]
->     A --> C[Continuous<br/>duración]
->     B --> D["have/has + participio"]
->     C --> E["have/has been + -ing"]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/Grammar_–_Present_Perfect_vs_Present_Perfect_Continuous_01.svg]]
 
 ---
 
@@ -68,16 +60,7 @@ tags: [ingles-a1a2, grammar, present-perfect, continuous, unit8]
 
 ## ⚖️ Decisión: Simple o Continuous
 
-```mermaid
-flowchart TD
-    A["¿Qué quieres decir?"] --> B{"¿Cuentas resultados<br/>o duración?"}
-    B -->|"Resultados/logros"| C["SIMPLE<br/>has written 3 books"]
-    B -->|"Duración/proceso"| D{"¿Verbo de estado?"}
-    D -->|"Sí"| C
-    D -->|"No"| E["CONTINUOUS<br/>has been working"]
-    style C fill:#e1ffe1
-    style E fill:#e1f5ff
-```
+![[Diagramas/Grammar_–_Present_Perfect_vs_Present_Perfect_Continuous_02.svg]]
 
 > [!note] 📋 Comparación en 1 tabla
 >
