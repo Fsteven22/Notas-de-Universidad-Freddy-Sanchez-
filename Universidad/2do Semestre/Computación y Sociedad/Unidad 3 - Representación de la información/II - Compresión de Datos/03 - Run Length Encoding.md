@@ -13,14 +13,7 @@ dg-publish: true
 > - Hoy en día sigue siendo la base de formatos como `.bmp` (en algunos modos), `.tiff`, y se usa dentro de otros algoritmos más complejos como parte del pipeline de compresión de video e imagen.
 > - Es especialmente efectivo en datos con **muchas repeticiones consecutivas**: imágenes con áreas de color sólido, faxes, iconos simples, o ciertos tipos de datos de sensores.
 > 
-> ```mermaid
-> graph TD
->     A["Datos con repeticiones consecutivas"] --> B["Contar 'corridas' (runs)"]
->     B --> C["Reemplazar cada corrida por: valor + cantidad"]
->     C --> D["Datos comprimidos"]
->     style A fill:#e1f5ff
->     style D fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/03_-_Run_Length_Encoding_01.svg]]
 
 ---
 
@@ -119,16 +112,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Conviene usar RLE?
 
-```mermaid
-graph TD
-    A["¿Los datos tienen muchas repeticiones consecutivas?"] --> B{"¿Las corridas son largas (muchos elementos seguidos)?"}
-    B -->|Sí| C["RLE es una buena opción"]
-    B -->|No, las repeticiones son cortas o dispersas| D["RLE podría agrandar el archivo"]
-    D --> E["Considerar otro algoritmo (Keyword Encoding, Huffman)"]
-    style A fill:#e1f5ff
-    style C fill:#1e3a5f,color:#fff
-    style E fill:#f5e1ff
-```
+![[Diagramas/03_-_Run_Length_Encoding_02.svg]]
 
 ---
 

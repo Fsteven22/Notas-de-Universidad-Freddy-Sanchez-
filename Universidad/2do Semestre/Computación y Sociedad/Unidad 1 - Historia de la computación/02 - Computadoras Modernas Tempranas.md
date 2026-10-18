@@ -10,18 +10,7 @@ dg-publish: true
 >
 > Entre finales del siglo XIX y mediados del XX, los avances en electromecánica y electrónica permitieron dar el salto de las calculadoras mecánicas a las primeras computadoras programables. Este período sentó las bases de la arquitectura que usamos hasta hoy.
 >
-> ```mermaid
-> graph LR
->     A[Máquinas mecánicas<br/>s. XIX] --> B[Tabuladores<br/>electromecánicos]
->     B --> C[Teoría de<br/>computación]
->     C --> D[Primeras computadoras<br/>electrónicas]
->     D --> E[Arquitectura<br/>Von Neumann]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_01.svg]]
 
 ---
 
@@ -50,17 +39,7 @@ dg-publish: true
 >
 > Este modelo teórico sentó las bases del concepto moderno de **algoritmo** y demostró que mediante dispositivos formales y simples era posible resolver cualquier problema matemático representable mediante un algoritmo.
 >
-> ```mermaid
-> graph TD
->     A[Cinta infinita<br/>de símbolos] --> B[Cabezal lector/escritor]
->     B --> C[Tabla de reglas<br/>estado + símbolo → acción]
->     C --> D[Nuevo estado<br/>+ símbolo escrito]
->     D --> B
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_02.svg]]
 >
 > | Dato | Detalle |
 > |---|---|
@@ -116,17 +95,7 @@ dg-publish: true
 >
 > ### Arquitectura Von Neumann
 >
-> ```mermaid
-> graph TD
->     CPU["CPU
->     ├── Unidad de Control
->     ├── ALU (Unidad Aritmético-Lógica)
->     └── Registros"] <--> MEM[Memoria Principal<br/>Datos + Instrucciones]
->     CPU <--> IO[Sistema de<br/>Entrada / Salida]
->     style CPU fill:#e1f5ff
->     style MEM fill:#e1ffe1
->     style IO fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_03.svg]]
 >
 > | Componente | Función |
 > |---|---|
@@ -150,16 +119,7 @@ dg-publish: true
 
 > [!summary] 📅 De Hollerith a Von Neumann
 >
-> ```mermaid
-> timeline
->     title Computadoras Modernas Tempranas
->     1890 : Hollerith — Tabulador electromecánico para el censo
->     1937 : Alan Turing — Máquina de Turing y teoría de algoritmos
->     1944 : Harvard — Mark I liderada por Howard H. Aiken
->     1947 : UPenn — ENIAC, primera computadora electrónica
->     1950 : Von Neumann — EDVAC y arquitectura de programa almacenado
->     1951 : UNIVAC — Primera computadora comercial
-> ```
+> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_04.svg]]
 
 ---
 

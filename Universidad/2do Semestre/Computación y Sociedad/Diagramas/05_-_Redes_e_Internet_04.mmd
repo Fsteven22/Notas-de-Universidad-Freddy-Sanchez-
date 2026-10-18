@@ -1,0 +1,12 @@
+graph TD
+    A[Red LAN — Universidad] --- R1[Router]
+    B[Red LAN — Empresa] --- R1
+    R1 --- R2[Router]
+    R2 --- C[Red WAN — ISP]
+    C --- R3[Router]
+    R3 --- D[Red LAN — Hogar]
+    R3 --- E[Red LAN — Gobierno]
+    style R1 fill:#fff4e1
+    style R2 fill:#fff4e1
+    style R3 fill:#fff4e1
+    style C fill:#e1f5ff

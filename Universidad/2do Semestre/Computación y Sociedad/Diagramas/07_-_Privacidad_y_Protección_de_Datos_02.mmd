@@ -1,0 +1,9 @@
+flowchart TD
+    A[¿Qué quieres proteger?] --> B{¿Datos viajando<br/>por Internet?}
+    B -->|Sí| C[Encriptación / HTTPS]
+    A --> D{¿El perímetro de tu<br/>red o equipo?}
+    D -->|Sí| E[Firewall]
+    A --> F{¿Verificar que quien<br/>accede es realmente<br/>el dueño?}
+    F -->|Sí| G{¿Tienes forma de<br/>capturar rasgos físicos<br/>del usuario?}
+    G -->|Sí| H[Biometría]
+    G -->|No| I[Contraseña + verificación<br/>en dos pasos]

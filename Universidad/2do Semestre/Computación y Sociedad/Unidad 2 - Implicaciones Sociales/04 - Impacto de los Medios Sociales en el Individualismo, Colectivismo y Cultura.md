@@ -10,19 +10,7 @@ dg-publish: true
 > 
 > Los medios sociales pueden verse desde dos perspectivas contrapuestas sobre su efecto en la sociedad:
 > 
-> ```mermaid
-> graph LR
->     A[Medios Sociales] --> B[Individualismo]
->     A --> C[Colectivismo]
->     B --> B1["Cada persona construye<br>su identidad digital"]
->     B --> B2[Burbujas de filtro]
->     B --> B3[Desconexión presencial]
->     C --> C1[Movimientos sociales]
->     C --> C2[Flash mobs]
->     C --> C3[Comunidades en línea]
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_01.svg]]
 
 ---
 
@@ -50,22 +38,7 @@ dg-publish: true
 > 
 > Su investigación original analizó empleados de IBM en más de 50 países, y con el tiempo expandió el modelo a 6 dimensiones:
 > 
-> ```mermaid
-> graph TD
->     H["Modelo de Hofstede"] --> D1["1: Distancia al Poder"]
->     H --> D2["2: Individualismo vs Colectivismo"]
->     H --> D3["3: Masculinidad vs Feminidad"]
->     H --> D4["4: Evasión de Incertidumbre"]
->     H --> D5["5: Orientación a Largo Plazo"]
->     H --> D6["6: Indulgencia vs Restricción"]
->     style H fill:#e1f5ff
->     style D1 fill:#e1ffe1
->     style D2 fill:#fff4e1
->     style D3 fill:#ffe1f5
->     style D4 fill:#f5e1ff
->     style D5 fill:#ffe1e1
->     style D6 fill:#e1fff4
-> ```
+> ![[Diagramas/04_-_Impacto_de_los_Medios_Sociales_en_el_Individualismo,_Colectivismo_y_Cultura_02.svg]]
 > 
 > |Dimensión|Descripción|Extremo bajo|Extremo alto|
 > |---|---|---|---|

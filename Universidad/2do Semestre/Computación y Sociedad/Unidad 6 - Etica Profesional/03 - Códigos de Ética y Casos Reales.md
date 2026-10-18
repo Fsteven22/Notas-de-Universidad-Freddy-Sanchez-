@@ -10,14 +10,7 @@ dg-publish: true
 > 
 > Las dos notas anteriores cubrieron la teoría: la diferencia entre ética y moral, qué es un dilema ético, y las falacias que distorsionan el juicio ético en computación. Esta nota cierra el bloque con la parte **institucional y práctica**: los códigos formales que la industria de la computación ha adoptado para guiar la conducta profesional, y un caso real donde la ética profesional se puso a prueba.
 > 
-> ```mermaid
-> graph TD
->     A[Códigos de Ética] --> B[CEI - 10 Mandamientos]
->     A --> C[ACM Code of Ethics]
->     A --> D[IEEE/ACM Software<br/>Engineering Code]
->     A --> E[Caso Real: Samsung]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_01.svg]]
 
 ---
 
@@ -97,15 +90,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué código consultar?
 
-```mermaid
-flowchart TD
-    A[Situación ética en computación] --> B{¿Necesitas principios<br/>generales, accesibles<br/>para cualquier usuario?}
-    B -->|Sí| C[10 Mandamientos - CEI]
-    A --> D{¿Eres un profesional<br/>de computación buscando<br/>responsabilidad personal?}
-    D -->|Sí| E[ACM Code of Ethics]
-    A --> F{¿Trabajas específicamente<br/>en ingeniería de software?}
-    F -->|Sí| G[IEEE/ACM Software<br/>Engineering Code]
-```
+![[Diagramas/03_-_Códigos_de_Ética_y_Casos_Reales_02.svg]]
 
 ---
 

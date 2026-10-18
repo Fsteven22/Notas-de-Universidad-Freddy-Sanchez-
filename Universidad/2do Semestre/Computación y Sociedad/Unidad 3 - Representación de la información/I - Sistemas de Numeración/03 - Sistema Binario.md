@@ -9,15 +9,7 @@ dg-publish: true
 >
 > El sistema binario usa únicamente dos símbolos: **0** y **1**. Es la base de toda la computación moderna porque coincide exactamente con los dos estados físicos que puede distinguir un circuito eléctrico (ver [[01 - Análogo vs Digital]]): voltaje alto y voltaje bajo.
 >
-> ```mermaid
-> graph LR
->     A[Sistema Binario] --> B[Base 2]
->     A --> C[Símbolos: 0, 1]
->     A --> D[Notación posicional<br/>con potencias de 2]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Sistema_Binario_01.svg]]
 
 ![[ChatGPT Image 21 jun 2026, 13_15_18.png]]
 
@@ -99,16 +91,7 @@ dg-publish: true
 > - 16 bits: máximo = 2¹⁶ − 1 = **65535**
 > - 32 bits: máximo = 2³² − 1 = **4294967295**
 >
-> ```mermaid
-> graph LR
->     A["¿Cuántos bits<br/>para N?"] -->|log₂ N| B["Número de bits<br/>n"]
->     B -->|2ⁿ - 1| C["Máximo<br/>representable"]
->     C -->|+1| D["Siguiente potencia<br/>de 2"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/03_-_Sistema_Binario_02.svg]]
 
 ---
 
@@ -154,21 +137,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sistema Binario))
-    Símbolos
-      0 y 1
-    Capacidad
-      2^n combinaciones con n bits
-      8 bits = 256 valores = 1 byte
-    Notación posicional
-      Igual que decimal pero base 2
-      Cada cifra multiplica una potencia de 2
-    Aplicación
-      Base de conversión a otros sistemas
-      Fundamento de hardware digital
-```
+![[Diagramas/03_-_Sistema_Binario_03.svg]]
 
 ---
 

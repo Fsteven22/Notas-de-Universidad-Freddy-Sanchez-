@@ -13,17 +13,7 @@ dg-publish: true
 > - **Keyword encoding** es la técnica de sustituir palabras o símbolos frecuentes por códigos más cortos — la base conceptual detrás de casi todo algoritmo de compresión de texto, incluyendo Huffman más adelante.
 > - Hoy en día, ASCII sigue siendo la base de Unicode (el estándar moderno que soporta miles de idiomas y emojis), ya que los primeros 128 caracteres de Unicode son idénticos a ASCII.
 > 
-> ```mermaid
-> graph TD
->     A[Texto] --> B[Codificación ASCII]
->     B --> C["Cada carácter = 8 bits"]
->     A --> D[Keyword Encoding]
->     D --> E["Palabras frecuentes = código corto"]
->     C --> F[% de ahorro de bits]
->     E --> F
->     style A fill:#e1f5ff
->     style F fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/02_-_Keyword_Encoding_y_ASCII_01.svg]]
 
 ---
 
@@ -104,18 +94,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Vale la pena aplicar Keyword Encoding?
 
-```mermaid
-graph TD
-    A["¿El texto tiene palabras que se repiten frecuentemente?"] --> B{"¿El texto es lo suficientemente largo?"}
-    B -->|Sí| C["Calcular tamaño del diccionario + texto codificado"]
-    B -->|No, es muy corto| D["Probablemente no vale la pena: el diccionario pesará más que el ahorro"]
-    C --> E{"¿Tamaño comprimido + diccionario < tamaño original?"}
-    E -->|Sí| F["Aplicar Keyword Encoding"]
-    E -->|No| D
-    style A fill:#e1f5ff
-    style F fill:#1e3a5f,color:#fff
-    style D fill:#f5e1ff
-```
+![[Diagramas/02_-_Keyword_Encoding_y_ASCII_02.svg]]
 
 ---
 

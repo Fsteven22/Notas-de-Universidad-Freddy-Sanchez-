@@ -10,18 +10,7 @@ dg-publish: true
 >
 > A medida que el hardware se volvió más potente, la forma de comunicarse con las máquinas también tuvo que evolucionar. Lo que comenzó como secuencias de ceros y unos se transformó progresivamente en lenguajes cada vez más cercanos al lenguaje humano.
 >
-> ```mermaid
-> graph LR
->     A[Lenguaje máquina<br/>1951-1959] --> B[Lenguajes de<br/>alto nivel<br/>1959-1965]
->     B --> C[Sistemas operativos<br/>1965-1971]
->     C --> D[Programación<br/>estructurada<br/>1971-1989]
->     D --> E[POO y WWW<br/>1990-presente]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_01.svg]]
 
 ---
 
@@ -47,14 +36,7 @@ dg-publish: true
 > | **Traductor** | Programa que convierte ensamblador a lenguaje máquina |
 > | **Programadores de sistemas** | Quienes creaban herramientas para facilitar la programación |
 >
-> ```mermaid
-> graph LR
->     A[Instrucciones en<br/>ensamblador] --> B[Programa<br/>ensamblador]
->     B --> C[Instrucciones en<br/>lenguaje máquina]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_02.svg]]
 >
 > > ⚠️ La programación en lenguaje máquina **demandaba mucho tiempo y era propensa a errores**, lo que impulsó la búsqueda de mejores herramientas.
 
@@ -72,16 +54,7 @@ dg-publish: true
 > | **COBOL** | Aplicaciones empresariales y comerciales | 1959 |
 > | **LISP** | Inteligencia artificial e investigación | 1958 |
 >
-> ```mermaid
-> graph TD
->     A[High-level language<br/>FORTRAN · COBOL · LISP]
->     B[Assembly language]
->     C[Machine language]
->     A --> B --> C
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_03.svg]]
 >
 > > 💡 Un compilador traduce el código de alto nivel a lenguaje máquina, permitiendo que el programador se enfoque en resolver el problema y no en los detalles del hardware.
 
@@ -101,20 +74,7 @@ dg-publish: true
 > | **SPSS** | Paquete Estadístico para Ciencias Sociales, escrito en FORTRAN |
 > | **Usuarios no programadores** | Por primera vez, personas sin conocimiento técnico usaban computadoras |
 >
-> ```mermaid
-> graph TD
->     A[Application packages]
->     B[Systems software]
->     C[High-level languages]
->     D[Assembly languages]
->     E[Machine language]
->     A --> B --> C --> D --> E
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_04.svg]]
 >
 > > 💡 Los programadores de sistemas comenzaron a crear **herramientas de software para que otros las usaran**, naciendo así la distinción entre desarrolladores y usuarios finales.
 
@@ -209,19 +169,7 @@ dg-publish: true
 
 > [!summary] 📅 Evolución de los lenguajes de programación
 >
-> ```mermaid
-> timeline
->     title Lenguajes de Programación
->     1954 : FORTRAN — cálculo científico
->     1959 : COBOL — aplicaciones empresariales
->     1958 : LISP — inteligencia artificial
->     1964 : BASIC — programación para principiantes
->     1970 : Pascal — enseñanza de programación estructurada
->     1972 : C — sistemas operativos y bajo nivel
->     1983 : C++ — POO + bajo nivel
->     1991 : Java — POO multiplataforma
->     1991 : Visual Basic / C++ .NET — plataforma Microsoft
-> ```
+> ![[Diagramas/03_-_Historia_del_Software_(5_Generaciones)_05.svg]]
 
 ---
 

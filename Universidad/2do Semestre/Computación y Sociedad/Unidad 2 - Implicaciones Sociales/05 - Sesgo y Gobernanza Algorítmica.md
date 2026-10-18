@@ -12,23 +12,7 @@ dg-publish: true
 > 
 > Los algoritmos son diseñados por personas, entrenados con datos generados por personas, y desplegados en contextos sociales con historia. Todo eso introduce **sesgo**.
 > 
-> ```mermaid
-> graph TD
->     A["Algoritmo"] --> B["¿De dónde viene el sesgo?"]
->     B --> C["Datos de entrenamiento"]
->     B --> D["Diseño del código"]
->     B --> E["Definición del problema"]
->     C --> C1["Datos históricos discriminatorios"]
->     C --> C2["Subrepresentación de grupos"]
->     D --> D1["Variables proxy discriminatorias"]
->     D --> D2["Métricas de éxito mal definidas"]
->     E --> E1["Quién define qué es un 'buen' resultado"]
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_01.svg]]
 
 ---
 
@@ -128,30 +112,7 @@ dg-publish: true
 > 
 > El objetivo es que la automatización no elimine la rendición de cuentas: si un sistema toma una decisión que perjudica a alguien, debe haber un responsable humano identificable.
 > 
-> ```mermaid
-> graph TD
->     G["Gobernanza Algorítmica"] --> T["Transparencia"]
->     G --> A["Auditoría"]
->     G --> R["Rendición de cuentas"]
->     G --> H["Factor humano"]
->     G --> L["Marco legal"]
->     T --> T1["Explicabilidad de decisiones"]
->     T --> T2["Acceso al código y datos"]
->     A --> A1["Revisión independiente"]
->     A --> A2["Detección de sesgos"]
->     R --> R1["Responsable identificable"]
->     R --> R2["Derecho a recurrir"]
->     H --> H1["Humano en el loop"]
->     H --> H2["Revisión de casos límite"]
->     L --> L1["GDPR — Europa"]
->     L --> L2["Leyes de IA emergentes"]
->     style G fill:#e1f5ff
->     style T fill:#e1ffe1
->     style A fill:#fff4e1
->     style R fill:#ffe1f5
->     style H fill:#f5e1ff
->     style L fill:#ffe1e1
-> ```
+> ![[Diagramas/05_-_Sesgo_y_Gobernanza_Algorítmica_02.svg]]
 >
 
 > [!note] 🔧 Principios de la Gobernanza Algorítmica

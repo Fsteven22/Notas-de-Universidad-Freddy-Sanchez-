@@ -1,0 +1,8 @@
+graph TD
+    A["Tabla de frecuencias"] --> B["Construir árbol de Huffman"]
+    B --> C["Asignar 0/1 según rama izquierda/derecha"]
+    C --> D["Código prefijo por símbolo"]
+    D --> E["Símbolos frecuentes = código corto"]
+    D --> F["Símbolos raros = código largo"]
+    style A fill:#e1f5ff
+    style D fill:#1e3a5f,color:#fff

@@ -1,0 +1,15 @@
+graph TD
+    A["¿Cuáles son los bits de exponente?"] --> B{"¿Todos son 0?"}
+    B -->|Sí| C{"¿Mantisa es 0?"}
+    C -->|Sí| D["Cero (+0 o -0)"]
+    C -->|No| E["Número subnormal (muy cercano a 0)"]
+    B -->|No| F{"¿Todos son 1?"}
+    F -->|Sí| G{"¿Mantisa es 0?"}
+    G -->|Sí| H["Infinito (+∞ o -∞)"]
+    G -->|No| I["NaN (Not a Number)"]
+    F -->|No| J["Número normal: (-1)^S × 1.M × 2^(E-127)"]
+    style A fill:#e1f5ff
+    style D fill:#1e3a5f,color:#fff
+    style H fill:#1e3a5f,color:#fff
+    style I fill:#1e3a5f,color:#fff
+    style J fill:#f5e1ff

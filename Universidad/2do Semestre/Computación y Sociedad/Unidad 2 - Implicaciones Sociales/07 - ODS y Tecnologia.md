@@ -32,31 +32,7 @@ dg-publish: true
 
 ## 📋 Los 17 Objetivos — Resumen General
 
-```mermaid
-mindmap
-  root((🌍 17 ODS<br/>Agenda 2030))
-    Personas
-      ODS 1 - Fin de la Pobreza
-      ODS 2 - Hambre Cero
-      ODS 3 - Salud y Bienestar
-      ODS 4 - Educación de Calidad
-      ODS 5 - Igualdad de Género
-    Planeta
-      ODS 6 - Agua Limpia
-      ODS 13 - Acción por el Clima
-      ODS 14 - Vida Submarina
-      ODS 15 - Vida de Ecosistemas Terrestres
-    Prosperidad
-      ODS 7 - Energía Asequible
-      ODS 8 - Trabajo Decente
-      ODS 9 - Industria e Innovación
-      ODS 10 - Reducción de Desigualdades
-      ODS 11 - Ciudades Sostenibles
-      ODS 12 - Consumo Responsable
-    Paz y Alianzas
-      ODS 16 - Paz y Justicia
-      ODS 17 - Alianzas para los Objetivos
-```
+![[Diagramas/07_-_ODS_y_Tecnologia_01.svg]]
 
 ---
 
@@ -387,25 +363,7 @@ mindmap
 
 > [!tip] 📊 ¿Cómo están los países?
 > 
-> ```mermaid
-> graph TD
->     A[🌍 Países del Mundo] --> B[🟢 Países Líderes]
->     A --> C[🟡 Países en Progreso]
->     A --> D[🔴 Países más Rezagados]
->     B --> B1["Nórdicos: Suecia, Dinamarca, Finlandia, etc.<br/>Lideran casi todos los ODS"]
->     B --> B2["Europa Occidental, Japón, Australia, Canadá<br/>Avance sólido con retos climáticos"]
->     C --> C1["China, Brasil, India, América Latina<br/>Grandes avances pero desigualdad persistente"]
->     C --> C2["Asia Oriental: Nepal, Bangladesh, Camboya<br/>Progreso más rápido desde 2015"]
->     D --> D1["África Subsahariana, Yemen, Haití, Myanmar<br/>Conflictos + pobreza + falta de infraestructura"]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style B1 fill:#f0fff0
->     style B2 fill:#f0fff0
->     style C1 fill:#fffdf0
->     style C2 fill:#fffdf0
->     style D1 fill:#fff0f0
-> ```
+> ![[Diagramas/07_-_ODS_y_Tecnologia_02.svg]]
 > 
 > **Dato clave 2025:** Solo el **17–18% de las metas** están en vías de cumplirse para 2030.
 

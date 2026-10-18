@@ -9,18 +9,7 @@ dg-publish: true
 >
 > Convertir entre decimal y binario tiene **dos direcciones** (decimal→binario y binario→decimal), y cada una se complica un poco cuando el número tiene **parte fraccionaria**. Esta nota cubre los cuatro casos con ejemplos resueltos paso a paso.
 >
-> ```mermaid
-> graph TD
->     A[Conversión Decimal/Binario] --> B[Decimal a Binario]
->     A --> C[Binario a Decimal]
->     B --> B1[Enteros:<br/>divisiones sucesivas ÷2]
->     B --> B2[Fracciones:<br/>multiplicaciones sucesivas ×2]
->     C --> C1[Enteros:<br/>suma de potencias de 2]
->     C --> C2[Fracciones:<br/>potencias negativas de 2]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Conversion_Decimal-Binario_01.svg]]
 
 ---
 
@@ -165,22 +154,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Conversión Decimal/Binario))
-    Decimal a Binario entero
-      Divisiones sucesivas entre 2
-      Leer restos de abajo a arriba
-    Binario a Decimal entero
-      Suma de potencias de 2 donde hay 1
-    Parte fraccionaria decimal a binario
-      Multiplicar por 2 repetidamente
-      Tomar parte entera como bit
-      Precisión limitada según dígitos pedidos
-    Parte fraccionaria binaria a decimal
-      Potencias negativas de 2
-      2^-1=0.5, 2^-2=0.25, 2^-3=0.125
-```
+![[Diagramas/04_-_Conversion_Decimal-Binario_02.svg]]
 
 ---
 

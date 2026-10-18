@@ -1,0 +1,9 @@
+graph TD
+    A["¿El dato debe reconstruirse exactamente igual?"] --> B{"¿Es texto, código o datos críticos?"}
+    B -->|Sí| C["Usar compresión SIN pérdida"]
+    B -->|No, es audio/imagen/video| D{"¿Una pequeña pérdida de calidad es aceptable?"}
+    D -->|Sí| E["Usar compresión CON pérdida"]
+    D -->|No, necesito calidad exacta| C
+    style A fill:#e1f5ff
+    style C fill:#1e3a5f,color:#fff
+    style E fill:#f5e1ff

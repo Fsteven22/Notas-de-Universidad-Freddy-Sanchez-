@@ -9,16 +9,7 @@ dg-publish: true
 >
 > El sistema hexadecimal usa base **16**, con 16 símbolos: 0-9 y luego A, B, C, D, E, F para representar los valores 10 a 15. Como $16 = 2^4$, **cada dígito hexadecimal corresponde exactamente a 4 dígitos binarios** — un grupo conocido como **nibble**.
 >
-> ```mermaid
-> graph LR
->     A[Sistema Hexadecimal] --> B[Base 16]
->     A --> C[Dígitos 0-9, A-F]
->     A --> D["16 = 2⁴"]
->     D --> E[1 dígito hex<br/>= 4 bits = 1 nibble]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/06_-_Sistema_Hexadecimal_01.svg]]
 
 ---
 
@@ -176,25 +167,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sistema Hexadecimal))
-    Base 16
-      Dígitos 0-9 y A-F
-      16 = 2⁴
-    Decimal a Hex
-      Divisiones sucesivas entre 16
-      Restos 10-15 se escriben A-F
-    Hex a Decimal
-      Notación posicional con potencias de 16
-    Binario y Hex
-      1 dígito hex = 4 bits nibble
-      Byte = 2 dígitos hex
-    Uso práctico
-      Colores web
-      Direcciones de memoria
-      Códigos de error
-```
+![[Diagramas/06_-_Sistema_Hexadecimal_02.svg]]
 
 ---
 

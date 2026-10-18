@@ -1,0 +1,12 @@
+flowchart TD
+    A[Recibiste un mensaje o<br/>llegaste a un sitio sospechoso] --> B{¿Escribiste la URL<br/>correctamente y aun así<br/>llegaste a un sitio falso?}
+    B -->|Sí| C[Pharming]
+    B -->|No, hiciste clic<br/>en un enlace| D{¿El mensaje parecía<br/>genérico y masivo?}
+    D -->|Sí| E[Phishing]
+    D -->|No, muy personalizado<br/>y dirigido a ti| F[Spear-phishing]
+    A --> G{¿Pagaste dinero directamente<br/>por algo que no existía?}
+    G -->|Sí| H[Scam / Online Auction Fraud]
+    A --> I{¿Solo recibiste correo<br/>no deseado, sin más?}
+    I -->|Sí| J[Spam]
+    A --> K{¿La URL se parecía a una<br/>marca conocida con una<br/>letra distinta?}
+    K -->|Sí| L[Typosquatting]

@@ -9,16 +9,7 @@ dg-publish: true
 >
 > El sistema octal usa base **8**, con dígitos del 0 al 7. Su razón de ser (más allá del decimal) es que $8 = 2^3$, así que **cada dígito octal corresponde exactamente a 3 dígitos binarios**. Esto lo convierte en un "atajo" legible para representar grupos de bits sin pasar por decimal.
 >
-> ```mermaid
-> graph LR
->     A[Sistema Octal] --> B[Base 8]
->     A --> C[Dígitos 0-7]
->     A --> D["8 = 2³"]
->     D --> E[1 dígito octal<br/>= 3 bits]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_-_Sistema_Octal_01.svg]]
 
 ![[ChatGPT Image 14 jul 2026, 21_17_54.png]]
 
@@ -215,21 +206,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sistema Octal))
-    Base 8
-      Dígitos 0-7
-      8 = 2³
-    Decimal a Octal
-      Divisiones sucesivas entre 8
-      Fracción: multiplicar por 8
-    Octal a Decimal
-      Notación posicional con potencias de 8
-    Binario y Octal
-      1 dígito octal = 3 bits
-      Agrupar de 3 en 3 desde el punto/derecha
-```
+![[Diagramas/05_-_Sistema_Octal_02.svg]]
 
 ---
 

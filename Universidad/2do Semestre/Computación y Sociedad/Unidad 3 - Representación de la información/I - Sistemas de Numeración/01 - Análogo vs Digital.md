@@ -9,19 +9,7 @@ dg-publish: true
 >
 > Antes de hablar de sistemas numéricos hay que resolver una pregunta previa: las computadoras manejan texto, números, imágenes, audio y video, pero **¿cómo representan físicamente** toda esa información? La respuesta es que **toda información viaja como una señal eléctrica**, y existen dos formas fundamentalmente distintas de codificar esa señal: **analógica** y **digital**.
 >
-> ```mermaid
-> graph TD
->     A[Información] --> B[Señal Eléctrica]
->     B --> C[Analógica<br/>Continua]
->     B --> D[Digital<br/>Discreta]
->     C --> C1[Voltaje fluctúa<br/>suavemente]
->     D --> D1[Solo 2 estados:<br/>HIGH / LOW]
->     style B fill:#e1f5ff
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
->     style C1 fill:#ffe1e1
->     style D1 fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Análogo_vs_Digital_01.svg]]
 >
 > |Tipo de señal|Naturaleza|Ejemplo físico|
 > |---|---|---|
@@ -73,18 +61,7 @@ dg-publish: true
 >
 > Una computadora no almacena literalmente un "1" o un "0" — almacena un **nivel de voltaje**, y ese voltaje se interpreta como bit según el rango en el que caiga:
 >
-> ```mermaid
-> graph TD
->     A["+5 V"] --> B["Logic HIGH<br/>(Binary 1)"]
->     B --> C["+2 V"]
->     C --> D["Zona Indefinida<br/>(no garantizada)"]
->     D --> E["+0.8 V"]
->     E --> F["Logic LOW<br/>(Binary 0)"]
->     F --> G["0 V"]
->     style B fill:#e1ffe1
->     style D fill:#fff4e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Análogo_vs_Digital_02.svg]]
 >
 > |Rango de voltaje|Estado lógico|Bit|
 > |---|---|---|
@@ -124,28 +101,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Análogo vs Digital))
-    Señal Analógica
-      Continua
-      Irrecuperable al degradarse
-      Voltaje fluctuante
-      Amplitud y frecuencia
-    Señal Digital
-      Discreta
-      Dos estados HIGH/LOW
-      PCM
-      Más fácil de mantener
-    Representación física
-      Logic HIGH 2-5V = 1
-      Logic LOW 0-0.8V = 0
-      Zona indefinida 0.8-2V
-    Conclusión
-      Computadoras usan sistemas
-      de numeración para representar
-      toda la información
-```
+![[Diagramas/01_-_Análogo_vs_Digital_03.svg]]
 
 ---
 

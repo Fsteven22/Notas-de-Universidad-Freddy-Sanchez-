@@ -10,18 +10,7 @@ dg-publish: true
 > 
 > En el lenguaje cotidiano usamos "ética" y "moral" casi como sinónimos. Pero en el contexto profesional — y especialmente en computación, donde las decisiones técnicas tienen consecuencias sociales reales — vale la pena distinguirlos con precisión, porque **no responden a la misma pregunta**.
 > 
-> ```mermaid
-> graph TD
->     A[Ética Profesional] --> B[Ética]
->     A --> C[Moral]
->     B --> D[Principio individual]
->     B --> E[Depende del contexto]
->     C --> F[Costumbre colectiva]
->     C --> G[No depende de la situación]
->     A --> H[Dilema Ético]
->     H --> I[Conflicto entre dos<br/>imperativos éticos]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/01_-_Fundamentos_de_Ética_y_Moral_01.svg]]
 
 ---
 
@@ -96,14 +85,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Es esto un dilema ético?
 
-```mermaid
-flowchart TD
-    A[Situación con tensión moral] --> B{¿Hay dos principios<br/>éticos válidos en conflicto?}
-    B -->|No, solo hay una<br/>opción correcta clara| C[No es un dilema ético<br/>-es una decisión simple-]
-    B -->|Sí| D{¿Cumplir uno implica<br/>necesariamente<br/>transgredir el otro?}
-    D -->|Sí| E[Es un dilema ético]
-    D -->|No, se pueden<br/>conciliar ambos| F[No es un dilema ético<br/>-hay una tercera opción-]
-```
+![[Diagramas/01_-_Fundamentos_de_Ética_y_Moral_02.svg]]
 
 ---
 

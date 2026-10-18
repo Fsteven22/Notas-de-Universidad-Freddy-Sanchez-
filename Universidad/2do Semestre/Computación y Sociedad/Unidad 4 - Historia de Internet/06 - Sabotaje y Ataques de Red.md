@@ -10,16 +10,7 @@ dg-publish: true
 > 
 > No todo ataque informático busca robar información. Algunos tienen un objetivo distinto: **interrumpir un servicio**, dejarlo inaccesible, o simplemente **observar el tráfico** que circula por una red para recolectar información sin que nadie lo note. Esta nota cubre esas dos familias de ataque: el **sabotaje de servicios** (DoS/DDoS) y la **interceptación de tráfico** (sniffers, botnets como infraestructura).
 > 
-> ```mermaid
-> graph TD
->     A[Ataques de Red] --> B[Sabotaje de Servicios]
->     A --> C[Interceptación de Tráfico]
->     B --> D[DoS]
->     B --> E[DDoS]
->     E --> F[Botnets]
->     C --> G[Sniffer]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_01.svg]]
 
 ---
 
@@ -49,22 +40,7 @@ dg-publish: true
 > 
 > La forma más común de realizar un DDoS es a través de una **red de bots (botnet)**, siendo esta técnica el ciberataque más usual y eficaz por su **sencillez tecnológica**.
 
-```mermaid
-flowchart TD
-    A1[Atacante] --> B1[Equipo comprometido 1]
-    A1 --> B2[Equipo comprometido 2]
-    A1 --> B3[Equipo comprometido 3]
-    A1 --> B4[Equipo comprometido N]
-    B1 --> C[Internet]
-    B2 --> C
-    B3 --> C
-    B4 --> C
-    C --> D[Servidor víctima]
-    D --> E["Sobrecarga → servicio caído"]
-    style A1 fill:#5f1e1e,color:#fff
-    style D fill:#1e3a5f,color:#fff
-    style E fill:#5f1e1e,color:#fff
-```
+![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_02.svg]]
 
 > [!warning] ⚠️ DoS vs. DDoS — no confundir
 > 
@@ -102,15 +78,7 @@ flowchart TD
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de ataque de red es?
 
-```mermaid
-flowchart TD
-    A[Un servicio dejó de<br/>responder o va muy lento] --> B{¿El tráfico anómalo<br/>viene de un solo origen<br/>identificable?}
-    B -->|Sí| C[DoS]
-    B -->|No, viene de<br/>miles de IPs distintas| D[DDoS]
-    D --> E{¿Se sospecha que esas IPs<br/>son equipos comprometidos<br/>controlados remotamente?}
-    E -->|Sí| F[Ataque vía Botnet]
-    G[Se detectó tráfico<br/>interceptado/leído<br/>en la red] --> H[Sniffer]
-```
+![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_03.svg]]
 
 ---
 

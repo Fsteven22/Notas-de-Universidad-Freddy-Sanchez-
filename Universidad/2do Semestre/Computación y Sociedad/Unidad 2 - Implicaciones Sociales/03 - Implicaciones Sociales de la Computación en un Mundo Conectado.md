@@ -12,21 +12,7 @@ dg-publish: true
 > 
 > Cada acción individual en plataformas tecnológicas tiene consecuencias colectivas, tanto positivas como negativas.
 > 
-> ```mermaid
-> graph TD
->     A[Tecnología en Sociedad] --> B[Áreas de Impacto]
->     B --> B1[Familia y Adicción]
->     B --> B2[Educación]
->     B --> B3[Transacciones]
->     B --> B4[Comercio Electrónico]
->     B --> B5[Comunicación]
->     B --> B6[Política]
->     style B fill:#e1f5ff
->     style B1 fill:#ffe1e1
->     style B2 fill:#e1ffe1
->     style B3 fill:#fff4e1
->     style B4 fill:#f5e1ff
-> ```
+> ![[Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg]]
 
 ---
 
@@ -109,24 +95,7 @@ dg-publish: true
 > 
 > El concepto del **"Yo cuantificado"** (_Quantified Self_) describe la tendencia de usar tecnología para medir, registrar y analizar datos sobre la propia vida — desde la salud física hasta los hábitos diarios.
 > 
-> ```mermaid
-> graph LR
->     A["Yo Cuantificado"] --> B["Salud física"]
->     A --> C["Actividad y movimiento"]
->     A --> D["Sueño y descanso"]
->     A --> E["Estado emocional"]
->     A --> F["Productividad"]
->     B --> B1["Frecuencia cardíaca<br>Oxigenación<br>Glucosa"]
->     C --> C1["Pasos<br>Calorías<br>GPS"]
->     D --> D1["Ciclos de sueño<br>Calidad del descanso"]
->     E --> E1["Estrés<br>Variabilidad cardíaca"]
->     F --> F1["Tiempo en pantalla<br>Foco y distracciones"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_02.svg]]
 > 
 > |Dispositivo / Plataforma|Datos que recolecta|
 > |---|---|

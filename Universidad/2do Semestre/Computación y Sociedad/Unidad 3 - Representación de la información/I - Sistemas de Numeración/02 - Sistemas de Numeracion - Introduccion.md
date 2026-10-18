@@ -9,16 +9,7 @@ dg-publish: true
 >
 > Un **sistema de numeración** define un conjunto de **signos** (símbolos) y **reglas** para expresar números. No es la única forma posible de representar cantidades — a lo largo de la historia han existido sistemas muy distintos entre sí, cada uno con sus propios símbolos y convenciones de combinación.
 >
-> ```mermaid
-> graph TD
->     A[Sistema de Numeración] --> B[Conjunto de signos]
->     A --> C[Reglas de combinación]
->     B --> D["Ej: 0,1,2...9 / I,V,X... / A-F"]
->     C --> E["Ej: notación posicional"]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_01.svg]]
 
 ---
 
@@ -44,17 +35,7 @@ dg-publish: true
 >
 > En el mundo de la computación, prácticamente todo el trabajo de representación numérica gira en torno a **cuatro sistemas**:
 >
-> ```mermaid
-> graph LR
->     A[Sistemas en Computación] --> B[Binario<br/>Base 2]
->     A --> C[Octal<br/>Base 8]
->     A --> D[Decimal<br/>Base 10]
->     A --> E[Hexadecimal<br/>Base 16]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_02.svg]]
 >
 > |Sistema|Base|Dígitos disponibles|
 > |---|---|---|
@@ -100,29 +81,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sistemas de Numeración))
-    Definición
-      Conjunto de signos
-      Reglas para expresar números
-    Ejemplos históricos
-      Romano
-      Arábigo tradicional
-      Decimal moderno
-    Sistemas en computación
-      Binario base 2
-      Octal base 8
-      Decimal base 10
-      Hexadecimal base 16
-    Relación clave
-      2, 8 y 16 son potencias de 2
-      Conversión directa por agrupación de bits
-    Roles
-      Binario = hardware
-      Octal/Hex = legibilidad humana
-      Decimal = uso cotidiano
-```
+![[Diagramas/02_-_Sistemas_de_Numeracion_-_Introduccion_03.svg]]
 
 ---
 

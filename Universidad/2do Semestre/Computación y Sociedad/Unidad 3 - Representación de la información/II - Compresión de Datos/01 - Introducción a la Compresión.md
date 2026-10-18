@@ -13,17 +13,7 @@ dg-publish: true
 > - Hoy en día, la compresión está en todas partes: un archivo `.zip`, una foto `.jpg`, un video en streaming, o una llamada por videollamada — todos dependen de algoritmos de compresión funcionando en tiempo real.
 > - Sin compresión, plataformas como Netflix o Spotify serían imposibles de operar al costo de ancho de banda que usarías sin comprimir.
 > 
-> ```mermaid
-> graph TD
->     A[Datos originales] --> B[Algoritmo de compresión]
->     B --> C[Con pérdida]
->     B --> D[Sin pérdida]
->     C --> E[Menor tamaño, se descarta info]
->     D --> F[Se puede reconstruir 100% del original]
->     style A fill:#e1f5ff
->     style C fill:#f5e1ff
->     style D fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/01_-_Introducción_a_la_Compresión_01.svg]]
 
 ---
 
@@ -95,17 +85,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de compresión usar?
 
-```mermaid
-graph TD
-    A["¿El dato debe reconstruirse exactamente igual?"] --> B{"¿Es texto, código o datos críticos?"}
-    B -->|Sí| C["Usar compresión SIN pérdida"]
-    B -->|No, es audio/imagen/video| D{"¿Una pequeña pérdida de calidad es aceptable?"}
-    D -->|Sí| E["Usar compresión CON pérdida"]
-    D -->|No, necesito calidad exacta| C
-    style A fill:#e1f5ff
-    style C fill:#1e3a5f,color:#fff
-    style E fill:#f5e1ff
-```
+![[Diagramas/01_-_Introducción_a_la_Compresión_02.svg]]
 
 ---
 

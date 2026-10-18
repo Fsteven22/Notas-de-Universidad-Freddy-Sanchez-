@@ -10,18 +10,7 @@ dg-publish: true
 >
 > Mucho antes de las computadoras electrónicas, los humanos ya necesitaban calcular: medir el tiempo, contar cosechas, registrar datos. Cada instrumento creado fue un paso hacia lo que hoy conocemos como computación.
 >
-> ```mermaid
-> graph TD
->     A[Necesidad de calcular] --> B[Instrumentos físicos]
->     B --> C[Máquinas mecánicas]
->     C --> D[Máquinas programables]
->     D --> E[Computación moderna]
->     style A fill:#fff4e1
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_01.svg]]
 
 ---
 
@@ -139,17 +128,7 @@ dg-publish: true
 
 > [!summary] 📅 Del ábaco a Babbage
 >
-> ```mermaid
-> timeline
->     title Orígenes de la Computación
->     2600 a.C. : Stonehenge como calendario astronómico
->     2400 a.C. : Ábaco en Mesopotamia y China
->     1642 : Pascalina — suma y resta (Pascal)
->     1694 : Rueda de Leibniz — 4 operaciones
->     1800s : Telar de Jacquard — tarjetas perforadas
->     1837 : Motor Analítico (Babbage) — primera computadora de propósito general
->     1843 : Ada Lovelace escribe el primer algoritmo
-> ```
+> ![[Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_02.svg]]
 
 ---
 

@@ -12,25 +12,7 @@ dg-publish: true
 > 
 > _Arturo Serrano, Evelio Martínez — "La Brecha Digital: Mitos y Realidades", México, 2003_
 > 
-> ```mermaid
-> graph TD
->     A[Brecha Digital] --> B[Causas]
->     A --> C[Efectos]
->     B --> B1[Geográficas]
->     B --> B2[Económicas]
->     B --> B3[Culturales]
->     B --> B4[Género]
->     B --> B5[Políticos]
->     B --> B6[Étnicos]
->     B --> B7[Generacionales]
->     C --> C1[Pobreza]
->     C --> C2[Desaceleración Económica]
->     C --> C3[Desinformación]
->     C --> C4[Inaccesibilidad a servicios]
->     C --> C5[Aumenta la desigualdad]
->     style B fill:#e1f5ff
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Brecha_Digital_01.svg]]
 
 ---
 

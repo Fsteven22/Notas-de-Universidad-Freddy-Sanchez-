@@ -11,14 +11,7 @@ dg-publish: true
 > 
 > Es común dividir esta evolución en generaciones o "versiones" de la Web para estudiar esos cambios.
 > 
-> ```mermaid
-> graph LR
->     A["Web 1.0<br/>Solo lectura"] --> B["Web 2.0<br/>Lectura y escritura"]
->     B --> C["Web 3.0<br/>Datos inteligentes"]
->     C --> D["Web 4.0<br/>Web simbiótica / IA"]
->     style A fill:#e1f5ff
->     style D fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/02_-_Evolución_de_la_Web_01.svg]]
 
 ---
 

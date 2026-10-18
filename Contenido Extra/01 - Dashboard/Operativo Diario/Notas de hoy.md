@@ -22,6 +22,8 @@ Comment
 Persuade - ask
 Convince - tell
 
+Sistema de bases de datos:
+Dependencia funcional completa y parcial
 
 
 

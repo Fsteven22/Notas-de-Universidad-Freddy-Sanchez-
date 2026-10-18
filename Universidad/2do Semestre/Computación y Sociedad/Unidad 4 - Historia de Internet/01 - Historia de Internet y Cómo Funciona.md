@@ -14,16 +14,7 @@ dg-publish: true
 > 
 > Internet (con ARPANET como antecesora) existió casi **25 años antes** que la Web. La red y sus protocolos se construyeron primero; la Web fue una aplicación construida **encima** de esa red ya existente, para hacerla usable por personas comunes y no solo especialistas.
 > 
-> ```mermaid
-> graph TD
->     A["Internet (infraestructura física)"] --> B["Redes, routers, cables"]
->     A --> C["Protocolos: TCP/IP, DNS"]
->     A --> D["World Wide Web (WWW)"]
->     D --> E["Páginas web + HTTP + URLs"]
->     A --> F["Otros usos: email, streaming, videollamadas"]
->     style A fill:#e1f5ff
->     style D fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_01.svg]]
 
 ---
 
@@ -33,16 +24,7 @@ dg-publish: true
 > 
 > La Internet moderna nació como un proyecto militar/académico en plena Guerra Fría, y evolucionó por décadas antes de convertirse en la Web que usamos hoy.
 > 
-> ```mermaid
-> timeline
->     title Historia de las redes: de ARPANET a la WWW
->     1967 : RAND crea ARPANET (usado en la Guerra Fría)
->     1972 : Surge la idea de acordar protocolos comunes para la red
->     1983 : ARPANET se disgrega ; Aparece MILNET (uso militar)
->     1989 : Netware de Novell conecta PCs a un servidor de archivos
->     1990 : ARPANET desaparece ; TCP/IP sustituye a la mayoría de protocolos
->     1991 : Tim Berners-Lee crea la World Wide Web (WWW)
-> ```
+> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_02.svg]]
 >
 
 > [!example]- 🟢 Detalle de cada hito
@@ -71,19 +53,7 @@ dg-publish: true
 > 
 > Cuando escribes una URL o haces clic en un enlace, ocurre un intercambio de solicitud/respuesta entre tu computadora (**cliente**) y la computadora que aloja el sitio (**servidor**):
 > 
-> ```mermaid
-> sequenceDiagram
->     participant U as Usuario
->     participant N as Navegador (Cliente)
->     participant D as DNS
->     participant S as Servidor Web
->     U->>N: Escribe una URL
->     N->>D: ¿Qué IP corresponde a este dominio?
->     D-->>N: Devuelve la dirección IP
->     N->>S: Envía solicitud (Request) a esa IP
->     S-->>N: Responde con texto, imágenes, etc.
->     N-->>U: Muestra la página renderizada
-> ```
+> ![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_03.svg]]
 > 
 > El **navegador** es el software que arma la solicitud, la envía al servidor correcto, y cuando llega la respuesta (texto, imágenes, etc.) la interpreta y la muestra en pantalla.
 
@@ -104,18 +74,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Es un problema de Internet o de la Web?
 
-```mermaid
-graph TD
-    A["No puedo cargar un sitio web"] --> B{"¿Otras apps que usan internet funcionan? (WhatsApp, email, etc.)"}
-    B -->|No, nada funciona| C["Problema de conexión a Internet (red/router/ISP)"]
-    B -->|Sí, solo ese sitio falla| D{"¿Otros sitios web cargan bien?"}
-    D -->|No, ningún sitio carga| E["Problema del navegador o DNS"]
-    D -->|Sí, solo ese sitio| F["Problema del servidor de ese sitio específico"]
-    style A fill:#e1f5ff
-    style C fill:#1e3a5f,color:#fff
-    style E fill:#1e3a5f,color:#fff
-    style F fill:#1e3a5f,color:#fff
-```
+![[Diagramas/01_-_Historia_de_Internet_y_Cómo_Funciona_04.svg]]
 
 ---
 

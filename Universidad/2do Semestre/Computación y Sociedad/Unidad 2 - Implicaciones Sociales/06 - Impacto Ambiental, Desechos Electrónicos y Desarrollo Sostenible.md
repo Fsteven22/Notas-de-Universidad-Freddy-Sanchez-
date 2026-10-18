@@ -10,19 +10,7 @@ dg-publish: true
 > 
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
-> ```mermaid
-> graph LR
->     A["Ciclo de vida<br>de un dispositivo"] --> B["Fabricación"]
->     A --> C["Uso"]
->     A --> D["Descarte"]
->     B --> B1["Extracción de minerales<br>Emisiones de CO2<br>Agua utilizada"]
->     C --> C1["Consumo eléctrico<br>Calor generado<br>Actualizaciones forzadas"]
->     D --> D1["E-waste<br>Metales tóxicos<br>Exportación de residuos"]
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
 
 ---
 
@@ -74,19 +62,7 @@ dg-publish: true
 > 
 > Una fracción importante de los desechos electrónicos generados en países desarrollados es **exportada hacia Asia y América Latina**, muchas veces de forma ilegal o bajo etiquetas engañosas como "donaciones" o "equipos usados".
 > 
-> ```mermaid
-> graph LR
->     A["Países desarrollados<br>EE.UU · Europa · Japón"] -->|"Exportación formal<br>e informal"| B["Asia<br>China · India · Ghana"]
->     A -->|"Flujo regional"| C["América Latina<br>Ecuador · Perú · Brasil"]
->     B --> D["Desmantelamiento<br>informal"]
->     C --> D
->     D --> E["Exposición tóxica<br>en trabajadores"]
->     D --> F["Contaminación de<br>suelo y agua"]
->     style A fill:#e1f5ff
->     style D fill:#ffe1e1
->     style E fill:#ffe1e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_02.svg]]
 > 
 > > ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
 
@@ -110,22 +86,7 @@ dg-publish: true
 > 
 > El modelo tradicional es **lineal**: extraer → fabricar → usar → descartar. La **Economía Circular** propone cerrar ese ciclo:
 > 
-> ```mermaid
-> graph TD
->     A["Diseño sostenible"] --> B["Fabricación<br>responsable"]
->     B --> C["Uso prolongado"]
->     C --> D["Reparación<br>y reutilización"]
->     D --> C
->     C --> E["Reciclaje<br>de materiales"]
->     E --> A
->     C -->|"modelo lineal"| F["🗑️ Vertedero"]
->     style A fill:#e1ffe1
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_03.svg]]
 > 
 > **Principios clave:**
 > 
@@ -162,22 +123,7 @@ dg-publish: true
 > 
 > Se apoya en tres pilares interdependientes:
 > 
-> ```mermaid
-> graph TD
->     DS["Desarrollo Sostenible"] --> EC["🌱 Ambiental"]
->     DS --> SO["🤝 Social"]
->     DS --> EC2["💰 Económico"]
->     EC --- SO
->     SO --- EC2
->     EC2 --- EC
->     EC --> EC1["Proteger ecosistemas<br>Reducir emisiones<br>Gestionar residuos"]
->     SO --> SO1["Equidad<br>Salud<br>Educación"]
->     EC2 --> EC3["Crecimiento<br>Empleo<br>Innovación"]
->     style DS fill:#e1f5ff
->     style EC fill:#e1ffe1
->     style SO fill:#fff4e1
->     style EC2 fill:#f5e1ff
-> ```
+> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_04.svg]]
 >
 
 > [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030

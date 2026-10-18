@@ -10,23 +10,7 @@ dg-publish: true
 > 
 > La **accesibilidad** es la posibilidad que tengan todas las personas _sin_ que medien **exclusiones de ningún tipo**, como ser culturales, físicas o técnicas, para acceder a un servicio o llegar a visitar un lugar o utilizar un objeto.
 > 
-> ```mermaid
-> graph TD
->     A[Accesibilidad] --> B[Física]
->     A --> C[Digital / TIC]
->     B --> B1[Rampas para sillas de ruedas]
->     B --> B2[Baños adaptados]
->     C --> C1[WCAG]
->     C --> C2[Tecnologías de apoyo]
->     C2 --> D1[Teclados Braille]
->     C2 --> D2[Magnificadores de pantalla]
->     C2 --> D3[Conversores texto-voz]
->     C2 --> D4[Conversores voz-texto]
->     C2 --> D5[Pantallas adaptadas]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style C2 fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Accesibilidad_y_WCAG_01.svg]]
 
 ---
 
@@ -102,30 +86,7 @@ dg-publish: true
 > 
 > WCAG 2.0 se organiza en una jerarquía de 4 niveles: **Principios → Pautas → Criterios de Conformidad → Técnicas**.
 > 
-> ```mermaid
-> graph TD
->     W["WCAG 2.0<br/>4 Principios"] --> P1["1: Perceptible<br/>(4 pautas, 9 criterios AA)"]
->     W --> P2["2: Operable<br/>(4 pautas, 9 criterios AA)"]
->     W --> P3["3: Comprensible<br/>(3 pautas, 5 criterios AA)"]
->     W --> P4["4: Robusto<br/>(1 pauta, 2 criterios AA)"]
->     P1 --> P1a["1.1 Alternativas de texto"]
->     P1 --> P1b["1.2 Multimedia tempodependiente"]
->     P1 --> P1c["1.3 Adaptable"]
->     P1 --> P1d["1.4 Distinguible"]
->     P2 --> P2a["2.1 Accesible por teclado"]
->     P2 --> P2b["2.2 Tiempo suficiente"]
->     P2 --> P2c["2.3 Sin convulsiones"]
->     P2 --> P2d["2.4 Navegable"]
->     P3 --> P3a["3.1 Legible"]
->     P3 --> P3b["3.2 Predecible"]
->     P3 --> P3c["3.3 Asistencia de entrada"]
->     P4 --> P4a["4.1 Compatible"]
->     style W fill:#e1f5ff
->     style P1 fill:#e1ffe1
->     style P2 fill:#fff4e1
->     style P3 fill:#ffe1f5
->     style P4 fill:#f5e1ff
-> ```
+> ![[Diagramas/02_-_Accesibilidad_y_WCAG_02.svg]]
 >
 > > 📌 **25 criterios de Nivel A** se distribuyen así entre los 4 principios: Perceptible (9), Operable (9), Comprensible (5), Robusto (2).
 
@@ -253,28 +214,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Accesibilidad y WCAG))
-    Accesibilidad
-      Física
-      Digital / TIC
-      Tecnologías de apoyo
-    WCAG 2.0
-      W3C / WAI
-      4 Principios POUR
-      12 Pautas
-      61 Criterios totales
-    Niveles
-      A = 25 criterios
-      AA = 38 criterios acumulados
-      AAA = 61 criterios acumulados
-    Ecuador
-      RTE INEN 288
-      Vigente desde 2016
-      Nivel A desde 2018
-      Nivel AA desde 2020
-```
+![[Diagramas/02_-_Accesibilidad_y_WCAG_03.svg]]
 
 ---
 

@@ -13,18 +13,7 @@ dg-publish: true
 > - A partir de los años 60, casi todas las arquitecturas migraron a **complemento a 2**, porque simplifica enormemente el diseño del hardware aritmético (un solo circuito suma y resta).
 > - Hoy en día, **complemento a 2** es el estándar universal: lo usan procesadores x86, ARM, RISC-V, y prácticamente cualquier lenguaje de programación cuando trabajas con tipos `int` con signo.
 > 
-> ```mermaid
-> graph TD
->     A[Número entero con signo] --> B[Signo-Magnitud]
->     A --> C[Complemento a 2]
->     B --> D[Bit de signo + magnitud separados]
->     C --> E[Codificación unificada]
->     D --> F[Uso histórico / didáctico]
->     E --> G[Estándar en hardware moderno]
->     style A fill:#e1f5ff
->     style C fill:#1e3a5f,color:#fff
->     style G fill:#f5e1ff
-> ```
+> ![[Diagramas/07_-_Números_Negativos_01.svg]]
 
 ---
 
@@ -123,19 +112,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — Convertir un número a Complemento a 2
 
-```mermaid
-graph TD
-    A[¿Tengo un número entero x?] --> B{¿Es positivo o cero?}
-    B -->|Sí| C[Escribir x en binario normal con n bits]
-    B -->|No, es negativo| D["Escribir |x| en binario normal con n bits"]
-    D --> E[Invertir todos los bits]
-    E --> F[Sumar 1 al resultado]
-    F --> G[Ese es -x en complemento a 2]
-    C --> H[Ese es x, listo]
-    style A fill:#e1f5ff
-    style G fill:#1e3a5f,color:#fff
-    style H fill:#1e3a5f,color:#fff
-```
+![[Diagramas/07_-_Números_Negativos_02.svg]]
 
 ---
 

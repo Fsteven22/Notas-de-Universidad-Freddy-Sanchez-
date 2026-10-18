@@ -39,22 +39,7 @@ dg-publish: true
 
 > [!example] 🧠 Orígenes del Sesgo
 > 
-> ```mermaid
-> graph TD
->     A[🗃️ Datos de Entrenamiento Sesgados] --> E[⚠️ IA con Sesgo]
->     B[👨‍💻 Decisiones de Diseño del Algoritmo] --> E
->     C[👥 Sesgos Humanos Incorporados] --> E
->     D[🌍 Datos No Representativos] --> E
->     E --> F[Discriminación Intencional]
->     E --> G[Discriminación No Intencional]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
->     style E fill:#ffcccc
->     style F fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_01.svg]]
 > 
 > - **Datos desequilibrados:** Si el modelo se entrena con más datos de un grupo que de otro, aprenderá a favorecer al grupo mayoritario.
 > - **Sesgos históricos:** Si los datos reflejan discriminaciones del pasado (ej. contratar solo hombres), la IA los aprende y los repite.
@@ -144,16 +129,7 @@ dg-publish: true
 
 > [!warning] ⚙️ Causas Técnicas
 > 
-> ```mermaid
-> graph LR
->     A[LLM genera texto por probabilidad estadística] --> B{¿Tiene datos suficientes?}
->     B -- Sí --> C[Respuesta correcta ✅]
->     B -- No --> D[Inventa una respuesta plausible ❌]
->     D --> E[ALUCINACIÓN]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
->     style E fill:#ffcccc
-> ```
+> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_02.svg]]
 > 
 > |Causa|Descripción|
 > |---|---|
@@ -235,17 +211,7 @@ dg-publish: true
 > |**Impacto principal**|Discriminación, desigualdad social|Desinformación, errores factuales|
 > |**Ejemplo**|Algoritmo que favorece CVs masculinos|IA que inventa una sentencia judicial|
 > 
-> ```mermaid
-> graph TD
->     A[Fallo de IA] --> B[¿Sigue un patrón sistemático?]
->     B -- Sí --> C[🔴 SESGO: Discrimina de forma consistente]
->     B -- No --> D[¿Genera información factualmente incorrecta?]
->     D -- Sí --> E[🟡 ALUCINACIÓN: Inventa con confianza]
->     D -- No --> F[Otro tipo de error]
->     style C fill:#ffe1e1
->     style E fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg]]
 
 ---
 
@@ -277,39 +243,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((IA: Fallos Importantes))
-    Sesgos
-      Origen en datos históricos
-      Tipos
-        Género
-        Racial
-        Geográfico
-        Algorítmico
-      Casos reales
-        Amazon RR.HH.
-        Google News
-        Reconocimiento facial
-      Mitigación
-        Datos diversos
-        Auditorías
-        Regulación
-    Alucinaciones
-      Predicción estadística sin verificación
-      Tipos
-        Confabulación
-        Dominio abierto
-        Dominio cerrado
-      Casos reales
-        Abogados EE.UU. 2023
-        Google Bard
-        Carlos III
-      Mitigación
-        RAG y Grounding
-        Feedback humano
-        Verificación externa
-```
+![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_04.svg]]
 
 ---
 

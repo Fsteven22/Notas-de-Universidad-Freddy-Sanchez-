@@ -1,0 +1,9 @@
+graph TD
+    A[Datos originales] --> B[Algoritmo de compresión]
+    B --> C[Con pérdida]
+    B --> D[Sin pérdida]
+    C --> E[Menor tamaño, se descarta info]
+    D --> F[Se puede reconstruir 100% del original]
+    style A fill:#e1f5ff
+    style C fill:#f5e1ff
+    style D fill:#1e3a5f,color:#fff

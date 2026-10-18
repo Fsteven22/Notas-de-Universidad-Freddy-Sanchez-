@@ -14,14 +14,7 @@ dg-publish: true
 > 
 > HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de cualquier página web. Su evolución —de un lenguaje simple para enlazar documentos de texto, a una plataforma capaz de soportar aplicaciones completas— explica en buena parte cómo fue posible el salto de la [[02 - Evolución de la Web|Web 1.0 estática a la Web 2.0+ dinámica]].
 > 
-> ```mermaid
-> timeline
->     title Evolución de HTML
->     1991 : HTML 1.0 (Tim Berners-Lee, CERN)
->     1997 : HTML 4.0 — soporte oficial de CSS y JavaScript
->     2000 : XHTML — reglas más estrictas basadas en XML
->     2014 : HTML5 (W3C/WHATWG) — multimedia nativa, APIs, diseño responsivo
-> ```
+> ![[Diagramas/03_-_Evolución_del_HTML_01.svg]]
 
 ---
 

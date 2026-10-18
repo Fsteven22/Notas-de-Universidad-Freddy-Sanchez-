@@ -13,16 +13,7 @@ dg-publish: true
 > - Es la base de formatos como `.zip`, `.jpg` (en su etapa final de codificación), `.mp3`, y del algoritmo DEFLATE usado en `.png` y `.gzip`.
 > - Para que Huffman funcione sin ambigüedad al decodificar, los códigos que genera son siempre **códigos prefijos** — el concepto que vemos primero antes de construir el árbol de Huffman.
 > 
-> ```mermaid
-> graph TD
->     A["Tabla de frecuencias"] --> B["Construir árbol de Huffman"]
->     B --> C["Asignar 0/1 según rama izquierda/derecha"]
->     C --> D["Código prefijo por símbolo"]
->     D --> E["Símbolos frecuentes = código corto"]
->     D --> F["Símbolos raros = código largo"]
->     style A fill:#e1f5ff
->     style D fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg]]
 
 ---
 
@@ -82,20 +73,7 @@ dg-publish: true
 > 
 > **Árbol resultante y códigos asignados** (izquierda=0, derecha=1):
 > 
-> ```mermaid
-> graph TD
->     R["Raíz (100)"] --> N1["F (45)"]
->     R --> N2["CDABE (55)"]
->     N2 --> N3["CD (25)"]
->     N2 --> N4["ABE (30)"]
->     N3 --> C["C (12)"]
->     N3 --> D["D (13)"]
->     N4 --> N5["AB (14)"]
->     N4 --> E["E (16)"]
->     N5 --> A["A (5)"]
->     N5 --> B["B (9)"]
->     style R fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_02.svg]]
 > 
 > **Códigos finales:** $F=0$, $C=100$, $D=101$, $A=1100$, $B=1101$, $E=111$
 
@@ -156,18 +134,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — Construir un Código de Huffman
 
-```mermaid
-graph TD
-    A["¿Tengo la tabla de frecuencias de cada símbolo?"] --> B["Ordenar todos los nodos de menor a mayor frecuencia"]
-    B --> C{"¿Queda más de un nodo en la lista?"}
-    C -->|Sí| D["Combinar los dos nodos de menor frecuencia en uno nuevo"]
-    D --> E["Reinsertar el nodo combinado y reordenar"]
-    E --> C
-    C -->|No, solo queda 1 nodo| F["Ese nodo es la raíz del árbol"]
-    F --> G["Asignar 0/1 a cada rama y leer los códigos de raíz a hoja"]
-    style A fill:#e1f5ff
-    style G fill:#1e3a5f,color:#fff
-```
+![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_03.svg]]
 
 ---
 

@@ -10,18 +10,7 @@ dg-publish: true
 >
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
-> ```mermaid
-> graph TD
->     A[Necesidad del cliente] --> B{¿Qué modelo usar?}
->     B --> C[Cascada]
->     B --> D[Espiral]
->     B --> E[Incremental]
->     B --> F[Ágil / SCRUM]
->     style C fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
->     style F fill:#f5e1ff
-> ```
+> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
 
 ---
 
@@ -31,20 +20,7 @@ dg-publish: true
 >
 > El **Modelo Cascada** es el más antiguo y tradicional. Las fases se ejecutan de forma **secuencial y lineal**: cada etapa debe completarse antes de pasar a la siguiente, como el agua cayendo en cascada.
 >
-> ```mermaid
-> graph TD
->     A[Requerimientos del Sistema] --> B[Requerimientos del Software]
->     B --> C[Diseño Preliminar y Detallado]
->     C --> D[Codificación y Depuración]
->     D --> E[Test y Pruebas]
->     E --> F[Operación y Mantenimiento]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f5e1ff
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_02.svg]]
 >
 > ### Fases del modelo
 >
@@ -74,17 +50,7 @@ dg-publish: true
 >
 > El **Modelo Espiral** combina elementos del modelo cascada con la naturaleza iterativa del prototipado. Cada vuelta de la espiral representa una fase del proyecto, con especial énfasis en el **análisis de riesgos** en cada iteración.
 >
-> ```mermaid
-> graph TD
->     A[Determinación de<br/>Objetivos y Alternativas] --> B[Análisis de Riesgos<br/>y Evaluación]
->     B --> C[Desarrollo y<br/>Verificación del Producto]
->     C --> D[Planificación de<br/>la siguiente fase]
->     D --> A
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_03.svg]]
 >
 > ### Cuadrantes de cada iteración
 >
@@ -112,18 +78,7 @@ dg-publish: true
 >
 > El **Modelo Incremental** divide el desarrollo en **incrementos**, cada uno de los cuales añade funcionalidad al sistema. El cliente recibe versiones parciales del producto que ya son funcionales y usables.
 >
-> ```mermaid
-> graph LR
->     A[Incremento 1<br/>Funcionalidad básica] --> B[Entrega 1]
->     B --> C[Incremento 2<br/>+ Funcionalidades] --> D[Entrega 2]
->     D --> E[Incremento n<br/>Producto completo] --> F[Entrega final]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
->     style B fill:#f5e1ff
->     style D fill:#f5e1ff
->     style F fill:#f5e1ff
-> ```
+> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_04.svg]]
 >
 > ### Fases de cada incremento
 >
@@ -152,22 +107,7 @@ dg-publish: true
 >
 > **SCRUM** es el marco de trabajo ágil más popular. Organiza el desarrollo en ciclos cortos llamados **sprints** (generalmente de 2 a 4 semanas), al final de los cuales se entrega un incremento funcional del producto.
 >
-> ```mermaid
-> graph LR
->     A[INICIO<br/>Product Backlog] --> B[Sprint Planning]
->     B --> C[Sprint<br/>1-4 semanas]
->     C --> D{¿Aceptado?}
->     D -->|Sí| E[Puesta en<br/>producción]
->     D -->|No| F[Ajustes y<br/>reincorporación]
->     F --> B
->     C --> G[Revisión y<br/>Retrospectiva]
->     G --> B
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#f5e1ff
->     style E fill:#e1f5ff
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_05.svg]]
 >
 > ### Roles en SCRUM
 >

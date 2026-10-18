@@ -10,19 +10,7 @@ dg-publish: true
 > 
 > Hasta ahora hemos visto amenazas contra la información y la privacidad de las personas. Esta nota cambia de eje: no se trata de proteger datos personales, sino de proteger **creaciones de la mente** — ideas, obras, invenciones — que también tienen valor y también pueden ser robadas o usadas sin autorización.
 > 
-> ```mermaid
-> graph TD
->     A[Propiedad Intelectual] --> B[Derecho de Autor]
->     A --> C[Patentes]
->     A --> D[Trademarks / Marcas]
->     A --> E[Trade Secrets]
->     B --> F[Derechos Patrimoniales]
->     B --> G[Derechos Morales]
->     A --> H[Marco institucional]
->     H --> I[OMPI / WIPO]
->     H --> J[SENADI - Ecuador]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_01.svg]]
 
 ---
 
@@ -100,16 +88,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿A qué organismo o derecho corresponde?
 
-```mermaid
-flowchart TD
-    A[Situación de Propiedad Intelectual] --> B{¿Es un tratado o<br/>marco internacional?}
-    B -->|Sí| C[OMPI / WIPO]
-    B -->|No, es un caso<br/>dentro de Ecuador| D[SENADI]
-    A --> E{¿Busca compensación<br/>económica por el uso<br/>de una obra?}
-    E -->|Sí| F[Derecho patrimonial]
-    A --> G{¿Busca proteger el<br/>reconocimiento o la<br/>integridad de la obra?}
-    G -->|Sí| H[Derecho moral]
-```
+![[Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_02.svg]]
 
 ---
 

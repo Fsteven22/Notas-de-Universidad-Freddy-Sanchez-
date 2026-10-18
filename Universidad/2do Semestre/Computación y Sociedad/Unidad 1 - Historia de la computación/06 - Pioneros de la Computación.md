@@ -10,16 +10,7 @@ dg-publish: true
 >
 > La historia de la computación no es solo la historia de las máquinas — es la historia de las personas que las imaginaron, diseñaron y construyeron. Cada pionero aportó una pieza fundamental al gran rompecabezas que hoy llamamos computación moderna.
 >
-> ```mermaid
-> graph TD
->     A[Pioneros de la Computación] --> B[Matemáticos<br/>y teóricos]
->     A --> C[Ingenieros<br/>y constructores]
->     A --> D[Programadores<br/>y visionarios]
->     style A fill:#f5e1ff
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/06_-_Pioneros_de_la_Computación_01.svg]]
 
 ---
 
@@ -154,16 +145,7 @@ dg-publish: true
 > | **Idea fundamental** | Datos e instrucciones coexisten en la misma memoria |
 > | **Legado** | Base de prácticamente todas las computadoras actuales |
 >
-> ```mermaid
-> graph TD
->     CPU["CPU
->     Unidad de Control
->     ALU · Registros"] <--> MEM[Memoria Principal<br/>Datos + Instrucciones]
->     CPU <--> IO[Sistema E/S]
->     style CPU fill:#e1f5ff
->     style MEM fill:#e1ffe1
->     style IO fill:#fff4e1
-> ```
+> ![[Diagramas/06_-_Pioneros_de_la_Computación_02.svg]]
 >
 > ---
 >
@@ -219,23 +201,7 @@ dg-publish: true
 
 > [!summary] 📅 Todos los pioneros en perspectiva
 >
-> ```mermaid
-> timeline
->     title Pioneros de la Computación
->     1623 : Blaise Pascal — Pascalina
->     1646 : Leibniz — Rueda de 4 operaciones
->     1752 : Jacquard — Telar programable
->     1791 : Charles Babbage — Motor Analítico
->     1815 : Ada Lovelace — Primer algoritmo
->     1860 : Herman Hollerith — Tabulador electromecánico
->     1894 : Norbert Wiener — Cibernética
->     1900 : Howard H. Aiken — Mark I
->     1903 : John von Neumann — Arquitectura moderna
->     1910 : Konrad Zuse — Z3, primera computadora programable
->     1912 : Alan Turing — Máquina de Turing
->     1946 : Robert Metcalfe — Ethernet
->     1955 : Tim Berners-Lee — World Wide Web
-> ```
+> ![[Diagramas/06_-_Pioneros_de_la_Computación_03.svg]]
 
 ---
 

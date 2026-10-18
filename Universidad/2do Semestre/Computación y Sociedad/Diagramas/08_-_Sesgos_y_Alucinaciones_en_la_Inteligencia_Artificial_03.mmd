@@ -1,0 +1,9 @@
+graph TD
+    A[Fallo de IA] --> B[¿Sigue un patrón sistemático?]
+    B -- Sí --> C[🔴 SESGO: Discrimina de forma consistente]
+    B -- No --> D[¿Genera información factualmente incorrecta?]
+    D -- Sí --> E[🟡 ALUCINACIÓN: Inventa con confianza]
+    D -- No --> F[Otro tipo de error]
+    style C fill:#ffe1e1
+    style E fill:#fff4e1
+    style F fill:#e1f5ff

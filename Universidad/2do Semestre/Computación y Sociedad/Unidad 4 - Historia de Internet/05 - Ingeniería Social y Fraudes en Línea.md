@@ -10,17 +10,7 @@ dg-publish: true
 > 
 > No todas las amenazas informáticas atacan directamente al software. Muchas atacan **a la persona**: la manera más eficiente de vulnerar un sistema no siempre es romper el cifrado, sino simplemente **convencer al usuario de que entregue la llave**. Esa es la lógica detrás de toda esta nota.
 > 
-> ```mermaid
-> graph TD
->     A[Ingeniería Social] --> B[Phishing]
->     A --> C[Spear-phishing]
->     A --> D[Pharming]
->     A --> E[Spam]
->     A --> F[Scam]
->     A --> G[Typosquatting]
->     A --> H[Fraude en subastas online]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_01.svg]]
 
 ---
 
@@ -120,20 +110,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de fraude es?
 
-```mermaid
-flowchart TD
-    A[Recibiste un mensaje o<br/>llegaste a un sitio sospechoso] --> B{¿Escribiste la URL<br/>correctamente y aun así<br/>llegaste a un sitio falso?}
-    B -->|Sí| C[Pharming]
-    B -->|No, hiciste clic<br/>en un enlace| D{¿El mensaje parecía<br/>genérico y masivo?}
-    D -->|Sí| E[Phishing]
-    D -->|No, muy personalizado<br/>y dirigido a ti| F[Spear-phishing]
-    A --> G{¿Pagaste dinero directamente<br/>por algo que no existía?}
-    G -->|Sí| H[Scam / Online Auction Fraud]
-    A --> I{¿Solo recibiste correo<br/>no deseado, sin más?}
-    I -->|Sí| J[Spam]
-    A --> K{¿La URL se parecía a una<br/>marca conocida con una<br/>letra distinta?}
-    K -->|Sí| L[Typosquatting]
-```
+![[Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_02.svg]]
 
 ---
 

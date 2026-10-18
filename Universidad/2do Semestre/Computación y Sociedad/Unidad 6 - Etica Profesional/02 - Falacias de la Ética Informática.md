@@ -10,16 +10,7 @@ dg-publish: true
 > 
 > Una **falacia de ética informática** no es un argumento que alguien use conscientemente para justificar algo incorrecto — muchas veces es una **creencia genuina y difundida** que distorsiona el juicio ético de personas por lo demás razonables. Esta nota recopila seis de las más comunes, todas relacionadas con el uso de computadoras.
 > 
-> ```mermaid
-> graph TD
->     A[Falacias de Ética Informática] --> B[Falacia del juego<br/>de computadora]
->     A --> C[Falacia de la<br/>información gratuita]
->     A --> D[Candy-from-a-Baby<br/>Fallacy]
->     A --> E[Hacker's Fallacy]
->     A --> F[Falacia del ciudadano<br/>que respeta la ley]
->     A --> G[Falacia a prueba<br/>de impactos]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/02_-_Falacias_de_la_Ética_Informática_01.svg]]
 
 ---
 
@@ -126,20 +117,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué falacia está en juego?
 
-```mermaid
-flowchart TD
-    A[Justificación de una acción<br/>con una computadora] --> B{¿Se basa en que<br/>'el sistema lo permitió'?}
-    B -->|Sí| C[Falacia del juego de computadora]
-    A --> D{¿Se basa en que<br/>'era fácil copiarlo'?}
-    D -->|Sí, sobre datos/información| E[Falacia de la información gratuita]
-    D -->|Sí, sobre software/trabajo ajeno| F[Candy-from-a-Baby Fallacy]
-    A --> G{¿Se basa en que<br/>'solo quería aprender'?}
-    G -->|Sí| H[Hacker's Fallacy]
-    A --> I{¿Se basa en que<br/>'no es ilegal'?}
-    I -->|Sí| J[Falacia del ciudadano que respeta la ley]
-    A --> K{¿Se basa en que<br/>'no hice daño real'?}
-    K -->|Sí| L[Falacia a prueba de impactos]
-```
+![[Diagramas/02_-_Falacias_de_la_Ética_Informática_02.svg]]
 
 ---
 

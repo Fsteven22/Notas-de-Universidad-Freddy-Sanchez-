@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant U as Usuario
+    participant N as Navegador (Cliente)
+    participant D as DNS
+    participant S as Servidor Web
+    U->>N: Escribe una URL
+    N->>D: ¿Qué IP corresponde a este dominio?
+    D-->>N: Devuelve la dirección IP
+    N->>S: Envía solicitud (Request) a esa IP
+    S-->>N: Responde con texto, imágenes, etc.
+    N-->>U: Muestra la página renderizada

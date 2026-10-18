@@ -1,0 +1,8 @@
+graph LR
+    A[LLM genera texto por probabilidad estadística] --> B{¿Tiene datos suficientes?}
+    B -- Sí --> C[Respuesta correcta ✅]
+    B -- No --> D[Inventa una respuesta plausible ❌]
+    D --> E[ALUCINACIÓN]
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1
+    style E fill:#ffcccc

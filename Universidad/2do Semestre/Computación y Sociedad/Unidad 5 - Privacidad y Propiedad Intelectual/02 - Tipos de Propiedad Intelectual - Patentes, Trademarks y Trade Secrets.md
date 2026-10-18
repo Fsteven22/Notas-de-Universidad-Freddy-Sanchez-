@@ -10,18 +10,7 @@ dg-publish: true
 > 
 > Ya vimos que el **derecho de autor** protege obras literarias y artísticas (incluyendo software). Pero no todo lo que una empresa o persona quiere proteger es una "obra" — a veces es una invención, un nombre comercial, o una fórmula secreta. Cada uno de estos casos tiene **su propia figura legal**, con reglas y duración distintas.
 > 
-> ```mermaid
-> graph TD
->     A[Propiedad Intelectual] --> B[Copyrights<br/>Derecho de Autor]
->     A --> C[Patentes]
->     A --> D[Trademarks<br/>Marcas]
->     A --> E[Trade Secrets<br/>Secretos Comerciales]
->     B --> F[Libros, música,<br/>software, fotos]
->     C --> G[Invenciones, procesos,<br/>tecnologías]
->     D --> H[Nombres, logotipos,<br/>eslóganes]
->     E --> I[Información confidencial<br/>con ventaja competitiva]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_01.svg]]
 
 ---
 
@@ -110,17 +99,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué figura legal aplica?
 
-```mermaid
-flowchart TD
-    A[¿Qué quieres proteger?] --> B{¿Es una invención técnica<br/>nueva y no obvia?}
-    B -->|Sí| C{¿Estás dispuesto a revelar<br/>públicamente cómo funciona?}
-    C -->|Sí| D[Patente]
-    C -->|No| E[Trade Secret]
-    A --> F{¿Es una obra creativa<br/>-libro, música, software-?}
-    F -->|Sí| G[Copyright]
-    A --> H{¿Es un nombre, logo<br/>o eslogan comercial?}
-    H -->|Sí| I[Trademark]
-```
+![[Diagramas/02_-_Tipos_de_Propiedad_Intelectual_-_Patentes,_Trademarks_y_Trade_Secrets_02.svg]]
 
 ---
 

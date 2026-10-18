@@ -10,19 +10,7 @@ dg-publish: true
 > 
 > Barack Obama lo resumió así: *"It's now clear this cyber threat is one of the most serious economic and national security challenges we face as a nation."* Esta nota cierra el bloque de ciberseguridad conectando dos ideas: **el derecho a la privacidad** que toda persona tiene, y los **métodos concretos** con los que se protege (o se vulnera) ese derecho en la práctica.
 > 
-> ```mermaid
-> graph TD
->     A[Privacidad y Protección] --> B[Derecho a la Privacidad]
->     A --> C[Métodos de Protección]
->     C --> D[Biometría]
->     C --> E[Encriptación]
->     C --> F[Firewalls]
->     C --> G[Control de acceso]
->     A --> H[Otras consecuencias]
->     H --> I[Cyberbullying]
->     H --> J[Cyberstalking]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/07_-_Privacidad_y_Protección_de_Datos_01.svg]]
 
 ---
 
@@ -127,17 +115,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué método de protección aplicar?
 
-```mermaid
-flowchart TD
-    A[¿Qué quieres proteger?] --> B{¿Datos viajando<br/>por Internet?}
-    B -->|Sí| C[Encriptación / HTTPS]
-    A --> D{¿El perímetro de tu<br/>red o equipo?}
-    D -->|Sí| E[Firewall]
-    A --> F{¿Verificar que quien<br/>accede es realmente<br/>el dueño?}
-    F -->|Sí| G{¿Tienes forma de<br/>capturar rasgos físicos<br/>del usuario?}
-    G -->|Sí| H[Biometría]
-    G -->|No| I[Contraseña + verificación<br/>en dos pasos]
-```
+![[Diagramas/07_-_Privacidad_y_Protección_de_Datos_02.svg]]
 
 ---
 

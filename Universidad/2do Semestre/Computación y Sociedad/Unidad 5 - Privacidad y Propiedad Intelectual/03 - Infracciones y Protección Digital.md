@@ -10,16 +10,7 @@ dg-publish: true
 > 
 > Las dos notas anteriores definieron **qué** se protege y **con qué figura legal**. Esta nota cierra el bloque con la parte práctica: **cómo se infringe** la propiedad intelectual en el mundo digital, y **qué mecanismos existen** para hacer cumplir esa protección — desde la ingeniería inversa de un producto, hasta el registro de dominios falsos, pasando por la responsabilidad legal de las plataformas y el cifrado técnico del contenido.
 > 
-> ```mermaid
-> graph TD
->     A[Infracciones y Protección Digital] --> B[Ingeniería Inversa]
->     A --> C[Casos de Infracción]
->     C --> D[Napster]
->     A --> E[Cybersquatting]
->     A --> F[Safe Harbor]
->     A --> G[DRM]
->     style A fill:#1e3a5f,color:#fff
-> ```
+> ![[Diagramas/03_-_Infracciones_y_Protección_Digital_01.svg]]
 
 ---
 
@@ -31,15 +22,7 @@ dg-publish: true
 > 
 > La **ingeniería inversa** invierte ese flujo: parte de un producto ya **construido** y trabaja hacia atrás — **construcción → diseño final → diseño básico → prediseño** — para entender cómo fue diseñado, sin haber tenido acceso a los planos o especificaciones originales.
 
-```mermaid
-flowchart LR
-    A1[Prediseño] --> A2[Diseño básico] --> A3[Diseño final] --> A4[Construcción]
-    A4 -.->|Ingeniería inversa| A3
-    A3 -.-> A2
-    A2 -.-> A1
-    style A4 fill:#1e3a5f,color:#fff
-    style A1 fill:#e1ffe1
-```
+![[Diagramas/03_-_Infracciones_y_Protección_Digital_02.svg]]
 
 > [!warning] ⚠️ Ingeniería inversa y propiedad intelectual — la tensión
 > 
@@ -132,17 +115,7 @@ flowchart LR
 
 ## 🧭 Flujograma de Decisión — ¿Qué mecanismo aplica?
 
-```mermaid
-flowchart TD
-    A[Situación de infracción digital] --> B{¿Alguien registró un dominio<br/>parecido a tu marca?}
-    B -->|Sí, con errores de tipeo| C[Typosquatting]
-    B -->|Sí, similar/relacionado<br/>a tu marca| D[Cybersquatting]
-    A --> E{¿Una plataforma aloja<br/>contenido infractor<br/>subido por usuarios?}
-    E -->|Notificaste y no actuaron| F[Pierden protección Safe Harbor]
-    E -->|Notificaste y sí actuaron| G[Mantienen protección Safe Harbor]
-    A --> H{¿Quieres prevenir el uso no<br/>autorizado desde el diseño<br/>técnico del archivo?}
-    H -->|Sí| I[DRM]
-```
+![[Diagramas/03_-_Infracciones_y_Protección_Digital_03.svg]]
 
 ---
 

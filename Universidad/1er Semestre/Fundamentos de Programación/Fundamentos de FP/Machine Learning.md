@@ -103,7 +103,7 @@ flowchart TB
 - **Complejidad**: Lineal vs no lineal
 - **Interpretabilidad**: Trade-off con precisión
 
-> [!example] ## Algoritmos Fundamentales por Categoría 🧮
+### 🧮 Algoritmos Fundamentales por Categoría
 
 ### 🔄 Algoritmos de Clasificación
 | Algoritmo | Ventajas | Desventajas | Mejor para |
