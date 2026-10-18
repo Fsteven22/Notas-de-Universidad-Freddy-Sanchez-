@@ -1,0 +1,9 @@
+graph TB
+    A[Método static] --> B{¿Existe objeto?}
+    B -->|No necesita| C[Acceso a miembros static<br/>✅ PERMITIDO]
+    B -->|Requiere| D[Acceso a miembros de instancia<br/>❌ PROHIBIDO]
+    E[Método de instancia] --> F[Siempre hay objeto]
+    F --> G[Acceso a TODO<br/>✅ PERMITIDO]
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1
+    style G fill:#e1ffe1

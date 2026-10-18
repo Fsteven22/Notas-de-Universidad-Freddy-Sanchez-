@@ -1,0 +1,10 @@
+graph TB
+    A[Integer.valueOf 100] --> B{¿Valor en<br/>caché?}
+    B -->|Sí -128 a 127| C[Retornar objeto<br/>del caché]
+    B -->|No > 127 o < -128| D[Crear nuevo<br/>objeto]
+    E[Integer a = 100<br/>Integer b = 100] --> F[a == b<br/>✅ true]
+    G[Integer c = 200<br/>Integer d = 200] --> H[c == d<br/>❌ false]
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style F fill:#e1ffe1
+    style H fill:#ffe1e1

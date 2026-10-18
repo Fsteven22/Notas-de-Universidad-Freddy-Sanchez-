@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant EDT
+    participant Q as Cola EDT
+    Note over EDT: EDT procesando evento
+    EDT->>Q: invokeAndWait(tarea)
+    Q->>Q: Encolar tarea
+    Note over EDT: EDT esperando que tarea termine
+    Note over Q: Tarea espera que EDT la procese
+    Note over EDT,Q: 💀 DEADLOCK: Espera circular

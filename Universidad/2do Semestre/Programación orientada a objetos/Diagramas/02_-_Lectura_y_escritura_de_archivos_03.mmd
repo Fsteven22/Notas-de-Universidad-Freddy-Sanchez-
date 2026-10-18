@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant P as Programa
+    participant BR as BufferedReader
+    participant FR as FileReader
+    participant F as Archivo (Disco)
+    P->>BR: readLine()
+    BR->>BR: ¿Hay datos en buffer?
+    alt Buffer vacío
+        BR->>FR: read(buffer)
+        FR->>F: Leer 8KB del disco
+        F-->>FR: Datos leídos
+        FR-->>BR: Llenar buffer
+    end
+    BR-->>P: Retornar línea

@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant F as Archivo
+    participant FIS as FileInputStream
+    participant OIS as ObjectInputStream
+    participant P as Programa
+    P->>OIS: readObject()
+    OIS->>FIS: Leer bytes
+    FIS->>F: Cargar desde disco
+    F-->>OIS: Bytes
+    OIS->>OIS: Reconstruir objeto
+    OIS-->>P: ✅ Objeto restaurado

@@ -1,0 +1,7 @@
+graph TD
+    A[Abrir flujo] --> B[Usar flujo]
+    B --> C{¿Cerrado?}
+    C -->|❌ No| D[Fuga de recursos<br/>Archivos bloqueados]
+    C -->|✅ Sí| E[Recursos liberados<br/>Todo OK]
+    style D fill:#ffe1e1
+    style E fill:#e1ffe1

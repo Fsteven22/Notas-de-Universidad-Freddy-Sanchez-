@@ -1,0 +1,10 @@
+graph TD
+    A{¿Cuánto tarda<br/>la operación?} --> B[< 100ms]
+    A --> C[> 100ms]
+    B --> D[✅ Ejecutar en EDT<br/>directamente]
+    C --> E{¿Necesitas<br/>actualizar UI?}
+    E -->|Sí| F[✅ SwingWorker]
+    E -->|No| G[⚠️ Thread simple<br/>+ invokeLater]
+    style D fill:#e1ffe1
+    style F fill:#e1ffe1
+    style G fill:#fff4e1

@@ -1,0 +1,10 @@
+flowchart LR
+    A[1. Decidir<br/>modo] --> B[2. Abrir<br/>archivo]
+    B --> C[3. Escribir<br/>datos]
+    C --> D{¿Más datos?}
+    D -->|Sí| C
+    D -->|No| E[4. Flush<br/>buffer]
+    E --> F[5. Cerrar<br/>archivo]
+    style A fill:#fff4e1
+    style C fill:#e1f5ff
+    style F fill:#e1ffe1

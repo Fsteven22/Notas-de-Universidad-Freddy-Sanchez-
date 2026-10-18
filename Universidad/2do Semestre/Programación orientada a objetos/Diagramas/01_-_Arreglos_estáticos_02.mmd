@@ -1,0 +1,12 @@
+flowchart LR
+    A[Crear arreglo] --> B{¿Conoces<br/>los valores?}
+    B -->|Sí| C[Inicialización directa<br/>{v1, v2, v3}]
+    B -->|No| D[new tipo tamaño]
+    D --> E{¿Llenar<br/>después?}
+    E -->|Valor por valor| F[arr 0 = x<br/>arr 1 = y]
+    E -->|Con patrón| G[Usar bucle for]
+    E -->|Mismo valor| H[Arrays.fill]
+    style C fill:#e1ffe1
+    style F fill:#e1f5ff
+    style G fill:#e1f5ff
+    style H fill:#e1f5ff

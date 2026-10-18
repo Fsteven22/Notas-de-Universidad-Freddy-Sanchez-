@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant P as Programa
+    participant OOS as ObjectOutputStream
+    participant FOS as FileOutputStream
+    participant F as Archivo
+    P->>OOS: writeObject(objeto)
+    OOS->>OOS: Convertir a bytes
+    OOS->>FOS: Escribir bytes
+    FOS->>F: Guardar en disco
+    F-->>P: ✅ Objeto guardado

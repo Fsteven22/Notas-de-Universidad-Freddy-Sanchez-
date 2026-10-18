@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant H1 as Hilo 1
+    participant M as Memoria (contador=5)
+    participant H2 as Hilo 2
+    H1->>M: Leer valor (5)
+    H2->>M: Leer valor (5)
+    H1->>H1: Incrementar (5+1=6)
+    H2->>H2: Incrementar (5+1=6)
+    H1->>M: Escribir (6)
+    H2->>M: Escribir (6) ⚠️ Sobrescribe
+    Note over M: Valor esperado: 7<br/>Valor real: 6<br/>Se perdió un incremento

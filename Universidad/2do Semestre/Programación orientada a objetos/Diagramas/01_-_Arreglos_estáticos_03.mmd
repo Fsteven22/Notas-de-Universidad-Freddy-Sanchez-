@@ -1,0 +1,11 @@
+graph TB
+    A["frutas (length = 5)"] --> B["[0] Manzana"]
+    A --> C["[1] Banana → Fresa"]
+    A --> D["[2] Naranja"]
+    A --> E["[3] Uva"]
+    A --> F["[4] Pera"]
+    G[Índices válidos: 0 a 4] --> H["❌ frutas[5] → ERROR"]
+    G --> I["❌ frutas[-1] → ERROR"]
+    style A fill:#e1f5ff
+    style H fill:#ffe1e1
+    style I fill:#ffe1e1

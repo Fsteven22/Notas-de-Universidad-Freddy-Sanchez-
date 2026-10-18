@@ -1,0 +1,57 @@
+classDiagram
+    class Producto {
+        -codigo: String
+        -nombre: String
+        -precio: double
+        -stock: int
+        --
+        +Producto(codigo: String, nombre: String, precio: double)
+        +actualizarStock(cantidad: int): void
+        +getPrecio(): double
+    }
+    class CarritoCompra {
+        -items: List~ItemCarrito~
+        --
+        +agregarProducto(p: Producto, cant: int): void
+        +eliminarProducto(codigo: String): void
+        +calcularTotal(): double
+        +vaciar(): void
+    }
+    class ItemCarrito {
+        -producto: Producto
+        -cantidad: int
+        --
+        +ItemCarrito(p: Producto, cant: int)
+        +getSubtotal(): double
+    }
+    CarritoCompra "1" *-- "*" ItemCarrito : contiene
+    ItemCarrito "*" --> "1" Producto : referencia
+    class Cliente {
+        -nombre: String
+        -email: String
+        -carrito: CarritoCompra
+        -pedidos: List~Pedido~
+        --
+        +realizarPedido(): Pedido
+    }
+    Cliente "1" *-- "1" CarritoCompra : tiene
+    Cliente "1" o-- "*" Pedido : realiza
+    class Pedido {
+        -numero: String
+        -fecha: Date
+        -estado: EstadoPedido
+        -items: List~ItemCarrito~
+        -total: double
+        --
+        +confirmar(): void
+        +cancelar(): void
+    }
+    class EstadoPedido {
+        <<enumeration>>
+        PENDIENTE
+        CONFIRMADO
+        ENVIADO
+        ENTREGADO
+        CANCELADO
+    }
+    Pedido --> EstadoPedido : usa

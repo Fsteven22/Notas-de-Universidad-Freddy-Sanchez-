@@ -21,22 +21,7 @@ dg-publish: true
 > |**Documentación**|Representación visual del sistema|Más fácil de entender que código|
 > |**Análisis**|Identificar problemas de diseño|Corregir antes de implementar|
 
-```mermaid
-graph LR
-    A[UML] --> B[Diagramas<br/>Estructurales]
-    A --> C[Diagramas<br/>de Comportamiento]
-    
-    B --> D[Diagrama de Clases]
-    B --> E[Diagrama de Objetos]
-    B --> F[Diagrama de Componentes]
-    
-    C --> G[Diagrama de Casos de Uso]
-    C --> H[Diagrama de Secuencia]
-    C --> I[Diagrama de Actividades]
-    
-    style D fill:#e1ffe1
-    style A fill:#e1f5ff
-```
+![[Diagramas/02_-_UML_y_diagrama_de_clases_01.svg]]
 
 > [!note] 🎯 Enfoque de este Tema
 > 
@@ -52,18 +37,7 @@ graph LR
 > 
 > Una clase se representa como un **rectángulo dividido en 3 secciones**:
 > 
-> ```mermaid
-> classDiagram
->     class NombreClase {
->         -atributoPrivado: tipo
->         #atributoProtegido: tipo
->         +atributoPúblico: tipo
->         --
->         +métodoPúblico(): tipoRetorno
->         -métodoPrivado(): tipoRetorno
->         #métodoProtegido(): tipoRetorno
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_02.svg]]
 > 
 > **Secciones:**
 > 
@@ -108,20 +82,7 @@ graph LR
 > 
 > **Ejemplos:**
 > 
-> ```mermaid
-> classDiagram
->     class CuentaBancaria {
->         -saldo: double = 0.0
->         -titular: String
->         -numeroCuenta: String
->         --
->         +CuentaBancaria(titular: String)
->         +getSaldo(): double
->         +depositar(monto: double): boolean
->         +retirar(monto: double): boolean
->         -validarMonto(monto: double): boolean
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_03.svg]]
 > 
 > **Equivalente en Java:**
 > 
@@ -162,34 +123,7 @@ graph LR
 > 
 > **Símbolo:** Flecha con triángulo vacío `<|--`
 > 
-> ```mermaid
-> classDiagram
->     Animal <|-- Perro
->     Animal <|-- Gato
->     Animal <|-- Ave
->     class Animal {
->         #nombre: String
->         #edad: int
->         +comer(): void
->         +dormir(): void
->         +hacerSonido(): void
->     }
->     class Perro {
->         -raza: String
->         +ladrar(): void
->         +hacerSonido(): void
->     }
->     class Gato {
->         -color: String
->         +maullar(): void
->         +hacerSonido(): void
->     }
->     class Ave {
->         -especie: String
->         +volar(): void
->         +hacerSonido(): void
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_04.svg]]
 > 
 > **Lectura:** "Perro hereda de Animal" o "Perro ES-UN Animal"
 
@@ -199,37 +133,7 @@ graph LR
 > 
 > **Símbolo:** Flecha punteada con triángulo `<|..`
 > 
-> ```mermaid
-> classDiagram
->     class Volador {
->         <<interface>>
->         +despegar(): void
->         +volar(): void
->         +aterrizar(): void
->     }
->     class Nadador {
->         <<interface>>
->         +nadar(): void
->         +bucear(): void
->     }
->     Volador <|.. Pato
->     Nadador <|.. Pato
->     Volador <|.. Avion
->     class Pato {
->         -nombre: String
->         +despegar(): void
->         +volar(): void
->         +aterrizar(): void
->         +nadar(): void
->         +bucear(): void
->     }
->     class Avion {
->         -modelo: String
->         +despegar(): void
->         +volar(): void
->         +aterrizar(): void
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_05.svg]]
 > 
 > **Nota:** Las interfaces se marcan con `<<interface>>`
 
@@ -241,29 +145,7 @@ graph LR
 > 
 > Indica que una clase **conoce** o **usa** otra clase.
 > 
-> ```mermaid
-> classDiagram
->     Persona "1" -- "1" Direccion : tiene
->     Estudiante "1" -- "*" Curso : se inscribe en
->     class Persona {
->         -nombre: String
->         -direccion: Direccion
->         +getDireccion(): Direccion
->     }
->     class Direccion {
->         -calle: String
->         -ciudad: String
->         -codigoPostal: String
->     }
->     class Estudiante {
->         -carnet: String
->         -cursos: List~Curso~
->     }
->     class Curso {
->         -codigo: String
->         -nombre: String
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_06.svg]]
 > 
 > **Multiplicidad:**
 > 
@@ -280,28 +162,7 @@ graph LR
 > 
 > Las partes pueden existir **independientemente** del todo.
 > 
-> ```mermaid
-> classDiagram
->     Departamento "1" o-- "*" Empleado : tiene
->     Universidad "1" o-- "*" Estudiante : contiene
->     class Departamento {
->         -nombre: String
->         -empleados: List~Empleado~
->         +agregarEmpleado(e: Empleado): void
->     }
->     class Empleado {
->         -nombre: String
->         -salario: double
->     }
->     class Universidad {
->         -nombre: String
->         -estudiantes: List~Estudiante~
->     }
->     class Estudiante {
->         -nombre: String
->         -carnet: String
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_07.svg]]
 > 
 > **Característica:** Si el Departamento se elimina, los Empleados siguen existiendo.
 
@@ -313,33 +174,7 @@ graph LR
 > 
 > Las partes **NO pueden existir** sin el todo.
 > 
-> ```mermaid
-> classDiagram
->     Coche "1" *-- "1" Motor : tiene
->     Coche "1" *-- "4" Rueda : tiene
->     Casa "1" *-- "*" Habitacion : contiene
->     class Coche {
->         -marca: String
->         -motor: Motor
->         -ruedas: Rueda[4]
->     }
->     class Motor {
->         -cilindrada: int
->         -potencia: int
->     }
->     class Rueda {
->         -tamaño: int
->         -presion: double
->     }
->     class Casa {
->         -direccion: String
->         -habitaciones: List~Habitacion~
->     }
->     class Habitacion {
->         -nombre: String
->         -area: double
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_08.svg]]
 > 
 > **Característica:** Si el Coche se destruye, su Motor específico también se destruye.
 
@@ -351,25 +186,7 @@ graph LR
 > 
 > Una clase **usa** temporalmente otra (parámetro, variable local).
 > 
-> ```mermaid
-> classDiagram
->     Impresora ..> Documento : usa
->     CalculadoraImpuestos ..> Factura : procesa
->     class Impresora {
->         +imprimir(doc: Documento): void
->     }
->     class Documento {
->         -contenido: String
->         +getContenido(): String
->     }
->     class CalculadoraImpuestos {
->         +calcular(f: Factura): double
->     }
->     class Factura {
->         -monto: double
->         +getMonto(): double
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_09.svg]]
 
 ---
 
@@ -381,38 +198,7 @@ graph LR
 > 
 > Se representan con el nombre en **cursiva** o con `<<abstract>>`.
 > 
-> ```mermaid
-> classDiagram
->     class FiguraGeometrica {
->         <<abstract>>
->         #color: String
->         +FiguraGeometrica(color: String)
->         +calcularArea()* double
->         +calcularPerimetro()* double
->         +mostrarInfo(): void
->     }
->     FiguraGeometrica <|-- Circulo
->     FiguraGeometrica <|-- Rectangulo
->     FiguraGeometrica <|-- Triangulo
->     class Circulo {
->         -radio: double
->         +calcularArea(): double
->         +calcularPerimetro(): double
->     }
->     class Rectangulo {
->         -base: double
->         -altura: double
->         +calcularArea(): double
->         +calcularPerimetro(): double
->     }
->     class Triangulo {
->         -lado1: double
->         -lado2: double
->         -lado3: double
->         +calcularArea(): double
->         +calcularPerimetro(): double
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_10.svg]]
 > 
 > **Nota:** Los métodos abstractos se marcan con `*` o en _cursiva_.
 
@@ -422,23 +208,7 @@ graph LR
 > 
 > Se **subrayan** para indicar que son `static`.
 > 
-> ```mermaid
-> classDiagram
->     class Contador {
->         -count: int$
->         --
->         +Contador()
->         +incrementar()$: void
->         +getContador()$: int
->     }
->     class Configuracion {
->         -URL_BASE: String$
->         -TIMEOUT: int$
->         --
->         +getUrlBase()$: String
->         +getTimeout()$: int
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_11.svg]]
 > 
 > **Nota:** `$` indica miembro estático (algunos diagramadores usan subrayado).
 
@@ -446,32 +216,7 @@ graph LR
 
 > [!example] 🎯 Tipos Enumerados
 > 
-> ```mermaid
-> classDiagram
->     class DiaSemana {
->         <<enumeration>>
->         LUNES
->         MARTES
->         MIERCOLES
->         JUEVES
->         VIERNES
->         SABADO
->         DOMINGO
->     }
->     class TipoCuenta {
->         <<enumeration>>
->         AHORRO
->         CORRIENTE
->         NOMINA
->         --
->         +getTasa(): double
->     }
->     CuentaBancaria --> TipoCuenta : usa
->     class CuentaBancaria {
->         -tipo: TipoCuenta
->         -saldo: double
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_12.svg]]
 
 ---
 
@@ -481,183 +226,19 @@ graph LR
 
 > [!example] 💳 Diagrama Completo
 > 
-> ```mermaid
-> classDiagram
->     class CuentaBancaria {
->         <<abstract>>
->         #titular: String
->         #saldo: double
->         #numeroCuenta: String
->         --
->         +CuentaBancaria(titular: String)
->         +depositar(monto: double): boolean
->         +retirar(monto: double): boolean
->         +getSaldo(): double
->         +calcularInteres()* double
->         #validarMonto(monto: double): boolean
->     }
->     CuentaBancaria <|-- CuentaAhorro
->     CuentaBancaria <|-- CuentaCorriente
->     CuentaBancaria <|-- CuentaNomina
->     class CuentaAhorro {
->         -tasaInteres: double
->         --
->         +CuentaAhorro(titular: String, tasa: double)
->         +calcularInteres(): double
->     }
->     class CuentaCorriente {
->         -sobregiro: double
->         --
->         +CuentaCorriente(titular: String, sobregiro: double)
->         +calcularInteres(): double
->         +retirar(monto: double): boolean
->     }
->     class CuentaNomina {
->         -empresa: String
->         --
->         +CuentaNomina(titular: String, empresa: String)
->         +calcularInteres(): double
->     }
->     Cliente "1" o-- "*" CuentaBancaria : posee
->     class Cliente {
->         -nombre: String
->         -identificacion: String
->         -cuentas: List~CuentaBancaria~
->         --
->         +agregarCuenta(cuenta: CuentaBancaria): void
->         +getSaldoTotal(): double
->     }
->     Banco "1" *-- "*" Cliente : gestiona
->     class Banco {
->         -nombre: String
->         -clientes: List~Cliente~
->         --
->         +agregarCliente(cliente: Cliente): void
->         +buscarCliente(id: String): Cliente
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_13.svg]]
 
 ### 🎓 Sistema Universitario
 
 > [!example] 📖 Gestión Académica
 > 
-> ```mermaid
-> classDiagram
->     class Persona {
->         <<abstract>>
->         #nombre: String
->         #identificacion: String
->         #edad: int
->         --
->         +Persona(nombre: String, id: String)
->         +getNombre(): String
->         +mostrarInfo()* void
->     }
->     Persona <|-- Estudiante
->     Persona <|-- Profesor
->     class Estudiante {
->         -carnet: String
->         -creditos: int
->         -cursos: List~Curso~
->         --
->         +inscribirCurso(curso: Curso): void
->         +calcularPromedio(): double
->         +mostrarInfo(): void
->     }
->     class Profesor {
->         -especialidad: String
->         -cursos: List~Curso~
->         --
->         +asignarCurso(curso: Curso): void
->         +mostrarInfo(): void
->     }
->     class Curso {
->         -codigo: String
->         -nombre: String
->         -creditos: int
->         -profesor: Profesor
->         -estudiantes: List~Estudiante~
->         --
->         +agregarEstudiante(e: Estudiante): void
->         +getProfesor(): Profesor
->     }
->     Estudiante "*" -- "*" Curso : se inscribe
->     Profesor "1" -- "*" Curso : imparte
->     Departamento "1" o-- "*" Profesor : tiene
->     Departamento "1" o-- "*" Curso : ofrece
->     class Departamento {
->         -nombre: String
->         -profesores: List~Profesor~
->         -cursos: List~Curso~
->         --
->         +agregarProfesor(p: Profesor): void
->         +ofrecerCurso(c: Curso): void
->     }
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_14.svg]]
 
 ### 🛒 Sistema de Comercio
 
 > [!example] 🏪 E-commerce
 > 
-> ```mermaid
-> classDiagram
->     class Producto {
->         -codigo: String
->         -nombre: String
->         -precio: double
->         -stock: int
->         --
->         +Producto(codigo: String, nombre: String, precio: double)
->         +actualizarStock(cantidad: int): void
->         +getPrecio(): double
->     }
->     class CarritoCompra {
->         -items: List~ItemCarrito~
->         --
->         +agregarProducto(p: Producto, cant: int): void
->         +eliminarProducto(codigo: String): void
->         +calcularTotal(): double
->         +vaciar(): void
->     }
->     class ItemCarrito {
->         -producto: Producto
->         -cantidad: int
->         --
->         +ItemCarrito(p: Producto, cant: int)
->         +getSubtotal(): double
->     }
->     CarritoCompra "1" *-- "*" ItemCarrito : contiene
->     ItemCarrito "*" --> "1" Producto : referencia
->     class Cliente {
->         -nombre: String
->         -email: String
->         -carrito: CarritoCompra
->         -pedidos: List~Pedido~
->         --
->         +realizarPedido(): Pedido
->     }
->     Cliente "1" *-- "1" CarritoCompra : tiene
->     Cliente "1" o-- "*" Pedido : realiza
->     class Pedido {
->         -numero: String
->         -fecha: Date
->         -estado: EstadoPedido
->         -items: List~ItemCarrito~
->         -total: double
->         --
->         +confirmar(): void
->         +cancelar(): void
->     }
->     class EstadoPedido {
->         <<enumeration>>
->         PENDIENTE
->         CONFIRMADO
->         ENVIADO
->         ENTREGADO
->         CANCELADO
->     }
->     Pedido --> EstadoPedido : usa
-> ```
+> ![[Diagramas/02_-_UML_y_diagrama_de_clases_15.svg]]
 
 ---
 
@@ -728,26 +309,7 @@ graph LR
 > |¿Clase A contiene Clase B pero B puede existir independiente?|**Agregación** `o--`|Siguiente pregunta|
 > |¿Clase A solo usa temporalmente Clase B?|**Dependencia** `..>`|**Asociación** `--`|
 
-```mermaid
-graph TD
-    A{¿B ES-UN A?} -->|Sí| B[Herencia]
-    A -->|No| C{¿B implementa<br/>interfaz A?}
-    C -->|Sí| D[Implementación]
-    C -->|No| E{¿A contiene B<br/>y B depende de A?}
-    E -->|Sí| F[Composición]
-    E -->|No| G{¿A contiene B<br/>pero B es independiente?}
-    G -->|Sí| H[Agregación]
-    G -->|No| I{¿A usa B<br/>temporalmente?}
-    I -->|Sí| J[Dependencia]
-    I -->|No| K[Asociación]
-    
-    style B fill:#e1ffe1
-    style D fill:#e1f5ff
-    style F fill:#fff4e1
-    style H fill:#ffe1f5
-    style J fill:#f0e1ff
-    style K fill:#ffe1e1
-```
+![[Diagramas/02_-_UML_y_diagrama_de_clases_16.svg]]
 
 ---
 
@@ -768,32 +330,7 @@ graph TD
 
 ## 📋 Resumen Visual
 
-```mermaid
-mindmap
-  root((UML<br/>Diagrama de Clases))
-    Estructura
-      3 secciones
-      Nombre
-      Atributos
-      Métodos
-    Visibilidad
-      - private
-      + public
-      # protected
-      ~ default
-    Relaciones
-      Herencia
-      Implementación
-      Asociación
-      Agregación
-      Composición
-      Dependencia
-    Elementos Especiales
-      Clases abstractas
-      Interfaces
-      Enumeraciones
-      Miembros static
-```
+![[Diagramas/02_-_UML_y_diagrama_de_clases_17.svg]]
 
 > [!quote] 💡 Recuerda
 > 

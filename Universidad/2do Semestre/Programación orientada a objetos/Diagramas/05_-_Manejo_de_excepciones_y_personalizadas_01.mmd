@@ -1,0 +1,7 @@
+graph TD
+    A[Operación normal] --> B{¿Error?}
+    B -->|Sin manejo| C[💥 Programa termina<br/>Usuario frustrado]
+    B -->|Con manejo| D[⚠️ Mensaje amigable<br/>Alternativas ofrecidas]
+    D --> E[✅ Usuario satisfecho<br/>Continúa usando app]
+    style C fill:#ffe1e1
+    style E fill:#e1ffe1

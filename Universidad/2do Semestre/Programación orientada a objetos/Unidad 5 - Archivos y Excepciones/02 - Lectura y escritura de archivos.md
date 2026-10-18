@@ -27,30 +27,7 @@ dg-publish: true
 > |**Respaldo**|Crear copias de seguridad|Backups automáticos, historial de cambios|
 > |**Procesamiento por lotes**|Procesar múltiples archivos automáticamente|Conversión de formatos, análisis de datos|
 
-```mermaid
-graph TB
-    A[Programa Java] --> B{Operaciones<br/>de E/S}
-    B --> C[📖 LECTURA]
-    B --> D[✍️ ESCRITURA]
-    B --> E[🔍 CONSULTA]
-    
-    C --> C1[Cargar configuración]
-    C --> C2[Leer datos existentes]
-    C --> C3[Importar archivos]
-    
-    D --> D1[Guardar progreso]
-    D --> D2[Generar reportes]
-    D --> D3[Exportar datos]
-    
-    E --> E1[Verificar existencia]
-    E --> E2[Obtener metadatos]
-    E --> E3[Listar directorios]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#f0e1ff
-```
+![[Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
 
 ---
 
@@ -62,51 +39,7 @@ graph TB
 > 
 > Java proporciona un rico conjunto de clases para trabajar con archivos, organizadas en una **jerarquía lógica** que separa responsabilidades.
 > 
-> ```mermaid
-> classDiagram
->     class File {
->         <<Representación>>
->         +exists()
->         +isFile()
->         +isDirectory()
->         +length()
->         +getName()
->     }
->     class Reader {
->         <<Abstracta - Lectura>>
->         +read()
->         +close()
->     }
->     class Writer {
->         <<Abstracta - Escritura>>
->         +write()
->         +flush()
->         +close()
->     }
->     class FileReader {
->         <<Lectura básica>>
->         +read() char
->     }
->     class FileWriter {
->         <<Escritura básica>>
->         +write(String)
->     }
->     class BufferedReader {
->         <<Lectura eficiente>>
->         +readLine() String
->     }
->     class BufferedWriter {
->         <<Escritura eficiente>>
->         +write(String)
->         +newLine()
->     }
->     Reader <|-- FileReader
->     Reader <|-- BufferedReader
->     Writer <|-- FileWriter
->     Writer <|-- BufferedWriter
->     FileReader --> File : usa
->     FileWriter --> File : usa
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_02.svg]]
 > 
 > **Categorías principales:**
 > 
@@ -124,39 +57,11 @@ graph TB
 > 
 > **Lectura de archivos:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant P as Programa
->     participant BR as BufferedReader
->     participant FR as FileReader
->     participant F as Archivo (Disco)
->     P->>BR: readLine()
->     BR->>BR: ¿Hay datos en buffer?
->     alt Buffer vacío
->         BR->>FR: read(buffer)
->         FR->>F: Leer 8KB del disco
->         F-->>FR: Datos leídos
->         FR-->>BR: Llenar buffer
->     end
->     BR-->>P: Retornar línea
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_03.svg]]
 > 
 > **Escritura de archivos:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant P as Programa
->     participant BW as BufferedWriter
->     participant FW as FileWriter
->     participant F as Archivo (Disco)
->     P->>BW: write("datos")
->     BW->>BW: Agregar a buffer
->     alt Buffer lleno o flush/close
->         BW->>FW: Vaciar buffer
->         FW->>F: Escribir en disco
->         F-->>FW: Confirmación
->     end
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_04.svg]]
 > 
 > **¿Por qué usar buffers?**
 > 
@@ -177,18 +82,7 @@ graph TB
 > 
 > **Proceso paso a paso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[1. Verificar<br/>existencia] --> B[2. Abrir<br/>archivo]
->     B --> C[3. Leer<br/>contenido]
->     C --> D[4. Procesar<br/>datos]
->     D --> E{¿Más datos?}
->     E -->|Sí| C
->     E -->|No| F[5. Cerrar<br/>archivo]
->     style A fill:#fff4e1
->     style C fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_05.svg]]
 > 
 > **Métodos de lectura:**
 > 
@@ -283,21 +177,7 @@ graph TB
 > 
 > **Comparación de estrategias:**
 > 
-> ```mermaid
-> graph TD
->     A{Tamaño del<br/>archivo?} --> B[< 1 MB]
->     A --> C[1-100 MB]
->     A --> D[> 100 MB]
->     B --> E[Cargar todo<br/>en memoria]
->     C --> F[Decidir según<br/>necesidad]
->     D --> G[Streaming<br/>obligatorio]
->     F --> H{¿Acceso<br/>aleatorio?}
->     H -->|Sí| E
->     H -->|No| G
->     style E fill:#e1ffe1
->     style G fill:#e1f5ff
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_06.svg]]
 
 ---
 
@@ -309,18 +189,7 @@ graph TB
 > 
 > **Proceso paso a paso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[1. Decidir<br/>modo] --> B[2. Abrir<br/>archivo]
->     B --> C[3. Escribir<br/>datos]
->     C --> D{¿Más datos?}
->     D -->|Sí| C
->     D -->|No| E[4. Flush<br/>buffer]
->     E --> F[5. Cerrar<br/>archivo]
->     style A fill:#fff4e1
->     style C fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_07.svg]]
 > 
 > **Modos de escritura:**
 > 
@@ -431,19 +300,7 @@ graph TB
 > 
 > **Comparación de modos:**
 > 
-> ```mermaid
-> graph TB
->     A{Modo de<br/>escritura?} --> B[Sobrescribir]
->     A --> C[Append]
->     B --> D[FileWriter archivo]
->     C --> E[FileWriter archivo, true]
->     D --> F[❌ Contenido anterior<br/>se pierde]
->     E --> G[✅ Contenido anterior<br/>se conserva]
->     F --> H[Regenerar archivo<br/>completo]
->     G --> I[Agregar al final<br/>logs, históricos]
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_08.svg]]
 
 ---
 
@@ -457,33 +314,7 @@ graph TB
 > 
 > **Operaciones más comunes:**
 > 
-> ```mermaid
-> mindmap
->   root((File))
->     Existencia
->       exists
->       isFile
->       isDirectory
->     Información
->       getName
->       getPath
->       getAbsolutePath
->       length
->       lastModified
->     Permisos
->       canRead
->       canWrite
->       canExecute
->     Modificación
->       createNewFile
->       delete
->       renameTo
->       mkdir
->       mkdirs
->     Listado
->       list
->       listFiles
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_09.svg]]
 > 
 > **Ejemplo completo de uso:**
 > 
@@ -611,20 +442,7 @@ graph TB
 > 
 > **Flujo de exploración:**
 > 
-> ```mermaid
-> graph TD
->     A[Directorio raíz] --> B[listFiles]
->     B --> C{Para cada File}
->     C --> D{¿Es directorio?}
->     D -->|Sí| E[Recursión:<br/>explorar subdirectorio]
->     D -->|No| F[Procesar archivo]
->     E --> C
->     F --> C
->     C --> G[Fin]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_10.svg]]
 
 ---
 
@@ -636,25 +454,7 @@ graph TB
 > 
 > **Jerarquía de excepciones:**
 > 
-> ```mermaid
-> classDiagram
->     Exception <|-- IOException
->     IOException <|-- FileNotFoundException
->     IOException <|-- EOFException
->     Exception <|-- SecurityException
->     class IOException {
->         Error general de E/S
->     }
->     class FileNotFoundException {
->         Archivo no existe
->     }
->     class EOFException {
->         Fin de archivo inesperado
->     }
->     class SecurityException {
->         Sin permisos
->     }
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_11.svg]]
 > 
 > **Tabla de excepciones:**
 > 
@@ -752,20 +552,7 @@ graph TB
 > 
 > **Flujo de ejecución:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Abrir recurso<br/>try] --> B[Ejecutar código]
->     B --> C{¿Excepción?}
->     C -->|No| D[Cerrar automáticamente]
->     C -->|Sí| E[Cerrar automáticamente]
->     E --> F[Ejecutar catch]
->     D --> G[Continuar programa]
->     F --> G
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_12.svg]]
 
 ---
 
@@ -838,17 +625,7 @@ graph TB
 > 
 > **5. Elegir el nivel correcto de abstracción**
 > 
-> ```mermaid
-> graph TD
->     A{Tipo de<br/>operación?} --> B[Solo metadatos]
->     A --> C[Lectura/escritura]
->     B --> D[Usar File]
->     C --> E{Buffer?}
->     E -->|Archivo pequeño| F[FileReader/<br/>FileWriter]
->     E -->|Uso general| G[✅ BufferedReader/<br/>BufferedWriter]
->     style G fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_13.svg]]
 
 ### 🔄 Patrón Común: Copiar Archivo
 
@@ -920,49 +697,7 @@ graph TB
 
 ### 🗺️ Mapa Mental Completo
 
-```mermaid
-mindmap
-  root((E/S de<br/>Archivos))
-    Lectura
-      FileReader
-        Bajo nivel
-        Lento
-      BufferedReader
-        ✅ Recomendado
-        readLine
-        Rápido
-      Estrategias
-        Todo en memoria
-        Streaming
-        Búsqueda
-    Escritura
-      FileWriter
-        Bajo nivel
-        Modos: sobrescribir/append
-      BufferedWriter
-        ✅ Recomendado
-        newLine
-        flush
-      Estrategias
-        Colecciones
-        Incremental
-        Con formato
-    Consulta
-      Clase File
-        exists
-        isFile/isDirectory
-        length
-        permisos
-      Directorios
-        list/listFiles
-        mkdir/mkdirs
-        Recursión
-    Mejores Prácticas
-      try-with-resources
-      Validación defensiva
-      Excepciones específicas
-      Rutas portables
-```
+![[Diagramas/02_-_Lectura_y_escritura_de_archivos_14.svg]]
 
 >[!success] ### 📋 Tabla Comparativa Final
 > 

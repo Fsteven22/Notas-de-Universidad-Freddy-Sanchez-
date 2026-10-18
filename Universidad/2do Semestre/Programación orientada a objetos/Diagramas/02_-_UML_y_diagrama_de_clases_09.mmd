@@ -1,0 +1,17 @@
+classDiagram
+    Impresora ..> Documento : usa
+    CalculadoraImpuestos ..> Factura : procesa
+    class Impresora {
+        +imprimir(doc: Documento): void
+    }
+    class Documento {
+        -contenido: String
+        +getContenido(): String
+    }
+    class CalculadoraImpuestos {
+        +calcular(f: Factura): double
+    }
+    class Factura {
+        -monto: double
+        +getMonto(): double
+    }

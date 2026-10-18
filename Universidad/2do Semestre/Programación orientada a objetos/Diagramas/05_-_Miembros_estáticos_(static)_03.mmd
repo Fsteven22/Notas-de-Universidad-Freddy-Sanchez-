@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant C as Clase Producto<br/>(contadorId = 1)
+    participant P1 as Producto 1
+    participant P2 as Producto 2
+    participant P3 as Producto 3
+    Note over C: contadorId = 1
+    C->>P1: new Producto("Laptop", 1200)
+    P1->>P1: id = 1
+    P1->>C: contadorId++
+    Note over C: contadorId = 2
+    C->>P2: new Producto("Mouse", 25)
+    P2->>P2: id = 2
+    P2->>C: contadorId++
+    Note over C: contadorId = 3
+    C->>P3: new Producto("Teclado", 80)
+    P3->>P3: id = 3
+    P3->>C: contadorId++
+    Note over C: contadorId = 4

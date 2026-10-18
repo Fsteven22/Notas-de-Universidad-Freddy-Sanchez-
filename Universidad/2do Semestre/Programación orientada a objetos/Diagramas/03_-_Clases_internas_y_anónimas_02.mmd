@@ -1,0 +1,30 @@
+classDiagram
+    class ClaseExterna {
+        -atributoPrivado
+        +metodoPublico()
+        // Puede contener:
+    }
+    class ClaseInternaMiembro {
+        <<Inner Class>>
+        Accede a toda la clase externa
+        Requiere instancia de externa
+    }
+    class ClaseInternaLocal {
+        <<Local Class>>
+        Solo en método/bloque
+        Variables finales/effectively final
+    }
+    class ClaseAnonima {
+        <<Anonymous Class>>
+        Sin nombre explícito
+        Implementa/extiende al vuelo
+    }
+    class ClaseInternaEstatica {
+        <<Static Nested Class>>
+        No accede a instancia externa
+        Funciona como clase normal
+    }
+    ClaseExterna *-- ClaseInternaMiembro
+    ClaseExterna *-- ClaseInternaLocal
+    ClaseExterna *-- ClaseAnonima
+    ClaseExterna *-- ClaseInternaEstatica

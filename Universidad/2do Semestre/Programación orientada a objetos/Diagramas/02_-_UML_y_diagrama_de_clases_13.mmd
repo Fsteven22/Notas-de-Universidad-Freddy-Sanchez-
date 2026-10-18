@@ -1,0 +1,53 @@
+classDiagram
+    class CuentaBancaria {
+        <<abstract>>
+        #titular: String
+        #saldo: double
+        #numeroCuenta: String
+        --
+        +CuentaBancaria(titular: String)
+        +depositar(monto: double): boolean
+        +retirar(monto: double): boolean
+        +getSaldo(): double
+        +calcularInteres()* double
+        #validarMonto(monto: double): boolean
+    }
+    CuentaBancaria <|-- CuentaAhorro
+    CuentaBancaria <|-- CuentaCorriente
+    CuentaBancaria <|-- CuentaNomina
+    class CuentaAhorro {
+        -tasaInteres: double
+        --
+        +CuentaAhorro(titular: String, tasa: double)
+        +calcularInteres(): double
+    }
+    class CuentaCorriente {
+        -sobregiro: double
+        --
+        +CuentaCorriente(titular: String, sobregiro: double)
+        +calcularInteres(): double
+        +retirar(monto: double): boolean
+    }
+    class CuentaNomina {
+        -empresa: String
+        --
+        +CuentaNomina(titular: String, empresa: String)
+        +calcularInteres(): double
+    }
+    Cliente "1" o-- "*" CuentaBancaria : posee
+    class Cliente {
+        -nombre: String
+        -identificacion: String
+        -cuentas: List~CuentaBancaria~
+        --
+        +agregarCuenta(cuenta: CuentaBancaria): void
+        +getSaldoTotal(): double
+    }
+    Banco "1" *-- "*" Cliente : gestiona
+    class Banco {
+        -nombre: String
+        -clientes: List~Cliente~
+        --
+        +agregarCliente(cliente: Cliente): void
+        +buscarCliente(id: String): Cliente
+    }

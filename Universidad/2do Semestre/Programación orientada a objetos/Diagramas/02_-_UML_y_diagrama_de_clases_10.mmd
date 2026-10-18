@@ -1,0 +1,30 @@
+classDiagram
+    class FiguraGeometrica {
+        <<abstract>>
+        #color: String
+        +FiguraGeometrica(color: String)
+        +calcularArea()* double
+        +calcularPerimetro()* double
+        +mostrarInfo(): void
+    }
+    FiguraGeometrica <|-- Circulo
+    FiguraGeometrica <|-- Rectangulo
+    FiguraGeometrica <|-- Triangulo
+    class Circulo {
+        -radio: double
+        +calcularArea(): double
+        +calcularPerimetro(): double
+    }
+    class Rectangulo {
+        -base: double
+        -altura: double
+        +calcularArea(): double
+        +calcularPerimetro(): double
+    }
+    class Triangulo {
+        -lado1: double
+        -lado2: double
+        -lado3: double
+        +calcularArea(): double
+        +calcularPerimetro(): double
+    }

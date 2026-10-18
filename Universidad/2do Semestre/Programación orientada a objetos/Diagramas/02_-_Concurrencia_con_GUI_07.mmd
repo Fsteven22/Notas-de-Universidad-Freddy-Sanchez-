@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant WT as Worker Thread
+    participant Q as Cola EDT
+    participant EDT as Event Dispatch Thread
+    participant UI as Componente UI
+    WT->>WT: Hacer trabajo
+    WT->>Q: invokeLater(actualizar)
+    Note over WT: ✅ Continúa inmediatamente
+    WT->>WT: Más trabajo
+    EDT->>Q: Procesar cola
+    Q->>EDT: Ejecutar actualizar
+    EDT->>UI: Modificar componente

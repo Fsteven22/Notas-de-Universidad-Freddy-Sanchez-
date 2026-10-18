@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant H1 as Hilo 1
+    participant L as Lock (Monitor)
+    participant H2 as Hilo 2
+    H1->>L: Solicitar lock
+    L->>H1: Lock concedido ✅
+    H2->>L: Solicitar lock
+    L->>H2: BLOQUEADO ⛔
+    H1->>H1: Ejecutar incrementar()
+    H1->>L: Liberar lock
+    L->>H2: Lock concedido ✅
+    H2->>H2: Ejecutar incrementar()
+    H2->>L: Liberar lock

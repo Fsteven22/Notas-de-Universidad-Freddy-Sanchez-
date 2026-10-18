@@ -1,0 +1,24 @@
+classDiagram
+    class Exception
+    class AplicacionException {
+        <<Base de la aplicación>>
+    }
+    class ErrorNegocioException {
+        <<Errores de lógica>>
+    }
+    class ErrorTecnicoException {
+        <<Errores técnicos>>
+    }
+    class SaldoInsuficienteException
+    class CuentaBloqueadaException
+    class LimiteExcedidoException
+    class ErrorConexionException
+    class ErrorAlmacenamientoException
+    Exception <|-- AplicacionException
+    AplicacionException <|-- ErrorNegocioException
+    AplicacionException <|-- ErrorTecnicoException
+    ErrorNegocioException <|-- SaldoInsuficienteException
+    ErrorNegocioException <|-- CuentaBloqueadaException
+    ErrorNegocioException <|-- LimiteExcedidoException
+    ErrorTecnicoException <|-- ErrorConexionException
+    ErrorTecnicoException <|-- ErrorAlmacenamientoException

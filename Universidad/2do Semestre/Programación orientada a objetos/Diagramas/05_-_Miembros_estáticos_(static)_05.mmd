@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant JVM
+    participant Clase
+    participant Objeto
+    Note over JVM: Primera referencia a la clase
+    JVM->>Clase: Cargar clase en memoria
+    Clase->>Clase: 1. Inicializar variables static
+    Clase->>Clase: 2. Ejecutar bloque static
+    Note over Clase: Clase lista para usar
+    Note over JVM: new Objeto()
+    JVM->>Objeto: 3. Inicializar variables de instancia
+    Objeto->>Objeto: 4. Ejecutar constructor
+    Note over Objeto: Objeto creado

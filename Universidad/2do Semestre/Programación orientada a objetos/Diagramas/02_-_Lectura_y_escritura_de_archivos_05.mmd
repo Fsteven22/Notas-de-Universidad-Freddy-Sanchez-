@@ -1,0 +1,10 @@
+flowchart LR
+    A[1. Verificar<br/>existencia] --> B[2. Abrir<br/>archivo]
+    B --> C[3. Leer<br/>contenido]
+    C --> D[4. Procesar<br/>datos]
+    D --> E{¿Más datos?}
+    E -->|Sí| C
+    E -->|No| F[5. Cerrar<br/>archivo]
+    style A fill:#fff4e1
+    style C fill:#e1f5ff
+    style F fill:#e1ffe1

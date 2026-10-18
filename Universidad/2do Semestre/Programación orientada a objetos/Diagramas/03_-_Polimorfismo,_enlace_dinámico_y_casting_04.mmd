@@ -1,0 +1,11 @@
+graph TB
+    A[Animal<br/>Superclase] 
+    B[Perro<br/>Subclase]
+    C[Gato<br/>Subclase]
+    B -.->|Upcasting<br/>✅ Seguro| A
+    C -.->|Upcasting<br/>✅ Seguro| A
+    A ==>|Downcasting<br/>⚠️ Puede fallar| B
+    A ==>|Downcasting<br/>⚠️ Puede fallar| C
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style C fill:#fff4e1

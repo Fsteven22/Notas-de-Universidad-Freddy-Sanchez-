@@ -1,0 +1,13 @@
+graph TB
+    subgraph "Valores en caché -128 a 127"
+        A[Integer a = 100] --> C[Objeto: 100<br/>en caché]
+        B[Integer b = 100] --> C
+    end
+    subgraph "Valores fuera de caché"
+        D[Integer c = 200] --> F[Objeto 1: 200]
+        E[Integer d = 200] --> G[Objeto 2: 200]
+    end
+    H[a == b] --> I[✅ true<br/>misma referencia]
+    J[c == d] --> K[❌ false<br/>diferentes referencias]
+    style I fill:#e1ffe1
+    style K fill:#ffe1e1

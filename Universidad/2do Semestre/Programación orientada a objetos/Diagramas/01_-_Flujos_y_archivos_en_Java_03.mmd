@@ -1,0 +1,31 @@
+classDiagram
+    class InputStream {
+        <<abstract>>
+        +read() int
+        +close()
+    }
+    class OutputStream {
+        <<abstract>>
+        +write(int)
+        +flush()
+        +close()
+    }
+    class Reader {
+        <<abstract>>
+        +read() int
+        +close()
+    }
+    class Writer {
+        <<abstract>>
+        +write(int)
+        +flush()
+        +close()
+    }
+    InputStream <|-- FileInputStream
+    InputStream <|-- BufferedInputStream
+    OutputStream <|-- FileOutputStream
+    OutputStream <|-- BufferedOutputStream
+    Reader <|-- FileReader
+    Reader <|-- BufferedReader
+    Writer <|-- FileWriter
+    Writer <|-- BufferedWriter

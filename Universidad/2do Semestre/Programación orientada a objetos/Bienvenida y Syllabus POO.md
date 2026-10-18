@@ -61,23 +61,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ```mermaid
-> graph LR
->     A[☕ POO\nJava] --> B[Unidad 1\nFundamentos POO]
->     A --> C[Unidad 2\nColecciones y Arreglos]
->     A --> D[Unidad 3\nDiseño OO y UML]
->     A --> E[Unidad 4\nHerencia e Interfaces]
->     A --> F[Unidad 5\nArchivos y Excepciones]
->     A --> G[Unidad 6\nGUI y Eventos]
->     A --> H[Unidad 7\nConcurrencia]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
->     style G fill:#e1fff4
->     style H fill:#fff0e1
-> ```
+> ![[Diagramas/Bienvenida_y_Syllabus_POO_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|

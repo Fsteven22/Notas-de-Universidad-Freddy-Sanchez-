@@ -26,21 +26,7 @@ dg-publish: true
 > |**Mantenibilidad**|Cambios internos no afectan código externo|Cambiar implementación sin romper el código|
 > |**Abstracción**|Oculta complejidad innecesaria|Usar `depositar()` en vez de `saldo += monto`|
 
-```mermaid
-graph TB
-    A[Usuario] --> B[Interfaz Pública]
-    B --> C[Métodos públicos]
-    C --> D{Validación}
-    D -->|✅ Válido| E[Modificar<br/>Atributos Privados]
-    D -->|❌ Inválido| F[Rechazar<br/>operación]
-    
-    G[Atributos Privados] -.-> E
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style G fill:#ffe1e1
-    style E fill:#fff4e1
-```
+![[Diagramas/04_-_Encapsulamiento_y_visibilidad_01.svg]]
 
 ---
 
@@ -91,27 +77,7 @@ graph TB
 
 > [!success] 📋 Guía de Decisión
 > 
-> ```mermaid
-> graph TD
->     A{¿Qué estás<br/>declarando?} --> B[Atributo]
->     A --> C[Método]
->     A --> D[Clase]
->     B --> E{¿Debe ser<br/>modificable<br/>externamente?}
->     E -->|No| F[🔴 private]
->     E -->|Sí, con control| G[🟢 private + getter/setter]
->     E -->|Sí, libremente| H[🟢 public - Raramente]
->     C --> I{¿Parte de la<br/>interfaz pública?}
->     I -->|Sí| J[🟢 public]
->     I -->|No| K[🔴 private]
->     I -->|Solo herencia| L[🟡 protected]
->     D --> M{¿Usada<br/>externamente?}
->     M -->|Sí| N[🟢 public]
->     M -->|Solo en paquete| O[🟠 default]
->     style F fill:#ffe1e1
->     style G fill:#e1ffe1
->     style J fill:#e1ffe1
->     style K fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Encapsulamiento_y_visibilidad_02.svg]]
 > 
 > **Reglas generales:**
 > 
@@ -800,104 +766,7 @@ Total de empleados: " + Empleado.getTotalEmpleados());
 ---
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Encapsulamiento))
-    Modificadores
-      private
-        Atributos
-        Métodos auxiliares
-      protected
-        Herencia
-      public
-        Interfaz pública
-      default
-        Paquete
-    Getters/Setters
-      Lectura
-        getNombre
-        isActivo
-      Escritura
-        setNombre
-        Validación
-      Defensivos
-        Copias
-        Inmutables
-    Validación
-      En constructor
-      En setters
-      En métodos
-    Beneficios
-      Seguridad
-      Control
-      Mantenibilidad
-      Abstracción
-````
-
-> [!success]  🎯 Tabla de Referencia Rápida
-> |Concepto|Cuándo usar|Ejemplo|
-> |---|---|---|
-> |`private`|Atributos y métodos internos|`private String nombre;`|
-> |`public`|Interfaz pública de la clase|`public void metodo()`|
-> |`protected`|Compartir con subclases|`protected int valor;`|
-> |Getter|Leer atributo privado|`public String getNombre()`|
-> |Setter|Modificar con validación|`public void setEdad(int edad)`|
-> |Método de negocio|Operaciones específicas|`depositar()`, `retirar()`|
----
-
-## 💪 Ejercicios Prácticos
-
-> [!example] 🎯 Práctica 1: Clase Fecha
-> ```java
-> public class Fecha {
->     // Atributos privados
->     private int dia;
->     private int mes;
->     private int anio;
->     // Constructor con validación
->     public Fecha(int dia, int mes, int anio) {
->         setDia(dia);
->         setMes(mes);
->         setAnio(anio);
->     }
->     // Getters
->     public int getDia() {
->         return dia;
->     }
->     public int getMes() {
->         return mes;
->     }
->     public int getAnio() {
->         return anio;
->     }
->     // Setters con validación
->     public void setDia(int dia) {
->         if (dia < 1 || dia > 31) {
->             throw new IllegalArgumentException("Día debe estar entre 1 y 31");
->         }
->         this.dia = dia;
->     }
->     public void setMes(int mes) {
->         if (mes < 1 || mes > 12) {
->             throw new IllegalArgumentException("Mes debe estar entre 1 y 12");
->         }
->         this.mes = mes;
->     }
->     public void setAnio(int anio) {
->         if (anio < 1900 || anio > 2100) {
->             throw new IllegalArgumentException("Año debe estar entre 1900 y 2100");
->         }
->         this.anio = anio;
->     }
->     // Método computado
->     public String getFechaFormateada() {
->         return String.format("%02d/%02d/%04d", dia, mes, anio);
->     }
->     public void mostrarInfo() {
->         System.out.println("📅 Fecha: " + getFechaFormateada());
->     }
-> }
-> ```
+![[Diagramas/04_-_Encapsulamiento_y_visibilidad_03.svg]]
 >
 
 > [!example] 🎯 Práctica 2: Clase Temperatura

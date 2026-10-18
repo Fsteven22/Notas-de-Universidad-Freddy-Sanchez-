@@ -16,14 +16,7 @@ dg-publish: true
 > - **Flujo** → Corriente de agua (datos fluyendo)
 > - **Destino** → Desembocadura (pantalla, archivo, red)
 > 
-> ```mermaid
-> graph LR
->     A[📁 Origen<br/>Archivo] -->|Flujo de entrada| B[☕ Programa<br/>Java]
->     B -->|Flujo de salida| C[📄 Destino<br/>Archivo]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_01.svg]]
 
 ---
 
@@ -43,64 +36,13 @@ dg-publish: true
 > |**Ejemplos**|Imágenes, audio, video|.txt, .csv, .log|
 > |**Codificación**|No maneja|✅ Maneja UTF-8, etc.|
 
-```mermaid
-graph TB
-    A[Flujos en Java] --> B[Flujos de Bytes]
-    A --> C[Flujos de Caracteres]
-    
-    B --> B1[InputStream<br/>Lectura]
-    B --> B2[OutputStream<br/>Escritura]
-    
-    C --> C1[Reader<br/>Lectura]
-    C --> C2[Writer<br/>Escritura]
-    
-    B1 --> B3[FileInputStream<br/>BufferedInputStream]
-    B2 --> B4[FileOutputStream<br/>BufferedOutputStream]
-    
-    C1 --> C5[FileReader<br/>BufferedReader]
-    C2 --> C6[FileWriter<br/>BufferedWriter]
-    
-    style B fill:#ffe1e1
-    style C fill:#e1ffe1
-```
+![[Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
 
 ### 📊 Jerarquía Completa
 
 > [!note] 🌳 Árbol de Clases de E/S
 > 
-> ```mermaid
-> classDiagram
->     class InputStream {
->         <<abstract>>
->         +read() int
->         +close()
->     }
->     class OutputStream {
->         <<abstract>>
->         +write(int)
->         +flush()
->         +close()
->     }
->     class Reader {
->         <<abstract>>
->         +read() int
->         +close()
->     }
->     class Writer {
->         <<abstract>>
->         +write(int)
->         +flush()
->         +close()
->     }
->     InputStream <|-- FileInputStream
->     InputStream <|-- BufferedInputStream
->     OutputStream <|-- FileOutputStream
->     OutputStream <|-- BufferedOutputStream
->     Reader <|-- FileReader
->     Reader <|-- BufferedReader
->     Writer <|-- FileWriter
->     Writer <|-- BufferedWriter
-> ```
+> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_03.svg]]
 
 ---
 
@@ -167,14 +109,7 @@ graph TB
 > 
 > Java usa el **patrón Decorator** para añadir capacidades a los flujos básicos sin modificarlos.
 > 
-> ```mermaid
-> graph LR
->     A[FileReader<br/>Lectura básica] --> B[BufferedReader<br/>+ Buffer]
->     B --> C[Tu Programa<br/>readLine]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_04.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -242,15 +177,7 @@ graph TB
 > 
 > **Problema:** Los flujos consumen recursos del sistema operativo.
 > 
-> ```mermaid
-> graph TD
->     A[Abrir flujo] --> B[Usar flujo]
->     B --> C{¿Cerrado?}
->     C -->|❌ No| D[Fuga de recursos<br/>Archivos bloqueados]
->     C -->|✅ Sí| E[Recursos liberados<br/>Todo OK]
->     style D fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_05.svg]]
 > 
 > **Solución: try-with-resources** (Java 7+)
 > 
@@ -267,21 +194,7 @@ graph TB
 
 > [!summary] 🎯 Guía Rápida de Decisión
 > 
-> ```mermaid
-> graph TD
->     A{¿Tipo de<br/>archivo?} --> B[Texto]
->     A --> C[Binario]
->     B --> D{¿Operación?}
->     C --> E{¿Operación?}
->     D -->|Lectura| F[BufferedReader +<br/>FileReader]
->     D -->|Escritura| G[BufferedWriter +<br/>FileWriter]
->     E -->|Lectura| H[BufferedInputStream +<br/>FileInputStream]
->     E -->|Escritura| I[BufferedOutputStream +<br/>FileOutputStream]
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#e1f5ff
->     style I fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_06.svg]]
 > 
 > |Pregunta|Respuesta|Clase a usar|
 > |---|---|---|

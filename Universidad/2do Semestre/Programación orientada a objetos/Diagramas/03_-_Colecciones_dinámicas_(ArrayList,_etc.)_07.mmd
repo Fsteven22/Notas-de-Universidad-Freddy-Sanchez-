@@ -1,0 +1,13 @@
+flowchart TD
+    A{¿Qué necesitas?} --> B[Lista ordenada]
+    A --> C[Elementos únicos]
+    A --> D[Pares clave-valor]
+    B --> E{¿Qué operaciones?}
+    E -->|Acceso por índice| F[ArrayList]
+    E -->|Insertar al inicio| G[LinkedList]
+    C --> H[HashSet]
+    D --> I[HashMap]
+    style F fill:#e1ffe1
+    style G fill:#fff4e1
+    style H fill:#e1f5ff
+    style I fill:#ffe1e1

@@ -19,21 +19,7 @@ dg-publish: true
 > 
 > **Problema que resuelven:**
 > 
-> ```mermaid
-> graph TB
->     A[Arreglo Estático] --> B[❌ Tamaño fijo<br/>new int 5]
->     A --> C[❌ No se puede<br/>cambiar tamaño]
->     A --> D[❌ Operaciones<br/>manuales]
->     E[ArrayList Dinámico] --> F[✅ Tamaño flexible<br/>crece automáticamente]
->     E --> G[✅ Métodos<br/>incorporados]
->     E --> H[✅ Fácil de usar<br/>add, remove, etc]
->     style B fill:#ffe1e1
->     style C fill:#ffe1e1
->     style D fill:#ffe1e1
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg]]
 > 
 > **Comparación rápida:**
 > 
@@ -103,19 +89,7 @@ dg-publish: true
 > 
 > **Visualización interna:**
 > 
-> ```mermaid
-> graph TB
->     A[ArrayList Vacío<br/>size = 0] --> B[Capacidad inicial<br/>10 espacios]
->     C[Agregar elementos] --> D[size = 1, 2, 3...]
->     D --> E{¿Capacidad<br/>llena?}
->     E -->|No| F[Agregar<br/>normalmente]
->     E -->|Sí| G[Crear array<br/>más grande]
->     G --> H[Copiar elementos]
->     H --> I[Capacidad x 1.5]
->     style A fill:#e1f5ff
->     style G fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg]]
 
 ### ➕ Operaciones Básicas
 
@@ -350,21 +324,7 @@ dg-publish: true
 > 
 > **Estructura interna:**
 > 
-> ```mermaid
-> graph LR
->     subgraph ArrayList
->         A1[0: Ana] --> A2[1: Luis] --> A3[2: María]
->         A4[Array continuo en memoria]
->     end
->     subgraph LinkedList
->         L1[Ana] -.->|next| L2[Luis] -.->|next| L3[María]
->         L2 -.->|prev| L1
->         L3 -.->|prev| L2
->         L4[Nodos enlazados]
->     end
->     style A1 fill:#e1f5ff
->     style L1 fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg]]
 > 
 > **Comparación de rendimiento:**
 > 
@@ -404,17 +364,7 @@ dg-publish: true
 > 
 > **Cuándo usar cada una:**
 > 
-> ```mermaid
-> flowchart TD
->     A{Tipo de<br/>operación?} --> B[Acceso aleatorio<br/>frecuente]
->     A --> C[Inserción/eliminación<br/>al inicio]
->     A --> D[Agregar al final<br/>principalmente]
->     B --> E[✅ ArrayList<br/>get es O 1]
->     C --> F[✅ LinkedList<br/>addFirst es O 1]
->     D --> E
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_04.svg]]
 > 
 > **Recomendación general:**
 > 
@@ -431,17 +381,7 @@ dg-publish: true
 > 
 > **Propiedades del HashSet:**
 > 
-> ```mermaid
-> graph TB
->     A[HashSet] --> B[❌ No permite duplicados]
->     A --> C[❌ No tiene orden]
->     A --> D[✅ Búsqueda muy rápida O 1]
->     A --> E[✅ Ideal para unicidad]
->     style B fill:#fff4e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg]]
 > 
 > **Uso básico:**
 > 
@@ -516,17 +456,7 @@ dg-publish: true
 > 
 > **Concepto:**
 > 
-> ```mermaid
-> graph LR
->     A[HashMap] --> B[Clave: DNI]
->     B --> C[Valor: Nombre]
->     D["12345678"] --> E["Ana García"]
->     F["87654321"] --> G["Luis Pérez"]
->     H["11223344"] --> I["María López"]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg]]
 > 
 > **Sintaxis básica:**
 > 
@@ -644,21 +574,7 @@ dg-publish: true
 > 
 > **Árbol de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A{¿Qué necesitas?} --> B[Lista ordenada]
->     A --> C[Elementos únicos]
->     A --> D[Pares clave-valor]
->     B --> E{¿Qué operaciones?}
->     E -->|Acceso por índice| F[ArrayList]
->     E -->|Insertar al inicio| G[LinkedList]
->     C --> H[HashSet]
->     D --> I[HashMap]
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
->     style H fill:#e1f5ff
->     style I fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg]]
 
 ---
 
@@ -813,29 +729,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Colecciones))
-    ArrayList
-      Tamaño dinámico
-      Acceso O 1
-      add get set
-      Uso general
-    LinkedList
-      Nodos enlazados
-      addFirst/Last
-      Insertar al inicio
-    HashSet
-      Sin duplicados
-      Sin orden
-      contains O 1
-      Unicidad
-    HashMap
-      Clave-Valor
-      put get
-      Diccionarios
-      Frecuencias
-```
+![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_08.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

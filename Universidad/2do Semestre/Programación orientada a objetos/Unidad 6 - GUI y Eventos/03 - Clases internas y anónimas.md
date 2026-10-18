@@ -27,33 +27,7 @@ dg-publish: true
 > |**Código más legible**|Clases auxiliares cerca de donde se usan|Comparadores específicos|
 > |**Reducir namespace**|Evitar contaminación del espacio de nombres|Clases helper internas|
 
-```mermaid
-graph TB
-    A[Clases en Java] --> B{Tipos de Clases<br/>Internas}
-    B --> C[🏠 Clases Internas<br/>Miembro]
-    B --> D[⚡ Clases Internas<br/>Locales]
-    B --> E[🎭 Clases<br/>Anónimas]
-    B --> F[📌 Clases Internas<br/>Estáticas]
-    
-    C --> C1[Asociadas a instancia]
-    C --> C2[Acceso a miembros<br/>de la externa]
-    
-    D --> D1[Definidas en método]
-    D --> D2[Scope limitado]
-    
-    E --> E1[Sin nombre]
-    E --> E2[Uso único]
-    E --> E3[Muy común en Java]
-    
-    F --> F1[Independientes]
-    F --> F2[Sin acceso a instancia<br/>externa]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1f5
-    style F fill:#f0e1ff
-```
+![[Diagramas/03_-_Clases_internas_y_anónimas_01.svg]]
 
 ---
 
@@ -63,38 +37,7 @@ graph TB
 
 > [!note] 🌳 Organización de Clases Internas
 > 
-> ```mermaid
-> classDiagram
->     class ClaseExterna {
->         -atributoPrivado
->         +metodoPublico()
->         // Puede contener:
->     }
->     class ClaseInternaMiembro {
->         <<Inner Class>>
->         Accede a toda la clase externa
->         Requiere instancia de externa
->     }
->     class ClaseInternaLocal {
->         <<Local Class>>
->         Solo en método/bloque
->         Variables finales/effectively final
->     }
->     class ClaseAnonima {
->         <<Anonymous Class>>
->         Sin nombre explícito
->         Implementa/extiende al vuelo
->     }
->     class ClaseInternaEstatica {
->         <<Static Nested Class>>
->         No accede a instancia externa
->         Funciona como clase normal
->     }
->     ClaseExterna *-- ClaseInternaMiembro
->     ClaseExterna *-- ClaseInternaLocal
->     ClaseExterna *-- ClaseAnonima
->     ClaseExterna *-- ClaseInternaEstatica
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_02.svg]]
 > 
 > **Comparación de características:**
 > 
@@ -111,23 +54,7 @@ graph TB
 > 
 > **Ciclo de vida de clases internas:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant M as Main/Cliente
->     participant E as ClaseExterna
->     participant I as ClaseInterna
->     M->>E: new ClaseExterna()
->     E->>E: Constructor ejecutado
->     Note over E: Instancia externa creada
->     M->>E: externa.new ClaseInterna()
->     E->>I: Constructor ejecutado
->     Note over I: Instancia interna creada
->     Note over I: Tiene referencia a externa
->     M->>I: interna.metodo()
->     I->>E: Accede a miembros privados
->     E-->>I: Datos compartidos
->     I-->>M: Resultado
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_03.svg]]
 > 
 > **Niveles de acceso:**
 > 
@@ -176,18 +103,7 @@ graph TB
 > 
 > **Características clave:**
 > 
-> ```mermaid
-> graph TD
->     A[Clase Interna<br/>Miembro] --> B[Acceso a TODO<br/>de la externa]
->     A --> C[Requiere instancia<br/>de externa]
->     A --> D[Puede tener cualquier<br/>modificador]
->     A --> E[Referencia implícita<br/>Externa.this]
->     B --> B1[Atributos privados]
->     B --> B2[Métodos privados]
->     B --> B3[Otros miembros internos]
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_04.svg]]
 
 ### 🛠️ Creación e Instanciación
 
@@ -249,16 +165,7 @@ graph TB
 > 
 > **Flujo de creación:**
 > 
-> ```mermaid
-> flowchart LR
->     A[1. Crear<br/>ClaseExterna] --> B[2. Obtener<br/>referencia externa]
->     B --> C[3. Usar externa.new<br/>ClaseInterna]
->     C --> D[4. Instancia interna<br/>creada]
->     D --> E[5. Vinculada a<br/>instancia externa]
->     style A fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_05.svg]]
 
 ### 💼 Casos de Uso Reales
 
@@ -425,19 +332,7 @@ graph TB
 > 
 > **Restricciones importantes:**
 > 
-> ```mermaid
-> graph TD
->     A[Clase Interna<br/>Local] --> B[Solo variables<br/>final/effectively final]
->     A --> C[No puede tener<br/>modificadores estáticos]
->     A --> D[Scope limitado<br/>al bloque]
->     A --> E[Acceso a miembros<br/>de la externa]
->     B --> B1[final String x]
->     B --> B2[int y - no modificada]
->     C --> C1[❌ No static]
->     C --> C2[❌ No public/private<br/>en la definición]
->     style A fill:#fff4e1
->     style B fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_06.svg]]
 > 
 > **Effectively final:** Una variable que no se declara como `final` pero nunca se modifica después de su inicialización. Java 8+ permite usarlas en clases internas locales.
 
@@ -560,16 +455,7 @@ graph TB
 > 
 > **Estructura visual:**
 > 
-> ```mermaid
-> flowchart LR
->     A[new Interface/Class] --> B[Paréntesis<br/>constructor]
->     B --> C[Llaves: cuerpo<br/>de la clase]
->     C --> D[Implementar<br/>métodos]
->     D --> E[Punto y coma<br/>final;]
->     style A fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_07.svg]]
 > 
 > **Características:**
 > 
@@ -774,18 +660,7 @@ graph TB
 > 
 > **Limitaciones:**
 > 
-> ```mermaid
-> graph TD
->     A[Limitaciones<br/>Clases Anónimas] --> B[❌ No reutilizable]
->     A --> C[❌ Solo 1 interfaz/clase]
->     A --> D[❌Sin constructor<br/>personalizado]
-> A --> E[❌ Dificulta debugging]
-> B --> B1[Cada uso requiere<br/>nueva declaración]
-> C --> C1[No múltiples interfaces]
-> D --> D1[Solo constructor<br/>de la clase padre]
-> E --> E1[Nombres autogenerados<br/>Clase$1, Clase$2...]
-> style A fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_08.svg]]
 > 
 > 
 > 
@@ -855,15 +730,7 @@ graph TB
 > 
 > **Diferencias clave con clases internas normales:**
 > 
-> ```mermaid
-> graph LR
->     A[Clase Interna<br/>Normal] --> B[Requiere instancia<br/>de externa]
->     A --> C[Acceso total a<br/>miembros de instancia]
->     D[Clase Interna<br/>Estática] --> E[Independiente de<br/>instancia externa]
->     D --> F[Solo miembros<br/>estáticos de externa]
->     style A fill:#e1ffe1
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_09.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -922,20 +789,7 @@ graph TB
 > 
 > **Comparación visual de instanciación:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant M as Main
->     participant E as ClaseExterna
->     participant I as Interna Normal
->     participant S as Interna Estática
->     Note over M,S: Clase Interna Normal
->     M->>E: externa = new Externa()
->     M->>I: externa.new Interna()
->     Note over I: Vinculada a externa
->     Note over M,S: Clase Interna Estática
->     M->>S: new Externa.Interna()
->     Note over S: Completamente independiente
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_10.svg]]
 
 ### 💼 Casos de Uso
 
@@ -1145,21 +999,7 @@ graph TB
 
 > [!tip] 🤔 ¿Qué Tipo Usar?
 > 
-> ```mermaid
-> graph TD
->     A{¿Necesitas un<br/>nombre?} -->|No| B{¿Método simple?}
->     A -->|Sí| C{¿Acceso a<br/>instancia externa?}
->     B -->|Sí - 1 método| D[✅ Clase Anónima]
->     B -->|No - múltiples| E[✅ Clase Local]
->     C -->|Sí| F{¿Scope<br/>específico?}
->     C -->|No| G[✅ Clase Interna<br/>Estática]
->     F -->|Método| E
->     F -->|Clase completa| H[✅ Clase Interna<br/>Miembro]
->     style D fill:#ffe1f5
->     style E fill:#fff4e1
->     style G fill:#f0e1ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Clases_internas_y_anónimas_11.svg]]
 > 
 > **Escenarios específicos:**
 > 
@@ -1609,75 +1449,7 @@ graph TB
 ### 🗺️ Mapa Mental Completo
 
 
-```mermaid
-mindmap
-  root((Clases<br/>Internas))
-    Tipos
-      Miembro
-        Acceso total a externa
-        Requiere instancia
-        Reutilizable
-        Iteradores
-      Local
-        Dentro de método
-        Variables final
-        Scope limitado
-        Uso temporal
-      Anónima
-        Sin nombre
-        Uso único
-        Ideal para callbacks
-        Event listeners
-      Estática
-        Independiente
-        Solo estáticos
-        Builder pattern
-        Clases auxiliares
-    Características
-      Encapsulación
-        Ocultar implementación
-        Acceso a private
-        Namespace limpio
-      Organización
-        Código relacionado junto
-        Reducir archivos
-        Cohesión alta
-      Acceso Privilegiado
-        Miembros privados
-        Referencia implícita
-        Externa.this
-    Usos Comunes
-      Iteradores
-        Acceso a estructura interna
-        Iterator pattern
-      Event Listeners
-        GUI programming
-        ActionListener
-        Callbacks
-      Nodos
-        Estructuras de datos
-        Árboles
-        Listas enlazadas
-      Builders
-        Patrón de diseño
-        Construcción fluida
-        Inmutabilidad
-    Mejores Prácticas
-      Preferir estáticas
-        Cuando sea posible
-        Mejor rendimiento
-      Clases anónimas simples
-        Menos de 10 líneas
-        O usar lambdas
-      Effectively final
-        Variables locales
-        Restricción importante
-      Nombrar descriptivamente
-        Código claro
-        Mantenibilidad
-
-
-```
+![[Diagramas/03_-_Clases_internas_y_anónimas_12.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

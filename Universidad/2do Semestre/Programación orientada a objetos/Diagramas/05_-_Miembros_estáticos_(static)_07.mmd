@@ -1,0 +1,7 @@
+flowchart TD
+    A{¿El valor/comportamiento<br/>es común a TODAS<br/>las instancias?} -->|Sí| B[✅ Usar static]
+    A -->|No| C[❌ Usar instancia]
+    B --> D[Ejemplos:<br/>- Contadores globales<br/>- Constantes<br/>- Métodos utilitarios]
+    C --> E[Ejemplos:<br/>- Atributos personales<br/>- Estado del objeto]
+    style B fill:#e1ffe1
+    style C fill:#e1f5ff

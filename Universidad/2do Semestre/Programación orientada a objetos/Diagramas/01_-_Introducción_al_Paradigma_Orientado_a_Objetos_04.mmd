@@ -1,0 +1,18 @@
+classDiagram
+    Vehiculo <|-- Auto
+    Vehiculo <|-- Moto
+    class Vehiculo {
+        -String marca
+        -String modelo
+        -int año
+        +encender()
+        +apagar()
+    }
+    class Auto {
+        -int numPuertas
+        +abrirMaletero()
+    }
+    class Moto {
+        -String tipoManubrio
+        +hacerCaballito()
+    }

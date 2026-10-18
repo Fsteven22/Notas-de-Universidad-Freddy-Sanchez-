@@ -1,0 +1,13 @@
+graph TD
+    A{Tamaño del<br/>archivo?} --> B[< 1 MB]
+    A --> C[1-100 MB]
+    A --> D[> 100 MB]
+    B --> E[Cargar todo<br/>en memoria]
+    C --> F[Decidir según<br/>necesidad]
+    D --> G[Streaming<br/>obligatorio]
+    F --> H{¿Acceso<br/>aleatorio?}
+    H -->|Sí| E
+    H -->|No| G
+    style E fill:#e1ffe1
+    style G fill:#e1f5ff
+    style F fill:#fff4e1

@@ -18,23 +18,7 @@ dg-publish: true
 > 
 > **Características fundamentales:**
 > 
-> ```mermaid
-> graph TB
->     A[Arreglo int scores] --> B[Tamaño FIJO: 5]
->     A --> C[Tipo HOMOGÉNEO: int]
->     A --> D[Índices: 0 a 4]
->     A --> E[Memoria CONTIGUA]
->     F[scores] --> G["[0] → 85"]
->     F --> H["[1] → 92"]
->     F --> I["[2] → 78"]
->     F --> J["[3] → 90"]
->     F --> K["[4] → 88"]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#fff4e1
->     style D fill:#fff4e1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_01.svg]]
 > 
 > |Característica|Descripción|Implicación|
 > |---|---|---|
@@ -166,20 +150,7 @@ dg-publish: true
 > 
 > **Visualización de inicialización:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Crear arreglo] --> B{¿Conoces<br/>los valores?}
->     B -->|Sí| C[Inicialización directa<br/>{v1, v2, v3}]
->     B -->|No| D[new tipo tamaño]
->     D --> E{¿Llenar<br/>después?}
->     E -->|Valor por valor| F[arr 0 = x<br/>arr 1 = y]
->     E -->|Con patrón| G[Usar bucle for]
->     E -->|Mismo valor| H[Arrays.fill]
->     style C fill:#e1ffe1
->     style F fill:#e1f5ff
->     style G fill:#e1f5ff
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_02.svg]]
 
 ---
 
@@ -219,19 +190,7 @@ dg-publish: true
 > 
 > **Representación visual:**
 > 
-> ```mermaid
-> graph TB
->     A["frutas (length = 5)"] --> B["[0] Manzana"]
->     A --> C["[1] Banana → Fresa"]
->     A --> D["[2] Naranja"]
->     A --> E["[3] Uva"]
->     A --> F["[4] Pera"]
->     G[Índices válidos: 0 a 4] --> H["❌ frutas[5] → ERROR"]
->     G --> I["❌ frutas[-1] → ERROR"]
->     style A fill:#e1f5ff
->     style H fill:#ffe1e1
->     style I fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_03.svg]]
 > 
 > **⚠️ Error común - ArrayIndexOutOfBoundsException:**
 > 
@@ -326,17 +285,7 @@ dg-publish: true
 > 
 > **Flujo de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A{¿Necesitas el índice?} -->|Sí| B[Usar for tradicional]
->     A -->|No| C{¿Vas a modificar<br/>elementos?}
->     C -->|Sí| B
->     C -->|No| D[Usar for-each]
->     B --> E[for i = 0; i < arr.length]
->     D --> F[for tipo elem : arr]
->     style D fill:#e1ffe1
->     style B fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_04.svg]]
 
 ---
 
@@ -451,12 +400,7 @@ dg-publish: true
 > 
 > **Visualización del problema:**
 > 
-> ```mermaid
-> graph LR
->     A[original] --> C[Memoria: 1,2,3,4,5]
->     B[copia] --> C
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_05.svg]]
 > 
 > **✅ Formas correctas de copiar:**
 > 
@@ -606,16 +550,7 @@ dg-publish: true
 > 
 > **Visualización de matriz 3x3:**
 > 
-> ```mermaid
-> graph TB
->     A["matriz[3][3]"] --> B["Fila 0"]
->     A --> C["Fila 1"]
->     A --> D["Fila 2"]
->     B --> E["[0][0]  [0][1]  [0][2]"]
->     C --> F["[1][0]  [1][1]  [1][2]"]
->     D --> G["[2][0]  [2][1]  [2][2]"]
->     style A fill:#e1f5ff
-> ```
+> ![[Diagramas/01_-_Arreglos_estáticos_06.svg]]
 > 
 > **Inicialización:**
 > 
@@ -763,36 +698,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Arreglos))
-    Características
-      Tamaño fijo
-      Tipo homogéneo
-      Índice base 0
-      Acceso O 1
-    Declaración
-      tipo  nombre
-      new tipo tamaño
-      Inicialización directa
-    Operaciones
-      Acceso  índice
-      Modificación
-      Recorrido for/foreach
-      Búsqueda
-      Ordenamiento
-    Clase Arrays
-      sort
-      binarySearch
-      toString
-      fill
-      equals
-      copyOf
-    Multidimensionales
-      Matrices 2D
-      tipo Bucles anidados
-
-```
+![[Diagramas/01_-_Arreglos_estáticos_07.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

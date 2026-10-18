@@ -1,0 +1,25 @@
+graph TB
+    A[Clases en Java] --> B{Tipos de Clases<br/>Internas}
+    B --> C[🏠 Clases Internas<br/>Miembro]
+    B --> D[⚡ Clases Internas<br/>Locales]
+    B --> E[🎭 Clases<br/>Anónimas]
+    B --> F[📌 Clases Internas<br/>Estáticas]
+    
+    C --> C1[Asociadas a instancia]
+    C --> C2[Acceso a miembros<br/>de la externa]
+    
+    D --> D1[Definidas en método]
+    D --> D2[Scope limitado]
+    
+    E --> E1[Sin nombre]
+    E --> E2[Uso único]
+    E --> E3[Muy común en Java]
+    
+    F --> F1[Independientes]
+    F --> F2[Sin acceso a instancia<br/>externa]
+    
+    style A fill:#e1f5ff
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style E fill:#ffe1f5
+    style F fill:#f0e1ff

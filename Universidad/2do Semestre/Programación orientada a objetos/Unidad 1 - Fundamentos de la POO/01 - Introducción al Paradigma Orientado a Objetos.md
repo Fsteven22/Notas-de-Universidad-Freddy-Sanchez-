@@ -25,20 +25,7 @@ dg-publish: true
 > |**Abstracción**|Ocultar complejidad innecesaria|✅ Código más simple|
 > |**Mantenibilidad**|Cambios localizados, no globales|✅ Menos errores|
 
-```mermaid
-graph LR
-    A[Mundo Real] --> B[Concepto]
-    B --> C[Clase]
-    C --> D[Objeto 1]
-    C --> E[Objeto 2]
-    C --> F[Objeto N]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#e1ffe1
-    style E fill:#e1ffe1
-    style F fill:#e1ffe1
-```
+![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
 
 ---
 
@@ -50,19 +37,7 @@ graph LR
 > 
 > **Clase:** El plano o molde que define cómo será algo **Objeto:** Una instancia concreta creada a partir de ese molde
 > 
-> ```mermaid
-> graph TD
->     A[Clase: Estudiante] --> B[Objeto: Juan]
->     A --> C[Objeto: María]
->     A --> D[Objeto: Pedro]
->     B --> B1[nombre: Juan<br/>edad: 20<br/>carrera: Ingeniería]
->     C --> C1[nombre: María<br/>edad: 19<br/>carrera: Medicina]
->     D --> D1[nombre: Pedro<br/>edad: 21<br/>carrera: Derecho]
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_02.svg]]
 > 
 > **Ejemplo básico:**
 > 
@@ -235,19 +210,7 @@ graph LR
 > - Referencia al objeto actual
 > - Distingue entre parámetros y atributos con el mismo nombre
 > 
-> ```mermaid
-> graph LR
->     A[new Producto<br/>args] --> B[Constructor]
->     B --> C[this.nombre = nombre]
->     B --> D[this.precio = precio]
->     B --> E[this.stock = stock]
->     C --> F[Objeto<br/>Inicializado]
->     D --> F
->     E --> F
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg]]
 
 ---
 
@@ -326,26 +289,7 @@ graph LR
 > 
 > La **herencia** permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos.
 > 
-> ```mermaid
-> classDiagram
->     Vehiculo <|-- Auto
->     Vehiculo <|-- Moto
->     class Vehiculo {
->         -String marca
->         -String modelo
->         -int año
->         +encender()
->         +apagar()
->     }
->     class Auto {
->         -int numPuertas
->         +abrirMaletero()
->     }
->     class Moto {
->         -String tipoManubrio
->         +hacerCaballito()
->     }
-> ```
+> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg]]
 > 
 > ```java
 > // Clase base (superclase/padre)
@@ -530,35 +474,7 @@ graph LR
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((POO))
-    Conceptos Básicos
-      Clase
-        Molde/Plantilla
-      Objeto
-        Instancia concreta
-      Atributos
-        Estado
-      Métodos
-        Comportamiento
-      Constructor
-        Inicialización
-    4 Pilares
-      Encapsulamiento
-        private/public
-        Getters/Setters
-      Herencia
-        extends
-        super
-        Reutilización
-      Polimorfismo
-        Override
-        Múltiples formas
-      Abstracción
-        abstract
-        Conceptos generales
-```
+![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_05.svg]]
 
 > [!success]  🎯 Tabla Comparativa
 > |Concepto|Qué es|Cuándo usar|Ejemplo|

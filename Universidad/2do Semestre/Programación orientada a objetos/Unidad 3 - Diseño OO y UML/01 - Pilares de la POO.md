@@ -19,26 +19,7 @@ dg-publish: true
 > |**Polimorfismo**|Código rígido que no se adapta a nuevos tipos|✅ Flexibilidad y extensibilidad|
 > |**Abstracción**|Complejidad expuesta innecesariamente|✅ Interfaces simples y claras|
 
-```mermaid
-mindmap
-  root((4 Pilares POO))
-    Encapsulación
-      Ocultar datos
-      Getters/Setters
-      Validación
-    Herencia
-      Reutilización
-      extends
-      super
-    Polimorfismo
-      Override
-      Múltiples formas
-      Flexibilidad
-    Abstracción
-      abstract
-      interface
-      Contratos
-```
+![[Diagramas/01_-_Pilares_de_la_POO_01.svg]]
 
 ---
 
@@ -152,15 +133,7 @@ mindmap
 > |**extends**|Palabra clave para heredar|
 > |**super**|Referencia a la superclase|
 
-```mermaid
-graph TB
-    A[Empleado<br/>nombre<br/>salarioBase<br/>calcularSalario] --> B[Gerente<br/>bono]
-    A --> C[Vendedor<br/>comision]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#e1ffe1
-```
+![[Diagramas/01_-_Pilares_de_la_POO_02.svg]]
 
 ### 🛠️ Implementación
 
@@ -274,20 +247,7 @@ graph TB
 > 
 > **Analogía:** Un control remoto (interfaz) funciona con diferentes dispositivos (TV, reproductor, aire) - mismo botón "encender", diferente comportamiento.
 
-```mermaid
-graph TB
-    A[Animal referencia] --> B{Tipo Real}
-    
-    B --> C[new Perro]
-    B --> D[new Gato]
-    
-    C --> C1[hacerSonido<br/>→ Guau]
-    D --> D1[hacerSonido<br/>→ Miau]
-    
-    style A fill:#e1f5ff
-    style C1 fill:#e1ffe1
-    style D1 fill:#fff4e1
-```
+![[Diagramas/01_-_Pilares_de_la_POO_03.svg]]
 
 ### 🛠️ Implementación
 
@@ -404,21 +364,7 @@ graph TB
 > |**Clases Abstractas**|Herencia con métodos parcialmente implementados|Medio|
 > |**Interfaces**|Contratos puros - solo definiciones|Alto|
 
-```mermaid
-graph TB
-    A[ABSTRACCIÓN] --> B[Clases Abstractas]
-    A --> C[Interfaces]
-    
-    B --> B1[Métodos concretos<br/>+ abstractos]
-    B --> B2[Herencia simple]
-    
-    C --> C1[Solo contratos]
-    C --> C2[Múltiples interfaces]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_-_Pilares_de_la_POO_04.svg]]
 
 ### 🛠️ Clases Abstractas
 
@@ -581,21 +527,7 @@ graph TB
 
 ## 🔗 Relación entre los Pilares
 
-```mermaid
-graph LR
-    A[Encapsulación] --> B[Base<br/>de todo]
-    B --> C[Herencia]
-    C --> D[Reutiliza código<br/>encapsulado]
-    D --> E[Polimorfismo]
-    E --> F[Funciona gracias<br/>a herencia]
-    F --> G[Abstracción]
-    G --> H[Define contratos<br/>polimórficos]
-    
-    style A fill:#e1ffe1
-    style C fill:#e1f5ff
-    style E fill:#fff4e1
-    style G fill:#ffe1f5
-```
+![[Diagramas/01_-_Pilares_de_la_POO_05.svg]]
 
 > [!example] 🚗 Ejemplo Integrador
 > 
@@ -653,30 +585,7 @@ graph LR
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Pilares POO))
-    Encapsulación
-      private
-      getters/setters
-      Validación
-      Control
-    Herencia
-      extends
-      super
-      ES-UN
-      Reutilización
-    Polimorfismo
-      Override
-      Flexibilidad
-      Arrays generales
-      Extensibilidad
-    Abstracción
-      abstract
-      interface
-      Contratos
-      QUÉ no CÓMO
-```
+![[Diagramas/01_-_Pilares_de_la_POO_06.svg]]
 
 > [!success] ✅ Checklist de Aplicación
 > 

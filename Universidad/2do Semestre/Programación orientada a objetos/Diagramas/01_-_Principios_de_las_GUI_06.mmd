@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant U as Usuario
+    participant B as Botón
+    participant L as Listener
+    participant P as Programa
+    U->>B: Click
+    B->>L: actionPerformed()
+    L->>P: Ejecutar código
+    P-->>U: Actualizar interfaz

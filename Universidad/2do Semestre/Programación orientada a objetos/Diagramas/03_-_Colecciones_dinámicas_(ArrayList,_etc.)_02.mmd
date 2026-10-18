@@ -1,0 +1,11 @@
+graph TB
+    A[ArrayList Vacío<br/>size = 0] --> B[Capacidad inicial<br/>10 espacios]
+    C[Agregar elementos] --> D[size = 1, 2, 3...]
+    D --> E{¿Capacidad<br/>llena?}
+    E -->|No| F[Agregar<br/>normalmente]
+    E -->|Sí| G[Crear array<br/>más grande]
+    G --> H[Copiar elementos]
+    H --> I[Capacidad x 1.5]
+    style A fill:#e1f5ff
+    style G fill:#fff4e1
+    style I fill:#e1ffe1

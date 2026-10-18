@@ -1,0 +1,9 @@
+graph TD
+    H1[Hilo 1] -->|Tiene| R1[Recurso 1]
+    H1 -->|Espera| R2[Recurso 2]
+    H2[Hilo 2] -->|Tiene| R2
+    H2 -->|Espera| R1
+    style H1 fill:#ffe1e1
+    style H2 fill:#ffe1e1
+    style R1 fill:#fff4e1
+    style R2 fill:#fff4e1

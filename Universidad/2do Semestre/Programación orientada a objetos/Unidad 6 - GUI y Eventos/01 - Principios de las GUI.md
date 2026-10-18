@@ -15,16 +15,7 @@ dg-publish: true
 > - **CLI (línea de comandos)** → Como hablar por teléfono: solo voz, sin ver
 > - **GUI** → Como una conversación cara a cara: gestos, expresiones, señales visuales
 > 
-> ```mermaid
-> graph LR
->     A[Usuario] -->|Click, teclas| B[GUI<br/>Interfaz Gráfica]
->     B -->|Eventos| C[Programa<br/>Java]
->     C -->|Actualización| B
->     B -->|Feedback visual| A
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_01.svg]]
 > 
 > **Ventajas de las GUI:**
 > 
@@ -42,21 +33,7 @@ dg-publish: true
 
 > [!note] 📚 Evolución de las Bibliotecas
 > 
-> ```mermaid
-> timeline
->     title Evolución GUI en Java
->     1995 : AWT (Abstract Window Toolkit)
->            : Primera biblioteca GUI
->            : Dependiente del SO
->     1997 : Swing
->            : Componentes ligeros
->            : Look and Feel personalizable
->            : ✅ Estándar durante años
->     2008 : JavaFX
->            : GUI moderna
->            : CSS, multimedia, 3D
->            : ✅ Futuro de Java GUI
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_02.svg]]
 > 
 > **Comparación:**
 > 
@@ -76,19 +53,7 @@ dg-publish: true
 > 
 > Los **contenedores** son componentes que pueden contener otros componentes.
 > 
-> ```mermaid
-> graph TD
->     A[JFrame<br/>Ventana principal] --> B[JPanel<br/>Panel contenedor]
->     B --> C1[JButton]
->     B --> C2[JLabel]
->     B --> C3[JTextField]
->     A --> D[JMenuBar<br/>Barra de menú]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C1 fill:#e1ffe1
->     style C2 fill:#e1ffe1
->     style C3 fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_03.svg]]
 > 
 > **Contenedores principales en Swing:**
 > 
@@ -225,19 +190,7 @@ dg-publish: true
 > - ✅ Mantenimiento más fácil
 > - ✅ Diseño responsivo
 > 
-> ```mermaid
-> graph TD
->     A[Layout Managers] --> B[FlowLayout<br/>Flujo izq→der]
->     A --> C[BorderLayout<br/>5 regiones]
->     A --> D[GridLayout<br/>Cuadrícula]
->     A --> E[BoxLayout<br/>Línea/Columna]
->     A --> F[GridBagLayout<br/>Flexible complejo]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#ffe1f5
->     style F fill:#f5e1ff
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_04.svg]]
 
 ### 🌊 FlowLayout
 
@@ -473,16 +426,7 @@ dg-publish: true
 > 
 > **4. Jerarquía visual**
 > 
-> ```mermaid
-> graph TD
->     A[Título grande] --> B[Subtítulo mediano]
->     B --> C[Contenido normal]
->     C --> D[Notas pequeñas]
->     style A fill:#e1f5ff,font-size:20px
->     style B fill:#fff4e1,font-size:16px
->     style C fill:#e1ffe1,font-size:14px
->     style D fill:#f0f0f0,font-size:12px
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_05.svg]]
 > 
 > **5. Agrupación lógica**
 > 
@@ -509,17 +453,7 @@ dg-publish: true
 > 
 > Las GUI funcionan con **eventos**: acciones del usuario que disparan código.
 > 
-> ```mermaid
-> sequenceDiagram
->     participant U as Usuario
->     participant B as Botón
->     participant L as Listener
->     participant P as Programa
->     U->>B: Click
->     B->>L: actionPerformed()
->     L->>P: Ejecutar código
->     P-->>U: Actualizar interfaz
-> ```
+> ![[Diagramas/01_-_Principios_de_las_GUI_06.svg]]
 > 
 > **Componentes del modelo:**
 > 
@@ -723,39 +657,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Principios<br/>GUI))
-    Componentes
-      Contenedores
-        JFrame
-        JPanel
-        JDialog
-      Básicos
-        JButton
-        JLabel
-        JTextField
-      Entrada
-        JCheckBox
-        JComboBox
-        JRadioButton
-    Layout Managers
-      FlowLayout
-      BorderLayout
-      GridLayout
-      BoxLayout
-      GridBagLayout
-    Eventos
-      ActionListener
-      MouseListener
-      KeyListener
-      Modelo evento
-    Diseño
-      Consistencia
-      Feedback
-      Prevención errores
-      Jerarquía visual
-```
+![[Diagramas/01_-_Principios_de_las_GUI_07.svg]]
 
 ---
 

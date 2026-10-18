@@ -1,0 +1,14 @@
+graph TB
+    A[Necesitas usar<br/>tipos primitivos] --> B{¿En qué contexto?}
+    B -->|Colecciones| C[❌ ArrayList int<br/>no funciona]
+    B -->|Métodos genéricos| D[❌ No se puede<br/>usar int]
+    B -->|Parámetros null| E[❌ Primitivos no<br/>aceptan null]
+    C --> F[✅ ArrayList Integer<br/>SÍ funciona]
+    D --> G[✅ Usar Integer<br/>como objeto]
+    E --> H[✅ Integer puede<br/>ser null]
+    style C fill:#ffe1e1
+    style D fill:#ffe1e1
+    style E fill:#ffe1e1
+    style F fill:#e1ffe1
+    style G fill:#e1ffe1
+    style H fill:#e1ffe1

@@ -27,23 +27,7 @@ dg-publish: true
 > |**Escalabilidad**|Manejar múltiples usuarios simultáneamente|APIs REST, sistemas distribuidos|
 > |**Operaciones I/O**|No bloquear mientras se espera datos|Descargas, conexiones de red|
 
-```mermaid
-graph TB
-    A[Programa Java] --> B{Tipo de<br/>Ejecución}
-    B --> C[🐢 Secuencial<br/>Un hilo]
-    B --> D[⚡ Concurrente<br/>Múltiples hilos]
-    
-    C --> C1[Tareas ejecutan<br/>una tras otra]
-    C --> C2[Subutilización<br/>de CPU]
-    C --> C3[UI puede<br/>congelarse]
-    
-    D --> D1[Tareas ejecutan<br/>simultáneamente]
-    D --> D2[Aprovecha<br/>multinúcleo]
-    D --> D3[UI siempre<br/>responsiva]
-    
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
 
 ---
 
@@ -55,25 +39,7 @@ graph TB
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Sistema Operativo"
->         P1[Proceso 1<br/>Chrome]
->         P2[Proceso 2<br/>Word]
->         P3[Proceso 3<br/>Tu App Java]
->     end
->     subgraph "Proceso 3 - Tu App Java"
->         T1[Hilo 1<br/>main]
->         T2[Hilo 2<br/>UI]
->         T3[Hilo 3<br/>Background]
->         M[Memoria Compartida]
->         T1 -.-> M
->         T2 -.-> M
->         T3 -.-> M
->     end
->     style P3 fill:#e1f5ff
->     style M fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_02.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -157,20 +123,7 @@ graph TB
 > 
 > **Comparación:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant JVM
->     participant HU as Hilo Usuario
->     participant HD as Hilo Daemon
->     JVM->>HU: start()
->     JVM->>HD: start()
->     HU->>HU: Trabajando...
->     HD->>HD: Servicio background...
->     HU->>JVM: Termina
->     Note over JVM,HD: Todos los hilos de usuario terminaron
->     JVM->>HD: ⚠️ Detención forzada
->     JVM->>JVM: Apagar JVM
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_03.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -189,21 +142,7 @@ graph TB
 
 > [!info] 🎢 Diagrama de Estados
 > 
-> ```mermaid
-> stateDiagram-v2
->     [*] --> NEW: new Thread()
->     NEW --> RUNNABLE: start()
->     RUNNABLE --> RUNNING: Scheduler asigna CPU
->     RUNNING --> RUNNABLE: Yield / Quantum expiró
->     RUNNING --> WAITING: wait() / join()
->     RUNNING --> TIMED_WAITING: sleep(n) / wait(n)
->     RUNNING --> BLOCKED: Espera lock/sincronización
->     WAITING --> RUNNABLE: notify() / notifyAll()
->     TIMED_WAITING --> RUNNABLE: Tiempo expiró
->     BLOCKED --> RUNNABLE: Lock disponible
->     RUNNING --> TERMINATED: Termina run()
->     TERMINATED --> [*]
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg]]
 > 
 > **Descripción de cada estado:**
 > 
@@ -577,18 +516,7 @@ graph TB
 > 
 > **Flujo de decisión:**
 > 
-> ```mermaid
-> graph TD
->     A{¿Qué tipo de<br/>tarea?} --> B[Lógica inline<br/>simple]
->     A --> C[Clase con<br/>estado complejo]
->     A --> D[Método<br/>existente]
->     B --> E[✅ Lambda]
->     C --> F[✅ Runnable]
->     D --> G[✅ Referencia]
->     style E fill:#e1ffe1
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg]]
 
 ---
 
@@ -764,17 +692,7 @@ graph TB
 > 
 > **⚠️ ADVERTENCIAS IMPORTANTES:**
 > 
-> ```mermaid
-> graph TD
->     A[Prioridades en Java] --> B[⚠️ NO son garantías]
->     B --> C[Dependen del SO]
->     B --> D[Scheduler puede ignorarlas]
->     B --> E[Comportamiento varía]
->     C --> F[Windows: 7 niveles]
->     C --> G[Linux: diferentes políticas]
->     C --> H[macOS: tiempo compartido]
->     style B fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg]]
 > 
 > **Mejores prácticas:**
 > 
@@ -913,19 +831,7 @@ graph TB
 > 
 > **¿Por qué falla?**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant H1 as Hilo 1
->     participant M as Memoria (contador=5)
->     participant H2 as Hilo 2
->     H1->>M: Leer valor (5)
->     H2->>M: Leer valor (5)
->     H1->>H1: Incrementar (5+1=6)
->     H2->>H2: Incrementar (5+1=6)
->     H1->>M: Escribir (6)
->     H2->>M: Escribir (6) ⚠️ Sobrescribe
->     Note over M: Valor esperado: 7<br/>Valor real: 6<br/>Se perdió un incremento
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg]]
 > 
 > **Visualización del problema:**
 > 
@@ -981,21 +887,7 @@ graph TB
 > 
 > **¿Cómo funciona synchronized?**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant H1 as Hilo 1
->     participant L as Lock (Monitor)
->     participant H2 as Hilo 2
->     H1->>L: Solicitar lock
->     L->>H1: Lock concedido ✅
->     H2->>L: Solicitar lock
->     L->>H2: BLOQUEADO ⛔
->     H1->>H1: Ejecutar incrementar()
->     H1->>L: Liberar lock
->     L->>H2: Lock concedido ✅
->     H2->>H2: Ejecutar incrementar()
->     H2->>L: Liberar lock
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg]]
 > 
 > **Formas de usar synchronized:**
 > 
@@ -1080,17 +972,7 @@ graph TB
 > 
 > **Diagrama del Deadlock:**
 > 
-> ```mermaid
-> graph TD
->     H1[Hilo 1] -->|Tiene| R1[Recurso 1]
->     H1 -->|Espera| R2[Recurso 2]
->     H2[Hilo 2] -->|Tiene| R2
->     H2 -->|Espera| R1
->     style H1 fill:#ffe1e1
->     style H2 fill:#ffe1e1
->     style R1 fill:#fff4e1
->     style R2 fill:#fff4e1
-> ```
+> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_09.svg]]
 > 
 > **Condiciones para que ocurra Deadlock:**
 > 
@@ -1334,49 +1216,7 @@ graph TB
 
 ### 🗺️ Mapa Mental Completo
 
-```mermaid
-mindmap
-  root((Concurrencia<br/>y Hilos))
-    Conceptos
-      Proceso vs Hilo
-      Concurrencia
-      Paralelismo
-      Usuario vs Daemon
-    Ciclo de Vida
-      NEW
-      RUNNABLE
-      BLOCKED
-      WAITING
-      TIMED_WAITING
-      TERMINATED
-    Creación
-      extends Thread
-      implements Runnable ✅
-      Lambdas
-      Referencias
-    Control
-      start
-      sleep
-      join
-      interrupt
-      yield
-      Prioridades
-    Problemas
-      Race Conditions
-      Deadlock
-      Starvation
-      LiveLock
-    Sincronización
-      synchronized
-      Locks explícitos
-      Atomic classes
-      volatile
-    Mejores Prácticas
-      Nombrar hilos
-      Manejar interrupciones
-      Evitar locks anidados
-      Usar ExecutorService
-```
+![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
 
 ### 📋 Tabla Comparativa Final
 

@@ -24,16 +24,7 @@ dg-publish: true
 > - **Transmitir** → Enviar las cajas por correo
 > - **Deserializar** → Recibir las cajas, rearmar el mueble
 > 
-> ```mermaid
-> graph LR
->     A[🪑 Objeto Java<br/>en memoria] -->|Serialización| B[📦 Bytes<br/>secuencia]
->     B -->|Almacenar/Enviar| C[💾 Archivo<br/>o Red]
->     C -->|Deserialización| D[🪑 Objeto Java<br/>reconstruido]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Serialización_de_objetos_01.svg]]
 
 ---
 
@@ -136,18 +127,7 @@ dg-publish: true
 > 
 > **Proceso:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant P as Programa
->     participant OOS as ObjectOutputStream
->     participant FOS as FileOutputStream
->     participant F as Archivo
->     P->>OOS: writeObject(objeto)
->     OOS->>OOS: Convertir a bytes
->     OOS->>FOS: Escribir bytes
->     FOS->>F: Guardar en disco
->     F-->>P: ✅ Objeto guardado
-> ```
+> ![[Diagramas/03_-_Serialización_de_objetos_02.svg]]
 > 
 > **Código básico:**
 > 
@@ -227,19 +207,7 @@ dg-publish: true
 > 
 > **Proceso:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant F as Archivo
->     participant FIS as FileInputStream
->     participant OIS as ObjectInputStream
->     participant P as Programa
->     P->>OIS: readObject()
->     OIS->>FIS: Leer bytes
->     FIS->>F: Cargar desde disco
->     F-->>OIS: Bytes
->     OIS->>OIS: Reconstruir objeto
->     OIS-->>P: ✅ Objeto restaurado
-> ```
+> ![[Diagramas/03_-_Serialización_de_objetos_03.svg]]
 > 
 > **Código básico:**
 > 
@@ -479,22 +447,7 @@ dg-publish: true
 > |**Velocidad**|✅ Rápida|Media|Lenta|Depende|
 > |**Mejor para**|Objetos Java complejos|APIs, configs|Documentos|Grandes volúmenes|
 > 
-> ```mermaid
-> graph TD
->     A{¿Qué usar?} --> B{¿Solo Java?}
->     B -->|Sí| C[Serialización Java]
->     B -->|No| D{¿Formato?}
->     D --> E[Datos estructurados<br/>simples]
->     D --> F[Documentos<br/>complejos]
->     D --> G[Gran volumen<br/>consultas]
->     E --> H[JSON]
->     F --> I[XML]
->     G --> J[Base de Datos]
->     style C fill:#e1f5ff
->     style H fill:#e1ffe1
->     style I fill:#fff4e1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/03_-_Serialización_de_objetos_04.svg]]
 
 ---
 
@@ -546,34 +499,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Serialización<br/>Java))
-    Conceptos
-      Convertir objeto → bytes
-      Guardar/Transmitir
-      Reconstruir objeto
-    Requisitos
-      implements Serializable
-      serialVersionUID
-      Campos transient
-    Serializar
-      ObjectOutputStream
-      writeObject
-      Colecciones
-    Deserializar
-      ObjectInputStream
-      readObject
-      Cast necesario
-    Excepciones
-      NotSerializableException
-      InvalidClassException
-      ClassNotFoundException
-    Alternativas
-      JSON
-      XML
-      Bases de datos
-```
+![[Diagramas/03_-_Serialización_de_objetos_05.svg]]
 
 ---
 

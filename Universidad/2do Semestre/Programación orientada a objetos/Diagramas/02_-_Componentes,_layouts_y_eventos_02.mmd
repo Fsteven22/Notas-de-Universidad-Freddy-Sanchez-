@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant U as Usuario
+    participant C as Componente<br/>(Event Source)
+    participant L as Listener<br/>(Event Listener)
+    participant H as Handler<br/>(Tu código)
+    U->>C: Acción (click, tecla)
+    C->>C: Crear Event Object
+    C->>L: Notificar listeners
+    L->>H: Llamar método
+    H->>H: Ejecutar lógica
+    H-->>C: Actualizar UI
+    C-->>U: Feedback visual

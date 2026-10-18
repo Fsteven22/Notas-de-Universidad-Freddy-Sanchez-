@@ -1,0 +1,19 @@
+graph TB
+    subgraph "Memoria Heap"
+        A[Área Static<br/>Clase Persona]
+        A --> B[totalPersonas = 3<br/>COMPARTIDA]
+        C[Objeto 1: Ana]
+        C --> D[nombre = Ana]
+        E[Objeto 2: Luis]
+        E --> F[nombre = Luis]
+        G[Objeto 3: María]
+        G --> H[nombre = María]
+        C -.referencia.-> B
+        E -.referencia.-> B
+        G -.referencia.-> B
+    end
+    style A fill:#fff4e1
+    style B fill:#fff4e1
+    style C fill:#e1f5ff
+    style E fill:#e1f5ff
+    style G fill:#e1f5ff

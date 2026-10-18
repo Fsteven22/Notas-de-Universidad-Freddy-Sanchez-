@@ -1,0 +1,15 @@
+graph TB
+    A[Programa Java] --> B{Tipo de<br/>Ejecución}
+    B --> C[🐢 Secuencial<br/>Un hilo]
+    B --> D[⚡ Concurrente<br/>Múltiples hilos]
+    
+    C --> C1[Tareas ejecutan<br/>una tras otra]
+    C --> C2[Subutilización<br/>de CPU]
+    C --> C3[UI puede<br/>congelarse]
+    
+    D --> D1[Tareas ejecutan<br/>simultáneamente]
+    D --> D2[Aprovecha<br/>multinúcleo]
+    D --> D3[UI siempre<br/>responsiva]
+    
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1

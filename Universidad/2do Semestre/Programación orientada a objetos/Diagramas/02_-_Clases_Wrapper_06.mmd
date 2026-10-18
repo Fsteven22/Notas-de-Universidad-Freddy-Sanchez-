@@ -1,0 +1,11 @@
+flowchart TD
+    A{¿Para qué lo<br/>necesitas?} --> B[Variables locales<br/>cálculos]
+    A --> C[Colecciones<br/>ArrayList, HashMap]
+    A --> D[Puede ser null]
+    A --> E[Métodos de utilidad<br/>parseInt, etc]
+    B --> F[✅ Usar primitivo<br/>mejor rendimiento]
+    C --> G[✅ Usar Wrapper<br/>única opción]
+    D --> G
+    E --> G
+    style F fill:#e1ffe1
+    style G fill:#fff4e1

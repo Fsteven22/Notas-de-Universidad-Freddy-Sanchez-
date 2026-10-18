@@ -1,0 +1,13 @@
+graph LR
+    subgraph ArrayList
+        A1[0: Ana] --> A2[1: Luis] --> A3[2: María]
+        A4[Array continuo en memoria]
+    end
+    subgraph LinkedList
+        L1[Ana] -.->|next| L2[Luis] -.->|next| L3[María]
+        L2 -.->|prev| L1
+        L3 -.->|prev| L2
+        L4[Nodos enlazados]
+    end
+    style A1 fill:#e1f5ff
+    style L1 fill:#fff4e1

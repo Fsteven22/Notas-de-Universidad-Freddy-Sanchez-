@@ -1,0 +1,11 @@
+graph TD
+    A[Clase Interna<br/>Local] --> B[Solo variables<br/>final/effectively final]
+    A --> C[No puede tener<br/>modificadores estáticos]
+    A --> D[Scope limitado<br/>al bloque]
+    A --> E[Acceso a miembros<br/>de la externa]
+    B --> B1[final String x]
+    B --> B2[int y - no modificada]
+    C --> C1[❌ No static]
+    C --> C2[❌ No public/private<br/>en la definición]
+    style A fill:#fff4e1
+    style B fill:#ffe1e1

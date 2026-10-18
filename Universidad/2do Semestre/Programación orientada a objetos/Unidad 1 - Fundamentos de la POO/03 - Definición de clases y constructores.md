@@ -26,32 +26,7 @@ dg-publish: true
 > |**Organización**|Código estructurado y mantenible|Separar `Producto`, `Cliente`, `Pedido`|
 > |**Abstracción**|Modelar conceptos del mundo real|`Auto` representa un vehículo real|
 
-```mermaid
-graph TB
-    A[Clase: Auto] --> B[Atributos]
-    A --> C[Métodos]
-    A --> D[Constructores]
-    
-    B --> B1[marca: String]
-    B --> B2[modelo: String]
-    B --> B3[velocidad: int]
-    
-    C --> C1[acelerar]
-    C --> C2[frenar]
-    C --> C3[mostrarInfo]
-    
-    D --> D1[Auto]
-    D --> D2[Auto marca, modelo]
-    
-    A --> E[Objetos]
-    E --> E1[auto1: Toyota Corolla]
-    E --> E2[auto2: Honda Civic]
-    
-    style A fill:#fff4e1
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#f0e1ff
-```
+![[Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
 
 ---
 
@@ -146,17 +121,7 @@ graph TB
 > }
 > ```
 > 
-> ```mermaid
-> graph TD
->     A[public] --> B[Acceso desde<br/>toda la aplicación]
->     C[protected] --> D[Acceso desde<br/>paquete + herencia]
->     E[default] --> F[Acceso solo<br/>desde paquete]
->     G[private] --> H[Acceso solo<br/>dentro de la clase]
->     style A fill:#90EE90
->     style C fill:#FFD700
->     style E fill:#FFA500
->     style G fill:#FF6B6B
-> ```
+> ![[Diagramas/03_-_Definición_de_clases_y_constructores_02.svg]]
 
 ---
 
@@ -176,17 +141,7 @@ graph TB
 > 
 > **Flujo de creación de objetos:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant C as Código
->     participant M as Memoria
->     participant O as Objeto
->     C->>M: new Estudiante("Juan", 20)
->     M->>O: 1. Asignar memoria
->     O->>O: 2. Ejecutar constructor
->     O->>O: 3. Inicializar atributos
->     O-->>C: 4. Retornar referencia
-> ```
+> ![[Diagramas/03_-_Definición_de_clases_y_constructores_03.svg]]
 > 
 > ```java
 > public class Producto {
@@ -429,17 +384,7 @@ graph TB
 > }
 > ```
 > 
-> ```mermaid
-> graph LR
->     A[this] --> B{Contexto}
->     B --> C[this.atributo<br/>Referencia a campo]
->     B --> D[this args<br/>Llamada a constructor]
->     B --> E[método this<br/>Pasar objeto actual]
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/03_-_Definición_de_clases_y_constructores_04.svg]]
 
 ---
 
@@ -682,40 +627,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Clases y<br/>Constructores))
-    Clase
-      Atributos
-        private
-        static
-        final
-      Métodos
-        public
-        private
-        getters/setters
-      Modificadores
-        public
-        private
-        protected
-    Constructores
-      Tipos
-        Por defecto
-        Parametrizado
-        Sobrecargado
-      this
-        Atributos
-        Constructor chaining
-        Pasar objeto
-      Validación
-        Parámetros
-        Inicialización
-    Buenas Prácticas
-      Encapsulación
-      Validación
-      Reutilización
-      Documentación
-```
+![[Diagramas/03_-_Definición_de_clases_y_constructores_05.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
 > 

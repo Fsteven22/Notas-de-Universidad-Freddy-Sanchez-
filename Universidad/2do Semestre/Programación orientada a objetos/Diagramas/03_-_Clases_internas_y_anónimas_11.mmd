@@ -1,0 +1,13 @@
+graph TD
+    A{¿Necesitas un<br/>nombre?} -->|No| B{¿Método simple?}
+    A -->|Sí| C{¿Acceso a<br/>instancia externa?}
+    B -->|Sí - 1 método| D[✅ Clase Anónima]
+    B -->|No - múltiples| E[✅ Clase Local]
+    C -->|Sí| F{¿Scope<br/>específico?}
+    C -->|No| G[✅ Clase Interna<br/>Estática]
+    F -->|Método| E
+    F -->|Clase completa| H[✅ Clase Interna<br/>Miembro]
+    style D fill:#ffe1f5
+    style E fill:#fff4e1
+    style G fill:#f0e1ff
+    style H fill:#e1ffe1

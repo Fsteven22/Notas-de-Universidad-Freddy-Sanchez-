@@ -1,0 +1,9 @@
+flowchart TD
+    A{Tipo de<br/>operación?} --> B[Acceso aleatorio<br/>frecuente]
+    A --> C[Inserción/eliminación<br/>al inicio]
+    A --> D[Agregar al final<br/>principalmente]
+    B --> E[✅ ArrayList<br/>get es O 1]
+    C --> F[✅ LinkedList<br/>addFirst es O 1]
+    D --> E
+    style E fill:#e1ffe1
+    style F fill:#fff4e1

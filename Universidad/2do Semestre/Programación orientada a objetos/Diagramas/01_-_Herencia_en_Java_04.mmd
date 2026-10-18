@@ -1,0 +1,31 @@
+classDiagram
+    Empleado <|-- Gerente
+    Empleado <|-- Vendedor
+    Empleado <|-- Programador
+    Empleado <|-- Diseñador
+    class Empleado {
+        #nombre: String
+        #salarioBase: double
+        +calcularSalario(): double
+        +trabajar(): void
+    }
+    class Gerente {
+        -departamento: String
+        -bono: double
+        +gestionarEquipo(): void
+    }
+    class Vendedor {
+        -zona: String
+        -comision: double
+        +realizarVenta(): void
+    }
+    class Programador {
+        -lenguajes: List~String~
+        -proyecto: String
+        +programar(): void
+    }
+    class Diseñador {
+        -especialidad: String
+        -herramientas: List~String~
+        +diseñar(): void
+    }

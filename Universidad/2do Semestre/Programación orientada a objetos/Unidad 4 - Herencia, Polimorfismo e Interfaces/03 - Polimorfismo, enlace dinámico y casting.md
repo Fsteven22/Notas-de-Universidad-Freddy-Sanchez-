@@ -25,23 +25,7 @@ dg-publish: true
 > |**Mantenibilidad**|Cambios localizados|Menos errores|
 > |**Abstracción**|Trabajar con conceptos generales|Código más limpio|
 
-```mermaid
-graph TB
-    A[Una Referencia<br/>Animal] --> B{Polimorfismo}
-    
-    B --> C[Perro]
-    B --> D[Gato]
-    B --> E[Pájaro]
-    
-    C --> F[ladrar]
-    D --> G[maullar]
-    E --> H[piar]
-    
-    style B fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#f0e1ff
-```
+![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
 
 ---
 
@@ -51,18 +35,7 @@ graph TB
 
 > [!note] 🌳 Clasificación del Polimorfismo
 > 
-> ```mermaid
-> graph TD
->     A[Polimorfismo] --> B[En Tiempo de Compilación<br/>Estático]
->     A --> C[En Tiempo de Ejecución<br/>Dinámico]
->     B --> D[Sobrecarga de métodos<br/>Overloading]
->     B --> E[Sobrecarga de operadores]
->     C --> F[Sobrescritura de métodos<br/>Overriding]
->     C --> G[Interfaces]
->     C --> H[Clases abstractas]
->     style C fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_02.svg]]
 > 
 > **Comparación rápida:**
 > 
@@ -339,18 +312,7 @@ graph TB
 > 
 > **Proceso de resolución:**
 > 
-> ```mermaid
-> sequenceDiagram
->     participant C as Código
->     participant JVM as JVM
->     participant O as Objeto Real
->     C->>JVM: animal.hacerSonido()
->     Note over C: Referencia tipo Animal
->     JVM->>O: ¿Cuál es tu tipo REAL?
->     O-->>JVM: Soy un Perro
->     JVM->>O: Ejecutar hacerSonido() de Perro
->     O-->>C: "Guau guau!"
-> ```
+> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_03.svg]]
 > 
 > **Ejemplo ilustrativo:**
 > 
@@ -506,19 +468,7 @@ graph TB
 > // No todo Animal ES-UN Perro (puede fallar)
 > ```
 > 
-> ```mermaid
-> graph TB
->     A[Animal<br/>Superclase] 
->     B[Perro<br/>Subclase]
->     C[Gato<br/>Subclase]
->     B -.->|Upcasting<br/>✅ Seguro| A
->     C -.->|Upcasting<br/>✅ Seguro| A
->     A ==>|Downcasting<br/>⚠️ Puede fallar| B
->     A ==>|Downcasting<br/>⚠️ Puede fallar| C
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg]]
 
 ### 🛠️ Upcasting en Detalle
 
@@ -1178,39 +1128,7 @@ graph TB
 
 ### 🗺️ Mapa Mental Completo
 
-```mermaid
-mindmap
-  root((Polimorfismo))
-    Concepto
-      Una referencia múltiples formas
-      Enlace dinámico
-      Flexibilidad
-    Tipos
-      En compilación
-        Sobrecarga
-      En ejecución
-        Sobrescritura
-        Enlace dinámico
-    Casting
-      Upcasting
-        Automático
-        Seguro
-        Hacia superclase
-      Downcasting
-        Manual
-        Requiere instanceof
-        Hacia subclase
-    Ventajas
-      Código reutilizable
-      Extensibilidad
-      Mantenibilidad
-      Abstracción
-    Mejores Prácticas
-      Minimizar downcasting
-      Usar instanceof
-      @Override siempre
-      Programar contra abstracciones
-```
+![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
 
 ### 📋 Tabla Resumen Final
 

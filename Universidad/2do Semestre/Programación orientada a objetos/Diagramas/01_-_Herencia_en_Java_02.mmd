@@ -1,0 +1,12 @@
+classDiagram
+    Persona <|-- Empleado
+    class Persona {
+        -nombre: String
+        -edad: int
+        +getNombre(): String
+    }
+    class Empleado {
+        -salario: double
+        -puesto: String
+        +trabajar(): void
+    }

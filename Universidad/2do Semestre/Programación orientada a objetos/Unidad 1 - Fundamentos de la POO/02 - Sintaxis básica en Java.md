@@ -25,20 +25,7 @@ dg-publish: true
 > |**Mantenimiento**|😫 Difícil de modificar|✅ Fácil de actualizar|
 > |**Colaboración**|❌ Difícil de compartir|✅ Estándar reconocible|
 
-```mermaid
-graph LR
-    A[Código Java] --> B{¿Sintaxis<br/>correcta?}
-    B -->|No| C[❌ Error de<br/>compilación]
-    B -->|Sí| D[✅ Compilador]
-    D --> E[Bytecode]
-    E --> F[JVM]
-    F --> G[Programa<br/>ejecutándose]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style G fill:#e1ffe1
-    style C fill:#ffe1e1
-```
+![[Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
 
 ---
 
@@ -86,19 +73,7 @@ graph LR
 > |`public class`|✅ Sí|Definir la clase principal|
 > |`main()`|✅ Sí|Punto de inicio del programa|
 > 
-> ```mermaid
-> graph TD
->     A[Archivo .java] --> B[package]
->     B --> C[imports]
->     C --> D[class MiClase]
->     D --> E[Atributos]
->     D --> F[main]
->     D --> G[Otros métodos]
->     F --> H[Inicio de<br/>ejecución]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Sintaxis_básica_en_Java_02.svg]]
 
 ### 🎪 El Método main
 
@@ -243,14 +218,7 @@ graph LR
 > 
 > **Diferencia clave: Primitivos vs Referencias**
 > 
-> ```mermaid
-> graph LR
->     A[Variable Primitiva] --> B[Valor directo<br/>en memoria]
->     C[Variable de Referencia] --> D[Dirección<br/>de memoria]
->     D --> E[Objeto real<br/>en heap]
->     style B fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Sintaxis_básica_en_Java_03.svg]]
 
 ---
 
@@ -552,38 +520,7 @@ graph LR
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Sintaxis<br/>Java))
-    Estructura
-      package
-      import
-      class
-      main
-    Tipos de Datos
-      Primitivos
-        int, double
-        char, boolean
-      Referencia
-        String
-        Arrays
-        Objetos
-    Variables
-      Declaración
-      Inicialización
-      Constantes final
-    Operadores
-      Aritméticos
-        + - * / %
-      Comparación
-        == != > < >= <=
-      Lógicos
-        && || !
-    Comentarios
-      // Una línea
-      /* Múltiples */
-      /** Javadoc */
-```
+![[Diagramas/02_-_Sintaxis_básica_en_Java_04.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
 > |Concepto|Sintaxis|Ejemplo|

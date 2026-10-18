@@ -1,0 +1,17 @@
+graph TB
+    subgraph "Sistema Operativo"
+        P1[Proceso 1<br/>Chrome]
+        P2[Proceso 2<br/>Word]
+        P3[Proceso 3<br/>Tu App Java]
+    end
+    subgraph "Proceso 3 - Tu App Java"
+        T1[Hilo 1<br/>main]
+        T2[Hilo 2<br/>UI]
+        T3[Hilo 3<br/>Background]
+        M[Memoria Compartida]
+        T1 -.-> M
+        T2 -.-> M
+        T3 -.-> M
+    end
+    style P3 fill:#e1f5ff
+    style M fill:#fff4e1

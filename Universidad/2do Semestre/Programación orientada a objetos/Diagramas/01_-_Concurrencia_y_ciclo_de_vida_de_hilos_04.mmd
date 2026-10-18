@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> NEW: new Thread()
+    NEW --> RUNNABLE: start()
+    RUNNABLE --> RUNNING: Scheduler asigna CPU
+    RUNNING --> RUNNABLE: Yield / Quantum expiró
+    RUNNING --> WAITING: wait() / join()
+    RUNNING --> TIMED_WAITING: sleep(n) / wait(n)
+    RUNNING --> BLOCKED: Espera lock/sincronización
+    WAITING --> RUNNABLE: notify() / notifyAll()
+    TIMED_WAITING --> RUNNABLE: Tiempo expiró
+    BLOCKED --> RUNNABLE: Lock disponible
+    RUNNING --> TERMINATED: Termina run()
+    TERMINATED --> [*]

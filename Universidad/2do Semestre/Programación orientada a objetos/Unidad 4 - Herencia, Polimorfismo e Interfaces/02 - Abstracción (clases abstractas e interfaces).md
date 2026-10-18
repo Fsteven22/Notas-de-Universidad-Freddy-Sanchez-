@@ -25,21 +25,7 @@ dg-publish: true
 > |**Flexibilidad**|Permite cambiar implementaciones sin afectar el código cliente|Mantenimiento sencillo|
 > |**Diseño robusto**|Fuerza una estructura clara|Menos errores|
 
-```mermaid
-graph TB
-    A[Mundo Real<br/>Complejo] --> B[Abstracción]
-    B --> C[Modelo Simplificado]
-    
-    C --> D[Clases Abstractas]
-    C --> E[Interfaces]
-    
-    D --> F[Define QUÉ + CÓMO parcial]
-    E --> G[Define solo QUÉ]
-    
-    style B fill:#e1f5ff
-    style D fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_01.svg]]
 
 ---
 
@@ -51,19 +37,7 @@ graph TB
 > 
 > Java ofrece **dos formas** de implementar abstracción:
 > 
-> ```mermaid
-> graph LR
->     A[Abstracción] --> B[Clases Abstractas]
->     A --> C[Interfaces]
->     B --> D[Herencia simple]
->     B --> E[Puede tener estado]
->     B --> F[Métodos concretos + abstractos]
->     C --> G[Herencia múltiple]
->     C --> H[Solo constantes]
->     C --> I[Solo métodos abstractos*]
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_02.svg]]
 > 
 > **Tabla comparativa rápida:**
 > 
@@ -473,18 +447,7 @@ graph TB
 > 
 > **Usa CLASE ABSTRACTA cuando:**
 > 
-> ```mermaid
-> graph TD
->     A{¿Necesitas...?} --> B[Compartir código común]
->     A --> C[Mantener estado]
->     A --> D[Control de acceso]
->     A --> E[Constructores]
->     B --> F[✅ Clase Abstracta]
->     C --> F
->     D --> F
->     E --> F
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_03.svg]]
 > 
 > - Tienes código común que varias clases relacionadas pueden heredar
 > - Necesitas mantener estado (atributos no constantes)
@@ -496,18 +459,7 @@ graph TB
 > 
 > **Usa INTERFAZ cuando:**
 > 
-> ```mermaid
-> graph TD
->     A{¿Necesitas...?} --> B[Herencia múltiple]
->     A --> C[Capacidades compartidas]
->     A --> D[Clases no relacionadas]
->     A --> E[Contrato puro]
->     B --> F[✅ Interfaz]
->     C --> F
->     D --> F
->     E --> F
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_04.svg]]
 > 
 > - Quieres que clases no relacionadas compartan capacidades
 > - Necesitas herencia múltiple
@@ -746,14 +698,7 @@ graph TB
 > 
 > **4. No abuses de la herencia**
 > 
-> ```mermaid
-> graph TD
->     A[¿Necesitas abstraer?] --> B{¿Relación ES-UN<br/>verdadera?}
->     B -->|Sí| C[✅ Usar herencia]
->     B -->|No| D[✅ Usar composición]
->     style C fill:#e1ffe1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_05.svg]]
 > 
 > **5. Documenta tus abstracciones**
 > 
@@ -774,42 +719,7 @@ graph TB
 
 ### 🗺️ Mapa Mental Completo
 
-```mermaid
-mindmap
-  root((Abstracción))
-    Clases Abstractas
-      Características
-        Métodos abstractos
-        Métodos concretos
-        Atributos
-        Constructores
-      Cuándo usar
-        Código común
-        Relación ES-UN
-        Estado compartido
-      Ventajas
-        Reutilización
-        Polimorfismo
-        Estructura clara
-    Interfaces
-      Características
-        Solo métodos abstractos
-        Constantes
-        Herencia múltiple
-        Métodos default/static Java8
-      Cuándo usar
-        Capacidades
-        Relación PUEDE-HACER
-        Clases no relacionadas
-      Ventajas
-        Flexibilidad
-        Desacoplamiento
-        Contratos claros
-    Combinación
-      Herencia abstracta
-      Implementación interfaces
-      Máxima flexibilidad
-```
+![[Diagramas/02_-_Abstracción_(clases_abstractas_e_interfaces)_06.svg]]
 
 ### 📋 Tabla de Decisión Rápida
 

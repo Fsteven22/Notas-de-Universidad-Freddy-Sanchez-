@@ -27,19 +27,7 @@ dg-publish: true
 > - Un Perro **ES-UN** Animal ✅
 > - Un Coche **TIENE-UN** Motor ❌ (composición, no herencia)
 
-```mermaid
-graph TB
-    A[Empleado<br/>nombre, salario<br/>trabajar, calcularSalario] 
-    
-    A --> B[Gerente<br/>departamento, bono<br/>gestionarEquipo]
-    A --> C[Vendedor<br/>zona, comision<br/>realizarVenta]
-    A --> D[Programador<br/>lenguajes, proyecto<br/>programar]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#e1ffe1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_-_Herencia_en_Java_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Herencia?
 > 
@@ -736,20 +724,7 @@ graph TB
 > 
 > **Lineal - Un nivel de herencia:**
 > 
-> ```mermaid
-> classDiagram
->     Persona <|-- Empleado
->     class Persona {
->         -nombre: String
->         -edad: int
->         +getNombre(): String
->     }
->     class Empleado {
->         -salario: double
->         -puesto: String
->         +trabajar(): void
->     }
-> ```
+> ![[Diagramas/01_-_Herencia_en_Java_02.svg]]
 > 
 > ```java
 > public class Persona {
@@ -768,29 +743,7 @@ graph TB
 > 
 > **Múltiples niveles - Herencia en cadena:**
 > 
-> ```mermaid
-> classDiagram
->     Persona <|-- Empleado
->     Empleado <|-- Gerente
->     Gerente <|-- GerenteGeneral
->     class Persona {
->         #nombre: String
->         #edad: int
->     }
->     class Empleado {
->         #salarioBase: double
->         +trabajar(): void
->     }
->     class Gerente {
->         -departamento: String
->         -bono: double
->         +gestionarEquipo(): void
->     }
->     class GerenteGeneral {
->         -empresas: List~String~
->         +dirigirEmpresa(): void
->     }
-> ```
+> ![[Diagramas/01_-_Herencia_en_Java_03.svg]]
 > 
 > ```java
 > public class Persona {
@@ -829,39 +782,7 @@ graph TB
 > 
 > **Una superclase, múltiples subclases:**
 > 
-> ```mermaid
-> classDiagram
->     Empleado <|-- Gerente
->     Empleado <|-- Vendedor
->     Empleado <|-- Programador
->     Empleado <|-- Diseñador
->     class Empleado {
->         #nombre: String
->         #salarioBase: double
->         +calcularSalario(): double
->         +trabajar(): void
->     }
->     class Gerente {
->         -departamento: String
->         -bono: double
->         +gestionarEquipo(): void
->     }
->     class Vendedor {
->         -zona: String
->         -comision: double
->         +realizarVenta(): void
->     }
->     class Programador {
->         -lenguajes: List~String~
->         -proyecto: String
->         +programar(): void
->     }
->     class Diseñador {
->         -especialidad: String
->         -herramientas: List~String~
->         +diseñar(): void
->     }
-> ```
+> ![[Diagramas/01_-_Herencia_en_Java_04.svg]]
 
 ---
 
@@ -1169,30 +1090,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Herencia<br/>en Java))
-    Conceptos Básicos
-      extends
-      super
-      Relación ES-UN
-    Sobrescritura
-      Override
-      Misma firma
-      Comportamiento específico
-    Polimorfismo
-      Referencias generales
-      Objetos específicos
-      Arrays polimórficos
-    Modificadores
-      protected
-      final
-      Visibilidad
-    Buenas Prácticas
-      Diseño previo
-      Override siempre
-      Evitar jerarquías profundas
-```
+![[Diagramas/01_-_Herencia_en_Java_05.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

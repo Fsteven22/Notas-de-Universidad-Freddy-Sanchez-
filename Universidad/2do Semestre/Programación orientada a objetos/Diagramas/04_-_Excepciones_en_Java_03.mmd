@@ -1,0 +1,12 @@
+flowchart TD
+    A[Entrar try] --> B{¿Excepción?}
+    B -->|No| C[Ejecutar todo try]
+    B -->|Sí| D[Saltar a catch<br/>correspondiente]
+    C --> E{¿Hay finally?}
+    D --> E
+    E -->|Sí| F[Ejecutar finally]
+    E -->|No| G[Continuar programa]
+    F --> G
+    style C fill:#e1ffe1
+    style D fill:#fff4e1
+    style F fill:#e1f5ff

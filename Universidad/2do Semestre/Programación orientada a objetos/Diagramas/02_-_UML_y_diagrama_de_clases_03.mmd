@@ -1,0 +1,12 @@
+classDiagram
+    class CuentaBancaria {
+        -saldo: double = 0.0
+        -titular: String
+        -numeroCuenta: String
+        --
+        +CuentaBancaria(titular: String)
+        +getSaldo(): double
+        +depositar(monto: double): boolean
+        +retirar(monto: double): boolean
+        -validarMonto(monto: double): boolean
+    }

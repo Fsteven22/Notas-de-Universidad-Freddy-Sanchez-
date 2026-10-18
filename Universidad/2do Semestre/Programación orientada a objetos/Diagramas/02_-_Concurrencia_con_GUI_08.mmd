@@ -1,0 +1,9 @@
+graph TD
+    A[invokeAndWait] --> B{¿Llamado desde<br/>el EDT?}
+    B -->|Sí| C[💀 DEADLOCK]
+    B -->|No| D{¿EDT ocupado?}
+    D -->|Sí| E[⏳ Worker espera]
+    D -->|No| F[✅ Ejecuta inmediatamente]
+    style C fill:#ffe1e1
+    style E fill:#fff4e1
+    style F fill:#e1ffe1

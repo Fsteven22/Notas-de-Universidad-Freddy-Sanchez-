@@ -10,18 +10,7 @@ dg-publish: true
 > 
 > Toda interfaz gráfica en Java se construye sobre tres conceptos fundamentales:
 > 
-> ```mermaid
-> graph TD
->     A[GUI Completa] --> B[🧩 COMPONENTES<br/>Qué mostrar]
->     A --> C[📐 LAYOUTS<br/>Cómo organizarlo]
->     A --> D[⚡ EVENTOS<br/>Qué hacer cuando...]
->     B --> B1[Botones, campos,<br/>etiquetas...]
->     C --> C1[FlowLayout,<br/>BorderLayout...]
->     D --> D1[Clicks, teclas,<br/>acciones...]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Componentes,_layouts_y_eventos_01.svg]]
 > 
 > **Analogía del mundo real:**
 > 
@@ -749,20 +738,7 @@ dg-publish: true
 
 > [!info] 🔄 Arquitectura de Eventos
 > 
-> ```mermaid
-> sequenceDiagram
->     participant U as Usuario
->     participant C as Componente<br/>(Event Source)
->     participant L as Listener<br/>(Event Listener)
->     participant H as Handler<br/>(Tu código)
->     U->>C: Acción (click, tecla)
->     C->>C: Crear Event Object
->     C->>L: Notificar listeners
->     L->>H: Llamar método
->     H->>H: Ejecutar lógica
->     H-->>C: Actualizar UI
->     C-->>U: Feedback visual
-> ```
+> ![[Diagramas/02_-_Componentes,_layouts_y_eventos_02.svg]]
 > 
 > **Componentes del modelo:**
 > 
@@ -1170,49 +1146,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((GUI Java))
-    Componentes
-      Texto
-        JLabel
-        JTextField
-        JTextArea
-      Selección
-        JCheckBox
-        JRadioButton
-        JComboBox
-        JList
-      Acción
-        JButton
-        JSlider
-        JSpinner
-      Avanzados
-        JTable
-        JTree
-    Layouts
-      Básicos
-        FlowLayout
-        BorderLayout
-        GridLayout
-      Avanzados
-        BoxLayout
-        GridBagLayout
-      Combinados
-        Anidados
-    Eventos
-      Action
-        ActionListener
-      Mouse
-        MouseListener
-        MouseMotionListener
-      Teclado
-        KeyListener
-      Otros
-        ItemListener
-        ChangeListener
-        FocusListener
-```
+![[Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
 
 ---
 

@@ -19,19 +19,7 @@ dg-publish: true
 > - **Manejo** → Detenerte, cambiar la llanta, continuar
 > - **Sin manejo** → Accidente, daños mayores
 > 
-> ```mermaid
-> graph LR
->     A[Programa<br/>ejecutándose] --> B{¿Ocurre<br/>error?}
->     B -->|No| C[Continuar<br/>normal]
->     B -->|Sí| D[Lanzar<br/>Excepción]
->     D --> E{¿Manejada?}
->     E -->|Sí| F[Ejecutar catch<br/>Recuperarse]
->     E -->|No| G[💥 Programa<br/>termina]
->     F --> C
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Excepciones_en_Java_01.svg]]
 
 ---
 
@@ -41,36 +29,7 @@ dg-publish: true
 
 > [!note] 🗂️ Organización de Excepciones en Java
 > 
-> ```mermaid
-> classDiagram
->     class Throwable {
->         <<Clase raíz>>
->         +getMessage()
->         +printStackTrace()
->     }
->     class Error {
->         <<Errores graves>>
->         OutOfMemoryError
->         StackOverflowError
->     }
->     class Exception {
->         <<Excepciones>>
->         Recuperables
->     }
->     class RuntimeException {
->         <<No verificadas>>
->         NullPointerException
->         ArrayIndexOutOfBounds
->     }
->     class IOException {
->         <<Verificadas>>
->         FileNotFoundException
->     }
->     Throwable <|-- Error
->     Throwable <|-- Exception
->     Exception <|-- RuntimeException
->     Exception <|-- IOException
-> ```
+> ![[Diagramas/04_-_Excepciones_en_Java_02.svg]]
 > 
 > **Categorías principales:**
 > 
@@ -170,20 +129,7 @@ dg-publish: true
 > 
 > **Flujo de ejecución:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Entrar try] --> B{¿Excepción?}
->     B -->|No| C[Ejecutar todo try]
->     B -->|Sí| D[Saltar a catch<br/>correspondiente]
->     C --> E{¿Hay finally?}
->     D --> E
->     E -->|Sí| F[Ejecutar finally]
->     E -->|No| G[Continuar programa]
->     F --> G
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/04_-_Excepciones_en_Java_03.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -402,17 +348,7 @@ dg-publish: true
 > 
 > **Cadena de propagación:**
 > 
-> ```mermaid
-> graph TD
->     A[metodoA<br/>throws IOException] --> B[metodoB<br/>throws IOException]
->     B --> C[metodoC<br/>throws IOException]
->     C --> D[main<br/>try-catch]
->     D --> E{¿Manejada?}
->     E -->|Sí| F[✅ Programa continúa]
->     E -->|No| G[💥 Programa termina]
->     style F fill:#e1ffe1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/04_-_Excepciones_en_Java_04.svg]]
 
 ---
 
@@ -776,32 +712,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Excepciones<br/>Java))
-    Tipos
-      Verificadas
-        IOException
-        SQLException
-      No Verificadas
-        RuntimeException
-        NullPointerException
-      Errores
-        OutOfMemoryError
-    Manejo
-      try-catch
-      finally
-      try-with-resources
-    Lanzar
-      throw
-      throws
-      Personalizadas
-    Mejores Prácticas
-      Específico en catch
-      No silenciar
-      Limpiar recursos
-      Documentar
-```
+![[Diagramas/04_-_Excepciones_en_Java_05.svg]]
 
 ---
 

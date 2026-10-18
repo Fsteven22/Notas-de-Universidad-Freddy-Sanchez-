@@ -1,0 +1,11 @@
+graph LR
+    A[new Producto<br/>args] --> B[Constructor]
+    B --> C[this.nombre = nombre]
+    B --> D[this.precio = precio]
+    B --> E[this.stock = stock]
+    C --> F[Objeto<br/>Inicializado]
+    D --> F
+    E --> F
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style F fill:#e1ffe1

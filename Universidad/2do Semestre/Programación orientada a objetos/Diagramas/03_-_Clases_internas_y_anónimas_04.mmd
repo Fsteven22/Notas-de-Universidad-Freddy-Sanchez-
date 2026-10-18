@@ -1,0 +1,10 @@
+graph TD
+    A[Clase Interna<br/>Miembro] --> B[Acceso a TODO<br/>de la externa]
+    A --> C[Requiere instancia<br/>de externa]
+    A --> D[Puede tener cualquier<br/>modificador]
+    A --> E[Referencia implícita<br/>Externa.this]
+    B --> B1[Atributos privados]
+    B --> B2[Métodos privados]
+    B --> B3[Otros miembros internos]
+    style A fill:#e1ffe1
+    style B fill:#e1f5ff

@@ -1,0 +1,43 @@
+classDiagram
+    class File {
+        <<Representación>>
+        +exists()
+        +isFile()
+        +isDirectory()
+        +length()
+        +getName()
+    }
+    class Reader {
+        <<Abstracta - Lectura>>
+        +read()
+        +close()
+    }
+    class Writer {
+        <<Abstracta - Escritura>>
+        +write()
+        +flush()
+        +close()
+    }
+    class FileReader {
+        <<Lectura básica>>
+        +read() char
+    }
+    class FileWriter {
+        <<Escritura básica>>
+        +write(String)
+    }
+    class BufferedReader {
+        <<Lectura eficiente>>
+        +readLine() String
+    }
+    class BufferedWriter {
+        <<Escritura eficiente>>
+        +write(String)
+        +newLine()
+    }
+    Reader <|-- FileReader
+    Reader <|-- BufferedReader
+    Writer <|-- FileWriter
+    Writer <|-- BufferedWriter
+    FileReader --> File : usa
+    FileWriter --> File : usa

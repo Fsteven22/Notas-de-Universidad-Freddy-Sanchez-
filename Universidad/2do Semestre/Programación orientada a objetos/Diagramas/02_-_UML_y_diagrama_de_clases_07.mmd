@@ -1,0 +1,20 @@
+classDiagram
+    Departamento "1" o-- "*" Empleado : tiene
+    Universidad "1" o-- "*" Estudiante : contiene
+    class Departamento {
+        -nombre: String
+        -empleados: List~Empleado~
+        +agregarEmpleado(e: Empleado): void
+    }
+    class Empleado {
+        -nombre: String
+        -salario: double
+    }
+    class Universidad {
+        -nombre: String
+        -estudiantes: List~Estudiante~
+    }
+    class Estudiante {
+        -nombre: String
+        -carnet: String
+    }
