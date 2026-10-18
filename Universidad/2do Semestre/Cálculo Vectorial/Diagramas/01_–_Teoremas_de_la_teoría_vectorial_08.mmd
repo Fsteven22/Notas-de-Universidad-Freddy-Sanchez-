@@ -1,0 +1,14 @@
+flowchart TD
+    A[Problema de integral] --> B{¿Tipo de integral?}
+    B -->|Línea sobre curva abierta| C{¿F = ∇f?}
+    C -->|Sí| D[Teorema del Gradiente]
+    C -->|No| E[Parametrizar]
+    B -->|Línea sobre curva cerrada| F{¿En plano?}
+    F -->|Sí| G[Green]
+    F -->|No| H[Stokes]
+    B -->|Superficie cerrada| I[Divergencia]
+    B -->|Superficie abierta| J[Stokes si conoces frontera]
+    style D fill:#e1ffe1
+    style G fill:#fff4e1
+    style H fill:#ffe1e1
+    style I fill:#f0e1ff

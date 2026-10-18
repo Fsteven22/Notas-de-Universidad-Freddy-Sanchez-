@@ -33,31 +33,7 @@ dg-publish: true
 > |**Ingeniería**|Sistemas dinámicos|Control de robots, aerodinámica|
 > |**Economía**|Sistemas multivariables|Modelos de mercado, optimización|
 
-```mermaid
-graph TB
-    A[Función Vectorial de Variable Vectorial] --> B[Dominio: ℝⁿ]
-    A --> C[Codominio: ℝᵐ]
-    
-    B --> D[Casos Especiales]
-    C --> D
-    
-    D --> E[n=1, m>1<br/>Curvas Parametrizadas]
-    D --> F[n>1, m=1<br/>Campos Escalares]
-    D --> G[n=m<br/>Transformaciones]
-    D --> H[n>1, m>1<br/>Campos Vectoriales]
-    
-    E --> I["r(t) = x·i + y·j + z·k"]
-    F --> J["T(x,y,z) = temperatura"]
-    G --> K[Rotación, reflexión]
-    H --> L["F(x,y) = P·i + Q·j"]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#ffe1e1
-    style G fill:#f0e1ff
-    style H fill:#ffe1f0
-```
+![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_01.svg]]
 
 ---
 
@@ -124,25 +100,7 @@ graph TB
 
 > [!note] 📋 Tipos Según Dimensiones
 > 
-> ```mermaid
-> graph TB
->     A[Funciones Vectoriales] --> B[Por Dimensión]
->     A --> C[Por Linealidad]
->     A --> D[Por Propiedades]
->     B --> E[ℝ → ℝⁿ<br/>Curvas]
->     B --> F[ℝⁿ → ℝ<br/>Campos Escalares]
->     B --> G[ℝⁿ → ℝⁿ<br/>Transformaciones]
->     B --> H[ℝⁿ → ℝᵐ<br/>General]
->     C --> I[Lineales]
->     C --> J[No Lineales]
->     D --> K[Conservativas]
->     D --> L[Solenoidales]
->     D --> M[Irrotacionales]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_02.svg]]
 > 
 > **1. Curvas Parametrizadas (ℝ → ℝⁿ):**
 > 
@@ -379,18 +337,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[F(x,y)] --> B[∂F/∂x]
->     A --> C[∂F/∂y]
->     B --> D[Tasa de cambio<br/>en dirección x]
->     C --> E[Tasa de cambio<br/>en dirección y]
->     D --> F[Vector tangente<br/>a curva x]
->     E --> G[Vector tangente<br/>a curva y]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_03.svg]]
 
 ### 🎯 Matriz Jacobiana
 
@@ -460,20 +407,7 @@ graph TB
 > 
 > **Interpretación geométrica del Jacobiano:**
 > 
-> ```mermaid
-> graph TB
->     A[Matriz Jacobiana JF] --> B[n = m]
->     A --> C[n ≠ m]
->     B --> D[det(JF) = Jacobiano]
->     D --> E[Factor de escala<br/>de volúmenes]
->     C --> F[No hay determinante]
->     F --> G[Transformación<br/>cambia dimensión]
->     E --> H[Aplicación:<br/>Cambio de variable]
->     G --> I[Aplicación:<br/>Parametrizaciones]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_04.svg]]
 
 ### 🌊 Operadores Diferenciales Vectoriales
 
@@ -577,18 +511,7 @@ graph TB
 > 
 > **Diagrama de relaciones:**
 > 
-> ```mermaid
-> graph LR
->     A[Campo Escalar f] -->|∇| B[Campo Vectorial ∇f]
->     B -->|∇×| C[Campo Vectorial ∇×∇f = 0⃗]
->     D[Campo Vectorial F] -->|∇·| E[Campo Escalar ∇·F]
->     D -->|∇×| F[Campo Vectorial ∇×F]
->     F -->|∇·| G[Escalar ∇·∇×F = 0]
->     style A fill:#e1f5ff
->     style D fill:#e1f5ff
->     style C fill:#ffe1e1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_05.svg]]
 
 ---
 
@@ -661,32 +584,7 @@ graph TB
 > 
 > **Visualización por tipo:**
 > 
-> ```mermaid
-> graph TB
->     A[Campos Vectoriales] --> B[Por Fuente]
->     A --> C[Por Rotación]
->     A --> D[Por Geometría]
->     B --> E[Fuente<br/>div F > 0]
->     B --> F[Sumidero<br/>div F < 0]
->     B --> G[Incompresible<br/>div F = 0]
->     C --> H[Irrotacional<br/>rot F = 0⃗]
->     C --> I[Con rotación<br/>rot F ≠ 0⃗]
->     D --> J[Radial]
->     D --> K[Circular]
->     D --> L[Uniforme]
->     style A fill:#e1f5ff
->     style E fill:#ffe1e1
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
-> ````
-
-### 🛤️ Líneas de Campo
-
-> [!tip] 📈 Curvas Integrales y Trayectorias
-> **Definición:**
-> Las **líneas de campo** (o curvas integrales) son curvas tangentes al campo vectorial en cada punto.
-> **Ecuación diferencial:**
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_06.svg]]
 > dr/dt = F(r)
 > 
 > En componentes:
@@ -937,19 +835,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[T(x,y) = 100 - x² - 2y²] --> B[Paraboloide<br/>hacia abajo]
->     A --> C[∇T = ⟨-2x, -4y⟩]
->     C --> D[En 1,1:<br/>∇T = ⟨-2, -4⟩]
->     D --> E[Dirección de<br/>máximo aumento]
->     D --> F[Magnitud: 2√5]
->     B --> G[Curvas de nivel:<br/>elipses]
->     G --> H[T = 96:<br/>x²/4 + y²/2 = 1]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_07.svg]]
 
 ### 🌊 Problema 2: Campo de Velocidades
 
@@ -1255,52 +1141,7 @@ graph TB
 
 > [!quote] 🌟 Temas Relacionados y Aplicaciones
 > 
-> ```mermaid
-> mindmap
->   root((Funciones<br/>Vectoriales))
->     Prerrequisitos
->       Cálculo en Una Variable
->         Derivadas
->         Integrales
->       Álgebra Lineal
->         Vectores
->         Matrices
->         Transformaciones
->       Cálculo Multivariable
->         Derivadas parciales
->         Regla de la cadena
->     Conceptos Relacionados
->       Campos Vectoriales
->         Gradiente
->         Divergencia
->         Rotacional
->       Curvas y Superficies
->         Parametrizaciones
->         Vectores tangentes
->         Vectores normales
->       Integrales
->         Línea
->         Superficie
->         Volumen
->     Teoremas Fundamentales
->       Teorema Fundamental del Cálculo
->       Teorema de Green
->       Teorema de Stokes
->       Teorema de Divergencia
->     Aplicaciones
->       Física
->         Mecánica
->         Electromagnetismo
->         Dinámica de fluidos
->       Ingeniería
->         Control
->         Robótica
->         Aerodinámica
->       Computación
->         Gráficos 3D
->         Simulaciones
->         IA/ML
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_08.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -1314,24 +1155,7 @@ graph TB
 > 
 > **Relaciones profundas:**
 > 
-> ```mermaid
-> graph LR
->     A[Función Vectorial F] --> B[Operadores]
->     B --> C[∇ Gradiente]
->     B --> D[∇· Divergencia]
->     B --> E[∇× Rotacional]
->     C --> F[Campos Conservativos]
->     D --> G[Teorema Divergencia]
->     E --> H[Teorema Stokes]
->     F --> I[Integrales<br/>Independientes]
->     G --> J[Flujo neto]
->     H --> K[Circulación]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#ffe1e1
->     style H fill:#f0e1ff
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_09.svg]]
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
@@ -1365,20 +1189,7 @@ graph TB
 > 
 > ### Operadores Diferenciales
 > 
-> ```mermaid
-> flowchart LR
->     A[Campo Escalar f] -->|∇| B[∇f<br/>Vector]
->     B -->|∇·| C[∇·∇f = ∇²f<br/>Laplaciano]
->     D[Campo Vectorial F] -->|∇·| E[∇·F<br/>Escalar]
->     D -->|∇×| F[∇×F<br/>Vector] 
-> 	F -->|∇·| G[∇·∇×F = 0<br/>Identidad]
-> 	B -->|∇×| H[∇×∇f = 0⃗<br/>Identidad]
-> style A fill:#e1f5ff
-> style D fill:#e1f5ff
-> style C fill:#e1ffe1
-> style E fill:#fff4e1
-> style F fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_10.svg]]
 > 
 > 
 > 
@@ -1440,5 +1251,4 @@ graph TB
 ---
 
 **Tags:** #cálculo-vectorial #funciones-vectoriales #campos-vectoriales #gradiente #divergencia #rotacional #jacobiano #campos-conservativos #operadores-diferenciales #aplicaciones #mermaid
-
 

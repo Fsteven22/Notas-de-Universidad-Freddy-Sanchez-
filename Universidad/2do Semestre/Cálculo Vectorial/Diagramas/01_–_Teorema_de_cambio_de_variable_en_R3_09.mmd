@@ -1,0 +1,10 @@
+graph TD
+    A[Cartesianas<br/>x, y, z] --> B[Cilíndricas<br/>r, θ, z]
+    A --> C[Esféricas<br/>ρ, φ, θ]
+    B --> C
+    B -.-> D[r² = x² + y²<br/>z = z]
+    C -.-> E[ρ² = x² + y² + z²]
+    B -.-> F[ρ² = r² + z²<br/>tan φ = r/z]
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#f5e1ff

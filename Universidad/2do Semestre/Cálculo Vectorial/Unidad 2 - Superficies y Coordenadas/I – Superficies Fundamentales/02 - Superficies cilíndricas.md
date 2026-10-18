@@ -536,38 +536,7 @@ dg-publish: true
 
 ## 🎨 Visualización de Superficies Cilíndricas
 
-```mermaid
-graph TD
-    A[Superficies Cilíndricas] --> B[Directriz en plano]
-    A --> C[Generatrices paralelas]
-    
-    B --> B1[Circunferencia<br/>→ Cilindro Circular]
-    B --> B2[Elipse<br/>→ Cilindro Elíptico]
-    B --> B3[Parábola<br/>→ Cilindro Parabólico]
-    B --> B4[Hipérbola<br/>→ Cilindro Hiperbólico]
-    
-    C --> C1[Paralelas a X<br/>Variable x ausente]
-    C --> C2[Paralelas a Y<br/>Variable y ausente]
-    C --> C3[Paralelas a Z<br/>Variable z ausente]
-    
-    D[Propiedades] --> D1[Secciones transversales<br/>congruentes]
-    D --> D2[Ecuación en<br/>2 variables]
-    D --> D3[Generatrices<br/>rectilíneas]
-    
-    E[Aplicaciones] --> E1[Ingeniería<br/>Tuberías, ejes]
-    E --> E2[Arquitectura<br/>Columnas, bóvedas]
-    E --> E3[Física<br/>Campos, óptica]
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style B1 fill:#bbdefb
-    style B2 fill:#90caf9
-    style B3 fill:#64b5f6
-    style B4 fill:#42a5f5
-    style D fill:#f3e5f5
-    style E fill:#ffe0b2
-```
+![[Diagramas/02_-_Superficies_cilíndricas_01.svg]]
 
 ## 🔍 Identificación de Superficies Cilíndricas
 

@@ -35,21 +35,7 @@ dg-publish: true
 
 > [!note] 🌟 Estructura de Ideas Topológicas
 > 
-> ```mermaid
-> graph TD
->     A[ℝⁿ con métrica euclidiana] --> B[Bolas abiertas]
->     B --> C[Conjuntos abiertos]
->     C --> D[Conjuntos cerrados]
->     C --> E[Interior de un conjunto]
->     D --> F[Clausura de un conjunto]
->     D --> G[Frontera de un conjunto]
->     C --> H[Puntos de acumulación]
->     H --> I[Conjuntos derivados]
->     D --> J[Conjuntos compactos]
->     C --> K[Conjuntos conexos]
->     J --> L[Teorema de Heine-Borel]
->     K --> M[Conjuntos arco-conexos]
-> ```
+> ![[Diagramas/01_-_Nociones_topológicas_en_Rⁿ_01.svg]]
 > 
 > **Niveles de abstracción:**
 > 
@@ -1767,5 +1753,4 @@ dg-publish: true
 > - [[Física]] - Continuidad de campos
 > - [[Economía]] - Teorema del punto fijo de Brouwer
 > - [[Biología]] - Morfología topológica
-
 

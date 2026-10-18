@@ -500,28 +500,7 @@ dg-publish: true
 
 ## 🎨 Diagrama de Conceptos
 
-```mermaid
-graph TD
-    A[Producto Punto] --> B[Definiciones]
-    A --> C[Aplicaciones]
-    A --> D[Propiedades Geométricas]
-    
-    B --> B1[Algebraica<br/>u·v = u₁v₁ + u₂v₂ + u₃v₃]
-    B --> B2["Geométrica<br/>u·v = ||u|| ||v|| cos θ"]
-    
-    C --> C1["Ángulo entre vectores<br/>θ = arccos u·v/||u||||v||"]
-    C --> C2[Ortogonalidad<br/>u ⊥ v ⟺ u·v = 0]
-    C --> C3["Proyecciones<br/>proyᵥu = u·v/||v||² v"]
-    
-    D --> D1[Trabajo físico<br/>W = \vec{F}·\vec{d}]
-    D --> D2[Similitud<br/>cos θ]
-    D --> D3[Descomposición<br/>u = u‖ + u⊥]
-    
-    style A fill:#e3f2fd
-    style B fill:#e8f5e9
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-```
+![[Diagramas/01_–_Producto_punto_y_ángulos_01.svg]]
 
 ## 🧪 Ejercicios Integrales
 
@@ -788,4 +767,3 @@ graph TD
 ---
 
 **Tags:** #producto-punto #producto-escalar #ángulo-entre-vectores #proyección-vectorial #ortogonalidad #vectores-perpendiculares #geometría-vectorial #álgebra-lineal #R3 #producto-interno #aplicaciones-físicas #trabajo-mecánico #university #matemáticas
-

@@ -25,22 +25,7 @@ dg-publish: true
 > |**Probabilidad**|Calcular probabilidades continuas|Distribuciones bivariadas|
 > |**Computación**|Gráficos por computadora|Render de superficies|
 
-```mermaid
-graph TB
-    A[Región R en ℝ²] --> B{Tipo de Región}
-    B --> C[Región Tipo I<br/>entre dos funciones de x]
-    B --> D[Región Tipo II<br/>entre dos funciones de y]
-    C --> E[Integrar primero en y<br/>luego en x]
-    D --> F[Integrar primero en x<br/>luego en y]
-    E --> G[Área = ∬R dA]
-    F --> G
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style G fill:#f0e1ff
-```
+![[Diagramas/01_–_Área_de_una_región_en_R2_01.svg]]
 
 ---
 
@@ -62,16 +47,7 @@ graph TB
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Región R] --> B[Dividir en<br/>rectángulos]
->     B --> C[Cada rectángulo<br/>área = Δx·Δy]
->     C --> D[Límite cuando<br/>Δx,Δy → 0]
->     D --> E[Integral doble<br/>∬R dA]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Área_de_una_región_en_R2_02.svg]]
 > 
 > **Propiedades fundamentales:**
 > 
@@ -236,18 +212,7 @@ graph TB
 > 
 > **Proceso de conversión:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Región R<br/>Tipo I] --> B{¿Complicada?}
->     B -->|Sí| C[Graficar región]
->     C --> D[Identificar límites<br/>para Tipo II]
->     D --> E[Reescribir como<br/>Tipo II]
->     B -->|No| F[Calcular como<br/>Tipo I]
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Área_de_una_región_en_R2_03.svg]]
 > 
 > **Ejemplo 4: Cambio de orden**
 > 
@@ -332,28 +297,7 @@ graph TB
 > 
 > **Diagrama de flujo completo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Inicio] --> B[Graficar región R]
->     B --> C[Encontrar intersecciones]
->     C --> D{¿Tipo I o II?}
->     D -->|Tipo I| E[Límites: x constante<br/>y función de x]
->     D -->|Tipo II| F[Límites: y constante<br/>x función de y]
->     D -->|Ambos| G[Dividir región]
->     E --> H[Plantear ∫∫ dy dx]
->     F --> I[Plantear ∫∫ dx dy]
->     G --> J[Suma de integrales]
->     H --> K[Resolver]
->     I --> K
->     J --> K
->     K --> L{¿Resultado positivo?}
->     L -->|Sí| M[✅ Área correcta]
->     L -->|No| N[❌ Revisar límites]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style M fill:#e1ffe1
->     style N fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Área_de_una_región_en_R2_04.svg]]
 
 ---
 
@@ -483,19 +427,7 @@ graph TB
 > 
 > **Checklist de resolución:**
 > 
-> ```mermaid
-> graph TD
->     A[✓ Graficar región] --> B[✓ Encontrar intersecciones]
->     B --> C[✓ Determinar tipo]
->     C --> D[✓ Establecer límites]
->     D --> E[✓ Plantear integral]
->     E --> F[✓ Resolver interior]
->     F --> G[✓ Resolver exterior]
->     G --> H[✓ Verificar resultado]
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Área_de_una_región_en_R2_05.svg]]
 
 ---
 
@@ -543,18 +475,7 @@ graph TB
 > 
 > **Progresión del aprendizaje:**
 > 
-> ```mermaid
-> graph LR
->     A[Área en ℝ²] --> B[Volumen en ℝ³]
->     B --> C[Integrales triples]
->     A --> D[Centro de masa]
->     A --> E[Momento de inercia]
->     B --> F[Coordenadas cilíndricas]
->     B --> G[Coordenadas esféricas]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Área_de_una_región_en_R2_06.svg]]
 > 
 > **Próximos temas:**
 > 

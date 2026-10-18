@@ -1,0 +1,12 @@
+flowchart TD
+    A[Campo F = M,N,P] --> B[Componente \hat{i}]
+    A --> C[Componente \hat{j}]
+    A --> D[Componente \hat{k}]
+    B --> E[∂P/∂y - ∂N/∂z]
+    C --> F[∂M/∂z - ∂P/∂x]
+    D --> G[∂N/∂x - ∂M/∂y]
+    E --> H[Rotacional]
+    F --> H
+    G --> H
+    style A fill:#e1f5ff
+    style H fill:#e1ffe1

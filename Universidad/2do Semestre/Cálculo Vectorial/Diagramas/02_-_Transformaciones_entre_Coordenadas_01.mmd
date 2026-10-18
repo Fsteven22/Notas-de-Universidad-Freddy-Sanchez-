@@ -1,0 +1,25 @@
+graph TB
+    A[Sistemas de Coordenadas] --> B[Cartesianas]
+    A --> C[Cilíndricas]
+    A --> D[Esféricas]
+    
+    B --> B1["(x, y, z)"]
+    C --> C1["(ρ, φ, z)"]
+    D --> D1["(r, θ, φ)"]
+    
+    B1 <-->|"ρ=√(x²+y²)<br>φ=atan2(y,x)<br>z=z"| C1
+    B1 <-->|"r=√(x²+y²+z²)<br>θ=arccos(z/r)<br>φ=atan2(y,x)"| D1
+    C1 <-->|"r=√(ρ²+z²)<br>θ=arctan(ρ/z)<br>φ=φ"| D1
+    
+    E[Aplicaciones] --> E1[Cilíndricas:<br>Cables, tuberías]
+    E --> E2[Esféricas:<br>Planetas, átomos]
+    
+    F[Superficies] --> F1[Cilíndricas:<br>Cilindros, planos]
+    F --> F2[Esféricas:<br>Esferas, conos]
+    
+    style A fill:#e3f2fd
+    style B fill:#c8e6c9
+    style C fill:#ffe082
+    style D fill:#ffccbc
+    style E fill:#f3e5f5
+    style F fill:#b2dfdb

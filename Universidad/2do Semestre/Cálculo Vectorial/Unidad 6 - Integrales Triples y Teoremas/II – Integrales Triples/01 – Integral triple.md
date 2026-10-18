@@ -25,25 +25,7 @@ dg-publish: true
 > |**Probabilidad**|Distribuciones en 3D|Estadística multivariable|
 > |**Física**|Campos escalares en espacio|Densidad, temperatura, presión|
 
-```mermaid
-graph TB
-    A[Integral Triple<br/>∭_V f dV] --> B[Interpretaciones]
-    
-    B --> C[Volumen<br/>∭ 1 dV]
-    B --> D[Masa<br/>∭ ρ dV]
-    B --> E[Promedio<br/>∭ f dV / Vol V]
-    
-    A --> F[Coordenadas]
-    F --> G[Cartesianas<br/>dx dy dz]
-    F --> H[Cilíndricas<br/>r dr dθ dz]
-    F --> I[Esféricas<br/>ρ² sin φ dρ dφ dθ]
-    
-    A[Integral Triple] --> J[6 órdenes<br/>posibles]
-    
-    style A fill:#e1f5ff
-    style F fill:#fff4e1
-    style I fill:#e1ffe1
-```
+![[Diagramas/01_–_Integral_triple_01.svg]]
 
 ---
 
@@ -68,28 +50,7 @@ graph TB
 > |**Momento de inercia**|Rotación de sólidos|$I = \iiint r^2 \delta , dV$|
 > |**Probabilidades**|Distribuciones 3D|Funciones de densidad|
 
-```mermaid
-graph TB
-    A[Integral Triple<br/>∭_V f x,y,z dV] --> B[Interpretación<br/>Geométrica]
-    A --> C[Cálculo]
-    A --> D[Aplicaciones]
-    
-    B --> B1[Masa de sólido]
-    B --> B2[Volumen V=∭ 1 dV]
-    B --> B3[Promedio de función]
-    
-    C --> C1[Integrales iteradas]
-    C --> C2[6 órdenes posibles]
-    C --> C3[Teorema de Fubini]
-    
-    D --> D1[Centro de masa]
-    D --> D2[Momento de inercia]
-    D --> D3[Masa de sólidos]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-```
+![[Diagramas/01_–_Integral_triple_02.svg]]
 
 Let me create the complete document:
 
@@ -118,26 +79,7 @@ Let me create the complete document:
 > |**Carga total**|Distribución de densidad|Electromagnetismo|
 > |**Probabilidad**|Distribuciones 3D|Estadística multivariable|
 
-```mermaid
-graph TB
-    A[Integral Triple<br/>∭_V f dV] --> B[Volumen de sólidos]
-    A --> C[Masa de objetos 3D]
-    A --> D[Centro de masa]
-    A --> E[Momentos de inercia]
-    
-    B --> F[Geometría]
-    C --> F[Física]
-    D --> F
-    E --> F
-    
-    F --> G[Aplicaciones Reales]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1f5
-    style E fill:#f5e1ff
-```
+![[Diagramas/01_–_Integral_triple_03.svg]]
 
 ---
 
@@ -167,24 +109,7 @@ graph TB
 > |Carga $q(x,y,z)$|Carga eléctrica total|$\text{C}$ (coulombs)|
 > |Presión $P(x,y,z)$|"Presión acumulada"|$\text{Pa} \cdot \text{m}^3$|
 
-```mermaid
-graph TB
-    A[Integral Triple<br/>∭_V f dV] --> B[Interpretaciones]
-    
-    B --> C[Geométrica]
-    B --> D[Física]
-    B --> E[Probabilística]
-    
-    C --> F[f = 1<br/>Volumen]
-    D --> G[f = ρ<br/>Masa]
-    D --> H[f = carga<br/>Q total]
-    E --> I[f = densidad prob.<br/>Probabilidad]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1f5
-```
+![[Diagramas/01_–_Integral_triple_04.svg]]
 
 ---
 
@@ -200,24 +125,7 @@ graph TB
 > 
 > **Los 6 órdenes posibles:**
 > 
-> ```mermaid
-> graph TD
->     A[∭ f dV] --> B[6 órdenes de integración]
->     B --> C1[dz dy dx]
->     B --> C2[dz dx dy]
->     B --> C3[dy dz dx]
->     B --> C4[dy dx dz]
->     B --> C5[dx dy dz]
->     B --> C6[dx dz dy]
->     C1 --> D[Todos equivalentes<br/>por Fubini]
->     C2 --> D
->     C3 --> D
->     C4 --> D
->     C5 --> D
->     C6 --> D
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integral_triple_05.svg]]
 > 
 > **Ejemplo básico:**
 > 
@@ -269,27 +177,7 @@ graph TB
 > |**Tipo 2**|$y$ entre superficies|Región en plano $xz$|$dy , dz , dx$ o $dy , dx , dz$|
 > |**Tipo 3**|$x$ entre superficies|Región en plano $yz$|$dx , dy , dz$ o $dx , dz , dy$|
 
-```mermaid
-flowchart TD
-    A[Identificar Región V] --> B{¿Qué variable varía<br/>entre superficies?}
-    
-    B -->|z| C[Tipo 1<br/>Proyectar en xy]
-    B -->|y| D[Tipo 2<br/>Proyectar en xz]
-    B -->|x| E[Tipo 3<br/>Proyectar en yz]
-    
-    C --> F[z entre<br/>u₁ x,y y u₂ x,y]
-    D --> G[y entre<br/>v₁ x,z y v₂ x,z]
-    E --> H[x entre<br/>w₁ y,z y w₂ y,z]
-    
-    F --> I[∬_R ∫ f dz dA]
-    G --> J[∬_R ∫ f dy dA]
-    H --> K[∬_R ∫ f dx dA]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1f5
-```
+![[Diagramas/01_–_Integral_triple_06.svg]]
 
 > [!example] 📝 Ejemplo: Tetraedro
 > 
@@ -364,25 +252,7 @@ flowchart TD
 > |$\theta$|$0 \leq \theta < 2\pi$|Ángulo azimutal (completo)|
 > |$z$|$-\infty < z < \infty$|Altura (sin restricción)|
 
-```mermaid
-graph TB
-    A[Coordenadas Cilíndricas] --> B[Componentes]
-    
-    B --> C[r: radio]
-    B --> D[θ: ángulo]
-    B --> E[z: altura]
-    
-    C --> F[Distancia al eje z]
-    D --> G[Rotación en plano xy]
-    E --> H[Posición vertical]
-    
-    F --> I[dV = r dr dθ dz]
-    G --> I
-    H --> I
-    
-    style A fill:#e1f5ff
-    style I fill:#e1ffe1
-```
+![[Diagramas/01_–_Integral_triple_07.svg]]
 
 ### 🎯 Cuándo Usar Cilíndricas
 
@@ -477,28 +347,7 @@ graph TB
 > - $\phi = \pi$: Polo sur (eje z negativo)
 > - $\theta$: Medido desde eje x positivo
 
-```mermaid
-graph TB
-    A[Coordenadas Esféricas] --> B[Tres componentes]
-    
-    B --> C[ρ: distancia al origen]
-    B --> D[φ: ángulo polar]
-    B --> E[θ: ángulo azimutal]
-    
-    C --> F[0 ≤ ρ < ∞]
-    D --> G[0 ≤ φ ≤ π]
-    E --> H[0 ≤ θ < 2π]
-    
-    F --> I[dV = ρ²sinφ dρ dφ dθ]
-    G --> I
-    H --> I
-    
-    I --> J[⚠️ NO olvidar ρ²sinφ]
-    
-    style A fill:#e1f5ff
-    style I fill:#fff4e1
-    style J fill:#ffe1e1
-```
+![[Diagramas/01_–_Integral_triple_08.svg]]
 
 ### 🎪 Cuándo Usar Esféricas
 
@@ -620,25 +469,7 @@ graph TB
 > |**Cilíndrico**|$x=r\cos\theta$<br/>$y=r\sin\theta$<br/>$z=z$|$r,dr,d\theta,dz$|Cilindros, simetría eje z|$x^2+y^2$ presente|
 > |**Esférico**|$x=\rho\sin\phi\cos\theta$<br/>$y=\rho\sin\phi\sin\theta$<br/>$z=\rho\cos\phi$|$\rho^2\sin\phi,d\rho,d\phi,d\theta$|Esferas, simetría radial|$x^2+y^2+z^2$ presente|
 
-```mermaid
-flowchart TD
-    A[Elegir Sistema<br/>de Coordenadas] --> B{Analizar<br/>Región}
-    
-    B --> C{¿Simetría?}
-    
-    C -->|Esférica| D[ESFÉRICAS<br/>x²+y²+z²]
-    C -->|Cilíndrica| E[CILÍNDRICAS<br/>x²+y²]
-    C -->|Ninguna| F[CARTESIANAS<br/>x, y, z]
-    
-    D --> G[dV = ρ²sinφ dρ dφ dθ]
-    E --> H[dV = r dr dθ dz]
-    F --> I[dV = dx dy dz]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#ffe1f5
-```
+![[Diagramas/01_–_Integral_triple_09.svg]]
 
 ### 🔄 Estrategia de Conversión
 
@@ -646,20 +477,7 @@ flowchart TD
 > 
 > **Pasos para elegir coordenadas:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Problema] --> B[Examinar región V]
->     B --> C[Examinar función f]
->     C --> D{¿Qué simplifica más?}
->     D --> E[Región]
->     D --> F[Función]
->     D --> G[Ambos]
->     E --> H[Elegir coordenadas<br/>según región]
->     F --> I[Elegir coordenadas<br/>según función]
->     G --> J[Mejor sistema:<br/>simplifica ambos]
->     style A fill:#e1f5ff
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integral_triple_10.svg]]
 > 
 > **Indicadores clave:**
 > 
@@ -751,34 +569,7 @@ flowchart TD
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Integral Triple))
-    Definición
-      ∭_V f dV
-      Volumen cuando f=1
-      Masa cuando f=δ
-    Sistemas
-      Cartesianas
-        dx dy dz
-        6 órdenes
-      Cilíndricas
-        r dr dθ dz
-        x²+y²
-      Esféricas
-        ρ²sinφ dρ dφ dθ
-        x²+y²+z²
-    Aplicaciones
-      Volumen
-      Masa
-      Centro de masa
-      Momento de inercia
-    Técnicas
-      Fubini 3D
-      Cambio coordenadas
-      Jacobiano
-      Simetría
-```
+![[Diagramas/01_–_Integral_triple_11.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -892,21 +683,7 @@ mindmap
 > 
 > **Próximos pasos naturales:**
 > 
-> ```mermaid
-> graph LR
->     A[Integral Triple] --> B[Integrales de Línea]
->     A --> C[Integrales de Superficie]
->     A --> D[Teoremas Fundamentales]
->     B --> E[Trabajo y circulación]
->     C --> F[Flujo a través de superficies]
->     D --> G[Teorema de Green]
->     D --> H[Teorema de Stokes]
->     D --> I[Teorema de la Divergencia]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Integral_triple_12.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

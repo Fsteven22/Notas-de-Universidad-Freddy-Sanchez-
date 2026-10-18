@@ -26,26 +26,7 @@ dg-publish: true
 > |**Predicción**|Determinar comportamiento futuro|Dinámica de sistemas|
 > |**Caracterización**|Identificar propiedades del campo|Análisis cualitativo|
 
-```mermaid
-graph TB
-    A[Campo Vectorial F] --> B{¿Es Conservativo?}
-    B -->|Sí| C[Existe función<br/>potencial f]
-    B -->|No| D[No existe<br/>función potencial]
-    
-    C --> E[F = ∇f]
-    C --> F[Independencia<br/>del camino]
-    C --> G[∮ F·dr = 0]
-    
-    D --> H[Depende del<br/>camino]
-    D --> I[∮ F·dr ≠ 0]
-    
-    E --> J[Aplicaciones:<br/>Física, Optimización]
-    
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style J fill:#e1f5ff
-```
+![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_01.svg]]
 
 ---
 
@@ -92,19 +73,7 @@ graph TB
 > 
 > **Propiedades equivalentes:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Conservativo<br/>F = ∇f] --> B[Independencia<br/>del camino]
->     A --> C[∮_C F·dr = 0<br/>para toda C cerrada]
->     A --> D[∫_C F·dr depende<br/>solo de extremos]
->     B <--> C
->     C <--> D
->     D <--> B
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_02.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -171,16 +140,7 @@ graph TB
 > 
 > **Relaciones importantes:**
 > 
-> ```mermaid
-> graph LR
->     A[Función Escalar f] -->|∇| B[Campo Vectorial ∇f]
->     B -->|∇×| C[Rotacional<br/>∇ × ∇f = 0]
->     D[Campo Vectorial F] -->|∇×| E[Rotacional ∇ × F]
->     D -->|∇·| F[Divergencia ∇·F]
->     E -->|∇·| G[∇·∇ × F = 0]
->     style C fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_03.svg]]
 > 
 > **Identidades clave:**
 > 
@@ -218,20 +178,7 @@ graph TB
 > 
 > **Visualización del criterio:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = ⟨P, Q⟩] --> B{Dominio<br/>simplemente conexo?}
->     B -->|No| C[❌ Criterio no aplica]
->     B -->|Sí| D{Derivadas<br/>continuas?}
->     D -->|No| C
->     D -->|Sí| E[Calcular ∂P/∂y y ∂Q/∂x]
->     E --> F{¿∂P/∂y = ∂Q/∂x?}
->     F -->|Sí| G[✅ F es conservativo]
->     F -->|No| H[❌ F NO es conservativo]
->     style G fill:#e1ffe1
->     style H fill:#ffe1e1
->     style C fill:#ffcccc
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_04.svg]]
 > 
 > **Ejemplos paso a paso:**
 > 
@@ -310,16 +257,7 @@ graph TB
 > 
 > **Diagrama conceptual:**
 > 
-> ```mermaid
-> graph TB
->     A[F = ∇f] -->|Derivar| B[P = ∂f/∂x<br/>Q = ∂f/∂y]
->     B -->|Derivar cruzado| C[∂P/∂y = ∂²f/∂y∂x<br/>∂Q/∂x = ∂²f/∂x∂y]
->     C -->|Clairaut| D[∂P/∂y = ∂Q/∂x]
->     D -.->|Construir| E[Encontrar f tal que<br/>∇f = F]
->     E -.->|Verificar| A
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_05.svg]]
 
 ### 🚫 Dominios No Simplemente Conexos
 
@@ -367,19 +305,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Dominio Simplemente Conexo] --> B[Sin agujeros]
->     A --> C[∂P/∂y = ∂Q/∂x]
->     B --> D[⇔ F conservativo]
->     C --> D
->     E[Dominio NO Simplemente Conexo] --> F[Con agujeros]
->     E --> G[∂P/∂y = ∂Q/∂x]
->     F --> H[⇏ F conservativo]
->     G --> H
->     style D fill:#e1ffe1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_06.svg]]
 
 ---
 
@@ -419,20 +345,7 @@ graph TB
 > 
 > **Procedimiento de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = ⟨P, Q, R⟩] --> B[Calcular 3 componentes<br/>del rotacional]
->     B --> C[Componente \hat{i}:<br/>∂R/∂y - ∂Q/∂z]
->     B --> D[Componente \hat{j}:<br/>∂P/∂z - ∂R/∂x]
->     B --> E[Componente \hat{k}:<br/>∂Q/∂x - ∂P/∂y]
->     C --> F{¿Todas = 0?}
->     D --> F
->     E --> F
->     F -->|Sí| G[✅ F conservativo<br/>∇ × F = 0]
->     F -->|No| H[❌ F NO conservativo<br/>∇ × F ≠ 0]
->     style G fill:#e1ffe1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_07.svg]]
 > 
 > **Ejemplo detallado:**
 > 
@@ -490,19 +403,7 @@ graph TB
 > 
 > **Diagrama de relación:**
 > 
-> ```mermaid
-> graph TB
->     A[Criterio General<br/>∇ × F = 0] --> B[En ℝ³<br/>3 componentes = 0]
->     A --> C[En ℝ² campo plano<br/>P, Q no dependen de z]
->     B --> D[∂R/∂y - ∂Q/∂z = 0]
->     B --> E[∂P/∂z - ∂R/∂x = 0]
->     B --> F[∂Q/∂x - ∂P/∂y = 0]
->     C --> G[R = 0]
->     G --> H[Solo queda:<br/>∂Q/∂x - ∂P/∂y = 0]
->     H --> I[∂P/∂y = ∂Q/∂x<br/>Criterio ℝ²]
->     style A fill:#e1f5ff
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_08.svg]]
 
 ---
 
@@ -581,19 +482,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[F = ⟨P, Q⟩] --> B[Verificar<br/>∂P/∂y = ∂Q/∂x]
->     B --> C[✓ Conservativo]
->     C --> D[Integrar P<br/>respecto a x]
->     D --> E[f = x²y + xy² + g y]
->     E --> F[Derivar<br/>respecto a y]
->     F --> G[Igualar con Q]
->     G --> H[Encontrar g y]
->     H --> I[f = x²y + xy² + 3y]
->     style C fill:#e1ffe1
->     style I fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_09.svg]]
 
 ### 📝 Ejemplo 2: Campo NO Conservativo en ℝ²
 
@@ -660,19 +549,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo F] --> B["Dominio D = ℝ²\0,0"]
->     B --> C[❌ NO simplemente conexo]
->     A --> D["∂P/∂y = ∂Q/∂x ✓"]
->     C --> E[Criterio no garantiza<br/>conservatividad]
->     D --> E
->     E --> F[Probar con<br/>curva cerrada]
->     F --> G["∮ F·dr = 2π ≠ 0"]
->     G --> H[❌ NO conservativo]
->     style C fill:#ffe1e1
->     style H fill:#ffcccc
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_10.svg]]
 
 ### 📝 Ejemplo 3: Campo Conservativo en ℝ³
 
@@ -810,17 +687,7 @@ graph TB
 > 
 > **Diagrama del proceso (ℝ²):**
 > 
-> ```mermaid
-> flowchart TD
->     A[F = ⟨P, Q⟩] --> B[f = ∫P dx + g y]
->     B --> C[∂f/∂y = ... + g' y]
->     C --> D[Igualar con Q]
->     D --> E[Despejar g' y]
->     E --> F[g y = ∫g' y dy]
->     F --> G[f x,y completa]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_11.svg]]
 
 ### 🔧 Método 2: Integral de Línea
 
@@ -860,13 +727,7 @@ graph TB
 > 
 > **Visualización del camino:**
 > 
-> ```mermaid
-> graph LR
->     A[x₀, y₀] -->|Horizontal<br/>∫P dt| B[x, y₀]
->     B -->|Vertical<br/>∫Q ds| C[x, y]
->     style A fill:#e1ffe1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_12.svg]]
 
 ---
 
@@ -887,19 +748,7 @@ graph TB
 > 
 > **Condiciones comunes:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Vectorial F] --> B{Derivadas<br/>continuas?}
->     B -->|No| C[❌ Criterio no aplica]
->     B -->|Sí| D{Dominio<br/>simplemente conexo?}
->     D -->|No| E[⚠️ Criterio no suficiente]
->     D -->|Sí| F{Verifica<br/>criterio?}
->     F -->|No| G[❌ NO conservativo]
->     F -->|Sí| H[✅ ES conservativo]
->     style H fill:#e1ffe1
->     style G fill:#ffe1e1
->     style C fill:#ffcccc
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_13.svg]]
 
 ---
 
@@ -1023,21 +872,7 @@ graph TB
 > 
 > ### Conexiones Matemáticas
 > 
-> ```mermaid
-> graph TD
->     A[Campos Conservativos] --> B[TFIL]
->     A --> C[Teorema de Green]
->     A --> D[Teorema de Stokes]
->     B --> E[Simplifica cálculos]
->     C --> F[Relaciona ∂D con D]
->     D --> G[Generaliza Green a ℝ³]
->     A --> H[Ecuaciones diferenciales]
->     H --> I[Soluciones exactas]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Criterios_de_conservatividad_en_R2_y_R3_14.svg]]
 
 ---
 

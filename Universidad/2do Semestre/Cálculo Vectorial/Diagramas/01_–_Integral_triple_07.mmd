@@ -1,0 +1,17 @@
+graph TB
+    A[Coordenadas Cilíndricas] --> B[Componentes]
+    
+    B --> C[r: radio]
+    B --> D[θ: ángulo]
+    B --> E[z: altura]
+    
+    C --> F[Distancia al eje z]
+    D --> G[Rotación en plano xy]
+    E --> H[Posición vertical]
+    
+    F --> I[dV = r dr dθ dz]
+    G --> I
+    H --> I
+    
+    style A fill:#e1f5ff
+    style I fill:#e1ffe1

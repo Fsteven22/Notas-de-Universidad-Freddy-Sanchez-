@@ -24,28 +24,7 @@ dg-publish: true
 > |**Cálculo tedioso**|Integrales muy largas|Orden alternativo más simple|
 > |**Función difícil**|Integración problemática primero|Integrar la parte fácil primero|
 
-```mermaid
-graph TB
-    A[Integral Doble Original] --> B{¿Fácil de resolver?}
-    
-    B -->|Sí| C[Resolver directamente]
-    B -->|No| D[Considerar cambio de orden]
-    
-    D --> E[Identificar región R]
-    E --> F[Redibujar límites]
-    F --> G[Nueva integral]
-    
-    G --> H{¿Más simple?}
-    H -->|Sí| I[Resolver nueva integral]
-    H -->|No| J[Considerar otras técnicas]
-    
-    C --> K[Resultado]
-    I --> K
-    
-    style D fill:#fff4e1
-    style G fill:#e1f5ff
-    style I fill:#e1ffe1
-```
+![[Diagramas/06_–_Cambio_de_orden_de_integración_01.svg]]
 
 ---
 
@@ -79,17 +58,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Volumen bajo superficie] --> B[Sumar capas verticales]
->     A --> C[Sumar capas horizontales]
->     B --> D[∫∫ f dy dx]
->     C --> E[∫∫ f dx dy]
->     D --> F[Mismo volumen]
->     E --> F
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/06_–_Cambio_de_orden_de_integración_02.svg]]
 > 
 > **Ejemplo visual:**
 > 
@@ -157,21 +126,7 @@ graph TB
 > 
 > **Proceso completo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[1: Integral original] --> B[2: Identificar límites]
->     B --> C[3: Determinar tipo actual]
->     C --> D[4: Graficar región R]
->     D --> E[5: Identificar nuevo tipo]
->     E --> F[6: Expresar nuevos límites]
->     F --> G[7: Escribir nueva integral]
->     D --> H[Verificación visual]
->     H --> I{¿Correcta?}
->     I -->|No| D
->     I -->|Sí| F
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/06_–_Cambio_de_orden_de_integración_03.svg]]
 > 
 > **PASO 1: Extraer información de la integral original**
 > 
@@ -525,15 +480,7 @@ graph TB
 > 
 > **Estrategia general:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Región compleja] --> B[Identificar puntos de cambio]
->     B --> C[Dividir en subregiones simples]
->     C --> D[Cada subregión es Tipo I o II]
->     D --> E[Integral total = Σ integrales parciales]
->     style C fill:#ffe1e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/06_–_Cambio_de_orden_de_integración_04.svg]]
 > 
 > **Ejemplo 1: Triángulo irregular**
 > 
@@ -1030,56 +977,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual Final
 
-```mermaid
-graph TB
-    Root["<b>🔄 Cambio de Orden</b><br/>de Integración"]
-    
-    Root --> Motiv["<b>💡 Motivación</b>"]
-    Root --> Metod["<b>📋 Método</b>"]
-    Root --> Tipos["<b>🔀 Tipos de Cambio</b>"]
-    Root --> Casos["<b>⚠️ Casos Especiales</b>"]
-    Root --> Aplic["<b>🎯 Aplicaciones</b>"]
-    
-    Motiv --> M1["✗ Integral imposible"]
-    Motiv --> M2["⚡ Simplificar cálculo"]
-    Motiv --> M3["📦 Menos subregiones"]
-    Motiv --> M4["📏 Límites más simples"]
-    
-    Metod --> Met1["1️⃣ 7 pasos sistemáticos"]
-    Metod --> Met2["2️⃣ Graficar región"]
-    Metod --> Met3["3️⃣ Identificar nuevo tipo"]
-    Metod --> Met4["4️⃣ Despejar límites"]
-    Metod --> Met5["5️⃣ Verificar"]
-    
-    Tipos --> T1["<b>Tipo I → Tipo II</b>"]
-    Tipos --> T2["<b>Tipo II → Tipo I</b>"]
-    
-    T1 --> T1A["dy dx → dx dy"]
-    T1 --> T1B["↕️ Vertical → Horizontal"]
-    
-    T2 --> T2A["dx dy → dy dx"]
-    T2 --> T2B["↔️ Horizontal → Vertical"]
-    
-    Casos --> C1["✂️ División necesaria"]
-    Casos --> C2["🔢 Múltiples subregiones"]
-    Casos --> C3["🔗 Intersecciones complejas"]
-    Casos --> C4["🔄 Cambio de sistema"]
-    
-    Aplic --> A1["e^(y²), sin(x²)"]
-    Aplic --> A2["🚫 Funciones no integrables"]
-    Aplic --> A3["⚡ Optimización de cálculo"]
-    Aplic --> A4["🔬 Problemas aplicados"]
-    
-    style Root fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
-    style Motiv fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
-    style Metod fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
-    style Tipos fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
-    style Casos fill:#F44336,stroke:#C62828,stroke-width:2px,color:#fff
-    style Aplic fill:#00BCD4,stroke:#006064,stroke-width:2px,color:#fff
-    
-    style T1 fill:#BA68C8,stroke:#7B1FA2,stroke-width:2px,color:#fff
-    style T2 fill:#BA68C8,stroke:#7B1FA2,stroke-width:2px,color:#fff
-```
+![[Diagramas/06_–_Cambio_de_orden_de_integración_05.svg]]
 
 >[!summary] ### 📊 Tabla de Referencia Rápida
 > 

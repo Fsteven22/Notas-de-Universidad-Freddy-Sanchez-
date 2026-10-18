@@ -21,24 +21,7 @@ dg-publish: true
 > |**Interpretación**|Conectar propiedades locales con globales|Circulación vs rotacional|
 > |**Verificación**|Comprobar campos conservativos|Trabajo independiente del camino|
 
-```mermaid
-graph TB
-    A[Teoremas Fundamentales] --> B[Teorema del Gradiente]
-    A --> C[Teorema de Green]
-    A --> D[Teorema de Stokes]
-    A --> E[Teorema de la Divergencia]
-    
-    B --> F[Relaciona integral de línea con valores en frontera]
-    C --> G[Relaciona integral doble con integral de línea]
-    D --> H[Relaciona integral de superficie con integral de línea]
-    E --> I[Relaciona integral triple con integral de superficie]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style E fill:#f0e1ff
-```
+![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_01.svg]]
 
 ---
 
@@ -84,18 +67,7 @@ graph TB
 > |**Divergencia**|Vector F|Escalar ∇·F|div F|Expansión/compresión|
 > |**Rotacional**|Vector F|Vector ∇×F|curl F|Rotación/circulación|
 > 
-> ```mermaid
-> graph LR
->     A[Función escalar f] -->|∇| B[Campo vectorial ∇f]
->     B -->|∇·| C[Función escalar ∇·∇f]
->     B -->|∇×| D[Campo vectorial ∇×∇f = 0]
->     E[Campo vectorial F] -->|∇·| F[Función escalar ∇·F]
->     E -->|∇×| G[Campo vectorial ∇×F]
->     G -->|∇·| H[Escalar ∇·∇×F = 0]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_02.svg]]
 > 
 > **Identidades importantes:**
 > 
@@ -134,14 +106,7 @@ graph TB
 > 
 > **Interpretación física:**
 > 
-> ```mermaid
-> graph LR
->     A["Punto A<br/>f(A)" ] -->|Curva C| B["Punto B<br/>f(B)" ]
->     C[Campo ∇f] -.->|"∫_C ∇f·dr"| D["f(B) - f(A)" ]
->     style A fill:#e1f5ff
->     style B fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_03.svg]]
 > 
 > **Significado:** La integral de línea del gradiente de f a lo largo de cualquier curva C depende ÚNICAMENTE de los puntos inicial y final, no del camino tomado.
 > 
@@ -264,16 +229,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Integral de línea<br/>sobre curva C] -->|"Teorema de Green"| B[Integral doble<br/>sobre región D]
->     C[∮_C F·dr] -.-> D["∬_D (∂Q/∂x - ∂P/∂y) dA" ]
->     E[Frontera 1D] -.-> F[Interior 2D]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_04.svg]]
 > 
 > **Interpretación física:**
 > 
@@ -400,16 +356,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Integral de línea<br/>sobre frontera C] -->|"Teorema de Stokes"| B[Integral de superficie<br/>sobre S]
->     C[∮_C F·dr] -.-> D["∬_S (∇×F)·n dS" ]
->     E[Curva 1D<br/>frontera] -.-> F[Superficie 2D<br/>interior]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_05.svg]]
 > 
 > **Relación con Green:**
 > 
@@ -504,16 +451,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Integral de superficie<br/>sobre frontera S] -->|"Teorema de Divergencia"| B[Integral triple<br/>sobre región E]
->     C[∬_S F·n dS] -.-> D[∭_E (∇·F) dV]
->     E[Superficie 2D<br/>frontera] -.-> F[Volumen 3D<br/>interior]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_06.svg]]
 > 
 > **Interpretación física:**
 > 
@@ -622,19 +560,7 @@ graph TB
 > 
 > **Jerarquía de generalización:**
 > 
-> ```mermaid
-> graph TD
->     A[Teorema Fundamental<br/>del Cálculo<br/>∫_a^b f' dx = f(b) - f(a)] 
->     A --> B[Teorema del Gradiente<br/>∫_C ∇f·dr = f(B) - f(A)]
->     B --> C[Teorema de Green<br/>∮_C F·dr = ∬_D (∂Q/∂x - ∂P/∂y) dA]
->     C --> D[Teorema de Stokes<br/>∮_C F·dr = ∬_S (∇×F)·n dS]
->     D --> E[Teorema de la Divergencia<br/>∬_S F·n dS = ∭_E (∇·F) dV]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_07.svg]]
 
 ---
 
@@ -642,22 +568,7 @@ graph TB
 
 > [!tip] 🗺️ ¿Cuándo usar cada teorema?
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema de integral] --> B{¿Tipo de integral?}
->     B -->|Línea sobre curva abierta| C{¿F = ∇f?}
->     C -->|Sí| D[Teorema del Gradiente]
->     C -->|No| E[Parametrizar]
->     B -->|Línea sobre curva cerrada| F{¿En plano?}
->     F -->|Sí| G[Green]
->     F -->|No| H[Stokes]
->     B -->|Superficie cerrada| I[Divergencia]
->     B -->|Superficie abierta| J[Stokes si conoces frontera]
->     style D fill:#e1ffe1
->     style G fill:#fff4e1
->     style H fill:#ffe1e1
->     style I fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_08.svg]]
 > 
 > **Checklist de decisión:**
 > 

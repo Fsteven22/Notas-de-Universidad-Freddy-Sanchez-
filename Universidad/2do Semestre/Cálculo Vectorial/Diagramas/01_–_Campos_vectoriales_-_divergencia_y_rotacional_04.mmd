@@ -1,0 +1,10 @@
+graph LR
+    A[Función Escalar f] -->|∇| B[Campo Vectorial ∇f]
+    B -->|∇·| C[Escalar: div ∇f]
+    B -->|∇×| D[Vector: rot ∇f = 0]
+    E[Campo Vectorial F] -->|∇·| F[Escalar: div F]
+    E -->|∇×| G[Vector: rot F]
+    G -->|∇·| H[Escalar: div rot F = 0]
+    style A fill:#e1f5ff
+    style B fill:#e1ffe1
+    style E fill:#fff4e1

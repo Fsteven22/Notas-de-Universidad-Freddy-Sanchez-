@@ -26,22 +26,7 @@ dg-publish: true
 > |**Centro de masa**|Centro de masa de alambre curvo|Diseño estructural|
 > |**Longitud de arco**|Longitud de curvas complejas|Geometría, cartografía|
 
-```mermaid
-graph TB
-    A[Integral Simple ∫] --> B[Integral de Línea ∫_C]
-    B --> C[Integral de Superficie ∬_S]
-    
-    A --> D[Sobre intervalo<br/>1 variable]
-    B --> E[Sobre curva<br/>2 o 3 variables]
-    C --> F[Sobre superficie<br/>3 variables]
-    
-    B --> G[Campo Escalar<br/>∫_C f ds]
-    B --> H[Campo Vectorial<br/>∫_C F·dr]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/02_–_Integrales_de_línea_escalares_01.svg]]
 
 ---
 
@@ -118,19 +103,7 @@ graph TB
 > 
 > **Propiedades importantes:**
 > 
-> ```mermaid
-> graph TB
->     A[Curva C] --> B{Propiedades}
->     B --> C[Orientación]
->     B --> D[Suavidad]
->     B --> E[Cerrada vs Abierta]
->     C --> F[Dirección del recorrido<br/>según t crece]
->     D --> G[r'(t) continua<br/>y no nula]
->     E --> H[r(a) = r(b)?]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_02.svg]]
 
 ### 📏 Longitud de Arco
 
@@ -264,17 +237,7 @@ graph TB
 > 
 > **Propiedades:**
 > 
-> ```mermaid
-> graph TB
->     A[Propiedades de ∫_C f ds] --> B[Linealidad]
->     A --> C[Aditividad]
->     A --> D[Independencia<br/>de parametrización]
->     B --> E[∫_C αf+βg ds =<br/>α∫_C f ds + β∫_C g ds]
->     C --> F[∫_C f ds = ∫_C₁ f ds + ∫_C₂ f ds<br/>si C = C₁ ∪ C₂]
->     D --> G[El valor no depende<br/>de cómo parametricemos C]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_03.svg]]
 > 
 > **Independencia de la parametrización:**
 > 
@@ -303,19 +266,7 @@ graph TB
 > 
 > **Algoritmo general:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema: ∫_C f ds] --> B[Paso 1: Parametrizar C]
->     B --> C[r(t), t ∈ [a,b]]
->     C --> D[Paso 2: Calcular r'(t)]
->     D --> E[Paso 3: Calcular ||r'(t)||]
->     E --> F[Paso 4: Expresar f en<br/>términos de t]
->     F --> G[Paso 5: Plantear integral<br/>∫ₐᵇ f(r(t))||r'(t)|| dt]
->     G --> H[Paso 6: Evaluar integral]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_04.svg]]
 > 
 > **Checklist de pasos:**
 > 
@@ -521,15 +472,7 @@ graph TB
 > 
 > **Proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Curva C por tramos] --> B[Identificar segmentos<br/>C₁, C₂, ..., Cₙ]
->     B --> C[Parametrizar cada<br/>segmento]
->     C --> D[Calcular ∫_Cᵢ f ds<br/>para cada i]
->     D --> E[Sumar todos<br/>los resultados]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_05.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -882,34 +825,7 @@ graph TB
 
 ### Diagrama de Flujo General
 
-```mermaid
-flowchart TD
-    A[Integral de Línea ∫_C f ds] --> B{Tipo de curva}
-    
-    B -->|Parametrizada r t| C[Usar parametrización dada]
-    B -->|y = g x| D[Parametrizar: r x = ⟨x,g x ⟩]
-    B -->|Polar r = r θ| E[Convertir a paramétrica]
-    B -->|Implícita F x,y = 0| F[Encontrar parametrización]
-    B -->|Por tramos| G[Dividir en segmentos]
-    
-    C --> H[Calcular r' t]
-    D --> H
-    E --> H
-    F --> H
-    
-    H --> I["Calcular ||r' t ||"]
-    I --> J[Expresar f en términos de t]
-    J --> K["Integral: ∫ₐᵇ f r t ||r' t || dt"]
-    
-    G --> L[Suma de integrales]
-    L --> K
-    
-    K --> M[Evaluar]
-    
-    style A fill:#e1f5ff
-    style K fill:#e1ffe1
-    style M fill:#fff4e1
-```
+![[Diagramas/02_–_Integrales_de_línea_escalares_06.svg]]
 
 > [!note] 📋 Tablas de Referencia Rápida
 > 
@@ -1121,27 +1037,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integrales de<br/>Línea Escalares))
->     Conceptos
->       Curvas parametrizadas
->       Elemento de arco ds
->       Definición formal
->     Cálculo
->       Parametrización
->       Evaluación
->       Curvas por tramos
->     Aplicaciones
->       Longitud
->       Masa
->       Centro de masa
->       Superficie
->     Casos especiales
->       Polares
->       Implícitas
->       Explícitas
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_07.svg]]
 > 
 > **Progresión natural:**
 > 
@@ -1155,18 +1051,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Integrales de<br/>Línea Escalares] --> B[Integrales de<br/>Línea Vectoriales]
->     B --> C[Campos<br/>Conservativos]
->     B --> D[Teorema de Green]
->     C --> E[Teorema de Stokes]
->     D --> E
->     E --> F[Teorema de Gauss]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Integrales_de_línea_escalares_08.svg]]
 > 
 > **Conceptos clave para lo que sigue:**
 > 

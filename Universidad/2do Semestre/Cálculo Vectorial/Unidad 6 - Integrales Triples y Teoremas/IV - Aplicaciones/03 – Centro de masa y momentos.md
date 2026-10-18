@@ -26,27 +26,7 @@ dg-publish: true
 > |**Biomecánica**|Análisis de postura|Equilibrio humano|
 > |**Robótica**|Estabilidad de robots|Prevención de volcaduras|
 
-```mermaid
-graph TB
-    A[Sólido con densidad δ] --> B[Calcular Momentos]
-    B --> C[Respecto a Planos<br/>M_xy, M_xz, M_yz]
-    B --> D[Respecto a Ejes<br/>I_x, I_y, I_z]
-    
-    C --> E[Centro de Masa<br/>x̄, ȳ, z̄]
-    D --> F[Momentos de Inercia<br/>Resistencia a rotación]
-    
-    E --> G[Aplicaciones]
-    F --> G
-    
-    G --> H[Equilibrio]
-    G --> I[Dinámica]
-    G --> J[Diseño]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/03_–_Centro_de_masa_y_momentos_01.svg]]
 
 ---
 
@@ -70,18 +50,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Elemento de masa dm] --> B[Distancia al plano: d]
->     B --> C[Contribución al momento: d · dm]
->     C --> D[Momento total: ∫ d · dm]
->     A --> E[dm = δ x,y,z dV]
->     E --> F[Para plano yz: d = x]
->     F --> G[M_yz = ∫ x · δ dV]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Centro_de_masa_y_momentos_02.svg]]
 > 
 > **Propiedades:**
 > 
@@ -145,25 +114,7 @@ graph TB
 > 
 > **Flujo de cálculo:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Región R<br/>Densidad δ] --> B[Calcular masa M<br/>M = ∭ δ dV]
->     A --> C[Calcular M_yz<br/>∭ xδ dV]
->     A --> D[Calcular M_xz<br/>∭ yδ dV]
->     A --> E[Calcular M_xy<br/>∭ zδ dV]
->     B --> F[x̄ = M_yz / M]
->     C --> F
->     B --> G[ȳ = M_xz / M]
->     D --> G
->     B --> H[z̄ = M_xy / M]
->     E --> H
->     F --> I[Centro de masa<br/>x̄, ȳ, z̄]
->     G --> I
->     H --> I
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Centro_de_masa_y_momentos_03.svg]]
 
 ### ⚙️ Momentos de Inercia
 
@@ -211,17 +162,7 @@ graph TB
 > 
 > **Analogía física:**
 > 
-> ```mermaid
-> graph LR
->     A[Masa cerca del eje] --> B[I pequeño<br/>Fácil de girar]
->     C[Masa lejos del eje] --> D[I grande<br/>Difícil de girar]
->     B --> E[Ejemplo: Trompo<br/>delgado]
->     D --> F[Ejemplo: Disco<br/>grande]
->     style A fill:#e1ffe1
->     style C fill:#ffe1e1
->     style B fill:#ccffcc
->     style D fill:#ffcccc
-> ```
+> ![[Diagramas/03_–_Centro_de_masa_y_momentos_04.svg]]
 
 ---
 
@@ -522,13 +463,7 @@ graph TB
 > 
 > **Diagrama:**
 > 
-> ```mermaid
-> graph LR
->     A[Eje por CM<br/>I_CM] -->|+Md²| B[Eje paralelo<br/>I = I_CM + Md²]
->     C[Distancia d] --> B
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Centro_de_masa_y_momentos_05.svg]]
 
 ---
 
@@ -714,41 +649,7 @@ graph TB
 
 ### 📋 Guía Paso a Paso
 
-```mermaid
-flowchart TD
-    A[Problema de centro de masa/momentos] --> B{¿Qué piden?}
-    
-    B -->|Solo masa| C[M = ∭ δ dV]
-    B -->|Centro de masa| D[Calcular M y momentos]
-    B -->|Momento de inercia| E[Calcular I_x, I_y, o I_z]
-    
-    D --> F[Calcular M = ∭ δ dV]
-    F --> G[Calcular M_yz = ∭ xδ dV]
-    G --> H[Calcular M_xz = ∭ yδ dV]
-    H --> I[Calcular M_xy = ∭ zδ dV]
-    I --> J[x̄ = M_yz/M, etc.]
-    
-    E --> K[I = ∭ distancia² · δ dV]
-    K --> L{¿Eje?}
-    L -->|Eje x| M[I_x = ∭ y²+z² δ dV]
-    L -->|Eje y| N[I_y = ∭ x²+z² δ dV]
-    L -->|Eje z| O[I_z = ∭ x²+y² δ dV]
-    
-    C --> P[Elegir coordenadas]
-    J --> P
-    M --> P
-    N --> P
-    O --> P
-    
-    P --> Q{Simetría?}
-    Q -->|Rectangular| R[Cartesianas]
-    Q -->|Circular xy| S[Cilíndricas]
-    Q -->|Radial| T[Esféricas]
-    
-    style B fill:#fff4e1
-    style P fill:#e1f5ff
-    style J fill:#e1ffe1
-```
+![[Diagramas/03_–_Centro_de_masa_y_momentos_06.svg]]
 
 ### ✅ Checklist de Verificación
 
@@ -800,20 +701,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Centro de Masa<br/>y Momentos] --> B[Integrales de Línea]
->     B --> C[Campos Vectoriales]
->     C --> D[Teorema de Green]
->     D --> E[Integrales de Superficie]
->     E --> F[Teoremas de Gauss y Stokes]
->     A -.-> G[Mecánica Clásica]
->     G -.-> H[Dinámica de Sistemas]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/03_–_Centro_de_masa_y_momentos_07.svg]]
 
 ---
 

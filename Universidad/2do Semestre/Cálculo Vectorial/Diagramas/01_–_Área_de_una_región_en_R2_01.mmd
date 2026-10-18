@@ -1,0 +1,14 @@
+graph TB
+    A[Región R en ℝ²] --> B{Tipo de Región}
+    B --> C[Región Tipo I<br/>entre dos funciones de x]
+    B --> D[Región Tipo II<br/>entre dos funciones de y]
+    C --> E[Integrar primero en y<br/>luego en x]
+    D --> F[Integrar primero en x<br/>luego en y]
+    E --> G[Área = ∬R dA]
+    F --> G
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e1ffe1
+    style D fill:#ffe1e1
+    style G fill:#f0e1ff

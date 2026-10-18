@@ -1273,65 +1273,11 @@ v
 
 ### 🔵 Diagrama Detallado - Cilíndricas
 
-```mermaid
-graph TB
-    A[Coordenadas Cilíndricas<br/>ρ, φ, z] --> B[Superficies]
-    A --> C[Líneas]
-    A --> D[Vectores Base]
-    
-    B --> B1["ρ = k<br/>Cilindros"]
-    B --> B2["φ = α<br/>Semiplanos"]
-    B --> B3["z = h<br/>Planos horiz."]
-    
-    C --> C1["Radiales<br/>(ρ varía)"]
-    C --> C2["Circulares<br/>(φ varía)"]
-    C --> C3["Verticales<br/>(z varía)"]
-    
-    D --> D1["êρ<br/>Radial"]
-    D --> D2["êφ<br/>Tangencial"]
-    D --> D3["êz<br/>Vertical"]
-    
-    E[Aplicaciones] --> E1[Cables<br/>Tuberías]
-    E --> E2[Motores<br/>Rotación]
-    E --> E3[Campos<br/>Cilíndricos]
-    
-    style A fill:#e3f2fd
-    style B fill:#c8e6c9
-    style C fill:#ffe082
-    style D fill:#ffccbc
-    style E fill:#f3e5f5
-```
+![[Diagramas/03_-_Representación_gráfica_01.svg]]
 
 ### 🔴 Diagrama Detallado - Esféricas
 
-```mermaid
-graph TB
-    A[Coordenadas Esféricas<br/>r, θ, φ] --> B[Superficies]
-    A --> C[Líneas]
-    A --> D[Vectores Base]
-    
-    B --> B1["r = k<br/>Esferas"]
-    B --> B2["θ = β<br/>Conos"]
-    B --> B3["φ = α<br/>Semiplanos"]
-    
-    C --> C1["Radiales<br/>(r varía)"]
-    C --> C2["Meridianos<br/>(θ varía)"]
-    C --> C3["Paralelos<br/>(φ varía)"]
-    
-    D --> D1["êr<br/>Radial"]
-    D --> D2["êθ<br/>Meridional"]
-    D --> D3["êφ<br/>Azimutal"]
-    
-    E[Aplicaciones] --> E1[Planetas<br/>Astronomía]
-    E --> E2[Átomos<br/>Física cuántica]
-    E --> E3[Campos<br/>Centrales]
-    
-    style A fill:#e3f2fd
-    style B fill:#ffccbc
-    style C fill:#ffe082
-    style D fill:#c8e6c9
-    style E fill:#f3e5f5
-```
+![[Diagramas/03_-_Representación_gráfica_02.svg]]
 
 ## 💡 Consejos para Visualización
 

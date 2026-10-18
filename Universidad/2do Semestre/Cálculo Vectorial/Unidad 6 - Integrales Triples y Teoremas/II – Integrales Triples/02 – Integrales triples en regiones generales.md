@@ -24,24 +24,7 @@ dg-publish: true
 > |**Momento de inercia**|Resistencia a la rotación|Ingeniería mecánica|
 > |**Aplicaciones físicas**|Temperatura, presión, concentración|Termodinámica, fluidos|
 
-```mermaid
-graph TB
-    A[Integral Triple] --> B[Volumen de región D]
-    A --> C[Masa con densidad ρ]
-    A --> D[Momento respecto a planos]
-    A --> E[Centro de masa]
-    
-    B --> F[∫∫∫_D dV]
-    C --> G["∫∫∫_D ρ(x,y,z) dV"]
-    D --> H[∫∫∫_D z·ρ dV]
-    E --> I[x̄ = M_yz/m]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#f5e1ff
-```
+![[Diagramas/02_–_Integrales_triples_en_regiones_generales_01.svg]]
 
 ---
 
@@ -57,18 +40,7 @@ graph TB
 > 
 > **Interpretación:** La región está "atrapada" entre dos superficies $z = u_1(x,y)$ (inferior) y $z = u_2(x,y)$ (superior).
 > 
-> ```mermaid
-> graph TD
->     A[Región Tipo I] --> B[Proyección R_xy en plano xy]
->     B --> C[Superficie inferior: z = u₁x,y]
->     B --> D[Superficie superior: z = u₂x,y]
->     C --> E[Integrar primero en z]
->     D --> E
->     E --> F[Luego integrar sobre R_xy]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_02.svg]]
 > 
 > **Fórmula de integración:**
 > 
@@ -93,16 +65,7 @@ graph TB
 > 
 > **Visualización del orden de integración:**
 > 
-> ```mermaid
-> flowchart LR
->     A[z: u₁ → u₂] --> B[y: c → d]
->     B --> C[x: a → b]
->     A -.-> D[Interior]
->     C -.-> E[Exterior]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_03.svg]]
 
 ### 📊 Regiones Tipo II (Proyección en xz)
 
@@ -145,18 +108,7 @@ graph TB
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph TB
->     A[Región D] --> B[Tipo I: z acotado]
->     A --> C[Tipo II: y acotado]
->     A --> D[Tipo III: x acotado]
->     B --> E[Proyección xy<br/>∫∫ ∫ ... dz dA]
->     C --> F[Proyección xz<br/>∫∫ ∫ ... dy dA]
->     D --> G[Proyección yz<br/>∫∫ ∫ ... dx dA]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_04.svg]]
 
 ---
 
@@ -181,17 +133,7 @@ graph TB
 > 
 > $$\int_a^b \int_{c(z)}^{d(z)} \int_{e(y,z)}^{f(y,z)} g(x,y,z),dx,dy,dz$$
 > 
-> ```mermaid
-> graph LR
->     A[Interior<br/>dx] --> B[Medio<br/>dy]
->     B --> C[Exterior<br/>dz]
->     A -.-> D[Límites pueden<br/>depender de y, z]
->     B -.-> E[Límites pueden<br/>depender de z]
->     C -.-> F[Límites<br/>constantes]
->     style A fill:#ffe1e1
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_05.svg]]
 > 
 > **Ejemplo con múltiples órdenes:**
 > 
@@ -226,21 +168,7 @@ graph TB
 > 
 > **Proceso de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Analizar región D] --> B{¿Límites<br/>simples?}
->     B -->|Sí| C[Usar ese orden]
->     B -->|No| D{¿Función<br/>complicada?}
->     D -->|Sí| E[Integrar primero<br/>variable que simplifica]
->     D -->|No| F{¿Simetría<br/>especial?}
->     F -->|Esférica| G[Coordenadas<br/>esféricas]
->     F -->|Cilíndrica| H[Coordenadas<br/>cilíndricas]
->     F -->|No| I[Probar órdenes<br/>hasta encontrar mejor]
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
->     style G fill:#e1f5ff
->     style H fill:#f5e1ff
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_06.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -268,16 +196,7 @@ graph TB
 > 
 > **Interpretación:** Sumamos "infinitos cubitos infinitesimales" $dV = dx,dy,dz$
 > 
-> ```mermaid
-> graph TB
->     A[Región D] --> B[Dividir en<br/>elementos dV]
->     B --> C[dV = dx·dy·dz]
->     C --> D[Sumar todos<br/>los elementos]
->     D --> E[V = ∫∫∫_D dV]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_07.svg]]
 > 
 > **Ejemplo 1:** Volumen de un paralelepípedo
 > 
@@ -342,16 +261,7 @@ graph TB
 > 
 > **Casos especiales:**
 > 
-> ```mermaid
-> graph TD
->     A[Densidad ρx,y,z] --> B{Tipo}
->     B -->|Constante| C[ρ = k]
->     B -->|Variable| D[ρ = fx,y,z]
->     C --> E[m = k·Volumen]
->     D --> F[m = ∫∫∫_D ρ dV]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_08.svg]]
 > 
 > **Ejemplo 1:** Densidad constante
 > 
@@ -379,21 +289,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph TB
->     A[Sólido D] --> B[Calcular masa m]
->     A --> C[Calcular momentos]
->     C --> D[M_yz = ∫∫∫ x·ρ dV]
->     C --> E[M_xz = ∫∫∫ y·ρ dV]
->     C --> F[M_xy = ∫∫∫ z·ρ dV]
->     B --> G[Centro de masa]
->     D --> G
->     E --> G
->     F --> G
->     G --> H[x̄, ȳ, z̄]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_09.svg]]
 > 
 > **Ejemplo:** Tetraedro con densidad constante
 > 
@@ -458,16 +354,7 @@ graph TB
 > 
 > $$\iiint_D f(x,y,z),dV = \iiint_{D'} f(x(u,v,w), y(u,v,w), z(u,v,w)) |J|,du,dv,dw$$
 > 
-> ```mermaid
-> graph LR
->     A[Región D'<br/>en uvw] --> B[Transformación T]
->     B --> C[Región D<br/>en xyz]
->     A -.-> D[dV' = du dv dw]
->     C -.-> E[dV = J du dv dw]
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_10.svg]]
 
 ### 🌐 Coordenadas Cilíndricas
 
@@ -527,19 +414,7 @@ graph TB
 > 
 > $$0 \leq \rho < \infty, \quad 0 \leq \phi \leq \pi, \quad 0 \leq \theta < 2\pi$$
 > 
-> ```mermaid
-> graph TB
->     A[Coordenadas Esféricas] --> B[ρ: radio]
->     A --> C[φ: ángulo polar]
->     A --> D[θ: ángulo azimutal]
->     B --> E[Distancia al origen<br/>0 ≤ ρ < ∞]
->     C --> F[Desde eje z<br/>0 ≤ φ ≤ π]
->     D --> G[En plano xy<br/>0 ≤ θ < 2π]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_11.svg]]
 > 
 > **Cuándo usar:**
 > 
@@ -567,16 +442,7 @@ graph TB
 > 
 > **Relaciones entre sistemas:**
 > 
-> ```mermaid
-> graph TD
->     A[Cartesianas<br/>x, y, z] --> B[Cilíndricas<br/>r, θ, z]
->     A --> C[Esféricas<br/>ρ, φ, θ]
->     B -.-> D[x² + y² = r²]
->     C -.-> E[x² + y² + z² = ρ²]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#f5e1ff
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_12.svg]]
 
 ---
 
@@ -616,25 +482,7 @@ graph TB
 > - Simplificar en cada paso
 > - Verificar resultado final
 > 
-> ```mermaid
-> flowchart TD
->     A[Leer problema] --> B[Identificar región D]
->     B --> C{¿Simetría?}
->     C -->|Cilíndrica| D[Usar coord. cilíndricas]
->     C -->|Esférica| E[Usar coord. esféricas]
->     C -->|No| F[Cartesianas]
->     D --> G[Establecer límites]
->     E --> G
->     F --> G
->     G --> H[Integrar paso a paso]
->     H --> I[Simplificar resultado]
->     I --> J{¿Tiene sentido?}
->     J -->|No| K[Revisar cálculos]
->     J -->|Sí| L[Solución final]
->     K --> H
->     style C fill:#fff4e1
->     style L fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_13.svg]]
 
 ---
 
@@ -763,27 +611,7 @@ graph TB
 
 > [!quote] 🌟 Progresión del Aprendizaje
 > 
-> ```mermaid
-> mindmap
->   root((Integrales<br/>Triples))
->     Fundamentos
->       Regiones Tipo I-III
->       Órdenes integración
->       Límites variables
->     Cambio Variables
->       Cilíndricas
->       Esféricas
->       Jacobiano
->     Aplicaciones
->       Volumen
->       Masa
->       Centro masa
->       Momento inercia
->     Próximos Temas
->       Teorema Divergencia
->       Teorema Stokes
->       Campos vectoriales
-> ```
+> ![[Diagramas/02_–_Integrales_triples_en_regiones_generales_14.svg]]
 > 
 > **Roadmap:**
 > 

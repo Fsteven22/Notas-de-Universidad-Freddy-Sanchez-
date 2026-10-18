@@ -1,0 +1,11 @@
+flowchart TD
+    A[Problema: ∫_C f ds] --> B[Paso 1: Parametrizar C]
+    B --> C[r(t), t ∈ [a,b]]
+    C --> D[Paso 2: Calcular r'(t)]
+    D --> E[Paso 3: Calcular ||r'(t)||]
+    E --> F[Paso 4: Expresar f en<br/>términos de t]
+    F --> G[Paso 5: Plantear integral<br/>∫ₐᵇ f(r(t))||r'(t)|| dt]
+    G --> H[Paso 6: Evaluar integral]
+    style A fill:#e1f5ff
+    style G fill:#e1ffe1
+    style H fill:#fff4e1

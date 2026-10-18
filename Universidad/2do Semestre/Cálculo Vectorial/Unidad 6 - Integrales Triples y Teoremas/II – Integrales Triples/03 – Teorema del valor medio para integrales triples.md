@@ -24,25 +24,7 @@ dg-publish: true
 > |**Acotación**|Establecer límites superiores/inferiores|Análisis de error, convergencia|
 > |**Aplicaciones**|Fundamento de teoremas avanzados|Análisis funcional, física matemática|
 
-```mermaid
-graph TB
-    A[Teorema del Valor Medio] --> B[Valor Promedio]
-    A --> C[Punto Especial c]
-    A --> D[Estimaciones]
-    
-    B --> E[f_avg = 1/V ∫∫∫ f dV]
-    C --> F[∃c ∈ D: fc = f_avg]
-    D --> G[m·V ≤ ∫∫∫ f dV ≤ M·V]
-    
-    E --> H[Aplicaciones físicas]
-    F --> I[Teoremas existencia]
-    G --> J[Análisis numérico]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-```
+![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_01.svg]]
 
 ---
 
@@ -60,20 +42,7 @@ graph TB
 > 
 > **Componentes del teorema:**
 > 
-> ```mermaid
-> graph TD
->     A[Hipótesis] --> B[f continua en D]
->     A --> C[D conexa]
->     A --> D[D acotada]
->     E[Conclusión] --> F[∃c ∈ D tal que]
->     F --> G[∫∫∫_D f dV = fc · VD]
->     B --> H[Sin discontinuidades]
->     C --> I[No hay 'huecos']
->     D --> J[Volumen finito]
->     style A fill:#fff4e1
->     style E fill:#e1ffe1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_02.svg]]
 > 
 > **Términos clave:**
 > 
@@ -104,17 +73,7 @@ graph TB
 > 
 > **Interpretación física:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Función fx,y,z] --> B[Integrar sobre D]
->     B --> C[∫∫∫_D f dV]
->     C --> D[Dividir por volumen]
->     D --> E[f_avg = total/VD]
->     E --> F[Valor promedio]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_03.svg]]
 > 
 > **Analogías:**
 > 
@@ -191,21 +150,7 @@ graph TB
 > 
 > $$\boxed{\iiint_D f(x,y,z),dV = f(\mathbf{c}) \cdot V(D)}$$
 > 
-> ```mermaid
-> flowchart TD
->     A[f continua en D compacto] --> B[Existe m y M]
->     B --> C[m ≤ fx,y,z ≤ M]
->     C --> D[Integrar desigualdades]
->     D --> E[m·VD ≤ ∫∫∫ f dV ≤ M·VD]
->     E --> F[Dividir por VD]
->     F --> G[m ≤ μ ≤ M]
->     G --> H[Teorema Valor Intermedio]
->     H --> I[∃c: fc = μ]
->     I --> J[∫∫∫ f dV = fc·VD]
->     style A fill:#e1f5ff
->     style I fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_04.svg]]
 
 ---
 
@@ -285,16 +230,7 @@ graph TB
 > 
 > $$\begin{align} T_{\text{avg}} &= \frac{1}{V}\iiint_D T_0\left(1 - \frac{\rho^2}{a^2}\right) \rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= \frac{3}{4\pi a^3} \int_0^{2\pi} \int_0^{\pi} \int_0^a T_0\left(1 - \frac{\rho^2}{a^2}\right) \rho^2\sin\phi,d\rho,d\phi,d\theta \[0.5em] &= \frac{3T_0}{4\pi a^3} \cdot 2\pi \cdot 2 \int_0^a \left(\rho^2 - \frac{\rho^4}{a^2}\right) d\rho \[0.5em] &= \frac{3T_0}{a^3} \left[\frac{\rho^3}{3} - \frac{\rho^5}{5a^2}\right]_0^a \[0.5em] &= \frac{3T_0}{a^3} \left(\frac{a^3}{3} - \frac{a^3}{5}\right) = T_0\left(1 - \frac{3}{5}\right) \[0.5em] &= \boxed{\frac{2T_0}{5}} \end{align}$$
 > 
-> ```mermaid
-> graph TB
->     A[Temperatura Tx,y,z] --> B[Integrar sobre esfera]
->     B --> C[∫∫∫_D T dV]
->     C --> D[Dividir por volumen]
->     D --> E[T_avg = 2T₀/5]
->     E --> F[60% de temp. central]
->     style A fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_05.svg]]
 
 ### 🎲 Teorema de Existencia
 
@@ -497,16 +433,7 @@ graph TB
 > 
 > **Patrón general:**
 > 
-> ```mermaid
-> graph LR
->     A[Integral de f] --> B[Dividir por medida]
->     B --> C[Valor promedio]
->     C --> D[Existe punto<br/>que lo alcanza]
->     A -.-> E[∫ f dx, ∫∫ f dA, ∫∫∫ f dV]
->     B -.-> F[longitud, área, volumen]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_06.svg]]
 > 
 > **Ejemplo comparativo:**
 > 
@@ -561,27 +488,7 @@ graph TB
 
 > [!quote] 🌟 Progresión del Aprendizaje
 > 
-> ```mermaid
-> mindmap
->   root((Teorema<br/>Valor Medio))
->     Fundamentos
->       Continuidad
->       Conexidad
->       Valor promedio
->     Aplicaciones
->       Estimación integrales
->       Física matemática
->       Existencia soluciones
->     Generalizaciones
->       Versión ponderada
->       Otros sistemas coord.
->       Dimensiones superiores
->     Próximos Temas
->       Teorema Divergencia
->       Teorema Stokes
->       Ecuaciones diferenciales
->       Análisis funcional
-> ```
+> ![[Diagramas/03_–_Teorema_del_valor_medio_para_integrales_triples_07.svg]]
 > 
 > **Roadmap:**
 > 

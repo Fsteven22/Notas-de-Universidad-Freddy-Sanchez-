@@ -26,23 +26,7 @@ dg-publish: true
 > |**Arquitectura**|Cálculo de cargas|Losas con densidad variable|
 > |**Aeronáutica**|Optimización de peso|Alas con materiales compuestos|
 
-```mermaid
-graph TB
-    A[Lámina 2D] --> B{Densidad}
-    B --> C[Constante ρ]
-    B --> D[Variable ρ x,y]
-    
-    C --> E[Masa = ρ × Área]
-    D --> F[Masa = ∫∫ ρ x,y dA]
-    
-    F --> G[Integral Doble]
-    G --> H[Calcular masa total]
-    
-    style A fill:#e1f5ff
-    style D fill:#fff4e1
-    style F fill:#e1ffe1
-    style G fill:#ffe1e1
-```
+![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_01.svg]]
 
 ---
 
@@ -65,17 +49,7 @@ graph TB
 > 
 > **Visualización del concepto:**
 > 
-> ```mermaid
-> graph LR
->     A[Lámina completa] --> B[Dividir en<br/>elementos pequeños]
->     B --> C[Elemento dA]
->     C --> D[Masa: dm = ρ x,y dA]
->     D --> E[Sumar todos<br/>los elementos]
->     E --> F[Masa total M]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_02.svg]]
 > 
 > **Tipos de densidad común:**
 > 
@@ -109,17 +83,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R en el plano xy] --> B[Dividir en rectángulos<br/>pequeños ΔA]
->     B --> C[Masa de cada<br/>rectángulo:<br/>Δm = ρ x,y ΔA]
->     C --> D[Sumar todas<br/>las masas]
->     D --> E[Límite cuando<br/>ΔA → 0]
->     E --> F[Integral Doble<br/>∫∫ ρ x,y dA]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_03.svg]]
 > 
 > **Formas de expresar la integral doble:**
 > 
@@ -131,23 +95,7 @@ graph TB
 > 
 > **Proceso de cálculo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[1. Identificar la región R] --> B[2. Determinar los límites<br/>de integración]
->     B --> C[3. Expresar ρ x,y]
->     C --> D{¿Tipo de región?}
->     D -->|Rectangular| E[Orden: dy dx o dx dy]
->     D -->|Circular| F[Coordenadas polares]
->     D -->|General| G[Analizar mejor orden]
->     E --> H[4. Integrar respecto<br/>a la primera variable]
->     F --> H
->     G --> H
->     H --> I[5. Integrar respecto<br/>a la segunda variable]
->     I --> J[6. Evaluar y obtener M]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_04.svg]]
 > 
 > **Ejemplo conceptual:**
 > 
@@ -176,33 +124,11 @@ graph TB
 > 
 > Imaginemos una lámina rectangular donde la densidad aumenta con $x$ y $y$.
 > 
-> ```mermaid
-> graph TB
->     subgraph "Vista Superior - Mapa de Calor"
->     A[Baja densidad<br/>esquina 0,0] --> B[Densidad media<br/>centro]
->     B --> C[Alta densidad<br/>esquina max,max]
->     end
->     subgraph "Código de colores"
->     D[🟦 Azul: Baja] --> E[🟨 Amarillo: Media]
->     E --> F[🟥 Rojo: Alta]
->     end
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_05.svg]]
 > 
 > **Superficie 3D de densidad:**
 > 
-> ```mermaid
-> graph LR
->     A[Eje X] --> B[Plano XY]
->     C[Eje Y] --> B
->     B --> D[Superficie z = ρ x,y]
->     D --> E[Altura representa<br/>densidad]
->     style B fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_06.svg]]
 > 
 > **Interpretación física:**
 > 
@@ -249,15 +175,7 @@ graph TB
 > 
 > $$= 9 \cdot \frac{4}{2} = 18 \text{ kg}$$
 > 
-> ```mermaid
-> flowchart LR
->     A[∫∫ 2xy dy dx] --> B[Integrar en y:<br/>9x]
->     B --> C[Integrar en x:<br/>18]
->     C --> D[Masa = 18 kg]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_07.svg]]
 > 
 > **Tabla de integrales útiles:**
 > 
@@ -279,18 +197,7 @@ graph TB
 > 
 > $$M \approx \sum_{i=1}^{n} \sum_{j=1}^{m} \rho(x_i, y_j) \cdot \Delta x \cdot \Delta y$$
 > 
-> ```mermaid
-> graph TB
->     A[Región R] --> B[Dividir en cuadrícula<br/>n × m rectángulos]
->     B --> C[Para cada rectángulo i,j]
->     C --> D[Calcular ρ xi, yj]
->     D --> E[Multiplicar por Δx·Δy]
->     E --> F[Sumar todas las masas]
->     F --> G[Masa aproximada M]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_08.svg]]
 > 
 > **Implementación básica en Java:**
 > 
@@ -345,17 +252,7 @@ graph TB
 > 
 > **Regla del punto medio vs otros métodos:**
 > 
-> ```mermaid
-> graph LR
->     A[Métodos numéricos] --> B[Punto medio]
->     A --> C[Trapecio]
->     A --> D[Simpson]
->     B --> E[Error O h²]
->     C --> F[Error O h²]
->     D --> G[Error O h⁴]
->     style B fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_09.svg]]
 
 ### 🎯 Método de Simpson 2D
 
@@ -444,14 +341,7 @@ graph TB
 > 
 > **Verificación numérica:** El código del artifact confirma este resultado con ambos métodos.
 > 
-> ```mermaid
-> graph LR
->     A[Región 4×3 m²] --> B[Área = 12 m²]
->     C[Densidad 5 kg/m²] --> D[M = ρ × A]
->     B --> D
->     D --> E[M = 60 kg]
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_10.svg]]
 
 ### 🎯 Ejemplo 2: Densidad Lineal
 
@@ -477,14 +367,7 @@ graph TB
 > 
 > **Interpretación física:**
 > 
-> ```mermaid
-> graph TB
->     A[Densidad mínima<br/>en 0,0:<br/>ρ = 2 kg/m²] --> B[Densidad media<br/>en 1,1.5:<br/>ρ ≈ 6.5 kg/m²]
->     B --> C[Densidad máxima<br/>en 2,3:<br/>ρ = 11 kg/m²]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_11.svg]]
 > 
 > **Mapa de densidad:**
 > 
@@ -523,16 +406,7 @@ graph TB
 > 
 > **Visualización de la densidad:**
 > 
-> ```mermaid
-> graph TD
->     A[Centro: ρ = 1] --> B[Radio 0.5: ρ = 1.5]
->     B --> C[Radio 1: ρ = 2]
->     C --> D[Esquinas: ρ = 2.41]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#ffe8cc
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_12.svg]]
 
 ---
 ## 🎓 Ejercicios Propuestos
@@ -583,30 +457,7 @@ graph TB
 > 
 > ### Conceptos Relacionados
 > 
-> ```mermaid
-> mindmap
->   root((Masa de<br/>Láminas))
->     Matemáticas
->       Integral Doble
->       Cálculo Multivariable
->       Teorema de Fubini
->       Cambio de variables
->     Métodos Numéricos
->       Riemann 2D
->       Simpson 2D
->       Monte Carlo
->       Cuadratura Gaussiana
->     Aplicaciones
->       Momento de inercia
->       Centro de masa
->       Distribuciones
->       Física de materiales
->     Programación
->       Arquitectura limpia
->       Interfaces Java
->       Optimización
->       Visualización
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_13.svg]]
 > 
 > ### Próximos Temas
 > 
@@ -643,16 +494,7 @@ graph TB
 > 
 > **Ecuaciones fundamentales:**
 > 
-> ```mermaid
-> graph LR
->     A[Densidad ρ x,y] --> B[Elemento dA]
->     B --> C[dm = ρ dA]
->     C --> D[Integrar sobre R]
->     D --> E[M = ∫∫ ρ dA]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Masa_de_una_lámina_con_densidad_variable_14.svg]]
 > 
 > **Comparación de métodos:**
 > 

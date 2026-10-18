@@ -1,0 +1,11 @@
+graph LR
+    A[∬R f x,y dA] --> B{Elegir orden}
+    B -->|dx dy| C[∫c→d ∫a→b f dx dy]
+    B -->|dy dx| D[∫a→b ∫c→d f dy dx]
+    C --> E[Primero integrar<br/>respecto a x]
+    E --> F[Luego integrar<br/>respecto a y]
+    D --> G[Primero integrar<br/>respecto a y]
+    G --> H[Luego integrar<br/>respecto a x]
+    style A fill:#e1f5ff
+    style E fill:#e1ffe1
+    style G fill:#fff4e1

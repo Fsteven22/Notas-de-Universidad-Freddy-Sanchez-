@@ -25,28 +25,7 @@ dg-publish: true
 > |**Diseño**|Base de CAD y gráficos|Curvas Bézier, splines|
 > |**Flexibilidad**|Representa curvas no funcionales|Círculos, lazos|
 
-```mermaid
-graph TB
-    A[Descripción de Curvas] --> B{Método}
-    B -->|Implícito| C[F x, y = 0]
-    B -->|Explícito| D[y = f x]
-    B -->|Paramétrico| E[x=x t, y=y t]
-    
-    C --> F[Ventaja: Simple]
-    C --> G[Desventaja: Difícil graficar]
-    
-    D --> H[Ventaja: Intuitivo]
-    D --> I[Desventaja: Solo funciones]
-    
-    E --> J[Ventaja: Muy flexible]
-    E --> K[Ventaja: Fácil derivar]
-    E --> L[Ventaja: Describe movimiento]
-    
-    style E fill:#e1ffe1
-    style J fill:#fff4e1
-    style K fill:#fff4e1
-    style L fill:#fff4e1
-```
+![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_01.svg]]
 
 ---
 
@@ -90,21 +69,7 @@ graph TB
 > 
 > **Representación visual:**
 > 
-> ```mermaid
-> graph TD
->     A[Curva Paramétrica r t] --> B[Componentes]
->     B --> C[x t: Posición horizontal]
->     B --> D[y t: Posición vertical]
->     B --> E[z t: Posición profundidad]
->     A --> F[Derivadas]
->     F --> G[r' t: Velocidad]
->     F --> H[r'' t: Aceleración]
->     G --> I[Propiedades]
->     I --> J[Magnitud: Rapidez]
->     I --> K[Dirección: Tangente]
->     style A fill:#e1f5ff
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_02.svg]]
 
 ### 🔄 Reparametrización
 
@@ -147,16 +112,7 @@ graph TB
 > 
 > **Proceso de reparametrización:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Parametrización<br/>original r t] --> B[Calcular<br/>s t = ∫|r' u| du]
->     B --> C[Invertir<br/>t = t s]
->     C --> D[Nueva parametrización<br/>r s = r t s]
->     D --> E[Propiedad:<br/>|dr/ds| = 1]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_03.svg]]
 
 ---
 
@@ -253,19 +209,7 @@ graph TB
 > • 0 < e < 1 → Elipse
 > ```
 > 
-> ```mermaid
-> graph TD
->     A[Elipse<br/>x²/a² + y²/b² = 1] --> B[Parámetros]
->     B --> C[a: Semieje mayor]
->     B --> D[b: Semieje menor]
->     B --> E[c = √ a²-b²: Distancia focal]
->     A --> F[Propiedades]
->     F --> G[Área = πab]
->     F --> H[Perímetro ≈ fórmula de Ramanujan]
->     F --> I[Excentricidad e = c/a]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_04.svg]]
 
 ### 📈 Curvas Abiertas
 
@@ -364,19 +308,7 @@ graph TB
 > → Parábola
 > ```
 > 
-> ```mermaid
-> graph TD
->     A[Parábola] --> B[Formas]
->     B --> C[Explícita: y = ax²]
->     B --> D[Paramétrica: t, at²]
->     B --> E[Física: Proyectil]
->     E --> F[x = v₀cos θ·t]
->     E --> G[y = v₀sin θ·t - gt²/2]
->     F --> H[Trayectoria<br/>parabólica]
->     G --> H
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_05.svg]]
 
 ### 🌀 Curvas Especiales
 
@@ -420,16 +352,7 @@ graph TB
 > - Tautocrona: Tiempo de descenso independiente del punto inicial
 > - Diseño de engranajes
 > 
-> ```mermaid
-> graph LR
->     A[Círculo<br/>radio r] -->|Rueda| B[Punto en borde<br/>traza curva]
->     B --> C[Cicloide]
->     C --> D[Propiedades<br/>especiales]
->     D --> E[Braquistocrona]
->     D --> F[Tautocrona]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_06.svg]]
 >
 
 > [!tip] 🎯 6. Espiral de Arquímedes
@@ -596,19 +519,7 @@ graph TB
 > - Antenas helicoidales
 > - Tornillos y roscas
 > 
-> ```mermaid
-> graph TD
->     A[Hélice Circular] --> B[Componente horizontal<br/>Círculo radio R]
->     A --> C[Componente vertical<br/>Ascenso lineal ct]
->     B --> D[Movimiento<br/>circular uniforme]
->     C --> E[Velocidad<br/>vertical constante]
->     D --> F[Curva espacial<br/>no plana]
->     E --> F
->     F --> G[Curvatura ≠ 0<br/>Torsión ≠ 0]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_07.svg]]
 >
 
 > [!success] 🎢 2. Curva de Viviani
@@ -724,19 +635,7 @@ graph TB
 >   Radio del paralelo = R·sin(φ)
 > ```
 > 
-> ```mermaid
-> graph TD
->     A[Esfera Radio R] --> B[Coordenadas Esféricas]
->     B --> C[θ: Longitud<br/>0 a 2π]
-> 	B --> D[φ: Latitud<br/>0 a π]
-> 	A --> E[Curvas Coordenadas]
-> 	E --> F[Meridianos<br/>θ = const]
-> 	E --> G[Paralelos<br/>φ = const]
-> 	F --> H[Semicírculos<br/>verticales]
-> 	G --> I[Círculos<br/>horizontales]
-> style A fill:#e1f5ff
-> style B fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_08.svg]]
 >
 
 > [!note] 🥐 5. Toro (Dona)
@@ -902,20 +801,7 @@ graph TB
 > 
 > **Proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Ecuación Implícita<br/>F x,y = 0 o F x,y,z = 0] --> B{Tipo de curva}
->     B -->|Función| C[Despejar y = f x<br/>Usar x = t]
->     B -->|Cónica| D[Usar coordenadas<br/>apropiadas]
->     B -->|Otro| E[Buscar simetría<br/>o patrón]
->     C --> F[r t = t, f t]
->     D --> G[Círculo: x=R cos t<br/>Elipse: x=a cos t]
->     E --> H[Parametrización<br/>específica]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_09.svg]]
 > 
 > **Ejemplo 1: Círculo**
 > 
@@ -1393,52 +1279,7 @@ graph TB
 
 > [!quote] 🌟 Mapa Conceptual
 > 
-> ```mermaid
-> mindmap
->   root((Parametrizaciones<br/>Clásicas))
->     Prerrequisitos
->       Trigonometría
->         Identidades
->         Funciones inversas
->       Cálculo
->         Derivadas
->         Integrales
->       Geometría Analítica
->         Cónicas
->         Superficies
->     Técnicas
->       Coordenadas Curvilíneas
->         Polares
->         Cilíndricas
->         Esféricas
->       Transformaciones
->         Rotación
->         Traslación
->         Escalamiento
->     Aplicaciones
->       Física
->         Cinemática
->         Dinámica
->         Campos
->       Ingeniería
->         CAD/CAM
->         Robótica
->         Estructuras
->       Computación
->         Gráficos
->         Animación
->         Simulación
->     Temas Avanzados
->       Geometría Diferencial
->         Curvatura
->         Torsión
->         Frenet-Serret
->       Topología
->         Género
->         Homotopía
->       Análisis Complejo
->         Curvas en ℂ
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_10.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -1465,17 +1306,7 @@ graph TB
 > 
 > ### Parametrizaciones Fundamentales
 > 
-> ```mermaid
-> flowchart LR
->     A[Curvas Básicas] --> B[Círculo<br/>r cos t, r sin t]
->     A --> C[Elipse<br/>a cos t, b sin t]
->     A --> D[Hélice<br/>R cos t, R sin t, ct]
->     E[Superficies Básicas] --> F[Esfera<br/>Coordenadas esféricas]
->     E --> G[Cilindro<br/>R cos θ, R sin θ, z]
->     E --> H[Toro<br/>Revolución de círculo]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_-_Parametrizaciones_Clásicas_en_ℝ²_y_ℝ³_11.svg]]
 > 
 > ### Fórmulas Clave
 > 

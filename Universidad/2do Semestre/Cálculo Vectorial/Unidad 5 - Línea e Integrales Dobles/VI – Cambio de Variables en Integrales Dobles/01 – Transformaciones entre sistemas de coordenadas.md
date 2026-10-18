@@ -28,21 +28,7 @@ dg-publish: true
 > |**Física**|Sistemas naturales según fuerzas|Movimiento circular, gravitación|
 > |**Ingeniería**|Diseño y análisis|Robótica, navegación, gráficos 3D|
 
-```mermaid
-graph TD
-    A[Mismo Punto] --> B[Cartesianas<br/>x, y, z]
-    A --> C[Cilíndricas<br/>r, θ, z]
-    A --> D[Esféricas<br/>ρ, θ, φ]
-    
-    B <-->|Transformación| C
-    C <-->|Transformación| D
-    B <-->|Transformación| D
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_01.svg]]
 
 ---
 
@@ -104,24 +90,7 @@ graph TD
 >    x   |___| proyección en xy
 > ```
 
-```mermaid
-graph LR
-    A[Sistema Cartesiano] --> B[2D: x, y]
-    A --> C[3D: x, y, z]
-    
-    B --> D[Plano]
-    C --> E[Espacio]
-    
-    D --> F[Líneas rectas]
-    D --> G[Rectángulos]
-    
-    E --> H[Planos]
-    E --> I[Cajas]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_02.svg]]
 
 ### ⭕ Sistema Polar (2D)
 
@@ -177,23 +146,7 @@ graph LR
 > |**Espiral de Arquímedes**|Complicada|$r = a\theta$|
 > |**Cardioide**|Muy complicada|$r = a(1 + \cos\theta)$|
 
-```mermaid
-graph TD
-    A[Coordenadas Polares] --> B[r: distancia]
-    A --> C[θ: ángulo]
-    
-    B --> D[r ≥ 0]
-    C --> E[0 ≤ θ < 2π]
-    
-    A --> F[Aplicaciones]
-    F --> G[Círculos]
-    F --> H[Espirales]
-    F --> I[Movimiento circular]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_03.svg]]
 
 ### 🔵 Sistema Cilíndrico (3D)
 
@@ -254,23 +207,7 @@ graph TD
 > - No simplifica esferas
 > - Puede complicar planos inclinados
 
-```mermaid
-graph LR
-    A[Cilíndricas] --> B[Polares en xy]
-    A --> C[+ altura z]
-    
-    B --> D[r, θ]
-    C --> E[z cartesiano]
-    
-    A --> F[Aplicaciones]
-    F --> G[Cilindros]
-    F --> H[Tuberías]
-    F --> I[Rotación axial]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_04.svg]]
 
 ### 🌐 Sistema Esférico (3D)
 
@@ -347,26 +284,7 @@ graph LR
 > - Cálculos más complejos
 > - Cuidado con singularidades ($\phi = 0, \pi$)
 
-```mermaid
-graph TD
-    A[Esféricas] --> B[ρ: distancia total]
-    A --> C[θ: ángulo azimutal]
-    A --> D[φ: ángulo polar]
-    
-    B --> E[ρ ≥ 0]
-    C --> F[0 ≤ θ < 2π]
-    D --> G[0 ≤ φ ≤ π]
-    
-    A --> H[Aplicaciones]
-    H --> I[Esferas]
-    H --> J[Astronomía]
-    H --> K[GPS]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_05.svg]]
 
 ---
 
@@ -401,14 +319,7 @@ graph TD
 > 
 > $$\tan\theta = \frac{y}{x} \quad (x \neq 0)$$
 
-```mermaid
-graph LR
-    A[Polares r,θ] -->|x = r cos θ<br/>y = r sin θ| B[Cartesianas x,y]
-    B -->|r = √ x²+y²<br/>θ = atan2 y,x| A
-    
-    style A fill:#fff4e1
-    style B fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_06.svg]]
 
 > [!example] 📝 Ejemplo: Polar → Cartesiana
 > 
@@ -461,14 +372,7 @@ graph LR
 > 
 > $$x^2 + y^2 + z^2 = r^2 + z^2$$
 
-```mermaid
-graph LR
-    A[Cilíndricas r,θ,z] -->|x = r cos θ<br/>y = r sin θ<br/>z = z| B[Cartesianas x,y,z]
-    B -->|r = √ x²+y²<br/>θ = atan2 y,x<br/>z = z| A
-    
-    style A fill:#fff4e1
-    style B fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_07.svg]]
 
 > [!example] 📝 Ejemplo: Cilíndrica → Cartesiana
 > 
@@ -536,14 +440,7 @@ graph LR
 > |$z = 0$|$\phi = \pi/2$|Plano $xy$|
 > |$z < 0, x^2+y^2 = 0$|$\phi = \pi$|Eje $z$ negativo|
 
-```mermaid
-graph LR
-    A[Esféricas ρ,θ,φ] -->|x = ρ sin φ cos θ<br/>y = ρ sin φ sin θ<br/>z = ρ cos φ| B[Cartesianas x,y,z]
-    B -->|ρ = √ x²+y²+z²<br/>θ = atan2 y,x<br/>φ = arccos z/ρ| A
-    
-    style A fill:#fff4e1
-    style B fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_08.svg]]
 
 > [!example] 📝 Ejemplo: Esférica → Cartesiana
 > 
@@ -592,14 +489,7 @@ graph LR
 > - $r$ (cilíndrica) = proyección de $\rho$ en plano $xy$
 > - Relación: $\rho^2 = r^2 + z^2$ (Pitágoras)
 
-```mermaid
-graph LR
-    A[Esféricas ρ,θ,φ] -->|r = ρ sin φ<br/>θ = θ<br/>z = ρ cos φ| B[Cilíndricas r,θ,z]
-    B -->|ρ = √ r²+z²<br/>θ = θ<br/>φ = arctan r/z| A
-    
-    style A fill:#fff4e1
-    style B fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_09.svg]]
 
 ---
 
@@ -637,26 +527,7 @@ graph LR
 > |**Cilíndrico**|• Cilindros, tubos <br/> • Simetría axial <br/> • Rotación + altura|• Tuberías <br/> • Cables <br/> • Tornados|
 > |**Esférico**|• Esferas <br/> • Simetría esférica <br/> • Punto central|• Planetas <br/> • Átomos <br/> • Campos centrales|
 
-```mermaid
-graph TD
-    A[¿Qué geometría tiene el problema?] --> B{Tipo}
-    
-    B -->|Rectangular| C[Cartesianas]
-    B -->|Circular 2D| D[Polares]
-    B -->|Cilíndrica| E[Cilíndricas]
-    B -->|Esférica| F[Esféricas]
-    
-    C --> G[Cajas, grillas]
-    D --> H[Discos, espirales]
-    E --> I[Tubos, rotación]
-    F --> J[Esferas, campos centrales]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1e1
-    style F fill:#f0e1ff
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_10.svg]]
 
 > [!example] 📝 Ejemplos de Aplicación
 > 
@@ -729,20 +600,7 @@ graph TD
 > 
 > Por tanto: $dx , dy = r , dr , d\theta$
 
-```mermaid
-graph TD
-    A[Transformación] --> B[Cambio de variables]
-    B --> C[Jacobiano]
-    C --> D[Factor adicional]
-    
-    D --> E[Polares: r]
-    D --> F[Cilíndricas: r]
-    D --> G[Esféricas: ρ² sin φ]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_11.svg]]
 
 ---
 
@@ -934,35 +792,7 @@ graph TD
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Sistemas de<br/>Coordenadas))
-    2D
-      Cartesianas
-        x, y
-        Rectangular
-      Polares
-        r, θ
-        Circular
-    3D
-      Cartesianas
-        x, y, z
-        Caja
-      Cilíndricas
-        r, θ, z
-        Tubo
-      Esféricas
-        ρ, θ, φ
-        Esfera
-    Transformaciones
-      Fórmulas directas
-      Fórmulas inversas
-      Jacobiano
-    Aplicaciones
-      Geometría
-      Física
-      Integrales
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_12.svg]]
 
 ### Tabla Comparativa Completa
 
@@ -977,31 +807,7 @@ mindmap
 
 ### Diagrama de Flujo de Selección
 
-```mermaid
-flowchart TD
-    A[Problema] --> B{¿Dimensión?}
-    
-    B -->|2D| C{¿Geometría?}
-    B -->|3D| D{¿Geometría?}
-    
-    C -->|Rectangular| E[Cartesianas x,y]
-    C -->|Circular| F[Polares r,θ]
-    
-    D -->|Caja| G[Cartesianas x,y,z]
-    D -->|Cilindro| H[Cilíndricas r,θ,z]
-    D -->|Esfera| I[Esféricas ρ,θ,φ]
-    
-    E --> J[Resolver]
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#fff4e1
-    style J fill:#e1ffe1
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_13.svg]]
 
 ---
 
@@ -1027,23 +833,7 @@ flowchart TD
 > |**Teórico**|Geometría Diferencial|Sistemas curvos generales|
 > |**Profesional**|Análisis Vectorial|Gradiente, divergencia, rotor|
 
-```mermaid
-graph LR
-    A[Transformaciones] --> B[Integrales Polares]
-    B --> C[Integrales Triples]
-    C --> D[Cambio de Variables]
-    
-    A --> E[Jacobiano]
-    E --> F[Análisis Vectorial]
-    
-    A --> G[Geometría]
-    G --> H[Superficies Curvas]
-    
-    style A fill:#e1ffe1
-    style B fill:#fff4e1
-    style C fill:#e1f5ff
-    style F fill:#f0e1ff
-```
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_14.svg]]
 
 **Aplicaciones futuras:**
 

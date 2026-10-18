@@ -1,0 +1,14 @@
+flowchart TD
+    A["Camino γ(t)"] --> B{¿Derivable?}
+    B -->|No| C[❌ No es suave]
+    B -->|Sí| D["Calcular γ'(t)"]
+    D --> E{"¿γ'(t) continua?"}
+    E -->|No| F[❌ No es suave]
+    E -->|Sí| G{"¿γ'(t) ≠ 0?"}
+    G -->|No| H[⚠️ Punto singular]
+    G -->|Sí| I[✅ Camino suave]
+    
+    style C fill:#ffe1e1
+    style F fill:#ffe1e1
+    style H fill:#fff4e1
+    style I fill:#e1ffe1

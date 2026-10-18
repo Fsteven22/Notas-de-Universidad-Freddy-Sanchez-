@@ -757,32 +757,7 @@ dg-publish: true
 
 ## 🎨 Visualización Interactiva
 
-```mermaid
-graph TB
-    A["Superficie z = f(x,y)] --> B[Punto P₀ = x₀,y₀,z₀"]
-    B --> C[Derivadas Parciales]
-    C --> D[fₓx₀,y₀<br/>Pendiente en x]
-    C --> E[f_yx₀,y₀<br/>Pendiente en y]
-    D --> F[Plano Tangente]
-    E --> F
-    F --> G[Ecuación:<br/>z = z₀ + fₓΔx + f_yΔy]
-    G --> H[Aproximación Lineal]
-    H --> I[Lx,y ≈ fx,y]
-    
-    B --> J[Segundas Derivadas]
-    J --> K["fₓₓ, f_yy<br/>Curvatura"]
-    J --> L["fₓ_y = f_yₓ<br/>Torsión"]
-    K --> M[Matriz Hessiana]
-    L --> M
-    M --> N[Clasificación<br/>de puntos críticos]
-    
-    style A fill:#e3f2fd
-    style F fill:#c8e6c9
-    style H fill:#fff3e0
-    style M fill:#f3e5f5
-    style G fill:#ffecb3
-    style N fill:#f8bbd0
-```
+![[Diagramas/03_–_Interpretación_geométrica_del_plano_tangente_y_la_aproximación_lineal_01.svg]]
 
 ## 🧪 Aplicaciones del Plano Tangente
 

@@ -31,24 +31,7 @@ dg-publish: true
 > - **r**(t) = vector posición en el instante t
 > - Al variar t, el extremo de **r**(t) traza una **curva** en el espacio
 
-```mermaid
-graph TB
-    A[Parámetro t<br/>Variable escalar] 
-    
-    A --> B["Función Vectorial<br/>r(t)"]
-    
-    B --> C["Componentes<br/>x(t), y(t), z(t)"]
-    
-    C --> D[Curva en el Espacio<br/>Trayectoria]
-    
-    D --> E["Vector Tangente<br/>r'(t)"]
-    D --> F["Velocidad y Aceleración<br/>v(t), a(t)"]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff5e1
-    style D fill:#e1ffe1
-    style E fill:#ffe1ff
-```
+![[Diagramas/01_–_Funciones_vectoriales_de_variable_escalar_01.svg]]
 
 > [!tip] 🎯 ¿Para Qué Sirven?
 > 
@@ -759,39 +742,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-flowchart TD
-    A[Funciones Vectoriales]
-
-    A --> B[Definición]
-    B --> B1["r(t) = ⟨x(t), y(t), z(t)⟩"]
-    B --> B2[Curva paramétrica]
-    B --> B3[Trayectoria]
-
-    A --> C[Derivadas]
-    C --> C1["r'(t): vector tangente"]
-    C --> C2["r''(t): aceleración"]
-    C --> C3[Reglas de derivación]
-
-    A --> D[Vectores TNB]
-    D --> D1[T: tangente unitario]
-    D --> D2[N: normal principal]
-    D --> D3[B: binormal]
-
-    A --> E[Longitud de Arco]
-    E --> E1["L = ∫‖r'(t)‖ dt"]
-    E --> E2[Parametrización por s]
-
-    A --> F[Aplicaciones]
-    F --> F1[Cinemática]
-    F --> F2[Trayectorias]
-    F --> F3[Movimiento planetario]
-
-    A --> G[Integrales]
-    G --> G1["∫ r(t) dt componente a componente"]
-    G --> G2[Teorema fundamental]
-
-```
+![[Diagramas/01_–_Funciones_vectoriales_de_variable_escalar_02.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

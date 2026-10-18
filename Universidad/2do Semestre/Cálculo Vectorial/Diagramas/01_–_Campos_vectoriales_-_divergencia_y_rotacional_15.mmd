@@ -1,0 +1,30 @@
+flowchart TD
+    A[Campo Vectorial F] --> B{¿Qué calcular?}
+    
+    B -->|Divergencia| C[Calcular div F]
+    B -->|Rotacional| D[Calcular rot F]
+    B -->|¿Es conservativo?| E{Verificar}
+    
+    C --> C1[∂M/∂x + ∂N/∂y + ∂P/∂z]
+    C1 --> C2[Resultado: escalar]
+    
+    D --> D1[Usar determinante 3×3]
+    D1 --> D2[Resultado: vector]
+    
+    E -->|R²| E1[¿∂N/∂x = ∂M/∂y?]
+    E -->|R³| E2[¿rot F = 0?]
+    
+    E1 -->|Sí| F[✅ Conservativo]
+    E1 -->|No| G[❌ No conservativo]
+    E2 -->|Sí| F
+    E2 -->|No| G
+    
+    F --> H[Buscar potencial f]
+    H --> H1[Integrar f_x = M]
+    H1 --> H2[Derivar e igualar a N]
+    H2 --> H3[Repetir para P si R³]
+    H3 --> H4[Función potencial f]
+    
+    style F fill:#e1ffe1
+    style G fill:#ffe1e1
+    style H4 fill:#e1f5ff

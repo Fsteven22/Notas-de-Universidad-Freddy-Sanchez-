@@ -1,0 +1,12 @@
+flowchart TD
+    A[Integral triple] --> B{¿Límites constantes?}
+    B -->|Sí, todos| C[Cualquier orden<br/>Elegir el más simple]
+    B -->|No| D{¿Cuáles dependen<br/>de otras variables?}
+    D --> E[Identificar dependencias]
+    E --> F[Variable con límites<br/>más complejos → INTERIOR]
+    F --> G[Variables con límites<br/>simples → EXTERIOR]
+    C --> H[Evaluar]
+    G --> H
+    style A fill:#e1f5ff
+    style F fill:#fff4e1
+    style H fill:#e1ffe1

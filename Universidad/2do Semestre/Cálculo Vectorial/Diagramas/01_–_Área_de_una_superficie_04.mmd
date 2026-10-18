@@ -1,0 +1,10 @@
+graph TB
+    A[Región D] --> B{¿Tiene simetría circular?}
+    B -->|Sí| C[Usar polares]
+    B -->|No| D{¿Límites constantes?}
+    D -->|Sí| E[Usar cartesianas]
+    D -->|No| F[Evaluar caso por caso]
+    C --> G[x = r cos θ<br/>y = r sen θ<br/>dA = r dr dθ]
+    E --> H[dA = dx dy]
+    style C fill:#e1ffe1
+    style E fill:#e1f5ff

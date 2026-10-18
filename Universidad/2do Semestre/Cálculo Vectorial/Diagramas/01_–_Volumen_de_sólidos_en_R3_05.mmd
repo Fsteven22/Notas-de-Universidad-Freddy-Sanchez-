@@ -1,0 +1,12 @@
+graph TD
+    A[Coordenadas<br/>Cilíndricas] --> B[r: distancia al eje z]
+    A --> C[θ: ángulo en plano xy]
+    A --> D[z: altura]
+    B --> E[0 ≤ r ≤ R]
+    C --> F[0 ≤ θ ≤ 2π]
+    D --> G[z₁ ≤ z ≤ z₂]
+    E --> H[dV = r dr dθ dz]
+    F --> H
+    G --> H
+    style A fill:#e1f5ff
+    style H fill:#e1ffe1

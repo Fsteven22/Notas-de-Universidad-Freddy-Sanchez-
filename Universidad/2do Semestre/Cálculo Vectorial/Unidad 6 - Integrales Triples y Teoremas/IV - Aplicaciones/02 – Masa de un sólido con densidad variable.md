@@ -26,25 +26,7 @@ dg-publish: true
 > |**Medicina**|Tejidos con densidades diferentes|Hueso, músculo, grasa|
 > |**Astrofísica**|Estrellas y planetas|Densidad radial variable|
 
-```mermaid
-graph TB
-    A[Sólido en ℝ³] --> B[Densidad δ x,y,z]
-    B --> C{Tipo de Densidad}
-    C --> D[Constante<br/>δ = k]
-    C --> E[Variable<br/>δ = f x,y,z]
-    
-    D --> F[Masa = δ · Volumen]
-    E --> G[Masa = ∭ δ x,y,z dV]
-    
-    G --> H[Propiedades Derivadas]
-    H --> I[Centro de masa]
-    H --> J[Momento de inercia]
-    H --> K[Momentos]
-    
-    style A fill:#e1f5ff
-    style E fill:#fff4e1
-    style G fill:#e1ffe1
-```
+![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_01.svg]]
 
 ---
 
@@ -80,19 +62,7 @@ graph TB
 > 
 > **Visualización de densidad variable:**
 > 
-> ```mermaid
-> graph LR
->     A[Punto x,y,z] --> B[Densidad δ x,y,z]
->     B --> C{Valor de δ}
->     C -->|Alto| D[Más masa<br/>concentrada]
->     C -->|Bajo| E[Menos masa<br/>concentrada]
->     C -->|Cero| F[Sin masa<br/>vacío]
->     D --> G[Color oscuro<br/>⬛]
->     E --> H[Color claro<br/>⬜]
->     style D fill:#1a1a1a,color:#ffffff
->     style E fill:#e8e8e8
->     style F fill:#ffffff
-> ```
+> ![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_02.svg]]
 
 ### 📏 Fórmula de Masa Total
 
@@ -119,17 +89,7 @@ graph TB
 > 
 > **Proceso conceptual:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Sólido con densidad variable] --> B[Dividir en elementos infinitesimales]
->     B --> C[Cada elemento tiene volumen dV]
->     C --> D[Masa del elemento: dm = δ x,y,z dV]
->     D --> E[Sumar todos los elementos]
->     E --> F[M = ∭ δ x,y,z dV]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_03.svg]]
 > 
 > **Interpretación física:**
 > 
@@ -397,23 +357,7 @@ graph TB
 > 
 > **Interpretación física:**
 > 
-> ```mermaid
-> graph TD
->     A[Sólido con densidad variable] --> B[Calcular masa total M]
->     B --> C[Calcular momentos]
->     C --> D[M_yz = ∭ x·δ dV]
->     C --> E[M_xz = ∭ y·δ dV]
->     C --> F[M_xy = ∭ z·δ dV]
->     D --> G[x̄ = M_yz / M]
->     E --> H[ȳ = M_xz / M]
->     F --> I[z̄ = M_xy / M]
->     G --> J[Centro de masa<br/>x̄, ȳ, z̄]
->     H --> J
->     I --> J
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_04.svg]]
 > 
 > **Ejemplo 1: Cubo con densidad lineal**
 > 
@@ -546,28 +490,7 @@ graph TB
 > 
 > **Pasos generales:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Leer problema] --> B[Identificar región R]
->     B --> C[Identificar densidad δ]
->     C --> D{¿Qué simetría?}
->     D -->|Rectangular| E[Cartesianas]
->     D -->|Circular en xy| F[Cilíndricas]
->     D -->|Radial| G[Esféricas]
->     E --> H[Establecer límites]
->     F --> H
->     G --> H
->     H --> I[Plantear integral<br/>M = ∭ δ dV]
->     I --> J[Integrar paso a paso]
->     J --> K[Verificar unidades]
->     K --> L{¿Piden más?}
->     L -->|Centro de masa| M[Calcular x̄, ȳ, z̄]
->     L -->|Momento de inercia| N[Calcular I_x, I_y, I_z]
->     L -->|Solo masa| O[Terminar]
->     style D fill:#fff4e1
->     style I fill:#e1ffe1
->     style L fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_05.svg]]
 > 
 > **Checklist:**
 > 
@@ -762,42 +685,7 @@ graph TB
 
 ## 📊 Resumen Visual Completo
 
-```mermaid
-mindmap
-  root((Masa con<br/>Densidad Variable))
-    Conceptos Fundamentales
-      Densidad δ x,y,z
-        Función de posición
-        kg/m³
-      Masa Total
-        M = ∭ δ dV
-        Integrales triples
-    Sistemas de Coordenadas
-      Cartesianas
-        dV = dx dy dz
-        Regiones rectangulares
-      Cilíndricas
-        dV = r dr dθ dz
-        Simetría circular
-      Esféricas
-        dV = ρ²sinφ dρ dθ dφ
-        Simetría radial
-    Propiedades Derivadas
-      Centro de Masa
-        x̄, ȳ, z̄
-        Punto de balance
-      Momentos de Inercia
-        I_x, I_y, I_z
-        Resistencia a rotación
-      Momentos
-        M_xy, M_xz, M_yz
-        Respecto a planos
-    Aplicaciones
-      Ingeniería
-      Física
-      Geofísica
-      Medicina
-```
+![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_06.svg]]
 
 ---
 
@@ -871,19 +759,7 @@ mindmap
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Masa con<br/>Densidad Variable] --> B[Integrales de Línea]
->     B --> C[Integrales de Superficie]
->     C --> D[Teoremas Fundamentales]
->     D --> E[Ecuaciones Diferenciales]
->     A -.-> F[Física Matemática]
->     F -.-> G[Mecánica Continua]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Masa_de_un_sólido_con_densidad_variable_07.svg]]
 
 ---
 

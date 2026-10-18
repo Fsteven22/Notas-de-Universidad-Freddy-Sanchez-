@@ -22,59 +22,7 @@ dg-publish: true
 > | **Aplicación práctica** | Base para métodos numéricos | Análisis de datos espaciales |
 > | **Conexión teórica** | Une conceptos de una y varias variables | Fundamento del análisis real |
 
-```mermaid
-graph LR
-    A["Función f(x,y)"] --> B{Región R}
-    B --> C[Integrar sobre R]
-    C --> D[Calcular área de R]
-    D --> E[Valor promedio]
-    E --> F["∃ punto (x₀,y₀)"]
-    F --> G["f(x₀,y₀) = promedio"]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-    style G fill:#f0e1ff
-````
-
----
-
-## 📋 Enunciado del Teorema
-
-> [!example] ⚡ Formulación Matemática
-> **Teorema del Valor Medio para Integrales Dobles:**
-> Sea $f(x,y)$ una función **continua** en una región cerrada y acotada $R$ del plano. Entonces existe al menos un punto $(x_0, y_0) \in R$ tal que:
-> $$\iint_R f(x,y) , dA = f(x_0, y_0) \cdot A(R)$$
-> donde $A(R)$ es el área de la región $R$.
-> **Equivalentemente, el valor promedio:**
-> $$f(x_0, y_0) = \frac{1}{A(R)} \iint_R f(x,y) , dA = f_{prom}$$
-> **Componentes del teorema:**
-> |Elemento|Símbolo|Significado|Requisito|
-> |---|---|---|---|
-> |**Función**|$f(x,y)$|Función de dos variables|Debe ser continua|
-> |**Región**|$R$|Dominio de integración|Cerrada y acotada|
-> |**Integral doble**|$\iint_R f(x,y) , dA$|Volumen bajo la superficie|Debe existir|
-> |**Área**|$A(R)$|Área de la región|$A(R) > 0$|
-> |**Punto especial**|$(x_0, y_0)$|Punto del valor medio|Existe en $R$|
-> |**Valor promedio**|$f_{prom}$|Altura promedio|$f(x_0, y_0)$|
-
-```mermaid
-graph TD
-    A[Hipótesis] --> B[f continua en R]
-    A --> C[R cerrada y acotada]
-    B --> D[Conclusión]
-    C --> D
-    D --> E[∃ x₀,y₀ en R]
-    E --> F[f x₀,y₀ = 1/A R · ∬ f dA]
-    
-    style A fill:#fff4e1
-    style B fill:#e1ffe1
-    style C fill:#e1ffe1
-    style D fill:#e1f5ff
-    style E fill:#ffe1e1
-    style F fill:#f0e1ff
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_01.svg]]
 
 ---
 
@@ -120,19 +68,7 @@ graph TD
 > |**Punto medio**|$(x_0, y_0)$ en $R$|Donde ocurre la altura promedio|
 > |**Altura promedio**|$f_{prom} = \frac{1}{A(R)} \iint_R f(x,y) , dA$|Altura del cilindro equivalente|
 
-```mermaid
-graph LR
-    A[Superficie irregular] --> B[Volumen bajo superficie]
-    B --> C[= Volumen cilindro]
-    C --> D[Base: R]
-    C --> E[Altura: f x₀,y₀]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style E fill:#ffe1e1
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_02.svg]]
 
 ### 🔍 Interpretación Física
 
@@ -166,17 +102,7 @@ graph LR
 > 
 > **2. Extensión a integrales dobles:**
 > 
-> ```mermaid
-> graph TD
->     A[TVM una variable] --> B[TVM integrales dobles]
->     B --> C[TVM integrales triples]
->     A --> D[Intervalo a,b]
->     B --> E[Región R en ℝ²]
->     C --> F[Región Ω en ℝ³]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_03.svg]]
 > 
 > **Comparación:**
 > 
@@ -345,18 +271,7 @@ graph LR
 > - **Concentración media** de contaminantes en un lago
 > - **Precipitación promedio** en una región geográfica
 
-```mermaid
-graph TD
-    A[Datos espaciales] --> B[Modelar como f x,y]
-    B --> C[Calcular integral doble]
-    C --> D[Dividir por área]
-    D --> E[Valor promedio]
-    E --> F[TVM garantiza punto representativo]
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style F fill:#fff4e1
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_04.svg]]
 
 > [!tip] 🔬 Aplicaciones Avanzadas
 > 
@@ -422,19 +337,7 @@ graph TD
 > 
 > El área es cero: $A(R) = 0$
 
-```mermaid
-graph TD
-    A[¿Se puede aplicar TVM?] --> B{¿f continua?}
-    B -->|No| C[❌ No se garantiza]
-    B -->|Sí| D{¿R cerrada y acotada?}
-    D -->|No| C
-    D -->|Sí| E{¿A R > 0?}
-    E -->|No| C
-    E -->|Sí| F[✅ TVM se aplica]
-    
-    style C fill:#ffe1e1
-    style F fill:#e1ffe1
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_05.svg]]
 
 ---
 
@@ -468,21 +371,7 @@ graph TD
 > 
 > **Flujo de la demostración:**
 > 
-> ```mermaid
-> graph TD
->     A[f continua en R] --> B[Teorema valor extremo]
->     B --> C[m ≤ f ≤ M]
->     C --> D[Integrar desigualdad]
->     D --> E[m·A R ≤ ∬f dA ≤ M·A R]
->     E --> F[Dividir por A R]
->     F --> G[m ≤ f_prom ≤ M]
->     G --> H[Valor intermedio]
->     H --> I[∃ x₀,y₀: f x₀,y₀ = f_prom]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style H fill:#e1ffe1
->     style I fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_06.svg]]
 
 ---
 
@@ -490,37 +379,7 @@ graph TD
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((TVM<br/>Integrales<br/>Dobles))
-    Enunciado
-      f continua
-      R cerrada y acotada
-      ∃ x₀,y₀
-      f x₀,y₀ = f_prom
-    Interpretación
-      Geométrica
-        Volumen cilindro
-        Altura promedio
-      Física
-        Temperatura media
-        Densidad media
-    Aplicaciones
-      Ciencia
-        Física
-        Química
-      Ingeniería
-        Análisis térmico
-        Materiales
-      Matemáticas
-        Probabilidad
-        EDPs
-    Requisitos
-      Continuidad
-      Cerradura
-      Acotamiento
-      Área positiva
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_07.svg]]
 
 ### Tabla Resumen
 
@@ -621,19 +480,7 @@ mindmap
 > |**Teórico**|Teorema de Green|Relación con integrales de línea|
 > |**Profesional**|Teorema de la divergencia|Generalización a ℝ³|
 
-```mermaid
-graph LR
-    A[TVM Integrales Dobles] --> B[Cambio de Variables]
-    B --> C[Coordenadas Polares]
-    C --> D[Integrales Triples]
-    D --> E[Teoremas Integrales]
-    E --> F[Teoremas de Green, Stokes, Gauss]
-    
-    style A fill:#e1ffe1
-    style B fill:#fff4e1
-    style D fill:#e1f5ff
-    style F fill:#f0e1ff
-```
+![[Diagramas/04_–_Teorema_del_valor_medio_para_integrales_dobles_08.svg]]
 
 ---
 

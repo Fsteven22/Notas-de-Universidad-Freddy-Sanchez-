@@ -1,0 +1,11 @@
+flowchart TD
+    A[Campo F = M,N] --> B[Calcular ∂M/∂y]
+    A --> C[Calcular ∂N/∂x]
+    B --> D{¿Son iguales?}
+    C --> D
+    D -->|Sí| E[✅ ES conservativo]
+    D -->|No| F[❌ NO es conservativo]
+    E --> G[Buscar potencial f]
+    style E fill:#e1ffe1
+    style F fill:#ffe1e1
+    style G fill:#e1f5ff

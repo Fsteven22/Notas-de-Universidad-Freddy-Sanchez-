@@ -27,24 +27,7 @@ dg-publish: true
 > - **Mínimo relativo** = Fondo de un valle 🏞️
 > - **Punto silla** = Paso o puerto de montaña 🛤️ (sube en una dirección, baja en otra)
 
-```mermaid
-graph TB
-    A["Función f(x,y)<br/>Superficie en ℝ³"] 
-    
-    A --> B[Puntos Críticos<br/>∇f = 0]
-    
-    B --> C[Máximo Relativo<br/>Cima local]
-    B --> D[Mínimo Relativo<br/>Valle local]
-    B --> E[Punto Silla<br/>Paso de montaña]
-    B --> F[Indeterminado<br/>Análisis adicional]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff5e1
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-    style E fill:#ffe1ff
-    style F fill:#f0f0f0
-```
+![[Diagramas/01_-_Extremos_relativos_01.svg]]
 
 > [!tip] 🎯 ¿Por Qué Estudiar Extremos?
 > 
@@ -662,32 +645,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Extremos<br/>Relativos))
-    Conceptos
-      Máximo local
-      Mínimo local
-      Punto silla
-    Puntos Críticos
-      ∇f = 0
-      Derivadas no existen
-      Sistema de ecuaciones
-    Matriz Hessiana
-      fxx, fyy, fxy
-      Discriminante D
-      Curvatura
-    Clasificación
-      D > 0, fxx > 0: Mínimo
-      D > 0, fxx < 0: Máximo
-      D < 0: Silla
-      D = 0: Indeterminado
-    Aplicaciones
-      Optimización
-      Diseño
-      Economía
-      Física
-```
+![[Diagramas/01_-_Extremos_relativos_02.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

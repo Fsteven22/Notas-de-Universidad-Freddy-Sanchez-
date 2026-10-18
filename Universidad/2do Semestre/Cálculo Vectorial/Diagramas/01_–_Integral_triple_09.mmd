@@ -1,0 +1,17 @@
+flowchart TD
+    A[Elegir Sistema<br/>de Coordenadas] --> B{Analizar<br/>Región}
+    
+    B --> C{¿Simetría?}
+    
+    C -->|Esférica| D[ESFÉRICAS<br/>x²+y²+z²]
+    C -->|Cilíndrica| E[CILÍNDRICAS<br/>x²+y²]
+    C -->|Ninguna| F[CARTESIANAS<br/>x, y, z]
+    
+    D --> G[dV = ρ²sinφ dρ dφ dθ]
+    E --> H[dV = r dr dθ dz]
+    F --> I[dV = dx dy dz]
+    
+    style A fill:#e1f5ff
+    style D fill:#e1ffe1
+    style E fill:#fff4e1
+    style F fill:#ffe1f5

@@ -801,30 +801,7 @@ dg-publish: true
 
 ## 🎨 Diagrama de Aplicaciones Geométricas
 
-```mermaid
-graph TD
-    A[Aplicaciones Geométricas] --> B[Distancias]
-    A --> C[Ángulos]
-    A --> D[Áreas y Volúmenes]
-    
-    B --> B1["Punto-Punto<br/>d = ||A\vec{B}||"]
-    B --> B2["Punto-Recta<br/>d = ||P₁P₀⃗ × v||/||v||"]
-    B --> B3["Punto-Plano<br/>d = |P₁P₀⃗ · \hat{n}|"]
-    
-    C --> C1["Entre vectores<br/>cos θ = u·v / ||u||||v||"]
-    C --> C2[Entre rectas<br/>usar vectores dirección]
-    C --> C3[Entre planos<br/>usar vectores normales]
-    
-    D --> D1["Triángulo<br/>A = ½||u × v||"]
-    D --> D2["Paralelogramo<br/>A = ||u × v||"]
-    D --> D3["Paralelepípedo<br/>V = |u·v × w|"]
-    D --> D4["Tetraedro<br/>V = ⅙|u·v × w|"]
-    
-    style A fill:#e3f2fd
-    style B fill:#e8f5e9
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-```
+![[Diagramas/03_–_Aplicaciones_geométricas_básicas_01.svg]]
 
 ## 📋 Tabla Resumen de Fórmulas
 

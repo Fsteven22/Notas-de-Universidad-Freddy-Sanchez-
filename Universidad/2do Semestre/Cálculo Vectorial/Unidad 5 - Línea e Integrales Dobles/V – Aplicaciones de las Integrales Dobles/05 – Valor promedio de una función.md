@@ -22,20 +22,7 @@ dg-publish: true
 > |**Optimización**|Identificar desviaciones del promedio|Control de calidad|
 > |**Análisis físico**|Calcular cantidades conservadas|Valor RMS en electricidad|
 
-```mermaid
-graph LR
-    A["Función f(x)"] --> B["Dominio [a,b]"]
-    B --> C["Integrar f(x)"]
-    C --> D[Dividir por longitud]
-    D --> E[Valor promedio]
-    E --> F[Número único representativo]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style E fill:#ffe1e1
-    style F fill:#f0e1ff
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_01.svg]]
 
 ---
 
@@ -83,17 +70,7 @@ graph LR
 >     ∫ᵇₐ f(x)dx = f_prom · (b-a)
 > ```
 
-```mermaid
-graph TD
-    A[Función f x] --> B[Calcular ∫ᵇₐ f x dx]
-    B --> C[Obtener área total]
-    C --> D[Dividir por b-a]
-    D --> E[f_prom = altura equivalente]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_02.svg]]
 
 > [!note] 🔍 Deducción Intuitiva
 > 
@@ -117,16 +94,7 @@ graph TD
 > 
 > **Transición:**
 > 
-> ```mermaid
-> graph LR
->     A[Promedio discreto<br/>suma finita] --> B[Refinar partición<br/>n → ∞]
->     B --> C[Suma de Riemann<br/>∑ f xᵢ Δx]
->     C --> D[Integral definida<br/>∫ f x dx]
->     D --> E[Valor promedio<br/>1/b-a · ∫]
->     style A fill:#ffe1e1
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Valor_promedio_de_una_función_03.svg]]
 
 ### 🌐 Valor Promedio en Dos Variables
 
@@ -172,18 +140,7 @@ graph TD
 >      ↙ x
 > ```
 
-```mermaid
-graph TD
-    A[Función f x,y] --> B[Región R]
-    B --> C[Calcular ∬ᴿ f x,y dA]
-    C --> D[Calcular A R]
-    D --> E[Dividir volumen/área]
-    E --> F[f_prom = altura promedio]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style F fill:#e1ffe1
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_04.svg]]
 
 ### 📦 Valor Promedio en Tres Variables
 
@@ -205,18 +162,7 @@ graph TD
 > |**2D**|$f(x,y)$|Región $R$|Área $A(R)$|$\iint_R f , dA$|$\frac{1}{A(R)} \iint_R f , dA$|
 > |**3D**|$f(x,y,z)$|Sólido $E$|Volumen $V(E)$|$\iiint_E f , dV$|$\frac{1}{V(E)} \iiint_E f , dV$|
 
-```mermaid
-graph LR
-    A[1D: Longitud] --> B[2D: Área]
-    B --> C[3D: Volumen]
-    A --> D[∫ / b-a]
-    B --> E[∬ / A R]
-    C --> F[∭ / V E]
-    
-    style A fill:#e1ffe1
-    style B fill:#fff4e1
-    style C fill:#e1f5ff
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_05.svg]]
 
 ---
 
@@ -244,16 +190,7 @@ graph LR
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[f continua en a,b] --> B[Calcular f_prom]
->     B --> C[TVM garantiza]
->     C --> D[∃ c ∈ a,b]
->     D --> E[f c = f_prom]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Valor_promedio_de_una_función_06.svg]]
 > 
 > **Extensión a dos variables:**
 > 
@@ -729,25 +666,7 @@ graph LR
 > |**Monotonía**|$f \leq g \Rightarrow f_{prom} \leq g_{prom}$|Orden se preserva|
 > |**Acotación**|$m \leq f \leq M \Rightarrow m \leq f_{prom} \leq M$|Promedio entre extremos|
 
-```mermaid
-graph TD
-    A[Propiedades] --> B[Linealidad]
-    A --> C[Monotonía]
-    A --> D[Acotación]
-    
-    B --> E[cf_prom = c·f_prom]
-    B --> F[f+g_prom = f_prom + g_prom]
-    
-    C --> G[f ≤ g ⟹ f_prom ≤ g_prom]
-    
-    D --> H[m ≤ f ≤ M]
-    D --> I[m ≤ f_prom ≤ M]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_07.svg]]
 
 ---
 
@@ -819,26 +738,7 @@ graph TD
 > 
 > $$f_{prom} = \frac{1}{\pi R^2} \int_0^{2\pi} \int_0^R f(r) \cdot r , dr , d\theta = \frac{2}{R^2} \int_0^R r f(r) , dr$$
 
-```mermaid
-graph TD
-    A[Calcular f_prom] --> B{¿Tipo de función?}
-    
-    B -->|Simple| C[Método directo]
-    B -->|Simétrica| D[Usar simetría]
-    B -->|Compuesta| E[Sustitución]
-    B -->|Producto| F[Por partes]
-    B -->|Circular 2D| G[Coordenadas polares]
-    
-    C --> H[∫ f dx / b-a]
-    D --> I[Aprovechar paridad]
-    E --> J[Cambio de variable]
-    F --> K[u dv = uv - ∫v du]
-    G --> L[r dr dθ]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style H fill:#e1ffe1
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_08.svg]]
 
 ---
 
@@ -985,20 +885,7 @@ graph TD
 > 
 > $$\frac{1}{24}\sum_{i=0}^{n-1} T(t_i) \Delta t \xrightarrow[\Delta t \to 0]{} \frac{1}{24}\int_0^{24} T(t) , dt$$
 
-```mermaid
-graph LR
-    A[n puntos discretos] --> B[Refinar mediciones]
-    B --> C[n → ∞]
-    C --> D[Suma → Integral]
-    D --> E[Promedio continuo]
-    
-    A -.-> F[Σ xᵢ / n]
-    E -.-> G[∫ f x dx / b-a]
-    
-    style A fill:#ffe1e1
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_09.svg]]
 
 ---
 
@@ -1056,32 +943,7 @@ graph LR
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Valor<br/>Promedio))
-    Definición
-      1D: ∫ f dx / b-a
-      2D: ∬ f dA / A R
-      3D: ∭ f dV / V E
-    TVM
-      Garantiza existencia
-      f c = f_prom
-      Punto en dominio
-    Propiedades
-      Linealidad
-      Monotonía
-      Acotación
-    Aplicaciones
-      Temperatura
-      Corriente RMS
-      Densidad
-      Probabilidad
-    Métodos
-      Directo
-      Simetría
-      Sustitución
-      Por partes
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_10.svg]]
 
 ### Tabla Resumen Dimensional
 
@@ -1093,36 +955,7 @@ mindmap
 
 ### Diagrama de Flujo para Cálculo
 
-```mermaid
-flowchart TD
-    A[Inicio] --> B{¿Dimensión?}
-    
-    B -->|1D| C[Identificar f x, a,b]
-    B -->|2D| D[Identificar f x,y, R]
-    B -->|3D| E[Identificar f x,y,z, E]
-    
-    C --> F[Calcular ∫ f dx]
-    D --> G[Calcular ∬ f dA]
-    E --> H[Calcular ∭ f dV]
-    
-    F --> I[Calcular b-a]
-    G --> J[Calcular A R]
-    H --> K[Calcular V E]
-    
-    I --> L[Dividir: f_prom = ∫/L]
-    J --> M[Dividir: f_prom = ∬/A]
-    K --> N[Dividir: f_prom = ∭/V]
-    
-    L --> O[Resultado]
-    M --> O
-    N --> O
-    
-    style B fill:#fff4e1
-    style L fill:#e1ffe1
-    style M fill:#e1ffe1
-    style N fill:#e1ffe1
-    style O fill:#e1f5ff
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_11.svg]]
 
 ---
 
@@ -1149,40 +982,11 @@ flowchart TD
 > |**Teórico**|Teoría de la Medida|Generalización abstracta|
 > |**Avanzado**|Análisis Funcional|Espacios de Hilbert|
 
-```mermaid
-graph LR
-    A[Valor Promedio] --> B[Centro de Masa]
-    B --> C[Momentos de Inercia]
-    A --> D[Teoría de Probabilidad]
-    D --> E[Esperanza Matemática]
-    A --> F[Análisis de Fourier]
-    F --> G[Procesamiento de Señales]
-    
-    style A fill:#e1ffe1
-    style B fill:#fff4e1
-    style D fill:#e1f5ff
-    style F fill:#f0e1ff
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_12.svg]]
 
 **Roadmap de evolución:**
 
-```mermaid
-graph TD
-    A[Valor Promedio<br/>Básico] --> B[Promedios<br/>Ponderados]
-    B --> C[Centros de Masa<br/>y Centroides]
-    C --> D[Momentos<br/>de Inercia]
-    
-    A --> E[Valor RMS]
-    E --> F[Análisis de<br/>Señales]
-    
-    A --> G[Esperanza<br/>Matemática]
-    G --> H[Estadística<br/>y Probabilidad]
-    
-    style A fill:#e1ffe1
-    style C fill:#fff4e1
-    style F fill:#e1f5ff
-    style H fill:#f0e1ff
-```
+![[Diagramas/05_–_Valor_promedio_de_una_función_13.svg]]
 
 ---
 

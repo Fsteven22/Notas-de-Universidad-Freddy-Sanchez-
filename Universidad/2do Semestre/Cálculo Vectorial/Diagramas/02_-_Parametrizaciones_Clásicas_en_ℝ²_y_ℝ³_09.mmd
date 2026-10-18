@@ -1,0 +1,12 @@
+flowchart TD
+    A[Ecuación Implícita<br/>F x,y = 0 o F x,y,z = 0] --> B{Tipo de curva}
+    B -->|Función| C[Despejar y = f x<br/>Usar x = t]
+    B -->|Cónica| D[Usar coordenadas<br/>apropiadas]
+    B -->|Otro| E[Buscar simetría<br/>o patrón]
+    C --> F[r t = t, f t]
+    D --> G[Círculo: x=R cos t<br/>Elipse: x=a cos t]
+    E --> H[Parametrización<br/>específica]
+    style A fill:#e1f5ff
+    style F fill:#e1ffe1
+    style G fill:#e1ffe1
+    style H fill:#e1ffe1

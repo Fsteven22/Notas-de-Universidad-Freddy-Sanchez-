@@ -26,20 +26,7 @@ dg-publish: true
 > |**Geografía**|Curvas de nivel|Mapas topográficos|
 > |**Optimización**|Restricciones múltiples|Programación no lineal|
 
-```mermaid
-graph TB
-    A[Dos Superficies en ℝ³] --> B{¿Se Intersectan?}
-    B -->|Sí| C[Curva de Intersección]
-    B -->|No| D[Sin intersección<br/>o intersección trivial]
-    C --> E[Parametrización]
-    C --> F[Vector Tangente]
-    C --> G[Propiedades Geométricas]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style E fill:#fff4e1
-```
+![[Diagramas/03_–_Curvas_como_intersección_de_superficies_01.svg]]
 
 ---
 
@@ -90,22 +77,7 @@ graph TB
 > 
 > **Visualización de tipos de superficies:**
 > 
-> ```mermaid
-> graph LR
->     A[Superficies] --> B[Cuadráticas]
->     A --> C[Cilíndricas]
->     A --> D[De Revolución]
->     B --> E[Esfera<br/>x²+y²+z²=r²]
->     B --> F[Paraboloide<br/>z=x²+y²]
->     B --> G[Hiperboloide<br/>x²+y²-z²=1]
->     C --> H[Cilindro circular<br/>x²+y²=r²]
->     C --> I[Cilindro parabólico<br/>z=x²]
->     D --> J[Toro]
->     D --> K[Cono]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_02.svg]]
 
 ### 🔄 Curvas Espaciales
 
@@ -140,22 +112,7 @@ graph TB
 > 
 > **Elementos de una curva:**
 > 
-> ```mermaid
-> graph TD
->     A[Curva Espacial r(t)] --> B[Vector Posición]
->     A --> C[Vector Tangente]
->     A --> D[Vector Normal]
->     A --> E[Vector Binormal]
->     B --> F[r(t) = punto en curva]
->     C --> G[T(t) = r'(t)/|r'(t)|]
->     D --> H[N(t) = T'(t)/|T'(t)|]
->     E --> I[B(t) = T(t) × N(t)]
->     G --> J[Triedro de Frenet]
->     H --> J
->     I --> J
->     style A fill:#e1f5ff
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_03.svg]]
 
 ---
 
@@ -178,30 +135,7 @@ graph TB
 > 
 > **Proceso de solución:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Dos Superficies<br/>F₁=0, F₂=0] --> B{Tipo de<br/>Superficies?}
->     B -->|Plano + Superficie| C[Método 1:<br/>Sustitución Directa]
->     B -->|Dos Cuadráticas| D[Método 2:<br/>Eliminación de Variable]
->     B -->|Casos Especiales| E[Método 3:<br/>Parametrización]
->     C --> F[Despejar de plano]
->     F --> G[Sustituir en superficie]
->     G --> H[Curva en 2D]
->     H --> I[Reparametrizar a 3D]
->     D --> J[Resolver para una variable]
->     J --> K[Expresar curva]
->     E --> L[Usar simetría]
->     E --> M[Coordenadas especiales]
->     I --> N[Curva de Intersección r(t)]
->     K --> N
->     L --> N
->     M --> N
->     style A fill:#e1f5ff
->     style N fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_04.svg]]
 > 
 > **Estrategias generales:**
 > 
@@ -255,18 +189,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Esfera: x²+y²+z²=4] --> B[Plano: z=1]
->     B --> C[Intersección:<br/>Círculo en z=1]
->     C --> D[Radio: √3]
->     C --> E[Centro: (0,0,1)]
->     F[Parametrización] --> G[x = √3·cos(t)]
->     F --> H[y = √3·sin(t)]
->     F --> I[z = 1]
->     style C fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_05.svg]]
 > 
 > **Propiedades de la curva:**
 > 
@@ -348,19 +271,7 @@ graph TB
 > 
 > **Visualización de las curvas:**
 > 
-> ```mermaid
-> graph TB
->     A[Cilindro 1<br/>x²+y²=1] --> C[Intersección]
->     B[Cilindro 2<br/>x²+z²=1] --> C
->     C --> D[Curva C₁: z=y]
->     C --> E[Curva C₂: z=-y]
->     D --> F[r₁ = cos t, sin t, sin t]
->     E --> G[r₂ = cos t, sin t, -sin t]
->     F --> H[Dos curvas<br/>simétricas]
->     G --> H
->     style C fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_06.svg]]
 > 
 > **Propiedades:**
 > 
@@ -420,19 +331,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Esfera<br/>radio 2] --> B[Cono<br/>z² = x² + y²]
->     B --> C[Intersección:<br/>Dos círculos]
->     C --> D[Círculo superior<br/>z = √2]
->     C --> E[Círculo inferior<br/>z = -√2]
->     D --> F[Radio: √2]
->     E --> G[Radio: √2]
->     F --> H[Simétricos respecto<br/>al plano xy]
->     G --> H
->     style C fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_07.svg]]
 
 ---
 
@@ -478,18 +377,7 @@ graph TB
 > 
 > **Interpretación física:**
 > 
-> ```mermaid
-> graph LR
->     A[Partícula en r(t)] --> B[v(t) = r'(t)]
->     B --> C[Dirección de<br/>movimiento]
->     B --> D[|v(t)|]
->     D --> E[Rapidez]
->     B --> F[T(t) = v(t)/|v(t)|]
->     F --> G[Dirección pura<br/>sin magnitud]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_08.svg]]
 
 ### 📏 Longitud de Arco
 
@@ -597,17 +485,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Paraboloide<br/>z = x² + y²] --> C[z = 4]
->     B[Plano<br/>z = 4] --> C
->     C --> D[Círculo]
->     D --> E[Centro: 0,0,4]
->     D --> F[Radio: 2]
->     D --> G[Longitud: 4π]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_09.svg]]
 
 ### 📝 Problema 2: Esfera y Cilindro
 
@@ -666,17 +544,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph TD
->     A[Esfera radio 3] --> C[Cilindro radio 2]
->     C --> D[2 círculos<br/>paralelos]
->     D --> E[Superior: z = √5]
->     D --> F[Inferior: z = -√5]
->     E --> G[Misma proyección<br/>en plano xy]
->     F --> G
->     style D fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_10.svg]]
 > 
 > **Verificación:**
 > 
@@ -740,16 +608,7 @@ graph TB
 > - El "borde superior" del paraboloide inferior
 > - El "borde inferior" del paraboloide superior
 > 
-> ```mermaid
-> graph TB
->     A[Paraboloide 1<br/>z = x² + y²] --> C[Intersección]
->     B[Paraboloide 2<br/>z = 8 - x² - y²] --> C
->     C --> D[Círculo en z=4]
->     D --> E[Radio: 2]
->     D --> F[Los paraboloides<br/>son simétricos]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_11.svg]]
 
 ---
 
@@ -846,44 +705,7 @@ graph TB
 > 
 > **Diagrama de conceptos:**
 > 
-> ```mermaid
-> mindmap
->   root((Intersección<br/>de Superficies))
->     Prerrequisitos
->       Cálculo Multivariable
->         Derivadas parciales
->         Gradiente
->       Geometría Analítica
->         Ecuaciones de superficies
->         Sistemas de coordenadas
->       Álgebra Lineal
->         Vectores
->         Producto cruz
->     Temas Relacionados
->       Curvas Parametrizadas
->         Vector tangente
->         Curvatura
->         Torsión
->       Superficies Paramétricas
->         Vector normal
->         Área de superficie
->       Integral de Línea
->         Trabajo
->         Circulación
->       Teoremas Integrales
->         Stokes
->         Divergencia
->     Aplicaciones
->       Física
->         Trayectorias
->         Campos
->       Ingeniería
->         CAD/CAM
->         Robótica
->       Computación Gráfica
->         Rendering
->         Colisiones
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_12.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -896,21 +718,7 @@ graph TB
 > 
 > **Conexiones profundas:**
 > 
-> ```mermaid
-> graph LR
->     A[Intersección] --> B[Gradiente]
->     B --> C[Vector tangente = ∇F₁ × ∇F₂]
->     A --> D[Parametrización]
->     D --> E[Integral de línea]
->     E --> F[Trabajo, Flujo]
->     A --> G[Geometría Diferencial]
->     G --> H[Curvatura]
->     G --> I[Torsión]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style E fill:#fff4e1
->     style G fill:#f0e1ff
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_13.svg]]
 
 ---
 
@@ -929,21 +737,7 @@ graph TB
 > 
 > ### Métodos de Solución
 > 
-> ```mermaid
-> flowchart LR
->     A[Problema de<br/>Intersección] --> B{Tipo?}
->     B -->|Plano + Superficie| C[Sustitución<br/>Directa]
->     B -->|Dos Cuadráticas| D[Eliminación<br/>Variable]
->     B -->|Complicado| E[Método<br/>Numérico]
->     C --> F[Solución<br/>Analítica]
->     D --> F
->     E --> G[Solución<br/>Aproximada]
->     F --> H[Parametrización<br/>Explícita]
->     G --> H
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Curvas_como_intersección_de_superficies_14.svg]]
 > 
 > ### Checklist de Resolución
 > 

@@ -1,0 +1,10 @@
+flowchart LR
+    A[Región R<br/>Tipo I] --> B{¿Complicada?}
+    B -->|Sí| C[Graficar región]
+    C --> D[Identificar límites<br/>para Tipo II]
+    D --> E[Reescribir como<br/>Tipo II]
+    B -->|No| F[Calcular como<br/>Tipo I]
+    style A fill:#e1ffe1
+    style C fill:#fff4e1
+    style E fill:#ffe1e1
+    style F fill:#e1f5ff

@@ -1,0 +1,14 @@
+flowchart TD
+    A[Sólido E] --> B{¿Forma del sólido?}
+    B -->|Caja rectangular| C[Límites constantes<br/>6 órdenes posibles]
+    B -->|Entre dos superficies z| D[Tipo 1<br/>dz en el medio]
+    B -->|Entre dos superficies y| E[Tipo 2<br/>dy en el medio]
+    B -->|Entre dos superficies x| F[Tipo 3<br/>dx en el medio]
+    B -->|Complejo| G[Dividir en<br/>subregiones simples]
+    C --> H[Integrar en<br/>cualquier orden]
+    D --> I[∬_R ... dz dA]
+    E --> J[∬_R ... dy dA]
+    F --> K[∬_R ... dx dA]
+    style B fill:#fff4e1
+    style D fill:#e1ffe1
+    style G fill:#ffe1e1

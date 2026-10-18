@@ -22,22 +22,7 @@ dg-publish: true
 > |**Simplificación**|Ecuaciones compactas|$x^2 + y^2 + z^2 = a^2$ → $\rho = a$|
 > |**Física**|Problemas con punto central|Mecánica cuántica, astrofísica|
 
-```mermaid
-graph LR
-    A[Región 3D] --> B{¿Simetría desde<br/>un punto?}
-    B -->|Esférica| C[Usar Esféricas]
-    B -->|No| D[Otro sistema]
-    
-    C --> E[Simplificar integral]
-    E --> F[Cálculo eficiente]
-    
-    D --> G[Cilíndricas o Cartesianas]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style F fill:#e1ffe1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_01.svg]]
 
 ---
 
@@ -97,25 +82,7 @@ graph LR
 >    φ: inclinación desde z
 > ```
 
-```mermaid
-graph TD
-    A[Punto P ρ,θ,φ] --> B[ρ: distancia al origen]
-    A --> C[θ: ángulo azimutal]
-    A --> D[φ: ángulo polar]
-    
-    B --> E[Distancia total]
-    C --> F[Rotación en plano xy]
-    D --> G[Inclinación desde eje z]
-    
-    G --> H[φ=0: polo norte]
-    G --> I[φ=π/2: ecuador]
-    G --> J[φ=π: polo sur]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_02.svg]]
 
 ---
 
@@ -174,23 +141,7 @@ graph TD
 > |**Cilíndrico**|$r$|Sector cilíndrico|
 > |**Esférico**|$\rho^2\sin\phi$|Cuña esférica|
 
-```mermaid
-graph TD
-    A[dV en esféricas] --> B[ρ² sin φ dρ dθ dφ]
-    
-    B --> C[ρ²: área superficial]
-    B --> D[sin φ: corrección polar]
-    B --> E[dρ: espesor radial]
-    B --> F[dθ: ángulo azimutal]
-    B --> G[dφ: ángulo polar]
-    
-    D --> H[sin φ = 0 en polos]
-    D --> I[sin φ = 1 en ecuador]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style D fill:#ffe1e1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_03.svg]]
 
 ---
 
@@ -227,23 +178,7 @@ graph TD
 > - **$\theta$:** $0 \leq \theta \leq 2\pi$ (rotación completa)
 > - **$\phi$:** $0 \leq \phi \leq \pi$ (de polo norte a polo sur)
 
-```mermaid
-graph TD
-    A[Configurar Integral] --> B[1. Identificar simetría]
-    B --> C[2. Convertir ecuaciones]
-    C --> D[3. Determinar límites]
-    D --> E[4. Expresar f en ρ,θ,φ]
-    E --> F[5. Incluir ρ² sin φ]
-    F --> G[6. Integrar]
-    
-    D --> H[ρ: radio]
-    D --> I[θ: azimutal]
-    D --> J[φ: polar]
-    
-    style A fill:#e1f5ff
-    style F fill:#ffe1e1
-    style G fill:#e1ffe1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_04.svg]]
 
 ---
 
@@ -520,26 +455,7 @@ graph TD
 > - $0 \leq \theta \leq 2\pi$
 > - $0 \leq \phi \leq \arccos(h/a)$
 
-```mermaid
-graph TD
-    A[Regiones Esféricas] --> B[Esfera completa]
-    A --> C[Cascarón]
-    A --> D[Hemisferio]
-    A --> E[Cuña]
-    A --> F[Casquete]
-    
-    B --> G[0 ≤ φ ≤ π]
-    C --> H[a ≤ ρ ≤ b]
-    D --> I[0 ≤ φ ≤ π/2]
-    E --> J[α ≤ θ ≤ β]
-    F --> K[0 ≤ φ ≤ φ₀]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style F fill:#f0e1ff
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_05.svg]]
 
 ---
 
@@ -635,30 +551,7 @@ graph TD
 > 
 > ⚠️ **NUNCA OLVIDAR**
 
-```mermaid
-flowchart TD
-    A[Problema] --> B{¿Simetría esférica?}
-    B -->|Sí| C[Convertir a esféricas]
-    B -->|No| D[Otro sistema]
-    
-    C --> E[Identificar superficies]
-    E --> F[Determinar límites]
-    
-    F --> G[ρ: radial]
-    F --> H[θ: azimutal]
-    F --> I[φ: polar]
-    
-    G --> J[Escribir integral]
-    H --> J
-    I --> J
-    
-    J --> K[Incluir ρ² sin φ]
-    K --> L[Integrar]
-    
-    style B fill:#fff4e1
-    style K fill:#ffe1e1
-    style L fill:#e1ffe1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_06.svg]]
 
 ---
 
@@ -788,23 +681,7 @@ flowchart TD
 > |**Cilíndricas**|⭐⭐⭐|Cilindros, simetría axial|
 > |**Esféricas**|⭐|Esferas, simetría radial|
 
-```mermaid
-graph LR
-    A[Esfera] --> B{Sistema?}
-    
-    B -->|Cartesianas| C[Muy complicado]
-    B -->|Cilíndricas| D[Complicado]
-    B -->|Esféricas| E[Simple]
-    
-    C --> F[Raíces anidadas]
-    D --> G[Algunas raíces]
-    E --> H[Límites constantes]
-    
-    style C fill:#ffe1e1
-    style D fill:#fff4e1
-    style E fill:#e1ffe1
-    style H fill:#e1ffe1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_07.svg]]
 
 ---
 
@@ -812,31 +689,7 @@ graph LR
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Integrales Triples<br/>Esféricas))
-    Coordenadas
-      ρ: distancia
-      θ: azimutal
-      φ: polar
-    Jacobiano
-      ρ² sin φ
-      CRÍTICO
-    Regiones
-      Esferas
-      Cascarones
-      Hemisferios
-      Conos
-    Aplicaciones
-      Volumen
-      Masa
-      Momento inercia
-      Gravedad
-    Ventajas
-      Simetría esférica
-      Límites simples
-      Cálculo directo
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_08.svg]]
 
 ### Tabla Resumen de Fórmulas
 
@@ -850,26 +703,7 @@ mindmap
 
 ### Guía Rápida de Decisión
 
-```mermaid
-flowchart TD
-    A[Integral triple 3D] --> B{¿Geometría?}
-    
-    B -->|Esfera/radial| C[Esféricas]
-    B -->|Cilindro/axial| D[Cilíndricas]
-    B -->|Caja/rectangular| E[Cartesianas]
-    
-    C --> F[Factor: ρ² sin φ]
-    D --> G[Factor: r]
-    E --> H[Factor: 1]
-    
-    F --> I[Límites en ρ,θ,φ]
-    G --> J[Límites en r,θ,z]
-    H --> K[Límites en x,y,z]
-    
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_09.svg]]
 
 ---
 
@@ -895,25 +729,7 @@ flowchart TD
 > |**Aplicado**|EDPs en esféricas|Ecuación de Laplace|
 > |**Profesional**|Armónicos esféricos|Mecánica cuántica|
 
-```mermaid
-graph LR
-    A[Coord. Esféricas] --> B[Int. Triples<br/>Esféricas]
-    B --> C[Cambio Variables<br/>General]
-    
-    B --> D[Física]
-    D --> E[Gravedad]
-    D --> F[Electromagnetismo]
-    D --> G[Mecánica cuántica]
-    
-    B --> H[EDPs]
-    H --> I[Laplace esférico]
-    H --> J[Armónicos esféricos]
-    
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#e1f5ff
-    style H fill:#f0e1ff
-```
+![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_10.svg]]
 
 **Aplicaciones futuras:**
 

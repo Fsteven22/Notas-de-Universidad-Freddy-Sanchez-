@@ -1,0 +1,12 @@
+flowchart LR
+    A[Problema] --> B[Examinar región V]
+    B --> C[Examinar función f]
+    C --> D{¿Qué simplifica más?}
+    D --> E[Región]
+    D --> F[Función]
+    D --> G[Ambos]
+    E --> H[Elegir coordenadas<br/>según región]
+    F --> I[Elegir coordenadas<br/>según función]
+    G --> J[Mejor sistema:<br/>simplifica ambos]
+    style A fill:#e1f5ff
+    style J fill:#e1ffe1

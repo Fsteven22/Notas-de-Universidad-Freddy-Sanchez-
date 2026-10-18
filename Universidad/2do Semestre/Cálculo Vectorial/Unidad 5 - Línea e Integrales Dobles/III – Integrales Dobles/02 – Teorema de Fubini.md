@@ -24,22 +24,7 @@ dg-publish: true
 > |**Verificación**|Permite comprobar resultados|Calcular por dos caminos diferentes|
 > |**Generalización**|Se extiende a integrales triples, n-ples|Aplicable en cualquier dimensión|
 
-```mermaid
-graph TB
-    A[Integral Doble ∬R f x,y dA] --> B[Teorema de Fubini]
-    B --> C[Integral Iterada 1<br/>∫∫ f dy dx]
-    B --> D[Integral Iterada 2<br/>∫∫ f dx dy]
-    
-    C --> E[Mismo Resultado]
-    D --> E
-    
-    B --> F[Condiciones:<br/>f continua en R]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#ffe1e1
-```
+![[Diagramas/02_–_Teorema_de_Fubini_01.svg]]
 
 ---
 
@@ -67,23 +52,7 @@ graph TB
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> flowchart LR
->     A[∬R f x,y dA] --> B{Fubini}
->     B --> C[Orden 1: dy dx]
->     B --> D[Orden 2: dx dy]
->     C --> E[∫ₐᵇ ... dx]
->     E --> F[∫_c^d f dy primero]
->     F --> G[Resultado R₁]
->     D --> H[∫_c^d ... dy]
->     H --> I[∫ₐᵇ f dx primero]
->     I --> J[Resultado R₂]
->     G --> K[R₁ = R₂]
->     J --> K
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style K fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_02.svg]]
 > 
 > **Interpretación geométrica:**
 > 
@@ -159,20 +128,7 @@ graph TB
 > 
 > **Diagrama conceptual:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R] --> B{¿Tipo de región?}
->     B -->|Rectangular| C[Límites constantes]
->     B -->|Tipo I| D[y depende de x]
->     B -->|Tipo II| E[x depende de y]
->     C --> F[Cualquier orden<br/>dy dx o dx dy]
->     D --> G[Solo dy dx<br/>g₁ x ≤ y ≤ g₂ x]
->     E --> H[Solo dx dy<br/>h₁ y ≤ x ≤ h₂ y]
->     style B fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_03.svg]]
 > 
 > **Ejemplo Tipo I:**
 > 
@@ -276,21 +232,7 @@ graph TB
 > 
 > **Condición de integrabilidad absoluta:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Función f x,y] --> B{¿f continua?}
->     B -->|No| C[❌ Fubini no aplica<br/>sin más análisis]
->     B -->|Sí| D{¿R acotada?}
->     D -->|No| E[Verificar<br/>∬ f  dA < ∞]
->     D -->|Sí| F[✅ Fubini aplica]
->     E --> G{¿Convergente?}
->     G -->|Sí| H[✅ Fubini generalizado]
->     G -->|No| I[❌ No aplica]
->     style F fill:#e1ffe1
->     style H fill:#e1ffe1
->     style C fill:#ffe1e1
->     style I fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_04.svg]]
 
 ### 🎭 Casos Especiales
 
@@ -389,19 +331,7 @@ graph TB
 > 
 > **Algoritmo de cambio de orden:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral iterada dada] --> B[Paso 1: Interpretar límites]
->     B --> C[Paso 2: Dibujar región R]
->     C --> D[Paso 3: Identificar tipo actual]
->     D --> E[Paso 4: Redescribir en otro tipo]
->     E --> F[Paso 5: Escribir nuevos límites]
->     F --> G[Paso 6: Verificar coherencia]
->     G --> H[Nueva integral]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_05.svg]]
 > 
 > **Ejemplo detallado paso a paso:**
 > 
@@ -657,19 +587,7 @@ graph TB
 > 
 > **Estrategia de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral doble ∬R f dA] --> B{¿f separable?}
->     B -->|Sí: f=g x ·h y| C[Producto de integrales<br/>más rápido]
->     B -->|No| D{¿Región rectangular?}
->     D -->|Sí| E{¿Un orden más fácil?}
->     D -->|No| F[Usar el orden<br/>que dicte el tipo]
->     E -->|Sí| G[Elegir ese orden]
->     E -->|Similar| H[Usar cualquiera]
->     style C fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_06.svg]]
 
 ### 🔬 Verificación de Resultados
 
@@ -766,21 +684,7 @@ graph TB
 > 
 > **Árbol de posibilidades:**
 > 
-> ```mermaid
-> graph TB
->     A[Triple ∭ f dV] --> B[Primera variable]
->     B --> C[dx primero]
->     B --> D[dy primero]
->     B --> E[dz primero]
->     C --> F[dy dz / dz dy]
->     D --> G[dx dz / dz dx]
->     E --> H[dx dy / dy dx]
->     F --> I[6 órdenes<br/>todos equivalentes]
->     G --> I
->     H --> I
->     style A fill:#e1f5ff
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_07.svg]]
 
 ### 🔄 Teorema General (n dimensiones)
 
@@ -969,23 +873,7 @@ graph TB
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Teorema de<br/>Fubini))
->     Versiones
->       Rectangular
->       Tipo I y II
->       Triple
->       General
->     Técnicas
->       Cambio orden
->       Simplificación
->       Verificación
->     Aplicaciones
->       Cálculo eficiente
->       Regiones complejas
->       Funciones separables
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_08.svg]]
 > 
 > **Progresión:**
 > 
@@ -999,17 +887,7 @@ graph TB
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Teorema de Fubini] --> B[Cambio de Variables]
->     B --> C[Jacobiano]
->     C --> D[Coordenadas Curvilíneas]
->     D --> E[Integrales de Superficie]
->     E --> F[Teoremas Integrales]
->     A -.-> G[Base para todo<br/>cálculo múltiple]
->     style A fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Teorema_de_Fubini_09.svg]]
 > 
 > **Conceptos que construyen sobre Fubini:**
 > 

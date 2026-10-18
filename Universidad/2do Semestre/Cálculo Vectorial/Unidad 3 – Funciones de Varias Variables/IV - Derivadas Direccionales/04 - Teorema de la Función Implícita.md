@@ -586,30 +586,7 @@ dg-publish: true
 
 ## 🎨 Diagrama Conceptual
 
-```mermaid
-graph TD
-    A[Teorema de la Función Implícita] --> B[Hipótesis]
-    A --> C[Conclusión]
-    A --> D[Aplicaciones]
-    
-    B --> B1[F de clase C¹]
-    B --> B2[F x₀,y₀ = 0]
-    B --> B3[∂F/∂y ≠ 0]
-    
-    C --> C1[Existe y = f x]
-    C --> C2[f es diferenciable]
-    C --> C3[dy/dx = -Fₓ/Fᵧ]
-    
-    D --> D1[Derivación implícita]
-    D --> D2[Optimización]
-    D --> D3[Geometría]
-    D --> D4[EDOs]
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style D fill:#f3e5f5
-```
+![[Diagramas/04_-_Teorema_de_la_Función_Implícita_01.svg]]
 
 ## 🧪 Ejercicios Resueltos
 

@@ -26,28 +26,7 @@ dg-publish: true
 > |**Aplicaciones**|Volúmenes, probabilidades, física|Resolver problemas reales|
 > |**Verificación**|Dos formas de calcular|Confirmar resultados|
 
-```mermaid
-graph TB
-    A[Integral Múltiple<br/>∬_R f x,y dA] --> B{Teorema de Fubini}
-    
-    B --> C[Método 1<br/>∫∫ f dy dx]
-    B --> D[Método 2<br/>∫∫ f dx dy]
-    
-    C --> E[Integrar respecto a y]
-    E --> F[Integrar respecto a x]
-    
-    D --> G[Integrar respecto a x]
-    G --> H[Integrar respecto a y]
-    
-    F --> I[Mismo Resultado]
-    H --> I
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style I fill:#f5e1ff
-```
+![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_01.svg]]
 
 ---
 
@@ -75,24 +54,7 @@ graph TB
 > 
 > **Interpretación visual:**
 > 
-> ```mermaid
-> graph LR
->     A[∬_R f x,y dA] --> B{Fubini}
->     B --> C[Fijar x<br/>Integrar en y]
->     C --> D[c ≤ y ≤ d]
->     D --> E[Resultado: g x]
->     E --> F[Integrar g x<br/>en a ≤ x ≤ b]
->     B --> G[Fijar y<br/>Integrar en x]
->     G --> H[a ≤ x ≤ b]
->     H --> I[Resultado: h y]
->     I --> J[Integrar h y<br/>en c ≤ y ≤ d]
->     F --> K[Mismo Valor Final]
->     J --> K
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style G fill:#ffe1e1
->     style K fill:#f5e1ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_02.svg]]
 
 ### 🔺 Extensión a Regiones No Rectangulares
 
@@ -114,21 +76,7 @@ graph TB
 > 
 > **Visualización de tipos:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Tipo I - Vertical"
->     A1[Para cada x fijo] --> A2[y varía entre<br/>g₁ x y g₂ x]
->     A2 --> A3[Curvas: y=g x]
->     end
->     subgraph "Tipo II - Horizontal"
->     B1[Para cada y fijo] --> B2[x varía entre<br/>h₁ y y h₂ y]
->     B2 --> B3[Curvas: x=h y]
->     end
->     style A1 fill:#e1ffe1
->     style A3 fill:#e1ffe1
->     style B1 fill:#ffe1e1
->     style B3 fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_03.svg]]
 > 
 > **Comparación visual:**
 > 
@@ -163,28 +111,7 @@ graph TB
 > |$dx , dy , dz$|$\int_a^b \ldots dx$|$\int_c^d \ldots dy$|$\int_p^q \ldots dz$|
 > |$dy , dx , dz$|$\int_c^d \ldots dy$|$\int_a^b \ldots dx$|$\int_p^q \ldots dz$|
 
-```mermaid
-graph TD
-    A[∭_V f dV] --> B[6 órdenes posibles]
-    
-    B --> C1[dz dy dx]
-    B --> C2[dz dx dy]
-    B --> C3[dy dz dx]
-    B --> C4[dy dx dz]
-    B --> C5[dx dy dz]
-    B --> C6[dx dz dy]
-    
-    C1 --> D[Todos dan el<br/>mismo resultado]
-    C2 --> D
-    C3 --> D
-    C4 --> D
-    C5 --> D
-    C6 --> D
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style D fill:#e1ffe1
-```
+![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_04.svg]]
 
 ---
 
@@ -200,23 +127,7 @@ graph TD
 > 
 > **Proceso visual:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Sólido 3D] --> B[Cortar en<br/>rebanadas]
->     B --> C1[Rebanada x=x₁]
->     B --> C2[Rebanada x=x₂]
->     B --> C3[Rebanada x=x₃]
->     C1 --> D1[Área A x₁]
->     C2 --> D2[Área A x₂]
->     C3 --> D3[Área A x₃]
->     D1 --> E[Integrar áreas<br/>∫ A x dx]
->     D2 --> E
->     D3 --> E
->     E --> F[Volumen Total]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_05.svg]]
 > 
 > **Dos formas de cortar:**
 > 
@@ -262,20 +173,7 @@ graph TD
 > 
 > $$\int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y) , dy , dx$$
 > 
-> ```mermaid
-> flowchart TD
->     A[Leer de adentro<br/>hacia afuera] --> B[Integral interna]
->     B --> C[∫ dy: Integrar<br/>respecto a y]
->     C --> D[Límites: g₁ x a g₂ x<br/>dependen de x]
->     D --> E[Resultado: función de x]
->     E --> F[Integral externa]
->     F --> G[∫ dx: Integrar<br/>respecto a x]
->     G --> H[Límites: a a b<br/>constantes]
->     H --> I[Resultado: número]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_06.svg]]
 > 
 > **Ejemplos de límites:**
 > 
@@ -311,20 +209,7 @@ graph TD
 > 
 > **Procedimiento completo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral original] --> B[Paso 1:<br/>Dibujar región R]
->     B --> C[Paso 2:<br/>Identificar límites actuales]
->     C --> D[Paso 3:<br/>Identificar vértices/fronteras]
->     D --> E[Paso 4:<br/>Expresar región en nuevo orden]
->     E --> F[Paso 5:<br/>Escribir nuevos límites]
->     F --> G[Paso 6:<br/>Verificar con punto de prueba]
->     G --> H[Nueva integral]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style E fill:#ffe1f5
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_07.svg]]
 > 
 > **Paso 1: Identificar la región actual**
 > 
@@ -497,20 +382,7 @@ graph TD
 > 
 > **Árbol de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A{¿Puedes integrar<br/>fácilmente?} -->|Sí| B[No cambiar]
->     A -->|No| C{¿Existe la<br/>antiderivada?}
->     C -->|No| D[✅ Cambiar orden]
->     C -->|Sí, pero difícil| E{¿Límites<br/>complicados?}
->     E -->|Sí| D
->     E -->|No| F{¿Región<br/>dividida?}
->     F -->|Sí| D
->     F -->|No| G[Proceder con<br/>orden actual]
->     style D fill:#e1ffe1
->     style B fill:#e1f5ff
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_08.svg]]
 
 ---
 
@@ -851,34 +723,7 @@ graph TD
 
 ### Mapa Mental del Teorema
 
-```mermaid
-mindmap
-  root((Teorema de<br/>Fubini))
-    Enunciado
-      Integral doble ↔ Iteradas
-      Igualdad de órdenes
-      6 órdenes en 3D
-    Aplicaciones
-      Cálculo de áreas
-      Cálculo de volúmenes
-      Integrales imposibles
-      Simplificación
-    Cambio de Orden
-      Dibujar región
-      Identificar tipo
-      Nuevos límites
-      Verificar
-    Coordenadas
-      Cartesianas
-      Polares
-      Cilíndricas
-      Esféricas
-    Condiciones
-      Continuidad
-      Integrabilidad
-      Región medible
-      Fubini-Tonelli
-```
+![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_09.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -904,43 +749,7 @@ mindmap
 
 ### Diagrama de Flujo Maestro
 
-```mermaid
-flowchart TD
-    A[Problema: ∬_R f dA] --> B{¿Región<br/>rectangular?}
-    
-    B -->|Sí| C[Ambos órdenes<br/>igualmente fáciles]
-    B -->|No| D{¿Tipo I o II?}
-    
-    D -->|Tipo I| E[dy dx natural]
-    D -->|Tipo II| F[dx dy natural]
-    D -->|Ambos| G{¿Cuál integral<br/>más fácil?}
-    
-    G --> E
-    G --> F
-    
-    E --> H{¿Integración<br/>posible?}
-    F --> I{¿Integración<br/>posible?}
-    
-    H -->|Sí| J[Evaluar]
-    H -->|No| K[Cambiar a dx dy]
-    
-    I -->|Sí| J
-    I -->|No| L[Cambiar a dy dx]
-    
-    K --> M[Redibujar como Tipo II]
-    L --> N[Redibujar como Tipo I]
-    
-    M --> J
-    N --> J
-    
-    J --> O[Resultado]
-    
-    style A fill:#e1f5ff
-    style J fill:#e1ffe1
-    style O fill:#f5e1ff
-    style K fill:#ffe1e1
-    style L fill:#ffe1e1
-```
+![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_10.svg]]
 
 ---
 
@@ -1063,23 +872,7 @@ flowchart TD
 > 
 > **Teorema de Fubini como base para:**
 > 
-> ```mermaid
-> graph LR
->     A[Teorema de<br/>Fubini] --> B[Cambio de<br/>Variables]
->     A --> C[Integrales de<br/>Superficie]
->     A --> D[Teorema de<br/>Green]
->     B --> E[Jacobiano generalizado]
->     C --> F[Parametrizaciones]
->     D --> G[Circulación y flujo]
->     E --> H[Transformaciones<br/>no lineales]
->     F --> I[Stokes]
->     G --> I
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
->     style I fill:#f5e1ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_Fubini_para_integrales_múltiples_11.svg]]
 > 
 > |Concepto Actual|Siguiente Paso|Conexión|
 > |---|---|---|

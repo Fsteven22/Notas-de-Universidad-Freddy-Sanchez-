@@ -26,25 +26,7 @@ dg-publish: true
 > |**Laplaciano**|Curvatura del campo|Ecuación del calor|
 > |**Operaciones combinadas**|Identidades vectoriales complejas|Electromagnetismo|
 
-```mermaid
-graph TB
-    A[Operador Nabla ∇] --> B[Sobre Campos Escalares]
-    A --> C[Sobre Campos Vectoriales]
-    
-    B --> D[Gradiente ∇f<br/>Vector]
-    
-    C --> E[Divergencia ∇·F<br/>Escalar]
-    C --> F[Rotacional ∇×F<br/>Vector]
-    
-    D --> G[Laplaciano ∇²f<br/>∇·∇f]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style E fill:#f0e1ff
-    style F fill:#e1f5ff
-```
+![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_01.svg]]
 
 ---
 
@@ -70,15 +52,7 @@ graph TB
 > 
 > **Naturaleza dual del operador:**
 > 
-> ```mermaid
-> graph LR
->     A[∇ como vector] --> B[Tiene componentes<br/>i, j, k]
->     A --> C[Tiene dirección<br/>y magnitud]
->     D[∇ como operador] --> E[Actúa sobre funciones]
->     D --> F[Produce derivadas]
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_02.svg]]
 > 
 > **Ejemplo conceptual:**
 > 
@@ -129,19 +103,7 @@ graph TB
 > 
 > **Flujo de transformaciones:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Campo Escalar f] -->|∇| B[Campo Vectorial ∇f]
->     B -->|∇·| C[Campo Escalar ∇·∇f]
->     B -->|∇×| D[Campo Vectorial ∇×∇f=0]
->     E[Campo Vectorial F̄] -->|∇·| F[Campo Escalar ∇·F̄]
->     E -->|∇×| G[Campo Vectorial ∇×F̄]
->     G -->|∇·| H[Escalar: ∇·∇×F̄=0]
->     style A fill:#e1ffe1
->     style E fill:#fff4e1
->     style C fill:#ffe1e1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_03.svg]]
 
 ---
 
@@ -198,17 +160,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Linealidad de ∇] --> B[Suma]
->     A --> C[Producto por escalar]
->     B --> D[∇f + g = ∇f + ∇g]
->     C --> E[∇cf = c∇f]
->     D --> F[Válido para ∇, ∇·, ∇×]
->     E --> F
->     style A fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_04.svg]]
 
 ### 🎯 Regla del Producto
 
@@ -276,17 +228,7 @@ graph TB
 > |**Div. de producto**|∇·(fF̄) = (∇f)·F̄ + f(∇·F̄)|(fg)' = f'g + fg'|
 > |**Rot. de producto**|∇×(fF̄) = (∇f)×F̄ + f(∇×F̄)|(fg)' = f'g + fg'|
 > 
-> ```mermaid
-> graph TB
->     A[Regla del Producto] --> B[∇ actúa sobre producto]
->     B --> C[Término 1:<br/>∇ en primer factor]
->     B --> D[Término 2:<br/>∇ en segundo factor]
->     C --> E[Mantiene segundo factor]
->     D --> F[Mantiene primer factor]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_05.svg]]
 
 ---
 
@@ -356,17 +298,7 @@ graph TB
 > 
 > **Diagrama conceptual:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Escalar f] -->|∇| B[∇f<br/>Vector Conservativo]
->     B -->|∇×| C[∇×∇f = 0̄<br/>SIEMPRE CERO]
->     D[Campo Vectorial F̄] -->|∇×| E[∇×F̄<br/>Vector Solenoidal]
->     E -->|∇·| F[∇·∇×F̄ = 0<br/>SIEMPRE CERO]
->     style C fill:#ffe1e1
->     style F fill:#ffe1e1
->     style B fill:#e1ffe1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_06.svg]]
 > 
 > **Tabla de identidades cero:**
 > 
@@ -431,18 +363,7 @@ graph TB
 > |**BAC-CAB**|∇×(∇×F̄) = ∇(∇·F̄) - ∇²F̄|Ecuaciones de ondas|
 > |**Grad. producto**|∇(F̄·Ḡ) = (F̄·∇)Ḡ + (Ḡ·∇)F̄ + F̄×(∇×Ḡ) + Ḡ×(∇×F̄)|Energía cinética|
 > 
-> ```mermaid
-> graph TB
->     A[Identidades con Productos] --> B[Productos Punto]
->     A --> C[Productos Cruz]
->     B --> D[∇·fF̄<br/>∇f·Ḡ]
->     C --> E[∇×fF̄<br/>∇·F̄×Ḡ]
->     D --> F[Fórmula de Leibniz]
->     E --> G[Identidad BAC-CAB]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_07.svg]]
 
 ---
 
@@ -514,31 +435,7 @@ graph TB
 > 
 > **Ecuaciones importantes que usan ∇²:**
 > 
-> ```mermaid
-> graph TB
->     A[Laplaciano ∇²] --> B[Ecuación de Laplace<br/>∇²φ = 0]
->     A --> C[Ecuación de Poisson<br/>∇²φ = ρ]
->     A --> D[Ecuación del Calor<br/>∂u/∂t = k∇²u]
->     A --> E[Ecuación de Ondas<br/>∂²u/∂t² = c²∇²u]
->     A --> F[Ecuación de Schrödinger<br/>iℏ∂ψ/∂t = -ℏ²/2m∇²ψ + Vψ]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ````
-
-### 🌊 Laplaciano Vectorial
-
-> [!tip] 🔀 Extensión a Campos Vectoriales
-> **Definición del Laplaciano vectorial:**
-> Para un campo vectorial F̄ = (Fx, Fy, Fz):
-> $$\nabla^2 \mathbf{F} = \left(\nabla^2 F_x, \nabla^2 F_y, \nabla^2 F_z\right)$$
-> Es decir, **se aplica el Laplaciano escalar a cada componente**.
-> **Identidad fundamental (ya vista):**
-> $$\nabla^2 \mathbf{F} = \nabla(\nabla \cdot \mathbf{F}) - \nabla \times (\nabla \times \mathbf{F})$$
-> **Demostración de la identidad:**
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_08.svg]]
 > Partimos de la identidad BAC-CAB:
 > ∇×(∇×F̄) = ∇(∇·F̄) - ∇²F̄
 > 
@@ -595,22 +492,7 @@ graph TB
 > 
 > Las propiedades del operador nabla son **fundamentales** para los teoremas que relacionan integrales de línea, superficie y volumen.
 > 
-> ```mermaid
-> graph TB
->     A[Teorema Fundamental<br/>del Cálculo 1D] --> B[Teorema Fundamental<br/>para Gradientes]
->     A --> C[Teorema de Green]
->     A --> D[Teorema de Stokes]
->     A --> E[Teorema de Gauss]
->     B -.->|∇f| F[Integrales de Línea]
->     C -.->|∇×F̄| F
->     D -.->|∇×F̄| G[Integrales de Superficie]
->     E -.->|∇·F̄| H[Integrales de Volumen]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_09.svg]]
 > 
 > **Teorema 1: Fundamental del Cálculo para Gradientes**
 > 
@@ -666,19 +548,7 @@ graph TB
 > 
 > **Preparación para integrales de línea:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Campo F̄] --> B{¿∇×F̄ = 0̄?}
->     B -->|Sí| C[Campo Conservativo]
->     B -->|No| D[Campo No Conservativo]
->     C --> E[Buscar f: ∇f = F̄]
->     E --> F[∫C F̄·dr̄ = f(B) - f(A)]
->     D --> G[Parametrizar curva]
->     G --> H[∫C F̄·dr̄ = ∫ab F̄r̄' dt]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_10.svg]]
 
 ---
 
@@ -893,25 +763,7 @@ graph TB
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Operador<br/>Nabla))
->     Operaciones
->       Gradiente ∇f
->       Divergencia ∇·F̄
->       Rotacional ∇×F̄
->       Laplaciano ∇²f
->     Identidades
->       ∇×∇f = 0̄
->       ∇·∇×F̄ = 0
->       BAC-CAB
->       Reglas producto
->     Aplicaciones
->       Campos conservativos
->       Campos solenoidales
->       Funciones armónicas
->       Criterios de integrabilidad
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_11.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -932,20 +784,7 @@ graph TB
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Operador Nabla] --> B[Integrales de Línea]
->     B --> C[Teorema de Green]
->     C --> D[Integrales de Superficie]
->     D --> E[Teorema de Stokes]
->     E --> F[Teorema de Gauss]
->     A -.-> G[Campos Conservativos<br/>∇×F̄=0̄]
->     G -.-> B
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_12.svg]]
 > 
 > **Preguntas que podrás responder pronto:**
 > 

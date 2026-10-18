@@ -30,28 +30,7 @@ dg-publish: true
 > 
 > En el extremo, el gradiente de f es **paralelo** al gradiente de g: $$\nabla f = \lambda \nabla g$$
 
-```mermaid
-graph TB
-    A[Problema de Optimización<br/>con Restricción] 
-    
-    A --> B["Función Objetivo<br/>f(x,y) - Optimizar"]
-    A --> C["Restricción<br/>g(x,y) = c"]
-    
-    B --> D[Método de Lagrange<br/>∇f = λ∇g]
-    C --> D
-    
-    D --> E[Sistema de Ecuaciones]
-    
-    E --> F[Puntos Candidatos]
-    
-    F --> G[Evaluar f en candidatos]
-    
-    G --> H[Extremo Óptimo]
-    
-    style A fill:#e1f5ff
-    style D fill:#fff5e1
-    style H fill:#e1ffe1
-```
+![[Diagramas/01_-_Multiplicaciones_de_Lagrange_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Multiplicadores de Lagrange?
 > 
@@ -723,31 +702,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Multiplicadores<br/>de Lagrange))
-    Concepto
-      Optimización con restricciones
-      Gradientes paralelos
-      ∇f = λ∇g
-    Método
-      Sistema de ecuaciones
-      3 ec., 3 inc. (2D)
-      Resolver y evaluar
-    Lambda λ
-      Multiplicador
-      Sensibilidad
-      df/dc aproximado
-    Aplicaciones
-      Economía
-      Diseño óptimo
-      Geometría
-      Física
-    Extensiones
-      3+ variables
-      Múltiples restricciones
-      Varios λᵢ
-```
+![[Diagramas/01_-_Multiplicaciones_de_Lagrange_02.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

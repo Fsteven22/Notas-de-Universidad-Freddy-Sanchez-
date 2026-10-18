@@ -20,25 +20,7 @@ dg-publish: true
 > |**Cálculo eficiente**|Reduce la complejidad computacional|Integrales múltiples complejas|
 > |**Modelado físico**|Representa mejor ciertos fenómenos|Campos gravitacionales, ondas|
 
-```mermaid
-graph TB
-    A[Integral Compleja<br/>en x, y] --> B{¿Sistema más<br/>conveniente?}
-    B -->|Simetría circular| C[Coordenadas<br/>Polares r, θ]
-    B -->|Región elíptica| D[Coordenadas<br/>Elípticas]
-    B -->|Transformación<br/>lineal| E[Cambio de<br/>Variables General]
-    
-    C --> F[Integral Simplificada]
-    D --> F
-    E --> F
-    
-    F --> G[Factor de<br/>Corrección: Jacobiano]
-    G --> H[Resultado Final]
-    
-    style A fill:#ffe1e1
-    style F fill:#e1ffe1
-    style G fill:#fff4e1
-    style H fill:#e1f5ff
-```
+![[Diagramas/03_–_Teorema_de_cambio_de_variables_01.svg]]
 
 ---
 
@@ -63,16 +45,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Región S<br/>en plano uv] -->|Transformación T| B[Región R<br/>en plano xy]
->     A -.->|u = constante| C[Líneas verticales]
->     A -.->|v = constante| D[Líneas horizontales]
->     B -.->|x = x u,v| E[Curvas en xy]
->     B -.->|y = y u,v| F[Curvas en xy]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_02.svg]]
 > 
 > **Ejemplos de transformaciones comunes:**
 > 
@@ -85,18 +58,7 @@ graph TB
 > 
 > **Visualización de coordenadas polares:**
 > 
-> ```mermaid
-> graph TD
->     subgraph "Plano uv (r, θ)"
->     A[Rectángulo<br/>0 ≤ r ≤ R<br/>0 ≤ θ ≤ 2π]
->     end
->     subgraph "Plano xy"
->     B[Círculo<br/>x² + y² ≤ R²]
->     end
->     A -->|x = r cos θ<br/>y = r sen θ| B
->     style A fill:#fff4e1
->     style B fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_03.svg]]
 
 ### 📐 El Jacobiano
 
@@ -125,20 +87,7 @@ graph TB
 > 
 > **Flujo conceptual:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Elemento diferencial<br/>du dv en S] --> B[Transformación T]
->     B --> C{Jacobiano J}
->     C -->|J > 1| D[Área expandida<br/>|J| du dv]
->     C -->|J < 1| E[Área contraída<br/>|J| du dv]
->     C -->|J = 1| F[Área preservada<br/>du dv]
->     D --> G[Elemento en R]
->     E --> G
->     F --> G
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_04.svg]]
 > 
 > **Cálculo del Jacobiano - Ejemplos:**
 > 
@@ -200,21 +149,7 @@ graph TB
 > 
 > **Componentes del teorema:**
 > 
-> ```mermaid
-> graph TD
->     A[Integral Original<br/>∬_R f x,y dA] --> B[Cambio de Variables]
->     B --> C[Función transformada<br/>f g u,v , h u,v]
->     B --> D[Jacobiano<br/>|∂ x,y /∂ u,v|]
->     B --> E[Nuevos diferenciales<br/>du dv]
->     B --> F[Nueva región<br/>S en plano uv]
->     C --> G[Integral Transformada<br/>∬_S ... |J| du dv]
->     D --> G
->     E --> G
->     F --> G
->     style A fill:#ffe1e1
->     style G fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_05.svg]]
 > 
 > **Condiciones del teorema:**
 > 
@@ -227,24 +162,7 @@ graph TB
 > 
 > **Interpretación visual:**
 > 
-> ```mermaid
-> graph LR
->     subgraph "Paso 1: Región Original"
->     A[Región R complicada<br/>en plano xy]
->     end
->     subgraph "Paso 2: Transformación"
->     B[Mapeo T<br/>con Jacobiano J]
->     end
->     subgraph "Paso 3: Región Transformada"
->     C[Región S simple<br/>en plano uv]
->     end
->     A -->|Difícil de integrar| B
->     B -->|Simplifica| C
->     C -->|Integral con |J|| D[Resultado]
->     style A fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_06.svg]]
 
 ### 🎯 Aplicación Práctica del Teorema
 
@@ -252,25 +170,7 @@ graph TB
 > 
 > **Algoritmo general:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Inicio: Integral ∬_R f x,y dA] --> B[Paso 1:<br/>Identificar transformación adecuada]
->     B --> C{¿Tipo de región?}
->     C -->|Circular| D[Usar polares]
->     C -->|Elíptica| E[Usar escalado]
->     C -->|Otra| F[Definir T personalizada]
->     D --> G[Paso 2:<br/>Escribir x u,v , y u,v]
->     E --> G
->     F --> G
->     G --> H[Paso 3:<br/>Calcular Jacobiano]
->     H --> I[Paso 4:<br/>Determinar región S]
->     I --> J[Paso 5:<br/>Sustituir en integral]
->     J --> K[Paso 6:<br/>Integrar respecto a u, v]
->     K --> L[Resultado Final]
->     style A fill:#e1f5ff
->     style H fill:#fff4e1
->     style L fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_07.svg]]
 > 
 > **Tabla de decisión para elegir transformación:**
 > 
@@ -323,24 +223,7 @@ graph TB
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Plano xy"
->     A[Círculo<br/>x² + y² ≤ 4]
->     end
->     subgraph "Transformación"
->     B[Coordenadas Polares<br/>J = r]
->     end
->     subgraph "Plano r-θ"
->     C[Rectángulo<br/>0 ≤ r ≤ 2<br/>0 ≤ θ ≤ 2π]
->     end
->     A -->|Complejo| B
->     B -->|Simplifica| C
->     C -->|Integrar r³| D[Resultado: 8π]
->     style A fill:#ffe1e1
->     style C fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_08.svg]]
 
 ---
 
@@ -365,18 +248,7 @@ graph TB
 > 
 > **Representación visual:**
 > 
-> ```mermaid
-> graph TD
->     A[Punto P x,y = r,θ] --> B[Componente x<br/>x = r cos θ]
->     A --> C[Componente y<br/>y = r sen θ]
->     B --> D[Proyección sobre eje x]
->     C --> E[Proyección sobre eje y]
->     F[Origen O] -.->|distancia r| A
->     G[Eje x positivo] -.->|ángulo θ| A
->     style A fill:#e1f5ff
->     style F fill:#fff4e1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_09.svg]]
 > 
 > **Propiedades clave:**
 > 
@@ -427,18 +299,7 @@ graph TB
 > 
 > **Interpretación geométrica del factor r:**
 > 
-> ```mermaid
-> graph TD
->     A[Elemento rectangular<br/>dr × dθ en plano r-θ] --> B{Transformación<br/>a xy}
->     B --> C[Lado radial:<br/>dr permanece dr]
->     B --> D[Lado angular:<br/>dθ se convierte en r dθ]
->     C --> E[Elemento en xy:<br/>dr × r dθ]
->     D --> E
->     E --> F[Área = r dr dθ]
->     style A fill:#fff4e1
->     style E fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_10.svg]]
 > 
 > **¿Por qué el factor r?**
 > 
@@ -473,20 +334,7 @@ graph TB
 > 
 > **Señales de que polares simplifican el problema:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral ∬_R f x,y dA] --> B{¿Qué características tiene?}
->     B -->|Región circular| C[✅ Usar Polares]
->     B -->|Función con x²+y²| D[✅ Usar Polares]
->     B -->|Simetría radial| E[✅ Usar Polares]
->     B -->|Límites complejos en xy| F{¿Simples en polares?}
->     F -->|Sí| C
->     F -->|No| G[❌ Mantener cartesianas]
->     C --> H[Convertir a<br/>∬_S ... r dr dθ]
->     style C fill:#e1ffe1
->     style G fill:#ffe1e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_11.svg]]
 > 
 > **Lista de verificación:**
 > 
@@ -563,22 +411,7 @@ graph TB
 > 
 > **Transformación para elipses:**
 > 
-> ```mermaid
-> graph LR
->     subgraph "Plano xy"
->     A[Elipse<br/> x/a ² + y/b ² ≤ 1]
->     end
->     subgraph "Transformación"
->     B[x = au<br/>y = bv<br/>J = ab]
->     end
->     subgraph "Plano uv"
->     C[Círculo<br/>u² + v² ≤ 1]
->     end
->     A -->|Complicado| B
->     B -->|Simplifica| C
->     style A fill:#ffe1e1
-> style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_12.svg]]
 > 
 > 
 > 
@@ -602,21 +435,7 @@ graph TB
 > 
 > **Estrategia para crear transformaciones:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Analizar región R] --> B{¿Qué simplificaría R?}
->     B --> C[Identificar bordes<br/>de la región]
->     C --> D[Hacer que bordes<br/>sean u o v constantes]
->     D --> E[Proponer<br/>x = g u,v<br/>y = h u,v]
->     E --> F[Verificar que R<br/>se vuelve rectangular]
->     F --> G{¿Funciona?}
->     G -->|No| E
->     G -->|Sí| H[Calcular Jacobiano]
->     H --> I[Aplicar transformación]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_13.svg]]
 > 
 > **Ejemplo: Región entre parábolas**
 > 
@@ -671,33 +490,7 @@ graph TB
 
 > [!tip] 🧭 Guía Completa para Elegir Método
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral Doble<br/>∬_R f x,y dA] --> B{¿Forma de R?}
->     B -->|Rectangular| C[Coordenadas<br/>Cartesianas]
->     B -->|Circular/Anular| D[Coordenadas<br/>Polares]
->     B -->|Elíptica| E[Escalado<br/>x=au, y=bv]
->     B -->|Entre curvas| F[Transformación<br/>personalizada]
->     C --> G{¿f x,y simple?}
->     G -->|Sí| H[Integrar directamente]
->     G -->|No| I[Considerar cambio]
->     D --> J[Convertir a polares<br/>J = r]
->     E --> K[Jacobiano J = ab]
->     F --> L[Diseñar T<br/>calcular J]
->     J --> M[Establecer límites<br/>en r, θ]
->     K --> N[Región → círculo]
->     L --> O[Simplificar límites]
->     M --> P[Integrar]
->     N --> P
->     O --> P
->     H --> P
->     P --> Q[Resultado]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
->     style E fill:#fff4e1
->     style F fill:#ffe1e1
->     style Q fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_14.svg]]
 > 
 > **Tabla de decisión rápida:**
 > 
@@ -718,25 +511,7 @@ graph TB
 > 
 > **Protocolo completo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[1. Analizar región R] --> B[2. Identificar simetrías]
->     B --> C[3. Elegir transformación T]
->     C --> D[4. Escribir x u,v, y u,v]
->     D --> E[5. Calcular Jacobiano]
->     E --> F[6. Determinar región S]
->     F --> G[7. Transformar f x,y]
->     G --> H[8. Establecer límites]
->     H --> I[9. Integrar en orden]
->     I --> J[10. Verificar resultado]
->     K[⚠️ Verificar J ≠ 0] -.-> E
->     L[⚠️ Dibujar S] -.-> F
->     M[⚠️ Revisar unidades] -.-> J
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style I fill:#ffe1e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_15.svg]]
 > 
 > **Checklist detallado:**
 > 
@@ -820,15 +595,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Círculo en xy<br/>x² + y² ≤ 9] -->|Polares| B[Rectángulo en r-θ<br/>0 ≤ r ≤ 3<br/>0 ≤ θ ≤ 2π]
->     B --> C[Integrar r<br/>∫₀³ r dr = 9/2]
->     C --> D[Integrar θ<br/>∫₀^2π 9/2 dθ = 9π]
->     style A fill:#ffe1e1
->     style B fill:#e1ffe1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_16.svg]]
 
 ### 📝 Ejemplo 2: Función con x² + y²
 
@@ -969,20 +736,7 @@ graph TB
 > 
 > **Diagrama de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Antes de integrar] --> B{¿Incluí |J|?}
->     B -->|No| C[❌ ERROR<br/>Resultado incorrecto]
->     B -->|Sí| D{¿Límites correctos?}
->     D -->|No| E[❌ ERROR<br/>Región incorrecta]
->     D -->|Sí| F{¿f transformada?}
->     F -->|No| G[❌ ERROR<br/>Función incorrecta]
->     F -->|Sí| H[✅ Correcto<br/>Proceder]
->     style C fill:#ffe1e1
->     style E fill:#ffe1e1
->     style G fill:#ffe1e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_17.svg]]
 
 ### ✅ Buenas Prácticas
 
@@ -990,21 +744,7 @@ graph TB
 > 
 > **Lista de verificación:**
 > 
-> ```mermaid
-> graph TD
->     A[Inicio] --> B[✓ Dibujar región R]
->     B --> C[✓ Identificar simetrías]
->     C --> D[✓ Elegir T apropiada]
->     D --> E[✓ Calcular J correctamente]
->     E --> F[✓ Dibujar región S]
->     F --> G[✓ Escribir integral completa]
->     G --> H[✓ Verificar límites]
->     H --> I[✓ Integrar cuidadosamente]
->     I --> J[✓ Verificar dimensiones]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_18.svg]]
 > 
 > **Principios fundamentales:**
 > 
@@ -1094,26 +834,7 @@ graph TB
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Cambio de<br/>Variables))
->     Concepto
->       Transformaciones
->       Jacobiano
->       Regiones
->     Polares
->       Definición
->       J = r
->       Aplicaciones
->     Otras
->       Lineales
->       Escalado
->       Personalizadas
->     Estrategias
->       Cuándo usar
->       Cómo elegir
->       Verificación
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_19.svg]]
 > 
 > **Progresión natural:**
 > 
@@ -1128,21 +849,7 @@ graph TB
 > 
 > **Roadmap conceptual:**
 > 
-> ```mermaid
-> graph LR
->     A[Integrales Dobles<br/>Cartesianas] --> B[Cambio de Variables<br/>2D]
->     B --> C[IntegralesTriples<br/>Cartesianas]
-> C --> D[Coordenadas<br/>Cilíndricas]
-> C --> E[Coordenadas<br/>Esféricas]
-> D --> F[Aplicaciones<br/>Físicas]
-> E --> F
-> F --> G[Campos<br/>Vectoriales]
-> G --> H[Teoremas<br/>Fundamentales]
-> style B fill:#e1ffe1
-> style C fill:#fff4e1
-> style F fill:#e1f5ff
-> style H fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Teorema_de_cambio_de_variables_20.svg]]
 > 
 > ```
 > 
@@ -1161,37 +868,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual Completo
 
-```mermaid
-graph TB
-    A[Teorema de Cambio<br/>de Variables] --> B[Componentes]
-    A --> C[Transformaciones]
-    A --> D[Aplicaciones]
-    
-    B --> B1[Transformación T]
-    B --> B2[Jacobiano J]
-    B --> B3[Región S]
-    
-    C --> C1[Polares<br/>J = r]
-    C --> C2[Lineales<br/>J = ad - bc]
-    C --> C3[Personalizadas<br/>J = calculado]
-    
-    D --> D1[Simplificar límites]
-    D --> D2[Aprovechar simetría]
-    D --> D3[Facilitar cálculo]
-    
-    B1 --> E[x = g u,v<br/>y = h u,v]
-    B2 --> F[∂ x,y /∂ u,v]
-    B3 --> G[Dominio en uv]
-    
-    C1 --> H[Círculos<br/>Anillos<br/>Sectores]
-    C2 --> I[Elipses<br/>Paralelogramos]
-    C3 --> J[Regiones<br/>especiales]
-    
-    style A fill:#e1f5ff
-    style B2 fill:#fff4e1
-    style C1 fill:#e1ffe1
-    style D fill:#ffe1e1
-```
+![[Diagramas/03_–_Teorema_de_cambio_de_variables_21.svg]]
 
 ### 📋 Tabla Resumen
 

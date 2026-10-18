@@ -27,22 +27,7 @@ dg-publish: true
 > |**Promedios**|Valores promedio sobre superficies|Temperatura promedio|
 > |**Flujo**|Cantidad que pasa por una superficie|Flujo de calor, fluido|
 
-```mermaid
-graph TB
-    A["Función escalar f(x,y,z)"] --> B[Definida sobre superficie S]
-    B --> C[Multiplicar por elemento de área dS]
-    C --> D[Sumar sobre toda la superficie]
-    D --> E[Resultado: número real]
-    
-    F[Aplicaciones] --> G[Masa de lámina]
-    F --> H[Centro de masa]
-    F --> I[Momento de inercia]
-    F --> J[Valor promedio]
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style F fill:#fff4e1
-```
+![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_01.svg]]
 
 ---
 
@@ -64,17 +49,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Superficie S] --> B[Dividir en elementos pequeños ΔS]
->     B --> C[Evaluar f en cada elemento]
->     C --> D[f(x,y,z) · ΔS]
->     D --> E[Sumar todos los productos]
->     E --> F[Límite cuando ΔS → 0]
->     F --> G[∬_S f dS]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_02.svg]]
 > 
 > **Comparación con otras integrales:**
 > 
@@ -115,21 +90,7 @@ graph TB
 > 
 > **Proceso de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Superficie z = g(x,y)] --> B[1. Sustituir z en f]
->     B --> C[f(x,y,z) → f(x,y,g(x,y))]
->     C --> D[2. Calcular derivadas parciales]
->     D --> E[∂g/∂x, ∂g/∂y]
->     E --> F[3. Calcular factor de área]
->     F --> G[√(1 + g_x² + g_y²)]
->     G --> H[4. Plantear integral doble]
->     H --> I[∬_D f(x,y,g(x,y))·√(...)dA]
->     I --> J[5. Integrar sobre D]
->     style A fill:#e1f5ff
->     style I fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_03.svg]]
 > 
 > **Ejemplo 1: Plano con densidad constante**
 > 
@@ -246,21 +207,7 @@ graph TB
 > 
 > **Proceso detallado:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Parametrización r(u,v)] --> B[1. Calcular vectores tangentes]
->     B --> C[r_u = ∂r/∂u<br/>r_v = ∂r/∂v]
->     C --> D[2. Producto cruz]
->     D --> E[r_u × r_v = ⟨A, B, C⟩]
->     E --> F[3. Magnitud]
->     F --> G[|r_u × r_v| = √(A² + B² + C²)]
->     G --> H[4. Sustituir en f]
->     H --> I[f(x(u,v), y(u,v), z(u,v))]
->     I --> J[5. Integrar]
->     J --> K[∬_D f·|r_u × r_v| du dv]
->     style A fill:#e1f5ff
->     style K fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_04.svg]]
 > 
 > **Ejemplo 1: Cilindro con densidad**
 > 
@@ -377,23 +324,7 @@ graph TB
 > 
 > $$\bar{x} = \frac{M_{yz}}{m}, \quad \bar{y} = \frac{M_{xz}}{m}, \quad \bar{z} = \frac{M_{xy}}{m}$$
 > 
-> ```mermaid
-> graph TB
->     A[Lámina con densidad δ(x,y,z)] --> B[Calcular masa total]
->     B --> C[m = ∬_S δ dS]
->     A --> D[Calcular momentos]
->     D --> E[M_yz = ∬_S xδ dS]
->     D --> F[M_xz = ∬_S yδ dS]
->     D --> G[M_xy = ∬_S zδ dS]
->     C --> H[Centro de masa]
->     E --> H
->     F --> H
->     G --> H
->     H --> I[x̄ = M_yz/m<br/>ȳ = M_xz/m<br/>z̄ = M_xy/m]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_05.svg]]
 > 
 > **Ejemplo: Hemisferio con densidad constante**
 > 
@@ -627,20 +558,7 @@ graph TB
 > 
 > **Árbol de decisión:**
 > 
-> ```mermaid
-> graph TD
->     A[Superficie S] --> B{¿Forma?}
->     B -->|z = g(x,y)| C[Usar fórmula directa]
->     B -->|Ecuación implícita| D[Parametrizar]
->     B -->|Ya parametrizada| E[Usar r(u,v)]
->     D --> F{¿Simetría?}
->     F -->|Circular/Cilíndrica| G[Coord. cilíndricas]
->     F -->|Esférica| H[Coord. esféricas]
->     F -->|Ninguna| I[Parametrización general]
->     style C fill:#e1ffe1
->     style G fill:#fff4e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_06.svg]]
 
 ---
 
@@ -678,30 +596,7 @@ graph TB
 
 > [!tip] 🗺️ Guía Completa
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema: ∬_S f dS] --> B[1. Identificar superficie S]
->     B --> C[2. Elegir representación]
->     C --> D{¿Tipo?}
->     D -->|Explícita| E[z = g(x,y)]
->     D -->|Paramétrica| F[r(u,v)]
->     E --> G[Calcular g_x, g_y]
->     F --> H[Calcular r_u, r_v]
->     G --> I[dS = √(1+g_x²+g_y²) dA]
->     H --> J[dS = |r_u × r_v| du dv]
->     I --> K[3. Sustituir f en parámetros]
->     J --> K
->     K --> L[4. Elegir coordenadas]
->     L --> M{¿Simetría?}
->     M -->|Circular| N[Polares]
->     M -->|Rectangular| O[Cartesianas]
->     N --> P[5. Plantear y calcular integral]
->     O --> P
->     P --> Q[6. Evaluar e interpretar]
->     style A fill:#e1f5ff
->     style P fill:#fff4e1
->     style Q fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Integral_de_superficie_de_una_función_escalar_07.svg]]
 > 
 > **Checklist:**
 > 

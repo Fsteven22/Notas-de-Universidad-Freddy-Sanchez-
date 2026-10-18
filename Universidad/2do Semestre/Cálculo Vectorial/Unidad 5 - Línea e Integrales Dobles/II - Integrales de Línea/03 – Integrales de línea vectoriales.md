@@ -27,25 +27,7 @@ dg-publish: true
 > |**Campos conservativos**|Independencia de trayectoria|Física fundamental|
 > |**Teorema de Green**|Relaciona integral de línea con doble|Matemáticas aplicadas|
 
-```mermaid
-graph TB
-    A[Integrales] --> B[Escalares]
-    A --> C[Vectoriales]
-    
-    B --> D[∫_C f ds<br/>Función escalar]
-    C --> E[∫_C F·dr<br/>Campo vectorial]
-    
-    E --> F[Trabajo]
-    E --> G[Circulación]
-    E --> H[Flujo a lo largo]
-    
-    F --> I[Campos<br/>Conservativos]
-    G --> J[Teorema<br/>de Green]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style E fill:#fff4e1
-```
+![[Diagramas/03_–_Integrales_de_línea_vectoriales_01.svg]]
 
 ---
 
@@ -120,18 +102,7 @@ graph TB
 > 
 > **Propiedades visuales:**
 > 
-> ```mermaid
-> graph TB
->     A[Campo Vectorial F] --> B{Clasificación}
->     B --> C[Por fuente]
->     B --> D[Por rotación]
->     C --> E[Divergencia ≠ 0<br/>Fuentes/sumideros]
->     C --> F[Divergencia = 0<br/>Incompresible]
->     D --> G[Rotacional ≠ 0<br/>Rota]
->     D --> H[Rotacional = 0<br/>Conservativo]
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_02.svg]]
 
 ### 🎯 Producto Punto y Vector Tangente
 
@@ -257,18 +228,7 @@ graph TB
 > 
 > **¡IMPORTANTE!** La integral vectorial **SÍ depende de la orientación** de la curva (a diferencia de la integral escalar).
 > 
-> ```mermaid
-> graph TB
->     A[∫_C F·dr] --> B{Propiedades}
->     B --> C[Depende de<br/>orientación]
->     B --> D[Linealidad]
->     B --> E[Aditividad]
->     C --> F["∫_{-C} = -∫_C"]
->     D --> G["∫_C αF+βG = α∫_C F + β∫_C G"]
->     E --> H["∫_C = ∫_{C₁} + ∫_{C₂}"]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_03.svg]]
 
 ---
 
@@ -280,18 +240,7 @@ graph TB
 > 
 > **Algoritmo general:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema: ∫_C F·dr] --> B[Paso 1: Identificar F = ⟨P,Q,R⟩]
->     B --> C[Paso 2: Parametrizar C<br/>r t , t ∈ [a,b]]
->     C --> D[Paso 3: Calcular r' t]
->     D --> E[Paso 4: Expresar P,Q,R<br/>en términos de t]
->     E --> F[Paso 5: Calcular F r t ·r' t]
->     F --> G[Paso 6: Integrar<br/>∫ₐᵇ F·r' dt]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_04.svg]]
 > 
 > **Checklist de pasos:**
 > 
@@ -665,18 +614,7 @@ graph TB
 > 
 > **Proceso de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = ⟨P,Q,R⟩] --> B{Calcular derivadas<br/>parciales cruzadas}
->     B --> C{¿Se cumplen<br/>las igualdades?}
->     C -->|Sí| D[Posiblemente conservativo]
->     C -->|No| E[NO conservativo]
->     D --> F{¿Región simplemente<br/>conexa?}
->     F -->|Sí| G[ES conservativo]
->     F -->|No| H[Verificar más]
->     style G fill:#e1ffe1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_05.svg]]
 > 
 > **Región simplemente conexa:** Una región sin "huecos" (toda curva cerrada puede contraerse a un punto).
 > 
@@ -1105,27 +1043,7 @@ graph TB
 
 ### Diagrama de Flujo General
 
-```mermaid
-flowchart TD
-    A[Integral de Línea Vectorial] --> B{¿Tipo de problema?}
-    
-    B -->|Calcular ∫_C F·dr| C{¿F conservativo?}
-    B -->|Curva cerrada| D{¿Usar Green?}
-    
-    C -->|Sí| E[Encontrar potencial f<br/>Evaluar f B - f A]
-    C -->|No| F[Parametrizar y<br/>calcular directamente]
-    
-    D -->|Sí| G[∬_D ∂Q/∂x - ∂P/∂y dA]
-    D -->|No| F
-    
-    E --> H[Resultado]
-    F --> H
-    G --> H
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style G fill:#fff4e1
-```
+![[Diagramas/03_–_Integrales_de_línea_vectoriales_06.svg]]
 
 > [!note] 📋 Tablas de Referencia Rápida
 > 
@@ -1350,26 +1268,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integrales de<br/>Línea Vectoriales))
->     Conceptos
->       Campos vectoriales
->       Producto punto
->       dr vs ds
->     Cálculo
->       Parametrización
->       F·r'
->       Evaluación
->     Conservativos
->       Criterio
->       Potencial
->       TFC línea
->     Green
->       Circulación
->       Área
->       Aplicaciones
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_07.svg]]
 > 
 > **Progresión natural:**
 > 
@@ -1383,19 +1282,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Integrales<br/>Línea Vectoriales] --> B[Rotacional<br/>∇×F]
->     A --> C[Divergencia<br/>∇·F]
->     B --> D[Teorema<br/>de Stokes]
->     C --> E[Teorema<br/>de Gauss]
->     D --> F[Integrales<br/>de Superficie]
->     E --> F
->     F --> G[Teoremas<br/>Fundamentales]
->     style A fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Integrales_de_línea_vectoriales_08.svg]]
 > 
 > **Conceptos clave para lo que sigue:**
 > 

@@ -25,24 +25,7 @@ dg-publish: true
 > |**Estimación**|Acotar valores sin calcular|Teoremas de comparación|
 > |**Transformaciones**|Cambiar variables convenientemente|Coordenadas polares, cilíndricas|
 
-```mermaid
-graph TB
-    A[Propiedades de<br/>Integrales Múltiples] --> B[Propiedades<br/>Algebraicas]
-    A --> C[Propiedades<br/>Geométricas]
-    A --> D[Propiedades de<br/>Comparación]
-    
-    B --> E[Linealidad]
-    B --> F[Aditividad]
-    C --> G[Simetría]
-    C --> H[Cambio de Variable]
-    D --> I[Monotonía]
-    D --> J[Acotación]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_01.svg]]
 
 ---
 
@@ -93,19 +76,7 @@ graph TB
 > = 3(2/3) + 2(1) - 5(2) = 2 + 2 - 10 = -6
 > ```
 
-```mermaid
-flowchart LR
-    A[∬ₐ αf + βg dA] --> B[Linealidad]
-    B --> C[α∬ₐ f dA]
-    B --> D[β∬ₐ g dA]
-    C --> E[Sumar]
-    D --> E
-    E --> F[Resultado Final]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_02.svg]]
 
 > **Aplicación práctica:**
 > 
@@ -125,22 +96,7 @@ flowchart LR
 > 
 > **Visualización geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R completa] --> B[R₁]
->     A --> C[R₂]
->     A --> D[R₃]
->     B --> E[∬_R₁ f dA]
->     C --> F[∬_R₂ f dA]
->     D --> G[∬_R₃ f dA]
->     E --> H[Sumar todos]
->     F --> H
->     G --> H
->     H --> I[∬_R f dA]
->     style A fill:#e1f5ff
->     style H fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_03.svg]]
 > 
 > **Requisitos para usar aditividad:**
 > 
@@ -178,18 +134,7 @@ flowchart LR
 > 
 > **Aplicaciones estratégicas:**
 > 
-> ```mermaid
-> graph LR
->     A[Región Compleja] --> B{Estrategia}
->     B -->|División| C[Subdividir en<br/>partes simples]
->     B -->|Sustracción| D[Grande - Pequeña]
->     B -->|Simetría| E[Calcular 1/4<br/>y multiplicar]
->     C --> F[Más fácil integrar]
->     D --> F
->     E --> F
->     style A fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_04.svg]]
 
 ### 🔄 Cambio en el Orden de Integración
 
@@ -209,22 +154,7 @@ flowchart LR
 > 
 > **Procedimiento para cambiar orden:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral original] --> B[Dibujar región R]
->     B --> C[Identificar límites actuales]
->     C --> D{Tipo de región}
->     D -->|Tipo I| E[Cambiar a Tipo II]
->     D -->|Tipo II| F[Cambiar a Tipo I]
->     E --> G[Nuevos límites]
->     F --> G
->     G --> H[Reescribir integral]
->     H --> I[Evaluar]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style G fill:#ffe1f5
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_05.svg]]
 > 
 > **Ejemplo detallado:**
 > 
@@ -310,25 +240,7 @@ flowchart LR
 > |Impar en y|$f(x,-y) = -f(x,y)$|Simétrica en y|Integral = 0|
 > |Radial|$f(x,y) = g(r)$|Circular/anular|Usar polares|
 
-```mermaid
-graph TB
-    A[Analizar Simetría] --> B{Región R<br/>simétrica?}
-    B -->|No| C[Calcular completa]
-    B -->|Sí| D{Función f?}
-    
-    D -->|Par| E[Calcular mitad<br/>× 2]
-    D -->|Impar| F[Integral = 0]
-    D -->|General| C
-    
-    E --> G[Ahorro 50%]
-    F --> H[Ahorro 100%]
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-    style G fill:#ccffcc
-    style H fill:#ccffcc
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_06.svg]]
 
 > **Ejemplos ilustrativos:**
 > 
@@ -458,18 +370,7 @@ graph TB
 > 0.135 ≤ Integral ≤ 1
 > ```
 
-```mermaid
-graph LR
-    A[f ≤ g en R] --> B[Integrar]
-    B --> C[∬ f dA ≤ ∬ g dA]
-    
-    D[Función acotada<br/>m ≤ f ≤ M] --> E[Multiplicar por área]
-    E --> F[m·A ≤ ∬ f dA ≤ M·A]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style F fill:#e1ffe1
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_07.svg]]
 
 ### 🎯 Teorema del Valor Medio para Integrales
 
@@ -487,16 +388,7 @@ graph LR
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Integral ∬_R f dA] --> B[Representa volumen total]
->     C[Área de R] --> D[Base del sólido]
->     B --> E[Volumen = Base × Altura]
->     D --> E
->     E --> F[Altura = f_prom]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_08.svg]]
 > 
 > |Concepto|Fórmula|Significado|
 > |---|---|---|
@@ -547,17 +439,7 @@ graph LR
 > 
 > **Pasos para cambio de variables:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema original<br/>∬_R f dxdy] --> B[Definir transformación<br/>x=x u,v, y=y u,v]
-> B --> C[Calcular Jacobiano<br/>∂ x,y / ∂ u,v]
-> C --> D[Determinar nuevos límites<br/>región S]
-> D --> E["Sustituir en integral<br/>f x u,v, y u,v · |J|"]
-> E --> F[Evaluar ∬_S]
-> style A fill:#e1f5ff
-> style C fill:#fff4e1
-> style F fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_09.svg]]
 > 
 > ```
 > 
@@ -628,42 +510,7 @@ graph LR
 
 ### Mapa Conceptual de Propiedades
 
-```mermaid
-mindmap
-  root((Propiedades de<br/>Integrales Múltiples))
-    Algebraicas
-      Linealidad
-        Suma de funciones
-        Constantes multiplicativas
-      Aditividad
-        División de regiones
-        Sustracción de áreas
-      Orden de integración
-        Teorema de Fubini
-        Tipo I ↔ Tipo II
-    Geométricas
-      Simetría
-        Par → duplicar
-        Impar → cero
-      Área y Volumen
-        Casos especiales
-        Interpretación física
-    Comparación
-      Monotonía
-        f ≤ g → ∬f ≤ ∬g
-        Acotaciones
-      Valor medio
-        Promedio de función
-        Existencia de punto
-    Transformaciones
-      Jacobiano
-        Cambio de variables
-        Factor de escala
-      Coordenadas
-        Polares
-        Cilíndricas
-        Esféricas
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_10.svg]]
 
 ### Tabla Resumen de Propiedades
 
@@ -683,46 +530,7 @@ mindmap
 
 ### Diagrama de Decisión: ¿Qué Propiedad Usar?
 
-```mermaid
-flowchart TD
-    A[Evaluar ∬_R f dA] --> B{¿Región simétrica?}
-    B -->|Sí| C{¿Función par/impar?}
-    B -->|No| D{¿Región compleja?}
-    
-    C -->|Par| E[Calcular mitad × 2]
-    C -->|Impar| F[Integral = 0]
-    C -->|Ni par ni impar| D
-    
-    D -->|Sí| G{¿Se puede dividir?}
-    D -->|No| H{¿Integral difícil?}
-    
-    G -->|Sí| I[Usar aditividad]
-    G -->|No| H
-    
-    H -->|Sí| J{¿Cambiar orden ayuda?}
-    H -->|No| K{¿Simetría radial?}
-    
-    J -->|Sí| L[Aplicar Fubini]
-    J -->|No| K
-    
-    K -->|Sí| M[Usar polares]
-    K -->|No| N[Evaluar directamente]
-    
-    E --> O[Resultado]
-    F --> O
-    I --> O
-    L --> O
-    M --> O
-    N --> O
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-    style I fill:#fff4e1
-    style L fill:#ffe1f5
-    style M fill:#f5e1ff
-    style O fill:#e1ffe1
-```
+![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_11.svg]]
 
 ---
 
@@ -853,22 +661,7 @@ flowchart TD
 > 
 > **Progresión natural:**
 > 
-> ```mermaid
-> graph LR
->     A[Propiedades de<br/>Integrales Múltiples] --> B[Aplicaciones Físicas]
->     A --> C[Cambios de Coordenadas<br/>Avanzados]
->     A --> D[Integrales de Línea]
->     B --> E[Centro de masa]
->     B --> F[Momentos de inercia]
->     C --> G[Coordenadas generalizadas]
->     C --> H[Transformaciones no lineales]
->     D --> I[Teorema de Green]
->     D --> J[Campos vectoriales]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/02_–_Propiedades_de_las_integrales_múltiples_12.svg]]
 > 
 > |Concepto Actual|Próximo Paso|Relación|
 > |---|---|---|

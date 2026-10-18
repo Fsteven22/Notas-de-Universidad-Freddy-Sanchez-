@@ -1,0 +1,47 @@
+graph TD
+    A[Superficies Cuadráticas] --> B[Ecuación General]
+    B --> C[Ax² + By² + Cz² + Dxy + Exz + Fyz + Gx + Hy + Iz + J = 0]
+    
+    A --> D[Clasificación]
+    D --> E[3 términos cuadráticos]
+    D --> F[2 términos cuadráticos]
+    
+    E --> E1[Elipsoide<br/>3 positivos, = 1]
+    E --> E2[Hiperboloide 1 hoja<br/>2 pos, 1 neg, = 1]
+    E --> E3[Hiperboloide 2 hojas<br/>1 pos, 2 neg, = 1]
+    E --> E4[Cono<br/>Signos mixtos, = 0]
+    
+    F --> F1[Paraboloide elíptico<br/>Signos iguales, lineal]
+    F --> F2[Paraboloide hiperbólico<br/>Signos opuestos, lineal]
+    F --> F3[Cilindros<br/>Sin término en z]
+    
+    A --> G[Métodos de Análisis]
+    G --> G1[Secciones planas<br/>z=k, y=k, x=k]
+    G --> G2[Reducción canónica<br/>Diagonalización]
+    G --> G3[Identificación de signos<br/>Valores propios]
+    
+    A --> H[Propiedades]
+    H --> H1[Cerradas/Abiertas]
+    H --> H2[Conexas/Disconnexas]
+    H --> H3[Regladas/No regladas]
+    H --> H4[Simetrías]
+    
+    A --> I[Aplicaciones]
+    I --> I1[Arquitectura<br/>Torres, cúpulas]
+    I --> I2[Física<br/>Órbitas, reflexión]
+    I --> I3[Computación<br/>Gráficos 3D]
+    I --> I4[Ingeniería<br/>Diseño estructural]
+    
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style E fill:#e8f5e9
+    style F fill:#fce4ec
+    style E1 fill:#bbdefb
+    style E2 fill:#90caf9
+    style E3 fill:#64b5f6
+    style E4 fill:#42a5f5
+    style F1 fill:#f48fb1
+    style F2 fill:#f06292
+    style G fill:#f3e5f5
+    style H fill:#fff9c4
+    style I fill:#ffe0b2

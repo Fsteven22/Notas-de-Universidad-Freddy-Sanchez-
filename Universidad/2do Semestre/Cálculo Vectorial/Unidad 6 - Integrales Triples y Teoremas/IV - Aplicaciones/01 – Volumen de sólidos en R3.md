@@ -26,22 +26,7 @@ dg-publish: true
 > |**Medicina**|Volúmenes de órganos|Imágenes médicas, diagnóstico|
 > |**Manufactura**|Materiales necesarios|Fundición, moldes, costos|
 
-```mermaid
-graph LR
-    A[Sólido en ℝ³] --> B{Método de Cálculo}
-    B --> C[Integrales Triples]
-    B --> D[Revolución]
-    B --> E[Secciones Transversales]
-    C --> F[∭ dV]
-    D --> G[Disco/Arandela]
-    E --> H["∫ A(x) dx"]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style E fill:#f0e1ff
-```
+![[Diagramas/01_–_Volumen_de_sólidos_en_R3_01.svg]]
 
 ---
 
@@ -87,20 +72,7 @@ graph LR
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R en ℝ³] --> B[Dividir en capas]
->     B --> C[Integrar en z]
->     C --> D[Integrar en y]
->     D --> E[Integrar en x]
->     E --> F[Volumen Total]
->     B --> G[dV = dz dy dx]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_02.svg]]
 
 ### 🔄 2. Sólidos de Revolución
 
@@ -137,24 +109,7 @@ graph LR
 > 
 > **Flujo de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Región a rotar] --> B{¿Eje de rotación?}
->     B -->|Eje X| C{¿Hueco en el centro?}
->     B -->|Eje Y| D{¿Hueco en el centro?}
->     C -->|No| E[Método del Disco<br/>V = π∫R²dx]
->     C -->|Sí| F[Método de Arandela<br/>V = π∫R²-r² dx]
->     D -->|No| G[Método del Disco<br/>V = π∫R²dy]
->     D -->|Sí| H[Método de Arandela<br/>V = π∫R²-r² dy]
->     E --> I[Calcular integral]
->     F --> I
->     G --> I
->     H --> I
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style I fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_03.svg]]
 
 ### 📏 3. Método de Secciones Transversales
 
@@ -205,18 +160,7 @@ graph LR
 > 
 > **Proceso de resolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Identificar base] --> B[Determinar forma<br/>de sección]
->     B --> C[Expresar dimensiones<br/>en función de x o y]
->     C --> D[Calcular área A x]
->     D --> E[Integrar ∫A x dx]
->     E --> F[Volumen total]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
->     style F fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_04.svg]]
 
 ---
 
@@ -266,20 +210,7 @@ graph LR
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Coordenadas<br/>Cilíndricas] --> B[r: distancia al eje z]
->     A --> C[θ: ángulo en plano xy]
->     A --> D[z: altura]
->     B --> E[0 ≤ r ≤ R]
->     C --> F[0 ≤ θ ≤ 2π]
->     D --> G[z₁ ≤ z ≤ z₂]
->     E --> H[dV = r dr dθ dz]
->     F --> H
->     G --> H
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_05.svg]]
 
 ### 🌐 Coordenadas Esféricas
 
@@ -336,19 +267,7 @@ graph LR
 > 
 > **Comparación de sistemas:**
 > 
-> ```mermaid
-> graph TD
->     A[¿Qué coordenadas usar?] --> B{Simetría}
->     B -->|Rectangular| C[Cartesianas<br/>dV = dx dy dz]
->     B -->|Circular en xy| D[Cilíndricas<br/>dV = r dr dθ dz]
->     B -->|Radial desde origen| E[Esféricas<br/>dV = ρ²sinφ dρ dθ dφ]
->     C --> F[Cajas, prismas]
->     D --> G[Cilindros, conos<br/>eje z]
->     E --> H[Esferas, conos<br/>origen]
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_06.svg]]
 
 ---
 
@@ -360,26 +279,7 @@ graph LR
 > 
 > **Árbol de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema de volumen] --> B{¿Tipo de región?}
->     B -->|Delimitada por<br/>funciones| C{¿Hay rotación?}
->     B -->|Forma geométrica<br/>estándar| D[Fórmulas directas]
->     C -->|Sí| E{¿Alrededor de<br/>qué eje?}
->     C -->|No| F{¿Secciones<br/>conocidas?}
->     E -->|Eje coordenado| G[Disco/Arandela]
->     E -->|Eje paralelo| H[Cascarón]
->     F -->|Sí| I[Secciones<br/>transversales]
->     F -->|No| J{¿Simetría?}
->     J -->|Circular xy| K[Cilíndricas]
->     J -->|Radial origen| L[Esféricas]
->     J -->|Ninguna| M[Cartesianas]
->     style G fill:#e1ffe1
->     style I fill:#fff4e1
->     style K fill:#e1f5ff
->     style L fill:#f0e1ff
->     style M fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_07.svg]]
 > 
 > **Tabla de estrategias:**
 > 
@@ -564,43 +464,7 @@ graph LR
 
 ### 🗺️ Mapa Mental del Tema
 
-```mermaid
-mindmap
-  root((Volumen en R3))
-    Integrales_Triples
-      Cartesianas
-        dx_dy_dz
-        Cajas_y_prismas
-      Cilindricas
-        r_dr_dtheta_dz
-        Cilindros
-        Simetria_axial
-      Esfericas
-        rho2_sinphi_drho_dtheta_dphi
-        Esferas
-        Simetria_radial
-    Solidos_de_Revolucion
-      Metodo_del_Disco
-        pi_int_R2_dx
-        Sin_hueco_central
-      Metodo_de_Arandela
-        pi_int_R2_menos_r2_dx
-        Con_hueco_central
-      Cascaron_Cilindrico
-        dos_pi_int_x_fx_dx
-        Radio_variable
-    Secciones_Transversales
-      Cuadradas
-      Circulares
-      Triangulares
-      Semicirculares
-    Aplicaciones
-      Ingenieria
-      Fisica
-      Arquitectura
-      Medicina
-
-```
+![[Diagramas/01_–_Volumen_de_sólidos_en_R3_08.svg]]
 
 ---
 
@@ -696,19 +560,7 @@ mindmap
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Volumen de Sólidos] --> B[Integrales de Superficie]
->     B --> C[Teoremas Integrales]
->     C --> D[Campos Vectoriales]
->     D --> E[Aplicaciones Físicas]
->     A -.-> F[Coordenadas Curvilíneas]
->     F -.-> G[Tensores]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_09.svg]]
 
 ---
 

@@ -288,40 +288,7 @@ dg-publish: true
 
 ## 🎨 Representación Gráfica del Flujo de Derivadas
 
-```mermaid
-graph TB
-    subgraph "Espacio Original"
-        A[x ∈ ℝⁿ]
-    end
-    
-    subgraph "Espacio Intermedio"
-        B[y = g'x' ∈ ℝᵐ]
-    end
-    
-    subgraph "Espacio Final"
-        C[z = f'y' ∈ ℝᵖ]
-    end
-    
-    A -->|"g: ℝⁿ → ℝᵐ"| B
-    B -->|"f: ℝᵐ → ℝᵖ"| C
-    A -.->|"h = f ∘ g: ℝⁿ → ℝᵖ"| C
-    
-    subgraph "Derivadas"
-        D["J_g(x) [m×n]"]
-        E["J_f(y) [p×m]"]
-        F["J_h(x) = J_f · J_g [p×n]"]
-    end
-    
-    D -->|Multiplica| F
-    E -->|Multiplica| F
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style D fill:#ffebee
-    style E fill:#fce4ec
-    style F fill:#f3e5f5
-```
+![[Diagramas/05_-_Funciones_compuestas_01.svg]]
 
 ## 🔬 Derivadas Parciales en Composiciones
 

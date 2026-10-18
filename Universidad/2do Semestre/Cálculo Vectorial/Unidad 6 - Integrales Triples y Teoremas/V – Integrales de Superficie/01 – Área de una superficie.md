@@ -21,22 +21,7 @@ dg-publish: true
 > |**Geometría**|Medición de superficies curvas|Área de esferas, paraboloides|
 > |**Optimización**|Minimizar o maximizar áreas|Diseño de contenedores|
 
-```mermaid
-graph TB
-    A[Superficie en ℝ³] --> B{Tipo de representación}
-    B --> C["z = f(x,y)"]
-    B --> D["Paramétrica r(u,v)"]
-    B --> E["Implícita F(x,y,z) = 0"]
-    
-    C --> F[Fórmula con derivadas parciales]
-    D --> G[Fórmula con producto cruz]
-    E --> H[Fórmula con gradiente]
-    
-    style A fill:#e1f5ff
-    style F fill:#e1ffe1
-    style G fill:#fff4e1
-    style H fill:#ffe1e1
-```
+![[Diagramas/01_–_Área_de_una_superficie_01.svg]]
 
 ---
 
@@ -70,15 +55,7 @@ graph TB
 > 
 > **¿Por qué esta fórmula?**
 > 
-> ```mermaid
-> graph LR
->     A[Elemento dA en xy] --> B[Se proyecta inclinado]
->     B --> C[Factor de estiramiento]
->     C --> D[√(1 + fx² + fy²)]
->     D --> E[Elemento real dS]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_02.svg]]
 > 
 > **Ejemplo 1: Plano inclinado**
 > 
@@ -152,18 +129,7 @@ graph TB
 > 
 > **Proceso de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[r(u,v) = ⟨x,y,z⟩] --> B[Calcular ∂r/∂u]
->     A --> C[Calcular ∂r/∂v]
->     B --> D[Producto cruz: ∂r/∂u × ∂r/∂v]
->     C --> D
->     D --> E[Calcular magnitud |∂r/∂u × ∂r/∂v|]
->     E --> F[Integrar sobre región D]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_03.svg]]
 > 
 > **Recordatorio del producto cruz:**
 > 
@@ -320,18 +286,7 @@ graph TB
 > 
 > **Coordenadas polares:**
 > 
-> ```mermaid
-> graph TB
->     A[Región D] --> B{¿Tiene simetría circular?}
->     B -->|Sí| C[Usar polares]
->     B -->|No| D{¿Límites constantes?}
->     D -->|Sí| E[Usar cartesianas]
->     D -->|No| F[Evaluar caso por caso]
->     C --> G[x = r cos θ<br/>y = r sen θ<br/>dA = r dr dθ]
->     E --> H[dA = dx dy]
->     style C fill:#e1ffe1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_04.svg]]
 > 
 > **Transformación a polares:**
 > 
@@ -390,15 +345,7 @@ graph TB
 > 
 > Aprovechar simetrías para simplificar:
 > 
-> ```mermaid
-> graph LR
->     A["Función par<br/>f(-x) = f(x)"] --> B["∫₋ₐᵃ f(x)dx = 2∫₀ᵃ f(x)dx"]
->     C["Función impar<br/>f(-x) = -f(x)"] --> D["∫₋ₐᵃ f(x)dx = 0"]
->     E[Simetría rotacional] --> F[Usar ángulo completo<br/>0 a 2π]
->     style B fill:#e1ffe1
->     style D fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_05.svg]]
 > 
 > **3. Separación de variables**
 > 
@@ -463,19 +410,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Superficies Cuádricas] --> B[Elipsoides]
->     A --> C[Paraboloides]
->     A --> D[Hiperboloides]
->     A --> E[Cilindros]
->     A --> F[Conos]
->     B --> B1[Esfera: caso especial]
->     C --> C1[Elíptico/Hiperbólico]
->     D --> D1[Una/Dos hojas]
->     style A fill:#e1f5ff
->     style B1 fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_06.svg]]
 
 ---
 
@@ -483,31 +418,7 @@ graph TB
 
 > [!tip] 🗺️ Guía Paso a Paso
 > 	 
-> ```mermaid
-> flowchart TD
->     A[Problema: Calcular área de superficie] --> B{¿Cómo está dada?}
->     B -->|"z = f(x,y)"| C[Usar fórmula con derivadas parciales]
->     B -->|"r(u,v)"| D[Usar parametrización]
->     B -->|"F(x,y,z) = 0"| E[Usar gradiente]
->     C --> F["Calcular ∂f/∂x y ∂f/∂y"]
->     D --> G["Calcular ∂r/∂u y ∂r/∂v"]
->     E --> H["Calcular ∇F"]
->     F --> I["Identificar región D"]
->     G --> J["Determinar dominio"]
->     H --> K["Proyectar sobre plano"]
->     I --> L{¿Coordenadas?}
->     J --> L
->     K --> L
->     L -->|Polares| M["Transformar a r, θ"]
->     L -->|Cartesianas| N["Mantener x, y"]
->     M --> O["Plantear integral doble"]
->     N --> O
->     O --> P["Integrar"]
->     P --> Q["Evaluar límites"]
->     Q --> R["✅ Resultado"]
->     style A fill:#e1f5ff
->     style R fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Área_de_una_superficie_07.svg]]
 > **Checklist de verificación:**
 > 
 > - [ ] Identificar tipo de superficie

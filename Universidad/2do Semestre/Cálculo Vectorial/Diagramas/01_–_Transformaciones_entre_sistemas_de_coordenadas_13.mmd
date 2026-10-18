@@ -1,0 +1,23 @@
+flowchart TD
+    A[Problema] --> B{¿Dimensión?}
+    
+    B -->|2D| C{¿Geometría?}
+    B -->|3D| D{¿Geometría?}
+    
+    C -->|Rectangular| E[Cartesianas x,y]
+    C -->|Circular| F[Polares r,θ]
+    
+    D -->|Caja| G[Cartesianas x,y,z]
+    D -->|Cilindro| H[Cilíndricas r,θ,z]
+    D -->|Esfera| I[Esféricas ρ,θ,φ]
+    
+    E --> J[Resolver]
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+    
+    style A fill:#e1f5ff
+    style C fill:#fff4e1
+    style D fill:#fff4e1
+    style J fill:#e1ffe1

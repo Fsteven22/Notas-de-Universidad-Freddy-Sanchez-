@@ -1,0 +1,23 @@
+graph TD
+    A[Dos Rectas en ℝ³] --> B{¿Vectores<br/>directores<br/>paralelos?}
+    
+    B -->|SÍ| C{¿Comparten<br/>algún punto?}
+    B -->|NO| D{¿Se<br/>intersectan?}
+    
+    C -->|SÍ| E[COINCIDENTES<br/>Misma recta]
+    C -->|NO| F[PARALELAS<br/>Distintas]
+    
+    D -->|SÍ| G[SECANTES<br/>Se cruzan en<br/>un punto]
+    D -->|NO| H[ALABEADAS<br/>No se cruzan<br/>ni son paralelas]
+    
+    G --> I{¿Ángulo = 90°?}
+    I -->|SÍ| J[Secantes<br/>PERPENDICULARES]
+    I -->|NO| K[Secantes<br/>OBLICUAS]
+    
+    style A fill:#e3f2fd
+    style E fill:#c8e6c9
+    style F fill:#fff9c4
+    style G fill:#bbdefb
+    style H fill:#ffccbc
+    style J fill:#ce93d8
+    style K fill:#b2dfdb

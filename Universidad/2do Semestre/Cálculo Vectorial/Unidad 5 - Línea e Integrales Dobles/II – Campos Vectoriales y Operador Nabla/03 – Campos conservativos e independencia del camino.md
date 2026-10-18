@@ -23,18 +23,7 @@ dg-publish: true
 > |**Integrales simplificadas**|∫C F·dr = U(B) - U(A)|Cálculo eficiente|
 > |**Predicción**|Conocer U predice todo el campo|Modelado físico|
 
-```mermaid
-graph TB
-    A[Campo Vectorial F] --> B{¿Es conservativo?}
-    B -->|Sí| C[Existe función potencial U]
-    C --> D[F = ∇U o F = -∇U]
-    D --> E[Trabajo independiente del camino]
-    B -->|No| F[Trabajo depende del camino]
-    
-    style C fill:#e1ffe1
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_01.svg]]
 
 ---
 
@@ -65,15 +54,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph LR
->     A[Función Potencial U x,y,z] --> B[Calcular ∇U]
->     B --> C[Campo Vectorial F]
->     C -.-> D[Curvas de nivel de U]
->     C -.-> E[F perpendicular a curvas]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_02.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -89,20 +70,7 @@ graph TB
 > 
 > **Propiedades clave:**
 > 
-> ```mermaid
-> mindmap
->   root((Campo<br/>Conservativo))
->     Tiene potencial U
->       F = ∇U
->       U única salvo constante
->     Trabajo
->       Independiente del camino
->       ∫C F·dr = U B - U A
->     Integral cerrada
->       ∮C F·dr = 0
->     Rotacional
->       ∇×F = 0
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_03.svg]]
 
 ### 🎨 Interpretación Geométrica
 
@@ -110,22 +78,7 @@ graph TB
 > 
 > **Relación entre U y F:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Función Potencial U(x,y)"
->     A[Superficie z = U x,y]
->     B[Curvas de nivel U = constante]
->     end
->     subgraph "Campo Vectorial F"
->     C[Vectores ∇U]
->     D[Perpendiculares a curvas de nivel]
->     E[Apuntan hacia mayor U]
->     end
->     A --> C
->     B --> D
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_04.svg]]
 > 
 > **Ejemplo visual - Montaña:**
 > 
@@ -155,13 +108,7 @@ graph TB
 > 
 > **Analogía con mapa topográfico:**
 > 
-> ```mermaid
-> graph LR
->     A[Curvas de nivel] -->|Espaciadas| B[Pendiente suave<br/>Campo débil]
->     A -->|Juntas| C[Pendiente fuerte<br/>Campo intenso]
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_05.svg]]
 
 ### ⚡ Trabajo e Independencia del Camino
 
@@ -181,14 +128,7 @@ graph TB
 > 
 > **Visualización del trabajo:**
 > 
-> ```mermaid
-> flowchart LR
->     A["Punto A<br/>U(A)"] -->|Camino 1| B["Punto B<br/>U(B)"]
->     A -->|Camino 2| B
->     A -->|Camino 3| B
->     B --> C["Trabajo = U(B) - U(A)<br/>¡Mismo para todos!"]
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_06.svg]]
 > 
 > **Ejemplo calculado:**
 > 
@@ -262,19 +202,7 @@ graph TB
 > 
 > **Algoritmo de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = P,Q o P,Q,R] --> B[Calcular derivadas parciales]
->     B --> C{En ℝ²?}
->     C -->|Sí| D[∂Q/∂x - ∂P/∂y = 0?]
->     C -->|No ℝ³| E[∇×F = 0,0,0?]
->     D -->|Sí| F[✅ Conservativo]
->     D -->|No| G[❌ No conservativo]
->     E -->|Sí| F
->     E -->|No| G
->     style F fill:#e1ffe1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_07.svg]]
 > 
 > **Ejemplo 1 (ℝ²) - Conservativo:**
 > 
@@ -317,14 +245,7 @@ graph TB
 > 
 > **⚠️ IMPORTANTE: Región simplemente conexa**
 > 
-> ```mermaid
-> graph LR
->     A[Región D] --> B{¿Simplemente conexa?}
->     B -->|Sí<br/>Sin agujeros| C[∇×F = 0 ⟺ Conservativo]
->     B -->|No<br/>Con agujeros| D[∇×F = 0 ⇏ Conservativo]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_08.svg]]
 > 
 > Ejemplo de región NO simplemente conexa: plano sin el origen (anillo)
 
@@ -352,17 +273,7 @@ graph TB
 > 
 > **Algoritmo simplificado:**
 > 
-> ```mermaid
-> flowchart TD
->     A[F = P,Q] --> B[Calcular ∂P/∂y]
->     A --> C[Calcular ∂Q/∂x]
->     B --> D{∂P/∂y = ∂Q/∂x?}
->     C --> D
->     D -->|Sí| E[Puede ser conservativo<br/>verificar dominio]
->     D -->|No| F[❌ Definitivamente<br/>NO conservativo]
->     style E fill:#fff4e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_09.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -442,16 +353,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     A[Campo F] --> B[Elegir curva cerrada C]
->     B --> C[Calcular ∮C F·dr]
->     C --> D{Resultado?}
->     D -->|= 0| E[Posiblemente conservativo<br/>Verificar con rotacional]
->     D -->|≠ 0| F[❌ NO conservativo<br/>Definitivo]
->     style E fill:#fff4e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_10.svg]]
 > 
 > **Curvas cerradas comunes para probar:**
 > 
@@ -482,17 +384,7 @@ graph TB
 > 
 > **Algoritmo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[F = P,Q] --> B[Integrar ∂U/∂x = P<br/>respecto a x]
->     B --> C[U = ∫P dx + g y]
->     C --> D[Derivar U respecto a y]
->     D --> E[∂U/∂y = ... + g' y]
->     E --> F[Igualar a Q]
->     F --> G[Encontrar g y]
->     G --> H[U x,y = ... + C]
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_11.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -560,17 +452,7 @@ graph TB
 > 
 > **Procedimiento:**
 > 
-> ```mermaid
-> flowchart TD
->     A[F = P,Q,R] --> B[Integrar ∂U/∂x = P]
->     B --> C[U = ∫P dx + g y,z]
->     C --> D[Derivar ∂U/∂y]
->     D --> E[Igualar a Q<br/>encontrar parte de g]
->     E --> F[Derivar ∂U/∂z]
->     F --> G[Igualar a R<br/>completar g]
->     G --> H[U x,y,z = ... + C]
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_12.svg]]
 > 
 > **Ejemplo:**
 > 
@@ -621,13 +503,7 @@ graph TB
 > 
 > Elegir camino conveniente (generalmente rectangular):
 > 
-> ```mermaid
-> graph LR
->     A["(x₀,y₀)"] -->|Horizontal| B["(x,y₀)"]
->     B -->|Vertical| C["(x,y)"]
->     style A fill:#e1ffe1
->     style C fill:#ffe1f5
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_13.svg]]
 > 
 > **Ejemplo:**
 > 
@@ -691,16 +567,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Región D"
->     A[Interior D]
->     B[Frontera C]
->     end
->     C[∮C ...] -.-> D[Green]
->     D -.-> E[∬D ...]
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_14.svg]]
 > 
 > **Ejemplo:**
 > 
@@ -740,15 +607,7 @@ graph TB
 > 
 > **Diagrama:**
 > 
-> ```mermaid
-> graph TB
->     A[Superficie S] --> B[Frontera C]
->     C[Campo F] --> D[∇×F]
->     D --> E[Flujo a través de S]
->     B --> F[Circulación en C]
->     E -.->|Stokes| F
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_15.svg]]
 > 
 > **Importancia:**
 > 
@@ -789,29 +648,7 @@ graph TB
 
 ### Mapa Conceptual General
 
-```mermaid
-mindmap
-  root((Campos<br/>Conservativos))
-    Definición
-      F = ∇U
-      Existe potencial
-    Criterios
-      ∇×F = 0
-      ∂P/∂y = ∂Q/∂x
-      ∮C F·dr = 0
-    Propiedades
-      Independencia camino
-      Trabajo = U B - U A
-      Energía conservada
-    Encontrar U
-      Integración directa
-      Teorema fundamental
-    Aplicaciones
-      Gravedad
-      Campo eléctrico
-      Resortes
-      Conservación energía
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_16.svg]]
 
 > [!success] Tabla Resumen de Criterios
 > 
@@ -826,30 +663,7 @@ mindmap
 
 ### Diagrama de Flujo: Verificar y Usar
 
-```mermaid
-flowchart TD
-    A[Campo F] --> B{¿Es conservativo?}
-    
-    B -->|Verificar| C[Calcular ∇×F]
-    C --> D{∇×F = 0?}
-    D -->|Sí| E[✅ Conservativo]
-    D -->|No| F[❌ No conservativo]
-    
-    E --> G[Encontrar potencial U]
-    G --> H[Método integración]
-    G --> I[Método integral línea]
-    
-    H --> J[U x,y + C]
-    I --> J
-    
-    J --> K[Aplicar: W = U B - U A]
-    
-    F --> L[Calcular ∫C F·dr<br/>para cada camino]
-    
-    style E fill:#e1ffe1
-    style F fill:#ffe1e1
-    style K fill:#e1ffe1
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_17.svg]]
 
 ---
 
@@ -983,22 +797,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Campos<br/>Conservativos))
->     Verificación
->       Rotacional
->       Derivadas parciales
->     Potencial
->       Encontrar U
->       Aplicar U
->     Trabajo
->       Independencia
->       Conservación energía
->     Aplicaciones
->       Física
->       Ingeniería
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_18.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -1013,21 +812,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Campos Conservativos] --> B[Teorema de Green]
->     B --> C[Teorema de Stokes]
->     C --> D[Teorema de Divergencia]
->     D --> E[Cálculo Vectorial Completo]
->     A -.-> F[Aplicaciones Física]
->     F -.-> G[Mecánica]
->     F -.-> H[Electromagnetismo]
->     F -.-> I[Fluidos]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1f5
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_19.svg]]
 > 
 > **Conceptos clave que siguen:**
 > 
@@ -1063,24 +848,7 @@ flowchart TD
 > |**Reversibilidad**|Ir y volver suma cero|Ciclos cerrados|
 > |**Aplicaciones físicas**|Campos conservativos en naturaleza|Gravedad, campo eléctrico|
 
-```mermaid
-graph TB
-    A[Punto A] -->|Camino 1| B[Punto B]
-    A -->|Camino 2| B
-    A -->|Camino 3| B
-    
-    B --> C{¿Misma integral?}
-    C -->|Sí| D[✅ Independiente del camino]
-    C -->|No| E[❌ Dependiente del camino]
-    
-    D --> F[Campo conservativo]
-    E --> G[Campo no conservativo]
-    
-    style D fill:#e1ffe1
-    style E fill:#ffe1e1
-    style F fill:#e1ffe1
-    style G fill:#ffe1e1
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_20.svg]]
 
 ---
 
@@ -1113,18 +881,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Región D"
->     A["Punto A<br/>(x₀,y₀)"]
->     B["Punto B<br/>(x₁,y₁)"]
->     end
->     A -->|C₁: recta| B
->     A -->|C₂: curva| B
->     A -->|C₃: zigzag| B
->     C["∫C₁ = ∫C₂ = ∫C₃"]
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_21.svg]]
 > 
 > **Ejemplo intuitivo:**
 > 
@@ -1166,13 +923,7 @@ graph TB
 > 
 > **Demostración (⟹):**
 > 
-> ```mermaid
-> graph LR
->     A[Punto A] -->|C₁| B[Punto B]
->     B -->|C₂ invertida| A
->     C["Curva cerrada = C₁ + (-C₂)"]
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_22.svg]]
 > 
 > ```
 > Si hay independencia:
@@ -1231,21 +982,7 @@ graph TB
 > 
 > Para un campo vectorial F continuo en una región D **simplemente conexa**, las siguientes condiciones son **equivalentes**:
 > 
-> ```mermaid
-> graph TB
->     A["(1) Independencia<br/>del camino"]
->     B["(2) ∮C F·dr = 0<br/>para toda C cerrada"]
->     C["(3) F conservativo<br/>F = ∇U"]
->     D["(4) ∇×F = 0"]
->     A <--> B
->     B <--> C
->     C <--> D
->     D <--> A
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_23.svg]]
 > 
 > **Tabla de equivalencias:**
 > 
@@ -1258,17 +995,7 @@ graph TB
 > 
 > **Diagrama de implicaciones:**
 > 
-> ```mermaid
-> flowchart LR
->     A[1 Independencia] -->|implica| B[2 Ciclo = 0]
->     B -->|implica| C["3 ∃U: F=∇U"]
->     C -->|implica| D[4 ∇×F=0]
->     D -->|implica| A
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_24.svg]]
 > 
 > **⚠️ IMPORTANTE: Región simplemente conexa**
 > 
@@ -1310,24 +1037,7 @@ graph TB
 > 
 > **Método recomendado según contexto:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Quiero verificar<br/>independencia] --> B{¿Qué tengo?}
->     B -->|"Campo F=(P,Q)"| C[Calcular ∂Q/∂x - ∂P/∂y]
->     B -->|"Curva específica"| D[Calcular ∮C F·dr]
->     B -->|"Contexto físico"| E[Buscar potencial U]
->     C --> F{= 0?}
->     D --> G{= 0?}
->     E --> H{¿Existe U?}
->     F -->|Sí| I[✅ Independiente]
->     F -->|No| J[❌ Dependiente]
->     G -->|Sí| I
->     G -->|No| J
->     H -->|Sí| I
->     H -->|No| J
->     style I fill:#e1ffe1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_25.svg]]
 > 
 > **Algoritmo paso a paso:**
 > 
@@ -1414,14 +1124,7 @@ graph TB
 > 
 > **Procedimiento:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Verificar F conservativo] --> B[Encontrar potencial U]
->     B --> C[Evaluar U en punto final B]
->     C --> D[Evaluar U en punto inicial A]
->     D --> E[Restar: U B - U A]
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_26.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -1484,19 +1187,7 @@ graph TB
 > 
 > **Caminos convenientes:**
 > 
-> ```mermaid
-> graph TB
->     A["De (x₀,y₀) a (x₁,y₁)"]
->     A --> B[Camino 1: Segmentos<br/>horizontales y verticales]
->     A --> C[Camino 2: Línea recta]
->     A --> D[Camino 3: Seguir ejes]
->     B --> E[Más fácil]
->     C --> F[Más corto]
->     D --> G[Más simple]
->     style E fill:#e1ffe1
->     style F fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_27.svg]]
 > 
 > **Ejemplo: Caminos rectangulares**
 > 
@@ -1663,14 +1354,7 @@ graph TB
 > 
 > **Principio de conservación:**
 > 
-> ```mermaid
-> graph LR
->     A[Energía Total] --> B[Cinética K]
->     A --> C[Potencial U]
->     D[K + U = E₀]
->     B -.->|ΔK = -ΔU| C
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_28.svg]]
 > 
 > **Ejemplo: Objeto cayendo**
 > 
@@ -1715,13 +1399,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph LR
->     A[Punto A<br/>U A] -->|"Ir: W₁"| B[Punto B<br/>U B]
->     B -->|"Volver: W₂"| A
->     C["W₁ = U(A) - U(B)<br/>W₂ = U(B) - U(A)<br/>W₁ + W₂ = 0"]
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_29.svg]]
 > 
 > **Ejemplo:**
 > 
@@ -1754,22 +1432,7 @@ graph TB
 > 
 > **Ventajas computacionales:**
 > 
-> ```mermaid
-> mindmap
->   root((Independencia<br/>del Camino))
->     Elegir camino simple
->       Segmentos rectos
->       Paralelos a ejes
->     Usar potencial
->       Solo 2 evaluaciones
->       U B - U A
->     Evitar parametrización
->       No calcular dr/dt
->       No integrar
->     Verificar una vez
->       ∇×F = 0
->       Usar siempre
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_30.svg]]
 >
 > **Ejemplo comparativo:**
 > 
@@ -1816,25 +1479,7 @@ graph TB
 > 
 > **Ejemplos visuales:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Simplemente conexa ✅"
->     A1[Disco completo]
->     A2[Rectángulo]
->     A3[Todo ℝ²]
->     end
->     subgraph "NO simplemente conexa ❌"
->     B1[Anillo agujero]
->     B2[ℝ² \ punto]
->     B3[Toro dona]
->     end
->     style A1 fill:#e1ffe1
->     style A2 fill:#e1ffe1
->     style A3 fill:#e1ffe1
->     style B1 fill:#ffe1e1
->     style B2 fill:#ffe1e1
->     style B3 fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_31.svg]]
 > 
 > **Contraejemplo clásico:**
 > 
@@ -1859,14 +1504,7 @@ graph TB
 > 
 > **Regla práctica:**
 > 
-> ```mermaid
-> flowchart TD
->     A[∇×F = 0] --> B{¿Región simplemente<br/>conexa?}
->     B -->|Sí| C[✅ Independencia<br/>garantizada]
->     B -->|No| D[⚠️ Puede fallar<br/>Verificar curvas cerradas]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_32.svg]]
 > 
 > **Tabla de situaciones:**
 > 
@@ -1912,22 +1550,7 @@ graph TB
 > 
 > **Criterio por regiones:**
 > 
-> ```mermaid
-> graph TB
->     A[Campo F] --> B[Dividir en regiones]
->     B --> C[Región R₁]
->     B --> D[Región R₂]
->     C --> E{∇×F=0 y<br/>simplemente conexa?}
->     D --> F{∇×F=0 y<br/>simplemente conexa?}
->     E -->|Sí| G[✅ Independencia en R₁]
->     E -->|No| H[❌ No en R₁]
->     F -->|Sí| I[✅ Independencia en R₂]
->     F -->|No| J[❌ No en R₂]
->     style G fill:#e1ffe1
->     style I fill:#e1ffe1
->     style H fill:#ffe1e1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_33.svg]]
 
 ---
 
@@ -1935,28 +1558,7 @@ graph TB
 
 ### Mapa Conceptual General
 
-```mermaid
-mindmap
-  root((Independencia<br/>del Camino))
-    Definición
-      ∫C₁ = ∫C₂
-      Solo importan A y B
-    Condiciones Equivalentes
-      Integral cerrada = 0
-      Campo conservativo
-      ∇×F = 0
-    Cálculo
-      Usar potencial U
-      Elegir camino simple
-      Teorema fundamental
-    Aplicaciones
-      Trabajo independiente
-      Conservación energía
-      Reversibilidad
-    Excepciones
-      Regiones con agujeros
-      Dominios no simples
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_34.svg]]
 
 ### Tabla Resumen de Criterios
 
@@ -1969,32 +1571,7 @@ mindmap
 
 ### Diagrama de Flujo: Resolver Problemas
 
-```mermaid
-flowchart TD
-    A[Integral ∫C F·dr] --> B{¿Verificar<br/>independencia?}
-    
-    B -->|Sí| C[Calcular ∇×F]
-    C --> D{∇×F = 0?}
-    
-    D -->|No| E[❌ NO independiente<br/>Parametrizar C]
-    D -->|Sí| F{¿Dominio<br/>simple?}
-    
-    F -->|No| G[⚠️ Verificar curvas cerradas]
-    F -->|Sí| H[✅ Independiente]
-    
-    H --> I[Encontrar U]
-    I --> J[Calcular U B - U A]
-    
-    E --> K[Método tradicional<br/>∫ F r t · dr/dt dt]
-    
-    G --> L{∮C F·dr = 0?}
-    L -->|Sí| H
-    L -->|No| E
-    
-    style H fill:#e1ffe1
-    style E fill:#ffe1e1
-    style J fill:#e1ffe1
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_35.svg]]
 
 ---
 
@@ -2122,22 +1699,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Independencia<br/>del Camino))
->     Verificación
->       Rotacional
->       Integral cerrada
->     Cálculo
->       Potencial
->       Camino simple
->     Condiciones
->       Equivalencias
->       Excepciones
->     Aplicaciones
->       Trabajo
->       Energía
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_36.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -2152,21 +1714,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Independencia del Camino] --> B[Teorema de Green]
->     B --> C[Teorema de Stokes]
->     C --> D[Teorema de Divergencia]
->     D --> E[Teoremas Integrales]
->     A -.-> F[Aplicaciones]
->     F -.-> G[Mecánica]
->     F -.-> H[Termodinámica]
->     F -.-> I[Electromagnetismo]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#ffe1f5
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_37.svg]]
 > 
 > **Conceptos clave que siguen:**
 > 
@@ -2203,22 +1751,7 @@ flowchart TD
 > |**Independencia de camino**|El trabajo no depende de la trayectoria, solo de inicio y fin|Optimización de rutas|
 > |**Análisis de flujos**|Caracteriza comportamiento de campos vectoriales|Dinámica de fluidos|
 
-```mermaid
-graph TB
-    A[Función Potencial φx,y,z<br/>Campo Escalar] -->|"∇φ = (∂φ/∂x, ∂φ/∂y, ∂φ/∂z)"| B[Campo Vectorial F<br/>F = ∇φ]
-    B -->|"Reconstrucción<br/>∫ F · dr"| A
-    
-    C[Teorema Fundamental] --> D["∫C F · dr = φ(B) - φ(A)"]
-    
-    E[Propiedades Clave] --> F["∇ × F = 0<br/>Rotacional nulo"]
-    E --> G["∮C F · dr = 0<br/>Trabajo en curva cerrada"]
-    E --> H["Trabajo independiente<br/>del camino"]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style D fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_38.svg]]
 
 ---
 
@@ -2255,21 +1788,7 @@ graph TB
 > 
 > **Criterio de Conservatividad:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo Vectorial F] --> B{¿Dominio<br/>simplemente conexo?}
->     B -->|No| C[❌ Test no concluyente<br/>Verificar otros métodos]
->     B -->|Sí| D{En ℝ²:<br/>∂Q/∂x = ∂P/∂y?}
->     B -->|Sí| E{En ℝ³:<br/>∇ × F = 0?}
->     D -->|Sí| F[✅ Es conservativo<br/>Existe potencial φ]
->     D -->|No| G[❌ NO es conservativo<br/>No existe potencial]
->     E -->|Sí| F
->     E -->|No| G
->     F --> H[Reconstruir φ]
->     style F fill:#e1ffe1
->     style G fill:#ffe1e1
->     style B fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_39.svg]]
 > 
 > **Test de Conservatividad en ℝ²:**
 > 
@@ -2313,17 +1832,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph LR
->     A[Rotacional = 0] --> B[No hay circulación]
->     B --> C[Sin remolinos<br/>o vórtices]
->     C --> D[Campo conservativo]
->     E[Rotacional ≠ 0] --> F[Hay circulación]
->     F --> G[Presencia de<br/>vórtices]
->     G --> H[NO conservativo]
->     style D fill:#e1ffe1
->     style H fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_40.svg]]
 
 ### 🌀 Rotacional y Campos Conservativos
 
@@ -2355,19 +1864,7 @@ graph TB
 > 
 > **Ejemplo visual:**
 > 
-> ```mermaid
-> graph TB
->     subgraph "Campo Conservativo"
->     A1[∇ × F = 0] --> A2[Sin rotación local]
->     A2 --> A3[Líneas de campo<br/>no forman ciclos]
->     end
->     subgraph "Campo NO Conservativo"
->     B1[∇ × F ≠ 0] --> B2[Con rotación local]
->     B2 --> B3[Líneas de campo<br/>forman vórtices]
->     end
->     style A1 fill:#e1ffe1
->     style B1 fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_41.svg]]
 > 
 > **Ejemplo calculado:**
 > 
@@ -2402,22 +1899,7 @@ graph TB
 > 
 > **Algoritmo de reconstrucción:**
 > 
-> ```mermaid
-> flowchart TD
->     A["Inicio: F = P\hat{i} + Q\hat{j}"] --> B["Verificar conservatividad<br/>∂Q/∂x = ∂P/∂y"]
->     B -->|✅| C["Integrar ecuación 1<br/>φ = ∫P dx + g(y)"]
->     B -->|❌| Z[STOP: No existe potencial]
->     C --> D["Derivar resultado<br/>respecto a y"]
->     D --> E["Igualar con ecuación 2<br/>∂φ/∂y = Q"]
->     E --> F["Determinar g'(y)"]
->     F --> G["Integrar g'(y)<br/>para obtener g(y)"]
->     G --> H["φ(x,y) = ∫P dx + g(y)"]
->     H --> I["✅ Potencial encontrado<br/>+ constante C"]
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style I fill:#e1ffe1
->     style Z fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_42.svg]]
 > 
 > **PASO A PASO DETALLADO:**
 > 
@@ -2560,14 +2042,7 @@ graph TB
 > 
 > **Camino típico:** Segmentos paralelos a los ejes
 > 
-> ```mermaid
-> graph LR
->     A["(x₀,y₀)<br/>Origen"] -->|"∫ P dx"| B["(x,y₀)<br/>Horizontal"]
->     B -->|"∫ Q dy"| C["(x,y)<br/>Destino"]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_43.svg]]
 > 
 > **Camino en dos etapas (ℝ²):**
 > 
@@ -2625,14 +2100,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph LR
->     A["Punto A<br/>φ(A)"] -->|"Cualquier camino C"| B["Punto B<br/>φ(B)"]
->     C[Trabajo = φB - φA] --> D[Independiente<br/>del camino]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_44.svg]]
 > 
 > **Consecuencias importantes:**
 > 
@@ -2704,16 +2172,7 @@ graph TB
 > 
 > **Conservación de energía:**
 > 
-> ```mermaid
-> graph TD
->     A[Energía Total = Constante] --> B[E = K + U]
->     B --> C[Energía Cinética K]
->     B --> D[Energía Potencial U = -φ]
-> 	E[Trabajo de fuerzas<br/>conservativas] --> F["W = -ΔU"]
-> 	F --> G[ΔK + ΔU = 0]
-> style A fill:#e1ffe1
-> style G fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_45.svg]]
 > 
 > ```
 > 
@@ -2932,15 +2391,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo F = -y\hat{i} + x\hat{j}] --> B[Campo rotacional]
->     B --> C[Líneas de campo<br/>forman círculos]
->     C --> D[Circulación no nula]
->     D --> E[∮C F · dr ≠ 0]
->     style A fill:#ffe1e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_46.svg]]
 > 
 > **Cálculo de circulación:**
 > 
@@ -2988,18 +2439,7 @@ graph TB
 > 
 > **Visualización 2D:**
 > 
-> ```mermaid
-> graph TD
->     A[Potencial φx,y] --> B[Superficie 3D]
->     B --> C[Vista superior:<br/>curvas de nivel]
->     C --> D[φ = c₁]
->     C --> E[φ = c₂]
->     C --> F[φ = c₃]
->     G[Campo F = ∇φ] --> H[Vectores perpendiculares<br/>a curvas de nivel]
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_47.svg]]
 > 
 > **Ejemplo: φ(x,y) = x² + y²**
 > 
@@ -3029,24 +2469,7 @@ graph TB
 > 
 > **Campos físicos comunes:**
 > 
-> ```mermaid
-> mindmap
->   root((Campos<br/>Conservativos))
->     Gravitatorio
->       φ = mgh altura
->       φ = -GMm/r Newton
->       F = -∇φ atracción
->     Eléctrico
->       φ = kQ/r coulomb
->       V voltaje
->       E = -∇V campo
->     Elástico
->       φ = ½kx² resorte
->       F = -kx ley Hooke
->     Térmico
->       φ = T temperatura
->       Flujo = -k∇T conducción
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_48.svg]]
 > 
 > **Tabla de campos físicos:**
 > 
@@ -3106,18 +2529,7 @@ graph TB
 > - Hay curvas que no pueden contraerse
 > - Ejemplo: Plano con el origen eliminado, anillo
 > 
-> ```mermaid
-> graph LR
->     subgraph "Simplemente Conexo"
->     A1[Sin agujeros] --> A2[∇ × F = 0 → conservativo]
->     end
->     subgraph "NO Simplemente Conexo"
->     B1[Con agujeros] --> B2[∇ × F = 0 → ???]
->     B2 --> B3[Puede no ser conservativo]
->     end
->     style A2 fill:#e1ffe1
->     style B3 fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_49.svg]]
 > 
 > **Ejemplo clásico:**
 > 
@@ -3174,15 +2586,7 @@ graph TB
 > 
 > **Solución:** Definir una "rama" del potencial mediante un corte
 > 
-> ```mermaid
-> graph TD
->     A[Dominio con agujero] --> B[Hacer un corte]
->     B --> C[Región simplemente conexa]
->     C --> D[Potencial bien definido<br/>en la región cortada]
->     E[Al cruzar el corte] --> F[φ salta en 2π]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_50.svg]]
 
 ---
 
@@ -3254,33 +2658,7 @@ graph TB
 > 
 > **Árbol de conceptos:**
 > 
-> ```mermaid
-> mindmap
->   root((Potenciales))
->     Prerequisitos
->       Gradiente
->       Derivadas parciales
->       Integrales de línea
->       Rotacional
->     Temas relacionados
->       Teorema de Green
->       Teorema de Stokes
->       Teorema de Divergencia
->       Superficies de nivel
->     Aplicaciones
->       Física
->         Campos eléctricos
->         Campos gravitatorios
->         Mecánica conservativa
->       Ingeniería
->         Análisis de circuitos
->         Flujos de calor
->         Diseño estructural
->       Matemáticas
->         EDO y EDP
->         Análisis complejo
->         Geometría diferencial
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_51.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -3295,18 +2673,7 @@ graph TB
 > 
 > **Teoremas importantes:**
 > 
-> ```mermaid
-> graph TD
->     A[Teorema Fundamental<br/>Cálculo Vectorial] --> B[∫C ∇φ · dr = φB - φA]
->     C[Teorema de Green] --> D[Relaciona circulación<br/>con rotacional]
->     E[Teorema de Stokes] --> F[Generaliza Green<br/>a superficies en ℝ³]
->     G[Teorema de Divergencia] --> H[Relaciona flujo<br/>con divergencia]
->     A -.-> C
->     C -.-> E
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_52.svg]]
 
 ---
 
@@ -3339,21 +2706,7 @@ graph TB
 > 
 > **Estrategia de resolución:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo Vectorial F] --> B{¿Conservativo?}
->     B -->|Test| C{∂Q/∂x = ∂P/∂y<br/>o ∇×F=0?}
->     C -->|Sí| D[Reconstruir φ]
->     C -->|No| E[Usar integración directa<br/>parametrizar curva]
->     D --> F[Método integración directa]
->     D --> G[Método integral de línea]
->     F --> H[φ encontrado]
->     G --> H
->     H --> I[Usar teorema fundamental<br/>∫ F·dr = φB - φA]
->     style C fill:#fff4e1
->     style H fill:#e1ffe1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_53.svg]]
 
 ---
 

@@ -26,23 +26,7 @@ dg-publish: true
 > |**Generalidad**|Aplicar a cualquier transformación|Transformaciones lineales, afines|
 > |**Aplicaciones**|Problemas físicos reales|Campos electromagnéticos, fluidos|
 
-```mermaid
-graph TB
-    A[Integral Compleja<br/>en xyz] --> B[Transformación T]
-    B --> C[Integral Simple<br/>en uvw]
-    
-    B --> D[Jacobiano J]
-    D --> E[Factor de escala<br/>J du dv dw]
-    
-    C --> F[Calcular más fácil]
-    E --> F
-    F --> G[Resultado final]
-    
-    style A fill:#ffe1e1
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style G fill:#e1f5ff
-```
+![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_01.svg]]
 
 ---
 
@@ -66,20 +50,7 @@ graph TB
 > 
 > **Componentes del teorema:**
 > 
-> ```mermaid
-> graph TD
->     A[Hipótesis] --> B[T: D' → D uno a uno]
->     A --> C[T continuamente diferenciable]
->     A --> D[f continua en D]
->     E[Transformación] --> F[x = xu,v,w]
->     E --> G[y = yu,v,w]
->     E --> H[z = zu,v,w]
->     I[Jacobiano] --> J[J = det∂x,y,z/∂u,v,w]
->     K[Fórmula] --> L[∫∫∫_D f dx dy dz =<br/>∫∫∫_D' fT · J du dv dw]
->     style A fill:#fff4e1
->     style I fill:#ffe1e1
->     style L fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_02.svg]]
 > 
 > **Términos clave:**
 > 
@@ -104,17 +75,7 @@ graph TB
 > - Si $|J| < 1$ → La transformación **contrae** volúmenes
 > - Si $|J| = 1$ → La transformación **preserva** volúmenes
 > 
-> ```mermaid
-> graph LR
->     A[Cubo infinitesimal<br/>en uvw] --> B[Transformación T]
->     B --> C[Paralelepípedo<br/>en xyz]
->     A -.-> D[Volumen: du dv dw]
->     C -.-> E[Volumen: J du dv dw]
->     B -.-> F[Factor de escala: J]
->     style A fill:#fff4e1
->     style C fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_03.svg]]
 > 
 > **Analogía física:**
 > 
@@ -186,19 +147,7 @@ graph TB
 > 
 > Para rotaciones y reflexiones: $|J| = 1$
 > 
-> ```mermaid
-> graph TD
->     A[Propiedades del Jacobiano] --> B[Regla de la cadena]
->     A --> C[Inversa]
->     A --> D[J = 1 preserva volumen]
->     B --> E[J_composición = J₁ · J₂]
->     C --> F[J_inversa = 1/J]
->     D --> G[Rotaciones, traslaciones]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_04.svg]]
 
 ---
 
@@ -222,17 +171,7 @@ graph TB
 > 
 > $$\begin{cases} r = \sqrt{x^2 + y^2} \ \theta = \arctan\left(\frac{y}{x}\right) \ z = z \end{cases}$$
 > 
-> ```mermaid
-> graph TB
->     A[Punto en espacio] --> B[Coordenadas<br/>Cartesianas]
->     A --> C[Coordenadas<br/>Cilíndricas]
->     B --> D[x, y, z]
->     C --> E[r, θ, z]
->     D --> F[x² + y² + z²]
->     E --> G[r² + z²]
->     style B fill:#ffe1e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_05.svg]]
 > 
 > **Visualización:**
 > 
@@ -279,20 +218,7 @@ graph TB
 > 
 > **Regiones típicas:**
 > 
-> ```mermaid
-> graph TB
->     A[Regiones Cilíndricas] --> B[Cilindro recto]
->     A --> C[Cono]
->     A --> D[Paraboloide circular]
->     A --> E[Toro parcial]
->     B --> F[x² + y² ≤ a²]
->     C --> G[z² = x² + y²]
->     D --> H[z = x² + y²]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_06.svg]]
 > 
 > **Ejemplo de transformación:**
 > 
@@ -325,22 +251,7 @@ graph TB
 > 
 > $$\begin{cases} \rho = \sqrt{x^2 + y^2 + z^2} \ \phi = \arccos\left(\frac{z}{\sqrt{x^2+y^2+z^2}}\right) \ \theta = \arctan\left(\frac{y}{x}\right) \end{cases}$$
 > 
-> ```mermaid
-> graph TB
->     A[Punto P en espacio] --> B[ρ: radio]
->     A --> C[φ: ángulo polar]
->     A --> D[θ: ángulo azimutal]
->     B --> E[Distancia al origen<br/>0 ≤ ρ < ∞]
->     C --> F[Desde eje z<br/>0 ≤ φ ≤ π]
->     D --> G[En plano xy<br/>0 ≤ θ < 2π]
->     E --> H[ρ = 0: origen]
->     F --> I[φ = 0: eje z+<br/>φ = π: eje z-]
->     G --> J[θ = 0: eje x+]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_07.svg]]
 > 
 > **Relaciones importantes:**
 > 
@@ -386,21 +297,7 @@ graph TB
 > 
 > **Regiones típicas:**
 > 
-> ```mermaid
-> graph TB
->     A[Regiones Esféricas] --> B[Esfera]
->     A --> C[Cono]
->     A --> D[Hemisferio]
->     A --> E[Cuña esférica]
->     B --> F[x² + y² + z² ≤ a²]
->     C --> G[φ = constante]
->     D --> H[0 ≤ φ ≤ π/2]
->     E --> I[θ₁ ≤ θ ≤ θ₂]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_08.svg]]
 
 ---
 
@@ -416,35 +313,11 @@ graph TB
 > 
 > **Relaciones entre sistemas:**
 > 
-> ```mermaid
-> graph TD
->     A[Cartesianas<br/>x, y, z] --> B[Cilíndricas<br/>r, θ, z]
->     A --> C[Esféricas<br/>ρ, φ, θ]
->     B --> C
->     B -.-> D[r² = x² + y²<br/>z = z]
->     C -.-> E[ρ² = x² + y² + z²]
->     B -.-> F[ρ² = r² + z²<br/>tan φ = r/z]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#f5e1ff
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_09.svg]]
 > 
 > **Guía de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[¿Qué sistema usar?] --> B{¿Ecuación tiene<br/>x² + y² + z²?}
->     B -->|Sí| C[Esféricas]
->     B -->|No| D{¿Ecuación tiene<br/>x² + y²?}
->     D -->|Sí| E[Cilíndricas]
->     D -->|No| F{¿Simetría<br/>especial?}
->     F -->|Eje z| E
->     F -->|Radial| C
->     F -->|No| G[Cartesianas]
->     style C fill:#f5e1ff
->     style E fill:#fff4e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_10.svg]]
 
 ---
 
@@ -607,27 +480,7 @@ graph TB
 
 > [!quote] 🌟 Progresión del Aprendizaje
 > 
-> ```mermaid
-> mindmap
->   root((Cambio de<br/>Variable))
->     Fundamentos
->       Jacobiano
->       Transformaciones
->       Factor de escala
->     Sistemas
->       Cilíndricas
->       Esféricas
->       Generales
->     Aplicaciones
->       Simplificar integrales
->       Aprovechar simetría
->       Física matemática
->     Próximos Temas
->       Integrales de línea
->       Integrales de superficie
->       Teorema de Stokes
->       Teorema de la Divergencia
-> ```
+> ![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3_11.svg]]
 > 
 > **Roadmap:**
 > 

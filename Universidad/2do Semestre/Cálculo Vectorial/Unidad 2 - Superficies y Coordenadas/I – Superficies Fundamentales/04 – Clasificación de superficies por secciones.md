@@ -768,43 +768,7 @@ dg-publish: true
 
 ## 🎨 Diagrama de Flujo de Clasificación
 
-```mermaid
-graph TD
-    A[Analizar secciones z = k] --> B{¿Qué curvas?}
-    
-    B -->|Elipses| C{¿Crecen o decrecen?}
-    B -->|Hipérbolas| D{¿Cambian orientación?}
-    
-    C -->|Decrecen| E{¿Hasta qué?}
-    C -->|Crecen| F{¿Desde qué?}
-    
-    E -->|Hasta punto| G[ELIPSOIDE]
-    
-    F -->|Desde punto| H{¿Cómo crecen?}
-    F -->|Desde elipse mínima| I[HIPERBOLOIDE 1 HOJA]
-    
-    H -->|∝ √k| J[PARABOLOIDE ELÍPTICO]
-    H -->|∝ k lineal| K[CONO ELÍPTICO]
-    
-    D -->|Sí + rectas en k=0| L[PARABOLOIDE HIPERBÓLICO]
-    D -->|No| M{¿Hay gap?}
-    
-    M -->|Sí| N[HIPERBOLOIDE 2 HOJAS]
-    M -->|No| O{Verificar secciones verticales}
-    
-    style G fill:#90EE90
-    style J fill:#FFD700
-    style L fill:#FF6B6B
-    style I fill:#87CEEB
-    style N fill:#DDA0DD
-    style K fill:#F0E68C
-````
-
-## 💡 Consejos de Clasificación
-
-> [!tip] 🎯 Trucos para Identificar Rápidamente
-> **Truco 1: Mira primero z = 0**
-> ```
+![[Diagramas/04_–_Clasificación_de_superficies_por_secciones_01.svg]]
 > La sección z = 0 revela mucho:
 > 
 > → Elipse/círculo → puede ser elipsoide, paraboloide elíptico, 

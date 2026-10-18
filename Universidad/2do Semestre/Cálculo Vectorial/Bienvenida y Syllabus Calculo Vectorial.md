@@ -67,21 +67,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ```mermaid
-> graph LR
->     A[📐 Cálculo\nVectorial] --> B[Unidad 1\nGeometría Analítica R³]
->     A --> C[Unidad 2\nSuperficies y Coordenadas]
->     A --> D[Unidad 3\nFunciones de Varias Variables]
->     A --> E[Unidad 4\nOptimización]
->     A --> F[Unidad 5\nIntegrales de Línea y Dobles]
->     A --> G[Unidad 6\nIntegrales Triples y Superficie]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
->     style G fill:#e1fff4
-> ```
+> ![[Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

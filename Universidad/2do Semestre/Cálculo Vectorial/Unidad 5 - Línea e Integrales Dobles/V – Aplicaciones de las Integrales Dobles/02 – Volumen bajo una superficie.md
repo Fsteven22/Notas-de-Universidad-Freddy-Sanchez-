@@ -26,22 +26,7 @@ dg-publish: true
 > |**Manufactura**|Volumen de piezas irregulares|Control de calidad|
 > |**Geografía**|Calcular volúmenes de lagos, montañas|Topografía|
 
-```mermaid
-graph TB
-    A["Superficie z = f(x,y)"] --> B{Tipo de Volumen}
-    B --> C[Sobre región R<br/>en plano xy]
-    B --> D[Entre dos<br/>superficies]
-    C --> E["V = ∬R f(x,y) dA"]
-    D --> F["V = ∬R [f₂(x,y) - f₁(x,y)] dA"]
-    E --> G[Volumen bajo superficie]
-    F --> G
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style G fill:#f0e1ff
-```
+![[Diagramas/02_–_Volumen_bajo_una_superficie_01.svg]]
 
 ---
 
@@ -87,16 +72,7 @@ graph TB
 > 
 > **Visualización del elemento diferencial:**
 > 
-> ```mermaid
-> graph TD
->     A[Punto x,y en R] --> B[Elemento dA = dx·dy]
->     B --> C[Altura f x,y]
->     C --> D["Volumen dV = f(x,y)·dA"]
->     D --> E[Sumar todos los dV<br/>∬R f x,y dA]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Volumen_bajo_una_superficie_02.svg]]
 
 ### 🎨 Interpretación Física
 
@@ -352,18 +328,7 @@ graph TB
 > 
 > **FASE 1: ANÁLISIS PRELIMINAR**
 > 
-> ```mermaid
-> flowchart TD
->     A[Leer problema] --> B[Identificar superficie z=fx,y]
->     B --> C[Identificar región R]
->     C --> D{¿Una o dos superficies?}
->     D -->|Una| E[V = ∬ f dA]
->     D -->|Dos| F[V = ∬ f₂-f₁ dA]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Volumen_bajo_una_superficie_03.svg]]
 > 
 > **FASE 2: CONFIGURACIÓN DE LA REGIÓN**
 > 
@@ -664,21 +629,7 @@ graph TB
 > 
 > **Diagrama de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema de volumen] --> B{¿Tipo de región?}
->     B -->|Circular/Radial| C[Coordenadas polares]
->     B -->|Rectangular| D[Cartesianas]
->     B -->|Irregular| E{¿Qué orden?}
->     C --> F[V = ∬ f·r dr dθ]
->     D --> G[V = ∬ f dx dy]
->     E -->|Tipo I| H[V = ∫∫ f dy dx]
->     E -->|Tipo II| I[V = ∫∫ f dx dy]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
->     style F fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Volumen_bajo_una_superficie_04.svg]]
 
 ---
 
@@ -753,18 +704,7 @@ graph TB
 > 
 > **Progresión del aprendizaje:**
 > 
-> ```mermaid
-> graph LR
->     A[Volumen bajo<br/>superficie] --> B[Integrales<br/>triples]
->     B --> C[Coordenadas<br/>cilíndricas]
->     C --> D[Coordenadas<br/>esféricas]
->     A --> E[Centro de<br/>masa]
->     A --> F[Momento de<br/>inercia]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Volumen_bajo_una_superficie_05.svg]]
 
 ---
 

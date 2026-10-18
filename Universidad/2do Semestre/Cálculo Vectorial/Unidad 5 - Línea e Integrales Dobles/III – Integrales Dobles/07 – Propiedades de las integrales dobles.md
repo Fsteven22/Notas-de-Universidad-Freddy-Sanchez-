@@ -25,26 +25,7 @@ dg-publish: true
 > |**Optimización**|Elegir mejor método de cálculo|Simetría, separabilidad|
 > |**Teoría**|Demostrar teoremas generales|Convergencia, existencia|
 
-```mermaid
-graph TB
-    A[Propiedades de<br/>Integrales Dobles] --> B[Algebraicas]
-    A --> C[Geométricas]
-    A --> D[Comparativas]
-    
-    B --> E[Linealidad]
-    B --> F[Aditividad]
-    
-    C --> G[Simetría]
-    C --> H[Descomposición]
-    
-    D --> I[Monotonía]
-    D --> J[Acotación]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_01.svg]]
 
 ---
 
@@ -80,17 +61,7 @@ graph TB
 
 **Flujo de aplicación:**
 
-```mermaid
-flowchart LR
-    A["∬ₐ(af + bg)dA"] --> B[Aplicar linealidad]
-    B --> C["a∬ₐf dA + b∬ₐg dA"]
-    C --> D[Calcular cada<br/>integral por separado]
-    D --> E[Sumar resultados]
-    
-    style A fill:#ffe1e1
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_02.svg]]
 
 ### 🎯 Ejemplos de Linealidad
 
@@ -175,20 +146,7 @@ flowchart LR
 
 **Proceso de descomposición:**
 
-```mermaid
-flowchart TD
-    A[Región R compleja] --> B{¿Se puede dividir<br/>en partes más simples?}
-    B -->|Sí| C[Identificar subregiones R₁,R₂,...,Rₙ]
-    B -->|No| D[Calcular directamente]
-    
-    C --> E[Verificar que sean disjuntas]
-    E --> F[∬ᵣ₁f + ∬ᵣ₂f + ... + ∬ᵣₙf]
-    F --> G[Sumar resultados]
-    
-    style A fill:#ffe1e1
-    style C fill:#fff4e1
-    style G fill:#e1ffe1
-```
+![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_03.svg]]
 
 ### 🎨 Ejemplos de Aditividad
 
@@ -285,20 +243,7 @@ flowchart TD
 > 
 > Si una superficie está siempre por encima de otra, su volumen asociado es mayor.
 
-```mermaid
-graph TB
-    A["f(x,y) ≤ g(x,y) en R"] --> B[Volumen bajo f]
-    A --> C[Volumen bajo g]
-    
-    B --> D[∬ᵣf dA]
-    C --> E[∬ᵣg dA]
-    
-    D --> F[∬ᵣf dA ≤ ∬ᵣg dA]
-    E --> F
-    
-    style A fill:#fff4e1
-    style F fill:#e1ffe1
-```
+![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_04.svg]]
 
 ### 🎯 Desigualdades y Acotación
 
@@ -414,20 +359,7 @@ graph TB
 
 **Diagrama de decisión:**
 
-```mermaid
-flowchart TD
-    A[Integral ∬ᵣf dA] --> B{¿Región R<br/>simétrica?}
-    B -->|No| C[Calcular directamente]
-    B -->|Sí| D{¿Función f<br/>par o impar?}
-    
-    D -->|Función PAR| E[Calcular en<br/>mitad de R<br/>y multiplicar por 2]
-    D -->|Función IMPAR| F[Resultado = 0<br/>¡No calcular!]
-    D -->|Ni par ni impar| C
-    
-    style F fill:#e1ffe1
-    style E fill:#fff4e1
-    style C fill:#ffe1e1
-```
+![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_05.svg]]
 
 ### 📐 Ejemplos de Simetría
 
@@ -550,22 +482,7 @@ flowchart TD
 > 
 > **Checklist de optimización:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral doble dada] --> B{¿Hay simetría?}
->     B -->|Sí, función impar| C[Resultado = 0<br/>¡FIN!]
->     B -->|Sí, función par| D[Calcular mitad<br/>y multiplicar]
->     B -->|No| E{¿Función separable?}
->     E -->|Sí| F[Factorizar en<br/>producto de integrales]
->     E -->|No| G{¿Región compleja?}
->     G -->|Sí| H[Descomponer<br/>en subregiones]
->     G -->|No| I{¿Solo estimación?}
->     I -->|Sí| J[Usar acotación<br/>m·A ≤ I ≤ M·A]
->     I -->|No| K[Calcular directamente]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
->     style J fill:#e1f5ff
-> ```
+> ![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_06.svg]]
 > 
 > **Orden de prioridad:**
 > 
@@ -683,23 +600,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Propiedades de<br/>Integrales Dobles))
->     Algebraicas
->       Linealidad
->       Aditividad
->     Comparación
->       Monotonía
->       Acotación
->       Valor medio
->     Simetría
->       Par/Impar
->       Regiones simétricas
->     Especiales
->       Separabilidad
->       Valor absoluto
-> ```
+> ![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_07.svg]]
 > 
 > **Próximos pasos:**
 > 
@@ -713,21 +614,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Propiedades] --> B[Coord. Polares]
->     B --> C[Aplicaciones Físicas]
->     C --> D[Centro de Masa]
->     D --> E[Momentos de Inercia]
->     A --> F[Int. Triples]
->     F --> G[Coord. Cilíndricas]
->     G --> H[Coord. Esféricas]
->     A -.-> I[Teorema de Green]
->     I -.-> J[Teorema de Stokes]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/07_–_Propiedades_de_las_integrales_dobles_08.svg]]
 
 ---
 

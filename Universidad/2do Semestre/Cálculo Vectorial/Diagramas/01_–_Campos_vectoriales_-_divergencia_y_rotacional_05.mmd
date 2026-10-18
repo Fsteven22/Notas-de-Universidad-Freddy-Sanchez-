@@ -1,0 +1,11 @@
+graph TD
+    A[Campo Vectorial] --> B{Divergencia}
+    B -->|div > 0| C[Fuente]
+    B -->|div < 0| D[Sumidero]
+    B -->|div = 0| E[Sin fuente/sumidero]
+    C --> F[Vectores salen<br/>del punto]
+    D --> G[Vectores entran<br/>al punto]
+    E --> H[Flujo equilibrado<br/>entra = sale]
+    style C fill:#ffe1e1
+    style D fill:#e1e1ff
+    style E fill:#e1ffe1

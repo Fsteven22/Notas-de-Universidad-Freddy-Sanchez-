@@ -22,22 +22,7 @@ dg-publish: true
 > |**Límites claros**|Rangos de integración más naturales|Radio, ángulo, altura|
 > |**Cálculos físicos**|Problemas con rotación|Momento de inercia, flujo|
 
-```mermaid
-graph LR
-    A[Región 3D] --> B{¿Tiene simetría<br/>cilíndrica?}
-    B -->|Sí| C[Usar Cilíndricas]
-    B -->|No| D[Considerar otro sistema]
-    
-    C --> E[Simplificar integral]
-    E --> F[Cálculo más fácil]
-    
-    D --> G[Cartesianas o Esféricas]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style F fill:#e1ffe1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_01.svg]]
 
 ---
 
@@ -83,21 +68,7 @@ graph LR
 >    x    proyección
 > ```
 
-```mermaid
-graph TD
-    A[Punto P r,θ,z] --> B[r: radio en xy]
-    A --> C[θ: ángulo azimutal]
-    A --> D[z: altura]
-    
-    B --> E[Distancia al eje z]
-    C --> F[Rotación en plano xy]
-    D --> G[Elevación vertical]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_02.svg]]
 
 ---
 
@@ -149,20 +120,7 @@ graph TD
 > |**Cilíndrico**|$r,dr,d\theta,dz$|$r$|
 > |**Esférico**|$\rho^2\sin\phi,d\rho,d\theta,d\phi$|$\rho^2\sin\phi$|
 
-```mermaid
-graph TD
-    A[dV en cilíndricas] --> B[r dr dθ dz]
-    
-    B --> C[dr: cambio radial]
-    B --> D[r·dθ: arco]
-    B --> E[dz: altura]
-    
-    D --> F[El factor r<br/>viene del arco]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_03.svg]]
 
 ---
 
@@ -196,22 +154,7 @@ graph TD
 > - **$\theta$:** De $\theta_1$ a $\theta_2$ (usualmente $0$ a $2\pi$ para cilindros completos)
 > - **$z$:** De $z_1(r, \theta)$ a $z_2(r, \theta)$
 
-```mermaid
-graph TD
-    A[Configurar Integral] --> B[1. Identificar región E]
-    B --> C[2. Determinar límites]
-    C --> D[3. Expresar f en r,θ,z]
-    D --> E[4. Incluir factor r]
-    E --> F[5. Integrar]
-    
-    C --> G[Límites para r]
-    C --> H[Límites para θ]
-    C --> I[Límites para z]
-    
-    style A fill:#e1f5ff
-    style E fill:#ffe1e1
-    style F fill:#e1ffe1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_04.svg]]
 
 ---
 
@@ -460,26 +403,7 @@ graph TD
 > - $0 \leq \theta \leq 2\pi$
 > - $kr \leq z \leq h$
 
-```mermaid
-graph TD
-    A[Regiones Comunes] --> B[Cilindro Sólido]
-    A --> C[Cilindro Hueco]
-    A --> D[Sector]
-    A --> E[Paraboloide]
-    A --> F[Cono]
-    
-    B --> G[0 ≤ r ≤ a]
-    C --> H[a ≤ r ≤ b]
-    D --> I[α ≤ θ ≤ β]
-    E --> J[z = r²]
-    F --> K[z = kr]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style E fill:#ffe1e1
-    style F fill:#f0e1ff
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_05.svg]]
 
 ---
 
@@ -562,29 +486,7 @@ graph TD
 > 
 > **Paso 5: No olvidar el factor $r$**
 
-```mermaid
-flowchart TD
-    A[Inicio] --> B[Identificar simetría]
-    B --> C{¿Cilíndrica?}
-    C -->|Sí| D[Convertir ecuaciones]
-    C -->|No| E[Usar otro sistema]
-    
-    D --> F[Determinar límites]
-    F --> G[r: radio]
-    F --> H[θ: ángulo]
-    F --> I[z: altura]
-    
-    G --> J[Escribir integral]
-    H --> J
-    I --> J
-    
-    J --> K[Incluir factor r]
-    K --> L[Integrar]
-    
-    style C fill:#fff4e1
-    style K fill:#ffe1e1
-    style L fill:#e1ffe1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_06.svg]]
 
 ---
 
@@ -718,24 +620,7 @@ flowchart TD
 > |**Intuición**|Familiar|Requiere práctica|
 > |**Mejor para**|Cajas, cubos|Cilindros, tubos|
 
-```mermaid
-graph LR
-    A[Problema con cilindro] --> B{¿Sistema?}
-    
-    B -->|Cartesianas| C[Límites con √]
-    B -->|Cilíndricas| D[Límites constantes]
-    
-    C --> E[Integral complicada]
-    D --> F[Integral simple]
-    
-    E --> G[Más tiempo]
-    F --> H[Menos tiempo]
-    
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-    style F fill:#e1ffe1
-    style H fill:#e1ffe1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_07.svg]]
 
 ---
 
@@ -743,30 +628,7 @@ graph LR
 
 ### Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Integrales Triples<br/>Cilíndricas))
-    Coordenadas
-      r: radio
-      θ: ángulo
-      z: altura
-    Jacobiano
-      Factor r
-      dV = r dr dθ dz
-    Regiones
-      Cilindros
-      Conos
-      Paraboloides
-    Aplicaciones
-      Volumen
-      Masa
-      Centro de masa
-      Momento inercia
-    Ventajas
-      Simetría axial
-      Límites simples
-      Cálculo rápido
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_08.svg]]
 
 ### Tabla Resumen de Fórmulas
 
@@ -780,24 +642,7 @@ mindmap
 
 ### Diagrama de Flujo de Decisión
 
-```mermaid
-flowchart TD
-    A[Integral triple] --> B{¿Simetría?}
-    
-    B -->|Cilíndrica/axial| C[Usar Cilíndricas]
-    B -->|Esférica| D[Usar Esféricas]
-    B -->|Ninguna| E[Usar Cartesianas]
-    
-    C --> F[Identificar r, θ, z]
-    F --> G[Configurar límites]
-    G --> H[Incluir factor r]
-    H --> I[Integrar]
-    
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style H fill:#ffe1e1
-    style I fill:#e1ffe1
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_09.svg]]
 
 ---
 
@@ -823,25 +668,7 @@ flowchart TD
 > |**Aplicado**|Ecuaciones diferenciales|EDPs en cilíndricas|
 > |**Profesional**|Análisis vectorial|Operadores en cilíndricas|
 
-```mermaid
-graph LR
-    A[Coordenadas Cilíndricas] --> B[Integrales Dobles]
-    B --> C[Integrales Triples<br/>Cilíndricas]
-    C --> D[Integrales Triples<br/>Esféricas]
-    
-    C --> E[Aplicaciones Físicas]
-    E --> F[Momento de Inercia]
-    E --> G[Campos Vectoriales]
-    
-    C --> H[EDPs]
-    H --> I[Ecuación de Calor]
-    H --> J[Ecuación de Onda]
-    
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#e1f5ff
-    style H fill:#f0e1ff
-```
+![[Diagramas/02_–_Integrales_triples_en_coordenadas_cilíndricas_10.svg]]
 
 ---
 

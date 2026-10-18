@@ -26,24 +26,7 @@ dg-publish: true
 > |**Optimización**|Encontrar caminos óptimos|Menor trabajo|
 > |**Criterios**|Determinar si campo es conservativo|Prueba del rotacional|
 
-```mermaid
-graph TB
-    A[Teorema Fundamental<br/>del Cálculo] --> B[Una Variable]
-    A --> C[Varias Variables]
-    
-    B --> D["∫ₐᵇ f'(x)dx = f(b) - f(a)"]
-    
-    C --> E[Teorema Fundamental<br/>de Integrales de Línea]
-    E --> F["∫_C ∇f·dr = f(B) - f(A)"]
-    
-    F --> G[Independencia<br/>del camino]
-    F --> H[Campos<br/>conservativos]
-    
-    style A fill:#e1f5ff
-    style E fill:#e1ffe1
-    style G fill:#fff4e1
-    style H fill:#ffe1e1
-```
+![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_01.svg]]
 
 ---
 
@@ -75,20 +58,7 @@ graph TB
 > 
 > **Clasificación de campos:**
 > 
-> ```mermaid
-> graph TD
->     A[Campos Vectoriales] --> B[Conservativos]
->     A --> C[No Conservativos]
->     B --> D[∃ función potencial f<br/>F = ∇f]
->     B --> E[Rotacional = 0<br/>∇ × F = 0]
->     B --> F[Independencia<br/>del camino]
->     C --> G[Ejemplo: Fricción]
->     C --> H[Ejemplo: Magnético]
->     C --> I[Depende del camino]
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_02.svg]]
 > 
 > **Ejemplos concretos:**
 > 
@@ -133,18 +103,7 @@ graph TB
 > 
 > **Comparación con cálculo de una variable:**
 > 
-> ```mermaid
-> graph LR
->     A[Una Variable] --> B[∫ₐᵇ f' x dx]
->     B --> C[f b - f a]
->     D[Varias Variables] --> E[∫_C ∇f·dr]
->     E --> F[f B - f A]
->     C --> G[Mismo Principio:<br/>Antiderivada en extremos]
->     F --> G
->     style A fill:#e1f5ff
->     style D fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_03.svg]]
 > 
 > **Condiciones necesarias:**
 > 
@@ -157,19 +116,7 @@ graph TB
 > 
 > **Implicaciones:**
 > 
-> ```mermaid
-> graph TD
->     A[F = ∇f] --> B[∫_C F·dr = f B - f A]
->     B --> C[Independencia<br/>del camino]
->     B --> D[∫ cerrada = 0]
->     B --> E[Simplificación<br/>cálculos]
->     C --> F[Todos los caminos<br/>de A a B dan igual]
->     D --> G[Curvas cerradas<br/>resultado cero]
->     E --> H[Solo evaluar<br/>en extremos]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_04.svg]]
 
 ### 🔍 Demostración (Esquemática)
 
@@ -202,19 +149,7 @@ graph TB
 > 
 > **Diagrama conceptual:**
 > 
-> ```mermaid
-> flowchart TD
->     A[∫_C ∇f·dr] --> B["Parametrizar:<br/>r t, t ∈ [a,b]"]
->     B --> C["∫ₐᵇ ∇f r t ·r' t dt"]
->     C --> D["Regla cadena:<br/>d/dt[f r t "]
->     D --> E["∫ₐᵇ d/dt[f r t ] dt"]
->     E --> F[TFC una variable]
->     F --> G[f r b - f r a]
->     G --> H[f B - f A]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_05.svg]]
 
 ---
 
@@ -270,17 +205,7 @@ graph TB
 > 
 > **Diagrama de implicaciones:**
 > 
-> ```mermaid
-> graph TD
->     A[F = ∇f<br/>Existe potencial] --> B[∇ × F = 0<br/>Rotacional nulo]
->     B --> C[Independencia<br/>del camino]
->     C --> D[∫ cerrada = 0]
->     D -.->|Dominio<br/>simplemente<br/>conexo| A
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_06.svg]]
 > 
 > **Ejemplo de verificación:**
 > 
@@ -396,22 +321,7 @@ graph TB
 > 
 > **Diagrama del proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = ⟨P, Q⟩] --> B{¿Es conservativo?}
->     B -->|No| C[❌ No existe<br/>función potencial]
->     B -->|Sí| D[Método 1:<br/>Integración]
->     B -->|Sí| E[Método 2:<br/>Integral de línea]
->     D --> F[f = ∫P dx + g y]
->     F --> G[Determinar g y]
->     E --> H[Elegir camino simple]
->     H --> I[Calcular integral]
->     G --> J[✅ Función potencial f]
->     I --> J
->     style B fill:#fff4e1
->     style J fill:#e1ffe1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_07.svg]]
 
 ---
 
@@ -486,16 +396,7 @@ graph TB
 > 
 > **Resumen visual:**
 > 
-> ```mermaid
-> graph TB
->     A[F = ⟨3x²+2y, 2x+4y³⟩] --> B[Verificar:<br/>∂P/∂y = ∂Q/∂x]
->     B --> C[✓ Conservativo]
->     C --> D[Hallar f:<br/>x³ + 2xy + y⁴]
->     D --> E[Aplicar TFIL]
->     E --> F[f 2,1 - f 0,0 = 13]
->     style C fill:#e1ffe1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_08.svg]]
 
 ### 📝 Problema 2: Comparación de Caminos
 
@@ -640,17 +541,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[F = ⟨-y, x⟩<br/>Campo rotacional] --> B[NO conservativo]
->     B --> C[Depende del camino]
->     C --> D[C₁: semicírculo<br/>∫ = -π]
->     C --> E[C₂: segmento<br/>∫ = 0]
->     D --> F[❌ Resultados<br/>diferentes]
->     E --> F
->     style B fill:#ffe1e1
->     style F fill:#ffcccc
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_09.svg]]
 
 ---
 
@@ -722,16 +613,7 @@ graph TB
 > 
 > **Diagrama energético:**
 > 
-> ```mermaid
-> graph LR
->     A[Estado inicial<br/>z=0, U=0] --> B[Aplicar fuerza]
->     B --> C[Estado final<br/>z=h, U=mgh]
->     D[Trabajo W = -mgh] --> E[ΔU = +mgh]
->     E --> F[W = -ΔU ✓]
->     style A fill:#e1ffe1
->     style C fill:#ffe1e1
->     style F fill:#fff4e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_10.svg]]
 
 ### 🌡️ Campos de Temperatura
 
@@ -822,16 +704,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph TD
->     A[Curva Cerrada C] --> B{Campo F}
->     B -->|Conservativo| C[∮ F·dr = 0<br/>Sin circulación]
->     B -->|NO conservativo| D[∮ F·dr ≠ 0<br/>Hay circulación]
->     C --> E[Ejemplo:<br/>Gravitacional]
->     D --> F[Ejemplo:<br/>Magnético]
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_11.svg]]
 > 
 > **Ejemplo: Campo radial**
 > 
@@ -956,23 +829,7 @@ graph TB
 > 
 > **Diagrama de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema de<br/>integral de línea] --> B{¿Campo<br/>conservativo?}
->     B -->|Verificar| C{¿∂P/∂y = ∂Q/∂x?}
->     C -->|Sí| D[✅ Conservativo]
->     C -->|No| E[❌ NO conservativo]
->     D --> F[Hallar potencial f]
->     F --> G[Aplicar TFIL:<br/>f B - f A]
->     G --> H[✅ Solución<br/>rápida]
->     E --> I[Parametrizar C]
->     I --> J[Calcular integral<br/>directamente]
->     J --> K[✅ Solución<br/>trabajosa]
->     style D fill:#e1ffe1
->     style E fill:#ffe1e1
->     style H fill:#ccffcc
->     style K fill:#ffcccc
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_12.svg]]
 
 ### 🚫 Errores Comunes
 
@@ -1142,22 +999,7 @@ graph TB
 > 
 > **Jerarquía de teoremas fundamentales:**
 > 
-> ```mermaid
-> graph TD
->     A[Teorema Fundamental<br/>del Cálculo] --> B[TFIL<br/>Integrales de Línea]
->     B --> C[Teorema de Green<br/>ℝ²]
->     C --> D[Teorema de Stokes<br/>ℝ³]
->     D --> E[Teorema de la Divergencia<br/>ℝ³]
->     B --> F[Campos<br/>Conservativos]
->     C --> G[Rotacional<br/>en 2D]
->     D --> H[Rotacional<br/>en 3D]
->     E --> I[Divergencia]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_13.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -1190,37 +1032,7 @@ graph TB
 
 > [!success] ✅ Mapa Conceptual Final
 > 
-> ```mermaid
-> mindmap
->   root((TFIL))
->     Condiciones
->       Campo conservativo
->         F = ∇f
->         ∇ × F = 0
->       Dominio conexo
->         Sin agujeros
->         Simplemente conexo
->     Fórmula Principal
->       ∫_C F·dr = f B - f A
->       Independencia camino
->       Curva cerrada = 0
->     Hallar Potencial
->       Integración directa
->       Integral de línea
->       Verificar ∇f = F
->     Aplicaciones
->       Física
->         Trabajo
->         Energía
->       Optimización
->         Menor camino
->       Ingeniería
->         Diseño
->     Extensiones
->       Teorema Green
->       Teorema Stokes
->       Divergencia
-> ```
+> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_14.svg]]
 > 
 > **Fórmulas clave:**
 > 

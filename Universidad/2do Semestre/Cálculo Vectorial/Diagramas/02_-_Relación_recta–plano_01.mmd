@@ -1,0 +1,27 @@
+graph TD
+    A[Relación Recta-Plano] --> B{v · n = ?}
+    
+    B -->|= 0| C{P₀ ∈ π?}
+    B -->|≠ 0| D[SECANTE]
+    
+    C -->|Sí| E[CONTENIDA]
+    C -->|No| F[PARALELA]
+    
+    D --> G{v ∥ n?}
+    G -->|Sí| H[PERPENDICULAR]
+    G -->|No| I[SECANTE OBLICUA]
+    
+    E --> E1[θ = 0°<br/>∞ puntos comunes]
+    F --> F1[θ = 0°<br/>0 puntos comunes<br/>Distancia constante]
+    H --> H1[θ = 90°<br/>1 punto común<br/>Intersección normal]
+    I --> I1[0° < θ < 90°<br/>1 punto común<br/>Intersección oblicua]
+    
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#fff3e0
+    style D fill:#e8f5e9
+    style E fill:#c8e6c9
+    style F fill:#fff9c4
+    style G fill:#fff3e0
+    style H fill:#bbdefb
+    style I fill:#ffccbc

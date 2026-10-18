@@ -26,22 +26,7 @@ dg-publish: true
 > |**Promedios**|Valores promedio en regiones|Temperatura promedio en una región|
 > |**Centro de masa**|Ubicación del centro de gravedad|Diseño estructural|
 
-```mermaid
-graph TB
-    A[Integral Simple ∫] --> B[Integral Doble ∬]
-    B --> C[Integral Triple ∭]
-    
-    A --> D[Área bajo curva<br/>1 variable]
-    B --> E[Volumen bajo superficie<br/>2 variables]
-    C --> F[Hiperespacio<br/>3 variables]
-    
-    B --> G[Coordenadas<br/>Rectangulares]
-    B --> H[Coordenadas<br/>Polares]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_–_Integral_doble_01.svg]]
 
 ---
 
@@ -73,17 +58,7 @@ graph TB
 > 
 > **Visualización del proceso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Región R en el plano xy] --> B[Dividir en rectángulos]
->     B --> C[n = 4 rectángulos]
->     C --> D[n = 16 rectángulos]
->     D --> E[n = 64 rectángulos]
->     E --> F[n → ∞]
->     F --> G[Integral Doble ∬R f dA]
->     style A fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integral_doble_02.svg]]
 > 
 > **Interpretaciones:**
 > 
@@ -115,19 +90,7 @@ graph TB
 > 
 > **Proceso de integración iterada:**
 > 
-> ```mermaid
-> graph LR
->     A[∬R f x,y dA] --> B{Elegir orden}
->     B -->|dx dy| C[∫c→d ∫a→b f dx dy]
->     B -->|dy dx| D[∫a→b ∫c→d f dy dx]
->     C --> E[Primero integrar<br/>respecto a x]
->     E --> F[Luego integrar<br/>respecto a y]
->     D --> G[Primero integrar<br/>respecto a y]
->     G --> H[Luego integrar<br/>respecto a x]
->     style A fill:#e1f5ff
->     style E fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Integral_doble_03.svg]]
 > 
 > **Ejemplo ilustrativo:**
 > 
@@ -259,17 +222,7 @@ graph TB
 > 
 > **Proceso de determinación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Región R] --> B{¿Líneas verticales<br/>entran y salen<br/>una vez?}
->     B -->|Sí| C[Región Tipo I]
->     B -->|No| D[Tipo II o dividir]
->     C --> E["Identificar a y b<br/>límites de x"]
->     E --> F["Identificar g₁ x y g₂ x<br/>límites de y"]
->     F --> G["∫ₐᵇ ∫_{g₁ x}^{g₂ x} f dy dx"]
->     style C fill:#e1ffe1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Integral_doble_04.svg]]
 
 ### 📏 Regiones Tipo II (horizontalmente simples)
 
@@ -362,16 +315,7 @@ graph TB
 > 
 > **Proceso de cambio:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral dada] --> B[Dibujar región R]
->     B --> C[Identificar tipo actual]
->     C --> D[Redescribir región<br/>en otro tipo]
->     D --> E[Reescribir límites]
->     E --> F[Plantear nueva integral]
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integral_doble_05.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -567,17 +511,7 @@ graph TB
 > - **Momentos:** Miden la "tendencia a rotar" alrededor de un eje
 > - **Centro de masa:** Punto de equilibrio perfecto
 > 
-> ```mermaid
-> graph TB
->     A[Lámina con densidad ρ x,y] --> B[Calcular masa m]
->     B --> C[Calcular momentos Mₓ, Mᵧ]
->     C --> D[Centro de masa x̄,ȳ]
->     B --> E[∬R ρ dA]
->     C --> F[∬R y·ρ dA, ∬R x·ρ dA]
->     D --> G[ x̄,ȳ = Mᵧ/m, Mₓ/m]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integral_doble_06.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -725,16 +659,7 @@ graph TB
 > |Región rectangular|❌ No (usar rectangulares)|
 > |Función sin simetría circular|❌ Probablemente no|
 > 
-> ```mermaid
-> graph TB
->     A[¿Qué sistema usar?] --> B{¿Región circular<br/>o función con x²+y²?}
->     B -->|Sí| C[Coordenadas Polares]
->     B -->|No| D[Coordenadas Rectangulares]
->     C --> E[dA = r dr dθ]
->     D --> F[dA = dx dy]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Integral_doble_07.svg]]
 
 ### 🎯 Ejemplos en Coordenadas Polares
 
@@ -853,34 +778,7 @@ graph TB
 
 ### Diagrama de Flujo General
 
-```mermaid
-flowchart TD
-    A[Integral Doble ∬R f x,y dA] --> B{¿Tipo de región?}
-    
-    B -->|Rectangular| C[Límites constantes<br/>∫ₐᵇ ∫_c^d f dy dx]
-    B -->|Tipo I| D[0 ≤ x ≤ b<br/>g₁ x ≤ y ≤ g₂ x]
-    B -->|Tipo II| E[c ≤ y ≤ d<br/>h₁ y ≤ x ≤ h₂ y]
-    B -->|Circular/Radial| F[Coordenadas Polares]
-    
-    D --> G["∫ₐᵇ ∫_{g₁ x}^{g₂ x} f dy dx"]
-    E --> H["∫_c^d ∫_{h₁ y}^{h₂ y} f dx dy"]
-    F --> I["∫_α^β ∫_{r₁}^{r₂} f r dr dθ"]
-    
-    C --> J[Calcular]
-    G --> K{¿Integral difícil?}
-    H --> K
-    
-    K -->|Sí| L[Cambiar orden]
-    K -->|No| J
-    L --> J
-    
-    I --> M[No olvidar factor r]
-    M --> J
-    
-    style A fill:#e1f5ff
-    style F fill:#e1ffe1
-    style J fill:#fff4e1
-```
+![[Diagramas/01_–_Integral_doble_08.svg]]
 
 > [!note] 📋 Tablas de Referencia Rápida
 > 
@@ -1060,27 +958,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integrales<br/>Dobles))
->     Conceptos
->       Definición
->       Teorema de Fubini
->       Elemento de área
->     Regiones
->       Tipo I
->       Tipo II
->       Cambio de orden
->     Coordenadas
->       Rectangulares
->       Polares
->       Factor r
->     Aplicaciones
->       Volúmenes
->       Masa
->       Centro de masa
->       Área
-> ```
+> ![[Diagramas/01_–_Integral_doble_09.svg]]
 > 
 > **Progresión natural:**
 > 
@@ -1094,19 +972,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Integrales Dobles] --> B[Integrales Triples]
->     B --> C[Coordenadas Cilíndricas]
->     B --> D[Coordenadas Esféricas]
->     C --> E[Integrales de Superficie]
->     D --> E
->     E --> F[Teorema de Stokes]
->     E --> G[Teorema de Gauss]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Integral_doble_10.svg]]
 > 
 > **Conceptos clave para lo que sigue:**
 > 

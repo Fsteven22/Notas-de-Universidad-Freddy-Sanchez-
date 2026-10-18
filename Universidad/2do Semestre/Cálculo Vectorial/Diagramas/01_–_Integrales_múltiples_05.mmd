@@ -1,0 +1,11 @@
+graph TD
+    A[Sólido E en R³] --> B[Dividir en<br/>pequeñas cajas]
+    B --> C[Evaluar f en<br/>cada caja]
+    C --> D[Multiplicar por<br/>volumen ΔV_i]
+    D --> E[Sumar todas<br/>las contribuciones]
+    E --> F{Refinar<br/>partición}
+    F -->|n → ∞| G[Valor exacto<br/>de la integral]
+    F -->|Más divisiones| B
+    style A fill:#e1f5ff
+    style D fill:#fff4e1
+    style G fill:#e1ffe1

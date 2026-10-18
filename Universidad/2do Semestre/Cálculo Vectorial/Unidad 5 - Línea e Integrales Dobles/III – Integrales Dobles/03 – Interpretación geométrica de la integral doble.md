@@ -25,22 +25,7 @@ dg-publish: true
 > |**Probabilidad**|Funciones de densidad conjunta|Estadística, ciencia de datos|
 > |**Economía**|Producción, costos acumulados|Optimización de recursos|
 
-```mermaid
-graph TB
-    A[Integral Simple] --> B[Área bajo curva]
-    C[Integral Doble] --> D[Volumen bajo superficie]
-    
-    B --> E["Una dimensión<br/>∫f(x)dx"]
-    D --> F["Dos dimensiones<br/>∬f(x,y)dA"]
-    
-    E --> G[Resultado: Número]
-    F --> G
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_01.svg]]
 
 ---
 
@@ -56,16 +41,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A["Función f(x)"] --> B[Dividir en rectángulos]
->     B --> C["Sumar áreas: Σf(xi)Δx"]
->     C --> D[Límite cuando Δx→0]
->     D --> E["Área exacta: ∫f(x)dx"]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_02.svg]]
 > 
 > **Ejemplo visual:**
 > 
@@ -93,19 +69,7 @@ graph TB
 > 
 > **Proceso conceptual:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Región R en plano xy] --> B[Dividir en pequeños<br/>rectángulos ΔxΔy]
->     B --> C["Altura de cada<br/>prisma: f(xi, yi)"]
->     C --> D["Volumen parcial:<br/>f(xi,yi)·ΔxΔy"]
->     D --> E["Sumar todos:<br/>ΣΣf(xi,yi)ΔxΔy"]
->     E --> F[Límite Δx,Δy→0]
->     F --> G["Volumen exacto:<br/>∬f(x,y)dA"]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#ffe1e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_03.svg]]
 > 
 > **Comparación dimensional:**
 > 
@@ -145,18 +109,7 @@ graph TB
 > 
 > **Elementos del sólido:**
 > 
-> ```mermaid
-> graph TD
->     A[Sólido en 3D] --> B[Base: Región R<br/>en plano xy]
->     A --> C["Techo: Superficie<br/>z = f(x,y)"]
->     A --> D[Paredes laterales:<br/>perpendiculares a xy]
->     B --> E[Área = ∬R dA]
->     C --> F["Altura variable:<br/>z = f(x,y)"]
->     D --> G[Delimitan el volumen]
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_04.svg]]
 > 
 > **Ejemplo concreto: Paraboloide**
 > 
@@ -172,16 +125,7 @@ graph TB
 > 
 > **Proceso de cálculo visual:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Región R:<br/>círculo unitario] --> B[Función altura:<br/>z=4-x²-y²]
->     B --> C["Elemento de volumen:<br/>dV = f(x,y)·dA"]
->     C --> D["Sumar sobre R:<br/>∬R f(x,y)dA"]
->     D --> E[Resultado:<br/>V = 7π/2]
->     style A fill:#e1f5ff
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_05.svg]]
 > 
 > **Interpretación física:**
 > 
@@ -214,20 +158,7 @@ graph TB
 > 
 > Consideremos $f(x,y) = x + y - 1$ sobre $R = [0,2] \times [0,2]$
 > 
-> ```mermaid
-> graph TD
->     A[Plano z = x+y-1] --> B{¿Dónde z=0?}
->     B --> C[Línea: x+y=1]
->     C --> D[Región sobre xy:<br/>x+y > 1]
->     C --> E[Región bajo xy:<br/>x+y < 1]
->     D --> F[Contribución positiva]
->     E --> G[Contribución negativa]
->     F --> H[∬ = V+ - V-]
->     G --> H
->     style C fill:#fff4e1
->     style F fill:#e1ffe1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_06.svg]]
 > 
 > **División de la región:**
 > 
@@ -260,17 +191,7 @@ graph TB
 > 
 > **2. Regiones Tipo I (verticalmente simple)**
 > 
-> ```mermaid
-> graph TD
->     A[Región Tipo I] --> B[Límites en x:<br/>constantes]
->     A --> C[Límites en y:<br/>funciones de x]
->     B --> D[a ≤ x ≤ b]
->     C --> E["g₁(x) ≤ y ≤ g₂(x)"]
->     D --> F["∫ₐᵇ∫_{g₁(x)}^{g₂(x)} f(x,y)dydx"]
->     E --> F
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_07.svg]]
 > 
 > **Características:**
 > 
@@ -288,17 +209,7 @@ graph TB
 > 
 > **3. Regiones Tipo II (horizontalmente simple)**
 > 
-> ```mermaid
-> graph TD
->     A[Región Tipo II] --> B[Límites en y:<br/>constantes]
->     A --> C[Límites en x:<br/>funciones de y]
->     B --> D[c ≤ y ≤ d]
->     C --> E["h₁(y) ≤ x ≤ h₂(y)"]
->     D --> F["∫_c^d∫_{h₁(y)}^{h₂(y)} f(x,y)dxdy"]
->     E --> F
->     style A fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_08.svg]]
 > 
 > **Características:**
 > 
@@ -332,19 +243,7 @@ graph TB
 > 
 > **Proceso de cambio:**
 > 
-> ```mermaid
-> flowchart TD
->     A["Integral dada:<br/>∫∫f(x,y)dydx"] --> B[Identificar región R]
->     B --> C[Graficar región]
->     C --> D[Redibujar límites]
->     D --> E{¿Nuevo tipo?}
->     E -->|Tipo I→II| F[Expresar x en términos de y]
->     E -->|Tipo II→I| G[Expresar y en términos de x]
->     F --> H["Nueva integral:<br/>∫∫f(x,y)dxdy"]
->     G --> H
->     style C fill:#fff4e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_09.svg]]
 > 
 > **Ejemplo paso a paso:**
 > 
@@ -395,13 +294,7 @@ graph TB
 > 
 > **¿Por qué funciona?**
 > 
-> ```mermaid
-> graph LR
->     A["Volumen = base × altura"] --> B["V = Área(R) × 1"]
->     B --> C["∬R 1·dA = Área(R)"]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_10.svg]]
 > 
 > **Aplicaciones:**
 > 
@@ -430,21 +323,7 @@ graph TB
 > 
 > **Estrategia de resolución:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema: calcular área] --> B{¿Región simple?}
->     B -->|Sí| C[Integrar f=1 directamente]
->     B -->|No| D[Dividir en subregiones]
->     C --> E{¿Coordenadas?}
->     E -->|Cartesianas| F[∬R dxdy]
->     E -->|Polares| G[∬R r·drdθ]
->     D --> H[Sumar áreas parciales]
->     F --> I[Resultado numérico]
->     G --> I
->     H --> I
->     style C fill:#e1ffe1
->     style I fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_11.svg]]
 
 ### 🏋️ Masa y Centro de Masa
 
@@ -463,17 +342,7 @@ graph TB
 > 
 > **Proceso de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A["Lámina con densidad ρ(x,y)"] --> B[Calcular masa:<br/>M = ∬ρdA]
->     B --> C[Calcular momentos:<br/>Mx, My]
->     C --> D[Centro de masa:<br/>x̄ = My/M<br/>ȳ = Mx/M]
->     D --> E{Verificar}
->     E -->|Simetría| F[Centro en eje<br/>de simetría]
->     E -->|Densidad uniforme| G[Coincide con<br/>centroide geométrico]
->     style B fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_12.svg]]
 > 
 > **Ejemplo: Lámina triangular**
 > 
@@ -515,15 +384,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TB
-> A["Volumen bajo superficie<br/>V = ∬f(x,y)dA"] --> B[Dividir entre área base<br/>A = ∬dA]
-> B --> C[Altura promedio<br/>h = V/A]
-> C --> D[Prisma equivalente:<br/>mismo volumen]
-> style A fill:#e1f5ff
-> style C fill:#e1ffe1
-> style D fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_13.svg]]
 > 
 > 
 > 
@@ -584,14 +445,7 @@ graph TB
 > 
 > **¿Por qué aparece $r$?**
 > 
-> ```mermaid
-> graph TD
->     A[Rectángulo en cartesianas:<br/>Δx × Δy] --> B[Sector en polares:<br/>Δr × rΔθ]
->     B --> C[Área sector ≈ r·Δr·Δθ]
->     C --> D[En límite:<br/>dA = r·dr·dθ]
->     style A fill:#e1f5ff
->     style D fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_14.svg]]
 > 
 > **Fórmula de transformación:**
 > 
@@ -718,21 +572,7 @@ graph TB
 > 
 > **Comparación visual:**
 > 
-> ```mermaid
-> graph TD
->     A[Sólidos bajo superficies] --> B[Prisma<br/>f = constante]
->     A --> C[Paraboloide<br/>f = a-bx²-cy²]
->     A --> D[Plano inclinado<br/>f = ax+by+c]
->     A --> E["Cono<br/>f = h(1-r/a)"]
->     B --> F[Volumen simple]
->     C --> G[Curvatura suave]
->     D --> H[Lineal]
->     E --> I[Vértice puntiagudo]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_15.svg]]
 
 ### 🔍 Estrategias de Visualización
 
@@ -740,17 +580,7 @@ graph TB
 > 
 > **Proceso mental en 6 pasos:**
 > 
-> ```mermaid
-> flowchart TD
->     A["Identificar región R<br/>en plano xy"] --> B["Graficar R<br/>vista superior"]
->     B --> C["Determinar función<br/>z = f(x,y)"]
->     C --> D["Imaginar superficie<br/>en 3D"]
->     D --> E["Visualizar sólido<br/>entre superficie y R"]
->     E --> F["Volumen del sólido<br/>= valor de integral"]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_16.svg]]
 > 
 > **Técnicas de visualización:**
 > 
@@ -777,44 +607,7 @@ graph TB
 
 ### 📋 Diagrama Conceptual Global
 
-```mermaid
-flowchart TD
-    A((Integral Doble))
-
-    A --> A1[Definición]
-        A1 --> A11[Volumen bajo superficie]
-        A1 --> A12[Suma de Riemann 2D]
-        A1 --> A13[Límite Δx, Δy → 0]
-
-    A --> A2[Notación]
-        A2 --> A21["∬_R f(x,y) dA"]
-        A2 --> A22["dx dy o dy dx"]
-        A2 --> A23[Elemento dA]
-
-    A --> A3[Región R]
-        A3 --> A31["Tipo I (vertical)"]
-        A3 --> A32["Tipo II (horizontal)"]
-        A3 --> A33[Rectangular]
-        A3 --> A34["Polar (r, θ)"]
-
-    A --> A4[Aplicaciones]
-        A4 --> A41[Volumen]
-        A4 --> A42["Área (f = 1)"]
-        A4 --> A43["Masa: ∬ ρ dA"]
-        A4 --> A44[Centro de masa]
-        A4 --> A45[Valor promedio]
-
-    A --> A5[Coordenadas]
-        A5 --> A51["Cartesianas (x, y)"]
-        A5 --> A52["Polares (r, θ)"]
-        A5 --> A53["dA = r · dr · dθ"]
-
-    A --> A6[Interpretación]
-        A6 --> A61[Geométrica: volumen]
-        A6 --> A62[Física: masa y centro]
-        A6 --> A63[Probabilística: valor esperado]
-
-```
+![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_17.svg]]
 
 ### 📊 Tabla Maestra de Fórmulas
 
@@ -837,39 +630,7 @@ flowchart TD
 
 ### 🔄 Flujo de Resolución
 
-```mermaid
-flowchart TD
-    A[Problema de integral doble] --> B{¿Qué calcular?}
-    
-    B -->|Volumen| C[f x,y dada y R]
-    B -->|Área| D[Integrar f=1 sobre R]
-    B -->|Masa| E[Integrar densidad ρ]
-    B -->|Centro| F[Calcular M, Mx, My]
-    
-    C --> G{¿Tipo de región?}
-    D --> G
-    E --> G
-    F --> G
-    
-    G -->|Rectangular| H[Límites constantes]
-    G -->|Tipo I/II| I[Expresar límites]
-    G -->|Circular| J[Coordenadas polares]
-    
-    H --> K[Integrar directamente]
-    I --> L[Elegir orden dy dx o dx dy]
-    J --> M[Transformar a r,θ]
-    
-    K --> N[Evaluar integral]
-    L --> N
-    M --> N
-    
-    N --> O[Interpretar resultado]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style N fill:#e1ffe1
-    style O fill:#ccffcc
-```
+![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_18.svg]]
 
 ---
 
@@ -959,27 +720,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integral<br/>Doble))
->     Fundamentos
->       Concepto de volumen
->       Suma de Riemann 2D
->       Límite de aproximación
->     Regiones
->       Tipo I y II
->       Cambio de orden
->       Coordenadas polares
->     Aplicaciones
->       Volúmenes
->       Áreas
->       Masa y centro
->       Valores promedio
->     Técnicas
->       Integración iterada
->       Transformación de coordenadas
->       Interpretación geométrica
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_19.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -994,21 +735,7 @@ flowchart TD
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Integral Doble] --> B[Integral Triple]
->     A --> C[Coordenadas generales]
->     B --> D[Teorema de Divergencia]
->     C --> E[Jacobiano]
->     E --> F[Cambio de variables general]
->     A --> G[Integrales de línea]
->     G --> H[Teorema de Green]
->     H --> I[Teorema de Stokes]
->     D --> I
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style H fill:#e1f5ff
-> ```
+> ![[Diagramas/03_–_Interpretación_geométrica_de_la_integral_doble_20.svg]]
 > 
 > **Conceptos clave para el futuro:**
 > 

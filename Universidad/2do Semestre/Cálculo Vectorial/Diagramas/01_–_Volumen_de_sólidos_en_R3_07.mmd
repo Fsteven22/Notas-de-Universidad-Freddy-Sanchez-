@@ -1,0 +1,18 @@
+flowchart TD
+    A[Problema de volumen] --> B{¿Tipo de región?}
+    B -->|Delimitada por<br/>funciones| C{¿Hay rotación?}
+    B -->|Forma geométrica<br/>estándar| D[Fórmulas directas]
+    C -->|Sí| E{¿Alrededor de<br/>qué eje?}
+    C -->|No| F{¿Secciones<br/>conocidas?}
+    E -->|Eje coordenado| G[Disco/Arandela]
+    E -->|Eje paralelo| H[Cascarón]
+    F -->|Sí| I[Secciones<br/>transversales]
+    F -->|No| J{¿Simetría?}
+    J -->|Circular xy| K[Cilíndricas]
+    J -->|Radial origen| L[Esféricas]
+    J -->|Ninguna| M[Cartesianas]
+    style G fill:#e1ffe1
+    style I fill:#fff4e1
+    style K fill:#e1f5ff
+    style L fill:#f0e1ff
+    style M fill:#ffe1e1

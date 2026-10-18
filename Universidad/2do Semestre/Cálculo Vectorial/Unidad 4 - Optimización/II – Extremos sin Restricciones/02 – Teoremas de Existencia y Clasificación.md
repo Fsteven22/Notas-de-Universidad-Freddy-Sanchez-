@@ -26,30 +26,7 @@ dg-publish: true
 > |**Economía**|Equilibrio de mercado|Maximizar utilidad|
 > |**Física**|Estados de equilibrio|Energía potencial mínima|
 
-```mermaid
-graph TB
-    A[Función f x,y] --> B{¿Tiene extremos?}
-    B -->|Teoremas de Existencia| C[SÍ: Si cumple condiciones]
-    B -->|No cumple| D[NO garantizado]
-    
-    C --> E[Encontrar puntos críticos]
-    E --> F[∇f = 0]
-    
-    F --> G{Clasificar}
-    G -->|Test 2ª Derivada| H[Calcular D = f_xx·f_yy - f_xy²]
-    
-    H --> I{Valor de D?}
-    I -->|D > 0, f_xx > 0| J[MÍNIMO LOCAL]
-    I -->|D > 0, f_xx < 0| K[MÁXIMO LOCAL]
-    I -->|D < 0| L[PUNTO SILLA]
-    I -->|D = 0| M[INDETERMINADO]
-    
-    style C fill:#e1ffe1
-    style J fill:#ccffcc
-    style K fill:#ffcccc
-    style L fill:#fff4e1
-    style M fill:#e8e8e8
-```
+![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_01.svg]]
 
 ---
 
@@ -76,21 +53,7 @@ graph TB
 > 
 > **Ejemplo visual:**
 > 
-> ```mermaid
-> graph LR
->     A[Región D] --> B{¿Cerrada y acotada?}
->     B -->|SÍ| C[Compacta]
->     B -->|NO| D[No compacta]
->     A --> E{¿f continua?}
->     E -->|SÍ| F[Cumple condiciones]
->     E -->|NO| G[No aplica teorema]
->     C --> H{f continua?}
->     F --> H
->     H -->|SÍ| I[✓ EXISTEN extremos absolutos]
->     H -->|NO| J[✗ No garantizado]
->     style I fill:#e1ffe1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_02.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -121,23 +84,7 @@ graph TB
 > 
 > **Estrategia de búsqueda:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Buscar extremos de f en D] --> B[1. Puntos críticos interiores]
->     B --> C[Resolver ∇f = 0]
->     A --> D[2. Puntos singulares]
->     D --> E[Donde ∇f no existe]
->     A --> F[3. Frontera de D]
->     F --> G[Usar restricciones o<br/>parametrización]
->     C --> H[Clasificar con<br/>test de 2ª derivada]
->     E --> H
->     G --> I[Comparar valores]
->     H --> I
->     I --> J[Extremos absolutos]
->     style A fill:#e1f5ff
->     style H fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_03.svg]]
 
 ---
 
@@ -170,20 +117,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Punto crítico a,b] --> B[Calcular D]
->     B --> C{D > 0?}
->     C -->|SÍ| D{f_xx > 0?}
->     D -->|SÍ| E[⬇️ MÍNIMO<br/>Paraboloide hacia arriba]
->     D -->|NO| F[⬆️ MÁXIMO<br/>Paraboloide hacia abajo]
->     C -->|NO D < 0| G[🏔️ PUNTO SILLA<br/>Superficie tipo silla]
->     C -->|D = 0| H[❓ INDETERMINADO<br/>Análisis adicional]
->     style E fill:#ccffcc
->     style F fill:#ffcccc
->     style G fill:#fff4e1
->     style H fill:#e8e8e8
-> ```
+> ![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_04.svg]]
 > 
 > **Ejemplo detallado:**
 > 
@@ -402,29 +336,7 @@ graph TB
 > 
 > **Para encontrar y clasificar extremos de $f(x,y)$:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Función f x,y] --> B[1. Calcular ∇f = f_x, f_y]
->     B --> C[2. Resolver ∇f = 0]
->     C --> D[3. Puntos críticos a,b]
->     D --> E[4. Calcular f_xx, f_yy, f_xy]
->     E --> F[5. Calcular D = f_xx·f_yy - f_xy²]
->     F --> G{6. Evaluar D a,b}
->     G -->|D > 0| H{f_xx > 0?}
->     H -->|SÍ| I[✓ MÍNIMO]
->     H -->|NO| J[✓ MÁXIMO]
->     G -->|D < 0| K[✓ PUNTO SILLA]
->     G -->|D = 0| L[❓ INDETERMINADO<br/>Análisis adicional]
->     I --> M[7. Calcular f a,b]
->     J --> M
->     K --> M
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style I fill:#ccffcc
->     style J fill:#ffcccc
->     style K fill:#ffffcc
->     style L fill:#e8e8e8
-> ```
+> ![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_05.svg]]
 > 
 > **Checklist:**
 > 
@@ -497,18 +409,7 @@ graph TB
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Teoremas de<br/>Existencia y<br/>Clasificación] --> B[Multiplicadores<br/>de Lagrange]
->     B --> C[Optimización<br/>Restringida]
->     C --> D[Aplicaciones<br/>Prácticas]
->     A -.-> E[Análisis de<br/>Frontera]
->     E -.-> F[Optimización<br/>Global]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Teoremas_de_Existencia_y_Clasificación_06.svg]]
 
 ---
 

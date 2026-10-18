@@ -25,21 +25,7 @@ dg-publish: true
 > |**Integración**|Integrales de línea|Trabajo, circulación, flujo|
 > |**Computación**|Gráficos y animaciones|Movimiento de objetos 3D|
 
-```mermaid
-graph LR
-    A[Parámetro t] --> B["Función Vectorial γ(t)"]
-    B --> C[Punto en ℝ² o ℝ³]
-    C --> D[Traza/Trayectoria]
-    
-    B --> E["Derivada γ'(t)"]
-    E --> F[Vector Tangente]
-    F --> G[Velocidad]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style F fill:#ffe1e1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_01.svg]]
 
 ---
 
@@ -73,21 +59,7 @@ graph LR
 > 
 > $$\gamma(t) = \begin{pmatrix} x(t) \ y(t) \ z(t) \end{pmatrix}$$
 
-```mermaid
-graph TD
-    A["Intervalo [a,b]"] --> B[Parámetro t]
-    B --> C["Función γ(t)"]
-    C --> D[Punto en el espacio]
-    D --> E[Traza de la curva]
-    
-    C --> F["x(t): función coordenada"]
-    C --> G["y(t): función coordenada"]
-    C --> H["z(t): función coordenada"]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_02.svg]]
 
 ### 🎨 Ejemplos Concretos
 
@@ -144,24 +116,7 @@ graph TD
 
 **Visualización comparativa:**
 
-```mermaid
-graph TB
-    subgraph "Segmento de Recta"
-    A1[t=0<br/>Inicio] --> A2[t=0.5<br/>Medio] --> A3[t=1<br/>Fin]
-    end
-    
-    subgraph "Circunferencia"
-    B1[t=0] --> B2[t=π/2] --> B3[t=π] --> B4[t=3π/2] --> B1
-    end
-    
-    subgraph "Hélice"
-    C1[t=0<br/>z=0] --> C2[t=π<br/>z=π] --> C3[t=2π<br/>z=2π]
-    end
-    
-    style A1 fill:#e1ffe1
-    style B1 fill:#fff4e1
-    style C1 fill:#e1f5ff
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_03.svg]]
 
 ---
 
@@ -195,22 +150,7 @@ graph TB
 
 **Flujo de verificación:**
 
-```mermaid
-flowchart TD
-    A["Camino γ(t)"] --> B{¿Derivable?}
-    B -->|No| C[❌ No es suave]
-    B -->|Sí| D["Calcular γ'(t)"]
-    D --> E{"¿γ'(t) continua?"}
-    E -->|No| F[❌ No es suave]
-    E -->|Sí| G{"¿γ'(t) ≠ 0?"}
-    G -->|No| H[⚠️ Punto singular]
-    G -->|Sí| I[✅ Camino suave]
-    
-    style C fill:#ffe1e1
-    style F fill:#ffe1e1
-    style H fill:#fff4e1
-    style I fill:#e1ffe1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_04.svg]]
 
 ### 🧮 Ejemplos de Análisis
 
@@ -301,27 +241,7 @@ flowchart TD
 > |**Inyectividad**|Función inyectiva en $(a,b)$|No inyectiva|
 > |**Ejemplo visual**|Círculo, arco|Lemniscata (∞), nudo|
 
-```mermaid
-graph TB
-    subgraph "✅ Caminos Simples"
-    A1[Segmento de recta] 
-    A2[Círculo]
-    A3[Arco]
-    A4[Espiral sin cruces]
-    end
-    
-    subgraph "❌ Caminos NO Simples"
-    B1[Lemniscata ∞]
-    B2[Nudo]
-    B3[Espiral con cruces]
-    B4[Ocho]
-    end
-    
-    style A1 fill:#e1ffe1
-    style A2 fill:#e1ffe1
-    style B1 fill:#ffe1e1
-    style B2 fill:#ffe1e1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_05.svg]]
 
 ### 🔍 Ejemplos Detallados
 
@@ -370,18 +290,7 @@ graph TB
 
 **Criterio visual rápido:**
 
-```mermaid
-flowchart TD
-    A["Camino γ(t)"] --> B{¿Hay cruces<br/>visibles?}
-    B -->|No| C[Probablemente simple]
-    B -->|Sí| D[❌ NO es simple]
-    C --> E{Verificar<br/>algebraicamente}
-    E -->|"γ(t₁)=γ(t₂)⟹t₁=t₂"| F[✅ Simple]
-    E -->|Contraejemplo| D
-    
-    style D fill:#ffe1e1
-    style F fill:#e1ffe1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_06.svg]]
 
 ---
 
@@ -408,16 +317,7 @@ flowchart TD
 > 
 > **Clasificación:**
 > 
-> ```mermaid
-> graph TD
->     A[Camino Cerrado] --> B{¿Simple?}
->     B -->|Sí| C[Cerrado Simple<br/>Ej: círculo]
->     B -->|No| D[Cerrado NO Simple<br/>Ej: lemniscata]
->     C --> E[Divide plano en<br/>interior y exterior]
->     D --> F[Puede autointersectarse]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_07.svg]]
 
 ### 📊 Ejemplos y Clasificación
 
@@ -470,24 +370,7 @@ flowchart TD
 > |Espiral convergente|❌|✅|Simple pero abierto|
 > |Nudo trebol|✅|❌|Cerrado complejo|
 
-```mermaid
-graph TB
-    A[Caminos] --> B{¿Cerrado?}
-    B -->|Sí| C[Camino Cerrado]
-    B -->|No| D[Camino Abierto]
-    
-    C --> E{¿Simple?}
-    E -->|Sí| F[✅ Cerrado Simple<br/>Círculo, elipse]
-    E -->|No| G[⚠️ Cerrado NO Simple<br/>Lemniscata, nudo]
-    
-    D --> H{¿Simple?}
-    H -->|Sí| I[Segmento, arco]
-    H -->|No| J[Curva autointersecada]
-    
-    style F fill:#e1ffe1
-    style G fill:#fff4e1
-    style I fill:#e1f5ff
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_08.svg]]
 
 ---
 
@@ -522,17 +405,7 @@ graph TB
 
 **Proceso de cálculo:**
 
-```mermaid
-flowchart LR
-    A["Camino γ(t)"] --> B["Derivar: γ'(t)"]
-    B --> C["Calcular norma: ‖γ'(t)‖"]
-    C --> D["Integrar: ∫‖γ'(t)‖dt"]
-    D --> E[Longitud L]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_09.svg]]
 
 ### 🔢 Ejemplos de Cálculo
 
@@ -612,24 +485,7 @@ flowchart LR
 
 **Diagrama de Venn:**
 
-```mermaid
-graph TB
-    A[Todos los Caminos] --> B[Continuos]
-    B --> C[Suaves]
-    B --> D[Simples]
-    B --> E[Cerrados]
-    
-    C --> F[Suaves y Simples]
-    C --> G[Suaves y Cerrados]
-    D --> H[Simples y Cerrados]
-    
-    F --> I[Suaves, Simples<br/>y Cerrados<br/>Ej: Círculo]
-    
-    style I fill:#e1ffe1
-    style C fill:#e1f5ff
-    style D fill:#fff4e1
-    style E fill:#ffe1e1
-```
+![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_10.svg]]
 
 ---
 ## 📚 Teoremas Importantes
@@ -744,23 +600,7 @@ graph TB
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Caminos))
->     Definiciones
->       Parametrización
->       Traza vs Camino
->     Clasificación
->       Suaves
->       Simples
->       Cerrados
->     Cálculos
->       Derivadas
->       Longitud de arco
->     Aplicaciones
->       Física
->       Ingeniería
-> ```
+> ![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_11.svg]]
 > 
 > **Próximos pasos:**
 > 
@@ -774,19 +614,7 @@ graph TB
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Caminos] --> B[Integrales de Línea]
->     B --> C[Campos Vectoriales]
->     C --> D[Teorema de Green]
->     D --> E[Teorema de Stokes]
->     E --> F[Teorema de Gauss]
->     A -.-> G[Superficies]
->     G -.-> H[Integrales de Superficie]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_12.svg]]
 
 ---
 

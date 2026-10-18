@@ -23,24 +23,7 @@ dg-publish: true
 > |**Independencia**|Identificar cuándo el camino no importa|Campos conservativos|
 > |**Reversibilidad**|Relacionar caminos opuestos|Simetría física|
 
-```mermaid
-graph TB
-    A[Propiedades de<br/>Integrales de Línea] --> B[Linealidad]
-    A --> C[Aditividad]
-    A --> D[Reversión de Orientación]
-    A --> E[Parametrización Independiente]
-    
-    B --> F[∫C αf + βg = α∫C f + β∫C g]
-    C --> G[∫C = ∫C₁ + ∫C₂]
-    D --> H[∫-C = -∫C]
-    E --> I[Valor independiente<br/>de parametrización]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style E fill:#f5e1ff
-```
+![[Diagramas/04_–_Propiedades_e_Interpretaciones_de_las_integrales_de_línea_01.svg]]
 
 ---
 
@@ -190,17 +173,7 @@ graph TB
 > 
 > **Estrategia de descomposición:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Curva compleja C] --> B{¿Se puede dividir<br/>en segmentos simples?}
->     B -->|Sí| C[Identificar puntos<br/>de división]
->     C --> D[Parametrizar cada<br/>segmento Cᵢ]
->     D --> E[Calcular ∫Cᵢ<br/>para cada segmento]
->     E --> F[Sumar todos<br/>los resultados]
->     B -->|No| G[Buscar parametrización<br/>directa de C]
->     style C fill:#e1ffe1
->     style F fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Propiedades_e_Interpretaciones_de_las_integrales_de_línea_02.svg]]
 > 
 > **Aplicación a polígonos:**
 > 
@@ -537,17 +510,7 @@ graph TB
 > 
 > $$\text{Flujo de } \mathbf{F} = \text{Circulación de } \mathbf{F}^{\perp}$$
 > 
-> ```mermaid
-> graph TB
->     A[Campo Vectorial F] --> B[Circulación]
->     A --> C[Flujo]
->     B --> D[∮C F·T ds<br/>Componente tangencial]
->     C --> E[∮C F·n ds<br/>Componente normal]
->     D --> F[Rotación alrededor de C]
->     E --> G[Atravesamiento de C]
->     style B fill:#e1ffe1
->     style C fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Propiedades_e_Interpretaciones_de_las_integrales_de_línea_03.svg]]
 
 ---
 
@@ -655,24 +618,7 @@ graph TB
 > |**Ingeniería**|Diseño y optimización|Cables, fluidos, campos|
 > |**Conceptual**|Comprensión profunda|Conexión entre teoría y práctica|
 
-```mermaid
-graph TB
-    A[Integral de Línea] --> B[Interpretación<br/>Geométrica]
-    A --> C[Interpretación<br/>Física]
-    
-    B --> D[Longitud]
-    B --> E[Área]
-    B --> F[Volumen]
-    
-    C --> G[Trabajo]
-    C --> H[Flujo]
-    C --> I[Circulación]
-    C --> J[Masa]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/04_–_Propiedades_e_Interpretaciones_de_las_integrales_de_línea_04.svg]]
 
 ---
 
@@ -1408,20 +1354,7 @@ graph TB
 > 
 > **Progresión conceptual:**
 > 
-> ```mermaid
-> graph TB
->     A[Integral de Línea] --> B[Teorema Fundamental]
->     A --> C[Teorema de Green]
->     C --> D[Teorema de Stokes]
->     D --> E[Teorema de Gauss]
->     B --> F[Campos Conservativos]
->     C --> G[Relación Curva-Región]
->     D --> H[Relación Curva-Superficie]
->     E --> I[Relación Superficie-Volumen]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Propiedades_e_Interpretaciones_de_las_integrales_de_línea_05.svg]]
 
 ---
 

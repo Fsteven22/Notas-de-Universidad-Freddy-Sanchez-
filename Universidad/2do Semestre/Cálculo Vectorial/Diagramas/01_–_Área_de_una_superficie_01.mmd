@@ -1,0 +1,14 @@
+graph TB
+    A[Superficie en ℝ³] --> B{Tipo de representación}
+    B --> C["z = f(x,y)"]
+    B --> D["Paramétrica r(u,v)"]
+    B --> E["Implícita F(x,y,z) = 0"]
+    
+    C --> F[Fórmula con derivadas parciales]
+    D --> G[Fórmula con producto cruz]
+    E --> H[Fórmula con gradiente]
+    
+    style A fill:#e1f5ff
+    style F fill:#e1ffe1
+    style G fill:#fff4e1
+    style H fill:#ffe1e1

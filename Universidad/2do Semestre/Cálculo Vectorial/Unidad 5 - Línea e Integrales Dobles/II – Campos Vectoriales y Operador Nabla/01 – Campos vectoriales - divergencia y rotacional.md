@@ -24,21 +24,7 @@ dg-publish: true
 > |**Campo de gradientes**|Temperatura en una habitación|Dirección de mayor cambio|
 > |**Campo magnético**|Alrededor de un imán|Fuerza sobre polo norte|
 
-```mermaid
-graph TB
-    A[Campo Vectorial] --> B[Campo en R²]
-    A --> C[Campo en R³]
-    
-    B --> D[F x,y = M \hat{i} + N \hat{j}]
-    C --> E[F x,y,z = M \hat{i} + N \hat{j} + P \hat{k}]
-    
-    D --> F[Ejemplo: Flujo 2D]
-    E --> G[Ejemplo: Campo gravitatorio]
-    
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-```
+![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_01.svg]]
 
 ---
 
@@ -69,17 +55,7 @@ graph TB
 > 
 > **Interpretación visual:**
 > 
-> ```mermaid
-> graph LR
->     A[Punto x,y,z] --> B[Campo F]
->     B --> C[Vector M, N, P]
->     C --> D[Componente M: horizontal]
->     C --> E[Componente N: vertical]
->     C --> F[Componente P: profundidad]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_02.svg]]
 > 
 > **Ejemplos concretos:**
 > 
@@ -116,19 +92,7 @@ graph TB
 > 
 > **Métodos de visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Vectorial] --> B[Gráfica de flechas]
->     A --> C[Líneas de flujo]
->     A --> D[Mapa de calor magnitud]
->     B --> E[Vector en cada punto<br/>de una malla]
->     C --> F[Curvas tangentes<br/>al campo]
->     D --> G[Color = magnitud<br/>del vector]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_03.svg]]
 > 
 > **Ejemplo de campo radial $\mathbf{F}(x,y) = (x, y)$:**
 > 
@@ -183,18 +147,7 @@ graph TB
 > 
 > **Flujo de operaciones:**
 > 
-> ```mermaid
-> graph LR
->     A[Función Escalar f] -->|∇| B[Campo Vectorial ∇f]
->     B -->|∇·| C[Escalar: div ∇f]
->     B -->|∇×| D[Vector: rot ∇f = 0]
->     E[Campo Vectorial F] -->|∇·| F[Escalar: div F]
->     E -->|∇×| G[Vector: rot F]
->     G -->|∇·| H[Escalar: div rot F = 0]
->     style A fill:#e1f5ff
->     style B fill:#e1ffe1
->     style E fill:#fff4e1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_04.svg]]
 > 
 > **Identidades fundamentales:**
 > 
@@ -224,19 +177,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Vectorial] --> B{Divergencia}
->     B -->|div > 0| C[Fuente]
->     B -->|div < 0| D[Sumidero]
->     B -->|div = 0| E[Sin fuente/sumidero]
->     C --> F[Vectores salen<br/>del punto]
->     D --> G[Vectores entran<br/>al punto]
->     E --> H[Flujo equilibrado<br/>entra = sale]
->     style C fill:#ffe1e1
->     style D fill:#e1e1ff
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_05.svg]]
 > 
 > **Ejemplos físicos:**
 > 
@@ -273,22 +214,7 @@ graph TB
 > 
 > **Procedimiento de cálculo:**
 > 
-> ```mermaid
-> flowchart LR
->     A[Campo F = M,N,P] --> B[Derivar M<br/>respecto a x]
->     A --> C[Derivar N<br/>respecto a y]
->     A --> D[Derivar P<br/>respecto a z]
->     B --> E[∂M/∂x]
->     C --> F[∂N/∂y]
->     D --> G[∂P/∂z]
->     E --> H[Sumar todo]
->     F --> H
->     G --> H
->     H --> I[div F]
->     style A fill:#e1f5ff
->     style H fill:#fff4e1
->     style I fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_06.svg]]
 > 
 > **Regla nemotécnica:**
 > 
@@ -416,18 +342,7 @@ graph TB
 > - Si la rueda **gira**: hay rotacional
 > - Si la rueda **no gira** (solo se traslada): rotacional = 0
 > 
-> ```mermaid
-> graph TD
->     A[Campo Vectorial] --> B{Rotacional}
->     B -->|≠ 0| C[Campo rotacional]
->     B -->|= 0| D[Campo irrotacional]
->     C --> E[Hay circulación<br/>local]
->     D --> F[Sin circulación<br/>local]
->     D --> G[Puede ser<br/>conservativo]
->     style C fill:#ffe1e1
->     style D fill:#e1ffe1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_07.svg]]
 > 
 > **Diferencia clave con divergencia:**
 > 
@@ -475,20 +390,7 @@ graph TB
 > 
 > **Procedimiento de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = M,N,P] --> B[Componente \hat{i}]
->     A --> C[Componente \hat{j}]
->     A --> D[Componente \hat{k}]
->     B --> E[∂P/∂y - ∂N/∂z]
->     C --> F[∂M/∂z - ∂P/∂x]
->     D --> G[∂N/∂x - ∂M/∂y]
->     E --> H[Rotacional]
->     F --> H
->     G --> H
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_08.svg]]
 > 
 > **Tabla de derivadas cruzadas:**
 > 
@@ -636,18 +538,7 @@ graph TB
 > 
 > **Propiedades equivalentes:**
 > 
-> ```mermaid
-> graph TD
->     A[Campo Conservativo] <--> B[∇f = F]
->     A <--> C[rot F = 0]
->     A <--> D[∮ F·dr = 0]
->     A <--> E[Trabajo independiente<br/>del camino]
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style C fill:#fff4e1
->     style D fill:#ffe1f5
->     style E fill:#f5e1ff
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_09.svg]]
 > 
 > **Criterios de conservatividad:**
 > 
@@ -677,19 +568,7 @@ graph TB
 > 
 > **Procedimiento:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F = M,N] --> B[Calcular ∂M/∂y]
->     A --> C[Calcular ∂N/∂x]
->     B --> D{¿Son iguales?}
->     C --> D
->     D -->|Sí| E[✅ ES conservativo]
->     D -->|No| F[❌ NO es conservativo]
->     E --> G[Buscar potencial f]
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
->     style G fill:#e1f5ff
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_10.svg]]
 > 
 > **Ejemplo del PDF:**
 > 
@@ -734,24 +613,7 @@ graph TB
 > 
 > **Flujo de verificación:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F en R³] --> B[Calcular rot F]
->     B --> C[Componente \hat{i}]
->     B --> D[Componente \hat{j}]
->     B --> E[Componente \hat{k}]
->     C --> F{¿= 0?}
->     D --> G{¿= 0?}
->     E --> H{¿= 0?}
->     F -->|Sí| I[Verificar siguientes]
->     F -->|No| J[❌ NO conservativo]
->     G -->|Sí| I
->     G -->|No| J
->     H -->|Sí| K[✅ ES conservativo]
->     H -->|No| J
->     style K fill:#e1ffe1
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_11.svg]]
 > 
 > **Ejemplo del PDF - Campo conservativo:**
 > 
@@ -789,20 +651,7 @@ graph TB
 > 
 > **Algoritmo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo conservativo F] --> B[Integrar f_x = M<br/>respecto a x]
->     B --> C[Obtener f x,y,z<br/>+ función g y,z]
->     C --> D[Derivar f<br/>respecto a y]
->     D --> E[Igualar a N<br/>despejar g_y]
->     E --> F[Integrar g_y<br/>obtener g + h z]
->     F --> G[Derivar f<br/>respecto a z]
->     G --> H[Igualar a P<br/>despejar h']
->     H --> I[Integrar h'<br/>obtener h z]
->     I --> J[Función potencial<br/>f x,y,z + C]
->     style A fill:#e1f5ff
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_12.svg]]
 > 
 > **Pasos detallados:**
 > 
@@ -986,15 +835,7 @@ graph TB
 > 
 > **Diagrama de composiciones:**
 > 
-> ```mermaid
-> graph LR
->     A[Función escalar f] -->|∇| B[∇f<br/>gradiente]
->     B -->|∇×| C[0<br/>siempre cero]
->     D[Campo vectorial F] -->|∇×| E[rot F<br/>rotacional]
->     E -->|∇·| F[0<br/>siempre cero]
->     style C fill:#ffe1e1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_13.svg]]
 
 ---
 
@@ -1171,39 +1012,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Campos<br/>Vectoriales))
-    Definición
-      F = M,N,P
-      En R²
-      En R³
-      Visualización
-    Operador ∇
-      Gradiente ∇f
-      Divergencia ∇·F
-      Rotacional ∇×F
-      Laplaciano ∇²f
-    Divergencia
-      Mide expansión
-      Resultado escalar
-      Fuentes y sumideros
-      div > 0: fuente
-      div < 0: sumidero
-      div = 0: sin flujo neto
-    Rotacional
-      Mide rotación
-      Resultado vectorial
-      Solo en R³
-      rot ≠ 0: campo rotacional
-      rot = 0: irrotacional
-    Conservativos
-      ∇f = F
-      rot F = 0
-      Trabajo independiente
-      Función potencial
-      Integral cerrada = 0
-```
+![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_14.svg]]
 
 ### 📋 Tablas de Referencia Rápida
 
@@ -1241,38 +1050,7 @@ mindmap
 
 ### 🔄 Diagrama de Flujo de Trabajo
 
-```mermaid
-flowchart TD
-    A[Campo Vectorial F] --> B{¿Qué calcular?}
-    
-    B -->|Divergencia| C[Calcular div F]
-    B -->|Rotacional| D[Calcular rot F]
-    B -->|¿Es conservativo?| E{Verificar}
-    
-    C --> C1[∂M/∂x + ∂N/∂y + ∂P/∂z]
-    C1 --> C2[Resultado: escalar]
-    
-    D --> D1[Usar determinante 3×3]
-    D1 --> D2[Resultado: vector]
-    
-    E -->|R²| E1[¿∂N/∂x = ∂M/∂y?]
-    E -->|R³| E2[¿rot F = 0?]
-    
-    E1 -->|Sí| F[✅ Conservativo]
-    E1 -->|No| G[❌ No conservativo]
-    E2 -->|Sí| F
-    E2 -->|No| G
-    
-    F --> H[Buscar potencial f]
-    H --> H1[Integrar f_x = M]
-    H1 --> H2[Derivar e igualar a N]
-    H2 --> H3[Repetir para P si R³]
-    H3 --> H4[Función potencial f]
-    
-    style F fill:#e1ffe1
-    style G fill:#ffe1e1
-    style H4 fill:#e1f5ff
-```
+![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_15.svg]]
 
 ---
 
@@ -1340,19 +1118,7 @@ flowchart TD
 > 
 > **Próximos temas naturales:**
 > 
-> ```mermaid
-> graph LR
->     A[Campos Vectoriales<br/>Divergencia y Rotacional] --> B[Integrales de Línea]
->     B --> C[Teorema Fundamental<br/>de Integrales de Línea]
->     C --> D[Teorema de Green]
->     D --> E[Teorema de Stokes]
->     E --> F[Teorema de la Divergencia]
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style D fill:#fff4e1
->     style E fill:#ffe1f5
->     style F fill:#f5e1ff
-> ```
+> ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_16.svg]]
 > 
 > **Roadmap de Cálculo Vectorial:**
 > 

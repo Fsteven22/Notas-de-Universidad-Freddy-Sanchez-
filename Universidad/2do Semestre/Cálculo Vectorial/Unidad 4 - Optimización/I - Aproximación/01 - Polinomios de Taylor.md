@@ -27,19 +27,7 @@ dg-publish: true
 > - Orden 1: Un **plano inclinado** (tangente)
 > - Orden 2: Una **superficie parabólica** (curvatura)
 
-```mermaid
-graph TB
-    A["Función f(x,y)<br/>Superficie compleja"] 
-    
-    A --> B["Taylor Orden 0<br/>Valor en el punto<br/>f(a,b)"]
-    A --> C[Taylor Orden 1<br/>Plano tangente<br/>Aproximación lineal]
-    A --> D[Taylor Orden 2<br/>Superficie cuadrática<br/>Incluye curvaturas]
-    
-    style A fill:#e1f5ff
-    style B fill:#ffe1e1
-    style C fill:#e1ffe1
-    style D fill:#fff5e1
-```
+![[Diagramas/01_-_Polinomios_de_Taylor_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Taylor Multivariable?
 > 
@@ -410,30 +398,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((Polinomios<br/>Taylor<br/>Multivariable))
-    Conceptos Base
-      Aproximación local
-      Derivadas parciales
-      Punto de expansión
-    Órdenes
-      Orden 0: Valor
-      Orden 1: Plano tangente
-      Orden 2: Curvatura
-    Notación
-      Forma explícita
-      Forma vectorial
-      Matriz Hessiana
-    Aplicaciones
-      Optimización
-      Linealización
-      Análisis de estabilidad
-    Error
-      Residuo de Taylor
-      Crecimiento con distancia
-      Mejora con orden
-```
+![[Diagramas/01_-_Polinomios_de_Taylor_02.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

@@ -25,21 +25,7 @@ dg-publish: true
 > |**Física**|Masa, centro de masa, momentos|Distribuciones continuas|
 > |**Probabilidad**|Funciones de densidad conjunta|Variables aleatorias múltiples|
 
-```mermaid
-graph TB
-    A["Integral Doble<br/>∬f(x,y)dA"] --> B{Método de Cálculo}
-    B --> C[Integral Iterada]
-    C --> D[Integrar respecto a y]
-    D --> E[Integrar respecto a x]
-    E --> F[Resultado Final]
-    
-    B -.-> G[Definición<br/>Límite de Sumas]
-    G -.-> H[Difícil de calcular]
-    
-    style C fill:#e1ffe1
-    style F fill:#e1f5ff
-    style H fill:#ffe1e1
-```
+![[Diagramas/05_–_Integrales_iteradas_01.svg]]
 
 ---
 
@@ -66,18 +52,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Superficie z = f(x,y)] --> B[Región R en el plano xy]
->     B --> C[Dividir en rectángulos pequeños]
->     C --> D[Altura: f(xᵢ,yⱼ)]
->     D --> E[Volumen parcial: f(xᵢ,yⱼ)·ΔA]
->     E --> F[Suma de Riemann]
->     F --> G[Límite cuando ΔA→0]
->     G --> H[∬f(x,y)dA]
->     style A fill:#e1f5ff
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_02.svg]]
 > 
 > **Definición formal (Suma de Riemann):**
 > 
@@ -139,18 +114,7 @@ graph TB
 > 
 > **Casos especiales:**
 > 
-> ```mermaid
-> graph TB
->     A[Teorema de Fubini] --> B[Región Rectangular]
->     A --> C[Región Tipo I]
->     A --> D[Región Tipo II]
->     B --> E[Límites constantes<br/>ambas integrales]
->     C --> F[Límites de y<br/>dependen de x]
->     D --> G[Límites de x<br/>dependen de y]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_03.svg]]
 
 ### 🔍 Interpretación Geométrica
 
@@ -269,27 +233,7 @@ graph TB
 > 
 > $$\int_a^b \int_c^d 1 , dy , dx = \int_a^b [y]_c^d , dx = \int_a^b (d-c) , dx = (d-c)[x]_a^b = (b-a)(d-c)$$ ✓
 
-```mermaid
-flowchart LR
-    A["∬ₐ f(x,y)dA"] --> B[Elegir orden]
-    B --> C[Orden dy dx]
-    B --> D[Orden dx dy]
-    
-    C --> E["∫∫ f(x,y)dy dx"]
-    D --> F["∫∫ f(x,y)dx dy"]
-    
-    E --> G[Integrar interior]
-    F --> H[Integrar interior]
-    
-    G --> I[Integrar exterior]
-    H --> J[Integrar exterior]
-    
-    I --> K[Resultado]
-    J --> K
-    
-    style B fill:#fff4e1
-    style K fill:#e1ffe1
-```
+![[Diagramas/05_–_Integrales_iteradas_04.svg]]
 
 ---
 
@@ -556,16 +500,7 @@ flowchart LR
 > 
 > **Proceso de cambio:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral dada<br/>en un orden] --> B[Identificar región R]
->     B --> C[Graficar región]
->     C --> D[Encontrar límites<br/>en otro orden]
->     D --> E[Reescribir integral]
->     E --> F[Evaluar]
->     style C fill:#fff4e1
->     style E fill:#e1ffe1
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_05.svg]]
 
 ### 📝 Metodología Paso a Paso
 
@@ -732,24 +667,7 @@ flowchart LR
 > 
 > **Checklist de decisiones:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral doble dada] --> B{¿Región<br/>rectangular?}
->     B -->|Sí| C[Límites constantes<br/>Cualquier orden]
->     B -->|No| D{¿Qué tipo<br/>de región?}
->     D --> E[Tipo I:<br/>límites de y<br/>dependen de x]
->     D --> F[Tipo II:<br/>límites de x<br/>dependen de y]
->     E --> G{¿Integral<br/>factible?}
->     F --> H{¿Integral<br/>factible?}
->     G -->|No| I[Cambiar a Tipo II]
->     H -->|No| J[Cambiar a Tipo I]
->     G -->|Sí| K[Calcular]
->     H -->|Sí| K
->     I --> K
->     J --> K
->     style C fill:#e1ffe1
->     style K fill:#e1f5ff
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_06.svg]]
 > 
 > **Pasos sistemáticos:**
 > 
@@ -871,26 +789,7 @@ flowchart LR
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integrales<br/>Iteradas))
->     Fundamentos
->       Teorema de Fubini
->       Orden de integración
->       Elementos de área
->     Regiones
->       Tipo I
->       Tipo II
->       Rectangulares
->     Técnicas
->       Cambio de orden
->       Separabilidad
->       Simetría
->     Aplicaciones
->       Áreas
->       Volúmenes
->       Física
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_07.svg]]
 > 
 > **Próximos pasos:**
 > 
@@ -905,20 +804,7 @@ flowchart LR
 > 
 > **Roadmap de evolución:**
 > 
-> ```mermaid
-> graph LR
->     A[Integrales Iteradas] --> B[Coordenadas Polares]
->     B --> C[Integrales Triples]
->     C --> D[Cambios de Variable<br/>Jacobiano]
->     D --> E[Integrales de Línea]
->     E --> F[Teorema de Green]
->     A -.-> G[Aplicaciones Físicas]
->     G -.-> H[Centro de Masa]
->     H -.-> I[Momentos de Inercia]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style D fill:#e1f5ff
-> ```
+> ![[Diagramas/05_–_Integrales_iteradas_08.svg]]
 
 ---
 

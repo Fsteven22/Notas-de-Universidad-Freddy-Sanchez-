@@ -27,18 +27,7 @@ dg-publish: true
 > |**Análisis de sensibilidad**|Cómo cambian las salidas con las entradas|Optimización, control|
 > |**Invertibilidad**|Determina si la transformación es reversible|Ecuaciones no lineales|
 
-```mermaid
-graph LR
-    A[Sistema Original<br/>x, y] --> B[Transformación<br/>T]
-    B --> C[Sistema Nuevo<br/>u, v]
-    B -.-> D[Jacobiano<br/>J]
-    D -.-> E[Factor de<br/>Escala]
-    
-    style A fill:#e1f5ff
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style E fill:#e1ffe1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_01.svg]]
 
 ---
 
@@ -65,19 +54,7 @@ graph LR
 > |$Df$|Diferencial de f|Análisis|
 > |$J(x_0)$|Jacobiano evaluado en $x_0$|Punto específico|
 
-```mermaid
-graph TD
-    A[Función Vectorial<br/>F: ℝⁿ → ℝᵐ] --> B[Derivadas Parciales<br/>∂fᵢ/∂xⱼ]
-    B --> C[Matriz Jacobiana<br/>m × n]
-    C --> D{Caso Especial}
-    D -->|m = n| E[Determinante<br/>Jacobiano]
-    D -->|m = 1| F[Gradiente<br/>∇f]
-    D -->|n = 1| G[Vector Derivada]
-    
-    style C fill:#e1ffe1
-    style E fill:#fff4e1
-    style F fill:#e1f5ff
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_02.svg]]
 
 ### 🎲 Determinante Jacobiano
 
@@ -99,18 +76,7 @@ graph TD
 > 
 > **Ejemplo visual 2D:**
 > 
-> ```mermaid
-> graph LR
->     A[Cuadrado<br/>Área = 1] -->|J = 2| B[Rectángulo<br/>Área = 2]
->     A -->|J = 0.5| C[Rectángulo<br/>Área = 0.5]
->     A -->|J = 1| D[Cuadrado Rotado<br/>Área = 1]
->     A -->|J = 0| E[Línea<br/>Área = 0]
->     style A fill:#e1f5ff
->     style B fill:#ffe1e1
->     style C fill:#fff4e1
->     style D fill:#e1ffe1
->     style E fill:#f0e1ff
-> ```
+> ![[Diagramas/02_–_Jacobiano_de_la_transformación_03.svg]]
 
 ---
 
@@ -145,18 +111,7 @@ graph TD
 > - Cerca del origen ($r \to 0$), el área se contrae
 > - Lejos del origen ($r$ grande), el área se expande
 
-```mermaid
-graph TD
-    A[Cartesianas<br/>x, y] -->|Polar| B[r, θ]
-    B -->|Jacobiano = r| C[Factor de Escala]
-    C -->|Integral| D[dA = r dr dθ]
-    
-    E[Región Rectangular<br/>en r-θ] -->|Transforma| F[Sector Circular<br/>en x-y]
-    
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_04.svg]]
 
 ### 🌐 Coordenadas Esféricas (3D)
 
@@ -196,21 +151,7 @@ graph TD
 > |$\sin\phi$|Distorsión angular (0 en polos, máxima en ecuador)|
 > |$dV = \rho^2\sin\phi, d\rho, d\phi, d\theta$|Elemento de volumen|
 
-```mermaid
-graph TD
-    A[Cartesianas<br/>x, y, z] -->|Esféricas| B[ρ, φ, θ]
-    B -->|Jacobiano| C[ρ²sinφ]
-    C -->|Volumen| D[dV = ρ²sinφ dρ dφ dθ]
-    
-    E[Caja en<br/>ρ-φ-θ] -->|Transforma| F[Sector esférico<br/>en x-y-z]
-    
-    G[sinφ = 0<br/>en polos] -.->|Singularidad| H[Degeneración]
-    
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1e1
-    style H fill:#ffe1e1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_05.svg]]
 
 ### 🔶 Coordenadas Cilíndricas (3D)
 
@@ -277,20 +218,7 @@ graph TD
 >     $$= 2\pi \int_0^1 re^{r^2},dr = 2\pi \left[\frac{e^{r^2}}{2}\right]_0^1 = \pi(e - 1)$$
 >     
 
-```mermaid
-flowchart TD
-    A[Integral Original<br/>Sistema xy] --> B[Elegir Transformación<br/>a sistema uv]
-    B --> C[Calcular Jacobiano<br/>J]
-    C --> D[Transformar Región<br/>Rxy → Ruv]
-    D --> E[Sustituir en Integral<br/>f·J dudv]
-    E --> F[Evaluar Nueva Integral]
-    F --> G[Resultado Final]
-    
-    style A fill:#e1f5ff
-    style C fill:#ffe1e1
-    style E fill:#fff4e1
-    style G fill:#e1ffe1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_06.svg]]
 
 ### 🎯 Análisis de Sensibilidad
 
@@ -343,20 +271,7 @@ flowchart TD
 > - En el **origen** ($\rho = 0$): $|J| = 0$ → Singularidad
 > - Resto del espacio: $|J| > 0$ → Invertible
 
-```mermaid
-graph TD
-    A[Transformación T] --> B{J ≠ 0?}
-    B -->|Sí| C[✅ Invertible<br/>Localmente]
-    B -->|No| D[❌ Singular<br/>No Invertible]
-    
-    C --> E[Existe T⁻¹<br/>en vecindad]
-    D --> F[Pérdida de<br/>Dimensión]
-    
-    style C fill:#e1ffe1
-    style D fill:#ffe1e1
-    style E fill:#e1f5ff
-    style F fill:#fff4e1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_07.svg]]
 
 ---
 ## 📊 Casos Especiales Importantes
@@ -412,26 +327,7 @@ graph TD
 
 ### 🔍 Checklist de Cálculo
 
-```mermaid
-flowchart TD
-    A[Problema de Cambio<br/>de Variable] --> B{¿Qué calcular?}
-    B -->|Jacobiano| C[1. Derivadas parciales<br/>∂uᵢ/∂xⱼ]
-    B -->|Integral| D[1. Elegir sistema<br/>coordenadas]
-    
-    C --> E[2. Formar matriz J]
-    E --> F[3. Calcular det J]
-    F --> G[4. Simplificar]
-    
-    D --> H[2. Calcular Jacobiano]
-    H --> I[3. Transformar región]
-    I --> J[4. Sustituir en integral]
-    J --> K[5. Evaluar]
-    
-    style C fill:#e1f5ff
-    style D fill:#fff4e1
-    style G fill:#e1ffe1
-    style K fill:#e1ffe1
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_08.svg]]
 
 ### ⚠️ Errores Comunes
 
@@ -449,30 +345,7 @@ flowchart TD
 
 ## 🔗 Conexiones Matemáticas
 
-```mermaid
-mindmap
-  root((Jacobiano))
-    Cálculo Vectorial
-      Gradiente
-      Divergencia
-      Rotacional
-    Álgebra Lineal
-      Determinantes
-      Transformaciones
-      Valores propios
-    Geometría Diferencial
-      Métricas
-      Cambios de base
-      Curvaturas
-    Análisis Numérico
-      Métodos Newton
-      Optimización
-      Diferencias finitas
-    Física
-      Coordenadas generalizadas
-      Lagrangiano
-      Fluidos
-```
+![[Diagramas/02_–_Jacobiano_de_la_transformación_09.svg]]
 
 ---
 

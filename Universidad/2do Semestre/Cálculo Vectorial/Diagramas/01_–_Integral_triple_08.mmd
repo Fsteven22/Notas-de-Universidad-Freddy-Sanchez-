@@ -1,0 +1,20 @@
+graph TB
+    A[Coordenadas Esféricas] --> B[Tres componentes]
+    
+    B --> C[ρ: distancia al origen]
+    B --> D[φ: ángulo polar]
+    B --> E[θ: ángulo azimutal]
+    
+    C --> F[0 ≤ ρ < ∞]
+    D --> G[0 ≤ φ ≤ π]
+    E --> H[0 ≤ θ < 2π]
+    
+    F --> I[dV = ρ²sinφ dρ dφ dθ]
+    G --> I
+    H --> I
+    
+    I --> J[⚠️ NO olvidar ρ²sinφ]
+    
+    style A fill:#e1f5ff
+    style I fill:#fff4e1
+    style J fill:#ffe1e1

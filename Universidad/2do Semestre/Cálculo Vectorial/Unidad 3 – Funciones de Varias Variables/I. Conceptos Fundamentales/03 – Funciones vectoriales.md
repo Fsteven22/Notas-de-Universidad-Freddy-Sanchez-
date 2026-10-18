@@ -1001,32 +1001,7 @@ dg-publish: true
 
 ## 🎨 Diagrama Conceptual
 
-```mermaid
-graph TB
-    A[Funciones Vectoriales<br/>r: ℝ → ℝ³] --> B[Componentes]
-    A --> C[Derivadas]
-    A --> D[Integrales]
-    A --> E[Aplicaciones]
-    
-    B --> B1["x(t), y(t), z(t)<br/>Funciones escalares"]
-    
-    C --> C1["r'(t) = Velocidad<br/>Tangente a curva"]
-    C --> C2["r''(t) = Aceleración<br/>Cambio velocidad"]
-    C --> C3["T(t) = Vector tangente<br/>unitario"]
-    
-    D --> D1["∫r(t)dt<br/>Antiderivada"]
-    D --> D2["Longitud arco<br/>L = ∫||r'||dt"]
-    
-    E --> E1[Cinemática<br/>Movimiento]
-    E --> E2[Trayectorias<br/>Curvas]
-    E --> E3[Física<br/>Partículas]
-    
-    style A fill:#e3f2fd
-    style B fill:#c8e6c9
-    style C fill:#ffe082
-    style D fill:#ffccbc
-    style E fill:#f3e5f5
-```
+![[Diagramas/03_–_Funciones_vectoriales_01.svg]]
 
 ## 💡 Consejos y Errores Comunes
 

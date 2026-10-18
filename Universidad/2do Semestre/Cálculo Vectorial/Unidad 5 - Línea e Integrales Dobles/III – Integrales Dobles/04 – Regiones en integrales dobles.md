@@ -20,29 +20,7 @@ dg-publish: true
 > |**Sistema de coordenadas**|Simplifica expresiones|Cálculos innecesariamente complejos|
 > |**Descomposición**|Divide problemas complejos|Problema intratable|
 
-```mermaid
-graph TB
-    A[Problema de Integral Doble] --> B[Identificar Región R]
-    B --> C{¿Tipo de región?}
-    
-    C -->|Simple| D[Tipo I o II]
-    C -->|Compuesta| E[Dividir en subregiones]
-    C -->|Simétrica| F[Aprovechar simetría]
-    C -->|Circular| G[Coordenadas polares]
-    
-    D --> H[Establecer límites]
-    E --> H
-    F --> H
-    G --> H
-    
-    H --> I[Plantear integral]
-    I --> J[Resolver]
-    
-    style B fill:#e1f5ff
-    style C fill:#fff4e1
-    style H fill:#e1ffe1
-    style J fill:#ccffcc
-```
+![[Diagramas/04_–_Regiones_en_integrales_dobles_01.svg]]
 
 ---
 
@@ -73,22 +51,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph TD
->     A[Región Rectangular R] --> B[Vértices]
->     B --> C["(a,c) esquina inferior izq."]
->     B --> D["(b,c) esquina inferior der."]
->     B --> E["(a,d) esquina superior izq."]
->     B --> F["(b,d) esquina superior der."]
->     A --> G[Lados]
->     G --> H["x = a (izquierdo)"]
->     G --> I["x = b (derecho)"]
->     G --> J["y = c (inferior)"]
->     G --> K["y = d (superior)"]
->     style A fill:#e1ffe1
->     style B fill:#e1f5ff
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_02.svg]]
 > 
 > **Ejemplo 1: Integral sobre cuadrado**
 > 
@@ -166,19 +129,7 @@ graph TB
 > 
 > **Proceso de visualización:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Fijar x = x₀] --> B[Trazar línea vertical]
->     B --> C[Intersecta y = g₁ x₀ ]
->     B --> D[Intersecta y = g₂ x₀ ]
->     C --> E[Integrar de g₁ x₀  a g₂ x₀ ]
->     D --> E
->     E --> F[Variar x de a a b]
->     F --> G[Resultado final]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_03.svg]]
 > 
 > **Ejemplo 1: Región parabólica**
 > 
@@ -265,19 +216,7 @@ graph TB
 > 
 > **Proceso de visualización:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Fijar y = y₀] --> B[Trazar línea horizontal]
->     B --> C[Intersecta x = h₁ y₀ ]
->     B --> D[Intersecta x = h₂ y₀ ]
->     C --> E[Integrar de h₁ y₀  a h₂ y₀ ]
->     D --> E
->     E --> F[Variar y de c a d]
->     F --> G[Resultado final]
->     style A fill:#fff4e1
->     style E fill:#e1f5ff
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_04.svg]]
 > 
 > **Ejemplo 1: Región con parábola horizontal**
 > 
@@ -317,20 +256,7 @@ graph TB
 > 
 > **Comparación Tipo I vs Tipo II:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R] --> B{¿Cómo describir?}
->     B -->|Verticalmente| C[Tipo I]
->     B -->|Horizontalmente| D[Tipo II]
->     C --> E[Límites: y = g x ]
->     C --> F[Orden: dy dx]
->     C --> G[Proyección en eje x]
->     D --> H[Límites: x = h y ]
->     D --> I[Orden: dx dy]
->     D --> J[Proyección en eje y]
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_05.svg]]
 > 
 > **Identificación visual de Tipo II:**
 > 
@@ -360,18 +286,7 @@ graph TB
 > 
 > **Proceso sistemático en 7 pasos:**
 > 
-> ```mermaid
-> flowchart TD
->     A[1: Integral dada] --> B[2: Extraer límites]
->     B --> C[3: Identificar región R]
->     C --> D[4: Graficar R]
->     D --> E[5: Determinar nuevo tipo]
->     E --> F[6: Expresar nuevos límites]
->     F --> G[7: Escribir nueva integral]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_06.svg]]
 > 
 > **Ejemplo detallado paso a paso:**
 > 
@@ -430,16 +345,7 @@ graph TB
 > 
 > **Estrategia: Dividir en subregiones**
 > 
-> ```mermaid
-> graph TD
->     A[Región compleja] --> B{¿Simple?}
->     B -->|No| C[Dividir en subregiones]
->     C --> D[R = R₁ ∪ R₂ ∪ ... ∪ Rₙ]
->     D --> E[Cada Rᵢ es simple]
->     E --> F[∬R f dA = ∬R₁ f + ∬R₂ f + ...]
->     style C fill:#ffe1e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_07.svg]]
 > 
 > **Ejemplo: Región en forma de "cruz"**
 > 
@@ -483,18 +389,7 @@ graph TB
 > 
 > **Proceso de graficación en 6 pasos:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Descripción de región] --> B[Identificar curvas frontera]
->     B --> C[Encontrar intersecciones]
->     C --> D[Graficar curvas individualmente]
->     D --> E[Determinar región interior]
->     E --> F[Sombrear región R]
->     F --> G[Verificar con puntos de prueba]
->     style A fill:#e1f5ff
->     style E fill:#fff4e1
->     style F fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_08.svg]]
 > 
 > **Técnica 1: Tabla de valores**
 > 
@@ -541,20 +436,7 @@ graph TB
 > 
 > **Técnica 4: Simetría**
 > 
-> ```mermaid
-> graph TD
->     A[Buscar simetrías] --> B{¿Tipo?}
->     B -->|Respecto a eje x| C[Si x,y  en R<br/>entonces  x,-y  en R]
->     B -->|Respecto a eje y| D[Si x,y  en R<br/>entonces  -x,y  en R]
->     B -->|Respecto al origen| E[Si x,y  en R<br/>entonces  -x,-y  en R]
->     C --> F[Graficar mitad<br/>reflejar sobre eje x]
->     D --> G[Graficar mitad<br/>reflejar sobre eje y]
->     E --> H[Graficar cuadrante<br/>rotar 180°]
->     style A fill:#e1f5ff
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_09.svg]]
 > 
 > **Ejemplo con simetría:**
 > 
@@ -641,17 +523,7 @@ graph TB
 > 
 > **Cuándo usar coordenadas polares:**
 > 
-> ```mermaid
-> graph TD
->     A[¿Usar polares?] --> B{Características}
->     B -->|Simetría circular| C[✅ Usar polares]
->     B -->|Ecuación con x²+y²| C
->     B -->|Frontera r = f θ | C
->     B -->|Región rectangular| D[❌ Usar cartesianas]
->     B -->|Fronteras y = f x | D
->     style C fill:#e1ffe1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_10.svg]]
 
 ### 📐 Ejemplos de Regiones Polares
 
@@ -754,37 +626,7 @@ graph TB
 > 
 > **Proceso completo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Problema] --> B[Leer enunciado]
->     B --> C[Identificar región R]
->     C --> D{¿Cómo está dada R?}
->     D -->|Desigualdades| E[Graficar fronteras]
->     D -->|Límites de integral| F[Extraer información]
->     D -->|Descripción verbal| G[Traducir a matemáticas]
->     E --> H[Dibujar región]
->     F --> H
->     G --> H
->     H --> I{¿Sistema de coordenadas?}
->     I -->|Cartesianas| J{¿Tipo I o II?}
->     I -->|Polares| K[Expresar en r,θ]
->     I -->|Ambos posibles| L[Comparar complejidad]
->     J -->|Tipo I| M[Límites: a≤x≤b, g₁ x ≤y≤g₂ x ]
->     J -->|Tipo II| N[Límites: c≤y≤d, h₁ y ≤x≤h₂ y ]
->     J -->|Ninguno| O[Dividir en subregiones]
->     K --> P[Límites: α≤θ≤β, r₁ θ ≤r≤r₂ θ ]
->     L --> Q[Elegir más simple]
->     M --> R[Plantear integral]
->     N --> R
->     O --> R
->     P --> R
->     Q --> R
->     R --> S[Resolver]
->     S --> T[Verificar resultado]
->     style H fill:#e1f5ff
->     style R fill:#e1ffe1
->     style T fill:#ccffcc
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_11.svg]]
 > 
 > **Checklist de decisión:**
 > 
@@ -851,49 +693,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Regiones en<br/>Integrales Dobles))
-    Tipos
-      Rectangular
-        Límites constantes
-        Orden intercambiable
-      Tipo I vertical
-        y entre funciones de x
-        Orden dy dx
-      Tipo II horizontal
-        x entre funciones de y
-        Orden dx dy
-      Polar
-        r y θ
-        dA = r dr dθ
-    Técnicas
-      Graficación
-        Identificar fronteras
-        Encontrar intersecciones
-        Sombrear región
-      Cambio de orden
-        Tipo I ↔ Tipo II
-        7 pasos sistemáticos
-        Simplificar integral
-      División
-        Subregiones simples
-        Sumar integrales
-        Minimizar particiones
-    Coordenadas
-      Cartesianas x,y
-        Naturales para rectángulos
-        Límites rectos
-      Polares r,θ
-        Naturales para círculos
-        Factor r extra
-        Simplifica simetrías radiales
-    Aplicaciones
-      Volúmenes
-      Áreas
-      Masa
-      Centroides
-```
+![[Diagramas/04_–_Regiones_en_integrales_dobles_12.svg]]
 
 ### 📋 Tabla Comparativa Final
 
@@ -910,32 +710,7 @@ mindmap
 
 ### 🔄 Diagrama de Flujo de Decisión
 
-```mermaid
-flowchart TD
-    A[Región R dada] --> B{¿Forma?}
-    
-    B -->|Rectangular| C[Límites constantes<br/>Orden arbitrario]
-    B -->|Curvilínea| D{¿Simetría circular?}
-    
-    D -->|Sí| E[Coordenadas polares<br/>dA = r dr dθ]
-    D -->|No| F{¿Líneas verticales<br/>cruzan ≤2 veces?}
-    
-    F -->|Sí| G[Tipo I<br/>dy dx]
-    F -->|No| H{¿Líneas horizontales<br/>cruzan ≤2 veces?}
-    
-    H -->|Sí| I[Tipo II<br/>dx dy]
-    H -->|No| J[Dividir en<br/>subregiones]
-    
-    C --> K[Integrar]
-    E --> K
-    G --> K
-    I --> K
-    J --> K
-    
-    style A fill:#e1f5ff
-    style E fill:#fff4e1
-    style K fill:#e1ffe1
-```
+![[Diagramas/04_–_Regiones_en_integrales_dobles_13.svg]]
 
 ---
 
@@ -1035,19 +810,7 @@ flowchart TD
 > 
 > **Lo siguiente:**
 > 
-> ```mermaid
-> graph LR
->     A[Regiones 2D] --> B[Cambio de variables general]
->     B --> C[Jacobiano]
->     A --> D[Regiones 3D]
->     D --> E[Integrales triples]
->     E --> F[Coordenadas cilíndricas]
->     E --> G[Coordenadas esféricas]
->     C --> H[Transformaciones generales]
->     style A fill:#e1ffe1
->     style C fill:#fff4e1
->     style E fill:#e1f5ff
-> ```
+> ![[Diagramas/04_–_Regiones_en_integrales_dobles_14.svg]]
 > 
 > **Progresión natural:**
 > 

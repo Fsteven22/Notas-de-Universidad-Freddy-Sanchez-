@@ -24,22 +24,7 @@ dg-publish: true
 > |**Ingeniería**|Flujo de calor, campos electromagnéticos|Termodinámica, electromagnetismo|
 > |**Economía**|Funciones de utilidad, producción|Optimización, teoría de juegos|
 
-```mermaid
-graph TB
-    A[Integral Simple<br/>∫ f x dx] --> B[Área bajo curva<br/>1 Dimensión]
-    
-    C[Integral Doble<br/>∬ f x,y dA] --> D[Volumen bajo superficie<br/>2 Dimensiones]
-    
-    E[Integral Triple<br/>∭ f x,y,z dV] --> F[Integral sobre sólido<br/>3 Dimensiones]
-    
-    B --> G[Aplicaciones<br/>en R]
-    D --> H[Aplicaciones<br/>en R²]
-    F --> I[Aplicaciones<br/>en R³]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style E fill:#fff4e1
-```
+![[Diagramas/01_–_Integrales_múltiples_01.svg]]
 
 ---
 
@@ -59,19 +44,7 @@ graph TB
 > 
 > **Interpretación geométrica:**
 > 
-> ```mermaid
-> graph TD
->     A[Región R en plano xy] --> B[Dividir en<br/>pequeños rectángulos]
->     B --> C[Calcular altura<br/>f x_i, y_i en cada uno]
->     C --> D[Volumen de cada<br/>prisma rectangular]
->     D --> E[Sumar todos<br/>los prismas]
->     E --> F{Refinar<br/>partición}
->     F -->|n → ∞| G[Volumen exacto<br/>bajo la superficie]
->     F -->|Más divisiones| B
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_02.svg]]
 > 
 > **Interpretaciones:**
 > 
@@ -107,18 +80,7 @@ graph TB
 > 
 > **Clasificación de regiones:**
 > 
-> ```mermaid
-> graph TD
->     A[Regiones de<br/>Integración] --> B[Tipo I<br/>Verticalmente Simple]
->     A --> C[Tipo II<br/>Horizontalmente Simple]
->     A --> D[Tipo General<br/>Dividir en subregiones]
->     B --> E[x fijo:<br/>a ≤ x ≤ b<br/>y varía: g₁ x ≤y≤ g₂ x]
->     C --> F[y fijo:<br/>c ≤ y ≤ d<br/>x varía: h₁ y ≤x≤ h₂ y]
->     D --> G[Combinar<br/>regiones Tipo I y II]
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style D fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_03.svg]]
 > 
 > **Región Tipo I (Verticalmente Simple):**
 > 
@@ -207,23 +169,7 @@ graph TB
 > 
 > **Algoritmo paso a paso:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral ∬_R f x,y dA] --> B[Paso 1:<br/>Identificar tipo de región]
->     B --> C{¿Tipo I o II?}
->     C -->|Tipo I| D[Escribir como<br/>∫ₐᵇ ∫_{g₁ x}^{g₂ x} f dy dx]
->     C -->|Tipo II| E[Escribir como<br/>∫_c^d ∫_{h₁ y}^{h₂ y} f dx dy]
->     C -->|Ambos| F[Elegir el más simple]
->     D --> G[Paso 2:<br/>Integrar interior]
->     E --> G
->     F --> G
->     G --> H[Resultado:<br/>función de variable externa]
->     H --> I[Paso 3:<br/>Integrar exterior]
->     I --> J[Resultado final]
->     style A fill:#e1f5ff
->     style G fill:#fff4e1
->     style J fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_04.svg]]
 > 
 > **Ejemplo detallado 1: Región rectangular**
 > 
@@ -355,19 +301,7 @@ graph TB
 > 
 > **Interpretación:**
 > 
-> ```mermaid
-> graph TD
->     A[Sólido E en R³] --> B[Dividir en<br/>pequeñas cajas]
->     B --> C[Evaluar f en<br/>cada caja]
->     C --> D[Multiplicar por<br/>volumen ΔV_i]
->     D --> E[Sumar todas<br/>las contribuciones]
->     E --> F{Refinar<br/>partición}
->     F -->|n → ∞| G[Valor exacto<br/>de la integral]
->     F -->|Más divisiones| B
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_05.svg]]
 > 
 > **Interpretaciones físicas:**
 > 
@@ -441,22 +375,7 @@ graph TB
 > 
 > **Diagrama de decisión:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Sólido E] --> B{¿Forma del sólido?}
->     B -->|Caja rectangular| C[Límites constantes<br/>6 órdenes posibles]
->     B -->|Entre dos superficies z| D[Tipo 1<br/>dz en el medio]
->     B -->|Entre dos superficies y| E[Tipo 2<br/>dy en el medio]
->     B -->|Entre dos superficies x| F[Tipo 3<br/>dx en el medio]
->     B -->|Complejo| G[Dividir en<br/>subregiones simples]
->     C --> H[Integrar en<br/>cualquier orden]
->     D --> I[∬_R ... dz dA]
->     E --> J[∬_R ... dy dA]
->     F --> K[∬_R ... dx dA]
->     style B fill:#fff4e1
->     style D fill:#e1ffe1
->     style G fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_06.svg]]
 > 
 > **Ejemplo: Pirámide**
 > 
@@ -499,20 +418,7 @@ graph TB
 > 
 > **Estrategia para elegir orden:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Integral triple] --> B{¿Límites constantes?}
->     B -->|Sí, todos| C[Cualquier orden<br/>Elegir el más simple]
->     B -->|No| D{¿Cuáles dependen<br/>de otras variables?}
->     D --> E[Identificar dependencias]
->     E --> F[Variable con límites<br/>más complejos → INTERIOR]
->     F --> G[Variables con límites<br/>simples → EXTERIOR]
->     C --> H[Evaluar]
->     G --> H
->     style A fill:#e1f5ff
->     style F fill:#fff4e1
->     style H fill:#e1ffe1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_07.svg]]
 > 
 > **Ejemplo de cambio de orden:**
 > 
@@ -692,37 +598,7 @@ graph TB
 
 ### 🗺️ Diagrama de Flujo General
 
-```mermaid
-flowchart TD
-    A[Integral Múltiple] --> B{¿Dimensión?}
-    
-    B -->|2D| C[Integral Doble<br/>∬_R f x,y dA]
-    B -->|3D| D[Integral Triple<br/>∭_E f x,y,z dV]
-    
-    C --> E{¿Región R?}
-    E -->|Rectangular| F[Límites constantes]
-    E -->|Tipo I/II| G[Identificar límites]
-    E -->|Circular| H[Usar polares]
-    
-    D --> I{¿Sólido E?}
-    I -->|Caja| J[6 órdenes posibles]
-    I -->|Tipo 1/2/3| K[Identificar superficies]
-    I -->|Cilíndrico/Esférico| L[Cambio de coordenadas]
-    
-    F --> M[Integrar]
-    G --> M
-    H --> M
-    J --> M
-    K --> M
-    L --> M
-    
-    M --> N[Resultado]
-    
-    style A fill:#e1f5ff
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style N fill:#e1f5ff
-```
+![[Diagramas/01_–_Integrales_múltiples_08.svg]]
 
 ### ✅ Checklist de Resolución
 
@@ -975,26 +851,7 @@ flowchart TD
 > 
 > **Has dominado:**
 > 
-> ```mermaid
-> mindmap
->   root((Integrales<br/>Múltiples))
->     Dobles
->       Regiones Tipo I/II
->       Órdenes
->       Aplicaciones
->     Triples
->       Sólidos 3D
->       Cambio de orden
->       Volúmenes
->     Aplicaciones
->       Masa
->       Centro de masa
->       Momentos
->     Técnicas
->       Límites
->       Cambio de variables
->       Coordenadas
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_09.svg]]
 > 
 > **Progresión del aprendizaje:**
 > 
@@ -1009,24 +866,7 @@ flowchart TD
 > 
 > **Roadmap completo:**
 > 
-> ```mermaid
-> graph LR
->     A[Integral<br/>Simple] --> B[Integrales<br/>Dobles]
->     B --> C[Integrales<br/>Triples]
->     C --> D[Coordenadas<br/>Curvilíneas]
->     B --> E[Cambio de<br/>Variables 2D]
->     C --> F[Cambio de<br/>Variables 3D]
->     E --> G[Aplicaciones<br/>Físicas]
->     F --> G
->     G --> H[Integrales<br/>de Línea]
->     G --> I[Integrales<br/>de Superficie]
->     H --> J[Teoremas<br/>Fundamentales]
->     I --> J
->     style B fill:#e1ffe1
->     style C fill:#fff4e1
->     style G fill:#e1f5ff
->     style J fill:#ffe1e1
-> ```
+> ![[Diagramas/01_–_Integrales_múltiples_10.svg]]
 > 
 > **Aplicaciones futuras:**
 > 

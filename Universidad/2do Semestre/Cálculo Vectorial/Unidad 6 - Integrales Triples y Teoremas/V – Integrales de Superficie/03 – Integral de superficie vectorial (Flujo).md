@@ -27,24 +27,7 @@ dg-publish: true
 > |**Transferencia de calor**|Flujo térmico|Aislamiento, intercambiadores|
 > |**Meteorología**|Flujo de masa de aire|Predicción del tiempo|
 
-```mermaid
-graph TB
-    A[Campo Vectorial F x,y,z] --> B[Superficie S orientada]
-    B --> C[Vector normal \hat{n}]
-    
-    C --> D[Flujo = ∬S F · \hat{n} dS]
-    
-    D --> E{Interpretación}
-    E --> F[Flujo > 0<br/>Sale de la superficie]
-    E --> G[Flujo < 0<br/>Entra a la superficie]
-    E --> H[Flujo = 0<br/>Tangente a superficie]
-    
-    style A fill:#e1f5ff
-    style D fill:#e1ffe1
-    style F fill:#ffe1e1
-    style G fill:#e1ffe1
-    style H fill:#fff4e1
-```
+![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_01.svg]]
 
 ---
 
@@ -76,17 +59,7 @@ graph TB
 > 
 > **Visualización:**
 > 
-> ```mermaid
-> graph LR
->     A[Punto x,y,z] --> B[Vector F x,y,z]
->     B --> C[Componentes<br/>P, Q, R]
->     C --> D[P \hat{i}: componente en x]
->     C --> E[Q \hat{j}: componente en y]
->     C --> F[R \hat{k}: componente en z]
->     style A fill:#e1f5ff
->     style B fill:#fff4e1
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_02.svg]]
 > 
 > **Ejemplo:**
 > 
@@ -130,19 +103,7 @@ graph TB
 > 
 > **Diagrama:**
 > 
-> ```mermaid
-> graph TD
->     A[Región D en plano uv] --> B[Parametrización r u,v]
->     B --> C[Superficie S en ℝ³]
->     B --> D[Vector tangente r_u]
->     B --> E[Vector tangente r_v]
->     D --> F[Producto cruz<br/>r_u × r_v]
->     E --> F
->     F --> G[Vector normal \hat{n}]
->     style A fill:#e1f5ff
->     style C fill:#e1ffe1
->     style G fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_03.svg]]
 
 ### 🧭 Vector Normal y Orientación
 
@@ -184,14 +145,7 @@ graph TB
 > 
 > **Regla de la mano derecha:**
 > 
-> ```mermaid
-> graph LR
->     A[Dedos: dirección u] --> B[Palma: dirección v]
->     B --> C[Pulgar: dirección n]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#ffe1e1
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_04.svg]]
 > 
 > **Superficies no orientables:**
 > 
@@ -233,18 +187,7 @@ graph TB
 > 
 > **Proceso de cálculo:**
 > 
-> ```mermaid
-> flowchart TD
->     A[Campo F y Superficie S] --> B[Parametrizar: r u,v]
->     B --> C[Calcular r_u y r_v]
->     C --> D[Calcular n = r_u × r_v]
->     D --> E[Evaluar F r u,v]
->     E --> F[Producto punto F · n]
->     F --> G[Integrar sobre D:<br/>∬ F·n du dv]
->     style A fill:#e1f5ff
->     style D fill:#fff4e1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_05.svg]]
 
 ### 📊 Casos Especiales
 
@@ -519,19 +462,7 @@ graph TB
 > 
 > **Analogía:**
 > 
-> ```mermaid
-> graph TD
->     A[Región E] --> B[Fuentes en interior<br/>div F > 0]
->     A --> C[Sumideros en interior<br/>div F < 0]
->     B --> D[Flujo sale<br/>por frontera S]
->     C --> E[Flujo entra<br/>por frontera S]
->     D --> F[Flujo neto = ∭ div F dV]
->     E --> F
->     style A fill:#e1f5ff
-> 	style D fill:#ffe1e1
-> 	style E fill:#e1ffe1
-> 	style F fill:#fff4e1
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_06.svg]]
 > 
 > 
 > 
@@ -585,38 +516,7 @@ graph TB
 
 ### 🗺️ Mapa Conceptual
 
-```mermaid
-mindmap
-  root((Integral de<br/>Superficie Vectorial))
-    Conceptos Básicos
-      Campo Vectorial F
-        Componentes P, Q, R
-        Ejemplos físicos
-      Superficie S
-        Parametrización r u,v
-        Orientación
-      Vector Normal
-        n = r_u × r_v
-        Orientación consistente
-    Fórmula de Flujo
-      ∬ F · dS
-      ∬ F · \hat{n} dS
-      ∬ F · r_u × r_v du dv
-    Casos Especiales
-      Gráfica z = f x,y
-      Cilindro
-      Esfera
-      Planos
-    Teorema de Divergencia
-      ∬_S F · dS = ∭_E div F dV
-      Divergencia ∇ · F
-      Simplifica cálculos
-    Aplicaciones
-      Flujo de fluidos
-      Electromagnetismo
-      Transferencia de calor
-      Ley de Gauss
-```
+![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_07.svg]]
 
 ---
 
@@ -635,30 +535,7 @@ mindmap
 
 ## ✅ Proceso de Resolución
 
-```mermaid
-flowchart TD
-    A[Problema de flujo] --> B{¿Superficie cerrada?}
-    
-    B -->|Sí| C{¿div F simple?}
-    B -->|No| D[Calcular directamente]
-    
-    C -->|Sí| E[Usar Teorema<br/>de Divergencia]
-    C -->|No| D
-    
-    E --> F[1. Calcular ∇ · F]
-    F --> G[2. Integrar ∭ div F dV]
-    
-    D --> H[1. Parametrizar S: r u,v]
-    H --> I[2. Calcular r_u y r_v]
-    I --> J[3. Calcular n = r_u × r_v]
-    J --> K[4. Evaluar F r u,v]
-    K --> L[5. F · n]
-    L --> M[6. Integrar ∬ F·n du dv]
-    
-    style E fill:#e1ffe1
-    style G fill:#ccffcc
-    style M fill:#fff4e1
-```
+![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_08.svg]]
 
 ---
 
@@ -717,18 +594,7 @@ flowchart TD
 > 
 > **Roadmap:**
 > 
-> ```mermaid
-> graph LR
->     A[Integral de<br/>Superficie] --> B[Teorema de Stokes]
->     B --> C[Ecuaciones de Maxwell]
->     C --> D[Física Matemática]
->     A -.-> E[Análisis Vectorial<br/>Avanzado]
->     E -.-> F[Geometría Diferencial]
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f0e1ff
-> ```
+> ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_09.svg]]
 
 ---
 
