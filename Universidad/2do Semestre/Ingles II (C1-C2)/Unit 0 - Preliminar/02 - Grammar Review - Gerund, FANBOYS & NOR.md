@@ -16,18 +16,7 @@ dg-publish: true
 > | **2** | FANBOYS — conjunciones coordinantes |
 > | **3** | The use of NOR |
 >
-> ```mermaid
-> graph TD
->     A[Gerund, FANBOYS & NOR] --> B[Gerund]
->     A --> C[FANBOYS]
->     A --> D[NOR]
->     B --> E[Verb + ing<br/>used as a noun]
->     C --> F[7 coordinating<br/>conjunctions]
->     D --> G[Neither...nor<br/>Not this, nor that]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/02_-_Grammar_Review_-_Gerund,_FANBOYS_&_NOR_01.svg]]
 
 ---
 

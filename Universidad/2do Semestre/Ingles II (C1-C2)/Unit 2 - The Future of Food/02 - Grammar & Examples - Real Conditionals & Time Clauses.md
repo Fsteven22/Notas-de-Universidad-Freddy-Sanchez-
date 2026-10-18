@@ -13,15 +13,7 @@ dg-publish: true
 > - **Real Conditionals:** oraciones con *if* que expresan condiciones reales, hábitos, instrucciones o predicciones.
 > - **Time Clauses:** oraciones que usan *when*, *after* o *until* para expresar cuándo ocurre algo.
 >
-> ```mermaid
-> graph TD
->     A[Grammar & Examples<br/>Unit 2] --> B[Real Conditionals]
->     A --> C[Time Clauses]
->     B --> D[if + presente<br/>→ resultado]
->     C --> E[when / after / until<br/>+ presente → futuro]
->     style B fill:#e8eaf6
->     style C fill:#fce4ec
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Real_Conditionals_&_Time_Clauses_01.svg]]
 >
 > | Estructura | Función principal | Ejemplo de uso real |
 > |---|---|---|

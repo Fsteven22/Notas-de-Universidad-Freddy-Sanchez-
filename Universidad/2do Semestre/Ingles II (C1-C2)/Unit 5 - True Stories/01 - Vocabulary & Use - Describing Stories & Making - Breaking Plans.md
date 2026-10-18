@@ -12,15 +12,7 @@ dg-publish: true
 > - **Describing stories:** términos para clasificar tipos de historias según su tono, tema o estructura (sección 5.1).
 > - **Making and breaking plans:** verbos y frases para hablar de planes, cambios de planes y las consecuencias sociales de romperlos (sección 5.2).
 > 
-> ```mermaid
-> graph TD
->     A["Vocabulary & Use<br/>Unit 5"] --> B["Describing Stories"]
->     A --> C["Making & Breaking Plans"]
->     B --> D["coming-of-age · tearjerker<br/>whodunit · tall tale"]
->     C --> E["give up · let someone down<br/>hang out · split up"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -149,22 +141,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué necesito describir?"] -->|Una historia| B["¿Cuál es el enfoque principal?"]
-    A -->|Una situación social de planes| F["¿Qué pasó con el plan?"]
-
-    B -->|Resolver un enigma| C["mystery / whodunit"]
-    B -->|Generar llanto/emoción fuerte| D["tearjerker"]
-    B -->|Exagerada, casi increíble| E["tall tale"]
-
-    F -->|Se organizó| G["get together / hang out / look forward to"]
-    F -->|Se canceló con excusa| H["make up an excuse / be held up"]
-    F -->|Se arruinó por error| I["mess up / let someone down"]
-    F -->|Se perdió la esperanza| J["give up (on someone)"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_02.svg]]
 
 ---
 

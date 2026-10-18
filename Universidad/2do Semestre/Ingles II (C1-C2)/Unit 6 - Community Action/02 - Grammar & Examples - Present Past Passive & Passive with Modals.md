@@ -13,15 +13,7 @@ dg-publish: true
 > - **Present and past passive:** para describir acciones cuando el agente (quién hace la acción) no es importante o no se conoce (sección 6.1).
 > - **Passive with modals:** para combinar la voz pasiva con distintos grados de certeza, posibilidad o necesidad (sección 6.2).
 > 
-> ```mermaid
-> graph TD
->     A["Grammar & Examples<br/>Unit 6"] --> B["Present/Past Passive"]
->     A --> C["Passive with Modals"]
->     B --> D["is/are + participio<br/>was/were + participio"]
->     C --> E["modal + be + participio<br/>can/might/must/will"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -137,18 +129,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué quiero expresar?"] -->|Un hecho simple, sin importar quién lo hizo| B["Present/Past Passive<br/>(be + participio)"]
-    A -->|Un hecho con grado de certeza/posibilidad/necesidad| C["¿Qué matiz necesito?"]
-
-    C -->|Probable, no seguro| D["might + be + participio"]
-    C -->|Una posibilidad entre varias| E["can + be + participio"]
-    C -->|Necesario/obligatorio| F["must + be + participio"]
-    C -->|Verdad general en el contexto| G["will + be + participio"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_02.svg]]
 
 ---
 

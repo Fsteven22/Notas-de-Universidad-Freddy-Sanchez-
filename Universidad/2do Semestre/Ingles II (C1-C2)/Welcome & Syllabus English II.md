@@ -69,19 +69,7 @@ dg-publish: true
 
 > [!tip] 📚 Unidades del curso
 >
-> ```mermaid
-> graph LR
->     A[🗣️ English II] --> B[Unit 1<br>And We're Off!]
->     A --> C[Unit 2<br>Work & Technology]
->     A --> D[Unit 3<br>Human Relations]
->     A --> E[Unit 4<br>Personalities]
->     A --> F[Unit 5<br>The Environment]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#ffe1e1
->     style F fill:#f0e1ff
-> ```
+> ![[Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
 >
 > | Unit | Tema (Syllabus) | Libro (Evolve 4A) | Horas |
 > |---|---|---|---|

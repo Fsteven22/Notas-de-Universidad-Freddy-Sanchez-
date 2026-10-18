@@ -13,15 +13,7 @@ dg-publish: true
 > - **Discussing good works:** verbos y frases para hablar de trabajo voluntario y participación comunitaria (sección 6.1).
 > - **Describing good deeds:** familias de palabras (verbo/sustantivo/adjetivo/expresión) para hablar de actos de bondad y su recepción (sección 6.2).
 > 
-> ```mermaid
-> graph TD
->     A["Vocabulary & Use<br/>Unit 6"] --> B["Discussing Good Works"]
->     A --> C["Describing Good Deeds"]
->     B --> D["volunteer · donate<br/>get involved · take care of"]
->     C --> E["gratitude · appreciative<br/>kind · rewarding"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -139,20 +131,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué quiero describir?"] -->|Cómo participo en una causa| B["¿Qué tipo de participación?"]
-    A -->|Cómo se recibió un acto de bondad| F["¿Fue bien recibido?"]
-
-    B -->|Dar dinero/recursos| C["donate"]
-    B -->|Dar tiempo sin pago| D["volunteer"]
-    B -->|Unirme a una organización| E["get involved with / take part in"]
-
-    F -->|Sí, con agradecimiento| G["met with gratitude / appreciated"]
-    F -->|No, con indiferencia| H["not appreciated / interpreted as unwanted attention"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_02.svg]]
 
 ---
 

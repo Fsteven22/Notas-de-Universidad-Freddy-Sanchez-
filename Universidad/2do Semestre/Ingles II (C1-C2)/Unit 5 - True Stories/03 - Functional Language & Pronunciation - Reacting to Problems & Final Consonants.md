@@ -13,15 +13,7 @@ dg-publish: true
 > - **Accepting bad news:** expresiones para mostrar que algo te decepciona, pero que lo aceptas con calma.
 > - **Pronunciation:** cómo pronunciar con claridad los sonidos consonánticos al final de una palabra.
 > 
-> ```mermaid
-> graph TD
->     A["Functional Language<br/>& Pronunciation — Unit 5"] --> B["Manejar Problemas"]
->     A --> C["Pronunciation"]
->     B --> D["Reaccionar<br/>Pedir solución<br/>Aceptar solución/mala noticia"]
->     C --> E["Consonantes finales<br/>claras"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -141,16 +133,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["Algo salió mal.<br/>¿Qué hago?"] --> B["1. Reacciona con calma:<br/>'I don't understand' / 'There must be some kind of mistake'"]
-    B --> C["2. Pide una solución:<br/>'There must be something you can do' / 'I'd like to speak to the manager'"]
-    C --> D{"¿Te ofrecen una solución aceptable?"}
-    D -->|Sí| E["Acepta la solución:<br/>'That'll work' / 'I'm glad it's settled'"]
-    D -->|No| F["Acepta la situación:<br/>'Well, it is what it is' / 'That's too bad, but hey...'"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_02.svg]]
 
 ---
 

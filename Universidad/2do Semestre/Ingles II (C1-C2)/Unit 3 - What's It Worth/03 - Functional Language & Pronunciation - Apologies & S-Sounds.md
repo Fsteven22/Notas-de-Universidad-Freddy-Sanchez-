@@ -14,18 +14,7 @@ dg-publish: true
 > - **Responding to an apology:** estrategias para aceptar una disculpa y quitarle peso al error.
 > - **Pronunciation:** el sonido /s/ inicial en inglés y por qué es problemático para hispanohablantes.
 > 
-> ```mermaid
-> graph TD
->     A[Functional Language<br/>& Pronunciation<br/>Unit 3] --> B[Apologizing]
->     A --> C[Responding to an Apology]
->     A --> D[Pronunciation: /s/ inicial]
->     B --> E[Frases para disculparse<br/>por daños o pérdidas]
->     C --> F[Estrategias para<br/>aceptar y aliviar]
->     D --> G["/s/ vs. /es/<br/>al inicio de palabra"]
->     style B fill:#fce4ec
->     style C fill:#e8f5e9
->     style D fill:#e3f2fd
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Apologies_&_S-Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Contexto|
 > |---|---|---|

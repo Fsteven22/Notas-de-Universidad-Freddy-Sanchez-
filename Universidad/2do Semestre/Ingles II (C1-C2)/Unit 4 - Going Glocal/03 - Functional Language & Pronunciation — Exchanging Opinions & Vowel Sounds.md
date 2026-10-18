@@ -13,15 +13,7 @@ dg-publish: true
 > - **Making opinions more emphatic:** expresiones para reforzar un desacuerdo fuerte (sección 4.3, Real-World Strategy).
 > - **Pronunciation:** distinción entre los sonidos vocálicos /ɒ/ y /ʌ/ (sección 4.3) y el uso del **stress** (énfasis) para organizar temas en un discurso (sección 4.4).
 > 
-> ```mermaid
-> graph TD
->     A["Functional Language<br/>& Pronunciation — Unit 4"] --> B["Exchanging Opinions"]
->     A --> C["Pronunciation"]
->     B --> D["Giving opinions<br/>Discussing/disagreeing<br/>Being emphatic"]
->     C --> E["/ɒ/ vs /ʌ/<br/>Stress for topic organization"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -147,18 +139,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué necesito expresar?"] -->|Dar mi opinión por primera vez| B["As I see it... / I find it... / I really think..."]
-    A -->|Matizar mi propia opinión| C["It's not so much that..., it's just that..."]
-    A -->|Responder a otra opinión| D["¿Qué tan fuerte es mi desacuerdo?"]
-
-    D -->|Leve, quiero reconocer el punto primero| E["That's a good point, but... / That's true, but..."]
-    D -->|Quiero interrumpir cortésmente| F["Now, just a second..."]
-    D -->|Fuerte, quiero ser enfático| G["That's not true at all. / I couldn't disagree more. / You have it all wrong."]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_—_Exchanging_Opinions_&_Vowel_Sounds_02.svg]]
 
 ---
 

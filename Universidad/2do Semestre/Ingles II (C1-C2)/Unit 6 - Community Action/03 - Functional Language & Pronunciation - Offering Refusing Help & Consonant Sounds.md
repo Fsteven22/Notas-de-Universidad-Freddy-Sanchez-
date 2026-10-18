@@ -14,15 +14,7 @@ dg-publish: true
 > - **Imposing on somebody:** cómo suavizar una petición que el otro podría no querer cumplir.
 > - **Pronunciation:** distinción entre /b/ y /v/ en medio de una palabra (6.3), y el sonido de conexión /j/ entre palabras (6.4).
 > 
-> ```mermaid
-> graph TD
->     A["Functional Language<br/>& Pronunciation — Unit 6"] --> B["Offering/Refusing/Accepting Help"]
->     A --> C["Pronunciation"]
->     B --> D["Let me... / I can manage<br/>I insist / Imposing on somebody"]
->     C --> E["/b/ vs /v/<br/>Conexión con /j/"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -160,17 +152,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué situación social enfrento?"] -->|Quiero ayudar a alguien| B["Making an offer:<br/>'Would you like...?' / 'Let me...'"]
-    A -->|Me ofrecen ayuda| C["¿La necesito?"]
-    A -->|Necesito pedir algo incómodo| D["Imposing on somebody:<br/>'I'm sorry to have to ask, but...'"]
-
-    C -->|No, puedo solo/a| E["Refusing:<br/>'I can manage' / 'It's all good'"]
-    C -->|Sí, la agradezco| F["Accepting:<br/>'That's very kind of you'"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_02.svg]]
 
 ---
 

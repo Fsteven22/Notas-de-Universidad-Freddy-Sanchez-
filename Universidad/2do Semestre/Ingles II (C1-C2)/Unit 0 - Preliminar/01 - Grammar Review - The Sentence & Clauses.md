@@ -16,19 +16,7 @@ dg-publish: true
 > | **2** | Characteristics of a sentence |
 > | **3** | Independent vs. Dependent Clauses |
 >
-> ```mermaid
-> graph TD
->     A[The Sentence & Clauses] --> B[What is a sentence?]
->     A --> C[Characteristics]
->     A --> D[Clauses]
->     D --> E[Independent Clause<br/>✅ stands alone]
->     D --> F[Dependent Clause<br/>❌ needs support]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#e1ffe1
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_01.svg]]
 
 ---
 
@@ -65,13 +53,7 @@ dg-publish: true
 >
 > **Estructura visual:**
 >
-> ```mermaid
-> graph LR
->     C["Mayúscula"] --> S["Sujeto"]
->     S --> V["Verbo"]
->     V --> X["Complemento"]
->     X --> P[". ? !"]
-> ```
+> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_02.svg]]
 >
 > *She runs every morning.* — Mayúscula + Sujeto + Verbo + Complemento + Punto.
 
@@ -83,17 +65,7 @@ dg-publish: true
 >
 > A **clause** is a group of words that contains a **subject** and a **verb**. There are two types:
 >
-> ```mermaid
-> graph LR
->     A[CLAUSE] --> B[Independent Clause]
->     A --> C[Dependent Clause]
->     B --> B1["✅ Makes complete sense alone<br/>─────────────────<br/>She loves music."]
->     C --> C1["❌ Does NOT make sense alone<br/>─────────────────<br/>Because she loves music..."]
->     style B fill:#e1ffe1
->     style C fill:#ffe1e1
->     style B1 fill:#f0fff0
->     style C1 fill:#fff0f0
-> ```
+> ![[Diagramas/01_-_Grammar_Review_-_The_Sentence_&_Clauses_03.svg]]
 >
 > ---
 >

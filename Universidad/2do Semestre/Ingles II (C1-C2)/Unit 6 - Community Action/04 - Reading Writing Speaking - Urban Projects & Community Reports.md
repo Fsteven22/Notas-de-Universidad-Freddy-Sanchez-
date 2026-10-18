@@ -13,15 +13,7 @@ dg-publish: true
 > - **Painting Safer Streets:** comparación de dos proyectos urbanos reales (Portland y Ciudad de México), con enfoque en cómo introducir citas de opiniones distintas dentro de un reporte (sección 6.4).
 > - **Your Urban Art Project:** una tarea de speaking en grupo inspirada en el proyecto Morrinho de Río de Janeiro, para diseñar tu propio proyecto de arte urbano (sección 6.5, Time to Speak).
 > 
-> ```mermaid
-> graph TD
->     A["Reading, Writing & Speaking<br/>Unit 6"] --> B["Painting Safer Streets"]
->     A --> C["Your Urban Art Project"]
->     B --> D["Intersection Repair (Portland)<br/>Verde Vertical (CDMX)"]
->     C --> E["Morrinho Art Project<br/>Research · Decide · Present"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -154,16 +146,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Cómo introduzco una cita en mi reporte?
 
-```mermaid
-graph TD
-    A["Quiero incluir la opinión de alguien"] --> B{"¿Es una fuente oficial/institucional?"}
-    B -->|Sí| C["'A spokesman from... said...'"]
-    B -->|No, es una persona afectada directamente| D{"¿Su opinión contrasta con la anterior?"}
-    D -->|No, refuerza la idea anterior| E["'One [rol] said...'"]
-    D -->|Sí, contrasta| F["'However, a [rol] disagreed...'"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_02.svg]]
 
 ---
 

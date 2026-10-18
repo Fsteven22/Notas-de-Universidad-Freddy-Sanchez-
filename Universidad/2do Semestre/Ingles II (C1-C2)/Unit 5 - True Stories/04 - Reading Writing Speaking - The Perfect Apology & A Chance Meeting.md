@@ -12,15 +12,7 @@ dg-publish: true
 > - **The Perfect Apology:** análisis de una disculpa corporativa real (JetBlue) para identificar qué hace que una disculpa sea efectiva, y redacción de tu propia disculpa formal (sección 5.4).
 > - **A Chance Meeting:** una tarea de speaking en grupo para construir y narrar colaborativamente una historia de un encuentro casual (sección 5.5, Time to Speak).
 > 
-> ```mermaid
-> graph TD
->     A["Reading, Writing & Speaking<br/>Unit 5"] --> B["The Perfect Apology"]
->     A --> C["A Chance Meeting"]
->     B --> D["Caso JetBlue<br/>3 reglas de una buena disculpa"]
->     C --> E["Backstories · predicción<br/>narración colaborativa"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -163,19 +155,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Sigue mi disculpa las 3 reglas?
 
-```mermaid
-graph TD
-    A["Escribí una disculpa corporativa"] --> B{"¿Dije claramente que lo siento?"}
-    B -->|No| C["❌ Agrega una disculpa directa"]
-    B -->|Sí| D{"¿Prometí que no volverá a pasar?"}
-    D -->|No| E["❌ Agrega una promesa concreta"]
-    D -->|Sí| F{"¿Ofrecí una acción de compensación?"}
-    F -->|No| G["❌ Agrega una acción concreta, no solo palabras"]
-    F -->|Sí| H["✅ Disculpa completa según las 3 reglas"]
-
-    style A fill:#1e3a5f,color:#fff
-    style H fill:#2e7d32,color:#fff
-```
+![[Diagramas/04_-_Reading_Writing_Speaking_-_The_Perfect_Apology_&_A_Chance_Meeting_02.svg]]
 
 ---
 

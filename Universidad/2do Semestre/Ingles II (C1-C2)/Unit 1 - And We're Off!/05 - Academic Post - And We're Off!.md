@@ -17,19 +17,7 @@ dg-publish: true
 > |**Fuente**|Academic Writing Center (AWC) — ESPOL|
 > |**Archivo original**|[[Academic Post KYdA.pdf]]|
 > 
-> ```mermaid
-> graph TD
->     A[Academic Post] --> B[Expresar opinión]
->     A --> C[Dar razones y soporte]
->     A --> D[Reconocer punto opuesto]
->     A --> E[Responder a un compañero]
->     A --> F[Concluir]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
->     style E fill:#f5e1ff
->     style F fill:#ffe1e1
-> ```
+> ![[Diagramas/05_-_Academic_Post_-_And_We're_Off!_01.svg]]
 > 
 > |Parte|Función|Señal de apertura típica|
 > |---|---|---|

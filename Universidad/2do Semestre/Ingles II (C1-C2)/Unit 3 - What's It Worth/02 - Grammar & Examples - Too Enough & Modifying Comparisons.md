@@ -13,15 +13,7 @@ dg-publish: true
 > - **Too and enough:** para indicar si algo es excesivo o insuficiente.
 > - **Modifying comparisons:** para mostrar el grado exacto de una diferencia al comparar.
 > 
-> ```mermaid
-> graph TD
->     A[Grammar & Examples<br/>Unit 3] --> B[Too & Enough]
->     A --> C[Modifying Comparisons]
->     B --> D[too + adj.<br/>not enough + sust.]
->     C --> E[a little · much · nowhere near<br/>by far · a whole lot]
->     style B fill:#fff3e0
->     style C fill:#e8f5e9
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Too_Enough_&_Modifying_Comparisons_01.svg]]
 > 
 > |Estructura|Función|Ejemplo de uso real|
 > |---|---|---|

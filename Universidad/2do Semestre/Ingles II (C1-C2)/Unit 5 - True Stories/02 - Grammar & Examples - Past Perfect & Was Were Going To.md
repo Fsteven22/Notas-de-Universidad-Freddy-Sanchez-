@@ -12,15 +12,7 @@ dg-publish: true
 > - **Past perfect:** para hablar del orden entre dos eventos pasados (sección 5.1).
 > - **Was/were going to & was/were supposed to:** para hablar de planes pasados que cambiaron o no se cumplieron (sección 5.2).
 > 
-> ```mermaid
-> graph TD
->     A["Grammar & Examples<br/>Unit 5"] --> B["Past Perfect"]
->     A --> C["Planes que cambiaron"]
->     B --> D["had + participio<br/>orden de eventos pasados"]
->     C --> E["was/were going to<br/>was/were supposed to"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -126,21 +118,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué quiero expresar?"] -->|Cuál de dos eventos pasados ocurrió primero| B["Past Perfect<br/>(had + participio)"]
-    A -->|Un plan pasado que no se cumplió| C["¿Qué matiz quiero dar?"]
-
-    C -->|Intención personal que cambió| D["was/were going to"]
-    C -->|Obligación/expectativa externa que no se cumplió| E["was/were supposed to"]
-
-    D --> F{"¿Incluyo el verbo be?"}
-    E --> F
-    F -->|Sí, siempre| G["✅ was/were + going to/supposed to"]
-    F -->|No| H["❌ Error común — nunca omitir be"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Past_Perfect_&_Was_Were_Going_To_02.svg]]
 
 ---
 

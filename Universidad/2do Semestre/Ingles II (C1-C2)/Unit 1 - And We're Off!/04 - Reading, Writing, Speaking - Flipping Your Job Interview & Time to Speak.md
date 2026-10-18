@@ -14,18 +14,7 @@ dg-publish: true
 > - **Writing:** frases para expresar acuerdo, desacuerdo y apreciación en comentarios de blog, con registro formal e informal.
 > - **Speaking:** frases útiles organizadas por etapa para un roleplay de entrevista de trabajo.
 > 
-> ```mermaid
-> graph TD
->     A[Reading, Writing, Speaking<br/>Unit 1] --> B[Reading]
->     A --> C[Writing]
->     A --> D[Speaking]
->     B --> E[Flipping Your<br/>Job Interview<br/>Tesis · argumentos · conclusión]
->     C --> F[Blog comments:<br/>agree · disagree · appreciate]
->     D --> G[Job interview roleplay<br/>Prepare · Present · Agree]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
->     style D fill:#fff4e1
-> ```
+> ![[Diagramas/04_-_Reading,_Writing,_Speaking_-_Flipping_Your_Job_Interview_&_Time_to_Speak_01.svg]]
 > 
 > |Bloque|Enfoque|Sección del libro|
 > |---|---|---|

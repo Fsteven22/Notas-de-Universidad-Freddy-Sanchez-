@@ -23,20 +23,7 @@ dg-publish: true
 > >
 > > 💡 **FANBOYS** (conjunciones coordinantes): **F**or · **A**nd · **N**or · **B**ut · **O**r · **Y**et · **S**o
 >
-> ```mermaid
-> graph TD
->     A[Sentence] --> B{¿Cuántas cláusulas<br/>independientes?}
->     B -->|Una| C{¿Hay alguna cláusula<br/>dependiente?}
->     B -->|Dos o más| D{¿Hay alguna cláusula<br/>dependiente?}
->     C -->|No| E[✅ SIMPLE]
->     C -->|Sí| F[✅ COMPLEX]
->     D -->|No| G[✅ COMPOUND]
->     D -->|Sí| H[✅ COMPOUND-COMPLEX]
->     style E fill:#e1ffe1
->     style F fill:#e1f5ff
->     style G fill:#fff4e1
->     style H fill:#f5e1ff
-> ```
+> ![[Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_01.svg]]
 
 ---
 
@@ -121,17 +108,7 @@ dg-publish: true
 > | **Complex** | 1 | 1 o más | Subordinating conjunction |
 > | **Compound-Complex** | 2 o más | 1 o más | FANBOYS + Subordinating conjunction |
 >
-> ```mermaid
-> graph LR
->     A[Simple<br/>1 ind.] --> B[Compound<br/>2+ ind.]
->     A --> C[Complex<br/>1 ind. + 1 dep.]
->     B --> D[Compound-Complex<br/>2+ ind. + 1+ dep.]
->     C --> D
->     style A fill:#e1ffe1
->     style B fill:#fff4e1
->     style C fill:#e1f5ff
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_02.svg]]
 
 ---
 

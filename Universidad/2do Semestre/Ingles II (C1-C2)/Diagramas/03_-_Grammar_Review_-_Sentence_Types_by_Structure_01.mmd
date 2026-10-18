@@ -1,0 +1,12 @@
+graph TD
+    A[Sentence] --> B{¿Cuántas cláusulas<br/>independientes?}
+    B -->|Una| C{¿Hay alguna cláusula<br/>dependiente?}
+    B -->|Dos o más| D{¿Hay alguna cláusula<br/>dependiente?}
+    C -->|No| E[✅ SIMPLE]
+    C -->|Sí| F[✅ COMPLEX]
+    D -->|No| G[✅ COMPOUND]
+    D -->|Sí| H[✅ COMPOUND-COMPLEX]
+    style E fill:#e1ffe1
+    style F fill:#e1f5ff
+    style G fill:#fff4e1
+    style H fill:#f5e1ff

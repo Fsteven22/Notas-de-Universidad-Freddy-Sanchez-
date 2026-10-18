@@ -13,15 +13,7 @@ dg-publish: true
 > - **Describing accomplishments:** expresiones para hablar de metas alcanzadas, miedos superados y momentos de orgullo personal.
 > - **Key qualities:** adjetivos y sustantivos para describir las cualidades de una persona en un entorno laboral o académico.
 > 
-> ```mermaid
-> graph TD
->     A[Vocabulary & Use<br/>Unit 1] --> B[Describing<br/>Accomplishments]
->     A --> C[Key Qualities]
->     B --> D[take pride · set a goal<br/>face your fear · rise to a challenge]
->     C --> E[ambitious · creative<br/>reliable · determination]
->     style B fill:#e1f5ff
->     style C fill:#e1ffe1
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Accomplishments_&_Key_Qualities_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|

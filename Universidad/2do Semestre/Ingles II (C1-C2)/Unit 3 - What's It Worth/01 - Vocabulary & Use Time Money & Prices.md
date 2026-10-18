@@ -13,15 +13,7 @@ dg-publish: true
 > - **Talking about time and money:** términos para comparar la importancia del tiempo vs. el dinero en la vida cotidiana y profesional.
 > - **Talking about prices and value:** verbos y frases preposicionales para discutir costos, aprovechar oportunidades y negociar precios.
 > 
-> ```mermaid
-> graph TD
->     A[Vocabulary & Use<br/>Unit 3] --> B[Time & Money]
->     A --> C[Prices & Value]
->     B --> D[cost/standard of living<br/>boost · balance]
->     C --> E[charge · rely · take advantage<br/>suggest/pay a price]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_Time_Money_&_Prices_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|

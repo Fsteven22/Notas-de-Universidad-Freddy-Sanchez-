@@ -14,18 +14,7 @@ dg-publish: true
 > - **Real-World Strategy:** cómo confirmar que atendiste una oferta de forma natural.
 > - **Pronunciation:** los tres sonidos vocálicos más problemáticos — /aɪ/, /iː/ y /eɪ/.
 >
-> ```mermaid
-> graph TD
->     A[Functional Language<br/>& Pronunciation<br/>Unit 2] --> B[Social Situations]
->     A --> C[Real-World Strategy]
->     A --> D[Pronunciation]
->     B --> E[Ofrecer / Aceptar<br/>/ Rechazar]
->     C --> F[Confirmar que<br/>atendiste una oferta]
->     D --> G[/aɪ/ · /iː/ · /eɪ/]
->     style B fill:#e3f2fd
->     style C fill:#f3e5f5
->     style D fill:#e8f5e9
-> ```
+> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offers_&_Vowel_Sounds_01.svg]]
 >
 > | Bloque | ¿Para qué sirve? | Contexto |
 > |---|---|---|

@@ -10,17 +10,7 @@ dg-publish: true
 > 
 > Esta nota organiza el material del taller **"Command the Complaint: Email Writing Strategies"** del Academic Writing Center (AWC) de ESPOL, impartido por Karen Yambay de Armijos. Es un recurso transversal de escritura académica/profesional en inglés — no pertenece a una lección específica del libro Keynote, pero se ubica aquí en la Unidad 5 porque fue el material adicional trabajado durante ese período. Es especialmente relevante porque **forma parte del writing del examen final**.
 > 
-> ```mermaid
-> graph TD
->     A["Email of Complaint<br/>AWC Workshop"] --> B["Estructura de 8 partes"]
->     A --> C["Vocabulario especializado"]
->     A --> D["Práctica guiada"]
->     B --> E["Subject · Salutation · Opening<br/>Details · Impact · Request · Closing · Sign-off"]
->     C --> F["Product issues · Service issues"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
->     style D fill:#f5e1ff
-> ```
+> ![[Diagramas/Command_the_Complaint_-_Email_of_Complaint_01.svg]]
 
 ---
 
@@ -264,20 +254,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — Estructura del correo
 
-```mermaid
-graph TD
-    A["Voy a escribir un email of complaint"] --> B["1. Subject Line clara"]
-    B --> C["2. Salutation formal"]
-    C --> D["3. Opening Statement: ¿por qué escribo?"]
-    D --> E["4. Details: ¿qué pasó exactamente?"]
-    E --> F["5. Impact: ¿cómo me afectó?"]
-    F --> G["6. Request for Action: ¿qué quiero que hagan?"]
-    G --> H["7. Polite Closing Statement"]
-    H --> I["8. Sign-off formal"]
-
-    style A fill:#1e3a5f,color:#fff
-    style I fill:#2e7d32,color:#fff
-```
+![[Diagramas/Command_the_Complaint_-_Email_of_Complaint_02.svg]]
 
 ---
 

@@ -12,15 +12,7 @@ dg-publish: true
 > - **Talking about advertising:** términos para describir cómo las marcas se promocionan y venden productos (sección 4.1).
 > - **Talking about people in the media:** vocabulario para describir a personas famosas o influyentes en internet y los medios (sección 4.2).
 > 
-> ```mermaid
-> graph TD
->     A["Vocabulary & Use<br/>Unit 4"] --> B[Advertising]
->     A --> C[People in the Media]
->     B --> D["brand · logo · slogan<br/>sponsor · merchandise"]
->     C --> E["celebrity · icon · performer<br/>entertainer · influencer-type roles"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -134,23 +126,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Qué palabra uso?
 
-```mermaid
-graph TD
-    A["¿Estoy hablando de una persona famosa?"] -->|Sí| B["¿Es famosa por un talento/profesión específica?"]
-    A -->|No, hablo de una marca o producto| F["¿Qué aspecto de la marca describo?"]
-
-    B -->|Sí| C["Usa el rol específico:<br/>comedian, DJ, filmmaker, performer..."]
-    B -->|No, es fama general| D["Usa: celebrity / icon / hero"]
-
-    F -->|El símbolo visual| G["logo"]
-    F -->|La frase memorable| H["slogan"]
-    F -->|Los productos físicos| I["merchandise"]
-    F -->|La empresa que paga por asociarse| J["sponsor"]
-    F -->|La identidad completa| K["brand"]
-
-    style A fill:#1e3a5f,color:#fff
-    style F fill:#1e3a5f,color:#fff
-```
+![[Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_02.svg]]
 
 ---
 

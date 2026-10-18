@@ -15,21 +15,7 @@ dg-publish: true
 > - **Writing a product review:** estructura y vocabulario para escribir reseñas efectivas.
 > - **Register Check:** ALL CAPS en reseñas — cómo usarlas sin sonar agresivo.
 > 
-> ```mermaid
-> graph TD
->     A[Reading, Writing, Speaking<br/>Unit 3] --> B[Reading:<br/>Buyer Beware]
->     A --> C[Insider English]
->     A --> D[Writing:<br/>Product Review]
->     A --> E[Register Check:<br/>ALL CAPS]
->     B --> F[Compras en línea<br/>que salieron mal]
->     C --> G[You get what<br/>you pay for]
->     D --> H[Estructura de<br/>reseña formal]
->     E --> I[Mayúsculas para<br/>énfasis — con cuidado]
->     style B fill:#fff3e0
->     style C fill:#e8f5e9
->     style D fill:#e3f2fd
->     style E fill:#fce4ec
-> ```
+> ![[Diagramas/04_-_Reading_Writing_Speaking_-_Buyer_Beware_&_Product_Reviews_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Dónde se usa|
 > |---|---|---|

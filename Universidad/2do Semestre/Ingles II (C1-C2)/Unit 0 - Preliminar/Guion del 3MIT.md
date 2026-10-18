@@ -10,20 +10,7 @@ dg-publish: true
 > 
 > Este script explora las diferencias entre **hardware** y **software** usando analogías cotidianas. La estructura sigue el esquema clásico de introducción, desarrollo, ejemplo real y conclusión.
 > 
-> ```mermaid
-> graph TD
->     A[Hardware vs Software] --> B[Hardware: parte física]
->     A --> C[Software: código e instrucciones]
->     B --> D["Pantallas, teclados, procesadores"]
->     C --> E["Apps, sistema operativo, lógica"]
->     B --> F[La herramienta]
->     C --> G[El cerebro]
->     style A fill:#1e3a5f,color:#fff
->     style B fill:#e1f5ff
->     style C fill:#f5e1ff
->     style F fill:#e1ffe1
->     style G fill:#e1ffe1
-> ```
+> ![[Diagramas/Guion_del_3MIT_01.svg]]
 
 ---
 
@@ -75,22 +62,7 @@ Instead, software lets us update our devices instantly without changing the hard
 
 ## 📊 Resumen Visual
 
-```mermaid
-graph TD
-    A[Speaking Script] --> B[Introduction]
-    A --> C[The Body]
-    A --> D[Real-World Example]
-    A --> E[Conclusion]
-    B --> F[Analogía del fútbol]
-    C --> G[Definiciones + interacción táctil]
-    D --> H[Argumento económico]
-    E --> I[Metáfora cuerpo + cerebro]
-    style A fill:#1e3a5f,color:#fff
-    style B fill:#e1f5ff
-    style C fill:#e1f5ff
-    style D fill:#f5e1ff
-    style E fill:#e1ffe1
-```
+![[Diagramas/Guion_del_3MIT_02.svg]]
 
 ---
 

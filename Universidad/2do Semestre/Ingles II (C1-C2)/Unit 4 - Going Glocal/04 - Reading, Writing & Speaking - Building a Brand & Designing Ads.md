@@ -12,15 +12,7 @@ dg-publish: true
 > - **Building a Brand:** el caso de estudio de Havaianas como marca que pasó de ser local a global, más un ejercicio de writing sobre el impacto de las marcas globales en comunidades locales (sección 4.4).
 > - **Design an Ad:** una tarea de speaking en grupo para diseñar un anuncio publicitario aplicando técnicas reales de marketing (sección 4.5, Time to Speak).
 > 
-> ```mermaid
-> graph TD
->     A["Reading, Writing & Speaking<br/>Unit 4"] --> B["Building a Brand"]
->     A --> C["Design an Ad"]
->     B --> D["Caso Havaianas<br/>Reasons & consequences"]
->     C --> E["Endorsement · Association of ideas<br/>Visual appeal · Technology · Guilt"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -152,16 +144,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Qué técnica publicitaria usar?
 
-```mermaid
-graph TD
-    A["¿Qué quiero transmitir con el anuncio?"] -->|Credibilidad y prestigio| B["Endorsement"]
-    A -->|Una emoción o idea abstracta| C["Association of ideas"]
-    A -->|Que el producto se vea irresistible| D["The camera never lies"]
-    A -->|Innovación y modernidad| E["Technology"]
-    A -->|Urgencia por no quedarse atrás| F["Guilt"]
-
-    style A fill:#1e3a5f,color:#fff
-```
+![[Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_02.svg]]
 
 ---
 

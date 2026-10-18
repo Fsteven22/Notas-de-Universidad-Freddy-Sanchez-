@@ -12,15 +12,7 @@ dg-publish: true
 > - **Modals of speculation:** verbos modales para expresar distintos grados de certeza al especular sobre algo (sección 4.1).
 > - **Subject and object relative clauses:** cláusulas que añaden información extra sobre personas, cosas o lugares (sección 4.2).
 > 
-> ```mermaid
-> graph TD
->     A["Grammar & Examples<br/>Unit 4"] --> B["Modals of Speculation"]
->     A --> C["Relative Clauses"]
->     B --> D["must / might / may / could / can't"]
->     C --> E["who · which · where<br/>subject vs. object"]
->     style B fill:#e8eaf6
->     style C fill:#e0f7fa
-> ```
+> ![[Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -146,26 +138,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-```mermaid
-graph TD
-    A["¿Qué quiero hacer?"] -->|Expresar certeza sobre algo que no confirmo| B["¿Qué tan seguro estoy?"]
-    A -->|Añadir info extra sobre algo ya mencionado| F["¿De qué hablo?"]
-
-    B -->|Poco seguro| C["might / may / could"]
-    B -->|Muy seguro que SÍ es cierto| D["must"]
-    B -->|Muy seguro que NO es cierto| E["can't / must not"]
-
-    F -->|Persona| G["who"]
-    F -->|Cosa| H["which / that"]
-    F -->|Lugar| I["where"]
-    G --> J{"¿Qué sigue al pronombre?"}
-    H --> J
-    J -->|Verbo directo| K["Subject relative clause"]
-    J -->|Sujeto + verbo| L["Object relative clause<br/>(pronombre omitible)"]
-
-    style A fill:#1e3a5f,color:#fff
-    style F fill:#1e3a5f,color:#fff
-```
+![[Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_02.svg]]
 
 ---
 
