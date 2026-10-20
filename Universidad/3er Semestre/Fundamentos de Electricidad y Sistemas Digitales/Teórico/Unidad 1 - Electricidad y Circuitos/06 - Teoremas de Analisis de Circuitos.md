@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [EYAG1037, unidad1, electricidad]
+---
+
 # 🧩 Teoremas de Análisis de Circuitos
 
 ## 🎯 Introducción
@@ -18,7 +23,7 @@
 > - El **Teorema de Norton** es el equivalente usando una fuente de corriente.
 > - La **Máxima Transferencia de Potencia** responde cuándo una carga extrae el máximo de energía posible de la fuente.
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
 > 
 > |Teorema|Utilidad principal|
 > |---|---|
@@ -40,7 +45,7 @@
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
 > 
 > ### 🔕 Cómo "apagar" una fuente
 > 
@@ -76,7 +81,7 @@
 > |Voltajes y corrientes (cantidades lineales)|Potencia ($P = I^2R$: no lineal)|
 > |Circuitos con elementos lineales|Circuitos con elementos no lineales|
 
-![[ChatGPT Image 17 jun 2026, 00_07_49.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
 
 ---
 
@@ -141,9 +146,9 @@
 > |**Fórmula**|$V_{R_i} = \dfrac{V_f \cdot R_i}{R_{eq}}$|$I_{R_i} = \dfrac{R_{eq} \cdot I_f}{R_j}$|
 > |**Estructura**|Una sola malla|Un solo par de nodos|
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 
-![[ChatGPT Image 17 jun 2026, 00_10_30.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
 
 ---
 
@@ -158,7 +163,7 @@
 > 
 > Fue enunciado por el ingeniero francés **Léon Charles Thévenin** en 1883.
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
 > 
 > ### ⚙️ Procedimiento para obtener $V_{Th}$ y $R_{Th}$
 > 
@@ -211,7 +216,7 @@
 > 
 > Fue enunciado por **Edward Lawry Norton** en 1926.
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
 > 
 > ### ⚙️ Parámetros del equivalente Norton
 > 
@@ -228,7 +233,7 @@
 > 
 > $$V_{Th} = I_N \cdot R_N \qquad\qquad I_N = \frac{V_{Th}}{R_{Th}}$$
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
 > 
 > ### 🧮 Ejemplo resuelto
 > 
@@ -242,7 +247,7 @@
 > > 
 > > ✅ Verificación: $V_{Th} = I_N \times R_N = 5 \times 2.4 = 12\text{ V}$ ✓
 
-![[ChatGPT Image 17 jun 2026, 00_16_27.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
 
 ---
 
@@ -254,7 +259,7 @@
 > 
 > Es la base práctica de la relación Thévenin-Norton.
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
 > 
 > ### ⚙️ Fórmulas de transformación
 > 
@@ -271,7 +276,7 @@
 > > 
 > > Equivalente Norton: $$I_s = \frac{20}{5} = 4\text{ A} \qquad \text{con } R_s = 5\ \Omega \text{ en paralelo}$$
 
-![[ChatGPT Image 17 jun 2026, 00_22_01.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
 
 ---
 
@@ -315,7 +320,7 @@
 > > 
 > > **Verificación:** $$I_L = \frac{12}{3+3} = 2\text{ A} \qquad P_L = (2)^2 \times 3 = 12\text{ W}\ ✓$$
 
-![[ChatGPT Image 17 jun 2026, 00_25_46.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
 
 ---
 
@@ -419,10 +424,10 @@
 > 
 > ### ⚡ Regla mnemotécnica — mismo patrón para mallas y nodos
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
 
-![[ChatGPT Image 17 jun 2026, 00_30_37.png]]
+![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
 
 ---
 
@@ -438,13 +443,13 @@
 > |**Transf. de fuentes**|Intercambia Vs ↔ Is|Fuente + resistencia|Simplifica nodos o mallas sucesivos|
 > |**Máx. transferencia**|$R_L = R_{Th}$|Red Thévenin conocida|Optimiza la potencia entregada|
 > 
-> ![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
+> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
+![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 
 ---
 

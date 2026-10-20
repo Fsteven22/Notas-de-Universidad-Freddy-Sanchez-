@@ -1,8 +1,0 @@
-flowchart TD
-   A["Nuevo módulo"] --> B{"¿Hay un concern<br/>transversal?"}
-   B -->|"Sí: seguridad, log, etc."| C["Aísla en aspecto<br/>(AOP)"]
-   B -->|"No"| D{"¿Existe componente<br/>que lo resuelva?"}
-   D -->|"Sí"| E["Reusa e integra<br/>(componentes)"]
-   D -->|"No"| F{"¿El problema es<br/>transformar datos?"}
-   F -->|"Sí"| G["Estilo funcional<br/>+ inmutable"]
-   F -->|"No"| H["OO con contratos<br/>y patrones"]

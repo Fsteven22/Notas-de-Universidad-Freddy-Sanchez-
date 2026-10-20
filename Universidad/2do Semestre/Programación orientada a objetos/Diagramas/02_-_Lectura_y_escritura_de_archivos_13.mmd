@@ -1,9 +1,0 @@
-graph TD
-    A{Tipo de<br/>operación?} --> B[Solo metadatos]
-    A --> C[Lectura/escritura]
-    B --> D[Usar File]
-    C --> E{Buffer?}
-    E -->|Archivo pequeño| F[FileReader/<br/>FileWriter]
-    E -->|Uso general| G[✅ BufferedReader/<br/>BufferedWriter]
-    style G fill:#e1ffe1
-    style D fill:#e1f5ff

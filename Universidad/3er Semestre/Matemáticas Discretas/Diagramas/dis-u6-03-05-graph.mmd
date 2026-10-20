@@ -1,9 +1,0 @@
-graph TD
-   A["¿Cuál es el lenguaje (conjunto de cadenas) a reconocer?"] --> B["Identificar la información mínima relevante del pasado"]
-   B --> C["Definir los estados S (uno por cada 'clase de historia')"]
-   C --> D["Elegir estado inicial σ"]
-   D --> E["Marcar estados aceptantes 𝒜"]
-   E --> F["Definir f para cada (estado, símbolo)"]
-   F --> G["Probar con cadenas de ejemplo: ¿aceptadas y rechazadas son correctas?"]
-   G -->|"No"| B
-   G -->|"Sí"| H["Autómata completo"]

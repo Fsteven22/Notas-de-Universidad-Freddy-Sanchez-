@@ -9,94 +9,91 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 > [!info] 💡 ¿Por Qué Normalizar Después de Convertir?
 >
-> La conversión produce tablas; la **normalización** verifica que esas tablas no escondan inconsistencias. Las formas normales miden la **vulnerabilidad a anomalías lógicas**: mientras más alta la FN, menos formas de que los datos se contradigan.
+> La conversión (MC → ML) te da tablas. La **normalización** verifica que esas tablas no escondan inconsistencias. Las formas normales miden qué tan vulnerable es una tabla a que los datos se contradigan.
 >
-> **Analogía del mundo real:** la conversión es armar el mueble; la 1FN es verificar que no sobren tornillos ni falten patas.
+> **Analogía:** la conversión es armar el mueble; la 1FN es verificar que no sobren tornillos ni falten patas.
 >
-> | Forma | Idea en 1 línea | La verás en... |
+> | Forma | Idea en 1 línea | Qué corrige |
 > |---|---|---|
-> | **1FN** | Sin grupos repetitivos: un valor por celda | Esta nota (Lección 1) |
-> | **2FN** | Sin dependencias parciales | [[03 - Segunda y tercera forma normal]] |
-> | **3FN** | Sin dependencias transitivas | [[03 - Segunda y tercera forma normal]] |
+> | **1FN** | Un valor por celda, sin grupos repetitivos | Columnas como `teléfono1, teléfono2` |
+> | **2FN** | Sin dependencias parciales | Datos que dependen de solo parte de la PK |
+> | **3FN** | Sin dependencias transitivas | Datos que dependen de otro dato no-clave |
 
 ---
 
 ## 📋 Definiciones Formales
 
-> [!info] ℹ️ Cómo leer esta sección
-> Una definición por bloque. Las 5 condiciones de 1FN tienen número propio: si una tabla falla, citas cuál.
-
-### 1️⃣ Objetivo 1FN — tablas que son relaciones de verdad
+### 1️⃣ Objetivo de la 1FN
 
 > [!note] 📋 Definición — Objetivo
 >
-> Convertir las entidades en tablas que sean representación fiel de una relación, libres de grupos repetitivos.
+> Una tabla está en **1FN** cuando cada celda contiene **exactamente un valor** y no hay grupos repetitivos.
 >
-> **Ejemplo:** CLIENTE con una fila por cliente y un teléfono por celda es fiel; con `telefono1, telefono2` es un formulario disfrazado, no una relación.
+> **Ejemplo real:**
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-01-graph.svg]]
+> ❌ **No es 1FN:** `CLIENTE(cédula, nombre, teléfono1, teléfono2, teléfono3)`  
+> Los teléfonos están repetidos en columnas diferentes. Si un cliente tiene 4 teléfonos, no caben.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-18-er.svg]]
+>
+> ✅ **Es 1FN:** `CLIENTE(cédula, nombre)` y `TELEFONO(cédula, número)`  
+> Cada fila tiene un solo teléfono. Un cliente puede tener N filas en TELEFONO.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-19-er.svg]]
 
-### 2️⃣ Las 5 condiciones — el checklist
+### 2️⃣ Las 5 condiciones de la 1FN
 
-> [!note] 📋 Definición — Tabla en 1FN
+> [!note] 📋 Definición — Checklist de la 1FN
 >
-> 1. Sin orden arriba-abajo en las filas.
-> 2. Sin orden izquierda-derecha en las columnas.
-> 3. Sin filas duplicadas.
-> 4. Cada celda, exactamente un valor del dominio.
-> 5. Columnas regulares (sin IDs de fila, IDs de objeto ni timestamps ocultos).
+> Para que una tabla esté en **1FN**, debe cumplir las 5 condiciones. Si falla cualquiera, no está en 1FN:
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-02-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-14-flow.svg]]
 >
-> **Cómo usarlo:** ante cualquier tabla sospechosa, recorre las 5 en orden y cita el número que falla.
+> | # | Condición | ¿Qué significa en lenguaje sencillo? |
+> |---|---|---|
+> | 1 | Sin orden en las filas | No importa si la fila 1 está arriba o abajo de la fila 2 |
+> | 2 | Sin orden en las columnas | No importa si `nombre` está a la izquierda o derecha de `cédula` |
+> | 3 | Sin filas duplicadas | No puede haber dos filas idénticas |
+> | 4 | Un valor por celda | Cada celda guarda exactamente un dato, no una lista |
+> | 5 | Columnas regulares | No hay columnas ocultas como `id_fila`, `timestamp`, ni IDs de objeto sueltos |
 
-### 3️⃣ Violación — qué significa reprobar
+### 3️⃣ Violación de la 1FN
 
-> [!note] 📋 Definición — Violación de 1FN
+> [!note] 📋 Definición — Violación
 >
-> Incumplir cualquiera de las 5 = tabla no estrictamente relacional = no está en 1FN.
+> Una tabla **no está en 1FN** si incumple cualquiera de las 5 condiciones. La PK (clave primaria) no salva a una tabla que tiene grupos repetitivos.
 >
-> **Ejemplo:** `productos = "arroz, leche, pan"` viola la 4; `materia1, materia2` viola la 4 disfrazada de columnas; dos filas idénticas violan la 3.
+> **Ejemplo:** `productos = "arroz, leche, pan"` en una sola celda viola la condición 4. No puedes filtrar por "arroz" sin leer toda la celda.
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-03-graph.svg]]
->
-> **Se lee así:** basta 1 falla de 5 para reprobar; la PK no salva una tabla con grupos repetitivos.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-16-graph.svg]]
 
-### 4️⃣ Formas normales — el termómetro
+### 4️⃣ Diccionario de datos
 
-> [!note] 📋 Definición — FN
+> [!note] 📋 Definición — Diccionario de datos
 >
-> Criterios del grado de vulnerabilidad a inconsistencias y anomalías lógicas: 1FN (grupos repetitivos) → 2FN (dependencias parciales) → 3FN (transitivas).
->
-> **Ejemplo:** una tabla en 1FN puede seguir mintiendo si un dato depende solo de parte de la PK — eso lo mide 2FN (próximas clases).
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-04-graph.svg]]
->
-> **Se lee así:** termómetro de 3 niveles; cada FN mide una vulnerabilidad distinta y se lee en orden.
-
-### 5️⃣ Diccionario de datos — el manual de cada tabla
-
-> [!note] 📋 Definición — Diccionario
->
-> Documento que describe cada tabla: por atributo, tipo de dato, dominio y descripción.
+> Es un documento que describe cada tabla: por cada atributo, indica su tipo de dato, dominio (qué valores acepta) y descripción. Es el "manual de usuario" de tu base de datos.
 >
 > | Atributo | Tipo | Dominio | Descripción |
 > |---|---|---|---|
-> | cedula | int | > 0, único | PK del cliente |
+> | `cedula` | `int` | > 0, único | PK del cliente |
+> | `nombre` | `varchar(50)` | texto no vacío | Nombre completo |
+> | `direccion` | `varchar(100)` | texto | Dirección de facturación |
+> | `telefono` | `varchar(15)` | 7–15 dígitos | Contacto principal |
 >
-> **Ejemplo:** sin esta fila, nadie sabe si `teléfono` admite 7 u 10 dígitos. Ver Método para la plantilla completa.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-15-graph.svg]]
 
-### 6️⃣ Atributo multivaluado — el que pide tabla propia
+### 5️⃣ Atributo multivaluado
 
-> [!note] 📋 Definición — Multivaluado
+> [!note] 📋 Definición — Atributo multivaluado
 >
-> El que guarda varios valores (ej. teléfonos) — viola 1FN hasta separarse en su propia tabla o filas.
+> Es un atributo que guarda varios valores para una misma entidad (ej. varios teléfonos de un cliente). Viola la 1FN hasta que se separa en su propia tabla.
 >
-> **Ejemplo:** `TELEFONO(cedula PK,FK, numero PK)`: el teléfono deja de ser columna repetida y pasa a ser filas identificadas.
+> **Ejemplo:**
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-05-er.svg]]
+> ❌ `CLIENTE(cédula, nombre, teléfonos)` → `teléfonos = "2345, 2654"` (grupo repetitivo)
+> ✅ `TELEFONO(cédula FK, número)` → una fila por teléfono
 >
-> **Se lee así:** el multivaluado se vuelve entidad débil con PK compuesta; un cliente, N filas.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-17-graph.svg]]
 
 ---
 
@@ -110,17 +107,15 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | 0964532748 | Luis Tinoco | 6543 Av. 4 | 2654345 |
 > | 1345234567 | Ana Ramírez | 34 Av. 6 | 2654567 |
 >
-> **Chequeo 1FN:** ¿orden de filas significativo? No. ¿Columnas ordenadas? No. ¿Duplicadas? No. ¿Una celda, un valor? Sí. ¿Columnas regulares? Sí → **está en 1FN**.
+> **Chequeo 1FN:**
+> - ¿Filas sin orden? Sí.
+> - ¿Columnas sin orden? Sí.
+> - ¿Sin filas duplicadas? Sí.
+> - ¿Una celda, un valor? Sí.
+> - ¿Columnas regulares? Sí.
+> → **Está en 1FN.**
 >
-> **Contraejemplo (grupos repetitivos):** `CLIENTE(cédula, nombre, telefono1, telefono2, telefono3)` — viola (d): los teléfonos son un grupo repetitivo. Remedio: tabla `TELEFONO(cédula FK, numero)` o filas separadas.
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-06-er.svg]]
->
-> **❌ Así NO:** columnas numeradas = grupo repetitivo disfrazado.
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-07-er.svg]]
->
-> **✅ Así SÍ:** un teléfono por fila; la PK compuesta impide duplicados.
+> **Contraejemplo:** `CLIENTE(cédula, nombre, telefono1, telefono2, telefono3)` → viola la condición 4 (grupos repetitivos). Remedio: tabla `TELEFONO(cédula FK, numero)`.
 
 ---
 
@@ -130,49 +125,40 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > | Atributo | Tipo de Dato | Dominio | Descripción |
 > |---|---|---|---|
-> | idCliente | int | > 0, único | PK: identifica al cliente |
-> | nombre | char(30) | texto no vacío | Nombre completo |
-> | dirección | char(50) | texto | Dirección de facturación |
-> | teléfono | int | 7–10 dígitos | Contacto principal |
+> | `idCliente` | `int` | > 0, único | PK: identifica al cliente |
+> | `nombre` | `varchar(30)` | texto no vacío | Nombre completo |
+> | `direccion` | `varchar(50)` | texto | Dirección de facturación |
+> | `telefono` | `varchar(15)` | 7–15 dígitos | Contacto principal |
 >
 > **Regla:** cada tabla del ML termina con su fila en el diccionario. Sin diccionario, el ML está incompleto (la docente lo pide explícito).
 
 ---
 
-## ⚠️ Errores Comunes y Principios Lógicos
-
-> [!warning] ⚠️ Cómo leer esta sección
-> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
+## ⚠️ Errores Comunes
 
 ### ❌ Error 1: Varios valores por celda
 
-> [!danger] ❌ Viola: 1FN condición (d) — un valor por celda
+> [!danger] ❌ Viola: 1FN condición 4
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-08-er.svg]]
+> `productos = "arroz, leche, pan"` en una sola celda. No puedes filtrar por "arroz" fácilmente.
 >
-> ❌ **EL ERROR ESTÁ AQUÍ:** `productos = "arroz, leche, pan"` en una sola celda: imposible filtrar, contar o unir por producto.
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-09-er.svg]]
->
-> ✅ **Así SÍ:** una fila por producto; cada celda, un valor.
+> ✅ **Solución:** una fila por producto en una tabla `DETALLE(idReporte FK, producto)`.
 
 ### ❌ Error 2: Columnas numeradas
 
 > [!danger] ❌ Viola: grupos repetitivos
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-10-er.svg]]
+> `materia1, materia2, materia3`. ¿Y la cuarta materia? Columnas finitas para relaciones infinitas.
 >
-> ❌ **EL ERROR ESTÁ AQUÍ:** `materia1, materia2, materia3` — ¿y la cuarta materia? Columnas finitas para relaciones infinitas.
->
-> ✅ **Así SÍ:** tabla intermedia de matrícula (una fila por par estudiante–materia).
+> ✅ **Solución:** tabla intermedia de matrícula (una fila por par estudiante–materia).
 
 ### ❌ Error 3: ML sin diccionario
 
 > [!danger] ❌ Viola: entregable completo
 >
-> ❌ **EL ERROR ESTÁ AQUÍ:** entregar el diagrama lógico sin describir tipos ni dominios — nadie sabe si `teléfono` es int o texto, ni qué valores acepta.
+> Entregar el diagrama lógico sin describir tipos ni dominios. Nadie sabe si `teléfono` es `int` o texto, ni qué valores acepta.
 >
-> ✅ **Así SÍ:** diccionario con las 4 columnas (atributo, tipo, dominio, descripción) por cada atributo. La docente lo pide explícito.
+> ✅ **Solución:** diccionario con las 4 columnas por cada atributo.
 
 ---
 
@@ -180,57 +166,47 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 > [!tip] 🏆 Checklist 1FN
 >
-> **1. Cuenta valores por celda** — más de uno = no es 1FN.
->
-> **2. Busca columnas `cosa1, cosa2`** — es un grupo repetitivo disfrazado.
->
-> **3. Diccionario al mismo tiempo** — documenta cada tabla apenas la creas, no al final.
->
-> **4. Piensa en 2FN/3FN desde ya** — si un atributo depende de parte de la PK o de otro no-clave, anótalo para la próxima normalización.
+> 1. **Cuenta valores por celda** — más de uno = no es 1FN.
+> 2. **Busca columnas `cosa1, cosa2`** — es un grupo repetitivo disfrazado.
+> 3. **Diccionario al mismo tiempo** — documenta cada tabla apenas la creas.
+> 4. **Piensa en 2FN/3FN desde ya** — si un atributo depende de parte de la PK o de otro no-clave, anótalo.
 
 ---
 
 ## 📝 Ejercicios Propuestos
 
-> [!info] ℹ️ Cómo trabajarlos
-> Cada ejercicio trae su planteamiento visual. Tapa la solución, resuelve, compara.
-
 ### ✏️ Ejercicio 1 — Detectar la violación
 
 > [!example] 📋 Planteamiento
 >
-> ¿Esta tabla está en 1FN? `REPORTE(id, cliente, productos)` con `productos = "arroz, leche, pan"` en una celda. Justifica y corrige.
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-11-er.svg]]
+> ¿Está en 1FN? `REPORTE(id, cliente, productos)` con `productos = "arroz, leche, pan"` en una celda.
 >
 > > [!success]- ✅ Solución
 > >
-> > No: viola la condición (d), un valor por celda. Corrección: tabla `DETALLE_REPORTE(idReporte FK, producto)` con una fila por producto.
+> > No: viola la condición 4 (un valor por celda). Corrección: tabla `DETALLE_REPORTE(idReporte FK, producto)`.
 
 ### ✏️ Ejercicio 2 — Escribir un diccionario
 
 > [!example] 📋 Planteamiento
 >
-> Escribe el diccionario de `DEPARTAMENTO(idDepartamento int PK, nombre char(30))`.
+> Escribe el diccionario de `DEPARTAMENTO(idDepartamento int PK, nombre varchar(30))`.
 >
 > > [!success]- ✅ Solución
 > >
 > > | Atributo | Tipo | Dominio | Descripción |
 > > |---|---|---|---|
 > > | idDepartamento | int | > 0, único | PK del departamento |
-> > | nombre | char(30) | texto no vacío | Nombre oficial |
+> > | nombre | varchar(30) | texto no vacío | Nombre oficial |
 
 ### ✏️ Ejercicio 3 — Las 3 FN en una frase
 
 > [!example] 📋 Planteamiento
 >
-> Nombra las 3 FN y qué vulnerabilidad mide cada nivel en una frase.
->
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-02-12-graph.svg]]
+> Nombra las 3 FN y qué vulnerabilidad mide cada una.
 >
 > > [!success]- ✅ Solución
 > >
-> > 1FN (grupos repetitivos), 2FN (dependencias parciales de la PK), 3FN (dependencias transitivas entre no-claves). Todas miden vulnerabilidad a inconsistencias y anomalías.
+> > 1FN (grupos repetitivos), 2FN (dependencias parciales de la PK), 3FN (dependencias transitivas entre no-claves).
 
 ---
 
@@ -238,24 +214,25 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 #flashcards/bd-u2
 
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
 
 - ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
 - ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
 - ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
 - ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
 
+---
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando
 >
 > **Has aprendido:**
+> - ✅ 5 condiciones 1FN con ejemplo CLIENTE
+> - ✅ Diccionario de datos por tabla
+> - ✅ Vista previa 2FN/3FN
 >
-> ✅ 5 condiciones 1FN con ejemplo CLIENTE
-> ✅ Diccionario de datos por tabla
-> ✅ Vista previa 2FN/3FN
->
-> **Próxima clase:** taller de conversión (practica el protocolo de la nota 01 con el diagrama pata de gallo).
+> **Próxima clase:** taller de conversión y normalización.
 
 ---
 
@@ -266,12 +243,15 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[01 - Conversión MC a ML por cardinalidad]]
+> - Siguiente: [[03 - Segunda y tercera forma normal]]
+
+---
 
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes
 >
-> - Diapositivas BD 02 MC_a_ML (Irene Cheung): 1FN (objetivo + 5 condiciones + ejemplo CLIENTE), formas normales, diccionario de datos.
+> - Diapositivas BD 02 MC_a_ML: 1FN (objetivo + 5 condiciones + ejemplo CLIENTE), formas normales, diccionario de datos.
 > - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 6 (normalización).
 
 ---

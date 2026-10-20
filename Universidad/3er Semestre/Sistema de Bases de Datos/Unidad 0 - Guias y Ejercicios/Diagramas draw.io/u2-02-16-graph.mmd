@@ -1,0 +1,6 @@
+flowchart TB
+    A["CLIENTE con<br/>telefono1, telefono2, telefono3"] -->|"una celda guarda<br/>'2345, 2654'"| V["❌ viola la 1FN<br/>condición 4: un valor por celda"]
+    A -->|"consecuencia"| F["no se puede filtrar<br/>por un solo teléfono"]
+    A -->|"remedio: separar en<br/>tabla propia"| R["✅ TELEFONO(cedula FK, numero)<br/>una fila por teléfono"]
+    style V fill:#ffe1e1
+    style R fill:#e1ffe1

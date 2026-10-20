@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, laboratorio, practicas]
 ---
 
 # 🧪 Práctica 3 — Funcionamiento de Diodos y Transistores
@@ -13,7 +14,7 @@ dg-publish: true
 > - El BJT como **switch electrónico** (corte vs saturación).
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
-> ![[Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> ![[../../../Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
 
 ---
 

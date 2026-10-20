@@ -13,7 +13,7 @@ tags: [IDIG1008, unit1, indice, english]
 - [[01 - Vocabulary & Use - Communication & Online Life]] — classroom language + verbos de comunicación + vocab online
 - [[02 - Grammar & Examples - Reported Statements & Questions]] — estilo indirecto: afirmaciones y preguntas
 - [[03 - Functional Language & Pronunciation - Recounting Stories]] — recontar historias + /s/ vs /z/
-- [[04 - Reading, Writing, Speaking - Emoji Article, Emails & Survey]] — lectura #WORLD + emails formal/informal + survey
+- [[04 - Reading, Writing, Speaking - Emoji, Emails & Survey]] — lectura #WORLD + emails formal/informal + survey
 
 ## 📎 Recursos
 

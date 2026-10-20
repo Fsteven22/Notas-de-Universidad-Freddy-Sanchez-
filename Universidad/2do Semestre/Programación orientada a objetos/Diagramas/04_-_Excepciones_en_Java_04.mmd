@@ -1,9 +1,0 @@
-graph TD
-    A[metodoA<br/>throws IOException] --> B[metodoB<br/>throws IOException]
-    B --> C[metodoC<br/>throws IOException]
-    C --> D[main<br/>try-catch]
-    D --> E{¿Manejada?}
-    E -->|Sí| F[✅ Programa continúa]
-    E -->|No| G[💥 Programa termina]
-    style F fill:#e1ffe1
-    style G fill:#ffe1e1

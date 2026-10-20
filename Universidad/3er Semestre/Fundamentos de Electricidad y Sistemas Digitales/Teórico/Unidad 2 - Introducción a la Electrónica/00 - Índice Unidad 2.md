@@ -18,7 +18,7 @@ tags: [FESD, unidad2, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
+![[../../Diagramas/00_-_Índice_Unidad_2_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Teoremas de Analisis de Circuitos]] (Unidad 1)

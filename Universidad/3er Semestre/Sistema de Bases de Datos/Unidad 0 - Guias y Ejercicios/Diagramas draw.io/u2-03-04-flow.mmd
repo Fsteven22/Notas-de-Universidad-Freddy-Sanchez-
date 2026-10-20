@@ -1,0 +1,10 @@
+flowchart TB
+    P["Tabla en 1FN<br/>(datos duplicados entre filas)"] -->|"depende solo de<br/>parte de la PK"| PA["dependencia<br/>parcial"]
+    P -->|"depende de otro<br/>dato no-clave"| TR["dependencia<br/>transitiva"]
+    PA --> AN["información<br/>duplicada"]
+    TR --> AN
+    AN --> A1["inserción: datos falsos"]
+    AN --> A2["eliminación: borra de más"]
+    AN --> A3["actualización: corrompe"]
+    AN -->|"cura en orden"| S["2FN → 3FN"]
+    style S fill:#e1ffe1

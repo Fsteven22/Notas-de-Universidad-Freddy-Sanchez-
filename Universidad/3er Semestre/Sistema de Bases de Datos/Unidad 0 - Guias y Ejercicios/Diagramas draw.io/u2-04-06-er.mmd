@@ -1,0 +1,18 @@
+erDiagram
+    ESTUDIANTE {
+        int cod_estud PK
+        string nomb_estud
+    }
+    CURSO {
+        int cod_curso PK
+        string nomb_curso
+        int creditos
+        int cod_instructor "transitiva pendiente"
+    }
+    MATRICULA {
+        int cod_estud PK, FK
+        int cod_curso PK, FK
+        float nota_final
+    }
+    ESTUDIANTE ||--o{ MATRICULA : "matricula"
+    CURSO ||--o{ MATRICULA : "recibe"

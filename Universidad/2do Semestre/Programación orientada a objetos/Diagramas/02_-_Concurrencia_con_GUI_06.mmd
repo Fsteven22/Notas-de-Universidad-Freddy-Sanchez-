@@ -1,6 +1,0 @@
-graph LR
-    WT[Worker Thread] -->|invokeLater| Q[Cola EDT]
-    Q --> EDT[Event Dispatch Thread]
-    EDT --> UI[Actualizar UI]
-    style WT fill:#fff4e1
-    style EDT fill:#e1f5ff

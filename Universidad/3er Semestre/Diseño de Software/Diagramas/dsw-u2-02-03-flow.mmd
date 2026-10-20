@@ -1,8 +1,0 @@
-flowchart TD
-   A["Nuevo sistema"] --> B{"¿Equipos<br/>independientes?"}
-   B -->|"Sí, varios"| C["Microservicios<br/>o servicios"]
-   B -->|"No, equipo chico"| D{"¿Dato central<br/>compartido?"}
-   D -->|"Sí"| E["Centrada en datos<br/>+ caché"]
-   D -->|"No"| F{"¿Flujo por<br/>etapas?"}
-   F -->|"Sí"| G["Flujo de datos<br/>(tuberías)"]
-   F -->|"No"| H["Monolito modular<br/>en capas"]

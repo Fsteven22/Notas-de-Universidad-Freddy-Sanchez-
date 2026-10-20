@@ -16,6 +16,8 @@ tags: [TICG1018, unidad1, indice, bd]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Siguiente unidad: [[00 - Índice Unidad 2]]
+> - Guía cruzada: [[Guía de Problemas 1 - MC, ML y Normalización]] (abarca Unidades 1 y 2)
 
 ---
 **Tags:** #TICG1018 #unidad1 #indice #bd

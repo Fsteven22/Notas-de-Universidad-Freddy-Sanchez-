@@ -1,9 +1,0 @@
-graph TD
-   Start["¿Qué necesitas del árbol binario?"] --> Q1{"¿Buscar/insertar datos ordenados?"}
-   Q1 -->|Sí| BST["Usar árbol de búsqueda binaria + Entreorden"]
-   Q1 -->|No| Q2{"¿Comprimir datos por frecuencia?"}
-   Q2 -->|Sí| Huffman["Construir árbol Huffman"]
-   Q2 -->|No| Q3{"¿Qué necesitas hacer con el recorrido?"}
-   Q3 -->|Copiar/serializar el árbol| Pre["Preorden"]
-   Q3 -->|Liberar memoria / evaluar postfijo| Post["Postorden"]
-   Q3 -->|Obtener datos ordenados| In["Entreorden"]

@@ -20,7 +20,7 @@ tags: [FESD, unidad3, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones — Bloque OPAM + 555 + Lógica
 
-![[Diagramas/00_-_Índice_Unidad_3_01.svg]]
+![[../../Diagramas/00_-_Índice_Unidad_3_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Ruido Electrónico e Interferencia]] (Unidad 2)

@@ -1,8 +1,0 @@
-graph LR
-    E["Emisor"] -->|"codifica"| M["Mensaje<br/>código + canal"]
-    M -->|"decodifica"| R["Receptor"]
-    R -->|"retroalimentación"| E
-    CTX["Contexto"] -.rodea.-> M
-    RU["Ruido"] -.interfiere.-> M
-    style RU fill:#ffe1e1
-    style R fill:#e1ffe1

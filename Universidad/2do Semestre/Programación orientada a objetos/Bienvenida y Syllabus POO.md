@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1005, poo, java]
 ---
 
 # 🟩 Programación Orientada a Objetos — Bienvenida y Syllabus

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [IDIG2012, comunicacion]
 ---
 
 # 🗣️ Bienvenida y Syllabus Comunicación
@@ -59,7 +60,7 @@ dg-publish: true
 
 > [!tip] 📚 Programa IDIG2012
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg]]
+> ![[../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg]]
 >
 > | Unidad | Tema | Horas docencia |
 > |---|---|---|
@@ -103,14 +104,34 @@ dg-publish: true
 > 📁 Comunicación/
 > ├── 📄 Comunicación.md
 > ├── 📄 Bienvenida y Syllabus Comunicación.md  ← estás aquí
+> │
 > ├── 📁 Unidad 0 - Guias y Ejercicios/
-> │   ├── Sílabo IDIG2012.pdf
-> │   ├── Políticas PAO 2_2026.pdf
-> │   └── Planificación PAO 2_2026.pdf
+> │   ├── 📄 00 - Leeme Unidad 0.md
+> │   ├── 📎 Sílabo de la Asignatura IDIG2012.pdf
+> │   ├── 📎 Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf
+> │   └── 📎 Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf
+> │
 > ├── 📁 Unidad 1 - Comunicación efectiva/
+> │   ├── 📄 01 - Escucha activa, empatía y barreras.md
+> │   ├── 📄 02 - Comunicación grupal y toma de decisiones.md
+> │   └── 📄 03 - Comunicación estratégica, IIR y pitch personal.md
+> │
 > ├── 📁 Unidad 2 - Pensamiento complejo y crítico/
+> │   ├── 📄 01 - Pensamiento complejo vs pensamiento lineal.md
+> │   └── 📄 02 - Pensamiento crítico y perfil prosumidor.md
+> │
 > ├── 📁 Unidad 3 - Redacción/
+> │   ├── 📄 01 - Texto expositivo, claridad y APA.md
+> │   ├── 📄 02 - Informes técnicos y ejecutivos, síntesis y paráfrasis.md
+> │   ├── 📄 03 - IA ética y prompts para redacción.md
+> │   ├── 📄 04 - Precisión y claridad en la redacción.md
+> │   ├── 📄 05 - Concordancia y cohesión en la redacción.md
+> │   └── 📄 06 - Normas APA, citación y referencias.md
+> │
 > └── 📁 Unidad 4 - Comportamiento comunicacional/
+>     ├── 📄 01 - Argumentación efectiva, convencer vs persuadir.md
+>     ├── 📄 02 - Storytelling para comunicar ciencia.md
+>     └── 📄 03 - Voz, cuerpo, formatos y práctica TED.md
 > ```
 
 ---

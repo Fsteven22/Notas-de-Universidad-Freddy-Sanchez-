@@ -79,6 +79,8 @@ tags: [IDIG2012, unidad3, texto-expositivo, apa, redaccion]
 > | **Web con autor** | Apellido, Inicial. (Año). Título. URL | Codina Jiménez, A. (2004). *Saber escuchar*. https://www.redalyc.org/pdf/549/54900303.pdf |
 >
 > Errores que restan: sin fecha, sin cursiva en libro, URL cruda sin datos.
+>
+> 📐 Formato completo paso a paso (tipos de cita, autores corporativos, referencias por tipo de fuente, tablas y figuras): [[06 - Normas APA, citación y referencias]]
 
 ---
 
@@ -116,6 +118,8 @@ tags: [IDIG2012, unidad3, texto-expositivo, apa, redaccion]
 > | Cada uno de los alumnos *tienen* | Cada uno... *tiene* | El sujeto es "cada uno" (singular) |
 >
 > **Regla de oro:** si al quitar la palabra sobrante nada se pierde, sobraba.
+>
+> ✂️ Teoría completa de precisión (redundancias, pleonasmos, comodines y puntuación): [[04 - Precisión y claridad en la redacción]]
 
 ---
 
@@ -135,7 +139,7 @@ tags: [IDIG2012, unidad3, texto-expositivo, apa, redaccion]
 >
 > **3. Evaluación 3 (gramática, asincrónica) + Evaluación 4 (APA)**
 >
-> - Repasa concordancia con 10 oraciones propias del Taller 2
+> - Repasa concordancia con 10 oraciones propias del Taller 2 → teoría y ejercicios: [[05 - Concordancia y cohesión en la redacción]]
 > - Arma tu banco APA con las 4 fuentes del syllabus
 
 ---

@@ -1,0 +1,7 @@
+flowchart TB
+    IN["antes de normalizar<br/>necesitas"] --> C1["1. tabla en 1FN<br/>un valor por celda"]
+    IN --> C2["2. PK identificada<br/>compuesta o simple"]
+    IN --> C3["3. todas las DFs listadas<br/>mirando que datos se repiten"]
+    IN --> C4["4. el orden fijo:<br/>no saltear curaciones"]
+    C3 --> D["diagrama de dependencias<br/>PK arriba, sospechosas abajo"]
+    style D fill:#e1ffe1

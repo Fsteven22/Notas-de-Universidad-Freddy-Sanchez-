@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [EYAG1037, unidad1, electricidad]
+---
+
 # 🔧 Elementos Básicos de un Circuito Eléctrico
 
 ## 🎯 Introducción
@@ -10,7 +15,7 @@
 >
 > - Un circuito eléctrico es como un sistema de tuberías cerrado: la **fuente** es la bomba, los **conductores** son las tuberías, y los **elementos pasivos** (resistencias, capacitores, inductores) son válvulas, depósitos y serpentines que controlan o almacenan el flujo.
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
 >
 > **Condición esencial:** El circuito debe ser **cerrado** para que la corriente fluya. Un circuito abierto interrumpe el flujo.
 >
@@ -22,7 +27,7 @@
 > | **Capacitor** | Almacena energía en campo eléctrico | ⊣⊢ |
 > | **Inductor** | Almacena energía en campo magnético | ⌇ |
 > 
-> ![[Pasted image 20260519225402.png]]
+> ![[../../Anexos/Pasted image 20260519225402.png]]
 
 ---
 
@@ -34,7 +39,7 @@
 >
 > > A diferencia de las fuentes independientes (batería, generador), las fuentes dependientes **no tienen valor fijo**: su salida varía proporcionalmente a una variable de control $V_x$ o $I_x$ medida en otro punto del circuito.
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
 >
 > **Los cuatro tipos y su simbología:**
 >
@@ -80,7 +85,7 @@
 >
 > Los **conductores** son materiales que permiten el flujo libre de electrones con muy poca oposición. Son el medio por el que la corriente viaja entre los componentes del circuito.
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
 >
 > **Materiales conductores más usados:**
 >
@@ -102,7 +107,7 @@
 >
 > > **Calibre AWG:** En América Latina se usa el estándar **AWG (American Wire Gauge)** para medir el diámetro de los conductores. A menor número AWG, mayor diámetro y mayor capacidad de corriente (ej. AWG 12 para circuitos de 20 A en hogares).
 
-![[Pasted image 20260519225615.png]]
+![[../../Anexos/Pasted image 20260519225615.png]]
 
 ---
 
@@ -114,7 +119,7 @@
 >
 > $$P = I^2 \cdot R \qquad \text{(Calor disipado)}$$
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
 > 
 > $$R = \frac{\rho \cdot l}{A}$$
 >
@@ -156,7 +161,7 @@
 > | **Potencia** | Máxima potencia disipable sin dañarse (¼ W, ½ W, 1 W, 2 W…) |
 > | **Coeficiente de temperatura** | Variación de R con la temperatura (ppm/°C) |
 
-![[Pasted image 20260519225108.png]]
+![[../../Anexos/Pasted image 20260519225108.png]]
 
 ---
 
@@ -180,7 +185,7 @@
 >
 > $$E = \frac{1}{2} C V^2$$
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
 >
 > **Comparación de tipos:**
 >
@@ -201,7 +206,7 @@
 > > ⚠️ Los capacitores electrolíticos **deben conectarse respetando la polaridad** (+ y −). Invertirlos puede dañarlos o causar cortocircuito.
 
 
- ![[Pasted image 20260519225814.png]]
+ ![[../../Anexos/Pasted image 20260519225814.png]]
 
 ---
 
@@ -222,7 +227,7 @@
 >
 > $$E = \frac{1}{2} L I^2$$
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
 >
 > **Comportamiento en DC y AC:**
 >
@@ -241,7 +246,7 @@
 > | **Motores y relés** | Genera campo magnético para movimiento mecánico |
 
 
-![[Pasted image 20260519225956.png]]
+![[../../Anexos/Pasted image 20260519225956.png]]
 
 ---
 ## 🌍 Simbología EU vs US
@@ -268,7 +273,7 @@
 >
 > Los **elementos de control** permiten abrir o cerrar un circuito, ya sea manualmente o de forma automática/eléctrica.
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
 >
 > | Elemento | Descripción | Estado por defecto | Acción |
 > |---|---|---|---|
@@ -281,8 +286,8 @@
 >
 > > Una pequeña corriente de control energiza la **bobina** del relé, generando un campo magnético que atrae un contacto metálico y cierra (o abre) un circuito de mayor potencia. Permite controlar cargas grandes con señales pequeñas.
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
-![[ChatGPT Image 30 may 2026, 18_49_08.png]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
+![[../../Anexos/ChatGPT Image 30 may 2026, 18_49_08.png]]
 
 ---
 ## ⚖️ Comparación de los Tres Elementos Pasivos
@@ -298,15 +303,15 @@
 > | **En AC** | Igual para toda f | Impide baja f | Impide alta f |
 > | **Relación V-I** | $V = IR$ | $I = C\frac{dV}{dt}$ | $V = L\frac{dI}{dt}$ |
 >
-> ![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
+> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
 > 
-![[ChatGPT Image 19 may 2026, 23_02_18.png]]
+![[../../Anexos/ChatGPT Image 19 may 2026, 23_02_18.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
+![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
 
 ---
 

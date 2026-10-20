@@ -1,8 +1,0 @@
-flowchart TD
-   A["Revisa un modulo existente"] --> B{"Puedes describirlo<br/>en 1 frase sin 'y'?"}
-   B -->|"No"| C["Problema de cohesion:<br/>divide por responsabilidad"]
-   B -->|"Si"| D{"Sus metodos reciben<br/>3+ booleanos o el objeto<br/>completo de otro modulo?"}
-   D -->|"Si"| E["Problema de acoplamiento:<br/>pasa datos simples o usa Strategy"]
-   D -->|"No"| F{"Puedes usarlo sin leer<br/>su codigo fuente?"}
-   F -->|"No"| G["Problema de abstraccion:<br/>revisa que la interfaz baste"]
-   F -->|"Si"| H["Diseno sano"]

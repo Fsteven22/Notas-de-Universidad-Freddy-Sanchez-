@@ -37,6 +37,17 @@ tags: [IDIG2012, unidad0, recursos]
 
 ---
 
+## 📝 Talleres de redacción (ya convertidos a nota)
+
+> [!success] 🆕 Resumidos y con diagramas
+> Estos tres PDFs de la carpeta (*Precisión y claridad en la redacción.pdf*, *Concordancia y cohesión.pdf*, *Taller Normas APA Básico.pdf*) ya están procesados como notas temáticas con SVGs, ejercicios y flashcards. Viven en la carpeta de la **Unidad 3 - Redacción** (renumeradas 04–06), porque refuerzan la Evaluación 3 y la Evaluación 4:
+>
+> - [[04 - Precisión y claridad en la redacción]]
+> - [[05 - Concordancia y cohesión en la redacción]]
+> - [[06 - Normas APA, citación y referencias]]
+
+---
+
 ## 🎬 Capturas de clase (PDF por sesión)
 
 ![[Clase S3 - Comunicación estratégica (capturas).pdf]]

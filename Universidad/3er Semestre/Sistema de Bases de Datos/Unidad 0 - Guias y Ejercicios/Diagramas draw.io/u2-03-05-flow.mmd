@@ -1,0 +1,8 @@
+flowchart TB
+    D["tabla con datos<br/>duplicados"] --> I["Inserción: agregar un producto nuevo<br/>obliga a crear una venta falsa"]
+    D --> E["Eliminación: borrar la última venta<br/>borra el precio del producto"]
+    D --> A["Actualización: cambiar el precio toca<br/>muchas filas; si falla una, se corrompe"]
+    I --> C["cura: normalizar en orden<br/>(2FN → 3FN)"]
+    E --> C
+    A --> C
+    style C fill:#e1ffe1

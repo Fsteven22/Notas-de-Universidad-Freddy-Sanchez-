@@ -1,8 +1,0 @@
-graph TB
-    E["ESTUDIANTE<br/><u>carnet</u>"]
-    R{"matriculado"}
-    M["MATERIA<br/><u>codigo</u>"]
-    A1(["email<br/>cambia: no es PK"])
-    E ---|"(0,N)"| R
-    R ---|"(0,N)"| M
-    E --- A1

@@ -1,0 +1,13 @@
+flowchart TB
+    CIT["Ciudadano"] --- CU1("Consultar resultados")
+    CIT --- CU2("Consultar su lugar de votación")
+    OBS["Observador acreditado"] -.->|"es-un<br/>generalización"| CIT
+    OBS --- CU7("Descargar actas escaneadas")
+    JRV["Presidente de JRV"] --- CU3("Registrar acta de escrutinio")
+    JRV ==>|"«include»: siempre"| VAL("Validar acta contra padrón")
+    REV("Enviar acta a revisión") -.->|"«extend» en paso 4:<br/>inconsistencia detectada"| CU3
+    FUN["Funcionario electoral"] --- CU4("Calificar candidatura")
+    ORG["Organización política"] --- CU5("Inscribir candidatura")
+    RCS["Registro Civil<br/>«sistema»"] --- CU6("Importar padrón")
+    style CU3 fill:#e1ffe1
+    style REV fill:#fff4e1

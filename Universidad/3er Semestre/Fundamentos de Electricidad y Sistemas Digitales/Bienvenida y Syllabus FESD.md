@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, electricidad, syllabus]
 ---
 
 # ⚡ Fundamentos de Electricidad y Sistemas Digitales — Bienvenida y Syllabus
@@ -61,7 +62,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
+> ![[../../Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

@@ -9,77 +9,133 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 > [!info] 💡 ¿Por Qué 1FN No Basta?
 >
-> Una tabla en 1FN puede seguir mintiendo: si un dato depende de **parte** de la PK (parcial) o de **otro no-primo** (transitiva), cada fila duplica datos y aparecen anomalías — insertar exige inventar, borrar destruye de más, actualizar a medias corrompe. 2FN y 3FN son la cura, en ese orden.
+> Una tabla puede estar en 1FN y aún así tener problemas. Si un dato depende de **solo parte de la PK** (dependencia parcial) o de **otro dato que no es clave** (dependencia transitiva), aparece información duplicada y anomalías al insertar, borrar o actualizar.
 >
-> **Aplicaciones:**
-> - **Diseño:** todo esquema convertido (U2-01) se valida aquí antes del SQL.
-> - **Lección 1:** detectar parcial vs transitiva en un diagrama de dependencias es pregunta segura.
-> - **Proyecto:** tablas en 3FN no duplican hechos.
+> **La cura está en orden:** primero 2FN, luego 3FN.
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-01-graph.svg]]
+> | Nivel | Qué elimina | Analogía |
+> |---|---|---|
+> | **1FN** | Grupos repetitivos | Una caja con un objeto, no una lista |
+> | **2FN** | Dependencias parciales | Nada depende de solo "mitad" de la llave |
+> | **3FN** | Dependencias transitivas | Nada depende de un "intermediario" no-clave |
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-04-flow.svg]]
 
 ---
 
 ## 📋 Definiciones Formales
 
-### 1️⃣ Dependencia funcional — X determina Y
+### 1️⃣ Dependencia funcional (DF)
 
-> [!note] 📋 Definición — DF (Coronel cap. 6)
+> [!note] 📋 Definición — DF
 >
-> `X → Y`: conociendo X conoces Y (X = **determinante**). Ej.: `PROJ_NUM → PROJ_NAME`; `EMP_NUM → EMP_NAME, JOB_CLASS`.
+> `X → Y` se lee: **"conociendo X, sé Y"**.
 >
-> **Se lee así:** dibuja flechas del determinante al dependiente (diagrama de dependencias): las flechas *sobre* la PK son sanas; las de *abajo* (parciales, transitivas) son las que se eliminan.
+> Ejemplos:
+> - `PROJ_NUM → PROJ_NAME` (si conozco el número del proyecto, conozco su nombre)
+> - `EMP_NUM → EMP_NAME` (si conozco el número del empleado, conozco su nombre)
+>
+> **Determinante:** es X (el dato del que parte la flecha).
+> **Dependiente:** es Y (el dato al que llega la flecha).
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-01-graph.svg]]
 
-### 2️⃣ Anomalías — lo que duele sin normalizar
+### 2️⃣ Las 3 anomalías
 
-> [!note] 📋 Las 3 anomalías (Coronel cap. 1/6)
+> [!note] 📋 Las 3 anomalías
 >
-> - **Inserción:** para agregar un agente nuevo hay que inventar un cliente falso (dummy).
-> - **Eliminación:** borrar los últimos clientes borra al agente con ellos.
-> - **Actualización:** cambiar el teléfono de Leah Hahn exige tocar cada fila donde aparece — a medias, corrompe.
+> Cuando los datos están duplicados, aparecen estas anomalías:
 >
-> **Ejemplo:** `EMP_NAME` de Dave Senior escrito como *DaveSenior* en una fila y *D.Senior* en otra: duplicar hechos invita a mentir.
-
-### 3️⃣ Segunda forma normal — fuera parciales
-
-> [!note] 📋 Definición — 2FN (Coronel 6.3.2)
+> | Anomalía | Qué pasa | Ejemplo |
+> |---|---|---|
+> | **Inserción** | Para agregar algo nuevo, necesitas inventar datos de otro | Agregar un producto nuevo obliga a crear una venta falsa |
+> | **Eliminación** | Al borrar algo, borras información que no querías perder | Borrar la última venta de un producto borra el precio del producto |
+> | **Actualización** | Cambiar un dato obliga tocar muchas filas, y si falla una, se corrompe | Cambiar el precio del "Arroz" en cada venta donde aparece |
 >
-> 1FN + **sin dependencias parciales** (ningún atributo depende de *parte* de la PK). Solo aplica con PK **compuesta**: PK de un atributo ⇒ 2FN automática.
->
-> **Caso PROJECT (libro):** `1NF(PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS)` con parciales `(PROJ_NUM → PROJ_NAME)` y `(EMP_NUM → EMP_NAME, JOB_CLASS, CHG_HOUR)` se parte en:
->
-> - `PROJECT(PROJ_NUM, PROJ_NAME)` · `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS, CHG_HOUR)` · `ASSIGNMENT(PROJ_NUM, EMP_NUM, ASSIGN_HOURS)`
->
-> Los determinantes **se quedan** en la original como FK (así nacen las relaciones). Lo que depende de la PK completa (`HOURS` → `ASSIGN_HOURS`) no se mueve.
-
-### 4️⃣ Tercera forma normal — fuera transitivas
-
-> [!note] 📋 Definición — 3FN (Coronel 6.3.3)
->
-> 2FN + **sin dependencias transitivas** (ningún no-primo depende de otro no-primo).
->
-> **Caso JOB (libro):** en `EMPLOYEE` sobrevive `(JOB_CLASS → CHG_HOUR)` — ambos no-primos ⇒ se extrae `JOB(JOB_CLASS, CHG_HOUR)` y en `EMPLOYEE` queda `JOB_CLASS` como FK. Final: 4 tablas `PROJECT, EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS), JOB, ASSIGNMENT`.
-
-### 5️⃣ BCNF — el caso borde (mención)
-
-> [!note] 📋 Definición — Boyce-Codd (Coronel 6.6.1)
->
-> Todo **determinante es clave candidata** (3FN especial). Aparece con claves candidatas solapadas: ej. `R(A,B,C)` con `AB → C` y `C → B` está en 3FN pero C determina sin ser clave ⇒ se parte.
->
-> **Se lee así:** si ya estás en 3FN y cada flecha nace de una clave, estás en BCNF sin hacer nada más.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-05-flow.svg]]
 
 ---
 
-## 🛠️ Método: Normalizar Paso a Paso
+## 🔑 Diferencia clave: 2FN vs 3FN
 
-> [!note] 📋 Protocolo Coronel (Fig. 6.3 → 6.4 → 6.5)
+> [!tip] 🎯 La diferencia en una frase
 >
-> 1. Dibuja el diagrama de dependencias (PK en negrita; flechas sanas arriba, sospechosas abajo).
-> 2. **A 2FN:** por cada determinante parcial, crea tabla con él como PK (déjalo en la original como FK); mueve sus dependientes.
-> 3. **A 3FN:** por cada transitiva, crea tabla con su determinante como PK (déjalo como FK); mueve sus dependientes.
-> 4. **Chequeo BCNF:** ¿toda flecha nace de una clave? Si sí, listo.
+> **2FN** elimina dependencias de **parte de la PK** (parciales).  
+> **3FN** elimina dependencias de **otro dato no-clave** (transitivas).
 >
-> **Principio clave:** el determinante nunca abandona la tabla original — se queda como FK.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-03-flow.svg]]
+
+### 2️⃣ Segunda forma normal (2FN)
+
+> [!note] 📋 Definición — 2FN
+>
+> Una tabla está en **2FN** si:
+> 1. Está en **1FN**.
+> 2. No tiene **dependencias parciales**: ningún atributo no-clave depende de solo *parte* de la PK.
+>
+> **Importante:** si la PK es simple (un solo atributo), la tabla está automáticamente en 2FN (no hay "parte" de la PK).
+>
+> **Caso PROJECT (Coronel cap. 6):**
+>
+> Tabla original `1NF(PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS)` tiene parciales:
+> - `PROJ_NUM → PROJ_NAME`
+> - `EMP_NUM → EMP_NAME, JOB_CLASS, CHG_HOUR`
+>
+> Se parte en:
+> - `PROJECT(PROJ_NUM, PROJ_NAME)`
+> - `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS, CHG_HOUR)`
+> - `ASSIGNMENT(PROJ_NUM, EMP_NUM, ASSIGN_HOURS)`
+>
+> **Regla de oro:** el determinante se queda en la tabla original como FK (copiar, no mudar).
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-06-er.svg]]
+
+### 3️⃣ Tercera forma normal (3FN)
+
+> [!note] 📋 Definición — 3FN
+>
+> Una tabla está en **3FN** si:
+> 1. Está en **2FN**.
+> 2. No tiene **dependencias transitivas**: ningún atributo no-clave depende de otro atributo no-clave.
+>
+> **¿Qué es un no-primo?** Es un atributo que **no forma parte de ninguna clave candidata**.
+>
+> **Caso JOB (Coronel cap. 6):**
+>
+> En `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS, CHG_HOUR)` sobrevive:
+> - `JOB_CLASS → CHG_HOUR`
+>
+> Ambos son no-primos ⇒ transitiva. Se extrae:
+> - `JOB(JOB_CLASS, CHG_HOUR)`
+> - `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS FK)`
+>
+> Resultado: 4 tablas `PROJECT, EMPLOYEE, JOB, ASSIGNMENT`. Cambiar `CHG_HOUR` toca **una** fila.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-07-er.svg]]
+
+### 4️⃣ BCNF (mención)
+
+> [!note] 📋 Definición — Boyce-Codd Normal Form
+>
+> Todo **determinante es clave candidata**. Es una 3FN más estricta.
+>
+> **Ejemplo:** `R(A,B,C)` con `AB → C` y `C → B`, PK = AB.
+> - Está en 3FN (B es primo, parte de la PK).
+> - No está en BCNF: C determina a B sin ser clave.
+> - Se parte en `R1(C,B)` + `R2(A,C)`.
+
+---
+
+## 🛠️ Método: Normalizar paso a paso
+
+> [!note] 📋 Protocolo
+>
+> 1. **Dibuja el diagrama de dependencias:** PK en negrita; flechas sanas arriba, sospechosas abajo.
+> 2. **A 2FN:** por cada determinante parcial, crea tabla con él como PK. Déjalo en la original como FK. Mueve sus dependientes.
+> 3. **A 3FN:** por cada transitiva, crea tabla con su determinante como PK. Déjalo como FK. Mueve sus dependientes.
+> 4. **Chequeo BCNF:** ¿toda flecha nace de una clave? Si sí, ya estás en BCNF.
+>
+> **Principio clave:** el determinante nunca abandona la tabla original. Se queda como FK (copiar, no mudar).
 
 ---
 
@@ -89,32 +145,37 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 >
 > Entrada: `1NF(PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, JOB_CLASS, CHG_HOUR, HOURS)`.
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-02-er.svg]]
+> > [!success]- ✅ Pasos
+> >
+> > 1. Parciales → `PROJECT(PROJ_NUM, PROJ_NAME)` + `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS, CHG_HOUR)` + `ASSIGNMENT(PROJ_NUM, EMP_NUM, ASSIGN_HOURS)`.
+> > 2. Transitiva `JOB_CLASS → CHG_HOUR` → `JOB(JOB_CLASS, CHG_HOUR)` + `EMPLOYEE(EMP_NUM, EMP_NAME, JOB_CLASS FK)`.
+> >
+> > Resultado: 4 tablas, 0 duplicados. Cambiar `CHG_HOUR` toca solo la tabla `JOB`.
 >
-> **Se lee así:** parciales → PROJECT + EMPLOYEE (+ASSIGNMENT con lo completo); transitiva → JOB. 4 tablas, 0 duplicados: cambiar `CHG_HOUR` toca **una** fila.
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-03-02-er.svg]]
 
 ---
 
-## ⚠️ Errores Comunes y Principios Lógicos
+## ⚠️ Errores Comunes
 
 ### ❌ Error 1: Normalizar PK simple a 2FN
 
 > [!danger] ❌ Viola: sin PK compuesta no hay parciales
 >
-> Buscar dependencias parciales con PK de un atributo es caza imposible: es 2FN automática. El trabajo real ahí es la transitiva (3FN).
+> Buscar dependencias parciales con PK de un solo atributo es imposible. Es 2FN automática. El trabajo real ahí es la transitiva (3FN).
 
 ### ❌ Error 2: Mover el determinante fuera
 
 > [!danger] ❌ Viola: el determinante se queda como FK
 >
-> Sacar `PROJ_NUM` de ASSIGNMENT rompe el puente: las tablas nuevas quedan huérfanas. Crea la tabla hija **copiando**, no mudando.
+> Sacar `PROJ_NUM` de ASSIGNMENT rompe el puente. Las tablas nuevas quedan huérfanas. Crea la tabla hija **copiando**, no mudando.
 
 ### ❌ Error 3: Confundir parcial con transitiva
 
 > [!danger] ❌ Viola: parcial = parte de la PK; transitiva = no-primo → no-primo
 >
-> - ❌ **EL ERROR ESTÁ AQUÍ:** tratar `(JOB_CLASS → CHG_HOUR)` como parcial.
-> - ✅ Así sí: JOB_CLASS no es parte de ninguna PK ⇒ transitiva ⇒ tabla JOB.
+> - ❌ **Error:** tratar `(JOB_CLASS → CHG_HOUR)` como parcial.
+> - ✅ **Correcto:** JOB_CLASS no es parte de la PK ⇒ es transitiva ⇒ tabla JOB.
 
 ---
 
@@ -124,23 +185,23 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 > [!example] 📋 Planteamiento
 >
-> `VENTA(codigo PK, fecha, idProd, nombreProd, precio, cantidad)`: ¿qué depende de parte de la PK y qué depende de otro no-primo? Nombra parcial y transitiva sin partir nada.
+> `VENTA(codigo PK, fecha, idProd, nombreProd, precio, cantidad)`: ¿qué depende de parte de la PK y qué depende de otro no-primo?
 >
 > > [!success]- ✅ Solución
 > >
-> > - Parcial: `(idProd → nombreProd, precio)` — el producto se sabe sin la venta.
-> > - Transitiva: ninguna clásica aquí (precio no depende de nombreProd); si `categoria → descuento` existiera, sería transitiva.
+> > - Parcial: `idProd → nombreProd, precio` (el producto se sabe sin la venta).
+> > - Transitiva: ninguna clásica aquí (precio no depende de nombreProd directamente; si existiera `categoria → descuento`, sí sería transitiva).
 
 ### ✏️ Ejercicio 2 — Lleva a 3FN
 
 > [!example] 📋 Planteamiento
 >
-> Parte VENTA a 2FN y luego a 3FN con schemas finales.
+> Parte `VENTA` a 2FN y luego a 3FN con schemas finales.
 >
 > > [!success]- ✅ Solución
 > >
 > > - 2FN: `PRODUCTO(idProd, nombreProd, precio)` + `VENTA(codigo, fecha, idProd FK, cantidad)`.
-> > - 3FN: nada más que mover (verifica: ¿algún no-primo determina a otro? Si `idProd → categoria → descuento`, nace `CATEGORIA`).
+> > - 3FN: verificar si hay transitivas. Si `idProd → categoria → descuento`, nace `CATEGORIA`.
 
 ### ✏️ Ejercicio 3 — Chequeo BCNF
 
@@ -150,7 +211,8 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 >
 > > [!success]- ✅ Solución
 > >
-> > - 3FN sí (B es primo: parte de la PK). BCNF no: C determina a B sin ser clave ⇒ se parte en `R1(C,B)` + `R2(A,C)`.
+> > - 3FN: sí (B es primo).
+> > - BCNF: no (C determina a B sin ser clave). Se parte en `R1(C,B)` + `R2(A,C)`.
 
 ---
 
@@ -163,7 +225,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 > [!note] 📋 Nivel Intermedio
 >
-> - [ ] Llevo una tabla 1NF→2FN→3FN con schemas.
+> - [ ] Llevo una tabla 1FN → 2FN → 3FN con schemas.
 > - [ ] Decido BCNF mirando si todo determinante es clave.
 
 > [!note] 📋 Nivel Avanzado
@@ -179,14 +241,14 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
 
-- ¿DF en 1 línea?::X→Y: conociendo X conoces Y (X determinante).
+- ¿DF en 1 línea?::X→Y: conociendo X conozco Y.
 - ¿3 anomalías?::Inserción (dummy), eliminación (borra de más), actualización (a medias corrompe).
-- ¿2FN?::1FN sin parciales; PK simple ⇒ automática.
-- ¿3FN?::2FN sin transitivas (no-primo → no-primo fuera).
-- ¿Caso PROJECT?::Parciales→PROJECT+EMPLOYEE; transitiva→JOB; completo queda en ASSIGNMENT.
+- ¿2FN?::1FN sin dependencias parciales; PK simple ⇒ automática.
+- ¿3FN?::2FN sin dependencias transitivas (no-primo → no-primo).
+- ¿Caso PROJECT?::Parciales → PROJECT + EMPLOYEE; transitiva → JOB.
 - ¿Determinante se va o se queda?::Se queda como FK (copiar, no mudar).
 - ¿BCNF en 1 línea?::Todo determinante es clave candidata.
-- ¿Parcial vs transitiva?::Parte de la PK vs no-primo que determina a otro no-primo.
+- ¿Diferencia 2FN vs 3FN?::2FN quita parciales (parte de la PK); 3FN quita transitivas (no-primo → no-primo).
 
 ---
 
@@ -196,8 +258,8 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
-> - Anterior: [[02 - Primera forma normal y diccionario de datos]] · Conversión: [[01 - Conversión MC a ML por cardinalidad]]
-> - Diccionario: [[02 - Primera forma normal y diccionario de datos]]
+> - Anterior: [[02 - Primera forma normal y diccionario de datos]]
+> - Siguiente: [[04 - Normalización paso a paso]]
 
 ---
 
@@ -206,7 +268,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > [!quote] 📖 Fuentes
 >
 > - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 6 (DFs, anomalías, 2FN §6.3.2, 3FN §6.3.3, BCNF §6.6.1).
-> - Deck BD 02 MC_a_ML: 1FN base + formas listadas; este nota completa 2FN/3FN/BCNF.
+> - Deck BD 02 MC_a_ML: 1FN base + formas listadas; esta nota completa 2FN/3FN/BCNF.
 
 ---
 

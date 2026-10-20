@@ -1,9 +1,0 @@
-flowchart TD
-   A["Problema de diseño"] --> B{"¿Lo has visto<br/>antes?"}
-   B -->|"No, es único"| C["Diseño directo<br/>sin patrón"]
-   B -->|"Sí, recurrente"| D{"¿Qué varía?"}
-   D -->|"Algoritmo intercambiable"| E["Strategy"]
-   D -->|"Responsabilidades apilables"| F["Decorator"]
-   D -->|"Varios deben enterarse"| G["Observer"]
-   D -->|"Creación acoplada"| H["Factory"]
-   D -->|"Incompatibilidad"| I["Adapter"]

@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [EYAG1037, unidad1, electricidad]
+---
+
 # ⚡ Circuitos en Serie, Paralelo y Mixtos
 
 ## 🎯 Introducción
@@ -12,7 +17,7 @@
 > - Un circuito en **paralelo** es como los carriles de una autopista: si uno se cierra, los demás siguen funcionando.
 > - Un circuito **mixto** combina ambas configuraciones, como las instalaciones eléctricas de un edificio.
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
 >
 > | Configuración | Corriente | Voltaje | Aplicación típica |
 > |---|---|---|---|
@@ -28,7 +33,7 @@
 >
 > En un **circuito en serie**, los elementos están conectados uno tras otro formando una única trayectoria. La misma corriente recorre todos los elementos secuencialmente.
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
 >
 > ### ⚙️ Leyes fundamentales en serie
 >
@@ -78,7 +83,7 @@
 > | **Misma potencia base** | $P = I^2 R$ varía según la resistencia de cada elemento |
 > 
 
-![[ChatGPT Image 30 may 2026, 20_14_44.png]]
+![[../../Anexos/ChatGPT Image 30 may 2026, 20_14_44.png]]
 
 ---
 
@@ -88,7 +93,7 @@
 >
 > En un **circuito en paralelo**, los elementos comparten los mismos dos nodos (terminales), por lo que el voltaje en todos ellos es idéntico. La corriente total se reparte entre las ramas disponibles.
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
 >
 > ### ⚙️ Leyes fundamentales en paralelo
 >
@@ -139,7 +144,7 @@
 > | **Mismo voltaje** | Todos los elementos operan a la misma tensión |
 > | **Mayor corriente total** | Al agregar ramas, la corriente de la fuente aumenta |
 
-![[ChatGPT Image 30 may 2026, 20_24_25.png]]
+![[../../Anexos/ChatGPT Image 30 may 2026, 20_24_25.png]]
 
 ---
 
@@ -172,7 +177,7 @@
 > >
 > > En serie: $C_t = \frac{4 \times 6}{4 + 6} = \frac{24}{10} = 2.4\,\mu F$
 
-![[ChatGPT Image 30 may 2026, 20_29_23.png]]
+![[../../Anexos/ChatGPT Image 30 may 2026, 20_29_23.png]]
 
 ---
 
@@ -205,7 +210,7 @@
 > >
 > > En paralelo: $L_t = \frac{3 \times 6}{3 + 6} = \frac{18}{9} = 2\,mH$
 
-![[file_000000006634720e8575d8d5057e5f59.png]]
+![[../../Anexos/file_000000006634720e8575d8d5057e5f59.png]]
 
 ---
 ## 🔁 Circuito Mixto (Serie-Paralelo)
@@ -216,11 +221,11 @@
 >
 > El método de análisis consiste en **simplificar progresivamente** el circuito, reduciendo grupos paralelos o series a su equivalente, hasta obtener un único $R_{eq}$.
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
 >
 > ### 🧮 Metodología de simplificación paso a paso
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
 >
 > **Ejemplo resuelto:**
 >
@@ -243,7 +248,7 @@
 > >
 > > ✅ Verificación KCL: $0.8 + 1.6 = 2.4\text{ A}$ ✓
 
-![[file_00000000bdc471f7b12b164a687c03e7.png]]
+![[../../Anexos/file_00000000bdc471f7b12b164a687c03e7.png]]
 
 ---
 ## 🔋 Potencia en Circuitos
@@ -284,13 +289,13 @@
 > | **Fallo de un elemento** | Interrumpe todo | Solo esa rama | Depende de la ubicación |
 > | **Ejemplo real** | Luces navideñas antiguas | Tomacorrientes del hogar | Circuitos electrónicos |
 >
-> ![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
+> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
+![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
 
 ---
 

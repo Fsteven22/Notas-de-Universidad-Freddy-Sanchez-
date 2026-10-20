@@ -1,0 +1,11 @@
+erDiagram
+    JOB {
+        string JOB_CLASS PK
+        float CHG_HOUR
+    }
+    EMPLOYEE {
+        int EMP_NUM PK
+        string EMP_NAME
+        string JOB_CLASS FK
+    }
+    JOB ||--o{ EMPLOYEE : "clasifica"

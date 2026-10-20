@@ -39,9 +39,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 📋 Definición — Actor + Objetivo, Nada Más
 >
 > - **Actor** = rol externo (Estudiante, Docente, SistemaPagos), no persona concreta.
-> - **Caso** = objetivo con valor ("Inscribirse", no "Clic en botón").
-> - **`<<include>>`** = siempre incluido (Validar identidad).
-> - **`<<extend>>`** = opcional/extensión (Aplicar descuento).
+> - **Caso** = objetivo con valor observable: produce un resultado que el actor puede percibir ("Inscribirse", no "Clic en botón").
+> - **Frontera del sistema** = el rectángulo que encierra los óvalos: DENTRO queda solo lo que construyes; FUERA quedan los actores (humanos o sistemas existentes). Con vacíos dentro/disqués fuera, el diagrama mentiría.
+> - **Caso vs escenario:** el caso de uso es la **familia de caminos completos** hacia el valor; un **escenario es UN camino concreto** por dentro (el feliz de la descripción ch. 8 y cada alterno A1, A2...).
+> - **`<<include>>`** = subrutina SIEMPRE ejecutada: la flecha nace **del caso base** y llega al incluido (Validar identidad).
+> - **`<<extend>>`** = parche OPCIONAL: la flecha nace **del extendido** y llega **al caso base** (Aplicar descuento). La flecha puede anotar el **punto de extensión**: dónde y cuándo entra (ej. "en paso 4, cuando hay inconsistencia").
+> - **Generalización** entre actores (y también entre casos) = "es-un" con triángulo hueco: `Observador ──▷ Ciudadano` — hace todo lo del ciudadano y algo más. Evita el actor vacío que "no sabe qué hacer".
 >
 > | Bien | Mal | Por qué |
 > |---|---|---|
@@ -49,8 +52,54 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > | `Generar reporte` | `Conectarse a BD` | El segundo es interno, invisible al actor |
 >
 > **Test:** si el actor no lo pediría en voz alta, no es caso de uso.
+>
+> **Mnemotecnia de los sentidos:** *include* lo canta el base ("yo siempre llamo a validar"); *extend* lo canta el extra ("yo interrumpo si pasa algo").
 
-### 🎭 2. Secuencia: Quién Llama a Quién
+![[../Diagramas/dsw-u2-04-04-flow.svg]]
+
+### 📝 2. Descripción Textual del Caso de Uso (Stevens ch. 8)
+
+> [!info] ℹ️ El formato de papel
+>
+> El diagrama ch. 7 señala los óvalos; la **especificación textual** ch. 8 es lo que se escribe debajo: convive en el Control03 (en papel, junto a Apéndice 1 de Pressman que repite lo mismo con menos detalle).
+
+> [!example] 💡 Plantilla resuelta: `Inscribirse a curso`
+>
+> | Campo | Contenido |
+> |---|---|
+> | **Actor principal** | Estudiante |
+> | **Precondiciones** | Estudiante autenticado; matrícula activa |
+> | **Postcondición de éxito** | Existe una matrícula; el cupo del curso quedó en −1 |
+> | **Escenario principal** | 1. Estudiante elige curso. 2. Sistema verifica prerrequisitos. 3. Sistema verifica cupo > 0. 4. Sistema crea matrícula. 5. Sistema confirma. |
+> | **Flujo alternativo A1** | (en paso 3) **Curso sin cupo** → sistema ofrece lista de espera → si acepta, entra; si no, fin. |
+> | **Flujo alternativo A2** | (en paso 2) **Prerrequisito no visto** → sistema avisa y rechaza; no queda matrícula. |
+>
+> **Reglas que suman puntos:**
+>
+> - Cada paso arranca con **actor** o **sistema** explícito y termina en un estado observable.
+> - El escenario principal es recto: cualquier rama exigidora es un **flujo aparte** (A1, A2...) que numera desde qué paso se desvió.
+> - La precondición es el estado requerido ANTES; la postcondición, el estado garantizado DESPUÉS — estados, no acciones.
+> - Los flujos alternativos conectan con los `alt` de secuencia y con los `<<extend>>` del diagrama: son el mismo material en tres niveles.
+>
+> - **El escenario es una instancia concreta del caso: un recorrido, con datos, sin ramificaciones.** Dos actas de la misma JRV en la misma jornada son DOS escenarios de `Registrar acta de escrutinio`.
+
+> [!example] 🏛️ Ejemplo de la clase: `Registrar acta de escrutinio` (SIEL)
+>
+> | Campo | Contenido |
+> |---|---|
+> | **Actor principal** | Presidente de JRV |
+> | **Precondiciones** | La JRV está abierta y el presidente autenticado |
+> | **Escenario principal** | 1. Presidente selecciona su JRV. 2. Sistema muestra candidaturas por dignidad. 3. Presidente ingresa votos por candidatura, nulos y blancos. 4. Sistema valida el acta contra el padrón de la junta. 5. Sistema registra el acta y emite comprobante. |
+> | **Flujo alternativo A1** | (en paso 4) **Los votos superan a los electores del padrón** → el acta se envía a revisión. |
+> | **Flujo alternativo A2** | (en paso 3) **El presidente cancela** → no se guarda nada. |
+> | **Postcondición** | El acta queda registrada o en revisión |
+>
+> **Dos escenarios concretos:**
+>
+> - 🟢 **Escenario 1:** en la JRV 12 de Tarqui, el presidente registra 180 A, 95 B, 10 nulos y 5 blancos; el padrón tiene 320 → **acta registrada**.
+> - 🔴 **Escenario 2:** la suma da 340 y el padrón 320 → **acta enviada a revisión** (el extend A1 se activó).
+
+### 🎭 3. Secuencia: Quién Llama a Quién
 
 > [!example] 🧪 Leer de Arriba Abajo
 >
@@ -61,13 +110,44 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > **Mapeo directo a código:** cada flecha entre objetos será una llamada a método. Si tu secuencia tiene 20 flechas cruzadas, tu diseño grita "acoplamiento alto" (ver U1-02).
 
-### 🎭 3. Actividad: el Flujo con Decisiones
+### 🎭 4. Actividad: el Flujo con Decisiones
 
 > [!example] 🧪 Cuándo Preferirla
 >
 > Úsala cuando hay ramas (si/no), paralelos (fork/join) o varios actores. Ejemplo: matrícula con validación de cupo + pago en paralelo.
 >
 > **Regla:** flujo lineal simple no necesita diagrama — una lista basta.
+
+---
+
+## 🗳️ Ejemplo de la Clase: el SIEL (Sistema de Elecciones Seccionales)
+
+> [!info]- 🗳️ El caso de hoy (texto de la pizarra)
+>
+> El país se divide en **provincias → cantones → parroquias**. Las **organizaciones políticas** inscriben candidatura para **alcaldía (canton)** o **prefectura (provincia)**; para prefectura van candidato principal + vice. Un **funcionario electoral** califica la candidatura (aprueba o rechaza). El censo se importa del **Registro Civil**. El día de la elección, el **presidente de la JRV** registra el acta con votos por candidatura, nulos y blancos; el sistema la valida contra el padrón de la junta, y con inconsistencias el acta se envía a revisión. El **ciudadano** consulta su lugar de votación y los resultados; el **observador acreditado** descarga las actas escaneadas.
+
+| Actor | Tipo | Casos que le piden al sistema |
+|---|---|---|
+| **Ciudadano** | humano | Consultar lugar de votación, Consultar resultados |
+| **Observador acreditado** | humano (es-un ciudadano) | Descargar actas escaneadas (+ todo lo del ciudadano) |
+| **Presidente de JRV** | humano | Registrar acta de escrutinio |
+| **Funcionario electoral** | humano | Calificar candidatura |
+| **Organización política** | rol institucional | Inscribir candidatura |
+| **Registro Civil** | «sistema» externo | Importar padrón |
+
+![[../Diagramas/dsw-u2-04-05-use.svg]]
+
+> [!note] 💡 ¿Para qué sirven y cómo se echan a perder?
+>
+> **Usos:** capturar requisitos en el lenguaje del usuario; planificar iteraciones (un paquete de casos por iteración); derivar pruebas a partir de escenarios.
+>
+> **Riesgos:** caer en diseño funcional (partir en funciones); detallar demasiado cada flujo; confundirlos con el diseño interno.
+>
+> | No (nivel interno) | Sí (nivel objetivo) |
+> |---|---|
+> | `Sumar votos en la tabla ACTAS` | `Registrar acta de escrutinio` |
+>
+> **Advertencia de Stevens:** no abuses de las flechas — un diagrama lleno de líneas cruzadas se confunde antes que un dibujo simple.
 
 ---
 
@@ -190,6 +270,29 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > > - **14.** En secuencia cuando importa QUIÉN decide y el orden de mensajes; en actividad cuando importan los caminos y paralelos sin importar tanto el quién.
 > > - **15.** Autocorrección con el checklist de esta nota + diagrama de decisión.
 
+> [!example] 📋 Extra Control03 (formato papel)
+>
+> **16.** Escribe la descripción completa de `Devolver libro` (precondición, escenario principal en pasos, 1 flujo alternativo con multa, postcondición).
+>
+> **17.** Corrige la flecha y el tipo: `Prestar libro ──<<extend>>──▶ Pagar multa`. ¿Qué está mal?
+>
+> > [!success]- ✅ Respuestas — Extra
+> >
+> > - **16.** Tabla de 6 campos como la plantilla. Alterno: "(en paso 4, con atraso) **Con multa** → sistema calcula días × tarifa → registra pago → devuelve de todas formas". Post: la copia está disponible y el préstamo cerrado.
+> > - **17.** Doble error: pagar multa es opcional ⇒ debe ser `<<extend>>`, pero LA flecha de extend nace en `Pagar multa` y llega a `Prestar libro` — escribo `Pagar multa - -<<extend>>- -▶ Prestar libro`.
+
+> [!example] 📋 Extra SIEL (las 2 actividades de la clase)
+>
+> **18.** ¿Actor o no, para el SIEL? Juzga estos 8 candidatos con el test (¿es un ROL? ¿es EXTERNO? ¿interactúa con el sistema?):
+> ① Presidente de JRV, ② María Pérez (presidenta de la JRV 12), ③ Ciudadano, ④ Base de datos del SIEL, ⑤ Sistema del Registro Civil, ⑥ Funcionario electoral, ⑦ Acta de escrutinio, ⑧ Delegado de una organización política.
+>
+> **19.** Modela los casos del SIEL: lista los actores, propón ≥6 casos con verbo + objeto, dibuja la frontera con un `<<include>>`, un `<<extend>>` y una generalización, y escribe la descripción de un caso con 2 escenarios con datos.
+>
+> > [!success]- ✅ Respuestas — Extra SIEL
+> > >
+> > > - **18.** ✅ Sí: **①** (rol), **③** (rol genérico), **⑤** (sistema externo con «sistema»), **⑥** (rol), **⑧** (rol; promueve `Inscribir candidatura`). ❌ No: **②** es una persona concreta, el actor es el ROL presidente de JRV; **④** es un componente interno — DENTRO de la frontera, no actor; **⑦** es un objeto del dominio que no interactúa.
+> > > - **19.** Actores: la tabla de la sección 🗳️ (6). Casos: Inscribir candidatura, Calificar candidatura, Importar padrón, Registrar acta de escrutinio, Enviar acta a revisión, Consultar lugar de votación, Consultar resultados, Descargar actas escaneadas. Relaciones: `Registrar acta ──«include»──▶ Validar acta`; `Enviar acta a revisión - -«extend»- -▶ Registrar acta`; `Observador - -▷ Ciudadano` (generalización). Descripción + los 2 escenarios con datos: el ejemplo de la clase arriba (escenarios 🟢 y 🔴).
+
 ---
 
 ## 📋 Resumen Ejecutivo
@@ -262,10 +365,19 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
 >
 > - ¿Casos de uso qué son?::Menú de objetivos del actor: 5–9 por sistema, nada a nivel botón.
+- ¿Actor y frontera?::Actor = rol externo (no persona). Frontera = el rectángulo: dentro lo que construyes, fuera los actores.
+- ¿Caso vs escenario?::El caso es la familia de caminos completos hacia un valor observable; el escenario es UN camino concreto (el feliz, cada A1/A2).
 > - ¿Secuencia qué muestra?::Quién llama a quién en orden — 1 escenario por diagrama, `alt`/`loop` marcados.
 > - ¿Actividad cuándo?::Solo con ramas o paralelos reales; lo lineal va en lista.
 > - ¿Flecha de secuencia = ?::Una llamada a método — diseñas código al dibujar.
 > - ¿1 escenario por diagrama por qué?::Para que cada diagrama cuente una historia legible.
+> - ¿Flecha del include?::Del caso base al incluido — el base SIEMPRE la llama.
+> - ¿Flecha del extend?::Del extendido al base — el extra actúa solo si pasa algo.
+> - ¿Pre vs postcondición?::Pre: estado requerido antes. Post: estado garantizado después — estados, no acciones.
+> - ¿Los 6 campos de la descripción?::Actor, precondiciones, postcondición, escenario principal, flujos alternativos (con paso de origen).
+> - ¿El escenario qué es?::Una instancia CONCRETA del caso: un recorrido con datos reales, sin ramificaciones (cada acta es un escenario).
+> - ¿Generalización entre actores?::"Es-un" con triángulo hueco: el hijo hace TODO lo del padre y algo más — también aplica entre casos de uso.
+> - ¿Nombre válido de caso de uso (test)?::Verbo + objeto con valor del actor: `Registrar acta de escrutinio`; NO `Sumar votos en la tabla ACTAS` (interno).
 
 ## 🔗 Seguir estudiando
 

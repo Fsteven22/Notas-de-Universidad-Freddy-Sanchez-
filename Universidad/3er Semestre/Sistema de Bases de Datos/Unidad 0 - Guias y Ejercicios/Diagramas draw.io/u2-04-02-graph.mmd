@@ -1,0 +1,13 @@
+flowchart TB
+    subgraph SANAS["flechas sanas (nacen de la PK)"]
+        PK["(cod_estud, cod_curso)<br/>PK"] -->|"total"| NF["nota_final"]
+    end
+    subgraph SOSPECHOSAS["flechas sospechosas (abajo)"]
+        CE["cod_estud<br/>(parte PK)"] --> EN["nomb_estud<br/>parcial"]
+        CC["cod_curso<br/>(parte PK)"] --> CN["nomb_curso, creditos,<br/>cod_instructor<br/>parcial"]
+        CC --> CI["cod_instructor"]
+        CI --> NI["nomb_instructor<br/>transitiva"]
+    end
+    style EN fill:#fff4e1
+    style CN fill:#fff4e1
+    style NI fill:#ffe1e1

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, laboratorio, practicas]
 ---
 
 # 🧪 Práctica 6 — Control por Logica Combinatoria y Arduino
@@ -10,7 +11,7 @@ dg-publish: true
 >
 > Esta práctica integra **acondicionamiento de señales**, **compuertas lógicas** y **Arduino** para controlar actuadores. Comparas la implementación con hardware puro (compuertas 74LS/74HC) vs software embebido (Arduino), y analizas las ventajas de cada enfoque.
 >
-> ![[Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
+> ![[../../../Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
 
 ---
 
@@ -134,7 +135,6 @@ dg-publish: true
 > int verde = 3;
 > int sensor = 0;
 > int valorLectura = 0;
->
 > void setup() {
 >   pinMode(A0, INPUT);
 >   pinMode(rojo, OUTPUT);
@@ -142,7 +142,6 @@ dg-publish: true
 >   pinMode(verde, OUTPUT);
 >   Serial.begin(9600);
 > }
->
 > void loop() {
 >   valorLectura = analogRead(A0);
 >   Serial.println(valorLectura);

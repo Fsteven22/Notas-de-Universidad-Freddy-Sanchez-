@@ -20,7 +20,7 @@ tags: [FESD, unidad1, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-![[Diagramas/00_-_Índice_Unidad_1_01.svg]]
+![[../../Diagramas/00_-_Índice_Unidad_1_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Semiconductores y Bandas de Energía]] (Unidad 2)

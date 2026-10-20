@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, laboratorio, practicas]
 ---
 
 # 🧪 Práctica 4 — Funcionamiento de Fuentes Lineales
@@ -10,7 +11,7 @@ dg-publish: true
 >
 > Una fuente lineal convierte la corriente alterna de la red (110 VAC) en un voltaje DC estable. Tiene **4 etapas funcionales**: transformador reductor, rectificador de onda completa, filtro capacitivo y regulador LM7805. En esta práctica identificas cada etapa y mides las formas de onda en cada punto.
 >
-> ![[Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
+> ![[../../../Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
 
 ---
 

@@ -20,15 +20,7 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 >
 > **En esta nota:** (lista de lo que cubre, 1 línea por bloque.)
 
-```mermaid
-graph TB
-    A[Tema] --> B{¿Pregunta clave?}
-    B --> C[❌ Mal camino]
-    B --> D[✅ Buen camino]
-
-    style C fill:#ffe1e1
-    style D fill:#e1ffe1
-```
+![[<% tp.system.prompt("Nombre del SVG de intro (en Diagramas de la materia, sin .svg)") %>.svg]]
 
 ---
 
@@ -78,8 +70,6 @@ graph TB
 > | Paso | Acción |
 > |---|---|
 > | (paso) | (resultado) |
->
-> (Demostración completa paso a paso SOLO si el curso la exige; si no, resultado + 1 ejemplo.)
 
 ---
 
@@ -104,9 +94,11 @@ graph TB
 
 > [!tip] 📏 Regla de callouts: entre dos callouts hermanos deja línea REALMENTE vacía (`>` solo los fusiona y el segundo header se ve como texto literal). El `success` de solución va SIEMPRE anidado DENTRO del `example` del ejercicio (un `> > [!success]` suelto, fuera del example, se renderiza roto).
 >
-> [!tip] 📏 Regla de ejercicios legibles: el planteamiento con mucha información va como lista `-` (entidades, datos, DF, pedido) para no cansar la vista; la solución se complementa con su diagrama (`erDiagram`/`flowchart`) o función Python cuando el tema lo pida (clausura, normalización).
+> [!tip] 📏 Regla de ejercicios legibles: el planteamiento con mucha información va como lista `-` (entidades, datos, DF, pedido) para no cansar la vista; la solución se complementa con su diagrama ya compilado (`erDiagram`/`flowchart`) embebido como SVG o función Python cuando el tema lo pida (clausura, normalización).
 >
 > [!tip] 📏 Regla de enunciado original: todo ejercicio de examen/taller/lección trae su resumen en lista MÁS el enunciado original verbatim en un `> > [!quote]- 📄 Enunciado original` colapsado debajo del pedido (con fuente y nota de figuras si las hay).
+>
+> [!tip] 📏 Regla de diagramas: los diagramas ya NO van inline en Mermaid. Se escribe el código en un archivo `.mmd`/scratch, se compila con `mmdc` (`npx mmdc -i x.mmd -o x.svg`) y se embebe con `![[Diagramas/<Tema>_NN.svg]]` (los SVG viven en la carpeta `Diagramas` de cada materia, nombrados `<Nota_o_Tema>_NN`).
 >
 > [!tip] 📏 Regla de código dentro de callouts: un fence (```mermaid/```python) dentro de un callout NO lleva líneas vacías (cortan el callout en Live Preview) ni líneas solo con `>` (se ven literales dentro del código). Separa con comentarios reales (`# …`) o líneas continuas.
 >
@@ -172,13 +164,7 @@ graph TB
 
 ## 📊 Resumen Visual
 
-```mermaid
-mindmap
-  root((<% tp.file.title %>))
-    Idea 1
-    Idea 2
-    Idea 3
-```
+![[<% tp.system.prompt("Nombre del SVG de resumen (en Diagramas de la materia, sin .svg)") %>.svg]]
 
 > [!success] 🔍 Comparación Final
 >

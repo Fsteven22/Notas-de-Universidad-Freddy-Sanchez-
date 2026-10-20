@@ -1,8 +1,0 @@
-graph TD
-    A["¿Los datos tienen muchas repeticiones consecutivas?"] --> B{"¿Las corridas son largas (muchos elementos seguidos)?"}
-    B -->|Sí| C["RLE es una buena opción"]
-    B -->|No, las repeticiones son cortas o dispersas| D["RLE podría agrandar el archivo"]
-    D --> E["Considerar otro algoritmo (Keyword Encoding, Huffman)"]
-    style A fill:#e1f5ff
-    style C fill:#1e3a5f,color:#fff
-    style E fill:#f5e1ff

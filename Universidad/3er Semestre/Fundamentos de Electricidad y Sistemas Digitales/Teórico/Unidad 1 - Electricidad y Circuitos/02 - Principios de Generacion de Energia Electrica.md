@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [EYAG1037, unidad1, electricidad]
+---
+
 # 🔌 Principios de Generación de Energía Eléctrica
 
 ## 🎯 Introducción
@@ -11,7 +16,7 @@
 > - Generar electricidad es como llenar un tanque de agua: necesitas una fuente (río, lluvia, pozo) que convierta algo disponible en algo utilizable.
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
 
@@ -33,12 +38,12 @@
 > - $\Phi$ = Flujo magnético (Webers, Wb)
 > - $t$ = Tiempo (segundos, s)
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
 >
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
 
-![[ChatGPT Image 19 may 2026, 22_34_16.png]]
+![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
 
 ---
 ## 🔄 Ley de Lenz
@@ -53,7 +58,7 @@
 >
 > > "La naturaleza se resiste a los cambios en el flujo magnético."
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
 >
 > **Procedimiento para determinar la dirección de la corriente inducida:**
 >
@@ -79,7 +84,7 @@
 > > El flujo $\Phi$ **aumenta**. Por Lenz, la bobina genera un campo que **se opone** al imán → la cara de la bobina más cercana se comporta como polo **Norte** (repele al imán). La corriente inducida circula en sentido antihorario vista desde el imán.
 > > 
 
-![[ChatGPT Image 19 may 2026, 22_41_47.png]]
+![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
 
 ---
 ## ⚡ DC vs AC — Edison vs Tesla
@@ -105,11 +110,11 @@
 >
 > **Generador de Corriente Alterna (Alternador):**
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
 >
 > **Generador de Corriente Continua (Dínamo):**
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
 >
 > | Característica | Alternador (AC) | Dínamo (DC) |
 > |---|---|---|
@@ -118,14 +123,14 @@
 > | **Eficiencia** | ✅ Alta | Media |
 > | **Uso típico** | Plantas eléctricas, automóviles | Tracción eléctrica, carga de baterías |
 
-![[ChatGPT Image 19 may 2026, 22_46_01.png]]
+![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
 
 ---
 ## 🔁 Proceso General de Generación
 
 > [!info]- 🏭 De la Fuente a tu Enchufe
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
 
 ---
 ## 🌊 Fuentes de Generación Eléctrica
@@ -136,7 +141,7 @@
 >
 > Convierte la energía **potencial del agua** en energía eléctrica mediante turbinas.
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -145,7 +150,7 @@
 > | **Desventaja** | Impacto ambiental, dependiente de lluvia |
 > | **Ejemplo Ecuador** | Coca Codo Sinclair (~1 500 MW) |
 > 
-> ![[Pasted image 20260519224024.png]]
+> ![[../../Anexos/Pasted image 20260519224024.png]]
 
 ### 🔥 Termoeléctrica
 
@@ -153,7 +158,7 @@
 >
 > Quema combustibles fósiles (gas, petróleo, carbón) para producir vapor que mueve turbinas.
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -162,7 +167,7 @@
 > | **Desventaja** | Emisiones CO₂, uso de recursos no renovables |
 > | **Eficiencia típica** | 33–45 % |
 > 
-> ![[Pasted image 20260519224111.png]]
+> ![[../../Anexos/Pasted image 20260519224111.png]]
 
 ### ☀️ Solar Fotovoltaica
 
@@ -170,7 +175,7 @@
 >
 > Convierte directamente la luz solar en electricidad mediante el **efecto fotoeléctrico** en celdas semiconductoras de silicio.
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -179,7 +184,7 @@
 > | **Desventaja** | Intermitente (depende del sol), costo inicial alto |
 > | **Eficiencia típica** | 15–22 % (paneles comerciales) |
 > 
-> ![[Pasted image 20260519224443.png]]
+> ![[../../Anexos/Pasted image 20260519224443.png]]
 
 ### 💨 Eólica
 
@@ -194,7 +199,7 @@
 > | **Desventaja** | Intermitente, impacto visual y acústico |
 > | **Potencia** | $P = \frac{1}{2} \rho A v^3$ (depende del cubo de la velocidad del viento) |
 > 
-> ![[Pasted image 20260519224744.png]]
+> ![[../../Anexos/Pasted image 20260519224744.png]]
 
 ### ☢️ Nuclear
 
@@ -209,7 +214,7 @@
 > | **Desventaja** | Residuos radiactivos, alto costo, riesgos de seguridad |
 > | **Eficiencia típica** | ~33 % |
 > 
-> ![[Pasted image 20260519224818.png]]
+> ![[../../Anexos/Pasted image 20260519224818.png]]
 
 ---
 
@@ -230,7 +235,7 @@
 
 > [!tip]- 🔌 Etapas y Voltajes Típicos
 >
-> ![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
+> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
 >
 > | Etapa | Voltaje típico | Función |
 > |---|---|---|
@@ -243,7 +248,7 @@
 ---
   
 ## 📊 Resumen Visual 
-![[Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
+![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 
 ## 📚 Referencias
 

@@ -1,0 +1,7 @@
+flowchart LR
+    A["Actor"] --> B("Inscribirse a curso")
+    B ==>|"include: siempre"| V("Validar identidad")
+    D("Aplicar descuento") -.->|"extend: opcional"| B
+    style B fill:#e1ffe1
+    style V fill:#e8f4fd
+    style D fill:#fff4e1

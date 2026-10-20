@@ -43,6 +43,10 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | **Medio** | Atributos (`-` privado, `+` público, `#` protegido) | `- carnet` |
 > | **Abajo** | Operaciones | `+ inscribirse` |
 >
+> **Notación completa para el papel:** atributos `visibilidad nombre : Tipo` (ej. `- codigo : String`); operaciones `nombre(param : Tipo) : retorno` (ej. `+ cancelar() : boolean`). El esquema sin tipos sirve para pensar; el entregable lleva tipos.
+>
+> **Clase abstracta:** su nombre va en *cursiva* (en papel, o etiqueta `{abstract}` si la cursiva no sale legible); **no se instancia** — solo existe como pariente que reparte atributos y operaciones a sus herederos, y sus operaciones pueden figurar vacías `{abstract}` de igual forma (Stevens ch. 5).
+>
 > | Relación | Símbolo | Significado | Ejemplo |
 > |---|---|---|---|
 > | **Asociación** | línea + multiplicidad | Usa / conoce a | Estudiante `*` — `*` Curso |
@@ -52,7 +56,7 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | **Dependencia** | flecha punteada | Usa temporalmente | Reporte - -▷ Datos |
 > | **Interfaz** | círculo/paleta | Contrato realizable | `<<interface>> Pagable` |
 >
-> **Multiplicidades que sí usarás:** `1`, `0..1`, `1..*`, `*`. Ante la duda agregación vs composición: "¿la parte sobrevive sin el todo?".
+> **Multiplicidades que sí usarás:** `1`, `0..1`, `1..*`, `*`. Ante la duda agregación vs composición: "¿la parte sobrevive sin el todo?". Si la relación necesita atributos o ciclo de vida propio, nace una **clase-entre** colgando de la línea (ej. `Matricula` entre Estudiante y Curso).
 
 ### 🔍 Revisión Rápida de tu Diagrama
 
@@ -199,6 +203,17 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > > - **14.** Clase si tiene identidad y ciclo propio (carnet, historial); asociación con atributos si solo existe entre los dos extremos.
 > > - **15.** Autocorrección con el checklist de 4 preguntas de esta nota.
 
+> [!example] 📋 Extra Control03 (formato papel)
+>
+> **16.** Dibuja la caja completa de `Biblioteca` con 3 atributos tipados (uno `#`) y 2 operaciones con tipo de retorno.
+>
+> **17.** Modela Biblioteca–Copia–Socio con una composición y una clase-entre `Prestamo`, multiplicidades en ambos extremos.
+>
+> > [!success]- ✅ Respuestas — Extra
+> >
+> > - **16.** Caja de 3 compartimentos; cada atributo `visibilidad nombre : Tipo` (ej. `- ciudad : String`, `# horario : String`); cada operación con `(...) : retorno`.
+> > - **17.** Biblioteca ◆ `1` ── `1..*` Copia (sin biblioteca no hay copia); Copia `1` ── `0..*` Socio con clase-entre `Prestamo` colgando de la línea (fecha, estado).
+
 ---
 
 ## 📋 Resumen Ejecutivo
@@ -275,6 +290,10 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > - ¿Cómo validas un diagrama?::Narrando escenarios ("Ana se inscribe").
 > - ¿Rombo vs flechas?::Rombo en ER; en clases, flechas tipadas.
 > - ¿Caja UML qué es?::Una clase (nombre + atributos + operaciones).
+> - ¿Atributo completo?::`visibilidad nombre : Tipo`; la operación añade `(params) : retorno`.
+> - ¿Cuándo clase-entre?::Cuando la relación tiene atributos o ciclo de vida propio (ej. `Prestamo` entre Copia y Socio).
+> - ¿Cómo se marca una clase abstracta?::Nombre en cursiva (o etiqueta `{abstract}` en papel); no se instancia, solo hereda.
+> - ¿Qué significa visibilidad `#`?::Protegida: visible para la clase y sus herederos.
 
 ## 🔗 Seguir estudiando
 

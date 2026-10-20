@@ -1,9 +1,0 @@
-flowchart TD
-    A{¿Necesitas el índice?} -->|Sí| B[Usar for tradicional]
-    A -->|No| C{¿Vas a modificar<br/>elementos?}
-    C -->|Sí| B
-    C -->|No| D[Usar for-each]
-    B --> E[for i = 0; i < arr.length]
-    D --> F[for tipo elem : arr]
-    style D fill:#e1ffe1
-    style B fill:#e1f5ff

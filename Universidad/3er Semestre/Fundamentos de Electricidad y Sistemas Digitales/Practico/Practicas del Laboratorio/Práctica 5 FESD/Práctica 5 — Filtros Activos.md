@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, laboratorio, practicas]
 ---
 
 # 🧪 Práctica 5 — Funcionamiento de Filtros Activos
@@ -10,7 +11,7 @@ dg-publish: true
 >
 > Los **filtros activos** usan OPAMPs para selectar frecuencias deseadas y atenuar ruido. En esta práctica construyes un filtro activo y un acondicionador de señal, midiendo la respuesta en frecuencia y la ganancia en cada punto.
 >
-> ![[Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
+> ![[../../../Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
 
 ---
 

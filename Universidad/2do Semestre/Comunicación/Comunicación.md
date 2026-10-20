@@ -14,32 +14,39 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ## Unidad I — Comunicación efectiva *(4h)* → [[00 - Índice Unidad 1|📂 Índice]]
 
-- [[01 - Escucha activa, empatía y barreras]]
-- [[02 - Comunicación grupal y toma de decisiones]]
-- [[03 - Comunicación estratégica, IIR y pitch personal]]
+> [!note] Notas de la unidad
+> - [[01 - Escucha activa, empatía y barreras]]
+> - [[02 - Comunicación grupal y toma de decisiones]]
+> - [[03 - Comunicación estratégica, IIR y pitch personal]]
 
 ---
 
 ## Unidad II — Pensamiento complejo y crítico *(4h)* → [[00 - Índice Unidad 2|📂 Índice]]
 
-- [[01 - Pensamiento complejo vs pensamiento lineal]]
-- [[02 - Pensamiento crítico y perfil prosumidor]]
+> [!note] Notas de la unidad
+> - [[01 - Pensamiento complejo vs pensamiento lineal]]
+> - [[02 - Pensamiento crítico y perfil prosumidor]]
 
 ---
 
 ## Unidad III — Redacción *(6h)* → [[00 - Índice Unidad 3|📂 Índice]]
 
-- [[01 - Texto expositivo, claridad y APA]]
-- [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
-- [[03 - IA ética y prompts para redacción]]
+> [!note] Notas de la unidad
+> - [[01 - Texto expositivo, claridad y APA]]
+> - [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
+> - [[03 - IA ética y prompts para redacción]]
+> - [[04 - Precisión y claridad en la redacción]]
+> - [[05 - Concordancia y cohesión en la redacción]]
+> - [[06 - Normas APA, citación y referencias]]
 
 ---
 
 ## Unidad IV — Comportamiento comunicacional *(14h)* → [[00 - Índice Unidad 4|📂 Índice]]
 
-- [[01 - Argumentación efectiva, convencer vs persuadir]]
-- [[02 - Storytelling para comunicar ciencia]]
-- [[03 - Voz, cuerpo, formatos y práctica TED]]
+> [!note] Notas de la unidad
+> - [[01 - Argumentación efectiva, convencer vs persuadir]]
+> - [[02 - Storytelling para comunicar ciencia]]
+> - [[03 - Voz, cuerpo, formatos y práctica TED]]
 
 ---
 
@@ -49,6 +56,9 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 - [[Unidad 0 - Guias y Ejercicios/Políticas de la asignatura PAO 2_2026_PRESENCIAL|Políticas PAO 2-2026.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Planificación Académica actualizada_PAO 2_2026 - Estudiante|Planificación PAO 2-2026.pdf]]
 - [[Universidad/2do Semestre/Comunicación/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+
+> [!tip] 🆕 Talleres convertidos a nota
+> Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[00 - Leeme Unidad 0|Leeme de Unidad 0]].
 
 ---
 

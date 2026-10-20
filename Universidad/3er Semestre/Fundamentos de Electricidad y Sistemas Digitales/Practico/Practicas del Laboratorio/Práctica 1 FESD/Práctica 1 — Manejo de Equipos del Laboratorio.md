@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [EYAG1037, laboratorio, practicas]
 ---
 
 # 🧪 Práctica 1 — Manejo de Equipos del Laboratorio
@@ -63,7 +64,7 @@ dg-publish: true
 > 
 > ---
 > 
-> ![[Pasted image 20260525223659.png]]
+> ![[../../../Anexos/Pasted image 20260525223659.png]]
 > 
 > **Paso 3 — Medir voltaje DC con el multímetro**
 > 
@@ -82,7 +83,7 @@ dg-publish: true
 > 
 > ---
 > 
-> ![[Pasted image 20260525223728.png]]
+> ![[../../../Anexos/Pasted image 20260525223728.png]]
 > 
 > **Paso 4 — Medir corriente DC**
 > 
@@ -100,7 +101,7 @@ dg-publish: true
 > 
 > ---
 > 
-> ![[Pasted image 20260525223751.png]]
+> ![[../../../Anexos/Pasted image 20260525223751.png]]
 > 
 > **Paso 1 — Conectar el generador a la resistencia**
 > 

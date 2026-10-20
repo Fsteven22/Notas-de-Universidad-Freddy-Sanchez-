@@ -19,6 +19,7 @@ tags: [CCPG1042, unidad2, indice, diseno-software]
 > - Mapa de contenido: [[Diseño de Software]]
 > - Anterior: [[00 - Índice Unidad 1]]
 > - Siguiente: [[00 - Índice Unidad 3]]
+> - Material de clase (SIEL): [[Clase 2026-10-19 - SIEL]]
 
 ---
 **Tags:** #CCPG1042 #unidad2 #indice #diseno-software

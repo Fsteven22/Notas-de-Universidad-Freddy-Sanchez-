@@ -1,7 +1,0 @@
-flowchart TD
-   A["¿Pregunta de vuelta?"] --> B{"¿Puede manejar varias?"}
-   B -->|"Si"| C["Dibuja 1:M<br/>FK en DIVISION"]
-   B -->|"No"| D["Dibuja 1:1<br/>caso A, B o C"]
-   C --> E["Verifica: ¿el lado N<br/>carga al ultimo?"]
-   D --> E
-   style E fill:#e1ffe1

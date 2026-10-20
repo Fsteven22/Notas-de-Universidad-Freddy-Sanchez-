@@ -24,6 +24,8 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 - [[01 - Conversión MC a ML por cardinalidad]]
 - [[02 - Primera forma normal y diccionario de datos]]
+- [[03 - Segunda y tercera forma normal]]
+- [[04 - Normalización paso a paso]]
 
 ---
 
@@ -35,6 +37,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
+- 🔗 [[Guía de Problemas 1 - MC, ML y Normalización]] (Control 1: modelo conceptual, lógico y normalización)
 - `BD00 Políticas.pdf` (docente, horario, fechas, proyecto)
 - `BD01 Introducción_datamodel.pdf` + `BD01 Introducción-1.pdf` (intro y archivos vs BD)
 - `unidad1.3-1.5.pdf` (modelo conceptual, relacional, ERM)

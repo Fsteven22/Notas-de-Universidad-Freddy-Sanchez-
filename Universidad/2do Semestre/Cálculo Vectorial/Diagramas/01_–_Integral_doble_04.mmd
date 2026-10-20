@@ -1,9 +1,0 @@
-flowchart TD
-    A[Región R] --> B{¿Líneas verticales<br/>entran y salen<br/>una vez?}
-    B -->|Sí| C[Región Tipo I]
-    B -->|No| D[Tipo II o dividir]
-    C --> E["Identificar a y b<br/>límites de x"]
-    E --> F["Identificar g₁ x y g₂ x<br/>límites de y"]
-    F --> G["∫ₐᵇ ∫_{g₁ x}^{g₂ x} f dy dx"]
-    style C fill:#e1ffe1
-    style G fill:#e1f5ff

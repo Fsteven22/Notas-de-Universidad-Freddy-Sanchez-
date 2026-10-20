@@ -1,0 +1,16 @@
+flowchart TD
+    A{"¿Tabla en 1FN?"} -->|"No"| F["corrige primero:<br/>un valor por celda,<br/>sin grupos repetitivos"]
+    A -->|"Sí"| B{"¿PK compuesta?"}
+    B -->|"No"| C["2FN automática:<br/>busca directo las transitivas"]
+    B -->|"Sí"| D{"¿flecha que nace de<br/>solo parte de la PK?"}
+    D -->|"Sí"| E["a 2FN: por cada parcial, tabla nueva<br/>con él como PK y sus dependientes.<br/>El determinante queda como FK"]
+    D -->|"No"| C
+    E --> T{"¿no-primo → no-primo?"}
+    C --> T
+    T -->|"Sí"| U["a 3FN: tabla nueva con el determinante<br/>no-clave como PK, sus dependientes<br/>y el FK en la original"]
+    T -->|"No"| V{"¿todo determinante<br/>es clave candidata?"}
+    U --> V
+    V -->|"No"| X["a BCNF: tabla por cada<br/>determinante + su FK"]
+    X --> V
+    V -->|"Sí"| W["✅ listo y en BCNF"]
+    style W fill:#e1ffe1

@@ -1,6 +1,0 @@
-flowchart TD
-   A["Necesito usar<br/>un subsistema"] --> B{"¿Cuántos pasos<br/>le toma al cliente?"}
-   B -->|"Uno ideal"| C["Fachada:<br/>un método orquesta"]
-   B -->|"Ya es uno"| D{"¿La lógica cabe<br/>en una clase?"}
-   D -->|"No"| E["Delegación/<br/>composición"]
-   D -->|"Sí"| F["Directo,<br/>sin ceremonia"]

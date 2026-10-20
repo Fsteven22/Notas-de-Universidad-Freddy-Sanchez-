@@ -1,8 +1,0 @@
-flowchart TD
-   A["Necesidad"] --> B{"¿Crear,<br/>compatibilizar<br/>o simplificar?"}
-   B -->|"Crear con lógica"| C["Factory:<br/>un solo lugar crea"]
-   B -->|"Compatibilizar"| D["Adapter:<br/>traduce interfaces"]
-   B -->|"Simplificar uso"| E["Facade:<br/>cara simple"]
-   B -->|"Una sola instancia"| F{"¿Sin estado<br/>mutable?"}
-   F -->|"Sí"| G["Singleton<br/>aceptable"]
-   F -->|"No"| H["Inyección<br/>en su lugar"]

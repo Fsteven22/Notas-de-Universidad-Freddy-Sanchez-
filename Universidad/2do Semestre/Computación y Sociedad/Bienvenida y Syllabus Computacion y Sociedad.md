@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1004, computacion-sociedad, syllabus]
 ---
 
 # 🟦 Computación y Sociedad — Bienvenida y Syllabus
@@ -75,6 +76,8 @@ dg-publish: true
 > | **6** | Herramientas analíticas y de comunicación profesional |
 > | **7** | Privacidad y propiedad intelectual |
 > | **8** | Ética profesional |
+>
+> La docente redistribuyó el temario en **6 unidades de trabajo** (las que usa el disco y el MOC): la Unidad 2 del PDF se reparte entre Historia de la Computación e Historia de Internet; la Unidad 5 (Profesional) y la 6 (Herramientas) se cubren transversalmente en las demás. Ver [[Computación y Sociedad]].
 
 ---
 
@@ -98,28 +101,63 @@ dg-publish: true
 >
 > ```
 > 📁 Computación y Sociedad/
-> ├── 📄 00 - Bienvenida y Syllabus.md          ← estás aquí
+> ├── 📄 Bienvenida y Syllabus Computacion y Sociedad.md   ← estás aquí
+> ├── 📄 Computación y Sociedad.md                          (MOC)
 > ├── 📎 SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf
+> ├── 📁 Diagramas/                                         (96 SVG)
 > │
-> ├── 📁 Unidad 1 - Historia de la Computación/
+> ├── 📁 Unidad 1 - Historia de la computación/
+> │   ├── 📄 01 - Orígenes e Instrumentos de Cálculo.md
+> │   ├── 📄 02 - Computadoras Modernas Tempranas.md
+> │   ├── 📄 03 - Historia del Software (5 Generaciones).md
+> │   ├── 📄 04 - Modelos de Construcción de Software.md
+> │   ├── 📄 05 - Redes e Internet.md
+> │   └── 📄 06 - Pioneros de la Computación.md
 > │
-> ├── 📁 Unidad 2 - Funcionalidad y Dispositivos/
+> ├── 📁 Unidad 2 - Implicaciones Sociales/
+> │   ├── 📄 01 - Brecha Digital.md
+> │   ├── 📄 02 - Accesibilidad y WCAG.md
+> │   ├── 📄 03 - Implicaciones Sociales de la Computación en un Mundo Conectado.md
+> │   ├── 📄 04 - Impacto de los Medios Sociales en el Individualismo, Colectivismo y Cultura.md
+> │   ├── 📄 05 - Sesgo y Gobernanza Algorítmica.md
+> │   ├── 📄 06 - Impacto Ambiental, Desechos Electrónicos y Desarrollo Sostenible.md
+> │   ├── 📄 07 - ODS y Tecnologia.md
+> │   └── 📄 08 - Sesgos y Alucinaciones en la Inteligencia Artificial.md
 > │
-> ├── 📁 Unidad 3 - Implicaciones Sociales/
-> │   ├── 📄 01 - Sesgos y Alucinaciones.md
-> │   ├── 📄 02 - ODS y Tecnología.md
-> │   └── 📄 03 - Belbin.md
+> ├── 📁 Unidad 3 - Representación de la información/
+> │   ├── 📁 I - Sistemas de Numeración/
+> │   │   ├── 📄 01 - Análogo vs Digital.md
+> │   │   ├── 📄 02 - Sistemas de Numeracion - Introduccion.md
+> │   │   ├── 📄 03 - Sistema Binario.md
+> │   │   ├── 📄 04 - Conversion Decimal-Binario.md
+> │   │   ├── 📄 05 - Sistema Octal.md
+> │   │   ├── 📄 06 - Sistema Hexadecimal.md
+> │   │   ├── 📄 07 - Números Negativos.md
+> │   │   └── 📄 08 - IEEE 754.md
+> │   └── 📁 II - Compresión de Datos/
+> │       ├── 📄 01 - Introducción a la Compresión.md
+> │       ├── 📄 02 - Keyword Encoding y ASCII.md
+> │       ├── 📄 03 - Run Length Encoding.md
+> │       └── 📄 04 - Códigos Prefijos y Huffman Encoding.md
 > │
-> ├── 📁 Unidad 4 - Representación de la Información/
+> ├── 📁 Unidad 4 - Historia de Internet/
+> │   ├── 📄 01 - Historia de Internet y Cómo Funciona.md
+> │   ├── 📄 02 - Evolución de la Web.md
+> │   ├── 📄 03 - Evolución del HTML.md
+> │   ├── 📄 04 - Crímenes Informáticos y Malware.md
+> │   ├── 📄 05 - Ingeniería Social y Fraudes en Línea.md
+> │   ├── 📄 06 - Sabotaje y Ataques de Red.md
+> │   └── 📄 07 - Privacidad y Protección de Datos.md
 > │
-> ├── 📁 Unidad 5 - Profesional de la Computación/
+> ├── 📁 Unidad 5 - Privacidad y Propiedad Intelectual/
+> │   ├── 📄 01 - Fundamentos de Propiedad Intelectual.md
+> │   ├── 📄 02 - Tipos de Propiedad Intelectual - Patentes, Trademarks y Trade Secrets.md
+> │   └── 📄 03 - Infracciones y Protección Digital.md
 > │
-> ├── 📁 Unidad 6 - Herramientas Analíticas/
-> │   └── 📄 01 - IEEE Referencias.md
-> │
-> ├── 📁 Unidad 7 - Privacidad y Propiedad Intelectual/
-> │
-> └── 📁 Unidad 8 - Ética Profesional/
+> └── 📁 Unidad 6 - Etica Profesional/
+>     ├── 📄 01 - Fundamentos de Ética y Moral.md
+>     ├── 📄 02 - Falacias de la Ética Informática.md
+>     └── 📄 03 - Códigos de Ética y Casos Reales.md
 > ```
 
 ---

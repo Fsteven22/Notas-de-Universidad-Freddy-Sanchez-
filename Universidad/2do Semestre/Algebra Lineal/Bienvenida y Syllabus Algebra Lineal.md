@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MATG1049, algebra-lineal, syllabus]
 ---
 
 # 🟦 Álgebra Lineal — Bienvenida y Syllabus
@@ -65,7 +66,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
+> ![[../../Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|
@@ -75,6 +76,8 @@ dg-publish: true
 > | **4** | Espacios con producto interno | 6h |
 > | **5** | Valores y vectores propios | 9h |
 > | — | Actividades de evaluación | 6h |
+>
+> En el disco las unidades 3-5 del syllabus viven como subcarpetas IV, V y VI de `Unidad 2 - Espacios Vectoriales`; el MOC las presenta como unidades separadas. Ver [[Álgebra Lineal]].
 
 ---
 
@@ -104,73 +107,70 @@ dg-publish: true
 >
 > ```
 > 📁 Álgebra Lineal/
-> ├── 📄 00 - Bienvenida y Syllabus.md
+> ├── 📄 Bienvenida y Syllabus Algebra Lineal.md   ← estás aquí
+> ├── 📄 Álgebra Lineal.md                          (MOC)
 > ├── 📎 SPA-SyllabusEUR_ACE-MATG1049.pdf
 > │
-> ├── 📁 Unidad 1 - Sistemas Lineales y Matrices/
-> │   ├── 📁 I - Sistemas de ecuaciones y representación/
+> ├── 📁 Unidad 1 – Sistemas Lineales y Matrices/
+> │   ├── 📁 I – Sistemas de ecuaciones y representación/
 > │   │   └── 📄 01 - Sistema de ecuaciones lineales en R2 y R3.md
-> │   ├── 📁 II - Métodos de resolución/
+> │   ├── 📁 II – Métodos de resolución/
 > │   │   ├── 📄 01 - Algoritmo de Gauss.md
 > │   │   └── 📄 02 - Formas Escalonadas y Matriz Escalonada.md
-> │   ├── 📁 III - Rango y teoremas fundamentales/
+> │   ├── 📁 III – Rango y teoremas fundamentales/
 > │   │   ├── 📄 01 - Rango de una Matriz.md
 > │   │   ├── 📄 02 - Teorema de Rouché-Frobenius.md
 > │   │   └── 📄 03 - Matriz asociada a un S.E.L. y sistema aumentado.md
-> │   └── 📁 IV - Estructura de soluciones/
+> │   └── 📁 IV – Estructura de soluciones/
 > │       └── 📄 01 - Dimensión y descripción del conjunto solución.md
 > │
-> ├── 📁 Unidad 2 - Espacios Vectoriales y Transformaciones Lineales/
-> │   ├── 📁 I - Fundamentos de Espacios Vectoriales/
-> │   │   ├── 📄 01 - Vectores en espacios vectoriales (definición y ejemplos).md
-> │   │   ├── 📄 02 - Espacio Vectorial.md
-> │   │   ├── 📄 03 - Operaciones en un espacio vectorial (conmutatividad, etc.).md
-> │   │   ├── 📄 04 - Lema de Cancelación.md
-> │   │   ├── 📄 05 - Teoremas fundamentales del espacio vectorial.md
-> │   │   └── 📄 06 - Operaciones No Convencionales.md
-> │   ├── 📁 II - Subespacios y Generación/
-> │   │   ├── 📄 01 - Subespacios Vectoriales.md
-> │   │   ├── 📄 02 - Combinación lineal.md
-> │   │   ├── 📄 03 - Espacio generado por un conjunto de vectores.md
-> │   │   ├── 📄 04 - Suma de subespacios.md
-> │   │   ├── 📄 05 - Espacio columna.md
-> │   │   └── 📄 06 - Espacio fila.md
-> │   ├── 📁 III - Dependencia, Base y Coordenadas/
-> │   │   ├── 📄 01 - Dependencia e independencia lineal.md
-> │   │   ├── 📄 02 - Base y dimensión.md
-> │   │   ├── 📄 03 - Coordenadas en un espacio vectorial.md
-> │   │   └── 📄 04 - Matriz de cambio de base.md
-> │   └── 📁 IV - Transformaciones Lineales/
-> │       ├── 📄 01 - Transformaciones lineales.md
-> │       ├── 📄 02 - Núcleo e imagen de una transformación lineal.md
-> │       ├── 📄 03 - Inyectividad y Sobreyectividad.md
-> │       ├── 📄 04 - Biyectividad e isomorfismo.md
-> │       ├── 📄 05 - Espacios isomorfos.md
-> │       ├── 📄 06 - Inversa de una transformación lineal.md
-> │       ├── 📄 07 - Matriz de una Transformación Lineal.md
-> │       └── 📄 08 - Teorema de la dimensión (Rango-Nulidad).md
-> │
-> ├── 📁 Unidad 3 - Espacios con Producto Interno/
-> │   └── 📁 V - Espacios con Producto Interno/
-> │       ├── 📄 01 - Producto interno.md
-> │       ├── 📄 02 - Norma inducida y distancia.md
-> │       ├── 📄 03 - Ortogonalidad y conjuntos ortonormales.md
-> │       ├── 📄 04 - Proyección ortogonal.md
-> │       ├── 📄 05 - Proceso de Gram-Schmidt.md
-> │       ├── 📄 06 - Complemento ortogonal.md
-> │       ├── 📄 07 - Teorema de la Descomposición Ortogonal.md
-> │       ├── 📄 08 - Desigualdad de Cauchy-Schwarz.md
-> │       └── 📄 09 - Proyección ortogonal sobre un subespacio.md
-> │
-> └── 📁 Unidad 4 - Valores y Vectores Propios/
->     └── 📁 VI - Valores y Vectores Propios/
+> └── 📁 Unidad 2 - Espacios Vectoriales/
+>     ├── 📁 I - Fundamentos/
+>     │   ├── 📄 01 - Vectores en espacios vectoriales (definición y propiedades).md
+>     │   ├── 📄 02 - Espacio Vectorial.md
+>     │   ├── 📄 03 - Operaciones en un espacio vectorial (conmutativa, asociativa, neutro, inverso, etc.).md
+>     │   ├── 📄 04 - Lema de Cancelación.md
+>     │   ├── 📄 05 - Teoremas fundamentales del espacio vectorial (unicidad del neutro, del inverso, etc.).md
+>     │   └── 📄 06 - Operaciones No Convencionales.md
+>     ├── 📁 II – Subespacios y Generación/
+>     │   ├── 📄 01 - Subespacios Vectoriales.md
+>     │   ├── 📄 02 – Combinación lineal.md
+>     │   ├── 📄 03 – Espacio generado por un conjunto de vectores.md
+>     │   ├── 📄 04 – Suma de subespacios.md
+>     │   ├── 📄 05 – Espacio columna.md
+>     │   └── 📄 06 – Espacio fila.md
+>     ├── 📁 III – Dependencia, Base y Coordenadas/
+>     │   ├── 📄 01 – Dependencia e independencia lineal.md
+>     │   ├── 📄 02 – Base y dimensión.md
+>     │   ├── 📄 03 – Coordenadas en un espacio vectorial.md
+>     │   └── 📄 04 – Matriz de cambio de base.md
+>     ├── 📁 IV – Transformaciones Lineales/         (= Unidad 3 del syllabus)
+>     │   ├── 📄 01 – Transformaciones lineales.md
+>     │   ├── 📄 02 – Núcleo e imagen de una transformación lineal.md
+>     │   ├── 📄 03 - Inyectividad y Sobreyectividad.md
+>     │   ├── 📄 04 – Biyectividad e isomorfismo.md
+>     │   ├── 📄 05 – Espacios isomorfos.md
+>     │   ├── 📄 06 – Inversa de una transformación lineal.md
+>     │   ├── 📄 07 - Matriz de una Transformación Lineal.md
+>     │   └── 📄 08 – Teorema de la dimensión (Rango–Nulidad).md
+>     ├── 📁 V – Espacios con Producto Interno/      (= Unidad 4 del syllabus)
+>     │   ├── 📄 01 – Producto interno.md
+>     │   ├── 📄 02 – Norma inducida y distancia.md
+>     │   ├── 📄 03 – Ortogonalidad y conjuntos ortonormales.md
+>     │   ├── 📄 04 – Proyección ortogonal.md
+>     │   ├── 📄 05 – Proceso de Gram-Schmidt.md
+>     │   ├── 📄 06 – Complemento ortogonal.md
+>     │   ├── 📄 07 – Teorema de la Descomposición Ortogonal.md
+>     │   ├── 📄 08 - Desigualdad de Cauchy–Schwarz.md
+>     │   └── 📄 09 – Proyección ortogonal sobre un subespacio (forma matricial).md
+>     └── 📁 VI - Valores y Vectores propios/        (= Unidad 5 del syllabus)
 >         ├── 📄 01 - Valores y Vectores propios.md
 >         ├── 📄 02 - Polinomio Característico.md
->         ├── 📄 03 - Espacio propio y multiplicidades (MA y MG).md
->         ├── 📄 05 - Matriz semejante.md
->         ├── 📄 06 - Matriz diagonalizable.md
->         ├── 📄 07 - Matriz ortogonal.md
->         └── 📄 08 - Teorema espectral.md
+>         ├── 📄 03 – Espacio propio y multiplicidades (MA y MG).md
+>         ├── 📄 05 – Matriz semejante.md
+>         ├── 📄 06 – Matriz diagonalizable.md
+>         ├── 📄 07 – Matriz ortogonal.md
+>         └── 📄 08 – Teorema espectral.md
 > ```
 
 ---

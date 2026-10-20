@@ -1,7 +1,0 @@
-flowchart TD
-    A[Un servicio dejó de<br/>responder o va muy lento] --> B{¿El tráfico anómalo<br/>viene de un solo origen<br/>identificable?}
-    B -->|Sí| C[DoS]
-    B -->|No, viene de<br/>miles de IPs distintas| D[DDoS]
-    D --> E{¿Se sospecha que esas IPs<br/>son equipos comprometidos<br/>controlados remotamente?}
-    E -->|Sí| F[Ataque vía Botnet]
-    G[Se detectó tráfico<br/>interceptado/leído<br/>en la red] --> H[Sniffer]

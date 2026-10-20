@@ -1,0 +1,6 @@
+flowchart LR
+    O["EMPLOYEE<br/>EMP_NUM PK, EMP_NAME,<br/>JOB_CLASS, CHG_HOUR"] -->|"JOB_CLASS → CHG_HOUR<br/>es transitiva"| S{"¿cómo parto?"}
+    S --> R1["JOB (nueva)<br/>JOB_CLASS PK, CHG_HOUR"]
+    S --> R2["EMPLOYEE (original)<br/>EMP_NUM PK, EMP_NAME,<br/>JOB_CLASS FK"]
+    R2 -.->|"el determinante se copia<br/>como FK: mudar nunca"| R1
+    style R1 fill:#e1ffe1

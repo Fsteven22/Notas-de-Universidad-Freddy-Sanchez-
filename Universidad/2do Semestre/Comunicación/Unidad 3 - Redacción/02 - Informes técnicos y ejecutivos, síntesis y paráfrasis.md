@@ -172,6 +172,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 > - Syllabus: [[Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Bases específicas: [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/01 - El resumen académico|MOOC U4 — Resumen]], [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/03 - La síntesis de múltiples fuentes|Síntesis]], [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/02 - Técnicas de parafraseo y citación|Parafraseo]]
+> - Refuerzo de talleres: [[04 - Precisión y claridad en la redacción|Precisión]], [[05 - Concordancia y cohesión en la redacción|Concordancia]], [[06 - Normas APA, citación y referencias|APA completo]]
 
 ## 📚 Referencias
 

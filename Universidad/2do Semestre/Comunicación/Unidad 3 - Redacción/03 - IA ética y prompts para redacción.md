@@ -155,6 +155,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > - Anterior: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Syllabus: [[Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - APA correcto al citar: [[06 - Normas APA, citación y referencias]]
 
 ## 📚 Referencias
 

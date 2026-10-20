@@ -34,6 +34,10 @@ tags: [CCPG1042, unidad0, recursos]
 
 - `01(Robert C. Martin Series) Robert C. Martin - Clean Architecture_ A Craftsman's Guide to Software Structure and De.pdf` — lectura asignada Control 01: caps. 3, 4 y 6. Integrado en [[Unidad 1 - Introducción al diseño/03 - Paradigmas de programación y diseño|U1-03]] y [[Unidad 1 - Introducción al diseño/Control 01 - Repaso Paradigmas|repaso].
 
+## 🍰 Material de clase (pizarra)
+
+- [[Clase 2026-10-19 - SIEL]] — casos de uso con el ejemplo SIEL; contenido ya integrado en [[Unidad 2 - Diseño orientado a objetos/04 - UML casos de uso, secuencia y actividad|U2-04]].
+
 ---
 
 - [[Enlaces del Aula Virtual]]
