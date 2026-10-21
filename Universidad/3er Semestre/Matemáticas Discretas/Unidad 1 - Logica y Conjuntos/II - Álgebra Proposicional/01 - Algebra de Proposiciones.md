@@ -1,6 +1,5 @@
- ---
+---
 dg-publish: true
-
 ---
 
 # 🧮 Álgebra de Proposiciones

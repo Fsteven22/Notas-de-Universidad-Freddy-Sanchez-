@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 ---
 
 # 📝 Guía y Guion: Flooding in Guayaquil (B1+ Level)
