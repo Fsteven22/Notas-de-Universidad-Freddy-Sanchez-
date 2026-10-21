@@ -219,9 +219,10 @@ def main() -> int:
                     low = tgt.lower()
                     if low.endswith(SKIP_WIKILINK_EXTS):
                         continue
-                    if "." in basename_of(tgt):
+                    base = basename_of(tgt)
+                    if "." in base:
                         # file with extension: check against ALL vault files
-                        if basename_of(tgt).lower() not in all_names:
+                        if base.lower() not in all_names:
                             c1_total += 1
                             if len(c1_det) < DETAIL_CAP:
                                 c1_det.append(f"{rel}:{idx}: [[{inner}]] -> ?{base}?")

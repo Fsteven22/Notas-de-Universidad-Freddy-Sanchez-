@@ -22,7 +22,26 @@ py limpiar_espacios.py "ruta/nota.md"        # dry-run (solo reporta)
 py limpiar_espacios.py "ruta/nota.md" --fix # aplica
 ```
 
-Colapsa blancos múltiples y separadores `>` dobles, quita trailing whitespace, **preserva CRLF/LF** y nunca toca blanks entre callouts hermanos ni dentro de fences.
+Colapsa blancos múltiples y separadores `>` dobles, quita trailing whitespace, **preserva CRLF/LF** y nunca toca blanks entre callouts hermanos ni dentro de fences. Guard nuevo: si los fences están desbalanceados o con quoting disparejo, fuerza dry-run y no aplica (arregla con `verificar_nota.py` primero).
+
+## `kit_recuperacion.py` — kit de recuperación FESD (dry-run por defecto)
+
+Creado tras el incidente del 19/10/2026 (un script de tags con doble `tags:` sobrescribió 24 notas de FESD con stubs y con el contenido de otra nota). Todos los comandos que modifican archivos (`restore`, `repath`, `pipes`) son dry-run por defecto y solo escriben con `--aplicar`; `daniadas`, `sweep` y `compa` son siempre de solo lectura.
+
+```bash
+py kit_recuperacion.py daniadas 8a89bcf 6424ecf          # lista .md dañados entre refs
+py kit_recuperacion.py restore 8a89bcf 6424ecf           # dry-run; --aplicar escribe
+py kit_recuperacion.py repath --aplicar                  # arregla embeds '../Diagramas'/'../Anexos'
+py kit_recuperacion.py pipes "Unidad 3 - Circuitos integrados" --aplicar
+py kit_recuperacion.py sweep                             # verificar_nota.py en todas las notas FESD
+py kit_recuperacion.py compa 5ba8f1b "Universidad/.../nota.md"   # dif cuerpo vs ref
+```
+
+La restauración reemplaza el cuerpo del archivo por el contenido en `git show <ref_ok>:<ruta>` (con guardado que preserva CRLF/LF) y garantiza UNA línea `tags:` correcta por unidad + `dg-publish: true` dentro del frontmatter.
+
+### Regla anti doble-`tags:` (la del incidente)
+
+Ningún script inserta una línea `tags:` si la nota ya tiene una en sus primeras 12 líneas. Invariantes: la nota tiene CERO o UNA línea `tags:`, dentro del frontmatter, nunca dos ni fuera del `---` limítrofe. Los stubs de ~500/750/980 bytes en FESD eran la firma del script roto del 19/10 — si reaparecen, `kit_recuperacion.py restore <ref_ok> <ref_dano> --aplicar`.
 
 ## Diagramas mermaid → SVG (receta)
 

@@ -9,10 +9,8 @@ Default is DRY-RUN (only reports). With --fix it rewrites the file:
   - strips trailing whitespace,
   - preserves the file's line endings (CRLF stays CRLF).
 
-It NEVER deletes:
-  - single blank lines between sibling callouts/blocks,
-  - blank lines inside ``` fences,
-  - anything inside frontmatter except nothing (frontmatter untouched).
+It refuses to apply (forces dry-run) when ``` fences are unbalanced or
+quoting mismatches: those notes must be fixed with verificar_nota.py first.
 
 Run verificar_nota.py before AND after.
 """
@@ -35,8 +33,15 @@ def main() -> int:
 
     # fence map (do not touch inside)
     idx = [i for i, l in enumerate(L) if FENCE_RE.match(l)]
+    if len(idx) % 2:
+        print("FENCES desbalanceados (%d marcas). Correr verificar_nota.py primero; NO se aplica." % len(idx))
+        fix = False
     inside = [False] * len(L)
     for k in range(0, len(idx) - 1, 2):
+        a_f, b_f = FENCE_RE.match(L[idx[k]]), FENCE_RE.match(L[idx[k + 1]])
+        if a_f.group(1) != b_f.group(1):
+            print("FENCE quoting mismatch L%d vs L%d. Correr verificar_nota.py; NO se aplica." % (idx[k] + 1, idx[k + 1] + 1))
+            fix = False
         for i in range(idx[k], idx[k + 1] + 1):
             inside[i] = True
 
