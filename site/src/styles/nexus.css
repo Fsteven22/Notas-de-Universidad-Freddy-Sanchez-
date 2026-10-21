@@ -1,0 +1,285 @@
+@import "tailwindcss";
+
+/* ─── Tokens NexusFS ─────────────────────────────────────── */
+@theme {
+  --color-nexus-green: #00ff88;
+  --color-nexus-blue: #00aaff;
+  --color-nexus-cyan: #00ddbb;
+  --color-nexus-gold: #f59f00;
+  --color-nexus-red: #ff3860;
+  --color-nexus-pink: #ff44aa;
+  --color-nexus-purple: #aa66ff;
+  --color-nexus-muted: #6b7fa3;
+
+  --font-mono: "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.025);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg-hover: rgba(255, 255, 255, 0.05);
+  --nexus-glow: 0 0 24px rgba(0, 255, 136, 0.25);
+}
+
+/* ─── Base ───────────────────────────────────────────────── */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: linear-gradient(135deg, #05070d 0%, #090d18 50%, #05070d 100%);
+  background-attachment: fixed;
+  color: #f9fafb;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(0, 255, 136, 0.25);
+  color: #fff;
+}
+
+/* Scrollbar neón */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #05070d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 136, 0.2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 136, 0.4);
+}
+
+/* ─── Explorador lateral ─────────────────────────────────── */
+.nx-explorer-wrap {
+  position: sticky;
+  top: 4.5rem;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.nx-explorer {
+  font-size: 0.82rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.015);
+  padding: 0.75rem 0.6rem;
+}
+
+.nx-explorer details {
+  margin: 0.1rem 0;
+}
+.nx-explorer summary {
+  cursor: pointer;
+  padding: 0.3rem 0.45rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.nx-explorer summary::before {
+  content: "▸";
+  color: var(--color-nexus-muted);
+  transition: transform 0.15s;
+  flex: none;
+}
+.nx-explorer details[open] > summary::before {
+  transform: rotate(90deg);
+  color: var(--color-nexus-green);
+}
+.nx-explorer summary::-webkit-details-marker {
+  display: none;
+}
+.nx-explorer summary:hover {
+  color: var(--color-nexus-green);
+  background: rgba(255, 255, 255, 0.04);
+}
+.nx-explorer .nx-ex-sem {
+  color: #d1d5db;
+}
+.nx-explorer .nx-ex-sub {
+  color: #9ca3af;
+  text-transform: none;
+}
+.nx-explorer .nx-ex-arrow {
+  padding: 0.15rem 0.45rem 0 0.45rem;
+}
+.nx-explorer ul {
+  margin: 0.15rem 0 0.25rem;
+  padding-left: 0.75rem;
+  list-style: none;
+}
+.nx-explorer li {
+  margin: 0.05rem 0;
+}
+.nx-explorer a {
+  display: block;
+  padding: 0.24rem 0.45rem;
+  border-radius: 0.45rem;
+  color: #9ca3af;
+  text-decoration: none;
+  line-height: 1.35;
+  transition: color 0.15s, background 0.15s;
+}
+.nx-explorer a:hover {
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nx-explorer .nx-ex-active {
+  color: var(--color-nexus-green) !important;
+  background: rgba(0, 255, 136, 0.08) !important;
+  border-left: 2px solid var(--color-nexus-green);
+}
+
+/* layout con explorador */
+.nx-with-explorer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1280px) {
+  .nx-with-explorer {
+    grid-template-columns: 255px minmax(0, 1fr);
+  }
+}
+.nx-with-explorer.nx-note-layout {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1280px) {
+  .nx-with-explorer.nx-note-layout {
+    grid-template-columns: 255px minmax(0, 1fr) 230px;
+  }
+}
+
+
+/* Header de sección estilo // comentario */
+.nx-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-nexus-green);
+  opacity: 0.85;
+}
+.nx-section-title::before {
+  content: "// ";
+  opacity: 0.5;
+}
+
+/* Card glass con glow verde al hover */
+.nx-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s,
+    background 0.25s,
+    box-shadow 0.25s;
+}
+.nx-card:hover {
+  border-color: rgba(0, 255, 136, 0.45);
+  background: var(--glass-bg-hover);
+  box-shadow: var(--nexus-glow);
+  transform: translateY(-3px);
+}
+
+/* Barra neón divisoria (BARRA_NEON del bingo) */
+.nx-bar {
+  height: 2px;
+  background: linear-gradient(90deg, #00aaff, #00ff88);
+  border-radius: 2px;
+}
+
+/* Botón primario */
+.nx-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  min-height: 44px;
+  cursor: pointer;
+}
+.nx-btn-primary {
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.14), rgba(0, 255, 136, 0.05));
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  color: var(--color-nexus-green);
+}
+.nx-btn-primary:hover {
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.25), rgba(0, 255, 136, 0.1));
+  box-shadow: var(--nexus-glow);
+}
+.nx-btn-ghost {
+  border: 1px solid var(--glass-border);
+  color: #e5e7eb;
+  background: var(--glass-bg);
+}
+.nx-btn-ghost:hover {
+  border-color: rgba(0, 170, 255, 0.45);
+  color: var(--color-nexus-blue);
+}
+
+/* Badge mono */
+.nx-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  color: var(--color-nexus-green);
+  background: rgba(0, 255, 136, 0.07);
+}
+
+/* Aura verde decorativa del hero */
+.nx-aura {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  background: radial-gradient(closest-side, rgba(0, 255, 136, 0.16), transparent);
+}
+
+/* Animación de entrada */
+@keyframes nx-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nx-fade-up {
+  animation: nx-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-fade-up {
+    animation: none;
+  }
+  .nx-card,
+  .nx-btn {
+    transition: none;
+  }
+}

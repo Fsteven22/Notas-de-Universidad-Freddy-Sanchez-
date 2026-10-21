@@ -1,0 +1,85 @@
+---
+import vault from "../data/vault.json";
+
+const { semId, matId, currentUrl } = Astro.props as {
+  semId?: string;
+  matId?: string;
+  currentUrl?: string;
+};
+
+const esc = (s: any) =>
+  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+const isActive = (url: string) =>
+  currentUrl ? currentUrl.replace(/\/$/, "") === url.replace(/\/$/, "") : false;
+
+function noteUrl(sem: string, mat: string, units: string[], slug: string) {
+  return `/${sem}/${mat}${units.length ? "/" + units.join("/") : ""}/${slug}/`;
+}
+
+function buildUnitsHtml(sem: string, mat: string, notas: any[]) {
+  type Node = { kids: Map<string, Node>; notes: any[] };
+  const root: Node = { kids: new Map(), notes: [] };
+  for (const n of notas) {
+    let node = root;
+    for (const u of n.units ?? []) {
+      if (!node.kids.has(u)) node.kids.set(u, { kids: new Map(), notes: [] });
+      node = node.kids.get(u)!;
+    }
+    node.notes.push(n);
+  }
+
+  const render = (node: Node, prefix: string[]): string => {
+    let out = "";
+    for (const [u, child] of [...node.kids.entries()].sort((a, b) => a[0].localeCompare(b[0], "es", { numeric: true }))) {
+      const label = u.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+      out += `<details${prefix.length === 0 ? " open" : ""}><summary>${esc(label)}</summary>`;
+      out += `<ul>${render(child, [...prefix, u])}`;
+      // las notas raíz de este nodo van tras sus sub-unidades
+      for (const n of child.notes) {
+        const url = noteUrl(sem, mat, [...prefix, u], n.slug);
+        const active = isActive(url) ? ' class="nx-ex-active"' : "";
+        out += `<li><a href="${url}"${active}>${esc(n.title)}</a></li>`;
+      }
+      out += `</ul></details>`;
+    }
+    return out;
+  };
+
+  let html = "";
+  for (const n of root.notes) {
+    const url = noteUrl(sem, mat, [], n.slug);
+    const active = isActive(url) ? ' class="nx-ex-active"' : "";
+    html += `<li class="nx-ex-note">${esc(n.title)}</li>`.replace(
+      /<li([^>]*)>(.*?)<\/li>/, `<li$1><a href="${url}"${active}>$2</a></li>`
+    );
+  }
+  html += render(root, []);
+  return html;
+}
+
+let html = "";
+
+for (const s of vault.semestres) {
+  const isCurSem = semId === s.id || (!semId && false);
+  html += `<details${isCurSem ? " open" : ""}>
+    <summary class="nx-ex-sem">${esc(s.title)}</summary>
+    <ul>`;
+  for (const m of [...s.materias].sort((a, b) => a.title.localeCompare(b.title, "es"))) {
+    const mUrl = `/${s.id}/${m.id}/`;
+    const isCurrentMat = isCurSem && matId && m.id === matId;
+    const active = isCurrentMat ? ' class="nx-ex-active"' : matId ? "" : isActive(mUrl) ? ' class="nx-ex-active"' : "";
+    html += `<li>
+      <a href="${mUrl}"${active}>${esc(m.title)}</a>`;
+    if (isCurrentMat) {
+      html += `<ul class="nx-ex-units">${buildUnitsHtml(s.id, m.id, m.notas)}</ul>`;
+    }
+    html += `</li>`;
+  }
+  html += `</ul></details>`;
+}
+---
+
+<aside class="nx-explorer-wrap hidden xl:block">
+  <div class="nx-explorer" set:html={html} />
+</aside>

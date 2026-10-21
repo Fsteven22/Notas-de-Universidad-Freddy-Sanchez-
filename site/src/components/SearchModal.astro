@@ -1,0 +1,334 @@
+<div
+  id="nx-search"
+  class="fixed inset-0 z-50 hidden items-start justify-center bg-[rgba(2,4,10,0.7)] px-4 pt-[11vh] backdrop-blur-[6px]"
+>
+  <div id="nx-search-panel" class="w-full max-w-xl">
+    <div class="relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#0a0e1a] shadow-[0_24px_80px_rgba(0,0,0,0.6),0_0_40px_rgba(0,255,136,0.08)]">
+      <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent, #00aaff 25%, #00ff88 75%, transparent);"></div>
+
+      <div class="flex items-center gap-3 border-b border-[rgba(255,255,255,0.07)] px-4 py-3.5">
+        <svg class="size-4 shrink-0 text-[var(--color-nexus-green)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" />
+        </svg>
+        <input
+          id="nx-search-input"
+          type="text"
+          placeholder="Buscar en todas tus notas…"
+          autocomplete="off"
+          spellcheck="false"
+          class="w-full bg-transparent text-sm text-white placeholder:text-[var(--color-nexus-muted)] focus:outline-none"
+        />
+        <button
+          id="nx-search-close"
+          type="button"
+          aria-label="Cerrar búsqueda"
+          class="flex size-7 shrink-0 items-center justify-center rounded-lg border border-[rgba(255,255,255,0.12)] text-[var(--color-nexus-muted)] transition hover:border-[rgba(255,255,255,0.3)] hover:text-white"
+        >
+          <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="nx-search-list" class="max-h-[52vh] min-h-[180px] overflow-y-auto p-2 nx-scroll"></div>
+
+      <div id="nx-search-foot" class="flex items-center justify-between border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
+        <span id="nx-search-count"></span>
+        <span class="flex items-center gap-2">
+          <span><span class="nx-search-key">↑↓</span> elegir</span>
+          <span><span class="nx-search-key">enter</span> ir</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nx-search-key {
+    font-family: var(--font-mono);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: #cbd5e1;
+  }
+  #nx-search-list .nx-hit {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-radius: 0.7rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid transparent;
+    transition: background 0.12s, border-color 0.12s;
+    animation: nx-hit-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  #nx-search-list .nx-hit:hover,
+  #nx-search-list .nx-hit.is-selected {
+    background: rgba(0, 255, 136, 0.07);
+    border-color: rgba(0, 255, 136, 0.18);
+  }
+  #nx-search-list .nx-hit .nx-hit-arrow {
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.12s, transform 0.12s;
+  }
+  #nx-search-list .nx-hit:hover .nx-hit-arrow,
+  #nx-search-list .nx-hit.is-selected .nx-hit-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @keyframes nx-hit-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .nx-search-mark {
+    color: var(--color-nexus-green);
+    font-weight: 700;
+  }
+  .nx-scroll::-webkit-scrollbar { width: 6px; }
+  .nx-scroll::-webkit-scrollbar-thumb { background: rgba(0, 255, 136, 0.15); border-radius: 6px; }
+</style>
+
+<script>
+  type Hit = { t: string; m: string; s: string; u: string; mt?: number };
+  let idx: Hit[] = [];
+  let loaded = false;
+  let hits: Hit[] = [];
+  let selected = -1;
+  let ctx: {
+    overlay: HTMLElement;
+    input: HTMLInputElement;
+    listEl: HTMLElement;
+    countEl: HTMLElement;
+  } | null = null;
+
+  const norm = (s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  async function ensureIndex() {
+    if (loaded) return;
+    try {
+      const res = await fetch("/search-index.json");
+      idx = await res.json();
+    } catch {
+      idx = [];
+    }
+    loaded = true;
+  }
+
+  const esc = (s: string) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  const mapa = { a: "aáàäâã", e: "eéèëê", i: "iíìïî", o: "oóòöô", u: "uúùüû", n: "nñ", c: "cç" } as Record<string, string>;
+  function accentRe(terms: string[]) {
+    const parts = terms.map((t) =>
+      t.split("").map((ch) => (mapa[ch] ? `[${mapa[ch]}]` : `[${ch.replace(/[.*+?^${}()\\\[\]]/g, "\\$&")}]`)).join("")
+    );
+    return new RegExp(`(${parts.join("|")})`, "gi");
+  }
+
+  function highlight(text: string, terms: string[]) {
+    if (!terms.length) return esc(text);
+    try {
+      return esc(text).replace(accentRe(terms), (m) =>
+        m.includes("nx-search-mark") ? m : `<mark class="nx-search-mark">${m}</mark>`
+      );
+    } catch {
+      return esc(text);
+    }
+  }
+
+  function score(n: Hit, terms: string[]) {
+    const ht = norm(n.t), hm = norm(n.m), hs = norm(n.s);
+    let sc = 0;
+    for (const w of terms) {
+      if (ht.startsWith(w)) sc += 6;
+      else if (ht.includes(w)) sc += 4;
+      const words = ht.split(/\s+/);
+      if (words.some((x) => x.startsWith(w))) sc += 3;
+      if (hm.includes(w)) sc += 1;
+      if (hs.includes(w)) sc += 0.5;
+      if (sc === 0) return 0;
+    }
+    return sc;
+  }
+
+  function hitHtml(n: Hit, terms: string[], i: number, recent = false) {
+    return `
+      <button type="button" data-i="${i}" data-url="${esc(n.u)}" style="animation-delay:${i * 28}ms" class="nx-hit${i === 0 ? " is-selected" : ""}">
+        <div class="flex items-start justify-between gap-3">
+          <div class="min-w-0">
+            <p class="text-sm font-semibold leading-snug text-white">${recent ? esc(n.t) : highlight(n.t, terms)}</p>
+            <p class="mt-0.5 flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] truncate">
+              <span class="mt-1.5 size-1.5 shrink-0 rounded-full ${recent ? "bg-[var(--color-nexus-blue)] opacity-60" : "bg-[var(--color-nexus-green)] opacity-40"}"></span>
+              ${esc(n.s)} · ${esc(n.m)}
+            </p>
+          </div>
+          <span class="nx-hit-arrow mt-0.5 shrink-0 font-mono text-xs text-[var(--color-nexus-green)]">→</span>
+        </div>
+      </button>`;
+  }
+
+  function render(query: string) {
+    if (!ctx) return;
+    const terms = norm(query).trim().split(/\s+/).filter(Boolean);
+
+    if (!terms.length) {
+      const recent = [...idx].sort((a, b) => (b.mt ?? 0) - (a.mt ?? 0)).slice(0, 6);
+      hits = recent;
+      ctx.listEl.innerHTML =
+        `<p class="px-2 pb-1.5 pt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">RECIENTES</p>` +
+        recent.map((n, i) => hitHtml(n, [], i, true)).join("");
+      ctx.countEl.textContent = idx.length ? `${idx.length} NOTAS INDEXADAS` : "";
+      selected = 0;
+      return;
+    }
+
+    hits = idx
+      .map((n) => ({ n, sc: score(n, terms) }))
+      .filter((x) => x.sc > 0)
+      .sort((a, b) => b.sc - a.sc || a.n.t.localeCompare(b.n.t, "es"))
+      .slice(0, 15)
+      .map((x) => x.n);
+
+    if (!hits.length) {
+      hits = [];
+      selected = -1;
+      ctx.listEl.innerHTML = `
+        <div class="flex flex-col items-center justify-center px-4 py-10 text-center">
+          <svg class="size-8 text-[rgba(255,255,255,0.15)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+          </svg>
+          <p class="mt-3 text-sm text-[#e5e7eb]">Sin resultados para <span class="text-white">"${esc(query.trim())}"</span></p>
+          <p class="mt-1 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">PRUEBA CON MENOS PALABRAS</p>
+        </div>`;
+      ctx.countEl.textContent = "0 COINCIDENCIAS";
+      return;
+    }
+
+    ctx.listEl.innerHTML = hits.map((n, i) => hitHtml(n, terms, i)).join("");
+    ctx.countEl.textContent = `${hits.length} COINCIDENCIA${hits.length === 1 ? "" : "S"}`;
+    selected = 0;
+  }
+
+  function updateSelected() {
+    if (!ctx) return;
+    ctx.listEl.querySelectorAll(".nx-hit").forEach((el, i) => {
+      el.classList.toggle("is-selected", i === selected);
+    });
+    (ctx.listEl.querySelector(".nx-hit.is-selected") as HTMLElement | null)?.scrollIntoView({ block: "nearest" });
+  }
+
+  function openSearch() {
+    if (!ctx) return;
+    ctx.overlay.classList.remove("hidden");
+    ctx.overlay.classList.add("flex");
+    document.body.style.overflow = "hidden";
+    ctx.input.value = "";
+    render("");
+    requestAnimationFrame(() => {
+      ctx!.overlay.classList.add("nx-open");
+      ctx!.input.focus();
+    });
+  }
+
+  function closeSearch() {
+    if (!ctx) return;
+    const { overlay, listEl } = ctx;
+    overlay.classList.remove("nx-open");
+    setTimeout(() => {
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+      document.body.style.overflow = "";
+      while (listEl.firstChild) listEl.removeChild(listEl.firstChild);
+      hits = [];
+      selected = -1;
+    }, 160);
+  }
+
+  const isOpen = () => !!ctx && (ctx.overlay.classList.contains("nx-open") || !ctx.overlay.classList.contains("hidden"));
+
+  function bind() {
+    const overlay = document.getElementById("nx-search");
+    const input = document.getElementById("nx-search-input") as HTMLInputElement | null;
+    if (!overlay || !input || overlay.dataset.nxBound) return;
+    overlay.dataset.nxBound = "1";
+    const listEl = document.getElementById("nx-search-list")!;
+    const countEl = document.getElementById("nx-search-count")!;
+    const closeBtn = document.getElementById("nx-search-close")!;
+    ctx = { overlay, input, listEl, countEl };
+
+    closeBtn.addEventListener("click", closeSearch);
+    input.addEventListener("input", () => render(input.value));
+    overlay.addEventListener("mousedown", (e) => {
+      if (e.target === overlay) closeSearch();
+    });
+    listEl.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement).closest(".nx-hit") as HTMLElement | null;
+      if (btn?.dataset.url) location.href = btn.dataset.url;
+    });
+    document.querySelectorAll(".nx-search-open").forEach((b) =>
+      b.addEventListener("click", openSearch)
+    );
+  }
+
+  if (!document.documentElement.dataset.nxSearchKeys) {
+    document.documentElement.dataset.nxSearchKeys = "1";
+    document.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        isOpen() ? closeSearch() : openSearch();
+        return;
+      }
+      if (!isOpen()) {
+        if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((e.target as HTMLElement).tagName)) {
+          e.preventDefault();
+          openSearch();
+        }
+        return;
+      }
+      if (e.key === "Escape") { e.preventDefault(); closeSearch(); }
+      if (e.key === "ArrowDown") { e.preventDefault(); if (selected < hits.length - 1) { selected++; updateSelected(); } }
+      if (e.key === "ArrowUp") { e.preventDefault(); if (selected > 0) { selected--; updateSelected(); } }
+      if (e.key === "Enter") {
+        if (selected >= 0 && hits[selected]) location.href = hits[selected].u;
+      }
+    });
+    document.addEventListener("astro:before-swap", () => {
+      document.body.style.overflow = "";
+      hits = [];
+      selected = -1;
+    });
+  }
+
+  bind();
+  ensureIndex();
+  document.addEventListener("astro:page-load", async () => {
+    bind();
+    await ensureIndex();
+  });
+</script>
+
+<style is:global>
+  #nx-search {
+    opacity: 0;
+    transition: opacity 0.16s ease;
+  }
+  #nx-search.nx-open {
+    opacity: 1;
+  }
+  #nx-search #nx-search-panel {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  #nx-search.nx-open #nx-search-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #nx-search, #nx-search #nx-search-panel, #nx-search-list .nx-hit {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+</style>

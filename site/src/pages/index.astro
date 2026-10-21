@@ -1,0 +1,162 @@
+---
+import Base from "../layouts/Base.astro";
+import vault from "../data/vault.json";
+
+function fecha(ms) {
+  return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short" }).toLowerCase();
+}
+
+const coloresSem = {
+  "preuniversitario": { c: "var(--color-nexus-purple)", t: "Reconstrucción" },
+  "1er-semestre": { c: "var(--color-nexus-blue)", t: "Completado" },
+  "2do-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
+  "3er-semestre": { c: "var(--color-nexus-gold)", t: "En curso" },
+};
+const sems = vault.semestres.filter((s) => s.id !== "raiz");
+const totalNotas = sems.reduce((n, s) => n + s.materias.reduce((m, x) => m + x.total, 0), 0);
+const totalMaterias = sems.reduce((n, s) => n + s.materias.length, 0);
+const totalPdf = sems.reduce(
+  (n, s) => n + s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0)
+  , 0);
+
+const accent = (id) => coloresSem[id]?.c ?? "var(--color-nexus-blue)";
+const subEstado = (id) => coloresSem[id]?.t ?? "";
+const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
+---
+
+<Base title="Neonotes · Apuntes ESPOL">
+  <div class="nx-aura" style="width:420px;height:420px;top:-120px;left:10%"></div>
+  <div class="nx-aura" style="width:300px;height:300px;top:120px;right:8%;opacity:.6"></div>
+
+  <header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+    <div class="flex items-center gap-3">
+      <div class="flex size-10 items-center justify-center rounded-xl border border-[rgba(0,255,136,0.35)] bg-[rgba(0,255,136,0.06)] font-mono text-lg text-[var(--color-nexus-green)]">N</div>
+      <div>
+        <p class="font-semibold text-white">Neonotes</p>
+        <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">REPOSITORIO PERSONAL · ESPOL</p>
+      </div>
+    </div>
+    <nav class="flex items-center gap-3">
+      <button class="nx-search-open nx-btn nx-btn-ghost" type="button">Buscar</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-14 pb-16">
+    <div class="nx-fade-up">
+      <span class="nx-badge">INGENIERÍA COMPUTACIONAL · ESPOL</span>
+      <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
+        Mis apuntes de carrera{" "}
+        <span class="text-[var(--color-nexus-green)]">en un solo lugar.</span>
+      </h1>
+      <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[#e5e7eb]">
+        Apuntes, diagramas, talleres y material de estudio organizados por semestre.
+        Consulta lo que necesites desde donde estés y descarga lo que quieras compartir.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="nx-btn nx-btn-primary" href="#semestres">Explorar semestres</a>
+        <a class="nx-btn nx-btn-ghost" href="#recientes">Últimas notas</a>
+      </div>
+      <div class="nx-bar mt-8 max-w-md"></div>
+      <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
+        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} BLOQUES
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="mx-auto max-w-6xl px-6 pb-4">
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      {[
+        { n: totalNotas, l: "Notas", c: "green" },
+        { n: totalMaterias, l: "Materias", c: "blue" },
+        { n: totalPdf, l: "PDFs", c: "purple" },
+        { n: sems.length, l: "Semestres", c: "gold" },
+      ].map((s) => (
+        <div class={`nx-card !py-5 text-center border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]`}>
+          <p
+            class={`font-mono text-3xl font-bold tracking-tight ${
+              { green: "text-[var(--color-nexus-green)]", blue: "text-[var(--color-nexus-blue)]", purple: "text-[var(--color-nexus-purple)]", gold: "text-[var(--color-nexus-gold)]" }[s.c]
+            }`}>{s.n}</p>
+          <p class="mt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)] uppercase">{s.l}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Semestres -->
+  <section id="semestres" class="mx-auto max-w-6xl px-6 py-10">
+    <p class="nx-section-title mb-6">Semestres</p>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        sems.map((s) => {
+          return (
+            <a href={`/${s.id}/`} class="nx-card group relative block overflow-hidden !p-0">
+              <div class="h-1 w-full" style={`background: linear-gradient(90deg, ${accent(s.id)}, transparent);`} />
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2">
+                  <h2 class="text-lg font-bold text-white">{s.title}</h2>
+                  {subEstado(s.id) && (
+                    <span
+                      class="shrink-0 rounded-full border px-2 py-0.5 font-mono text-[10px] tracking-wider uppercase"
+                      style={`color: ${accent(s.id)}; border-color: ${accent(s.id)}44;`}
+                    >
+                      {subEstado(s.id)}
+                    </span>
+                  )}
+                </div>
+                <ul class="mt-4 space-y-1.5">
+                  {s.materias.slice(0, 5).map((m) => (
+                    <li class="flex items-center gap-2 text-sm text-[#e5e7eb] transition-colors group-hover:text-white">
+                      <span style={`color: ${accent(s.id)};`}>▸</span> {m.title}
+                    </li>
+                  ))}
+                  {s.materias.length > 5 && (
+                    <li class="font-mono text-[11px] text-[var(--color-nexus-muted)]">
+                      +{s.materias.length - 5} más…
+                    </li>
+                  )}
+                </ul>
+                <div class="mt-4 flex justify-end">
+                  <span
+                    class="translate-x-1 font-mono text-[11px] opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100"
+                    style={`color: ${accent(s.id)};`}
+                  >
+                    Ver →
+                  </span>
+                </div>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <!-- Recién actualizadas -->
+  <section id="recientes" class="mx-auto max-w-6xl px-6 py-10 pb-24">
+    <p class="nx-section-title mb-6">Recién actualizadas</p>
+    <div class="grid gap-4 md:grid-cols-3">
+      {
+        vault.recent.filter((r) => r.sem !== "raiz").map((r) => (
+          <a href={r.url} class="nx-card group block">
+            <div class="flex items-center justify-between">
+              <p class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-green)]">{r.title}</p>
+              <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-green)]">→</span>
+            </div>
+            <p class="mt-3 font-mono text-[11px] text-[var(--color-nexus-muted)]">
+              <span class="text-[var(--color-nexus-blue)]">{r.matTitle}</span> · {fecha(r.mtime)}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <footer class="border-t border-[rgba(255,255,255,0.06)]">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+      <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">⚡ NEONOTES · STEVEN SÁNCHEZ</p>
+      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">built with Astro</p>
+    </div>
+  </footer>
+</Base>

@@ -1,0 +1,16 @@
+# Node / build
+node_modules/
+dist/
+.astro/
+logs/
+.env
+.env.local
+*.log
+.DS_Store
+
+# ── Artefactos derivados: NUNCA van al repo (decisión 6 del PLAN-PUBLICACION.md).
+# `npm run sync` los genera en build (VAULT_DIR=../Universidad):
+notes-md/
+public/assets/
+src/data/vault.json
+public/search-index.json
