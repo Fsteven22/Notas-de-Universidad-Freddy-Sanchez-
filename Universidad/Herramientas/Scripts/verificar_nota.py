@@ -4,7 +4,9 @@
 Usage:  py verificar_nota.py "ruta/nota.md"
 
 Checks (exit 0 = clean, 1 = findings):
- 1. Frontmatter: exists, dg-publish true/false, no blank lines inside, tags present.
+ 1. Frontmatter: exists, dg-publish true/false, no blank lines inside, exactly
+    ONE `tags:` line, no second `---` block, no stray `tags:` lines after the
+    frontmatter (doble-tags / cuerpo contaminado — firmas del incidente 19/10).
  2. Orphan callouts: `> [!x]` / `> > [!x]` headers not connected to a parent quote.
  3. Blank-line disease: empty lines strictly inside a quote run
     (both neighbors start with `>`). If a neighbor is a bare `>`, it is
@@ -16,7 +18,8 @@ Checks (exit 0 = clean, 1 = findings):
  6. Embeds: every ![[*.svg|png|pdf|mmd]] resolves from the note's folder.
  7. Tables: pipe-count mismatch vs header row (ignoring \\|), inside quotes too.
  8. Headers: indented (`   ###`) or glued (content line directly before ###).
- 9. Line endings: CRLF / LF / mixed report (mixed = fail).
+ 9. Line endings: CRLF / LF / mixed report (mixed = fail). Double-CR
+    sequences (`\\r\\r`, típico de reescrituras duales) = fail.
 """
 import pathlib
 import re
@@ -41,8 +44,11 @@ def main() -> int:
         bad.append(msg)
 
     # 9. endings
+    n_crcr = raw.count(b"\r\r")
     if n_crlf and n_crlf != n_lf:
         rep(f"ENDINGS mixed: {n_crlf} CRLF + {n_lf - n_crlf} LF (normalize!)")
+    elif n_crcr:
+        rep(f"ENDINGS corruptos: {n_crcr} secuencia(s) \\r\\r (doble CR, normalize!)")
     else:
         print(f"endings: {'CRLF' if n_crlf else 'LF'} ({len(L)} lineas)")
 
@@ -59,7 +65,15 @@ def main() -> int:
                 rep("FRONTMATTER con lineas vacias adentro (rompe YAML)")
             if not any("dg-publish" in l for l in fm):
                 rep("FRONTMATTER sin dg-publish")
-            if not any(l.strip().startswith("tags") for l in fm):
+            n_tags = sum(1 for l in fm if l.strip().startswith("tags:"))
+            if n_tags > 1:
+                rep(f"FRONTMATTER con {n_tags} lineas tags: (doble-tags del incidente 19/10)")
+            if sum(1 for l in L[j + 1:min(len(L), 16)] if l.strip() == "---"):
+                rep("FRONTMATTER duplicado: segundo bloque --- en la cabecera")
+            stray = [i for i in range(j + 1, min(len(L), j + 11)) if L[i].strip().startswith("tags:")]
+            if stray:
+                rep(f"tags: fuera del frontmatter en L{stray[0] + 1} (cuerpo contaminado)")
+            if not n_tags:
                 warn.append("frontmatter sin tags")
 
     # fence map (for 4/5)

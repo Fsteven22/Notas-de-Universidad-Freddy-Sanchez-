@@ -34,6 +34,17 @@ Uso:
       Compara el cuerpo (sin frontmatter) del archivo en <ref> vs disco;
       reporta lineas compartidas, similaridad y headers de cada version.
 
+  py kit_recuperacion.py fix-tags [subcarpeta|nota.md] [--aplicar]
+      Une N lineas tags: del frontmatter en UNA sola (conserva la primera,
+      reporta las que descarta), elimina segundos bloques --- de cabecera y
+      lines tags: sueltas fuera del frontmatter. Dry-run por defecto.
+
+  py kit_recuperacion.py guardian [subcarpeta]
+      Chequeo compuesto FESD: sweep de verificar_nota + deteccion de
+      cuerpos duplicados/clonados (exacta por md5) y de contenido cruzado
+      (similaridad >= 0.93 entre notas de la materia). Read-only.
+      Cualquier hallazgo sugiere el comando de reparacion de este kit.
+
 Tags por carpeta (esquema FESD):
   Unidad 1 -> [EYAG1037, unidad1, electricidad]
   Unidad 2 -> [unidad2, electronica]
@@ -347,6 +358,168 @@ def cmd_compa(repo, materia_rel, args):
     return 0
 
 
+def leer_cuerpo(data: bytes):
+    lines = data.decode("utf-8", "replace").replace("\r\n", "\n").split("\n")
+    if lines and lines[0].strip() == "---":
+        try:
+            close = next(i for i in range(1, min(len(lines), 20)) if lines[i].strip() == "---")
+            return lines[close + 1:], lines
+        except StopIteration:
+            return lines, lines
+    return lines, lines
+
+
+def primera_h1(body):
+    for l in body:
+        if l.startswith("# "):
+            return l.strip()
+    return ""
+
+
+def cmd_dupez(repo, materia_rel, args):
+    import hashlib
+    materia = find_materia(repo)
+    pos = [a for a in args if not a.startswith("--")]
+    base = materia / pos[0] if pos else materia
+    notas = {}
+    for p in sorted(base.rglob("*.md")):
+        if any(part in MEDIA_DIRS for part in p.relative_to(repo).parts):
+            continue
+        body, full = leer_cuerpo(p.read_bytes())
+        notas[p.relative_to(repo).as_posix()] = (body, full, "\n".join(body))
+    exact, h1grp = {}, {}
+    for rel, (body, full, text) in notas.items():
+        h = hashlib.md5(text.encode("utf-8", "replace")).hexdigest()
+        exact.setdefault(h, []).append(rel)
+        h1 = primera_h1(body)
+        if h1:
+            h1grp.setdefault((h1, len(text) // 700), []).append((rel, text))
+    dups = {h: rels for h, rels in exact.items() if len(rels) > 1}
+    print("clones exactos:", len(dups))
+    for h, rels in dups.items():
+        print("  ", ", ".join(rels))
+    near = []
+    for key, grupo in h1grp.items():
+        for i in range(len(grupo) - 1):
+            for j in range(i + 1, len(grupo)):
+                r = difflib.SequenceMatcher(None, grupo[i][1], grupo[j][1]).quick_ratio()
+                if r < 0.93:
+                    continue
+                r = difflib.SequenceMatcher(None, grupo[i][1], grupo[j][1]).ratio()
+                if r >= 0.93:
+                    near.append((grupo[i][0], grupo[j][0], r))
+    print("contenido cruzado (>=0.93):", len(near))
+    for a, b, r in near:
+        print("  ", a, "~", b, r)
+    return 1 if (dups or near) else 0
+
+
+def cmd_fix_tags(repo, materia_rel, args):
+    aplicar = "--aplicar" in args
+    pos = [a for a in args if not a.startswith("--")]
+    materia = find_materia(repo)
+    if pos and Path(pos[0]).suffix == ".md":
+        targets = [Path(pos[0])]
+    elif pos:
+        targets = sorted((materia / pos[0]).rglob("*.md"))
+    else:
+        targets = sorted(materia.rglob("*.md"))
+    n_fix = 0
+    for p in targets:
+        data = p.read_bytes()
+        lines = data.decode("utf-8", "replace").replace("\r\n", "\n").split("\n")
+        if not lines or lines[0].strip() != "---":
+            continue
+        try:
+            close = next(i for i in range(1, min(len(lines), 20)) if lines[i].strip() == "---")
+        except StopIteration:
+            continue
+        fm = lines[1:close]
+        tag_idx = [i for i, l in enumerate(fm) if l.strip().startswith("tags:")]
+        second_close = [j for j in range(close + 1, min(len(lines), 20)) if lines[j].strip() == "---"]
+        stray = [j for j in range(close + 1, min(len(lines), close + 11))
+                 if lines[j].strip().startswith("tags:")]
+        if len(tag_idx) <= 1 and not second_close and not stray:
+            continue
+        n_fix += 1
+        print(p.name[:60], "| tags multiple:", max(0, len(tag_idx) - 1),
+              "| segundo ---:", ("L%d" % (second_close[0] + 1)) if second_close else "-",
+              "| tags suelta:", ("L%d" % (stray[0] + 1)) if stray else "-")
+        if not aplicar:
+            continue
+        nuevo_fm = [l for i, l in enumerate(fm) if i not in tag_idx[1:]] if len(tag_idx) > 1 else list(fm)
+        cortes = [i for i, l in enumerate(lines) if l.strip() == "---"]
+        cuerpo = [l for i, l in enumerate(lines)
+                  if i not in cortes and not l.strip().startswith("tags:")]
+        texto = "\n".join(["---"] + nuevo_fm + ["---", ""] + cuerpo)
+        p.write_bytes(texto.replace("\n", "\r\n").encode("utf-8")
+                      if ending_style(data) == "\r\n" else texto.encode("utf-8"))
+        print("   -> escrito")
+    print("notas con doble tags/segundo ---:", n_fix, "| modo:", "APLICAR" if aplicar else "dry-run")
+    return 0
+
+
+def cmd_guardian(repo, materia_rel, args):
+    import hashlib
+    materia = find_materia(repo)
+    pos = [a for a in args if not a.startswith("--")]
+    base = materia / pos[0] if pos else materia
+    verif = repo / "Universidad" / "Herramientas" / "Scripts" / "verificar_nota.py"
+    problemas = 0
+    notas, h1grp = {}, {}
+    for dirpath, dirnames, filenames in os.walk(base):
+        dirnames[:] = [d for d in dirnames if d not in MEDIA_DIRS]
+        for f in filenames:
+            if not f.endswith(".md"):
+                continue
+            p = os.path.join(dirpath, f)
+            r = subprocess.run([sys.executable, str(verif), p], capture_output=True)
+            m = re.search(r"errores: (\d+) \| avisos: (\d+)",
+                          (r.stdout + r.stderr).decode("utf-8", "replace"))
+            a = int(m.group(1)) if m else 0
+            if a:
+                problemas += a
+                print(p[-70:], m.group(0) if m else "")
+            try:
+                body, _ = leer_cuerpo(Path(p).read_bytes())
+                text = "\n".join(body)
+                notas[p.relative_to(repo).as_posix()] = text
+                h1 = primera_h1(body)
+                if h1:
+                    h1grp.setdefault((h1, len(text) // 700), []).append((p.relative_to(repo).as_posix(), h1, text))
+            except Exception:
+                pass
+    clones = {}
+    for rel, text in notas.items():
+        h = hashlib.md5(text.encode("utf-8", "replace")).hexdigest()
+        clones.setdefault(h, []).append(rel)
+    dup = {h: rels for h, rels in clones.items() if len(rels) > 1}
+    if dup:
+        problemas += len(dup)
+        print("clones exactos:", len(dup))
+        for h, rels in dup.items():
+            print("  ", ", ".join(rels))
+    near = []
+    for grupo in h1grp.values():
+        for i in range(len(grupo) - 1):
+            for j in range(i + 1, len(grupo)):
+                r = difflib.SequenceMatcher(None, grupo[i][2], grupo[j][2]).quick_ratio()
+                if r < 0.93:
+                    continue
+                r = difflib.SequenceMatcher(None, grupo[i][2], grupo[j][2]).ratio()
+                if r >= 0.93:
+                    near.append((grupo[i][0], grupo[j][0], round(r, 3)))
+    if near:
+        problemas += len(near)
+        print("contenido cruzado (>=0.93):", len(near))
+        for a, b, r in near:
+            print("  ", a, "~", b, r)
+    if dup:
+        print("repara con: kit_recuperacion.py restore <ref_ok> <ref_dano> --aplicar")
+    print("total problemas:", problemas, "(errores verificar + clones + cruzado)")
+    return 1 if problemas else 0
+
+
 def main() -> int:
     out_safe()
     if len(sys.argv) < 2:
@@ -363,6 +536,9 @@ def main() -> int:
         "pipes": cmd_pipes,
         "sweep": cmd_sweep,
         "compa": cmd_compa,
+        "dupez": cmd_dupez,
+        "fix-tags": cmd_fix_tags,
+        "guardian": cmd_guardian,
     }
     if cmd not in handlers:
         print("comando no reconocido:", cmd)

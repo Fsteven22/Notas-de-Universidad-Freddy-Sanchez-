@@ -21,6 +21,8 @@ from pathlib import Path
 
 DEFAULT_VAULT = r"C:\Users\Steven Sànchez\OneDrive\OneSyncFiles"
 DETAIL_CAP = 20
+NEARDUP_MIN_RATIO = 0.93
+STUB_MAX_BODY = 1200
 
 WIKILINK_RE = re.compile(r"(?<!\!)(\[\[([^\[\]\n]+?)\]\])")
 EMBED_RE = re.compile(r"!\[\[([^\[\]\n]+?)\]\]")
@@ -122,7 +124,12 @@ def main() -> int:
 
     # totals + capped details
     c1_total = c2_total = c3_total = c4_total = c5_total = c6_total = c7_total = c8_total = 0
+    c9_total = c10_total = c11_total = c12_total = 0
     c1_det, c2_det, c3_det, c4_det, c5_det, c6_det, c7_det, c8_det = ([] for _ in range(8))
+    c9_det, c10_det, c11_det, c12_det = ([] for _ in range(4))
+
+    bodies: dict[str, list] = {}   # md5 -> [(rel, h1, body_text, size)]
+    h1_groups: dict[tuple, list] = {}  # (h1, size_bucket) -> [(rel, body_text)]
 
     def add(det, total_box, s):
         # helper inlined manually below for speed; kept for clarity
@@ -136,9 +143,54 @@ def main() -> int:
         # read lines
         try:
             with open_text_long(full) as f:
-                lines = f.read().splitlines()
+                text_full = f.read()
+            lines = text_full.splitlines()
         except Exception:
             continue
+
+        # 12. doble CR en bytes crudos (\r\r\n, firma de reescrituras corruptas)
+        try:
+            with open(full, "rb") as bf:
+                raw = bf.read()
+            n_crcr = raw.count(b"\r\r")
+            if n_crcr:
+                c12_total += n_crcr
+                if len(c12_det) < DETAIL_CAP:
+                    c12_det.append(f"{rel}: {n_crcr} secuencia(s) \\r\\r")
+        except Exception:
+            pass
+
+        # cuerpo sin frontmatter + H1 (para 10/11, duplicados y cruzado)
+        body_lines = lines
+        h1 = ""
+        if lines and lines[0].strip() == "---":
+            try:
+                close = next(i for i in range(1, min(len(lines), 20)) if lines[i].strip() == "---")
+                body_lines = lines[close + 1:]
+            except StopIteration:
+                pass
+        for bl in body_lines:
+            if bl.startswith("# "):
+                h1 = bl.strip()
+                break
+        body_text = "\n".join(body_lines)
+        try:
+            import hashlib
+            digest = hashlib.md5(body_text.encode("utf-8", "replace")).hexdigest()
+        except Exception:
+            digest = ""
+        if digest:
+            bodies.setdefault(digest, []).append((rel, h1, body_text, len(body_text)))
+            key = (h1[:80], len(body_text) // 700)
+            if h1:
+                h1_groups.setdefault(key, []).append((rel, body_text))
+
+        # 9. doble `tags:` en la cabecera (firma del incidente 19/10)
+        tag_positions = [i for i, l in enumerate(lines[:16], 1) if l.strip().startswith("tags:")]
+        if len(tag_positions) > 1:
+            c9_total += len(tag_positions) - 1
+            if len(c9_det) < DETAIL_CAP:
+                c9_det.append(f"{rel}: {len(tag_positions)} lineas tags: en L{tag_positions}")
 
         fence_entries = []  # (lineno, quoted, info)
         in_fence = False
@@ -331,6 +383,33 @@ def main() -> int:
         except Exception:
             pass
 
+    # 10. cuerpos idénticos (notas clonadas: el stub de otro archivo)
+    for digest, grupo in bodies.items():
+        if len(grupo) > 1:
+            c10_total += len(grupo) - 1
+            rels = [g[0] for g in grupo[:4]]
+            if len(c10_det) < DETAIL_CAP * 4:
+                c10_det.append(f"cuerpo {digest[:8]} compartido por: {', '.join(rels)}")
+
+    # 11. cuerpos casi idénticos (contenido cruzado tipo incidente 19/10)
+    try:
+        import difflib
+    except Exception:
+        difflib = None
+    for key, grupo in h1_groups.items():
+        if len(grupo) < 2 or difflib is None:
+            continue
+        for i in range(len(grupo) - 1):
+            for j in range(i + 1, len(grupo)):
+                r = difflib.SequenceMatcher(None, grupo[i][1], grupo[j][1]).quick_ratio()
+                if r < NEARDUP_MIN_RATIO:
+                    continue
+                r = difflib.SequenceMatcher(None, grupo[i][1], grupo[j][1]).ratio()
+                if r >= NEARDUP_MIN_RATIO:
+                    c11_total += 1
+                    if len(c11_det) < DETAIL_CAP:
+                        c11_det.append(f"{grupo[i][0]} ~ {grupo[j][0]} (sim {r:.3f})")
+
     checks = [
         ("1. Broken wikilinks [[target]] (by .md basename, images skipped)", c1_total, c1_det),
         ("2. Broken embeds ![[file]] (by filename vault-wide)", c2_total, c2_det),
@@ -340,6 +419,10 @@ def main() -> int:
         ("6. Table pipe mismatches vs header (ignoring \\|)", c6_total, c6_det),
         ("7. Odd `$` per line outside fences ($$ and \\$ excluded)", c7_total, c7_det),
         ("8. Unbalanced [[ vs ]] per line", c8_total, c8_det),
+        ("9. Multiple/frontmatter-extra tags: lines per file", c9_total, c9_det),
+        ("10. Note bodies duplicated exactly (clones/stubs)", c10_total, c10_det),
+        ("11. Near-duplicate bodies >=0.93 (contenido cruzado)", c11_total, c11_det),
+        ("12. Double-CR byte sequences \\r\\r (endings corruptos)", c12_total, c12_det),
     ]
     print("=" * 72)
     for title, total, det in checks:

@@ -43,6 +43,27 @@ La restauración reemplaza el cuerpo del archivo por el contenido en `git show <
 
 Ningún script inserta una línea `tags:` si la nota ya tiene una en sus primeras 12 líneas. Invariantes: la nota tiene CERO o UNA línea `tags:`, dentro del frontmatter, nunca dos ni fuera del `---` limítrofe. Los stubs de ~500/750/980 bytes en FESD eran la firma del script roto del 19/10 — si reaparecen, `kit_recuperacion.py restore <ref_ok> <ref_dano> --aplicar`.
 
+### Capa de prevención (añadida tras el incidente)
+
+`verificar_nota.py` ahora falla cuando ve: más de una línea `tags:` en el frontmatter, un segundo bloque `---` en la cabecera (frontmatter duplicado), `tags:` sueltas después del frontmatter, o secuencias `\r\r` (endings corruptos por reescrituras dobles).
+
+`auditoria.py` (barrido del vault) añadió checks: **9** múltiples `tags:` por archivo, **10** cuerpos clónicos exactos (md5), **11** cuerpos casi-iguales ≥ 0.93 de similaridad (contenido cruzado: nota A rellenada con nota B), **12** `\r\r` en bytes crudos.
+
+`kit_recuperacion.py` añadió:
+- `fix-tags [subcarpeta|nota] [--aplicar]` — repara notas con doble `tags:`/segundo `---`/`tags:` suelta: conserva UNA línea tags (la primera) y limpia el cuerpo.
+- `dupez [subcarpeta]` — clones exactos + contenido cruzado (similaridad ≥ 0.93, prefiltrada por H1 y tamaño).
+- `guardian [subcarpeta]` — chequeo completo (verify + clones + cruzado); sugiere el comando de reparación. Correrlo tras cualquier sesión de scripts que toquen notas.
+
+## `referencias.py` — auditoría de referencias entre notas FESD
+
+```bash
+py referencias.py                       # dry-run completo de la materia
+py referencias.py --aplicar             # agrega la sección a las sin referencias
+py referencias.py --min 3               # exigir más links inline para dar OK
+```
+
+Audita cada nota: OK si tiene sección `## 📚 Referencias` (fuentes, estilo Unidad 1) o si enlaza a ≥ 2 notas de la materia; `SIN REF` si no tiene ninguna. Con `--aplicar`, a las `SIN REF` les agrega `## 🔗 Relacionadas` al final con links a las notas hermanas de su carpeta (o a la MOC de la materia si es nota única no tiene hermanas). Nunca inventa citas bibliográficas.
+
 ## Diagramas mermaid → SVG (receta)
 
 Los bloques mermaid dentro de callouts no renderizan en Live Preview ni confiable en Garden: se convierten a SVG y se incrustan con `![[carpeta/archivo.svg]]`. La fuente `.mmd` se guarda junto al `.svg` para reeditar.
