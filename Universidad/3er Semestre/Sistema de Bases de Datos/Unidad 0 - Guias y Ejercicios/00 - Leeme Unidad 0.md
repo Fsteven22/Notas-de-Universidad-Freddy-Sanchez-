@@ -20,7 +20,9 @@ tags: [TICG1018, unidad0, recursos]
 
 ## 📝 Guías de problemas
 
-- [[Guía de Problemas 1 - MC, ML y Normalización]] — recopilación Taller 1 (casos Chen, dependencias, normalización, conceptos).
+- [[Guía de Problemas 1 - MC, ML y Normalización]] — recopilación Taller 1 (casos Chen, dependencias, normalización, conceptos). En Unidad 1 con la teoría.
+- [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] — Taller 2 (4 consultas álgebra + normalización hotel). En Unidad 1.
+- [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — Talleres 3 y 4 (SQL University, supermercado, alquileres, sakila). En [[Unidad 3 - SQL y PL-SQL/00 - Índice Unidad 3|Unidad 3]].
 
 ## 🔄 Diapositivas Unidad 2 (modelo lógico)
 
