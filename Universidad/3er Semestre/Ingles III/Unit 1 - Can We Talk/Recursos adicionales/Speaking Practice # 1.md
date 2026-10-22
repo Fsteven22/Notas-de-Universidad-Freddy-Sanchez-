@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 ---
 
 # 📝 Guía y Guion: Flooding in Guayaquil (B1+ Level)
@@ -18,7 +19,7 @@ dg-publish: true
 > | 1 solución genérica | Drenaje + manglares combinados |
 > | Te traban las preguntas | Q&A con 3 respuestas de 20 s |
 >
-> **En esta nota:** tu guion original completo e intacto (sección 📜), vocabulario, estructura en 6 slides (~370 palabras ≈ 3:00), drill de Q&A y checklist.
+> **En esta nota:** el guion nuevo completo con anclas en negrita (sección 📜, ~400 palabras ≈ 3:00 a ritmo B1), vocabulario, estructura en 6 slides, drill de Q&A y checklist.
 
 ![[../../Diagramas/en3-u1-11-01-graph.svg]]
 
@@ -46,37 +47,41 @@ dg-publish: true
 
 ---
 
-## 📜 Guion Original Completo (intacto)
+## 📜 Guion Completo (versión nueva, con anclas)
 
-> [!quote] 📜 Slide 1 — Introduction
->
-> “Good morning, everyone. My name is Steven Sánchez. Today I’m going to talk about a serious problem in our city: flooding in several areas of Guayaquil. First, I will explain the problem. Then, I will suggest two solutions.”
+> [!tip] 🎯 Cómo memorizarlo
+> Las palabras en **negrita** son las **anclas**: apréndelas primero y deja que el resto salga solo. Reparto en 6 slides (imágenes solamente, sin frases):
+> 1. Welcome + hook + significance + purpose · 2. Problema (4 íconos) · 3. Consecuencias (mapa) · 4. Solución 1 + beneficio · 5. Solución 2 + beneficio · 6. Recap + llamado a la acción + cierre.
 
-> [!quote] 📜 Slide 2 — The Problem
+> [!quote] 📜 Slide 1 — Introducción (welcome + hook + significance + purpose)
 >
-> “Why does Guayaquil flood? There are four main reasons. First, the rain is very strong. In February 2024, more than 400 liters of rain per square meter fell in only 48 hours. Second, the high tide. In February this year, the tide was over five meters, the highest of the year, so the water can’t leave the streets. Third, the sewer system is very old. According to Segura EP, it was built in 1970. And fourth, garbage. Guayaquil collects almost 4,000 tons of garbage every day, and a lot of it blocks the drains.”
+> "Good morning, everyone. **Welcome**, and thank you for being here. My name is Steven Sánchez. **Imagine** this: you wake up, it is raining, and the street outside your house is a **river**. Your family cannot leave. Does this sound **familiar**? For many people in Guayaquil, this is **not a story**. It happens **every rainy season**. Flooding is a **serious problem** in our city. Today I will **explain the problem**, show **two consequences**, and suggest **two solutions**."
 
-> [!quote] 📜 Slide 3 — Affected Areas
+> [!quote] 📜 Slide 2 — El Problema (4 íconos: lluvia, marea, tubería vieja, basura)
 >
-> “This problem affects many neighborhoods. On this map, you can see the places with the highest risk, for example Samanes and Sauces in the north, and the southwest of the city. When the streets flood, traffic stops, houses get damaged, and children can’t go to school.”
+> "Why does Guayaquil flood? There are **four reasons**. **One: heavy rain.** In February 2024, more than 400 liters per square meter fell in only 48 hours. **Two: high tide.** This year, the tide was over five meters, so the water **cannot leave** the streets. **Three: old sewers.** According to Segura EP, the system was built in **1970**. **Four: garbage.** Guayaquil collects almost 4,000 tons every day, and a lot of it **blocks the drains**."
 
-> [!quote] 📜 Slide 4 — Solution 1
+> [!quote] 📜 Slide 3 — Consecuencias (mapa con Samanes, Sauces y el suroeste)
 >
-> “Now, my first solution: improve the drainage system. First, we need to clean the drains before the rainy season, like these trucks from Interagua do. Second, the city should build bigger pipes in the most affected areas. And third, we need campaigns so people don’t throw garbage in the street. Clean streets mean clean drains.”
+> "This problem affects many neighborhoods, like **Samanes and Sauces** in the north, and the **southwest** of the city. **First consequence:** houses get **damaged**. **Second consequence:** the city **stops**. Traffic stops, and children **can't go to school**."
 
-> [!quote] 📜 Slide 5 — Solution 2
+> [!quote] 📜 Slide 4 — Solución 1 (better drainage)
 >
-> “My second solution is green infrastructure. Mangroves work like a sponge: they absorb water. An expert says Guayaquil should recover a 200-meter strip of mangroves around the estuaries. We can also build parks that hold rainwater. In fact, the city announced a lagoon in Parque Samanes to protect the north of the city.”
+> "Now, my **first solution**: **better drainage**. First, **clean the drains** before the rainy season, like the Interagua trucks do. Second, **build bigger pipes** in the most affected areas. The **benefit**: water leaves the streets **faster**, so people can keep moving."
 
-> [!quote] 📜 Slide 6 — Closing
+> [!quote] 📜 Slide 5 — Solución 2 (green infrastructure)
 >
-> “In conclusion, flooding is a big problem, but it has solutions. I think the best idea is to combine both: better drainage plus more green spaces. If the government and citizens work together, Guayaquil can be a safer city. Thank you very much for your attention.”
+> "My **second solution**: **green infrastructure**. **Mangroves work like a sponge**: they absorb water. An expert says Guayaquil should recover a **200-meter strip** of mangroves around the estuaries. We can also build **parks that hold rainwater**. In fact, the city announced a **lagoon in Parque Samanes**. The **benefit**: nature protects us, and families get **more green spaces**."
+
+> [!quote] 📜 Slide 6 — Recap + Call to Action + Closing
+>
+> "Let me **summarize**. Guayaquil floods because of **rain, tide, old sewers, and garbage**. The consequences are **damaged houses** and a **stopped city**. The solutions are **better drainage** and **more green infrastructure**. Now it is **our turn**. Please **don't throw garbage** in the street, and ask the authorities to **protect our mangroves**. **Clean streets mean clean drains.** If we work **together**, Guayaquil can be a **safer city**. Thank you very much for your attention."
 
 ---
 
 ## 📎 Presentación (PDF)
 
-![[Flooding Guayaquil Freddy Sánchez.pdf]]
+![[Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Flooding Guayaquil Freddy Sánchez.pdf]]
 
 > [!tip] 🔗 Cómo usarla
 >
@@ -103,25 +108,25 @@ dg-publish: true
 >
 > | Solución | Acciones |
 > |---|---|
-> | Drenaje | Limpiar antes del invierno + tubos más grandes + campañas |
+> | Drenaje | Limpiar antes del invierno (Interagua) + tubos más grandes; la basura va en el llamado a la acción (S6) |
 > | Infraestructura verde | Franja 200 m de manglar + parques que retienen agua + laguna en Samanes |
 
 ---
 
 ## 🛠️ Método / Procedimiento (Estructura del Discurso)
 
-> [!note] 📋 Procedimiento General — 6 slides, ~3:00
+> [!note] 📋 Procedimiento General — 6 slides, ~3:00 (~400 palabras)
 >
-> 1. **Anuncia el mapa** (0:20) — saludo + problema + "primero el problema, luego dos soluciones".
-> 2. **Causas con datos** (0:50) — las 4, cada una con su cifra y su fuente ("according to…").
-> 3. **Zonas** (0:25) — señala el mapa: norte (Samanes, Sauces) + suroeste + 3 consecuencias.
-> 4. **Solución 1** (0:35) — drenaje en 3 pasos (limpiar + tubos + campañas).
-> 5. **Solución 2** (0:35) — manglar-esponja + franja 200 m + laguna Samanes.
-> 6. **Cierre** (0:20) — combinar ambas + gobierno y ciudadanos + gracias.
+> 1. **Apertura con hook** (0:25) — saludo + "imagina una calle-río" + significancia + mapa del discurso.
+> 2. **Causas con datos** (0:45) — las 4, contadas con los dedos, cada una con su cifra y su fuente ("according to…").
+> 3. **Consecuencias con mapa** (0:25) — Samanes, Sauces y suroeste + 2 consecuencias (casas dañadas, ciudad detenida).
+> 4. **Solución 1** (0:35) — drenaje: limpiar (Interagua) + tubos más grandes + beneficio.
+> 5. **Solución 2** (0:35) — verde: esponja-manglar + franja 200 m + laguna Samanes + beneficio.
+> 6. **Recap + CTA + cierre** (0:15) — repite 2 causas + 2 soluciones, saca la basura al CTA ("clean streets mean clean drains") y cierra mirando al público.
 >
 > **Principio clave:** cada dato lleva su fuente en la frase ("according to Segura EP", "an expert says", "the city announced") — así queda claro de dónde viene cada cifra.
 >
-> **Si te pasas del tiempo:** quita la parte del slide 3 sobre los niños en la escuela. **Si te sobra:** agrega detalle sobre los barrios del mapa.
+> **Si te pasas del tiempo:** quita la frase de los niños en la escuela (S3). **Si te sobra:** agrega detalle de los barrios del mapa.
 
 ---
 
@@ -145,11 +150,11 @@ dg-publish: true
 >
 > 🎯 **Énfasis:** S4 en 3 pasos contados con los dedos; S5 con la imagen esponja ("absorb water") + cifra 200 m.
 
-> [!example] 🟢 Slide 6 — Cierre
+> [!example] 🟢 Slide 6 — Recap + CTA + Cierre
 >
-> 👁️ **Diseño:** foto soleada del Malecón + `DRAINAGE + GREEN` + `Thank You!`.
+> 👁️ **Diseño:** foto soleada del Malecón + `RAIN · TIDE · PIPES · GARBAGE` → `DRAINAGE + GREEN` + `NOW YOUR TURN` + `Thank You!`.
 >
-> 🎯 **Énfasis:** la frase "combine both" es tu tesis — dila mirando al profesor.
+> 🎯 **Énfasis:** el recap repite las anclas de las slides 2 y 4-5; "now it is our turn" lo dices mirando al público — ahí vive la campaña de basura (CTA), no en la solución 1.
 
 ---
 
@@ -236,7 +241,7 @@ dg-publish: true
 > - ¿drainage?::Drenaje — solución 1 (limpiar + tubos).
 > - ¿mangroves = ?::Esponja que absorbe agua — franja de 200 m.
 > - ¿Las 4 causas con cifras?::400 L/m², marea 5 m, red de 1970, 4000 t/día.
-> - ¿Estructura en 6?::Anuncio → 4 causas → zonas → drenaje → verde → combinar ambas.
+> - ¿Estructura en 6?::Hook → 4 causas → consecuencias → drenaje → verde → recap + CTA.
 > - ¿Plan si te pasas del tiempo?::Quitar lo de los niños (slide 3).
 > - ¿Cada dato con qué?::Con su fuente: "according to…".
 

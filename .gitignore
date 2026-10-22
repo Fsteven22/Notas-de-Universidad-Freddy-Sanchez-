@@ -5,3 +5,6 @@
 .obsidian/
 # Derivados OCR pesados (regenerables, van al Garden desde el vault)
 *_OCR.pdf
+
+# Bytecode de Python
+__pycache__/
