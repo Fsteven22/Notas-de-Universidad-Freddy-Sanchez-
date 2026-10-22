@@ -36,7 +36,7 @@ tags: [CCPG1042, unidad0, recursos]
 
 ## 🍰 Material de clase (pizarra)
 
-- [[Clase 2026-10-19 - SIEL]] — casos de uso con el ejemplo SIEL; contenido ya integrado en [[Unidad 2 - Diseño orientado a objetos/04 - UML casos de uso, secuencia y actividad|U2-04]].
+- [[SIEL - Casos de Uso]] y [[SIEL - Modelo de Clases]] — capturas de pizarra (con el desarrollado completo del segundo); los apuntes formales están en la Unidad 2: ejemplos SIEL integrados en U2-03 y U2-04.
 
 ---
 

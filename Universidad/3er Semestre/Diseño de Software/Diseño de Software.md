@@ -27,7 +27,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 - [[02 - Diseño por componentes e interfaces]]
 - [[03 - UML clases, objetos y relaciones]]
 - [[04 - UML casos de uso, secuencia y actividad]]
-- 🗳️ [[Clase 2026-10-19 - SIEL]] — material de pizarra (portada + PDF; contenido integrado en 04)
+- 🗳️ [[Unidad 0 - Guias y Ejercicios/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] — capturas de pizarra; contenido integrado en 04
 
 ---
 
@@ -58,7 +58,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 - 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
 - 🧪 [[Unidad 0 - Guias y Ejercicios/Simulacro Lección 18 (U1 + U2-01-03)|Simulacro Lección 18]] (español U1 + U2-01 a 03)
-- 🎬 [[Clase 2026-10-19 - SIEL]] (casos de uso con el ejemplo SIEL)
+- 🎬 [[Unidad 0 - Guias y Ejercicios/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
 - Syllabus EUR-ACE CCPG1042 + alterno 2019 + 4 libros de apoyo + Técnicas de estudio en `Unidad 0 - Guias y Ejercicios/`
 
 ---

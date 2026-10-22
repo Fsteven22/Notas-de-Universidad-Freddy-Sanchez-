@@ -68,8 +68,13 @@ def main() -> int:
             n_tags = sum(1 for l in fm if l.strip().startswith("tags:"))
             if n_tags > 1:
                 rep(f"FRONTMATTER con {n_tags} lineas tags: (doble-tags del incidente 19/10)")
-            if sum(1 for l in L[j + 1:min(len(L), 16)] if l.strip() == "---"):
-                rep("FRONTMATTER duplicado: segundo bloque --- en la cabecera")
+            seg = L[j + 1:min(len(L), 16)]
+            k = next((i for i, l in enumerate(seg) if l.strip() == "---"), None)
+            if k is not None and j + 1 + k > 4:
+                interior = seg[:k]
+                cabeza_yaml = (not interior) or all((l.strip() != "" and ":" in l and not l.startswith(("#", "-", "!", "["))) for l in interior)
+                if cabeza_yaml:
+                    rep("FRONTMATTER duplicado: segundo bloque --- en la cabecera")
             stray = [i for i in range(j + 1, min(len(L), j + 11)) if L[i].strip().startswith("tags:")]
             if stray:
                 rep(f"tags: fuera del frontmatter en L{stray[0] + 1} (cuerpo contaminado)")

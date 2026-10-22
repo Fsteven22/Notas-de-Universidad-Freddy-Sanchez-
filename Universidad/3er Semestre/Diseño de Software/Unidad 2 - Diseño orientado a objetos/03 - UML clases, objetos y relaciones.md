@@ -69,6 +69,31 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 ---
 
+## 🏛️ Ejemplo de la Clase: el modelo de clases del SIEL
+
+> [!note] 📋 Caso trabajado en la clase de modelo de clases (transcripción completa con capturas: [[Unidad 0 - Guias y Ejercicios/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]])
+>
+> **1 · Identificar clases por sustantivos** (Stevens ch. 5): subraya los sustantivos → descarta los malos → quedan las clases.
+>
+> | Se descarta si es… | Ejemplo en el SIEL | Por qué |
+> |---|---|---|
+> | **Redundante** | "elector" y "ciudadano" | Nombran lo mismo |
+> | **Vago** | "información", "datos" | Sin límites claros |
+> | **Evento u operación** | "día de la elección" | Ocurre, no perdura |
+> | **Atributo** | "votos nulos" | Dato de otra clase |
+> | **Metalenguaje** | "sistema", "SIEL" | Habla del modelo, no del dominio |
+> | **Fuera de alcance** | "campaña publicitaria" | El sistema no la gestiona |
+>
+> **2 · Tarjeta CRC de `Candidatura`:** responsabilidades (conocer su dignidad y organización, conocer a sus candidatos, saber si fue aprobada o rechazada, informar su total de votos) ↔ colaboradores (`Dignidad`, `OrganizacionPolitica`, `Candidato`, `Acta`). Se valida narrando el escenario "el funcionario califica una candidatura": ¿qué tarjeta responde cada paso?
+>
+> **3 · Asociaciones con nombre y multiplicidad bilateral:** `OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura` (roles: auspiciante / candidaturas) — una organización inscribe cero o más candidaturas; cada candidatura tiene exactamente un auspiciante.
+>
+> **4 · Rombos, dependencia y nota en SIEL:** agregación `Candidatura 1..2 ─◇─ Candidato` (el candidato sobrevive si la candidatura se rechaza); composición `Acta 1..* ─◆─ ConteoVotos` (los conteos mueren con el acta); dependencia punteada `ValidadorActa ⤳ "use" Padron` (uso temporal); nota "los votos nulos no suman a ninguna candidatura".
+>
+> **5 · Generalización "es un":** *Dignidad* (abstracta, cursiva) △─ `Alcaldia`, `Prefectura` — una Alcaldía ES una Dignidad; una `Candidatura` apunta a `1` Dignidad y por sustituibilidad sirve cualquiera de sus subclases.
+
+---
+
 ## 🗺️ Diagrama de Decisión: ¿Qué Relación Uso?
 
 ![[../Diagramas/dsw-u2-04-02-flow.svg]]
@@ -214,6 +239,17 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > > - **16.** Caja de 3 compartimentos; cada atributo `visibilidad nombre : Tipo` (ej. `- ciudad : String`, `# horario : String`); cada operación con `(...) : retorno`.
 > > - **17.** Biblioteca ◆ `1` ── `1..*` Copia (sin biblioteca no hay copia); Copia `1` ── `0..*` Socio con clase-entre `Prestamo` colgando de la línea (fecha, estado).
 
+> [!example] 📋 Extra clase SIEL (caza de sustantivos)
+>
+> **18.** Relee el enunciado del SIEL (nota U2-04) y caza todos los sustantivos: ¿cuáles quedan como clases y cuáles descartas, con el motivo?
+>
+> **19.** ¿Cuál NO sería una buena clase y por qué: **P1** a) Candidatura · b) VotosNulos · c) Parroquia · d) OrganizacionPolitica — **P2** a) JRV · b) Acta · c) DiaDeLaEleccion · d) Candidato?
+>
+> > [!success]- ✅ Respuestas — Extra SIEL
+> >
+> > - **18.** Clases que quedan: OrganizacionPolitica, Candidatura, Dignidad (→ Alcaldía, Prefectura), Candidato, Acta, JRV, Funcionario electoral, Ciudadano, Observador, Padrón, Parroquia/Cantón/Provincia. Descartes: "elector/ciudadano" (redundante), "información/datos" (vago), "día de la elección" (evento), "votos nulos" (atributo), "sistema/SIEL" (metalenguaje), "lugar de votación" (atributo de ciudadano).
+> > - **19.** P1: **b) VotosNulos** — atributo (dato de otra clase; no suman a ninguna candidatura). P2: **c) DiaDeLaEleccion** — evento (algo que ocurre, no algo que perdura).
+
 ---
 
 ## 📋 Resumen Ejecutivo
@@ -294,6 +330,8 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > - ¿Cuándo clase-entre?::Cuando la relación tiene atributos o ciclo de vida propio (ej. `Prestamo` entre Copia y Socio).
 > - ¿Cómo se marca una clase abstracta?::Nombre en cursiva (o etiqueta `{abstract}` en papel); no se instancia, solo hereda.
 > - ¿Qué significa visibilidad `#`?::Protegida: visible para la clase y sus herederos.
+> - ¿Cómo se identifican las clases de un enunciado?::Subraya los sustantivos y descarta: redundantes, vagos, eventos, atributos, metalenguaje y fuera de alcance (Stevens ch. 5).
+> - ¿Qué lleva una tarjeta CRC y cómo se valida?::Responsabilidades (quién hace qué) y colaboradores (con quién); se valida narrando el escenario y viendo si cada paso tiene tarjeta que responda.
 
 ## 🔗 Seguir estudiando
 

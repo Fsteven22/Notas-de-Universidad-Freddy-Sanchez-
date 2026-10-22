@@ -1,12 +1,14 @@
 ---
 dg-publish: true
-tags: [CCPG1042, unidad0, clase, modelo-de-clases]
+tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 ---
 
-# 🏛️ Clase 2026-10-21 — Modelo de Clases: lo necesario y nada más (ejemplo SIEL)
+# 🏛️ SIEL — Modelo de Clases: lo necesario y nada más (capturas)
 
 > [!info] ℹ️ Qué es esto
-> Transcripción completa de las 8 capturas del deck de la clase de **Modelo de Clases**, segunda lección del caso **SIEL** (Sistema de Elecciones) para Control03. Fuentes: Stevens cap. 5 · Pressman & Maxim, Apéndice 1. Deck: *Bloque 2 · minutos 60 a 107*.
+> Transcripción completa de las 8 capturas del deck de **Modelo de Clases**, segunda lección del caso **SIEL** (Sistema de Elecciones) para Control03. Fuentes: Stevens cap. 5 · Pressman & Maxim, Apéndice 1. Deck: *Bloque 2 · minutos 60 a 107*.
+>
+> El ejemplo resumido vive en [[03 - UML clases, objetos y relaciones]]; aquí queda el desarrollo completo con las capturas.
 
 ## 🧭 Portada — qué cubre
 
@@ -33,7 +35,7 @@ Flujo: **1 · Subraya los sustantivos → 2 · Descarta los malos → 3 · Queda
 > [!warning] 🎯 Pregunta típica de examen
 > "¿Cuál de estas NO sería una buena clase?"
 
-![[Pasted image 20261021224601.png]]
+![[Modelo de clases-7.png]]
 
 ## ✅ Un buen modelo y las tarjetas CRC
 
@@ -172,22 +174,10 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 
 ![[Modelo de clases-6.png]]
 
-## 🗂️ Originales
-
-- 8 capturas del deck en esta carpeta (`Modelo de clases.png`, `…-1` a `…-6`,
-  `Pasted image 20261021224601.png`).
-
-## 📚 Qué sigue
-
-> [!todo] Pendiente (decisión del usuario)
-> Integrar el ejemplo SIEL de modelo de clases dentro de
-> [[03 - UML clases, objetos y relaciones]] (mismo método del caso de uso del
-> 19/10, que ya quedó en [[04 - UML casos de uso, secuencia y actividad]]).
-
 ---
 
 - Mapa de contenido: [[Diseño de Software]]
 - Índice Unidad 2: [[00 - Índice Unidad 2]]
-- Clase anterior: [[Clase 2026-10-19 - SIEL]]
+- Complemento: [[SIEL - Casos de Uso]]
 
-**Tags:** #CCPG1042 #unidad0 #clase #modelo-de-clases
+**Tags:** #CCPG1042 #unidad2 #siel #modelo-de-clases
