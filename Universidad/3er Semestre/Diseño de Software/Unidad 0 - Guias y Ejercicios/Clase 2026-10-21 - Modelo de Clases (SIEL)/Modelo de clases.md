@@ -1,0 +1,1 @@
+![[Pasted image 20261021224601.png]]![[Modelo de clases.png]]![[Modelo de clases-1.png]]![[Modelo de clases-2.png]]![[Modelo de clases-3.png]]![[Modelo de clases-4.png]]![[Modelo de clases-5.png]]![[Modelo de clases-6.png]]
