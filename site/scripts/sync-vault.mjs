@@ -54,6 +54,7 @@ const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 
 const MD_EXT = /\.(md|markdown)$/i;
 const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
+const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -287,7 +288,7 @@ async function main() {
     const file = path.join(OUT_CONTENT, nota.file + ".md");
     const relKey = nota.file + ".md";
     const old = await (await import("node:fs/promises")).readFile(file, "utf8");
-    const txt = resolveWikilinks(old, linkMap);
+    const txt = resolveWikilinks(old, linkMap, (base) => resolveAsset(base, nota.sem, nota.mat, assetMaps));
     if (txt !== old) await writeFile(file, txt, "utf8");
     writtenNotes.add(relKey);
   }
@@ -435,6 +436,13 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
     if (IMG_EXT.test(url)) return `![${label}](${encodeURI(url)})`;
     return docCard(label, url);
   });
+  // links markdown relatives a media → absolutos (fout ! ya fue manejado):
+  t = t.replace(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
+    if (/^(https?:|\/|data:|mailto:|#)/.test(src)) return m;
+    const url = resolveAsset(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
+    if (!url) return m;
+    return `[${alt}]( ${encodeURI(url)} )`.replace(/\(\s+/g, "(").replace(/\s+\)/g, ")");
+  });
 
   // embeds markdown con ruta relativa → absoluta pública (mismo criterio)
   t = t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
@@ -494,7 +502,19 @@ function escapeHtml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-function resolveWikilinks(t, linkMap) {
+function resolveWikilinks(t, linkMap, resolveMediaLink) {
+  // 1) wikilinks a MEDIA (sin !): [[file.pdf|alias]] / [[file.png]] →
+  //    en Obsidian se ven como links clickeables; en la web emiten
+  //    link a /assets/... o se descartan si el asset no existe.
+  t = t.replace(/\[\[([^\]|#]+)\.([a-z0-9]+)(#[^\]|]*)?(?:\|([^\]]+))?\]\]/gi, (m, stem, ext, anchor, alias) => {
+    const base = path.basename((stem + "." + ext).trim());
+    if (!MEDIA_EXT.test("." + ext)) return m;
+    const url = resolveMediaLink(base);
+    if (!url) return `<!-- nx:link-omitido ${escapeHtml(base)} -->`;
+    if (anchor) return m; // anclas sobre media no tienen sentido: sin embed
+    return `[${alias || `📄 ${base}`}](${encodeURI(url)})`;
+  });
+  // 2) [[Target#Sección|alias]] / [[Target|alias]] / [[Target]] → notas
   // [[Target#Sección|alias]] / [[Target|alias]] / [[Target]]
   t = t.replace(/\[\[([^\]|#]+)(#[^\]|]+)?(?:\|([^\]]+))?\]\]/g, (m, target, anchor, alias) => {
     if (!target.trim()) return m;
