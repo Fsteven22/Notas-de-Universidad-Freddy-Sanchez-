@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+﻿import { defineConfig } from "astro/config";
 import path from "node:path";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
@@ -8,7 +8,7 @@ import rehypeKatex from "rehype-katex";
 import { rehypeCallouts } from "./src/lib/rehype-callouts.mjs";
 
 export default defineConfig({
-  site: "https://notas-nexus.vercel.app",
+  site: "https://neonotes.vercel.app",
   integrations: [react()],
   prefetch: {
     prefetchAll: true,
