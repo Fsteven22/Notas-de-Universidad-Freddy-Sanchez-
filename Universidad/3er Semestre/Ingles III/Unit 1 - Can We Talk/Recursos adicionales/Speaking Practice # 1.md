@@ -81,7 +81,7 @@ tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 
 ## 📎 Presentación (PDF)
 
-![[Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Flooding Guayaquil Freddy Sánchez.pdf]]
+![[../../Unidad 0 - Guias y Ejercicios/Flooding Guayaquil Freddy Sánchez.pdf]]
 
 > [!tip] 🔗 Cómo usarla
 >
