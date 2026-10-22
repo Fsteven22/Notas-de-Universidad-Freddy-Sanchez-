@@ -50,7 +50,7 @@ function titleFor(type) {
   return DEFAULT_TITLES[type] ?? "Nota";
 }
 
-function calloutDiv(type, title, children) {
+function calloutDiv(type, title, isRich, children) {
   const [color, icon] = TYPES[type] ?? ["blue", "ℹ️"];
   return {
     type: "element",
@@ -64,7 +64,7 @@ function calloutDiv(type, title, children) {
         type: "element",
         tagName: "p",
         properties: { className: ["nx-callout-title"] },
-        children: [{ type: "text", value: `${icon} ${title}` }],
+        children: isRich ? [{ type: "text", value: `${icon} ` }, ...title] : [{ type: "text", value: `${icon} ${title}` }],
       },
       ...children,
     ],
@@ -73,12 +73,37 @@ function calloutDiv(type, title, children) {
 
 function extractTitle(pNode) {
   const text = flattenText(pNode).trim();
-  const m = text.match(/^\[!(\w+)\]?([-+]?)[\s\S]*$/);
+  const m = text.match(/^\[!(\w+)\]?([-+]?)/);
   if (!m) return null;
   const raw = m[1].toLowerCase();
   const type = TYPES[raw] ? raw : "note";
-  const titleLine = text.split("\n")[0].replace(/^\[!(\w+)\]?[-+]?[ \t]*/, "").trim();
-  return { type, title: titleLine || titleFor(type), header: m[0].length > 0 };
+  // titulo RICO: recorre los niños hasta el primer salto de línea preservando
+  // los elementos (math inline de remark-math, énfasis, links) para que
+  // rehype-katex siga procesándolos; el tipo se detecta por texto plano.
+  const kids = [];
+  let stripped = false;
+  for (const child of pNode.children ?? []) {
+    if (child.type === "break") break;
+    if (child.type === "text") {
+      let v = child.value ?? "";
+      const nl = v.indexOf("\n");
+      if (!stripped) {
+        v = v.replace(/^\s*\[!(\w+)\]?[-+]?[ \t]?/, "");
+        stripped = true;
+      }
+      if (nl !== -1) {
+        if (v.slice(0, nl)) kids.push({ type: "text", value: v.slice(0, nl) });
+        break;
+      }
+      if (v) kids.push({ type: "text", value: v });
+    } else {
+      kids.push(child);
+    }
+  }
+  const titleChildren = kids.filter((k) => k.type !== "text" || (k.value ?? "").length > 0);
+  const isPlain = titleChildren.every((k) => k.type === "text");
+  const title = isPlain ? titleChildren.map((k) => k.value ?? "").join("").trim() || titleFor(type) : titleChildren;
+  return { type, title, isRich: !isPlain };
 }
 
 /** separa el resto de la línea del título (contenido tras el salto de línea) */
@@ -125,7 +150,7 @@ export function rehypeCallouts() {
         const info = c.tagName === "p" ? extractTitle(c) : null;
         if (info) {
           segments.push(current);
-          current = { kind: "callout", type: info.type, title: info.title, header: c, body: keepBodyRemainder(c), children: [] };
+          current = { kind: "callout", type: info.type, title: info.title, isRich: !!info.isRich, header: c, body: keepBodyRemainder(c), children: [] };
           hasCallout = true;
           continue;
         }
@@ -153,7 +178,7 @@ export function rehypeCallouts() {
         const header = seg.header;
         void header;
         const siblings = seg.children;
-        result.push(calloutDiv(seg.type, seg.title, [...seg.body, ...siblings]));
+        result.push(calloutDiv(seg.type, seg.title, seg.isRich, [...seg.body, ...siblings]));
       }
     }
     return result.length === 1 ? result[0] : result;

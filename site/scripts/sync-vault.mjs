@@ -53,6 +53,11 @@ const SEMESTER_IDS = {
 const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 
 const MD_EXT = /\.(md|markdown)$/i;
+const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
+
+/** Carpetas de la RAÍZ del vault con assets globales referenciables desde
+ *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
+const ROOT_ASSET_DIRS = ["Figuras", "Diagramas"];
 
 /** Gate de publicación (Fase 1): una nota va al site solo si su frontmatter
  *  inicial declara `dg-publish: true`. Sin frontmatter = omitida. */
@@ -166,6 +171,28 @@ async function main() {
   const linkMap = new Map(); // título de nota → url
   const assetMaps = new Map(); // "sem/mat" y "sem/*" y "raiz" → Map(base→assetUrl)
 
+  // ── 1b. assets globales de la raíz del vault (Figuras/, Diagramas/ y
+  // sueltos en la primera capa): alimentan el mapa "raiz" que consultará
+  // resolveAsset desde cualquier materia. No generan materias fantasma
+  // (el Hallazgo 1 sigue válido: son assets, no notas).
+  const raizAssets = new Map();
+  const rootAssetFiles = rootWalk.files.filter((f) => {
+    const top = f.rel.split("/")[0];
+    const isRootDir = ROOT_ASSET_DIRS.includes(top);
+    const isTopLevel = !f.rel.includes("/");
+    return (isRootDir || isTopLevel) && !MD_EXT.test(f.name) && !f.name.startsWith(".");
+  });
+  for (const f of rootAssetFiles) {
+    const rel = f.rel.split("/");
+    const fileName = rel[rel.length - 1];
+    const dirs = rel.slice(0, -1).map(slugify);
+    const url = `/assets/raiz/${[...dirs, fileName].join("/")}`;
+    const dest = path.join(OUT_ASSETS, "raiz", ...dirs, fileName);
+    await mkdir(path.dirname(dest), { recursive: true });
+    await copyIfChanged(f.full, dest, url.slice("/assets/".length));
+    if (!raizAssets.has(fileName)) raizAssets.set(fileName, url);
+  }
+  assetMaps.set("raiz", raizAssets);
   const notas = [];
   const omitidas = []; // Fase 1: notas sin `dg-publish: true` → fuera del site
   const pdfsPorMat = new Map();
@@ -381,21 +408,41 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
 
   // quitar comentarios SR (ruido para la web)
   t = t.replace(/<!--SR:.*?-->/g, "");
+  // "Tags: #a #b …" → chips visuales en vez de texto crudo
+  t = t.replace(/^[ \t_]*(\*\*)?[ \t]*(Tags?|Etiquetas)[ \t]*(\*\*)?[ \t]*:(.*)$/gim, (m, b1, k, b2, rest) => {
+    rest = (rest || "").trim();
+    if (!rest || !rest.includes("#")) return m;
+    const chips = rest
+      .split(/\s+/)
+      .filter((w) => w.startsWith("#"))
+      .map((w) => `<span class="nx-tag">${escapeHtml(w)}</span>`)
+      .join(" ");
+    return chips ? `<p class="nx-tags">${chips}</p>` : m;
+  });
 
   // flashcards Q::A → <details>
   t = transformFlashcards(t);
 
-  // embeds ![[file]]  →  ![file](/assets/…)
+  // tarjeta de documento para embeds no-imagen (pdf, docx, mp4, …)
+  const docCard = (label, url) =>
+    `<div class="nx-doc"><a href="${encodeURI(url)}" target="_blank" rel="noopener">📄 ${escapeHtml(label)}</a></div>`;
+
+  // embeds ![[file]] → imagen codificada, tarjeta de doc, o comentario si no existe
   t = t.replace(/!\[\[([^\]|]+?)(?:\|[^\]]*)?\]\]/g, (_, name) => {
-    const url = resolveAsset(name.trim(), sem, mat, assetMaps);
-    return url ? `![${name.trim()}](${url})` : `**${name.trim()}**`;
+    const label = name.trim();
+    const url = resolveAsset(label, sem, mat, assetMaps);
+    if (!url) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
+    if (IMG_EXT.test(url)) return `![${label}](${encodeURI(url)})`;
+    return docCard(label, url);
   });
 
-  // imágenes markdown con ruta relativa → absoluta pública
-  t = t.replace(/(!\[(?:[^\]]*)\])\(([^)]+)\)/g, (m, alt, src) => {
+  // embeds markdown con ruta relativa → absoluta pública (mismo criterio)
+  t = t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
     if (/^(https?:|\/|data:)/.test(src)) return m;
     const url = resolveAsset(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
-    return url ? `${alt}(${url})` : m;
+    if (!url) return `<!-- nx:asset-omitido ${escapeHtml((alt || src).trim())} -->`;
+    if (IMG_EXT.test(url)) return `![${alt}](${encodeURI(url)})`;
+    return docCard(alt.trim() || src.trim(), url);
   });
 
   // lenguas de fence no soportadas por shiki → sin anotación

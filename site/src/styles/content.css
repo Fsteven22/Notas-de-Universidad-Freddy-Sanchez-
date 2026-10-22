@@ -242,3 +242,58 @@ details.nx-fc p {
   color: #d1d5db;
   border-top: 1px dashed rgba(0, 255, 136, 0.15);
 }
+
+/* Documentos embebidos no-imagen (pdf, docx, ...) */
+.nx-doc {
+  margin: 1rem 0;
+}
+.nx-doc a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.6rem;
+  background: rgba(0, 170, 255, 0.05);
+  color: var(--color-nexus-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+.nx-doc a:hover {
+  border-color: var(--color-nexus-green);
+  background: rgba(0, 255, 136, 0.04);
+}
+
+/* Chips de tags */
+.nx-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.2rem 0;
+}
+.nx-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 255, 136, 0.28);
+  background: rgba(0, 255, 136, 0.05);
+  color: var(--color-nexus-green);
+}
+
+/* KaTeX: tamano dentro de titulos de callout + overflow horizontal en movil */
+.nx-callout-title .katex {
+  font-size: 1em;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.3rem 0;
+}
+.note-prose .katex {
+  font-size: 1.05em;
+}
