@@ -10,22 +10,21 @@ tags: [FISG1001, unidad0, recursos]
 
 ## 📎 Syllabus y políticas
 
-*(Pendiente: aún no hay PDFs cargados)*
+- ![[FISG1001-Slides-S01 Sesión 1.pdf]] y 25 sesiones más — índice: [[Guías y Ejercicios (Prof. Zambrano)]]
+> [!note] El material de clase del profesor ya tiene un hub completo con index por sesión y ejercicio.
 
 > [!note] 💛 El syllabus completo está como nota
 > Ver [[Bienvenida y Syllabus Física Mecánica|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
-*(Pendiente)*
+- [[Guías y Ejercicios (Prof. Zambrano)]] — hub con los 26 slides de clase + 28 guías de taller + 15 tareas (~90 ejercicios) de Física Mecánica, cada uno enlazado a su nota de estudio.
 
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
-> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
-> - `FISG1001-Guia-XX.pdf`
-> - `FISG1001-Ejercicios-Tema.pdf`
-> - `FISG1001-Practica-XX.pdf`
+> Material ya cargado (2026-10-23): guías de taller S1-S40, tareas 01-21, slides de clase, Salida de Campo y metodología PIA del Prof. Zambrano.
+> Falta el PDF del syllabus oficial y las sesiones faltantes: S3, S11, S17, S20-21, S24, S31-34 y S39.
 
 ---
 
