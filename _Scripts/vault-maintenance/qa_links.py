@@ -1,16 +1,20 @@
-import argparse, os, re, io, unicodedata
+﻿import argparse, os, re, io, unicodedata, difflib
 
 # Verifica que todos los [[links]] e ![[embeds]] de las notas del vault
 # resuelvan contra un archivo real (md/pdf/imagen/...).
 # NFC/NFD-safe y sin confiar en splitext (nombres con puntos internos ej. "Prof.").
 # Uso:  python qa_links.py "<carpeta-vault>" -o reporte.txt
 #       (los BAD van al reporte; a consola solo el conteo, para evitar cp1252)
+#       python qa_links.py "<carpeta-vault>" -o reporte.txt --sugerir
+#       (agrega a cada BAD los candidatos de nota parecida para
+#        decidir crear / redireccionar / borrar)
 
 KNOWN = (".md", ".pdf", ".png", ".svg", ".pptx", ".jpg", ".jpeg", ".gif", ".webp")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("root")
 ap.add_argument("-o", default=None)
+ap.add_argument("--sugerir", action="store_true")
 args = ap.parse_args()
 
 names = set()
@@ -49,6 +53,16 @@ for dp, ds, fs in os.walk(args.root):
                 bad.append("BAD: %s [en %s]" % (m.strip(), rel))
 
 out = "targets=%d  bad=%d\n" % (total, len(bad)) + "\n".join(bad)
+if args.sugerir:
+    notas = [n for n in names if n.endswith(".md")]
+    base_nota = [unicodedata.normalize("NFC", os.path.splitext(n)[0]) for n in notas]
+    con_sug = []
+    for b in bad:
+        tg = b[5:].rsplit(" [en ", 1)[0]
+        tg_c = unicodedata.normalize("NFC", tg)
+        cortes = difflib.get_close_matches(tg_c, base_nota, n=3, cutoff=0.4)
+        con_sug.append(b + ("  -> igual/nuevo: " + " | ".join(cortes) if cortes else "  -> sin parecida: crear o borrar"))
+    out = "targets=%d  bad=%d\n" % (total, len(bad)) + "\n".join(con_sug)
 if args.o:
     io.open(args.o, "w", encoding="utf-8", newline="\n").write(out)
     print("targets=%d bad=%d reporte=%s" % (total, len(bad), args.o))
