@@ -201,7 +201,15 @@ dg-publish: true
 >    total_ingresos = sum(ingresos)
 >    total_gastos = sum([g["cantidad"] for g in gastos])
 >    return total_ingresos - total_gastos
-> ```
+```
+> 
+> ### 🎓 Casos Transversales (slides del profesor)
+> 
+> |Campo|Idea|Conceptos con Python|
+> |---|---|---|
+> |🥗 **Nutrición**|Calcular valor calórico de una receta o registrar consumo diario|Variables para datos de alimentos, listas de ingredientes, funciones con base de datos nutricional|
+> |🎨 **Diseño Gráfico**|Redimensionar lotes de imágenes o aplicar filtros uniformes|Bibliotecas de imágenes (ej. **Pillow**), scripts que procesan múltiples archivos automáticamente|
+> |🏭 **Ing. Industrial**|Analizar tiempos de ciclo de máquinas y detectar cuellos de botella|Importar datos de producción (hojas de cálculo), estadística (promedios, desviaciones) y visualizaciones|
 
 ## Técnicas de Estudio Eficaces 🎓
 

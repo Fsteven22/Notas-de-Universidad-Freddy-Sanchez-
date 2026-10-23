@@ -164,4 +164,11 @@ dg-publish: true
 
 ---
 
+## Reglas del curso y ponderación
+
+> [!tip] 📋 Políticas oficiales
+> La ponderación de calificaciones, asistencia/atrasos, contacto del profesor y la política de uso de LLMs están en [[Políticas del Curso CCPG1043]] (basada en el material oficial del aula).
+
+---
+
 **Tags:** #programacion #python #ESPOL #CCPG1001 #semester1

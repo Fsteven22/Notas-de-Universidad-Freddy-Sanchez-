@@ -10,7 +10,7 @@ tags: [CCPG1001, unidad0, recursos]
 
 ## 📎 Syllabus y políticas
 
-*(Pendiente: aún no hay PDFs cargados)*
+- ![[CCPG1001-Políticas del curso.pdf]] — estudio: [[Políticas del Curso CCPG1043]]
 
 > [!note] 💛 El syllabus completo está como nota
 > Ver [[Bienvenida y Syllabus Fundamentos de Programación|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
@@ -28,10 +28,14 @@ tags: [CCPG1001, unidad0, recursos]
 > - [[Módulo 6.1 Introducción a NumPy]] — *Módulo 6 - Pandas*
 > - [[Expresiones Regulares (Regex)]] — *Módulo general - Funciones especiales*
 
+## 📽️ Material de clase del profesor
+
+- [[Material de clase (slides del profesor)]] — los 17 PDFs de teoría (módulos 1-6) + políticas, cada uno enlazado a su nota de estudio del vault.
+
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
-> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
+> Guías de taller, listas de ejercicios y prácticas del aula virtual (la teoría ya está cubierta por el material del profesor). Al llegarlos, soltar el PDF aquí con nombre con contexto:
 > - `CCPG1001-Guia-XX.pdf`
 > - `CCPG1001-Ejercicios-Tema.pdf`
 > - `CCPG1001-Practica-XX.pdf`

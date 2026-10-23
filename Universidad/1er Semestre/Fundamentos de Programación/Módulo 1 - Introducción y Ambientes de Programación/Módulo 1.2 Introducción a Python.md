@@ -30,6 +30,37 @@ dg-publish: true
 > |**Portabilidad**|✅ Alta|❌ Limitada|
 > |**Depuración**|✅ Inmediata|❌ Requiere recompilación|
 
+## Sintaxis Esencial 📐
+
+> [!tip]+ **Reglas que no se negocian**
+> 
+> ### 🔍 Case Sensitivity
+> 
+> Python **distingue mayúsculas de minúsculas**: `suma`, `Suma` y `SUMA` son tres variables distintas.
+> 
+> ### 📏 Indentación significativa
+> 
+> ```python
+> def calculo(x):
+>     if x > 0:
+>         print("Es positivo")
+>         hora_extra = x + 1   # parte del if
+>     return hora_extra        # parte de la función
+> ```
+> 
+> - **4 espacios** es el estándar (PEP 8); mezclar tabs y espacios causa `TabError`
+> - La indentación delimita los bloques: a diferencia de C (llaves `{}`), en Python el nivel de sangría define qué código pertenece a cada `if`, `for`, `def`
+> 
+> ### ✍️ Comentarios
+> 
+> ```python
+> # Comentario de una sola línea (con #)
+> print("Hola")  # también al final de una línea
+> ```
+> 
+> - Convención del curso: escribir primero el código, luego las **docstrings** de documentación y los comentarios que expliquen el *por qué*
+> - Los comentarios hacen el código más legible para humanos (y para tu yo del futuro)
+
 ## Primeros Pasos 🚀
 
 > [!example]+ **Configuración Inicial**
@@ -55,6 +86,34 @@ dg-publish: true
 > ```
 
 ![[Diagramas/Módulo_1.2_Introducción_a_Python_01.svg]]
+
+## ¿Cómo se Ejecuta el Código? ⚙️
+
+> [!info]+ **Tres formas habituales**
+> 
+> |Forma|Comando / Acción|Cuándo usarla|
+> |---|---|---|
+> |🖥️ **Terminal**|`python mi_primer_programa.py`|Scripts `.py` y automatización|
+> |🖱️ **IDE / Editor**|Botón "Run" de VS Code / PyCharm|Desarrollo diario|
+> |📓 **Notebook**|Ejecutar una celda|Experimentos y análisis de datos|
+> 
+> En todos los casos el flujo es el mismo: se escribe el **código fuente** y el **intérprete** lo ejecuta línea por línea.
+
+## Herramientas para Escribir Python 🛠️
+
+> [!example]+ **Editores e IDEs recomendados**
+> 
+> |Herramienta|Qué es|Por qué te sirve acá|
+> |---|---|---|
+> |📝 **Editores de texto** (VS Code, Sublime)|Escribir y correr código con plugins mínimos|Ligeros, ideales para scripts|
+> |🔧 **IDEs** (PyCharm Community)|Todo integrado: consola, debugger, proyectos|Depuración y proyectos grandes|
+> |📓 **Jupyter / Notebooks**|Celdas de código + texto + gráficos|Un "cuaderno" para explicar pasos|
+> |☁️ **Google Colab**|Jupyter en el navegador, sin instalar nada|Cero configuración, corre en la nube|
+> 
+> ### 💡 Recomendación práctica
+> 
+> - Instalar **un editor con soporte Python** (VS Code gratuito + extensión de Python) para los talleres
+> - Usar **Colab** como respaldo si no tienes tu computadora a mano
 
 ## Analogía del Traductor Simultáneo 🗣️
 
@@ -176,6 +235,23 @@ dg-publish: true
 > |**☕ Java**|⭐⭐⭐|⭐⭐⭐⭐|⭐⭐⭐⭐|⭐⭐⭐⭐|
 > |**🔧 C++**|⭐⭐|⭐⭐⭐⭐⭐|⭐⭐⭐⭐|⭐⭐⭐|
 > |**💎 JavaScript**|⭐⭐⭐⭐|⭐⭐⭐|⭐⭐⭐|⭐⭐⭐⭐|
+
+## La Filosofía Python: el Zen 🧘
+
+> [!quote]+ **`import this` — El Zen de Python (Tim Peters)**
+> 
+> ```python
+> >>> import this
+> Bello es mejor que feo.
+> Explícito es mejor que implícito.
+> Simple es mejor que complejo.
+> Complejo es mejor que complicado.
+> Plano es mejor que anidado.
+> ...
+> La legibilidad cuenta.
+> ```
+> 
+> No es un chiste: es la **guía de estilo** del lenguaje. Si tu solución se aleja de "simple es mejor que complejo", casi siempre existe una forma más clara de escribirla.
 
 ## Referencias 📚
 
