@@ -291,21 +291,21 @@ dg-publish: true
 > 
 > 
 > 
-**Demostración del mínimo por casos:**
+> **Demostración del mínimo por casos:**
 > 
-**Caso 1:** $x \geq y \Rightarrow x - y \geq 0$, entonces $|x - y| = x - y$.
+> **Caso 1:** $x \geq y \Rightarrow x - y \geq 0$, entonces $|x - y| = x - y$.
 > 
-$$\frac{x + y - (x - y)}{2} = \frac{2y}{2} = y = \min\{x, y\} \checkmark$$
+> $$\frac{x + y - (x - y)}{2} = \frac{2y}{2} = y = \min\{x, y\} \checkmark$$
 > 
-**Caso 2:** $x < y \Rightarrow x - y < 0$, entonces $|x - y| = -(x-y) = y - x$.
+> **Caso 2:** $x < y \Rightarrow x - y < 0$, entonces $|x - y| = -(x-y) = y - x$.
 > 
-$$\frac{x + y - (y - x)}{2} = \frac{2x}{2} = x = \min\{x, y\} \checkmark$$
-> 
-> 
+> $$\frac{x + y - (y - x)}{2} = \frac{2x}{2} = x = \min\{x, y\} \checkmark$$
 > 
 > 
-La lógica es simétrica a la del máximo: en cada caso, al restar $|x-y|$ en lugar de sumarlo, "cancela" el mayor y deja el menor.
-
+> 
+> 
+> La lógica es simétrica a la del mínimo: en cada caso, al restar $|x-y|$ en lugar de sumarlo, "cancela" el mayor y deja el menor.
+> 
 ---
 
 ## 📊 Comparación de Técnicas
