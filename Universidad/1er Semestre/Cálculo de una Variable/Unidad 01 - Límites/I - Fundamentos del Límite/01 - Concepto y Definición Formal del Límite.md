@@ -170,7 +170,7 @@ dg-publish: true
 > - [[02 - Límites Laterales]] - Extensión del concepto
 > - [[03 - Límites en Gráficas]] - Interpretación visual detallada
 > - [[01 - Continuidad y Límites]] - Relación entre límites y continuidad
-> - [[01 - Concepto y Definición Formal del Límite]] - Formalización rigurosa
+> - 01 - Concepto y Definición Formal del Límite - Formalización rigurosa
 
 ## Notas Recomendadas 💡
 
@@ -435,21 +435,21 @@ dg-publish: true
 
 > [!quote] 🔗 Notas Relacionadas
 > 
-> - [[01 - Concepto y Definición Formal del Límite]] - Base conceptual informal
-> - [[Límites por la Izquierda y Derecha]] - Extensión lateral
-> - [[Continuidad de Funciones]] - Aplicación directa
+> - 01 - Concepto y Definición Formal del Límite - Base conceptual informal
+> - Límites por la Izquierda y Derecha - Extensión lateral
+> - Continuidad de Funciones - Aplicación directa
 > - [[01 - Propiedades y Teoremas de los Límites]] - Propiedades demostradas rigurosamente
 
 ## Notas Recomendadas 💡
 
 > [!note] 📖 Para Profundizar
 > 
-> - [[Análisis Real]] - Contexto matemático completo
-> - [[Topología Básica]] - Conceptos de vecindades
-> - [[Historia del Cálculo]] - Desarrollo histórico
-> - [[Demostraciones Matemáticas]] - Técnicas de prueba
-> - [[Fundamentos de Análisis]] - Teoría avanzada de límites
-> - [[Espacios Métricos]] - Generalización abstracta
+> - Análisis Real - Contexto matemático completo
+> - Topología Básica - Conceptos de vecindades
+> - Historia del Cálculo - Desarrollo histórico
+> - Demostraciones Matemáticas - Técnicas de prueba
+> - Fundamentos de Análisis - Teoría avanzada de límites
+> - Espacios Métricos - Generalización abstracta
 
 ---
 
@@ -842,27 +842,27 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Definición de Límite]] - Base épsilon-delta
+> - Definición de Límite - Base épsilon-delta
 > - [[01 - Propiedades y Teoremas de los Límites]] - Casos básicos
 > - [[01 - Propiedades y Teoremas de los Límites]] - Álgebra de límites
 > 
 > **Temas relacionados:**
 > 
-> - [[Continuidad de Funciones]] - Conexión con definiciones formales
+> - Continuidad de Funciones - Conexión con definiciones formales
 > - [[02 - Límites Laterales]] - Extensión unilateral
-> - [[Comportamiento Asintótico]] - Análisis de funciones
+> - Comportamiento Asintótico - Análisis de funciones
 > 
 > **Aplicaciones:**
 > 
-> - [[Derivadas]] - Límites en la definición
+> - Derivadas - Límites en la definición
 > - [[01 - Integrales Impropias]] - Límites de integración infinitos
-> - [[Series Infinitas]] - Criterios de convergencia
+> - Series Infinitas - Criterios de convergencia
 > 
 > **Análisis avanzado:**
 > 
-> - [[Topología de la Recta Real]] - Fundamentos teóricos
-> - [[Funciones de Variable Real]] - Comportamiento global
-> - [[Análisis Asintótico]] - Aplicaciones en ingeniería
+> - Topología de la Recta Real - Fundamentos teóricos
+> - Funciones de Variable Real - Comportamiento global
+> - Análisis Asintótico - Aplicaciones en ingeniería
 
 ## 💡 Notas Históricas y Conceptuales
 
