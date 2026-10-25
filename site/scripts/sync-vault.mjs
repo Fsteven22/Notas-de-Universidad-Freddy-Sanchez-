@@ -55,7 +55,6 @@ const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 const MD_EXT = /\.(md|markdown)$/i;
 const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
-const PDF_VIEWER = "/pdfjs/viewer.html?file=";
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -460,17 +459,13 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
     `<div class="nx-doc"><a href="${encodeURI(url)}" target="_blank" rel="noopener">📄 ${escapeHtml(label)}</a></div>`;
 
 
-  // visor embebido para PDFs (iframe con pdf.js autocontenido, mismo origen) + descarga
-  const pdfViewer = (label, url) =>
-    `<div class="nx-pdf-viewer"><iframe class="nx-pdf-frame" src="${PDF_VIEWER}${encodeURIComponent(url)}" referrerpolicy="no-referrer" allowfullscreen></iframe><div class="nx-pdf-actions"><a href="${encodeURI(url)}" target="_blank" rel="noopener" download>?? Descargar ${escapeHtml(label)}</a> <a href="${encodeURI(url)}" target="_blank" rel="noopener">Pantalla completa ?</a></div></div>`;
-
   // embeds ![[file]] → imagen codificada, tarjeta de doc, o comentario si no existe
   t = t.replace(/!\[\[([^\]|]+?)(?:\|[^\]]*)?\]\]/g, (_, name) => {
     const label = name.trim();
     const url = resolveAsset(label, sem, mat, assetMaps);
     if (!url) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
     if (IMG_EXT.test(url)) return `![${label}](${encodeURI(url)})`;
-    return url.toLowerCase().endsWith(".pdf") ? pdfViewer(label, url) : docCard(label, url);
+    return docCard(label, url);
   });
   // links markdown relatives a media → absolutos (fout ! ya fue manejado):
   t = t.replace(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
@@ -486,8 +481,7 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
     const url = resolveAsset(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
     if (!url) return `<!-- nx:asset-omitido ${escapeHtml((alt || src).trim())} -->`;
     if (IMG_EXT.test(url)) return `![${alt}](${encodeURI(url)})`;
-    const mLabel = alt.trim() || src.trim();
-    return url.toLowerCase().endsWith(".pdf") ? pdfViewer(mLabel, url) : docCard(mLabel, url);
+    return docCard(alt.trim() || src.trim(), url);
   });
 
   // lenguas de fence no soportadas por shiki → sin anotación
