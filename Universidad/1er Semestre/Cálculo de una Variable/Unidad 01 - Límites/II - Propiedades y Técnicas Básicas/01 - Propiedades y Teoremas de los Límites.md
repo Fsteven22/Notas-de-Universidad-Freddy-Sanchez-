@@ -340,26 +340,26 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[01 - Propiedades y Teoremas de los Límites]] - Casos básicos
-> - [[Definición de Límite]] - Fundamento teórico
-> - [[Continuidad de Funciones]] - Base para aplicación
+> - 01 - Propiedades y Teoremas de los Límites - Casos básicos
+> - Definición de Límite - Fundamento teórico
+> - Continuidad de Funciones - Base para aplicación
 > 
 > **Temas relacionados:**
 > 
-> - [[Límites Indeterminados]] - Casos donde las propiedades fallan
+> - Límites Indeterminados - Casos donde las propiedades fallan
 > - [[01 - Formas Indeterminadas]] - Técnica para formas indeterminadas
-> - [[Teorema del Emparedado]] - Técnica alternativa
+> - Teorema del Emparedado - Técnica alternativa
 > 
 > **Aplicaciones:**
 > 
-> - [[Derivadas]] - Límites en la definición de derivada
+> - Derivadas - Límites en la definición de derivada
 > - [[02 – Continuidad]] - Criterio de continuidad
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento asintótico
 > 
 > **Extensiones:**
 > 
 > - [[01 - Límites al Infinito y Sucesiones]] - Límites discretos
-> - [[Límites Multivariables]] - Extensión a varias variables
+> - Límites Multivariables - Extensión a varias variables
 
 ---
 
@@ -617,10 +617,10 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[01 - Propiedades y Teoremas de los Límites]] - Aplicación práctica de los teoremas
-> - [[Continuidad de Funciones]] - Requisito para composición
-> - [[Límites Indeterminados]] - Casos donde los teoremas no aplican directamente
-> - [[Álgebra de Funciones]] - Operaciones básicas entre funciones
+> - 01 - Propiedades y Teoremas de los Límites - Aplicación práctica de los teoremas
+> - Continuidad de Funciones - Requisito para composición
+> - Límites Indeterminados - Casos donde los teoremas no aplican directamente
+> - Álgebra de Funciones - Operaciones básicas entre funciones
 > - [[05 - Funciones compuestas]] - Teoría de composición de funciones
 
 ## 📖 Notas Recomendadas para Estudio Complementario
@@ -630,9 +630,9 @@ dg-publish: true
 > **Fundamentos:**
 > 
 > 1. **[[01 - Concepto y Definición Formal del Límite]]** - Base conceptual
-> 2. **[[Propiedades de los Números Reales]]** - Operaciones algebraicas
+> 2. **Propiedades de los Números Reales** - Operaciones algebraicas
 > 
-> **Aplicaciones:** 3. **[[Técnicas de Factorización]]** - Para casos indeterminados 4. **[[01 - Formas Indeterminadas]]** - Alternativa para formas indeterminadas
+> **Aplicaciones:** 3. **Técnicas de Factorización** - Para casos indeterminados 4. **[[01 - Formas Indeterminadas]]** - Alternativa para formas indeterminadas
 > 
 > **Extensiones:** 5. **[[01 - Límites al Infinito y Sucesiones]]** - Comportamiento asintótico 6. **[[01 - Derivada y Definición Formal]]** - Aplicación práctica de límites
 
@@ -807,11 +807,11 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Continuidad de Funciones]] - Fundamento teórico para sustitución directa
-> - [[Límites Indeterminados]] - Casos donde NO aplicar sustitución
+> - Continuidad de Funciones - Fundamento teórico para sustitución directa
+> - Límites Indeterminados - Casos donde NO aplicar sustitución
 > - [[02 – Dominio y Rango]] - Verificación previa a la evaluación
-> - [[Funciones Elementales]] - Catálogo de funciones continuas
-> - [[Gráficas de Funciones]] - Interpretación visual de continuidad
+> - Funciones Elementales - Catálogo de funciones continuas
+> - Gráficas de Funciones - Interpretación visual de continuidad
 
 ## 📖 Notas Recomendadas para Estudio Complementario
 
@@ -819,10 +819,10 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> 1. **[[Definición de Función]]** - Conceptos básicos
-> 2. **[[Definición Informal de Límite]]** - Intuición geométrica
+> 1. **Definición de Función** - Conceptos básicos
+> 2. **Definición Informal de Límite** - Intuición geométrica
 > 
-> **Temas Paralelos:** 3. **[[Álgebra de Límites]]** - Operaciones con límites 4. **[[03 - Límites en Gráficas]]** - Visualización de límites
+> **Temas Paralelos:** 3. **Álgebra de Límites** - Operaciones con límites 4. **[[03 - Límites en Gráficas]]** - Visualización de límites
 > 
 > **Siguientes Pasos:** 5. **[[02 - Límites Laterales]]** - Extensión del concepto 6. **[[01 - Formas Indeterminadas]]** - Casos complejos
 
