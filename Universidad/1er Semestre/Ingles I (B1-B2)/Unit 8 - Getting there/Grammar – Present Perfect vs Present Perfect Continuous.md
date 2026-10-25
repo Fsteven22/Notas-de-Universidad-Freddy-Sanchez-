@@ -185,7 +185,7 @@ tags: [ingles-a1a2, grammar, present-perfect, continuous, unit8]
 >
 > - Mapa: [[Inglés I (B1-B2)]]
 > - Misma unidad: [[Vocabulary – Experiences & Progress]]
-> - Base pasado simple: [[Unit 7- Entertain us/Grammar – Used to - Comparisons (not) as...as|Used to (Unit 7)]]
+> - Base pasado simple: Used to (Unit 7)
 
 ---
 

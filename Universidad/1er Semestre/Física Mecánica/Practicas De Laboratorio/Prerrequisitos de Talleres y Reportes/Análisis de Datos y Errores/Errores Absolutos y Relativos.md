@@ -356,7 +356,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Mediciones Fundamentales]] - Base conceptual
-> - [[Uso del Calibrador de Vernier]] - Aplicación práctica
+> - Uso del Calibrador de Vernier - Aplicación práctica
 > - [[Incertidumbres Experimentales]] - Análisis avanzado
 > - [[Cifras Significativas]] - Expresión correcta de resultados
 
@@ -372,8 +372,8 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Propagación de errores
-> - [[Tratamiento Estadístico de Datos]] - Análisis avanzado
-> - [[Presentación de Resultados]] - Reportes de laboratorio
+> - Tratamiento Estadístico de Datos - Análisis avanzado
+> - Presentación de Resultados - Reportes de laboratorio
 
 ---
 

@@ -275,16 +275,16 @@ dg-publish: true
 > [!quote] 📚 Notas Relacionadas
 > 
 > ### Prerequisitos
-> - [[Funciones Inversas]] - Definición y propiedades básicas
-> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Para composiciones con inversas
+> - Funciones Inversas - Definición y propiedades básicas
+> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Para composiciones con inversas
 > - [[01 - Derivación Implícita]] - Base del método teórico
 > - [[05 - Identidades trigonométricas]] - Para simplificar derivadas
 > 
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Proceso inverso
 > - [[02 - Derivación Logarítmica]] 🔄 - Usa derivada de ln(x)
-> - [[Límites Indeterminados]] - Para verificar comportamiento límite
-> - [[Funciones Trigonométricas]] - Para entender las inversas
+> - Límites Indeterminados - Para verificar comportamiento límite
+> - Funciones Trigonométricas - Para entender las inversas
 > 
 > ### Aplicaciones
 > - **Cálculo de límites** - Usando derivadas de inversas

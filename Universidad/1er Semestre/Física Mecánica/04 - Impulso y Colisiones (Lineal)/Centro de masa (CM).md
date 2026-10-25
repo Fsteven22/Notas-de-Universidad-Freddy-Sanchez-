@@ -106,7 +106,7 @@ dg-publish: true
 
 > [!note] 🌐 Relaciones Conceptuales
 > 
-> ### [[Conservación del Momentum]]
+> ### Conservación del Momentum
 > 
 > - $\vec{P}_{total} = M_{total}\vec{v}_{CM} = \text{constante}$ (sin fuerzas externas)
 > - La velocidad del CM es constante cuando se conserva el momentum
@@ -116,10 +116,10 @@ dg-publish: true
 > - Segunda Ley aplicada al CM: $\sum \vec{F}_{ext} = M_{total}\vec{a}_{CM}$
 > - Simplificación de sistemas complejos a partícula puntual
 > 
-> ### [[Dinámica de Sistemas]]
+> ### Dinámica de Sistemas
 > 
-> - Base para análisis de [[Colisiones]]
-> - Fundamento de [[Explosiones]] y fragmentaciones
+> - Base para análisis de Colisiones
+> - Fundamento de Explosiones y fragmentaciones
 
 ---
 
@@ -143,15 +143,15 @@ dg-publish: true
 > - [[Momentum Lineal y Su Conservación]]
 > - [[Principios de Conservación de la Energía]]
 > - [[Choques Uni-Bidimensionales]]
-> - [[Rotación de Cuerpos Rígidos]]
-> - [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]]
+> - Rotación de Cuerpos Rígidos
+> - Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia
 > - [[Leyes de Newton]]
 
 ### 📖 Temas Avanzados
 > [!summary]  Para más adelante:
-> - [[Centro de Masa vs Centro de Gravedad]]
-> - [[Sistemas de Referencia del Centro de Masa]]
-> - [[Teorema del Eje Paralelo]]> 
+> - Centro de Masa vs Centro de Gravedad
+> - Sistemas de Referencia del Centro de Masa
+> - Teorema del Eje Paralelo> 
 
 tags
 

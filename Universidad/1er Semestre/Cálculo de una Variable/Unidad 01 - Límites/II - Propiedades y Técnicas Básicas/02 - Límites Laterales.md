@@ -206,8 +206,8 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Fundamentos básicos
 > - [[03 - Límites en Gráficas]] - Interpretación visual
-> - [[Funciones y Continuidad]] - Relación con continuidad
-> - [[Funciones Definidas por Partes]] - Casos especiales
+> - Funciones y Continuidad - Relación con continuidad
+> - Funciones Definidas por Partes - Casos especiales
 
 ## Notas Recomendadas 💡
 
@@ -215,9 +215,9 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Formalización rigurosa
 > - [[01 - Propiedades y Teoremas de los Límites]] - Técnicas de cálculo
-> - [[Asíntotas Verticales]] - Límites infinitos laterales
-> - [[Derivadas Laterales]] - Aplicación en derivabilidad
-> - [[Teorema del Sandwich]] - Técnicas avanzadas de límites
+> - Asíntotas Verticales - Límites infinitos laterales
+> - Derivadas Laterales - Aplicación en derivabilidad
+> - Teorema del Sandwich - Técnicas avanzadas de límites
 
 ---
 

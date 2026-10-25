@@ -167,11 +167,11 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Módulos en Python]] - Importación y uso de librerías
-> - [[Estructuras de Datos Python]] - Listas y tuplas para usar con random
+> - Módulos en Python - Importación y uso de librerías
+> - Estructuras de Datos Python - Listas y tuplas para usar con random
 > - [[Módulo 3.1 Funciones]] - Creación de funciones con aleatoriedad
-> - [[Módulo Secrets Python]] - Aleatoriedad criptográficamente segura
-> - [[Testing en Python]] - Uso de datos aleatorios para pruebas
+> - Módulo Secrets Python - Aleatoriedad criptográficamente segura
+> - Testing en Python - Uso de datos aleatorios para pruebas
 
 ## 🎯 Notas Recomendadas para Complementar
 
@@ -181,15 +181,15 @@ dg-publish: true
 > 
 > - [[Módulo 2.1 Variables y Tipos de Datos]]
 > - [[Módulo 2.3 Listas y Tuplas en Python]]
-> - [[Importar Módulos Python]]
-> - [[Funciones Básicas Python]]
+> - Importar Módulos Python
+> - Funciones Básicas Python
 > 
 > ### 🔄 **Temas Relacionados**
 > 
-> - [[Algoritmos de Ordenamiento]] - Para entender shuffle
+> - Algoritmos de Ordenamiento - Para entender shuffle
 > - [[Estadística Básica]] - Para distribuciones
-> - [[Criptografía Básica]] - Para entender diferencias con secrets
-> - [[Game Development Python]] - Aplicaciones prácticas
+> - Criptografía Básica - Para entender diferencias con secrets
+> - Game Development Python - Aplicaciones prácticas
 
 ## 🧠 Técnica de Estudio: Mnemotecnia R.A.N.D.O.M
 

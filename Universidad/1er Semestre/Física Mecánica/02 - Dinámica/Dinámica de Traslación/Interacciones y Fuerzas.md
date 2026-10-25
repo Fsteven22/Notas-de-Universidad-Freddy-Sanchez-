@@ -208,7 +208,7 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 - [[Leyes de Newton]]
 - [[Fuerzas y Diagramas de Cuerpo Libre]]
-- [[Sistemas de Partículas]]
+- Sistemas de Partículas
 - [[Momentum Lineal y Su Conservación]]
 
 ---

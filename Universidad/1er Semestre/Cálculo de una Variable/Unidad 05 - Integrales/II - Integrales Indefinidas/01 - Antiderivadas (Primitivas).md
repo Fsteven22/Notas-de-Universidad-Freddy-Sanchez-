@@ -301,10 +301,10 @@ dg-publish: true
 
 > [!quote- 📖 Notas relacionadas
 > 
-> - [[Reglas de Derivación]] - Fundamento para verificar antiderivadas
-> - [[Límites y Continuidad]] - Base teórica para la existencia de antiderivadas
-> - [[Funciones y sus Propiedades]] - Conocimiento previo esencial
-> - [[Cálculo Diferencial]] - Contexto matemático general
+> - Reglas de Derivación - Fundamento para verificar antiderivadas
+> - Límites y Continuidad - Base teórica para la existencia de antiderivadas
+> - Funciones y sus Propiedades - Conocimiento previo esencial
+> - Cálculo Diferencial - Contexto matemático general
 
 ---
 
@@ -312,14 +312,14 @@ dg-publish: true
 
 > [!info] 📚 Para profundizar y complementar
 > 
-> - [[Integración por Sustitución]] - Siguiente método de integración
+> - Integración por Sustitución - Siguiente método de integración
 > - [[Integración por Partes]] - Técnica avanzada de integración
-> - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas
-> - [[Ecuaciones Diferenciales Básicas]] - Aplicación directa de antiderivadas
-> - [[Cinemática y Antiderivadas]] - Aplicaciones en física
-> - [[Funciones Definidas por Integrales]] - Extensión del concepto
-> - [[Tabla Completa de Integrales]] - Referencia exhaustiva
-> - [[Métodos de Integración Avanzados]] - Técnicas más complejas
+> - Aplicaciones de la Integral - Usos prácticos de antiderivadas
+> - Ecuaciones Diferenciales Básicas - Aplicación directa de antiderivadas
+> - Cinemática y Antiderivadas - Aplicaciones en física
+> - Funciones Definidas por Integrales - Extensión del concepto
+> - Tabla Completa de Integrales - Referencia exhaustiva
+> - Métodos de Integración Avanzados - Técnicas más complejas
 
 ---
 

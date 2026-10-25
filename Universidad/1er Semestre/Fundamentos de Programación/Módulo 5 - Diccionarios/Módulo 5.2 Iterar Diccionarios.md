@@ -357,7 +357,7 @@ dg-publish: true
 > 
 > - [[Módulo 5.1 Diccionarios]] - Conceptos fundamentales
 > - [[Módulo 4.2 Iteradores for]] - Fundamentos de iteración
-> - [[Comprensiones en Python]] - Sintaxis avanzada
+> - Comprensiones en Python - Sintaxis avanzada
 > - [[Funciones Built-in]] - enumerate, zip, sorted
 > - [[Manejo de Errores con try, except, finally]] - Iteración segura
 
@@ -367,18 +367,18 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Módulo 5.1: Diccionarios en Python]] - Creación y manipulación básica
-> - [[Bucles for en Python]] - Conceptos de iteración
-> - [[Variables y Desempaquetado]] - Sintaxis de desempaquetado
+> - Módulo 5.1: Diccionarios en Python - Creación y manipulación básica
+> - Bucles for en Python - Conceptos de iteración
+> - Variables y Desempaquetado - Sintaxis de desempaquetado
 > 
 > **Para Profundizar:**
 > 
-> - [[Comprensiones Avanzadas]] - Dict/List/Set comprehensions
-> - [[Collections Module]] - defaultdict, Counter para iteración especializada
-> - [[Algoritmos de Ordenamiento]] - Ordenar diccionarios por claves/valores
-> - [[Programación Funcional]] - map(), filter(), reduce() con diccionarios
-> - [[Estructuras de Datos Avanzadas]] - Diccionarios anidados y complejos
-> - [[Optimización de Código]] - Técnicas de iteración eficiente
+> - Comprensiones Avanzadas - Dict/List/Set comprehensions
+> - Collections Module - defaultdict, Counter para iteración especializada
+> - Algoritmos de Ordenamiento - Ordenar diccionarios por claves/valores
+> - Programación Funcional - map(), filter(), reduce() con diccionarios
+> - Estructuras de Datos Avanzadas - Diccionarios anidados y complejos
+> - Optimización de Código - Técnicas de iteración eficiente
 
 ---
 

@@ -336,7 +336,7 @@ dg-publish: true
 
 > [!note] **Temas Siguientes**
 > 
-> - [[Uso del Calibrador de Vernier]] - Instrumento de precisión
+> - Uso del Calibrador de Vernier - Instrumento de precisión
 > - [[Errores Absolutos y Relativos]] - Análisis de incertidumbres
 > - [[Cifras Significativas]] - Expresión de resultados
 

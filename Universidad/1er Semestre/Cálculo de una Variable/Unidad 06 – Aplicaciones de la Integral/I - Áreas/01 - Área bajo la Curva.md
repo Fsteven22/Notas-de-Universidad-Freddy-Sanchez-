@@ -387,15 +387,15 @@ dg-publish: true
 > 
 > - [[01 - Integrales Impropias]] - Áreas con límites infinitos
 > - [[01 - Integración Numérica]] - Métodos aproximados para casos complejos
-> - [[Cálculo de Variaciones]] - Optimización de áreas
-> - [[Geometría Diferencial]] - Generalización a superficies
+> - Cálculo de Variaciones - Optimización de áreas
+> - Geometría Diferencial - Generalización a superficies
 > 
 > ### 🎯 Aplicaciones Especializadas
 > 
-> - [[Trabajo y Energía con Integrales]] - Interpretación física
-> - [[Probabilidad y Estadística]] - Funciones de densidad
-> - [[Volúmenes de Revolución]] - Extensión tridimensional
-> - [[Longitud de Arco]] - Otra aplicación geométrica
+> - Trabajo y Energía con Integrales - Interpretación física
+> - Probabilidad y Estadística - Funciones de densidad
+> - Volúmenes de Revolución - Extensión tridimensional
+> - Longitud de Arco - Otra aplicación geométrica
 
 ### 🏷️ Tags
 

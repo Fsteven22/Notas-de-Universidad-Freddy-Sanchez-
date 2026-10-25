@@ -172,7 +172,7 @@ dg-publish: true
 >[!quote] Notas relacionadas
 > 
 > - [[Principio de energía]]
-> - [[Teorema Trabajo-Energía Cinética]]
+> - Teorema Trabajo-Energía Cinética
 > - [[Leyes de Newton]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 

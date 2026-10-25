@@ -321,20 +321,20 @@ dg-publish: true
 > 
 > - [[Choques Uni-Bidimensionales]] - Aplicación práctica principal del principio
 > - [[Centro de masa (CM)]] - Movimiento del punto representativo del sistema
-> - [[Dinámica de Sistemas]] - Análisis de múltiples partículas
+> - Dinámica de Sistemas - Análisis de múltiples partículas
 > 
 > ### Conceptos Relacionados
 > 
 > - [[Momentum Angular]] - Análogo rotacional del Momentum lineal
 > - [[Principios de Conservación de la Energía]] - Principio complementario
-> - [[Dinámica de Fluidos]] - Momentum en medios continuos
+> - Dinámica de Fluidos - Momentum en medios continuos
 > 
 > ### Temas Avanzados
 > 
-> - [[Mecánica Lagrangiana]] - Formulación generalizada
-> - [[Relatividad Especial]] - Momentum a altas velocidades
-> - [[Mecánica Cuántica]] - Momentum en escala microscópica
-> - [[Teoría de Campos]] - Momentum en sistemas continuos
+> - Mecánica Lagrangiana - Formulación generalizada
+> - Relatividad Especial - Momentum a altas velocidades
+> - Mecánica Cuántica - Momentum en escala microscópica
+> - Teoría de Campos - Momentum en sistemas continuos
 
 ---
 

@@ -537,8 +537,8 @@ dg-publish: true
 > 
 > - [[01 - Derivada y Definición Formal]] - Fundamento teórico de las reglas
 > - [[02 - Interpretación Geométrica de la Derivada]] - Significado visual de las derivadas  
-> - [[Límites y Continuidad]] - Base matemática previa
-> - [[Funciones y sus Propiedades]] - Conocimiento de funciones elementales
+> - Límites y Continuidad - Base matemática previa
+> - Funciones y sus Propiedades - Conocimiento de funciones elementales
 > - [[01 - Antiderivadas (Primitivas)]] - Proceso inverso de la derivación
 
 ---
@@ -547,16 +547,16 @@ dg-publish: true
 
 > [!info] 📚 **Para profundizar y complementar**
 > 
-> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Derivación de funciones compuestas
+> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Derivación de funciones compuestas
 > - [[01 - Derivación Implícita]] - Técnica para funciones implícitas
-> - [[Aplicaciones de la Derivada]] - Optimización y análisis de funciones
+> - Aplicaciones de la Derivada - Optimización y análisis de funciones
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y análisis de concavidad
 > - [[03 - Aproximaciones Lineales y Diferenciales]] - Uso práctico de derivadas
-> - [[Teoremas del Valor Medio]] - Teoremas fundamentales del cálculo
-> - [[Análisis de Funciones]] - Uso conjunto de derivadas para estudiar funciones
-> - [[Optimización en Cálculo]] - Aplicaciones en problemas de máximos y mínimos
-> - [[Modelado Matemático con Derivadas]] - Aplicaciones en ciencias e ingeniería
-> - [[L'Hôpital y Formas Indeterminadas]] - Uso avanzado de derivadas en límites
+> - Teoremas del Valor Medio - Teoremas fundamentales del cálculo
+> - Análisis de Funciones - Uso conjunto de derivadas para estudiar funciones
+> - Optimización en Cálculo - Aplicaciones en problemas de máximos y mínimos
+> - Modelado Matemático con Derivadas - Aplicaciones en ciencias e ingeniería
+> - L'Hôpital y Formas Indeterminadas - Uso avanzado de derivadas en límites
 
 ---
 

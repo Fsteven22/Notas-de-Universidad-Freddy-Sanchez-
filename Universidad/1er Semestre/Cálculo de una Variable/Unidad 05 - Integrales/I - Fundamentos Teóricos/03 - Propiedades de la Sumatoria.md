@@ -179,7 +179,7 @@ dg-publish: true
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - [[Variables y Tipos de Datos]] (conceptos de índices)
+> - Variables y Tipos de Datos (conceptos de índices)
 > - [[01 - Funciones]] (concepto de función)
 > - Álgebra básica
 >
@@ -187,7 +187,7 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > - [[01 - Límites al Infinito y Sucesiones]]
 > - [[01 - Integral de Riemann]]
-> - [[Series y Convergencia]]
+> - Series y Convergencia
 > - [[01 - Integración Numérica]]
 
 ---

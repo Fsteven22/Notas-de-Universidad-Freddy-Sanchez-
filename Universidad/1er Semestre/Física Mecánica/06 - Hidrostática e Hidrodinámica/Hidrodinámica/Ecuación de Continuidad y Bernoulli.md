@@ -239,26 +239,26 @@ dg-publish: true
 > - [[El Principio de Pascal]]
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]
-> - [[Pérdidas de Carga en Tuberías]]
+> - Pérdidas de Carga en Tuberías
 
 ## Notas Complementarias Recomendadas
 
 > [!info]+ Prerrequisitos
 > 
-> - [[Conceptos de Presión]]
-> - [[Energía Cinética y Potencial]]
-> - [[Densidad y Caudal]]
-> - [[Ecuación de Continuidad]]
-> - [[El medidor de Venturi]]
+> - Conceptos de Presión
+> - Energía Cinética y Potencial
+> - Densidad y Caudal
+> - Ecuación de Continuidad
+> - El medidor de Venturi
 >
 
 > [!success]+ Para Profundizar
 > 
-> - [[Flujo Turbulento vs Laminar]]
-> - [[Pérdidas por Fricción]]
-> - [[Bombas y Turbinas Hidráulicas]]
-> - [[Mecánica de Fluidos Computacional]]
-> - [[Aerodinámica Avanzada]]
+> - Flujo Turbulento vs Laminar
+> - Pérdidas por Fricción
+> - Bombas y Turbinas Hidráulicas
+> - Mecánica de Fluidos Computacional
+> - Aerodinámica Avanzada
 
 ---
 

@@ -226,8 +226,8 @@ dg-publish: true
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Aplicación directa de vectores
 > - [[Cinemática Traslacional]] - Vectores posición, velocidad, aceleración
 > - [[Cinemática Rotacional]] - Vectores angulares y momento angular
-> - [[Trigonometría]] - Base para descomposición de vectores
-> - [[Producto Cruz]] - Análisis profundo del producto vectorial
+> - Trigonometría - Base para descomposición de vectores
+> - Producto Cruz - Análisis profundo del producto vectorial
 
 ## 📖 Notas Recomendadas para Complementar
 
@@ -235,16 +235,16 @@ dg-publish: true
 > 
 > **Prerrequisitos esenciales:**
 > 
-> - [[Funciones Trigonométricas]] - Para ángulos y componentes
-> - [[Álgebra]] - Para operaciones algebraicas
-> - [[Geometría]] - Para interpretación geométrica
+> - Funciones Trigonométricas - Para ángulos y componentes
+> - Álgebra - Para operaciones algebraicas
+> - Geometría - Para interpretación geométrica
 > - [[01 - Funciones]] - Para vectores como funciones del tiempo
 > 
 > **Temas complementarios:**
 > 
-> - [[Campos Vectoriales]] - Vectores que varían en el espacio
-> - [[Derivadas Vectoriales]] - Tasas de cambio de vectores
-> - [[Integrales Vectoriales]] - Integración de campos vectoriales
+> - Campos Vectoriales - Vectores que varían en el espacio
+> - Derivadas Vectoriales - Tasas de cambio de vectores
+> - Integrales Vectoriales - Integración de campos vectoriales
 > - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ## 🔧 Herramientas de Verificación

@@ -331,16 +331,16 @@ dg-publish: true
 
 ## Referencias 🔗
 
-> [!quote] [[Límites y Continuidad]] Fundamentos para entender asíntotas y comportamiento
+> [!quote] Límites y Continuidad Fundamentos para entender asíntotas y comportamiento
 >
 
-> [!quote] [[Primera Derivada y Monotonía]] Análisis de crecimiento y puntos críticos
+> [!quote] Primera Derivada y Monotonía Análisis de crecimiento y puntos críticos
 >
 
 > [!quote] [[03 - Concavidad y Puntos de Inflexión]] Segunda derivada y curvatura de funciones
 >
 
-> [!quote] [[Optimización de Funciones]] Aplicaciones prácticas del análisis completo
+> [!quote] Optimización de Funciones Aplicaciones prácticas del análisis completo
 >
 
 > [!quote] [[12 - Funciones racionales]] Casos específicos y técnicas especializadas

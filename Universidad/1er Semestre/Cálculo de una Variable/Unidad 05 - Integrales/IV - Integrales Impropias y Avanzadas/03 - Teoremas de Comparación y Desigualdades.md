@@ -333,15 +333,15 @@ dg-publish: true
 > 
 > ### 📖 Para Profundizar
 > - [[01 - Integrales Impropias]] - Aplicación principal de estos teoremas
-> - [[Criterios de Convergencia]] - Extensión de los conceptos de comparación
-> - [[Series Infinitas]] - Análisis de convergencia análogo
-> - [[Análisis Asintótico]] - Comportamiento de funciones en límites
+> - Criterios de Convergencia - Extensión de los conceptos de comparación
+> - Series Infinitas - Análisis de convergencia análogo
+> - Análisis Asintótico - Comportamiento de funciones en límites
 > 
 > ### 🎯 Notas Recomendadas
-> - [[Funciones de Referencia Estándar]] - Catálogo de funciones para comparación
-> - [[Estimación de Integrales]] - Aplicaciones prácticas de acotación
-> - [[Métodos de Aproximación]] - Técnicas numéricas complementarias
-> - [[Desigualdades Clásicas]] - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
+> - Funciones de Referencia Estándar - Catálogo de funciones para comparación
+> - Estimación de Integrales - Aplicaciones prácticas de acotación
+> - Métodos de Aproximación - Técnicas numéricas complementarias
+> - Desigualdades Clásicas - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
 > 
 
 ---

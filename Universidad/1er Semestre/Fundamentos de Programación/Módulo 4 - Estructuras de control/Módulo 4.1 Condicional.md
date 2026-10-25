@@ -380,10 +380,10 @@ dg-publish: true
 >[!info] 📖 **Temas Complementarios**
 >1. **[[Manejo de Errores con try, except, finally]]** - try/except como alternativa a if/else
 >2. **[[Expresiones Regulares (Regex)]]** - Validación avanzada de patrones
->3. **[[Funciones Lambda]]** - Condicionales en funciones de una línea
->4. **[[Estructuras de Datos Avanzadas]]** - Uso de condicionales con listas/dict
->5. **[[Debugging y Testing]]** - Casos de prueba para lógica condicional
->6. **[[Algoritmos de Decisión]]** - Árboles de decisión y lógica compleja
+>3. **Funciones Lambda** - Condicionales en funciones de una línea
+>4. **Estructuras de Datos Avanzadas** - Uso de condicionales con listas/dict
+>5. **Debugging y Testing** - Casos de prueba para lógica condicional
+>6. **Algoritmos de Decisión** - Árboles de decisión y lógica compleja
 
 ---
 

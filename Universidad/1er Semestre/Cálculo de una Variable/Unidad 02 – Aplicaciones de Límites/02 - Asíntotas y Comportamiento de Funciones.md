@@ -255,9 +255,9 @@ dg-publish: true
 > - [[01 - Límites al Infinito y Sucesiones]] - Base teórica para asíntotas horizontales
 > - [[02 - Límites Laterales]] - Fundamental para asíntotas verticales
 > - [[12 - Funciones racionales]] - Tipo más común con asíntotas
-> - [[Derivadas y Gráficas]] - Análisis completo de funciones
+> - Derivadas y Gráficas - Análisis completo de funciones
 > - [[02 – Continuidad]] - Relación con discontinuidades
-> - [[Optimización]] - Aplicación de extremos y comportamiento
+> - Optimización - Aplicación de extremos y comportamiento
 
 ## Notas Recomendadas
 
@@ -265,20 +265,20 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - [[Límites Básicos]] - Cálculo de límites en general
+> - Límites Básicos - Cálculo de límites en general
 > - [[01 - Límites al Infinito y Sucesiones]] - Para asíntotas horizontales y oblicuas
 > - [[02 - Límites Laterales]] - Para asíntotas verticales
-> - [[Funciones y Dominio]] - Análisis de restricciones
-> - [[Algebra de Polinomios]] - Para funciones racionales
+> - Funciones y Dominio - Análisis de restricciones
+> - Algebra de Polinomios - Para funciones racionales
 > 
 > **Para profundizar:**
 > 
 > - [[01 - Análisis Completo de Funciones]] - Integración con derivadas
-> - [[Funciones Trascendentes]] - Asíntotas en exponenciales y logaritmos
-> - [[Cálculo Diferencial Avanzado]] - Técnicas de graficación
-> - [[Geometría Analítica]] - Ecuaciones de rectas asintóticas
-> - [[Aplicaciones del Cálculo]] - Modelado con funciones asintóticas
-> - [[Software Matemático]] - Verificación gráfica con tecnología
+> - Funciones Trascendentes - Asíntotas en exponenciales y logaritmos
+> - Cálculo Diferencial Avanzado - Técnicas de graficación
+> - Geometría Analítica - Ecuaciones de rectas asintóticas
+> - Aplicaciones del Cálculo - Modelado con funciones asintóticas
+> - Software Matemático - Verificación gráfica con tecnología
 
 ---
 

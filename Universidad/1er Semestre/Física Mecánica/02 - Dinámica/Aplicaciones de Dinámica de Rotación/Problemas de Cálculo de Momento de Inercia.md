@@ -489,7 +489,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - [[Dinámica de Rotación]] - Aplicación en ecuaciones de movimiento
+> - Dinámica de Rotación - Aplicación en ecuaciones de movimiento
 > - [[Torque y Equilibrio Rotacional]] - Relación τ = Iα
 > - [[Energía de Rotación]] - E_rot = ½Iω²
 > - [[Centro de masa (CM)]] - Localización del CM
@@ -501,8 +501,8 @@ dg-publish: true
 > 
 > - [[Vectores]] - Operaciones vectoriales y coordenadas
 > - [[Centro de Gravedad (CG)]] - Conceptos de centro de masa
-> - [[Integrales]] - Cálculo diferencial e integral
-> - [[Geometría]] - Propiedades de figuras geométricas
+> - Integrales - Cálculo diferencial e integral
+> - Geometría - Propiedades de figuras geométricas
 
 ---
 

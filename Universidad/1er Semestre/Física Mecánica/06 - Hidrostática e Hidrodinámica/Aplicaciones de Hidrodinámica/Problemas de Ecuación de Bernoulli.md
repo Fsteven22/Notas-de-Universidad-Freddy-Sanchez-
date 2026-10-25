@@ -769,8 +769,8 @@ dg-publish: true
 > 
 > - [[Ecuación de Continuidad y Bernoulli]] - Base teórica fundamental
 > - [[Presión y Densidad]] - Conceptos previos necesarios
-> - [[Aplicaciones de Hidrodinámica]] - Contexto general
-> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Principios básicos
+> - Aplicaciones de Hidrodinámica - Contexto general
+> - Fundamentos de Hidrostática e Hidrodinámica - Principios básicos
 
 ## 📚 Notas Recomendadas
 
@@ -779,7 +779,7 @@ dg-publish: true
 > - [[Vectores]] - Para análisis de trayectorias
 > - [[Unidades y Magnitudes Físicas]] - Consistencia dimensional
 > - [[Conocimientos Previos a las Prácticas]] - Fundamentos matemáticos
-> - [[Ecuaciones de Movimiento]] - Para movimiento parabólico del chorro
+> - Ecuaciones de Movimiento - Para movimiento parabólico del chorro
 
 ---
 

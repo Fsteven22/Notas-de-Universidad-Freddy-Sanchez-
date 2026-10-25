@@ -186,22 +186,22 @@ dg-publish: true
 
 > [!quote] 🔗 **Enlaces a Otras Notas**
 > 
-> - [[Momento Angular y Conservación]]
-> - [[Rotación de Cuerpos Rígidos]]
+> - Momento Angular y Conservación
+> - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
-> - [[Sistemas de Referencia Inerciales]]
-> - [[Aplicaciones de la Mecánica Rotacional]]
+> - Sistemas de Referencia Inerciales
+> - Aplicaciones de la Mecánica Rotacional
 
 ## 📖 Notas Recomendadas
 
 > [!tip] 📋 **Para Complementar el Estudio**
 > 
-> - [[Principio de Conservación del Momento Angular]]
-> - [[Movimiento de Precesión en Trompos]]
-> - [[Efectos Giroscópicos en Ingeniería]]
-> - [[Historia y Desarrollo del Giroscopio]]
-> - [[Giroscopios Ópticos y Cuánticos]]
-> - [[Navegación Inercial]]
+> - Principio de Conservación del Momento Angular
+> - Movimiento de Precesión en Trompos
+> - Efectos Giroscópicos en Ingeniería
+> - Historia y Desarrollo del Giroscopio
+> - Giroscopios Ópticos y Cuánticos
+> - Navegación Inercial
 
 ---
 

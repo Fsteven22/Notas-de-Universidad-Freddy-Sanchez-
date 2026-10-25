@@ -85,7 +85,7 @@ dg-publish: true
 > 
 > **Paso 5**: Evaluar la integral
 > 
-> ![[Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_01.svg]]
+> 
 
 ## 🧪 Ejemplos Fundamentales
 
@@ -225,7 +225,7 @@ dg-publish: true
 
 > [!info] 💡 **Criterios de Decisión**
 > 
-> ![[Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_02.svg]]
+> 
 
 ### 📊 Tabla Comparativa
 
@@ -295,22 +295,22 @@ dg-publish: true
 ### 📚 Temas Relacionados
 
 - [[02 - Área entre Curvas]] - Concepto base y método con dx
-- [[Métodos de Integración]] - Técnicas para evaluar las integrales resultantes
-- [[Funciones Inversas]] - Para transformar entre y = f(x) y x = g(y)
-- [[Aplicaciones de Integrales Definidas]] - Contexto más amplio de aplicaciones
+- Métodos de Integración - Técnicas para evaluar las integrales resultantes
+- Funciones Inversas - Para transformar entre y = f(x) y x = g(y)
+- Aplicaciones de Integrales Definidas - Contexto más amplio de aplicaciones
 
 ### 🎯 Casos Especiales
 
 - [[04 - Área en Coordenadas Polares y Paramétricas]] - Extensiones a otros sistemas
-- [[Volúmenes de Revolución]] - Aplicación del método de discos/arandelas con dy
-- [[Centros de Masa y Centroides]] - Usando integración respecto a y
-- [[Longitud de Arco]] - Extensión del concepto a longitudes
+- Volúmenes de Revolución - Aplicación del método de discos/arandelas con dy
+- Centros de Masa y Centroides - Usando integración respecto a y
+- Longitud de Arco - Extensión del concepto a longitudes
 
 ### 🔧 Herramientas Computacionales
 
-- [[Graficación de Funciones]] - Para visualizar regiones y verificar resultados
-- [[Cálculo Simbólico]] - Para evaluar integrales complejas
-- [[Métodos Numéricos]] - Para casos donde no hay solución analítica
+- Graficación de Funciones - Para visualizar regiones y verificar resultados
+- Cálculo Simbólico - Para evaluar integrales complejas
+- Métodos Numéricos - Para casos donde no hay solución analítica
 
 ### 🏷️ Tags
 

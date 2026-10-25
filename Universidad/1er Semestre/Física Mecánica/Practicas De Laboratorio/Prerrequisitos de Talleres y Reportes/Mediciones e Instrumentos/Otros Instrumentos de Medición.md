@@ -406,7 +406,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Mediciones Fundamentales]] - Conceptos básicos
-> - [[Uso del Calibrador de Vernier]] - Instrumento de precisión
+> - Uso del Calibrador de Vernier - Instrumento de precisión
 > - [[Errores Absolutos y Relativos]] - Análisis de precisión
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 
@@ -422,8 +422,8 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Cifras Significativas]] - Expresión correcta de resultados
-> - [[Calibración de Instrumentos]] - Verificación de precisión
-> - [[Técnicas Experimentales]] - Métodos avanzados
+> - Calibración de Instrumentos - Verificación de precisión
+> - Técnicas Experimentales - Métodos avanzados
 
 ---
 

@@ -190,10 +190,10 @@ dg-publish: true
 
 > [!note] 📖 Para Complementar tu Aprendizaje
 > - [[Módulo 4.3 Bucle While]] - Bucles con condiciones
-> - [[List Comprehensions]] - Sintaxis avanzada para listas
-> - [[Iteradores y Generadores]] - Conceptos avanzados
+> - List Comprehensions - Sintaxis avanzada para listas
+> - Iteradores y Generadores - Conceptos avanzados
 > - [[Manejo de Errores con try, except, finally]] - Control de errores en bucles
-> - [[Algoritmos de Búsqueda]] - Aplicaciones prácticas
+> - Algoritmos de Búsqueda - Aplicaciones prácticas
 
 ---
 

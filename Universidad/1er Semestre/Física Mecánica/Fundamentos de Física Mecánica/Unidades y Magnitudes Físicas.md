@@ -98,15 +98,15 @@ dg-publish: true
 
 ## 🔗 Referencias
 > [!quote]
-> - ![[Sistema Internacional de Unidades (SI)]]
-> - ![[Errores y Aproximaciones en Medición]]
+> - 
+> - 
 
 ---
 
 ## 📌 Notas Recomendadas (Prerrequisitos)
 > [!important]
-> - [[Sistema Internacional de Unidades (SI)]]
-> - [[Errores y Aproximaciones en Medición]]
+> - Sistema Internacional de Unidades (SI)
+> - Errores y Aproximaciones en Medición
 
 ---
 

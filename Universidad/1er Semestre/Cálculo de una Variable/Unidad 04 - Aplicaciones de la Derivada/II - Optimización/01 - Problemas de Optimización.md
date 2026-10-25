@@ -266,10 +266,10 @@ dg-publish: true
 > [!quote] [[01 - Multiplicaciones de Lagrange]] Técnica para optimización con restricciones de igualdad
 >
 
-> [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de usos prácticos del cálculo
+> [!quote] Aplicaciones de Derivadas Contexto más amplio de usos prácticos del cálculo
 >
 
-> [!quote] [[Modelado Matemático]] Principios generales para convertir problemas reales en matemáticos
+> [!quote] Modelado Matemático Principios generales para convertir problemas reales en matemáticos
 
 ---
 

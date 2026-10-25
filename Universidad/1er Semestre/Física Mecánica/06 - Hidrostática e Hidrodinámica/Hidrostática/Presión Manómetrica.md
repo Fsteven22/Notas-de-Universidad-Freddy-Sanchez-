@@ -172,8 +172,8 @@ dg-publish: true
 > [!quote] Notas Relacionadas
 > - [[Presión y Densidad]]
 > - [[El Principio de Pascal]]
-> - [[Principio de los Vasos Comunicantes]]
-> - [[Módulo de Compresibilidad]]
+> - Principio de los Vasos Comunicantes
+> - Módulo de Compresibilidad
 
 ## Notas Recomendadas
 

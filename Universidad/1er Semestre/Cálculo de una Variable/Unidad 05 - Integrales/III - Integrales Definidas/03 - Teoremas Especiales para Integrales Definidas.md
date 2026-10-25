@@ -327,29 +327,29 @@ dg-publish: true
 > ### 🔗 Notas Relacionadas
 > 
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para todas las integrales definidas
-> - [[03 - Teoremas Especiales para Integrales Definidas]] - Propiedades complementarias de integrales
+> - 03 - Teoremas Especiales para Integrales Definidas - Propiedades complementarias de integrales
 > - [[02 - Propiedades de la Integral]] - Linealidad y aditividad
-> - [[Funciones Trigonométricas]] - Ejemplos principales de funciones periódicas
+> - Funciones Trigonométricas - Ejemplos principales de funciones periódicas
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > 
 > ### 📖 Para Profundizar
 > 
-> - [[Series de Fourier]] - Aplicación directa de propiedades de simetría
-> - [[Análisis de Señales]] - Aplicaciones en ingeniería
+> - Series de Fourier - Aplicación directa de propiedades de simetría
+> - Análisis de Señales - Aplicaciones en ingeniería
 > - [[06 - Funciones Especiales]] - Más ejemplos de funciones con simetrías
-> - [[Transformadas Integrales]] - Uso avanzado de propiedades de simetría
+> - Transformadas Integrales - Uso avanzado de propiedades de simetría
 > 
 > ### 🎯 Notas Recomendadas
 > 
-> - [[Métodos de Integración]] - Técnicas que se benefician de estas propiedades
-> - [[Aplicaciones Físicas de Integrales]] - Contexto real de funciones periódicas
-> - [[Geometría de Curvas]] - Interpretación visual de simetrías
+> - Métodos de Integración - Técnicas que se benefician de estas propiedades
+> - Aplicaciones Físicas de Integrales - Contexto real de funciones periódicas
+> - Geometría de Curvas - Interpretación visual de simetrías
 > 
 > ### 🧮 Aplicaciones Especializadas
 > 
-> - [[Análisis Armónico]] - Estudio profundo de funciones periódicas
-> - [[Mecánica Ondulatoria]] - Física de sistemas periódicos
-> - [[Procesamiento de Señales Digitales]] - Aplicaciones computacionales
+> - Análisis Armónico - Estudio profundo de funciones periódicas
+> - Mecánica Ondulatoria - Física de sistemas periódicos
+> - Procesamiento de Señales Digitales - Aplicaciones computacionales
 > 
 
 ---
@@ -581,23 +581,23 @@ dg-publish: true
 > ### 🔗 Notas Relacionadas
 > 
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para la demostración
-> - [[Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
+> - Teorema del Valor Medio para Derivadas - Teorema análogo para derivadas
 > - [[02 - Propiedades de la Integral]] - Propiedades utilizadas en la demostración
 > - [[01 - Integral de Riemann]] - Definición formal de la integral
-> - [[Funciones Continuas]] - Condición necesaria para el teorema
+> - Funciones Continuas - Condición necesaria para el teorema
 > 
 > ### 📖 Para Profundizar
 > 
-> - [[Teorema del Valor Intermedio]] - Herramienta clave en la demostración
-> - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
-> - [[Valor RMS y Aplicaciones Eléctricas]] - Aplicación específica del concepto
-> - [[Promedio de Funciones]] - Interpretación estadística del valor medio
+> - Teorema del Valor Intermedio - Herramienta clave en la demostración
+> - Aplicaciones de Integrales en Física - Uso del valor medio en problemas físicos
+> - Valor RMS y Aplicaciones Eléctricas - Aplicación específica del concepto
+> - Promedio de Funciones - Interpretación estadística del valor medio
 > 
 > ### 🎯 Notas Recomendadas
 > 
-> - [[Interpretación Geométrica de Integrales]] - Para visualizar mejor el concepto
-> - [[Métodos de Aproximación Numérica]] - Cálculo computacional de valores medios
-> - [[Funciones Periódicas y sus Propiedades]] - Casos especiales del teorema
+> - Interpretación Geométrica de Integrales - Para visualizar mejor el concepto
+> - Métodos de Aproximación Numérica - Cálculo computacional de valores medios
+> - Funciones Periódicas y sus Propiedades - Casos especiales del teorema
 > 
 
 ---

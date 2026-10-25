@@ -375,7 +375,7 @@ dg-publish: true
 > - [[Elasticidad]] - Fundamentos de deformación
 > - [[Torque y Equilibrio Rotacional]] - Base para torsión
 > - [[Segunda ley de Newton para Rotación]] - Conceptos de momento
-> - [[Aplicaciones de Equilibrio]] - Análisis de fuerzas
+> - Aplicaciones de Equilibrio - Análisis de fuerzas
 
 ## 📚 Notas Recomendadas
 

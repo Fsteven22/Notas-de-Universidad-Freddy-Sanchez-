@@ -158,15 +158,15 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Identidades Trigonométricas Básicas]] - Fundamento teórico
-> - [[Técnicas de Integración]] - Métodos generales
-> - [[Sustitución Trigonométrica]] - Contexto más amplio
+> - Identidades Trigonométricas Básicas - Fundamento teórico
+> - Técnicas de Integración - Métodos generales
+> - Sustitución Trigonométrica - Contexto más amplio
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Series de Fourier]] - Análisis armónico
-> - [[Ecuaciones Diferenciales]] - Soluciones trigonométricas
-> - [[Análisis Complejo]] - Funciones trigonométricas complejas
+> - Series de Fourier - Análisis armónico
+> - Ecuaciones Diferenciales - Soluciones trigonométricas
+> - Análisis Complejo - Funciones trigonométricas complejas
 
 ## 📖 Referencias y Estudio Complementario
 
@@ -175,10 +175,10 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > 1. **[[Integración por Partes]]** - Combinación de técnicas
-> 2. **[[Fracciones Parciales]]** - Para expresiones racionales
-> 3. **[[Completar el Cuadrado]]** - Preparación de formas estándar
+> 2. **Fracciones Parciales** - Para expresiones racionales
+> 3. **Completar el Cuadrado** - Preparación de formas estándar
 > 
-> **Aplicaciones avanzadas:** 4. **[[Integrales Definidas]]** - Evaluación numérica 5. **[[Aplicaciones Físicas]]** - Ondas y oscilaciones
+> **Aplicaciones avanzadas:** 4. **Integrales Definidas** - Evaluación numérica 5. **Aplicaciones Físicas** - Ondas y oscilaciones
 
 ---
 

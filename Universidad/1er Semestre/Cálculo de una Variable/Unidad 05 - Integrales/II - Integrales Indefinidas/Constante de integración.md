@@ -326,23 +326,23 @@ dg-publish: true
 > 
 > 
 > ### 🔗 Notas Relacionadas
-> - [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
+> - Teorema Fundamental del Cálculo para Integrales Indefinidas - Base teórica
 > - [[01 - Antiderivadas (Primitivas)]] - Tabla de fórmulas con constantes
-> - [[Técnicas de Integración]] - Manejo de constantes en métodos avanzados
-> - [[Ecuaciones Diferenciales Básicas]] - Aplicación principal
-> - [[Problemas de Valor Inicial]] - Determinación práctica de constantes
+> - Técnicas de Integración - Manejo de constantes en métodos avanzados
+> - Ecuaciones Diferenciales Básicas - Aplicación principal
+> - Problemas de Valor Inicial - Determinación práctica de constantes
 > 
 > ### 📖 Para Profundizar
-> - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
-> - [[Condiciones de Frontera]] - Otros métodos de determinación
-> - [[Unicidad de Soluciones]] - Teoremas de existencia y unicidad
-> - [[Análisis de Estabilidad]] - Comportamiento de soluciones
+> - Espacios Vectoriales de Funciones - Fundamento teórico avanzado
+> - Condiciones de Frontera - Otros métodos de determinación
+> - Unicidad de Soluciones - Teoremas de existencia y unicidad
+> - Análisis de Estabilidad - Comportamiento de soluciones
 > 
 > ### 🎯 Aplicaciones Especializadas
-> - [[Mecánica Clásica]] - Leyes de Newton y movimiento
-> - [[Circuitos RLC]] - Análisis de corriente y voltaje
-> - [[Modelos de Crecimiento]] - Poblaciones y economía
-> - [[Sistemas Dinámicos]] - Evolución temporal
+> - Mecánica Clásica - Leyes de Newton y movimiento
+> - Circuitos RLC - Análisis de corriente y voltaje
+> - Modelos de Crecimiento - Poblaciones y economía
+> - Sistemas Dinámicos - Evolución temporal
 > 
 
 ### 🏷️ Tags

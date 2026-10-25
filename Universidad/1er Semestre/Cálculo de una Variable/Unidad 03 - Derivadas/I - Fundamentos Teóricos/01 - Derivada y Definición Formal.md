@@ -179,16 +179,16 @@ dg-publish: true
 > 
 > **Prerrequisitos esenciales:**
 > 
-> - [[01 - Derivada y Definición Formal]] - Definición formal de derivada
+> - 01 - Derivada y Definición Formal - Definición formal de derivada
 > - [[01 - Funciones]] - Conceptos básicos de funciones
-> - [[Álgebra]] - Manipulación algebraica
-> - [[Trigonometría]] - Para derivadas trigonométricas
+> - Álgebra - Manipulación algebraica
+> - Trigonometría - Para derivadas trigonométricas
 > 
 > **Temas complementarios:**
 > 
 > - [[01 - Derivación Implícita]] - Técnica avanzada
 > - [[01 - Derivadas de Orden Superior]] - Extensión del concepto
-> - [[Aproximaciones Lineales]] - Aplicación geométrica
+> - Aproximaciones Lineales - Aplicación geométrica
 > - [[02 - Razones de Cambio Relacionadas]] - Aplicaciones físicas
 
 ## 🔧 Técnicas de Verificación
@@ -491,7 +491,7 @@ dg-publish: true
 > [!info] 🌐 **Conexiones Importantes**
 > - **[[01 - Continuidad y Límites]]**: Fundamento matemático de la definición
 > - **[[03 - Derivabilidad y Continuidad]]**: Condición necesaria para derivabilidad
-> - **[[01 - Derivada y Definición Formal]]**: Métodos más eficientes desarrollados a partir de esta definición
+> - **01 - Derivada y Definición Formal**: Métodos más eficientes desarrollados a partir de esta definición
 > - **[[02 - Interpretación Geométrica de la Derivada]]**: Aplicación visual del concepto
 
 ### ⚡ Preparación para Conceptos Avanzados
@@ -514,7 +514,7 @@ dg-publish: true
 > - [[03 - Derivabilidad y Continuidad]] - Condiciones de existencia
 > - [[02 - Interpretación Geométrica de la Derivada]] - Aplicación visual
 > - [[01 - Reglas Fundamentales de Derivación]] - Métodos eficientes
-> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Extensión para funciones compuestas
+> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Extensión para funciones compuestas
 > 
 >
 >[!success] 📖 Para Profundizar

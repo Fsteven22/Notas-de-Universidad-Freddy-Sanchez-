@@ -144,18 +144,18 @@ dg-publish: true
 
 > [!quote]+ **Enlaces a Notas Relacionadas**
 > 
-> - [[Integrales Definidas]] - Base matemática fundamental
-> - [[Aplicaciones de la Integral]] - Contexto más amplio
-> - [[Métodos de Integración]] - Técnicas necesarias para resolver
-> - [[Geometría Analítica]] - Para visualización espacial
-> - [[Funciones y sus Gráficas]] - Interpretación de las regiones
+> - Integrales Definidas - Base matemática fundamental
+> - Aplicaciones de la Integral - Contexto más amplio
+> - Métodos de Integración - Técnicas necesarias para resolver
+> - Geometría Analítica - Para visualización espacial
+> - Funciones y sus Gráficas - Interpretación de las regiones
 
 ## Notas Recomendadas para Complementar 📖
 
 > [!info]+ **Prerrequisitos Esenciales**
 > 
-> - [[Cálculo Diferencial]] - Derivadas y funciones
-> - [[Integrales Indefinidas]] - Antiderivadas básicas
+> - Cálculo Diferencial - Derivadas y funciones
+> - Integrales Indefinidas - Antiderivadas básicas
 > - [[04 - Teorema Fundamental del Cálculo]] - Conexión derivada-integral
 > - [[02 - Área entre Curvas]] - Fundamentos de regiones
 > 
@@ -163,8 +163,8 @@ dg-publish: true
 > 
 > - [[02 - Coordenadas polares]] - Para casos más complejos
 > - [[03 - Superficies de revolución]] - Extensión natural
-> - [[Momentos y Centros de Masa]] - Otras aplicaciones
-> - [[Longitud de Arco]] - Medidas en curvas
+> - Momentos y Centros de Masa - Otras aplicaciones
+> - Longitud de Arco - Medidas en curvas
 
 ---
 

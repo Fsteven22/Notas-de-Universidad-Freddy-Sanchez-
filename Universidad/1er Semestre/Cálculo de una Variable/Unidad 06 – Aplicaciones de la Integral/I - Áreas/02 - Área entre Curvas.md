@@ -281,30 +281,30 @@ dg-publish: true
 
 - [[01 - Área bajo la Curva]] - Concepto fundamental base
 - [[04 - Teorema Fundamental del Cálculo]] - Herramienta principal de evaluación
-- [[Métodos de Integración]] - Técnicas para resolver las integrales
-- [[Aplicaciones de Integrales Definidas]] - Contexto más amplio
-- [[Funciones y sus Gráficas]] - Análisis de intersecciones y comportamiento
+- Métodos de Integración - Técnicas para resolver las integrales
+- Aplicaciones de Integrales Definidas - Contexto más amplio
+- Funciones y sus Gráficas - Análisis de intersecciones y comportamiento
 
 ### 📖 Para Profundizar
 
 - [[02 - Coordenadas polares]] - Extensión a otros sistemas de coordenadas
-- [[Curvas Paramétricas]] - Representaciones alternativas de curvas
-- [[Teorema de Green]] - Método alternativo para cálculo de áreas
+- Curvas Paramétricas - Representaciones alternativas de curvas
+- Teorema de Green - Método alternativo para cálculo de áreas
 - [[01 - Integración Numérica]] - Métodos computacionales
 
 ### 🎯 Notas Recomendadas
 
-- [[Optimización y Puntos Críticos]] - Para encontrar máximos y mínimos relevantes
-- [[Ecuaciones de Curvas Especiales]] - Círculos, elipses, parábolas, hipérbolas
-- [[Aplicaciones Geométricas del Cálculo]] - Volúmenes, longitudes de arco
-- [[Modelado Matemático con Integrales]] - Aplicaciones en ciencias e ingeniería
+- Optimización y Puntos Críticos - Para encontrar máximos y mínimos relevantes
+- Ecuaciones de Curvas Especiales - Círculos, elipses, parábolas, hipérbolas
+- Aplicaciones Geométricas del Cálculo - Volúmenes, longitudes de arco
+- Modelado Matemático con Integrales - Aplicaciones en ciencias e ingeniería
 
 ### 🧮 Aplicaciones Especializadas
 
-- [[Centros de Masa y Centroides]] - Usando áreas entre curvas
+- Centros de Masa y Centroides - Usando áreas entre curvas
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
-- [[Análisis de Costos Marginales]] - Aplicaciones en economía
-- [[Biodisponibilidad y Farmacocinética]] - Aplicaciones en medicina
+- Análisis de Costos Marginales - Aplicaciones en economía
+- Biodisponibilidad y Farmacocinética - Aplicaciones en medicina
 
 ### 🏷️ Tags
 

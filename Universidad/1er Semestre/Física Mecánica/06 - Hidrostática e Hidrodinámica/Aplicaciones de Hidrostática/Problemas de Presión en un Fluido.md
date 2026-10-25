@@ -307,7 +307,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Presión y Densidad]] - Fundamentos teóricos
-> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Principios generales
+> - Fundamentos de Hidrostática e Hidrodinámica - Principios generales
 > - [[El Principio de Pascal]] - Transmisión de presión
 > - [[Presión Manómetrica]] - Medición de presiones
 

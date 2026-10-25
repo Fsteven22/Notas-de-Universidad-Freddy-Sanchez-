@@ -198,8 +198,8 @@ dg-publish: true
 > [!info] 🎓 **Conocimientos Previos Necesarios**
 > 
 > - [[Vectores]] - Para sistemas de coordenadas
-> - [[Sistemas de Ecuaciones]] - Álgebra necesaria
-> - [[Análisis Gráfico del Movimiento]] - Representación visual
+> - Sistemas de Ecuaciones - Álgebra necesaria
+> - Análisis Gráfico del Movimiento - Representación visual
 
 ---
 

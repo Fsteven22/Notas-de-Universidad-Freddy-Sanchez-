@@ -553,7 +553,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - [[Dinámica de Rotación]] - Aplicación del torque en movimiento
+> - Dinámica de Rotación - Aplicación del torque en movimiento
 > - [[Equilibrio]] - Condiciones de equilibrio estático
 > - [[Segunda ley de Newton para Rotación]] - τ = Iα
 > - [[Momento de Inercia]] - Resistencia a la rotación
@@ -565,7 +565,7 @@ dg-publish: true
 > 
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
 > - [[Leyes de Newton]] - Fundamentos dinámicos
-> - [[Trigonometría]] - Cálculo de componentes
+> - Trigonometría - Cálculo de componentes
 > - [[Vectores]] - Operaciones vectoriales
 
 ---
