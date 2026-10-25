@@ -5,12 +5,15 @@ canvas{background:#fff;border:1px solid #ddd;max-width:100vw;max-height:82vh;dis
 .bar{padding:8px 12px;border-bottom:1px solid #222;font-size:0.9rem;display:flex;gap:10px;align-items:center;justify-content:space-between}
 .bar a{color:#22d3ee;text-decoration:none}
 .bar a:hover{text-decoration:underline}
+.err{color:#f87171;background:#7f1d1d;padding:8px;border-radius:6px;display:inline-block;margin-top:8px}
 </title></head>
 <body>
-<div class="bar">Cargando PDF… <a id="dl" target="_blank" rel="noopener">Descargar archivo ?</a></div>
+<div class="bar">Cargando PDF… <a id="dl" target="_blank" rel="noopener">Descargar archivo ?</a><div id="err" class="err"></div></div>
 <div id="pages"></div>
 <script src="./build/pdf.js"></script>
 <script>
+const err = document.getElementById('err');
+const showErr = (m) => { err.textContent = m; console.error(m); };
 pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
 const params = new URLSearchParams(location.search.slice(1));
 const file = params.get("file") || "";
@@ -31,10 +34,10 @@ else {
       const ctx = c.getContext("2d"); c.width = vp.width; c.height = vp.height;
       page.render({ canvasContext: ctx, viewport: vp }).promise.then(() => {
         if (n < pdf.numPages) go(n + 1);
-      });
-    });
+      }).catch((e) => showErr("Error renderizando página " + n + ": " + e.message));
+    }).catch((e) => showErr("Error cargando páginas: " + e.message));
     go(1);
-  }).catch((e) => { bar.textContent = "No se pudo cargar el PDF: " + e.message; });
+  }).catch((e) => showErr("No se pudo cargar el PDF: " + e.message));
 }
 </script>
 </body></html>
