@@ -55,7 +55,7 @@ const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 const MD_EXT = /\.(md|markdown)$/i;
 const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
-const PDF_VIEWER = "/pdfjs/web/viewer.html?file=";
+const PDF_VIEWER = "/pdfjs/viewer.html?file=";
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
