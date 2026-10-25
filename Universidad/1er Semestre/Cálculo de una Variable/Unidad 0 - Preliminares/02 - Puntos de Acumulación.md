@@ -473,20 +473,20 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - [[01 - Métricas y Espacios Métricos]] - Definición de distancia
-> - [[Espacios Métricos]] - Bolas abiertas y cerradas
+> - Espacios Métricos - Bolas abiertas y cerradas
 > - [[15 - Sucesiones]] - Convergencia de sucesiones
 > 
 > **Conceptos relacionados:**
 > 
-> - [[Topología]] - Conjuntos abiertos y cerrados
+> - Topología - Conjuntos abiertos y cerrados
 > - [[02 – Continuidad]] - Relación con imágenes de conjuntos
-> - [[Compacidad]] - Relación con subsucesiones convergentes
+> - Compacidad - Relación con subsucesiones convergentes
 > 
 > **Aplicaciones:**
 > 
-> - [[Conjuntos Cerrados]] - Caracterización con puntos de acumulación
-> - [[Funciones Continuas]] - Preservación de clausuras
-> - [[Límites de Funciones]] - Definición usando puntos de acumulación
+> - Conjuntos Cerrados - Caracterización con puntos de acumulación
+> - Funciones Continuas - Preservación de clausuras
+> - Límites de Funciones - Definición usando puntos de acumulación
 
 ## 📚 Resumen Visual
 
@@ -862,34 +862,34 @@ dg-publish: true
 > 
 > - [[01 - Métricas y Espacios Métricos]] - Definición de función de distancia
 > - [[01 - Métricas y Espacios Métricos]] - Bolas abiertas y cerradas
-> - [[Conjuntos]] - Teoría básica de conjuntos
+> - Conjuntos - Teoría básica de conjuntos
 > - [[15 - Sucesiones]] - Convergencia de sucesiones
 > 
 > **Conceptos relacionados:**
 > 
-> - [[Topología]] - Conjuntos abiertos y cerrados
+> - Topología - Conjuntos abiertos y cerrados
 > - [[02 – Continuidad]] - Relación con imágenes de conjuntos
-> - [[Compacidad]] - Relación con subsucesiones convergentes
-> - [[Límites]] - Definición usando puntos de acumulación
+> - Compacidad - Relación con subsucesiones convergentes
+> - Límites - Definición usando puntos de acumulación
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Conjuntos Cerrados]] - Caracterización con puntos de acumulación
-> - [[Clausura de Conjuntos]] - $\overline{A} = A \cup A'$
-> - [[Funciones Continuas]] - Preservación de clausuras
-> - [[Teorema de Bolzano-Weierstrass]] - Existencia de puntos de acumulación
+> - Conjuntos Cerrados - Caracterización con puntos de acumulación
+> - Clausura de Conjuntos - $\overline{A} = A \cup A'$
+> - Funciones Continuas - Preservación de clausuras
+> - Teorema de Bolzano-Weierstrass - Existencia de puntos de acumulación
 > 
 > **Temas avanzados:**
 > 
-> - [[Espacios Compactos]] - Todo infinito tiene punto de acumulación
-> - [[Espacios Separables]] - Relación con densidad
-> - [[Topología General]] - Generalización sin métricas
-> - [[Análisis Funcional]] - En espacios de dimensión infinita
+> - Espacios Compactos - Todo infinito tiene punto de acumulación
+> - Espacios Separables - Relación con densidad
+> - Topología General - Generalización sin métricas
+> - Análisis Funcional - En espacios de dimensión infinita
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Clustering]] - Detección de agrupamientos
-> - [[Análisis de Datos]] - Identificación de patrones
+> - Clustering - Detección de agrupamientos
+> - Análisis de Datos - Identificación de patrones
 > - [[Machine Learning]] - Algoritmos basados en densidad
 ---
 
