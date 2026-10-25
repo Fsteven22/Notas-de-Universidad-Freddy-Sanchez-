@@ -9,9 +9,9 @@ canvas{background:#fff;border:1px solid #ddd;max-width:100vw;max-height:82vh;dis
 <body>
 <div class="bar">Cargando PDF… <a id="dl" target="_blank" rel="noopener">Descargar archivo ?</a></div>
 <div id="pages"></div>
-<script src="../build/pdf.js"></script>
+<script src="./build/pdf.js"></script>
 <script>
-pdfjsLib.GlobalWorkerOptions.workerSrc = "../build/pdf.worker.js";
+pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
 const params = new URLSearchParams(location.search.slice(1));
 const file = params.get("file") || "";
 const bar = document.querySelector(".bar");
