@@ -1,43 +1,69 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Visor PDF</title><style>
-html,body{margin:0;height:100%;background:#0b0c10;color:#eee;font-family:system-ui,sans-serif}
-#pages{padding:12px;display:flex;flex-direction:column;gap:12px;align-items:center;overflow-y:auto}
-canvas{background:#fff;border:1px solid #ddd;max-width:100vw;max-height:82vh;display:block}
-.bar{padding:8px 12px;border-bottom:1px solid #222;font-size:0.9rem;display:flex;gap:10px;align-items:center;justify-content:space-between}
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Visor PDF - Diagnóstico</title><style>
+html,body{margin:0;height:100%;background:#0b0c10;color:#eee;font-family:monospace,sans-serif;font-size:13px}
+#pages{padding:12px;display:flex;flex-direction:column;gap:8px;align-items:flex-start;overflow-y:auto;min-height:100vh}
+.bar{padding:8px 12px;border-bottom:1px solid #222;font-size:0.9rem;display:flex;gap:10px;align-items:center}
 .bar a{color:#22d3ee;text-decoration:none}
-.bar a:hover{text-decoration:underline}
-.err{color:#f87171;background:#7f1d1d;padding:8px;border-radius:6px;display:inline-block;margin-top:8px}
+.log{margin:4px 0;padding:6px 8px;border-radius:4px;background:#111;border-left:3px solid #22d3ee;word-break:break-all}
+.log.error{border-left-color:#f87171;color:#fca5a5;background:#2a0a0a}
+.log.ok{border-left-color:#4ade80;color:#86efac;background:#0a2a0a}
+#fileInfo{font-size:0.85rem;color:#94a3b8;margin-bottom:8px}
+canvas{background:#fff;border:1px solid #ddd;max-width:100vw;max-height:80vh;display:block;margin:4px 0}
 </title></head>
 <body>
-<div class="bar">Cargando PDF… <a id="dl" target="_blank" rel="noopener">Descargar archivo ?</a><div id="err" class="err"></div></div>
+<div class="bar">
+  <div id="fileInfo">Cargando…</div>
+  <a id="dl" target="_blank" rel="noopener">Descargar PDF ?</a>
+</div>
 <div id="pages"></div>
 <script src="./build/pdf.js"></script>
 <script>
-const err = document.getElementById('err');
-const showErr = (m) => { err.textContent = m; console.error(m); };
-pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
-const params = new URLSearchParams(location.search.slice(1));
-const file = params.get("file") || "";
-const bar = document.querySelector(".bar");
-const container = document.getElementById("pages");
-if (!file) { bar.textContent = "No se especificó un archivo PDF."; }
-else {
-  document.getElementById("dl").href = file;
+(function(){
+  const params = new URLSearchParams(location.search.slice(1));
+  const file = params.get("file") || "(sin archivo)";
+  const pages = document.getElementById("pages");
+  const fileInfo = document.getElementById("fileInfo");
+  const dl = document.getElementById("dl");
+  fileInfo.textContent = "Archivo: " + decodeURIComponent(file);
+  if(dl){ dl.href = file; }
+
+  const log = (txt, cls) => {
+    const d = document.createElement("div");
+    d.className = "log" + (cls?" "+cls:"");
+    d.textContent = new Date().toLocaleTimeString() + " " + txt;
+    pages.appendChild(d);
+    console.log(txt);
+  };
+  const err = (txt) => log("ERROR: " + txt, "error");
+
+  window.addEventListener("error", (e) => err("window error: " + (e.message || e)));
+  window.addEventListener("unhandledrejection", (e) => err("unhandled rejection: " + (e.reason || e)));
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
+
+  if (!file || file === "(sin archivo)") { log("No se especificó archivo", "error"); return; }
+
+  log("Intentando cargar PDF: " + decodeURIComponent(file));
   pdfjsLib.getDocument(file).promise.then((pdf) => {
-    bar.textContent = pdf.numPages + " página" + (pdf.numPages !== 1 ? "s" : "") + "  ";
-    const a = document.createElement("a"); a.href = file; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Descargar PDF ?";
-    bar.appendChild(document.createTextNode(" ")); bar.appendChild(a);
-    const go = (n) => pdf.getPage(n).then((page) => {
-      const vp = page.getViewport({ scale: 1.35 });
-      const c = document.createElement("canvas");
-      c.style.maxWidth = "100%"; c.style.maxHeight = "82vh"; c.style.display = "block";
-      container.appendChild(c);
-      const ctx = c.getContext("2d"); c.width = vp.width; c.height = vp.height;
-      page.render({ canvasContext: ctx, viewport: vp }).promise.then(() => {
-        if (n < pdf.numPages) go(n + 1);
-      }).catch((e) => showErr("Error renderizando página " + n + ": " + e.message));
-    }).catch((e) => showErr("Error cargando páginas: " + e.message));
+    log("PDF cargado OK: " + pdf.numPages + " páginas", "ok");
+    const dl2 = document.getElementById("dl");
+    if(dl2){ dl2.href = file; }
+    const go = (n) => {
+      log("Renderizando página " + n + " / " + pdf.numPages);
+      pdf.getPage(n).then((page) => {
+        const vp = page.getViewport({ scale: 1.1 });
+        const c = document.createElement("canvas");
+        c.style.maxWidth = "100%"; c.style.maxHeight = "70vh"; c.style.display = "block"; c.style.margin = "4px 0";
+        pages.appendChild(c);
+        const ctx = c.getContext("2d");
+        c.width = vp.width; c.height = vp.height;
+        page.render({ canvasContext: ctx, viewport: vp }).promise.then(() => {
+          log("Página " + n + " renderizada", "ok");
+          if (n < pdf.numPages) go(n + 1);
+        }).catch((e) => err("Render página " + n + ": " + (e && e.message ? e.message : e)));
+      }).catch((e) => err("getPage " + n + ": " + (e && e.message ? e.message : e)));
+    };
     go(1);
-  }).catch((e) => showErr("No se pudo cargar el PDF: " + e.message));
-}
+  }).catch((e) => err("getDocument: " + (e && e.message ? e.message : e)));
+})();
 </script>
 </body></html>
