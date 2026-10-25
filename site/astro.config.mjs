@@ -8,7 +8,7 @@ import rehypeKatex from "rehype-katex";
 import { rehypeCallouts } from "./src/lib/rehype-callouts.mjs";
 
 export default defineConfig({
-  site: "https://neonotes.vercel.app",
+  site: "https://neonotes-espol.vercel.app",
   integrations: [react()],
   prefetch: {
     prefetchAll: true,
