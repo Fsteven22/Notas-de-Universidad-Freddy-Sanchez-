@@ -424,13 +424,13 @@ dg-publish: true
 ## 🎓 Notas Recomendadas
 
 > [!note] 📖 Para Complementar tu Aprendizaje
-> - Parámetros *args y **kwargs - Argumentos variables
-> - Funciones Lambda - Funciones anónimas
-> - Decoradores - Modificar comportamiento de funciones
-> - Módulos y Paquetes - Organizar funciones en archivos
+> - [[Parámetros *args y **kwargs]] - Argumentos variables
+> - [[Funciones Lambda]] - Funciones anónimas
+> - [[Decoradores]] - Modificar comportamiento de funciones
+> - [[Módulos y Paquetes]] - Organizar funciones en archivos
 > - [[Programación Orientada a Objetos]] - Métodos como funciones de clase
-> - Manejo de Excepciones - Control de errores en funciones
-> - Testing y Debugging - Probar y depurar funciones
+> - [[Manejo de Excepciones]] - Control de errores en funciones
+> - [[Testing y Debugging]] - Probar y depurar funciones
 
 ---
 

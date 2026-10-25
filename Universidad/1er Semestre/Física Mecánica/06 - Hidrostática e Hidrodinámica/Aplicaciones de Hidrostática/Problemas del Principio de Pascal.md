@@ -352,7 +352,7 @@ dg-publish: true
 > - [[El Principio de Pascal]] - Fundamentos teóricos
 > - [[Problemas de Presión en un Fluido]] - Base hidrostática
 > - [[Presión y Densidad]] - Propiedades de fluidos
-> - Fundamentos de Hidrostática e Hidrodinámica - Principios generales
+> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Principios generales
 
 ## 📚 Notas Recomendadas
 

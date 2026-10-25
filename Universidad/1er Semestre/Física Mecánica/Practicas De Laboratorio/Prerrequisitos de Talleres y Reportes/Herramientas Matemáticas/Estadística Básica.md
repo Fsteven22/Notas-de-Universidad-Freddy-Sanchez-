@@ -873,9 +873,9 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación de estadística
-> - Análisis de Errores - Marco conceptual
-> - Regresión Lineal - Análisis de relaciones
-> - Pruebas de Hipótesis - Inferencia estadística
+> - [[Análisis de Errores]] - Marco conceptual
+> - [[Regresión Lineal]] - Análisis de relaciones
+> - [[Pruebas de Hipótesis]] - Inferencia estadística
 
 ## 📈 Extensiones Avanzadas
 
@@ -914,16 +914,16 @@ dg-publish: true
 
 > [!note] **Prerrequisitos**
 > 
-> - Conceptos Básicos de Medición - Fundamentos experimentales
+> - [[Conceptos Básicos de Medición]] - Fundamentos experimentales
 > - **Matemáticas**: Álgebra básica, funciones
 > - **Calculadora científica**: Operaciones estadísticas
 
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación directa
-> - Regresión y Correlación - Análisis de relaciones
-> - Pruebas de Hipótesis - Inferencia estadística
-> - Diseño de Experimentos - Planificación estadística
+> - [[Regresión y Correlación]] - Análisis de relaciones
+> - [[Pruebas de Hipótesis]] - Inferencia estadística
+> - [[Diseño de Experimentos]] - Planificación estadística
 
 ---
 

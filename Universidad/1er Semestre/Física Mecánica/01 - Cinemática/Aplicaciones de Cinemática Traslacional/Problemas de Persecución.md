@@ -350,7 +350,7 @@ dg-publish: true
 > - [[Problemas de Encuentro]] - Casos donde no hay ventaja inicial
 > - [[Cinemática Traslacional]] - Ecuaciones fundamentales
 > - [[Cinemática Traslacional#📈 Tipos de Movimiento Traslacional]] - Para casos con aceleración
-> - Análisis Gráfico del Movimiento - Representación visual
+> - [[Análisis Gráfico del Movimiento]] - Representación visual
 
 ---
 #persecución #alcance #cinemática #movimiento-relativo #velocidad-superior #interceptación #análisis-temporal

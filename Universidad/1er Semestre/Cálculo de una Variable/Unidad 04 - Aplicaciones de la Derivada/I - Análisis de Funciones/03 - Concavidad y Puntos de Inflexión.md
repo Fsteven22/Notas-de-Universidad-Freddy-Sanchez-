@@ -210,13 +210,13 @@ dg-publish: true
 
 ## Referencias 🔗
 
-> [!quote] Criterios de Optimización Aprende sobre máximos y mínimos usando derivadas
+> [!quote] [[Criterios de Optimización]] Aprende sobre máximos y mínimos usando derivadas
 >
 
 > [!quote] [[01 - Análisis Completo de Funciones]] Estudio completo del comportamiento de funciones
 >
 
-> [!quote] Aplicaciones de Derivadas Casos prácticos del uso de derivadas en problemas reales
+> [!quote] [[Aplicaciones de Derivadas]] Casos prácticos del uso de derivadas en problemas reales
 
 
 ---

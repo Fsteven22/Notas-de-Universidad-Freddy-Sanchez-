@@ -488,7 +488,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - Tipos de Errores (Sistemáticos, Aleatorios y de Lectura) - Fundamentos de errores
+> - [[Tipos de Errores (Sistemáticos, Aleatorios y de Lectura)]] - Fundamentos de errores
 > - [[Incertidumbres Experimentales]] - Propagación y análisis avanzado
 > - [[Mediciones Fundamentales]] - Principios básicos de medición
 > - [[Uso del Calibrador de Vernier (Pie de Rey)]] - Técnicas específicas

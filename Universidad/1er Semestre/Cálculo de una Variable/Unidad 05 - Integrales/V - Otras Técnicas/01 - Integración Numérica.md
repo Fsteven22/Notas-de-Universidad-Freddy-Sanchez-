@@ -386,22 +386,22 @@ dg-publish: true
 > - [[03 - Teoremas de Comparación y Desigualdades]] - Estimación de errores y validación
 > 
 > ### 📖 Para Profundizar
-> - Análisis de Errores Numéricos - Teoría completa de errores de truncamiento
-> - Polinomios de Interpolación - Base teórica de Simpson y métodos avanzados
-> - Cuadratura de Gauss - Métodos óptimos de integración numérica
-> - Métodos Adaptativos - Algoritmos inteligentes de integración
+> - [[Análisis de Errores Numéricos]] - Teoría completa de errores de truncamiento
+> - [[Polinomios de Interpolación]] - Base teórica de Simpson y métodos avanzados
+> - [[Cuadratura de Gauss]] - Métodos óptimos de integración numérica
+> - [[Métodos Adaptativos]] - Algoritmos inteligentes de integración
 > 
 > ### 🎯 Notas Recomendadas
-> - Programación de Métodos Numéricos - Implementación práctica en código
-> - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
-> - Validación de Resultados Numéricos - Técnicas para verificar aproximaciones
-> - Transformaciones de Integrales - Manejo de casos difíciles
+> - [[Programación de Métodos Numéricos]] - Implementación práctica en código
+> - [[Aplicaciones en Ingeniería]] - Casos reales de uso de integración numérica
+> - [[Validación de Resultados Numéricos]] - Técnicas para verificar aproximaciones
+> - [[Transformaciones de Integrales]] - Manejo de casos difíciles
 > 
 > ### 🧮 Aplicaciones Especializadas
-> - Análisis de Señales Digitales - Integración de funciones muestreadas
-> - Simulación Numérica - Integración en ecuaciones diferenciales
-> - Procesamiento de Datos Experimentales - Análisis de mediciones discretas
-> - Optimización Numérica - Integración en algoritmos de optimización
+> - [[Análisis de Señales Digitales]] - Integración de funciones muestreadas
+> - [[Simulación Numérica]] - Integración en ecuaciones diferenciales
+> - [[Procesamiento de Datos Experimentales]] - Análisis de mediciones discretas
+> - [[Optimización Numérica]] - Integración en algoritmos de optimización
 > 
 
 ---

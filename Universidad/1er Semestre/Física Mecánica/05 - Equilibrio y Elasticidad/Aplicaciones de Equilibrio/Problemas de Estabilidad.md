@@ -511,7 +511,7 @@ dg-publish: true
 > - [[Centro de Gravedad (CG)]] - Localización del centro de gravedad
 > - [[Torque y Equilibrio Rotacional]] - Análisis de momentos
 > - [[Problemas con Fricción en Equilibrio]] - Deslizamiento vs vuelco
-> - Aplicaciones de Equilibrio - Casos prácticos adicionales
+> - [[Aplicaciones de Equilibrio]] - Casos prácticos adicionales
 > - [[Elasticidad]] - Deformaciones y estabilidad elástica
 
 ## 🔧 Formulario de Consulta Rápida

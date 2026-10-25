@@ -228,9 +228,9 @@ dg-publish: true
 > 
 > ### Temas Avanzados
 > 
-> - Mecánica Lagrangiana - Formulación generalizada
-> - Relatividad Especial - Impulso a altas velocidades
-> - Mecánica de Fluidos - Impulso en medios continuos
+> - [[Mecánica Lagrangiana]] - Formulación generalizada
+> - [[Relatividad Especial]] - Impulso a altas velocidades
+> - [[Mecánica de Fluidos]] - Impulso en medios continuos
 
 ---
 

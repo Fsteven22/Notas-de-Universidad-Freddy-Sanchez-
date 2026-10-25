@@ -404,7 +404,7 @@ dg-publish: true
 
 > [!quote] **Notas Relacionadas**
 > 
-> - Dinámica de Rotación - Fundamentos teóricos
+> - [[Dinámica de Rotación]] - Fundamentos teóricos
 > - [[Momento de Inercia]] - Cálculos detallados
 > - [[Torque y Equilibrio Rotacional]] - Conceptos base
 > - [[Segunda ley de Newton para Rotación]] - Ecuaciones fundamentales

@@ -171,12 +171,12 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - Equilibrio: Estático, Estable e Inestable
+> - [[Equilibrio: Estático, Estable e Inestable]]
 > - [[Centro de masa (CM)]]
-> - Momento de Torsión
-> - Estática
+> - [[Momento de Torsión]]
+> - [[Estática]]
 > - [[Cinemática Rotacional]]
-> - Diseño Estructural
+> - [[Diseño Estructural]]
 
 ---
 

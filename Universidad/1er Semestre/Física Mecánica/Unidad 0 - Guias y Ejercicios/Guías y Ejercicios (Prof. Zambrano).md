@@ -91,7 +91,7 @@ tags: [FISG1001, unidad0, guias, ejercicios]
 ## 🧪 Prácticas y proyecto
 
 - ![[FISG1001-Práctica-Salida de Campo 1.pdf]] — estudio: [[Salida de Campo 1]]
-- FISG1001-Metodología PIA.pptx — metodología del Proyecto Integrador de Aprendizaje (PPTX)
+- [[FISG1001-Metodología PIA.pptx]] — metodología del Proyecto Integrador de Aprendizaje (PPTX)
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos

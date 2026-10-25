@@ -305,8 +305,8 @@ dg-publish: true
 > [!note] **Prerrequisitos**
 > 
 > - [[Vectores]] - Descomposición de fuerzas
-> - Trigonometría Básica - Funciones trigonométricas
-> - Dinámica de Traslación - Aplicación de las leyes de Newton
+> - [[Trigonometría Básica]] - Funciones trigonométricas
+> - [[Dinámica de Traslación]] - Aplicación de las leyes de Newton
 
 ---
 

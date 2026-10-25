@@ -418,7 +418,7 @@ dg-publish: true
 > print(f"Tipo: {type(nombres)}")
 > 
 > # 2️⃣ Múltiples columnas (devuelve DataFrame)
-> info_basica = df_empresa'Nombre', 'Departamento', 'Salario'
+> info_basica = df_empresa[['Nombre', 'Departamento', 'Salario']]
 > print(f"Columnas seleccionadas: {list(info_basica.columns)}")
 > 
 > # 3️⃣ Por tipo de datos

@@ -262,7 +262,7 @@ dg-publish: true
 > [!note] **Prerrequisitos**
 > 
 > - [[Vectores]] - Descomposición de fuerzas
-> - Dinámica de Traslación - Leyes de Newton
+> - [[Dinámica de Traslación]] - Leyes de Newton
 > - [[Unidades y Magnitudes Físicas]] - Sistema de unidades
 
 ---

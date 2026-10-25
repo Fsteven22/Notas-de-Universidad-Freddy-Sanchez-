@@ -289,19 +289,19 @@ dg-publish: true
 > - [[02 - Propiedades de la Integral]] - Herramientas para simplificar
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
-> - Volúmenes de Revolución - Aplicación de estas técnicas
+> - [[Volúmenes de Revolución]] - Aplicación de estas técnicas
 > 
 > ### 📖 Técnicas Relacionadas
 > - [[01 - Integrales Impropias]] - Extensión a límites infinitos
 > - [[01 - Integración Numérica]] - Métodos aproximados
 > - [[06 - Funciones Especiales]] - Integrales no elementales
-> - Cálculo de Variaciones - Técnicas avanzadas
+> - [[Cálculo de Variaciones]] - Técnicas avanzadas
 > 
 > ### 🎯 Aplicaciones Prácticas
-> - Trabajo y Energía con Integrales - Uso en física
-> - Probabilidad y Estadística - Funciones de densidad
-> - Ecuaciones Diferenciales - Resolución de EDOs
-> - Transformadas - Fourier, Laplace
+> - [[Trabajo y Energía con Integrales]] - Uso en física
+> - [[Probabilidad y Estadística]] - Funciones de densidad
+> - [[Ecuaciones Diferenciales]] - Resolución de EDOs
+> - [[Transformadas]] - Fourier, Laplace
 > 
 
 ### 🏷️ Tags

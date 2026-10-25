@@ -138,39 +138,39 @@ Ejemplo:
 > [!quote]- ## Referencias y Conexiones 🔗
 
 ### 📖 Enlaces a Otras Notas
--  - Base para implementar algoritmos de ML
--  - Para estructurar el aprendizaje de conceptos complejos
--  - Evaluar viabilidad de proyectos de ML
--  - Manejar proyectos de ML efectivamente
--  - Fundamento matemático del ML
--  - Comunicar resultados de modelos
+- ![[Fundamentos de Programación]] - Base para implementar algoritmos de ML
+- ![[Métodos de Estudio]] - Para estructurar el aprendizaje de conceptos complejos
+- ![[Análisis Costo-Beneficio]] - Evaluar viabilidad de proyectos de ML
+- ![[Gestión de Proyectos]] - Manejar proyectos de ML efectivamente
+- ![[Estadística y Probabilidad]] - Fundamento matemático del ML
+- ![[Visualización de Datos]] - Comunicar resultados de modelos
 
 > [!note]- ## Prerrequisitos y Notas Recomendadas 📋
 
 ### 🧮 **Fundamentos Matemáticos (Esenciales)**
--  - Para entender optimización y gradientes
--  - Base fundamental para ML
--  - Operaciones matriciales y vectoriales
--  - Análisis exploratorio de datos
+- ![[Cálculo de una Variable]] - Para entender optimización y gradientes
+- ![[Estadística y Probabilidad]] - Base fundamental para ML
+- ![[Álgebra Lineal]] - Operaciones matriciales y vectoriales
+- ![[Estadística Descriptiva]] - Análisis exploratorio de datos
 
 ### 💻 **Programación (Requeridos)**
--  - Fundamentos de Python
--  - Modularización de código
--  - Manipulación de datos
--  - Cálculos numéricos
--  - Visualización
+- ![[Variables y Tipos de Datos]] - Fundamentos de Python
+- ![[01 - Funciones]] - Modularización de código
+- ![[Pandas]] - Manipulación de datos
+- ![[NumPy]] - Cálculos numéricos
+- ![[Matplotlib/Seaborn]] - Visualización
 
 ### 🎯 **Metodología y Proceso (Complementarios)**
--  - Enfoque centrado en problemas
--  - Exploración y visualización
--  - Control de calidad en datos
--  - Registro de experimentos
+- ![[Design Thinking]] - Enfoque centrado en problemas
+- ![[Análisis de Datos]] - Exploración y visualización
+- ![[Gestión de Calidad]] - Control de calidad en datos
+- ![[Documentación de Procesos]] - Registro de experimentos
 
 ### 🔧 **Herramientas Técnicas (Opcionales pero Útiles)**
--  - Control de versiones para proyectos
--  - Almacenamiento y consulta de datos
--  - Integración de datos
--  - Escalabilidad de modelos
+- ![[Git y GitHub]] - Control de versiones para proyectos
+- ![[Bases de Datos]] - Almacenamiento y consulta de datos
+- ![[APIs y Web Services]] - Integración de datos
+- ![[Cloud Computing]] - Escalabilidad de modelos
 
 [!abstract]- ## Recursos de Aprendizaje y Herramientas 🎓
 

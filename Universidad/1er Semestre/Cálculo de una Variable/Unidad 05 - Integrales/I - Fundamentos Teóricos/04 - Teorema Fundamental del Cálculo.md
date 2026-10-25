@@ -209,18 +209,18 @@ dg-publish: true
 > - [[02 - Propiedades de la Integral]] - Herramientas para manipular integrales
 > - [[01 - Métodos de Integración Definida]] - Técnicas para encontrar antiderivadas
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
-> - Ecuaciones Diferenciales - Aplicación del teorema para resolver EDOs
+> - [[Ecuaciones Diferenciales]] - Aplicación del teorema para resolver EDOs
 > 
 > ### 📖 Para Profundizar
-> - Teorema del Valor Medio - Base teórica de la demostración
-> - Funciones Definidas por Integrales - Estudio detallado de funciones integrales
-> - Historia del Cálculo - Desarrollo histórico del teorema
-> - Cálculo de Variaciones - Generalización avanzada
+> - [[Teorema del Valor Medio]] - Base teórica de la demostración
+> - [[Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
+> - [[Historia del Cálculo]] - Desarrollo histórico del teorema
+> - [[Cálculo de Variaciones]] - Generalización avanzada
 > 
 > ### 🎯 Aplicaciones Especializadas
-> - Trabajo y Energía con Integrales - Aplicaciones en física
-> - Volúmenes de Revolución - Aplicaciones geométricas
-> - Longitud de Arco - Más aplicaciones geométricas
+> - [[Trabajo y Energía con Integrales]] - Aplicaciones en física
+> - [[Volúmenes de Revolución]] - Aplicaciones geométricas
+> - [[Longitud de Arco]] - Más aplicaciones geométricas
 > 
 ### 🏷️ Tags
 #fundamental/conexiones #derivadas/integrales #aplicaciones/fisica #historia/matematicas #evaluacion/integrales

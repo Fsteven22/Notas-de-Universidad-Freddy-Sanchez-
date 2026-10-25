@@ -520,23 +520,23 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación principal
-> - Análisis de Errores - Contexto experimental
+> - [[Análisis de Errores]] - Contexto experimental
 > - [[Cálculo Vectorial]] - Extensiones matemáticas
-> - Optimización - Aplicaciones avanzadas
+> - [[Optimización]] - Aplicaciones avanzadas
 
 ## 📚 Notas Recomendadas
 
 > [!note] **Prerrequisitos**
 > 
-> - Funciones de Varias Variables - Concepto base
+> - [[Funciones de Varias Variables]] - Concepto base
 > - **Cálculo diferencial**: Derivadas ordinarias
 > - **Álgebra**: Operaciones básicas
 
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación directa
-> - Análisis Gráfico - Representación visual
-> - Optimización en Física - Aplicaciones avanzadas
+> - [[Análisis Gráfico]] - Representación visual
+> - [[Optimización en Física]] - Aplicaciones avanzadas
 
 ---
 

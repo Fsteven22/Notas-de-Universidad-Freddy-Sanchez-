@@ -405,7 +405,7 @@ dg-publish: true
 > 
 > - [[Errores Absolutos y Relativos]] - Conceptos fundamentales
 > - [[Derivadas Parciales]] - Herramienta matemática
-> - Tratamiento Estadístico de Datos - Análisis avanzado
+> - [[Tratamiento Estadístico de Datos]] - Análisis avanzado
 > - [[Cifras Significativas]] - Expresión de resultados
 
 ## 📚 Notas Recomendadas
@@ -420,8 +420,8 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Derivadas Parciales]] - Matemáticas para propagación
-> - Análisis Gráfico - Representación de incertidumbres
-> - Reportes de Laboratorio - Presentación de resultados
+> - [[Análisis Gráfico]] - Representación de incertidumbres
+> - [[Reportes de Laboratorio]] - Presentación de resultados
 
 ---
 

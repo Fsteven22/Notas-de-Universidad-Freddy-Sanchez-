@@ -167,14 +167,14 @@ dg-publish: true
 > [!quote] 📚 Relaciones con Otros Conceptos
 > 
 > ### Fundamentos Previos:
-> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Esencial para funciones compuestas
-> - Reglas de Derivación - Reglas básicas del producto y cociente
+> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Esencial para funciones compuestas
+> - [[Reglas de Derivación]] - Reglas básicas del producto y cociente
 > - [[01 - Derivada y Definición Formal]] - Demostración de las fórmulas
 > 
 > ### Aplicaciones:
 > - [[01 - Derivación Implícita]] - Para ecuaciones con funciones trigonométricas
 > - [[02 - Interpretación Geométrica de la Derivada]] - Pendientes de curvas trigonométricas
-> - Optimización - Máximos y mínimos de funciones trigonométricas
+> - [[Optimización]] - Máximos y mínimos de funciones trigonométricas
 > 
 > ### Hacia Cálculo Integral:
 > - [[Integrales Trigonométricas]] - Aplicación inversa
@@ -525,18 +525,18 @@ dg-publish: true
 > [!quote] 📚 Relaciones Importantes
 > 
 > ### Prerequisitos:
-> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Esencial para funciones compuestas
+> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Esencial para funciones compuestas
 > - [[01 - Derivación Implícita]] - Para ecuaciones complejas
-> - Reglas de Derivación - Fundamentos básicos
+> - [[Reglas de Derivación]] - Fundamentos básicos
 > 
 > ### Aplicaciones:
-> - Optimización - Crecimiento y decaimiento óptimo
+> - [[Optimización]] - Crecimiento y decaimiento óptimo
 > - [[02 - Interpretación Geométrica de la Derivada]] - Pendientes de curvas exponenciales
 > - **Modelos de Crecimiento** - Poblaciones, finanzas, física
 > 
 > ### Hacia Cálculo Integral:
-> - Integración por Sustitución - Inversión del proceso
-> - Aplicaciones de Integrales - Áreas bajo curvas exponenciales
+> - [[Integración por Sustitución]] - Inversión del proceso
+> - [[Aplicaciones de Integrales]] - Áreas bajo curvas exponenciales
 
 ## 🎲 Ejercicios de Práctica Graduados
 

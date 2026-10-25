@@ -158,7 +158,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[Vectores]] - Para comprender direcciones angulares
-> - Funciones Trigonométricas - Para resolver componentes
+> - [[Funciones Trigonométricas]] - Para resolver componentes
 > - [[01 - Derivada y Definición Formal]] - Para definiciones de ω y α
 > 
 > **Temas complementarios:**

@@ -220,22 +220,22 @@ dg-publish: true
 > - [[02 - Criterios de Convergencia y Divergencia]]
 > - [[01 - Integral de Riemann]]
 > - [[04 - Teorema Fundamental del Cálculo]]
-> - Parametrización de Curvas
+> - [[Parametrización de Curvas]]
 
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - Derivadas de Funciones Paramétricas
-> - Técnicas de Integración
+> - [[Derivadas de Funciones Paramétricas]]
+> - [[Técnicas de Integración]]
 > - [[02 - Coordenadas polares]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
 
 > [!tip] Continuación del Tema
-> - Área de Superficies de Revolución
-> - Integrales de Línea
-> - Curvatura y Torsión
-> - Geometría Diferencial
+> - [[Área de Superficies de Revolución]]
+> - [[Integrales de Línea]]
+> - [[Curvatura y Torsión]]
+> - [[Geometría Diferencial]]
 
 ---
 
@@ -853,30 +853,30 @@ dg-publish: true
 
 ### 🔗 Notas Relacionadas
 
-- Integrales Definidas - Base matemática fundamental
-- Métodos de Integración - Técnicas necesarias para resolver las integrales
+- [[Integrales Definidas]] - Base matemática fundamental
+- [[Métodos de Integración]] - Técnicas necesarias para resolver las integrales
 - [[02 - Área entre Curvas]] - Concepto dual de medida geométrica
 - [[01 - Volúmenes de Sólidos de Revolución]] - Otra aplicación geométrica de integrales
 - [[02 - Coordenadas polares]] - Para curvas con simetría radial
-- Curvas Paramétricas - Representación alternativa de curvas
+- [[Curvas Paramétricas]] - Representación alternativa de curvas
 
 ### 📖 Para Profundizar
 
 - [[03 - Superficies de revolución]] - Área de superficies generadas por revolución
-- Curvatura y Torsión - Propiedades geométricas locales de curvas
+- [[Curvatura y Torsión]] - Propiedades geométricas locales de curvas
 - [[Cálculo Vectorial]] - Extensión a curvas en el espacio 3D
-- Geometría Diferencial - Estudio sistemático de curvas y superficies
-- Integrales de Línea - Integración a lo largo de curvas
-- Cálculo de Variaciones - Optimización de functionales que involucran longitud
+- [[Geometría Diferencial]] - Estudio sistemático de curvas y superficies
+- [[Integrales de Línea]] - Integración a lo largo de curvas
+- [[Cálculo de Variaciones]] - Optimización de functionales que involucran longitud
 
 ### 🎯 Aplicaciones Especializadas
 
-- Mecánica Analítica - Trayectorias de partículas y principios variacionales
-- Óptica Geométrica - Principio de Fermat y caminos ópticos
-- Geodesia - Medición de distancias en la Tierra
-- Gráficos por Computadora - Renderizado de curvas suaves
-- Robótica - Planificación de trayectorias
-- Análisis de Datos - Longitud de series temporales y curvas de tendencia
+- [[Mecánica Analítica]] - Trayectorias de partículas y principios variacionales
+- [[Óptica Geométrica]] - Principio de Fermat y caminos ópticos
+- [[Geodesia]] - Medición de distancias en la Tierra
+- [[Gráficos por Computadora]] - Renderizado de curvas suaves
+- [[Robótica]] - Planificación de trayectorias
+- [[Análisis de Datos]] - Longitud de series temporales y curvas de tendencia
 
 ### 🏷️ Tags
 

@@ -212,23 +212,23 @@ dg-publish: true
 
 > [!quote] 🔗 Links a Otras Notas
 > 
-> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Fundamento de la energía rotacional
+> - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Fundamento de la energía rotacional
 >     
 > - > [[Cinemática Rotacional]] - Torque y aceleración angular
 >     
 > - > [[Rodadura]] - Aplicación principal de energía rotacional
 >     
-> - > Conservación de Energía - Principio fundamental
+> - > [[Conservación de Energía]] - Principio fundamental
 >     
 > - > [[Trabajo y Energía]] - Conceptos base de energía
 >     
-> - > Conservación del Momento Angular - Otra cantidad conservada
+> - > [[Conservación del Momento Angular]] - Otra cantidad conservada
 >     
-> - > Energía Cinética - Concepto análogo lineal
+> - > [[Energía Cinética]] - Concepto análogo lineal
 >     
-> - > Potencia - Rapidez de transferencia energética
+> - > [[Potencia]] - Rapidez de transferencia energética
 >     
-> - > Volantes de Inercia - Aplicación tecnológica
+> - > [[Volantes de Inercia]] - Aplicación tecnológica
 >     
 >
 

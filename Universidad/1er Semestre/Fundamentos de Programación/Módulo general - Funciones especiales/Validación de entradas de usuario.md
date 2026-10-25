@@ -405,10 +405,10 @@ dg-publish: true
 > [!note] 📖 Para Complementar tu Aprendizaje
 > - [[Manejo de Errores con try, except, finally]] - try/except para validación robusta
 > - [[Expresiones Regulares (Regex)]] - Validación de patrones complejos
-> - Módulos datetime - Validación de fechas
-> - Seguridad en Python - Buenas prácticas de seguridad
-> - Testing y Debugging - Probar funciones de validación
-> - Interfaces de Usuario - Validación en aplicaciones GUI
+> - [[Módulos datetime]] - Validación de fechas
+> - [[Seguridad en Python]] - Buenas prácticas de seguridad
+> - [[Testing y Debugging]] - Probar funciones de validación
+> - [[Interfaces de Usuario]] - Validación en aplicaciones GUI
 
 ---
 

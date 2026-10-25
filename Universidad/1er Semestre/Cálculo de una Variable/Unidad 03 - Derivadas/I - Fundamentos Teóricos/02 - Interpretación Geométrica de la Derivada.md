@@ -420,10 +420,10 @@ dg-publish: true
 
 > [!quote] 📖 **Notas relacionadas**
 > 
-> - Límites y Continuidad - Base teórica para la definición de derivada
-> - Definición de Derivada por Límites - Fundamento algebraico
-> - Reglas de Derivación - Técnicas para calcular derivadas
-> - Funciones y sus Gráficas - Conocimiento previo de funciones
+> - [[Límites y Continuidad]] - Base teórica para la definición de derivada
+> - [[Definición de Derivada por Límites]] - Fundamento algebraico
+> - [[Reglas de Derivación]] - Técnicas para calcular derivadas
+> - [[Funciones y sus Gráficas]] - Conocimiento previo de funciones
 
 ---
 
@@ -431,14 +431,14 @@ dg-publish: true
 
 > [!info] 📚 **Para profundizar y complementar**
 > 
-> - Aplicaciones de la Derivada - Usos prácticos en optimización
-> - Análisis de Funciones con Derivadas - Crecimiento, máximos y mínimos
+> - [[Aplicaciones de la Derivada]] - Usos prácticos en optimización
+> - [[Análisis de Funciones con Derivadas]] - Crecimiento, máximos y mínimos
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y concavidad
-> - Aproximaciones Lineales - Uso de tangentes para aproximar funciones
+> - [[Aproximaciones Lineales]] - Uso de tangentes para aproximar funciones
 > - [[01 - Formas Indeterminadas]] - Aplicación de derivadas en límites indeterminados
-> - Cinemática y Derivadas - Aplicaciones físicas específicas
-> - Optimización en Economía - Aplicaciones en ciencias económicas
-> - Ecuaciones de Curvas Paramétricas - Tangentes en curvas paramétricas
+> - [[Cinemática y Derivadas]] - Aplicaciones físicas específicas
+> - [[Optimización en Economía]] - Aplicaciones en ciencias económicas
+> - [[Ecuaciones de Curvas Paramétricas]] - Tangentes en curvas paramétricas
 
 ---
 

@@ -224,10 +224,10 @@ dg-publish: true
 >
 
 > [!tip] Continuación del Tema
-> - Series de Potencias
-> - Series de Taylor y Maclaurin
+> - [[Series de Potencias]]
+> - [[Series de Taylor y Maclaurin]]
 > - [[01 - Integración Numérica]]
-> - Métodos de Aproximación
+> - [[Métodos de Aproximación]]
 
 ---
 
@@ -447,7 +447,7 @@ dg-publish: true
 > - [[01 - Integrales Impropias]]
 > - [[01 - Integral de Riemann]]
 > - [[04 - Teorema Fundamental del Cálculo]]
-> - 02 - Criterios de Convergencia y Divergencia (para series)
+> - [[02 - Criterios de Convergencia y Divergencia]] (para series)
 
 ## Notas Recomendadas
 
@@ -461,8 +461,8 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > - [[01 - Integración Numérica]]
 > - [[01 - Métodos de Integración Definida]]
-> - Series de Fourier
-> - Transformadas de Laplace
+> - [[Series de Fourier]]
+> - [[Transformadas de Laplace]]
 
 ---
 

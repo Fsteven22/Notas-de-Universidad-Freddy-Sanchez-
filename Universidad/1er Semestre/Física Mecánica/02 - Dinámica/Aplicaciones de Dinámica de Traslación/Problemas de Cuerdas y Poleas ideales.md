@@ -347,7 +347,7 @@ dg-publish: true
 > [!note] **Prerrequisitos**
 > 
 > - [[Vectores]] - Análisis de fuerzas y direcciones
-> - Dinámica de Traslación - Segunda ley de Newton
+> - [[Dinámica de Traslación]] - Segunda ley de Newton
 > - [[Cinemática Traslacional]] - Relaciones entre posición, velocidad y aceleración
 
 ---

@@ -269,8 +269,8 @@ dg-publish: true
 > - [[Problemas de Encuentro]] - Para encuentros con velocidad relativa
 > - [[Vectores]] - Operaciones vectoriales fundamentales
 > - [[Cinemática Traslacional]] - Conceptos base de movimiento
-> - Transformaciones de Galileo - Relatividad clásica
-> - Análisis Gráfico del Movimiento - Representación visual
+> - [[Transformaciones de Galileo]] - Relatividad clásica
+> - [[Análisis Gráfico del Movimiento]] - Representación visual
 
 ---
 
@@ -279,9 +279,9 @@ dg-publish: true
 > [!info] 🎓 **Conocimientos Previos Necesarios**
 > 
 > - [[Vectores]] - Suma vectorial y componentes
-> - Trigonometría - Descomposición y ángulos
-> - Sistemas de Coordenadas - Referencias cartesianas
-> - Navegación por Coordenadas - Rumbo y orientación
+> - [[Trigonometría]] - Descomposición y ángulos
+> - [[Sistemas de Coordenadas]] - Referencias cartesianas
+> - [[Navegación por Coordenadas]] - Rumbo y orientación
 
 ---
 

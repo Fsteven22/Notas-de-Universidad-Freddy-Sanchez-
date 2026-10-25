@@ -122,25 +122,25 @@ dg-publish: true
 
 > [!quote] Notas Relacionadas
 > 
-> - Presión Hidrostática
+> - [[Presión Hidrostática]]
 > - [[El Principio de Pascal]]
-> - Densidad de Fluidos
-> - Sistemas Hidráulicos
+> - [[Densidad de Fluidos]]
+> - [[Sistemas Hidráulicos]]
 
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
 > 
-> - Conceptos Básicos de Fluidos
-> - Presión y Fuerza
-> - Densidad y Peso Específico
+> - [[Conceptos Básicos de Fluidos]]
+> - [[Presión y Fuerza]]
+> - [[Densidad y Peso Específico]]
 >
 
 > [!tip] Continuación del Tema
 > 
-> - Principio de Arquímedes
-> - Ecuación de Continuidad
-> - Teorema de Torricelli
+> - [[Principio de Arquímedes]]
+> - [[Ecuación de Continuidad]]
+> - [[Teorema de Torricelli]]
 
 ---
 

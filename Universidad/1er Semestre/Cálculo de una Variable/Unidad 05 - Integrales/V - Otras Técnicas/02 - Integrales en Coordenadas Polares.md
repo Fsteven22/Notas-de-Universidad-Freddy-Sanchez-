@@ -267,7 +267,7 @@ dg-publish: true
 ## Referencias
 
 > [!quote] Notas Relacionadas
-> - Integrales Dobles
+> - [[Integrales Dobles]]
 > - [[02 - Transformaciones entre Coordenadas]]
 > - [[02 – Jacobiano de la transformación]]
 > - [[01 - Coordenadas cilíndricas y esféricas]]
@@ -275,17 +275,17 @@ dg-publish: true
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - Integrales Dobles
-> - Funciones Trigonométricas
-> - Límites y Continuidad
+> - [[Integrales Dobles]]
+> - [[Funciones Trigonométricas]]
+> - [[Límites y Continuidad]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
 
 > [!tip] Continuación del Tema
 > - [[01 - Coordenadas cilíndricas y esféricas]]
-> - Integrales de Línea
-> - Teoremas de Green y Stokes
-> - Análisis Vectorial
+> - [[Integrales de Línea]]
+> - [[Teoremas de Green y Stokes]]
+> - [[Análisis Vectorial]]
 
 ---
 

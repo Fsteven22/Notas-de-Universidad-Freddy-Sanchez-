@@ -157,12 +157,12 @@ dg-publish: true
 > - **Resistencia rotacional**: Relaciona torque con aceleración angular
 > - **Ecuación conjunta**: Mayor $I$ requiere mayor $\tau$ para misma $\alpha$
 > 
-> ### Trabajo y Energía Rotacional
+> ### [[Trabajo y Energía Rotacional]]
 > 
 > - **Trabajo rotacional**: $W = \tau \Delta\theta$
 > - **Potencia rotacional**: $P = \tau \omega$
 > 
-> ### Equilibrio Rotacional
+> ### [[Equilibrio Rotacional]]
 > 
 > - **Condición**: $\sum \tau = 0$ (torques se cancelan)
 > - **Aplicación**: Balanzas, palancas, estructuras
@@ -218,17 +218,17 @@ dg-publish: true
 > 
 > - [[Momento de Inercia]]
 > - [[Momentum Angular]]
-> - Equilibrio Rotacional
-> - Trabajo y Energía Rotacional
-> - Palancas y Máquinas Simples
-> - Producto Vectorial
+> - [[Equilibrio Rotacional]]
+> - [[Trabajo y Energía Rotacional]]
+> - [[Palancas y Máquinas Simples]]
+> - [[Producto Vectorial]]
 > 
 > ### 📖 Temas Avanzados
 > 
 > - [[Giroscopios y Precesión]]
-> - Torque en Sistemas de Múltiples Cuerpos
-> - Análisis de Estructuras
-> - Máquinas Rotativast
+> - [[Torque en Sistemas de Múltiples Cuerpos]]
+> - [[Análisis de Estructuras]]
+> - [[Máquinas Rotativas]]t
 ## Tags
 
 #fisica #mecanica #torque #momento-torsion #dinamica-roacional #equilibrio
@@ -388,11 +388,11 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - Momento de Torsión
+> - [[Momento de Torsión]]
 > - [[Cinemática Rotacional]]
-> - Estática
-> - Fuerzas y Equilibrio
-> - Diagramas de Cuerpo Libre
+> - [[Estática]]
+> - [[Fuerzas y Equilibrio]]
+> - [[Diagramas de Cuerpo Libre]]
 > - [[Centro de masa (CM)]]
 
 ---

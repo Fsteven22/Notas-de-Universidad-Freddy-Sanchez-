@@ -427,7 +427,7 @@ dg-publish: true
 > - [[Problemas de Cuerdas y Poleas ideales]] - Casos con movimiento
 > - [[Torque y Equilibrio Rotacional]] - Análisis de poleas con masa
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Técnicas de análisis
-> - Aplicaciones de Equilibrio - Ejercicios complementarios
+> - [[Aplicaciones de Equilibrio]] - Ejercicios complementarios
 > - [[Segunda ley de Newton para Rotación]] - Para poleas en movimiento
 
 ## 🔧 Formulario de Consulta Rápida

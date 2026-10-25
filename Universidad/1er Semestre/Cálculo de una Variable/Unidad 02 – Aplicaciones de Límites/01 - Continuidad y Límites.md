@@ -208,12 +208,12 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - Límites de Funciones - Base conceptual para continuidad
-> - Derivabilidad - Relación entre continuidad y diferenciabilidad
-> - Teorema de Weierstrass - Continuidad en compactos
-> - Topología - Conceptos de abierto, cerrado y compacto
-> - Funciones Reales - Propiedades generales de funciones
-> - Método de Bisección - Aplicación computacional del TVI
+> - [[Límites de Funciones]] - Base conceptual para continuidad
+> - [[Derivabilidad]] - Relación entre continuidad y diferenciabilidad
+> - [[Teorema de Weierstrass]] - Continuidad en compactos
+> - [[Topología]] - Conceptos de abierto, cerrado y compacto
+> - [[Funciones Reales]] - Propiedades generales de funciones
+> - [[Método de Bisección]] - Aplicación computacional del TVI
 
 ## Notas Recomendadas
 
@@ -221,19 +221,19 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - Límites Básicos - Concepto de límite y límites laterales
+> - [[Límites Básicos]] - Concepto de límite y límites laterales
 > - [[02 – Dominio y Rango]] - Conceptos básicos de funciones
-> - Intervalos y Conjuntos - Notación de intervalos
-> - Desigualdades - Manipulación de desigualdades con valor absoluto
+> - [[Intervalos y Conjuntos]] - Notación de intervalos
+> - [[Desigualdades]] - Manipulación de desigualdades con valor absoluto
 > 
 > **Para profundizar:**
 > 
-> - Espacios Métricos - Generalización de continuidad uniforme
-> - Compacidad - Teoremas de Heine-Borel y Heine-Cantor
-> - Conexidad - Generalización del Teorema del Valor Intermedio
-> - Análisis Funcional - Continuidad en espacios más generales
-> - Ecuaciones Diferenciales - TVI en existencia de soluciones
-> - Análisis Numérico - Algoritmos basados en continuidad
+> - [[Espacios Métricos]] - Generalización de continuidad uniforme
+> - [[Compacidad]] - Teoremas de Heine-Borel y Heine-Cantor
+> - [[Conexidad]] - Generalización del Teorema del Valor Intermedio
+> - [[Análisis Funcional]] - Continuidad en espacios más generales
+> - [[Ecuaciones Diferenciales]] - TVI en existencia de soluciones
+> - [[Análisis Numérico]] - Algoritmos basados en continuidad
 
 ---
 

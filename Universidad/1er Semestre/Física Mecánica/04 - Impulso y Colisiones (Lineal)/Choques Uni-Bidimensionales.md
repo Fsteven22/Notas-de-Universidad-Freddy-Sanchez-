@@ -342,26 +342,26 @@ dg-publish: true
 > 
 > - [[Trabajo y Energía]] - Análisis energético de choques
 > - [[Centro de masa (CM)]] - Para sistemas de múltiples partículas
-> - Dinámica de Sistemas - Extensión a muchas partículas
+> - [[Dinámica de Sistemas]] - Extensión a muchas partículas
 > 
 > ### Conceptos Relacionados
 > 
 > - [[Momentum Angular]] - Choques con rotación
-> - Oscilaciones - Choques en sistemas vibratorios
-> - Ondas - Choques elásticos y transmisión de energía
+> - [[Oscilaciones]] - Choques en sistemas vibratorios
+> - [[Ondas]] - Choques elásticos y transmisión de energía
 > 
 > ### Aplicaciones Avanzadas
 > 
-> - Mecánica de Fluidos - Choques en medios continuos
-> - Relatividad Especial - Choques a altas velocidades
-> - Física de Partículas - Colisiones subatómicas
-> - Astrofísica - Colisiones planetarias y estelares
+> - [[Mecánica de Fluidos]] - Choques en medios continuos
+> - [[Relatividad Especial]] - Choques a altas velocidades
+> - [[Física de Partículas]] - Colisiones subatómicas
+> - [[Astrofísica]] - Colisiones planetarias y estelares
 > 
 > ### Temas Complementarios
 > 
-> - Análisis Forense - Reconstrucción de accidentes
-> - Biomecánica - Choques en sistemas biológicos
-> - Ingeniería de Seguridad - Diseño de sistemas de protección
+> - [[Análisis Forense]] - Reconstrucción de accidentes
+> - [[Biomecánica]] - Choques en sistemas biológicos
+> - [[Ingeniería de Seguridad]] - Diseño de sistemas de protección
 
 ---
 

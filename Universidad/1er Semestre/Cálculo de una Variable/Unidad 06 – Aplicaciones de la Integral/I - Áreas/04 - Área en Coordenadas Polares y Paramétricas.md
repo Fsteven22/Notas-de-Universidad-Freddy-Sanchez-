@@ -33,7 +33,7 @@ dg-publish: true
 > 
 > **Paso 5**: Aplicar la fórmula $A = \frac{1}{2}\int_\alpha^\beta [r_{\text{ext}}^2 - r_{\text{int}}^2] d\theta$
 > 
-> 
+> ![[Diagramas/04_-_Área_en_Coordenadas_Polares_y_Paramétricas_01.svg]]
 
 ### 🧪 Ejemplos en Coordenadas Polares
 
@@ -255,23 +255,23 @@ dg-publish: true
 
 - [[02 - Área entre Curvas]] - Concepto base en coordenadas rectangulares
 - [[02 - Coordenadas polares]] - Sistema de coordenadas fundamental
-- Curvas Paramétricas - Representación paramétrica de curvas
-- Teorema de Green - Método alternativo usando teoremas vectoriales
+- [[Curvas Paramétricas]] - Representación paramétrica de curvas
+- [[Teorema de Green]] - Método alternativo usando teoremas vectoriales
 - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ### 📖 Para Profundizar
 
-- Integrales Dobles en Polares - Extensión a regiones más generales
+- [[Integrales Dobles en Polares]] - Extensión a regiones más generales
 - [[Cálculo Vectorial]] - Aplicaciones del teorema de Green
-- Geometría Diferencial - Curvas en espacios más generales
-- Análisis Complejo - Representación de curvas usando números complejos
+- [[Geometría Diferencial]] - Curvas en espacios más generales
+- [[Análisis Complejo]] - Representación de curvas usando números complejos
 
 ### 🎯 Aplicaciones
 
-- Centros de Masa en Polares - Usando estas técnicas para centroides
+- [[Centros de Masa en Polares]] - Usando estas técnicas para centroides
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
-- Diseño de Engranajes - Aplicaciones industriales de curvas especiales
-- Astronomía y Órbitas - Cálculos orbitales usando coordenadas polares
+- [[Diseño de Engranajes]] - Aplicaciones industriales de curvas especiales
+- [[Astronomía y Órbitas]] - Cálculos orbitales usando coordenadas polares
 
 ### 🏷️ Tags
 

@@ -1222,7 +1222,7 @@ dg-publish: true
 > - [[Gráficas no lineales]] - Identificación de patrones
 > - [[Estadística Básica]] - Base matemática
 > - [[Incertidumbres Experimentales]] - Propagación de errores
-> - Análisis Dimensional - Verificación física de parámetros
+> - [[Análisis Dimensional]] - Verificación física de parámetros
 
 ## 🎯 Ejercicios y Problemas
 

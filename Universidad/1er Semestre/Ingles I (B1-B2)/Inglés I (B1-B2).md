@@ -16,15 +16,15 @@ dg-publish: true
 
 ## Unit 10 — Why We Buy
 
-- 📂 Índice Unit 10
+- [[Unit 10 - Why we buy/00 - Índice|📂 Índice Unit 10]]
 
 ## Unit 11 — Pushing Yourself
 
-- 📂 Índice Unit 11
+- [[Unit 11 - Pushing Yourself/00 - Índice|📂 Índice Unit 11]]
 
 ## Unit 12 — Life's Little Lessons
 
-- 📂 Índice Unit 12
+- [[Unit 12 – Life’s Little Lessons/00 - Índice|📂 Índice Unit 12]]
 
 ---
 
@@ -56,17 +56,17 @@ dg-publish: true
 
 - [[Welcome & Syllabus English I]]
 
-- 📂 Unit 10 - Why we buy
+- [[Unit 10 - Why we buy/00 - Índice.md|📂 Unit 10 - Why we buy]]
 
-- 📂 Unit 11 - Pushing Yourself
+- [[Unit 11 - Pushing Yourself/00 - Índice.md|📂 Unit 11 - Pushing Yourself]]
 
-- 📂 Unit 12 – Life’s Little Lessons
+- [[Unit 12 – Life’s Little Lessons/00 - Índice.md|📂 Unit 12 – Life’s Little Lessons]]
 
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: Inglés I (B1-B2)
+> - Mapa: [[Inglés I (B1-B2)]]
 > - Siguiente: [[Welcome & Syllabus English I]]
 
 **Tags:** #english #english1 #ESPOL #semester1

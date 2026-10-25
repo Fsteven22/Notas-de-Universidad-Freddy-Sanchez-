@@ -182,7 +182,7 @@ dg-publish: true
 > [!quote] Notas Relacionadas
 > 
 > - [[El Principio de Arquímedes y Flotación]]
-> - Obsidian/Universidad/Física Mecanica/Notas nuevas/06 - Hidrostática e hidrodinámica/Presión y Densidad
+> - [[Obsidian/Universidad/Física Mecanica/Notas nuevas/06 - Hidrostática e hidrodinámica/Presión y Densidad]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Leyes de Newton]]
 
@@ -190,7 +190,7 @@ dg-publish: true
 
 > [!info] Prerrequisitos
 > 
-> - Obsidian/Universidad/Física Mecanica/Notas nuevas/06 - Hidrostática e hidrodinámica/Presión y Densidad
+> - [[Obsidian/Universidad/Física Mecanica/Notas nuevas/06 - Hidrostática e hidrodinámica/Presión y Densidad]]
 > - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Leyes de Newton]]
 >

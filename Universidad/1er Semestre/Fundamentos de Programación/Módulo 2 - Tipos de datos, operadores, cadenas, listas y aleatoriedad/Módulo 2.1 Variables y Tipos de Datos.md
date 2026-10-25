@@ -328,12 +328,12 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - Operaciones y Casting Python - Conversión entre tipos
-> - Entrada de Datos Python - input() y variables
-> - Condicionales Python - Uso de booleanos
-> - Formateo de Strings Python - Manipulación avanzada de texto
-> - Funciones Python - Variables como parámetros
-> - Scope y Alcance Python - Visibilidad de variables
+> - [[Operaciones y Casting Python]] - Conversión entre tipos
+> - [[Entrada de Datos Python]] - input() y variables
+> - [[Condicionales Python]] - Uso de booleanos
+> - [[Formateo de Strings Python]] - Manipulación avanzada de texto
+> - [[Funciones Python]] - Variables como parámetros
+> - [[Scope y Alcance Python]] - Visibilidad de variables
 
 ## 🎯 Notas Recomendadas para Complementar
 
@@ -341,19 +341,19 @@ dg-publish: true
 > 
 > ### 🔧 **Prerrequisitos**
 > 
-> - Instalación Python y IDE
-> - Conceptos Básicos Programación
-> - Sintaxis Básica Python
-> - Comentarios en Python
+> - [[Instalación Python y IDE]]
+> - [[Conceptos Básicos Programación]]
+> - [[Sintaxis Básica Python]]
+> - [[Comentarios en Python]]
 > 
 > ### 🔄 **Temas Relacionados**
 > 
-> - Listas y Tuplas Python - Estructuras de datos complejas
-> - Diccionarios Python - Mapeo clave-valor
-> - Constantes en Python - Valores inmutables
-> - Debugging Python - type() para depuración
-> - Memory Management Python - Gestión de memoria
-> - Naming Conventions Python - Estilo pythónico
+> - [[Listas y Tuplas Python]] - Estructuras de datos complejas
+> - [[Diccionarios Python]] - Mapeo clave-valor
+> - [[Constantes en Python]] - Valores inmutables
+> - [[Debugging Python]] - type() para depuración
+> - [[Memory Management Python]] - Gestión de memoria
+> - [[Naming Conventions Python]] - Estilo pythónico
 
 ## 🧠 Técnica de Estudio: V.A.R.I.A.B.L.E
 

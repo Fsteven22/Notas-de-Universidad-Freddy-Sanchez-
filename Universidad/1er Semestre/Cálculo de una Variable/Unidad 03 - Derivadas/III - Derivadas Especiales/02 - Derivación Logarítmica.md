@@ -240,16 +240,16 @@ dg-publish: true
 > [!quote] 📚 Notas Relacionadas
 > 
 > ### Prerequisitos
-> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Fundamental para derivación implícita
+> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Fundamental para derivación implícita
 > - [[01 - Derivación Implícita]] - Base teórica del método
-> - Propiedades de Logaritmos - Esencial para simplificación
-> - Regla del Producto y Cociente - Para comparar eficiencia
+> - [[Propiedades de Logaritmos]] - Esencial para simplificación
+> - [[Regla del Producto y Cociente]] - Para comparar eficiencia
 > 
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Conexión con casos complejos
 > - [[13 - Funciones exponenciales]] - Casos $a^{f(x)}$ y $f(x)^a$
-> - Límites Indeterminados - Aplicación para formas $1^\infty$, $0^0$
-> - Optimización - Derivadas complejas en máximos/mínimos
+> - [[Límites Indeterminados]] - Aplicación para formas $1^\infty$, $0^0$
+> - [[Optimización]] - Derivadas complejas en máximos/mínimos
 
 ## 📝 Ejercicios Recomendados
 

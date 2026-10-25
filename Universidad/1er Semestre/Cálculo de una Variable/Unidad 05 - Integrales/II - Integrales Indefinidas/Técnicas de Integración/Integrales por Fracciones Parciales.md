@@ -172,9 +172,9 @@ dg-publish: true
 
 > [!quote] **Notas relacionadas**
 > 
-> - Integración por Sustitución - Método alternativo para ciertas funciones racionales
+> - [[Integración por Sustitución]] - Método alternativo para ciertas funciones racionales
 > - [[Integración por Partes]] - Complementa cuando hay productos
-> - Factorización de Polinomios - Fundamento algebraico
+> - [[Factorización de Polinomios]] - Fundamento algebraico
 > - [[Integrales Trigonométricas]] - Casos especiales de sustitución
 
 ---
@@ -183,11 +183,11 @@ dg-publish: true
 
 > [!note] 📖 **Para profundizar**
 > 
-> - Teorema Fundamental del Álgebra
+> - [[Teorema Fundamental del Álgebra]]
 > - [[05 - Sistemas de ecuaciones lineales]]
-> - Transformada de Laplace
-> - Funciones Racionales y sus Propiedades
-> - Métodos de Integración - Resumen General
+> - [[Transformada de Laplace]]
+> - [[Funciones Racionales y sus Propiedades]]
+> - [[Métodos de Integración - Resumen General]]
 
 ---
 

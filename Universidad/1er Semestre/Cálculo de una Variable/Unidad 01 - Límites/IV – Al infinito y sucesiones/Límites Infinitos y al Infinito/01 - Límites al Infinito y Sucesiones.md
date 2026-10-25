@@ -154,8 +154,8 @@ dg-publish: true
 
 > [!quote] 📚 **Referencias**
 > 
-> - 01 - Límites al Infinito y Sucesiones - Comportamiento cuando x tiende a infinito
-> - Asíntotas - Estudio completo de comportamiento asintótico
+> - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento cuando x tiende a infinito
+> - [[Asíntotas]] - Estudio completo de comportamiento asintótico
 > - [[02 – Continuidad]] - Relación con discontinuidades infinitas
 > - [[02 - Límites Laterales]] - Herramienta fundamental para el análisis
 > - [[12 - Funciones racionales]] - Casos más comunes de límites infinitos
@@ -165,17 +165,17 @@ dg-publish: true
 > 
 > ### Prerrequisitos:
 > 
-> - Definición de Límite - Conceptos fundamentales
-> - Factorización de Polinomios - Técnica algebraica esencial
-> - Análisis de Signos - Para determinar comportamiento
+> - [[Definición de Límite]] - Conceptos fundamentales
+> - [[Factorización de Polinomios]] - Técnica algebraica esencial
+> - [[Análisis de Signos]] - Para determinar comportamiento
 > - [[02 - Límites Laterales]] - Base para límites infinitos
 > 
 > ### Temas Relacionados:
 > 
 > - [[01 - Formas Indeterminadas]] - Para formas indeterminadas
-> - Discontinuidades - Clasificación completa
-> - Gráficas de Funciones - Interpretación visual
-> - Comportamiento Asintótico - Análisis avanzado
+> - [[Discontinuidades]] - Clasificación completa
+> - [[Gráficas de Funciones]] - Interpretación visual
+> - [[Comportamiento Asintótico]] - Análisis avanzado
 >
 
 > [!tip] 🧠 **Técnica de Estudio: "FASE" (Factoriza-Analiza-Signos-Evalúa)**
@@ -305,7 +305,7 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Fundamentos teóricos
 > - [[02 - Límites Laterales]] - Para casos puntuales
-> - Asíntotas - Comportamiento gráfico completo
+> - [[Asíntotas]] - Comportamiento gráfico completo
 > - [[02 – Continuidad]] - Relación con límites
 > - [[01 - Derivada y Definición Formal]] - Aplicación en tasas de cambio
 >
@@ -315,14 +315,14 @@ dg-publish: true
 > ### Prerrequisitos:
 > 
 > - [[11 - Funciones polinomiales]] - Base algebraica necesaria
-> - Álgebra de Límites - Propiedades operacionales
-> - Función Racional - Características específicas
+> - [[Álgebra de Límites]] - Propiedades operacionales
+> - [[Función Racional]] - Características específicas
 > 
 > ### Temas Relacionados:
 > 
-> - Límites Indeterminados - Casos complejos
+> - [[Límites Indeterminados]] - Casos complejos
 > - [[01 - Formas Indeterminadas]] - Herramienta avanzada
-> - Series Infinitas - Comportamiento asintótico avanzado
+> - [[Series Infinitas]] - Comportamiento asintótico avanzado
 >
 
 > [!tip] 🧠 **Técnica de Estudio: Mnemotecnia "GMD"**
@@ -502,11 +502,11 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - Límites de Funciones - Relación entre límites funcionales y sucesiones
-> - Series Numéricas - Aplicación de sucesiones en series
+> - [[Límites de Funciones]] - Relación entre límites funcionales y sucesiones
+> - [[Series Numéricas]] - Aplicación de sucesiones en series
 > - [[02 – Continuidad]] - Caracterización secuencial de continuidad
-> - Topología de los Reales - Conceptos de supremo e ínfimo
-> - Criterios de Convergencia - Herramientas avanzadas para series
+> - [[Topología de los Reales]] - Conceptos de supremo e ínfimo
+> - [[Criterios de Convergencia]] - Herramientas avanzadas para series
 
 ## Notas Recomendadas 📚
 
@@ -514,18 +514,18 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - Números Reales - Propiedades de completitud
-> - Desigualdades - Manipulación de inecuaciones
-> - Límites Básicos - Conceptos fundamentales
-> - Funciones Elementales - Para sucesiones definidas por funciones
+> - [[Números Reales]] - Propiedades de completitud
+> - [[Desigualdades]] - Manipulación de inecuaciones
+> - [[Límites Básicos]] - Conceptos fundamentales
+> - [[Funciones Elementales]] - Para sucesiones definidas por funciones
 > 
 > **Para profundizar:**
 > 
-> - Sucesiones de Cauchy - Caracterización alternativa de convergencia
-> - Límites Superior e Inferior - Conceptos avanzados
-> - Compacidad - Teorema de Bolzano-Weierstrass
-> - Espacios Métricos - Generalización de conceptos
-> - Análisis Real Avanzado - Teoría completa de sucesiones
+> - [[Sucesiones de Cauchy]] - Caracterización alternativa de convergencia
+> - [[Límites Superior e Inferior]] - Conceptos avanzados
+> - [[Compacidad]] - Teorema de Bolzano-Weierstrass
+> - [[Espacios Métricos]] - Generalización de conceptos
+> - [[Análisis Real Avanzado]] - Teoría completa de sucesiones
 
 ---
 

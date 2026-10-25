@@ -627,8 +627,8 @@ dg-publish: true
 
 > [!quote] **Relación con Otros Temas**
 > 
-> - Logaritmos y Exponenciales - Base matemática fundamental
-> - Análisis Dimensional - Consistencia de unidades
+> - [[Logaritmos y Exponenciales]] - Base matemática fundamental
+> - [[Análisis Dimensional]] - Consistencia de unidades
 > - [[Graficas Lineales]] - Representación de datos experimentales
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 > - [[Estadística Básica]] - Análisis de datos científicos

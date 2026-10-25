@@ -392,14 +392,14 @@ dg-publish: true
 ## 🔍 Notas Recomendadas
 
 > [!info] 📚 Para profundizar y complementar
-> - Continuidad y Discontinuidades - Análisis de puntos de ruptura
+> - [[Continuidad y Discontinuidades]] - Análisis de puntos de ruptura
 > - [[06 - Funciones Especiales]] - Heaviside, Dirac, escalón
-> - Aplicaciones Geometricas - Problemas con condiciones variables
+> - [[Aplicaciones Geometricas]] - Problemas con condiciones variables
 > - [[01 - Integrales Impropias]] - Cuando hay discontinuidades infinitas
-> - Métodos de Integració... - Técnicas para cada tramo
-> - Transformadas - Fourier y Laplace de funciones por tramos
-> - Ecuaciones Diferenciales - Con coeficientes por tramos
-> - Fundamentos teóricos - Base teórica de integrabilidad
+> - [[Métodos de Integració...]] - Técnicas para cada tramo
+> - [[Transformadas]] - Fourier y Laplace de funciones por tramos
+> - [[Ecuaciones Diferenciales]] - Con coeficientes por tramos
+> - [[Fundamentos teóricos]] - Base teórica de integrabilidad
 
 ---
 

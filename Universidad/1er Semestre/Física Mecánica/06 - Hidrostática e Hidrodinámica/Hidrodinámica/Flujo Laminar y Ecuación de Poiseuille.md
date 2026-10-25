@@ -247,28 +247,28 @@ dg-publish: true
 > 
 > - [[Viscosidad y Número de Reynolds]]
 > - [[Ecuación de Continuidad y Bernoulli]]
-> - Pérdidas de Carga en Tuberías
-> - Flujo en Conductos No Circulares
-> - Reología y Fluidos No Newtonianos
+> - [[Pérdidas de Carga en Tuberías]]
+> - [[Flujo en Conductos No Circulares]]
+> - [[Reología y Fluidos No Newtonianos]]
 
 ## Notas Complementarias Recomendadas
 
 > [!info]+ Prerrequisitos
 > 
 > - [[Viscosidad y Número de Reynolds]]
-> - Esfuerzos Cortantes en Fluidos
-> - Gradientes de Velocidad
-> - Balance de Fuerzas
+> - [[Esfuerzos Cortantes en Fluidos]]
+> - [[Gradientes de Velocidad]]
+> - [[Balance de Fuerzas]]
 >
 
 > [!success]+ Para Profundizar
 > 
-> - Flujo Turbulento en Tuberías
-> - Pérdidas Singulares y Locales
-> - Redes de Tuberías
-> - Bombas y Sistemas de Bombeo
-> - Transferencia de Calor en Flujo Laminar
-> - Microfluidica Avanzada
+> - [[Flujo Turbulento en Tuberías]]
+> - [[Pérdidas Singulares y Locales]]
+> - [[Redes de Tuberías]]
+> - [[Bombas y Sistemas de Bombeo]]
+> - [[Transferencia de Calor en Flujo Laminar]]
+> - [[Microfluidica Avanzada]]
 
 ---
 

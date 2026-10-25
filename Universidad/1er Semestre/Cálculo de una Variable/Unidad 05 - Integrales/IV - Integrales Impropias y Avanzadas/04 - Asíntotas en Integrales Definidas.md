@@ -212,7 +212,7 @@ dg-publish: true
 
 > [!quote] Notas Relacionadas
 > - [[01 - Integrales Impropias]]
-> - Criterios de Convergencia y Divergencia - Integrales Impropias
+> - [[Criterios de Convergencia y Divergencia - Integrales Impropias]]
 > - [[02 - Asíntotas y Comportamiento de Funciones]]
 > - [[01 - Límites al Infinito y Sucesiones]]
 
@@ -226,7 +226,7 @@ dg-publish: true
 >
 
 > [!tip] Continuación del Tema
-> - Criterios de Convergencia y Divergencia - Integrales Impropias
+> - [[Criterios de Convergencia y Divergencia - Integrales Impropias]]
 > - [[01 - Integración Numérica]]
 > - [[01 - Análisis Completo de Funciones]]
 > - [[03 - Teoremas de Comparación y Desigualdades]]

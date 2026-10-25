@@ -193,9 +193,9 @@ Para partición regular con $\Delta x = \frac{b-a}{n}$:
 > - [[01 - Integrales Impropias]] - Extensión del concepto
 > 
 > ### 📖 Para Profundizar
-> - Historia de la Integración - Desarrollo histórico del concepto
-> - Integral de Lebesgue - Generalización moderna
-> - Métodos Numéricos de Integración - Aplicaciones computacionales
+> - [[Historia de la Integración]] - Desarrollo histórico del concepto
+> - [[Integral de Lebesgue]] - Generalización moderna
+> - [[Métodos Numéricos de Integración]] - Aplicaciones computacionales
 > 
 ### 🏷️ Tags
 #matematicas/calculo/integralesb #teoria/riemann #definiciones/fundamentales #limites/infinitos #geometria/areas #analisis/real
