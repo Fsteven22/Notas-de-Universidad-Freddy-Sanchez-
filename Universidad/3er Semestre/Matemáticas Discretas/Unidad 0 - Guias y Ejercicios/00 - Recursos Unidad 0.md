@@ -18,7 +18,7 @@ tags: [MATG1051, unidad0, recursos]
 
 ![[Guía de problemas 2 MD.pdf]]
 
-![[Guía de problemas 2 MD 1.pdf]]
+![[Guía de problemas 2 MD.pdf]]
 
 ![[Guía de problemas 3.pdf]]
 

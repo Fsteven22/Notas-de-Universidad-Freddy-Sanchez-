@@ -21,7 +21,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 > [!note] Recursos adicionales (temario anterior "Different Cultures")
 > - [[Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|Índice del syllabus Different Cultures]]
-> - [[Recursos adicionales/01 - Obligation Modals (Customs)|01 — Obligation modals]] · [[Recursos adicionales/02 - Comparatives and Superlatives (Food)|02 — Comparatives]] · [[Recursos adicionales/03 - Group Discussion Strategies|03 — Discusión en grupo]] · [[Recursos adicionales/04 - Three-Paragraph Outline|04 — Outline de 3 párrafos]] · [[Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]]
+> - [[Recursos adicionales/01 - Obligation Modals (Customs)|01 — Obligation modals]] · [[Recursos adicionales/02 - Comparatives and Superlatives (Food)|02 — Comparatives]] · [[Recursos adicionales/03 - Group Discussion Strategies|03 — Discusión en grupo]] · [[Recursos adicionales/04 - Three-Paragraph Outline|04 — Outline de 3 párrafos]] · [[Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]]
 
 ---
 

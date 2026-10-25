@@ -17,7 +17,7 @@ tags: [IDIG1008, unit1, indice, english]
 
 ## 📎 Recursos
 
-- [[Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]] — flooding, guion + Q&A
+- [[Speaking Practice # 1|Speaking Practice # 1]] — flooding, guion + Q&A
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Ingles III]]
