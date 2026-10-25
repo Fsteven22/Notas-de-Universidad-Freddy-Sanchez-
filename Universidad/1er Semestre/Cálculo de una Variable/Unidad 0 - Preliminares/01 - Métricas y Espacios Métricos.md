@@ -527,7 +527,7 @@ dg-publish: true
 
 > [!quote] Enlace a Espacios Métricos
 > 
-> **[[Espacios Métricos]]**
+> **Espacios Métricos**
 > 
 > ```
 > Una métrica DEFINE un espacio métrico:
@@ -1033,7 +1033,7 @@ dg-publish: true
 > 
 > **Conceptos fundamentales:**
 > 
-> **[[Espacios Métricos]]**
+> **Espacios Métricos**
 > 
 > ```
 > Conexión directa: Una métrica DEFINE un espacio métrico
@@ -1066,7 +1066,7 @@ dg-publish: true
 > En ℝ con métrica discreta: (0,1) no tiene acumulación
 > ```
 > 
-> **[[Topología]]**
+> **Topología**
 > 
 > ```
 > • Toda métrica induce una topología
@@ -1075,7 +1075,7 @@ dg-publish: true
 > • Espacios metrizables: topología de espacio métrico
 > ```
 > 
-> **[[Normas]]**
+> **Normas**
 > 
 > ```
 > • En espacios vectoriales, normas inducen métricas
@@ -1084,7 +1084,7 @@ dg-publish: true
 > • No toda métrica proviene de una norma
 > ```
 > 
-> **[[Convergencia de Sucesiones]]**
+> **Convergencia de Sucesiones**
 > 
 > ```
 > • xₙ → x si d(xₙ, x) → 0
@@ -1104,7 +1104,7 @@ dg-publish: true
 > 
 > **Conceptos avanzados:**
 > 
-> **[[Compacidad]]**
+> **Compacidad**
 > 
 > ```
 > • Espacios métricos compactos
@@ -1113,7 +1113,7 @@ dg-publish: true
 > • Total acotación
 > ```
 > 
-> **[[Espacios de Banach]]**
+> **Espacios de Banach**
 > 
 > ```
 > • Espacios normados completos
@@ -1122,7 +1122,7 @@ dg-publish: true
 > • Análisis funcional
 > ```
 > 
-> **[[Geometría Diferencial]]**
+> **Geometría Diferencial**
 > 
 > ```
 > • Métricas riemannianas
@@ -1699,21 +1699,21 @@ dg-publish: true
 > 
 > **Prerequisitos:**
 > 
-> - [[01 - Métricas y Espacios Métricos]] - Definición de función de distancia
-> - [[Conjuntos]] - Teoría básica de conjuntos
+> - 01 - Métricas y Espacios Métricos - Definición de función de distancia
+> - Conjuntos - Teoría básica de conjuntos
 > - [[01 - Funciones]] - Concepto de función
 > 
 > **Temas relacionados:**
 > 
 > - [[02 - Puntos de Acumulación]] - Usa bolas para definir proximidad
-> - [[Topología]] - Las bolas generan la topología
-> - [[Convergencia]] - Definida usando bolas
+> - Topología - Las bolas generan la topología
+> - Convergencia - Definida usando bolas
 > 
 > **Aplicaciones:**
 > 
 > - [[02 – Continuidad]] - Definición con bolas (ε-δ)
-> - [[Algoritmos de Búsqueda]] - Búsqueda por proximidad
-> - [[Clustering]] - Agrupamiento por distancia
+> - Algoritmos de Búsqueda - Búsqueda por proximidad
+> - Clustering - Agrupamiento por distancia
 
 ## 🧪 Ejercicios Simples
 
