@@ -184,5 +184,5 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📎 Guía oficial (Garden)
 
-![[PRÁCTICA # 5FUNCIONAMIENTO DE FILTROS ACTIVOS.pdf]]
+![[Práctica 5 - Funcionamiento de Filtros Activos.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad3 #OPAMP #filtro #LM358
