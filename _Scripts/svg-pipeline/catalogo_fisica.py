@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vlib
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-MAT = vlib.materia("1er", "F")
+MAT = vlib.materia("2do", "V")
 print("materia:", MAT, os.path.isdir(MAT))
 
 # todos los svg existentes en el vault (por nombre base, para resolver embeds)
@@ -37,10 +37,10 @@ for root, dirs, files in os.walk(MAT):
 
 ghosts = {k: v for k, v in out.items() if k not in existing}
 print("embeds svg unicos:", len(out), "| fantasmas:", len(ghosts))
-json.dump({"ok": out, "ghosts": ghosts}, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalogo_fis.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"ok": out, "ghosts": ghosts}, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "catalogo_cv.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 ORDER = sorted(ghosts.keys())
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ghosts_fis.txt"), "w", encoding="utf-8") as fh:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ghosts_cv.txt"), "w", encoding="utf-8") as fh:
     for k in ORDER:
         v = ghosts[k]
         fh.write("#### %s  (en %s)\n%s\n" % (k, ", ".join(dict.fromkeys(v["notes"])), re.sub(r"\n{2,}", "\n", v["ctx"])[ -1200:] if len(v["ctx"]) > 1200 else v["ctx"]))
