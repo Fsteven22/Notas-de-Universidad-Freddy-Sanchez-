@@ -55,6 +55,7 @@ const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 const MD_EXT = /\.(md|markdown)$/i;
 const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
+const PDF_VIEWER = "/pdfjs/web/viewer.html?file=";
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -373,6 +374,36 @@ async function main() {
   if (searchOld !== searchStr) {
     await writeFile(searchPath, searchStr, "utf8");
     console.log("✓ search-index.json actualizado");
+
+  // Visor PDF: recursos estaticos de pdf.js servidos desde el mismo origen
+  const pdfjsSrc = path.join(PROJECT, "node_modules", "pdfjs-dist");
+  const pdfjsDst = path.join(PROJECT, "public", "pdfjs");
+  if (existsSync(pdfjsSrc)) {
+    await mkdir(pdfjsDst, { recursive: true });
+    for (const sub of ["web", "build"]) {
+      const srcSub = path.join(pdfjsSrc, sub);
+      const dstSub = path.join(pdfjsDst, sub);
+      if (existsSync(srcSub)) {
+        await rm(dstSub, { recursive: true, force: true });
+        await mkdir(dstSub, { recursive: true });
+        for (const f of await readdir(srcSub)) {
+          const srcPath = path.join(srcSub, f);
+          const dstPath = path.join(dstSub, f);
+          const st = await stat(srcPath);
+          if (st.isDirectory()) {
+            await mkdir(dstPath, { recursive: true });
+            for (const g of await readdir(srcPath)) {
+              await copyFile(path.join(srcPath, g), path.join(dstPath, g));
+            }
+          } else {
+            await copyFile(srcPath, dstPath);
+          }
+        }
+      }
+    }
+    console.log("V pdf.js viewer copiado a public/pdfjs");
+  }
+
   }
 
   console.log(`✓ ${notas.length} notas publicadas · ${omitidas.length} omitidas (sin dg-publish)`);
@@ -428,13 +459,18 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
   const docCard = (label, url) =>
     `<div class="nx-doc"><a href="${encodeURI(url)}" target="_blank" rel="noopener">📄 ${escapeHtml(label)}</a></div>`;
 
+
+  // visor embebido para PDFs (iframe con pdf.js autocontenido, mismo origen) + descarga
+  const pdfViewer = (label, url) =>
+    `<div class="nx-pdf-viewer"><iframe class="nx-pdf-frame" src="${PDF_VIEWER}${encodeURIComponent(url)}" referrerpolicy="no-referrer" allowfullscreen></iframe><div class="nx-pdf-actions"><a href="${encodeURI(url)}" target="_blank" rel="noopener" download>?? Descargar ${escapeHtml(label)}</a> <a href="${encodeURI(url)}" target="_blank" rel="noopener">Pantalla completa ?</a></div></div>`;
+
   // embeds ![[file]] → imagen codificada, tarjeta de doc, o comentario si no existe
   t = t.replace(/!\[\[([^\]|]+?)(?:\|[^\]]*)?\]\]/g, (_, name) => {
     const label = name.trim();
     const url = resolveAsset(label, sem, mat, assetMaps);
     if (!url) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
     if (IMG_EXT.test(url)) return `![${label}](${encodeURI(url)})`;
-    return docCard(label, url);
+    return url.toLowerCase().endsWith(".pdf") ? pdfViewer(label, url) : docCard(label, url);
   });
   // links markdown relatives a media → absolutos (fout ! ya fue manejado):
   t = t.replace(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
@@ -450,7 +486,8 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
     const url = resolveAsset(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
     if (!url) return `<!-- nx:asset-omitido ${escapeHtml((alt || src).trim())} -->`;
     if (IMG_EXT.test(url)) return `![${alt}](${encodeURI(url)})`;
-    return docCard(alt.trim() || src.trim(), url);
+    const mLabel = alt.trim() || src.trim();
+    return url.toLowerCase().endsWith(".pdf") ? pdfViewer(mLabel, url) : docCard(mLabel, url);
   });
 
   // lenguas de fence no soportadas por shiki → sin anotación

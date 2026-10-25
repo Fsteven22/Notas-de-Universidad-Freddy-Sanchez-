@@ -1,0 +1,40 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Visor PDF</title><style>
+html,body{margin:0;height:100%;background:#0b0c10;color:#eee;font-family:system-ui,sans-serif}
+#pages{padding:12px;display:flex;flex-direction:column;gap:12px;align-items:center;overflow-y:auto}
+canvas{background:#fff;border:1px solid #ddd;max-width:100vw;max-height:82vh;display:block}
+.bar{padding:8px 12px;border-bottom:1px solid #222;font-size:0.9rem;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.bar a{color:#22d3ee;text-decoration:none}
+.bar a:hover{text-decoration:underline}
+</title></head>
+<body>
+<div class="bar">Cargando PDF… <a id="dl" target="_blank" rel="noopener">Descargar archivo ?</a></div>
+<div id="pages"></div>
+<script src="../build/pdf.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = "../build/pdf.worker.js";
+const params = new URLSearchParams(location.search.slice(1));
+const file = params.get("file") || "";
+const bar = document.querySelector(".bar");
+const container = document.getElementById("pages");
+if (!file) { bar.textContent = "No se especificó un archivo PDF."; }
+else {
+  document.getElementById("dl").href = file;
+  pdfjsLib.getDocument(file).promise.then((pdf) => {
+    bar.textContent = pdf.numPages + " página" + (pdf.numPages !== 1 ? "s" : "") + "  ";
+    const a = document.createElement("a"); a.href = file; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Descargar PDF ?";
+    bar.appendChild(document.createTextNode(" ")); bar.appendChild(a);
+    const go = (n) => pdf.getPage(n).then((page) => {
+      const vp = page.getViewport({ scale: 1.35 });
+      const c = document.createElement("canvas");
+      c.style.maxWidth = "100%"; c.style.maxHeight = "82vh"; c.style.display = "block";
+      container.appendChild(c);
+      const ctx = c.getContext("2d"); c.width = vp.width; c.height = vp.height;
+      page.render({ canvasContext: ctx, viewport: vp }).promise.then(() => {
+        if (n < pdf.numPages) go(n + 1);
+      });
+    });
+    go(1);
+  }).catch((e) => { bar.textContent = "No se pudo cargar el PDF: " + e.message; });
+}
+</script>
+</body></html>

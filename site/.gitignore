@@ -1,16 +1,13 @@
-# Node / build
 node_modules/
 dist/
 .astro/
-logs/
 .env
 .env.local
 *.log
 .DS_Store
 
-# ── Artefactos derivados: NUNCA van al repo (decisión 6 del PLAN-PUBLICACION.md).
-# `npm run sync` los genera en build (VAULT_DIR=../Universidad):
-notes-md/
-public/assets/
-src/data/vault.json
-public/search-index.json
+# visor PDF embebido (build/assets de pdf.js se generan en cada sync)
+public/pdfjs/build/
+public/pdfjs/web/
+# la pagina del visor se commitea a mano
+!public/pdfjs/viewer.html
