@@ -2,7 +2,7 @@
 
 ## 📖 Contexto
 
-> [!info] Definición El Método Pomodoro es una técnica de [[gestión del tiempo]] desarrollada por Francesco Cirillo en los años 80. Su objetivo principal es aumentar la concentración y productividad dividiendo el trabajo en intervalos de tiempo fijos y cortos, intercalados con pausas estratégicas.
+> [!info] Definición El Método Pomodoro es una técnica de [[Gestión del Tiempo]] desarrollada por Francesco Cirillo en los años 80. Su objetivo principal es aumentar la concentración y productividad dividiendo el trabajo en intervalos de tiempo fijos y cortos, intercalados con pausas estratégicas.
 >
 
 > [!tip] Origen del nombre 🍅 El nombre "Pomodoro" proviene del temporizador de cocina con forma de tomate que utilizaba Cirillo durante sus estudios universitarios.

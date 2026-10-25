@@ -1092,7 +1092,7 @@ dg-publish: true
 > - [[01 - Coordenadas cilíndricas y esféricas]] - Simplifica ecuaciones
 > - [[03 - Superficies de revolución]] - Caso especial de cuádricas
 > - [[02 - Superficies cilíndricas]] - Cuádricas sin variable z
-> - [[Cálculo vectorial]] - Gradientes y normales
+> - [[Cálculo Vectorial]] - Gradientes y normales
 > - [[02 – Curvas de Nivel]] - Secciones planas
 > 
 > **Aplicaciones directas:**
@@ -1106,7 +1106,7 @@ dg-publish: true
 > 
 > - [[Geometría diferencial]] - Curvaturas principales
 > - [[Topología]] - Clasificación de superficies
-> - [[Álgebra lineal]] - Diagonalización de formas cuadráticas
+> - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
 > - [[Geometría proyectiva]] - Teoremas de Desargues y Pascal
 
 ## 📊 Diagrama Conceptual

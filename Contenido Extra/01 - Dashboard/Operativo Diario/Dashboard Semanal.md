@@ -172,7 +172,7 @@
 > ├─ 🏠 ESPACIOS
 > │  ├─ [[Organización Física del Espacio]]
 > │  ├─ [[Feng Shui para Espacios Pequeños]]
-> │  └─ [[Minimismo Digital]]
+> │  └─ [[Minimalismo Digital]]
 > │
 > └─ 💻 TECNOLOGÍA
 >    ├─ [[Productividad Digital]]

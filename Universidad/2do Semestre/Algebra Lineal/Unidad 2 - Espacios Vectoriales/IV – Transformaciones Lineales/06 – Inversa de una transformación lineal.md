@@ -1201,7 +1201,7 @@ dg-publish: true
 > **Fundamentos previos:**
 > - [[01 – Transformaciones lineales]] - Definición básica
 > - [[02 - Núcleo e Imagen]] - Caracterización de inyectividad
-> - [[03 - Inyectividad y sobreyectividad]] - Biyectividad
+> - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
 > - [[04 – Biyectividad e isomorfismo]] - Equivalencia con isomorfismo
 >
 > **Temas directamente relacionados:**

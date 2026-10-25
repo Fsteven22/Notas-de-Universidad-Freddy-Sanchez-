@@ -1340,7 +1340,7 @@ v
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Coordenadas cartesianas base
 > - [[02 - Vectores en R3]] - Vectores y operaciones
-> - [[02 - Transformaciones entre coordenadas]] - Fórmulas de conversión
+> - [[02 - Transformaciones entre Coordenadas]] - Fórmulas de conversión
 > 
 > **Temas relacionados:**
 > 

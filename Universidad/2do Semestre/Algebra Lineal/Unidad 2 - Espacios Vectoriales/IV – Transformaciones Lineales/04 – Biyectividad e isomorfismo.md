@@ -765,7 +765,7 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[01 – Transformaciones lineales]] - Definición básica
-> - [[03 - Inyectividad y sobreyectividad]] - Biyectividad
+> - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
 > - [[03 - Teorema de la dimensión]] - Clasificación dimensional
 > - [[06 - Independencia lineal]] - Preservación de bases
 > 
