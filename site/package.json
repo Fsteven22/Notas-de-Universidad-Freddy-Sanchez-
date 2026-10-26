@@ -7,12 +7,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "sync": "node scripts/sync-vault.mjs"
+    "sync": "node scripts/sync-vault.mjs",
+    "zips": "node scripts/generate-zips.mjs",
+    "postsync": "node scripts/generate-zips.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
     "@tailwindcss/vite": "^4.2.0",
     "astro": "^5.16.0",
+    "jszip": "^3.10.2",
     "katex": "^0.19.0",
     "pdfjs-dist": "^3.11.174",
     "react": "^19.2.0",

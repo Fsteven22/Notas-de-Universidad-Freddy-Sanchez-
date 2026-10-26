@@ -55,6 +55,8 @@ const RAIZ = { id: "raiz", title: "Universidad", order: 4 };
 const MD_EXT = /\.(md|markdown)$/i;
 const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
+const PDF_VIEWER = "/pdfjs/viewer.html?file=";
+const PDF_MAX_INLINE_BYTES = 25 * 1024 * 1024; // PDFs mayores: solo descarga, no visor embebido
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -78,12 +80,13 @@ const ASSET_SKIP = [
 async function walk(dir, acc = { files: [], dirs: [] }, base = dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.name.startsWith(".") || entry.name === "__pycache__" || /node_modules/.test(entry.name)) continue;
+    if (entry.name.startsWith(".") || entry.name === "__pycache__" || entry.name === "_privado" || /node_modules/.test(entry.name)) continue;
     if (entry.isDirectory()) {
       acc.dirs.push({ name: entry.name, full, rel: path.relative(base, full).split(path.sep).join("/") });
       await walk(full, acc, base);
     } else {
-      acc.files.push({ name: entry.name, full, rel: path.relative(base, full).split(path.sep).join("/") });
+      const st = await stat(full);
+      acc.files.push({ name: entry.name, full, rel: path.relative(base, full).split(path.sep).join("/"), size: st.size });
     }
   }
   return acc;
@@ -191,7 +194,7 @@ async function main() {
     const dest = path.join(OUT_ASSETS, "raiz", ...dirs, fileName);
     await mkdir(path.dirname(dest), { recursive: true });
     await copyIfChanged(f.full, dest, url.slice("/assets/".length));
-    if (!raizAssets.has(fileName)) raizAssets.set(fileName, url);
+    if (!raizAssets.has(fileName)) raizAssets.set(fileName, { url, size: f.size ?? 0 });
   }
   assetMaps.set("raiz", raizAssets);
   const notas = [];
@@ -219,7 +222,7 @@ async function main() {
       const dest = path.join(assetDir, ...dirs, fileName);
       await mkdir(path.dirname(dest), { recursive: true });
       await copyIfChanged(f.full, dest, url.slice("/assets/".length));
-      if (!assets.has(fileName)) assets.set(fileName, url);
+      if (!assets.has(fileName)) assets.set(fileName, { url, size: f.size ?? 0 });
     }
     assetMaps.set(`${sem.id}/${matId}`, assets);
 
@@ -373,37 +376,56 @@ async function main() {
   if (searchOld !== searchStr) {
     await writeFile(searchPath, searchStr, "utf8");
     console.log("✓ search-index.json actualizado");
+  }
 
   // Visor PDF: recursos estaticos de pdf.js servidos desde el mismo origen
   const pdfjsSrc = path.join(PROJECT, "node_modules", "pdfjs-dist");
   const pdfjsDst = path.join(PROJECT, "public", "pdfjs");
   if (existsSync(pdfjsSrc)) {
     await mkdir(pdfjsDst, { recursive: true });
-    for (const sub of ["web", "build"]) {
-      const srcSub = path.join(pdfjsSrc, sub);
-      const dstSub = path.join(pdfjsDst, sub);
-      if (existsSync(srcSub)) {
-        await rm(dstSub, { recursive: true, force: true });
-        await mkdir(dstSub, { recursive: true });
-        for (const f of await readdir(srcSub)) {
-          const srcPath = path.join(srcSub, f);
-          const dstPath = path.join(dstSub, f);
-          const st = await stat(srcPath);
-          if (st.isDirectory()) {
-            await mkdir(dstPath, { recursive: true });
-            for (const g of await readdir(srcPath)) {
-              await copyFile(path.join(srcPath, g), path.join(dstPath, g));
-            }
-          } else {
-            await copyFile(srcPath, dstPath);
-          }
-        }
+    const srcBuild = path.join(pdfjsSrc, "build");
+    const dstBuild = path.join(pdfjsDst, "build");
+    if (existsSync(srcBuild)) {
+      await rm(dstBuild, { recursive: true, force: true });
+      await mkdir(dstBuild, { recursive: true });
+      let copied = 0;
+      for (const f of await readdir(srcBuild)) {
+        // sin sourcemaps ni sandbox: el visor propio no los usa y multiplican el peso del deploy
+        if (f.endsWith(".map") || f.startsWith("pdf.sandbox")) continue;
+        await copyFile(path.join(srcBuild, f), path.join(dstBuild, f));
+        copied++;
       }
+      console.log(`V pdf.js copiado a public/pdfjs/build (${copied} archivos)`);
     }
-    console.log("V pdf.js viewer copiado a public/pdfjs");
+    // public/pdfjs/web no se usa: nuestro visor vive en public/pdfjs/viewer.html
+    await rm(path.join(pdfjsDst, "web"), { recursive: true, force: true });
   }
 
+  // ── 7. sitemap.xml y robots.txt (SEO básico, Fase 7.3)
+  const SITE_URL = "https://neonotes-espol.vercel.app";
+  const sitemapUrls = [];
+  sitemapUrls.push(`<url><loc>${SITE_URL}/</loc><lastmod>${new Date(Math.max(0, data.stats.actualizado)).toISOString()}</lastmod></url>`);
+  for (const s of [...semMap.values()].sort((a, b) => a.order - b.order)) {
+    sitemapUrls.push(`<url><loc>${SITE_URL}/${s.id}/</loc><lastmod>${new Date(Math.max(0, data.stats.actualizado)).toISOString()}</lastmod></url>`);
+    for (const m of s.materias.sort((a, b) => a.title.localeCompare(b.title, "es"))) {
+      sitemapUrls.push(`<url><loc>${SITE_URL}/${s.id}/${m.id}/</loc><lastmod>${new Date(Math.max(0, data.stats.actualizado)).toISOString()}</lastmod></url>`);
+      for (const n of m.notas) {
+        const units = n.units?.length ? "/" + n.units.join("/") : "";
+        sitemapUrls.push(`<url><loc>${SITE_URL}/${s.id}/${m.id}${units}/${n.slug}/</loc><lastmod>${new Date(n.mtime).toISOString()}</lastmod></url>`);
+      }
+    }
   }
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.join("\n")}
+</urlset>`;
+  await writeFile(path.join(PROJECT, "public", "sitemap.xml"), sitemapXml, "utf8");
+
+  const robotsTxt = `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml`;
+  await writeFile(path.join(PROJECT, "public", "robots.txt"), robotsTxt, "utf8");
 
   console.log(`✓ ${notas.length} notas publicadas · ${omitidas.length} omitidas (sin dg-publish)`);
   if (omitidas.length) {
@@ -459,13 +481,29 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
     `<div class="nx-doc"><a href="${encodeURI(url)}" target="_blank" rel="noopener">📄 ${escapeHtml(label)}</a></div>`;
 
 
+  // visor PDF embebido con carga diferida: el HTML solo guarda la URL y el
+  // navegador inserta el iframe cuando la tarjeta entra en pantalla. Dentro,
+  // pdf.js renderiza las páginas de forma progresiva. PDFs > 25 MB: solo descarga.
+  const pdfViewer = (label, url, size) => {
+    const bytes = Number(size) || 0;
+    const mb = (bytes / 1048576).toFixed(1);
+    const heavy = bytes > PDF_MAX_INLINE_BYTES;
+    const safeUrl = encodeURI(url);
+    const meta = heavy ? `${mb} MB · archivo pesado, conviene descargarlo` : `${mb} MB`;
+    const action = heavy
+      ? `<a href="${safeUrl}" target="_blank" rel="noopener">Abrir en pestaña nueva</a>`
+      : `<button type="button" class="nx-pdf-open" data-nx-pdf-open>Ver PDF</button>`;
+    const src = heavy ? "" : ` data-nx-pdf-src="${PDF_VIEWER}${encodeURIComponent(url)}"`;
+    return `<div class="nx-pdf"${src} data-nx-pdf-bytes="${bytes}"><div class="nx-pdf-bar"><span class="nx-pdf-name">${escapeHtml(label)}</span><span class="nx-pdf-meta">${meta}</span><span class="nx-pdf-acts">${action}<a href="${safeUrl}" target="_blank" rel="noopener" download>Descargar</a></span></div><div class="nx-pdf-slot"></div></div>`;
+  };
+
   // embeds ![[file]] → imagen codificada, tarjeta de doc, o comentario si no existe
   t = t.replace(/!\[\[([^\]|]+?)(?:\|[^\]]*)?\]\]/g, (_, name) => {
     const label = name.trim();
-    const url = resolveAsset(label, sem, mat, assetMaps);
-    if (!url) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
-    if (IMG_EXT.test(url)) return `![${label}](${encodeURI(url)})`;
-    return docCard(label, url);
+    const info = resolveAssetInfo(label, sem, mat, assetMaps);
+    if (!info) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
+    if (IMG_EXT.test(info.url)) return `![${label}](${encodeURI(info.url)})`;
+    return info.url.toLowerCase().endsWith(".pdf") ? pdfViewer(label, info.url, info.size) : docCard(label, info.url);
   });
   // links markdown relatives a media → absolutos (fout ! ya fue manejado):
   t = t.replace(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
@@ -478,10 +516,11 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
   // embeds markdown con ruta relativa → absoluta pública (mismo criterio)
   t = t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, src) => {
     if (/^(https?:|\/|data:)/.test(src)) return m;
-    const url = resolveAsset(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
-    if (!url) return `<!-- nx:asset-omitido ${escapeHtml((alt || src).trim())} -->`;
-    if (IMG_EXT.test(url)) return `![${alt}](${encodeURI(url)})`;
-    return docCard(alt.trim() || src.trim(), url);
+    const info = resolveAssetInfo(src.replace(/[<>"']/g, "").trim(), sem, mat, assetMaps);
+    if (!info) return `<!-- nx:asset-omitido ${escapeHtml((alt || src).trim())} -->`;
+    if (IMG_EXT.test(info.url)) return `![${alt}](${encodeURI(info.url)})`;
+    const mLabel = alt.trim() || src.trim();
+    return info.url.toLowerCase().endsWith(".pdf") ? pdfViewer(mLabel, info.url, info.size) : docCard(mLabel, info.url);
   });
 
   // lenguas de fence no soportadas por shiki → sin anotación
@@ -491,7 +530,7 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
   return { content: fm + t };
 }
 
-function resolveAsset(name, sem, mat, assetMaps) {
+function resolveAssetInfo(name, sem, mat, assetMaps) {
   const base = path.basename(name);
   const tries = [`${sem}/${mat}`, `${sem}/*`, `raiz`];
   for (const key of tries) {
@@ -504,6 +543,11 @@ function resolveAsset(name, sem, mat, assetMaps) {
     if (key === `raiz` && map.has(base)) return map.get(base);
   }
   return null;
+}
+
+function resolveAsset(name, sem, mat, assetMaps) {
+  const info = resolveAssetInfo(name, sem, mat, assetMaps);
+  return info ? info.url : null;
 }
 
 function transformFlashcards(t) {

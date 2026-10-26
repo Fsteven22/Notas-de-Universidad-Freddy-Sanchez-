@@ -140,6 +140,61 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
         <script>
           let nxNoteAC: AbortController | undefined;
 
+          function mountPdf(card: HTMLElement) {
+            if (card.dataset.nxPdfMounted) return;
+            card.dataset.nxPdfMounted = "1";
+            const slot = card.querySelector(".nx-pdf-slot");
+            const src = card.dataset.nxPdfSrc;
+            if (!slot || !src) return;
+            const frame = document.createElement("iframe");
+            frame.className = "nx-pdf-frame";
+            frame.src = src;
+            frame.title = card.querySelector(".nx-pdf-name")?.textContent?.trim() || "Visor PDF";
+            frame.setAttribute("referrerpolicy", "no-referrer");
+            frame.setAttribute("allowfullscreen", "");
+            frame.setAttribute("loading", "lazy");
+            slot.appendChild(frame);
+            const btn = card.querySelector("[data-nx-pdf-open]");
+            if (btn instanceof HTMLButtonElement) {
+              btn.textContent = "Abierto";
+              btn.disabled = true;
+            }
+          }
+
+          function initPdfLazy() {
+            const cards = Array.from(document.querySelectorAll<HTMLElement>(".nx-pdf[data-nx-pdf-src]"));
+            if (!cards.length) return;
+            const w = window as any;
+            if (!w.__nxPdfObserver) {
+              w.__nxPdfObserver = new IntersectionObserver(
+                (entries) => {
+                  for (const entry of entries) {
+                    if (!entry.isIntersecting) continue;
+                    w.__nxPdfObserver.unobserve(entry.target);
+                    mountPdf(entry.target as HTMLElement);
+                  }
+                },
+                { rootMargin: "400px 0px" }
+              );
+            }
+            const io = w.__nxPdfObserver as IntersectionObserver;
+            for (const card of cards) {
+              if (card.dataset.nxPdfLazyReady) continue;
+              card.dataset.nxPdfLazyReady = "1";
+              io.observe(card);
+            }
+            document.querySelectorAll<HTMLButtonElement>("[data-nx-pdf-open]").forEach((btn) => {
+              if (btn.dataset.nxPdfBound) return;
+              btn.dataset.nxPdfBound = "1";
+              btn.addEventListener("click", () => {
+                const card = btn.closest<HTMLElement>(".nx-pdf");
+                if (!card) return;
+                io.unobserve(card);
+                mountPdf(card);
+              });
+            });
+          }
+
           function boot() {
             const toc = document.getElementById("nx-toc");
             const bc = document.getElementById("nx-bc");
@@ -172,6 +227,7 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
                 }
               }, { passive: true, signal: nxNoteAC.signal });
             }
+            initPdfLazy();
           }
           document.addEventListener("astro:page-load", boot);
           boot();

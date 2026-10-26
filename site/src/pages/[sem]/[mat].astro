@@ -106,6 +106,16 @@ const gruposOrden = [...grupos.entries()].sort((a, b) =>
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={`/downloads/${sem}-${mat}.zip`}
+                class="flex items-center justify-between rounded-xl border border-[rgba(0,255,136,0.4)] bg-[rgba(0,255,136,0.08)] px-4 py-3 transition hover:bg-[rgba(0,255,136,0.12)]"
+                download
+              >
+                <span class="text-sm text-[#e5e7eb]">Todos los PDFs de esta materia</span>
+                <span class="nx-badge">ZIP</span>
+              </a>
+            </li>
           </ul>
         </section>
       )

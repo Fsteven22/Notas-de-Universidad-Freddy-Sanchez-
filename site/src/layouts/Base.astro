@@ -8,7 +8,9 @@ interface Props {
   description?: string;
 }
 
+const SITE = "https://neonotes-espol.vercel.app";
 const { title = "Neonotes", description = "Apuntes de Ingeniería Computacional ESPOL" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE).href;
 ---
 
 <!doctype html>
@@ -17,6 +19,15 @@ const { title = "Neonotes", description = "Apuntes de Ingeniería Computacional 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Neonotes" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <ClientRouter />

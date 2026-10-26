@@ -11,3 +11,12 @@ public/pdfjs/build/
 public/pdfjs/web/
 # la pagina del visor se commitea a mano
 !public/pdfjs/viewer.html
+
+# artefactos derivados del sync (regenerados en cada build, nunca se commitean)
+notes-md/
+public/assets/
+src/data/vault.json
+public/search-index.json
+public/downloads/
+public/sitemap.xml
+public/robots.txt
