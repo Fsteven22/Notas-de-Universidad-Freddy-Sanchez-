@@ -27,6 +27,12 @@ def variantes(t):
     nfc, nfd = unicodedata.normalize("NFC", t), unicodedata.normalize("NFD", t)
     return {nfc, nfd, unicodedata.normalize("NFC", nfd)}
 
+def norm_target(t):
+    """Normaliza un target wiki: dentro de una tabla el separador de alias va
+    escapado ([[nota\\|alias]]) y Obsidian lo resuelve bien. Sin esto el
+    target queda con la barra pegada y se reporta como roto."""
+    return t.replace("\\|", "|").rstrip("\\").strip()
+
 def existe(t):
     base = os.path.basename(t)
     for fl in variantes(base):
@@ -49,8 +55,8 @@ for dp, ds, fs in os.walk(args.root):
         t = io.open(os.path.join(dp, f), encoding="utf-8").read()
         for m in re.findall(r"\[\[([^\]|#]+)", t):
             total += 1
-            if not existe(m.strip()):
-                bad.append("BAD: %s [en %s]" % (m.strip(), rel))
+            if not existe(norm_target(m.strip())):
+                bad.append("BAD: %s [en %s]" % (norm_target(m.strip()), rel))
 
 out = "targets=%d  bad=%d\n" % (total, len(bad)) + "\n".join(bad)
 if args.sugerir:

@@ -7,7 +7,7 @@ import argparse, os, re, io, unicodedata, difflib
 # Todo va al reporte; a consola solo contados (evitar cp1252).
 
 SKIP = (".obsidian", ".trash", ".git", "node_modules")
-EXCLUDE = ("_Test Callout Fences.md",)
+EXCLUDE = ("Catalogo de errores del vault.md",)
 
 WIKI = re.compile(r"(!)?\[\[([^\]|#]+)(?:\|([^\]]*))?(?:#([^\]]*))?\]\]")
 
@@ -31,6 +31,12 @@ def variantes(t):
     nfd = unicodedata.normalize("NFD", t)
     return {nfc, nfd, unicodedata.normalize("NFC", nfd)}
 
+def norm_target(t):
+    """Normaliza un target wiki: dentro de una tabla el separador de alias va
+    escapado ([[nota\\|alias]]) y Obsidian lo resuelve bien. Sin esto el
+    target queda con la barra pegada y se reporta como roto."""
+    return t.replace("\\|", "|").rstrip("\\").strip()
+
 def existe_archivo(target, nombres_archivos):
     base = os.path.basename(target)
     for v in variantes(base):
@@ -43,13 +49,13 @@ def existe_archivo(target, nombres_archivos):
                 return True
     return False
 
-def reconstruir(embed, nuevo_target, alias, seccion):
+def reconstruir(embed, nuevo_target, alias, seccion, sep="|"):
     partes = [nuevo_target]
     if seccion:
         partes.append("#" + seccion)
     inner = "".join(partes)
     if alias:
-        inner = inner + "|" + alias
+        inner = inner + sep + alias
     prefix = "!" if embed else ""
     return "%s[[%s]]" % (prefix, inner)
 
@@ -88,9 +94,11 @@ def main():
             def procesar(m):
                 nonlocal total_links, total_rotos
                 embed = m.group(1) == "!"
-                target = m.group(2)
+                raw = m.group(2)
                 alias = m.group(3)
                 seccion = m.group(4)
+                target = norm_target(raw)
+                sep = "\\|" if raw.endswith("\\") and alias else "|"
                 total_links += 1
                 if existe_archivo(target, nombres_archivos):
                     return m.group(0)  # ya existe, no tocar
@@ -101,9 +109,9 @@ def main():
                     nuevo = notas_idx[cortes[0]]
                     nuevo_base = os.path.splitext(os.path.basename(nuevo))[0]
                     aplicados.append("%s :: '%s' -> '%s'" % (rel, target, nuevo_base))
-                    return reconstruir(embed, nuevo_base, alias, seccion)
+                    return reconstruir(embed, nuevo_base, alias, seccion, sep)
                 # ambiguo o sin candidato: dejar para revisión manual
-                suger = " | ".join(cortes) if cortes else "(sin parecida)"
+                suger = " | ".join(cortes) if cortes else "(sin parecido)"
                 pendientes.append("%s :: '%s' -> candidatos: %s" % (rel, target, suger))
                 return m.group(0)
 

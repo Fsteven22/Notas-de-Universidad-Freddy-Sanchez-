@@ -3,7 +3,7 @@ import os, io, re
 # Utilidades compartidas para los scripts de mantenimiento del vault.
 
 SKIP = (".obsidian", ".trash", ".git", "node_modules")
-EXCLUDE = ("_Test Callout Fences.md",)  # nota espejo del usuario: sus ejemplos son intencionales
+EXCLUDE = ("Catalogo de errores del vault.md",)  # nota espejo del usuario: sus ejemplos son intencionales
 
 RE_CALL = re.compile(r"^\s*(>+)\s*\[!([a-zA-Z]+)\](-?)")
 

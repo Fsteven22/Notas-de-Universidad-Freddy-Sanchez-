@@ -1,6 +1,9 @@
 # Papelera interna de Obsidian (archivos borrados)
 .trash/
 
+# Backups generados dentro del vault (van a OneSyncFiles-backups/)
+_BACKUP*/
+
 # Configuraciones, temas y plugins locales de Obsidian
 .obsidian/
 # Derivados OCR pesados (regenerables, van al Garden desde el vault)
