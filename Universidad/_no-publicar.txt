@@ -15,6 +15,9 @@ LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf
 LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf
 01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf
 Database Systems - Design, Implementation, and Management (9th Edition).pdf
+03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf
+Clean Architecture - Robert C. Martin (libro completo).pdf
+04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf
 
 # --- Material propio que ya se publica en PDF ---
 Guía Didáctica Mat. discretas lógica y demostraciones.docx
