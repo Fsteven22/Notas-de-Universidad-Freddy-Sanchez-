@@ -54,7 +54,10 @@
 (function () {
   var BLOCK = 4;
   var params = new URLSearchParams(location.search.slice(1));
-  var file = params.get("file") || "";
+  // Solo se admiten PDFs del propio sitio (/assets/...). Sin esto, un enlace
+  // con ?file=javascript:... meteria ese esquema en los href de los botones.
+  var raw = params.get("file") || "";
+  var file = raw.indexOf("/assets/") === 0 && !/[\u0000-\u001f]/.test(raw) ? raw : "";
   var pages = document.getElementById("pages");
   var fileInfo = document.getElementById("fileInfo");
   var counter = document.getElementById("counter");
@@ -100,7 +103,11 @@
   window.addEventListener("error", function (e) { err("window error: " + (e.message || e)); });
   window.addEventListener("unhandledrejection", function (e) { err("unhandled rejection: " + (e.reason || e)); });
 
-  if (!file) { err("No se especifico archivo (?file=)"); return; }
+  if (!file) {
+    err("Archivo no permitido. El visor solo abre PDFs de /assets/.");
+    fileInfo.textContent = "Archivo no permitido";
+    return;
+  }
   var name = file.split("/").pop();
   try { name = decodeURIComponent(name); } catch (e) {}
   fileInfo.textContent = name;
