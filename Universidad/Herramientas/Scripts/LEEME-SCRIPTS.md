@@ -94,6 +94,45 @@ Dependencias (excepción a la regla de "solo librería estándar" de este folder
 
 Guía completa con rutas de texto/OCR, flujo PDF → nota del vault, troubleshooting y consumo con OpenCode/Qwen: **`GUIA-PDF-A-MARKDOWN.md`**.
 
+## PDF → nota del vault (`pdf_a_nota_vault.py`)
+
+Convierte un PDF en una nota de Obsidian lista: frontmatter (`dg-publish` + **una sola** línea `tags:`), callout de fuente, encabezados del PDF bajada un nivel (un solo H1) y las imágenes raster de cada página extraídas a `Universidad/Figuras/` con embeds `![[...]]` relativos a la nota.
+
+```bash
+py pdf_a_nota_vault.py "material.pdf" --nota "Universidad/3er Semestre/Materia/Unidad 1 - X/material.md" --tags "materia, unidad1" --aplicar
+```
+
+**Dry-run por defecto**: sin `--aplicar` solo muestra el plan. No sobrescribe notas existentes salvo `--forzar`, y al terminar corre `verificar_nota.py` sobre la nota creada (debe salir `0`).
+
+## Office → Markdown (`office_a_markdown.py`)
+
+Lee `.docx`, `.pptx` y `.xlsx` sin abrirlos: texto, tablas y **imágenes reales** en disco (no `data:` inline).
+
+```bash
+py office_a_markdown.py examen.docx
+py office_a_markdown.py clase.pptx -o clase.md --imagenes Figuras/clase
+py office_a_markdown.py notas.xlsx
+```
+
+Motores: mammoth (docx, HTML→Markdown), python-pptx (pptx: slide a slide, tablas, notas del orador, imágenes), openpyxl (xlsx: tabla por hoja), markitdown de respaldo para html/csv/json/xml/epub/msg/zip. `.doc` y `.odt` viejos no se convierten (requieren LibreOffice).
+
+Guía completa: **`GUIA-OFFICE-A-MARKDOWN.md`**.
+
+## Notas → flashcards (`notas_a_flashcards.py`)
+
+Extrae los bloques de definición de tus notas (`> [!note] Definición — <término>`) y arma tarjetas con el formato del vault: `## 🔁 Repaso SR (flashcards)`, el tag `#flashcards/<materia>-<unidad>`, el callout `> [!note] 🧠 Repasa...` y líneas `- ¿<término>?::<definición>`.
+
+```bash
+py notas_a_flashcards.py --todo                                    # dry-run de todo el vault
+py notas_a_flashcards.py --carpeta "Universidad/3er Semestre/Sistema de Bases de Datos"
+py notas_a_flashcards.py --nota "Universidad/.../01 - Dato, informacion y modelos de datos.md" --aplicar
+py notas_a_flashcards.py --carpeta "Universidad/3er Semestre" --tag flashcards/bd-u3 --aplicar --limite 5
+```
+
+Dry-run por defecto (muestra cada tarjeta antes de escribir). No borra nada: solo inserta tarjetas nuevas al final de la lista existente y crea la sección si la nota no tenía una. Filtros: término de 1-8 palabras que empiece en mayúscula, sin `**`/`$`/`?`, y respuesta de 15-320 caracteres con al menos 4 palabras de texto (descarta fórmulas sueltas, listas y encabezados). Anti-duplicado: salta el término si ya aparece en alguna tarjeta existente, si alguna tarjeta ya lo menciona en su pregunta, o si la definición coincide ≥ 60 % con una respuesta previa. Al final corre `verificar_nota.py` por nota.
+
+Medición en el vault (26/10/2026): 813 notas revisadas → 105 notas con tarjetas propuestas y 200 tarjetas. El tag se deduce de la ruta (materia + unidad) o se reutiliza el que ya tiene la nota; `--tag` lo fuerza.
+
 ## Registro de patrones (error → fix → script)
 
 - Ejercicio/example vacío (header sin cuerpo, ej. Inglés U1-01 Ej.4): completar con el drill real; detecta con `detectar_vacios.py`. Falsos positivos conocidos: `###`→`####` con contenido, callout usado como título de sección, contenido inline en la línea del header.

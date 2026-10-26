@@ -130,7 +130,21 @@ Criterio de "listo": `verificar_nota.py` sale `0`, los acentos se leen bien, y l
 - PDF escaneado de 2 páginas con `--split` → `pagina-0001.md` y `pagina-0002.md` con el contenido correcto de cada página.
 - Códigos de salida `0`, `1` y `2` comprobados.
 
-## 11. Instalarlo en otra PC
+## 11. PDF a nota del vault (`pdf_a_nota_vault.py`)
+
+Convierte un PDF en una nota de Obsidian ya con frontmatter, callout de fuente y las figuras embebidas:
+
+```bash
+py pdf_a_nota_vault.py "material.pdf" \
+  --nota "Universidad/3er Semestre/Materia/Unidad 1 - X/material.md" \
+  --tags "materia, unidad1" --dg-publish false --aplicar
+```
+
+Qué hace, en orden: extrae el texto (OCR automático si el PDF es escaneado), saca las imágenes raster de cada página a `Universidad/Figuras/`, arma la nota con `dg-publish` y **una sola** línea `tags:`, baja un nivel los encabezados del PDF para que la nota tenga un solo H1, y coloca las figuras de cada página con embeds `![[...]]` relativos a la nota.
+
+Reglas de seguridad: **dry-run por defecto** (sin `--aplicar` solo muestra el plan), no sobrescribe una nota existente salvo `--forzar`, y al terminar corre `verificar_nota.py` sobre la nota creada. Si el PDF está fuera del árbol del vault, el enlace a la fuente cae a la ruta absoluta en vez de un `../` infinito.
+
+## 12. Instalarlo en otra PC
 
 ```bash
 py -m pip install markitdown "pymupdf4llm==1.28.2" pymupdf pytesseract pillow ocrmypdf
