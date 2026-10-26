@@ -6,7 +6,7 @@
 <title>Visor PDF</title>
 <style>
   :root { color-scheme: dark; }
-  html, body { margin: 0; height: 100%; background: #0b0c10; color: #e5e7eb;
+  html, body { margin: 0; min-height: 100%; background: #0b0c10; color: #e5e7eb;
     font-family: ui-monospace, "Cascadia Code", "JetBrains Mono", monospace; font-size: 13px; }
   .bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px;
     align-items: center; padding: 8px 12px; background: #111318; border-bottom: 1px solid #222; }
@@ -27,8 +27,7 @@
   .log.ok { border-left-color: #4ade80; color: #86efac; background: #0a2a0a; }
   #pages { padding: 12px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
   .page { width: 100%; }
-  canvas { background: #fff; border: 1px solid #ddd; max-width: 100%; display: block; margin: 4px 0; }
-  #sentinel { height: 2px; width: 100%; }
+  canvas { background: #fff; border: 1px solid #ddd; max-width: 100%; height: auto; display: block; margin: 4px 0; }
   #end { padding: 10px 12px 22px; color: #64748b; font-size: 0.78rem; }
   #fallback { margin: 12px; padding: 12px; border: 1px solid #f59f00; border-radius: 8px; background: #2a1a0a; }
   #fallback a { color: #fbbf24; }
@@ -45,7 +44,6 @@
 </div>
 <div id="log" hidden></div>
 <div id="pages"></div>
-<div id="sentinel"></div>
 <div id="end" hidden>Fin del documento.</div>
 <div id="fallback" hidden>
   <strong>No se pudo renderizar el PDF dentro de la página.</strong><br>
@@ -64,7 +62,6 @@
   var dl = document.getElementById("dl");
   var fallback = document.getElementById("fallback");
   var fbLink = document.getElementById("fbLink");
-  var sentinel = document.getElementById("sentinel");
   var endNote = document.getElementById("end");
   var logBox = document.getElementById("log");
 
@@ -81,6 +78,24 @@
     fallback.hidden = false;
     fbLink.href = file;
   }
+
+  // El padre ajusta el alto del iframe a este contenido: asi el visor ocupa
+  // todo el espacio vertical que necesita y la pagina mantiene un solo scroll.
+  function reportHeight() {
+    var h = Math.max(
+      document.body ? document.body.scrollHeight : 0,
+      document.documentElement ? document.documentElement.scrollHeight : 0
+    );
+    try { parent.postMessage({ type: "nx-pdf-height", h: h }, "*"); } catch (e) {}
+  }
+
+  // El padre pide mas paginas cuando su sentinel entra en pantalla.
+  var requestMore = function () {};
+  window.addEventListener("message", function (e) {
+    if (e.origin !== location.origin) return;
+    var d = e.data || {};
+    if (d.type === "nx-pdf-more") requestMore();
+  });
 
   window.addEventListener("error", function (e) { err("window error: " + (e.message || e)); });
   window.addEventListener("unhandledrejection", function (e) { err("unhandled rejection: " + (e.reason || e)); });
@@ -129,6 +144,7 @@
       }).then(function () {
         rendered++;
         counter.textContent = rendered + " / " + total;
+        reportHeight();
       }).catch(function (e) {
         err("Render pagina " + n + ": " + (e && e.message ? e.message : e));
       });
@@ -141,40 +157,24 @@
     }
 
     function renderBlock() {
-      if (busy || next > total) { updateControls(); return Promise.resolve(); }
+      if (busy || next > total) { updateControls(); reportHeight(); return Promise.resolve(); }
       busy = true;
       var jobs = [];
       while (jobs.length < BLOCK && next <= total) { jobs.push(renderPage(next)); next++; }
       return Promise.all(jobs).then(function () {
         busy = false;
         updateControls();
+        reportHeight();
       });
     }
 
-    moreBtn.addEventListener("click", function () {
-      renderBlock().then(function () { if (next <= total) observe(); });
-    });
+    moreBtn.addEventListener("click", function () { renderBlock(); });
 
-    var io = null;
-    function observe() {
-      if (!io) {
-        io = new IntersectionObserver(function (entries) {
-          for (var i = 0; i < entries.length; i++) {
-            if (!entries[i].isIntersecting) continue;
-            io.unobserve(sentinel);
-            renderBlock().then(function () { if (next <= total) io.observe(sentinel); });
-            break;
-          }
-        }, { rootMargin: "600px 0px" });
-      }
-      io.observe(sentinel);
-    }
+    requestMore = function () { renderBlock(); };
 
     log("PDF cargado: " + total + " pagina(s)", "ok");
     updateControls();
-    renderBlock().then(function () {
-      if (next <= total) observe();
-    });
+    renderBlock();
   }).catch(function (e) {
     err("getDocument: " + (e && e.message ? e.message : e));
   });

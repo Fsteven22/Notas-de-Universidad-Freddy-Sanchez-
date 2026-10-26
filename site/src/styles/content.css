@@ -358,13 +358,19 @@ details.nx-fc p {
 .nx-pdf-slot:empty {
   display: none;
 }
+.nx-pdf-more {
+  height: 1px;
+  width: 100%;
+}
 .nx-pdf-frame {
   width: 100%;
-  height: 640px;
+  height: 70vh;
+  min-height: 420px;
   border: none;
   display: block;
   background: #000;
+  transition: height 0.15s ease-out;
 }
 @media (max-width: 640px) {
-  .nx-pdf-frame { height: 420px; }
+  .nx-pdf-frame { height: 60vh; }
 }
