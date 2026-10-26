@@ -57,6 +57,7 @@ const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
 const PDF_VIEWER = "/pdfjs/viewer.html?file=";
 const PDF_MAX_INLINE_BYTES = 25 * 1024 * 1024; // PDFs mayores: solo descarga, no visor embebido
+const NO_PUBLICAR_FILE = "_no-publicar.txt"; // lista de archivos que no se publican
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -77,6 +78,41 @@ const ASSET_SKIP = [
   /\.(tmp|bak)$/i,
 ];
 
+/* ── lista de archivos que no se publican ─────────────────── */
+
+/**
+ * Lee <vault>/_no-publicar.txt: un nombre de archivo por linea, con # para
+ * comentarios. Admite comodin *. Es la unica fuente de verdad: el sync no
+ * copia esos archivos a /assets/ y los ZIP por materia tampoco los incluyen.
+ */
+export async function leerNoPublicar(vaultDir) {
+  let texto = "";
+  try {
+    texto = await readFile(path.join(vaultDir, NO_PUBLICAR_FILE), "utf8");
+  } catch {
+    return [];
+  }
+  return texto
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith("#"));
+}
+
+/** Coincide un nombre de archivo contra los patrones (exacto o con comodin *). */
+export function coincideNoPublicar(nombre, patrones) {
+  return patrones.some((patron) => {
+    if (!patron.includes("*")) return patron.toLowerCase() === nombre.toLowerCase();
+    const partes = patron.split("*").map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    return new RegExp(`^${partes.join(".*")}$`, "i").test(nombre);
+  });
+}
+
+/**
+ * El sync es incremental: un archivo que hoy está en la lista puede seguir
+ * copiado en /assets/ de un build anterior. La limpieza de huerfanos (que
+ * borra lo que no esta en el manifiesto de copiados) ya lo resuelve: como los
+ * excluidos nunca se agregan al manifiesto, desaparecen de /assets/.
+ */
 async function walk(dir, acc = { files: [], dirs: [] }, base = dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -174,11 +210,13 @@ async function main() {
 
   const linkMap = new Map(); // título de nota → url
   const assetMaps = new Map(); // "sem/mat" y "sem/*" y "raiz" → Map(base→assetUrl)
+  const noPublicar = await leerNoPublicar(VAULT);
 
   // ── 1b. assets globales de la raíz del vault (Figuras/, Diagramas/ y
   // sueltos en la primera capa): alimentan el mapa "raiz" que consultará
   // resolveAsset desde cualquier materia. No generan materias fantasma
   // (el Hallazgo 1 sigue válido: son assets, no notas).
+  const excluidos = new Set();
   const raizAssets = new Map();
   const rootAssetFiles = rootWalk.files.filter((f) => {
     const top = f.rel.split("/")[0];
@@ -189,8 +227,13 @@ async function main() {
   for (const f of rootAssetFiles) {
     const rel = f.rel.split("/");
     const fileName = rel[rel.length - 1];
-    const dirs = rel.slice(0, -1).map(slugify);
-    const url = `/assets/raiz/${[...dirs, fileName].join("/")}`;
+      if (fileName === NO_PUBLICAR_FILE) continue;
+      if (coincideNoPublicar(fileName, noPublicar)) {
+        excluidos.add(fileName);
+        continue;
+      }
+      const dirs = rel.slice(0, -1).map(slugify);
+      const url = `/assets/raiz/${[...dirs, fileName].join("/")}`;
     const dest = path.join(OUT_ASSETS, "raiz", ...dirs, fileName);
     await mkdir(path.dirname(dest), { recursive: true });
     await copyIfChanged(f.full, dest, url.slice("/assets/".length));
@@ -217,6 +260,11 @@ async function main() {
       if (MD_EXT.test(f.name) || f.name.startsWith(".")) continue;
       const rel = f.rel.split("/");
       const fileName = rel[rel.length - 1];
+      if (fileName === NO_PUBLICAR_FILE) continue;
+      if (coincideNoPublicar(fileName, noPublicar)) {
+        excluidos.add(fileName);
+        continue;
+      }
       const dirs = rel.slice(0, -1).map(slugify);
       const url = `/assets/${sem.id}/${matId}/${[...dirs, fileName].join("/")}`;
       const dest = path.join(assetDir, ...dirs, fileName);
@@ -430,6 +478,9 @@ Sitemap: ${SITE_URL}/sitemap.xml`;
   console.log(`✓ ${notas.length} notas publicadas · ${omitidas.length} omitidas (sin dg-publish)`);
   if (omitidas.length) {
     for (const o of omitidas) console.log(`  · omitida: ${o.sem}/${o.mat}/${o.rel}`);
+  }
+  if (excluidos.size) {
+    console.log(`  · no publicado (_no-publicar.txt): ${[...excluidos].join(", ")}`);
   }
   console.log(`✓ ${notas.length} notas · ${semList.length} bloques · sync incremental listo`);
 }

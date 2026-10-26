@@ -42,10 +42,13 @@ tags: [MATG1051, unidad0, recursos]
 
 ![[notas_maquinas_automatas (1).pdf]]
 
+## 📘 Guía didáctica
+
+![[Guía Didáctica Mat. discretas lógica y demostraciones.pdf]]
+
 ## 💻 Solo local (no se publican)
 
-- `Guía Didáctica Mat. discretas lógica y demostraciones.docx` — Word no lo embarca el Garden.
-- `LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf` y `LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf` — libros con copyright + peso (Rosen 35MB supera el límite de 20MB): solo consulta local.
+- `LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf` y `LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf` — libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `_no-publicar.txt`).
 
 ---
 

@@ -30,12 +30,36 @@ Flujo diario para publicar notas en https://neonotes-espol.vercel.app
 
 | Copia | Qué hace | Regla de oro |
 |---|---|---|
-| **OneDrive** (`OneSyncFiles/Universidad/`) | Solo notas del vault | Editar **siempre** acá. Nunca commitear código (`site/`) acá. |
+| **OneDrive** (`OneSyncFiles/Universidad/`) | Vault de trabajo (el que ves en Obsidian) | Editar **siempre** acá. Nunca commitear código (`site/`) acá. |
 | **Desktop** (`notas-nexus-unificado/site/`) | Código del site | Clonado del vault-repo. **Nunca** commitear notas (`Universidad/`) acá. |
+| **Repo** (`notas-nexus-unificado/Universidad/`) | Copia del vault que Vercel construye | Se replica desde OneDrive; es lo único que el deploy ve. |
 
 El único gesto de publicación es un **push del vault** (notas). El site se reconstruye solo en Vercel.
 
-## 5. Comandos útiles (solo en el clone de desarrollo)
+> Ojo: el vault del repo **sí** lleva las notas commiteadas (Vercel las necesita para
+> construir). La regla "no commitear notas" aplica al trabajo diario: se edita en
+> OneDrive y se replica al repo. `_no-publicar.txt` y los assets que publica el
+> sitio tienen que existir en **las dos** copias.
+
+## 5. Archivos que NO se publican (`_no-publicar.txt`)
+
+Para material que no debe salir a internet (libros de texto con copyright, material de cátedra) hay una lista en la raíz del vault:
+
+`Universidad/_no-publicar.txt`
+
+Un nombre de archivo por línea, `#` para comentarios, comodín `*` admitido.
+
+Qué hace, automáticamente y en cada build:
+
+- el archivo **no** se copia a `/assets/` → no existe URL pública
+- **no** entra en los ZIP por materia
+- si una nota lo embebe, queda como `asset omitido` (no como link roto)
+
+Los archivos **no se borran**: siguen en tu vault local, solo se ocultan del sitio. Sacar algo de la lista y pushear lo vuelve a publicar en el siguiente deploy.
+
+> La lista existe en las dos copias del vault (OneDrive y el repo del sitio). Si la editás en una, replicá el cambio en la otra: el deploy lee la del repo.
+
+## 6. Comandos útiles (solo en el clone de desarrollo)
 
 ```bash
 # Ver notas nuevas del vault antes de hacer sync
@@ -51,7 +75,7 @@ npm run build
 npm run dev
 ```
 
-## 6. Qué NO hacer
+## 7. Qué NO hacer
 
 - No edites notas directamente en el clone de Desktop (`notas-nexus-unificado/Universidad/`). Esa zona es de solo lectura para el site; las notas viven en OneDrive.
 - No commitees artefactos derivados (`notes-md/`, `public/assets/`, `vault.json`, `search-index.json`, `public/downloads/`). Están en `.gitignore` y se regeneran en cada build.
