@@ -133,6 +133,19 @@ Dry-run por defecto (muestra cada tarjeta antes de escribir). No borra nada: sol
 
 Medición en el vault (26/10/2026): 813 notas revisadas → 105 notas con tarjetas propuestas y 200 tarjetas. El tag se deduce de la ruta (materia + unidad) o se reutiliza el que ya tiene la nota; `--tag` lo fuerza.
 
+## Nota .md → PDF (`md_a_pdf.py`)
+
+Markdown → HTML con CSS de impresión → Edge/Chrome headless. A4, márgenes de 18 mm, tablas con bordes, callouts, figuras que no se parten, KaTeX para matemáticas y mermaid para diagramas.
+
+```bash
+py md_a_pdf.py "Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/Talleres/Tarea 2.md"
+py md_a_pdf.py "ruta/nota.md" -o "salida.pdf" --html --landscape
+```
+
+Resuelve los embeds de imagen y SVG (`![[nombre-de-archivo]]`) buscando en la carpeta de la nota, luego en la raíz del vault y por último en todo el vault; convierte `> [!note]` en callout con estilos; elimina el frontmatter. KaTeX y mermaid se cargan desde CDN (requieren internet en el momento de convertir). No resuelve transclusiones de notas (`![[Otra Nota]]`).
+
+Guía completa y receta para publicar tareas: **`GUIA-MD-A-PDF.md`**.
+
 ## Registro de patrones (error → fix → script)
 
 - Ejercicio/example vacío (header sin cuerpo, ej. Inglés U1-01 Ej.4): completar con el drill real; detecta con `detectar_vacios.py`. Falsos positivos conocidos: `###`→`####` con contenido, callout usado como título de sección, contenido inline en la línea del header.
