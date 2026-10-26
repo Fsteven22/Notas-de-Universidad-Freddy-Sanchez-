@@ -66,7 +66,7 @@ Audita cada nota: OK si tiene sección `## 📚 Referencias` (fuentes, estilo Un
 
 ## Diagramas mermaid → SVG (receta)
 
-Los bloques mermaid dentro de callouts no renderizan en Live Preview ni confiable en Garden: se convierten a SVG y se incrustan con `![[carpeta/archivo.svg]]`. La fuente `.mmd` se guarda junto al `.svg` para reeditar.
+Los bloques mermaid dentro de callouts no renderizan en Live Preview ni confiable en Garden: se convierten a SVG y se incrustan en la nota con un embed de Obsidian que apunta al archivo `.svg`. La fuente `.mmd` se guarda junto al `.svg` para reeditar.
 
 ```bash
 mmdc -i diagrama.mmd -o diagrama.svg
@@ -77,6 +77,22 @@ Convención de nombres BD: `uX-NN-tipo.svg` (unidad-nota-posición-tipo: `er`, `
 ## Figuras de dependencias (matplotlib)
 
 `Temp/opencode/bdstrips.py` genera tiras de dependencias estilo examen (cajas + flechas arriba/abajo + corchete PK) en SVG. Es desechable por figura; si se vuelve rutina, traer la función aquí.
+
+## PDF → Markdown con OCR (`convertir_pdf.py`)
+
+Convierte PDFs a Markdown limpio para archivarlos en el vault y consumirlos desde OpenCode o un modelo local. Tres ejecutables que van juntos en esta carpeta:
+
+```bash
+py pdf_a_markdown.py "material.pdf" -o "material.md"        # PDF con capa de texto (markitdown, sin OCR)
+py pdf_ocr_a_markdown.py "escaneado.pdf" --split            # PDF escaneado (OCR Tesseract, un .md por pagina)
+py convertir_pdf.py "material.pdf"                          # decide solo; acepta --motor, --lang, --split
+```
+
+Motor OCR: Tesseract 5.4 en `C:\Program Files\Tesseract-OCR` (ya con `spa.traineddata` y agregado al PATH del usuario). **No usa Poppler**: el renderizado de páginas lo hace PyMuPDF, por eso `pdf2image` sobra. Salida: `0` ok, `1` error, `2` PDF inexistente.
+
+Dependencias (excepción a la regla de "solo librería estándar" de este folder): `markitdown`, `pymupdf4llm==1.28.2` (la `2.0` de PyPI viene sin módulos), `pymupdf`, `pytesseract`, `pillow`, `ocrmypdf`.
+
+Guía completa con rutas de texto/OCR, flujo PDF → nota del vault, troubleshooting y consumo con OpenCode/Qwen: **`GUIA-PDF-A-MARKDOWN.md`**.
 
 ## Registro de patrones (error → fix → script)
 
