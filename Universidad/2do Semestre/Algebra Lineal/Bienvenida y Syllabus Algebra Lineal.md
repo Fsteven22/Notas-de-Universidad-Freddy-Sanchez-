@@ -25,7 +25,7 @@ tags: [MATG1049, algebra-lineal, syllabus]
 
 ---
 
-## 📎 Documento oficial (Garden)
+## 📎 Documento oficial (sitio web)
 
 ![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
 

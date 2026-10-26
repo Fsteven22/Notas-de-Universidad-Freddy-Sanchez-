@@ -6,7 +6,7 @@ tags: [IDIG2012, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Comunicación)
 
 > [!info] ℹ️ Documentos publicados
-> Estos PDFs se publican en el Garden embebidos (`![[]]`): así el plugin los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
+> Estos PDFs se publican en el sitio embebidos (`![[]]`): así los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 
@@ -53,7 +53,7 @@ tags: [IDIG2012, unidad0, recursos]
 ![[Clase S3 - Comunicación estratégica (capturas).pdf]]
 
 > [!warning] 🎬 Video solo local (no se publica)
-> `Dinámicas grupales y trabajo en equipo.wmv` (58 MB): el Garden no embebe `.wmv` ni archivos así de pesados. Queda como recurso local; si lo necesitas en el sitio, conviértelo a MP4 ligero o súbelo a YouTube y enlázalo.
+> `Dinámicas grupales y trabajo en equipo.wmv` (58 MB): el sitio no embebe `.wmv` ni archivos así de pesados. Queda como recurso local; si lo necesitas en el sitio, conviértelo a MP4 ligero o súbelo a YouTube y enlázalo.
 
 ---
 

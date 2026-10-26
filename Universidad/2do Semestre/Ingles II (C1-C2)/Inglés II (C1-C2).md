@@ -8,7 +8,7 @@ tags: [IDIG1007, english2, mapa-de-contenido]
 **Código:** IDIG1007 · **Semestre:** 2do · [[Welcome & Syllabus English II|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a English II (IDIG1007). Las unidades siguen el libro de curso; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a English II (IDIG1007). Las unidades siguen el libro de curso; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

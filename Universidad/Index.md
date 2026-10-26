@@ -80,6 +80,6 @@ dg-home: true
 
 > [!example] 🌟 Sobre este jardín
 >
-> - 📝 Notas en Markdown, publicadas con [Digital Garden](https://github.com/oleeskild/Obsidian-Digital-Garden).
+> - 📝 Notas en Markdown, publicadas con Astro en [Neonotes](https://neonotes-espol.vercel.app).
 > - 🔄 Se actualiza solo cada vez que publico desde Obsidian.
 > - 💖 *Espero que te sirva y te deseo suerte en tu paso por la universidad.*

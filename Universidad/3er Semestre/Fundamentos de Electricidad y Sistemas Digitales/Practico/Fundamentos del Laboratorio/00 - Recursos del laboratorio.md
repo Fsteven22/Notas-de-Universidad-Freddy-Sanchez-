@@ -6,7 +6,7 @@ tags: [EYAG1037, laboratorio, recursos]
 # 🧪 Recursos — Fundamentos del Laboratorio (FESD)
 
 > [!info] ℹ️ Documentos publicados
-> PDFs embebidos (`![[]]`): el Garden los sube y se ven aquí mismo.
+> PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
 
 ![[FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
 

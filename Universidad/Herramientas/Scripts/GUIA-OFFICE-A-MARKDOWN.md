@@ -56,7 +56,7 @@ Las imágenes se nombran con el prefijo del archivo y quedan referenciadas en Ma
 
 1. Convierte: `py office_a_markdown.py examen.docx -o "$TMP/examen.md"`.
 2. Revisa el `.md` (tablas, orden, imágenes).
-3. Crea la nota en `Universidad/<semestre>/<materia>/<Unidad>/` con frontmatter: `dg-publish: true` si va al Garden y **una sola** línea `tags:`.
+3. Crea la nota en `Universidad/<semestre>/<materia>/<Unidad>/` con frontmatter: `dg-publish: true` si va al sitio y **una sola** línea `tags:`.
 4. Copia las imágenes a `Universidad/Figuras/` y cambia las referencias por embeds `![[...]]`.
 5. Valida: `py verificar_nota.py "ruta/nota.md"` debe salir `0`.
 6. Commit solo si lo pides.

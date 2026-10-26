@@ -6,7 +6,7 @@ tags: [MATG1051, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Discretas)
 
 > [!info] ℹ️ Documentos publicados
-> PDFs embebidos (`![[]]`): el Garden los sube y se ven aquí mismo.
+> PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
 
 ## 📎 Syllabus
 

@@ -6,7 +6,7 @@ tags: [IDIG1008, unit2, indice, english]
 # 🗺️ Unit 2 — Lifestyles (Libro U8) — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad (molde 4 notas)
 

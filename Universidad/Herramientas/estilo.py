@@ -1,4 +1,4 @@
-"""Estilo global para figuras del vault (Obsidian + Digital Garden).
+"""Estilo global para figuras del vault (Obsidian + Neonotes).
 
 Uso:
     from estilo import setup, guardar

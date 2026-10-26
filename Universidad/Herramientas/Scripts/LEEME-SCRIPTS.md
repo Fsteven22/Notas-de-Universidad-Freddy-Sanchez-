@@ -5,7 +5,7 @@ dg-publish: false
 # 🛠️ Scripts del vault (no se publican)
 
 > [!info] ℹ️ Qué hay aquí
-> Utilidades propias en Python (solo librería estándar). Los `.py` nunca se publican al Garden (solo viajan `.md` con `dg-publish: true`). Flujo antes de dar por terminada una nota: **verificar → limpiar → volver a verificar**.
+> Utilidades propias en Python (solo librería estándar). Los `.py` nunca se publican al sitio (solo viajan `.md` con `dg-publish: true`). Flujo antes de dar por terminada una nota: **verificar → limpiar → volver a verificar**.
 
 ## `verificar_nota.py` — auditoría pre-entrega (solo lee)
 
@@ -66,7 +66,7 @@ Audita cada nota: OK si tiene sección `## 📚 Referencias` (fuentes, estilo Un
 
 ## Diagramas mermaid → SVG (receta)
 
-Los bloques mermaid dentro de callouts no renderizan en Live Preview ni confiable en Garden: se convierten a SVG y se incrustan en la nota con un embed de Obsidian que apunta al archivo `.svg`. La fuente `.mmd` se guarda junto al `.svg` para reeditar.
+Los bloques mermaid dentro de callouts no renderizan en Live Preview ni confiable en el sitio: se convierten a SVG y se incrustan en la nota con un embed de Obsidian que apunta al archivo `.svg`. La fuente `.mmd` se guarda junto al `.svg` para reeditar.
 
 ```bash
 mmdc -i diagrama.mmd -o diagrama.svg

@@ -6,7 +6,7 @@ tags: [MATG1051, unidad3, indice, discretas]
 # 🗺️ Unidad 3 — Números y Conteo — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

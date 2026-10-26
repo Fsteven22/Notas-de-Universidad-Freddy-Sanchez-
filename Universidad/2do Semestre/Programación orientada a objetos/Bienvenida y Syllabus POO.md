@@ -24,7 +24,7 @@ tags: [CCPG1005, poo, java]
 
 ---
 
-## 📎 Documento oficial (Garden)
+## 📎 Documento oficial (sitio web)
 
 ![[SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf]]
 

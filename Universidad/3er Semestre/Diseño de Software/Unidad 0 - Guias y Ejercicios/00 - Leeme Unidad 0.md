@@ -6,7 +6,7 @@ tags: [CCPG1042, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Diseño de Software)
 
 > [!info] ℹ️ Documentos publicados
-> Estos PDFs se publican en el Garden embebidos (`![[]]`): así el plugin los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
+> Estos PDFs se publican en el sitio embebidos (`![[]]`): así los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
 > Los libros de texto completos con copyright **no** se publican: están en `Universidad/_no-publicar.txt`, no tienen URL pública y no entran en el ZIP de la materia. Se consultan en local.
 
 ## 📎 Políticas oficiales y deck Semana 1 (docente)

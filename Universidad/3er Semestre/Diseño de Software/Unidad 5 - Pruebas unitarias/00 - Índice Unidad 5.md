@@ -6,7 +6,7 @@ tags: [CCPG1042, unidad5, indice, diseno-software]
 # 🗺️ Unidad 5 — Pruebas unitarias — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

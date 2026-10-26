@@ -6,7 +6,7 @@ tags: [FISG1001, unidad0, guias, ejercicios]
 # 📝 Guías y Ejercicios del Prof. Zambrano (Física Mecánica)
 
 > [!info] ℹ️ Material oficial del curso (2023)
-> 70 páginas de ejercicios y 26 sesiones de clase del Prof. Dick Zambrano (2T 2023). Los PDFs se embeben con `!` para que el Garden los suba. Numeración: `S#` = sesión de clase; las guías van de S1 a S40 con huecos del profesor. Cada PDF enlaza a la nota de estudio del vault.
+> 70 páginas de ejercicios y 26 sesiones de clase del Prof. Dick Zambrano (2T 2023). Los PDFs se embeben con `!` para que el sitio los suba. Numeración: `S#` = sesión de clase; las guías van de S1 a S40 con huecos del profesor. Cada PDF enlaza a la nota de estudio del vault.
 
 ## 🎬 Sesiones de clase (slides)
 

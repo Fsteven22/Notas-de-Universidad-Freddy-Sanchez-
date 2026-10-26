@@ -8,7 +8,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 **Código:** IDIG2012 · **Semestre:** 2do · [[Bienvenida y Syllabus Comunicación|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Comunicación (IDIG2012). Aquí se navega por cada unidad y nota. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Comunicación (IDIG2012). Aquí se navega por cada unidad y nota. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

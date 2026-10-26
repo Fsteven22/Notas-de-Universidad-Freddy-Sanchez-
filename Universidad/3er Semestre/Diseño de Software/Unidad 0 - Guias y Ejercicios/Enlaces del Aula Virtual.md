@@ -5,7 +5,7 @@ tags: [CCPG1042, enlaces, recursos]
 
 # 🔗 Enlaces del Aula Virtual — Diseño de Software
 
-Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces clicables (funcionan en Obsidian y en Digital Garden).
+Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces clicables (funcionan en Obsidian y en Neonotes).
 
 > [!info] 📚 Cómo usar esta nota
 >

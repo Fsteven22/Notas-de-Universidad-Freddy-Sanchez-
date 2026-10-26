@@ -6,7 +6,7 @@ tags: [FISG1001, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Física Mecánica)
 
 > [!info] ℹ️ Portal de material de la materia
-> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el Garden los suba; sin el `!` el link quedaría roto.
+> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 

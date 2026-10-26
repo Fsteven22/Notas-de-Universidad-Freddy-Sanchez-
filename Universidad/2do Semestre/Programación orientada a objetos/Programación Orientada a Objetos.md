@@ -8,7 +8,7 @@ tags: [CCPG1005, poo, java, mapa-de-contenido]
 **Código:** CCPG1005 · **Semestre:** 2do · [[Bienvenida y Syllabus POO|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Programación Orientada a Objetos (CCPG1005). Cada unidad reúne sus notas en un callout; los enlaces apuntan a los archivos reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Programación Orientada a Objetos (CCPG1005). Cada unidad reúne sus notas en un callout; los enlaces apuntan a los archivos reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

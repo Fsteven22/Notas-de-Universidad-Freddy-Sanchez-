@@ -8,7 +8,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 **Código:** CCPG1042 (provisional) · **Semestre:** 3ro · [[Bienvenida y Syllabus Diseño de Software|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Diseño de Software. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Diseño de Software. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

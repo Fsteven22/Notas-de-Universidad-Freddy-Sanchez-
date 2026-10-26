@@ -6,7 +6,7 @@ tags: [MATG1049, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Álgebra Lineal)
 
 > [!info] ℹ️ Documentos publicados
-> Esta carpeta agrupa el material oficial de la materia (syllabus, políticas, planificación) y los PDFs de clase. Los PDFs se embeben en la nota (embed con `!` inicial) para que el plugin del Garden los suba y se vean aquí mismo; sin el `!`, el link quedaría roto.
+> Esta carpeta agrupa el material oficial de la materia (syllabus, políticas, planificación) y los PDFs de clase. Los PDFs se embeben en la nota (embed con `!` inicial) para que el sitio los suba y se vean aquí mismo; sin el `!`, el link quedaría roto.
 
 > [!warning] 📥 Carpeta pendiente de material
 > Aún no hay documentos. Cuando llegue el syllabus o las primeras capturas de clase, soltarlos aquí y nombrarlos con contexto, por ejemplo:

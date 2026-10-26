@@ -6,7 +6,7 @@ tags: [IDIG1008, unit1, indice, english]
 # 🗺️ Unit 1 — Different Cultures — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

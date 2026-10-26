@@ -6,7 +6,7 @@ tags: [IDIG1008, unit3, indice, english]
 # 🗺️ Unit 3 — Yes, You Can! (Libro U9) — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad (molde 4 notas)
 

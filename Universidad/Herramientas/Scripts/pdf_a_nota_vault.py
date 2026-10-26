@@ -101,7 +101,7 @@ def main():
     parser.add_argument("--vault", type=Path, default=VAULT_POR_DEFECTO, help="Raiz del vault")
     parser.add_argument("--titulo", default=None, help="Titulo de la nota")
     parser.add_argument("--tags", default="", help="Tags separados por coma")
-    parser.add_argument("--dg-publish", choices=["true", "false"], default="false", help="Publicar en el Garden")
+    parser.add_argument("--dg-publish", choices=["true", "false"], default="false", help="Publicar en el sitio")
     parser.add_argument("--motor", choices=["auto", "pymupdf4llm", "markitdown"], default="auto", help="Motor de texto")
     parser.add_argument("--figuras", type=Path, default=None, help="Carpeta de figuras (por defecto <vault>/Universidad/Figuras)")
     parser.add_argument("--aplicar", action="store_true", help="Escribe la nota y las figuras")
