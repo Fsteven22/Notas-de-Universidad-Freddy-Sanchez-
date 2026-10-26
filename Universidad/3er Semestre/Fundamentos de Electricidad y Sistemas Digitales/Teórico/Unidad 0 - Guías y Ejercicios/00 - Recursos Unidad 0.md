@@ -16,15 +16,15 @@ tags: [EYAG1037, unidad0, recursos]
 
 ## 📡 Sesiones
 
-![[FESD SESIÓN 1 2026 (1).pdf]]
+![[FESD SESIÓN 1 2026.pdf]]
 
-![[FESD SESIÓN 2 2026 (1).pdf]]
+![[FESD SESIÓN 2 2026.pdf]]
 
-![[FESD SESIÓN 3 2026 (1).pdf]]
+![[FESD SESIÓN 3 2026.pdf]]
 
 ![[FESD SESIÓN 5 2026.pdf]]
 
-![[FESD SESIÓN 6 y 7 2026 (1).pdf]]
+![[FESD SESIÓN 6 y 7 2026.pdf]]
 
 ![[FESD SESIÓN 9 y 10.pdf]]
 

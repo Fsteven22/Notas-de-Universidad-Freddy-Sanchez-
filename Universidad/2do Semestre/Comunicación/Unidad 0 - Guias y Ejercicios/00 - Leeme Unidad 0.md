@@ -31,7 +31,7 @@ tags: [IDIG2012, unidad0, recursos]
 
 ## 📜 Fundamentación teórica (cátedra)
 
-![[Fundamentación Teórica Pensamiento Complejo (1).pdf]]
+![[Fundamentación Teórica Pensamiento Complejo.pdf]]
 
 ![[Fundamentación teórica Comunicación Estratégica.pdf]]
 

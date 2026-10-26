@@ -111,9 +111,7 @@
     err("pdf.js no se cargo (window.pdfjsLib undefined). Verifica /pdfjs/build/pdf.js");
     return;
   }
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
-
-  log("Cargando PDF: " + file);
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.min.js";
 
   pdfjsLib.getDocument(file).promise.then(function (pdf) {
     var total = pdf.numPages;
@@ -121,15 +119,16 @@
     var next = 1;
     var busy = false;
 
-    fileInfo.textContent = name + " · " + total + " pag.";
-    counter.textContent = "0 / " + total;
+    fileInfo.textContent = name + " · " + total + " p\u00e1gs.";
+    counter.textContent = "cargando…";
+    counter.title = "p\u00e1ginas renderizadas";
 
     function renderPage(n) {
       var wrapper = document.createElement("div");
       wrapper.className = "page";
       var label = document.createElement("div");
       label.className = "pagenum";
-      label.textContent = "PAGINA " + n + " / " + total;
+      label.textContent = "P\u00c1GINA " + n + " de " + total;
       var c = document.createElement("canvas");
       wrapper.appendChild(label);
       wrapper.appendChild(c);
@@ -139,20 +138,23 @@
         c.width = vp.width;
         c.height = vp.height;
         c.style.maxWidth = "100%";
-        c.style.maxHeight = "78vh";
         return page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
       }).then(function () {
         rendered++;
-        counter.textContent = rendered + " / " + total;
+        counter.textContent = rendered + " de " + total + " cargadas";
         reportHeight();
       }).catch(function (e) {
-        err("Render pagina " + n + ": " + (e && e.message ? e.message : e));
+        err("Render p\u00e1gina " + n + ": " + (e && e.message ? e.message : e));
       });
     }
 
     function updateControls() {
       var pending = next <= total;
+      var lote = Math.min(BLOCK, total - rendered);
       moreBtn.hidden = !pending;
+      moreBtn.textContent = pending
+        ? (lote === 1 ? "Cargar 1 p\u00e1gina m\u00e1s" : "Cargar " + lote + " p\u00e1ginas m\u00e1s")
+        : "Cargar m\u00e1s p\u00e1ginas";
       endNote.hidden = pending;
     }
 
@@ -172,7 +174,12 @@
 
     requestMore = function () { renderBlock(); };
 
-    log("PDF cargado: " + total + " pagina(s)", "ok");
+    // El alto del canvas depende del ancho (max-width:100%), no del alto del
+    // iframe: si el iframe cambia de ancho hay que volver a reportar.
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(function () { reportHeight(); }).observe(pages);
+    }
+
     updateControls();
     renderBlock();
   }).catch(function (e) {

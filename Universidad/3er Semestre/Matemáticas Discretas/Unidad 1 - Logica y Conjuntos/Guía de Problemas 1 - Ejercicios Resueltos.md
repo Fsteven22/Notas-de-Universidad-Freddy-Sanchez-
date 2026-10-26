@@ -17,7 +17,7 @@ dg-publish: true
 
 ---
 
-![[GUÍA 1 DE PROBLEMAS MD (1).pdf]]
+![[GUÍA 1 DE PROBLEMAS.pdf]]
 
 ## 🔌 1.1 — Proposiciones, Tablas de Verdad y Circuitos
 
@@ -912,7 +912,7 @@ dg-publish: true
 ![[../Diagramas/dis-u1-02-01-graph.svg]]
 
 > [!quote] 📖 Fuentes
-> - Guía original: [[GUÍA 1 DE PROBLEMAS MD (1).pdf]] en Unidad 0 - Guias y Ejercicios.
+> - Guía original: [[GUÍA 1 DE PROBLEMAS.pdf]] en Unidad 0 - Guias y Ejercicios.
 > - K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed., McGraw-Hill, 2019.
 > - R. Johnsonbaugh, _Discrete Mathematics_, 8th ed., Pearson, 2017.
 

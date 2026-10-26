@@ -14,11 +14,11 @@ tags: [MATG1051, unidad0, recursos]
 
 ## 📝 Guías, talleres y soluciones
 
-![[GUÍA 1 DE PROBLEMAS MD (1).pdf]]
+![[GUÍA 1 DE PROBLEMAS.pdf]]
 
-![[Guía de problemas 2 MD.pdf]]
+![[Guía de problemas 2.pdf]]
 
-![[Guía de problemas 2 MD.pdf]]
+![[Guía de problemas 2.pdf]]
 
 ![[Guía de problemas 3.pdf]]
 
@@ -40,7 +40,7 @@ tags: [MATG1051, unidad0, recursos]
 
 ![[Ejercicios sobre el principio del palomar.pdf]]
 
-![[notas_maquinas_automatas (1).pdf]]
+![[notas_maquinas_automatas.pdf]]
 
 ## 📘 Guía didáctica
 
