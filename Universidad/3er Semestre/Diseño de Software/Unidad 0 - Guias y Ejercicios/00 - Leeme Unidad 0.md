@@ -7,6 +7,7 @@ tags: [CCPG1042, unidad0, recursos]
 
 > [!info] ℹ️ Documentos publicados
 > Estos PDFs se publican en el Garden embebidos (`![[]]`): así el plugin los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
+> Los libros de texto completos con copyright **no** se publican: están en `Universidad/_no-publicar.txt`, no tienen URL pública y no entran en el ZIP de la materia. Se consultan en local.
 
 ## 📎 Políticas oficiales y deck Semana 1 (docente)
 
@@ -16,23 +17,20 @@ tags: [CCPG1042, unidad0, recursos]
 
 ![[02bParadigmasDiseño.pdf]]
 
-## 📎 Syllabus y libros (<20MB)
+## 📎 Syllabus y material de lectura
 
 ![[SPA-SyllabusEUR_ACE-CCPG1042.pdf]]
 
 ![[02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf]]
 
-![[03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf]]
+## 📕 Libros de texto (solo local, por copyright)
 
-![[04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf]]
+No se publican: están en la lista `Universidad/_no-publicar.txt`. El archivo sigue en el vault, pero sin URL pública y fuera del ZIP de la materia.
 
-## 📕 Libro pesado (71.6MB, supera el límite de 20MB del Garden)
-
-- `01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf` — no se puede embeber; conseguir link externo (Drive) o consultar local.
-
-## 📕 Clean Architecture — R. C. Martin (6.4MB, solo local por copyright)
-
-- `01(Robert C. Martin Series) Robert C. Martin - Clean Architecture_ A Craftsman's Guide to Software Structure and De.pdf` — lectura asignada Control 01: caps. 3, 4 y 6. Integrado en [[Unidad 1 - Introducción al diseño/03 - Paradigmas de programación y diseño|U1-03]] y [[Unidad 1 - Introducción al diseño/Control 01 - Repaso Paradigmas|repaso].
+- `03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf` — Shalloway & Trott, 2da ed.
+- `04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf` — Fowler, 2da ed.
+- `01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf` — Pressman & Maxim, 9na ed. (71.6 MB)
+- `Clean Architecture - Robert C. Martin (libro completo).pdf` — lectura asignada Control 01: caps. 3, 4 y 6. Integrado en [[Unidad 1 - Introducción al diseño/03 - Paradigmas de programación y diseño|U1-03]] y [[Unidad 1 - Introducción al diseño/Control 01 - Repaso Paradigmas|repaso].
 
 ## 🍰 Material de clase (pizarra)
 
