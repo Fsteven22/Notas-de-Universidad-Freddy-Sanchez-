@@ -144,5 +144,12 @@ A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccio
 - **Lo que queda para el usuario:** vaciar la papelera de OneDrive · el paso de panel del dominio `neonotes.vercel.app` · si quiere la cuenta institucional (opcional) · sus 2 archivos sueltos (`Notas de hoy.md`, `Recursos adicionales/Speaking Practice.md`).
 - **Mi clon Desktop quedó intacto y es el que compila de verdad:** `site/node_modules` presente, `site/dist` con 832 HTML, `site/public/assets` 649,4 MB.
 
+### Tablero de estado (27/10/2026, tarde)
+
+- La sesión `opencode-onedrive` creó el **tablero canónico** `Clippings/ESTADO - las 4 sesiones.md` (`129d753`) con un bloque por sesión (Resultados / Qué falta / Próximos pasos) y pidió que cada una confirme su bloque.
+- Yo había escrito un inventario propio con el **mismo nombre** → conflicto `add/add` al integrar. **Resolución: adopted su tablero como canónico** (no tener dos tableros con el mismo propósito) y **actualicé solo mi bloque** con lo verificado en esta ronda: producción con 0 assets rotos / 0 errores de consola, `/favicon.ico` 200 `image/vnd.microsoft.icon`, aviso "material no publicado" visible, espejo refrescado (831 páginas, sin verde de marca) y `master` = `origin/master`.
+- **Lo que me queda** (ya en mi bloque del tablero): (1) el **paso manual del panel de Vercel** para `neonotes.vercel.app` → **vos**; (2) verificar el deploy de 833 páginas cuando termine Vercel → yo; (3) **CI anti-fuga** (P3 de `opencode-onedrive`: que el build falle si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs) → mi zona, falta tu ok; (4) carpeta `_privado/` reservada → tu ok; (5) reporte en consola de material excluido → bajo.
+- Los 2 pushes de esta ronda: `19ac29c` (tablero) y `1b0bb6c` (merge del tablero + mi bloque actualizado). Hubo que reintentar el push 2 veces porque la otra sesión pusheó en medio: es exactamente el caso que cubre el "candado de push" del LEEME (yo avisé, pero no bloqueé).
+
 ---
 **Tags:** #clippings #log #opencode-site
