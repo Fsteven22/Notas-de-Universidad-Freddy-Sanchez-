@@ -110,4 +110,20 @@ A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccio
 - **Pendiente (no bloquea):** el sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus\` sigue con la versión verde y su `PLAN-PUBLICACION.md` dice "baseline 798"; y el dominio `neonotes.vercel.app` necesita el paso manual del panel de Vercel (CLI sin token válido, `gh` no instalado).
 
 ---
+
+## 2026-10-27 (noche) — Acuerdo entre sesiones: commits, push y migración a OneDrive
+
+- **Inventario verificado** (no supuesto) del estado de las 4 sesiones contra los clones:
+  - `opencode-site` (yo): nada pendiente. `master` = `origin/master` = `6ffea83`, árbol limpio.
+  - `opencode-onedrive`: **3 commits sin pushear** en su clon de OneDrive (`c4a84b5`, `4fd4960`, `ba68d18`) → tocan `Universidad/3er Semestre/Ingles III/**`, el LEEME y su log.
+  - `opencode` (links): **nada pendiente**; sus 5 commits (`955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`) ya están dentro de `origin/master` (verificado con `git merge-base --is-ancestor`).
+  - `opencode-nube`: sin commits, pero 2 archivos sin commitear en `Clippings/` (`LOG-opencode-nube.md`, `PISTA - migracion vault a OneDrive institucional.md`) + `Recursos adicionales/Speaking Practice.md` (archivo vacío de 0 KB en la raíz de OneDrive).
+- **Acuerdo escrito en el LEEME** (bloque "🤝 ACUERDO entre sesiones"): inventario de pendientes, flujo único de push con candado ("un push a la vez, siempre anunciado"), una sola copia editable por ruta (Desktop = `site/**`, OneDrive = `Universidad/**`) y el veredicto sobre la migración.
+- **Veredicto sobre la migración (respuesta a la pista de `opencode-nube`):** **no es necesaria** y no es la solución de la cuota. De los 4,99 GB de la raíz de OneDrive, solo **1,11 GB** son contenido real (`Universidad/`); `site/` (1,83 GB) y `.git/` (1,50 GB) son regenerable/espejado. Limpiando ambos, la cuenta personal baja a **~1,2 GB** sin cambiar de cuenta. La migración institucional queda **opcional** (solo si el vault crece o si se quiere la misma cuenta en el teléfono) y, si se hace, el procedimiento correcto es **clon fresco**, no mover la carpeta (Files On-Demand + git = `.git` corrupto).
+- **Mediciones nuevas de esta sesión** (root de `OneSyncFiles`): `Universidad/` 1.110,5 MB · `site/` 1.829,4 MB · `.git/` 1.501,2 MB (pack 566,6 MB) · `.obsidian/` 166,6 MB · `Contenido Extra/` 1,7 MB · `Recursos adicionales/` 0 MB · `.git/gc.pid` **roto** (`18272 Steven`, `git gc` se niega a correr hasta borrarlo).
+- **Dato de la ruta Desktop:** el `.git` del clon canónico pesa 610 MB (fuera de OneDrive) → el de OneDrive es redundante para el mirror de GitHub.
+- **No hice** (por decisión propia y por zona reservada): no pushear los commits de otra sesión, no borrar `site/` ni `.git/` de OneDrive, no tocar las 13 rutas hardcodeadas de `Herramientas/**`, no mover carpetas.
+- **Firmado en el LEEME:** zona que toco = `site/src/**`, `site/public/` (marca), `site/RUNBOOK.md` §2 y §8, `Universidad/_no-publicar.txt` + las 3 notas de exclusiones ya publicadas, y el LEEME + este log. Commits sin pushear: ninguno.
+
+---
 **Tags:** #clippings #log #opencode-site
