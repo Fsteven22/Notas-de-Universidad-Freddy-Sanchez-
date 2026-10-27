@@ -203,6 +203,15 @@ Stevens) es aceptable en una cuenta institucional. **La PISTA queda en
 `#pendiente` hasta que eso se confirme; mientras tanto no se mueve ninguna
 carpeta.**
 
+### 📊 Tablero de estado (qué falta a cada sesión)
+
+> [!tip] Un solo lugar para ver el estado
+> `Clippings/ESTADO - las 4 sesiones.md` tiene, **por sesión**: los **resultados**
+> (con números verificados), **qué falta** (con prioridad y quién decide) y los
+> **próximos pasos**. Al cerrar una tanda, cada sesión actualiza **su bloque** y
+> pushea con el candado de push. Abajo, en "Avisos de otros agentes", está el
+> resto de la coordinación.
+
 ### Cómo confirmar el acuerdo
 
 > [!note] Respuesta en 1 línea
@@ -1134,3 +1143,83 @@ telefono va a AutoSync -> institucional con `DCIM/Camera` (plan B: app oficial
 de OneDrive para Android si el MDM bloquea el OAuth).
 
 **Commits sin pushear (mios):** ninguno. `origin/master` = `master`.
+
+---
+
+## 📊 RADAR DE SESIONES: qué falta por hacer, resultados y próximos pasos (27/10/2026 ~15:25)
+
+> [!info] Consolidado por `opencode-nube` leyendo las 4 bitácoras
+> Fuente: `LOG-opencode.md`, `LOG-opencode-onedrive.md`, `LOG-opencode-site.md`,
+> `LOG-opencode-nube.md`. Cada fila dice **qué hizo**, **qué le falta** y **cuál es su
+> próximo paso**. Los estados son los de `origin/master` = `bb1bc19`, verificados con
+> `git log` / `git merge-base --is-ancestor` en los clones.
+
+### 1. `opencode` — 3er Semestre, wikilinks y calidad del vault
+
+| | |
+|---|---|
+| **Resultados** | 3er Semestre en **0 wikilinks rotos**, **0 errores de formato** (173 notas) y **0 PDFs huérfanos**. Vault entero 1075 → **1039 BAD** (ningún semestre subió). Speaking Exam 2 de Inglés III integrado (nota + 2 SVG + PDF del deck; el `.pptx` queda local). Publicó sus 8 commits (`3cb1fdc` → `2ea2d3d`) y ejecutó la limpieza de cuota (**~2,67 GB liberados**: `site/` 1.830 MB → 1 MB, `.git/` 1.502 → 658 MB con `git gc`), borrando el `gc.pid` huérfano **tras verificar que el proceso 18272 no existía**. |
+| **Qué le falta** | 1) Embebir los PNG ya renderizados (Git, componentes, normalización) en `3er Semestre/Diseño de Software/Unidad 2 y 5/Archivos/`. 2) Renderizar los decks que faltan (DSW U3/U4/U5-01, BD). 3) Decidir los **1039 BAD** de 1er/2do/Preuniversitario (**requiere criterio del usuario**: son links a material que nunca existió). 4) Normalizar ~970 errores de formato del 1er/2do/Preuniversitario. 5) Revisar los 32 PNG huérfanos de `Universidad/Figuras/`. 6) `OneSyncFiles-backups/` (458 MB, hermano del vault, en la raíz de OneDrive): decidir si se queda. |
+| **Próximo paso** | Aplicar **un worktree por sesión** (regla 9, aún no implementada) antes de otra tanda: es la causa de que un merge se llevara trabajo ajeno 3 veces. Después, items 1 y 2 (automatizables); los items 3, 5 y 6 esperan al usuario. |
+
+### 2. `opencode-onedrive` — sistema de publicación + Cálculo Vectorial
+
+| | |
+|---|---|
+| **Resultados** | Gate de publicación con **dos capas**: `dg-publish: true` en el frontmatter + `Universidad/_no-publicar.txt` (**17 patrones / 61 archivos**). Regla de **"solo se publica un asset si una nota publicada lo referencia"** (2783 assets referenciados). Marcador `<!-- nx:asset-omitido -->` visible en la nota. Cerró la fuga real de `Escucha Activa Parte 1/2_OCR.pdf`. Cálculo Vectorial: 37 diagramas maestros integrados, **0 embeds de diagramas rotos** en el vault; `SVGs por recrear.md` de 474 → **0**. `site/RUNBOOK.md` y `HISTORIAL-LANZAMIENTO.md` reescritos. Detectó que `node_modules` **se vació solo** en el clon de OneDrive. |
+| **Qué le falta** | **P1** worktree por sesión (regla 9, sin implementar) · **P2** invertir la lista negra de copyright en lista blanca (`_publicar.txt`) o mover el material a `Universidad/_privado/` → **decisión del usuario** · **P3** CI que falle si un asset excluido aparece en `public/assets` o en los ZIPs (la red que faltó para la fuga de Cambridge) · **P4** mover sus 4 scripts de auditoría a `Universidad/Herramientas/` (`qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py`) y dejar una sola entrada · **P6** parametrizar rutas (`VAULT_ROOT`) → **solo si se migra** · **P7** los 32 PNG huérfanos de `Figuras/` (coincide con el item 5 de `opencode`) · **P8** arreglar los `verificar_nota.py` que fallan en Cálculo Vectorial (zona suya, **espera luz verde**). |
+| **Próximo paso** | **P3** y **P4** son los que evitan que la fuga de copyright se repita; P8 es suya y arranca con un "dale". P5 (sacar `site/`) ya está **hecho** por otra sesión. |
+
+### 3. `opencode-site` — sitio, marca y dominios (clon Desktop)
+
+| | |
+|---|---|
+| **Resultados** | Logo propio + portada OG + favicon + **favicon.ico real** (16/32/48 px, ya responde 200 en producción). Paleta violeta → azul + fix del buscador. **Redirect 308** de `neonotes.vercel.app` → `neonotes-espol.vercel.app` en `site/vercel.json` + pasos de panel en `site/RUNBOOK.md` §8. Plugin `site/src/lib/rehype-asset-omitido.mjs` (registrado en `astro.config.mjs:35`): los marcadores de material no publicado **ya no desaparecen en silencio**. Exclusiones de publicación (17 patrones) unificadas entre las dos listas. Detectó y documentó que **borrar dentro de la carpeta sincronizada no libera cuota de forma confiable** (OneDrive rehidrata lo que sigue en la nube): la forma fiable es **mover** la carpeta fuera del árbol y **vaciar la papelera**. Asumió el incidente que causó (borró derivados con 2 builds corriendo) y dejó la restauración completa de su clon. |
+| **Qué le falta** | 1) **Paso manual en el panel de Vercel** para liberar `neonotes.vercel.app` (hoy lo responde otro proyecto; el CLI no tiene token válido → no se puede hacer por terminal) y verificar `curl -I https://neonotes.vercel.app/3er-semestre/` → 308. 2) **Sandbox `notas-nexus`** (`Desktop\Proyectos\notas-nexus`): sigue con la versión verde y `PLAN-PUBLICACION.md` dice "baseline 798" → es un espejo sin commits, **no commitear ahí**. 3) Confirmar la **lista final de notas omitidas**: la consolidada son **3** (Física Mecánica → `Guías y Ejercicios (Prof. Zambrano).md` + los 2 libros Cambridge); las 2 Cambridge se quedan fuera por copyright y la de Física Mecánica es decisión del usuario. |
+| **Próximo paso** | El paso de Vercel es del **usuario** (tiene que entrar al panel). Su clon Desktop queda **siempre limpio y al día** para que cualquiera saque un worktree de él. |
+
+### 4. `opencode-nube` — nube y coordinación (esta)
+
+| | |
+|---|---|
+| **Resultados** | Abrió la pregunta de la nube con datos medidos (la personal al 4,99 GB de 5 GB). **3 reproducciones independientes** de que `node_modules`/`dist` no pueden vivir en OneDrive: (a) `npm run build` → `Cannot find module ...\astro\dist\cli\throw-and-exit.js` (OneDrive deshidrató la carpeta), (b) `npm ci` → `ENOTEMPTY ...\hastscript\lib` (OneDrive y npm peleando), (c) **build de control fuera de OneDrive** (copia en disco local + junction al vault): `npm ci` OK → sync **806 notas / 5 bloques** → build **833 `.html`, exit 0**, con `speaking-practice-2` publicado y `favicon.ico` presente. Escribió los Acuerdos 1–4, la **cola de push**, la corrección de la tabla de zonas (4 sesiones, no 3), la corrección del error de hecho sobre AutoSync/OneSync y los números exactos de lo liberable. Commits: `47614c0` (bitácora + PISTA + bloques), `eca1fe3` (confirmación final), `4ade135` (confirmación de push). Detectó que la cuenta **había pasado de cuota** (5,13 GB) y avisó, lo que hizo que otra sesión ejecutara la limpieza. |
+| **Qué le falta** | Nada propio: la PISTA quedó **#procesado** y el veredicto es "no migrar". Quedan datos que **solo tiene el usuario**: cuota real por usuario de la institucional, límite por archivo (el `.wmv` pesa 58 MB), retención al terminar la carrera, si el material con copyright es aceptable en una cuenta institucional, y si el teléfono va a AutoSync → institucional (plan B: app oficial de OneDrive para Android si el MDM bloquea el OAuth). |
+| **Próximo paso** | Esperar esas respuestas. Si el usuario dice "migrar": `VAULT_ROOT` en los 15+ archivos con rutas hardcodeadas → **clon fresco** en `OneDrive - <Organización>` (nunca mover la carpeta) → build de control desde la ruta nueva → recién ahí borrar la copia personal. Revaluar si `Universidad/` supera **3 GB**. |
+
+### ❌ NO rehacerlo (ya está cerrado)
+
+| Qué | Estado |
+|---|---|
+| Publicar los 3 commits que estaban sueltos (`c4a84b5`, `4fd4960`, `ba68d18`) | **Hecho** — están en `origin/master` |
+| Unificar `_no-publicar.txt` (2 listas) | **Hecho** — 17 patrones, idéntico en ambos clones |
+| `favicon.ico` que daba 404 | **Hecho** — `66c9eca`, responde 200 |
+| Divergencia de `00 - Leeme Unidad 0.md` (Diseño de Software) | **Hecho** — resuelto en el merge; la versión vigente es la de OneDrive |
+| Sacar `site/` generado del vault | **Hecho** — `site/` 1.830 MB → 1 MB (solo el código versionado) |
+| Compactar `.git` | **Hecho** — 1.502 → 658 MB con `git gc --prune=now` |
+| `gc.pid` roto | **Hecho** — borrado tras verificar que no había `git gc` vivo |
+| Rama `backup-pre-fix-links` | Sus 5 commits ya están en `origin/master`: **no se mergea, no se borra** hasta que el usuario lo diga |
+| Merge de `d875bdf`/`7eeef28`/`84f24ef` (Desktop) | **Hecho** — `f69ed87`, `8fedc9f` |
+
+### 🔜 Cola de trabajo, por prioridad y dueño
+
+| # | Qué | Dueño | Desbloquea |
+|---|---|---|---|
+| 1 | **Vaciar la papelera de OneDrive** | **usuario** | libera de verdad los ~2,67 GB: hasta entonces siguen contando en la cuota |
+| 2 | **Paso de panel de Vercel** para `neonotes.vercel.app` + verificar el 308 | **usuario** | cierra el dominio duplicado |
+| 3 | **Worktree por sesión** (regla 9 / P1) | **todas** | evita que un merge se lleve trabajo ajeno (pasó 3 veces) |
+| 4 | **P3**: CI que falle si un asset excluido llega a `public/assets` o a los ZIPs | `opencode-onedrive` | red de seguridad del copyright |
+| 5 | **P4**: los 4 scripts de auditoría en `Universidad/Herramientas/` + una sola entrada | `opencode-onedrive` | detección de embeds rotos y fugas antes de publicar |
+| 6 | **P8**: `verificar_nota.py` de Cálculo Vectorial | `opencode-onedrive` | pide luz verde |
+| 7 | **P2**: lista blanca de copyright (o `Universidad/_privado/`) | **usuario** decide, `opencode-onedrive` ejecuta | evita que una fuga se repita |
+| 8 | Embebir PNG renderizados + renderizar decks faltantes (DSW U3/U4/U5-01, BD) | `opencode` | assets y media embebidos en las notas |
+| 9 | Los **1039 BAD** de 1er/2do/Preuniversitario | **usuario** decide, `opencode` ejecuta | requiere criterio sobre qué material debería existir |
+| 10 | 32 PNG huérfanos de `Figuras/` + `OneSyncFiles-backups/` (458 MB) + `Recursos adicionales/Speaking Practice.md` (0 KB) | **usuario** decide | espacio y limpieza |
+| 11 | Lista final de notas omitidas (3): la de Física Mecánica | **usuario** | 2 Cambridge se quedan fuera por copyright |
+| 12 | `Notas de hoy.md` | **usuario** | ya quedó commiteada (`bb1bc19`) |
+| 13 | Si migra: `VAULT_ROOT` + clon fresco + build de control | `opencode-nube` + `opencode-onedrive` | solo si el usuario lo pide |
+
+> [!tip] 📌 Orden de las 4 sesiones al retomar
+> 1) **Primero el worktree** (item 3): cada sesión trabaja en el suyo y solo una integra a `master`.
+> 2) Después, cada una toma de la cola lo que sea de su zona, **commitear antes de avisar**.
+> 3) **Un push a la vez**, anunciado antes y después, con build de control si tocó `site/**` o `Universidad/**`.
+> 4) **Lo que no depende de los agentes** (papelera, panel de Vercel, 5 datos de la cuenta institucional) lo resuelve el usuario: está en la columna "Dueño" de la cola.

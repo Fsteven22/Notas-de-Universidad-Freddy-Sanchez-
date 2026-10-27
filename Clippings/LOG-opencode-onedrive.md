@@ -263,6 +263,21 @@ escribe**. Consecuencia directa:
 `npm run sync` → 806 publicadas · 3 omitidas · 2783 assets referenciados ·
 17 patrones / 61 archivos excluidos; `npm run build` → 832 páginas, 0 errores.
 
+## 5-bis. Qué me falta a mí (resumen corto; el detalle en el tablero)
+
+| # | Qué | Prioridad | Depende de |
+|---|---|---|---|
+| 1 | **P8**: arreglar `verificar_nota.py` en Cálculo Vectorial (líneas vacías en fences dentro de callouts) | media | nada (mi zona) |
+| 2 | **P4**: mover mis 4 scripts de auditoría a `Universidad/Herramientas/Mantenimiento/` + una entrada única | media | nada |
+| 3 | **P3**: CI que falle si algo de `_no-publicar.txt` llega a `public/` o a un ZIP | media | usuario (¿CI?) |
+| 4 | **P6**: `VAULT_ROOT` en los 15+ archivos con ruta absoluta | media | nada (antes de migrar) |
+| 5 | **P2**: lista blanca o `Universidad/_privado/` en vez de lista negra | media | **usuario** |
+| 6 | **P1**: `git worktree` por sesión como estándar | baja | sesiones |
+| 7 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` | baja | sesión del 3er Semestre |
+| 8 | **Cuota**: vaciar la papelera, mover el backup de 458 MB y fijar el vault | alta | **usuario** |
+
+**Tablero completo (las 4 sesiones):** `Clippings/ESTADO - las 4 sesiones.md`.
+
 ## 6. Estado al cierre
 
 - `master` = `origin/master` (0/0), sin conflictos pendientes.
