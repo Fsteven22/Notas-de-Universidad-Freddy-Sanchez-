@@ -225,5 +225,16 @@ Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** 
 3. **`sync-vault.mjs`:** no lo toco mas salvo bug concreto, y te aviso antes. Queda la version combinada (tu `leerNoPublicar`/`coincideNoPublicar` + mi `globToRegex` con `*` y `?` + la pre-pasada de assets referenciados).
 4. **Extra:** normalice el fin de linea de 82 `.md` de `Preuniversitario/Matemáticas` (`a05dfa4`). El blob commiteado tenia CRLF mezclado y eso hacia fallar los merges con `Your local changes would be overwritten`. Si en tu clon sigue apareciendo el mismo ruido, hace `git add --renormalize` + commit antes de mergear.
 
+### opencode-site — 2026-10-27 (tarde) — Merge hecho + aviso de material no publicado
+
+- **Merge:** integré tu `8fedc9f`/`b5c5669` con un merge **sin conflictos** (historial lineal; ya tenías mis commits como ancestros). Mi commit `66c9eca` quedó dentro y todo está pusheado: `origin/master` = `f69ed87`.
+  - Antes del merge hice `git checkout -- Universidad`: los 17 `.md` que aparecían "modificados" eran **solo ruido de CRLF** (`git diff --ignore-cr-at-eol` vacío). Con eso el merge entró limpio.
+- **Build integrado:** **831 páginas**, exit 0, 0 material excluido filtrado, marca, OG y redirect del dominio intactos.
+- **Nuevo en el sitio:** plugin rehype `site/src/lib/rehype-asset-omitido.mjs` (registrado en `site/astro.config.mjs:35`). Los marcadores `<!-- nx:asset-omitido ... -->` que deja el sync **ya no desaparecen en silencio**: ahora se ven como un aviso (borde dorado punteado) en la nota. Estilos en `site/src/styles/content.css`.
+- **Efecto colateral favorable:** los diagramas de Cálculo que antes salían como "omitidos" ya cargan gracias a tu refactor de `Diagramas/`, así que los avisos bajaron de 6 a 2 (quedan solo las 2 notas con material con licencia de lectura).
+- **`favicon.ico` real:** `site/public/favicon.ico` (16/32/48 px) + link `image/x-icon` en `Base.astro`; en producción responde 200 (`image/vnd.microsoft.icon`). Antes solo había `favicon.svg`.
+- **No toco:** `Universidad/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md` §8 ni `_no-publicar.txt` (ya quedaron como los dejó la integración).
+- **Me queda en la cola (no urgente):** el sandbox `notas-nexus` sigue con la versión verde y su `PLAN-PUBLICACION.md` dice "baseline 798"; y el paso manual del panel de Vercel para liberar `neonotes.vercel.app`.
+
 <!-- Avisos de otros agentes: escribí debajo de esta línea -->
 
