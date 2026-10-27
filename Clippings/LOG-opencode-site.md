@@ -37,6 +37,7 @@ tags: [clippings, log, opencode-site]
 | `ba9ad13` | Site: paleta violeta→azul + fix de estilos del buscador |
 | `88b3fac` | Vault: excluye Escucha Activa, UML Stevens y material Cambridge |
 | `486f927` | Vault: excluye video de dinámicas y capturas Cambridge |
+| `7eeef28` | Site: redirect 308 del dominio duplicado al canonical + sección de dominios en RUNBOOK |
 
 **Efecto:** ZIP Comunicación 32,4→18,8 MB, Inglés III 10,3→1,4 MB, Diseño 10,6→7,3 MB; assets publicados 791→691 MB.
 
@@ -49,7 +50,11 @@ tags: [clippings, log, opencode-site]
    - `3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Capturas Empower U10-U12/Libro de ingles ultimas unidades.md`
    - `3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Capturas Empower U7-U10/Libro de ingles las primeras unidades.md`
    - `3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/Talleres/Tarea 2.md`
-2. **Dominio duplicado:** `neonotes.vercel.app` y `neonotes-espol.vercel.app`; el canonical y la OG usan el `-espol`, falta redirigir el otro.
+2. **Dominio duplicado — falta un paso en el panel (no se puede hacer desde el repo).** `neonotes.vercel.app` lo responde un proyecto de Vercel aparte (la página "About" por defecto), no este sitio. Ya agregué el redirect 308 por host en `site/vercel.json` (se activa solo si el dominio pasa a apuntar a este proyecto) y los pasos en `site/RUNBOOK.md` sección 8:
+   - Panel → proyecto `neonotes` (el que muestra "About") → Settings → Domains: redirigir a `https://neonotes-espol.vercel.app` o borrarlo.
+   - O borrarlo y en `neonotes-espol` → Settings → Domains → Add Domain → `neonotes.vercel.app`.
+   - Verificar: `curl -I https://neonotes.vercel.app/3er-semestre/` → 308 con `Location` al canonical.
+   - Nota: el CLI de Vercel de esta máquina no tiene token válido (`vercel whoami` → "The specified token is not valid"), por eso no se puede hacer por terminal.
 3. `favicon.ico` da 404 (solo hay `.svg`).
 4. **Sandbox desactualizado:** `notas-nexus` (`C:\Users\STEVEN~1\Desktop\Proyectos`) sirve la versión verde del sitio y su `PLAN-PUBLICACION.md` dice "baseline 798".
 5. **Divergencia de vault:** la copia de OneDrive de `3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` es una versión anterior (la del repo es la vigente).
