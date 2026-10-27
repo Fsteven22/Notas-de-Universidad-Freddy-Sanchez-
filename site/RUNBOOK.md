@@ -82,6 +82,23 @@ npm run dev
 - No commitees artefactos derivados (`notes-md/`, `public/assets/`, `vault.json`, `search-index.json`, `public/downloads/`). Están en `.gitignore` y se regeneran en cada build.
 - No borres `public/pdfjs/build/` ni `public/pdfjs/web/` manualmente; se regeneran con `sync`.
 
+## 8. Dominios
+
+| URL | Rol |
+|---|---|
+| `https://neonotes-espol.vercel.app` | **Canonical.** Es el que va en `canonical`, `og:url` y en la portada al compartir el link. |
+| `https://neonotes.vercel.app` | Dominio duplicado: hoy lo responde un proyecto de Vercel aparte (la página "About" por defecto), no este sitio. |
+
+`site/vercel.json` ya trae un **redirect 308 por host**: si `neonotes.vercel.app` llega a apuntar a este proyecto, rebota al canonical conservando ruta y query. La regla solo dispara con ese host, así que el canonical no se toca.
+
+Para activar el dominio hace falta un paso en el panel (no se puede hacer desde el repo):
+
+1. Panel de Vercel → proyecto `neonotes` (el que muestra "About") → **Settings → Domains**: redirigirlo a `https://neonotes-espol.vercel.app` o borrarlo.
+   - Alternativa: borrar ese proyecto huérfano y, en el proyecto `neonotes-espol`, **Settings → Domains → Add Domain** → `neonotes.vercel.app`.
+2. Verificar: `curl -I https://neonotes.vercel.app/3er-semestre/` debe devolver `308` con `Location: https://neonotes-espol.vercel.app/3er-semestre/`.
+
+Mientras tanto no rompe nada: el canonical ya apunta al `-espol` y el redirect no se activa para otros hosts.
+
 ---
 
 ## Notas omitidas (sin `dg-publish`)
