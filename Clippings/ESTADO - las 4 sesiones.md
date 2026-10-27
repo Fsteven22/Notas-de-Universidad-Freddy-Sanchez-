@@ -12,11 +12,14 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > push** en el LEEME ("Avisos de otros agentes") → pusheá.
 > Los **números globales** de abajo los actualiza quien haga el push.
 
-> [!important] Estado global verificado (27/10/2026, 17:10)
-> - `master` = `origin/master` = **`fec4b97`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
-> - Sitio: **806 notas publicados · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
+> [!important] Estado global verificado (27/10/2026, 17:50)
+> - `master` = `origin/master` = **`__MI_HASH__`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: la **cuota personal (5 GB) sigue topada** aunque la raíz local baje a 2,39 GB → la causa real es **historial de versiones + duplicados en la nube** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB, `.git/` huérfano 23 MB). La **cuenta institucional (1 TB) ya está dada de alta y funcionando** (`fredsanc@espol.edu.ec`) y el vault ya está **copiado y verificado** en `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`.
+> - **Verificado por `opencode` (17:40):** la copia institucional es un **clon git íntegro**: `Universidad/` **1.110 MB** con **818 `.md`** (los mismos 809 + `Herramientas/` + `Diagramas/Index_01.md`), `.git/` **658 MB** (ya compactado) y `master` **0/0** con `origin`, árbol limpio. **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
+> - ⚠️ **Riesgo nuevo, medido:** hay **dos clones con el mismo `origin`** (personal e institucional) y ambos pueden pushear y divergir sin avisar. Además **12 archivos de código** (11 `.py` + `site/scripts/sync-vault.mjs`) siguen con la ruta `OneDrive\OneSyncFiles` literal, y el **fallback por defecto de `sync-vault.mjs:20`** (`path.join(USERPROFILE, "OneDrive", "OneSyncFiles", "Universidad")`) apunta a la **copia personal**: desde el clon institucional el sync leería el vault viejo en silencio. **P6 dejó de ser "antes de migrar": ya migró.**
+> - ⚠️ **Rehidratación (medido 16:20):** `site/public/assets` (**650 MB**) volvió a la copia personal a las 15:31 porque el build de restauración de `opencode-site` corrió **dentro** del clon sincronizado. Sin build corriendo no se rehidrata. La cuota local bajó a 2.445 MB y volvió a **2.647 MB**. **Nunca compilar dentro de OneDrive.**
 > - Reglas vigentes: LEEME → *"🤝 PROTOCOLO DE COMMITS Y PUSHES"* + *"🤝 ACUERDO entre sesiones"* (Acuerdos 1–4, firmados por las 4 sesiones).
 
 ---
@@ -26,26 +29,37 @@ tags: [clippings, estado, sesiones, plan, tablero]
 Bitácora: `LOG-opencode.md` · Clon: OneDrive
 
 ### Resultados
-- **3er Semestre: 0 wikilinks rotos**, **0 errores de formato** en sus 173 notas, **0 PDFs huérfanos**.
-- Vault completo: **1075 → 1039 BAD** (ningún semestre subió).
+- **3er Semestre: 0 wikilinks rotos**, **0 errores de formato** en sus **174** notas, **0 PDFs huérfanos**.
+- Vault completo: **1075 → 1039 BAD**. **Desglose real medido** (el que estaba anotado sumaba 972, no 1039): 2do Semestre **528** · 1er Semestre **471** · Preuniversitario **27** · **Herramientas 13**. Los 13 de `Herramientas` son **falsos positivos**: placeholders documentados (`[[nombre-de-archivo]]`, `[[...]]`, `[[enlace]]`) en `Herramientas/README.md` y en las 4 guías de `Herramientas/Scripts/`. → **1026 links rotos reales**.
 - `qa_links.py` corregido (`partir_alias`: `#` en nombres de archivo, `\|` en tablas).
 - 438 SVG movidos a `Diagramas/` de cada materia; 861 wikilinks rotos convertidos en texto plano; 14 tablas → callouts; 74 decks renderizados a PNG y embebidos.
-- **Speaking Exam 2** (Inglés III) agregado: nota + PDF de 7 páginas exportado con PowerPoint COM + 2 SVG mermaid.
-- Commits: `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`, `99d8c22`, `c11e2b9`, `4fd4960`, `ba68d18`, `c4a84b5`.
+- **Speaking Exam 2** (Inglés III) agregado: nota (336 líneas, 16 secciones) + PDF de 7 páginas exportado con PowerPoint COM + 2 SVG mermaid.
+- **Limpieza de cuota ejecutada** (la que autorizaba el Acuerdo 4): `site/` **1.830 → 1 MB** (todo lo grande estaba en `.gitignore`) y `.git/` **1.502 → 658 MB** con `git gc --prune=now`, tras verificar que el `gc.pid` era huérfano y que su proceso (18272) ya no existía. Raíz de OneDrive: **4.816 → 2.647 MB**.
+- **Correcciones de auditoría**: el desglose de los 1039 BAD (sumaba 972), la autoría de `47614c0` (es de `opencode-nube`, no de `opencode-onedrive`), y la lista de commits de este bloque.
+- **Copia institucional verificada por mí (17:40):** el vault en `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles` es un **clon git íntegro** — `Universidad/` 1.110 MB con **818 `.md`** (los mismos 809 + `Herramientas/` + `Diagramas/Index_01.md`), `.git/` 658 MB ya compactado, `master` 0/0 con `origin` y árbol limpio. **Producción verificada**: `speaking-practice-2` → **HTTP 200**.
+- **8 commits publicados** con el protocolo del Acuerdo 2 (push anunciado antes y después).
+- Commits: `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`, `99d8c22`, `c11e2b9`, `c4a84b5`, `4fd4960`, `ba68d18`, `ddd27a7`, `47614c0`, `ed7fecb`, `d972965`, `3cb1fdc`, `2ea2d3d`, `313d41e`, `95476d9`, `e98ca05`.
 
 ### Qué falta
 | # | Qué | Prioridad | Decide |
 |---|---|---|---|
-| 1 | Los **1039 BAD** de 1er/2do/Preuniversitario: son links a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
-| 2 | Embebir los PNG ya renderizados (Git, componentes, normalización) en `DSW/Unidad 2 y 5/Archivos/` | media | sesión |
-| 3 | Renderizar los decks que faltan: DSW U3/U4/U5-01 y BD | baja | sesión |
-| 4 | Normalizar ~970 errores de formato del 1er/2do/Preuniversitario (`ENDINGS mixed`, líneas vacías dentro de fences en callout) | baja | sesión |
-| 5 | Revisar los **32 PNG huérfanos** de `Universidad/Figuras/` (material en curso de Matemáticas Discretas) | baja | sesión (P7) |
+| 1 | **1026 links rotos reales** (no 1039) en 1er/2do/Preuniversitario: apuntan a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
+| 2 | **Embeber 56 PNG ya renderizados** que hoy no están enlazados, en 3 notas de mi zona: DSW U2 `02 - Diseño por componentes e interfaces.md` (**32**), DSW U5 `02 - Control de versiones con Git.md` (**5**), BD U2 `04 - Normalización paso a paso.md` (**19**) | **media** | sesión |
+| 3 | **Normalizar 14.106 errores de formato** en 306 de 809 notas (el "~970" anotado no cuadraba). Por tipo: **3.935** líneas vacías dentro de fence en callout (185 notas) · **126** `ENDINGS mixed` (CRLF+LF) · **15** frontmatter con líneas vacías (rompe el YAML) · **9** de tabla · 6 con fences desbalanceados · 2 header indentado. **~70% es mecánico** | media | sesión |
+| 4 | **32 PNG huérfanos** en `Universidad/Figuras/` (11,36 MB). **Verificado**: los 2 `venn-*.svg` se referencian **sin extensión** (`![[venn-2-conjuntos]]`) y **no** son huérfanos | baja | sesión (P7) |
+| 5 | **3 `.pptx` de Inglés III** sin PDF equivalente: `PPT_Guide to Prepare your Oral Presentation`, `PPT_Structure of a Problem Solving Presentation`, `PRESENTATION TEMPLATE FOR CELEX` | baja | sesión |
+| 6 | **DSW U3 y U4 no tienen material que renderizar** (0 PDF, 0 PNG; solo 4 y 3 notas sin material adjunto). El pendiente no es "renderizar decks": es **conseguir el material** | baja | usuario / sesión |
+| 7 | **2 embeds que no resuelven**: `1er Semestre/Fundamentos de Programación/Fundamentos de FP/Machine Learning.md:161` (`Matplotlib/Seaborn`) y `2do Semestre/Comunicación/Bienvenida y Syllabus Comunicación.md:63` (`../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg`) | media | sesión |
+| 8 | **P6 ya no es "antes de migrar": migró.** El **fallback por defecto de `site/scripts/sync-vault.mjs:20`** (`path.join(USERPROFILE, "OneDrive", "OneSyncFiles", "Universidad")`) apunta a la **copia personal**: desde el clon institucional el sync leería el vault viejo en silencio. Siguen **12 archivos de código** con la ruta literal (`site/scripts/sync-vault.mjs`, `Herramientas/{auditoria,detectar_vacios,estilo}.py`, `Herramientas/SVG-Pipeline/{vlib,test_single,buildcv_missing,buildcv_auto,buildcv_copy_missing,descargar-material-ccpg1001}.py`) | **alta** | sesión opencode-onedrive (su zona) / usuario |
+| 9 | **Dos clones con el mismo `origin`** (personal e institucional) pueden divergir sin avisar. Hay que decidir **cuál es el canónico** y que el otro solo lea | **alta** | **usuario** |
 
 ### Próximos pasos
-1. Esperar la decisión del usuario sobre los 1039 BAD (no tocar antes: son links a material que no existe).
-2. Embebir los PNG ya renderizados (2) y dejar los decks pendientes en cola.
-3. Cuando `opencode-onedrive` mueva los scripts de auditoría a `Herramientas/Mantenimiento/`, sumar ahí un chequeo de PDFs huérfanos.
+1. **Embeber los 56 PNG** (2): mejor relación esfuerzo/resultado y 100% dentro de mi zona → un commit con rutas exactas.
+2. **Normalizar los 14.106 errores de formato** (3) en 3 pasadas mecánicas y revisables: (a) `ENDINGS mixed`, 126 archivos, solo fin de línea; (b) frontmatter con líneas vacías, 15 archivos; (c) líneas vacías dentro de fence en callout, 3.935 → agregar el `>` de quote a la línea en blanco. **Regla que me impongo (aprendida del incidente de la tanda 1): fixer idempotente, dry-run primero, patrón exacto y nunca un regex global** — así no se vuelve a romper el LaTeX.
+3. Los links rotos (1) **no se tocan** hasta que el usuario decida.
+4. (5) y (7) son míos y no dependen de nadie. (6) depende de material que no está en el vault: lo reporto al usuario.
+5. **Coordinación — dato nuevo**: hay **3 notas sin frontmatter**, y por eso el sitio las omite **en silencio**: `1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Guías y Ejercicios (Prof. Zambrano).md` (la **única** de las 6 que anotaba `opencode-site` que sigue sin publicarse), `Universidad/Diagramas/Index_01.md` y `Universidad/Herramientas/SVGs por recrear.md` (las otras 2 no son contenido publicable). Lo decide `opencode-site`; lo dejo anotado aquí para que no se pierda.
+6. **(8) y (9) los reporto al usuario y a `opencode-onedrive`**: el fallback de `sync-vault.mjs` ya apunta a la copia equivocada y hay dos clones able de pushear. **No los toco** (`site/scripts/` es su zona) pero mido y aviso.
 
 ---
 
