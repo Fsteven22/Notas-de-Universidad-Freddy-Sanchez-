@@ -25,6 +25,7 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 |---|---|---|---|
 | Wikilinks rotos, **3er Semestre** | 40 (falsos positivos incluidos) | **0** | `qa_links.py` con root=`Universidad` |
 | Wikilinks rotos, **todo el vault** | 1075 | **1039** | idem, ningún semestre subió |
+| ↳ reparto de los 1039 | — | 2do 528 · 1er 471 · Preuniv. 27 · Herramientas 13 | desglose del reporte de `qa_links.py` |
 | Errores de formato, 3er Semestre | 1395 | **0** en 173 notas | `verificar_nota.py` |
 | PDFs huérfanos en 3er Semestre | 8 | **0** | `qa_pdfs_huerfanos.py` (123 PDFs del vault) |
 | Alias con escape doble en tablas | 10 | **0** | fixer acotado a `[[...]]` en líneas de tabla |
@@ -32,6 +33,20 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 | **`site/` (generado)** | **1.830 MB** | **1 MB** | borrado de lo gitignored + `git gc` |
 | **`.git/`** | **1.502 MB** | **658 MB** | `git gc --prune=now` |
 | Commits locales sin pushear | 8 | **0** | `git rev-list --left-right --count origin/master...HEAD` |
+
+**Corrección de este registro (27/10, quinta tanda):** la tabla de arriba decía
+"1er 469→458, 2do 508→487, Preuniversitario 27→27". Ese desglose estaba mal
+transcrito (sumaba 972, no 1039). El **reparto real** medido del reporte de
+`qa_links.py` con root=`Universidad` es **2do 528 · 1er 471 ·
+Preuniversitario 27 · Herramientas 13 = 1039**. El total y la única cifra que
+importa para esta sesión (3er Semestre = **0**) no cambian.
+
+**Los 13 de `Herramientas` no son links rotos:** son **placeholders
+documentados** en las guías (`[[nombre-de-archivo]]`, `[[enlace]]`,
+`[[nota]]`, `[[Otra Nota]]`, `[[...]]`) en `Herramientas/README.md`,
+`Herramientas/SVGs por recrear.md` y `Herramientas/Scripts/{GUIA-MD-A-PDF,
+GUIA-OFFICE-A-MARKDOWN, GUIA-PDF-A-MARKDOWN, LEEME-SCRIPTS}.md`. Son ejemplos
+de sintaxis, no referencias. **El total real de links rotos es 1026.**
 
 **Cierre verificado del sitio (re-ejecutado hoy):** `npm run sync` → **805
 notas publicadas · 3 omitidas · 2780 assets referenciados · 17 patrones / 61
@@ -224,13 +239,19 @@ conviene conocerlos porque tocan el vault): `374e833`, `5aded86`, `67ed5ac`,
    basename. **No borrarlo.**
 4. Los SVG de `Universidad/Diagramas/` ya no están ahí: cada materia tiene los
    suyos en `Diagramas/`.
-5. `verificar_nota.py` da **0 errores** en las 173 notas del 3er Semestre.
+5. `verificar_nota.py` da **0 errores** en las **174** notas del 3er Semestre
+   (173 antes del Speaking Exam 2 + esa). Re-ejecutado al cierre de la quinta
+   tanda: `notas con errores: 0 de 174`.
    En 1er/2do/Preuniversitario quedan ~970 (sobre todo `ENDINGS mixed` y
    líneas vacías dentro de fences en callout).
 6. El `image.png` adjunto con la lista de errores **no existe en disco**. El
    catálogo real de los 7 tipos de error está en
    `Universidad/Herramientas/README.md` y en `detect_fuera_callouts.py`.
-7. **Ojo con los merges:** un merge sobrescribió trabajo sin commitear de
+7. **Los 1039 BAD se reparten así:** 2do Semestre 528 · 1er Semestre 471 ·
+   Preuniversitario 27 · **Herramientas 13 (falsos positivos: son placeholders
+   como `[[nombre-de-archivo]]` y `[[...]]` en las guías, no links rotos)**.
+   El total real de links rotos es **1026**, y ninguno es del 3er Semestre.
+8. **Ojo con los merges:** un merge sobrescribió trabajo sin commitear de
    esta sesión **dos veces** (el `qa_links.py` y las notas con el escape
    doble se perdieron y hubo que reaplicarlos). **Siempre commitear antes de
    que otro agente mergee.**
