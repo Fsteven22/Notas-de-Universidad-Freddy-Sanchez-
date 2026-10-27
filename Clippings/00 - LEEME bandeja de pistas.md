@@ -279,6 +279,14 @@ Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** 
    y normalización; renderizar DSW U3/U4/U5-01 y BD; decidir los 1039 BAD
    restantes (son links a material que nunca existió, requiere criterio del
    usuario).
+6. **Segunda tanda (commit `4fd4960`):** el Speaking Exam 2 entró como
+   `Speaking Practice # 2.md` en `Ingles III/Unit 1 - Can We Talk/Recursos
+   adicionales/`, con la misma estructura del #1, 2 diagramas nuevos
+   (`en3-u1-12-*`) y el deck exportado a PDF. **Patrón reusable:** los `.pptx`
+   no se embarcan en el sitio; se exportan a PDF con **PowerPoint por COM**
+   (`$pres.SaveAs($ruta, 32)`) y el PDF va a `Material de clase/`. El `.pptx`
+   queda como editable local. Verificado: sync 806 publicadas / 3 omitidas,
+   build 833 páginas, 0 links rotos en el 3er Semestre.
 
 <!-- Avisos de otros agentes: escribí debajo de esta línea -->
 

@@ -262,14 +262,82 @@ integra a `master`.
 
 ---
 
-## 10. Estado al cierre
+## 10. Segunda tanda: Speaking Exam 2 (Inglés III)
+
+> [!info] Tarea del usuario
+> "Puse una nueva nota, puedes colocarla junto a la otra speaking exam de
+> inglés III y formularla con la estructura que tiene el otro".
+
+### Qué se hizo
+
+| Qué | Detalle |
+|---|---|
+| Nota | `Universidad/3er Semestre/Ingles III/Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 2.md` (336 líneas) |
+| Tema | *Living Without a Phone for One Week* (B1, 7 slides, ~3:30) |
+| Estructura | La de `Speaking Practice # 1`: 16 secciones, de "Introducción" a "Referencias" |
+| Diagramas | `en3-u1-12-01-graph.svg` y `en3-u1-12-02-mind.svg`, generados con mermaid (`look: neo`) |
+| Presentación | `Living Without a Phone Freddy Sánchez.pdf` (7 páginas, 415 KB) |
+| Editable | `Living_Without_a_Phone.pptx` (queda local, no se publica) |
+| Índices | `00 - Índice Unit 1 (syllabus Different Cultures).md` y `Recursos Unidad 0.md` |
+
+### La decisión del PDF (la pidió el usuario)
+
+El `.pptx` **no se puede embeber en el sitio**: el LEEME de la unidad ya lo
+decía ("PowerPoint no se embarca: exportar a PDF"). Se exportó con **PowerPoint
+por COM** (`Presentation.SaveAs(path, 32)` = PDF) porque en esta máquina no hay
+LibreOffice:
+
+```powershell
+$pp = New-Object -ComObject PowerPoint.Application
+$pres = $pp.Presentations.Open($src, $true, $false, $false)
+$pres.SaveAs($out, 32)   # 32 = ppSaveAsPDF
+```
+
+Verificado con PyMuPDF: **7 páginas**, y el render se ve bien (el deck usa el
+template de ESPOL con los 3 efectos en columnas: Anxiety / Academic / Social).
+
+**El PDF va en `Material de clase/`** junto al deck de flooding; el `.pptx`
+queda en la raíz de la unidad como editable. La nota avisa de que hay que
+reexportar el PDF si se cambia una slide.
+
+### Verificaciones
+
+- `verificar_nota.py` → **0 errores** en las 2 notas tocadas.
+- `qa_links.py` (root=`Universidad`) → vault **1039 BAD** (sin cambio) y
+  **0 en el 3er Semestre**.
+- `npm run sync` → **806 publicadas** (+1), 3 omitidas, 17 patrones / 61
+  archivos. El PDF nuevo **sí** se copia a `public/assets/`; los `.pptx`
+  publicados siguen en **0**.
+- `npm run build` → **833 páginas** (+1), sin errores. La nota aparece en
+  `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/`
+  y el índice de la unidad la enlaza.
+- En el HTML el PDF resuelve con el visor PDF.js y los 2 SVG como assets.
+
+**Commit:** `4fd4960 feat(ingles III): agregar el guion del Speaking Exam 2 con su presentacion`
+
+### Nota para los demás agentes
+
+- **El patrón "nota nueva + deck" está resuelto**: se importa el `.pptx`, se
+  exporta a PDF con PowerPoint COM, el PDF va a `Material de clase/` y la nota
+  lo embebe. Si piden otro deck, el mismo camino.
+- `mmdc` (mermaid-cli 12.0.0) está instalado global y funciona con
+  `mmdc -i x.mmd -o x.svg -b white`. Para que el graph quede **vertical** hay
+  que usar `subgraph` + `direction TB`; sin eso se renderiza a 2280 px de
+  ancho y se ve mal en el sitio.
+- El `.mmd` de los diagramas de Inglés **no está en el vault** (el pipeline
+  solo guarda los de Cálculo Vectorial). Los SVG sí están versionados.
+
+---
+
+## 11. Estado al cierre
 
 - `master` al día con `origin/master` (merge `8fedc9f` + `544ba11` + `b5c5669`).
 - Working tree limpio, salvo lo que pertenece a otras sesiones
-  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`, `Recursos adicionales/`).
+  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`, `Recursos adicionales/`)
+  y `Notas de hoy.md`, que es del usuario.
 - 3er Semestre: **0 wikilinks rotos**, **0 errores de formato**, **0 PDFs
   huérfanos**.
-- Sitio: **805 notas publicadas**, 3 omitidas, 832 páginas, build sin errores.
+- Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores.
 
 ---
-**Tags:** #clippings #log #opencode #vault #calidad #wikilinks
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii
