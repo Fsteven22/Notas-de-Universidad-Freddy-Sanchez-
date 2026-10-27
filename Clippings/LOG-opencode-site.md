@@ -94,5 +94,20 @@ A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccio
 - Los nombres de archivo con á/é en la ruta rompen `Start-Process -ArgumentList`; usar `C:\Users\STEVEN~1\...`.
 - El `<style>` de un componente Astro es *scoped*: lo que el JS inyecta en el DOM no lo toma, hay que moverlo a `is:global`.
 
+## 2026-10-27 (tarde) — Merge con la sesión OneDrive + aviso de material no publicado
+
+- **Merge limpio:** la sesión OneDrive pusheó `8fedc9f`/`b5c5669`; hice `git merge origin/master` y quedó **sin conflictos** (historial lineal, sus commits ya quedaban como ancestros).
+  - Antes del merge: `git checkout -- Universidad` para descartar los 17 `.md` que aparecían modificados **solo por CRLF** (verificado con `git diff --ignore-cr-at-eol` vacío). Es el mismo ruido que bloqueaba los merges de la otra sesión.
+  - Commit propio integrado: `66c9eca` (favicon.ico + plugin del aviso). `origin/master` = `f69ed87`.
+- **Build integrado:** 831 páginas (antes 828), exit 0, 0 material excluido filtrado, marca y redirect intactos.
+- **Nuevo: `site/src/lib/rehype-asset-omitido.mjs`** (registrado en `site/astro.config.mjs:35`).
+  - El sync deja marcadores `<!-- nx:asset-omitido NOMBRE -->` / `<!-- nx:link-omitido NOMBRE -->` cuando un asset no se publica; hasta ahora **desaparecían en silencio** y el lector pensaba que la nota estaba incompleta.
+  - El plugin los convierte en un aviso visible (borde dorado punteado, título en mayúsculas) + estilos en `site/src/styles/content.css`.
+  - Detalle técnico: el marcador llega como nodo hast **`raw`** cuando está inline dentro de una lista/cita (`> - <!-- ... -->`), no como `comment`; el plugin cubre los dos casos.
+- **Producción verificada:** el aviso se ve en las 2 notas con material no publicado (Inglés II C1-C2 e Inglés III Unidad 0); los diagramas de Cálculo que antes salían como omitidos **ahora cargan** (el refactor de `Diagramas/` de la otra sesión los arregló), así que los avisos bajaron de 6 a 2. 0 errores de consola.
+- **`favicon.ico` real:** `site/public/favicon.ico` (16/32/48 px) + `<link rel="icon" type="image/x-icon" sizes="32x32">` en `Base.astro`. En producción responde **200** `image/vnd.microsoft.icon` (antes solo existía `favicon.svg`).
+- **Verificado que NO se rompió nada:** redirect 308 del dominio (`site/vercel.json`), sección 8 del RUNBOOK, `og:image`, logo, exclusiones (Cambridge/Escucha Activa/UML/Empower/wmv → 0 archivos filtrados).
+- **Pendiente (no bloquea):** el sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus\` sigue con la versión verde y su `PLAN-PUBLICACION.md` dice "baseline 798"; y el dominio `neonotes.vercel.app` necesita el paso manual del panel de Vercel (CLI sin token válido, `gh` no instalado).
+
 ---
 **Tags:** #clippings #log #opencode-site
