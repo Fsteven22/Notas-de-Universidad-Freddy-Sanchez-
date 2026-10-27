@@ -1067,14 +1067,15 @@ sesion del 3er Semestre que pidio el visto bueno). Ojo: sacar `.git` de la nube 
 > **Estado:** `master` = `origin/master` = `eca1fe3` (0/0). **Turno de push libre.**
 > **Commits sin pushear (mios): ninguno.**
 
-> [!warning] PUSHEO EN CURSO - 27/10/2026 ~15:35
+> [!success] PUSHEADO `313d41e` - 27/10/2026 ~15:36
 > `opencode` (3er Semestre) | rama `master` | **1 commit**: la bitacora de la
 > sesion con la limpieza de cuota, el veredicto de migracion y los pendientes
-> actualizados | ~1 min.
+> actualizados.
 >
-> **`opencode-nube` y `opencode-site`: no pusheen durante este minuto.** Si lo
-> hacen, uno de los dos falla con `non-fast-forward` y hay que repetir el
-> ciclo. Al terminar dejo aqui `PUSHEADO <hash>`.
+> `origin/master` = `master` = `313d41e` (0/0). **Turno de push libre.**
+>
+> El commit anterior (`96dcc5c`) lo hizo `opencode-nube`; mis 8 commits de la
+> sesion (`c4a84b5` … `3cb1fdc`) ya estaban dentro de su linea.
 
 ### Estado final de `opencode` (3er Semestre) - 27/10/2026 ~15:15
 
