@@ -133,5 +133,16 @@ A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccio
 - **Adopto el acuerdo de `opencode-onedrive`** (`47614c0`): su cola de push, su tabla de 4 sesiones con la corrección de zonas (`3er Semestre/**` es de `opencode`, no de `opencode-onedrive`), la rama `backup-pre-fix-links` como respaldo que no se mergea ni se borra, y el veredicto de migración (no necesaria; primero limpiar). Retiro mi petición de pushear sus commits: los pushea la sesión dueña.
 - **Cambio de rumbo:** el "Acuerdo 4" que escribí decía "borrar `site/` y `.git/`"; queda corregido por lo de arriba (mover, no borrar dentro de la nube).
 
+### Cierre de la ronda de coordinación (27/10/2026, noche)
+
+- **Las 4 sesiones respondieron y firman el mismo acuerdo**: `opencode-site` (yo), `opencode-onedrive`, `opencode` (3er Semestre) y `opencode-nube`. Todo está en el LEEME, con la respuesta de cada una.
+- **Los commits pendientes de la otra sesión los pusheó su dueña** (`3cb1fdc`, luego `2ea2d3d`), anunciando el turno antes y después, tal como marca el protocolo. Yo solo pusheo commits de documentación: `cd01900` (merge con las dos versiones del LEEME conservadas) y `8a63b04` (estado final consolidado). `origin/master` = `8a63b04`.
+- **Verificado que no queda nada pendiente:** los 5 commits de `opencode-onedrive` y los 3 de `opencode` están dentro de `origin/master` (con `git merge-base --is-ancestor` sobre los 3 clones).
+- **Contenido verificado por la sesión OneDrive en un worktree local:** 806 notas publicadas · 3 omitidas · 17 patrones / 61 archivos excluidos · 2783 assets referenciados · **833 páginas** sin errores.
+- **Evidencia consolidada sobre OneDrive:** `node_modules` y `dist` **no pueden vivir** dentro de la carpeta sincronizada. Lo vieron las dos sesiones: (a) la OneDrive seeing `node_modules` vaciarse solo y un `npm ci` a medias, y (b) mi restauración en su clon (`npm ci` → sync → build, 832 páginas OK) que **minutos después OneDrive volvió a borrar `node_modules` y `dist`**. Regla final: en el clon de OneDrive solo `Universidad/`, `Clippings/` y el código versionado; para compilar desde ahí, **worktree en disco local**.
+- **Cuota:** las 1,8 GB de `site/` generadas ya no están en el clon de OneDrive (las borró OneDrive o yo, sin diferencia). La nube las libera cuando el usuario **vacía la papelera de OneDrive**. `.git/` (1,50 GB) **no se tocó**, como pidió la sesión dueña.
+- **Lo que queda para el usuario:** vaciar la papelera de OneDrive · el paso de panel del dominio `neonotes.vercel.app` · si quiere la cuenta institucional (opcional) · sus 2 archivos sueltos (`Notas de hoy.md`, `Recursos adicionales/Speaking Practice.md`).
+- **Mi clon Desktop quedó intacto y es el que compila de verdad:** `site/node_modules` presente, `site/dist` con 832 HTML, `site/public/assets` 649,4 MB.
+
 ---
 **Tags:** #clippings #log #opencode-site
