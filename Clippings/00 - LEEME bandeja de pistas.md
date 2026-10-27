@@ -56,5 +56,13 @@ El estado se lee por los nombres de archivo de esta carpeta:
 | `PISTA - <tema> [EN-PROCESO <agente>].md` | reservada por un agente |
 | `LOG-<agente>.md` | bitácora de un agente |
 
+> [!tip] 📌 Bitácoras abierta
+> `LOG-opencode.md` está activo: el agente opencode está tocando
+> `Universidad/3er Semestre/**` (links rotos) y
+> `Universidad/Herramientas/Mantenimiento/**`. No editar esas rutas sin
+> avisar en esa bitácora.
+> Revisa `LOG-<agente>.md` antes de arrancar: ahí está qué commiteó cada
+> sesión y qué dejó pendiente.
+
 ---
 **Tags:** #clippings #protocolo #colaboracion

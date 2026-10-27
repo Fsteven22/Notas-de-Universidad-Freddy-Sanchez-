@@ -6,7 +6,7 @@
 <title>Visor PDF</title>
 <style>
   :root { color-scheme: dark; }
-  html, body { margin: 0; height: 100%; background: #0b0c10; color: #e5e7eb;
+  html, body { margin: 0; min-height: 100%; background: #0b0c10; color: #e5e7eb;
     font-family: ui-monospace, "Cascadia Code", "JetBrains Mono", monospace; font-size: 13px; }
   .bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px;
     align-items: center; padding: 8px 12px; background: #111318; border-bottom: 1px solid #222; }
@@ -27,8 +27,7 @@
   .log.ok { border-left-color: #4ade80; color: #86efac; background: #0a2a0a; }
   #pages { padding: 12px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
   .page { width: 100%; }
-  canvas { background: #fff; border: 1px solid #ddd; max-width: 100%; display: block; margin: 4px 0; }
-  #sentinel { height: 2px; width: 100%; }
+  canvas { background: #fff; border: 1px solid #ddd; max-width: 100%; height: auto; display: block; margin: 4px 0; }
   #end { padding: 10px 12px 22px; color: #64748b; font-size: 0.78rem; }
   #fallback { margin: 12px; padding: 12px; border: 1px solid #f59f00; border-radius: 8px; background: #2a1a0a; }
   #fallback a { color: #fbbf24; }
@@ -45,7 +44,6 @@
 </div>
 <div id="log" hidden></div>
 <div id="pages"></div>
-<div id="sentinel"></div>
 <div id="end" hidden>Fin del documento.</div>
 <div id="fallback" hidden>
   <strong>No se pudo renderizar el PDF dentro de la página.</strong><br>
@@ -56,7 +54,10 @@
 (function () {
   var BLOCK = 4;
   var params = new URLSearchParams(location.search.slice(1));
-  var file = params.get("file") || "";
+  // Solo se admiten PDFs del propio sitio (/assets/...). Sin esto, un enlace
+  // con ?file=javascript:... meteria ese esquema en los href de los botones.
+  var raw = params.get("file") || "";
+  var file = raw.indexOf("/assets/") === 0 && !/[\u0000-\u001f]/.test(raw) ? raw : "";
   var pages = document.getElementById("pages");
   var fileInfo = document.getElementById("fileInfo");
   var counter = document.getElementById("counter");
@@ -64,7 +65,6 @@
   var dl = document.getElementById("dl");
   var fallback = document.getElementById("fallback");
   var fbLink = document.getElementById("fbLink");
-  var sentinel = document.getElementById("sentinel");
   var endNote = document.getElementById("end");
   var logBox = document.getElementById("log");
 
@@ -82,10 +82,32 @@
     fbLink.href = file;
   }
 
+  // El padre ajusta el alto del iframe a este contenido: asi el visor ocupa
+  // todo el espacio vertical que necesita y la pagina mantiene un solo scroll.
+  function reportHeight() {
+    var h = Math.max(
+      document.body ? document.body.scrollHeight : 0,
+      document.documentElement ? document.documentElement.scrollHeight : 0
+    );
+    try { parent.postMessage({ type: "nx-pdf-height", h: h }, "*"); } catch (e) {}
+  }
+
+  // El padre pide mas paginas cuando su sentinel entra en pantalla.
+  var requestMore = function () {};
+  window.addEventListener("message", function (e) {
+    if (e.origin !== location.origin) return;
+    var d = e.data || {};
+    if (d.type === "nx-pdf-more") requestMore();
+  });
+
   window.addEventListener("error", function (e) { err("window error: " + (e.message || e)); });
   window.addEventListener("unhandledrejection", function (e) { err("unhandled rejection: " + (e.reason || e)); });
 
-  if (!file) { err("No se especifico archivo (?file=)"); return; }
+  if (!file) {
+    err("Archivo no permitido. El visor solo abre PDFs de /assets/.");
+    fileInfo.textContent = "Archivo no permitido";
+    return;
+  }
   var name = file.split("/").pop();
   try { name = decodeURIComponent(name); } catch (e) {}
   fileInfo.textContent = name;
@@ -96,9 +118,7 @@
     err("pdf.js no se cargo (window.pdfjsLib undefined). Verifica /pdfjs/build/pdf.js");
     return;
   }
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.js";
-
-  log("Cargando PDF: " + file);
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.min.js";
 
   pdfjsLib.getDocument(file).promise.then(function (pdf) {
     var total = pdf.numPages;
@@ -106,15 +126,16 @@
     var next = 1;
     var busy = false;
 
-    fileInfo.textContent = name + " · " + total + " pag.";
-    counter.textContent = "0 / " + total;
+    fileInfo.textContent = name + " · " + total + " p\u00e1gs.";
+    counter.textContent = "cargando…";
+    counter.title = "p\u00e1ginas renderizadas";
 
     function renderPage(n) {
       var wrapper = document.createElement("div");
       wrapper.className = "page";
       var label = document.createElement("div");
       label.className = "pagenum";
-      label.textContent = "PAGINA " + n + " / " + total;
+      label.textContent = "P\u00c1GINA " + n + " de " + total;
       var c = document.createElement("canvas");
       wrapper.appendChild(label);
       wrapper.appendChild(c);
@@ -124,57 +145,50 @@
         c.width = vp.width;
         c.height = vp.height;
         c.style.maxWidth = "100%";
-        c.style.maxHeight = "78vh";
         return page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
       }).then(function () {
         rendered++;
-        counter.textContent = rendered + " / " + total;
+        counter.textContent = rendered + " de " + total + " cargadas";
+        reportHeight();
       }).catch(function (e) {
-        err("Render pagina " + n + ": " + (e && e.message ? e.message : e));
+        err("Render p\u00e1gina " + n + ": " + (e && e.message ? e.message : e));
       });
     }
 
     function updateControls() {
       var pending = next <= total;
+      var lote = Math.min(BLOCK, total - rendered);
       moreBtn.hidden = !pending;
+      moreBtn.textContent = pending
+        ? (lote === 1 ? "Cargar 1 p\u00e1gina m\u00e1s" : "Cargar " + lote + " p\u00e1ginas m\u00e1s")
+        : "Cargar m\u00e1s p\u00e1ginas";
       endNote.hidden = pending;
     }
 
     function renderBlock() {
-      if (busy || next > total) { updateControls(); return Promise.resolve(); }
+      if (busy || next > total) { updateControls(); reportHeight(); return Promise.resolve(); }
       busy = true;
       var jobs = [];
       while (jobs.length < BLOCK && next <= total) { jobs.push(renderPage(next)); next++; }
       return Promise.all(jobs).then(function () {
         busy = false;
         updateControls();
+        reportHeight();
       });
     }
 
-    moreBtn.addEventListener("click", function () {
-      renderBlock().then(function () { if (next <= total) observe(); });
-    });
+    moreBtn.addEventListener("click", function () { renderBlock(); });
 
-    var io = null;
-    function observe() {
-      if (!io) {
-        io = new IntersectionObserver(function (entries) {
-          for (var i = 0; i < entries.length; i++) {
-            if (!entries[i].isIntersecting) continue;
-            io.unobserve(sentinel);
-            renderBlock().then(function () { if (next <= total) io.observe(sentinel); });
-            break;
-          }
-        }, { rootMargin: "600px 0px" });
-      }
-      io.observe(sentinel);
+    requestMore = function () { renderBlock(); };
+
+    // El alto del canvas depende del ancho (max-width:100%), no del alto del
+    // iframe: si el iframe cambia de ancho hay que volver a reportar.
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(function () { reportHeight(); }).observe(pages);
     }
 
-    log("PDF cargado: " + total + " pagina(s)", "ok");
     updateControls();
-    renderBlock().then(function () {
-      if (next <= total) observe();
-    });
+    renderBlock();
   }).catch(function (e) {
     err("getDocument: " + (e && e.message ? e.message : e));
   });

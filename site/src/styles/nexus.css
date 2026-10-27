@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ─── Tokens NexusFS ─────────────────────────────────────── */
+/* ─── Tokens Neonotes ─────────────────────────────────────── */
 @theme {
   --color-nexus-green: #00ff88;
   --color-nexus-blue: #00aaff;
@@ -19,7 +19,22 @@
   --glass-bg: rgba(255, 255, 255, 0.025);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-bg-hover: rgba(255, 255, 255, 0.05);
-  --nexus-glow: 0 0 24px rgba(0, 255, 136, 0.25);
+  --brand-grad: linear-gradient(90deg, #aa66ff, #00aaff);
+  --nexus-glow: 0 0 24px rgba(120, 140, 255, 0.28);
+}
+
+/* Texto de marca con degradado violeta -> azul */
+.nx-brand-text {
+  color: var(--color-nexus-purple);
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .nx-brand-text,
+  .nx-section-title {
+    background-image: var(--brand-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 /* ─── Base ───────────────────────────────────────────────── */
@@ -37,7 +52,7 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 255, 136, 0.25);
+  background: rgba(0, 170, 255, 0.28);
   color: #fff;
 }
 
@@ -50,11 +65,11 @@ body {
   background: #05070d;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 136, 0.2);
+  background: rgba(0, 170, 255, 0.22);
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 255, 136, 0.4);
+  background: rgba(0, 170, 255, 0.42);
 }
 
 /* ─── Explorador lateral ─────────────────────────────────── */
@@ -99,13 +114,13 @@ body {
 }
 .nx-explorer details[open] > summary::before {
   transform: rotate(90deg);
-  color: var(--color-nexus-green);
+  color: var(--color-nexus-blue);
 }
 .nx-explorer summary::-webkit-details-marker {
   display: none;
 }
 .nx-explorer summary:hover {
-  color: var(--color-nexus-green);
+  color: var(--color-nexus-blue);
   background: rgba(255, 255, 255, 0.04);
 }
 .nx-explorer .nx-ex-sem {
@@ -140,9 +155,9 @@ body {
   background: rgba(255, 255, 255, 0.05);
 }
 .nx-explorer .nx-ex-active {
-  color: var(--color-nexus-green) !important;
-  background: rgba(0, 255, 136, 0.08) !important;
-  border-left: 2px solid var(--color-nexus-green);
+  color: var(--color-nexus-blue) !important;
+  background: rgba(0, 170, 255, 0.08) !important;
+  border-left: 2px solid var(--color-nexus-blue);
 }
 
 /* layout con explorador */
@@ -172,15 +187,15 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--color-nexus-green);
-  opacity: 0.85;
+  color: var(--color-nexus-purple);
+  opacity: 0.9;
 }
 .nx-section-title::before {
   content: "// ";
   opacity: 0.5;
 }
 
-/* Card glass con glow verde al hover */
+/* Card glass con glow violeta al hover */
 .nx-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -193,16 +208,16 @@ body {
     box-shadow 0.25s;
 }
 .nx-card:hover {
-  border-color: rgba(0, 255, 136, 0.45);
+  border-color: rgba(120, 140, 255, 0.45);
   background: var(--glass-bg-hover);
   box-shadow: var(--nexus-glow);
   transform: translateY(-3px);
 }
 
-/* Barra neón divisoria (BARRA_NEON del bingo) */
+/* Barra divisoria de marca */
 .nx-bar {
   height: 2px;
-  background: linear-gradient(90deg, #00aaff, #00ff88);
+  background: var(--brand-grad);
   border-radius: 2px;
 }
 
@@ -220,12 +235,12 @@ body {
   cursor: pointer;
 }
 .nx-btn-primary {
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.14), rgba(0, 255, 136, 0.05));
-  border: 1px solid rgba(0, 255, 136, 0.4);
-  color: var(--color-nexus-green);
+  background: linear-gradient(135deg, rgba(170, 102, 255, 0.18), rgba(0, 170, 255, 0.07));
+  border: 1px solid rgba(170, 102, 255, 0.5);
+  color: #c9b6ff;
 }
 .nx-btn-primary:hover {
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.25), rgba(0, 255, 136, 0.1));
+  background: linear-gradient(135deg, rgba(170, 102, 255, 0.3), rgba(0, 170, 255, 0.14));
   box-shadow: var(--nexus-glow);
 }
 .nx-btn-ghost {
@@ -245,18 +260,18 @@ body {
   letter-spacing: 0.1em;
   padding: 0.25rem 0.6rem;
   border-radius: 9999px;
-  border: 1px solid rgba(0, 255, 136, 0.3);
-  color: var(--color-nexus-green);
-  background: rgba(0, 255, 136, 0.07);
+  border: 1px solid rgba(170, 102, 255, 0.35);
+  color: var(--color-nexus-purple);
+  background: rgba(170, 102, 255, 0.08);
 }
 
-/* Aura verde decorativa del hero */
+/* Aura violeta decorativa del hero */
 .nx-aura {
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
   pointer-events: none;
-  background: radial-gradient(closest-side, rgba(0, 255, 136, 0.16), transparent);
+  background: radial-gradient(closest-side, rgba(140, 120, 255, 0.18), transparent);
 }
 
 /* Animación de entrada */

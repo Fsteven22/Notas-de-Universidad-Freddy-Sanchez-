@@ -140,6 +140,14 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
         <script>
           let nxNoteAC: AbortController | undefined;
 
+          type NxPdfFrame = HTMLIFrameElement;
+
+          function pdfFrameMap() {
+            const w = window as any;
+            if (!w.__nxPdfFrames) w.__nxPdfFrames = new Map<Window, NxPdfFrame>();
+            return w.__nxPdfFrames as Map<Window, NxPdfFrame>;
+          }
+
           function mountPdf(card: HTMLElement) {
             if (card.dataset.nxPdfMounted) return;
             card.dataset.nxPdfMounted = "1";
@@ -154,6 +162,13 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
             frame.setAttribute("allowfullscreen", "");
             frame.setAttribute("loading", "lazy");
             slot.appendChild(frame);
+            pdfFrameMap().set(frame.contentWindow, frame);
+
+            const more = document.createElement("div");
+            more.className = "nx-pdf-more";
+            slot.after(more);
+            moreObserver().observe(more);
+
             const btn = card.querySelector("[data-nx-pdf-open]");
             if (btn instanceof HTMLButtonElement) {
               btn.textContent = "Abierto";
@@ -161,7 +176,43 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
             }
           }
 
+          function moreObserver() {
+            const w = window as any;
+            if (!w.__nxPdfMoreObserver) {
+              w.__nxPdfMoreObserver = new IntersectionObserver(
+                (entries) => {
+                  for (const entry of entries) {
+                    if (!entry.isIntersecting) continue;
+                    const card = (entry.target as HTMLElement).closest<HTMLElement>(".nx-pdf");
+                    const frame = card?.querySelector<NxPdfFrame>("iframe.nx-pdf-frame");
+                    if (frame?.contentWindow) {
+                      frame.contentWindow.postMessage({ type: "nx-pdf-more" }, location.origin);
+                    }
+                  }
+                },
+                { rootMargin: "300px 0px" }
+              );
+            }
+            return w.__nxPdfMoreObserver as IntersectionObserver;
+          }
+
+          function bindPdfMessages() {
+            const w = window as any;
+            if (w.__nxPdfMsgBound) return;
+            w.__nxPdfMsgBound = true;
+            window.addEventListener("message", (e) => {
+              if (e.origin !== location.origin) return;
+              const d = e.data || {};
+              if (d.type !== "nx-pdf-height") return;
+              const frame = pdfFrameMap().get(e.source as Window);
+              if (!frame) return;
+              const h = Math.max(420, Math.round(Number(d.h) || 0));
+              frame.style.height = `${h}px`;
+            });
+          }
+
           function initPdfLazy() {
+            bindPdfMessages();
             const cards = Array.from(document.querySelectorAll<HTMLElement>(".nx-pdf[data-nx-pdf-src]"));
             if (!cards.length) return;
             const w = window as any;

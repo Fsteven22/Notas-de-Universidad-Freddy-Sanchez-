@@ -10,7 +10,7 @@ const coloresSem = {
   "preuniversitario": { c: "var(--color-nexus-purple)", t: "Reconstrucción" },
   "1er-semestre": { c: "var(--color-nexus-blue)", t: "Completado" },
   "2do-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
-  "3er-semestre": { c: "var(--color-nexus-gold)", t: "En curso" },
+  "3er-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
 };
 const sems = vault.semestres.filter((s) => s.id !== "raiz");
 const totalNotas = sems.reduce((n, s) => n + s.materias.reduce((m, x) => m + x.total, 0), 0);
@@ -30,9 +30,9 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
 
   <header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
     <div class="flex items-center gap-3">
-      <div class="flex size-10 items-center justify-center rounded-xl border border-[rgba(0,255,136,0.35)] bg-[rgba(0,255,136,0.06)] font-mono text-lg text-[var(--color-nexus-green)]">N</div>
+      <img src="/logo.svg" alt="Neonotes" width="40" height="40" class="size-10 rounded-xl" />
       <div>
-        <p class="font-semibold text-white">Neonotes</p>
+        <p class="nx-brand-text font-semibold">Neonotes</p>
         <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">REPOSITORIO PERSONAL · ESPOL</p>
       </div>
     </div>
@@ -47,7 +47,7 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
       <span class="nx-badge">INGENIERÍA COMPUTACIONAL · ESPOL</span>
       <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
         Mis apuntes de carrera{" "}
-        <span class="text-[var(--color-nexus-green)]">en un solo lugar.</span>
+        <span class="nx-brand-text">en un solo lugar.</span>
       </h1>
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[#e5e7eb]">
         Apuntes, diagramas, talleres y material de estudio organizados por semestre.
@@ -68,15 +68,15 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
   <section class="mx-auto max-w-6xl px-6 pb-4">
     <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
       {[
-        { n: totalNotas, l: "Notas", c: "green" },
+        { n: totalNotas, l: "Notas", c: "violet" },
         { n: totalMaterias, l: "Materias", c: "blue" },
-        { n: totalPdf, l: "PDFs", c: "purple" },
+        { n: totalPdf, l: "PDFs", c: "cyan" },
         { n: sems.length, l: "Semestres", c: "gold" },
       ].map((s) => (
         <div class={`nx-card !py-5 text-center border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]`}>
           <p
             class={`font-mono text-3xl font-bold tracking-tight ${
-              { green: "text-[var(--color-nexus-green)]", blue: "text-[var(--color-nexus-blue)]", purple: "text-[var(--color-nexus-purple)]", gold: "text-[var(--color-nexus-gold)]" }[s.c]
+              { violet: "text-[var(--color-nexus-purple)]", blue: "text-[var(--color-nexus-blue)]", cyan: "text-[var(--color-nexus-cyan)]", gold: "text-[var(--color-nexus-gold)]" }[s.c]
             }`}>{s.n}</p>
           <p class="mt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)] uppercase">{s.l}</p>
         </div>
@@ -141,8 +141,8 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
         vault.recent.filter((r) => r.sem !== "raiz").map((r) => (
           <a href={r.url} class="nx-card group block">
             <div class="flex items-center justify-between">
-              <p class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-green)]">{r.title}</p>
-              <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-green)]">→</span>
+              <p class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-blue)]">{r.title}</p>
+              <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-blue)]">→</span>
             </div>
             <p class="mt-3 font-mono text-[11px] text-[var(--color-nexus-muted)]">
               <span class="text-[var(--color-nexus-blue)]">{r.matTitle}</span> · {fecha(r.mtime)}

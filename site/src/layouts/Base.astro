@@ -25,10 +25,19 @@ const canonical = new URL(Astro.url.pathname, SITE).href;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Neonotes" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={`${SITE}/og-neonotes.png`} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Neonotes · apuntes de Ingeniería Computacional ESPOL" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE}/og-neonotes.png`} />
+    <meta name="twitter:image:alt" content="Neonotes · apuntes de Ingeniería Computacional ESPOL" />
+    <meta name="theme-color" content="#05070d" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>{title}</title>
     <ClientRouter />
   </head>
