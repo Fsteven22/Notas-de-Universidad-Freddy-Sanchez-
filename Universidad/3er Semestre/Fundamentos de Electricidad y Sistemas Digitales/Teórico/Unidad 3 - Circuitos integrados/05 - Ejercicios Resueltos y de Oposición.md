@@ -30,7 +30,7 @@ dg-publish: true
 >
 > |Paso|Acción|Herramienta|
 > |---|---|---|
-> |**1**|Verifica realimentación negativa $\Rightarrow$ zona lineal|Si no hay, es comparador (ver [[04 - Integrador, Derivador y Circuitos No Lineales#⚖️ Comparadores — OPAM en lazo abierto\\|04]])|
+> |**1**|Verifica realimentación negativa $\Rightarrow$ zona lineal|Si no hay, es comparador (ver [[04 - Integrador, Derivador y Circuitos No Lineales#⚖️ Comparadores — OPAM en lazo abierto\\\|04]])|
 > |**2**|Aplica $V_+\approx V_-$ (cortocircuito virtual) y $I\approx 0$|Fija el potencial del nodo inversor|
 > |**3**|Escribe KCL en el/los nodos con incógnita (nodo inversor, nodo $X$, nodo $C$)|$\sum i_{salientes}=0$|
 > |**4**|Sustituye corrientes por $(V_a-V_b)/R$ y despeja $V_o$, $V_C$, $R_{in}$ o $I_L$|Álgebra nodal|

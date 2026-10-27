@@ -1,6 +1,8 @@
 ---
 dg-publish: true
+tags: [MATG1051, unidad3, permutaciones, combinaciones]
 ---
+
 # 🔀 Permutaciones y Combinaciones
 
 ## 🎯 Introducción
@@ -278,10 +280,11 @@ dg-publish: true
 
 ## 📊 Tabla Resumen General
 
-||**Sin repetición**|**Con repetición**|
-|---|---|---|
-|**Selección ordenada** (permutación)|$\dfrac{n!}{(n-r)!}$|$\dfrac{n!}{k_1!\cdots k_r!}$|
-|**Selección no ordenada** (combinación)|$\dbinom{n}{r}$|$\dbinom{n+r-1}{r}$|
+> [!note] 📊 Resumen general
+> | | **Sin repetición** | **Con repetición** |
+> |---|---|---|
+> | **Selección ordenada** (permutación) | $\dfrac{n!}{(n-r)!}$ | $\dfrac{n!}{k_1!\cdots k_r!}$ |
+> | **Selección no ordenada** (combinación) | $\dbinom{n}{r}$ | $\dbinom{n+r-1}{r}$ |
 
 ---
 

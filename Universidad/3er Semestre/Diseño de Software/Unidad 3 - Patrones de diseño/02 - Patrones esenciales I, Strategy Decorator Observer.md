@@ -42,14 +42,14 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > ```java
 > // ✅ STRATEGY: cada algoritmo encapsulado + intercambiable
 > interface EstrategiaPago { void pagar(double monto); }
->
+> // ---
 > class PagoTarjeta implements EstrategiaPago {
 >     public void pagar(double monto) { /* cargo a tarjeta */ }
 > }
 > class PagoPayPal implements EstrategiaPago {
 >     public void pagar(double monto) { /* cargo a PayPal */ }
 > }
->
+> // ---
 > class Caja {
 >     private EstrategiaPago estrategia; // programado a interfaz
 >     Caja(EstrategiaPago e) { this.estrategia = e; }
@@ -105,7 +105,7 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > ```java
 > // ✅ OBSERVER: sujeto notifica a interfaz, no a clases concretas
 > interface Observador { void actualizar(String evento); }
->
+> // ---
 > class SistemasNotas {
 >     private List<Observador> subs = new ArrayList<>();
 >     void suscribir(Observador o) { subs.add(o); }

@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [EYAG1037, laboratorio, practicas]
 ---
@@ -182,7 +182,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ---
 
-## 📎 Guía oficial (Garden)
+## 📎 Guía oficial (sitio web)
 
 ![[Práctica 3 - Funcionamiento de Diodos y Transistores.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad2 #diodo #BJT #transistor

@@ -75,7 +75,7 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > % Base de conocimiento: solo hechos, ningún recorrido programado
 > father(john, bill).
 > mother(mary, bill).
->
+> // ---
 > % Consulta: ¿qué X hace verdadera la sentencia?
 > ?- mother(X, bill).
 > % Respuesta del motor: X = mary  <-- el recorrido lo hizo Prolog, no tú
@@ -112,6 +112,19 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 >
 > **Beneficios:** responsabilidades limpias, menos acoplamiento y duplicación, evolución coherente al agregar módulos, decisiones de diseño postergables, reutilización por bajo acoplamiento y roles especializados por experticia. Herramienta de referencia: **AspectJ (Eclipse)**.
 
+> [!info] 📖 El deck de cátedra: AOP en figuras (02b, pp. 13-20)
+> *"Programación Orientada a Aspectos (AOP) es un paradigma de programación que complementa la programación orientada a objetos…"* — el deck lo desarrolla con la figura del **concern transversal** y luego con los dos síntomas de mala modularidad.
+
+![[Archivos/02b-p14.png]]
+
+![[Archivos/02b-p16.png]]
+
+![[Archivos/02b-p18.png]]
+
+![[Archivos/02b-p20.png]]
+
+> **Punto clave del deck:** la OO modulariza *concerns* en métodos, clases y paquetes, pero algunos *concerns* son **difíciles de modularizar** de esa forma — de ahí el "aspecto" como unidad central, equivalente a la clase en OO.
+
 ---
 
 ## 🧵 Paradigma Orientado a Componentes (Deck 02b)
@@ -124,7 +137,7 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 >
 > > [!note] 📋 Definición — Componente
 > >
-> > Unidad de software **independiente y desplegable**, completamente definida y accedida **solo por sus interfaces**.
+> > > Unidad de software **independiente y desplegable**, completamente definida y accedida **solo por sus interfaces**.
 >
 > **Las 4 etapas del proceso:**
 >
@@ -140,6 +153,19 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > | **Sistemas stand-alone** | Configurables para un ambiente particular |
 >
 > **Conexión con tu curso:** esto es la Unidad 2 (diseño por componentes e interfaces) llevada a proceso completo — el framework de integración es tu arquitectura.
+
+> [!info] 📖 El deck de cátedra: componentes en figuras (02b, pp. 33-40)
+> *"Un componente es una unidad de software independiente, desplegable que está completamente definida y accedida por medio de un conjunto de interfaces…"* — seguido de las características, la composición y los modelos de componente.
+
+![[Archivos/02b-p33.png]]
+
+![[Archivos/02b-p34.png]]
+
+![[Archivos/02b-p38.png]]
+
+![[Archivos/02b-p40.png]]
+
+> **Modelos de componente (p. 40):** un modelo de componente es *"una definición de estándares para implementación, documentación y despliegue de componentes"* — de ahí los estándares CORBA, COM y Enterprise JavaBeans que menciona el deck.
 
 ---
 

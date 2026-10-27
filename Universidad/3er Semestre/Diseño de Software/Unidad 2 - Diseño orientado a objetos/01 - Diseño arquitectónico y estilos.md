@@ -46,6 +46,17 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 >
 > **Regla del docente:** no se codifica lo que no pasó por ambos niveles.
 
+> [!note] 📖 El deck de cátedra: los dos niveles en una sola página (01b, pp. 14-19)
+> "Dos niveles de diseño de software: 1. Diseño de alto nivel o arquitectural 2. Diseño detallado". El deck separa el **qué se decide** en cada uno con una lista explícita, que es la que se usa en el examen.
+
+![[Archivos/01b-p16.png]]
+
+> **Qué decide el diseño arquitectural (deck, p. 17):** plataforma tecnológica · despliegue físico del sistema y sus subsistemas · estructura de componentes · intercomunicación (protocolos) · atributos no funcionales (desempeño, seguridad, robustez, escalabilidad) · concurrencia.
+
+![[Archivos/01b-p17.png]]
+
+> **Qué se refina en el diseño detallado (deck, p. 19):** componentes → clases · interfaces a implementar · relaciones entre clases · patrones y estrategias de implementación.
+
 ---
 
 ## 🧵 Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
@@ -68,6 +79,37 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 >
 > **Recomendación para tu proyecto:** monolito modular en capas.
 
+### 📖 Los cinco estilos del deck, con su figura
+
+> [!info] 🖼️ Los estilos del deck 01b (pp. 20-31)
+> El deck recorre **cinco** estilos, en este orden y con esta figura cada uno. Los cuatro primeros son de Pressman cap. 10; el quinto (orientada a objetos) es el puente hacia las Unidades 2-3.
+
+**1 · Arquitectura centrada en datos** — un repositorio de datos al que otros componentes acceden para actualizar, agregar, eliminar o leer. El deck avisa: el repositorio se convierte en cuello de botella.
+
+![[Archivos/01b-p22.png]]
+
+![[Archivos/01b-p23.png]]
+
+**2 · Arquitectura de flujo de datos** — un dato de entrada se transforma en un dato de salida a través de una serie de componentes de manipulación.
+
+![[Archivos/01b-p25.png]]
+
+![[Archivos/01b-p26.png]]
+
+**3 · Arquitectura en capas** — varias capas, cada una con operaciones que se acercan progresivamente al conjunto de datos.
+
+![[Archivos/01b-p28.png]]
+
+![[Archivos/01b-p29.png]]
+
+**4 · Arquitectura de llamada y retorno** — estructura de programa modificable y escalable, donde un componente llama a otro y recibe el control de vuelta.
+
+![[Archivos/01b-p30.png]]
+
+**5 · Arquitectura orientada a objetos** — los componentes encapsulan datos y operaciones para manipularlos; cada componente tiene responsibilities.
+
+![[Archivos/01b-p31.png]]
+
 ### 🎭 MVC: Modelo-Vista-Controlador (Semana 4)
 
 > [!note] 🎨 MVC desacopla interfaz, navegación y comportamiento
@@ -86,7 +128,24 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 >
 > **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[Main.java]] en U1-04).
 >
-> 📎 Slides de clase: ![[04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11).
+> 📎 Slides de clase: ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11).
+
+> [!info] 📖 El deck de MVC en detalle (04p, pp. 44-49)
+> El deck explica por qué MVC nació: *"en 1988 se empezó a argumentar que las aplicaciones deben ser construidas usando capas, de manera que los diferentes componentes puedan aislarse y modificarse por separado"*.
+
+![[Archivos/04p-p45.png]]
+
+> **Las tres capas según el deck (p. 46):** el **modelo** contiene objetos de contenido, el acceso a fuentes de información/datos y el procesamiento de la funcionalidad específica; la **vista** maneja la presentación; el **controlador** interpreta las peticiones.
+
+![[Archivos/04p-p47.png]]
+
+![[Archivos/04p-p48.png]]
+
+> **La figura al detalle (p. 48):** las peticiones del usuario o los datos los maneja el **controlador**; el controlador selecciona el objeto vista que se debe mostrar y se lo pasa al modelo; el modelo interactúa con la base de datos y devuelve el resultado.
+
+![[Archivos/04p-p49.png]]
+
+> **Ejemplo del deck (p. 49):** una arquitectura de **4 capas**, cortesía del Dr. Rami Bahsoon — la variante con más capas que MVC simple, útil para separar además la capa de persistencia.
 
 ### 🔍 Vistas Mínimas: Componentes y Despliegue
 
@@ -310,7 +369,7 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!quote] 📖 Fuentes
 >
 > - Deck docente `01bDisenoSoftware.pdf`: dos niveles, qué decide cada uno, estilos.
-> - Slides Semana 4 `04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf` (MSc. Jurado / Dr. Mera): SOLID + MVC.
+> - Slides Semana 4 `Unidad 0 - Guias y Ejercicios/Diapositivas/04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf` (MSc. Jurado / Dr. Mera): SOLID + MVC.
 > - R. Pressman, B. Maxim, *Software Engineering: A Practitioner's Approach*, 9th ed., cap. 10.
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
 

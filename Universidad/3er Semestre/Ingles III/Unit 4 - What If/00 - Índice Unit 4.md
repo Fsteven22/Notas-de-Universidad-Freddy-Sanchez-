@@ -6,7 +6,7 @@ tags: [IDIG1008, unit4, indice, english]
 # 🗺️ Unit 4 — What If? (Libro U10) — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad (molde 4 notas)
 

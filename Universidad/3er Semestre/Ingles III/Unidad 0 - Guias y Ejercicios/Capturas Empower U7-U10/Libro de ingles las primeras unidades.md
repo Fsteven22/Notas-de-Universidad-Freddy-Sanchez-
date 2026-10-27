@@ -8,7 +8,7 @@ dg-publish: false
 >
 > Capturas del libro en orden (pp. 65–97 + classroom language). Materia prima: de aquí salen las 4 notas por unidad del libro. No editar las imágenes; el contenido transcrito vive en las notas.
 >
-> 📕 Versión lectura (1 archivo): [[Empower U7-U9 lessons.pdf]]
+> 📕 Versión lectura (1 archivo): [[../Material de clase/Empower U7-U9 lessons.pdf]]
 
 ## Classroom + Portada U7
 

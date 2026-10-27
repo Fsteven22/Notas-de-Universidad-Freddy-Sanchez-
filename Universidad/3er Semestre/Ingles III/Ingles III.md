@@ -8,7 +8,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 **Código:** IDIG1008 · **Semestre:** 3ro · [[Bienvenida y Syllabus Ingles III|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Ingles III. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Ingles III. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

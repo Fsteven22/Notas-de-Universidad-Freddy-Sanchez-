@@ -6,7 +6,7 @@ tags: [TICG1018, unidad3, indice, bd]
 # 🗺️ Unidad 3 — SQL, PL-SQL y Seguridad — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden. Se abre con el material de talleres de SQL (Talleres 3 y 4); las notas teóricas de la unidad llegarán cuando la docente publique el bloque (ver Syllabus, "Unidad 2+ — SQL y resto").
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes. Se abre con el material de talleres de SQL (Talleres 3 y 4); las notas teóricas de la unidad llegarán cuando la docente publique el bloque (ver Syllabus, "Unidad 2+ — SQL y resto").
 
 ## 📑 Material de la Unidad
 

@@ -322,14 +322,14 @@ dg-publish: true
 > ```
 > for i = 1 to n
 >     x = x + 1                    // Bloque 1: Θ(n)
-> 
+> // ---
 > if (n > 10):
 >     for i = 1 to n
 >         for j = 1 to n
 >             x = x + 1             // Bloque 2 (peor caso): Θ(n²)
 > else:
 >     x = x + 1                     // Bloque 2 (mejor caso): Θ(1)
-> 
+> // ---
 > for i = 1 to log(n)
 >     x = x + 1                    // Bloque 3: Θ(log n)
 > ```

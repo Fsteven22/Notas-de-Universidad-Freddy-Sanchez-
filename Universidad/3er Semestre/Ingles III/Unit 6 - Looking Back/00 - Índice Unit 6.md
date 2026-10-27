@@ -6,7 +6,7 @@ tags: [IDIG1008, unit6, indice, english]
 # 🗺️ Unit 6 — Looking Back (Libro U12) — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad (molde 4 notas)
 

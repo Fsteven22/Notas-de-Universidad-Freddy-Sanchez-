@@ -17,7 +17,7 @@ dg-publish: true
 
 ---
 
-![[Guía de problemas 2 MD.pdf]]
+![[Guía de problemas 2.pdf]]
 
 ## 🔢 2.1 — Funciones Inyectiva, Sobreyectiva, Composición e Inversa
 
@@ -793,7 +793,7 @@ dg-publish: true
 ![[../Diagramas/dis-u2-06-03-graph.svg]]
 
 > [!quote] 📖 Fuentes
-> - Guía original: [[Guía de problemas 2 MD.pdf]] en Unidad 0 - Guias y Ejercicios.
+> - Guía original: [[Guía de problemas 2.pdf]] en Unidad 0 - Guias y Ejercicios.
 > - K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed., McGraw-Hill, 2019.
 > - R. Johnsonbaugh, _Discrete Mathematics_, 8th ed., Pearson, 2017.
 

@@ -57,6 +57,17 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | 4 | Un valor por celda | Cada celda guarda exactamente un dato, no una lista |
 > | 5 | Columnas regulares | No hay columnas ocultas como `id_fila`, `timestamp`, ni IDs de objeto sueltos |
 
+> [!info] 📖 El deck de cátedra: la 1FN en la pizarra (slides04 y BD 02.3)
+> El deck del Ing. Magallanes define la 1FN como *"una tabla donde la intersección de cada fila y columna contiene solo un valor"* y da el ejemplo canónico de la rama con varios teléfonos.
+
+![[Archivos/bd-s04-p8.png]]
+
+![[Archivos/bd-023-p10.png]]
+
+> **Las 5 condiciones (BD 02.3, p. 10):** *"1. No hay orden de arriba-a-abajo en las filas. 2. No hay orden de izquierda-a-derecha en las columnas. 3. No hay filas duplicadas. 4. Cada intersección…"* — el checklist de esta nota es el mismo, con la condición 5 (columnas regulares) completada.
+>
+> **El ejemplo del deck (slides04, p. 9):** la tabla `branchNo / branchAddress / telNos` con `B001 · 8 Jeffesorn Way, Portland, OR 97201 · 212-…` y varios teléfonos separados por comas — la celda con lista que viola la 1FN.
+
 ### 3️⃣ Violación de la 1FN
 
 > [!note] 📋 Definición — Violación

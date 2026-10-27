@@ -6,7 +6,7 @@ tags: [MATG1051, unidad6, indice, discretas]
 # 🗺️ Unidad 6 — Lenguajes y Autómatas — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

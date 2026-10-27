@@ -16,8 +16,8 @@ dg-publish: true
 > | **Prerrequisito** | Inglés B1 (CEFR) |
 > | **Libro guía** | Empower B1+ Combo B (Doff et al., Cambridge 2016) |
 > | **Responsables** | María Cecilia Moreno Abramowicz · María Helen Camacho Rivadeneira |
-> | **Contenido oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/EIII Course Contents.pdf|EIII Course Contents.pdf]] |
-> | **Recursos Unidad 0** | 🔗 [[Unidad 0 - Guias y Ejercicios/Recursos Unidad 0|Recursos Unidad 0]] (15 archivos: PDFs, PPTs, imágenes, videos) |
+> | **Contenido oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Material de clase/EIII Course Contents.pdf\\|EIII Course Contents.pdf]] |
+> | **Recursos Unidad 0** | 🔗 [[Unidad 0 - Guias y Ejercicios/Recursos Unidad 0\\|Recursos Unidad 0]] (9 PDFs en 3 carpetas por tipo, 4 plantillas, 2 videos, 3 imágenes) |
 >
 > > No confundir con `Preuniversitario / MOOC de ingles` (A1-A2) ni `Inglés II (C1-C2)`.
 
@@ -71,12 +71,12 @@ dg-publish: true
 > [!quote] 📖 Fuentes oficiales
 >
 > **Guía:**
-> - [1] A. Doff et al., *Empower B1+ Combo B*, Cambridge, 2016.
+> - **[1]** A. Doff et al., *Empower B1+ Combo B*, Cambridge, 2016.
 >
 > **Complementaria:**
-> - [2] R. Murphy, *Essential Grammar in Use*, 5th ed., Cambridge, 2015.
-> - [3] *Cambridge Learner's Dictionary*, 4th ed., 2012.
-> - [4] A. Strauch, *Writers at Work*, Cambridge, 2010.
+> - **[2]** R. Murphy, *Essential Grammar in Use*, 5th ed., Cambridge, 2015.
+> - **[3]** *Cambridge Learner's Dictionary*, 4th ed., 2012.
+> - **[4]** A. Strauch, *Writers at Work*, Cambridge, 2010.
 
 ---
 

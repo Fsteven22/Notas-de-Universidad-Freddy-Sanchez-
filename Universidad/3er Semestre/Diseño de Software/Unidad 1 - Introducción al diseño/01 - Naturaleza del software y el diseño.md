@@ -48,6 +48,27 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | **Documentación** | Describe operación y uso | Diagramas UML + README |
 >
 
+> [!info] 📖 El deck de cátedra: qué es diseño de software (01b, pp. 4-13)
+> *"Diseño de software es un proceso que define la arquitectura, co…"* — el deck abre así y de ahí sale el **modelo general de proceso de diseño** que aparece en la p. 5.
+
+![[Archivos/01b-p5.png]]
+
+> **Los 7 principios de diseño del deck (pp. 6-13):** cada uno tiene su diapositiva con la definición textual, y varios reaparecen en [[02 - Principios de diseño, cohesión y acoplamiento]].
+>
+> | # | Principio | La frase del deck |
+> |---|---|---|
+> | 1 | **Abstracción** | Vista de un objeto enfocándose en la información relevante a un propósito particular e ignorando el resto |
+> | 2 | **Acoplamiento** | Grado de interdependencia entre módulos (el otro par es la cohesión) |
+> | 3 | **Descomposición y modularización** | El software se divide en componentes más pequeños con interfaces |
+> | 4 | **Encapsulamiento y ocultamiento de información** | Agrupar los detalles internos de una abstracción y protegerlos |
+> | 5 | **Separación de interfaz e implementación** | Especificar el componente por su interfaz pública (conocida) |
+> | 6 | **Suficiencia, completitud y primitivismo** | Cada componente debe tener lo suficiente y nada de más |
+> | 7 | **Separación de preocupaciones** | Cada área de interés (concern) vive en su propio lugar |
+>
+> La p. 13 desarrolla el último con su figura — la separación de preocupaciones es la idea detrás de las capas y de MVC:
+
+![[Archivos/01b-p13.png]]
+
 > [!success] 📋 Por Qué el Software NO es Como el Hardware
 >
 > Pressman señala tres diferencias fundamentales entre software y hardware que justifican por qué el software necesita un tipo distinto de ingeniería:

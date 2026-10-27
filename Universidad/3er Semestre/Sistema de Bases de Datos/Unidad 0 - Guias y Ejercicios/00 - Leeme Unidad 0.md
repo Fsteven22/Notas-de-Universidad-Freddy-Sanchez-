@@ -6,7 +6,7 @@ tags: [TICG1018, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Bases de Datos)
 
 > [!info] ℹ️ Documentos publicados
-> Estos PDFs se publican en el Garden embebidos (`![[]]`): así el plugin los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto. Talleres, lecciones y exámenes van como enlaces (no embebidos) para no pesar la página.
+> Estos PDFs se publican en el sitio embebidos (`![[]]`): así los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto. Talleres, lecciones y exámenes van como enlaces (no embebidos) para no pesar la página.
 
 ## 📎 Políticas y diapositivas Unidad 1
 
@@ -17,6 +17,28 @@ tags: [TICG1018, unidad0, recursos]
 ![[Diapositivas/BD01 Introducción-1.pdf]]
 
 ![[Diapositivas/unidad1.3-1.5.pdf]]
+
+### 📊 Slides oficiales del curso (Magallanes) — Unidad 1
+
+![[Diapositivas/2026_1PAO_slides01_1_TICG1018.pdf]]
+
+![[Diapositivas/2026_1PAO_slides02_final_1_TICG1018.pdf]]
+
+![[Diapositivas/2026_1PAO_slides3_final_1_TICG1018.pdf]]
+
+![[Diapositivas/2026_1PAO_slides5_1_TICG1018.pdf]]
+
+## 🔄 Diapositivas Unidad 2 (modelo lógico)
+
+![[Diapositivas/BD 02 MC_a_ML.pdf]]
+
+![[Diapositivas/2026_1PAO_slides4_1_TICG1018.pdf]]
+
+![[Diapositivas/BD 02.3 Normalizacion.pdf]]
+
+## 🔤 Diapositivas Unidad 3 (SQL)
+
+![[Diapositivas/2026_1PAO_slides6_1_TICG1018.pdf]]
 
 ## 📝 Guías de problemas
 
@@ -34,6 +56,7 @@ tags: [TICG1018, unidad0, recursos]
 - [[Talleres/2024_1PAO_Taller_1_TICG1018.pdf]] — Taller 1 2024 (revista AZM).
 - [[Talleres/SF_1PAO_Taller_1_TICG1018.pdf]] — Solución Taller 1 2024.
 - [[Talleres/Taller 2 PAO-2026-1  SOL.pdf]] — Taller 2 (álgebra + hotel, con solución).
+- [[Talleres/tarea03_algebra y Normalización.pdf]] — Tarea 3 (álgebra relacional + normalización).
 - [[Talleres/Taller 3 2026 PAO 1.pdf]] — Taller 3 + [[Talleres/ENUNCIADO.pdf]] + [[Talleres/SF_PAE_Taller_3_TICG1018.pdf]].
 - [[Talleres/Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf]] — Taller 4 + [[Talleres/Taller 4_20agorep.pdf]].
 

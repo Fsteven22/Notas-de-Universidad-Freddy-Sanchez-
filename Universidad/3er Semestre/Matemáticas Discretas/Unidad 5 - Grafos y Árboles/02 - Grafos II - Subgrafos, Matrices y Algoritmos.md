@@ -153,7 +153,7 @@ dg-publish: true
 >         L(x) = infinito
 >     T = conjunto de todos los vértices
 >     // T contiene vértices cuya distancia más corta desde a no se ha fijado
-> 
+> // ---
 >     while (z está en T) {
 >         seleccionar v en T con L(v) mínimo
 >         T = T - {v}

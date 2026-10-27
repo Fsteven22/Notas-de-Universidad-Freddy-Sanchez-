@@ -120,6 +120,15 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > 5. **Especiales:** supertipo/subtipo, dependencia, recursiva (ver sección).
 > 6. **Normaliza** el esquema resultante (mínimo [[02 - Primera forma normal y diccionario de datos|1FN]]).
 
+> [!info] 📖 El deck de cátedra: los puntos clave de la conversión (slides3, pp. 13-15)
+> El deck del Ing. Magallanes enuncia las mismas reglas, con la formulación del docente: *"las relaciones del MER se clasifican como uno a uno (1:1), uno a muchos (1:N) y de muchos a muchos (M:N o N:N)"*.
+
+![[Archivos/bd-s03-p16.png]]
+
+> **El objetivo (p. 14):** *"traducir un modelo conceptual a un modelo lógico y luego validar si este modelo es de una estructura correcta"*.
+>
+> **Las estructuras que se derivan (p. 15):** entidad fuerte · entidad débil · relación binaria… — el deck cierra la lista con los casos especiales que esta nota develops en las reglas 5-8.
+
 ### 🔍 Regla 1 — Entidades → tablas directas
 
 > [!note] 📋 Cada entidad, una tabla

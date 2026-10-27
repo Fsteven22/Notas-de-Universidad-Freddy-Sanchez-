@@ -16,7 +16,7 @@ dg-publish: true
 
 ---
 
-![[notas_maquinas_automatas (1).pdf]]
+![[notas_maquinas_automatas.pdf]]
 
 ## 📚 6.1 — Actividades en clase
 

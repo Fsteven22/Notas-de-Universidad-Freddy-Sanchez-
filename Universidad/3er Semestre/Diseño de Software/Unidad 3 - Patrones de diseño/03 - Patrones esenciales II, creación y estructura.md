@@ -50,7 +50,7 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 >         return new Word();
 >     }
 > }
->
+> // ---
 > // ✅ ADAPTER: hace compatible sin tocar al adaptado
 > class EnchufeUSA { void conectarPlano() {} }
 > interface EnchufeEU { void conectarRedondo(); }
@@ -58,7 +58,7 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 >     private EnchufeUSA usa = new EnchufeUSA();
 >     public void conectarRedondo() { usa.conectarPlano(); }
 > }
->
+> // ---
 > // ✅ FACADE: ya la viste en Unidad 2 (TiendaFacade)
 > // Un método simple orquesta pagos + stock + envío.
 > ```
@@ -82,7 +82,7 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > }
 > // Regla: si lo usas para "acceder desde todos lados", es variable global
 > // disfrazada. Prefiere inyección (pasarlo por constructor).
->
+> // ---
 > // ✅ TEMPLATE METHOD: esqueleto en la base, detalles en hijas
 > abstract class Informe {
 >     final void generar() { // pasos fijos

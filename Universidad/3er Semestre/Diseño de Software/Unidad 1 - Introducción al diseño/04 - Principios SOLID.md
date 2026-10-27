@@ -49,6 +49,21 @@ tags: [CCPG1042, unidad1, solid, principios]
 > | **ISP** | Bajo acoplamiento | No dependas de lo que no usas |
 > | **DIP** | Bajo acoplamiento + abstracción | Apunta tus dependencias hacia interfaces |
 
+> [!info] 📖 El deck de cátedra: por qué SOLID (04p, pp. 3-12)
+> El deck abre con **código limpio** (Robert C. Martin, "Uncle Bob") y luego muestra el problema que SOLID viene a resolver. Esta es la motivation literal de la diapositiva.
+
+![[Archivos/04p-p10.png]]
+
+> **El trío de males del deck (p. 11):**
+>
+> | Mal | Qué significa en el deck |
+> |---|---|
+> | **Rigidez** | Un cambio afecta muchas partes |
+> | **Fragilidad** | Fallos en lugares donde no debería |
+> | **Inmovilidad** | No se puede reusar el código fuera de su contexto |
+>
+> **Y la salida:** SOLID — *S* Single Responsibility, *O* Open-Closed, *L* Liskov Substitution, *I* Interface Segregation, *D* Dependency Inversion. Los principios "nos dicen cómo ordenar nuestras funciones y estructuras de datos en clases".
+
 ---
 
 ## 🧵 Los 5 Principios, Uno por Uno
@@ -76,7 +91,7 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     void guardar()         { /* SQL: cambia si cambia la BD */ }
 >     String imprimir()      { /* formato: cambia si cambia el diseño */ return ""; }
 > }
->
+> // ---
 > // ✅ SRP — cada clase responde a un solo actor
 > class Factura {
 >     double calcularTotal() { /* solo regla de negocio */ return 0; }
@@ -90,6 +105,15 @@ tags: [CCPG1042, unidad1, solid, principios]
 > ```
 >
 > Si cambia el formato de impresión, solo tocas `ImpresorFactura`: no hay riesgo de romper el cálculo del total.
+
+> [!info] 📖 El deck de cátedra: el ejemplo de SRP (04p, pp. 15-17)
+> El deck lo plantea como pregunta de examen: *"¿Se viola el principio SRP? ¿Cuántas responsabilidades tiene esta clase?"* — la misma pregunta que el docente hace en el control.
+
+![[Archivos/04p-p15.png]]
+
+![[Archivos/04p-p17.png]]
+
+> **Solución del deck (p. 17):** la clase `Employee` mantiene su responsabilidad de manejar la información del empleado y **usa los servicios de las demás clases**. Es el mismo movimiento que esta nota: la lógica queda en un lado, la persistencia en otro.
 
 ### 🔓 O — Open/Closed Principle (OCP)
 
@@ -113,23 +137,32 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     else if (tipo.equals("JUBILADO")) return precio * 0.70;
 >     return precio;
 > }
->
+> // ---
 > // ✅ OCP — agregar "EMPLEADO" es una clase nueva, sin tocar nada existente
 > interface Descuento { double aplicar(double precio); }
->
+> // ---
 > class DescuentoEstudiante implements Descuento {
 >     public double aplicar(double precio) { return precio * 0.80; }
 > }
 > class DescuentoJubilado implements Descuento {
 >     public double aplicar(double precio) { return precio * 0.70; }
 > }
->
+> // ---
 > class Caja {
 >     double cobrar(double precio, Descuento d) { return d.aplicar(precio); }
 > }
 > ```
 >
 > El `if` no desaparece mágicamente: se mueve a **un solo lugar** (por ejemplo una fábrica o la configuración) donde se decide qué `Descuento` usar. La lógica de negocio queda estable.
+
+> [!info] 📖 El deck de cátedra: el ejemplo de OCP (04p, pp. 20-23)
+> *"Objects or entities should be open for extension, but closed for modification"*. El deck calcula el área de varias figuras geométricas y pregunta **"¿Se cumple el OCP?"**.
+
+![[Archivos/04p-p21.png]]
+
+![[Archivos/04p-p22.png]]
+
+> **El cierre del deck (p. 23):** con el diseño correcto, *"el código queda abierto para extensión pues muchas más formas pueden agregarse sin modificar el código existente y cada forma… "*. Esa frase es el OCP resumido en una línea.
 
 ### 🔄 L — Liskov Substitution Principle (LSP)
 
@@ -166,13 +199,13 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     @Override void setAncho(int a) { ancho = a; alto = a; }  // cambia también el alto
 >     @Override void setAlto(int h)  { ancho = h; alto = h; }
 > }
->
+> // ---
 > void probar(Rectangulo r) {
 >     r.setAncho(5);
 >     r.setAlto(4);
 >     assert r.area() == 20;   // con Cuadrado da 16 → el cliente "se rompe"
 > }
->
+> // ---
 > // ✅ LSP — no hay herencia forzada; ambas cumplen un contrato común
 > interface Figura { int area(); }
 > record Rectangulo(int ancho, int alto) implements Figura {
@@ -182,6 +215,15 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     public int area() { return lado * lado; }
 > }
 > ```
+
+> [!info] 📖 El deck de cátedra: el ejemplo de LSP (04p, pp. 26-30)
+> *"Derived classes must be completely substitutable for their base classes."* El deck usa un pato: `IDuck` con `Swim()`, y `ElectricDuck` que además necesita encenderse.
+
+![[Archivos/04p-p26.png]]
+
+> **El problema que el deck plantea (p. 27):** `void MakeDuckSwim(IDuck duck) { duck.Swim(); }` — *"se viola LSP, porque una clase derivada puede lanzar una excepción que la clase base no contemplaba"*. Es el mismo error que esta nota señala con `Cuadrado extends Rectangulo`.
+>
+> **Los dos intentos de solución del deck (pp. 28-30):** (1) hacer `if (duck is ElectricDuck) ((ElectricDuck)duck).TurnOn();` antes de nadar — el `instanceof` que esta nota marca como olor; (2) mover la lógica al `Swim()` de `ElectricDuck` (`if (!IsTurnedOn) TurnOnDuck();`) — el workaround que el deck prefiere.
 
 ### ✂️ I — Interface Segregation Principle (ISP)
 
@@ -210,15 +252,24 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     public void comer()    { throw new UnsupportedOperationException(); }
 >     public void dormir()   { throw new UnsupportedOperationException(); }
 > }
->
+> // ---
 > // ✅ ISP — cada rol, su interfaz; cada clase implementa solo lo que le aplica
 > interface Trabajable { void trabajar(); }
 > interface Alimentable { void comer(); }
 > interface Descansable { void dormir(); }
->
+> // ---
 > class Humano implements Trabajable, Alimentable, Descansable { /* los tres */ }
 > class Robot  implements Trabajable { /* solo trabaja */ }
 > ```
+
+> [!info] 📖 El deck de cátedra: el ejemplo de ISP (04p, pp. 32-37)
+> *"Make fine-grained interfaces with specific methods. Clients should not be forced to depend upon interfaces that they don't use."* El deck parte de una interfaz `Messenger` que muestra una variedad de mensajes.
+
+![[Archivos/04p-p33.png]]
+
+![[Archivos/04p-p34.png]]
+
+> **La pregunta provocadora del deck (p. 36):** una interfaz con Volar · Correr · Nadar · Comer · Cantar · Graznar · Planear · Caminar · Hablar · Poner huevo — **"¿Problema?"**. Si tienes que implementar diez comportamientos para ser un "Worker", el problema es la interfaz, no la clase.
 
 ### 🔗 D — Dependency Inversion Principle (DIP)
 
@@ -234,6 +285,15 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 ![[../Diagramas/dsw-u1-05-02-graph.svg]]
 
+> [!info] 📖 El deck de cátedra: el ejemplo de DIP (04p, pp. 39-43)
+> *"Depend on abstractions, not on concretions. High-level modules should not depend on low-level modules. Both should depend on abstractions."*
+
+![[Archivos/04p-p40.png]]
+
+![[Archivos/04p-p43.png]]
+
+> **El par del deck (pp. 40-41):** `House` que instancia `new Door()` y `new Window()` (DIP incumplido) frente a `House` que recibe `IDoor` e `IWindow` por constructor (DIP cumplido). Es literalmente el patrón de inyección por constructor que se muestra más abajo en esta nota.
+
 > [!example]- 💻 Código — DIP con inyección por constructor y prueba con un falso
 >
 > ```java
@@ -242,16 +302,16 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     private final PagoConTarjeta pago = new PagoConTarjeta();
 >     void confirmar(Pedido p) { pago.cobrar(p.total()); }
 > }
->
+> // ---
 > // ✅ DIP — depende de la abstracción, que recibe desde afuera
 > interface Pago { void cobrar(double monto); }
->
+> // ---
 > class PedidoService {
 >     private final Pago pago;
 >     PedidoService(Pago pago) { this.pago = pago; }
 >     void confirmar(Pedido p) { pago.cobrar(p.total()); }
 > }
->
+> // ---
 > // 🧪 En una prueba unitaria, sustituyes el pago real por un falso
 > class PagoFalso implements Pago {
 >     double ultimoMonto;
@@ -276,7 +336,7 @@ tags: [CCPG1042, unidad1, solid, principios]
 >     void guardarEnDisco() { /* ... */ }
 >     void enviarPorMail()  { /* ... */ }
 > }
->
+> // ---
 > // ✅ SRP+OCP: misiones separadas, variante = clase nueva
 > interface Formato { String generar(Datos d); }
 > class ReportePdf implements Formato {

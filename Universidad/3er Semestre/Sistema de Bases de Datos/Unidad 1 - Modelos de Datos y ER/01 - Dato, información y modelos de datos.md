@@ -72,6 +72,37 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Historia real:** egipcios en papiros (2000 a.C.) — el medio cambia, la necesidad de registrar no. Los archivos repiten el problema del papiro (copias que se desincronizan); la BD lo resuelve con unicidad + restricciones.
 
+> [!info] 📖 El deck de cátedra: por qué existieron los SBD (slides01, pp. 4-11)
+> El deck del Ing. Jorge Magallanes abre el curso explicando el problema que las bases de datos resolvieron. Estas son sus figuras literales.
+
+![[Archivos/bd-s01-p4.png]]
+
+> **Sistemas basados en archivos (p. 5):** *"una colección de programas de aplicación, donde cada programa define y maneja sus propios datos"*. Las instituciones con distintas localidades tenían sistemas aislados — de ahí el nombre "sistemas basados en archivos".
+
+![[Archivos/bd-s01-p6.png]]
+
+> **Las limitaciones del deck (p. 6):** la definición de los datos embebida en los programas hace que los cambios posteriores en la estructura de datos dificulten el mantenimiento; y cada programa trabaja con su propio archivo.
+
+> [!note] 📖 Del archivo al DBMS: el salto del deck (slides01, pp. 8-11)
+> *"Un sistema de bases de datos se define como un conjunto de programas de aplicación que acceden a la base de datos a través de un sistema de gestión de bases de datos (DBMS)"* (p. 8). El **DBMS** (p. 9) es el conjunto de programas que permite definir, crear, mantener y controlar el acceso a los datos.
+
+![[Archivos/bd-s01-p13.png]]
+
+![[Archivos/bd-s01-p14.png]]
+
+> **Arquitectura cliente-servidor (2 capas, p. 13) y arquitectura web (3 capas, p. 14):** el deck las dibuja como el camino que sigue la petición — del cliente al servidor de aplicaciones y de ahí a la base de datos. La de 3 capas es la que separa GUI, lógica de negocio y datos en servidores distintos.
+
+> [!tip] 📖 El proceso de diseño, según el deck (slides01, pp. 15-18)
+> *"La información es el activo más importante de las organizaciones"* (p. 16) — por eso el diseño de la base es un proceso formal y no una ocurrencia.
+
+![[Archivos/bd-s01-p17.png]]
+
+![[Archivos/bd-s01-p18.png]]
+
+> **Modelo de datos (p. 17):** *"conjunto de conceptos que describen la estructura de los datos en el contexto de un modelo de negocio"*.
+>
+> **Proceso de diseño (p. 18):** determinar vistas de usuario y requerimientos de datos → definir entidades, relaciones, atributos y dominios → verificar el modelo → definir… (el resto del proceso son las unidades siguientes).
+
 ---
 
 ## 🧵 Evolución de los Modelos (Coronel cap. 2)

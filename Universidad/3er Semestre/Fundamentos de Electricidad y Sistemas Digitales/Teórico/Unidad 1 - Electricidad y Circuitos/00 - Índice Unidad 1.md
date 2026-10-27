@@ -6,7 +6,7 @@ tags: [FESD, unidad1, indice, EYAG1037]
 # 🗺️ Unidad 1 — Electricidad y Circuitos — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 
@@ -20,7 +20,7 @@ tags: [FESD, unidad1, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-![[../../Diagramas/00_-_Índice_Unidad_1_01.svg]]
+![[../../Diagramas/00_-_FESD_Indice_Unidad_1_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Semiconductores y Bandas de Energía]] (Unidad 2)

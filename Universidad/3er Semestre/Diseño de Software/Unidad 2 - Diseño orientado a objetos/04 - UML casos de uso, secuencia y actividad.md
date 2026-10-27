@@ -99,6 +99,22 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > - 🟢 **Escenario 1:** en la JRV 12 de Tarqui, el presidente registra 180 A, 95 B, 10 nulos y 5 blancos; el padrón tiene 320 → **acta registrada**.
 > - 🔴 **Escenario 2:** la suma da 340 y el padrón 320 → **acta enviada a revisión** (el extend A1 se activó).
 
+> [!example] 📖 El ejercicio del deck: "Registrarse en un paralelo" (pp. 6-7)
+>
+> El docente usa el sistema **AcademicChoice** (inscripción de materias y paralelos) como ejercicio de papel. El formato que pide es exactamente el de tu Control03:
+>
+> | Campo | Qué pide el deck |
+> |---|---|
+> | **Actores** | principales **y** secundarios |
+> | **Precondiciones** | estado exigido antes |
+> | **Flujo de eventos** | principal + alternativos, numerados |
+> | **Postcondiciones** | resultado garantizado |
+>
+> Y el caso de uso a trabajar es **`Registrarse en un paralelo`**, con **al menos 2 refinamientos** de cada tipo (`<<include>>` y `<<extend>>`) y **2 escenarios** descritos.
+>
+> > [!tip] Traducción directa al SIEL
+> > `Registrarse en un paralelo` ≈ `Inscribir candidatura`: mismo esqueleto (actor + precondición + flujo + postcondición). Los refinamientos del deck te dan la plantilla: **1 `include`** para la validación que siempre ocurre y **1 `extend`** para el parche opcional.
+
 ### 🎭 3. Secuencia: Quién Llama a Quién
 
 > [!example] 🧪 Leer de Arriba Abajo
@@ -109,6 +125,44 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > - La vida del objeto (línea) nace y muere: crea tarde, destruye pronto.
 >
 > **Mapeo directo a código:** cada flecha entre objetos será una llamada a método. Si tu secuencia tiene 20 flechas cruzadas, tu diseño grita "acoplamiento alto" (ver U1-02).
+
+#### 📚 El deck de cátedra: cómo se dibuja de verdad (pp. 32-44)
+
+> [!info] 📖 De dónde sale esta sección
+> Del deck `04aLenguajeUnificadoModelado.pdf` (Unidad 2, 2024): la parte de secuencia es la más extensa del deck y define la notación con precisión.
+
+**Qué demuestra un diagrama de secuencia** (p. 32): el **comportamiento de los objetos en un caso de uso**, describiendo los objetos y los mensajes que transmiten. Se lee **de izquierda a derecha** y **de forma descendente** — el tiempo corre hacia abajo.
+
+**Los elementos** (pp. 32-33): objetos sobre su **life-line**, la **activation** (el objeto activo, la barra vertical sobre la lifeline), los **messages** (las flechas) y el **destroy** (la X al final de la lifeline).
+
+![[Archivos/04a-p33-elementos-secuencia.png]]
+
+**Frames: `alt`, `opt`, `loop`** (pp. 38-41). El deck explica por qué existen: lo que dibujas al principio es una **instancia** del diagrama de interacción, *una posible* secuencia de mensajes. Pero un caso de uso puede incluir muchos escenarios → hace falta mostrar **comportamiento condicional** y **posibles iteraciones**. Un diagrama de interacción **genérico** muestra todas las secuencias posibles.
+
+> | Frame | Qué ejecuta | Equivalencia / regla |
+> |---|---|---|
+> | **`alt`** | fragmento alternativo múltiple | **solo se ejecuta el que cuya condición (guard) sea verdadera** |
+> | **`opt`** | fragmento opcional | se ejecuta solo si la condición se cumple: **equivale a un `alt` con una sola traza** |
+> | **`loop`** | fragmento que puede ejecutarse **múltiples veces** | la **guard indica la base de las iteraciones** |
+
+![[Archivos/04a-p39-alt.png]]
+
+![[Archivos/04a-p40-opt.png]]
+
+> [!tip] Cómo se usa en tu entrega
+> `alt` para el flujo alternativo de la descripción (A1, A2), `opt` cuando el bloque es opcional (un parche `<<extend>>`), `loop` para lo que se repite (reintentar, recorrer una lista). La **guard** es la condición entre corchetes: `[cupo > 0]`, `[hay errores]`.
+
+**Restricciones de tiempo** (p. 43): el deck muestra cómo anotar una restricción de tipo `time` sobre un mensaje, para cuando el orden no basta y necesitas el plazo.
+
+![[Archivos/04a-p43-restricciones-tiempo.png]]
+
+**Tipos de interacción** (p. 44): el deck distingue los mensajes **síncrono**, **asíncrono** y de **retorno**, y el mensaje tipo *choice* (la bifurcación). El aviso del propio deck: *algunas versiones de UML usan el mismo símbolo para los casos que aquí se distinguen*.
+
+![[Archivos/04a-p44-tipos-interaccion.png]]
+
+**El ejemplo canónico del deck** (p. 42): el diagrama de secuencia de la biblioteca, para comparar con el tuyo.
+
+![[Archivos/04a-p42-biblioteca.png]]
 
 ### 🎭 4. Actividad: el Flujo con Decisiones
 
@@ -126,14 +180,15 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > El país se divide en **provincias → cantones → parroquias**. Las **organizaciones políticas** inscriben candidatura para **alcaldía (canton)** o **prefectura (provincia)**; para prefectura van candidato principal + vice. Un **funcionario electoral** califica la candidatura (aprueba o rechaza). El censo se importa del **Registro Civil**. El día de la elección, el **presidente de la JRV** registra el acta con votos por candidatura, nulos y blancos; el sistema la valida contra el padrón de la junta, y con inconsistencias el acta se envía a revisión. El **ciudadano** consulta su lugar de votación y los resultados; el **observador acreditado** descarga las actas escaneadas.
 
-| Actor | Tipo | Casos que le piden al sistema |
-|---|---|---|
-| **Ciudadano** | humano | Consultar lugar de votación, Consultar resultados |
-| **Observador acreditado** | humano (es-un ciudadano) | Descargar actas escaneadas (+ todo lo del ciudadano) |
-| **Presidente de JRV** | humano | Registrar acta de escrutinio |
-| **Funcionario electoral** | humano | Calificar candidatura |
-| **Organización política** | rol institucional | Inscribir candidatura |
-| **Registro Civil** | «sistema» externo | Importar padrón |
+> [!info] 🎭 Actores del SIEL
+> | Actor | Tipo | Casos que le piden al sistema |
+> |---|---|---|
+> | **Ciudadano** | humano | Consultar lugar de votación, Consultar resultados |
+> | **Observador acreditado** | humano (es-un ciudadano) | Descargar actas escaneadas (+ todo lo del ciudadano) |
+> | **Presidente de JRV** | humano | Registrar acta de escrutinio |
+> | **Funcionario electoral** | humano | Calificar candidatura |
+> | **Organización política** | rol institucional | Inscribir candidatura |
+> | **Registro Civil** | «sistema» externo | Importar padrón |
 
 ![[../Diagramas/dsw-u2-04-05-use.svg]]
 
@@ -354,6 +409,7 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > | Tema | Qué verás | Por qué importa |
 > |---|---|---|
+> | **Del diagrama al código** | Traducir cada relación a Java | El diagrama se vuelve software que corre |
 > | **Patrones de diseño** | Soluciones probadas con Shalloway | Dejas de reinventar la rueda |
 
 ---
@@ -386,6 +442,7 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > - Mapa de contenido: [[Diseño de Software]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[03 - UML clases, objetos y relaciones]]
+> - Siguiente: [[05 - Del diagrama de clases al código]]
 > - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
@@ -395,6 +452,8 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > - P. Stevens, R. Pooley, *Using UML*, 2nd ed., caps. 7-11 (casos de uso, secuencia, actividad).
 > - I. Jacobson — casos de uso (origen con "los tres amigos" de UML).
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
+> - Deck de cátedra: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] (50 p.) — notación UML, casos de uso, clases y **diagramas de secuencia** con frames `alt`/`opt`/`loop` y restricciones de tiempo; y [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04b Proceso de implementación desde un diseño]] (30 p.) — del diagrama de clases y de secuencia al código.
+> - Capturas de la clase: [[SIEL - Casos de Uso]] (caso SIEL en pizarra) y [[SIEL - Modelo de Clases]].
 
 ---
 

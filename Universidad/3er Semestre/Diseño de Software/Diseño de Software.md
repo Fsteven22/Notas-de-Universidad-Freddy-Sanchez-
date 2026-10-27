@@ -8,7 +8,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 **Código:** CCPG1042 (provisional) · **Semestre:** 3ro · [[Bienvenida y Syllabus Diseño de Software|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Diseño de Software. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Diseño de Software. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 
@@ -27,7 +27,8 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 - [[02 - Diseño por componentes e interfaces]]
 - [[03 - UML clases, objetos y relaciones]]
 - [[04 - UML casos de uso, secuencia y actividad]]
-- 🗳️ [[Unidad 0 - Guias y Ejercicios/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] — capturas de pizarra; contenido integrado en 04
+- [[05 - Del diagrama de clases al código]]
+- 🗳️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] — capturas de pizarra; contenido integrado en 04
 
 ---
 
@@ -57,8 +58,9 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 - 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
-- 🎬 [[Unidad 0 - Guias y Ejercicios/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
-- Syllabus EUR-ACE CCPG1042 + alterno 2019 + 4 libros de apoyo + Técnicas de estudio en `Unidad 0 - Guias y Ejercicios/`
+- 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
+- 📽️ Decks de cátedra en `Unidad 0 - Guias y Ejercicios/Diapositivas/`: diseño de software, paradigmas, MVC/SOLID, [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|UML: casos de uso, clases y secuencia]] y [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|implementación desde el diseño]].
+- 📚 Syllabus y políticas en `Diapositivas/` y en la raíz, 5 libros de apoyo en la raíz, exámenes en `Exámenes/` y material de clase en `Material de clase/`. dentro de `Unidad 0 - Guias y Ejercicios/`.
 
 ---
 

@@ -8,7 +8,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 **Código:** TICG1018 · **Semestre:** 3ro · [[Bienvenida y Syllabus Sistema de Bases de Datos|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Sistema de Bases de Datos. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Sistema de Bases de Datos. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

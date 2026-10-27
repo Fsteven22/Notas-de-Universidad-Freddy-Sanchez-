@@ -6,7 +6,7 @@ tags: [MATG1051, unidad1, indice, discretas]
 # 🗺️ Unidad 1 — Lógica y Conjuntos — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

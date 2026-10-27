@@ -14,7 +14,7 @@ tags: [FESD, unidad4, indice, EYAG1037]
 
 ## 📊 Mapa de conexiones
 
-![[../../Diagramas/00_-_Índice_Unidad_4_01.svg]]
+![[../../Diagramas/00_-_FESD_Indice_Unidad_4_01.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[07 - Lógica fija y tablas de verdad]] (Unidad 3)
