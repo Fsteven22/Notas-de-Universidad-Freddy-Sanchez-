@@ -192,7 +192,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-08-graph.svg]]
 >
-> **Cómo leerlo:** rectángulo = entidad (`[[ ]]` = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
+> **Cómo leerlo:** rectángulo = entidad (doble rectángulo = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
 
 ---
 

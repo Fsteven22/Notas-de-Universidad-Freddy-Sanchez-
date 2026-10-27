@@ -16,8 +16,8 @@ dg-publish: true
 > | **Prerrequisito** | Inglés B1 (CEFR) |
 > | **Libro guía** | Empower B1+ Combo B (Doff et al., Cambridge 2016) |
 > | **Responsables** | María Cecilia Moreno Abramowicz · María Helen Camacho Rivadeneira |
-> | **Contenido oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Material de clase/EIII Course Contents.pdf\\|EIII Course Contents.pdf]] |
-> | **Recursos Unidad 0** | 🔗 [[Unidad 0 - Guias y Ejercicios/Recursos Unidad 0\\|Recursos Unidad 0]] (9 PDFs en 3 carpetas por tipo, 4 plantillas, 2 videos, 3 imágenes) |
+> | **Contenido oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Material de clase/EIII Course Contents.pdf\|EIII Course Contents.pdf]] |
+> | **Recursos Unidad 0** | 🔗 [[Unidad 0 - Guias y Ejercicios/Recursos Unidad 0\|Recursos Unidad 0]] (9 PDFs en 3 carpetas por tipo, 4 plantillas, 2 videos, 3 imágenes) |
 >
 > > No confundir con `Preuniversitario / MOOC de ingles` (A1-A2) ni `Inglés II (C1-C2)`.
 

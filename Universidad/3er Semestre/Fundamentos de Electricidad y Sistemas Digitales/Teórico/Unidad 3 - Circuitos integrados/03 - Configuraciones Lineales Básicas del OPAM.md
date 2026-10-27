@@ -19,8 +19,8 @@ dg-publish: true
 >
 > |Configuración|Estado en tu vault|
 > |---|---|
-> |Seguidor de tensión ($v_o=v_i$)|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#🔌 Seguidor de Tensión (Buffer) — Aislamiento de Impedancias\\\\\|02 - Buffer]]|
-> |Diferencial simple y de instrumentación|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#➖ Amplificador Diferencial — Rechazo de Modo Común\\\\\|02]]|
+> |Seguidor de tensión ($v_o=v_i$)|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#🔌 Seguidor de Tensión (Buffer) — Aislamiento de Impedancias\|02 - Buffer]]|
+> |Diferencial simple y de instrumentación|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#➖ Amplificador Diferencial — Rechazo de Modo Común\|02]]|
 > |**Inversor, no inversor, sumadores, eliminación DC, convertidores**|**Nuevos aquí (esta nota, PDF pp. 4-13 y 18-20)**|
 > |Integrador / Derivador / No lineales|En [[04 - Integrador, Derivador y Circuitos No Lineales\|04]]|
 

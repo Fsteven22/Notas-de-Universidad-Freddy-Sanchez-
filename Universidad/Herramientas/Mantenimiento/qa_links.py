@@ -45,6 +45,25 @@ def existe(t):
                 return True
     return False
 
+def partir_alias(t):
+    """Separa [[destino|alias]] -> destino.
+
+    Reglas de Obsidian:
+    - La barra vertical separa destino y alias. Dentro de una tabla hay
+      que escaparla (\\|) para que la tabla no se rompa, pero sigue
+      siendo el separador de alias.
+    - El # dentro del destino es un ancla de encabezado, salvo que el
+      nombre del archivo lo contenga (ej. "Speaking Practice # 1"): en
+      ese caso el archivo manda y se prueba el nombre completo."""
+    t = t.replace("\\\\", "\x00")
+    partes = t.split("|", 1)
+    dest = partes[0].replace("\x00", "\\").strip()
+    if "#" in dest:
+        sin_ancla, _, ancla = dest.partition("#")
+        if ancla and not existe(dest) and existe(sin_ancla.strip()):
+            dest = sin_ancla.strip()
+    return dest
+
 bad, total = [], 0
 for dp, ds, fs in os.walk(args.root):
     ds[:] = [d for d in ds if d not in (".obsidian", ".trash", ".git", "node_modules")]
@@ -53,10 +72,13 @@ for dp, ds, fs in os.walk(args.root):
             continue
         rel = os.path.relpath(os.path.join(dp, f), args.root)
         t = io.open(os.path.join(dp, f), encoding="utf-8").read()
-        for m in re.findall(r"\[\[([^\]|#]+)", t):
+        for m in re.findall(r"\[\[([^\]]+)\]\]", t):
             total += 1
-            if not existe(norm_target(m.strip())):
-                bad.append("BAD: %s [en %s]" % (norm_target(m.strip()), rel))
+            dest = partir_alias(norm_target(m.strip()))
+            if not dest:
+                continue
+            if not existe(dest):
+                bad.append("BAD: %s [en %s]" % (dest, rel))
 
 out = "targets=%d  bad=%d\n" % (total, len(bad)) + "\n".join(bad)
 if args.sugerir:

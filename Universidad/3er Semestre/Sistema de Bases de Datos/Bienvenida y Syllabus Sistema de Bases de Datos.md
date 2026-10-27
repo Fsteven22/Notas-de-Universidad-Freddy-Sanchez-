@@ -18,7 +18,7 @@ tags: [TICG1018, bienvenida, syllabus]
 > | **Horario** | Paralelo 1: Mar y Jue 11:00-13:00 |
 > | **Oficina** | Vie 10:30-11:30 (previa cita) + foro 24h + Teams horario laboral |
 > | **Plataformas** | Aula Virtual, Teams, Datacamp (cuenta con nombre completo + mail ESPOL + foto) |
-> | **Políticas** | 📎 [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD00 Políticas.pdf\\|BD00 Políticas.pdf]] |
+> | **Políticas** | 📎 [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD00 Políticas.pdf\|BD00 Políticas.pdf]] |
 >
 > Las diapos usan códigos viejos (TICG1001/CCPG1043): es material reutilizado, el código oficial es TICG1018.
 
