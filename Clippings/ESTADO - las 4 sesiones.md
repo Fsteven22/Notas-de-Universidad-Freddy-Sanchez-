@@ -12,8 +12,8 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > push** en el LEEME ("Avisos de otros agentes") → pusheá.
 > Los **números globales** de abajo los actualiza quien haga el push.
 
-> [!important] Estado global verificado (27/10/2026, 15:45)
-> - `master` = `origin/master` = **`bb1bc19`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> [!important] Estado global verificado (27/10/2026, 16:05)
+> - `master` = `origin/master` = **`3231cc4`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - Cuota OneDrive: **2,39 GB de 5 GB** en la raíz local. En la **nube** sigue pendiente vaciar la papelera (~1,8 GB) → depende del usuario.
