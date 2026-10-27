@@ -21,7 +21,7 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 
 > - Plataforma y laboratorio:
 
-![[CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf]]
+- `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: no se publica, está en `Universidad/_no-publicar.txt`)
 
 ![[Normas de uso en los laboratorios de CELEX-signed.pdf]]
 

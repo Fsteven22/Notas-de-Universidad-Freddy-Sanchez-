@@ -20,12 +20,11 @@ tags: [IDIG2012, unidad0, recursos]
 
 ## 👂 Escucha Activa (clase S1-S2)
 
-> [!note] 📝 Material de clase
-> PDFs con OCR aplicado (texto buscable). Se publican embebidos.
+> [!warning] 🔒 Material de clase (solo local)
+> PDFs con OCR aplicado (texto buscable). No se publican por copyright: están en la lista `Universidad/_no-publicar.txt`, sin URL pública y fuera del ZIP de la materia.
 
-![[Escucha Activa Parte 1_OCR.pdf]]
-
-![[Escucha Activa Parte 2_OCR.pdf]]
+- `Escucha Activa Parte 1.pdf` — clase S1-S2 (consultar en local)
+- `Escucha Activa Parte 2.pdf` — clase S1-S2 (consultar en local)
 
 ---
 

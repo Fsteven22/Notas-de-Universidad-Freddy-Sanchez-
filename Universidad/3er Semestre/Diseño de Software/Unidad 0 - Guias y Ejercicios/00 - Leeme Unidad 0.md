@@ -21,8 +21,6 @@ tags: [CCPG1042, unidad0, recursos]
 
 ![[SPA-SyllabusEUR_ACE-CCPG1042.pdf]]
 
-![[02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf]]
-
 ## 📕 Libros de texto (solo local, por copyright)
 
 No se publican: están en la lista `Universidad/_no-publicar.txt`. El archivo sigue en el vault, pero sin URL pública y fuera del ZIP de la materia.
@@ -30,6 +28,7 @@ No se publican: están en la lista `Universidad/_no-publicar.txt`. El archivo si
 - `03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf` — Shalloway & Trott, 2da ed.
 - `04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf` — Fowler, 2da ed.
 - `01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf` — Pressman & Maxim, 9na ed. (71.6 MB)
+- `02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf` — Stevens, 2da ed.
 - `Clean Architecture - Robert C. Martin (libro completo).pdf` — lectura asignada Control 01: caps. 3, 4 y 6. Integrado en [[Unidad 1 - Introducción al diseño/03 - Paradigmas de programación y diseño|U1-03]] y [[Unidad 1 - Introducción al diseño/Control 01 - Repaso Paradigmas|repaso].
 
 ## 🍰 Material de clase (pizarra)
