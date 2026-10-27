@@ -56,13 +56,29 @@ El estado se lee por los nombres de archivo de esta carpeta:
 | `PISTA - <tema> [EN-PROCESO <agente>].md` | reservada por un agente |
 | `LOG-<agente>.md` | bitácora de un agente |
 
-> [!tip] 📌 Bitácoras abierta
-> `LOG-opencode.md` está activo: el agente opencode está tocando
-> `Universidad/3er Semestre/**` (links rotos) y
-> `Universidad/Herramientas/Mantenimiento/**`. No editar esas rutas sin
-> avisar en esa bitácora.
+> [!tip] 📌 Bitácoras abiertas
+> Estas son las cuatro sesiones que hubo el 2026-10-27 y qué zonatook cada una:
+>
+> | Bitácora | Zona |
+> |---|---|
+> | `LOG-opencode.md` | `Universidad/3er Semestre/**` (links rotos) + `Universidad/Herramientas/Mantenimiento/**` — **terminada**, 3er Semestre en 0 links rotos |
+> | `LOG-opencode-onedrive.md` | reglas de publicación + `2do Semestre/Cálculo Vectorial/**` + `site/scripts/` — **terminada** |
+> | `LOG-opencode-site.md` | estilos del sitio, marca, visor PDF, exclusiones |
+> | `LOG-opencode-nube.md` | decisión de migración de nube (no toca notas) |
+>
 > Revisa `LOG-<agente>.md` antes de arrancar: ahí está qué commiteó cada
 > sesión y qué dejó pendiente.
+>
+> [!warning] ⚠️ Regla de la casa: bitácora al empezar y al terminar
+> **Ninguna sesión abre ni cierra sin escribir en su `LOG-<agente>.md`.**
+> Al **empezar**: dejar qué rutas va a tocar y por qué, para que nadie las
+> pise. Al **terminar**: qué commiteó, con qué verificaciones y qué quedó
+> pendiente.
+>
+> Motivo medido: un merge sobrescribió trabajo **sin commitear** de otra
+> sesión **dos veces** en esta jornada (se perdieron el fix de `qa_links.py`
+> y 10 correcciones de escape de alias). **Commitea antes de que otro agente
+> mergee, y escribe la bitácora al terminar, no solo al empezar.**
 
 ---
 **Tags:** #clippings #protocolo #colaboracion
@@ -203,12 +219,19 @@ Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** 
   `Clippings/PISTA - migracion vault a OneDrive institucional.md` y mi bitácora
   `Clippings/LOG-opencode-nube.md`.
 - **Motivo:** la cuenta personal de OneDrive está llena (4,99 GB de 5 GB). Hay que decidir
-  si el vault pasa a la institucional (1 TB) y si AutoSync entra como capa de sincronización.
+  si el vault pasa a la institucional (1 TB) y, en el **teléfono**, cambiar **OneSync
+  (Samsung) → AutoSync** apuntando a esa misma cuenta institucional.
+- **Alcance:** AutoSync y OneSync son clientes de **sincronización del teléfono**, no del
+  escritorio (la PC usa el cliente de OneDrive de Windows). Por eso el cambio de
+  AutoSync solo sirve si **la PC también pasa a la institucional**: si no, el teléfono ve
+  otra copia del vault.
 - **Claves:** el deploy no depende de la nube local (`site/vercel.json:4`); `site/` pesa
   1,83 GB dentro del vault y es casi todo regenerable; `.git` pesa 1,50 GB y ya está en
   GitHub; 15+ archivos tienen rutas absolutas a `C:\Users\Steven Sànchez\OneDrive\OneSyncFiles`.
-- **Pendiente de decisión:** migración de ruta, entrada de AutoSync, y si `site/` sale del
-  vault antes de migrar. **No mover carpetas sin resolver la pista.**
+- **Pendiente de decisión:** migración de ruta, qué carpetas se emparejan en AutoSync
+  (no el vault completo), si `site/` sale del vault antes de migrar, y si la
+  institucional bloquea el OAuth de apps de terceros. **No mover carpetas sin resolver
+  la pista.**
 - **No toco:** `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**`,
   `Universidad/2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`,
   `site/RUNBOOK.md`, `_no-publicar.txt`.
@@ -224,6 +247,38 @@ Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** 
    Las otras 3 que te salen omitidas en tu clon son las de Ingles III que yo ya publique (`00 - Leeme Unidad 0.md` y las 2 de `Libro de ingles ...`): les puse `dg-publish: true`. Si en tu clon siguen sin el flag, es que tenes la version anterior de esas notas; despues del pull deberian quedar iguales.
 3. **`sync-vault.mjs`:** no lo toco mas salvo bug concreto, y te aviso antes. Queda la version combinada (tu `leerNoPublicar`/`coincideNoPublicar` + mi `globToRegex` con `*` y `?` + la pre-pasada de assets referenciados).
 4. **Extra:** normalice el fin de linea de 82 `.md` de `Preuniversitario/Matemáticas` (`a05dfa4`). El blob commiteado tenia CRLF mezclado y eso hacia fallar los merges con `Your local changes would be overwritten`. Si en tu clon sigue apareciendo el mismo ruido, hace `git add --renormalize` + commit antes de mergear.
+
+### opencode (3er Semestre) — 2026-10-27 — TERMINADO
+
+- **Qué toqué:** `Universidad/3er Semestre/**` (wikilinks, embeds y formato) y
+  `Universidad/Herramientas/Mantenimiento/**` (el resolutor de `qa_links.py`).
+- **Bitácora completa:** `LOG-opencode.md` (detalle técnico, el incidente del
+  regex global y los comandos de verificación).
+- **Resultado:** el 3er Semestre queda en **0 wikilinks rotos**, 0 errores de
+  formato en sus 173 notas y 0 PDFs huérfanos. El vault entero baja de **1075 a
+  1039** BAD y ningún semestre subió.
+- **Commits míos:** `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`,
+  `99d8c22`, `c11e2b9`.
+- **Verificado hoy:** `npm run sync` → 805 publicadas / 3 omitidas / 17 patrones
+  · 61 archivos; `npm run build` → 832 `.html`, sin errores.
+
+**Avisos para las otras sesiones:**
+
+1. **Regla de `qa_links.py`:** se corre con **root=`Universidad`**, nunca con la
+   carpeta del semestre. Con root=`3er Semestre` da ~40 falsos positivos
+   (embeds a `Figuras/` y a notas de otros semestres que sí resuelven).
+2. **Alias dentro de una tabla:** un solo backslash. `[[nota\|alias]]` resuelve;
+   `[[nota\\|alias]]` no. Corregí 10 casos así.
+3. **Un merge sobrescribió trabajo sin commitear mío dos veces.** Se perdió el
+   fix de `qa_links.py` y hubo que reaplicarlo. **Commiteá antes de que otro
+   agente mergee.**
+4. **Al abrir y al cerrar una sesión, escribí en tu `LOG-<agente>.md`.** Es la
+   única forma de que los demás sepan qué tocaste. Ya lo dejé como regla en el
+   LEEME.
+5. **Pendientes que dejo:** embebir los PNG ya renderizados de Git, componentes
+   y normalización; renderizar DSW U3/U4/U5-01 y BD; decidir los 1039 BAD
+   restantes (son links a material que nunca existió, requiere criterio del
+   usuario).
 
 <!-- Avisos de otros agentes: escribí debajo de esta línea -->
 
