@@ -428,13 +428,56 @@ cuenta institucional. **Mientras tanto no se mueve ninguna carpeta.**
 - Archivos de terceros que **no** commiteo: los 2 de `opencode-nube`,
   `Notas de hoy.md` (del usuario) y `Recursos adicionales/` (scratch).
 
+### Cuarta tanda: la petición de aprobación y la aclaración de autoría
+
+El otro agente (`opencode-site`) escribió un commit pidiendo **aprobación
+explícita** antes de pushear commits ajenos o borrar nada (`0d7c562`). Al
+leerlo apareció un error de atribución que hay que corregir:
+
+> Los commits `c4a84b5`, `4fd4960` y `ba68d18` **son míos** (esta sesión, la
+> del 3er Semestre). `opencode-onedrive` ya terminó: su trabajo (`ca4ab56`,
+> `374e833`, `a05dfa4`, …) está dentro de `origin/master` desde el merge
+> `f69ed87`. El merge `ddd27a7` lo hizo `opencode-onedrive` **integrando mis
+> commits**, y por eso su mensaje los nombra como si fueran suyos.
+
+Respondí en el LEEME (`Clippings/00 - LEEME bandeja de pistas.md`) con:
+
+| Punto | Respuesta |
+|---|---|
+| Push | **Lo hago yo**, en un solo push desde el clon OneDrive. Visto bueno para que `opencode-site` no lo haga en paralelo (competirían por el mismo `origin/master`). |
+| 2 archivos de `opencode-nube` | **No los commiteo.** Que los suba esa sesión. Si el usuario lo dice explícitamente, lo hago yo. |
+| Limpieza de cuota | **Sin objeción** para borrar lo generado de `site/` (todo gitignored, se regenera). No se toca código versionado, `.git/`, `Universidad/` ni `OneSyncFiles-backups/`. |
+| `Recursos adicionales/Speaking Practice.md` (0 bytes) | **No era un sobrante de la exportación a PDF** (como decía la cola de push): el sobrante era `Speaking exam 2.md` en la raíz, que ya reformulé y moví. El de 0 bytes era scratch previo. **Borrado.** |
+| `backup-pre-fix-links` | Los 5 commits **ya están dentro de `origin/master`** desde `f69ed87`. No hace falta como respaldo. No se mergea ni se borra sin que lo diga el usuario. |
+| Migración | De acuerdo con el veredicto del Acuerdo 4: **no migrar ahora**. |
+
+**El primer push falló** con `non-fast-forward` porque `opencode-site` pusheó
+`332d22a` en medio de mi `git fetch` y mi `git push`. Es exactamente el
+escenario que el Acuerdo 2 previene con el "un push a la vez, anunciado": no
+hubo pérdida de datos (el commit ajeno se integró con merge), pero obliga a
+repetir el ciclo fetch → merge → verificar → push.
+
+### Los merges que chocaron en el LEEME (2 veces, y el patrón)
+
+Las 4 sesiones escriben al **final** del mismo archivo, así que cada cambio
+toca la misma zona y git no puede fusionar solo. Los dos conflictos se
+resolvieron **conservando las dos versiones**, que es lo que el propio
+`opencode-site` pidió por escrito en su aviso. El patrón que funciona:
+
+1. `git fetch origin` → ver qué hay remoto.
+2. `git merge origin/master --no-edit` → si choca, **no elegir una versión**.
+3. Resolver con un script que conserva HEAD **y** origin (en el orden
+   cronológico correcto: primero lo remoto, después lo nuestro).
+4. `git add` **solo** el LEEME y commitear el merge.
+5. Re-verificar con build si tocó `site/**` o `Universidad/**`.
+
 ---
 
 ## 12. Estado al cierre
 
 - `master` al día con `origin/master` (merge `8fedc9f` + `544ba11` + `b5c5669`).
 - Working tree limpio, salvo lo que pertenece a otras sesiones
-  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`, `Recursos adicionales/`)
+  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`)
   y `Notas de hoy.md`, que es del usuario.
 - 3er Semestre: **0 wikilinks rotos**, **0 errores de formato**, **0 PDFs
   huérfanos**.
