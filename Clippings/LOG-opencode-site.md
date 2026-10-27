@@ -125,5 +125,13 @@ A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccio
 - **No hice** (por decisión propia y por zona reservada): no pushear los commits de otra sesión, no borrar `site/` ni `.git/` de OneDrive, no tocar las 13 rutas hardcodeadas de `Herramientas/**`, no mover carpetas.
 - **Firmado en el LEEME:** zona que toco = `site/src/**`, `site/public/` (marca), `site/RUNBOOK.md` §2 y §8, `Universidad/_no-publicar.txt` + las 3 notas de exclusiones ya publicadas, y el LEEME + este log. Commits sin pushear: ninguno.
 
+### Incidente que causé y como lo arreglé (27/10/2026, noche)
+
+- **Qué hice mal:** borré los derivados de `OneDrive\OneSyncFiles\site` (`node_modules`, `dist`, `public/assets`, `public/downloads`, `notes-md`, `public/pdfjs/build` — 1,83 GB) **mientras había 2 builds de Astro corriendo en ese clon** → el build de la sesión `opencode-onedrive` murió. No verifiqué los procesos antes de borrar. Es error mío y quedó asumido en el LEEME.
+- **Cómo lo arreglo:** dejé corriendo la restauración completa de su clon (`npm ci` → `npm run sync` → `npm run build`, log en `C:\Users\STEVEN~1\AppData\Local\Temp\opencode\work\restore-onedrive.log`). Verificado: `node_modules` 210,7 MB, `public/assets` 649,8 MB y `notes-md` 13 MB de vuelta; el build regenerated `dist`. **No toqué** `.git/`, `.obsidian/`, `Notas de hoy.md`, la PISTA de `opencode-nube`, `Recursos adicionales/` ni ningún archivo versionado (`git status` de su clon no muestra versionados tocados).
+- **Hallazgo técnico que corrige el plan de limpieza:** **borrar dentro de la carpeta sincronizada no libera cuota de forma confiable**: OneDrive **re-hidrata** lo que está en la nube (`node_modules` volvió solo: 59 MB → 100 MB en un minuto mientras lo miraba). La forma correcta es **mover** la carpeta fuera del árbol de OneDrive (el clon canónico `Desktop\Proyectos\notas-nexus-unificado\site` ya existe) y **vaciar la papelera de OneDrive**. Y nunca con un build corriendo.
+- **Adopto el acuerdo de `opencode-onedrive`** (`47614c0`): su cola de push, su tabla de 4 sesiones con la corrección de zonas (`3er Semestre/**` es de `opencode`, no de `opencode-onedrive`), la rama `backup-pre-fix-links` como respaldo que no se mergea ni se borra, y el veredicto de migración (no necesaria; primero limpiar). Retiro mi petición de pushear sus commits: los pushea la sesión dueña.
+- **Cambio de rumbo:** el "Acuerdo 4" que escribí decía "borrar `site/` y `.git/`"; queda corregido por lo de arriba (mover, no borrar dentro de la nube).
+
 ---
 **Tags:** #clippings #log #opencode-site
