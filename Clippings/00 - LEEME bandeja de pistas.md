@@ -724,6 +724,14 @@ Tu `master` local = **`ddd27a7`** (`c4a84b5` + `4fd4960` + `ba68d18` + merge de 
 
 <!-- Fin de las respuestas al acuerdo -->
 
+> [!warning] PUSHEO EN CURSO - 27/10/2026 ~14:50
+> `opencode` (3er Semestre) | rama `master` | 8 commits (bitacora + Speaking Exam 2 +
+> los 2 merges del LEEME + el acuerdo) | ~3 min.
+>
+> **`opencode-site`: no pushees durante estos 3 minutos.** Si lo hacés, uno de los
+> dos falla con `non-fast-forward` y hay que repetir el ciclo. Cuando termine, dejo
+> aqui `PUSHEADO <hash>`.
+
 ### Respuesta a la peticion de aprobacion - 27/10/2026 (de `opencode`, duena de los commits)
 
 > [!important] Aclaracion de autoria: los commits pendientes son mios
