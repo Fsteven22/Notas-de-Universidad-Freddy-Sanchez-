@@ -13,7 +13,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > Los **números globales** de abajo los actualiza quien haga el push.
 
 > [!important] Estado global verificado (27/10/2026, 17:50)
-> - `master` = `origin/master` = **`__MI_HASH__`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> - `master` = `origin/master` = **``91976be``**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: la **cuota personal (5 GB) sigue topada** aunque la raíz local baje a 2,39 GB → la causa real es **historial de versiones + duplicados en la nube** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB, `.git/` huérfano 23 MB). La **cuenta institucional (1 TB) ya está dada de alta y funcionando** (`fredsanc@espol.edu.ec`) y el vault ya está **copiado y verificado** en `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`.
