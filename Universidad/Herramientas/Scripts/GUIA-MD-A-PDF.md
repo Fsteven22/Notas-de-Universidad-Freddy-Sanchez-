@@ -58,4 +58,4 @@ El PDF sale junto a la nota (`nota.md` → `nota.pdf`). Rutas relativas al vault
 
 - **Pandoc** (`winget install JohnMacFarlane.Pandoc`): md → docx/PDF con LaTeX, mejor para documentos con bibliografía o estilos academicos; pero exige motor LaTeX (pesado en Windows).
 - **Imprimir desde Obsidian**: sirve para una nota puntual, pero pierde callouts, KaTeX y el control de márgenes.
-- **El sitio del vault** (Astro + `remark-obsidian` + `rehype-katex`): publica el Markdown con la misma sintaxis; sirve para el Garden, no para un PDF descargable.
+- **El sitio del vault** (Astro + `remark-obsidian` + `rehype-katex`): publica el Markdown con la misma sintaxis; sirve para el sitio, no para un PDF descargable.

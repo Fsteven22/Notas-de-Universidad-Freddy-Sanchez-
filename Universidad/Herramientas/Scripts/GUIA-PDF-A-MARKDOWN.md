@@ -97,7 +97,7 @@ Ventaja: `entrada_ocr.pdf` queda con capa de texto real (buscable, imprimible) y
 1. **Convertir** con la ruta que corresponda (sección 1).
 2. **Revisar** el `.md` a ojo: acentos, tablas, títulos, orden de columnas. El OCR nunca es perfecto.
 3. **Limpiar** formato: `py limpiar_espacios.py "ruta/nota.md" --fix` (script del vault, ver `LEEME-SCRIPTS.md`).
-4. **Convertir en nota**: copia el `.md` a `Universidad/<semestre>/<materia>/`, con frontmatter (`dg-publish: true` si va al Garden, `dg-publish: false` si es material interno) y **una sola** línea `tags:`.
+4. **Convertir en nota**: copia el `.md` a `Universidad/<semestre>/<materia>/`, con frontmatter (`dg-publish: true` si va al sitio, `dg-publish: false` si es material interno) y **una sola** línea `tags:`.
 5. **Auditar**: `py verificar_nota.py "ruta/nota.md"` debe salir con `0`.
 6. **Diagramas**: si el PDF traía gráficos, genera los SVG y embébelos con la sintaxis de embed de Obsidian (receta en `LEEME-SCRIPTS.md`).
 7. **Commit** solo si lo pides.
