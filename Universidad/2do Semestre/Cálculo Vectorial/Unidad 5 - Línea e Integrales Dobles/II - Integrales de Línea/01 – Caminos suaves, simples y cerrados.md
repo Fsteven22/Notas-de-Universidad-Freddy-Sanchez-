@@ -25,6 +25,9 @@ dg-publish: true
 > |**Integración**|Integrales de línea|Trabajo, circulación, flujo|
 > |**Computación**|Gráficos y animaciones|Movimiento de objetos 3D|
 
+
+![[Diagramas/01_–_Caminos_suaves_simples_y_cerrados.svg]]
+
 ![[Diagramas/01_–_Caminos_suaves,_simples_y_cerrados_01.svg]]
 
 ---

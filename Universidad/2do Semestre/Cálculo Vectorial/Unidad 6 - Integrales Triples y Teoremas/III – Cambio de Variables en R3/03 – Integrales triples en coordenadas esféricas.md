@@ -22,6 +22,9 @@ dg-publish: true
 > |**Simplificación**|Ecuaciones compactas|$x^2 + y^2 + z^2 = a^2$ → $\rho = a$|
 > |**Física**|Problemas con punto central|Mecánica cuántica, astrofísica|
 
+
+![[Diagramas/12_-_Integral_triple_esfericas_01.svg]]
+
 ![[Diagramas/03_–_Integrales_triples_en_coordenadas_esféricas_01.svg]]
 
 ---

@@ -27,6 +27,9 @@ dg-publish: true
 > |**Transferencia de calor**|Flujo térmico|Aislamiento, intercambiadores|
 > |**Meteorología**|Flujo de masa de aire|Predicción del tiempo|
 
+
+![[Diagramas/14_-_Flujo_de_campo_vectorial_01.svg]]
+
 ![[Diagramas/03_–_Integral_de_superficie_vectorial_(Flujo)_01.svg]]
 
 ---

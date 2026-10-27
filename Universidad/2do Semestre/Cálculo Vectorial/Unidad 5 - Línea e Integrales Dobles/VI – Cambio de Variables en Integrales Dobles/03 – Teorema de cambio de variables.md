@@ -20,6 +20,9 @@ dg-publish: true
 > |**Cálculo eficiente**|Reduce la complejidad computacional|Integrales múltiples complejas|
 > |**Modelado físico**|Representa mejor ciertos fenómenos|Campos gravitacionales, ondas|
 
+
+![[Diagramas/01_–_Teorema_de_cambio_de_variable_en_R3.svg]]
+
 ![[Diagramas/03_–_Teorema_de_cambio_de_variables_01.svg]]
 
 ---

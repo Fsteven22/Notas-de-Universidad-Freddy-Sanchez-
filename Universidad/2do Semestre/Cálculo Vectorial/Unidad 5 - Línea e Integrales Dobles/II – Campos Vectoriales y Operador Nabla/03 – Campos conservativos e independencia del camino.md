@@ -23,6 +23,9 @@ dg-publish: true
 > |**Integrales simplificadas**|∫C F·dr = U(B) - U(A)|Cálculo eficiente|
 > |**Predicción**|Conocer U predice todo el campo|Modelado físico|
 
+
+![[Diagramas/13_-_Campo_conservativo_potencial_01.svg]]
+
 ![[Diagramas/03_–_Campos_conservativos_e_independencia_del_camino_01.svg]]
 
 ---

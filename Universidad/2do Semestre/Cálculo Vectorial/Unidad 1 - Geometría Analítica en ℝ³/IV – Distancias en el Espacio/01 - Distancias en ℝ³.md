@@ -22,6 +22,9 @@ dg-publish: true
 > - **Gauss (1827):** Geometría diferencial
 > - **Minkowski (1908):** Espacios métricos generales
 
+
+![[Diagramas/01_-_Distancias_en_R3.svg]]
+
 ### 📊 Tipos de Distancias Fundamentales
 
 > [!note] 🌟 Clasificación de Distancias en ℝ³

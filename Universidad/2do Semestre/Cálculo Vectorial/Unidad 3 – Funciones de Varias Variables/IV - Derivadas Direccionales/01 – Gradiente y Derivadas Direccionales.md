@@ -33,6 +33,10 @@ dg-publish: true
 > - **Visión por computadora:** Detección de bordes, análisis de imágenes
 > - **Economía:** Dirección de máxima ganancia/pérdida
 
+
+![[Diagramas/05_-_Gradiente_y_campo_de_pendiente_01.svg]]
+![[Diagramas/06_-_Derivada_direccional_01.svg]]
+
 ---
 
 ## 🧭 Derivadas Direccionales

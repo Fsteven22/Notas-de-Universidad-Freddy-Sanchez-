@@ -25,6 +25,9 @@ dg-publish: true
 > |**Probabilidad**|Calcular probabilidades continuas|Distribuciones bivariadas|
 > |**Computación**|Gráficos por computadora|Render de superficies|
 
+
+![[Diagramas/01_–_Área_de_una_región_en_R2.svg]]
+
 ![[Diagramas/01_–_Área_de_una_región_en_R2_01.svg]]
 
 ---

@@ -27,6 +27,9 @@ dg-publish: true
 > - Orden 1: Un **plano inclinado** (tangente)
 > - Orden 2: Una **superficie parabólica** (curvatura)
 
+
+![[Diagramas/01_-_Polinomios_de_Taylor.svg]]
+
 ![[Diagramas/01_-_Polinomios_de_Taylor_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Taylor Multivariable?

@@ -24,6 +24,9 @@ dg-publish: true
 > |**Ingeniería**|Flujo de calor, campos electromagnéticos|Termodinámica, electromagnetismo|
 > |**Economía**|Funciones de utilidad, producción|Optimización, teoría de juegos|
 
+
+![[Diagramas/01_–_Integrales_múltiples.svg]]
+
 ![[Diagramas/01_–_Integrales_múltiples_01.svg]]
 
 ---

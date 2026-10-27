@@ -21,6 +21,10 @@ dg-publish: true
 > - **Computación Gráfica:** Renderizado de superficies planas
 > - **Cristalografía:** Estudio de planos cristalinos
 
+
+![[Diagramas/02_-_Planos_en_R3.svg]]
+![[Diagramas/04_-_Ecuacion_de_plano_en_R3_01.svg]]
+
 ### 🔢 Elementos que Definen un Plano
 
 > [!note] 🌟 Formas de Determinar un Plano Un plano en ℝ³ queda completamente determinado por:

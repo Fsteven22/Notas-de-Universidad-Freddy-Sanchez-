@@ -26,6 +26,10 @@ dg-publish: true
 > - **Grassmann (1844):** Representación vectorial
 > - **Plücker (1846):** Coordenadas de rectas en el espacio
 
+
+![[Diagramas/01_-_Rectas_en_R3.svg]]
+![[Diagramas/03_-_Ecuacion_de_recta_en_R3_01.svg]]
+
 ### 📊 Definición Formal
 
 > [!note] 🌟 Concepto de Recta en ℝ³ **Definición:**

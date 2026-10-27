@@ -27,6 +27,9 @@ dg-publish: true
 > - **Mínimo relativo** = Fondo de un valle 🏞️
 > - **Punto silla** = Paso o puerto de montaña 🛤️ (sube en una dirección, baja en otra)
 
+
+![[Diagramas/08_-_Extremo_local_segunda_derivada_01.svg]]
+
 ![[Diagramas/01_-_Extremos_relativos_01.svg]]
 
 > [!tip] 🎯 ¿Por Qué Estudiar Extremos?

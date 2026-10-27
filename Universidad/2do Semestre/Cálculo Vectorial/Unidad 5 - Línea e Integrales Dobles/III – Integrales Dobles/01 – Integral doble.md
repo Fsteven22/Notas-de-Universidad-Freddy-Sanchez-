@@ -26,6 +26,9 @@ dg-publish: true
 > |**Promedios**|Valores promedio en regiones|Temperatura promedio en una región|
 > |**Centro de masa**|Ubicación del centro de gravedad|Diseño estructural|
 
+
+![[Diagramas/01_–_Integral_doble.svg]]
+
 ![[Diagramas/01_–_Integral_doble_01.svg]]
 
 ---

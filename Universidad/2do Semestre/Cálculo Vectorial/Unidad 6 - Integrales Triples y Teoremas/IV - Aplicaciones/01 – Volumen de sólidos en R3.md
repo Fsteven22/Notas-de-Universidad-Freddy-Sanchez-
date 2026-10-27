@@ -26,6 +26,9 @@ dg-publish: true
 > |**Medicina**|Volúmenes de órganos|Imágenes médicas, diagnóstico|
 > |**Manufactura**|Materiales necesarios|Fundición, moldes, costos|
 
+
+![[Diagramas/01_–_Volumen_de_sólidos_en_R3.svg]]
+
 ![[Diagramas/01_–_Volumen_de_sólidos_en_R3_01.svg]]
 
 ---

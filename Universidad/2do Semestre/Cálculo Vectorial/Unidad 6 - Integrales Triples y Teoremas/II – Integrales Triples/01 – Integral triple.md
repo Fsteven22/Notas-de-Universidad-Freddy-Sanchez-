@@ -25,6 +25,9 @@ dg-publish: true
 > |**Probabilidad**|Distribuciones en 3D|Estadística multivariable|
 > |**Física**|Campos escalares en espacio|Densidad, temperatura, presión|
 
+
+![[Diagramas/01_–_Integral_triple.svg]]
+
 ![[Diagramas/01_–_Integral_triple_01.svg]]
 
 ---

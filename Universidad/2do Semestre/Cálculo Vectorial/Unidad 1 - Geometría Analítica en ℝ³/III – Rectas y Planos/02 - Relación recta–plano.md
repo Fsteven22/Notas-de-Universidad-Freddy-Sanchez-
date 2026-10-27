@@ -28,6 +28,9 @@ dg-publish: true
 > - Una recta puede ser **paralela** a un plano (sin tocarlo)
 > - Una recta puede ser **perpendicular** a un plano
 
+
+![[Diagramas/02_-_Relación_recta–plano.svg]]
+
 ### 📊 Clasificación de Posiciones
 
 > [!note] 🌟 Tipos de Relaciones Posibles

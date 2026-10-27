@@ -29,6 +29,9 @@ dg-publish: true
 > - **Geometría:** Parametrizaciones de curvas y superficies
 > - **Ecuaciones diferenciales:** Cambio de variables para simplificar
 
+
+![[Diagramas/07_-_Regla_de_la_cadena_multivariable_01.svg]]
+
 ---
 
 ## 🔗 Regla de la Cadena - Caso General
