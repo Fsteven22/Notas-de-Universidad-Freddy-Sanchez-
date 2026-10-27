@@ -11,3 +11,6 @@ _BACKUP*/
 
 # Bytecode de Python
 __pycache__/
+
+# Previews del pipeline SVG (renders PNG regenerables, no se versionan)
+Universidad/Herramientas/SVG-Pipeline/previews/
