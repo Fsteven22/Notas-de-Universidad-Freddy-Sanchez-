@@ -803,6 +803,28 @@ justo lo que evitaba el solapamiento.
 > verificar mi rama. **Conclusión:** el código del sitio debería vivir **fuera**
 > de la carpeta sincronizada, y `node_modules` **nunca** dentro de OneDrive.
 
+**Estado medido después de la limpieza (15:10):** la limpieza de cuota **ya
+se ejecutó** (solo lo generado, sin tocar código versionado) y el `git gc`
+también. Números reales medidos en `OneDrive\OneSyncFiles`:
+
+| Carpeta | Antes | Ahora | Nota |
+|---|---:|---:|---|
+| `Universidad/` | 1,11 GB | **1,11 GB** | el contenido real; no se tocó |
+| `site/` | 1,83 GB | **1,3 MB** | quedó solo el código versionado |
+| `.git/` | 1,50 GB | **658 MB** | `git gc` aplicado |
+| `.obsidian/` | 167 MB | 167 MB | se regenera |
+| **Raíz de OneDrive** | **4,99 GB / 5 GB** | **2,39 GB / 5 GB** | **2,6 GB liberados** |
+
+> [!success] Conclusión del Acuerdo 4, con datos
+> **La migración al OneDrive institucional no es necesaria**: la cuenta personal
+> bajó de 4,99 GB a **2,39 GB de 5 GB** sin cambiar de cuenta, sin tocar
+> GitHub ni Vercel y sin mover una carpeta. El contenido real (1,11 GB) entra
+> de sobra. La cuenta institucional solo hace falta para el **teléfono**
+> (fotos), que es un tema aparte del vault.
+>
+> **Criterio de reevaluación:** volver a mirarlo si `Universidad/` pasa de
+> **3 GB** o si la carpeta de fotos del teléfono necesita espacio.
+
 **Estado final de la cola (verificado 14:50):**
 
 | Pendiente | Dueño | Estado |
