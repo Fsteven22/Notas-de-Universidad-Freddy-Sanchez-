@@ -285,6 +285,37 @@ details.nx-fc p {
   color: var(--color-nexus-purple);
 }
 
+/* Aviso de material que no se publica (asset omitido) */
+.nx-omitido {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.9rem 0;
+  padding: 0.65rem 0.9rem;
+  border: 1px dashed rgba(245, 159, 0, 0.42);
+  border-left: 3px solid var(--color-nexus-gold);
+  border-radius: 0.6rem;
+  background: rgba(245, 159, 0, 0.06);
+  color: #d1d5db;
+  font-size: 0.92em;
+  line-height: 1.55;
+}
+.nx-omitido strong {
+  color: var(--color-nexus-gold);
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.nx-omitido-link {
+  border-color: rgba(107, 127, 163, 0.4);
+  border-left-color: var(--color-nexus-muted);
+  background: rgba(255, 255, 255, 0.03);
+}
+.nx-omitido-link strong {
+  color: var(--color-nexus-muted);
+}
+
 /* KaTeX: tamano dentro de titulos de callout + overflow horizontal en movil */
 .nx-callout-title .katex {
   font-size: 1em;
