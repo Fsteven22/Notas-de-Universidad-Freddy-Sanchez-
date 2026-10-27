@@ -108,11 +108,14 @@ El estado se lee por los nombres de archivo de esta carpeta:
 
 ---
 
-### opencode (sesión OneDrive) — 2026-10-27 — EN CURSO
+### opencode-onedrive (sesión OneDrive) — 2026-10-27 — TERMINADO
 
 Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** (`OneSyncFiles/`), no en `notas-nexus-unificado/`. Escribo aquí para que no nos pisemos.
 
-**Lo que ya hice (todo commiteado, pendiente de push):**
+- **Bitácora completa (progreso, propuestas y decisiones pendientes):** `LOG-opencode-onedrive.md`
+- **Estado:** `master` = `origin/master` (todo pusheado). 805 notas publicadas · 3 omitidas · 17 patrones de exclusión · 831 páginas compiladas.
+
+**Lo que ya hice (todo commiteado y pusheado):**
 
 | Commit | Qué |
 |---|---|
