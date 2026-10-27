@@ -257,7 +257,7 @@ dg-publish: true
 > - [[12 - Funciones racionales]] - Tipo más común con asíntotas
 > - [[Derivadas y Gráficas]] - Análisis completo de funciones
 > - [[02 – Continuidad]] - Relación con discontinuidades
-> - [[Optimización]] - Aplicación de extremos y comportamiento
+> - Optimización - Aplicación de extremos y comportamiento
 
 ## Notas Recomendadas
 
@@ -275,9 +275,9 @@ dg-publish: true
 > 
 > - [[01 - Análisis Completo de Funciones]] - Integración con derivadas
 > - [[Funciones Trascendentes]] - Asíntotas en exponenciales y logaritmos
-> - [[Cálculo Diferencial Avanzado]] - Técnicas de graficación
-> - [[Geometría Analítica]] - Ecuaciones de rectas asintóticas
-> - [[Aplicaciones del Cálculo]] - Modelado con funciones asintóticas
+> - Cálculo Diferencial Avanzado - Técnicas de graficación
+> - Geometría Analítica - Ecuaciones de rectas asintóticas
+> - Aplicaciones del Cálculo - Modelado con funciones asintóticas
 > - [[Software Matemático]] - Verificación gráfica con tecnología
 
 ---

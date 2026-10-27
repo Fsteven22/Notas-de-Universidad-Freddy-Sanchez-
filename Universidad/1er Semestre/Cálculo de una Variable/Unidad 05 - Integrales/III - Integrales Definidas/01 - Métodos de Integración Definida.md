@@ -299,9 +299,9 @@ dg-publish: true
 > 
 > ### 🎯 Aplicaciones Prácticas
 > - [[Trabajo y Energía con Integrales]] - Uso en física
-> - [[Probabilidad y Estadística]] - Funciones de densidad
+> - Probabilidad y Estadística - Funciones de densidad
 > - [[Ecuaciones Diferenciales]] - Resolución de EDOs
-> - [[Transformadas]] - Fourier, Laplace
+> - Transformadas - Fourier, Laplace
 > 
 
 ### 🏷️ Tags

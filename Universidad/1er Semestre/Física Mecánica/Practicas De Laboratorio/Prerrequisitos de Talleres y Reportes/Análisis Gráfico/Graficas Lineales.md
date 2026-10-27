@@ -1094,8 +1094,8 @@ dg-publish: true
 > 
 > - [[Estadística Básica]] - Fundamento matemático
 > - [[Incertidumbres Experimentales]] - Análisis de errores
-> - [[Regresión No Lineal]] - Extensiones avanzadas
-> - [[Análisis de Datos]] - Marco general
+> - Regresión No Lineal - Extensiones avanzadas
+> - Análisis de Datos - Marco general
 
 ## 🎯 Ejercicios y Problemas
 
@@ -1155,9 +1155,9 @@ dg-publish: true
 
 > [!note] **Temas Siguientes**
 > 
-> - [[Regresión No Lineal]] - Modelos más complejos
-> - [[Análisis de Series Temporales]] - Datos en función del tiempo
-> - [[Diseño de Experimentos]] - Planificación estadística
+> - Regresión No Lineal - Modelos más complejos
+> - Análisis de Series Temporales - Datos en función del tiempo
+> - Diseño de Experimentos - Planificación estadística
 > - [[Validación de Modelos]] - Verificación de hipótesis
 
 ---

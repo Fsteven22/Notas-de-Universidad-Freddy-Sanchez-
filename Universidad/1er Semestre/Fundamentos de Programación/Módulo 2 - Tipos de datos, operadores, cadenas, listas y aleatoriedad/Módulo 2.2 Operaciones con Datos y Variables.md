@@ -324,12 +324,12 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Variables y Tipos Básicos Python]] - Fundamentos de datos
-> - [[Condicionales If-Else Python]] - Uso de operadores booleanos
-> - [[Bucles Python]] - Iteración con operaciones
+> - Variables y Tipos Básicos Python - Fundamentos de datos
+> - Condicionales If-Else Python - Uso de operadores booleanos
+> - Bucles Python - Iteración con operaciones
 > - [[Funciones Python]] - Operaciones reutilizables
 > - [[Manejo de Errores Python]] - Try/except para casting
-> - [[Métodos Avanzados Strings Python]] - Manipulación compleja de texto
+> - Métodos Avanzados Strings Python - Manipulación compleja de texto
 
 ## 🎯 Notas Recomendadas para Complementar
 
@@ -337,19 +337,19 @@ dg-publish: true
 > 
 > ### 🔧 **Prerrequisitos**
 > 
-> - [[Instalación Python]]
-> - [[Variables Básicas Python]]
+> - Instalación Python
+> - Variables Básicas Python
 > - [[Conceptos Básicos Programación]]
-> - [[Tipos de Datos Primitivos]]
+> - Tipos de Datos Primitivos
 > 
 > ### 🔄 **Temas Relacionados**
 > 
 > - [[Expresiones Regulares Python]] - Manipulación avanzada de strings
 > - [[Matemáticas Python (math)]] - Operaciones numéricas complejas
-> - [[Formateo de Strings Python]] - f-strings y formato avanzado
+> - Formateo de Strings Python - f-strings y formato avanzado
 > - [[Validación de Datos Python]] - Uso práctico de casting y booleanos
 > - [[Algoritmos de Búsqueda]] - Aplicaciones de comparaciones
-> - [[Depuración Python]] - Debugging con operaciones
+> - Depuración Python - Debugging con operaciones
 
 ## 🧠 Técnica de Estudio: C.O.D.E Operations
 

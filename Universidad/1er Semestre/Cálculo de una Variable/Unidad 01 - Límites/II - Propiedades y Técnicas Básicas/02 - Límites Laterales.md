@@ -215,9 +215,9 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Formalización rigurosa
 > - [[01 - Propiedades y Teoremas de los Límites]] - Técnicas de cálculo
-> - [[Asíntotas Verticales]] - Límites infinitos laterales
+> - Asíntotas Verticales - Límites infinitos laterales
 > - [[Derivadas Laterales]] - Aplicación en derivabilidad
-> - [[Teorema del Sandwich]] - Técnicas avanzadas de límites
+> - Teorema del Sandwich - Técnicas avanzadas de límites
 
 ---
 

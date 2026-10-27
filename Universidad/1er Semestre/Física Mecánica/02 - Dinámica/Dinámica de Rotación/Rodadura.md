@@ -204,9 +204,9 @@ dg-publish: true
 >     
 > - > [[Cinemática Rotacional]] - Relaciones angulares
 >     
-> - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Valores para diferentes formas
+> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Valores para diferentes formas
 >     
-> - > [[Fricción Estática]] - Fuerza clave en rodadura
+> - > Fricción Estática - Fuerza clave en rodadura
 >     
 > - > [[Conservación de Energía]] - Fundamento del método energético
 >     
@@ -214,7 +214,7 @@ dg-publish: true
 >     
 > - > [[Trabajo y Energía]] - Conceptos energéticos
 >     
-> - > [[Energía Cinética]] - Traslacional y rotacional
+> - > Energía Cinética - Traslacional y rotacional
 >     
 >
 

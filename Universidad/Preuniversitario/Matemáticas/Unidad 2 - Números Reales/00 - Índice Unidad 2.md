@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Esta unidad construye el sistema de los **números reales** desde sus cimientos (conjuntos numéricos y representación decimal) hasta sus herramientas de cálculo (operaciones, orden, valor absoluto, ecuaciones e inecuaciones) y cierra con la matemática discreta que nace de los enteros (inducción, conteo, binomio y sucesiones).
 >
-> ![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
+> ![[Diagramas/00_-_Mate_Indice_Unidad_2_01.svg]]
 
 ---
 

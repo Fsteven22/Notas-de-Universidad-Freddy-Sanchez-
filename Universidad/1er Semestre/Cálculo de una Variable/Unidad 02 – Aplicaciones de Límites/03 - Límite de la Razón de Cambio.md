@@ -290,7 +290,7 @@ dg-publish: true
 > - [[Límites Básicos]] - Para entender la definición como límite
 > - [[Funciones y Gráficas]] - Interpretación geométrica
 > - [[Álgebra de Límites]] - Manipulación de expresiones límite
-> - [[Geometría Analítica]] - Ecuaciones de rectas
+> - Geometría Analítica - Ecuaciones de rectas
 > 
 > **Para profundizar:**
 > 

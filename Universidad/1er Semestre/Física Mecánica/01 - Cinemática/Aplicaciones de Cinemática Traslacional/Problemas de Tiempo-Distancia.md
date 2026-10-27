@@ -292,7 +292,7 @@ dg-publish: true
 > 
 > - [[Cinemática Traslacional]] - Base teórica para cada tramo
 > - [[Problemas de Persecución]] - Para casos con móviles múltiples
-> - [[Análisis Gráfico del Movimiento]] - Representación visual
+> - Análisis Gráfico del Movimiento - Representación visual
 
 
 ---

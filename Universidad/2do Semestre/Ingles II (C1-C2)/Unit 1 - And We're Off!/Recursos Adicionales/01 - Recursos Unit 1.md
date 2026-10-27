@@ -35,7 +35,7 @@ dg-publish: true
 > | [[Habits and States in the Present and Past.pdf]] | Archivo | Presentación del profesor — hábitos y estados en presente y pasado |
 > | [[SUMMARY OF TENSES- form-use-signal words-1.pdf]] | Archivo | Resumen completo de tiempos verbales con forma, uso y signal words |
 
-## 📎 Gramática publicada (Garden)
+## 📎 Gramática publicada (sitio web)
 
 ![[Habits and States in the Present and Past.pdf]]
 
@@ -83,7 +83,7 @@ dg-publish: true
 > | [[Academic Post KYdA.pdf]] | Instrucciones y requisitos de la tarea |
 > | [[Feedback code.png]] | Código de corrección usado por el profesor para el feedback escrito |
 
-## 📎 Academic Post publicado (Garden)
+## 📎 Academic Post publicado (sitio web)
 
 ![[Academic Post KYdA.pdf]]
 

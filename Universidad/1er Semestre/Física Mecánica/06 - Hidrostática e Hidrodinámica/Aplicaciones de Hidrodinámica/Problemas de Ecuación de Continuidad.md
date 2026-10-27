@@ -291,7 +291,7 @@ dg-publish: true
 > - [[Ecuación de Continuidad y Bernoulli]] - Teoría completa
 > - [[Flujo Laminar y Ecuación de Poiseuille]] - Flujo con viscosidad
 > - [[Presión y Densidad]] - Propiedades de fluidos
-> - [[Hidrodinámica]] - Conceptos generales
+> - Hidrodinámica - Conceptos generales
 > - **Próximo tema**: [[Problemas de Ecuación de Bernoulli]]
 
 ## 📚 Notas Recomendadas
@@ -730,7 +730,7 @@ dg-publish: true
 > - [[Problemas del Teorema de Torricelli]] - Aplicaciones relacionadas
 > - [[Flujo Laminar y Ecuación de Poiseuille]] - Comportamiento viscoso
 > - [[Presión y Densidad]] - Conceptos de base
-> - [[Aplicaciones de Hidrodinámica]] - Contexto general
+> - Aplicaciones de Hidrodinámica - Contexto general
 
 ## 📚 Notas Recomendadas
 

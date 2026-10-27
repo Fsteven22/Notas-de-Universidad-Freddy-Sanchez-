@@ -79,7 +79,7 @@ Instead, software lets us update our devices instantly without changing the hard
 
 ---
 
-## 📎 Presentación base (Garden)
+## 📎 Presentación base (sitio web)
 
 ![[Hardware vs Software (Dark Tech Edition).pdf]]
 

@@ -26,7 +26,7 @@ dg-publish: true
 > |**Laplaciano**|Curvatura del campo|Ecuación del calor|
 > |**Operaciones combinadas**|Identidades vectoriales complejas|Electromagnetismo|
 
-![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_01.svg]]
+![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_01.svg]]
 
 ---
 
@@ -52,7 +52,7 @@ dg-publish: true
 > 
 > **Naturaleza dual del operador:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_02.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_02.svg]]
 > 
 > **Ejemplo conceptual:**
 > 
@@ -103,7 +103,7 @@ dg-publish: true
 > 
 > **Flujo de transformaciones:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_03.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_03.svg]]
 
 ---
 
@@ -160,7 +160,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_04.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_04.svg]]
 
 ### 🎯 Regla del Producto
 
@@ -228,7 +228,7 @@ dg-publish: true
 > |**Div. de producto**|∇·(fF̄) = (∇f)·F̄ + f(∇·F̄)|(fg)' = f'g + fg'|
 > |**Rot. de producto**|∇×(fF̄) = (∇f)×F̄ + f(∇×F̄)|(fg)' = f'g + fg'|
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_05.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_05.svg]]
 
 ---
 
@@ -298,7 +298,7 @@ dg-publish: true
 > 
 > **Diagrama conceptual:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_06.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_06.svg]]
 > 
 > **Tabla de identidades cero:**
 > 
@@ -363,7 +363,7 @@ dg-publish: true
 > |**BAC-CAB**|∇×(∇×F̄) = ∇(∇·F̄) - ∇²F̄|Ecuaciones de ondas|
 > |**Grad. producto**|∇(F̄·Ḡ) = (F̄·∇)Ḡ + (Ḡ·∇)F̄ + F̄×(∇×Ḡ) + Ḡ×(∇×F̄)|Energía cinética|
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_07.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_07.svg]]
 
 ---
 
@@ -435,7 +435,7 @@ dg-publish: true
 > 
 > **Ecuaciones importantes que usan ∇²:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_08.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_08.svg]]
 > Partimos de la identidad BAC-CAB:
 > ∇×(∇×F̄) = ∇(∇·F̄) - ∇²F̄
 > 
@@ -492,7 +492,7 @@ dg-publish: true
 > 
 > Las propiedades del operador nabla son **fundamentales** para los teoremas que relacionan integrales de línea, superficie y volumen.
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_09.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_09.svg]]
 > 
 > **Teorema 1: Fundamental del Cálculo para Gradientes**
 > 
@@ -548,7 +548,7 @@ dg-publish: true
 > 
 > **Preparación para integrales de línea:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_10.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_10.svg]]
 
 ---
 
@@ -763,7 +763,7 @@ dg-publish: true
 > 
 > **Has dominado:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_11.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_11.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -784,7 +784,7 @@ dg-publish: true
 > 
 > **Roadmap de evolución:**
 > 
-> ![[Diagramas/02_–_Operador_nabla_y_sus_propiedades_12.svg]]
+> ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_12.svg]]
 > 
 > **Preguntas que podrás responder pronto:**
 > 

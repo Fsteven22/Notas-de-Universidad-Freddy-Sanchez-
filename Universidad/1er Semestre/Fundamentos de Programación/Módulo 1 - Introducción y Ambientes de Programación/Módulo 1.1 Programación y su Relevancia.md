@@ -251,11 +251,11 @@ dg-publish: true
 > [!quote]+ **Enlaces a Notas Relacionadas**
 > 
 > - [[Módulo 1.2 Introducción a Python]] - Primer lenguaje recomendado
-> - [[Algoritmos y Estructuras de Datos]] - Fundamentos lógicos
+> - Algoritmos y Estructuras de Datos - Fundamentos lógicos
 > - [[Lógica de Programación]] - Pensamiento estructurado
-> - [[Metodologías de Desarrollo]] - Procesos de creación de software
-> - [[Resolución de Problemas]] - Técnicas de análisis
-> - [[Herramientas de Desarrollo]] - IDEs y editores
+> - Metodologías de Desarrollo - Procesos de creación de software
+> - Resolución de Problemas - Técnicas de análisis
+> - Herramientas de Desarrollo - IDEs y editores
 
 ## Notas Recomendadas para Complementar 📖
 
@@ -263,20 +263,20 @@ dg-publish: true
 > 
 > ### 📋 Prerrequisitos Mentales
 > 
-> - [[Pensamiento Lógico]] - Base fundamental
+> - Pensamiento Lógico - Base fundamental
 > - [[Matemáticas Básicas]] - Operaciones y lógica
-> - [[Resolución de Problemas]] - Metodologías de análisis
+> - Resolución de Problemas - Metodologías de análisis
 > 
 > ### 🎯 Primeros Pasos Técnicos
 > 
 > - [[Módulo 2.1 Variables y Tipos de Datos]] - Almacenamiento de información
 > - [[Módulo 4.1 Condicional]] - Decisiones y repeticiones
 > - [[Módulo 3.1 Funciones]] - Modularización de código
-> - [[Debugging]] - Encontrar y corregir errores
+> - Debugging - Encontrar y corregir errores
 > 
 > ### 🚀 Desarrollo Avanzado
 > 
-> - [[Estructuras de Datos]] - Organización eficiente
+> - Estructuras de Datos - Organización eficiente
 > - [[Algoritmos Fundamentales]] - Soluciones optimizadas
 > - [[Programación Orientada a Objetos]] - Modelado del mundo real
 > - [[Bases de Datos]] - Gestión de información

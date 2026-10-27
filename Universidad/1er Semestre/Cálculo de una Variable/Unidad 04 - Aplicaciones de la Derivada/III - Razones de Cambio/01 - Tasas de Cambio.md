@@ -163,7 +163,7 @@ dg-publish: true
 > 
 > - [[01 - Propiedades y Teoremas de los Límites]] - Base para calcular derivadas
 > - [[05 - Función lineal]] - Pendiente constante vs variable
-> - [[Geometría Analítica]] - Pendientes de rectas
+> - Geometría Analítica - Pendientes de rectas
 > 
 > **Aplicaciones futuras:**
 > 
@@ -177,12 +177,12 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> 1. **[[Funciones y sus Gráficas]]** - Visualización
+> 1. **Funciones y sus Gráficas** - Visualización
 > 2. **[[01 - Propiedades y Teoremas de los Límites]]** - Técnicas de cálculo
 > 
-> **Temas Paralelos:** 3. **[[Rectas Secantes y Tangentes]]** - Interpretación geométrica 4. **[[Aplicaciones de Funciones]]** - Modelado matemático
+> **Temas Paralelos:** 3. **Rectas Secantes y Tangentes** - Interpretación geométrica 4. **[[Aplicaciones de Funciones]]** - Modelado matemático
 > 
-> **Siguientes Pasos:** 5. **[[Definición de Derivada]]** - Formalización 6. **[[Reglas de Derivación]]** - Herramientas de cálculo
+> **Siguientes Pasos:** 5. **Definición de Derivada** - Formalización 6. **[[Reglas de Derivación]]** - Herramientas de cálculo
 
 ## 🎯 Ejercicios de Práctica Progresiva
 

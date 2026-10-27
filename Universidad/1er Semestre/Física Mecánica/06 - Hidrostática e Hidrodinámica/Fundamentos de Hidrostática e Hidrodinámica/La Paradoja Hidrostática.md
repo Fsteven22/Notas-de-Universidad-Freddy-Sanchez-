@@ -252,16 +252,16 @@ dg-publish: true
 > [!info]+ Prerrequisitos
 > 
 > - [[Conceptos de Presión]]
-> - [[Densidad y Peso Específico]]
+> - Densidad y Peso Específico
 > - [[Equilibrio de Fluidos]]
 > - [[El Principio de Pascal]]
 >
 
 > [!success]+ Para Profundizar
 > 
-> - [[Hidrostática Avanzada]]
-> - [[Diseño de Sistemas Hidráulicos]]
-> - [[Manometría]]
+> - Hidrostática Avanzada
+> - Diseño de Sistemas Hidráulicos
+> - Manometría
 > - [[Distribución de Presiones]]
 > - [[Teorema de Stevin]]
 

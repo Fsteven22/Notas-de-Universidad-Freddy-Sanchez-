@@ -319,7 +319,7 @@ dg-publish: true
 > - [[Elasticidad]] - Fundamentos teóricos generales
 > - [[Equilibrio]] - Análisis de fuerzas y momentos
 > - [[Fundamentos de Física Mecánica]] - Base matemática
-> - [[Aplicaciones de Equilibrio]] - Casos prácticos
+> - Aplicaciones de Equilibrio - Casos prácticos
 
 ## 📚 Notas Recomendadas
 

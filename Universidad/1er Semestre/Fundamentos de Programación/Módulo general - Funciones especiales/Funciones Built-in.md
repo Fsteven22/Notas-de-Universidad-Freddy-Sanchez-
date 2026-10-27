@@ -299,12 +299,12 @@ dg-publish: true
 ## 🎓 Notas Recomendadas
 
 > [!note] 📖 Para Complementar tu Aprendizaje
-> - [[Módulos math y statistics]] - Funciones matemáticas avanzadas
-> - [[Comprensiones de Lista]] - Alternativas a filter() y map()
+> - Módulos math y statistics - Funciones matemáticas avanzadas
+> - Comprensiones de Lista - Alternativas a filter() y map()
 > - [[Manejo de Excepciones]] - Validación con isinstance()
-> - [[Programación Funcional]] - filter(), map(), reduce()
+> - Programación Funcional - filter(), map(), reduce()
 > - [[Decoradores]] - Funciones que modifican otras funciones
-> - [[Generadores e Iteradores]] - Conceptos avanzados de iteración
+> - Generadores e Iteradores - Conceptos avanzados de iteración
 
 ---
 

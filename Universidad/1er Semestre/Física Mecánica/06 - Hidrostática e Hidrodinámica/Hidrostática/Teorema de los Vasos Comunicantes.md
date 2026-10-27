@@ -124,7 +124,7 @@ dg-publish: true
 > 
 > - [[Presión Hidrostática]]
 > - [[El Principio de Pascal]]
-> - [[Densidad de Fluidos]]
+> - Densidad de Fluidos
 > - [[Sistemas Hidráulicos]]
 
 ## Notas Recomendadas
@@ -133,7 +133,7 @@ dg-publish: true
 > 
 > - [[Conceptos Básicos de Fluidos]]
 > - [[Presión y Fuerza]]
-> - [[Densidad y Peso Específico]]
+> - Densidad y Peso Específico
 >
 
 > [!tip] Continuación del Tema

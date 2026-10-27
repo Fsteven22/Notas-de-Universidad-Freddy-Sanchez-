@@ -463,7 +463,7 @@ dg-publish: true
 > 
 > - [[Derivadas]] - Cálculo de la primera derivada
 > - [[Reglas de Derivación]] - Técnicas de derivación
-> - [[Límites]] - Comportamiento local de funciones
+> - Límites - Comportamiento local de funciones
 > - [[02 – Continuidad]] - Base para aplicar teoremas
 > 
 > **Temas relacionados:**
@@ -474,13 +474,13 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Optimización]] - Problemas de máximos y mínimos
+> - Optimización - Problemas de máximos y mínimos
 > - [[Análisis de Funciones]] - Estudio completo
 > - [[Modelos Matemáticos]] - Aplicaciones en ciencias
 > 
 > **Temas avanzados:**
 > 
-> - [[Análisis Convexo]] - Propiedades de convexidad
+> - Análisis Convexo - Propiedades de convexidad
 > - [[Ecuaciones Diferenciales]] - Sistemas dinámicos
 > - [[Cálculo de Variaciones]] - Optimización funcional
 

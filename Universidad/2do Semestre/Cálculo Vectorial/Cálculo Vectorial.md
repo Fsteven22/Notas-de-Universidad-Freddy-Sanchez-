@@ -8,7 +8,7 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 **Código:** MATG1046 · **Semestre:** 2do · [[Bienvenida y Syllabus Calculo Vectorial|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Cálculo Vectorial (MATG1046). Cada unidad está organizada por subtemas; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Cálculo Vectorial (MATG1046). Cada unidad está organizada por subtemas; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

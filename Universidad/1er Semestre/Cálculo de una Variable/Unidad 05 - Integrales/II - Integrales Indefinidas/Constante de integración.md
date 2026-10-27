@@ -334,14 +334,14 @@ dg-publish: true
 > 
 > ### 📖 Para Profundizar
 > - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
-> - [[Condiciones de Frontera]] - Otros métodos de determinación
-> - [[Unicidad de Soluciones]] - Teoremas de existencia y unicidad
+> - Condiciones de Frontera - Otros métodos de determinación
+> - Unicidad de Soluciones - Teoremas de existencia y unicidad
 > - [[Análisis de Estabilidad]] - Comportamiento de soluciones
 > 
 > ### 🎯 Aplicaciones Especializadas
-> - [[Mecánica Clásica]] - Leyes de Newton y movimiento
-> - [[Circuitos RLC]] - Análisis de corriente y voltaje
-> - [[Modelos de Crecimiento]] - Poblaciones y economía
+> - Mecánica Clásica - Leyes de Newton y movimiento
+> - Circuitos RLC - Análisis de corriente y voltaje
+> - Modelos de Crecimiento - Poblaciones y economía
 > - [[Sistemas Dinámicos]] - Evolución temporal
 > 
 

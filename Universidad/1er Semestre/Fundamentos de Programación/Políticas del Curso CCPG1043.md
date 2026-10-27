@@ -20,8 +20,6 @@ tags: [CCPG1043, políticas, syllabus]
 
 ## 📊 Ponderación de calificaciones
 
-![[fp-ponderacion.png]]
-
 ## 🧾 Políticas generales
 
 > [!warning]+ **Asistencia y puntualidad**

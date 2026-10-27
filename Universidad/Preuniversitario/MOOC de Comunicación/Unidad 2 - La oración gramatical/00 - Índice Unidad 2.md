@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Esta unidad estudia la **oración gramatical**: su estructura básica de sujeto y predicado, los tipos de oraciones compuestas y las formas verbales. Dominar estos temas es clave para redactar con claridad y corrección.
 >
-> ![[Diagramas/00_-_Índice_Unidad_2_01.svg]]
+> ![[Diagramas/00_-_MOOC_Indice_Unidad_2_01.svg]]
 
 ---
 

@@ -283,9 +283,9 @@ dg-publish: true
 > 
 > - [[01 - Formas Indeterminadas]] - Contexto general de indeterminaciones
 > - [[05 - Identidades trigonométricas]] - Herramientas de transformación
-> - [[Teorema del Sandwich]] - Método de demostración geométrica
+> - Teorema del Sandwich - Método de demostración geométrica
 > - [[Derivadas Trigonométricas]] - Aplicación principal de estos límites
-> - [[Series de Taylor]] - Desarrollo alternativo para casos complejos
+> - Series de Taylor - Desarrollo alternativo para casos complejos
 
 ## 📖 Notas Recomendadas para Estudio Complementario
 
@@ -294,7 +294,7 @@ dg-publish: true
 > **Prerrequisitos:**
 > 
 > 1. **[[Funciones Trigonométricas]]** - Conocimiento básico
-> 2. **[[Radianes vs Grados]]** - Importancia del sistema de medida
+> 2. **Radianes vs Grados** - Importancia del sistema de medida
 > 3. **[[Identidades Fundamentales]]** - Transformaciones trigonométricas
 > 
 > **Temas Paralelos:** 4. **[[Continuidad Trigonométrica]]** - Comportamiento de funciones 5. **[[Gráficas Trigonométricas]]** - Interpretación visual
@@ -527,7 +527,7 @@ dg-publish: true
 > - [[01 - Límites al Infinito y Sucesiones]] - Para comportamiento asintótico de exponenciales
 > - [[01 - Límites al Infinito y Sucesiones]] - Casos donde exponenciales tienden a infinito
 > - [[01 - Formas Indeterminadas]] - Herramienta para formas indeterminadas
-> - [[Serie de Taylor]] - Para aproximaciones de funciones
+> - Serie de Taylor - Para aproximaciones de funciones
 > - [[13 - Funciones exponenciales]] - Propiedades de $e^x$ y $a^x$
 >
 
@@ -542,10 +542,10 @@ dg-publish: true
 > 
 > ### Temas Relacionados:
 > 
-> - [[Crecimiento Exponencial]] - Aplicaciones en modelado
-> - [[Interés Compuesto Continuo]] - Aplicación práctica del número $e$
+> - Crecimiento Exponencial - Aplicaciones en modelado
+> - Interés Compuesto Continuo - Aplicación práctica del número $e$
 > - [[Ecuaciones Diferenciales]] - Donde aparecen naturalmente
-> - [[Análisis Asintótico]] - Comportamiento a largo plazo
+> - Análisis Asintótico - Comportamiento a largo plazo
 >
 
 > [!tip] 🧠 **Técnica de Estudio: "LOG-E" (Logaritmo-Exponencial)**
@@ -671,7 +671,7 @@ dg-publish: true
 > - [[Funciones Logarítmicas]] - Propiedades fundamentales del logaritmo
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento asintótico general
 > - [[01 - Formas Indeterminadas]] - Clasificación completa de indeterminaciones
-> - [[Crecimiento Asintótico]] - Comparación detallada de funciones
+> - Crecimiento Asintótico - Comparación detallada de funciones
 
 ## Notas Recomendadas 📚
 
@@ -685,9 +685,9 @@ dg-publish: true
 > 
 > **Para profundizar:**
 > 
-> - [[01 - Límites Especiales]] - Contrapartida de estos límites
-> - [[Series de Taylor]] - Desarrollo alternativo para algunos límites
-> - [[Análisis Asintótico]] - Estudio avanzado de comportamientos límite
+> - 01 - Límites Especiales - Contrapartida de estos límites
+> - Series de Taylor - Desarrollo alternativo para algunos límites
+> - Análisis Asintótico - Estudio avanzado de comportamientos límite
 > - [[Aplicaciones en Optimización]] - Uso práctico de estos conceptos
 
 ---

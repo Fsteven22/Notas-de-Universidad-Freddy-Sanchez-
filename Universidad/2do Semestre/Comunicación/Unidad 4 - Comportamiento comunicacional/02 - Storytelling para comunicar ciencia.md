@@ -149,7 +149,7 @@ tags: [IDIG2012, unidad4, storytelling, divulgacion, ted]
 >
 > - Sílabo IDIG2012, Unidad 4: storytelling, personajes, conflicto, desarrollo, resolución (14h).
 > - Planificación PAO 2-2026 S9-S11: Taller 2 storytelling + guion borrador → final 4-dic.
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
 
 ---
 

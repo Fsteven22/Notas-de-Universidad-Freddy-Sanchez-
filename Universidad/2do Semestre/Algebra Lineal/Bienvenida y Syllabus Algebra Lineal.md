@@ -25,7 +25,7 @@ tags: [MATG1049, algebra-lineal, syllabus]
 
 ---
 
-## 📎 Documento oficial (Garden)
+## 📎 Documento oficial (sitio web)
 
 ![[SPA-SyllabusEUR_ACE-MATG1049.pdf]]
 
@@ -66,7 +66,7 @@ tags: [MATG1049, algebra-lineal, syllabus]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[../../Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
+> ![[Diagramas/Bienvenida_y_Syllabus_Algebra_Lineal_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

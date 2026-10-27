@@ -105,8 +105,8 @@ dg-publish: true
 
 ## 📌 Notas Recomendadas (Prerrequisitos)
 > [!important]
-> - [[Sistema Internacional de Unidades (SI)]]
-> - [[Errores y Aproximaciones en Medición]]
+> - Sistema Internacional de Unidades (SI)
+> - Errores y Aproximaciones en Medición
 
 ---
 

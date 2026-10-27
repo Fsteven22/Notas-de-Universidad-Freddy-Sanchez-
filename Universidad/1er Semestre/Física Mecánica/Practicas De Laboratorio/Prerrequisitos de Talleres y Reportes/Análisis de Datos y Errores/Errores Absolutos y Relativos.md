@@ -372,8 +372,8 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Propagación de errores
-> - [[Tratamiento Estadístico de Datos]] - Análisis avanzado
-> - [[Presentación de Resultados]] - Reportes de laboratorio
+> - Tratamiento Estadístico de Datos - Análisis avanzado
+> - Presentación de Resultados - Reportes de laboratorio
 
 ---
 

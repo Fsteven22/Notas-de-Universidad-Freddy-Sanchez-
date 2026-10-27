@@ -8,7 +8,7 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 **Código:** MATG1049 · **Semestre:** 2do · [[Bienvenida y Syllabus Algebra Lineal|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Acceso directo a las notas de Álgebra Lineal, agrupadas por los subtemas del syllabus (carpetas I-VI de cada unidad). Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Acceso directo a las notas de Álgebra Lineal, agrupadas por los subtemas del syllabus (carpetas I-VI de cada unidad). Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 

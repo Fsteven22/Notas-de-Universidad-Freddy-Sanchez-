@@ -8,7 +8,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 **Código:** IDIG2012 · **Semestre:** 2do · [[Bienvenida y Syllabus Comunicación|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
-> Esta nota es el acceso directo a Comunicación (IDIG2012). Aquí se navega por cada unidad y nota. Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Esta nota es el acceso directo a Comunicación (IDIG2012). Aquí se navega por cada unidad y nota. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ---
 
@@ -32,7 +32,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad III — Redacción *(6h)* → [[00 - Índice Unidad 3|📂 Índice]]
 
 > [!note] Notas de la unidad
-> - [[01 - Texto expositivo, claridad y APA]]
+> - [[01 - Texto expositivo]]
 > - [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - [[03 - IA ética y prompts para redacción]]
 > - [[04 - Precisión y claridad en la redacción]]

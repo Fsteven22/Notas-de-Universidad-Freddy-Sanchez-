@@ -63,7 +63,7 @@ dg-publish: true
 > 
 > - u × v (más común)
 > - u ∧ v (notación alternativa)
-> - [u, v] (menos común)
+> - \[u, v\] (menos común)
 
 ### 🔢 Cálculo del Producto Cruz
 

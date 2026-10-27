@@ -6,7 +6,7 @@ tags: [IDIG2012, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Comunicación)
 
 > [!info] ℹ️ Documentos publicados
-> Estos PDFs se publican en el Garden embebidos (`![[]]`): así el plugin los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
+> Estos PDFs se publican en el sitio embebidos (`![[]]`): así los sube y se ven aquí mismo. Sin el `!`, el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 
@@ -31,9 +31,23 @@ tags: [IDIG2012, unidad0, recursos]
 
 ## 📜 Fundamentación teórica (cátedra)
 
-![[Fundamentación Teórica Pensamiento Complejo (1).pdf]]
+![[Fundamentación Teórica Pensamiento Complejo.pdf]]
 
 ![[Fundamentación teórica Comunicación Estratégica.pdf]]
+
+---
+
+## ✍️ Material de clase Unidad 3 — Redacción
+
+> [!note] 📝 Diapositivas de cátedra
+> Material de las clases S5 (informes) y S6 (IA ética y prompts). Los textos ya viven como notas temáticas en la Unidad 3; aquí se publica el PDF original.
+
+![[Redacción de informes técnicos y ejecutivos.pdf]]
+
+![[Uso ético de la IA.pdf]]
+
+> [!success] 📜 Protocolo institucional
+> El **protocolo de uso ético de la IA** de la ESPOL para esta asignatura (Mariuxi León Molina, Ph.D.) está destilado dentro de la nota [[03 - IA ética y prompts para redacción]], sección "Protocolo de Uso Ético de la IA".
 
 ---
 
@@ -53,7 +67,7 @@ tags: [IDIG2012, unidad0, recursos]
 ![[Clase S3 - Comunicación estratégica (capturas).pdf]]
 
 > [!warning] 🎬 Video solo local (no se publica)
-> `Dinámicas grupales y trabajo en equipo.wmv` (58 MB): el Garden no embebe `.wmv` ni archivos así de pesados. Queda como recurso local; si lo necesitas en el sitio, conviértelo a MP4 ligero o súbelo a YouTube y enlázalo.
+> `Dinámicas grupales y trabajo en equipo.wmv` (58 MB): el sitio no embebe `.wmv` ni archivos así de pesados. Queda como recurso local; si lo necesitas en el sitio, conviértelo a MP4 ligero o súbelo a YouTube y enlázalo.
 
 ---
 

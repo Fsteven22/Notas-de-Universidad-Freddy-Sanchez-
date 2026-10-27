@@ -255,13 +255,13 @@ dg-publish: true
 > 
 > **Lado izquierdo (Energía):**
 > 
-> - [E] = ML²T⁻² (Joules = kg⋅m²/s²)
+> - \[E\] = ML²T⁻² (Joules = kg⋅m²/s²)
 > 
 > **Lado derecho (½mv²):**
 > 
-> - [m] = M (masa)
-> - [v²] = (LT⁻¹)² = L²T⁻²
-> - [½mv²] = M × L²T⁻² = ML²T⁻²
+> - \[m\] = M (masa)
+> - \[v²\] = (LT⁻¹)² = L²T⁻²
+> - \[½mv²\] = M × L²T⁻² = ML²T⁻²
 > 
 > ### Conclusión:
 > 

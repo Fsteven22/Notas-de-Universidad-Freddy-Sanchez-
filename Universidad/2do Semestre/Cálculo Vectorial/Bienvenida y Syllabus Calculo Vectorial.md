@@ -25,7 +25,7 @@ tags: [MATG1046, calculo-vectorial]
 
 ---
 
-## 📎 Documento oficial (Garden)
+## 📎 Documento oficial (sitio web)
 
 ![[SPA-SyllabusEUR_ACE-MATG1046.pdf]]
 

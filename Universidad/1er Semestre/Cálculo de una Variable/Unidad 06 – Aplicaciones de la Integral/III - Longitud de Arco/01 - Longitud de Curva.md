@@ -220,7 +220,7 @@ dg-publish: true
 > - [[02 - Criterios de Convergencia y Divergencia]]
 > - [[01 - Integral de Riemann]]
 > - [[04 - Teorema Fundamental del Cálculo]]
-> - [[Parametrización de Curvas]]
+> - Parametrización de Curvas
 
 ## Notas Recomendadas
 
@@ -234,8 +234,8 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > - [[Área de Superficies de Revolución]]
 > - [[Integrales de Línea]]
-> - [[Curvatura y Torsión]]
-> - [[Geometría Diferencial]]
+> - Curvatura y Torsión
+> - Geometría Diferencial
 
 ---
 
@@ -863,20 +863,20 @@ dg-publish: true
 ### 📖 Para Profundizar
 
 - [[03 - Superficies de revolución]] - Área de superficies generadas por revolución
-- [[Curvatura y Torsión]] - Propiedades geométricas locales de curvas
+- Curvatura y Torsión - Propiedades geométricas locales de curvas
 - [[Cálculo Vectorial]] - Extensión a curvas en el espacio 3D
-- [[Geometría Diferencial]] - Estudio sistemático de curvas y superficies
+- Geometría Diferencial - Estudio sistemático de curvas y superficies
 - [[Integrales de Línea]] - Integración a lo largo de curvas
 - [[Cálculo de Variaciones]] - Optimización de functionales que involucran longitud
 
 ### 🎯 Aplicaciones Especializadas
 
-- [[Mecánica Analítica]] - Trayectorias de partículas y principios variacionales
-- [[Óptica Geométrica]] - Principio de Fermat y caminos ópticos
-- [[Geodesia]] - Medición de distancias en la Tierra
-- [[Gráficos por Computadora]] - Renderizado de curvas suaves
-- [[Robótica]] - Planificación de trayectorias
-- [[Análisis de Datos]] - Longitud de series temporales y curvas de tendencia
+- Mecánica Analítica - Trayectorias de partículas y principios variacionales
+- Óptica Geométrica - Principio de Fermat y caminos ópticos
+- Geodesia - Medición de distancias en la Tierra
+- Gráficos por Computadora - Renderizado de curvas suaves
+- Robótica - Planificación de trayectorias
+- Análisis de Datos - Longitud de series temporales y curvas de tendencia
 
 ### 🏷️ Tags
 

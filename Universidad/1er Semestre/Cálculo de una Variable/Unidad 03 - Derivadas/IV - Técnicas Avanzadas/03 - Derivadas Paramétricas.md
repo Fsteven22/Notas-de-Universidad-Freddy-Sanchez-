@@ -275,7 +275,7 @@ dg-publish: true
 > [!quote] 📚 Notas Relacionadas
 > 
 > ### Prerequisitos
-> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Base fundamental del método
+> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Base fundamental del método
 > - [[01 - Derivación Implícita]] - Conceptos relacionados
 > - [[Funciones Trigonométricas]] - Para curvas trigonométricas
 > - [[Derivadas Básicas]] - Necesarias para $dx/dt$ y $dy/dt$
@@ -284,7 +284,7 @@ dg-publish: true
 > - [[Ecuaciones Paramétricas]] - Definición de las curvas
 > - [[02 - Coordenadas polares]] - Otro sistema de coordenadas
 > - [[Longitud de Arco]] - Aplicación directa
-> - [[Curvatura]] - Usa segunda derivada paramétrica
+> - Curvatura - Usa segunda derivada paramétrica
 > 
 > ### Aplicaciones Avanzadas
 > - **Física** - Movimiento en el plano, trayectorias

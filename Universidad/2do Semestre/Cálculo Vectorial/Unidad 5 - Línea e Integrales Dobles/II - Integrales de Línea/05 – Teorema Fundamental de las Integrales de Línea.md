@@ -26,7 +26,7 @@ dg-publish: true
 > |**Optimización**|Encontrar caminos óptimos|Menor trabajo|
 > |**Criterios**|Determinar si campo es conservativo|Prueba del rotacional|
 
-![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_01.svg]]
+![[Diagramas/05_-_Teorema_Fundamental_de_las_Integrales_de_Línea_01.svg]]
 
 ---
 
@@ -58,7 +58,7 @@ dg-publish: true
 > 
 > **Clasificación de campos:**
 > 
-> ![[Diagramas/05_–_Teorema_Fundamental_de_las_Integrales_de_Línea_02.svg]]
+> ![[Diagramas/05_-_Teorema_Fundamental_de_las_Integrales_de_Línea_02.svg]]
 > 
 > **Ejemplos concretos:**
 > 

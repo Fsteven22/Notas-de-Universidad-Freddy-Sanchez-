@@ -286,16 +286,16 @@ dg-publish: true
 > 
 > - [[Equilibrio Estático]] - Análisis de fuerzas en estructuras deformables
 > - [[Trabajo y Energía]] - Energía potencial elástica y transformaciones
-> - [[Oscilaciones]] - Sistemas masa-resorte y movimiento armónico
-> - [[Fuerzas y DCL]] - Fuerzas de restitución elástica
+> - Oscilaciones - Sistemas masa-resorte y movimiento armónico
+> - Fuerzas y DCL - Fuerzas de restitución elástica
 > - [[Segunda Ley de Newton]] - Análisis dinámico de sistemas elásticos
 >
 
 > [!quote] 🔗 Aplicaciones Avanzadas
 > 
-> - [[Mecánica de Materiales]] - Análisis de esfuerzos complejos
-> - [[Dinámica Estructural]] - Vibraciones en sistemas elásticos
-> - [[Mecánica de Fracturas]] - Límites de resistencia de materiales
+> - Mecánica de Materiales - Análisis de esfuerzos complejos
+> - Dinámica Estructural - Vibraciones en sistemas elásticos
+> - Mecánica de Fracturas - Límites de resistencia de materiales
 > - [[Análisis por Elementos Finitos]] - Modelado computacional
 
 ---

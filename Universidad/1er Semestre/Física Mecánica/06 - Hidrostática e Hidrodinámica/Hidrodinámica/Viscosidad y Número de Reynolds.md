@@ -253,16 +253,16 @@ dg-publish: true
 > 
 > - [[Ecuación de Continuidad y Bernoulli]]
 > - [[Flujo Laminar y Ecuación de Poiseuille]]
-> - [[Pérdidas de Carga en Tuberías]]
-> - [[Transferencia de Calor en Fluidos]]
-> - [[Capa Límite]]
+> - Pérdidas de Carga en Tuberías
+> - Transferencia de Calor en Fluidos
+> - Capa Límite
 
 ## Notas Complementarias Recomendadas
 
 > [!info]+ Prerrequisitos
 > 
 > - [[Propiedades de los Fluidos]]
-> - [[Esfuerzos Cortantes]]
+> - Esfuerzos Cortantes
 > - [[Gradientes de Velocidad]]
 > - [[Conceptos de Densidad]]
 >
@@ -270,10 +270,10 @@ dg-publish: true
 > [!success]+ Para Profundizar
 > 
 > - [[Flujo Laminar y Ecuación de Poiseuille]]
-> - [[Turbulencia y Modelos de Flujo]]
-> - [[Reología - Fluidos No Newtonianos]]
-> - [[Lubricación y Tribología]]
-> - [[Microfluidica]]
+> - Turbulencia y Modelos de Flujo
+> - Reología - Fluidos No Newtonianos
+> - Lubricación y Tribología
+> - Microfluidica
 
 ---
 

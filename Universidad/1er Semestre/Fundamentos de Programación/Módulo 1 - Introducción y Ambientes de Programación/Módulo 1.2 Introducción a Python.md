@@ -260,9 +260,9 @@ dg-publish: true
 > - [[Módulo 2.1 Variables y Tipos de Datos]] - Fundamentos de almacenamiento
 > - [[Módulo 4.1 Condicional]] - If, loops, funciones
 > - [[Módulo 3.1 Funciones]] - Modularización del código
-> - [[Librerías Estándar]] - Herramientas incluidas
-> - [[Entornos de Desarrollo]] - IDEs y editores
-> - [[Debugging y Testing]] - Técnicas de depuración
+> - Librerías Estándar - Herramientas incluidas
+> - Entornos de Desarrollo - IDEs y editores
+> - Debugging y Testing - Técnicas de depuración
 
 ## Notas Recomendadas para Complementar 📖
 
@@ -272,15 +272,15 @@ dg-publish: true
 > 
 > - [[Fundamentos de Programación]] - Conceptos básicos
 > - [[Lógica de Programación]] - Pensamiento algorítmico
-> - [[Sistemas Operativos Básicos]] - Manejo de terminal
+> - Sistemas Operativos Básicos - Manejo de terminal
 > 
 > ### 🎯 Siguientes Pasos
 > 
-> - [[Estructuras de Datos en Python]] - Listas, diccionarios, sets
+> - Estructuras de Datos en Python - Listas, diccionarios, sets
 > - [[Programación Orientada a Objetos]] - Classes y objetos
-> - [[Manejo de Archivos]] - Lectura y escritura
-> - [[APIs y Requests]] - Comunicación con servicios web
-> - [[Bases de Datos con Python]] - SQLite, PostgreSQL
+> - Manejo de Archivos - Lectura y escritura
+> - APIs y Requests - Comunicación con servicios web
+> - Bases de Datos con Python - SQLite, PostgreSQL
 >
 
 > [!success]+ **Proyecto Práctico Sugerido**

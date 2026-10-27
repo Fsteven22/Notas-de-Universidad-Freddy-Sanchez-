@@ -316,9 +316,9 @@ dg-publish: true
 > - [[Integración por Partes]] - Técnica avanzada de integración
 > - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas
 > - [[Ecuaciones Diferenciales Básicas]] - Aplicación directa de antiderivadas
-> - [[Cinemática y Antiderivadas]] - Aplicaciones en física
+> - Cinemática y Antiderivadas - Aplicaciones en física
 > - [[Funciones Definidas por Integrales]] - Extensión del concepto
-> - [[Tabla Completa de Integrales]] - Referencia exhaustiva
+> - Tabla Completa de Integrales - Referencia exhaustiva
 > - [[Métodos de Integración Avanzados]] - Técnicas más complejas
 
 ---

@@ -25,7 +25,7 @@ tags: [IDIG1007, english2]
 
 ---
 
-## 📎 Official Document (Garden)
+## 📎 Official Document (sitio web)
 
 ![[SPA-SyllabusEUR_ACE-IDIG1007.pdf]]
 

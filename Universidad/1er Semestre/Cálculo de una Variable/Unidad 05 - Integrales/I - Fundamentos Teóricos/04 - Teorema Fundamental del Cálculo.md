@@ -214,7 +214,7 @@ dg-publish: true
 > ### 📖 Para Profundizar
 > - [[Teorema del Valor Medio]] - Base teórica de la demostración
 > - [[Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
-> - [[Historia del Cálculo]] - Desarrollo histórico del teorema
+> - Historia del Cálculo - Desarrollo histórico del teorema
 > - [[Cálculo de Variaciones]] - Generalización avanzada
 > 
 > ### 🎯 Aplicaciones Especializadas

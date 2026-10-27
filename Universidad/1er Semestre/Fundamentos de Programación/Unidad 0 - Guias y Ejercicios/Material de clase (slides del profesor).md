@@ -6,7 +6,7 @@ tags: [CCPG1001, unidad0, teoria, slides]
 # 📽️ Material de clase — Slides del profesor (CCPG1043/1001)
 
 > [!info] ℹ️ Fuente oficial del aula
-> PDFs exportados de las diapositivas Marp del Prof. Carlos Cedeño (repo `FP-CCPG1043`, 2025 PAO II). Cada slide tiene su nota de estudio adaptada al vault: el enlace está junto a cada PDF. Se embeben con `!` inicial para que el Garden los suba; sin el `!` el link quedaría roto.
+> PDFs exportados de las diapositivas Marp del Prof. Carlos Cedeño (repo `FP-CCPG1043`, 2025 PAO II). Cada slide tiene su nota de estudio adaptada al vault: el enlace está junto a cada PDF. Se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 🧭 Módulo 1 — Introducción y Ambientes de Programación
 

@@ -592,21 +592,21 @@ dg-publish: true
 > 
 > **Temas Complementarios:**
 > 
-> - [[Pandas - DataFrames y Series]] - Estructuras fundamentales
-> - [[Matplotlib - Visualización Básica]] - Gráficos y presentación
-> - [[Seaborn - Visualización Estadística]] - Análisis visual avanzado
+> - Pandas - DataFrames y Series - Estructuras fundamentales
+> - Matplotlib - Visualización Básica - Gráficos y presentación
+> - Seaborn - Visualización Estadística - Análisis visual avanzado
 > 
 > **Aplicaciones Avanzadas:**
 > 
 > - [[Machine Learning - Preprocessing]] - Preparación de datos para ML
-> - [[Time Series Analysis]] - Análisis temporal especializado
+> - Time Series Analysis - Análisis temporal especializado
 > - [[SQL - Bases de Datos]] - Integración con sistemas de datos
 > 
 > **Metodologías:**
 > 
-> - [[EDA - Exploratory Data Analysis]] - Marco sistemático de exploración
-> - [[Business Intelligence - KPIs]] - Métricas empresariales
-> - [[Data Visualization Best Practices]] - Principios de presentación efectiva
+> - EDA - Exploratory Data Analysis - Marco sistemático de exploración
+> - Business Intelligence - KPIs - Métricas empresariales
+> - Data Visualization Best Practices - Principios de presentación efectiva
 
 ## Prerrequisitos y Temas Avanzados
 

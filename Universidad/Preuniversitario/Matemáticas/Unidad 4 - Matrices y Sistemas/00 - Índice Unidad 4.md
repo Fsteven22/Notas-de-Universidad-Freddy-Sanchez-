@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Ruta sugerida: Parte I en orden (01 → 07) y luego Parte II (01 → 03). Cada nota tiene metas de aprendizaje, resumen ejecutivo y resumen visual.
 
-![[Diagramas/00_-_Índice_Unidad_4_01.svg]]
+![[Diagramas/00_-_Mate_Indice_Unidad_4_01.svg]]
 
 ---
 

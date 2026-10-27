@@ -6,7 +6,7 @@ tags: [IDIG2012, unidad1, indice, comunicacion]
 # 🗺️ Unidad 1 — Comunicación efectiva — Índice
 
 > [!info] ℹ️ Índice manual
-> Se actualiza a mano para que funcione igual en Obsidian y en Digital Garden.
+> Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 
 ## 📑 Notas de la Unidad
 

@@ -397,7 +397,7 @@ dg-publish: true
 > - [[Aplicaciones Geometricas]] - Problemas con condiciones variables
 > - [[01 - Integrales Impropias]] - Cuando hay discontinuidades infinitas
 > - [[Métodos de Integració...]] - Técnicas para cada tramo
-> - [[Transformadas]] - Fourier y Laplace de funciones por tramos
+> - Transformadas - Fourier y Laplace de funciones por tramos
 > - [[Ecuaciones Diferenciales]] - Con coeficientes por tramos
 > - [[Fundamentos teóricos]] - Base teórica de integrabilidad
 

@@ -192,8 +192,8 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 >
 > - Sílabo IDIG2012, Unidad 4.3-4.5: paraverbal, no verbal, estratégica y formatos (14h).
 > - Planificación PAO 2-2026 S11-S14: Evaluación 3 + simulaciones + práctica calificada + final 20-ene-2027.
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
-> - [2] F. Poyatos, *La comunicación no verbal como asignatura*, 2013 — https://revistas.ucm.es/index.php/DIDA/article/view/42244
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[2]** F. Poyatos, *La comunicación no verbal como asignatura*, 2013 — https://revistas.ucm.es/index.php/DIDA/article/view/42244
 
 ---
 

@@ -275,9 +275,9 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 >
 > - Sílabo IDIG2012, Unidad 1: comunicación estratégica (identidad, imagen, reputación) (4h).
 > - Planificación PAO 2-2026 S3: comunicación estratégica + pitch personal.
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
-> - [2] P. Capriotti, *Planificación Estratégica de la Imagen Corporativa*, 2013.
-> - [3] Área de Comunicación ESPOL, *Fundamentación teórica: Comunicación estratégica* (material de cátedra, PAO 2-2026): Capriotti, Massoni, Aljure, Herrera-Requeijo, Cornelissen.
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[2]** P. Capriotti, *Planificación Estratégica de la Imagen Corporativa*, 2013.
+> - **[3]** Área de Comunicación ESPOL, *Fundamentación teórica: Comunicación estratégica* (material de cátedra, PAO 2-2026): Capriotti, Massoni, Aljure, Herrera-Requeijo, Cornelissen.
 > - L. Ramírez, "Elevator pitch en 5 pasos", IEBSchool, 2022 (60s, PAR, ejemplo correcto/incorrecto).
 > - HubSpot, "Comunicación con el cliente: canales y estrategias", 2024 (canal por audiencia).
 

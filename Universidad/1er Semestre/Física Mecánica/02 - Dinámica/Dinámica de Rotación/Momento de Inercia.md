@@ -185,8 +185,8 @@ dg-publish: true
 > - [[Momentum Angular]]
 > - [[Energía Cinética Rotacional]]
 > - [[Centro de masa (CM)]]
-> - [[Torque y Momento de Torsión]]
-> - [[Conservación del Momento Angular]]
+> - Torque y Momento de Torsión
+> - Conservación del Momento Angular
 > - [[Teorema de Ejes Paralelos]]
 > 
 > ### 📖 Temas Avanzados

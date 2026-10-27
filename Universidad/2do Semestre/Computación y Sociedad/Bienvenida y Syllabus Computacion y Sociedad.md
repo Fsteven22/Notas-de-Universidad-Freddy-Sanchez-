@@ -23,7 +23,7 @@ tags: [CCPG1004, computacion-sociedad, syllabus]
 
 ---
 
-## 📎 Documento oficial (Garden)
+## 📎 Documento oficial (sitio web)
 
 ![[SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
 
