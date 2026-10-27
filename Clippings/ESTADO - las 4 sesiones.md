@@ -216,6 +216,16 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 > la PISTA a `#procesado` (cancelada) y la bitácora de la tanda.
 > **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
+> [!success] PUSHEADO `427d351` — 27/10/2026 ~18:35
+> `opencode-nube` | rama `master` | **1 commit**: tablero (mi bloque + números globales +
+> avisos), PISTA `#procesado` (cancelada) y bitácora de la tanda. **3 archivos**, todos de
+> `Clippings/`. `origin/master` = `master` = `427d351` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> **No commiteé `Clippings/00 - LEEME bandeja de pistas.md`**: en disco quedó sobrescrito con
+> una copia de este tablero (trabajo en curso de otra sesión). Sigue en el working tree sin
+> stagear, y la versión íntegra (protocolo + Acuerdos + cola de push) se recupera con
+> `git checkout 6fbda34 -- "Clippings/00 - LEEME bandeja de pistas.md"`.
+
 ---
 
 **Tags:** #clippings #estado #sesiones #plan #tablero
