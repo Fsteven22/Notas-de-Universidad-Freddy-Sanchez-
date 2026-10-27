@@ -215,4 +215,55 @@ error. Por eso la limpieza de lo generado (~1,8 GB) ya no es opcional: **pide el
 - `.git/gc.pid` sigue roto: `git gc` no corre hasta borrarlo. **No lo borro sin aviso.**
 
 ---
+
+## Radar de las 4 sesiones: resultados y próximos pasos (27/10/2026 ~15:25)
+
+> [!note] 📌 Dónde vive el radar
+> Otra sesión creó el **tablero canónico**: `Clippings/ESTADO - las 4 sesiones.md`, con un
+> bloque por sesión (**Resultados / Qué falta / Próximos pasos**) y la lista de decisiones
+> que esperan al usuario. Yo solo mantengo **mi bloque** (sección `3) opencode-nube`) y no
+> toco el de los demás. Saqué del LEEME el radar que había escrito ahí para no dejar dos
+> versiones del mismo tablero; el LEEME ahora apunta al tablero.
+
+### Lo que aporté en esta tanda
+
+1. **Leí las 4 bitácoras** (`LOG-opencode.md`, `LOG-opencode-onedrive.md`,
+   `LOG-opencode-site.md`, `LOG-opencode-nube.md`) y el LEEME, y actualicé **mi bloque**
+   en el tablero con los resultados verificados y los próximos pasos.
+2. **Saqué del LEEME** el radar duplicado y lo dejé apuntando al tablero.
+3. **Comprobé que lo que dice el tablero es cierto** contra el repo: `origin/master` =
+   `bb1bc19`, los dos clones en 0/0, working tree limpio, `Universidad/` 1,11 GB,
+   `site/` 1 MB, `.git/` 658 MB, raíz de OneDrive 2,39 GB de 5 GB.
+
+### Resumen de lo que le falta a cada una (para contexto, el detalle está en el tablero)
+
+| Sesión | Qué le falta (resumen) | Dueño |
+|---|---|---|
+| `opencode` (3er Sem.) | embebir PNG ya renderizados; renderizar DSW U3/U4/U5-01 y BD; normalizar ~970 errores de formato; los **1039 BAD** (decidir) | sesión + usuario |
+| `opencode-onedrive` | P8 (`verificar_nota.py` de Cálculo Vectorial, pide luz verde) · P4 (4 scripts de auditoría en `Herramientas/Mantenimiento/`) · P3 (CI que falle si un asset excluido llega a `public/` o a un ZIP) · P2 (lista blanca de copyright, decide el usuario) · P6 (`VAULT_ROOT`, solo si se migra) · P1/P7 | sesión + usuario |
+| `opencode-site` (Desktop) | paso manual en el panel de Vercel (usuario; el CLI no tiene token válido) · verificar favicon/redirect/aviso en producción · refrescar el espejo `notas-nexus` ("baseline 798") · confirmar la lista final de 3 notas omitidas | usuario + sesión |
+| `opencode-nube` (esta) | nada propio: la PISTA quedó `#procesado` y el veredicto es "no migrar". 3 acciones reversibles del usuario (papelera, backup de 458 MB, fijar el vault) + 5 datos de la cuenta institucional | usuario |
+
+### Lo que queda para el usuario (los agentes no lo resuelven)
+
+1. **Vaciar la papelera de OneDrive** — los ~2,67 GB borrados siguen contando hasta hacerlo.
+2. **Mover el backup de 458 MB** (`OneSyncFiles-backups/notas-20261024`) a disco local.
+3. **Fijar el vault** ("mantener siempre en este equipo") para que OneDrive no lo deshidrate.
+4. **Paso de panel de Vercel** para el dominio duplicado.
+5. **Datos de la cuenta institucional**: cuota por usuario, límite por archivo, retención al
+   terminar la carrera, aceptabilidad del material con copyright.
+6. **Teléfono**: AutoSync → institucional con `DCIM/Camera` (plan B: app oficial de OneDrive
+   para Android si el MDM bloquea el OAuth). **El vault no se empareja al teléfono.**
+7. **Decisiones de contenido**: los 1039 BAD, las 3 notas omitidas, los 32 PNG huérfanos,
+   `Recursos adicionales/Speaking Practice.md`.
+
+### Estado al cierre de esta tanda
+
+- `origin/master` = `bb1bc19`; los dos clones en **0/0**; working tree limpio salvo mis 3
+  archivos (`LEEME`, este log y el tablero).
+- **Commits sin pushear (míos):** el de esta tanda (tablero + mi log + el puntero del LEEME).
+- **Siguiente paso mío:** ninguno hasta que el usuario responda los 7 puntos de arriba.
+
+---
 **Tags:** #clippings #log #opencode-nube #onedrive
+
