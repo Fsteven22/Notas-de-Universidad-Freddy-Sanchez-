@@ -5,12 +5,16 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 
 # PISTA - cambio de cuenta de OneDrive (AutoSync en el teléfono + vault en la institucional)
 
-> [!question] ✅ Decisión tomada (2026-10-27, 16:45)
-> La cuenta **personal** de OneDrive está al límite (5 GB, con muro de cuota) y el proyecto sigue creciendo.
-> **Decisión del usuario: pasar el vault a la cuenta institucional (1 TB).** La cuenta ya está dada de alta
-> (`fredsanc@espol.edu.ec`) y el vault **ya está copiado y verificado** en
-> `C:\Users\Steven Sànchez\OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`.
-> El vault **personal no se movió ni se borró**: sigue siendo el de trabajo de las 4 sesiones.
+> [!question] ✅ Decisión final (2026-10-27, 18:20): **NO se migra**
+> El usuario probó la cuenta institucional (1 TB) de punta a punta y decidió **no migrar**:
+> - La **personal** (5 GB) queda como vault de lo de la U: tras la limpieza quedan **2,4-2,6 GB
+>   libres**, y lo que realmente topaba la cuenta era el **historial de versiones + duplicados**
+>   (no la papelera).
+> - La **institucional** (`fredsanc@espol.edu.ec`) **queda dada de alta y vacía**, disponible
+>   para lo que se quiera hacer después (p. ej. fotos del teléfono).
+> - El motivo técnico de que no haya Obsidian local en el teléfono: **el MDM de ESPOL no
+>   permite a AutoSync emparejar carpetas**, y la app oficial de OneDrive para Android solo
+>   crea carpetas en la nube. Editar en el móvil exigiría **Obsidian Sync (de pago)**.
 > Nadie debe arrancar a mover carpetas sin leer esto.
 
 > [!info] 📌 Aclaración de alcance (corregida 2026-10-27)
@@ -52,7 +56,7 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 | `.obsidian/` | 162 MB | **No** — ignorado por git, se regenera |
 | `.git/` huérfano en la raíz de OneDrive | 23 MB | **No** — rama `main` abandonada, se puede borrar |
 | `OneSyncFiles-backups/` | 458 MB | Opcional |
-| **Copia institucional** | **1,77 GB / 1 TB** | **Ya subida y verificada** (4.687 archivos, 4.687/4.687 en la nube) |
+| **Copia institucional** | 1,77 GB / 1 TB | **Se hizo, se verificó y se eliminó (18:20)** — queda en `#procesado` |
 
 ## Preguntas para los otros agentes
 
@@ -138,28 +142,59 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
    **duplicados que git no versiona** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB,
    `.git/` huérfano 23 MB). `.gitignore` solo aplica a git: OneDrive sube esas carpetas igual.
 
+## Cancelación (27/10/2026, 18:20) — `opencode-nube`
+
+6. **El usuario cancela la migración** y pide eliminar la copia institucional.
+   Motivo: con la personal (2,4-2,6 GB libres tras la limpieza) el vault de lo de la U cabe
+   igual, y **el MDM de ESPOL no deja emparejar carpetas** en AutoSync; la app oficial de
+   OneDrive para Android **solo crea carpetas en la nube** ("Agregar carpeta" = le pones un
+   nombre), así que **no hay forma de tener Obsidian con archivos locales en el teléfono**
+   sin pagar **Obsidian Sync**. Para **leer** en el móvil, el sitio ya está publicado
+   (806 notas + buscador) y no requiere ninguna sincronización.
+7. **Copia institucional eliminada**: `rd /s /q` con prefijo `\\?\` (las rutas >260 chars
+   fallaban en el `rd` normal: 35 archivos con error *"no se puede encontrar la ruta"*) →
+   **0 archivos restantes**. La carpeta `OneSyncFiles` ya no existe en la raíz
+   institucional; el cliente propaga los borrados a la nube (papelera de 1 TB, sin efecto).
+8. **No se perdió nada**: lo borrado está en **GitHub** (`origin/master`) y en el vault
+   personal, que nunca se movió ni se borró (verificado: `973e791`, árbol limpio, 0/0).
+9. **Efecto colateral favorable** (riesgo que `opencode` había medido a las 17:40): al quedar
+   **un solo clon**, los **12 archivos con ruta literal** `OneDrive\OneSyncFiles` y el
+   **fallback de `sync-vault.mjs:20`** vuelven a apuntar al vault real. **P6 vuelve a ser
+   "solo si algún día se decide migrar"**.
+
 ## Estado
 
-- **Estado:** #migracion-en-curso — la copia institucional **ya está hecha y verificada**.
-  El vault **personal no se movió ni se borró**: sigue siendo el de trabajo de las 4 sesiones.
-- **Veredicto (cambia el de las 4 sesiones):** la migración **sí se hace** — decisión del
-  usuario: la institucional da **1 TB gratis** y la personal (5 GB) está topada con muro de
-  cuota. Lo que **no** cambia: la verdad del trabajo es **GitHub**, y nada se borra de la
-  personal hasta que el usuario diga cuál queda activa.
+- **Estado:** #procesado — **migración cancelada** (18:20). La copia institucional se hizo,
+  se verificó y **se eliminó**. El vault **personal sigue siendo el de trabajo de las 4
+  sesiones**, sin cambios.
+- **Veredicto final:** **no se migra.** La cuenta personal (5 GB) queda para lo de la U:
+  tras la limpieza quedan **2,4-2,6 GB libres**, y lo que realmente topaba la cuenta era
+  el **historial de versiones + duplicados**, no el contenido. La institucional (1 TB)
+  **queda dada de alta y vacía** para lo que se quiera hacer después.
+- **Lo que se aprendió (no volver a medir):**
+  - El **registro huérfano `Business1`** (enero 2026) era la causa del "el login entra pero
+    OneDrive no abre".
+  - La **nube cuenta el historial de versiones** (30 días en cuenta personal): vaciar la
+    papelera no libera eso.
+  - **`.gitignore` no aplica a OneDrive**: el cliente sube `site/public/assets/` (664 MB),
+    `.obsidian/` (162 MB) y el `.git/` huérfano (23 MB) igual que si fueran contenido.
+  - **Copiar y verificar es barato y seguro**: `robocopy` con exclusiones + comprobación de
+    que el **índice de git dé el mismo SHA-256** en ambas copias. Si algún día se repite,
+    ese es el método.
+  - **Dos clones con el mismo `origin` son un riesgo real** (pueden divergir sin avisar) y
+    las rutas hardcodeadas siguen apuntando al vault personal.
 - **Pendiente de decidir (usuario):**
-  1. **Cuál vault queda activo**: el personal o el institucional (esto implica **P6**,
-     `VAULT_ROOT` en los 15+ archivos con ruta absoluta, y avisar a las 3 sesiones).
-  2. **Teléfono**: app oficial de OneDrive con `fredsanc@espol.edu.ec` (notas + fotos);
-     si ESPOL bloquea apps de terceros por MDM, esa oficial es el plan B.
-  3. Cuota real por usuario de la institucional.
-  4. Límite por archivo (el `.wmv` pesa 58 MB; en cuentas educational suele bajar a 250 MB).
-  5. Retención al terminar la carrera: el material ya quedó copiado ahí.
-  6. Si el material con copyright (Cambridge, `z-lib.org`) es aceptable en una cuenta
-     institucional.
+  1. Si se **desvincula** la cuenta institucional del cliente de la PC (hoy está dada de
+     alta y vacía) o se deja lista para fotos/1 TB.
+  2. **Teléfono**: si en algún momento quiere **editar** en Obsidian desde el móvil → hace
+     falta **Obsidian Sync** (de pago). Para **leer**, el sitio publicado ya basta.
+  3. Si el material con copyright (Cambridge, `z-lib.org`) se llegaría a subir a la
+     institucional en el futuro (hoy **no** está copiado ahí: la copia se eliminó).
+  4. Retención de la institucional al terminar la carrera, si se vuelve a usar.
 - **Pendiente de sesión (sin riesgo, reversible):** excluir `site/public/assets/` y
   `.obsidian/` de la nube personal (click derecho → OneDrive → Dejar de sincronizar) y
   borrar el `.git/` huérfano de la raíz de OneDrive → libera ~850 MB y corta el
   historial de versiones.
 
 ---
-**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #migracion-en-curso
+**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #procesado #cancelada

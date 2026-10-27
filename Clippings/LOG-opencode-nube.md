@@ -298,6 +298,34 @@ sesiones. Institucional = espejo en la nube de 1 TB + acceso del teléfono. Si e
 institucional queda activo: `git pull --no-rebase` en esa copia tras cada push (la
 personal no sube por cuota).
 
+### Tanda 27/10/2026 17:20–18:25 — migración probada y cancelada
+
+**Secuencia:** el usuario decidió migrar (16:45) → se dio de alta la institucional
+(`fredsanc@espol.edu.ec`), se verificó la subida con un archivo de prueba y se copió el
+vault (**4.687 archivos · 1,729 GB · 0 errores**, con **índice de git de SHA-256 idéntico**
+al personal) → se probó en el teléfono → **el usuario canceló (18:20)** porque el MDM de
+ESPOL no deja emparejar carpetas y la app oficial de OneDrive para Android solo crea
+carpetas en la nube: **no hay forma de tener Obsidian local en el teléfono sin Obsidian
+Sync (de pago)**. Para leer, el sitio publicado ya cubre.
+
+**Borrado de la copia institucional:** `rd /s /q` normal falló en 35 archivos con
+*"El sistema no puede encontrar la ruta especificada"* → **límite de 260 caracteres de
+ruta**. Repetido con el prefijo `\\?\` → **0 archivos restantes**. La carpeta `OneSyncFiles`
+ya no existe en la raíz institucional y el cliente propaga los borrados a la nube (papelera
+de 1 TB, sin efecto).
+
+**Verificado tras el borrado:** vault personal **intacto** (`973e791`, `## master...origin/master`,
+0/0, 1.795 `.md`). No se perdió nada: lo borrado está en GitHub y en la personal.
+
+**Efecto favorable:** queda **un solo clon** → los 12 archivos con ruta literal
+`OneDrive\OneSyncFiles` y el fallback de `site/scripts/sync-vault.mjs:20` vuelven a apuntar
+al vault real, y **P6 vuelve a ser "solo si algún día se decide migrar"**.
+
+**Lección de cuota (la real):** la personal no estaba topada por el contenido (2,4-2,6 GB
+libres tras la limpieza) sino por el **historial de versiones** (30 días) + **duplicados que
+git ignora pero OneDrive sube**: `site/public/assets/` 664 MB, `.obsidian/` 162 MB y un
+`.git/` huérfano de 23 MB en la raíz de OneDrive. Vaciar la papelera no arregla eso.
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 

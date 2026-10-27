@@ -12,13 +12,13 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > push** en el LEEME ("Avisos de otros agentes") → pusheá.
 > Los **números globales** de abajo los actualiza quien haga el push.
 
-> [!important] Estado global verificado (27/10/2026, 17:50)
-> - `master` = `origin/master` = **``91976be``**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> [!important] Estado global verificado (27/10/2026, 18:25)
+> - `master` = `origin/master` = **`973e791`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
-> - OneDrive: la **cuota personal (5 GB) sigue topada** aunque la raíz local baje a 2,39 GB → la causa real es **historial de versiones + duplicados en la nube** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB, `.git/` huérfano 23 MB). La **cuenta institucional (1 TB) ya está dada de alta y funcionando** (`fredsanc@espol.edu.ec`) y el vault ya está **copiado y verificado** en `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`.
-> - **Verificado por `opencode` (17:40):** la copia institucional es un **clon git íntegro**: `Universidad/` **1.110 MB** con **818 `.md`** (los mismos 809 + `Herramientas/` + `Diagramas/Index_01.md`), `.git/` **658 MB** (ya compactado) y `master` **0/0** con `origin`, árbol limpio. **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
-> - ⚠️ **Riesgo nuevo, medido:** hay **dos clones con el mismo `origin`** (personal e institucional) y ambos pueden pushear y divergir sin avisar. Además **12 archivos de código** (11 `.py` + `site/scripts/sync-vault.mjs`) siguen con la ruta `OneDrive\OneSyncFiles` literal, y el **fallback por defecto de `sync-vault.mjs:20`** (`path.join(USERPROFILE, "OneDrive", "OneSyncFiles", "Universidad")`) apunta a la **copia personal**: desde el clon institucional el sync leería el vault viejo en silencio. **P6 dejó de ser "antes de migrar": ya migró.**
+> - OneDrive: **la cuenta personal (5 GB) queda como vault activo** (raíz local 2,4-2,6 GB tras la limpieza) y **la institucional (1 TB) queda dada de alta pero VACÍA**: el usuario decidió **no migrar** (18:20) y la copia se eliminó. La causa raíz de que la personal estuviera topada no era la papelera: es **historial de versiones + duplicados que git no versiona** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB, `.git/` huérfano 23 MB).
+> - **Verificado por `opencode` (17:40)** y luego **eliminado por decisión del usuario (18:20)**: la copia institucional era un **clon git íntegro** (`Universidad/` 1.110 MB con 818 `.md`, `.git/` 658 MB, `master` 0/0 con `origin`, árbol limpio). **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
+> - ✅ **Riesgo resuelto (18:20):** al eliminar la copia institucional queda **un solo clon** (el personal). Los **12 archivos con ruta literal** `OneDrive\OneSyncFiles` y el **fallback de `sync-vault.mjs:20`** vuelven a ser **correctos** (apuntan al vault real). **P6 vuelve a ser "solo si algún día se decide migrar".**
 > - ⚠️ **Rehidratación (medido 16:20):** `site/public/assets` (**650 MB**) volvió a la copia personal a las 15:31 porque el build de restauración de `opencode-site` corrió **dentro** del clon sincronizado. Sin build corriendo no se rehidrata. La cuota local bajó a 2.445 MB y volvió a **2.647 MB**. **Nunca compilar dentro de OneDrive.**
 > - Reglas vigentes: LEEME → *"🤝 PROTOCOLO DE COMMITS Y PUSHES"* + *"🤝 ACUERDO entre sesiones"* (Acuerdos 1–4, firmados por las 4 sesiones).
 
@@ -104,7 +104,7 @@ Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive 
 
 ### Resultados
 - **Medición real de la cuota**: raíz de OneDrive **4,99 GB de 5 GB** → `Universidad/` 1,11 GB (contenido real), `site/` 1,83 GB (regenerable), `.git/` 1,50 GB (espejado en GitHub), `.obsidian/` 167 MB.
-- **Veredicto (superado por el usuario)**: en la tanda de las 16:15 el veredicto de las 4 sesiones era *"la migración al OneDrive institucional NO es necesaria"*. **Cambió**: el usuario decidió migrar porque la institucional da **1 TB gratis** y la personal está topada. La PISTA pasó de `#procesado` a `#migracion-en-curso`.
+- **Veredicto (histórico → final)**: en la tanda de las 16:15 el veredicto de las 4 sesiones era *"la migración al OneDrive institucional NO es necesaria"*. El usuario lo cambió a favor de migrar (16:45) y a las **18:20 lo canceló**: se queda con la **cuenta personal** (2,4-2,6 GB libres tras la limpieza) para lo de la U, y la **institucional (1 TB) queda dada de alta y vacía** para lo que quiera hacer después (p. ej. fotos del teléfono). La PISTA vuelve a `#procesado` con el motivo real del bloqueo.
 - **Evidencia reproducida 3 veces** de que `node_modules` **no puede vivir en OneDrive**: (1) el build falla con `Cannot find module .../astro/...`; (2) `npm ci` falla con `ENOTEMPTY` porque OneDrive y npm pelean por el mismo directorio; (3) build de control **fuera** de OneDrive → OK (806 notas → 833 `.html`, exit 0).
 - Aclaración importante: **AutoSync y OneSync son apps del teléfono**, no clientes de escritorio; el PC usa el cliente oficial de OneDrive.
 - **Plan cerrado** por si algún día se migra: `git clone` a la ruta nueva (nunca mover la carpeta), `VAULT_ROOT` en las rutas hardcodeadas, **sin AutoSync** para `.git/`, `node_modules/`, `dist/`, `.obsidian/`, y el clon Desktop sigue desplegando.
@@ -113,28 +113,29 @@ Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive 
 - **Por qué la barra no bajaba (diagnóstico de 17:00)**: vaciar la papelera no alcanza → la personal sigue con **muro de cuota** (`QuotaWallTimestamp` = 27/10 13:43) porque el **historial de versiones** (30 días en cuenta personal) conserva lo borrado y porque la nube guarda **duplicados que git no versiona**: `site/public/assets/` **664 MB** (copia de los PDF/PNG de `Universidad/`, regenerada en cada build y ya ignorada por `site/.gitignore`), `.obsidian/plugins/` **162 MB** y un `.git/` **huérfano de 23 MB** en la raíz de OneDrive (rama `main` abandonada). `.gitignore` solo aplica a git: OneDrive sube esas carpetas igual.
 - **Registro huérfano `Business1` (la causa del "el login entra pero OneDrive no abre")**: la PC arrastraba una cuenta de trabajo a medias de enero 2026 (sin `UserFolder`, ECS expirado el 07/01/2026) → el login de Microsoft pasaba pero el cliente no tenía unidad. Con `fredsanc@espol.edu.ec` dada de alta, `Business1` quedó con `UserFolder` correcto, `LastSignInResult=0` y `HasMadeFirstUpload=1`.
 - **Prueba de humo de la subida institucional**: archivo de prueba subido y confirmado como ítem de nube (`ReparsePoint` + `System.StorageProviderId = OneDrive`), no como archivo local pendiente.
-- **Copia del vault a la institucional (verificada)**: `robocopy` de `OneSyncFiles` → `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles` con exclusiones (`site/public/assets`, `site/notes-md`, `site/dist`, `site/.astro`, `site/node_modules`, `.obsidian`, `.trash`): **4.687 archivos · 1,729 GB · 0 errores**. Integridad: **HEAD idéntico (`fec4b97`)**, **índice de git con SHA-256 idéntico** (4.533 archivos trackeados con los mismos blob-sha) en las dos copias, `git fsck` sin errores, **4.687/4.687 archivos en la nube** en ~3 min y carpeta renombrada de `-migracion` a `OneSyncFiles`. El vault personal **no se movió ni se borró**.
-- **Regla de las dos copias**: la verdad del trabajo es **GitHub**; el personal queda como vault de trabajo de las 4 sesiones y el institucional como **espejo en la nube de 1 TB + acceso del teléfono**. Si el institucional queda activo, hay que hacer `git pull --no-rebase` en esa copia después de cada push (la personal no sube por cuota).
+- **Copia del vault a la institucional (verificada y luego eliminada)**: `robocopy` de `OneSyncFiles` → `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles` con exclusiones (`site/public/assets`, `site/notes-md`, `site/dist`, `site/.astro`, `site/node_modules`, `.obsidian`, `.trash`): **4.687 archivos · 1,729 GB · 0 errores**. Integridad: **HEAD idéntico (`fec4b97`)**, **índice de git con SHA-256 idéntico** (4.533 archivos trackeados con los mismos blob-sha) en las dos copias, `git fsck` sin errores, **4.687/4.687 archivos en la nube** en ~3 min. **A las 18:20 el usuario decidió cancelar la migración y la copia se eliminó** (`rd /s /q` con prefijo `\\?\` por rutas >260 chars; 0 archivos restantes). El vault personal **nunca se movió ni se borró**.
+- **Por qué se canceló (motivo técnico, no solo de gusto)**: el **MDM de ESPOL no permite a AutoSync emparejar carpetas** y la app oficial de OneDrive para Android **solo crea carpetas en la nube** ("Agregar carpeta" = le pones un nombre) — no hay emparejamiento de carpeta local → **no se puede lograr Obsidian con archivos locales en el teléfono** sin pagar **Obsidian Sync**. Para **leer** en el móvil, el sitio ya está publicado (806 notas + buscador) y eso no necesita nada.
+- **Sin dos clones**: queda **un solo clon** (el personal). Lo borrado en la institucional está en **GitHub** (`origin/master`) y en la personal → no se perdió nada. La institucional queda vacía y sus borrados van a la papelera de esa cuenta (1 TB, sin efecto).
 - **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push). Todos en `origin/master`.
+- **Commits de la copia institucional**: `f6a27ef` (registro de la copia verificada) y `8129007` (confirmación del push) → ya en `origin/master`.
 
 ### Qué falta
 | # | Qué | Prioridad | Decide |
 |---|---|---|---|
-| 1 | **Decidir cuál vault queda activo**: el personal (`C:\Users\...\OneDrive\OneSyncFiles`) o el **institucional** (`OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`). Si el institucional → hay que ejecutar **P6** (`VAULT_ROOT` en los 15+ archivos con ruta absoluta) y avisar a las otras 3 sesiones | **alta** | **usuario** |
-| 2 | **Teléfono**: app oficial de OneDrive con `fredsanc@espol.edu.ec` → leer `OneSyncFiles` (notas) y subir fotos; si ESPOL bloquea apps de terceros, la oficial es el plan B | **alta** | **usuario** |
-| 3 | **Excluir de la nube personal** `site/public/assets/` (664 MB) y `.obsidian/` (162 MB), y borrar el `.git/` huérfano de la raíz de OneDrive (23 MB) → libera ~850 MB y corta el historial de versiones | media | **sesión + usuario** |
-| 4 | **Historial de versiones de la personal**: las versiones anteriores se van solas a los 30 días; vaciar la papelera sigue ayudando, pero no es lo que bloquea | media | **usuario** |
-| 5 | Cuenta institucional: **límite por archivo** (en cuentas educational suele bajar a 250 MB; el vault tiene un PDF de 71,6 MB y un `.wmv` de 58 MB), **retención** al terminar la carrera y si el material con copyright (Cambridge, `z-lib.org`) es aceptable ahí — el material ya quedó copiado, así que la pregunta es de política y de borrado al egresar | media | **usuario / TI** |
+| 1 | **Nada de la migración**: la copia institucional ya está eliminada (18:20) y el vault activo es el personal. Queda decidir si se **desvincula** la cuenta institucional del cliente de la PC (hoy está dada de alta y vacía) | baja | **usuario** |
+| 2 | **Teléfono**: la app oficial sí entra con `fredsanc@espol.edu.ec`, pero **el MDM no deja emparejar carpetas** → **Obsidian local en el teléfono no es viable sin Obsidian Sync (de pago)**. Para **leer** en el móvil, el sitio ya está publicado (806 notas + buscador) → no requiere nada | media | **usuario** |
+| 3 | **Higiene de cuota en la personal**: excluir `site/public/assets/` (664 MB) y `.obsidian/` (162 MB) de la nube, y borrar el `.git/` huérfano de la raíz de OneDrive (23 MB) → libera ~850 MB y **corta el historial de versiones**, que es lo que realmente topaba la cuenta | media | **sesión + usuario** |
+| 4 | **Historial de versiones** de la personal: las versiones anteriores se van solas a los 30 días; vaciar la papelera sigue ayudando, pero no es lo que bloqueaba | media | **usuario** |
+| 5 | **Nunca compilar dentro de OneDrive**: `site/public/assets` (650 MB) se rehidrató solo cuando un build corrió en el clon sincronizado (medido 16:20) | media | **sesiones** |
 | 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
-| 7 | **Fijar la copia que quede activa** ("mantener siempre en este equipo") para que OneDrive no la deshidrate → `attrib +P -U` | baja | **usuario** |
+| 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
 
 ### Próximos pasos
-1. El usuario decide si el vault **activo** pasa a ser el institucional (implica P6 + avisar a las 3 sesiones) o si el institucional queda como **espejo en la nube de 1 TB y acceso del teléfono**. A corto plazo se recomienda lo segundo: cero cambios de ruta para las otras sesiones.
-2. Mientras tanto, en la copia institucional: `git pull --no-rebase` después de cada push del vault personal, para que OneDrive suba los cambios (la personal está topada y no sube).
-3. Medir en la web la cuota real de la institucional y confirmar el límite por archivo antes de mover el `.wmv` y los PDF grandes.
-4. Excluir `site/public/assets/` y `.obsidian/` de la nube personal (click derecho → OneDrive → Dejar de sincronizar) y borrar el `.git/` huérfano de la raíz de OneDrive.
-5. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
+1. Confirmar en la web de la institucional que `OneSyncFiles` ya no aparece (los 4.698 borrados se propagan solos; 1 TB, sin urgencia).
+2. Higiene de cuota en la personal: excluir `site/public/assets/` y `.obsidian/` (click derecho → OneDrive → Dejar de sincronizar) y borrar el `.git/` huérfano de la raíz de OneDrive.
+3. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
+4. **No volver a copiar el vault a la institucional sin antes hacer P6** (`VAULT_ROOT`) y avisar a las 3 sesiones: la copia funciona y se verifica fácil, pero deja **dos clones con el mismo `origin`** (riesgo medido por `opencode` 17:40) y rutas hardcodeadas apuntando al vault viejo.
 
 ---
 
@@ -195,4 +196,26 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 7. **Zonas**: `site/src/**`+`site/public/**` → `opencode-site` · `Universidad/3er Semestre/**` → `opencode` · `2do Semestre/Cálculo Vectorial/**`+`site/scripts/sync-vault.mjs`+`site/RUNBOOK.md` → `opencode-onedrive` · `Clippings/` (su bitácora) → cada uno.
 
 ---
+
+## 📣 Avisos de otros agentes
+
+> [!warning] ⚠️ El LEEME fue sobrescrito en disco (27/10 ~18:28)
+> `Clippings/00 - LEEME bandeja de pistas.md` quedó en disco como **copia de este tablero**:
+> el **PROTOCOLO DE COMMITS**, los **ACUERDOS 1–4**, la **cola de push** y la sección
+> "Avisos de otros agentes" **ya no están en el working tree**. La versión íntegra sigue en
+> git (**`6fbda34`**, 1219 líneas) y se recupera con
+> `git checkout 6fbda34 -- "Clippings/00 - LEEME bandeja de pistas.md"`
+> (eso también lo deja staged: la recuperación debería commitearse).
+> **No lo commiteo yo**: es trabajo en curso de otra sesión. Hay que decidir si se
+> **recupera el LEEME** o si se **consolida todo aquí** (y entonces este tablero es el
+> único archivo y los avisos van aquí).
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, PISTA - migracion}` · ~2 min
+> **Migración CANCELADA y copia institucional eliminada** (18:20, decisión del usuario).
+> Traigo: mi bloque del tablero actualizado (resultados / qué falta / próximos pasos),
+> la PISTA a `#procesado` (cancelada) y la bitácora de la tanda.
+> **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+
+---
+
 **Tags:** #clippings #estado #sesiones #plan #tablero
