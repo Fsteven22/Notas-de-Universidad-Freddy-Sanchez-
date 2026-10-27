@@ -329,7 +329,108 @@ reexportar el PDF si se cambia una slide.
 
 ---
 
-## 11. Estado al cierre
+## 11. Tercera tanda: acuerdo entre las 4 sesiones
+
+> [!info] Tarea del usuario
+> "Lee el clipping y en el LEEME concuerdes con los otros 3 agentes el flujo
+> correcto de cómo se debe trabajar con todos los commits pendientes y el
+> proceso que deben seguir para pushear sin solaparse entre sí, y cuando
+> terminen de hacer eso, concordar cómo se tiene que manejar o si no es
+> necesario la migración hacia el nuevo sistema de sincronización con el
+> OneDrive de la institución ESPOL".
+
+### Lo que encontré al leer el clipping
+
+`Clippings/PISTA - migracion vault a OneDrive institucional.md` (de
+`opencode-nube`)planteaba 6 preguntas y bloqueaba cualquier movimiento de
+carpetas. Mientras leía, las otras sesiones escribieron en el LEEME:
+
+| Commit | Qué aportó |
+|---|---|
+| `edd511b` | Protocolo de commits y pushes (7 reglas) + tabla de zonas reservadas |
+| `878bcc6` | Documentó el aviso visible de material no publicado |
+| `de42ca3` | Registró el merge y el aviso de material omitido |
+| `66c9eca` | `favicon.ico` real + plugin `rehype-asset-omitido.mjs` |
+| `332d22a` | **Acuerdo de las 4 sesiones** (4 acuerdos) + cola de push + plan de migración |
+
+Es decir: el trabajo de coordinación ya estaba hecho por `opencode-site` y
+`opencode-nube`; mi aporte fue **leerlo, verificarlo contra el estado real,
+firmarlo y corregir lo que estaba mal**.
+
+### Estado real que verifiqué (no supuesto)
+
+- `origin/master` estaba **6 commits atrás** de mi `master`: `6ffea83`,
+  `edd511b`, `878bcc6`, `de42ca3`, `f69ed87`, `66c9eca` y después `332d22a`.
+- Mis 3 commits (`c4a84b5`, `4fd4960`, `ba68d18`) **no estaban** en
+  `origin/master`: verificado con `git ls-tree origin/master`.
+- `Clippings/LOG-opencode-nube.md` y la PISTA **tampoco** están en
+  `origin/master` (siguen untracked).
+- El clon Desktop (`notas-nexus-unificado`) estaba en `6ffea83`; el sandbox
+  `notas-nexus` tiene archivos sueltos y **no** es un repo con commits.
+- El primer `git push` **falló** con `non-fast-forward`: otro agente pusheó
+  `332d22a` en medio. Eso es exactamente el escenario que el Acuerdo 2
+  previene con el "un push a la vez, anunciado".
+- **Dos merges conflitaron en el LEEME**, porque las 4 sesiones escriben al
+  final del mismo archivo. Se resolvió **conservando las dos versiones** (lo
+  que el propio `opencode-site` pidió por escrito en su aviso).
+
+### Correcciones que aporté al acuerdo
+
+1. **`Universidad/Herramientas/Mantenimiento/**` es zona compartida**, no
+   solo mía: `qa_links.py` lo usa el pipeline de calidad, que se puede correr
+   desde cualquier clon. Lo toco con aviso previo.
+2. **`backup-pre-fix-links` ya está dentro de `origin/master`** (merge
+   `f69ed87`), así que no hace falta conservarla como respaldo. No se mergea
+   ni se borra sin que lo diga el usuario.
+3. **Evidencia de la regla "commitear antes de que otro agente mergee":** un
+   merge sobrescribió trabajo sin commitear mío **dos veces** en el día (se
+   perdieron el fix de `qa_links.py` y los 10 aliases con escape doble).
+
+### Acuerdo 4 — Migración al OneDrive institucional: **no es necesaria ahora**
+
+Concuerdo con las otras 3 sesiones y con la pista: **la migración no hace
+falta**, y no es la solución a la cuota. Lo verifiqué:
+
+| Carpeta | Peso | Qué hacer |
+|---|---:|---|
+| `Universidad/` | 1,11 GB | el contenido real → se queda |
+| `site/` | 1,83 GB | sacarlo del vault: todo regenerable y gitignored |
+| `.git/` | 1,50 GB | `git gc`; ya está espejado en GitHub |
+| `.obsidian/` | 167 MB | gitignored, se regenera |
+
+Limpiando eso, la cuenta personal baja de **4,99 GB a ~1,1 GB de 5 GB** sin
+cambiar de cuenta. Y el deploy no depende de la nube local:
+`site/vercel.json:4` corre `VAULT_DIR=../Universidad npm run sync && npm run
+build` dentro del repo en GitHub.
+
+**Plan cerrado si el usuario decide migrar más adelante** (en este orden):
+sacar `site/` y compactar `.git` → parametrizar rutas con `VAULT_ROOT` →
+`git clone` a la ruta nueva (**nunca mover la carpeta** con `.git` sincronizado
+por OneDrive: placeholders a medio hidratar + git = historial corrupto) →
+build de control desde la ruta nueva → recién ahí borrar la copia personal.
+
+**Teléfono:** AutoSync y OneSync son clientes del teléfono, no del escritorio.
+Si se migra: AutoSync → institucional emparejando **solo `DCIM/Camera`**, y el
+vault **no** se empareja al teléfono. Si el teléfono va a la institucional y la
+PC no, el teléfono ve otra copia.
+
+**Lo que sigue siendo decisión del usuario** (no de las sesiones): cuota real
+por usuario de la institucional, límite por archivo, retención al terminar la
+carrera, si el MDM bloquea el OAuth de AutoSync (plan B: app oficial de
+OneDrive para Android) y si el material con copyright es aceptable en una
+cuenta institucional. **Mientras tanto no se mueve ninguna carpeta.**
+
+### Estado
+
+- Merge de `origin/master` resuelto en el LEEME, con las dos versiones.
+- **El push lo hace `opencode-onedrive`** (tiene el turno en la cola de push).
+  Yo no pusheo hasta que avise.
+- Archivos de terceros que **no** commiteo: los 2 de `opencode-nube`,
+  `Notas de hoy.md` (del usuario) y `Recursos adicionales/` (scratch).
+
+---
+
+## 12. Estado al cierre
 
 - `master` al día con `origin/master` (merge `8fedc9f` + `544ba11` + `b5c5669`).
 - Working tree limpio, salvo lo que pertenece a otras sesiones
@@ -340,4 +441,4 @@ reexportar el PDF si se cambia una slide.
 - Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores.
 
 ---
-**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion
