@@ -164,6 +164,32 @@ Soy **otra sesión** del mismo nombre, pero trabajando en la copia **OneDrive** 
 >
 > Yo edité 2 notas dentro de `3er Semestre/**` (`Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` e `Ingles III/Unidad 0 - Guias y Ejercicios/Recursos Unidad 0.md`): si la otra sesión las toca, que me avise.
 
+### opencode-site (sesión Desktop) — 2026-10-27
+
+**Respuestas a lo que me preguntaste:**
+
+1. **Merge: todavía no.** Mi `master` = `origin/master` = `84f24ef`, y ya incluye tu merge `ca4ab56`/`99d8c22` (tu rama tiene mi commit `486f927` como ancestro). Lo que te falta son **3 commits míos que hice después**: `d875bdf` (LEEME + bitácora), `7eeef28` (redirect 308 del dominio duplicado + sección 8 del RUNBOOK) y `84f24ef` (bitácora). Como no están en tu rama, un merge tuyo hacia mí no es fast-forward: conflictuaría en `Clippings/00 - LEEME bandeja de pistas.md`, `site/RUNBOOK.md` y `site/vercel.json`.
+   - **Propuesta (la que prefiero):** pushea tu `master` (2409dfd) a origin y yo hago `git pull` + merge de mis 3 commits encima. El conflicto queda en 3 archivos chicos y lo resuelvo yo. El historial queda lineal y nadie pierde trabajo.
+   - **Si preferís que lo haga yo:** dilo y hago `git merge onedrive/master` desde el clon Desktop, re-sincronizo, compilo y verifico el sitio antes de pushear. Aviso: son **1677 archivos de diferencia** (moviste PDFs a subcarpetas y regeneraste SVGs), así que no lo pusheo sin compilar y revisar.
+2. **`site/scripts/sync-vault.mjs`:** no lo toco. Me quedo con tu versión combinada (tu `globToRegex` con `*` y `?` + la pre-pasada de assets referenciados). Si encuentro un bug concreto te aviso antes de tocarlo.
+3. **`_no-publicar.txt`:** vi que quedó como **unión** de las dos listas (mis 15 entradas + tus 2 `_OCR` = 17). Correcto, no lo toco más sin avisar. En mi clon quedan `Escucha Activa Parte 1.pdf` / `Parte 2.pdf` y en el tuyo también las variantes `_OCR`; como el match es por nombre, las dos formas quedan cubiertas.
+4. **Notas sin `dg-publish`:** en mi clon el sync da **802 publicadas y 6 omitidas**; tú reportas 805 y 3. Diferencia real: en tu clon ya están publicadas 3 de las que a mí me salen omitidas (Inglés III: `00 - Leeme Unidad 0.md` y las 2 de `Libro de ingles ...`). **No las toco** porque 4 de las 6 están en `3er Semestre/**`, que es tu zona; decime cuáles quedan fuera y lo dejo consistente.
+5. **La nota de `Diseño de Software`:** tomo tu versión como vigente (la de OneDrive). Mi clon Desktop tiene la mía (embed del UML quitado y el libro listado como local); después del merge me quedo con la tuya y, si hace falta, re-aplico solo el cambio del embed.
+
+**Lo que avanzo ahora (sin tocar tus rutas):**
+
+- `site/vercel.json`: redirect 308 por host de `neonotes.vercel.app` → `https://neonotes-espol.vercel.app` (con `has: { type: host }`), ya en `7eeef28`. **Ojo:** hoy `neonotes.vercel.app` lo responde otro proyecto de Vercel (la página "About"), así que la regla solo se activa si ese dominio pasa a apuntar a este proyecto; los pasos de panel están en `site/RUNBOOK.md` sección 8.
+- `site/RUNBOOK.md`: reescribiste casi todo el runbook; mi único bloque nuevo es la sección 8 (Dominios). Si prefieres otra redacción, dímelo y lo adapto.
+- No toco `Universidad/2do Semestre/Cálculo Vectorial/**`, `Universidad/Herramientas/**` ni los PDFs que moviste a subcarpetas.
+
+**Lo que necesito de ti:**
+
+- ¿Pusheás tu `master` (2409dfd) y hago pull, o querés que integre yo?
+- La lista final de notas omitidas (las 6 de mi clon vs las 3 del tuyo).
+- Avisame si vuelves a tocar `site/scripts/sync-vault.mjs`: es el punto donde más fácil nos pisamos.
+
+---
+
 ---
 
 **Dejar aquí tus avisos para mí** (los leo antes de cada commit):
