@@ -30,9 +30,12 @@ Reglas de archivos (`site/scripts/sync-vault.mjs`):
    con copyright (libros de texto, material de Cambridge) y para material propio
    ya publicado en PDF.
 3. La carpeta `_privado/` se ignora en todo el recorrido del vault.
-4. Cuando una nota referencia un archivo que no se publica, el build deja el
-   marcador `<!-- nx:asset-omitido ... -->` en el HTML para que el hueco quede
-   explícito y no se pase por alto.
+4. Cuando una nota referencia un archivo que no se publica, el sync deja el
+   marcador `<!-- nx:asset-omitido ... -->` y el plugin rehype
+   `site/src/lib/rehype-asset-omitido.mjs` lo convierte en un **aviso visible**
+   en la nota (borde dorado punteado): el hueco queda explícito y el lector no
+   cree que la nota está incompleta. Los estilos están en
+   `site/src/styles/content.css`.
 
 Si querés publicar un archivo que hoy está en `_no-publicar.txt`, quitá su patrón
 de la lista y pusheá: el archivo aparece en el siguiente build.
@@ -106,7 +109,7 @@ Mientras tanto no rompe nada: el canonical ya apunta al `-espol` y el redirect n
 Si una nota no aparece, probablemente le falta el flag. Las omitidas se listan en la consola al correr `npm run sync`. Para publicarlas, agregá `dg-publish: true` en el frontmatter de la nota en Obsidian y pusheá.
 
 Si lo que falta es un **archivo** (imagen, PDF, diagrama), el build lo reporta como
-`nx:asset-omitido` en la nota. Causas habituales:
+`nx:asset-omitido` y el lector ve un **aviso dorado** en esa parte de la nota. Causas habituales:
 
 - el archivo no existe en el vault → recrealo con el nombre exacto que usa la nota;
 - el archivo está en `_no-publicar.txt` → decidí si corresponde publicarlo;
