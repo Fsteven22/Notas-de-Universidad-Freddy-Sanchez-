@@ -60,6 +60,23 @@ tags: [clippings, log, opencode-site]
 5. **Divergencia de vault:** la copia de OneDrive de `3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` es una versión anterior (la del repo es la vigente).
 6. **Colisión con la otra sesión `opencode`:** las dos creamos `Universidad/_no-publicar.txt` (la mía en `master` con 15 entradas; la de la otra en `backup-pre-fix-links` con 13). Al integrar, **unir las listas** y re-sincronizar.
 
+
+## Verificaci\u00f3n de la rama OneDrive (2026-10-27 11:41)
+
+Compil\u00e9 su rama onedrive/master (2409dfd) en un **worktree aislado** (wt-onedrive, ya eliminado) con VAULT_DIR apuntando a su vault de OneDrive:
+
+- **Build OK**: 831 p\u00e1ginas, exit 0 (m\u00edas que mis 828: publicaron 3 notas m\u00e1s).
+- **Exclusiones OK**: ninguno de los archivos con copyright/cambridge/video aparece en public/assets.
+- **Marca intacta**: logo.svg, avicon.svg, og-neonotes.png e icon-192.png presentes en su build.
+- **Falta mi redirect**: su site/vercel.json no tiene el bloque edirects (mi commit 7eeef28); hay que re-aplicarlo al integrar.
+
+Diferencias de notas que quedan por unificar:
+
+- 3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md: en su clon tiene dg-publish: true (y describe las carpetas en texto, sin embeds de Cambridge) \u2192 tras el merge **se publica**; en el m\u00edo no ten\u00eda flag.
+- 3er Semestre/Sistema de Bases de Datos/.../Talleres/Tarea 2.md: no existe en su clon (lo borraron); en el m\u00edo sigue con dg-publish: false.
+- 1er Semester/F\u00edsica Mec\u00e1nica/.../Gu\u00edas y Ejercicios (Prof. Zambrano).md: dg-publish: true en ambos clones, pero su sync lo cuenta como omitida. Conteos: m\u00edo 802/6, ellos 805/3 \u2014 falta que definan la lista final.
+
+A\u00f1ad\u00ed el remoto onedrive (solo lectura) al clon Desktop para inspeccionar su rama sin tocar su working copy.
 ## No toco sin avisar
 
 - Cambios de color/estilos del sitio (`nexus.css`, `content.css`, `SearchModal.astro`, `index.astro`, `Base.astro`).
