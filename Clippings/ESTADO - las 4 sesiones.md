@@ -1,133 +1,172 @@
 ---
 dg-publish: false
-tags: [clippings, estado, coordinacion]
+tags: [clippings, estado, sesiones, plan, tablero]
 ---
 
-# ESTADO - las 4 sesiones (cierre del 27/10/2026)
+# ESTADO - las 4 sesiones (27/10/2026)
 
-> [!info] Qué es este archivo
-> Inventario de **lo que cada sesión ya dejó hecho** (resultados) y **lo que le falta** (pendientes + próximos pasos), con dueño. Es la respuesta a la pregunta "qué nos falta por hacer a cada uno".
->
-> **Quién puede tocar qué:** las secciones de `opencode-onedrive`, `opencode` y `opencode-nube` están **transcritas de su propio log** (`LOG-<agente>.md`): si algo no coincide con lo que esa sesión piensa, lo corrige en su log y avisa acá. La sección de `opencode-site` es la mía.
+> [!info] 📌 Qué es este archivo
+> Es el **tablero vivo** del vault. Cada sesión mantiene **su propio bloque**
+> (Resultados / Qué falta / Próximos pasos) y **no toca el de los demás**.
+> Al cerrar una tanda: actualizá tu bloque → stageá rutas exactas → **anunciá el
+> push** en el LEEME ("Avisos de otros agentes") → pusheá.
+> Los **números globales** de abajo los actualiza quien haga el push.
 
-## Resumen ejecutivo
+> [!important] Estado global verificado (27/10/2026, 15:45)
+> - `master` = `origin/master` = **`bb1bc19`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
+> - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
+> - Cuota OneDrive: **2,39 GB de 5 GB** en la raíz local. En la **nube** sigue pendiente vaciar la papelera (~1,8 GB) → depende del usuario.
+> - Reglas vigentes: LEEME → *"🤝 PROTOCOLO DE COMMITS Y PUSHES"* + *"🤝 ACUERDO entre sesiones"* (Acuerdos 1–4, firmados por las 4 sesiones).
 
-| Sesión | Zona | Resultado (verificado) | Qué le falta | Siguiente paso |
-|---|---|---|---|---|
-| `opencode-site` | `site/src/**`, `site/public/` (marca), `site/RUNBOOK.md` §2 y §8, `_no-publicar.txt` | Marca (logo F, favicons, OG, paleta violeta→azul) + 17 patrones de exclusión + aviso visible de material omitido + redirect 308 + deploy sano (0 assets rotos) | **1 cosa depende de vos**: el dominio. Y 2 mejoras que puedo hacer sin permiso (CI anti-fuga, carpeta `_privado/`) | Verificar el deploy de 833 páginas cuando termine Vercel; esperar tu "dale" al dominio |
-| `opencode-onedrive` | `2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `site/docs/**`, `Herramientas/SVGs por recrear.md` | Cálculo Vectorial saneado (16 diagramas placeholder → reales, 37 maestros integrados → **0 embeds rotos**), `SVGs por recrear.md` 474 → **0**, fuga `_OCR` de Escucha Activa cerrada, `_no-publicar.txt` unificado, RUNBOOK reescrito | **8 propuestas (P1–P8)**: 3 necesitan tu luz verde (P2 lista blanca, P5 sacar `site/`, P8), 1 es mía (P3 CI), 1 es suya (P4 versionar los QA) | P1 (worktree por sesión) **ya acordada**; P3 y P4 son las de mayor valor |
-| `opencode` (3er Semestre) | `3er Semestre/**`, `Herramientas/Mantenimiento/**` | 3er Semestre con **0 wikilinks rotos, 0 errores de formato, 0 PDFs huérfanos**; Speaking Exam 2 completo (nota 336 líneas + 2 SVG mermaid + PDF 7 pág. + PPTX editable); `qa_links.py` / `verificar_nota.py` en verde; push de 8 commits anunciado | **5 pendientes** (§9 de su log): 2 de contenido (embeber PNG, renderizar decks) y 3 de volumen (1039 BAD del 1er/2do/Preuniversitario, ~970 errores de formato, 32 PNG huérfanos) | El #3 (1039 BAD) **lo tenés que decidir vos**: ¿se arreglan o se aceptan? |
-| `opencode-nube` | solo `Clippings/**` | PISTA de migración + **corrección de alcance** (AutoSync/OneSync son del teléfono, no de la PC) + mediciones de cuota + hallazgo de que `node_modules`/`dist` no pueden vivir en OneDrive + **criterio de reevaluación** (migrar solo si `Universidad/` > 3 GB) | La PISTA sigue `#pendiente`: faltan **5 datos que solo tenés vos** (cuota real institucional, límite por archivo, retención al terminar la carrera, MDM/OAuth de AutoSync, copyright en cuenta institucional) | Esperar tus respuestas; si confirmás, se actualiza la PISTA a `#procesado` con el plan cerrado |
+---
 
-## 1. `opencode-site` (este repo: marca, exclusiones, deploy)
+## 1) `opencode` — 3er Semestre (wikilinks y embeds)
 
-### Resultados
-
-- **Marca**: logo F (`logo.svg`), `favicon.svg` + `favicon.ico` real (16/32/48 px), `icon-192/512.png`, `apple-touch-icon.png`, `og-neonotes.png` (1200×630). Paleta violeta `#aa66ff` → azul `#00aaff`, acento cian `#00ddbb`, fondo `#05070d`; el verde `#00ff88` quedó **solo para estados semánticos** ("En curso", callout de éxito).
-- **Fix del buscador**: sus estilos estaban en un `<style>` *scoped* de Astro y el JS no los heredaba → movidos a `is:global` (resaltado cian, hover violeta).
-- **Metadatos**: `og:image` + `twitter:card=summary_large_image` + `theme-color` + canonical.
-- **Exclusiones de publicación**: `_no-publicar.txt` con **17 patrones / 61 archivos** (Cambridge, Escucha Activa + derivados `_OCR`, UML Stevens, Empower, `.wmv`, 43 capturas `empower-*.png`) y **3 notas** convertidas a texto plano. Efecto medido: `public/assets` 791,5 → **690,9 MB**; ZIPs de Comunicación 32,4 → 18,8 MB, Inglés III 10,3 → 1,4 MB, Diseño 10,6 → 7,3 MB.
-- **Aviso visible de material no publicado** (nuevo): plugin rehype `site/src/lib/rehype-asset-omitido.mjs` + estilos en `content.css`. Antes el embed **desaparecía en silencio**; ahora es un aviso con borde dorado. En producción quedan **2 notas** con aviso (Inglés II C1-C2 e Inglés III U0): lo demás se resolvió (los diagramas de Cálculo que salían como omitidos ya cargan).
-- **Redirect 308** de `neonotes.vercel.app` → canonical, en `site/vercel.json` + pasos de panel en `site/RUNBOOK.md` §8.
-- **Coordinación**: merge limpio con la sesión OneDrive, protocolo de pushes, acuerdo de las 4 sesiones y veredicto de migración (no migrar ahora).
-- **Producción verificada con navegador real**: 0 assets rotos, 0 HTTP 4xx, 0 errores de consola en 8 rutas de muestra.
-
-### Qué me falta
-
-| # | Qué | Depende de |
-|---|---|---|
-| 1 | **Verificar el deploy con el contenido nuevo** (806 notas · 833 páginas) cuando termine Vercel | nada (lo hago yo) |
-| 2 | **Dominio `neonotes.vercel.app`**: paso manual en el panel de Vercel (hoy responde la página "About" de otro proyecto) | **vos** |
-| 3 | **CI anti-fuga** (propuesta P3 de `opencode-onedrive`): un workflow que falle el build si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs. Hoy no hay `.github/workflows` | tu ok (es barato y evita que se repita la fuga de `Escucha Activa`) |
-| 4 | **`_privado/` reservado** (decisión 2 del plan): el sync lo ignora por estructura, pero nadie lo usa todavía | tu ok |
-| 5 | **Reporte de material omitido en el build**: el aviso nuevo cubre la nota; falta un resumen en la consola/listado de qué se excluyó y por qué | nada (prioridad baja) |
-
-> Lo que **ya está hecho** y no hace falta repetir: `404.astro` propia, `sitemap.xml` (171 KB), `robots.txt`, ZIPs por materia (13), buscador Ctrl+K, flashcards, callouts, KaTeX.
-
-## 2. `opencode-onedrive` (higiene de publicación) — transcrito de su log
+Bitácora: `LOG-opencode.md` · Clon: OneDrive
 
 ### Resultados
+- **3er Semestre: 0 wikilinks rotos**, **0 errores de formato** en sus 173 notas, **0 PDFs huérfanos**.
+- Vault completo: **1075 → 1039 BAD** (ningún semestre subió).
+- `qa_links.py` corregido (`partir_alias`: `#` en nombres de archivo, `\|` en tablas).
+- 438 SVG movidos a `Diagramas/` de cada materia; 861 wikilinks rotos convertidos en texto plano; 14 tablas → callouts; 74 decks renderizados a PNG y embebidos.
+- **Speaking Exam 2** (Inglés III) agregado: nota + PDF de 7 páginas exportado con PowerPoint COM + 2 SVG mermaid.
+- Commits: `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`, `99d8c22`, `c11e2b9`, `4fd4960`, `ba68d18`, `c4a84b5`.
 
-- **Cálculo Vectorial**: 16 diagramas que eran *placeholders* sustituidos por los reales; 2 "Teorema Fundamental de Línea" corregidos (tenían contenido de otro diagrama); **37 diagramas maestros integrados en sus 32 notas → 0 embeds de diagramas rotos en todo el vault**.
-- **Limpieza**: borrados `test.svg`, 9 SVG superados, 2 duplicados exactos de `Figuras/`, `Tarea 2.md` + su PNG, y **332 previews** de `SVG-Pipeline/previews/` (12,7 MB) + regla `previews/` en `.gitignore`.
-- **`Universidad/Herramientas/SVGs por recrear.md`: 474 entradas → 0.**
-- **Copyright**: se escapaba `Escucha Activa Parte 1/2_OCR.pdf` (el patrón no cubría el sufijo `_OCR`) → cerrado. `_no-publicar.txt` quedó como **unión** de las dos listas (17 patrones).
-- **Publicación**: 805 → **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 833 páginas** sin errores.
-- **Documentación**: reescribió `site/RUNBOOK.md` (8 secciones) y dejó `site/docs/HISTORIAL-LANZAMIENTO.md`.
-- **Merge final**: resolvió los 2 conflictos del LEEME conservando las dos versiones, con `qa_links.py` y `verificar_nota.py` en verde.
-
-### Qué le falta (sus propuestas P1–P8)
-
-| # | Propuesta | Estado / dueño |
-|---|---|---|
-| P1 | **Un worktree por sesión** (que nadie comparta working tree) | **Acordada** por las 4 sesiones |
-| P2 | **Lista blanca** para el material con copyright (invertir `_no-publicar.txt` a `_publicar.txt`, o mover el material a `Universidad/_privado/`) | **decisión tuya** |
-| P3 | **CI que verifique las publicaciones** (que falle si se filtra un asset excluido) | **mi zona** → te la puedo hacer |
-| P4 | **Una sola entrada de QA**: mover sus 9 scripts de auditoría (están en `C:\Users\STEVEN~1\AppData\Local\Temp\opencode\`: `qa_fugas_copyright.py`, `qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_svg_titulo.py`…) a `Universidad/Herramientas/` y versionarlos | **su zona** (yo no los muevo) |
-| P5 | **Sacar `site/` del vault** (1,83 GB) | **decisión tuya** + forma corregida: **mover**, no borrar dentro de la nube, y **vaciar la papelera de OneDrive** |
-| P6 | **Parametrizar rutas absolutas** con una variable `VAULT_ROOT` (~15 archivos) | **su zona**; solo si algún día se migra |
-| P7 | **Limpiar los 32 PNG huérfanos** de `Universidad/Figuras/` (material en curso de Discretas) | baja |
-| P8 | **Arreglar los `verificar_nota.py` que fallan en Cálculo Vectorial** (vacíos dentro de fences en callouts) | **su zona**; pide luz verde |
-
-## 3. `opencode` (3er Semestre) — transcrito de su log
-
-### Resultados
-
-- **3er Semestre: 0 wikilinks rotos, 0 errores de formato, 0 PDFs huérfanos.** 5 commits (`955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`) + merges, ya dentro de `origin/master`.
-- **Speaking Exam 2** (Inglés III, `Unit 1 - Can We Talk`): nota `Speaking Practice # 2.md` (336 líneas, misma estructura que la # 1), 2 diagramas mermaid (`en3-u1-12-01-graph.svg`, `en3-u1-12-02-mind.svg`), PDF de la presentación (7 páginas, 415 KB) y **PPTX editable que queda local, no se publica**; actualizó los 2 índices (Unidad 0 y Unidad 1).
-- **Auditoría**: `qa_links.py` y `verificar_nota.py` en verde (0 BAD en 3er Semestre; vault en 1039).
-- **Push correcto**: anunciando el turno (`3cb1fdc`) y verificando antes de pushear (806/3, 833 páginas).
-- **Aportó al acuerdo**: el patrón de resolución de conflictos del LEEME (conservar HEAD **y** origin, en orden cronológico) y la propuesta de worktree por sesión.
-
-### Qué le falta (§9 de su log)
-
-| # | Qué | Dónde | Prioridad | Dueño |
-|---|---|---|---|---|
-| 1 | **Embeber los PNG ya renderizados**: Git, componentes, normalización | `3er Semestre/Diseño de Software/Unidad 2 y 5/Archivos/` | media | la sesión |
-| 2 | **Renderizar lo que falta**: DSW U3/U4/U5-01 y decks de BD | decks oficiales | baja | la sesión |
-| 3 | **Decidir los 1039 BAD de 1er/2do/Preuniversitario** | todo el vault | **requiere tu decisión** | **vos** |
-| 4 | **Normalizar ~970 errores de formato** del 1er/2do/Preuniversitario | todo el vault | baja | la sesión |
-| 5 | **Revisar los 32 PNG huérfanos de `Figuras/`** (mismo tema que P7) | `Universidad/Figuras/` | baja | la sesión |
-
-## 4. `opencode-nube` (infraestructura / nube) — transcrito de su log
-
-### Resultados
-
-- **PISTA** `PISTA - migracion vault a OneDrive institucional.md` + **corrección de alcance**: AutoSync y OneSync son clientes del **teléfono**, no de la PC → si el teléfono va a la institucional y la PC no, se ven **copias distintas**.
-- **Mediciones**: raíz de OneDrive 4,99 GB / 5 GB → `Universidad/` 1,11 GB (contenido real) · `site/` 1,83 GB · `.git/` 1,50 GB · `.obsidian/` 167 MB · backups 0,45 GB. **~3,9 GB liberables** sin migrar.
-- **Veredicto**: **no migrar ahora**; criterio de reevaluación: **migrar solo si `Universidad/` supera 3 GB**.
-- **Hallazgo compartido con las otras sesiones**: `node_modules` y `dist` **no pueden vivir** dentro de la carpeta sincronizada (OneDrive los deshidrató/borró mientras npm y Astro escribían encima).
-- **Cola de push con dueño** por cada pendiente y **regla de zona** corregida (son 4 sesiones, no 3).
-
-### Qué le falta
-
-- La PISTA sigue en **`#pendiente`** porque faltan **5 datos que solo tenés vos**: (1) cuota real por usuario de la institucional, (2) límite por archivo, (3) retención/borrado al terminar la carrera, (4) si el MDM institucional bloquea el OAuth de AutoSync (plan B: app oficial de OneDrive para Android), (5) si el material con copyright puede vivir en una cuenta institucional.
-- **No mueve ninguna carpeta** hasta que confirmes esos 5 puntos.
-- **No commitea** `Notas de hoy.md` (tuyo) ni `Recursos adicionales/` (scratch).
-
-## 5. Lo que te corresponde decidir (nadie más lo puede hacer)
-
-| # | Decisión | Consecuencia | Estado |
+### Qué falta
+| # | Qué | Prioridad | Decide |
 |---|---|---|---|
-| 1 | **Vaciar la papelera de OneDrive** | Las 1,8 GB de `site/` ya no están en el clon, pero hasta vaciar la papelera siguen contando en la cuota | pendiente |
-| 2 | **Dominio `neonotes.vercel.app`** (panel de Vercel → Settings → Domains; pasos en `site/RUNBOOK.md` §8) | El canonical ya es `neonotes-espol.vercel.app`; el duplicado hoy muestra la página "About" de otro proyecto | pendiente |
-| 3 | **P2: lista negra o lista blanca** para el copyright | Hoy: lista negra con 17 patrones / 61 archivos, y funciona. La lista blanca es más difícil que se escape algo | tu decisión |
-| 4 | **P5: sacar `site/` del vault** (mover + vaciar papelera) y **`.git/`** (1,50 GB) | Libera ~3,3 GB sin migrar de cuenta; requiere que nadie compile dentro de OneDrive | tu decisión |
-| 5 | **1039 BAD del 1er/2do/Preuniversitario** | Se arreglan o se aceptan (los "BAD" son referencias que no resuelven) | tu decisión |
-| 6 | **Material con copyright en la cuenta institucional** | Si no se puede, la migración institucional se cae sola | tu decisión (+ consultar a TI/biblioteca) |
-| 7 | **`OneSyncFiles-backups/`** (0,45 GB) | Mover a la institucional o borrar | tu decisión |
-| 8 | **Tus 2 archivos** en el clon de OneDrive: `Notas de hoy.md` (modificado) y `Recursos adicionales/Speaking Practice.md` (0 KB, scratch) | No los tocó ninguna sesión | tu decisión |
-| 9 | **Teléfono**: AutoSync → institucional emparejando solo `DCIM/Camera` (el vault no se empareja) | Reemplaza OneSync (Samsung), que hoy sube las fotos a la cuenta personal | tu decisión |
+| 1 | Los **1039 BAD** de 1er/2do/Preuniversitario: son links a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
+| 2 | Embebir los PNG ya renderizados (Git, componentes, normalización) en `DSW/Unidad 2 y 5/Archivos/` | media | sesión |
+| 3 | Renderizar los decks que faltan: DSW U3/U4/U5-01 y BD | baja | sesión |
+| 4 | Normalizar ~970 errores de formato del 1er/2do/Preuniversitario (`ENDINGS mixed`, líneas vacías dentro de fences en callout) | baja | sesión |
+| 5 | Revisar los **32 PNG huérfanos** de `Universidad/Figuras/` (material en curso de Matemáticas Discretas) | baja | sesión (P7) |
 
-## 6. Reglas vigentes (resumen del acuerdo, en `00 - LEEME bandeja de pistas.md`)
-
-1. **Un push a la vez**, anunciado antes y después: `PUSHEO EN CURSO …` / `PUSHEADO <hash>`.
-2. Antes de pushear: `git fetch origin` → `git log origin/master..HEAD` (lo mío) → `git log HEAD..origin/master` (lo ajeno) → si hay algo ajeno: `git pull --no-rebase`, resolver **conservando las dos versiones**, **build de control** si tocó `site/**` o `Universidad/**`.
-3. **Nunca** `--force`, `amend` de un commit publicado, `reset --hard` sobre trabajo ajeno, ni `git add -A` / `commit -a`.
-4. **Ruido de CRLF**: `git diff --ignore-cr-at-eol --stat` para confirmar que un `.md` no cambió de verdad, y `git checkout -- <ruta>` para descartarlo.
-5. **Commiteá antes de que otra sesión mergee** (un merge pisa lo sin commitear) y usá **un worktree por sesión**.
-6. **Zonas reservadas** por sesión; una nota destino = un agente responsable; cada `LOG-<agente>.md` tiene un solo dueño.
-7. **En el clon de OneDrive solo viven `Universidad/`, `Clippings/` y el código versionado**: `node_modules/`, `dist/`, `public/assets/`, `public/downloads/` y `notes-md/` **nunca** (OneDrive los pelea con npm y Astro). Para compilar desde ahí: worktree en disco local.
+### Próximos pasos
+1. Esperar la decisión del usuario sobre los 1039 BAD (no tocar antes: son links a material que no existe).
+2. Embebir los PNG ya renderizados (2) y dejar los decks pendientes en cola.
+3. Cuando `opencode-onedrive` mueva los scripts de auditoría a `Herramientas/Mantenimiento/`, sumar ahí un chequeo de PDFs huérfanos.
 
 ---
-**Tags:** #clippings #estado #coordinacion #onedrive
+
+## 2) `opencode-site` — sitio, marca y exclusiones
+
+Bitácora: `LOG-opencode-site.md` · Clon: Desktop (`notas-nexus-unificado`)
+
+### Resultados
+- **Marca**: logo propio (F), portada OG, `favicon.ico` real (16/32/48 px) + `link image/x-icon`, iconos de app.
+- **Paleta violeta → azul** (`#aa66ff` → `#00aaff`, acento `#00ddbb`, fondo `#05070d`; el verde `#00ff88` quedó solo para estados semánticos) + fix de estilos del buscador (`SearchModal.astro`: estaban en un `<style>` *scoped* que el JS no heredaba).
+- **Redirect 308** del dominio duplicado (`neonotes.vercel.app` → `neonotes-espol.vercel.app`) por host, con los pasos de panel documentados en `site/RUNBOOK.md` §8.
+- **Plugin rehype** `site/src/lib/rehype-asset-omitido.mjs`: el sitio **avisa en pantalla** qué material no se publica y por qué (antes el embed desaparecía en silencio). El marcador llega como nodo hast `raw` cuando va inline en una lista/cita, no como `comment`: el plugin cubre los dos casos.
+- **Exclusiones**: 17 patrones / 61 archivos fuera de publicación (Cambridge, video, libros `z-lib.org`, UML Stevens, Escucha Activa `_OCR`).
+- Efecto medido: ZIP Comunicación **32,4 → 18,8 MB**, Inglés III **10,3 → 1,4 MB**, DSW **10,6 → 7,3 MB**; assets publicados **791 → 691 MB**.
+- **Producción verificada con navegador real** (Chrome headless, 8 rutas de muestra): **0 assets rotos, 0 HTTP 4xx, 0 errores de consola**; `/favicon.ico` → 200 `image/vnd.microsoft.icon`; el aviso "material no publicado" visible en las 2 notas que quedan con material con licencia de lectura; `og:image` y `logo.svg` correctos.
+- **Espejo refrescado**: `Desktop\Proyectos\notas-nexus` quedó como espejo del repo canónico (código + marca copiados, derivados regenerados, **831 páginas**, sin verde de marca) y su `PLAN-PUBLICACION.md` actualizado al estado real. Sigue **sin commits de git**.
+- **Coordinación**: escribió el protocolo de pushes (`edd511b`) y los Acuerdos 1–4, integró el merge con la sesión OneDrive sin conflictos, y adoptó el tablero canónico de esta sesión (`129d753`) para evitar dos tableros paralelos.
+- Commits: `4a3e443`, `ba9ad13`, `88b3fac`, `486f927`, `7eeef28`, `66c9eca`, `edd511b`, `332d22a`, `0d7c562`, `de42ca3`, `878bcc6`, `cd01900`, `8a63b04`, `81a3f9c`, `19ac29c`.
+
+### Qué falta
+| # | Qué | Prioridad | Decide |
+|---|---|---|---|
+| 1 | **Paso manual en el panel de Vercel** para liberar `neonotes.vercel.app` (hoy lo responde otro proyecto). El CLI no tiene token válido | media | **usuario** (guía en `site/RUNBOOK.md` §8) |
+| 2 | **Verificar el deploy con el contenido nuevo** (806 notas · 833 páginas) cuando termine Vercel | media | sesión |
+| 3 | **CI anti-fuga** (P3 de `opencode-onedrive`): un workflow que falle el build si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs. Hoy **no hay `.github/workflows`** | media | **sesión** (mi zona) — con tu ok |
+| 4 | **Carpeta `_privado/` reservada** (decisión 2 del plan): el sync la ignora por estructura, pero nadie la usa | baja | usuario |
+| 5 | **Reporte en el build** de qué material quedó excluido y por qué (hoy solo se ve el aviso en la nota) | baja | sesión |
+
+> Ya no pendientes (cerrados en esta ronda): verificación en producción de favicon/redirect/aviso (hecha), refresco del espejo (hecho) y `git pull` del clon Desktop (hecho: `master` = `origin/master`).
+
+### Próximos pasos
+1. Verificar el deploy de 833 páginas cuando Vercel termine y reportar.
+2. Implementar el CI anti-fuga (#3) si me das el ok: es la red de seguridad que faltó para `Escucha Activa Parte 1_OCR.pdf`.
+3. Avisarte el paso del panel del dominio (#1) y dejar la verificación documentada en el LEEME.
+4. Cuando confirmes la cuenta institucional, revisar si el `favicon`/`og` necesitan versión institucional.
+
+---
+
+## 3) `opencode-nube` — cuota, nube y migración
+
+Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive institucional.md` (**#procesado**) · Clon: OneDrive
+
+### Resultados
+- **Medición real de la cuota**: raíz de OneDrive **4,99 GB de 5 GB** → `Universidad/` 1,11 GB (contenido real), `site/` 1,83 GB (regenerable), `.git/` 1,50 GB (espejado en GitHub), `.obsidian/` 167 MB.
+- **Veredicto**: **la migración al OneDrive institucional NO es necesaria**; la cuota se resuelve limpiando lo generado y compactando `.git`. Pista cerrada en `#procesado`.
+- **Evidencia reproducida 3 veces** de que `node_modules` **no puede vivir en OneDrive**: (1) el build falla con `Cannot find module .../astro/...`; (2) `npm ci` falla con `ENOTEMPTY` porque OneDrive y npm pelean por el mismo directorio; (3) build de control **fuera** de OneDrive → OK (806 notas → 833 `.html`, exit 0).
+- Aclaración importante: **AutoSync y OneSync son apps del teléfono**, no clientes de escritorio; el PC usa el cliente oficial de OneDrive.
+- **Plan cerrado** por si algún día se migra: `git clone` a la ruta nueva (nunca mover la carpeta), `VAULT_ROOT` en las rutas hardcodeadas, **sin AutoSync** para `.git/`, `node_modules/`, `dist/`, `.obsidian/`, y el clon Desktop sigue desplegando.
+
+### Qué falta
+| # | Qué | Prioridad | Decide |
+|---|---|---|---|
+| 1 | **Vaciar la papelera de OneDrive** → libera ~1,8 GB en la nube (lo borrado de `site/` sigue contado como eliminado) | **alta** | **usuario** (1 clic) |
+| 2 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local → libera 458 MB en la nube sin perder el respaldo | alta | **usuario** (ya ofrecida por `opencode-onedrive`) |
+| 3 | **Fijar el vault** ("mantener siempre en este equipo") para que OneDrive no lo deshidrate | alta | **usuario** |
+| 4 | Cuenta institucional: cuota real por usuario, límite por archivo (el `.wmv` pesa 58 MB), **retención** al terminar la carrera y si el material con copyright es aceptable ahí | media | **usuario / TI** |
+| 5 | Teléfono: AutoSync → cuenta institucional, **solo `DCIM/Camera`**; el vault no se empareja; PC y teléfono a la misma cuenta | baja | **usuario** |
+| 6 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
+
+### Próximos pasos
+1. Cerrar 1–3 con el usuario (los tres son reversible y no tocan contenido).
+2. Con la respuesta a 4, dejar por escrito si la migración queda descartada o solo aplazada, y actualizar la PISTA.
+3. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
+
+---
+
+## 4) `opencode-onedrive` — reglas de publicación y Cálculo Vectorial
+
+Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
+
+### Resultados
+- **Sistema de publicación** en `site/scripts/sync-vault.mjs`: gate `dg-publish`, `_no-publicar.txt` con comodines `*`/`?` (match por nombre **o** ruta), **solo se publica un asset si una nota publicada lo referencia**, fix de embeds `![[Nota]]` → `[[Nota]]`, y marcador `<!-- nx:asset-omitido -->`.
+- **Cálculo Vectorial**: 16 diagramas placeholder sustituidos por los reales, 2 "Teorema Fundamental" corregidos, **37 diagramas maestros integrados en 32 notas** → **0 embeds de diagramas rotos** en todo el vault; 332 previews borrados (12,7 MB); lista maestra regenerada (474 → **0**).
+- **Copyright**: cerrada la fuga de `Escucha Activa Parte 1/2_OCR.pdf` (se publicaban) y unificada la lista con la otra sesión (17 patrones / 61 archivos).
+- **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`).
+- **Coordinación**: protocolo de pushes, Acuerdos 1–4, cola de push con dueño, corrección de la tabla de zonas (4 sesiones), reglas de *commitear antes de que otro mergee* y de *worktree por sesión*.
+- Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19` + merges.
+
+### Qué falta
+| # | Qué | Prioridad | Decide |
+|---|---|---|---|
+| 1 | **P8**: arreglar `verificar_nota.py` en Cálculo Vectorial (líneas vacías dentro de fences en callouts). Es mi zona | media | sesión |
+| 2 | **P4**: mover mis scripts de auditoría (`qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py`) a `Universidad/Herramientas/Mantenimiento/` con **una sola entrada** | media | sesión |
+| 3 | **P3**: CI (GitHub Actions) que falle si algo de `_no-publicar.txt` llega a `public/` o a un ZIP | media | sesión + usuario (¿CI?) |
+| 4 | **P6**: `VAULT_ROOT` en los 15+ archivos con ruta absoluta (8 en `SVG-Pipeline/`, 3 en `Herramientas/`, `sync-vault.mjs:19-20`, 3 `.md`) | media | sesión (antes de cualquier migración) |
+| 5 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
+| 6 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
+| 7 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
+
+### Próximos pasos
+1. P8 (mi zona, sin dependencias de nadie) → commit con rutas exactas.
+2. P4: dejar los 4 scripts en `Herramientas/Mantenimiento/` + documentarlos en `Herramientas/README.md`.
+3. P5 ya está hecho (limpieza de `site/`); queda solo **esperar el OK del usuario** para los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup, fijar carpeta).
+4. P6 antes de cualquier migración; P3 y P2 esperando decisión del usuario.
+
+---
+
+## ✅ Decisiones que esperan al usuario
+
+| # | Decisión | Impacto si no se decide | Detalle |
+|---|---|---|---|
+| 1 | **Vaciar la papelera de OneDrive** | la nube sigue "llena" (~1,8 GB de borrados) | bandeja del sistema → OneDrive → Papelera → Vaciar |
+| 2 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
+| 3 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
+| 4 | **Liberar `neonotes.vercel.app`** en el panel de Vercel | el dominio duplicado sigue sirviendo otra página | `site/RUNBOOK.md` §8 |
+| 5 | **Los 1039 BAD**: borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
+| 6 | **P2**: lista blanca o carpeta `_privado/` | depende de que alguien recuerde la lista negra | `LOG-opencode-onedrive.md` |
+| 7 | **Material con copyright** en la cuenta institucional | define si la migración es posible | PISTA |
+| 8 | **Teléfono**: AutoSync con `DCIM/Camera` a la institucional | fotos siguen en el celular | PISTA |
+
+---
+
+## 🔒 Reglas de operación (resumen — el detalle está en el LEEME)
+
+1. **Un push a la vez, siempre anunciado**: `PUSHEO EN CURSO · <rama> · <qué> · ~3 min` → `PUSHEADO <hash>`.
+2. **Stagear rutas exactas**: nunca `git add -A` ni `git commit -a`.
+3. **Ruido de CRLF**: si un `.md` aparece modificado y no lo tocaste, `git diff --ignore-cr-at-eol --stat` y `git checkout -- "<ruta>"`.
+4. **Antes de pushear**: `git fetch origin` → comparar `origin/master..HEAD` con `HEAD..origin/master` → si hay commits ajenos, `git pull --no-rebase` y **re-verificar con build**.
+5. **Prohibido**: `--force`, `amend` de algo publicado, `reset --hard` ajeno.
+6. **Si vas a tocar la ruta de otra sesión**: avisá en "Avisos de otros agentes" y esperá confirmación.
+7. **Zonas**: `site/src/**`+`site/public/**` → `opencode-site` · `Universidad/3er Semestre/**` → `opencode` · `2do Semestre/Cálculo Vectorial/**`+`site/scripts/sync-vault.mjs`+`site/RUNBOOK.md` → `opencode-onedrive` · `Clippings/` (su bitácora) → cada uno.
+
+---
+**Tags:** #clippings #estado #sesiones #plan #tablero

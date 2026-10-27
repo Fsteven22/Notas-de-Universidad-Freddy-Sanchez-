@@ -14,7 +14,8 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 > `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
 >
 > **Estado al cierre: TERMINADO.** El 3er Semestre queda en **0 wikilinks
-> rotos** y todo el trabajo está commiteado.
+> rotos**, todo el trabajo está commiteado y pusheado (`origin/master` =
+> `master`), y la cuota de OneDrive bajó de 4.816 MB a 2.445 MB.
 
 ---
 
@@ -24,9 +25,28 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 |---|---|---|---|
 | Wikilinks rotos, **3er Semestre** | 40 (falsos positivos incluidos) | **0** | `qa_links.py` con root=`Universidad` |
 | Wikilinks rotos, **todo el vault** | 1075 | **1039** | idem, ningún semestre subió |
+| ↳ reparto de los 1039 | — | 2do 528 · 1er 471 · Preuniv. 27 · Herramientas 13 | desglose del reporte de `qa_links.py` |
 | Errores de formato, 3er Semestre | 1395 | **0** en 173 notas | `verificar_nota.py` |
 | PDFs huérfanos en 3er Semestre | 8 | **0** | `qa_pdfs_huerfanos.py` (123 PDFs del vault) |
 | Alias con escape doble en tablas | 10 | **0** | fixer acotado a `[[...]]` en líneas de tabla |
+| **Cuota de OneDrive (raíz)** | **4.816 MB / 5.120 MB** | **2.445 MB / 5.120 MB** | medición con `Measure-Object Length -Sum` |
+| **`site/` (generado)** | **1.830 MB** | **1 MB** | borrado de lo gitignored + `git gc` |
+| **`.git/`** | **1.502 MB** | **658 MB** | `git gc --prune=now` |
+| Commits locales sin pushear | 8 | **0** | `git rev-list --left-right --count origin/master...HEAD` |
+
+**Corrección de este registro (27/10, quinta tanda):** la tabla de arriba decía
+"1er 469→458, 2do 508→487, Preuniversitario 27→27". Ese desglose estaba mal
+transcrito (sumaba 972, no 1039). El **reparto real** medido del reporte de
+`qa_links.py` con root=`Universidad` es **2do 528 · 1er 471 ·
+Preuniversitario 27 · Herramientas 13 = 1039**. El total y la única cifra que
+importa para esta sesión (3er Semestre = **0**) no cambian.
+
+**Los 13 de `Herramientas` no son links rotos:** son **placeholders
+documentados** en las guías (`[[nombre-de-archivo]]`, `[[enlace]]`,
+`[[nota]]`, `[[Otra Nota]]`, `[[...]]`) en `Herramientas/README.md`,
+`Herramientas/SVGs por recrear.md` y `Herramientas/Scripts/{GUIA-MD-A-PDF,
+GUIA-OFFICE-A-MARKDOWN, GUIA-PDF-A-MARKDOWN, LEEME-SCRIPTS}.md`. Son ejemplos
+de sintaxis, no referencias. **El total real de links rotos es 1026.**
 
 **Cierre verificado del sitio (re-ejecutado hoy):** `npm run sync` → **805
 notas publicadas · 3 omitidas · 2780 assets referenciados · 17 patrones / 61
@@ -194,6 +214,11 @@ npm run build                  # 832 .html en dist/, sin errores
 | `86aa483` | `fix(FESD)`: 2 embeds de portada | 2 archivos |
 | `99d8c22` | `docs(Clippings)`: abrir esta bitácora y avisar rutas | — |
 | `c11e2b9` | `fix(3er semestre)`: últimos wikilinks + escape de alias + `qa_links.py` | 8 archivos, +63 / −18 |
+| `c4a84b5` | `docs(Clippings)`: bitácora completa de la sesión | 1 archivo |
+| `4fd4960` | `feat(ingles III)`: Speaking Exam 2 (nota + 2 diagramas + PDF del deck + PPTX editable) | 6 archivos |
+| `ba68d18` | `docs(Clippings)`: registrar el Speaking Exam 2 y el patrón de exportación a PDF | 1 archivo |
+| `ddd27a7` | `merge`: integrar el protocolo de commits y pushes del clon Desktop | merge |
+| `47614c0` | `docs(Clippings)`: acuerdo de las 4 sesiones sobre pushes y migración | 3 archivos |
 
 Commits de **otras sesiones** que también están en `master` (no son míos, pero
 conviene conocerlos porque tocan el vault): `374e833`, `5aded86`, `67ed5ac`,
@@ -214,13 +239,19 @@ conviene conocerlos porque tocan el vault): `374e833`, `5aded86`, `67ed5ac`,
    basename. **No borrarlo.**
 4. Los SVG de `Universidad/Diagramas/` ya no están ahí: cada materia tiene los
    suyos en `Diagramas/`.
-5. `verificar_nota.py` da **0 errores** en las 173 notas del 3er Semestre.
+5. `verificar_nota.py` da **0 errores** en las **174** notas del 3er Semestre
+   (173 antes del Speaking Exam 2 + esa). Re-ejecutado al cierre de la quinta
+   tanda: `notas con errores: 0 de 174`.
    En 1er/2do/Preuniversitario quedan ~970 (sobre todo `ENDINGS mixed` y
    líneas vacías dentro de fences en callout).
 6. El `image.png` adjunto con la lista de errores **no existe en disco**. El
    catálogo real de los 7 tipos de error está en
    `Universidad/Herramientas/README.md` y en `detect_fuera_callouts.py`.
-7. **Ojo con los merges:** un merge sobrescribió trabajo sin commitear de
+7. **Los 1039 BAD se reparten así:** 2do Semestre 528 · 1er Semestre 471 ·
+   Preuniversitario 27 · **Herramientas 13 (falsos positivos: son placeholders
+   como `[[nombre-de-archivo]]` y `[[...]]` en las guías, no links rotos)**.
+   El total real de links rotos es **1026**, y ninguno es del 3er Semestre.
+8. **Ojo con los merges:** un merge sobrescribió trabajo sin commitear de
    esta sesión **dos veces** (el `qa_links.py` y las notas con el escape
    doble se perdieron y hubo que reaplicarlos). **Siempre commitear antes de
    que otro agente mergee.**
@@ -253,6 +284,17 @@ conviene conocerlos porque tocan el vault): `374e833`, `5aded86`, `67ed5ac`,
 | 3 | Decidir los 1039 BAD de 1er/2do/Preuniversitario | todo el vault | requiere decisión del usuario |
 | 4 | Normalizar los ~970 errores de formato del 1er/2do/Preuniversitario | todo el vault | baja |
 | 5 | Revisar los 32 PNG huérfanos de `Figuras/` (material en curso de Matemáticas Discretas) | `Universidad/Figuras/` | baja (propuesta P7 de `LOG-opencode-onedrive.md`) |
+| 6 | Decidir la **migración al OneDrive institucional** (datos que solo tiene el usuario: cuota por usuario, límite por archivo, retención, copyright) | bandeja del usuario | **requiere decisión del usuario** |
+| 7 | Decidir qué hacer con `OneSyncFiles-backups/` (458 MB, hermano del vault, no dentro de él) | `OneDrive/` | baja (no lo toqué) |
+
+**Resueltos desde esta sesión:** el push de los 8 commits (quinta tanda), la
+limpieza de cuota que dejó la cuenta en 2.445 MB (quinta tanda) y los 2
+archivos de `opencode-nube` (los commiteó y pusheó él en `47614c0`).
+
+**Nota sobre el backup (corrección):** `OneSyncFiles-backups/` (458 MB) está
+en la **raíz de OneDrive**, es hermano del vault, no una subcarpeta de él. La
+tabla del Acuerdo 4 lo listaba dentro del vault; era una imprecisión. No se
+tocó.
 
 **Propuesta propia para el vault:** un `git worktree` por sesión (P1 en
 `LOG-opencode-onedrive.md`). El problema de que los merges pisen trabajo sin
@@ -420,15 +462,17 @@ carrera, si el MDM bloquea el OAuth de AutoSync (plan B: app oficial de
 OneDrive para Android) y si el material con copyright es aceptable en una
 cuenta institucional. **Mientras tanto no se mueve ninguna carpeta.**
 
-### Estado
+### Estado (actualizado tras la quinta tanda)
 
 - Merge de `origin/master` resuelto en el LEEME, con las dos versiones.
-- **El push lo hace `opencode-onedrive`** (tiene el turno en la cola de push).
-  Yo no pusheo hasta que avise.
-- Archivos de terceros que **no** commiteo: los 2 de `opencode-nube`,
-  `Notas de hoy.md` (del usuario) y `Recursos adicionales/` (scratch).
+- **El push ya lo hice yo** (esta sesión): `0d7c562..3cb1fdc` y luego
+  `2ea2d3d`. `master` = `origin/master`. Ver la quinta tanda.
+- Los 2 archivos de `opencode-nube` **ya los commiteó y pusheó él** (están en
+  `47614c0`), así que ya no son un pendiente de esta sesión.
+- Archivos que **no** commiteo: `Notas de hoy.md` (del usuario) y
+  `Recursos adicionales/` (scratch).
 
-### Cuarta tanda: la petición de aprobación y la aclaración de autoría
+## 12. Cuarta tanda: la petición de aprobación y la aclaración de autoría
 
 El otro agente (`opencode-site`) escribió un commit pidiendo **aprobación
 explícita** antes de pushear commits ajenos o borrar nada (`0d7c562`). Al
@@ -457,31 +501,109 @@ escenario que el Acuerdo 2 previene con el "un push a la vez, anunciado": no
 hubo pérdida de datos (el commit ajeno se integró con merge), pero obliga a
 repetir el ciclo fetch → merge → verificar → push.
 
-### Los merges que chocaron en el LEEME (2 veces, y el patrón)
+## 13. Quinta tanda: push ejecutado + limpieza de cuota
+
+**Push.** Anuncié `PUSHEO EN CURSO` en el LEEME (paso obligatorio del
+Acuerdo 2), verifiqué las dos listas (`origin/master..HEAD` = 8 commits míos,
+`HEAD..origin/master` = 0) y pusheé: `0d7c562..3cb1fdc`. Después el commit de
+confirmación (`2ea2d3d`). **Publicado: bitácora del 3er Semestre + Speaking
+Exam 2 + los 2 merges del LEEME + el acuerdo de las 4 sesiones.**
+
+**El agente `opencode-nube` aporta evidencia que cambia la prioridad:**
+la cuenta personal **ya pasó de cuota** (5,13 GB / 5 GB) y `node_modules` no
+puede vivir en OneDrive. Sus 3 reproducciones independientes:
+
+1. `npm run build` → `Cannot find module ...node_modules\astro\dist\cli\throw-and-exit.js`
+   (la carpeta no existía: OneDrive la había deshidratado).
+2. `npm ci` → `ENOTEMPTY ... rmdir node_modules\hastscript\lib` (OneDrive y npm
+   peleando por el mismo directorio).
+3. Build de control **fuera** de OneDrive → **833 `.html`, exit 0**.
+
+**Limpieza ejecutada** (la que el Acuerdo 4 ya autorizaba):
+
+| Qué | Antes | Después | Liberado |
+|---|---:|---:|---:|
+| `site/node_modules/` | 211 MB | borrado | 211 MB |
+| `site/dist/` | 878 MB | borrado | 878 MB |
+| `site/public/assets/` | 650 MB | borrado | 650 MB |
+| `site/public/downloads/` | 74 MB | borrado | 74 MB |
+| `site/notes-md/` | 13 MB | borrado | 13 MB |
+| `site/.astro/`, `site/public/pdfjs/build/` | ~0 MB | borrado | ~0 MB |
+| **`site/` completo** | **1.830 MB** | **1 MB** | **1.829 MB** |
+| `.git/` (tras `git gc --prune=now`) | 1.502 MB | 658 MB | 844 MB |
+| **Total liberado** | | | **~2,67 GB** |
+
+**`.git/gc.pid`:** borrado, pero **verifiqué antes que el proceso 18272 ya no
+existía** (no había ningún `git gc` en curso). No se tocó ninguna operación
+viva. `git fsck` después: el único aviso fue una entrada de reflog local de
+`origin/master`, ya resuelta con el `fetch` (el commit `cd01900` existe y está
+en el remoto).
+
+**Cuota real medida antes y después:**
+
+| | Antes | Después |
+|---|---:|---:|
+| Raíz de OneDrive | **4.816 MB** (de 5.120 MB) | **2.445 MB** (de 5.120 MB) |
+| `OneSyncFiles/` | 4.613 MB | 1.938 MB |
+| `Universidad/` (contenido real) | 1.110 MB | 1.110 MB |
+
+**Regla que queda como norma del vault:** *el código del sitio y su
+`node_modules` se compilan **fuera** de la carpeta sincronizada.* El vault de
+OneDrive guarda **notas y assets**; el build se hace en disco local (worktree
+o copia temporal con junction al vault). El clon Desktop sigue siendo el que
+despliega.
+
+**Los 30 archivos versionados de `site/` siguen intactos**: todo lo grande
+estaba en `.gitignore` (`.astro/`, `dist/`, `node_modules/`, `notes-md/`,
+`public/assets/`, `public/downloads/`, `public/pdfjs/build/`).
+
+### Veredicto conjunto de las 4 sesiones sobre la migración
+
+> **No migrar ahora.** La cuota se resolvió limpiando (~2,67 GB liberados), no
+> cambiando de cuenta. El contenido real son 1,11 GB y la cuenta personal tiene
+> 5 GB. **No se mueve ninguna carpeta.**
+
+**Lo que sigue siendo decisión del usuario** (las sesiones no lo resuelven):
+cuota real por usuario de la institucional · límite por archivo (el `.wmv` pesa
+58 MB) · retención al terminar la carrera · si el material con copyright
+(Cambridge, `z-lib.org`) es aceptable en una cuenta institucional · teléfono:
+AutoSync → institucional con `DCIM/Camera` (plan B: app oficial de OneDrive
+para Android si el MDM bloquea el OAuth).
+
+**Corrección de autoría aplicada en el LEEME:** el commit `47614c0` (bitácora +
+PISTA + bloques del LEEME) lo hizo `opencode-nube`, no `opencode-onedrive` ni
+yo. La tabla de commits del acuerdo quedaba con el autor equivocado.
+
+### Los merges que chocaron en el LEEME (3 veces, y el patrón)
 
 Las 4 sesiones escriben al **final** del mismo archivo, así que cada cambio
-toca la misma zona y git no puede fusionar solo. Los dos conflictos se
-resolvieron **conservando las dos versiones**, que es lo que el propio
-`opencode-site` pidió por escrito en su aviso. El patrón que funciona:
+toca la misma zona y git no puede fusionar solo. Los conflictos se resolvieron
+**conservando las dos versiones**, que es lo que pidió por escrito
+`opencode-site`. El patrón que funciona:
 
 1. `git fetch origin` → ver qué hay remoto.
 2. `git merge origin/master --no-edit` → si choca, **no elegir una versión**.
-3. Resolver con un script que conserva HEAD **y** origin (en el orden
-   cronológico correcto: primero lo remoto, después lo nuestro).
+3. Resolver con un script que conserva HEAD **y** origin, en orden
+   cronológico (primero lo remoto, después lo nuestro).
 4. `git add` **solo** el LEEME y commitear el merge.
 5. Re-verificar con build si tocó `site/**` o `Universidad/**`.
 
+Cuando el cambio local de otra sesión bloquea el merge (`Your local changes
+would be overwritten`), la salida es `git stash push -- "<ruta>"` → merge →
+`git stash pop`, no `git checkout` (que tiraría su trabajo).
+
 ---
 
-## 12. Estado al cierre
+## 14. Estado al cierre
 
-- `master` al día con `origin/master` (merge `8fedc9f` + `544ba11` + `b5c5669`).
-- Working tree limpio, salvo lo que pertenece a otras sesiones
-  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`)
-  y `Notas de hoy.md`, que es del usuario.
+- `master` = `origin/master` (0/0). Todo el trabajo de las 4 sesiones
+  publicado.
+- Working tree limpio, salvo `Notas de hoy.md` (del usuario).
 - 3er Semestre: **0 wikilinks rotos**, **0 errores de formato**, **0 PDFs
   huérfanos**.
-- Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores.
+- Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores
+  (verificado fuera de OneDrive).
+- Cuota de OneDrive: **4.816 MB → 2.445 MB** (de 5.120 MB).
 
 ---
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion

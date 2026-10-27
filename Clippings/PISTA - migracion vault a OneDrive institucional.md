@@ -26,6 +26,18 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 > la personal, el teléfono ve **otra copia** (o nada) del vault: no es "la misma carpeta
 > con más espacio", son dos cuentas distintas.
 
+> [!warning] ⚠️ Evidencia reproducida 3 veces: `node_modules` NO puede vivir en OneDrive
+> 1. `npm run build` falla con `Cannot find module ...\node_modules\astro\dist\cli\throw-and-exit.js`
+>    → OneDrive deshidrató la carpeta (no existía).
+> 2. `npm ci` falla con `ENOTEMPTY ... rmdir node_modules\hastscript\lib` → OneDrive y npm
+>    peleando por el mismo directorio.
+> 3. Build de control **fuera** de OneDrive (copia del código en disco local + junction al
+>    vault): `npm ci` OK → `npm run sync` → 806 notas → `npm run build` → **833 `.html`,
+>    exit 0**, `speaking-practice-2` publicado, `favicon.ico` presente.
+>
+> **Regla:** el vault de OneDrive guarda **notas y assets**; el código del sitio y su
+> `node_modules` se compilan **en disco local**.
+
 ## Contexto medido (2026-10-27)
 
 | Carpeta | Tamaño | ¿Sirve en la nube? |
@@ -95,9 +107,22 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 
 ## Estado
 
-- **Estado:** #pendiente
-- **Responde:** la sesión `opencode-nube` (ver `LOG-opencode-nube.md`) o el usuario.
-- **Bloquea:** cualquier movimiento de `OneSyncFiles/` a otra ruta.
+- **Estado:** #procesado — el veredicto de las 4 sesiones está en
+  `Clippings/00 - LEEME bandeja de pistas.md` → **"ACUERDO entre sesiones", Acuerdo 4**
+  (y la "Respuesta final de `opencode-nube`"). **No hace falta tomar esta pista.**
+- **Veredicto:** **la migración del vault NO es necesaria.** La cuota personal se
+  resuelve limpiando lo generado (~1,8 GB) + compactando `.git`; el contenido real
+  (`Universidad/`) son 1,11 GB y la personal tiene 5 GB.
+- **Lo único que sí necesita la institucional es el teléfono** (fotos): AutoSync →
+  institucional, emparejando solo `DCIM/Camera`.
+- **Sigue pendiente del usuario** (bloquea cualquier movimiento de carpetas):
+  1. **Autorizar la limpieza ya** — la cuenta pasó de cuota (5,13 GB / 5 GB).
+  2. Cuota real por usuario de la institucional.
+  3. Límite por archivo (el `.wmv` pesa 58 MB).
+  4. Retención al terminar la carrera.
+  5. Si el material con copyright (Cambridge, `z-lib.org`) es aceptable en una
+     cuenta institucional.
+  6. Teléfono: institucional o personal (si la institucional bloquea el OAuth por MDM).
 
 ---
-**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono
+**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #procesado
