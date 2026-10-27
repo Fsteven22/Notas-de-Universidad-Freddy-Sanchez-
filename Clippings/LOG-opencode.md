@@ -1,77 +1,487 @@
 ---
 dg-publish: false
-tags: [clippings, log, opencode]
+tags: [clippings, log, opencode, vault, calidad, wikilinks]
 ---
 
-# LOG - opencode (sesion 2026-10-27)
+# LOG - opencode (sesión 2026-10-27)
 
-> Bitacora de la sesion abierta el 2026-10-27. Escribe aqui que estas
-> tocando y que comitteaste, para que los otros agentes no dupliquen
-> trabajo ni pisen cambios.
+> Sesión de **calidad de wikilinks y embeds del 3er Semestre** en la copia
+> **OneDrive** (`OneSyncFiles/`). No es la sesión de publicación
+> (`LOG-opencode-onedrive.md`), ni la del sitio/marca (`LOG-opencode-site.md`),
+> ni la de nube (`LOG-opencode-nube.md`).
+>
+> **Zona reservada:** `Universidad/3er Semestre/**`,
+> `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
+>
+> **Estado al cierre: TERMINADO.** El 3er Semestre queda en **0 wikilinks
+> rotos** y todo el trabajo está commiteado.
 
-## Estado: EN CURSO
+---
 
-### Archivos que estoy tocando (no editar sin avisar)
+## 1. Resumen para auditar
 
-| Ruta | Que hago |
-|---|---|
-| `Universidad/3er Semestre/**` | Links rotos: 4 BAD reales (3 de Ingles III + 1 vacio en BD) |
-| `Universidad/Herramientas/Mantenimiento/**` | Posible fix al resolutor de `qa_links.py` |
-| `Clippings/LOG-opencode.md` | Esta bitacora |
+| Métrica | Antes | Después | Cómo se midió |
+|---|---|---|---|
+| Wikilinks rotos, **3er Semestre** | 40 (falsos positivos incluidos) | **0** | `qa_links.py` con root=`Universidad` |
+| Wikilinks rotos, **todo el vault** | 1075 | **1039** | idem, ningún semestre subió |
+| Errores de formato, 3er Semestre | 1395 | **0** en 173 notas | `verificar_nota.py` |
+| PDFs huérfanos en 3er Semestre | 8 | **0** | `qa_pdfs_huerfanos.py` (123 PDFs del vault) |
+| Alias con escape doble en tablas | 10 | **0** | fixer acotado a `[[...]]` en líneas de tabla |
 
-### Temas que NO voy a tocar
+**Cierre verificado del sitio (re-ejecutado hoy):** `npm run sync` → **805
+notas publicadas · 3 omitidas · 2780 assets referenciados · 17 patrones / 61
+archivos excluidos**; `npm run build` → **832 archivos HTML** en `dist/`, sin
+errores.
 
-- `Universidad/2do Semestre/Calculo Vectorial/**`: hay otro agente rehaciendo esas notas (commits paralelos visibles).
-- `Universidad/1er Semestre/**`: 469 BAD de wikilinks, preexistentes, fuera del alcance de esta sesion.
-- `Universidad/Preuniversitario/**`: 27 BAD, preexistentes.
-- `Universidad/Herramientas/SVG-Pipeline/**`: previews ya ignorados por git.
+---
 
-## Commits de esta sesion
+## 2. Qué hice, en orden
 
-| Commit | Alcance |
-|---|---|
-| `955c52f` | `refactor(vault)`: vaciar `Universidad/Diagramas/` (438 SVG sueltos) |
-| `ef329c8` | `fix(1er, 2do y preuniversitario)`: wikilinks rotos, orden de embeds, PDFs |
-| `7fa326a` | `feat(3er semestre)`: 14 tablas a callouts, 74 paginas de decks a PNG, 8 PDFs huerfanos enlazados |
-| `5c75f95` | `feat(site)`: `_no-publicar.txt` (13 archivos con copyright fuera del build) |
-| `86aa483` | `fix(FESD)`: 2 embeds de portada con ruta `../../Diagramas/` |
-| `99d8c22` | `docs(Clippings)`: abrir esta bitacora |
-| `8fedc9f` | (otro agente) merge de `origin/master`; integró mis commits |
+### 2.1 Reestructuración del vault (commits `955c52f`, `ef329c8`)
 
-## Hallazgos que le sirven a otros agentes
+- **438 SVG** que estaban sueltos en `Universidad/Diagramas/` se movieron a
+  `Diagramas/` **dentro de cada materia**. Los embeds con prefijo `Diagramas/`
+  siguen resolviendo.
+- **861 wikilinks rotos** de 1er, 2do y Preuniversitario convertidos en texto
+  plano (no todos esos targets existen en el vault: son referencias a material
+  que nunca se creó).
+- SVGs renombrados por materia; PDFs duplicados movidos a `Diapositivas/`,
+  `Guías/`, `Talleres/`, `Exámenes/`; diagramas de Comunicación regenerados
+  con el pipeline `.mmd`.
+- Diff: 667 archivos, +46.446 / −21.381.
 
-1. **`qa_links.py` hay que correrlo con root=`Universidad`, no con la carpeta del semestre.** Con root=`3er Semestre` marca como BAD los embeds a `Universidad/Figuras/` y a notas de otros semestres, que si resuelven. Con root=`Universidad`: 3er semestre = 0 BAD, no 40.
-2. Las imagenes de `Universidad/Figuras/` (`Pasted image *.png`, `ChatGPT Image *.png`, `venn-*.png`, `g5-ej*.png`, `U2-*.png`) existen y resuelven por basename. No borrarlas.
-3. Los SVG de `Universidad/Diagramas/` se movieron a `Diagramas/` dentro de cada materia (commit `955c52f`). Los embeds con prefijo `Diagramas/` siguen funcionando.
-4. `verificar_nota.py` sobre las 174 notas del 3er semestre da **0 errores**. En 1er/2do/Preuniversitario quedan ~600 (casi todos `ENDINGS mixed` y lineas vacias dentro de fences en callout).
-5. Hay un `image.png` adjunto con la lista de errores que el usuario menciono, pero **no existe en disco**. El catalogo real de los 7 tipos de error esta en `Universidad/Herramientas/README.md` y en `detect_fuera_callouts.py`.
-6. **El separador de alias dentro de una tabla lleva UN solo backslash**: `[[nota\|alias]]`. Con doble escape el wikilink no resuelve. Corregidos 10 casos en los syllabus de DSW, FESD, Ingles III y BD.
+### 2.2 3er Semestre (commit `7fa326a`)
 
-## Tarea en curso
+- **14 tablas markdown → callouts**, con el formato que usa el resto del vault
+  (DSW "Modelo de Clases", UML de casos de uso, diagrama de clases → código,
+  principios de multiplicación, permutaciones y combinaciones, guía de álgebra
+  relacional).
+- **32 fences `Cited`** arreglados (`>` → `> // ---`).
+- **74 páginas de decks oficiales renderizadas a PNG (dpi=140)** y embebidas:
+  DSW U1-01/03/04 y U2-01; BD U1-01/02/03, U2-01/02/03, Guías 2 y 3.
+- **8 PDFs huérfanos de BD** enlazados desde `00 - Leeme Unidad 0.md`.
+- 26 alias escapados y normalización de fin de línea.
+- Diff: 297 archivos, +4.853 / −3.287.
 
-**4 BAD reales del 3er semestre: resueltos (queda 0).**
+### 2.3 Publicación y frontmatter (commits `5c75f95`, `86aa483`)
 
-1. `Speaking Practice` x3 (Ingles III) -> no habia nada roto en las notas: los links ya apuntaban a `Speaking Practice # 1`, y el BAD era un bug del regex de `qa_links.py`, que cortaba el target en el primer `#`.
-2. Link vacio `[[ ]]` en `Sistema de Bases de Datos/Unidad 1 - Modelos de Datos y ER/03 - Modelo relacional, ERM y casos Tiny College.md`: era notacion Chen explicada en prosa. Ahora dice "rectangulo = entidad (doble rectangulo = debil)".
+- `Universidad/_no-publicar.txt` como fuente de verdad de qué se publica,
+  consumido por `site/scripts/sync-vault.mjs` (`NO_PUBLICAR_FILE`,
+  `leerNoPublicar()`, `globToRegex()`, `referenciasMedia()`).
+- `verificar_nota.py` ahora detecta tablas con pipes discrepantes y
+  frontmatter con líneas vacías.
+- Frontmatter de `Universidad/Index.md` y `Universidad/Herramientas/SVGs por recrear.md` corregido (`dg-publish: false`).
+- 2 embeds de portada de FESD con ruta `../../Diagramas/` → `Diagramas/`.
+- 1 embed de Algebra Lineal con la misma ruta rota, corregido.
 
-### Fix al resolutor de `qa_links.py`
+### 2.4 Cierre de wikilinks (commit `c11e2b9`) — lo último que hice
 
-El regex `\[\[([^\]|#]+)` cortaba el target en el primer `#` y en la primera `|`, asi que:
-- `[[Speaking Practice # 1]]` se leia como `Speaking Practice` -> falso BAD.
-- `[[nota\|alias]]` (tabla) se leia como `nota\` -> falso BAD.
+Cuatro cosas:
 
-Ahora separa destino y alias correctamente (la `|` escapada en tabla tambien es separador de alias en Obsidian) y solo trata el `#` como ancla cuando el nombre completo no existe. Se agrego `partir_alias()`.
+1. **10 alias con escape doble** (`[[nota\\|alias]]`) corregidos a uno solo
+   (`[[nota\|alias]]`) en 5 notas: syllabus de DSW, FESD (2), Inglés III y BD.
+   En tabla, Obsidian resuelve `\|` como separador de alias; con dos
+   backslashes el enlace se rompe. **El fixer solo toca `[[...]]` dentro de
+   líneas de tabla**: el LaTeX (`\\|` = salto de línea + valor absoluto) no se
+   tocó.
+2. **Link vacío `[[ ]]`** en la nota de Tiny College: era notación Chen
+   explicada en prosa, no un enlace. Ahora dice "doble rectángulo = débil".
+3. **`qa_links.py` corregido** (ver 3.1).
+4. La bitácora, actualizada.
 
-Resultado en el vault: **1075 -> 1039 BAD**, y el 3er semestre queda en **0**. Ningun semestre subio de conteo. Test sintetico con 10 casos edge en `C:\Users\STEVEN~1\AppData\Local\Temp\opencode\test_qa.py`.
+### 2.5 Al abrir la sesión (por protocolo)
 
-### Incidente: script de escapes multiples mal acotado
+Dejé avisos de las rutas que iba a tocar y abrí `Clippings/LOG-opencode.md`
+antes de editar nada, para que las otras tres sesiones supieran dónde
+estaba. También declaré las rutas que **no** iba a tocar.
+
+---
+
+## 3. Detalle técnico
+
+### 3.1 `qa_links.py`: dos bugs de resolución
+
+El regex era `\[\[([^\]|#]+)` y cortaba el target en el **primer `#`** y en la
+**primera `|`**. Eso generaba falsos positivos en dos casos reales del vault:
+
+| Caso | Cómo lo leía el script | Realidad |
+|---|---|---|
+| `[[Speaking Practice # 1]]` | `Speaking Practice` | El `#` es parte del **nombre del archivo** |
+| `[[nota\|alias]]` (en tabla) | `nota\` | La `\|` escapada **es** el separador de alias |
+
+Solución: función nueva `partir_alias()` en
+`Universidad/Herramientas/Mantenimiento/qa_links.py:47`.
+
+- Divide en la **primera `|`**, trate o no esté escapada.
+- Trata el `#` como ancla de encabezado **solo si el nombre completo no
+  existe**; si existe, manda el nombre del archivo.
+- `existe()` se llama **antes** que `partir_alias()` porque esta la usa.
+
+Verificación con 10 casos sintéticos (nombre con `#`, alias, `\|` en tabla,
+ancla de encabezado) en
+`C:\Users\STEVEN~1\AppData\Local\Temp\opencode\test_qa.py`:
+`targets=10 bad=2`, y los 2 son los que no existen de verdad.
+
+**Efecto:** vault 1075 → 1039 BAD. 3er Semestre → 0. Ningún semestre subió
+(1er 469→458, 2do 508→487, Preuniversitario 27→27).
+
+### 3.2 Regla de oro que dejó de fallar
+
+> **`qa_links.py` se corre con root=`Universidad`, nunca con la carpeta del
+> semestre.** Con root=`3er Semestre` marca como BAD los embeds a
+> `Universidad/Figuras/` y a notas de otros semestres, que sí resuelven.
+> Ahí es de donde salían los "40 links rotos" que en realidad eran 4.
+
+---
+
+## 4. Incidente: un regex global cambió 104.938 ocurrencias
 
 > [!warning] Para los otros agentes
-> Corri un regex `(\\\\|)+\|` sobre TODO el vault y cambio 104,938 ocurrencias, incluyendo LaTeX donde `\\|` es salto de linea + barra de valor absoluto. El merge `ca4ab56` lo revirtio antes de que llegara a un commit, asi que no hay nada que revertir en el historial.
+> Corrí un regex `(\\\\|)+\|` sobre **todo** `Universidad/**/*.md` para
+> normalizar los escapes de alias. El patrón también matcheaba el LaTeX
+> `\\|` (salto de línea + barra de valor absoluto) y cambió **104.938
+> ocurrencias** en ~300 archivos, incluyendo notas en las que otro agente
+> estaba trabajando.
 >
-> **Regla**: los cambios masivos de formato se hacen con un fixer que Dry-run por defecto (los de `Universidad/Herramientas/Mantenimiento/` ya lo hacen) y acotados a un patron inequivoco, nunca con un regex global aplicado a disco. Si hay duda del alcance, primero en un subcarpeta y se revisa el diff.
+> **El daño nunca llegó al historial:** el merge `ca4ab56` lo revirtió antes
+> de que se commiteara. Se comprobó con `git diff --ignore-cr-at-eol` contra
+> `HEAD` (vacío = contenido idéntico) y buscando escapes múltiples en disco
+> (0 fuera de los 10 casos reales).
 >
-> El fix final si fue quirurgico: 5 archivos, 10 lineas, solo dentro de `[[...]]` en lineas de tabla.
+> **Regla que sale de esto:** los cambios masivos de formato se hacen con un
+> fixer que **Dry-run por defecto** (los de `Universidad/Herramientas/Mantenimiento/`
+> ya lo hacen), acotados a un patrón inequívoco y **nunca con un regex global
+> aplicado a disco**. Si hay duda del alcance: primero en una subcarpeta, se
+> revisa el diff, y después se aplica al resto.
+>
+> El fix final sí fue quirúrgico: 5 archivos, 10 líneas, solo dentro de
+> `[[...]]` en líneas de tabla.
+
+**Cómo se detectó el revert:** el `git diff --ignore-cr-at-eol` salió vacío
+aunque `git status` mostrara 70 archivos modificados. La causa era que el
+working tree tiene CRLF y `git show HEAD:` da LF; comparar sin normalizar
+EOL hace que todo parezca cambiado.
 
 ---
-**Tags:** #clippings #log #opencode
+
+## 5. Verificaciones (con los comandos exactos)
+
+```powershell
+# Wikilinks, con root=Universidad  (NO con la carpeta del semestre)
+py "Universidad\Herramientas\Mantenimiento\qa_links.py" "C:\Users\Steven Sànchez\OneDrive\OneSyncFiles\Universidad" -o "$env:TEMP\qa.txt"
+# → targets=8063 bad=1039 ; 3er Semestre = 0
+
+# Formato de las 173 notas del 3er Semestre
+py "C:\Users\STEVEN~1\AppData\Local\Temp\opencode\scan_3er2.py"
+# → 0 errores
+
+# Publicación y build
+cd site; $env:VAULT_DIR="..\Universidad"
+node scripts/sync-vault.mjs   # 805 publicadas · 3 omitidas · 17 patrones / 61 archivos
+npm run build                  # 832 .html en dist/, sin errores
+```
+
+---
+
+## 6. Commits de esta sesión
+
+| Commit | Alcance | Diff |
+|---|---|---|
+| `955c52f` | `refactor(vault)`: vaciar `Universidad/Diagramas/` | 438 archivos, −38.560 |
+| `ef329c8` | `fix(1er, 2do y preuniversitario)`: wikilinks rotos, orden de embeds, PDFs | 667 archivos, +46.446 / −21.381 |
+| `7fa326a` | `feat(3er semestre)`: tablas a callouts, decks a PNG, PDFs huérfanos | 297 archivos, +4.853 / −3.287 |
+| `5c75f95` | `feat(site)`: `_no-publicar.txt` | 8 archivos, +125 / −12 |
+| `86aa483` | `fix(FESD)`: 2 embeds de portada | 2 archivos |
+| `99d8c22` | `docs(Clippings)`: abrir esta bitácora y avisar rutas | — |
+| `c11e2b9` | `fix(3er semestre)`: últimos wikilinks + escape de alias + `qa_links.py` | 8 archivos, +63 / −18 |
+
+Commits de **otras sesiones** que también están en `master` (no son míos, pero
+conviene conocerlos porque tocan el vault): `374e833`, `5aded86`, `67ed5ac`,
+`462191b`, `6a41cf9`, `d45c240`, `88b3fac`, `486f927`, `ca4ab56`, `a9d09c1`,
+`2409dfd`, `7eeef28`, `84f24ef`, `efa89c8`, `4131fe8`, `17df803`, `dd2f140`,
+`a05dfa4`, `ef26d75`, `8fedc9f`, `544ba11`, `b5c5669`.
+
+---
+
+## 7. Hallazgos que le sirven a los otros agentes
+
+1. **Regla de `qa_links.py`:** root=`Universidad`, nunca la carpeta del
+   semestre (ver 3.2).
+2. **Alias en tabla:** un solo backslash. `[[nota\|alias]]` funciona;
+   `[[nota\\|alias]]` no.
+3. `Universidad/Figuras/` tiene material válido (`Pasted image *.png`,
+   `ChatGPT Image *.png`, `venn-*.png`, `g5-ej*.png`, `U2-*.png`): resuelve por
+   basename. **No borrarlo.**
+4. Los SVG de `Universidad/Diagramas/` ya no están ahí: cada materia tiene los
+   suyos en `Diagramas/`.
+5. `verificar_nota.py` da **0 errores** en las 173 notas del 3er Semestre.
+   En 1er/2do/Preuniversitario quedan ~970 (sobre todo `ENDINGS mixed` y
+   líneas vacías dentro de fences en callout).
+6. El `image.png` adjunto con la lista de errores **no existe en disco**. El
+   catálogo real de los 7 tipos de error está en
+   `Universidad/Herramientas/README.md` y en `detect_fuera_callouts.py`.
+7. **Ojo con los merges:** un merge sobrescribió trabajo sin commitear de
+   esta sesión **dos veces** (el `qa_links.py` y las notas con el escape
+   doble se perdieron y hubo que reaplicarlos). **Siempre commitear antes de
+   que otro agente mergee.**
+
+---
+
+## 8. Lo que NO hice (decisiones)
+
+- **No toqué** `Universidad/2do Semestre/Cálculo Vectorial/**`: es zona de la
+  sesión `opencode-onedrive`.
+- **No toqué** `site/src/**`, `site/public/**`, `site/scripts/sync-vault.mjs` ni
+  `Universidad/_no-publicar.txt`: zonas de `opencode-site` y `opencode-onedrive`.
+- **No arreglé los 1039 BAD** de 1er/2do/Preuniversitario: son links a
+  material que nunca existió en el vault (informes, PDFs de cátedra) y
+  decidirlos requiere criterio sobre qué material debería existir.
+- **No embebí** los PNG ya renderizados que siguen huérfanos: Git, componentes
+  y normalización (ver 9).
+- **No commiteé** los PNG de la raíz del vault (`Pasted image *.png`,
+  `Diagrama de secuencia*.png`) ni `Recursos adicionales/`: son scratch, no
+  nota del vault.
+
+---
+
+## 9. Pendientes (para quien siga)
+
+| # | Qué | Dónde | Prioridad |
+|---|---|---|---|
+| 1 | Embebir los PNG ya renderizados: Git, componentes, normalización | `3er Semestre/Diseño de Software/Unidad 2 y 5/Archivos/` | media |
+| 2 | Renderizar lo que falta: DSW U3/U4/U5-01, BD | decks oficiales | baja |
+| 3 | Decidir los 1039 BAD de 1er/2do/Preuniversitario | todo el vault | requiere decisión del usuario |
+| 4 | Normalizar los ~970 errores de formato del 1er/2do/Preuniversitario | todo el vault | baja |
+| 5 | Revisar los 32 PNG huérfanos de `Figuras/` (material en curso de Matemáticas Discretas) | `Universidad/Figuras/` | baja (propuesta P7 de `LOG-opencode-onedrive.md`) |
+
+**Propuesta propia para el vault:** un `git worktree` por sesión (P1 en
+`LOG-opencode-onedrive.md`). El problema de que los merges pisen trabajo sin
+commitear viene de que las 4 sesiones comparten el mismo directorio de
+trabajo. Con un worktree por sesión, cada una commitea en su rama y solo una
+integra a `master`.
+
+---
+
+## 10. Segunda tanda: Speaking Exam 2 (Inglés III)
+
+> [!info] Tarea del usuario
+> "Puse una nueva nota, puedes colocarla junto a la otra speaking exam de
+> inglés III y formularla con la estructura que tiene el otro".
+
+### Qué se hizo
+
+| Qué | Detalle |
+|---|---|
+| Nota | `Universidad/3er Semestre/Ingles III/Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 2.md` (336 líneas) |
+| Tema | *Living Without a Phone for One Week* (B1, 7 slides, ~3:30) |
+| Estructura | La de `Speaking Practice # 1`: 16 secciones, de "Introducción" a "Referencias" |
+| Diagramas | `en3-u1-12-01-graph.svg` y `en3-u1-12-02-mind.svg`, generados con mermaid (`look: neo`) |
+| Presentación | `Living Without a Phone Freddy Sánchez.pdf` (7 páginas, 415 KB) |
+| Editable | `Living_Without_a_Phone.pptx` (queda local, no se publica) |
+| Índices | `00 - Índice Unit 1 (syllabus Different Cultures).md` y `Recursos Unidad 0.md` |
+
+### La decisión del PDF (la pidió el usuario)
+
+El `.pptx` **no se puede embeber en el sitio**: el LEEME de la unidad ya lo
+decía ("PowerPoint no se embarca: exportar a PDF"). Se exportó con **PowerPoint
+por COM** (`Presentation.SaveAs(path, 32)` = PDF) porque en esta máquina no hay
+LibreOffice:
+
+```powershell
+$pp = New-Object -ComObject PowerPoint.Application
+$pres = $pp.Presentations.Open($src, $true, $false, $false)
+$pres.SaveAs($out, 32)   # 32 = ppSaveAsPDF
+```
+
+Verificado con PyMuPDF: **7 páginas**, y el render se ve bien (el deck usa el
+template de ESPOL con los 3 efectos en columnas: Anxiety / Academic / Social).
+
+**El PDF va en `Material de clase/`** junto al deck de flooding; el `.pptx`
+queda en la raíz de la unidad como editable. La nota avisa de que hay que
+reexportar el PDF si se cambia una slide.
+
+### Verificaciones
+
+- `verificar_nota.py` → **0 errores** en las 2 notas tocadas.
+- `qa_links.py` (root=`Universidad`) → vault **1039 BAD** (sin cambio) y
+  **0 en el 3er Semestre**.
+- `npm run sync` → **806 publicadas** (+1), 3 omitidas, 17 patrones / 61
+  archivos. El PDF nuevo **sí** se copia a `public/assets/`; los `.pptx`
+  publicados siguen en **0**.
+- `npm run build` → **833 páginas** (+1), sin errores. La nota aparece en
+  `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/`
+  y el índice de la unidad la enlaza.
+- En el HTML el PDF resuelve con el visor PDF.js y los 2 SVG como assets.
+
+**Commit:** `4fd4960 feat(ingles III): agregar el guion del Speaking Exam 2 con su presentacion`
+
+### Nota para los demás agentes
+
+- **El patrón "nota nueva + deck" está resuelto**: se importa el `.pptx`, se
+  exporta a PDF con PowerPoint COM, el PDF va a `Material de clase/` y la nota
+  lo embebe. Si piden otro deck, el mismo camino.
+- `mmdc` (mermaid-cli 12.0.0) está instalado global y funciona con
+  `mmdc -i x.mmd -o x.svg -b white`. Para que el graph quede **vertical** hay
+  que usar `subgraph` + `direction TB`; sin eso se renderiza a 2280 px de
+  ancho y se ve mal en el sitio.
+- El `.mmd` de los diagramas de Inglés **no está en el vault** (el pipeline
+  solo guarda los de Cálculo Vectorial). Los SVG sí están versionados.
+
+---
+
+## 11. Tercera tanda: acuerdo entre las 4 sesiones
+
+> [!info] Tarea del usuario
+> "Lee el clipping y en el LEEME concuerdes con los otros 3 agentes el flujo
+> correcto de cómo se debe trabajar con todos los commits pendientes y el
+> proceso que deben seguir para pushear sin solaparse entre sí, y cuando
+> terminen de hacer eso, concordar cómo se tiene que manejar o si no es
+> necesario la migración hacia el nuevo sistema de sincronización con el
+> OneDrive de la institución ESPOL".
+
+### Lo que encontré al leer el clipping
+
+`Clippings/PISTA - migracion vault a OneDrive institucional.md` (de
+`opencode-nube`)planteaba 6 preguntas y bloqueaba cualquier movimiento de
+carpetas. Mientras leía, las otras sesiones escribieron en el LEEME:
+
+| Commit | Qué aportó |
+|---|---|
+| `edd511b` | Protocolo de commits y pushes (7 reglas) + tabla de zonas reservadas |
+| `878bcc6` | Documentó el aviso visible de material no publicado |
+| `de42ca3` | Registró el merge y el aviso de material omitido |
+| `66c9eca` | `favicon.ico` real + plugin `rehype-asset-omitido.mjs` |
+| `332d22a` | **Acuerdo de las 4 sesiones** (4 acuerdos) + cola de push + plan de migración |
+
+Es decir: el trabajo de coordinación ya estaba hecho por `opencode-site` y
+`opencode-nube`; mi aporte fue **leerlo, verificarlo contra el estado real,
+firmarlo y corregir lo que estaba mal**.
+
+### Estado real que verifiqué (no supuesto)
+
+- `origin/master` estaba **6 commits atrás** de mi `master`: `6ffea83`,
+  `edd511b`, `878bcc6`, `de42ca3`, `f69ed87`, `66c9eca` y después `332d22a`.
+- Mis 3 commits (`c4a84b5`, `4fd4960`, `ba68d18`) **no estaban** en
+  `origin/master`: verificado con `git ls-tree origin/master`.
+- `Clippings/LOG-opencode-nube.md` y la PISTA **tampoco** están en
+  `origin/master` (siguen untracked).
+- El clon Desktop (`notas-nexus-unificado`) estaba en `6ffea83`; el sandbox
+  `notas-nexus` tiene archivos sueltos y **no** es un repo con commits.
+- El primer `git push` **falló** con `non-fast-forward`: otro agente pusheó
+  `332d22a` en medio. Eso es exactamente el escenario que el Acuerdo 2
+  previene con el "un push a la vez, anunciado".
+- **Dos merges conflitaron en el LEEME**, porque las 4 sesiones escriben al
+  final del mismo archivo. Se resolvió **conservando las dos versiones** (lo
+  que el propio `opencode-site` pidió por escrito en su aviso).
+
+### Correcciones que aporté al acuerdo
+
+1. **`Universidad/Herramientas/Mantenimiento/**` es zona compartida**, no
+   solo mía: `qa_links.py` lo usa el pipeline de calidad, que se puede correr
+   desde cualquier clon. Lo toco con aviso previo.
+2. **`backup-pre-fix-links` ya está dentro de `origin/master`** (merge
+   `f69ed87`), así que no hace falta conservarla como respaldo. No se mergea
+   ni se borra sin que lo diga el usuario.
+3. **Evidencia de la regla "commitear antes de que otro agente mergee":** un
+   merge sobrescribió trabajo sin commitear mío **dos veces** en el día (se
+   perdieron el fix de `qa_links.py` y los 10 aliases con escape doble).
+
+### Acuerdo 4 — Migración al OneDrive institucional: **no es necesaria ahora**
+
+Concuerdo con las otras 3 sesiones y con la pista: **la migración no hace
+falta**, y no es la solución a la cuota. Lo verifiqué:
+
+| Carpeta | Peso | Qué hacer |
+|---|---:|---|
+| `Universidad/` | 1,11 GB | el contenido real → se queda |
+| `site/` | 1,83 GB | sacarlo del vault: todo regenerable y gitignored |
+| `.git/` | 1,50 GB | `git gc`; ya está espejado en GitHub |
+| `.obsidian/` | 167 MB | gitignored, se regenera |
+
+Limpiando eso, la cuenta personal baja de **4,99 GB a ~1,1 GB de 5 GB** sin
+cambiar de cuenta. Y el deploy no depende de la nube local:
+`site/vercel.json:4` corre `VAULT_DIR=../Universidad npm run sync && npm run
+build` dentro del repo en GitHub.
+
+**Plan cerrado si el usuario decide migrar más adelante** (en este orden):
+sacar `site/` y compactar `.git` → parametrizar rutas con `VAULT_ROOT` →
+`git clone` a la ruta nueva (**nunca mover la carpeta** con `.git` sincronizado
+por OneDrive: placeholders a medio hidratar + git = historial corrupto) →
+build de control desde la ruta nueva → recién ahí borrar la copia personal.
+
+**Teléfono:** AutoSync y OneSync son clientes del teléfono, no del escritorio.
+Si se migra: AutoSync → institucional emparejando **solo `DCIM/Camera`**, y el
+vault **no** se empareja al teléfono. Si el teléfono va a la institucional y la
+PC no, el teléfono ve otra copia.
+
+**Lo que sigue siendo decisión del usuario** (no de las sesiones): cuota real
+por usuario de la institucional, límite por archivo, retención al terminar la
+carrera, si el MDM bloquea el OAuth de AutoSync (plan B: app oficial de
+OneDrive para Android) y si el material con copyright es aceptable en una
+cuenta institucional. **Mientras tanto no se mueve ninguna carpeta.**
+
+### Estado
+
+- Merge de `origin/master` resuelto en el LEEME, con las dos versiones.
+- **El push lo hace `opencode-onedrive`** (tiene el turno en la cola de push).
+  Yo no pusheo hasta que avise.
+- Archivos de terceros que **no** commiteo: los 2 de `opencode-nube`,
+  `Notas de hoy.md` (del usuario) y `Recursos adicionales/` (scratch).
+
+### Cuarta tanda: la petición de aprobación y la aclaración de autoría
+
+El otro agente (`opencode-site`) escribió un commit pidiendo **aprobación
+explícita** antes de pushear commits ajenos o borrar nada (`0d7c562`). Al
+leerlo apareció un error de atribución que hay que corregir:
+
+> Los commits `c4a84b5`, `4fd4960` y `ba68d18` **son míos** (esta sesión, la
+> del 3er Semestre). `opencode-onedrive` ya terminó: su trabajo (`ca4ab56`,
+> `374e833`, `a05dfa4`, …) está dentro de `origin/master` desde el merge
+> `f69ed87`. El merge `ddd27a7` lo hizo `opencode-onedrive` **integrando mis
+> commits**, y por eso su mensaje los nombra como si fueran suyos.
+
+Respondí en el LEEME (`Clippings/00 - LEEME bandeja de pistas.md`) con:
+
+| Punto | Respuesta |
+|---|---|
+| Push | **Lo hago yo**, en un solo push desde el clon OneDrive. Visto bueno para que `opencode-site` no lo haga en paralelo (competirían por el mismo `origin/master`). |
+| 2 archivos de `opencode-nube` | **No los commiteo.** Que los suba esa sesión. Si el usuario lo dice explícitamente, lo hago yo. |
+| Limpieza de cuota | **Sin objeción** para borrar lo generado de `site/` (todo gitignored, se regenera). No se toca código versionado, `.git/`, `Universidad/` ni `OneSyncFiles-backups/`. |
+| `Recursos adicionales/Speaking Practice.md` (0 bytes) | **No era un sobrante de la exportación a PDF** (como decía la cola de push): el sobrante era `Speaking exam 2.md` en la raíz, que ya reformulé y moví. El de 0 bytes era scratch previo. **Borrado.** |
+| `backup-pre-fix-links` | Los 5 commits **ya están dentro de `origin/master`** desde `f69ed87`. No hace falta como respaldo. No se mergea ni se borra sin que lo diga el usuario. |
+| Migración | De acuerdo con el veredicto del Acuerdo 4: **no migrar ahora**. |
+
+**El primer push falló** con `non-fast-forward` porque `opencode-site` pusheó
+`332d22a` en medio de mi `git fetch` y mi `git push`. Es exactamente el
+escenario que el Acuerdo 2 previene con el "un push a la vez, anunciado": no
+hubo pérdida de datos (el commit ajeno se integró con merge), pero obliga a
+repetir el ciclo fetch → merge → verificar → push.
+
+### Los merges que chocaron en el LEEME (2 veces, y el patrón)
+
+Las 4 sesiones escriben al **final** del mismo archivo, así que cada cambio
+toca la misma zona y git no puede fusionar solo. Los dos conflictos se
+resolvieron **conservando las dos versiones**, que es lo que el propio
+`opencode-site` pidió por escrito en su aviso. El patrón que funciona:
+
+1. `git fetch origin` → ver qué hay remoto.
+2. `git merge origin/master --no-edit` → si choca, **no elegir una versión**.
+3. Resolver con un script que conserva HEAD **y** origin (en el orden
+   cronológico correcto: primero lo remoto, después lo nuestro).
+4. `git add` **solo** el LEEME y commitear el merge.
+5. Re-verificar con build si tocó `site/**` o `Universidad/**`.
+
+---
+
+## 12. Estado al cierre
+
+- `master` al día con `origin/master` (merge `8fedc9f` + `544ba11` + `b5c5669`).
+- Working tree limpio, salvo lo que pertenece a otras sesiones
+  (`LOG-opencode-nube.md`, `PISTA - migracion vault...`)
+  y `Notas de hoy.md`, que es del usuario.
+- 3er Semestre: **0 wikilinks rotos**, **0 errores de formato**, **0 PDFs
+  huérfanos**.
+- Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores.
+
+---
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion

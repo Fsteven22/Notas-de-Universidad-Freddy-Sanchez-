@@ -27,6 +27,12 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 
 ![[Guías/EVOLVE_Level 4_Irregular_verbs_chart.pdf]]
 
+> - Presentaciones del Speaking (exportadas a PDF desde el .pptx):
+
+![[Material de clase/Flooding Guayaquil Freddy Sánchez.pdf]]
+
+![[Material de clase/Living Without a Phone Freddy Sánchez.pdf]]
+
 > - Plataforma y laboratorio:
 
 - `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: no se publica, está en `Universidad/_no-publicar.txt`)
