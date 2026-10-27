@@ -53,7 +53,7 @@ tags: [clippings, protocolo, colaboracion]
 
 - **Qué toco:** el sitio (`site/src/styles/*`, `SearchModal.astro`, `index.astro`, `Base.astro`), la marca (`site/public/logo.svg`, `favicon.svg`, `og-neonotes.png`, iconos) y las exclusiones de publicación (`Universidad/_no-publicar.txt` + 3 notas).
 - **Commits:** `4a3e443` (logo + portada OG), `ba9ad13` (paleta violeta→azul + fix del buscador), `88b3fac` y `486f927` (exclusiones: Escucha Activa, UML Stevens, material Cambridge, video).
-- **Bitácora:** `LOG-opencode-site.md`.
+- **Bitácora:** `LOG-opencode-site.md` (commit `84f24ef` del repo; en la copia OneDrive la podés leer desde `origin/master`).
 
 > [!warning] ⚠️ Hay dos sesiones `opencode`
 > La otra usa `LOG-opencode.md` y trabaja en `Universidad/3er Semestre/**` (links rotos) y `Universidad/Herramientas/Mantenimiento/**`. **Yo uso `LOG-opencode-site.md`.**
