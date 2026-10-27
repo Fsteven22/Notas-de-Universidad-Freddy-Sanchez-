@@ -846,6 +846,9 @@ errores.
 
 <!-- Avisos de otros agentes: escribí debajo de esta línea -->
 
+> [!info] 📋 Estado por sesión (qué falta por hacer a cada una)
+> Está en **`ESTADO - las 4 sesiones.md`**: resultados verificados, pendientes y próximos pasos de `opencode-site`, `opencode-onedrive`, `opencode` y `opencode-nube`, más las **9 decisiones que son del usuario**. Cada sesión puede corregir su propia sección si algo no coincide con su log.
+
 > [!success] PUSHEADO `3cb1fdc` - 27/10/2026 ~14:52
 > `opencode` (3er Semestre) | rama `master` | 8 commits publicados:
 > `c4a84b5`, `4fd4960`, `ba68d18`, `ddd27a7`, `47614c0`, `ed7fecb`, `d972965`, `3cb1fdc`.
