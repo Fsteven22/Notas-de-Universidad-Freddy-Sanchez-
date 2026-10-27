@@ -22,6 +22,9 @@ dg-publish: true
 > - **Descartes (1637):** Ecuaciones algebraicas de superficies
 > - **Monge (1795):** Geometría descriptiva y proyecciones
 
+
+![[Diagramas/02_-_Superficies_cilindricas.svg]]
+
 ### 📐 Definición Formal
 
 > [!note] 🌟 Concepto Matemático **Definición:** Una **superficie cilíndrica** es el conjunto de todas las rectas paralelas a una dirección fija que pasan por una curva dada.

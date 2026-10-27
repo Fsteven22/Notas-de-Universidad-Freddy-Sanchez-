@@ -27,6 +27,10 @@ dg-publish: true
 > - **Oliver Heaviside (1893):** Aplicaciones en electromagnetismo
 > - Fundamental en mecánica cuántica (producto interno de funciones)
 
+
+![[Diagramas/01_-_Producto_punto_y_angulo_entre_vectores_01.svg]]
+![[Diagramas/01_–_Producto_punto_y_ángulos.svg]]
+
 ### 📝 Definición Formal
 
 > [!note] 🌟 Concepto Matemático del Producto Punto **Definición algebraica:**

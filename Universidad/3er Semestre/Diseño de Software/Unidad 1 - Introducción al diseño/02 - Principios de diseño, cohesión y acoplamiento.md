@@ -59,7 +59,7 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >     boolean validarEmail(String s) { ... }
 >     void enviarCorreo(String destino) { ... }
 > }
->
+> // ---
 > // ✅ COHESIÓN FUNCIONAL — cada clase, una sola misión
 > class CalculadoraIVA {
 >     double calcular(double precio) { ... }
@@ -104,7 +104,7 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >         // 3 banderas = 3 personalidades distintas
 >     }
 > }
->
+> // ---
 > // ✅ DATOS + COHESIÓN FUNCIONAL
 > class GeneradorReporte {
 >     Reporte generar(Datos datos) { /* una misión */ }
@@ -185,7 +185,7 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > ```java
 > public class Pila<T> {
 >     private List<T> datos = new ArrayList<>(); // detalle oculto
->
+> // ---
 >     public void push(T valor) { datos.add(valor); }
 >     public T pop() { return datos.remove(datos.size() - 1); }
 >     public boolean estaVacia() { return datos.isEmpty(); }

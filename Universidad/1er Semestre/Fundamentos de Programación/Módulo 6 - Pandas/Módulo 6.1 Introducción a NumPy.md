@@ -407,10 +407,10 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Python Basics]] - Fundamentos de Python
-> - [[Data Types]] - Tipos de datos en Python
-> - [[Lists vs Arrays]] - Comparación detallada
-> - [[Mathematical Operations]] - Operaciones matemáticas avanzadas
+> - Python Basics - Fundamentos de Python
+> - Data Types - Tipos de datos en Python
+> - Lists vs Arrays - Comparación detallada
+> - Mathematical Operations - Operaciones matemáticas avanzadas
 
 ---
 
@@ -421,16 +421,16 @@ dg-publish: true
 > **Prerrequisitos:**
 > 
 > - [[Python Fundamentals]] - Sintaxis básica de Python
-> - [[Python Lists]] - Manejo de listas en Python
-> - [[Basic Math Operations]] - Operaciones matemáticas básicas
+> - Python Lists - Manejo de listas en Python
+> - Basic Math Operations - Operaciones matemáticas básicas
 > 
 > **Para Profundizar:**
 > 
-> - [[NumPy Advanced Indexing]] - Indexación avanzada
-> - [[NumPy Broadcasting]] - Reglas de broadcasting
-> - [[Pandas Introduction]] - Siguiente paso: análisis de datos
-> - [[Matplotlib with NumPy]] - Visualización de datos
-> - [[SciPy Overview]] - Computación científica avanzada
+> - NumPy Advanced Indexing - Indexación avanzada
+> - NumPy Broadcasting - Reglas de broadcasting
+> - Pandas Introduction - Siguiente paso: análisis de datos
+> - Matplotlib with NumPy - Visualización de datos
+> - SciPy Overview - Computación científica avanzada
 
 ---
 

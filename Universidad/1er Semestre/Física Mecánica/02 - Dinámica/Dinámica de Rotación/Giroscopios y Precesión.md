@@ -260,21 +260,21 @@ dg-publish: true
 > 
 > - > [[Momentum Angular]] - Concepto fundamental para giroscopios
 >     
-> - > [[Conservación del Momento Angular]] - Principio base del comportamiento
+> - > Conservación del Momento Angular - Principio base del comportamiento
 >     
 > - > [[Cinemática Rotacional]] - Segunda Ley de Newton rotacional
 >     
 > - > [[Producto Vectorial]] - Matemáticas de torque y momento angular
 >     
-> - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Propiedad clave del rotor
+> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Propiedad clave del rotor
 >     
-> - > [[Estabilidad de Sistemas]] - Aplicaciones de estabilización
+> - > Estabilidad de Sistemas - Aplicaciones de estabilización
 >     
-> - > [[Navegación Inercial]] - Aplicación tecnológica
+> - > Navegación Inercial - Aplicación tecnológica
 >     
-> - > [[MEMS]] - Giroscopios microscópicos modernos
+> - > MEMS - Giroscopios microscópicos modernos
 >     
-> - > [[Mecánica Celeste]] - Precesión de planetas y satélites
+> - > Mecánica Celeste - Precesión de planetas y satélites
 >     
 >
 

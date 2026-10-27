@@ -24,6 +24,9 @@ dg-publish: true
 > |**Campo de gradientes**|Temperatura en una habitación|Dirección de mayor cambio|
 > |**Campo magnético**|Alrededor de un imán|Fuerza sobre polo norte|
 
+
+![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional.svg]]
+
 ![[Diagramas/01_–_Campos_vectoriales_-_divergencia_y_rotacional_01.svg]]
 
 ---

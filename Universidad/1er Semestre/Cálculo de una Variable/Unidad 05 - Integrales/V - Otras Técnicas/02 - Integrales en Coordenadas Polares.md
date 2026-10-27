@@ -284,7 +284,7 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > - [[01 - Coordenadas cilíndricas y esféricas]]
 > - [[Integrales de Línea]]
-> - [[Teoremas de Green y Stokes]]
+> - Teoremas de Green y Stokes
 > - [[Análisis Vectorial]]
 
 ---

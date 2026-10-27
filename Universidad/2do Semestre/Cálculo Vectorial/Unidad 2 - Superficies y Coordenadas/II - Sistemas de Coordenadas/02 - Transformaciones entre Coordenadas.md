@@ -34,6 +34,9 @@ dg-publish: true
 > - **Carl Friedrich Gauss (1777-1855):** Teoría de superficies
 > - Navegación marítima y astronomía desde el siglo XVII
 
+
+![[Diagramas/02_-_Transformaciones_entre_Coordenadas.svg]]
+
 ## 🔵 Coordenadas Cilíndricas
 
 ### 📏 Definición del Sistema

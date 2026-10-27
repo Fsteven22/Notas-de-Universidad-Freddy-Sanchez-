@@ -57,7 +57,6 @@ const IMG_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp)$/i;
 const MEDIA_EXT = /\.(png|jpe?g|gif|svg|webp|avif|bmp|pdf|docx?|pptx?|mp4|mp3|wav|ogg|xlsx?|zip)$/i;
 const PDF_VIEWER = "/pdfjs/viewer.html?file=";
 const PDF_MAX_INLINE_BYTES = 25 * 1024 * 1024; // PDFs mayores: solo descarga, no visor embebido
-const NO_PUBLICAR_FILE = "_no-publicar.txt"; // lista de archivos que no se publican
 
 /** Carpetas de la RAÍZ del vault con assets globales referenciables desde
  *  cualquier materia (imágenes, diagramas). Copiadas a /assets/raiz/… */
@@ -78,41 +77,44 @@ const ASSET_SKIP = [
   /\.(tmp|bak)$/i,
 ];
 
-/* ── lista de archivos que no se publican ─────────────────── */
+/* ── _no-publicar.txt ─────────────────────────────────────────
+ * Lista de archivos que nunca se suben al sitio (patrones de nombre,
+ * comodín * y ?). Se lee desde la raíz de Universidad.            */
+const NO_PUBLICAR_FILE = path.join(VAULT, "_no-publicar.txt");
 
-/**
- * Lee <vault>/_no-publicar.txt: un nombre de archivo por linea, con # para
- * comentarios. Admite comodin *. Es la unica fuente de verdad: el sync no
- * copia esos archivos a /assets/ y los ZIP por materia tampoco los incluyen.
- */
-export async function leerNoPublicar(vaultDir) {
-  let texto = "";
+async function leerNoPublicar() {
   try {
-    texto = await readFile(path.join(vaultDir, NO_PUBLICAR_FILE), "utf8");
+    const txt = await readFile(NO_PUBLICAR_FILE, "utf8");
+    return txt
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter((l) => l && !l.startsWith("#"));
   } catch {
     return [];
   }
-  return texto
-    .split(/\r?\n/)
-    .map((l) => l.trim())
-    .filter((l) => l && !l.startsWith("#"));
 }
 
-/** Coincide un nombre de archivo contra los patrones (exacto o con comodin *). */
-export function coincideNoPublicar(nombre, patrones) {
-  return patrones.some((patron) => {
-    if (!patron.includes("*")) return patron.toLowerCase() === nombre.toLowerCase();
-    const partes = patron.split("*").map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    return new RegExp(`^${partes.join(".*")}$`, "i").test(nombre);
-  });
+function globToRegex(pat) {
+  const esc = pat.replace(/[.+^${}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*").replace(/\?/g, ".");
+  return new RegExp(`^${esc}$`, "i");
 }
 
-/**
- * El sync es incremental: un archivo que hoy está en la lista puede seguir
- * copiado en /assets/ de un build anterior. La limpieza de huerfanos (que
- * borra lo que no esta en el manifiesto de copiados) ya lo resuelve: como los
- * excluidos nunca se agregan al manifiesto, desaparecen de /assets/.
- */
+/** Assets (imágenes/PDF/etc.) que menciona una nota: embeds ![[x]], wikilinks
+ *  [[x]] y enlaces markdown ![](x) / [](x). Se comparan por nombre de archivo. */
+function referenciasMedia(raw) {
+  const out = new Set();
+  const add = (ref) => {
+    const clean = ref.trim().split("|")[0].split("#")[0].trim();
+    if (!clean || /^(https?:|data:|mailto:|#)/i.test(clean)) return;
+    const base = path.basename(clean);
+    if (MEDIA_EXT.test(base)) out.add(base.toLowerCase());
+  };
+  for (const m of raw.matchAll(/!\[\[([^\]|#]+)/g)) add(m[1]);
+  for (const m of raw.matchAll(/\[\[([^\]|#]+)/g)) add(m[1]);
+  for (const m of raw.matchAll(/!?\[[^\]]*\]\(([^)\s]+)/g)) add(m[1]);
+  return out;
+}
+
 async function walk(dir, acc = { files: [], dirs: [] }, base = dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -210,30 +212,61 @@ async function main() {
 
   const linkMap = new Map(); // título de nota → url
   const assetMaps = new Map(); // "sem/mat" y "sem/*" y "raiz" → Map(base→assetUrl)
-  const noPublicar = await leerNoPublicar(VAULT);
+
+  // ── 1a. reglas de publicación de assets:
+  //   · _no-publicar.txt  → nunca se suben (copyright, material propio ya en PDF)
+  //   · solo se sube lo que menciona alguna nota PUBLICADA
+  const patronesNP = await leerNoPublicar();
+  const reNP = patronesNP.map(globToRegex);
+  const esPrivado = (nombre, rel = "") =>
+    reNP.some((re) => re.test(nombre) || re.test(rel));
+  const privadosVistos = new Set();
+
+  // pre-pasada: assets mencionados por notas publicadas (gate dg-publish)
+  const referidos = new Set();
+  for (const f of rootWalk.files) {
+    if (!MD_EXT.test(f.name) || f.name.startsWith(".")) continue;
+    const partes = f.rel.split("/");
+    // el sitio solo publica notas de semestre/materia y las de la raíz
+    if (partes.length > 1 && !SEMESTER_IDS[partes[0]]) continue;
+    let raw;
+    try {
+      raw = await readFile(f.full, "utf8");
+    } catch {
+      continue;
+    }
+    if (!isPublished(raw)) continue;
+    for (const r of referenciasMedia(raw)) referidos.add(r);
+  }
+  console.log(`✓ assets referenciados por notas publicadas: ${referidos.size}`);
 
   // ── 1b. assets globales de la raíz del vault (Figuras/, Diagramas/ y
   // sueltos en la primera capa): alimentan el mapa "raiz" que consultará
   // resolveAsset desde cualquier materia. No generan materias fantasma
   // (el Hallazgo 1 sigue válido: son assets, no notas).
-  const excluidos = new Set();
   const raizAssets = new Map();
   const rootAssetFiles = rootWalk.files.filter((f) => {
     const top = f.rel.split("/")[0];
     const isRootDir = ROOT_ASSET_DIRS.includes(top);
     const isTopLevel = !f.rel.includes("/");
-    return (isRootDir || isTopLevel) && !MD_EXT.test(f.name) && !f.name.startsWith(".");
+    return (
+      (isRootDir || isTopLevel) &&
+      !MD_EXT.test(f.name) &&
+      !f.name.startsWith(".") &&
+      MEDIA_EXT.test(f.name) &&
+      f.name !== "_no-publicar.txt"
+    );
   });
   for (const f of rootAssetFiles) {
+    if (esPrivado(f.name, f.rel)) {
+      privadosVistos.add(f.rel);
+      continue;
+    }
+    if (!referidos.has(f.name.toLowerCase())) continue; // nadie lo usa → no se sube
     const rel = f.rel.split("/");
     const fileName = rel[rel.length - 1];
-      if (fileName === NO_PUBLICAR_FILE) continue;
-      if (coincideNoPublicar(fileName, noPublicar)) {
-        excluidos.add(fileName);
-        continue;
-      }
-      const dirs = rel.slice(0, -1).map(slugify);
-      const url = `/assets/raiz/${[...dirs, fileName].join("/")}`;
+    const dirs = rel.slice(0, -1).map(slugify);
+    const url = `/assets/raiz/${[...dirs, fileName].join("/")}`;
     const dest = path.join(OUT_ASSETS, "raiz", ...dirs, fileName);
     await mkdir(path.dirname(dest), { recursive: true });
     await copyIfChanged(f.full, dest, url.slice("/assets/".length));
@@ -258,13 +291,13 @@ async function main() {
     const assets = new Map(); // base → assetUrl (relativo público)
     for (const f of w.files) {
       if (MD_EXT.test(f.name) || f.name.startsWith(".")) continue;
-      const rel = f.rel.split("/");
-      const fileName = rel[rel.length - 1];
-      if (fileName === NO_PUBLICAR_FILE) continue;
-      if (coincideNoPublicar(fileName, noPublicar)) {
-        excluidos.add(fileName);
+      if (esPrivado(f.name, f.rel)) {
+        privadosVistos.add(f.rel);
         continue;
       }
+      if (!referidos.has(f.name.toLowerCase())) continue; // nadie lo usa → no se sube
+      const rel = f.rel.split("/");
+      const fileName = rel[rel.length - 1];
       const dirs = rel.slice(0, -1).map(slugify);
       const url = `/assets/${sem.id}/${matId}/${[...dirs, fileName].join("/")}`;
       const dest = path.join(assetDir, ...dirs, fileName);
@@ -479,8 +512,9 @@ Sitemap: ${SITE_URL}/sitemap.xml`;
   if (omitidas.length) {
     for (const o of omitidas) console.log(`  · omitida: ${o.sem}/${o.mat}/${o.rel}`);
   }
-  if (excluidos.size) {
-    console.log(`  · no publicado (_no-publicar.txt): ${[...excluidos].join(", ")}`);
+  if (patronesNP.length) {
+    console.log(`✓ _no-publicar.txt: ${patronesNP.length} patrones · ${privadosVistos.size} archivos excluidos`);
+    for (const p of privadosVistos) console.log(`  · no publicado: ${p}`);
   }
   console.log(`✓ ${notas.length} notas · ${semList.length} bloques · sync incremental listo`);
 }
@@ -552,7 +586,12 @@ async function transformNote(raw, { sem, mat, assetMaps }) {
   t = t.replace(/!\[\[([^\]|]+?)(?:\|[^\]]*)?\]\]/g, (_, name) => {
     const label = name.trim();
     const info = resolveAssetInfo(label, sem, mat, assetMaps);
-    if (!info) return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
+    if (!info) {
+      // embebido de una NOTA (sin extensión de media): se deja como wikilink
+      // para que la 2ª pasada lo convierta en enlace a la nota.
+      if (!MEDIA_EXT.test(path.basename(label))) return `[[${label}]]`;
+      return `<!-- nx:asset-omitido ${escapeHtml(label)} -->`;
+    }
     if (IMG_EXT.test(info.url)) return `![${label}](${encodeURI(info.url)})`;
     return info.url.toLowerCase().endsWith(".pdf") ? pdfViewer(label, info.url, info.size) : docCard(label, info.url);
   });

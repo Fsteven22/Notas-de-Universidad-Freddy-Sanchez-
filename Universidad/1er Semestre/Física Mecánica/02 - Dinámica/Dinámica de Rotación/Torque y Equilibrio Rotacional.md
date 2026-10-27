@@ -220,15 +220,15 @@ dg-publish: true
 > - [[Momentum Angular]]
 > - [[Equilibrio Rotacional]]
 > - [[Trabajo y Energía Rotacional]]
-> - [[Palancas y Máquinas Simples]]
+> - Palancas y Máquinas Simples
 > - [[Producto Vectorial]]
 > 
 > ### 📖 Temas Avanzados
 > 
 > - [[Giroscopios y Precesión]]
-> - [[Torque en Sistemas de Múltiples Cuerpos]]
-> - [[Análisis de Estructuras]]
-> - [[Máquinas Rotativas]]t
+> - Torque en Sistemas de Múltiples Cuerpos
+> - Análisis de Estructuras
+> - Máquinas Rotativast
 ## Tags
 
 #fisica #mecanica #torque #momento-torsion #dinamica-roacional #equilibrio

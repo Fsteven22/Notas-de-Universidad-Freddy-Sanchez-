@@ -1269,8 +1269,8 @@ dg-publish: true
 > - [[Graficas Lineales]] - Fundamento previo necesario
 > - [[Estadística Básica]] - Base matemática
 > - [[Incertidumbres Experimentales]] - Análisis de errores
-> - [[Regresión No Lineal]] - Técnicas avanzadas
-> - [[Análisis Dimensional]] - Verificación física
+> - Regresión No Lineal - Técnicas avanzadas
+> - Análisis Dimensional - Verificación física
 
 ## 🎯 Ejercicios y Problemas
 

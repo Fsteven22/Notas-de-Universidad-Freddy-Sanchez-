@@ -44,10 +44,10 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > import static org.junit.jupiter.api.Assertions.assertEquals;
 > import example.util.Calculator;
 > import org.junit.jupiter.api.Test;
->
+> // ---
 > class CalculadoraTests {
 >     private final Calculator calculator = new Calculator(); // Arrange
->
+> // ---
 >     @Test
 >     void addition() {
 >         assertEquals(2, calculator.add(1, 1)); // Act + Assert
@@ -71,10 +71,10 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > class PedidoTests {
 >     @BeforeEach
 >     void setUp() { /* se ejecuta ANTES de cada @Test: arma objetos frescos */ }
->
+> // ---
 >     @Test
 >     void totalAplicaDescuento() { /* ... */ }
->
+> // ---
 >     @AfterEach
 >     void tearDown() { /* limpieza después de cada test */ }
 > }

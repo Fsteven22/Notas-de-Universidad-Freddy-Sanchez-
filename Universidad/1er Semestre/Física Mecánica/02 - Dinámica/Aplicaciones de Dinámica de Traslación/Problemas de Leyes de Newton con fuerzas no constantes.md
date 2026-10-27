@@ -314,7 +314,7 @@ dg-publish: true
 > - [[Leyes de Newton]] - Fundamentos teóricos
 > - [[Ecuaciones Diferenciales Básicas]] - Herramientas matemáticas
 > - [[Trabajo y Energía]] - Métodos energéticos
-> - [[Oscilaciones]] - Fuerzas restauradoras
+> - Oscilaciones - Fuerzas restauradoras
 
 ## 📚 Notas Recomendadas
 

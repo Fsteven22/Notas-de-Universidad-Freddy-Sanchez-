@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Esta unidad estudia las **funciones de variable real** (definición, gráficas, operaciones y familias elementales) y la **trigonometría** (ángulos, razones, gráficas, identidades y ecuaciones). Es la base del cálculo: límites, derivadas e integrales operan sobre las funciones que aquí se aprenden a analizar y graficar.
 >
-> ![[Diagramas/00_-_Índice_Unidad_3_01.svg]]
+> ![[Diagramas/00_-_Mate_Indice_Unidad_3_01.svg]]
 
 ---
 

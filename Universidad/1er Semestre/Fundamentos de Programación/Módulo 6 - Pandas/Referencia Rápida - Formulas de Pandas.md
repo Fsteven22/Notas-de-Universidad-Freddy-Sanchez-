@@ -53,7 +53,7 @@ dg-publish: true
 |Fórmula/Método|Descripción|Ejemplo|
 |---|---|---|
 |`df['columna']`|Seleccionar una columna (Series)|`df['Nombre']`|
-|`df[['col1', 'col2']]`|Seleccionar múltiples columnas|`df[['Nombre', 'Edad']]`|
+|`df'col1', 'col2'`|Seleccionar múltiples columnas|`df'Nombre', 'Edad'`|
 |`df.loc[fila, columna]`|Selección por etiquetas|`df.loc[0, 'Nombre']`|
 |`df.iloc[posición]`|Selección por posición numérica|`df.iloc[0:5, 1:3]`|
 |`df.loc[inicio:fin]`|Rango por etiquetas (inclusivo)|`df.loc[2:5]`|

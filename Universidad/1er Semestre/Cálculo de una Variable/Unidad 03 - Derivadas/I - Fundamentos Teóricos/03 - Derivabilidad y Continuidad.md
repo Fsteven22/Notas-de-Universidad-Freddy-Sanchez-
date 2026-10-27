@@ -203,7 +203,7 @@ dg-publish: true
 > 
 > 1. **Funciones elementales**: Polinomios, exponenciales, logaritmos, trigonométricas son derivables en su dominio
 > 
-> 2. **Composición**: Si $f$ y $g$ son derivables, entonces $f \circ g$ es derivable ([[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]])
+> 2. **Composición**: Si $f$ y $g$ son derivables, entonces $f \circ g$ es derivable (Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena)
 > 
 > 3. **Operaciones**: Si $f$ y $g$ son derivables, entonces $f \pm g$, $f \cdot g$, $\frac{f}{g}$ (con $g \neq 0$) son derivables
 > 
@@ -334,7 +334,7 @@ dg-publish: true
 > 
 > ### 🔗 Notas Relacionadas
 > - [[01 - Derivada y Definición Formal]] - Definición formal de derivabilidad
-> - [[Límites]] - Fundamento matemático de continuidad
+> - Límites - Fundamento matemático de continuidad
 > - [[01 - Reglas Fundamentales de Derivación]] - Aplicación práctica
 > - [[02 - Interpretación Geométrica de la Derivada]] - Visualización de conceptos
 > - [[01 - Análisis Completo de Funciones]] - Aplicación en graficación
@@ -342,8 +342,8 @@ dg-publish: true
 > ### 📖 Para Profundizar
 > - [[Teoremas de Valor Medio]] - Aplicación de la derivabilidad
 > - [[05 – Funciones de Clase C¹]] - Grados de suavidad
-> - [[Análisis Real]] - Tratamiento riguroso
-> - [[Topología]] - Conceptos de continuidad generalizados
+> - Análisis Real - Tratamiento riguroso
+> - Topología - Conceptos de continuidad generalizados
 > 
 > ### 🎯 Aplicaciones Inmediatas
 > - [[01 - Problemas de Optimización]] - Búsqueda de extremos

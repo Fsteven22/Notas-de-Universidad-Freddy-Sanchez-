@@ -36,6 +36,20 @@ tags: [IDIG2012, unidad0, recursos]
 
 ---
 
+## ✍️ Material de clase Unidad 3 — Redacción
+
+> [!note] 📝 Diapositivas de cátedra
+> Material de las clases S5 (informes) y S6 (IA ética y prompts). Los textos ya viven como notas temáticas en la Unidad 3; aquí se publica el PDF original.
+
+![[Redacción de informes técnicos y ejecutivos.pdf]]
+
+![[Uso ético de la IA.pdf]]
+
+> [!success] 📜 Protocolo institucional
+> El **protocolo de uso ético de la IA** de la ESPOL para esta asignatura (Mariuxi León Molina, Ph.D.) está destilado dentro de la nota [[03 - IA ética y prompts para redacción]], sección "Protocolo de Uso Ético de la IA".
+
+---
+
 ## 📝 Talleres de redacción (ya convertidos a nota)
 
 > [!success] 🆕 Resumidos y con diagramas

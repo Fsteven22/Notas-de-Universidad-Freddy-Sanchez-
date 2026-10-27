@@ -22,6 +22,9 @@ dg-publish: true
 > - **Euler (1748):** Clasificación de superficies cuadráticas
 > - **Monge (1795):** Geometría descriptiva y superficies
 
+
+![[Diagramas/01_-_Superficies_cuadraticas.svg]]
+
 ### 📊 Ecuación General de una Cuádrica
 
 > [!note] 🌟 Forma General La ecuación más general de una superficie cuádrica en ℝ³ es:

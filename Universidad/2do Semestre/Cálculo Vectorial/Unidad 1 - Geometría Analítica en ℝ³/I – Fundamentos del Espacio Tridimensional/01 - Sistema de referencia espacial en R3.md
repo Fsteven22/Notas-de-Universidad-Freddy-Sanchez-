@@ -21,6 +21,9 @@ dg-publish: true
 > - **Leonard Euler (1748):** Formalización del espacio tridimensional
 > - **Hermann Grassmann (1844):** Álgebra de espacios vectoriales
 
+
+![[Diagramas/01_-_Sistema_de_referencia_espacial_en_R3.svg]]
+
 ### 📊 Definición de ℝ³
 
 > [!note] 🌟 El Conjunto ℝ³ **Definición formal:**

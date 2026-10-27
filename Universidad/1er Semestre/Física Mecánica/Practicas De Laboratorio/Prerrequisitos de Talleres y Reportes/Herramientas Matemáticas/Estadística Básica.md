@@ -875,7 +875,7 @@ dg-publish: true
 > - [[Incertidumbres Experimentales]] - Aplicación de estadística
 > - [[Análisis de Errores]] - Marco conceptual
 > - [[Regresión Lineal]] - Análisis de relaciones
-> - [[Pruebas de Hipótesis]] - Inferencia estadística
+> - Pruebas de Hipótesis - Inferencia estadística
 
 ## 📈 Extensiones Avanzadas
 
@@ -921,9 +921,9 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación directa
-> - [[Regresión y Correlación]] - Análisis de relaciones
-> - [[Pruebas de Hipótesis]] - Inferencia estadística
-> - [[Diseño de Experimentos]] - Planificación estadística
+> - Regresión y Correlación - Análisis de relaciones
+> - Pruebas de Hipótesis - Inferencia estadística
+> - Diseño de Experimentos - Planificación estadística
 
 ---
 

@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Esta unidad sirve como mapa de navegación y control de avance para la Unidad 4 del MOOC *Comunicación Efectiva*, dedicada a las técnicas de condensación textual: el resumen académico, el parafraseo y la citación, la síntesis de múltiples fuentes, y el uso normativo del gerundio.
 >
-> ![[Diagramas/00_-_Índice_Unidad_4_01.svg]]
+> ![[Diagramas/00_-_MOOC_Indice_Unidad_4_01.svg]]
 
 ---
 

@@ -226,7 +226,7 @@ dg-publish: true
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Aplicación directa de vectores
 > - [[Cinemática Traslacional]] - Vectores posición, velocidad, aceleración
 > - [[Cinemática Rotacional]] - Vectores angulares y momento angular
-> - [[Trigonometría]] - Base para descomposición de vectores
+> - Trigonometría - Base para descomposición de vectores
 > - [[Producto Cruz]] - Análisis profundo del producto vectorial
 
 ## 📖 Notas Recomendadas para Complementar
@@ -237,7 +237,7 @@ dg-publish: true
 > 
 > - [[Funciones Trigonométricas]] - Para ángulos y componentes
 > - [[Álgebra]] - Para operaciones algebraicas
-> - [[Geometría]] - Para interpretación geométrica
+> - Geometría - Para interpretación geométrica
 > - [[01 - Funciones]] - Para vectores como funciones del tiempo
 > 
 > **Temas complementarios:**

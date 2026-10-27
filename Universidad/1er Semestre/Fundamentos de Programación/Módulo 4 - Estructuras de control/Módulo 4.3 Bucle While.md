@@ -418,11 +418,11 @@ dg-publish: true
 
 >[!info] 📖 **Temas Complementarios**
 >1. **[[Manejo de Errores con try, except, finally]]** - Try/except en bucles para robustez
->2. **[[Recursión vs Iteración]]** - Cuándo usar while vs funciones recursivas
+>2. **Recursión vs Iteración** - Cuándo usar while vs funciones recursivas
 >3. **[[Algoritmos de Búsqueda]]** - While en búsqueda lineal y binaria
 >4. **[[Procesamiento de Archivos]]** - Lectura línea por línea con while
->5. **[[Concurrencia y Threads]]** - Bucles infinitos en programación concurrente
->6. **[[Optimización de Código]]** - Eficiencia en bucles repetitivos
+>5. **Concurrencia y Threads** - Bucles infinitos en programación concurrente
+>6. **Optimización de Código** - Eficiencia en bucles repetitivos
 
 ---
 

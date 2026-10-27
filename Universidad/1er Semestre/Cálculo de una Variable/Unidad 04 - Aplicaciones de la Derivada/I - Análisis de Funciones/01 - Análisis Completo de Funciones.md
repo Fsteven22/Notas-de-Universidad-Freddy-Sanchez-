@@ -334,7 +334,7 @@ dg-publish: true
 > [!quote] [[Límites y Continuidad]] Fundamentos para entender asíntotas y comportamiento
 >
 
-> [!quote] [[Primera Derivada y Monotonía]] Análisis de crecimiento y puntos críticos
+> [!quote] Primera Derivada y Monotonía Análisis de crecimiento y puntos críticos
 >
 
 > [!quote] [[03 - Concavidad y Puntos de Inflexión]] Segunda derivada y curvatura de funciones

@@ -28,6 +28,9 @@ dg-publish: true
 > |**Física**|Sistemas naturales según fuerzas|Movimiento circular, gravitación|
 > |**Ingeniería**|Diseño y análisis|Robótica, navegación, gráficos 3D|
 
+
+![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas.svg]]
+
 ![[Diagramas/01_–_Transformaciones_entre_sistemas_de_coordenadas_01.svg]]
 
 ---

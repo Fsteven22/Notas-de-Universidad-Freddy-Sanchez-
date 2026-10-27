@@ -1,6 +1,9 @@
 # Papelera interna de Obsidian (archivos borrados)
 .trash/
 
+# Backups generados dentro del vault (van a OneSyncFiles-backups/)
+_BACKUP*/
+
 # Configuraciones, temas y plugins locales de Obsidian
 .obsidian/
 # Derivados OCR pesados (regenerables, van al Garden desde el vault)
@@ -8,3 +11,6 @@
 
 # Bytecode de Python
 __pycache__/
+
+# Previews del pipeline SVG (renders PNG regenerables, no se versionan)
+Universidad/Herramientas/SVG-Pipeline/previews/

@@ -31,6 +31,9 @@ dg-publish: true
 > - Base para geometría diferencial y análisis funcional
 > - Aplicaciones en optimización, física matemática, y ciencia de datos
 
+
+![[Diagramas/01_-_Nociones_topologicas_en_Rn.svg]]
+
 ### 📊 Jerarquía de Conceptos
 
 > [!note] 🌟 Estructura de Ideas Topológicas

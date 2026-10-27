@@ -191,7 +191,7 @@ dg-publish: true
 > - [[Ecuación de Continuidad]] - Conservación de masa en fluidos
 > - [[Principio de Bernoulli]] - Energía en fluidos en movimiento
 > - [[Tensión Superficial]] - Efectos de superficie en líquidos
-> - [[Viscosidad]] - Resistencia interna de fluidos
+> - Viscosidad - Resistencia interna de fluidos
 
 ## Notas Recomendadas 📖
 
@@ -199,15 +199,15 @@ dg-publish: true
 > 
 > ### Prerrequisitos:
 > 
-> - [[Vectores y Escalares]] - Base matemática
+> - Vectores y Escalares - Base matemática
 > - [[Leyes de Newton]] - Conceptos de fuerza
-> - [[Sistema Internacional de Unidades]] - Unidades y conversiones
+> - Sistema Internacional de Unidades - Unidades y conversiones
 > 
 > ### Temas Complementarios:
 > 
-> - [[Manómetros y Barómetros]] - Instrumentos de medición
+> - Manómetros y Barómetros - Instrumentos de medición
 > - [[Teorema de los Vasos Comunicantes]] - Aplicaciones de presión hidrostática
-> - [[Prensa Hidráulica]] - Aplicaciones del principio de Pascal
+> - Prensa Hidráulica - Aplicaciones del principio de Pascal
 
 ---
 

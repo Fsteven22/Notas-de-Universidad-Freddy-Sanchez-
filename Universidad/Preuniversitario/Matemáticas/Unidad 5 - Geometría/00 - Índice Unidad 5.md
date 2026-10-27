@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Cada nota conserva su teoría matemática original con el mismo rigor, ahora en formato uniforme: introducción, teoría en callouts y tablas, ejercicios resueltos, práctica colapsable, metas de aprendizaje, resumen ejecutivo y resumen visual.
 
-![[Diagramas/00_-_Índice_Unidad_5_01.svg]]
+![[Diagramas/00_-_Mate_Indice_Unidad_5_01.svg]]
 
 ---
 

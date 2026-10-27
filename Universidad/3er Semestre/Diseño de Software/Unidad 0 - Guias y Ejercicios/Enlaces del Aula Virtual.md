@@ -28,7 +28,9 @@ Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces c
 - [Video YouTube — Git (ver desde 1:30)](https://www.youtube.com/watch?v=4XpnKHJAok8&t=1m30s) — intro rápida a Git, punto de partida minuto 1:30.
 - [Git: cómo gestionar y cuidar nuestro código — enmilocalfunciona.io](https://www.enmilocalfunciona.io/git-como-gestionar-y-cuidar-nuestro-codigo/) — buenas prácticas para cuidar el código en equipo.
 - [Resolución de conflictos en GitHub — David Jurado (YouTube)](https://www.youtube.com/watch?v=H34vxQeQkgg) — del propio docente: cómo resolver conflictos en PRs.
-
+- https://youtu.be/zid-MVo7M-E?si=unHer8KeeRceRwNp
+- https://youtu.be/UI6lqHOVHic?si=MpjBL3RrsRuQkGw0
+- https://youtu.be/pCK6prSq8aw?si=H-Meu1NZVeJl-_gE
 ---
 
 **Tags:** #diseno-software #ESPOL #CCPG1042 #enlaces

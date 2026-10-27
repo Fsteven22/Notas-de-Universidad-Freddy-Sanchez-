@@ -209,20 +209,20 @@ dg-publish: true
 > 
 > ### 🔬 Temas Avanzados
 > 
-> - `[[Relatividad General]]` - Teoría moderna de gravedad
+> - `Relatividad General` - Teoría moderna de gravedad
 > - `[[Problema de N-Cuerpos]]` - Sistemas gravitacionales complejos
-> - `[[Ondas Gravitacionales]]` - Perturbaciones del espaciotiempo
+> - `Ondas Gravitacionales` - Perturbaciones del espaciotiempo
 > - `[[Materia Oscura]]` - Efectos gravitacionales anómalos
 > 
 > ### 🧪 Aspectos Experimentales
 > 
-> - `[[Experimento de Cavendish]]` - Medición histórica de G
-> - `[[Balance de Torsión]]` - Técnicas de medición precisa
-> - `[[Gravimetría]]` - Medición de variaciones locales
-> - `[[Geodesia]]` - Aplicaciones en ciencias de la Tierra
+> - `Experimento de Cavendish` - Medición histórica de G
+> - `Balance de Torsión` - Técnicas de medición precisa
+> - `Gravimetría` - Medición de variaciones locales
+> - `Geodesia` - Aplicaciones en ciencias de la Tierra
 > 
 > ### 📊 Métodos Computacionales
 > 
-> - `[[Simulaciones N-Cuerpos]]` - Modelado numérico
+> - `Simulaciones N-Cuerpos` - Modelado numérico
 > - `[[Métodos de Perturbación]]` - Aproximaciones analíticas
 > - `[[01 - Integración Numérica]]` - Solución de ecuaciones de movimiento

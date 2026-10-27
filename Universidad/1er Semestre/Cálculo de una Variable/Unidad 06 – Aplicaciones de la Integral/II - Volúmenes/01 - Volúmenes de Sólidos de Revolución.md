@@ -147,8 +147,8 @@ dg-publish: true
 > - [[Integrales Definidas]] - Base matemática fundamental
 > - [[Aplicaciones de la Integral]] - Contexto más amplio
 > - [[Métodos de Integración]] - Técnicas necesarias para resolver
-> - [[Geometría Analítica]] - Para visualización espacial
-> - [[Funciones y sus Gráficas]] - Interpretación de las regiones
+> - Geometría Analítica - Para visualización espacial
+> - Funciones y sus Gráficas - Interpretación de las regiones
 
 ## Notas Recomendadas para Complementar 📖
 
@@ -163,7 +163,7 @@ dg-publish: true
 > 
 > - [[02 - Coordenadas polares]] - Para casos más complejos
 > - [[03 - Superficies de revolución]] - Extensión natural
-> - [[Momentos y Centros de Masa]] - Otras aplicaciones
+> - Momentos y Centros de Masa - Otras aplicaciones
 > - [[Longitud de Arco]] - Medidas en curvas
 
 ---

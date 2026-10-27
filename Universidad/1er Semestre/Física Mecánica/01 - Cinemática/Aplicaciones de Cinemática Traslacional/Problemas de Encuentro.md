@@ -199,7 +199,7 @@ dg-publish: true
 > 
 > - [[Vectores]] - Para sistemas de coordenadas
 > - [[Sistemas de Ecuaciones]] - Álgebra necesaria
-> - [[Análisis Gráfico del Movimiento]] - Representación visual
+> - Análisis Gráfico del Movimiento - Representación visual
 
 ---
 

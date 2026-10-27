@@ -273,15 +273,15 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Variables en Python]] - Conceptos básicos de variables
-> - [[Tipos de Datos Básicos]] - String, int, float, bool
+> - Variables en Python - Conceptos básicos de variables
+> - Tipos de Datos Básicos - String, int, float, bool
 > - [[Operadores de Comparación]] - Para verificaciones
 > 
 > **Para Profundizar:**
 > 
 > - [[Módulo 5.2 Iterar Diccionarios]] - Recorrer diccionarios
-> - [[Collections Module]] - defaultdict, Counter, OrderedDict
-> - [[JSON y APIs]] - Trabajo con datos web estructurados
+> - Collections Module - defaultdict, Counter, OrderedDict
+> - JSON y APIs - Trabajo con datos web estructurados
 > - [[Manejo de Errores]] - Try/except con KeyError
 > - [[Programación Orientada a Objetos]] - Modelado con diccionarios
 

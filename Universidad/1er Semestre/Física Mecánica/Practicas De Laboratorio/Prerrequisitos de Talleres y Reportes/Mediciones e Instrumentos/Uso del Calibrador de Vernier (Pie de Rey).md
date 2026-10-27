@@ -377,7 +377,7 @@ dg-publish: true
 
 > [!note] **Temas Siguientes**
 > 
-> - [[Micrómetro]] - Instrumento de mayor precisión
+> - Micrómetro - Instrumento de mayor precisión
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 > - [[Problemas de Medición]] - Ejercicios aplicados
 

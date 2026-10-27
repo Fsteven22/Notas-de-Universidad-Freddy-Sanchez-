@@ -60,6 +60,17 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Se lee así:** ante un atributo pregunta *¿uno o varios?* (multivaluado), *¿se parte?* (compuesto), *¿se calcula?* (derivado). Lo que sobre es simple.
 
+> [!info] 📖 El deck de cátedra: la taxonomía de atributos en figuras (slides02, pp. 7-10)
+> El deck del Ing. Magallanes recorre los tipos de atributo con su figura: el **compuesto** (un número de teléfono se subdivide en código de país, código de área y número), el **multivaluado** y el **derivado**.
+
+![[Archivos/bd-s02-p8.png]]
+
+![[Archivos/bd-s02-p10.png]]
+
+> **Atributo requerido (p. 8):** *"un atributo que debe tener valor o no puede ser vacío (Not null)"*.
+>
+> **Identificadores (p. 9):** *"uno o más atributos que identifican a cada instancia de una Entidad"* — en el modelo relacional, la entidad es una tabla y el identificador es la clave primaria.
+
 ### 3️⃣ Relación — el verbo que conecta
 
 > [!note] 📋 Definición — Relación
@@ -69,6 +80,34 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-02-04-graph.svg]]
 >
 > **Ejemplo:** *toma* conecta ESTUDIANTE con MATERIA. Sin verbo no hay relación (ver Error 1: línea muda).
+
+> [!info] 📖 El deck de cátedra: relación, cardinalidad y grado (slides02, pp. 11-19)
+> *"Una Relación representa a un conjunto de asociaciones entre las instancias u ocurrencias de Entidades"* (p. 12). El deck dibuja la cardinalidad con el par (mín, máx) por lado.
+
+![[Archivos/bd-s02-p13.png]]
+
+![[Archivos/bd-s02-p15.png]]
+
+> **Las dos preguntas del deck (p. 14):** para Departamento, *"un empleado trabaja mínimo en cuántos departamentos?"* — si es 0, la participación del empleado es **opcional**; y el máximo define si es 1:1, 1:N o N:N.
+>
+> **Cardinalidad (p. 13):** *"el número mín y máx de ocurrencias de la Entidad con relación a una ocurrencia de la otra"*.
+>
+> **Grado (p. 16):** el número de entidades que participan — casi todas son binarias, pero las ternarias y superiores están permitidas.
+
+![[Archivos/bd-s02-p17.png]]
+
+![[Archivos/bd-s02-p19.png]]
+
+> **Relaciones recursivas (p. 17):** un empleado puede dirigir a muchos empleados (0,N) y ser dirigido por uno (0,1); un curso puede ser prerrequisito de otros.
+>
+> **Los cuatro tipos (p. 19):** *"en la fig. 'nace' es una relación N:1 y 'reside' es una relación N:N"*. El deck avisa: **una relación N:N en el E/R se convierte en una nueva tabla en el relacional** — es la regla 2 de la conversión.
+
+> [!info] 📖 El deck de cátedra: generalización y herencia (slides02, pp. 26-28)
+> *"Car y Truck son sub-clases o especializaciones de Vehicule y por lo tanto heredan los atributos y relaciones"* (p. 28).
+
+![[Archivos/bd-s02-p26.png]]
+
+![[Archivos/bd-s02-p28.png]]
 
 ### 4️⃣ Claves — PK, FK, candidata y compuesta
 

@@ -27,7 +27,7 @@ dg-publish: true
 > |**Análisis de sensibilidad**|Cómo cambian las salidas con las entradas|Optimización, control|
 > |**Invertibilidad**|Determina si la transformación es reversible|Ecuaciones no lineales|
 
-![[Diagramas/02_–_Jacobiano_de_la_transformación_01.svg]]
+![[Diagramas/02_-_Jacobiano_de_la_transformación_01.svg]]
 
 ---
 
@@ -54,7 +54,7 @@ dg-publish: true
 > |$Df$|Diferencial de f|Análisis|
 > |$J(x_0)$|Jacobiano evaluado en $x_0$|Punto específico|
 
-![[Diagramas/02_–_Jacobiano_de_la_transformación_02.svg]]
+![[Diagramas/02_-_Jacobiano_de_la_transformación_02.svg]]
 
 ### 🎲 Determinante Jacobiano
 

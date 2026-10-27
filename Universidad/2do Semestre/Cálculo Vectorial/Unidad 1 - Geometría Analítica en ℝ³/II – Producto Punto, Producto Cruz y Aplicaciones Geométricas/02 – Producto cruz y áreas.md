@@ -32,6 +32,9 @@ dg-publish: true
 > - Solo está definido en ℝ³ (y ℝ⁷ con propiedades especiales)
 > - No existe en ℝ² ni en ℝ⁴
 
+
+![[Diagramas/02_-_Producto_cruz_y_area_01.svg]]
+
 ### 📝 Definición Formal
 
 > [!note] 🌟 Concepto Matemático del Producto Cruz **Definición algebraica:**
@@ -63,7 +66,7 @@ dg-publish: true
 > 
 > - u × v (más común)
 > - u ∧ v (notación alternativa)
-> - [u, v] (menos común)
+> - \[u, v\] (menos común)
 
 ### 🔢 Cálculo del Producto Cruz
 

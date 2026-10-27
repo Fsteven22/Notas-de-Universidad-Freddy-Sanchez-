@@ -55,7 +55,7 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 >     for (Linea l : p.lineas()) total += l.precio() * (1 - l.descuento());
 >     System.out.println("Total: " + total);
 > }
->
+> // ---
 > // ✅ DESPUÉS: cada misión con nombre propio
 > void mostrarFactura(Pedido p) {
 >     imprimirEncabezado(p.cliente());
@@ -92,7 +92,7 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 >         return c.compras() > 10 && c.antiguedad() > 2 ? 0.15 : 0.0;
 >     }
 > }
->
+> // ---
 > // ✅ DESPUÉS: el descuento vive donde están los datos
 > class Cliente {
 >     double descuento() {

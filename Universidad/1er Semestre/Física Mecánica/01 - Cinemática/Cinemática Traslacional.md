@@ -188,12 +188,12 @@ dg-publish: true
 > 
 > - [[Álgebra]] - Manipulación de ecuaciones
 > - [[01 - Funciones]] - Conceptos de función del tiempo
-> - [[Gráficas]] - Interpretación de gráficas x-t, v-t, a-t
+> - Gráficas - Interpretación de gráficas x-t, v-t, a-t
 > - [[Vectores]] - Para movimiento bidimensional
 > 
 > **Temas complementarios:**
 > 
-> - [[Movimiento Parabólico]] - Extensión 2D
+> - Movimiento Parabólico - Extensión 2D
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Causas del movimiento
 > - [[Trabajo y Energía]] - Enfoque energético del movimiento
 > - [[Momentum Lineal y Su Conservación]] - Conservación en colisiones
@@ -418,12 +418,12 @@ dg-publish: true
 > 
 > - [[Álgebra]] - Manipulación de ecuaciones
 > - [[01 - Funciones]] - Conceptos de función del tiempo
-> - [[Gráficas]] - Interpretación de gráficas x-t, v-t, a-t
+> - Gráficas - Interpretación de gráficas x-t, v-t, a-t
 > - [[Vectores]] - Para movimiento bidimensional
 > 
 > **Temas complementarios:**
 > 
-> - [[Movimiento Parabólico]] - Extensión 2D
+> - Movimiento Parabólico - Extensión 2D
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Causas del movimiento
 > - [[Trabajo y Energía]] - Enfoque energético del movimiento
 > - [[Momentum Lineal y Su Conservación]] - Conservación en colisiones

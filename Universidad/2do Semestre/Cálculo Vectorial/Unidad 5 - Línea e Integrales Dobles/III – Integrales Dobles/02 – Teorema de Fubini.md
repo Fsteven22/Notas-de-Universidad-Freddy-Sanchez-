@@ -24,7 +24,7 @@ dg-publish: true
 > |**Verificación**|Permite comprobar resultados|Calcular por dos caminos diferentes|
 > |**Generalización**|Se extiende a integrales triples, n-ples|Aplicable en cualquier dimensión|
 
-![[Diagramas/02_–_Teorema_de_Fubini_01.svg]]
+![[Diagramas/02_-_Teorema_de_Fubini_01.svg]]
 
 ---
 
@@ -52,7 +52,7 @@ dg-publish: true
 > 
 > **Visualización del proceso:**
 > 
-> ![[Diagramas/02_–_Teorema_de_Fubini_02.svg]]
+> ![[Diagramas/02_-_Teorema_de_Fubini_02.svg]]
 > 
 > **Interpretación geométrica:**
 > 

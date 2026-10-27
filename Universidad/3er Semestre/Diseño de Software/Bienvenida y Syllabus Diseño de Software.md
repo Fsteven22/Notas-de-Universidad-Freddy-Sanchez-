@@ -18,10 +18,10 @@ dg-publish: true
 > | **Horario** | Lun y Mié — Par 01: 13:00-14:50 · Par 03: 15:00-16:45 (CL lunes, talleres miércoles) |
 > | **Prerrequisito** | Programación Orientada a Objetos |
 > | **Docente** | MSc. David Jurado (djurado@espol.edu.ec, djurado@fiec.espol.edu.ec) — oficina por Teams |
-> | **Syllabus base** | 📎 [[Unidad 0 - Guias y Ejercicios/SPA-SyllabusEUR_ACE-CCPG1042.pdf|SPA-SyllabusEUR_ACE-CCPG1042.pdf]] (EUR-ACE) |
-> | **Políticas oficiales** | 📎 [[Unidad 0 - Guias y Ejercicios/01aPoliticasCurso-2026-2.pdf|01aPoliticasCurso-2026-2.pdf]] |
-> | **Deck Semana 1** | 📎 [[Unidad 0 - Guias y Ejercicios/01bDisenoSoftware.pdf|01bDisenoSoftware.pdf]] |
-> | **Enlaces Aula Virtual** | 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] |
+> | **Syllabus base** | 📎 [[Unidad 0 - Guias y Ejercicios/SPA-SyllabusEUR_ACE-CCPG1042.pdf\|SPA-SyllabusEUR_ACE-CCPG1042.pdf]] (EUR-ACE) |
+> | **Políticas oficiales** | 📎 [[Unidad 0 - Guias y Ejercicios/Diapositivas/01aPoliticasCurso-2026-2.pdf\|01aPoliticasCurso-2026-2.pdf]] |
+> | **Deck Semana 1** | 📎 [[Unidad 0 - Guias y Ejercicios/Diapositivas/01bDisenoSoftware.pdf\|01bDisenoSoftware.pdf]] |
+> | **Enlaces Aula Virtual** | 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual\|Enlaces del Aula Virtual]] |
 
 ---
 
@@ -89,14 +89,14 @@ dg-publish: true
 > [!quote] 📖 Fuentes oficiales
 >
 > **Obligatoria:**
-> - [1] R. Pressman, B. Maxim, *Software Engineering: A Practitioner's Approach*, 9th ed. → `01_Software Engineering...pdf`
+> - **[1]** R. Pressman, B. Maxim, *Software Engineering: A Practitioner's Approach*, 9th ed. → `01_Software Engineering...pdf`
 >
 > **Adicional (docente):**
-> - [2] P. Stevens, *Using UML*, 2nd ed. → `02_Using UML...pdf`
-> - [3] A. Shalloway, J. Trott, *Design Patterns Explained*, 2nd ed. → `03_Design patterns explained...pdf`
-> - [4] M. Fowler, *Refactoring*, 2nd ed. → `04_Refactoring...2nd Edition...pdf`
-> - [5] E. Gamma et al., *Design Patterns (GoF)*, 1st ed., 1994.
-> - [6] C. Otero, *Software Engineering Design: Theory and Practice*, 2012.
+> - **[2]** P. Stevens, *Using UML*, 2nd ed. → `02_Using UML...pdf`
+> - **[3]** A. Shalloway, J. Trott, *Design Patterns Explained*, 2nd ed. → `03_Design patterns explained...pdf`
+> - **[4]** M. Fowler, *Refactoring*, 2nd ed. → `04_Refactoring...2nd Edition...pdf`
+> - **[5]** E. Gamma et al., *Design Patterns (GoF)*, 1st ed., 1994.
+> - **[6]** C. Otero, *Software Engineering Design: Theory and Practice*, 2012.
 
 ---
 
@@ -109,7 +109,9 @@ dg-publish: true
 > ├── 📄 Diseño de Software.md (mapa de contenido)
 > ├── 📄 Bienvenida y Syllabus Diseño de Software.md  ← estás aquí
 > ├── 📁 Unidad 0 - Guias y Ejercicios/
-> │   ├── syllabus EUR-ACE + políticas oficiales + deck S1 + 4 libros
+> │   ├── 📁 Diapositivas/ (decks del docente) · 📁 Exámenes/ · 📁 Material de clase/
+> │   ├── 📁 Material de clase/SIEL - Casos de Uso/ · SIEL - Modelo de Clases/ (pizarra)
+> │   ├── 📄 Syllabus + 5 libros de apoyo (raíz, solo local por copyright)
 > │   └── 📄 Enlaces del Aula Virtual.md (incl. video del docente)
 > ├── 📁 Unidad 1 - Introducción al diseño/
 > ├── 📁 Unidad 2 - Diseño orientado a objetos/

@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [EYAG1037, laboratorio, practicas]
 ---

@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Esta unidad estudia la **tipología textual**: cómo la intención comunicativa define la estructura del texto y qué herramientas garantizan una escritura académica correcta, desde los tipos narrativo, expositivo y argumentativo hasta el uso de haber, la puntuación y las mayúsculas.
 >
-> ![[Diagramas/00_-_Índice_Unidad_3_01.svg]]
+> ![[Diagramas/00_-_MOOC_Indice_Unidad_3_01.svg]]
 
 ---
 

@@ -32,7 +32,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 ## Unidad III — Redacción *(6h)* → [[00 - Índice Unidad 3|📂 Índice]]
 
 > [!note] Notas de la unidad
-> - [[01 - Texto expositivo, claridad y APA]]
+> - [[01 - Texto expositivo]]
 > - [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - [[03 - IA ética y prompts para redacción]]
 > - [[04 - Precisión y claridad en la redacción]]

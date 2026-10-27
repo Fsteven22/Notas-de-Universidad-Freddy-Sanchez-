@@ -31,6 +31,9 @@ dg-publish: true
 > - **r**(t) = vector posición en el instante t
 > - Al variar t, el extremo de **r**(t) traza una **curva** en el espacio
 
+
+![[Diagramas/01_–_Funciones_vectoriales_de_variable_escalar.svg]]
+
 ![[Diagramas/01_–_Funciones_vectoriales_de_variable_escalar_01.svg]]
 
 > [!tip] 🎯 ¿Para Qué Sirven?

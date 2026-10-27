@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Los complejos en forma polar $z = r(\cos\theta + i\,\mathrm{sen}\,\theta) = re^{i\theta}$ son el puente natural entre ambos bloques: el módulo y el argumento **son** coordenadas polares.
 
-![[Diagramas/00_-_Índice_Unidad_6_01.svg]]
+![[Diagramas/00_-_Mate_Indice_Unidad_6_01.svg]]
 
 ---
 

@@ -11,7 +11,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > | Bloque | Tema | Ejercicios | Alimenta |
 > |---|---|---|---|
 > | A | Álgebra relacional | 4 consultas | U1-03 (modelo relacional) |
-| A·cat | Catálogo de operadores (diapositivas 3.1 / 3.2) | referencia | este bloque |
+> | A·cat | Catálogo de operadores (diapositivas 3.1 / 3.2) | referencia | este bloque |
 > | B | Normalización del hotel | 1FN, 2FN, 3FN | U2-03 y U2-04 |
 >
 > 📎 Esquema de referencia del taller (algebra): `RESERVA`, `PASAJERO`, `VUELO`, `AVION`, `AEROLINEA`, `AEROPUERTO`.
@@ -32,44 +32,77 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 
 Referencia rápida tomada de las diapositivas de clase (Unidad 3 — álgebra relacional). Vive junto a los 4 ejercicios porque varios operadores aparecen disfrazados en los enunciados.
 
-| Operador | Símbolo | Qué hace | SQL mental |
-|---|---|---|---|
-| Selección | `σ` | Filtra **filas** que cumplen una condición | `WHERE` |
-| Proyección | `π` | Elige **columnas** y elimina duplicadas | `SELECT` / `DISTINCT` |
-| Producto cruz | `X` | Todas las combinaciones de filas (m × n = m·n filas) | `FROM a, b` sin `ON` |
-| Join natural | `⨝` | `X` + σ por atributos **mismo nombre y valor** + π que borra la columna repetida | `JOIN ... ON` (claves con igual nombre) |
-| Equi join | `⨝(a=b)` | Join con condición de **igualdad**; las columnas de la condición NO se eliminan | `JOIN ON` |
-| Theta join | `⨝(F)` | Join con condición que no es igualdad (`≠`, `>`, `<`) | `JOIN ON` (comparación no-igualdad) |
-| Left outer join | `⟕` | Trae TODAS las filas de la izquierda; las que no casan se rellenan con `null` | `LEFT JOIN` |
-| Right outer join | `⟖` | Trae TODAS las filas de la derecha; `null` en el lado vacío | `RIGHT JOIN` |
-| Semijoin | `⋉` | Filas de R que participan en el join con S — **solo atributos de R** | `WHERE ... IN / EXISTS` |
-| Unión / Diferencia / Intersección | `∪ − ∩` | Operaciones entre conjuntos completos | `UNION / NOT IN / INTERSECT` |
-| Agregación | `γ` | Agrupa y calcula (COUNT, SUM, AVG) | `GROUP BY (+ HAVING)` |
-| Renombre | `ρ` | Alias de una tabla o expresión (misma tabla dos veces) | `AS` |
-| Orden | `τ` | Ordena las filas asc / desc | `ORDER BY` |
+> [!note] 📚 Catálogo de operadores del álgebra
+> | Operador | Símbolo | Qué hace | SQL mental |
+> |---|---|---|---|
+> | Selección | `σ` | Filtra **filas** que cumplen una condición | `WHERE` |
+> | Proyección | `π` | Elige **columnas** y elimina duplicadas | `SELECT` / `DISTINCT` |
+> | Producto cruz | `X` | Todas las combinaciones de filas (m × n = m·n filas) | `FROM a, b` sin `ON` |
+> | Join natural | `⨝` | `X` + σ por atributos **mismo nombre y valor** + π que borra la columna repetida | `JOIN ... ON` (claves con igual nombre) |
+> | Equi join | `⨝(a=b)` | Join con condición de **igualdad**; las columnas de la condición NO se eliminan | `JOIN ON` |
+> | Theta join | `⨝(F)` | Join con condición que no es igualdad (`≠`, `>`, `<`) | `JOIN ON` (comparación no-igualdad) |
+> | Left outer join | `⟕` | Trae TODAS las filas de la izquierda; las que no casan se rellenan con `null` | `LEFT JOIN` |
+> | Right outer join | `⟖` | Trae TODAS las filas de la derecha; `null` en el lado vacío | `RIGHT JOIN` |
+> | Semijoin | `⋉` | Filas de R que participan en el join con S — **solo atributos de R** | `WHERE ... IN / EXISTS` |
+> | Unión / Diferencia / Intersección | `∪ − ∩` | Operaciones entre conjuntos completos | `UNION / NOT IN / INTERSECT` |
+> | Agregación | `γ` | Agrupa y calcula (COUNT, SUM, AVG) | `GROUP BY (+ HAVING)` |
+> | Renombre | `ρ` | Alias de una tabla o expresión (misma tabla dos veces) | `AS` |
+> | Orden | `τ` | Ordena las filas asc / desc | `ORDER BY` |
 
-**Ejemplo guía de la casa (PRODUCTO × VENTA, de las diapositivas):**
+> [!example] 🧪 Ejemplo guía de la casa (PRODUCTO × VENTA, de las diapositivas)
+> | CODIGO | DESCRIPCION | PRECIO |
+> |---|---|---|
+> | 101 | Pasta | 3.50 |
+> | 104 | Gel | 4.00 |
+> | 105 | Shampoo | 10.00 |
+>
+> | ID_VENTA | FECHA | ID_PRODUCT | CANTIDAD |
+> |---|---|---|---|
+> | 1 | 02/02/2020 | 104 | 54 |
+> | 2 | 04/02/2020 | 101 | 2 |
+> | 4 | 04/04/2020 | 110 | -2 |
+>
+> | Consulta | Resultado |
+> |---|---|
+> | `PRODUCTO X VENTA` | 9 filas (3 × 3): toda combinación; casi nunca lo quieres, es el punto de partida de los joins |
+> | `PRODUCTO ⨝ CODIGO=ID_PRODUCT VENTA` | 2 filas: 101↔venta 2, 104↔venta 1 |
+> | `PRODUCTO ⟕ VENTA` | las 2 anteriores **+** fila del Shampoo 105 con `null` en todo lo de VENTA |
+> | `PRODUCTO ⟖ VENTA` | las 2 anteriores **+** fila de la venta 4 (ID_PRODUCT=110) con `null` en todo lo de PRODUCTO |
+> | `VENTA ⋉ PRODUCTO` | ventas 1 y 2, solo columnas de VENTA (sus productos sí existen) |
+> | `τ precio desc (PRODUCTO)` | 105, 101, 104 — del más caro al más barato |
 
-| CODIGO | DESCRIPCION | PRECIO |
-|---|---|---|
-| 101 | Pasta | 3.50 |
-| 104 | Gel | 4.00 |
-| 105 | Shampoo | 10.00 |
+> [!info] 📖 El deck de cátedra: cada operador con su figura (slides05, pp. 4-27)
+> El deck del Ing. Magallanes recorre el álgebra relacional operador por operador, con ejemplos numéricos. Estas son las figuras que corresponden al catálogo de arriba.
 
-| ID_VENTA | FECHA | ID_PRODUCT | CANTIDAD |
-|---|---|---|---|
-| 1 | 02/02/2020 | 104 | 54 |
-| 2 | 04/02/2020 | 101 | 2 |
-| 4 | 04/04/2020 | 110 | -2 |
+![[Archivos/bd-s05-p5.png]]
 
-| Consulta | Resultado |
-|---|---|
-| `PRODUCTO X VENTA` | 9 filas (3 × 3): toda combinación; casi nunca lo quieres, es el punto de partida de los joins |
-| `PRODUCTO ⨝ CODIGO=ID_PRODUCT VENTA` | 2 filas: 101↔venta 2, 104↔venta 1 |
-| `PRODUCTO ⟕ VENTA` | las 2 anteriores **+** fila del Shampoo 105 con `null` en todo lo de VENTA |
-| `PRODUCTO ⟖ VENTA` | las 2 anteriores **+** fila de la venta 4 (ID_PRODUCT=110) con `null` en todo lo de PRODUCTO |
-| `VENTA ⋉ PRODUCTO` | ventas 1 y 2, solo columnas de VENTA (sus productos sí existen) |
-| `τ precio desc (PRODUCTO)` | 105, 101, 104 — del más caro al más barato |
+> **Selección (p. 5):** la condición puede ser uno o varios términos unidos con operadores lógicos (`and`, `∧`, `or`, `∨`). El ejemplo del deck: `σ type='laptop' ∧ model≥2005 (Product)`.
+
+![[Archivos/bd-s05-p7.png]]
+
+> **Proyección y composición (p. 7):** `π maker, type (σ type='laptop' ∧ model≥2005 (Product))` — el deck dibuja el **diagrama de ejecución** con los pasos numerados (3 → 2 → 1) y el resultado. Es la mejor explicación de por qué se proyecta *después* de filtrar.
+
+![[Archivos/bd-s05-p9.png]]
+
+> **Producto cartesiano (p. 9):** el ejemplo `Department ⨯ Course` del deck muestra por qué el producto casi nunca es lo que quieres — de ahí la necesidad del join.
+
+![[Archivos/bd-s05-p15.png]]
+
+![[Archivos/bd-s05-p16.png]]
+
+![[Archivos/bd-s05-p18.png]]
+
+> **Joins (pp. 15-18):** el deck presenta el **natural join** (`department ⨝ course`), el **left outer join** (`R ⟕ S`) y el **theta join** (`R ⨝c S`), con el resultado tabulado en cada caso.
+
+![[Archivos/bd-s05-p20.png]]
+
+> **División (p. 20):** *"es útil para consultas que incluye la expresión 'para todo' o 'para cada'"* — es el operador del ejercicio de la casa que pide los items ordenados por todos los clientes.
+
+![[Archivos/bd-s05-p24.png]]
+
+![[Archivos/bd-s05-p26.png]]
+
+> **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el **agrupamiento** aplica la función por grupos de datos.
 
 ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/3.1 Operaciones Básicas_2025.pdf]]
 

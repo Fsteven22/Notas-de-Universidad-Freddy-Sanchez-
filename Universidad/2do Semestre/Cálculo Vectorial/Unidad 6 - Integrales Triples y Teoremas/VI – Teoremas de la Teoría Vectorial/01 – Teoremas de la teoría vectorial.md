@@ -21,6 +21,9 @@ dg-publish: true
 > |**Interpretación**|Conectar propiedades locales con globales|Circulación vs rotacional|
 > |**Verificación**|Comprobar campos conservativos|Trabajo independiente del camino|
 
+
+![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial.svg]]
+
 ![[Diagramas/01_–_Teoremas_de_la_teoría_vectorial_01.svg]]
 
 ---

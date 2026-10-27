@@ -30,6 +30,9 @@ dg-publish: true
 > 
 > En el extremo, el gradiente de f es **paralelo** al gradiente de g: $$\nabla f = \lambda \nabla g$$
 
+
+![[Diagramas/09_-_Multiplicadores_de_Lagrange_01.svg]]
+
 ![[Diagramas/01_-_Multiplicaciones_de_Lagrange_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Multiplicadores de Lagrange?

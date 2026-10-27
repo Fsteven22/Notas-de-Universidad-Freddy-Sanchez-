@@ -225,11 +225,11 @@ dg-publish: true
 > 
 > - > [[Cinemática Rotacional]] - Torque y momento de inercia
 >     
-> - > [[Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia]] - Cálculo para diferentes formas
+> - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Cálculo para diferentes formas
 >     
 > - > [[Segunda ley de Newton para Rotación]] - Fundamento teórico
 >     
-> - > [[Conservación del Momentum Lineal]] - Analogía lineal
+> - > Conservación del Momentum Lineal - Analogía lineal
 >     
 > - > [[Energía Cinética Rotacional]] - Relación energética
 >     
@@ -237,9 +237,9 @@ dg-publish: true
 >     
 > - > [[Impulso Angular]] - Cambio de momento angular
 >     
-> - > [[Dinámica de Sistemas]] - Sistemas multipartícula
+> - > Dinámica de Sistemas - Sistemas multipartícula
 >     
-> - > [[Mecánica Celeste]] - Aplicaciones astronómicas
+> - > Mecánica Celeste - Aplicaciones astronómicas
 >     
 >
 

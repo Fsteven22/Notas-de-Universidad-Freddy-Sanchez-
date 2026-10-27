@@ -422,7 +422,7 @@ dg-publish: true
 > [!note] **Temas Siguientes**
 > 
 > - [[Cifras Significativas]] - Expresión correcta de resultados
-> - [[Calibración de Instrumentos]] - Verificación de precisión
+> - Calibración de Instrumentos - Verificación de precisión
 > - [[Técnicas Experimentales]] - Métodos avanzados
 
 ---

@@ -313,7 +313,7 @@ dg-publish: true
 > 
 > - A es la matriz de coeficientes (m×n)
 > - B es el vector de términos independientes
-> - [A|B] es la matriz ampliada
+> - \[A|B\] es la matriz ampliada
 > 
 > El sistema es:
 > 

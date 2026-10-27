@@ -67,7 +67,7 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 >         return 0;
 >     }
 > }
->
+> // ---
 > // ✅ CON PRINCIPIO: lo que varía (canal) vive en su clase
 > interface Canal { void enviar(String msg); }
 > class Notificador {

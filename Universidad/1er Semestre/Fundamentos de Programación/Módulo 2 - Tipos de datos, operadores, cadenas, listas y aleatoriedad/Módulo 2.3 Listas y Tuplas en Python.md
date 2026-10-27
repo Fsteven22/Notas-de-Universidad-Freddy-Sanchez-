@@ -255,9 +255,9 @@ dg-publish: true
 > - [[Módulo 2.1 Variables y Tipos de Datos]] - Fundamentos de tipos de datos
 > - [[Módulo 4.3 Bucle While]] y [[Módulo 4.2 Iteradores for]] - Iteración sobre listas y tuplas
 > - [[Módulo 5.1 Diccionarios]] - Estructura de datos clave-valor
-> - [[Comprensiones de Lista Python]] - Creación avanzada de listas
+> - Comprensiones de Lista Python - Creación avanzada de listas
 > - [[Módulo 3.1 Funciones]] - Pasar listas y tuplas como parámetros
-> - [[Algoritmos de Ordenamiento]] - Uso de sort() y sorted()
+> - Algoritmos de Ordenamiento - Uso de sort() y sorted()
 
 ## 🎯 Notas Recomendadas para Complementar
 
@@ -265,19 +265,19 @@ dg-publish: true
 > 
 > ### 🔧 **Prerrequisitos**
 > 
-> - [[Variables Básicas Python]]
+> - Variables Básicas Python
 > - [[Operadores Python]]
-> - [[Strings y Indexación Python]]
+> - Strings y Indexación Python
 > - [[Módulo 4.1 Condicional]]
 > 
 > ### 🔄 **Temas Relacionados**
 > 
-> - [[Sets en Python]] - Colecciones sin duplicados
-> - [[Diccionarios Python]] - Mapeo clave-valor
-> - [[Comprensiones Python]] - Sintaxis avanzada
+> - Sets en Python - Colecciones sin duplicados
+> - Diccionarios Python - Mapeo clave-valor
+> - Comprensiones Python - Sintaxis avanzada
 > - [[Iteradores y Generadores]] - Procesamiento eficiente
 > - [[Algoritmos de Búsqueda]] - Encontrar elementos
-> - [[Programación Funcional Python]] - map(), filter(), reduce()
+> - Programación Funcional Python - map(), filter(), reduce()
 
 ## 🧠 Técnica de Estudio: L.I.S.T.A.S vs T.U.P.L.A.S
 

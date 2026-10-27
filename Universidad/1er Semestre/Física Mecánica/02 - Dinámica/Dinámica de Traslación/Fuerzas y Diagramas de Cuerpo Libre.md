@@ -241,7 +241,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[Vectores]] - Para descomposición y suma de fuerzas
-> - [[Trigonometría]] - Para componentes de fuerzas inclinadas
+> - Trigonometría - Para componentes de fuerzas inclinadas
 > - [[Álgebra]] - Para resolver sistemas de ecuaciones
 > - [[Cinemática Traslacional]] - Conceptos de aceleración
 > 

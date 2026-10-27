@@ -20,6 +20,10 @@ dg-publish: true
 > |**Sistema de coordenadas**|Simplifica expresiones|Cálculos innecesariamente complejos|
 > |**Descomposición**|Divide problemas complejos|Problema intratable|
 
+
+![[Diagramas/10_-_Integral_doble_region_rectangular_01.svg]]
+![[Diagramas/11_-_Integral_doble_region_general_01.svg]]
+
 ![[Diagramas/04_–_Regiones_en_integrales_dobles_01.svg]]
 
 ---

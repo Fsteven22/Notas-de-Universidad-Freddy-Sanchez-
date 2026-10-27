@@ -189,8 +189,8 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 >
 > - Sílabo IDIG2012, Unidad 2: pensamiento crítico y perfil prosumidor (4h).
 > - Planificación PAO 2-2026 S3: Evaluación 2 TAP + Participación 2 realidades emergentes.
-> - [1] E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
-> - [2] UNESCO, *IA y educación. Guía para políticas*, 2021.
+> - **[1]** E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
+> - **[2]** UNESCO, *IA y educación. Guía para políticas*, 2021.
 
 ---
 

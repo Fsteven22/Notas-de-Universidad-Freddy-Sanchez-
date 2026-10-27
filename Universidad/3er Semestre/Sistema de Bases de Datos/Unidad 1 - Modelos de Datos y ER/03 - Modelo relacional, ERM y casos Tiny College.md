@@ -60,6 +60,13 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Ejemplo:** el rombo *toma* (conceptual) → tabla MATRÍCULA con (PK,FK) (lógico) → índice sobre `carnet` (físico). Cada nivel decide cosas distintas.
 
+> [!info] 📖 El deck de cátedra: del conceptual al lógico (slides3, p. 3)
+> El deck del Ing. Magallanes abre la unidad del modelo lógico con el diagrama que resume todo el proceso: una **ciudad** y un **estudiante** en el modelo conceptual, con sus cardinalidades (1,1) y (0,n), y la misma información ya como tablas en el modelo lógico.
+
+![[Archivos/bd-s03-p3.png]]
+
+> **El diseño lógico (p. 4):** *"es el proceso de construir un modelo lógico a partir de un modelo conceptual"*, y tanto el conceptual como el lógico son **procesos iterativos**, no lineales.
+
 ### 3️⃣ Regla de traducción ER→tablas — el puente
 
 > [!note] 📋 Definición — Traducción
@@ -69,6 +76,38 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-04-graph.svg]]
 >
 > **Ejemplo:** ESTUDIANTE(entidad) → tabla; `carnet`(clave) → PK; *toma*(N:M) → MATRÍCULA con 2 FK. El detalle completo vive en la Unidad 2.
+
+> [!info] 📖 El deck de cátedra: las tres formas de derivar relaciones (slides3, pp. 16-21)
+> El deck cierra el módulo con la derivación del modelo lógico según la cardinalidad, y usa los mismos ejemplos que Tiny College.
+
+![[Archivos/bd-s03-p16.png]]
+
+![[Archivos/bd-s03-p17.png]]
+
+![[Archivos/bd-s03-p20.png]]
+
+![[Archivos/bd-s03-p21.png]]
+
+> **Entidad fuerte y débil (p. 16):** `COURSE(CRS_CODE, …)` y `CLASS(CLASS_CODE, CRS_CODE, …)` con la `CRS_CODE` como foreign key.
+>
+> **1:N (p. 17):** la entidad **padre** es la del lado de uno y la **hija** la del lado de muchos; para representarla se copia el atributo clave del lado uno al lado muchos.
+>
+> **N:N (p. 20):** *"se crea una nueva Tabla para representar la relación (ER) y se incluyen todos los atributos de la relación"*.
+>
+> **Recursiva (p. 21):** *"se incluye una copia de la clave primaria pero se renombra"* — `EMPLOYEE(EMP_NUM, …, MANAGER_EMP)` con `MANAGER_EMP` como FK a la misma tabla.
+
+> [!info] 📖 El deck de cátedra: elementos del modelo relacional (slides3, pp. 6-10)
+> *"Creado por Edgar F. Codd a principios de los 70, laboratorios de IBM. Modelo lógico de datos no de muy alto nivel, orientado a registro. Sólida base teórica…"* (p. 6).
+
+![[Archivos/bd-s03-p7.png]]
+
+![[Archivos/bd-s03-p8.png]]
+
+![[Archivos/bd-s03-p10.png]]
+
+> **Claves (p. 8):** *"una clave candidata es el atributo o conjunto de atributos que identifica de manera única a cada tupla de la relación"*; la **clave primaria** es la candidata elegida; la **clave foránea** referencia la primaria de otra relación.
+>
+> **Representación del esquema (p. 10):** el deck escribe el esquema completo con la sintaxis `CLIENTE(codcli, nombre, …)` — el formato exacto que se usa en los ejercicios de conversión de la Unidad 2.
 
 ### 4️⃣ Entidad débil — doble condición
 
@@ -153,7 +192,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u1-03-08-graph.svg]]
 >
-> **Cómo leerlo:** rectángulo = entidad (`[[ ]]` = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
+> **Cómo leerlo:** rectángulo = entidad (doble rectángulo = débil) · rombo `{ }` = relación · óvalo `([ ])` = atributo · punteada `-.-` = derivado · subrayado = PK. Compáralo con la tabla de arriba: es el mismo Chen, dibujable en cualquier nota.
 
 ---
 

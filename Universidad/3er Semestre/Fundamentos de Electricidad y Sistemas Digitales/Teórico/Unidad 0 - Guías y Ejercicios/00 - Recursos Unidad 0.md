@@ -7,42 +7,41 @@ tags: [EYAG1037, unidad0, recursos]
 
 > [!info] ℹ️ Documentos publicados
 > PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
-
-## 📎 Sílabo y contenido
-
-![[SÍLABO-1.pdf]]
-
-![[CONTENIDO.pdf]]
+> Cada tipo de material va en su carpeta: `Diapositivas/` (sesiones) y `Guías/` (contenido y laboratorios).
 
 ## 📡 Sesiones
 
-![[FESD SESIÓN 1 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 1 2026.pdf]]
 
-![[FESD SESIÓN 2 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 2 2026.pdf]]
 
-![[FESD SESIÓN 3 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 3 2026.pdf]]
 
-![[FESD SESIÓN 5 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 5 2026.pdf]]
 
-![[FESD SESIÓN 6 y 7 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 6 y 7 2026.pdf]]
 
-![[FESD SESIÓN 9 y 10.pdf]]
+![[Diapositivas/FESD SESIÓN 9 y 10.pdf]]
 
-![[FESD SESIÓN 11.pdf]]
+![[Diapositivas/FESD SESIÓN 11.pdf]]
 
-![[FESD SESIÓN 12 2026.pdf]]
+![[Diapositivas/FESD SESIÓN 12 2026.pdf]]
 
-![[FESD SESIÓN 13.pdf]]
+![[Diapositivas/FESD SESIÓN 13.pdf]]
 
-![[FESD SESIÓN 14.pdf]]
+![[Diapositivas/FESD SESIÓN 14.pdf]]
 
-## 🔌 Apoyo
+![[Diapositivas/SÍLABO-1.pdf]]
 
-![[FESD_DIODOS.pdf]]
+![[Diapositivas/FESD_DIODOS.pdf]]
 
-![[EjREsAmpOp.pdf]]
+## 🔬 Contenido y laboratorios
 
-![[Demostración 555 biestable.pdf]]
+![[Guías/CONTENIDO.pdf]]
+
+![[Guías/EjREsAmpOp.pdf]]
+
+![[Guías/Demostración 555 biestable.pdf]]
 
 ---
 

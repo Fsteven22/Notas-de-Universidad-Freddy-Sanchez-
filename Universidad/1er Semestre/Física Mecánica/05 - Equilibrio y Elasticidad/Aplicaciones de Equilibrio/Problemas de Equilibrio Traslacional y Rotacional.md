@@ -385,7 +385,7 @@ dg-publish: true
 > - [[Centro de Gravedad (CG)]] - Localización del centro de gravedad
 > - [[Torque y Equilibrio Rotacional]] - Análisis detallado de torques
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Técnicas de DCL
-> - [[Aplicaciones de Equilibrio]] - Ejercicios adicionales
+> - Aplicaciones de Equilibrio - Ejercicios adicionales
 > - [[Elasticidad]] - Deformaciones en equilibrio
 
 ## 🔧 Formulario de Consulta Rápida

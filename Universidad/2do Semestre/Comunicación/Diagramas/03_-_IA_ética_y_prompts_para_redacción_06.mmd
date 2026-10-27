@@ -1,0 +1,8 @@
+flowchart TD
+    Q{Cuestionar<br/>¿es cierto?} -->|Sí| M[Comparar<br/>¿otra fuente?]
+    Q -->|No| X[Descartar y verificar]
+    M -->|Sí| CO[Contrastar<br/>¿choca con mis datos?]
+    M -->|No| X
+    CO -->|Sí| ME[Mejorar<br/>reescribe con tu criterio]
+    CO -->|No| ME
+    ME --> R[Entrega con tu voz<br/>y uso declarado]

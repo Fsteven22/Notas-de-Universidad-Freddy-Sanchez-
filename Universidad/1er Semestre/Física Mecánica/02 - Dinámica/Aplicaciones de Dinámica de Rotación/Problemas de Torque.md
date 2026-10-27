@@ -565,7 +565,7 @@ dg-publish: true
 > 
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
 > - [[Leyes de Newton]] - Fundamentos dinámicos
-> - [[Trigonometría]] - Cálculo de componentes
+> - Trigonometría - Cálculo de componentes
 > - [[Vectores]] - Operaciones vectoriales
 
 ---

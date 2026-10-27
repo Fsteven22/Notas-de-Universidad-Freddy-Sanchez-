@@ -69,9 +69,102 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 ---
 
+## 📚 El deck de cátedra (04a) en detalle
+
+> [!info] 📖 De dónde sale esta sección
+> `04aLenguajeUnificadoModelado.pdf` (50 p., MSc. Jurado / Dr. Mera, 2024) es el deck oficial de la Unidad 2. Aquí va lo que el deck explica y que tu nota de clase solo rozaba.
+
+### 🔎 Por qué existe UML (p. 4)
+
+> En los años ochenta y noventa se propusieron **varias notaciones distintas** para describir diseños orientados a objetos. El lenguaje de modelado unificado es la **integración de esas notaciones**: describe notaciones para varios modelos que pueden producirse durante el análisis y el diseño OO, y hoy es un **estándar de facto** para el modelado OO.
+
+### 🎓 Visibilidad con las palabras exactas del deck (p. 12)
+
+> | Símbolo | Significado en el deck | Quién lo alcanza |
+> |---|---|---|
+> | `+` | público: cualquier cliente de la clase puede acceder a los miembros públicos | cualquiera |
+> | `#` | protegido: los miembros de la clase **o cualquier subclase** pueden acceder a los protegidos | la clase y su jerarquía |
+> | `-` | privado: solo los miembros de la **misma clase** | la propia clase |
+
+> [!tip] Detalle que se evalúa
+> `#` no es "privado con permiso": es visible **para toda la jerarquía**. Y `-` no protege contra otras clases: protege contra todo lo que no sea la propia clase.
+
+### 🧬 Clases de análisis (p. 13)
+
+> [!note] 📖 Definición del deck
+> Una **clase de análisis** abstrae una o más clases y/o subsistemas en el diseño del sistema.
+
+Sus cuatro rasgos según el deck:
+
+- Se enfoca en el **manejo de requisitos funcionales** (no en la persistencia).
+- Define **responsabilidades**: subconjuntos coherentes de comportamiento definidos por la clase.
+- Define **atributos**.
+- Expresa las **relaciones** en las que participa la clase.
+
+> [!warning] ⚠️ La confusión clásica
+> Una clase de análisis describe *qué* responsabilidades tiene el sistema antes de decidir *cómo* se implementa. Si la mezclas con las tablas de la base, tu diagrama deja de ser diseño y pasa a ser un modelo de datos — es el error 1 de esta nota.
+
+### 🧠 Identificar clases: las dos heurísticas (pp. 14, 16-17)
+
+**Deck — Data-Driven Design** (heurísticas de Shlaer y Mellor; Booch, p. 14): una clase es una cosa **tangible** o del mundo real (libro, copia, curso), un **rol** (miembro de la biblioteca, estudiante, director de estudios), un **evento** (llegada, salida, solicitud) o una **interacción** (reunión, intersección).
+
+**Tu clase — análisis sustantivo/verbo** (p. 16): subrayas los **sustantivos** → candidatos a clase; los **verbos** → operaciones o relaciones. El **first-cut** (p. 17) es ese primer borrador con nombres de clases y sus relaciones, que después se refina.
+
+> [!example] 🧠 Cómo se combinan (caso SIEL)
+>
+> | Fuente | Qué aporta | Qué hacer con los eventos |
+> |---|---|---|
+> | **Deck (p. 14)** | 4 familias: tangible, rol, evento, interacción | Un evento **sí puede ser clase** si tiene identidad y estado propio (`Solicitud`, `Acta`) |
+> | **Clase (Stevens)** | Filtro de descarte: redundante, vago, evento, atributo, metalenguaje, fuera de alcance | Un evento **sin estado propio** es operación, no clase (`DiaDeLaEleccion`) |
+
+> [!tip] Lectura del diagrama del deck
+> ![[Archivos/04a-p14-heuristicas.png]]
+>
+> ![[Archivos/04a-p16-sustantivo-verbo.png]]
+
+### 🔗 Multiplicidad de una asociación (p. 19)
+
+![[Archivos/04a-p19-multiplicidad.png]]
+
+> [!note] Regla de la cátedra
+> La multiplicidad se escribe **en el extremo de la clase que cuenta**, no en el de la que es contada: `Estudiante 1 ── * Curso` significa "un estudiante tiene muchos cursos".
+
+### 🧷 Clases de asociación (p. 22)
+
+> [!warning] Regla del docente, textual
+> "Se usa para adjuntar atributos a una asociación en lugar de las clases que asocia" y "**la línea de asociación de clase debe tener el mismo nombre**".
+
+En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatura` lleva atributos (fecha, estado de la candidatura) → nace `Inscripcion` **colgando de la línea**, con el mismo nombre de relación.
+
+![[Archivos/04a-p22-clase-asociacion.png]]
+
+### 🧬 Generalización y herencia (p. 23)
+
+![[Archivos/04a-p23-generalizacion.png]]
+
+### 🏫 El ejemplo del deck: AcademicChoice (pp. 6-7, 25)
+
+El sistema de registro académico que usa el docente: el estudiante gestiona inscripción de materias, paralelos y horarios; cada paralelo tiene estados (**abierto / en lista de espera / cerrado por falta de cupos**); el sistema valida prerrequisitos y conflictos de horario; los administradores fijan políticas (fechas límite, periodos especiales por grupo).
+
+![[Archivos/04a-p25-diagrama-clases.png]]
+
+> [!example] 🔍 Para comparar con tu SIEL
+> Mismo esqueleto: actor externo + **estado** de la entidad + **políticas** de un administrador. Si tu diagrama del SIEL no tiene quién administra las políticas (reparto de actas, anulación de-results), le falta el actor `Administrador`.
+
+### 🖼️ Figuras del deck (capítulos 11-25)
+
+> [!example]- 🖼️ Elementos de clase, visibilidad y notación de relaciones
+> ![[Archivos/04a-p11-clase-uml.png]]
+>
+> ![[Archivos/04a-p12-visibilidad.png]]
+>
+> ![[Archivos/04a-p18-notacion-relaciones.png]]
+
+---
+
 ## 🏛️ Ejemplo de la Clase: el modelo de clases del SIEL
 
-> [!note] 📋 Caso trabajado en la clase de modelo de clases (transcripción completa con capturas: [[Unidad 0 - Guias y Ejercicios/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]])
+> [!note] 📋 Caso trabajado en la clase de modelo de clases (transcripción completa con capturas: [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]])
 >
 > **1 · Identificar clases por sustantivos** (Stevens ch. 5): subraya los sustantivos → descarta los malos → quedan las clases.
 >
@@ -312,6 +405,7 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | Tema | Qué verás | Por qué importa |
 > |---|---|---|
 > | **UML comportamiento** | Casos de uso, secuencia, actividad | Muestran la película, no solo la foto |
+> | **Del diagrama al código** | Traducir cada relación a Java | El modelo se vuelve software que corre |
 
 ---
 
@@ -350,6 +444,9 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > - P. Stevens, R. Pooley, *Using UML*, 2nd ed., caps. 5-6 (clases y objetos).
 > - G. Booch, J. Rumbaugh, I. Jacobson — UML 2.0 (unificación de métodos, años 90).
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
+> - Deck de cátedra: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] (50 p.) — elementos de una clase, visibilidad `+`/`#`/`-`, clases de análisis, notación de relaciones, multiplicidad, clases de asociación y generalización; y [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04b Proceso de implementación desde un diseño]] (30 p.) — asociación, bidireccionalidad, generalización, realización, dependencia, agregación y composición en código.
+> - Capturas de la clase: [[SIEL - Modelo de Clases]] (caso SIEL: tarjetas CRC, atributos y operaciones, relaciones) y [[SIEL - Casos de Uso]].
+> - Traducción de estas relaciones a código: [[05 - Del diagrama de clases al código]].
 
 ---
 

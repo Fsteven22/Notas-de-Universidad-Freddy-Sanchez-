@@ -345,15 +345,15 @@ dg-publish: true
 > 
 > ### Prerequisitos
 > - [[Derivadas Básicas]] - Base fundamental
-> - [[Regla del Producto]] - Para la regla de Leibniz
-> - [[Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena]] - Para composiciones complejas
+> - Regla del Producto - Para la regla de Leibniz
+> - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Para composiciones complejas
 > - [[Factoriales y Combinaciones]] - Para fórmulas con combinatorios
 > 
 > ### Temas Relacionados
 > - [[03 - Derivadas Paramétricas]] 🔄 - Segunda derivada paramétrica
-> - [[Series de Taylor]] - Usan todas las derivadas de orden superior
+> - Series de Taylor - Usan todas las derivadas de orden superior
 > - [[Análisis de Funciones]] - Concavidad y puntos de inflexión
-> - [[Optimización]] - Criterios de segunda derivada
+> - Optimización - Criterios de segunda derivada
 > 
 > ### Aplicaciones Avanzadas
 > - **Ecuaciones Diferenciales** - Órdenes superiores frecuentes

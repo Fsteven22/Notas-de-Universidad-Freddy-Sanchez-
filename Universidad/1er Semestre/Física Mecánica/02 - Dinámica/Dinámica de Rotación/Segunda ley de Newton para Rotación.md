@@ -226,7 +226,7 @@ dg-publish: true
 > 
 > ### 🔗 Notas Relacionadas
 > 
-> - [[Momento de Torsión (Torque)]]
+> - Momento de Torsión (Torque)
 > - [[Momento de Inercia]]
 > - [[Cinemática Rotacional]]
 > - [[Dinámica Lineal - Segunda Ley de Newton]]
@@ -238,8 +238,8 @@ dg-publish: true
 > 
 > - [[Movimiento de Rodadura]]
 > - [[Sistemas de Múltiples Cuerpos]]
-> - [[Conservación del Momento Angular]]
-> - [[Análisis de Máquinas Rotativas]]
+> - Conservación del Momento Angular
+> - Análisis de Máquinas Rotativas
  
  ### Tags
 

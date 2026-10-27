@@ -1,11 +1,9 @@
 ---
-
 dg-publish: true
 dg-home: true
-
-
-
+tags: [indice, portada]
 ---
+
 # 🎓 FS — Notas ESPOL
 
 > [!quote] 💡 *"Lo que no se escribe, se olvida. Lo que se comparte, se multiplica."*

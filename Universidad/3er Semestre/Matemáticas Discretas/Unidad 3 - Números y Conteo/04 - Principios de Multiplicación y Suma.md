@@ -1,6 +1,8 @@
 ---
 dg-publish: true
+tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 ---
+
 # ✖️ Principios de Multiplicación y Suma
 
 ## 🎯 Introducción
@@ -150,12 +152,13 @@ En la práctica, la mayoría de los problemas requieren **ambos principios** jun
 
 ![[../Diagramas/dis-u3-05-02-graph.svg]]
 
-||Multiplicación|Suma|
-|---|---|---|
-|**Palabra clave**|"y"|"o"|
-|**Estructura**|Pasos sucesivos|Casos excluyentes|
-|**Operación**|$n_1 \cdot n_2 \cdots n_t$|$n_1 + n_2 + \cdots + n_t$|
-|**Condición**|Pasos independientes|Conjuntos disjuntos|
+> [!note] 📊 Multiplicación vs. Suma
+> | | Multiplicación | Suma |
+> |---|---|---|
+> | **Palabra clave** | "y" | "o" |
+> | **Estructura** | Pasos sucesivos | Casos excluyentes |
+> | **Operación** | $n_1 \cdot n_2 \cdots n_t$ | $n_1 + n_2 + \cdots + n_t$ |
+> | **Condición** | Pasos independientes | Conjuntos disjuntos |
 
 ---
 

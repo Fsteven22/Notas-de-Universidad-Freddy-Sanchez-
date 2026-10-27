@@ -444,7 +444,7 @@ dg-publish: true
 > [!note] **Prerrequisitos**
 > 
 > - [[Vectores]] - Para análisis bidimensional
-> - [[Límites]] - Para análisis matemático de casos extremos
+> - Límites - Para análisis matemático de casos extremos
 > - [[Leyes de Newton]] - Fundamentos dinámicos
 > - [[Principios de Conservación de la Energía]] - Base energética
 

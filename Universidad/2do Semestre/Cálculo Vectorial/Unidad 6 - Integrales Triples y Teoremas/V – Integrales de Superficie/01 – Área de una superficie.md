@@ -21,6 +21,9 @@ dg-publish: true
 > |**Geometría**|Medición de superficies curvas|Área de esferas, paraboloides|
 > |**Optimización**|Minimizar o maximizar áreas|Diseño de contenedores|
 
+
+![[Diagramas/01_–_Área_de_una_superficie.svg]]
+
 ![[Diagramas/01_–_Área_de_una_superficie_01.svg]]
 
 ---

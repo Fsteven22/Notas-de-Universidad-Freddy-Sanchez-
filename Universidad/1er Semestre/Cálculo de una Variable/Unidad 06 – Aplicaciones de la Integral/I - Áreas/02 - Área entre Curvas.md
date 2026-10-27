@@ -283,7 +283,7 @@ dg-publish: true
 - [[04 - Teorema Fundamental del Cálculo]] - Herramienta principal de evaluación
 - [[Métodos de Integración]] - Técnicas para resolver las integrales
 - [[Aplicaciones de Integrales Definidas]] - Contexto más amplio
-- [[Funciones y sus Gráficas]] - Análisis de intersecciones y comportamiento
+- Funciones y sus Gráficas - Análisis de intersecciones y comportamiento
 
 ### 📖 Para Profundizar
 
@@ -297,14 +297,14 @@ dg-publish: true
 - [[Optimización y Puntos Críticos]] - Para encontrar máximos y mínimos relevantes
 - [[Ecuaciones de Curvas Especiales]] - Círculos, elipses, parábolas, hipérbolas
 - [[Aplicaciones Geométricas del Cálculo]] - Volúmenes, longitudes de arco
-- [[Modelado Matemático con Integrales]] - Aplicaciones en ciencias e ingeniería
+- Modelado Matemático con Integrales - Aplicaciones en ciencias e ingeniería
 
 ### 🧮 Aplicaciones Especializadas
 
 - [[Centros de Masa y Centroides]] - Usando áreas entre curvas
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
-- [[Análisis de Costos Marginales]] - Aplicaciones en economía
-- [[Biodisponibilidad y Farmacocinética]] - Aplicaciones en medicina
+- Análisis de Costos Marginales - Aplicaciones en economía
+- Biodisponibilidad y Farmacocinética - Aplicaciones en medicina
 
 ### 🏷️ Tags
 

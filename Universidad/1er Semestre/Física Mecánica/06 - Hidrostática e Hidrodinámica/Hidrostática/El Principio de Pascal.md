@@ -137,10 +137,10 @@ dg-publish: true
 
 > [!quote]+ Enlaces a Otras Notas
 > 
-> - [[Hidrostática - Fundamentos]]
+> - Hidrostática - Fundamentos
 > - [[Presión en Fluidos]]
 > - [[Ecuación Fundamental de la Hidrostática]]
-> - [[Densidad y Peso Específico]]
+> - Densidad y Peso Específico
 > - [[El Principio de Arquímedes y Flotación]]
 
 ## Notas Complementarias Recomendadas
@@ -149,16 +149,16 @@ dg-publish: true
 > 
 > - [[Conceptos de Presión]]
 > - [[Propiedades de los Fluidos]]
-> - [[Estática de Fluidos]]
+> - Estática de Fluidos
 > - [[Unidades de Presión]]
 >
 
 > [!success]+ Para Profundizar
 > 
 > - [[Hidrodinámica - Ecuación de Bernoulli]]
-> - [[Aplicaciones Industriales de Pascal]]
-> - [[Sistemas Oleohidráulicos]]
-> - [[Transmisión de Potencia Hidráulica]]
+> - Aplicaciones Industriales de Pascal
+> - Sistemas Oleohidráulicos
+> - Transmisión de Potencia Hidráulica
 
 ---
 

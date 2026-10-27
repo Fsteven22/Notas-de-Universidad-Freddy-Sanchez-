@@ -261,7 +261,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 >
 > - Sílabo IDIG2012, Unidad 1: comunicación grupal, dinámicas, toma de decisiones (4h).
 > - Planificación PAO 2-2026 S2: dinámicas de grupo + Taller 1 caso.
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
 
 ---
 

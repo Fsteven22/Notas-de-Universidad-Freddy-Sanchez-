@@ -88,7 +88,7 @@ tags: [IDIG2012, comunicacion]
 > [!quote] 📖 Fuentes oficiales
 >
 > **Básica:**
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
 >
 > **Complementaria (selección):**
 > [2] E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
@@ -121,7 +121,7 @@ tags: [IDIG2012, comunicacion]
 > │   └── 📄 02 - Pensamiento crítico y perfil prosumidor.md
 > │
 > ├── 📁 Unidad 3 - Redacción/
-> │   ├── 📄 01 - Texto expositivo, claridad y APA.md
+> │   ├── 📄 01 - Texto expositivo.md
 > │   ├── 📄 02 - Informes técnicos y ejecutivos, síntesis y paráfrasis.md
 > │   ├── 📄 03 - IA ética y prompts para redacción.md
 > │   ├── 📄 04 - Precisión y claridad en la redacción.md

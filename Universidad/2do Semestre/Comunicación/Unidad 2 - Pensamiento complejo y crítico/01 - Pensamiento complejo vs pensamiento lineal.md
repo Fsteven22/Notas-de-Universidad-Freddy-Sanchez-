@@ -193,9 +193,9 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 >
 > - Sílabo IDIG2012, Unidad 2: pensamiento complejo, definición y principios (4h).
 > - Planificación PAO 2-2026 S3: realidades emergentes + Evaluación 2 TAP.
-> - [1] E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
-> - [2] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
-> - [3] Área de Comunicación ESPOL, *Fundamentación teórica: Pensamiento complejo* (material de cátedra, PAO 2-2026): Jara, Melgar, McGuinness, Morin, De Bono, Campos, Domínguez, Tobón, Facione.
+> - **[1]** E. Morin, *Introducción al pensamiento complejo*, Gedisa, 2005.
+> - **[2]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[3]** Área de Comunicación ESPOL, *Fundamentación teórica: Pensamiento complejo* (material de cátedra, PAO 2-2026): Jara, Melgar, McGuinness, Morin, De Bono, Campos, Domínguez, Tobón, Facione.
 
 ---
 

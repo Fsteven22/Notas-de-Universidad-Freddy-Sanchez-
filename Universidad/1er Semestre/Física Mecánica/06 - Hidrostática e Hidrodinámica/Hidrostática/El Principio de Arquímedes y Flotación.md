@@ -174,9 +174,9 @@ dg-publish: true
 > 
 > - [[El Principio de Pascal]]
 > - [[Presión Hidrostática]]
-> - [[Densidad y Peso Específico]]
+> - Densidad y Peso Específico
 > - [[Equilibrio de Fluidos]]
-> - [[Hidrostática - Ecuación Fundamental]]
+> - Hidrostática - Ecuación Fundamental
 
 ## Notas Complementarias Recomendadas
 
@@ -190,10 +190,10 @@ dg-publish: true
 
 > [!success]+ Para Profundizar
 > 
-> - [[Estabilidad Naval]]
+> - Estabilidad Naval
 > - [[Metacentro y Estabilidad]]
-> - [[Hidrodinámica Avanzada]]
-> - [[Flotación de Cuerpos Irregulares]]
+> - Hidrodinámica Avanzada
+> - Flotación de Cuerpos Irregulares
 > - [[Tensión Superficial]]
 
 ---

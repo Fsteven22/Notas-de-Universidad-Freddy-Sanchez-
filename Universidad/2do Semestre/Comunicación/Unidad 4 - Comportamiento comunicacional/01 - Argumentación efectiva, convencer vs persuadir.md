@@ -167,7 +167,7 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 >
 > - Sílabo IDIG2012, Unidad 4.1: argumentación, tipos, convencer vs persuadir (14h).
 > - Planificación PAO 2-2026 S8: esquema argumentativo + Evaluaciones 1-2 + Participación 1 (tesis).
-> - [1] M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
+> - **[1]** M. Sánchez Fernández, *Comunicación efectiva y trabajo en equipo*, CEP, 2014.
 
 ---
 

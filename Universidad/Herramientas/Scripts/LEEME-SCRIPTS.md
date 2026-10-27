@@ -15,6 +15,8 @@ py verificar_nota.py "ruta/nota.md"
 
 Revisa: frontmatter (`dg-publish`, sin blancos, tags), callouts huérfanos, líneas vacías intrusas, fences desbalanceados o con líneas vacías adentro, mermaid dentro de callouts (aviso: en Live Preview se ve como código), embeds que no resuelven, tablas con pipes disparejos, headers indentados/pegados y finales de línea (CRLF/LF/mixto). Sale `0` si está limpia.
 
+Los embeds se resuelven como Obsidian: carpeta de la nota → carpetas ancestras (por ejemplo `Diagramas/x.svg` desde una unidad hermana) → raíz del vault → cualquier archivo del vault cuya ruta termine igual. Antes solo miraba la carpeta de la nota y daba falsos positivos en todas las notas con embeds hacia Diagramas.
+
 ## `limpiar_espacios.py` — limpiador seguro
 
 ```bash
@@ -63,6 +65,40 @@ py referencias.py --min 3               # exigir más links inline para dar OK
 ```
 
 Audita cada nota: OK si tiene sección `## 📚 Referencias` (fuentes, estilo Unidad 1) o si enlaza a ≥ 2 notas de la materia; `SIN REF` si no tiene ninguna. Con `--aplicar`, a las `SIN REF` les agrega `## 🔗 Relacionadas` al final con links a las notas hermanas de su carpeta (o a la MOC de la materia si es nota única no tiene hermanas). Nunca inventa citas bibliográficas.
+
+## Referencias que Obsidian vuelve checkbox (`qa_refs_checkbox.py`)
+
+> [!warning] El bug
+> Obsidian convierte cualquier item de lista que empiece por `[algo]` en **task list**: una referencia APA escrita como `- [1] Autor...` se pinta como un checkbox marcado. Lo mismo pasa con notación matemática (`- [E] = ML²T⁻²`) y con callouts metidos en lista (`- [!info] Conexión...`).
+
+```bash
+py "C:\Users\Steven Sànchez\OneDrive\OneSyncFiles\Universidad\Herramientas\Mantenimiento\qa_refs_checkbox.py" "C:\Users\Steven Sànchez\OneDrive\OneSyncFiles" -o "C:\Users\STEVEN~1\AppData\Local\Temp\opencode\refs_checkbox.txt"
+py "C:\Users\Steven Sànchez\OneDrive\OneSyncFiles\Universidad\Herramientas\Mantenimiento\qa_refs_checkbox.py" "C:\Users\Steven Sànchez\OneDrive\OneSyncFiles" --fix
+```
+
+Solo lectura por defecto: escribe un reporte con `archivo:línea` de cada caso, el token y el texto, más el resumen por archivo. Clasifica en tres grupos:
+
+- **referencias numéricas** (`[1]`, `[2]`…): el caso real del bug. Con `--fix` pasan a `- **[1]** Autor...`.
+- **símbolos en lista** (`[E]`, `[m]`, `[A|B]`, `[u, v]`): también salen como checkbox. Con `--fix` pasan a `- \[E\] = ...`.
+- **callouts dentro de lista** (`[!info]`): solo aviso, no se corrigen solos (hay que sacar el callout de la lista).
+
+Al escribir preserva el fin de línea original del archivo (LF/CRLF byte a byte) y nunca toca los checkboxes legítimos (`- [ ]`, `- [x]`).
+
+Medición en el vault (26/10/2026): 35 referencias numéricas en 13 notas, 6 símbolos en 3 notas y 5 callouts en lista. Corregidos 41 casos.
+
+## Auditorías de mantenimiento (`Universidad/Herramientas/Mantenimiento/`)
+
+Viven aparte de esta carpeta porque trabajan sobre el vault completo, no sobre una nota. La raíz del vault se deduce de la ubicación del script, así que no hay que pasar rutas con acentos.
+
+```bash
+py "..\Mantenimiento\qa_links.py" "<vault>" -o "reporte.txt"                 # wikilinks rotos (ignora embeds)
+py "..\Mantenimiento\qa_links_por_target.py" "<vault>" --scope "<subcarpeta>" # agrupa rotos por destino
+py "..\Mantenimiento\qa_pdfs_huerfanos.py" --scope "<subcarpeta>"            # PDFs sin nota que los embeba
+py "..\Mantenimiento\qa_pdfs_duplicados.py" --scope "<subcarpeta>"           # PDFs con contenido duplicado
+py "..\Mantenimiento\pdf_a_markdown_lote.py" "<carpeta de PDFs>" -o "<salida>" # PDF → Markdown (PyMuPDF)
+```
+
+`qa_links.py` y `fix_links.py` normalizan los alias con pipe escapado (`[[nota\|alias]]`) para no reportarlos como rotos. `pdf_a_markdown_lote.py` usa PyMuPDF (sin OCR): los PDFs escaneados salen vacíos y hay que pasarlos por `pdf_ocr_a_markdown.py`.
 
 ## Diagramas mermaid → SVG (receta)
 

@@ -451,7 +451,7 @@ dg-publish: true
 > - [[Fuerzas y Diagramas de Cuerpo Libre]] - Técnicas de análisis
 > - [[Problemas de Planos Inclinados]] - Aplicaciones dinámicas
 > - [[Problemas con rozamiento]] - Casos con movimiento
-> - [[Aplicaciones de Equilibrio]] - Ejercicios complementarios
+> - Aplicaciones de Equilibrio - Ejercicios complementarios
 > - [[Interacciones y Fuerzas]] - Naturaleza de las fuerzas de contacto
 
 ## 🔧 Formulario de Consulta Rápida

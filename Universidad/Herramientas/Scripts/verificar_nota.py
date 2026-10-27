@@ -15,7 +15,11 @@ Checks (exit 0 = clean, 1 = findings):
     quote-only lines INSIDE fences (render literally / break the callout).
  5. Mermaid-in-callout warning: ```mermaid inside quotes shows as code in
     Live Preview (convert to SVG with mmdc, see LEEME-SCRIPTS.md).
- 6. Embeds: every ![[*.svg|png|pdf|mmd]] resolves from the note's folder.
+  6. Embeds: every ![[*.svg|png|pdf|mmd]] resolves — relative to the note's
+     folder, to any ancestor folder (e.g. `Diagramas/x.svg` from a sibling
+     unit), from the vault root, or anywhere in the vault by path suffix
+     (Obsidian resolves by shortest-path match, not only by relative path).
+
  7. Tables: pipe-count mismatch vs header row (ignoring \\|), inside quotes too.
  8. Headers: indented (`   ###`) or glued (content line directly before ###).
  9. Line endings: CRLF / LF / mixed report (mixed = fail). Double-CR
@@ -27,6 +31,52 @@ import sys
 
 FENCE_RE = re.compile(r"^(?P<q>>*)\s*```(?P<info>.*)$")
 CALLOUT_RE = re.compile(r"^((?:>\s*)+)\[!([\w-]+)\]")
+MARCAS_VAULT = (".obsidian", ".git")
+
+
+def _raiz_vault(nota: pathlib.Path) -> pathlib.Path:
+    d = nota.parent
+    while True:
+        if any((d / m).exists() for m in MARCAS_VAULT):
+            return d
+        if d.parent == d:
+            return nota.parent
+        d = d.parent
+
+
+def _indice_vault(raiz: pathlib.Path) -> set[str]:
+    rutas = set()
+    for f in raiz.rglob("*"):
+        if f.is_file():
+            try:
+                rutas.add(f.relative_to(raiz).as_posix().lower())
+            except ValueError:
+                continue
+    return rutas
+
+
+def _resuelve_embed(nota: pathlib.Path, tgt: str, cache: dict) -> bool:
+    if (nota.parent / tgt).exists():
+        return True
+    raiz = cache.get("raiz")
+    if raiz is None:
+        raiz = _raiz_vault(nota)
+        cache["raiz"] = raiz
+    d = nota.parent
+    while True:
+        if (d / tgt).exists():
+            return True
+        if d == raiz or d.parent == d:
+            break
+        d = d.parent
+    if (raiz / tgt).exists():
+        return True
+    indice = cache.get("indice")
+    if indice is None:
+        indice = _indice_vault(raiz)
+        cache["indice"] = indice
+    clave = tgt.replace("\\", "/").lower().lstrip("/")
+    return any(ruta == clave or ruta.endswith("/" + clave) for ruta in indice)
 
 
 def main() -> int:
@@ -134,6 +184,7 @@ def main() -> int:
             warn.append(f"L{n}: header pegado a contenido (falta blanco antes)")
 
     # 6. embeds
+    cache_embeds: dict = {}
     for i, l in enumerate(L):
         if inside[i]:
             continue
@@ -146,7 +197,7 @@ def main() -> int:
             tgt = m.group(1).split("|")[0].split("#")[0]
             if tgt.endswith((".svg", ".png", ".jpg", ".jpeg", ".pdf", ".mmd")) \
                     or "/" in tgt:
-                if not (p.parent / tgt).exists():
+                if not _resuelve_embed(p, tgt, cache_embeds):
                     rep(f"L{i + 1}: embed no resuelve: {tgt[:70]}")
 
     # 7. tables: consecutive |-lines STARTING with | (quote-tolerant).
