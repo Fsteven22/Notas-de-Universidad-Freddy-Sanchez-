@@ -211,7 +211,59 @@ zona; los arreglo en una pasada propia si me das luz verde.
 - **De `opencode-nube`:** P5 y P6 tocan su pista; lo dejo decidir a esa sesión
   y al usuario, y por eso no muevo nada.
 
-## 5. Estado al cierre
+## 5. Acuerdo entre las 4 sesiones (cierre del 27/10/2026)
+
+Las 4 sesiones que.conviven en este vault **firmaron el mismo acuerdo** en
+`Clippings/00 - LEEME bandeja de pistas.md`:
+
+| Sesión | Zona | Firma |
+|---|---|---|
+| `opencode-site` (Desktop) | `site/src/**`, `site/public/**` (marca), `site/RUNBOOK.md` §2/§8, `_no-publicar.txt` + 3 notas | ✅ |
+| `opencode-onedrive` (esta) | `2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `site/docs/**`, `SVGs por recrear.md` | ✅ |
+| `opencode` (3er Semestre) | `3er Semestre/**`, `Herramientas/Mantenimiento/**` | ✅ |
+| `opencode-nube` | solo `Clippings/` (bitácora + PISTA) | ✅ |
+
+**Acuerdos 1–4 (resumen):**
+
+1. **Inventario de commits pendientes** con dueño y orden (cola de push).
+2. **Candado de push:** un push a la vez, **anunciado** en la bandeja
+   (`PUSHEO EN CURSO · <rama> · <qué> · ~3 min` → `PUSHEADO <hash>`); si el
+   push falla, se vuelve al paso 2 en vez de reintentar a ciegas; prohibido
+   `--force`, `commit --amend` de algo publicado, `reset --hard` ajeno y
+   `git add -A`.
+3. **Una sola copia editable por ruta:** `site/**` en Desktop, `Universidad/**`
+   en OneDrive, y el que necesita la ruta del otro **avisa y no edita**.
+4. **Migración a OneDrive institucional: no es necesaria.** Solo 1,11 GB de
+   los 4,99 GB son contenido real; lo demás es regenerable o ya está en
+   GitHub. El deploy no depende de la nube local (Vercel compila desde GitHub).
+
+**Correcciones que aporté al acuerdo:**
+
+- La tabla de zonas atribuía a `opencode-onedrive` la zona de `3er Semestre`
+  (que es de la sesión `opencode`) y faltaba la cuarta sesión.
+- Reglas 8 y 9: **commitear antes de que otra sesión mergee** (un merge pisa
+  lo que esté sin commitear: pasó 3 veces) y **un `git worktree` por sesión**.
+- **Cola de push** con dueño, orden y qué archivo es de quién.
+- **Refinamiento de la limpieza de cuota**: en el clon OneDrive se borra **solo
+  lo generado** (`node_modules`, `dist`, `public/assets`, `public/downloads`);
+  el código versionado de `site/` se queda, y `.git/` no se toca sin aviso.
+
+**Hallazgo nuevo (importante):** el `node_modules` del clon OneDrive **se vació
+solo** durante la sesión (211 MB → 25 MB, sin `astro` ni `.bin`) y un `npm ci`
+de reposición quedó a medias (faltaba `yargs-parser/index.js`). No lo rompió
+nadie: **OneDrive escribe/deshidrata sobre los archivos mientras npm los
+escribe**. Consecuencia directa:
+
+- La verificación del build se tuvo que hacer en un **worktree en disco local**
+  (`wt-build`), no en el clon de OneDrive.
+- **`node_modules` no debe vivir nunca dentro de una carpeta sincronizada**, y
+  el código del sitio tampoco.
+
+**Verificación del estado integrado** (worktree local `wt-build`):
+`npm run sync` → 806 publicadas · 3 omitidas · 2783 assets referenciados ·
+17 patrones / 61 archivos excluidos; `npm run build` → 832 páginas, 0 errores.
+
+## 6. Estado al cierre
 
 - `master` = `origin/master` (0/0), sin conflictos pendientes.
 - `npm run sync` → 805 publicadas · 3 omitidas · 2777 assets · 17 patrones.
