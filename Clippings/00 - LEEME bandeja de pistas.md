@@ -10,6 +10,63 @@ tags: [clippings, protocolo, colaboracion]
 >
 > **Acceso necesario:** escritura en la carpeta `Clippings/` (OneSync compartido o pull request a git).
 
+## 🤝 PROTOCOLO DE COMMITS Y PUSHES (27/10/2026) — leer antes de commitear
+
+> [!important] 📌 Estado verificado a 27/10/2026
+> `origin/master` = **`878bcc6`**. Todo el trabajo de las tres sesiones ya está **mergeado y pusheado**: no hay commits huérfanos ni ramas que integrar. `master` de los clones = `origin/master` = `878bcc6`, working tree limpio.
+>
+> **Si tu sesión tiene commits sin pushear, no los re-apliques sobre este estado**: pushealos vos o avisá en esta bandeja. Ver "Flujo de commit y push" abajo.
+
+### Flujo de commit y push (el que no rompe nada)
+
+1. **Antes de commitear**: `git fetch origin` y `git status`. Stageá **rutas exactas** (`git add -- "ruta"`), nunca `-A` ni `commit -a` (el vault tiene ~17 `.md` con ruido de CRLF que se cuelan).
+2. **Ruido de CRLF**: si un `.md` aparece modificado pero no lo tocaste, confirmá con `git diff --ignore-cr-at-eol --stat` (vacío = solo fin de línea). No lo commitees: `git checkout -- "<ruta>"`. Es la causa #1 de merges rechazados (`Your local changes would be overwritten`).
+3. **Antes de pushear**: `git fetch origin` → `git log --oneline origin/master..HEAD` (lo que vas a subir) → `git log --oneline HEAD..origin/master` (lo que subió otro). Si el segundo lista commits ajenos: `git pull --no-rebase` (merge, nunca rebase de commits ya publicados), resolvé y **re-verificá con build** antes de pushear.
+4. **Nunca** `git push --force`, nunca `git commit --amend` de un commit ya pusheado, nunca `git reset --hard` sobre commits que no son tuyos. Si un commit quedó mal, se corrige con un commit nuevo.
+5. **Verificar antes de pushear** lo que toque el sitio: `npm run sync` (`$env:VAULT_DIR="..\Universidad"`) + `npm run build` (831 páginas ≈ 8 min). Los cambios de docs no necesitan build.
+6. **Zonas reservadas**: si vas a tocar la ruta de otro agente, avisá primero en "Avisos de otros agentes" (abajo de este archivo) y esperá confirmación. Una tabla de zonas está en `LOG-opencode-site.md`.
+7. **Bitácora**: cada sesión escribe solo en su `LOG-<agente>.md` (hay 3: `LOG-opencode-site.md`, `LOG-opencode-onedrive.md`, `LOG-opencode.md`). No edites el log de otra sesión.
+
+### Zonas reservadas (declaradas por cada sesión)
+
+| Sesión | Toca | No toca sin avisar |
+|---|---|---|
+| `opencode-site` (clon Desktop) | `site/src/styles/*`, `site/src/components/SearchModal.astro`, `site/src/pages/index.astro`, `site/src/layouts/Base.astro`, `site/src/lib/rehype-asset-omitido.mjs`, marca en `site/public/` | `site/scripts/sync-vault.mjs`, `Universidad/3er Semestre/**`, `Universidad/Herramientas/**`, `_no-publicar.txt` |
+| `opencode-onedrive` (OneDrive) | `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**` | `site/**` en general, `Universidad/_no-publicar.txt`, `site/scripts/sync-vault.mjs` |
+| `opencode-nube` | nada en `Universidad/**` ni `site/**`: solo `Clippings/PISTA - migracion vault a OneDrive institucional.md` y su log | todo lo demás |
+
+> Si dos sesiones necesitan la misma ruta, **no se coordinan por git**: se avisa en "Avisos de otros agentes" (abajo) y la que ya la tenía reservada sigue.
+
+### Ya está integrado en `master` — NO rehacerlo
+
+| Qué | Commit | Dónde |
+|---|---|---|
+| Logo F + portada OG + iconos | `4a3e443` | `site/public/*`, `site/src/layouts/Base.astro` |
+| Paleta violeta → azul + fix del buscador | `ba9ad13` | `site/src/styles/*`, `SearchModal.astro`, `index.astro` |
+| Exclusiones de publicación (17 entradas) | `88b3fac`, `486f927` | `Universidad/_no-publicar.txt` + 3 notas |
+| Redirect 308 del dominio duplicado | `7eeef28` | `site/vercel.json`, `site/RUNBOOK.md` §8 |
+| `favicon.ico` real + aviso visible de material omitido | `66c9eca` | `site/public/favicon.ico`, `site/src/lib/rehype-asset-omitido.mjs` |
+| Merge con la sesión OneDrive | `f69ed87` | — |
+| Documentación de coordinación | `d875bdf`, `de42ca3`, `878bcc6` | `Clippings/`, `site/RUNBOOK.md` |
+
+Del lado de la sesión OneDrive ya están dentro: `ca4ab56`, `99d8c22`, `2409dfd`, `a9d09c1`, `ef26d75`, `17df803`, `8fedc9f`, `544ba11`, `a05dfa4`, `c11e2b9`, `b5c5669`, `d45c240`.
+
+> [!warning] ⚠️ `_no-publicar.txt` ya está unificado
+> Son **17 entradas** (unión de las dos listas) y es **idéntico** en el repo y en OneDrive. No rehagas la lista ni la sobrescribas: si agregás un patrón, avisá en la bandeja.
+
+### Decisiones abiertas (no las resuelvan por su cuenta)
+
+| # | Tema | Dueño |
+|---|---|---|
+| 1 | Liberar `neonotes.vercel.app` (hoy lo responde otro proyecto de Vercel). La regla 308 ya está en `site/vercel.json`; falta el paso manual del panel | **usuario** (pasos en `site/RUNBOOK.md` §8) |
+| 2 | Lista final de notas omitidas: son 3 (Inglés III U0: `00 - Leeme Unidad 0.md` + los 2 libros). Confirmá si sigue igual después del merge | sesiones |
+| 3 | Sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus`: quedó como **espejo** del repo canónico, **sin commits de git**. No commitear ahí | — |
+
+### Cómo confirmar el acuerdo
+
+> [!note] Respuesta en 1 línea
+> Cada sesión que lea esto deja en "Avisos de otros agentes" (abajo del archivo): **"Leído y de acuerdo. Zona que toco: <rutas>. Commits sin pushear: <ninguno / hashes>"**. Si algo no cierra, decilo ahí antes de tocar nada.
+
 ## 📝 Cómo dejar una pista
 
 1. Crea un `.md` aquí con nombre `PISTA - <tema>.md` (ej. `PISTA - tecnicas pomodoro.md`).
