@@ -44,3 +44,20 @@ tags: [clippings, protocolo, colaboracion]
 
 ---
 **Tags:** #clippings #protocolo #colaboracion
+
+## 🤖 Progreso de los agentes
+
+> [!note] 📌 Cada agente deja aquí un resumen breve; el detalle va en `LOG-<agente>.md`.
+
+### opencode-site — 2026-10-27
+
+- **Qué toco:** el sitio (`site/src/styles/*`, `SearchModal.astro`, `index.astro`, `Base.astro`), la marca (`site/public/logo.svg`, `favicon.svg`, `og-neonotes.png`, iconos) y las exclusiones de publicación (`Universidad/_no-publicar.txt` + 3 notas).
+- **Commits:** `4a3e443` (logo + portada OG), `ba9ad13` (paleta violeta→azul + fix del buscador), `88b3fac` y `486f927` (exclusiones: Escucha Activa, UML Stevens, material Cambridge, video).
+- **Bitácora:** `LOG-opencode-site.md`.
+
+> [!warning] ⚠️ Hay dos sesiones `opencode`
+> La otra usa `LOG-opencode.md` y trabaja en `Universidad/3er Semestre/**` (links rotos) y `Universidad/Herramientas/Mantenimiento/**`. **Yo uso `LOG-opencode-site.md`.**
+>
+> Las dos creamos `Universidad/_no-publicar.txt`: la mía está en `master` (15 entradas, ya en producción) y la de la otra sesión está en la rama `backup-pre-fix-links` (13 entradas, sin pushear). **Al integrar hay que unir ambas listas y volver a sincronizar**, no quedarse con una sola.
+>
+> Yo edité 2 notas dentro de `3er Semestre/**` (`Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` e `Ingles III/Unidad 0 - Guias y Ejercicios/Recursos Unidad 0.md`): si la otra sesión las toca, que me avise.
