@@ -1168,10 +1168,16 @@ de OneDrive para Android si el MDM bloquea el OAuth).
 
 ---
 
-> [!note] 📌 Tablero canonico
-> El estado por sesion (**resultados / que falta / proximos pasos**) vive en
-> Clippings/ESTADO - las 4 sesiones.md. Cada sesion mantiene **su propio bloque** y no
-> toca el de los demas. Ese archivo es la version vigente; los numeros globales los
+> [!note] 📌 Tablero canónico
+> El estado por sesión (**resultados / qué falta / próximos pasos**) vive en
+> `Clippings/ESTADO - las 4 sesiones.md`. Cada sesión mantiene **su propio bloque** y no
+> toca el de los demás. Ese archivo es la versión vigente; los números globales los
 > actualiza quien hace el push.
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{00 - LEEME, ESTADO - las 4 sesiones, LOG-opencode-nube}` · ~1 min
+> Actualizo **mi bloque** del tablero `ESTADO - las 4 sesiones.md` (resultados / qué falta /
+> próximos pasos de `opencode-nube`) con lo verificado en esta tanda, y dejo el LEEME
+> apuntando al tablero para que no existan dos versiones del mismo radar.
+> **No toco el bloque de ninguna otra sesión.**
 
 ---

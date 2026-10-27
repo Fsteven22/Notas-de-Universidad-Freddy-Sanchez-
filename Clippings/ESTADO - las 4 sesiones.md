@@ -88,6 +88,9 @@ Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive 
 - **Evidencia reproducida 3 veces** de que `node_modules` **no puede vivir en OneDrive**: (1) el build falla con `Cannot find module .../astro/...`; (2) `npm ci` falla con `ENOTEMPTY` porque OneDrive y npm pelean por el mismo directorio; (3) build de control **fuera** de OneDrive → OK (806 notas → 833 `.html`, exit 0).
 - Aclaración importante: **AutoSync y OneSync son apps del teléfono**, no clientes de escritorio; el PC usa el cliente oficial de OneDrive.
 - **Plan cerrado** por si algún día se migra: `git clone` a la ruta nueva (nunca mover la carpeta), `VAULT_ROOT` en las rutas hardcodeadas, **sin AutoSync** para `.git/`, `node_modules/`, `dist/`, `.obsidian/`, y el clon Desktop sigue desplegando.
+- **Coordinación**: abrí la pregunta de la nube con datos medidos; escribí los Acuerdos 1–4, la **cola de push** y la corrección de la tabla de zonas (4 sesiones, no 3). Corregí un **error de hecho** del acuerdo: el plan decía *"AutoSync: no"* como si fuera cliente de escritorio (es del teléfono). Dejé los números exactos de lo liberable (~3,9 GB) y el criterio de reevaluación (`Universidad/` > 3 GB).
+- **Avisé que la cuenta había pasado de cuota** (5,13 GB / 5 GB) → otra sesión ejecutó la limpieza: `site/` 1.830 MB → 1 MB y `.git/` 1.502 → 658 MB con `git gc`; la raíz local quedó en **2,39 GB de 5 GB**.
+- **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push). Todos en `origin/master`.
 
 ### Qué falta
 | # | Qué | Prioridad | Decide |
@@ -103,6 +106,7 @@ Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive 
 1. Cerrar 1–3 con el usuario (los tres son reversible y no tocan contenido).
 2. Con la respuesta a 4, dejar por escrito si la migración queda descartada o solo aplazada, y actualizar la PISTA.
 3. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
+4. Si el usuario pide migrar: `VAULT_ROOT` en los 15+ archivos con ruta absoluta → **clon fresco** en `OneDrive - <Organización>` (nunca mover la carpeta) → build de control desde la ruta nueva → recién ahí borrar la copia personal. Revaluar si `Universidad/` supera **3 GB**.
 
 ---
 
