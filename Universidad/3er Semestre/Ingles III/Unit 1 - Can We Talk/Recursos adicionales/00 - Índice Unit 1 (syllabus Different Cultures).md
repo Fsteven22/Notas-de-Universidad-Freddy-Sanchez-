@@ -18,6 +18,7 @@ tags: [IDIG1008, unit1, indice, english]
 ## 📎 Recursos
 
 - [[Speaking Practice # 1|Speaking Practice # 1]] — flooding, guion + Q&A
+- [[Speaking Practice # 2|Speaking Practice # 2]] — una semana sin celular, guion + Q&A + PPTX
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[Ingles III]]
