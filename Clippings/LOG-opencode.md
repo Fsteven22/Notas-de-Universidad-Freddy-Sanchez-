@@ -594,6 +594,53 @@ would be overwritten`), la salida es `git stash push -- "<ruta>"` → merge →
 
 ---
 
+## 13. Sexta tanda: mi bloque del tablero `ESTADO - las 4 sesiones.md`
+
+Otra sesión creó el tablero canónico (`129d753`) y pidió a cada sesión que
+actualizara **su propio bloque** (`19ac29c`). Toqué **solo el mío** (sección 1).
+
+### Lo que medí para actualizar el bloque (todo verificado, nada supuesto)
+
+| Dato | Valor medido | Corrige a |
+|---|---:|---|
+| Notas del 3er Semestre | **174** (173 + Speaking Exam 2) | "173 notas" |
+| Links rotos reales | **1026** (1039 − 13 placeholders de `Herramientas/`) | "1039 BAD" |
+| Desglose de los 1039 | 2do 528 · 1er 471 · Preuniv 27 · Herramientas 13 | el anotado sumaba 972 |
+| **PNG renderizados sin embeber** | **56** en 3 notas de mi zona (DSW U2 32 · DSW U5 5 · BD U2 19) | "los PNG ya renderizados" |
+| Errores de formato | **14.106** en **306** de 809 notas | "~970" |
+| Tipos de error | 3.935 línea vacía en fence dentro de callout (185 notas) · 126 `ENDINGS mixed` · 15 frontmatter con líneas vacías · 9 tabla · 6 fences desbalanceados | no estaba desglosado |
+| PNG huérfanos en `Figuras/` | **32** (11,36 MB) — los 2 `venn-*.svg` se referencian **sin extensión** y **no** son huérfanos | "32" (confirmado, con matiz) |
+| `.pptx` sin PDF | **3** (Inglés III) | "DSW U3/U4/U5-01 y BD" |
+| DSW U3 y U4 | **0 PDF, 0 PNG**: no hay material que renderizar | estaba como "renderizar decks" |
+| Embeds que no resuelven | **2** (`Machine Learning.md:161`, `Bienvenida y Syllabus Comunicación.md:63`) | no estaba |
+| Notas sin frontmatter | **3** (se omiten del sitio en silencio) | no estaba |
+
+### Dos riesgos nuevos que medí y reporté
+
+1. **Dos clones con el mismo `origin`** (personal e institucional) pueden
+   divergir sin avisar. Verifiqué que la copia institucional es un clon íntegro
+   (`Universidad/` 1.110 MB, **818 `.md`**, `.git/` 658 MB, `master` 0/0, árbol
+   limpio) y que producción responde **HTTP 200** en `speaking-practice-2`.
+2. **P6 dejó de ser "antes de migrar": ya migró.** El fallback por defecto de
+   `site/scripts/sync-vault.mjs:20`
+   (`path.join(USERPROFILE, "OneDrive", "OneSyncFiles", "Universidad")`) apunta
+   a la **copia personal**: desde el clon institucional el sync leería el vault
+   viejo **en silencio**. Siguen **12 archivos de código** con la ruta literal.
+   No lo toco (`site/scripts/` es zona de `opencode-onedrive`): lo mido y aviso.
+
+3. **Rehidratación (16:20):** `site/public/assets` (650 MB) volvió a la copia
+   personal a las 15:31 porque el build de restauración de `opencode-site` corrió
+   **dentro** del clon sincronizado. Confirma la regla: nunca compilar dentro de
+   OneDrive. La cuota local bajó a 2.445 MB y volvió a **2.647 MB**.
+
+### Push
+
+`8129007..91976be` (bloque del tablero + números globales) y luego
+`6fbda34` (hash real + confirmación). Anunciado antes y después, con el
+protocolo del Acuerdo 2. `origin/master` = `master` = `6fbda34` (0/0).
+
+---
+
 ## 14. Estado al cierre
 
 - `master` = `origin/master` (0/0). Todo el trabajo de las 4 sesiones
@@ -603,7 +650,11 @@ would be overwritten`), la salida es `git stash push -- "<ruta>"` → merge →
   huérfanos**.
 - Sitio: **806 notas publicadas**, 3 omitidas, 833 páginas, build sin errores
   (verificado fuera de OneDrive).
-- Cuota de OneDrive: **4.816 MB → 2.445 MB** (de 5.120 MB).
+- Cuota de OneDrive: **4.816 MB → 2.647 MB** (de 5.120 MB). La subida de
+  2.445 → 2.647 MB fue la rehidratación de `site/public/assets` (650 MB) por un
+  build corrido dentro del clon sincronizado.
+- Tablero `ESTADO - las 4 sesiones.md`: **mi bloque (sección 1) actualizado** con
+  cifras verificadas, 7 pendientes y 2 riesgos nuevos.
 
 ---
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion
