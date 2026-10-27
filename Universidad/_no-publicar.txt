@@ -25,6 +25,10 @@ Escucha Activa Parte 2.pdf
 # --- Material Cambridge (licencia de lectura, no redistribuible) ---
 Empower*.pdf
 CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf
+empower-*.png
+
+# --- Video propio que no se publica (solo local) ---
+Dinámicas grupales y trabajo en equipo.wmv
 
 # --- Material propio que ya se publica en PDF ---
 Guía Didáctica Mat. discretas lógica y demostraciones.docx
