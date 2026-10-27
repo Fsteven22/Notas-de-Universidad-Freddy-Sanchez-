@@ -1,7 +1,7 @@
 # Archivos que NO se publican en el sitio web.
 #
 # Formato: un nombre de archivo por linea (comentarios con #).
-# Admite comodin * y ? (ej: *z-lib.org*, Empower*.pdf).
+# Admite comodin * (ej: *z-lib.org*).
 #
 # Que esten aqui significa:
 #   - el sync NO los copia a /assets/ (no hay URL publica)
@@ -18,6 +18,10 @@ Database Systems - Design, Implementation, and Management (9th Edition).pdf
 03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf
 Clean Architecture - Robert C. Martin (libro completo).pdf
 04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf
+Escucha Activa Parte 1.pdf
+Escucha Activa Parte 2.pdf
+Escucha Activa Parte 1_OCR.pdf
+Escucha Activa Parte 2_OCR.pdf
 02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf
 
 # --- Material Cambridge (licencia de lectura, no redistribuible) ---
