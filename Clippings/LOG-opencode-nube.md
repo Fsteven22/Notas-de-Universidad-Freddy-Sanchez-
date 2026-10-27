@@ -264,6 +264,40 @@ error. Por eso la limpieza de lo generado (~1,8 GB) ya no es opcional: **pide el
 - **Commits sin pushear (míos):** el de esta tanda (tablero + mi log + el puntero del LEEME).
 - **Siguiente paso mío:** ninguno hasta que el usuario responda los 7 puntos de arriba.
 
+### Tanda 27/10/2026 16:45–17:10 — migración a la cuenta institucional (1 TB)
+
+**Qué cambió:** el usuario decidió migrar (la institucional da 1 TB gratis y la personal
+está topada). El veredicto anterior de las 4 sesiones ("no migrar") queda **superado**;
+la verdad del trabajo sigue siendo **GitHub** y el vault personal **no se movió ni se borró**.
+
+**Diagnóstico del "el login entra pero OneDrive no abre":** la PC arrastraba un registro
+huérfano `HKCU\Software\Microsoft\OneDrive\Accounts\Business1` de enero 2026 (sin
+`UserFolder`, ECS expirado 07/01/2026) → el login de Microsoft pasaba, pero el cliente no
+tenía ninguna unidad que abrir. Con `fredsanc@espol.edu.ec` dada de alta: `UserFolder`
+correcto, `LastSignInResult=0`, `HasMadeFirstUpload=1`.
+
+**Diagnóstico de por qué la cuota no bajaba:** vaciar la papelera no era suficiente. La
+personal sigue con muro de cuota (`QuotaWallTimestamp` = 27/10 13:43) por dos causas: el
+**historial de versiones** (30 días en cuenta personal) conserva lo borrado, y en la nube
+siguen **duplicados que git no versiona** (`site/public/assets/` 664 MB,
+`.obsidian/plugins/` 162 MB, `.git/` huérfano 23 MB en la raíz de OneDrive).
+`.gitignore` solo aplica a git: OneDrive sube esas carpetas igual.
+
+**Copia verificada:** `robocopy` a
+`C:\Users\Steven Sànchez\OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`
+(excluyendo `site/public/assets`, `site/notes-md`, `site/dist`, `site/.astro`,
+`site/node_modules`, `.obsidian`, `.trash`): **4.687 archivos · 1,729 GB · 0 errores**.
+Integridad: HEAD idéntico (`fec4b97`), **índice de git con SHA-256 idéntico** (4.533
+archivos trackeados con los mismos blob-sha), `git fsck` sin errores, **4.687/4.687
+archivos en la nube** en ~3 min, carpeta renombrada de `-migracion` a `OneSyncFiles`.
+La diferencia de 13 `.md` quedó explicada (12 `README.md` de plugins en `.obsidian` + 1 de
+`.trash`, ambos excluidos a propósito).
+
+**Regla de las dos copias:** GitHub es la verdad. Personal = vault de trabajo de las 4
+sesiones. Institucional = espejo en la nube de 1 TB + acceso del teléfono. Si el
+institucional queda activo: `git pull --no-rebase` en esa copia tras cada push (la
+personal no sube por cuota).
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 

@@ -5,10 +5,12 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 
 # PISTA - cambio de cuenta de OneDrive (AutoSync en el teléfono + vault en la institucional)
 
-> [!question] ❓ Decisión que hay que tomar
-> La cuenta **personal** de OneDrive está al límite (4,99 GB de 5 GB) y el proyecto sigue creciendo.
-> El plan: pasar el vault a la **cuenta institucional (1 TB)** y, en el teléfono, cambiar
-> **OneSync (Samsung) → AutoSync** apuntando a esa misma cuenta institucional.
+> [!question] ✅ Decisión tomada (2026-10-27, 16:45)
+> La cuenta **personal** de OneDrive está al límite (5 GB, con muro de cuota) y el proyecto sigue creciendo.
+> **Decisión del usuario: pasar el vault a la cuenta institucional (1 TB).** La cuenta ya está dada de alta
+> (`fredsanc@espol.edu.ec`) y el vault **ya está copiado y verificado** en
+> `C:\Users\Steven Sànchez\OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`.
+> El vault **personal no se movió ni se borró**: sigue siendo el de trabajo de las 4 sesiones.
 > Nadie debe arrancar a mover carpetas sin leer esto.
 
 > [!info] 📌 Aclaración de alcance (corregida 2026-10-27)
@@ -43,11 +45,14 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 | Carpeta | Tamaño | ¿Sirve en la nube? |
 |---|---|---|
 | `Universidad/` | 1,11 GB | Sí — es el contenido real (notas + PDF + 1 `.wmv` de 58 MB) |
-| `site/` | 1,83 GB | **No** — `node_modules` 211 MB, `dist` 874 MB, `public/assets` 649 MB, `public/downloads` 74 MB: todo regenerable, todo en `.gitignore` |
-| `.git/` | 1,50 GB | **No** — ya espejado en GitHub; un solo pack de 546 MB |
-| `.obsidian/` | 167 MB | **No** — ignorado por git, se regenera |
-| `OneSyncFiles-backups/` | 0,45 GB | Opcional |
-| **Total OneDrive root** | **4,99 GB / 5 GB** | Cuota personal agotada |
+| `site/` (código versionado) | 1 MB | Sí — es el repo del sitio (30 rutas) |
+| `site/public/assets/` | **664 MB** | **No** — artefactos del sync, ya ignorados por `site/.gitignore`; se regeneran en cada build |
+| `site/notes-md/` | 13 MB | **No** — copia regenerable del vault en markdown |
+| `.git/` | **658 MB** | Opcional — ya espejado en GitHub; un solo pack. En la copia institucional **sí** se copió, para que el repo sea autónomo |
+| `.obsidian/` | 162 MB | **No** — ignorado por git, se regenera |
+| `.git/` huérfano en la raíz de OneDrive | 23 MB | **No** — rama `main` abandonada, se puede borrar |
+| `OneSyncFiles-backups/` | 458 MB | Opcional |
+| **Copia institucional** | **1,77 GB / 1 TB** | **Ya subida y verificada** (4.687 archivos, 4.687/4.687 en la nube) |
 
 ## Preguntas para los otros agentes
 
@@ -105,24 +110,56 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
   5. Si el material de cátedra con copyright (libros Cambridge, PDFs `z-lib.org`) es
      aceptable en una cuenta institucional.
 
+## Lo que se hizo (27/10/2026, 16:45–17:05) — `opencode-nube`
+
+1. **Cuenta institucional dada de alta** en el cliente de escritorio:
+   `Business1` → `fredsanc@espol.edu.ec`, `UserFolder` =
+   `C:\Users\Steven Sànchez\OneDrive - Escuela Superior Politécnica del Litoral`,
+   `LastSignInResult=0`, `HasMadeFirstUpload=1`.
+   Antes existía un **registro huérfano de enero 2026** (sin `UserFolder`, ECS expirado
+   07/01/2026) → por eso el login de Microsoft pasaba pero el cliente no abría ninguna
+   unidad. Esa era la causa real del "entra pero no entra al OneDrive".
+2. **Prueba de humo OK**: archivo de prueba subido y confirmado como ítem de nube
+   (`ReparsePoint` + `System.StorageProviderId = OneDrive`).
+3. **Copia (nunca movimiento) del vault** con `robocopy`, excluyendo lo regenerable
+   (`site/public/assets`, `site/notes-md`, `site/dist`, `site/.astro`, `site/node_modules`,
+   `.obsidian`, `.trash`): **4.687 archivos · 1,729 GB · 0 errores**.
+4. **Verificación de integridad** (no solo "copió bien"):
+   - `HEAD` idéntico en las dos copias (`fec4b97`);
+   - **índice de git con SHA-256 idéntico** → 4.533 archivos trackeados con los mismos
+     blob-sha (contenido versionado bit a bit idéntico);
+   - `git fsck` sin errores (solo 2 objetos *dangling* del historial);
+   - **4.687/4.687 archivos en la nube** en ~3 min; carpeta renombrada de
+     `OneSyncFiles-migracion` a `OneSyncFiles`.
+   - La diferencia de 13 `.md` quedó explicada: 12 `README.md` de plugins dentro de
+     `.obsidian` y 1 de la papelera interna `.trash` (ambas excluidas a propósito).
+5. **Causa real de que la cuota personal no bajara**: el **historial de versiones**
+   (30 días en cuenta personal) conserva lo borrado, y en la nube siguen
+   **duplicados que git no versiona** (`site/public/assets/` 664 MB, `.obsidian/` 162 MB,
+   `.git/` huérfano 23 MB). `.gitignore` solo aplica a git: OneDrive sube esas carpetas igual.
+
 ## Estado
 
-- **Estado:** #procesado — el veredicto de las 4 sesiones está en
-  `Clippings/00 - LEEME bandeja de pistas.md` → **"ACUERDO entre sesiones", Acuerdo 4**
-  (y la "Respuesta final de `opencode-nube`"). **No hace falta tomar esta pista.**
-- **Veredicto:** **la migración del vault NO es necesaria.** La cuota personal se
-  resuelve limpiando lo generado (~1,8 GB) + compactando `.git`; el contenido real
-  (`Universidad/`) son 1,11 GB y la personal tiene 5 GB.
-- **Lo único que sí necesita la institucional es el teléfono** (fotos): AutoSync →
-  institucional, emparejando solo `DCIM/Camera`.
-- **Sigue pendiente del usuario** (bloquea cualquier movimiento de carpetas):
-  1. **Autorizar la limpieza ya** — la cuenta pasó de cuota (5,13 GB / 5 GB).
-  2. Cuota real por usuario de la institucional.
-  3. Límite por archivo (el `.wmv` pesa 58 MB).
-  4. Retención al terminar la carrera.
-  5. Si el material con copyright (Cambridge, `z-lib.org`) es aceptable en una
-     cuenta institucional.
-  6. Teléfono: institucional o personal (si la institucional bloquea el OAuth por MDM).
+- **Estado:** #migracion-en-curso — la copia institucional **ya está hecha y verificada**.
+  El vault **personal no se movió ni se borró**: sigue siendo el de trabajo de las 4 sesiones.
+- **Veredicto (cambia el de las 4 sesiones):** la migración **sí se hace** — decisión del
+  usuario: la institucional da **1 TB gratis** y la personal (5 GB) está topada con muro de
+  cuota. Lo que **no** cambia: la verdad del trabajo es **GitHub**, y nada se borra de la
+  personal hasta que el usuario diga cuál queda activa.
+- **Pendiente de decidir (usuario):**
+  1. **Cuál vault queda activo**: el personal o el institucional (esto implica **P6**,
+     `VAULT_ROOT` en los 15+ archivos con ruta absoluta, y avisar a las 3 sesiones).
+  2. **Teléfono**: app oficial de OneDrive con `fredsanc@espol.edu.ec` (notas + fotos);
+     si ESPOL bloquea apps de terceros por MDM, esa oficial es el plan B.
+  3. Cuota real por usuario de la institucional.
+  4. Límite por archivo (el `.wmv` pesa 58 MB; en cuentas educational suele bajar a 250 MB).
+  5. Retención al terminar la carrera: el material ya quedó copiado ahí.
+  6. Si el material con copyright (Cambridge, `z-lib.org`) es aceptable en una cuenta
+     institucional.
+- **Pendiente de sesión (sin riesgo, reversible):** excluir `site/public/assets/` y
+  `.obsidian/` de la nube personal (click derecho → OneDrive → Dejar de sincronizar) y
+  borrar el `.git/` huérfano de la raíz de OneDrive → libera ~850 MB y corta el
+  historial de versiones.
 
 ---
-**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #procesado
+**Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #migracion-en-curso

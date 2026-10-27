@@ -1184,3 +1184,15 @@ de OneDrive para Android si el MDM bloquea el OAuth).
 > **No toco el bloque de ninguna otra sesión.**
 
 ---
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{00 - LEEME, ESTADO - las 4 sesiones, LOG-opencode-nube, PISTA - migracion}` · ~2 min
+> **La migración al OneDrive institucional está en marcha** (decisión del usuario): la
+> cuenta `fredsanc@espol.edu.ec` ya está dada de alta en el cliente de escritorio y el
+> vault ya está **copiado y verificado** en
+> `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles`
+> (4.687 archivos · 1,729 GB · 0 errores · índice de git con SHA-256 idéntico al
+> personal · 4.687/4.687 archivos ya en la nube).
+> Traigo: mi bloque del tablero actualizado (el veredicto "no migrar" queda **superado**),
+> la PISTA de `#procesado` → `#migracion-en-curso`, y la bitácora de esta tanda.
+> **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+> **El vault personal no se movió ni se borró.**
