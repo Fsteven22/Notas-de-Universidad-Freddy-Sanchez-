@@ -152,7 +152,67 @@ Criterio de reevaluacion: migrar solo si `Universidad/` supera **3 GB** por si s
 
 Mi delta es solo `Clippings/**` (docs con `dg-publish: false`); el sync solo recorre
 `Universidad/`, asi que **no necesita build**. El estado integrado ya lo verifico
-`opencode-onedrive`: sync 806 publicadas / 3 omitidas / 17 patrones, build 833 paginas.
+`opencode-onedrive`: sync 806/3, build 833 paginas.
+
+---
+
+## Cierre real de la sesion (27/10/2026 ~15:05)
+
+### Que hice
+
+1. **Commitee mis 2 archivos + mis bloques del LEEME** en `47614c0` (rutas exactas, sin
+   `git add -A`), con los archivos del usuario (`Notas de hoy.md`) y el scratch
+   (`Recursos adicionales/`) **sin tocar**. El commit quedo dentro de `origin/master`.
+2. **Verifique el estado integrado con build**, como pide el protocolo (el push arrastraba
+   el merge `ddd27a7`, que trae cambios de `site/`).
+3. **Corregi el acuerdo en dos puntos**: (a) AutoSync/OneSync son clientes del
+   telefono, no del escritorio; (b) numeros exactos de lo liberable y criterio de
+   reevaluacion (`Universidad/` > 3 GB).
+4. **Deje el veredicto y la peticion de aprobacion al usuario** en el LEEME.
+
+### Lo que me encontre al verificar (3a reproduccion del problema de OneDrive)
+
+1. `npm run build` en el clon OneDrive fallo con
+   `Cannot find module ...\node_modules\astro\dist\cli\throw-and-exit.js`: la carpeta
+   **no existia** (OneDrive la deshidrató).
+2. `npm ci` fallo con `ENOTEMPTY ... rmdir node_modules\hastscript\lib`: OneDrive y npm
+   peleando por el mismo directorio.
+3. **Build de control fuera de OneDrive**: copie el codigo a
+   `C:\Users\STEVEN~1\AppData\Local\Temp\opencode\verify\site` con un **junction** al
+   vault (`verify\Universidad` -> `OneSyncFiles\Universidad`), corri `npm ci` ->
+   `npm run sync` (**806 notas, 5 bloques**) -> `npm run build` (**833 `.html`, exit 0**,
+   sin errores). `speaking-practice-2` publicado y `favicon.ico` presente.
+   Es el mismo metodo que usaron `opencode-onedrive` y `opencode-site` (worktree local).
+
+> **Conclusion tecnica:** el codigo del sitio y su `node_modules` se compilan **fuera** de
+> la carpeta sincronizada. El vault de OneDrive guarda notas y assets.
+
+### Dato de cuota
+
+La raiz de OneDrive paso de **4,99 GB a 5,13 GB** (de 5 GB): el `npm ci` a medias
+escribio dentro de la carpeta sincronizada y **`site/` subio de 1,83 a 1,88 GB**.
+La cuenta esta **pasada de cuota**, y cuando eso pasa OneDrive deja de subir y da
+error. Por eso la limpieza de lo generado (~1,8 GB) ya no es opcional: **pide el
+"dale" del usuario**.
+
+### Lo que sigue pendiente del usuario
+
+| # | Decision |
+|---|---|
+| 1 | Autorizar la limpieza de cuota ya (la cuenta esta pasada) |
+| 2 | Cuota real por usuario de la institucional |
+| 3 | Limite por archivo |
+| 4 | Retencion al terminar la carrera |
+| 5 | Aceptabilidad del material con copyright en una cuenta institucional |
+| 6 | Telefono: AutoSync a la institucional (`DCIM/Camera`) o a la personal si la institucional bloquea el OAuth (MDM) |
+
+### Estado al cierre
+
+- `origin/master` = `2ea2d3d`; mi commit `47614c0` dentro; **commits sin pushear: ninguno**.
+- Turno de push libre (anuncio `PUSHEADO 3cb1fdc` de la sesion del 3er Semestre).
+- La PISTA queda **#procesado**: el veredicto esta en el LEEME (Acuerdo 4). No se mueve
+  ninguna carpeta sin confirmacion del usuario.
+- `.git/gc.pid` sigue roto: `git gc` no corre hasta borrarlo. **No lo borro sin aviso.**
 
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
