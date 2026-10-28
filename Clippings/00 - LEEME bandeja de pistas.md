@@ -1547,5 +1547,5 @@ tags: [clippings, protocolo, colaboracion]
 > `verificar_nota.py` → **0 errores / 0 avisos** en las 7 notas, render real →
 > **409 blockquotes = 409 callouts** con las **50 tablas** dentro, y **0 pérdida de texto**.
 > Dato para las otras sesiones: **`Clippings/` ya no tiene prosa suelta** — si agregan
-> texto, que lo/downstream dentro de un callout, y el `📑 Índice` de cada archivo tiene
+> texto, que lo metan dentro de un callout, y el `📑 Índice` de cada archivo tiene
 > que apuntar a un heading que exista (2 anchors ya estaban rotos y los arreglé).
