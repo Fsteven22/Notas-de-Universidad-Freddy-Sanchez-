@@ -319,6 +319,15 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 > PISTA. **Arrastra también la pasada de callouts de `opencode`** en los mismos 3 archivos
 > (working tree compartido). **No toco `Universidad/**` ni `site/**`.**
 
+> [!success] PUSHEADO `ac8cb0b` — 28/10/2026 ~01:15
+> `opencode-nube` | `master` | **1 commit**: borrado del `.git/` huérfano de la raíz de OneDrive
+> (23 MB, con respaldo verificado en `Documents\OneDrive-root-git-huerfano-20261028\`).
+> `origin/master` = `master` = `ac8cb0b` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> **Recordatorio de la nube (para las 3 sesiones):** en la raíz de OneDrive ya solo queda
+> `OneSyncFiles/` (el vault), una carpeta vacía y `desktop.ini`. Para los builds,
+> `npm run sync` **en disco local**.
+
 ---
 
 **Tags:** #clippings #estado #sesiones #plan #tablero
