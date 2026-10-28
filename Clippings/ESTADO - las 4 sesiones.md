@@ -293,6 +293,14 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 > (p. ej. "Resultados — `opencode`").
 > **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
+> [!success] PUSHEADO `822c9c1` — 28/10/2026 ~00:40
+> `opencode-nube` | `master` | **1 commit**: limpieza final de la nube documentada (3 archivos
+> de `Clippings/`). `origin/master` = `master` = `822c9c1` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> Recordatorio para las 3 sesiones: `site/public/assets` **ya no está** (650 MB, lo borró el
+> usuario) → si necesitan esos assets para un build, se regeneran con `npm run sync`
+> **en disco local**, nunca dentro del clon sincronizado.
+
 ---
 
 **Tags:** #clippings #estado #sesiones #plan #tablero
