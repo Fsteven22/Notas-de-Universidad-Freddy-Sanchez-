@@ -5,9 +5,38 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 
 # LOG - opencode-nube (sesion 2026-10-27)
 
+> [!info] 📌 Alcance de esta sesión
 > Sesion de **infraestructura / nube**. No es la sesion de los links rotos
 > (`LOG-opencode.md`) ni la del sitio (`LOG-opencode-site.md`).
 > **No toco `Universidad/**` ni `site/**`**: solo escribo en `Clippings/`.
+
+> [!info] 📑 Índice
+>
+> - [[#Que hice]]
+> - [[#Motivo]]
+> - [[#Hallazgos (medidos, no re-medir)]]
+> - [[#Rutas que reservo]]
+> - [[#No toco sin avisar]]
+> - [[#Cierre de la sesion — acuerdo de las 4 sesiones (27/10/2026)]]
+> - [[#Cierre real de la sesion (27/10/2026 ~15:05)]]
+> - [[#Radar de las 4 sesiones: resultados y próximos pasos (27/10/2026 ~15:25)]]
+> - [[#Que leo del LEEME y con que estoy de acuerdo]]
+> - [[#Correccion que aporto (un error de hecho en el acuerdo)]]
+> - [[#Numeros (medidos 27/10/2026)]]
+> - [[#Que NO hago]]
+> - [[#Verificacion]]
+> - [[#Que hice]]
+> - [[#Lo que me encontre al verificar (3a reproduccion del problema de OneDrive)]]
+> - [[#Dato de cuota]]
+> - [[#Lo que sigue pendiente del usuario]]
+> - [[#Estado al cierre]]
+> - [[#Lo que aporté en esta tanda]]
+> - [[#Resumen de lo que le falta a cada una (para contexto, el detalle está en el tablero)]]
+> - [[#Lo que queda para el usuario (los agentes no lo resuelven)]]
+> - [[#Estado al cierre de esta tanda]]
+> - [[#Tanda 27/10/2026 16:45–17:10 — migración a la cuenta institucional (1 TB)]]
+> - [[#Tanda 27/10/2026 17:20–18:25 — migración probada y cancelada]]
+> - [[#Tanda 27/10–28/10 00:30 — limpieza final de la nube y los 4 mecanismos de OneDrive]]
 
 ## Que hice
 
@@ -184,6 +213,7 @@ Mi delta es solo `Clippings/**` (docs con `dg-publish: false`); el sync solo rec
    sin errores). `speaking-practice-2` publicado y `favicon.ico` presente.
    Es el mismo metodo que usaron `opencode-onedrive` y `opencode-site` (worktree local).
 
+> [!success] Conclusión técnica
 > **Conclusion tecnica:** el codigo del sitio y su `node_modules` se compilan **fuera** de
 > la carpeta sincronizada. El vault de OneDrive guarda notas y assets.
 
@@ -325,6 +355,53 @@ al vault real, y **P6 vuelve a ser "solo si algún día se decide migrar"**.
 libres tras la limpieza) sino por el **historial de versiones** (30 días) + **duplicados que
 git ignora pero OneDrive sube**: `site/public/assets/` 664 MB, `.obsidian/` 162 MB y un
 `.git/` huérfano de 23 MB en la raíz de OneDrive. Vaciar la papelera no arregla eso.
+
+### Tanda 27/10–28/10 00:30 — limpieza final de la nube y los 4 mecanismos de OneDrive
+
+> [!success] ✅ Hecho por el usuario: `site/public/assets` eliminado (650 MB)
+> La raíz local de OneDrive bajó de **2.647 MB → 1.997 MB** (el vault quedó en **1.951 MB**).
+> **No se rompió nada**, y está verificado por qué:
+> - `site/public/assets/` es un **artefacto de build**, no fuente: lo escribe
+>   `site/scripts/sync-vault.mjs:23` (`OUT_ASSETS = path.join(PROJECT, "public", "assets")`),
+>   está en `site/.gitignore` (`public/assets/`) y **Vercel lo reconstruye en cada deploy**
+>   (`site/vercel.json`: `VAULT_DIR=../Universidad npm run sync && npm run build`).
+> - Los **originales** viven en `Universidad/` (que sí está en git y en la nube).
+> - El código que sí importa del sitio (`site/src/**`, íconos) son **MB, no GB**.
+> - **Beneficio extra:** desaparece la **fuente de la fuga** — los 650 MB que volvían solos
+>   con cada build corrido *dentro* del clon sincronizado (rehidratación medida a las 15:31).
+> - **Pendiente del usuario (1 clic):** vaciar la **papelera** en el web, o los 650 MB
+>   siguen contados como borrados (mismo mecanismo que la primera vez).
+
+> [!warning] ⚠️ `.obsidian` (167 MB) se queda — y por qué
+> Es la **casa de Obsidian**: plugins, temas y ajustes. Borrarlo de la nube **también lo
+> borra en local** (es un archivo sincronizado) → tendrías que reinstalar todo. Si algún día
+> quieres sacarlo de la nube **sin perderlo**, el mecanismo es **"Dejar de sincronizar"**
+> (lo quita del drive y deja los archivos locales). Con la cuenta al 50% no compensa.
+
+> [!info] 📐 Los 4 mecanismos de OneDrive (la confusión que ordenó esta tanda)
+> | Acción | ¿Sale de la nube? | ¿Sale de la PC? | ¿Libera cuota de nube? |
+> |---|---|---|---|
+> | **Seleccionar carpetas** (sincronización selectiva) | No | **Sí** (se oculta del Explorador) | **No** (solo disco local) |
+> | **Liberar espacio** | No | Sí | No |
+> | **Dejar de sincronizar** | **Sí** | No (el archivo local se queda) | **Sí** |
+> | **Moverlo fuera** de la carpeta de OneDrive | **Sí** (OneDrive lo ve como borrado) | Queda en el nuevo sitio | Sí (+ vaciar papelera) |
+> | **Desvincular este equipo** | No | Sí (desconecta todo el drive de la PC) | No |
+>
+> **Clave conceptual:** si el archivo **sigue dentro** de `C:\Users\...\OneDrive\`, OneDrive lo
+> está sincronizando. Para sacarlo de la nube hay que **moverlo fuera de la carpeta** o
+> **borrarlo desde la nube**.
+
+> [!success] ✅ La cuenta personal dejó de estar topada
+> El cliente muestra **"2,5 GB usado de 5 GB (50%)"** y la clave `QuotaWallTimestamp` (la que
+> marcaba el muro de cuota a las 13:43) **ya no está** en
+> `HKCU\Software\Microsoft\OneDrive\Accounts\Personal`. **0 archivos pendientes de subida**
+> (11.789 archivos, todos ya son ítems de nube). Lo que no bajaba en la barra del web era el
+> **historial de versiones** (30 días en cuenta personal), que **decae solo** y no bloquea nada.
+
+> [!note] 📌 Regla que queda vigente
+> **Nunca compilar dentro de OneDrive.** El build va en disco local (worktree o copia
+> temporal), como se verificó 3 veces. Y `.gitignore` **no aplica a OneDrive**: el cliente
+> sube cualquier carpeta que esté dentro de la carpeta de OneDrive, ignorada o no.
 
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive

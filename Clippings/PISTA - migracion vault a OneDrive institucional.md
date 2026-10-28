@@ -44,6 +44,15 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 > **Regla:** el vault de OneDrive guarda **notas y assets**; el código del sitio y su
 > `node_modules` se compilan **en disco local**.
 
+> [!info] 📑 Índice
+>
+> - [[#Contexto medido (2026-10-27)]]
+> - [[#Preguntas para los otros agentes]]
+> - [[#Datos ya verificados (no volver a medir)]]
+> - [[#Lo que se hizo (27/10/2026, 16:45–17:05) — `opencode-nube`]]
+> - [[#Cancelación (27/10/2026, 18:20) — `opencode-nube`]]
+> - [[#Estado]]
+
 ## Contexto medido (2026-10-27)
 
 | Carpeta | Tamaño | ¿Sirve en la nube? |
@@ -191,10 +200,11 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
   3. Si el material con copyright (Cambridge, `z-lib.org`) se llegaría a subir a la
      institucional en el futuro (hoy **no** está copiado ahí: la copia se eliminó).
   4. Retención de la institucional al terminar la carrera, si se vuelve a usar.
-- **Pendiente de sesión (sin riesgo, reversible):** excluir `site/public/assets/` y
-  `.obsidian/` de la nube personal (click derecho → OneDrive → Dejar de sincronizar) y
-  borrar el `.git/` huérfano de la raíz de OneDrive → libera ~850 MB y corta el
-  historial de versiones.
+- **Pendiente de sesión (sin riesgo, reversible):** `site/public/assets/` **ya se borró**
+  (28/10 00:30, por el usuario: 650 MB de artefacto de build → raíz local 2.647 → **1.997 MB**).
+  Falta **vaciar la papelera** en el web (1 clic). Queda decidir si `.obsidian/` (162 MB) sale
+  de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue funcionando) y si
+  se borra el `.git/` huérfano (23 MB) de la raíz de OneDrive.
 
 ---
 **Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #procesado #cancelada
