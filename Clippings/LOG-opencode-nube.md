@@ -37,6 +37,7 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > - [[#Tanda 27/10/2026 16:45–17:10 — migración a la cuenta institucional (1 TB)]]
 > - [[#Tanda 27/10/2026 17:20–18:25 — migración probada y cancelada]]
 > - [[#Tanda 27/10–28/10 00:30 — limpieza final de la nube y los 4 mecanismos de OneDrive]]
+> - [[#Tanda 28/10/2026 00:40–01:10 — borrado del .git huérfano de la raíz de OneDrive (con respaldo)]]
 
 ## Que hice
 
@@ -60,14 +61,16 @@ distintas, no "la misma carpeta con mas espacio").
 
 ## Hallazgos (medidos, no re-medir)
 
-| Carpeta | Tamano | Sirve en la nube? |
-|---|---:|---|
-| `Universidad/` | 1,11 GB | Si: es el contenido real (notas + PDF + 1 `.wmv` de 58 MB) |
-| `site/` | 1,83 GB | **No**: `node_modules` 211 MB, `dist` 874 MB, `public/assets` 649 MB, `public/downloads` 74 MB. Todo regenerable y todo en `.gitignore` |
-| `.git/` | 1,50 GB | **No**: ya espejado en GitHub. Un solo pack de 546 MB |
-| `.obsidian/` | 167 MB | **No**: ignorado por git, se regenera |
-| `OneSyncFiles-backups/` | 0,45 GB | Opcional |
-| **Total OneDrive root** | **4,99 GB / 5 GB** | Cuota personal agotada |
+> [!info] 📁 Qué sirve en la nube y qué no
+>
+> | Carpeta | Tamano | Sirve en la nube? |
+> |---|---:|---|
+> | `Universidad/` | 1,11 GB | Si: es el contenido real (notas + PDF + 1 `.wmv` de 58 MB) |
+> | `site/` | 1,83 GB | **No**: `node_modules` 211 MB, `dist` 874 MB, `public/assets` 649 MB, `public/downloads` 74 MB. Todo regenerable y todo en `.gitignore` |
+> | `.git/` | 1,50 GB | **No**: ya espejado en GitHub. Un solo pack de 546 MB |
+> | `.obsidian/` | 167 MB | **No**: ignorado por git, se regenera |
+> | `OneSyncFiles-backups/` | 0,45 GB | Opcional |
+> | **Total OneDrive root** | **4,99 GB / 5 GB** | Cuota personal agotada |
 
 1. **El deploy no depende de la nube local.** `site/vercel.json:4` corre
    `VAULT_DIR=../Universidad npm run sync && npm run build` dentro del repo en GitHub.
@@ -155,14 +158,16 @@ correcto:
 
 ### Numeros (medidos 27/10/2026)
 
-| Carpeta | Peso | Liberable sin migrar |
-|---|---:|---|
-| `Universidad/` | 1,11 GB | no (contenido real) |
-| `site/` (ignorado por git) | 1,83 GB | si: borrar `node_modules`, `dist`, `.astro`, `notes-md`, `public/assets`, `public/downloads`, `public/pdfjs/{build,web}`; se regenera con `npm ci && npm run sync && npm run build`. Los 28 archivos versionados de `site/` se quedan |
-| `.git/` | 1,50 GB | si: `git gc --aggressive --prune=now` (hay un `gc.pid` de un gc interrumpido) |
-| `.obsidian/` | 167 MB | si: git-ignored, se regenera |
-| `OneSyncFiles-backups/` | 0,45 GB | opcional: mover a la institucional o borrar |
-| **Total** | **4,99 GB / 5 GB** | **~3,9 GB liberables -> la personal queda en ~1,1 GB** |
+> [!info] 📊 Qué se puede liberar sin migrar
+>
+> | Carpeta | Peso | Liberable sin migrar |
+> |---|---:|---|
+> | `Universidad/` | 1,11 GB | no (contenido real) |
+> | `site/` (ignorado por git) | 1,83 GB | si: borrar `node_modules`, `dist`, `.astro`, `notes-md`, `public/assets`, `public/downloads`, `public/pdfjs/{build,web}`; se regenera con `npm ci && npm run sync && npm run build`. Los 28 archivos versionados de `site/` se quedan |
+> | `.git/` | 1,50 GB | si: `git gc --aggressive --prune=now` (hay un `gc.pid` de un gc interrumpido) |
+> | `.obsidian/` | 167 MB | si: git-ignored, se regenera |
+> | `OneSyncFiles-backups/` | 0,45 GB | opcional: mover a la institucional o borrar |
+> | **Total** | **4,99 GB / 5 GB** | **~3,9 GB liberables -> la personal queda en ~1,1 GB** |
 
 Criterio de reevaluacion: migrar solo si `Universidad/` supera **3 GB** por si solo.
 
@@ -227,14 +232,16 @@ error. Por eso la limpieza de lo generado (~1,8 GB) ya no es opcional: **pide el
 
 ### Lo que sigue pendiente del usuario
 
-| # | Decision |
-|---|---|
-| 1 | Autorizar la limpieza de cuota ya (la cuenta esta pasada) |
-| 2 | Cuota real por usuario de la institucional |
-| 3 | Limite por archivo |
-| 4 | Retencion al terminar la carrera |
-| 5 | Aceptabilidad del material con copyright en una cuenta institucional |
-| 6 | Telefono: AutoSync a la institucional (`DCIM/Camera`) o a la personal si la institucional bloquea el OAuth (MDM) |
+> [!question] ❓ Decisiones pendientes del usuario
+>
+> | # | Decision |
+> |---|---|
+> | 1 | Autorizar la limpieza de cuota ya (la cuenta esta pasada) |
+> | 2 | Cuota real por usuario de la institucional |
+> | 3 | Limite por archivo |
+> | 4 | Retencion al terminar la carrera |
+> | 5 | Aceptabilidad del material con copyright en una cuenta institucional |
+> | 6 | Telefono: AutoSync a la institucional (`DCIM/Camera`) o a la personal si la institucional bloquea el OAuth (MDM) |
 
 ### Estado al cierre
 
@@ -267,12 +274,14 @@ error. Por eso la limpieza de lo generado (~1,8 GB) ya no es opcional: **pide el
 
 ### Resumen de lo que le falta a cada una (para contexto, el detalle está en el tablero)
 
-| Sesión | Qué le falta (resumen) | Dueño |
-|---|---|---|
-| `opencode` (3er Sem.) | embebir PNG ya renderizados; renderizar DSW U3/U4/U5-01 y BD; normalizar ~970 errores de formato; los **1039 BAD** (decidir) | sesión + usuario |
-| `opencode-onedrive` | P8 (`verificar_nota.py` de Cálculo Vectorial, pide luz verde) · P4 (4 scripts de auditoría en `Herramientas/Mantenimiento/`) · P3 (CI que falle si un asset excluido llega a `public/` o a un ZIP) · P2 (lista blanca de copyright, decide el usuario) · P6 (`VAULT_ROOT`, solo si se migra) · P1/P7 | sesión + usuario |
-| `opencode-site` (Desktop) | paso manual en el panel de Vercel (usuario; el CLI no tiene token válido) · verificar favicon/redirect/aviso en producción · refrescar el espejo `notas-nexus` ("baseline 798") · confirmar la lista final de 3 notas omitidas | usuario + sesión |
-| `opencode-nube` (esta) | nada propio: la PISTA quedó `#procesado` y el veredicto es "no migrar". 3 acciones reversibles del usuario (papelera, backup de 458 MB, fijar el vault) + 5 datos de la cuenta institucional | usuario |
+> [!warning] ⏳ Resumen: qué le falta a cada sesión
+>
+> | Sesión | Qué le falta (resumen) | Dueño |
+> |---|---|---|
+> | `opencode` (3er Sem.) | embebir PNG ya renderizados; renderizar DSW U3/U4/U5-01 y BD; normalizar ~970 errores de formato; los **1039 BAD** (decidir) | sesión + usuario |
+> | `opencode-onedrive` | P8 (`verificar_nota.py` de Cálculo Vectorial, pide luz verde) · P4 (4 scripts de auditoría en `Herramientas/Mantenimiento/`) · P3 (CI que falle si un asset excluido llega a `public/` o a un ZIP) · P2 (lista blanca de copyright, decide el usuario) · P6 (`VAULT_ROOT`, solo si se migra) · P1/P7 | sesión + usuario |
+> | `opencode-site` (Desktop) | paso manual en el panel de Vercel (usuario; el CLI no tiene token válido) · verificar favicon/redirect/aviso en producción · refrescar el espejo `notas-nexus` ("baseline 798") · confirmar la lista final de 3 notas omitidas | usuario + sesión |
+> | `opencode-nube` (esta) | nada propio: la PISTA quedó `#procesado` y el veredicto es "no migrar". 3 acciones reversibles del usuario (papelera, backup de 458 MB, fijar el vault) + 5 datos de la cuenta institucional | usuario |
 
 ### Lo que queda para el usuario (los agentes no lo resuelven)
 
@@ -402,6 +411,37 @@ git ignora pero OneDrive sube**: `site/public/assets/` 664 MB, `.obsidian/` 162 
 > **Nunca compilar dentro de OneDrive.** El build va en disco local (worktree o copia
 > temporal), como se verificó 3 veces. Y `.gitignore` **no aplica a OneDrive**: el cliente
 > sube cualquier carpeta que esté dentro de la carpeta de OneDrive, ignorada o no.
+
+### Tanda 28/10/2026 00:40–01:10 — borrado del `.git` huérfano de la raíz de OneDrive (con respaldo)
+
+> [!info] 🔍 Qué era exactamente
+> La raíz de OneDrive tenía una carpeta `.git` (23 MB) **sin archivos de trabajo**: era un
+> **clon viejo del repo de notas** (21 commits en `main`) + **1 commit local único**
+> `b2e96c6` *"Primer commit: Inicialización del proyecto Bingo SaaS"* (120 archivos,
+> +89.937 líneas: el snapshot inicial del Bingo y la config de Obsidian de esa época).
+> - **20 de los 21 commits ya están en GitHub** (historia de las notas, idénticos).
+> - `b2e96c6` **NO está en ningún remoto**: GitHub `Mi-Bingo-App.git` tiene `main` = `6666195`
+>   y el clon de trabajo `Documents\Default Project` **no tiene ni un commit** → borrarlo a
+>   ciegas habría perdido ese commit.
+
+> [!success] ✅ Respaldo antes de borrar
+> Copia cruda de la carpeta `.git` (no un `git bundle`: se **atascó** reempaquetando los
+> 1.259 objetos sueltos y pasó los 5 min de timeout) a
+> **`C:\Users\Steven Sànchez\Documents\OneDrive-root-git-huerfano-20261028\`**
+> → **23,0 MB · 1.286 archivos**, verificada: `main` en `b2e96c6`, el commit **colgante**
+> `35c05b6` incluido, `git fsck` **sin errores**. Se recupera con `git clone <esa carpeta>`.
+
+> [!success] ✅ Borrado y verificación
+> `Remove-Item "\\?\...\OneDrive\.git" -Recurse -Force` → **OK a la primera** (a diferencia de
+> la copia institucional, que dio 35 falsos errores de ruta). Raíz de OneDrive:
+> **1.997 → 1.975 MB** (23 MB fuera de la nube).
+> **Vault intacto**: `e72348e` = `origin/master` (0/0), `git fsck` sin errores, **1.795 `.md`**,
+> sin muro de cuota (`QuotaWallTimestamp` ausente).
+
+> [!note] 📌 Lo que queda en la raíz de OneDrive
+> `OneSyncFiles/` (el vault) · `Steven Sánchez/` (**vacía**, 0 MB) · `desktop.ini` · un marcador
+> de OneDrive de 0 bytes. Y lo único que **de verdad** hace bajar la cuota del web:
+> **vaciar la papelera** (1 clic, pendiente del usuario).
 
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive

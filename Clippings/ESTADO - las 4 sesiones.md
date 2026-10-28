@@ -16,7 +16,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - `master` = `origin/master` = **`973e791`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
-> - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.997 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build) el 28/10 00:30. La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: `.obsidian/` (162 MB) y un `.git/` huérfano (23 MB) siguen en la nube.
+> - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.975 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build, 28/10 00:30) y el `.git/` huérfano de la raíz (23 MB, 28/10 01:00, **con respaldo local**). La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: solo queda `.obsidian/` (162 MB) en la nube.
 > - **Verificado por `opencode` (17:40)** y luego **eliminado por decisión del usuario (18:20)**: la copia institucional era un **clon git íntegro** (`Universidad/` 1.110 MB con 818 `.md`, `.git/` 658 MB, `master` 0/0 con `origin`, árbol limpio). **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
 > - ✅ **Riesgo resuelto (18:20):** al eliminar la copia institucional queda **un solo clon** (el personal). Los **12 archivos con ruta literal** `OneDrive\OneSyncFiles` y el **fallback de `sync-vault.mjs:20`** vuelven a ser **correctos** (apuntan al vault real). **P6 vuelve a ser "solo si algún día se decide migrar".**
 > - ⚠️ **Rehidratación (medido 16:20):** `site/public/assets` (**650 MB**) volvió a la copia personal a las 15:31 porque el build de restauración de `opencode-site` corrió **dentro** del clon sincronizado. Sin build corriendo no se rehidrata. La cuota local bajó a 2.445 MB y volvió a **2.647 MB**. **Nunca compilar dentro de OneDrive.**
@@ -63,17 +63,19 @@ Bitácora: `LOG-opencode.md` · Clon: OneDrive
 - Commits: `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`, `99d8c22`, `c11e2b9`, `c4a84b5`, `4fd4960`, `ba68d18`, `ddd27a7`, `47614c0`, `ed7fecb`, `d972965`, `3cb1fdc`, `2ea2d3d`, `313d41e`, `95476d9`, `e98ca05`.
 
 ### Qué falta
-| # | Qué | Prioridad | Decide |
-|---|---|---|---|
-| 1 | **1026 links rotos reales** (no 1039) en 1er/2do/Preuniversitario: apuntan a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
-| 2 | **Embeber 56 PNG ya renderizados** que hoy no están enlazados, en 3 notas de mi zona: DSW U2 `02 - Diseño por componentes e interfaces.md` (**32**), DSW U5 `02 - Control de versiones con Git.md` (**5**), BD U2 `04 - Normalización paso a paso.md` (**19**) | **media** | sesión |
-| 3 | **Normalizar 14.106 errores de formato** en 306 de 809 notas (el "~970" anotado no cuadraba). Por tipo: **3.935** líneas vacías dentro de fence en callout (185 notas) · **126** `ENDINGS mixed` (CRLF+LF) · **15** frontmatter con líneas vacías (rompe el YAML) · **9** de tabla · 6 con fences desbalanceados · 2 header indentado. **~70% es mecánico** | media | sesión |
-| 4 | **32 PNG huérfanos** en `Universidad/Figuras/` (11,36 MB). **Verificado**: los 2 `venn-*.svg` se referencian **sin extensión** (`![[venn-2-conjuntos]]`) y **no** son huérfanos | baja | sesión (P7) |
-| 5 | **3 `.pptx` de Inglés III** sin PDF equivalente: `PPT_Guide to Prepare your Oral Presentation`, `PPT_Structure of a Problem Solving Presentation`, `PRESENTATION TEMPLATE FOR CELEX` | baja | sesión |
-| 6 | **DSW U3 y U4 no tienen material que renderizar** (0 PDF, 0 PNG; solo 4 y 3 notas sin material adjunto). El pendiente no es "renderizar decks": es **conseguir el material** | baja | usuario / sesión |
-| 7 | **2 embeds que no resuelven**: `1er Semestre/Fundamentos de Programación/Fundamentos de FP/Machine Learning.md:161` (`Matplotlib/Seaborn`) y `2do Semestre/Comunicación/Bienvenida y Syllabus Comunicación.md:63` (`../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg`) | media | sesión |
-| 8 | ✅ **Resuelto (18:20):** al cancelarse la migración queda **un solo clon**, así que el riesgo de que dos clones con el mismo `origin` divergan **ya no aplica**. Y el fallback de `sync-vault.mjs:20` vuelve a ser **correcto** (apunta al vault real). Los 12 archivos con ruta literal solo importan si algún día se decide migrar | cerrada | — |
-| 9 | **P6 (`VAULT_ROOT`)**: parametrizar los 12 archivos con ruta literal **solo si algún día se vuelve a decidir migrar**. Hoy es correcto y no hay que tocarlo | **baja** | sesión opencode-onedrive (su zona) |
+> [!warning] ⏳ Qué falta
+>
+> | # | Qué | Prioridad | Decide |
+> |---|---|---|---|
+> | 1 | **1026 links rotos reales** (no 1039) en 1er/2do/Preuniversitario: apuntan a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
+> | 2 | **Embeber 56 PNG ya renderizados** que hoy no están enlazados, en 3 notas de mi zona: DSW U2 `02 - Diseño por componentes e interfaces.md` (**32**), DSW U5 `02 - Control de versiones con Git.md` (**5**), BD U2 `04 - Normalización paso a paso.md` (**19**) | **media** | sesión |
+> | 3 | **Normalizar 14.106 errores de formato** en 306 de 809 notas (el "~970" anotado no cuadraba). Por tipo: **3.935** líneas vacías dentro de fence en callout (185 notas) · **126** `ENDINGS mixed` (CRLF+LF) · **15** frontmatter con líneas vacías (rompe el YAML) · **9** de tabla · 6 con fences desbalanceados · 2 header indentado. **~70% es mecánico** | media | sesión |
+> | 4 | **32 PNG huérfanos** en `Universidad/Figuras/` (11,36 MB). **Verificado**: los 2 `venn-*.svg` se referencian **sin extensión** (`![[venn-2-conjuntos]]`) y **no** son huérfanos | baja | sesión (P7) |
+> | 5 | **3 `.pptx` de Inglés III** sin PDF equivalente: `PPT_Guide to Prepare your Oral Presentation`, `PPT_Structure of a Problem Solving Presentation`, `PRESENTATION TEMPLATE FOR CELEX` | baja | sesión |
+> | 6 | **DSW U3 y U4 no tienen material que renderizar** (0 PDF, 0 PNG; solo 4 y 3 notas sin material adjunto). El pendiente no es "renderizar decks": es **conseguir el material** | baja | usuario / sesión |
+> | 7 | **2 embeds que no resuelven**: `1er Semestre/Fundamentos de Programación/Fundamentos de FP/Machine Learning.md:161` (`Matplotlib/Seaborn`) y `2do Semestre/Comunicación/Bienvenida y Syllabus Comunicación.md:63` (`../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg`) | media | sesión |
+> | 8 | ✅ **Resuelto (18:20):** al cancelarse la migración queda **un solo clon**, así que el riesgo de que dos clones con el mismo `origin` divergan **ya no aplica**. Y el fallback de `sync-vault.mjs:20` vuelve a ser **correcto** (apunta al vault real). Los 12 archivos con ruta literal solo importan si algún día se decide migrar | cerrada | — |
+> | 9 | **P6 (`VAULT_ROOT`)**: parametrizar los 12 archivos con ruta literal **solo si algún día se vuelve a decidir migrar**. Hoy es correcto y no hay que tocarlo | **baja** | sesión opencode-onedrive (su zona) |
 
 ### Próximos pasos
 1. **Embeber los 56 PNG** (2): mejor relación esfuerzo/resultado y 100% dentro de mi zona → un commit con rutas exactas.
@@ -102,13 +104,15 @@ Bitácora: `LOG-opencode-site.md` · Clon: Desktop (`notas-nexus-unificado`)
 - Commits: `4a3e443`, `ba9ad13`, `88b3fac`, `486f927`, `7eeef28`, `66c9eca`, `edd511b`, `332d22a`, `0d7c562`, `de42ca3`, `878bcc6`, `cd01900`, `8a63b04`, `81a3f9c`, `19ac29c`.
 
 ### Qué falta
-| # | Qué | Prioridad | Decide |
-|---|---|---|---|
-| 1 | **Paso manual en el panel de Vercel** para liberar `neonotes.vercel.app` (hoy lo responde otro proyecto). El CLI no tiene token válido | media | **usuario** (guía en `site/RUNBOOK.md` §8) |
-| 2 | **Verificar el deploy con el contenido nuevo** (806 notas · 833 páginas) cuando termine Vercel | media | sesión |
-| 3 | **CI anti-fuga** (P3 de `opencode-onedrive`): un workflow que falle el build si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs. Hoy **no hay `.github/workflows`** | media | **sesión** (mi zona) — con tu ok |
-| 4 | **Carpeta `_privado/` reservada** (decisión 2 del plan): el sync la ignora por estructura, pero nadie la usa | baja | usuario |
-| 5 | **Reporte en el build** de qué material quedó excluido y por qué (hoy solo se ve el aviso en la nota) | baja | sesión |
+> [!warning] ⏳ Qué falta
+>
+> | # | Qué | Prioridad | Decide |
+> |---|---|---|---|
+> | 1 | **Paso manual en el panel de Vercel** para liberar `neonotes.vercel.app` (hoy lo responde otro proyecto). El CLI no tiene token válido | media | **usuario** (guía en `site/RUNBOOK.md` §8) |
+> | 2 | **Verificar el deploy con el contenido nuevo** (806 notas · 833 páginas) cuando termine Vercel | media | sesión |
+> | 3 | **CI anti-fuga** (P3 de `opencode-onedrive`): un workflow que falle el build si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs. Hoy **no hay `.github/workflows`** | media | **sesión** (mi zona) — con tu ok |
+> | 4 | **Carpeta `_privado/` reservada** (decisión 2 del plan): el sync la ignora por estructura, pero nadie la usa | baja | usuario |
+> | 5 | **Reporte en el build** de qué material quedó excluido y por qué (hoy solo se ve el aviso en la nota) | baja | sesión |
 
 > [!success] ✅ Ya no pendientes (cerrados en esta ronda)
 > Ya no pendientes (cerrados en esta ronda): verificación en producción de favicon/redirect/aviso (hecha), refresco del espejo (hecho) y `git pull` del clon Desktop (hecho: `master` = `origin/master`).
@@ -141,25 +145,28 @@ Bitácora: `LOG-opencode-nube.md` · Pista: `PISTA - migracion vault a OneDrive 
 - **Sin dos clones**: queda **un solo clon** (el personal). Lo borrado en la institucional está en **GitHub** (`origin/master`) y en la personal → no se perdió nada. La institucional queda vacía y sus borrados van a la papelera de esa cuenta (1 TB, sin efecto).
 - **`site/public/assets` eliminado (28/10 00:30, por el usuario)**: 650 MB que eran **artefacto de build, no fuente** — lo escribe `site/scripts/sync-vault.mjs:23` (`OUT_ASSETS = public/assets`), está ignorado por `site/.gitignore` y **Vercel lo reconstruye en cada deploy** (`site/vercel.json`: `VAULT_DIR=../Universidad npm run sync && npm run build`). Los **originales** están en `Universidad/` (git + nube) y el código que sí importa (`site/src/**`, íconos) son MB. Raíz local **2.647 → 1.997 MB**. **No rompe nada**. Efecto extra: **elimina la fuente de la fuga** (los 650 MB que volvían solos con cada build dentro del vault). Falta **vaciar la papelera** en el web para que la cuota baje de verdad.
 - **`.obsidian` (167 MB) se queda**: es la config de Obsidian (plugins/temas); borrarlo de la nube lo borraría también en local. Para sacarlo de la nube sin perderlo → **"Dejar de sincronizar"** (lo quita del drive y deja los locales).
+- **`.git/` huérfano de la raíz de OneDrive → BORRADO (28/10 01:00, con respaldo)**: era un clon viejo del repo de notas (21 commits; 20 ya en GitHub) + **1 commit local único** `b2e96c6` ("Primer commit: Inicialización del proyecto Bingo SaaS") que **no está en ningún remoto** → primero se copió la carpeta `.git` entera a `Documents\OneDrive-root-git-huerfano-20261028\` (23,0 MB, verificada con `fsck` sin errores, incluye el commit colgante) y después se borró. Raíz local **1.997 → 1.975 MB**. Vault verificado intacto (`e72348e`, 0/0, `fsck` sin errores, 1.795 `.md`).
 - **Los 4 mecanismos de OneDrive, medidos** (tabla completa en `LOG-opencode-nube.md`): *Seleccionar carpetas* y *Liberar espacio* → solo sacan la copia **de la PC**, la nube no baja; *Dejar de sincronizar* y *mover fuera de la carpeta* → **sacan de la nube** y sí liberan cuota; *Desvincular este equipo* → desconecta la PC sin tocar la nube. Y: **si el archivo sigue dentro de `OneDrive\`, OneDrive lo sincroniza** — `.gitignore` no aplica al cliente.
-- **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push). Todos en `origin/master`.
+- **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push), `822c9c1` (limpieza final de la nube) + `e72348e` (su confirmación). Todos en `origin/master`.
 - **Commits de la copia institucional**: `f6a27ef` (registro de la copia verificada) y `8129007` (confirmación del push) → ya en `origin/master`.
 
 ### Qué falta
-| # | Qué | Prioridad | Decide |
-|---|---|---|---|
-| 1 | **Nada de la migración**: la copia institucional ya está eliminada (18:20) y el vault activo es el personal. Queda decidir si se **desvincula** la cuenta institucional del cliente de la PC (hoy está dada de alta y vacía) | baja | **usuario** |
-| 2 | **Teléfono**: la app oficial sí entra con `fredsanc@espol.edu.ec`, pero **el MDM no deja emparejar carpetas** → **Obsidian local en el teléfono no es viable sin Obsidian Sync (de pago)**. Para **leer** en el móvil, el sitio ya está publicado (806 notas + buscador) → no requiere nada | media | **usuario** |
-| 3 | **Higiene de cuota en la personal**: `site/public/assets/` **ya se borró** (650 MB) → falta **vaciar la papelera** en el web (1 clic, si no los 650 MB siguen contados) y decidir si `.obsidian/` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue bien). También queda el `.git/` huérfano (23 MB) en la raíz de OneDrive | media | **usuario** |
-| 4 | **Historial de versiones** de la personal: las versiones anteriores se van solas a los 30 días; vaciar la papelera sigue ayudando, pero no es lo que bloqueaba | media | **usuario** |
-| 5 | **Nunca compilar dentro de OneDrive**: `site/public/assets` (650 MB) se rehidrató solo cuando un build corrió en el clon sincronizado (medido 16:20) | media | **sesiones** |
-| 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
-| 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
-| 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
+> [!warning] ⏳ Qué falta
+>
+> | # | Qué | Prioridad | Decide |
+> |---|---|---|---|
+> | 1 | **Nada de la migración**: la copia institucional ya está eliminada (18:20) y el vault activo es el personal. Queda decidir si se **desvincula** la cuenta institucional del cliente de la PC (hoy está dada de alta y vacía) | baja | **usuario** |
+> | 2 | **Teléfono**: la app oficial sí entra con `fredsanc@espol.edu.ec`, pero **el MDM no deja emparejar carpetas** → **Obsidian local en el teléfono no es viable sin Obsidian Sync (de pago)**. Para **leer** en el móvil, el sitio ya está publicado (806 notas + buscador) → no requiere nada | media | **usuario** |
+> | 3 | **Higiene de cuota en la personal**: `site/public/assets/` **ya se borró** (650 MB) y el `.git/` huérfano de la raíz **también** (23 MB, 28/10 01:00, con respaldo en `Documents\OneDrive-root-git-huerfano-20261028\`) → falta **vaciar la papelera** en el web (1 clic, si no los 673 MB siguen contados) y decidir si `.obsidian/` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue bien) | media | **usuario** |
+> | 4 | **Historial de versiones** de la personal: las versiones anteriores se van solas a los 30 días; vaciar la papelera sigue ayudando, pero no es lo que bloqueaba | media | **usuario** |
+> | 5 | **Nunca compilar dentro de OneDrive**: `site/public/assets` (650 MB) se rehidrató solo cuando un build corrió en el clon sincronizado (medido 16:20) | media | **sesiones** |
+> | 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
+> | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
+> | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
 
 ### Próximos pasos
 1. Confirmar en la web de la institucional que `OneSyncFiles` ya no aparece (los 4.698 borrados se propagan solos; 1 TB, sin urgencia).
-2. Higiene de cuota en la personal: excluir `site/public/assets/` y `.obsidian/` (click derecho → OneDrive → Dejar de sincronizar) y borrar el `.git/` huérfano de la raíz de OneDrive.
+2. Higiene de cuota en la personal: **`site/public/assets/` (650 MB) y el `.git/` huérfano (23 MB) ya se borraron** → falta solo **vaciar la papelera** (1 clic) y decidir si `.obsidian/` (162 MB) sale de la nube (click derecho → OneDrive → **Dejar de sincronizar**: lo deja local, Obsidian sigue bien).
 3. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
 4. **No volver a copiar el vault a la institucional sin antes hacer P6** (`VAULT_ROOT`) y avisar a las 3 sesiones: la copia funciona y se verifica fácil, pero deja **dos clones con el mismo `origin`** (riesgo medido por `opencode` 17:40) y rutas hardcodeadas apuntando al vault viejo.
 
@@ -178,15 +185,17 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19` + merges.
 
 ### Qué falta
-| # | Qué | Prioridad | Decide |
-|---|---|---|---|
-| 1 | **P8**: arreglar `verificar_nota.py` en Cálculo Vectorial (líneas vacías dentro de fences en callouts). Es mi zona | media | sesión |
-| 2 | **P4**: mover mis scripts de auditoría (`qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py`) a `Universidad/Herramientas/Mantenimiento/` con **una sola entrada** | media | sesión |
-| 3 | **P3**: CI (GitHub Actions) que falle si algo de `_no-publicar.txt` llega a `public/` o a un ZIP | media | sesión + usuario (¿CI?) |
-| 4 | **P6**: `VAULT_ROOT` en los 15+ archivos con ruta absoluta (8 en `SVG-Pipeline/`, 3 en `Herramientas/`, `sync-vault.mjs:19-20`, 3 `.md`) | media | sesión (antes de cualquier migración) |
-| 5 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
-| 6 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
-| 7 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
+> [!warning] ⏳ Qué falta
+>
+> | # | Qué | Prioridad | Decide |
+> |---|---|---|---|
+> | 1 | **P8**: arreglar `verificar_nota.py` en Cálculo Vectorial (líneas vacías dentro de fences en callouts). Es mi zona | media | sesión |
+> | 2 | **P4**: mover mis scripts de auditoría (`qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py`) a `Universidad/Herramientas/Mantenimiento/` con **una sola entrada** | media | sesión |
+> | 3 | **P3**: CI (GitHub Actions) que falle si algo de `_no-publicar.txt` llega a `public/` o a un ZIP | media | sesión + usuario (¿CI?) |
+> | 4 | **P6**: `VAULT_ROOT` en los 15+ archivos con ruta absoluta (8 en `SVG-Pipeline/`, 3 en `Herramientas/`, `sync-vault.mjs:19-20`, 3 `.md`) | media | sesión (antes de cualquier migración) |
+> | 5 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
+> | 6 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
+> | 7 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
 
 ### Próximos pasos
 1. P8 (mi zona, sin dependencias de nadie) → commit con rutas exactas.
@@ -198,16 +207,18 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 
 ## ✅ Decisiones que esperan al usuario
 
-| # | Decisión | Impacto si no se decide | Detalle |
-|---|---|---|---|
-| 1 | **Vaciar la papelera** tras el borrado de `site/public/assets` (650 MB) y decidir si `.obsidian` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, no rompe Obsidian) | la cuota sigue contando los 650 MB como borrados | tablero §3 |
-| 2 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
-| 3 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
-| 4 | **Liberar `neonotes.vercel.app`** en el panel de Vercel | el dominio duplicado sigue sirviendo otra página | `site/RUNBOOK.md` §8 |
-| 5 | **Los 1026 links rotos reales** (no 1039: 13 son falsos positivos en `Herramientas/`): borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
-| 6 | **P2**: lista blanca o carpeta `_privado/` | depende de que alguien recuerde la lista negra | `LOG-opencode-onedrive.md` |
-| 7 | ~~Material con copyright en la institucional~~ → **ya no aplica**: la copia se eliminó y la institucional quedó **vacía** | — | PISTA |
-| 8 | **Teléfono**: **leer** ya está resuelto (sitio publicado, 806 notas + buscador, cero sincronización). **Editar** en Obsidian desde el móvil exigiría **Obsidian Sync (de pago)**. La institucional (1 TB) queda vacía y disponible si quieres las fotos ahí | fotos sin respaldo en la nube + sin edición local en el móvil | PISTA |
+> [!question] ❓ Decisiones que esperan al usuario
+>
+> | # | Decisión | Impacto si no se decide | Detalle |
+> |---|---|---|---|
+> | 1 | **Vaciar la papelera** tras el borrado de `site/public/assets` (650 MB) y decidir si `.obsidian` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, no rompe Obsidian) | la cuota sigue contando los 650 MB como borrados | tablero §3 |
+> | 2 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
+> | 3 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
+> | 4 | **Liberar `neonotes.vercel.app`** en el panel de Vercel | el dominio duplicado sigue sirviendo otra página | `site/RUNBOOK.md` §8 |
+> | 5 | **Los 1026 links rotos reales** (no 1039: 13 son falsos positivos en `Herramientas/`): borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
+> | 6 | **P2**: lista blanca o carpeta `_privado/` | depende de que alguien recuerde la lista negra | `LOG-opencode-onedrive.md` |
+> | 7 | ~~Material con copyright en la institucional~~ → **ya no aplica**: la copia se eliminó y la institucional quedó **vacía** | — | PISTA |
+> | 8 | **Teléfono**: **leer** ya está resuelto (sitio publicado, 806 notas + buscador, cero sincronización). **Editar** en Obsidian desde el móvil exigiría **Obsidian Sync (de pago)**. La institucional (1 TB) queda vacía y disponible si quieres las fotos ahí | fotos sin respaldo en la nube + sin edición local en el móvil | PISTA |
 
 > [!success] ✅ Resueltas en esta tanda
 > **Resueltas en esta tanda** (ya no esperan decisión): cuál vault queda activo (**personal**), la migración a la institucional (**cancelada**, copia eliminada), los **dos clones con el mismo `origin`** (ya hay uno solo) y **P6** (vuelve a ser "solo si algún día se migra").
@@ -300,6 +311,13 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 > Recordatorio para las 3 sesiones: `site/public/assets` **ya no está** (650 MB, lo borró el
 > usuario) → si necesitan esos assets para un build, se regeneran con `npm run sync`
 > **en disco local**, nunca dentro del clon sincronizado.
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, PISTA - migracion}` · ~2 min
+> **Borrado del `.git/` huérfano de la raíz de OneDrive** (23 MB), **con respaldo verificado**
+> en `Documents\OneDrive-root-git-huerfano-20261028\`. Raíz local **1.975 MB**. Vault
+> intacto (`fsck` sin errores, 1.795 `.md`). Se actualizan los números globales, mi §3 y la
+> PISTA. **Arrastra también la pasada de callouts de `opencode`** en los mismos 3 archivos
+> (working tree compartido). **No toco `Universidad/**` ni `site/**`.**
 
 ---
 

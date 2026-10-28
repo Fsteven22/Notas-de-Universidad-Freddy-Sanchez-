@@ -55,17 +55,19 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
 
 ## Contexto medido (2026-10-27)
 
-| Carpeta | Tamaño | ¿Sirve en la nube? |
-|---|---|---|
-| `Universidad/` | 1,11 GB | Sí — es el contenido real (notas + PDF + 1 `.wmv` de 58 MB) |
-| `site/` (código versionado) | 1 MB | Sí — es el repo del sitio (30 rutas) |
-| `site/public/assets/` | **664 MB** | **No** — artefactos del sync, ya ignorados por `site/.gitignore`; se regeneran en cada build |
-| `site/notes-md/` | 13 MB | **No** — copia regenerable del vault en markdown |
-| `.git/` | **658 MB** | Opcional — ya espejado en GitHub; un solo pack. En la copia institucional **sí** se copió, para que el repo sea autónomo |
-| `.obsidian/` | 162 MB | **No** — ignorado por git, se regenera |
-| `.git/` huérfano en la raíz de OneDrive | 23 MB | **No** — rama `main` abandonada, se puede borrar |
-| `OneSyncFiles-backups/` | 458 MB | Opcional |
-| **Copia institucional** | 1,77 GB / 1 TB | **Se hizo, se verificó y se eliminó (18:20)** — queda en `#procesado` |
+> [!info] 📁 Contexto medido: qué sirve en la nube
+>
+> | Carpeta | Tamaño | ¿Sirve en la nube? |
+> |---|---|---|
+> | `Universidad/` | 1,11 GB | Sí — es el contenido real (notas + PDF + 1 `.wmv` de 58 MB) |
+> | `site/` (código versionado) | 1 MB | Sí — es el repo del sitio (30 rutas) |
+> | `site/public/assets/` | **664 MB** | **No** — artefactos del sync, ya ignorados por `site/.gitignore`; se regeneran en cada build |
+> | `site/notes-md/` | 13 MB | **No** — copia regenerable del vault en markdown |
+> | `.git/` | **658 MB** | Opcional — ya espejado en GitHub; un solo pack. En la copia institucional **sí** se copió, para que el repo sea autónomo |
+> | `.obsidian/` | 162 MB | **No** — ignorado por git, se regenera |
+> | `.git/` huérfano en la raíz de OneDrive | 23 MB | **No** — rama `main` abandonada, se puede borrar |
+> | `OneSyncFiles-backups/` | 458 MB | Opcional |
+> | **Copia institucional** | 1,77 GB / 1 TB | **Se hizo, se verificó y se eliminó (18:20)** — queda en `#procesado` |
 
 ## Preguntas para los otros agentes
 
@@ -201,10 +203,12 @@ tags: [clippings, pista, infraestructura, onedrive, decision, telefono]
      institucional en el futuro (hoy **no** está copiado ahí: la copia se eliminó).
   4. Retención de la institucional al terminar la carrera, si se vuelve a usar.
 - **Pendiente de sesión (sin riesgo, reversible):** `site/public/assets/` **ya se borró**
-  (28/10 00:30, por el usuario: 650 MB de artefacto de build → raíz local 2.647 → **1.997 MB**).
-  Falta **vaciar la papelera** en el web (1 clic). Queda decidir si `.obsidian/` (162 MB) sale
-  de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue funcionando) y si
-  se borra el `.git/` huérfano (23 MB) de la raíz de OneDrive.
+  (28/10 00:30, por el usuario: 650 MB de artefacto de build → raíz local 2.647 → **1.997 MB**)
+  y el **`.git/` huérfano de la raíz también** (28/10 01:00, con respaldo verificado en
+  `C:\Users\Steven Sànchez\Documents\OneDrive-root-git-huerfano-20261028\` → raíz local
+  **1.975 MB**). Falta **vaciar la papelera** en el web (1 clic). Queda decidir si
+  `.obsidian/` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local,
+  Obsidian sigue funcionando).
 
 ---
 **Tags:** #clippings #pista #infraestructura #onedrive #decision #telefono #procesado #cancelada
