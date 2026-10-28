@@ -174,14 +174,16 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 
 | # | Decisión | Impacto si no se decide | Detalle |
 |---|---|---|---|
-| 1 | **Cuál vault queda activo**: el personal (5 GB, topado) o el **institucional** (1 TB, ya copiado y verificado) | dos copias del mismo repo en dos cuentas, sin fuente de verdad única | tablero §3 + PISTA |
+| 1 | **Higiene de cuota en la personal** (2 clics): excluir `site/public/assets/` (664 MB) y `.obsidian/` (162 MB) de la nube → **corta el historial de versiones**, que es lo que realmente topaba la cuenta | la personal sigue con **muro de cuota** → OneDrive deja de subir cambios nuevos (el contenido versionado está a salvo en GitHub) | tablero §3 |
 | 2 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
 | 3 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
 | 4 | **Liberar `neonotes.vercel.app`** en el panel de Vercel | el dominio duplicado sigue sirviendo otra página | `site/RUNBOOK.md` §8 |
-| 5 | **Los 1039 BAD**: borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
+| 5 | **Los 1026 links rotos reales** (no 1039: 13 son falsos positivos en `Herramientas/`): borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
 | 6 | **P2**: lista blanca o carpeta `_privado/` | depende de que alguien recuerde la lista negra | `LOG-opencode-onedrive.md` |
-| 7 | **Material con copyright** en la cuenta institucional | el material ya está copiado ahí → define si ESPOL lo conserva o lo borra al egresar | PISTA |
-| 8 | **Teléfono**: app oficial de OneDrive con `fredsanc@espol.edu.ec` (notas + fotos) | fotos y notas siguen sin acceso desde el celular | PISTA |
+| 7 | ~~Material con copyright en la institucional~~ → **ya no aplica**: la copia se eliminó y la institucional quedó **vacía** | — | PISTA |
+| 8 | **Teléfono**: **leer** ya está resuelto (sitio publicado, 806 notas + buscador, cero sincronización). **Editar** en Obsidian desde el móvil exigiría **Obsidian Sync (de pago)**. La institucional (1 TB) queda vacía y disponible si quieres las fotos ahí | fotos sin respaldo en la nube + sin edición local en el móvil | PISTA |
+
+> **Resueltas en esta tanda** (ya no esperan decisión): cuál vault queda activo (**personal**), la migración a la institucional (**cancelada**, copia eliminada), los **dos clones con el mismo `origin`** (ya hay uno solo) y **P6** (vuelve a ser "solo si algún día se migra").
 
 ---
 
@@ -209,6 +211,24 @@ Bitácora: `LOG-opencode-onedrive.md` · Clon: OneDrive
 > **No lo commiteo yo**: es trabajo en curso de otra sesión. Hay que decidir si se
 > **recupera el LEEME** o si se **consolida todo aquí** (y entonces este tablero es el
 > único archivo y los avisos van aquí).
+
+> [!success] ✅ Estado para las 3 sesiones (27/10 ~18:40): **la nube dejó de bloquear**, las colas están libres
+> **Cancelado y resuelto** (no se reabre): la migración a la institucional, el segundo clon, el
+> P6 y el "vaciar la papelera". Efecto directo en cada bloque:
+> - **`opencode`**: sus pendientes **8** (P6 "ya migró") y **9** (dos clones con el mismo
+>   `origin`) **quedan resueltos** → sigue su cola real: embeber los 56 PNG (2) y normalizar
+>   los 14.106 errores de formato (3). Que marque esos dos como cerrados en su bloque.
+> - **`opencode-site`**: su pendiente **4** ("revisar si el favicon/og necesitan versión
+>   institucional") **queda sin objeto** → lo cierra. Sigue su cola: verificar el deploy de
+>   833 páginas (2) y el CI anti-fuga (3, con el ok del usuario).
+> - **`opencode-onedrive`**: **P6 no se hace ahora** (vuelve a ser "solo si algún día se
+>   migra"). Sigue su cola: P8 (1), P4 (2), P3 (3), P2 (5), P1/P7 (6-7).
+> **Regla que sigue viva:** **nunca compilar dentro de OneDrive** — `site/public/assets`
+> (650 MB) se rehidrató solo, medido 16:20. El build va en disco local.
+> **Y una regla nueva, medida hoy:** la nube cuenta el **historial de versiones** (30 días en
+> cuenta personal) → borrar en local no libera cuota hasta que las versiones expiren o se
+> vacíe la papelera; y **`.gitignore` no aplica a OneDrive**, que sube `site/public/assets/`,
+> `.obsidian/` y cualquier otra carpeta igual.
 
 > [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, PISTA - migracion}` · ~2 min
 > **Migración CANCELADA y copia institucional eliminada** (18:20, decisión del usuario).
