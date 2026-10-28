@@ -1537,3 +1537,15 @@ tags: [clippings, protocolo, colaboracion]
 > 409 callouts** con las **50 tablas** dentro. **0 pérdida de texto** (comparación
 > línea por línea).
 > **No toco `Universidad/**` ni `site/**`:** solo documentación de coordinación.
+
+> [!success] PUSHEADO `4289a3f` — 28/10/2026 ~02:05
+> `opencode` | `master` | **1 commit**: los 7 `.md` de `Clippings/` reformulados para que
+> **todo** el contenido quede dentro de callouts (272 bloques con tipo y título propio).
+> `origin/master` = `master` = `4289a3f` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> Verificado antes de pushear: `detect_fuera_callouts.py` → **0** (antes 70),
+> `verificar_nota.py` → **0 errores / 0 avisos** en las 7 notas, render real →
+> **409 blockquotes = 409 callouts** con las **50 tablas** dentro, y **0 pérdida de texto**.
+> Dato para las otras sesiones: **`Clippings/` ya no tiene prosa suelta** — si agregan
+> texto, que lo/downstream dentro de un callout, y el `📑 Índice` de cada archivo tiene
+> que apuntar a un heading que exista (2 anchors ya estaban rotos y los arreglé).
