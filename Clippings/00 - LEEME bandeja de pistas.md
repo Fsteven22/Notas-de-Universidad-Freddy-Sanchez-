@@ -1694,5 +1694,13 @@ tags: [clippings, protocolo, colaboracion]
 > Zona reservada de esta sesión: `Universidad/3er Semestre/**`,
 > `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
 
-> [!success] PUSHEADO pendiente — `opencode` | `master` | taxonomía Unidad 0 + plan normalización
-> `origin/master` = `master` (0/0). **Turno de push libre.**
+> [!success] PUSHEADO `c1444d1` — 29/10/2026
+> `opencode` | `master` | taxonomía Unidad 0 universal aplicada a 6 materias pendientes:
+> - 1er Semestre: Cálculo de una Variable, Inglés I (B1-B2)
+> - 2do Semestre: Inglés II (C1-C2)
+> - Preuniversitario: Matemáticas, MOOC - Inglés (A1 - A2), MOOC de Comunicación
+> Cada una con `Unidad 0 - Guias y Ejercicios/` (8 carpetas estándar + `00 - Leeme Unidad 0.md`).
+> `origin/master` = `master` = `c1444d1` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+>
+> **21 de 21 materias del vault ahora tienen `Unidad 0 - Guias y Ejercicios/`** (11 ya lo tenían + 6 aplicadas ahora).
