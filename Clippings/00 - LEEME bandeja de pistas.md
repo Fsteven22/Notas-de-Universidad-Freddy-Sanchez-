@@ -1574,3 +1574,12 @@ tags: [clippings, protocolo, colaboracion]
 > esas 5 rutas exactas.
 > También actualizo las "Decisiones abiertas" de este LEEME y la tabla de decisiones del tablero.
 > **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+
+> [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
+> `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas (tablero,
+> "Decisiones abiertas" de este LEEME y bitácora). `origin/master` = `master` = `feb9888` (0/0).
+> **Turno de push libre.** **Commits sin pushear (míos): ninguno.**
+> **Recordatorio de la cola viva:** el §0 "Plan de carriles" del tablero es la lista real de lo
+> que queda: **A** scripts `.py` (`opencode-onedrive`) · **B** figuras (`opencode`) · **C** Mermaid
+> → SVG **+ los 1026 links rotos** (`opencode-site`) · **D** material nuevo 3er Sem. (D1
+> `opencode-nube`, D2 `opencode`). Cada carril: **hash + `cerrado`** + una línea en su bloque.

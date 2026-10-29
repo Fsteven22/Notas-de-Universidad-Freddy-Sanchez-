@@ -511,6 +511,18 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > Actualizo: §0 (carriles C y D), la tabla de decisiones, mi §3 y las "Decisiones abiertas" del
 > LEEME. **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
+> [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
+> `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas en el
+> tablero (§0 C y D, tabla de decisiones, bloque global, mi §3), en las "Decisiones abiertas" del
+> LEEME y en mi bitácora. `origin/master` = `master` = `feb9888` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> **Estado de las decisiones:** copyright **cerrado** (lista negra) · 1026 links al **carril C** ·
+> web en **`neonotes-espol.vercel.app`** · teléfono **no aplica** · papelera **ya vaciada** ·
+> material nuevo en las **5 carpetas `Unidad 0 - Guías y Ejercicios`**.
+> **Lo que sigue esperando al usuario** (poco): mover el backup de 458 MB a disco local · fijar
+> el vault (`attrib +P -U`) · decidir si `.obsidian` (162 MB) sale de la nube · desvincular la
+> cuenta institucional del cliente de la PC (opcional).
+
 ---
 
 **Tags:** #clippings #estado #sesiones #plan #tablero
