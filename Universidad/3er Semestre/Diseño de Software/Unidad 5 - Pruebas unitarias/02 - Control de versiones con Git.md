@@ -31,6 +31,8 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 
 ![[../Diagramas/dsw-u5-03-01-graph.svg]]
 
+![[Figuras/01b-p35.png]]
+
 ---
 
 ## 🧵 Flujo Mínimo de Equipo (Pressman cap. 22 + tus enlaces)
@@ -46,6 +48,7 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > 5. **Merge y borra la rama:** main siempre verde y desplegable.
 >
 > ![[../Diagramas/dsw-u5-03-02-graph.svg]]
+> ![[Figuras/01b-p39.png]]
 >
 > **Comandos que cubren el 90% del curso:**
 >
@@ -75,6 +78,12 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 ## 🗺️ Diagrama de Decisión: ¿Directo, Rama o PR?
 
 ![[../Diagramas/dsw-u5-03-03-flow.svg]]
+
+![[Figuras/01b-p42.png]]
+
+![[Figuras/01b-p43.png]]
+
+![[Figuras/01b-p44.png]]
 
 > [!tip] 💡 Lectura del diagrama
 >

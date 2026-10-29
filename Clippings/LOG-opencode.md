@@ -923,4 +923,42 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
+## 18. Novena tanda: carril B — embebido de los 7 PNG huérfanos reales
+
+> [!info] 📌 Qué se hizo
+>
+> - **5 PNG de DSW U5** (`01b-p35`, `01b-p39`, `01b-p42`, `01b-p43`, `01b-p44`) embebidos en
+>   `3er Semestre/Diseño de Software/Unidad 5 - Pruebas unitarias/02 - Control de versiones con Git.md`:
+>   p35 (portada "Control de versiones") tras el SVG de introducción; p39 (flujo git) dentro del
+>   callout del SVG de flujo; p42/p43/p44 (conflictos de merge) tras el SVG de diagrama de decisión.
+> - **2 PNG de BD U2** (`bd-023-p15`, `bd-s04-p12`) embebidos en
+>   `3er Semestre/Sistema de Bases de Datos/Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso.md`:
+>   p15 ("DEPENDENCIA FUNCIONAL") tras el diagrama de dependencias MATRICULA; p12 ("Segunda forma normal")
+>   tras el flujo de normalización.
+> - Todos los inserts siguen la convención del carril B: PNG a columna 0 tras el callout del SVG ancla;
+>   dentro del callout si la nota ya usa esa forma.
+>
+> [!success] ✅ Verificación
+>
+> - `02 - Control de versiones con Git.md`: 5 embeds `![[Figuras/01b-p*.png]]` insertados.
+> - `04 - Normalización paso a paso.md`: 2 embeds `![[Figuras/bd-*.png]]` insertados.
+> - Los PNG ya están commiteados en el carril B (`b9b4f85`); `Universidad/Figuras/` quedó con 0 archivos.
+>
+> [!warning] ⚠️ Qué NO se tocó
+>
+> - `3er Semestre/Sistema de Bases de Datos/`: solo la nota `04 - Normalización paso a paso.md`.
+>   El PDF movido por el usuario (`Database Systems...pdf` → `Diapositivas/`) y otros cambios ajenos
+>   de BD NO se stagean ni se commitean (salvo el PDF si el usuario lo autoriza explícitamente).
+> - `2do Semestre/Cálculo Vectorial/**`: cambios ajenos, sin tocar.
+> - `Herramientas/`, `site/**`: zonas ajenas.
+>
+> [!info] 📋 Carril B — CERRADO
+>
+> - 122 figuras movidas de `Universidad/Figuras/` a 6 carpetas `Figuras/` de materia.
+> - 32 embeds insertados en 27 notas.
+> - 7 PNG huérfanos embebidos en 2 notas.
+> - `Universidad/Figuras/` vacío.
+
+---
+
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b
