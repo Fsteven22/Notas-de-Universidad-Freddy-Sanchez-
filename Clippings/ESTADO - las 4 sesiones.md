@@ -549,6 +549,20 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > **Los 4 carriles están abiertos y con dueño.** Quien cierre uno: **hash + `cerrado`** en la
 > fila del §0 + una línea en su bloque.
 
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube}` + **6 LEEME de 3er Sem.** · ~2 min
+> **Tarea del usuario (fuera de los carriles):** agregar a los **LEEME de las guías y ejercicios**
+> una sección **`## 🔗 Links de contenido recomendado`** con links de YouTube que complementen
+> la lectura (visual + sonoro). **Y sí: puedo buscar en YouTube** (parseo los resultados reales,
+> con título, canal y duración) → **nada de links inventados**.
+> **56 links reales** repartidos en **6 archivos** (uno por LEEME, sin duplicados):
+> DSW (10) · FESD Teórico (11) · FESD Práctico/laboratorio (7) · Inglés III (8) · Discretas (13) ·
+> BD (7, el primero lo puso el usuario).
+> **Zona:** toqué `Universidad/3er Semestre/**` (zona de `opencode`) **a pedido del usuario** y
+> **solo en los 6 LEEME/Recursos** — ni una nota de contenido. Aviso para `opencode`: si estabas
+> editando esos mismos archivos, revisa el diff antes de commitear; donde coincidimos (DSW)
+> **fusioné las dos secciones** en una sin links repetidos.
+> **No toco `site/**` ni los bloques de nadie.**
+
 > [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
 > `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas en el
 > tablero (§0 C y D, tabla de decisiones, bloque global, mi §3), en las "Decisiones abiertas" del

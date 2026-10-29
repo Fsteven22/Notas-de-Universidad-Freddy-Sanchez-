@@ -37,6 +37,19 @@ tags: [CCPG1042, unidad0, recursos]
 - [[SIEL - Casos de Uso]] — caso SIEL de [[04 - UML casos de uso, secuencia y actividad|U2-04]].
 - [[SIEL - Modelo de Clases]] — desarrollo completo del modelado de clases, en [[03 - UML clases, objetos y relaciones|U2-03]].
 
+## 🔗 Links de contenido recomendado
+
+- https://www.youtube.com/watch?v=Z0yLerU0g-Q — UML Tutorial: Diagrama de Clases desde cero (Lucid Software Español, 11:41) — notación, atributos y relaciones, para la Unidad 2.
+- https://www.youtube.com/watch?v=fJa3cshrFWs — Casos de Uso y UML desde cero, con include, extend y ejemplos (Nicolas Battaglia, 22:44) — para el caso SIEL.
+- https://www.youtube.com/watch?v=VywUfi0MofE — Diagrama de Casos de Uso y Diagrama de Clases (HiroSan, 29:07) — los dos diagramas de la Unidad 2 en una sola clase.
+- https://www.youtube.com/watch?v=-McoJKgvp28 — Qué son los patrones de diseño en programación (Programación en español, 17:56) — qué es un patrón y cuándo aplicarlo.
+- https://www.youtube.com/watch?v=JI_THVXPToQ — Los 6 patrones de diseño más utilizados (HolaMundo, 8:59) — antes de la Unidad 3.
+- https://www.youtube.com/watch?v=EI4nOsec2Ao — ¿Qué es Clean Architecture? (hdeleon.net, 17:32) — lectura asignada del Control 01 (caps. 3, 4 y 6).
+- https://www.youtube.com/watch?v=07JAkHUoSKE — Esto es Clean Architecture en 20 minutos (Gentleman Programming, 20:08) — para la lectura de Control 01.
+- https://www.youtube.com/watch?v=-iuf9jYoClQ — Refactoring: definición y ejemplos (Programación Orientada a Objetos UNLP, 33:25) — antes de la Unidad 4.
+- https://www.youtube.com/watch?v=Y8h_Zmedwn4 — Qué es refactoring y cómo hacerlo paso a paso (OpenWebinars, 3:06) — antes de la Unidad 4.
+- https://www.youtube.com/watch?v=omCFoofZUGY — Refactoring (DesarrolloWeb.com, 2:13:33) — clase larga de refactoring con ejemplos.
+
 ## 📕 Syllabus y libros (solo local, no se publican)
 
 Los libros de texto completos con copyright **no** se publican: están en `Universidad/_no-publicar.txt`, no tienen URL pública y no entran en el ZIP de la materia. Se consultan en local.

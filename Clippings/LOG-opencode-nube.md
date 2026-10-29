@@ -564,6 +564,39 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > y mi §3 · LEEME: "Decisiones abiertas" + el aviso de push · mi bitácora. **Sin tocar** el
 > bloque de ninguna otra sesión, ni `Universidad/**`, ni `site/**`.
 
+### Tanda 28/10/2026 03:00-03:30 — links de contenido recomendado en los LEEME de 3er Sem.
+
+> [!success] ✅ Qué hice (pedido del usuario, fuera de los carriles)
+> En los **LEEME/Recursos de las guías y ejercicios** de 3er Sem. agregué la sección
+> **`## 🔗 Links de contenido recomendado`** con **links reales de YouTube** para ver el
+> contenido de forma visual y sonora, complementando la lectura.
+> **Respondo la duda del usuario:** **sí puedo buscar en YouTube** — parseo la página de
+> resultados y saco **videoId + título real + canal + duración**, así que **no se inventa ni un
+> link**. (Script de apoyo, fuera del repo: `%TEMP%\opencode\yt_search.py`.)
+> **56 links en 6 archivos**, uno por LEEME:
+> | Materia | Archivo | Links | Qué cubren |
+> |---|---|---:|---|
+> | Diseño de Software | `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` | 10 | diagrama de clases, casos de uso, patrones, Clean Architecture, refactoring |
+> | Electricidad (teórico) | `Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` | 11 | diodos, análisis de nodos, Thévenin/Norton, op-amps, 555 biestable |
+> | Electricidad (práctico) | `Practico/Fundamentos del Laboratorio/00 - Recursos del laboratorio.md` | 7 | osciloscopio, multímetro |
+> | Inglés III | `Unidad 0 - Guias y Ejercicios/Recursos Unidad 0.md` | 8 | presente perfecto vs pasado simple, phrasal verbs, irregulares, speaking B2, presentaciones |
+> | Matemáticas Discretas | `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` | 13 | palomar, tablas de verdad, inducción, recurrencias, grafos, autómatas |
+> | Bases de Datos | `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` | 7 | normalización, álgebra relacional, JOINs (el primero lo puso el usuario) |
+
+> [!warning] 📐 Coordinación: el usuario editaba en paralelo
+> Escribimos **los dos** al mismo tiempo: en **DSW** quedaron **dos** secciones de links (yo
+> había creado el heading y él había pegado su lista) → **fusioné en una sola**, sin links
+> repetidos (verificado: 1 heading y 0 IDs duplicados por archivo). En **FESD** y **BD** él ya
+> había pegado su lista: **solo le añadí lo que faltaba** (los op-amps en FESD, que la guía
+> `EjREsAmpOp.pdf` necesita; más links de normalización/álgebra en BD).
+> **Zona:** toqué `Universidad/3er Semestre/**` (zona de `opencode`) **a pedido del usuario** y
+> **solo en los 6 LEEME**; quedó anunciado en el tablero para que `opencode` lo revise.
+
+> [!note] 📌 Lo que quedó sin stagear (cambio del usuario, no mío)
+> El usuario movió `Database Systems… (9th Edition).pdf` de la raíz de BD a `Diapositivas/`.
+> **Lo dejé sin stagear** para que lo commitee él. Ojo: ese libro está en
+> `_no-publicar.txt` **por nombre**, así que sigue sin publicarse aunque cambie de carpeta.
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 

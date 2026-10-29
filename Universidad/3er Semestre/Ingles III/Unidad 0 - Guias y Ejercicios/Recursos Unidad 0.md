@@ -61,6 +61,22 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 > [!note] 🖼️ Capturas del libro (por unidad)
 > Las capturas de las unidades 7 a 10 y 10 a 12 viven en `Capturas Empower U7-U10/` y `Capturas Empower U10-U12/`, con una nota por bloque: [[Libro de ingles las primeras unidades]] y [[Libro de ingles ultimas unidades]].
 
+## 🔗 Links de contenido recomendado
+
+- https://www.youtube.com/watch?v=UmdGwttUfKU — PRESENT PERFECT or PAST SIMPLE? (Learn English with Rebecca, 29:36) — para el mapa de tiempos verbales.
+- https://www.youtube.com/watch?v=vM5trdispow — PAST SIMPLE or PRESENT PERFECT? comparación (Arnel's Everyday English, 13:45) — los dos tiempos en el mismo video.
+- https://www.youtube.com/watch?v=3tk8HDa0O-4 — Presente perfecto vs pasado simple (Clases de inglés en español, 9:03) — explicado en español.
+- https://www.youtube.com/watch?v=B0heWo1XGhc — 50 phrasal verbs con ejemplos (Learn English with Bob the Canadian, 7:57) — para la guía de verbos frasales.
+- https://www.youtube.com/watch?v=r7VKVXbaj_Y — 50+ phrasal verbs comunes con workbook (mmmEnglish, 33:36) — más completo, con material de apoyo.
+- https://www.youtube.com/watch?v=MA3NFtLc22k — Irregular Verbs en una canción (Lingportal, 5:36) — para el cuadro de verbos irregulares.
+- https://www.youtube.com/watch?v=FfhZFRvmaVY — Advanced speaking practice: English Imitation Lesson (mmmEnglish, 13:51) — para el speaking y los ejemplos good/bad.
+- https://www.youtube.com/watch?v=fzIxD1jXn44 — Presentations in English: how to give a presentation (Oxford Online English, 16:46) — para las plantillas de presentación de CELEX.
+
+## 📕 Libro (solo local, no se publica)
+
+- `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: está en `Universidad/_no-publicar.txt`).
+- Empower (U7-U12) — libro de texto del curso: el libro completo no se publica; lo que hay son capturas por unidad ([[Libro de ingles las primeras unidades]] y [[Libro de ingles ultimas unidades]]).
+
 ---
 
 **Tags:** #english #ESPOL #IDIG1008 #recursos

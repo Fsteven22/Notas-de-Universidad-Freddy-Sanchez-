@@ -74,6 +74,16 @@ tags: [TICG1018, unidad0, recursos]
 - 2E: [[Exámenes/2019-2PAO-2E-SBD.pdf]] · [[Exámenes/2021-1PAO-2E-SBD-1.pdf]] · [[Exámenes/2021-2PAO-2E-SBD-1.pdf]] · [[Exámenes/2023-1PAO-2E-SBD.pdf]] · [[Exámenes/2023-2PAO-2E-SBD.pdf]] · [[Exámenes/2024-1PAO-2E-SBD.pdf]] · [[Exámenes/2024-2PAO-2E-SBD.pdf]] · [[Exámenes/2025-1PAO-2E-SBD.docx]] · [[Exámenes/2025-2PAO-2E-SBD.docx]]
 - 3E: [[Exámenes/2023-2PAO-3E-SBD.docx]] · [[Exámenes/2024-1PAO-3E-SBD.docx]] · [[Exámenes/2024-2PAO-3E-SBD.docx]] · [[Exámenes/2025-1PAO-3E-SBD.docx]]
 
+## 🔗 Links de contenido recomendado
+
+- https://www.youtube.com/watch?v=kvt2wE-q-yY — NORMALIZACIÓN en BASES DE DATOS | MASTER CLASSS ¡Con Ejercicio! (TodoCode, 36:08) — normalización de punta a punta con ejercicio.
+- https://www.youtube.com/watch?v=RlgbWESXySI — Formas Normales (1FN, 2FN y 3FN) desde cero (Viera Class, 7:40) — para entender cada forma normal por separado.
+- https://www.youtube.com/watch?v=MdYvCMbQji4 — Normalización (1FN, 2FN, 3FN) (Daniela Bohórquez Escovar, 4:45) — resumen rápido de las tres formas normales.
+- https://www.youtube.com/watch?v=580_6ySKy4Q — Álgebra Relacional: operaciones con ejemplos (Denisse VM, 15:19) — para la guía de álgebra relacional del Taller 2.
+- https://www.youtube.com/watch?v=hsNZnJjYXGM — Álgebra Relacional: operadores básicos (Antonio FI UPM, 14:33) — selección, proyección y unión uno a uno.
+- https://www.youtube.com/watch?v=0BstRqp6Svg — CONSULTAS SQL: INNER JOIN con práctica (TodoCode, 8:00) — para el Taller 3.
+- https://www.youtube.com/watch?v=nw6tK0E5iyo — CONSULTAS SQL: LEFT y RIGHT JOIN con práctica (TodoCode, 8:03) — para el Taller 3.
+
 ## 📕 Libro (solo local, no se publica)
 
 - `Database Systems - Design, Implementation, and Management (9th Edition).pdf` (Coronel-Morris, 15.9MB) — lectura asignada cap. 4 §§4.1.3–4.1.7. No se embarca por copyright; consulta local.
