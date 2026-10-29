@@ -232,7 +232,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > |---|---|---|---|
 > | 1 | **Paso manual en el panel de Vercel** para liberar `neonotes.vercel.app` (hoy lo responde otro proyecto). El CLI no tiene token válido | media | **usuario** (guía en `site/RUNBOOK.md` §8) |
 > | 2 | **Verificar el deploy con el contenido nuevo** (806 notas · 833 páginas) cuando termine Vercel | media | sesión |
-> | 3 | **CI anti-fuga** (P3 de `opencode-onedrive`): un workflow que falle el build si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs. Hoy **no hay `.github/workflows`** | media | **sesión** (mi zona) — con tu ok |
+> | 3 | **CI anti-fuga** (P3): `.github/workflows/ci-anti-fuga.yml` creado — falla el build si un asset de `_no-publicar.txt` aparece en `site/public/assets/` o en `site/public/downloads/*.zip` | ✅ creado | sesión |
 > | 4 | **Carpeta `_privado/` reservada** (decisión 2 del plan): el sync la ignora por estructura, pero nadie la usa | baja | usuario |
 > | 5 | **Reporte en el build** de qué material quedó excluido y por qué (hoy solo se ve el aviso en la nota) | baja | sesión |
 
@@ -243,6 +243,10 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - 554 targets restantes → `Clippings/PROPUESTAS - links rotos (carril C).md`
 > - 8 mindmaps `com-u*-graph.svg` de Comunicación reportados como limpieza pendiente (no embebidos, invisibles en el sitio)
 
+> [!success] ✅ CI anti-fuga creado (esta sesión)
+> - `.github/workflows/ci-anti-fuga.yml`: falla el build si un asset de `_no-publicar.txt` aparece en `site/public/` (assets o ZIPs).
+> - Muro de seguridad contra fugas como `Escucha Activa Parte 1_OCR.pdf`.
+>
 > [!success] ✅ Ya no pendientes (cerrados en esta ronda)
 > Ya no pendientes (cerrados en esta ronda): verificación en producción de favicon/redirect/aviso (hecha), refresco del espejo (hecho), `git pull` del clon Desktop (hecho: `master` = `origin/master`) y **carril C cerrado** (39 SVG + 214 links + tabla de propuestas).
 
@@ -254,6 +258,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > 3. Implementar el CI anti-fuga (#3) si me das el ok.
 > 4. Avisarte el paso del panel del dominio (#1) y dejar la verificación documentada en el LEEME.
 > 5. Cuando confirmes la cuenta institucional, revisar si el `favicon`/`og` necesitan versión institucional.
+> 6. **Evaluación `_privado/` (P4):** descartado. La lista negra `Universidad/_no-publicar.txt` (17 patrones / 61 archivos) ya cumple la función de excluir material con copyright al publicar. Añadir `_privado/` duplicaría mecanismo sin beneficio real; se mantiene solo la lista negra.
 
 ---
 
