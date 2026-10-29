@@ -1235,11 +1235,11 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - [[Ecuaciones diferenciales]] - Espacios de soluciones
-> - [[Análisis funcional]] - Espacios infinito-dimensionales
-> - [[Análisis numérico]] - Métodos computacionales
+> - [[Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
+> - [[01 - Longitud de Curva#Análisis Numérico|Análisis numérico]] - Métodos computacionales
 > - [[Machine Learning]] - Espacios de características
-> - [[Mecánica cuántica]] - Estados cuánticos
-> - [[Gráficos por computadora]] - Transformaciones
+> - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica cuántica]] - Estados cuánticos
+> - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por computadora]] - Transformaciones
 
 ## 📚Recursos Adicionales
 

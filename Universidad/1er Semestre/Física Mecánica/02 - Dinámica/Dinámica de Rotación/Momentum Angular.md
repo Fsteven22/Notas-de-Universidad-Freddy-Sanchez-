@@ -366,7 +366,7 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Conservación del Momentum Angular]]
+> - [[Momentum Angular|Conservación del Momentum Angular]]
 > - [[Cinemática Rotacional]]
 > - [[Momento de Inercia]]
 > - [[Torque y Equilibrio Rotacional]]

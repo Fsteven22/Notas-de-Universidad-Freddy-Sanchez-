@@ -1194,7 +1194,7 @@ dg-publish: true
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Conceptos básicos y clasificación
 > - [[Matrices]] - Operaciones matriciales fundamentales
-> - [[Operaciones Elementales]] - Base teórica
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3#Operaciones Elementales|Operaciones Elementales]] - Base teórica
 > 
 > **Temas relacionados:**
 > 
@@ -1211,12 +1211,12 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[Métodos Iterativos]] - Jacobi, Gauss-Seidel
-> - [[Análisis Numérico]] - Estabilidad y errores de redondeo
+> - [[01 - Longitud de Curva#Análisis Numérico|Análisis Numérico]] - Estabilidad y errores de redondeo
 > - [[Álgebra Lineal Computacional]] - Implementaciones eficientes
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Circuitos Eléctricos]] - Análisis de redes
+> - [[Constante de integración#Circuitos Eléctricos|Circuitos Eléctricos]] - Análisis de redes
 > - [[Análisis Estructural]] - Sistemas de fuerzas
 > - [[Regresión Lineal]] - Estimación de parámetros
 > - [[Procesamiento de Imágenes]] - Transformaciones lineales

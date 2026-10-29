@@ -225,14 +225,14 @@ dg-publish: true
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - [[Derivadas de Funciones Paramétricas]]
-> - [[Técnicas de Integración]]
+> - [[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas|Derivadas de Funciones Paramétricas]]
+> - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]]
 > - [[02 - Coordenadas polares]]
 > - [[02 - Criterios de Convergencia y Divergencia]]
 >
 
 > [!tip] Continuación del Tema
-> - [[Área de Superficies de Revolución]]
+> - [[03 - Superficies de revolución|Área de Superficies de Revolución]]
 > - [[Integrales de Línea]]
 > - Curvatura y Torsión
 > - Geometría Diferencial
@@ -853,7 +853,7 @@ dg-publish: true
 
 ### 🔗 Notas Relacionadas
 
-- [[Integrales Definidas]] - Base matemática fundamental
+- [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
 - [[Métodos de Integración]] - Técnicas necesarias para resolver las integrales
 - [[02 - Área entre Curvas]] - Concepto dual de medida geométrica
 - [[01 - Volúmenes de Sólidos de Revolución]] - Otra aplicación geométrica de integrales

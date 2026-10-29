@@ -248,13 +248,13 @@ dg-publish: true
 > 
 > - [[Integración por Partes]] - Técnica fundamental para estas integrales
 > - [[05 - Identidades trigonométricas]] - Necesarias para simplificaciones
-> - [[Funciones Trigonométricas]] - Base para entender las inversas
+> - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Base para entender las inversas
 > 
 > ### Temas Relacionados
 > 
 > - [[Integrales Trigonométricas]] - Complemento natural
 > - [[Cambio de Variable]] - Para casos con composiciones
-> - [[Sustitución Trigonométrica]] - Conexión con √(a²±x²)
+> - [[01 - Longitud de Curva#Sustitución Trigonométrica|Sustitución Trigonométrica]] - Conexión con √(a²±x²)
 > 
 > ### Aplicaciones
 > 

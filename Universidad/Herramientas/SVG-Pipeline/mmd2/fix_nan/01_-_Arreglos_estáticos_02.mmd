@@ -1,0 +1,26 @@
+---
+title: "Inicialización de arreglos estáticos en Java"
+---
+flowchart LR
+  A["int[] arr = new int[5]"]:::k2
+  B["Formas de inicializar"]:::k3
+  C["Declaración con valores: {1, 2, 3}"]:::k4
+  D["Bucle for"]:::k3
+  E["Asignación directa o Arrays.fill()"]:::k4
+  F["arr[i] = 0 dentro del for"]:::k5
+  G["Arrays.fill(arr, 0)"]:::k5
+  H["Rango: Arrays.fill(arr, 0, 5, 1)"]:::k5
+  A --> B
+  B --> C
+  B --> D
+  D --> E
+  E --> F
+  E --> G
+  E --> H
+classDef k1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b;
+classDef k2 fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a;
+classDef k3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52;
+classDef k4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00;
+classDef k5 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00;
+classDef k6 fill:#ffebee,stroke:#e53935,color:#4a1010;
+classDef k7 fill:#e0f2f1,stroke:#009688,color:#00332e;

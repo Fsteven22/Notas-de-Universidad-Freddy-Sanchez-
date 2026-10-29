@@ -396,9 +396,9 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Base fundamental de la técnica
-> - [[Derivadas de Funciones Trigonométricas]] - Para casos trigonométricos
+> - [[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas|Derivadas de Funciones Trigonométricas]] - Para casos trigonométricos
 > - [[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas]] - Para casos exponenciales
-> - [[Reglas de Derivación]] - Todas las reglas básicas
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Todas las reglas básicas
 > 
 > ### Aplicaciones:
 > - [[02 - Interpretación Geométrica de la Derivada]] - Rectas tangentes a curvas

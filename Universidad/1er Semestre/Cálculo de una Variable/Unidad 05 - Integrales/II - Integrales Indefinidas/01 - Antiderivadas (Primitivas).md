@@ -301,8 +301,8 @@ dg-publish: true
 
 > [!quote- 📖 Notas relacionadas
 > 
-> - [[Reglas de Derivación]] - Fundamento para verificar antiderivadas
-> - [[Límites y Continuidad]] - Base teórica para la existencia de antiderivadas
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Fundamento para verificar antiderivadas
+> - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base teórica para la existencia de antiderivadas
 > - [[Funciones y sus Propiedades]] - Conocimiento previo esencial
 > - [[Cálculo Diferencial]] - Contexto matemático general
 
@@ -317,7 +317,7 @@ dg-publish: true
 > - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas
 > - [[Ecuaciones Diferenciales Básicas]] - Aplicación directa de antiderivadas
 > - Cinemática y Antiderivadas - Aplicaciones en física
-> - [[Funciones Definidas por Integrales]] - Extensión del concepto
+> - [[04 - Teorema Fundamental del Cálculo#Funciones Definidas por Integrales|Funciones Definidas por Integrales]] - Extensión del concepto
 > - Tabla Completa de Integrales - Referencia exhaustiva
 > - [[Métodos de Integración Avanzados]] - Técnicas más complejas
 

@@ -332,7 +332,7 @@ dg-publish: true
 > - Entrada de Datos Python - input() y variables
 > - Condicionales Python - Uso de booleanos
 > - Formateo de Strings Python - Manipulación avanzada de texto
-> - [[Funciones Python]] - Variables como parámetros
+> - [[Módulo 3.1 Funciones|Funciones Python]] - Variables como parámetros
 > - Scope y Alcance Python - Visibilidad de variables
 
 ## 🎯 Notas Recomendadas para Complementar
@@ -348,7 +348,7 @@ dg-publish: true
 > 
 > ### 🔄 **Temas Relacionados**
 > 
-> - [[Listas y Tuplas Python]] - Estructuras de datos complejas
+> - [[Módulo 2.3 Listas y Tuplas en Python|Listas y Tuplas Python]] - Estructuras de datos complejas
 > - Diccionarios Python - Mapeo clave-valor
 > - Constantes en Python - Valores inmutables
 > - Debugging Python - type() para depuración

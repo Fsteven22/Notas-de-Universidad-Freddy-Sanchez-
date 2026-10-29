@@ -1745,7 +1745,7 @@ dg-publish: true
 > **Siguiente paso natural:**
 > 
 > - [[01 - Multiplicaciones de Lagrange]] → Optimización con restricciones
-> - [[Campos Vectoriales]] → Generalización a funciones vectoriales
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] → Generalización a funciones vectoriales
 
 ---
 

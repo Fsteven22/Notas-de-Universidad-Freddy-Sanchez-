@@ -395,7 +395,7 @@ dg-publish: true
 > - [[Trabajo y Energía con Integrales]] - Interpretación física
 > - Probabilidad y Estadística - Funciones de densidad
 > - [[Volúmenes de Revolución]] - Extensión tridimensional
-> - [[Longitud de Arco]] - Otra aplicación geométrica
+> - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Otra aplicación geométrica
 
 ### 🏷️ Tags
 

@@ -1624,11 +1624,11 @@ dg-publish: true
 > - [[Ecuaciones Diferenciales Parciales]] - Separación de variables
 > - [[Mecánica Clásica]] - Lagrangiano en coordenadas generalizadas
 > - [[Electromagnetismo]] - Simetrías de campos
-> - [[Mecánica Cuántica]] - Átomo de hidrógeno
-> - [[Análisis Vectorial]] - Operadores diferenciales
+> - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica Cuántica]] - Átomo de hidrógeno
+> - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Operadores diferenciales
 > 
 > **Temas avanzados:**
-> - [[Geometría Diferencial]] - Variedades y métricas
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades y métricas
 > - [[Relatividad General]] - Coordenadas curvilíneas en espacio-tiempo
 > - [[Teoría de Campos]] - Lagrangianos en diferentes coordenadas
 > - [[Elementos Finitos]] - Mallados en coordenadas naturales
@@ -1638,8 +1638,9 @@ dg-publish: true
 > - [[Ingeniería]] - Diseño de componentes axisimétricos
 > - [[Astronomía]] - Coordenadas celestes
 > - [[Geofísica]] - Coordenadas geográficas
+> - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas
 > - [[Gráficos por Computadora]] - Mapeo de texturas
-> 
+
 ## 💡 Consejos de Estudio
 > 
 > [!tip] 🧠 Estrategias de Aprendizaje

@@ -166,7 +166,7 @@ dg-publish: true
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
 > - [[Centro de Gravedad y Centro de Masa]]
-> - [[Equilibrio Rotacional]]
+> - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > - [[Cinemática Rotacional]]
 > - [[Energía Potencial]]
 > - [[Estática]]

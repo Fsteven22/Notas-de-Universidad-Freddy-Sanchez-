@@ -683,15 +683,15 @@ dg-publish: true
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Espacios con Producto Interno]] - Generalización
+> - [[08 - Desigualdad de Cauchy–Schwarz#Espacios con Producto Interno|Espacios con Producto Interno]] - Generalización
 > - [[Transformaciones Ortogonales]] - Preservan producto punto
-> - [[Diagonalización]] - Vectores propios ortogonales
+> - [[07 - Matriz de una Transformación Lineal#Diagonalización|Diagonalización]] - Vectores propios ortogonales
 > 
 > **Temas relacionados:**
 > 
 > - [[04 – Proyección ortogonal]] - Aplicaciones detalladas
 > - [[Bases Ortonormales]] - Sistemas perpendiculares
-> - [[Descomposición QR]] - Ortogonalización de Gram-Schmidt
+> - [[03 – Ortogonalidad y conjuntos ortonormales#Descomposición QR|Descomposición QR]] - Ortogonalización de Gram-Schmidt
 
 ## 💡 Consejos y Errores Comunes
 

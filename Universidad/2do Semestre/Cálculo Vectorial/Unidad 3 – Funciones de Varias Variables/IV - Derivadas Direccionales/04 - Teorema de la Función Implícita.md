@@ -721,18 +721,18 @@ dg-publish: true
 > - [[Funciones de Varias Variables]] - Dominio del teorema
 > 
 > **Temas relacionados:**
-> - [[Regla de la Cadena Multivariable]] - Derivación de fórmulas
+> - [[06 – Matriz Jacobiana#Regla de la Cadena Multivariable|Regla de la Cadena Multivariable]] - Derivación de fórmulas
 > - [[Jacobiano]] - Generalización a sistemas
 > - [[Gradiente]] - Vector de derivadas parciales
 > 
 > **Aplicaciones:**
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
 > - [[Ecuaciones Diferenciales Implícitas]] - Existencia de soluciones
-> - [[Geometría Diferencial]] - Superficies y curvas de nivel
-> - [[Análisis de Sensibilidad]] - Economía y optimización
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies y curvas de nivel
+> - [[02 – Jacobiano de la transformación#Análisis de Sensibilidad|Análisis de Sensibilidad]] - Economía y optimización
 > 
 > **Generalizaciones:**
-> - [[Teorema de la Función Inversa]] - Caso especial
+> - [[05 - Funciones compuestas#Teorema de la Función Inversa|Teorema de la Función Inversa]] - Caso especial
 > - [[Teorema del Rango]] - Álgebra lineal
 > - [[Variedades Diferenciables]] - Geometría avanzada
 

@@ -203,5 +203,18 @@ tags: [clippings, log, opencode-site]
 > - **Lo que me queda** (ya en mi bloque del tablero): (1) el **paso manual del panel de Vercel** para `neonotes.vercel.app` → **vos**; (2) verificar el deploy de 833 páginas cuando termine Vercel → yo; (3) **CI anti-fuga** (P3 de `opencode-onedrive`: que el build falle si un asset de `_no-publicar.txt` aparece en `public/assets` o en los ZIPs) → mi zona, falta tu ok; (4) carpeta `_privado/` reservada → tu ok; (5) reporte en consola de material excluido → bajo.
 > - Los 2 pushes de esta ronda: `19ac29c` (tablero) y `1b0bb6c` (merge del tablero + mi bloque actualizado). Hubo que reintentar el push 2 veces porque la otra sesión pusheó en medio: es exactamente el caso que cubre el "candado de push" del LEEME (yo avisé, pero no bloqueé).
 
+### Cierre de carril C (2026-10-29)
+
+> [!success] ✅ Carril C cerrado — `opencode-site`
+
+> - **39 SVG NaN regenerados** desde cero con `mmdc` a partir de 39 specs nuevos en `Universidad/Herramientas/SVG-Pipeline/mmd2/fix_nan/` (OK=39/39). Copiados al vault fuera de OneDrive.
+> - **214 links rotos fijos** en 98 notas (`[[Base|Texto]]` / `[[Base#Encabezado|Texto]]`), byte-level preservando finales de línea originales. Verificado con `qa_links.py`: BAD 1039 → 825.
+> - **19 `.mmd` obsoletos borrados** (16 duplicados en-dash de `cv_auto`, 2 artefactos de prueba, 1 fuente genérica de `cv_lote4`).
+> - **`Universidad/Herramientas/SVGs por recrear.md` en 0** (0 embeds de imagen rotos).
+> - **554 targets restantes** (825 ocurrencias) → `Clippings/PROPUESTAS - links rotos (carril C).md` (180 aproximado, 374 sin-destino).
+> - **8 mindmaps `com-u*-graph.svg`** de Comunicación reportados como limpieza pendiente (rotos, no embebidos en ninguna nota).
+>
+> Próximo: anunciar `PUSHEO EN CURSO` → pushear commit de cierre → `PUSHEADO <hash>`.
+
 ---
 **Tags:** #clippings #log #opencode-site

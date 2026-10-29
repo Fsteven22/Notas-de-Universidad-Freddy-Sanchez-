@@ -1110,9 +1110,9 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Cinemática]] - Trayectorias rectilíneas
+> - [[Constante de integración#Cinemática|Cinemática]] - Trayectorias rectilíneas
 > - [[Óptica Geométrica]] - Rayos de luz
-> - [[Computación Gráfica]] - Ray tracing
+> - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Ray tracing
 
 ## 💡 Consejos y Errores Comunes
 

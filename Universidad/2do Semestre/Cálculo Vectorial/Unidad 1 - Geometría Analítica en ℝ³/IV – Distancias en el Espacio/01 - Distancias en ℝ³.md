@@ -703,13 +703,13 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[Cálculo Vectorial]] - Gradientes y direcciones
-> - [[Geometría Diferencial]] - Métricas en variedades
-> - [[Espacios Métricos]] - Generalización abstracta
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas en variedades
+> - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización abstracta
 > - [[Topología]] - Bolas abiertas y cerradas
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Computación Gráfica]] - Rendering y ray tracing
+> - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Rendering y ray tracing
 > - [[Visión por Computadora]] - Reconstrucción 3D
 > - [[Machine Learning]] - k-NN, clustering espacial
 > - [[Física Computacional]] - Simulaciones de partículas

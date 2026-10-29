@@ -847,7 +847,7 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
-> - [[01 - Vectores en espacios vectoriales]] - Subespacios
+> - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Subespacios
 > - [[02 – Combinación lineal]] - Span
 > - [[06 - Independencia lineal]] - Bases
 > - [[05 – Espacio columna]] - Concepto dual

@@ -537,7 +537,7 @@ dg-publish: true
 > 
 > - [[01 - Derivada y Definición Formal]] - Fundamento teórico de las reglas
 > - [[02 - Interpretación Geométrica de la Derivada]] - Significado visual de las derivadas  
-> - [[Límites y Continuidad]] - Base matemática previa
+> - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base matemática previa
 > - [[Funciones y sus Propiedades]] - Conocimiento de funciones elementales
 > - [[01 - Antiderivadas (Primitivas)]] - Proceso inverso de la derivación
 
@@ -553,7 +553,7 @@ dg-publish: true
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y análisis de concavidad
 > - [[03 - Aproximaciones Lineales y Diferenciales]] - Uso práctico de derivadas
 > - [[Teoremas del Valor Medio]] - Teoremas fundamentales del cálculo
-> - [[Análisis de Funciones]] - Uso conjunto de derivadas para estudiar funciones
+> - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Uso conjunto de derivadas para estudiar funciones
 > - Optimización en Cálculo - Aplicaciones en problemas de máximos y mínimos
 > - Modelado Matemático con Derivadas - Aplicaciones en ciencias e ingeniería
 > - [[L'Hôpital y Formas Indeterminadas]] - Uso avanzado de derivadas en límites

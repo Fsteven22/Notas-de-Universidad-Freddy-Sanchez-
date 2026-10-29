@@ -327,7 +327,7 @@ dg-publish: true
 > - Variables y Tipos Básicos Python - Fundamentos de datos
 > - Condicionales If-Else Python - Uso de operadores booleanos
 > - Bucles Python - Iteración con operaciones
-> - [[Funciones Python]] - Operaciones reutilizables
+> - [[Módulo 3.1 Funciones|Funciones Python]] - Operaciones reutilizables
 > - [[Manejo de Errores Python]] - Try/except para casting
 > - Métodos Avanzados Strings Python - Manipulación compleja de texto
 

@@ -256,7 +256,7 @@ dg-publish: true
 - [[02 - Área entre Curvas]] - Concepto base en coordenadas rectangulares
 - [[02 - Coordenadas polares]] - Sistema de coordenadas fundamental
 - [[Curvas Paramétricas]] - Representación paramétrica de curvas
-- [[Teorema de Green]] - Método alternativo usando teoremas vectoriales
+- [[03 – Integrales de línea vectoriales#Teorema de Green|Teorema de Green]] - Método alternativo usando teoremas vectoriales
 - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ### 📖 Para Profundizar

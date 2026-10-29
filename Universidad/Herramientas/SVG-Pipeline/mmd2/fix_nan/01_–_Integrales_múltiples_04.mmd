@@ -1,0 +1,32 @@
+---
+title: "Cálculo de integrales dobles"
+---
+flowchart TD
+  A["∬_R f(x,y)dA"]:::k2
+  B["1. Describir la región R"]:::k3
+  C["2. Fijar el orden de integración"]:::k3
+  D["Región vertical: x de a(x) a b(x)"]:::k3
+  E["Región horizontal: y de c(y) a d(y)"]:::k3
+  F["Región rectangular: a ≤ x ≤ b, c ≤ y ≤ d"]:::k3
+  G["3. Escribir los límites"]:::k4
+  H["4. Integrar primero respecto a y"]:::k4
+  I["5. Integrar después respecto a x"]:::k4
+  J["6. Resultado numérico"]:::k6
+  A --> B
+  B --> C
+  C --> D
+  C --> E
+  C --> F
+  D --> G
+  E --> G
+  F --> G
+  G --> H
+  H --> I
+  I --> J
+classDef k1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b;
+classDef k2 fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a;
+classDef k3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52;
+classDef k4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00;
+classDef k5 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00;
+classDef k6 fill:#ffebee,stroke:#e53935,color:#4a1010;
+classDef k7 fill:#e0f2f1,stroke:#009688,color:#00332e;

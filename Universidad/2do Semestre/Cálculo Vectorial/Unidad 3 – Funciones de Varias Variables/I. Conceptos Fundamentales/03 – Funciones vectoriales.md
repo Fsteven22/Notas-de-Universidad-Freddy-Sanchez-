@@ -1067,9 +1067,9 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[Curvas Parametrizadas]] - Representación de curvas
-> - [[Cinemática]] - Movimiento de partículas
-> - [[Geometría Diferencial]] - Curvatura y torsión
+> - [[03 – Funciones vectoriales#Curvas Parametrizadas|Curvas Parametrizadas]] - Representación de curvas
+> - [[Constante de integración#Cinemática|Cinemática]] - Movimiento de partículas
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvatura y torsión
 > 
 > **Aplicaciones:**
 > 
@@ -1082,7 +1082,7 @@ dg-publish: true
 > 
 > - [[Curvatura y Torsión]] - Propiedades geométricas
 > - [[Marco de Frenet]] - Base ortonormal móvil
-> - [[Campos Vectoriales]] - Funciones r(x,y,z)
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Funciones r(x,y,z)
 > - [[Integrales de Línea]] - Integración sobre curvas
 
 ---

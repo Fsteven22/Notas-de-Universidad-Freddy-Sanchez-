@@ -1266,8 +1266,8 @@ dg-publish: true
 > [!quote] 🔗 Enlaces con Otros Temas
 > 
 > **Prerequisitos:**
-> - [[Coordenadas Cilíndricas]] - Sistema natural para superficies de revolución
-> - [[Coordenadas Esféricas]] - Para esfera y elipsoides
+> - [[03 - Superficies de revolución#Coordenadas Cilíndricas|Coordenadas Cilíndricas]] - Sistema natural para superficies de revolución
+> - [[01 - Coordenadas cilíndricas y esféricas#Coordenadas Esféricas|Coordenadas Esféricas]] - Para esfera y elipsoides
 > - [[Curvas Paramétricas]] - Generatrices
 > - [[02 - Vectores en R3]] - Normal y tangentes a superficies
 > - [[Cálculo Integral]] - Áreas y volúmenes
@@ -1275,27 +1275,27 @@ dg-publish: true
 > **Temas relacionados:**
 > - [[01 - Superficies cuadráticas]] - Clasificación algebraica
 > - [[Sólidos de Revolución]] - Volúmenes
-> - [[Curvaturas]] - Análisis geométrico diferencial
+> - [[03 - Superficies de revolución#Curvaturas|Curvaturas]] - Análisis geométrico diferencial
 > - [[Ecuaciones Paramétricas en 3D]] - Representación
 > 
 > **Aplicaciones directas:**
 > - [[Cálculo de Áreas de Superficie]] - Integrales de superficie
-> - [[Centros de Masa]] - Teoremas de Pappus
+> - [[03 - Área entre Curvas respecto a Y#Centros de Masa|Centros de Masa]] - Teoremas de Pappus
 > - [[Momento de Inercia]] - Física rotacional
 > - [[Optimización en 3D]] - Problemas isoperimétricos
 > 
 > **Temas avanzados:**
-> - [[Geometría Diferencial]] - Curvaturas y geodésicas
-> - [[Superficies Mínimas]] - Catenoide, helicoide
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y geodésicas
+> - [[03 - Superficies de revolución#Superficies Mínimas|Superficies Mínimas]] - Catenoide, helicoide
 > - [[CAD/CAM]] - Modelado industrial
-> - [[Gráficos por Computadora]] - Rendering de superficies
+> - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Rendering de superficies
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
 > - [[Física]] - Formas en equilibrio, rotación de fluidos
 > - [[Arquitectura]] - Estructuras de revolución optimizadas
 > - [[Astronomía]] - Forma de cuerpos celestes
-> - [[Ingeniería Mecánica]] - Diseño de componentes axisimétricos
+> - [[Elasticidad#Ingeniería Mecánica|Ingeniería Mecánica]] - Diseño de componentes axisimétricos
 > - [[Óptica]] - Lentes, espejos y sistemas de reflexión
 
 ## 💡 Consejos de Estudio

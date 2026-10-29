@@ -988,7 +988,7 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[09 - Vectores en espacios vectoriales]] - Estructura general
+> - [[01 - Vectores en espacios vectoriales (definición y propiedades)|09 - Vectores en espacios vectoriales]] - Estructura general
 > - [[01 - Subespacios Vectoriales]] - Herencia de operaciones
 > - [[01 – Transformaciones lineales]] - Preservación de operaciones
 > - [[01 – Producto interno]] - Operación adicional
@@ -996,9 +996,9 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - [[Álgebra lineal numérica]] - Implementación computacional
-> - [[Análisis funcional]] - Espacios infinito-dimensionales
-> - [[Geometría diferencial]] - Espacios tangentes
-> - [[Mecánica cuántica]] - Superposición de estados
+> - [[Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Espacios tangentes
+> - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica cuántica]] - Superposición de estados
 > - [[Teoría de control]] - Sistemas lineales
 
 ## 📚 Recursos Adicionales

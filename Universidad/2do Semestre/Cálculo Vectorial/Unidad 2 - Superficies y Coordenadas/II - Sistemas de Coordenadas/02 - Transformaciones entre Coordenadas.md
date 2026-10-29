@@ -925,7 +925,7 @@ dg-publish: true
 > 
 > - [[01.3 Distancia en el Espacio]] - Fórmulas en diferentes sistemas
 > - [[01 – Integrales múltiples]] - dV en diferentes coordenadas
-> - [[Campos Vectoriales]] - Representación en distintos sistemas
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Representación en distintos sistemas
 > 
 > **Aplicaciones:**
 > 
@@ -936,7 +936,7 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[Factores de Escala]] - Métricas en coordenadas curvilíneas
-> - [[Operadores Diferenciales]] - ∇, ∇², en diferentes sistemas
+> - [[01 - Coordenadas cilíndricas y esféricas#Operadores Diferenciales|Operadores Diferenciales]] - ∇, ∇², en diferentes sistemas
 > - [[Coordenadas Generalizadas]] - Mecánica lagrangiana
 
 ---

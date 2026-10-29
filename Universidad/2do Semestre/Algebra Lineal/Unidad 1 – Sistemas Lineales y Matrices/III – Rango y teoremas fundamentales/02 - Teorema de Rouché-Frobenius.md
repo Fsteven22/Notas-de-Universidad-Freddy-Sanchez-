@@ -2684,8 +2684,8 @@ dg-publish: true
 > 
 > **Extensiones y generalizaciones:**
 > 
-> - [[Sistemas con parámetros]] - Discusión de sistemas
-> - [[Mínimos Cuadrados]] - Sistemas incompatibles aproximados
+> - [[02 - Teorema de Rouché-Frobenius#Sistemas con Parámetros|Sistemas con parámetros]] - Discusión de sistemas
+> - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Sistemas incompatibles aproximados
 > - [[Pseudoinversa de Moore-Penrose]] - Soluciones generalizadas
 > - [[Programación Lineal]] - Factibilidad de restricciones
 > - [[Teoremas de Existencia y Unicidad]] - Ecuaciones diferenciales

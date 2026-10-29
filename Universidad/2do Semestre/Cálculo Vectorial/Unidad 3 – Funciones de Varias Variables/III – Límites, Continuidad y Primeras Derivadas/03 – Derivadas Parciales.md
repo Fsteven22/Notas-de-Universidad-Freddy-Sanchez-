@@ -1165,7 +1165,7 @@ dg-publish: true
 > - **Diferenciabilidad** - Concepto más fuerte que derivadas parciales
 > - **Ecuaciones Diferenciales Parciales** - Usan extensivamente derivadas parciales
 > 
-> **Siguiente tema recomendado:** [[09 - Diferenciabilidad y Plano Tangente]]
+> **Siguiente tema recomendado:** [[04 – Diferenciabilidad|09 - Diferenciabilidad y Plano Tangente]]
 
 ---
 

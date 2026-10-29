@@ -293,13 +293,13 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> 1. **[[Funciones Trigonométricas]]** - Conocimiento básico
+> 1. **[[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]]** - Conocimiento básico
 > 2. **Radianes vs Grados** - Importancia del sistema de medida
-> 3. **[[Identidades Fundamentales]]** - Transformaciones trigonométricas
+> 3. **[[01 – Campos vectoriales - divergencia y rotacional#Identidades Fundamentales|Identidades Fundamentales]]** - Transformaciones trigonométricas
 > 
-> **Temas Paralelos:** 4. **[[Continuidad Trigonométrica]]** - Comportamiento de funciones 5. **[[Gráficas Trigonométricas]]** - Interpretación visual
+> **Temas Paralelos:** 4. **[[Continuidad Trigonométrica]]** - Comportamiento de funciones 5. **[[03 - Gráficas de funciones trigonométricas|Gráficas Trigonométricas]]** - Interpretación visual
 > 
-> **Aplicaciones:** 6. **[[Derivadas de Funciones Trigonométricas]]** - Uso principal 7. **[[Integrales Trigonométricas]]** - Extensión natural 8. **[[Ecuaciones Diferenciales]]** - Aplicaciones avanzadas
+> **Aplicaciones:** 6. **[[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas|Derivadas de Funciones Trigonométricas]]** - Uso principal 7. **[[Integrales Trigonométricas]]** - Extensión natural 8. **[[Ecuaciones Diferenciales]]** - Aplicaciones avanzadas
 
 ## 🎯 Ejercicios de Entrenamiento Progresivo
 
@@ -537,7 +537,7 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Conceptos fundamentales
 > - [[Propiedades de Logaritmos]] - Esencial para método logarítmico
-> - [[Límites Fundamentales]] - Base para límites trigonométricos
+> - [[01 - Límites Especiales#Límites Fundamentales|Límites Fundamentales]] - Base para límites trigonométricos
 > - [[01 - Formas Indeterminadas]] - Clasificación general
 > 
 > ### Temas Relacionados:

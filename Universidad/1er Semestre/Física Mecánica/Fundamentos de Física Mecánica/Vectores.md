@@ -235,14 +235,14 @@ dg-publish: true
 > 
 > **Prerrequisitos esenciales:**
 > 
-> - [[Funciones Trigonométricas]] - Para ángulos y componentes
+> - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Para ángulos y componentes
 > - [[Álgebra]] - Para operaciones algebraicas
 > - Geometría - Para interpretación geométrica
 > - [[01 - Funciones]] - Para vectores como funciones del tiempo
 > 
 > **Temas complementarios:**
 > 
-> - [[Campos Vectoriales]] - Vectores que varían en el espacio
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Vectores que varían en el espacio
 > - [[Derivadas Vectoriales]] - Tasas de cambio de vectores
 > - [[Integrales Vectoriales]] - Integración de campos vectoriales
 > - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas

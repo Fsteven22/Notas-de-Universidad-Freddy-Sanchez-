@@ -2249,7 +2249,7 @@ dg-publish: true
 > 
 > - [[05 - Diferencial Total]] - Aproximación lineal de funciones compuestas
 > - [[04 - Teorema de la Función Implícita]] - Derivadas de ecuaciones implícitas
-> - [[Teorema de la Función Inversa]] - Relación con derivadas de inversas
+> - [[05 - Funciones compuestas#Teorema de la Función Inversa|Teorema de la Función Inversa]] - Relación con derivadas de inversas
 > 
 > **🔧 Aplicaciones:**
 > 
@@ -2263,7 +2263,7 @@ dg-publish: true
 > - [[Formas Diferenciales]] - Generalización geométrica
 > - [[Cálculo Tensorial]] - Derivadas en variedades
 > - [[Automatic Differentiation]] - Implementación computacional
-> - [[Análisis Funcional]] - Derivadas de Fréchet
+> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
 > 
 > ## 📖 Tabla Resumen
 > 

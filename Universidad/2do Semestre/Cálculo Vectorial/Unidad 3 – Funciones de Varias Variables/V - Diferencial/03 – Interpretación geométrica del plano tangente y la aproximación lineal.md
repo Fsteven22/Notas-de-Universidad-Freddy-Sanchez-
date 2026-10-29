@@ -1189,12 +1189,12 @@ dg-publish: true
 > 
 > - [[Teorema de Taylor en R²]] - Aproximaciones de orden superior
 > - [[Ecuaciones Diferenciales Parciales]] - EDPs sobre superficies
-> - [[Geometría Diferencial]] - Curvaturas y formas fundamentales
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y formas fundamentales
 > - [[Cálculo Variacional]] - Optimización de funcionales
 > 
 > **Conexiones interdisciplinarias:**
 > 
-> - [[Mecánica de Fluidos]] - Campos de velocidad
+> - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
 > - [[Termodinámica]] - Funciones de estado
 > - [[Economía Matemática]] - Funciones de utilidad
 > - [[Aprendizaje Automático]] - Gradiente descendente

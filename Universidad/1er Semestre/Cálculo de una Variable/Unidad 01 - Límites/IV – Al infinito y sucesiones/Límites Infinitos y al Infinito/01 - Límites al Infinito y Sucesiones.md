@@ -165,7 +165,7 @@ dg-publish: true
 > 
 > ### Prerrequisitos:
 > 
-> - [[Definición de Límite]] - Conceptos fundamentales
+> - [[01 – Límite de Funciones de Varias Variables#Definición de Límite|Definición de Límite]] - Conceptos fundamentales
 > - Factorización de Polinomios - Técnica algebraica esencial
 > - Análisis de Signos - Para determinar comportamiento
 > - [[02 - Límites Laterales]] - Base para límites infinitos
@@ -174,7 +174,7 @@ dg-publish: true
 > 
 > - [[01 - Formas Indeterminadas]] - Para formas indeterminadas
 > - [[Discontinuidades]] - Clasificación completa
-> - [[Gráficas de Funciones]] - Interpretación visual
+> - [[02 - Asíntotas y Comportamiento de Funciones#Gráficas de Funciones|Gráficas de Funciones]] - Interpretación visual
 > - Comportamiento Asintótico - Análisis avanzado
 >
 
@@ -315,7 +315,7 @@ dg-publish: true
 > ### Prerrequisitos:
 > 
 > - [[11 - Funciones polinomiales]] - Base algebraica necesaria
-> - [[Álgebra de Límites]] - Propiedades operacionales
+> - [[01 - Propiedades y Teoremas de los Límites#Álgebra de Límites|Álgebra de Límites]] - Propiedades operacionales
 > - [[Función Racional]] - Características específicas
 > 
 > ### Temas Relacionados:
@@ -506,7 +506,7 @@ dg-publish: true
 > - Series Numéricas - Aplicación de sucesiones en series
 > - [[02 – Continuidad]] - Caracterización secuencial de continuidad
 > - Topología de los Reales - Conceptos de supremo e ínfimo
-> - [[Criterios de Convergencia]] - Herramientas avanzadas para series
+> - [[01 - Integrales Impropias#Criterios de Convergencia|Criterios de Convergencia]] - Herramientas avanzadas para series
 
 ## Notas Recomendadas 📚
 
@@ -524,7 +524,7 @@ dg-publish: true
 > - [[Sucesiones de Cauchy]] - Caracterización alternativa de convergencia
 > - Límites Superior e Inferior - Conceptos avanzados
 > - [[Compacidad]] - Teorema de Bolzano-Weierstrass
-> - [[Espacios Métricos]] - Generalización de conceptos
+> - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización de conceptos
 > - Análisis Real Avanzado - Teoría completa de sucesiones
 
 ---

@@ -367,7 +367,7 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Módulo 5.1: Diccionarios en Python]] - Creación y manipulación básica
+> - [[Módulo 5.1 Diccionarios|Módulo 5.1: Diccionarios en Python]] - Creación y manipulación básica
 > - Bucles for en Python - Conceptos de iteración
 > - Variables y Desempaquetado - Sintaxis de desempaquetado
 > 

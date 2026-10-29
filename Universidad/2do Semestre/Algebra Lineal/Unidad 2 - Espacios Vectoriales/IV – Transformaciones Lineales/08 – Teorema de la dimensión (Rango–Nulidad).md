@@ -832,7 +832,7 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales 
 > **Fundamentos previos:**
 > 
-> - [[01 - Vectores en espacios vectoriales]] - Espacios vectoriales
+> - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios vectoriales
 > - [[06 - Independencia lineal]] - Bases y dimensión
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T

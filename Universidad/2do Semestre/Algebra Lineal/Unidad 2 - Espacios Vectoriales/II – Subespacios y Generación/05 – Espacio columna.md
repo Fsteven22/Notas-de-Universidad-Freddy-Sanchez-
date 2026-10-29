@@ -684,7 +684,7 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
-> - [[01 - Vectores en espacios vectoriales]] - Espacios y subespacios
+> - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios y subespacios
 > - [[02 – Combinación lineal]] - Generación de vectores
 > - [[06 - Independencia lineal]] - Bases
 > - [[05 - Sistemas de ecuaciones lineales]] - Consistencia

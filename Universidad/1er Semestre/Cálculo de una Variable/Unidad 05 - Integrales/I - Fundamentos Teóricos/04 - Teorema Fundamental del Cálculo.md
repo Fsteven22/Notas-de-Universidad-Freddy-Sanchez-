@@ -213,14 +213,14 @@ dg-publish: true
 > 
 > ### 📖 Para Profundizar
 > - [[Teorema del Valor Medio]] - Base teórica de la demostración
-> - [[Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
+> - [[04 - Teorema Fundamental del Cálculo#Funciones Definidas por Integrales|Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
 > - Historia del Cálculo - Desarrollo histórico del teorema
 > - [[Cálculo de Variaciones]] - Generalización avanzada
 > 
 > ### 🎯 Aplicaciones Especializadas
 > - [[Trabajo y Energía con Integrales]] - Aplicaciones en física
 > - [[Volúmenes de Revolución]] - Aplicaciones geométricas
-> - [[Longitud de Arco]] - Más aplicaciones geométricas
+> - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Más aplicaciones geométricas
 > 
 ### 🏷️ Tags
 #fundamental/conexiones #derivadas/integrales #aplicaciones/fisica #historia/matematicas #evaluacion/integrales

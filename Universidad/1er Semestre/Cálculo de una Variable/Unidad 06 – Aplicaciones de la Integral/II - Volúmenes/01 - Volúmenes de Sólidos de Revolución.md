@@ -144,7 +144,7 @@ dg-publish: true
 
 > [!quote]+ **Enlaces a Notas Relacionadas**
 > 
-> - [[Integrales Definidas]] - Base matemática fundamental
+> - [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
 > - [[Aplicaciones de la Integral]] - Contexto más amplio
 > - [[Métodos de Integración]] - Técnicas necesarias para resolver
 > - Geometría Analítica - Para visualización espacial
@@ -164,7 +164,7 @@ dg-publish: true
 > - [[02 - Coordenadas polares]] - Para casos más complejos
 > - [[03 - Superficies de revolución]] - Extensión natural
 > - Momentos y Centros de Masa - Otras aplicaciones
-> - [[Longitud de Arco]] - Medidas en curvas
+> - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Medidas en curvas
 
 ---
 

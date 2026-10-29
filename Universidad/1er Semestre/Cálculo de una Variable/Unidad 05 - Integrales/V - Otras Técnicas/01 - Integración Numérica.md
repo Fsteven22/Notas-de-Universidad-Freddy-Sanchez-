@@ -395,7 +395,7 @@ dg-publish: true
 > - Programación de Métodos Numéricos - Implementación práctica en código
 > - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
 > - [[Validación de Resultados Numéricos]] - Técnicas para verificar aproximaciones
-> - [[Transformaciones de Integrales]] - Manejo de casos difíciles
+> - [[01 – Transformaciones lineales|Transformaciones de Integrales]] - Manejo de casos difíciles
 > 
 > ### 🧮 Aplicaciones Especializadas
 > - Análisis de Señales Digitales - Integración de funciones muestreadas

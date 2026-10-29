@@ -162,7 +162,7 @@ dg-publish: true
 > - **Trabajo rotacional**: $W = \tau \Delta\theta$
 > - **Potencia rotacional**: $P = \tau \omega$
 > 
-> ### [[Equilibrio Rotacional]]
+> ### [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > 
 > - **Condición**: $\sum \tau = 0$ (torques se cancelan)
 > - **Aplicación**: Balanzas, palancas, estructuras
@@ -218,7 +218,7 @@ dg-publish: true
 > 
 > - [[Momento de Inercia]]
 > - [[Momentum Angular]]
-> - [[Equilibrio Rotacional]]
+> - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > - [[Trabajo y Energía Rotacional]]
 > - Palancas y Máquinas Simples
 > - [[Producto Vectorial]]

@@ -1317,7 +1317,7 @@ dg-publish: true
 > - [[02 - Espacio Vectorial]] - Definición axiomática
 > - [[Subespacios]] - Heredan propiedades
 > - [[01 – Transformaciones lineales]] - Preservan estructura
-> - [[Independencia Lineal]] - Usa estos teoremas
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]] - Usa estos teoremas
 > 
 > **Aplicaciones posteriores:**
 > 
@@ -1325,7 +1325,7 @@ dg-publish: true
 > - [[Sistemas de Ecuaciones]] - Resolución formal
 > - [[04 - Determinantes]] - Propiedades algebraicas
 > - [[Espacios Normados]] - Estructura adicional
-> - [[Análisis Funcional]] - Extensión infinita
+> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Extensión infinita
 
 ## 📖 Referencias Históricas
 

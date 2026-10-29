@@ -371,7 +371,7 @@ dg-publish: true
 
 ## Notas Recomendadas para Complementar 📖
 
-- [[Cinemática]] - Fundamentos físicos de velocidad y aceleración
+- [[Constante de integración#Cinemática|Cinemática]] - Fundamentos físicos de velocidad y aceleración
 - Geometría Analítica - Relaciones geométricas fundamentales
 - Trigonometría - Para problemas con ángulos y rotación
 - [[Física General]] - Contexto físico de las aplicaciones

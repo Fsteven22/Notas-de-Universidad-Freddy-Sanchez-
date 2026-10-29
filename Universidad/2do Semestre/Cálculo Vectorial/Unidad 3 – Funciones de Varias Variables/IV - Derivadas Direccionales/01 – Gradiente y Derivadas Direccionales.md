@@ -2740,7 +2740,7 @@ dg-publish: true
 > [!quote] 🌐 Relaciones Importantes 
 > **Este tema es prerequisito para:**
 > 
-> - [[10 - Diferenciabilidad y Plano Tangente]] - El gradiente define el plano tangente
+> - [[04 – Diferenciabilidad|10 - Diferenciabilidad y Plano Tangente]] - El gradiente define el plano tangente
 > - [[02 - Regla de la Cadena]] - Composición con derivadas direccionales
 > - [[02 - Optimización con Restricciones]] - Condiciones de primer orden
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones

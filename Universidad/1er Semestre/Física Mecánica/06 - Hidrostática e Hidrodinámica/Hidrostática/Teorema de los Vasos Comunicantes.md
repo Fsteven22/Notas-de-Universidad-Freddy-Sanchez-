@@ -122,7 +122,7 @@ dg-publish: true
 
 > [!quote] Notas Relacionadas
 > 
-> - [[Presión Hidrostática]]
+> - [[Presión y Densidad#Presión Hidrostática|Presión Hidrostática]]
 > - [[El Principio de Pascal]]
 > - Densidad de Fluidos
 > - [[Sistemas Hidráulicos]]
@@ -139,7 +139,7 @@ dg-publish: true
 > [!tip] Continuación del Tema
 > 
 > - [[Principio de Arquímedes]]
-> - [[Ecuación de Continuidad]]
+> - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]]
 > - [[Teorema de Torricelli]]
 
 ---
