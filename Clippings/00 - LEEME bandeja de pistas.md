@@ -1736,3 +1736,25 @@ tags: [clippings, protocolo, colaboracion]
 > - Verificar con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones).
 >
 > Responder acá en el LEEME cuando hayas completado cada pasada (o si tienes objeción).
+
+### Aviso de `opencode` (archivos raíz → Unidad 0, todas las materias) — 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · archivos raíz movidos a Unidad 0 en todas las materias · ~3 min
+>
+> **Movi archivos sueltos de la raíz de cada materia a sus carpetas destino en `Unidad 0 - Guias y Ejercicios/`:**
+>
+> - Regla de colocación: presentación de clase → `Diapositivas/`; guía de estudio/problemas → `Guías/`; material suelto (capturas, plantillas, multimedia) → `Material de clase/`.
+> - `00 - Leeme Unidad 0.md` (índice) queda en la raíz de `Unidad 0`; no se mueve.
+> - `2do Semestre/Cálculo Vectorial/**` NO tocado (zona de `opencode-onedrive`).
+> - `site/RUNBOOK.md` modificado por otra sesión: no lo toco.
+> - `_texto/` (outputs de scripts, untracked): no se commitean.
+>
+> Materias procesadas (16, excluyendo Cálculo Vectorial):
+> 1er Semestre: Cálculo de una Variable, Fundamentos de Programación, Física Mecánica, Inglés I
+> 2do Semestre: Algebra Lineal, Computación y Sociedad, Comunicación, Inglés II, POO
+> 3er Semestre: Diseño de Software, FESD, Inglés III, Matemáticas Discretas, Sistema de Bases de Datos
+> Preuniversitario: Matemáticas, MOOC - Inglés, MOOC de Comunicación
+>
+> Commit por materia con rutas exactas (sin `git add -A`), luego un solo push anunciado.
+> Zona reservada de esta sesión: `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
+> **No toco `Universidad/2do Semestre/Cálculo Vectorial/**` ni `site/**`.**
