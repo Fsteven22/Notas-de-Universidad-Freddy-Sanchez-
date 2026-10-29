@@ -28,14 +28,6 @@ tags: [TICG1018, unidad0, recursos]
 
 ![[Diapositivas/2026_1PAO_slides5_1_TICG1018.pdf]]
 
-## 🔄 Diapositivas Unidad 2 (modelo lógico)
-
-![[Diapositivas/BD 02 MC_a_ML.pdf]]
-
-![[Diapositivas/2026_1PAO_slides4_1_TICG1018.pdf]]
-
-![[Diapositivas/BD 02.3 Normalizacion.pdf]]
-
 ## 🔤 Diapositivas Unidad 3 (SQL)
 
 ![[Diapositivas/2026_1PAO_slides6_1_TICG1018.pdf]]
@@ -87,6 +79,8 @@ tags: [TICG1018, unidad0, recursos]
 ## 📕 Libro (solo local, no se publica)
 
 - `Database Systems - Design, Implementation, and Management (9th Edition).pdf` (Coronel-Morris, 15.9MB) — lectura asignada cap. 4 §§4.1.3–4.1.7. No se embarca por copyright; consulta local.
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 
 ---
 

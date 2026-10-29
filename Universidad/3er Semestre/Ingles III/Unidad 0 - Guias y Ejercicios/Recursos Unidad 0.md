@@ -72,10 +72,12 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 - https://www.youtube.com/watch?v=FfhZFRvmaVY — Advanced speaking practice: English Imitation Lesson (mmmEnglish, 13:51) — para el speaking y los ejemplos good/bad.
 - https://www.youtube.com/watch?v=fzIxD1jXn44 — Presentations in English: how to give a presentation (Oxford Online English, 16:46) — para las plantillas de presentación de CELEX.
 
-## 📕 Libro (solo local, no se publica)
+## 📕 Libro y syllabus (solo local, no se publican)
 
 - `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: está en `Universidad/_no-publicar.txt`).
 - Empower (U7-U12) — libro de texto del curso: el libro completo no se publica; lo que hay son capturas por unidad ([[Libro de ingles las primeras unidades]] y [[Libro de ingles ultimas unidades]]).
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 
 ---
 

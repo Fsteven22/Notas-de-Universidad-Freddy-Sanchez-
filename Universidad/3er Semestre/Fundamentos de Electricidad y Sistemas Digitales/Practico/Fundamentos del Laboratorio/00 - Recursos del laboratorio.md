@@ -3,7 +3,7 @@ dg-publish: true
 tags: [EYAG1037, laboratorio, recursos]
 ---
 
-# 🧪 Recursos — Fundamentos del Laboratorio (FESD)
+# 📂 Unidad 0 — Guías y Ejercicios (FESD Práctico)
 
 > [!info] ℹ️ Documentos publicados
 > PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
@@ -26,7 +26,11 @@ Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 - https://www.youtube.com/watch?v=0DApkAeWF20 — Guía del osciloscopio para principiantes (Caty Kanal, 13:43) — si nunca lo has usado.
 - https://www.youtube.com/watch?v=Z1pxudDk-BM — Cómo usar multímetro digital: funciones básicas (Hetzu Academy, 9:30) — tensión, corriente y resistencia.
 - https://www.youtube.com/watch?v=uUw-mYk8iCA — Aprende a usar un multímetro (Mentalidad de Ingeniería, 28:16) — curso completo, con los errores típicos.
-- https://www.youtube.com/watch?v=VQE6udqyr6Y — Funciones del multímetro (IngE Darwin, 0:56) — el resumen de un minuto.
+- https://www.youtube.com/watch?v=VQE6udqyr6Y - Funciones del multímetro (IngE Darwin, 0:56) - el resumen de un minuto.
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
+
+![[Pasted image 20260525231841.png]]
 
 ---
 

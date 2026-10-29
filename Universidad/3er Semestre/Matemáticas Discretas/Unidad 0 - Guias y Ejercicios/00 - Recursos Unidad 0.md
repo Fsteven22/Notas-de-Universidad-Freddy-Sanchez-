@@ -3,7 +3,7 @@ dg-publish: true
 tags: [MATG1051, unidad0, recursos]
 ---
 
-# 📂 Unidad 0 — Guías y Ejercicios (Discretas)
+# 📂 Unidad 0 — Guías y Ejercicios (Matemáticas Discretas)
 
 > [!info] ℹ️ Documentos publicados
 > PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
@@ -102,10 +102,12 @@ tags: [MATG1051, unidad0, recursos]
 - https://www.youtube.com/watch?v=P0AxQvJcN2Q — Definición formal de un AFD (Juancar Molinero, 5:38) — para las notas de máquinas automáticas.
 - https://www.youtube.com/watch?v=dIgKBNuaglE — Qué es un autómata finito no determinista (Codemath, 5:25) — el AFND para comparar.
 
-## 💻 Solo local (no se publican)
+## 📕 Libro y syllabus (solo local, no se publican)
 
 - `Syllabus_MATG1051.pdf` — programa oficial de la materia.
 - `LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf` y `LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf` — libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `_no-publicar.txt`).
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 
 ---
 

@@ -55,7 +55,9 @@ tags: [EYAG1037, unidad0, recursos]
 - https://www.youtube.com/watch?v=YNKE5-vuziU — Amplificadores operacionales desde cero (AulaVirtual, 32:35) — lo que pide la guía de op-amps (`EjREsAmpOp.pdf`).
 - https://www.youtube.com/watch?v=-jNR4824ifo — Amplificador operacional: lo que debes saber para empezar (ACADENAS, 20:25) — terminales y configuraciones básicas.
 - https://www.youtube.com/watch?v=qMHSr4FAPAM — Amplificador integrador en 6 minutos (Les Ingenieurs, 7:57) — el integrador con op-amp, paso a paso.
-- https://www.youtube.com/watch?v=EbobLluwmP4 — Amplificador operacional: comparador (Electrónica FP, 6:38) — el comparador como caso de uso.
+- https://www.youtube.com/watch?v=EbobLluwmP4 - Amplificador operacional: comparador (Electrónica FP, 6:38) - el comparador como caso de uso.
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 
 ---
 

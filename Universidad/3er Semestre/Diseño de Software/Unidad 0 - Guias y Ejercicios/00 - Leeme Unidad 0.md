@@ -50,7 +50,7 @@ tags: [CCPG1042, unidad0, recursos]
 - https://www.youtube.com/watch?v=Y8h_Zmedwn4 — Qué es refactoring y cómo hacerlo paso a paso (OpenWebinars, 3:06) — antes de la Unidad 4.
 - https://www.youtube.com/watch?v=omCFoofZUGY — Refactoring (DesarrolloWeb.com, 2:13:33) — clase larga de refactoring con ejemplos.
 
-## 📕 Syllabus y libros (solo local, no se publican)
+## 📕 Libro y syllabus (solo local, no se publican)
 
 Los libros de texto completos con copyright **no** se publican: están en `Universidad/_no-publicar.txt`, no tienen URL pública y no entran en el ZIP de la materia. Se consultan en local.
 
@@ -60,6 +60,8 @@ Los libros de texto completos con copyright **no** se publican: están en `Unive
 - `03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf` — Shalloway & Trott, 2da ed.
 - `04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf` — Fowler, 2da ed.
 - `Clean Architecture - Robert C. Martin (libro completo).pdf` — lectura asignada Control 01 (caps. 3, 4 y 6), local por copyright. Integrado en [[03 - Paradigmas de programación y diseño|U1-03]].
+
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 
 ---
 
