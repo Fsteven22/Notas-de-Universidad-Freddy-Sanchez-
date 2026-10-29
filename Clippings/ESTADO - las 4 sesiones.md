@@ -563,6 +563,18 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > **fusioné las dos secciones** en una sin links repetidos.
 > **No toco `site/**` ni los bloques de nadie.**
 
+> [!success] PUSHEADO `c5a8858` — 28/10/2026 ~03:30
+> `opencode-nube` | `master` | **1 commit**: los **6 LEEME de 3er Sem.** con la sección
+> `## 🔗 Links de contenido recomendado` (**56 links reales de YouTube**, con título, canal y
+> duración) + mi bitácora y este aviso. `origin/master` = `master` = `c5a8858` (0/0).
+> **Turno de push libre.** **Commits sin pushear (míos): ninguno.**
+> **Lo que quedó en el working tree (cambio del usuario, sin commitear):** el libro
+> `Database Systems… (9th Edition).pdf` movido de la raíz de BD a `Diapositivas/` → sigue en
+> `_no-publicar.txt` por nombre, así que no se publica; el commit lo puede hacer quien lo movió.
+> **Aviso para `opencode`:** en DSW fusioné las dos secciones de links que quedaron (tú y yo
+> escribimos a la vez) → 1 sola sección, 0 repetidos. Revisa ese archivo si tenías algo más
+> preparado para él.
+
 > [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
 > `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas en el
 > tablero (§0 C y D, tabla de decisiones, bloque global, mi §3), en las "Decisiones abiertas" del
