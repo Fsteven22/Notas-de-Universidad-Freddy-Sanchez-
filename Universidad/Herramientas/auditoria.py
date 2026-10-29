@@ -19,7 +19,13 @@ import re
 import sys
 from pathlib import Path
 
-DEFAULT_VAULT = r"C:\Users\Steven Sànchez\OneDrive\OneSyncFiles"
+def _raiz_por_defecto():
+    """Deduce la raiz del vault desde la ubicacion de este script."""
+    aqui = os.path.dirname(os.path.abspath(__file__))
+    return os.path.dirname(os.path.dirname(aqui))  # Herramientas/ -> Universidad/ -> OneSyncFiles/
+
+
+DEFAULT_VAULT = os.environ.get("VAULT_ROOT") or _raiz_por_defecto()
 DETAIL_CAP = 20
 NEARDUP_MIN_RATIO = 0.93
 STUB_MAX_BODY = 1200

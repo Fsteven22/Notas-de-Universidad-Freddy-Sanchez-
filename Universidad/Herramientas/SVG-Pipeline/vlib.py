@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-BASE = os.path.join(os.path.expanduser("~"), "OneDrive", "OneSyncFiles")
+BASE = os.environ.get("VAULT_ROOT") or os.path.join(
+    os.path.expanduser("~"), "OneDrive", "OneSyncFiles"
+)
 
 def vault():
     return BASE

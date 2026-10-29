@@ -2,7 +2,9 @@
 import os, re, subprocess, sys, shutil
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-VAULT = os.path.join(os.path.expanduser("~"), "OneDrive", "OneSyncFiles")
+VAULT = os.environ.get("VAULT_ROOT") or os.path.join(
+    os.path.expanduser("~"), "OneDrive", "OneSyncFiles"
+)
 MAT = os.path.join(VAULT, "Universidad", "2do Semestre", "C\u00e1lculo Vectorial")
 DIAG_DIR = os.path.join(MAT, "Diagramas")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
