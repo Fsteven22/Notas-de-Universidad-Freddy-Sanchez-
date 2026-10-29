@@ -289,7 +289,7 @@ dg-publish: true
 
 - [[02 - Coordenadas polares]] - Extensión a otros sistemas de coordenadas
 - [[Curvas Paramétricas]] - Representaciones alternativas de curvas
-- [[Teorema de Green]] - Método alternativo para cálculo de áreas
+- [[03 – Integrales de línea vectoriales#Teorema de Green|Teorema de Green]] - Método alternativo para cálculo de áreas
 - [[01 - Integración Numérica]] - Métodos computacionales
 
 ### 🎯 Notas Recomendadas

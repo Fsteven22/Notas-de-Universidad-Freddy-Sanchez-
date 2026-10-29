@@ -284,7 +284,7 @@ dg-publish: true
 
 > [!quote] 🔗 Vínculos con Otros Temas de Mecánica
 > 
-> - [[Equilibrio Estático]] - Análisis de fuerzas en estructuras deformables
+> - [[Equilibrio#Equilibrio Estático|Equilibrio Estático]] - Análisis de fuerzas en estructuras deformables
 > - [[Trabajo y Energía]] - Energía potencial elástica y transformaciones
 > - Oscilaciones - Sistemas masa-resorte y movimiento armónico
 > - Fuerzas y DCL - Fuerzas de restitución elástica

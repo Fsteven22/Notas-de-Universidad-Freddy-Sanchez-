@@ -1003,20 +1003,20 @@ dg-publish: true
 > 
 > - [[01 - Superficies cuadráticas]] - Los cilindros son casos especiales
 > - [[03 - Superficies de revolución]] - Comparación con superficies rotadas
-> - [[Coordenadas cilíndricas]] - Sistema natural para cilindros circulares
+> - [[03 - Superficies de revolución#Coordenadas Cilíndricas|Coordenadas cilíndricas]] - Sistema natural para cilindros circulares
 > 
 > **Aplicaciones avanzadas:**
 > 
 > - [[Cálculo Vectorial]] - Integrales de superficie
 > - [[Ecuaciones Diferenciales]] - Problemas en coordenadas cilíndricas
 > - [[Física Matemática]] - Laplaciano en cilindros
-> - [[Geometría Diferencial]] - Superficies desarrollables
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies desarrollables
 > 
 > **Temas posteriores:**
 > 
 > - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas de coordenadas
 > - [[01 - Nociones topológicas en Rⁿ]] - Conjuntos abiertos y cerrados en cilindros
-> - [[Campos Vectoriales]] - Flujo a través de cilindros
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Flujo a través de cilindros
 
 ## 💡 Consejos de Estudio
 

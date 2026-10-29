@@ -1027,10 +1027,10 @@ dg-publish: true
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Geometría Diferencial]] - Planos tangentes
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Planos tangentes
 > - [[Cálculo Multivariable]] - Gradiente y planos tangentes
 > - [[Ecuaciones Diferenciales]] - Familias de planos solución
-> - [[Optimización]] - Restricciones planares
+> - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Restricciones planares
 > 
 > **Aplicaciones prácticas:**
 > 

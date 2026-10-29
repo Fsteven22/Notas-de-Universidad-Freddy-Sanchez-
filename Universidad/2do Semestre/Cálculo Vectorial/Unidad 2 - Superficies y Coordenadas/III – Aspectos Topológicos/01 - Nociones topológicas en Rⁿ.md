@@ -1726,27 +1726,27 @@ dg-publish: true
 > 
 > - [[Conjuntos y Lógica]] - Teoría básica de conjuntos
 > - [[Sucesiones y Límites]] - Convergencia
-> - [[Funciones Continuas]] - Continuidad
-> - [[Espacios Métricos]] - Distancias
+> - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
+> - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Distancias
 > 
 > **Temas relacionados:**
 > 
 > - [[Cálculo Multivariable]] - Límites y continuidad
 > - [[Funciones de Varias Variables]] - Dominios abiertos
 > - [[01 – Integrales múltiples]] - Regiones de integración
-> - [[Análisis Vectorial]] - Campos vectoriales
+> - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Campos vectoriales
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Optimización]] - Compacidad garantiza extremos
+> - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Compacidad garantiza extremos
 > - [[Ecuaciones Diferenciales]] - Existencia y unicidad
 > - [[Teoría de la Medida]] - Conjuntos medibles
-> - [[Análisis Funcional]] - Espacios de Banach
+> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
 > 
 > **Temas avanzados:**
 > 
 > - [[Topología Algebraica]] - Homología, cohomología
-> - [[Geometría Diferencial]] - Variedades topológicas
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades topológicas
 > - [[Topología General]] - Espacios abstractos
 > - [[Análisis Real]] - Teoría de la medida
 > 

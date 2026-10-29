@@ -399,7 +399,7 @@ dg-publish: true
 > - [[Métodos de Integració...]] - Técnicas para cada tramo
 > - Transformadas - Fourier y Laplace de funciones por tramos
 > - [[Ecuaciones Diferenciales]] - Con coeficientes por tramos
-> - [[Fundamentos teóricos]] - Base teórica de integrabilidad
+> - [[Módulo 1.1 Programación y su Relevancia#Fundamentos Teóricos|Fundamentos teóricos]] - Base teórica de integrabilidad
 
 ---
 

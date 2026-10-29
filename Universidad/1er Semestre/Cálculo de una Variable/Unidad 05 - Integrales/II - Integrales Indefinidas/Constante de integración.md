@@ -328,9 +328,9 @@ dg-publish: true
 > ### 🔗 Notas Relacionadas
 > - [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
 > - [[01 - Antiderivadas (Primitivas)]] - Tabla de fórmulas con constantes
-> - [[Técnicas de Integración]] - Manejo de constantes en métodos avanzados
+> - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]] - Manejo de constantes en métodos avanzados
 > - [[Ecuaciones Diferenciales Básicas]] - Aplicación principal
-> - [[Problemas de Valor Inicial]] - Determinación práctica de constantes
+> - [[01 - Antiderivadas (Primitivas)#Problemas de Valor Inicial|Problemas de Valor Inicial]] - Determinación práctica de constantes
 > 
 > ### 📖 Para Profundizar
 > - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
@@ -342,7 +342,7 @@ dg-publish: true
 > - Mecánica Clásica - Leyes de Newton y movimiento
 > - Circuitos RLC - Análisis de corriente y voltaje
 > - Modelos de Crecimiento - Poblaciones y economía
-> - [[Sistemas Dinámicos]] - Evolución temporal
+> - [[08 – Teorema espectral#Sistemas Dinámicos|Sistemas Dinámicos]] - Evolución temporal
 > 
 
 ### 🏷️ Tags

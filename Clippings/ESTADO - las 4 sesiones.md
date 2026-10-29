@@ -54,7 +54,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > |---|---|---|---|---|---|
 > | **A** | **Scripts `.py` de mantenimiento del vault** | `opencode-onedrive` | `Universidad/Herramientas/**` | `Mantenimiento/` con los `.py` documentados en `Herramientas/README.md` | 🟡 en curso |
 > | **B** | **Mover las figuras a la carpeta de su materia** | `opencode` (3er Sem.) | `Universidad/**` (figuras y embeds) | 0 figuras sueltas fuera de su materia + embeds OK | 🟡 en curso |
-> | **C** | **Seguir con las conversiones Mermaid → SVG** + **los links rotos** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | Los 19 SVG que faltan + los 1026 links rotos arreglados + lista maestra en 0 | 🟡 en curso |
+> | **C** | **Seguir con las conversiones Mermaid → SVG** + **los links rotos** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | 39 SVG NaN regenerados · 214 links fijos en 98 notas · 554 targets en tabla de propuestas | ✅ cerrado |
 > | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote desde `Unidad 0 - Guías y Ejercicios` (D1) → notas de la materia (D2) | 🟡 **D1 en marcha** |
 
 > [!success] ✅ Carril **A** — scripts `.py` de mantenimiento (`opencode-onedrive`)
@@ -99,18 +99,17 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > **Salida:** los **19 SVG** nuevos en las carpetas `Diagramas/` de su materia +
 > `SVGs por recrear.md` en 0 + verificación de que el sitio los publica.
 >
-> **Y ahora también los links rotos (decisión del usuario 28/10):** los **1026 links rotos
-> reales** (no 1039: 13 son falsos positivos en `Herramientas/`) pasan a este carril.
-> **Desglose medido:** 2do Semestre **528** · 1er Semestre **471** · Preuniversitario **27**.
-> Ya se **neutralizaron** 861 como texto plano → hay que **reconstruirlos**, no dejarlos así:
-> - Link que apunta a un **diagrama/figura** → se genera el asset que falta (mermaid → SVG) y se
->   vuelve a embeber. **Esto es 100% tuyo.**
-> - Link que apunta a una **nota** → el archivo está en otra ruta: proposes el nombre correcto y
->   lo deja en el tablero, o lo arreglas si la nota es de 3er Sem. (**ahí manda `opencode`**:
->   no edites notas de otro carril sin avisar).
-> - Link que apunta a un **PDF/guía** → se reubica el archivo en la carpeta de su unidad.
-> Herramienta de apoyo: `qa_links.py` y `qa_links_por_target.py` (carril A) + la lista
-> `Universidad/Herramientas/SVGs por recrear.md`.
+> **Estado (cierre de carril C, esta sesión):**
+> - **39 SVG NaN regenerados** desde cero con `mmdc` a partir de 39 specs nuevos en
+>   `Universidad/Herramientas/SVG-Pipeline/mmd2/fix_nan/` (OK=39/39). Barrido posterior: 2367 SVG sanos,
+>   8 huérfanos de `Comunicación` (no embebidos, reportados como limpieza pendiente).
+> - **214 links rotos fijos** en 98 notas (`[[Base|Texto]]` y `[[Base#Encabezado|Texto]]`),
+>   verificados con `qa_links.py`: BAD 1039 → 825.
+> - **19 `.mmd` obsoletos borrados** (16 duplicados en-dash, 2 artefactos de prueba, 1 fuente genérica).
+> - **554 targets restantes** (825 ocurrencias) dejados en tabla de propuestas:
+>   `Clippings/PROPUESTAS - links rotos (carril C).md` (180 aproximado, 374 sin-destino).
+> - Los 8 mindmaps `com-u*-graph.svg` de Comunicación quedan sin tocar: rotos pero no embebidos
+>   en ninguna nota (invisibles en el sitio) → limpieza pendiente.
 
 > [!success] ✅ Carril **D** — material nuevo de 3er Sem. (guías y ejercicios)
 > Se parte en **dos** para que cada quien trabaje en su zona:
@@ -237,16 +236,24 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 4 | **Carpeta `_privado/` reservada** (decisión 2 del plan): el sync la ignora por estructura, pero nadie la usa | baja | usuario |
 > | 5 | **Reporte en el build** de qué material quedó excluido y por qué (hoy solo se ve el aviso en la nota) | baja | sesión |
 
+> [!success] ✅ Carril C cerrado (esta sesión) — hash del commit anunciado por `PUSHEADO` tras el push
+> - 39 SVG NaN regenerados (OK=39/39) en `Universidad/**/Diagramas/`
+> - 214 links rotos fijos en 98 notas (BAD 1039 → 825, verificado con `qa_links.py`)
+> - 19 `.mmd` obsoletos borrados; `Universidad/Herramientas/SVGs por recrear.md` en 0
+> - 554 targets restantes → `Clippings/PROPUESTAS - links rotos (carril C).md`
+> - 8 mindmaps `com-u*-graph.svg` de Comunicación reportados como limpieza pendiente (no embebidos, invisibles en el sitio)
+
 > [!success] ✅ Ya no pendientes (cerrados en esta ronda)
-> Ya no pendientes (cerrados en esta ronda): verificación en producción de favicon/redirect/aviso (hecha), refresco del espejo (hecho) y `git pull` del clon Desktop (hecho: `master` = `origin/master`).
+> Ya no pendientes (cerrados en esta ronda): verificación en producción de favicon/redirect/aviso (hecha), refresco del espejo (hecho), `git pull` del clon Desktop (hecho: `master` = `origin/master`) y **carril C cerrado** (39 SVG + 214 links + tabla de propuestas).
 
 ### Próximos pasos
 > [!warning] ⏳ Qué falta
 >
-> 1. Verificar el deploy de 833 páginas cuando Vercel termine y reportar.
-> 2. Implementar el CI anti-fuga (#3) si me das el ok: es la red de seguridad que faltó para `Escucha Activa Parte 1_OCR.pdf`.
-> 3. Avisarte el paso del panel del dominio (#1) y dejar la verificación documentada en el LEEME.
-> 4. Cuando confirmes la cuenta institucional, revisar si el `favicon`/`og` necesitan versión institucional.
+> 1. **Cerrar el carril C:** anunciar `PUSHEO EN CURSO` → pushear el commit de cierre (39 SVG + 39 `.mmd` + 19 borrados + 98 `.md` + ESTADO + LOG + PROPUESTAS) → `PUSHEADO <hash>`.
+> 2. Verificar el deploy de 833 páginas cuando Vercel termine y reportar.
+> 3. Implementar el CI anti-fuga (#3) si me das el ok.
+> 4. Avisarte el paso del panel del dominio (#1) y dejar la verificación documentada en el LEEME.
+> 5. Cuando confirmes la cuenta institucional, revisar si el `favicon`/`og` necesitan versión institucional.
 
 ---
 

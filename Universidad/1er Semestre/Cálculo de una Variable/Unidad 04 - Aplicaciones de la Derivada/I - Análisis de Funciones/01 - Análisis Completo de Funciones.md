@@ -331,7 +331,7 @@ dg-publish: true
 
 ## Referencias 🔗
 
-> [!quote] [[Límites y Continuidad]] Fundamentos para entender asíntotas y comportamiento
+> [!quote] [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] Fundamentos para entender asíntotas y comportamiento
 >
 
 > [!quote] Primera Derivada y Monotonía Análisis de crecimiento y puntos críticos

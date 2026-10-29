@@ -260,13 +260,13 @@ dg-publish: true
 > 
 > - [[Álgebra Lineal]] - Espacios vectoriales
 > - [[Cálculo Vectorial]] - Funciones de varias variables
-> - [[Geometría Diferencial]] - Curvas y superficies
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvas y superficies
 > 
 > **Aplicaciones avanzadas:**
 > 
 > - [[01 – Transformaciones lineales]] - Cambios de base
 > - [[Producto Vectorial]] - Operaciones en ℝ³
-> - [[Ecuaciones Paramétricas]] - Curvas en el espacio
+> - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Curvas en el espacio
 
 ## 💡 Consejos de Estudio
 

@@ -275,11 +275,11 @@ dg-publish: true
 > [!quote] Enlaces a otras notas
 > 
 > - [[Límites de Funciones]] - Base conceptual para la definición de derivada
-> - [[Reglas de Derivación]] - Técnicas para calcular derivadas
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Técnicas para calcular derivadas
 > - [[Aplicaciones de la Derivada]] - Usos en optimización y análisis
 > - [[02 – Continuidad]] - Relación entre continuidad y derivabilidad
 > - [[Diferencial]] - Concepto relacionado con aproximaciones lineales
-> - [[Cinemática]] - Aplicaciones físicas de razones de cambio
+> - [[Constante de integración#Cinemática|Cinemática]] - Aplicaciones físicas de razones de cambio
 
 ## Notas Recomendadas
 
@@ -289,14 +289,14 @@ dg-publish: true
 > 
 > - [[Límites Básicos]] - Para entender la definición como límite
 > - [[Funciones y Gráficas]] - Interpretación geométrica
-> - [[Álgebra de Límites]] - Manipulación de expresiones límite
+> - [[01 - Propiedades y Teoremas de los Límites#Álgebra de Límites|Álgebra de Límites]] - Manipulación de expresiones límite
 > - Geometría Analítica - Ecuaciones de rectas
 > 
 > **Para profundizar:**
 > 
 > - [[Teoremas de Derivabilidad]] - Rolle, Valor Medio, etc.
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y concavidad
-> - [[Análisis de Funciones]] - Crecimiento, extremos, inflexión
+> - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Crecimiento, extremos, inflexión
 > - [[Ecuaciones Diferenciales]] - Modelado con razones de cambio
 > - [[Cálculo Numérico]] - Aproximación de derivadas
 > - [[Física Matemática]] - Aplicaciones avanzadas en ciencias

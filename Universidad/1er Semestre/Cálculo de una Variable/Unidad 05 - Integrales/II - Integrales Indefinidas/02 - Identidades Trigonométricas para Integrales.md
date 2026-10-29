@@ -158,9 +158,9 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Identidades Trigonométricas Básicas]] - Fundamento teórico
-> - [[Técnicas de Integración]] - Métodos generales
-> - [[Sustitución Trigonométrica]] - Contexto más amplio
+> - [[05 - Identidades trigonométricas|Identidades Trigonométricas Básicas]] - Fundamento teórico
+> - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]] - Métodos generales
+> - [[01 - Longitud de Curva#Sustitución Trigonométrica|Sustitución Trigonométrica]] - Contexto más amplio
 > 
 > **Aplicaciones posteriores:**
 > 
@@ -178,7 +178,7 @@ dg-publish: true
 > 2. **[[Fracciones Parciales]]** - Para expresiones racionales
 > 3. **Completar el Cuadrado** - Preparación de formas estándar
 > 
-> **Aplicaciones avanzadas:** 4. **[[Integrales Definidas]]** - Evaluación numérica 5. **[[Aplicaciones Físicas]]** - Ondas y oscilaciones
+> **Aplicaciones avanzadas:** 4. **[[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]]** - Evaluación numérica 5. **[[01 - Área bajo la Curva#Aplicaciones Físicas|Aplicaciones Físicas]]** - Ondas y oscilaciones
 
 ---
 

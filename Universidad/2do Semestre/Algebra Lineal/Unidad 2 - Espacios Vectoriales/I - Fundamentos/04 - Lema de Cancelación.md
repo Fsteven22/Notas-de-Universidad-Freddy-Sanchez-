@@ -969,8 +969,8 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Resolución
-> - [[Independencia lineal]] - Unicidad de coeficientes
-> - [[Isomorfismos]] - Biyecciones cancelables
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia lineal]] - Unicidad de coeficientes
+> - [[01 – Transformaciones lineales#Isomorfismos|Isomorfismos]] - Biyecciones cancelables
 > - [[Teorema de rango-nulidad]] - Dimensiones
 > - [[Formas canónicas]] - Simplificación de matrices
 

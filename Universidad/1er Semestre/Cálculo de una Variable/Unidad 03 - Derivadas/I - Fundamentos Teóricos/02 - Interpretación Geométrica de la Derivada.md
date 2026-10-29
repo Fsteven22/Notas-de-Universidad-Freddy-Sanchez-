@@ -420,9 +420,9 @@ dg-publish: true
 
 > [!quote] 📖 **Notas relacionadas**
 > 
-> - [[Límites y Continuidad]] - Base teórica para la definición de derivada
+> - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base teórica para la definición de derivada
 > - Definición de Derivada por Límites - Fundamento algebraico
-> - [[Reglas de Derivación]] - Técnicas para calcular derivadas
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Técnicas para calcular derivadas
 > - Funciones y sus Gráficas - Conocimiento previo de funciones
 
 ---

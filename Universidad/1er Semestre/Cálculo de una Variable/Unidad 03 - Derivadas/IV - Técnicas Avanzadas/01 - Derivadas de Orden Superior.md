@@ -352,7 +352,7 @@ dg-publish: true
 > ### Temas Relacionados
 > - [[03 - Derivadas Paramétricas]] 🔄 - Segunda derivada paramétrica
 > - Series de Taylor - Usan todas las derivadas de orden superior
-> - [[Análisis de Funciones]] - Concavidad y puntos de inflexión
+> - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Concavidad y puntos de inflexión
 > - Optimización - Criterios de segunda derivada
 > 
 > ### Aplicaciones Avanzadas

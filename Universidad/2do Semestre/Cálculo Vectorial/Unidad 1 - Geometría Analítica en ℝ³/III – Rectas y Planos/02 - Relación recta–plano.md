@@ -1085,7 +1085,7 @@ dg-publish: true
 > 
 > **Conceptos utilizados:**
 > 
-> - [[Vector Normal]] - Perpendicular al plano
+> - [[02 - Superficies cilíndricas#Vector Normal|Vector Normal]] - Perpendicular al plano
 > - [[Vector Director]] - Dirección de la recta
 > - [[Paralelismo en R3]] - Condiciones de paralelismo
 > - [[Perpendicularidad en R3]] - Condiciones de ortogonalidad

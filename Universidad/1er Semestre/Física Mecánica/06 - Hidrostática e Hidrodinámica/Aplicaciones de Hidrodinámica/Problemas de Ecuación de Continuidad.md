@@ -727,7 +727,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Ecuación de Continuidad y Bernoulli]] - Principios fundamentales
-> - [[Problemas del Teorema de Torricelli]] - Aplicaciones relacionadas
+> - [[Problemas de Ecuación de Bernoulli#Problemas del Teorema de Torricelli|Problemas del Teorema de Torricelli]] - Aplicaciones relacionadas
 > - [[Flujo Laminar y Ecuación de Poiseuille]] - Comportamiento viscoso
 > - [[Presión y Densidad]] - Conceptos de base
 > - Aplicaciones de Hidrodinámica - Contexto general

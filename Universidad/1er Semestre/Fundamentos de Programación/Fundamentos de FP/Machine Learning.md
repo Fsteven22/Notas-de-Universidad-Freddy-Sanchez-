@@ -139,7 +139,7 @@ Ejemplo:
 
 ### 📖 Enlaces a Otras Notas
 - ![[Fundamentos de Programación]] - Base para implementar algoritmos de ML
-- ![[Métodos de Estudio]] - Para estructurar el aprendizaje de conceptos complejos
+- ![[01 - Superficies cuadráticas#Métodos de Estudio|Métodos de Estudio]] - Para estructurar el aprendizaje de conceptos complejos
 - ![[Análisis Costo-Beneficio]] - Evaluar viabilidad de proyectos de ML
 - ![[Gestión de Proyectos]] - Manejar proyectos de ML efectivamente
 - ![[Estadística y Probabilidad]] - Fundamento matemático del ML

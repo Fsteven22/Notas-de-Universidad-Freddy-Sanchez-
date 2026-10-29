@@ -461,21 +461,21 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Derivadas]] - Cálculo de la primera derivada
-> - [[Reglas de Derivación]] - Técnicas de derivación
+> - [[01 - Derivada y Definición Formal|Derivadas]] - Cálculo de la primera derivada
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Técnicas de derivación
 > - Límites - Comportamiento local de funciones
 > - [[02 – Continuidad]] - Base para aplicar teoremas
 > 
 > **Temas relacionados:**
 > 
 > - [[03 - Concavidad y Puntos de Inflexión]] - Segunda derivada
-> - [[Gráficas de Funciones]] - Representación visual
+> - [[02 - Asíntotas y Comportamiento de Funciones#Gráficas de Funciones|Gráficas de Funciones]] - Representación visual
 > - [[Extremos Absolutos]] - Valores máximos/mínimos globales
 > 
 > **Aplicaciones:**
 > 
 > - Optimización - Problemas de máximos y mínimos
-> - [[Análisis de Funciones]] - Estudio completo
+> - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Estudio completo
 > - [[Modelos Matemáticos]] - Aplicaciones en ciencias
 > 
 > **Temas avanzados:**

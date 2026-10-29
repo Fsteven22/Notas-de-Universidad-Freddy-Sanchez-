@@ -429,7 +429,7 @@ dg-publish: true
 > - [[Decoradores]] - Modificar comportamiento de funciones
 > - Módulos y Paquetes - Organizar funciones en archivos
 > - [[Programación Orientada a Objetos]] - Métodos como funciones de clase
-> - [[Manejo de Excepciones]] - Control de errores en funciones
+> - [[04 - Excepciones en Java#Manejo de Excepciones|Manejo de Excepciones]] - Control de errores en funciones
 > - Testing y Debugging - Probar y depurar funciones
 
 ---

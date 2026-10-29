@@ -168,7 +168,7 @@ dg-publish: true
 > 
 > ### Fundamentos Previos:
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Esencial para funciones compuestas
-> - [[Reglas de Derivación]] - Reglas básicas del producto y cociente
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Reglas básicas del producto y cociente
 > - [[01 - Derivada y Definición Formal]] - Demostración de las fórmulas
 > 
 > ### Aplicaciones:
@@ -527,7 +527,7 @@ dg-publish: true
 > ### Prerequisitos:
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Esencial para funciones compuestas
 > - [[01 - Derivación Implícita]] - Para ecuaciones complejas
-> - [[Reglas de Derivación]] - Fundamentos básicos
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Fundamentos básicos
 > 
 > ### Aplicaciones:
 > - Optimización - Crecimiento y decaimiento óptimo

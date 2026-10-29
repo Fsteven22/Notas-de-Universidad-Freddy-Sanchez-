@@ -1115,15 +1115,15 @@ dg-publish: true
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Teorema de Stokes]] - Circulación y flujo
-> - [[Teorema de la Divergencia]] - Flujo a través de superficies
+> - [[03 – Campos conservativos e independencia del camino#Teorema de Stokes|Teorema de Stokes]] - Circulación y flujo
+> - [[03 – Campos conservativos e independencia del camino#Teorema de la Divergencia|Teorema de la Divergencia]] - Flujo a través de superficies
 > - [[Ecuaciones de Maxwell]] - Electromagnetismo
 > 
 > **Temas relacionados:**
 > 
 > - [[Momentum Angular]] - Mecánica rotacional
-> - [[Campos Vectoriales]] - Rotacional
-> - [[Geometría Diferencial]] - Formas diferenciales
+> - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Rotacional
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Formas diferenciales
 
 ---
 

@@ -284,7 +284,7 @@ dg-publish: true
 > - [[Integrales de Funciones Inversas]] 🔄 - Proceso inverso
 > - [[02 - Derivación Logarítmica]] 🔄 - Usa derivada de ln(x)
 > - [[Límites Indeterminados]] - Para verificar comportamiento límite
-> - [[Funciones Trigonométricas]] - Para entender las inversas
+> - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Para entender las inversas
 > 
 > ### Aplicaciones
 > - **Cálculo de límites** - Usando derivadas de inversas

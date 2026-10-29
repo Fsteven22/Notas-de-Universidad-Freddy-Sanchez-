@@ -385,15 +385,15 @@ dg-publish: true
 ### 🔗 Notas Relacionadas
 
 - [[01 - Volúmenes de Sólidos de Revolución]] - Conceptos fundamentales base
-- [[Área entre Curvas: Integración con Respecto a Y]] - Técnicas de integración vertical
-- [[Integrales Definidas]] - Herramientas matemáticas básicas
+- [[03 - Área entre Curvas respecto a Y|Área entre Curvas: Integración con Respecto a Y]] - Técnicas de integración vertical
+- [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Herramientas matemáticas básicas
 - [[Métodos de Integración]] - Técnicas para resolver integrales complejas
 
 ### 📖 Para Profundizar
 
 - [[03 - Superficies de revolución]] - Cálculo de áreas de superficie
 - Teorema de Pappus-Guldinus - Métodos alternativos usando centroides
-- [[Coordenadas Cilíndricas]] - Sistemas de coordenadas naturales para sólidos de revolución
+- [[03 - Superficies de revolución#Coordenadas Cilíndricas|Coordenadas Cilíndricas]] - Sistemas de coordenadas naturales para sólidos de revolución
 - [[Cálculo Vectorial]] - Extensiones a campos vectoriales
 
 ### 🎯 Aplicaciones Especializadas

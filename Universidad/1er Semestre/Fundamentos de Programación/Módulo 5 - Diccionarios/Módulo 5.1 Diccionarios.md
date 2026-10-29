@@ -275,7 +275,7 @@ dg-publish: true
 > 
 > - Variables en Python - Conceptos básicos de variables
 > - Tipos de Datos Básicos - String, int, float, bool
-> - [[Operadores de Comparación]] - Para verificaciones
+> - [[02 - Sintaxis básica en Java#Operadores de Comparación|Operadores de Comparación]] - Para verificaciones
 > 
 > **Para Profundizar:**
 > 

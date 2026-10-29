@@ -2629,7 +2629,7 @@ dg-publish: true
 > 
 > - [[Espacios Fundamentales]] - Nul(A), Col(A), Row(A)
 > - [[Descomposición LU]] - Relacionada con factorización
-> - [[Mínimos Cuadrados]] - Resolución de sistemas inconsistentes
+> - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Resolución de sistemas inconsistentes
 > - [[Pseudoinversa de Moore-Penrose]] - Generalización
 
 ## 🎓 Consejos Finales para Exámenes

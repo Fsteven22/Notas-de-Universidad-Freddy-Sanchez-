@@ -173,7 +173,7 @@ dg-publish: true
 > [!quote]+ Enlaces a Otras Notas
 > 
 > - [[El Principio de Pascal]]
-> - [[Presión Hidrostática]]
+> - [[Presión y Densidad#Presión Hidrostática|Presión Hidrostática]]
 > - Densidad y Peso Específico
 > - [[Equilibrio de Fluidos]]
 > - Hidrostática - Ecuación Fundamental

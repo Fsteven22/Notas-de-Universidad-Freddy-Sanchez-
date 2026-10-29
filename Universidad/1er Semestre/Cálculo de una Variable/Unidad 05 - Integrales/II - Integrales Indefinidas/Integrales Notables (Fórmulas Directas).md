@@ -438,13 +438,13 @@ dg-publish: true
 > - Carpeta Técnicas de Integración
 > - [[04 - Teorema Fundamental del Cálculo]]
 > - Carpeta Reglas de Derivación
-> - [[Funciones Trigonométricas]]
+> - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]]
 
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
 > 
-> - [[Reglas de Derivación]]
+> - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]
 > - [[Funciones Elementales]]
 > - [[Límites de Funciones]]
 >

@@ -98,7 +98,7 @@ dg-publish: true
 
 > [!note] 📖 Para Profundizar
 > 
-> - [[Diferencial Total]] - Extensión a funciones de varias variables
+> - [[04 – Diferenciabilidad#Diferencial Total|Diferencial Total]] - Extensión a funciones de varias variables
 > - Series de Taylor - Aproximaciones de orden superior
 > - [[Métodos Numéricos]] - Implementación computacional
 > - Física Experimental - Aplicaciones en laboratorio

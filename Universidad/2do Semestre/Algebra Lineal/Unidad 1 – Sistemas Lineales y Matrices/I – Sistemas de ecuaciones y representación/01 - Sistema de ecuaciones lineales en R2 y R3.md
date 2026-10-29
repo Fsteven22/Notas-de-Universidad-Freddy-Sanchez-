@@ -1753,7 +1753,7 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Vectores en ℝⁿ]] - Representación de soluciones
+> - [[02 - Vectores en R3|Vectores en ℝⁿ]] - Representación de soluciones
 > - [[02 - Operaciones con matrices]] - Notación matricial
 > - [[04 - Determinantes]] - Criterio de invertibilidad
 > - [[Geometría Analítica]] - Interpretación geométrica
@@ -1762,8 +1762,8 @@ dg-publish: true
 > 
 > - [[01 - Subespacios Vectoriales]] - Imagen y núcleo
 > - [[01 – Transformaciones lineales]] - Sistemas como transformaciones
-> - [[Diagonalización]] - Sistemas de ecuaciones diferenciales
-> - [[Mínimos Cuadrados]] - Sistemas sobredeterminados
+> - [[07 - Matriz de una Transformación Lineal#Diagonalización|Diagonalización]] - Sistemas de ecuaciones diferenciales
+> - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Sistemas sobredeterminados
 > 
 > **Temas avanzados:**
 > 
@@ -1775,10 +1775,10 @@ dg-publish: true
 > **Aplicaciones interdisciplinarias:**
 > 
 > - [[Análisis de Circuitos]] - Leyes de Kirchhoff
-> - [[Optimización Lineal]] - Programación lineal
+> - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización Lineal]] - Programación lineal
 > - [[Mecánica]] - Equilibrio de fuerzas
 > - [[Economía Matemática]] - Modelos de equilibrio
-> - [[Procesamiento de Señales]] - Sistemas LTI
+> - [[05 – Proceso de Gram-Schmidt#Procesamiento de Señales|Procesamiento de Señales]] - Sistemas LTI
 > - [[Aprendizaje Automático]] - Regresión lineal
 
 ## 💡 Consejos de Estudio

@@ -167,7 +167,7 @@ dg-publish: true
 > 
 > **Aplicaciones futuras:**
 > 
-> - [[Derivadas]] - Formalización matemática
+> - [[01 - Derivada y Definición Formal|Derivadas]] - Formalización matemática
 > - [[Aplicaciones de la Derivada]] - Optimización y análisis
 > - [[Integrales]] - Proceso inverso (acumulación)
 
@@ -182,7 +182,7 @@ dg-publish: true
 > 
 > **Temas Paralelos:** 3. **Rectas Secantes y Tangentes** - Interpretación geométrica 4. **[[Aplicaciones de Funciones]]** - Modelado matemático
 > 
-> **Siguientes Pasos:** 5. **Definición de Derivada** - Formalización 6. **[[Reglas de Derivación]]** - Herramientas de cálculo
+> **Siguientes Pasos:** 5. **Definición de Derivada** - Formalización 6. **[[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]** - Herramientas de cálculo
 
 ## 🎯 Ejercicios de Práctica Progresiva
 

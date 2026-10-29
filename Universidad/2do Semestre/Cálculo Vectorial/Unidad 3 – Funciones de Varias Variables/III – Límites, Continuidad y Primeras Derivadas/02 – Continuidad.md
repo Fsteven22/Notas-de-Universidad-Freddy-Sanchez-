@@ -1600,7 +1600,7 @@ dg-publish: true
 > - [[04 – Diferenciabilidad]] - Diferenciable → continua (pero no viceversa)
 > - [[02 - Regla de la Cadena]] - Se basa en composición de funciones continuas
 > - [[15 - Optimización]] - TVE garantiza existencia de extremos
-> - [[20 - Integrales Dobles]] - Funciones continuas son integrables
+> - [[01 – Integral doble|20 - Integrales Dobles]] - Funciones continuas son integrables
 > 
 > **Conceptos relacionados:**
 > 

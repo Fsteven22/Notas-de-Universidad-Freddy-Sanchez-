@@ -903,12 +903,12 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > 1. **[[Derivadas Básicas]]** - Técnicas de derivación
-> 2. **[[Reglas de Derivación]]** - Regla de la cadena, producto, cociente
+> 2. **[[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]** - Regla de la cadena, producto, cociente
 > 3. **01 - Formas Indeterminadas** - Conceptos previos
 > 
-> **Temas paralelos:** 4. **[[Límites Fundamentales]]** - Cuándo NO usar L'Hôpital 5. **[[03 - Derivabilidad y Continuidad]]** - Condiciones de aplicación
+> **Temas paralelos:** 4. **[[01 - Límites Especiales#Límites Fundamentales|Límites Fundamentales]]** - Cuándo NO usar L'Hôpital 5. **[[03 - Derivabilidad y Continuidad]]** - Condiciones de aplicación
 > 
-> **Aplicaciones avanzadas:** 6. **[[Análisis de Funciones]]** - Comportamiento asintótico 7. **Optimización** - Máximos y mínimos 8. **Series Infinitas** - Criterios de convergencia
+> **Aplicaciones avanzadas:** 6. **[[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]]** - Comportamiento asintótico 7. **Optimización** - Máximos y mínimos 8. **Series Infinitas** - Criterios de convergencia
 
 ## 🎯 Ejercicios de Práctica Progresiva
 

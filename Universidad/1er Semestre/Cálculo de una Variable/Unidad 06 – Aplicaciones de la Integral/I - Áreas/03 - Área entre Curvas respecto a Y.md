@@ -304,7 +304,7 @@ dg-publish: true
 - [[04 - Área en Coordenadas Polares y Paramétricas]] - Extensiones a otros sistemas
 - [[Volúmenes de Revolución]] - Aplicación del método de discos/arandelas con dy
 - [[Centros de Masa y Centroides]] - Usando integración respecto a y
-- [[Longitud de Arco]] - Extensión del concepto a longitudes
+- [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Extensión del concepto a longitudes
 
 ### 🔧 Herramientas Computacionales
 

@@ -333,7 +333,7 @@ dg-publish: true
 > 
 > ### 📖 Para Profundizar
 > - [[01 - Integrales Impropias]] - Aplicación principal de estos teoremas
-> - [[Criterios de Convergencia]] - Extensión de los conceptos de comparación
+> - [[01 - Integrales Impropias#Criterios de Convergencia|Criterios de Convergencia]] - Extensión de los conceptos de comparación
 > - Series Infinitas - Análisis de convergencia análogo
 > - Análisis Asintótico - Comportamiento de funciones en límites
 > 

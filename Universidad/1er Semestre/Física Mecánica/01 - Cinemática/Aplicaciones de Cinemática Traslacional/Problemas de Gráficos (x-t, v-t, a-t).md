@@ -223,7 +223,7 @@ dg-publish: true
 > 
 > - [[Cinemática Traslacional]] - Fundamentos teóricos
 > - Ecuaciones de Movimiento - Base matemática
-> - [[Análisis Vectorial]] - Para movimiento en 2D y 3D
+> - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Para movimiento en 2D y 3D
 > - [[Practica de Velocidad Instantánea]] - Aplicación experimental
 
 ## 📚 Notas Recomendadas

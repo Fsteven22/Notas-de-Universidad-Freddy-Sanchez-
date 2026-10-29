@@ -228,10 +228,10 @@ dg-publish: true
 > 
 > **Para profundizar:**
 > 
-> - [[Espacios Métricos]] - Generalización de continuidad uniforme
+> - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización de continuidad uniforme
 > - [[Compacidad]] - Teoremas de Heine-Borel y Heine-Cantor
 > - Conexidad - Generalización del Teorema del Valor Intermedio
-> - [[Análisis Funcional]] - Continuidad en espacios más generales
+> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Continuidad en espacios más generales
 > - [[Ecuaciones Diferenciales]] - TVI en existencia de soluciones
 > - Análisis Numérico - Algoritmos basados en continuidad
 

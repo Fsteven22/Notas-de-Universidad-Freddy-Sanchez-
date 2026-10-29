@@ -1101,13 +1101,13 @@ dg-publish: true
 > **Aplicaciones directas:**
 > 
 > - [[Funciones de varias variables]] - Superficies de nivel
-> - [[Optimización]] - Extremos sobre superficies
+> - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Extremos sobre superficies
 > - [[01 – Integrales múltiples]] - Volúmenes y regiones
 > - [[Ecuaciones diferenciales]] - Soluciones geométricas
 > 
 > **Temas avanzados:**
 > 
-> - [[Geometría diferencial]] - Curvaturas principales
+> - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
 > - [[Topología]] - Clasificación de superficies
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
 > - [[Geometría proyectiva]] - Teoremas de Desargues y Pascal

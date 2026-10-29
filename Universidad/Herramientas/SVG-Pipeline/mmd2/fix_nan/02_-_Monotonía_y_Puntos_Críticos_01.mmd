@@ -1,0 +1,37 @@
+---
+title: "02 - Monotonía y puntos críticos"
+---
+flowchart TD
+  A["Función f(x)"]:::k2
+  B["Derivar: obtener f'(x)"]:::k3
+  C["Resolver f'(x) = 0 y detectar donde f' no existe"]:::k3
+  D["Puntos críticos del dominio"]:::k3
+  E["Dividir el dominio en intervalos"]:::k3
+  F["Evaluar el signo de f'(x) en cada intervalo"]:::k3
+  G["Conclusión"]:::k4
+  H["f'(x) > 0 en el intervalo"]:::k5
+  I["f'(x) < 0 en el intervalo"]:::k5
+  J["f'(x) = 0 en el punto crítico"]:::k5
+  K["Clasificación del punto crítico"]:::k6
+  L["Máximo local: f' pasa de + a −"]:::k7
+  M["Mínimo local: f' pasa de − a +"]:::k7
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F --> G
+  G --> H
+  G --> I
+  G --> J
+  H --> K
+  I --> K
+  K --> L
+  K --> M
+classDef k1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b;
+classDef k2 fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a;
+classDef k3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52;
+classDef k4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00;
+classDef k5 fill:#fff8e1,stroke:#fbc02d,color:#4a3b00;
+classDef k6 fill:#ffebee,stroke:#e53935,color:#4a1010;
+classDef k7 fill:#e0f2f1,stroke:#009688,color:#00332e;

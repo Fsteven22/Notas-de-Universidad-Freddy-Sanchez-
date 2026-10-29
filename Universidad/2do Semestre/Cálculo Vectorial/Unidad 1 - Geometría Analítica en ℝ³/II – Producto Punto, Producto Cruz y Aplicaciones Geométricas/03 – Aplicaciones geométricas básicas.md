@@ -1042,14 +1042,14 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Operaciones básicas con vectores
 > - [[Producto Punto]] - Ángulos y proyecciones
 > - [[Producto Cruz]] - Áreas y perpendicularidad
-> - [[Triple Producto Escalar]] - Volúmenes
+> - [[03 – Aplicaciones geométricas básicas#Triple Producto Escalar|Triple Producto Escalar]] - Volúmenes
 > 
 > **Temas relacionados:**
 > 
 > - [[01.3 Distancia en el Espacio]] - Métrica en ℝ³
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades
 > - [[02 - Planos en R3]] - Ecuaciones de planos
-> - [[Ecuaciones Paramétricas]] - Representación de curvas
+> - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Representación de curvas
 > 
 > **Aplicaciones avanzadas:**
 > 
@@ -1060,8 +1060,8 @@ dg-publish: true
 > 
 > **Temas siguientes:**
 > 
-> - [[Superficies en ℝ³]] - Estudio de superficies
-> - [[Curvas en el Espacio]] - Geometría diferencial
+> - [[03 – Curvas como intersección de superficies#Superficies en ℝ³|Superficies en ℝ³]] - Estudio de superficies
+> - [[01 – Funciones vectoriales de variable escalar#Curvas en el Espacio (ℝ³)|Curvas en el Espacio]] - Geometría diferencial
 > - [[01 – Transformaciones lineales]] - Cambios de base
 > - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
 

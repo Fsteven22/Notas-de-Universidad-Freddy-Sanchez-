@@ -188,7 +188,7 @@ dg-publish: true
 > [!quote] 🔗 **Enlaces a Otras Notas**
 > 
 > - [[Principio de Arquímedes]] - Flotación y empuje
-> - [[Ecuación de Continuidad]] - Conservación de masa en fluidos
+> - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]] - Conservación de masa en fluidos
 > - [[Principio de Bernoulli]] - Energía en fluidos en movimiento
 > - [[Tensión Superficial]] - Efectos de superficie en líquidos
 > - Viscosidad - Resistencia interna de fluidos

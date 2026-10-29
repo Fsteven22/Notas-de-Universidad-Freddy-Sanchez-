@@ -4325,13 +4325,13 @@ dg-publish: true
 > **Se conecta con:**
 > - [[Espacio Nulo y Espacio Columna]]
 > - [[Teorema Rango-Nulidad]]
-> - [[Independencia Lineal]]
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]]
 > - [[02 – Base y dimensión]]
 > - [[01 – Transformaciones lineales]]
 > 
 > **Aplicaciones en:**
-> - [[Sistemas de ecuaciones diferenciales]]
-> - [[Optimización lineal]]
+> - [[05 – Matriz semejante#Sistemas de Ecuaciones Diferenciales|Sistemas de ecuaciones diferenciales]]
+> - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización lineal]]
 > - [[Métodos numéricos]]
 > - [[Álgebra lineal computacional]]
 
