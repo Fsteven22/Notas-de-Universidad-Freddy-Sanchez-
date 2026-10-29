@@ -667,7 +667,7 @@ dg-publish: true
 > ### **Ejemplo 5: Identificar 4x² - y² - z² = 4**
 > 
 > **PASO 1: Forma estándar**
-> ````
+> ```
 > x²/1 - y²/4 - z²/4 = 1
 > 
 > Parámetros: a = 1, b = 2, c = 2
@@ -822,7 +822,6 @@ dg-publish: true
 > → Parábolas opuestas → Paraboloide hiperbólico
 > → Todas hipérbolas → Hiperboloide
 > → Hipérbolas + rectas por origen → Cono
-> ```
 
 ## 🔗 Conexiones con el Sistema de Notas
 

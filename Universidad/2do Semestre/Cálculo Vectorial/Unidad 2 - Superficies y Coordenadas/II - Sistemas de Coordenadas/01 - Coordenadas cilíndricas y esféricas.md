@@ -1269,9 +1269,11 @@ dg-publish: true
 > anim = animar_coordenadas_cilindricas()
 > plt.show()
 > 
-
+> 
+> ```
+> 
 ## 🧪 Ejercicios Progresivos
-
+> 
 > [!example] 💪 Práctica Graduada
 > 
 > **Nivel 1 - Conversiones Básicas:** 🟢
@@ -1368,9 +1370,9 @@ dg-publish: true
 >     - Cilindro inscrito en esfera de radio R
 >     - Encontrar dimensiones para volumen máximo
 >     - Respuesta: r = R√(2/3), h = 2R/√3
-
+> 
 ## 🔬 Operadores Diferenciales
-
+> 
 > [!note] 📐 Gradiente, Divergencia, Rotacional y Laplaciano
 > 
 > ### En Coordenadas Cilíndricas
@@ -1418,11 +1420,11 @@ dg-publish: true
 > Solución: f(ρ) = A/ρ + B
 > 
 > (Potencial de carga puntual en electrostática)
-
+> 
 ## 🎯 Aplicaciones Avanzadas
-
+> 
 ### 🌌 Física y Electromagnetismo
-
+> 
 > [!example] ⚡ Problemas Físicos Clásicos
 > 
 > **1. Ecuación de Laplace en cilíndricas:**
@@ -1479,9 +1481,9 @@ dg-publish: true
 > \end{cases}$$
 > 
 > Campo uniforme dentro, nulo fuera
-
+> 
 ### 🛰️ Mecánica Orbital
-
+> 
 > [!tip] 🌍 Movimiento de Satélites
 > 
 > **Ecuación de órbita en coordenadas esféricas:**
@@ -1515,9 +1517,9 @@ dg-publish: true
 > $$T^2 = \frac{4\pi^2}{GM}a^3$$
 > 
 > donde a = semieje mayor
-
+> 
 ### 🌊 Mecánica de Fluidos
-
+> 
 > [!warning] 💧 Flujo en Coordenadas Curvilíneas
 > 
 > **1. Flujo de Poiseuille (tubería cilíndrica):**
@@ -1553,9 +1555,9 @@ dg-publish: true
 > 
 > $$\frac{\partial v_r}{\partial t} + v_r\frac{\partial v_r}{\partial r} + \frac{v_\theta}{r}\frac{\partial v_r}{\partial\theta} + v_z\frac{\partial v_r}{\partial z} - \frac{v_\theta^2}{r}$$
 > $$= -\frac{1}{\rho}\frac{\partial p}{\partial r} + \nu\left[\nabla^2v_r - \frac{v_r}{r^2} - \frac{2}{r^2}\frac{\partial v_\theta}{\partial\theta}\right]$$
-
+> 
 ## 📚 Problemas Desafiantes
-
+> 
 > [!example] 🏆 Desafíos Avanzados
 > 
 > **Desafío 1 - Transformación de integrales:**
@@ -1600,9 +1602,9 @@ dg-publish: true
 > Calcular ∫∫_S **F** · d**S** donde **F** = ρ² **ê**_ρ y S es la esfera ρ = R.
 > 
 > **Respuesta:** 4πR⁴
-
+> 
 ## 🌐 Conexiones Conceptuales
-
+> 
 > [!quote] 🔗 Enlaces con Otros Temas
 > 
 > **Prerequisitos:**
@@ -1637,9 +1639,10 @@ dg-publish: true
 > - [[Astronomía]] - Coordenadas celestes
 > - [[Geofísica]] - Coordenadas geográficas
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas
+> - [[Gráficos por Computadora]] - Mapeo de texturas
 
 ## 💡 Consejos de Estudio
-
+> 
 > [!tip] 🧠 Estrategias de Aprendizaje
 > 
 > **Para elegir el sistema correcto:**
@@ -1704,9 +1707,9 @@ dg-publish: true
 > 9. **Plantear límites:** Cuidado con el orden de integración
 > 10. **Verificar dimensiones:** El resultado debe tener unidades correctas
 > 11. **Casos límite:** Verificar resultados conocidos (esfera, cilindro, etc.)
-
+> 
 ## 📊 Tabla de Referencia Rápida
-
+> 
 > [!abstract] 📋 Fórmulas Esenciales
 > 
 > ### Conversiones Directas
@@ -1749,9 +1752,9 @@ dg-publish: true
 > |**Gradiente**|∇f = (∂f/∂ρ)**ê**_ρ + (1/ρ)(∂f/∂φ)**ê**_φ + (1/ρsinφ)(∂f/∂θ)**ê**_θ|
 > |**Divergencia**|∇·**F** = (1/ρ²)∂(ρ²F_ρ)/∂ρ + (1/ρsinφ)∂(sinφF_φ)/∂φ + (1/ρsinφ)∂F_θ/∂θ|
 > |**Laplaciano**|∇²f = (1/ρ²)∂/∂ρ(ρ²∂f/∂ρ) + (1/ρ²sinφ)∂/∂φ(sinφ∂f/∂φ) + (1/ρ²sin²φ)∂²f/∂θ²|
-
+> 
 ## 🎓 Aplicaciones en Ingeniería
-
+> 
 > [!example] 🔧 Casos de Ingeniería Práctica
 > 
 > **1. Diseño de Antenas**
@@ -1995,9 +1998,9 @@ dg-publish: true
 > plt.tight_layout()
 > plt.show()
 > ```
-
+> 
 ## 🌟 Sistemas de Coordenadas Generalizados
-
+> 
 > [!info] 🔵 Extensión a Coordenadas Arbitrarias
 > 
 > **Coordenadas curvilíneas generales (u₁, u₂, u₃):**
@@ -2038,9 +2041,9 @@ dg-publish: true
 > |Cilíndrico|1|r|1|r|
 > |Esférico|1|ρ|ρ sin φ|ρ² sin φ|
 > |Elíptico|√(a²sinh²μ + b²sin²ν)|...|...|...|
-
+> 
 ## 🎬 Animaciones y Visualizaciones Dinámicas
-
+> 
 > [!tip] 🎥 Crear Visualizaciones Interactivas
 > 
 > ```python
@@ -2148,9 +2151,9 @@ dg-publish: true
 > anim = animar_transformacion_coordenadas()
 > plt.show()
 > ```
-
+> 
 ## 📝 Resumen Final
-
+> 
 > [!abstract] 🎓 Puntos Clave para Recordar
 > 
 > ### Conceptos Fundamentales
@@ -2177,7 +2180,6 @@ dg-publish: true
 > Esféricas:
 >   x = ρ sin φ cos θ,  y = ρ sin φ sin θ,  z = ρ cos φ
 >   ρ = √(x²+y²+z²),  φ = arccos(z/ρ),  θ = arctan2(y,x)
-> ```
 > 
 > **4. Jacobianos (CRÍTICO para integrales):**
 > 

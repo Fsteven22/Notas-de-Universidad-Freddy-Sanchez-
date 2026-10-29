@@ -293,7 +293,8 @@ dg-publish: true
 > ```
 > z está "arriba" → usa cos(θ) directamente
 > x, y están en el plano → usan sen(θ) primero
-> ```#### **De Cartesianas a Esféricas**
+> ```
+> #### **De Cartesianas a Esféricas**
 > **Dadas coordenadas cartesianas (x, y, z):**
 > 
 > ```
@@ -334,9 +335,9 @@ dg-publish: true
 > 
 > - Mismo procedimiento que en cilíndricas
 > - Usar atan2(y, x) para manejo automático de cuadrantes
-
+> 
 ### 📊 Ejemplos de Transformación Esférica
-
+> 
 > [!example] 🎯 Conversiones Completas
 > #### **Ejemplo 1: Cartesianas → Esféricas**
 > **Dado:** P = (3, 4, 12) en coordenadas cartesianas
@@ -419,11 +420,11 @@ dg-publish: true
 > **Respuesta:** R = (5, 0, φ) donde φ puede ser cualquier valor
 > 
 > **Nota:** En el eje Z, φ es indeterminado porque no hay dirección horizontal definida
-
+> 
 ## 🔄 Transformaciones Cilíndricas ↔ Esféricas
-
+> 
 ### 🔀 Conversión Directa
-
+> 
 > [!tip] 🟢 Sin Pasar por Cartesianas
 > 
 > #### **De Cilíndricas a Esféricas**
@@ -454,9 +455,9 @@ dg-publish: true
 > 
 > - ρ es la proyección de r en el plano XY
 > - z es la componente vertical de r
-
+> 
 ### 📊 Ejemplo Integrado
-
+> 
 > [!example] 🎯 Conversión Múltiple
 > 
 > **Problema:** Convertir el punto P entre los tres sistemas
@@ -503,9 +504,9 @@ dg-publish: true
 >   = √14 · (√6/√14)
 >   = √6 ✓
 > ```
-
+> 
 ## 📐 Tabla Resumen de Transformaciones
-
+> 
 > [!example] 📋 Fórmulas Completas
 > 
 > ### **Cartesianas (x, y, z) ↔ Cilíndricas (ρ, φ, z)**
@@ -532,11 +533,11 @@ dg-publish: true
 > |---|---|
 > |**→ Esféricas**|r = √(ρ² + z²)<br>θ = arctan(ρ/z)<br>φ = φ|
 > |**→ Cilíndricas**|ρ = r sen(θ)<br>φ = φ<br>z = r cos(θ)|
-
+> 
 ## 🎨 Representación Gráfica
-
+> 
 ### 🖼️ Visualización de Coordenadas Cilíndricas
-
+> 
 > [!tip] 🔵 Interpretación Geométrica Cilíndrica
 > 
 > **Superficies coordenadas cilíndricas:**
@@ -603,9 +604,9 @@ dg-publish: true
 >     |/___φ___→ X
 >     ρ
 > ```
-
+> 
 ### 🖼️ Visualización de Coordenadas Esféricas
-
+> 
 > [!tip] 🔴 Interpretación Geométrica Esférica
 > 
 > **Superficies coordenadas esféricas:**
@@ -676,9 +677,9 @@ dg-publish: true
 >     | θ \
 >     |____\___→ X
 > ```
-
+> 
 ### 🎯 Líneas y Curvas Coordenadas
-
+> 
 > [!note] 📏 Trayectorias en Diferentes Sistemas
 > 
 > **Líneas coordenadas cilíndricas:**
@@ -712,9 +713,9 @@ dg-publish: true
 >    - Dirección: este-oeste (cambia φ)
 >    - Vector tangente: êφ
 > ```
-
+> 
 ## 🧮 Ejercicios Integrales
-
+> 
 > [!example] 💪 Práctica Completa### **Nivel 1 - Básico:** 🟢
 > **Ejercicio 1:** Convertir de cartesianas a cilíndricas
 > 
