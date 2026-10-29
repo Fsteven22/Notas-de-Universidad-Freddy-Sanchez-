@@ -14,7 +14,8 @@ tags: [clippings, estado, sesiones, plan, tablero]
 
 > [!important] Estado global verificado (28/10/2026, 02:15)
 > - `master` = `origin/master` = **`9325dd6`**, 0 conflictos, 0 ramas pendientes de integrar. Working tree **limpio** tras la reformulación a callouts de los 7 `.md` de `Clippings/` (`4289a3f` → `9325dd6`).
-> - **Plan de carriles (esta tabla es la cola real):** §0 "🚦 Plan de carriles" — A (scripts `.py`) · B (figuras) · C (Mermaid→SVG) · D (material nuevo 3er Sem.). Cada carril tiene dueño, zona y salida verificable.
+> - **Plan de carriles (esta tabla es la cola real):** §0 "🚦 Plan de carriles" — A (scripts `.py`) · B (figuras) · C (Mermaid→SVG + **los 1026 links rotos**) · D (material nuevo 3er Sem.). Cada carril tiene dueño, zona y salida verificable.
+> - **Decisiones del usuario cerradas (28/10):** copyright → **se ignora al publicar** (lista negra `_no-publicar.txt`, sin lista blanca ni `_privado/`) · **1026 links rotos** → al carril C · web en **`neonotes-espol.vercel.app`** (`neonotes.vercel.app` es de otro proyecto) · **teléfono → no aplica** (era AutoSync con la institucional, migración cancelada) · **papelera ya vaciada** · material nuevo en las carpetas **`Unidad 0 - Guías y Ejercicios`** de cada materia de 3er Sem.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.975 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build, 28/10 00:30) y el `.git/` huérfano de la raíz (23 MB, 28/10 01:00, **con respaldo local**). La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: solo queda `.obsidian/` (162 MB) en la nube.
@@ -53,8 +54,8 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > |---|---|---|---|---|---|
 > | **A** | **Scripts `.py` de mantenimiento del vault** | `opencode-onedrive` | `Universidad/Herramientas/**` | `Mantenimiento/` con los `.py` documentados en `Herramientas/README.md` | 🟡 en curso |
 > | **B** | **Mover las figuras a la carpeta de su materia** | `opencode` (3er Sem.) | `Universidad/**` (figuras y embeds) | 0 figuras sueltas fuera de su materia + embeds OK | 🟡 en curso |
-> | **C** | **Seguir con las conversiones Mermaid → SVG** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | Los 19 SVG que faltan + lista maestra en 0 | 🟡 en curso |
-> | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote (D1) → notas de la materia (D2) | 🟡 en curso |
+> | **C** | **Seguir con las conversiones Mermaid → SVG** + **los links rotos** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | Los 19 SVG que faltan + los 1026 links rotos arreglados + lista maestra en 0 | 🟡 en curso |
+> | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote desde `Unidad 0 - Guías y Ejercicios` (D1) → notas de la materia (D2) | 🟡 en curso |
 
 > [!success] ✅ Carril **A** — scripts `.py` de mantenimiento (`opencode-onedrive`)
 > **Ya existe (medido hoy):** `Universidad/Herramientas/Mantenimiento/` tiene **15 `.py`**:
@@ -97,14 +98,35 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > `npm run sync` **en disco local**.
 > **Salida:** los **19 SVG** nuevos en las carpetas `Diagramas/` de su materia +
 > `SVGs por recrear.md` en 0 + verificación de que el sitio los publica.
+>
+> **Y ahora también los links rotos (decisión del usuario 28/10):** los **1026 links rotos
+> reales** (no 1039: 13 son falsos positivos en `Herramientas/`) pasan a este carril.
+> **Desglose medido:** 2do Semestre **528** · 1er Semestre **471** · Preuniversitario **27**.
+> Ya se **neutralizaron** 861 como texto plano → hay que **reconstruirlos**, no dejarlos así:
+> - Link que apunta a un **diagrama/figura** → se genera el asset que falta (mermaid → SVG) y se
+>   vuelve a embeber. **Esto es 100% tuyo.**
+> - Link que apunta a una **nota** → el archivo está en otra ruta: proposes el nombre correcto y
+>   lo deja en el tablero, o lo arreglas si la nota es de 3er Sem. (**ahí manda `opencode`**:
+>   no edites notas de otro carril sin avisar).
+> - Link que apunta a un **PDF/guía** → se reubica el archivo en la carpeta de su unidad.
+> Herramienta de apoyo: `qa_links.py` y `qa_links_por_target.py` (carril A) + la lista
+> `Universidad/Herramientas/SVGs por recrear.md`.
 
 > [!success] ✅ Carril **D** — material nuevo de 3er Sem. (guías y ejercicios)
 > Se parte en **dos** para que cada quien trabaje en su zona:
-> - **D1 — intake y control de calidad (`opencode-nube`):** detectar lo que llega al vault
->   (guías, ejercicios, PDFs, escaneos) y dejar **una pista por lote** en `Clippings/` con:
->   checksum y tamaño · duplicados contra lo que ya existe (`qa_pdfs_duplicados.py`,
->   `qa_pdfs_huerfanos.py`) · nombre y carpeta destino · aviso de **copyright**
->   (`_no-publicar.txt`, y la decisión P2) · si el lote es publicable (gate `dg-publish`).
+> - **D1 — intake y control de calidad (`opencode-nube`):** vigilar **las 5 carpetas exactas**
+>   donde el usuario deja el material nuevo (decisión suya: "lo dejo exactamente en las carpetas
+>   Unidad 0 - Guías y Ejercicios de cada materia"):
+>   - `Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/`
+>   - `Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teorico/Unidad 0 - Guías y Ejercicios/`
+>   - `Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/`
+>   - `Universidad/3er Semestre/Matemáticas Discretas/Unidad 0 - Guias y Ejercicios/`
+>   - `Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/`
+>   Y dejar **una pista por lote** en `Clippings/` con: checksum y tamaño · duplicados contra lo
+>   que ya existe (`qa_pdfs_duplicados.py`, `qa_pdfs_huerfanos.py`) · qué guía/ejercicio es y a qué
+>   unidad pertenece · **aviso de copyright** (se **ignora al publicar**: la lista negra
+>   `Universidad/_no-publicar.txt` manda, y **P2 ya está decidido**) · si el lote es publicable
+>   (gate `dg-publish`).
 >   **Entregable:** la pista en `Clippings/` + el aviso en el tablero.
 > - **D2 — procesamiento académico (`opencode`, 3er Sem.):** convertir ese material en notas de
 >   la materia, embebiendo sus figuras, en `Universidad/3er Semestre/<Materia>/`.
@@ -244,7 +266,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **`.obsidian` (167 MB) se queda**: es la config de Obsidian (plugins/temas); borrarlo de la nube lo borraría también en local. Para sacarlo de la nube sin perderlo → **"Dejar de sincronizar"** (lo quita del drive y deja los locales).
 > - **`.git/` huérfano de la raíz de OneDrive → BORRADO (28/10 01:00, con respaldo)**: era un clon viejo del repo de notas (21 commits; 20 ya en GitHub) + **1 commit local único** `b2e96c6` ("Primer commit: Inicialización del proyecto Bingo SaaS") que **no está en ningún remoto** → primero se copió la carpeta `.git` entera a `Documents\OneDrive-root-git-huerfano-20261028\` (23,0 MB, verificada con `fsck` sin errores, incluye el commit colgante) y después se borró. Raíz local **1.997 → 1.975 MB**. Vault verificado intacto (`e72348e`, 0/0, `fsck` sin errores, 1.795 `.md`).
 > - **Los 4 mecanismos de OneDrive, medidos** (tabla completa en `LOG-opencode-nube.md`): *Seleccionar carpetas* y *Liberar espacio* → solo sacan la copia **de la PC**, la nube no baja; *Dejar de sincronizar* y *mover fuera de la carpeta* → **sacan de la nube** y sí liberan cuota; *Desvincular este equipo* → desconecta la PC sin tocar la nube. Y: **si el archivo sigue dentro de `OneDrive\`, OneDrive lo sincroniza** — `.gitignore` no aplica al cliente.
-> - **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push), `822c9c1` (limpieza final de la nube) + `e72348e` (su confirmación). Todos en `origin/master`.
+> - **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push), `822c9c1` (limpieza final de la nube) + `e72348e` (su confirmación), `ac8cb0b` (borrado del `.git` huérfano) + `4333d4b` (su confirmación), `1f5c5e4` (plan de carriles) + `d3bce48` (su confirmación). Todos en `origin/master`.
 > - **Commits de la copia institucional**: `f6a27ef` (registro de la copia verificada) y `8129007` (confirmación del push) → ya en `origin/master`.
 
 ### Qué falta
@@ -253,21 +275,23 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | # | Qué | Prioridad | Decide |
 > |---|---|---|---|
 > | 1 | **Nada de la migración**: la copia institucional ya está eliminada (18:20) y el vault activo es el personal. Queda decidir si se **desvincula** la cuenta institucional del cliente de la PC (hoy está dada de alta y vacía) | baja | **usuario** |
-> | 2 | **Teléfono**: la app oficial sí entra con `fredsanc@espol.edu.ec`, pero **el MDM no deja emparejar carpetas** → **Obsidian local en el teléfono no es viable sin Obsidian Sync (de pago)**. Para **leer** en el móvil, el sitio ya está publicado (806 notas + buscador) → no requiere nada | media | **usuario** |
-> | 3 | **Higiene de cuota en la personal**: `site/public/assets/` **ya se borró** (650 MB) y el `.git/` huérfano de la raíz **también** (23 MB, 28/10 01:00, con respaldo en `Documents\OneDrive-root-git-huerfano-20261028\`) → falta **vaciar la papelera** en el web (1 clic, si no los 673 MB siguen contados) y decidir si `.obsidian/` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue bien) | media | **usuario** |
-> | 4 | **Historial de versiones** de la personal: las versiones anteriores se van solas a los 30 días; vaciar la papelera sigue ayudando, pero no es lo que bloqueaba | media | **usuario** |
+> | 2 | ~~**Teléfono**~~ → **cerrado (28/10)**: era el ítem de AutoSync con la institucional; la migración se canceló. Para **leer** en el móvil: el sitio `neonotes-espol.vercel.app`. Para **editar**: Obsidian Sync (de pago) o editar en la PC | — | — |
+> | 3 | **Higiene de cuota en la personal**: `site/public/assets/` **ya se borró** (650 MB), el `.git/` huérfano **también** (23 MB, con respaldo) y **la papelera ya está vaciada** (dice el usuario) → solo queda decidir si `.obsidian/` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, Obsidian sigue bien) | baja | **usuario** |
+> | 4 | **Historial de versiones** de la personal: las versiones anteriores se van solas a los 30 días; no fue lo que bloqueaba, y la papelera ya está vacía → **informativo, nada que hacer** | baja | — |
 > | 5 | **Nunca compilar dentro de OneDrive**: `site/public/assets` (650 MB) se rehidrató solo cuando un build corrió en el clon sincronizado (medido 16:20) | media | **sesiones** |
 > | 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
 > | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 > | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
+> | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). Es trabajo en curso: arranca cuando el usuario deje material nuevo | media | sesión |
 
 ### Próximos pasos
 > [!warning] ⏳ Próximos pasos
 >
 > 1. Confirmar en la web de la institucional que `OneSyncFiles` ya no aparece (los 4.698 borrados se propagan solos; 1 TB, sin urgencia).
-> 2. Higiene de cuota en la personal: **`site/public/assets/` (650 MB) y el `.git/` huérfano (23 MB) ya se borraron** → falta solo **vaciar la papelera** (1 clic) y decidir si `.obsidian/` (162 MB) sale de la nube (click derecho → OneDrive → **Dejar de sincronizar**: lo deja local, Obsidian sigue bien).
-> 3. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
-> 4. **No volver a copiar el vault a la institucional sin antes hacer P6** (`VAULT_ROOT`) y avisar a las 3 sesiones: la copia funciona y se verifica fácil, pero deja **dos clones con el mismo `origin`** (riesgo medido por `opencode` 17:40) y rutas hardcodeadas apuntando al vault viejo.
+> 2. Higiene de cuota en la personal: **`site/public/assets/` (650 MB), el `.git/` huérfano (23 MB) y la papelera ya están resueltos** → solo queda decidir si `.obsidian/` (162 MB) sale de la nube (click derecho → OneDrive → **Dejar de sincronizar**: lo deja local, Obsidian sigue bien).
+> 3. **Carril D1:** revisar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar la pista por lote en `Clippings/` → es lo que le toca a `opencode` para el carril D2.
+> 4. Mantener la regla: **el vault guarda notas y assets; el código del sitio y sus dependencias se compilan en disco local**.
+> 5. **No volver a copiar el vault a la institucional sin antes hacer P6** (`VAULT_ROOT`) y avisar a las 3 sesiones: la copia funciona y se verifica fácil, pero deja **dos clones con el mismo `origin`** (riesgo medido por `opencode` 17:40) y rutas hardcodeadas apuntando al vault viejo.
 
 ---
 
@@ -316,17 +340,21 @@ tags: [clippings, estado, sesiones, plan, tablero]
 >
 > | # | Decisión | Impacto si no se decide | Detalle |
 > |---|---|---|---|
-> | 1 | **Vaciar la papelera** tras el borrado de `site/public/assets` (650 MB) y decidir si `.obsidian` (162 MB) sale de la nube con **"Dejar de sincronizar"** (lo deja local, no rompe Obsidian) | la cuota sigue contando los 650 MB como borrados | tablero §3 |
-> | 2 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
-> | 3 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
-> | 4 | **Liberar `neonotes.vercel.app`** en el panel de Vercel | el dominio duplicado sigue sirviendo otra página | `site/RUNBOOK.md` §8 |
-> | 5 | **Los 1026 links rotos reales** (no 1039: 13 son falsos positivos en `Herramientas/`): borrar, reconstruir o dejar | 1er/2do/Preuniversitario quedan con links rotos | `LOG-opencode.md` |
-> | 6 | **P2**: lista blanca o carpeta `_privado/` | depende de que alguien recuerde la lista negra | `LOG-opencode-onedrive.md` |
-> | 7 | ~~Material con copyright en la institucional~~ → **ya no aplica**: la copia se eliminó y la institucional quedó **vacía** | — | PISTA |
-> | 8 | **Teléfono**: **leer** ya está resuelto (sitio publicado, 806 notas + buscador, cero sincronización). **Editar** en Obsidian desde el móvil exigiría **Obsidian Sync (de pago)**. La institucional (1 TB) queda vacía y disponible si quieres las fotos ahí | fotos sin respaldo en la nube + sin edición local en el móvil | PISTA |
+> | 1 | **Mover el backup de 458 MB a disco local** | 458 MB de cuota cloud | `opencode-onedrive` lo hace con el OK |
+> | 2 | **Fijar el vault** ("mantener siempre en este equipo") | OneDrive puede deshidratar notas y PDFs otra vez | `attrib +P -U` |
+> | 3 | **`.obsidian` (162 MB)**: ¿sale de la nube con *"Dejar de sincronizar"* o se queda? | nada grave: la cuenta va al 50% | tablero §3 |
+> | 4 | **Los 32 PNG huérfanos** de `Universidad/Figuras/` | material sin dono en la nube | carril B |
+> | 5 | **Mover el backup `OneSyncFiles-backups/notas-20261024` (458 MB)** | 458 MB de cuota cloud | `opencode-onedrive` |
 
-> [!success] ✅ Resueltas en esta tanda
-> **Resueltas en esta tanda** (ya no esperan decisión): cuál vault queda activo (**personal**), la migración a la institucional (**cancelada**, copia eliminada), los **dos clones con el mismo `origin`** (ya hay uno solo) y **P6** (vuelve a ser "solo si algún día se migra").
+> [!success] ✅ Resueltas por el usuario (28/10/2026) — ya **no** esperan decisión
+> | Decisión | Veredicto del usuario | Efecto |
+> |---|---|---|
+> | **Papelera de OneDrive** | **ya vaciada hace mucho** | la cuota del web ya refleja los borrados: nada pendiente |
+> | **P2 (copyright)** | **"ignorar el material con copyright al subirlo a la web"** | se mantiene la **lista negra** (`Universidad/_no-publicar.txt`): **no** hay lista blanca ni carpeta `_privado/`. El **carril A** lo deja documentado y el **carril D1** lo avisa por lote |
+> | **`neonotes.vercel.app`** | **ese no es el dominio de la web**: la web vive en **`neonotes-espol.vercel.app`** | `neonotes.vercel.app` pertenece a **otro proyecto de Vercel** → **se cierra** el paso de panel. El 308 por host de `site/vercel.json` queda como protección por si algún día apunta aquí |
+> | **Teléfono** | no aplica | era el ítem de **AutoSync con la cuenta institucional**, y la migración se **canceló**. Para **leer** en el móvil: el sitio `neonotes-espol.vercel.app`. Para **editar**: Obsidian Sync (de pago) o editar en la PC |
+> | **Los 1026 links rotos reales** | **"colocaselo a quien va a hacer los últimos SVG de mermaid"** | pasan al **carril C** (`opencode-site`): se arreglan, no se dejan como texto plano |
+> | **Material nuevo de 3er Sem.** | **"lo dejo exactamente en las carpetas Unidad 0 - Guías y Ejercicios de cada materia"** | el **carril D1** vigila esas 5 carpetas exactas (ver §0) |
 
 ---
 
@@ -461,6 +489,27 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > zona de otro, **avisa en esta sección antes** de commitear.
 > **Recordatorio:** las decisiones que siguen esperando al **usuario** (P2 copyright, 1026 links
 > rotos, `neonotes.vercel.app`, el teléfono) no las resuelve ningún carril.
+>
+> **Todo eso cambió el 28/10** (ver el aviso siguiente): P2 cerrado, los links al carril C, el
+> dominio es `neonotes-espol.vercel.app`, el teléfono no aplica y la papelera ya está vaciada.
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{00 - LEEME, ESTADO - las 4 sesiones, LOG-opencode-nube}` · ~2 min
+> **Aplico tus 5 correcciones (28/10)**:
+> 1. **Copyright** → se **ignora al publicar**: se mantiene la lista negra `_no-publicar.txt`
+>    (17 entradas), **sin** lista blanca ni carpeta `_privado/` → **P2 cerrado**.
+> 2. **Los 1026 links rotos** → al **carril C** (`opencode-site`, el de los últimos SVG de
+>    mermaid): se **reconstruyen**, no se dejan como texto plano. Regla de zona: los links que
+>    apuntan a un **diagrama** son suyos; los que apuntan a una **nota** los coordina con
+>    `opencode` (no se editan notas de otro carril sin avisar).
+> 3. **La web está en `neonotes-espol.vercel.app`** → `neonotes.vercel.app` es de **otro
+>    proyecto** → se **cierra** el paso de panel; el 308 por host queda como protección.
+> 4. **Teléfono** → era el ítem de **AutoSync con la institucional** y la migración se canceló
+>    → **no aplica**, se cierra (leer en el móvil = el sitio).
+> 5. **Papelera** → ya la vaciaste → **nada pendiente**.
+> 6. **Material nuevo** → entra en las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem.
+>    (ya están con sus rutas exactas en el carril D1).
+> Actualizo: §0 (carriles C y D), la tabla de decisiones, mi §3 y las "Decisiones abiertas" del
+> LEEME. **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
 ---
 

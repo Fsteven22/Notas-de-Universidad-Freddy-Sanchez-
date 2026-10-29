@@ -153,9 +153,21 @@ tags: [clippings, protocolo, colaboracion]
 >
 > | # | Tema | Dueño |
 > |---|---|---|
-> | 1 | Liberar `neonotes.vercel.app` (hoy lo responde otro proyecto de Vercel). La regla 308 ya está en `site/vercel.json`; falta el paso manual del panel | **usuario** (pasos en `site/RUNBOOK.md` §8) |
+> | 1 | ~~Liberar `neonotes.vercel.app`~~ → **cerrado (28/10)**: ese **no** es el dominio de la web. La web vive en **`neonotes-espol.vercel.app`**; `neonotes.vercel.app` pertenece a otro proyecto de Vercel. El 308 por host de `site/vercel.json` queda como protección | — |
 > | 2 | Lista final de notas omitidas: son 3 (Inglés III U0: `00 - Leeme Unidad 0.md` + los 2 libros). Confirmá si sigue igual después del merge | sesiones |
 > | 3 | Sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus`: quedó como **espejo** del repo canónico, **sin commits de git**. No commitear ahí | — |
+
+> [!success] ✅ Decisiones del usuario (28/10/2026) — **cerradas, no las再開ran**
+> - **Papelera de OneDrive**: **ya vaciada hace mucho** → nada pendiente.
+> - **Copyright**: **"ignorar el material con copyright al subirlo a la web"** → se mantiene la
+>   **lista negra** (`Universidad/_no-publicar.txt`, 17 entradas): **no** hay lista blanca ni
+>   carpeta `_privado/`.
+> - **Links rotos**: los **1026** van al carril de los **últimos SVG de mermaid** (`opencode-site`).
+> - **Teléfono**: no aplica (era el ítem de AutoSync con la institucional, y la migración se
+>   canceló). Para leer en el móvil: el sitio `neonotes-espol.vercel.app`.
+> - **Material nuevo**: el usuario lo deja en las carpetas **`Unidad 0 - Guías y Ejercicios`** de
+>   cada materia de 3er Sem.
+> **La cola viva de trabajo está en el §0 "Plan de carriles" del tablero** (no acá).
 
 ### ☁️ Migración al OneDrive institucional ESPOL — acuerdo de las 4 sesiones
 
@@ -1549,3 +1561,16 @@ tags: [clippings, protocolo, colaboracion]
 > Dato para las otras sesiones: **`Clippings/` ya no tiene prosa suelta** — si agregan
 > texto, que lo metan dentro de un callout, y el `📑 Índice` de cada archivo tiene
 > que apuntar a un heading que exista (2 anchors ya estaban rotos y los arreglé).
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{00 - LEEME, ESTADO - las 4 sesiones, LOG-opencode-nube}` · ~2 min
+> **Aplico las correcciones del usuario (28/10)**: (1) el material con copyright **se ignora al
+> publicar** → se mantiene la lista negra `_no-publicar.txt` (P2 cerrado, sin lista blanca ni
+> `_privado/`); (2) los **1026 links rotos** pasan al carril de los **últimos SVG de mermaid**
+> (`opencode-site`); (3) el dominio de la web es **`neonotes-espol.vercel.app`** →
+> `neonotes.vercel.app` es de otro proyecto → el paso de panel **se cierra**; (4) el ítem de
+> **teléfono** era el de AutoSync con la institucional y **no aplica** (migración cancelada);
+> (5) la **papelera ya está vaciada** → nada pendiente; (6) el material nuevo entra en las
+> carpetas **`Unidad 0 - Guías y Ejercicios`** de cada materia de 3er Sem. → el carril D1 vigila
+> esas 5 rutas exactas.
+> También actualizo las "Decisiones abiertas" de este LEEME y la tabla de decisiones del tablero.
+> **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**

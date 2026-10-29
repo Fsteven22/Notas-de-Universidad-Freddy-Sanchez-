@@ -39,6 +39,7 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > - [[#Tanda 27/10–28/10 00:30 — limpieza final de la nube y los 4 mecanismos de OneDrive]]
 > - [[#Tanda 28/10/2026 00:40–01:10 — borrado del `.git` huérfano de la raíz de OneDrive (con respaldo)]]
 > - [[#Tanda 28/10/2026 01:20-01:35 - la ultima pasada: plan de carriles publicado]]
+> - [[#Tanda 28/10/2026 02:30-02:45 - correcciones del usuario (5 correcciones aplicadas)]]
 
 ## Que hice
 
@@ -538,6 +539,30 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > bloque · **nunca `git add -A`** · un push a la vez anunciado · **nunca compilar dentro de
 > OneDrive** · mientras el **LEEME** esté sin commitear (otra sesión lo edita), los anuncios de
 > push van en el tablero.
+
+### Tanda 28/10/2026 02:30-02:45 — correcciones del usuario (5 correcciones aplicadas)
+
+> [!info] 📌 Lo que me corrigió el usuario
+> 1. **Copyright**: *"ya había dicho que los ignoremos al subirlo a la web"* → **P2 cerrado**:
+>    se mantiene la **lista negra** `_no-publicar.txt` (17 entradas). **No** hay lista blanca ni
+>    carpeta `_privado/`. El carril A lo documenta; el D1 lo avisa por lote.
+> 2. **Links rotos**: *"colocaselo a quien va a hacer los últimos svg de mermaid"* → los **1026**
+>    pasan al **carril C** (`opencode-site`), con regla de zona: diagramas son suyos, notas de
+>    otros carriles se coordinan.
+> 3. **Dominio**: *"neonotes.vercel.app no es el dominio que está usando ahora la web, es
+>    neonotes-espol.vercel.app"* → la web vive en `neonotes-espol.vercel.app`; `neonotes.vercel.app`
+>    pertenece a **otro proyecto de Vercel** → **se cierra** el paso de panel.
+> 4. **Teléfono**: *"no sé a qué te refieres"* → era el ítem de **AutoSync con la cuenta
+>    institucional**, y la migración se canceló → **no aplica**. Para leer en el móvil: el sitio.
+> 5. **Papelera**: *"ya la vacié hace mucho"* → **nada pendiente**.
+> 6. **Material nuevo**: *"lo dejo exactamente en las carpetas unidad 0 guías y ejercicios de cada
+>    materia"* → el carril D1 vigila las **5 rutas exactas** de 3er Sem. (ver §0 del tablero);
+>    en Electricidad está dentro de `Teorico/`.
+
+> [!success] ✅ Qué actualicé
+> Tablero: §0 (carriles C y D), tabla de decisiones (5 resueltas + las que siguen), bloque global
+> y mi §3 · LEEME: "Decisiones abiertas" + el aviso de push · mi bitácora. **Sin tocar** el
+> bloque de ninguna otra sesión, ni `Universidad/**`, ni `site/**`.
 
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
