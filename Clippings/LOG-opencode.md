@@ -961,4 +961,44 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
-**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b
+## 19. Décima tanda: plan de normalización de formato (14.106 errores en 306 notas)
+
+> [!info] 📌 Plan de 3 pasadas mecánicas (seguras, con backup previo)
+>
+> **Objetivo:** normalizar 14.106 errores de formato en 306 notas del vault.
+>
+> **Pasada 1 — ENDINGS mixed (126 archivos):**
+> - Qué: archivos `.md` con finales de línea mezclados (CRLF + LF en el mismo archivo).
+> - Solución: estandarizar a `LF` (según `.gitattributes`: `*.md text eol=lf`).
+> - Riesgo: muy bajo (solo finales de línea, no toca contenido).
+> - Backup: commit previo antes de aplicar.
+>
+> **Pasada 2 — Frontmatter con líneas vacías (15 archivos):**
+> - Qué: bloque `--- ... ---` del YAML frontmatter contiene líneas en blanco, rompe el parsing.
+> - Solución: eliminar líneas vacías dentro del frontmatter.
+> - Riesgo: bajo.
+> - Backup: commit previo antes de aplicar.
+>
+> **Pasada 3 — Líneas vacías dentro de fence/callout (3.935 líneas en 185 notas):**
+> - Qué: línea totalmente vacía `""` (sin prefijo `>`) dentro de un callout `> [...]` que contiene un bloque de código ```. Rompe el render en Live Preview y en el sitio.
+> - Solución: reemplazar líneas vacías sueltas por `>` (solo prefijo de cita, sin contenido).
+> - Riesgo: medio — hay que distinguir líneas válidas (`>`, `> `) de inválidas (`""`).
+> - Backup: commit previo antes de aplicar.
+>
+> **Reglas de seguridad (del usuario):**
+> - Sin scripts que tengan riesgo de romper el vault.
+> - Commit de respaldo antes de cada pasada.
+> - Cada pasada es un commit separado (para poder revertir individualmente).
+> - Verificación con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones).
+
+> [!success] ✅ Estado de las pasadas
+>
+> | Pasada | Qué | Cantidad | Estado |
+> |--------|-----|----------|--------|
+> | 1 | ENDINGS mixed → LF | 126 archivos | ⏳ Pendiente |
+> | 2 | Frontmatter → quitar líneas vacías | 15 archivos | ⏳ Pendiente |
+> | 3 | Líneas vacías en fence/callout | 3.935 líneas / 185 notas | ⏳ Pendiente |
+
+---
+
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion
