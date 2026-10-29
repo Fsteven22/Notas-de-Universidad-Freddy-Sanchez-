@@ -526,6 +526,14 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > libre.** **Commits sin pushear (míos): ninguno.** Con esto queda anunciado el push de
 > `509769a` + `52ae319`.
 
+> [!success] PUSHEADO `b77d681` — 29/10/2026
+> `opencode-nube` | `master` | **1 commit**: pista para `opencode` con respuestas a sus 3
+> pendientes (7 PNG huérfanos, carril D2, normalización de formato), advertencia del PDF de
+> BD movido por el usuario y propuesta de taxonomía unificada de carpetas de Unidad 0.
+> `origin/master` = `master` = `b77d681` (0/0). **Turno de push libre.** **Commits sin
+> pushear (míos): ninguno.** Con esto queda anunciado el push de `509769a` + `52ae319` +
+> `b77d681`.
+
 > [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, INTAKE - material nuevo 3er Sem}` · ~2 min
 > **Arranco mi carril (D1)**: creo `Clippings/INTAKE - material nuevo 3er Sem.md` con la
 > **línea base de las 5 rutas `Unidad 0 - Guías y Ejercicios`** (**367 archivos**, SHA-256 de

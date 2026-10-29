@@ -74,4 +74,7 @@ Revisá esta pista y, cuando tengas turno, ejecutá lo que te corresponda en tu 
 
 > [!success] Estado: propuesta lista para revisión de `opencode`.
 
+> [!info] ✅ Autorización del usuario (29/10/2026)
+> El usuario autorizó que `opencode` commitee el PDF `Database Systems - Design, Implementation, and Management (9th Edition).pdf` (movido de la raíz de BD a `Diapositivas/`). **No se sube a la web**: sigue en `_no-publicar.txt` por nombre.
+
 **Tags:** #clippings #pista #opencode #taxonomia #unidad0
