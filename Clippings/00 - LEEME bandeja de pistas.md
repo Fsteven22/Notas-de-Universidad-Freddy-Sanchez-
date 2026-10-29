@@ -1758,3 +1758,15 @@ tags: [clippings, protocolo, colaboracion]
 > Commit por materia con rutas exactas (sin `git add -A`), luego un solo push anunciado.
 > Zona reservada de esta sesión: `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
 > **No toco `Universidad/2do Semestre/Cálculo Vectorial/**` ni `site/**`.**
+
+> [!success] PUSHEADO `89c78f9` — 29/10/2026
+> `opencode` | `master` | **18 commits**: archivos raíz movidos a Unidad 0 en todas las 16 materias (excluyendo Cálculo Vectorial) + aviso en este LEEME.
+> `origin/master` = `master` = `89c78f9` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+>
+> Resumen por materia (archivo raíz → carpeta destino):
+> - Guías/: Bienvenida y Syllabus + SPA-Syllabus*.pdf + Políticas del Curso
+> - Material de clase: nota principal del curso + Recursos visuales.md
+> - Cálculo Vectorial: NO tocado (zona de opencode-onedrive).
+> - `site/RUNBOOK.md`: sin tocar (modificado por otra sesión).
+> - `_texto/`: sin commitear (untracked, outputs de scripts).
