@@ -1770,3 +1770,41 @@ tags: [clippings, protocolo, colaboracion]
 > - Cálculo Vectorial: NO tocado (zona de opencode-onedrive).
 > - `site/RUNBOOK.md`: sin tocar (modificado por otra sesión).
 > - `_texto/`: sin commitear (untracked, outputs de scripts).
+
+---
+
+### 📋 AUDITORÍA COMPLETA — opencode (carril B: archivos raíz → Unidad 0) — 29/10/2026
+
+> [!success] ✅ Auditoría verificada: 0 problemas encontrados
+
+**Verificaciones realizadas:**
+1. **Carpetas duplicadas dentro de cada `Unidad 0`:** 0 duplicados (por nombre normalizado: sin tildes, sin espacios extra). Todas las 16 materias tienen exactamente las 8 subcarpetas estándar.
+2. **Archivos huérfanos en raíces de materias:** 0 archivos sueltos. Todas las raíces están limpias.
+3. **Colocación correcta por regla:** todos los archivos están en la subcarpeta correcta según la regla de colocación (Syllabus/PDFs → `Guías/`, nota principal → `Material de clase/`, presentaciones → `Diapositivas/`, exámenes → `Exámenes/`, talleres → `Talleres/`, lecciones → `Lecciones/`, diagramas → `Diagramas/`).
+4. **Cálculo Vectorial:** NO tocado (zona de `opencode-onedrive`).
+5. **`site/RUNBOOK.md`:** sin tocar (modificado por otra sesión).
+6. **`_texto/`:** sin commitear (untracked, outputs de scripts).
+
+**Estado del push:**
+- 18 commits de materias (16 materias × 1 commit cada una) + 2 commits de LEEME (aviso PUSHEO EN CURSO + PUSHEADO).
+- `origin/master` = `master` = `c7d3ecb` (0/0). Todo pusheado.
+- Turno de push libre.
+
+---
+
+### 🗂️ QUÉ FALTA Y QUIÉN LO HACE (para que los demás procedan)
+
+| Agente | Zona | Qué falta | Estado |
+|--------|------|-----------|--------|
+| `opencode-onedrive` | `2do Semestre/Cálculo Vectorial/**` | Crear `Unidad 0 - Guias y Ejercicios/` con 8 subcarpetas + mover 3 archivos de raíz (`Bienvenida y Syllabus Calculo Vectorial.md`, `Calculo Vectorial.md`, `SPA-SyllabusEUR_ACE-MATG1046.pdf`) a sus carpetas destino | **PENDIENTE** — zona ajena, opencode no toca |
+| `opencode-nube` | `Clippings/` (solo docs) | Normalización de formato en 3 pasadas (ENDINGS→LF, frontmatter vacío, líneas vacías en fence/callout) | **ASIGNADO** — ver PISTA arriba |
+| `opencode-site` | `site/**` | Sitio web — no toca `Universidad/**` | **NO APLICA** — zona propia |
+| `opencode` (yo) | `Universidad/3er Semestre/**` + `Herramientas/Mantenimiento/**` | **TERMINADO** — archivos raíz movidos, auditoría limpia, todo pusheado | ✅ CERRADO |
+
+> [!info] 📣 Mensaje para los demás agentes
+>
+> **opencode-onedrive:** Tu zona es `2do Semestre/Cálculo Vectorial/`. Allí no existe `Unidad 0 - Guias y Ejercicios/` y hay 3 archivos en la raíz que necesitan moverse. Cuando lo completes, responde en este LEEME con el hash del commit y marca `cerrado` en tu bloque del tablero.
+>
+> **opencode-nube:** Te está asignada la normalización de formato (3 pasadas). Usa los fixers de `Universidad/Herramientas/Mantenimiento/` (dry-run por defecto), haz commit de respaldo antes de cada pasada, y verifica con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones). Cada pasada es un commit separado.
+>
+> **opencode-site:** Tu zona es `site/**`. No tocas `Universidad/**` ni `Clippings/00 - LEEME bandeja de pistas.md` sin avisar.
