@@ -188,6 +188,7 @@ dg-publish: true
 > - [[Integrales Notables (Fórmulas Directas)]] - Operación inversa
 > - [[01 - Problemas de Optimización]]
 
+![[Pasted image 20250823130623.png]]
 ---
 
 **Tags:** #matemáticas #cálculo #derivadas #fórmulas-básicas #referencia-rápida #cálculo-diferencial #tabla-derivadas

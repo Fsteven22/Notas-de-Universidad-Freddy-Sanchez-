@@ -19,6 +19,9 @@ dg-publish: true
 > 
 > ![[../Diagramas/dis-u5-02-01-graph.svg]]
 
+
+![[demo-grafo-euler.png]]
+
 ---
 
 ## 📋 Fundamentos: Grafos y Digrafos

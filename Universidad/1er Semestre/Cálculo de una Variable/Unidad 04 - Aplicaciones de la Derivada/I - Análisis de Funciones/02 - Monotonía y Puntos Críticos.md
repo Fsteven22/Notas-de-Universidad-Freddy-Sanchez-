@@ -132,6 +132,9 @@ dg-publish: true
 
 ![[Diagramas/02_-_Monotonía_y_Puntos_Críticos_01.svg]]
 
+
+![[demo-funcion.png]]
+
 ## 🎨 Ejemplos Detallados
 
 ### 📊 Ejemplo 1: Función Polinomial Cúbica

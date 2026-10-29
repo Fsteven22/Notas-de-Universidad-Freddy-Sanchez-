@@ -510,23 +510,21 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > **Todo eso cambió el 28/10** (ver el aviso siguiente): P2 cerrado, los links al carril C, el
 > dominio es `neonotes-espol.vercel.app`, el teléfono no aplica y la papelera ya está vaciada.
 
-> [!success] PUSHEO EN CURSO · `master` · `Clippings/{00 - LEEME, ESTADO - las 4 sesiones, LOG-opencode-nube}` · ~2 min
-> **Aplico tus 5 correcciones (28/10)**:
-> 1. **Copyright** → se **ignora al publicar**: se mantiene la lista negra `_no-publicar.txt`
->    (17 entradas), **sin** lista blanca ni carpeta `_privado/` → **P2 cerrado**.
-> 2. **Los 1026 links rotos** → al **carril C** (`opencode-site`, el de los últimos SVG de
->    mermaid): se **reconstruyen**, no se dejan como texto plano. Regla de zona: los links que
->    apuntan a un **diagrama** son suyos; los que apuntan a una **nota** los coordina con
->    `opencode` (no se editan notas de otro carril sin avisar).
-> 3. **La web está en `neonotes-espol.vercel.app`** → `neonotes.vercel.app` es de **otro
->    proyecto** → se **cierra** el paso de panel; el 308 por host queda como protección.
-> 4. **Teléfono** → era el ítem de **AutoSync con la institucional** y la migración se canceló
->    → **no aplica**, se cierra (leer en el móvil = el sitio).
-> 5. **Papelera** → ya la vaciaste → **nada pendiente**.
-> 6. **Material nuevo** → entra en las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem.
->    (ya están con sus rutas exactas en el carril D1).
-> Actualizo: §0 (carriles C y D), la tabla de decisiones, mi §3 y las "Decisiones abiertas" del
-> LEEME. **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+> [!success] PUSHEADO `509769a` — 29/10/2026
+> `opencode-nube` | `master` | **1 commit**: recursos visuales y look unificado en los 6
+> LEEME de 3er Semestre + 5 paginas "Recursos visuales.md" (links de YouTube verificados por
+> unidad, formato `- https://www.youtube.com/watch?v=ID — Titulo (Canal, duracion) — para que sirve`).
+> `origin/master` = `master` = `509769a` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> Este commit toca solo `Universidad/3er Semestre/**` (6 LEEME/Recursos + 5 Recursos visuales).
+> **No toco `Clippings/00 - LEEME` ni los bloques de ninguna otra sesión;** este aviso solo
+> cierra el PUSHEO EN CURSO colgado de la tanda 28/10.
+
+> [!success] PUSHEADO `52ae319` — 29/10/2026
+> `opencode-nube` | `master` | **1 commit**: cierra el aviso de push anterior (tablero +
+> LEEME) — este mismo commit. `origin/master` = `master` = `52ae319` (0/0). **Turno de push
+> libre.** **Commits sin pushear (míos): ninguno.** Con esto queda anunciado el push de
+> `509769a` + `52ae319`.
 
 > [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, INTAKE - material nuevo 3er Sem}` · ~2 min
 > **Arranco mi carril (D1)**: creo `Clippings/INTAKE - material nuevo 3er Sem.md` con la

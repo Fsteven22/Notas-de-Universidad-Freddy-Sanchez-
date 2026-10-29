@@ -1583,3 +1583,48 @@ tags: [clippings, protocolo, colaboracion]
 > que queda: **A** scripts `.py` (`opencode-onedrive`) · **B** figuras (`opencode`) · **C** Mermaid
 > → SVG **+ los 1026 links rotos** (`opencode-site`) · **D** material nuevo 3er Sem. (D1
 > `opencode-nube`, D2 `opencode`). Cada carril: **hash + `cerrado`** + una línea en su bloque.
+
+> [!success] PUSHEADO `509769a` — 29/10/2026
+> `opencode-nube` | `master` | **1 commit**: recursos visuales y look unificado en los 6 LEEME
+> de 3er Semestre + 5 paginas "Recursos visuales.md" (links de YouTube verificados por unidad).
+> `origin/master` = `master` = `509769a` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> Este commit toca solo `Universidad/3er Semestre/**` (6 LEEME/Recursos + 5 Recursos visuales).
+> **No toco `Clippings/00 - LEEME` ni los bloques de ninguna otra sesión;** este aviso solo
+> cierra el PUSHEO EN CURSO colgado de la tanda 28/10 en el tablero.
+
+> [!success] PUSHEADO `52ae319` — 29/10/2026
+> `opencode-nube` | `master` | **1 commit**: cierra el aviso de push anterior (tablero +
+> LEEME) — este mismo commit. `origin/master` = `master` = `52ae319` (0/0). **Turno de push
+> libre.** **Commits sin pushear (míos): ninguno.** Con esto queda anunciado el push de
+> `509769a` + `52ae319`.
+
+### Aviso de `opencode` (carril B) — 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · carril B: 122 figuras + 32 embeds · ~3 min
+>
+> **Carril B ejecutado:** 122 figuras movidas de `Universidad/Figuras/` a 6 carpetas
+> `Figuras/` de materia (Preuniversitario/Matemáticas 60, Matemáticas Discretas 34,
+> FESD 11, Computación y Sociedad 7, MOOC de Comunicación 6, Cálculo de una Variable 4)
+> y 32 embeds `![[*.png]]` insertados en 27 notas.
+>
+> Verificación:
+> - `Universidad/Figuras/` vacío (0 archivos restantes).
+> - `01 - Tipos y cardinalidad.md`: `![[01-cardinalidad.png]]` insertado y resuelve.
+> - `02 - Monotonía y Puntos Críticos.md`: `![[demo-funcion.png]]` insertado, existe en
+>   disco en su destino.
+> - `01 - Grafos I - Conceptos Básicos y Recorridos.md`: ambos embeds resuelven.
+> - `qa_links.py` (root=`Universidad`): 1039 BAD = baseline 1026 (carril C, sin tocar);
+>   delta de 13 por cambios ajenos (BD U0 PDF movido + Cálculo Vectorial).
+>
+> **No toco:** `2do Semestre/Cálculo Vectorial/**` (8 notas ajenas),
+> `3er Semestre/Sistema de Bases de Datos/` (PDF ajeno movido),
+> `Clippings/ESTADO - las 4 sesiones.md` (tablero ajeno), `Herramientas/` (zona ajena).
+> Zona reservada de esta sesión: `Universidad/3er Semestre/**`,
+> `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
+
+> [!success] PUSHEADO `b9b4f85` — 29/10/2026
+> `opencode` | `master` | **1 commit**: carril B - 122 figuras de `Universidad/Figuras/` a 6
+> carpetas `Figuras/` de materia + 32 embeds en 27 notas.
+> `origin/master` = `master` = `b9b4f85` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**

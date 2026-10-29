@@ -17,6 +17,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
 > ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
+> ![[ChatGPT Image 19 may 2026, 22_52_00.png]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
 

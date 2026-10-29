@@ -14,6 +14,9 @@ dg-publish: true
 
 ![[U5-solidos.png]]
 
+
+![[U5-cubo.png]]
+
 > [!tip] 💡 Visual — Familia de sólidos
 >
 > Prisma ($2B+Ph$), pirámide ($B+Ph/2$... $V=Bh/3$), cilindro ($2\pi r^2+2\pi rh$), cono ($\pi r^2+\pi rg$) y esfera ($4\pi r^2$): la figura los ordena por caras planas vs curvas.

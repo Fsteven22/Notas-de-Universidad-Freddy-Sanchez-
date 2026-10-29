@@ -29,6 +29,12 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ![[../../Anexos/Pasted image 20260519225402.png]]
 
+
+
+![[Pasted image 20260519230346.png]]
+
+![[Pasted image 20260519225934.png]]
+
 ---
 
 ## 🎛️ Fuentes Dependientes (Controladas)

@@ -14,6 +14,9 @@ dg-publish: true
 
 ![[01-conjuntos-numericos.png]]
 
+
+![[02-decimal.png]]
+
 > [!tip] 💡 Visual — Jerarquía y decimales
 >
 > Rectángulos $N\subset Z\subset Q\subset R$; $0.333\ldots=1/3$ vive en $Q$ (periódico) mientras $0.101001\ldots$ cae en $I$ (sin período) — el decimal decide la capa.
