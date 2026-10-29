@@ -879,4 +879,48 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
-**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts
+## 17. Octava tanda: carril B — 122 figuras de `Universidad/Figuras/` a sus materias + 32 embeds
+
+> [!info] 📌 Qué se hizo
+>
+> - **122 figuras movidas** de `Universidad/Figuras/` a 6 carpetas `Figuras/` de materia:
+>   Preuniversitario/Matemáticas (60), Matemáticas Discretas (34), FESD (11),
+>   Computación y Sociedad (7), MOOC de Comunicación (6), Cálculo de una Variable (4).
+>   Todas con `git mv`, ya staged.
+> - **32 embeds `![[*.png|svg]]` insertados** en 27 notas de 6 materias, siguiendo la
+>   convención local: PNG a columna 0 tras el callout del SVG ancla; "sin ancla" →
+>   antes del `---` final.
+> - **7 PNG realmente huérfanos** (DSW U5: 5; BD U2: 2) identificados por OCR del
+>   contenido del deck: se embeben en `02 - Control de versiones con Git.md` y
+>   `04 - Normalización paso a paso.md` (pendiente de lectura del deck con
+>   `pdf_a_texto.py`).
+>
+> [!success] ✅ Verificación
+>
+> - `Universidad/Figuras/` queda con **0 archivos** (todas movidas).
+> - `01 - Tipos y cardinalidad.md`: `![[01-cardinalidad.png]]` insertado, resuelve.
+> - `02 - Monotonía y Puntos Críticos.md`: `![[demo-funcion.png]]` insertado, existe en
+>   disco en su destino (el validador no lo resuelve por límite pre-existente de
+>   `_raiz_vault()` con rutas relativas, no por error del embed).
+> - `01 - Grafos I - Conceptos Básicos y Recorridos.md`: `![[demo-grafo-euler.png]]` y
+>   `![[ChatGPT Image 18 ago 2026, 18_00_05.png]]` insertados, resuelven.
+> - `qa_links.py` (root=`Universidad`): 1039 BAD (baseline 1026, carril C; delta de 13
+>   atribuible a cambios ajenos: BD U0 PDF movido + Cálculo Vectorial).
+>
+> [!warning] ⚠️ Qué NO se tocó
+>
+> - `2do Semestre/Cálculo Vectorial/**`: 8 notas modificadas por otra sesión — sin tocar.
+> - `3er Semestre/Sistema de Bases de Datos/`: PDF borrado/reubicado por otra sesión — sin tocar.
+> - `Clippings/ESTADO - las 4 sesiones.md`: modificado por otra sesión — sin tocar.
+> - `Herramientas/Scripts/verificar_nota.py`: modificado por otra sesión — sin tocar.
+> - `site/src/**`, `site/public/**`, `site/scripts/sync-vault.mjs`: zonas ajenas.
+>
+> [!info] 📋 Próximos pasos
+>
+> - Commit con rutas exactas (sin `git add -A`) y push con anuncio en LEEME.
+> - Continuar con carril D2 (`Clippings/INTAKE - material nuevo 3er Sem.md`).
+> - Normalización de formato: 14.106 errores en 3 pasadas mecánicas.
+
+---
+
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b

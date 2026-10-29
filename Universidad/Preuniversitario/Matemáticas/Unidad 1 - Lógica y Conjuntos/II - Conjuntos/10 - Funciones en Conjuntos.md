@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/10_-_Funciones_en_Conjuntos_01.svg]]
 
+
+![[10-funciones.png]]
+
 ---
 
 ## 📋 Definición Formal

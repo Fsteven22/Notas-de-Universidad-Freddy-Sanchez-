@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/07_-_Función_cuadrática_01.svg]]
 
+
+![[U3-07-cuadratica.png]]
+
 ---
 
 ## 📋 Definición Formal

@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/07_-_Pares_ordenados_y_producto_cartesiano_01.svg]]
 
+
+![[07-pares.png]]
+
 ---
 
 ## 📋 Definición Formal

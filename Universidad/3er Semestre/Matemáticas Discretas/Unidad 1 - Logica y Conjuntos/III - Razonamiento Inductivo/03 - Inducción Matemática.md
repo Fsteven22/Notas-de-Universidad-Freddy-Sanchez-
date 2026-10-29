@@ -23,6 +23,9 @@ dg-publish: true
 >
 > Es especialmente útil cuando queremos demostrar fórmulas de sumas, desigualdades, propiedades de divisibilidad, o cualquier propiedad que dependa de $n \in \mathbb{N}$.
 
+
+![[file_00000000f17c71fba96939a05e098492.png]]
+
 ---
 
 ## 📐 Principio de Inducción Matemática (Simple)

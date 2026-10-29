@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/10_-_Función_inversa_de_una_función_biyectiva_01.svg]]
 
+
+![[U3-10-inversa.png]]
+
 ---
 
 ## 📋 Definición Formal

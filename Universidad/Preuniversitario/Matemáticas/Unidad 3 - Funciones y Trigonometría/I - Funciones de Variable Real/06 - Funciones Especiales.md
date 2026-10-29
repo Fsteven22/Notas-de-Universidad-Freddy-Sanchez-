@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/06_-_Funciones_Especiales_01.svg]]
 
+
+![[U3-06-especiales.png]]
+
 ---
 
 ## 📋 Definición Formal

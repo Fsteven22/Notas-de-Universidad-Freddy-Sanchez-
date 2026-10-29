@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/05_-_Función_lineal_01.svg]]
 
+
+![[U3-05-lineal.png]]
+
 ---
 
 ## 📋 Definición Formal

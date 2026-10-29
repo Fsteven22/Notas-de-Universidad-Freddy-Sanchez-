@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/02_-_Cuantificadores_01.svg]]
 
+
+![[08-2var.png]]
+
 ---
 
 ## 📋 Definición Formal

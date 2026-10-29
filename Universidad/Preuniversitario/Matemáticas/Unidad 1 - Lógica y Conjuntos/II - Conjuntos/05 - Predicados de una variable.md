@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/05_-_Predicados_de_una_variable_01.svg]]
 
+
+![[05-predicados.png]]
+
 ---
 
 ## 📋 Definición Formal

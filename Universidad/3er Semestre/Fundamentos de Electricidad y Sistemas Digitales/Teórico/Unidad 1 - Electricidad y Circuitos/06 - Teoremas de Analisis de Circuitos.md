@@ -33,6 +33,12 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Máx. transferencia**|Encontrar $R_L$ que maximiza potencia entregada|
 > |**Transformación de fuentes**|Convertir entre fuente de voltaje y corriente|
 
+
+
+![[ChatGPT Image 17 jun 2026, 22_31_35.png]]
+
+![[ChatGPT Image 17 jun 2026, 21_36_10.png]]
+
 ---
 
 ## 🔀 Teorema de Superposición

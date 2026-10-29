@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/06_-_Razonamientos_01.svg]]
 
+
+![[06-validez.png]]
+
 ---
 
 ## 📋 Definición Formal

@@ -25,6 +25,12 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Paralelo** | Se divide entre ramas | Igual en todas las ramas | Instalaciones domésticas |
 > | **Mixto** | Varía por sección | Varía por sección | Circuitos electrónicos |
 
+
+
+![[Pasted image 20260519230523.png]]
+
+![[ChatGPT Image 17 jun 2026, 22_43_52.png]]
+
 ---
 
 ## 🔗 Circuito en Serie

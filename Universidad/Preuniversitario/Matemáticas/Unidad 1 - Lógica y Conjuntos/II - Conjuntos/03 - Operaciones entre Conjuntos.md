@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/03_-_Operaciones_entre_Conjuntos_01.svg]]
 
+
+![[03-operaciones.png]]
+
 ---
 
 ## 📋 Definición Formal

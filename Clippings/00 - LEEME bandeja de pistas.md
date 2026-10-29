@@ -1598,3 +1598,27 @@ tags: [clippings, protocolo, colaboracion]
 > LEEME) — este mismo commit. `origin/master` = `master` = `52ae319` (0/0). **Turno de push
 > libre.** **Commits sin pushear (míos): ninguno.** Con esto queda anunciado el push de
 > `509769a` + `52ae319`.
+
+### Aviso de `opencode` (carril B) — 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · carril B: 122 figuras + 32 embeds · ~3 min
+>
+> **Carril B ejecutado:** 122 figuras movidas de `Universidad/Figuras/` a 6 carpetas
+> `Figuras/` de materia (Preuniversitario/Matemáticas 60, Matemáticas Discretas 34,
+> FESD 11, Computación y Sociedad 7, MOOC de Comunicación 6, Cálculo de una Variable 4)
+> y 32 embeds `![[*.png]]` insertados en 27 notas.
+>
+> Verificación:
+> - `Universidad/Figuras/` vacío (0 archivos restantes).
+> - `01 - Tipos y cardinalidad.md`: `![[01-cardinalidad.png]]` insertado y resuelve.
+> - `02 - Monotonía y Puntos Críticos.md`: `![[demo-funcion.png]]` insertado, existe en
+>   disco en su destino.
+> - `01 - Grafos I - Conceptos Básicos y Recorridos.md`: ambos embeds resuelven.
+> - `qa_links.py` (root=`Universidad`): 1039 BAD = baseline 1026 (carril C, sin tocar);
+>   delta de 13 por cambios ajenos (BD U0 PDF movido + Cálculo Vectorial).
+>
+> **No toco:** `2do Semestre/Cálculo Vectorial/**` (8 notas ajenas),
+> `3er Semestre/Sistema de Bases de Datos/` (PDF ajeno movido),
+> `Clippings/ESTADO - las 4 sesiones.md` (tablero ajeno), `Herramientas/` (zona ajena).
+> Zona reservada de esta sesión: `Universidad/3er Semestre/**`,
+> `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.

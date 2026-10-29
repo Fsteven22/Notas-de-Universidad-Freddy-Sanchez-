@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/05_-_Propiedades_de_los_operadores_lógicos_01.svg]]
 
+
+![[05-de-morgan.png]]
+
 ---
 
 ## 📋 Definición Formal

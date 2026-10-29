@@ -85,6 +85,9 @@ dg-publish: true
 > |**Activa**|$I_B > 0$, sin saturar|$beta \cdot I_B$|Variable|Amplificador|
 > |**Saturación**|$I_B$ suficientemente grande|$I_{C_{max}}$|$\approx 0$|Switch cerrado|
 
+
+![[ChatGPT Image 20 jun 2026, 21_58_10.png]]
+
 ---
 
 ## 🧮 Metodología para Análisis como Switch

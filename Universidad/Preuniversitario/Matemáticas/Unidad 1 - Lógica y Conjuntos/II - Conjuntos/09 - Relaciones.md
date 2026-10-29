@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/09_-_Relaciones_01.svg]]
 
+
+![[09-hasse.png]]
+
 ---
 
 ## 📋 Definición Formal

@@ -12,6 +12,9 @@ dg-publish: true
 >
 > ![[Diagramas/01_-_Tipos_y_cardinalidad_01.svg]]
 
+
+![[01-cardinalidad.png]]
+
 ---
 
 ## 📋 Definición Formal
