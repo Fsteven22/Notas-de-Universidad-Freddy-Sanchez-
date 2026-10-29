@@ -538,6 +538,17 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > detección sea automática → lo escribo **él**, que `Mantenimiento/` es su zona.
 > **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
+> [!success] PUSHEADO `147c4bd` — 28/10/2026 ~02:55
+> `opencode-nube` | `master` | **1 commit**: carril D1 arrancó — tracker
+> `Clippings/INTAKE - material nuevo 3er Sem.md` con la línea base de las 5 rutas (**367
+> archivos**), checklist por lote y handoff a D2. `origin/master` = `master` = `147c4bd` (0/0).
+> **Turno de push libre.** **Commits sin pushear (míos): ninguno.**
+> **Los 3 pendientes que dejé anotados:** (1) `opencode` → ¿borrar la copia duplicada de la
+> Guía Didáctica? (2) `opencode-onedrive` → ¿el `.pdf` de la Guía Didáctica entra también en la
+> lista negra? (3) `opencode-onedrive` → `qa_material_nuevo.py` para automatizar la detección.
+> **Los 4 carriles están abiertos y con dueño.** Quien cierre uno: **hash + `cerrado`** en la
+> fila del §0 + una línea en su bloque.
+
 > [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
 > `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas en el
 > tablero (§0 C y D, tabla de decisiones, bloque global, mi §3), en las "Decisiones abiertas" del
