@@ -324,30 +324,30 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **Sistema de publicación** en `site/scripts/sync-vault.mjs`: gate `dg-publish`, `_no-publicar.txt` con comodines `*`/`?` (match por nombre **o** ruta), **solo se publica un asset si una nota publicada lo referencia**, fix de embeds `![[Nota]]` → `[[Nota]]`, y marcador `<!-- nx:asset-omitido -->`.
 > - **Cálculo Vectorial**: 16 diagramas placeholder sustituidos por los reales, 2 "Teorema Fundamental" corregidos, **37 diagramas maestros integrados en 32 notas** → **0 embeds de diagramas rotos** en todo el vault; 332 previews borrados (12,7 MB); lista maestra regenerada (474 → **0**).
 > - **Copyright**: cerrada la fuga de `Escucha Activa Parte 1/2_OCR.pdf` (se publicaban) y unificada la lista con la otra sesión (17 patrones / 61 archivos).
+> - **P3 — CI de privacidad** ✅: `site/scripts/sync-vault.mjs` con `verificarNoPublicados()` al final de `main()`; `site/scripts/ci-check-privado.mjs` (verifica `public/assets/` + `public/downloads/*.zip`); `.github/workflows/ci-privacy.yml` (GitHub Actions en push/PR a `master`). Falla si algo de `_no-publicar.txt` llega a publicado.
+> - **P4 — Scripts de auditoría** ✅: `qa_assets_huerfanos.py`, `qa_resolucion_diagramas.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py` + `qa_all.py` en `Universidad/Herramientas/Mantenimiento/`, documentados en `Herramientas/README.md`.
+> - **P6 — `VAULT_ROOT`** ✅: parametrizado en `auditoria.py`, `estilo.py`, `vlib.py`, `buildcv_auto.py`, `buildcv_copy_missing.py`, `buildcv_missing.py`, `test_single.py` (variable de entorno con fallback deducido desde `__file__`).
+> - **P8 — `verificar_nota.py` en CV** ✅: 88 líneas vacías reales dentro de fences sustituidas por `"> "`; 5 fences sobrantes eliminados; 91 notas de CV, 0 errores de fences/líneas vacías.
 > - **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`).
 > - **Coordinación**: protocolo de pushes, Acuerdos 1–4, cola de push con dueño, corrección de la tabla de zonas (4 sesiones), reglas de *commitear antes de que otro mergee* y de *worktree por sesión*.
-> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19` + merges.
+> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3) + merges.
 
 ### Qué falta
 > [!warning] ⏳ Qué falta
 >
 > | # | Qué | Prioridad | Decide |
 > |---|---|---|---|
-> | 1 | **P8**: arreglar `verificar_nota.py` en Cálculo Vectorial (líneas vacías dentro de fences en callouts). Es mi zona | media | sesión |
-> | 2 | **P4**: mover mis scripts de auditoría (`qa_resolucion_diagramas.py`, `qa_assets_huerfanos.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py`) a `Universidad/Herramientas/Mantenimiento/` con **una sola entrada** | media | sesión |
-> | 3 | **P3**: CI (GitHub Actions) que falle si algo de `_no-publicar.txt` llega a `public/` o a un ZIP | media | sesión + usuario (¿CI?) |
-> | 4 | **P6**: `VAULT_ROOT` en los 15+ archivos con ruta absoluta (8 en `SVG-Pipeline/`, 3 en `Herramientas/`, `sync-vault.mjs:19-20`, 3 `.md`) | media | sesión (antes de cualquier migración) |
-> | 5 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
-> | 6 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
-> | 7 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
+> | 1 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
+> | 2 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
+> | 3 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
 
 ### Próximos pasos
-> [!warning] ⏳ Qué falta
+> [!warning] ⏳ Qué falta (P8, P4, P6, P3 ya están hechos y pusheados)
 >
-> 1. P8 (mi zona, sin dependencias de nadie) → commit con rutas exactas.
-> 2. P4: dejar los 4 scripts en `Herramientas/Mantenimiento/` + documentarlos en `Herramientas/README.md`.
-> 3. P5 ya está hecho (limpieza de `site/`); queda solo **esperar el OK del usuario** para los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup, fijar carpeta).
-> 4. P6 antes de cualquier migración; P3 y P2 esperando decisión del usuario.
+> 1. **P2** — esperando decisión del usuario (lista negra vs lista blanca vs `_privado/`).
+> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones).
+> 3. **P7** — 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con `opencode`, 3er Semestre).
+> 4. Los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup de 458 MB, fijar carpeta) — esperando OK del usuario.
 
 ---
 
