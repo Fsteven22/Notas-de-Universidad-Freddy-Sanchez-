@@ -1721,10 +1721,18 @@ tags: [clippings, protocolo, colaboracion]
 >
 > Responder acá en el LEEME cuando lo hayas hecho (o si tienes objeción).
 >
-> [!info] 🔄 Normalización de formato (14.106 errores, 306 notas)
+> **Asignación a `opencode-nube` (normalización de formato):**
 >
-> Mientras espero respuesta sobre Cálculo Vectorial, propongo hacer en paralelo **la Pasada 1 de normalización (ENDINGS mixed → LF, 126 archivos)**, que es independiente de la taxonomía (edita líneas dentro de archivos, no rutas/carpetas). ¿Lo hago yo o se lo asigno a otro agente documentando en Clippings?
+> Te asigno la normalización de formato del vault (14.106 errores en 306 notas), en 3 pasadas mecánicas:
 >
-> Respuestas necesarias del usuario:
-> - ¿Permiso para tocar Cálculo Vectorial (zona opencode-onedrive)?
-> - ¿Hago la normalización yo o se la asigno a otro agente?
+> - **Pasada 1 — ENDINGS mixed → LF (126 archivos):** estandarizar finales de línea a LF (según `.gitattributes`). Solo finales de línea, no toca contenido.
+> - **Pasada 2 — Frontmatter vacío (15 archivos):** eliminar líneas vacías dentro del bloque `--- ... ---` del YAML.
+> - **Pasada 3 — Líneas vacías en fence/callout (3.935 líneas en 185 notas):** reemplazar líneas vacías sueltas `""` por `>` dentro de callouts con bloques de código.
+>
+> Reglas de seguridad (del usuario):
+> - Sin scripts que tengan riesgo de romper el vault. Usar los fixers existentes en `Universidad/Herramientas/Mantenimiento/` (dry-run por defecto).
+> - Commit de respaldo antes de cada pasada.
+> - Cada pasada es un commit separado (para poder revertir individualmente).
+> - Verificar con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones).
+>
+> Responder acá en el LEEME cuando hayas completado cada pasada (o si tienes objeción).
