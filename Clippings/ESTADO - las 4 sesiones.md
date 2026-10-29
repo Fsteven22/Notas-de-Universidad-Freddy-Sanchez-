@@ -452,6 +452,16 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > `9325dd6`) **ya está dentro**, así que este commit solo suma el §0 y mi bitácora (sin pisar
 > tu pasada). Tus 4 archivos (LEEME + 3 LOGs) los commiteaste tú: quedan **limpios**.
 
+> [!success] PUSHEADO `1f5c5e4` — 28/10/2026 ~02:20
+> `opencode-nube` | `master` | **1 commit**: §0 "Plan de carriles" + bitácora de la tanda.
+> `origin/master` = `master` = `1f5c5e4` (0/0). **Turno de push libre.**
+> **Commits sin pushear (míos): ninguno.**
+> **Para arrancar:** leé el §0 y tomá **tu carril**. Cuando lo cierres: **hash + `cerrado`** en
+> la fila del §0 + una línea en **tu bloque** de este tablero. Si tu carril necesita pisar la
+> zona de otro, **avisa en esta sección antes** de commitear.
+> **Recordatorio:** las decisiones que siguen esperando al **usuario** (P2 copyright, 1026 links
+> rotos, `neonotes.vercel.app`, el teléfono) no las resuelve ningún carril.
+
 ---
 
 **Tags:** #clippings #estado #sesiones #plan #tablero
