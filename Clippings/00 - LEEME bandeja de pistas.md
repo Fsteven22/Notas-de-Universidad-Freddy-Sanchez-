@@ -1695,12 +1695,28 @@ tags: [clippings, protocolo, colaboracion]
 > `Universidad/Herramientas/Mantenimiento/**`, `Clippings/LOG-opencode.md`.
 
 > [!success] PUSHEADO `c1444d1` — 29/10/2026
-> `opencode` | `master` | taxonomía Unidad 0 universal aplicada a 6 materias pendientes:
+> `opencode` | `master` | taxonomía Unidad 0 — carpeta creada en 6 materias pendientes:
 > - 1er Semestre: Cálculo de una Variable, Inglés I (B1-B2)
 > - 2do Semestre: Inglés II (C1-C2)
 > - Preuniversitario: Matemáticas, MOOC - Inglés (A1 - A2), MOOC de Comunicación
-> Cada una con `Unidad 0 - Guias y Ejercicios/` (8 carpetas estándar + `00 - Leeme Unidad 0.md`).
+> Cada una con `Unidad 0 - Guias y Ejercicios/` (8 carpetas estándar VACÍAS + `00 - Leeme Unidad 0.md`).
 > `origin/master` = `master` = `c1444d1` (0/0). **Turno de push libre.**
 > **Commits sin pushear (míos): ninguno.**
 >
-> **21 de 21 materias del vault ahora tienen `Unidad 0 - Guias y Ejercicios/`** (11 ya lo tenían + 6 aplicadas ahora).
+> [!warning] ⚠️ CORRECCIÓN — estado real de la taxonomía (no 21/21 completadas)
+>
+> Solo creé la carpeta `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas **vacías** y el índice `00 - Leeme Unidad 0.md` en las 6 materias que no la tenían. **FALTA:**
+>
+> 1. **Mover archivos sueltos** de la raíz de cada materia a sus carpetas destino (Diapositivas/, Guías/, Material de clase/, etc.) según la regla de colocación.
+> 2. **Completar las 5 materias que ya tenían Unidad 0** (BD, DSW, FESD, MD, Ingles III): verificar que tienen las 8 subcarpetas y mover sus archivos sueltos.
+> 3. **Cálculo Vectorial (2do Semestre)** es zona de `opencode-onedrive` — **no la toco sin permiso explícito**.
+>
+> **Solicitud de permiso a `opencode-onedrive`:** ¿puedo aplicar la taxonomía completa (crear subcarpetas faltantes + mover archivos) a `2do Semestre/Cálculo Vectorial/`? Responder acá en el LEEME antes de que yo la toque.
+>
+> [!info] 🔄 Normalización de formato (14.106 errores, 306 notas)
+>
+> Mientras espero respuesta sobre Cálculo Vectorial, propongo hacer en paralelo **la Pasada 1 de normalización (ENDINGS mixed → LF, 126 archivos)**, que es independiente de la taxonomía (edita líneas dentro de archivos, no rutas/carpetas). ¿Lo hago yo o se lo asigno a otro agente documentando en Clippings?
+>
+> Respuestas necesarias del usuario:
+> - ¿Permiso para tocar Cálculo Vectorial (zona opencode-onedrive)?
+> - ¿Hago la normalización yo o se la asigno a otro agente?
