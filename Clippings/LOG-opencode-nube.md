@@ -38,6 +38,7 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > - [[#Tanda 27/10/2026 17:20–18:25 — migración probada y cancelada]]
 > - [[#Tanda 27/10–28/10 00:30 — limpieza final de la nube y los 4 mecanismos de OneDrive]]
 > - [[#Tanda 28/10/2026 00:40–01:10 — borrado del `.git` huérfano de la raíz de OneDrive (con respaldo)]]
+> - [[#Tanda 28/10/2026 01:20-01:35 - la ultima pasada: plan de carriles publicado]]
 
 ## Que hice
 
@@ -500,6 +501,43 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > `OneSyncFiles/` (el vault) · `Steven Sánchez/` (**vacía**, 0 MB) · `desktop.ini` · un marcador
 > de OneDrive de 0 bytes. Y lo único que **de verdad** hace bajar la cuota del web:
 > **vaciar la papelera** (1 clic, pendiente del usuario).
+
+### Tanda 28/10/2026 01:20-01:35 — la última pasada: plan de carriles publicado
+
+> [!success] ✅ Qué hice
+> El usuario pidió la **última pasada** a los `.md` de `Clippings/`: que los fixes e
+> implementaciones pendientes **arranquen por separado**, un carril por sesión. Publiqué el
+> **§0 "Plan de carriles"** en `ESTADO - las 4 sesiones.md` (la sección va **primero**, con su
+> entrada en el índice, porque es la cola real que todos deben leer).
+> **No toqué `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+
+> [!info] 🗺️ Los 4 carriles (con dueño, zona y salida verificable)
+> | # | Carril | Dueño | Salida verificable |
+> |---|---|---|---|
+> | **A** | Scripts `.py` de mantenimiento | `opencode-onedrive` | `Mantenimiento/` documentado en `Herramientas/README.md` |
+> | **B** | Figuras a la carpeta de su materia | `opencode` (3er Sem.) | 0 figuras sueltas + embeds OK |
+> | **C** | Mermaid → SVG | `opencode-site` | los **19** SVG que faltan + lista maestra en 0 |
+> | **D** | Material nuevo 3er Sem. | **D1** `opencode-nube` (intake/QA) + **D2** `opencode` (notas) | pista por lote → notas de la materia |
+
+> [!success] 📏 Lo que medí para que nadie arranque a inventar
+> - **A:** `Universidad/Herramientas/Mantenimiento/` ya tiene **15 `.py`** (`mdlib.py`,
+>   `fix_callouts*.py`, `fix_links.py`, `qa_links*.py`, `qa_pdfs_*.py`, `qa_refs_checkbox.py`…).
+>   Falta **P4** (mover 4 scripts de auditoría + documentarlos en `Herramientas/README.md`, que
+>   ya existe) y **P8** (`verificar_nota.py` de Cálculo Vectorial).
+> - **B:** `Universidad/Figuras/` tiene **122 archivos sueltos** (119 PNG + 2 SVG + 1 JPG) y es la
+>   **única** carpeta `Figuras/` del vault; las **16 materias** ya tienen `Diagramas/`. Los embeds
+>   `![[nombre.png]]` resuelven por nombre → mover no rompe nada; hay que arreglar los embeds con
+>   ruta o markdown `![]()`.
+> - **C:** `SVG-Pipeline/mmd2/` tiene **338 `.mmd` y 0 `.svg`**, pero **319 ya tienen su SVG** en
+>   el vault → **solo faltan 19**. El convertidor ya existe (**13 `.py`**): no reescribirlo.
+> - **D:** el gate de publicación es `dg-publish` y la lista de copyright `_no-publicar.txt`
+>   (P2 sigue esperando al usuario).
+
+> [!warning] 📐 Reglas que dejé escritas
+> Un carril = un dueño = una zona = un commit · al cerrar: hash + `cerrado` + una línea en su
+> bloque · **nunca `git add -A`** · un push a la vez anunciado · **nunca compilar dentro de
+> OneDrive** · mientras el **LEEME** esté sin commitear (otra sesión lo edita), los anuncios de
+> push van en el tablero.
 
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive

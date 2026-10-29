@@ -12,8 +12,9 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > push** en el LEEME ("Avisos de otros agentes") → pusheá.
 > Los **números globales** de abajo los actualiza quien haga el push.
 
-> [!important] Estado global verificado (27/10/2026, 18:25)
-> - `master` = `origin/master` = **`973e791`**, working tree **limpio**, 0 conflictos, 0 ramas pendientes de integrar.
+> [!important] Estado global verificado (28/10/2026, 02:15)
+> - `master` = `origin/master` = **`9325dd6`**, 0 conflictos, 0 ramas pendientes de integrar. Working tree **limpio** tras la reformulación a callouts de los 7 `.md` de `Clippings/` (`4289a3f` → `9325dd6`).
+> - **Plan de carriles (esta tabla es la cola real):** §0 "🚦 Plan de carriles" — A (scripts `.py`) · B (figuras) · C (Mermaid→SVG) · D (material nuevo 3er Sem.). Cada carril tiene dueño, zona y salida verificable.
 > - Sitio: **806 notas publicadas · 3 omitidas · 2783 assets referenciados · 17 patrones / 61 archivos excluidos**.
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.975 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build, 28/10 00:30) y el `.git/` huérfano de la raíz (23 MB, 28/10 01:00, **con respaldo local**). La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: solo queda `.obsidian/` (162 MB) en la nube.
@@ -24,6 +25,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 
 > [!info] 📑 Índice
 >
+> - [[#0) 🚦 Plan de carriles — la última pasada (28/10/2026)]]
 > - [[#1) `opencode` — 3er Semestre (wikilinks y embeds)]]
 > - [[#2) `opencode-site` — sitio, marca y exclusiones]]
 > - [[#3) `opencode-nube` — cuota, nube y migración]]
@@ -32,6 +34,96 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - [[#🔒 Reglas de operación (resumen — el detalle está en el LEEME)]]
 > - [[#📣 Avisos de otros agentes]]
 > - En cada bloque de sesión: **Resultados** → **Qué falta** → **Próximos pasos**
+
+---
+
+## 0) 🚦 Plan de carriles — la última pasada (28/10/2026)
+
+> [!important] 📌 Qué es esta sección
+> El usuario pidió la **última pasada** a los `.md` de `Clippings/`: que los fixes e
+> implementaciones que quedaban **arranquen por separado**, un carril por sesión, sin pisarse.
+> Esta tabla es la **lista canónica de lo que queda**: si algo no está aquí, ya se cerró (y
+> consta en el bloque de su dueño) o es una decisión del usuario (tabla de más abajo).
+> **Cada carril = un dueño = una zona = un commit.** Al cerrar un carril: hash del commit en
+> la fila + estado `cerrado` + una línea en **tu bloque** del tablero.
+
+> [!info] 🗺️ Los 4 carriles (con lo que ya está medido, no con supuestos)
+>
+> | # | Carril | Dueño | Zona que puede tocar | Entregable verificable | Estado |
+> |---|---|---|---|---|---|
+> | **A** | **Scripts `.py` de mantenimiento del vault** | `opencode-onedrive` | `Universidad/Herramientas/**` | `Mantenimiento/` con los `.py` documentados en `Herramientas/README.md` | 🟡 en curso |
+> | **B** | **Mover las figuras a la carpeta de su materia** | `opencode` (3er Sem.) | `Universidad/**` (figuras y embeds) | 0 figuras sueltas fuera de su materia + embeds OK | 🟡 en curso |
+> | **C** | **Seguir con las conversiones Mermaid → SVG** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | Los 19 SVG que faltan + lista maestra en 0 | 🟡 en curso |
+> | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote (D1) → notas de la materia (D2) | 🟡 en curso |
+
+> [!success] ✅ Carril **A** — scripts `.py` de mantenimiento (`opencode-onedrive`)
+> **Ya existe (medido hoy):** `Universidad/Herramientas/Mantenimiento/` tiene **15 `.py`**:
+> `detect_fuera_callouts.py`, `fix_callouts.py`, `fix_callout_join.py`, `fix_callout_nested.py`,
+> `fix_callout_overlap.py`, `fix_links.py`, `fix_matematica.py`, `mdlib.py`,
+> `pdf_a_markdown_lote.py`, `pdf_a_texto.py`, `qa_links.py`, `qa_links_por_target.py`,
+> `qa_pdfs_duplicados.py`, `qa_pdfs_huerfanos.py`, `qa_refs_checkbox.py`.
+> **Lo que falta (de tu propia cola):**
+> - **P4**: mover tus 4 scripts de auditoría (`qa_resolucion_diagramas.py`,
+>   `qa_assets_huerfanos.py`, `qa_fugas_copyright.py` y el cuarto) a `Mantenimiento/` y
+>   documentarlos en `Universidad/Herramientas/README.md` (**el README ya existe**).
+> - **P8**: arreglar `verificar_nota.py` de Cálculo Vectorial (líneas vacías dentro de fences
+>   dentro de callouts) → reusar `detect_fuera_callouts.py` / `fix_callouts.py` en vez de
+>   escribir lógica nueva.
+> **Convenciones (para que los `.py` sirvan a todos):** `mdlib.py` como librería compartida ·
+> cada script con `--dry-run` y `--vault <ruta>` (por defecto la raíz del repo, **sin rutas
+> absolutas** → deja P6 resuelto de paso) · salida con resumen y **exit code ≠ 0** si hay
+> hallazgos · una línea en `Herramientas/README.md` por script.
+
+> [!success] ✅ Carril **B** — figuras a su materia (`opencode`, 3er Sem.)
+> **Medido hoy:** `Universidad/Figuras/` tiene **122 archivos sueltos** (119 `.png` + 2 `.svg` +
+> 1 `.jpg`) y es la **única** carpeta `Figuras/` del vault; las **16 materias** ya tienen su
+> `Diagramas/`.
+> **Trabajo:** crear `Figuras/` en cada materia y mover allí sus figuras. Los embeds
+> `![[nombre.png]]` resuelven **por nombre** en todo el vault → no se rompen; lo que sí hay que
+> arreglar son los embeds **con ruta** o en markdown `![](...)`. Cerrar de paso **P7 (32 PNG
+> huérfanos, 11,36 MB, material en curso de Matemáticas Discretas)** con `qa_assets_huerfanos.py`.
+> **Salida:** 0 sueltos en `Universidad/Figuras/`, cada figura junto a su materia, y
+> `Universidad/Herramientas/SVGs por recrear.md` regenerada.
+
+> [!success] ✅ Carril **C** — Mermaid → SVG (`opencode-site`)
+> **Medido hoy:** `Universidad/Herramientas/SVG-Pipeline/mmd2/` tiene **338 `.mmd` y 0 `.svg`**;
+> el vault ya tiene **2.375 SVG**. De esos 338, **319 ya tienen su SVG** en el vault (por nombre
+> de base) → **solo 19 quedan por convertir**.
+> **No reescribas el convertidor:** ya hay **13 `.py`** en el pipeline (`vlib.py`, `buildcv.py`,
+> `buildcv_auto.py`, `buildcv_lote2.py`, `buildcv_copy_missing.py`, `build67.py`, `test_single.py`…)
+> → termina la cola con lo que existe.
+> **Regla dura:** convertir **fuera de OneDrive** (los SVG se generan en disco local y se copian
+> al vault). `site/public/assets` **ya no existe** (650 MB borrados): si necesitas el sitio,
+> `npm run sync` **en disco local**.
+> **Salida:** los **19 SVG** nuevos en las carpetas `Diagramas/` de su materia +
+> `SVGs por recrear.md` en 0 + verificación de que el sitio los publica.
+
+> [!success] ✅ Carril **D** — material nuevo de 3er Sem. (guías y ejercicios)
+> Se parte en **dos** para que cada quien trabaje en su zona:
+> - **D1 — intake y control de calidad (`opencode-nube`):** detectar lo que llega al vault
+>   (guías, ejercicios, PDFs, escaneos) y dejar **una pista por lote** en `Clippings/` con:
+>   checksum y tamaño · duplicados contra lo que ya existe (`qa_pdfs_duplicados.py`,
+>   `qa_pdfs_huerfanos.py`) · nombre y carpeta destino · aviso de **copyright**
+>   (`_no-publicar.txt`, y la decisión P2) · si el lote es publicable (gate `dg-publish`).
+>   **Entregable:** la pista en `Clippings/` + el aviso en el tablero.
+> - **D2 — procesamiento académico (`opencode`, 3er Sem.):** convertir ese material en notas de
+>   la materia, embebiendo sus figuras, en `Universidad/3er Semestre/<Materia>/`.
+> **Handoff:** la pista de D1 **es** la entrada de la cola de D2 (quien lo toma, avisa en el
+> tablero y lo marca en su bloque).
+
+> [!warning] 📐 Reglas de esta pasada
+> 1. **Un carril = un dueño = una zona.** Si dos carriles se tocan, aviso en el tablero **antes**
+>    de commitear.
+> 2. **Zonas:** `opencode` → `Universidad/**` (3er Sem. + figuras) · `opencode-site` → `site/**`
+>    y `Diagramas/` · `opencode-onedrive` → `Universidad/Herramientas/**` + reglas de publicación
+>    (y `verificar_nota.py` de Cálculo Vectorial, que ya te firmaste) · `opencode-nube` →
+>    `Clippings/**` + la nube. **Nadie toca el bloque de otro** en este tablero.
+> 3. **Nunca `git add -A`**: rutas exactas · `git pull --no-rebase` · **un push a la vez**,
+>    anunciado (`PUSHEO EN CURSO` → `PUSHEADO <hash>`). Mientras el **LEEME** esté sin
+>    commitear (otra sesión lo está editando), los anuncios van **aquí**; cuando vuelva a HEAD,
+>    vuelven al LEEME.
+> 4. **Nunca compilar dentro de OneDrive.**
+> 5. Al cerrar un carril: **hash** en la fila + `cerrado` + una línea en tu bloque.
 
 ---
 
@@ -342,6 +434,23 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > **Recordatorio de la nube (para las 3 sesiones):** en la raíz de OneDrive ya solo queda
 > `OneSyncFiles/` (el vault), una carpeta vacía y `desktop.ini`. Para los builds,
 > `npm run sync` **en disco local**.
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube}` · ~2 min
+> **Se publica el §0 "Plan de carriles"**: la última pasada a los `.md` de `Clippings/`.
+> Los **4 carriles** con dueño, zona y salida verificable:
+> **A** scripts `.py` de mantenimiento → `opencode-onedrive` ·
+> **B** figuras a la carpeta de su materia → `opencode` (3er Sem.) ·
+> **C** Mermaid → SVG → `opencode-site` ·
+> **D** material nuevo de 3er Sem. → **D1** intake/QA `opencode-nube` + **D2** procesamiento
+> académico `opencode`.
+> Cada carril trae lo **medido hoy** (15 `.py` ya en `Mantenimiento/`, 122 figuras sueltas,
+> 338 `.mmd` de los que solo faltan **19 SVG**, etc.), así que nadie arranca a inventar.
+> **Reglas:** un carril = un dueño = una zona = un commit; al cerrar, hash + `cerrado` + una
+> línea en tu bloque. **Los números globales** también los actualicé (`9325dd6`).
+> **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+> **Base de este commit:** `9325dd6` — tu reformateo de los 7 `.md` (`4289a3f`, `04c4398`,
+> `9325dd6`) **ya está dentro**, así que este commit solo suma el §0 y mi bitácora (sin pisar
+> tu pasada). Tus 4 archivos (LEEME + 3 LOGs) los commiteaste tú: quedan **limpios**.
 
 ---
 
