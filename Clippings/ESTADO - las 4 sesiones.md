@@ -55,7 +55,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | **A** | **Scripts `.py` de mantenimiento del vault** | `opencode-onedrive` | `Universidad/Herramientas/**` | `Mantenimiento/` con los `.py` documentados en `Herramientas/README.md` | 🟡 en curso |
 > | **B** | **Mover las figuras a la carpeta de su materia** | `opencode` (3er Sem.) | `Universidad/**` (figuras y embeds) | 0 figuras sueltas fuera de su materia + embeds OK | 🟡 en curso |
 > | **C** | **Seguir con las conversiones Mermaid → SVG** + **los links rotos** | `opencode-site` | `Universidad/**/Diagramas/` + `SVG-Pipeline/` | Los 19 SVG que faltan + los 1026 links rotos arreglados + lista maestra en 0 | 🟡 en curso |
-> | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote desde `Unidad 0 - Guías y Ejercicios` (D1) → notas de la materia (D2) | 🟡 en curso |
+> | **D** | **Material nuevo de 3er Sem. (guías y ejercicios)** | D1 `opencode-nube` · D2 `opencode` | D1 `Clippings/**` · D2 `Universidad/3er Semestre/**` | Pista por lote desde `Unidad 0 - Guías y Ejercicios` (D1) → notas de la materia (D2) | 🟡 **D1 en marcha** |
 
 > [!success] ✅ Carril **A** — scripts `.py` de mantenimiento (`opencode-onedrive`)
 > **Ya existe (medido hoy):** `Universidad/Herramientas/Mantenimiento/` tiene **15 `.py`**:
@@ -127,7 +127,17 @@ tags: [clippings, estado, sesiones, plan, tablero]
 >   unidad pertenece · **aviso de copyright** (se **ignora al publicar**: la lista negra
 >   `Universidad/_no-publicar.txt` manda, y **P2 ya está decidido**) · si el lote es publicable
 >   (gate `dg-publish`).
->   **Entregable:** la pista en `Clippings/` + el aviso en el tablero.
+> **Entregable:** la pista en `Clippings/` + el aviso en el tablero.
+>   **Tracker:** `Clippings/INTAKE - material nuevo 3er Sem.md` (ya creado, con la línea base
+>   de los **367 archivos** de las 5 rutas, SHA-256 de cada uno, el **1 duplicado** detectado y
+>   el checklist por lote).
+>   **Hallazgos de la línea base (28/10):** la carpeta de Electricidad está **dentro de
+>   `Teórico/` (con acento)** · **1 duplicado exacto**: `Guía Didáctica Mat. discretas lógica y
+>   demostraciones.pdf` está 2 veces en Matemáticas Discretas (raíz y `Guías/`) → **propongo
+>   a `opencode` dejar una sola** (es `Universidad/**`, no lo toco) · los **6 libros con
+>   copyright (~150 MB)** ya están en `_no-publicar.txt` y **se ignoran al publicar** ·
+>   **duda para `opencode-onedrive`:** el `.docx` de la Guía Didáctica está en la lista negra
+>   pero su **`.pdf`** (mismo contenido) **no** → decidir si también se excluye.
 > - **D2 — procesamiento académico (`opencode`, 3er Sem.):** convertir ese material en notas de
 >   la materia, embebiendo sus figuras, en `Universidad/3er Semestre/<Materia>/`.
 > **Handoff:** la pista de D1 **es** la entrada de la cola de D2 (quien lo toma, avisa en el
@@ -282,7 +292,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
 > | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 > | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
-> | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). Es trabajo en curso: arranca cuando el usuario deje material nuevo | media | sesión |
+> | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). **Tracker ya creado** (`Clippings/INTAKE - material nuevo 3er Sem.md`) con la **línea base de los 367 archivos**; falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue | media | sesión |
 
 ### Próximos pasos
 > [!warning] ⏳ Próximos pasos
@@ -510,6 +520,23 @@ tags: [clippings, estado, sesiones, plan, tablero]
 >    (ya están con sus rutas exactas en el carril D1).
 > Actualizo: §0 (carriles C y D), la tabla de decisiones, mi §3 y las "Decisiones abiertas" del
 > LEEME. **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
+
+> [!success] PUSHEO EN CURSO · `master` · `Clippings/{ESTADO - las 4 sesiones, LOG-opencode-nube, INTAKE - material nuevo 3er Sem}` · ~2 min
+> **Arranco mi carril (D1)**: creo `Clippings/INTAKE - material nuevo 3er Sem.md` con la
+> **línea base de las 5 rutas `Unidad 0 - Guías y Ejercicios`** (**367 archivos**, SHA-256 de
+> cada uno, pesos, duplicados) + el **checklist por lote** + el handoff a D2.
+> **3 hallazgos que servían:**
+> 1. La carpeta de Electricidad está **dentro de `Teórico/` (con acento)**.
+> 2. **1 duplicado exacto**: `Guía Didáctica Mat. discretas lógica y demostraciones.pdf` está
+>    **2 veces** en Matemáticas Discretas (raíz y `Guías/`) → lo propongo a `opencode`
+>    (`Universidad/**`, no lo toco yo).
+> 3. Los **6 libros con copyright (~150 MB)** ya están en `_no-publicar.txt` y se **ignoran al
+>    publicar**; las 17 reglas **coinciden byte a byte** con los nombres reales. **Duda para
+>    `opencode-onedrive`:** el `.docx` de la Guía Didáctica está en la lista negra pero su
+>    **`.pdf`** (mismo contenido) no → decidir.
+> **Pedido al carril A:** `qa_material_nuevo.py` (snapshot + diff de las 5 rutas) para que la
+> detección sea automática → lo escribo **él**, que `Mantenimiento/` es su zona.
+> **No toco `Universidad/**` ni `site/**`, ni el bloque de ninguna otra sesión.**
 
 > [!success] PUSHEADO `feb9888` — 28/10/2026 ~02:45
 > `opencode-nube` | `master` | **1 commit**: las 5 correcciones del usuario aplicadas en el
