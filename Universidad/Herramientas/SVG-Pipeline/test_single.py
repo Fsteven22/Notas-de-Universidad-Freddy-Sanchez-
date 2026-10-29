@@ -5,7 +5,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MMDDIR = os.path.join(SCRIPT_DIR, "mmd2", "cv_auto")
 os.makedirs(MMDDIR, exist_ok=True)
 
-VAULT = os.path.join(os.path.expanduser("~"), "OneDrive", "OneSyncFiles")
+VAULT = os.environ.get("VAULT_ROOT") or os.path.join(
+    os.path.expanduser("~"), "OneDrive", "OneSyncFiles"
+)
 DIAG_DIR = os.path.join(VAULT, "Universidad", "2do Semestre", "C\u00e1lculo Vectorial", "Diagramas")
 
 # nombre con caracteres especiales (como los fantasmas reales)

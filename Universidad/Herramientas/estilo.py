@@ -35,10 +35,20 @@ def setup():
     })
 
 
+def _raiz_por_defecto():
+    """Deduce la raiz del vault desde la ubicacion de este script."""
+    aqui = os.path.dirname(os.path.abspath(__file__))
+    return os.path.dirname(os.path.dirname(aqui))  # Herramientas/ -> Universidad/ -> OneSyncFiles/
+
+
 def guardar(nombre, fig=None, carpeta=None):
     import os
     if carpeta is None:
-        carpeta = r"C:\Users\Steven Sànchez\OneDrive\OneSyncFiles\Universidad\Figuras"
+        carpeta = os.path.join(
+            os.environ.get("VAULT_ROOT") or _raiz_por_defecto(),
+            "Universidad",
+            "Figuras",
+        )
     os.makedirs(carpeta, exist_ok=True)
     (fig or plt).savefig(f"{carpeta}\\{nombre}", dpi=DPI, bbox_inches="tight")
     if fig is None:

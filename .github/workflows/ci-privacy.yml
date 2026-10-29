@@ -1,0 +1,33 @@
+﻿name: CI - privacidad (P3)
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  privacidad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias del site
+        run: npm ci
+        working-directory: site
+
+      - name: Sync vault (incluye verificación P3 de public/assets/)
+        run: VAULT_DIR=../Universidad npm run sync
+        working-directory: site
+
+      - name: Build site
+        run: npm run build
+        working-directory: site
+
+      - name: Verificar que nada de _no-publicar.txt llegó a public/ ni ZIPs
+        run: node scripts/ci-check-privado.mjs --vault ../Universidad
+        working-directory: site

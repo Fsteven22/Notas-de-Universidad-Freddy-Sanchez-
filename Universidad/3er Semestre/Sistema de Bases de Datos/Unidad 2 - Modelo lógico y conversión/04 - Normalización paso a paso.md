@@ -40,6 +40,7 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 > 4. **¿BCNF?** Chequea si **todo determinante es clave candidata**. Si algún determinante no-clave sobrevive, parte una vez más.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-04-01-flow.svg]]
+> ![[Figuras/bd-s04-p12.png]]
 
 > [!tip] 🎯 Regla de Oro: el Determinante Nunca Abandona
 >
@@ -68,6 +69,7 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 > **Caso `MATRICULA(cod_estud, cod_curso, nomb_estud, nomb_curso, creditos, cod_instructor, nomb_instructor, nota_final)`:**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas draw.io/u2-04-02-graph.svg]]
+> ![[Figuras/bd-023-p15.png]]
 
 ---
 

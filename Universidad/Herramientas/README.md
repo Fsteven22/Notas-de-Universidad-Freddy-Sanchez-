@@ -45,9 +45,16 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `qa_links.py` | (base) | Verificador NFC/NFD-safe de todos los wikilinks. |
 | `pdf_a_texto.py` | (base) | PDF→txt + inventario vía PyMuPDF. |
 | `mdlib.py` | (lib) | walk_notes/load/save/report/callout — utilidades compartidas. |
+| `qa_all.py` | (entry) | Punto de entrada unico: ejecuta los 4 QA de arriba en orden y agrega codigos de salida. |
+| `qa_assets_huerfanos.py` | (base) | Assets del vault (SVG/PNG/PDF/…) que ninguna nota publica referencia. Identifica material huerfano que ocupa cuota. |
+| `qa_resolucion_diagramas.py` | (base) | Embeds de diagrama/asset (`![[Diagramas/…]]`) que no resuelven a un archivo real. |
+| `qa_fugas_copyright.py` | (base) | Archivos listados en `_no-publicar.txt` (o variantes `_OCR`) que aparecen en `site/public/assets/`. Red de seguridad contra fugas de copyright. |
+| `qa_svg_titulo.py` | (base) | SVGs con titulos placeholder genericos (`flowchartTitleText`) que nunca se les asigno uno real. |
 
 Cifras del dry-run (2026-10): pegados=204 (90 notas), dispersos=0, anidados=62 (20 notas),
 links BAD=1989 (con sugerencias), matemática=893 candidatos, fuera-de-callout=229 bloques.
+
+Entrada unica: `py Universidad/Herramientas/Mantenimiento/qa_all.py --vault <raiz_vault>` ejecuta los 4 QA en orden.
 
 Los scripts que deducen la raíz del vault la calculan desde su propia ubicación (`Universidad/Herramientas/Mantenimiento/` → 3 niveles arriba). Si se mueven de carpeta, hay que ajustar ese cálculo.
 

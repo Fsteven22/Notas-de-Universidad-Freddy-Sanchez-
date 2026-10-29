@@ -512,7 +512,33 @@ Sitemap: ${SITE_URL}/sitemap.xml`;
   if (omitidas.length) {
     for (const o of omitidas) console.log(`  · omitida: ${o.sem}/${o.mat}/${o.rel}`);
   }
+  // ── P3: red de seguridad — verificar que ningún archivo listado en
+  //      _no-publicar.txt terminó publicado en public/assets/
+  async function verificarNoPublicados() {
+    async function walkAssets(dir, relBase = "") {
+      let encontrados = [];
+      for (const entry of await readdir(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name);
+        const rel = relBase ? `${relBase}/${entry.name}` : entry.name;
+        if (entry.isDirectory()) {
+          encontrados = [...encontrados, ...await walkAssets(full, rel)];
+        } else if (esPrivado(entry.name, rel)) {
+          encontrados.push(rel);
+        }
+      }
+      return encontrados;
+    }
+
+    const fugas = await walkAssets(OUT_ASSETS);
+    if (fugas.length) {
+      console.error("P3 FUGA: archivos excluidos encontrados en public/assets/:");
+      for (const f of fugas) console.error(`  · ${f}`);
+      throw new Error(`P3: ${fugas.length} archivo(s) de _no-publicar.txt llegó a public/assets/`);
+    }
+  }
+
   if (patronesNP.length) {
+    await verificarNoPublicados();
     console.log(`✓ _no-publicar.txt: ${patronesNP.length} patrones · ${privadosVistos.size} archivos excluidos`);
     for (const p of privadosVistos) console.log(`  · no publicado: ${p}`);
   }

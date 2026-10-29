@@ -1640,7 +1640,12 @@ dg-publish: true
 > - [[Geofísica]] - Coordenadas geográficas
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas
 > - [[Gráficos por Computadora]] - Mapeo de texturas
-
+> 
+> 
+> 
+> 
+> 
+> 
 ## 💡 Consejos de Estudio
 > 
 > [!tip] 🧠 Estrategias de Aprendizaje
