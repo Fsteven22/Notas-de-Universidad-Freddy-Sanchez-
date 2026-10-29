@@ -914,4 +914,3 @@ dg-publish: true
 ---
 
 **Tags:** #cálculo-vectorial #campos-conservativos #criterios #conservatividad #rotacional #gradiente #función-potencial #R2 #R3 #derivadas-cruzadas #teoremas #mermaid #diagramas
-```

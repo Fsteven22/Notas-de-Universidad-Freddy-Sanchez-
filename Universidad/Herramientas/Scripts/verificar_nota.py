@@ -155,8 +155,11 @@ def main() -> int:
     for i, l in enumerate(L):
         n = i + 1
         if inside[i]:
-            # vacios solo rompen dentro de callouts; a nivel superior son legibles
-            if quoted_fence[i] and (l == "" or l.strip() in (">", "> >")):
+            # solo una linea VACIA sin prefijo ">" rompe el callout dentro de un fence.
+            # "> " y ">" son la convención del vault (separadores de linea dentro del bloque
+            # de codigo) y no rompen el render: se valido con remark-parse y con el
+            # catalogo de errores (variantes A y B del test de fences).
+            if quoted_fence[i] and l == "":
                 rep(f"L{n}: linea vacia/suelta DENTRO de fence en callout (corta el quote o sale literal)")
             continue
         # 3. blank-line disease: empty strictly inside a quote run, EXCEPT

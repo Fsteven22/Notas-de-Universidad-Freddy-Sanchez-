@@ -479,13 +479,13 @@ dg-publish: true
 > |**Cálculo**|Suma de segundas derivadas|Componente a componente|
 > |**Interpretación**|Curvatura promedio|Difusión vectorial|
 > |**Ecuaciones**|Laplace, calor|Navier-Stokes, Maxwell|
-
+> 
 ---
-
+> 
 ## 🎓 Conexión con Integrales de Línea
-
+> 
 ### 🛤️ Teoremas Fundamentales
-
+> 
 > [!success] 🌉 Puente entre Derivadas e Integrales
 > 
 > **Visión unificada:**
@@ -549,11 +549,11 @@ dg-publish: true
 > **Preparación para integrales de línea:**
 > 
 > ![[Diagramas/02_-_Operador_nabla_y_sus_propiedades_10.svg]]
-
+> 
 ---
-
+> 
 ## 📋 Tabla Resumen de Propiedades
-
+> 
 > [!note] 📊 Guía de Referencia Rápida
 > 
 > ### Operaciones Básicas
@@ -600,11 +600,11 @@ dg-publish: true
 > |**Solenoidal**|∇·F̄ = 0|F̄ = ∇×Ḡ|Campo magnético|
 > |**Armónico**|∇²f = 0|Promedio local|Temperatura estable|
 > |**Irrotacional**|∇×F̄ = 0̄|Sin circulación|Flujo sin remolinos|
-
+> 
 ---
-
+> 
 ## 🎯 Ejercicios Resueltos
-
+> 
 > [!example] 💪 Práctica con Ejemplos Detallados
 > 
 > **Nivel Básico:**
@@ -753,7 +753,6 @@ dg-publish: true
 > = (0-0, 0-0, 0-0) = (0, 0, 0)
 > 
 > Verificación: (0,0,0) = (0,0,0) ✓
-> ```
 
 ---
 

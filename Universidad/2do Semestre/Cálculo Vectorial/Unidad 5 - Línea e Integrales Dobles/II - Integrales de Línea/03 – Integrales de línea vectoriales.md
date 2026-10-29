@@ -526,13 +526,13 @@ dg-publish: true
 > | Ida y vuelta por mismo camino | $\int_{C} + \int_{-C} = 0$ |
 > | Campo conservativo | Integral independiente de dirección entre puntos |
 > ```
-
+> 
 ---
-
+> 
 ## 🌟 Campos Conservativos
-
+> 
 ### 🎯 Definición y Caracterización
-
+> 
 > [!success] ⚡ Campos Especiales
 > 
 > **Definición:**
@@ -597,9 +597,9 @@ dg-publish: true
 > |$\langle -y, x \rangle$|Rotacional (circula)|
 > |$\langle y^2, 2xy+1 \rangle$|No cumple criterio|
 > |Campo magnético|Tiene circulación|
-
+> 
 ### 🔍 Criterio de Campo Conservativo
-
+> 
 > [!tip] ✅ ¿Cómo Verificar si es Conservativo?
 > 
 > **Teorema (Criterio necesario):**
@@ -656,9 +656,9 @@ dg-publish: true
 > 
 > ES conservativo
 > ```
-
+> 
 ### 🔨 Encontrar la Función Potencial
-
+> 
 > [!example] 🎯 Método de Integración
 > 
 > **Proceso para encontrar $f$ tal que $\nabla f = \mathbf{F}$:**
@@ -752,9 +752,9 @@ dg-publish: true
 > Verificación:
 > ∇f = ⟨yz, xz, xy⟩ = F ✓
 > ```
-
+> 
 ### 📐 Teorema Fundamental para Integrales de Línea
-
+> 
 > [!note] 🎓 Análogo del TFC
 > 
 > **Teorema Fundamental para Integrales de Línea:**
@@ -811,13 +811,13 @@ dg-publish: true
 > 
 > Total: 6 + 5 = 11 ✓
 > ```
-
+> 
 ---
-
+> 
 ## 🎨 Teorema de Green
-
+> 
 ### 🌊 Enunciado y Significado
-
+> 
 > [!success] 🔄 Conectando Línea con Doble
 > 
 > **Teorema de Green:**
@@ -865,9 +865,9 @@ dg-publish: true
 > $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k} , dA$$
 > 
 > donde $\nabla \times \mathbf{F} = \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)\mathbf{k}$ en 2D.
-
+> 
 ### 💡 Aplicaciones del Teorema de Green
-
+> 
 > [!example] 🎯 Uso Práctico
 > 
 > **Aplicación 1: Simplificar integrales de línea**
@@ -939,9 +939,9 @@ dg-publish: true
 > 
 > para toda curva cerrada C en D.
 > ```
-
+> 
 ### 🔨 Ejemplos Detallados con Green
-
+> 
 > [!example] 📊 Casos Completos
 > 
 > **Ejemplo 1: Integral alrededor de triángulo**
@@ -1036,15 +1036,15 @@ dg-publish: true
 > 
 > Área: 3πa²/8
 > ```
-
+> 
 ---
-
+> 
 ## 📊 Resumen Visual Completo
-
+> 
 ### Diagrama de Flujo General
-
+> 
 ![[Diagramas/03_–_Integrales_de_línea_vectoriales_06.svg]]
-
+> 
 > [!note] 📋 Tablas de Referencia Rápida
 > 
 > ### Fórmulas Principales
@@ -1093,11 +1093,11 @@ dg-publish: true
 > - [ ] Calcular ∂Q/∂x - ∂P/∂y
 > - [ ] Plantear integral doble sobre D
 > - [ ] Evaluar integral doble
-
+> 
 ---
-
+> 
 ## 🎓 Ejercicios Progresivos
-
+> 
 > [!example] 💪 Práctica con Soluciones Detalladas
 > 
 > **Nivel Básico:**
@@ -1258,7 +1258,6 @@ dg-publish: true
 > 
 > Nota: Este campo tiene circulación no nula
 > alrededor del origen (singularidad)
-> ```
 
 ---
 

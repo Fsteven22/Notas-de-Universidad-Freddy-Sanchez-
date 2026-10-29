@@ -654,9 +654,9 @@ dg-publish: true
 > |⟨1, 0⟩|Rectas horizontales|Uniforme|
 > |⟨y, x⟩|Hipérbolas xy = c|Silla|
 > |⟨-y, x⟩/(x²+y²)|Espirales|Vórtice|
-
+> 
 ### ⚡ Campos Conservativos
-
+> 
 > [!success] 🎯 Campos con Función Potencial
 > 
 > **Definición:**
@@ -762,13 +762,13 @@ dg-publish: true
 > 
 > Conservan energía mecánica total
 > ```
-
+> 
 ---
-
+> 
 ## 📊 Aplicaciones y Problemas
-
+> 
 ### 🌡️ Problema 1: Temperatura y Gradiente
-
+> 
 > [!example] 🎯 Campo Escalar de Temperatura
 > 
 > **Enunciado:**
@@ -836,9 +836,9 @@ dg-publish: true
 > **Visualización:**
 > 
 > ![[Diagramas/04_–_Funciones_vectoriales_de_variable_vectorial_07.svg]]
-
+> 
 ### 🌊 Problema 2: Campo de Velocidades
-
+> 
 > [!example] 💨 Flujo de Fluido
 > 
 > **Enunciado:**
@@ -921,9 +921,9 @@ dg-publish: true
 > En (1, 1): φ = 1·1² = 1
 > Línea: xy² = 1
 > ```
-
+> 
 ### ⚡ Problema 3: Campo Electromagnético
-
+> 
 > [!example] 🔌 Campo Eléctrico
 > 
 > **Enunciado:**
@@ -1008,11 +1008,11 @@ dg-publish: true
 > 
 > Esto es la Ley de Gauss en forma diferencial
 > ```
-
+> 
 ---
-
+> 
 ## 🎓 Ejercicios Propuestos
-
+> 
 > [!note] 💪 Problemas para Practicar
 > 
 > ### Nivel Básico
@@ -1133,7 +1133,6 @@ dg-publish: true
 > b) Calcule rot B
 > c) ¿Es conservativo?
 > d) Encuentre las líneas de campo
-> ```
 
 ---
 
