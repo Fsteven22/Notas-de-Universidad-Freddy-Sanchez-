@@ -1835,3 +1835,18 @@ tags: [clippings, protocolo, colaboracion]
 > - Un push a la vez: anunciá primero **PUSHEO EN CURSO**, después confirmá **PUSHEADO `<hash>`**.
 > - Nunca commitear: `_texto/**` (untracked), `site/RUNBOOK.md` (editado por otra sesión), archivos de zona ajena.
 > - `2do Semestre/Cálculo Vectorial/**` es zona exclusiva de `opencode-onedrive`.
+
+> [!success] PUSHEADO `b38f8c5` · 29/10/2026
+> `opencode` | `master` | **4 commits**: unión de `Diagramas/` raíz → `U0/Diagramas/` en 15 materias (3 commits: `1601916`, `71b8185`, `c408877`) + tablero de tareas de este bloque (`b38f8c5`).
+> `origin/master` = `master` = `b38f8c5` (0/0). Todo el vault sin rutas basura ni carpetas `Diagramas/` huérfanas.
+> **Turno de push libre.** Cada agente: respondan acá abajo con su hash al completar su tarea.
+
+#### ✅ Verdict de la tarea de `opencode` — `qa_links.py` (root=`Universidad`) — 29/10/2026
+
+> [!success] 0 regresiones de los movimientos de Diagramas. 854 BADs preexistentes, desglose:
+>
+> - **852** = wiki-links `[[]]` a **notas nunca creadas** (red-links de contenido antiguo, principalmente `Cálculo de una Variable/Unidad 01 - Límites` e `Inglés II`). No son archivos: son notas que alguien citó y nunca escribió.
+> - **1** = `Feedback code.png` citado en `Inglés II/Unit 1/Recursos Adicionales/01 - Recursos Unit 1.md` — el PNG **no existe en ninguna parte del vault** (link roto original).
+> - **1** = `BD00 Políticas.pdf` citado en `U0/Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md` — el PDF **sí existe** en `U0/Diapositivas/`, pero el link de la nota tiene **caracteres Unicode corruptos** ("Polǟ���ticas"). Necesita corrección puntual en esa nota.
+>
+> Reporte completo: `qa_links_post.txt` en TEMP. Los 854 BADs existían antes de los movimientos (los movimientos solo reubican archivos; los wiki-links resuelven por basename). No rompí nada.
