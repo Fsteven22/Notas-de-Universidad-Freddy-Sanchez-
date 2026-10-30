@@ -213,8 +213,33 @@ tags: [clippings, log, opencode-site]
 > - **`Universidad/Herramientas/SVGs por recrear.md` en 0** (0 embeds de imagen rotos).
 > - **554 targets restantes** (825 ocurrencias) → `Clippings/PROPUESTAS - links rotos (carril C).md` (180 aproximado, 374 sin-destino).
 > - **8 mindmaps `com-u*-graph.svg`** de Comunicación reportados como limpieza pendiente (rotos, no embebidos en ninguna nota).
+> - **554 targets** (825 ocurrencias) → `Clippings/PROPUESTAS - links rotos (carril C).md`; los **180 aproximados** → `Clippings/REPORTE - links aproximados (carril C).md` (acción propuesta `REDIRIGIR` / `REVISAR`), esperando revisión del usuario.
+> - **CI anti-fuga (P3):** lo implementó `opencode-onedrive` (`ci-privacy.yml` + `ci-check-privado.mjs`). Mi workflow duplicado quedó **revertido** (`44bdf1d`).
+> - **`_privado/` (P4): descartado** — la lista negra `_no-publicar.txt` (17 patrones) ya excluye el material con copyright al publicar.
 >
-> Próximo: anunciar `PUSHEO EN CURSO` → pushear commit de cierre → `PUSHEADO <hash>`.
+> ### Fix CRCRLF — nota que había dejado de publicarse (29/10/2026)
+>
+> - **Síntoma:** el sync bajó de **806 a 805 notas publicadas** y `02 - Representación gráfica.md` apareció en la lista de omitidas, aunque su frontmatter sí declara `dg-publish: true`.
+> - **Causa:** el archivo tenía **160 líneas con `
+
+`** (CR duplicado). El regex de frontmatter de `site/scripts/sync-vault.mjs:68` (`/^---\r?\n([\s\S]*?)\r?\n---/`) no matcheaba → la nota se trata como "sin dg-publish" → **omitida del sitio**. Consecuencia extra: el archivo se leía como **327 líneas** en vez de 167 (160 líneas vacías espurias).
+> - **Fix:** solo los bytes de fin de línea (`
+
+` → `
+`). **0 palabras cambiadas**, verificado con `HEAD` sin los `
+` extra == archivo corregido. Blob resultante: 100% LF (167 líneas), coherente con `.gitattributes` (`*.md text eol=lf`).
+> - **Barrido del vault:** **1 solo `.md` afectado**. Los 42 archivos no-texto con `
+
+` son **PDF/WMV** (binario, falsos positivos).
+> - **Resultado:** vuelve a **806 notas publicadas · 2820 assets · 8 omitidas · 17 patrones / 59 archivos excluidos**.
+> - **Zona:** el archivo es de Preuniversitario (zona compartida / carril B) → **avisado en el LEEME** para `opencode`. No toco el bloque de otra sesión.
+>
+> ### Estado del sitio tras el merge (medido 29/10/2026)
+>
+> - **8 notas omitidas:** 1 de Física Mecánica (`Guías y Ejercicios (Prof. Zambrano).md`) · 2 libros de Inglés III · **5 `Recursos visuales.md` de 3er Semestre que nacieron sin `dg-publish: true`** (zona `opencode` / `opencode-nube` → decisión del usuario).
+> - Las 5 son las nuevas del carril D1 (`opencode-nube`, commit `509769a`): son índice de recursos con links verificados, probablemente publicables, pero **no las toco** (no son mi zona).
+> - **Deploy:** falta verificar en `neonotes-espol.vercel.app` cuando Vercel termine con este contenido.
+> - **Dominio `neonotes.vercel.app`:** confirmado con el usuario que **no existe en su panel de Vercel** (solo `neonotes-espol.vercel.app` y `notas-de-universidad-freddy-sanchez.vercel.app` → 307). El 308 por host de `site/vercel.json` queda como **protección pasiva**; **no requiere ninguna acción del usuario**. El paso de panel queda **cerrado**.
 
 ---
 **Tags:** #clippings #log #opencode-site

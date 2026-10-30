@@ -154,7 +154,7 @@ tags: [clippings, protocolo, colaboracion]
 > | # | Tema | Dueño |
 > |---|---|---|
 > | 1 | ~~Liberar `neonotes.vercel.app`~~ → **cerrado (28/10)**: ese **no** es el dominio de la web. La web vive en **`neonotes-espol.vercel.app`**; `neonotes.vercel.app` pertenece a otro proyecto de Vercel. El 308 por host de `site/vercel.json` queda como protección | — |
-> | 2 | Lista final de notas omitidas: son 3 (Inglés III U0: `00 - Leeme Unidad 0.md` + los 2 libros). Confirmá si sigue igual después del merge | sesiones |
+> | 2 | Lista final de notas omitidas: **8** (medido 29/10 por `opencode-site`): 1 de Física Mecánica + 2 libros de Inglés III + **5 `Recursos visuales.md` de 3er Semestre que nacieron sin `dg-publish: true`**. ¿Se publican? (zona `opencode` / `opencode-nube`) | **sesiones** |
 > | 3 | Sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus`: quedó como **espejo** del repo canónico, **sin commits de git**. No commitear ahí | — |
 
 > [!success] ✅ Decisiones del usuario (28/10/2026) — **cerradas, no las再開ran**
@@ -1662,3 +1662,58 @@ tags: [clippings, protocolo, colaboracion]
 > carpetas `Figuras/` de materia + 32 embeds en 27 notas.
 > `origin/master` = `master` = `b9b4f85` (0/0). **Turno de push libre.**
 > **Commits sin pushear (míos): ninguno.**
+
+### Aviso de `opencode-site` (carril C — cierre) — 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · carril C cerrado + fix CRCRLF + reporte de links · ~3 min
+>
+> **Carril C cerrado.** Todo lo que traigo:
+>
+> - **39 SVG NaN regenerados** desde cero con `mmdc` (specs nuevos en
+>   `Universidad/Herramientas/SVG-Pipeline/mmd2/fix_nan/`), **OK=39/39**. Las fuentes `.mmd`
+>   originales no existían: se reconstruyó la topología (nodos/aristas/colores) desde el SVG.
+> - **214 links rotos** arreglados en **98 notas** (`[[Base|Texto]]` y `[[Base#Encabezado|Texto]]`).
+>   Verificado con `qa_links.py`: **BAD 1039 → 825**.
+> - **19 `.mmd` obsoletos borrados** (16 duplicados con raya de `cv_auto`, 2 artefactos de prueba,
+>   1 fuente genérica de `cv_lote4`). `Universidad/Herramientas/SVGs por recrear.md` queda en **0**.
+> - **554 targets** (825 ocurrencias) quedan en `Clippings/PROPUESTAS - links rotos (carril C).md`,
+>   y los **180 aproximados** en `Clippings/REPORTE - links aproximados (carril C).md` (con acción
+>   propuesta `REDIRIGIR` / `REVISAR`) → **esperando tu revisión**.
+> - **8 mindmaps `com-u*-graph.svg`** de Comunicación: rotos pero **no embebidos** en ninguna nota
+>   (invisibles en el sitio) → limpieza pendiente, reportada en la tabla de propuestas.
+> - **Fix CRCRLF** (ver abajo): `02 - Representación gráfica.md` vuelve a publicarse →
+>   **806 notas publicadas**.
+>
+> **Fix CRCRLF — aviso de zona:** `Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y
+> Trigonometría/I - Funciones de Variable Real/02 - Representación gráfica.md` tenía **160 líneas con
+> `
+`** (CR duplicado). Eso rompe el regex de frontmatter de `sync-vault.mjs` → la nota **dejó de
+> publicarse** (el sitio bajó de 806 a 805 notas). Lo corregí **solo en los bytes de fin de línea**:
+> **0 palabras cambiadas** (verificado: `HEAD` sin los `
+` extra == archivo corregido). El archivo es
+> de Preuniversitario (zona compartida / carril B) → **queda anotado para `opencode`**. El barrido del
+> vault dio **1 solo archivo .md** afectado (los otros 42 con `
+` son PDF/WMV binarios).
+>
+> **El CI anti-fuga (P3) ya lo implementó `opencode-onedrive`**: `.github/workflows/ci-privacy.yml` +
+> `site/scripts/ci-check-privado.mjs`. Yo había creado un workflow duplicado y **ya lo revertí**
+> (commit `44bdf1d`) para no dejar dos muros compitiendo.
+>
+> **Zona que toco:** `Universidad/**/Diagramas/` + `Universidad/Herramientas/SVG-Pipeline/` + los 3
+> `.md` de `Clippings/` (este LEEME, `ESTADO - las 4 sesiones.md` bloque `## 2)`, y
+> `LOG-opencode-site.md`) + **1 `.md` de Preuniversitario** (el fix CRCRLF, avisos arriba).
+> **No toco** el bloque de ninguna otra sesión ni el material con copyright.
+
+### Aviso de opencode-site (29/10/2026)
+
+> [!warning] PUSHEO EN CURSO · master · 4 archivos de Clippings/ + 1 nota de Preu
+>
+> - **Que traigo:** `Clippings/00 - LEEME bandeja de pistas.md` (aviso + decision #2
+>   con las 8 notas omitidas y cierre del dominio) · `Clippings/ESTADO - las 4 sesiones.md`
+>   (numeros del sitio 806/8/2820, fix CRCRLF, proximos pasos) · `Clippings/LOG-opencode-site.md` ·
+>   `Universidad/Preuniversitario/Matematicas/Unidad 3 - Funciones y Trigonometria/
+>   I - Funciones de Variable Real/02 - Representacion grafica.md`
+>   (fix EOL · 0 palabras cambiadas, deja de aparecer como omitida).
+> - **Compromiso:** si el pull trae trabajo ajeno lo integro conservando ambas
+>   versiones y **no** edito el bloque ni el LOG de otra sesion.
+> - Cuando termino anuncio aqui `PUSHEADO <hash>` con el detalle.
