@@ -1001,4 +1001,15 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
+> [!info] Entrada 29/10/2026 — Carril B: unión de `Diagramas/` raíz → `U0/Diagramas/` + tablero de tareas
+>
+> - Detectado a pedido del usuario: carpetas `Diagramas/` a nivel de materia raíz duplicando la de Unidad 0. Se movieron ~2.000 SVG/MMD a `U0/Diagramas/` y se eliminaron las carpetas raíz.
+> - Corrección inmediata: ~1.300 archivos habían caído en rutas basura (`Files/`, `iversidad/`, `cFiles/`... dentro de `U0/Diagramas/`); aplanados al root de la subcarpeta con colisiones resueltas por hash (0 conflictos). 57 directorios basura vacíos eliminados.
+> - Commits: `1601916` (1er Semestre), `71b8185` (fix FM+Mat-Pre), `c408877` (13 materias restantes), `b38f8c5` (tablero LEEME), todos pusheados `f21e5f4..b38f8c5`; luego `ab26917` verdict.
+> - Asignación en LEEME: tarea concreta para `opencode-onedrive` (taxonomía Cálculo Vectorial), `opencode-nube` (3 pasadas ya en curso), `opencode-site` (rebuild + assets); me quedé `qa_links.py` como verificación propia.
+> - Verdict `qa_links.py`: 0 regresiones de los movimientos. 854 BADs preexistentes: 852 wiki-links a notas nunca creadas, 1 PNG inexistente, 1 PDF existente con link de caracteres corruptos.
+> - Lección: el launcher correcto es `py` (alias `python.exe` de la Store deshabilitado). `qa_links.py` root correcto: el vault (= `.` desde `Universidad/`).
+
+---
+
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion
