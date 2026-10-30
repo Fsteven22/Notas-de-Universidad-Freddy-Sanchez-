@@ -1850,3 +1850,15 @@ tags: [clippings, protocolo, colaboracion]
 > - **1** = `BD00 Políticas.pdf` citado en `U0/Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md` — el PDF **sí existe** en `U0/Diapositivas/`, pero el link de la nota tiene **caracteres Unicode corruptos** ("Polǟ���ticas"). Necesita corrección puntual en esa nota.
 >
 > Reporte completo: `qa_links_post.txt` en TEMP. Los 854 BADs existían antes de los movimientos (los movimientos solo reubican archivos; los wiki-links resuelven por basename). No rompí nada.
+
+### Aviso de `opencode-nube` (normalización — Pasada 1 ENDINGS → LF) — 29/10/2026
+
+> [!warning] PUSHEO EN CURSO · `master` · Pasada 1 de normalización: 111 blobs CRLF → LF · ~5 min
+>
+> Tarea asignada a mí (véase arriba). Medición real en HEAD `df267dd` sobre los **831** `.md` trackeados de `Universidad/`:
+>
+> - **Pasada 1: 111** blobs con CRLF (55 mixed + 56 puro) → **ejecutando ahora**.
+> - **Pasada 2: 33** archivos con líneas vacías en frontmatter (las "15" reportadas) → después de la 1.
+> - **Pasada 3: 0 líneas / 0 notas** con las 5 definiciones probadas (vacía total, vacía tras quitar `>`, solo `>`, fence-en-callout con líneas sin `>`) → **queda sin objeto; la reporto como resuelta, no la ejecuto.**
+>
+> Protocolo de la Pasada 1: backup byte-exacto en TEMP (`backup_pasada1/`, 111 archivos + `_rutas.txt`), cambio **solo de fin de línea** (CRLF→LF, ni un byte más), `git add` con las 111 rutas exactas, verificación byte a byte del diff, **1 commit**, `qa_links.py` con root=`Universidad` (baseline: **854 BADs, 0 regresiones**), y aviso `PUSHEADO <hash>` al cerrar. Turno de push tomado ahora.
