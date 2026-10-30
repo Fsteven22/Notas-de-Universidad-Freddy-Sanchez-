@@ -16,7 +16,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - `master` = `origin/master` = **`9325dd6`**, 0 conflictos, 0 ramas pendientes de integrar. Working tree **limpio** tras la reformulación a callouts de los 7 `.md` de `Clippings/` (`4289a3f` → `9325dd6`).
 > - **Plan de carriles (esta tabla es la cola real):** §0 "🚦 Plan de carriles" — A (scripts `.py`) · B (figuras) · C (Mermaid→SVG + **los 1026 links rotos**) · D (material nuevo 3er Sem.). Cada carril tiene dueño, zona y salida verificable.
 > - **Decisiones del usuario cerradas (28/10):** copyright → **se ignora al publicar** (lista negra `_no-publicar.txt`, sin lista blanca ni `_privado/`) · **1026 links rotos** → al carril C · web en **`neonotes-espol.vercel.app`** (`neonotes.vercel.app` es de otro proyecto) · **teléfono → no aplica** (era AutoSync con la institucional, migración cancelada) · **papelera ya vaciada** · material nuevo en las carpetas **`Unidad 0 - Guías y Ejercicios`** de cada materia de 3er Sem.
-> - Sitio: **806 notas publicadas · 8 omitidas · 2820 assets referenciados · 17 patrones / 59 archivos excluidos** (medido 29/10 por `opencode-site`).
+> - Sitio: **794 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos** (medido 29/10 tras integrar la reestructuracion Unidad 0 del carril B; `opencode-site`).
 > - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.975 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build, 28/10 00:30) y el `.git/` huérfano de la raíz (23 MB, 28/10 01:00, **con respaldo local**). La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: solo queda `.obsidian/` (162 MB) en la nube.
 > - **Verificado por `opencode` (17:40)** y luego **eliminado por decisión del usuario (18:20)**: la copia institucional era un **clon git íntegro** (`Universidad/` 1.110 MB con 818 `.md`, `.git/` 658 MB, `master` 0/0 con `origin`, árbol limpio). **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
@@ -249,9 +249,12 @@ tags: [clippings, estado, sesiones, plan, tablero]
 >
 > [!success] ✅ Fix CRCRLF (esta sesión) — nota que había dejado de publicarse
 > - `Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/02 - Representación gráfica.md`: **160 líneas con `
+
 `** (CR duplicado) → frontmatter inválido → el regex de `sync-vault.mjs` no matcheaba → **la nota no se publicaba** (el sitio bajó de 806 a 805 notas).
-> - Fix **solo de bytes de fin de línea**: **0 palabras cambiadas** (verificado: `HEAD` sin los `` extra == archivo corregido). Vuelve a **806 notas publicadas** · 2820 assets.
+> - Fix **solo de bytes de fin de línea**: **0 palabras cambiadas** (verificado: `HEAD` sin los `
+` extra == archivo corregido). Vuelve a **806 notas publicadas** · 2820 assets.
 > - Barrido del vault: **1 solo `.md` afectado**. Los otros 42 archivos con `
+
 ` son **PDF/WMV binarios** (falsos positivos).
 > - **Zona:** Preuniversitario es compartida (carril B) → avisado en el LEEME para `opencode`.
 >
@@ -267,7 +270,8 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > 4. **Cerrar los 554 targets**: 180 aproximados (en revisión) + **374 `sin-destino`** → Crear nota o neutralizar (quitar `[[ ]]`).
 > 5. Avisarte el paso del panel del dominio (#1) y dejar la verificación documentada en el LEEME.
 > 6. **Evaluación `_privado/` (P4):** descartado. La lista negra `Universidad/_no-publicar.txt` (17 patrones / 59 archivos) ya cumple la función de excluir material con copyright al publicar. Añadir `_privado/` duplicaría mecanismo sin beneficio real; se mantiene solo la lista negra.
-> 7. **16 notas de Preuniversitario + 1 de Matemáticas Discretas** quedan con EOL `CRLF` en HEAD (las escribió el carril B antes de `.gitattributes eol=lf`). Son **byte-idénticas en contenido** (verificado `--ignore-cr-at-eol` = diff vacío) y **no bloquean nada**; su renormalización toca zona carril A/B → **no las toco**. Único riesgo: si un `CRLF` entra en su frontmatter, rompería el regex de `sync-vault.mjs:68`. Quien integre los carriles A/B puede renormalizarlas al pasar el barrido que ya corrió `opencode-site` (log en `LOG-opencode-site.md`). Le toca a: **carril A / carril B**.
+> 7. **> 8. **Los `00 - Leeme Unidad 0.md` de las materias reestructuradas** · (+ los `Recursos visuales.md` que quedo dentro de `Material de clase/`) nacieron sin `dg-publish: true` en la pasada del carril B/D1 (commit `d648726`) · hoy el sitio queda en **794 notas publicadas / 28 omitidas**. Es zona de quien los creo; si esto no es intencional, hacer `dg-publish: true` + push.
+16 notas de Preuniversitario + 1 de Matemáticas Discretas** quedan con EOL `CRLF` en HEAD (las escribió el carril B antes de `.gitattributes eol=lf`). Son **byte-idénticas en contenido** (verificado `--ignore-cr-at-eol` = diff vacío) y **no bloquean nada**; su renormalización toca zona carril A/B → **no las toco**. Único riesgo: si un `CRLF` entra en su frontmatter, rompería el regex de `sync-vault.mjs:68`. Quien integre los carriles A/B puede renormalizarlas al pasar el barrido que ya corrió `opencode-site` (log en `LOG-opencode-site.md`). Le toca a: **carril A / carril B**.
 
 ---
 

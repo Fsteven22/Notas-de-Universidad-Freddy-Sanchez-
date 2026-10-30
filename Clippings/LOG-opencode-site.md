@@ -231,7 +231,8 @@ tags: [clippings, log, opencode-site]
 > - **Barrido del vault:** **1 solo `.md` afectado**. Los 42 archivos no-texto con `
 
 ` son **PDF/WMV** (binario, falsos positivos).
-> - **Resultado:** vuelve a **806 notas publicadas · 2820 assets · 8 omitidas · 17 patrones / 59 archivos excluidos**.
+> - **Resultado del fix aislado:** 806 publicadas / 2820 assets (la nota vuelve al sitio).
+> - **POST-merge (medicion final, `origin/master` reestructurado por el carril B):** **794 publicadas · 28 omitidas · 2624 assets · 17 patrones / 59 archivos excluidos**. La baja no es mia ni un bug del gate: son los **`00 - Leeme Unidad 0.md` nuevos** de la taxonomia universal (+ materiales que quedaron dentro de `Material de clase/`) que nacieron sin `dg-publish: true`. Reportado en ESTADO, item 8 del bloque 2.
 > - **Zona:** el archivo es de Preuniversitario (zona compartida / carril B) → **avisado en el LEEME** para `opencode`. No toco el bloque de otra sesión.
 >
 > ### Estado del sitio tras el merge (medido 29/10/2026)

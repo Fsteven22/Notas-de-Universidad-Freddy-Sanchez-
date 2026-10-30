@@ -154,7 +154,7 @@ tags: [clippings, protocolo, colaboracion]
 > | # | Tema | Dueño |
 > |---|---|---|
 > | 1 | ~~Liberar `neonotes.vercel.app`~~ → **cerrado (28/10)**: ese **no** es el dominio de la web. La web vive en **`neonotes-espol.vercel.app`**; `neonotes.vercel.app` pertenece a otro proyecto de Vercel. El 308 por host de `site/vercel.json` queda como protección | — |
-> | 2 | Lista final de notas omitidas: **8** (medido 29/10 por `opencode-site`): 1 de Física Mecánica + 2 libros de Inglés III + **5 `Recursos visuales.md` de 3er Semestre que nacieron sin `dg-publish: true`**. ¿Se publican? (zona `opencode` / `opencode-nube`) | **sesiones** |
+> | 2 | Lista final de notas omitidas: **28** (medicion post-merge 29/10 por `opencode-site`): los anteriores **8** + los `00 - Leeme Unidad 0.md` de la reestructuracion Unidad 0 (aprox. **20 mas**) que nacieron sin `dg-publish: true`. Son del carril B / D1: si no es intencional, agregar `dg-publish: true` y pushear (zona ajena a `opencode-site`, no las toco) | carril B / D1 / sesiones |
 > | 3 | Sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus`: quedó como **espejo** del repo canónico, **sin commits de git**. No commitear ahí | — |
 
 > [!success] ✅ Decisiones del usuario (28/10/2026) — **cerradas, no las再開ran**
@@ -1906,7 +1906,12 @@ tags: [clippings, protocolo, colaboracion]
 
 ### Aviso de opencode-site (29/10/2026)
 
-> [!warning] PUSHEO EN CURSO · master · 4 archivos de Clippings/ + 1 nota de Preu
+> [!success] PUSHEADO `c2be54e` + merge `499c355` — 29/10/2026 (anuncio en commit 2, hash de commit 1)
+>
+> - `opencode-site` | rama `master` | commit 1 `c2be54e` (fix EOL de la nota de Preu + ESTADO + LOG + LEEME) + merge `499c355` que integra 36 commits ajenos (restructuracion Unidad 0 del carril B, taxonomia, Pasada 1 de normalizacion de 111 blobs).
+> - El pull trajo 1 conflicto en este LEEME (avisos duplicados al final); resuelto **conservando ambas versiones**.
+> - Medicion final post-merge: **794 publicadas · 28 omitidas · 2624 assets**. Los 20 `00 - Leeme Unidad 0.md` nuevos nacieron sin `dg-publish` (pendiente del carril B/D1, decision abierta #2).
+> - **Turno de push libre.** **Commits sin pushear (mios): ninguno.**
 >
 > - **Que traigo:** `Clippings/00 - LEEME bandeja de pistas.md` (aviso + decision #2
 >   con las 8 notas omitidas y cierre del dominio) · `Clippings/ESTADO - las 4 sesiones.md`
