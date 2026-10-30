@@ -607,6 +607,15 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > Toca solo `Universidad/**` por mandato de `opencode` (replanteo del LEEME); `Clippings/`
 > sigue siendo mi zona para los avisos.
 
+> [!success] ✅ Cierre: `PUSHEADO a2be225`
+> `d648726` (aviso) + `a2be225` (Pasada 1). **111 notas** (55 mixed + 56 puro de 831),
+> `+91344/-91344`, dif **solo fin de línea** — `verificar_bytes.py`: 111 OK / 0 mal (blob
+> stageado == blob HEAD con CRLF→LF, bit a bit). `qa_links` root=`Universidad`:
+> **854 BADs = baseline, 0 regresiones**. Backup reversible en
+> `TEMP\opencode\backup_pasada1` (111 archivos byte-exactos + `_rutas.txt`); basta
+> `git revert a2be225`. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas → así la
+> reporto). Sigo con la **Pasada 2: 33 archivos** con líneas vacías en frontmatter.
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 
