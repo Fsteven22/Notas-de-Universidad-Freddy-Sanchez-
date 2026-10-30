@@ -1808,3 +1808,30 @@ tags: [clippings, protocolo, colaboracion]
 > **opencode-nube:** Te está asignada la normalización de formato (3 pasadas). Usa los fixers de `Universidad/Herramientas/Mantenimiento/` (dry-run por defecto), haz commit de respaldo antes de cada pasada, y verifica con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones). Cada pasada es un commit separado.
 >
 > **opencode-site:** Tu zona es `site/**`. No tocas `Universidad/**` ni `Clippings/00 - LEEME bandeja de pistas.md` sin avisar.
+
+---
+
+### 📌 TABLERO DE TAREAS · opencode (coordinación) — 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · unión de `Diagramas/` raíz → `U0/Diagramas/` (13 materias) · ~4.000 archivos
+
+**Qué se hizo en esta tanda:**
+
+1. Se movieron **~2.000 archivos** SVG/MMD de las carpetas `Diagramas/` en la **raíz de cada materia** a `Unidad 0 - Guias y Ejercicios/Diagramas/`. Las carpetas raíz `Diagramas/` fueron eliminadas (ya no existen — todo quedó unido en la copia de Unidad 0).
+2. Se corrigieron **~1.300 archivos** que habían caído en rutas basura tipo `Diagramas/Files/Universidad/1er Semestre/.../Diagramas/archivo.svg` — todos aplanados a `Diagramas/<archivo>.svg` directo, con colisiones resueltas por hash (0 conflictos, 0 pérdidas).
+3. Verificado: 0 archivos en rutas basura, 0 carpetas `Diagramas/` en raíces de materias, todos los commits son renombres (R100).
+
+**Commits:** `1601916` (1er Semestre), `71b8185` (fix Física Mecánica + Matemáticas Pre), `c408877` (13 materias restantes) — pendientes de push en este momento.
+
+| Agente | Zona | Tarea asignada | Detalle |
+|--------|------|----------------|---------|
+| `opencode-onedrive` | `2do Semestre/Cálculo Vectorial/**` | Aplicar taxonomía Unidad 0 a Cálculo Vectorial | Crear `Unidad 0 - Guias y Ejercicios/` con 8 subcarpetas (`Guías/`, `Material de clase/`, `Diapositivas/`, `Diagramas/`, `Figuras/`, `Lecciones/`, `Talleres/`, `Exámenes/`) + índice `00 - Leeme Unidad 0.md` + mover los 3 archivos de raíz: `Bienvenida y Syllabus Calculo Vectorial.md` → `Guías/`, `Cálculo Vectorial.md` → `Material de clase/`, `SPA-SyllabusEUR_ACE-MATG1046.pdf` → `Guías/`. Commit único por materia, responder acá con hash. |
+| `opencode-nube` | `Clippings/**` (solo docs) | Normalización de formato en 3 pasadas (ya asignada en PISTA arriba) | ENDINGS→LF, frontmatter vacío, líneas vacías en fence/callout. Fixers existentes con dry-run, commit de respaldo, cada pasada = 1 commit, verificar con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones). |
+| `opencode-site` | `site/**` | Rebuild del sitio + verificación de assets | Reconstruir el sitio y confirmar que ninguna página referencia assets en rutas viejas (`<materia>/Diagramas/` en raíz). Publicar solo si `0 broken assets`. Ojo: `site/RUNBOOK.md` ya tiene modificaciones de otra sesión — no lo pises. |
+| `opencode` (yo) | `Universidad/**` + `Herramientas/Mantenimiento/**` | Ejecutar `qa_links.py` (root=`Universidad`) | Confirmar 0 links rotos tras mover ~4.000 SVG a `U0/Diagramas/`. Es la tarea que me quedo a mí. Reporto el verdict acá. |
+
+> [!info] Reglas para todos
+>
+> - Un push a la vez: anunciá primero **PUSHEO EN CURSO**, después confirmá **PUSHEADO `<hash>`**.
+> - Nunca commitear: `_texto/**` (untracked), `site/RUNBOOK.md` (editado por otra sesión), archivos de zona ajena.
+> - `2do Semestre/Cálculo Vectorial/**` es zona exclusiva de `opencode-onedrive`.
