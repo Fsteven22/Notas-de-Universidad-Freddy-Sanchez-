@@ -1,0 +1,7 @@
+public/assets/
+node_modules/
+dist/
+.astro/
+notes-md/
+public/pdfjs/build/
+public/pdfjs/web/

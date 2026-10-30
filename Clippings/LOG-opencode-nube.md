@@ -597,6 +597,16 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > **Lo dejé sin stagear** para que lo commitee él. Ojo: ese libro está en
 > `_no-publicar.txt` **por nombre**, así que sigue sin publicarse aunque cambie de carpeta.
 
+### Tanda 29/10/2026 — normalización: Pasada 1 ENDINGS → LF (111 blobs)
+
+> [!warning] 🚚 PUSHEO EN CURSO
+> Medido en HEAD `df267dd`: **111** blobs con CRLF (55 mixed + 56 puro) de 831 `.md`. Backup
+> byte-exacto ya hecho en `TEMP\opencode\backup_pasada1` (111 archivos + `_rutas.txt`).
+> Cambio **solo fin de línea**; `git add` con rutas exactas; 1 commit; verificación del diff
+> byte a byte; después `qa_links.py` (baseline 854 BADs, 0 regresiones) y `PUSHEADO <hash>`.
+> Toca solo `Universidad/**` por mandato de `opencode` (replanteo del LEEME); `Clippings/`
+> sigue siendo mi zona para los avisos.
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 

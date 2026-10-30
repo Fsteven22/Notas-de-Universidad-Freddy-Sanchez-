@@ -961,4 +961,55 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
-**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b
+## 19. Décima tanda: plan de normalización de formato (14.106 errores en 306 notas)
+
+> [!info] 📌 Plan de 3 pasadas mecánicas (seguras, con backup previo)
+>
+> **Objetivo:** normalizar 14.106 errores de formato en 306 notas del vault.
+>
+> **Pasada 1 — ENDINGS mixed (126 archivos):**
+> - Qué: archivos `.md` con finales de línea mezclados (CRLF + LF en el mismo archivo).
+> - Solución: estandarizar a `LF` (según `.gitattributes`: `*.md text eol=lf`).
+> - Riesgo: muy bajo (solo finales de línea, no toca contenido).
+> - Backup: commit previo antes de aplicar.
+>
+> **Pasada 2 — Frontmatter con líneas vacías (15 archivos):**
+> - Qué: bloque `--- ... ---` del YAML frontmatter contiene líneas en blanco, rompe el parsing.
+> - Solución: eliminar líneas vacías dentro del frontmatter.
+> - Riesgo: bajo.
+> - Backup: commit previo antes de aplicar.
+>
+> **Pasada 3 — Líneas vacías dentro de fence/callout (3.935 líneas en 185 notas):**
+> - Qué: línea totalmente vacía `""` (sin prefijo `>`) dentro de un callout `> [...]` que contiene un bloque de código ```. Rompe el render en Live Preview y en el sitio.
+> - Solución: reemplazar líneas vacías sueltas por `>` (solo prefijo de cita, sin contenido).
+> - Riesgo: medio — hay que distinguir líneas válidas (`>`, `> `) de inválidas (`""`).
+> - Backup: commit previo antes de aplicar.
+>
+> **Reglas de seguridad (del usuario):**
+> - Sin scripts que tengan riesgo de romper el vault.
+> - Commit de respaldo antes de cada pasada.
+> - Cada pasada es un commit separado (para poder revertir individualmente).
+> - Verificación con `verificar_nota.py` (0 errores/0 avisos) y `qa_links.py` (sin regresiones).
+
+> [!success] ✅ Estado de las pasadas
+>
+> | Pasada | Qué | Cantidad | Estado |
+> |--------|-----|----------|--------|
+> | 1 | ENDINGS mixed → LF | 126 archivos | ⏳ Pendiente |
+> | 2 | Frontmatter → quitar líneas vacías | 15 archivos | ⏳ Pendiente |
+> | 3 | Líneas vacías en fence/callout | 3.935 líneas / 185 notas | ⏳ Pendiente |
+
+---
+
+> [!info] Entrada 29/10/2026 — Carril B: unión de `Diagramas/` raíz → `U0/Diagramas/` + tablero de tareas
+>
+> - Detectado a pedido del usuario: carpetas `Diagramas/` a nivel de materia raíz duplicando la de Unidad 0. Se movieron ~2.000 SVG/MMD a `U0/Diagramas/` y se eliminaron las carpetas raíz.
+> - Corrección inmediata: ~1.300 archivos habían caído en rutas basura (`Files/`, `iversidad/`, `cFiles/`... dentro de `U0/Diagramas/`); aplanados al root de la subcarpeta con colisiones resueltas por hash (0 conflictos). 57 directorios basura vacíos eliminados.
+> - Commits: `1601916` (1er Semestre), `71b8185` (fix FM+Mat-Pre), `c408877` (13 materias restantes), `b38f8c5` (tablero LEEME), todos pusheados `f21e5f4..b38f8c5`; luego `ab26917` verdict.
+> - Asignación en LEEME: tarea concreta para `opencode-onedrive` (taxonomía Cálculo Vectorial), `opencode-nube` (3 pasadas ya en curso), `opencode-site` (rebuild + assets); me quedé `qa_links.py` como verificación propia.
+> - Verdict `qa_links.py`: 0 regresiones de los movimientos. 854 BADs preexistentes: 852 wiki-links a notas nunca creadas, 1 PNG inexistente, 1 PDF existente con link de caracteres corruptos.
+> - Lección: el launcher correcto es `py` (alias `python.exe` de la Store deshabilitado). `qa_links.py` root correcto: el vault (= `.` desde `Universidad/`).
+
+---
+
+**Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion

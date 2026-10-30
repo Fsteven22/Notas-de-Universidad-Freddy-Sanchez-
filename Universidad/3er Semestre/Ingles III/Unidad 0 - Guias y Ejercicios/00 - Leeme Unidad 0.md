@@ -1,20 +1,26 @@
+# 📚 Unidad 0 — Inglés III
+
+> [!info] Índice de recursos de la unidad
+
+Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Inglés III**. Todos los recursos de la unidad están organizados según la taxonomía del vault:
+
+| Carpeta | Contenido |
+|---------|-----------|
+| `Diapositivas/` | Presentaciones del docente exportadas a PDF |
+| `Guías/` | Guías de estudio, guías de problemas, ejercicios guiados |
+| `Material de clase/` | Capturas del libro, plantillas, audios, videos locales, material suelto de clase |
+| `Talleres/` | Talleres y soluciones |
+| `Lecciones/` | Lecciones y soluciones |
+| `Exámenes/` | Exámenes y resoluciones |
+| `Diagramas/` | Diagramas draw.io y SVG generados |
+| `Figuras/` | Imágenes PNG/JPG sueltas |
+
+> [!tip] Regla de colocación
+> - Es una presentación de clase → `Diapositivas/`
+> - Es una guía de estudio o problemas → `Guías/`
+> - Es material suelto de clase (capturas, plantillas, multimedia local) → `Material de clase/`
+> - Tiene copyright (libros `z-lib.org`, Cambridge, etc.) y no se publica → no va en ninguna de las tres; queda en `_local/` o en la raíz de `Unidad 0`
+
 ---
-dg-publish: true
-tags: [IDIG1008, unidad0, recursos]
----
 
-# 📂 Unidad 0 — Guías y Ejercicios (Inglés III)
-
-> [!info] ℹ️ Cómo está organizada la carpeta
-> Los PDF están separados por tipo de material:
->
-> - `Material de clase/` — contenido del curso: `EIII Course Contents`, lessons de Empower (U7-U9, U10-U12, back matter) y el tema de lectura *Flooding Guayaquil*.
-> - `Guías/` — Cambridge One, verbos frasales y el cuadro de verbos irregulares de EVOLVE.
-> - `Capturas Empower U7-U10/` y `Capturas Empower U10-U12/` — capturas del libro por unidad.
-> - En la raíz: normas de los laboratorios de CELEX, plantillas de presentación (`.ppt`/`.pptx`), audios de speaking (`.mp4`) e imágenes sueltas.
-
-Todo lo publicado en el sitio está listado en [[Recursos Unidad 0]].
-
----
-
-**Tags:** #english #ESPOL #IDIG1008 #recursos
+**Tags:** #ingles-iii #unidad0 #indice #taxonomia
