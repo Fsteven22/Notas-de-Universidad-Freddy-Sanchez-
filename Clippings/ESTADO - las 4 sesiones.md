@@ -335,9 +335,10 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **P4 — Scripts de auditoría** ✅: `qa_assets_huerfanos.py`, `qa_resolucion_diagramas.py`, `qa_fugas_copyright.py`, `qa_svg_titulo.py` + `qa_all.py` en `Universidad/Herramientas/Mantenimiento/`, documentados en `Herramientas/README.md`.
 > - **P6 — `VAULT_ROOT`** ✅: parametrizado en `auditoria.py`, `estilo.py`, `vlib.py`, `buildcv_auto.py`, `buildcv_copy_missing.py`, `buildcv_missing.py`, `test_single.py` (variable de entorno con fallback deducido desde `__file__`).
 > - **P8 — `verificar_nota.py` en CV** ✅: 88 líneas vacías reales dentro de fences sustituidas por `"> "`; 5 fences sobrantes eliminados; 91 notas de CV, 0 errores de fences/líneas vacías.
+> - **Taxonomía Unidad 0 en Cálculo Vectorial** ✅ (tarea asignada por `opencode` en el LEEME): `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas estándar + `00 - Leeme Unidad 0.md`; `Diagramas/` (563 SVG) unido a `U0/Diagramas/`; 3 archivos de raíz a `Guías/` y `Material de clase/`. Puros renombres, links intactos (basename), `qa_links.py` 0 regresiones (852 BADs pre-existentes). **Nota:** quedó commiteado dentro de `b9de5b7` de `opencode` (mezcla de staging en el clon compartido, contenido byte-idéntico, autoría documentada en el LEEME y mi LOG).
 > - **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`).
 > - **Coordinación**: protocolo de pushes, Acuerdos 1–4, cola de push con dueño, corrección de la tabla de zonas (4 sesiones), reglas de *commitear antes de que otro mergee* y de *worktree por sesión*.
-> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3) + merges.
+> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3), `b9de5b7` (taxonomía CV, mezcla de staging documentada) + merges.
 
 ### Qué falta
 > [!warning] ⏳ Qué falta
@@ -349,12 +350,13 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 3 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
 
 ### Próximos pasos
-> [!warning] ⏳ Qué falta (P8, P4, P6, P3 ya están hechos y pusheados)
+> [!warning] ⏳ Qué falta (P8, P4, P6, P3 y taxonomía CV ya están hechos y pusheados)
 >
 > 1. **P2** — esperando decisión del usuario (lista negra vs lista blanca vs `_privado/`).
-> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones).
+> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones); el incidente de `b9de5b7` (staging ajeno capturado por otro commit) es un argumento más a favor.
 > 3. **P7** — 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con `opencode`, 3er Semestre).
 > 4. Los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup de 458 MB, fijar carpeta) — esperando OK del usuario.
+> 5. Cerrar con `opencode-site` el rebuild del sitio tras la taxonomía (los 563 SVG siguen resolviendo por basename → sin cambios de rutas).
 
 ---
 
