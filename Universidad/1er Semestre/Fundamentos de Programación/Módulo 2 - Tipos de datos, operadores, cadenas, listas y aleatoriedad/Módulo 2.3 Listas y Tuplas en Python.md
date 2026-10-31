@@ -1,5 +1,4 @@
 ---
-
 dg-publish: true
 ---
 # Listas y Tuplas en Python 📋🔒

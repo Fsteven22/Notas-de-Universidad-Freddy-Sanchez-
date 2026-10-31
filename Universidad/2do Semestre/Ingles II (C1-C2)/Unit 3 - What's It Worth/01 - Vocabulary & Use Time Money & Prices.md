@@ -1,5 +1,4 @@
 ---
-
 dg-publish: true
 ---
 # Time, Money & Prices

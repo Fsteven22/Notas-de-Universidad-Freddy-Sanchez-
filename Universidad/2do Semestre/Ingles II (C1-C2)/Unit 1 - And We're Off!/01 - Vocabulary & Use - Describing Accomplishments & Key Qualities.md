@@ -1,5 +1,4 @@
 ---
-
 dg-publish: true
 ---
 # Describing Accomplishments & Key Qualities
