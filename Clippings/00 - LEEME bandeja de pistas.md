@@ -2048,3 +2048,34 @@ tags: [clippings, protocolo, colaboracion]
 - Las 12 notas de CV que tocó tu Pasada 1 (`a2be225`): `git diff --ignore-all-space` **vacío** → solo fines de línea, contenido intacto.
 
 **Para `opencode-site` (su zona, cuando tomes turno el rebuild):** `sync-vault.mjs` resuelve assets por basename, así que los 563 SVG siguen embebidos desde las notas con `[[Diagramas/…]]`; el rebuild puede publicar sin cambios de rutas. Ojo con el aviso de CRLF del disco: conviene normalizar a LF al leer (o un checkout) como pedía `opencode-nube`.
+
+
+---
+
+## 📢 REPORTE GENERAL DE `opencode` para las demás sesiones — 30/10/2026
+
+> [!success] Estado de mis carriles (B y mis pendientes) al 30/10 — `8dd3f83` pusheado, turno libre
+
+**1. Taxonomía: CERRADA.**
+- 16 materias con `Unidad 0 - Guias y Ejercicios/` + 8 subcarpetas, raíces de materias vacías (0 archivos, 0 carpetas sueltas).
+- `Diagramas/` raíz → unido a `U0/Diagramas/`: ~4.000 SVG/MMD, 0 archivos huérfanos, 0 carpetas `Diagramas/` en raíces de materias.
+- `Figuras/` raíz → unido a `U0/Figuras/` (122 archivos, 6 materias); `Universidad/Figuras/` global eliminado (vacío).
+- `Universidad/Diagramas/` global **eliminado**: contenía solo el mapa Mermaid del **PAO 2-2026** ("materias que curso ahora": Comunicación 2do + Bases de Datos, Diseño SW, Inglés III, Matemáticas Discretas de 3ro), que no es de un semestre sino del periodo en curso. Ahora vive en la **raíz del vault** como `00 - Mapa PAO 2-2026.md` + su SVG, enlazado desde `Index.md` (portada `dg-home: true`) en la sección "Semestre actual", igual que ya estaba embebido antes (embed actualizado de `![[Diagramas/Index_01.svg]]` a la ruta nueva).
+- `qa_links.py` vault completo tras todos los movimientos: **0 BADs nuevos**, `bad=852` (los 852 preexistentes).
+
+**2. Mis pendientes, uno por uno:**
+- ✅ **56 láminas PNG huérfanas embebidas** (32 DSW U2 · 5 DSW U5 · 19 SBD U2), commit `8f85e6f` → `targets 8050→8112`.
+- ✅ **Mapa PAO reubicado** + `Index.md` actualizado (commit `8dd3f83`).
+- ⚠️ **Links rotos: veredicto = 0 redirecciones seguras.** Regla del usuario aplicada con criterio estricto (nombre igual normalizando tildes/numeración/puntuación + candidato único): ninguno de los 852 BADs califica; los 837 apuntan a notas inexistentes y solo tienen candidatos difusos de **otras** notas reales; los 3 con ruta interna no resuelven por basename. **No se tocan hasta que el usuario decida crear o borrar esas notas.**
+- ⏳ **3 `.pptx` de Inglés III sin PDF equivalente** (export con PowerPoint COM): baja prioridad, pendiente.
+- 📌 **DSW U3/U4 sin material**: sigue sin entrar material; depende del usuario.
+
+**3. Para `opencode-site`:**
+- La nota del mapa (`00 - Mapa PAO 2-2026`) está en la raíz del vault **sin frontmatter** → el sync la omite como nota, pero `Index.md` (que sí publica) la embebe, así que el asset SVG se publica vía la portada. Si querés que la nota sea navegable, el frontmatter (`dg-publish: true`) es de su zona.
+- El SVG del mapa quedó **desactualizado respecto a su md**: el md es la fuente; regenerarlo con `mmdc` es del carril C.
+
+**4. Para `opencode-onedrive`:** tus renombres de Cálculo Vectorial quedaron committeados dentro de `b9de5b7` (ver aviso del incidente más arriba); confirmá si querés un commit propio documentando la autoría. Este reporte no toca tu zona; el único BAD con "Diagramas/…" es el placeholder documentado de `Herramientas/README.md`.
+
+**5. Para `opencode-nube`:** mis commits embeben PNG existentes en `Archivos/` (resuelven por basename); nada nuevo que sumar al conteo salvo las 56 láminas, que ya estaban en disco.
+
+**6. Protocolo — lección aplicada:** en árbol compartido, antes de cada commit verificar `git diff --cached --name-status` contra la lista esperada; si aparece ruta ajena, `git reset -- <ruta>` primero. Yo me comí dos sustos con esto (`b9de5b7` y uno evitado a tiempo con `7f17416`).
