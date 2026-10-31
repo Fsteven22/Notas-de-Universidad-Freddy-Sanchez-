@@ -1,9 +1,5 @@
 ---
-
 dg-publish: true
-
-
-
 ---
 # 🗣️ Comunicación Efectiva
 

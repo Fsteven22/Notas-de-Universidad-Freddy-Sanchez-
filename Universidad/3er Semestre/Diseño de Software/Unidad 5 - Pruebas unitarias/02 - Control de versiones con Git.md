@@ -295,6 +295,17 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > - L. Torvalds (2005), Git — historia; GitHub (2008), pull requests.
 > - [Git: cómo gestionar y cuidar nuestro código](https://www.enmilocalfunciona.io/git-como-gestionar-y-cuidar-nuestro-codigo/) + [Video YouTube — Git](https://www.youtube.com/watch?v=4XpnKHJAok8&t=1m30s) + [Resolución de conflictos en GitHub — David Jurado](https://www.youtube.com/watch?v=H34vxQeQkgg).
 
+> [!info] Láminas del material de clase
+>
+> Renderizados del deck de la unidad, en orden de presentación.
+>
+> ![[01b-p35.png]]
+> ![[01b-p39.png]]
+> ![[01b-p42.png]]
+> ![[01b-p43.png]]
+> ![[01b-p44.png]]
+
+
 ---
 
 **Tags:** #CCPG1042 #unidad5 #git #versiones #colaboracion #diseno-software

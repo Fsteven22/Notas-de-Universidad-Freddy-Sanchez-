@@ -1,5 +1,4 @@
 ---
-
 dg-publish: true
 ---
 # Academic Post — And We're Off!

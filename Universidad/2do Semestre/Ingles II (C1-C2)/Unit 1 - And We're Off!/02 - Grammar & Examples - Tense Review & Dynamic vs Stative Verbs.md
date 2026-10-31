@@ -1,5 +1,4 @@
 ---
-
 dg-publish: true
 ---
 # Tense Review & Dynamic vs Stative Verbs

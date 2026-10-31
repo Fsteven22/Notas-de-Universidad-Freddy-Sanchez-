@@ -391,4 +391,44 @@ tags: [clippings, log, opencode-onedrive, publicacion, calidad, vault]
 > - Working tree limpio, salvo lo que pertenece a otras sesiones.
 
 ---
+---
+
+## 7. Taxonomía Unidad 0 en Cálculo Vectorial — 30/10/2026 (tarea del LEEME)
+
+> [!success] ✅ Tarea asignada por `opencode` y cerrada (hash `b9de5b7`)
+>
+> `opencode` aplicó la taxonomía Unidad 0 a 16 materias y me dejó a mi **Cálculo Vectorial** en el LEEME: crear `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas estándar, mover los 3 archivos de raíz y unir `Diagramas/` a `U0/Diagramas/`.
+
+### Lo ejecutado
+
+> [!info] 📦 Cambios (todo en `Universidad/2do Semestre/Cálculo Vectorial/**`)
+>
+> - `Unidad 0 - Guias y Ejercicios/` con `Diagramas/`, `Diapositivas/`, `Exámenes/`, `Figuras/`, `Guías/`, `Lecciones/`, `Material de clase/`, `Talleres/` + `00 - Leeme Unidad 0.md` (`dg-publish: true`, tags `MATG1046`).
+> - `Diagramas/` de raíz (563 SVG) → `U0/Diagramas/`.
+> - `Bienvenida y Syllabus Calculo Vectorial.md` y `SPA-SyllabusEUR_ACE-MATG1046.pdf` → `Guías/`; `Cálculo Vectorial.md` → `Material de clase/`.
+> - Links sin reescribir: los 563 `[[Diagramas/…]]` resuelven por basename (mismo criterio que las 15 materias de `opencode`).
+
+### Verificación
+
+> [!tip] 🔍 Números medidos
+>
+> - `qa_links.py` (root=`Universidad`): `targets=8056 bad=852` — **0 regresiones** vs el verdict de `opencode` (854 → 852 por sus 2 fixes) y **0 BADs a media** en todo el vault.
+> - Regla P8 sobre las 92 notas de mi zona: **0 líneas vacías dentro de fences, 0 fences sin cierre**.
+> - Las 12 notas de CV que tocó la Pasada 1 de `opencode-nube` (`a2be225`): diff con `--ignore-all-space` **vacío** → solo fines de línea, contenido intacto.
+
+### Incidente: mi trabajo quedó dentro del commit de otra sesión (`b9de5b7`)
+
+> [!warning] ⚠️ Cómo pasó y cómo quedó
+>
+> En el clon compartido de OneDrive, mis 566 renombres quedaron **staged** mientras `opencode` commiteaba su PUSHEADO: su commit `b9de5b7` arrastró **568 archivos** (567 de mi zona + su LEEME) bajo su mensaje. Contenido **byte-idéntico**, 0 pérdidas, sin `--force`. `opencode` lo avisó y corrigió en `4c78ae9`. **Decisión:** acepto `b9de5b7` como el commit de mi taxonomía (autoría documentada acá y en el LEEME; no hago commit vacío). **Lección para P1:** en un clon compartido, el trabajo propio debe commitearse en cuanto se termina — un worktree por sesión lo evita.
+
+### Pendientes míos tras el cierre
+
+> [!question] ❓ Lo que sigue
+>
+> - Rebuild del sitio con `opencode-site` (assets por basename → sin cambios de rutas).
+> - P1 (worktree por sesión) gana prioridad tras el incidente de staging.
+> - P2, P7 siguen esperando decisión/coordinación.
+
+---
 **Tags:** #clippings #log #opencode-onedrive #publicacion #calidad #vault
