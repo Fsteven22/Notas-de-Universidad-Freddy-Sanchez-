@@ -336,7 +336,7 @@ dg-publish: true
 > - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
 > - Condiciones de Frontera - Otros métodos de determinación
 > - Unicidad de Soluciones - Teoremas de existencia y unicidad
-> - [[Análisis de Estabilidad]] - Comportamiento de soluciones
+> - [[1er Semestre/Física Mecánica/05 - Equilibrio y Elasticidad/Aplicaciones de Equilibrio/Problemas de Estabilidad.md]] - Comportamiento de soluciones
 > 
 > ### 🎯 Aplicaciones Especializadas
 > - Mecánica Clásica - Leyes de Newton y movimiento

@@ -1125,7 +1125,7 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[08 - Independencia Lineal]] - Vectores que no son combinación lineal de otros
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Vectores que no son combinación lineal de otros
 > - [[02 – Base y dimensión]] - Conjuntos generadores linealmente independientes
 > - [[01 – Transformaciones lineales]] - Núcleo e imagen son subespacios
 > - [[11 - Espacios con Producto Interno]] - Subespacios ortogonales

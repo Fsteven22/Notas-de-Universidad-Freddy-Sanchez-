@@ -253,7 +253,7 @@ dg-publish: true
 > ### Temas Relacionados
 > 
 > - [[Integrales Trigonométricas]] - Complemento natural
-> - [[Cambio de Variable]] - Para casos con composiciones
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Para casos con composiciones
 > - [[01 - Longitud de Curva#Sustitución Trigonométrica|Sustitución Trigonométrica]] - Conexión con √(a²±x²)
 > 
 > ### Aplicaciones

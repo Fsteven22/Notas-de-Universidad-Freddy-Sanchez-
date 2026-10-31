@@ -588,7 +588,7 @@ dg-publish: true
 > 
 > - [[NumPy - Arrays y Operaciones Numéricas]] - Base matemática para pandas
 > - [[Python - Estructuras de Control]] - Lógica condicional aplicada
-> - [[Estadística Descriptiva]] - Interpretación de métricas
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Estadística Básica.md]] - Interpretación de métricas
 > 
 > **Temas Complementarios:**
 > 

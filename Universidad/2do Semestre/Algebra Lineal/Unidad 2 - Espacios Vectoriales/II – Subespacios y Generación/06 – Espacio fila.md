@@ -849,7 +849,7 @@ dg-publish: true
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Subespacios
 > - [[02 – Combinación lineal]] - Span
-> - [[06 - Independencia lineal]] - Bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases
 > - [[05 – Espacio columna]] - Concepto dual
 > 
 > **Temas relacionados:**

@@ -684,7 +684,7 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - [[08 - Desigualdad de Cauchy–Schwarz#Espacios con Producto Interno|Espacios con Producto Interno]] - Generalización
-> - [[Transformaciones Ortogonales]] - Preservan producto punto
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/01 – Transformaciones lineales.md]] - Preservan producto punto
 > - [[07 - Matriz de una Transformación Lineal#Diagonalización|Diagonalización]] - Vectores propios ortogonales
 > 
 > **Temas relacionados:**

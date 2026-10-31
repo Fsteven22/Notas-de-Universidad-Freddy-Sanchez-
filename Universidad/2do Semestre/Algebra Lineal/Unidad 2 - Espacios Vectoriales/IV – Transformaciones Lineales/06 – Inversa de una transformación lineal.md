@@ -1208,7 +1208,7 @@ dg-publish: true
 > - [[07 - Matriz de una Transformación Lineal]] - Representación matricial
 > - [[07 - Composición de transformaciones]] - $(S \circ T)^{-1} = T^{-1} \circ S^{-1}$
 > - [[06 - Matriz Inversa]] - Inversión de matrices
-> - [[09 - Cambio de base]] - Matrices de cambio son invertibles
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Matrices de cambio son invertibles
 > - [[04 - Determinantes]] - Criterio $\det \neq 0$
 >
 > **Aplicaciones posteriores:**

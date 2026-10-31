@@ -1612,12 +1612,12 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Vectores unitarios y bases
 > - [[Trigonometría]] - Funciones circulares
 > - [[Cálculo Integral]] - Integrales múltiples
-> - [[Cambio de Variable]] - Jacobiano
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Jacobiano
 > 
 > **Temas relacionados:**
 > - [[03 - Superficies de revolución]] - Naturales en cilíndricas/esféricas
 > - [[01 - Distancias en ℝ³]] - Métricas en diferentes sistemas
-> - [[Producto Vectorial]] - Rotacional en curvilíneas
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Rotacional en curvilíneas
 > - [[01 – Integrales múltiples]] - Aplicaciones de coordenadas
 > 
 > **Aplicaciones directas:**

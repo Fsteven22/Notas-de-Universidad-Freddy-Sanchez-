@@ -766,13 +766,13 @@ dg-publish: true
 > 
 > - [[01 – Transformaciones lineales]] - Definición básica
 > - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
-> - [[03 - Teorema de la dimensión]] - Clasificación dimensional
-> - [[06 - Independencia lineal]] - Preservación de bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Clasificación dimensional
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Preservación de bases
 > 
 > **Temas directamente relacionados:**
 > 
 > - [[06 - Matriz Inversa]] - Representación matricial
-> - [[06 - Cambio de base]] - Isomorfismos coordenados
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Isomorfismos coordenados
 > - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
 > - [[19 - Núcleo e Imagen]] - Caracterización
 > 

@@ -1489,7 +1489,7 @@ dg-publish: true
 > ### Este tema es prerequisito para:
 > 
 > - **[[02 – Base y dimensión]]** - Conjuntos independientes que generan
-> - **[[12 - Espacio Columna y Rango]]** - Independencia de columnas
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Independencia de columnas
 > - **[[13 - Espacio Nulo]]** - Soluciones y dependencia
 > - **[[14 - Coordenadas y Cambio de Base]]** - Representación única
 > - **[[01 – Transformaciones lineales]]** - Núcleo e inyectividad

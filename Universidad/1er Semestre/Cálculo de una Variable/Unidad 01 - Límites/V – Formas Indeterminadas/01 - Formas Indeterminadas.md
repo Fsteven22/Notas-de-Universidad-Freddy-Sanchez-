@@ -288,7 +288,7 @@ dg-publish: true
 > 
 > **Temas Paralelos:** 4. **[[Gráficas y Discontinuidades]]** - Interpretación visual 5. **Simplificación Algebraica** - Técnicas de reducción
 > 
-> **Siguientes Pasos:** 6. **01 - Formas Indeterminadas** - ∞/∞, 0·∞, etc. 7. **01 - Formas Indeterminadas** - Método sistemático 8. **[[Límites Trigonométricos Especiales]]** - Casos avanzados
+> **Siguientes Pasos:** 6. **01 - Formas Indeterminadas** - ∞/∞, 0·∞, etc. 7. **01 - Formas Indeterminadas** - Método sistemático 8. **[[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/III - Límites Especiales/01 - Límites Especiales.md]]** - Casos avanzados
 
 ## 🎯 Ejercicios de Práctica Estructurada
 
@@ -902,7 +902,7 @@ dg-publish: true
 > 
 > **Prerrequisitos esenciales:**
 > 
-> 1. **[[Derivadas Básicas]]** - Técnicas de derivación
+> 1. **[[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas.md]]** - Técnicas de derivación
 > 2. **[[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]** - Regla de la cadena, producto, cociente
 > 3. **01 - Formas Indeterminadas** - Conceptos previos
 > 

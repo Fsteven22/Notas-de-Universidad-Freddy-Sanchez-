@@ -146,7 +146,7 @@ dg-publish: true
 > 
 > - [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
 > - [[Aplicaciones de la Integral]] - Contexto más amplio
-> - [[Métodos de Integración]] - Técnicas necesarias para resolver
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas necesarias para resolver
 > - Geometría Analítica - Para visualización espacial
 > - Funciones y sus Gráficas - Interpretación de las regiones
 
@@ -154,7 +154,7 @@ dg-publish: true
 
 > [!info]+ **Prerrequisitos Esenciales**
 > 
-> - [[Cálculo Diferencial]] - Derivadas y funciones
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y funciones
 > - [[Integrales Indefinidas]] - Antiderivadas básicas
 > - [[04 - Teorema Fundamental del Cálculo]] - Conexión derivada-integral
 > - [[02 - Área entre Curvas]] - Fundamentos de regiones

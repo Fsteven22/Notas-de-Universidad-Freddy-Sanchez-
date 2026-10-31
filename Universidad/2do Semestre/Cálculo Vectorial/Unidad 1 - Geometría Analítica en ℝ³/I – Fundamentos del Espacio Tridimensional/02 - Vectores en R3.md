@@ -761,8 +761,8 @@ dg-publish: true
 > 
 > **Operaciones avanzadas:**
 > 
-> - [[Producto Punto]] - Proyecciones y ángulos
-> - [[Producto Cruz]] - Vector perpendicular
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Proyecciones y ángulos
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular
 > - [[Producto Triple]] - Volumen de paralelepípedos
 > 
 > **Aplicaciones:**

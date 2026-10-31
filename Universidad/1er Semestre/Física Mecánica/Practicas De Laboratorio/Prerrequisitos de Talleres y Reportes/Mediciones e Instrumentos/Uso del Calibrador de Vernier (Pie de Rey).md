@@ -379,7 +379,7 @@ dg-publish: true
 > 
 > - Micrómetro - Instrumento de mayor precisión
 > - [[Incertidumbres Experimentales]] - Propagación de errores
-> - [[Problemas de Medición]] - Ejercicios aplicados
+> - [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/II - Optimización/01 - Problemas de Optimización.md]] - Ejercicios aplicados
 
 ---
 

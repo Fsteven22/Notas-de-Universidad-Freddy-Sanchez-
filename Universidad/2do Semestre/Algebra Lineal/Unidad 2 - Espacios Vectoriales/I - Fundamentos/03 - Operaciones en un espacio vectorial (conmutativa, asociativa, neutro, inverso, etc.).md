@@ -995,7 +995,7 @@ dg-publish: true
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Álgebra lineal numérica]] - Implementación computacional
+> - [[2do Semestre/Algebra Lineal/Unidad 0 - Guias y Ejercicios/Material de clase/Álgebra Lineal.md]] - Implementación computacional
 > - [[Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Espacios tangentes
 > - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica cuántica]] - Superposición de estados

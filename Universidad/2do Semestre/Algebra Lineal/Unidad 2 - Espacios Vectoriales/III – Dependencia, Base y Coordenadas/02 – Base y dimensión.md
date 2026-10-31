@@ -2100,7 +2100,7 @@ dg-publish: true
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[12 - Espacio Columna y Rango]]** - Aplicación directa de bases
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Aplicación directa de bases
 > - **[[13 - Espacio Nulo y Nulidad]]** - Bases de espacios nulos
 > - **[[14 - Coordenadas y Cambio de Base]]** - Representación en bases
 > - **[[15 - Teorema del Rango]]** - Relación dimensional
@@ -2135,7 +2135,7 @@ dg-publish: true
 > 
 > ### Siguiente tema recomendado:
 > 
-> **[[12 - Espacio Columna y Rango]]** - Aplicación de bases a matrices y sistemas lineales
+> **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Aplicación de bases a matrices y sistemas lineales
 
 ---
 
@@ -2540,7 +2540,7 @@ dg-publish: true
 > 
 > ### Tema siguiente recomendado:
 > 
-> **[[12 - Espacio Columna y Rango]]**
+> **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]**
 > 
 > - Aplicación directa de bases
 > - Profundización del teorema del rango

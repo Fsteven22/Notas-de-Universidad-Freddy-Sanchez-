@@ -1609,7 +1609,7 @@ dg-publish: true
 > - **Diferenciabilidad** - Condición más fuerte que continuidad
 > - **Integrabilidad** - Funciones continuas (o casi) son integrables
 > 
-> **Siguiente tema recomendado:** [[08 - Derivadas Parciales de Funciones de Varias Variables]]
+> **Siguiente tema recomendado:** [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]
 
 ---
 

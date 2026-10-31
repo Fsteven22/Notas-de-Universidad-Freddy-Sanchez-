@@ -1085,9 +1085,9 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - [[Ecuación de la recta en ℝ³]] - Para entender generatrices
-> - [[Ecuación del plano]] - Para secciones planas
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
-> - [[Producto vectorial]] - Para cálculos de área
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Para cálculos de área
 > - [[Cónicas]] - Base bidimensional
 > 
 > **Temas relacionados:**
@@ -1100,7 +1100,7 @@ dg-publish: true
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Funciones de varias variables]] - Superficies de nivel
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Superficies de nivel
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Extremos sobre superficies
 > - [[01 – Integrales múltiples]] - Volúmenes y regiones
 > - [[Ecuaciones diferenciales]] - Soluciones geométricas

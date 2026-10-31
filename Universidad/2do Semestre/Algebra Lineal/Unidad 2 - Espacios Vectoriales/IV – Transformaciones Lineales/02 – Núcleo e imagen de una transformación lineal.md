@@ -927,7 +927,7 @@ dg-publish: true
 > 
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Estructura de espacios
 > - [[02 – Combinación lineal]] - Generación de subespacios
-> - [[06 - Independencia lineal]] - Bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > 

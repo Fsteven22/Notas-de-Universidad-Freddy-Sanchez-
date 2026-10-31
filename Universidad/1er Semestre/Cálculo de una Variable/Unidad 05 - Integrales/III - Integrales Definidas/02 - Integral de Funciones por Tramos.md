@@ -396,7 +396,7 @@ dg-publish: true
 > - [[06 - Funciones Especiales]] - Heaviside, Dirac, escalón
 > - [[Aplicaciones Geometricas]] - Problemas con condiciones variables
 > - [[01 - Integrales Impropias]] - Cuando hay discontinuidades infinitas
-> - [[Métodos de Integració...]] - Técnicas para cada tramo
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas para cada tramo
 > - Transformadas - Fourier y Laplace de funciones por tramos
 > - [[Ecuaciones Diferenciales]] - Con coeficientes por tramos
 > - [[Módulo 1.1 Programación y su Relevancia#Fundamentos Teóricos|Fundamentos teóricos]] - Base teórica de integrabilidad

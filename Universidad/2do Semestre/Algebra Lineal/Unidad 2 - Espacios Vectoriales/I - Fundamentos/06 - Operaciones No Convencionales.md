@@ -2354,7 +2354,7 @@ dg-publish: true
 > 
 > **Si quieres profundizar en teoría:**
 > 
-> - **[[20 - Isomorfismos de Espacios Vectoriales]]** - Equivalencia estructural
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/01 - Vectores en espacios vectoriales (definición y propiedades).md]]** - Equivalencia estructural
 > - **Álgebra Abstracta** - Grupos, anillos, campos
 > - **Módulos sobre Anillos** - Generalización de espacios vectoriales
 > 

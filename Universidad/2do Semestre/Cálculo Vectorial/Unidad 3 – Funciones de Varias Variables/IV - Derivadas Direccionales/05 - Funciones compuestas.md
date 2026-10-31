@@ -2261,7 +2261,7 @@ dg-publish: true
 > **🌐 Temas relacionados:**
 > 
 > - [[Formas Diferenciales]] - Generalización geométrica
-> - [[Cálculo Tensorial]] - Derivadas en variedades
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas en variedades
 > - [[Automatic Differentiation]] - Implementación computacional
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
 > 

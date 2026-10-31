@@ -138,7 +138,7 @@ dg-publish: true
 
 > [!tip] Continuación del Tema
 > 
-> - [[Principio de Arquímedes]]
+> - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md]]
 > - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]]
 > - [[Teorema de Torricelli]]
 

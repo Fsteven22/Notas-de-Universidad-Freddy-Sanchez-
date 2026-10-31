@@ -1315,7 +1315,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[02 - Espacio Vectorial]] - Definición axiomática
-> - [[Subespacios]] - Heredan propiedades
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/04 – Suma de subespacios.md]] - Heredan propiedades
 > - [[01 – Transformaciones lineales]] - Preservan estructura
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]] - Usa estos teoremas
 > 
@@ -1324,7 +1324,7 @@ dg-publish: true
 > - [[02 – Base y dimensión]] - Representación única
 > - [[Sistemas de Ecuaciones]] - Resolución formal
 > - [[04 - Determinantes]] - Propiedades algebraicas
-> - [[Espacios Normados]] - Estructura adicional
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/05 – Espacios isomorfos.md]] - Estructura adicional
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Extensión infinita
 
 ## 📖 Referencias Históricas

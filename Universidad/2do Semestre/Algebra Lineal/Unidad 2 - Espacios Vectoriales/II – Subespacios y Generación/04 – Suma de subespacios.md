@@ -1454,14 +1454,14 @@ dg-publish: true
 > - **[[01 - Subespacios Vectoriales]]** - Qué es un subespacio
 > - **[[08 - Bases]]** - Bases de subespacios
 > - **[[09 - Dimensión]]** - Concepto de dimensión
-> - **[[07 - Independencia Lineal]]** - Para verificar sumas directas
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Para verificar sumas directas
 > 
 > ### Este tema es prerequisito para:
 > 
 > - **[[06 – Complemento ortogonal]]** - Caso especial de suma directa
 > - **[[17 - Proyecciones]]** - Descomposición usando suma directa
 > - **[[18 - Descomposición Espectral]]** - Suma de espacios propios
-> - **[[22 - Teorema del Rango-Nulidad]]** - $V = \ker(T) \oplus \text{Im}(T)$ (indirectamente)
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]]** - $V = \ker(T) \oplus \text{Im}(T)$ (indirectamente)
 > 
 > ### Temas relacionados:
 > 

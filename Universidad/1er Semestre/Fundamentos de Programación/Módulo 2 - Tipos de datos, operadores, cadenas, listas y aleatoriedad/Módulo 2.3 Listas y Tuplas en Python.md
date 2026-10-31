@@ -265,7 +265,7 @@ dg-publish: true
 > ### 🔧 **Prerrequisitos**
 > 
 > - Variables Básicas Python
-> - [[Operadores Python]]
+> - [[1er Semestre/Fundamentos de Programación/Módulo 4 - Estructuras de control/Módulo 4.2 Iteradores for.md]]
 > - Strings y Indexación Python
 > - [[Módulo 4.1 Condicional]]
 > 

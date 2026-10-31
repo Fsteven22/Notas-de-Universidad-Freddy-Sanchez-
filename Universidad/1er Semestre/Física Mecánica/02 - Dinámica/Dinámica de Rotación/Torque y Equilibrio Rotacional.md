@@ -157,7 +157,7 @@ dg-publish: true
 > - **Resistencia rotacional**: Relaciona torque con aceleración angular
 > - **Ecuación conjunta**: Mayor $I$ requiere mayor $\tau$ para misma $\alpha$
 > 
-> ### [[Trabajo y Energía Rotacional]]
+> ### [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Trabajo y Energía.md]]
 > 
 > - **Trabajo rotacional**: $W = \tau \Delta\theta$
 > - **Potencia rotacional**: $P = \tau \omega$
@@ -219,9 +219,9 @@ dg-publish: true
 > - [[Momento de Inercia]]
 > - [[Momentum Angular]]
 > - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
-> - [[Trabajo y Energía Rotacional]]
+> - [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Trabajo y Energía.md]]
 > - Palancas y Máquinas Simples
-> - [[Producto Vectorial]]
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]]
 > 
 > ### 📖 Temas Avanzados
 > 
@@ -388,11 +388,11 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Momento de Torsión]]
+> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Torque y Equilibrio Rotacional.md]]
 > - [[Cinemática Rotacional]]
 > - [[Estática]]
 > - [[Fuerzas y Equilibrio]]
-> - [[Diagramas de Cuerpo Libre]]
+> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]]
 > - [[Centro de masa (CM)]]
 
 ---

@@ -283,7 +283,7 @@ dg-publish: true
 
 > [!tip] Continuación del Tema
 > - [[01 - Coordenadas cilíndricas y esféricas]]
-> - [[Integrales de Línea]]
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]]
 > - Teoremas de Green y Stokes
 > - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]]
 

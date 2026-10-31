@@ -289,13 +289,13 @@ dg-publish: true
 > - [[02 - Propiedades de la Integral]] - Herramientas para simplificar
 > - [[01 - Integral de Riemann]] - Definición formal subyacente
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
-> - [[Volúmenes de Revolución]] - Aplicación de estas técnicas
+> - [[1er Semestre/Cálculo de una Variable/Unidad 06 – Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md]] - Aplicación de estas técnicas
 > 
 > ### 📖 Técnicas Relacionadas
 > - [[01 - Integrales Impropias]] - Extensión a límites infinitos
 > - [[01 - Integración Numérica]] - Métodos aproximados
 > - [[06 - Funciones Especiales]] - Integrales no elementales
-> - [[Cálculo de Variaciones]] - Técnicas avanzadas
+> - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Técnicas avanzadas
 > 
 > ### 🎯 Aplicaciones Prácticas
 > - [[Trabajo y Energía con Integrales]] - Uso en física

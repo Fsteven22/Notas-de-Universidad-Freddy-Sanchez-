@@ -295,14 +295,14 @@ dg-publish: true
 ### 📚 Temas Relacionados
 
 - [[02 - Área entre Curvas]] - Concepto base y método con dx
-- [[Métodos de Integración]] - Técnicas para evaluar las integrales resultantes
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas para evaluar las integrales resultantes
 - [[Funciones Inversas]] - Para transformar entre y = f(x) y x = g(y)
-- [[Aplicaciones de Integrales Definidas]] - Contexto más amplio de aplicaciones
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/IV - Integrales Impropias y Avanzadas/04 - Asíntotas en Integrales Definidas.md]] - Contexto más amplio de aplicaciones
 
 ### 🎯 Casos Especiales
 
 - [[04 - Área en Coordenadas Polares y Paramétricas]] - Extensiones a otros sistemas
-- [[Volúmenes de Revolución]] - Aplicación del método de discos/arandelas con dy
+- [[1er Semestre/Cálculo de una Variable/Unidad 06 – Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md]] - Aplicación del método de discos/arandelas con dy
 - [[Centros de Masa y Centroides]] - Usando integración respecto a y
 - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Extensión del concepto a longitudes
 

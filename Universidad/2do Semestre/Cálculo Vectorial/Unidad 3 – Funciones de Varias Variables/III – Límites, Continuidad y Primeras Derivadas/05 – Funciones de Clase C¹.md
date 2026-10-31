@@ -1787,7 +1787,7 @@ dg-publish: true
 > - [[04 – Diferenciabilidad]] - C¹ es condición suficiente para diferenciabilidad
 > - [[12 - Regla de la Cadena Multivariable]] - Requiere C¹ para funcionar
 > - [[04 - Teorema de la Función Implícita]] - Hipótesis esencial
-> - [[14 - Teorema de la Función Inversa]] - Requiere C¹
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/04 - Teorema de la Función Implícita.md]] - Requiere C¹
 > - [[01 - Multiplicaciones de Lagrange]] - Necesita gradientes continuos
 > - [[16 - Fórmula de Taylor Multivariable]] - Extensión a C²
 > - [[17 - Teorema de Schwarz]] - Igualdad de derivadas mixtas

@@ -299,7 +299,7 @@ dg-publish: true
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Crecimiento, extremos, inflexión
 > - [[Ecuaciones Diferenciales]] - Modelado con razones de cambio
 > - [[Cálculo Numérico]] - Aproximación de derivadas
-> - [[Física Matemática]] - Aplicaciones avanzadas en ciencias
+> - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Aplicaciones avanzadas en ciencias
 
 ---
 

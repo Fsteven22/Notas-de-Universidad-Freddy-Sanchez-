@@ -2672,7 +2672,7 @@ dg-publish: true
 > - [[01 - Subespacios Vectoriales]] - Espacio solución como subespacio
 > - [[01 – Dependencia e independencia lineal]] - Relación con el rango
 > - [[01 - Subespacios Vectoriales]] - Conjunto solución de sistemas compatibles
-> - [[Dimensión de un espacio vectorial]] - Grados de libertad
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/03 – Coordenadas en un espacio vectorial.md]] - Grados de libertad
 > 
 > **Aplicaciones prácticas:**
 > 
@@ -2687,8 +2687,8 @@ dg-publish: true
 > - [[02 - Teorema de Rouché-Frobenius#Sistemas con Parámetros|Sistemas con parámetros]] - Discusión de sistemas
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Sistemas incompatibles aproximados
 > - [[Pseudoinversa de Moore-Penrose]] - Soluciones generalizadas
-> - [[Programación Lineal]] - Factibilidad de restricciones
-> - [[Teoremas de Existencia y Unicidad]] - Ecuaciones diferenciales
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/02 – Combinación lineal.md]] - Factibilidad de restricciones
+> - [[2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización/II – Extremos sin Restricciones/02 – Teoremas de Existencia y Clasificación.md]] - Ecuaciones diferenciales
 >
 
 > [!info] 📚 Temas Avanzados Relacionados

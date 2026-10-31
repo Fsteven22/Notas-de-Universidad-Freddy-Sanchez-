@@ -718,7 +718,7 @@ dg-publish: true
 > **Prerequisites:**
 > - [[Derivadas Parciales]] - Base del cálculo multivariable
 > - [[Continuidad y Diferenciabilidad]] - Condiciones de regularidad
-> - [[Funciones de Varias Variables]] - Dominio del teorema
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Dominio del teorema
 > 
 > **Temas relacionados:**
 > - [[06 – Matriz Jacobiana#Regla de la Cadena Multivariable|Regla de la Cadena Multivariable]] - Derivación de fórmulas

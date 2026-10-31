@@ -181,7 +181,7 @@ dg-publish: true
 > - **Analogía directa**: $\sum F = ma$ ↔ $\sum \tau = I\alpha$
 > - **Conexión**: Movimiento de traslación y rotación simultáneos
 > 
-> ### [[Energía Cinética Rotacional]]
+> ### [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > 
 > - **Relación**: El trabajo rotacional $W = \tau \Delta\theta$ cambia la energía cinética
 > - **Conexión**: $K_{rot} = \frac{1}{2}I\omega^2$
@@ -229,8 +229,8 @@ dg-publish: true
 > - Momento de Torsión (Torque)
 > - [[Momento de Inercia]]
 > - [[Cinemática Rotacional]]
-> - [[Dinámica Lineal - Segunda Ley de Newton]]
-> - [[Energía Cinética Rotacional]]
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Práctica Segunda ley de Newton.md]]
+> - [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > - [[Centro de masa (CM)]]
 > - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > 

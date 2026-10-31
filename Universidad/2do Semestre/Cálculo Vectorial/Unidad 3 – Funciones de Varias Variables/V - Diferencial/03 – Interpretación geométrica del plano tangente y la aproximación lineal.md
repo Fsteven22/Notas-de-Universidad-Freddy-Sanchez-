@@ -1175,8 +1175,8 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Base vectorial
 > - [[Derivadas Parciales]] - Herramienta fundamental
-> - [[Límites en varias variables]] - Concepto de aproximación
-> - [[Continuidad en R²]] - Condición necesaria
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Concepto de aproximación
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/02 – Continuidad.md]] - Condición necesaria
 > 
 > **Temas relacionados:**
 > 
@@ -1190,7 +1190,7 @@ dg-publish: true
 > - [[Teorema de Taylor en R²]] - Aproximaciones de orden superior
 > - [[Ecuaciones Diferenciales Parciales]] - EDPs sobre superficies
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y formas fundamentales
-> - [[Cálculo Variacional]] - Optimización de funcionales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Optimización de funcionales
 > 
 > **Conexiones interdisciplinarias:**
 > 

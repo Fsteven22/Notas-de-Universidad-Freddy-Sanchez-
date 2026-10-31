@@ -1268,7 +1268,7 @@ dg-publish: true
 > **Prerequisitos:**
 > - [[03 - Superficies de revolución#Coordenadas Cilíndricas|Coordenadas Cilíndricas]] - Sistema natural para superficies de revolución
 > - [[01 - Coordenadas cilíndricas y esféricas#Coordenadas Esféricas|Coordenadas Esféricas]] - Para esfera y elipsoides
-> - [[Curvas Paramétricas]] - Generatrices
+> - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Generatrices
 > - [[02 - Vectores en R3]] - Normal y tangentes a superficies
 > - [[Cálculo Integral]] - Áreas y volúmenes
 > 

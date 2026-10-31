@@ -4324,7 +4324,7 @@ dg-publish: true
 > 
 > **Se conecta con:**
 > - [[Espacio Nulo y Espacio Columna]]
-> - [[Teorema Rango-Nulidad]]
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]]
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]]
 > - [[02 – Base y dimensión]]
 > - [[01 – Transformaciones lineales]]

@@ -265,7 +265,7 @@ dg-publish: true
 > 
 > - [[Presión y Densidad]] - Fundamentos básicos
 > - [[El Principio de Pascal]] - Transmisión de presión
-> - [[Hidrostática]] - Teoría general
+> - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Fundamentos de Hidrostática e Hidrodinámica/La Paradoja Hidrostática.md]] - Teoría general
 > - [[Problemas del Principio de Arquímedes (Fuerza de Flotación)]] - Fuerzas de empuje
 > - [[Teorema de los Vasos Comunicantes]] - Equilibrio de presiones
 

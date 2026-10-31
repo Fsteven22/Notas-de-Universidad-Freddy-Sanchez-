@@ -356,7 +356,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Mediciones Fundamentales]] - Base conceptual
-> - [[Uso del Calibrador de Vernier]] - Aplicación práctica
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Mediciones e Instrumentos/Uso del Calibrador de Vernier (Pie de Rey).md]] - Aplicación práctica
 > - [[Incertidumbres Experimentales]] - Análisis avanzado
 > - [[Cifras Significativas]] - Expresión correcta de resultados
 

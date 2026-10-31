@@ -281,20 +281,20 @@ dg-publish: true
 
 - [[01 - Área bajo la Curva]] - Concepto fundamental base
 - [[04 - Teorema Fundamental del Cálculo]] - Herramienta principal de evaluación
-- [[Métodos de Integración]] - Técnicas para resolver las integrales
-- [[Aplicaciones de Integrales Definidas]] - Contexto más amplio
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas para resolver las integrales
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/IV - Integrales Impropias y Avanzadas/04 - Asíntotas en Integrales Definidas.md]] - Contexto más amplio
 - Funciones y sus Gráficas - Análisis de intersecciones y comportamiento
 
 ### 📖 Para Profundizar
 
 - [[02 - Coordenadas polares]] - Extensión a otros sistemas de coordenadas
-- [[Curvas Paramétricas]] - Representaciones alternativas de curvas
+- [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Representaciones alternativas de curvas
 - [[03 – Integrales de línea vectoriales#Teorema de Green|Teorema de Green]] - Método alternativo para cálculo de áreas
 - [[01 - Integración Numérica]] - Métodos computacionales
 
 ### 🎯 Notas Recomendadas
 
-- [[Optimización y Puntos Críticos]] - Para encontrar máximos y mínimos relevantes
+- [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/02 - Monotonía y Puntos Críticos.md]] - Para encontrar máximos y mínimos relevantes
 - [[Ecuaciones de Curvas Especiales]] - Círculos, elipses, parábolas, hipérbolas
 - [[Aplicaciones Geométricas del Cálculo]] - Volúmenes, longitudes de arco
 - Modelado Matemático con Integrales - Aplicaciones en ciencias e ingeniería

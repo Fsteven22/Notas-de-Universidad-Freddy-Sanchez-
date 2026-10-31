@@ -210,8 +210,8 @@ dg-publish: true
 > 
 > - [[01 - Propiedades y Teoremas de los Límites]] - Cálculo algebraico
 > - [[01 - Propiedades y Teoremas de los Límites]] - Propiedades fundamentales
-> - [[Derivadas Geométricamente]] - Interpretación de la pendiente
-> - [[Análisis Gráfico de Funciones]] - Técnicas avanzadas
+> - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Interpretación de la pendiente
+> - [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md]] - Técnicas avanzadas
 > - [[Software Matemático]] - Herramientas de graficación
 
 ---

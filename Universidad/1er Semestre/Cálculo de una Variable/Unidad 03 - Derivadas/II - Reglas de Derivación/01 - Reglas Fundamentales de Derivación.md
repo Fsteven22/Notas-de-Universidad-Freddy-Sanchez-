@@ -556,7 +556,7 @@ dg-publish: true
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Uso conjunto de derivadas para estudiar funciones
 > - Optimización en Cálculo - Aplicaciones en problemas de máximos y mínimos
 > - Modelado Matemático con Derivadas - Aplicaciones en ciencias e ingeniería
-> - [[L'Hôpital y Formas Indeterminadas]] - Uso avanzado de derivadas en límites
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/V – Formas Indeterminadas/01 - Formas Indeterminadas.md]] - Uso avanzado de derivadas en límites
 
 ---
 

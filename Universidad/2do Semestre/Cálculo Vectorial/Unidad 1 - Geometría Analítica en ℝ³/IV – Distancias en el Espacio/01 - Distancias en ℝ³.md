@@ -688,7 +688,7 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
-> - [[Producto Vectorial]] - Necesario para distancia punto-recta
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Necesario para distancia punto-recta
 > - [[Producto Escalar]] - Proyecciones y ángulos
 > - [[Ecuaciones de Rectas]] - Formas paramétricas y simétricas
 > - [[Ecuaciones de Planos]] - Forma general y normal

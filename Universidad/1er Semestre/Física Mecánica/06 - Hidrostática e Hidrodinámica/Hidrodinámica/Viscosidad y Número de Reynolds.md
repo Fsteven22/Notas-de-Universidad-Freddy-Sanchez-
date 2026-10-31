@@ -261,7 +261,7 @@ dg-publish: true
 
 > [!info]+ Prerrequisitos
 > 
-> - [[Propiedades de los Fluidos]]
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]]
 > - Esfuerzos Cortantes
 > - [[Gradientes de Velocidad]]
 > - [[Conceptos de Densidad]]

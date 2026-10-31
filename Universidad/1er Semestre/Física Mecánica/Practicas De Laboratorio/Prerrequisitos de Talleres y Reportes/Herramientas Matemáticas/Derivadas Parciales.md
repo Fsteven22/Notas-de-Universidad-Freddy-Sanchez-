@@ -520,7 +520,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación principal
-> - [[Análisis de Errores]] - Contexto experimental
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis de Datos y Errores/Tipos de Errores.md]] - Contexto experimental
 > - [[Cálculo Vectorial]] - Extensiones matemáticas
 > - Optimización - Aplicaciones avanzadas
 
@@ -528,7 +528,7 @@ dg-publish: true
 
 > [!note] **Prerrequisitos**
 > 
-> - [[Funciones de Varias Variables]] - Concepto base
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Concepto base
 > - **Cálculo diferencial**: Derivadas ordinarias
 > - **Álgebra**: Operaciones básicas
 

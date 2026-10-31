@@ -949,7 +949,7 @@ dg-publish: true
 > - Composición de cambios de base
 > - Conexión con transformaciones lineales
 > 
-> **Nota:** Este tema será desarrollado completamente en **[[14 - Cambio de Base]]**.
+> **Nota:** Este tema será desarrollado completamente en **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]]**.
 
 ---
 
@@ -1622,11 +1622,11 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > - **[[08 - Bases]]** - Definición de base, verificación, construcción
 > - **[[09 - Dimensión]]** - Relación entre dimensión y número de coordenadas
 > - **[[02 – Combinación lineal]]** - Expresar vectores como combinaciones
-> - **[[07 - Independencia Lineal]]** - Unicidad de representación
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Unicidad de representación
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[14 - Cambio de Base]]** - Matrices de transición entre bases
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]]** - Matrices de transición entre bases
 > - **[[01 – Transformaciones lineales]]** - Representación matricial
 > - **[[17 - Núcleo e Imagen]]** - Coordenadas de ker y im
 > - **[[20 - Isomorfismos]]** - Equivalencia de espacios vectoriales

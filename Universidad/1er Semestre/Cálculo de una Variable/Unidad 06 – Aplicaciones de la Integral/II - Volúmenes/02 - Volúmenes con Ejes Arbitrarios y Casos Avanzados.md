@@ -387,7 +387,7 @@ dg-publish: true
 - [[01 - Volúmenes de Sólidos de Revolución]] - Conceptos fundamentales base
 - [[03 - Área entre Curvas respecto a Y|Área entre Curvas: Integración con Respecto a Y]] - Técnicas de integración vertical
 - [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Herramientas matemáticas básicas
-- [[Métodos de Integración]] - Técnicas para resolver integrales complejas
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas para resolver integrales complejas
 
 ### 📖 Para Profundizar
 

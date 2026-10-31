@@ -151,10 +151,10 @@ Ejemplo:
 - ![[Cálculo de una Variable]] - Para entender optimización y gradientes
 - ![[Estadística y Probabilidad]] - Base fundamental para ML
 - ![[Álgebra Lineal]] - Operaciones matriciales y vectoriales
-- ![[Estadística Descriptiva]] - Análisis exploratorio de datos
+- ![[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Estadística Básica.md]] - Análisis exploratorio de datos
 
 ### 💻 **Programación (Requeridos)**
-- ![[Variables y Tipos de Datos]] - Fundamentos de Python
+- ![[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] - Fundamentos de Python
 - ![[01 - Funciones]] - Modularización de código
 - ![[Pandas]] - Manipulación de datos
 - ![[NumPy]] - Cálculos numéricos

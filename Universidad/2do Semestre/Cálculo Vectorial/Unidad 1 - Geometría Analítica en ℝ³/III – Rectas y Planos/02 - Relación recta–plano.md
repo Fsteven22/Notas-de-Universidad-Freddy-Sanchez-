@@ -1102,7 +1102,7 @@ dg-publish: true
 > - [[05 - Sistemas de ecuaciones lineales]] - Intersecciones múltiples
 > - [[Geometría Proyectiva]] - Puntos al infinito
 > - [[01 – Transformaciones lineales]] - Matrices de rotación
-> - [[Espacios Afines]] - Formalización abstracta
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/06 – Espacio fila.md]] - Formalización abstracta
 > 
 > **Aplicaciones interdisciplinarias:**
 > 

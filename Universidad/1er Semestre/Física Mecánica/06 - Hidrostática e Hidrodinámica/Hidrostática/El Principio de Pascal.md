@@ -148,14 +148,14 @@ dg-publish: true
 > [!info]+ Prerrequisitos
 > 
 > - [[Conceptos de Presión]]
-> - [[Propiedades de los Fluidos]]
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]]
 > - Estática de Fluidos
 > - [[Unidades de Presión]]
 >
 
 > [!success]+ Para Profundizar
 > 
-> - [[Hidrodinámica - Ecuación de Bernoulli]]
+> - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Bernoulli.md]]
 > - Aplicaciones Industriales de Pascal
 > - Sistemas Oleohidráulicos
 > - Transmisión de Potencia Hidráulica

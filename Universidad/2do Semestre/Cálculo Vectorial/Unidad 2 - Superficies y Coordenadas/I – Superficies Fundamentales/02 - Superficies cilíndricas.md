@@ -1009,7 +1009,7 @@ dg-publish: true
 > 
 > - [[Cálculo Vectorial]] - Integrales de superficie
 > - [[Ecuaciones Diferenciales]] - Problemas en coordenadas cilíndricas
-> - [[Física Matemática]] - Laplaciano en cilindros
+> - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Laplaciano en cilindros
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies desarrollables
 > 
 > **Temas posteriores:**

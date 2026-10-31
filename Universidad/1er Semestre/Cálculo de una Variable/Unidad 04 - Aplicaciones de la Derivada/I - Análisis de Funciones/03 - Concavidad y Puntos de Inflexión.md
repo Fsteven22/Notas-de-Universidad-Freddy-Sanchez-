@@ -210,7 +210,7 @@ dg-publish: true
 
 ## Referencias 🔗
 
-> [!quote] [[Criterios de Optimización]] Aprende sobre máximos y mínimos usando derivadas
+> [!quote] [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/II - Optimización/01 - Problemas de Optimización.md]] Aprende sobre máximos y mínimos usando derivadas
 >
 
 > [!quote] [[01 - Análisis Completo de Funciones]] Estudio completo del comportamiento de funciones

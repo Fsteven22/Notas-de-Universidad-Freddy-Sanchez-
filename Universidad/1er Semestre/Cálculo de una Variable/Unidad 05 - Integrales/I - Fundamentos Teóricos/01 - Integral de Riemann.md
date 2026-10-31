@@ -193,7 +193,7 @@ Para partición regular con $\Delta x = \frac{b-a}{n}$:
 > - [[01 - Integrales Impropias]] - Extensión del concepto
 > 
 > ### 📖 Para Profundizar
-> - [[Historia de la Integración]] - Desarrollo histórico del concepto
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/II - Integrales Indefinidas/Constante de integración.md]] - Desarrollo histórico del concepto
 > - [[Integral de Lebesgue]] - Generalización moderna
 > - [[Métodos Numéricos de Integración]] - Aplicaciones computacionales
 > 

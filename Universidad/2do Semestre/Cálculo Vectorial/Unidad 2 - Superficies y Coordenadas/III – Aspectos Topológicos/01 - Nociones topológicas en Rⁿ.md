@@ -1732,7 +1732,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[Cálculo Multivariable]] - Límites y continuidad
-> - [[Funciones de Varias Variables]] - Dominios abiertos
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Dominios abiertos
 > - [[01 – Integrales múltiples]] - Regiones de integración
 > - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Campos vectoriales
 > 

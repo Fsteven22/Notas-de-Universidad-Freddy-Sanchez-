@@ -210,7 +210,7 @@ dg-publish: true
 > ### 🔬 Temas Avanzados
 > 
 > - `Relatividad General` - Teoría moderna de gravedad
-> - `[[Problema de N-Cuerpos]]` - Sistemas gravitacionales complejos
+> - `[[1er Semestre/Física Mecánica/01 - Cinemática/Aplicaciones de Cinemática Traslacional/Problemas de Encuentro.md]]` - Sistemas gravitacionales complejos
 > - `Ondas Gravitacionales` - Perturbaciones del espaciotiempo
 > - `[[Materia Oscura]]` - Efectos gravitacionales anómalos
 > 

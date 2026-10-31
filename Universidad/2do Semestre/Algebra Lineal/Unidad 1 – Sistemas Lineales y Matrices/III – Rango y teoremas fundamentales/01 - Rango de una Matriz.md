@@ -1442,7 +1442,7 @@ dg-publish: true
 > 
 > - [[Descomposición SVD]] - Valores singulares
 > - [[Espacios Fundamentales]] - Cuatro subespacios
-> - [[Teorema Rango-Nulidad]] - Dimensiones complementarias
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Dimensiones complementarias
 > - [[Pseudoinversa de Moore-Penrose]] - Generalización de inversa
 > 
 > **Aplicaciones computacionales:**

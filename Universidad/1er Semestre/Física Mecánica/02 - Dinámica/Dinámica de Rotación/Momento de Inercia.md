@@ -129,7 +129,7 @@ dg-publish: true
 > - **Segunda Ley de Newton rotacional**: $\sum \tau = I\alpha$
 > - El momento de inercia es la "masa rotacional" en esta ecuación
 > 
-> ### [[Energía Cinética Rotacional]]
+> ### [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > 
 > - **Fórmula**: $K_{rot} = \frac{1}{2}I\omega^2$
 > - Análoga a $K = \frac{1}{2}mv^2$ pero para rotación
@@ -183,7 +183,7 @@ dg-publish: true
 > 
 > - [[Cinemática Rotacional]]
 > - [[Momentum Angular]]
-> - [[Energía Cinética Rotacional]]
+> - [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > - [[Centro de masa (CM)]]
 > - Torque y Momento de Torsión
 > - Conservación del Momento Angular
@@ -191,7 +191,7 @@ dg-publish: true
 > 
 > ### 📖 Temas Avanzados
 > 
-> - [[Tensor de Inercia]]
+> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momento de Inercia.md]]
 > - [[Movimientos de Rodadura]]
 > - [[Giroscopios y Precesión]]
 > - [[Momento de Inercia de Cuerpos Compuestos]]

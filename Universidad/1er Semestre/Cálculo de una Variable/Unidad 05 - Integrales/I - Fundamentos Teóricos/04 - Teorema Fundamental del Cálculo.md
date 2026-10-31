@@ -215,11 +215,11 @@ dg-publish: true
 > - [[Teorema del Valor Medio]] - Base teórica de la demostración
 > - [[04 - Teorema Fundamental del Cálculo#Funciones Definidas por Integrales|Funciones Definidas por Integrales]] - Estudio detallado de funciones integrales
 > - Historia del Cálculo - Desarrollo histórico del teorema
-> - [[Cálculo de Variaciones]] - Generalización avanzada
+> - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Generalización avanzada
 > 
 > ### 🎯 Aplicaciones Especializadas
 > - [[Trabajo y Energía con Integrales]] - Aplicaciones en física
-> - [[Volúmenes de Revolución]] - Aplicaciones geométricas
+> - [[1er Semestre/Cálculo de una Variable/Unidad 06 – Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md]] - Aplicaciones geométricas
 > - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Más aplicaciones geométricas
 > 
 ### 🏷️ Tags

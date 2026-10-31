@@ -233,7 +233,7 @@ dg-publish: true
 
 > [!tip] Continuación del Tema
 > - [[03 - Superficies de revolución|Área de Superficies de Revolución]]
-> - [[Integrales de Línea]]
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]]
 > - Curvatura y Torsión
 > - Geometría Diferencial
 
@@ -854,11 +854,11 @@ dg-publish: true
 ### 🔗 Notas Relacionadas
 
 - [[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
-- [[Métodos de Integración]] - Técnicas necesarias para resolver las integrales
+- [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas necesarias para resolver las integrales
 - [[02 - Área entre Curvas]] - Concepto dual de medida geométrica
 - [[01 - Volúmenes de Sólidos de Revolución]] - Otra aplicación geométrica de integrales
 - [[02 - Coordenadas polares]] - Para curvas con simetría radial
-- [[Curvas Paramétricas]] - Representación alternativa de curvas
+- [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Representación alternativa de curvas
 
 ### 📖 Para Profundizar
 
@@ -866,8 +866,8 @@ dg-publish: true
 - Curvatura y Torsión - Propiedades geométricas locales de curvas
 - [[Cálculo Vectorial]] - Extensión a curvas en el espacio 3D
 - Geometría Diferencial - Estudio sistemático de curvas y superficies
-- [[Integrales de Línea]] - Integración a lo largo de curvas
-- [[Cálculo de Variaciones]] - Optimización de functionales que involucran longitud
+- [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]] - Integración a lo largo de curvas
+- [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Optimización de functionales que involucran longitud
 
 ### 🎯 Aplicaciones Especializadas
 

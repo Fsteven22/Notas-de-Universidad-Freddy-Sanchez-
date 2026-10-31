@@ -320,7 +320,7 @@ dg-publish: true
 > 
 > ### Temas Relacionados:
 > 
-> - [[Límites Indeterminados]] - Casos complejos
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/V – Formas Indeterminadas/01 - Formas Indeterminadas.md]] - Casos complejos
 > - [[01 - Formas Indeterminadas]] - Herramienta avanzada
 > - Series Infinitas - Comportamiento asintótico avanzado
 >

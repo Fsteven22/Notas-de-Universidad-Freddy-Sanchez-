@@ -1061,7 +1061,7 @@ dg-publish: true
 > **Prerrequisitos:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
-> - [[Cálculo Diferencial]] - Derivadas y límites
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y límites
 > - [[Cálculo Integral]] - Integrales
 > - [[Trigonometría]] - Funciones trigonométricas
 > 
@@ -1083,7 +1083,7 @@ dg-publish: true
 > - [[Curvatura y Torsión]] - Propiedades geométricas
 > - [[Marco de Frenet]] - Base ortonormal móvil
 > - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Funciones r(x,y,z)
-> - [[Integrales de Línea]] - Integración sobre curvas
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]] - Integración sobre curvas
 
 ---
 

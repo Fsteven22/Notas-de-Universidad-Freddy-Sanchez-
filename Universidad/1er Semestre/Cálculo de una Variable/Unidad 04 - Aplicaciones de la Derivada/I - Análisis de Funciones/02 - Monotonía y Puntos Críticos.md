@@ -485,7 +485,7 @@ dg-publish: true
 > 
 > - Análisis Convexo - Propiedades de convexidad
 > - [[Ecuaciones Diferenciales]] - Sistemas dinámicos
-> - [[Cálculo de Variaciones]] - Optimización funcional
+> - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Optimización funcional
 
 ---
 

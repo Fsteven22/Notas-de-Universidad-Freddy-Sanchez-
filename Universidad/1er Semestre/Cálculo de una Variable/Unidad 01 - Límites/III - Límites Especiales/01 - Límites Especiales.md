@@ -536,7 +536,7 @@ dg-publish: true
 > ### Prerrequisitos:
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Conceptos fundamentales
-> - [[Propiedades de Logaritmos]] - Esencial para método logarítmico
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]] - Esencial para método logarítmico
 > - [[01 - Límites Especiales#Límites Fundamentales|Límites Fundamentales]] - Base para límites trigonométricos
 > - [[01 - Formas Indeterminadas]] - Clasificación general
 > 
@@ -680,8 +680,8 @@ dg-publish: true
 > **Prerrequisitos necesarios:**
 > 
 > - [[Límites Básicos]] - Fundamentos de límites
-> - [[Propiedades del Logaritmo]] - ln(ab) = ln(a) + ln(b), etc.
-> - [[Derivadas Básicas]] - Para aplicar L'Hôpital
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]] - ln(ab) = ln(a) + ln(b), etc.
+> - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas.md]] - Para aplicar L'Hôpital
 > 
 > **Para profundizar:**
 > 

@@ -1482,7 +1482,7 @@ dg-publish: true
 > - **Diferenciabilidad** - Generaliza el concepto de límite
 > - **Integrales múltiples** - Límites de sumas de Riemann
 > 
-> **Siguiente tema recomendado:** [[07 - Continuidad de Funciones de Varias Variables]]
+> **Siguiente tema recomendado:** [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/02 – Continuidad.md]]
 
 ---
 

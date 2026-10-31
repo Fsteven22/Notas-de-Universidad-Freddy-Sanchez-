@@ -282,7 +282,7 @@ dg-publish: true
 > - [[Módulo 5.2 Iterar Diccionarios]] - Recorrer diccionarios
 > - Collections Module - defaultdict, Counter, OrderedDict
 > - JSON y APIs - Trabajo con datos web estructurados
-> - [[Manejo de Errores]] - Try/except con KeyError
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis de Datos y Errores/Tipos de Errores.md]] - Try/except con KeyError
 > - [[Programación Orientada a Objetos]] - Modelado con diccionarios
 
 ---

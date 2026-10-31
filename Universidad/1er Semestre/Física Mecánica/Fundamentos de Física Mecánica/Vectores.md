@@ -227,7 +227,7 @@ dg-publish: true
 > - [[Cinemática Traslacional]] - Vectores posición, velocidad, aceleración
 > - [[Cinemática Rotacional]] - Vectores angulares y momento angular
 > - Trigonometría - Base para descomposición de vectores
-> - [[Producto Cruz]] - Análisis profundo del producto vectorial
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Análisis profundo del producto vectorial
 
 ## 📖 Notas Recomendadas para Complementar
 
@@ -243,7 +243,7 @@ dg-publish: true
 > **Temas complementarios:**
 > 
 > - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Vectores que varían en el espacio
-> - [[Derivadas Vectoriales]] - Tasas de cambio de vectores
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Derivadas Parciales.md]] - Tasas de cambio de vectores
 > - [[Integrales Vectoriales]] - Integración de campos vectoriales
 > - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 

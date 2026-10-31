@@ -231,7 +231,7 @@ dg-publish: true
 >     
 > - > Conservación del Momentum Lineal - Analogía lineal
 >     
-> - > [[Energía Cinética Rotacional]] - Relación energética
+> - > [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]] - Relación energética
 >     
 > - > [[Giroscopios]] - Aplicación práctica
 >     

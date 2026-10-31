@@ -380,7 +380,7 @@ dg-publish: true
 > [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de optimización aplicada
 >
 
-> [!quote] [[Cálculo de Varias Variables]] Extensión completa del método de Lagrange
+> [!quote] [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] Extensión completa del método de Lagrange
 
 
 ---

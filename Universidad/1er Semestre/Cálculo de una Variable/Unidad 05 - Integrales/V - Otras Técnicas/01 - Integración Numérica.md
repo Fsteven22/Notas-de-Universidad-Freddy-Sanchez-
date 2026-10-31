@@ -399,9 +399,9 @@ dg-publish: true
 > 
 > ### 🧮 Aplicaciones Especializadas
 > - Análisis de Señales Digitales - Integración de funciones muestreadas
-> - [[Simulación Numérica]] - Integración en ecuaciones diferenciales
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
 > - [[Procesamiento de Datos Experimentales]] - Análisis de mediciones discretas
-> - [[Optimización Numérica]] - Integración en algoritmos de optimización
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]] - Integración en algoritmos de optimización
 > 
 
 ---

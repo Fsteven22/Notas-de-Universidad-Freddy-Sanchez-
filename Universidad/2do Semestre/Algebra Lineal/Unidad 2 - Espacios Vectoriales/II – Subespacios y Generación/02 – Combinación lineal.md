@@ -1335,10 +1335,10 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[09 - Independencia Lineal]] - Cuando la única combinación que da $\vec{0}$ es la trivial
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Cuando la única combinación que da $\vec{0}$ es la trivial
 > - [[02 – Base y dimensión]] - Conjuntos que generan mediante combinaciones lineales
 > - [[01 – Transformaciones lineales]] - Preservan combinaciones lineales
-> - [[12 - Espacios Columna y Nulo]] - Definidos por combinaciones de columnas
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]] - Definidos por combinaciones de columnas
 > - [[13 - Rango y Nulidad]] - Dimensiones de espacios generados
 > - [[14 - Sistemas de Ecuaciones]] - Interpretación como combinaciones
 > 

@@ -218,7 +218,7 @@ dg-publish: true
 >     
 > - > [[Rodadura]] - Aplicación principal de energía rotacional
 >     
-> - > [[Conservación de Energía]] - Principio fundamental
+> - > [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Principios de Conservación de la Energía.md]] - Principio fundamental
 >     
 > - > [[Trabajo y Energía]] - Conceptos base de energía
 >     
@@ -228,7 +228,7 @@ dg-publish: true
 >     
 > - > Potencia - Rapidez de transferencia energética
 >     
-> - > [[Volantes de Inercia]] - Aplicación tecnológica
+> - > [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momento de Inercia.md]] - Aplicación tecnológica
 >     
 >
 

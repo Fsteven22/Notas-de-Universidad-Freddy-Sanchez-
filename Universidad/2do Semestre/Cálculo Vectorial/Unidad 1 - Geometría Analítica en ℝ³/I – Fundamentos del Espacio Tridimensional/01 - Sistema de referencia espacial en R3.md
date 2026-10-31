@@ -265,7 +265,7 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - [[01 – Transformaciones lineales]] - Cambios de base
-> - [[Producto Vectorial]] - Operaciones en ℝ³
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Operaciones en ℝ³
 > - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Curvas en el espacio
 
 ## 💡 Consejos de Estudio

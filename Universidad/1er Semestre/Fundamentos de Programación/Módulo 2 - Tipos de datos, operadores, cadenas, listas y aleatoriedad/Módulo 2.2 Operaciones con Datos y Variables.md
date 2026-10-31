@@ -344,7 +344,7 @@ dg-publish: true
 > 
 > ### 🔄 **Temas Relacionados**
 > 
-> - [[Expresiones Regulares Python]] - Manipulación avanzada de strings
+> - [[1er Semestre/Fundamentos de Programación/Módulo general - Funciones especiales/Expresiones Regulares (Regex).md]] - Manipulación avanzada de strings
 > - [[Matemáticas Python (math)]] - Operaciones numéricas complejas
 > - Formateo de Strings Python - f-strings y formato avanzado
 > - [[Validación de Datos Python]] - Uso práctico de casting y booleanos

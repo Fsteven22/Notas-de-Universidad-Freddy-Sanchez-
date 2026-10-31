@@ -833,7 +833,7 @@ dg-publish: true
 > **Fundamentos previos:**
 > 
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios vectoriales
-> - [[06 - Independencia lineal]] - Bases y dimensión
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases y dimensión
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > - [[19 - Núcleo e Imagen]] - Subespacios fundamentales

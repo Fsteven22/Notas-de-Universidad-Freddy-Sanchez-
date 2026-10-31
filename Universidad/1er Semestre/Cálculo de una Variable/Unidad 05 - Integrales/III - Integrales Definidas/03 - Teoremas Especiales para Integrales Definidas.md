@@ -341,7 +341,7 @@ dg-publish: true
 > 
 > ### 🎯 Notas Recomendadas
 > 
-> - [[Métodos de Integración]] - Técnicas que se benefician de estas propiedades
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas que se benefician de estas propiedades
 > - Aplicaciones Físicas de Integrales - Contexto real de funciones periódicas
 > - Geometría de Curvas - Interpretación visual de simetrías
 > 

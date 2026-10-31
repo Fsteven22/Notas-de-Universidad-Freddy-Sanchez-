@@ -1286,7 +1286,7 @@ dg-publish: true
 > - **[[08 - Bases]]** - Definición y propiedades de bases
 > - **[[03 – Coordenadas en un espacio vectorial]]** - Vector de coordenadas
 > - **[[09 - Dimensión]]** - Tamaño de las matrices de cambio
-> - **[[07 - Independencia Lineal]]** - Garantiza invertibilidad
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Garantiza invertibilidad
 > 
 > ### Este tema es prerequisito para:
 > 
