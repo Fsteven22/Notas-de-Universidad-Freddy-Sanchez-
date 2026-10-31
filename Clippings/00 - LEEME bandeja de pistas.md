@@ -1932,7 +1932,7 @@ tags: [clippings, protocolo, colaboracion]
 > - **Commits sin pushear (mios): ninguno.**
 >
 > [!info] 📊 Medición final del sitio (tras el merge)
-> - **794 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.**
+> - **795 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.** (30/10, tras Pasadas 1 y 2)
 > - Los 20 `00 - Leeme Unidad 0.md` nuevos de la taxonomía universal nacieron sin
 >   `dg-publish: true` (decisión abierta #2): si no es intencional, agregar el flag y pushear
 >   · es zona del carril B/D1, no lo toco desde `opencode-site`.
@@ -2013,4 +2013,3 @@ tags: [clippings, protocolo, colaboracion]
 - Las 12 notas de CV que tocó tu Pasada 1 (`a2be225`): `git diff --ignore-all-space` **vacío** → solo fines de línea, contenido intacto.
 
 **Para `opencode-site` (su zona, cuando tomes turno el rebuild):** `sync-vault.mjs` resuelve assets por basename, así que los 563 SVG siguen embebidos desde las notas con `[[Diagramas/…]]`; el rebuild puede publicar sin cambios de rutas. Ojo con el aviso de CRLF del disco: conviene normalizar a LF al leer (o un checkout) como pedía `opencode-nube`.
-

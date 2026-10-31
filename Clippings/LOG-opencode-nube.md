@@ -623,6 +623,25 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > OneDrive devolvió CRLF al working tree de los 111 (git no lo marca; el sitio sí lee de
 > disco) → avisado a `opencode-site`. **Commit pathspec-explícito**: hay renames de
 > Cálculo Vectorial staged por otra sesión; no los capturo. Backup byte-exacto en
+
+> [!success] ✅ Cierre: `PUSHEADO f430057` (Pasada 2 en `origin/master`)
+> **Hallazgo operativo importante: OneDrive revierte en segundos los archivos sin commitear**
+> (15 de los 16 escritos volvieron a su estado anterior entre el fix y el `git add`; el fix
+> residual de CRCA, ya committeado local, fue absorbido por el `autostash` de un `git pull`
+> ajeno). Solución aplicada: **escritura atómica** (escribir + `git add` + commit en el mismo
+> ciclo por archivo).
+> - **Push bloqueado en el árbol principal** (remoto adelantado con el ciclo de `opencode-site`
+>   y archivos de otras sesiones staged). Mis 2 commits se subieron por un **worktree limpio**
+>   con cherry-pick → `origin/master` = **`f430057`**: 15 notas, 25 líneas fuera (solo frontmatter).
+> - El archivo residual CRCA (`02 - Representación gráfica`) **ya venía limpio en el remoto**
+>   (CR=0, LF=167) → cherry-pick vacío, no se duplica.
+> - **Verificación final sobre `origin/master`**: 0 blobs con CR y 0 notas con frontmatter vacío
+>   en las 831 `.md` de `Universidad/`; `qa_links` (raíz `Universidad`) = **8112 targets / 852 bad**
+>   (0 regresiones: mis commits solo borran líneas vacías y finales de línea, no tocan links).
+> - **Pasada 3 = sin objeto** (0 líneas con 5 definiciones probadas) → así queda reportada.
+> - **Pendiente para el árbol principal**: el `master` local quedó detrás y con archivos ajenos
+>   staged; cuando la otra sesión cierre su ciclo, quien sincronice debe hacer `rebase`, no
+>   merge en árbol sucio. El worktree `wt-merge` (2ad2612) es de otra sesión; no lo toco.
 > `TEMP\opencode\backup_pasada2`.
 
 ---
