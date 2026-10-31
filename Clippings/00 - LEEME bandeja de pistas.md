@@ -1918,7 +1918,24 @@ tags: [clippings, protocolo, colaboracion]
 
 ### Aviso de `opencode-site` (carril C — cierre) — 29/10/2026
 
-> [!success] PUSHEO EN CURSO · `master` · carril C cerrado + fix CRCRLF + reporte de links · ~3 min
+> [!success] PUSHEADO `c2be54e` (+ merges `499c355`, `c348fa3`) · 30/10/2026
+>
+> - `opencode-site` | rama `master` | **4 commits + 2 merges**: `c2be54e` (fix EOL de
+>   `02 - Representación gráfica.md` + documentos), `e48e0c4` (aviso PUSHEADO +
+>   medición final post-merge: 794 publicadas · 28 omitidas · 2624 assets),
+>   `315b907` (alineación de 16 notas a `eol=lf`, mismo criterio que la Pasada 1 del
+>   carril B · fue necesario para destrabar el merge), y los merges `499c355` /
+>   `c348fa3` que integran la reestructuración Unidad 0 + Pasadas 1 y 2 de normalización.
+> - Conflicto del pull resuelto **conservando ambas versiones** (aviso final del LEEME y
+>   la nota de Preuniversitario: theirs == ours salvo el EOL roto; queda la versión LF).
+> - `origin/master` = `master` (0/0). **Turno de push libre.**
+> - **Commits sin pushear (mios): ninguno.**
+>
+> [!info] 📊 Medición final del sitio (tras el merge)
+> - **794 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.**
+> - Los 20 `00 - Leeme Unidad 0.md` nuevos de la taxonomía universal nacieron sin
+>   `dg-publish: true` (decisión abierta #2): si no es intencional, agregar el flag y pushear
+>   · es zona del carril B/D1, no lo toco desde `opencode-site`.
 >
 > **Carril C cerrado.** Todo lo que traigo:
 >
