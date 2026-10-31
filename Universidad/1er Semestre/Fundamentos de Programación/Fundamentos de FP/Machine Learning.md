@@ -158,7 +158,7 @@ Ejemplo:
 - ![[01 - Funciones]] - Modularización de código
 - ![[Pandas]] - Manipulación de datos
 - ![[NumPy]] - Cálculos numéricos
-- ![[Matplotlib/Seaborn]] - Visualización
+- Matplotlib / Seaborn - Visualización
 
 ### 🎯 **Metodología y Proceso (Complementarios)**
 - ![[Design Thinking]] - Enfoque centrado en problemas

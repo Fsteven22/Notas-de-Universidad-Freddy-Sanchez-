@@ -1012,4 +1012,21 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
+> [!info] Entrada 30/10/2026 — Corrección de protocolo: incidente de commit `b9de5b7`
+>
+> - Re-stageé los renombres de `2do Semestre/Cálculo Vectorial/**` (trabajo de `opencode-onedrive` en su zona) para "devolvérselos" y al commitear el PUSHEADO del LEEME **arrastraron 567 archivos** dentro de mi commit `b9de5b7`. Contenido intacto (byte-idéntico), mensaje equivocado, ya pusheado (no se reescribe sin `--force`, prohibido).
+> - Documentado en el LEEME con aviso explícito a `opencode-onedrive`: tratá `b9de5b7` como el commit de su trabajo.
+> - **Regla que incorporo:** antes de cada `git commit`, verificar `git diff --cached --name-only | Measure-Object` contra la lista esperada. Si hay archivos de zona ajena → `git reset -- <ruta>` primero.
+
+---
+
+> [!info] Entrada 29/10/2026 (tarde) — Carril B cerrado + 3 fixes de embeds
+>
+> - **Carril B (figuras):** `opencode-onedrive` lo ejecutó en `b9b4f85` pero en la **raíz de cada materia** (`Figuras/` suelto, duplicando la subcarpeta de U0). Rehecho al estándar: 122 figuras (119 PNG + 2 SVG + 1 JPG) movidas a `U0/Figuras/` de su materia (commit `029160f`, 122 renombres, colisiones por hash resueltas: 0). 6 carpetas raíz `Figuras/` vacías eliminadas. `Universidad/Figuras/` global queda vacío. Patrón idéntico al de `Diagramas/` de esta mañana: los movimientos deben caer siempre en la subcarpeta de U0, nunca a nivel raíz.
+> - **3 embeds con ruta/libre rotos verificados:** el de `Matplotlib/Seaborn` ya estaba resuelto por el carril C (`3eb952b`); `Bienvenida y Syllabus Comunicación.md` → embed por nombre; `BD00 Políticas.pdf` en SBD tenía **doble codificación UTF-8** (frase `PolÃ\u00adticas` en 3 lugares) corregida con Python byte-level. `qa_links.py`: 854 → 852 BADs, 0 nuevos.
+> - **Regla del usuario para links rotos (carril C):** si hay nota de nombre similar → redirigir; si no → dejar. Se dejó asentada en el LEEME.
+> - Nota de protocolo: trabajé con rutas exactas; `git checkout --` solo para limpiar ruido CRLF confirmado con `git diff --numstat` vacío. Los renombres staged de `2do Semestre/Cálculo Vectorial/**` son de `opencode-onedrive` (zona ajena) — no commiteados por mí.
+
+---
+
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion

@@ -616,6 +616,15 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > `git revert a2be225`. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas → así la
 > reporto). Sigo con la **Pasada 2: 33 archivos** con líneas vacías en frontmatter.
 
+> [!warning] 🚚 PUSHEO EN CURSO — Pasada 2 (16 archivos)
+> **Corrección de cifra:** los "33" eran 18 archivos con finales `\r\r\n` (el CR suelto
+> fijaba el renglón falso); el conjunto real de frontmatter vacío es **15**. Más
+> **1 archivo residual** de CRCA de la Pasada 1 (`02 - Representación gráfica.md`).
+> OneDrive devolvió CRLF al working tree de los 111 (git no lo marca; el sitio sí lee de
+> disco) → avisado a `opencode-site`. **Commit pathspec-explícito**: hay renames de
+> Cálculo Vectorial staged por otra sesión; no los capturo. Backup byte-exacto en
+> `TEMP\opencode\backup_pasada2`.
+
 ---
 **Tags:** #clippings #log #opencode-nube #onedrive
 
