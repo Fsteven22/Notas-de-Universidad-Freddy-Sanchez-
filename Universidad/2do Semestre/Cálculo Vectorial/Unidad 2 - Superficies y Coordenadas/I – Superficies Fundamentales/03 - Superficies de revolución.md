@@ -1270,33 +1270,33 @@ dg-publish: true
 > - [[01 - Coordenadas cilíndricas y esféricas#Coordenadas Esféricas|Coordenadas Esféricas]] - Para esfera y elipsoides
 > - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Generatrices
 > - [[02 - Vectores en R3]] - Normal y tangentes a superficies
-> - [[Cálculo Integral]] - Áreas y volúmenes
+> - Cálculo Integral - Áreas y volúmenes
 > 
 > **Temas relacionados:**
 > - [[01 - Superficies cuadráticas]] - Clasificación algebraica
 > - [[Sólidos de Revolución]] - Volúmenes
 > - [[03 - Superficies de revolución#Curvaturas|Curvaturas]] - Análisis geométrico diferencial
-> - [[Ecuaciones Paramétricas en 3D]] - Representación
+> - Ecuaciones Paramétricas en 3D - Representación
 > 
 > **Aplicaciones directas:**
-> - [[Cálculo de Áreas de Superficie]] - Integrales de superficie
+> - Cálculo de Áreas de Superficie - Integrales de superficie
 > - [[03 - Área entre Curvas respecto a Y#Centros de Masa|Centros de Masa]] - Teoremas de Pappus
 > - [[Momento de Inercia]] - Física rotacional
-> - [[Optimización en 3D]] - Problemas isoperimétricos
+> - Optimización en 3D - Problemas isoperimétricos
 > 
 > **Temas avanzados:**
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y geodésicas
 > - [[03 - Superficies de revolución#Superficies Mínimas|Superficies Mínimas]] - Catenoide, helicoide
-> - [[CAD/CAM]] - Modelado industrial
+> - CAD/CAM - Modelado industrial
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Rendering de superficies
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Física]] - Formas en equilibrio, rotación de fluidos
-> - [[Arquitectura]] - Estructuras de revolución optimizadas
-> - [[Astronomía]] - Forma de cuerpos celestes
+> - Física - Formas en equilibrio, rotación de fluidos
+> - Arquitectura - Estructuras de revolución optimizadas
+> - Astronomía - Forma de cuerpos celestes
 > - [[Elasticidad#Ingeniería Mecánica|Ingeniería Mecánica]] - Diseño de componentes axisimétricos
-> - [[Óptica]] - Lentes, espejos y sistemas de reflexión
+> - Óptica - Lentes, espejos y sistemas de reflexión
 
 ## 💡 Consejos de Estudio
 

@@ -934,17 +934,17 @@ dg-publish: true
 > **Temas directamente relacionados:**
 > 
 > - [[05 – Espacio columna]] - Im(T) = Col(A)
-> - [[17 - Espacio nulo]] - Ker(T) = Nul(A)
-> - [[20 - Rango y nulidad]] - Teorema fundamental
+> - 17 - Espacio nulo - Ker(T) = Nul(A)
+> - 20 - Rango y nulidad - Teorema fundamental
 > - [[05 - Sistemas de ecuaciones lineales]] - Solubilidad
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[24 - Valores propios]] - Ker(T - λI)
-> - [[25 - Diagonalización]] - Descomposición espectral
-> - [[30 - Proyecciones]] - Descomposición ortogonal
-> - [[35 - SVD]] - Cuatro subespacios fundamentales
-> - [[40 - Pseudoinversa]] - Inversa generalizada
+> - 24 - Valores propios - Ker(T - λI)
+> - 25 - Diagonalización - Descomposición espectral
+> - 30 - Proyecciones - Descomposición ortogonal
+> - 35 - SVD - Cuatro subespacios fundamentales
+> - 40 - Pseudoinversa - Inversa generalizada
 
 ## 🎓 Conceptos Clave - Resumen
 

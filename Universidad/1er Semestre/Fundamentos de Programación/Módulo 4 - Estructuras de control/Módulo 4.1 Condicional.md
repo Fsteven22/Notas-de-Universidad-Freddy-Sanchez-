@@ -383,7 +383,7 @@ dg-publish: true
 >3. **[[Funciones Lambda]]** - Condicionales en funciones de una línea
 >4. **Estructuras de Datos Avanzadas** - Uso de condicionales con listas/dict
 >5. **Debugging y Testing** - Casos de prueba para lógica condicional
->6. **[[Algoritmos de Decisión]]** - Árboles de decisión y lógica compleja
+>6. **Algoritmos de Decisión** - Árboles de decisión y lógica compleja
 
 ---
 

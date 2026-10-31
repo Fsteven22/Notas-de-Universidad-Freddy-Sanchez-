@@ -590,7 +590,7 @@ dg-publish: true
 > 
 > - [[01 - Continuidad y Límites#Teorema del Valor Intermedio|Teorema del Valor Intermedio]] - Herramienta clave en la demostración
 > - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
-> - [[Valor RMS y Aplicaciones Eléctricas]] - Aplicación específica del concepto
+> - Valor RMS y Aplicaciones Eléctricas - Aplicación específica del concepto
 > - [[Promedio de Funciones]] - Interpretación estadística del valor medio
 > 
 > ### 🎯 Notas Recomendadas

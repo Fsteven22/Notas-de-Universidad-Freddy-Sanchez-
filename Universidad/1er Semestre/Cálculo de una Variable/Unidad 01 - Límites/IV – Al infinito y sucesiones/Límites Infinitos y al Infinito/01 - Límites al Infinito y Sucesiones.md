@@ -516,14 +516,14 @@ dg-publish: true
 > 
 > - [[Números Reales]] - Propiedades de completitud
 > - Desigualdades - Manipulación de inecuaciones
-> - [[Límites Básicos]] - Conceptos fundamentales
+> - Límites Básicos - Conceptos fundamentales
 > - [[Funciones Elementales]] - Para sucesiones definidas por funciones
 > 
 > **Para profundizar:**
 > 
-> - [[Sucesiones de Cauchy]] - Caracterización alternativa de convergencia
+> - Sucesiones de Cauchy - Caracterización alternativa de convergencia
 > - Límites Superior e Inferior - Conceptos avanzados
-> - [[Compacidad]] - Teorema de Bolzano-Weierstrass
+> - Compacidad - Teorema de Bolzano-Weierstrass
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización de conceptos
 > - Análisis Real Avanzado - Teoría completa de sucesiones
 

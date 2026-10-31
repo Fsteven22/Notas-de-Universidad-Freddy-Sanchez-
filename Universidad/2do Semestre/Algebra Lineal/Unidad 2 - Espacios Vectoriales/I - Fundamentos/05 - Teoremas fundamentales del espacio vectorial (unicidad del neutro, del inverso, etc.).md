@@ -1307,10 +1307,10 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[02.2 Axiomas]] - Concepto de sistema axiomático
-> - [[Lógica Matemática]] - Demostraciones formales
+> - 02.2 Axiomas - Concepto de sistema axiomático
+> - Lógica Matemática - Demostraciones formales
 > - [[Teoría de Conjuntos]] - Unicidad de elementos
-> - [[Campos]] - Propiedades de escalares 𝔽
+> - Campos - Propiedades de escalares 𝔽
 > 
 > **Temas relacionados:**
 > 

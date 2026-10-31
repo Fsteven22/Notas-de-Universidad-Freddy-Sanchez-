@@ -902,30 +902,30 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[01 – Transformaciones lineales]] - Definición básica
-> - [[19 - Núcleo e Imagen]] - Subespacios fundamentales
+> - 19 - Núcleo e Imagen - Subespacios fundamentales
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Relación rank-nullity
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases y generadores
 > 
 > **Temas directamente relacionados:**
 > 
-> - [[04 - Isomorfismos]] - Biyecciones lineales
+> - 04 - Isomorfismos - Biyecciones lineales
 > - [[05 – Espacio columna]] - Caracterización de imagen
-> - [[17 - Espacio nulo]] - Caracterización de núcleo
-> - [[21 - Rango de matrices]] - Aplicación matricial
+> - 17 - Espacio nulo - Caracterización de núcleo
+> - 21 - Rango de matrices - Aplicación matricial
 > 
 > **Aplicaciones posteriores:**
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Existencia y unicidad
 > - [[06 - Matriz Inversa]] - Biyectividad y matrices
-> - [[24 - Valores propios]] - Análisis de Ker(T - λI)
-> - [[30 - Proyecciones]] - Casos no inyectivos
-> - [[35 - SVD]] - Descomposición fundamental
+> - 24 - Valores propios - Análisis de Ker(T - λI)
+> - 30 - Proyecciones - Casos no inyectivos
+> - 35 - SVD - Descomposición fundamental
 > 
 > **Conceptos avanzados:**
 > 
 > - [[08 – Teorema espectral]] - Operadores biyectivos
-> - [[45 - Teoría de categorías]] - Monomorfismos/epimorfismos
-> - [[50 - Análisis funcional]] - Operadores en espacios infinitos
+> - 45 - Teoría de categorías - Monomorfismos/epimorfismos
+> - 50 - Análisis funcional - Operadores en espacios infinitos
 
 ## 📚 Bibliografía Esencial
 

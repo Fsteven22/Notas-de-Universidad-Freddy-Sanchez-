@@ -4320,10 +4320,10 @@ dg-publish: true
 > - [[01 - Algoritmo de Gauss]]
 > - [[05 - Sistemas de ecuaciones lineales]]
 > - [[01 - Subespacios Vectoriales]]
-> - [[Subespacios y generadores]]
+> - Subespacios y generadores
 > 
 > **Se conecta con:**
-> - [[Espacio Nulo y Espacio Columna]]
+> - Espacio Nulo y Espacio Columna
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]]
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]]
 > - [[02 – Base y dimensión]]
@@ -4333,7 +4333,7 @@ dg-publish: true
 > - [[05 – Matriz semejante#Sistemas de Ecuaciones Diferenciales|Sistemas de ecuaciones diferenciales]]
 > - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización lineal]]
 > - [[Métodos numéricos]]
-> - [[Álgebra lineal computacional]]
+> - Álgebra Lineal Computacional
 
 ---
 

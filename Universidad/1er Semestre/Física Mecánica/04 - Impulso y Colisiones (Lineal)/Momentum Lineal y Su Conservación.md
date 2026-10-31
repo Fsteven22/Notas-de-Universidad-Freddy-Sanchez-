@@ -334,7 +334,7 @@ dg-publish: true
 > - Mecánica Lagrangiana - Formulación generalizada
 > - Relatividad Especial - Momentum a altas velocidades
 > - Mecánica Cuántica - Momentum en escala microscópica
-> - [[Teoría de Campos]] - Momentum en sistemas continuos
+> - Teoría de Campos - Momentum en sistemas continuos
 
 ---
 

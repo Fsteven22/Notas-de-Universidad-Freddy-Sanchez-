@@ -252,7 +252,7 @@ dg-publish: true
 > 
 > - [[Módulo 1.2 Introducción a Python]] - Primer lenguaje recomendado
 > - Algoritmos y Estructuras de Datos - Fundamentos lógicos
-> - [[Lógica de Programación]] - Pensamiento estructurado
+> - Lógica de Programación - Pensamiento estructurado
 > - Metodologías de Desarrollo - Procesos de creación de software
 > - Resolución de Problemas - Técnicas de análisis
 > - Herramientas de Desarrollo - IDEs y editores
@@ -277,9 +277,9 @@ dg-publish: true
 > ### 🚀 Desarrollo Avanzado
 > 
 > - Estructuras de Datos - Organización eficiente
-> - [[Algoritmos Fundamentales]] - Soluciones optimizadas
+> - Algoritmos Fundamentales - Soluciones optimizadas
 > - [[Programación Orientada a Objetos]] - Modelado del mundo real
-> - [[Bases de Datos]] - Gestión de información
+> - Bases de Datos - Gestión de información
 >
 
 > [!success]+ **Proyecto Práctico: Tu Primer Programa**

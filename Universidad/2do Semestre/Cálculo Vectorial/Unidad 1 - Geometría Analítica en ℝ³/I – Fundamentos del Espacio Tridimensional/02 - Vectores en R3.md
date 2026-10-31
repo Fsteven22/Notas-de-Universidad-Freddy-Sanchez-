@@ -751,11 +751,11 @@ dg-publish: true
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Base del espacio ℝ³
 > - [[Números Reales]] - Componentes de vectores
-> - [[Álgebra Básica]] - Operaciones fundamentales
+> - Álgebra Básica - Operaciones fundamentales
 > 
 > **Temas siguientes:**
 > 
-> - [[01.3 Distancia en el Espacio]] - Usa magnitud de vectores
+> - 01.3 Distancia en el Espacio - Usa magnitud de vectores
 > - [[01 - Rectas en R3]] - Ecuaciones vectoriales de rectas
 > - [[02 - Planos en R3]] - Vectores normales a planos
 > 
@@ -763,12 +763,12 @@ dg-publish: true
 > 
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Proyecciones y ángulos
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular
-> - [[Producto Triple]] - Volumen de paralelepípedos
+> - Producto Triple - Volumen de paralelepípedos
 > 
 > **Aplicaciones:**
 > 
 > - [[Cinemática Vectorial]] - Movimiento en el espacio
-> - [[Fuerzas y Equilibrio]] - Estática vectorial
+> - Fuerzas y Equilibrio - Estática vectorial
 > - [[01 – Transformaciones lineales]] - Matrices y vectores
 > 
 > **Temas relacionados:**

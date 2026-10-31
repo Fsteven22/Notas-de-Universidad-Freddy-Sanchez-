@@ -168,7 +168,7 @@ dg-publish: true
 > **Aplicaciones futuras:**
 > 
 > - [[01 - Derivada y Definición Formal|Derivadas]] - Formalización matemática
-> - [[Aplicaciones de la Derivada]] - Optimización y análisis
+> - Aplicaciones de la Derivada - Optimización y análisis
 > - [[Integrales]] - Proceso inverso (acumulación)
 
 ## 📖 Notas Recomendadas para Estudio Complementario

@@ -298,7 +298,7 @@ dg-publish: true
 > - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Técnicas avanzadas
 > 
 > ### 🎯 Aplicaciones Prácticas
-> - [[Trabajo y Energía con Integrales]] - Uso en física
+> - Trabajo y Energía con Integrales - Uso en física
 > - Probabilidad y Estadística - Funciones de densidad
 > - [[Ecuaciones Diferenciales]] - Resolución de EDOs
 > - Transformadas - Fourier, Laplace

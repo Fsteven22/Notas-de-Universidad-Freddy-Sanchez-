@@ -1619,8 +1619,8 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > 
 > ### Prerequisitos:
 > 
-> - **[[08 - Bases]]** - Definición de base, verificación, construcción
-> - **[[09 - Dimensión]]** - Relación entre dimensión y número de coordenadas
+> - **08 - Bases** - Definición de base, verificación, construcción
+> - **09 - Dimensión** - Relación entre dimensión y número de coordenadas
 > - **[[02 – Combinación lineal]]** - Expresar vectores como combinaciones
 > - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Unicidad de representación
 > 
@@ -1628,9 +1628,9 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > 
 > - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]]** - Matrices de transición entre bases
 > - **[[01 – Transformaciones lineales]]** - Representación matricial
-> - **[[17 - Núcleo e Imagen]]** - Coordenadas de ker y im
-> - **[[20 - Isomorfismos]]** - Equivalencia de espacios vectoriales
-> - **[[22 - Eigenvalores y Eigenvectores]]** - Bases especiales
+> - **17 - Núcleo e Imagen** - Coordenadas de ker y im
+> - **20 - Isomorfismos** - Equivalencia de espacios vectoriales
+> - **22 - Eigenvalores y Eigenvectores** - Bases especiales
 > 
 > ### Temas relacionados:
 > 

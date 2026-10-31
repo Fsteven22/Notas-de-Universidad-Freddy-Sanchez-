@@ -1200,29 +1200,29 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
 > - [[01 – Transformaciones lineales]] - Definición básica
-> - [[02 - Núcleo e Imagen]] - Caracterización de inyectividad
+> - 02 - Núcleo e Imagen - Caracterización de inyectividad
 > - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
 > - [[04 – Biyectividad e isomorfismo]] - Equivalencia con isomorfismo
 >
 > **Temas directamente relacionados:**
 > - [[07 - Matriz de una Transformación Lineal]] - Representación matricial
-> - [[07 - Composición de transformaciones]] - $(S \circ T)^{-1} = T^{-1} \circ S^{-1}$
+> - 07 - Composición de transformaciones - $(S \circ T)^{-1} = T^{-1} \circ S^{-1}$
 > - [[06 - Matriz Inversa]] - Inversión de matrices
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Matrices de cambio son invertibles
 > - [[04 - Determinantes]] - Criterio $\det \neq 0$
 >
 > **Aplicaciones posteriores:**
-> - [[15 - Valores propios]] - Matriz $A - \lambda I$ invertible ⟺ $\lambda$ no es valor propio
-> - [[16 - Diagonalización]] - $P^{-1}AP = D$
-> - [[20 - Forma de Jordan]] - Similitud vía invertibles
-> - [[25 - Descomposición SVD]] - Pseudoinversa
+> - 15 - Valores propios - Matriz $A - \lambda I$ invertible ⟺ $\lambda$ no es valor propio
+> - 16 - Diagonalización - $P^{-1}AP = D$
+> - 20 - Forma de Jordan - Similitud vía invertibles
+> - 25 - Descomposición SVD - Pseudoinversa
 > - [[08 – Teorema espectral]] - Transformaciones unitarias
 >
 > **Temas avanzados:**
-> - [[35 - Operadores adjuntos]] - Relación con inversas
-> - [[40 - Grupos de Lie]] - GL(n) como grupo de Lie
-> - [[45 - Análisis funcional]] - Operadores inversibles acotados
-> - [[50 - Teorema del mapeo abierto]] - Inversa acotada de operador acotado
+> - 35 - Operadores adjuntos - Relación con inversas
+> - 40 - Grupos de Lie - GL(n) como grupo de Lie
+> - 45 - Análisis funcional - Operadores inversibles acotados
+> - 50 - Teorema del mapeo abierto - Inversa acotada de operador acotado
 
 ## 🧮 Ejercicios Resueltos Adicionales
 

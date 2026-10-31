@@ -1423,7 +1423,7 @@ dg-publish: true
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Base conceptual
 > - [[01 - Algoritmo de Gauss]] - Método de cálculo principal
-> - [[Matrices]] - Operaciones y propiedades
+> - Matrices - Operaciones y propiedades
 > 
 > **Temas directamente relacionados:**
 > 
@@ -1440,16 +1440,16 @@ dg-publish: true
 > 
 > **Temas avanzados:**
 > 
-> - [[Descomposición SVD]] - Valores singulares
+> - Descomposición SVD - Valores singulares
 > - [[Espacios Fundamentales]] - Cuatro subespacios
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Dimensiones complementarias
-> - [[Pseudoinversa de Moore-Penrose]] - Generalización de inversa
+> - Pseudoinversa de Moore-Penrose - Generalización de inversa
 > 
 > **Aplicaciones computacionales:**
 > 
-> - [[PCA (Análisis de Componentes Principales)]] - Reducción de dimensionalidad
-> - [[Regresión Lineal]] - Problemas de mínimos cuadrados
-> - [[Compresión de Datos]] - Aproximación de bajo rango
+> - PCA (Análisis de Componentes Principales) - Reducción de dimensionalidad
+> - Regresión Lineal - Problemas de mínimos cuadrados
+> - Compresión de Datos - Aproximación de bajo rango
 > - [[Machine Learning]] - Feature selection
 
 ---

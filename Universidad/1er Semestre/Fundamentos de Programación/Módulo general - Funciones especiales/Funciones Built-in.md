@@ -303,7 +303,7 @@ dg-publish: true
 > - Comprensiones de Lista - Alternativas a filter() y map()
 > - [[04 - Excepciones en Java#Manejo de Excepciones|Manejo de Excepciones]] - Validación con isinstance()
 > - Programación Funcional - filter(), map(), reduce()
-> - [[Decoradores]] - Funciones que modifican otras funciones
+> - Decoradores - Funciones que modifican otras funciones
 > - Generadores e Iteradores - Conceptos avanzados de iteración
 
 ---

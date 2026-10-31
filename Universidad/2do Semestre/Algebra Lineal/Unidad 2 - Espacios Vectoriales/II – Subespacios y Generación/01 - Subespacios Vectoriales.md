@@ -1128,8 +1128,8 @@ dg-publish: true
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Vectores que no son combinación lineal de otros
 > - [[02 – Base y dimensión]] - Conjuntos generadores linealmente independientes
 > - [[01 – Transformaciones lineales]] - Núcleo e imagen son subespacios
-> - [[11 - Espacios con Producto Interno]] - Subespacios ortogonales
-> - [[12 - Diagonalización]] - Espacios propios son subespacios
+> - 11 - Espacios con Producto Interno - Subespacios ortogonales
+> - 12 - Diagonalización - Espacios propios son subespacios
 > - [[08 – Teorema espectral]] - Descomposición en subespacios ortogonales
 > 
 > **Conceptos relacionados:**
@@ -1140,7 +1140,7 @@ dg-publish: true
 > - **Dimensión** - Mide el "tamaño" del subespacio
 > - **Rango y Nulidad** - Dimensiones de subespacios especiales
 > 
-> **Siguiente tema recomendado:** [[08 - Independencia Lineal y Bases]]
+> **Siguiente tema recomendado:** 08 - Independencia Lineal y Bases
 
 ---
 

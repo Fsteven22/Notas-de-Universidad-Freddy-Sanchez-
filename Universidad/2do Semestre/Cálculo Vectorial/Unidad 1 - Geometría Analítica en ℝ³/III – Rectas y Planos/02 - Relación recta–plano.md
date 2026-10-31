@@ -1080,36 +1080,36 @@ dg-publish: true
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades de rectas
 > - [[02 - Planos en R3]] - Ecuaciones y propiedades de planos
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
-> - [[02.1 Producto Punto]] - Para ángulos y perpendicularidad
-> - [[02.2 Producto Cruz]] - Para vectores normales
+> - 02.1 Producto Punto - Para ángulos y perpendicularidad
+> - 02.2 Producto Cruz - Para vectores normales
 > 
 > **Conceptos utilizados:**
 > 
 > - [[02 - Superficies cilíndricas#Vector Normal|Vector Normal]] - Perpendicular al plano
-> - [[Vector Director]] - Dirección de la recta
-> - [[Paralelismo en R3]] - Condiciones de paralelismo
-> - [[Perpendicularidad en R3]] - Condiciones de ortogonalidad
+> - Vector Director - Dirección de la recta
+> - Paralelismo en R3 - Condiciones de paralelismo
+> - Perpendicularidad en R3 - Condiciones de ortogonalidad
 > 
 > **Aplicaciones directas:**
 > 
 > - [[01 - Distancias en ℝ³]] - Distancias relacionadas
-> - [[07.1 Distancia Punto-Plano]] - Usando perpendiculares
-> - [[07.2 Distancia Punto-Recta]] - Geometría relacionada
-> - [[Proyecciones en R3]] - Proyección ortogonal
+> - 07.1 Distancia Punto-Plano - Usando perpendiculares
+> - 07.2 Distancia Punto-Recta - Geometría relacionada
+> - Proyecciones en R3 - Proyección ortogonal
 > 
 > **Temas avanzados:**
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Intersecciones múltiples
-> - [[Geometría Proyectiva]] - Puntos al infinito
+> - Geometría Proyectiva - Puntos al infinito
 > - [[01 – Transformaciones lineales]] - Matrices de rotación
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/06 – Espacio fila.md]] - Formalización abstracta
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Ray Tracing]] - Computación gráfica
-> - [[Óptica Geométrica]] - Reflexión y refracción
-> - [[Mecánica Clásica]] - Planos inclinados
-> - [[Navegación 3D]] - Sistemas de coordenadas
+> - Ray Tracing - Computación gráfica
+> - Óptica Geométrica - Reflexión y refracción
+> - Mecánica Clásica - Planos inclinados
+> - Navegación 3D - Sistemas de coordenadas
 
 ## 💡 Consejos de Estudio
 

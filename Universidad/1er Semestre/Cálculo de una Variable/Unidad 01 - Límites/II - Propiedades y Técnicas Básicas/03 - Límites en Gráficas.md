@@ -201,7 +201,7 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Base conceptual
 > - [[02 - Límites Laterales]] - Límites laterales
-> - [[Funciones y Continuidad]] - Tipos de discontinuidades
+> - Funciones y Continuidad - Tipos de discontinuidades
 > - [[02 - Asíntotas y Comportamiento de Funciones]] - Comportamiento asintótico
 
 ## Notas Recomendadas 💡
@@ -212,7 +212,7 @@ dg-publish: true
 > - [[01 - Propiedades y Teoremas de los Límites]] - Propiedades fundamentales
 > - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Interpretación de la pendiente
 > - [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md]] - Técnicas avanzadas
-> - [[Software Matemático]] - Herramientas de graficación
+> - Software Matemático - Herramientas de graficación
 
 ---
 

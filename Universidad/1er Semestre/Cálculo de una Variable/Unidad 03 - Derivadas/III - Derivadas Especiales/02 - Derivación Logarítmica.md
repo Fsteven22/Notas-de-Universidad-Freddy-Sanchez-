@@ -243,7 +243,7 @@ dg-publish: true
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Fundamental para derivación implícita
 > - [[01 - Derivación Implícita]] - Base teórica del método
 > - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]] - Esencial para simplificación
-> - [[Regla del Producto y Cociente]] - Para comparar eficiencia
+> - Regla del Producto y Cociente - Para comparar eficiencia
 > 
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Conexión con casos complejos

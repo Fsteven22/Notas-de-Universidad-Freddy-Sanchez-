@@ -773,23 +773,23 @@ dg-publish: true
 > 
 > - [[06 - Matriz Inversa]] - Representación matricial
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Isomorfismos coordenados
-> - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
-> - [[19 - Núcleo e Imagen]] - Caracterización
+> - 07 - Espacios cociente - Primer teorema de isomorfismo
+> - 19 - Núcleo e Imagen - Caracterización
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[24 - Valores propios]] - Similitud de matrices
-> - [[25 - Diagonalización]] - Isomorfismo diagonal
-> - [[30 - Formas canónicas]] - Clasificación
-> - [[35 - Espacios con producto interno]] - Isomorfismos isométricos
+> - 24 - Valores propios - Similitud de matrices
+> - 25 - Diagonalización - Isomorfismo diagonal
+> - 30 - Formas canónicas - Clasificación
+> - 35 - Espacios con producto interno - Isomorfismos isométricos
 > - [[08 – Teorema espectral]] - Isomorfismos unitarios
 > 
 > **Conceptos avanzados:**
 > 
-> - [[45 - Grupos de Lie]] - GL(n) como grupo
-> - [[50 - Teoría de representaciones]] - Módulos isomorfos
-> - [[55 - Teoría de categorías]] - Isomorfismo universal
-> - [[60 - K-teoría]] - Isomorfismos topológicos
+> - 45 - Grupos de Lie - GL(n) como grupo
+> - 50 - Teoría de representaciones - Módulos isomorfos
+> - 55 - Teoría de categorías - Isomorfismo universal
+> - 60 - K-teoría - Isomorfismos topológicos
 
 ## 📚 Bibliografía Esencial
 

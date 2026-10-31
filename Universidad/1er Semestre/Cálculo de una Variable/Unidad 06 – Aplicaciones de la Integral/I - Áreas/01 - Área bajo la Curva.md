@@ -392,7 +392,7 @@ dg-publish: true
 > 
 > ### 🎯 Aplicaciones Especializadas
 > 
-> - [[Trabajo y Energía con Integrales]] - Interpretación física
+> - Trabajo y Energía con Integrales - Interpretación física
 > - Probabilidad y Estadística - Funciones de densidad
 > - [[1er Semestre/Cálculo de una Variable/Unidad 06 – Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md]] - Extensión tridimensional
 > - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Otra aplicación geométrica

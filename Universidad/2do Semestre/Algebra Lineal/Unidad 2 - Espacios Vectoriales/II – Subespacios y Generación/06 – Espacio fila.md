@@ -853,15 +853,15 @@ dg-publish: true
 > - [[05 – Espacio columna]] - Concepto dual
 > 
 > **Temas relacionados:**
-> - [[18 - Espacio nulo]] - Complemento ortogonal
-> - [[19 - Rango y nulidad]] - Teorema dimensional
+> - 18 - Espacio nulo - Complemento ortogonal
+> - 19 - Rango y nulidad - Teorema dimensional
 > - [[01 – Transformaciones lineales]] - Dualidad
-> - [[22 - Ortogonalidad]] - Proyecciones
+> - 22 - Ortogonalidad - Proyecciones
 > 
 > **Aplicaciones posteriores:**
-> - [[25 - Mínimos cuadrados]] - Descomposición ortogonal
-> - [[26 - Descomposición QR]] - Ortogonalización
-> - [[27 - SVD]] - Cuatro subespacios
+> - 25 - Mínimos cuadrados - Descomposición ortogonal
+> - 26 - Descomposición QR - Ortogonalización
+> - 27 - SVD - Cuatro subespacios
 > - [[28 - Espacios fundamentales]] - Teoría completa
 
 ## 📚 Recursos Adicionales

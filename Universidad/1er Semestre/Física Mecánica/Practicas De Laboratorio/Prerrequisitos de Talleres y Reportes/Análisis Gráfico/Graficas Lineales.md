@@ -1158,7 +1158,7 @@ dg-publish: true
 > - Regresión No Lineal - Modelos más complejos
 > - Análisis de Series Temporales - Datos en función del tiempo
 > - Diseño de Experimentos - Planificación estadística
-> - [[Validación de Modelos]] - Verificación de hipótesis
+> - Validación de Modelos - Verificación de hipótesis
 
 ---
 

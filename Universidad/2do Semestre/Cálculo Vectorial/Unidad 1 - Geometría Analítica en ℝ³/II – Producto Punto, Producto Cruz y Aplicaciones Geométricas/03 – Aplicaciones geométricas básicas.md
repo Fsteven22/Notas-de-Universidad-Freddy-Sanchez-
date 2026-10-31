@@ -1046,17 +1046,17 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[01.3 Distancia en el Espacio]] - Métrica en ℝ³
+> - 01.3 Distancia en el Espacio - Métrica en ℝ³
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades
 > - [[02 - Planos en R3]] - Ecuaciones de planos
 > - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Representación de curvas
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Geometría Analítica 3D]] - Estudio completo
+> - Geometría Analítica 3D - Estudio completo
 > - [[Cinemática Vectorial]] - Movimiento en el espacio
 > - [[Cálculo Vectorial]] - Derivadas e integrales
-> - [[Análisis Tensorial]] - Generalización
+> - Análisis Tensorial - Generalización
 > 
 > **Temas siguientes:**
 > 

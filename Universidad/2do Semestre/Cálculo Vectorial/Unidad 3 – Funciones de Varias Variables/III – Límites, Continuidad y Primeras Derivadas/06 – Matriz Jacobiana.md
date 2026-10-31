@@ -1246,7 +1246,7 @@ dg-publish: true
 > - **[[Derivadas Parciales]]** - Componentes de la Jacobiana
 > - **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/01 – Gradiente y Derivadas Direccionales.md]]** - Caso especial: $D_{\vec{u}}f = J_f \cdot \vec{u}$
 > - **[[04 – Diferenciabilidad]]** - Condición necesaria
-> - **[[11 - Gradiente]]** - Fila de la Jacobiana para funciones escalares
+> - **11 - Gradiente** - Fila de la Jacobiana para funciones escalares
 > - **Álgebra Lineal: Matrices** - Operaciones matriciales
 > - **Álgebra Lineal: Determinantes** - Jacobiano
 > 
@@ -1256,7 +1256,7 @@ dg-publish: true
 > - **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/04 - Teorema de la Función Implícita.md]]** - Requiere Jacobiano no nulo
 > - **[[01 - Multiplicaciones de Lagrange]]** - Condiciones usando Jacobianas
 > - **[[01 – Integrales múltiples]]** - Cambio de variables
-> - **[[17 - Teoremas Integrales]]** - Green, Stokes, Gauss
+> - **17 - Teoremas Integrales** - Green, Stokes, Gauss
 > - **Optimización Numérica** - Métodos de Newton
 > - **Ecuaciones Diferenciales** - Sistemas no lineales
 > 

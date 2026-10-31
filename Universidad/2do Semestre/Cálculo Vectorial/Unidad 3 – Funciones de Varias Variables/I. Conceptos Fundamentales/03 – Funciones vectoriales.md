@@ -1062,8 +1062,8 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
 > - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y límites
-> - [[Cálculo Integral]] - Integrales
-> - [[Trigonometría]] - Funciones trigonométricas
+> - Cálculo Integral - Integrales
+> - Trigonometría - Funciones trigonométricas
 > 
 > **Temas relacionados:**
 > 
@@ -1073,15 +1073,15 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Mecánica Clásica]] - Trayectorias y fuerzas
-> - [[Electromagnetismo]] - Campos vectoriales
-> - [[Animación 3D]] - Interpolación de movimientos
-> - [[Robótica]] - Planificación de trayectorias
+> - Mecánica Clásica - Trayectorias y fuerzas
+> - Electromagnetismo - Campos vectoriales
+> - Animación 3D - Interpolación de movimientos
+> - Robótica - Planificación de trayectorias
 > 
 > **Temas avanzados:**
 > 
-> - [[Curvatura y Torsión]] - Propiedades geométricas
-> - [[Marco de Frenet]] - Base ortonormal móvil
+> - Curvatura y Torsión - Propiedades geométricas
+> - Marco de Frenet - Base ortonormal móvil
 > - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Funciones r(x,y,z)
 > - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]] - Integración sobre curvas
 

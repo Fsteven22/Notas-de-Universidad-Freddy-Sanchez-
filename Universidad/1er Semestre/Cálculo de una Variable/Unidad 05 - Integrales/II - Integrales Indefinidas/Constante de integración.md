@@ -329,11 +329,11 @@ dg-publish: true
 > - [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
 > - [[01 - Antiderivadas (Primitivas)]] - Tabla de fórmulas con constantes
 > - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]] - Manejo de constantes en métodos avanzados
-> - [[Ecuaciones Diferenciales Básicas]] - Aplicación principal
+> - Ecuaciones Diferenciales Básicas - Aplicación principal
 > - [[01 - Antiderivadas (Primitivas)#Problemas de Valor Inicial|Problemas de Valor Inicial]] - Determinación práctica de constantes
 > 
 > ### 📖 Para Profundizar
-> - [[Espacios Vectoriales de Funciones]] - Fundamento teórico avanzado
+> - Espacios Vectoriales de Funciones - Fundamento teórico avanzado
 > - Condiciones de Frontera - Otros métodos de determinación
 > - Unicidad de Soluciones - Teoremas de existencia y unicidad
 > - [[1er Semestre/Física Mecánica/05 - Equilibrio y Elasticidad/Aplicaciones de Equilibrio/Problemas de Estabilidad.md]] - Comportamiento de soluciones

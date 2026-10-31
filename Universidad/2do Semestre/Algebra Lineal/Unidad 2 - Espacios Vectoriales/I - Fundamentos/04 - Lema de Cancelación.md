@@ -955,16 +955,16 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/01 - Vectores en espacios vectoriales (definición y propiedades).md]] - Propiedades básicas
-> - [[Grupos y estructuras algebraicas]] - Contexto general
+> - Grupos y estructuras algebraicas - Contexto general
 > - [[03 - Operaciones binarias]] - Suma y producto
-> - [[Elemento neutro e inverso]] - Requisitos para cancelación
+> - Elemento neutro e inverso - Requisitos para cancelación
 > 
 > **Temas relacionados:**
 > 
-> - [[Matrices invertibles]] - Cancelación matricial
+> - Matrices invertibles - Cancelación matricial
 > - [[04 - Determinantes]] - Condición de invertibilidad
 > - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/02 – Jacobiano de la transformación.md]] - Inyectividad
-> - [[Divisores de cero]] - Cuando falla cancelación
+> - Divisores de cero - Cuando falla cancelación
 > 
 > **Aplicaciones posteriores:**
 > 
@@ -972,7 +972,7 @@ dg-publish: true
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia lineal]] - Unicidad de coeficientes
 > - [[01 – Transformaciones lineales#Isomorfismos|Isomorfismos]] - Biyecciones cancelables
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Dimensiones
-> - [[Formas canónicas]] - Simplificación de matrices
+> - Formas canónicas - Simplificación de matrices
 
 ## 📋 Tabla de Resumen
 

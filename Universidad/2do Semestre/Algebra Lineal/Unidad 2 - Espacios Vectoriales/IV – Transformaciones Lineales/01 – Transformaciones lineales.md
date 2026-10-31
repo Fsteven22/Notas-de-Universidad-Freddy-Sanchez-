@@ -730,16 +730,16 @@ dg-publish: true
 > - [[06 – Espacio fila]] - Dualidad
 > 
 > **Temas relacionados:**
-> - [[19 - Espacio nulo]] - Núcleo
-> - [[20 - Rango y nulidad]] - Teorema fundamental
-> - [[21 - Matrices y operadores]] - Representación
+> - 19 - Espacio nulo - Núcleo
+> - 20 - Rango y nulidad - Teorema fundamental
+> - 21 - Matrices y operadores - Representación
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Representaciones múltiples
 > 
 > **Aplicaciones posteriores:**
-> - [[24 - Valores propios]] - Operadores especiales
-> - [[25 - Diagonalización]] - Simplificación
-> - [[30 - Formas cuadráticas]] - Aplicaciones
-> - [[35 - SVD]] - Descomposición
+> - 24 - Valores propios - Operadores especiales
+> - 25 - Diagonalización - Simplificación
+> - 30 - Formas cuadráticas - Aplicaciones
+> - 35 - SVD - Descomposición
 
 ## 📚 Recursos Adicionales
 

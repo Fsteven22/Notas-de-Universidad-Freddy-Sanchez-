@@ -535,7 +535,7 @@ dg-publish: true
 > - **Modelos de Crecimiento** - Poblaciones, finanzas, física
 > 
 > ### Hacia Cálculo Integral:
-> - [[Integración por Sustitución]] - Inversión del proceso
+> - Integración por Sustitución - Inversión del proceso
 > - [[Aplicaciones de Integrales]] - Áreas bajo curvas exponenciales
 
 ## 🎲 Ejercicios de Práctica Graduados

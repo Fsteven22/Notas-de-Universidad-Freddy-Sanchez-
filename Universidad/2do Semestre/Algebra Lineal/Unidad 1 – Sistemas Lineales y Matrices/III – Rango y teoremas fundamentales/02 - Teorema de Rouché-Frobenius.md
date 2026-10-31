@@ -2658,14 +2658,14 @@ dg-publish: true
 > - [[02 - Formas Escalonadas y Matriz Escalonada]] - Método para calcular rangos
 > - [[01 - Algoritmo de Gauss]] - Herramienta de cálculo
 > - [[05 - Sistemas de ecuaciones lineales]] - Objeto de estudio
-> - [[Matrices]] - Estructura algebraica base
+> - Matrices - Estructura algebraica base
 > 
 > **Es prerequisito para:**
 > 
 > - [[01 - Dimensión y descripción del conjunto solución]] - Aplicación directa
 > - [[01 - Dimensión y descripción del conjunto solución]] - Análisis de infinitas soluciones
-> - [[09 - Resolución de sistemas lineales]] - Estrategias de solución
-> - [[10 - Sistemas homogéneos]] - Caso especial
+> - 09 - Resolución de sistemas lineales - Estrategias de solución
+> - 10 - Sistemas homogéneos - Caso especial
 > 
 > **Conceptos relacionados:**
 > 
@@ -2676,17 +2676,17 @@ dg-publish: true
 > 
 > **Aplicaciones prácticas:**
 > 
-> - [[Circuitos Eléctricos - Leyes de Kirchhoff]] - Análisis de redes
+> - Circuitos Eléctricos - Leyes de Kirchhoff - Análisis de redes
 > - [[Sistemas de Balance de Materia]] - Ingeniería Química
-> - [[Modelo de Leontief]] - Economía Input-Output
-> - [[Análisis Estructural]] - Estática y armaduras
-> - [[Balanceo de Ecuaciones Químicas]] - Estequiometría
+> - Modelo de Leontief - Economía Input-Output
+> - Análisis Estructural - Estática y armaduras
+> - Balanceo de Ecuaciones Químicas - Estequiometría
 > 
 > **Extensiones y generalizaciones:**
 > 
 > - [[02 - Teorema de Rouché-Frobenius#Sistemas con Parámetros|Sistemas con parámetros]] - Discusión de sistemas
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Sistemas incompatibles aproximados
-> - [[Pseudoinversa de Moore-Penrose]] - Soluciones generalizadas
+> - Pseudoinversa de Moore-Penrose - Soluciones generalizadas
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/02 – Combinación lineal.md]] - Factibilidad de restricciones
 > - [[2do Semestre/Cálculo Vectorial/Unidad 4 - Optimización/II – Extremos sin Restricciones/02 – Teoremas de Existencia y Clasificación.md]] - Ecuaciones diferenciales
 >

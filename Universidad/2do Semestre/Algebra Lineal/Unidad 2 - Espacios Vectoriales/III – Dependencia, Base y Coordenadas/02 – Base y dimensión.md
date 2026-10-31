@@ -2094,20 +2094,20 @@ dg-publish: true
 > 
 > - **[[02 – Combinación lineal]]** - Construcción de vectores
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Resolución de sistemas
-> - **[[08 - Matrices y Operaciones]]** - Representación matricial
-> - **[[09 - Espacio Generado (Span)]]** - Conjuntos generadores
+> - **08 - Matrices y Operaciones** - Representación matricial
+> - **09 - Espacio Generado (Span)** - Conjuntos generadores
 > - **[[01 – Dependencia e independencia lineal]]** - Conjuntos independientes
 > 
 > ### Este tema es prerequisito para:
 > 
 > - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Aplicación directa de bases
-> - **[[13 - Espacio Nulo y Nulidad]]** - Bases de espacios nulos
-> - **[[14 - Coordenadas y Cambio de Base]]** - Representación en bases
-> - **[[15 - Teorema del Rango]]** - Relación dimensional
+> - **13 - Espacio Nulo y Nulidad** - Bases de espacios nulos
+> - **14 - Coordenadas y Cambio de Base** - Representación en bases
+> - **15 - Teorema del Rango** - Relación dimensional
 > - **[[01 – Transformaciones lineales]]** - Dimensión de imagen y núcleo
 > - **[[01 - Valores y Vectores propios]]** - Bases especiales
-> - **[[18 - Diagonalización]]** - Bases de vectores propios
-> - **[[19 - Espacios con Producto Interno]]** - Bases ortonormales
+> - **18 - Diagonalización** - Bases de vectores propios
+> - **19 - Espacios con Producto Interno** - Bases ortonormales
 > 
 > ### Conceptos relacionados:
 > 
@@ -2550,12 +2550,12 @@ dg-publish: true
 > 
 > **Si quieres profundizar primero:**
 > 
-> - **[[14 - Coordenadas y Cambio de Base]]** - Representación en bases
-> - **[[13 - Espacio Nulo y Nulidad]]** - Bases de espacios nulos
+> - **14 - Coordenadas y Cambio de Base** - Representación en bases
+> - **13 - Espacio Nulo y Nulidad** - Bases de espacios nulos
 > 
 > **Si quieres ver aplicaciones:**
 > 
-> - **[[19 - Espacios con Producto Interno]]** - Bases ortonormales
+> - **19 - Espacios con Producto Interno** - Bases ortonormales
 > - **Reducción dimensional (PCA)** - Aplicación práctica
 
 ---

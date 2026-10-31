@@ -138,8 +138,8 @@ dg-publish: true
 > [!quote]+ Enlaces a Otras Notas
 > 
 > - Hidrostática - Fundamentos
-> - [[Presión en Fluidos]]
-> - [[Ecuación Fundamental de la Hidrostática]]
+> - Presión en Fluidos
+> - Ecuación Fundamental de la Hidrostática
 > - Densidad y Peso Específico
 > - [[El Principio de Arquímedes y Flotación]]
 
@@ -147,10 +147,10 @@ dg-publish: true
 
 > [!info]+ Prerrequisitos
 > 
-> - [[Conceptos de Presión]]
+> - Conceptos de Presión
 > - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]]
 > - Estática de Fluidos
-> - [[Unidades de Presión]]
+> - Unidades de Presión
 >
 
 > [!success]+ Para Profundizar

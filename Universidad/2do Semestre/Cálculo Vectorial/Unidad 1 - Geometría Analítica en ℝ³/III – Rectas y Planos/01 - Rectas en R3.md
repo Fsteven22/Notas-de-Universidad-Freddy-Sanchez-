@@ -1094,7 +1094,7 @@ dg-publish: true
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Puntos en ℝ³
 > - [[02 - Vectores en R3]] - Vector director
-> - [[01.3 Distancia en el Espacio]] - Cálculos de distancia
+> - 01.3 Distancia en el Espacio - Cálculos de distancia
 > 
 > **Temas siguientes:**
 > 
@@ -1111,7 +1111,7 @@ dg-publish: true
 > **Aplicaciones:**
 > 
 > - [[Constante de integración#Cinemática|Cinemática]] - Trayectorias rectilíneas
-> - [[Óptica Geométrica]] - Rayos de luz
+> - Óptica Geométrica - Rayos de luz
 > - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Ray tracing
 
 ## 💡 Consejos y Errores Comunes

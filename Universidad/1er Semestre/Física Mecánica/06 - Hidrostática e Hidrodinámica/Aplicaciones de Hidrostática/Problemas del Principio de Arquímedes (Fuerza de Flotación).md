@@ -365,7 +365,7 @@ dg-publish: true
 > - [[El Principio de Arquímedes y Flotación]] - Fundamentos teóricos
 > - [[Problemas de Presión en un Fluido]] - Base hidrostática
 > - [[Peso Real vs Peso Aparente]] - Conceptos relacionados
-> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Principios generales
+> - Fundamentos de Hidrostática e Hidrodinámica - Principios generales
 
 ## 📚 Notas Recomendadas
 

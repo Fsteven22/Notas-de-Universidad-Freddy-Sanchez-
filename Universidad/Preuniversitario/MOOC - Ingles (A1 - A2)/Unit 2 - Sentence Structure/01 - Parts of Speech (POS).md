@@ -2793,7 +2793,7 @@ dg-publish: true
 > 
 > **📊 Aplicaciones en temas futuros:**
 > 
-> **[[05 - Verb Tenses]]** (tema futuro sugerido)
+> **05 - Verb Tenses** (tema futuro sugerido)
 > 
 > ```
 > • Expansión del concepto de VERB
@@ -2801,7 +2801,7 @@ dg-publish: true
 > • Cómo las diferentes formas verbales cambian el significado
 > ```
 > 
-> **[[06 - Adjectives and Adverbs in Depth]]** (tema futuro sugerido)
+> **06 - Adjectives and Adverbs in Depth** (tema futuro sugerido)
 > 
 > ```
 > • Comparatives and superlatives
@@ -2810,7 +2810,7 @@ dg-publish: true
 > • Common confusions (good/well, bad/badly)
 > ```
 > 
-> **[[07 - Pronouns in Detail]]** (tema futuro sugerido)
+> **07 - Pronouns in Detail** (tema futuro sugerido)
 > 
 > ```
 > • Pronoun-antecedent agreement
@@ -2818,7 +2818,7 @@ dg-publish: true
 > • Reflexive vs intensive pronouns
 > ```
 > 
-> **[[08 - Prepositions and Prepositional Phrases]]** (tema futuro sugerido)
+> **08 - Prepositions and Prepositional Phrases** (tema futuro sugerido)
 > 
 > ```
 > • Common preposition combinations

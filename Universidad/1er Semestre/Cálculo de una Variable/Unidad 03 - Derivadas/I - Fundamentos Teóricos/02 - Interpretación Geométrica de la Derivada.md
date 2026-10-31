@@ -431,12 +431,12 @@ dg-publish: true
 
 > [!info] 📚 **Para profundizar y complementar**
 > 
-> - [[Aplicaciones de la Derivada]] - Usos prácticos en optimización
-> - [[Análisis de Funciones con Derivadas]] - Crecimiento, máximos y mínimos
+> - Aplicaciones de la Derivada - Usos prácticos en optimización
+> - Análisis de Funciones con Derivadas - Crecimiento, máximos y mínimos
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y concavidad
 > - [[Aproximaciones Lineales]] - Uso de tangentes para aproximar funciones
 > - [[01 - Formas Indeterminadas]] - Aplicación de derivadas en límites indeterminados
-> - [[Cinemática y Derivadas]] - Aplicaciones físicas específicas
+> - Cinemática y Derivadas - Aplicaciones físicas específicas
 > - Optimización en Economía - Aplicaciones en ciencias económicas
 > - [[Ecuaciones de Curvas Paramétricas]] - Tangentes en curvas paramétricas
 

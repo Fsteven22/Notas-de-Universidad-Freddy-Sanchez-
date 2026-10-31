@@ -536,7 +536,7 @@ dg-publish: true
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación directa
 > - Análisis Gráfico - Representación visual
-> - [[Optimización en Física]] - Aplicaciones avanzadas
+> - Optimización en Física - Aplicaciones avanzadas
 
 ---
 

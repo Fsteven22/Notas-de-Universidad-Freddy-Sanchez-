@@ -587,7 +587,7 @@ dg-publish: true
 > 
 > **Esta nota establece las bases para:**
 > 
-> - **[[Matriz Ampliada y Gauss]]** - Método sistemático de solución
+> - **Matriz Ampliada y Gauss** - Método sistemático de solución
 > - **[[07 - Rango de una Matriz]]** - Criterio algebraico de clasificación
 > - **[[01 - Subespacios Vectoriales]]** - Interpretación en términos de dependencia lineal
 > - **[[04 - Determinantes]]** - Criterio para sistemas cuadrados
@@ -1756,7 +1756,7 @@ dg-publish: true
 > - [[02 - Vectores en R3|Vectores en ℝⁿ]] - Representación de soluciones
 > - [[02 - Operaciones con matrices]] - Notación matricial
 > - [[04 - Determinantes]] - Criterio de invertibilidad
-> - [[Geometría Analítica]] - Interpretación geométrica
+> - Geometría Analítica - Interpretación geométrica
 > 
 > **Aplicaciones directas:**
 > 
@@ -1768,16 +1768,16 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Valores y Vectores propios]] - Sistemas de ecuaciones especiales
-> - [[Descomposición LU]] - Factorización para resolver sistemas
-> - [[Métodos Iterativos]] - Jacobi, Gauss-Seidel
+> - Descomposición LU - Factorización para resolver sistemas
+> - Métodos Iterativos - Jacobi, Gauss-Seidel
 > - [[Sistemas No Lineales]] - Generalización
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
 > - [[Análisis de Circuitos]] - Leyes de Kirchhoff
 > - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización Lineal]] - Programación lineal
-> - [[Mecánica]] - Equilibrio de fuerzas
-> - [[Economía Matemática]] - Modelos de equilibrio
+> - Mecánica - Equilibrio de fuerzas
+> - Economía Matemática - Modelos de equilibrio
 > - [[05 – Proceso de Gram-Schmidt#Procesamiento de Señales|Procesamiento de Señales]] - Sistemas LTI
 > - [[Aprendizaje Automático]] - Regresión lineal
 

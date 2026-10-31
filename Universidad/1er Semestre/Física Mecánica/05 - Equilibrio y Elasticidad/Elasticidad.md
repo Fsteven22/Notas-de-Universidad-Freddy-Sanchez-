@@ -296,7 +296,7 @@ dg-publish: true
 > - Mecánica de Materiales - Análisis de esfuerzos complejos
 > - Dinámica Estructural - Vibraciones en sistemas elásticos
 > - Mecánica de Fracturas - Límites de resistencia de materiales
-> - [[Análisis por Elementos Finitos]] - Modelado computacional
+> - Análisis por Elementos Finitos - Modelado computacional
 
 ---
 

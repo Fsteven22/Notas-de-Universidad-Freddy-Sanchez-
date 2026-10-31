@@ -198,7 +198,7 @@ dg-publish: true
 
 > [!quote] 🔗 Links a Otras Notas
 > 
-> - > [[Dinámica Lineal]] - Segunda Ley de Newton
+> - > Dinámica Lineal - Segunda Ley de Newton
 >     
 > - > [[Cinemática Rotacional]] - Torque y momento de inercia
 >     

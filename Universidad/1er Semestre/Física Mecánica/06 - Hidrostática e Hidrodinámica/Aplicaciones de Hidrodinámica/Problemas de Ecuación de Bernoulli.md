@@ -770,7 +770,7 @@ dg-publish: true
 > - [[Ecuación de Continuidad y Bernoulli]] - Base teórica fundamental
 > - [[Presión y Densidad]] - Conceptos previos necesarios
 > - Aplicaciones de Hidrodinámica - Contexto general
-> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Principios básicos
+> - Fundamentos de Hidrostática e Hidrodinámica - Principios básicos
 
 ## 📚 Notas Recomendadas
 

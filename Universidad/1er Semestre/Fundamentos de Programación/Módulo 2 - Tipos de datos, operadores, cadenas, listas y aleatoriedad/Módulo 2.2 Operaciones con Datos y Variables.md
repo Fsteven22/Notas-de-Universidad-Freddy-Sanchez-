@@ -328,7 +328,7 @@ dg-publish: true
 > - Condicionales If-Else Python - Uso de operadores booleanos
 > - Bucles Python - Iteración con operaciones
 > - [[Módulo 3.1 Funciones|Funciones Python]] - Operaciones reutilizables
-> - [[Manejo de Errores Python]] - Try/except para casting
+> - Manejo de Errores Python - Try/except para casting
 > - Métodos Avanzados Strings Python - Manipulación compleja de texto
 
 ## 🎯 Notas Recomendadas para Complementar
@@ -339,16 +339,16 @@ dg-publish: true
 > 
 > - Instalación Python
 > - Variables Básicas Python
-> - [[Conceptos Básicos Programación]]
+> - Conceptos Básicos Programación
 > - Tipos de Datos Primitivos
 > 
 > ### 🔄 **Temas Relacionados**
 > 
 > - [[1er Semestre/Fundamentos de Programación/Módulo general - Funciones especiales/Expresiones Regulares (Regex).md]] - Manipulación avanzada de strings
-> - [[Matemáticas Python (math)]] - Operaciones numéricas complejas
+> - Matemáticas Python (math) - Operaciones numéricas complejas
 > - Formateo de Strings Python - f-strings y formato avanzado
-> - [[Validación de Datos Python]] - Uso práctico de casting y booleanos
-> - [[Algoritmos de Búsqueda]] - Aplicaciones de comparaciones
+> - Validación de Datos Python - Uso práctico de casting y booleanos
+> - Algoritmos de Búsqueda - Aplicaciones de comparaciones
 > - Depuración Python - Debugging con operaciones
 
 ## 🧠 Técnica de Estudio: C.O.D.E Operations

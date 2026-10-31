@@ -424,7 +424,7 @@ dg-publish: true
 > - [[03 - Gráfico de Funciones]] - Visualizar funciones escalares
 > - [[02 – Curvas de Nivel]] - Representar funciones de 2 variables
 > - [[Derivadas Parciales]] - Calcular tasas de cambio
-> - [[11 - Gradiente]] - Vector de derivadas parciales
+> - 11 - Gradiente - Vector de derivadas parciales
 > 
 > **Prerequisitos:**
 > 

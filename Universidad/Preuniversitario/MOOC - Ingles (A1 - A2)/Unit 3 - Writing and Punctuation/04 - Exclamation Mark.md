@@ -957,7 +957,7 @@ dg-publish: true
 > • "How could you!" (rhetorical, expressing shock)
 > ```
 > 
-> **[[Comma (,)]]**
+> **Comma (,)**
 > 
 > ```
 > Conexión: After interjections, use comma before continuing
@@ -971,7 +971,7 @@ dg-publish: true
 > 
 > **Grammar connections:**
 > 
-> **[[Imperative Mood]]**
+> **Imperative Mood**
 > 
 > ```
 > • Commands can use period or exclamation
@@ -980,7 +980,7 @@ dg-publish: true
 > • "Stop." vs "Stop!"
 > ```
 > 
-> **[[Interjections]]**
+> **Interjections**
 > 
 > ```
 > • Words expressing sudden emotion
@@ -988,7 +988,7 @@ dg-publish: true
 > • Ouch! Wow! Hey! Oh no!
 > ```
 > 
-> **[[Exclamatory Sentences]]**
+> **Exclamatory Sentences**
 > 
 > ```
 > • Special sentence type
@@ -997,7 +997,7 @@ dg-publish: true
 > • What a day! How beautiful!
 > ```
 > 
-> **[[Tone and Register]]**
+> **Tone and Register**
 > 
 > ```
 > • Exclamation marks affect formality

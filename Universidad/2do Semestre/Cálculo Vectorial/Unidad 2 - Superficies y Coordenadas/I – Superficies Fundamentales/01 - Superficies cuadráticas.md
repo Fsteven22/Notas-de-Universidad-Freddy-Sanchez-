@@ -1084,11 +1084,11 @@ dg-publish: true
 > 
 > **Prerequisitos:**
 > 
-> - [[Ecuación de la recta en ℝ³]] - Para entender generatrices
+> - Ecuación de la recta en ℝ³ - Para entender generatrices
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Para cálculos de área
-> - [[Cónicas]] - Base bidimensional
+> - Cónicas - Base bidimensional
 > 
 > **Temas relacionados:**
 > 
@@ -1108,9 +1108,9 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
-> - [[Topología]] - Clasificación de superficies
+> - Topología - Clasificación de superficies
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
-> - [[Geometría proyectiva]] - Teoremas de Desargues y Pascal
+> - Geometría Proyectiva - Teoremas de Desargues y Pascal
 
 ## 📊 Diagrama Conceptual
 

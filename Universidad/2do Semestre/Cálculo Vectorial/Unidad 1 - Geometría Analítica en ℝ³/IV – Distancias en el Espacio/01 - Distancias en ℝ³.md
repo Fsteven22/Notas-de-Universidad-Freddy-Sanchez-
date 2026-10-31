@@ -689,31 +689,31 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Necesario para distancia punto-recta
-> - [[Producto Escalar]] - Proyecciones y ángulos
-> - [[Ecuaciones de Rectas]] - Formas paramétricas y simétricas
-> - [[Ecuaciones de Planos]] - Forma general y normal
+> - Producto Escalar - Proyecciones y ángulos
+> - Ecuaciones de Rectas - Formas paramétricas y simétricas
+> - Ecuaciones de Planos - Forma general y normal
 > 
 > **Aplicaciones directas:**
 > 
 > - [[Ángulos en ℝ³]] - Complementa el estudio geométrico
 > - [[Proyecciones]] - Relacionado con distancias perpendiculares
 > - [[01 - Superficies cuadráticas]] - Distancias a objetos curvos
-> - [[Optimización en ℝ³]] - Minimización de distancias
+> - Optimización en ℝ³ - Minimización de distancias
 > 
 > **Temas avanzados:**
 > 
 > - [[Cálculo Vectorial]] - Gradientes y direcciones
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas en variedades
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización abstracta
-> - [[Topología]] - Bolas abiertas y cerradas
+> - Topología - Bolas abiertas y cerradas
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
 > - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Rendering y ray tracing
-> - [[Visión por Computadora]] - Reconstrucción 3D
+> - Visión por Computadora - Reconstrucción 3D
 > - [[Machine Learning]] - k-NN, clustering espacial
-> - [[Física Computacional]] - Simulaciones de partículas
-> - [[GIS (Sistemas de Información Geográfica)]] - Análisis espacial
+> - Física Computacional - Simulaciones de partículas
+> - GIS (Sistemas de Información Geográfica) - Análisis espacial
 
 ## 💡 Consejos de Estudio
 

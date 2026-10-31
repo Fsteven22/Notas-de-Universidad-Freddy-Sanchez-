@@ -355,7 +355,7 @@ dg-publish: true
 
 ## Referencias 🔗
 
-> [!quote] [[Aplicaciones de Derivadas]] Marco general de aplicaciones del cálculo diferencial
+> [!quote] Aplicaciones de Derivadas Marco general de aplicaciones del cálculo diferencial
 >
 
 > [!quote] Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena Fundamento matemático de la derivación implícita
@@ -367,14 +367,14 @@ dg-publish: true
 > [!quote] [[01 - Problemas de Optimización]] Otros tipos de problemas aplicados de cálculo
 >
 
-> [!quote] [[Modelado Matemático]] Principios para traducir problemas reales a matemáticas
+> [!quote] Modelado Matemático Principios para traducir problemas reales a matemáticas
 
 ## Notas Recomendadas para Complementar 📖
 
 - [[Constante de integración#Cinemática|Cinemática]] - Fundamentos físicos de velocidad y aceleración
 - Geometría Analítica - Relaciones geométricas fundamentales
 - Trigonometría - Para problemas con ángulos y rotación
-- [[Física General]] - Contexto físico de las aplicaciones
+- Física General - Contexto físico de las aplicaciones
 - [[Ecuaciones Diferenciales]] - Modelado dinámico avanzado
 - [[Cálculo Vectorial]] - Extensión a movimiento en múltiples dimensiones
 - Mecánica de Fluidos - Aplicaciones específicas en flujos

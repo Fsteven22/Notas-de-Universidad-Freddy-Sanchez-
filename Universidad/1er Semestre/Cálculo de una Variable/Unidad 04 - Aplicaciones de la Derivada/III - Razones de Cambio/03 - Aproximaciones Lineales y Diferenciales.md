@@ -89,10 +89,10 @@ dg-publish: true
 
 > [!quote] 🔗 Notas Relacionadas
 > 
-> - [[Derivadas y sus Aplicaciones]] - Fundamentos necesarios
+> - Derivadas y sus Aplicaciones - Fundamentos necesarios
 > - Recta Tangente - Base geométrica de las aproximaciones
-> - [[Análisis de Errores Experimentales]] - Aplicaciones prácticas
-> - [[Funciones y Continuidad]] - Conceptos previos importantes
+> - Análisis de Errores Experimentales - Aplicaciones prácticas
+> - Funciones y Continuidad - Conceptos previos importantes
 
 ## Notas Recomendadas 💡
 
@@ -102,7 +102,7 @@ dg-publish: true
 > - Series de Taylor - Aproximaciones de orden superior
 > - [[Métodos Numéricos]] - Implementación computacional
 > - Física Experimental - Aplicaciones en laboratorio
-> - [[Estadística de Errores]] - Análisis más avanzado de incertidumbre
+> - Estadística de Errores - Análisis más avanzado de incertidumbre
 
 ---
 

@@ -377,7 +377,7 @@ dg-publish: true
 > [!quote] [[01 – Gradiente y Derivadas Direccionales]] Fundamentos vectoriales del método de Lagrange
 >
 
-> [!quote] [[Aplicaciones de Derivadas]] Contexto más amplio de optimización aplicada
+> [!quote] Aplicaciones de Derivadas Contexto más amplio de optimización aplicada
 >
 
 > [!quote] [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] Extensión completa del método de Lagrange

@@ -125,14 +125,14 @@ dg-publish: true
 > - [[Presión y Densidad#Presión Hidrostática|Presión Hidrostática]]
 > - [[El Principio de Pascal]]
 > - Densidad de Fluidos
-> - [[Sistemas Hidráulicos]]
+> - Sistemas Hidráulicos
 
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
 > 
-> - [[Conceptos Básicos de Fluidos]]
-> - [[Presión y Fuerza]]
+> - Conceptos Básicos de Fluidos
+> - Presión y Fuerza
 > - Densidad y Peso Específico
 >
 
@@ -140,7 +140,7 @@ dg-publish: true
 > 
 > - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md]]
 > - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]]
-> - [[Teorema de Torricelli]]
+> - Teorema de Torricelli
 
 ---
 

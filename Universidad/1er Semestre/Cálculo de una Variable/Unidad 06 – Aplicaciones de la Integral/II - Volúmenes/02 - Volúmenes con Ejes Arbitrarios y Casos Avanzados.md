@@ -398,10 +398,10 @@ dg-publish: true
 
 ### 🎯 Aplicaciones Especializadas
 
-- [[Centros de Masa de Sólidos]] - Centroides de sólidos de revolución
+- Centros de Masa de Sólidos - Centroides de sólidos de revolución
 - [[Momento de Inercia]] - Para objetos en rotación
 - Optimización en Ingeniería - Diseño óptimo de componentes
-- [[Modelado Matemático]] - Aplicaciones en ciencias e ingeniería
+- Modelado Matemático - Aplicaciones en ciencias e ingeniería
 
 ### 🏷️ Tags
 

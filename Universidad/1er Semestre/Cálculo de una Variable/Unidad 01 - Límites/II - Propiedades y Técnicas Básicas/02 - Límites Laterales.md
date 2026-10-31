@@ -206,7 +206,7 @@ dg-publish: true
 > 
 > - [[01 - Concepto y Definición Formal del Límite]] - Fundamentos básicos
 > - [[03 - Límites en Gráficas]] - Interpretación visual
-> - [[Funciones y Continuidad]] - Relación con continuidad
+> - Funciones y Continuidad - Relación con continuidad
 > - [[02 - Límites Laterales#Funciones Definidas por Partes|Funciones Definidas por Partes]] - Casos especiales
 
 ## Notas Recomendadas 💡

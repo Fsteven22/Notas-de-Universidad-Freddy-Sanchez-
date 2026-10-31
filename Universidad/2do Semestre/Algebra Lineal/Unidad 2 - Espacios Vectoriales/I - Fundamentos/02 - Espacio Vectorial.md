@@ -1457,10 +1457,10 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[02.1 Conjuntos]] - Definición de conjunto
+> - 02.1 Conjuntos - Definición de conjunto
 > - [[01 - Funciones]] - Operaciones como funciones
 > - [[01 - Conjuntos Numéricos]] - Campo de escalares ℝ, ℂ
-> - [[06.1 Matrices]] - M_{m×n} como espacio vectorial
+> - 06.1 Matrices - M_{m×n} como espacio vectorial
 > - [[02 - Operaciones con matrices]] - Suma y multiplicación
 > 
 > **Temas relacionados:**
@@ -1468,12 +1468,12 @@ dg-publish: true
 > - [[Álgebra Lineal]] - Teoría completa
 > - [[01 – Transformaciones lineales]] - Funciones entre espacios
 > - [[01 – Producto interno]] - Estructura adicional
-> - [[Normas]] - Medida de longitud
-> - [[Ortogonalidad]] - Perpendicularidad generalizada
+> - Normas - Medida de longitud
+> - Ortogonalidad - Perpendicularidad generalizada
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Eigenvalores y Eigenvectores]] - Diagonalización
+> - Eigenvalores y Eigenvectores - Diagonalización
 > - [[08 - Desigualdad de Cauchy–Schwarz#Espacios con Producto Interno|Espacios con Producto Interno]] - Geometría
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Dimensión infinita
 > - [[Ecuaciones Diferenciales]] - Espacio de soluciones

@@ -303,7 +303,7 @@ dg-publish: true
 > 
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Fundamento para verificar antiderivadas
 > - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base teórica para la existencia de antiderivadas
-> - [[Funciones y sus Propiedades]] - Conocimiento previo esencial
+> - Funciones y sus Propiedades - Conocimiento previo esencial
 > - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Contexto matemático general
 
 ---
@@ -312,10 +312,10 @@ dg-publish: true
 
 > [!info] 📚 Para profundizar y complementar
 > 
-> - [[Integración por Sustitución]] - Siguiente método de integración
+> - Integración por Sustitución - Siguiente método de integración
 > - [[Integración por Partes]] - Técnica avanzada de integración
 > - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas
-> - [[Ecuaciones Diferenciales Básicas]] - Aplicación directa de antiderivadas
+> - Ecuaciones Diferenciales Básicas - Aplicación directa de antiderivadas
 > - Cinemática y Antiderivadas - Aplicaciones en física
 > - [[04 - Teorema Fundamental del Cálculo#Funciones Definidas por Integrales|Funciones Definidas por Integrales]] - Extensión del concepto
 > - Tabla Completa de Integrales - Referencia exhaustiva

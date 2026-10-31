@@ -2056,18 +2056,18 @@ dg-publish: true
 > 
 > - [[Derivadas Parciales]]
 >     
-> - [[07 - Límites y Continuidad]]
+> - 07 - Límites y Continuidad
 >     
 > 
 > **Este tema es prerequisito para:**
 > 
 > - [[01 – Gradiente y Derivadas Direccionales]]
 >     
-> - [[12 - Regla de la Cadena Multivariable]]
+> - 12 - Regla de la Cadena Multivariable
 >     
-> - [[13 - Plano Tangente y Aproximación]]
+> - 13 - Plano Tangente y Aproximación
 >     
-> - [[14 - Extremos y Optimización]]
+> - 14 - Extremos y Optimización
 >     
 > - [[01 - Multiplicaciones de Lagrange]]
 >     

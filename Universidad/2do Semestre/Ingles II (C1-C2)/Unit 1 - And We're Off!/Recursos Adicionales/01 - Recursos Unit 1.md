@@ -81,7 +81,7 @@ dg-publish: true
 > | Archivo | Descripción |
 > |---|---|
 > | [[Academic Post KYdA.pdf]] | Instrucciones y requisitos de la tarea |
-> | [[Feedback code.png]] | Código de corrección usado por el profesor para el feedback escrito |
+> | Feedback code.png | Código de corrección usado por el profesor para el feedback escrito |
 
 ## 📎 Academic Post publicado (sitio web)
 

@@ -1283,18 +1283,18 @@ dg-publish: true
 > 
 > ### Prerequisitos:
 > 
-> - **[[08 - Bases]]** - Definición y propiedades de bases
+> - **08 - Bases** - Definición y propiedades de bases
 > - **[[03 – Coordenadas en un espacio vectorial]]** - Vector de coordenadas
-> - **[[09 - Dimensión]]** - Tamaño de las matrices de cambio
+> - **09 - Dimensión** - Tamaño de las matrices de cambio
 > - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Garantiza invertibilidad
 > 
 > ### Este tema es prerequisito para:
 > 
 > - **[[07 - Matriz de una Transformación Lineal]]** - Representación en diferentes bases
-> - **[[16 - Cambio de Base para Transformaciones]]** - Similaridad de matrices
-> - **[[22 - Eigenvalores y Eigenvectores]]** - Diagonalización
-> - **[[23 - Diagonalización]]** - Cambio a base de eigenvectores
-> - **[[24 - Forma de Jordan]]** - Forma canónica más general
+> - **16 - Cambio de Base para Transformaciones** - Similaridad de matrices
+> - **22 - Eigenvalores y Eigenvectores** - Diagonalización
+> - **23 - Diagonalización** - Cambio a base de eigenvectores
+> - **24 - Forma de Jordan** - Forma canónica más general
 > 
 > ### Temas relacionados:
 > 

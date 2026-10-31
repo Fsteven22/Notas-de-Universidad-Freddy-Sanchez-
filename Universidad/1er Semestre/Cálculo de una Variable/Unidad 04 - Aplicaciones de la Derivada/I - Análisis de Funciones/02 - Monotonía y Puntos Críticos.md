@@ -479,7 +479,7 @@ dg-publish: true
 > 
 > - Optimización - Problemas de máximos y mínimos
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Estudio completo
-> - [[Modelos Matemáticos]] - Aplicaciones en ciencias
+> - Modelos Matemáticos - Aplicaciones en ciencias
 > 
 > **Temas avanzados:**
 > 

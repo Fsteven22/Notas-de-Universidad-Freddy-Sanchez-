@@ -236,7 +236,7 @@ dg-publish: true
 > **Prerrequisitos esenciales:**
 > 
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Para ángulos y componentes
-> - [[Álgebra]] - Para operaciones algebraicas
+> - Álgebra - Para operaciones algebraicas
 > - Geometría - Para interpretación geométrica
 > - [[01 - Funciones]] - Para vectores como funciones del tiempo
 > 

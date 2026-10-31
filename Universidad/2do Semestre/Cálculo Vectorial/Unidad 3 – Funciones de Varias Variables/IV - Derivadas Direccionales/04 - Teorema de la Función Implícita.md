@@ -717,24 +717,24 @@ dg-publish: true
 > 
 > **Prerequisites:**
 > - [[Derivadas Parciales]] - Base del cálculo multivariable
-> - [[Continuidad y Diferenciabilidad]] - Condiciones de regularidad
+> - Continuidad y Diferenciabilidad - Condiciones de regularidad
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Dominio del teorema
 > 
 > **Temas relacionados:**
 > - [[06 – Matriz Jacobiana#Regla de la Cadena Multivariable|Regla de la Cadena Multivariable]] - Derivación de fórmulas
-> - [[Jacobiano]] - Generalización a sistemas
-> - [[Gradiente]] - Vector de derivadas parciales
+> - Jacobiano - Generalización a sistemas
+> - Gradiente - Vector de derivadas parciales
 > 
 > **Aplicaciones:**
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
-> - [[Ecuaciones Diferenciales Implícitas]] - Existencia de soluciones
+> - Ecuaciones Diferenciales Implícitas - Existencia de soluciones
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies y curvas de nivel
 > - [[02 – Jacobiano de la transformación#Análisis de Sensibilidad|Análisis de Sensibilidad]] - Economía y optimización
 > 
 > **Generalizaciones:**
 > - [[05 - Funciones compuestas#Teorema de la Función Inversa|Teorema de la Función Inversa]] - Caso especial
-> - [[Teorema del Rango]] - Álgebra lineal
-> - [[Variedades Diferenciables]] - Geometría avanzada
+> - Teorema del Rango - Álgebra lineal
+> - Variedades Diferenciables - Geometría avanzada
 
 ## 💡 Errores Comunes y Consejos
 

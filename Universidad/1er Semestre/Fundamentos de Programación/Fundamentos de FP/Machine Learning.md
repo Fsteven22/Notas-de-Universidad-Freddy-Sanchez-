@@ -140,37 +140,37 @@ Ejemplo:
 ### 📖 Enlaces a Otras Notas
 - ![[Fundamentos de Programación]] - Base para implementar algoritmos de ML
 - ![[01 - Superficies cuadráticas#Métodos de Estudio|Métodos de Estudio]] - Para estructurar el aprendizaje de conceptos complejos
-- ![[Análisis Costo-Beneficio]] - Evaluar viabilidad de proyectos de ML
-- ![[Gestión de Proyectos]] - Manejar proyectos de ML efectivamente
-- ![[Estadística y Probabilidad]] - Fundamento matemático del ML
+- !Análisis Costo-Beneficio - Evaluar viabilidad de proyectos de ML
+- !Gestión de Proyectos - Manejar proyectos de ML efectivamente
+- !Estadística y Probabilidad - Fundamento matemático del ML
 - ![[Visualización de Datos]] - Comunicar resultados de modelos
 
 > [!note]- ## Prerrequisitos y Notas Recomendadas 📋
 
 ### 🧮 **Fundamentos Matemáticos (Esenciales)**
 - ![[Cálculo de una Variable]] - Para entender optimización y gradientes
-- ![[Estadística y Probabilidad]] - Base fundamental para ML
+- !Estadística y Probabilidad - Base fundamental para ML
 - ![[Álgebra Lineal]] - Operaciones matriciales y vectoriales
 - ![[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Estadística Básica.md]] - Análisis exploratorio de datos
 
 ### 💻 **Programación (Requeridos)**
 - ![[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] - Fundamentos de Python
 - ![[01 - Funciones]] - Modularización de código
-- ![[Pandas]] - Manipulación de datos
-- ![[NumPy]] - Cálculos numéricos
+- !Pandas - Manipulación de datos
+- !NumPy - Cálculos numéricos
 - Matplotlib / Seaborn - Visualización
 
 ### 🎯 **Metodología y Proceso (Complementarios)**
-- ![[Design Thinking]] - Enfoque centrado en problemas
-- ![[Análisis de Datos]] - Exploración y visualización
-- ![[Gestión de Calidad]] - Control de calidad en datos
-- ![[Documentación de Procesos]] - Registro de experimentos
+- !Design Thinking - Enfoque centrado en problemas
+- !Análisis de Datos - Exploración y visualización
+- !Gestión de Calidad - Control de calidad en datos
+- !Documentación de Procesos - Registro de experimentos
 
 ### 🔧 **Herramientas Técnicas (Opcionales pero Útiles)**
-- ![[Git y GitHub]] - Control de versiones para proyectos
-- ![[Bases de Datos]] - Almacenamiento y consulta de datos
-- ![[APIs y Web Services]] - Integración de datos
-- ![[Cloud Computing]] - Escalabilidad de modelos
+- !Git y GitHub - Control de versiones para proyectos
+- !Bases de Datos - Almacenamiento y consulta de datos
+- !APIs y Web Services - Integración de datos
+- !Cloud Computing - Escalabilidad de modelos
 
 [!abstract]- ## Recursos de Aprendizaje y Herramientas 🎓
 

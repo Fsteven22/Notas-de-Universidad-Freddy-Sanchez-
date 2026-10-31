@@ -189,7 +189,7 @@ dg-publish: true
 > 
 > - [[1er Semestre/Física Mecánica/06 - Hidrostática e Hidrodinámica/Hidrostática/El Principio de Arquímedes y Flotación.md]] - Flotación y empuje
 > - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]] - Conservación de masa en fluidos
-> - [[Principio de Bernoulli]] - Energía en fluidos en movimiento
+> - Principio de Bernoulli - Energía en fluidos en movimiento
 > - [[Tensión Superficial]] - Efectos de superficie en líquidos
 > - Viscosidad - Resistencia interna de fluidos
 

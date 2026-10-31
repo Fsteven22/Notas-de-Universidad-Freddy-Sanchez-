@@ -679,7 +679,7 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - [[Límites Básicos]] - Fundamentos de límites
+> - Límites Básicos - Fundamentos de límites
 > - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]] - ln(ab) = ln(a) + ln(b), etc.
 > - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas.md]] - Para aplicar L'Hôpital
 > 
@@ -688,7 +688,7 @@ dg-publish: true
 > - 01 - Límites Especiales - Contrapartida de estos límites
 > - Series de Taylor - Desarrollo alternativo para algunos límites
 > - Análisis Asintótico - Estudio avanzado de comportamientos límite
-> - [[Aplicaciones en Optimización]] - Uso práctico de estos conceptos
+> - Aplicaciones en Optimización - Uso práctico de estos conceptos
 
 ---
 

@@ -1724,7 +1724,7 @@ dg-publish: true
 > 
 > **Prerequisitos:**
 > 
-> - [[Conjuntos y Lógica]] - Teoría básica de conjuntos
+> - Conjuntos y Lógica - Teoría básica de conjuntos
 > - [[Sucesiones y Límites]] - Convergencia
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Distancias
@@ -1740,20 +1740,20 @@ dg-publish: true
 > 
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Compacidad garantiza extremos
 > - [[Ecuaciones Diferenciales]] - Existencia y unicidad
-> - [[Teoría de la Medida]] - Conjuntos medibles
+> - Teoría de la Medida - Conjuntos medibles
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
 > 
 > **Temas avanzados:**
 > 
-> - [[Topología Algebraica]] - Homología, cohomología
+> - Topología Algebraica - Homología, cohomología
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades topológicas
-> - [[Topología General]] - Espacios abstractos
-> - [[Análisis Real]] - Teoría de la medida
+> - Topología General - Espacios abstractos
+> - Análisis Real - Teoría de la medida
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Ciencia de Datos]] - Clustering topológico
-> - [[Física]] - Continuidad de campos
-> - [[Economía]] - Teorema del punto fijo de Brouwer
-> - [[Biología]] - Morfología topológica
+> - Ciencia de Datos - Clustering topológico
+> - Física - Continuidad de campos
+> - Economía - Teorema del punto fijo de Brouwer
+> - Biología - Morfología topológica
 

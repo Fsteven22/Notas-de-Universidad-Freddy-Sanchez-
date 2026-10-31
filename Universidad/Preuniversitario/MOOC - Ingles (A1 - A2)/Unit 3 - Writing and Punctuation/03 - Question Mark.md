@@ -827,7 +827,7 @@ dg-publish: true
 > 
 > **Grammar connections:**
 > 
-> **[[Question Words (WH-words)]]**
+> **Question Words (WH-words)**
 > 
 > ```
 > • What, Where, When, Why, Who, How
@@ -835,7 +835,7 @@ dg-publish: true
 > • Learn question word order for correct structure
 > ```
 > 
-> **[[Auxiliary Verbs]]**
+> **Auxiliary Verbs**
 > 
 > ```
 > • Do/Does/Did, Am/Is/Are, Have/Has, Can/Will/Should
@@ -843,7 +843,7 @@ dg-publish: true
 > • Position: Auxiliary + Subject + Main Verb
 > ```
 > 
-> **[[Reported Speech]]**
+> **Reported Speech**
 > 
 > ```
 > • How questions change to indirect form

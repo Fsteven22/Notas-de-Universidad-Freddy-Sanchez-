@@ -1180,23 +1180,23 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[04 - Derivada Direccional y Gradiente]] - Extensión del plano tangente
+> - 04 - Derivada Direccional y Gradiente - Extensión del plano tangente
 > - [[02 - Regla de la Cadena]] - Composición de funciones
-> - [[06 - Extremos y Optimización]] - Usa la Hessiana
+> - 06 - Extremos y Optimización - Usa la Hessiana
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Teorema de Taylor en R²]] - Aproximaciones de orden superior
-> - [[Ecuaciones Diferenciales Parciales]] - EDPs sobre superficies
+> - Teorema de Taylor en R² - Aproximaciones de orden superior
+> - Ecuaciones Diferenciales Parciales - EDPs sobre superficies
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y formas fundamentales
 > - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Optimización de funcionales
 > 
 > **Conexiones interdisciplinarias:**
 > 
 > - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
-> - [[Termodinámica]] - Funciones de estado
-> - [[Economía Matemática]] - Funciones de utilidad
+> - Termodinámica - Funciones de estado
+> - Economía Matemática - Funciones de utilidad
 > - [[Aprendizaje Automático]] - Gradiente descendente
 
 ---

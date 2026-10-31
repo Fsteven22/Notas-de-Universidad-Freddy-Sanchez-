@@ -306,7 +306,7 @@ dg-publish: true
 > 
 > - [[Vectores]] - Descomposición de fuerzas
 > - Trigonometría Básica - Funciones trigonométricas
-> - [[Dinámica de Traslación]] - Aplicación de las leyes de Newton
+> - Dinámica de Traslación - Aplicación de las leyes de Newton
 
 ---
 

@@ -423,7 +423,7 @@ dg-publish: true
 > 
 > - [[Cifras Significativas]] - Expresión correcta de resultados
 > - Calibración de Instrumentos - Verificación de precisión
-> - [[Técnicas Experimentales]] - Métodos avanzados
+> - Técnicas Experimentales - Métodos avanzados
 
 ---
 

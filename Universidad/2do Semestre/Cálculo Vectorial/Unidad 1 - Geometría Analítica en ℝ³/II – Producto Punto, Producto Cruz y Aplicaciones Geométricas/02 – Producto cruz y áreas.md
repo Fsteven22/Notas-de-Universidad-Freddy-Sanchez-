@@ -1117,7 +1117,7 @@ dg-publish: true
 > 
 > - [[03 – Campos conservativos e independencia del camino#Teorema de Stokes|Teorema de Stokes]] - Circulación y flujo
 > - [[03 – Campos conservativos e independencia del camino#Teorema de la Divergencia|Teorema de la Divergencia]] - Flujo a través de superficies
-> - [[Ecuaciones de Maxwell]] - Electromagnetismo
+> - Ecuaciones de Maxwell - Electromagnetismo
 > 
 > **Temas relacionados:**
 > 

@@ -165,12 +165,12 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
-> - [[Centro de Gravedad y Centro de Masa]]
+> - Centro de Gravedad y Centro de Masa
 > - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > - [[Cinemática Rotacional]]
-> - [[Energía Potencial]]
-> - [[Estática]]
-> - [[Fuerzas y Torques]]
+> - Energía Potencial
+> - Estática
+> - Fuerzas y Torques
 
 ---
 

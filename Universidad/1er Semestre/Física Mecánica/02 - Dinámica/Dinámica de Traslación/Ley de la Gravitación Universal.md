@@ -202,7 +202,7 @@ dg-publish: true
 > 
 > - [[Leyes de Newton]] - Marco dinámico general
 > - [[Principios de Conservación de la Energía]] - Naturaleza de la gravedad
-> - `[[Principio de Superposición]]` - Múltiples masas
+> - `Principio de Superposición` - Múltiples masas
 > 
 >
 >[!question] Para Profundizar
@@ -212,7 +212,7 @@ dg-publish: true
 > - `Relatividad General` - Teoría moderna de gravedad
 > - `[[1er Semestre/Física Mecánica/01 - Cinemática/Aplicaciones de Cinemática Traslacional/Problemas de Encuentro.md]]` - Sistemas gravitacionales complejos
 > - `Ondas Gravitacionales` - Perturbaciones del espaciotiempo
-> - `[[Materia Oscura]]` - Efectos gravitacionales anómalos
+> - `Materia Oscura` - Efectos gravitacionales anómalos
 > 
 > ### 🧪 Aspectos Experimentales
 > 

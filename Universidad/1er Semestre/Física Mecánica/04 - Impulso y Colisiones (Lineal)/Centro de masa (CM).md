@@ -118,7 +118,7 @@ dg-publish: true
 > 
 > ### Dinámica de Sistemas
 > 
-> - Base para análisis de [[Colisiones]]
+> - Base para análisis de Colisiones
 > - Fundamento de Explosiones y fragmentaciones
 
 ---
@@ -149,9 +149,9 @@ dg-publish: true
 
 ### 📖 Temas Avanzados
 > [!summary]  Para más adelante:
-> - [[Centro de Masa vs Centro de Gravedad]]
+> - Centro de Masa vs Centro de Gravedad
 > - [[Sistemas de Referencia del Centro de Masa]]
-> - [[Teorema del Eje Paralelo]]> 
+> - Teorema del Eje Paralelo> 
 
 tags
 

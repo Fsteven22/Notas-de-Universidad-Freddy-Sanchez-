@@ -233,9 +233,9 @@ dg-publish: true
 >     
 > - > [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]] - Relación energética
 >     
-> - > [[Giroscopios]] - Aplicación práctica
+> - > Giroscopios - Aplicación práctica
 >     
-> - > [[Impulso Angular]] - Cambio de momento angular
+> - > Impulso Angular - Cambio de momento angular
 >     
 > - > Dinámica de Sistemas - Sistemas multipartícula
 >     
@@ -370,7 +370,7 @@ dg-publish: true
 > - [[Cinemática Rotacional]]
 > - [[Momento de Inercia]]
 > - [[Torque y Equilibrio Rotacional]]
-> - [[Impulso y Momentum Lineal]]
+> - Impulso y Momentum Lineal
 
 ---
 

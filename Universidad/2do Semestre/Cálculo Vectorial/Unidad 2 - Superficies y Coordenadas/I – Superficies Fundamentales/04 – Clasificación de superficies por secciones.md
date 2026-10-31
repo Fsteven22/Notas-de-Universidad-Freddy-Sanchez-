@@ -831,28 +831,28 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Fundamentos vectoriales
 > - [[03 – Aplicaciones geométricas básicas]] - Geometría en 3D
-> - [[Cónicas]] - Círculos, elipses, parábolas, hipérbolas en 2D
-> - [[Álgebra de ecuaciones cuadráticas]] - Formas canónicas
+> - Cónicas - Círculos, elipses, parábolas, hipérbolas en 2D
+> - Álgebra de ecuaciones cuadráticas - Formas canónicas
 > 
 > **Temas relacionados:**
 > 
 > - [[01 - Coordenadas cilíndricas y esféricas]] - Sistemas alternativos
-> - [[Ecuaciones de superficies]] - Representaciones
+> - Ecuaciones de superficies - Representaciones
 > - [[02 – Curvas de Nivel]] - Visualización 2D
 > - [[03 – Superficies de Nivel#Gradiente y Superficies de Nivel|Gradiente y superficies de nivel]] - Cálculo vectorial
 > 
 > **Aplicaciones:**
 > 
 > - [[Optimización en superficies]] - Máximos y mínimos
-> - [[Integrales de superficie]] - Cálculo multivariable
-> - [[Campos vectoriales en superficies]] - Física matemática
+> - Integrales de superficie - Cálculo multivariable
+> - Campos vectoriales en superficies - Física matemática
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas
 > 
 > **Temas siguientes:**
 > 
 > - [[03 - Superficies de revolución]] - Rotación de curvas
-> - [[06 - Ecuaciones paramétricas de superficies]] - Parametrización
-> - [[Topología de superficies]] - Propiedades globales
+> - 06 - Ecuaciones paramétricas de superficies - Parametrización
+> - Topología de superficies - Propiedades globales
 
 ---
 

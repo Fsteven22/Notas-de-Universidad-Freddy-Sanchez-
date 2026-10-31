@@ -1539,7 +1539,7 @@ dg-publish: true
 > 
 > **📊 Aplicaciones en temas futuros:**
 > 
-> **[[05 - Verb Tenses]]** (tema futuro sugerido)
+> **05 - Verb Tenses** (tema futuro sugerido)
 > 
 > ```
 > Conexión directa: Aquí aprendiste las tres formas principales.
@@ -1555,7 +1555,7 @@ dg-publish: true
 > para poder usar los tiempos verbales correctamente.
 > ```
 > 
-> **[[06 - Modal Verbs]]** (tema futuro sugerido)
+> **06 - Modal Verbs** (tema futuro sugerido)
 > 
 > ```
 > • can, could, may, might, must, shall, should, will, would
@@ -1563,7 +1563,7 @@ dg-publish: true
 > • Se usan con el INFINITIVO (base form) de verbos regulares e irregulares
 > ```
 > 
-> **[[07 - Passive Voice in Depth]]** (tema futuro sugerido)
+> **07 - Passive Voice in Depth** (tema futuro sugerido)
 > 
 > ```
 > • Formación: be + past participle
@@ -1571,7 +1571,7 @@ dg-publish: true
 > • Cuándo y por qué usar voz pasiva
 > ```
 > 
-> **[[08 - Phrasal Verbs]]** (tema futuro sugerido)
+> **08 - Phrasal Verbs** (tema futuro sugerido)
 > 
 > ```
 > • Verbos irregulares + preposiciones/adverbios

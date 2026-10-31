@@ -190,7 +190,7 @@ dg-publish: true
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
 > - [[Sistemas de Referencia Inerciales]]
-> - [[Aplicaciones de la Mecánica Rotacional]]
+> - Aplicaciones de la Mecánica Rotacional
 
 ## 📖 Notas Recomendadas
 

@@ -1805,7 +1805,7 @@ dg-publish: true
 > ### Este tema es prerequisito para:
 > 
 > - **[[01 – Transformaciones lineales]]** - Morfismos entre espacios
-> - **[[20 - Isomorfismos]]** - Equivalencia entre espacios con operaciones diferentes
+> - **20 - Isomorfismos** - Equivalencia entre espacios con operaciones diferentes
 > - **Álgebra Abstracta** - Grupos, anillos, campos
 > - **Geometría Diferencial** - Espacios tangentes con operaciones no estándar
 > 

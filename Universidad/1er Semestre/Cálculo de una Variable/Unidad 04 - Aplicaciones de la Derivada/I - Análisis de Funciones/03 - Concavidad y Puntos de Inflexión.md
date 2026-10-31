@@ -216,7 +216,7 @@ dg-publish: true
 > [!quote] [[01 - Análisis Completo de Funciones]] Estudio completo del comportamiento de funciones
 >
 
-> [!quote] [[Aplicaciones de Derivadas]] Casos prácticos del uso de derivadas en problemas reales
+> [!quote] Aplicaciones de Derivadas Casos prácticos del uso de derivadas en problemas reales
 
 
 ---

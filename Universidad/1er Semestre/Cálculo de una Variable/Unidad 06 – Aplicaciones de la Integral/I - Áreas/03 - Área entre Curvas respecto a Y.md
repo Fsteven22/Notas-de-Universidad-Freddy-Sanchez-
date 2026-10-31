@@ -308,7 +308,7 @@ dg-publish: true
 
 ### 🔧 Herramientas Computacionales
 
-- [[Graficación de Funciones]] - Para visualizar regiones y verificar resultados
+- Graficación de Funciones - Para visualizar regiones y verificar resultados
 - Cálculo Simbólico - Para evaluar integrales complejas
 - [[Métodos Numéricos]] - Para casos donde no hay solución analítica
 

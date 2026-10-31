@@ -392,7 +392,7 @@ dg-publish: true
 ## 🔍 Notas Recomendadas
 
 > [!info] 📚 Para profundizar y complementar
-> - [[Continuidad y Discontinuidades]] - Análisis de puntos de ruptura
+> - Continuidad y Discontinuidades - Análisis de puntos de ruptura
 > - [[06 - Funciones Especiales]] - Heaviside, Dirac, escalón
 > - [[Aplicaciones Geometricas]] - Problemas con condiciones variables
 > - [[01 - Integrales Impropias]] - Cuando hay discontinuidades infinitas

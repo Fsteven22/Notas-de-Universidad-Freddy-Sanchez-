@@ -691,14 +691,14 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > - [[06 – Espacio fila]] - Dual del espacio columna
-> - [[18 - Espacio nulo]] - Kernel de transformación
-> - [[19 - Rango y nulidad]] - Teorema fundamental
+> - 18 - Espacio nulo - Kernel de transformación
+> - 19 - Rango y nulidad - Teorema fundamental
 > - [[01 – Transformaciones lineales]] - Imagen
 > 
 > **Aplicaciones posteriores:**
-> - [[25 - Mínimos cuadrados]] - Proyecciones
-> - [[26 - Descomposición QR]] - Ortogonalización
-> - [[27 - Valores singulares]] - SVD
+> - 25 - Mínimos cuadrados - Proyecciones
+> - 26 - Descomposición QR - Ortogonalización
+> - 27 - Valores singulares - SVD
 > - [[28 - Espacios fundamentales]] - Teoría completa
 
 ## 📚 Recursos Adicionales

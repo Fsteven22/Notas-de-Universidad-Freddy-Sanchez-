@@ -187,14 +187,14 @@ dg-publish: true
 > - [[Centro de masa (CM)]]
 > - Torque y Momento de Torsión
 > - Conservación del Momento Angular
-> - [[Teorema de Ejes Paralelos]]
+> - Teorema de Ejes Paralelos
 > 
 > ### 📖 Temas Avanzados
 > 
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momento de Inercia.md]]
-> - [[Movimientos de Rodadura]]
+> - Movimientos de Rodadura
 > - [[Giroscopios y Precesión]]
-> - [[Momento de Inercia de Cuerpos Compuestos]]
+> - Momento de Inercia de Cuerpos Compuestos
 ### Tags
 
 #fisica #mecanica #rotacion #momento-inercia #dinamica-rotacional #energia-cinetica

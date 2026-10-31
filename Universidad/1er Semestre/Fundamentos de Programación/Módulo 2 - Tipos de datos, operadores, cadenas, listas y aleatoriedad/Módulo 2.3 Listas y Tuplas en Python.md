@@ -274,8 +274,8 @@ dg-publish: true
 > - Sets en Python - Colecciones sin duplicados
 > - Diccionarios Python - Mapeo clave-valor
 > - Comprensiones Python - Sintaxis avanzada
-> - [[Iteradores y Generadores]] - Procesamiento eficiente
-> - [[Algoritmos de Búsqueda]] - Encontrar elementos
+> - Iteradores y Generadores - Procesamiento eficiente
+> - Algoritmos de Búsqueda - Encontrar elementos
 > - Programación Funcional Python - map(), filter(), reduce()
 
 ## 🧠 Técnica de Estudio: L.I.S.T.A.S vs T.U.P.L.A.S

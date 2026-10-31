@@ -672,14 +672,14 @@ dg-publish: true
 > [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
 > 
 > - [[02 - Vectores en R3]] - Base fundamental
-> - [[Trigonometría]] - Funciones cos, arccos
-> - [[Álgebra Básica]] - Operaciones con números reales
+> - Trigonometría - Funciones cos, arccos
+> - Álgebra Básica - Operaciones con números reales
 > 
 > **Temas siguientes:**
 > 
 > - [[02 – Producto cruz y áreas]] - Otra operación vectorial
 > - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
-> - [[Rectas y Planos]] - Ecuaciones usando producto punto
+> - Rectas y Planos - Ecuaciones usando producto punto
 > 
 > **Aplicaciones avanzadas:**
 > 
@@ -690,7 +690,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[04 – Proyección ortogonal]] - Aplicaciones detalladas
-> - [[Bases Ortonormales]] - Sistemas perpendiculares
+> - Bases Ortonormales - Sistemas perpendiculares
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Descomposición QR|Descomposición QR]] - Ortogonalización de Gram-Schmidt
 
 ## 💡 Consejos y Errores Comunes

@@ -194,8 +194,8 @@ Para partición regular con $\Delta x = \frac{b-a}{n}$:
 > 
 > ### 📖 Para Profundizar
 > - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/II - Integrales Indefinidas/Constante de integración.md]] - Desarrollo histórico del concepto
-> - [[Integral de Lebesgue]] - Generalización moderna
-> - [[Métodos Numéricos de Integración]] - Aplicaciones computacionales
+> - Integral de Lebesgue - Generalización moderna
+> - Métodos Numéricos de Integración - Aplicaciones computacionales
 > 
 ### 🏷️ Tags
 #matematicas/calculo/integralesb #teoria/riemann #definiciones/fundamentales #limites/infinitos #geometria/areas #analisis/real

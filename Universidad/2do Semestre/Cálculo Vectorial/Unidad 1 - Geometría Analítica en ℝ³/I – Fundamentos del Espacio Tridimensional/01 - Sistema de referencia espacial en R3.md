@@ -252,7 +252,7 @@ dg-publish: true
 > **Base para:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones con magnitudes dirigidas
-> - [[01.3 Distancia en el Espacio]] - Métrica euclidiana
+> - 01.3 Distancia en el Espacio - Métrica euclidiana
 > - [[01 - Rectas en R3]] - Objetos lineales unidimensionales
 > - [[02 - Planos en R3]] - Objetos lineales bidimensionales
 > 

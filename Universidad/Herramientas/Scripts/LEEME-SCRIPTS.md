@@ -178,7 +178,7 @@ py md_a_pdf.py "Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Gu
 py md_a_pdf.py "ruta/nota.md" -o "salida.pdf" --html --landscape
 ```
 
-Resuelve los embeds de imagen y SVG (`![[nombre-de-archivo]]`) buscando en la carpeta de la nota, luego en la raíz del vault y por último en todo el vault; convierte `> [!note]` en callout con estilos; elimina el frontmatter. KaTeX y mermaid se cargan desde CDN (requieren internet en el momento de convertir). No resuelve transclusiones de notas (`![[Otra Nota]]`).
+Resuelve los embeds de imagen y SVG (`!nombre-de-archivo`) buscando en la carpeta de la nota, luego en la raíz del vault y por último en todo el vault; convierte `> [!note]` en callout con estilos; elimina el frontmatter. KaTeX y mermaid se cargan desde CDN (requieren internet en el momento de convertir). No resuelve transclusiones de notas (`!Otra Nota`).
 
 Guía completa y receta para publicar tareas: **`GUIA-MD-A-PDF.md`**.
 
