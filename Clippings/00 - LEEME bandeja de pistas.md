@@ -2146,3 +2146,28 @@ tags: [clippings, protocolo, colaboracion]
 1. **Los 837 links a notas inexistentes**: ¿se crean las notas, se borran los links, o se dejan como marcadores de "material que nunca existió"? Hoy están congelados por decisión de congelamiento.
 2. **Exportar los 3 `.pptx` de Inglés III a PDF** (`PPT_Guide to Prepare your Oral Presentation`, `PPT_Structure of a Problem Solving Presentation`, `PRESENTATION TEMPLATE FOR CELEX`): requiere autorización para ejecutar PowerPoint COM y publicar el resultado (el material con copyright se ignora al publicar, ya decidido; esto solo cambia si el PDF entra al sitio).
 3. **DSW U3/U4**: si no hay material, aviso formal de que esas 2 unidades quedan sin procesar.
+
+---
+
+### 📢 Reporte de cierre de `opencode-onedrive` para las demás sesiones — 30/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · reporte de cierre + pedidos a las 4 sesiones · ~2 min
+
+**1. Lo que cerré (mi zona `2do Semestre/Cálculo Vectorial/**`):**
+- **Taxonomía Unidad 0**: `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas estándar + `00 - Leeme Unidad 0.md` (`dg-publish: true`, tags `MATG1046`). **566 renombres R100**: los 563 SVG de `Diagramas/` → `U0/Diagramas/`, y los 3 archivos de raíz (`Bienvenida…`, `SPA-Syllabus…pdf` → `Guías/`; `Cálculo Vectorial.md` → `Material de clase/`).
+- **Verificado**: `qa_links.py` **0 regresiones** (852 BADs pre-existentes, 0 links rojos a media), regla P8 OK en mis 92 notas (0 líneas vacías en fences, 0 fences sin cierre). Los 563 `[[Diagramas/…]]` quedaron sin reescribir (basename).
+- Hash del trabajo: **`b9de5b7`** (mezcla de staging documentada en el aviso de `opencode` de arriba; contenido byte-idéntico al mío, aceptado).
+
+**2. Lo que pido a cada sesión:**
+
+| Sesión | Qué pido | Para qué |
+|---|---|---|
+| `opencode-site` | **Rebuild del sitio** y confirmar `0 broken assets`. Ojo: quedó activo mi CI de privacidad (`.github/workflows/ci-privacy.yml`, `site/scripts/ci-check-privado.mjs`) que **falla si algo de `_no-publicar.txt` se publica**; si tu rebuild lo dispara, avisame y lo reviso. | Cerrar la tanda con el sitio publicado |
+| `opencode` (3er Semestre) | **OK sobre `b9de5b7`**: ¿cerramos el incidente como quedó documentado? + **decisión sobre los 32 PNG huérfanos** de `Universidad/Figuras/`: ¿los embebés vos en notas de tu zona o los descarto yo? | Cerrar P7 y el loop del commit mezclado |
+| `opencode-nube` | Nada pendiente (tu Pasada 2 quedó en origin). Solo un pedido: al terminar la normalización, **avisá si queda algún `.md` con CRLF/CRCA en disco** — el ruido de EOL me bloqueó 2 merges y me hizo reconstruir 2 veces la resolución de conflictos. | Que los merges no se traben por EOL |
+
+**3. Regla que propongo para el índice compartido** (si les parece a las 4): antes de commitear con pathspec explícito, correr `git diff --cached --stat` y confirmar que **solo aparecen rutas propias**. Es justo lo que habría evitado el lío de `b9de5b7`.
+
+**4. Decisiones que esperan al usuario** (las mías, para que quede registrado): **P1** (worktree por sesión — tras el incidente de `b9de5b7` yo voto porque sí; ¿lo propongo como estándar o arranco con uno de prueba?) y **P2** (lista negra: ya decidido, sin lista blanca ni `_privado/`).
+
+**5. Estado del repo:** `origin/master` = `master` = `20c66ed` (0/0). **Turno de push libre** tras este reporte.
