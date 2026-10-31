@@ -1889,6 +1889,39 @@ tags: [clippings, protocolo, colaboracion]
 >
 > Protocolo igual: backup byte-exacto en `TEMP\opencode\backup_pasada2`, transformación exacta (colapsar `\r+\n`→`\n` y quitar SOLO las líneas vacías dentro del frontmatter), verificación por archivo, 1 commit, `qa_links.py` (baseline 854), y `PUSHEADO <hash>`.
 
+### Aviso de `opencode-nube` (Pasada 2 CERRADA: `f430057`) — 30/10/2026
+
+> [!success] PUSHEADO `f430057` — Pasada 2 cerrada · `origin/master` · 15 notas, 25 líneas fuera
+>
+> - Se subió por **worktree limpio con cherry-pick** porque el árbol principal tenía un merge de
+>   `opencode-site` en curso: `origin/master` = **`f430057`** (15 notas sin líneas vacías en frontmatter).
+> - El archivo residual CRCA (`02 - Representación gráfica.md`) **ya venía limpio en el remoto**
+>   (CR=0) → cherry-pick vacío, no se duplicó.
+> - **Verificado sobre `origin/master`**: **0 blobs con CR / 0 notas con frontmatter vacío** en las
+>   831 `.md` de `Universidad/`; `qa_links` = 8112 targets / 852 bad (0 regresiones: solo se borraron
+>   líneas vacías y CR, ningún link).
+> - **Hallazgo operativo (afecta a todos los fixers): OneDrive revierte en segundos los archivos sin
+>   commitear.** 15 de 16 reescrituras volvieron a su estado original antes del `git add`. Desde ahora:
+>   **escritura atómica** (escribir + `git add` + commit por archivo, en el mismo ciclo).
+> - **Pasada 3 (3.935 líneas / 185 notas) = SIN OBJETO**: 0 con 5 definiciones medidas. Queda
+>   reportada como resuelta, no se ejecuta.
+
+### Regla de poda de `Clippings/` (instruida por el usuario, 30/10/2026)
+
+> [!note] ✂️ Un solo punto de entrada, no una pila de archivos
+> El usuario pidió leer **uno** y no buscar en toda la carpeta. Regla, para las 4 sesiones:
+>
+> 1. **`Clippings/` debe tener pocos archivos**: el LEEME (avisos vivos), el tablero `ESTADO`,
+>    los 4 `LOG-<agente>.md` (uno por sesión), y los PISTA/INTAKE **solo mientras estén abiertos**.
+> 2. **Cuando el carril cierra**, su dueño **condensa** su PISTA/LOG: hechos, decisiones y hash
+>    dentro del LEEME o del tablero, y borra/condensa el archivo suelto. **Git guarda el historial**
+>    (`git log -- <archivo>`), así que condensar no pierde nada.
+> 3. **Aplicado hoy por `opencode-nube` en su zona**: `LOG-opencode-nube.md` de 555 → ~110 líneas,
+>    y las 2 PISTAS `#procesado` condensadas (de 206 y 53 → ~30 líneas cada una). **-600 líneas**.
+> 4. **No toqué** (son de otras sesiones): `ESTADO`, los 3 LOG restantes, `REPORTE`/`PROPUESTAS`
+>    del carril C. Cuando el carril C cierre, su dueña hace la misma poda.
+> 5. Referencia viva: `INTAKE - material nuevo 3er Sem.md` se mantiene mientras el carril D1 esté abierto.
+
 ---
 
 ### PUSHEO EN CURSO — `opencode` · `master` · carril B (figuras) + 3 fixes de embeds · 29/10/2026
