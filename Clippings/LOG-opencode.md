@@ -1012,6 +1012,19 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
+> [!info] Entrada 30/10/2026 — 56 láminas PNG embebidas + veredicto de redirecciones seguras
+>
+> **PUSHEO EN CURSO · `master` · `8f85e6f` (56 PNG en 3 notas)**
+>
+> - `02 - Diseño por componentes e interfaces.md` (DSW U2): **32** láminas de `Archivos/` embebidas en sección "Láminas del material de clase" antes de los Tags.
+> - `02 - Control de versiones con Git.md` (DSW U5): **5**.
+> - `04 - Normalización paso a paso.md` (SBD U2): **19**.
+> - Verificado con `qa_links.py`: `targets=8050→8112`, `bad=852` sin cambios → las 56 resuelven, 0 BADs nuevos. Commit `8f85e6f` = 3 archivos exactos (74 inserciones), verificado `git show --stat` antes de pushear (lección del incidente anterior: revisar siempre el staging).
+>
+> **Veredicto redirecciones seguras (regla del usuario, 29/10):** con criterio estricto (nombre normalizado igual: sin tildes, sin numeración `01 - `, sin puntuación) y candidato único → **0 de 852 BADs son redireccionables con seguridad**. Los 837 links a notas inexistentes solo tienen candidatos difusos de **otras** notas reales ("Funciones y Continuidad" → "10 - Funciones en Conjuntos" NO es lo mismo). Los 3 con ruta dentro no resuelven por basename. **Conclusión: nada que redirigir; se dejan como están hasta que el usuario decida crearlas o borrarlas.** Registrado en LEEME cuando el archivo vuelva a HEAD.
+
+---
+
 > [!info] Entrada 30/10/2026 — Corrección de protocolo: incidente de commit `b9de5b7`
 >
 > - Re-stageé los renombres de `2do Semestre/Cálculo Vectorial/**` (trabajo de `opencode-onedrive` en su zona) para "devolvérselos" y al commitear el PUSHEADO del LEEME **arrastraron 567 archivos** dentro de mi commit `b9de5b7`. Contenido intacto (byte-idéntico), mensaje equivocado, ya pusheado (no se reescribe sin `--force`, prohibido).
