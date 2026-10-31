@@ -314,6 +314,44 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > - Deck docente (paradigma de componentes, 4 etapas, COTS).
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
 
+> [!info] Láminas del material de clase
+>
+> Renderizados del deck de la unidad, en orden de presentación.
+>
+> ![[02b-p33.png]]
+> ![[02b-p34.png]]
+> ![[02b-p38.png]]
+> ![[02b-p40.png]]
+> ![[04a-p11-clase-uml.png]]
+> ![[04a-p12-visibilidad.png]]
+> ![[04a-p14-heuristicas.png]]
+> ![[04a-p16-sustantivo-verbo.png]]
+> ![[04a-p18-notacion-relaciones.png]]
+> ![[04a-p19-multiplicidad.png]]
+> ![[04a-p22-clase-asociacion.png]]
+> ![[04a-p23-generalizacion.png]]
+> ![[04a-p25-diagrama-clases.png]]
+> ![[04a-p33-elementos-secuencia.png]]
+> ![[04a-p39-alt.png]]
+> ![[04a-p40-opt.png]]
+> ![[04a-p42-biblioteca.png]]
+> ![[04a-p43-restricciones-tiempo.png]]
+> ![[04a-p44-tipos-interaccion.png]]
+> ![[04b-p11-bidireccionalidad.png]]
+> ![[04b-p18-generalizacion.png]]
+> ![[04b-p20-realizacion.png]]
+> ![[04b-p22-dependencia.png]]
+> ![[04b-p23-composicion.png]]
+> ![[04b-p24-agregacion.png]]
+> ![[04b-p4-relaciones.png]]
+> ![[04b-p5-tabla-relaciones.png]]
+> ![[04b-p9-codigo-asociacion.png]]
+> ![[04p-p45.png]]
+> ![[04p-p47.png]]
+> ![[04p-p48.png]]
+> ![[04p-p49.png]]
+
+
 ---
 
 **Tags:** #CCPG1042 #unidad2 #componentes #interfaces #diseno-software

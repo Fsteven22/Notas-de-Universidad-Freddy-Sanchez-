@@ -189,6 +189,31 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 > - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 6 (proceso de normalizaciÃ³n, Â§6.3-6.6).
 > - Diapositivas BD 02 MC_a_ML: mÃ©todos de conversiÃ³n y formas normales.
 
+> [!info] Láminas del material de clase
+>
+> Renderizados del deck de la unidad, en orden de presentación.
+>
+> ![[bd-023-p10.png]]
+> ![[bd-023-p12.png]]
+> ![[bd-023-p14.png]]
+> ![[bd-023-p15.png]]
+> ![[bd-023-p20.png]]
+> ![[bd-s03-p10.png]]
+> ![[bd-s03-p16.png]]
+> ![[bd-s03-p17.png]]
+> ![[bd-s03-p20.png]]
+> ![[bd-s03-p21.png]]
+> ![[bd-s03-p3.png]]
+> ![[bd-s03-p7.png]]
+> ![[bd-s03-p8.png]]
+> ![[bd-s04-p10.png]]
+> ![[bd-s04-p11.png]]
+> ![[bd-s04-p12.png]]
+> ![[bd-s04-p14.png]]
+> ![[bd-s04-p15.png]]
+> ![[bd-s04-p8.png]]
+
+
 ---
 
 **Tags:** #TICG1018 #unidad2 #normalizacion #paso-a-paso #bd
