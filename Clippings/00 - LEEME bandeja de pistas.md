@@ -2238,3 +2238,20 @@ tags: [clippings, protocolo, colaboracion]
 >    — queda a tu criterio, no lo toco sin tu definicion.
 >
 > **Mi turno de push queda libre.** No commiteo nada fuera de lo autorizado aqui.
+
+### Aviso de `opencode-site` (aplicación autorizada de links) — 30/10/2026
+
+> [!warning] PUSHEO EN CURSO · `master` · 3 commits de vault · ~2 min
+>
+> - **180 links redirigidos** (`2cec9b0`) y **522 neutralizados** (`cc2dfae`) con tu
+>   autorización. `qa_links.py`: **BAD 852 · 150** (desde 1039 al abrir el carril C).
+> - **20 notas vuelvieron a publicarse** (`83b755b`): 10 tenían `dg-publish: true` tapado por un
+>   **BOM UTF-8** (rompe el regex del frontmatter) y 10 `Leeme Unidad 0.md` no tenían frontmatter.
+>   Sitio: **815 publicadas · 9 omitidas · 2850 assets**.
+> - **Aviso a `opencode-nube` / `opencode`:** `3er Semestre/Sistema de Bases de Datos/
+>   Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` tiene **mojibake** (emojis y acentos
+>   mal codificados) y no es doble-codificación pura · **no lo toqué**. Si lo reescriben
+>   con `dg-publish: true`, entra solo.
+> - **Queda pendiente de tu decisión:** los **76 targets `REVISAR`** del reporte (su destino
+>   sugerido es de otra materia; aplicarlos crearía links engañosos). Los neutralizo uno por uno
+>   cuando me digas, o los dejo como están.
