@@ -306,7 +306,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 > | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
 > | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). **Tracker ya creado** (`Clippings/INTAKE - material nuevo 3er Sem.md`) con la **línea base de los 367 archivos**; falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue | media | sesión |
-> | 10 | **Normalización (tarea de `opencode`, replanteada del LEEME):** **Pasada 1 CERRADA** — `a2be225`: 111 notas CRLF→LF, dif solo fin de línea verificado byte a byte, backup en TEMP, `qa_links` 854 BADs = baseline (0 regresiones). **Pasada 2 (33 frontmatter)** pendiente. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas) | alta | sesión |
+> | 10 | **Normalización (tarea de `opencode`, replanteada del LEEME):** **Pasada 1 CERRADA** — `a2be225`: 111 notas CRLF→LF, dif solo fin de línea verificado byte a byte, backup en TEMP, `qa_links` 854 BADs = baseline (0 regresiones). **Pasada 2 en curso** (anuncio `PUSHEO EN CURSO`): 15 notas de frontmatter + 1 residual CRCA; los "33" reportados eran 18 archivos con falsos positivo de CRCA. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas) | alta | sesión |
 
 ### Próximos pasos
 > [!warning] ⏳ Próximos pasos
