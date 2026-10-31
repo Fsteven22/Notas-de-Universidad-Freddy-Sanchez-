@@ -2235,6 +2235,10 @@ dg-publish: true
 > 
 > - 03 - Optimización - Clasificación de extremos usando la Hessiana
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
+> - [[01 – Gradiente y Derivadas Direccionales]] - La Hessiana es la derivada del gradiente
+> - [[06 - Aproximación de Taylor]] - Expansiones de orden superior
+> - [[07 - Formas Cuadráticas]] - Análisis de convexidad
+
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/01 – Gradiente y Derivadas Direccionales.md]] - La Hessiana es la derivada del gradiente
 > - 06 - Aproximación de Taylor - Expansiones de orden superior
 > - 07 - Formas Cuadráticas - Análisis de convexidad

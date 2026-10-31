@@ -1104,6 +1104,10 @@ dg-publish: true
 > 
 > **Conceptos relacionados:**
 > 
+> - [[Producto Punto]] - Ángulos y perpendicularidad
+> - [[02 – Producto cruz y áreas]] - Vector perpendicular a dos rectas
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Intersecciones
+
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y perpendicularidad
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular a dos rectas
 > - [[Sistemas de Ecuaciones]] - Intersecciones

@@ -2247,6 +2247,8 @@ dg-publish: true
 > 
 > **➡️ Extensiones directas:**
 > 
+> - [[01 – Diferencial Total de una Función f(x,y)]] - Aproximación lineal de funciones compuestas
+
 > - 05 - Diferencial Total - Aproximación lineal de funciones compuestas
 > - [[04 - Teorema de la Función Implícita]] - Derivadas de ecuaciones implícitas
 > - [[05 - Funciones compuestas#Teorema de la Función Inversa|Teorema de la Función Inversa]] - Relación con derivadas de inversas

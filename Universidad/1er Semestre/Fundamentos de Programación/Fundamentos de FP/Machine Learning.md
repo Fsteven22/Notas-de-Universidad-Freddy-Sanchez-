@@ -156,6 +156,9 @@ Ejemplo:
 ### 💻 **Programación (Requeridos)**
 - ![[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] - Fundamentos de Python
 - ![[01 - Funciones]] - Modularización de código
+- ![[Pandas]] - Manipulación de datos
+- ![[Módulo 6.1 Introducción a NumPy]] - Cálculos numéricos
+
 - !Pandas - Manipulación de datos
 - !NumPy - Cálculos numéricos
 - Matplotlib / Seaborn - Visualización

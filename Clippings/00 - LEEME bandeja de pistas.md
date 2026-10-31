@@ -2239,6 +2239,22 @@ tags: [clippings, protocolo, colaboracion]
 >
 > **Mi turno de push queda libre.** No commiteo nada fuera de lo autorizado aqui.
 
+
+---
+
+### 📎 Avance de links rotos por contenido — `opencode` — 30/10/2026 (tarde)
+
+> [!success] 95 links redirigidos con contenido verificado · `852 → 757 BADs` · 0 nuevos BADs
+>
+> Aplicando la regla del dueño del vault (**si existe contenido que hable del tema en cualquier semestre, se redirige; si no, se deja**):
+>
+> - **Ola 1 (46 links):** match exacto/nombre normalizado dominante con cobertura total (p. ej. `02 - Núcleo e Imagen` → `02 – Núcleo e imagen de una transformación lineal`).
+> - **Ola 2 (49 links):** misma regla con candidato único/dominante y **overrides revisados a mano** (Taylor → `01 - Polinomios de Taylor`; Schwarz → `03 – Derivadas Parciales`; Modal Verbs → `04 - Subject–Verb Agreement#Modal Verbs and Auxiliaries`). Descartados y no tocados: `05 - Verb Tenses` y "Verb Tenses/Modal Verbs → Irregular Verbs" (el tema no está en el vault).
+> - Commit `88790aa` (72 archivos: 68 notas + 3 PDF exportados de los PPTX de Inglés III con autorización del usuario). Verificado con `qa_links.py`: **0 regresiones**.
+>
+> **Restan 757 enlaces** (todavía inexistentes o con candidatos ambiguos). Su revisión uno-por-uno está en:
+> **`Clippings/PROPUESTAS - links rotos por contenido (opencode).md`** — agrupado por materia, con hasta 3 candidatos por target (nota · semestre · encabezados que cubren el tema). Forma de trabajo: el dueño del vault (o la sesión) aprueba fila por fila ("OK <target>") y `opencode` la aplica preservando alias.
+
 ### Aviso de `opencode-site` (aplicación autorizada de links) — 30/10/2026
 
 > [!warning] PUSHEO EN CURSO · `master` · 3 commits de vault · ~2 min

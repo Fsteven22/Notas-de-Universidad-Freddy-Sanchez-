@@ -186,6 +186,8 @@ dg-publish: true
 
 > [!quote] 🔗 **Enlaces a Otras Notas**
 > 
+> - [[Momentum Angular]]
+
 > - [[1er Semestre/Física Mecánica/04 - Impulso y Colisiones (Lineal)/Momentum Lineal y Su Conservación.md]]
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]

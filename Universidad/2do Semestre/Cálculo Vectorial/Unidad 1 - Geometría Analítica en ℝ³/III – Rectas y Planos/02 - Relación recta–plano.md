@@ -1080,6 +1080,9 @@ dg-publish: true
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades de rectas
 > - [[02 - Planos en R3]] - Ecuaciones y propiedades de planos
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
+> - [[02.1 Producto Punto]] - Para ángulos y perpendicularidad
+> - [[02 – Producto cruz y áreas]] - Para vectores normales
+
 > - 02.1 Producto Punto - Para ángulos y perpendicularidad
 > - 02.2 Producto Cruz - Para vectores normales
 > 
@@ -1106,10 +1109,17 @@ dg-publish: true
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
+<<<<<<< HEAD
 > - Ray Tracing - Computación gráfica
 > - Óptica Geométrica - Reflexión y refracción
 > - Mecánica Clásica - Planos inclinados
 > - Navegación 3D - Sistemas de coordenadas
+=======
+> - [[Ray Tracing]] - Computación gráfica
+> - [[Óptica Geométrica]] - Reflexión y refracción
+> - [[Mecánica Clásica]] - Planos inclinados
+> - [[Velocidad Relativa para Barcos y Aviones]] - Sistemas de coordenadas
+>>>>>>> origin/master
 
 ## 💡 Consejos de Estudio
 

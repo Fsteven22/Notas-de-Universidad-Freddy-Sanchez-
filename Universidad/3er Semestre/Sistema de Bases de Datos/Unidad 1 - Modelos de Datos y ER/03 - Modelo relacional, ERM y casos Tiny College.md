@@ -412,7 +412,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > [!quote] ðŸ”— Notas Relacionadas
 >
 > - [[02 - Entidades, atributos, claves y relaciones]] â€” el vocabulario que aquÃ­ se vuelve tablas.
-> - [[01 - Dato, informaciÃ³n y modelos de datos]] â€” el problema original.
+> - [[01 - Dato, información y modelos de datos]] â€” el problema original.
 > - Ãlgebra relacional aplicada al taller 2 (Ïƒ, Ï€, â¨ y catÃ¡logo con âŸ•, âŸ–, â‹‰, Ï„): [[GuÃ­a de Problemas 2 - Ãlgebra Relacional y NormalizaciÃ³n]].
 > - Ver tambiÃ©n la nota de **Claves** integrada en 02 si vienes de un link viejo: ahora vive ahÃ­.
 

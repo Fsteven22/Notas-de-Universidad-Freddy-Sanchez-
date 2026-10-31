@@ -390,6 +390,10 @@ dg-publish: true
 > 
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Torque y Equilibrio Rotacional.md]]
 > - [[Cinemática Rotacional]]
+> - [[Estática]]
+> - [[Fuerzas y Equilibrio]]
+> - [[Fuerzas y Diagramas de Cuerpo Libre]]
+
 > - Estática
 > - Fuerzas y Equilibrio
 > - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]]

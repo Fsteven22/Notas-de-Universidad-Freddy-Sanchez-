@@ -535,6 +535,8 @@ dg-publish: true
 > - **Modelos de Crecimiento** - Poblaciones, finanzas, física
 > 
 > ### Hacia Cálculo Integral:
+> - [[01 - Métodos de Integración Definida]] - Inversión del proceso
+
 > - Integración por Sustitución - Inversión del proceso
 > - [[Aplicaciones de Integrales]] - Áreas bajo curvas exponenciales
 

@@ -1175,6 +1175,13 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Base vectorial
 > - [[Derivadas Parciales]] - Herramienta fundamental
+> - [[Límites en varias variables]] - Concepto de aproximación
+> - [[02 – Continuidad]] - Condición necesaria
+> 
+> **Temas relacionados:**
+> 
+> - [[01 – Gradiente y Derivadas Direccionales]] - Extensión del plano tangente
+
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Concepto de aproximación
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/02 – Continuidad.md]] - Condición necesaria
 > 
@@ -1195,9 +1202,15 @@ dg-publish: true
 > **Conexiones interdisciplinarias:**
 > 
 > - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
+<<<<<<< HEAD
 > - Termodinámica - Funciones de estado
 > - Economía Matemática - Funciones de utilidad
 > - [[Aprendizaje Automático]] - Gradiente descendente
+=======
+> - [[Termodinámica]] - Funciones de estado
+> - [[Economía Matemática]] - Funciones de utilidad
+> - [[Machine Learning]] - Gradiente descendente
+>>>>>>> origin/master
 
 ---
 

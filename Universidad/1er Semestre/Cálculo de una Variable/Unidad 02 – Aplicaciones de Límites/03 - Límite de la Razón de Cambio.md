@@ -278,7 +278,7 @@ dg-publish: true
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Técnicas para calcular derivadas
 > - Aplicaciones de la Derivada - Usos en optimización y análisis
 > - [[02 – Continuidad]] - Relación entre continuidad y derivabilidad
-> - [[Diferencial]] - Concepto relacionado con aproximaciones lineales
+> - [[01 – Diferencial Total de una Función f(x,y)]] - Concepto relacionado con aproximaciones lineales
 > - [[Constante de integración#Cinemática|Cinemática]] - Aplicaciones físicas de razones de cambio
 
 ## Notas Recomendadas

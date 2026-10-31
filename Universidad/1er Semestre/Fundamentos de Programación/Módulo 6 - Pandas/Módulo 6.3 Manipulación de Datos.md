@@ -586,6 +586,10 @@ dg-publish: true
 > 
 > **Fundamentos Previos:**
 > 
+> - [[NumPy - Arrays y Operaciones Numéricas]] - Base matemática para pandas
+> - [[Referencia Rápida - Formulas de Estructuras de Control]] - Lógica condicional aplicada
+> - [[Estadística Descriptiva]] - Interpretación de métricas
+
 > - NumPy - Arrays y Operaciones Numéricas - Base matemática para pandas
 > - Python - Estructuras de Control - Lógica condicional aplicada
 > - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Estadística Básica.md]] - Interpretación de métricas
@@ -598,7 +602,11 @@ dg-publish: true
 > 
 > **Aplicaciones Avanzadas:**
 > 
+<<<<<<< HEAD
 > - Machine Learning - Preprocessing - Preparación de datos para ML
+=======
+> - [[Machine Learning]] - Preparación de datos para ML
+>>>>>>> origin/master
 > - Time Series Analysis - Análisis temporal especializado
 > - [[SQL - Bases de Datos]] - Integración con sistemas de datos
 > 

@@ -1779,7 +1779,7 @@ dg-publish: true
 > - Mecánica - Equilibrio de fuerzas
 > - Economía Matemática - Modelos de equilibrio
 > - [[05 – Proceso de Gram-Schmidt#Procesamiento de Señales|Procesamiento de Señales]] - Sistemas LTI
-> - [[Aprendizaje Automático]] - Regresión lineal
+> - [[Machine Learning]] - Regresión lineal
 
 ## 💡 Consejos de Estudio
 

@@ -1199,6 +1199,9 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
+> - [[Método de Gauss-Jordan]] - Extensión a forma escalonada reducida
+> - [[01 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
+
 > - Método de Gauss-Jordan - Extensión a forma escalonada reducida
 > - Factorización LU - Descomposición relacionada con Gauss
 > 

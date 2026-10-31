@@ -1307,6 +1307,9 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
+> - [[02.2 Axiomas]] - Concepto de sistema axiomático
+> - [[Matemáticas Discretas]] - Demostraciones formales
+
 > - 02.2 Axiomas - Concepto de sistema axiomático
 > - Lógica Matemática - Demostraciones formales
 > - [[Teoría de Conjuntos]] - Unicidad de elementos
@@ -1315,14 +1318,18 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[02 - Espacio Vectorial]] - Definición axiomática
+<<<<<<< HEAD
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/04 – Suma de subespacios.md]] - Heredan propiedades
+=======
+> - [[01 - Subespacios Vectoriales]] - Heredan propiedades
+>>>>>>> origin/master
 > - [[01 – Transformaciones lineales]] - Preservan estructura
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]] - Usa estos teoremas
 > 
 > **Aplicaciones posteriores:**
 > 
 > - [[02 – Base y dimensión]] - Representación única
-> - [[Sistemas de Ecuaciones]] - Resolución formal
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Resolución formal
 > - [[04 - Determinantes]] - Propiedades algebraicas
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/05 – Espacios isomorfos.md]] - Estructura adicional
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Extensión infinita

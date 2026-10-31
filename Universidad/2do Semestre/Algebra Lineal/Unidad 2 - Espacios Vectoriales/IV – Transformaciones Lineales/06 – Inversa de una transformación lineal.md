@@ -1200,6 +1200,8 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales
 > **Fundamentos previos:**
 > - [[01 – Transformaciones lineales]] - Definición básica
+> - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización de inyectividad
+
 > - 02 - Núcleo e Imagen - Caracterización de inyectividad
 > - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
 > - [[04 – Biyectividad e isomorfismo]] - Equivalencia con isomorfismo

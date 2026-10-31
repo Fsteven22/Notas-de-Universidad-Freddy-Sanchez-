@@ -1084,6 +1084,12 @@ dg-publish: true
 > 
 > **Prerequisitos:**
 > 
+> - [[01 - Rectas en R3]] - Para entender generatrices
+> - [[02 - Planos en R3]] - Para secciones planas
+> - [[02 - Vectores en R3]] - Vectores normales y tangentes
+> - [[Producto vectorial]] - Para cálculos de área
+> - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
+
 > - Ecuación de la recta en ℝ³ - Para entender generatrices
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
@@ -1108,7 +1114,11 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
+<<<<<<< HEAD
 > - Topología - Clasificación de superficies
+=======
+> - [[01 - Nociones topológicas en Rⁿ]] - Clasificación de superficies
+>>>>>>> origin/master
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
 > - Geometría Proyectiva - Teoremas de Desargues y Pascal
 

@@ -1789,6 +1789,9 @@ dg-publish: true
 > - [[04 - Teorema de la Función Implícita]] - Hipótesis esencial
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/04 - Teorema de la Función Implícita.md]] - Requiere C¹
 > - [[01 - Multiplicaciones de Lagrange]] - Necesita gradientes continuos
+> - [[01 - Polinomios de Taylor]] - Extensión a C²
+> - [[03 – Derivadas Parciales]] - Igualdad de derivadas mixtas
+
 > - 16 - Fórmula de Taylor Multivariable - Extensión a C²
 > - 17 - Teorema de Schwarz - Igualdad de derivadas mixtas
 > 

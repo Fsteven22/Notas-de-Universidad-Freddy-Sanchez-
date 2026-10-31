@@ -394,6 +394,8 @@ dg-publish: true
 > ### 🎯 Notas Recomendadas
 > - Programación de Métodos Numéricos - Implementación práctica en código
 > - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
+> - [[Validación de entradas de usuario]] - Técnicas para verificar aproximaciones
+
 > - Validación de Resultados Numéricos - Técnicas para verificar aproximaciones
 > - [[01 – Transformaciones lineales|Transformaciones de Integrales]] - Manejo de casos difíciles
 > 

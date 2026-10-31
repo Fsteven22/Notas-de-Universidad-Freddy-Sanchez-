@@ -312,6 +312,8 @@ dg-publish: true
 
 > [!info] 📚 Para profundizar y complementar
 > 
+> - [[01 - Métodos de Integración Definida]] - Siguiente método de integración
+
 > - Integración por Sustitución - Siguiente método de integración
 > - [[Integración por Partes]] - Técnica avanzada de integración
 > - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas

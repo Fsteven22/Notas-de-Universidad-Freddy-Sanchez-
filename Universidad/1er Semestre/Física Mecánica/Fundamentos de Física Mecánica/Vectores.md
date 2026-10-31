@@ -227,6 +227,8 @@ dg-publish: true
 > - [[Cinemática Traslacional]] - Vectores posición, velocidad, aceleración
 > - [[Cinemática Rotacional]] - Vectores angulares y momento angular
 > - Trigonometría - Base para descomposición de vectores
+> - [[02 – Producto cruz y áreas]] - Análisis profundo del producto vectorial
+
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Análisis profundo del producto vectorial
 
 ## 📖 Notas Recomendadas para Complementar

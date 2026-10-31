@@ -831,6 +831,9 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Fundamentos vectoriales
 > - [[03 – Aplicaciones geométricas básicas]] - Geometría en 3D
+> - [[10 - Secciones cónicas en coordenadas polares]] - Círculos, elipses, parábolas, hipérbolas en 2D
+> - [[Álgebra de ecuaciones cuadráticas]] - Formas canónicas
+
 > - Cónicas - Círculos, elipses, parábolas, hipérbolas en 2D
 > - Álgebra de ecuaciones cuadráticas - Formas canónicas
 > 

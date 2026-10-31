@@ -996,6 +996,9 @@ dg-publish: true
 > 
 > - [[Cónicas en el plano]] - Directrices de los cilindros
 > - [[02 - Vectores en R3]] - Generatrices como rectas
+> - [[01 - Rectas en R3]] - Generatrices
+> - [[02 - Planos en R3]] - Intersecciones
+
 > - Ecuaciones de Rectas - Generatrices
 > - Ecuaciones de Planos - Intersecciones
 > 

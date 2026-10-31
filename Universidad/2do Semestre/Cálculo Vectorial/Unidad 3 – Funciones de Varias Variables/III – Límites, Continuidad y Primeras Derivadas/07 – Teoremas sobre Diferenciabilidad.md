@@ -1282,6 +1282,8 @@ dg-publish: true
 > ### Prerequisitos:
 > 
 > - **[[Derivadas Parciales]]** - Base para todo
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - Caso especial
+
 > - **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/01 – Gradiente y Derivadas Direccionales.md]]** - Caso especial
 > - **[[04 – Diferenciabilidad]]** - Concepto fundamental
 > - **[[05 – Funciones de Clase C¹]]** - Hipótesis central

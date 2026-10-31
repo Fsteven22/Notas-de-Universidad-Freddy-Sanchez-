@@ -1468,6 +1468,9 @@ dg-publish: true
 > - [[Álgebra Lineal]] - Teoría completa
 > - [[01 – Transformaciones lineales]] - Funciones entre espacios
 > - [[01 – Producto interno]] - Estructura adicional
+> - [[02 – Norma inducida y distancia]] - Medida de longitud
+> - [[03 – Ortogonalidad y conjuntos ortonormales]] - Perpendicularidad generalizada
+
 > - Normas - Medida de longitud
 > - Ortogonalidad - Perpendicularidad generalizada
 > 

@@ -336,6 +336,8 @@ dg-publish: true
 
 > [!note] **Temas Siguientes**
 > 
+> - [[Uso del Calibrador de Vernier (Pie de Rey)]] - Instrumento de precisión
+
 > - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Mediciones e Instrumentos/Uso del Calibrador de Vernier (Pie de Rey).md]] - Instrumento de precisión
 > - [[Errores Absolutos y Relativos]] - Análisis de incertidumbres
 > - [[Cifras Significativas]] - Expresión de resultados

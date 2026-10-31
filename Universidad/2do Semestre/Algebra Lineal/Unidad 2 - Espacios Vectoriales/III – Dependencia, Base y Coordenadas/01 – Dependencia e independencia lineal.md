@@ -1483,6 +1483,9 @@ dg-publish: true
 > 
 > - **[[02 – Combinación lineal]]** - Base de la definición
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Método de verificación
+> - **[[02 - Operaciones con matrices]]** - Representación matricial
+> - **[[03 – Espacio generado por un conjunto de vectores]]** - Contexto de span
+
 > - **08 - Matrices y Operaciones** - Representación matricial
 > - **09 - Espacio Generado** - Contexto de span
 > 

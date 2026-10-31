@@ -172,6 +172,8 @@ dg-publish: true
 
 > [!quote] **Notas relacionadas**
 > 
+> - [[01 - Métodos de Integración Definida]] - Método alternativo para ciertas funciones racionales
+
 > - Integración por Sustitución - Método alternativo para ciertas funciones racionales
 > - [[Integración por Partes]] - Complementa cuando hay productos
 > - Factorización de Polinomios - Fundamento algebraico

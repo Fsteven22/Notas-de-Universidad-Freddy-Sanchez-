@@ -836,6 +836,8 @@ dg-publish: true
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases y dimensión
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
+> - [[02 – Núcleo e imagen de una transformación lineal]] - Subespacios fundamentales
+
 > - 19 - Núcleo e Imagen - Subespacios fundamentales
 > 
 > **Temas directamente relacionados:**

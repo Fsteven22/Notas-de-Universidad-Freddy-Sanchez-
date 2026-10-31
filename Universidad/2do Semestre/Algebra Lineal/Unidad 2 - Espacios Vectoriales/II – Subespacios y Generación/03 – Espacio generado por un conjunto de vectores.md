@@ -1351,6 +1351,8 @@ dg-publish: true
 > - **[[01 - Subespacios Vectoriales]]** - El span es un subespacio
 > - **[[02 – Combinación lineal]]** - Definición fundamental del span
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Para verificar pertenencia
+> - **[[02 - Operaciones con matrices]]** - Método de reducción por filas
+
 > - **08 - Matrices y Operaciones** - Método de reducción por filas
 > 
 > ### Este tema es prerequisito para:

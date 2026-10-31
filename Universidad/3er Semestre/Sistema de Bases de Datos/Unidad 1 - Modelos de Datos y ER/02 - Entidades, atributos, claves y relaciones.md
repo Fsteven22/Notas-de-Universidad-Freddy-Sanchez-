@@ -450,7 +450,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!quote] ðŸ”— Notas Relacionadas
 >
-> - [[01 - Dato, informaciÃ³n y modelos de datos]] â€” el problema que este vocabulario resuelve.
+> - [[01 - Dato, información y modelos de datos]] â€” el problema que este vocabulario resuelve.
 > - [[03 - Modelo relacional, ERM y casos Tiny College]] â€” donde estas piezas se vuelven tablas.
 > - Ver tambiÃ©n la nota de **Claves** integrada arriba si vienes de un link viejo: ahora vive aquÃ­.
 
@@ -462,7 +462,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
 > - Ãndice Unidad 1: [[00 - Ãndice Unidad 1]] Â· Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
-> - Anterior: [[01 - Dato, informaciÃ³n y modelos de datos]] Â· Siguiente: [[03 - Modelo relacional, ERM y casos Tiny College]]
+> - Anterior: [[01 - Dato, información y modelos de datos]] Â· Siguiente: [[03 - Modelo relacional, ERM y casos Tiny College]]
 > - ConversiÃ³n a tablas: [[01 - ConversiÃ³n MC a ML por cardinalidad]]
 
 ---

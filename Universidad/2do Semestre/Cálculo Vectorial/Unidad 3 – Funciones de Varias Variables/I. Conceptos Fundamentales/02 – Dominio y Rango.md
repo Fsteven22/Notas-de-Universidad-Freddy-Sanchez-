@@ -961,6 +961,8 @@ dg-publish: true
 > 
 > - [[03 - Gráfico de Funciones]] - Para graficar, primero necesitas saber dónde está definida
 > - [[02 – Curvas de Nivel]] - Las curvas de nivel solo existen en el dominio
+> - [[01 - Límites Especiales]] - Los límites se analizan en puntos del dominio o frontera
+
 > - 06 - Límites - Los límites se analizan en puntos del dominio o frontera
 > - [[02 – Continuidad]] - Una función solo es continua en su dominio
 > - [[Derivadas Parciales]] - Solo se calculan en puntos del dominio

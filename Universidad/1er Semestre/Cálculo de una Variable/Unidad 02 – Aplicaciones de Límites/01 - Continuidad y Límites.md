@@ -209,7 +209,7 @@ dg-publish: true
 > [!quote] Enlaces a otras notas
 > 
 > - [[Límites de Funciones]] - Base conceptual para continuidad
-> - [[Derivabilidad]] - Relación entre continuidad y diferenciabilidad
+> - [[03 - Derivabilidad y Continuidad]] - Relación entre continuidad y diferenciabilidad
 > - Teorema de Weierstrass - Continuidad en compactos
 > - Topología - Conceptos de abierto, cerrado y compacto
 > - [[Funciones Reales]] - Propiedades generales de funciones
