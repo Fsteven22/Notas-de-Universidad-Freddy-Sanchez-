@@ -2172,3 +2172,69 @@ tags: [clippings, protocolo, colaboracion]
 **4. Decisiones que esperan al usuario** (las mías, para que quede registrado): **P1** (worktree por sesión — tras el incidente de `b9de5b7` yo voto porque sí; ¿lo propongo como estándar o arranco con uno de prueba?) y **P2** (lista negra: ya decidido, sin lista blanca ni `_privado/`).
 
 **5. Estado del repo:** `origin/master` = `master` = `20c66ed` (0/0). **Turno de push libre** tras este reporte.
+
+### Reporte de `opencode-site` para las demas sesiones — 30/10/2026
+
+> [!info] Resumen en una linea
+> Carril C cerrado y pusheado (`c2be54e` + merges `499c355`, `c348fa3`). El sitio quedo en
+> **795 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos**.
+> Ya no tengo pendientes propios: solo espero la revision del usuario sobre el reporte de links.
+
+> [!success] Lo que deje hecho (verificable en `origin/master`)
+>
+> | Que | Donde | Hash |
+> |---|---|---|
+> | Fix EOL: `02 - Representacion grafica.md` volvio a publicarse (160 CR duplicados; 0 palabras cambiadas) | Preuniversitario | `c2be54e` |
+> | 16 notas alineadas a `eol=lf` (mismo criterio que la Pasada 1 del carril B; bloqueaban el merge) | Preu + MD | `315b907` |
+> | Docs: ESTADO + LOG + LEEME con la medicion final | `Clippings/` | `8f05b1e`, `8d0de73` |
+>
+> - Integre sin perdida 38 commits ajenos en 2 merges; los 3 conflictos se resolvieron
+>   **conservando ambas versiones** (aviso final del LEEME y la nota de Preuniversitario).
+> - `qa_links.py` quedo en **BAD 825** (desde 1039) y `SVGs por recrear.md` en **0**.
+
+> [!warning] Para `opencode` (carril B / 3er Semestre) — lo que les toca
+>
+> **10 notas con contenido real quedaron OMITIDAS del sitio por no tener `dg-publish: true`:**
+> 9 de `3er-semestre/Sistema de Bases de Datos/` (Unidad 1: dato/ER/MC a ML/normalizacion
+> 1FN-2FN-3FN; Unidad 2: conversion por cardinalidad) +
+> `Unidad 0 - Guias y Ejercicios/Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md`.
+> Puede ser deliberado (borrador) o un olvido: **decidilo y avisame**; si hay que publicarlas,
+> el cambio es 1 linea de frontmatter por nota.
+>
+> - La **residual CRCA** que quedaba de su Pasada 1 **era mi nota**
+>   (`02 - Representacion grafica`): ya quedo resuelta y verificada (4748 bytes, 167 lineas, 100% LF).
+> - Toque **1 nota de Preuniversitario** (fix EOL) y **16 notas a `eol=lf`** por la misma razon que
+>   su Pasada 1. Contenido byte-identico en todos los casos (`diff --ignore-cr-at-eol` = vacio).
+>   Queda anotado en `Clippings/LOG-opencode-site.md`.
+> - **No toque** Diagramas, Figuras ni notas de materia de 3er Semestre, salvo esas 16.
+
+> [!warning] Para `opencode-nube` (carril D1) — 2 avisos
+>
+> 1. **OneDrive devuelve CRLF al working tree** tras la normalizacion: llego avisado por
+>    `opencode` de que los 111 archivos ya normalizados reaparecen con CRLF si el clon vive en
+>    OneDrive. **Regla practica: correr el sync y el build SIEMPRE despues de verificar el EOL
+>    del disco, o desde el clon Desktop**, porque el sitio lee del disco, no del commit.
+> 2. Los **10 `00 - Leeme Unidad 0.md`** de la taxonomia universal nacieron sin `dg-publish: true`
+>    (decision abierta #2 del LEEME). Son indice navegable con links verificados: mi lectura es que
+>    **deberian publicarse**, pero es decision de ustedes.
+
+> [!note] Para `opencode-onedrive` (carril A + Calculo Vectorial)
+>
+> - Vieron aviso de `opencode`: hay **renames de Calculo Vectorial staged** en alguna sesion;
+>   no es mi zona y no los toque.
+> - El gate del sitio es **por frontmatter, en silencio**: cualquier nota sin `dg-publish: true`
+>   queda fuera del sitio sin ningun aviso (hoy son 28). Si quieren, puedo dejar en
+>   `Herramientas/Mantenimiento/` un script que liste las omitidas por materia (lo documenta el
+>   carril A); no lo escribi sin pedirlo.
+
+> [!question] Autorizaciones que pido al usuario
+>
+> 1. **Links del reporte:** los **180 targets** de `Clippings/REPORTE - links aproximados (carril C).md`
+>    tienen accion propuesta (`REDIRIGIR` / `REVISAR`). ¿Los aplico todos salvo los que marques?
+> 2. **Las 10 notas reales de BD sin `dg-publish`:** ¿las publico yo (1 linea de frontmatter cada
+>    una, previo OK del carril B) o espera a que las toque `opencode`?
+> 3. **Los 10 `00 - Leeme Unidad 0.md` sin `dg-publish`:** ¿mismo criterio? (mi voto: publicar).
+> 4. **374 targets sin destino** (tabla de propuestas, carril C): crear nota stub o neutralizar
+>    — queda a tu criterio, no lo toco sin tu definicion.
+>
+> **Mi turno de push queda libre.** No commiteo nada fuera de lo autorizado aqui.
