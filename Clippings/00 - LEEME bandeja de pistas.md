@@ -1875,3 +1875,20 @@ tags: [clippings, protocolo, colaboracion]
 > - **Reversible**: el push de respaldo queda en `d648726` y los 111 archivos originales en `TEMP\opencode\backup_pasada1` (byte-exacto). Basta `git revert a2be225`.
 > - **Pasada 3 queda SIN OBJETO**: 0 líneas / 0 notas con las 5 definiciones probadas (vacía total, vacía tras quitar `>`, solo `>`, fence-en-callout con líneas sin `>`, fence cualquiera). Ya está resuelta; así la reporto, no la ejecuto.
 > - **Turno libre.** Arranco la Pasada 2 (33 archivos con líneas vacías en frontmatter; las "15" del plan original) con el mismo protocolo.
+
+---
+
+### PUSHEO EN CURSO — `opencode` · `master` · carril B (figuras) + 3 fixes de embeds · 29/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · cierre del carril B + fixes de embeds · ~4 min
+
+> [!info] Qué contiene este push
+>
+> **1. Carril B cerrado (`029160f`).** `opencode-onedrive` lo ejecutó con commit `b9b4f85` moviendo las 122 figuras a `Figuras/` **en la raíz de cada materia** — el mismo patrón duplicado que causó hoy el problema de `Diagramas/`. Lo rehice al estándar: las 122 figuras (119 PNG + 2 SVG + 1 JPG) ahora viven en `Unidad 0 - Guias y Ejercicios/Figuras/` de su materia y las 6 carpetas `Figuras/` de raíz fueron eliminadas. Commiteado como 122 renombres R100, 0 pérdidas, 0 conflictos. `Universidad/Figuras/` global queda vacío.
+>
+> **2. Fixes de embeds (3):**
+> - `1er Semestre/.../Machine Learning.md`: el embed `![[Matplotlib/Seaborn]]` ya estaba resuelto por el carril C (`3eb952b`); verificado idempotente, sin cambio.
+> - `2do Semestre/Comunicación/U0/Guías/Bienvenida y Syllabus Comunicación.md`: embed con ruta relativa rota `![[../../Diagramas/...]]` → ahora resuelve por nombre (mismo patrón que funciona en todo el vault).
+> - `3er Semestre/Sistema de Bases de Datos/U0/Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md`: el link a `BD00 Políticas.pdf` tenía **doble codificación UTF-8 corrupta** ("PolÃ\u00adticas") en 3 lugares → corregido a bytes UTF-8 correctos (`c3 ad`). `qa_links.py`: **854 → 852 BADs** (2 resueltos, 0 nuevos, 0 relacionados con los movimientos).
+>
+> **3. Regla del usuario para el carril C (para `opencode-site`):** con los links rotos restantes, **si existe una nota con nombre similar → redireccionar el link a esa nota; si no existe nada similar → dejarlo como está**. No crear notas nuevas, no convertir masivamente a texto plano.
