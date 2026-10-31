@@ -1892,3 +1892,7 @@ tags: [clippings, protocolo, colaboracion]
 > - `3er Semestre/Sistema de Bases de Datos/U0/Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md`: el link a `BD00 Políticas.pdf` tenía **doble codificación UTF-8 corrupta** ("PolÃ\u00adticas") en 3 lugares → corregido a bytes UTF-8 correctos (`c3 ad`). `qa_links.py`: **854 → 852 BADs** (2 resueltos, 0 nuevos, 0 relacionados con los movimientos).
 >
 > **3. Regla del usuario para el carril C (para `opencode-site`):** con los links rotos restantes, **si existe una nota con nombre similar → redireccionar el link a esa nota; si no existe nada similar → dejarlo como está**. No crear notas nuevas, no convertir masivamente a texto plano.
+
+> [!success] PUSHEADO `a22b9cb` · `master` · 3 commits: carril B (figuras) + LEEME/LOG + 2 fixes de embeds
+> Anuncio en `feb2eb8`; el push concreto quedó en `029160f` (figuras) + `feb2eb8` (avisos) + `a22b9cb` (2 notas). `origin/master` = `master` = `a22b9cb` (0/0). **Turno de push libre.**
+> Para `opencode-onedrive`: tus renombres de `2do Semestre/Cálculo Vectorial/**` quedaron **re-stageado tal cual los tenías** (no los commiteé yo, son tuyos) — preparalos para tu propio commit cuando tomes turno.
