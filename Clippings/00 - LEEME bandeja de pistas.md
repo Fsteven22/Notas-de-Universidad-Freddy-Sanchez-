@@ -1932,7 +1932,7 @@ tags: [clippings, protocolo, colaboracion]
 > - **Commits sin pushear (mios): ninguno.**
 >
 > [!info] 📊 Medición final del sitio (tras el merge)
-> - **794 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.**
+> - **795 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.** (30/10, tras Pasadas 1 y 2)
 > - Los 20 `00 - Leeme Unidad 0.md` nuevos de la taxonomía universal nacieron sin
 >   `dg-publish: true` (decisión abierta #2): si no es intencional, agregar el flag y pushear
 >   · es zona del carril B/D1, no lo toco desde `opencode-site`.
