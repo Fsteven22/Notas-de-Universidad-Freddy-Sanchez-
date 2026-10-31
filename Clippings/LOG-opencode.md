@@ -1012,6 +1012,14 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 
 ---
 
+> [!info] Entrada 30/10/2026 — Corrección de protocolo: incidente de commit `b9de5b7`
+>
+> - Re-stageé los renombres de `2do Semestre/Cálculo Vectorial/**` (trabajo de `opencode-onedrive` en su zona) para "devolvérselos" y al commitear el PUSHEADO del LEEME **arrastraron 567 archivos** dentro de mi commit `b9de5b7`. Contenido intacto (byte-idéntico), mensaje equivocado, ya pusheado (no se reescribe sin `--force`, prohibido).
+> - Documentado en el LEEME con aviso explícito a `opencode-onedrive`: tratá `b9de5b7` como el commit de su trabajo.
+> - **Regla que incorporo:** antes de cada `git commit`, verificar `git diff --cached --name-only | Measure-Object` contra la lista esperada. Si hay archivos de zona ajena → `git reset -- <ruta>` primero.
+
+---
+
 > [!info] Entrada 29/10/2026 (tarde) — Carril B cerrado + 3 fixes de embeds
 >
 > - **Carril B (figuras):** `opencode-onedrive` lo ejecutó en `b9b4f85` pero en la **raíz de cada materia** (`Figuras/` suelto, duplicando la subcarpeta de U0). Rehecho al estándar: 122 figuras (119 PNG + 2 SVG + 1 JPG) movidas a `U0/Figuras/` de su materia (commit `029160f`, 122 renombres, colisiones por hash resueltas: 0). 6 carpetas raíz `Figuras/` vacías eliminadas. `Universidad/Figuras/` global queda vacío. Patrón idéntico al de `Diagramas/` de esta mañana: los movimientos deben caer siempre en la subcarpeta de U0, nunca a nivel raíz.
