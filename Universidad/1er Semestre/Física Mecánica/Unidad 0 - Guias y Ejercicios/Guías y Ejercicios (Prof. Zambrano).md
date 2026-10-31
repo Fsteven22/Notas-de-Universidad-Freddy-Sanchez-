@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [FISG1001, unidad0, guias, ejercicios]
 ---

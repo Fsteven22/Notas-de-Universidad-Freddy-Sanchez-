@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
 # 📚 Unidad 0 — Inglés I (B1-B2)
 
 > [!info] Índice de recursos de la unidad

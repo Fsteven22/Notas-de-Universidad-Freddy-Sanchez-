@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
 # 📚 Unidad 0 — Fundamentos de Electricidad y Sistemas Digitales
 
 > [!info] Índice de recursos de la unidad

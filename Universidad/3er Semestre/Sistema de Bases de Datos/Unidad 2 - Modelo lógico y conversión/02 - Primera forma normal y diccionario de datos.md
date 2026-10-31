@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [TICG1018, unidad1, datos, modelos, historia]
 ---
