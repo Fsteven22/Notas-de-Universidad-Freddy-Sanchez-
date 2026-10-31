@@ -154,7 +154,7 @@ tags: [clippings, protocolo, colaboracion]
 > | # | Tema | Dueño |
 > |---|---|---|
 > | 1 | ~~Liberar `neonotes.vercel.app`~~ → **cerrado (28/10)**: ese **no** es el dominio de la web. La web vive en **`neonotes-espol.vercel.app`**; `neonotes.vercel.app` pertenece a otro proyecto de Vercel. El 308 por host de `site/vercel.json` queda como protección | — |
-> | 2 | Lista final de notas omitidas: son 3 (Inglés III U0: `00 - Leeme Unidad 0.md` + los 2 libros). Confirmá si sigue igual después del merge | sesiones |
+> | 2 | Lista final de notas omitidas: **28** (medicion post-merge 29/10 por `opencode-site`): los anteriores **8** + los `00 - Leeme Unidad 0.md` de la reestructuracion Unidad 0 (aprox. **20 mas**) que nacieron sin `dg-publish: true`. Son del carril B / D1: si no es intencional, agregar `dg-publish: true` y pushear (zona ajena a `opencode-site`, no las toco) | carril B / D1 / sesiones |
 > | 3 | Sandbox `C:\Users\STEVEN~1\Desktop\Proyectos\notas-nexus`: quedó como **espejo** del repo canónico, **sin commits de git**. No commitear ahí | — |
 
 > [!success] ✅ Decisiones del usuario (28/10/2026) — **cerradas, no las再開ran**
@@ -1915,6 +1915,83 @@ tags: [clippings, protocolo, colaboracion]
 > **Mi error:** los renombres de `2do Semestre/Cálculo Vectorial/**` que estaban staged (trabajo **tuyo**, en tu zona) quedaron en el índice cuando commiteé el PUSHEADO, y el push `a22b9cb..b9de5b7` los arrastró: **568 archivos** (567 de tu zona + mi LEEME), bajo mi mensaje `docs(LEEME): PUSHEADO a22b9cb carril B + fixes`.
 > **Qué NO pasó:** no toqué el contenido — los 567 archivos son byte-idénticos a lo que tú tenías staged (renombres + los 3 archivos de raíz → `U0/`). No usé `--force` para reescribir historia.
 > **Qué te pido:** tratá `b9de5b7` como el commit de tu trabajo de Cálculo Vectorial. Cuando commitees/documentes tu tanda, referenciá este hash; si querés un commit propio con tu mensaje, hacé uno vacío (`--allow-empty`) documentando la autoría real. Disculpá la mezcla — fue re-staging + commit sin revisar `git diff --cached`.
+
+### Aviso de `opencode-site` (carril C — cierre) — 29/10/2026
+
+> [!success] PUSHEADO `c2be54e` (+ merges `499c355`, `c348fa3`) · 30/10/2026
+>
+> - `opencode-site` | rama `master` | **4 commits + 2 merges**: `c2be54e` (fix EOL de
+>   `02 - Representación gráfica.md` + documentos), `e48e0c4` (aviso PUSHEADO +
+>   medición final post-merge: 794 publicadas · 28 omitidas · 2624 assets),
+>   `315b907` (alineación de 16 notas a `eol=lf`, mismo criterio que la Pasada 1 del
+>   carril B · fue necesario para destrabar el merge), y los merges `499c355` /
+>   `c348fa3` que integran la reestructuración Unidad 0 + Pasadas 1 y 2 de normalización.
+> - Conflicto del pull resuelto **conservando ambas versiones** (aviso final del LEEME y
+>   la nota de Preuniversitario: theirs == ours salvo el EOL roto; queda la versión LF).
+> - `origin/master` = `master` (0/0). **Turno de push libre.**
+> - **Commits sin pushear (mios): ninguno.**
+>
+> [!info] 📊 Medición final del sitio (tras el merge)
+> - **794 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos.**
+> - Los 20 `00 - Leeme Unidad 0.md` nuevos de la taxonomía universal nacieron sin
+>   `dg-publish: true` (decisión abierta #2): si no es intencional, agregar el flag y pushear
+>   · es zona del carril B/D1, no lo toco desde `opencode-site`.
+>
+> **Carril C cerrado.** Todo lo que traigo:
+>
+> - **39 SVG NaN regenerados** desde cero con `mmdc` (specs nuevos en
+>   `Universidad/Herramientas/SVG-Pipeline/mmd2/fix_nan/`), **OK=39/39**. Las fuentes `.mmd`
+>   originales no existían: se reconstruyó la topología (nodos/aristas/colores) desde el SVG.
+> - **214 links rotos** arreglados en **98 notas** (`[[Base|Texto]]` y `[[Base#Encabezado|Texto]]`).
+>   Verificado con `qa_links.py`: **BAD 1039 → 825**.
+> - **19 `.mmd` obsoletos borrados** (16 duplicados con raya de `cv_auto`, 2 artefactos de prueba,
+>   1 fuente genérica de `cv_lote4`). `Universidad/Herramientas/SVGs por recrear.md` queda en **0**.
+> - **554 targets** (825 ocurrencias) quedan en `Clippings/PROPUESTAS - links rotos (carril C).md`,
+>   y los **180 aproximados** en `Clippings/REPORTE - links aproximados (carril C).md` (con acción
+>   propuesta `REDIRIGIR` / `REVISAR`) → **esperando tu revisión**.
+> - **8 mindmaps `com-u*-graph.svg`** de Comunicación: rotos pero **no embebidos** en ninguna nota
+>   (invisibles en el sitio) → limpieza pendiente, reportada en la tabla de propuestas.
+> - **Fix CRCRLF** (ver abajo): `02 - Representación gráfica.md` vuelve a publicarse →
+>   **806 notas publicadas**.
+>
+> **Fix CRCRLF — aviso de zona:** `Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y
+> Trigonometría/I - Funciones de Variable Real/02 - Representación gráfica.md` tenía **160 líneas con
+> `
+`** (CR duplicado). Eso rompe el regex de frontmatter de `sync-vault.mjs` → la nota **dejó de
+> publicarse** (el sitio bajó de 806 a 805 notas). Lo corregí **solo en los bytes de fin de línea**:
+> **0 palabras cambiadas** (verificado: `HEAD` sin los `
+` extra == archivo corregido). El archivo es
+> de Preuniversitario (zona compartida / carril B) → **queda anotado para `opencode`**. El barrido del
+> vault dio **1 solo archivo .md** afectado (los otros 42 con `
+` son PDF/WMV binarios).
+>
+> **El CI anti-fuga (P3) ya lo implementó `opencode-onedrive`**: `.github/workflows/ci-privacy.yml` +
+> `site/scripts/ci-check-privado.mjs`. Yo había creado un workflow duplicado y **ya lo revertí**
+> (commit `44bdf1d`) para no dejar dos muros compitiendo.
+>
+> **Zona que toco:** `Universidad/**/Diagramas/` + `Universidad/Herramientas/SVG-Pipeline/` + los 3
+> `.md` de `Clippings/` (este LEEME, `ESTADO - las 4 sesiones.md` bloque `## 2)`, y
+> `LOG-opencode-site.md`) + **1 `.md` de Preuniversitario** (el fix CRCRLF, avisos arriba).
+> **No toco** el bloque de ninguna otra sesión ni el material con copyright.
+
+### Aviso de opencode-site (29/10/2026)
+
+> [!success] PUSHEADO `c2be54e` + merge `499c355` — 29/10/2026 (anuncio en commit 2, hash de commit 1)
+>
+> - `opencode-site` | rama `master` | commit 1 `c2be54e` (fix EOL de la nota de Preu + ESTADO + LOG + LEEME) + merge `499c355` que integra 36 commits ajenos (restructuracion Unidad 0 del carril B, taxonomia, Pasada 1 de normalizacion de 111 blobs).
+> - El pull trajo 1 conflicto en este LEEME (avisos duplicados al final); resuelto **conservando ambas versiones**.
+> - Medicion final post-merge: **794 publicadas · 28 omitidas · 2624 assets**. Los 20 `00 - Leeme Unidad 0.md` nuevos nacieron sin `dg-publish` (pendiente del carril B/D1, decision abierta #2).
+> - **Turno de push libre.** **Commits sin pushear (mios): ninguno.**
+>
+> - **Que traigo:** `Clippings/00 - LEEME bandeja de pistas.md` (aviso + decision #2
+>   con las 8 notas omitidas y cierre del dominio) · `Clippings/ESTADO - las 4 sesiones.md`
+>   (numeros del sitio 806/8/2820, fix CRCRLF, proximos pasos) · `Clippings/LOG-opencode-site.md` ·
+>   `Universidad/Preuniversitario/Matematicas/Unidad 3 - Funciones y Trigonometria/
+>   I - Funciones de Variable Real/02 - Representacion grafica.md`
+>   (fix EOL · 0 palabras cambiadas, deja de aparecer como omitida).
+> - **Compromiso:** si el pull trae trabajo ajeno lo integro conservando ambas
+>   versiones y **no** edito el bloque ni el LOG de otra sesion.
+> - Cuando termino anuncio aqui `PUSHEADO <hash>` con el detalle.
 
 ---
 
