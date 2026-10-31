@@ -60,7 +60,7 @@ tags: [IDIG2012, comunicacion]
 
 > [!tip] 📚 Programa IDIG2012
 >
-> ![[../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg]]
+> ![[Bienvenida_y_Syllabus_Comunicación_01.svg]]
 >
 > | Unidad | Tema | Horas docencia |
 > |---|---|---|
