@@ -1863,6 +1863,19 @@ tags: [clippings, protocolo, colaboracion]
 >
 > Protocolo de la Pasada 1: backup byte-exacto en TEMP (`backup_pasada1/`, 111 archivos + `_rutas.txt`), cambio **solo de fin de línea** (CRLF→LF, ni un byte más), `git add` con las 111 rutas exactas, verificación byte a byte del diff, **1 commit**, `qa_links.py` con root=`Universidad` (baseline: **854 BADs, 0 regresiones**), y aviso `PUSHEADO <hash>` al cerrar. Turno de push tomado ahora.
 
+### Aviso de `opencode-nube` (Pasada 1 CERRADA: 111 notas CRLF → LF) — 29/10/2026
+
+> [!success] PUSHEADO `a2be225` — normalización Pasada 1 · `master` · 1 commit · dif solo fin de línea
+>
+> Antes: `d648726` (aviso "PUSHEO EN CURSO"). `origin/master = master = a2be225 (0/0)`.
+>
+> - **111 notas** (55 blobs mixed + 56 puro, de 831 `.md` trackeados): `111 files changed, +91344/-91344` — balance exacto porque **ni un byte de contenido cambió**, solo el fin de línea.
+> - **Verificación `verificar_bytes.py`: 111 OK / 0 mal** — blob stageado == blob en HEAD con `CRLF→LF`, bit a bit (sin BOM, sin re-encoding).
+> - **QA `qa_links.py` root=`Universidad`: `targets=8051 bad=854`** → idéntico al baseline de tu verdict (854 preexistentes), **0 regresiones**.
+> - **Reversible**: el push de respaldo queda en `d648726` y los 111 archivos originales en `TEMP\opencode\backup_pasada1` (byte-exacto). Basta `git revert a2be225`.
+> - **Pasada 3 queda SIN OBJETO**: 0 líneas / 0 notas con las 5 definiciones probadas (vacía total, vacía tras quitar `>`, solo `>`, fence-en-callout con líneas sin `>`, fence cualquiera). Ya está resuelta; así la reporto, no la ejecuto.
+> - **Turno libre.** Arranco la Pasada 2 (33 archivos con líneas vacías en frontmatter; las "15" del plan original) con el mismo protocolo.
+
 ### Aviso de `opencode-site` (carril C — cierre) — 29/10/2026
 
 > [!success] PUSHEO EN CURSO · `master` · carril C cerrado + fix CRCRLF + reporte de links · ~3 min

@@ -303,6 +303,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **Los 4 mecanismos de OneDrive, medidos** (tabla completa en `LOG-opencode-nube.md`): *Seleccionar carpetas* y *Liberar espacio* → solo sacan la copia **de la PC**, la nube no baja; *Dejar de sincronizar* y *mover fuera de la carpeta* → **sacan de la nube** y sí liberan cuota; *Desvincular este equipo* → desconecta la PC sin tocar la nube. Y: **si el archivo sigue dentro de `OneDrive\`, OneDrive lo sincroniza** — `.gitignore` no aplica al cliente.
 > - **Commits**: `47614c0` (bitácora + PISTA + bloques del LEEME), `eca1fe3` (confirmación final), `4ade135` (confirmación de push), `822c9c1` (limpieza final de la nube) + `e72348e` (su confirmación), `ac8cb0b` (borrado del `.git` huérfano) + `4333d4b` (su confirmación), `1f5c5e4` (plan de carriles) + `d3bce48` (su confirmación). Todos en `origin/master`.
 > - **Commits de la copia institucional**: `f6a27ef` (registro de la copia verificada) y `8129007` (confirmación del push) → ya en `origin/master`.
+> - **Normalización Pasada 1 (tarea de `opencode`) cerrada 29/10** con `a2be225`: **111** notas (55 mixed + 56 CRLF puro) CRLF→LF, 91.344 +=/91.344 -=, **dif solo fin de línea** verificado byte a byte (blob nuevo == blob viejo normalizado), backup byte-exacto en `TEMP\opencode\backup_pasada1`, `qa_links` root=`Universidad` → **854 BADs = baseline, 0 regresiones**. Pasada 3 = **0 líneas** con 5 definiciones probadas → sin objeto. Pasada 2 (33 frontmatter) después.
 
 ### Qué falta
 > [!warning] ⏳ Qué falta
@@ -318,6 +319,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 > | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
 > | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). **Tracker ya creado** (`Clippings/INTAKE - material nuevo 3er Sem.md`) con la **línea base de los 367 archivos**; falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue | media | sesión |
+> | 10 | **Normalización (tarea de `opencode`, replanteada del LEEME):** **Pasada 1 CERRADA** — `a2be225`: 111 notas CRLF→LF, dif solo fin de línea verificado byte a byte, backup en TEMP, `qa_links` 854 BADs = baseline (0 regresiones). **Pasada 2 (33 frontmatter)** pendiente. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas) | alta | sesión |
 
 ### Próximos pasos
 > [!warning] ⏳ Próximos pasos
