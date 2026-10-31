@@ -23,12 +23,15 @@ tags: [indice, portada]
 > [!info] 🎓 Materias que curso ahora — empieza por aquí
 >
 > - [[Comunicación]] (2do · IDIG2012) `Activo`
+>
 > - [[Sistema de Bases de Datos]] (3ro) `Activo`
 > - [[Diseño de Software]] (3ro) `Activo`
 > - [[Ingles III]] (3ro) `Activo`
 > - [[Matemáticas Discretas]] (3ro · repitiendo, notas ya completas) `Activo`
+>
+> Ver también el mapa visual: [[00 - Mapa PAO 2-2026]].
 
-![[Diagramas/Index_01.svg]]
+![[00 - Mapa PAO 2-2026.svg]]
 
 ---
 
