@@ -984,7 +984,7 @@ dg-publish: true
 > 
 > - [[Álgebra abstracta]] - Grupos, anillos, campos
 > - [[Teoría de conjuntos]] - Operaciones binarias
-> - [[Lógica matemática]] - Axiomas y demostraciones
+> - [[Matemáticas Discretas]] - Axiomas y demostraciones
 > 
 > **Temas relacionados:**
 > 

@@ -1316,7 +1316,7 @@ dg-publish: true
 > ### Prerequisitos:
 > 
 > - **[[Derivadas Parciales]]** - Base para todo
-> - **[[09 - Derivada Direccional]]** - Caso especial
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - Caso especial
 > - **[[04 – Diferenciabilidad]]** - Concepto fundamental
 > - **[[05 – Funciones de Clase C¹]]** - Hipótesis central
 > - **[[06 – Matriz Jacobiana]]** - Herramienta principal
@@ -2744,7 +2744,7 @@ dg-publish: true
 > - [[02 - Regla de la Cadena]] - Composición con derivadas direccionales
 > - [[02 - Optimización con Restricciones]] - Condiciones de primer orden
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
-> - [[14 - Teorema de Taylor]] - Aproximaciones de orden superior
+> - [[01 - Polinomios de Taylor]] - Aproximaciones de orden superior
 > - [[15 - Campos Vectoriales]] - Gradiente como campo vectorial
 > 
 > **Conceptos relacionados:**

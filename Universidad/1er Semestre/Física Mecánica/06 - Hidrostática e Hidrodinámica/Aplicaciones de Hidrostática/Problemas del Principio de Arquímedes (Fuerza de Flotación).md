@@ -715,7 +715,7 @@ dg-publish: true
 > - [[El Principio de Arquímedes y Flotación]] - Fundamentos teóricos
 > - [[Presión Manómetrica]] - Cálculos de presión
 > - [[Presión y Densidad]] - Propiedades de fluidos
-> - [[Hidrostática]] - Fundamentos de fluidos en reposo
+> - [[La Paradoja Hidrostática]] - Fundamentos de fluidos en reposo
 
 ## 🧪 Experimentos Sugeridos
 

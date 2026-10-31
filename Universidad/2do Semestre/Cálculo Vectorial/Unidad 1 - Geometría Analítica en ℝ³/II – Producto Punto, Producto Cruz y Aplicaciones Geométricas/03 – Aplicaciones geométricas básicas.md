@@ -1041,7 +1041,7 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Operaciones básicas con vectores
 > - [[Producto Punto]] - Ángulos y proyecciones
-> - [[Producto Cruz]] - Áreas y perpendicularidad
+> - [[02 – Producto cruz y áreas]] - Áreas y perpendicularidad
 > - [[03 – Aplicaciones geométricas básicas#Triple Producto Escalar|Triple Producto Escalar]] - Volúmenes
 > 
 > **Temas relacionados:**

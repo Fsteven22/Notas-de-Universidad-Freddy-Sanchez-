@@ -1340,7 +1340,7 @@ dg-publish: true
 > - [[01 – Transformaciones lineales]] - Preservan combinaciones lineales
 > - [[12 - Espacios Columna y Nulo]] - Definidos por combinaciones de columnas
 > - [[13 - Rango y Nulidad]] - Dimensiones de espacios generados
-> - [[14 - Sistemas de Ecuaciones]] - Interpretación como combinaciones
+> - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Interpretación como combinaciones
 > 
 > **Conceptos relacionados:**
 > 
@@ -1350,7 +1350,7 @@ dg-publish: true
 > - **Bases** - Generan todo el espacio mediante combinaciones lineales
 > - **Coordenadas** - Coeficientes de combinación lineal en una base
 > 
-> **Siguiente tema recomendado:** [[09 - Independencia Lineal y Dependencia]]
+> **Siguiente tema recomendado:** [[01 – Dependencia e independencia lineal]]
 
 ---
 

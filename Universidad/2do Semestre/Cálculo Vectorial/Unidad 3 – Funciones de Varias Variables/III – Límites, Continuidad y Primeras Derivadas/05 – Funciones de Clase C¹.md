@@ -1789,8 +1789,8 @@ dg-publish: true
 > - [[04 - Teorema de la Función Implícita]] - Hipótesis esencial
 > - [[14 - Teorema de la Función Inversa]] - Requiere C¹
 > - [[01 - Multiplicaciones de Lagrange]] - Necesita gradientes continuos
-> - [[16 - Fórmula de Taylor Multivariable]] - Extensión a C²
-> - [[17 - Teorema de Schwarz]] - Igualdad de derivadas mixtas
+> - [[01 - Polinomios de Taylor]] - Extensión a C²
+> - [[03 – Derivadas Parciales]] - Igualdad de derivadas mixtas
 > 
 > Conceptos relacionados:
 > 

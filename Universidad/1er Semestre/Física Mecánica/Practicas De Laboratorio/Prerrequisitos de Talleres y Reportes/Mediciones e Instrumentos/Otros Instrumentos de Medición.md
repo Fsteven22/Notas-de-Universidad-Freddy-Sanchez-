@@ -406,7 +406,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Mediciones Fundamentales]] - Conceptos básicos
-> - [[Uso del Calibrador de Vernier]] - Instrumento de precisión
+> - [[Uso del Calibrador de Vernier (Pie de Rey)]] - Instrumento de precisión
 > - [[Errores Absolutos y Relativos]] - Análisis de precisión
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 

@@ -392,7 +392,7 @@ dg-publish: true
 > - [[Cinemática Rotacional]]
 > - [[Estática]]
 > - [[Fuerzas y Equilibrio]]
-> - [[Diagramas de Cuerpo Libre]]
+> - [[Fuerzas y Diagramas de Cuerpo Libre]]
 > - [[Centro de masa (CM)]]
 
 ---

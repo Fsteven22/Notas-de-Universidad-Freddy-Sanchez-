@@ -1006,7 +1006,7 @@ dg-publish: true
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Coordenadas en ℝ³
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
-> - [[02.1 Producto Cruz]] - Cálculo de vectores normales
+> - [[02 – Producto cruz y áreas]] - Cálculo de vectores normales
 > - [[02.2 Producto Punto]] - Perpendicularidad y ángulos
 > - [[03. Distancia en el Espacio]] - Fundamentos métricos
 > - [[01 - Rectas en R3]] - Relación recta-plano

@@ -762,7 +762,7 @@ dg-publish: true
 > **Operaciones avanzadas:**
 > 
 > - [[Producto Punto]] - Proyecciones y ángulos
-> - [[Producto Cruz]] - Vector perpendicular
+> - [[02 – Producto cruz y áreas]] - Vector perpendicular
 > - [[Producto Triple]] - Volumen de paralelepípedos
 > 
 > **Aplicaciones:**

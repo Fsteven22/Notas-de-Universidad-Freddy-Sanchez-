@@ -1176,11 +1176,11 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Base vectorial
 > - [[Derivadas Parciales]] - Herramienta fundamental
 > - [[Límites en varias variables]] - Concepto de aproximación
-> - [[Continuidad en R²]] - Condición necesaria
+> - [[02 – Continuidad]] - Condición necesaria
 > 
 > **Temas relacionados:**
 > 
-> - [[04 - Derivada Direccional y Gradiente]] - Extensión del plano tangente
+> - [[01 – Gradiente y Derivadas Direccionales]] - Extensión del plano tangente
 > - [[02 - Regla de la Cadena]] - Composición de funciones
 > - [[06 - Extremos y Optimización]] - Usa la Hessiana
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
@@ -1197,7 +1197,7 @@ dg-publish: true
 > - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
 > - [[Termodinámica]] - Funciones de estado
 > - [[Economía Matemática]] - Funciones de utilidad
-> - [[Aprendizaje Automático]] - Gradiente descendente
+> - [[Machine Learning]] - Gradiente descendente
 
 ---
 

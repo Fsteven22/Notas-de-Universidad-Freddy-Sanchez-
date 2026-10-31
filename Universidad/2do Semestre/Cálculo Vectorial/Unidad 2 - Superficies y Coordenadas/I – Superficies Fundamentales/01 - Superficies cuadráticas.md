@@ -1084,11 +1084,11 @@ dg-publish: true
 > 
 > **Prerequisitos:**
 > 
-> - [[Ecuación de la recta en ℝ³]] - Para entender generatrices
-> - [[Ecuación del plano]] - Para secciones planas
+> - [[01 - Rectas en R3]] - Para entender generatrices
+> - [[02 - Planos en R3]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
 > - [[Producto vectorial]] - Para cálculos de área
-> - [[Cónicas]] - Base bidimensional
+> - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
 > 
 > **Temas relacionados:**
 > 
@@ -1108,7 +1108,7 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
-> - [[Topología]] - Clasificación de superficies
+> - [[01 - Nociones topológicas en Rⁿ]] - Clasificación de superficies
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
 > - [[Geometría proyectiva]] - Teoremas de Desargues y Pascal
 

@@ -1163,7 +1163,7 @@ dg-publish: true
 > - **[[Derivadas Parciales]]** - El diferencial total usa derivadas parciales
 > - **[[04 – Diferenciabilidad]]** - Concepto central de diferenciabilidad
 > - **[[02 - Regla de la Cadena]]** - Se expresa elegantemente con diferenciales
-> - **[[11 - Gradiente]]** - $df = \nabla f \cdot d\vec{r}$
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - $df = \nabla f \cdot d\vec{r}$
 > - **[[15 - Optimización]]** - Condición $df = 0$ para extremos
 > - **[[20 - Integrales de Línea]]** - Diferenciales exactos e inexactos
 > 

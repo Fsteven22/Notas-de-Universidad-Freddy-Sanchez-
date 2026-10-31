@@ -155,7 +155,7 @@ dg-publish: true
 > [!info]+ **Prerrequisitos Esenciales**
 > 
 > - [[Cálculo Diferencial]] - Derivadas y funciones
-> - [[Integrales Indefinidas]] - Antiderivadas básicas
+> - [[02 - Propiedades de la Integral]] - Antiderivadas básicas
 > - [[04 - Teorema Fundamental del Cálculo]] - Conexión derivada-integral
 > - [[02 - Área entre Curvas]] - Fundamentos de regiones
 > 

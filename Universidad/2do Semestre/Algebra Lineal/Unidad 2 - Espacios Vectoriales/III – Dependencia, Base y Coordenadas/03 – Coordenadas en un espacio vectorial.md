@@ -1620,7 +1620,7 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > ### Prerequisitos:
 > 
 > - **[[08 - Bases]]** - Definición de base, verificación, construcción
-> - **[[09 - Dimensión]]** - Relación entre dimensión y número de coordenadas
+> - **[[01 - Dimensión y descripción del conjunto solución]]** - Relación entre dimensión y número de coordenadas
 > - **[[02 – Combinación lineal]]** - Expresar vectores como combinaciones
 > - **[[07 - Independencia Lineal]]** - Unicidad de representación
 > 
@@ -1628,7 +1628,7 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > 
 > - **[[14 - Cambio de Base]]** - Matrices de transición entre bases
 > - **[[01 – Transformaciones lineales]]** - Representación matricial
-> - **[[17 - Núcleo e Imagen]]** - Coordenadas de ker y im
+> - **[[02 – Núcleo e imagen de una transformación lineal]]** - Coordenadas de ker y im
 > - **[[20 - Isomorfismos]]** - Equivalencia de espacios vectoriales
 > - **[[22 - Eigenvalores y Eigenvectores]]** - Bases especiales
 > 

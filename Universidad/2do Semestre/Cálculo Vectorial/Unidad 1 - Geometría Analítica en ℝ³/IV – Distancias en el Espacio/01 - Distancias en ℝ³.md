@@ -690,12 +690,12 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[Producto Vectorial]] - Necesario para distancia punto-recta
 > - [[Producto Escalar]] - Proyecciones y ángulos
-> - [[Ecuaciones de Rectas]] - Formas paramétricas y simétricas
-> - [[Ecuaciones de Planos]] - Forma general y normal
+> - [[01 - Rectas en R3]] - Formas paramétricas y simétricas
+> - [[02 - Planos en R3]] - Forma general y normal
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Ángulos en ℝ³]] - Complementa el estudio geométrico
+> - [[03 - Ángulos]] - Complementa el estudio geométrico
 > - [[Proyecciones]] - Relacionado con distancias perpendiculares
 > - [[01 - Superficies cuadráticas]] - Distancias a objetos curvos
 > - [[Optimización en ℝ³]] - Minimización de distancias
@@ -705,7 +705,7 @@ dg-publish: true
 > - [[Cálculo Vectorial]] - Gradientes y direcciones
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas en variedades
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización abstracta
-> - [[Topología]] - Bolas abiertas y cerradas
+> - [[01 - Nociones topológicas en Rⁿ]] - Bolas abiertas y cerradas
 > 
 > **Aplicaciones interdisciplinarias:**
 > 

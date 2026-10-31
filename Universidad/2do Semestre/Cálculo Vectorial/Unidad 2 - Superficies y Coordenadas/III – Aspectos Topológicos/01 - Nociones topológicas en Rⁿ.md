@@ -1748,7 +1748,7 @@ dg-publish: true
 > - [[Topología Algebraica]] - Homología, cohomología
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades topológicas
 > - [[Topología General]] - Espacios abstractos
-> - [[Análisis Real]] - Teoría de la medida
+> - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] - Teoría de la medida
 > 
 > **Aplicaciones interdisciplinarias:**
 > 

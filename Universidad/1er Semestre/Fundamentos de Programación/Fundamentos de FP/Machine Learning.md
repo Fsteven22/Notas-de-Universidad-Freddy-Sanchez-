@@ -157,7 +157,7 @@ Ejemplo:
 - ![[Variables y Tipos de Datos]] - Fundamentos de Python
 - ![[01 - Funciones]] - Modularización de código
 - ![[Pandas]] - Manipulación de datos
-- ![[NumPy]] - Cálculos numéricos
+- ![[Módulo 6.1 Introducción a NumPy]] - Cálculos numéricos
 - Matplotlib / Seaborn - Visualización
 
 ### 🎯 **Metodología y Proceso (Complementarios)**

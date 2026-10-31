@@ -231,7 +231,7 @@ dg-publish: true
 > - [[Leyes de Newton]] - Marco teórico fundamental
 > - [[Cinemática Traslacional]] - Descripción del movimiento resultante
 > - [[Vectores]] - Herramientas para descomposición de fuerzas
-> - [[Fricción]] - Análisis detallado de fuerzas de fricción
+> - [[Problemas con Fricción en Equilibrio]] - Análisis detallado de fuerzas de fricción
 > - [[Trabajo y Energía]] - Enfoque energético de los mismos problemas
 
 ## 📖 Notas Recomendadas para Complementar

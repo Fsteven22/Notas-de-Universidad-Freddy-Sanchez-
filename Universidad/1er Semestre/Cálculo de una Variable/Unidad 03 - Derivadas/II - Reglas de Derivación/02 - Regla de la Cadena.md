@@ -186,7 +186,7 @@ dg-publish: true
 > 
 > ### Hacia Adelante (Cálculo Integral):
 > - [[Cambio de Variable en Integrales]] - Versión inversa para integración
-> - [[Integración por Sustitución]] - Aplicación en sentido contrario
+> - [[01 - Métodos de Integración Definida]] - Aplicación en sentido contrario
 
 ## 🎲 Ejercicios de Práctica Graduados
 

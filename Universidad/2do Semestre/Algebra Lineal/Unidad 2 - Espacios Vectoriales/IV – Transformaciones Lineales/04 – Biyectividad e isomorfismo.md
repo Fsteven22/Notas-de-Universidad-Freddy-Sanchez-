@@ -766,7 +766,7 @@ dg-publish: true
 > 
 > - [[01 – Transformaciones lineales]] - Definición básica
 > - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
-> - [[03 - Teorema de la dimensión]] - Clasificación dimensional
+> - [[01 - Dimensión y descripción del conjunto solución]] - Clasificación dimensional
 > - [[06 - Independencia lineal]] - Preservación de bases
 > 
 > **Temas directamente relacionados:**
@@ -774,7 +774,7 @@ dg-publish: true
 > - [[06 - Matriz Inversa]] - Representación matricial
 > - [[06 - Cambio de base]] - Isomorfismos coordenados
 > - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
-> - [[19 - Núcleo e Imagen]] - Caracterización
+> - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización
 > 
 > **Aplicaciones posteriores:**
 > 

@@ -2094,7 +2094,7 @@ dg-publish: true
 > 
 > - **[[02 – Combinación lineal]]** - Construcción de vectores
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Resolución de sistemas
-> - **[[08 - Matrices y Operaciones]]** - Representación matricial
+> - **[[02 - Operaciones con matrices]]** - Representación matricial
 > - **[[09 - Espacio Generado (Span)]]** - Conjuntos generadores
 > - **[[01 – Dependencia e independencia lineal]]** - Conjuntos independientes
 > 

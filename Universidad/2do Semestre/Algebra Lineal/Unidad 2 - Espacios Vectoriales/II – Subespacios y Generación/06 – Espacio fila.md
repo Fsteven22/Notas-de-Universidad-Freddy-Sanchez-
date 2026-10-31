@@ -856,7 +856,7 @@ dg-publish: true
 > - [[18 - Espacio nulo]] - Complemento ortogonal
 > - [[19 - Rango y nulidad]] - Teorema dimensional
 > - [[01 – Transformaciones lineales]] - Dualidad
-> - [[22 - Ortogonalidad]] - Proyecciones
+> - [[03 – Ortogonalidad y conjuntos ortonormales]] - Proyecciones
 > 
 > **Aplicaciones posteriores:**
 > - [[25 - Mínimos cuadrados]] - Descomposición ortogonal

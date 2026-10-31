@@ -1200,7 +1200,7 @@ dg-publish: true
 > 
 > - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
 > - [[Método de Gauss-Jordan]] - Extensión a forma escalonada reducida
-> - [[Factorización LU]] - Descomposición relacionada con Gauss
+> - [[01 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
 > 
 > **Aplicaciones directas:**
 > 

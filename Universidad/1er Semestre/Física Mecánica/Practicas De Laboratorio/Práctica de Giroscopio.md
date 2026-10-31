@@ -186,7 +186,7 @@ dg-publish: true
 
 > [!quote] 🔗 **Enlaces a Otras Notas**
 > 
-> - [[Momento Angular y Conservación]]
+> - [[Momentum Angular]]
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
 > - [[Sistemas de Referencia Inerciales]]

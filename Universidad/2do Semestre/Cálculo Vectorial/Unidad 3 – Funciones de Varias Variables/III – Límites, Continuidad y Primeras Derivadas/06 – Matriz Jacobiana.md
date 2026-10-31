@@ -1244,9 +1244,9 @@ dg-publish: true
 > ### Prerequisitos:
 > 
 > - **[[Derivadas Parciales]]** - Componentes de la Jacobiana
-> - **[[09 - Derivada Direccional]]** - Caso especial: $D_{\vec{u}}f = J_f \cdot \vec{u}$
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - Caso especial: $D_{\vec{u}}f = J_f \cdot \vec{u}$
 > - **[[04 – Diferenciabilidad]]** - Condición necesaria
-> - **[[11 - Gradiente]]** - Fila de la Jacobiana para funciones escalares
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - Fila de la Jacobiana para funciones escalares
 > - **Álgebra Lineal: Matrices** - Operaciones matriciales
 > - **Álgebra Lineal: Determinantes** - Jacobiano
 > 

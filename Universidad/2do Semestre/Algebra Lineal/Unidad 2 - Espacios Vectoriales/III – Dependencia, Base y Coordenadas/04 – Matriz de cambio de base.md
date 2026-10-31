@@ -1285,7 +1285,7 @@ dg-publish: true
 > 
 > - **[[08 - Bases]]** - Definición y propiedades de bases
 > - **[[03 – Coordenadas en un espacio vectorial]]** - Vector de coordenadas
-> - **[[09 - Dimensión]]** - Tamaño de las matrices de cambio
+> - **[[01 - Dimensión y descripción del conjunto solución]]** - Tamaño de las matrices de cambio
 > - **[[07 - Independencia Lineal]]** - Garantiza invertibilidad
 > 
 > ### Este tema es prerequisito para:

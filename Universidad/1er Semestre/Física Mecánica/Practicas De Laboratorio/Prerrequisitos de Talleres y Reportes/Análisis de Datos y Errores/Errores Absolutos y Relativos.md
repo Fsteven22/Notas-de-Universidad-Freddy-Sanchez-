@@ -356,7 +356,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Mediciones Fundamentales]] - Base conceptual
-> - [[Uso del Calibrador de Vernier]] - Aplicación práctica
+> - [[Uso del Calibrador de Vernier (Pie de Rey)]] - Aplicación práctica
 > - [[Incertidumbres Experimentales]] - Análisis avanzado
 > - [[Cifras Significativas]] - Expresión correcta de resultados
 

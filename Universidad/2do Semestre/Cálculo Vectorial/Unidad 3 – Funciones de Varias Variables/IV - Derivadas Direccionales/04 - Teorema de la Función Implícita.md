@@ -723,7 +723,7 @@ dg-publish: true
 > **Temas relacionados:**
 > - [[06 – Matriz Jacobiana#Regla de la Cadena Multivariable|Regla de la Cadena Multivariable]] - Derivación de fórmulas
 > - [[Jacobiano]] - Generalización a sistemas
-> - [[Gradiente]] - Vector de derivadas parciales
+> - [[01 – Gradiente y Derivadas Direccionales]] - Vector de derivadas parciales
 > 
 > **Aplicaciones:**
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones

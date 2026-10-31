@@ -300,7 +300,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
 > - Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
 > - Anterior: [[02 - Primera forma normal y diccionario de datos]]
-> - Siguiente: [[04 - NormalizaciÃ³n paso a paso]]
+> - Siguiente: [[04 - Normalización paso a paso]]
 
 ---
 

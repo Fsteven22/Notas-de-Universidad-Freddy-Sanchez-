@@ -1635,7 +1635,7 @@ dg-publish: true
 > 
 > **Aplicaciones interdisciplinarias:**
 > - [[Física]] - Problemas con simetría
-> - [[Ingeniería]] - Diseño de componentes axisimétricos
+> - [[05 - Ingeniería Social y Fraudes en Línea]] - Diseño de componentes axisimétricos
 > - [[Astronomía]] - Coordenadas celestes
 > - [[Geofísica]] - Coordenadas geográficas
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas

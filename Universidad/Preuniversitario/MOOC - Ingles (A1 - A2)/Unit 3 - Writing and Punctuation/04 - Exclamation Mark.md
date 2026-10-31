@@ -957,7 +957,7 @@ dg-publish: true
 > • "How could you!" (rhetorical, expressing shock)
 > ```
 > 
-> **[[Comma (,)]]**
+> **[[06 - Comma rules]]**
 > 
 > ```
 > Conexión: After interjections, use comma before continuing

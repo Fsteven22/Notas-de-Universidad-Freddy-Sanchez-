@@ -836,7 +836,7 @@ dg-publish: true
 > - [[06 - Independencia lineal]] - Bases y dimensión
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
-> - [[19 - Núcleo e Imagen]] - Subespacios fundamentales
+> - [[02 – Núcleo e imagen de una transformación lineal]] - Subespacios fundamentales
 > 
 > **Temas directamente relacionados:**
 > 

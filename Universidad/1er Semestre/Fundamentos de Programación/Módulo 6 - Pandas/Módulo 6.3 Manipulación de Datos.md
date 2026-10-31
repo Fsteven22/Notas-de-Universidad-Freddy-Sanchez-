@@ -587,7 +587,7 @@ dg-publish: true
 > **Fundamentos Previos:**
 > 
 > - [[NumPy - Arrays y Operaciones Numéricas]] - Base matemática para pandas
-> - [[Python - Estructuras de Control]] - Lógica condicional aplicada
+> - [[Referencia Rápida - Formulas de Estructuras de Control]] - Lógica condicional aplicada
 > - [[Estadística Descriptiva]] - Interpretación de métricas
 > 
 > **Temas Complementarios:**
@@ -598,7 +598,7 @@ dg-publish: true
 > 
 > **Aplicaciones Avanzadas:**
 > 
-> - [[Machine Learning - Preprocessing]] - Preparación de datos para ML
+> - [[Machine Learning]] - Preparación de datos para ML
 > - Time Series Analysis - Análisis temporal especializado
 > - [[SQL - Bases de Datos]] - Integración con sistemas de datos
 > 

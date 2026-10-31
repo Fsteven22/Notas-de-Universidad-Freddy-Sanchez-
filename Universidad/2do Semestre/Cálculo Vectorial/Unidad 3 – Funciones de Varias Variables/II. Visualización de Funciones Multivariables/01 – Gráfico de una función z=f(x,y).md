@@ -1088,7 +1088,7 @@ dg-publish: true
 > 
 > - [[02 – Curvas de Nivel]] - Proyección de las trazas horizontales
 > - [[Derivadas Parciales]] - Pendiente de la superficie en direcciones
-> - [[11 - Gradiente]] - Vector perpendicular a curvas de nivel
+> - [[01 – Gradiente y Derivadas Direccionales]] - Vector perpendicular a curvas de nivel
 > - **Planos Tangentes** - Aproximación lineal a la superficie
 > - **Optimización** - Encontrar puntos más altos/bajos
 > 

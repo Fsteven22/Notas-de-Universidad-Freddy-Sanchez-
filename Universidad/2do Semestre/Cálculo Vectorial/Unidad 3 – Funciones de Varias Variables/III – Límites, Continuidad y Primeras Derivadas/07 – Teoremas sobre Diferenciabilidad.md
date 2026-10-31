@@ -1282,7 +1282,7 @@ dg-publish: true
 > ### Prerequisitos:
 > 
 > - **[[Derivadas Parciales]]** - Base para todo
-> - **[[09 - Derivada Direccional]]** - Caso especial
+> - **[[01 – Gradiente y Derivadas Direccionales]]** - Caso especial
 > - **[[04 – Diferenciabilidad]]** - Concepto fundamental
 > - **[[05 – Funciones de Clase C¹]]** - Hipótesis central
 > - **[[06 – Matriz Jacobiana]]** - Herramienta principal

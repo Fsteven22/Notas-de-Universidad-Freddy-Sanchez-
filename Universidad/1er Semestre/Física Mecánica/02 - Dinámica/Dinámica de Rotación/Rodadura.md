@@ -210,7 +210,7 @@ dg-publish: true
 >     
 > - > [[Conservación de Energía]] - Fundamento del método energético
 >     
-> - > [[Diagramas de Cuerpo Libre]] - Análisis de fuerzas
+> - > [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
 >     
 > - > [[Trabajo y Energía]] - Conceptos energéticos
 >     

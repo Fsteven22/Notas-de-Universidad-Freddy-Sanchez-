@@ -902,8 +902,8 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[01 – Transformaciones lineales]] - Definición básica
-> - [[19 - Núcleo e Imagen]] - Subespacios fundamentales
-> - [[03 - Teorema de la dimensión]] - Relación rank-nullity
+> - [[02 – Núcleo e imagen de una transformación lineal]] - Subespacios fundamentales
+> - [[01 - Dimensión y descripción del conjunto solución]] - Relación rank-nullity
 > - [[06 - Independencia lineal]] - Bases y generadores
 > 
 > **Temas directamente relacionados:**

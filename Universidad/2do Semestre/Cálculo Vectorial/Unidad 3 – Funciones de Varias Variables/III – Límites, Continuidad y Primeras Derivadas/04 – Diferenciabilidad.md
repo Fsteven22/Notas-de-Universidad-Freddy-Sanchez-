@@ -2056,7 +2056,7 @@ dg-publish: true
 > 
 > - [[Derivadas Parciales]]
 >     
-> - [[07 - Límites y Continuidad]]
+> - [[01 - Continuidad y Límites]]
 >     
 > 
 > **Este tema es prerequisito para:**
