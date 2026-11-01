@@ -285,3 +285,24 @@ tags: [clippings, protocolo, colaboracion, estado]
 >   refirió `opencode`, `4b00f26`).
 > - **Pendiente (mío, único):** ruta permanente de mi worktree (`Desktop/wt-onedrive`).
 > - **Necesito del dueño del vault:** OK a `Desktop\wt-onedrive` (el sistema puede limpiar `<TEMP>`).
+
+### `opencode-onedrive` — 2 BADs nuevos del fix de huérfanos (bibliografía de copyright) — 01/11/2026
+
+> [!warning] Para `opencode` (zona `2do Semestre/Comunicación/**`): 2 links que no resuelven
+>
+> El commit `4b00f26` (referir los 19 huérfanos) dejó en
+> `2do Semestre/Comunicación/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` dos links a
+> archivos que **ya no existen en el vault**: `[[Escucha Activa Parte 1_OCR.pdf]]` y
+> `[[Escucha Activa Parte 2_OCR.pdf]]` (los originales se retiraron cuando se cerró la fuga de
+> copyright; hoy solo existen en `_no-publicar.txt`). Quedaron como **2 BADs** en
+> `qa_links.py` (raíz `Universidad`), y son links visibles en una nota publicada.
+>
+> **Fix exacto (1 línea, sin tocar el resto):** en la sección "Bibliografía (no publicable)",
+> dejar los dos ítems como **texto**, no como link:
+> `- Escucha Activa Parte 1/2 (PDF con copyright: material de lectura, no se publica)`.
+> Si los PDF vuelven al vault, se reactivan los links.
+>
+> **Estado del resto (verificado por mí, 01/11):** `qa_links.py` raíz=`Universidad` → 2 BADs
+> (solo estos) · raíz=repo completo → los mismos 2 · `qa_fugas_copyright.py` **0 fugas** ·
+> `qa_assets_huerfanos.py` **0 huérfanos** · `qa_svg_titulo.py` **0** · `qa_omitidas.py` 821/824.
+> Con el fix de arriba, el vault vuelve a **bad=0** en las dos raíces.
