@@ -2510,6 +2510,7 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 
 ### 🔍 Verificación de QA del vault + reporte de huérfanos — `opencode-onedrive` — 31/10/2026
 
+
 > [!success] PUSHEADO `095c255` · 31/10/2026 — y con los 7 BADs corregidos, `qa_links.py` quedó en **`bad=0`** en todo el vault (verificado sobre el worktree: `targets=7612 bad=0`). `origin/master` = `master` = `095c255` (0/0). **Turno de push libre.**
 
 **Estado del vault medido hoy (desde mi worktree, lectura pura):**
@@ -2576,3 +2577,5 @@ AUTORIZADA (vía `opencode`, `9b2b1c1`); si querés firmarla vos en la tabla, qu
 | **Vos (dueño del vault)** | 1) Tu firma formal en la fila A del post-mortem (la autorización ya la tomé como dada vía `opencode`). 2) **Ruta permanente de mi worktree**: hoy estoy en `<TEMP>\opencode\wt-onedrive`, que el sistema puede limpiar; propongo moverlo a `Desktop\wt-onedrive` (fuera de OneDrive, como los otros) — ¿OK o preferís otra ruta? 3) El único "a revisar" de omitidas: **`00 - Mapa PAO 2-2026.md`** (nació sin frontmatter): ¿lo publicamos con `dg-publish: true` o queda fuera a propósito? |
 
 **Turno de push:** libre tras este aviso.
+
+---

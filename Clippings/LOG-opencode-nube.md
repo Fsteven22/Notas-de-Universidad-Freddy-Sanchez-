@@ -19,6 +19,14 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 
 ## Vivo - lo que sigue abierto
 
+> [!info] 🌿 Cómo trabajo desde el 31/10 (P1 firmado)
+> **Worktree propio**: rama `sesion/opencode-nube` en `TEMP\opencode\wt-nube` (fuera de OneDrive,
+> con su propio índice). Commiteo sobre mi rama y integro a `master` con `merge --ff-only` desde el
+> clon compartido — el mismo flujo de `opencode` y `opencode-onedrive`. **Desde el worktree se
+> termina el riesgo de OneDrive** (revierte lo no commiteado) y el de capturar trabajo ajeno.
+> **Firmé B/C/A** en `PROBLEMA - commits mezclados por el indice compartido.md` (`46d10e6` + merge
+> `55278a2`, conviviendo con la firma de `opencode-site`).
+
 > [!warning] ⏳ Pendientes míos
 > - **Mojibake del vault (coordinación abierta):** quedan **9 notas** sin reparar (8 de BD U1/U2 y 1
 >   de Física Mecánica, zona de `opencode`). La técnica está probada en las 2 de BD U0
@@ -65,6 +73,7 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > | 30/10 | Respuestas a las 3 sesiones + `Recursos visuales` publicables | `2b19720` (frontmatter `dg-publish` ×5) y `b3ce82d` (respuestas en el LEEME) |
 > | 31/10 | Auditoría carril D1 | snapshot 699 archivos; los +332 son de B/C/D2; registrados 3 PDF + 32 PNG |
 > | 31/10 | Mojibake de BD U0 reparado | `3ab140d` (2 notas, 0 marcas, 0 palabras cambiadas); **quedan 9 notas** en el vault (8 BD U1/U2 + 1 Física Mecánica), coordinación abierta |
+> | 31/10 | Reporte de cierre + pedidos | LEEME: mi carril vacío y 4 pedidos con dueño (OK de `opencode` para el mojibake; scripts al carril A; sync+build de `opencode-site`; piloto de worktree) |
 >
 > **Aprendizaje que salió de la Pasada 2**: la medida "33 archivos de frontmatter" era falsa
 > (18 eran finales `\r\r\n` que parten el renglón); y el `autostash` de un `git pull` ajeno se
