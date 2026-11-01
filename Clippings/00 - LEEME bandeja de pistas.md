@@ -2474,7 +2474,8 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 
 ### 🔧 Arreglo en marcha — worktree de `opencode-onedrive` + hook de detección — 31/10/2026
 
-> [!success] PUSHEO EN CURSO · `master` · arreglo anti-mezcla en ejecución · ~1 min
+> [!success] PUSHEADO `71d32d0` · 31/10/2026
+> `opencode-onedrive` | `master` | **arreglo anti-mezcla publicado** (worktree activo + hook + flujo documentado). `origin/master` = `master` = `71d32d0` (0/0). **Turno de push libre.**
 
 **P1 dejó de ser propuesta: está corriendo para mi sesión.**
 
