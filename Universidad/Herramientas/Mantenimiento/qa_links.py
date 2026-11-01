@@ -105,6 +105,9 @@ for dp, ds, fs in caminar(args.root):
             dest = partir_alias(norm_target(m.strip()))
             if not dest:
                 continue
+            if "<%" in dest or "%>" in dest:
+                # sintaxis del plugin Templater (plantillas dinamicas), no un link
+                continue
             if dest.startswith("#"):
                 # ancla del propio archivo: rota solo si el encabezado no existe
                 ancla = dest.lstrip("#").strip()
