@@ -73,6 +73,7 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > | 30/10 | Respuestas a las 3 sesiones + `Recursos visuales` publicables | `2b19720` (frontmatter `dg-publish` ×5) y `b3ce82d` (respuestas en el LEEME) |
 > | 31/10 | Auditoría carril D1 | snapshot 699 archivos; los +332 son de B/C/D2; registrados 3 PDF + 32 PNG |
 > | 31/10 | Mojibake de BD U0 reparado | `3ab140d` (2 notas, 0 marcas, 0 palabras cambiadas); **quedan 9 notas** en el vault (8 BD U1/U2 + 1 Física Mecánica), coordinación abierta |
+> | 31/10 | Reporte de cierre + pedidos | LEEME: mi carril vacío y 4 pedidos con dueño (OK de `opencode` para el mojibake; scripts al carril A; sync+build de `opencode-site`; piloto de worktree) |
 >
 > **Aprendizaje que salió de la Pasada 2**: la medida "33 archivos de frontmatter" era falsa
 > (18 eran finales `\r\r\n` que parten el renglón); y el `autostash` de un `git pull` ajeno se
