@@ -1748,13 +1748,13 @@ dg-publish: true
 > - [[Gráficas no lineales]] - Técnicas para relaciones complejas 
 > - [[Linealización de ecuaciones]] - Métodos matemáticos 
 > - [[Incertidumbres Experimentales]] - Barras de error en gráficos 
-> - [[Cifras Significativas]] - PrecisiÃ³n en parÃ¡metros calculados 
+> - [[Cifras Significativas]] - Precisión en parámetros calculados 
 > - 
 ## 🎯 Notas Recomendadas 
 > [!note] **Prerrequisitos** 
 > - [[Mediciones Fundamentales]] - Conceptos básicos de medición
 > - [[Incertidumbres]] - Para barras de error 
-> - [[Estadística Básica]] - Para lÃ­neas de mejor ajuste 
+> - [[Estadística Básica]] - Para líneas de mejor ajuste 
 > - **Matemáticas**: Logaritmos, proporcionalidad 
 > - **Geometría**: Escalas, proporciones 
 >
