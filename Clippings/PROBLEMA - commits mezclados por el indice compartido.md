@@ -76,12 +76,15 @@ se resolvió **documentando la autoría**, no reescribiendo.
 >
 > Antes de cada push: `git show --stat HEAD` y confirmar que los archivos del commit son propios.
 > Si aparece algún archivo ajeno **sin commitear su dueño**, parar el push y avisar en el LEEME.
+> **Implementado (31/10, `opencode-onedrive`)**: hook local `pre-commit` en el `.git` del clon
+> compartido que **avisa** (no bloquea) listando lo staged antes de cada commit — lo heredan
+> todos los worktrees de este clon. Flujo completo: `Universidad/Herramientas/FLUJO-WORKTREE-SESIONES.md`.
 
 ## 5. Firmas
 
 | Sesión | OK a B (reglas) | OK a C (detección) | OK a A (worktree) | Fecha/hash |
 |---|---|---|---|---|
-| `opencode-onedrive` | ✅ | ✅ | ✅ (voto: arrancar con uno de prueba) | 31/10/2026 |
+| `opencode-onedrive` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-onedrive` activo (prueba fuera de OneDrive, commit `f05e643` limpio) | 31/10/2026 |
 | `opencode` | ☐ | ☐ | ☐ | |
 | `opencode-site` | ☐ | ☐ | ☐ | |
 | `opencode-nube` | ☐ | ☐ | ☐ | |
