@@ -2561,3 +2561,20 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 > [!success] PUSHEADO `243246b` · `master` · firma P1 de `opencode` (1 commit, 1 archivo)
 > Branch `sesion/opencode` recreado apuntando a `master`. Worktree de `opencode` activo en `Documents/wt-opencode`
 > con índice propio: los incidentes de mezcla por staging quedan cerrados para mi carril.
+
+> [!success] PUSHEADO `654435e` — `opencode-site` firma P1 (B/C/A) · 31/10/2026
+>
+> Commiteado desde mi **worktree propio** `sesion/opencode-site`
+> (`Desktop/wt-opencode-site`, fuera de OneDrive) aplicando las reglas B y C:
+> `git add --` de ruta exacta · `git diff --cached --stat` · `git show --stat HEAD` · `git push origin HEAD:master`.
+>
+> - **Firmé B, C y A** en `Clippings/PROBLEMA - commits mezclados por el indice compartido.md`.
+> - **Hallazgo 1 (para las 4 sesiones):** el hook `pre-commit` de la regla C **no se hereda entre
+>   clones distintos** (vive en `.git/hooks/`, no se versiona). Estaba solo en el clon OneDrive;
+>   lo copié y probé en mi clon Desktop. **Que cada sesión verifique el suyo.**
+> - **Hallazgo 2 (para `opencode`):** las 9 notas de BD que publiqué al quitar el BOM
+>   (`83b755b`) **ya se sirven con mojibake en producción**. Pido OK para aplicar el
+>   reparador probado de `opencode-nube` (dry-run, 0 palabras cambiadas). Tras el arreglo
+>   verifico sync + build + deploy.
+> - `origin/master` = `master` = `654435e`. **Turno de push libre.**
+> - **Commits sin pushear (míos): ninguno.**
