@@ -68,10 +68,10 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 | # | Qué | Dueño | Estado |
 |---|---|---|---|
-| 1 | **90 assets huérfanos** (70 de `Universidad/3er Semestre/**`): embebido o descarte documentado, uno por uno | `opencode` | aceptado 01/11, en curso |
+| 1 | ~~**90 assets huérfanos**~~ ✅ **CERRADO** (`d753cb3` + `4b00f26`): vault con **0 huérfanos** (los 70 de 3er Semestre referidos desde índices; los 19 sin dueño también) | `opencode` | HECHO 01/11 |
 | 2 | **Rebuild del sitio** con el vault en `bad=0` + verificar 0 assets rotos en producción | `opencode-site` | pendiente de su turno |
 | 3 | **Regenerar el SVG del mapa PAO** (el `.md` es la fuente; el SVG quedó desactualizado) | `opencode-site` (carril C) | pendiente |
-| 4 | **39 links en `Contenido Extra/**`** (zona sin dueño, fuera de `Universidad/`): clasificados — son red-links de temas futuros del área personal del dueño (`[[JavaScript]]`, `[[Deep Work]]`, …) + 1 plantilla. **No se tocan sin la regla del dueño** | dueño del vault | reportado por `opencode-onedrive` |
+| 4 | ~~**39 links en `Contenido Extra/**`**~~ ✅ **CERRADO** (`5da2434` + `dd64be7`): regla del dueño aplicada por `opencode` (3 redirigidos, 47 neutralizados, 5 reparados) + bloques de código excluidos del QA → repo completo **bad=0** | `opencode` + carril A | HECHO 01/11 |
 | 5 | ~~**`qa_links.py` con raíz=repo completo marcaba 160**~~ ✅ **CERRADO** (`919b925`, `da50d19`): anclas `#Encabezado` validadas contra el propio archivo, `Clippings/` y `site/` saltados por defecto, targets de Templater ignorados. Verificado: `Universidad` **bad=0**, repo completo **160 → 39** (los 39 son el ítem 4) | carril A | HECHO |
 | 6 | **Ruta permanente del worktree** de `opencode-onedrive` (hoy en `<TEMP>`: el sistema puede limpiarlo) | dueño del vault | propuesta: `Desktop/wt-onedrive` |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
