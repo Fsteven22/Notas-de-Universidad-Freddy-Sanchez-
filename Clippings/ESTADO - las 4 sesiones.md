@@ -351,26 +351,26 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **P6 — `VAULT_ROOT`** ✅: parametrizado en `auditoria.py`, `estilo.py`, `vlib.py`, `buildcv_auto.py`, `buildcv_copy_missing.py`, `buildcv_missing.py`, `test_single.py` (variable de entorno con fallback deducido desde `__file__`).
 > - **P8 — `verificar_nota.py` en CV** ✅: 88 líneas vacías reales dentro de fences sustituidas por `"> "`; 5 fences sobrantes eliminados; 91 notas de CV, 0 errores de fences/líneas vacías.
 > - **Taxonomía Unidad 0 en Cálculo Vectorial** ✅ (tarea asignada por `opencode` en el LEEME): `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas estándar + `00 - Leeme Unidad 0.md`; `Diagramas/` (563 SVG) unido a `U0/Diagramas/`; 3 archivos de raíz a `Guías/` y `Material de clase/`. Puros renombres, links intactos (basename), `qa_links.py` 0 regresiones (852 BADs pre-existentes). **Nota:** quedó commiteado dentro de `b9de5b7` de `opencode` (mezcla de staging en el clon compartido, contenido byte-idéntico, autoría documentada en el LEEME y mi LOG).
-> - **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`).
+> - **Arreglo anti-mezcla (P1 en ejecución)** ✅: worktree `sesion/opencode-onedrive` fuera de OneDrive (primeros commits limpios), hook `pre-commit` de aviso en el `.git` compartido, flujo documentado en `Universidad/Herramientas/FLUJO-WORKTREE-SESIONES.md` y post-mortem firmable en `Clippings/PROBLEMA - commits mezclados por el indice compartido.md`.
+> - **Verificación de QA del vault (31/10)**: `qa_links.py` **7 BADs** (852 al abrir el carril C) · copyright **0 fugas** · SVGs placeholder **0** · `qa_omitidas.py` 821/824 publican · **90 huérfanos reales, 0 de mi zona** (70 de 3er Semestre → reportados a `opencode`). **Bug propio corregido**: `qa_assets_huerfanos.py` tenía `norm_name()` sin `basename()` → **2617 falsos positivos** (toda referencia con ruta contaba como huérfana).
+> - **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`). Cura de raíz aplicada: `leerTexto()` en `sync-vault.mjs` normaliza al leer (31/10).
 > - **Coordinación**: protocolo de pushes, Acuerdos 1–4, cola de push con dueño, corrección de la tabla de zonas (4 sesiones), reglas de *commitear antes de que otro mergee* y de *worktree por sesión*.
-> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3), `b9de5b7` (taxonomía CV, mezcla de staging documentada), `394a087` (nota de autoría + 41 archivos ajenos arrastrados por el índice compartido, documentado en el LEEME) + merges.
+> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3), `b9de5b7` (taxonomía CV, mezcla de staging documentada), `394a087` (nota de autoría + 41 archivos ajenos arrastrados por el índice compartido, documentado en el LEEME), `f05e643`/`71d32d0`/`8e9e707` (arreglo anti-mezcla) + merges.
 
 ### Qué falta
-> [!warning] ⏳ Qué falta
+> [!warning] ⏳ Qué falta (P2 cerrado: el usuario decidió mantener la lista negra)
 >
 > | # | Qué | Prioridad | Decide |
 > |---|---|---|---|
-> | 1 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
-> | 2 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | media | sesiones (**sube de prioridad**: 2 incidentes de índice compartido, `b9de5b7` y `394a087`) |
+> | 1 | **P1**: hacer permanente el worktree por sesión (ruta fuera de OneDrive para las 4 sesiones) | media | **usuario** (las 3 sesiones faltan firmar B/C) |
 
 ### Próximos pasos
-> [!warning] ⏳ Qué falta (P8, P4, P6, P3, taxonomía CV y P7 cerrados; EOL fix aplicado)
+> [!warning] ⏳ Qué falta (P8, P4, P6, P3, taxonomía CV, P7 y P2 cerrados; arreglo anti-mezcla en ejecución)
 >
-> 1. **P2** — esperando decisión del usuario (lista negra vs lista blanca vs `_privado/`).
-> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones).
-> 3. **Poda de mi LOG** (`LOG-opencode-onedrive.md`) aplicando la regla de `opencode-nube` — la hago yo, próxima tanda.
+> 1. **P1** — con el OK del dueño del vault, proponer la ruta permanente del worktree para que monten la suya las otras 3 sesiones.
+> 2. **Poda de mi LOG** — ✅ HECHA (31/10, regla de `opencode-nube`: condensado, historial en git).
+> 3. Rebuild del sitio con `opencode-site` (ejercita el fix de EOL al leer en `sync-vault.mjs`).
 > 4. Los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup de 458 MB, fijar carpeta) — esperando OK del usuario.
-> 5. Rebuild del sitio con `opencode-site` (ejercita el fix de EOL al leer en `sync-vault.mjs`).
 
 ---
 

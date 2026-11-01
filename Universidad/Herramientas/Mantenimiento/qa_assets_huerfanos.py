@@ -37,8 +37,14 @@ WIKI_RE = re.compile(r"!?\[\[([^\]]+)\]\]")
 
 
 def norm_name(s: str) -> str:
-    """Nombre base sin extension, minusculas, para comparar robusto."""
-    return os.path.splitext(s)[0].lower()
+    """Nombre base sin extension ni carpeta, minusculas, para comparar robusto.
+
+    Ojo: las referencias pueden venir con ruta (`Diagramas/x.svg`,
+    `Unidad 0 - Guias y Ejercicios/Diagramas/x.svg`), y los assets se indexan
+    por nombre de archivo. Sin basename(), toda referencia con ruta contaba
+    como no referenciada (falsos positivos masivos).
+    """
+    return os.path.splitext(os.path.basename(s))[0].lower()
 
 
 def main():
