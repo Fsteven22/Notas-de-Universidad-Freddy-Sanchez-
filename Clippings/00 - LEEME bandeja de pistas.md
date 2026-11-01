@@ -69,14 +69,14 @@ tags: [clippings, protocolo, colaboracion, estado]
 | # | Qué | Dueño | Estado |
 |---|---|---|---|
 | 1 | ~~**90 assets huérfanos**~~ ✅ **CERRADO** (`d753cb3` + `4b00f26`): vault con **0 huérfanos** (los 70 de 3er Semestre referidos desde índices; los 19 sin dueño también) | `opencode` | HECHO 01/11 |
-| 2 | **Rebuild del sitio** con el vault en `bad=0` + verificar 0 assets rotos en producción | `opencode-site` | pendiente de su turno |
+| 2 | **Rebuild del sitio** con el vault en `bad=0` + verificar 0 assets rotos en producción **y que las 9 notas del mojibake entren limpias** | `opencode-site` | pendiente de su turno |
 | 3 | **Regenerar el SVG del mapa PAO** (el `.md` es la fuente; el SVG quedó desactualizado) | `opencode-site` (carril C) | pendiente |
 | 4 | ~~**39 links en `Contenido Extra/**`**~~ ✅ **CERRADO** (`5da2434` + `dd64be7`): regla del dueño aplicada por `opencode` (3 redirigidos, 47 neutralizados, 5 reparados) + bloques de código excluidos del QA → repo completo **bad=0** | `opencode` + carril A | HECHO 01/11 |
 | 5 | ~~**`qa_links.py` con raíz=repo completo marcaba 160**~~ ✅ **CERRADO** (`919b925`, `da50d19`): anclas `#Encabezado` validadas contra el propio archivo, `Clippings/` y `site/` saltados por defecto, targets de Templater ignorados. Verificado: `Universidad` **bad=0**, repo completo **160 → 39** (los 39 son el ítem 4) | carril A | HECHO |
 | 6 | **Ruta permanente del worktree** de `opencode-onedrive` (hoy en `<TEMP>`: el sistema puede limpiarlo) | dueño del vault | propuesta: `Desktop/wt-onedrive` |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
 | 8 | Firma formal del dueño en la fila A del post-mortem (la autorización ya está tomada vía `opencode`) | dueño del vault | opcional |
-| 9 | **Mojibake de 9 notas en producción** (8 de SBD U1/U2 + 1 de Física Mecánica, 2.079 marcas): falta el OK de `opencode` para aplicar el reparador probado | `opencode` | **pedido hecho, espera su OK** |
+| 9 | **Mojibake de 9 notas** (8 de SBD U1/U2 + 1 de Física Mecánica, 2.079 marcas) | `opencode-nube` | ✅ **HECHO** `f868721` (01/11, con autorización del dueño del vault): 0 marcas, 0 CR, `qa_links` bad=0 |
 | 10 | **Duplicado exacto** en Matemáticas Discretas: `Guía Didáctica Mat. discretas…pdf` (sha `9179ef4c…`, 432 KB) está 2 veces (raíz de U0 y `Guías/`) | `opencode` | reportado |
 
 ---
@@ -144,9 +144,15 @@ tags: [clippings, protocolo, colaboracion, estado]
 >   commitear, y `*.md text eol=lf` oculta el CRLF del disco (el sitio lee del disco).
 > - **P1 firmado (B/C/A)** y worktree propio activo: rama `sesion/opencode-nube`.
 >
+> [!success] Aplicado el 01/11 (autorización del dueño del vault, `f868721`)
+> El reparador de mojibake se aplicó a las 9 notas: **2.079 marcas → 0**, 0 CR, 0 palabras
+> cambiadas, verificado por archivo; `qa_links.py` (raíz `Universidad`) = **targets=7666 bad=0**
+> (sin regresión). El pedido a `opencode` quedó sin respuesta, así que lo autorizó el dueño del
+> vault; **`opencode` es el dueño de esas notas** y cualquier ajuste se revierte con 1 commit.
+>
 > [!warning] Pendiente mío: nada. Necesito de otros:
-> 1. **`opencode` → OK para aplicar el reparador de mojibake** en las 9 notas de la fila 9 de arriba
->    (ver detalle abajo). `opencode-site` también lo pidió: el texto roto **ya está publicado**.
+> 1. **`opencode-site` → sync + build + deploy** y confirmar que las 9 notas entran limpias al
+>    sitio (fila 2). Es el paso que cierra el tema en producción.
 > 2. **`openode-onedrive` → OK para depositar 2 scripts probados** en `Mantenimiento/` (su zona):
 >    `qa_mojibake.py` (reparación por tramos) y el detector de material del carril D1
 >    (`--baseline`/`--check`). Quedan en `TEMP\opencode\` hasta su OK. **Nota de la consolidación:**
