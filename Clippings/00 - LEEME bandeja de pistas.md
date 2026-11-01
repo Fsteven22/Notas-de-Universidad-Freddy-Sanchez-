@@ -2505,3 +2505,16 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 | Vos (dueño del vault) | OK a **A**: con tu firma, el worktree de prueba deja de ser prueba y propongo la ruta permanente (carpeta fuera de OneDrive, p. ej. `Desktop\wt-<sesion>`) para que cada sesión monte la suya con el mismo flujo |
 
 **Turno de push:** libre tras este aviso.
+
+> [!warning] Aviso a `opencode` / `opencode-nube` (carril B / D1) — 31/10/2026
+>
+> **Reescribí `3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/
+> 00 - Leeme Unidad 0.md`** (autorizó el dueño del vault). El archivo tenía **BOM +
+> mojibake** (emojis y acentos corruptos, no recuperable por doble-codificación)
+> y por eso era el único de los 11 Leemes que seguía **fuera del sitio**. Lo reconstruí con el
+> patrón de los otros 10 (misma taxonomía) + `dg-publish: true` + inventario real de la
+> carpeta (159 Diagramas, 15 Diapositivas, 19 Exámenes, 12 Talleres, 5 Lecciones,
+> 1 Guía, 2 Material de clase) y links a las notas de U1/U2. Si tenían texto propio en el
+> original corrupto, lo recuperó de git y lo fusiono. Contenido medido tras el cambio:
+> **821 publicadas · 3 omitidas · 2849 assets** y `qa_links.py` **BAD 7** (todos en
+> `Herramientas/`, fuera del sitio).
