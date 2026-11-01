@@ -425,7 +425,7 @@ dg-publish: true
 
 > [!note] 📖 Para Complementar tu Aprendizaje
 > - Parámetros *args y **kwargs - Argumentos variables
-> - [[Funciones Lambda]] - Funciones anónimas
+> - [[Referencia Rápida - Formulas de Funciones#⚡ **7. FUNCIONES LAMBDA**]] - Funciones anónimas
 > - Decoradores - Modificar comportamiento de funciones
 > - Módulos y Paquetes - Organizar funciones en archivos
 > - [[Programación Orientada a Objetos]] - Métodos como funciones de clase

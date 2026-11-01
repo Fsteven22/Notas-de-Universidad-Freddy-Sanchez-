@@ -1274,7 +1274,7 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > - [[01 - Superficies cuadráticas]] - Clasificación algebraica
-> - [[Sólidos de Revolución]] - Volúmenes
+> - [[01 - Volúmenes de Sólidos de Revolución]] - Volúmenes
 > - [[03 - Superficies de revolución#Curvaturas|Curvaturas]] - Análisis geométrico diferencial
 > - Ecuaciones Paramétricas en 3D - Representación
 > 

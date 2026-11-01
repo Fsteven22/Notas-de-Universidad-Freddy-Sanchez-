@@ -212,7 +212,7 @@ dg-publish: true
 > - [[03 - Derivabilidad y Continuidad]] - Relación entre continuidad y diferenciabilidad
 > - Teorema de Weierstrass - Continuidad en compactos
 > - Topología - Conceptos de abierto, cerrado y compacto
-> - [[Funciones Reales]] - Propiedades generales de funciones
+> - [[02 - Regla de la Cadena#🌟 Caso 1: Función Real de Variables Intermedias]] - Propiedades generales de funciones
 > - Método de Bisección - Aplicación computacional del TVI
 
 ## Notas Recomendadas

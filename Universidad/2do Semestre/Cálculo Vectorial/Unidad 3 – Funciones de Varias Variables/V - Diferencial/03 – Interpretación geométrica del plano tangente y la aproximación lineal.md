@@ -1205,7 +1205,7 @@ dg-publish: true
 <<<<<<< HEAD
 > - Termodinámica - Funciones de estado
 > - Economía Matemática - Funciones de utilidad
-> - [[Aprendizaje Automático]] - Gradiente descendente
+> - [[Machine Learning#Machine Learning - Aprendizaje Automático 🤖]] - Gradiente descendente
 =======
 > - [[Termodinámica]] - Funciones de estado
 > - [[Economía Matemática]] - Funciones de utilidad

@@ -1725,13 +1725,13 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - Conjuntos y Lógica - Teoría básica de conjuntos
-> - [[Sucesiones y Límites]] - Convergencia
+> - [[01 - Límites al Infinito y Sucesiones#Límites de Sucesiones 📊]] - Convergencia
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Distancias
 > 
 > **Temas relacionados:**
 > 
-> - [[Cálculo Multivariable]] - Límites y continuidad
+> - [[03 - Teoremas Especiales para Integrales Definidas#🌀 Aplicaciones en Cálculo Multivariable]] - Límites y continuidad
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Dominios abiertos
 > - [[01 – Integrales múltiples]] - Regiones de integración
 > - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Campos vectoriales

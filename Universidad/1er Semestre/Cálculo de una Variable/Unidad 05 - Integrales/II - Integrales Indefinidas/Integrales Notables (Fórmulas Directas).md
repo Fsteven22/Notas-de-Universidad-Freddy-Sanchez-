@@ -445,7 +445,7 @@ dg-publish: true
 > [!info] Prerrequisitos
 > 
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]
-> - [[Funciones Elementales]]
+> - [[02 - Funciones trigonométricas elementales]]
 > - [[Límites de Funciones]]
 >
 

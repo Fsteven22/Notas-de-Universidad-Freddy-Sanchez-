@@ -1774,7 +1774,7 @@ dg-publish: true
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Análisis de Circuitos]] - Leyes de Kirchhoff
+> - [[06 - Teoremas de Analisis de Circuitos]] - Leyes de Kirchhoff
 > - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización Lineal]] - Programación lineal
 > - Mecánica - Equilibrio de fuerzas
 > - Economía Matemática - Modelos de equilibrio

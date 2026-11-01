@@ -1087,7 +1087,7 @@ dg-publish: true
 > - [[01 - Rectas en R3]] - Para entender generatrices
 > - [[02 - Planos en R3]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
-> - [[Producto vectorial]] - Para cálculos de área
+> - [[04 – Funciones vectoriales de variable vectorial#✖️ Productos Vectoriales]] - Para cálculos de área
 > - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
 
 > - Ecuación de la recta en ℝ³ - Para entender generatrices

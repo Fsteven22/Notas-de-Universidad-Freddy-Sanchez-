@@ -284,7 +284,7 @@ dg-publish: true
 > - [[01 - Formas Indeterminadas]] - Contexto general de indeterminaciones
 > - [[05 - Identidades trigonométricas]] - Herramientas de transformación
 > - Teorema del Sandwich - Método de demostración geométrica
-> - [[Derivadas Trigonométricas]] - Aplicación principal de estos límites
+> - [[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas]] - Aplicación principal de estos límites
 > - Series de Taylor - Desarrollo alternativo para casos complejos
 
 ## 📖 Notas Recomendadas para Estudio Complementario

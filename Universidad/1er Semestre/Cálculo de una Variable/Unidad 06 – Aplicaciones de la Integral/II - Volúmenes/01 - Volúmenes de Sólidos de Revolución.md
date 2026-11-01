@@ -154,7 +154,7 @@ dg-publish: true
 
 > [!info]+ **Prerrequisitos Esenciales**
 > 
-> - [[Cálculo Diferencial]] - Derivadas y funciones
+> - [[02 – Aplicaciones de la Diferencial y la Hessiana#📚 Ejemplos: Cálculo de Diferenciales]] - Derivadas y funciones
 > - [[02 - Propiedades de la Integral]] - Antiderivadas básicas
 
 > - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y funciones

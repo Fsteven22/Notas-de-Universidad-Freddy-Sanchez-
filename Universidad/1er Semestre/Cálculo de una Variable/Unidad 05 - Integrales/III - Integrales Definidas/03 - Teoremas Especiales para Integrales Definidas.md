@@ -581,7 +581,7 @@ dg-publish: true
 > ### 🔗 Notas Relacionadas
 > 
 > - [[04 - Teorema Fundamental del Cálculo]] - Base teórica para la demostración
-> - [[Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
+> - [[03 - Teoremas Especiales para Integrales Definidas#🌟 Relación con el Teorema del Valor Medio para Derivadas]] - Teorema análogo para derivadas
 > - [[02 - Propiedades de la Integral]] - Propiedades utilizadas en la demostración
 > - [[01 - Integral de Riemann]] - Definición formal de la integral
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Condición necesaria para el teorema
@@ -591,7 +591,7 @@ dg-publish: true
 > - [[01 - Continuidad y Límites#Teorema del Valor Intermedio|Teorema del Valor Intermedio]] - Herramienta clave en la demostración
 > - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
 > - Valor RMS y Aplicaciones Eléctricas - Aplicación específica del concepto
-> - [[Promedio de Funciones]] - Interpretación estadística del valor medio
+> - [[05 – Valor promedio de una función#📊 Valor Promedio de una Función]] - Interpretación estadística del valor medio
 > 
 > ### 🎯 Notas Recomendadas
 > 

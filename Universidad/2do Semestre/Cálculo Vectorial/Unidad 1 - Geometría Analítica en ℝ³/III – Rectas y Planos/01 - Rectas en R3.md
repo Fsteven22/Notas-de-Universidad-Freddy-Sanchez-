@@ -1104,7 +1104,7 @@ dg-publish: true
 > 
 > **Conceptos relacionados:**
 > 
-> - [[Producto Punto]] - Ángulos y perpendicularidad
+> - [[01 – Producto punto y ángulos]] - Ángulos y perpendicularidad
 > - [[02 – Producto cruz y áreas]] - Vector perpendicular a dos rectas
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Intersecciones
 

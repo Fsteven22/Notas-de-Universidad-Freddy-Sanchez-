@@ -294,7 +294,7 @@ dg-publish: true
 > 
 > **Para profundizar:**
 > 
-> - [[Teoremas de Derivabilidad]] - Rolle, Valor Medio, etc.
+> - [[03 - Derivabilidad y Continuidad#⚡ Teorema Principal: Derivabilidad ⟹ Continuidad]] - Rolle, Valor Medio, etc.
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y concavidad
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Crecimiento, extremos, inflexión
 > - [[Ecuaciones Diferenciales]] - Modelado con razones de cambio

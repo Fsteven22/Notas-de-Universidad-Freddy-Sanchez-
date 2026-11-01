@@ -864,7 +864,7 @@ dg-publish: true
 > - 25 - Mínimos cuadrados - Descomposición ortogonal
 > - 26 - Descomposición QR - Ortogonalización
 > - 27 - SVD - Cuatro subespacios
-> - [[28 - Espacios fundamentales]] - Teoría completa
+> - [[05 - Teoremas fundamentales del espacio vectorial (unicidad del neutro, del inverso, etc.)#🎯 Teoremas Fundamentales del Espacio Vectorial]] - Teoría completa
 
 ## 📚 Recursos Adicionales
 

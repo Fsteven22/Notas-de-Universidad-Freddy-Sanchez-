@@ -983,7 +983,7 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - Álgebra abstracta - Grupos, anillos, campos
-> - [[Teoría de conjuntos]] - Operaciones binarias
+> - [[00 - Índice Unidad 1#IV - Teoría de Conjuntos]] - Operaciones binarias
 > - [[Matemáticas Discretas]] - Axiomas y demostraciones
 
 > - Lógica Matemática - Axiomas y demostraciones

@@ -271,7 +271,7 @@ dg-publish: true
 > [!quote] 🔗 Enlaces a Otras Notas
 > 
 > - [[01 - Propiedades y Teoremas de los Límites]] - Base teórica para entender por qué fallan
-> - [[Técnicas de Factorización]] - Herramientas algebraicas fundamentales
+> - [[01 - Formas Indeterminadas#📊 Técnicas de Factorización Principales]] - Herramientas algebraicas fundamentales
 > - Conjugados y Racionalización - Técnicas específicas para radicales
 > - 01 - Formas Indeterminadas - Método alternativo para formas indeterminadas
 > - [[01 - Límites Especiales]] - Casos especiales con funciones trigonométricas

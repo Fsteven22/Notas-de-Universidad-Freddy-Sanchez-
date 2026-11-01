@@ -1080,7 +1080,7 @@ dg-publish: true
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades de rectas
 > - [[02 - Planos en R3]] - Ecuaciones y propiedades de planos
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
-> - [[02.1 Producto Punto]] - Para ángulos y perpendicularidad
+> - [[01 – Producto punto y ángulos]] - Para ángulos y perpendicularidad
 > - [[02 – Producto cruz y áreas]] - Para vectores normales
 
 > - 02.1 Producto Punto - Para ángulos y perpendicularidad

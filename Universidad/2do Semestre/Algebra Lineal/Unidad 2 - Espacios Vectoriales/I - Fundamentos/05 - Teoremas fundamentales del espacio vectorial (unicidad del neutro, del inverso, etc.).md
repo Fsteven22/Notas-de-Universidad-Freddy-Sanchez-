@@ -1312,7 +1312,7 @@ dg-publish: true
 
 > - 02.2 Axiomas - Concepto de sistema axiomático
 > - Lógica Matemática - Demostraciones formales
-> - [[Teoría de Conjuntos]] - Unicidad de elementos
+> - [[00 - Índice Unidad 1#IV - Teoría de Conjuntos]] - Unicidad de elementos
 > - Campos - Propiedades de escalares 𝔽
 > 
 > **Temas relacionados:**

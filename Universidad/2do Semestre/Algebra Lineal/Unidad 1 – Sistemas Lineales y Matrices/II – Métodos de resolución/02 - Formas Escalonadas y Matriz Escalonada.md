@@ -2627,7 +2627,7 @@ dg-publish: true
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Espacios Fundamentales]] - Nul(A), Col(A), Row(A)
+> - [[05 - Teoremas fundamentales del espacio vectorial (unicidad del neutro, del inverso, etc.)#🎯 Teoremas Fundamentales del Espacio Vectorial]] - Nul(A), Col(A), Row(A)
 > - Descomposición LU - Relacionada con factorización
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Resolución de sistemas inconsistentes
 > - Pseudoinversa de Moore-Penrose - Generalización

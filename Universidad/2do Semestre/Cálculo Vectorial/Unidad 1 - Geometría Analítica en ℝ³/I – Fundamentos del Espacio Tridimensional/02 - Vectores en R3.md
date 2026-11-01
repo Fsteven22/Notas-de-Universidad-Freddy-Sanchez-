@@ -750,7 +750,7 @@ dg-publish: true
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Base del espacio ℝ³
-> - [[Números Reales]] - Componentes de vectores
+> - [[00 - Índice Unidad 2#🗺️ Índice — Unidad 2: Números Reales]] - Componentes de vectores
 > - Álgebra Básica - Operaciones fundamentales
 > 
 > **Temas siguientes:**
@@ -761,7 +761,7 @@ dg-publish: true
 > 
 > **Operaciones avanzadas:**
 > 
-> - [[Producto Punto]] - Proyecciones y ángulos
+> - [[01 – Producto punto y ángulos]] - Proyecciones y ángulos
 > - [[02 – Producto cruz y áreas]] - Vector perpendicular
 > - [[Producto Triple]] - Volumen de paralelepípedos
 

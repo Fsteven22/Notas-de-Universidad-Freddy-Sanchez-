@@ -688,7 +688,7 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
-> - [[Producto Vectorial]] - Necesario para distancia punto-recta
+> - [[04 – Funciones vectoriales de variable vectorial#✖️ Productos Vectoriales]] - Necesario para distancia punto-recta
 > - [[Producto Escalar]] - Proyecciones y ángulos
 > - [[01 - Rectas en R3]] - Formas paramétricas y simétricas
 > - [[02 - Planos en R3]] - Forma general y normal

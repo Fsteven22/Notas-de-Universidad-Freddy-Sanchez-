@@ -959,7 +959,7 @@ dg-publish: true
 > 
 > **Este tema es prerequisito para:**
 > 
-> - [[03 - Gráfico de Funciones]] - Para graficar, primero necesitas saber dónde está definida
+> - [[01 – Gráfico de una función z=f(x,y)#📘 Gráfico de una función z=f(x,y)]] - Para graficar, primero necesitas saber dónde está definida
 > - [[02 – Curvas de Nivel]] - Las curvas de nivel solo existen en el dominio
 > - [[01 - Límites Especiales]] - Los límites se analizan en puntos del dominio o frontera
 

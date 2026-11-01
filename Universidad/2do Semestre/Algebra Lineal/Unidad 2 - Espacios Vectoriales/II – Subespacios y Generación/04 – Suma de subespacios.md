@@ -1454,7 +1454,7 @@ dg-publish: true
 > - **[[01 - Subespacios Vectoriales]]** - Qué es un subespacio
 > - **[[08 - Bases]]** - Bases de subespacios
 > - **[[01 - Dimensión y descripción del conjunto solución]]** - Concepto de dimensión
-> - **[[07 - Independencia Lineal]]** - Para verificar sumas directas
+> - **[[01 – Dependencia e independencia lineal]]** - Para verificar sumas directas
 
 > - **08 - Bases** - Bases de subespacios
 > - **09 - Dimensión** - Concepto de dimensión

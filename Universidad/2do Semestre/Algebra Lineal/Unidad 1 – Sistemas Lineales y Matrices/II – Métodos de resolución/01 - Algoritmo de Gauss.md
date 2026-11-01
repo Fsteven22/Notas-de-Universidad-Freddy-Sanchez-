@@ -1199,7 +1199,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
-> - [[Método de Gauss-Jordan]] - Extensión a forma escalonada reducida
+> - [[02 - Teorema de Rouché-Frobenius#📐 Método 1: Reducción por Filas (Gauss-Jordan)]] - Extensión a forma escalonada reducida
 > - [[01 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
 
 > - Método de Gauss-Jordan - Extensión a forma escalonada reducida

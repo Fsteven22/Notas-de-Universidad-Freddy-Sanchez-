@@ -340,7 +340,7 @@ dg-publish: true
 > [!quote] [[03 - Concavidad y Puntos de Inflexión]] Segunda derivada y curvatura de funciones
 >
 
-> [!quote] [[Optimización de Funciones]] Aplicaciones prácticas del análisis completo
+> [!quote] [[01 – Gradiente y Derivadas Direccionales#💧 Aplicación 3: Optimización de Funciones]] Aplicaciones prácticas del análisis completo
 >
 
 > [!quote] [[12 - Funciones racionales]] Casos específicos y técnicas especializadas

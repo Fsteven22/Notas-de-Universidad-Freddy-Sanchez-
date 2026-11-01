@@ -1452,7 +1452,7 @@ dg-publish: true
 > ### Ya estudiados:
 > 
 > - [[02 – Dominio y Rango]] - Las curvas de nivel existen solo en el dominio
-> - [[03 - Gráfico de Funciones]] - Las curvas son proyecciones de la superficie
+> - [[01 – Gráfico de una función z=f(x,y)#📘 Gráfico de una función z=f(x,y)]] - Las curvas son proyecciones de la superficie
 > 
 > ### Por estudiar:
 > 

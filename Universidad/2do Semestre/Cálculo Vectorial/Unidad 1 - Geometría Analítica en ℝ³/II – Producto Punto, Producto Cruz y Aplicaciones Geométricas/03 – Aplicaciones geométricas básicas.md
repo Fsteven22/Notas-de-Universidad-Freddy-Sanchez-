@@ -1040,7 +1040,7 @@ dg-publish: true
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[02 - Vectores en R3]] - Operaciones básicas con vectores
-> - [[Producto Punto]] - Ángulos y proyecciones
+> - [[01 – Producto punto y ángulos]] - Ángulos y proyecciones
 > - [[02 – Producto cruz y áreas]] - Áreas y perpendicularidad
 
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y proyecciones
