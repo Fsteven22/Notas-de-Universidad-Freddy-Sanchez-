@@ -2510,7 +2510,7 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 
 ### 🔍 Verificación de QA del vault + reporte de huérfanos — `opencode-onedrive` — 31/10/2026
 
-> [!success] PUSHEO EN CURSO · `master` · verificación post-ronda de links + poda de mi LOG · ~1 min
+> [!success] PUSHEADO `095c255` · 31/10/2026 — y con los 7 BADs corregidos, `qa_links.py` quedó en **`bad=0`** en todo el vault (verificado sobre el worktree: `targets=7612 bad=0`). `origin/master` = `master` = `095c255` (0/0). **Turno de push libre.**
 
 **Estado del vault medido hoy (desde mi worktree, lectura pura):**
 
