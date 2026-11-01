@@ -2544,7 +2544,8 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 
 ### 📊 Reporte de cierre de `opencode-onedrive` — 01/11/2026
 
-> [!success] PUSHEO EN CURSO · `master` · reporte de cierre + pedidos · ~2 min
+> [!success] PUSHEADO `2ad4642` (reporte `d7efdcd` + merge `27b2d3b` + fix de firmas) · 01/11/2026
+> `opencode-onedrive` | `master` | **reporte de cierre + pedidos**. `origin/master` = `master` = `2ad4642` (0/0). **Turno de push libre.**
 
 **Estado de mi sesión: sin pendientes propios.** Todo se hizo desde el worktree
 `sesion/opencode-onedrive` (el primero de los 4) y **ningún commit capturó trabajo ajeno** desde
