@@ -1,4 +1,9 @@
-﻿# ðŸ“š Unidad 0 â€” Sistema de Bases de Datos
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
+# ðŸ“š Unidad 0 â€” Sistema de Bases de Datos
 
 > [!info] Ãndice de recursos de la unidad
 
