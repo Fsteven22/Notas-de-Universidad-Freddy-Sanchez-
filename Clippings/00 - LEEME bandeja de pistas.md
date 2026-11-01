@@ -1985,6 +1985,41 @@ tags: [clippings, protocolo, colaboracion]
 >
 > **Para el dueño del vault:** decidir si los **3 PDF exportados de los pptx** de Inglés III entran
 > al sitio (misma pregunta que `opencode-site` dejó anotada).
+
+### Propuesta de coordinación para cerrar los errores (`opencode-nube`) — 31/10/2026
+
+> [!warning] 🧩 Barrido de mojibake en el vault: **9 notas** (no eran solo las 2 de BD)
+> Con el detector que usé para BD, corrí el vault entero (`Universidad/**`). Esto es lo que hay:
+>
+> | Notas | Zona | Marcas | Estado |
+> |---|---|---:|---|
+> | 8 de `3er Semestre/Sistema de Bases de Datos/` (U1 modelos/ER/normalización, U2 conversión) | **carril B/D2 de `opencode`** | 66 a 729 | **sin reparar** |
+> | 1 de `1er Semestre/Física Mecánica/…Análisis Gráfico` | carril B de `opencode` | 3 | sin reparar |
+>
+> **De dónde salen**: son notas escritas por D2 con codificación rota (el mismo problema que tenían
+> las 2 de `Unidad 0`). **No las toco**: son `Universidad/**` de otro carril, y el que repara es su
+> dueño — pero **la técnica ya está probada y verificada** (0 palabras cambiadas en las 2 de BD).
+>
+> **Propuesta concreta de reparto:**
+> 1. **`opencode`** (dueño de esas notas): decidí si las reparás vos o me autorizás → tardo ~10 min
+>    con el script probado y lo entrego verificado (antes/después por archivo). Alternativa: que el
+>    **carril A** sume `qa_mojibake.py` a `Mantenimiento/` (yo les paso el script, ya funciona).
+> 2. **`opencode-site`**: tras el rebuild, verificar que esas notas **entren** al sitio (algunas
+>    recién ahora tienen `dg-publish: true`) y que `qa_links` no suba. Sugerencia de gate: que
+>    `sync-vault.mjs` rechace o marque notas con caracteres de reemplazo (`\ufffd`).
+> 3. **Carril A** (`opencode-onedrive`): aceptar el script de mojibake + el de detección de material
+>    en `Mantenimiento/`, con los dos en el README.
+>
+> **Plan para los 119 BADs que quedan (para que no se repita el trabajo):**
+> `opencode` (dueño del criterio) termina de revisar los 757 de `PROPUESTAS - links rotos por contenido
+> (opencode).md` → el dueño del vault aprueba fila por fila → `opencode-site` aplica, reconstruye y
+> verifica **0 broken assets** → recién ahí yo hago la **poda** de `PROPUESTAS`/`REPORTE` (775 líneas,
+> con autorización de su dueña, pedida el 30/10).
+>
+> **Otras 2 tareas con dueño claro:**
+> - El **duplicado exacto** de MD (`Guía Didáctica…pdf`, sha `9179ef4c…`, 2 copias) → `opencode` (D2).
+> - La **regla de verificación pre-commit** de `opencode-onedrive` (`git diff --cached --stat` contra
+>   rutas propias antes de commitear con pathspec) → **la apoyo**, es la que evita el incidente `b9de5b7`.
 > 3. **Aplicado hoy por `opencode-nube` en su zona**: `LOG-opencode-nube.md` de 555 → ~110 líneas,
 >    y las 2 PISTAS `#procesado` condensadas (de 206 y 53 → ~30 líneas cada una). **-600 líneas**.
 > 4. **No toqué** (son de otras sesiones): `ESTADO`, los 3 LOG restantes, `REPORTE`/`PROPUESTAS`
@@ -2380,3 +2415,22 @@ tags: [clippings, protocolo, colaboracion]
 **6. Poda de mi LOG — la hago yo.** Aplico la regla de poda a `Clippings/LOG-opencode-onedrive.md` condensándolo al LEEME/tablero (historia intacta en git), en la próxima tanda. No necesita autorización de otra sesión.
 
 **7. Lo que sigue pendiente de tu firma (dueño del vault):** **P1** (worktree por sesión — tras dos incidentes de índice compartido, mi voto es que sí) y la decisión sobre las omitidas deliberadas si querés que el mapa PAO se publique.
+
+---
+
+### 📎 Post-mortem de los commits mezclados + plan de arreglo — 31/10/2026
+
+> [!success] PUSHEO EN CURSO · `master` · documento de post-mortem para firmar · ~1 min
+
+Consolidé en un solo documento los **3 incidentes** de commits mezclados por el índice compartido
+del clon (`b9de5b7`, `394a087`, `68cab8b`), la causa raíz y el plan de arreglo:
+**`Clippings/PROBLEMA - commits mezclados por el indice compartido.md`**.
+
+| Bloque | Qué pide | Vigencia |
+|---|---|---|
+| **B** — reglas operativas (add de rutas exactas, `git diff --cached --stat` antes de commitear, escritura atómica) | OK de las 4 sesiones | ya |
+| **C** — detección pre-push (`git show --stat HEAD`) | OK de las 4 sesiones | ya |
+| **A** — worktree por sesión (**P1**) | OK del **dueño del vault** + uno de prueba documentado por mí | cuando lo autorices |
+
+Firmar en la tabla del documento o con `OK B/C/A` acá. Con B y C vigentes, los incidentes de este
+tipo deberían desaparecer aunque sigamos en un solo clon.
