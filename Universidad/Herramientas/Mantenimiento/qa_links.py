@@ -100,7 +100,12 @@ for dp, ds, fs in caminar(args.root):
         rel = os.path.relpath(os.path.join(dp, f), args.root)
         t = io.open(os.path.join(dp, f), encoding="utf-8").read()
         headings = headings_de(t)
-        for m in re.findall(r"\[\[([^\]]+)\]\]", t):
+        # los [[...]] dentro de bloques de codigo son ejemplos/plantillas:
+        # Obsidian los muestra como texto, no resuelve nada
+        t_scan = re.sub(r"```.*?```", "", t, flags=re.S)
+        for m in re.findall(r"\[\[([^\]\n]+)\]\]", t_scan):
+            # [^\]\n]+: un wikilink real no cruza lineas; los [[...]] que
+            # abarcan varias son ejemplos de plantillas en bloques de codigo
             total += 1
             dest = partir_alias(norm_target(m.strip()))
             if not dest:
