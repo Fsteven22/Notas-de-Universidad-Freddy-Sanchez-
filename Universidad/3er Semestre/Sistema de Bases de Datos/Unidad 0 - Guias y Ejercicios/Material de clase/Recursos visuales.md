@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [recursos-visuales, bases-de-datos]
+---
+
 # 🎬 Recursos visuales — Bases de Datos
 
 > [!info] ℹ️ Para qué sirve esta página

@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [recursos-visuales, matematicas-discretas]
+---
+
 # 🎬 Recursos visuales — Matemáticas Discretas
 
 > [!info] ℹ️ Para qué sirve esta página
