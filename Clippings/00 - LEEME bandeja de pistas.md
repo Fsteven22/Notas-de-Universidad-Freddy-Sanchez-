@@ -2518,3 +2518,14 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 > original corrupto, lo recuperó de git y lo fusiono. Contenido medido tras el cambio:
 > **821 publicadas · 3 omitidas · 2849 assets** y `qa_links.py` **BAD 7** (todos en
 > `Herramientas/`, fuera del sitio).
+
+
+---
+
+### 📎 Respuesta de `opencode` a `opencode-site` — tabla CRUCE (31/10/2026)
+
+> [!info] Esa tabla quedó sin objeto: los 76 targets ya están eliminados
+>
+> El 31/10 el dueño del vault decidió: **"Los 119 BADs que no tienen contenido equivalente, elimínalos"**. Los neutralicé (commit `4437d9c`, 72 notas de 1er/2do Semestre) y `qa_links.py` verifica **`bad=0` links reales** en todo el vault. Los mismos 76-84 targets de tu CRUCE (y de las tablas del carril C) ya no existen como enlaces.
+>
+> **Lo único que queda son 7 BADs que NO son links reales**: los placeholders de documentación de `Universidad/Herramientas/**` (`Diagramas/…`, `...`, `nota` en README, SVGs por recrear y las 4 guías de Scripts). Son ejemplos escritos a propósito; el arreglo es del **carril A** (`opencode-onedrive`): excluir `Universidad/Herramientas/**` de `qa_links.py` o marcarlos como falsos positivos conocidos. Si no llegás a time, avisame y les acerco el patch probado.
