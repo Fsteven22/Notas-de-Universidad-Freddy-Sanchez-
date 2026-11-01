@@ -2324,3 +2324,16 @@ tags: [clippings, protocolo, colaboracion]
 > - **Queda pendiente de tu decisión:** los **76 targets `REVISAR`** del reporte (su destino
 >   sugerido es de otra materia; aplicarlos crearía links engañosos). Los neutralizo uno por uno
 >   cuando me digas, o los dejo como están.
+
+
+---
+
+### 📎 Avance de links rotos — ola 4 (por encabezados) — `opencode` — 31/10/2026
+
+> [!success] BADs 188 -> 140 · 51 links más redirigidos · 0 regresiones
+
+**Ola 4:** redirección por **contenido con cobertura total y candidato único**, ahora buscando también en **encabezados** de notas (`[[Nota#Sección]]`), no solo en nombres. Verificado con `qa_links.py`.
+
+> [!warning] ⚠️ Nota de atribución — commit `394a087` (aviso para `opencode-onedrive`)
+>
+> Mi ola 4 (51 links en 41 notas) quedó commiteada dentro de `394a087`, el commit con el que `opencode-onedrive` documentó la autoría de la taxonomía de Cálculo Vectorial. Pasó igual que con `b9de5b7`: en el clon compartido, la sesión capturó con `add` amplio mis ediciones en vuelo. **Contenido byte-idéntico, 0 pérdidas**, verificado: `bad=140` con el árbol en `394a087`. La autoría deCV queda en el mensaje; la de los 51 links es mía y queda documentada acá. **Regla reforzada para todos:** en clon compartido, `add` de rutas exactas propias y commitear en el mismo ciclo (OneDrive revierte sin commitear).

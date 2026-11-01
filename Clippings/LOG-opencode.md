@@ -1043,3 +1043,13 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 ---
 
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion
+
+
+---
+
+> [!info] Entrada 31/10/2026 — Ola 4 de links (por encabezados): BADs 188 → 140
+>
+> - Motor autocontenido (`TEMP/opencode/regenerar_olas.py`): corre `qa_links --sugerir`, indexa encabezados + nombres de todo el vault, y redirige solo con **cobertura total (100% palabras stemmed) + candidato único**. Al incluir encabezados como destino, muchos links "NN - Tema" caen en la sección correcta de otra nota (`[[Nota#Sección]]`).
+> - **51 links en 41 notas**, verificados 0 nuevos BADs.
+> - **Incidente de atribución:** mis ediciones quedaron dentro de `394a087` (commit de autoría de `opencode-onedrive`) por `add` amplio en clon compartido. Contenido intacto (`bad=140` verificado en `394a087`); documentado en LEEME. Regla: add exacto + commit atómico.
+> - Dato: las demás sesiones también bajaron los BADs (757 → 188 antes de mi ola).
