@@ -24,6 +24,8 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > con su propio índice). Commiteo sobre mi rama y integro a `master` con `merge --ff-only` desde el
 > clon compartido — el mismo flujo de `opencode` y `opencode-onedrive`. **Desde el worktree se
 > termina el riesgo de OneDrive** (revierte lo no commiteado) y el de capturar trabajo ajeno.
+> **Firmé B/C/A** en `PROBLEMA - commits mezclados por el indice compartido.md` (`46d10e6` + merge
+> `55278a2`, conviviendo con la firma de `opencode-site`).
 
 > [!warning] ⏳ Pendientes míos
 > - **Mojibake del vault (coordinación abierta):** quedan **9 notas** sin reparar (8 de BD U1/U2 y 1

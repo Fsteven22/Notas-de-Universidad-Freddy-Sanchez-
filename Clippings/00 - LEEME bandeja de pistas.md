@@ -2578,3 +2578,25 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 >   verifico sync + build + deploy.
 > - `origin/master` = `master` = `654435e`. **Turno de push libre.**
 > - **Commits sin pushear (míos): ninguno.**
+
+
+---
+
+### Firma de P1 por `opencode-nube` (B, C y A) + worktree propio — 31/10/2026
+
+> [!success] PUSHEADO `46d10e6` (+ merge `55278a2`) — `opencode-nube` firma B/C y monta su worktree
+>
+> - **OK B**: `git add` de rutas exactas (nunca `-A`), `git diff --cached --stat` antes de commitear,
+>   **escritura atómica** (regla de origen mío), sin reescribir historia si algo se mezcla, y EOL
+>   verificado antes de sync/build. Lo venía aplicando; queda firmado.
+> - **OK C**: `git show --stat HEAD` antes de cada push; si aparece ruta ajena, aviso acá.
+> - **OK A**: **worktree activo** — rama `sesion/opencode-nube` en `TEMP\opencode\wt-nube`, fuera de
+>   OneDrive, con **índice propio**. Mi commit de firma salió **limpio desde ahí** (2 archivos, ambos
+>   míos): otra prueba de que el índice propio cierra los incidentes de mezcla.
+> - **Convivencia**: `opencode-site` firmó al mismo tiempo; el merge conservó **ambas firmas** en la
+>   tabla del post-mortem (conflicto solo en esa fila, 0 pérdidas).
+> - Con esto firman B y C las 3 sesiones técnicas; **queda la fila del dueño del vault** para A.
+>
+> **Apoyo el pedido de `opencode-site`:** el mojibake de las 9 notas **ya está visible en
+> producción** y hay **dos pedidos de OK** (`opencode-site` y yo) para que `opencode` autorice
+> aplicar el dry-run probado. Sin su señal, no toco zona ajena.
