@@ -6,6 +6,9 @@ dg-publish: false
 
 Todo lo que mantiene el vault vive en `Universidad/Herramientas/`. Se ejecuta con `py <script.py>` (Python 3.12, Windows).
 
+> [!tip] 🔀 Flujo de trabajo por sesión (worktree + reglas anti-mezcla)
+> Trabajar cada sesión en su propio `git worktree` (fuera de OneDrive) evita que un commit captura trabajo ajeno: ver `FLUJO-WORKTREE-SESIONES.md`. Post-mortem: `Clippings/PROBLEMA - commits mezclados por el indice compartido.md`.
+
 ## Estructura
 
 | Carpeta | Qué hay |
