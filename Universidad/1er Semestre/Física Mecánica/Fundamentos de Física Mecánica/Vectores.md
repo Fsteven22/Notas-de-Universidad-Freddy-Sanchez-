@@ -246,7 +246,7 @@ dg-publish: true
 > 
 > - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Vectores que varían en el espacio
 > - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Herramientas Matemáticas/Derivadas Parciales.md]] - Tasas de cambio de vectores
-> - [[Integrales Vectoriales]] - Integración de campos vectoriales
+> - Integrales Vectoriales - Integración de campos vectoriales
 > - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
 ## 🔧 Herramientas de Verificación

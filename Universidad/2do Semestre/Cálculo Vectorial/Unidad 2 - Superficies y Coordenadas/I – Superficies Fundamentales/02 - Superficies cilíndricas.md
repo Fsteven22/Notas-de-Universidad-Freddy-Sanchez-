@@ -994,7 +994,7 @@ dg-publish: true
 
 > [!quote] 🔗 Enlaces con Otros Temas **Prerequisitos:**
 > 
-> - [[Cónicas en el plano]] - Directrices de los cilindros
+> - Cónicas en el plano - Directrices de los cilindros
 > - [[02 - Vectores en R3]] - Generatrices como rectas
 > - [[01 - Rectas en R3]] - Generatrices
 > - [[02 - Planos en R3]] - Intersecciones
@@ -1011,7 +1011,7 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - [[Cálculo Vectorial]] - Integrales de superficie
-> - [[Ecuaciones Diferenciales]] - Problemas en coordenadas cilíndricas
+> - Ecuaciones Diferenciales - Problemas en coordenadas cilíndricas
 > - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Laplaciano en cilindros
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies desarrollables
 > 

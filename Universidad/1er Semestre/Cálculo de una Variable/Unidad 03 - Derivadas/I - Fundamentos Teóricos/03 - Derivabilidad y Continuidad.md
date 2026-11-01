@@ -347,7 +347,7 @@ dg-publish: true
 > 
 > ### 🎯 Aplicaciones Inmediatas
 > - [[01 - Problemas de Optimización]] - Búsqueda de extremos
-> - [[Aproximaciones Lineales]] - Uso de tangentes
+> - Aproximaciones Lineales - Uso de tangentes
 > - [[02 - Razones de Cambio Relacionadas]] - Aplicaciones dinámicas
 > - Ecuaciones Diferenciales Básicas - Modelado con derivadas
 > 

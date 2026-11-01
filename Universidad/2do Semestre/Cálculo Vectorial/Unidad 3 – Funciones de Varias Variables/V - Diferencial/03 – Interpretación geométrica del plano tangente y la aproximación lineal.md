@@ -1175,7 +1175,7 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Base vectorial
 > - [[Derivadas Parciales]] - Herramienta fundamental
-> - [[Límites en varias variables]] - Concepto de aproximación
+> - Límites en varias variables - Concepto de aproximación
 > - [[02 – Continuidad]] - Condición necesaria
 > 
 > **Temas relacionados:**
@@ -1207,8 +1207,8 @@ dg-publish: true
 > - Economía Matemática - Funciones de utilidad
 > - [[Machine Learning#Machine Learning - Aprendizaje Automático 🤖]] - Gradiente descendente
 =======
-> - [[Termodinámica]] - Funciones de estado
-> - [[Economía Matemática]] - Funciones de utilidad
+> - Termodinámica - Funciones de estado
+> - Economía Matemática - Funciones de utilidad
 > - [[Machine Learning]] - Gradiente descendente
 >>>>>>> origin/master
 

@@ -274,7 +274,7 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - [[Límites de Funciones]] - Base conceptual para la definición de derivada
+> - Límites de Funciones - Base conceptual para la definición de derivada
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Técnicas para calcular derivadas
 > - Aplicaciones de la Derivada - Usos en optimización y análisis
 > - [[02 – Continuidad]] - Relación entre continuidad y derivabilidad
@@ -297,7 +297,7 @@ dg-publish: true
 > - [[03 - Derivabilidad y Continuidad#⚡ Teorema Principal: Derivabilidad ⟹ Continuidad]] - Rolle, Valor Medio, etc.
 > - [[01 - Derivadas de Orden Superior]] - Segunda derivada y concavidad
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Crecimiento, extremos, inflexión
-> - [[Ecuaciones Diferenciales]] - Modelado con razones de cambio
+> - Ecuaciones Diferenciales - Modelado con razones de cambio
 > - Cálculo Numérico - Aproximación de derivadas
 > - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Aplicaciones avanzadas en ciencias
 

@@ -1307,7 +1307,7 @@ dg-publish: true
 
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
-> - [[02.2 Axiomas]] - Concepto de sistema axiomático
+> - 02.2 Axiomas - Concepto de sistema axiomático
 > - [[Matemáticas Discretas]] - Demostraciones formales
 
 > - 02.2 Axiomas - Concepto de sistema axiomático

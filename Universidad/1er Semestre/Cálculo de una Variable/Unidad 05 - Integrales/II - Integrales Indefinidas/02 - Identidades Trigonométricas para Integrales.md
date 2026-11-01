@@ -165,7 +165,7 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - Series de Fourier - Análisis armónico
-> - [[Ecuaciones Diferenciales]] - Soluciones trigonométricas
+> - Ecuaciones Diferenciales - Soluciones trigonométricas
 > - Análisis Complejo - Funciones trigonométricas complejas
 
 ## 📖 Referencias y Estudio Complementario

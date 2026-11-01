@@ -781,7 +781,7 @@ dg-publish: true
 > - 19 - Núcleo e Imagen - Caracterización
 =======
 > - [[04 – Matriz de cambio de base]] - Isomorfismos coordenados
-> - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
+> - 07 - Espacios cociente - Primer teorema de isomorfismo
 > - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización
 >>>>>>> origin/master
 > 

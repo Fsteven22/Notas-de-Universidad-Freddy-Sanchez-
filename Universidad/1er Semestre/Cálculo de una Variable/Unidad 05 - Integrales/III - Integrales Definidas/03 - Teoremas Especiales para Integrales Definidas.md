@@ -337,7 +337,7 @@ dg-publish: true
 > - Series de Fourier - Aplicación directa de propiedades de simetría
 > - Análisis de Señales - Aplicaciones en ingeniería
 > - [[06 - Funciones Especiales]] - Más ejemplos de funciones con simetrías
-> - [[Transformadas Integrales]] - Uso avanzado de propiedades de simetría
+> - Transformadas Integrales - Uso avanzado de propiedades de simetría
 > 
 > ### 🎯 Notas Recomendadas
 > 
@@ -589,7 +589,7 @@ dg-publish: true
 > ### 📖 Para Profundizar
 > 
 > - [[01 - Continuidad y Límites#Teorema del Valor Intermedio|Teorema del Valor Intermedio]] - Herramienta clave en la demostración
-> - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
+> - Aplicaciones de Integrales en Física - Uso del valor medio en problemas físicos
 > - Valor RMS y Aplicaciones Eléctricas - Aplicación específica del concepto
 > - [[05 – Valor promedio de una función#📊 Valor Promedio de una Función]] - Interpretación estadística del valor medio
 > 

@@ -689,7 +689,7 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[04 – Funciones vectoriales de variable vectorial#✖️ Productos Vectoriales]] - Necesario para distancia punto-recta
-> - [[Producto Escalar]] - Proyecciones y ángulos
+> - Producto Escalar - Proyecciones y ángulos
 > - [[01 - Rectas en R3]] - Formas paramétricas y simétricas
 > - [[02 - Planos en R3]] - Forma general y normal
 
@@ -701,7 +701,7 @@ dg-publish: true
 > **Aplicaciones directas:**
 > 
 > - [[03 - Ángulos]] - Complementa el estudio geométrico
-> - [[Proyecciones]] - Relacionado con distancias perpendiculares
+> - Proyecciones - Relacionado con distancias perpendiculares
 > - [[01 - Superficies cuadráticas]] - Distancias a objetos curvos
 > - Optimización en ℝ³ - Minimización de distancias
 > 

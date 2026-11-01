@@ -832,7 +832,7 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Fundamentos vectoriales
 > - [[03 – Aplicaciones geométricas básicas]] - Geometría en 3D
 > - [[10 - Secciones cónicas en coordenadas polares]] - Círculos, elipses, parábolas, hipérbolas en 2D
-> - [[Álgebra de ecuaciones cuadráticas]] - Formas canónicas
+> - Álgebra de ecuaciones cuadráticas - Formas canónicas
 
 > - Cónicas - Círculos, elipses, parábolas, hipérbolas en 2D
 > - Álgebra de ecuaciones cuadráticas - Formas canónicas
@@ -846,7 +846,7 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Optimización en superficies]] - Máximos y mínimos
+> - Optimización en superficies - Máximos y mínimos
 > - Integrales de superficie - Cálculo multivariable
 > - Campos vectoriales en superficies - Física matemática
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas

@@ -473,7 +473,7 @@ dg-publish: true
 > 
 > - [[03 - Concavidad y Puntos de Inflexión]] - Segunda derivada
 > - [[02 - Asíntotas y Comportamiento de Funciones#Gráficas de Funciones|Gráficas de Funciones]] - Representación visual
-> - [[Extremos Absolutos]] - Valores máximos/mínimos globales
+> - Extremos Absolutos - Valores máximos/mínimos globales
 > 
 > **Aplicaciones:**
 > 
@@ -484,7 +484,7 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - Análisis Convexo - Propiedades de convexidad
-> - [[Ecuaciones Diferenciales]] - Sistemas dinámicos
+> - Ecuaciones Diferenciales - Sistemas dinámicos
 > - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Optimización funcional
 
 ---

@@ -1057,7 +1057,7 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - Geometría Analítica 3D - Estudio completo
-> - [[Cinemática Vectorial]] - Movimiento en el espacio
+> - Cinemática Vectorial - Movimiento en el espacio
 > - [[Cálculo Vectorial]] - Derivadas e integrales
 > - Análisis Tensorial - Generalización
 > 

@@ -1452,7 +1452,7 @@ dg-publish: true
 > ### Prerequisitos:
 > 
 > - **[[01 - Subespacios Vectoriales]]** - Qué es un subespacio
-> - **[[08 - Bases]]** - Bases de subespacios
+> - **08 - Bases** - Bases de subespacios
 > - **[[01 - Dimensión y descripción del conjunto solución]]** - Concepto de dimensión
 > - **[[01 – Dependencia e independencia lineal]]** - Para verificar sumas directas
 

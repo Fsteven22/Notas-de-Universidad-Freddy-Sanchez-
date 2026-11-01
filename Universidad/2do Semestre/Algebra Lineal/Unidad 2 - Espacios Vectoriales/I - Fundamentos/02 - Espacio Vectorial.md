@@ -1479,7 +1479,7 @@ dg-publish: true
 > - Eigenvalores y Eigenvectores - Diagonalización
 > - [[08 - Desigualdad de Cauchy–Schwarz#Espacios con Producto Interno|Espacios con Producto Interno]] - Geometría
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Dimensión infinita
-> - [[Ecuaciones Diferenciales]] - Espacio de soluciones
+> - Ecuaciones Diferenciales - Espacio de soluciones
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Espacios de restricciones
 
 ## 📚 Recursos Adicionales

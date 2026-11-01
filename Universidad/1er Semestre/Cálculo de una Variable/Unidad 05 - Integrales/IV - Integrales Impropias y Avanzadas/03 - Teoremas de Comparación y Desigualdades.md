@@ -340,7 +340,7 @@ dg-publish: true
 > ### 🎯 Notas Recomendadas
 > - Funciones de Referencia Estándar - Catálogo de funciones para comparación
 > - Estimación de Integrales - Aplicaciones prácticas de acotación
-> - [[Métodos de Aproximación]] - Técnicas numéricas complementarias
+> - Métodos de Aproximación - Técnicas numéricas complementarias
 > - Desigualdades Clásicas - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
 > 
 

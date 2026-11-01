@@ -421,7 +421,7 @@ dg-publish: true
 > 
 > - [[Derivadas Parciales]] - Matemáticas para propagación
 > - Análisis Gráfico - Representación de incertidumbres
-> - [[Reportes de Laboratorio]] - Presentación de resultados
+> - Reportes de Laboratorio - Presentación de resultados
 
 ---
 

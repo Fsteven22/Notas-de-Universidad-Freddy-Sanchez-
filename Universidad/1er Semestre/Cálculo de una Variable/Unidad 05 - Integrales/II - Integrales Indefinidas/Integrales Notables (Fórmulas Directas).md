@@ -446,7 +446,7 @@ dg-publish: true
 > 
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]
 > - [[02 - Funciones trigonométricas elementales]]
-> - [[Límites de Funciones]]
+> - Límites de Funciones
 >
 
 > [!tip] Continuación del Tema

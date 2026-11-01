@@ -4332,7 +4332,7 @@ dg-publish: true
 > **Aplicaciones en:**
 > - [[05 – Matriz semejante#Sistemas de Ecuaciones Diferenciales|Sistemas de ecuaciones diferenciales]]
 > - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización lineal]]
-> - [[Métodos numéricos]]
+> - Métodos numéricos
 > - Álgebra Lineal Computacional
 
 ---

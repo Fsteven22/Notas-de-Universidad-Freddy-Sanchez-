@@ -296,12 +296,12 @@ dg-publish: true
 
 - [[1er Semestre/Cálculo de una Variable/Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/02 - Monotonía y Puntos Críticos.md]] - Para encontrar máximos y mínimos relevantes
 - Ecuaciones de Curvas Especiales - Círculos, elipses, parábolas, hipérbolas
-- [[Aplicaciones Geométricas del Cálculo]] - Volúmenes, longitudes de arco
+- Aplicaciones Geométricas del Cálculo - Volúmenes, longitudes de arco
 - Modelado Matemático con Integrales - Aplicaciones en ciencias e ingeniería
 
 ### 🧮 Aplicaciones Especializadas
 
-- [[Centros de Masa y Centroides]] - Usando áreas entre curvas
+- Centros de Masa y Centroides - Usando áreas entre curvas
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
 - Análisis de Costos Marginales - Aplicaciones en economía
 - Biodisponibilidad y Farmacocinética - Aplicaciones en medicina

@@ -269,12 +269,12 @@ dg-publish: true
 > - [[01 - Límites al Infinito y Sucesiones]] - Para asíntotas horizontales y oblicuas
 > - [[02 - Límites Laterales]] - Para asíntotas verticales
 > - Funciones y Dominio - Análisis de restricciones
-> - [[Algebra de Polinomios]] - Para funciones racionales
+> - Algebra de Polinomios - Para funciones racionales
 > 
 > **Para profundizar:**
 > 
 > - [[01 - Análisis Completo de Funciones]] - Integración con derivadas
-> - [[Funciones Trascendentes]] - Asíntotas en exponenciales y logaritmos
+> - Funciones Trascendentes - Asíntotas en exponenciales y logaritmos
 > - Cálculo Diferencial Avanzado - Técnicas de graficación
 > - Geometría Analítica - Ecuaciones de rectas asintóticas
 > - Aplicaciones del Cálculo - Modelado con funciones asintóticas

@@ -1739,7 +1739,7 @@ dg-publish: true
 > **Aplicaciones directas:**
 > 
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Compacidad garantiza extremos
-> - [[Ecuaciones Diferenciales]] - Existencia y unicidad
+> - Ecuaciones Diferenciales - Existencia y unicidad
 > - Teoría de la Medida - Conjuntos medibles
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
 > 
@@ -1747,7 +1747,7 @@ dg-publish: true
 > 
 > - Topología Algebraica - Homología, cohomología
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades topológicas
-> - [[Topología General]] - Espacios abstractos
+> - Topología General - Espacios abstractos
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] - Teoría de la medida
 
 > - Topología General - Espacios abstractos

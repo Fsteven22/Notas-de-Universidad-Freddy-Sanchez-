@@ -1109,7 +1109,7 @@ dg-publish: true
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Superficies de nivel
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Extremos sobre superficies
 > - [[01 – Integrales múltiples]] - Volúmenes y regiones
-> - [[Ecuaciones diferenciales]] - Soluciones geométricas
+> - Ecuaciones diferenciales - Soluciones geométricas
 > 
 > **Temas avanzados:**
 > 

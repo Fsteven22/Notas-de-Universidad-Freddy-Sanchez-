@@ -501,7 +501,7 @@ dg-publish: true
 > 
 > - [[Vectores]] - Operaciones vectoriales y coordenadas
 > - [[Centro de Gravedad (CG)]] - Conceptos de centro de masa
-> - [[Integrales]] - Cálculo diferencial e integral
+> - Integrales - Cálculo diferencial e integral
 > - Geometría - Propiedades de figuras geométricas
 
 ---

@@ -1008,7 +1008,7 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Operaciones vectoriales fundamentales
 > - [[02 – Producto cruz y áreas]] - Cálculo de vectores normales
 > - [[01 – Producto punto y ángulos]] - Perpendicularidad y ángulos
-> - [[03. Distancia en el Espacio]] - Fundamentos métricos
+> - 03. Distancia en el Espacio - Fundamentos métricos
 
 > - 02.1 Producto Cruz - Cálculo de vectores normales
 > - 02.2 Producto Punto - Perpendicularidad y ángulos
@@ -1027,13 +1027,13 @@ dg-publish: true
 > - [[01 – Transformaciones lineales]] - Planos como núcleo/imagen
 > - [[05 - Sistemas de ecuaciones lineales]] - Intersección de planos
 > - [[01 - Subespacios Vectoriales]] - Planos como subespacios
-> - [[Álgebra de Matrices]] - Representación matricial
+> - Álgebra de Matrices - Representación matricial
 > 
 > **Aplicaciones avanzadas:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Planos tangentes
 > - [[03 - Teoremas Especiales para Integrales Definidas#🌀 Aplicaciones en Cálculo Multivariable]] - Gradiente y planos tangentes
-> - [[Ecuaciones Diferenciales]] - Familias de planos solución
+> - Ecuaciones Diferenciales - Familias de planos solución
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Restricciones planares
 > 
 > **Aplicaciones prácticas:**

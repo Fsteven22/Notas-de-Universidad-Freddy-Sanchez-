@@ -227,7 +227,7 @@ dg-publish: true
 > - Series de Potencias
 > - Series de Taylor y Maclaurin
 > - [[01 - Integración Numérica]]
-> - [[Métodos de Aproximación]]
+> - Métodos de Aproximación
 
 ---
 

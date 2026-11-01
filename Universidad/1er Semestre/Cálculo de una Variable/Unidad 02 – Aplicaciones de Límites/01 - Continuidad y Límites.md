@@ -208,7 +208,7 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - [[Límites de Funciones]] - Base conceptual para continuidad
+> - Límites de Funciones - Base conceptual para continuidad
 > - [[03 - Derivabilidad y Continuidad]] - Relación entre continuidad y diferenciabilidad
 > - Teorema de Weierstrass - Continuidad en compactos
 > - Topología - Conceptos de abierto, cerrado y compacto
@@ -232,7 +232,7 @@ dg-publish: true
 > - Compacidad - Teoremas de Heine-Borel y Heine-Cantor
 > - Conexidad - Generalización del Teorema del Valor Intermedio
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Continuidad en espacios más generales
-> - [[Ecuaciones Diferenciales]] - TVI en existencia de soluciones
+> - Ecuaciones Diferenciales - TVI en existencia de soluciones
 > - Análisis Numérico - Algoritmos basados en continuidad
 
 ---

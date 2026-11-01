@@ -275,7 +275,7 @@ dg-publish: true
 > [!quote] 📚 Notas Relacionadas
 > 
 > ### Prerequisitos
-> - [[Funciones Inversas]] - Definición y propiedades básicas
+> - Funciones Inversas - Definición y propiedades básicas
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Para composiciones con inversas
 > - [[01 - Derivación Implícita]] - Base del método teórico
 > - [[05 - Identidades trigonométricas]] - Para simplificar derivadas

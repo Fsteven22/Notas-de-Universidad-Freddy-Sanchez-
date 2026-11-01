@@ -1770,7 +1770,7 @@ dg-publish: true
 > - [[01 - Valores y Vectores propios]] - Sistemas de ecuaciones especiales
 > - Descomposición LU - Factorización para resolver sistemas
 > - Métodos Iterativos - Jacobi, Gauss-Seidel
-> - [[Sistemas No Lineales]] - Generalización
+> - Sistemas No Lineales - Generalización
 > 
 > **Aplicaciones interdisciplinarias:**
 > 

@@ -191,7 +191,7 @@ dg-publish: true
 > - [[1er Semestre/Física Mecánica/04 - Impulso y Colisiones (Lineal)/Momentum Lineal y Su Conservación.md]]
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
-> - [[Sistemas de Referencia Inerciales]]
+> - Sistemas de Referencia Inerciales
 > - Aplicaciones de la Mecánica Rotacional
 
 ## 📖 Notas Recomendadas

@@ -173,7 +173,7 @@ dg-publish: true
 > ### Temas Relacionados:
 > 
 > - [[01 - Formas Indeterminadas]] - Para formas indeterminadas
-> - [[Discontinuidades]] - Clasificación completa
+> - Discontinuidades - Clasificación completa
 > - [[02 - Asíntotas y Comportamiento de Funciones#Gráficas de Funciones|Gráficas de Funciones]] - Interpretación visual
 > - Comportamiento Asintótico - Análisis avanzado
 >
@@ -502,7 +502,7 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - [[Límites de Funciones]] - Relación entre límites funcionales y sucesiones
+> - Límites de Funciones - Relación entre límites funcionales y sucesiones
 > - Series Numéricas - Aplicación de sucesiones en series
 > - [[02 – Continuidad]] - Caracterización secuencial de continuidad
 > - Topología de los Reales - Conceptos de supremo e ínfimo
