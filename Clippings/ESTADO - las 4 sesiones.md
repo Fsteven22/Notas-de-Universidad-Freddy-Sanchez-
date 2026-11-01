@@ -167,43 +167,32 @@ tags: [clippings, estado, sesiones, plan, tablero]
 ### Resultados
 > [!success] ✅ Resultados
 >
-> - **3er Semestre: 0 wikilinks rotos**, **0 errores de formato** en sus **174** notas, **0 PDFs huérfanos**.
-> - Vault completo: **1075 → 1039 BAD**. **Desglose real medido** (el que estaba anotado sumaba 972, no 1039): 2do Semestre **528** · 1er Semestre **471** · Preuniversitario **27** · **Herramientas 13**. Los 13 de `Herramientas` son **falsos positivos**: placeholders documentados (`[[nombre-de-archivo]]`, `[[...]]`, `[[enlace]]`) en `Herramientas/README.md` y en las 4 guías de `Herramientas/Scripts/`. → **1026 links rotos reales**.
-> - `qa_links.py` corregido (`partir_alias`: `#` en nombres de archivo, `\|` en tablas).
-> - 438 SVG movidos a `Diagramas/` de cada materia; 861 wikilinks rotos convertidos en texto plano; 14 tablas → callouts; 74 decks renderizados a PNG y embebidos.
-> - **Speaking Exam 2** (Inglés III) agregado: nota (336 líneas, 16 secciones) + PDF de 7 páginas exportado con PowerPoint COM + 2 SVG mermaid.
-> - **Limpieza de cuota ejecutada** (la que autorizaba el Acuerdo 4): `site/` **1.830 → 1 MB** (todo lo grande estaba en `.gitignore`) y `.git/` **1.502 → 658 MB** con `git gc --prune=now`, tras verificar que el `gc.pid` era huérfano y que su proceso (18272) ya no existía. Raíz de OneDrive: **4.816 → 2.647 MB**.
-> - **Correcciones de auditoría**: el desglose de los 1039 BAD (sumaba 972), la autoría de `47614c0` (es de `opencode-nube`, no de `opencode-onedrive`), y la lista de commits de este bloque.
-> - **Copia institucional: verificada por mí (17:40) y eliminada por decisión del usuario (18:20).** Cuando la medí, el vault en `OneDrive - Escuela Superior Politécnica del Litoral\OneSyncFiles` era un **clon git íntegro** — `Universidad/` 1.110 MB con **818 `.md`** (los mismos 809 + `Herramientas/` + `Diagramas/Index_01.md`), `.git/` 658 MB ya compactado, `master` 0/0 con `origin` y árbol limpio — y **producción** respondía **HTTP 200** en `speaking-practice-2`. **Ya no está**: el vault activo es el de la cuenta personal.
-> - **8 commits publicados** con el protocolo del Acuerdo 2 (push anunciado antes y después).
-> - Commits: `955c52f`, `ef329c8`, `7fa326a`, `5c75f95`, `86aa483`, `99d8c22`, `c11e2b9`, `c4a84b5`, `4fd4960`, `ba68d18`, `ddd27a7`, `47614c0`, `ed7fecb`, `d972965`, `3cb1fdc`, `2ea2d3d`, `313d41e`, `95476d9`, `e98ca05`.
+> - **Vault completo: `qa_links.py` bad=0** (links reales; los 7 restantes son placeholders de `Herramientas/`, falsos positivos documentados). Camino: 852 → 757 → 140 → 119 → 0, con redirecciones por contenido (cobertura total, encabezados incluidos) y neutralización de los que no tenían destino equivalente (decisión del dueño del vault).
+> - **Carril B cerrado:** 122 figuras a `U0/Figuras/` (16/15 materias), ~4.000 SVG/MMD de `Diagramas/` raíz unidos a `U0/Diagramas/`, `Universidad/Diagramas/` y `Universidad/Figuras/` globales eliminados. Mapa PAO 2-2026 reubicado a `00 - Mapa PAO 2-2026.md` (raíz) y enlazado desde `Index.md`.
+> - **56 láminas PNG huérfanas embebidas** (DSW U2 ×32, U5 ×5, SBD U2 ×19) y **3 PPTX de Inglés III exportados a PDF** (autorizado por el usuario).
+> - **`dg-publish` alineado:** los 18 `00 - Leeme Unidad 0.md` quedaron publicables (el de SBD lo completé yo).
+> - **Registro de incidentes del clon compartido** publicado en el LEEME (`b9de5b7`, `394a087`, `68cab8b/ef29c56`, placeholders) con 4 acuerdos propuestos a las 4 sesiones.
 
 ### Qué falta
 > [!warning] ⏳ Qué falta
 >
 > | # | Qué | Prioridad | Decide |
 > |---|---|---|---|
-> | 1 | **1026 links rotos reales** (no 1039) en 1er/2do/Preuniversitario: apuntan a material que nunca existió (informes, PDFs de cátedra). ¿Se borran, se reconstruyen o se dejan? | **alta** | **usuario** |
-> | 2 | **Embeber 56 PNG ya renderizados** que hoy no están enlazados, en 3 notas de mi zona: DSW U2 `02 - Diseño por componentes e interfaces.md` (**32**), DSW U5 `02 - Control de versiones con Git.md` (**5**), BD U2 `04 - Normalización paso a paso.md` (**19**) | **media** | sesión |
-> | 3 | **Normalizar 14.106 errores de formato** en 306 de 809 notas (el "~970" anotado no cuadraba). Por tipo: **3.935** líneas vacías dentro de fence en callout (185 notas) · **126** `ENDINGS mixed` (CRLF+LF) · **15** frontmatter con líneas vacías (rompe el YAML) · **9** de tabla · 6 con fences desbalanceados · 2 header indentado. **~70% es mecánico** | media | sesión |
-> | 4 | **32 PNG huérfanos** en `Universidad/Figuras/` (11,36 MB). **Verificado**: los 2 `venn-*.svg` se referencian **sin extensión** (`![[venn-2-conjuntos]]`) y **no** son huérfanos | baja | sesión (P7) |
-> | 5 | **3 `.pptx` de Inglés III** sin PDF equivalente: `PPT_Guide to Prepare your Oral Presentation`, `PPT_Structure of a Problem Solving Presentation`, `PRESENTATION TEMPLATE FOR CELEX` | baja | sesión |
-> | 6 | **DSW U3 y U4 no tienen material que renderizar** (0 PDF, 0 PNG; solo 4 y 3 notas sin material adjunto). El pendiente no es "renderizar decks": es **conseguir el material** | baja | usuario / sesión |
-> | 7 | **2 embeds que no resuelven**: `1er Semestre/Fundamentos de Programación/Fundamentos de FP/Machine Learning.md:161` (`Matplotlib/Seaborn`) y `2do Semestre/Comunicación/Bienvenida y Syllabus Comunicación.md:63` (`../../Diagramas/Bienvenida_y_Syllabus_Comunicación_01.svg`) | media | sesión |
-> | 8 | ✅ **Resuelto (18:20):** al cancelarse la migración queda **un solo clon**, así que el riesgo de que dos clones con el mismo `origin` divergan **ya no aplica**. Y el fallback de `sync-vault.mjs:20` vuelve a ser **correcto** (apunta al vault real). Los 12 archivos con ruta literal solo importan si algún día se decide migrar | cerrada | — |
-> | 9 | **P6 (`VAULT_ROOT`)**: parametrizar los 12 archivos con ruta literal **solo si algún día se vuelve a decidir migrar**. Hoy es correcto y no hay que tocarlo | **baja** | sesión opencode-onedrive (su zona) |
+> | 1 | **P1 — worktree por sesión**: única solución estructural a los incidentes de staging en clon compartido. Propuesto por `opencode-onedrive`, apoyado en mi registro de incidentes | **alta** | usuario + 4 sesiones |
+> | 2 | **`qa_links.py` debe excluir `Universidad/Herramientas/**`** (placeholders de documentación = 7 falsos positivos que contaminan el conteo global) | media | `opencode-onedrive` (carril A) |
+> | 3 | **Regenerar el SVG del mapa PAO** (`00 - Mapa PAO 2-2026.svg quedó desactualizado vs su md; `mmdc` es carril C) | baja | `opencode-site` |
+> | 4 | **DSW U3 y U4 sin material**: 0 PDF, 0 PNG. El pendiente es conseguir el material, no procesarlo | baja | **usuario** |
+> | 5 | ~~1026 links rotos~~ ✅ cerrado (852 → 0 verificado) | — | — |
+> | 6 | ~~56 PNG sin enlazar~~ ✅ cerrado (`8f85e6f`) · ~~3 PPTX sin PDF~~ ✅ cerrados | — | — |
+> | 7 | ~~2 embeds con ruta rota~~ ✅ cerrados (Comunicación + Machine Learning) | — | — |
 
 ### Próximos pasos
-> [!warning] ⏳ Qué falta
+> [!warning] ⏳ Próximos pasos
 >
-> 1. **Embeber los 56 PNG** (2): mejor relación esfuerzo/resultado y 100% dentro de mi zona → un commit con rutas exactas.
-> 2. **Normalizar los 14.106 errores de formato** (3) en 3 pasadas mecánicas y revisables: (a) `ENDINGS mixed`, 126 archivos, solo fin de línea; (b) frontmatter con líneas vacías, 15 archivos; (c) líneas vacías dentro de fence en callout, 3.935 → agregar el `>` de quote a la línea en blanco. **Regla que me impongo (aprendida del incidente de la tanda 1): fixer idempotente, dry-run primero, patrón exacto y nunca un regex global** — así no se vuelve a romper el LaTeX.
-> 3. Los links rotos (1) **no se tocan** hasta que el usuario decida.
-> 4. (5) y (7) son míos y no dependen de nadie. (6) depende de material que no está en el vault: lo reporto al usuario.
-> 5. **Coordinación — dato nuevo**: hay **3 notas sin frontmatter**, y por eso el sitio las omite **en silencio**: `1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Guías y Ejercicios (Prof. Zambrano).md` (la **única** de las 6 que anotaba `opencode-site` que sigue sin publicarse), `Universidad/Diagramas/Index_01.md` y `Universidad/Herramientas/SVGs por recrear.md` (las otras 2 no son contenido publicable). Lo decide `opencode-site`; lo dejo anotado aquí para que no se pierda.
-> 6. **(8) y (9) ya no son un pendiente: los reporté, el usuario canceló la migración (18:20) y el riesgo desapareció.** Lo que sí queda es **no volver a copiar el vault a la institucional sin hacer P6 antes** y avisando a las otras sesiones (quedaría otra vez dos clones con el mismo `origin`).
-
----
+> 1. Si el usuario aprueba **P1**, abrir mi worktree, migrar mi carril ahí y validar el procedimiento para las otras 3 sesiones.
+> 2. Empujar los **4 acuerdos** del registro de incidentes hasta que queden firmados por las 4 sesiones.
+> 3. Si `opencode-onedrive` no puede pronto el fix de `qa_links.py`, alcanzarle el patch probado (excluir `Herramientas/**` como falsos positivos conocidos).
+> 4. Reportar al usuario que mis carriles quedaron cerrados salvo 1–4.
 
 ## 2) `opencode-site` — sitio, marca y exclusiones
 
