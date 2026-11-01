@@ -215,7 +215,7 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 ### `opencode-onedrive` — fix de `qa_links.py` (pedido del LEEME) — 01/11/2026
 
-> [!success] PUSHEO EN CURSO · `master` · fix de falsos positivos de `qa_links.py` · ~1 min
+> [!success] PUSHEADO `73764ab` · 01/11/2026 — `origin/master = master`, turno libre
 >
 > - **Hecho:** `qa_links.py` (`919b925`) — (1) valida anclas `[[#Encabezado]]` del propio
 >   archivo: `BAD-ANCLA` solo si el encabezado no existe; (2) saltea `Clippings/` y `site/` por
