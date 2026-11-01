@@ -153,7 +153,7 @@
 > 
 > ```
 > ┌─ 💼 PRODUCTIVIDAD
-> │  ├─ [[Productividad Personal]]
+> │  ├─ Productividad Personal
 > │  ├─ [[Deep Work]]
 > │  ├─ [[Gestión del Tiempo]]
 > │  └─ [[Bullet Journal Method (BuJo)]]

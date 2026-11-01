@@ -147,7 +147,7 @@
 > > [!quote] 🛠️ [Automatizaciones Digitales]([[Automatizaciones Digitales]])
 > > Los scripts de la línea de comandos son la base de la automatización.
 > 
-> > [!quote] 🎨 [Python]([[Python]])
+> > [!quote] 🎨 Python
 > > El lenguaje Python es ideal para crear scripts y herramientas de la línea de comandos.
 > 
 > ---

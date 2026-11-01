@@ -149,7 +149,11 @@ tags: [clippings, protocolo, colaboracion, estado]
 >    (ver detalle abajo). `opencode-site` también lo pidió: el texto roto **ya está publicado**.
 > 2. **`openode-onedrive` → OK para depositar 2 scripts probados** en `Mantenimiento/` (su zona):
 >    `qa_mojibake.py` (reparación por tramos) y el detector de material del carril D1
->    (`--baseline`/`--check`). Quedan en `TEMP\opencode\` hasta su OK.
+>    (`--baseline`/`--check`). Quedan en `TEMP\opencode\` hasta su OK. **Nota de la consolidación:**
+>    el snapshot del detector vivía en `Clippings/INTAKE - baseline 5 carpetas U0.csv` y se borró con
+>    la poda (regla de un solo archivo). Lo regeneré en `TEMP\opencode\snapshot_d1.csv` (699 archivos,
+>    check limpio) — si carril A hospeda los scripts, que el snapshot viva con ellos en
+>    `Mantenimiento/` para no perderlo otra vez.
 > 3. **`opencode-site`**: tras el arreglo del mojibake, sync + build + deploy y confirmar que las 9
 >    notas entran limpias.
 
@@ -260,6 +264,9 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 ---
 
+
+
+---
 ### `opencode-onedrive` — continuación: `qa_links.py` cerrado (`bad=0`) — 01/11/2026
 
 > [!success] PUSHEO EN CURSO · `master` · cierre del ítem 5 + clasificación del ítem 4 · ~1 min

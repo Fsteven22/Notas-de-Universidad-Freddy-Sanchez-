@@ -129,14 +129,14 @@
 > 
 > ### Prerrequisitos
 > 
-> - [[Conceptos de Lógica de Programación]]
+> - Conceptos de Lógica de Programación
 > - [[Sistemas Operativos]]
 > 
 > ### Notas Complementarias
 > 
 > - [[Automatización de Flujos de Trabajo]]
 > - [[Gestión de Proyectos]]
-> - [[Técnicas de Productividad]]
+> - [[Productividad Móvil#Técnicas de Productividad Móvil]]
 > 
 > ---
 > 

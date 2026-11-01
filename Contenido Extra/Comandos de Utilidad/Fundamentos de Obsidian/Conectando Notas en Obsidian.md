@@ -14,10 +14,10 @@
 >
 > | Tipo de Enlace | Sintaxis | Ejemplo | Descripción |
 > |---|---|---|---|
-> | **A otra nota** | `[[Nombre de la nota]]` | `[[Zettelkasten]]` | Enlace básico que te lleva a otra nota. |
-> | **A un subtítulo** | `[[Nombre de la nota#Subtítulo]]` | `[[Zettelkasten#Tipos de Notas]]` | Te lleva directamente a una sección específica dentro de una nota. |
-> | **A un bloque** | `[[Nombre de la nota#^ID del bloque]]` | `[[Zettelkasten#^ID12345]]` | Enlace a un párrafo o línea de texto específica, perfecto para citas. |
-> | **Al crear la nota** | `[[Nueva nota]]` | `[[Guía de Plugins]]` | Si la nota no existe, Obsidian te ofrece crearla al hacer clic. |
+> | **A otra nota** | `Nombre de la nota` | `[[Zettelkasten]]` | Enlace básico que te lleva a otra nota. |
+> | **A un subtítulo** | `Nombre de la nota#Subtítulo` | `[[Zettelkasten#Tipos de Notas]]` | Te lleva directamente a una sección específica dentro de una nota. |
+> | **A un bloque** | `Nombre de la nota#^ID del bloque` | `[[Zettelkasten#^ID12345]]` | Enlace a un párrafo o línea de texto específica, perfecto para citas. |
+> | **Al crear la nota** | `[[plantilla-nueva-nota]]` | `Guía de Plugins` | Si la nota no existe, Obsidian te ofrece crearla al hacer clic. |
 >
 > > [!warning] ⚠️ **Atajos Rápidos**
 > > - Escribe `[[` para abrir el menú de autocompletar.

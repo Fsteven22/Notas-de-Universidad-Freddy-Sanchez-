@@ -46,14 +46,14 @@
 > 
 > |Elemento|Sintaxis|Descripción|
 > |---|---|---|
-> |**Enlace Interno**|`[[Título de la nota]]`|Crea un enlace a otra nota dentro de tu vault.|
-> |**Enlaces a Encabezados**|`[[Nota#Encabezado]]`|Te lleva directamente a una sección específica de una nota.|
-> |**Referencias**|`[[Nota^ID_del_Bloque]]`|Te permite enlazar a un párrafo o un bloque de texto concreto.|
+> |**Enlace Interno**|`Título de la nota`|Crea un enlace a otra nota dentro de tu vault.|
+> |**Enlaces a Encabezados**|`Nota#Encabezado`|Te lleva directamente a una sección específica de una nota.|
+> |**Referencias**|`Nota^ID_del_Bloque`|Te permite enlazar a un párrafo o un bloque de texto concreto.|
 > 
 > > [!example]- **Ejemplo Práctico de Uso**
 > > **Objetivo:** Conectar tus notas sobre "Automatización" y "Python".
 > >
-> > 1.  En tu nota de "Python", puedes escribir: `El lenguaje Python es ideal para la [[Automatización]] de tareas.`
+> > 1.  En tu nota de "Python", puedes escribir: `El lenguaje Python es ideal para la Automatización de tareas.`
 > > 2.  Al hacer clic en "Automatización", irás a la nota correspondiente.
 > > 3.  En la nota de "Automatización", en el panel de enlaces entrantes, verás una referencia a la nota de "Python". Esto crea una conexión bidireccional.
 >
