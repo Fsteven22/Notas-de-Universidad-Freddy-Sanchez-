@@ -140,7 +140,7 @@ py pdf_a_nota_vault.py "material.pdf" \
   --tags "materia, unidad1" --dg-publish false --aplicar
 ```
 
-Qué hace, en orden: extrae el texto (OCR automático si el PDF es escaneado), saca las imágenes raster de cada página a `Universidad/Figuras/`, arma la nota con `dg-publish` y **una sola** línea `tags:`, baja un nivel los encabezados del PDF para que la nota tenga un solo H1, y coloca las figuras de cada página con embeds `![[...]]` relativos a la nota.
+Qué hace, en orden: extrae el texto (OCR automático si el PDF es escaneado), saca las imágenes raster de cada página a `Universidad/Figuras/`, arma la nota con `dg-publish` y **una sola** línea `tags:`, baja un nivel los encabezados del PDF para que la nota tenga un solo H1, y coloca las figuras de cada página con embeds de Obsidian (`!` + wikilink) relativos a la nota.
 
 Reglas de seguridad: **dry-run por defecto** (sin `--aplicar` solo muestra el plan), no sobrescribe una nota existente salvo `--forzar`, y al terminar corre `verificar_nota.py` sobre la nota creada. Si el PDF está fuera del árbol del vault, el enlace a la fuente cae a la ruta absoluta en vez de un `../` infinito.
 

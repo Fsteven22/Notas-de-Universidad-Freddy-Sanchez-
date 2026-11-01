@@ -50,7 +50,7 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `mdlib.py` | (lib) | walk_notes/load/save/report/callout — utilidades compartidas. |
 | `qa_all.py` | (entry) | Punto de entrada unico: ejecuta los 4 QA de arriba en orden y agrega codigos de salida. |
 | `qa_assets_huerfanos.py` | (base) | Assets del vault (SVG/PNG/PDF/…) que ninguna nota publica referencia. Identifica material huerfano que ocupa cuota. |
-| `qa_resolucion_diagramas.py` | (base) | Embeds de diagrama/asset (`![[Diagramas/…]]`) que no resuelven a un archivo real. |
+| `qa_resolucion_diagramas.py` | (base) | Embeds de diagrama/asset (wikilink con `!` adelante, ej. `Diagramas/archivo.svg`) que no resuelve a un archivo real. |
 | `qa_fugas_copyright.py` | (base) | Archivos listados en `_no-publicar.txt` (o variantes `_OCR`) que aparecen en `site/public/assets/`. Red de seguridad contra fugas de copyright. |
 | `qa_svg_titulo.py` | (base) | SVGs con titulos placeholder genericos (`flowchartTitleText`) que nunca se les asigno uno real. |
 | `qa_omitidas.py` | (base) | Notas que el sitio NO publica por el gate silencioso de frontmatter: sin `dg-publish: true`, sin frontmatter o con BOM UTF-8 al inicio (rompe el parseo). Agrupa por semestre/materia. `--estricto` → exit 1 si hay omitidas (CI). |

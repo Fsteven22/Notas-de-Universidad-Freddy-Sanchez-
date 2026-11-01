@@ -98,7 +98,7 @@ py "..\Mantenimiento\qa_pdfs_duplicados.py" --scope "<subcarpeta>"           # P
 py "..\Mantenimiento\pdf_a_markdown_lote.py" "<carpeta de PDFs>" -o "<salida>" # PDF → Markdown (PyMuPDF)
 ```
 
-`qa_links.py` y `fix_links.py` normalizan los alias con pipe escapado (`[[nota\|alias]]`) para no reportarlos como rotos. `pdf_a_markdown_lote.py` usa PyMuPDF (sin OCR): los PDFs escaneados salen vacíos y hay que pasarlos por `pdf_ocr_a_markdown.py`.
+`qa_links.py` y `fix_links.py` normalizan los alias con pipe escapado para no reportarlos como rotos. `pdf_a_markdown_lote.py` usa PyMuPDF (sin OCR): los PDFs escaneados salen vacíos y hay que pasarlos por `pdf_ocr_a_markdown.py`.
 
 ## Diagramas mermaid → SVG (receta)
 
@@ -132,7 +132,7 @@ Guía completa con rutas de texto/OCR, flujo PDF → nota del vault, troubleshoo
 
 ## PDF → nota del vault (`pdf_a_nota_vault.py`)
 
-Convierte un PDF en una nota de Obsidian lista: frontmatter (`dg-publish` + **una sola** línea `tags:`), callout de fuente, encabezados del PDF bajada un nivel (un solo H1) y las imágenes raster de cada página extraídas a `Universidad/Figuras/` con embeds `![[...]]` relativos a la nota.
+Convierte un PDF en una nota de Obsidian lista: frontmatter (`dg-publish` + **una sola** línea `tags:`), callout de fuente, encabezados del PDF bajada un nivel (un solo H1) y las imágenes raster de cada página extraídas a `Universidad/Figuras/` con embeds de Obsidian (`!` + wikilink) relativos a la nota.
 
 ```bash
 py pdf_a_nota_vault.py "material.pdf" --nota "Universidad/3er Semestre/Materia/Unidad 1 - X/material.md" --tags "materia, unidad1" --aplicar
