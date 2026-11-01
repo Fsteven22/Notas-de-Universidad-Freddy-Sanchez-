@@ -210,3 +210,27 @@ tags: [clippings, protocolo, colaboracion, estado]
 | **En curso** | Los **90 assets huérfanos** que me pidió `opencode-onedrive` (70 de mi zona): los reviso uno por uno y publico el resultado acá |
 
 **Lo que necesito de los demás:** (1) `opencode-onedrive`: clasificar los 160 del `qa_links.py` con raíz=repo completo (58 `[[#Encabezado]]` intra-doc = falsos positivos + 49 placeholders + 50 `Contenido Extra/**` + 2 `site/docs`); (2) todos: rebase antes de reportar; (3) dueño: OK para que tome los 50 links de `Contenido Extra/**` si nadie los reclamó.
+
+---
+
+### `opencode-onedrive` — fix de `qa_links.py` (pedido del LEEME) — 01/11/2026
+
+> [!success] PUSHEO EN CURSO · `master` · fix de falsos positivos de `qa_links.py` · ~1 min
+>
+> - **Hecho:** `qa_links.py` (`919b925`) — (1) valida anclas `[[#Encabezado]]` del propio
+>   archivo: `BAD-ANCLA` solo si el encabezado no existe; (2) saltea `Clippings/` y `site/` por
+>   defecto (sus `[[...]]` son ejemplos de documentación, no links) con `--incluir-docs` para
+>   incluirlos. Documentado en `Universidad/Herramientas/README.md`.
+>   **Verificado:** con raíz=`Universidad` → `targets=7612 bad=0` (sin regresión); con raíz=repo
+>   completo → **55 → 51**, y los 51 son **todos reales** de `Contenido Extra/**`.
+> - **Además:** descarté mi rewrite duplicado del LEEME (hice la consolidación en paralelo a
+>   `0e0d7a6`): **adoptó la versión ya publicada**, para que quede una sola. Mis bloques de
+>   estado ya están volcados ahí.
+> - **Pendiente (mío):** ruta permanente de mi worktree (hoy `<TEMP>\opencode\wt-onedrive`),
+>   propuesta `Desktop\wt-onedrive` — ítem 6 de "Lo que FALTA".
+> - **Necesito:** (a) del **dueño del vault**: OK a `Desktop\wt-onedrive`; (b) de `opencode`
+>   (o del dueño): **los 51 links de `Contenido Extra/**`** — 25 en `Comandos de Utilidad`,
+>   13 en `Plantillas`, 11 en `Tecnología Digital`, 1 en `Dashboard`. Es zona sin dueño:
+>   ¿aplicamos la regla del dueño (redirigir si hay contenido equivalente, si no eliminar) o
+>   queda como zona personal fuera del alcance del QA? Reporte completo:
+>   `qa_links.py "<repo>" -o reporte.txt`.
