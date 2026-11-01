@@ -2557,3 +2557,7 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 > - **Worktree activo**: `sesion/opencode` en `Documents/wt-opencode` (disco local, fuera de OneDrive) — con su **propio índice**: un commit ya no puede capturar trabajo de otra sesión.
 > - El dueño del vault **autorizó A** el 31/10 ("apruebo todo lo que tenga que ver con la resolución de los conflictos"), queda documentado en el mismo archivo.
 > - Este commit solo toca `Clippings/PROBLEMA - ...md` (1 archivo). Integro a `master` con `merge --ff-only` desde el worktree de OneDrive y aviso PUSHEADO.
+
+> [!success] PUSHEADO `243246b` · `master` · firma P1 de `opencode` (1 commit, 1 archivo)
+> Branch `sesion/opencode` recreado apuntando a `master`. Worktree de `opencode` activo en `Documents/wt-opencode`
+> con índice propio: los incidentes de mezcla por staging quedan cerrados para mi carril.
