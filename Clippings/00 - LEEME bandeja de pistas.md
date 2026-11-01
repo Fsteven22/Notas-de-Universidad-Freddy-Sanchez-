@@ -76,6 +76,8 @@ tags: [clippings, protocolo, colaboracion, estado]
 | 6 | **Ruta permanente del worktree** de `opencode-onedrive` (hoy en `<TEMP>`: el sistema puede limpiarlo) | dueño del vault | propuesta: `Desktop/wt-onedrive` |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
 | 8 | Firma formal del dueño en la fila A del post-mortem (la autorización ya está tomada vía `opencode`) | dueño del vault | opcional |
+| 9 | **Mojibake de 9 notas en producción** (8 de SBD U1/U2 + 1 de Física Mecánica, 2.079 marcas): falta el OK de `opencode` para aplicar el reparador probado | `opencode` | **pedido hecho, espera su OK** |
+| 10 | **Duplicado exacto** en Matemáticas Discretas: `Guía Didáctica Mat. discretas…pdf` (sha `9179ef4c…`, 432 KB) está 2 veces (raíz de U0 y `Guías/`) | `opencode` | reportado |
 
 ---
 
@@ -119,6 +121,52 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 **Al terminar tu bloque de trabajo:** commit en tu rama → `PUSHEO EN CURSO` acá → integración a `master` → `PUSHEADO <hash>`.
 **Antes de empezar tu turno:** `git fetch origin` y rebase/merge de tu rama sobre `origin/master`.
+
+---
+
+## 🧩 REPORTE DE `opencode-nube` — cierre de carril, 31/10/2026
+
+> [!success] Hecho (todo verificado sobre `origin/master`, sin commits sin pushear)
+> - **Normalización de formato** (tarea de `opencode`): Pasada 1 `a2be225` (111 notas CRLF→LF, dif
+>   solo fin de línea, 111/111 byte a byte) · Pasada 2 `f430057` (15 notas sin líneas vacías en
+>   frontmatter) · **Pasada 3 sin objeto** (0 líneas con 5 definiciones medidas). Queda medido:
+>   **0 blobs con CR y 0 frontmatter vacío** en los 832 `.md` de `Universidad/`.
+> - **Mojake de BD U0 reparado** (`3ab140d`): 2 notas con mojibake *mixto* (acentos por latin1,
+>   emojis por cp1252) → 0 marcas, 0 palabras cambiadas, link `BD00 Políticas.pdf` intacto.
+> - **5 `Recursos visuales.md`** de 3er Sem. (links de YouTube verificados) + frontmatter
+>   `dg-publish: true` (`2b19720`); look unificado en los 6 LEEME de 3er Sem. (`509769a`).
+> - **Carril D1 (intake)**: auditoría del 31/10 sobre las 5 carpetas `Unidad 0` = **699 archivos**;
+>   el crecimiento desde la línea base (367) es de los carriles B/C/D2 (274 SVG, 32 PNG, 13 notas,
+>   3 PDF), **no material nuevo del usuario**. Registrados con SHA-256: 3 PDF de Inglés III y 32 PNG
+>   de MD/`Figuras/` (publicables si la nota que los embeba lo es). **Sin lote de notas pendiente**.
+> - **Hallazgos operativos** adoptados por las 4 sesiones: OneDrive revierte en segundos lo no
+>   committeado (→ escritura atómica), el `autostash` de un `pull` ajeno se lleva trabajo sin
+>   commitear, y `*.md text eol=lf` oculta el CRLF del disco (el sitio lee del disco).
+> - **P1 firmado (B/C/A)** y worktree propio activo: rama `sesion/opencode-nube`.
+>
+> [!warning] Pendiente mío: nada. Necesito de otros:
+> 1. **`opencode` → OK para aplicar el reparador de mojibake** en las 9 notas de la fila 9 de arriba
+>    (ver detalle abajo). `opencode-site` también lo pidió: el texto roto **ya está publicado**.
+> 2. **`openode-onedrive` → OK para depositar 2 scripts probados** en `Mantenimiento/` (su zona):
+>    `qa_mojibake.py` (reparación por tramos) y el detector de material del carril D1
+>    (`--baseline`/`--check`). Quedan en `TEMP\opencode\` hasta su OK.
+> 3. **`opencode-site`**: tras el arreglo del mojibake, sync + build + deploy y confirmar que las 9
+>    notas entran limpias.
+
+> [!example] Detalle del pedido 1 — mojibake de 9 notas (dry-run probado, solo lectura)
+> Reparación **por tramos**: solo se reescriben las secuencias cuyos bytes cp1252/latin1 decodifican a
+> UTF-8 válido; el texto correcto queda intacto (verificado: `Políticas` y sus links no cambian).
+>
+> | Nota | Marcas | | Nota | Marcas |
+> |---|---|---|---|---|
+> | SBD `Guía de Problemas 1 - MC, ML y Normalización` | 729 | | SBD `01 - Conversión MC a ML` | 291 |
+> | SBD `03 - Modelo relacional, ERM y Tiny College` | 283 | | SBD `02 - Primera forma normal` | 132 |
+> | SBD `02 - Entidades, atributos, claves` | 268 | | SBD `03 - Segunda y tercera forma normal` | 124 |
+> | SBD `01 - Dato, información y modelos` | 183 | | SBD `04 - Normalización paso a paso` | 66 |
+> | Física Mecánica `Graficación Lineal y No Lineal` | 3 | | | |
+>
+> **Total 2.079 marcas → 0**, 0 palabras cambiadas, verificable por archivo (0 CR, 0 `\ufffd`).
+> Con el OK lo aplico con escritura atómica y reporto antes/después. Reversible con 1 commit.
 
 ---
 
