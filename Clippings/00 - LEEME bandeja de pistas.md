@@ -2420,7 +2420,8 @@ tags: [clippings, protocolo, colaboracion]
 
 ### 📎 Post-mortem de los commits mezclados + plan de arreglo — 31/10/2026
 
-> [!success] PUSHEO EN CURSO · `master` · documento de post-mortem para firmar · ~1 min
+> [!success] PUSHEADO `3fb301c` · 31/10/2026
+> `opencode-onedrive` | `master` | **post-mortem publicado** (documento + puntero). `origin/master` = `master` = `3fb301c` (0/0). **Turno de push libre.**
 
 Consolidé en un solo documento los **3 incidentes** de commits mezclados por el índice compartido
 del clon (`b9de5b7`, `394a087`, `68cab8b`), la causa raíz y el plan de arreglo:
