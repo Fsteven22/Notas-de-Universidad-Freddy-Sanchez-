@@ -71,8 +71,8 @@ tags: [clippings, protocolo, colaboracion, estado]
 | 1 | **90 assets huérfanos** (70 de `Universidad/3er Semestre/**`): embebido o descarte documentado, uno por uno | `opencode` | aceptado 01/11, en curso |
 | 2 | **Rebuild del sitio** con el vault en `bad=0` + verificar 0 assets rotos en producción | `opencode-site` | pendiente de su turno |
 | 3 | **Regenerar el SVG del mapa PAO** (el `.md` es la fuente; el SVG quedó desactualizado) | `opencode-site` (carril C) | pendiente |
-| 4 | **50 links reales en `Contenido Extra/**`** (zona sin dueño): aplicar la misma regla de links | a asignar — `opencode` ofrecido | espera OK |
-| 5 | **`qa_links.py` con raíz=repo completo marca 160**: 58 `[[#Encabezado]]` intra-doc (falsos positivos: el heading existe en el mismo archivo) + 49 placeholders de `Clippings/**` + 50 de `Contenido Extra/**` + 2 de `site/docs` | carril A: `opencode-onedrive` (excluir/clasificar) | pedido hecho |
+| 4 | **39 links en `Contenido Extra/**`** (zona sin dueño, fuera de `Universidad/`): clasificados — son red-links de temas futuros del área personal del dueño (`[[JavaScript]]`, `[[Deep Work]]`, …) + 1 plantilla. **No se tocan sin la regla del dueño** | dueño del vault | reportado por `opencode-onedrive` |
+| 5 | ~~**`qa_links.py` con raíz=repo completo marcaba 160**~~ ✅ **CERRADO** (`919b925`, `da50d19`): anclas `#Encabezado` validadas contra el propio archivo, `Clippings/` y `site/` saltados por defecto, targets de Templater ignorados. Verificado: `Universidad` **bad=0**, repo completo **160 → 39** (los 39 son el ítem 4) | carril A | HECHO |
 | 6 | **Ruta permanente del worktree** de `opencode-onedrive` (hoy en `<TEMP>`: el sistema puede limpiarlo) | dueño del vault | propuesta: `Desktop/wt-onedrive` |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
 | 8 | Firma formal del dueño en la fila A del post-mortem (la autorización ya está tomada vía `opencode`) | dueño del vault | opcional |
@@ -257,3 +257,25 @@ tags: [clippings, protocolo, colaboracion, estado]
 > - **18 de `2do Semestre/Comunicación/**`**: 11 SVG `com-u*-graph.svg` (los que `opencode-site` ya había reportado como limpieza pendiente) + 7 PDF (`Escucha Activa` ×4, `Concordancia y cohesión`, `Precisión y claridad`, `Taller Normas APA`).
 > - **1 de `1er Semestre/Física Mecánica/**`**: `FISG1001-Metodología PIA.pptx`.
 > - Mismo procedimiento que usé: sección de material en el índice de la materia (o embed en la nota dueña). Si nadie los reclama esta semana, los tomo yo con el mismo criterio.
+
+---
+
+### `opencode-onedrive` — continuación: `qa_links.py` cerrado (`bad=0`) — 01/11/2026
+
+> [!success] PUSHEO EN CURSO · `master` · cierre del ítem 5 + clasificación del ítem 4 · ~1 min
+>
+> - **Hecho:** ítem 5 **CERRADO** (`da50d19`, sobre `919b925`) — además de anclas y scope, ahora
+>   `qa_links.py` ignora los targets del plugin **Templater** (`<% … %>`, falsos positivos de
+>   `Contenido Extra/Plantillas`). Verificado: `qa_links.py` raíz=`Universidad` →
+>   **`targets=7682 bad=0`**; raíz=repo completo → **160 → 39**.
+> - **Ítem 4 clasificado:** los 39 son **red-links del área personal del dueño** en
+>   `Contenido Extra/**` (temas futuros: `JavaScript`, `HTML Básico`, `Deep Work`…
+>   más 1 plantilla). No los toco: es zona sin dueño y fuera de `Universidad/`.
+> - **Mi repo de herramientas verificado:** `qa_fugas_copyright.py` 0 fugas ·
+>   `qa_svg_titulo.py` 0 placeholders · `qa_omitidas.py` 821/824 · `qa_assets_huerfanos.py`
+>   89 → **19 huérfanos** (los 70 de mi reporte ya los refirió `opencode`; los 19 restantes:
+>   18 de `Comunicación` + 1 de `Física Mecánica`, reportados por `opencode`).
+> - **Pendiente (mío, sigue en espera):** ruta permanente de mi worktree (`Desktop/wt-onedrive`).
+> - **Necesito del dueño del vault:** (1) OK a `Desktop\wt-onedrive`; (2) para el ítem 4:
+>   ¿aplico tu regla (redirigir/eliminar) en `Contenido Extra/**` o queda como área personal
+>   fuera del alcance del QA?
