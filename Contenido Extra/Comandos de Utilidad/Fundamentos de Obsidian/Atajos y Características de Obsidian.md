@@ -8,7 +8,7 @@
 > Obsidian es un gestor de conocimiento personal que trabaja con archivos de texto plano local. Sus características principales son:
 >
 > * **Notas en Markdown**: Todas tus notas son archivos `.md` fáciles de leer.
-> * **Enlaces Internos (`[[...]]`)**: La base para conectar ideas y formar tu "red de conocimiento".
+> * **Enlaces Internos (`...`)**: La base para conectar ideas y formar tu "red de conocimiento".
 > * **Gráfico de Notas**: Una representación visual de todas las conexiones entre tus notas.
 
 ---
@@ -44,7 +44,7 @@
 >
 > ### 🔗 **Enlaces y el Gráfico de Conocimiento**
 >
-> * **Enlaces Internos**: Usa `[[Nombre de la nota]]` para crear un enlace a otra nota en tu vault, construyendo así tu red.
+> * **Enlaces Internos**: Usa `Nombre de la nota` para crear un enlace a otra nota en tu vault, construyendo así tu red.
 > * **Gráfico de Notas**: Esta función visualiza todas las conexiones entre tus notas, lo que te permite descubrir relaciones inesperadas y fortalece tu comprensión de los temas.
 >
 > ### 🧩 **Vistas y Paneles**

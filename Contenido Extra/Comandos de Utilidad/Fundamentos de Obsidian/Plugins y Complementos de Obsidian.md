@@ -225,8 +225,8 @@
 > [!success]- **Cómo Configurar y Usar**
 >
 > 1.  **Activación**: Asegúrate de que el plugin esté activado en la configuración.
-> 2.  **Uso Básico**: Escribe el texto de una fecha de forma natural, por ejemplo: `[[tomorrow]]`.
-> 3.  **Conversión**: Cuando guardas o sales de la nota, el plugin convierte automáticamente el texto en el formato de fecha que tengas configurado. Si tienes la configuración estándar, `[[tomorrow]]` se convertirá en `[[2025-08-12]]`.
+> 2.  **Uso Básico**: Escribe el texto de una fecha de forma natural, por ejemplo: `tomorrow`.
+> 3.  **Conversión**: Cuando guardas o sales de la nota, el plugin convierte automáticamente el texto en el formato de fecha que tengas configurado. Si tienes la configuración estándar, `tomorrow` se convertirá en `2025-08-12`.
 >
 
 > [!example]- **Ejemplo Práctico de Uso**
@@ -236,11 +236,11 @@
 >
 > ```markdown
 > # Tareas importantes
-> - [ ] Terminar de escribir el artículo [[next friday]]
-> - [ ] Empezar a planificar el próximo proyecto [[in one month]]
+> - [ ] Terminar de escribir el artículo next friday
+> - [ ] Empezar a planificar el próximo proyecto in one month
 > ```
 >
-> > - El plugin convertirá `[[next friday]]` y `[[in one month]]` en enlaces con el formato de fecha correspondiente (ej. `[[2025-08-15]]` y `[[2025-09-11]]`), lo que te permitirá hacer clic y saltar directamente a la nota de ese día.
+> > - El plugin convertirá `next friday` y `in one month` en enlaces con el formato de fecha correspondiente (ej. `2025-08-15` y `2025-09-11`), lo que te permitirá hacer clic y saltar directamente a la nota de ese día.
 
 ---
 
@@ -286,7 +286,7 @@
 >
 > 4.  Ve a la configuración del plugin **Periodic Notes**.
 > 5.  En la sección de "Weekly Notes", activa la opción y configura la ruta y el formato.
-> 6.  En una nota, usa el siguiente código para crear un enlace a tu nota semanal: `[[{{date:YYYY-MM}}-W{{date:ww}}]]`. Esto creará un enlace a una nota como `2024-08-W32`.
+> 6.  En una nota, usa el siguiente código para crear un enlace a tu nota semanal: `{{date:YYYY-MM}}-W{{date:ww}}`. Esto creará un enlace a una nota como `2024-08-W32`.
 > 7.  Al hacer clic, se abrirá una nota semanal donde puedes hacer un resumen de tus logros, desafíos y planes para la siguiente semana.
 
 ---
@@ -546,7 +546,7 @@
 
 ### **Text expand**
 > [!info]- **Descripción y Utilidad**
-> **Text expand** es un plugin muy sencillo y práctico que te permite crear abreviaciones de texto que se expanden automáticamente. Por ejemplo, puedes configurar que al escribir `[[dt` se expanda a `[[{{date}}]]`. Es ideal para insertar frases, nombres, fechas o cualquier fragmento de texto que uses con frecuencia. Esto te ayuda a acelerar la escritura y a mantener la consistencia en tus notas.
+> **Text expand** es un plugin muy sencillo y práctico que te permite crear abreviaciones de texto que se expanden automáticamente. Por ejemplo, puedes configurar que al escribir `dt` se expanda a `[[{{date}}`. Es ideal para insertar frases, nombres, fechas o cualquier fragmento de texto que uses con frecuencia. Esto te ayuda a acelerar la escritura y a mantener la consistencia en tus notas.
 >
 
 > [!success]- **Cómo Configurar y Usar**

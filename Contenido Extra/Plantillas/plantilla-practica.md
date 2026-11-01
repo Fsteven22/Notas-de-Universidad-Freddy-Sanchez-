@@ -43,7 +43,7 @@ tags: [practica, laboratorio, <% tp.system.prompt("Código materia (ej: EYAG1037
 
 ## 📎 Guía oficial (Garden)
 
-![[<% tp.system.prompt("Nombre exacto del PDF guía") %>]]
+!<% tp.system.prompt("Nombre exacto del PDF guía") %>
 
 ---
 
@@ -59,9 +59,9 @@ tags: [practica, laboratorio, <% tp.system.prompt("Código materia (ej: EYAG1037
 
 > [!quote] 🔗 Conexiones
 >
-> - Teoría: [[<% tp.system.prompt("Nota teórica 1") %>]]
-> - Previa: [[<% tp.system.prompt("Práctica previa (vacío si es la 1)") %>]]
-> - Siguiente: [[<% tp.system.prompt("Práctica siguiente (vacío si es la última)") %>]]
+> - Teoría: <% tp.system.prompt("Nota teórica 1") %>
+> - Previa: <% tp.system.prompt("Práctica previa (vacío si es la 1)") %>
+> - Siguiente: <% tp.system.prompt("Práctica siguiente (vacío si es la última)") %>
 
 ---
 
