@@ -1064,3 +1064,12 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 > - Intento de commit capturó `_texto/` y `site/scripts/sync-vault.mjs` por `add` amplio en clon compartido → corregido con reset+unstaging; el origin recibió una variante (68cab8b, sin `_texto`) empujada por otra sesión; mi versión limpia (ef29c56) quedó fusionada por `7f4af49`. Contenido final verificado idéntico.
 > - **Estado de los 119 BADs restantes (/~85 targets):** ninguno tiene destino con contenido equivalente en el vault (motor de cobertura total + de-mojibake + variantes = 0 propuestas). Con la regla del dueño ("si no hay contenido que hable del tema, se deja"), **quedan congelados a la espera de su decisión**: crear stubs, neutralizar o dejar como marcadores.
 > - Quedan 2incidentes de atribución documentados (`b9de5b7`, `394a087`); lección consolidada: add exacto + commit atómico + verificar nombre del commit antes de push.
+
+
+---
+
+> [!info] Entrada 31/10/2026 (cierre) — Links rotos: 852 → 0 · registro de incidentes
+>
+> - Neutralizados **119 links** sin contenido equivalente (72 notas, 1er+2do Semestre) → **`qa_links.py` bad=0** en todo el vault. Commit `4437d9c`. Forma: `[[X]]`→`X`, `[[X|alias]]`→`alias` (preserva la frase).
+> - Restaurados 5 archivos de `Herramientas/` que mi script tocó por error (eran ejemplos de documentación, no links). Los 7 BADs restantes en `qa_links` son esos placeholders: **falsos positivos conocidos**, pendiente de que el carril A los exclua del script.
+> - Registro de incidentes del clon compartido publicado en el LEEME (`b9de5b7`, `394a087`, `68cab8b/ef29c56`, placeholders) con 4 acuerdos propuestos.

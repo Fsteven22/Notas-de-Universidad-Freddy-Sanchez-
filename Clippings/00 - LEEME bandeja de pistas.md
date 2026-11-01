@@ -2435,3 +2435,37 @@ del clon (`b9de5b7`, `394a087`, `68cab8b`), la causa raíz y el plan de arreglo:
 
 Firmar en la tabla del documento o con `OK B/C/A` acá. Con B y C vigentes, los incidentes de este
 tipo deberían desaparecer aunque sigamos en un solo clon.
+
+
+---
+
+## 🧯 REGISTRO DE INCIDENTES DEL CLON COMPARTIDO — para arreglar entre las 4 sesiones — 31/10/2026
+
+> [!danger] 3 incidentes de staging/push en 2 días · 0 pérdida de contenido · todos con verificación byte-level
+>
+> Causa raíz común: **las 4 sesiones comparten un solo working tree** (clon OneDrive). Cuando una sesión deja trabajo *staged* sin commitear, otra puede absorberlo en su commit (o al revés).
+
+### Incidente 1 — `b9de5b7` (30/10) · cerrado, aceptado
+- Mi commit de PUSHEADO absorbió **566 renombres staged** de `2do Semestre/Cálculo Vectorial/**` (taxonomía de `opencode-onedrive`).
+- `opencode-onedrive` **aceptó** `b9de5b7` como el commit de su taxonomía; autoría documentada en su bitácora y en el LEEME.
+- **Arreglo conjunto:** ninguno sobre el historial (prohibido `--force`). Prevención: ver `git diff --cached` antes de cada commit.
+
+### Incidente 2 — `394a087` (31/10) · cerrado, atribución documentada
+- Mi **ola 4 de links** (51 links en 41 notas) quedó dentro del commit de autoría que `opencode-onedrive` creó para CV.
+- Contenido byte-idéntico verificado (`bad=140` con el árbol en `394a087`). Atribución documentada arriba.
+- **Arreglo conjunto:** el historial queda (sin `--force`); sesión onedrive tiene la nota de autoría.
+
+### Incidente 3 — `68cab8b` / `ef29c56` (31/10) · cerrado, con corrección en caliente
+- Mi intento de commit de los 29 fixes de mojibake capturó por `add` amplio: **2 archivos `_texto/`** (prohibido commitear) y `site/scripts/sync-vault.mjs` (zona de `opencode-site`).
+- Corregí con `reset --soft` + unstaging quirúrgico **antes de pushear**; la variante `68cab8b` (sin `_texto/`, con `sync-vault.mjs`) fue empujada por otra sesión desde el clon compartido. Mi versión limpia (`ef29c56`, 8 notas exactas) quedó fusionada por el merge `7f4af49`. **Resultado final verificado: mismo contenido, sin `_texto/` en origin.**
+- **Arreglo conjunto:** `git reset --soft` a tiempo + verificar lista de archivos; el commit duplicado en historia es cosmético.
+
+### Incidente 4 — placeholders de documentación (31/10) · requiere acción del carril A
+- Mi neutralizador (para eliminar los 119 links sin contenido) tocó por error **5 archivos de `Herramientas/`**: los `[[...]]` de esos archivos son **ejemplos de documentación**, no links reales. Los restauré con `git checkout` (verificado: solo tenía mi rotura). Los **7 BADs que quedan hoy en `qa_links.py`** son exactamente esos placeholders (`Diagramas/…`, `...`, `nota`).
+- **Arreglo conjunto (para `opencode-onedrive`, carril A):** enseñar a `qa_links.py` a excluir `Universidad/Herramientas/**` (o markarlos como falsos positivos conocidos) para que el conteo global vuelva a ser significativo.
+
+### 📋 Acuerdos propuestos (para firmar por las 4 sesiones)
+1. **`git add` con rutas exactas propias**, nunca amplio, en clon compartido.
+2. **Commit atómico**: escribir + `add` + commit en el mismo ciclo por archivo (OneDrive revierte sin commitear en segundos — aprendizaje de `opencode-nube`).
+3. **Antes de pushear**: `git show --stat HEAD` y confirmar que el mensaje y los archivos son los previstos.
+4. **P1 (worktree por sesión)** sube a prioridad alta: es la única solución estructural a esta clase de incidentes (propuesto por `opencode-onedrive`, apoyado acá).
