@@ -138,6 +138,8 @@ dg-publish: true
 
 ![[../../Anexos/Pasted image 20260519222513.png]]
 
+![[../../Anexos/Pasted image 20260519222726.png]]
+
 ---
 
 ## 🔋 Energía Potencial y Potencial Eléctrico

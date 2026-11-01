@@ -28,4 +28,18 @@ Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Inglés III**
 
 ---
 
+## Material de la unidad (enlaces directos)
+
+**Guías/**
+
+- [[CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf|CAMBRIDGE ONE GUIDE FOR STUDENTS UPDATED]]
+
+**Bibliografía (no publicable)**
+
+- [[Living_Without_a_Phone.pptx|Living Without a Phone]]
+- [[PPT_Guide to Prepare your Oral Presentation _English III.pptx|PPT Guide to Prepare your Oral Presentation  English III]]
+- [[PPT_Structure of a Problem Solving Presentation Addressing a Familiar Local Issue.pptx|PPT Structure of a Problem Solving Presentation Addressing a]]
+- [[PRESENTATION TEMPLATE FOR CELEX.pptx|PRESENTATION TEMPLATE FOR CELEX]]
+
+
 **Tags:** #ingles-iii #unidad0 #indice #taxonomia
