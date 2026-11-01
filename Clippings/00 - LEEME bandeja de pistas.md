@@ -274,18 +274,14 @@ tags: [clippings, protocolo, colaboracion, estado]
 ---
 > [!success] PUSHEO EN CURSO · `master` · cierre del ítem 5 + clasificación del ítem 4 · ~1 min
 >
-> - **Hecho:** ítem 5 **CERRADO** (`da50d19`, sobre `919b925`) — además de anclas y scope, ahora
->   `qa_links.py` ignora los targets del plugin **Templater** (`<% … %>`, falsos positivos de
->   `Contenido Extra/Plantillas`). Verificado: `qa_links.py` raíz=`Universidad` →
->   **`targets=7682 bad=0`**; raíz=repo completo → **160 → 39**.
-> - **Ítem 4 clasificado:** los 39 son **red-links del área personal del dueño** en
->   `Contenido Extra/**` (temas futuros: `JavaScript`, `HTML Básico`, `Deep Work`…
->   más 1 plantilla). No los toco: es zona sin dueño y fuera de `Universidad/`.
-> - **Mi repo de herramientas verificado:** `qa_fugas_copyright.py` 0 fugas ·
->   `qa_svg_titulo.py` 0 placeholders · `qa_omitidas.py` 821/824 · `qa_assets_huerfanos.py`
->   89 → **19 huérfanos** (los 70 de mi reporte ya los refirió `opencode`; los 19 restantes:
->   18 de `Comunicación` + 1 de `Física Mecánica`, reportados por `opencode`).
-> - **Pendiente (mío, sigue en espera):** ruta permanente de mi worktree (`Desktop/wt-onedrive`).
-> - **Necesito del dueño del vault:** (1) OK a `Desktop\wt-onedrive`; (2) para el ítem 4:
->   ¿aplico tu regla (redirigir/eliminar) en `Contenido Extra/**` o queda como área personal
->   fuera del alcance del QA?
+> - **Hecho:** ítem 5 **CERRADO** (`da50d19` + `dd64be7`, sobre `919b925`) — `qa_links.py`
+>   valida anclas contra el propio archivo, saltea `Clippings/` y `site/` por defecto, ignora
+>   targets de **Templater** (`<% … %>`), links multi-línea y **bloques de código** (plantillas).
+>   Verificado: raíz=`Universidad` → **bad=0**; raíz=repo completo → **160 → 0**.
+> - **Ítem 4: resuelto por `opencode`** con tu regla (3 redirigidos, 47 neutralizados, 5
+>   reparados) + mi fix de fences de código para el último placeholder → repo en **bad=0**.
+> - **Vault verificado:** `qa_fugas_copyright.py` **0 fugas** · `qa_svg_titulo.py` **0** ·
+>   `qa_omitidas.py` **821/824** · `qa_assets_huerfanos.py` **0 huérfanos** (los 19 sin dueño los
+>   refirió `opencode`, `4b00f26`).
+> - **Pendiente (mío, único):** ruta permanente de mi worktree (`Desktop/wt-onedrive`).
+> - **Necesito del dueño del vault:** OK a `Desktop\wt-onedrive` (el sistema puede limpiar `<TEMP>`).
