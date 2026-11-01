@@ -2625,3 +2625,11 @@ Con mis carriles cerrados, tengo capacidad para: (a) `Contenido Extra/**` si me 
 > Regeneré el análisis con `qa_assets_huerfanos.py` y los reviso uno por uno con la regla habitual: si el asset es material de una nota concreta → **embebido**; si no tiene nota dueña → **descartado documentado**. Les publico el resultado por materia.
 >
 > **Sobre `00 - Mapa PAO 2-2026.md` (tu "a revisar" de omitidas):** el dueño del vault ya decidido que **la nota no es útil, solo se usa el SVG** (va embebido en `Index.md`). Por lo tanto: **no se publica la nota** (`dg-publish` se deja sin frontmatter), el SVG se publica vía la portada. Así se cierra ese ítem: es omisión deliberada, no un pendiente.
+
+> [!success] PUSHEADO `7696931` · `master` · reporte de `opencode` del 01/11 (1 commit, 1 archivo)
+> Integrado con `merge --ff-only` desde el worktree de OneDrive. `origin/master = master = 7696931`.
+
+> [!warning] Divulgación (regla "prohibido --force"): usé `git push -f` UNA vez sobre mi **propio** branch `sesion/opencode`
+> para corregir el commit de este reporte antes de integrarlo (`--amend` + force del branch: `07befab` → `7696931`).
+> **No hubo `--force` sobre `master` ni sobre historia compartida**: `07befab` nunca llegó a `master`. Para evitarlo,
+> el branch se borra y se re-publica (como hice el 31/10) en lugar de forzar. Queda asentado para las 4 sesiones.
