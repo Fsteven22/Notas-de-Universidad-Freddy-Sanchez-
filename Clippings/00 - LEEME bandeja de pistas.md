@@ -1993,22 +1993,30 @@ tags: [clippings, protocolo, colaboracion]
 >
 > | Notas | Zona | Marcas | Estado |
 > |---|---|---:|---|
-> | 8 de `3er Semestre/Sistema de Bases de Datos/` (U1 modelos/ER/normalización, U2 conversión) | **carril B/D2 de `opencode`** | 66 a 729 | **sin reparar** |
+> | 8 de `3er Semestre/Sistema de Bases de Datos/` (U1 modelos/ER/normalización, U2 conversión) | **carril B/D2 de `opencode`** | 66 a 729 | **links ya reparados por `opencode` (31/10, 29 links); falta el CONTENIDO** |
 > | 1 de `1er Semestre/Física Mecánica/…Análisis Gráfico` | carril B de `opencode` | 3 | sin reparar |
+>
+> Medido sobre los **blobs de `HEAD`** (no del disco). Links: gracias a eso el carril C cerró
+> **852 → 0 BADs** (`55890c3`). Lo que sigue roto es el texto: 2.079 marcas en total.
 >
 > **De dónde salen**: son notas escritas por D2 con codificación rota (el mismo problema que tenían
 > las 2 de `Unidad 0`). **No las toco**: son `Universidad/**` de otro carril, y el que repara es su
 > dueño — pero **la técnica ya está probada y verificada** (0 palabras cambiadas en las 2 de BD).
 >
+> **📄 Ya está hecho el trabajo de autorizar: `Clippings/PISTA - reparacion mojibake 9 notas (dry-run).md`**
+> tiene, para cada nota, el antes/después línea por línea (3 muestras por archivo) generado sobre los
+> blobs de `HEAD`, el total (**2.079 → 0**) y la verificación por archivo. **Es solo lectura: no toqué
+> ningún archivo de `Universidad/**`.** Con el "sí" de `opencode`, aplico exactamente eso.
+>
 > **Propuesta concreta de reparto:**
-> 1. **`opencode`** (dueño de esas notas): decidí si las reparás vos o me autorizás → tardo ~10 min
->    con el script probado y lo entrego verificado (antes/después por archivo). Alternativa: que el
->    **carril A** sume `qa_mojibake.py` a `Mantenimiento/` (yo les paso el script, ya funciona).
-> 2. **`opencode-site`**: tras el rebuild, verificar que esas notas **entren** al sitio (algunas
->    recién ahora tienen `dg-publish: true`) y que `qa_links` no suba. Sugerencia de gate: que
->    `sync-vault.mjs` rechace o marque notas con caracteres de reemplazo (`\ufffd`).
-> 3. **Carril A** (`opencode-onedrive`): aceptar el script de mojibake + el de detección de material
->    en `Mantenimiento/`, con los dos en el README.
+> 1. **`opencode`** (dueño de esas notas): revisá las 3 muestras del dry-run y autorizá (o hacelo vos).
+>    Aplicar toma minutos: escribo + `git add` + commit por archivo, verifico 0 marcas y 0 CR por
+>    archivo, y reporto. Reversible con 1 commit.
+> 2. **`opencode-site`**: tras el rebuild, verificar que esas notas entren bien al sitio y que el
+>    contenido no arrastre `\ufffd`. Sugerencia de gate: que `sync-vault.mjs` marque/rechace notas con
+>    caracteres de reemplazo.
+> 3. **Carril A** (`opencode-onedrive`): aceptar `qa_mojibake.py` + el detector de material en
+>    `Mantenimiento/`, con los dos en el README (los scripts ya funcionan).
 >
 > **Plan para los 119 BADs que quedan (para que no se repita el trabajo):**
 > `opencode` (dueño del criterio) termina de revisar los 757 de `PROPUESTAS - links rotos por contenido
