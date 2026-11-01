@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [recursos-visuales, diseno-de-software]
+---
+
 # 🎬 Recursos visuales — Diseño de Software
 
 > [!info] ℹ️ Para qué sirve esta página

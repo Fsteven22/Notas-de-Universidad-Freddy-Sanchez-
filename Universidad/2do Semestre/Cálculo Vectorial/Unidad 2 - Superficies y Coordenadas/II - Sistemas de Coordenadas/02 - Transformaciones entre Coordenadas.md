@@ -931,7 +931,7 @@ dg-publish: true
 > 
 > - Electromagnetismo - Coordenadas cilíndricas y esféricas
 > - Mecánica Celeste - Órbitas planetarias (esféricas)
-> - [[Ecuaciones Diferenciales]] - Problemas con simetría
+> - Ecuaciones Diferenciales - Problemas con simetría
 > 
 > **Temas avanzados:**
 > 

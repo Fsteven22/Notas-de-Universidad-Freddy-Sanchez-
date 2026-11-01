@@ -318,8 +318,10 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | 6 | **Mover** `OneSyncFiles-backups/notas-20261024` (458 MB, copia del 24/10) a disco local | baja | **usuario** |
 > | 7 | **Fijar el vault personal** ("mantener siempre en este equipo") → `attrib +P -U` | baja | **usuario** |
 > | 8 | Verificar que el `.git/gc.pid` roto quedó resuelto (`.git` bajó de 1,50 GB a **658 MB** tras `git gc`) | baja | sesión |
-> | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). **Tracker ya creado** (`Clippings/INTAKE - material nuevo 3er Sem.md`) con la **línea base de los 367 archivos**; falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue | media | sesión |
-> | 10 | **Normalización (tarea de `opencode`, replanteada del LEEME):** **Pasada 1 CERRADA** — `a2be225`: 111 notas CRLF→LF, dif solo fin de línea verificado byte a byte, backup en TEMP, `qa_links` 854 BADs = baseline (0 regresiones). **Pasada 2 en curso** (anuncio `PUSHEO EN CURSO`): 15 notas de frontmatter + 1 residual CRCA; los "33" reportados eran 18 archivos con falsos positivo de CRCA. **Pasada 3 sin objeto** (0 líneas, 5 definiciones probadas) | alta | sesión |
+> | 9 | **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y dejar **una pista por lote** en `Clippings/` (checksum, duplicados, unidad, copyright → se ignora al publicar, publicable sí/no). **Tracker ya creado** (`Clippings/INTAKE - material nuevo 3er Sem.md`) con la **línea base de los 367 archivos**; falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue | media | sesión |**Normalización (tarea de `opencode`, replanteada del LEEME): CERRADA** — Pasada 1 `a2be225` (111 notas CRLF→LF, dif solo fin de línea, 111/111 byte a byte) · Pasada 2 `f430057` (15 notas, frontmatter) + `315b907` de `opencode-site` (16 notas `eol=lf`) · **Pasada 3 sin objeto** (0 líneas, 5 definiciones medidas). Verificado sobre `origin/master`: **0 CR / 0 frontmatter vacío** | alta | sesión |
+> | 10 | **Normalización (tarea de `opencode`, replanteada del LEEME): CERRADA** — Pasada 1 `a2be225` (111 notas CRLF→LF, dif solo fin de línea, 111/111 byte a byte) · Pasada 2 `f430057` (15 notas, frontmatter) + `315b907` de `opencode-site` (16 notas `eol=lf`) · **Pasada 3 sin objeto** (0 líneas, 5 definiciones medidas). Verificado sobre `origin/master`: **0 CR / 0 frontmatter vacío** | alta | sesión |
+> | 11 | **Carril D1 (mío): auditoría 31/10 cerrada** — snapshot de las 5 carpetas U0 (699 archivos, `Clippings/INTAKE - baseline 5 carpetas U0.csv`), detector funcionando (script en TEMP, ofrecido al carril A), +332 = carriles B/C/D2 (no material del usuario), registrados 3 PDF de Inglés III + 32 PNG de MD. Mojibake de BD U0 reparado (`3ab140d`) | media | sesión |
+> | 12 | **Mojibake del vault (coordinación abierta):** 9 notas sin reparar (8 de BD U1/U2 + 1 Física Mecánica, zona `opencode`). Técnica probada en las 2 de U0. Propuesta en el LEEME: las repara `opencode`, me autoriza a mí, o el carril A sume `qa_mojibake.py` | alta | sesiones |
 
 ### Próximos pasos
 > [!warning] ⏳ Próximos pasos
@@ -351,7 +353,7 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - **Taxonomía Unidad 0 en Cálculo Vectorial** ✅ (tarea asignada por `opencode` en el LEEME): `Unidad 0 - Guias y Ejercicios/` con las 8 subcarpetas estándar + `00 - Leeme Unidad 0.md`; `Diagramas/` (563 SVG) unido a `U0/Diagramas/`; 3 archivos de raíz a `Guías/` y `Material de clase/`. Puros renombres, links intactos (basename), `qa_links.py` 0 regresiones (852 BADs pre-existentes). **Nota:** quedó commiteado dentro de `b9de5b7` de `opencode` (mezcla de staging en el clon compartido, contenido byte-idéntico, autoría documentada en el LEEME y mi LOG).
 > - **Diagnóstico del ruido CRLF**: 82 `.md` con CRLF en el blob commiteado hacían fallar **todos** los merges (`Your local changes would be overwritten`) → normalizados solo en fin de línea (`a05dfa4`).
 > - **Coordinación**: protocolo de pushes, Acuerdos 1–4, cola de push con dueño, corrección de la tabla de zonas (4 sesiones), reglas de *commitear antes de que otro mergee* y de *worktree por sesión*.
-> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3), `b9de5b7` (taxonomía CV, mezcla de staging documentada) + merges.
+> - Commits: `374e833`, `5aded86`, `67ed5ac`, `462191b`, `6a41cf9`, `d45c240`, `a05dfa4`, `7013acf`, `9fbc2e8`, `bb1bc19`, `2b2dda7` (P8), `847a33a` (P4), `68960b5` (P8 remanente), `21cbe0c` (P6), `1233551` (P3), `b9de5b7` (taxonomía CV, mezcla de staging documentada), `394a087` (nota de autoría + 41 archivos ajenos arrastrados por el índice compartido, documentado en el LEEME) + merges.
 
 ### Qué falta
 > [!warning] ⏳ Qué falta
@@ -359,17 +361,16 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > | # | Qué | Prioridad | Decide |
 > |---|---|---|---|
 > | 1 | **P2**: lista negra (`_no-publicar.txt`) → **lista blanca** (`_publicar.txt`) o carpeta `Universidad/_privado/` | media | **usuario** |
-> | 2 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | baja | sesiones |
-> | 3 | **P7**: 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con la sesión del 3er Semestre) | baja | sesiones |
+> | 2 | **P1**: un `git worktree` por sesión como forma estándar de trabajar | media | sesiones (**sube de prioridad**: 2 incidentes de índice compartido, `b9de5b7` y `394a087`) |
 
 ### Próximos pasos
-> [!warning] ⏳ Qué falta (P8, P4, P6, P3 y taxonomía CV ya están hechos y pusheados)
+> [!warning] ⏳ Qué falta (P8, P4, P6, P3, taxonomía CV y P7 cerrados; EOL fix aplicado)
 >
 > 1. **P2** — esperando decisión del usuario (lista negra vs lista blanca vs `_privado/`).
-> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones); el incidente de `b9de5b7` (staging ajeno capturado por otro commit) es un argumento más a favor.
-> 3. **P7** — 32 PNG huérfanos de `Universidad/Figuras/` (coordinado con `opencode`, 3er Semestre).
+> 2. **P1** — worktree por sesión como estándar (coordinado entre las 4 sesiones).
+> 3. **Poda de mi LOG** (`LOG-opencode-onedrive.md`) aplicando la regla de `opencode-nube` — la hago yo, próxima tanda.
 > 4. Los 3 puntos de cuota de `opencode-nube` (vaciar papelera, mover backup de 458 MB, fijar carpeta) — esperando OK del usuario.
-> 5. Cerrar con `opencode-site` el rebuild del sitio tras la taxonomía (los 563 SVG siguen resolviendo por basename → sin cambios de rutas).
+> 5. Rebuild del sitio con `opencode-site` (ejercita el fix de EOL al leer en `sync-vault.mjs`).
 
 ---
 

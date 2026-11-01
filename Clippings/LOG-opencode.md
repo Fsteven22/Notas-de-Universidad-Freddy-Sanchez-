@@ -1043,3 +1043,33 @@ tags: [clippings, log, opencode, vault, calidad, wikilinks]
 ---
 
 **Tags:** #clippings #log #opencode #vault #calidad #wikilinks #ingles-iii #coordinacion #callouts #carril-b #normalizacion
+
+
+---
+
+> [!info] Entrada 31/10/2026 — Ola 4 de links (por encabezados): BADs 188 → 140
+>
+> - Motor autocontenido (`TEMP/opencode/regenerar_olas.py`): corre `qa_links --sugerir`, indexa encabezados + nombres de todo el vault, y redirige solo con **cobertura total (100% palabras stemmed) + candidato único**. Al incluir encabezados como destino, muchos links "NN - Tema" caen en la sección correcta de otra nota (`[[Nota#Sección]]`).
+> - **51 links en 41 notas**, verificados 0 nuevos BADs.
+> - **Incidente de atribución:** mis ediciones quedaron dentro de `394a087` (commit de autoría de `opencode-onedrive`) por `add` amplio en clon compartido. Contenido intacto (`bad=140` verificado en `394a087`); documentado en LEEME. Regla: add exacto + commit atómico.
+> - Dato: las demás sesiones también bajaron los BADs (757 → 188 antes de mi ola).
+
+
+---
+
+> [!info] Entrada 31/10/2026 (noche) — Fix de mojibake en links de SBD: BADs 140 → 119 · cierre de mi cola de links
+>
+> - Detecté que varios targets BAD tenían **doble codificación UTF-8 dentro del link** (p. ej. `ConversiÃ³n`, `Ãndice`) mientras el archivo destino existía con el nombre correcto. De-mojibake + verificación por variantes Unicode NFC/NFD → **5 destinos reales**, 29 links corregidos en 8 notas de SBD (mi zona, 3er Semestre).
+> - Verificado: `qa_links.py` **BADs 140 → 119, 0 nuevos**.
+> - Intento de commit capturó `_texto/` y `site/scripts/sync-vault.mjs` por `add` amplio en clon compartido → corregido con reset+unstaging; el origin recibió una variante (68cab8b, sin `_texto`) empujada por otra sesión; mi versión limpia (ef29c56) quedó fusionada por `7f4af49`. Contenido final verificado idéntico.
+> - **Estado de los 119 BADs restantes (/~85 targets):** ninguno tiene destino con contenido equivalente en el vault (motor de cobertura total + de-mojibake + variantes = 0 propuestas). Con la regla del dueño ("si no hay contenido que hable del tema, se deja"), **quedan congelados a la espera de su decisión**: crear stubs, neutralizar o dejar como marcadores.
+> - Quedan 2incidentes de atribución documentados (`b9de5b7`, `394a087`); lección consolidada: add exacto + commit atómico + verificar nombre del commit antes de push.
+
+
+---
+
+> [!info] Entrada 31/10/2026 (cierre) — Links rotos: 852 → 0 · registro de incidentes
+>
+> - Neutralizados **119 links** sin contenido equivalente (72 notas, 1er+2do Semestre) → **`qa_links.py` bad=0** en todo el vault. Commit `4437d9c`. Forma: `[[X]]`→`X`, `[[X|alias]]`→`alias` (preserva la frase).
+> - Restaurados 5 archivos de `Herramientas/` que mi script tocó por error (eran ejemplos de documentación, no links). Los 7 BADs restantes en `qa_links` son esos placeholders: **falsos positivos conocidos**, pendiente de que el carril A los exclua del script.
+> - Registro de incidentes del clon compartido publicado en el LEEME (`b9de5b7`, `394a087`, `68cab8b/ef29c56`, placeholders) con 4 acuerdos propuestos.

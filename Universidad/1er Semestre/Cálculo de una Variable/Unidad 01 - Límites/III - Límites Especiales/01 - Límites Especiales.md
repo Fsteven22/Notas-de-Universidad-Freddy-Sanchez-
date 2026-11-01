@@ -284,7 +284,7 @@ dg-publish: true
 > - [[01 - Formas Indeterminadas]] - Contexto general de indeterminaciones
 > - [[05 - Identidades trigonométricas]] - Herramientas de transformación
 > - Teorema del Sandwich - Método de demostración geométrica
-> - [[Derivadas Trigonométricas]] - Aplicación principal de estos límites
+> - [[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas]] - Aplicación principal de estos límites
 > - Series de Taylor - Desarrollo alternativo para casos complejos
 
 ## 📖 Notas Recomendadas para Estudio Complementario
@@ -297,9 +297,9 @@ dg-publish: true
 > 2. **Radianes vs Grados** - Importancia del sistema de medida
 > 3. **[[01 – Campos vectoriales - divergencia y rotacional#Identidades Fundamentales|Identidades Fundamentales]]** - Transformaciones trigonométricas
 > 
-> **Temas Paralelos:** 4. **[[Continuidad Trigonométrica]]** - Comportamiento de funciones 5. **[[03 - Gráficas de funciones trigonométricas|Gráficas Trigonométricas]]** - Interpretación visual
+> **Temas Paralelos:** 4. **Continuidad Trigonométrica** - Comportamiento de funciones 5. **[[03 - Gráficas de funciones trigonométricas|Gráficas Trigonométricas]]** - Interpretación visual
 > 
-> **Aplicaciones:** 6. **[[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas|Derivadas de Funciones Trigonométricas]]** - Uso principal 7. **[[Integrales Trigonométricas]]** - Extensión natural 8. **[[Ecuaciones Diferenciales]]** - Aplicaciones avanzadas
+> **Aplicaciones:** 6. **[[03 - Derivadas Trigonométricas, Exponenciales y Logarítmicas|Derivadas de Funciones Trigonométricas]]** - Uso principal 7. **[[Integrales Trigonométricas]]** - Extensión natural 8. **Ecuaciones Diferenciales** - Aplicaciones avanzadas
 
 ## 🎯 Ejercicios de Entrenamiento Progresivo
 
@@ -544,7 +544,7 @@ dg-publish: true
 > 
 > - Crecimiento Exponencial - Aplicaciones en modelado
 > - Interés Compuesto Continuo - Aplicación práctica del número $e$
-> - [[Ecuaciones Diferenciales]] - Donde aparecen naturalmente
+> - Ecuaciones Diferenciales - Donde aparecen naturalmente
 > - Análisis Asintótico - Comportamiento a largo plazo
 >
 
@@ -668,7 +668,7 @@ dg-publish: true
 > [!quote] Enlaces a otras notas
 > 
 > - [[01 - Formas Indeterminadas]] - Herramienta principal para resolver estas indeterminaciones
-> - [[Funciones Logarítmicas]] - Propiedades fundamentales del logaritmo
+> - Funciones Logarítmicas - Propiedades fundamentales del logaritmo
 > - [[01 - Límites al Infinito y Sucesiones]] - Comportamiento asintótico general
 > - [[01 - Formas Indeterminadas]] - Clasificación completa de indeterminaciones
 > - Crecimiento Asintótico - Comparación detallada de funciones

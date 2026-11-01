@@ -143,7 +143,7 @@ Ejemplo:
 - !Análisis Costo-Beneficio - Evaluar viabilidad de proyectos de ML
 - !Gestión de Proyectos - Manejar proyectos de ML efectivamente
 - !Estadística y Probabilidad - Fundamento matemático del ML
-- ![[Visualización de Datos]] - Comunicar resultados de modelos
+- !Visualización de Datos - Comunicar resultados de modelos
 
 > [!note]- ## Prerrequisitos y Notas Recomendadas 📋
 
@@ -156,7 +156,7 @@ Ejemplo:
 ### 💻 **Programación (Requeridos)**
 - ![[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] - Fundamentos de Python
 - ![[01 - Funciones]] - Modularización de código
-- ![[Pandas]] - Manipulación de datos
+- !Pandas - Manipulación de datos
 - ![[Módulo 6.1 Introducción a NumPy]] - Cálculos numéricos
 
 - !Pandas - Manipulación de datos

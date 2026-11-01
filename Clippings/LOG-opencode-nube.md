@@ -20,14 +20,16 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 ## Vivo - lo que sigue abierto
 
 > [!warning] ⏳ Pendientes míos
-> - **Carril D1 (mío):** vigilar las **5 carpetas `Unidad 0 - Guías y Ejercicios`** de 3er Sem. y
->   dejar **una pista por lote** (checksum, duplicados, unidad, copyright → se ignora al publicar,
->   publicable sí/no). Tracker: `INTAKE - material nuevo 3er Sem.md` (línea base de 367 archivos).
->   Falta el **script de detección automática** (pedido al carril A) y el **primer lote** que llegue.
-> - **Avisos**: publicar el `PUSHEADO f430057` (Pasada 2) en mis zonas del LEEME/tablero.
+> - **Mojibake del vault (coordinación abierta):** quedan **9 notas** sin reparar (8 de BD U1/U2 y 1
+>   de Física Mecánica, zona de `opencode`). La técnica está probada en las 2 de BD U0
+>   (`3ab140d`); propuse en el LEEME que las repare `opencode`, que me autoricen a mí, o que el
+>   carril A sume el script a `Mantenimiento/`.
+> - **Poda (autorización pedida):** condensar las 775 líneas de `PROPUESTAS`/`REPORTE` del carril C
+>   cuando `opencode-site` cierre los links. Re-pedido el 31/10.
 > - **Deuda del usuario (no la resuelve ningún agente)**: borrar los despliegues viejos de
->   **Vercel** (~70 GB), decidir si `.obsidian/` (162 MB) sale de la nube ("Dejar de sincronizar")
->   y mover `OneSyncFiles-backups/notas-20261024` (458 MB) a disco local.
+>   **Vercel** (~70 GB), decidir si `.obsidian/` (162 MB) sale de la nube ("Dejar de sincronizar"),
+>   mover `OneSyncFiles-backups/notas-20261024` (458 MB) a disco local, y autorizar/rechazar los
+>   **3 PDF exportados** de los pptx de Inglés III en el sitio.
 
 ## Reglas y hallazgos que no se repiten
 
@@ -60,6 +62,9 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 > | 29/10 | Normalización Pasada 1 | `a2be225`: 111 notas CRLF→LF, dif solo fin de línea, 111/111 byte a byte, `qa_links` sin regresiones |
 > | 29/10 | Normalización Pasada 2 | `f430057`: 15 notas sin líneas vacías en frontmatter (25 líneas); residual CRCA ya limpio en remoto. **Pasada 3 = sin objeto** (0 líneas, 5 definiciones medidas) |
 > | 30/10 | Poda de `Clippings/` | LOG y mis 2 PISTAs condensadas; regla de poda escrita en el LEEME |
+> | 30/10 | Respuestas a las 3 sesiones + `Recursos visuales` publicables | `2b19720` (frontmatter `dg-publish` ×5) y `b3ce82d` (respuestas en el LEEME) |
+> | 31/10 | Auditoría carril D1 | snapshot 699 archivos; los +332 son de B/C/D2; registrados 3 PDF + 32 PNG |
+> | 31/10 | Mojibake de BD U0 reparado | `3ab140d` (2 notas, 0 marcas, 0 palabras cambiadas); **quedan 9 notas** en el vault (8 BD U1/U2 + 1 Física Mecánica), coordinación abierta |
 >
 > **Aprendizaje que salió de la Pasada 2**: la medida "33 archivos de frontmatter" era falsa
 > (18 eran finales `\r\r\n` que parten el renglón); y el `autostash` de un `git pull` ajeno se

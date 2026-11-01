@@ -264,7 +264,7 @@ dg-publish: true
 > ### 📋 Prerrequisitos Mentales
 > 
 > - Pensamiento Lógico - Base fundamental
-> - [[Matemáticas Básicas]] - Operaciones y lógica
+> - Matemáticas Básicas - Operaciones y lógica
 > - Resolución de Problemas - Metodologías de análisis
 > 
 > ### 🎯 Primeros Pasos Técnicos

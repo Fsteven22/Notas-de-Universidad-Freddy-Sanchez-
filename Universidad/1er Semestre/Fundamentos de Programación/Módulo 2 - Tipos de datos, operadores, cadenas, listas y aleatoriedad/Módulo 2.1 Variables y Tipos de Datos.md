@@ -343,7 +343,7 @@ dg-publish: true
 > 
 > - Instalación Python y IDE
 > - Conceptos Básicos Programación
-> - [[Sintaxis Básica Python]]
+> - Sintaxis Básica Python
 > - Comentarios en Python
 > 
 > ### 🔄 **Temas Relacionados**

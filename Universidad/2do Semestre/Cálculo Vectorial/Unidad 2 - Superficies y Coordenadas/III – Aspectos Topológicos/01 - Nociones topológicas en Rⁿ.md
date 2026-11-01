@@ -1725,13 +1725,13 @@ dg-publish: true
 > **Prerequisitos:**
 > 
 > - Conjuntos y Lógica - Teoría básica de conjuntos
-> - [[Sucesiones y Límites]] - Convergencia
+> - [[01 - Límites al Infinito y Sucesiones#Límites de Sucesiones 📊]] - Convergencia
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Distancias
 > 
 > **Temas relacionados:**
 > 
-> - [[Cálculo Multivariable]] - Límites y continuidad
+> - [[03 - Teoremas Especiales para Integrales Definidas#🌀 Aplicaciones en Cálculo Multivariable]] - Límites y continuidad
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Dominios abiertos
 > - [[01 – Integrales múltiples]] - Regiones de integración
 > - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Campos vectoriales
@@ -1739,7 +1739,7 @@ dg-publish: true
 > **Aplicaciones directas:**
 > 
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Compacidad garantiza extremos
-> - [[Ecuaciones Diferenciales]] - Existencia y unicidad
+> - Ecuaciones Diferenciales - Existencia y unicidad
 > - Teoría de la Medida - Conjuntos medibles
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
 > 
@@ -1747,7 +1747,7 @@ dg-publish: true
 > 
 > - Topología Algebraica - Homología, cohomología
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades topológicas
-> - [[Topología General]] - Espacios abstractos
+> - Topología General - Espacios abstractos
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] - Teoría de la medida
 
 > - Topología General - Espacios abstractos

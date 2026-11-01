@@ -1634,17 +1634,17 @@ dg-publish: true
 > - Elementos Finitos - Mallados en coordenadas naturales
 > 
 > **Aplicaciones interdisciplinarias:**
-> - [[Física]] - Problemas con simetría
+> - Física - Problemas con simetría
 > - [[05 - Ingeniería Social y Fraudes en Línea]] - Diseño de componentes axisimétricos
-> - [[Astronomía]] - Coordenadas celestes
-> - [[Geofísica]] - Coordenadas geográficas
+> - Astronomía - Coordenadas celestes
+> - Geofísica - Coordenadas geográficas
 
 > - Física - Problemas con simetría
 > - Ingeniería - Diseño de componentes axisimétricos
 > - Astronomía - Coordenadas celestes
 > - Geofísica - Coordenadas geográficas
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas
-> - [[Gráficos por Computadora]] - Mapeo de texturas
+> - Gráficos por Computadora - Mapeo de texturas
 > 
 > 
 > 

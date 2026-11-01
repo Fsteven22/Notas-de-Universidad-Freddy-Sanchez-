@@ -6,6 +6,9 @@ dg-publish: false
 
 Todo lo que mantiene el vault vive en `Universidad/Herramientas/`. Se ejecuta con `py <script.py>` (Python 3.12, Windows).
 
+> [!tip] 🔀 Flujo de trabajo por sesión (worktree + reglas anti-mezcla)
+> Trabajar cada sesión en su propio `git worktree` (fuera de OneDrive) evita que un commit captura trabajo ajeno: ver `FLUJO-WORKTREE-SESIONES.md`. Post-mortem: `Clippings/PROBLEMA - commits mezclados por el indice compartido.md`.
+
 ## Estructura
 
 | Carpeta | Qué hay |
@@ -50,6 +53,7 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `qa_resolucion_diagramas.py` | (base) | Embeds de diagrama/asset (`![[Diagramas/…]]`) que no resuelven a un archivo real. |
 | `qa_fugas_copyright.py` | (base) | Archivos listados en `_no-publicar.txt` (o variantes `_OCR`) que aparecen en `site/public/assets/`. Red de seguridad contra fugas de copyright. |
 | `qa_svg_titulo.py` | (base) | SVGs con titulos placeholder genericos (`flowchartTitleText`) que nunca se les asigno uno real. |
+| `qa_omitidas.py` | (base) | Notas que el sitio NO publica por el gate silencioso de frontmatter: sin `dg-publish: true`, sin frontmatter o con BOM UTF-8 al inicio (rompe el parseo). Agrupa por semestre/materia. `--estricto` → exit 1 si hay omitidas (CI). |
 
 Cifras del dry-run (2026-10): pegados=204 (90 notas), dispersos=0, anidados=62 (20 notas),
 links BAD=1989 (con sugerencias), matemática=893 candidatos, fuera-de-callout=229 bloques.

@@ -326,7 +326,7 @@ dg-publish: true
 > 
 > 
 > ### 🔗 Notas Relacionadas
-> - [[Teorema Fundamental del Cálculo para Integrales Indefinidas]] - Base teórica
+> - Teorema Fundamental del Cálculo para Integrales Indefinidas - Base teórica
 > - [[01 - Antiderivadas (Primitivas)]] - Tabla de fórmulas con constantes
 > - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]] - Manejo de constantes en métodos avanzados
 > - Ecuaciones Diferenciales Básicas - Aplicación principal

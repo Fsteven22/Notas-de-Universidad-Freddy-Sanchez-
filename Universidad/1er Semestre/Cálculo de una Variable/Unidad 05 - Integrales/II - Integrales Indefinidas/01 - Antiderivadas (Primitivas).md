@@ -316,7 +316,7 @@ dg-publish: true
 
 > - Integración por Sustitución - Siguiente método de integración
 > - [[Integración por Partes]] - Técnica avanzada de integración
-> - [[Aplicaciones de la Integral]] - Usos prácticos de antiderivadas
+> - Aplicaciones de la Integral - Usos prácticos de antiderivadas
 > - Ecuaciones Diferenciales Básicas - Aplicación directa de antiderivadas
 > - Cinemática y Antiderivadas - Aplicaciones en física
 > - [[04 - Teorema Fundamental del Cálculo#Funciones Definidas por Integrales|Funciones Definidas por Integrales]] - Extensión del concepto

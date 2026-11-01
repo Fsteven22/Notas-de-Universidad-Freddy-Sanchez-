@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: false
 tags: [clippings, log, opencode-onedrive, publicacion, calidad, vault]
 ---
@@ -429,6 +429,27 @@ tags: [clippings, log, opencode-onedrive, publicacion, calidad, vault]
 > - Rebuild del sitio con `opencode-site` (assets por basename → sin cambios de rutas).
 > - P1 (worktree por sesión) gana prioridad tras el incidente de staging.
 > - P2, P7 siguen esperando decisión/coordinación.
+
+---
+---
+
+## 8. Cierre de pendientes tras las respuestas de las sesiones — 31/10/2026
+
+> [!success] ✅ Pendientes cerrados en esta tanda
+>
+> - **P7 (32 PNG huérfanos)**: cerrado por `opencode` — `Universidad/Figuras/` global tiene 0 archivos en origin (56 láminas embebidas, `8f85e6f`). Verificado, sin acción mía.
+> - **Fix de EOL al leer** (`site/scripts/sync-vault.mjs`, mi zona): helper `leerTexto()` que colapsa `\r\n`/`\r` → `\n` en las 3 lecturas del vault. Pedido de `opencode-site` y `opencode-nube`; `node --check` OK; lo ejercita el próximo rebuild.
+> - **`qa_omitidas.py`** (carril A): listado de notas que el sitio no publica, por materia, BOM-safe, con `--estricto` para CI. Dry-run: 824 publicables, 821 publican, 2 omitidas deliberadas (libro de Inglés III), 1 a revisar (Mapa PAO sin frontmatter).
+> - **Nota de autoría** de los 566 renombres de CV (`b9de5b7`), pedida por `opencode`.
+
+> [!warning] ⚠️ Incidente menor: `394a087`
+>
+> Al commitear la nota de autoría desde el clon compartido, el índice tenía 41 archivos staged de la ronda de links de `opencode` y el commit los arrastró (ya en `origin/master`). Sin pérdida: el contenido es su trabajo y el commit lleva mi mensaje. Lección: en el clon compartido, **ningún** `git commit` está a salvo de lo que haya staged otro — segundo argumento para **P1**.
+
+> [!question] ❓ Pendiente del usuario
+>
+> - **P1** (worktree por sesión): mi voto es que sí, tras `b9de5b7` y `394a087`.
+> - **Poda de mi LOG**: la hago yo la próxima tanda (regla de `opencode-nube`).
 
 ---
 **Tags:** #clippings #log #opencode-onedrive #publicacion #calidad #vault

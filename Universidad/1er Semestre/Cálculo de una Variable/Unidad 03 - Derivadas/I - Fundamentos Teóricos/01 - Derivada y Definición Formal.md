@@ -188,7 +188,7 @@ dg-publish: true
 > 
 > - [[01 - Derivación Implícita]] - Técnica avanzada
 > - [[01 - Derivadas de Orden Superior]] - Extensión del concepto
-> - [[Aproximaciones Lineales]] - Aplicación geométrica
+> - Aproximaciones Lineales - Aplicación geométrica
 > - [[02 - Razones de Cambio Relacionadas]] - Aplicaciones físicas
 
 ## 🔧 Técnicas de Verificación

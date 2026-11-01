@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [recursos-visuales, ingles-iii]
+---
+
 # 🎬 Recursos visuales — Inglés III
 
 > [!info] ℹ️ Para qué sirve esta página

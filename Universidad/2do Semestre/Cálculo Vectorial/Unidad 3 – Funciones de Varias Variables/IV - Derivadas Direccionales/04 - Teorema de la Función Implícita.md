@@ -722,7 +722,7 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > - [[06 – Matriz Jacobiana#Regla de la Cadena Multivariable|Regla de la Cadena Multivariable]] - Derivación de fórmulas
-> - [[Jacobiano]] - Generalización a sistemas
+> - [[02 – Jacobiano de la transformación]] - Generalización a sistemas
 > - [[01 – Gradiente y Derivadas Direccionales]] - Vector de derivadas parciales
 
 > - Jacobiano - Generalización a sistemas

@@ -150,7 +150,7 @@ dg-publish: true
 ### 📖 Temas Avanzados
 > [!summary]  Para más adelante:
 > - Centro de Masa vs Centro de Gravedad
-> - [[Sistemas de Referencia del Centro de Masa]]
+> - Sistemas de Referencia del Centro de Masa
 > - Teorema del Eje Paralelo> 
 
 tags

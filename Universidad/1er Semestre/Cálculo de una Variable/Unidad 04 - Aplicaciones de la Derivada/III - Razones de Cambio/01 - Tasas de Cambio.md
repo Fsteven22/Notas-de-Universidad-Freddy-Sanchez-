@@ -169,7 +169,7 @@ dg-publish: true
 > 
 > - [[01 - Derivada y Definición Formal|Derivadas]] - Formalización matemática
 > - Aplicaciones de la Derivada - Optimización y análisis
-> - [[Integrales]] - Proceso inverso (acumulación)
+> - Integrales - Proceso inverso (acumulación)
 
 ## 📖 Notas Recomendadas para Estudio Complementario
 
@@ -180,7 +180,7 @@ dg-publish: true
 > 1. **Funciones y sus Gráficas** - Visualización
 > 2. **[[01 - Propiedades y Teoremas de los Límites]]** - Técnicas de cálculo
 > 
-> **Temas Paralelos:** 3. **Rectas Secantes y Tangentes** - Interpretación geométrica 4. **[[Aplicaciones de Funciones]]** - Modelado matemático
+> **Temas Paralelos:** 3. **Rectas Secantes y Tangentes** - Interpretación geométrica 4. **Aplicaciones de Funciones** - Modelado matemático
 > 
 > **Siguientes Pasos:** 5. **Definición de Derivada** - Formalización 6. **[[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]** - Herramientas de cálculo
 

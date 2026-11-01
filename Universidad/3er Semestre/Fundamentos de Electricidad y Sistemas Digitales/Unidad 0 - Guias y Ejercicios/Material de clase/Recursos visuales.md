@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [recursos-visuales, fesd]
+---
+
 # 🎬 Recursos visuales — Fundamentos de Electricidad y Sistemas Digitales
 
 > [!info] ℹ️ Para qué sirve esta página

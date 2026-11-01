@@ -1619,7 +1619,7 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > 
 > ### Prerequisitos:
 > 
-> - **[[08 - Bases]]** - Definición de base, verificación, construcción
+> - **08 - Bases** - Definición de base, verificación, construcción
 > - **[[01 - Dimensión y descripción del conjunto solución]]** - Relación entre dimensión y número de coordenadas
 
 > - **08 - Bases** - Definición de base, verificación, construcción
@@ -1637,8 +1637,8 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > - **22 - Eigenvalores y Eigenvectores** - Bases especiales
 =======
 > - **[[02 – Núcleo e imagen de una transformación lineal]]** - Coordenadas de ker y im
-> - **[[20 - Isomorfismos]]** - Equivalencia de espacios vectoriales
-> - **[[22 - Eigenvalores y Eigenvectores]]** - Bases especiales
+> - **20 - Isomorfismos** - Equivalencia de espacios vectoriales
+> - **22 - Eigenvalores y Eigenvectores** - Bases especiales
 >>>>>>> origin/master
 > 
 > ### Temas relacionados:

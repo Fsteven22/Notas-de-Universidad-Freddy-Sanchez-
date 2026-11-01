@@ -269,7 +269,7 @@ dg-publish: true
 > - [[Problemas de Encuentro]] - Para encuentros con velocidad relativa
 > - [[Vectores]] - Operaciones vectoriales fundamentales
 > - [[Cinemática Traslacional]] - Conceptos base de movimiento
-> - [[Transformaciones de Galileo]] - Relatividad clásica
+> - Transformaciones de Galileo - Relatividad clásica
 > - Análisis Gráfico del Movimiento - Representación visual
 
 ---

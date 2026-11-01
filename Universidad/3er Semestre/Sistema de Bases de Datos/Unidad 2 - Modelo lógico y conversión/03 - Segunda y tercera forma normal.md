@@ -298,7 +298,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > [!info] ðŸ“š Seguir estudiando
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
-> - Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
+> - Ãndice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[02 - Primera forma normal y diccionario de datos]]
 > - Siguiente: [[04 - Normalización paso a paso]]
 

@@ -2677,7 +2677,7 @@ dg-publish: true
 > **Aplicaciones prácticas:**
 > 
 > - Circuitos Eléctricos - Leyes de Kirchhoff - Análisis de redes
-> - [[Sistemas de Balance de Materia]] - Ingeniería Química
+> - Sistemas de Balance de Materia - Ingeniería Química
 > - Modelo de Leontief - Economía Input-Output
 > - Análisis Estructural - Estática y armaduras
 > - Balanceo de Ecuaciones Químicas - Estequiometría

@@ -1770,11 +1770,11 @@ dg-publish: true
 > - [[01 - Valores y Vectores propios]] - Sistemas de ecuaciones especiales
 > - Descomposición LU - Factorización para resolver sistemas
 > - Métodos Iterativos - Jacobi, Gauss-Seidel
-> - [[Sistemas No Lineales]] - Generalización
+> - Sistemas No Lineales - Generalización
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Análisis de Circuitos]] - Leyes de Kirchhoff
+> - [[06 - Teoremas de Analisis de Circuitos]] - Leyes de Kirchhoff
 > - [[02 - Sistemas de inecuaciones lineales#Optimización Lineal|Optimización Lineal]] - Programación lineal
 > - Mecánica - Equilibrio de fuerzas
 > - Economía Matemática - Modelos de equilibrio

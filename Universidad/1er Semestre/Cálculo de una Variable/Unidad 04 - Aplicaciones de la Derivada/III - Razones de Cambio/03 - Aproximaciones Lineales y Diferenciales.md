@@ -100,7 +100,7 @@ dg-publish: true
 > 
 > - [[04 – Diferenciabilidad#Diferencial Total|Diferencial Total]] - Extensión a funciones de varias variables
 > - Series de Taylor - Aproximaciones de orden superior
-> - [[Métodos Numéricos]] - Implementación computacional
+> - Métodos Numéricos - Implementación computacional
 > - Física Experimental - Aplicaciones en laboratorio
 > - Estadística de Errores - Análisis más avanzado de incertidumbre
 

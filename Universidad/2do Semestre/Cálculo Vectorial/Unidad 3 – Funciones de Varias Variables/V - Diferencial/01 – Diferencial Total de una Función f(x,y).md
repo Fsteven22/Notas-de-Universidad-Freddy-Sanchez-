@@ -1164,8 +1164,8 @@ dg-publish: true
 > - **[[04 – Diferenciabilidad]]** - Concepto central de diferenciabilidad
 > - **[[02 - Regla de la Cadena]]** - Se expresa elegantemente con diferenciales
 > - **[[01 – Gradiente y Derivadas Direccionales]]** - $df = \nabla f \cdot d\vec{r}$
-> - **[[15 - Optimización]]** - Condición $df = 0$ para extremos
-> - **[[20 - Integrales de Línea]]** - Diferenciales exactos e inexactos
+> - **15 - Optimización** - Condición $df = 0$ para extremos
+> - **20 - Integrales de Línea** - Diferenciales exactos e inexactos
 
 > - **11 - Gradiente** - $df = \nabla f \cdot d\vec{r}$
 > - **15 - Optimización** - Condición $df = 0$ para extremos

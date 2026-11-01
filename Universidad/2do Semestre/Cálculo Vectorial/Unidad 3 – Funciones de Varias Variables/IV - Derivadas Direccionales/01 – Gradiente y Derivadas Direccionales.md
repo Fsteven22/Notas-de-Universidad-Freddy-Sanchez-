@@ -2751,7 +2751,7 @@ dg-publish: true
 > - 15 - Campos Vectoriales - Gradiente como campo vectorial
 =======
 > - [[01 - Polinomios de Taylor]] - Aproximaciones de orden superior
-> - [[15 - Campos Vectoriales]] - Gradiente como campo vectorial
+> - [[01 – Campos vectoriales - divergencia y rotacional]] - Gradiente como campo vectorial
 >>>>>>> origin/master
 > 
 > **Conceptos relacionados:**

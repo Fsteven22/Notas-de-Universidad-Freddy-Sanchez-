@@ -1222,7 +1222,7 @@ dg-publish: true
 > [!quote] Enlaces Conceptuales **Fundamentos previos:**
 > 
 > - [[02 - Vectores en R3]] - Caso concreto ℝⁿ
-> - [[05.2 - Operaciones con vectores]] - Suma y producto
+> - 05.2 - Operaciones con vectores - Suma y producto
 > - Álgebra abstracta - Estructuras algebraicas
 > 
 > **Temas relacionados:**
@@ -1234,7 +1234,7 @@ dg-publish: true
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[Ecuaciones diferenciales]] - Espacios de soluciones
+> - Ecuaciones diferenciales - Espacios de soluciones
 > - [[Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
 > - [[01 - Longitud de Curva#Análisis Numérico|Análisis numérico]] - Métodos computacionales
 > - [[Machine Learning]] - Espacios de características

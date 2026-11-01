@@ -1087,7 +1087,7 @@ dg-publish: true
 > - [[01 - Rectas en R3]] - Para entender generatrices
 > - [[02 - Planos en R3]] - Para secciones planas
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
-> - [[Producto vectorial]] - Para cálculos de área
+> - [[04 – Funciones vectoriales de variable vectorial#✖️ Productos Vectoriales]] - Para cálculos de área
 > - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
 
 > - Ecuación de la recta en ℝ³ - Para entender generatrices
@@ -1109,7 +1109,7 @@ dg-publish: true
 > - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Superficies de nivel
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Extremos sobre superficies
 > - [[01 – Integrales múltiples]] - Volúmenes y regiones
-> - [[Ecuaciones diferenciales]] - Soluciones geométricas
+> - Ecuaciones diferenciales - Soluciones geométricas
 > 
 > **Temas avanzados:**
 > 

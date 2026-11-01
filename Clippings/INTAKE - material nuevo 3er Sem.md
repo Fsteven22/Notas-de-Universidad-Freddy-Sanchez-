@@ -116,6 +116,49 @@ tags: [clippings, intake, 3er-semestre, guides, material-nuevo]
 > **5 rutas** en una constante al principio del archivo (no en el código hardcodeado).
 > **D1 no lo escribe**: `Mantenimiento/` es tu zona (carril A).
 
+## Auditoría del 31/10/2026 (primera pasada automática)
+
+> [!success] 📏 Snapshot de hoy: **699 archivos** en las 5 rutas
+> Snapshot completo (ruta + bytes + SHA-256) en **`Clippings/INTAKE - baseline 5 carpetas U0.csv`**.
+> El detector quedó funcionando (script en TEMP de `opencode-nube`; `Mantenimiento/` es del carril A,
+> no lo invado). Con `--check` compara cualquier momento contra este snapshot.
+>
+> | Materia | Línea base 28/10 | Hoy | Δ |
+> |---|---:|---:|---:|
+> | Diseño de Software | 34 | 108 | +74 |
+> | Fundamentos de Electricidad | 16 | 16 | 0 |
+> | Inglés III | 67 | 135 | +68 |
+> | Matemáticas Discretas | 39 | 225 | +186 |
+> | Sistema de Bases de Datos | 211 | 215 | +4 |
+> | **Total** | **367** | **699** | **+332** |
+
+> [!warning] 🔍 De dónde salen los +332 (verificado contra git, commit `147c4bd` → HEAD)
+> **+324 archivos trackeados**: 274 SVG (carril C: diagramas movidos a `U0/Diagramas/`) · 32 PNG ·
+> 13 `.md` (notas D2) · 3 PDF · 2 `.mmd`. **0 borrados**, 0 archivos sin trackear.
+> **No llegó material nuevo del usuario**: el crecimiento es de los carriles B/C/D2.
+
+> [!info] 📎 Lo que sí entró como material (registrado con SHA-256)
+> | Archivo | Dónde | sha12 | Nota D1 |
+> |---|---|---|---|
+> | `PPT_Guide to Prepare your Oral Presentation _English III.pdf` (0,18 MB) | Inglés III / U0 | `fde669242fbd` | export de pptx por `opencode`, con autorización del usuario |
+> | `PPT_Structure of a Problem Solving Presentation…pdf` (1,01 MB) | Inglés III / U0 | `390f56370ba5` | idem |
+> | `PRESENTATION TEMPLATE FOR CELEX.pdf` (0,06 MB) | Inglés III / U0 | `8a0817a6c50a` | idem |
+> | 32 PNG de `ChatGPT Image…` / `Pasted image…` (≈27 MB) | MD / `Figuras/` | snapshot | figuras propias/generadas; **publicables** si la nota que las embeba lo es |
+> **Copyright:** los 3 PDF salen de pptx del curso (material del usuario) → no están en `_no-publicar.txt`.
+> **Decisión pendiente del dueño:** si esos PDF entran al sitio (lo mismo que preguntó `opencode-site`).
+
+> [!warning] ⚠️ Sigue abierto (de la línea base, no lo toca D1)
+> El **duplicado exacto** de MD: `Guía Didáctica Mat. discretas lógica y demostraciones.pdf`
+> (sha `9179ef4c…`) está **2 veces** (raíz de U0 y `Guías/`). **Decide/ejecuta `opencode` (D2)**:
+> es `Universidad/**`.
+
+> [!success] ✅ Mojibake reparado (control de calidad D1, 31/10)
+> `3ab140d`: las 2 notas de BD con mojibake **mixto** (acentos por latin1, emojis por cp1252, por eso
+> el arreglo "puro" fallaba): `00 - Leeme Unidad 0.md` (17 marcas) y
+> `Guías/Bienvenida y Syllabus Sistema de Bases de Datos.md` (29 marcas). Reparado por tramos
+> (solo secuencias sospechosas, verificado decodificando a UTF-8 válido): **0 marcas, 0 CR,
+> 0 palabras cambiadas**, y el link `BD00 Políticas.pdf` queda intacto. Reversible con 1 commit.
+
 ## Estado del carril
 
 > [!success] ✅ D1 — en curso
@@ -123,8 +166,12 @@ tags: [clippings, intake, 3er-semestre, guides, material-nuevo]
 > - [x] Línea base de los **367 archivos** con SHA-256, pesos y duplicados.
 > - [x] Copyright revisado contra `_no-publicar.txt` (todo cuadra, 1 duda anotada).
 > - [x] Checklist por lote y handoff a D2 definidos.
-> - [ ] **Script de detección automática** → pedido al carril A.
-> - [ ] **Primer lote nuevo** → cuando el usuario deje material, se registra aquí.
+> - [x] **Detección automática funcionando** (31/10): snapshot CSV + comparación; el script está en
+>       TEMP de `opencode-nube` → **ofrecido al carril A** para que viva en `Mantenimiento/`.
+> - [x] **Primera auditoría** (31/10): 699 archivos; los +332 son de los carriles B/C/D2;
+>       registrados 3 PDF + 32 PNG; duplicado de MD sigue abierto para `opencode`.
+> - [x] **Control de calidad**: mojibake de las 2 notas de BD reparado (`3ab140d`).
+> - [ ] **Lote nuevo del usuario** (notas por escribir) → cuando llegue material, se registra aquí.
 
 ---
 

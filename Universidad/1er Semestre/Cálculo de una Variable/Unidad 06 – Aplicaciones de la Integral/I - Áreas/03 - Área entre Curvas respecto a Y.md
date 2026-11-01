@@ -296,21 +296,21 @@ dg-publish: true
 
 - [[02 - Área entre Curvas]] - Concepto base y método con dx
 - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas para evaluar las integrales resultantes
-- [[Funciones Inversas]] - Para transformar entre y = f(x) y x = g(y)
+- Funciones Inversas - Para transformar entre y = f(x) y x = g(y)
 - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/IV - Integrales Impropias y Avanzadas/04 - Asíntotas en Integrales Definidas.md]] - Contexto más amplio de aplicaciones
 
 ### 🎯 Casos Especiales
 
 - [[04 - Área en Coordenadas Polares y Paramétricas]] - Extensiones a otros sistemas
 - [[1er Semestre/Cálculo de una Variable/Unidad 06 – Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md]] - Aplicación del método de discos/arandelas con dy
-- [[Centros de Masa y Centroides]] - Usando integración respecto a y
+- Centros de Masa y Centroides - Usando integración respecto a y
 - [[03 - Derivadas Paramétricas#Longitud de Arco|Longitud de Arco]] - Extensión del concepto a longitudes
 
 ### 🔧 Herramientas Computacionales
 
 - Graficación de Funciones - Para visualizar regiones y verificar resultados
 - Cálculo Simbólico - Para evaluar integrales complejas
-- [[Métodos Numéricos]] - Para casos donde no hay solución analítica
+- Métodos Numéricos - Para casos donde no hay solución analítica
 
 ### 🏷️ Tags
 

@@ -173,7 +173,7 @@ dg-publish: true
 > ### Temas Relacionados:
 > 
 > - [[01 - Formas Indeterminadas]] - Para formas indeterminadas
-> - [[Discontinuidades]] - Clasificación completa
+> - Discontinuidades - Clasificación completa
 > - [[02 - Asíntotas y Comportamiento de Funciones#Gráficas de Funciones|Gráficas de Funciones]] - Interpretación visual
 > - Comportamiento Asintótico - Análisis avanzado
 >
@@ -316,7 +316,7 @@ dg-publish: true
 > 
 > - [[11 - Funciones polinomiales]] - Base algebraica necesaria
 > - [[01 - Propiedades y Teoremas de los Límites#Álgebra de Límites|Álgebra de Límites]] - Propiedades operacionales
-> - [[Función Racional]] - Características específicas
+> - [[12 - Funciones racionales]] - Características específicas
 > 
 > ### Temas Relacionados:
 > 
@@ -502,7 +502,7 @@ dg-publish: true
 
 > [!quote] Enlaces a otras notas
 > 
-> - [[Límites de Funciones]] - Relación entre límites funcionales y sucesiones
+> - Límites de Funciones - Relación entre límites funcionales y sucesiones
 > - Series Numéricas - Aplicación de sucesiones en series
 > - [[02 – Continuidad]] - Caracterización secuencial de continuidad
 > - Topología de los Reales - Conceptos de supremo e ínfimo
@@ -514,10 +514,10 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - [[Números Reales]] - Propiedades de completitud
+> - [[00 - Índice Unidad 2#🗺️ Índice — Unidad 2: Números Reales]] - Propiedades de completitud
 > - Desigualdades - Manipulación de inecuaciones
 > - Límites Básicos - Conceptos fundamentales
-> - [[Funciones Elementales]] - Para sucesiones definidas por funciones
+> - [[02 - Funciones trigonométricas elementales]] - Para sucesiones definidas por funciones
 > 
 > **Para profundizar:**
 > 

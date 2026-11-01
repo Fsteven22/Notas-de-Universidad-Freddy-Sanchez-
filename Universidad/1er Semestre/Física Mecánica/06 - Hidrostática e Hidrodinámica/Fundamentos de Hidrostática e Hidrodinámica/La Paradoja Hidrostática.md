@@ -263,7 +263,7 @@ dg-publish: true
 > - Diseño de Sistemas Hidráulicos
 > - Manometría
 > - Distribución de Presiones
-> - [[Teorema de Stevin]]
+> - Teorema de Stevin
 
 ---
 

@@ -2243,7 +2243,7 @@ dg-publish: true
 > - [[06 – Matriz Jacobiana]] - Fundamento de la regla de la cadena
 > - [[02 - Vectores en R3]] - Notación vectorial y operaciones
 > - [[Derivadas Parciales]] - Base de la derivación multivariable
-> - [[Álgebra de Matrices]] - Multiplicación matricial
+> - Álgebra de Matrices - Multiplicación matricial
 > 
 > **➡️ Extensiones directas:**
 > 

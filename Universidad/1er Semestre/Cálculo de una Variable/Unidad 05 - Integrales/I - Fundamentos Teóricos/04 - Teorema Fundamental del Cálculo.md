@@ -209,7 +209,7 @@ dg-publish: true
 > - [[02 - Propiedades de la Integral]] - Herramientas para manipular integrales
 > - [[01 - Métodos de Integración Definida]] - Técnicas para encontrar antiderivadas
 > - [[01 - Área bajo la Curva]] - Aplicación geométrica principal
-> - [[Ecuaciones Diferenciales]] - Aplicación del teorema para resolver EDOs
+> - Ecuaciones Diferenciales - Aplicación del teorema para resolver EDOs
 > 
 > ### 📖 Para Profundizar
 > - Teorema del Valor Medio - Base teórica de la demostración

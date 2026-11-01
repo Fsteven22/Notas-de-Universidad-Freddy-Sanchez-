@@ -261,14 +261,14 @@ dg-publish: true
 
 ### 📖 Para Profundizar
 
-- [[Integrales Dobles en Polares]] - Extensión a regiones más generales
+- Integrales Dobles en Polares - Extensión a regiones más generales
 - [[Cálculo Vectorial]] - Aplicaciones del teorema de Green
 - Geometría Diferencial - Curvas en espacios más generales
 - Análisis Complejo - Representación de curvas usando números complejos
 
 ### 🎯 Aplicaciones
 
-- [[Centros de Masa en Polares]] - Usando estas técnicas para centroides
+- Centros de Masa en Polares - Usando estas técnicas para centroides
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
 - Diseño de Engranajes - Aplicaciones industriales de curvas especiales
 - Astronomía y Órbitas - Cálculos orbitales usando coordenadas polares

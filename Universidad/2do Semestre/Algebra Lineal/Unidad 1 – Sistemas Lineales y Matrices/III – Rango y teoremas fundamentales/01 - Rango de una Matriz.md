@@ -1441,7 +1441,7 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - Descomposición SVD - Valores singulares
-> - [[Espacios Fundamentales]] - Cuatro subespacios
+> - [[05 - Teoremas fundamentales del espacio vectorial (unicidad del neutro, del inverso, etc.)#🎯 Teoremas Fundamentales del Espacio Vectorial]] - Cuatro subespacios
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Dimensiones complementarias
 > - Pseudoinversa de Moore-Penrose - Generalización de inversa
 > 

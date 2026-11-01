@@ -750,7 +750,7 @@ dg-publish: true
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Base del espacio ℝ³
-> - [[Números Reales]] - Componentes de vectores
+> - [[00 - Índice Unidad 2#🗺️ Índice — Unidad 2: Números Reales]] - Componentes de vectores
 > - Álgebra Básica - Operaciones fundamentales
 > 
 > **Temas siguientes:**
@@ -761,9 +761,9 @@ dg-publish: true
 > 
 > **Operaciones avanzadas:**
 > 
-> - [[Producto Punto]] - Proyecciones y ángulos
+> - [[01 – Producto punto y ángulos]] - Proyecciones y ángulos
 > - [[02 – Producto cruz y áreas]] - Vector perpendicular
-> - [[Producto Triple]] - Volumen de paralelepípedos
+> - Producto Triple - Volumen de paralelepípedos
 
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Proyecciones y ángulos
 > - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular
@@ -771,7 +771,7 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Cinemática Vectorial]] - Movimiento en el espacio
+> - Cinemática Vectorial - Movimiento en el espacio
 > - Fuerzas y Equilibrio - Estática vectorial
 > - [[01 – Transformaciones lineales]] - Matrices y vectores
 > 

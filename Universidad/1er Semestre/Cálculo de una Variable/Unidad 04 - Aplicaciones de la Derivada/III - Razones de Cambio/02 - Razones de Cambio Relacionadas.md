@@ -375,7 +375,7 @@ dg-publish: true
 - Geometría Analítica - Relaciones geométricas fundamentales
 - Trigonometría - Para problemas con ángulos y rotación
 - Física General - Contexto físico de las aplicaciones
-- [[Ecuaciones Diferenciales]] - Modelado dinámico avanzado
+- Ecuaciones Diferenciales - Modelado dinámico avanzado
 - [[Cálculo Vectorial]] - Extensión a movimiento en múltiples dimensiones
 - Mecánica de Fluidos - Aplicaciones específicas en flujos
 - Termodinámica - Relaciones entre variables de estado

@@ -421,7 +421,7 @@ dg-publish: true
 > **Este tema es base para:**
 > 
 > - [[02 – Dominio y Rango]] - Determinar dónde están definidas
-> - [[03 - Gráfico de Funciones]] - Visualizar funciones escalares
+> - [[01 – Gráfico de una función z=f(x,y)#📘 Gráfico de una función z=f(x,y)]] - Visualizar funciones escalares
 > - [[02 – Curvas de Nivel]] - Representar funciones de 2 variables
 > - [[Derivadas Parciales]] - Calcular tasas de cambio
 > - [[01 – Gradiente y Derivadas Direccionales]] - Vector de derivadas parciales

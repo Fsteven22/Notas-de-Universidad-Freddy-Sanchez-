@@ -165,7 +165,7 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - Series de Fourier - Análisis armónico
-> - [[Ecuaciones Diferenciales]] - Soluciones trigonométricas
+> - Ecuaciones Diferenciales - Soluciones trigonométricas
 > - Análisis Complejo - Funciones trigonométricas complejas
 
 ## 📖 Referencias y Estudio Complementario
@@ -175,7 +175,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > 1. **[[Integración por Partes]]** - Combinación de técnicas
-> 2. **[[Fracciones Parciales]]** - Para expresiones racionales
+> 2. **[[Integrales por Fracciones Parciales]]** - Para expresiones racionales
 > 3. **Completar el Cuadrado** - Preparación de formas estándar
 > 
 > **Aplicaciones avanzadas:** 4. **[[Cambio de Variable en Integrales#Integrales Definidas|Integrales Definidas]]** - Evaluación numérica 5. **[[01 - Área bajo la Curva#Aplicaciones Físicas|Aplicaciones Físicas]]** - Ondas y oscilaciones
