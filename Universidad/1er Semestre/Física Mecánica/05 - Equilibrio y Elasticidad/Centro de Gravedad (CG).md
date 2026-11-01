@@ -173,8 +173,8 @@ dg-publish: true
 > 
 > - Equilibrio: Estático, Estable e Inestable
 > - [[Centro de masa (CM)]]
-> - [[Momento de Torsión]]
-> - [[Estática]]
+> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Torque y Equilibrio Rotacional.md]]
+> - Estática
 > - [[Cinemática Rotacional]]
 > - Diseño Estructural
 

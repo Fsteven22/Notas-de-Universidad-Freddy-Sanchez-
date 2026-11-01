@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
 # 📚 Unidad 0 — MOOC de Comunicación (Preuniversitario)
 
 > [!info] Índice de recursos de la unidad

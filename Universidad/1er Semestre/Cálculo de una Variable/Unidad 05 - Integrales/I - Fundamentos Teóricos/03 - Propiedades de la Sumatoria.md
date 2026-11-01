@@ -179,7 +179,7 @@ dg-publish: true
 ## Notas Recomendadas
 
 > [!info] Prerrequisitos
-> - [[Variables y Tipos de Datos]] (conceptos de índices)
+> - [[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] (conceptos de índices)
 > - [[01 - Funciones]] (concepto de función)
 > - Álgebra básica
 >

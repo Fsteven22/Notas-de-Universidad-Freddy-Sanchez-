@@ -1089,6 +1089,12 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Vectores normales y tangentes
 > - [[Producto vectorial]] - Para cálculos de área
 > - [[10 - Secciones cónicas en coordenadas polares]] - Base bidimensional
+
+> - Ecuación de la recta en ℝ³ - Para entender generatrices
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/02 - Relación recta–plano.md]] - Para secciones planas
+> - [[02 - Vectores en R3]] - Vectores normales y tangentes
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Para cálculos de área
+> - Cónicas - Base bidimensional
 > 
 > **Temas relacionados:**
 > 
@@ -1100,7 +1106,7 @@ dg-publish: true
 > 
 > **Aplicaciones directas:**
 > 
-> - [[Funciones de varias variables]] - Superficies de nivel
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Superficies de nivel
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Extremos sobre superficies
 > - [[01 – Integrales múltiples]] - Volúmenes y regiones
 > - [[Ecuaciones diferenciales]] - Soluciones geométricas
@@ -1108,9 +1114,13 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
+<<<<<<< HEAD
+> - Topología - Clasificación de superficies
+=======
 > - [[01 - Nociones topológicas en Rⁿ]] - Clasificación de superficies
+>>>>>>> origin/master
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
-> - [[Geometría proyectiva]] - Teoremas de Desargues y Pascal
+> - Geometría Proyectiva - Teoremas de Desargues y Pascal
 
 ## 📊 Diagrama Conceptual
 

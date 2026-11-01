@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: true
 tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 ---

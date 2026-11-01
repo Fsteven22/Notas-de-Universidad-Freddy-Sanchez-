@@ -1738,18 +1738,18 @@ tags: [ingles-a1a2, unit1, grammar, mooc]
 > ```
 > Después de dominar comma rules, los siguientes temas son:
 > 
-> [[07 - Semicolons and Colons]]
+> 07 - Semicolons and Colons
 > • Puntuación más avanzada
 > • Alternativa a comas en ciertas situaciones
 > • Semicolons en compound sentences
 > • Colons para introducir listas
 > 
-> [[08 - Apostrophes and Quotation Marks]]
+> 08 - Apostrophes and Quotation Marks
 > • Contractions (don't, can't, I'm)
 > • Possessives (Maria's book, students' books)
 > • Quotation marks y su interacción con comas
 > 
-> [[09 - Complex Sentences]]
+> 09 - Complex Sentences
 > • Subordinate clauses y cuándo usar comas
 > • Dependent vs independent clauses
 > • Diferentes tipos de complex sentences

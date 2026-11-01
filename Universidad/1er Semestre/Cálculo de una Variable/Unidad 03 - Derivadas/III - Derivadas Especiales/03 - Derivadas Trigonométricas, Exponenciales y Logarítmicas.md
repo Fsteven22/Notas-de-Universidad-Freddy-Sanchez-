@@ -536,6 +536,8 @@ dg-publish: true
 > 
 > ### Hacia Cálculo Integral:
 > - [[01 - Métodos de Integración Definida]] - Inversión del proceso
+
+> - Integración por Sustitución - Inversión del proceso
 > - [[Aplicaciones de Integrales]] - Áreas bajo curvas exponenciales
 
 ## 🎲 Ejercicios de Práctica Graduados

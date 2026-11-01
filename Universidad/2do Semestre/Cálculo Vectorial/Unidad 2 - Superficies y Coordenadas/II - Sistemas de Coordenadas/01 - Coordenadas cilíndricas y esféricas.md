@@ -1610,34 +1610,39 @@ dg-publish: true
 > **Prerequisitos:**
 > - [[02 - Coordenadas polares]] - Base para cilíndricas
 > - [[02 - Vectores en R3]] - Vectores unitarios y bases
-> - [[Trigonometría]] - Funciones circulares
-> - [[Cálculo Integral]] - Integrales múltiples
-> - [[Cambio de Variable]] - Jacobiano
+> - Trigonometría - Funciones circulares
+> - Cálculo Integral - Integrales múltiples
+> - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Jacobiano
 > 
 > **Temas relacionados:**
 > - [[03 - Superficies de revolución]] - Naturales en cilíndricas/esféricas
 > - [[01 - Distancias en ℝ³]] - Métricas en diferentes sistemas
-> - [[Producto Vectorial]] - Rotacional en curvilíneas
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Rotacional en curvilíneas
 > - [[01 – Integrales múltiples]] - Aplicaciones de coordenadas
 > 
 > **Aplicaciones directas:**
-> - [[Ecuaciones Diferenciales Parciales]] - Separación de variables
-> - [[Mecánica Clásica]] - Lagrangiano en coordenadas generalizadas
-> - [[Electromagnetismo]] - Simetrías de campos
+> - Ecuaciones Diferenciales Parciales - Separación de variables
+> - Mecánica Clásica - Lagrangiano en coordenadas generalizadas
+> - Electromagnetismo - Simetrías de campos
 > - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica Cuántica]] - Átomo de hidrógeno
 > - [[Momentum Lineal y Su Conservación#Análisis Vectorial|Análisis Vectorial]] - Operadores diferenciales
 > 
 > **Temas avanzados:**
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Variedades y métricas
-> - [[Relatividad General]] - Coordenadas curvilíneas en espacio-tiempo
-> - [[Teoría de Campos]] - Lagrangianos en diferentes coordenadas
-> - [[Elementos Finitos]] - Mallados en coordenadas naturales
+> - Relatividad General - Coordenadas curvilíneas en espacio-tiempo
+> - Teoría de Campos - Lagrangianos en diferentes coordenadas
+> - Elementos Finitos - Mallados en coordenadas naturales
 > 
 > **Aplicaciones interdisciplinarias:**
 > - [[Física]] - Problemas con simetría
 > - [[05 - Ingeniería Social y Fraudes en Línea]] - Diseño de componentes axisimétricos
 > - [[Astronomía]] - Coordenadas celestes
 > - [[Geofísica]] - Coordenadas geográficas
+
+> - Física - Problemas con simetría
+> - Ingeniería - Diseño de componentes axisimétricos
+> - Astronomía - Coordenadas celestes
+> - Geofísica - Coordenadas geográficas
 > - [[05 – Proceso de Gram-Schmidt#Gráficos por Computadora|Gráficos por Computadora]] - Mapeo de texturas
 > - [[Gráficos por Computadora]] - Mapeo de texturas
 > 

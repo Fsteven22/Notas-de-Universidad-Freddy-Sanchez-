@@ -1805,7 +1805,7 @@ dg-publish: true
 > ### Este tema es prerequisito para:
 > 
 > - **[[01 – Transformaciones lineales]]** - Morfismos entre espacios
-> - **[[20 - Isomorfismos]]** - Equivalencia entre espacios con operaciones diferentes
+> - **20 - Isomorfismos** - Equivalencia entre espacios con operaciones diferentes
 > - **Álgebra Abstracta** - Grupos, anillos, campos
 > - **Geometría Diferencial** - Espacios tangentes con operaciones no estándar
 > 
@@ -2354,7 +2354,7 @@ dg-publish: true
 > 
 > **Si quieres profundizar en teoría:**
 > 
-> - **[[20 - Isomorfismos de Espacios Vectoriales]]** - Equivalencia estructural
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/01 - Vectores en espacios vectoriales (definición y propiedades).md]]** - Equivalencia estructural
 > - **Álgebra Abstracta** - Grupos, anillos, campos
 > - **Módulos sobre Anillos** - Generalización de espacios vectoriales
 > 

@@ -1009,14 +1009,18 @@ dg-publish: true
 > - [[02 – Producto cruz y áreas]] - Cálculo de vectores normales
 > - [[02.2 Producto Punto]] - Perpendicularidad y ángulos
 > - [[03. Distancia en el Espacio]] - Fundamentos métricos
+
+> - 02.1 Producto Cruz - Cálculo de vectores normales
+> - 02.2 Producto Punto - Perpendicularidad y ángulos
+> - 03. Distancia en el Espacio - Fundamentos métricos
 > - [[01 - Rectas en R3]] - Relación recta-plano
 > 
 > **Aplicaciones directas:**
 > 
 > - [[02 - Relación recta–plano]] - Intersecciones y paralelismo
 > - [[01 - Distancias en ℝ³]] - Distancia punto-plano, plano-plano
-> - [[07.1 Distancia Punto-Plano]] - Fórmula y aplicaciones
-> - [[07.4 Distancia entre Planos Paralelos]] - Caso especial
+> - 07.1 Distancia Punto-Plano - Fórmula y aplicaciones
+> - 07.4 Distancia entre Planos Paralelos - Caso especial
 > 
 > **Temas relacionados:**
 > 
@@ -1034,10 +1038,10 @@ dg-publish: true
 > 
 > **Aplicaciones prácticas:**
 > 
-> - [[Computación Gráfica 3D]] - Renderizado y clipping
-> - [[Diseño Asistido por Computadora]] - Modelado CAD
-> - [[Robótica]] - Planificación de trayectorias
-> - [[Análisis Estructural]] - Elementos finitos
+> - Computación Gráfica 3D - Renderizado y clipping
+> - Diseño Asistido por Computadora - Modelado CAD
+> - Robótica - Planificación de trayectorias
+> - Análisis Estructural - Elementos finitos
 
 ## 💡 Consejos y Estrategias de Estudio
 

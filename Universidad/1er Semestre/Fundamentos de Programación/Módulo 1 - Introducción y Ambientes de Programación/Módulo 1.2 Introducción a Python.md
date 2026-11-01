@@ -271,7 +271,7 @@ dg-publish: true
 > ### 📋 Prerrequisitos
 > 
 > - [[Fundamentos de Programación]] - Conceptos básicos
-> - [[Lógica de Programación]] - Pensamiento algorítmico
+> - Lógica de Programación - Pensamiento algorítmico
 > - Sistemas Operativos Básicos - Manejo de terminal
 > 
 > ### 🎯 Siguientes Pasos

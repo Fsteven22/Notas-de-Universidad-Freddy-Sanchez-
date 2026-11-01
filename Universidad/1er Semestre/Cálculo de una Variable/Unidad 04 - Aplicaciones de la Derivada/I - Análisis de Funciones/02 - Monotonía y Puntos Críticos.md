@@ -479,13 +479,13 @@ dg-publish: true
 > 
 > - Optimización - Problemas de máximos y mínimos
 > - [[01 - Derivadas de Orden Superior#Análisis de Funciones|Análisis de Funciones]] - Estudio completo
-> - [[Modelos Matemáticos]] - Aplicaciones en ciencias
+> - Modelos Matemáticos - Aplicaciones en ciencias
 > 
 > **Temas avanzados:**
 > 
 > - Análisis Convexo - Propiedades de convexidad
 > - [[Ecuaciones Diferenciales]] - Sistemas dinámicos
-> - [[Cálculo de Variaciones]] - Optimización funcional
+> - [[1er Semestre/Cálculo de una Variable/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo de una Variable.md]] - Optimización funcional
 
 ---
 

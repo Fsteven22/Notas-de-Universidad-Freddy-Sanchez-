@@ -252,7 +252,7 @@ dg-publish: true
 > **Base para:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones con magnitudes dirigidas
-> - [[01.3 Distancia en el Espacio]] - Métrica euclidiana
+> - 01.3 Distancia en el Espacio - Métrica euclidiana
 > - [[01 - Rectas en R3]] - Objetos lineales unidimensionales
 > - [[02 - Planos en R3]] - Objetos lineales bidimensionales
 > 
@@ -265,7 +265,7 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - [[01 – Transformaciones lineales]] - Cambios de base
-> - [[Producto Vectorial]] - Operaciones en ℝ³
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Operaciones en ℝ³
 > - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Curvas en el espacio
 
 ## 💡 Consejos de Estudio

@@ -23,8 +23,8 @@ El PDF sale junto a la nota (`nota.md` → `nota.pdf`). Rutas relativas al vault
 
 | Sintaxis | Resultado en el PDF |
 | --- | --- |
-| `![[nombre-de-archivo]]` (imagen o SVG) | imagen embebida, resuelta en la carpeta de la nota, luego en la raíz del vault y por último en todo el vault |
-| `[[enlace]]` | texto plano (no se hipervincula) |
+| `!nombre-de-archivo` (imagen o SVG) | imagen embebida, resuelta en la carpeta de la nota, luego en la raíz del vault y por último en todo el vault |
+| `enlace` | texto plano (no se hipervincula) |
 | `> [!note] Título` | callout con barra de color y título en negrita |
 | `$...$` y `$$...$$` | renderizado con KaTeX |
 | ```` ```mermaid ```` | diagrama renderizado con mermaid; si el bloque trae `%% nombre %%` y existe el SVG en el vault, se usa ese SVG |
@@ -35,7 +35,7 @@ El PDF sale junto a la nota (`nota.md` → `nota.pdf`). Rutas relativas al vault
 
 - **KaTeX y mermaid se cargan desde CDN**: requieren internet en el momento de convertir. Sin internet, la matemática queda como texto plano y los bloques mermaid sin renderizar (los SVG ya convertidos del vault sí funcionan siempre).
 - El motor es Edge o Chrome en modo headless. Si no hay ninguno instalado, el script lo dice y termina.
-- No resuelve **transclusiones de notas** (`![[Otra Nota]]`): solo imágenes y SVG.
+- No resuelve **transclusiones de notas** (`!Otra Nota`): solo imágenes y SVG.
 - Las rutas de imagen se resuelven por nombre en todo el vault: si hay dos archivos con el mismo nombre, gana el primero en orden alfabético. Conviene mover las imágenes a la carpeta de su nota.
 - El PDF no lleva portada ni índice automático; si la nota es larga, añade un `## Índice` manual o usa la nota que ya hace de índice (`00 - Índice.md`).
 

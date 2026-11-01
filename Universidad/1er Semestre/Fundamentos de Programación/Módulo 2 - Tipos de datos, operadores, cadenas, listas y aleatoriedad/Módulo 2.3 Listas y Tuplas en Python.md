@@ -265,7 +265,7 @@ dg-publish: true
 > ### 🔧 **Prerrequisitos**
 > 
 > - Variables Básicas Python
-> - [[Operadores Python]]
+> - [[1er Semestre/Fundamentos de Programación/Módulo 4 - Estructuras de control/Módulo 4.2 Iteradores for.md]]
 > - Strings y Indexación Python
 > - [[Módulo 4.1 Condicional]]
 > 
@@ -274,8 +274,8 @@ dg-publish: true
 > - Sets en Python - Colecciones sin duplicados
 > - Diccionarios Python - Mapeo clave-valor
 > - Comprensiones Python - Sintaxis avanzada
-> - [[Iteradores y Generadores]] - Procesamiento eficiente
-> - [[Algoritmos de Búsqueda]] - Encontrar elementos
+> - Iteradores y Generadores - Procesamiento eficiente
+> - Algoritmos de Búsqueda - Encontrar elementos
 > - Programación Funcional Python - map(), filter(), reduce()
 
 ## 🧠 Técnica de Estudio: L.I.S.T.A.S vs T.U.P.L.A.S

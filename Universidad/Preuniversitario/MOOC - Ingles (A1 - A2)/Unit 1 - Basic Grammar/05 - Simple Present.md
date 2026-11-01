@@ -1255,7 +1255,7 @@ dg-publish: true
 > ```
 > Después de dominar simple present, el siguiente tiempo es:
 > 
-> [[06 - Present Continuous]]
+> 06 - Present Continuous
 > • Contraste directo con simple present
 > • Para acciones en progreso AHORA
 > • Complementa simple present perfectamente

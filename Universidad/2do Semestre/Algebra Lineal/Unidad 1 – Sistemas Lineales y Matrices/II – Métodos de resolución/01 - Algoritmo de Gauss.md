@@ -1193,7 +1193,7 @@ dg-publish: true
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[05 - Sistemas de ecuaciones lineales]] - Conceptos básicos y clasificación
-> - [[Matrices]] - Operaciones matriciales fundamentales
+> - Matrices - Operaciones matriciales fundamentales
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Operaciones Elementales|Operaciones Elementales]] - Base teórica
 > 
 > **Temas relacionados:**
@@ -1201,6 +1201,9 @@ dg-publish: true
 > - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
 > - [[Método de Gauss-Jordan]] - Extensión a forma escalonada reducida
 > - [[01 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
+
+> - Método de Gauss-Jordan - Extensión a forma escalonada reducida
+> - Factorización LU - Descomposición relacionada con Gauss
 > 
 > **Aplicaciones directas:**
 > 
@@ -1210,16 +1213,16 @@ dg-publish: true
 > 
 > **Temas avanzados:**
 > 
-> - [[Métodos Iterativos]] - Jacobi, Gauss-Seidel
+> - Métodos Iterativos - Jacobi, Gauss-Seidel
 > - [[01 - Longitud de Curva#Análisis Numérico|Análisis Numérico]] - Estabilidad y errores de redondeo
-> - [[Álgebra Lineal Computacional]] - Implementaciones eficientes
+> - Álgebra Lineal Computacional - Implementaciones eficientes
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
 > - [[Constante de integración#Circuitos Eléctricos|Circuitos Eléctricos]] - Análisis de redes
-> - [[Análisis Estructural]] - Sistemas de fuerzas
-> - [[Regresión Lineal]] - Estimación de parámetros
-> - [[Procesamiento de Imágenes]] - Transformaciones lineales
+> - Análisis Estructural - Sistemas de fuerzas
+> - Regresión Lineal - Estimación de parámetros
+> - Procesamiento de Imágenes - Transformaciones lineales
 
 ---
 

@@ -1094,7 +1094,7 @@ dg-publish: true
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Puntos en ℝ³
 > - [[02 - Vectores en R3]] - Vector director
-> - [[01.3 Distancia en el Espacio]] - Cálculos de distancia
+> - 01.3 Distancia en el Espacio - Cálculos de distancia
 > 
 > **Temas siguientes:**
 > 
@@ -1107,11 +1107,15 @@ dg-publish: true
 > - [[Producto Punto]] - Ángulos y perpendicularidad
 > - [[02 – Producto cruz y áreas]] - Vector perpendicular a dos rectas
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Intersecciones
+
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y perpendicularidad
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Vector perpendicular a dos rectas
+> - [[Sistemas de Ecuaciones]] - Intersecciones
 > 
 > **Aplicaciones:**
 > 
 > - [[Constante de integración#Cinemática|Cinemática]] - Trayectorias rectilíneas
-> - [[Óptica Geométrica]] - Rayos de luz
+> - Óptica Geométrica - Rayos de luz
 > - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Ray tracing
 
 ## 💡 Consejos y Errores Comunes

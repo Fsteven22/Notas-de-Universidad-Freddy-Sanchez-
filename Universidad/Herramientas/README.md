@@ -38,7 +38,7 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `fix_callout_overlap.py` | 1. Callouts pegados | Dos callouts del mismo nivel sin línea en blanco: el 1° absorbe al 2°. Inserta el separador. |
 | `fix_callout_join.py` | 2. Callout disperso | Líneas en blanco crudas cortan el callout; el contenido con `>` que queda suelto se re-agrega rellenando el hueco con el prefijo del callout. |
 | `fix_callout_nested.py` | 3. Callouts anidados aplastados | Callout plegado (`[!x]-`) adyacente a contenido: lo anida (inserta `>` separador + re-prefija su bloque). |
-| `qa_links.py --sugerir` | 4. Links fantasma | QA global de [[links]]/![[embeds]] + `difflib` sugiere notas parecidas (crear / redireccionar / borrar). |
+| `qa_links.py --sugerir` | 4. Links fantasma | QA global de links/!embeds + `difflib` sugiere notas parecidas (crear / redireccionar / borrar). |
 | `fix_matematica.py` | 5-6. Matemática sin `$` / `$$` | Detecta LaTeX/caret/ecuaciones peladas; reporte humano (auto-fix requiere CSV línea a línea). |
 | `detect_fuera_callouts.py` | 7. Contenido fuera de callouts | Bloques huérfanos del estilo "mensaje dentro de callout" (tablas, fórmulas, datos); reporte. |
 | `fix_callouts.py` | (base) | Espacios que rompen callouts (`>   ` → `>`, trailing). |

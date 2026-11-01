@@ -198,7 +198,7 @@ dg-publish: true
 
 > [!quote] 🔗 Links a Otras Notas
 > 
-> - > [[Dinámica Lineal]] - Segunda Ley de Newton
+> - > Dinámica Lineal - Segunda Ley de Newton
 >     
 > - > [[Cinemática Rotacional]] - Torque y momento de inercia
 >     
@@ -208,9 +208,11 @@ dg-publish: true
 >     
 > - > Fricción Estática - Fuerza clave en rodadura
 >     
-> - > [[Conservación de Energía]] - Fundamento del método energético
+> - > [[1er Semestre/Física Mecánica/03 - Trabajo y Energía/Principios de Conservación de la Energía.md]] - Fundamento del método energético
 >     
 > - > [[Fuerzas y Diagramas de Cuerpo Libre]] - Análisis de fuerzas
+
+> - > [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Traslación/Fuerzas y Diagramas de Cuerpo Libre.md]] - Análisis de fuerzas
 >     
 > - > [[Trabajo y Energía]] - Conceptos energéticos
 >     

@@ -288,7 +288,7 @@ dg-publish: true
 > - [[Trabajo y Energía]] - Energía potencial elástica y transformaciones
 > - Oscilaciones - Sistemas masa-resorte y movimiento armónico
 > - Fuerzas y DCL - Fuerzas de restitución elástica
-> - [[Segunda Ley de Newton]] - Análisis dinámico de sistemas elásticos
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Práctica Segunda ley de Newton.md]] - Análisis dinámico de sistemas elásticos
 >
 
 > [!quote] 🔗 Aplicaciones Avanzadas
@@ -296,7 +296,7 @@ dg-publish: true
 > - Mecánica de Materiales - Análisis de esfuerzos complejos
 > - Dinámica Estructural - Vibraciones en sistemas elásticos
 > - Mecánica de Fracturas - Límites de resistencia de materiales
-> - [[Análisis por Elementos Finitos]] - Modelado computacional
+> - Análisis por Elementos Finitos - Modelado computacional
 
 ---
 

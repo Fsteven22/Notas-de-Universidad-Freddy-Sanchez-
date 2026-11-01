@@ -927,24 +927,24 @@ dg-publish: true
 > 
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Estructura de espacios
 > - [[02 – Combinación lineal]] - Generación de subespacios
-> - [[06 - Independencia lineal]] - Bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > 
 > **Temas directamente relacionados:**
 > 
 > - [[05 – Espacio columna]] - Im(T) = Col(A)
-> - [[17 - Espacio nulo]] - Ker(T) = Nul(A)
-> - [[20 - Rango y nulidad]] - Teorema fundamental
+> - 17 - Espacio nulo - Ker(T) = Nul(A)
+> - 20 - Rango y nulidad - Teorema fundamental
 > - [[05 - Sistemas de ecuaciones lineales]] - Solubilidad
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[24 - Valores propios]] - Ker(T - λI)
-> - [[25 - Diagonalización]] - Descomposición espectral
-> - [[30 - Proyecciones]] - Descomposición ortogonal
-> - [[35 - SVD]] - Cuatro subespacios fundamentales
-> - [[40 - Pseudoinversa]] - Inversa generalizada
+> - 24 - Valores propios - Ker(T - λI)
+> - 25 - Diagonalización - Descomposición espectral
+> - 30 - Proyecciones - Descomposición ortogonal
+> - 35 - SVD - Cuatro subespacios fundamentales
+> - 40 - Pseudoinversa - Inversa generalizada
 
 ## 🎓 Conceptos Clave - Resumen
 

@@ -2571,7 +2571,7 @@ dg-publish: true
 > 
 > **📊 Aplicaciones en temas futuros:**
 > 
-> **[[09 - Complex Sentences and Clause Types]]** (tema futuro sugerido)
+> **09 - Complex Sentences and Clause Types** (tema futuro sugerido)
 > 
 > ```
 > • Deep dive into dependent and independent clauses
@@ -2584,7 +2584,7 @@ dg-publish: true
 > para crear escritura más sofisticada.
 > ```
 > 
-> **[[10 - Sentence Variety and Style]]** (tema futuro sugerido)
+> **10 - Sentence Variety and Style** (tema futuro sugerido)
 > 
 > ```
 > • Varying sentence length
@@ -2597,7 +2597,7 @@ dg-publish: true
 > para mejorar tu estilo de escritura.
 > ```
 > 
-> **[[11 - Common Sentence Errors and How to Fix Them]]** (tema futuro)
+> **11 - Common Sentence Errors and How to Fix Them** (tema futuro)
 > 
 > ```
 > • Sentence fragments in depth
@@ -2610,7 +2610,7 @@ dg-publish: true
 > para identificar y corregir errores comunes.
 > ```
 > 
-> **[[12 - Punctuation in Sentences]]** (tema futuro sugerido)
+> **12 - Punctuation in Sentences** (tema futuro sugerido)
 > 
 > ```
 > • Comma usage in complex sentences
@@ -2622,7 +2622,7 @@ dg-publish: true
 > la estructura de las oraciones.
 > ```
 > 
-> **[[13 - Paragraph Structure]]** (tema futuro sugerido)
+> **13 - Paragraph Structure** (tema futuro sugerido)
 > 
 > ```
 > • Topic sentences

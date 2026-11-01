@@ -224,7 +224,7 @@ dg-publish: true
 >
 
 > [!tip] Continuación del Tema
-> - [[Series de Potencias]]
+> - Series de Potencias
 > - Series de Taylor y Maclaurin
 > - [[01 - Integración Numérica]]
 > - [[Métodos de Aproximación]]

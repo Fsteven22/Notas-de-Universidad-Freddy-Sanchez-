@@ -245,7 +245,7 @@ dg-publish: true
 
 > [!info]+ Prerrequisitos
 > 
-> - [[Conceptos de Presión]]
+> - Conceptos de Presión
 > - Energía Cinética y Potencial
 > - Densidad y Caudal
 > - [[Ecuación de Continuidad y Bernoulli#Ecuación de Continuidad|Ecuación de Continuidad]]

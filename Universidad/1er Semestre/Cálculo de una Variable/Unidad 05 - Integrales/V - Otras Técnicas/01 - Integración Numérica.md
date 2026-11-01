@@ -387,7 +387,7 @@ dg-publish: true
 > 
 > ### 📖 Para Profundizar
 > - Análisis de Errores Numéricos - Teoría completa de errores de truncamiento
-> - [[Polinomios de Interpolación]] - Base teórica de Simpson y métodos avanzados
+> - Polinomios de Interpolación - Base teórica de Simpson y métodos avanzados
 > - Cuadratura de Gauss - Métodos óptimos de integración numérica
 > - Métodos Adaptativos - Algoritmos inteligentes de integración
 > 
@@ -395,13 +395,15 @@ dg-publish: true
 > - Programación de Métodos Numéricos - Implementación práctica en código
 > - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
 > - [[Validación de entradas de usuario]] - Técnicas para verificar aproximaciones
+
+> - Validación de Resultados Numéricos - Técnicas para verificar aproximaciones
 > - [[01 – Transformaciones lineales|Transformaciones de Integrales]] - Manejo de casos difíciles
 > 
 > ### 🧮 Aplicaciones Especializadas
 > - Análisis de Señales Digitales - Integración de funciones muestreadas
-> - [[Simulación Numérica]] - Integración en ecuaciones diferenciales
-> - [[Procesamiento de Datos Experimentales]] - Análisis de mediciones discretas
-> - [[Optimización Numérica]] - Integración en algoritmos de optimización
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
+> - Procesamiento de Datos Experimentales - Análisis de mediciones discretas
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]] - Integración en algoritmos de optimización
 > 
 
 ---

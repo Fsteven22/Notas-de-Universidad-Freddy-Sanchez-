@@ -1042,21 +1042,24 @@ dg-publish: true
 > - [[02 - Vectores en R3]] - Operaciones básicas con vectores
 > - [[Producto Punto]] - Ángulos y proyecciones
 > - [[02 – Producto cruz y áreas]] - Áreas y perpendicularidad
+
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/V – Espacios con Producto Interno/01 – Producto interno.md]] - Ángulos y proyecciones
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/II – Producto Punto, Producto Cruz y Aplicaciones Geométricas/02 – Producto cruz y áreas.md]] - Áreas y perpendicularidad
 > - [[03 – Aplicaciones geométricas básicas#Triple Producto Escalar|Triple Producto Escalar]] - Volúmenes
 > 
 > **Temas relacionados:**
 > 
-> - [[01.3 Distancia en el Espacio]] - Métrica en ℝ³
+> - 01.3 Distancia en el Espacio - Métrica en ℝ³
 > - [[01 - Rectas en R3]] - Ecuaciones y propiedades
 > - [[02 - Planos en R3]] - Ecuaciones de planos
 > - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Representación de curvas
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Geometría Analítica 3D]] - Estudio completo
+> - Geometría Analítica 3D - Estudio completo
 > - [[Cinemática Vectorial]] - Movimiento en el espacio
 > - [[Cálculo Vectorial]] - Derivadas e integrales
-> - [[Análisis Tensorial]] - Generalización
+> - Análisis Tensorial - Generalización
 > 
 > **Temas siguientes:**
 > 

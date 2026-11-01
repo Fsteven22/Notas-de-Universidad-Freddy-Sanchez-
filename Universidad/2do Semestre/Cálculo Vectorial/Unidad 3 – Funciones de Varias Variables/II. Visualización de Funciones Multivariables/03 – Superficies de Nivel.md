@@ -1761,7 +1761,7 @@ dg-publish: true
 > - **Topología** - Clasificación de superficies
 > - **Teoría de Morse** - Análisis de funciones vía conjuntos de nivel
 > 
-> **Próximo tema recomendado:** [[06 - Límites en Varias Variables]]
+> **Próximo tema recomendado:** [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]
 
 ---
 
@@ -2161,7 +2161,7 @@ dg-publish: true
 > 
 > ### Próximo paso
 > 
-> **[[06 - Límites en Varias Variables]]**
+> **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]**
 > 
 > Aprenderás sobre:
 > 

@@ -264,7 +264,7 @@ dg-publish: true
 >     
 > - > [[Cinemática Rotacional]] - Segunda Ley de Newton rotacional
 >     
-> - > [[Producto Vectorial]] - Matemáticas de torque y momento angular
+> - > [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/I - Fundamentos/02 - Espacio Vectorial.md]] - Matemáticas de torque y momento angular
 >     
 > - > Física Mecanica/Notas antiguas/Dinámica Rotacional/Momento de Inercia - Propiedad clave del rotor
 >     

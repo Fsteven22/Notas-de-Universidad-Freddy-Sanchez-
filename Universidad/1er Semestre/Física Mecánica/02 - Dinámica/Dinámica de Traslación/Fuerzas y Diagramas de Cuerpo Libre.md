@@ -232,6 +232,8 @@ dg-publish: true
 > - [[Cinemática Traslacional]] - Descripción del movimiento resultante
 > - [[Vectores]] - Herramientas para descomposición de fuerzas
 > - [[Problemas con Fricción en Equilibrio]] - Análisis detallado de fuerzas de fricción
+
+> - Fricción - Análisis detallado de fuerzas de fricción
 > - [[Trabajo y Energía]] - Enfoque energético de los mismos problemas
 
 ## 📖 Notas Recomendadas para Complementar
@@ -242,7 +244,7 @@ dg-publish: true
 > 
 > - [[Vectores]] - Para descomposición y suma de fuerzas
 > - Trigonometría - Para componentes de fuerzas inclinadas
-> - [[Álgebra]] - Para resolver sistemas de ecuaciones
+> - Álgebra - Para resolver sistemas de ecuaciones
 > - [[Cinemática Traslacional]] - Conceptos de aceleración
 > 
 > **Temas complementarios:**

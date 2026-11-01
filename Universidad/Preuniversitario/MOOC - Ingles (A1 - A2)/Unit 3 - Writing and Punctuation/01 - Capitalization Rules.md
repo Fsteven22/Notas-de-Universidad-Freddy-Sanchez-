@@ -980,7 +980,7 @@ dg-publish: true
 > - went to London last Monday = predicate
 > ```
 > 
-> **[[05 - Punctuation Rules]]** (tema futuro sugerido)
+> **05 - Punctuation Rules** (tema futuro sugerido)
 > 
 > ```
 > Conexión: La capitalización trabaja junto con la puntuación:
@@ -996,7 +996,7 @@ dg-publish: true
 > • Títulos de obras → reglas especiales de capitalización
 > ```
 > 
-> **[[06 - Writing Formal Documents]]** (tema futuro sugerido)
+> **06 - Writing Formal Documents** (tema futuro sugerido)
 > 
 > ```
 > • Cartas formales: capitalizaciones especiales

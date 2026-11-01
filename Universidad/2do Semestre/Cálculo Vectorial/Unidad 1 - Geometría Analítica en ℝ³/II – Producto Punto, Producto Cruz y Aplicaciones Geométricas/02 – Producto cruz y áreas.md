@@ -1110,14 +1110,14 @@ dg-publish: true
 > **Temas siguientes:**
 > 
 > - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
-> - [[Rectas y Planos en R3]] - Ecuaciones vectoriales
-> - [[Superficies en R3]] - Vectores normales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 1 - Geometría Analítica en ℝ³/III – Rectas y Planos/01 - Rectas en R3.md]] - Ecuaciones vectoriales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/II. Visualización de Funciones Multivariables/03 – Superficies de Nivel.md]] - Vectores normales
 > 
 > **Aplicaciones avanzadas:**
 > 
 > - [[03 – Campos conservativos e independencia del camino#Teorema de Stokes|Teorema de Stokes]] - Circulación y flujo
 > - [[03 – Campos conservativos e independencia del camino#Teorema de la Divergencia|Teorema de la Divergencia]] - Flujo a través de superficies
-> - [[Ecuaciones de Maxwell]] - Electromagnetismo
+> - Ecuaciones de Maxwell - Electromagnetismo
 > 
 > **Temas relacionados:**
 > 

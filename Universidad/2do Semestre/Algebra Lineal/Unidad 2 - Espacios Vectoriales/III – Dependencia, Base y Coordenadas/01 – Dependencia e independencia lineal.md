@@ -1485,13 +1485,16 @@ dg-publish: true
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Método de verificación
 > - **[[02 - Operaciones con matrices]]** - Representación matricial
 > - **[[03 – Espacio generado por un conjunto de vectores]]** - Contexto de span
+
+> - **08 - Matrices y Operaciones** - Representación matricial
+> - **09 - Espacio Generado** - Contexto de span
 > 
 > ### Este tema es prerequisito para:
 > 
 > - **[[02 – Base y dimensión]]** - Conjuntos independientes que generan
-> - **[[12 - Espacio Columna y Rango]]** - Independencia de columnas
-> - **[[13 - Espacio Nulo]]** - Soluciones y dependencia
-> - **[[14 - Coordenadas y Cambio de Base]]** - Representación única
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Independencia de columnas
+> - **13 - Espacio Nulo** - Soluciones y dependencia
+> - **14 - Coordenadas y Cambio de Base** - Representación única
 > - **[[01 – Transformaciones lineales]]** - Núcleo e inyectividad
 > 
 > ### Conceptos relacionados:

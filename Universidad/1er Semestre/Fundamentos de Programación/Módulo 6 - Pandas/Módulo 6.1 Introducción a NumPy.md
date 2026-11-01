@@ -420,7 +420,7 @@ dg-publish: true
 > 
 > **Prerrequisitos:**
 > 
-> - [[Python Fundamentals]] - Sintaxis básica de Python
+> - Python Fundamentals - Sintaxis básica de Python
 > - Python Lists - Manejo de listas en Python
 > - Basic Math Operations - Operaciones matemáticas básicas
 > 

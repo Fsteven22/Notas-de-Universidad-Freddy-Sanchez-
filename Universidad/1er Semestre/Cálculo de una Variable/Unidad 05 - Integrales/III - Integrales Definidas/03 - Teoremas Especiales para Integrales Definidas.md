@@ -341,7 +341,7 @@ dg-publish: true
 > 
 > ### 🎯 Notas Recomendadas
 > 
-> - [[Métodos de Integración]] - Técnicas que se benefician de estas propiedades
+> - [[1er Semestre/Cálculo de una Variable/Unidad 05 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]] - Técnicas que se benefician de estas propiedades
 > - Aplicaciones Físicas de Integrales - Contexto real de funciones periódicas
 > - Geometría de Curvas - Interpretación visual de simetrías
 > 
@@ -590,7 +590,7 @@ dg-publish: true
 > 
 > - [[01 - Continuidad y Límites#Teorema del Valor Intermedio|Teorema del Valor Intermedio]] - Herramienta clave en la demostración
 > - [[Aplicaciones de Integrales en Física]] - Uso del valor medio en problemas físicos
-> - [[Valor RMS y Aplicaciones Eléctricas]] - Aplicación específica del concepto
+> - Valor RMS y Aplicaciones Eléctricas - Aplicación específica del concepto
 > - [[Promedio de Funciones]] - Interpretación estadística del valor medio
 > 
 > ### 🎯 Notas Recomendadas

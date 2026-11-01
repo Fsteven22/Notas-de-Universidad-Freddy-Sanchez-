@@ -176,12 +176,12 @@ dg-publish: true
 > - **Aplicación**: Una vez conocida $\alpha$, se calcula $\omega$ y $\theta$
 > - **Ecuaciones**: $\omega = \omega_0 + \alpha t$, $\theta = \omega_0 t + \frac{1}{2}\alpha t^2$
 > 
-> ### [[Dinámica Lineal]]
+> ### Dinámica Lineal
 > 
 > - **Analogía directa**: $\sum F = ma$ ↔ $\sum \tau = I\alpha$
 > - **Conexión**: Movimiento de traslación y rotación simultáneos
 > 
-> ### [[Energía Cinética Rotacional]]
+> ### [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > 
 > - **Relación**: El trabajo rotacional $W = \tau \Delta\theta$ cambia la energía cinética
 > - **Conexión**: $K_{rot} = \frac{1}{2}I\omega^2$
@@ -229,15 +229,15 @@ dg-publish: true
 > - Momento de Torsión (Torque)
 > - [[Momento de Inercia]]
 > - [[Cinemática Rotacional]]
-> - [[Dinámica Lineal - Segunda Ley de Newton]]
-> - [[Energía Cinética Rotacional]]
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Práctica Segunda ley de Newton.md]]
+> - [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Rotacional.md]]
 > - [[Centro de masa (CM)]]
 > - [[Torque y Equilibrio Rotacional#Equilibrio Rotacional|Equilibrio Rotacional]]
 > 
 > ### 📖 Temas Avanzados
 > 
-> - [[Movimiento de Rodadura]]
-> - [[Sistemas de Múltiples Cuerpos]]
+> - Movimiento de Rodadura
+> - Sistemas de Múltiples Cuerpos
 > - Conservación del Momento Angular
 > - Análisis de Máquinas Rotativas
  

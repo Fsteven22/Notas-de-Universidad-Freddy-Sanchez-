@@ -354,7 +354,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Cinemática Rotacional]] - Fundamentos del movimiento circular
-> - [[Dinámica de Rotación]] - Segunda ley para rotación
+> - Dinámica de Rotación - Segunda ley para rotación
 > - [[Momento de Inercia]] - Distribución de masa
 > - [[Energía de Rotación]] - Aspectos energéticos
 
@@ -363,7 +363,7 @@ dg-publish: true
 > [!note] **Prerrequisitos**
 > 
 > - [[Vectores]] - Análisis vectorial
-> - [[Dinámica de Traslación]] - Leyes de Newton
+> - Dinámica de Traslación - Leyes de Newton
 > - [[Torque y Equilibrio Rotacional]] - Conceptos de momento
 
 ---

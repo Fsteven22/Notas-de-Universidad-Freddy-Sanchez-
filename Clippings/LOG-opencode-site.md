@@ -244,3 +244,20 @@ tags: [clippings, log, opencode-site]
 
 ---
 **Tags:** #clippings #log #opencode-site
+
+> ### Ronda de links autorizada por el usuario (30/10/2026)
+>
+> | Commits | Que | Verificado |
+> |---|---|---|
+> | `2cec9b0` | 180 wikilinks redirigidos (104 targets REDIRIGIR del reporte) | 190 ocurrencias detectadas, 180 aplicadas (10 autorreferencias) |
+> | `cc2dfae` | 522 wikilinks neutralizados (sin-destino) | 532 detectadas, 522 aplicadas en 167 notas |
+> | `83b755b` | 20 notas republicadas | 10 con BOM + 10 Leemes sin frontmatter |
+>
+> - **Medición:** `qa_links.py` **BAD 852 · 150** (1039 al abrir el carril C). Sync: **815 publicadas · 9 omitidas · 2850 assets**.
+> - **BOM:** 11 `.md` del vault tenían BOM UTF-8; rompe el regex `^---` del frontmatter de
+>   `sync-vault.mjs`. Al quitarlo, **0 palabras cambiadas** (verificado byte a byte). El de
+>   Física Mecánica también estaba oculto por eso.
+> - **Hallazgo para el carril B/D1:** `00 - Leeme Unidad 0.md` de BD tiene **mojibake**
+>   (no es doble-codificación pura) · reportado, **no tocado**.
+> - **Pendiente del usuario:** los **76 targets `REVISAR`** del reporte (destino sugerido en otra
+>   materia; aplicarlos crearía links engañosos). Neutralizo a medida que me lo indique.

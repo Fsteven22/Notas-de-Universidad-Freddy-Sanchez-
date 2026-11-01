@@ -1166,6 +1166,10 @@ dg-publish: true
 > - **[[01 – Gradiente y Derivadas Direccionales]]** - $df = \nabla f \cdot d\vec{r}$
 > - **[[15 - Optimización]]** - Condición $df = 0$ para extremos
 > - **[[20 - Integrales de Línea]]** - Diferenciales exactos e inexactos
+
+> - **11 - Gradiente** - $df = \nabla f \cdot d\vec{r}$
+> - **15 - Optimización** - Condición $df = 0$ para extremos
+> - **[[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/II - Integrales de Línea/02 – Integrales de línea escalares.md]]** - Diferenciales exactos e inexactos
 > 
 > **Conceptos relacionados:**
 > 
@@ -1178,7 +1182,7 @@ dg-publish: true
 > 
 > - [[01 – Límite de Funciones de Varias Variables]]
 > - [[02 – Continuidad]]
-> - [[07 - Límites en Varias Variables]]
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]
 
 ---
 

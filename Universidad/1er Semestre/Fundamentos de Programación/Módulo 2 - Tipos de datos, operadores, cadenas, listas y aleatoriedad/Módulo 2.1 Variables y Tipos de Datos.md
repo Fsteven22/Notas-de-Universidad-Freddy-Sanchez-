@@ -342,7 +342,7 @@ dg-publish: true
 > ### 🔧 **Prerrequisitos**
 > 
 > - Instalación Python y IDE
-> - [[Conceptos Básicos Programación]]
+> - Conceptos Básicos Programación
 > - [[Sintaxis Básica Python]]
 > - Comentarios en Python
 > 

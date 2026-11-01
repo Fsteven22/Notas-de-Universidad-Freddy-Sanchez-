@@ -768,28 +768,37 @@ dg-publish: true
 > - [[03 - Inyectividad y Sobreyectividad]] - Biyectividad
 > - [[01 - Dimensión y descripción del conjunto solución]] - Clasificación dimensional
 > - [[06 - Independencia lineal]] - Preservación de bases
+
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/08 – Teorema de la dimensión (Rango–Nulidad).md]] - Clasificación dimensional
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Preservación de bases
 > 
 > **Temas directamente relacionados:**
 > 
 > - [[06 - Matriz Inversa]] - Representación matricial
+<<<<<<< HEAD
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Isomorfismos coordenados
+> - 07 - Espacios cociente - Primer teorema de isomorfismo
+> - 19 - Núcleo e Imagen - Caracterización
+=======
 > - [[06 - Cambio de base]] - Isomorfismos coordenados
 > - [[07 - Espacios cociente]] - Primer teorema de isomorfismo
 > - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización
+>>>>>>> origin/master
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[24 - Valores propios]] - Similitud de matrices
-> - [[25 - Diagonalización]] - Isomorfismo diagonal
-> - [[30 - Formas canónicas]] - Clasificación
-> - [[35 - Espacios con producto interno]] - Isomorfismos isométricos
+> - 24 - Valores propios - Similitud de matrices
+> - 25 - Diagonalización - Isomorfismo diagonal
+> - 30 - Formas canónicas - Clasificación
+> - 35 - Espacios con producto interno - Isomorfismos isométricos
 > - [[08 – Teorema espectral]] - Isomorfismos unitarios
 > 
 > **Conceptos avanzados:**
 > 
-> - [[45 - Grupos de Lie]] - GL(n) como grupo
-> - [[50 - Teoría de representaciones]] - Módulos isomorfos
-> - [[55 - Teoría de categorías]] - Isomorfismo universal
-> - [[60 - K-teoría]] - Isomorfismos topológicos
+> - 45 - Grupos de Lie - GL(n) como grupo
+> - 50 - Teoría de representaciones - Módulos isomorfos
+> - 55 - Teoría de categorías - Isomorfismo universal
+> - 60 - K-teoría - Isomorfismos topológicos
 
 ## 📚 Bibliografía Esencial
 

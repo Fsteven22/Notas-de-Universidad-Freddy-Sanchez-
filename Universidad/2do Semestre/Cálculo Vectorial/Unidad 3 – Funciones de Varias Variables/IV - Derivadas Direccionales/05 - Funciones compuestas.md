@@ -2248,21 +2248,23 @@ dg-publish: true
 > **➡️ Extensiones directas:**
 > 
 > - [[01 – Diferencial Total de una Función f(x,y)]] - Aproximación lineal de funciones compuestas
+
+> - 05 - Diferencial Total - Aproximación lineal de funciones compuestas
 > - [[04 - Teorema de la Función Implícita]] - Derivadas de ecuaciones implícitas
 > - [[05 - Funciones compuestas#Teorema de la Función Inversa|Teorema de la Función Inversa]] - Relación con derivadas de inversas
 > 
 > **🔧 Aplicaciones:**
 > 
-> - [[Backpropagation en Redes Neuronales]] - Algoritmo de entrenamiento
-> - [[Optimización con Gradiente Descendente]] - Minimización de funciones
-> - [[Dinámica de Sistemas]] - Ecuaciones diferenciales acopladas
+> - Backpropagation en Redes Neuronales - Algoritmo de entrenamiento
+> - Optimización con Gradiente Descendente - Minimización de funciones
+> - Dinámica de Sistemas - Ecuaciones diferenciales acopladas
 > - [[Cambio de Variable en Integrales]] - Teorema del cambio de variable
 > 
 > **🌐 Temas relacionados:**
 > 
-> - [[Formas Diferenciales]] - Generalización geométrica
-> - [[Cálculo Tensorial]] - Derivadas en variedades
-> - [[Automatic Differentiation]] - Implementación computacional
+> - Formas Diferenciales - Generalización geométrica
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas en variedades
+> - Automatic Differentiation - Implementación computacional
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
 > 
 > ## 📖 Tabla Resumen

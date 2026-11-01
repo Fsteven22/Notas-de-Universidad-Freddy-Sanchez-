@@ -340,7 +340,7 @@ dg-publish: true
 > - [[01 - Análisis Completo de Funciones]] - Aplicación en graficación
 > 
 > ### 📖 Para Profundizar
-> - [[Teoremas de Valor Medio]] - Aplicación de la derivabilidad
+> - Teoremas de Valor Medio - Aplicación de la derivabilidad
 > - [[05 – Funciones de Clase C¹]] - Grados de suavidad
 > - Análisis Real - Tratamiento riguroso
 > - Topología - Conceptos de continuidad generalizados
@@ -349,7 +349,7 @@ dg-publish: true
 > - [[01 - Problemas de Optimización]] - Búsqueda de extremos
 > - [[Aproximaciones Lineales]] - Uso de tangentes
 > - [[02 - Razones de Cambio Relacionadas]] - Aplicaciones dinámicas
-> - [[Ecuaciones Diferenciales Básicas]] - Modelado con derivadas
+> - Ecuaciones Diferenciales Básicas - Modelado con derivadas
 > 
 
 ### 🏷️ Tags

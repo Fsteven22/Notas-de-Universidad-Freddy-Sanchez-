@@ -849,19 +849,21 @@ dg-publish: true
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Subespacios
 > - [[02 – Combinación lineal]] - Span
-> - [[06 - Independencia lineal]] - Bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases
 > - [[05 – Espacio columna]] - Concepto dual
 > 
 > **Temas relacionados:**
-> - [[18 - Espacio nulo]] - Complemento ortogonal
-> - [[19 - Rango y nulidad]] - Teorema dimensional
+> - 18 - Espacio nulo - Complemento ortogonal
+> - 19 - Rango y nulidad - Teorema dimensional
 > - [[01 – Transformaciones lineales]] - Dualidad
 > - [[03 – Ortogonalidad y conjuntos ortonormales]] - Proyecciones
+
+> - 22 - Ortogonalidad - Proyecciones
 > 
 > **Aplicaciones posteriores:**
-> - [[25 - Mínimos cuadrados]] - Descomposición ortogonal
-> - [[26 - Descomposición QR]] - Ortogonalización
-> - [[27 - SVD]] - Cuatro subespacios
+> - 25 - Mínimos cuadrados - Descomposición ortogonal
+> - 26 - Descomposición QR - Ortogonalización
+> - 27 - SVD - Cuatro subespacios
 > - [[28 - Espacios fundamentales]] - Teoría completa
 
 ## 📚 Recursos Adicionales

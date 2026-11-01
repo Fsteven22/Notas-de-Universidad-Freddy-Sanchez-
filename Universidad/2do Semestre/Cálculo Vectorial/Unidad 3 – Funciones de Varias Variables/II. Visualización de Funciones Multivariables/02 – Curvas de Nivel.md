@@ -1728,7 +1728,7 @@ dg-publish: true
 > 
 > ### Próximo Tema
 > 
-> **[[05 - Límites en Varias Variables]]**
+> **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]**
 > 
 > - Límites de funciones de dos variables
 > - Continuidad

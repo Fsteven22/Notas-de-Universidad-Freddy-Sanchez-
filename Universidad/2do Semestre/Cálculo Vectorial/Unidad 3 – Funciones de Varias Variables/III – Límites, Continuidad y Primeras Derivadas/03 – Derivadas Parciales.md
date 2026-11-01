@@ -1156,6 +1156,10 @@ dg-publish: true
 > - [[01 – Gradiente y Derivadas Direccionales]] - Vector formado por derivadas parciales
 > - [[01 – Gradiente y Derivadas Direccionales]] - Generalización de derivadas parciales
 > - [[15 - Optimización]] - Condiciones de primer y segundo orden
+
+> - 11 - Gradiente - Vector formado por derivadas parciales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/01 – Gradiente y Derivadas Direccionales.md]] - Generalización de derivadas parciales
+> - 15 - Optimización - Condiciones de primer y segundo orden
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
 > 
 > **Conceptos relacionados:**

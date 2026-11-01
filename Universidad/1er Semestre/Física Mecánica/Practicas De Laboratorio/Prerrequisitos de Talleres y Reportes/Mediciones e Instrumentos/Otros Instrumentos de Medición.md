@@ -407,6 +407,8 @@ dg-publish: true
 > 
 > - [[Mediciones Fundamentales]] - Conceptos básicos
 > - [[Uso del Calibrador de Vernier (Pie de Rey)]] - Instrumento de precisión
+
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Mediciones e Instrumentos/Uso del Calibrador de Vernier (Pie de Rey).md]] - Instrumento de precisión
 > - [[Errores Absolutos y Relativos]] - Análisis de precisión
 > - [[Incertidumbres Experimentales]] - Propagación de errores
 
@@ -423,7 +425,7 @@ dg-publish: true
 > 
 > - [[Cifras Significativas]] - Expresión correcta de resultados
 > - Calibración de Instrumentos - Verificación de precisión
-> - [[Técnicas Experimentales]] - Métodos avanzados
+> - Técnicas Experimentales - Métodos avanzados
 
 ---
 

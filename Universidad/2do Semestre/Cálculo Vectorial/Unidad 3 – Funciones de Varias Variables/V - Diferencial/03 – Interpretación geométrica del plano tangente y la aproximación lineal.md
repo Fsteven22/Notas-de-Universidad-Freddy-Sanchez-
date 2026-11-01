@@ -1181,23 +1181,36 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[01 – Gradiente y Derivadas Direccionales]] - Extensión del plano tangente
+
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]] - Concepto de aproximación
+> - [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/02 – Continuidad.md]] - Condición necesaria
+> 
+> **Temas relacionados:**
+> 
+> - 04 - Derivada Direccional y Gradiente - Extensión del plano tangente
 > - [[02 - Regla de la Cadena]] - Composición de funciones
-> - [[06 - Extremos y Optimización]] - Usa la Hessiana
+> - 06 - Extremos y Optimización - Usa la Hessiana
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Teorema de Taylor en R²]] - Aproximaciones de orden superior
-> - [[Ecuaciones Diferenciales Parciales]] - EDPs sobre superficies
+> - Teorema de Taylor en R² - Aproximaciones de orden superior
+> - Ecuaciones Diferenciales Parciales - EDPs sobre superficies
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y formas fundamentales
-> - [[Cálculo Variacional]] - Optimización de funcionales
+> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Optimización de funcionales
 > 
 > **Conexiones interdisciplinarias:**
 > 
 > - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
+<<<<<<< HEAD
+> - Termodinámica - Funciones de estado
+> - Economía Matemática - Funciones de utilidad
+> - [[Aprendizaje Automático]] - Gradiente descendente
+=======
 > - [[Termodinámica]] - Funciones de estado
 > - [[Economía Matemática]] - Funciones de utilidad
 > - [[Machine Learning]] - Gradiente descendente
+>>>>>>> origin/master
 
 ---
 

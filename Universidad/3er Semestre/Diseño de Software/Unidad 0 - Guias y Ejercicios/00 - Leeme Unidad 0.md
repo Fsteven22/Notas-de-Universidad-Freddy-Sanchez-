@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
 # 📚 Unidad 0 — Diseño de Software
 
 > [!info] Índice de recursos de la unidad

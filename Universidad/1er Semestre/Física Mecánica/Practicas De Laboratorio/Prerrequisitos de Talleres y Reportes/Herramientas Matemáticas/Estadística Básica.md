@@ -873,8 +873,8 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Incertidumbres Experimentales]] - Aplicación de estadística
-> - [[Análisis de Errores]] - Marco conceptual
-> - [[Regresión Lineal]] - Análisis de relaciones
+> - [[1er Semestre/Física Mecánica/Practicas De Laboratorio/Prerrequisitos de Talleres y Reportes/Análisis de Datos y Errores/Tipos de Errores.md]] - Marco conceptual
+> - Regresión Lineal - Análisis de relaciones
 > - Pruebas de Hipótesis - Inferencia estadística
 
 ## 📈 Extensiones Avanzadas
@@ -914,7 +914,7 @@ dg-publish: true
 
 > [!note] **Prerrequisitos**
 > 
-> - [[Conceptos Básicos de Medición]] - Fundamentos experimentales
+> - Conceptos Básicos de Medición - Fundamentos experimentales
 > - **Matemáticas**: Álgebra básica, funciones
 > - **Calculadora científica**: Operaciones estadísticas
 

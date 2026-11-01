@@ -736,7 +736,7 @@ dg-publish: true
 
 > [!note] **Prerrequisitos**
 > 
-> - [[Fundamentos de Hidrostática e Hidrodinámica]] - Base teórica
+> - Fundamentos de Hidrostática e Hidrodinámica - Base teórica
 > - [[Unidades y Magnitudes Físicas]] - Consistencia dimensional
 > - [[Vectores]] - Para análisis de velocidades
 > - [[Conocimientos Previos a las Prácticas]] - Fundamentos matemáticos

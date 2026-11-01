@@ -255,7 +255,7 @@ dg-publish: true
 
 - [[02 - Área entre Curvas]] - Concepto base en coordenadas rectangulares
 - [[02 - Coordenadas polares]] - Sistema de coordenadas fundamental
-- [[Curvas Paramétricas]] - Representación paramétrica de curvas
+- [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md]] - Representación paramétrica de curvas
 - [[03 – Integrales de línea vectoriales#Teorema de Green|Teorema de Green]] - Método alternativo usando teoremas vectoriales
 - [[02 - Transformaciones entre Coordenadas]] - Cambios entre sistemas
 
@@ -264,13 +264,13 @@ dg-publish: true
 - [[Integrales Dobles en Polares]] - Extensión a regiones más generales
 - [[Cálculo Vectorial]] - Aplicaciones del teorema de Green
 - Geometría Diferencial - Curvas en espacios más generales
-- [[Análisis Complejo]] - Representación de curvas usando números complejos
+- Análisis Complejo - Representación de curvas usando números complejos
 
 ### 🎯 Aplicaciones
 
 - [[Centros de Masa en Polares]] - Usando estas técnicas para centroides
 - [[Momento de Inercia]] - Aplicaciones en física e ingeniería
-- [[Diseño de Engranajes]] - Aplicaciones industriales de curvas especiales
+- Diseño de Engranajes - Aplicaciones industriales de curvas especiales
 - Astronomía y Órbitas - Cálculos orbitales usando coordenadas polares
 
 ### 🏷️ Tags

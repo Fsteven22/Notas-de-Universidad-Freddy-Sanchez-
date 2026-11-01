@@ -1223,12 +1223,12 @@ dg-publish: true
 > 
 > - [[02 - Vectores en R3]] - Caso concreto ℝⁿ
 > - [[05.2 - Operaciones con vectores]] - Suma y producto
-> - [[Álgebra abstracta]] - Estructuras algebraicas
+> - Álgebra abstracta - Estructuras algebraicas
 > 
 > **Temas relacionados:**
 > 
 > - [[01 – Transformaciones lineales]] - Funciones entre espacios
-> - [[09.3 - Matrices y transformaciones]] - Representación
+> - 09.3 - Matrices y transformaciones - Representación
 > - [[01 - Valores y Vectores propios]] - Diagonalización
 > - [[01 – Producto interno]] - Espacios con geometría
 > 

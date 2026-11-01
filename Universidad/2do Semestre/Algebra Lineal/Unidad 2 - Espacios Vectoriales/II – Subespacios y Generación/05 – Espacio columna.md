@@ -686,19 +686,19 @@ dg-publish: true
 > **Fundamentos previos:**
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios y subespacios
 > - [[02 – Combinación lineal]] - Generación de vectores
-> - [[06 - Independencia lineal]] - Bases
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases
 > - [[05 - Sistemas de ecuaciones lineales]] - Consistencia
 > 
 > **Temas relacionados:**
 > - [[06 – Espacio fila]] - Dual del espacio columna
-> - [[18 - Espacio nulo]] - Kernel de transformación
-> - [[19 - Rango y nulidad]] - Teorema fundamental
+> - 18 - Espacio nulo - Kernel de transformación
+> - 19 - Rango y nulidad - Teorema fundamental
 > - [[01 – Transformaciones lineales]] - Imagen
 > 
 > **Aplicaciones posteriores:**
-> - [[25 - Mínimos cuadrados]] - Proyecciones
-> - [[26 - Descomposición QR]] - Ortogonalización
-> - [[27 - Valores singulares]] - SVD
+> - 25 - Mínimos cuadrados - Proyecciones
+> - 26 - Descomposición QR - Ortogonalización
+> - 27 - Valores singulares - SVD
 > - [[28 - Espacios fundamentales]] - Teoría completa
 
 ## 📚 Recursos Adicionales

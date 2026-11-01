@@ -181,7 +181,7 @@ dg-publish: true
 > 
 > - 01 - Derivada y Definición Formal - Definición formal de derivada
 > - [[01 - Funciones]] - Conceptos básicos de funciones
-> - [[Álgebra]] - Manipulación algebraica
+> - Álgebra - Manipulación algebraica
 > - Trigonometría - Para derivadas trigonométricas
 > 
 > **Temas complementarios:**

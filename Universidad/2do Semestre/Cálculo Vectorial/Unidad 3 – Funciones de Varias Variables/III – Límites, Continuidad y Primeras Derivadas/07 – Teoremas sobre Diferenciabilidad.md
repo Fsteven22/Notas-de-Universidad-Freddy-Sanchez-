@@ -1283,6 +1283,8 @@ dg-publish: true
 > 
 > - **[[Derivadas Parciales]]** - Base para todo
 > - **[[01 – Gradiente y Derivadas Direccionales]]** - Caso especial
+
+> - **[[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/IV - Derivadas Direccionales/01 – Gradiente y Derivadas Direccionales.md]]** - Caso especial
 > - **[[04 – Diferenciabilidad]]** - Concepto fundamental
 > - **[[05 – Funciones de Clase C¹]]** - Hipótesis central
 > - **[[06 – Matriz Jacobiana]]** - Herramienta principal
@@ -1294,7 +1296,7 @@ dg-publish: true
 > - **[[01 - Multiplicaciones de Lagrange]]** - Usa función implícita
 > - **[[02 - Optimización con Restricciones]]** - Aplicación directa
 > - **[[01 – Integrales múltiples]]** - Cambio de variables válido
-> - **[[17 - Teoremas Integrales]]** - Condiciones de regularidad
+> - **17 - Teoremas Integrales** - Condiciones de regularidad
 > - **Geometría Diferencial** - Superficies y variedades
 > - **Ecuaciones Diferenciales** - Existencia y unicidad
 > - **Análisis Complejo** - Funciones holomorfas

@@ -1599,7 +1599,7 @@ dg-publish: true
 > - [[Derivadas Parciales]] - Las derivadas requieren continuidad
 > - [[04 – Diferenciabilidad]] - Diferenciable → continua (pero no viceversa)
 > - [[02 - Regla de la Cadena]] - Se basa en composición de funciones continuas
-> - [[15 - Optimización]] - TVE garantiza existencia de extremos
+> - 15 - Optimización - TVE garantiza existencia de extremos
 > - [[01 – Integral doble|20 - Integrales Dobles]] - Funciones continuas son integrables
 > 
 > **Conceptos relacionados:**
@@ -1609,7 +1609,7 @@ dg-publish: true
 > - **Diferenciabilidad** - Condición más fuerte que continuidad
 > - **Integrabilidad** - Funciones continuas (o casi) son integrables
 > 
-> **Siguiente tema recomendado:** [[08 - Derivadas Parciales de Funciones de Varias Variables]]
+> **Siguiente tema recomendado:** [[2do Semestre/Cálculo Vectorial/Unidad 3 – Funciones de Varias Variables/III – Límites, Continuidad y Primeras Derivadas/01 – Límite de Funciones de Varias Variables.md]]
 
 ---
 

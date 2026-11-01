@@ -672,25 +672,25 @@ dg-publish: true
 > [!quote] 🌟 Enlaces Conceptuales **Prerequisites:**
 > 
 > - [[02 - Vectores en R3]] - Base fundamental
-> - [[Trigonometría]] - Funciones cos, arccos
-> - [[Álgebra Básica]] - Operaciones con números reales
+> - Trigonometría - Funciones cos, arccos
+> - Álgebra Básica - Operaciones con números reales
 > 
 > **Temas siguientes:**
 > 
 > - [[02 – Producto cruz y áreas]] - Otra operación vectorial
 > - [[03 – Aplicaciones geométricas básicas]] - Uso combinado
-> - [[Rectas y Planos]] - Ecuaciones usando producto punto
+> - Rectas y Planos - Ecuaciones usando producto punto
 > 
 > **Aplicaciones avanzadas:**
 > 
 > - [[08 - Desigualdad de Cauchy–Schwarz#Espacios con Producto Interno|Espacios con Producto Interno]] - Generalización
-> - [[Transformaciones Ortogonales]] - Preservan producto punto
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/01 – Transformaciones lineales.md]] - Preservan producto punto
 > - [[07 - Matriz de una Transformación Lineal#Diagonalización|Diagonalización]] - Vectores propios ortogonales
 > 
 > **Temas relacionados:**
 > 
 > - [[04 – Proyección ortogonal]] - Aplicaciones detalladas
-> - [[Bases Ortonormales]] - Sistemas perpendiculares
+> - Bases Ortonormales - Sistemas perpendiculares
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Descomposición QR|Descomposición QR]] - Ortogonalización de Gram-Schmidt
 
 ## 💡 Consejos y Errores Comunes

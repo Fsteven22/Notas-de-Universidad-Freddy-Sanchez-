@@ -257,7 +257,7 @@ dg-publish: true
 > 
 > - [[Viscosidad y Número de Reynolds]]
 > - Esfuerzos Cortantes en Fluidos
-> - [[Gradientes de Velocidad]]
+> - Gradientes de Velocidad
 > - Balance de Fuerzas
 >
 

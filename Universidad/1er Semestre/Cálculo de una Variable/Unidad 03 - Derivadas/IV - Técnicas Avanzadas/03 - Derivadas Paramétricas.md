@@ -278,7 +278,7 @@ dg-publish: true
 > - Universidad/1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Base fundamental del método
 > - [[01 - Derivación Implícita]] - Conceptos relacionados
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Para curvas trigonométricas
-> - [[Derivadas Básicas]] - Necesarias para $dx/dt$ y $dy/dt$
+> - [[1er Semestre/Cálculo de una Variable/Unidad 03 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas.md]] - Necesarias para $dx/dt$ y $dy/dt$
 > 
 > ### Temas Relacionados
 > - [[01 - Rectas en R3#Ecuaciones Paramétricas|Ecuaciones Paramétricas]] - Definición de las curvas

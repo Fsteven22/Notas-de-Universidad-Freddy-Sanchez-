@@ -221,7 +221,7 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - [[Límites Básicos]] - Concepto de límite y límites laterales
+> - Límites Básicos - Concepto de límite y límites laterales
 > - [[02 – Dominio y Rango]] - Conceptos básicos de funciones
 > - Intervalos y Conjuntos - Notación de intervalos
 > - Desigualdades - Manipulación de desigualdades con valor absoluto
@@ -229,7 +229,7 @@ dg-publish: true
 > **Para profundizar:**
 > 
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización de continuidad uniforme
-> - [[Compacidad]] - Teoremas de Heine-Borel y Heine-Cantor
+> - Compacidad - Teoremas de Heine-Borel y Heine-Cantor
 > - Conexidad - Generalización del Teorema del Valor Intermedio
 > - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Continuidad en espacios más generales
 > - [[Ecuaciones Diferenciales]] - TVI en existencia de soluciones

@@ -312,7 +312,7 @@ dg-publish: true
 > [!quote] **Notas Relacionadas**
 > 
 > - [[Leyes de Newton]] - Fundamentos teóricos
-> - [[Ecuaciones Diferenciales Básicas]] - Herramientas matemáticas
+> - Ecuaciones Diferenciales Básicas - Herramientas matemáticas
 > - [[Trabajo y Energía]] - Métodos energéticos
 > - Oscilaciones - Fuerzas restauradoras
 
@@ -320,8 +320,8 @@ dg-publish: true
 
 > [!note] **Prerrequisitos**
 > 
-> - [[Cálculo Diferencial e Integral]] - Herramientas matemáticas
-> - [[Dinámica de Traslación]] - Conceptos básicos
+> - Cálculo Diferencial e Integral - Herramientas matemáticas
+> - Dinámica de Traslación - Conceptos básicos
 > - [[Vectores]] - Análisis vectorial
 
 ---

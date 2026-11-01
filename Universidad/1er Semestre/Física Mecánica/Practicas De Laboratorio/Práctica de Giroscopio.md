@@ -187,16 +187,18 @@ dg-publish: true
 > [!quote] 🔗 **Enlaces a Otras Notas**
 > 
 > - [[Momentum Angular]]
+
+> - [[1er Semestre/Física Mecánica/04 - Impulso y Colisiones (Lineal)/Momentum Lineal y Su Conservación.md]]
 > - Rotación de Cuerpos Rígidos
 > - [[Torque y Equilibrio Rotacional]]
 > - [[Sistemas de Referencia Inerciales]]
-> - [[Aplicaciones de la Mecánica Rotacional]]
+> - Aplicaciones de la Mecánica Rotacional
 
 ## 📖 Notas Recomendadas
 
 > [!tip] 📋 **Para Complementar el Estudio**
 > 
-> - [[Principio de Conservación del Momento Angular]]
+> - [[1er Semestre/Física Mecánica/02 - Dinámica/Dinámica de Rotación/Momentum Angular.md]]
 > - Movimiento de Precesión en Trompos
 > - Efectos Giroscópicos en Ingeniería
 > - Historia y Desarrollo del Giroscopio

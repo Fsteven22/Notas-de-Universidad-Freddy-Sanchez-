@@ -1352,14 +1352,16 @@ dg-publish: true
 > - **[[02 – Combinación lineal]]** - Definición fundamental del span
 > - **[[05 - Sistemas de ecuaciones lineales]]** - Para verificar pertenencia
 > - **[[02 - Operaciones con matrices]]** - Método de reducción por filas
+
+> - **08 - Matrices y Operaciones** - Método de reducción por filas
 > 
 > ### Este tema es prerequisito para:
 > 
-> - **[[10 - Independencia Lineal]]** - Conjuntos sin redundancia
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Conjuntos sin redundancia
 > - **[[02 – Base y dimensión]]** - Conjuntos generadores minimales
-> - **[[12 - Espacio Columna y Rango]]** - Span de columnas de una matriz
-> - **[[13 - Espacio Nulo]]** - Soluciones como span
-> - **[[14 - Coordenadas y Cambio de Base]]** - Representación única
+> - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/05 – Espacio columna.md]]** - Span de columnas de una matriz
+> - **13 - Espacio Nulo** - Soluciones como span
+> - **14 - Coordenadas y Cambio de Base** - Representación única
 > - **[[01 – Transformaciones lineales]]** - Imagen como span
 > 
 > ### Conceptos relacionados:
@@ -1387,7 +1389,7 @@ dg-publish: true
 > 
 > ### Siguiente tema recomendado:
 > 
-> **[[10 - Independencia Lineal]]** - Para entender cuándo un conjunto generador no tiene redundancia
+> **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]]** - Para entender cuándo un conjunto generador no tiene redundancia
 
 ---
 

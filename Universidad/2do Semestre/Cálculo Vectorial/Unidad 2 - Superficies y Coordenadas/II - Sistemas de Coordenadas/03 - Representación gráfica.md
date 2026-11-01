@@ -1350,16 +1350,16 @@ v
 > 
 > **Aplicaciones:**
 > 
-> - [[Electromagnetismo]] - Ley de Gauss, campos
-> - [[Mecánica Clásica]] - Problemas con simetría
+> - Electromagnetismo - Ley de Gauss, campos
+> - Mecánica Clásica - Problemas con simetría
 > - [[Física Mecánica|Física Cuántica]] - Átomo de hidrógeno
 > - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Modelado 3D
 > 
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas y curvaturas
-> - [[Teoría de Campos]] - Representación de campos vectoriales
-> - [[Análisis Tensorial]] - Tensores en coordenadas curvilíneas
+> - Teoría de Campos - Representación de campos vectoriales
+> - Análisis Tensorial - Tensores en coordenadas curvilíneas
 
 ---
 

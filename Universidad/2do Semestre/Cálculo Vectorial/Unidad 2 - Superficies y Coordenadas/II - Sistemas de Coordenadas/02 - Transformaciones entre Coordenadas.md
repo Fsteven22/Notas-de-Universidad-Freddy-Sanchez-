@@ -919,25 +919,25 @@ dg-publish: true
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Base de coordenadas cartesianas
 > - [[02 - Vectores en R3]] - Magnitudes y operaciones
-> - [[Trigonometría]] - Funciones seno, coseno, arctan
+> - Trigonometría - Funciones seno, coseno, arctan
 > 
 > **Temas relacionados:**
 > 
-> - [[01.3 Distancia en el Espacio]] - Fórmulas en diferentes sistemas
+> - 01.3 Distancia en el Espacio - Fórmulas en diferentes sistemas
 > - [[01 – Integrales múltiples]] - dV en diferentes coordenadas
 > - [[04 – Funciones vectoriales de variable vectorial#Campos Vectoriales|Campos Vectoriales]] - Representación en distintos sistemas
 > 
 > **Aplicaciones:**
 > 
-> - [[Electromagnetismo]] - Coordenadas cilíndricas y esféricas
-> - [[Mecánica Celeste]] - Órbitas planetarias (esféricas)
+> - Electromagnetismo - Coordenadas cilíndricas y esféricas
+> - Mecánica Celeste - Órbitas planetarias (esféricas)
 > - [[Ecuaciones Diferenciales]] - Problemas con simetría
 > 
 > **Temas avanzados:**
 > 
-> - [[Factores de Escala]] - Métricas en coordenadas curvilíneas
+> - Factores de Escala - Métricas en coordenadas curvilíneas
 > - [[01 - Coordenadas cilíndricas y esféricas#Operadores Diferenciales|Operadores Diferenciales]] - ∇, ∇², en diferentes sistemas
-> - [[Coordenadas Generalizadas]] - Mecánica lagrangiana
+> - Coordenadas Generalizadas - Mecánica lagrangiana
 
 ---
 

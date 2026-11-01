@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
 # 📚 Unidad 0 — Cálculo de una Variable
 
 > [!info] Índice de recursos de la unidad

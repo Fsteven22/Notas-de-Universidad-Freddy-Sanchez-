@@ -426,7 +426,7 @@ dg-publish: true
 > [!note] 📖 Para Complementar tu Aprendizaje
 > - Parámetros *args y **kwargs - Argumentos variables
 > - [[Funciones Lambda]] - Funciones anónimas
-> - [[Decoradores]] - Modificar comportamiento de funciones
+> - Decoradores - Modificar comportamiento de funciones
 > - Módulos y Paquetes - Organizar funciones en archivos
 > - [[Programación Orientada a Objetos]] - Métodos como funciones de clase
 > - [[04 - Excepciones en Java#Manejo de Excepciones|Manejo de Excepciones]] - Control de errores en funciones

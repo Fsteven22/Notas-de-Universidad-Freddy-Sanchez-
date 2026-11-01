@@ -360,7 +360,7 @@ dg-publish: true
 > ### Temas Complementarios
 > 
 > - Análisis Forense - Reconstrucción de accidentes
-> - [[Biomecánica]] - Choques en sistemas biológicos
+> - Biomecánica - Choques en sistemas biológicos
 > - Ingeniería de Seguridad - Diseño de sistemas de protección
 
 ---

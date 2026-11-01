@@ -833,24 +833,26 @@ dg-publish: true
 > **Fundamentos previos:**
 > 
 > - [[01 - Vectores en espacios vectoriales (definición y propiedades)|01 - Vectores en espacios vectoriales]] - Espacios vectoriales
-> - [[06 - Independencia lineal]] - Bases y dimensión
+> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/01 – Dependencia e independencia lineal.md]] - Bases y dimensión
 > - [[01 - Subespacios Vectoriales]] - Teoría de subespacios
 > - [[01 – Transformaciones lineales]] - Definición de T
 > - [[02 – Núcleo e imagen de una transformación lineal]] - Subespacios fundamentales
+
+> - 19 - Núcleo e Imagen - Subespacios fundamentales
 > 
 > **Temas directamente relacionados:**
 > 
 > - [[05 – Espacio columna]] - Imagen como espacio columna
-> - [[17 - Espacio nulo]] - Núcleo como espacio nulo
-> - [[21 - Rango de matrices]] - Aplicación a matrices
+> - 17 - Espacio nulo - Núcleo como espacio nulo
+> - 21 - Rango de matrices - Aplicación a matrices
 > - [[05 - Sistemas de ecuaciones lineales]] - Solubilidad
 > 
 > **Aplicaciones posteriores:**
 > 
-> - [[24 - Valores propios]] - Ker(T - λI)
-> - [[25 - Diagonalización]] - Análisis espectral
-> - [[30 - Proyecciones]] - Descomposición
-> - [[35 - SVD]] - Descomposición fundamental
+> - 24 - Valores propios - Ker(T - λI)
+> - 25 - Diagonalización - Análisis espectral
+> - 30 - Proyecciones - Descomposición
+> - 35 - SVD - Descomposición fundamental
 > - [[08 – Teorema espectral]] - Operadores autoadjuntos
 
 ## 📚 Bibliografía Esencial

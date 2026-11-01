@@ -1356,7 +1356,7 @@ dg-publish: true
 >         
 >         # Intercambiar filas si es necesario
 >         if pivote_fila != fila_actual:
->             U[[fila_actual, pivote_fila]] = U[[pivote_fila, fila_actual]]
+>             Ufila_actual, pivote_fila = Upivote_fila, fila_actual
 >         
 >         # Eliminación hacia abajo
 >         for fila in range(fila_actual + 1, m):
@@ -2609,7 +2609,7 @@ dg-publish: true
 > 
 > - [[01 - Algoritmo de Gauss]] - Proceso para obtener FE
 > - [[05 - Sistemas de ecuaciones lineales]] - Contexto de aplicación
-> - [[Matrices]] - Objeto base de estudio
+> - Matrices - Objeto base de estudio
 > 
 > **Se usa en:**
 > 
@@ -2628,9 +2628,9 @@ dg-publish: true
 > **Aplicaciones avanzadas:**
 > 
 > - [[Espacios Fundamentales]] - Nul(A), Col(A), Row(A)
-> - [[Descomposición LU]] - Relacionada con factorización
+> - Descomposición LU - Relacionada con factorización
 > - [[03 – Ortogonalidad y conjuntos ortonormales#Mínimos Cuadrados|Mínimos Cuadrados]] - Resolución de sistemas inconsistentes
-> - [[Pseudoinversa de Moore-Penrose]] - Generalización
+> - Pseudoinversa de Moore-Penrose - Generalización
 
 ## 🎓 Consejos Finales para Exámenes
 

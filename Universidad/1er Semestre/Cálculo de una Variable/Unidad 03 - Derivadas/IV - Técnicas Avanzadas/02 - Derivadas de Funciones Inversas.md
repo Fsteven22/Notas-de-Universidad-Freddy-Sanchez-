@@ -283,7 +283,7 @@ dg-publish: true
 > ### Temas Relacionados
 > - [[Integrales de Funciones Inversas]] 🔄 - Proceso inverso
 > - [[02 - Derivación Logarítmica]] 🔄 - Usa derivada de ln(x)
-> - [[Límites Indeterminados]] - Para verificar comportamiento límite
+> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/V – Formas Indeterminadas/01 - Formas Indeterminadas.md]] - Para verificar comportamiento límite
 > - [[01 - Propiedades y Teoremas de los Límites#Funciones Trigonométricas|Funciones Trigonométricas]] - Para entender las inversas
 > 
 > ### Aplicaciones
