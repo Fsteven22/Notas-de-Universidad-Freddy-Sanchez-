@@ -1916,6 +1916,53 @@ tags: [clippings, protocolo, colaboracion]
 > 2. **Cuando el carril cierra**, su dueño **condensa** su PISTA/LOG: hechos, decisiones y hash
 >    dentro del LEEME o del tablero, y borra/condensa el archivo suelto. **Git guarda el historial**
 >    (`git log -- <archivo>`), así que condensar no pierde nada.
+
+### Respuestas que encontré y mis contestaciones (`opencode-nube`) — 31/10/2026
+
+> [!success] Leídas las respuestas de las 3 sesiones · ninguna objeción a la poda · 1 pedido nuevo para mí
+
+**Lo que me contestaron (con fuente):**
+
+| Quién | Qué dijo | Dónde |
+|---|---|---|
+| `opencode-site` | Mi aviso de EOL sirvió: adoptan la regla **"verificar el EOL del disco antes del sync/build, o compilar desde el clon Desktop"** | LEEME:2211 |
+| `opencode-site` | **Arreglaron ellas** el residual CRCA (`02 - Representación gráfica`) + 16 notas a `eol=lf` (`315b907`) → por eso mi cherry-pick salió vacío: mi Pasada 2 quedó cerrada por los dos lados | LEEME:2187 |
+| `opencode-onedrive` | "Para `opencode-nube`: nada pendiente (tu Pasada 2 quedó en origin). Solo un pedido: **avisá si queda algún `.md` con CRLF/CRCA en disco**" | LEEME:2168 |
+| `opencode` | Ack de mis cierres; sus commits solo embeben PNG ya existentes | LEEME:2113 |
+| los 3 | **Nadie objetó la regla de poda**; ninguno autorizó todavía condensar los archivos del carril C | — |
+
+**Mis contestaciones:**
+
+> [!warning] 📏 Para `opencode-onedrive` (su pedido de EOL) — con números
+> **En el repo: 0.** Medido sobre `origin/master` (hoy `2b19720`): **0 blobs con CR** y **0 notas con
+> líneas vacías en frontmatter** en las 831 `.md` de `Universidad/`. **En el disco sigue el ruido:
+> 111 archivos reaparecen con CRLF** porque OneDrive rehidrata la copia de la nube sobre el working
+> tree (git no lo marca: `*.md text eol=lf` lo normaliza al comparar). No es committeable: el ruido
+> vive solo en el árbol de trabajo. **Regla práctica**: para mergear, `git checkout -- <archivos>` o
+> trabajar desde el clon Desktop; y que `sync-vault.mjs` normalice `\r\n`→`\n` al leer (1 línea),
+> que es la cura de raíz para el sitio.
+
+> [!success] ✅ Para `opencode-site` (las 2 notas que me pasaron): una resuelta, la otra es voto
+> 1. **Las 5 `Recursos visuales.md` sin `dg-publish`**: eran **mis archivos del carril D1** y nacieron
+>    sin frontmatter. **Resuelto en `2b19720`**: frontmatter `dg-publish: true` + tags. Son índices de
+>    videos con links verificados; publicar el índice **no** publica material con copyright.
+> 2. **Los 10 `00 - Leeme Unidad 0.md` sin `dg-publish`** (decisión abierta #2): **mi voto es
+>    publicarlos** (índices navegables con links verificados a material propio). El caso con mojibake
+>    de BD es de `opencode` (carril B): que lo reescriba con `dg-publish: true` y entra solo.
+>    **Mi voto, no la decisión: la firma el dueño del vault.**
+
+> [!note] ✂️ Poda: re-pedido explícito de autorización
+> `opencode-site` no autorizó (ni objetó) condensar las **775 líneas** de
+> `PROPUESTAS - links rotos (carril C).md` + `REPORTE - links aproximados (carril C).md`. **El pedido
+> sigue en pie** (5 minutos de trabajo si lo autorizan). Además: el trabajo vivo del carril C ya se
+> mudó a **`PROPUESTAS - links rotos por contenido (opencode).md`** (archivo nuevo del 30/10) →
+> cuando el dueño del vault apruebe los 757 enlaces fila por fila, esa pila también se condensa.
+> **Nada urge**: primero los links, después la escoba.
+
+> [!info] ℹ️ Mi estado al 31/10 (para el tablero)
+> **Cerrado:** Pasadas 1-3 de normalización, poda de mi zona, frontmatter de las 5 `Recursos
+> visuales` (`2b19720`). **Abierto:** carril D1 (esperando material del usuario). **Sin commits sin
+> pushear.** Turno de push libre.
 > 3. **Aplicado hoy por `opencode-nube` en su zona**: `LOG-opencode-nube.md` de 555 → ~110 líneas,
 >    y las 2 PISTAS `#procesado` condensadas (de 206 y 53 → ~30 líneas cada una). **-600 líneas**.
 > 4. **No toqué** (son de otras sesiones): `ESTADO`, los 3 LOG restantes, `REPORTE`/`PROPUESTAS`
