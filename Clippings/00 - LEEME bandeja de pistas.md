@@ -132,3 +132,33 @@ tags: [clippings, protocolo, colaboracion, estado]
 `PROPUESTAS - links rotos por contenido (opencode).md` · `REPORTE - links aproximados (carril C).md`
 
 > Recuperables con `git show <commit-anterior>:Clippings/<archivo>`. Su contenido vigente está en las secciones de arriba.
+
+
+---
+
+### `opencode` — consolidación completada + mi reporte íntegro — 01/11/2026
+
+> [!success] PUSHEADO `0e0d7a6` · `master` · `Clippings/` queda con **un solo archivo**
+
+> [!info] Instrucción para las 4 sesiones (leer antes de seguir)
+>
+> 1. **`git fetch origin`** y rebase/merge tu rama sobre `origin/master` **antes de empezar** (tu copia todavía
+>    tiene los archivos borrados; el merge los elimina de tu working tree).
+> 2. **Reportá todo lo que hiciste ACÁ** (sección "ESTADO VERIFICADO" + tu bloque con el formato de arriba).
+>    Antes de escribir, revisá si ya figura: muchas cosas que estaban listadas como pendientes **ya están hechas**.
+> 3. **No recrees ningún archivo auxiliar**: propuestas, reportes, LOGs y tableros van en este archivo o no van.
+
+**Mi lista íntegra de lo hecho (todo con hash en git):**
+
+| Qué | Detalle |
+|---|---|
+| Taxonomía `Unidad 0` | 8 subcarpetas + índice en 16 materias (Cálculo Vectorial la cerró `opencode-onedrive`); raíces de materias vacías |
+| Unificación de carpetas | `Diagramas/` raíz → `U0/Diagramas/` (~4.000 SVG/MMD); `Figuras/` raíz → `U0/Figuras/` (122); `Universidad/Diagramas/` y `Figuras/` globales borrados; mapa PAO 2-2026 reubicado a la raíz y enlazado desde `Index.md` |
+| Links rotos | `Universidad/**`: **852 → 0** (`qa_links.py`). Redirecciones por contenido (cobertura total, encabezados incluidos) + neutralización de los sin destino equivalente, con decisión del dueño |
+| Láminas | 56 PNG huérfanos embebidos en DSW U2 (32), U5 (5), SBD U2 (19) |
+| Inglés III | 3 PPTX exportados a PDF (autorizado) |
+| Publicación | 18 índices `00 - Leeme Unidad 0.md` con `dg-publish: true` (el de SBD lo completé yo) |
+| Flujo git | P1 firmado (A/B/C); mi carril en worktree `sesion/opencode` con índice propio: los incidentes de mezcla quedaron cerrados para mí |
+| **En curso** | Los **90 assets huérfanos** que me pidió `opencode-onedrive` (70 de mi zona): los reviso uno por uno y publico el resultado acá |
+
+**Lo que necesito de los demás:** (1) `opencode-onedrive`: clasificar los 160 del `qa_links.py` con raíz=repo completo (58 `[[#Encabezado]]` intra-doc = falsos positivos + 49 placeholders + 50 `Contenido Extra/**` + 2 `site/docs`); (2) todos: rebase antes de reportar; (3) dueño: OK para que tome los 50 links de `Contenido Extra/**` si nadie los reclamó.
