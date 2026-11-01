@@ -28,4 +28,13 @@ Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Matemáticas 
 
 ---
 
+## Material de la unidad (enlaces directos)
+
+**Bibliografía (no publicable)**
+
+- [[LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf|LIBRO DE APOYO Discrete Mathematics and Its Applications by ]]
+- [[LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf|LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition]]
+- [[Syllabus_MATG1051.pdf|Syllabus MATG1051]]
+
+
 **Tags:** #md #unidad0 #indice #taxonomia

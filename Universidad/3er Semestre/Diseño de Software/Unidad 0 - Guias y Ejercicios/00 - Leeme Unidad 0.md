@@ -28,4 +28,27 @@ Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Diseño de So
 
 ---
 
+## Material de la unidad (enlaces directos)
+
+**Diapositivas/**
+
+- [[01aPoliticasCurso-2026-2.pdf|01aPoliticasCurso-2026-2]]
+- [[01bDisenoSoftware.pdf|01bDisenoSoftware]]
+- [[02bParadigmasDiseño.pdf|02bParadigmasDiseño]]
+- [[Diagrama de secuencia.pdf|Diagrama de secuencia]]
+
+**Exámenes/**
+
+- [[2023_2PAO_Examen_Parcial_CCPG1042.pdf|2023 2PAO Examen Parcial CCPG1042]]
+
+**Bibliografía (no publicable)**
+
+- [[01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf|01 Software Engineering A Practitioners Approach (Roger S. P]]
+- [[02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf|02 Using UML Software Engineering with Objects and Component]]
+- [[03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf|03 Design patterns explained a new perspective on object-ori]]
+- [[04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf|04 Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edi]]
+- [[Clean Architecture - Robert C. Martin (libro completo).pdf|Clean Architecture - Robert C. Martin (libro completo)]]
+- [[SPA-SyllabusEUR_ACE-CCPG1042.pdf|SPA-SyllabusEUR ACE-CCPG1042]]
+
+
 **Tags:** #dsw #unidad0 #indice #taxonomia

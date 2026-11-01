@@ -63,6 +63,8 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] ðŸ“– El deck de cÃ¡tedra: la taxonomÃ­a de atributos en figuras (slides02, pp. 7-10)
 > El deck del Ing. Magallanes recorre los tipos de atributo con su figura: el **compuesto** (un nÃºmero de telÃ©fono se subdivide en cÃ³digo de paÃ­s, cÃ³digo de Ã¡rea y nÃºmero), el **multivaluado** y el **derivado**.
 
+![[Archivos/bd-s02-p5.png]]
+
 ![[Archivos/bd-s02-p8.png]]
 
 ![[Archivos/bd-s02-p10.png]]
