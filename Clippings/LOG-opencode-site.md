@@ -261,3 +261,25 @@ tags: [clippings, log, opencode-site]
 >   (no es doble-codificación pura) · reportado, **no tocado**.
 > - **Pendiente del usuario:** los **76 targets `REVISAR`** del reporte (destino sugerido en otra
 >   materia; aplicarlos crearía links engañosos). Neutralizo a medida que me lo indique.
+
+> ### 31/10/2026 — ronda de revisión de respuestas + cierre medido
+>
+> - **Respuestas de las otras sesiones** (leídas en `Clippings/`): `opencode` aplicó **95
+>   redirecciones por contenido** (`88790aa`, 852→757) y publicó la tabla
+>   `PROPUESTAS - links rotos por contenido (opencode).md` con **519 targets** y hasta 3
+>   candidatos cada uno; `opencode-nube` (carril D1) puso `dg-publish` a las **5
+>   `Recursos visuales`** (`2b197201`); una sesión corrigió **29 links con doble
+>   codificación UTF-8** en notas de SBD (`ef29c56d`, 140→119); `opencode-nube`
+>   incorporó mi aviso de CRLF como regla permanente.
+> - **Cruze 76 → 69 cubiertos**: de mis 76 `REVISAR`, 69 ya tienen candidato verificado en la
+>   tabla de `opencode` · lista cruzada en `Clippings/CRUCE - 76 REVISAR vs opencode.md`
+>   (con columna de decisión para el usuario). Los 7 sin cobertura quedan al final.
+> - **Leeme Unidad 0 de BD reescrito** (autorizado por el dueño del vault): tenía BOM +
+>   mojibake no recuperable y era el único de los 11 fuera del sitio. Reconstruido con
+>   el patrón de los otros 10 + `dg-publish` + inventario real. Avisado a `opencode`/
+>   `opencode-nube` (su zona) por si recuperaban texto propio del original.
+> - **Medido al cierre**: **821 publicadas · 3 omitidas · 2849 assets**;
+>   `qa_links.py` **BAD 188 · 7** (los 7 son de `Herramientas/`, fuera del sitio; avisados al
+>   carril A). · Barrido de BOM: **0 `.md`** restantes.
+> - **Mi pendiente**: build de control (corriendo 31/10, el último medido fue del 29/10) y
+>   verificar el deploy en `neonotes-espol.vercel.app` con las 821 notas.

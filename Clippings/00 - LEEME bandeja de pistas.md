@@ -2518,3 +2518,11 @@ tipo deberían desaparecer aunque sigamos en un solo clon.
 > original corrupto, lo recuperó de git y lo fusiono. Contenido medido tras el cambio:
 > **821 publicadas · 3 omitidas · 2849 assets** y `qa_links.py` **BAD 7** (todos en
 > `Herramientas/`, fuera del sitio).
+
+> [!note] Aviso a `opencode-onedrive` (carril A) — 31/10/2026
+>
+> Con el carril C cerrado quedan **7 BAD**, todos en `Herramientas/` (zona tuya, y no se
+> publican en el sitio): `Herramientas/README.md` (link a `Diagramas/`),
+> `Herramientas/SVGs por recrear.md` (`...`, que ya no existe como lista) y
+> `Herramientas/Scripts/GUIA-OFFICE-A-MARKDOWN.md` (`...`). Si querés los reviso yo,
+> decime; si no, quedan documentados ací.

@@ -16,8 +16,8 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > - `master` = `origin/master` = **`9325dd6`**, 0 conflictos, 0 ramas pendientes de integrar. Working tree **limpio** tras la reformulación a callouts de los 7 `.md` de `Clippings/` (`4289a3f` → `9325dd6`).
 > - **Plan de carriles (esta tabla es la cola real):** §0 "🚦 Plan de carriles" — A (scripts `.py`) · B (figuras) · C (Mermaid→SVG + **los 1026 links rotos**) · D (material nuevo 3er Sem.). Cada carril tiene dueño, zona y salida verificable.
 > - **Decisiones del usuario cerradas (28/10):** copyright → **se ignora al publicar** (lista negra `_no-publicar.txt`, sin lista blanca ni `_privado/`) · **1026 links rotos** → al carril C · web en **`neonotes-espol.vercel.app`** (`neonotes.vercel.app` es de otro proyecto) · **teléfono → no aplica** (era AutoSync con la institucional, migración cancelada) · **papelera ya vaciada** · material nuevo en las carpetas **`Unidad 0 - Guías y Ejercicios`** de cada materia de 3er Sem.
-> - Sitio: **795 notas publicadas · 28 omitidas · 2624 assets referenciados · 17 patrones / 59 archivos excluidos** (medido 30/10 tras integrar la reestructuracion Unidad 0 + Pasadas 1 y 2; `opencode-site`).
-> - Build de control: **832 páginas Astro (833 `.html`)**, 0 errores. Se compila en un **worktree en disco local** (`wt-build`), nunca dentro de OneDrive (ver R1 de `opencode-nube`).
+> - Sitio: **821 notas publicadas · 3 omitidas · 2849 assets referenciados · 17 patrones / 59 archivos excluidos** (medido 31/10 por `opencode-site`: ronda de links + BOM + Leeme BD + dg-publish de las 5 Recursos visuales por carril D1).
+> - Build de control (31/10): **847 páginas Astro**, 0 errores, 190 s · el último medido fue 832 (29/10, antes de la ronda de links: 821 notas publicadas vs 806). Compilado en el clon Desktop, nunca dentro de OneDrive (ver R1 de `opencode-nube`).
 > - OneDrive: **la cuenta personal (5 GB) queda como vault activo y ya NO está topada**: el cliente reporta **2,5 GB de 5 GB (50%)**, el muro de cuota está despejado y hay **0 archivos pendientes de subida**. Raíz local **1.975 MB** tras borrar `site/public/assets/` (650 MB, artefacto de build, 28/10 00:30) y el `.git/` huérfano de la raíz (23 MB, 28/10 01:00, **con respaldo local**). La **institucional (1 TB) queda dada de alta pero VACÍA** (migración cancelada el 27/10 18:20). Lo que topaba la cuenta era **historial de versiones (30 días) + duplicados que git no versiona**: solo queda `.obsidian/` (162 MB) en la nube.
 > - **Verificado por `opencode` (17:40)** y luego **eliminado por decisión del usuario (18:20)**: la copia institucional era un **clon git íntegro** (`Universidad/` 1.110 MB con 818 `.md`, `.git/` 658 MB, `master` 0/0 con `origin`, árbol limpio). **Producción verificada:** `/3er-semestre/ingles-iii/unit-1-can-we-talk/recursos-adicionales/speaking-practice-2/` → **HTTP 200**.
 > - ✅ **Riesgo resuelto (18:20):** al eliminar la copia institucional queda **un solo clon** (el personal). Los **12 archivos con ruta literal** `OneDrive\OneSyncFiles` y el **fallback de `sync-vault.mjs:20`** vuelven a ser **correctos** (apuntan al vault real). **P6 vuelve a ser "solo si algún día se decide migrar".**
@@ -265,6 +265,14 @@ tags: [clippings, estado, sesiones, plan, tablero]
 > [!warning] ⏳ Qué falta
 >
 > 1. **Esperar tu revisión** de `Clippings/REPORTE - links aproximados (carril C).md` (180 targets con acción propuesta `REDIRIGIR` / `REVISAR`) → aplico lo que marques, verifico con `qa_links.py` y pusheo.
+> 2. **Build de control**: corriendo 31/10 tras la ronda de links (el último
+>   build medido fue del 29/10). Pendiente verificar el deploy en
+>   `neonotes-espol.vercel.app` con las 821 notas.
+> 3. **Lista cruzada lista**: `Clippings/CRUCE - 76 REVISAR vs opencode.md` · 69 de
+>   mis 76 `REVISAR` ya tienen candidato verificado en la tabla de `opencode`;
+>   espero tu OK fila por fila para aplicar (criterio: contenido, no nombre).
+> 4. **7 BAD restantes**, todos en `Herramientas/` (fuera del sitio): links internos
+>   de docs de scripts · los reporto al carril A (`Herramientas/**` es su zona).
 > 2. Verificar el deploy cuando Vercel termine y reportar.
 > 3. **Las 5 `Recursos visuales.md` de 3er Semestre** nacieron sin `dg-publish: true` → hoy quedan **omitidas** del sitio. Decidir si se publican (zona `opencode` / `opencode-nube`).
 > 4. **Cerrar los 554 targets**: 180 aproximados (en revisión) + **374 `sin-destino`** → Crear nota o neutralizar (quitar `[[ ]]`).
