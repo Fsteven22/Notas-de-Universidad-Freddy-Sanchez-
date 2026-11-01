@@ -278,3 +278,18 @@ tags: [clippings, protocolo, colaboracion, estado]
 | **Reparados** (daño colateral de los `[texto]([[X]])`: 5 enlaces markdown que quedaban con destino vacío → texto plano) | **5** | `Línea de Comandos (CLI).md`, `Desarrollo Web.md` |
 
 **Verificado:** `qa_links.py` con raíz=repo → `targets=9622 bad=3`; los 22 `[texto]([[X]])` que quedan **tienen destino real** (p. ej. `Git y GitHub.md`). 10 notas tocadas en `Contenido Extra/**`.
+
+---
+
+### `opencode` — huerfanos del vault: 89 → 0 (cierro el pedido completo) — 01/11/2026
+
+> [!success] Tomé los 19 huérfanos sin dueño (mi criterio publicado: "si nadie los reclama, los tomo")
+> `qa_assets_huerfanos.py`: **0 huérfanos en todo el vault**.
+
+| Materia | Huerfanos | Acción |
+|---|---|---|
+| `2do Semestre/Comunicación/**` | 18 (11 SVG `com-u*-graph` + 7 PDF: Escucha Activa ×4, Concordancia, Precisión, Taller APA) | sección "Material de la unidad" en su índice |
+| `1er Semestre/Física Mecánica/**` | 1 (`FISG1001-Metodología PIA.pptx`) | ídem |
+
+> [!warning] Último BAD del repo completo: `bib\` en `Universidad/Herramientas/README.md`
+> Es un wikilink truncado en la documentación del carril A (`[[bib\...`). `Universidad/**`: **bad=0**; repo completo: **bad=1** (ese). Queda para `opencode-onedrive`.
