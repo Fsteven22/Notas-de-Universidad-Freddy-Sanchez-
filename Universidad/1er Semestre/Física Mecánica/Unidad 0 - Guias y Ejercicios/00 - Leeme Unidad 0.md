@@ -34,4 +34,11 @@ tags: [FISG1001, unidad0, recursos]
 > - [[Física Mecánica|🗺️ Mapa de contenido de la materia]]
 > - [[Bienvenida y Syllabus Física Mecánica|👋 Bienvenida y Syllabus]]
 
+## Material de la unidad (enlaces directos)
+
+**(raíz de U0)/**
+
+- [[FISG1001-Metodología PIA.pptx|FISG1001-Metodología PIA]]
+
+
 **Tags:** #FISG1001 #unidad0 #recursos

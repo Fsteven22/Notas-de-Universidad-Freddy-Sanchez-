@@ -20,7 +20,7 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 >
 > **En esta nota:** (lista de lo que cubre, 1 línea por bloque.)
 
-![[<% tp.system.prompt("Nombre del SVG de intro (en Diagramas de la materia, sin .svg)") %>.svg]]
+!<% tp.system.prompt("Nombre del SVG de intro (en Diagramas de la materia, sin .svg)") %>.svg
 
 ---
 
@@ -98,7 +98,7 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 >
 > [!tip] 📏 Regla de enunciado original: todo ejercicio de examen/taller/lección trae su resumen en lista MÁS el enunciado original verbatim en un `> > [!quote]- 📄 Enunciado original` colapsado debajo del pedido (con fuente y nota de figuras si las hay).
 >
-> [!tip] 📏 Regla de diagramas: los diagramas ya NO van inline en Mermaid. Se escribe el código en un archivo `.mmd`/scratch, se compila con `mmdc` (`npx mmdc -i x.mmd -o x.svg`) y se embebe con `![[Diagramas/<Tema>_NN.svg]]` (los SVG viven en la carpeta `Diagramas` de cada materia, nombrados `<Nota_o_Tema>_NN`).
+> [!tip] 📏 Regla de diagramas: los diagramas ya NO van inline en Mermaid. Se escribe el código en un archivo `.mmd`/scratch, se compila con `mmdc` (`npx mmdc -i x.mmd -o x.svg`) y se embebe con `!Diagramas/<Tema>_NN.svg` (los SVG viven en la carpeta `Diagramas` de cada materia, nombrados `<Nota_o_Tema>_NN`).
 >
 > [!tip] 📏 Regla de código dentro de callouts: un fence (```mermaid/```python) dentro de un callout NO lleva líneas vacías (cortan el callout en Live Preview) ni líneas solo con `>` (se ven literales dentro del código). Separa con comentarios reales (`# …`) o líneas continuas.
 >
@@ -164,7 +164,7 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 
 ## 📊 Resumen Visual
 
-![[<% tp.system.prompt("Nombre del SVG de resumen (en Diagramas de la materia, sin .svg)") %>.svg]]
+!<% tp.system.prompt("Nombre del SVG de resumen (en Diagramas de la materia, sin .svg)") %>.svg
 
 > [!success] 🔍 Comparación Final
 >
@@ -195,12 +195,12 @@ tags: [<% tp.system.prompt("Código materia (ej: IDIG2012)") %>, <% tp.system.pr
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[<% tp.system.prompt("Nota mapa de contenido") %>]]
-> - Índice: [[<% tp.system.prompt("Nota índice de unidad") %>]]
-> - Anterior: [[<% tp.system.prompt("Nota anterior (vacío si es la 1)") %>]]
-> - Siguiente: [[<% tp.system.prompt("Nota siguiente (vacío si es la última)") %>]]
-> - Syllabus: [[<% tp.system.prompt("Nota bienvenida/syllabus") %>]]
-> - Base MOOC (si aplica): [[<% tp.system.prompt("Nota MOOC base (vacío si no aplica)") %>]]
+> - Mapa de contenido: <% tp.system.prompt("Nota mapa de contenido") %>
+> - Índice: <% tp.system.prompt("Nota índice de unidad") %>
+> - Anterior: <% tp.system.prompt("Nota anterior (vacío si es la 1)") %>
+> - Siguiente: <% tp.system.prompt("Nota siguiente (vacío si es la última)") %>
+> - Syllabus: <% tp.system.prompt("Nota bienvenida/syllabus") %>
+> - Base MOOC (si aplica): <% tp.system.prompt("Nota MOOC base (vacío si no aplica)") %>
 
 ## 📚 Referencias
 

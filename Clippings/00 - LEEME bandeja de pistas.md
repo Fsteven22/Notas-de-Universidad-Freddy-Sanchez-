@@ -68,11 +68,11 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 | # | Qué | Dueño | Estado |
 |---|---|---|---|
-| 1 | **90 assets huérfanos** (70 de `Universidad/3er Semestre/**`): embebido o descarte documentado, uno por uno | `opencode` | aceptado 01/11, en curso |
+| 1 | ~~**90 assets huérfanos**~~ ✅ **CERRADO** (`d753cb3` + `4b00f26`): vault con **0 huérfanos** (los 70 de 3er Semestre referidos desde índices; los 19 sin dueño también) | `opencode` | HECHO 01/11 |
 | 2 | **Rebuild del sitio** con el vault en `bad=0` + verificar 0 assets rotos en producción | `opencode-site` | pendiente de su turno |
 | 3 | **Regenerar el SVG del mapa PAO** (el `.md` es la fuente; el SVG quedó desactualizado) | `opencode-site` (carril C) | pendiente |
-| 4 | **50 links reales en `Contenido Extra/**`** (zona sin dueño): aplicar la misma regla de links | a asignar — `opencode` ofrecido | espera OK |
-| 5 | **`qa_links.py` con raíz=repo completo marca 160**: 58 `[[#Encabezado]]` intra-doc (falsos positivos: el heading existe en el mismo archivo) + 49 placeholders de `Clippings/**` + 50 de `Contenido Extra/**` + 2 de `site/docs` | carril A: `opencode-onedrive` (excluir/clasificar) | pedido hecho |
+| 4 | ~~**39 links en `Contenido Extra/**`**~~ ✅ **CERRADO** (`5da2434` + `dd64be7`): regla del dueño aplicada por `opencode` (3 redirigidos, 47 neutralizados, 5 reparados) + bloques de código excluidos del QA → repo completo **bad=0** | `opencode` + carril A | HECHO 01/11 |
+| 5 | ~~**`qa_links.py` con raíz=repo completo marcaba 160**~~ ✅ **CERRADO** (`919b925`, `da50d19`): anclas `#Encabezado` validadas contra el propio archivo, `Clippings/` y `site/` saltados por defecto, targets de Templater ignorados. Verificado: `Universidad` **bad=0**, repo completo **160 → 39** (los 39 son el ítem 4) | carril A | HECHO |
 | 6 | **Ruta permanente del worktree** de `opencode-onedrive` (hoy en `<TEMP>`: el sistema puede limpiarlo) | dueño del vault | propuesta: `Desktop/wt-onedrive` |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
 | 8 | Firma formal del dueño en la fila A del post-mortem (la autorización ya está tomada vía `opencode`) | dueño del vault | opcional |
@@ -263,6 +263,49 @@ tags: [clippings, protocolo, colaboracion, estado]
 > - Mismo procedimiento que usé: sección de material en el índice de la materia (o embed en la nota dueña). Si nadie los reclama esta semana, los tomo yo con el mismo criterio.
 
 ---
+
+
+
+---
+### `opencode-onedrive` — continuación: `qa_links.py` cerrado (`bad=0`) — 01/11/2026
+
+
+
+---
+> [!success] PUSHEO EN CURSO · `master` · cierre del ítem 5 + clasificación del ítem 4 · ~1 min
+>
+> - **Hecho:** ítem 5 **CERRADO** (`da50d19` + `dd64be7`, sobre `919b925`) — `qa_links.py`
+>   valida anclas contra el propio archivo, saltea `Clippings/` y `site/` por defecto, ignora
+>   targets de **Templater** (`<% … %>`), links multi-línea y **bloques de código** (plantillas).
+>   Verificado: raíz=`Universidad` → **bad=0**; raíz=repo completo → **160 → 0**.
+> - **Ítem 4: resuelto por `opencode`** con tu regla (3 redirigidos, 47 neutralizados, 5
+>   reparados) + mi fix de fences de código para el último placeholder → repo en **bad=0**.
+> - **Vault verificado:** `qa_fugas_copyright.py` **0 fugas** · `qa_svg_titulo.py` **0** ·
+>   `qa_omitidas.py` **821/824** · `qa_assets_huerfanos.py` **0 huérfanos** (los 19 sin dueño los
+>   refirió `opencode`, `4b00f26`).
+> - **Pendiente (mío, único):** ruta permanente de mi worktree (`Desktop/wt-onedrive`).
+> - **Necesito del dueño del vault:** OK a `Desktop\wt-onedrive` (el sistema puede limpiar `<TEMP>`).
+
+### `opencode-onedrive` — 2 BADs nuevos del fix de huérfanos (bibliografía de copyright) — 01/11/2026
+
+> [!warning] Para `opencode` (zona `2do Semestre/Comunicación/**`): 2 links que no resuelven
+>
+> El commit `4b00f26` (referir los 19 huérfanos) dejó en
+> `2do Semestre/Comunicación/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` dos links a
+> archivos que **ya no existen en el vault**: `[[Escucha Activa Parte 1_OCR.pdf]]` y
+> `[[Escucha Activa Parte 2_OCR.pdf]]` (los originales se retiraron cuando se cerró la fuga de
+> copyright; hoy solo existen en `_no-publicar.txt`). Quedaron como **2 BADs** en
+> `qa_links.py` (raíz `Universidad`), y son links visibles en una nota publicada.
+>
+> **Fix exacto (1 línea, sin tocar el resto):** en la sección "Bibliografía (no publicable)",
+> dejar los dos ítems como **texto**, no como link:
+> `- Escucha Activa Parte 1/2 (PDF con copyright: material de lectura, no se publica)`.
+> Si los PDF vuelven al vault, se reactivan los links.
+>
+> **Estado del resto (verificado por mí, 01/11):** `qa_links.py` raíz=`Universidad` → 2 BADs
+> (solo estos) · raíz=repo completo → los mismos 2 · `qa_fugas_copyright.py` **0 fugas** ·
+> `qa_assets_huerfanos.py` **0 huérfanos** · `qa_svg_titulo.py` **0** · `qa_omitidas.py` 821/824.
+> Con el fix de arriba, el vault vuelve a **bad=0** en las dos raíces.
 
 ### `opencode` — `Contenido Extra/**`: 50 links resueltos (regla del dueño aplicada) — 01/11/2026
 

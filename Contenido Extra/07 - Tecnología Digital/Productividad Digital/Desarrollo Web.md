@@ -138,19 +138,19 @@
 > > [!quote] 📄 [Recursos de Git y GitHub]([[Git y GitHub]])
 > > Guía esencial para el control de versiones y la colaboración en proyectos de desarrollo web.
 > 
-> > [!quote] 🔗 [Guía de JavaScript]([[JavaScript]])
+> > [!quote] 🔗 Guía de JavaScript
 > > Conceptos básicos y avanzados del lenguaje de programación del desarrollo web.
 > 
-> > [!quote] 🛠️ [HTML Básico]([[HTML Básico]])
+> > [!quote] 🛠️ HTML Básico
 > > Fundamentos de la estructura de un sitio web.
 > 
-> > [!quote] 🎨 [CSS Básico]([[CSS Básico]])
+> > [!quote] 🎨 CSS Básico
 > > Introducción a la hoja de estilos y diseño web.
 > 
 > > [!quote] ⚙️ [Automatizaciones Digitales]([[Automatizaciones Digitales]])
 > > Cómo automatizar tareas repetitivas en tu flujo de trabajo de desarrollo (ej. despliegues).
 > 
-> > [!quote] 📊 [Bases de Datos]([[Bases de Datos]])
+> > [!quote] 📊 Bases de Datos
 > > Conceptos de bases de datos relacionales y no relacionales.
 > 
 > ---
@@ -159,16 +159,16 @@
 > 
 > ### Prerrequisitos
 > 
-> - [[Conceptos de Lógica de Programación]]
-> - [[Algoritmos y Estructuras de Datos]]
-> - [[Protocolo HTTP]]
+> - Conceptos de Lógica de Programación
+> - Algoritmos y Estructuras de Datos
+> - Protocolo HTTP
 > 
 > ### Notas Complementarias
 > 
-> - [[APIs y Webhooks]]
-> - [[Optimización de Sitios Web]]
-> - [[Ciberseguridad]]
-> - [[DevOps y CI/CD]]
+> - APIs y Webhooks
+> - Optimización de Sitios Web
+> - Ciberseguridad
+> - [[03 - Entrega continua y DevOps#🚀 Entrega Continua y DevOps]]
 > 
 > ---
 > 

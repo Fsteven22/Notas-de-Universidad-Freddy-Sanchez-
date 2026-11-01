@@ -70,4 +70,31 @@ tags: [IDIG2012, unidad0, recursos]
 
 ---
 
+## Material de la unidad (enlaces directos)
+
+**(raíz de U0)/**
+
+- [[Concordancia y cohesión.pdf|Concordancia y cohesión]]
+- [[Escucha Activa Parte 1.pdf|Escucha Activa Parte 1]]
+- [[Escucha Activa Parte 1_OCR.pdf|Escucha Activa Parte 1 OCR]]
+- [[Escucha Activa Parte 2.pdf|Escucha Activa Parte 2]]
+- [[Escucha Activa Parte 2_OCR.pdf|Escucha Activa Parte 2 OCR]]
+- [[Precisión y claridad en la redacción.pdf|Precisión y claridad en la redacción]]
+- [[Taller Normas APA Básico.pdf|Taller Normas APA Básico]]
+
+**Diagramas/**
+
+- [[com-u1-02-01-graph.svg|com-u1-02-01-graph]]
+- [[com-u1-03-01-graph.svg|com-u1-03-01-graph]]
+- [[com-u1-04-01-graph.svg|com-u1-04-01-graph]]
+- [[com-u2-02-01-graph.svg|com-u2-02-01-graph]]
+- [[com-u2-03-01-graph.svg|com-u2-03-01-graph]]
+- [[com-u3-02-01-graph.svg|com-u3-02-01-graph]]
+- [[com-u3-03-01-graph.svg|com-u3-03-01-graph]]
+- [[com-u3-04-01-graph.svg|com-u3-04-01-graph]]
+- [[com-u4-02-01-graph.svg|com-u4-02-01-graph]]
+- [[com-u4-03-01-graph.svg|com-u4-03-01-graph]]
+- [[com-u4-04-01-graph.svg|com-u4-04-01-graph]]
+
+
 **Tags:** #IDIG2012 #unidad0 #recursos
