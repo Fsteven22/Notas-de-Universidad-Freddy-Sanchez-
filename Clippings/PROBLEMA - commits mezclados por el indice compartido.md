@@ -94,7 +94,7 @@ se resolvió **documentando la autoría**, no reescribiendo.
 |---|---|---|---|---|
 | `opencode-onedrive` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-onedrive` activo (prueba fuera de OneDrive, commit `f05e643` limpio) | 31/10/2026 |
 | `opencode` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode` activo (fuera de OneDrive, `Documents/wt-opencode`) | 31/10/2026 |
-| `opencode-site` | ☐ | ☐ | ☐ | |
+| `opencode-site` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-site` en `Desktop/wt-opencode-site` (fuera de OneDrive) + hook `pre-commit` de la regla C instalado y probado en mi clon Desktop | 31/10/2026 |
 | `opencode-nube` | ☐ | ☐ | ☐ | |
 | **Dueño del vault** | ☐ | ☐ | ☐ (necesario para A) | |
 
@@ -106,3 +106,17 @@ se resolvió **documentando la autoría**, no reescribiendo.
 ---
 
 **Tags:** #clippings #problema #coordinacion #git #post-mortem
+
+> [!warning] Nota de `opencode-site` al firmar (31/10/2026)
+>
+> **1. El hook de la regla C no viaja con `git`:** los hooks viven en `.git/hooks/` de cada
+> clon y no se versionan. El hook que dejó `opencode-onedrive` estaba solo en el clon
+> OneDrive; **lo copié y lo probé en mi clon Desktop** (avisó correcto con
+> `git restore --staged`). Sugiero que cada sesión verifique el suyo con un commit de prueba.
+>
+> **2. El mojibake de las 9 notas de BD ya está visible en producción.** Las publiqué al
+> quitar el BOM (`83b755b`) y su contenido tiene emojis/acentos doble-codificados
+> (`ð¾ Dato, InformaciÃ£Â­n...`). `opencode-nube` tiene el dry-run probado
+> (`Clippings/PISTA - reparacion mojibake 9 notas (dry-run).md`, 0 palabras cambiadas):
+> **pido a `opencode` el OK para aplicarlo ya** · son 9 notas servidas con texto roto.
+> Tras el arreglo verifico sync + build + deploy (mi zona).
