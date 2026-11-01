@@ -8,6 +8,10 @@
 #       python qa_links.py "<carpeta-vault>" -o reporte.txt --sugerir
 #       (agrega a cada BAD los candidatos de nota parecida para
 #        decidir crear / redireccionar / borrar)
+#       python qa_links.py "<repo-completo>" --incluir-docs
+#       (por defecto saltea Clippings/ y site/: sus [[...]] son ejemplos de
+#        documentacion, no links; y valida anclas [[#Encabezado]] del propio
+#        archivo como BAD-ANCLA solo si el encabezado no existe)
 
 KNOWN = (".md", ".pdf", ".png", ".svg", ".pptx", ".jpg", ".jpeg", ".gif", ".webp")
 
@@ -15,11 +19,24 @@ ap = argparse.ArgumentParser()
 ap.add_argument("root")
 ap.add_argument("-o", default=None)
 ap.add_argument("--sugerir", action="store_true")
+ap.add_argument("--incluir-docs", action="store_true",
+                help="incluir Clippings/ y site/ (coordinacion y codigo): tienen "
+                     "placeholders [[...]] a proposito; por defecto se saltean")
 args = ap.parse_args()
 
+DOCS_DIRS = ("Clippings", "site")
+
+def caminar(root):
+    """Igual que os.walk pero salteando derivados y (salvo --incluir-docs)
+    las carpetas de documentacion, cuyos [[...]] son ejemplos, no links."""
+    for dp, ds, fs in os.walk(root):
+        ds[:] = [d for d in ds if d not in (".obsidian", ".trash", ".git", "node_modules")]
+        if not args.incluir_docs:
+            ds[:] = [d for d in ds if d not in DOCS_DIRS]
+        yield dp, ds, fs
+
 names = set()
-for dp, ds, fs in os.walk(args.root):
-    ds[:] = [d for d in ds if d not in (".obsidian", ".trash", ".git", "node_modules")]
+for dp, ds, fs in caminar(args.root):
     for f in fs:
         names.add(f)
 
@@ -65,17 +82,35 @@ def partir_alias(t):
     return dest
 
 bad, total = [], 0
-for dp, ds, fs in os.walk(args.root):
-    ds[:] = [d for d in ds if d not in (".obsidian", ".trash", ".git", "node_modules")]
+HEAD_RE = re.compile(r"^#{1,6}\s+(.+?)\s*#*\s*$", re.M)
+
+def headings_de(t):
+    """Encabezados del propio archivo, para validar anclas [[#...]]."""
+    hs = set()
+    for h in HEAD_RE.findall(t):
+        h = h.strip().rstrip("#").strip()
+        for v in variantes(h):
+            hs.add(v)
+    return hs
+
+for dp, ds, fs in caminar(args.root):
     for f in fs:
         if not f.endswith(".md"):
             continue
         rel = os.path.relpath(os.path.join(dp, f), args.root)
         t = io.open(os.path.join(dp, f), encoding="utf-8").read()
+        headings = headings_de(t)
         for m in re.findall(r"\[\[([^\]]+)\]\]", t):
             total += 1
             dest = partir_alias(norm_target(m.strip()))
             if not dest:
+                continue
+            if dest.startswith("#"):
+                # ancla del propio archivo: rota solo si el encabezado no existe
+                ancla = dest.lstrip("#").strip()
+                if any(v in headings for v in variantes(ancla)):
+                    continue
+                bad.append("BAD-ANCLA: %s [en %s]" % (dest, rel))
                 continue
             if not existe(dest):
                 bad.append("BAD: %s [en %s]" % (dest, rel))

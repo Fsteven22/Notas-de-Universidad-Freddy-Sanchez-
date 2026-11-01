@@ -45,7 +45,7 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `fix_matematica.py` | 5-6. Matemática sin `$` / `$$` | Detecta LaTeX/caret/ecuaciones peladas; reporte humano (auto-fix requiere CSV línea a línea). |
 | `detect_fuera_callouts.py` | 7. Contenido fuera de callouts | Bloques huérfanos del estilo "mensaje dentro de callout" (tablas, fórmulas, datos); reporte. |
 | `fix_callouts.py` | (base) | Espacios que rompen callouts (`>   ` → `>`, trailing). |
-| `qa_links.py` | (base) | Verificador NFC/NFD-safe de todos los wikilinks. |
+| `qa_links.py` | (base) | Verificador NFC/NFD-safe de todos los wikilinks. Saltea `Clippings/` y `site/` por defecto (sus `[[...]]` son ejemplos de documentación: `--incluir-docs` para incluirlos) y valida anclas `[[#Encabezado]]` del propio archivo (`BAD-ANCLA` solo si el encabezado no existe). |
 | `pdf_a_texto.py` | (base) | PDF→txt + inventario vía PyMuPDF. |
 | `mdlib.py` | (lib) | walk_notes/load/save/report/callout — utilidades compartidas. |
 | `qa_all.py` | (entry) | Punto de entrada unico: ejecuta los 4 QA de arriba en orden y agrega codigos de salida. |
