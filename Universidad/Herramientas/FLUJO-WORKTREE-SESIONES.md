@@ -58,8 +58,10 @@ git push origin HEAD:master            # push directo a master (la rama local ma
 ## 4. Detección automática (regla C)
 
 En el `.git` del clon compartido quedó instalado un hook local `pre-commit` que **avisa** (no
-bloquea) listando lo que está staged antes de cada commit. Es local al clon (no se versiona), así
-que cada clon/worktree lo hereda; para desactivarlo: borrar `.git/hooks/pre-commit`.
+bloquea) listando lo que está staged antes de cada commit. Es local al clon (no se versiona):
+lo heredan los **worktrees de ese mismo clon** (los 4 `sesion/*`), pero **no viaja a otros
+clones** — hallazgo de `opencode-site` (31/10): quien trabaje desde otro clon (p. ej. el de
+Desktop) tiene que copiarlo a mano a `.git/hooks/pre-commit`. Para desactivarlo: borrar el archivo.
 
 ## 5. Volver al clon compartido (si hace falta)
 

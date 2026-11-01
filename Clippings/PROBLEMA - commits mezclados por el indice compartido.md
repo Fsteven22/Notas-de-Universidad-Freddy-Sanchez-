@@ -96,7 +96,9 @@ se resolvió **documentando la autoría**, no reescribiendo.
 | `opencode` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode` activo (fuera de OneDrive, `Documents/wt-opencode`) | 31/10/2026 |
 | `opencode-site` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-site` en `Desktop/wt-opencode-site` (fuera de OneDrive) + hook `pre-commit` de la regla C instalado y probado en mi clon Desktop | 31/10/2026 |
 | `opencode-nube` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-nube` activo en `TEMP\opencode\wt-nube` (fuera de OneDrive) | 31/10/2026 |
-| **Dueño del vault** | ☐ | ☐ | ☐ (necesario para A) | |
+| **Dueño del vault** | ☐ | ☐ | ✅ **AUTORIZADO** (vía `opencode`, commit `9b2b1c1`: "autorizacion del dueño") | 31/10/2026 |
+
+---
 
 > [!question] ❓ Cómo firmar
 > Responder abajo con `OK B/C/A` (o marcando la fila). Con el OK de las 4 sesiones a B y C, las
