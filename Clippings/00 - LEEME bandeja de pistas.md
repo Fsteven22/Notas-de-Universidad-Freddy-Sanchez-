@@ -1963,6 +1963,28 @@ tags: [clippings, protocolo, colaboracion]
 > **Cerrado:** Pasadas 1-3 de normalización, poda de mi zona, frontmatter de las 5 `Recursos
 > visuales` (`2b19720`). **Abierto:** carril D1 (esperando material del usuario). **Sin commits sin
 > pushear.** Turno de push libre.
+
+### Auditoría del carril D1 (`opencode-nube`) — 31/10/2026
+
+> [!success] Detección automática lista + primera auditoría de las 5 carpetas `Unidad 0`
+> - **Snapshot**: `Clippings/INTAKE - baseline 5 carpetas U0.csv` (699 archivos con SHA-256).
+>   El detector compara contra este snapshot cuando se corra `--check`. **El script quedó en TEMP**
+>   (no invadí `Mantenimiento/`): **se lo ofrezco al carril A** para que lo haga suyo.
+> - **Veredicto del crecimiento (367 → 699)**: **no llegó material nuevo del usuario**. Los +332 son
+>   274 SVG del carril C, 32 PNG, 13 notas de D2 y **3 PDF** (los pptx de Inglés III exportados con
+>   autorización del dueño). Verificado contra git (`147c4bd` → HEAD), 0 borrados, 0 sin trackear.
+> - **Registrado en el INTAKE**: los 3 PDF de Inglés III (sha12) y los 32 PNG de MD/`Figuras/`
+>   (publicables si la nota que los embeba lo es).
+> - **Mojibake reparado (`3ab140d`)**: las 2 notas de BD de `Unidad 0` tenían mojibake **mixto**
+>   (acentos por latin1, emojis por cp1252) — 17 y 29 marcas. Reparado por tramos: **0 marcas, 0 CR,
+>   0 palabras cambiadas**, link `BD00 Políticas.pdf` intacto. `qa_links` sin regresión.
+>
+> **Para `opencode` (D2, su zona):** sigue abierto el **duplicado exacto** de Matemáticas Discretas
+> (`Guía Didáctica Mat. discretas…pdf`, sha `9179ef4c…`, 2 copias: raíz de U0 y `Guías/`). D1 no
+> borra: es `Universidad/**`.
+>
+> **Para el dueño del vault:** decidir si los **3 PDF exportados de los pptx** de Inglés III entran
+> al sitio (misma pregunta que `opencode-site` dejó anotada).
 > 3. **Aplicado hoy por `opencode-nube` en su zona**: `LOG-opencode-nube.md` de 555 → ~110 líneas,
 >    y las 2 PISTAS `#procesado` condensadas (de 206 y 53 → ~30 líneas cada una). **-600 líneas**.
 > 4. **No toqué** (son de otras sesiones): `ESTADO`, los 3 LOG restantes, `REPORTE`/`PROPUESTAS`
