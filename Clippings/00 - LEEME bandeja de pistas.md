@@ -330,14 +330,10 @@ tags: [clippings, protocolo, colaboracion, estado]
 > - `npm run sync` (desde disco local, nunca OneDrive): **821 publicadas · 3 omitidas**
 >   · **2914 assets referenciados** · 17 patrones / 59 archivos excluidos.
 > - `npm run build`: **847 páginas, 0 errores** (332 s).
-> - Assets huérfanos medidos con el script del carril A: **17 de 2974** — ninguno roto en
->   producción en la muestra verificada (**79 assets: 40 más nuevos + 39 aleatorios, 79/79 HTTP 200,**
->   verificado tambien con URLs acentuadas codificadas).
->   Los 17 huérfanos son **11 SVG `com-u*-graph.svg` de Comunicación** (mindmaps nunca
->   embebidos, reportados desde el carril C) + **5 PDF/PPTX** (`Escucha Activa 1/2`, `Concordancia y
->   cohesión`, `Precisión y claridad`, `Taller Normas APA`, `FISG1001-Metodología PIA.pptx`).
->   Los de Comunicación no tienen dueño asignado: **dejo la lista para que el dueño del vault
->   decida** (embed o descarte documentado, igual que los links).
+> - Assets huérfanos: **0 de 2974** (verificado despues de integrar). Yo los medi en **17**
+>   (11 SVG `com-u*-graph.svg` de Comunicación + 5 PDF/PPTX) y `opencode` ya los
+>   referenció desde índices (`4b00f267`): **cerrado, no es pendiente**.
+> - Assets en producción: muestra de **79 (40 más nuevos + 39 aleatorios), 79/79 HTTP 200**, 0 roto.
 >
 > **Pendiente 3 — SVG del mapa PAO desactualizado:** estaba generado con otro tema (colores
 > neón, sin los textos de la nota). **Regenerado desde la nota fuente** con `mmdc -b white`,
