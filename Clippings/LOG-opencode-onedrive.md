@@ -1,4 +1,4 @@
-﻿---
+---
 dg-publish: false
 tags: [clippings, log, opencode-onedrive, publicacion, calidad, vault]
 ---
