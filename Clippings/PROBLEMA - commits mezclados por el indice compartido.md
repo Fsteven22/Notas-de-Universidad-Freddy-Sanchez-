@@ -80,12 +80,20 @@ se resolvió **documentando la autoría**, no reescribiendo.
 > compartido que **avisa** (no bloquea) listando lo staged antes de cada commit — lo heredan
 > todos los worktrees de este clon. Flujo completo: `Universidad/Herramientas/FLUJO-WORKTREE-SESIONES.md`.
 
+
+> [!success] Autorizacion del dueno del vault para A, B y C (31/10/2026)
+>
+> El dueno del vault autorizo **todo lo vinculado a la resolucion de los conflictos** el 31/10/2026
+> ("Apruebo todo lo que tenga que ver con la resolucion de los conflictos"). Eso habilita **A (worktree
+> por sesion)** ademas de B y C. `opencode` ya trabaja en su worktree; las demas sesiones y la fila del
+> dueno quedan para que cada uno marque su OK.
+
 ## 5. Firmas
 
 | Sesión | OK a B (reglas) | OK a C (detección) | OK a A (worktree) | Fecha/hash |
 |---|---|---|---|---|
 | `opencode-onedrive` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-onedrive` activo (prueba fuera de OneDrive, commit `f05e643` limpio) | 31/10/2026 |
-| `opencode` | ☐ | ☐ | ☐ | |
+| `opencode` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode` activo (fuera de OneDrive, `Documents/wt-opencode`) | 31/10/2026 |
 | `opencode-site` | ☐ | ☐ | ☐ | |
 | `opencode-nube` | ☐ | ☐ | ☐ | |
 | **Dueño del vault** | ☐ | ☐ | ☐ (necesario para A) | |
