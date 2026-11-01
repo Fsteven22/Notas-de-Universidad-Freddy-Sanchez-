@@ -252,8 +252,8 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > [!info] ðŸ“š Seguir estudiando
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
-> - Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
-> - Anterior: [[01 - ConversiÃ³n MC a ML por cardinalidad]]
+> - Ãndice Unidad 2: [[00 - Índice Unidad 2]]
+> - Anterior: [[01 - Conversión MC a ML por cardinalidad]]
 > - Siguiente: [[03 - Segunda y tercera forma normal]]
 
 ---

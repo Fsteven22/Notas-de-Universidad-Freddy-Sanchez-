@@ -461,9 +461,9 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] ðŸ“š Seguir estudiando
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
-> - Ãndice Unidad 1: [[00 - Ãndice Unidad 1]] Â· Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
+> - Ãndice Unidad 1: [[00 - Índice Unidad 1]] Â· Ãndice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[01 - Dato, información y modelos de datos]] Â· Siguiente: [[03 - Modelo relacional, ERM y casos Tiny College]]
-> - ConversiÃ³n a tablas: [[01 - ConversiÃ³n MC a ML por cardinalidad]]
+> - ConversiÃ³n a tablas: [[01 - Conversión MC a ML por cardinalidad]]
 
 ---
 
