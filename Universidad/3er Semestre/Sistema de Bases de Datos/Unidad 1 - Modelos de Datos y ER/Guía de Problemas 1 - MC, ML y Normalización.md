@@ -10,7 +10,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > - Bloque A: casos de modelado (enunciado + clave + esqueleto del diagrama).
 > - Bloque B: dependencias y normalizaciÃ³n (resueltos paso a paso, con diagrama).
 > - Bloque C: banco de conceptos V/F.
-> - MÃ©todo completo en: [[02 - Entidades, atributos, claves y relaciones]], [[01 - ConversiÃ³n MC a ML por cardinalidad]], [[02 - Primera forma normal y diccionario de datos]], [[03 - Segunda y tercera forma normal]].
+> - MÃ©todo completo en: [[02 - Entidades, atributos, claves y relaciones]], [[01 - Conversión MC a ML por cardinalidad]], [[02 - Primera forma normal y diccionario de datos]], [[03 - Segunda y tercera forma normal]].
 
 ## ðŸ…°ï¸ Bloque A â€” Modelo conceptual (casos reales)
 
@@ -639,7 +639,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 ## âœ… Checklist pre-taller (rÃºbrica 1E 2025)
 
 > [!tip] ðŸ“Œ Con quÃ© te califican (25 pts el lÃ³gico)
-> Entidades completas (6) + atributos con tipos (6) + PK/FK y binarias (6) + especiales ternarias/recursivas/multivaluadas (7). Antes de entregar verifica: Â¿contÃ© tablas al final? Â¿toda FK apunta a una PK? Â¿las M:N tienen intermedia? Â¿la 1:1 total-total se fusionÃ³? (protocolo en [[01 - ConversiÃ³n MC a ML por cardinalidad]]).
+> Entidades completas (6) + atributos con tipos (6) + PK/FK y binarias (6) + especiales ternarias/recursivas/multivaluadas (7). Antes de entregar verifica: Â¿contÃ© tablas al final? Â¿toda FK apunta a una PK? Â¿las M:N tienen intermedia? Â¿la 1:1 total-total se fusionÃ³? (protocolo en [[01 - Conversión MC a ML por cardinalidad]]).
 
 ## ðŸ” Repaso SR (flashcards)
 
@@ -661,8 +661,8 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 
 > [!info] ðŸ§­ Seguir con
 >
-> - MÃ©todo: [[02 - Entidades, atributos, claves y relaciones]] Â· [[03 - Modelo relacional, ERM y casos Tiny College]] Â· [[01 - ConversiÃ³n MC a ML por cardinalidad]] Â· [[02 - Primera forma normal y diccionario de datos]] Â· [[03 - Segunda y tercera forma normal]]
-> - Ãndices: [[Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|Unidad 0]] Â· [[00 - Ãndice Unidad 1]] Â· [[Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 2 - Modelo lÃ³gico y conversiÃ³n/00 - Ãndice Unidad 2]]
+> - MÃ©todo: [[02 - Entidades, atributos, claves y relaciones]] Â· [[03 - Modelo relacional, ERM y casos Tiny College]] Â· [[01 - Conversión MC a ML por cardinalidad]] Â· [[02 - Primera forma normal y diccionario de datos]] Â· [[03 - Segunda y tercera forma normal]]
+> - Ãndices: [[Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|Unidad 0]] Â· [[00 - Índice Unidad 1]] Â· [[00 - Índice Unidad 2]]
 
 ## ðŸ“š Referencias
 

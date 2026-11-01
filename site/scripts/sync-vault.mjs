@@ -12,6 +12,15 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
+
+// OneDrive rehidrata CRLF sobre el working tree: git no lo marca
+// (*.md text eol=lf lo normaliza al comparar) pero el sitio lee del disco.
+// Normalizar al leer evita que \r llegue al HTML y al vault.json.
+// Pedido de opencode-site y opencode-nube en el LEEME (31/10/2026).
+async function leerTexto(file) {
+  const t = await readFile(file, "utf8");
+  return t.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+}
 const PROJECT = path.resolve(HERE, "..");
 // VAULT_DIR: ruta al vault. Local = OneDrive; en CI (Vercel/build) = "../Universidad"
 // relativo a la raíz del site, o absoluto — siempre se resuelve desde process.cwd().
@@ -84,7 +93,7 @@ const NO_PUBLICAR_FILE = path.join(VAULT, "_no-publicar.txt");
 
 async function leerNoPublicar() {
   try {
-    const txt = await readFile(NO_PUBLICAR_FILE, "utf8");
+    const txt = await leerTexto(NO_PUBLICAR_FILE);
     return txt
       .split(/\r?\n/)
       .map((l) => l.trim())
@@ -231,7 +240,7 @@ async function main() {
     if (partes.length > 1 && !SEMESTER_IDS[partes[0]]) continue;
     let raw;
     try {
-      raw = await readFile(f.full, "utf8");
+      raw = await leerTexto(f.full);
     } catch {
       continue;
     }
@@ -328,7 +337,7 @@ async function main() {
       const fileName = rel[rel.length - 1];
 
       // ── gate de publicación: primero se lee la nota, luego se decide
-      const raw = await readFile(f.full, "utf8");
+      const raw = await leerTexto(f.full);
       if (!isPublished(raw)) {
         omitidas.push({ sem: sem.id, mat: subjectName, rel: f.rel });
         continue;

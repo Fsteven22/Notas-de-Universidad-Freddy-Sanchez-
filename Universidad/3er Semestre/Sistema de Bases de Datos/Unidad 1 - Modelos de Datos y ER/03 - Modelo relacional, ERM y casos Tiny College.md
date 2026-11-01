@@ -413,7 +413,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > - [[02 - Entidades, atributos, claves y relaciones]] â€” el vocabulario que aquÃ­ se vuelve tablas.
 > - [[01 - Dato, información y modelos de datos]] â€” el problema original.
-> - Ãlgebra relacional aplicada al taller 2 (Ïƒ, Ï€, â¨ y catÃ¡logo con âŸ•, âŸ–, â‹‰, Ï„): [[GuÃ­a de Problemas 2 - Ãlgebra Relacional y NormalizaciÃ³n]].
+> - Ãlgebra relacional aplicada al taller 2 (Ïƒ, Ï€, â¨ y catÃ¡logo con âŸ•, âŸ–, â‹‰, Ï„): [[Guía de Problemas 2 - Álgebra Relacional y Normalización]].
 > - Ver tambiÃ©n la nota de **Claves** integrada en 02 si vienes de un link viejo: ahora vive ahÃ­.
 
 ---
@@ -423,10 +423,10 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > [!info] ðŸ“š Seguir estudiando
 >
 > - Mapa de contenido: [[Sistema de Bases de Datos]]
-> - Ãndice Unidad 1: [[00 - Ãndice Unidad 1]] Â· Ãndice Unidad 2: [[00 - Ãndice Unidad 2]]
-> - Ãlgebra relacional con ejercicios: [[GuÃ­a de Problemas 2 - Ãlgebra Relacional y NormalizaciÃ³n]] (catÃ¡logo de operadores, diapositivas 3.1/3.2)
+> - Ãndice Unidad 1: [[00 - Índice Unidad 1]] Â· Ãndice Unidad 2: [[00 - Índice Unidad 2]]
+> - Ãlgebra relacional con ejercicios: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] (catÃ¡logo de operadores, diapositivas 3.1/3.2)
 > - Anterior: [[02 - Entidades, atributos, claves y relaciones]]
-> - ConversiÃ³n a tablas: [[01 - ConversiÃ³n MC a ML por cardinalidad]] Â· [[02 - Primera forma normal y diccionario de datos]]
+> - ConversiÃ³n a tablas: [[01 - Conversión MC a ML por cardinalidad]] Â· [[02 - Primera forma normal y diccionario de datos]]
 
 ---
 
