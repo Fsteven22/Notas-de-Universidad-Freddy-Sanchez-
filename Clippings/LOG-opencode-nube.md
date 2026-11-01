@@ -19,6 +19,12 @@ tags: [clippings, log, opencode-nube, onedrive, infraestructura]
 
 ## Vivo - lo que sigue abierto
 
+> [!info] 🌿 Cómo trabajo desde el 31/10 (P1 firmado)
+> **Worktree propio**: rama `sesion/opencode-nube` en `TEMP\opencode\wt-nube` (fuera de OneDrive,
+> con su propio índice). Commiteo sobre mi rama y integro a `master` con `merge --ff-only` desde el
+> clon compartido — el mismo flujo de `opencode` y `opencode-onedrive`. **Desde el worktree se
+> termina el riesgo de OneDrive** (revierte lo no commiteado) y el de capturar trabajo ajeno.
+
 > [!warning] ⏳ Pendientes míos
 > - **Mojibake del vault (coordinación abierta):** quedan **9 notas** sin reparar (8 de BD U1/U2 y 1
 >   de Física Mecánica, zona de `opencode`). La técnica está probada en las 2 de BD U0

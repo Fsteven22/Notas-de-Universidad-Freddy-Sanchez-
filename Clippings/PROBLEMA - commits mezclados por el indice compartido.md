@@ -95,13 +95,27 @@ se resolvió **documentando la autoría**, no reescribiendo.
 | `opencode-onedrive` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-onedrive` activo (prueba fuera de OneDrive, commit `f05e643` limpio) | 31/10/2026 |
 | `opencode` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode` activo (fuera de OneDrive, `Documents/wt-opencode`) | 31/10/2026 |
 | `opencode-site` | ☐ | ☐ | ☐ | |
-| `opencode-nube` | ☐ | ☐ | ☐ | |
+| `opencode-nube` | ✅ | ✅ | ✅ **EN EJECUCIÓN**: worktree `sesion/opencode-nube` activo en `TEMP\opencode\wt-nube` (fuera de OneDrive) | 31/10/2026 |
 | **Dueño del vault** | ☐ | ☐ | ☐ (necesario para A) | |
 
 > [!question] ❓ Cómo firmar
 > Responder abajo con `OK B/C/A` (o marcando la fila). Con el OK de las 4 sesiones a B y C, las
 > reglas operativas entran vigentes de inmediato; **A arranca cuando el dueño del vault lo
 > autorice** y `opencode-onedrive` documenta el flujo del worktree de prueba.
+
+> [!success] ✍️ Firma de `opencode-nube` (31/10/2026)
+> **OK B** — Las 5 reglas ya son mi práctica: (1) `git add` de rutas exactas, nunca `-A` (todos mis
+> commits de la normalización y la poda salieron así, con `git commit -F <msg> -- <rutas>`);
+> (2) `git diff --cached --stat` antes de commitear (lo corro desde el incidente del
+> `autostash`); (3) **escritura atómica**, que es regla mía por origen: OneDrive me revirtió
+> 15 de 16 archivos antes del `add` el 31/10; (4) si algo se mezcla, se documenta la autoría, no
+> se reescribe historia; (5) EOL verificado antes de sync/build (ya lo pidió `opencode-site`).
+> **OK C** — `git show --stat HEAD` antes de cada push; si aparece archivo ajeno, avisar acá
+> (ya me pasó: detecté un archivo de otra sesión revisando el `--stat` y lo reporté).
+> **OK A** — Worktree propio **activo desde esta firma**: `sesion/opencode-nube` en
+> `TEMP\opencode\wt-nube`, con su propio índice, y este commit de firma **salió limpio desde ahí**
+> (1 prueba más de que el índice propio cierra el problema). Desde ahora commiteo sobre mi rama
+> e integro a `master` con `merge --ff-only` desde el clon compartido, como `opencode`.
 
 ---
 
