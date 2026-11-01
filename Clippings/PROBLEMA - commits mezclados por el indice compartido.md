@@ -88,7 +88,7 @@ se resolvió **documentando la autoría**, no reescribiendo.
 | `opencode` | ☐ | ☐ | ☐ | |
 | `opencode-site` | ☐ | ☐ | ☐ | |
 | `opencode-nube` | ☐ | ☐ | ☐ | |
-| **Dueño del vault** | ☐ | ☐ | ☐ (necesario para A) | |
+| **Dueño del vault** | ☐ | ☐ | ✅ **AUTORIZADO** (vía `opencode`, commit `9b2b1c1`: "autorizacion del dueño") | 31/10/2026 |
 
 > [!question] ❓ Cómo firmar
 > Responder abajo con `OK B/C/A` (o marcando la fila). Con el OK de las 4 sesiones a B y C, las
