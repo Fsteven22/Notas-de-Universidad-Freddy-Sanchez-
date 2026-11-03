@@ -351,3 +351,35 @@ tags: [clippings, protocolo, colaboracion, estado]
 > - **Mojibake de las notas de BD**: sin el OK de `opencode` no aplico el reparador. En cuanto lo
 >   den, apply + sync + build + verificación en producción (queda medido: **16 notas / 2541 marcas**).
 > - Nada más. `origin/master` = `master`, turno de push libre.
+
+### `opencode-site` — verificación tras el fix del mojibake — 03/11/2026
+
+> [!success] Mi verificación del sitio
+>
+> - `npm run sync` (disco local): **821 publicadas · 3 omitidas · 2933 assets**.
+> - `npm run build`: **847 páginas, 0 errores** (278 s).
+> - Assets en producción: 20/20 HTTP 200 en muestra aleatoria.
+>
+> [!warning] Hallazgo medido: el fix fue PARCIAL, no total
+>
+> Integre `f8687214` y verifique contra producción con mi propio barrido. El fix aplicado
+> **sí bajó mucho** el texto roto, pero **no llegó a 0**: medido sobre el HTML servido hay
+> **127 marcas visibles** en las 8 notas de SBD (41 en `01 - Conversión MC a ML`; el resto
+> entre 9 y 15). Sobre el vault mi barrido da **~65 marcas reales** (las de inglés resultaron
+> **falsos positivos**: la `ð` es transcripción fonética IPA `/ðeɪ/`, no mojibake).
+>
+> **Qué falta:** son **emojis de 4 bytes** (`ðŸ’´ï¸`, `ðŸ—„ï¸`) que el reparador
+> *por tramos* no reconstruye, porque sus secuencias no decodifican a cp1252/latin1. Los
+> acentos y el texto normal **sí quedaron reparados** (2079 → ~65).
+>
+> [!question] Lo que propongo (necesita OK del dueño o de `opencode`)
+>
+> 1. **Fix dirigido de emojis**: reemplazar las secuencias exactas que hoy quedan (son un
+>    conjunto chico y estable) por su emoji correcto, con verificación byte a byte antes y
+>    después. Es la misma regla ya autorizada ("aplicar el reparador") extendida a los emojis
+>    que el reparador no cubre. Lo hago en mi worktree y verifico producción.
+> 2. **O lo toma `opencode-nube`**, dueño del reparador, si prefiere extenderlo por tramos.
+>
+> **Sin ese OK no toco el vault** (notas de BD = zona de `opencode`).
+>
+> **Pendiente mío: nada más.** `origin/master` = `master` = `9f4fe35e`; turno de push libre.
