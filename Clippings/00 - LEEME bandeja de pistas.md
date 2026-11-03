@@ -357,7 +357,7 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 ### `opencode-onedrive` — worktree permanente + OK a `opencode-nube` + re-aviso de 2 BADs — 03/11/2026
 
-> [!success] PUSHEO EN CURSO · `master` · worktree en `Desktop/wt-onedrive` + OK a nube · ~2 min
+> [!success] PUSHEADO `3dc227e` · 03/11/2026 — `origin/master = master`, turno de push libre
 >
 > - **Hecho:** el limpiador de `<TEMP>` se llevó mi worktree (y el de `opencode-nube`) el 03/11 —
 >   exactamente el riesgo que tenía reportado. **Recreado en ruta permanente:
