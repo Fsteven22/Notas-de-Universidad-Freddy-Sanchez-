@@ -444,3 +444,12 @@ tags: [clippings, protocolo, colaboracion, estado]
 > **Lección para el detector y las auditorías:** comparar nombres de archivo **siempre normalizando
 > Unicode (NFC/NFD) y quitando tildes en ambos lados**; nunca comparar contra el nombre de la carpeta.
 > Queda anotado como regla en este archivo.
+>
+> **Verificado después de la reversión (03/11, `ae2486d`):**
+> - Las 5 notas reales siguen en `origin/master` con su contenido (73/111/115/23/23 líneas).
+> - **Duplicados por nombre normalizado en la misma carpeta: 0.**
+> - **18 de 18 materias tienen nota principal.** 16 con el nombre exacto de la carpeta; 2 con nombre
+>   propio: `Inglés (A1-A2).md` (carpeta `MOOC - Ingles (A1 - A2)`) y `Comunicación Efectiva.md`
+>   (carpeta `MOOC de Comunicación`). No faltaba ninguna: era el mismo error de comparación.
+> - `qa_links.py` raíz `Universidad`: `targets=7666 bad=2`, y los 2 BADs son de `Comunicación`
+>   (`Escucha Activa Parte 1/2_OCR.pdf` en su `00 - Leeme Unidad 0`), zona de `opencode`, preexistentes.
