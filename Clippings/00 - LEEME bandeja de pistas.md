@@ -417,24 +417,30 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 ---
 
-### `opencode-nube` — creación de las 5 notas principales que nunca existieron — 01/11/2026
+### `opencode-nube` — CORRECCIÓN: las 5 notas de materia SÍ existían (error mío, ya revertido) — 01/11/2026
 
-> [!success] PUSHEADO `ee8cfe7` · `master` · 5 notas nuevas, 135 líneas, 0 links rotos nuevos
+> [!danger] Error mío detectado y corregido: creé 5 notas duplicadas y las borré en el mismo día
 >
-> **Hecho:**
-> - **Verificado con `git log --all --diff-filter=ADR` que NUNCA existió** en el historial una nota
->   con el nombre exacto de la materia en: **Inglés I (B1-B2), Álgebra Lineal, Inglés II (C1-C2),
->   MOOC - Inglés (A1 - A2), MOOC de Comunicación**. No se perdieron: nunca se escribieron.
-> - **Creadas por el dueño del vault** (`"las puedes crear tu, tienes mi permiso"`) en
->   `Unidad 0 - Guias y Ejercicios/Material de clase/<Materia>.md`, donde ya vivían las otras 13
->   equivalentes (taxonomía del carril B). Contenido mínimo y honesto: frontmatter `dg-publish: true`,
->   código solo donde se conoce (`MATG1049`), link a la `Bienvenida y Syllabus` existente y a
->   `00 - Leeme Unidad 0`, y una nota clara de que el índice por unidades lo completa `opencode`
->   (D2). **No se inventó contenido de curso ni se tocó ninguna nota existente.**
-> - **Verificado:** `qa_links.py` raíz `Universidad` → `targets=7686 bad=2` (los mismos 2 pre-existentes
->   de `Comunicación`, zona de `opencode`).
+> **Qué pasó:** reporté que 5 materias "nunca tuvieron" nota con su nombre y las creé. **Era falso.**
+> Mi auditoría comparaba el nombre del archivo contra el nombre de la **carpeta**, y las carpetas van
+> sin tilde (`Ingles I (B1-B2)`) mientras los archivos van con tilde (`Inglés I (B1-B2).md`). El
+> `git log --all --diff-filter=ADR` lo corrí sobre la ruta sin tilde, que efectivamente nunca existió.
+> Comparación de texto sin normalizar acentos → 5 falsos negativos.
 >
-> **Pendiente mío:** nada. La auditoría D1 (699 archivos, sin lote nuevo) sigue vigente.
+> **La verdad (verificada con `git log` por ruta acentuada):** las 5 notas existen desde el **29/10/2026**,
+> movidas por `opencode` con los commits "Mover archivos raíz a Unidad 0":
 >
-> **Para `opencode`**: las 5 notas son un esqueleto de índice por materia; cuando proceses material
-> de esas materias, podés reemplazarlas con el índice completo por unidades (como las otras 13).
+> | Nota (nombre real, con tilde) | Líneas | Commit de origen |
+> |---|---|---|
+> | `Inglés I (B1-B2).md` | 73 | `e922b04` |
+> | `Álgebra Lineal.md` | 111 | `831f1de` |
+> | `Inglés II (C1-C2).md` | 115 | `d72b9b5` |
+> | `Inglés (A1-A2).md` | 23 | `47d9c87` |
+> | `Comunicación Efectiva.md` | 23 | `78d582e` |
+>
+> **Corrección aplicada:** eliminadas las 5 notas esqueleto que creé (commit de reversión). El vault
+> queda exactamente como estaba. **No se tocó ninguna nota real.**
+>
+> **Lección para el detector y las auditorías:** comparar nombres de archivo **siempre normalizando
+> Unicode (NFC/NFD) y quitando tildes en ambos lados**; nunca comparar contra el nombre de la carpeta.
+> Queda anotado como regla en este archivo.
