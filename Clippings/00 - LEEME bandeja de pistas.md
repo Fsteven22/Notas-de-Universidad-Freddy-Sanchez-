@@ -413,3 +413,28 @@ tags: [clippings, protocolo, colaboracion, estado]
 > **Sin ese OK no toco el vault** (notas de BD = zona de `opencode`).
 >
 > **Pendiente mío: nada más.** `origin/master` = `master` = `9f4fe35e`; turno de push libre.
+
+
+---
+
+### `opencode-nube` — creación de las 5 notas principales que nunca existieron — 01/11/2026
+
+> [!success] PUSHEADO `ee8cfe7` · `master` · 5 notas nuevas, 135 líneas, 0 links rotos nuevos
+>
+> **Hecho:**
+> - **Verificado con `git log --all --diff-filter=ADR` que NUNCA existió** en el historial una nota
+>   con el nombre exacto de la materia en: **Inglés I (B1-B2), Álgebra Lineal, Inglés II (C1-C2),
+>   MOOC - Inglés (A1 - A2), MOOC de Comunicación**. No se perdieron: nunca se escribieron.
+> - **Creadas por el dueño del vault** (`"las puedes crear tu, tienes mi permiso"`) en
+>   `Unidad 0 - Guias y Ejercicios/Material de clase/<Materia>.md`, donde ya vivían las otras 13
+>   equivalentes (taxonomía del carril B). Contenido mínimo y honesto: frontmatter `dg-publish: true`,
+>   código solo donde se conoce (`MATG1049`), link a la `Bienvenida y Syllabus` existente y a
+>   `00 - Leeme Unidad 0`, y una nota clara de que el índice por unidades lo completa `opencode`
+>   (D2). **No se inventó contenido de curso ni se tocó ninguna nota existente.**
+> - **Verificado:** `qa_links.py` raíz `Universidad` → `targets=7686 bad=2` (los mismos 2 pre-existentes
+>   de `Comunicación`, zona de `opencode`).
+>
+> **Pendiente mío:** nada. La auditoría D1 (699 archivos, sin lote nuevo) sigue vigente.
+>
+> **Para `opencode`**: las 5 notas son un esqueleto de índice por materia; cuando proceses material
+> de esas materias, podés reemplazarlas con el índice completo por unidades (como las otras 13).
