@@ -547,3 +547,44 @@ cerrar en **0 marcas** (las `ð` de inglés son IPA, falso positivo, como ya det
 
 **Verificado:** `qa_links.py` (raíz `Universidad`) = **`targets=7666 bad=0`**. Los 24 links del Index
 resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd` / 0 mojibake.
+
+### `opencode-site` — FIX DE EMOJIS + MARCADORES DE CONFLICTO — 04/11/2026
+
+> [!success] Mojibake del vault: 0 (medido, no estimado)
+>
+> El fix anterior (`f8687214`) fue **parcial**: su reparador *por tramos* no reconstruye
+> emojis de 4 bytes ni secuencias con bytes alterados. Medido por mí: **277 secuencias** en
+> **12 notas** (incluía 2 de Álgebra Lineal y 1 de Cálculo Vectorial que nunca estuvieron en el fix).
+>
+> **Reparador nuevo**: decodificación completa de secuencias UTF-8 doble-codificadas
+> (cp1252/latin1 → utf-8), aplicada solo a tramos válidos. Resultado: **401 secuencias** en
+> **11 notas** + **35 truncadas** (byte perdido) reconstruidas por contexto.
+>
+> **Verificación**: esqueleto ASCII idéntico en 11/11 archivos (no se cambió ni una letra),
+> 0 BOM, 0 CRLF. Cobertura: 🛠 🔍 📝 🏆 🗂 🗄 🗃 🗺 📏 📐,
+> keycaps 1️⃣-5️⃣, ℹ️ ⚠️ ✏️ ❌ ❓ ● ▲ → ₁ ₂ ╱ ╲ •.
+>
+> [!warning] Dos reconstrucciones por contexto (los bytes NO existen en git ni en OneDrive)
+>
+> En 3 notas de Álgebra Lineal/Cálculo Vectorial hay ASCII-art dentro de code blocks cuyo tercer
+> byte se perdió (era un control C1 que se eliminó al copiar). No es recuperable de la historia:
+> **el primer commit ya viene corrupto** y el clon de OneDrive también. Reconstruí por contexto:
+> `â–` → `▓` (relleno del triángulo "sombreado") y `â€"` → `—` (línea base).
+> Si el dueño prefiere otro carácter, es 1 commit.
+>
+> [!danger] Hallazgo crítico: marcadores de conflicto publicados
+>
+> Un merge anterior dejó `<<<<<<<` / `=======` / `>>>>>>>` **commiteados** en **9 notas**
+> (Fundamentos de Programación, Álgebra Lineal ×4, Cálculo Vectorial ×4) y el sitio los
+> publicaba. Resueltos tomando el lado con wikilink (el arreglo de links). Verificado: **0 marcadores**
+> en `Universidad/**` y en `site/notes-md/**`, y **`qa_links` bad=0** (antes 2 por los OCR de
+> Comunicación, que el merge ya traía resueltos).
+>
+> [!note] Integración con `opencode`
+>
+> Su commit `e7ccb57a` decía "mojibake del vault: 0", pero medido dejaba `â€¢`, `â€"`, `â–`,
+> `â‚`, `â†` y `â—`. Se conservó mi reparador (más completo) y de su lado el wikilink de
+> "Siguiente tema recomendado". Merge `89478f35`, marcadores `7c4ad324`, pusheado `7e15ffac`.
+>
+> **Estado**: `origin/master` = `master`; build 847 páginas; assets verificados en producción.
+> **Pendiente mío: ninguno.**
