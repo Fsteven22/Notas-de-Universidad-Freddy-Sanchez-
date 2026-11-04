@@ -138,7 +138,7 @@ Ejemplo:
 > [!quote]- ## Referencias y Conexiones 🔗
 
 ### 📖 Enlaces a Otras Notas
-- ![[Fundamentos de Programación]] - Base para implementar algoritmos de ML
+- ![[../Fundamentos de Programación|Fundamentos de Programación]] - Base para implementar algoritmos de ML
 - ![[01 - Superficies cuadráticas#Métodos de Estudio|Métodos de Estudio]] - Para estructurar el aprendizaje de conceptos complejos
 - !Análisis Costo-Beneficio - Evaluar viabilidad de proyectos de ML
 - !Gestión de Proyectos - Manejar proyectos de ML efectivamente

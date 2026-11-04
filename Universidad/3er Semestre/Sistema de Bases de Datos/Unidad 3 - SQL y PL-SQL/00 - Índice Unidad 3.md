@@ -13,9 +13,9 @@ tags: [TICG1018, unidad3, indice, bd]
 - [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — 11 consultas SQL (University), supermercado (normalización ligera + consultas + transacción + trigger), PL-SQL (procedimientos, triggers, vistas, índices, usuarios) y seguridad en sakila.
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Unidad anterior: [[00 - Índice Unidad 2]]
-> - Material de base: [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|Leeme Unidad 0]] (talleres y lecciones)
+> - Material de base: [[../00 - Leeme Unidad 0|Leeme Unidad 0]] (talleres y lecciones)
 
 ---
 **Tags:** #TICG1018 #unidad3 #indice #bd

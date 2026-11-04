@@ -377,7 +377,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Conjuntos, Cardinalidad y Subconjuntos]]
 > - Siguiente: [[03 - Leyes de Conjuntos]]
 

@@ -136,12 +136,12 @@ tags: [IDIG2012, unidad4, storytelling, divulgacion, ted]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 4: [[00 - Índice Unidad 4]]
 > - Anterior: [[01 - Argumentación efectiva, convencer vs persuadir]]
 > - Siguiente: [[03 - Voz, cuerpo, formatos y práctica TED]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 
 ## 📚 Referencias
 

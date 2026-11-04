@@ -20,7 +20,7 @@ tags: [MATG1051, unidad6, indice, discretas]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman]] (Unidad 5)
-> - MOC general: [[Matemáticas Discretas]]
+> - MOC general: [[../Matemáticas Discretas|Matemáticas Discretas]]
 
 ---
 **Tags:** #MATG1051 #unidad6 #indice #discretas

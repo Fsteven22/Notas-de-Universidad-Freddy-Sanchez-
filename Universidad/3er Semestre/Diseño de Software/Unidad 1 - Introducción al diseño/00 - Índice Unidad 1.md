@@ -16,7 +16,7 @@ tags: [CCPG1042, unidad1, indice, diseno-software]
 - [[04 - Principios SOLID]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Siguiente unidad: [[00 - Índice Unidad 2]]
 
 ---

@@ -21,7 +21,7 @@ tags: [IDIG1008, unit1, indice, english]
 - Notas del syllabus anterior (Different Cultures) como apoyo en [[Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|índice syllabus]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../Ingles III|Ingles III]]
 > - Siguiente: [[00 - Índice Unit 2]]
 
 ---

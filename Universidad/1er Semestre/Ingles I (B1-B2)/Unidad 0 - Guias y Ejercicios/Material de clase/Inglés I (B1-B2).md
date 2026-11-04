@@ -1,6 +1,6 @@
 # 🇬🇧 English I (B1-B2)
 
-**Semester:** 1st · [[Welcome & Syllabus English I|Ver Syllabus completo]]
+**Semester:** 1st · [[../../Welcome & Syllabus English I|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Esta nota es el acceso directo a English I (B1-B2). Cada unidad reúne sus notas en un callout; los enlaces apuntan a los archivos reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
@@ -64,7 +64,7 @@
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la unidad
-> - [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - [[../../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 ---
 
@@ -73,7 +73,7 @@
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa: Inglés I (B1-B2)
-> - Siguiente: [[Welcome & Syllabus English I]]
+> - Siguiente: [[../../Welcome & Syllabus English I|Welcome & Syllabus English I]]
 
 ---
 

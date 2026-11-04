@@ -458,7 +458,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[02 - Cuantificadores]] · Inducción: [[03 - Inducción Matemática]]
 > - Reglas: [[01 - Reglas de Inferencia]]
 

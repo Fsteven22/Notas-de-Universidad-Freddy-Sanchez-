@@ -1,0 +1,61 @@
+---
+dg-publish: true
+tags: [unidad0, indice, recursos]
+---
+
+# 📂 Unidad 0 — Guías y Ejercicios (Matemáticas Discretas)
+
+> [!info] ℹ️ Portal de material de la materia
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+
+## 📎 Syllabus y políticas
+
+> [!note] 📄 Syllabus
+> ![[Unidad 0 - Guias y Ejercicios/Guías/Syllabus_MATG1051.pdf]]
+> Programa oficial de la materia (MATG1051).
+
+> [!note] 💛 El syllabus completo está como nota
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Matemáticas_Discretas_01.svg]]
+> Ver [[Bienvenida y Syllabus Matemáticas Discretas|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+
+## 📚 Guías y material de clase
+
+> [!tip] 🚪 Entradas por unidad/módulo
+> Primera nota de cada bloque: el punto de partida.
+> - [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Logica y Conjuntos*
+> - [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Funciones y Relaciones*
+> - [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Números y Conteo*
+> - [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Recurrencia y Algoritmos*
+> - [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|00 - Índice Unidad 5]] — *Unidad 5 - Grafos y Árboles*
+> - [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|00 - Índice Unidad 6]] — *Unidad 6 - Lenguajes y Autómatas*
+
+> [!note] 📚 Recursos de la unidad
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]] — guías de problemas, talleres, lecciones y exámenes de la unidad, con los videos recomendados.
+
+## 📥 Pendiente de cargar
+
+> [!warning] 📬 Material que falta
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/` con nombre con contexto:
+> - `MATG1051-Guia-XX.pdf`
+> - `MATG1051-Ejercicios-Tema.pdf`
+> - `MATG1051-Practica-XX.pdf`
+
+---
+
+## 🔗 Navegación
+
+> [!tip] Enlaces rápidos
+> - [[Matemáticas Discretas|🗺️ Mapa de contenido de la materia]]
+> - [[Bienvenida y Syllabus Matemáticas Discretas|👋 Bienvenida y Syllabus]]
+
+## 📋 Material de la unidad (enlaces directos)
+
+> [!info] 📁 Guías de la unidad
+> - [[Guía Didáctica Mat. discretas lógica y demostraciones.pdf|Guía Didáctica - lógica y demostraciones]]
+
+> [!info] 📁 Bibliografía (no publicable)
+> Libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`).
+> - [[Unidad 0 - Guias y Ejercicios/Guías/LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf|LIBRO DE APOYO — Rosen, Discrete Mathematics and Its Applications]]
+> - [[Unidad 0 - Guias y Ejercicios/Guías/LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf|LIBRO GUIA — Johnsonbaugh, Discrete Mathematics 8th Edition]]
+
+**Tags:** #md #unidad0 #recursos

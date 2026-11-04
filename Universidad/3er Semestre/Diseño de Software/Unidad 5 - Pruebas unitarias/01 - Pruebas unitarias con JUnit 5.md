@@ -304,10 +304,10 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 5: [[00 - Índice Unidad 5]]
 > - Siguiente: [[02 - Control de versiones con Git]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

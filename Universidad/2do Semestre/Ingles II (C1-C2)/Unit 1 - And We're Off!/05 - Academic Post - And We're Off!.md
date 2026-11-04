@@ -222,7 +222,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[04 - Reading, Writing, Speaking - Flipping Your Job Interview & Time to Speak]]
 
 **Tags:** #academicpost #writing #opinion #structure #formal #AWC #English #IDIG1007 #ESPOL #unit1

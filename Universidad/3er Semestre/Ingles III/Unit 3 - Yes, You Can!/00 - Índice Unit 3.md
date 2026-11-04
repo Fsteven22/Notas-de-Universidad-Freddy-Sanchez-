@@ -16,7 +16,7 @@ tags: [IDIG1008, unit3, indice, english]
 - [[04 - Reading, Writing, Speaking - Ramp, Complaint & Town]] — rampa + complaint + mejoras
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../Ingles III|Ingles III]]
 > - Anterior: [[00 - Índice Unit 2]]
 > - Siguiente: [[00 - Índice Unit 4]]
 

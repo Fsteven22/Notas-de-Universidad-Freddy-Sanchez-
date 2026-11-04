@@ -176,7 +176,7 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[03 - Segunda y tercera forma normal]]
 

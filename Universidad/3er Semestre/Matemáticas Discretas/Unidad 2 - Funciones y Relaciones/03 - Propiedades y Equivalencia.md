@@ -263,7 +263,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[02 - Relaciones]] · Siguiente: [[04 - Sucesiones y Cadenas]]
 

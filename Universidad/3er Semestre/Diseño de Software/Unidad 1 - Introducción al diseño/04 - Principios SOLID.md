@@ -437,7 +437,7 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 ### 🧪 Caso integrador Main.java (práctica Control02)
 
-> [!example] 💡 Nómina ds2026 — las 5 violaciones en un solo archivo ([[Main.java]])
+> [!example] 💡 Nómina ds2026 — las 5 violaciones en un solo archivo ([[../Unidad 0 - Guias y Ejercicios/Material de clase/Main.java]])
 >
 > - **SRP:** `Employee` calcula bono + genera PDF + manda email (3 razones para cambiar).
 > - **OCP:** `BonusReport.describe()` decide con cadena `instanceof` — cada tipo nuevo obliga a modificarlo.
@@ -743,11 +743,11 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[03 - Paradigmas de programación y diseño]]
 > - Relacionado: [[02 - Principios de diseño, cohesión y acoplamiento]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

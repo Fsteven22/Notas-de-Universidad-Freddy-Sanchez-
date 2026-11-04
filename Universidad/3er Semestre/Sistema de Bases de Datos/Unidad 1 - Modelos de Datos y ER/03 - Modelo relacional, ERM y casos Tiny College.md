@@ -422,7 +422,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Índice Unidad 1: [[00 - Índice Unidad 1]] · Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Álgebra relacional con ejercicios: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] (catálogo de operadores, diapositivas 3.1/3.2)
 > - Anterior: [[02 - Entidades, atributos, claves y relaciones]]

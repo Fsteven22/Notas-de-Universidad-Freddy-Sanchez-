@@ -15,7 +15,7 @@ tags: [IDIG2012, unidad1, indice, comunicacion]
 - [[03 - Comunicación estratégica, IIR y pitch personal]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Siguiente unidad: [[00 - Índice Unidad 2]]
 
 ---

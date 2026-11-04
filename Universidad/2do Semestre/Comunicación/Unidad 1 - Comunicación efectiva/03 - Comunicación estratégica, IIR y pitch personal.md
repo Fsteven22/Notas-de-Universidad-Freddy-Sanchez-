@@ -262,12 +262,12 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[02 - Comunicación grupal y toma de decisiones]]
-> - Capturas clase S3: [[Clase S3 - Comunicación estratégica (capturas)|Unidad 0 — Clase S3 (capturas)]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Capturas clase S3: [[../Unidad 0 - Guias y Ejercicios/Material de clase/Clase S3 - Comunicación estratégica (capturas).pdf|Unidad 0 — Clase S3 (capturas)]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 
 ## 📚 Referencias
 

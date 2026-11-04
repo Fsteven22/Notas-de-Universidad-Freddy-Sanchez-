@@ -157,7 +157,7 @@ dg-publish: true
 > - [[02 – Aplicaciones de la Diferencial y la Hessiana#📚 Ejemplos: Cálculo de Diferenciales]] - Derivadas y funciones
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral.md|02 - Propiedades de la Integral.md]] - Antiderivadas básicas
 
-> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y funciones
+> - [[../../../../2do Semestre/Cálculo Vectorial/Cálculo Vectorial|Cálculo Vectorial]] - Derivadas y funciones
 > - Integrales Indefinidas - Antiderivadas básicas
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Conexión derivada-integral
 > - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas.md|02 - Área entre Curvas.md]] - Fundamentos de regiones

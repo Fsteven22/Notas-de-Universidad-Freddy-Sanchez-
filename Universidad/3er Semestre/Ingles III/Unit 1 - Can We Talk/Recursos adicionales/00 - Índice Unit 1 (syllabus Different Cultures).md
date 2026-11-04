@@ -21,7 +21,7 @@ tags: [IDIG1008, unit1, indice, english]
 - [[Speaking Practice # 2|Speaking Practice # 2]] — una semana sin celular, guion + Q&A + PPTX
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../../Ingles III|Ingles III]]
 > - Siguiente: [[00 - Índice Unit 2]]
 
 ---

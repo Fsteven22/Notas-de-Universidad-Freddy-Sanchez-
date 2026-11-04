@@ -92,14 +92,14 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos]] — los reales como base que ℂ extiende.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/II - Trigonometría/02 - Funciones trigonométricas elementales]] — seno y coseno de la forma polar y las conversiones.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 4 - Matrices y Sistemas/I - Matrices y Sistemas de Ecuaciones/02 - Operaciones con matrices]] — rotaciones y transformaciones emparentadas.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/01 - Puntos y rectas]] — distancia cartesiana y rectas que reaparecen en polar.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/02 - Circunferencia]] — el caso cartesiano $e = 0$ de las cónicas.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/03 - Parábola]] — caso $e = 1$.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/04 - Elipse]] — caso $0 < e < 1$ y órbitas de Kepler.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/05 - Hipérbola]] — caso $e > 1$ y trayectorias de escape.
+> - [[../Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]] — los reales como base que ℂ extiende.
+> - [[../Unidad 3 - Funciones y Trigonometría/II - Trigonometría/02 - Funciones trigonométricas elementales|02 - Funciones trigonométricas elementales]] — seno y coseno de la forma polar y las conversiones.
+> - [[../Unidad 4 - Matrices y Sistemas/I - Matrices y Sistemas de Ecuaciones/02 - Operaciones con matrices|02 - Operaciones con matrices]] — rotaciones y transformaciones emparentadas.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/01 - Puntos y rectas|01 - Puntos y rectas]] — distancia cartesiana y rectas que reaparecen en polar.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/02 - Circunferencia|02 - Circunferencia]] — el caso cartesiano $e = 0$ de las cónicas.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/03 - Parábola|03 - Parábola]] — caso $e = 1$.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/04 - Elipse|04 - Elipse]] — caso $0 < e < 1$ y órbitas de Kepler.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/05 - Hipérbola|05 - Hipérbola]] — caso $e > 1$ y trayectorias de escape.
 
 ---
 

@@ -398,10 +398,10 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/00 - Índice Unidad 5]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 5]] — mapa general de la unidad.
 > - [[01 - El texto expositivo (concepto, tipos y estructura)]] — los conectores son la herramienta que enlaza los párrafos temáticos de la estructura secuencial.
 > - [[02 - Análisis del texto expositivo]] — al disecar un párrafo, los conectores son la señal explícita de cómo cada idea de apoyo se relaciona con la idea central.
-> - [!info] Conexión cruzada con la Unidad 6: la contraargumentación en el texto argumentativo (ver [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]]) se apoya en los mismos conectores de contraste (*sin embargo*, *no obstante*) descritos aquí.
+> - [!info] Conexión cruzada con la Unidad 6: la contraargumentación en el texto argumentativo (ver [[../Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]]) se apoya en los mismos conectores de contraste (*sin embargo*, *no obstante*) descritos aquí.
 
 ---
 

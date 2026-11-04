@@ -243,7 +243,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/00 - Índice Unidad 6]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 6]] — mapa general de la unidad.
 > - [[01 - El texto argumentativo (concepto, ámbitos y estructura)]] — la estructura tripartita es lo que se busca identificar al analizar un texto ajeno.
 > - [[02 - Formulación y validación de la tesis]] — la fase 1 del análisis reutiliza directamente los 5 filtros de validez de tesis.
 

@@ -329,7 +329,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar & Examples - Real Conditionals & Time Clauses]]
 > - Siguiente: [[04 - Reading Writing Speaking - Survey Results & Passive Voice]]
 

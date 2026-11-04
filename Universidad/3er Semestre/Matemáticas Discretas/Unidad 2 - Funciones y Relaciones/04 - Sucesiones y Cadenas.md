@@ -389,7 +389,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[03 - Propiedades y Equivalencia]] · Guía: [[Guía de Problemas 2 - Ejercicios Resueltos]]
 

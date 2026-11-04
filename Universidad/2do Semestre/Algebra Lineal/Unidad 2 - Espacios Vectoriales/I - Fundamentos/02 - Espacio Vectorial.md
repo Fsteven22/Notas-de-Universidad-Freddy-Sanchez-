@@ -1465,7 +1465,7 @@ dg-publish: true
 > 
 > **Temas relacionados:**
 > 
-> - [[Álgebra Lineal]] - Teoría completa
+> - [[../../Álgebra Lineal|Álgebra Lineal]] - Teoría completa
 > - [[01 – Transformaciones lineales]] - Funciones entre espacios
 > - [[01 – Producto interno]] - Estructura adicional
 > - [[02 – Norma inducida y distancia]] - Medida de longitud

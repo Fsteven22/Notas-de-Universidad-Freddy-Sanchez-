@@ -259,7 +259,7 @@ dg-publish: true
 > **Conceptos relacionados:**
 > 
 > - [[Álgebra Lineal]] - Espacios vectoriales
-> - [[Cálculo Vectorial]] - Funciones de varias variables
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Funciones de varias variables
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvas y superficies
 > 
 > **Aplicaciones avanzadas:**

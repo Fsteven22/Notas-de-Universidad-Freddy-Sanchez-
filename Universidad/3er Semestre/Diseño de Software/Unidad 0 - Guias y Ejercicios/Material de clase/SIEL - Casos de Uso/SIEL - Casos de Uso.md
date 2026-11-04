@@ -37,7 +37,7 @@ Todo lo transcrito ya está integrado en [[04 - UML casos de uso, secuencia y ac
 
 ---
 
-- Mapa de contenido: [[Diseño de Software]]
+- Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
 - Índice Unidad 2: [[00 - Índice Unidad 2]]
 - Complemento: [[SIEL - Modelo de Clases]]
 

@@ -24,7 +24,7 @@ tags: [MATG1051, unidad5, indice, discretas]
 > [!quote] 🔗 Conexiones
 > - Previo: [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] (Unidad 4)
 > - Siguiente: [[01 - Máquinas de Estado Finito - Definición y Estructura]] (Unidad 6)
-> - MOC general: [[Matemáticas Discretas]]
+> - MOC general: [[../Matemáticas Discretas|Matemáticas Discretas]]
 
 ---
 **Tags:** #MATG1051 #unidad5 #indice #discretas

@@ -1344,7 +1344,7 @@ v
 > 
 > **Temas relacionados:**
 > 
-> - [[Cálculo Vectorial]] - Gradiente, divergencia, rotacional
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Gradiente, divergencia, rotacional
 > - [[01 – Integral triple]] - Cambios de variable
 > - Ecuaciones Diferenciales - Laplaciano en diferentes coordenadas
 > 

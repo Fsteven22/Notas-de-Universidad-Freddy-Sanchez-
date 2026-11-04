@@ -477,7 +477,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Algebra de Proposiciones]] · Siguiente: [[03 - Demostraciones]]
 > - Reglas con cuantificadores: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
 

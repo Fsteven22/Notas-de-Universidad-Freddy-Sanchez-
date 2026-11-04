@@ -119,11 +119,11 @@ dg-publish: true
 
 > [!quote] 🔗 Con el resto del curso
 >
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos]] — coordenadas y medida usan los reales.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/01 - Definición, dominio y rango]] — gráficas como lugares geométricos.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/II - Trigonometría/02 - Funciones trigonométricas elementales]] — ángulos, pendientes y razones en triángulos.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 4 - Matrices y Sistemas/I - Matrices y Sistemas de Ecuaciones/02 - Operaciones con matrices]] — transformaciones y sistemas lineales.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 6 - Complejos y Polares/II - Coordenadas Polares/02 - Coordenadas polares]] — otra lectura de curvas y cónicas.
+> - [[../Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]] — coordenadas y medida usan los reales.
+> - [[../Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/01 - Definición, dominio y rango|01 - Definición, dominio y rango]] — gráficas como lugares geométricos.
+> - [[../Unidad 3 - Funciones y Trigonometría/II - Trigonometría/02 - Funciones trigonométricas elementales|02 - Funciones trigonométricas elementales]] — ángulos, pendientes y razones en triángulos.
+> - [[../Unidad 4 - Matrices y Sistemas/I - Matrices y Sistemas de Ecuaciones/02 - Operaciones con matrices|02 - Operaciones con matrices]] — transformaciones y sistemas lineales.
+> - [[../Unidad 6 - Complejos y Polares/II - Coordenadas Polares/02 - Coordenadas polares|02 - Coordenadas polares]] — otra lectura de curvas y cónicas.
 
 ---
 

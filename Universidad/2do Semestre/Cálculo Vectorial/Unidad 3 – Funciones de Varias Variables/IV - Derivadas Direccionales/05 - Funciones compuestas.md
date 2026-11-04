@@ -2263,7 +2263,7 @@ dg-publish: true
 > **🌐 Temas relacionados:**
 > 
 > - Formas Diferenciales - Generalización geométrica
-> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas en variedades
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Derivadas en variedades
 > - Automatic Differentiation - Implementación computacional
 > - [[03 - Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
 > 

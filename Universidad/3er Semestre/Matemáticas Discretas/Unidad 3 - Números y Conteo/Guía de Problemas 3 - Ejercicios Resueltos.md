@@ -754,6 +754,6 @@ dg-publish: true
 > - [[04 - Principios de Multiplicación y Suma]] — base de 3.3 (Ej. 14–18).
 > - [[05 - Permutaciones y Combinaciones]] — base de 3.4 (Ej. 19–23).
 > - [[06 - Teorema del Binomio y Principio del Palomar]] — base de 3.5 (Ej. 24–27, 30–32).
-> - [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 3 - Números y Conteo/00 - Índice Unidad 3]] — volver al índice de la unidad.
+> - [[00 - Índice Unidad 3]] — volver al índice de la unidad.
 
 **Tags:** #discretas #unidad3 #guia-problemas

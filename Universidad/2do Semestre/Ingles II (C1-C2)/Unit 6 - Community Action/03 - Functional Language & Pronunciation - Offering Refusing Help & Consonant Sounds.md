@@ -247,7 +247,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar & Examples - Present Past Passive & Passive with Modals]]
 > - Siguiente: [[04 - Reading Writing Speaking - Urban Projects & Community Reports]]
 

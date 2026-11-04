@@ -296,7 +296,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Introductions & Saying the Letter Y]]
 > - Siguiente: [[05 - Academic Post - And We're Off!]]
 

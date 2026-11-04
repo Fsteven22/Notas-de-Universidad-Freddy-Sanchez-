@@ -89,7 +89,7 @@ Instead, software lets us update our devices instantly without changing the hard
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[03 - Grammar Review - Sentence Types by Structure]]
 
 **Tags:** #english #speaking #hardware #software #script #FIEC

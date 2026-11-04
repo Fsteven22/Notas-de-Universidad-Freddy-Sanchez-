@@ -45,10 +45,10 @@ dg-publish: true
 > |---|---|
 > | **1. Lectura comprensiva** | Leer el texto completo antes de escribir nada, entendiendo su lógica interna |
 > | **2. Identificar tesis/idea central** | Determinar qué es lo esencial que el autor quiere transmitir |
-> | **3. Localizar ideas secundarias esenciales** | Distinguir qué ideas de apoyo son indispensables para entender la idea central (ver también [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|02 - Análisis del texto expositivo]] de la Unidad 5 para esta técnica) |
+> | **3. Localizar ideas secundarias esenciales** | Distinguir qué ideas de apoyo son indispensables para entender la idea central (ver también [[../Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|02 - Análisis del texto expositivo]] de la Unidad 5 para esta técnica) |
 > | **4. Eliminar citas y ejemplos** | Los ejemplos ilustran pero no son indispensables en un resumen; las citas textuales tampoco se conservan |
 > | **5. Reorganizar en orden lógico propio** | El resumen no tiene que seguir el orden exacto del original, mientras respete la lógica del contenido |
-> | **6. Redactar en un solo párrafo** | Se integra todo en un párrafo cohesivo, con conectores que enlacen las ideas (ver [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 5 - Textos expositivos/03 - Conectores textuales y coherencia lógica|03 - Conectores textuales y coherencia lógica]] de la Unidad 5) |
+> | **6. Redactar en un solo párrafo** | Se integra todo en un párrafo cohesivo, con conectores que enlacen las ideas (ver [[../Unidad 5 - Textos expositivos/03 - Conectores textuales y coherencia lógica|03 - Conectores textuales y coherencia lógica]] de la Unidad 5) |
 > | **7. Revisión final** | Verificar la métrica de reducción, que no haya opiniones propias, y que se conserve la terminología clave del autor |
 
 ![[Pasted image 20260903221835.png]]
@@ -239,10 +239,10 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 4]] — mapa general de la unidad.
 > - [[02 - Técnicas de parafraseo y citación]] — contrasta el resumen (reducción) con el parafraseo (reformulación).
 > - [[03 - La síntesis de múltiples fuentes]] — extiende esta metodología a la integración de varias fuentes.
-> - [!info] Conexión cruzada con la Unidad 5: la fase 3 (localizar ideas secundarias esenciales) reutiliza la técnica de disección de párrafos de [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|02 - Análisis del texto expositivo]].
+> - [!info] Conexión cruzada con la Unidad 5: la fase 3 (localizar ideas secundarias esenciales) reutiliza la técnica de disección de párrafos de [[../Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|02 - Análisis del texto expositivo]].
 
 ---
 

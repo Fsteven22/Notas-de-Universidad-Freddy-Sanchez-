@@ -23,7 +23,7 @@ tags: [FESD, unidad2, indice, EYAG1037]
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Teoremas de Analisis de Circuitos]] (Unidad 1)
 > - Siguiente: [[01 - CI no programables]] (Unidad 3)
-> - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
+> - MOC general: [[../../Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---
 **Tags:** #FESD #unidad2 #indice

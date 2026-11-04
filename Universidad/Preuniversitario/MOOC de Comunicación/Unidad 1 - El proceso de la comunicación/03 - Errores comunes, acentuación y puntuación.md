@@ -619,7 +619,7 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 >
 > - [[02 - Propiedades de la redacción y textos académicos]] — las propiedades de adecuación, coherencia y cohesión enmarcan estos errores: la concordancia y la concisión son su aplicación directa.
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1]] — mapa de la unidad: esta nota consolida los puntos 05, 06 y 07 en un solo documento.
+> - [[00 - Índice Unidad 1]] — mapa de la unidad: esta nota consolida los puntos 05, 06 y 07 en un solo documento.
 
 ---
 

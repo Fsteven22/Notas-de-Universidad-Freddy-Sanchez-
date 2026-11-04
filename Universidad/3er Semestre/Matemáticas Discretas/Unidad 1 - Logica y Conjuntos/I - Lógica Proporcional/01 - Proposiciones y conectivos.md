@@ -677,7 +677,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[00 - Índice Unidad 1]]
 > - Siguiente: [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
 

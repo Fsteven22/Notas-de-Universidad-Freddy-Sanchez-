@@ -16,7 +16,7 @@ tags: [IDIG1008, unit4, indice, english]
 - [[04 - Reading, Writing, Speaking - Inventions, Comment & Turning Points]] — tone + Personally + 10.5
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../Ingles III|Ingles III]]
 > - Anterior: [[00 - Índice Unit 3]]
 > - Siguiente: [[00 - Índice Unit 5]]
 

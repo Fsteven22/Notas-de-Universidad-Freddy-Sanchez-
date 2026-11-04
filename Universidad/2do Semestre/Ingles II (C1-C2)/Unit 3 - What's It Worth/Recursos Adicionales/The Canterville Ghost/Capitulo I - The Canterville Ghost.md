@@ -100,7 +100,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../../../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Siguiente: [[Capítulo II - The Canterville Ghost]]
 
 **Tags:** #reading #canterville-ghost #extensive-reading #English #IDIG1007 #ESPOL #unit3

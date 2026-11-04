@@ -463,7 +463,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Proposiciones y conectivos]]
 > - Siguiente: [[01 - Algebra de Proposiciones]]
 

@@ -337,7 +337,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[02 - Operaciones y Diagramas de Venn]]
 > - Siguiente: [[04 - Cardinalidad y Leyes de Cardinalidad]]
 

@@ -6,7 +6,7 @@ tags: [MATG1045, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Cálculo de una Variable)
 
 > [!info] ℹ️ Portal de material de la materia
-> La carpeta `Unidad 0 - Guias y Ejercicios` agrupa el material oficial (syllabus, guías, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 

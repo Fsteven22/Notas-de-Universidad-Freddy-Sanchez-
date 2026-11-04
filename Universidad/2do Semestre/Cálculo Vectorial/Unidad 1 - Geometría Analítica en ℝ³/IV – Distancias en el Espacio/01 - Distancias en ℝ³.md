@@ -707,7 +707,7 @@ dg-publish: true
 > 
 > **Temas avanzados:**
 > 
-> - [[Cálculo Vectorial]] - Gradientes y direcciones
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Gradientes y direcciones
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas en variedades
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización abstracta
 > - [[01 - Nociones topológicas en Rⁿ]] - Bolas abiertas y cerradas

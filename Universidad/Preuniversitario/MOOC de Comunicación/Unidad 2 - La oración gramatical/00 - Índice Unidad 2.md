@@ -57,7 +57,7 @@ dg-publish: true
 ---
 
 > [!quote] 🔗 Conexiones
-> - Anterior: [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1|00 - Índice Unidad 1]]
+> - Anterior: [[../Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1|00 - Índice Unidad 1]]
 > - Siguiente: [[01 - Estructura de la oración y tipos de sujeto]]
 
 ---

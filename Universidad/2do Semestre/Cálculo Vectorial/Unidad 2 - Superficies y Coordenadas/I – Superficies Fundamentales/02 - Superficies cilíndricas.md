@@ -1010,9 +1010,9 @@ dg-publish: true
 > 
 > **Aplicaciones avanzadas:**
 > 
-> - [[Cálculo Vectorial]] - Integrales de superficie
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Integrales de superficie
 > - Ecuaciones Diferenciales - Problemas en coordenadas cilíndricas
-> - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Laplaciano en cilindros
+> - [[../../../../1er Semestre/Física Mecánica/Física Mecánica|Física Mecánica]] - Laplaciano en cilindros
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Superficies desarrollables
 > 
 > **Temas posteriores:**
