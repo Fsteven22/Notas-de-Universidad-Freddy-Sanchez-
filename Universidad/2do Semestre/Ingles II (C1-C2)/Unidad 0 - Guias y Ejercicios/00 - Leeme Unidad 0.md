@@ -3,34 +3,51 @@ dg-publish: true
 tags: [unidad0, indice, recursos]
 ---
 
-# 📚 Unidad 0 — Inglés II (C1-C2)
+# 📂 Unidad 0 — Guías y Ejercicios (Inglés II (C1-C2))
 
-> [!info] Índice de recursos de la unidad
+> [!info] ℹ️ Portal de material de la materia
+> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
-Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Inglés II (C1-C2)**. Todos los recursos de la unidad están organizados según la taxonomía del vault:
+## 📎 Syllabus y políticas
 
-| Carpeta | Contenido |
-|---------|-----------|
-| `Diapositivas/` | Presentaciones del docente exportadas a PDF |
-| `Guías/` | Guías de estudio, guías de problemas, ejercicios guiados |
-| `Material de clase/` | Capturas del libro, plantillas, audios, videos locales, material suelto de clase |
-| `Talleres/` | Talleres y soluciones |
-| `Lecciones/` | Lecciones y soluciones |
-| `Exámenes/` | Exámenes y resoluciones |
-| `Diagramas/` | Diagramas draw.io y SVG generados |
-| `Figuras/` | Imágenes PNG/JPG sueltas |
+> [!note] 📄 Syllabus oficial
+> ![[Guías/SPA-SyllabusEUR_ACE-IDIG1007.pdf]]
+> Syllabus EUR-ACE de la asignatura (IDIG1007), subido desde el aula virtual.
 
-> [!tip] Regla de colocación
-> - Es una presentación de clase → `Diapositivas/`
-> - Es una guía de estudio o problemas → `Guías/`
-> - Es material suelto de clase (capturas, plantillas, multimedia local) → `Material de clase/`
-> - Tiene copyright (libros `z-lib.org`, Cambridge, etc.) y no se publica → no va en ninguna de las tres; queda en `_local/` o en la raíz de `Unidad 0`
+> [!note] 💛 El syllabus completo está como nota
+> ![[Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
+> Ver [[Guías/Welcome & Syllabus English II|Welcome & Syllabus]] — objetivos, evaluación y contenido.
 
-> [!info] Material existente
-> - `Unit 0 - Preliminar/` contiene material preliminar de la unidad.
-> - `Diagramas/` en la raíz de la materia contiene assets visuales compartidos.
-> - Las unidades 1-6 están en carpetas propias (`Unit 1`, etc.).
+## 📚 Guías y material de clase
+
+> [!tip] 🚪 Entradas por unidad/módulo
+> Primera nota de cada bloque: el punto de partida.
+> - [[01 - Grammar Review - The Sentence & Clauses]] — *Unit 0 - Preliminar*
+> - [[01 - Vocabulary & Use - Describing Accomplishments & Key Qualities]] — *Unit 1 - And We're Off!*
+> - [[01 - Vocabulary & Use - Describing Trends & Preparing Food]] — *Unit 2 - The Future of Food*
+> - [[01 - Vocabulary & Use Time Money & Prices]] — *Unit 3 - What's It Worth*
+> - [[01 - Vocabulary & Use - Advertising & Media People]] — *Unit 4 - Going Glocal*
+> - [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]] — *Unit 5 - True Stories*
+> - [[01 - Vocabulary & Use - Discussing Good Works & Describing Good Deeds]] — *Unit 6 - Community Action*
+
+> [!info] 📁 Material existente
+> - `Unit 0 - Preliminar/` — repaso gramatical previo a las units.
+> - `Diagramas/` — 49 diagramas SVG embebidos en las notas de cada unit.
+> - `Material de clase/` — notas índice de la materia.
+
+## 📥 Pendiente de cargar
+
+> [!warning] 📬 Material que falta
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
+> - `Guia-Unit-XX.pdf`
+> - `Ejercicios-Unit-XX.pdf`
 
 ---
 
-**Tags:** #ingles-ii #unidad0 #indice #taxonomia
+## 🔗 Navegación
+
+> [!tip] Enlaces rápidos
+> - [[Material de clase/Inglés II (C1-C2)|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Welcome & Syllabus English II|👋 Bienvenida y Syllabus]]
+
+**Tags:** #ingles-ii #unidad0 #recursos

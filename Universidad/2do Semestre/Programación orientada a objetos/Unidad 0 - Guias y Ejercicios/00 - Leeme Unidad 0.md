@@ -10,16 +10,18 @@ tags: [CCPG1005, unidad0, recursos]
 
 ## 📎 Syllabus y políticas
 
-![[../SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf]]
+> [!note] 📄 Syllabus oficial
+> ![[Guías/SPA-Syllabus-PROGRAMACIÓN_ORIENTADA_A_OBJETOS.pdf]]
+> PDF oficial del aula virtual.
 
-> [!quote] 📜 Origen
-> PDF oficial del aula virtual; la versión de estudio está en [[Bienvenida y Syllabus POO|Bienvenida y Syllabus]].
+> [!note] 💛 El syllabus completo está como nota
+> ![[Diagramas/Bienvenida_y_Syllabus_POO_01.svg]]
+> Ver [[Guías/Bienvenida y Syllabus POO|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
->
 > - [[01 - Introducción al Paradigma Orientado a Objetos]] — *Unidad 1 - Fundamentos de la POO*
 > - [[01 - Arreglos estáticos]] — *Unidad 2 - Colecciones y Arreglos*
 > - [[01 - Pilares de la POO]] — *Unidad 3 - Diseño OO y UML*
@@ -41,7 +43,7 @@ tags: [CCPG1005, unidad0, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Programación Orientada a Objetos|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus POO|👋 Bienvenida y Syllabus]]
+> - [[Material de clase/Programación Orientada a Objetos|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Bienvenida y Syllabus POO|👋 Bienvenida y Syllabus]]
 
 **Tags:** #CCPG1005 #unidad0 #recursos

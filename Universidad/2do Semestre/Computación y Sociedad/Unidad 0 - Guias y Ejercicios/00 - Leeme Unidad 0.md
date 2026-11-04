@@ -10,16 +10,18 @@ tags: [CCPG1004, unidad0, recursos]
 
 ## 📎 Syllabus y políticas
 
-![[../SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
+> [!note] 📄 Syllabus oficial
+> ![[Guías/SPA-Syllabus-COMPUTACIÓN_Y_SOCIEDAD.pdf]]
+> PDF oficial del aula virtual.
 
-> [!quote] 📜 Origen
-> PDF oficial del aula virtual; la versión de estudio está en [[Bienvenida y Syllabus Computacion y Sociedad|Bienvenida y Syllabus]].
+> [!note] 💛 El syllabus completo está como nota
+> ![[Diagramas/Bienvenida_y_Syllabus_Computacion_y_Sociedad_01.svg]]
+> Ver [[Guías/Bienvenida y Syllabus Computacion y Sociedad|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
->
 > - [[01 - Orígenes e Instrumentos de Cálculo]] — *Unidad 1 - Historia de la computación*
 > - [[01 - Brecha Digital]] — *Unidad 2 - Implicaciones Sociales*
 > - [[01 - Análogo vs Digital]] — *Unidad 3 - Representación de la información*
@@ -40,7 +42,7 @@ tags: [CCPG1004, unidad0, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Computación y Sociedad|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus Computacion y Sociedad|👋 Bienvenida y Syllabus]]
+> - [[Material de clase/Computación y Sociedad|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Bienvenida y Syllabus Computacion y Sociedad|👋 Bienvenida y Syllabus]]
 
 **Tags:** #CCPG1004 #unidad0 #recursos
