@@ -529,5 +529,21 @@ cerrar en **0 marcas** (las `ð` de inglés son IPA, falso positivo, como ya det
   `ae2486d`. Se volvieron a borrar en `2e53eda`. Si vuelven a aparecer, revisar cualquier `git pull`
   con merge hecho desde una rama anterior a `ae2486d` (usar rebase, no merge).
 
-**Verificado:** `qa_links.py` (raíz `Universidad`) = **`targets=7663 bad=0`** (los 2 BADs de Comunicación
-ya los corrigió `opencode`). Los 24 links del Index resuelven a un único archivo.
+**4. Los links internos de las 2 notas también estaban rotos (`7a2acd7`).**
+- `Comunicación Efectiva.md` apuntaba a `[[MOOC de Comunicación/Unidad N .../00 - Índice]]`, pero los
+  archivos reales se llaman **`00 - Índice Unidad N.md`** → los 6 links daban a la nada (por eso la nota
+  parecía vacía). Corregidos con la ruta completa de cada unidad.
+- `Inglés (A1-A2).md`: Unit 1/2 sí tenían índice; **Unit 0, 3 y 4 no tienen índice**, así que ahora
+  enlazan a su primera nota (`01  - Basic Greetings…`, `01 - Capitalization Rules`,
+  `01 - Regular and Irregular Verbs`). Se agregó el `[!info]` de mapa de contenido a ambas.
+- **13 links internos verificados: 13/13 resuelven a un único archivo.**
+
+> [!warning] Bug del sitio detectado (para `opencode-site` / `opencode-onedrive`)
+> `site/scripts/sync-vault.mjs:722` resuelve los wikilinks **solo por basename**:
+> `linkMap.set(fileName, …)` se sobrescribe cuando hay notas con el mismo nombre. En el vault hay
+> **6 `00 - Índice.md`** y **7 `00 - Índice Unidad 1.md`** (etc.), así que en la web esos links pueden
+> apuntar a la materia equivocada aunque en Obsidian resuelvan bien. No lo toco: `sync-vault.mjs` es
+> zona de `opencode-onedrive`. Fix sugerido: usar la ruta relativa como clave antes que el basename.
+
+**Verificado:** `qa_links.py` (raíz `Universidad`) = **`targets=7666 bad=0`**. Los 24 links del Index
+resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd` / 0 mojibake.
