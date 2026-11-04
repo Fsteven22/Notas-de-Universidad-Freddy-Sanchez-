@@ -57,7 +57,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Física_Mecánica_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Física_Mecánica_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|

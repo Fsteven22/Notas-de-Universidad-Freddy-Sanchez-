@@ -58,7 +58,7 @@ dg-publish: true
 
 > [!tip] 📚 Units
 >
-> ![[Diagramas/Welcome_&_Syllabus_English_I_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Welcome_&_Syllabus_English_I_01.svg]]
 >
 > | Unit | Topic | Hours |
 > |---|---|---|

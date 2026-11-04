@@ -58,7 +58,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Fundamentos_de_Programación_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Fundamentos_de_Programación_01.svg]]
 >
 > | Módulo | Tema | Horas |
 > |---|---|---|

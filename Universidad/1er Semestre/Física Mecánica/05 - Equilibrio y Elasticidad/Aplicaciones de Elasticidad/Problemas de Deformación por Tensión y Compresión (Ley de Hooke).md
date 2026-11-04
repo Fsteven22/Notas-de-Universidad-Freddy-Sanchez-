@@ -318,7 +318,7 @@ dg-publish: true
 > 
 > - [[Elasticidad]] - Fundamentos teóricos generales
 > - [[Equilibrio]] - Análisis de fuerzas y momentos
-> - [[Física Mecánica#Fundamentos de Física Mecánica|Fundamentos de Física Mecánica]] - Base matemática
+> - [[../../Física Mecánica#Fundamentos de Física Mecánica|Fundamentos de Física Mecánica]] - Base matemática
 > - Aplicaciones de Equilibrio - Casos prácticos
 
 ## 📚 Notas Recomendadas

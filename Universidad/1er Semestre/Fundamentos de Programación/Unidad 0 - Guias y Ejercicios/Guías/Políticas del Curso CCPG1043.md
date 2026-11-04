@@ -55,8 +55,8 @@ tags: [CCPG1043, políticas, syllabus]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Bienvenida y Syllabus Fundamentos de Programación|👋 Bienvenida y Syllabus]]
-> - [[00 - Leeme Unidad 0|📂 Portal de la Unidad 0]]
-> - [[Material de clase (slides del profesor)|📽️ Slides del profesor]]
+> - [[../../Bienvenida y Syllabus Fundamentos de Programación|👋 Bienvenida y Syllabus]]
+> - [[../../00 - Leeme Unidad 0|📂 Portal de la Unidad 0]]
+> - [[../Material de clase/Material de clase (slides del profesor)|📽️ Slides del profesor]]
 
 **Tags:** #CCPG1043 #políticas #syllabus

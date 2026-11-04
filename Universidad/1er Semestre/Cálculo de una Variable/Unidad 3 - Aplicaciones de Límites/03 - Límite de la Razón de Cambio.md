@@ -299,7 +299,7 @@ dg-publish: true
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior.md#Análisis de Funciones|Análisis de Funciones]] - Crecimiento, extremos, inflexión
 > - Ecuaciones Diferenciales - Modelado con razones de cambio
 > - Cálculo Numérico - Aproximación de derivadas
-> - [[1er Semestre/Física Mecánica/Unidad 0 - Guias y Ejercicios/Material de clase/Física Mecánica.md]] - Aplicaciones avanzadas en ciencias
+> - [[../../Física Mecánica/Física Mecánica|Física Mecánica]] - Aplicaciones avanzadas en ciencias
 
 ---
 

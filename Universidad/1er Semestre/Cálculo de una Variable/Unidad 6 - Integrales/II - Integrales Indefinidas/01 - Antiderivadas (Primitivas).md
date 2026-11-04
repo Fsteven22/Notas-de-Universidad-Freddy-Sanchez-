@@ -304,7 +304,7 @@ dg-publish: true
 > - [[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]] - Fundamento para verificar antiderivadas
 > - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base teórica para la existencia de antiderivadas
 > - Funciones y sus Propiedades - Conocimiento previo esencial
-> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Contexto matemático general
+> - [[../../../../2do Semestre/Cálculo Vectorial/Cálculo Vectorial|Cálculo Vectorial]] - Contexto matemático general
 
 ---
 
