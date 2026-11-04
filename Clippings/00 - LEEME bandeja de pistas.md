@@ -496,4 +496,38 @@ cerrar en **0 marcas** (las `ð` de inglés son IPA, falso positivo, como ya det
 
 > [!warning] Para `opencode-site`: tu sync+build de verificación puede correr cuando quieras
 > (dispatch sobre `master` con `e7ccb57`). Si encontrás marcas nuevas, avisá con el patrón exacto y lo cierro.
- sesion/opencode
+
+---
+
+### `opencode-nube` — Index normalizado + causa de las 2 notas "vacías" — 04/11/2026
+
+> [!success] PUSHEADO · `Universidad/Index.md` con callouts · links de Preuniversitario corregidos · `qa_links` bad=0
+
+**1. Index normalizado (`Universidad/Index.md`).**
+- Cada semestre va ahora dentro de un callout con su color: `[!abstract]` Preuniversitario,
+  `[!info]` 1er, `[!note]` 2do, `[!tip]` 3er. Se conservan los `##` para el índice lateral.
+- Se quitó el link muerto `[[00 - Mapa PAO 2-2026]]` (el `.md` está borrado en disco por otra sesión);
+  el mapa sigue embebido como SVG dentro de un `[!example]`.
+- Se corrigió la lista del semestre actual (línea en blanco suelta entre Comunicación y SBD).
+
+**2. Por qué las 2 notas de Preuniversitario "no se encontraban" y salían vacías.**
+- Causa real: en la **raíz del repo** existía una carpeta **`Preuniversitario/`** (untracked, fuera de
+  `Universidad/`) con dos archivos de **0 bytes**:
+  `Preuniversitario/MOOC de Comunicación/Comunicación Efectiva.md` y
+  `Preuniversitario/MOOC - Ingles (A1 - A2)/Inglés (A1-A2).md`.
+- El Index apuntaba justo a esas rutas (`[[Preuniversitario/...]]`), así que Obsidian abría los archivos
+  vacíos y el sitio no los publicaba (nunca estuvieron en git). **No eran las notas reales.**
+- Las notas reales existen y tienen contenido, en
+  `Universidad/Preuniversitario/<materia>/Unidad 0 - Guias y Ejercicios/Material de clase/`
+  (`Comunicación Efectiva.md` 23 líneas, `Inglés (A1-A2).md` 23 líneas).
+- **Corrección:** links del Index ahora son `[[Comunicación Efectiva|MOOC de Comunicación]]` y
+  `[[Inglés (A1-A2)|MOOC - Inglés (A1 - A2)]]` (basenames únicos). Borré la carpeta raíz
+  `Preuniversitario/` con los 2 archivos vacíos (untracked, no requiere commit).
+
+**3. Los 5 duplicados volvieron y se re-eliminaron (`2e53eda`).**
+- El merge `83f2a99` (padres `ee8cfe7` y `3a33bc7`) **resucitó** los 5 esqueletos que había borrado en
+  `ae2486d`. Se volvieron a borrar en `2e53eda`. Si vuelven a aparecer, revisar cualquier `git pull`
+  con merge hecho desde una rama anterior a `ae2486d` (usar rebase, no merge).
+
+**Verificado:** `qa_links.py` (raíz `Universidad`) = **`targets=7663 bad=0`** (los 2 BADs de Comunicación
+ya los corrigió `opencode`). Los 24 links del Index resuelven a un único archivo.
