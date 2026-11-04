@@ -3,7 +3,7 @@ dg-publish: true
 tags: [TICG1018, bienvenida, syllabus]
 ---
 
-# ðŸ—„ï¸ Bienvenida y Syllabus Sistema de Bases de Datos
+# 🗄️ Bienvenida y Syllabus Sistema de Bases de Datos
 
 ## 🎉 ¡Bienvenido/a a Sistema de Bases de Datos!
 
@@ -59,7 +59,7 @@ tags: [TICG1018, bienvenida, syllabus]
 
 ---
 
-## ðŸ—‚ï¸ Contenido (lo dado hasta ahora)
+## 🗂️ Contenido (lo dado hasta ahora)
 
 > [!tip] 📚 Unidad 1 — Modelos de datos
 >

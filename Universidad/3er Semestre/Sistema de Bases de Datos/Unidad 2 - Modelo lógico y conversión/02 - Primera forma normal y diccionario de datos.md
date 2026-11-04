@@ -3,7 +3,7 @@ dg-publish: true
 tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 ---
 
-# ðŸ“ Primera Forma Normal y Diccionario de Datos
+# 📏 Primera Forma Normal y Diccionario de Datos
 
 ## 🎯 Introducción
 
@@ -31,7 +31,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo real:**
 >
-> âŒ **No es 1FN:** `CLIENTE(cédula, nombre, teléfono1, teléfono2, teléfono3)`  
+> ❌ **No es 1FN:** `CLIENTE(cédula, nombre, teléfono1, teléfono2, teléfono3)`  
 > Los teléfonos están repetidos en columnas diferentes. Si un cliente tiene 4 teléfonos, no caben.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-18-er.svg]]
@@ -101,7 +101,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 >
 > **Ejemplo:**
 >
-> âŒ `CLIENTE(cédula, nombre, teléfonos)` → `teléfonos = "2345, 2654"` (grupo repetitivo)
+> ❌ `CLIENTE(cédula, nombre, teléfonos)` → `teléfonos = "2345, 2654"` (grupo repetitivo)
 > ✅ `TELEFONO(cédula FK, número)` → una fila por teléfono
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-17-graph.svg]]
@@ -130,7 +130,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
-## ðŸ› ï¸ Método: Documentar con Diccionario
+## 🛠️ Método: Documentar con Diccionario
 
 > [!success] ðŸ† Plantilla por tabla (Úsala en tu proyecto)
 >
@@ -145,27 +145,27 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
-## âš ï¸ Errores Comunes
+## ⚠️ Errores Comunes
 
-### âŒ Error 1: Varios valores por celda
+### ❌ Error 1: Varios valores por celda
 
-> [!danger] âŒ Viola: 1FN condición 4
+> [!danger] ❌ Viola: 1FN condición 4
 >
 > `productos = "arroz, leche, pan"` en una sola celda. No puedes filtrar por "arroz" fácilmente.
 >
 > ✅ **Solución:** una fila por producto en una tabla `DETALLE(idReporte FK, producto)`.
 
-### âŒ Error 2: Columnas numeradas
+### ❌ Error 2: Columnas numeradas
 
-> [!danger] âŒ Viola: grupos repetitivos
+> [!danger] ❌ Viola: grupos repetitivos
 >
 > `materia1, materia2, materia3`. ¿Y la cuarta materia? Columnas finitas para relaciones infinitas.
 >
 > ✅ **Solución:** tabla intermedia de matrícula (una fila por par estudiante–materia).
 
-### âŒ Error 3: ML sin diccionario
+### ❌ Error 3: ML sin diccionario
 
-> [!danger] âŒ Viola: entregable completo
+> [!danger] ❌ Viola: entregable completo
 >
 > Entregar el diagrama lógico sin describir tipos ni dominios. Nadie sabe si `teléfono` es `int` o texto, ni qué valores acepta.
 >
@@ -184,9 +184,9 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-### âœï¸ Ejercicio 1 — Detectar la violación
+### ✏️ Ejercicio 1 — Detectar la violación
 
 > [!example] 📋 Planteamiento
 >
@@ -196,7 +196,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > >
 > > No: viola la condición 4 (un valor por celda). Corrección: tabla `DETALLE_REPORTE(idReporte FK, producto)`.
 
-### âœï¸ Ejercicio 2 — Escribir un diccionario
+### ✏️ Ejercicio 2 — Escribir un diccionario
 
 > [!example] 📋 Planteamiento
 >
@@ -209,7 +209,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > > | idDepartamento | int | > 0, único | PK del departamento |
 > > | nombre | varchar(30) | texto no vacío | Nombre oficial |
 
-### âœï¸ Ejercicio 3 — Las 3 FN en una frase
+### ✏️ Ejercicio 3 — Las 3 FN en una frase
 
 > [!example] 📋 Planteamiento
 >
@@ -221,7 +221,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
 
