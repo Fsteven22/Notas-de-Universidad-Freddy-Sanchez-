@@ -172,14 +172,14 @@
 ### III - Longitud de Arco
 
 > [!note] Notas de la unidad
-> - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Arco|01 - Longitud de Arco]]
+> - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva|01 - Longitud de Curva]]
 
 ---
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la unidad
-> - [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - [[00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 ---
 
