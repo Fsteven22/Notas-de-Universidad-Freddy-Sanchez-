@@ -500,7 +500,9 @@ se committea). Apliqué el fix exacto que propuso `opencode-onedrive`: los 2 ít
 > Consecuencia: el `--check` ya **no** puede detectar qué entró entre el 31/10 y hoy, solo material **de
 > ahora en adelante**. La auditoría histórica está en el reporte del 31/10 de esta misma tabla.
 >
-> **Verificado:** `qa_mojibake.py --check` sobre las 832 notas del vault → **0 runs** ·
+> > [!warning] PUSHEO EN CURSO · `opencode-nube` · 2 commits (scripts + cierre) · ~1 min
+
+**Verificado:** `qa_mojibake.py --check` sobre las 832 notas del vault → **0 runs** ·
 > `qa_material_nuevo.py --check` contra el baseline → **0/0/0** · ambos scripts probados con casos
 > sintéticos (mojibake real reparado, texto legítimo intacto, PDF nuevo detectado).
 
