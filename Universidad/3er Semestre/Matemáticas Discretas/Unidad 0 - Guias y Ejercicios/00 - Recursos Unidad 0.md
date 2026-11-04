@@ -88,19 +88,22 @@ tags: [MATG1051, unidad0, recursos]
 
 ## 🔗 Links de contenido recomendado
 
-- https://www.youtube.com/watch?v=4iUoYylC8lU — El principio del palomar explicado en 3 minutos (QuantumPatch, 3:19) — antes de los ejercicios del palomar.
-- https://www.youtube.com/watch?v=58tBNVrfPHw — Matemáticas discretas II: principio del palomar (Carlos Delgado - Computación, 31:19) — clase completa con ejercicios.
-- https://www.youtube.com/watch?v=ZK8QUphO4MA — Tablas de verdad, ejemplo 1 (Matemáticas profe Alex, 12:30) — para la guía didáctica de lógica y demostraciones.
-- https://www.youtube.com/watch?v=n_t1f0xa3D0 — Tablas de verdad, lógica proposicional (ProfeGuille Matemática, 17:33) — conectores lógicos uno a uno.
-- https://www.youtube.com/watch?v=5HuMMTTfAGs — El principio de inducción matemática (Derivando, 3:15) — la idea en tres minutos.
-- https://www.youtube.com/watch?v=qJLUuLEqfS8 — Qué es la inducción matemática, ejercicios resueltos (Matemáticas con Juan, 23:17) — demostraciones paso a paso.
-- https://www.youtube.com/watch?v=kzMurQ2H4oc — Sucesión recurrente o recursiva (Pi-ensa Matematik, 8:45) — Fibonacci y sucesiones recursivas (Unidad 3).
-- https://www.youtube.com/watch?v=6Nn4ALsmH8U — Relaciones de recurrencia, ejercicio 1 (Joel Alvarado, 13:44) — método iterativo paso a paso.
-- https://www.youtube.com/watch?v=vnNFiNVy9KM — Aprende grafos desde cero (BitBoss, 5:54) — lista y matriz de adyacencia para la Unidad 5.
-- https://www.youtube.com/watch?v=PdA1Jz6iEWQ — Matemáticas Discretas: teoría de grafos (PassItEDU, 13:25) — clase de la Unidad 5.
-- https://www.youtube.com/watch?v=d9aEE-uLmNE — Qué es un autómata finito determinista (Codemath, 8:02) — entrada a la Unidad 6.
-- https://www.youtube.com/watch?v=P0AxQvJcN2Q — Definición formal de un AFD (Juancar Molinero, 5:38) — para las notas de máquinas automáticas.
-- https://www.youtube.com/watch?v=dIgKBNuaglE — Qué es un autómata finito no determinista (Codemath, 5:25) — el AFND para comparar.
+> [!info] 🔗 Links de contenido
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> | El principio del palomar explicado en 3 minutos | [Link](https://www.youtube.com/watch?v=4iUoYylC8lU) | QuantumPatch, 3:19 | antes de los ejercicios del palomar. |
+> | Matemáticas discretas II: principio del palomar | [Link](https://www.youtube.com/watch?v=58tBNVrfPHw) | Carlos Delgado - Computación, 31:19 | clase completa con ejercicios. |
+> | Tablas de verdad, ejemplo 1 | [Link](https://www.youtube.com/watch?v=ZK8QUphO4MA) | Matemáticas profe Alex, 12:30 | para la guía didáctica de lógica y demostraciones. |
+> | Tablas de verdad, lógica proposicional | [Link](https://www.youtube.com/watch?v=n_t1f0xa3D0) | ProfeGuille Matemática, 17:33 | conectores lógicos uno a uno. |
+> | El principio de inducción matemática | [Link](https://www.youtube.com/watch?v=5HuMMTTfAGs) | Derivando, 3:15 | la idea en tres minutos. |
+> | Qué es la inducción matemática, ejercicios resueltos | [Link](https://www.youtube.com/watch?v=qJLUuLEqfS8) | Matemáticas con Juan, 23:17 | demostraciones paso a paso. |
+> | Sucesión recurrente o recursiva | [Link](https://www.youtube.com/watch?v=kzMurQ2H4oc) | Pi-ensa Matematik, 8:45 | Fibonacci y sucesiones recursivas (Unidad 3). |
+> | Relaciones de recurrencia, ejercicio 1 | [Link](https://www.youtube.com/watch?v=6Nn4ALsmH8U) | Joel Alvarado, 13:44 | método iterativo paso a paso. |
+> | Aprende grafos desde cero | [Link](https://www.youtube.com/watch?v=vnNFiNVy9KM) | BitBoss, 5:54 | lista y matriz de adyacencia para la Unidad 5. |
+> | Matemáticas Discretas: teoría de grafos | [Link](https://www.youtube.com/watch?v=PdA1Jz6iEWQ) | PassItEDU, 13:25 | clase de la Unidad 5. |
+> | Qué es un autómata finito determinista | [Link](https://www.youtube.com/watch?v=d9aEE-uLmNE) | Codemath, 8:02 | entrada a la Unidad 6. |
+> | Definición formal de un AFD | [Link](https://www.youtube.com/watch?v=P0AxQvJcN2Q) | Juancar Molinero, 5:38 | para las notas de máquinas automáticas. |
+> | Qué es un autómata finito no determinista | [Link](https://www.youtube.com/watch?v=dIgKBNuaglE) | Codemath, 5:25 | el AFND para comparar. |
 
 ## 📕 Libro y syllabus (solo local, no se publican)
 

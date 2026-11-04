@@ -20,13 +20,16 @@ Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 
 ## 🔗 Links de contenido recomendado
 
-- https://www.youtube.com/watch?v=2U-mR62OVUg — Tutorial: cómo usar el osciloscopio (Medición Instrumentación, 6:31) — lo primero para conectar y medir en la práctica.
-- https://www.youtube.com/watch?v=A7QuzmZoGlI — Osciloscopio: controles básicos y calibración de puntas (Manuel Rodriguez-Achach, 15:05) — el manejo de punta y ground.
-- https://www.youtube.com/watch?v=yzdl2vnHpyg — Cómo usar un osciloscopio, nivel básico (Luis Carlos Galán, 19:21) — lectura de formas de onda y ajustes.
-- https://www.youtube.com/watch?v=0DApkAeWF20 — Guía del osciloscopio para principiantes (Caty Kanal, 13:43) — si nunca lo has usado.
-- https://www.youtube.com/watch?v=Z1pxudDk-BM — Cómo usar multímetro digital: funciones básicas (Hetzu Academy, 9:30) — tensión, corriente y resistencia.
-- https://www.youtube.com/watch?v=uUw-mYk8iCA — Aprende a usar un multímetro (Mentalidad de Ingeniería, 28:16) — curso completo, con los errores típicos.
-- https://www.youtube.com/watch?v=VQE6udqyr6Y - Funciones del multímetro (IngE Darwin, 0:56) - el resumen de un minuto.
+> [!info] 🔗 Links de contenido
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> | Tutorial: cómo usar el osciloscopio | [Link](https://www.youtube.com/watch?v=2U-mR62OVUg) | Medición Instrumentación, 6:31 | lo primero para conectar y medir en la práctica. |
+> | Osciloscopio: controles básicos y calibración de puntas | [Link](https://www.youtube.com/watch?v=A7QuzmZoGlI) | Manuel Rodriguez-Achach, 15:05 | el manejo de punta y ground. |
+> | Cómo usar un osciloscopio, nivel básico | [Link](https://www.youtube.com/watch?v=yzdl2vnHpyg) | Luis Carlos Galán, 19:21 | lectura de formas de onda y ajustes. |
+> | Guía del osciloscopio para principiantes | [Link](https://www.youtube.com/watch?v=0DApkAeWF20) | Caty Kanal, 13:43 | si nunca lo has usado. |
+> | Cómo usar multímetro digital: funciones básicas | [Link](https://www.youtube.com/watch?v=Z1pxudDk-BM) | Hetzu Academy, 9:30 | tensión, corriente y resistencia. |
+> | Aprende a usar un multímetro | [Link](https://www.youtube.com/watch?v=uUw-mYk8iCA) | Mentalidad de Ingeniería, 28:16 | curso completo, con los errores típicos. |
+> | Funciones del multímetro | [Link](https://www.youtube.com/watch?v=VQE6udqyr6Y) | IngE Darwin, 0:56 | el resumen de un minuto. |
 
 > [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
 

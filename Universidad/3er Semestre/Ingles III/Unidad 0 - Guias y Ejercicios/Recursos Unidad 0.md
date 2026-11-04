@@ -63,14 +63,17 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 
 ## 🔗 Links de contenido recomendado
 
-- https://www.youtube.com/watch?v=UmdGwttUfKU — PRESENT PERFECT or PAST SIMPLE? (Learn English with Rebecca, 29:36) — para el mapa de tiempos verbales.
-- https://www.youtube.com/watch?v=vM5trdispow — PAST SIMPLE or PRESENT PERFECT? comparación (Arnel's Everyday English, 13:45) — los dos tiempos en el mismo video.
-- https://www.youtube.com/watch?v=3tk8HDa0O-4 — Presente perfecto vs pasado simple (Clases de inglés en español, 9:03) — explicado en español.
-- https://www.youtube.com/watch?v=B0heWo1XGhc — 50 phrasal verbs con ejemplos (Learn English with Bob the Canadian, 7:57) — para la guía de verbos frasales.
-- https://www.youtube.com/watch?v=r7VKVXbaj_Y — 50+ phrasal verbs comunes con workbook (mmmEnglish, 33:36) — más completo, con material de apoyo.
-- https://www.youtube.com/watch?v=MA3NFtLc22k — Irregular Verbs en una canción (Lingportal, 5:36) — para el cuadro de verbos irregulares.
-- https://www.youtube.com/watch?v=FfhZFRvmaVY — Advanced speaking practice: English Imitation Lesson (mmmEnglish, 13:51) — para el speaking y los ejemplos good/bad.
-- https://www.youtube.com/watch?v=fzIxD1jXn44 — Presentations in English: how to give a presentation (Oxford Online English, 16:46) — para las plantillas de presentación de CELEX.
+> [!info] 🔗 Links de contenido
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> | PRESENT PERFECT or PAST SIMPLE? | [Link](https://www.youtube.com/watch?v=UmdGwttUfKU) | Learn English with Rebecca, 29:36 | para el mapa de tiempos verbales. |
+> | PAST SIMPLE or PRESENT PERFECT? comparación | [Link](https://www.youtube.com/watch?v=vM5trdispow) | Arnel's Everyday English, 13:45 | los dos tiempos en el mismo video. |
+> | Presente perfecto vs pasado simple | [Link](https://www.youtube.com/watch?v=3tk8HDa0O-4) | Clases de inglés en español, 9:03 | explicado en español. |
+> | 50 phrasal verbs con ejemplos | [Link](https://www.youtube.com/watch?v=B0heWo1XGhc) | Learn English with Bob the Canadian, 7:57 | para la guía de verbos frasales. |
+> | 50+ phrasal verbs comunes con workbook | [Link](https://www.youtube.com/watch?v=r7VKVXbaj_Y) | mmmEnglish, 33:36 | más completo, con material de apoyo. |
+> | Irregular Verbs en una canción | [Link](https://www.youtube.com/watch?v=MA3NFtLc22k) | Lingportal, 5:36 | para el cuadro de verbos irregulares. |
+> | Advanced speaking practice: English Imitation Lesson | [Link](https://www.youtube.com/watch?v=FfhZFRvmaVY) | mmmEnglish, 13:51 | para el speaking y los ejemplos good/bad. |
+> | Presentations in English: how to give a presentation | [Link](https://www.youtube.com/watch?v=fzIxD1jXn44) | Oxford Online English, 16:46 | para las plantillas de presentación de CELEX. |
 
 ## 📕 Libro y syllabus (solo local, no se publican)
 

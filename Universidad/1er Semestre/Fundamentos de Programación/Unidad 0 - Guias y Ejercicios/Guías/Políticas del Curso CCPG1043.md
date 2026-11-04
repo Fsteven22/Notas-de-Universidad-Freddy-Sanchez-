@@ -41,11 +41,14 @@ tags: [CCPG1043, políticas, syllabus]
 
 ## 📚 Recursos recomendados
 
-- [programacion.espol.edu.ec](http://programacion.espol.edu.ec/) — página con recursos de la materia.
-- [blog.espol.edu.ec/ccpg1001](http://blog.espol.edu.ec/ccpg1001/) — ejercicios y exámenes resueltos.
-- [mclibre.org](https://www.mclibre.org/consultar/python/) — ejercicios de Python 3 (Univ. de Valencia).
-- [Canal de clases de Python 3 (Rafael Bonilla, ESPOL)](https://www.youtube.com/channel/UCvSOZzsdziyVVPmfA7Sah5A)
-- [Playlist Código Facilito (Python 3)](https://www.youtube.com/playlist?list=PLagErt3C7iltgifmiGFQFI1GhUAKQvvyb)
+> [!info] 🎬 Recursos
+> | Recurso | Enlace | Para qué sirve |
+> | --- | --- | --- |
+> | programacion.espol.edu.ec | [Link](http://programacion.espol.edu.ec/) | página con recursos de la materia. |
+> | blog.espol.edu.ec/ccpg1001 | [Link](http://blog.espol.edu.ec/ccpg1001/) | ejercicios y exámenes resueltos. |
+> | mclibre.org | [Link](https://www.mclibre.org/consultar/python/) | ejercicios de Python 3 (Univ. de Valencia). |
+> | Canal de clases de Python 3 (Rafael Bonilla, ESPOL) | [Link](https://www.youtube.com/channel/UCvSOZzsdziyVVPmfA7Sah5A) |  |
+> | Playlist Código Facilito (Python 3) | [Link](https://www.youtube.com/playlist?list=PLagErt3C7iltgifmiGFQFI1GhUAKQvvyb) |  |
 
 ---
 
