@@ -3,7 +3,7 @@ dg-publish: true
 tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 ---
 
-# ðŸ› ï¸ Normalización Paso a Paso
+# 🛠️ Normalización Paso a Paso
 
 ## 🎯 Introducción
 
@@ -30,7 +30,7 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 
 ---
 
-## ðŸ› ï¸ Método: el protocolo paso a paso
+## 🛠️ Método: el protocolo paso a paso
 
 > [!note] 📋 Protocolo
 >
@@ -97,29 +97,29 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 
 ---
 
-## âš ï¸ Errores Comunes
+## ⚠️ Errores Comunes
 
-### âŒ Error 1: Buscar parciales con PK simple
+### ❌ Error 1: Buscar parciales con PK simple
 
-> [!danger] âŒ Viola: sin PK compuesta no hay parciales
+> [!danger] ❌ Viola: sin PK compuesta no hay parciales
 >
 > Con PK de un solo atributo la 2FN es automática — no hay "parte" de la PK. El trabajo ahí es detectar la transitiva (paso 3). En la pizarra: dibuja la PK antes de decidir.
 
-### âŒ Error 2: Mudar el determinante fuera
+### ❌ Error 2: Mudar el determinante fuera
 
-> [!danger] âŒ Viola: el determinante se queda como FK
+> [!danger] ❌ Viola: el determinante se queda como FK
 >
 > Al extraer `JOB`, borrar `JOB_CLASS` de EMPLOYEE rompe el puente: ya no puedes saber qué clase tiene cada empleado. **Copia, no mudes.**
 
-### âŒ Error 3: No revisar la tabla nueva
+### ❌ Error 3: No revisar la tabla nueva
 
-> [!danger] âŒ Viola: re-evaluar tras cada partición
+> [!danger] ❌ Viola: re-evaluar tras cada partición
 >
 > Cada tabla nueva puede esconder su propia transitiva. Tras cada partición: re-dibuja el diagrama de dependencias de la tabla nueva y vuelve al paso 3. Termina con el chequeo BCNF global.
 
-### âŒ Error 4: Inventar PK nueva en las particiones
+### ❌ Error 4: Inventar PK nueva en las particiones
 
-> [!danger] âŒ Viola: la PK de la tabla nueva es el determinante
+> [!danger] ❌ Viola: la PK de la tabla nueva es el determinante
 >
 > La tabla nueva nace con el **determinante como PK**. Si después inventas un `id` surrrogado, pierdes el chequeo de unicidad que detectaba las anomalías.
 
@@ -144,7 +144,7 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
 

@@ -3,7 +3,7 @@ dg-publish: true
 tags: [TICG1018, unidad2, fn, normalizacion, bd]
 ---
 
-# ðŸ“ Segunda y Tercera Forma Normal (y BCNF)
+# 📐 Segunda y Tercera Forma Normal (y BCNF)
 
 ## 🎯 Introducción
 
@@ -167,7 +167,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 ---
 
-## ðŸ› ï¸ Método: Normalizar paso a paso
+## 🛠️ Método: Normalizar paso a paso
 
 > [!note] 📋 Protocolo
 >
@@ -197,32 +197,32 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 ---
 
-## âš ï¸ Errores Comunes
+## ⚠️ Errores Comunes
 
-### âŒ Error 1: Normalizar PK simple a 2FN
+### ❌ Error 1: Normalizar PK simple a 2FN
 
-> [!danger] âŒ Viola: sin PK compuesta no hay parciales
+> [!danger] ❌ Viola: sin PK compuesta no hay parciales
 >
 > Buscar dependencias parciales con PK de un solo atributo es imposible. Es 2FN automática. El trabajo real ahí es la transitiva (3FN).
 
-### âŒ Error 2: Mover el determinante fuera
+### ❌ Error 2: Mover el determinante fuera
 
-> [!danger] âŒ Viola: el determinante se queda como FK
+> [!danger] ❌ Viola: el determinante se queda como FK
 >
 > Sacar `PROJ_NUM` de ASSIGNMENT rompe el puente. Las tablas nuevas quedan huérfanas. Crea la tabla hija **copiando**, no mudando.
 
-### âŒ Error 3: Confundir parcial con transitiva
+### ❌ Error 3: Confundir parcial con transitiva
 
-> [!danger] âŒ Viola: parcial = parte de la PK; transitiva = no-primo → no-primo
+> [!danger] ❌ Viola: parcial = parte de la PK; transitiva = no-primo → no-primo
 >
-> - âŒ **Error:** tratar `(JOB_CLASS → CHG_HOUR)` como parcial.
+> - ❌ **Error:** tratar `(JOB_CLASS → CHG_HOUR)` como parcial.
 > - ✅ **Correcto:** JOB_CLASS no es parte de la PK ⇒ es transitiva ⇒ tabla JOB.
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-### âœï¸ Ejercicio 1 — Detecta la vulnerabilidad
+### ✏️ Ejercicio 1 — Detecta la vulnerabilidad
 
 > [!example] 📋 Planteamiento
 >
@@ -233,7 +233,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > > - Parcial: `idProd → nombreProd, precio` (el producto se sabe sin la venta).
 > > - Transitiva: ninguna clásica aquí (precio no depende de nombreProd directamente; si existiera `categoria → descuento`, sí sería transitiva).
 
-### âœï¸ Ejercicio 2 — Lleva a 3FN
+### ✏️ Ejercicio 2 — Lleva a 3FN
 
 > [!example] 📋 Planteamiento
 >
@@ -244,7 +244,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > > - 2FN: `PRODUCTO(idProd, nombreProd, precio)` + `VENTA(codigo, fecha, idProd FK, cantidad)`.
 > > - 3FN: verificar si hay transitivas. Si `idProd → categoria → descuento`, nace `CATEGORIA`.
 
-### âœï¸ Ejercicio 3 — Chequeo BCNF
+### ✏️ Ejercicio 3 — Chequeo BCNF
 
 > [!example] 📋 Planteamiento
 >
@@ -276,7 +276,7 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
 

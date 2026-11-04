@@ -33,7 +33,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ## 📋 Definiciones Formales
 
-> [!info] â„¹ï¸ Cómo leer esta sección
+> [!info] ℹ️ Cómo leer esta sección
 > Una definición por bloque con su figura. Cada figura anticipa la regla donde se usa.
 
 ### 1ï¸âƒ£ Tabla, columna, fila — el vocabulario lógico
@@ -109,7 +109,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-## ðŸ› ï¸ Método: Convertir Paso a Paso
+## 🛠️ Método: Convertir Paso a Paso
 
 > [!success] ðŸ† Protocolo de conversión (úsalo en la Lección 1)
 >
@@ -129,7 +129,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 >
 > **Las estructuras que se derivan (p. 15):** entidad fuerte · entidad débil · relación binaria… — el deck cierra la lista con los casos especiales que esta nota develops en las reglas 5-8.
 
-### ðŸ” Regla 1 — Entidades → tablas directas
+### 🔍 Regla 1 — Entidades → tablas directas
 
 > [!note] 📋 Cada entidad, una tabla
 >
@@ -141,7 +141,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 2 — M:N → tabla intermedia siempre
+### 🔍 Regla 2 — M:N → tabla intermedia siempre
 
 > [!example] 🧪 Rentar (CLIENTE–PROPIEDAD)
 >
@@ -155,7 +155,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 3 — 1:M → la FK vive en el hijo
+### 🔍 Regla 3 — 1:M → la FK vive en el hijo
 
 > [!example] 🧪 Trabaja (EMPLEADO–DEPARTAMENTO)
 >
@@ -169,7 +169,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 4 — 1:1 → tres casos por participación
+### 🔍 Regla 4 — 1:1 → tres casos por participación
 
 > [!note] 📋 Memoriza cada caso con su ejemplo
 >
@@ -193,7 +193,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 5 — Ternaria → una tabla con las 3 claves
+### 🔍 Regla 5 — Ternaria → una tabla con las 3 claves
 
 > [!example] 🧪 Registro (PROFESOR–MATERIA–ESTUDIANTE)
 >
@@ -203,7 +203,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 6 — Supertipo–subtipo → el caso manda: (a) 3 tablas, (b) 1 tabla, (c) mixto, (d) ancha
+### 🔍 Regla 6 — Supertipo–subtipo → el caso manda: (a) 3 tablas, (b) 1 tabla, (c) mixto, (d) ancha
 
 > [!note] 📋 Las 4 conversiones del deck BD02 (una por combinación)
 >
@@ -229,7 +229,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 7 — Dependencia → la débil hereda la PK fuerte
+### 🔍 Regla 7 — Dependencia → la débil hereda la PK fuerte
 
 > [!example] 🧪 Edificio–Departamento
 >
@@ -239,7 +239,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### ðŸ” Regla 8 — Recursiva → FK a sí misma o intermedia doble
+### 🔍 Regla 8 — Recursiva → FK a sí misma o intermedia doble
 
 > [!example] 🧪 Supervisión y grupos de empleados
 >
@@ -257,7 +257,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-## ðŸ” Conversión inversa — del ML al MC (viceversa)
+## 🔁 Conversión inversa — del ML al MC (viceversa)
 
 > [!note] 📋 Definición — Leer tablas y reconstruir el ER
 >
@@ -282,7 +282,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > 4. Las PK compartidas → supertipo (padre) y subtipos (hijos); si no hay atributos propios, era una 1:1 fusionable.
 > 5. Reconstruye cardinalidades preguntando el negocio en ambas direcciones (U1-02 §frases): las tablas no guardan (x,y), tú las deduces.
 
-### âœï¸ Ejercicio inverso 1 — MATRÍCULA
+### ✏️ Ejercicio inverso 1 — MATRÍCULA
 
 > [!example] 🧪 Planteamiento
 > - Tablas: `ESTUDIANTE(carnet PK, nombre)`, `MATERIA(cod PK, nombre)`, `MATRICULA(carnet PK/FK, cod PK/FK, nota)`. Reconstruye el ER.
@@ -291,7 +291,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > > - MATRICULA tiene PK compuesta de 2 FK + atributo propio (nota) → intermedia de M:N.
 > > - ER: ESTUDIANTE —*toma*— MATERIA (M:N, atributo nota en el rombo); carnet y cod subrayados como PK.
 
-### âœï¸ Ejercicio inverso 2 — El supervisor fantasma
+### ✏️ Ejercicio inverso 2 — El supervisor fantasma
 
 > [!example] 🧪 Planteamiento
 > - Tablas: `EMPLEADO(id PK, nombre, idSup FK→EMPLEADO)`, `VENDEDOR(id PK/FK→EMPLEADO, numVentas)`, `VENTA(id PK, fecha, idEmp FK→EMPLEADO)`. Reconstruye el ER.
@@ -331,24 +331,24 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-## ðŸ—ºï¸ Diagrama de Decisión: ¿Cómo Convierto Esta Relación?
+## 🗺️ Diagrama de Decisión: ¿Cómo Convierto Esta Relación?
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-21-flow.svg]]
 
 ---
 
-## âš ï¸ Errores Comunes y Principios Lógicos
+## ⚠️ Errores Comunes y Principios Lógicos
 
-> [!warning] âš ï¸ Cómo leer esta sección
-> Cada error trae su diagrama: primero lo **malo** (âŒ) y luego lo **correcto** (✅). Si tu conversión se parece al primero, ya sabes qué regla aplicar.
+> [!warning] ⚠️ Cómo leer esta sección
+> Cada error trae su diagrama: primero lo **malo** (❌) y luego lo **correcto** (✅). Si tu conversión se parece al primero, ya sabes qué regla aplicar.
 
-### âŒ Error 1: FK al revés en 1:M
+### ❌ Error 1: FK al revés en 1:M
 
-> [!danger] âŒ Viola: dirección padre→hijo
+> [!danger] ❌ Viola: dirección padre→hijo
 >
 > Poner la FK en el padre (lado 1) es absurdo: un departamento tendría que apuntar a **uno** de sus 50 empleados.
 >
-> âŒ Así NO:
+> ❌ Así NO:
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-22-er.svg]]
 >
 > ✅ Así SÍ:
@@ -358,13 +358,13 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âŒ Error 2: M:N sin tabla intermedia
+### ❌ Error 2: M:N sin tabla intermedia
 
-> [!danger] âŒ Viola: primera forma normal (grupos repetitivos)
+> [!danger] ❌ Viola: primera forma normal (grupos repetitivos)
 >
 > Aplanar la relación en columnas numeradas crea un grupo repetitivo: ¿y si una venta lleva 4 productos?
 >
-> âŒ Así NO:
+> ❌ Así NO:
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-24-er.svg]]
 >
 > ✅ Así SÍ:
@@ -374,13 +374,13 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âŒ Error 3: 1:1 total-total en dos tablas
+### ❌ Error 3: 1:1 total-total en dos tablas
 
-> [!danger] âŒ Viola: fusión mínima de tablas
+> [!danger] ❌ Viola: fusión mínima de tablas
 >
 > Si cada equipo tiene exactamente un presidente y viceversa, dos tablas solo generan un JOIN obligatorio en cada consulta.
 >
-> âŒ Así NO:
+> ❌ Así NO:
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-26-er.svg]]
 >
 > ✅ Así SÍ:
@@ -390,13 +390,13 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âŒ Error 4: Atributos de la relación olvidados
+### ❌ Error 4: Atributos de la relación olvidados
 
-> [!danger] âŒ Viola: preservación de información
+> [!danger] ❌ Viola: preservación de información
 >
 > Convertir `Registra` bajando solo la FK pero perdiendo `fechaReservacion, horaReservacion` destruye datos del conceptual.
 >
-> âŒ Así NO:
+> ❌ Así NO:
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-28-er.svg]]
 >
 > ✅ Así SÍ:
@@ -406,13 +406,13 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âŒ Error 5: Subtipo sin PK heredada
+### ❌ Error 5: Subtipo sin PK heredada
 
-> [!danger] âŒ Viola: identidad del supertipo
+> [!danger] ❌ Viola: identidad del supertipo
 >
 > Darle al subtipo una PK propia rompe el vínculo: ya no se sabe qué empleado es ese vendedor.
 >
-> âŒ Así NO:
+> ❌ Así NO:
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-30-er.svg]]
 >
 > ✅ Así SÍ:
@@ -438,12 +438,12 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-> [!info] â„¹ï¸ Cómo trabajarlos
+> [!info] ℹ️ Cómo trabajarlos
 > Cada ejercicio trae su **planteamiento visual** (lo que te dan) y la **solución guiada** (cómo se llega). Tapa la solución, resuelve, compara.
 
-### âœï¸ Ejercicio 1 — Ternaria con atributos
+### ✏️ Ejercicio 1 — Ternaria con atributos
 
 > [!example] 📋 Planteamiento
 >
@@ -466,7 +466,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âœï¸ Ejercicio 2 — Supertipo con pregunta trampa
+### ✏️ Ejercicio 2 — Supertipo con pregunta trampa
 
 > [!example] 📋 Planteamiento
 >
@@ -484,7 +484,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âœï¸ Ejercicio 3 — Taller pata de gallo
+### ✏️ Ejercicio 3 — Taller pata de gallo
 
 > [!example] 📋 Planteamiento
 >
@@ -500,7 +500,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-### âœï¸ Ejercicio 4 — 1:1 con participación mixta
+### ✏️ Ejercicio 4 — 1:1 con participación mixta
 
 > [!example] 📋 Planteamiento
 >
@@ -516,7 +516,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
 - ¿3 pasos del diseño de BD?::Requerimientos → conceptual (ER) → lógico/físico (tablas + triggers).
