@@ -22,10 +22,10 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ## 📋 Definiciones Formales
 
-> [!info] â„¹ï¸ Cómo leer esta sección
+> [!info] ℹ️ Cómo leer esta sección
 > Una definición por bloque, cada una con su ejemplo y su figura. Todo en Chen: rectángulo = entidad, rombo = relación, óvalo = atributo, subrayado = clave.
 
-### 1ï¸âƒ£ Entidad — lo que existe por sí mismo
+### 1️⃣ Entidad — lo que existe por sí mismo
 
 > [!note] 📋 Definición — Entidad
 >
@@ -35,7 +35,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Ejemplo:** ESTUDIANTE existe aunque nadie lo mencione; `nombre` y `carrera` lo describen pero no son entidades.
 
-### 2ï¸âƒ£ Atributo — lo que describe
+### 2️⃣ Atributo — lo que describe
 
 > [!note] 📋 Definición — Atributo
 >
@@ -51,8 +51,8 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > |---|---|---|---|
 > | **Simple** | Atómico, no se subdivide | `salario`, `cargo` | Columna directa |
 > | **Compuesto** | Se parte en sub-atributos | `direccion` → calle + mz; `fecha` → dd-mm-yyyy | Columnas por parte |
-> | **Derivado** | Se calcula de otros | `edad` â† `fecha_nacimiento`; `subtotal` | Preferir el base (no volátil) |
-> | **Multivaluado** | N valores por instancia (1..*) | `telefono`, **`idiomas`** | âš ï¸ Pide tabla propia (1FN) |
+> | **Derivado** | Se calcula de otros | `edad` ← `fecha_nacimiento`; `subtotal` | Preferir el base (no volátil) |
+> | **Multivaluado** | N valores por instancia (1..*) | `telefono`, **`idiomas`** | ⚠️ Pide tabla propia (1FN) |
 >
 > **Volátil vs no volátil:** la *edad* cambia sola (volátil, mala PK y mala columna); la *fecha_nacimiento* no (úsala a ella).
 >
@@ -73,7 +73,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Identificadores (p. 9):** *"uno o más atributos que identifican a cada instancia de una Entidad"* — en el modelo relacional, la entidad es una tabla y el identificador es la clave primaria.
 
-### 3ï¸âƒ£ Relación — el verbo que conecta
+### 3️⃣ Relación — el verbo que conecta
 
 > [!note] 📋 Definición — Relación
 >
@@ -111,7 +111,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ![[Archivos/bd-s02-p28.png]]
 
-### 4ï¸âƒ£ Claves — PK, FK, candidata y compuesta
+### 4️⃣ Claves — PK, FK, candidata y compuesta
 
 > [!note] 📋 Definición — Claves
 >
@@ -132,7 +132,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > > - **☑ Identifying:** prendido = la PK del padre **entra a la PK** del hijo (MATRÍCULA, débil). Apagado = FK normal (Dicta: el curso se dicta exista o no esa fila).
 > > - **Exact constraints:** para topes exactos (1..4) en vez de rangos.
 
-### 5ï¸âƒ£ Restricción — lo que el negocio manda
+### 5️⃣ Restricción — lo que el negocio manda
 
 > [!note] 📋 Definición — Restricción y reglas de negocio
 >
@@ -144,7 +144,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Ejemplo:** *"Cada profesor dicta de 1 a 4 clases"* → cardinalidad (1,4) junto a CLASS. *"Sin cupo no hay matrícula"* → FK obligatoria no nula.
 
-### 6ï¸âƒ£ Conectividad — la clasificación en ambas direcciones
+### 6️⃣ Conectividad — la clasificación en ambas direcciones
 
 > [!note] 📋 Definición — Conectividad (Coronel 4.1.4)
 >
@@ -167,7 +167,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > Lee el símbolo y ya no memorizas números.
 
-### 7ï¸âƒ£ Cardinalidad — el (x,y) de cada lado
+### 7️⃣ Cardinalidad — el (x,y) de cada lado
 
 > [!note] 📋 Definición — Cardinalidad (x,y)
 >
@@ -185,7 +185,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Se lee en patas:** del lado PROFESOR la barra `||` = cada clase tiene exactamente 1 profesor (1,1); del lado CLASE la pata `o{` = cada profesor dicta 0 a N clases (0,N). El (1,4) del ejemplo es una pata con tope: de 1 a 4.
 
-### 8ï¸âƒ£ Dependencia — existir gracias a otro
+### 8️⃣ Dependencia — existir gracias a otro
 
 > [!note] 📋 Definición — Dependencia de existencia (Coronel 4.1.5)
 >
@@ -198,7 +198,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ---
 
-## ðŸ› ï¸ Método para Construir el Vocabulario ER
+## 🛠️ Método para Construir el Vocabulario ER
 
 > [!note] 📋 Procedimiento General
 >
@@ -217,10 +217,10 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ## 🎨 Ejemplos Trabajados
 
-> [!info] â„¹ï¸ Cómo trabajarlos
+> [!info] ℹ️ Cómo trabajarlos
 > Cada ejemplo trae su dibujo: tapa la solución, clasifica tú, compara.
 
-### âœï¸ Ejemplo 1 — Clasificar DIVISION–EMPLOYEE
+### ✏️ Ejemplo 1 — Clasificar DIVISION–EMPLOYEE
 
 > [!example] 🟢 La pregunta de vuelta decide
 >
@@ -230,7 +230,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Moraleja:** sin la segunda frase, clasificar es adivinar. Escribe siempre ambas direcciones.
 
-### âœï¸ Ejemplo 2 — Claves de ESTUDIANTE–MATERIA
+### ✏️ Ejemplo 2 — Claves de ESTUDIANTE–MATERIA
 
 > [!example] 🟢 Elegir PK como profesional
 >
@@ -251,7 +251,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ---
 
-### âœï¸ Ejemplo 3 — La trampa CALIFICACIÓN (atributo que parecía entidad)
+### ✏️ Ejemplo 3 — La trampa CALIFICACIÓN (atributo que parecía entidad)
 
 > [!example] 🟢 ¿Existe una nota por sí sola?
 >
@@ -281,67 +281,67 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ---
 
-## âš ï¸ Errores Comunes y Principios Lógicos
+## ⚠️ Errores Comunes y Principios Lógicos
 
-> [!warning] âš ï¸ Cómo leer esta sección
-> Cada error trae su dibujo: lo âŒ que delata el problema y lo ✅ que lo evita.
+> [!warning] ⚠️ Cómo leer esta sección
+> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
 
-### âŒ Error 1: Relación sin verbo ("línea muda")
+### ❌ Error 1: Relación sin verbo ("línea muda")
 
-> [!danger] âŒ Viola: toda relación se lee en voz alta
+> [!danger] ❌ Viola: toda relación se lee en voz alta
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-16-graph.svg]]
 >
 > Dos rectángulos unidos que nadie sabe leer: nómbrala con verbo o bórrala.
 
-### âŒ Error 2: Clasificar con una sola dirección
+### ❌ Error 2: Clasificar con una sola dirección
 
-> [!danger] âŒ Viola: conectividad siempre en ambas direcciones
+> [!danger] ❌ Viola: conectividad siempre en ambas direcciones
 >
 > Sin la frase de vuelta es adivinanza (ver Ejemplo 1: DIVISION–EMPLOYEE puede ser 1:1 o 1:M). Escribe las dos frases antes de dibujar cardinalidades.
 
-### âŒ Error 3: PK significativa que cambia
+### ❌ Error 3: PK significativa que cambia
 
-> [!danger] âŒ Viola: la PK debe ser estable
+> [!danger] ❌ Viola: la PK debe ser estable
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-17-graph.svg]]
 >
 > Email o nombre como PK → cascada de updates cuando cambian. Usa código estable (`carnet`, `codigo`): lo significativo describe, no identifica.
 
-### âŒ Error 4: Todo es entidad / todo es atributo
+### ❌ Error 4: Todo es entidad / todo es atributo
 
-> [!danger] âŒ Viola: existe por sí mismo vs describe
+> [!danger] ❌ Viola: existe por sí mismo vs describe
 >
 > Pregunta por cada sustantivo: ¿existe por sí mismo (entidad) o solo describe a otro (atributo)? `Dirección` describe a CLIENTE → atributo. `MATERIA` existe sola → entidad.
 
-### âŒ Error 5: FK que apunta a nada
+### ❌ Error 5: FK que apunta a nada
 
-> [!danger] âŒ Viola: integridad referencial (carga el 1 primero)
+> [!danger] ❌ Viola: integridad referencial (carga el 1 primero)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-18-flow.svg]]
 >
 > Carga el lado 1 primero o violas integridad referencial.
 
-### âŒ Error 6: Multivaluado como columna
+### ❌ Error 6: Multivaluado como columna
 
-> [!danger] âŒ Viola: 1 celda = 1 valor (1FN desde ya)
+> [!danger] ❌ Viola: 1 celda = 1 valor (1FN desde ya)
 >
 > Columna `telefonos` con "099,088" o columnas `tel1, tel2, tel3` → el multivaluado pide tabla propia `TELEFONO(cedula PK,FK + numero PK)` (ver U2-02 §6).
 
-### âŒ Error 7: `edad` como PK o columna estrella
+### ❌ Error 7: `edad` como PK o columna estrella
 
-> [!danger] âŒ Viola: la PK debe ser estable (no volátil)
+> [!danger] ❌ Viola: la PK debe ser estable (no volátil)
 >
 > La edad cambia sola cada año → cascada de updates y rupturas de FK. Usa `fecha_nacimiento` (no volátil) y deriva la edad.
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-> [!info] â„¹ï¸ Cómo trabajarlos
+> [!info] ℹ️ Cómo trabajarlos
 > Tapa la solución, resuelve, compara. Respuestas colapsables abajo.
 
-### âœï¸ Ejercicio 1 — Clasifica en ambas direcciones
+### ✏️ Ejercicio 1 — Clasifica en ambas direcciones
 
 > [!example] 📋 Planteamiento
 >
@@ -351,7 +351,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > >
 > > Versión 1: "un profesor dicta muchas clases" + "cada clase la dicta un profesor" → 1:M. Versión 2: ambas frases en singular → 1:1. Sin la frase de vuelta era adivinanza.
 
-### âœï¸ Ejercicio 2 — Elige las claves
+### ✏️ Ejercicio 2 — Elige las claves
 
 > [!example] 📋 Planteamiento
 >
@@ -361,7 +361,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > >
 > > PK ESTUDIANTE = `carnet` (estable; email cambia). PK MATERIA = `codigo`. MATRÍCULA(`carnet` PK,FK + `codigo` PK,FK): compuesta porque ninguno identifica solo y cada parte referencia a su tabla.
 
-### âœï¸ Ejercicio 3 — Detecta la línea muda
+### ✏️ Ejercicio 3 — Detecta la línea muda
 
 > [!example] 📋 Planteamiento
 >
@@ -371,7 +371,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > >
 > > Falta: verbo (*genera*), clasificación en ambas direcciones y cardinalidad (x,y). Frases: "un cliente genera muchas facturas" + "cada factura es de un cliente" → 1:M con (1,N)-(1,1).
 
-### âœï¸ Ejercicio 4 — Entidad o instancia (unidad1.3-1.5 §12)
+### ✏️ Ejercicio 4 — Entidad o instancia (unidad1.3-1.5 §12)
 
 > [!example] 📋 Planteamiento
 >
@@ -383,7 +383,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > > - **Instancias (valores):** Coca Cola, Colgate (marcas), Labrador, BMW (objetos concretos), Quito, $4.5, 0987654321, Windows, RAM, Basket.
 > > - Regla: si lo puedes contar como *un ejemplar de…*, es instancia; si agrupa ejemplares, es entidad.
 
-### âœï¸ Ejercicio 5 — PK de tablas y de la calle (unidad1.3-1.5 §§19–22)
+### ✏️ Ejercicio 5 — PK de tablas y de la calle (unidad1.3-1.5 §§19–22)
 
 > [!example] 📋 Planteamiento
 >
@@ -428,7 +428,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u1
 

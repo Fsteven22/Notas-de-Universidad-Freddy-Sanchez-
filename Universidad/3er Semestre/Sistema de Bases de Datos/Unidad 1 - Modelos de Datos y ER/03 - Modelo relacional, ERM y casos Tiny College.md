@@ -3,7 +3,7 @@ dg-publish: true
 tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 ---
 
-# ðŸ—ƒï¸ Modelo Relacional, ERM y Casos Tiny College
+# 🗃️ Modelo Relacional, ERM y Casos Tiny College
 
 ## 🎯 Introducción
 
@@ -29,10 +29,10 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 ## 📋 Definiciones Formales
 
-> [!info] â„¹ï¸ Cómo leer esta sección
+> [!info] ℹ️ Cómo leer esta sección
 > Una definición por bloque, cada una con su ejemplo y su figura. Nivel lógico: aquí las tablas sí son las protagonistas.
 
-### 1ï¸âƒ£ Relación, tupla y atributo — el vocabulario de tabla
+### 1️⃣ Relación, tupla y atributo — el vocabulario de tabla
 
 > [!note] 📋 Definición — Relación, tupla, atributo
 >
@@ -52,7 +52,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > > [!quote] 📖 campusMVP, "Diseñando una base de datos en el modelo relacional" (2014) — https://www.campusmvp.es/recursos/post/Disenando-una-base-de-datos-en-el-modelo-relacional.aspx
 
-### 2ï¸âƒ£ Tres niveles — del dibujo al disco
+### 2️⃣ Tres niveles — del dibujo al disco
 
 > [!note] 📋 Definición — Niveles conceptual, lógico y físico
 >
@@ -67,7 +67,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > **El diseño lógico (p. 4):** *"es el proceso de construir un modelo lógico a partir de un modelo conceptual"*, y tanto el conceptual como el lógico son **procesos iterativos**, no lineales.
 
-### 3ï¸âƒ£ Regla de traducción ER→tablas — el puente
+### 3️⃣ Regla de traducción ER→tablas — el puente
 
 > [!note] 📋 Definición — Traducción
 >
@@ -109,7 +109,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Representación del esquema (p. 10):** el deck escribe el esquema completo con la sintaxis `CLIENTE(codcli, nombre, …)` — el formato exacto que se usa en los ejercicios de conversión de la Unidad 2.
 
-### 4ï¸âƒ£ Entidad débil — doble condición
+### 4️⃣ Entidad débil — doble condición
 
 > [!note] 📋 Definición — Entidad débil (Coronel 4.1.6)
 >
@@ -127,7 +127,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Se lee así:** rectángulo doble = débil (DEPENDENT cuelga de EMPLOYEE); rectángulo simple que existe solo = fuerte (PART con partes propias no necesita a VENDOR).
 
-### 5ï¸âƒ£ Fuerza de relación — punteada vs sólida
+### 5️⃣ Fuerza de relación — punteada vs sólida
 
 > [!note] 📋 Definición — Fuerza (Coronel 4.1.7)
 >
@@ -141,7 +141,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Se lee en patas:** la línea **punteada** = no identifica (la hija tiene PK propia); la **sólida** = identifica (la PK hija hereda la del padre).
 
-### 6ï¸âƒ£ Supertipo–subtipo — lo común arriba, lo propio abajo (unidad1.3-1.5 §§41–45)
+### 6️⃣ Supertipo–subtipo — lo común arriba, lo propio abajo (unidad1.3-1.5 §§41–45)
 
 > [!note] 📋 Definición — Supertipo y subtipo
 >
@@ -152,7 +152,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Ejemplo:** todo EMPLEADO tiene idEmp/nombre; solo VENDEDOR tiene numVentas. La conversión a tablas depende del caso (a/b/c/d) — ver Regla 6 de la Unidad 2.
 
-### 7ï¸âƒ£ Recursiva — la entidad que se relaciona consigo misma
+### 7️⃣ Recursiva — la entidad que se relaciona consigo misma
 
 > [!note] 📋 Definición — Relación reflexiva
 >
@@ -160,7 +160,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Ejemplo:** sin roles etiquetados el diagrama es ilegible — rotula cada rama.
 
-### 8ï¸âƒ£ Ternaria vs entidad + binarias — cuándo partir
+### 8️⃣ Ternaria vs entidad + binarias — cuándo partir
 
 > [!note] 📋 Definición — Ternaria (unidad1.3-1.5 §§37–38)
 >
@@ -196,7 +196,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 ---
 
-## ðŸ› ï¸ Método para Pasar del ERD a Tablas
+## 🛠️ Método para Pasar del ERD a Tablas
 
 > [!note] 📋 Procedimiento General
 >
@@ -256,7 +256,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > |---|---|---|
 > | **Uso** | Teoría y parciales | Herramientas y pizarrón |
 > | **Cardinalidad** | Lado de la relacionada | Junto a la entidad que aplica |
-> | **Derivados** | Línea punteada ✅ | Sin marca âŒ |
+> | **Derivados** | Línea punteada ✅ | Sin marca ❌ |
 > | **Fuerza** | No distingue | Punteada/sólida por PK |
 >
 > | Versión CLASS | PK | Línea | Cuándo |
@@ -266,20 +266,20 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 ---
 
-## âš ï¸ Errores Comunes y Principios Lógicos
+## ⚠️ Errores Comunes y Principios Lógicos
 
-> [!warning] âš ï¸ Cómo leer esta sección
-> Cada error trae su dibujo: lo âŒ que delata el problema y lo ✅ que lo evita.
+> [!warning] ⚠️ Cómo leer esta sección
+> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
 
-### âŒ Error 1: Tablas sin pasar por el ER
+### ❌ Error 1: Tablas sin pasar por el ER
 
-> [!danger] âŒ Viola: orden obligatorio ERD → tablas → SQL
+> [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-13-graph.svg]]
 
-### âŒ Error 2: Herencia de PK indecisa
+### ❌ Error 2: Herencia de PK indecisa
 
-> [!danger] âŒ Viola: decide fuerza antes de dibujar
+> [!danger] ❌ Viola: decide fuerza antes de dibujar
 >
 > PK compuesta en el diagrama pero FK simple en tablas (o al revés): decide si hereda primero, verifica después.
 >
@@ -287,21 +287,21 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > Si la línea es sólida, la PK hija **debe** contener la del padre. Si es punteada, la hija tiene PK propia.
 
-### âŒ Error 3: Cargar el lado N primero
+### ❌ Error 3: Cargar el lado N primero
 
-> [!danger] âŒ Viola: padres antes que hijas
+> [!danger] ❌ Viola: padres antes que hijas
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-15-flow.svg]]
 
-### âŒ Error 4: M:N directo al relacional
+### ❌ Error 4: M:N directo al relacional
 
-> [!danger] âŒ Viola: M:N existe en conceptual, no en tablas
+> [!danger] ❌ Viola: M:N existe en conceptual, no en tablas
 >
 > Sin intermedia no hay modelo que funcione: toda M:N produce tabla con las 2 FK (ver Regla 2 de la Unidad 2).
 
-### âŒ Error 5: Subtipo sin nada propio (o ternaria que era binaria)
+### ❌ Error 5: Subtipo sin nada propio (o ternaria que era binaria)
 
-> [!danger] âŒ Viola: el subtipo debe aportar + la ternaria debe necesitar a los tres
+> [!danger] ❌ Viola: el subtipo debe aportar + la ternaria debe necesitar a los tres
 >
 > Subtipo sin atributos ni relaciones propias = no es subtipo, es un valor (usa discriminador o bandera). Y ternaria separable en pares = dos binarias con sus intermedias.
 >
@@ -309,12 +309,12 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-> [!info] â„¹ï¸ Cómo trabajarlos
+> [!info] ℹ️ Cómo trabajarlos
 > Tapa la solución, resuelve, compara. Respuestas colapsables abajo.
 
-### âœï¸ Ejercicio 1 — ¿Débil o fuerte?
+### ✏️ Ejercicio 1 — ¿Débil o fuerte?
 
 > [!example] 📋 Planteamiento
 >
@@ -324,7 +324,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > >
 > > Propia = débil (punteada): identidad independiente. Heredada = fuerte (sólida): identidad ligada al padre. Elige fuerte cuando la clase no se identifica sin el curso y las transacciones las piden juntas; débil cuando la clase tiene vida propia.
 
-### âœï¸ Ejercicio 2 — Los 7 símbolos Chen
+### ✏️ Ejercicio 2 — Los 7 símbolos Chen
 
 > [!example] 📋 Planteamiento
 >
@@ -334,7 +334,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > >
 > > Rectángulo simple (fuerte: ESTUDIANTE), doble (débil: DEPENDENT), rombo (relación: *toma*), óvalo (atributo: nombre), óvalo punteado (derivado: edad), subrayado (PK: carnet), cardinalidad del lado de la relacionada ((1,4) junto a CLASS).
 
-### âœï¸ Ejercicio 3 — Resuelve la N:M
+### ✏️ Ejercicio 3 — Resuelve la N:M
 
 > [!example] 📋 Planteamiento
 >
@@ -344,7 +344,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > >
 > > `ESTUDIANTE(carnet PK)`, `MATERIA(codigo PK)`, `MATRICULA(carnet PK,FK, codigo PK,FK)`. Carga: padres primero (las 2 entidades), intermedia al final. Sin intermedia no hay modelo que funcione.
 
-### âœï¸ Ejercicio 4 — Supertipo, recursiva y ternaria
+### ✏️ Ejercicio 4 — Supertipo, recursiva y ternaria
 
 > [!example] 📋 Planteamiento
 >
@@ -389,7 +389,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u1
 

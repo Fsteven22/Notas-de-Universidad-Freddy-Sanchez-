@@ -22,10 +22,10 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ## 📋 Definiciones Formales
 
-> [!info] â„¹ï¸ Cómo leer esta sección
+> [!info] ℹ️ Cómo leer esta sección
 > Una definición por bloque, cada una con su ejemplo y su figura.
 
-### 1ï¸âƒ£ Dato — el valor crudo
+### 1️⃣ Dato — el valor crudo
 
 > [!note] 📋 Definición — Dato
 >
@@ -35,7 +35,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Ejemplos:** `"19"`, `"Irene"`, `"2026-10-13"`. ¿19 qué? Sin contexto es solo un símbolo guardado.
 
-### 2ï¸âƒ£ Información — el dato con contexto
+### 2️⃣ Información — el dato con contexto
 
 > [!note] 📋 Definición — Información
 >
@@ -45,7 +45,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Ejemplo:** *"19 estudiantes aprobaron SBD"* — ahora sí hay decisión posible (¿festejar? ¿reforzar?). El modelo de datos existe para producir información, no para acumular datos.
 
-### 3ï¸âƒ£ Modelo de datos — el plano antes de guardar
+### 3️⃣ Modelo de datos — el plano antes de guardar
 
 > [!note] 📋 Definición — Modelo de datos
 >
@@ -57,7 +57,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Ejemplo:** tabla ESTUDIANTE con PK `carnet` — el modelo decidió qué se guarda y cómo se conecta antes de escribir una línea de código.
 
-### 4ï¸âƒ£ Archivos vs Base de datos — por qué modelar gana
+### 4️⃣ Archivos vs Base de datos — por qué modelar gana
 
 > [!note] 📋 Definición — Sistema de archivos vs base de datos
 >
@@ -120,7 +120,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > | Siguiente | Hoy-futuro | **XML, híbridas, nube** | No estructurado + servicios |
 >
 
-### ðŸ” Cada generación, dibujada
+### 🔍 Cada generación, dibujada
 
 > [!example] 🧪 Ver los 4 modelos clave
 >
@@ -151,7 +151,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ---
 
-## ðŸ› ï¸ Método: Del Enunciado al Modelo
+## 🛠️ Método: Del Enunciado al Modelo
 
 > [!note] 📋 Procedimiento General
 >
@@ -187,7 +187,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ---
 
-## ðŸ—‚ï¸ ¿Cuándo Bastan Archivos?
+## 🗂️ ¿Cuándo Bastan Archivos?
 
 > [!note] 📋 La excepción que confirma la regla
 >
@@ -201,34 +201,34 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ---
 
-## âš ï¸ Errores Comunes y Principios Lógicos
+## ⚠️ Errores Comunes y Principios Lógicos
 
-> [!warning] âš ï¸ Cómo leer esta sección
-> Cada error trae su dibujo: lo âŒ que delata el problema y lo ✅ que lo evita.
+> [!warning] ⚠️ Cómo leer esta sección
+> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
 
-### âŒ Error 1: Modelar pantallas, no el negocio
+### ❌ Error 1: Modelar pantallas, no el negocio
 
-> [!danger] âŒ Viola: permanencia del modelo
+> [!danger] ❌ Viola: permanencia del modelo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-01-12-graph.svg]]
 >
 > Al cambiar la UI muere la BD. Modela entidades permanentes: las pantallas cambian, el negocio no.
 
-### âŒ Error 2: Tabla sin pregunta
+### ❌ Error 2: Tabla sin pregunta
 
-> [!danger] âŒ Viola: toda tabla responde una decisión
+> [!danger] ❌ Viola: toda tabla responde una decisión
 >
 > Si ningún reporte ni decisión usa la tabla, sobra (todavía). Pregunta por cada tabla futura: *"¿qué decisión se toma con esto?"*. Sin respuesta → no la crees.
 
-### âŒ Error 3: Confundir dato con información
+### ❌ Error 3: Confundir dato con información
 
-> [!danger] âŒ Viola: contexto antes que almacenamiento
+> [!danger] ❌ Viola: contexto antes que almacenamiento
 >
 > Guardar todo sin contexto es archivar, no diseñar. `19` solo es información cuando sabes que son *"19 estudiantes que aprobaron SBD"* — el modelo captura ese contexto en estructura + restricciones.
 
-### âŒ Error 4: Saltarse el ERD
+### ❌ Error 4: Saltarse el ERD
 
-> [!danger] âŒ Viola: orden obligatorio ERD → tablas → SQL
+> [!danger] ❌ Viola: orden obligatorio ERD → tablas → SQL
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-01-13-graph.svg]]
 >
@@ -236,12 +236,12 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ---
 
-## ðŸ“ Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
-> [!info] â„¹ï¸ Cómo trabajarlos
+> [!info] ℹ️ Cómo trabajarlos
 > Tapa la solución, resuelve, compara. Respuestas colapsables abajo.
 
-### âœï¸ Ejercicio 1 — Dato, información o modelo
+### ✏️ Ejercicio 1 — Dato, información o modelo
 
 > [!example] 📋 Planteamiento
 >
@@ -254,7 +254,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > >
 > > (a) Dato: sin contexto. (b) Información: dato + contexto que permite decidir. (c) Modelo: estructura que produce información de forma repetible.
 
-### âœï¸ Ejercicio 2 — ¿Archivos o BD?
+### ✏️ Ejercicio 2 — ¿Archivos o BD?
 
 > [!example] 📋 Planteamiento
 >
@@ -265,7 +265,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 > >
 > > A: archivos bastan (1 usuario, preguntas fijas, vida corta). B: BD modelada (concurrencia, preguntas cambiantes, decisiones encima). Regla: 2+ usuarios o reportes nuevos → modela.
 
-### âœï¸ Ejercicio 3 — Ordena las generaciones
+### ✏️ Ejercicio 3 — Ordena las generaciones
 
 > [!example] 📋 Planteamiento
 >
@@ -306,7 +306,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 
 ---
 
-## ðŸ” Repaso SR (flashcards)
+## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u1
 
