@@ -263,14 +263,14 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Siguiente: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Precisión y puntuación: [[04 - Precisión y claridad en la redacción]]
 > - Concordancia y cohesión: [[05 - Concordancia y cohesión en la redacción]]
 > - APA completo: [[06 - Normas APA, citación y referencias]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Bases específicas: [[Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/01 - El texto expositivo (concepto, tipos y estructura)|MOOC U5 — Expositivo]], [[Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|Análisis]], [[Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/03 - Errores comunes, acentuación y puntuación|MOOC U1 — Errores y tildes]], [[Preuniversitario/MOOC de Comunicación/Unidad 3 - Tipología textual/04 - Signos de puntuación y uso de mayúsculas|MOOC U3 — Puntuación]]
 
 ## 📚 Referencias

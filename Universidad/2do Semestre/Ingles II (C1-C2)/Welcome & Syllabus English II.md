@@ -70,7 +70,7 @@ tags: [IDIG1007, english2]
 
 > [!tip] 📚 Unidades del curso
 >
-> ![[Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
 >
 > | Unit | Tema (Syllabus) | Libro (Evolve 4A) | Horas |
 > |---|---|---|---|

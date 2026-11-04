@@ -1058,7 +1058,7 @@ dg-publish: true
 > 
 > - Geometría Analítica 3D - Estudio completo
 > - Cinemática Vectorial - Movimiento en el espacio
-> - [[Cálculo Vectorial]] - Derivadas e integrales
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Derivadas e integrales
 > - Análisis Tensorial - Generalización
 > 
 > **Temas siguientes:**

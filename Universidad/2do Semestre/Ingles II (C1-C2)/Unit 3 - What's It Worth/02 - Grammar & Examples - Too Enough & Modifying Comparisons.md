@@ -301,7 +301,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[01 - Vocabulary & Use Time Money & Prices]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Apologies & S-Sounds]]
 

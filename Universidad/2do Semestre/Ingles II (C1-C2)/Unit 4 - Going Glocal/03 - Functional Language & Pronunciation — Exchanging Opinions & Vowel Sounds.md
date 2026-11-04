@@ -237,7 +237,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]
 > - Siguiente: [[04 - Reading, Writing & Speaking - Building a Brand & Designing Ads]]
 

@@ -6,17 +6,17 @@ tags: [MATG1046, unidad0, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Cálculo Vectorial)
 
 > [!info] ℹ️ Portal de material de la materia
-> Esta carpeta agrupa el material oficial (syllabus, bienvenida) y los diagramas de todas las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, bienvenida) y los diagramas de todas las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 
 > [!note] 📄 Syllabus oficial
-> ![[Guías/SPA-SyllabusEUR_ACE-MATG1046.pdf]]
+> ![[Unidad 0 - Guias y Ejercicios/Guías/SPA-SyllabusEUR_ACE-MATG1046.pdf]]
 > Syllabus EUR-ACE de la materia (MATG1046), subido desde el aula virtual.
 
 > [!note] 💛 El syllabus completo está como nota
-> ![[Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
-> Ver [[Guías/Bienvenida y Syllabus Calculo Vectorial|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
+> Ver [[Bienvenida y Syllabus Calculo Vectorial|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -30,19 +30,19 @@ tags: [MATG1046, unidad0, recursos]
 > - [[01 – Integrales múltiples]] — *Unidad 6 - Integrales Triples y Teoremas*
 
 > [!info] 🎨 Diagramas
-> Los **563 diagramas** de todas las unidades están en la subcarpeta `Diagramas/`. Las notas los referencian por nombre (`Diagramas/<archivo>.svg`), así que se ven igual en Obsidian y en el sitio.
+> Los **563 diagramas** de todas las unidades están en la subcarpeta `Unidad 0 - Guias y Ejercicios/Diagramas/`. Las notas los referencian por nombre (`Diagramas/<archivo>.svg`), así que se ven igual en Obsidian y en el sitio.
 
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
-> `Diapositivas/`, `Exámenes/`, `Figuras/`, `Lecciones/`, `Material de clase/` y `Talleres/` están creadas y vacías. Cuando llegue material (capturas de clase, exámenes pasados, talleres), soltarlo aquí y nombrarlo con contexto.
+> Las carpetas `Diapositivas/`, `Exámenes/`, `Figuras/`, `Lecciones/`, `Material de clase/` y `Talleres/` (dentro de `Unidad 0 - Guias y Ejercicios/`) están creadas y vacías. Cuando llegue material (capturas de clase, exámenes pasados, talleres), soltarlo en la subcarpeta que corresponda y nombrarlo con contexto.
 
 ---
 
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Material de clase/Cálculo Vectorial|🗺️ Mapa de contenido de la materia]]
-> - [[Guías/Bienvenida y Syllabus Calculo Vectorial|👋 Bienvenida y Syllabus]]
+> - [[Cálculo Vectorial|🗺️ Mapa de contenido de la materia]]
+> - [[Bienvenida y Syllabus Calculo Vectorial|👋 Bienvenida y Syllabus]]
 
 **Tags:** #MATG1046 #unidad0 #recursos

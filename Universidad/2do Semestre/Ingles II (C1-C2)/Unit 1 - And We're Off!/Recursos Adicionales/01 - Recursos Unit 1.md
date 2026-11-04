@@ -95,6 +95,6 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 
 **Tags:** #recursos #grammar #listening #reading #writing #academicpost #English #IDIG1007 #ESPOL #unit1

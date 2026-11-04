@@ -251,12 +251,12 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Texto expositivo]]
 > - Siguiente: [[03 - IA ética y prompts para redacción]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Bases específicas: [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/01 - El resumen académico|MOOC U4 — Resumen]], [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/03 - La síntesis de múltiples fuentes|Síntesis]], [[Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/02 - Técnicas de parafraseo y citación|Parafraseo]]
 > - Refuerzo de talleres: [[04 - Precisión y claridad en la redacción|Precisión]], [[05 - Concordancia y cohesión en la redacción|Concordancia]], [[06 - Normas APA, citación y referencias|APA completo]]
 
@@ -271,7 +271,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 > - **[3]** UNAM, *Guía para elaborar informes técnicos*, 2014.
 > - **[4]** Universidad de Antioquia, *Informe técnico vs. informe ejecutivo*, Facultad de Ingeniería, 2019.
 > - **[5]** Turabian, K. L., *Manual para escritores de trabajos de investigación, tesis y disertaciones*, 2018.
-> - PDF de clase (22 p.): [[../Unidad 0 - Guias y Ejercicios/Redacción de informes técnicos y ejecutivos.pdf|Redacción de informes técnicos y ejecutivos]] — cátedra de D. Rodríguez Arteaga.
+> - PDF de clase (22 p.): [[../Unidad 0 - Guias y Ejercicios/Diapositivas/Redacción de informes técnicos y ejecutivos.pdf|Redacción de informes técnicos y ejecutivos]] — cátedra de D. Rodríguez Arteaga.
 
 ---
 

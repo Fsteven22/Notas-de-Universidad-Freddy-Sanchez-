@@ -154,11 +154,11 @@ tags: [IDIG2012, unidad4, argumentacion, persuadir, comunicacion]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 4: [[00 - Índice Unidad 4]]
 > - Siguiente: [[02 - Storytelling para comunicar ciencia]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Bases específicas: [[Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|MOOC U6 — Argumentativo]], [[Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/02 - Formulación y validación de la tesis|Tesis válida]], [[Preuniversitario/MOOC de Comunicación/Unidad 6 - Textos argumentativos/03 - Análisis y desmontaje de textos argumentativos|Desmontaje]]
 
 ## 📚 Referencias

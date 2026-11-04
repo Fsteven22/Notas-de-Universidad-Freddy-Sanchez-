@@ -1061,7 +1061,7 @@ dg-publish: true
 > **Prerrequisitos:**
 > 
 > - [[02 - Vectores en R3]] - Operaciones vectoriales
-> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas y límites
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Derivadas y límites
 > - Cálculo Integral - Integrales
 > - Trigonometría - Funciones trigonométricas
 > 

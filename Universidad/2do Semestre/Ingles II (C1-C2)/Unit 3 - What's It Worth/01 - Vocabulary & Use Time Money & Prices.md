@@ -250,7 +250,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Siguiente: [[02 - Grammar & Examples - Too Enough & Modifying Comparisons]]
 
 **Tags:** #vocabulary #money #time #prices #value #English #IDIG1007 #ESPOL #unit3

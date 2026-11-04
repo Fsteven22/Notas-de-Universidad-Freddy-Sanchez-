@@ -1197,7 +1197,7 @@ dg-publish: true
 > - Teorema de Taylor en R² - Aproximaciones de orden superior
 > - Ecuaciones Diferenciales Parciales - EDPs sobre superficies
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvaturas y formas fundamentales
-> - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Optimización de funcionales
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Optimización de funcionales
 > 
 > **Conexiones interdisciplinarias:**
 > 

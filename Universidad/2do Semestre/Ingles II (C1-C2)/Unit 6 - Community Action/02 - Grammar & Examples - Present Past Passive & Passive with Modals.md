@@ -224,7 +224,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[01 - Vocabulary & Use - Discussing Good Works & Describing Good Deeds]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Offering Refusing Help & Consonant Sounds]]
 

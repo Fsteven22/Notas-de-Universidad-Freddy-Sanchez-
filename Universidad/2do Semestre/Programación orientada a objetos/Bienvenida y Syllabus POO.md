@@ -62,7 +62,7 @@ tags: [CCPG1005, poo, java]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_POO_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_POO_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|

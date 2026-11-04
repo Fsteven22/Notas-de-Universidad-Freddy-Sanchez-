@@ -98,7 +98,7 @@ tags: [MATG1049, algebra-lineal, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la materia
-> - 📄 [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - 📄 [[00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 > Aún no hay PDFs cargados; el Leeme explica cómo se publican cuando lleguen.
 
 ---

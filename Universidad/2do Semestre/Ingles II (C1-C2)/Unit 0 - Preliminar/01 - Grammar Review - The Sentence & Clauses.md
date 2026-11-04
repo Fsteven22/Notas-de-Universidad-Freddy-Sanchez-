@@ -184,7 +184,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Siguiente: [[02 - Grammar Review - Gerund, FANBOYS & NOR]]
 > - Complemento: [[03 - Grammar Review - Sentence Types by Structure]]
 

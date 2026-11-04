@@ -311,13 +311,13 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Siguiente: [[04 - Precisión y claridad en la redacción]]
-> - Protocolo institucional: [[../Unidad 0 - Guias y Ejercicios/Uso ético de la IA.pdf|PDF Uso ético de la IA]]
-> - Syllabus: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Protocolo institucional: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/Uso ético de la IA.pdf|PDF Uso ético de la IA]]
+> - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
+> - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - APA correcto al citar: [[06 - Normas APA, citación y referencias]]
 
 ## 📚 Referencias
@@ -330,7 +330,7 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > - **[2]** Políticas PAO 2-2026, §7.3: ética y deshonestidad académica.
 > - **[3]** Universidad Pontificia Comillas, *Guía práctica de aplicación de la IA*, 2024.
 > - **[4]** UNITEC, *200+1 prompts para educación: guía para docentes innovadores*, 2024.
-> - PDF de clase (29 p.): [[../Unidad 0 - Guias y Ejercicios/Uso ético de la IA.pdf|Uso ético de herramientas de IA]] — D. Vega, A. Carranza y M. León.
+> - PDF de clase (29 p.): [[../Unidad 0 - Guias y Ejercicios/Diapositivas/Uso ético de la IA.pdf|Uso ético de herramientas de IA]] — D. Vega, A. Carranza y M. León.
 
 ---
 

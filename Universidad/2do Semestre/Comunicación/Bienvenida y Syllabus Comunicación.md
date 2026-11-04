@@ -17,9 +17,9 @@ tags: [IDIG2012, comunicacion]
 > | **Horas semanales** | 2h contacto docente + 2h práctico + 6h autónomo = 10h total |
 > | **Docente PAO 2-2026** | Andrea Carranza García — Lun 14:00-15:00, Of. 0110 CIB |
 > | **Responsable contenido** | Diana Llamel Rodriguez Arteaga (dirodrig@espol.edu.ec) |
-> | **Syllabus oficial** | 📎 [[Sílabo de la Asignatura IDIG2012.pdf\|Syllabus IDIG2012.pdf]] |
-> | **Políticas** | 📎 [[Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf\|Políticas PAO 2-2026.pdf]] |
-> | **Planificación** | 📎 [[Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf\|Planificación PAO 2-2026.pdf]] |
+> | **Syllabus oficial** | 📎 [[Unidad 0 - Guias y Ejercicios/Guías/Sílabo de la Asignatura IDIG2012.pdf|Syllabus IDIG2012.pdf]] |
+> | **Políticas** | 📎 [[Unidad 0 - Guias y Ejercicios/Guías/Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf|Políticas PAO 2-2026.pdf]] |
+> | **Planificación** | 📎 [[Unidad 0 - Guias y Ejercicios/Guías/Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf|Planificación PAO 2-2026.pdf]] |
 > | **Nota** | No confundir con `Preuniversitario / MOOC de Comunicación` (MOOC). |
 
 ---

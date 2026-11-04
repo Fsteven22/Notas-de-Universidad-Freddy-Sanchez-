@@ -68,7 +68,7 @@ tags: [MATG1046, calculo-vectorial]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

@@ -224,7 +224,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Siguiente: [[02 - Grammar & Examples - Modals of Speculation & Relative Clauses]]
 
 **Tags:** #vocabulary #advertising #media #marketing #English #IDIG1007 #ESPOL #unit4

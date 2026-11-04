@@ -6,17 +6,17 @@ tags: [unidad0, indice, recursos]
 # 📂 Unidad 0 — Guías y Ejercicios (Inglés II (C1-C2))
 
 > [!info] ℹ️ Portal de material de la materia
-> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 
 > [!note] 📄 Syllabus oficial
-> ![[Guías/SPA-SyllabusEUR_ACE-IDIG1007.pdf]]
+> ![[Unidad 0 - Guias y Ejercicios/Guías/SPA-SyllabusEUR_ACE-IDIG1007.pdf]]
 > Syllabus EUR-ACE de la asignatura (IDIG1007), subido desde el aula virtual.
 
 > [!note] 💛 El syllabus completo está como nota
-> ![[Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
-> Ver [[Guías/Welcome & Syllabus English II|Welcome & Syllabus]] — objetivos, evaluación y contenido.
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
+> Ver [[Welcome & Syllabus English II|Welcome & Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -32,13 +32,13 @@ tags: [unidad0, indice, recursos]
 
 > [!info] 📁 Material existente
 > - `Unit 0 - Preliminar/` — repaso gramatical previo a las units.
-> - `Diagramas/` — 49 diagramas SVG embebidos en las notas de cada unit.
-> - `Material de clase/` — notas índice de la materia.
+> - `Unidad 0 - Guias y Ejercicios/Diagramas/` — 49 diagramas SVG embebidos en las notas de cada unit.
+> - `Unidad 0 - Guias y Ejercicios/Material de clase/` — vacía por ahora.
 
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
-> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/` con nombre con contexto:
 > - `Guia-Unit-XX.pdf`
 > - `Ejercicios-Unit-XX.pdf`
 
@@ -47,7 +47,7 @@ tags: [unidad0, indice, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Material de clase/Inglés II (C1-C2)|🗺️ Mapa de contenido de la materia]]
-> - [[Guías/Welcome & Syllabus English II|👋 Bienvenida y Syllabus]]
+> - [[Inglés II (C1-C2)|🗺️ Mapa de contenido de la materia]]
+> - [[Welcome & Syllabus English II|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ingles-ii #unidad0 #recursos

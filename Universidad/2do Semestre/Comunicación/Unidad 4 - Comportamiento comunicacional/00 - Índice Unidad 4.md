@@ -15,7 +15,7 @@ tags: [IDIG2012, unidad4, indice, comunicacion]
 - [[03 - Voz, cuerpo, formatos y práctica TED]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Comunicación]]
+> - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Anterior: [[00 - Índice Unidad 3]]
 
 ---

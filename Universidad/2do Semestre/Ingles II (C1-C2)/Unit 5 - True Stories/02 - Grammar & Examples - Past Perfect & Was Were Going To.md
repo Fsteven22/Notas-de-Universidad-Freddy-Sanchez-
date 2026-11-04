@@ -216,7 +216,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
 > - Anterior: [[01 - Vocabulary & Use - Describing Stories & Making - Breaking Plans]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Reacting to Problems & Final Consonants]]
 

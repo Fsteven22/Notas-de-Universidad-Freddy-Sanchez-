@@ -64,7 +64,7 @@ tags: [CCPG1004, computacion-sociedad, syllabus]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Computacion_y_Sociedad_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Computacion_y_Sociedad_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|

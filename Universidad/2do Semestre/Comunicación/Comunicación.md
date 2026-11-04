@@ -52,10 +52,10 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
-- [[Unidad 0 - Guias y Ejercicios/Sílabo de la Asignatura IDIG2012|Syllabus IDIG2012.pdf]]
-- [[Unidad 0 - Guias y Ejercicios/Políticas de la asignatura PAO 2_2026_PRESENCIAL|Políticas PAO 2-2026.pdf]]
-- [[Unidad 0 - Guias y Ejercicios/Planificación Académica actualizada_PAO 2_2026 - Estudiante|Planificación PAO 2-2026.pdf]]
-- [[Universidad/2do Semestre/Comunicación/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+- [[Unidad 0 - Guias y Ejercicios/Guías/Sílabo de la Asignatura IDIG2012.pdf|Syllabus IDIG2012.pdf]]
+- [[Unidad 0 - Guias y Ejercicios/Guías/Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf|Políticas PAO 2-2026.pdf]]
+- [[Unidad 0 - Guias y Ejercicios/Guías/Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf|Planificación PAO 2-2026.pdf]]
+- [[00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 > [!tip] 🆕 Talleres convertidos a nota
 > Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[00 - Leeme Unidad 0|Leeme de Unidad 0]].
@@ -67,17 +67,17 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 > [!info] 📚 Seguir estudiando
 >
 > - Syllabus completo: [[Bienvenida y Syllabus Comunicación]]
-> - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
+> - Base MOOC: [[../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 > - Siguiente unidad en curso: Unidad 2 — Pensamiento complejo y crítico
 
 ---
 
-- [[Unidad 1 - Comunicación efectiva/00 - Índice Unidad 1.md|📂 Unidad 1 - Comunicación efectiva]]
+- [[Unidad 1 - Comunicación efectiva/00 - Índice Unidad 1|📂 Unidad 1 - Comunicación efectiva]]
 
-- [[Unidad 2 - Pensamiento complejo y crítico/00 - Índice Unidad 2.md|📂 Unidad 2 - Pensamiento complejo y crítico]]
+- [[Unidad 2 - Pensamiento complejo y crítico/00 - Índice Unidad 2|📂 Unidad 2 - Pensamiento complejo y crítico]]
 
-- [[Unidad 3 - Redacción/00 - Índice Unidad 3.md|📂 Unidad 3 - Redacción]]
+- [[Unidad 3 - Redacción/00 - Índice Unidad 3|📂 Unidad 3 - Redacción]]
 
-- [[Unidad 4 - Comportamiento comunicacional/00 - Índice Unidad 4.md|📂 Unidad 4 - Comportamiento comunicacional]]
+- [[Unidad 4 - Comportamiento comunicacional/00 - Índice Unidad 4|📂 Unidad 4 - Comportamiento comunicacional]]
 
 **Tags:** #comunicacion #ESPOL #IDIG2012
