@@ -3,33 +3,43 @@ dg-publish: true
 tags: [unidad0, indice, recursos]
 ---
 
-# 📚 Unidad 0 — MOOC Inglés (A1 - A2)
+# 📂 Unidad 0 — Guías y Ejercicios (MOOC Inglés (A1 - A2))
 
-> [!info] Índice de recursos de la unidad
+> [!info] ℹ️ Portal de material de la materia
+> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
-Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **MOOC Inglés (A1 - A2)** (Preuniversitario). Todos los recursos de la unidad están organizados según la taxonomía del vault:
+## 📎 Syllabus y políticas
 
-| Carpeta | Contenido |
-|---------|-----------|
-| `Diapositivas/` | Presentaciones del docente exportadas a PDF |
-| `Guías/` | Guías de estudio, guías de problemas, ejercicios guiados |
-| `Material de clase/` | Capturas del libro, plantillas, audios, videos locales, material suelto de clase |
-| `Talleres/` | Talleres y soluciones |
-| `Lecciones/` | Lecciones y soluciones |
-| `Exámenes/` | Exámenes y resoluciones |
-| `Diagramas/` | Diagramas draw.io y SVG generados |
-| `Figuras/` | Imágenes PNG/JPG sueltas |
+> [!note] 💛 El syllabus completo está como nota
+> Ver [[Guías/Welcome English (A1-A2)|Welcome English]] — objetivos, evaluación y contenido.
 
-> [!tip] Regla de colocación
-> - Es una presentación de clase → `Diapositivas/`
-> - Es una guía de estudio o problemas → `Guías/`
-> - Es material suelto de clase (capturas, plantillas, multimedia local) → `Material de clase/`
-> - Tiene copyright (libros `z-lib.org`, Cambridge, etc.) y no se publica → no va en ninguna de las tres; queda en `_local/` o en la raíz de `Unidad 0`
+## 📚 Guías y material de clase
 
-> [!info] Material existente
-> - `Unit 0 - Foundations/` contiene material preliminar (foundations del curso).
-> - Las unidades 1-4 están en carpetas propias (`Unit 1`, etc.).
+> [!tip] 🚪 Entradas por unidad/módulo
+> Primera nota de cada bloque: el punto de partida.
+> - [[01  - Basic Greetings and Introductions]] — *Unit 0 - Foundations*
+> - [[../Unit 1 - Basic Grammar/00 - Índice|00 - Índice]] — *Unit 1 - Basic Grammar*
+> - [[../Unit 2 - Sentence Structure/00 - Índice|00 - Índice]] — *Unit 2 - Sentence Structure*
+> - [[01 - Capitalization Rules]] — *Unit 3 - Writing and Punctuation*
+> - [[01 - Regular and Irregular Verbs]] — *Unit 4 - Vocabulary and Verbs*
+
+> [!info] 📁 Material existente
+> - `Guías/` — Welcome English (syllabus del curso).
+> - `Material de clase/` — notas índice de la materia.
+
+## 📥 Pendiente de cargar
+
+> [!warning] 📬 Material que falta
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
+> - `Guia-Unit-XX.pdf`
+> - `Ejercicios-Unit-XX.pdf`
 
 ---
 
-**Tags:** #mooc-ingles #unidad0 #indice #taxonomia
+## 🔗 Navegación
+
+> [!tip] Enlaces rápidos
+> - [[Material de clase/Inglés (A1-A2)|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Welcome English (A1-A2)|👋 Bienvenida y Syllabus]]
+
+**Tags:** #mooc-ingles #unidad0 #recursos
