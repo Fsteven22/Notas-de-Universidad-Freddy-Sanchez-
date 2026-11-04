@@ -3,29 +3,47 @@ dg-publish: true
 tags: [unidad0, indice, recursos]
 ---
 
-# 📚 Unidad 0 — Fundamentos de Electricidad y Sistemas Digitales
+# 📂 Unidad 0 — Guías y Ejercicios (Fundamentos de Electricidad y Sistemas Digitales)
 
-> [!info] Índice de recursos de la unidad
+> [!info] ℹ️ Portal de material de la materia
+> Esta carpeta agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
-Esta página es el índice de `Unidad 0 - Guias y Ejercicios` de **Fundamentos de Electricidad y Sistemas Digitales (FESD)**. Todos los recursos de la unidad están organizados según la taxonomía del vault:
+## 📎 Syllabus y políticas
 
-| Carpeta | Contenido |
-|---------|-----------|
-| `Diapositivas/` | Presentaciones del docente exportadas a PDF |
-| `Guías/` | Guías de estudio, guías de problemas, ejercicios guiados |
-| `Material de clase/` | Capturas del libro, plantillas, audios, videos locales, material suelto de clase |
-| `Talleres/` | Talleres y soluciones |
-| `Lecciones/` | Lecciones y soluciones |
-| `Exámenes/` | Exámenes y resoluciones |
-| `Diagramas/` | Diagramas draw.io y SVG generados |
-| `Figuras/` | Imágenes PNG/JPG sueltas |
+> [!note] 💛 El syllabus completo está como nota
+> Ver [[Guías/Bienvenida y Syllabus FESD|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
-> [!tip] Regla de colocación
-> - Es una presentación de clase → `Diapositivas/`
-> - Es una guía de estudio o problemas → `Guías/`
-> - Es material suelto de clase (capturas, plantillas, multimedia local) → `Material de clase/`
-> - Tiene copyright (libros `z-lib.org`, Cambridge, etc.) y no se publica → no va en ninguna de las tres; queda en `_local/` o en la raíz de `Unidad 0`
+## 📚 Guías y material de clase
+
+> [!tip] 🚪 Entradas por unidad/módulo
+> Primera nota de cada bloque: el punto de partida.
+> - [[../Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Electricidad y Circuitos*
+> - [[../Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Introducción a la Electrónica*
+> - [[../Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Circuitos integrados*
+> - [[../Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Sistemas Digitales*
+
+> [!note] 🧪 Prácticas de laboratorio
+> La carpeta `Practico/` (en la raíz de la materia) tiene los recursos del laboratorio, los equipos y las 4 prácticas con sus soluciones.
+
+> [!info] 📁 Material existente
+> - `Diagramas/` — 222 diagramas SVG (con sus fuentes `.mmd`) embebidos en las notas de cada unidad.
+> - `Figuras/` — 11 imágenes de clase (horario, capturas del libro).
+> - `Material de clase/` — notas índice de la materia y recursos visuales.
+
+## 📥 Pendiente de cargar
+
+> [!warning] 📬 Material que falta
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF aquí con nombre con contexto:
+> - `FESD-Guia-XX.pdf`
+> - `FESD-Ejercicios-Tema.pdf`
+> - `FESD-Practica-XX.pdf`
 
 ---
 
-**Tags:** #fesd #unidad0 #indice #taxonomia
+## 🔗 Navegación
+
+> [!tip] Enlaces rápidos
+> - [[Material de clase/Fundamentos de Electricidad y Sistemas Digitales|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Bienvenida y Syllabus FESD|👋 Bienvenida y Syllabus]]
+
+**Tags:** #fesd #unidad0 #recursos
