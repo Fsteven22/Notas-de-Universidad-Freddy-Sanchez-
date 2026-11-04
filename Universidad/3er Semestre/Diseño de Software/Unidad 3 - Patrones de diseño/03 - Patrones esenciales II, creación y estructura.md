@@ -300,6 +300,12 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > - ¿Singleton?::Casi nunca — solo sin estado compartido.
 > - ¿Template Method?::Fija el esqueleto y deja huecos a las subclases.
 
+## 📄 Capturas de la clase
+
+> [!quote] 🏭 Pizarra de la clase
+> Las capturas de la clase de patrones creacionales, reunidas en un documento con portada, índice y paginación:
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] (PDF, 19 páginas).
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
@@ -308,6 +314,8 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[02 - Patrones esenciales I, Strategy Decorator Observer]]
 > - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Capturas de la clase: [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]]
+
 
 ## 📚 Referencias
 
