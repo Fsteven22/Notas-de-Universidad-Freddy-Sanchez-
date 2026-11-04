@@ -22,16 +22,15 @@ tags: [indice, portada]
 
 > [!info] 🎓 Materias que curso ahora — empieza por aquí
 >
-> - [[Comunicación]] (2do · IDIG2012) `Activo`
->
-> - [[Sistema de Bases de Datos]] (3ro) `Activo`
-> - [[Diseño de Software]] (3ro) `Activo`
-> - [[Ingles III]] (3ro) `Activo`
-> - [[Matemáticas Discretas]] (3ro · repitiendo, notas ya completas) `Activo`
->
-> Ver también el mapa visual: [[00 - Mapa PAO 2-2026]].
+> - [[Comunicación]] · 2do · IDIG2012 `Activo`
+> - [[Sistema de Bases de Datos]] · 3ro `Activo`
+> - [[Diseño de Software]] · 3ro `Activo`
+> - [[Ingles III]] · 3ro `Activo`
+> - [[Matemáticas Discretas]] · 3ro · repitiendo, notas ya completas `Activo`
 
-![[00 - Mapa PAO 2-2026.svg]]
+> [!example] 🗺️ Mapa visual del PAO
+>
+> ![[00 - Mapa PAO 2-2026.svg]]
 
 ---
 
@@ -41,41 +40,49 @@ tags: [indice, portada]
 >
 > Usa el **árbol de archivos** (lateral), el **buscador** 🔍 o entra por tu semestre. Cada materia tiene su **mapa de contenido** con todas sus notas.
 
-## Preuniversitario
+## 🎒 Preuniversitario
 
-- [[Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
-- [[Preuniversitario/MOOC - Ingles (A1 - A2)/Inglés (A1-A2)|MOOC - Ingles (A1 - A2)]]
-- [[Matemáticas]]
-
----
-
-## 1er Semestre
-
-- [[Cálculo de una Variable]]
-- [[Física Mecánica]]
-- [[Fundamentos de Programación]]
-- [[Inglés I (B1-B2)]]
+> [!abstract] 📚 MOOC y nivelación
+>
+> - [[Comunicación Efectiva|MOOC de Comunicación]]
+> - [[Inglés (A1-A2)|MOOC - Inglés (A1 - A2)]]
+> - [[Matemáticas]]
 
 ---
 
-## 2do Semestre
+## 1️⃣ 1er Semestre
 
-- [[Álgebra Lineal]]
-- [[Cálculo Vectorial]]
-- [[Comunicación]] `Activo`
-- [[Computación y Sociedad]]
-- [[Inglés II (C1-C2)]]
-- [[Programación Orientada a Objetos]]
+> [!info] 🧱 Bases de la carrera
+>
+> - [[Cálculo de una Variable]]
+> - [[Física Mecánica]]
+> - [[Fundamentos de Programación]]
+> - [[Inglés I (B1-B2)]]
 
 ---
 
-## 3er Semestre
+## 2️⃣ 2do Semestre
 
-- [[Fundamentos de Electricidad y Sistemas Digitales]]
-- [[Matemáticas Discretas]] `Activo`
-- [[Sistema de Bases de Datos]] `Activo`
-- [[Diseño de Software]] `Activo`
-- [[Ingles III]] `Activo`
+> [!note] ⚙️ Núcleo de programación y matemáticas
+>
+> - [[Álgebra Lineal]]
+> - [[Cálculo Vectorial]]
+> - [[Comunicación]] `Activo`
+> - [[Computación y Sociedad]]
+> - [[Inglés II (C1-C2)]]
+> - [[Programación Orientada a Objetos]]
+
+---
+
+## 3️⃣ 3er Semestre
+
+> [!tip] 🚀 Software, datos y hardware
+>
+> - [[Fundamentos de Electricidad y Sistemas Digitales]]
+> - [[Matemáticas Discretas]] `Activo`
+> - [[Sistema de Bases de Datos]] `Activo`
+> - [[Diseño de Software]] `Activo`
+> - [[Ingles III]] `Activo`
 
 ---
 
