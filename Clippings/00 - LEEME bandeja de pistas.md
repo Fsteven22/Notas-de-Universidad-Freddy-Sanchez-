@@ -710,6 +710,17 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 > `…/material-de-clase/fisica-mecanica` → `…/fisica-mecanica`). Los links internos se regeneran solos, pero
 > marcadores externos a esas URLs quedan obsoletos.
 
+> [!info] Nota de esta ronda: copias del vault desactualizadas (fuera de git)
+>
+> Al terminar, el dueño vio "los PDF de Física Mecánica en la raíz de `Unidad 0`". **No era el vault real**:
+> `OneSyncFiles` (el que abre Obsidian) y `Documents/wt-opencode` tenían la raíz de U0 limpia desde el principio
+> (verificado: 18/18 materias con 3 `.md` en la raíz y 0 sueltos). Los PDFs seguían sueltos en
+> **`Desktop/wt-onedrive`** (rama `sesion/opencode-onedrive`, 31 commits atrás) y en
+> **`TEMP/opencode/wt-nube`** (rama `sesion/opencode-nube`, 34 commits atrás): sus bases eran anteriores a la
+> reorganización. Ambas se actualizaron con `git merge --ff-only master` (sin conflictos: árboles limpios, 0
+> commits propios y sus ramas eran ancestros de `master`). **Regla:** antes de revisar o tocar el vault, hay que
+> `git fetch origin` + `git merge --ff-only master` en el worktree que se esté usando; si no, se mira una copia vieja.
+
 **PUSHEADO `567793a`** — rama `sesion/opencode` → integrado a `master` con `git merge --ff-only` desde el worktree
 de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/sesion/opencode` = `567793a`.
 (El commit de cierre de esta línea es posterior y también queda integrado en `master`.)
