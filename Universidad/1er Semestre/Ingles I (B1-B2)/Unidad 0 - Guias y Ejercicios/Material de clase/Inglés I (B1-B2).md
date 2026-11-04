@@ -63,7 +63,8 @@
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
-- [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> [!note] Material de la unidad
+> - [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 ---
 
