@@ -710,5 +710,6 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 > `…/material-de-clase/fisica-mecanica` → `…/fisica-mecanica`). Los links internos se regeneran solos, pero
 > marcadores externos a esas URLs quedan obsoletos.
 
-**PUSHEO EN CURSO** — rama `sesion/opencode` (este commit). Pendiente: integración a `master` con
-`git merge --ff-only` desde el worktree de OneDrive.
+**PUSHEADO `567793a`** — rama `sesion/opencode` → integrado a `master` con `git merge --ff-only` desde el worktree
+de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/sesion/opencode` = `567793a`.
+(El commit de cierre de esta línea es posterior y también queda integrado en `master`.)
