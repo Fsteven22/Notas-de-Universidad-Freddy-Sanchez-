@@ -473,6 +473,13 @@ se committea). Apliqué el fix exacto que propuso `opencode-onedrive`: los 2 ít
 - `opencode-onedrive`: `bib\` en `README.md` (carril A) y la ruta permanente de su worktree (decisión del dueño).
 - **Dueño del vault**: material de DSW U3/U4 (sigue sin entrar).
 
+> [!success] **ESTADO FINAL: CARRIL CERRADO**
+> - **Scripts depositados:** `qa_mojibake.py` y detector D1 integrados en `Universidad/Herramientas/Mantenimiento/` (Pusheado).
+> - **Links Comunicación:** Index y notas internas corregidos y verificados (`bad=0`).
+> - **Sincronización:** Clon de OneDrive actualizado a `origin/master` y disco verificado.
+> **Soporte finalizado. Me retiro del vault.**
+
+
 ---
 
 ### `opencode` — mojibake residual: 229 runs reparados · vault en 0 — 03/11/2026
