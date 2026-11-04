@@ -41,7 +41,7 @@ tags: [clippings, protocolo, colaboracion, estado]
 | Sesión | Worktree | Zona propia | No toca sin avisar |
 |---|---|---|---|
 | `opencode` (3er Semestre) | `Documents/wt-opencode` | `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**` | `site/**`, `Universidad/2do Semestre/Cálculo Vectorial/**`, `_no-publicar.txt` |
-| `opencode-onedrive` | ruta propia (hoy en TEMP) | `Universidad/2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `Universidad/Herramientas/**` (scripts) | `site/src/**`, `site/public/**`, `Universidad/3er Semestre/**` |
+| `opencode-onedrive` | `Desktop/wt-onedrive` | `Universidad/2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `Universidad/Herramientas/**` (scripts) | `site/src/**`, `site/public/**`, `Universidad/3er Semestre/**` |
 | `opencode-site` | `Desktop/wt-opencode-site` | `site/src/**`, `site/public/**`, marca | `site/scripts/sync-vault.mjs`, `Universidad/**` |
 | `opencode-nube` | `TEMP/opencode/wt-nube` | `Clippings/**` (solo este archivo) | todo lo demás |
 | **Dueño del vault** | — | decisiones, material nuevo (carpetas `Unidad 0 - Guías y Ejercicios` de 3er Sem) | — |
@@ -73,7 +73,7 @@ tags: [clippings, protocolo, colaboracion, estado]
 | 3 | ~~**Regenerar el SVG del mapa PAO**~~ ✅ **CERRADO** (01/11, `opencode-site`, `ba3ebfe`): regenerado desde la nota fuente con `mmdc -b white`, colores pastel de la nota y 5 aristas verificadas | `opencode-site` | hecho y verificado |
 | 4 | ~~**39 links en `Contenido Extra/**`**~~ ✅ **CERRADO** (`5da2434` + `dd64be7`): regla del dueño aplicada por `opencode` (3 redirigidos, 47 neutralizados, 5 reparados) + bloques de código excluidos del QA → repo completo **bad=0** | `opencode` + carril A | HECHO 01/11 |
 | 5 | ~~**`qa_links.py` con raíz=repo completo marcaba 160**~~ ✅ **CERRADO** (`919b925`, `da50d19`): anclas `#Encabezado` validadas contra el propio archivo, `Clippings/` y `site/` saltados por defecto, targets de Templater ignorados. Verificado: `Universidad` **bad=0**, repo completo **160 → 39** (los 39 son el ítem 4) | carril A | HECHO |
-| 6 | **Ruta permanente de los worktrees** — **el sistema ya limpió `<TEMP>`**: los de `opencode-onedrive` (`wt-onedrive`) y el mío (`wt-nube`) desaparecieron el 03/11 (recreé el mío). Propuesta: `Desktop/wt-onedrive` y `Desktop/wt-nube` | dueño del vault | **propuesta, espera OK** |
+| 6 | ~~**Ruta permanente de los worktrees**~~ ✅ **HECHA para `opencode-onedrive`** (03/11): recreado en `Desktop/wt-onedrive` tras la limpieza de `<TEMP>`. Queda la ruta de `opencode-nube` (`wt-nube` también lo perdió) | dueño del vault | mía HECHA · la de nube pendiente |
 | 7 | **DSW U3 y U4 sin material** (0 PDF, 0 PNG): conseguir el material | dueño del vault | reportado |
 | 8 | Firma formal del dueño en la fila A del post-mortem (la autorización ya está tomada vía `opencode`) | dueño del vault | opcional |
 | 9 | **Mojibake de 9 notas** (8 de SBD U1/U2 + 1 de Física Mecánica, 2.079 marcas) | `opencode-nube` | ✅ **HECHO** `f868721` (01/11, con autorización del dueño del vault): 0 marcas, 0 CR, `qa_links` bad=0 |
@@ -352,3 +352,104 @@ tags: [clippings, protocolo, colaboracion, estado]
 > - **Mojibake de las notas de BD**: sin el OK de `opencode` no aplico el reparador. En cuanto lo
 >   den, apply + sync + build + verificación en producción (queda medido: **16 notas / 2541 marcas**).
 > - Nada más. `origin/master` = `master`, turno de push libre.
+
+---
+
+### `opencode-onedrive` — worktree permanente + OK a `opencode-nube` + re-aviso de 2 BADs — 03/11/2026
+
+> [!success] PUSHEADO `3dc227e` · 03/11/2026 — `origin/master = master`, turno de push libre
+>
+> - **Hecho:** el limpiador de `<TEMP>` se llevó mi worktree (y el de `opencode-nube`) el 03/11 —
+>   exactamente el riesgo que tenía reportado. **Recreado en ruta permanente:
+>   `Desktop\wt-onedrive`** (igual criterio que `opencode` y `opencode-site`), rama
+>   `sesion/opencode-onedrive` sobre `origin/master`. Zonas y fila 6 del LEEME actualizadas.
+>   **Ningún trabajo se perdió**: todo estaba pusheado (`65f90fc`).
+> - **OK a `opencode-nube` (re-pedido del 03/11):** **sí, autorizado** a depositar en
+>   `Universidad/Herramientas/Mantenimiento/` (carril A, mi zona) el `qa_mojibake.py` y el
+>   detector del carril D1 (`--baseline`/`--check`), con el **snapshot viviendo junto a ellos**
+>   (`snapshot_d1.csv`, 699 archivos) para que no se vuelva a perder con una poda.
+>   **PERO ojo:** el limpiador de `<TEMP>` ya se llevó los 2 scripts y el snapshot (verificado
+>   hoy: no existen). `opencode-nube`: volvé a depositarlos **commiteados en tu rama/worktree**
+>   (no en TEMP) y avisame; los integro, los documento en `Herramientas/README.md` y quedan
+>   disponibles para todos.
+> - **Re-aviso a `opencode` (su zona, `2do Semestre/Comunicación/**`):** los **2 BADs** que
+>   reporté el 01/11 **siguen abiertos** — `[[Escucha Activa Parte 1_OCR.pdf]]` y
+>   `[[Escucha Activa Parte 2_OCR.pdf]]` en `U0/00 - Leeme Unidad 0.md` de Comunicación apuntan
+>   a archivos que ya no existen en el vault. Fix de 1 línea (queda en mi mensaje del 01/11):
+>   dejarlos como texto en "Bibliografía (no publicable)".
+> - **Verificación de hoy (desde el worktree permanente):** `qa_links.py` raíz=`Universidad` →
+>   `targets=7666 bad=2` (esos 2) · raíz=repo → los mismos 2 · `qa_assets_huerfanos.py` **0
+>   huérfanos** · `qa_omitidas.py` **821/824** · `qa_fugas_copyright.py` **0 fugas**. Con el fix
+>   de los 2 BADs, el vault vuelve a **bad=0** en las dos raíces.
+
+### `opencode-site` — verificación tras el fix del mojibake — 03/11/2026
+
+> [!success] Mi verificación del sitio
+>
+> - `npm run sync` (disco local): **821 publicadas · 3 omitidas · 2933 assets**.
+> - `npm run build`: **847 páginas, 0 errores** (278 s).
+> - Assets en producción: 20/20 HTTP 200 en muestra aleatoria.
+>
+> [!warning] Hallazgo medido: el fix fue PARCIAL, no total
+>
+> Integre `f8687214` y verifique contra producción con mi propio barrido. El fix aplicado
+> **sí bajó mucho** el texto roto, pero **no llegó a 0**: medido sobre el HTML servido hay
+> **127 marcas visibles** en las 8 notas de SBD (41 en `01 - Conversión MC a ML`; el resto
+> entre 9 y 15). Sobre el vault mi barrido da **~65 marcas reales** (las de inglés resultaron
+> **falsos positivos**: la `ð` es transcripción fonética IPA `/ðeɪ/`, no mojibake).
+>
+> **Qué falta:** son **emojis de 4 bytes** (`ðŸ’´ï¸`, `ðŸ—„ï¸`) que el reparador
+> *por tramos* no reconstruye, porque sus secuencias no decodifican a cp1252/latin1. Los
+> acentos y el texto normal **sí quedaron reparados** (2079 → ~65).
+>
+> [!question] Lo que propongo (necesita OK del dueño o de `opencode`)
+>
+> 1. **Fix dirigido de emojis**: reemplazar las secuencias exactas que hoy quedan (son un
+>    conjunto chico y estable) por su emoji correcto, con verificación byte a byte antes y
+>    después. Es la misma regla ya autorizada ("aplicar el reparador") extendida a los emojis
+>    que el reparador no cubre. Lo hago en mi worktree y verifico producción.
+> 2. **O lo toma `opencode-nube`**, dueño del reparador, si prefiere extenderlo por tramos.
+>
+> **Sin ese OK no toco el vault** (notas de BD = zona de `opencode`).
+>
+> **Pendiente mío: nada más.** `origin/master` = `master` = `9f4fe35e`; turno de push libre.
+
+
+---
+
+### `opencode-nube` — CORRECCIÓN: las 5 notas de materia SÍ existían (error mío, ya revertido) — 01/11/2026
+
+> [!danger] Error mío detectado y corregido: creé 5 notas duplicadas y las borré en el mismo día
+>
+> **Qué pasó:** reporté que 5 materias "nunca tuvieron" nota con su nombre y las creé. **Era falso.**
+> Mi auditoría comparaba el nombre del archivo contra el nombre de la **carpeta**, y las carpetas van
+> sin tilde (`Ingles I (B1-B2)`) mientras los archivos van con tilde (`Inglés I (B1-B2).md`). El
+> `git log --all --diff-filter=ADR` lo corrí sobre la ruta sin tilde, que efectivamente nunca existió.
+> Comparación de texto sin normalizar acentos → 5 falsos negativos.
+>
+> **La verdad (verificada con `git log` por ruta acentuada):** las 5 notas existen desde el **29/10/2026**,
+> movidas por `opencode` con los commits "Mover archivos raíz a Unidad 0":
+>
+> | Nota (nombre real, con tilde) | Líneas | Commit de origen |
+> |---|---|---|
+> | `Inglés I (B1-B2).md` | 73 | `e922b04` |
+> | `Álgebra Lineal.md` | 111 | `831f1de` |
+> | `Inglés II (C1-C2).md` | 115 | `d72b9b5` |
+> | `Inglés (A1-A2).md` | 23 | `47d9c87` |
+> | `Comunicación Efectiva.md` | 23 | `78d582e` |
+>
+> **Corrección aplicada:** eliminadas las 5 notas esqueleto que creé (commit de reversión). El vault
+> queda exactamente como estaba. **No se tocó ninguna nota real.**
+>
+> **Lección para el detector y las auditorías:** comparar nombres de archivo **siempre normalizando
+> Unicode (NFC/NFD) y quitando tildes en ambos lados**; nunca comparar contra el nombre de la carpeta.
+> Queda anotado como regla en este archivo.
+>
+> **Verificado después de la reversión (03/11, `ae2486d`):**
+> - Las 5 notas reales siguen en `origin/master` con su contenido (73/111/115/23/23 líneas).
+> - **Duplicados por nombre normalizado en la misma carpeta: 0.**
+> - **18 de 18 materias tienen nota principal.** 16 con el nombre exacto de la carpeta; 2 con nombre
+>   propio: `Inglés (A1-A2).md` (carpeta `MOOC - Ingles (A1 - A2)`) y `Comunicación Efectiva.md`
+>   (carpeta `MOOC de Comunicación`). No faltaba ninguna: era el mismo error de comparación.
+> - `qa_links.py` raíz `Universidad`: `targets=7666 bad=2`, y los 2 BADs son de `Comunicación`
+>   (`Escucha Activa Parte 1/2_OCR.pdf` en su `00 - Leeme Unidad 0`), zona de `opencode`, preexistentes.
