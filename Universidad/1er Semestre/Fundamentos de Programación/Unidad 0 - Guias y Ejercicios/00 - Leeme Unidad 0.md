@@ -10,16 +10,18 @@ tags: [CCPG1001, unidad0, recursos]
 
 ## 📎 Syllabus y políticas
 
-- ![[CCPG1001-Políticas del curso.pdf]] — estudio: [[Políticas del Curso CCPG1043]]
+> [!note] 📄 Políticas del curso
+> ![[CCPG1001-Políticas del curso.pdf]]
+> La versión de estudio está en [[Guías/Políticas del Curso CCPG1043|Políticas del Curso]].
 
 > [!note] 💛 El syllabus completo está como nota
-> Ver [[Bienvenida y Syllabus Fundamentos de Programación|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> ![[Diagramas/Bienvenida_y_Syllabus_Fundamentos_de_Programación_01.svg]]
+> Ver [[Guías/Bienvenida y Syllabus Fundamentos de Programación|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
->
 > - [[Módulo 1.1 Programación y su Relevancia]] — *Módulo 1 - Introducción y Ambientes de Programación*
 > - [[Módulo 2.1 Variables y Tipos de Datos]] — *Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad*
 > - [[Módulo 3.1 Funciones]] — *Módulo 3 - Funciones*
@@ -28,9 +30,8 @@ tags: [CCPG1001, unidad0, recursos]
 > - [[Módulo 6.1 Introducción a NumPy]] — *Módulo 6 - Pandas*
 > - [[Expresiones Regulares (Regex)]] — *Módulo general - Funciones especiales*
 
-## 📽️ Material de clase del profesor
-
-- [[Material de clase (slides del profesor)]] — los 17 PDFs de teoría (módulos 1-6) + políticas, cada uno enlazado a su nota de estudio del vault.
+> [!note] 📽️ Slides del profesor
+> [[Material de clase (slides del profesor)]] — los 17 PDFs de teoría (módulos 1-6) + políticas, cada uno enlazado a su nota de estudio del vault.
 
 ## 📥 Pendiente de cargar
 
@@ -45,7 +46,7 @@ tags: [CCPG1001, unidad0, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[Fundamentos de Programación|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus Fundamentos de Programación|👋 Bienvenida y Syllabus]]
+> - [[Material de clase/Fundamentos de Programación|🗺️ Mapa de contenido de la materia]]
+> - [[Guías/Bienvenida y Syllabus Fundamentos de Programación|👋 Bienvenida y Syllabus]]
 
 **Tags:** #CCPG1001 #unidad0 #recursos
