@@ -74,8 +74,8 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - Base previa: [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos]] (los reales como dominio y rango) y [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/11 - Inecuaciones]] (desigualdades para dominios).
-> - Lenguaje de correspondencias: [[Universidad/Preuniversitario/Matemáticas/Unidad 1 - Lógica y Conjuntos/II - Conjuntos/10 - Funciones en Conjuntos]].
+> - Base previa: [[../Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]] (los reales como dominio y rango) y [[../Unidad 2 - Números Reales/I - Números Reales/11 - Inecuaciones|11 - Inecuaciones]] (desigualdades para dominios).
+> - Lenguaje de correspondencias: [[../Unidad 1 - Lógica y Conjuntos/II - Conjuntos/10 - Funciones en Conjuntos|10 - Funciones en Conjuntos]].
 > - Ruta sugerida: I-01 → I-02 → I-03 → I-04 → I-05 → I-07 → I-11 → I-12 → I-13 → I-14 → I-06 → I-08 → I-09 → I-10, luego II-01 → II-02 → II-03 → II-04 → II-05 → II-06.
 
 ---

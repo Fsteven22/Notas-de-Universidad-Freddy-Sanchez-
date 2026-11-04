@@ -314,7 +314,7 @@ dg-publish: true
 > - El texto académico que verás en [[02 - El texto académico]] combina exposición y argumentación con normas formales.
 > - Todo trabajo académico exige separar hechos con cita de opiniones propias con tesis.
 > - Si dominas la tríada de hoy, el informe, el ensayo y la monografía serán solo combinaciones de lo ya aprendido.
-> - Vuelve a [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 3 - Tipología textual/00 - Índice Unidad 3]] cuando necesites ubicar dónde encaja cada formato académico.
+> - Vuelve a [[00 - Índice Unidad 3]] cuando necesites ubicar dónde encaja cada formato académico.
 > - Recuerda: contar emociona, explicar aclara y argumentar convence; la universidad te pedirá sobre todo las dos últimas.
 
 ---
@@ -370,9 +370,9 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 3 - Tipología textual/00 - Índice Unidad 3]] — mapa general de la unidad de tipología textual y orden de lectura.
+> - [[00 - Índice Unidad 3]] — mapa general de la unidad de tipología textual y orden de lectura.
 > - [[02 - El texto académico]] — siguiente nota: cómo el texto expositivo y argumentativo se aplican en el ámbito académico.
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 3 - Tipología textual/00 - Índice Unidad 3]] — vuelve al índice para repasar la tríada antes de pasar al texto académico.
+> - [[00 - Índice Unidad 3]] — vuelve al índice para repasar la tríada antes de pasar al texto académico.
 
 ---
 

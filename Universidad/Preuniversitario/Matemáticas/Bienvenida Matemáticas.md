@@ -32,7 +32,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 > 
-> ![[Diagramas/Bienvenida_Matemáticas_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_Matemáticas_01.svg]]
 
 ---
 

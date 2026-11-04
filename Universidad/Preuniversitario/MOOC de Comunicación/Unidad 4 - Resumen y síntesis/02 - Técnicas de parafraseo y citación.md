@@ -201,7 +201,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 4]] — mapa general de la unidad.
 > - [[01 - El resumen académico]] — contraste directo entre reducción (resumen) y reformulación (parafraseo).
 > - [[03 - La síntesis de múltiples fuentes]] — la síntesis integra parafraseo de varias fuentes con su respectiva citación.
 

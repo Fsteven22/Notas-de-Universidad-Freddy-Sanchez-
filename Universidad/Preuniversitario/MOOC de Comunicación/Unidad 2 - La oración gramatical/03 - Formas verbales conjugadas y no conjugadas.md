@@ -407,7 +407,7 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 > 
 > - [[02 - Oraciones compuestas]] — cada proposición coordinada o subordinada necesita su propio verbo conjugado; los verboides no bastan para articularlas.
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 2 - La oración gramatical/00 - Índice Unidad 2]] — índice general de la unidad: la oración gramatical, sus partes y tipos.
+> - [[00 - Índice Unidad 2]] — índice general de la unidad: la oración gramatical, sus partes y tipos.
 > - Próxima nota (Unidad 2, punto 4): análisis de sujeto y predicado con verbos conjugados como núcleo.
 
 ---

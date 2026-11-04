@@ -54,13 +54,13 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos]] — elementos y campos de las matrices.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/10 - Ecuaciones]] — base para sistemas lineales y cuadráticos.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/11 - Inecuaciones]] — base de una variable para sistemas de inecuaciones.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/02 - Circunferencia]] — fronteras circulares en sistemas no lineales.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/03 - Parábola]] — regiones parabólicas.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/04 - Elipse]] — regiones elípticas.
-> - [[Universidad/Preuniversitario/Matemáticas/Unidad 5 - Geometría/III - Geometría Analítica/05 - Hipérbola]] — ramas hiperbólicas en intersecciones.
+> - [[../Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]] — elementos y campos de las matrices.
+> - [[../Unidad 2 - Números Reales/I - Números Reales/10 - Ecuaciones|10 - Ecuaciones]] — base para sistemas lineales y cuadráticos.
+> - [[../Unidad 2 - Números Reales/I - Números Reales/11 - Inecuaciones|11 - Inecuaciones]] — base de una variable para sistemas de inecuaciones.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/02 - Circunferencia|02 - Circunferencia]] — fronteras circulares en sistemas no lineales.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/03 - Parábola|03 - Parábola]] — regiones parabólicas.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/04 - Elipse|04 - Elipse]] — regiones elípticas.
+> - [[../Unidad 5 - Geometría/III - Geometría Analítica/05 - Hipérbola|05 - Hipérbola]] — ramas hiperbólicas en intersecciones.
 
 ---
 

@@ -775,7 +775,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1]] — presentación general de la Unidad 1 y su estructura.
+> - [[00 - Índice Unidad 1]] — presentación general de la Unidad 1 y su estructura.
 > - [[02 - Propiedades de la redacción y textos académicos]] — aplica lo aprendido aquí (claridad, precisión, funciones) a la escritura académica.
 
 ---

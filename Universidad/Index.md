@@ -57,7 +57,7 @@ tags: [indice, portada]
 > - [[Cálculo de una Variable]]
 > - [[Física Mecánica]]
 > - [[Fundamentos de Programación]]
-> - [[Inglés I (B1-B2)]]
+> - [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 
 ---
 

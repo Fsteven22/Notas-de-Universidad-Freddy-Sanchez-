@@ -69,7 +69,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - Anterior: [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 5 - Textos expositivos/00 - Índice Unidad 5|00 - Índice Unidad 5]]
+> - Anterior: [[../Unidad 5 - Textos expositivos/00 - Índice Unidad 5|00 - Índice Unidad 5]]
 > - Siguiente: [[01 - El texto argumentativo (concepto, ámbitos y estructura)]]
 
 ---

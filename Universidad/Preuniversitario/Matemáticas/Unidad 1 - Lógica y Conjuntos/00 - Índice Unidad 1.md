@@ -79,7 +79,7 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 > - Inicio Lógica: [[01 - Proposiciones]]
 > - Inicio Conjuntos: [[01 - Tipos y cardinalidad]]
-> - Siguiente: [[Universidad/Preuniversitario/Matemáticas/Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos]]
+> - Siguiente: [[../Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]]
 
 ---
 

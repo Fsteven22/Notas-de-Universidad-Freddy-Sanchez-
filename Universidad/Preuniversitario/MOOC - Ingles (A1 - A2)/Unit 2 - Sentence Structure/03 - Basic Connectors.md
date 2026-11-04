@@ -990,7 +990,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 >
 > - Índice Unit 2: [[00 - Índice]]
 > - Anterior: [[02 - Parts of a Sentence]]
-> - Mapa: [[Inglés (A1-A2)]]
+> - Mapa: [[../Inglés (A1-A2)|Inglés (A1-A2)]]
 
 ---
 

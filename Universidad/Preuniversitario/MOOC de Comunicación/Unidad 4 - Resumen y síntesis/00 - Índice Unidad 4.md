@@ -74,7 +74,7 @@ dg-publish: true
 ---
 
 > [!quote] 🔗 Conexiones
-> - Anterior: [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 3 - Tipología textual/00 - Índice Unidad 3|00 - Índice Unidad 3]]
+> - Anterior: [[../Unidad 3 - Tipología textual/00 - Índice Unidad 3|00 - Índice Unidad 3]]
 > - Siguiente: [[01 - El resumen académico]]
 
 ---

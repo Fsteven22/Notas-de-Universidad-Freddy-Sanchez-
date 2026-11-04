@@ -56,9 +56,9 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - Previo: [[Universidad/Preuniversitario/Matemáticas/Unidad 1 - Lógica y Conjuntos/I - Lógica proposicional/01 - Proposiciones]] — lógica para demostraciones.
-> - Previo: [[Universidad/Preuniversitario/Matemáticas/Unidad 1 - Lógica y Conjuntos/II - Conjuntos/03 - Operaciones entre Conjuntos]] — conjuntos como lenguaje base.
-> - Siguiente: [[Universidad/Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/01 - Definición, dominio y rango]] — ℝ como dominio y codominio.
+> - Previo: [[../Unidad 1 - Lógica y Conjuntos/I - Lógica proposicional/01 - Proposiciones|01 - Proposiciones]] — lógica para demostraciones.
+> - Previo: [[../Unidad 1 - Lógica y Conjuntos/II - Conjuntos/03 - Operaciones entre Conjuntos|03 - Operaciones entre Conjuntos]] — conjuntos como lenguaje base.
+> - Siguiente: [[../Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/01 - Definición, dominio y rango|01 - Definición, dominio y rango]] — ℝ como dominio y codominio.
 
 ---
 

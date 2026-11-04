@@ -62,7 +62,7 @@ dg-publish: true
 ---
 
 > [!quote] 🔗 Conexiones
-> - Anterior: [[Bienvenida Comunicación Efectiva]]
+> - Anterior: [[../Bienvenida Comunicación Efectiva|Bienvenida Comunicación Efectiva]]
 > - Siguiente: [[01 - El proceso y las funciones de la comunicación]]
 
 ---

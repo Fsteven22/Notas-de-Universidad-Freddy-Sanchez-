@@ -209,10 +209,10 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/00 - Índice Unidad 5]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 5]] — mapa general de la unidad.
 > - [[01 - El texto expositivo (concepto, tipos y estructura)]] — la disección de párrafos aplica directamente sobre la estructura secuencial descrita en esa nota.
 > - [[03 - Conectores textuales y coherencia lógica]] — los conectores son la señal explícita de cómo una idea de apoyo se relaciona con la idea central.
-> - [!info] Conexión cruzada con la Unidad 6: esta técnica de disección es análoga a la metodología de análisis de argumentos en [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 6 - Textos argumentativos/03 - Análisis y desmontaje de textos argumentativos|03 - Análisis y desmontaje de textos argumentativos]], pero aquí se buscan ideas centrales/de apoyo en vez de tesis/argumentos.
+> - [!info] Conexión cruzada con la Unidad 6: esta técnica de disección es análoga a la metodología de análisis de argumentos en [[../Unidad 6 - Textos argumentativos/03 - Análisis y desmontaje de textos argumentativos|03 - Análisis y desmontaje de textos argumentativos]], pero aquí se buscan ideas centrales/de apoyo en vez de tesis/argumentos.
 
 ---
 

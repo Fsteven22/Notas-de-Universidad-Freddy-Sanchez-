@@ -8,7 +8,7 @@ dg-publish: true
 
 > [!info] 💡 Definición y propósito
 >
-> Un **texto expositivo** tiene como propósito **informar, explicar o describir** un tema de la manera más **objetiva, clara y neutral** posible. A diferencia del texto argumentativo (ver [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]] de la Unidad 6), no busca persuadir ni defender una postura: no hay tesis que sostener, sino contenido que transmitir con precisión.
+> Un **texto expositivo** tiene como propósito **informar, explicar o describir** un tema de la manera más **objetiva, clara y neutral** posible. A diferencia del texto argumentativo (ver [[../Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]] de la Unidad 6), no busca persuadir ni defender una postura: no hay tesis que sostener, sino contenido que transmitir con precisión.
 >
 > ![[Diagramas/01_-_El_texto_expositivo_(concepto,_tipos_y_estructura)_01.svg]]
 >
@@ -278,10 +278,10 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[Universidad/Preuniversitario/MOOC de Comunicación/Unidad 5 - Textos expositivos/00 - Índice Unidad 5]] — mapa general de la unidad.
+> - [[00 - Índice Unidad 5]] — mapa general de la unidad.
 > - [[02 - Análisis del texto expositivo]] — aplica esta estructura para disecar párrafos en ideas centrales y de apoyo.
 > - [[03 - Conectores textuales y coherencia lógica]] — los conectores son la herramienta que enlaza los párrafos temáticos de esta estructura.
-> - [!info] Conexión cruzada con la Unidad 6: el texto expositivo se distingue del texto argumentativo por la ausencia de tesis y de sesgo persuasivo — ver [[Universidad/Preuniversitario/Comunicación Efectiva/Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]].
+> - [!info] Conexión cruzada con la Unidad 6: el texto expositivo se distingue del texto argumentativo por la ausencia de tesis y de sesgo persuasivo — ver [[../Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]].
 
 ---
 
