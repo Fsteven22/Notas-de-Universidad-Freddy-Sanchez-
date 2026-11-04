@@ -16,7 +16,7 @@ tags: [IDIG1008, unit6, indice, english]
 - [[04 - Reading, Writing, Speaking - Pets, Moment & Review]] — debate + summary + Review 4
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../Ingles III|Ingles III]]
 > - Anterior: [[00 - Índice Unit 5]]
 > - Siguiente: (vacío — última unidad del libro)
 

@@ -62,7 +62,7 @@ tags: [EYAG1037, electricidad, syllabus]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|
@@ -194,7 +194,7 @@ tags: [EYAG1037, electricidad, syllabus]
 
 > [!quote] 🔗 Conexiones
 > - Entrada principal: [[Fundamentos de Electricidad y Sistemas Digitales]] — landing con Dataview de toda la materia
-> - Unidades: [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3]] · [[Universidad/3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4]]
+> - Unidades: [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] · [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] · [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] · [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]]
 
 ---
 

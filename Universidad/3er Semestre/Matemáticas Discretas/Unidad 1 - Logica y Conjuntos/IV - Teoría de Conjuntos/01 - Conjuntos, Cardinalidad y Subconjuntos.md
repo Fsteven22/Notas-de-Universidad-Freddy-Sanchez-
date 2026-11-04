@@ -329,7 +329,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[03 - Inducción Matemática]]
 > - Siguiente: [[02 - Operaciones y Diagramas de Venn]]
 

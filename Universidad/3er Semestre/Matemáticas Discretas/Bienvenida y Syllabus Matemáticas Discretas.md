@@ -62,7 +62,7 @@ dg-publish: true
 
 > [!tip] 📚 Programa completo por unidades
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Matemáticas_Discretas_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Matemáticas_Discretas_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|

@@ -23,7 +23,7 @@ tags: [MATG1051, unidad2, indice, discretas]
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Cardinalidad y Leyes de Cardinalidad]] (Unidad 1)
 > - Siguiente: [[01 - Divisibilidad y Números Primos]] (Unidad 3)
-> - MOC general: [[Matemáticas Discretas]]
+> - MOC general: [[../Matemáticas Discretas|Matemáticas Discretas]]
 
 ---
 **Tags:** #MATG1051 #unidad2 #indice #discretas

@@ -302,7 +302,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
 > - Lógica previa: [[03 - Demostraciones]]
 

@@ -304,10 +304,10 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[02 - Patrones esenciales I, Strategy Decorator Observer]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

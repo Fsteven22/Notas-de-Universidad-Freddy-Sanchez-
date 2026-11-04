@@ -11,47 +11,47 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 > Los PDF están separados por tipo: `Material de clase/` y `Guías/`.
 > - Contenido oficial IDIG1008:
 
-![[Material de clase/EIII Course Contents.pdf]]
+![[EIII Course Contents.pdf]]
 
 > - Lessons de Empower (texto de las unidades):
 
-![[Material de clase/Empower U7-U9 lessons.pdf]]
+![[Empower U7-U9 lessons.pdf]]
 
-![[Material de clase/Empower U10-U12 lessons.pdf]]
+![[Empower U10-U12 lessons.pdf]]
 
-![[Material de clase/Empower Back Matter drills.pdf]]
+![[Empower Back Matter drills.pdf]]
 
 > - Vocabulario y referencia:
 
-![[Guías/Common Phrasal Verbs List and Examples.pdf]]
+![[../Guías/Common Phrasal Verbs List and Examples.pdf]]
 
-![[Guías/EVOLVE_Level 4_Irregular_verbs_chart.pdf]]
+![[../Guías/EVOLVE_Level 4_Irregular_verbs_chart.pdf]]
 
 > - Presentaciones del Speaking (exportadas a PDF desde el .pptx):
 
-![[Material de clase/Flooding Guayaquil Freddy Sánchez.pdf]]
+![[Flooding Guayaquil Freddy Sánchez.pdf]]
 
-![[Material de clase/Living Without a Phone Freddy Sánchez.pdf]]
+![[Living Without a Phone Freddy Sánchez.pdf]]
 
 > - Plataforma y laboratorio:
 
 - `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: no se publica, está en `Universidad/_no-publicar.txt`)
 
-![[Normas de uso en los laboratorios de CELEX-signed.pdf]]
+![[../Guías/Normas de uso en los laboratorios de CELEX-signed.pdf]]
 
 > [!tip] 🖼️ Imágenes publicadas
 >
 > - Mapa de tiempos verbales:
 
-![[GRAMMATICAL TENSES.png]]
+![[../Figuras/GRAMMATICAL TENSES.png]]
 
 > - Símbolos de autocorrección (convertido de .jfif a .png porque el sitio no sube jfif):
 
-![[SELF CORRECTION SYMBOLS.png]]
+![[../Figuras/SELF CORRECTION SYMBOLS.png]]
 
 > - Facultades (contextual):
 
-![[ESPOL FACULTIES.png]]
+![[../Figuras/ESPOL FACULTIES.png]]
 
 > [!warning] 📦 No publicables en el sitio (el sync no los sube)
 >

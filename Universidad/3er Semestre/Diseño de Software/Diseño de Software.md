@@ -57,10 +57,10 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
-- 🔗 [[Unidad 0 - Guias y Ejercicios/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
+- 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
 - 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
 - 📽️ Decks de cátedra en `Unidad 0 - Guias y Ejercicios/Diapositivas/`: diseño de software, paradigmas, MVC/SOLID, [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|UML: casos de uso, clases y secuencia]] y [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|implementación desde el diseño]].
-- 📚 Syllabus y políticas en `Diapositivas/` y en la raíz, 5 libros de apoyo en la raíz, exámenes en `Exámenes/` y material de clase en `Material de clase/`. dentro de `Unidad 0 - Guias y Ejercicios/`.
+- 📚 Syllabus en `Unidad 0 - Guias y Ejercicios/Material de clase/`, políticas y decks en `Unidad 0 - Guias y Ejercicios/Diapositivas/`, 5 libros de apoyo en `Unidad 0 - Guias y Ejercicios/Guías/`, exámenes en `Unidad 0 - Guias y Ejercicios/Exámenes/` y material suelto en `Unidad 0 - Guias y Ejercicios/Material de clase/`.
 
 ---
 
@@ -73,16 +73,16 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-- [[Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
+- [[00 - Leeme Unidad 0]]
 
-- [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1.md|📂 Unidad 1 - Introducción al diseño]]
+- [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1|📂 Unidad 1 - Introducción al diseño]]
 
-- [[Unidad 2 - Diseño orientado a objetos/00 - Índice Unidad 2.md|📂 Unidad 2 - Diseño orientado a objetos]]
+- [[Unidad 2 - Diseño orientado a objetos/00 - Índice Unidad 2|📂 Unidad 2 - Diseño orientado a objetos]]
 
-- [[Unidad 3 - Patrones de diseño/00 - Índice Unidad 3.md|📂 Unidad 3 - Patrones de diseño]]
+- [[Unidad 3 - Patrones de diseño/00 - Índice Unidad 3|📂 Unidad 3 - Patrones de diseño]]
 
-- [[Unidad 4 - Refactorización/00 - Índice Unidad 4.md|📂 Unidad 4 - Refactorización]]
+- [[Unidad 4 - Refactorización/00 - Índice Unidad 4|📂 Unidad 4 - Refactorización]]
 
-- [[Unidad 5 - Pruebas unitarias/00 - Índice Unidad 5.md|📂 Unidad 5 - Pruebas unitarias]]
+- [[Unidad 5 - Pruebas unitarias/00 - Índice Unidad 5|📂 Unidad 5 - Pruebas unitarias]]
 
 **Tags:** #diseno-software #ESPOL #CCPG1042

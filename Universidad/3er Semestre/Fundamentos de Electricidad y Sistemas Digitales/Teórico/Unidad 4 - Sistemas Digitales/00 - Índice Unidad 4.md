@@ -18,7 +18,7 @@ tags: [FESD, unidad4, indice, EYAG1037]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[07 - Lógica fija y tablas de verdad]] (Unidad 3)
-> - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
+> - MOC general: [[../../Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---
 **Tags:** #FESD #unidad4 #indice

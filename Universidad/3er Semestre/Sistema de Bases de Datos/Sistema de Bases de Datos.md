@@ -56,10 +56,10 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-- [[Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
+- [[00 - Leeme Unidad 0]]
 
-- [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1.md|📂 Unidad 1 - Modelos de Datos y ER]]
+- [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1|📂 Unidad 1 - Modelos de Datos y ER]]
 
-- [[Unidad 2 - Modelo lógico y conversión/00 - Índice Unidad 2.md|📂 Unidad 2 - Modelo lógico y conversión]]
+- [[Unidad 2 - Modelo lógico y conversión/00 - Índice Unidad 2|📂 Unidad 2 - Modelo lógico y conversión]]
 
 **Tags:** #bases-de-datos #ESPOL #TICG1018

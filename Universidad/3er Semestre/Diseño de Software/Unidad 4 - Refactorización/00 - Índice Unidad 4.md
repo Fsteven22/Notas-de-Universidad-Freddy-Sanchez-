@@ -14,7 +14,7 @@ tags: [CCPG1042, unidad4, indice, diseno-software]
 - [[02 - Catálogo esencial de Fowler, Extract Move Rename]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Anterior: [[00 - Índice Unidad 3]]
 > - Siguiente: [[00 - Índice Unidad 5]]
 

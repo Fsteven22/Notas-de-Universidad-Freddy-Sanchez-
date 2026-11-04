@@ -556,7 +556,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Sistema de Bases de Datos]]
+> - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Siguiente: [[02 - Primera forma normal y diccionario de datos]]
 > - Base: [[01 - Dato, información y modelos de datos]] · [[02 - Entidades, atributos, claves y relaciones]] · [[03 - Modelo relacional, ERM y casos Tiny College]]

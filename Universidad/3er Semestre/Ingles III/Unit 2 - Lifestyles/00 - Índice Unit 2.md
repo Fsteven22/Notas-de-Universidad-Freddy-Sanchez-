@@ -16,7 +16,7 @@ tags: [IDIG1008, unit2, indice, english]
 - [[04 - Reading, Writing, Speaking - Detox, Podcast & Plan]] — detox + comment + plan 8.5
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Ingles III]]
+> - Mapa de contenido: [[../Ingles III|Ingles III]]
 > - Anterior: [[00 - Índice Unit 1]]
 > - Siguiente: [[00 - Índice Unit 3]]
 

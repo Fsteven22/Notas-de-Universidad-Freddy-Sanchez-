@@ -25,7 +25,7 @@ tags: [FESD, unidad3, indice, EYAG1037]
 > [!quote] 🔗 Conexiones
 > - Previo: [[06 - Ruido Electrónico e Interferencia]] (Unidad 2)
 > - Siguiente: [[01 - Introducción a la Electrónica Digital]] (Unidad 4)
-> - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
+> - MOC general: [[../../Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---
 **Tags:** #FESD #unidad3 #indice

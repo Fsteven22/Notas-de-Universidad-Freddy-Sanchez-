@@ -25,7 +25,7 @@ tags: [MATG1051, unidad3, indice, discretas]
 > [!quote] 🔗 Conexiones
 > - Previo: [[04 - Sucesiones y Cadenas]] (Unidad 2)
 > - Siguiente: [[01 - Relaciones de Recurrencia]] (Unidad 4)
-> - MOC general: [[Matemáticas Discretas]]
+> - MOC general: [[../Matemáticas Discretas|Matemáticas Discretas]]
 
 ---
 **Tags:** #MATG1051 #unidad3 #indice #discretas

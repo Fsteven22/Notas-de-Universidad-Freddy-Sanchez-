@@ -10,11 +10,11 @@ dg-publish: true
 
 ## Progreso del Curso
 
-![[Diagramas/Matemáticas_Discretas_01.svg]]
+![[Unidad 0 - Guias y Ejercicios/Diagramas/Matemáticas_Discretas_01.svg]]
 
 ---
 
-## Unidad I — Lógica y Conjuntos *(6h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|📂 Índice]]
+## Unidad I — Lógica y Conjuntos *(6h)* → [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|📂 Índice]]
 
 > [!note] I — Lógica Proposicional
 > - [[01 - Proposiciones y conectivos|01 — Proposiciones y conectivos]]
@@ -38,7 +38,7 @@ dg-publish: true
 
 ---
 
-## Unidad II — Funciones, Sucesiones y Relaciones *(5h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|📂 Índice]]
+## Unidad II — Funciones, Sucesiones y Relaciones *(5h)* → [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|📂 Índice]]
 
 > [!note] II — Funciones, Sucesiones y Relaciones
 > - [[01 - Funciones|01 — Funciones]]
@@ -48,7 +48,7 @@ dg-publish: true
 
 ---
 
-## Unidad III — Números y Conteo *(8h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 3 - Números y Conteo/00 - Índice Unidad 3|📂 Índice]]
+## Unidad III — Números y Conteo *(8h)* → [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3|📂 Índice]]
 
 > [!note] III — Divisibilidad y Conteo
 > - [[01 - Divisibilidad y Números Primos|01 — Divisibilidad y primos]]
@@ -62,7 +62,7 @@ dg-publish: true
 
 ---
 
-## Unidad IV — Recurrencia y Algoritmos *(7h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|📂 Índice]]
+## Unidad IV — Recurrencia y Algoritmos *(7h)* → [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|📂 Índice]]
 
 > [!note] IV — Recurrencia
 > - [[01 - Relaciones de Recurrencia|01 — Relaciones de recurrencia]]
@@ -75,7 +75,7 @@ dg-publish: true
 
 ---
 
-## Unidad V — Grafos y Árboles *(12h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|📂 Índice]]
+## Unidad V — Grafos y Árboles *(12h)* → [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|📂 Índice]]
 
 > [!note] V — Grafos
 > - [[01 - Grafos I - Conceptos Básicos y Recorridos|01 — Grafos I]]
@@ -88,7 +88,7 @@ dg-publish: true
 
 ---
 
-## Unidad VI — Lenguajes y Autómatas *(4h)* → [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|📂 Índice]]
+## Unidad VI — Lenguajes y Autómatas *(4h)* → [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|📂 Índice]]
 
 > [!note] VI — Lenguajes y Autómatas
 > - [[01 - Máquinas de Estado Finito - Definición y Estructura|01 — Máquinas de estado finito]]
@@ -108,18 +108,18 @@ dg-publish: true
 
 ---
 
-- [[00 - Recursos Unidad 0]]
+- [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]]
 
-- [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1.md|📂 Unidad 1 - Logica y Conjuntos]]
+- [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|📂 Unidad 1 - Logica y Conjuntos]]
 
-- [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2.md|📂 Unidad 2 - Funciones y Relaciones]]
+- [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|📂 Unidad 2 - Funciones y Relaciones]]
 
-- [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3.md|📂 Unidad 3 - Números y Conteo]]
+- [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3|📂 Unidad 3 - Números y Conteo]]
 
-- [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4.md|📂 Unidad 4 - Recurrencia y Algoritmos]]
+- [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|📂 Unidad 4 - Recurrencia y Algoritmos]]
 
-- [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5.md|📂 Unidad 5 - Grafos y Árboles]]
+- [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|📂 Unidad 5 - Grafos y Árboles]]
 
-- [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6.md|📂 Unidad 6 - Lenguajes y Autómatas]]
+- [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|📂 Unidad 6 - Lenguajes y Autómatas]]
 
 **Tags:** #matematicas #discretas #ESPOL #MATG1051

@@ -286,7 +286,7 @@ Referencia rápida tomada de las diapositivas de clase (Unidad 3 — álgebra re
 >
 > - Modelo relacional y operadores: [[03 - Modelo relacional, ERM y casos Tiny College]]
 > - Normalización completa: [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
-> - Índice: [[00 - Índice Unidad 1]] · Mapa: [[Sistema de Bases de Datos]]
+> - Índice: [[00 - Índice Unidad 1]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Guía anterior: [[Guía de Problemas 1 - MC, ML y Normalización]]
 
 ## 📚 Fuente

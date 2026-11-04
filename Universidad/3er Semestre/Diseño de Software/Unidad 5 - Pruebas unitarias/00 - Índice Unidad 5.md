@@ -15,7 +15,7 @@ tags: [CCPG1042, unidad5, indice, diseno-software]
 - [[03 - Entrega continua y DevOps]]
 
 > [!quote] 🔗 Conexiones
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Anterior: [[00 - Índice Unidad 4]]
 
 ---

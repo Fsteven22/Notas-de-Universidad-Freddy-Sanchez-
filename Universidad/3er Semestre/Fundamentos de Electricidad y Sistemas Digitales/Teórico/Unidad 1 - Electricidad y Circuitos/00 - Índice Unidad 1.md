@@ -24,7 +24,7 @@ tags: [FESD, unidad1, indice, EYAG1037]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Semiconductores y Bandas de Energía]] (Unidad 2)
-> - MOC general: [[Fundamentos de Electricidad y Sistemas Digitales]]
+> - MOC general: [[../../Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---
 **Tags:** #FESD #unidad1 #indice

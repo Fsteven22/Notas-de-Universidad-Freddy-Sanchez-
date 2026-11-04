@@ -42,7 +42,7 @@ tags: [MATG1051, unidad1, indice, discretas]
 
 > [!quote] 🔗 Conexiones
 > - Siguiente unidad: [[01 - Funciones]] (Unidad 2)
-> - MOC general: [[Matemáticas Discretas]]
+> - MOC general: [[../Matemáticas Discretas|Matemáticas Discretas]]
 
 ---
 **Tags:** #MATG1051 #unidad1 #indice #discretas

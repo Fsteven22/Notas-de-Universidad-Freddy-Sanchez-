@@ -20,8 +20,8 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 - [[04 - Reading, Writing, Speaking - Emoji, Emails & Survey|04 — Emoji, emails y survey]]
 
 > [!note] Recursos adicionales (temario anterior "Different Cultures")
-> - [[Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|Índice del syllabus Different Cultures]]
-> - [[Recursos adicionales/01 - Obligation Modals (Customs)|01 — Obligation modals]] · [[Recursos adicionales/02 - Comparatives and Superlatives (Food)|02 — Comparatives]] · [[Recursos adicionales/03 - Group Discussion Strategies|03 — Discusión en grupo]] · [[Recursos adicionales/04 - Three-Paragraph Outline|04 — Outline de 3 párrafos]] · [[Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]]
+> - [[Unit 1 - Can We Talk/Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|Índice del syllabus Different Cultures]]
+> - [[Unit 1 - Can We Talk/Recursos adicionales/01 - Obligation Modals (Customs)|01 — Obligation modals]] · [[Unit 1 - Can We Talk/Recursos adicionales/02 - Comparatives and Superlatives (Food)|02 — Comparatives]] · [[Unit 1 - Can We Talk/Recursos adicionales/03 - Group Discussion Strategies|03 — Discusión en grupo]] · [[Unit 1 - Can We Talk/Recursos adicionales/04 - Three-Paragraph Outline|04 — Outline de 3 párrafos]] · [[Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]]
 
 ---
 
@@ -72,7 +72,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ## 📂 Unit 0 — Resources
 
-- 🔗 [[Unidad 0 - Guias y Ejercicios/Recursos Unidad 0|Recursos Unidad 0]] (qué es cada archivo y para qué unidad sirve)
+- 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Unidad 0|Recursos Unidad 0]] (qué es cada archivo y para qué unidad sirve)
 - 📝 [[Unit 0 - Preliminar/01 - Grammar Review - Object Pronouns & Present Continuous|Grammar Review: object pronouns & present continuous]] (visto en clase, base de reported speech)
 
 ---
@@ -82,23 +82,23 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 > [!info] 📚 Seguir estudiando
 >
 > - Syllabus completo: [[Bienvenida y Syllabus Ingles III]]
-> - Base MOOC: [[Preuniversitario/MOOC - Ingles (A1 - A2)/Inglés (A1-A2)|MOOC de ingles (A1-A2)]]
+> - Base MOOC: [[../../Preuniversitario/MOOC - Ingles (A1 - A2)/Inglés (A1-A2)|MOOC de ingles (A1-A2)]]
 > - Previo: [[Inglés II (C1-C2)]] (2do semestre)
 
 ---
 
-- [[Universidad/3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0]]
+- [[00 - Leeme Unidad 0]]
 
-- [[Unit 1 - Different Cultures/00 - Índice Unit 1.md|📂 Unit 1 - Different Cultures]]
+- [[Unit 1 - Can We Talk/00 - Índice Unit 1|📂 Unit 1 - Different Cultures]]
 
-- [[Unit 2 - Homes/00 - Índice Unit 2.md|📂 Unit 2 - Homes]]
+- [[Unit 2 - Lifestyles/00 - Índice Unit 2|📂 Unit 2 - Homes]]
 
-- [[Unit 3 - Everyday News/00 - Índice Unit 3.md|📂 Unit 3 - Everyday News]]
+- [[Unit 3 - Yes, You Can!/00 - Índice Unit 3|📂 Unit 3 - Everyday News]]
 
-- [[Unit 4 - Entertainment Media/00 - Índice Unit 4.md|📂 Unit 4 - Entertainment Media]]
+- [[Unit 4 - What If/00 - Índice Unit 4|📂 Unit 4 - Entertainment Media]]
 
-- [[Unit 5 - Past and Future Chances/00 - Índice Unit 5.md|📂 Unit 5 - Past and Future Chances]]
+- [[Unit 5 - Contrasts/00 - Índice Unit 5|📂 Unit 5 - Past and Future Chances]]
 
-- [[Unit 6 - Review/00 - Índice Unit 6.md|📂 Unit 6 - Review]]
+- [[Unit 6 - Looking Back/00 - Índice Unit 6|📂 Unit 6 - Review]]
 
 **Tags:** #english #ESPOL #IDIG1008

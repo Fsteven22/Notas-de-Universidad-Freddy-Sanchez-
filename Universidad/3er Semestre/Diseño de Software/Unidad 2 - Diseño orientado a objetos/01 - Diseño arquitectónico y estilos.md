@@ -126,7 +126,7 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 >
 > ![[../Diagramas/dsw-u2-02-02-flow.svg]]
 >
-> **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[Main.java]] en U1-04).
+> **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[../Unidad 0 - Guias y Ejercicios/Material de clase/Main.java]] en U1-04).
 >
 > 📎 Slides de clase: ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11).
 
@@ -359,10 +359,10 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Siguiente: [[02 - Diseño por componentes e interfaces]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

@@ -301,10 +301,10 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 4: [[00 - Índice Unidad 4]]
 > - Siguiente: [[02 - Catálogo esencial de Fowler, Extract Move Rename]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

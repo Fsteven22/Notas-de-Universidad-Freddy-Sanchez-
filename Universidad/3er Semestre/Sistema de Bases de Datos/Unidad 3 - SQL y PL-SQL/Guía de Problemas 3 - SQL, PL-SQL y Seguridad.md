@@ -811,7 +811,7 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 >
 > - Normalización del campo `línea` (B1): [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
 > - Operadores del álgebra que hace de fondo: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]]
-> - Índice: [[00 - Índice Unidad 3]] · Mapa: [[Sistema de Bases de Datos]]
+> - Índice: [[00 - Índice Unidad 3]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 
 ## 📚 Fuentes
 

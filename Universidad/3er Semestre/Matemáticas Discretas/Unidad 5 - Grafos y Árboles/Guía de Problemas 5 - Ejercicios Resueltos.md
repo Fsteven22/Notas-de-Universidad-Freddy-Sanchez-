@@ -398,7 +398,7 @@ dg-publish: true
 > - [[03 - Grafos III - Isomorfismo]] — estructura y comparación de grafos
 > - [[04 - Árboles I - Conceptos Básicos y Árboles de Expansión]] — BFS, DFS y árboles de expansión
 > - [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman]] — recorridos y optimización en árboles
-> - [[Universidad/3er Semestre/Matemáticas Discretas/Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5]] — volver al índice de la unidad
+> - [[00 - Índice Unidad 5]] — volver al índice de la unidad
 
 ---
 

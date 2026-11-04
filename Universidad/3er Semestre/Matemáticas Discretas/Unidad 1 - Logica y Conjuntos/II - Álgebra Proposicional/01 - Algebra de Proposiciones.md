@@ -235,7 +235,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Matemáticas Discretas]]
+> - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Base: [[01 - Proposiciones y conectivos]] · [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
 > - Siguiente: [[02 - Cuantificadores]] · [[03 - Demostraciones]]
 

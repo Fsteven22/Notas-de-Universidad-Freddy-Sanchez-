@@ -431,11 +431,11 @@ El sistema de registro académico que usa el docente: el estudiante gestiona ins
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa de contenido: [[Diseño de Software]]
+> - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[02 - Diseño por componentes e interfaces]]
 > - Siguiente: [[04 - UML casos de uso, secuencia y actividad]]
-> - Syllabus: [[Bienvenida y Syllabus Diseño de Software]]
+> - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias
 

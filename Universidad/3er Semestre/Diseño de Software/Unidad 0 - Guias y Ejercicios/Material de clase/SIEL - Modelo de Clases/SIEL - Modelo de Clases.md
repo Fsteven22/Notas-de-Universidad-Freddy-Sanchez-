@@ -175,7 +175,7 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 
 ---
 
-- Mapa de contenido: [[Diseño de Software]]
+- Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
 - Índice Unidad 2: [[00 - Índice Unidad 2]]
 - Complemento: [[SIEL - Casos de Uso]]
 - Deck oficial de la cátedra: [[../../Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] — explica la notación (elementos de clase, `+`/`#`/`-`, multiplicidad, clases de asociación, generalización) con el ejemplo de *AcademicChoice*; estas capturas son el caso **SIEL** aplicado.
