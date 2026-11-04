@@ -10,7 +10,6 @@
 ## Unidad 0 - Preliminares
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 0 - Preliminares/01 - Métricas y Espacios Métricos|01 - Métricas y Espacios Métricos]]
 > - [[../../Unidad 0 - Preliminares/02 - Puntos de Acumulación|02 - Puntos de Acumulación]]
 
@@ -18,7 +17,6 @@
 ## Unidad 01 - Límites
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 01 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]]
 > - [[../../Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites|01 - Propiedades y Teoremas de los Límites]]
 > - [[../../Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/02 - Límites Laterales|02 - Límites Laterales]]
@@ -31,7 +29,6 @@
 ## Unidad 02 – Aplicaciones de Límites
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 02 – Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]]
 > - [[../../Unidad 02 – Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones|02 - Asíntotas y Comportamiento de Funciones]]
 > - [[../../Unidad 02 – Aplicaciones de Límites/03 - Límite de la Razón de Cambio|03 - Límite de la Razón de Cambio]]
@@ -40,7 +37,6 @@
 ## Unidad 03 - Derivadas
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 03 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]]
 > - [[../../Unidad 03 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada|02 - Interpretación Geométrica de la Derivada]]
 > - [[../../Unidad 03 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad|03 - Derivabilidad y Continuidad]]
@@ -58,7 +54,6 @@
 ## Unidad 04 - Aplicaciones de la Derivada
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones|01 - Análisis Completo de Funciones]]
 > - [[../../Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/02 - Monotonía y Puntos Críticos|02 - Monotonía y Puntos Críticos]]
 > - [[../../Unidad 04 - Aplicaciones de la Derivada/I - Análisis de Funciones/03 - Concavidad y Puntos de Inflexión|03 - Concavidad y Puntos de Inflexión]]
@@ -72,7 +67,6 @@
 ## Unidad 05 - Integrales
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 05 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]]
 > - [[../../Unidad 05 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral|02 - Propiedades de la Integral]]
 > - [[../../Unidad 05 - Integrales/I - Fundamentos Teóricos/03 - Propiedades de la Sumatoria|03 - Propiedades de la Sumatoria]]
@@ -100,7 +94,6 @@
 ## Unidad 06 – Aplicaciones de la Integral
 
 > [!note] Notas de la unidad
-
 > - [[../../Unidad 06 – Aplicaciones de la Integral/I - Áreas/01 - Área bajo la Curva|01 - Área bajo la Curva]]
 > - [[../../Unidad 06 – Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas|02 - Área entre Curvas]]
 > - [[../../Unidad 06 – Aplicaciones de la Integral/I - Áreas/03 - Área entre Curvas respecto a Y|03 - Área entre Curvas respecto a Y]]

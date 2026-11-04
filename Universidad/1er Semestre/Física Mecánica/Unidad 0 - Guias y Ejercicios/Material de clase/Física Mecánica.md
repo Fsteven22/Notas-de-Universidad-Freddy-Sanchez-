@@ -10,7 +10,6 @@
 ## 01 - Cinemática
 
 > [!note] Notas de la unidad
-
 > - [[../../01 - Cinemática/Cinemática Rotacional|Cinemática Rotacional]]
 > - [[../../01 - Cinemática/Cinemática Traslacional|Cinemática Traslacional]]
 > - [[../../01 - Cinemática/Aplicaciones de Cinemática Rotacional/Problemas con Gráficas Angulares (θ-t, ω-t, α-t)|Problemas con Gráficas Angulares (θ-t, ω-t, α-t)]]
@@ -27,7 +26,6 @@
 ## 02 - Dinámica
 
 > [!note] Notas de la unidad
-
 > - [[../../02 - Dinámica/Aplicaciones de Dinámica de Rotación/Problemas de Cuerpos Rígidos en Sistemas con Poleas|Problemas de Cuerpos Rígidos en Sistemas con Poleas]]
 > - [[../../02 - Dinámica/Aplicaciones de Dinámica de Rotación/Problemas de Cálculo de Momento de Inercia|Problemas de Cálculo de Momento de Inercia]]
 > - [[../../02 - Dinámica/Aplicaciones de Dinámica de Rotación/Problemas de Rodadura sin deslizamiento|Problemas de Rodadura sin deslizamiento]]
@@ -52,7 +50,6 @@
 ## 03 - Trabajo y Energía
 
 > [!note] Notas de la unidad
-
 > - [[../../03 - Trabajo y Energía/Diagramas de Energía|Diagramas de Energía]]
 > - [[../../03 - Trabajo y Energía/Potencia y Gradiente de Potencial|Potencia y Gradiente de Potencial]]
 > - [[../../03 - Trabajo y Energía/Principio de energía|Principio de energía]]
@@ -67,7 +64,6 @@
 ## 04 - Impulso y Colisiones (Lineal)
 
 > [!note] Notas de la unidad
-
 > - [[../../04 - Impulso y Colisiones (Lineal)/Centro de masa (CM)|Centro de masa (CM)]]
 > - [[../../04 - Impulso y Colisiones (Lineal)/Choques Uni-Bidimensionales|Choques Uni-Bidimensionales]]
 > - [[../../04 - Impulso y Colisiones (Lineal)/Impulso Lineal|Impulso Lineal]]
@@ -82,7 +78,6 @@
 ## 05 - Equilibrio y Elasticidad
 
 > [!note] Notas de la unidad
-
 > - [[../../05 - Equilibrio y Elasticidad/Centro de Gravedad (CG)|Centro de Gravedad (CG)]]
 > - [[../../05 - Equilibrio y Elasticidad/Elasticidad|Elasticidad]]
 > - [[../../05 - Equilibrio y Elasticidad/Equilibrio|Equilibrio]]
@@ -100,7 +95,6 @@
 ## 06 - Hidrostática e Hidrodinámica
 
 > [!note] Notas de la unidad
-
 > - [[../../06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Bernoulli|Problemas de Ecuación de Bernoulli]]
 > - [[../../06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Ecuación de Continuidad|Problemas de Ecuación de Continuidad]]
 > - [[../../06 - Hidrostática e Hidrodinámica/Aplicaciones de Hidrodinámica/Problemas de Flotabilidad y Empuje en Fluidos en Movimiento|Problemas de Flotabilidad y Empuje en Fluidos en Movimiento]]
@@ -126,7 +120,6 @@
 ## Fundamentos de Física Mecánica
 
 > [!note] Notas de la unidad
-
 > - [[../../Fundamentos de Física Mecánica/Conocimientos Previos a las Prácticas|Conocimientos Previos a las Prácticas]]
 > - [[../../Fundamentos de Física Mecánica/Unidades y Magnitudes Físicas|Unidades y Magnitudes Físicas]]
 > - [[../../Fundamentos de Física Mecánica/Vectores|Vectores]]
@@ -135,7 +128,6 @@
 ## Practicas De Laboratorio
 
 > [!note] Notas de la unidad
-
 > - [[../../Practicas De Laboratorio/Practica de Velocidad Instantánea|Practica de Velocidad Instantánea]]
 > - [[../../Practicas De Laboratorio/Práctica Segunda ley de Newton|Práctica Segunda ley de Newton]]
 > - [[../../Practicas De Laboratorio/Práctica de Caída Libre|Práctica de Caída Libre]]
