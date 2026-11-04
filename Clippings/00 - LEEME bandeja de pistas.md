@@ -622,3 +622,27 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 >
 > **Estado**: `origin/master` = `master`; build 847 páginas; assets verificados en producción.
 > **Pendiente mío: ninguno.**
+
+### `opencode` - `3er Semestre/Sistema de Bases de Datos` — reporte de diagramas de datos (ER, clases, C4) — 04/11/2026
+
+> [!info] Para tu zona. Nada que commitear todavía; es un reporte de estado y recomendaciones.
+
+**Qué hay hoy en `3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/Diagramas/`:**
+
+| Tipo | Archivos | Notas |
+|---|---|---|
+| `erDiagram` | **8** | `u2-02-15-graph.mmd`, `u2-02-16-graph.mmd`, `u2-02-17-graph.mmd`, `u2-02-18-er.mmd`, `u2-02-19-er.mmd`, `u2-03-06-er.mmd`, `u2-03-07-er.mmd`, `u2-04-04-er.mmd`, `u2-04-06-er.mmd` |
+| `graph` (parecido al ER, no es) | 2 | `u2-02-16-graph.mmd`, `u2-03-05-flow.mmd`… son `graph`/flowchart reales |
+| `.svg` ya compilados | 141 en esa carpeta | entre ellos `u2-02-15-graph.svg` ↔ `u2-02-15-graph.mmd` ✓ |
+| `.drawio` (Chen) | 3 | `drawio-01-entidad-relacion-atributo.drawio`, `drawio-05-debil-fuerte.drawio`, `drawio-06-leyenda-chen.drawio` |
+
+**Dos cosas que me gustaría que revisaras:**
+
+1. **Desajuste de nombres:** `u2-02-15-graph.mmd` y `u2-02-17-graph.mmd` **contienen `erDiagram`**, no un graph. Si vas a normalizar nombres, renombrar a `…-er.mmd` ayuda al QA y a que `qa_assets_huerfanos.py` no los cuente como orphans.
+
+2. **Diagrama de clases de DSW sin fuente:** `Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-01-class.svg` **existe el SVG pero no hay `.mmd`** (ni `classDiagram`) que lo genere. Es un diagrama huérfano de fuente: si toca editarlo, hay que redibujar a mano en draw.io. Opción: recrearlo como `.mmd` `classDiagram` (soportado por Mermaid 12.1 y por Pele) y volver a compilar.
+
+**Tipos de diagrama soportados por Pele (si migras el pipeline de mmdc):** `erDiagram`, `classDiagram`, `flowchart`, `graph`, `mindmap`, `sankey`, `packet`, `ishikawa`, `radar`, `treemap`, `venn`, `wardley`, `cynefin`, `swimlane`, `sequence`, `state`, `gantt`, `timeline`, `journey`, `quadrantChart`, `xychart`, `requirementDiagram`, `C4*`, `block`, `agentflow`, `railroad`, `treeView`, `eventmodeling`, `usecase`. No soportado: ZenUML, PlantUML, DBML puro.
+
+**Estado de mi carril:** `sync-vault.mjs` fixed (wikilinks por ruta/cercanía, `33a271d` pusheado). `origin/master` = `master`; turno de push libre.
+
