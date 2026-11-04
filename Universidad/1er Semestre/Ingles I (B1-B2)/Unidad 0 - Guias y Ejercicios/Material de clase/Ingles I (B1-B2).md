@@ -11,62 +11,62 @@
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 10 - Why we buy/00 - Índice.md|00 - Índice]]
-> - [[../Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution.md|01 - Vocabulary & Use - Materials + Production & Distribution]]
-> - [[../Unit 10 - Why we buy/02 - Grammar & Examples - Passive Voice (Present + Past).md|02 - Grammar & Examples - Passive Voice (Present + Past)]]
-> - [[../Unit 10 - Why we buy/03 - Functional Language & Pronunciation.md|03 - Functional Language & Pronunciation]]
-> - [[../Unit 10 - Why we buy/04 - Reading, Writing, Speaking - Why We Buy.md|04 - Reading, Writing, Speaking - Why We Buy]]
+> - [[../../Unit 10 - Why we buy/00 - Índice]]
+> - [[../../Unit 10 - Why we buy/01 - Vocabulary & Use - Materials + Production & Distribution]]
+> - [[../../Unit 10 - Why we buy/02 - Grammar & Examples - Passive Voice (Present + Past)]]
+> - [[../../Unit 10 - Why we buy/03 - Functional Language & Pronunciation]]
+> - [[../../Unit 10 - Why we buy/04 - Reading, Writing, Speaking - Why We Buy]]
 
 
 ## Unit 11 - Pushing Yourself
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 11 - Pushing Yourself/00 - Índice.md|00 - Índice]]
-> - [[../Unit 11 - Pushing Yourself/01 - Vocabulary & Use - Succeeding + Opportunities & Risks.md|01 - Vocabulary & Use - Succeeding + Opportunities & Risks]]
-> - [[../Unit 11 - Pushing Yourself/02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals.md|02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
-> - [[../Unit 11 - Pushing Yourself/03 - Functional Language & Pronunciation.md|03 - Functional Language & Pronunciation]]
-> - [[../Unit 11 - Pushing Yourself/04 - Reading, Writing, Speaking - Pushing Yourself.md|04 - Reading, Writing, Speaking - Pushing Yourself]]
+> - [[../../Unit 11 - Pushing Yourself/00 - Índice]]
+> - [[../../Unit 11 - Pushing Yourself/01 - Vocabulary & Use - Succeeding + Opportunities & Risks]]
+> - [[../../Unit 11 - Pushing Yourself/02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
+> - [[../../Unit 11 - Pushing Yourself/03 - Functional Language & Pronunciation]]
+> - [[../../Unit 11 - Pushing Yourself/04 - Reading, Writing, Speaking - Pushing Yourself]]
 
 
 ## Unit 12 – Life’s Little Lessons
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 12 – Life’s Little Lessons/00 - Índice.md|00 - Índice]]
-> - [[../Unit 12 – Life’s Little Lessons/01 - Vocabulary & Use - Succeeding + Opportunities & Risks.md|01 - Vocabulary & Use - Succeeding + Opportunities & Risks]]
-> - [[../Unit 12 – Life’s Little Lessons/02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals.md|02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
-> - [[../Unit 12 – Life’s Little Lessons/03 - Functional Language & Pronunciation.md|03 - Functional Language & Pronunciation]]
-> - [[../Unit 12 – Life’s Little Lessons/04 - Reading, Writing, Speaking - Pushing Yourself.md|04 - Reading, Writing, Speaking - Pushing Yourself]]
+> - [[../../Unit 12 – Life’s Little Lessons/00 - Índice]]
+> - [[../../Unit 12 – Life’s Little Lessons/01 - Vocabulary & Use - Succeeding + Opportunities & Risks]]
+> - [[../../Unit 12 – Life’s Little Lessons/02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
+> - [[../../Unit 12 – Life’s Little Lessons/03 - Functional Language & Pronunciation]]
+> - [[../../Unit 12 – Life’s Little Lessons/04 - Reading, Writing, Speaking - Pushing Yourself]]
 
 
 ## Unit 7- Entertain us
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 7- Entertain us/Grammar – Used to - Comparisons (not) as...as.md|Grammar – Used to - Comparisons (not) as...as]]
-> - [[../Unit 7- Entertain us/Vocabulary – Music, TV & Movies.md|Vocabulary – Music, TV & Movies]]
+> - [[../../Unit 7- Entertain us/Grammar – Used to - Comparisons (not) as...as]]
+> - [[../../Unit 7- Entertain us/Vocabulary – Music, TV & Movies]]
 
 
 ## Unit 8 - Getting there
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 8 - Getting there/Grammar – Present Perfect vs Present Perfect Continuous.md|Grammar – Present Perfect vs Present Perfect Continuous]]
-> - [[../Unit 8 - Getting there/Vocabulary – Experiences & Progress.md|Vocabulary – Experiences & Progress]]
+> - [[../../Unit 8 - Getting there/Grammar – Present Perfect vs Present Perfect Continuous]]
+> - [[../../Unit 8 - Getting there/Vocabulary – Experiences & Progress]]
 
 
 ## Unit 9 - Make It work
 
 > [!note] Notas de la unidad
 
-> - [[../Unit 9 - Make It work/Grammar – Modals of Necessity & Modals of Prohibition-Permission.md|Grammar – Modals of Necessity & Modals of Prohibition-Permission]]
-> - [[../Unit 9 - Make It work/Vocabulary – College Subjects & Employment.md|Vocabulary – College Subjects & Employment]]
+> - [[../../Unit 9 - Make It work/Grammar – Modals of Necessity & Modals of Prohibition-Permission]]
+> - [[../../Unit 9 - Make It work/Vocabulary – College Subjects & Employment]]
 
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
-- [[Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+- [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
 
 ---
 
