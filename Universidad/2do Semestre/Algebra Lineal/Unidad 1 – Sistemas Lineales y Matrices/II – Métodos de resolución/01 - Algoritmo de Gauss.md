@@ -1200,7 +1200,7 @@ dg-publish: true
 > 
 > - [[07 - Rango de una Matriz]] - Cálculo mediante forma escalonada
 > - [[02 - Teorema de Rouché-Frobenius#📐 Método 1: Reducción por Filas (Gauss-Jordan)]] - Extensión a forma escalonada reducida
-> - [[01 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
+> - [[02 - Formas Indeterminadas]] - Descomposición relacionada con Gauss
 
 > - Método de Gauss-Jordan - Extensión a forma escalonada reducida
 > - Factorización LU - Descomposición relacionada con Gauss
@@ -1219,7 +1219,7 @@ dg-publish: true
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-> - [[Constante de integración#Circuitos Eléctricos|Circuitos Eléctricos]] - Análisis de redes
+> - [[03 - Constante de integración#Circuitos Eléctricos|Circuitos Eléctricos]] - Análisis de redes
 > - Análisis Estructural - Sistemas de fuerzas
 > - Regresión Lineal - Estimación de parámetros
 > - Procesamiento de Imágenes - Transformaciones lineales

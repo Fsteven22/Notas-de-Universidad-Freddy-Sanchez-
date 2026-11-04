@@ -1068,7 +1068,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[03 – Funciones vectoriales#Curvas Parametrizadas|Curvas Parametrizadas]] - Representación de curvas
-> - [[Constante de integración#Cinemática|Cinemática]] - Movimiento de partículas
+> - [[03 - Constante de integración#Cinemática|Cinemática]] - Movimiento de partículas
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Curvatura y torsión
 > 
 > **Aplicaciones:**

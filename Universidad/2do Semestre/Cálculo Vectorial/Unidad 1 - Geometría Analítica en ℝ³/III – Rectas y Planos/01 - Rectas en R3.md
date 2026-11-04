@@ -1114,7 +1114,7 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> - [[Constante de integración#Cinemática|Cinemática]] - Trayectorias rectilíneas
+> - [[03 - Constante de integración#Cinemática|Cinemática]] - Trayectorias rectilíneas
 > - Óptica Geométrica - Rayos de luz
 > - [[01 - Superficies cuadráticas#Computación Gráfica|Computación Gráfica]] - Ray tracing
 

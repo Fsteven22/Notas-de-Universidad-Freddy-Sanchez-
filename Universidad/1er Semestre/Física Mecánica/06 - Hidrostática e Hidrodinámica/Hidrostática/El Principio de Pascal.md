@@ -148,7 +148,7 @@ dg-publish: true
 > [!info]+ Prerrequisitos
 > 
 > - Conceptos de Presión
-> - [[1er Semestre/Cálculo de una Variable/Unidad 01 - Límites/II - Propiedades y Técnicas Básicas/01 - Propiedades y Teoremas de los Límites.md]]
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md]]
 > - Estática de Fluidos
 > - Unidades de Presión
 >

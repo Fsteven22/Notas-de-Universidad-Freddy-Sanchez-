@@ -2,7 +2,7 @@
 dg-publish: true
 ---
 
-# 🔄 Cambio de Variable en Integrales
+# 🔄 01 - Cambio de Variable en Integrales
 
 > [!tip] 💡 Concepto Clave El cambio de variable (sustitución) es una técnica fundamental que transforma una integral compleja en una más simple mediante la sustitución de una expresión por una nueva variable.
 

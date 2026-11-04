@@ -1726,7 +1726,7 @@ dg-publish: true
 > 
 > - Conjuntos y Lógica - Teoría básica de conjuntos
 > - [[01 - Límites al Infinito y Sucesiones#Límites de Sucesiones 📊]] - Convergencia
-> - [[01 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
+> - [[02 - Propiedades y Teoremas de los Límites#Funciones Continuas|Funciones Continuas]] - Continuidad
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Distancias
 > 
 > **Temas relacionados:**
@@ -1741,7 +1741,7 @@ dg-publish: true
 > - [[01 - Polinomios de Taylor#Optimización|Optimización]] - Compacidad garantiza extremos
 > - Ecuaciones Diferenciales - Existencia y unicidad
 > - Teoría de la Medida - Conjuntos medibles
-> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
+> - [[03 - Constante de integración#Análisis Funcional|Análisis Funcional]] - Espacios de Banach
 > 
 > **Temas avanzados:**
 > 

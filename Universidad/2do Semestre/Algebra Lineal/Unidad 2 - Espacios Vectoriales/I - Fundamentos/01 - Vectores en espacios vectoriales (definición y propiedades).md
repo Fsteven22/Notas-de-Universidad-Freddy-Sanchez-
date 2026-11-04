@@ -1235,7 +1235,7 @@ dg-publish: true
 > **Aplicaciones posteriores:**
 > 
 > - Ecuaciones diferenciales - Espacios de soluciones
-> - [[Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
+> - [[03 - Constante de integración#Análisis Funcional|Análisis funcional]] - Espacios infinito-dimensionales
 > - [[01 - Longitud de Curva#Análisis Numérico|Análisis numérico]] - Métodos computacionales
 > - [[Machine Learning]] - Espacios de características
 > - [[08 – Teorema espectral#Mecánica Cuántica|Mecánica cuántica]] - Estados cuánticos

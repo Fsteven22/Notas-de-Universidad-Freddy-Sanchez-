@@ -88,7 +88,7 @@
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/02 - Criterios de Convergencia y Divergencia.md|Criterios de Convergencia y Divergencia]]
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md|Teoremas de Comparación y Desigualdades]]
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/04 - Asíntotas en Integrales Definidas.md|Asíntotas en Integrales Definidas]]
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md|Cambio de Variable en Integrales]]
+> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md|01 - Cambio de Variable en Integrales]]
 > - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes.md|Integración por Partes]]
 > - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas.md|Integrales Trigonométricas]]
 > - [[Unidad 6 - Integrales/Técnicas de Integración/04 - Integrales de Funciones Inversas.md|Integrales de Funciones Inversas]]

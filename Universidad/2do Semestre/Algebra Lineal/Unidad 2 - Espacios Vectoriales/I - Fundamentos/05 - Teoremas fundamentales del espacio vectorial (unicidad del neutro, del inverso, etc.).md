@@ -1328,7 +1328,7 @@ dg-publish: true
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3]] - Resolución formal
 > - [[04 - Determinantes]] - Propiedades algebraicas
 > - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/IV – Transformaciones Lineales/05 – Espacios isomorfos.md]] - Estructura adicional
-> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Extensión infinita
+> - [[03 - Constante de integración#Análisis Funcional|Análisis Funcional]] - Extensión infinita
 
 ## 📖 Referencias Históricas
 

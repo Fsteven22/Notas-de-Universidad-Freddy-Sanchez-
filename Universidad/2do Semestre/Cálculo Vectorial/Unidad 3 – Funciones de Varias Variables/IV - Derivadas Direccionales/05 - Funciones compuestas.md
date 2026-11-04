@@ -2258,14 +2258,14 @@ dg-publish: true
 > - Backpropagation en Redes Neuronales - Algoritmo de entrenamiento
 > - Optimización con Gradiente Descendente - Minimización de funciones
 > - Dinámica de Sistemas - Ecuaciones diferenciales acopladas
-> - [[Cambio de Variable en Integrales]] - Teorema del cambio de variable
+> - [[01 - Cambio de Variable en Integrales]] - Teorema del cambio de variable
 > 
 > **🌐 Temas relacionados:**
 > 
 > - Formas Diferenciales - Generalización geométrica
 > - [[2do Semestre/Cálculo Vectorial/Unidad 0 - Guias y Ejercicios/Material de clase/Cálculo Vectorial.md]] - Derivadas en variedades
 > - Automatic Differentiation - Implementación computacional
-> - [[Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
+> - [[03 - Constante de integración#Análisis Funcional|Análisis Funcional]] - Derivadas de Fréchet
 > 
 > ## 📖 Tabla Resumen
 > 
