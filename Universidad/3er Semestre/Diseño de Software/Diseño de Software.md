@@ -37,6 +37,8 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 - [[01 - Qué es un patrón y encapsular lo que varía]]
 - [[02 - Patrones esenciales I, Strategy Decorator Observer]]
 - [[03 - Patrones esenciales II, creación y estructura]]
+- 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — capturas de pizarra de la clase
+
 
 ---
 
@@ -59,6 +61,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 - 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
 - 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
+- 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] (PDF de las capturas de pizarra)
 - 📽️ Decks de cátedra en `Unidad 0 - Guias y Ejercicios/Diapositivas/`: diseño de software, paradigmas, MVC/SOLID, [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|UML: casos de uso, clases y secuencia]] y [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|implementación desde el diseño]].
 - 📚 Syllabus en `Unidad 0 - Guias y Ejercicios/Material de clase/`, políticas y decks en `Unidad 0 - Guias y Ejercicios/Diapositivas/`, 5 libros de apoyo en `Unidad 0 - Guias y Ejercicios/Guías/`, exámenes en `Unidad 0 - Guias y Ejercicios/Exámenes/` y material suelto en `Unidad 0 - Guias y Ejercicios/Material de clase/`.
 

@@ -33,6 +33,7 @@ tags: [unidad0, indice, recursos]
 
 > [!note] 🖼️ Recursos visuales
 > [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos visuales|Recursos visuales]] — capturas y diagramas del material de clase (casos de uso y modelo de clases de SIEL).
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — las capturas de pizarra de patrones creacionales, reunidas en un PDF con portada, índice y paginación
 
 ## 📥 Pendiente de cargar
 
@@ -60,6 +61,11 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04aLenguajeUnificadoModelado]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04bImplementaciónDesdeDiseno]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/Diagrama de secuencia.pdf|Diagrama de secuencia]]
+
+> [!info] 📁 Material de clase
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — PDF de las capturas de pizarra
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL — Casos de Uso]]
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
 
 > [!info] 📁 Exámenes
 > - [[Unidad 0 - Guias y Ejercicios/Exámenes/2023_2PAO_Examen_Parcial_CCPG1042.pdf|2023 2PAO Examen Parcial CCPG1042]]
