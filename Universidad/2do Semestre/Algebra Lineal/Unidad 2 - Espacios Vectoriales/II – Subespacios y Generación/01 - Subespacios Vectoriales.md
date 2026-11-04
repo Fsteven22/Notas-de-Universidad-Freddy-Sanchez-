@@ -86,13 +86,13 @@ dg-publish: true
 > ```
 >       y
 >       |
->       |  / â† Recta por el origen (subespacio 1D)
+>       |  / → Recta por el origen (subespacio 1D)
 >       | /
 >       |/
 >   ----+---- x
 >      /|
 >     / |
->        â†' Otra recta por el origen
+>        → Otra recta por el origen
 > ```
 > 
 > **Subespacios de $\mathbb{R}^2$:**
@@ -1369,7 +1369,7 @@ dg-publish: true
 > 
 >       y
 >       |  /
->       | /  â† W = span{v}
+>       | /  → W = span{v}
 >       |/
 >   ----•---- x
 >      /|
@@ -1419,7 +1419,7 @@ dg-publish: true
 >         z
 >         |
 >      P₁ |\ /P₂
->         | X  â† P₁ ∩ P₂ = recta
+>         | X  → P₁ ∩ P₂ = recta
 >         |/ \
 >   ------+------ y
 >        /|

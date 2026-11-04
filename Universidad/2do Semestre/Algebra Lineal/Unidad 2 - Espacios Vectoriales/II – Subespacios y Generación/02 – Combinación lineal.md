@@ -77,8 +77,8 @@ dg-publish: true
 >       | /  | c₂v₂
 >       |/   |
 >   ----•----+---- x
->      /  câ‚vâ‚
->     /vâ‚
+>      /  c₁v₁
+>     /v₁
 > ```
 > 
 > - **Paso 1:** Escalar $\vec{v}_1$ por $c_1$ → vector $c_1\vec{v}_1$
@@ -651,7 +651,7 @@ dg-publish: true
 > **Problema:** Una fuerza $\vec{F}$ actúa sobre un objeto en un plano inclinado.
 > 
 > ```
->         â†' F (fuerza aplicada)
+>         → F (fuerza aplicada)
 >        /|
 >       / |
 >      /  |
@@ -824,11 +824,11 @@ dg-publish: true
 > ```
 >       v₂
 >        •
->       /â– \
->      / â– â–  \
->     /  â– â– â–  \
->    •â€"â€"â€"â€"â€"•
->   vâ‚       v₃
+>       /▓ \
+>      / ▓ ▓  \
+>     /  ▓ ▓ ▓  \
+>    •—————•
+>   v₁       v₃
 > ```
 > 
 > Todas las combinaciones convexas llenan el triángulo sombreado.
@@ -1354,11 +1354,7 @@ dg-publish: true
 > - **Bases** - Generan todo el espacio mediante combinaciones lineales
 > - **Coordenadas** - Coeficientes de combinación lineal en una base
 > 
-<<<<<<< HEAD
-> **Siguiente tema recomendado:** 09 - Independencia Lineal y Dependencia
-=======
 > **Siguiente tema recomendado:** [[01 – Dependencia e independencia lineal]]
->>>>>>> origin/master
 
 ---
 
@@ -1579,7 +1575,7 @@ dg-publish: true
 >    /  | /    /
 >   /   |/    /
 >  •----•----+---- x
->  vâ‚    2vâ‚
+>  v₁    2v₁
 > 
 > Construcción paso a paso:
 > 1. Escala v₁ por 2
@@ -1594,10 +1590,10 @@ dg-publish: true
 > ```
 >       y
 >       |
->       |  / v₂ = 2vâ‚
+>       |  / v₂ = 2v₁
 >       | /
 >       |/
->       • vâ‚
+>       • v₁
 >      /|
 >     / |
 >    /  +---- x
@@ -1632,12 +1628,12 @@ dg-publish: true
 > ```
 >       v₂
 >        •
->       /â– â– \
->      / â– â– â–  \
->     /  â– â– â–  \
->    /   â– â– â–   \
->   •â€"â€"â€"▲â€"â€"â€"•
->  vâ‚    w    v₃
+>       /▓ ▓ \
+>      / ▓ ▓ ▓  \
+>     /  ▓ ▓ ▓  \
+>    /   ▓ ▓ ▓   \
+>   •———▲———•
+>  v₁    w    v₃
 > 
 > Triángulo relleno = todas las
 > combinaciones convexas de v₁, v₂, v₃

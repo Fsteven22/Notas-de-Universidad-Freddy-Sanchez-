@@ -76,9 +76,9 @@ tags: [IDIG2012, unidad0, recursos]
 
 - [[Concordancia y cohesión.pdf|Concordancia y cohesión]]
 - [[Escucha Activa Parte 1.pdf|Escucha Activa Parte 1]]
-- [[Escucha Activa Parte 1_OCR.pdf|Escucha Activa Parte 1 OCR]]
+- Escucha Activa Parte 1 OCR (PDF con copyright: material de lectura local, no se publica ni se committea)
 - [[Escucha Activa Parte 2.pdf|Escucha Activa Parte 2]]
-- [[Escucha Activa Parte 2_OCR.pdf|Escucha Activa Parte 2 OCR]]
+- Escucha Activa Parte 2 OCR (PDF con copyright: material de lectura local, no se publica ni se committea)
 - [[Precisión y claridad en la redacción.pdf|Precisión y claridad en la redacción]]
 - [[Taller Normas APA Básico.pdf|Taller Normas APA Básico]]
 

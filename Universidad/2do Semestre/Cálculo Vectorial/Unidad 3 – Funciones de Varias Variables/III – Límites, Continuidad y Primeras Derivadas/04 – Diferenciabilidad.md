@@ -58,9 +58,9 @@ dg-publish: true
 >     y
 >     |
 >     |    /  f(x)
->     |   / â— 
+>     |   / ● 
 >     |  /  /
->     | â—----- Recta tangente: y = f(a) + f'(a)(x-a)
+>     | ●----- Recta tangente: y = f(a) + f'(a)(x-a)
 >     |/
 >     +-------- x
 >         a
@@ -298,8 +298,8 @@ dg-publish: true
 >           |     /|\  Superficie z = f(x,y)
 >           |    / | \
 >           |   /  |  \
->           |  /   â— P(x₀,y₀,z₀)
->           | /___/|\___\  â† Plano tangente
+>           |  /   ● P(x₀,y₀,z₀)
+>           | /___/|\___\  → Plano tangente
 >           |/   / | \   \
 >           +---+--+--+--- y
 >          /   /   |   \
