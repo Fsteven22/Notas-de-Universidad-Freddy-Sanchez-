@@ -775,15 +775,9 @@ dg-publish: true
 > **Temas directamente relacionados:**
 > 
 > - [[06 - Matriz Inversa]] - Representación matricial
-<<<<<<< HEAD
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]] - Isomorfismos coordenados
-> - 07 - Espacios cociente - Primer teorema de isomorfismo
-> - 19 - Núcleo e Imagen - Caracterización
-=======
 > - [[04 – Matriz de cambio de base]] - Isomorfismos coordenados
 > - 07 - Espacios cociente - Primer teorema de isomorfismo
 > - [[02 – Núcleo e imagen de una transformación lineal]] - Caracterización
->>>>>>> origin/master
 > 
 > **Aplicaciones posteriores:**
 > 

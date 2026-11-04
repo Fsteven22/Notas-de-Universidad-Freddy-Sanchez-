@@ -1631,15 +1631,9 @@ $$\boxed{\left[\begin{bmatrix} 4 \ 3 \ 2 \end{bmatrix}\right]_{\mathcal{B}} = \b
 > 
 > - **[[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/III – Dependencia, Base y Coordenadas/04 – Matriz de cambio de base.md]]** - Matrices de transición entre bases
 > - **[[01 – Transformaciones lineales]]** - Representación matricial
-<<<<<<< HEAD
-> - **17 - Núcleo e Imagen** - Coordenadas de ker y im
-> - **20 - Isomorfismos** - Equivalencia de espacios vectoriales
-> - **22 - Eigenvalores y Eigenvectores** - Bases especiales
-=======
 > - **[[02 – Núcleo e imagen de una transformación lineal]]** - Coordenadas de ker y im
 > - **20 - Isomorfismos** - Equivalencia de espacios vectoriales
 > - **22 - Eigenvalores y Eigenvectores** - Bases especiales
->>>>>>> origin/master
 > 
 > ### Temas relacionados:
 > 

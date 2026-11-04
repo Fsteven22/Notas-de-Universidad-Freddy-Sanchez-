@@ -602,11 +602,7 @@ dg-publish: true
 > 
 > **Aplicaciones Avanzadas:**
 > 
-<<<<<<< HEAD
-> - Machine Learning - Preprocessing - Preparación de datos para ML
-=======
 > - [[Machine Learning]] - Preparación de datos para ML
->>>>>>> origin/master
 > - Time Series Analysis - Análisis temporal especializado
 > - SQL - Bases de Datos - Integración con sistemas de datos
 > 

@@ -1114,11 +1114,7 @@ dg-publish: true
 > **Temas avanzados:**
 > 
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría diferencial]] - Curvaturas principales
-<<<<<<< HEAD
-> - Topología - Clasificación de superficies
-=======
 > - [[01 - Nociones topológicas en Rⁿ]] - Clasificación de superficies
->>>>>>> origin/master
 > - [[Álgebra Lineal]] - Diagonalización de formas cuadráticas
 > - Geometría Proyectiva - Teoremas de Desargues y Pascal
 

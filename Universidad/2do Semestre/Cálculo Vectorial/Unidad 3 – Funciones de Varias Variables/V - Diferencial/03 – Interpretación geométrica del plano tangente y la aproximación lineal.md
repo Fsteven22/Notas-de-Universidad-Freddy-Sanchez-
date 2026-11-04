@@ -1202,15 +1202,9 @@ dg-publish: true
 > **Conexiones interdisciplinarias:**
 > 
 > - [[02 - Superficies cilíndricas#Mecánica de Fluidos|Mecánica de Fluidos]] - Campos de velocidad
-<<<<<<< HEAD
-> - Termodinámica - Funciones de estado
-> - Economía Matemática - Funciones de utilidad
-> - [[Machine Learning#Machine Learning - Aprendizaje Automático 🤖]] - Gradiente descendente
-=======
 > - Termodinámica - Funciones de estado
 > - Economía Matemática - Funciones de utilidad
 > - [[Machine Learning]] - Gradiente descendente
->>>>>>> origin/master
 
 ---
 

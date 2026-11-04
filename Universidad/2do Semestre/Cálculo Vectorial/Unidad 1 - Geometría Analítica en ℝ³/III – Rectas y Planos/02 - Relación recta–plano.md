@@ -1109,17 +1109,10 @@ dg-publish: true
 > 
 > **Aplicaciones interdisciplinarias:**
 > 
-<<<<<<< HEAD
-> - Ray Tracing - Computación gráfica
-> - Óptica Geométrica - Reflexión y refracción
-> - Mecánica Clásica - Planos inclinados
-> - Navegación 3D - Sistemas de coordenadas
-=======
 > - Ray Tracing - Computación gráfica
 > - Óptica Geométrica - Reflexión y refracción
 > - Mecánica Clásica - Planos inclinados
 > - [[Velocidad Relativa para Barcos y Aviones]] - Sistemas de coordenadas
->>>>>>> origin/master
 
 ## 💡 Consejos de Estudio
 

@@ -1318,11 +1318,7 @@ dg-publish: true
 > **Temas relacionados:**
 > 
 > - [[02 - Espacio Vectorial]] - Definición axiomática
-<<<<<<< HEAD
-> - [[2do Semestre/Algebra Lineal/Unidad 2 - Espacios Vectoriales/II – Subespacios y Generación/04 – Suma de subespacios.md]] - Heredan propiedades
-=======
 > - [[01 - Subespacios Vectoriales]] - Heredan propiedades
->>>>>>> origin/master
 > - [[01 – Transformaciones lineales]] - Preservan estructura
 > - [[01 - Sistema de ecuaciones lineales en R2 y R3#Independencia Lineal|Independencia Lineal]] - Usa estos teoremas
 > 

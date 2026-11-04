@@ -710,11 +710,7 @@ dg-publish: true
 > - [[Cálculo Vectorial]] - Gradientes y direcciones
 > - [[01 - Longitud de Curva#Geometría Diferencial|Geometría Diferencial]] - Métricas en variedades
 > - [[01 - Métricas y Espacios Métricos#Espacios Métricos|Espacios Métricos]] - Generalización abstracta
-<<<<<<< HEAD
-> - Topología - Bolas abiertas y cerradas
-=======
 > - [[01 - Nociones topológicas en Rⁿ]] - Bolas abiertas y cerradas
->>>>>>> origin/master
 > 
 > **Aplicaciones interdisciplinarias:**
 > 

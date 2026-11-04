@@ -2746,13 +2746,8 @@ dg-publish: true
 > - [[02 - Regla de la Cadena]] - Composición con derivadas direccionales
 > - [[02 - Optimización con Restricciones]] - Condiciones de primer orden
 > - [[01 - Multiplicaciones de Lagrange]] - Optimización con restricciones
-<<<<<<< HEAD
-> - 14 - Teorema de Taylor - Aproximaciones de orden superior
-> - 15 - Campos Vectoriales - Gradiente como campo vectorial
-=======
 > - [[01 - Polinomios de Taylor]] - Aproximaciones de orden superior
 > - [[01 – Campos vectoriales - divergencia y rotacional]] - Gradiente como campo vectorial
->>>>>>> origin/master
 > 
 > **Conceptos relacionados:**
 > 
