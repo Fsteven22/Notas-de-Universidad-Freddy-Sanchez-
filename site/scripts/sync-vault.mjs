@@ -219,7 +219,20 @@ async function main() {
   }
   semMap.set(RAIZ.id, { ...RAIZ, materias: [] });
 
-  const linkMap = new Map(); // título de nota → url
+  // Resolución de wikilinks (bug reportado por `opencode-nube` en el LEEME):
+  // antes se indexaba solo por basename y las notas homónimas se pisaban
+  // (`00 - Índice`, `00 - Leeme Unidad 0`, `03 - Functional Language…`), así
+  // que la web podía enlazar a la materia/unidad equivocada aunque Obsidian
+  // resolviera bien. Ahora:
+  //   · porRuta    ruta del vault (y todos sus sufijos) → nota. Manda sobre basename.
+  //   · porNombre  basename → nota o lista de homónimas.
+  //   · porTitulo  título "bonito" (sin numeración) → nota o lista.
+  //   · origen     nota generada → ruta de origen, para desempatar por cercanía
+  //                (Obsidian enlaza a la nota más próxima a la actual).
+  const porRuta = new Map();
+  const porNombre = new Map();
+  const porTitulo = new Map();
+  const origen = new Map();
   const assetMaps = new Map(); // "sem/mat" y "sem/*" y "raiz" → Map(base→assetUrl)
 
   // ── 1a. reglas de publicación de assets:
@@ -366,8 +379,16 @@ async function main() {
       };
       materia.notas.push(noteEntry);
       notas.push({ ...noteEntry, sem: sem.id, semTitle: sem.title, mat: matId, matTitle: subjectName });
-      linkMap.set(fileName.replace(/\.md$/i, ""), noteEntry.file);
-      linkMap.set(title.toLowerCase(), noteEntry.file);
+      registrarNota({
+        porRuta,
+        porNombre,
+        porTitulo,
+        origen,
+        noteEntry,
+        baseName: fileName.replace(/\.md$/i, ""),
+        title,
+        srcRel: isRaiz ? f.rel : `${subj.rel}/${f.rel}`,
+      });
     }
 
     // PDFs de esta materia
@@ -381,7 +402,12 @@ async function main() {
     const file = path.join(OUT_CONTENT, nota.file + ".md");
     const relKey = nota.file + ".md";
     const old = await (await import("node:fs/promises")).readFile(file, "utf8");
-    const txt = resolveWikilinks(old, linkMap, (base) => resolveAsset(base, nota.sem, nota.mat, assetMaps));
+    const txt = resolveWikilinks(
+      old,
+      { porRuta, porNombre, porTitulo, origen },
+      origen.get(nota.file), // ruta original (no el slug de salida) para la cercanía
+      (base) => resolveAsset(base, nota.sem, nota.mat, assetMaps),
+    );
     if (txt !== old) await writeFile(file, txt, "utf8");
     writtenNotes.add(relKey);
   }
@@ -702,7 +728,69 @@ function escapeHtml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-function resolveWikilinks(t, linkMap, resolveMediaLink) {
+/** Clave canónica de un wikilink o ruta: NFC, sin `\`, sin `.md`, minúsculas. */
+function normLinkKey(s) {
+  return s
+    .normalize("NFC")
+    .replace(/\\/g, "/")
+    .replace(/^\.\//, "")
+    .replace(/\.md$/i, "")
+    .replace(/\/+/g, "/")
+    .trim()
+    .toLowerCase();
+}
+
+/** Añade una entrada a un índice de resolución (una nota o lista de homónimas). */
+function indexar(map, key, entry) {
+  if (!key) return;
+  const prev = map.get(key);
+  if (!prev) map.set(key, entry);
+  else if (Array.isArray(prev)) {
+    if (!prev.includes(entry)) prev.push(entry);
+  } else if (prev !== entry) map.set(key, [prev, entry]);
+}
+
+/** Registra una nota en los índices de wikilinks (ruta, basename, título, origen). */
+function registrarNota({ porRuta, porNombre, porTitulo, origen, noteEntry, baseName, title, srcRel }) {
+  indexar(porNombre, normLinkKey(baseName), noteEntry);
+  indexar(porTitulo, normLinkKey(title), noteEntry);
+  const src = normLinkKey(srcRel);
+  origen.set(noteEntry.file, src);
+  // Ruta completa + todos sus sufijos: los wikilinks del vault usan
+  // `Semestre/Materia/Unidad/Nota`, `Materia/Unidad/Nota` o `Unidad/Nota`.
+  const segs = src.split("/");
+  for (let i = 0; i < segs.length; i++) indexar(porRuta, segs.slice(i).join("/"), noteEntry);
+}
+
+/** Desempata homónimas por cercanía a la nota actual (regla de Obsidian:
+ *  gana la que comparte más ancestros desde la raíz del vault; a igualdad,
+ *  la que está a menos carpetas de distancia). */
+function elegirCercana(entry, origen, srcRel) {
+  if (!Array.isArray(entry)) return entry;
+  if (entry.length <= 1) return entry[0];
+  const srcDirs = normLinkKey(srcRel).split("/").slice(0, -1);
+  let mejor = entry[0];
+  let mejorScore = -Infinity;
+  for (const c of entry) {
+    const dirs = (origen.get(c.file) || "").split("/").slice(0, -1);
+    let prefijo = 0;
+    while (
+      prefijo < dirs.length &&
+      prefijo < srcDirs.length &&
+      dirs[prefijo] === srcDirs[prefijo]
+    )
+      prefijo++;
+    const distancia = srcDirs.length + dirs.length - 2 * prefijo;
+    const score = prefijo * 100 - distancia;
+    if (score > mejorScore) {
+      mejorScore = score;
+      mejor = c;
+    }
+  }
+  return mejor;
+}
+
+function resolveWikilinks(t, maps, srcRel, resolveMediaLink) {
   // 1) wikilinks a MEDIA (sin !): [[file.pdf|alias]] / [[file.png]] →
   //    en Obsidian se ven como links clickeables; en la web emiten
   //    link a /assets/... o se descartan si el asset no existe.
@@ -715,18 +803,30 @@ function resolveWikilinks(t, linkMap, resolveMediaLink) {
     return `[${alias || `📄 ${base}`}](${encodeURI(url)})`;
   });
   // 2) [[Target#Sección|alias]] / [[Target|alias]] / [[Target]] → notas
-  // [[Target#Sección|alias]] / [[Target|alias]] / [[Target]]
   t = t.replace(/\[\[([^\]|#]+)(#[^\]|]+)?(?:\|([^\]]+))?\]\]/g, (m, target, anchor, alias) => {
     if (!target.trim()) return m;
-    // admite [[Carpeta/subcarpeta/Nota.md]] → usa solo el basename
-    const baseName = target.trim().split("/").pop().replace(/\.md$/i, "");
-    let key = baseName.toLowerCase();
-    let entry =
-      linkMap.get(baseName) ||
-      linkMap.get(key) ||
-      linkMap.get(prettyTitle(baseName).toLowerCase());
-    if (!entry) return `**${alias || baseName}**`;
-    let url = `/${entry}/`;
+    const raw = target.trim();
+    const baseName = raw.split("/").pop().replace(/\.md$/i, "");
+    let entry;
+    // 2a) link CON ruta: la ruta manda sobre el basename (fix del LEEME)
+    if (raw.includes("/") || raw.includes("\\")) {
+      entry = maps.porRuta.get(normLinkKey(raw));
+      if (!entry && srcRel) {
+        // por si viene relativo a la carpeta de la nota actual
+        const dir = normLinkKey(srcRel).split("/").slice(0, -1).join("/");
+        entry = maps.porRuta.get(normLinkKey(`${dir}/${raw}`));
+      }
+    }
+    // 2b) basename → título; si hay homónimas, desempata por cercanía
+    if (!entry) {
+      entry =
+        maps.porNombre.get(normLinkKey(baseName)) ||
+        maps.porTitulo.get(normLinkKey(baseName)) ||
+        maps.porTitulo.get(normLinkKey(prettyTitle(baseName)));
+    }
+    const nota = elegirCercana(entry, maps.origen, srcRel);
+    if (!nota) return `**${alias || baseName}**`;
+    let url = `/${nota.file}/`;
     if (anchor) {
       const a = anchor.slice(1);
       url += "#" + slugify(a.replace(/\s+/g, "-"));
