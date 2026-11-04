@@ -159,7 +159,6 @@
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
-
 > - Syllabus completo: [[Bienvenida y Syllabus Física Mecánica]]
 
 ---

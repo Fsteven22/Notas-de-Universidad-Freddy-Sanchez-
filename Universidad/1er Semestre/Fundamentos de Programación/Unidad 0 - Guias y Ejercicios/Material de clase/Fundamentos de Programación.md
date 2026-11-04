@@ -82,7 +82,6 @@
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
-
 > - Syllabus completo: [[Bienvenida y Syllabus Fundamentos de Programación]]
 
 ---
