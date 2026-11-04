@@ -672,12 +672,13 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 > [!warning] Tres incidencias que quedan fuera de git (no recuperables desde el repo)
 >
 > 1. **`Patrones creacionales-*.png` (19) y `Patrones creacionales.md` de la raíz de `OneSyncFiles`**
->    desaparecieron del disco durante la sesión. **Nunca estuvieron trackeados** (`git ls-tree` no los tiene en
->    ningún commit) y `git merge` no borra untracked, así que no proceden de este trabajo: no hay copia en git.
->    No estaban tampoco en `.trash/`. Sí existe material equivalente del dueño en el worktree de otra sesión:
->    `Desktop/wt-opencode-site/Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Material de clase/`
->    → `Patrones creacionales.md` (2.772 B) y `Patrones creacionales - capturas de clase.pdf` (2,1 MB).
->    Los **19 PNG sueltos** no tienen copia en el disco: si el dueño los necesita, hay que regenerarlos desde su origen.
+>    desaparecieron del disco durante la sesión. **Resuelto: el material no se perdió.** La sesión
+>    `opencode-site` (commit `adb4279`, integrado en `master` con `a23cd92`/`7282240`) los **compiló en un PDF
+>    con MuPDF**: `Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales - capturas de clase.pdf`
+>    (**2.114.754 bytes, 19 páginas** = los 19 PNG) y dejó la nota `Patrones creacionales.md` en esa misma
+>    carpeta. Los PNG sueltos de la raíz eran redundantes después de esa compilación.
+>    Antes de ese commit no había copia en git (nunca estuvieron trackeados) ni en `.trash/`: por eso el hecho
+>    se detectó como "desaparición" mientras la otra sesión aún no había integrado su commit.
 > 2. **`00 - Mapa PAO 2-2026.md`**: sigue borrado localmente en el clon de OneDrive (` D`), **sin commitear**
 >    (decisión del dueño, intacta por el merge porque `3c38d98..4824d05` no toca ese archivo).
 > 3. **`Escucha Activa Parte 1_OCR.pdf` / `Parte 2_OCR.pdf`** (Comunicación): al ser la única anomalía
@@ -692,7 +693,7 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 >   `TEMP/opencode/onedrive_backup_untracked/`). **Los originales trackeados en la raíz de U0 los mueve el merge**
 >   a `Guías/` y `Material de clase/`.
 > - Intactos: carpetas `_texto/` (4) y `RESUMEN PRIMER PARCIAL MATDIS.pdf`. `Patrones creacionales.md` de la
->   raíz también desapareció (ver incidencia 1), no se tocó.
+>   raíz y sus 19 PNG fueron **retirados por la sesión `opencode-site`** al compilar el PDF (ver incidencia 1).
 >
 > [!question] Pendientes que necesitan decisión del dueño
 >
