@@ -1219,3 +1219,6 @@ MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando a
 
 **PUSHEO EN CURSO** — commit `bf15a059` (43 archivos: 17 renombres, 2 borrados, 1 índice nuevo,
 21 notas con enlaces actualizados, 2 PDF de SBD). Falta el `PUSHEADO <hash>` al confirmar el push.
+
+**PUSHEADO `e8c19ba4`** — commits `bf15a059` (el renombrado y la fusión) + `e8c19ba4` (este bloque
+del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
