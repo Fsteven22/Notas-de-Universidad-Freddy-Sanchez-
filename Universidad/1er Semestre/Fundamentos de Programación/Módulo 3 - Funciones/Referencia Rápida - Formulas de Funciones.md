@@ -146,4 +146,6 @@ dg-publish: true
 
 ---
 
-_Esta tabla cubre las funciones principales del Módulo 3. Para casos más avanzados, consultar la documentación oficial de Python._
+> [!info] 📋 Alcance de la tabla
+>
+> _Esta tabla cubre las funciones principales del Módulo 3. Para casos más avanzados, consultar la documentación oficial de Python._

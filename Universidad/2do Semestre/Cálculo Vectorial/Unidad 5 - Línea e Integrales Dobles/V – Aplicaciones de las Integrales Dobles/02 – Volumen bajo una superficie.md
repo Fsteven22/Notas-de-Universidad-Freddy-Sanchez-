@@ -593,7 +593,7 @@ dg-publish: true
 >   ```
 > 
 > 
-¡Error! Revisar...
+> ¡Error! Revisar...
 > El cono tiene h=r en el borde, no h=2 V_cono = (1/3)π(2²)(2) = 8π/3 ✗
 > 
 > Cálculo correcto: Por integral: 16π/3 ✓

@@ -145,4 +145,6 @@ dg-publish: true
 
 ---
 
-_Esta tabla cubre las fórmulas y métodos principales del Módulo 6.2. Para casos más avanzados, consultar la documentación oficial de Pandas._
+> [!info] 📋 Alcance de la tabla
+>
+> _Esta tabla cubre las fórmulas y métodos principales del Módulo 6.2. Para casos más avanzados, consultar la documentación oficial de Pandas._

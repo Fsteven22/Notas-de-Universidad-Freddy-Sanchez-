@@ -19,12 +19,16 @@ dg-publish: true
 ### 🎯 Tipos de Particiones
 
 #### 📐 Partición Regular
-Todos los subintervalos tienen la misma longitud:
-$$\Delta x = \frac{b-a}{n} \quad \text{y} \quad x_i = a + i \cdot \Delta x$$
+> [!info] 💡 Partición regular
+>
+> Todos los subintervalos tienen la misma longitud:
+> $$\Delta x = \frac{b-a}{n} \quad \text{y} \quad x_i = a + i \cdot \Delta x$$
 
 #### 📊 Partición Irregular  
-Los subintervalos pueden tener diferentes longitudes:
-$$\Delta x_i = x_i - x_{i-1} \quad \text{(puede variar para cada } i\text{)}$$
+> [!info] 💡 Partición irregular
+>
+> Los subintervalos pueden tener diferentes longitudes:
+> $$\Delta x_i = x_i - x_{i-1} \quad \text{(puede variar para cada } i\text{)}$$
 
 ### 🔄 Refinamiento de Particiones
 > [!info] 📈 **Refinamiento**
@@ -68,19 +72,27 @@ $$\Delta x_i = x_i - x_{i-1} \quad \text{(puede variar para cada } i\text{)}$$
 
 #### 📍 Suma por la Izquierda
 $$L_n = \sum_{i=1}^{n} f(x_{i-1}) \Delta x_i$$
-Punto de muestra: $x_i^* = x_{i-1}$
+> [!note] 📍 Punto de muestra — suma por la izquierda
+>
+> Punto de muestra: $x_i^* = x_{i-1}$
 
 #### 📍 Suma por la Derecha
 $$R_n = \sum_{i=1}^{n} f(x_i) \Delta x_i$$
-Punto de muestra: $x_i^* = x_i$
+> [!note] 📍 Punto de muestra — suma por la derecha
+>
+> Punto de muestra: $x_i^* = x_i$
 
 #### 📍 Suma del Punto Medio
 $$M_n = \sum_{i=1}^{n} f\left(\frac{x_{i-1} + x_i}{2}\right) \Delta x_i$$
-Punto de muestra: $x_i^* = \frac{x_{i-1} + x_i}{2}$
+> [!note] 📍 Punto de muestra — suma del punto medio
+>
+> Punto de muestra: $x_i^* = \frac{x_{i-1} + x_i}{2}$
 
 ### 🔢 Caso Especial: Partición Regular
 
-Para partición regular con $\Delta x = \frac{b-a}{n}$:
+> [!info] 🧮 Caso especial: partición regular
+>
+> Para partición regular con $\Delta x = \frac{b-a}{n}$:
 
 > [!info] ⚡ **Fórmulas Simplificadas**
 > - **Izquierda**: $L_n = \frac{b-a}{n} \sum_{i=0}^{n-1} f\left(a + i \cdot \frac{b-a}{n}\right)$

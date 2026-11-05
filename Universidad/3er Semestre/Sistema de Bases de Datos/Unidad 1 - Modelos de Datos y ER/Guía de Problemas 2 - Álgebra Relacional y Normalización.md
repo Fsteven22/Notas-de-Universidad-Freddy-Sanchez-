@@ -30,7 +30,9 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 
 ### 📚 Catálogo de operadores del álgebra (diapositivas 3.1 / 3.2)
 
-Referencia rápida tomada de las diapositivas de clase (Unidad 3 — álgebra relacional). Vive junto a los 4 ejercicios porque varios operadores aparecen disfrazados en los enunciados.
+> [!info] 🔗 Catálogo de operadores del álgebra (diapositivas 3.1 / 3.2)
+>
+> Referencia rápida tomada de las diapositivas de clase (Unidad 3 — álgebra relacional). Vive junto a los 4 ejercicios porque varios operadores aparecen disfrazados en los enunciados.
 
 > [!note] 📚 Catálogo de operadores del álgebra
 > | Operador | Símbolo | Qué hace | SQL mental |

@@ -149,8 +149,10 @@ dg-publish: true
 > |Si $2 + 2 = 5$ entonces el sol es caliente.|F|V|**V**|Vacuamente verdadera|
 > |Si $2 + 2 = 4$ entonces el sol es caliente.|V|V|**V**|Verdadera normalmente|
 > |Si $2 + 2 = 4$ entonces el sol es frío.|V|F|**F**|Falsa|
-> 
-💡 En lógica, cuando el antecedente es falso, "no se promete nada", por eso el condicional es verdadero independientemente del consecuente.
+
+> [!note] 📖 Verdadero por omisión
+>
+> 💡 En lógica, cuando el antecedente es falso, "no se promete nada", por eso el condicional es verdadero independientemente del consecuente.
 
 ---
 

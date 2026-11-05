@@ -209,4 +209,6 @@ dg-publish: true
 
 ---
 
-_Esta tabla cubre variables y tipos de datos principales del Módulo 2. Para casos más avanzados, consultar la documentación oficial de Python._
+> [!info] 📋 Alcance de la tabla
+>
+> _Esta tabla cubre variables y tipos de datos principales del Módulo 2. Para casos más avanzados, consultar la documentación oficial de Python._

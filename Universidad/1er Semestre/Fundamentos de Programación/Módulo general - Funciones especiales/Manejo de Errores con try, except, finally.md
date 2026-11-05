@@ -5,7 +5,9 @@ dg-publish: true
 
 ### Contexto
 
-En programación, los errores son inevitables. Pueden ser fallos de sintaxis (que impiden que el programa se ejecute) o errores en tiempo de ejecución (excepciones) que ocurren mientras el programa está funcionando, como intentar dividir por cero o acceder a un archivo que no existe. El manejo de excepciones es un mecanismo crucial en Python que permite a tu programa responder a estos errores de manera controlada, evitando que el programa se detenga abruptamente y proporcionando una experiencia más robusta y amigable para el usuario.
+> [!info] 📖 Contexto
+>
+> En programación, los errores son inevitables. Pueden ser fallos de sintaxis (que impiden que el programa se ejecute) o errores en tiempo de ejecución (excepciones) que ocurren mientras el programa está funcionando, como intentar dividir por cero o acceder a un archivo que no existe. El manejo de excepciones es un mecanismo crucial en Python que permite a tu programa responder a estos errores de manera controlada, evitando que el programa se detenga abruptamente y proporcionando una experiencia más robusta y amigable para el usuario.
 
 ### Fórmula/Procedimiento
 
@@ -29,24 +31,26 @@ En programación, los errores son inevitables. Pueden ser fallos de sintaxis (qu
 
 #### **2. Capturando Múltiples Excepciones:**
 
-Puedes tener múltiples bloques `except` para manejar diferentes tipos de excepciones, o capturar la excepción general `Exception` (que captura cualquier tipo de error).
-
-- **Sintaxis con Múltiples `except`:**
-    
-    ```python
-    try:
-        numero = int(input("Ingresa un número: "))
-        resultado = 10 / numero
-        print(f"El resultado es: {resultado}")
-    except ValueError:
-        print("¡Error: Debes ingresar un número entero válido!")
-    except ZeroDivisionError:
-        print("¡Error: No se puede dividir por cero!")
-    except Exception as e: # Captura cualquier otra excepción no especificada
-        print(f"Ocurrió un error inesperado: {e}")
-    ```
-    
-    _Los bloques `except` se evalúan en orden; es mejor ir de las excepciones más específicas a las más generales._
+> [!info] 🪣 Capturar múltiples excepciones
+>
+> Puedes tener múltiples bloques `except` para manejar diferentes tipos de excepciones, o capturar la excepción general `Exception` (que captura cualquier tipo de error).
+>
+> - **Sintaxis con Múltiples `except`:**
+>
+>     ```python
+>     try:
+>         numero = int(input("Ingresa un número: "))
+>         resultado = 10 / numero
+>         print(f"El resultado es: {resultado}")
+>     except ValueError:
+>         print("¡Error: Debes ingresar un número entero válido!")
+>     except ZeroDivisionError:
+>         print("¡Error: No se puede dividir por cero!")
+>     except Exception as e: # Captura cualquier otra excepción no especificada
+>         print(f"Ocurrió un error inesperado: {e}")
+>     ```
+>
+>     _Los bloques `except` se evalúan en orden; es mejor ir de las excepciones más específicas a las más generales._
     
 
 #### **3. El Bloque `else` (Opcional):**
@@ -90,32 +94,32 @@ Puedes tener múltiples bloques `except` para manejar diferentes tipos de excepc
 
 ### Explicación Teórica
 
-El manejo de excepciones se basa en el principio de "pedir perdón antes que permiso". En lugar de verificar exhaustivamente todas las condiciones posibles que podrían llevar a un error antes de ejecutar el código (lo que a veces es ineficiente o complejo), simplemente "intentas" ejecutar el código (`try`). Si algo sale mal, Python "lanza" una excepción, y tú la "capturas" (`except`) para manejarla de forma elegante. Esto desacopla la lógica de negocio del manejo de errores, haciendo el código más legible y mantenible.
+> [!note] 📖 Explicación teórica
+>
+> El manejo de excepciones se basa en el principio de "pedir perdón antes que permiso". En lugar de verificar exhaustivamente todas las condiciones posibles que podrían llevar a un error antes de ejecutar el código (lo que a veces es ineficiente o complejo), simplemente "intentas" ejecutar el código (`try`). Si algo sale mal, Python "lanza" una excepción, y tú la "capturas" (`except`) para manejarla de forma elegante. Esto desacopla la lógica de negocio del manejo de errores, haciendo el código más legible y mantenible.
 
 ### Explicación Imaginativa
 
-Imagina que eres un chef preparando un plato:
-
-- El bloque **`try`** es tu intento de cocinar una nueva receta complicada. Sabes que hay pasos que podrían fallar (ej., quemar la salsa, cortar un ingrediente de forma incorrecta).
-    
-- Los bloques **`except`** son tus planes de contingencia para errores específicos: "Si la salsa se quema (`except SalsaQuemadaError`), entonces añade más agua y condimentos para intentar arreglarla". "Si se me acaba un ingrediente clave (`except IngredienteFaltanteError`), entonces pido al ayudante que vaya a comprarlo".
-    
-- El bloque **`else`** es para cuando todo sale perfecto: "Si la receta sale exactamente como esperabas (`else`), entonces emplata y sirve la comida".
-    
-- El bloque **`finally`** es la limpieza de la cocina al final: "Independientemente de si el plato salió bien, mal, o si tuve que improvisar, siempre debo lavar los utensilios y dejar la cocina limpia (`finally`)."
+> [!example] 🧪 Explicación imaginativa
+>
+> Imagina que eres un chef preparando un plato:
+>
+> - El bloque **`try`** es tu intento de cocinar una nueva receta complicada. Sabes que hay pasos que podrían fallar (ej., quemar la salsa, cortar un ingrediente de forma incorrecta).
+> - Los bloques **`except`** son tus planes de contingencia para errores específicos: "Si la salsa se quema (`except SalsaQuemadaError`), entonces añade más agua y condimentos para intentar arreglarla". "Si se me acaba un ingrediente clave (`except IngredienteFaltanteError`), entonces pido al ayudante que vaya a comprarlo".
+> - El bloque **`else`** es para cuando todo sale perfecto: "Si la receta sale exactamente como esperabas (`else`), entonces emplata y sirve la comida".
+> - El bloque **`finally`** es la limpieza de la cocina al final: "Independientemente de si el plato salió bien, mal, o si tuve que improvisar, siempre debo lavar los utensilios y dejar la cocina limpia (`finally`)."
     
 
 ### Relación
 
-El manejo de errores es crucial para crear aplicaciones robustas y amigables. Sin él, un pequeño error podría hacer que tu programa se bloquee, frustrando al usuario. Los bloques `try`, `except`, `else` y `finally` son herramientas poderosas que te permiten:
-
-- **Prevenir caídas:** Evitan que el programa se detenga inesperadamente.
-    
-- **Proporcionar feedback:** Informan al usuario qué salió mal en lugar de mostrar un error técnico.
-    
-- **Recuperación:** Permiten que el programa intente recuperarse del error o tomar una acción alternativa.
-    
-- **Limpieza de recursos:** Aseguran que los recursos (archivos, conexiones de red) se cierren correctamente, incluso si ocurre un error.
+> [!info] 🔗 Relación con otros temas
+>
+> El manejo de errores es crucial para crear aplicaciones robustas y amigables. Sin él, un pequeño error podría hacer que tu programa se bloquee, frustrando al usuario. Los bloques `try`, `except`, `else` y `finally` son herramientas poderosas que te permiten:
+>
+> - **Prevenir caídas:** Evitan que el programa se detenga inesperadamente.
+> - **Proporcionar feedback:** Informan al usuario qué salió mal en lugar de mostrar un error técnico.
+> - **Recuperación:** Permiten que el programa intente recuperarse del error o tomar una acción alternativa.
+> - **Limpieza de recursos:** Aseguran que los recursos (archivos, conexiones de red) se cierren correctamente, incluso si ocurre un error.
     
 
 ### Gráfico (Representación conceptual)
@@ -152,11 +156,15 @@ El manejo de errores es crucial para crear aplicaciones robustas y amigables. Si
          Resto del Programa
 ```
 
-_(Este gráfico ilustra el flujo de ejecución de una estructura `try-except-else-finally`.)_
+> [!info] 🖼️ Gráfico (representación conceptual)
+>
+> _(Este gráfico ilustra el flujo de ejecución de una estructura `try-except-else-finally`.)_
 
 ### Ejemplo de Aplicación
 
-Aquí tienes ejemplos de comandos y su uso con `try`, `except`, `finally` en Python:
+> [!example] 🧪 Ejemplo de aplicación
+>
+> Aquí tienes ejemplos de comandos y su uso con `try`, `except`, `finally` en Python:
 
 - **División segura de números:**
     

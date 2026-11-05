@@ -8,7 +8,9 @@ dg-publish: true
 >[!info] Empecemos con un: 
 > **Enfoque Principal**: Aplicación de las tres leyes de Newton para analizar el movimiento de sistemas complejos.
 
-Este tutorial aborda situaciones donde es necesario aplicar las **tres leyes de Newton** de manera integrada para resolver problemas de dinámica. Se enfoca principalmente en sistemas con múltiples objetos, fuerzas complejas y diferentes superficies.
+> [!info] 📖 Contexto
+>
+> Este tutorial aborda situaciones donde es necesario aplicar las **tres leyes de Newton** de manera integrada para resolver problemas de dinámica. Se enfoca principalmente en sistemas con múltiples objetos, fuerzas complejas y diferentes superficies.
 
 ### 🎯 Sistemas de Estudio
 
@@ -51,10 +53,12 @@ $$\sum F_y = m a_y$$
 
 $$f = \mu N$$
 
-**Donde**:
-
-- $\mu_s$: Coeficiente de fricción estática (objeto en reposo)
-- $\mu_k$: Coeficiente de fricción cinética (objeto en movimiento)
+> [!info] 💡 Fuerza de Fricción
+>
+> **Donde**:
+>
+> - $\mu_s$: Coeficiente de fricción estática (objeto en reposo)
+> - $\mu_k$: Coeficiente de fricción cinética (objeto en movimiento)
 
 ### 🎯 Las Tres Leyes Fundamentales
 
@@ -103,40 +107,44 @@ $$ma = mg \sin(\theta) - f - T$$
 
 ### 🚗 Ejemplo 1: Fuerza Resultante Simple
 
-**🎯 Problema**: Bloque de 5 kg empujado con 30 N en superficie sin fricción.
-
-![[Diagramas/Leyes_de_Newton_06.svg]]
-
-**🔧 Solución**: $$F = ma \Rightarrow a = \frac{F}{m} = \frac{30}{5} = 6 \text{ m/s}^2$$
-
-**✅ Resultado**: $a = 6 \text{ m/s}^2$
+> [!info] 💡 Ejemplo 1: Fuerza Resultante Simple
+>
+> **🎯 Problema**: Bloque de 5 kg empujado con 30 N en superficie sin fricción.
+>
+> ![[Diagramas/Leyes_de_Newton_06.svg]]
+>
+> **🔧 Solución**: $$F = ma \Rightarrow a = \frac{F}{m} = \frac{30}{5} = 6 \text{ m/s}^2$$
+>
+> **✅ Resultado**: $a = 6 \text{ m/s}^2$
 
 ---
 
 ### 🧱 Ejemplo 2: Plano Inclinado Sin Fricción
 
-**🎯 Problema**: Bloque 10 kg en plano inclinado 30°, sin fricción.
-
-![[Diagramas/Leyes_de_Newton_07.svg]]
-
-**🔧 Solución**:
-
-1. **Componente paralela del peso**: $$W_{\parallel} = mg \sin(\theta) = 10 \times 9.8 \times \sin(30°) = 49 \text{ N}$$
-    
-2. **Segunda ley de Newton**: $$a = \frac{F}{m} = \frac{49}{10} = 4.9 \text{ m/s}^2$$
-    
-
-**✅ Resultado**: $a = 4.9 \text{ m/s}^2$
+> [!info] 💡 Ejemplo 2: Plano Inclinado Sin Fricción
+>
+> **🎯 Problema**: Bloque 10 kg en plano inclinado 30°, sin fricción.
+>
+> ![[Diagramas/Leyes_de_Newton_07.svg]]
+>
+> **🔧 Solución**:
+>
+> 1. **Componente paralela del peso**: $$W_{\parallel} = mg \sin(\theta) = 10 \times 9.8 \times \sin(30°) = 49 \text{ N}$$
+> 2. **Segunda ley de Newton**: $$a = \frac{F}{m} = \frac{49}{10} = 4.9 \text{ m/s}^2$$
+>
+> **✅ Resultado**: $a = 4.9 \text{ m/s}^2$
 
 ---
 
 ### 🧲 Ejemplo 3: Sistema de Masas Conectadas
 
-**🎯 Problema**: Dos bloques conectados por cuerda y polea. $m_1 = 4$ kg (horizontal), $m_2 = 2$ kg (colgante).
-
-![[Diagramas/Leyes_de_Newton_08.svg]]
-
-**🔧 Análisis por DCL**:
+> [!info] 💡 Ejemplo 3: Sistema de Masas Conectadas
+>
+> **🎯 Problema**: Dos bloques conectados por cuerda y polea. $m_1 = 4$ kg (horizontal), $m_2 = 2$ kg (colgante).
+>
+> ![[Diagramas/Leyes_de_Newton_08.svg]]
+>
+> **🔧 Análisis por DCL**:
 
 #### 📦 Para $m_1$ (horizontal):
 
@@ -146,11 +154,13 @@ $$T = m_1 a \quad \text{...(1)}$$
 
 $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 
-**🧮 Resolución del sistema**: Sustituyendo (1) en (2): $$m_2 g - m_1 a = m_2 a$$ $$m_2 g = a(m_1 + m_2)$$ $$a = \frac{m_2 g}{m_1 + m_2} = \frac{2 \times 9.8}{4 + 2} = 3.27 \text{ m/s}^2$$
-
-**✅ Resultado**: $a = 3.27 \text{ m/s}^2$
-
-**🔗 Tensión en la cuerda**: $$T = m_1 a = 4 \times 3.27 = 13.08 \text{ N}$$
+> [!info] 💡 Para $m_2$ (vertical)
+>
+> **🧮 Resolución del sistema**: Sustituyendo (1) en (2): $$m_2 g - m_1 a = m_2 a$$ $$m_2 g = a(m_1 + m_2)$$ $$a = \frac{m_2 g}{m_1 + m_2} = \frac{2 \times 9.8}{4 + 2} = 3.27 \text{ m/s}^2$$
+>
+> **✅ Resultado**: $a = 3.27 \text{ m/s}^2$
+>
+> **🔗 Tensión en la cuerda**: $$T = m_1 a = 4 \times 3.27 = 13.08 \text{ N}$$
 
 ---
 
@@ -202,8 +212,8 @@ $$m_2 g - T = m_2 a \quad \text{...(2)}$$
 ---
 
 ## 📌 Resumen Ejecutivo
->[!success] Recapitulando los conceptos.
-Las **Leyes de Newton** proporcionan el framework fundamental para el análisis dinámico:
+> [!success] ✅ Resumen: las leyes de Newton
+> Las **Leyes de Newton** proporcionan el framework fundamental para el análisis dinámico:
 >
 >- **1️⃣ Primera Ley**: Inercia → $\sum F = 0$ para equilibrio
 >- **2️⃣ Segunda Ley**: Dinámica → $\sum F = ma$ para aceleración

@@ -5,7 +5,9 @@ tags: [IDIG1008, unidad0, recursos]
 
 # 📂 Unidad 0 — Guías y Ejercicios (Inglés III)
 
-Qué hay en esta carpeta y qué se publica en el sitio.
+> [!info] 🔗 Unidad 0 — Guías y Ejercicios (Inglés III)
+>
+> Qué hay en esta carpeta y qué se publica en el sitio.
 
 > [!info] 📚 PDFs publicados (embebidos, se ven aquí)
 > Los PDF están separados por tipo: `Material de clase/` y `Guías/`.

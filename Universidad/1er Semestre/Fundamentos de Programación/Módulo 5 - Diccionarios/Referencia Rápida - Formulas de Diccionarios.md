@@ -176,4 +176,6 @@ for d in lista_diccionarios:
 
 ---
 
-_Esta tabla cubre las operaciones fundamentales con diccionarios en Python. Los diccionarios son una de las estructuras de datos más versátiles y utilizadas en Python._
+> [!info] 📋 Alcance de la tabla
+>
+> _Esta tabla cubre las operaciones fundamentales con diccionarios en Python. Los diccionarios son una de las estructuras de datos más versátiles y utilizadas en Python._

@@ -5,7 +5,9 @@ dg-publish: true
 
 ### 📌 Contexto
 
-Este tutorial se enfoca en aplicar principios de la Física-Mecánica en contextos reales, específicamente mediante los sistemas de sillas y poleas del "Parque Ajá!". Se analiza el comportamiento de sistemas en equilibrio y en movimiento con velocidad y aceleración constantes, aplicando las Leyes de Newton.
+> [!info] 📖 Contexto
+>
+> Este tutorial se enfoca en aplicar principios de la Física-Mecánica en contextos reales, específicamente mediante los sistemas de sillas y poleas del "Parque Ajá!". Se analiza el comportamiento de sistemas en equilibrio y en movimiento con velocidad y aceleración constantes, aplicando las Leyes de Newton.
 
 ---
 
@@ -24,28 +26,32 @@ Este tutorial se enfoca en aplicar principios de la Física-Mecánica en context
 
 #### ➤ Sistemas en Equilibrio (Velocidad Constante)
 
-Primera Ley de Newton: $\sum \vec{F} = 0
-
-**Pasos:**
-
-1. Identificar el sistema de estudio.
-2. Dibujar el DCL.
-3. Descomponer fuerzas.
-4. Aplicar: $\sum F_x = 0$, $\sum F_y = 0$
-5. Resolver la incógnita.
+> [!info] 🧭 Sistemas en equilibrio (velocidad constante)
+>
+> Primera Ley de Newton: $\sum \vec{F} = 0
+>
+> **Pasos:**
+>
+> 1. Identificar el sistema de estudio.
+> 2. Dibujar el DCL.
+> 3. Descomponer fuerzas.
+> 4. Aplicar: $\sum F_x = 0$, $\sum F_y = 0$
+> 5. Resolver la incógnita.
 
 #### ➤ Sistemas con Aceleración Constante
 
-Segunda Ley de Newton: $\sum \vec{F} = m \vec{a}$
-
-**Pasos:**
-
-1. Identificar el sistema de estudio.
-2. Dibujar el DCL.
-3. Definir sistema de coordenadas y dirección de $a$.
-4. Descomponer fuerzas.
-5. Aplicar: $\sum F_x = ma_x$, $\sum F_y = ma_y$
-6. Resolver la incógnita.
+> [!info] 🧭 Sistemas con aceleración constante
+>
+> Segunda Ley de Newton: $\sum \vec{F} = m \vec{a}$
+>
+> **Pasos:**
+>
+> 1. Identificar el sistema de estudio.
+> 2. Dibujar el DCL.
+> 3. Definir sistema de coordenadas y dirección de $a$.
+> 4. Descomponer fuerzas.
+> 5. Aplicar: $\sum F_x = ma_x$, $\sum F_y = ma_y$
+> 6. Resolver la incógnita.
 
 ---
 
@@ -90,41 +96,47 @@ Segunda Ley de Newton: $\sum \vec{F} = m \vec{a}$
 
 #### Ejercicio 1: Sistemas en Equilibrio
 
-Se aplican $\sum F_y = 0$
-
-**Resoluciones:**
-
-- Silla 1: $T_{verde1} = P_{S1}$
-- Silla 2: $T_{verde2} = \frac{P_{S2}}{2}$
-- Silla 3: $T_{verde3} = \frac{P_{S3}}{4}$
-
-**Conclusión**: Más poleas → Menor tensión requerida por segmento.
+> [!example] 🧪 Ejercicio 1: sistemas en equilibrio
+>
+> Se aplican $\sum F_y = 0$
+>
+> **Resoluciones:**
+>
+> - Silla 1: $T_{verde1} = P_{S1}$
+> - Silla 2: $T_{verde2} = \frac{P_{S2}}{2}$
+> - Silla 3: $T_{verde3} = \frac{P_{S3}}{4}$
+>
+> **Conclusión**: Más poleas → Menor tensión requerida por segmento.
 
 ---
 
 #### Ejercicio 2 - Parte 1: Velocidad Constante
 
-**Análisis**: $a = 0 \Rightarrow$ equilibrio dinámico.
-
-**Fuerzas requeridas:**
-
-- $F_{S1} = P + P_{S1}$
-- $F_{S2} = \frac{P + P_{S2}}{2}$
-- $F_{S3} = \frac{P + P_{S3}}{4}$
+> [!info] 💡 Ejercicio 2 - Parte 1: Velocidad Constante
+>
+> **Análisis**: $a = 0 \Rightarrow$ equilibrio dinámico.
+>
+> **Fuerzas requeridas:**
+>
+> - $F_{S1} = P + P_{S1}$
+> - $F_{S2} = \frac{P + P_{S2}}{2}$
+> - $F_{S3} = \frac{P + P_{S3}}{4}$
 
 ---
 
 #### Ejercicio 2 - Parte 2: Aceleración Constante
 
-**Análisis**: $a ≠ 0 \Rightarrow$ aplicar Segunda Ley.
-
-**Masa total**: $m = \frac{P + P_S}{g}$
-
-**Fuerzas requeridas:**
-
-- $F_{S1} = (P + P_{S1})\left(1 + \frac{a}{g}\right)$
-- $F_{S2} = \frac{(P + P_{S2})}{2}\left(1 + \frac{a}{g}\right)$
-- $F_{S3} = \frac{(P + P_{S3})}{4}\left(1 + \frac{a}{g}\right)$
+> [!info] 💡 Ejercicio 2 - Parte 2: Aceleración Constante
+>
+> **Análisis**: $a ≠ 0 \Rightarrow$ aplicar Segunda Ley.
+>
+> **Masa total**: $m = \frac{P + P_S}{g}$
+>
+> **Fuerzas requeridas:**
+>
+> - $F_{S1} = (P + P_{S1})\left(1 + \frac{a}{g}\right)$
+> - $F_{S2} = \frac{(P + P_{S2})}{2}\left(1 + \frac{a}{g}\right)$
+> - $F_{S3} = \frac{(P + P_{S3})}{4}\left(1 + \frac{a}{g}\right)$
 
 ---
 

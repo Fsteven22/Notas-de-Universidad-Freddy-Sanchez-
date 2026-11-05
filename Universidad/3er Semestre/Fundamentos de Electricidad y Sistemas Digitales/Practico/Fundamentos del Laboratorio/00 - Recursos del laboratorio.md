@@ -16,7 +16,9 @@ tags: [EYAG1037, laboratorio, recursos]
 
 ![[Formato Pre-prácticas.pdf]]
 
-Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
+> [!info] 🔗 Unidad 0 — Guías y Ejercicios (FESD Práctico)
+>
+> Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 
 ## 🔗 Links de contenido recomendado
 

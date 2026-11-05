@@ -5,7 +5,9 @@ dg-publish: true
 ## 🚀 Práctica: Velocidad Instantánea
 
 ### 📘 Contexto
-Esta práctica se enfoca en determinar la velocidad de un cuerpo en un instante específico de su trayectoria, especialmente si se mueve con aceleración constante. La idea es ver cómo la velocidad media se acerca a la velocidad instantánea cuando el intervalo de tiempo es muy, muy pequeño.
+> [!info] 📖 Contexto
+>
+> Esta práctica se enfoca en determinar la velocidad de un cuerpo en un instante específico de su trayectoria, especialmente si se mueve con aceleración constante. La idea es ver cómo la velocidad media se acerca a la velocidad instantánea cuando el intervalo de tiempo es muy, muy pequeño.
 
 ---
 
@@ -40,24 +42,28 @@ Esta práctica se enfoca en determinar la velocidad de un cuerpo en un instante 
 ---
 
 ### 🧠 Explicación Teórica
-La velocidad instantánea se define como:
-
-$$
-v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}
-$$
-
-Se representa como la pendiente de la línea tangente a la curva de posición vs. tiempo en un punto específico.
+> [!note] 📖 Explicación teórica
+>
+> La velocidad instantánea se define como:
+>
+> $$
+> v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}
+> $$
+>
+> Se representa como la pendiente de la línea tangente a la curva de posición vs. tiempo en un punto específico.
 
 ---
 
 ### 🧪 Explicación Práctica
-Se simula un movimiento con aceleración constante. Midiendo tiempos en segmentos cada vez más pequeños ($(\Delta x$) reduce), la velocidad media:
-
-$$
-v_{\text{media}} = \frac{\Delta x}{\Delta t}
-$$
-
-se acerca a la velocidad instantánea en el tramo central.
+> [!example] 🧪 Explicación práctica
+>
+> Se simula un movimiento con aceleración constante. Midiendo tiempos en segmentos cada vez más pequeños ($(\Delta x$) reduce), la velocidad media:
+>
+> $$
+> v_{\text{media}} = \frac{\Delta x}{\Delta t}
+> $$
+>
+> se acerca a la velocidad instantánea en el tramo central.
 
 ---
 
@@ -76,81 +82,103 @@ se acerca a la velocidad instantánea en el tramo central.
 ## 🧪 Taller Previo – Velocidad Instantánea
 
 ### 1. ¿Qué es la velocidad instantánea?
-Es la velocidad que tiene un cuerpo en un instante de tiempo determinado. Se obtiene como el límite de la velocidad media cuando el intervalo de tiempo tiende a cero:
-
-$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}$
+> [!note] 📖 1. ¿Qué es la velocidad instantánea?
+>
+> Es la velocidad que tiene un cuerpo en un instante de tiempo determinado. Se obtiene como el límite de la velocidad media cuando el intervalo de tiempo tiende a cero:
+>
+> $v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}$
 
 ---
 
 ### 2. ¿Cómo se mide experimentalmente la velocidad instantánea?
-Se mide como la velocidad media cuando el intervalo de tiempo $\Delta t$ es muy pequeño:
-
-$v_{\text{inst}} \approx \frac{\Delta x}{\Delta t}$
+> [!note] 📖 2. ¿Cómo se mide experimentalmente la velocidad instantánea?
+>
+> Se mide como la velocidad media cuando el intervalo de tiempo $\Delta t$ es muy pequeño:
+>
+> $v_{\text{inst}} \approx \frac{\Delta x}{\Delta t}$
 
 ---
 
 ### 3. ¿Qué es el tiempo promedio?
-Es el valor medio entre dos tiempos:
-
-$t_{\text{prom}} = \frac{t_1 + t_2}{2}$
+> [!note] 📖 3. ¿Qué es el tiempo promedio?
+>
+> Es el valor medio entre dos tiempos:
+>
+> $t_{\text{prom}} = \frac{t_1 + t_2}{2}$
 
 ---
 
 ### 4. ¿Cómo se mide el tiempo en esta práctica?
-Se mide con un sensor óptico que detecta cuándo una placa conectada al carrito interrumpe el haz de luz. El sistema registra el tiempo durante el cual la señal es bloqueada.
+> [!note] 📖 4. ¿Cómo se mide el tiempo en esta práctica?
+>
+> Se mide con un sensor óptico que detecta cuándo una placa conectada al carrito interrumpe el haz de luz. El sistema registra el tiempo durante el cual la señal es bloqueada.
 
 ---
 
 ### 5. ¿Qué significa "variación de la posición"?
-Es la diferencia de posición entre dos puntos:
-
-$\Delta x = x_2 - x_1$
+> [!note] 📖 5. ¿Qué significa "variación de la posición"?
+>
+> Es la diferencia de posición entre dos puntos:
+>
+> $\Delta x = x_2 - x_1$
 
 ---
 
 ### 6. ¿Qué es una gráfica posición vs. tiempo?
-Es una gráfica donde:
-- El eje horizontal representa el tiempo $t$
-- El eje vertical representa la posición $x$
-
-Si el movimiento es acelerado, la gráfica será una curva (parábola).
+> [!note] 📖 6. ¿Qué es una gráfica posición vs. tiempo?
+>
+> Es una gráfica donde:
+> - El eje horizontal representa el tiempo $t$
+> - El eje vertical representa la posición $x$
+>
+> Si el movimiento es acelerado, la gráfica será una curva (parábola).
 
 ---
 
 ### 7. ¿Qué se interpreta como pendiente de la tangente a la curva $x$ vs. $t$?
-La pendiente de la tangente representa la velocidad instantánea:
-
-$v = \frac{dx}{dt}$
+> [!note] 📖 7. ¿Qué se interpreta como pendiente de la tangente a la curva $x$ vs. $t$?
+>
+> La pendiente de la tangente representa la velocidad instantánea:
+>
+> $v = \frac{dx}{dt}$
 
 ---
 
 ### 8. ¿Qué representa el área bajo la curva de velocidad vs. tiempo?
-Representa el desplazamiento realizado en ese intervalo de tiempo:
-
-$\Delta x = \int_{t_1}^{t_2} v(t)\,dt$
+> [!note] 📖 8. ¿Qué representa el área bajo la curva de velocidad vs. tiempo?
+>
+> Representa el desplazamiento realizado en ese intervalo de tiempo:
+>
+> $\Delta x = \int_{t_1}^{t_2} v(t)\,dt$
 
 ---
 
 ### 9. ¿Qué representa la pendiente de la curva velocidad vs. tiempo?
-Representa la aceleración:
-
-$a = \frac{dv}{dt}$
+> [!note] 📖 9. ¿Qué representa la pendiente de la curva velocidad vs. tiempo?
+>
+> Representa la aceleración:
+>
+> $a = \frac{dv}{dt}$
 
 ---
 
 ### 10. ¿Qué expresa el modelo de movimiento uniformemente acelerado?
-Modelo de posición:
-
-$x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$
-
-Modelo de velocidad:
-
-$v(t) = v_0 + a t$
+> [!note] 📖 10. ¿Qué expresa el modelo de movimiento uniformemente acelerado?
+>
+> Modelo de posición:
+>
+> $x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$
+>
+> Modelo de velocidad:
+>
+> $v(t) = v_0 + a t$
 
 ---
 
 ### 11. ¿Cuál es el objetivo de esta práctica?
-Determinar la velocidad instantánea de un cuerpo que se mueve con aceleración constante, usando mediciones de tiempo y posición con sensores ópticos.
+> [!tip] 🎯 11. ¿Cuál es el objetivo de esta práctica?
+>
+> Determinar la velocidad instantánea de un cuerpo que se mueve con aceleración constante, usando mediciones de tiempo y posición con sensores ópticos.
 
 ---
 
