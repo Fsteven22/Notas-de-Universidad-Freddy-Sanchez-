@@ -908,3 +908,60 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > por contexto. Si prefieres otro caracter, es 1 commit.
 
 **PUSHEADO `286276e3`** - rama `sesion/opencode-site` -> `master`.
+
+---
+
+### `opencode` - los 3 pendientes del dueño resueltos (publicar índices, consolidar Inglés I, libros con copyright) - 05/11/2026
+
+> [!success] 3 decisiones del dueño aplicadas, en 3 commits atómicos
+>
+> - **Punto 1 — publicar las 4 notas índice sin frontmatter** (`445a813`): `dg-publish: true` +
+>   `tags: [<CÓDIGO>, <slug>, mapa-de-contenido]` en `Cálculo de una Variable.md` (MATG1045),
+>   `Fundamentos de Programación.md` (CCPG1001), `Física Mecánica.md` (FISG1001) e
+>   `Ingles I (B1-B2).md` (IDIG1006, código tomado de `Welcome & Syllabus English I`).
+>   **Efecto medido:** `qa_omitidas.py` pasa de **818 → 822 notas publicables** (825 revisadas, 2 omitidas,
+>   1 por revisar). Check extra: los destinos de esas 4 notas son **0 no publicables**, así que el enlace
+>   "Mapa de contenido" ya no cae en 404.
+> - **Punto 2 — consolidar el índice de Inglés I** (`eb03550`): el canónico es
+>   `1er Semestre/Ingles I (B1-B2)/Ingles I (B1-B2).md` (raíz de la materia). Se **reapuntaron los 18 links**
+>   `[[Inglés I (B1-B2)]]` → `[[Ingles I (B1-B2)|Inglés I (B1-B2)]]` en las notas de las Units 7-12 y se
+>   **eliminó el duplicado acentuado** (`git rm` de `Unidad 0 - Guias y Ejercicios/Material de clase/`).
+>   Ojo: **no eran equivalentes** — el canónico tiene los `00 - Índice` de las Units 10-12 y el duplicado no;
+>   por eso la consolidación se hizo sobre el canónico, que además es el único con los 3 `.md` en la raíz de
+>   la materia. La sección "Unidad 0" del canónico pasó a callout `[!note]`.
+> - **Punto 3 — sacar los 7 libros con copyright del índice de git** (`ca2891d`): `git rm --cached` de
+>   Pressman, UML, Design Patterns, Refactoring, Clean Architecture, Johnsonbaugh y Rosen (142,4 MB) +
+>   sus 7 rutas en `.gitignore` para que no vuelvan a entrar. **Los archivos siguen en el vault local**:
+>   verificado por SHA-256 antes y después (el merge a master los borró del disco de OneDrive y se
+>   restauraron desde un backup verificado).
+
+> [!danger] Lo que `git rm --cached` NO hace (importante para copyright)
+>
+> Los 7 libros **salen del árbol actual** del repo (ya no se sirven ni se descargan desde la rama), pero
+> **los blobs siguen en el histórico público**: se pueden descargar desde cualquier commit anterior.
+> Para sacarlos de verdad del histórico hay que **reescribirlo** (`git filter-repo` + force-push), y eso
+> cambia todos los hashes, invalida las ramas de las otras sesiones y exige coordinación. El protocolo de
+> este LEEME **prohíbe** el force-push sobre `master` y el `amend` de lo publicado, así que **no se hizo**.
+> Si el dueño lo autoriza, es una operación aparte y con las 3 sesiones avisadas.
+
+> [!info] QA de esta ronda
+>
+> `qa_links.py` targets=**7957** bad=**0** · `qa_assets_huerfanos.py` **2975 assets, 0 huérfanos** ·
+> `qa_omitidas.py` **825 revisadas / 822 publican / 2 omitidas / 1 revisar** · estructura verificada en
+> OneDrive: **18/18 materias con 3 `.md` en la raíz y 0 sueltos** · los 7 libros: no trackeados, ignorados
+> y presentes en disco.
+
+> [!warning] Lo que queda con copyright/material restringido **seguido trackeado** (no estaba en el pendiente)
+>
+> `Database Systems - Design, Implementation, and Management (9th Edition).pdf` (libro de texto completo,
+> 16,7 MB) · `Escucha Activa Parte 1.pdf` y `Parte 2.pdf` · `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` ·
+> `Dinámicas grupales y trabajo en equipo.wmv` · `Guía Didáctica Mat. discretas lógica y demostraciones.docx`.
+> Todos están en `_no-publicar.txt` (no se publican en el sitio), pero **siguen en el repo de GitHub**.
+> Quedan fuera de la lista de 7 por no ser "libros z-lib" del pendiente; si el dueño quiere, se sacan igual
+> con el mismo procedimiento.
+
+> [!note] Integración con las otras sesiones
+>
+> `master` avanzó dos veces durante el trabajo (`7282240`/`4977cd2`, sesión `opencode-site`: PDF de patrones
+> creacionales y fix de títulos de callouts). Se integró **con merge, nunca rebase**: `0ef8694`.
+> `master` = `origin/master` = `origin/sesion/opencode` = `0ef8694` al cierre de este bloque.
