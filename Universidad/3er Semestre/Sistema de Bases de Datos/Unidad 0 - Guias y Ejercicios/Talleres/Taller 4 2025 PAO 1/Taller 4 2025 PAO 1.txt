@@ -1,0 +1,6 @@
+Transformar el modelo relacional a modelo no relacional
+- Nombrar que colecciones van a usar y representar su estructura 
+
+- Ingresar 2 datos en cada colección usando insertOne, insertMany
+
+- Hacer una busqueda por nombre de paciente

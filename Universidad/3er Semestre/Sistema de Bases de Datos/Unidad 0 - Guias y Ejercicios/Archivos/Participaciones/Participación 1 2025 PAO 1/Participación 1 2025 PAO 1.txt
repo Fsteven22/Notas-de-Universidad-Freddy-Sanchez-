@@ -1,0 +1,25 @@
+Diseñar el modelo conceptual de los siguientes requerimientos:
+
+Se lo ha contratado para implementar un sistema que procese Créditos Hipotecarios del Banco del PACIPICO. Para ello deberá diseñar un modelo de base de datos que 
+permita guardar los datos necesarios para solicitar y/o aprobar el otorgamiento del crédito.
+
+Para llevar a cabo un préstamo hipotecario, se debe considerar la participación del prestatario (que es la persona que solicita el préstamo hipotecario) y del 
+prestamista que es el representante del Banco del PATIPICO que recepta la documentación del prestatario.
+
+El prestatario para solicitar un crédito Hipotecario debe indicar los siguientes datos cédula, nombre, dirección, teléfono, ingresos mensuales e historial crediticio. 
+El prestamista revisa la información y decide formalizar o no el contrato hipotecario.  En el contrato se establecen los términos y condiciones como la 
+tasa de interés, el plazo y monto del préstamo, montos de los pagos mensuales y su fecha de plazo. Además, el prestatario proporciona información sobre la propiedad 
+que se utilizará como garantía para el préstamo, lo que incluye información como dirección de la propiedad y el valor de tasación.  Este valor se determina mediante 
+una evaluación realizada por un tasador profesional del banco, que examina diversos aspectos de la propiedad como la ubicación, tamaño, características y estado de la 
+propiedad (buen estado, requiere reparaciones, etc.). Un valor de tasación adecuado asegura al prestamista que la propiedad ofrecida como garantía tiene un valor 
+suficiente para respaldar el monto del préstamo.
+
+El historial crediticio del prestatario es otro aspecto fundamental que influye en la aprobación del préstamo y las condiciones asociadas al mismo. Este historial 
+incluye información sobre el comportamiento financiero pasado del prestatario, como el manejo de deudas, que incluyen una descripción, fecha que se lo contrajo, fecha 
+límite de pago y fecha que se lo pagó.  También un historial de crédito que incluyan que tipo de crédito 
+accedió (ej. Tarjeta de crédito, créditos estatales, etc.) cantidad actual de la deuda y límite máximo de crédito disponible.  Un historial crediticio sólido 
+aumenta la confianza del prestamista en la capacidad del prestatario para cumplir con las obligaciones del préstamo.
+
+Durante la vigencia del préstamo hipotecario, se establece una relación continua entre el prestamista y el prestatario según se realizan los pagos mensuales. Estos 
+pagos se registran como parte del historial crediticio del prestatario, lo que puede afectar las relaciones futuras con otras entidades financieras. Además, en caso 
+de incumplimiento de pago, se activa una relación legal que puede llevar a medidas como la ejecución hipotecaria de la propiedad.

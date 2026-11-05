@@ -1,0 +1,58 @@
+use prueba -- Cambiar a la base de datos que se va a usar
+
+Insertar un documento
+db.personas.insertOne({Nombre:"John",Apellido:"Carreno",Edad:19,Juegos:["Minecraft","Hollow Knight","Roblox"]})
+
+Insertar varios documentos
+db.personas.insertMany([{Nombre:"Felix",Apellido:"Lucas",Edad:19,Juegos:["Minecraft","FemboySimulator"]},{Nombre:
+"Luis",Apellido:"Mejia",Edad:19,Juegos:["Roblox","Minecraft"]}])
+
+Mostrar todos los documentos (En realidad muestra los primeros 20, con it se puede mostrar los siguientes 20)
+db.personas.find()
+
+Filtrar por algun campo
+db.personas.find({Nombre:"John"})
+
+Filtrar por mas campos
+db.personas.find({Nombre:"John", Edad:19})
+
+Filtrar por un campo, pero seleccionando que solo me muestre el campo de juegos
+db.personas.find({Nombre:"John"},{Juegos:1})
+
+Que me muestre los juegos de todos los documentos
+db.personas.find({},{Juegos:1})
+
+Que busque solo un documento, si dos documentos llegan a tener el valor del campo igual, solo devuelve la primera
+coincidencia que encuentre.
+db.personas.findOne({_id:ObjectId('689d46c85ca5427d49b01e71')})
+
+Devuelve el numero de documentos que salen de esa consulta
+db.personas.find().count()
+
+Limitar a que solo salga un documento de esa consulta
+db.personas.find().limit(1)
+
+Ordernar por un campo, si tiene 1 ordena en ascendente y si tiene -1 ordena en descendente
+db.personas.find().sort({Edad:1})
+
+Buscar los mayores a cierto numero
+db.personas.find({Edad:{$gt:20}})   $gte mayor o igual
+
+Buscar los menores a cierto numero
+db.personas.find({Edad:{$lt:20}})   $lte menor o igual
+
+Uso de OR, se usa una lista de filtros
+db.personas.find({$or:[{Nombre:"John"},{Edad:100}]})
+
+Ver si un campo esta dentro de un array
+db.personas.find({Edad:{$in:[100,19]}})  $nin es por si no esta
+
+Devuelve todos los que tengan ese elemento en el arreglo, si queremos decir que sea igual 
+hay que agregar corchetes.
+db.personas.find({Juegos:"Minecraft"})
+
+Buscar que en el arreglo esten ambos elementos
+db.personas.find({Juegos:{$all:["Minecraft","Roblox"]}})
+
+Para el caso de los vehiculos
+db.personas.find({"vehiculos.marca":"Toyota"})
