@@ -1222,3 +1222,60 @@ MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando a
 
 **PUSHEADO `e8c19ba4`** — commits `bf15a059` (el renombrado y la fusión) + `e8c19ba4` (este bloque
 del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
+### `opencode` - barrido de tablas + pedido de rebuild del sitio - 05/11/2026
+
+> [!success] Las 147 tablas markdown que quedaban fuera de callouts ya estan dentro
+>
+> Cierre de la regla de estilo del dueno ("nada de texto plano fuera de callouts"):
+> las tablas tambien contaban. Medicion inicial: **133 bloques de tabla fuera de todo
+> callout en 42 notas** (10 de ellos "huerfanos", con un callout justo encima y la
+> tabla colgada). Resultado: **0 tablas fuera de callout en todo el vault**.
+>
+> - **35 absorbidas** en el callout que ya tenian encima (mismo encabezado): la tabla
+>   se cita dentro (`> | ...`) y el contenido del callout se conserva intacto.
+> - **98 convertidas** en callout nuevo, con el titulo del encabezado mas cercano
+>   (mismo criterio que el barrido de prosa) y desambiguacion con el encabezado
+>   padre si el titulo se repite en la nota.
+> - **14 mas** en el `00 - Indice de Contenido.md` de Base de Datos, que arrastro las
+>   tablas del LEEME de U0 al fusionarlo (commit `bf15a059` de `master`).
+> - **2 overrides** de titulo: `a. Partes del Equipo` (titulo de 69 chars) y
+>   `Tabla Resumen de Criterios - Resumen Visual Completo` (colision con un callout
+>   previo de la misma nota).
+>
+> [!info] Conflictos con otra sesion (resueltos a mano)
+>
+> - `master` habia renombrado los 19 LEEMEs a `00 - Indice de Contenido` y fusionado
+>   el de SBD U0, **borrando** `3er Semestre/Sistema de Bases de Datos/Unidad 0 -
+>   Guias y Ejercicios/00 - Leeme Unidad 0.md` (que nosotros habiamos citado en
+>   callouts). Se **acepto el borrado** (decision de `master`) y se reaplico el
+>   formato de callouts/tablas sobre el archivo que quedo.
+> - La prosa real del vault quedo en **206 lineas** (de 412 en el baseline
+>   `3758a0db`), sin regresiones: lo que queda son exclusiones deliberadas
+>   (**Tags:**, flashcards SR, navegacion `-> [[...]]`, LaTeX/codigo roto y
+>   `Herramientas/`).
+>
+> [!warning] QA del barrido de tablas
+>
+> - Tablas fuera de callout: **133 -> 0** (y 14 -> 0 en el indice fusionado).
+> - `qa_links.py`: targets=**8041** bad=**0**.
+> - `qa_omitidas.py`: **824 revisadas / 822 publican / 2 omitidas / 0 revisar**.
+> - Callouts: pegados=**143** (preexistente), anidados=**0**, dispersos=**1**
+>   (preexistente). Fences sin cerrar: **4** (preexistentes).
+> - Validador de los 103 callouts nuevos: **0 errores** (todos con tipo, emoji y
+>   titulo con texto, con separador `>` y la tabla citada entera).
+>
+> [!todo] `opencode-site` - falta el rebuild del sitio
+>
+> El sitio publicado (`neonotes-espol.vercel.app`) todavia no tiene este trabajo.
+> Con lo que hay ahora en `master` (`11a26057`) :
+>
+> - **822 notas publicables** (de 824 revisadas; 2 omitidas por copyright).
+> - **42 notas** con las tablas dentro de callouts + **37 notas** con la prosa
+>   citada (el barrido de `0955d3d4` + el fix `8a46ae11`).
+> - **1.916 callouts** que ya tienen titulo con texto pero sin emoji (preexistente,
+>   fuera del alcance aprobado): si `opencode-site` normaliza ese formato, el sitio
+>   queda 100% con la casa.
+>
+> Pedido: rebuild del sitio y verificacion de que las tablas dentro de callouts
+> renderizan igual que en Obsidian (van como `> | ...`).
+
