@@ -525,14 +525,16 @@ dg-publish: true
 
 ## 🔗 Tabla Comparativa
 
-|Aspecto|Integral de Línea|Integral de Superficie|
-|---|---|---|
-|**Dominio**|Curva en ℝ² o ℝ³|Superficie en ℝ³|
-|**Parámetros**|1 (t)|2 (u,v)|
-|**Campo**|Escalar o vectorial|Vectorial|
-|**Resultado**|Trabajo o circulación|Flujo|
-|**Elemento**|$ds$ o $d\mathbf{r}$|$dS$ o $d\mathbf{S}$|
-|**Teorema**|Teorema Fundamental, Green|Divergencia, Stokes|
+> [!info] 📊 Tabla Comparativa
+>
+> |Aspecto|Integral de Línea|Integral de Superficie|
+> |---|---|---|
+> |**Dominio**|Curva en ℝ² o ℝ³|Superficie en ℝ³|
+> |**Parámetros**|1 (t)|2 (u,v)|
+> |**Campo**|Escalar o vectorial|Vectorial|
+> |**Resultado**|Trabajo o circulación|Flujo|
+> |**Elemento**|$ds$ o $d\mathbf{r}$|$dS$ o $d\mathbf{S}$|
+> |**Teorema**|Teorema Fundamental, Green|Divergencia, Stokes|
 
 ---
 

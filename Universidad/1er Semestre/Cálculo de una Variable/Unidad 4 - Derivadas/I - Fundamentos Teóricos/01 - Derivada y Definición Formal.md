@@ -311,14 +311,14 @@ dg-publish: true
 ### 📝 Diferentes Símbolos
 
 > [!info] 📋 **Tabla de Notaciones**
-
-| Notación        | Nombre               | Uso Principal                        |
-| --------------- | -------------------- | ------------------------------------ |
-| $f'(x)$         | Notación de Lagrange | Funciones generales                  |
-| $\frac{dy}{dx}$ | Notación de Leibniz  | Énfasis en variables                 |
-| $\frac{df}{dx}$ | Notación de Leibniz  | Funciones específicas                |
-| $D_x[f(x)]$     | Notación de operador | Operaciones algebraicas              |
-| $\dot{y}$       | Notación de Newton   | Física (derivada respecto al tiempo) |
+>
+> | Notación        | Nombre               | Uso Principal                        |
+> | --------------- | -------------------- | ------------------------------------ |
+> | $f'(x)$         | Notación de Lagrange | Funciones generales                  |
+> | $\frac{dy}{dx}$ | Notación de Leibniz  | Énfasis en variables                 |
+> | $\frac{df}{dx}$ | Notación de Leibniz  | Funciones específicas                |
+> | $D_x[f(x)]$     | Notación de operador | Operaciones algebraicas              |
+> | $\dot{y}$       | Notación de Newton   | Física (derivada respecto al tiempo) |
 
 ### 🌊 Significado de la Notación de Leibniz
 

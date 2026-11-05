@@ -77,13 +77,13 @@ dg-publish: true
 ## 📝 Tabla de Secciones
 
 > [!question] 📋 Referencia rápida
-
-| Sección | Duración | Idea clave | Recurso retórico |
-|---|---|---|---|
-| Introduction | ~0:50 seg | Hardware = físico / Software = estrategia | Pregunta retórica + analogía fútbol |
-| The Body | ~0:50 seg | Interacción táctil: software lee, hardware muestra | Contraste herramienta / cerebro |
-| Real-World Example | ~0:20 seg | Software = ahorro: no compras PC por cada app | Argumento económico cotidiano |
-| Conclusion | ~0:20 seg | Equipo cuerpo + cerebro | Cierre circular con metáfora |
+>
+> | Sección | Duración | Idea clave | Recurso retórico |
+> |---|---|---|---|
+> | Introduction | ~0:50 seg | Hardware = físico / Software = estrategia | Pregunta retórica + analogía fútbol |
+> | The Body | ~0:50 seg | Interacción táctil: software lee, hardware muestra | Contraste herramienta / cerebro |
+> | Real-World Example | ~0:20 seg | Software = ahorro: no compras PC por cada app | Argumento económico cotidiano |
+> | Conclusion | ~0:20 seg | Equipo cuerpo + cerebro | Cierre circular con metáfora |
 
 ---
 

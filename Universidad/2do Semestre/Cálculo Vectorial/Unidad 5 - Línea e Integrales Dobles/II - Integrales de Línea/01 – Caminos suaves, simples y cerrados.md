@@ -214,11 +214,13 @@ dg-publish: true
 
 **Comparación visual:**
 
-|Camino|Gráfica|Derivada|Suavidad|
-|---|---|---|---|
-|Circunferencia|Curva lisa, circular|Nunca cero|✅ Suave|
-|Cúspide|Punta aguda|Se anula|❌ No suave|
-|Valor absoluto|Esquina en V|No existe|❌ No suave|
+> [!info] 📊 Ejemplos de Análisis
+>
+> |Camino|Gráfica|Derivada|Suavidad|
+> |---|---|---|---|
+> |Circunferencia|Curva lisa, circular|Nunca cero|✅ Suave|
+> |Cúspide|Punta aguda|Se anula|❌ No suave|
+> |Valor absoluto|Esquina en V|No existe|❌ No suave|
 
 ---
 

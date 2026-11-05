@@ -28,11 +28,13 @@ dg-publish: true
 
 ### Tabla de Comportamientos
 
-|Tipo de Límite|Notación|Comportamiento de f(x)|Interpretación Gráfica|
-|---|---|---|---|
-|**Infinito positivo**|$\lim_{x \to a} f(x) = +\infty$|Crece sin límite|Asíntota vertical, función sube|
-|**Infinito negativo**|$\lim_{x \to a} f(x) = -\infty$|Decrece sin límite|Asíntota vertical, función baja|
-|**Límites laterales diferentes**|$\lim_{x \to a^+} f(x) = +\infty$, $\lim_{x \to a^-} f(x) = -\infty$|Comportamientos opuestos|Asíntota vertical con salto|
+> [!info] 📊 Tabla de Comportamientos
+>
+> |Tipo de Límite|Notación|Comportamiento de f(x)|Interpretación Gráfica|
+> |---|---|---|---|
+> |**Infinito positivo**|$\lim_{x \to a} f(x) = +\infty$|Crece sin límite|Asíntota vertical, función sube|
+> |**Infinito negativo**|$\lim_{x \to a} f(x) = -\infty$|Decrece sin límite|Asíntota vertical, función baja|
+> |**Límites laterales diferentes**|$\lim_{x \to a^+} f(x) = +\infty$, $\lim_{x \to a^-} f(x) = -\infty$|Comportamientos opuestos|Asíntota vertical con salto|
 
 ## Asíntotas Verticales
 
@@ -227,12 +229,14 @@ dg-publish: true
 
 ### Casos Especiales
 
-|Caso|Notación|Significado|
-|---|---|---|
-|**Límite finito**|$\lim_{x \to \infty} f(x) = L$|La función se aproxima a un valor L|
-|**Límite infinito positivo**|$\lim_{x \to \infty} f(x) = +\infty$|La función crece sin límite|
-|**Límite infinito negativo**|$\lim_{x \to \infty} f(x) = -\infty$|La función decrece sin límite|
-|**No existe**|$\lim_{x \to \infty} f(x) = \nexists$|La función oscila o no tiene comportamiento definido|
+> [!info] 📊 Casos Especiales
+>
+> |Caso|Notación|Significado|
+> |---|---|---|
+> |**Límite finito**|$\lim_{x \to \infty} f(x) = L$|La función se aproxima a un valor L|
+> |**Límite infinito positivo**|$\lim_{x \to \infty} f(x) = +\infty$|La función crece sin límite|
+> |**Límite infinito negativo**|$\lim_{x \to \infty} f(x) = -\infty$|La función decrece sin límite|
+> |**No existe**|$\lim_{x \to \infty} f(x) = \nexists$|La función oscila o no tiene comportamiento definido|
 
 ## Comportamiento Asintótico Horizontal
 
@@ -269,11 +273,13 @@ dg-publish: true
 
 ### Tabla de Casos para Funciones Racionales
 
-|Relación de Grados|Resultado del Límite|Ejemplo|
-|---|---|---|
-|$n < m$ (grado numerador < denominador)|$\lim_{x \to \infty} f(x) = 0$|$\frac{x^2}{x^3 + 1} \to 0$|
-|$n = m$ (grados iguales)|$\lim_{x \to \infty} f(x) = \frac{a_n}{b_m}$|$\frac{3x^2 + 1}{2x^2 - 5} \to \frac{3}{2}$|
-|$n > m$ (grado numerador > denominador)|$\lim_{x \to \infty} f(x) = \pm\infty$|$\frac{x^3 + 2}{x^2 - 1} \to \infty$|
+> [!info] 📊 Tabla de Casos para Funciones Racionales
+>
+> |Relación de Grados|Resultado del Límite|Ejemplo|
+> |---|---|---|
+> |$n < m$ (grado numerador < denominador)|$\lim_{x \to \infty} f(x) = 0$|$\frac{x^2}{x^3 + 1} \to 0$|
+> |$n = m$ (grados iguales)|$\lim_{x \to \infty} f(x) = \frac{a_n}{b_m}$|$\frac{3x^2 + 1}{2x^2 - 5} \to \frac{3}{2}$|
+> |$n > m$ (grado numerador > denominador)|$\lim_{x \to \infty} f(x) = \pm\infty$|$\frac{x^3 + 2}{x^2 - 1} \to \infty$|
 
 > [!warning] 🔍 **Método de Resolución**
 > 

@@ -11,12 +11,14 @@ tags: [CCPG1043, políticas, syllabus]
 
 ## 📬 Contacto
 
-| Canal | Uso |
-|---|---|
-| ✉️ `caencede@espol.edu.ec` | **Medio de contacto formal** |
-| 💬 MS Teams | Medio de contacto informal |
-| 🚪 Oficina 11F-115 | Previa planificación |
-| ⛔ AV | Preferible **no** escribir por AV |
+> [!info] 📊 Contacto
+>
+> | Canal | Uso |
+> |---|---|
+> | ✉️ `caencede@espol.edu.ec` | **Medio de contacto formal** |
+> | 💬 MS Teams | Medio de contacto informal |
+> | 🚪 Oficina 11F-115 | Previa planificación |
+> | ⛔ AV | Preferible **no** escribir por AV |
 
 ## 📊 Ponderación de calificaciones
 

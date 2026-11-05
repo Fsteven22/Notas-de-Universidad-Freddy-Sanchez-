@@ -33,16 +33,18 @@ dg-publish: true
 
 ### a. Partes del Equipo (según TABLA SEGUNDA LEY DE NEWTON.pdf e imagen)
 
-|Número|Componente|Descripción|
-|---|---|---|
-|1|Control / Interfaz digital|Unidad principal que interactúa con sensores|
-|2|Sensores ópticos|Detectan paso del objeto al interrumpir haz láser|
-|3|Contador digital|Cronometra tiempos entre señales|
-|4|Placa obturadora|Pieza unida al carrito que activa sensores|
-|5|Carrito|Objeto que se mueve en la pista|
-|6|Polea|Permite que cuerda con masas aplique fuerza|
-|7|Pista de aire / riel|Superficie de baja fricción|
-|8|Nivelador / Pata ajustable|Ajusta horizontalidad de la pista|
+> [!info] 📊 a. Partes del Equipo
+>
+> |Número|Componente|Descripción|
+> |---|---|---|
+> |1|Control / Interfaz digital|Unidad principal que interactúa con sensores|
+> |2|Sensores ópticos|Detectan paso del objeto al interrumpir haz láser|
+> |3|Contador digital|Cronometra tiempos entre señales|
+> |4|Placa obturadora|Pieza unida al carrito que activa sensores|
+> |5|Carrito|Objeto que se mueve en la pista|
+> |6|Polea|Permite que cuerda con masas aplique fuerza|
+> |7|Pista de aire / riel|Superficie de baja fricción|
+> |8|Nivelador / Pata ajustable|Ajusta horizontalidad de la pista|
 
 ### b. Uso de Instrumentos y Mediciones Directas (Tabla 2)
 

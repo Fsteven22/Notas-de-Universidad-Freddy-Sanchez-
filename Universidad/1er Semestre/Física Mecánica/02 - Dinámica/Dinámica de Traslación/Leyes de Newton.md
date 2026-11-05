@@ -20,16 +20,18 @@ dg-publish: true
 
 ## 📌 Variables del Sistema
 
-|Variable|Símbolo|Unidad|Descripción|
-|---|---|---|---|
-|Masa|$m$|kg|Cantidad de materia|
-|Aceleración|$a$|m/s²|Cambio de velocidad|
-|Gravedad|$g$|9.8 m/s²|Aceleración gravitacional|
-|Fuerza Normal|$N$|N|Perpendicular a superficie|
-|Fricción|$f$|N|Oposición al movimiento|
-|Tensión|$T$|N|Fuerza en cuerdas/cables|
-|Peso|$W$|N|$W = mg$|
-|Coeficiente fricción|$\mu$|-|Estático ($\mu_s$) o cinético ($\mu_k$)|
+> [!info] 📊 Variables del Sistema
+>
+> |Variable|Símbolo|Unidad|Descripción|
+> |---|---|---|---|
+> |Masa|$m$|kg|Cantidad de materia|
+> |Aceleración|$a$|m/s²|Cambio de velocidad|
+> |Gravedad|$g$|9.8 m/s²|Aceleración gravitacional|
+> |Fuerza Normal|$N$|N|Perpendicular a superficie|
+> |Fricción|$f$|N|Oposición al movimiento|
+> |Tensión|$T$|N|Fuerza en cuerdas/cables|
+> |Peso|$W$|N|$W = mg$|
+> |Coeficiente fricción|$\mu$|-|Estático ($\mu_s$) o cinético ($\mu_k$)|
 
 ---
 

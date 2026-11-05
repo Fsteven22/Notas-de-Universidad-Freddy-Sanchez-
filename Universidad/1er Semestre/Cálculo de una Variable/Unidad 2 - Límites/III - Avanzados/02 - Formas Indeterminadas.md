@@ -43,14 +43,14 @@ dg-publish: true
 > **3. Factor común:** $$ax + bx = x(a + b)$$
 > 
 > **4. Trinomio de segundo grado:** $$ax^2 + bx + c = (px + q)(rx + s)$$
-
-|Tipo de Factorización|Patrón|Ejemplo|Factorizado|
-|---|---|---|---|
-|Diferencia de cuadrados|$a^2 - b^2$|$x^2 - 4$|$(x+2)(x-2)$|
-|Cuadrado perfecto|$(a \pm b)^2$|$x^2 + 6x + 9$|$(x+3)^2$|
-|Factor común|$x(a + b)$|$3x^2 + 6x$|$3x(x+2)$|
-|Trinomio general|$ax^2 + bx + c$|$2x^2 + 7x + 3$|$(2x+1)(x+3)$|
-|Diferencia de cubos|$a^3 - b^3$|$x^3 - 8$|$(x-2)(x^2+2x+4)$|
+>
+> |Tipo de Factorización|Patrón|Ejemplo|Factorizado|
+> |---|---|---|---|
+> |Diferencia de cuadrados|$a^2 - b^2$|$x^2 - 4$|$(x+2)(x-2)$|
+> |Cuadrado perfecto|$(a \pm b)^2$|$x^2 + 6x + 9$|$(x+3)^2$|
+> |Factor común|$x(a + b)$|$3x^2 + 6x$|$3x(x+2)$|
+> |Trinomio general|$ax^2 + bx + c$|$2x^2 + 7x + 3$|$(2x+1)(x+3)$|
+> |Diferencia de cubos|$a^3 - b^3$|$x^3 - 8$|$(x-2)(x^2+2x+4)$|
 
 > [!example] 📝 Ejemplos de Factorización
 > 
@@ -118,12 +118,12 @@ dg-publish: true
 > **2. Racionalización con conjugado:** $$\frac{1}{\sqrt{a} + \sqrt{b}} \cdot \frac{\sqrt{a} - \sqrt{b}}{\sqrt{a} - \sqrt{b}} = \frac{\sqrt{a} - \sqrt{b}}{a - b}$$
 > 
 > **3. Racionalización del numerador:** $$\frac{\sqrt{a} - \sqrt{b}}{c} \cdot \frac{\sqrt{a} + \sqrt{b}}{\sqrt{a} + \sqrt{b}} = \frac{a - b}{c(\sqrt{a} + \sqrt{b})}$$
-
-|Situación|Multiplicar por|Resultado|Uso típico|
-|---|---|---|---|
-|$\frac{A}{\sqrt{x}}$|$\frac{\sqrt{x}}{\sqrt{x}}$|$\frac{A\sqrt{x}}{x}$|Denominador con una raíz|
-|$\frac{A}{\sqrt{x} + \sqrt{y}}$|$\frac{\sqrt{x} - \sqrt{y}}{\sqrt{x} - \sqrt{y}}$|$\frac{A(\sqrt{x} - \sqrt{y})}{x - y}$|Suma de raíces en denominador|
-|$\frac{\sqrt{x} - \sqrt{y}}{A}$|$\frac{\sqrt{x} + \sqrt{y}}{\sqrt{x} + \sqrt{y}}$|$\frac{x - y}{A(\sqrt{x} + \sqrt{y})}$|Resta de raíces en numerador|
+>
+> |Situación|Multiplicar por|Resultado|Uso típico|
+> |---|---|---|---|
+> |$\frac{A}{\sqrt{x}}$|$\frac{\sqrt{x}}{\sqrt{x}}$|$\frac{A\sqrt{x}}{x}$|Denominador con una raíz|
+> |$\frac{A}{\sqrt{x} + \sqrt{y}}$|$\frac{\sqrt{x} - \sqrt{y}}{\sqrt{x} - \sqrt{y}}$|$\frac{A(\sqrt{x} - \sqrt{y})}{x - y}$|Suma de raíces en denominador|
+> |$\frac{\sqrt{x} - \sqrt{y}}{A}$|$\frac{\sqrt{x} + \sqrt{y}}{\sqrt{x} + \sqrt{y}}$|$\frac{x - y}{A(\sqrt{x} + \sqrt{y})}$|Resta de raíces en numerador|
 
 > [!example] 📊 Ejemplos de Racionalización
 > 
@@ -183,13 +183,13 @@ dg-publish: true
 > **2. Cancelación múltiple:** $$\frac{(x-a)^2 \cdot P(x)}{(x-a) \cdot Q(x)} = \frac{(x-a) \cdot P(x)}{Q(x)} \quad (x ≠ a)$$
 > 
 > **3. Cancelación con factorización previa:** $$\frac{f(x)}{g(x)} \to \frac{A(x)(x-a)}{B(x)(x-a)} = \frac{A(x)}{B(x)}$$
-
-|Situación|Antes de Cancelar|Después de Cancelar|Factor Cancelado|
-|---|---|---|---|
-|Factor lineal|$\frac{(x-2)(x+1)}{(x-2)(x+3)}$|$\frac{x+1}{x+3}$|$(x-2)$|
-|Factor cuadrático|$\frac{(x^2-1)(x+2)}{(x^2-1)(x-3)}$|$\frac{x+2}{x-3}$|$(x^2-1)$|
-|Múltiples factores|$\frac{(x-1)^2(x+2)}{(x-1)(x+5)}$|$\frac{(x-1)(x+2)}{x+5}$|$(x-1)$|
-|Con constantes|$\frac{2(x-3)(x+1)}{4(x-3)}$|$\frac{(x+1)}{2}$|$2(x-3)$|
+>
+> |Situación|Antes de Cancelar|Después de Cancelar|Factor Cancelado|
+> |---|---|---|---|
+> |Factor lineal|$\frac{(x-2)(x+1)}{(x-2)(x+3)}$|$\frac{x+1}{x+3}$|$(x-2)$|
+> |Factor cuadrático|$\frac{(x^2-1)(x+2)}{(x^2-1)(x-3)}$|$\frac{x+2}{x-3}$|$(x^2-1)$|
+> |Múltiples factores|$\frac{(x-1)^2(x+2)}{(x-1)(x+5)}$|$\frac{(x-1)(x+2)}{x+5}$|$(x-1)$|
+> |Con constantes|$\frac{2(x-3)(x+1)}{4(x-3)}$|$\frac{(x+1)}{2}$|$2(x-3)$|
 
 > [!example] 🎨 Ejemplos de Cancelación
 > 
@@ -662,12 +662,14 @@ dg-publish: true
 
 ### 📊 Verificación de Condiciones
 
-|Condición|¿Cómo verificar?|Ejemplo|✓/✗|
-|---|---|---|---|
-|Forma indeterminada|Sustituir directamente|$\lim_{x \to 0} \frac{\sin x}{x} = \frac{0}{0}$|✓|
-|Diferenciabilidad|Verificar que existen $f'(x)$ y $g'(x)$|$f(x) = \sin x$, $f'(x) = \cos x$|✓|
-|$g'(x) ≠ 0$|Calcular $g'(x)$ y verificar|$g(x) = x$, $g'(x) = 1 ≠ 0$|✓|
-|Límite existe|Evaluar $\lim \frac{f'(x)}{g'(x)}$|$\lim_{x \to 0} \frac{\cos x}{1} = 1$|✓|
+> [!info] 📊 Verificación de Condiciones
+>
+> |Condición|¿Cómo verificar?|Ejemplo|✓/✗|
+> |---|---|---|---|
+> |Forma indeterminada|Sustituir directamente|$\lim_{x \to 0} \frac{\sin x}{x} = \frac{0}{0}$|✓|
+> |Diferenciabilidad|Verificar que existen $f'(x)$ y $g'(x)$|$f(x) = \sin x$, $f'(x) = \cos x$|✓|
+> |$g'(x) ≠ 0$|Calcular $g'(x)$ y verificar|$g(x) = x$, $g'(x) = 1 ≠ 0$|✓|
+> |Límite existe|Evaluar $\lim \frac{f'(x)}{g'(x)}$|$\lim_{x \to 0} \frac{\cos x}{1} = 1$|✓|
 
 > [!example] 📝 Verificación Paso a Paso $$\lim_{x \to 0} \frac{e^x - 1}{x}$$
 > 
@@ -795,13 +797,15 @@ dg-publish: true
 
 ### 🎭 Formas Indeterminadas Principales
 
-|Forma|Transformación|Método|
-|---|---|---|
-|$0 \cdot ∞$|$\frac{0}{1/∞}$ o $\frac{∞}{1/0}$|Reescribir como cociente|
-|$∞ - ∞$|$∞(1 - \frac{∞}{∞})$|Factor común o denominador común|
-|$0^0$|$e^{0 \cdot \ln 0}$|Logaritmo → forma $0 \cdot ∞$|
-|$1^∞$|$e^{∞ \cdot \ln 1}$|Logaritmo → forma $∞ \cdot 0$|
-|$∞^0$|$e^{0 \cdot \ln ∞}$|Logaritmo → forma $0 \cdot ∞$|
+> [!info] 📊 Formas Indeterminadas Principales
+>
+> |Forma|Transformación|Método|
+> |---|---|---|
+> |$0 \cdot ∞$|$\frac{0}{1/∞}$ o $\frac{∞}{1/0}$|Reescribir como cociente|
+> |$∞ - ∞$|$∞(1 - \frac{∞}{∞})$|Factor común o denominador común|
+> |$0^0$|$e^{0 \cdot \ln 0}$|Logaritmo → forma $0 \cdot ∞$|
+> |$1^∞$|$e^{∞ \cdot \ln 1}$|Logaritmo → forma $∞ \cdot 0$|
+> |$∞^0$|$e^{0 \cdot \ln ∞}$|Logaritmo → forma $0 \cdot ∞$|
 
 > [!example] 🎯 Ejemplos de Transformación
 > 
@@ -856,12 +860,14 @@ dg-publish: true
 
 ### 📊 Cuándo Usar Métodos Alternativos
 
-|Situación|Método Alternativo|Ejemplo|
-|---|---|---|
-|Límite trigonométrico básico|Límites fundamentales|$\lim_{x \to 0} \frac{\sin x}{x} = 1$|
-|Factorización posible|Cancelación algebraica|$\lim_{x \to 2} \frac{x^2-4}{x-2}$|
-|Racionalización aplicable|Conjugados|$\lim_{x \to 0} \frac{\sqrt{1+x}-1}{x}$|
-|Sustitución trigonométrica|Identidades|$\lim_{x \to 0} \frac{1-\cos x}{x^2}$|
+> [!info] 📊 Cuándo Usar Métodos Alternativos
+>
+> |Situación|Método Alternativo|Ejemplo|
+> |---|---|---|
+> |Límite trigonométrico básico|Límites fundamentales|$\lim_{x \to 0} \frac{\sin x}{x} = 1$|
+> |Factorización posible|Cancelación algebraica|$\lim_{x \to 2} \frac{x^2-4}{x-2}$|
+> |Racionalización aplicable|Conjugados|$\lim_{x \to 0} \frac{\sqrt{1+x}-1}{x}$|
+> |Sustitución trigonométrica|Identidades|$\lim_{x \to 0} \frac{1-\cos x}{x^2}$|
 
 > [!tip] 🎯 Estrategia Óptima **Orden de preferencia:**
 > 

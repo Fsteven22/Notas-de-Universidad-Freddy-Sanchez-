@@ -772,14 +772,16 @@ dg-publish: true
 
 ### 📋 Tabla Comparativa de Conceptos
 
-|Concepto|Definición|Condición Matemática|Ejemplo Simple|
-|---|---|---|---|
-|**Vectores ortogonales**|Perpendiculares|⟨u,v⟩ = 0|(1,0) ⊥ (0,1)|
-|**Conjunto ortogonal**|Ortogonales por pares|⟨vᵢ,vⱼ⟩ = 0, i≠j|{(1,0), (0,1)}|
-|**Base ortogonal**|Conjunto ortogonal que genera|Ortogonal + genera V|Base estándar|
-|**Vector normalizado**|Norma 1|\|u\| = 1|(1,0), (0,1)|
-|**Conjunto ortonormal**|Ortogonal + normalizado|⟨uᵢ,uⱼ⟩ = δᵢⱼ|{(1,0), (0,1)}|
-|**Base ortonormal**|Base + ortonormal|Base + ⟨uᵢ,uⱼ⟩ = δᵢⱼ|Base estándar de ℝⁿ|
+> [!info] 📊 Tabla Comparativa de Conceptos
+>
+> |Concepto|Definición|Condición Matemática|Ejemplo Simple|
+> |---|---|---|---|
+> |**Vectores ortogonales**|Perpendiculares|⟨u,v⟩ = 0|(1,0) ⊥ (0,1)|
+> |**Conjunto ortogonal**|Ortogonales por pares|⟨vᵢ,vⱼ⟩ = 0, i≠j|{(1,0), (0,1)}|
+> |**Base ortogonal**|Conjunto ortogonal que genera|Ortogonal + genera V|Base estándar|
+> |**Vector normalizado**|Norma 1|\|u\| = 1|(1,0), (0,1)|
+> |**Conjunto ortonormal**|Ortogonal + normalizado|⟨uᵢ,uⱼ⟩ = δᵢⱼ|{(1,0), (0,1)}|
+> |**Base ortonormal**|Base + ortonormal|Base + ⟨uᵢ,uⱼ⟩ = δᵢⱼ|Base estándar de ℝⁿ|
 
 ### 🎯 Flujo de Trabajo Típico
 

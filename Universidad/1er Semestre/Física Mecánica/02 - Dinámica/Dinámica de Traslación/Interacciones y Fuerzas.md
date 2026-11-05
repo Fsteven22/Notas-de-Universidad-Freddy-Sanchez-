@@ -20,15 +20,17 @@ dg-publish: true
 
 ## ⚙️ Variables del Sistema
 
-|Variable|Símbolo|Unidad|Descripción|
-|---|---|---|---|
-|Fuerza|$F$|N|Interacción entre dos objetos|
-|Peso|$W$|N|Fuerza gravitatoria ($W = mg$)|
-|Normal|$N$|N|Perpendicular al contacto|
-|Tensión|$T$|N|Transmitida por cuerdas/cables|
-|Fricción Estática|$f_s$|N|Oposición al movimiento inminente|
-|Fricción Cinética|$f_k$|N|Oposición al movimiento activo|
-|Subíndices|$F_{A/B}$|-|Fuerza de A sobre B|
+> [!info] 📊 Variables del Sistema
+>
+> |Variable|Símbolo|Unidad|Descripción|
+> |---|---|---|---|
+> |Fuerza|$F$|N|Interacción entre dos objetos|
+> |Peso|$W$|N|Fuerza gravitatoria ($W = mg$)|
+> |Normal|$N$|N|Perpendicular al contacto|
+> |Tensión|$T$|N|Transmitida por cuerdas/cables|
+> |Fricción Estática|$f_s$|N|Oposición al movimiento inminente|
+> |Fricción Cinética|$f_k$|N|Oposición al movimiento activo|
+> |Subíndices|$F_{A/B}$|-|Fuerza de A sobre B|
 
 ### 🔤 Notación de Subíndices
 
@@ -142,12 +144,14 @@ $$\vec{F}_{A/B} = -\vec{F}_{B/A}$$
 
 ![[Diagramas/Interacciones_y_Fuerzas_11.svg]]
 
-|Eslabón|Fuerzas que Recibe|Par de Reacción|
-|---|---|---|
-|**1**|• Tensión cuerda ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 2 ↓|• $T_{1/c}$ ↓<br/>• $R_{1/t}$ ↑<br/>• $F_{1/2}$ ↑|
-|**2**|• Fuerza eslabón 1 ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 3 ↓|• $F_{2/1}$ ↓<br/>• $R_{2/t}$ ↑<br/>• $F_{2/3}$ ↑|
-|**3**|• Fuerza eslabón 2 ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 4 ↓|• $F_{3/2}$ ↓<br/>• $R_{3/t}$ ↑<br/>• $F_{3/4}$ ↑|
-|**4**|• Fuerza eslabón 3 ↑<br/>• Peso Tierra ↓|• $F_{4/3}$ ↓<br/>• $R_{4/t}$ ↑|
+> [!info] 📊 Análisis por Eslabones
+>
+> |Eslabón|Fuerzas que Recibe|Par de Reacción|
+> |---|---|---|
+> |**1**|• Tensión cuerda ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 2 ↓|• $T_{1/c}$ ↓<br/>• $R_{1/t}$ ↑<br/>• $F_{1/2}$ ↑|
+> |**2**|• Fuerza eslabón 1 ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 3 ↓|• $F_{2/1}$ ↓<br/>• $R_{2/t}$ ↑<br/>• $F_{2/3}$ ↑|
+> |**3**|• Fuerza eslabón 2 ↑<br/>• Peso Tierra ↓<br/>• Fuerza eslabón 4 ↓|• $F_{3/2}$ ↓<br/>• $R_{3/t}$ ↑<br/>• $F_{3/4}$ ↑|
+> |**4**|• Fuerza eslabón 3 ↑<br/>• Peso Tierra ↓|• $F_{4/3}$ ↓<br/>• $R_{4/t}$ ↑|
 
 ### 🔺 Ejemplo 2: Bloque en Plano Inclinado
 

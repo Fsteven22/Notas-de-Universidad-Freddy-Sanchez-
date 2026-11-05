@@ -43,13 +43,13 @@ dg-publish: true
 > - $\text{Velocidad promedio} = \frac{128 - 128}{3 - 1} = 0$ pies/seg
 > 
 > **Interpretación:** El objeto regresa a la misma altura, velocidad promedio = 0
-
-|Tipo de Aplicación|Variable Independiente|Variable Dependiente|Tasa de Cambio|
-|---|---|---|---|
-|Velocidad|Tiempo (t)|Posición (s)|Velocidad (m/s)|
-|Densidad poblacional|Área (A)|Población (P)|Personas/km²|
-|Costo marginal|Cantidad (q)|Costo (C)|$/unidad|
-|Temperatura|Tiempo (t)|Temperatura (T)|°C/hora|
+>
+> |Tipo de Aplicación|Variable Independiente|Variable Dependiente|Tasa de Cambio|
+> |---|---|---|---|
+> |Velocidad|Tiempo (t)|Posición (s)|Velocidad (m/s)|
+> |Densidad poblacional|Área (A)|Población (P)|Personas/km²|
+> |Costo marginal|Cantidad (q)|Costo (C)|$/unidad|
+> |Temperatura|Tiempo (t)|Temperatura (T)|°C/hora|
 
 ### ⚡ Tasa de Cambio Instantánea
 
@@ -111,13 +111,13 @@ dg-publish: true
 > 
 > - En $q = 100$ unidades: $C'(100) = 50 + 20 = 70$ $/unidad
 > - Producir la unidad 101 cuesta aproximadamente $70 adicionales
-
-|Área|Función Original|Derivada (Tasa)|Interpretación|
-|---|---|---|---|
-|Física|Posición s(t)|Velocidad v(t) = s'(t)|Rapidez de cambio de posición|
-|Física|Velocidad v(t)|Aceleración a(t) = v'(t)|Rapidez de cambio de velocidad|
-|Economía|Costo C(q)|Costo Marginal C'(q)|Costo de una unidad adicional|
-|Biología|Población P(t)|Tasa de crecimiento P'(t)|Individuos por unidad de tiempo|
+>
+> |Área|Función Original|Derivada (Tasa)|Interpretación|
+> |---|---|---|---|
+> |Física|Posición s(t)|Velocidad v(t) = s'(t)|Rapidez de cambio de posición|
+> |Física|Velocidad v(t)|Aceleración a(t) = v'(t)|Rapidez de cambio de velocidad|
+> |Economía|Costo C(q)|Costo Marginal C'(q)|Costo de una unidad adicional|
+> |Biología|Población P(t)|Tasa de crecimiento P'(t)|Individuos por unidad de tiempo|
 
 ### 📊 Comparación Visual: Promedio vs Instantánea
 
