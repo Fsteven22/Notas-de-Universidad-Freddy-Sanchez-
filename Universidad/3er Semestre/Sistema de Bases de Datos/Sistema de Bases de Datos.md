@@ -27,6 +27,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 - [[02 - Primera forma normal y diccionario de datos]]
 - [[03 - Segunda y tercera forma normal]]
 - [[04 - Normalización paso a paso]]
+- Diapositivas: [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD 02 MC_a_ML.pdf|Unidad 0 — BD 02 MC_a_ML]]
 
 ---
 
