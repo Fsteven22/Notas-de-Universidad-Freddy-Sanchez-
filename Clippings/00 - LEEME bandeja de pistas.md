@@ -856,4 +856,55 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 >   marcadores externos a esas URLs quedan obsoletos (mismo aviso que el bloque de `opencode`).
 > - **Tags** `siel` intactos: el acronimo sigue siendo el nombre del caso.
 
-**PUSHEADO** — el hash va en el mensaje del commit.
+**PUSHEADO `9e82665f`** — rama `sesion/opencode-site` -> `master` (con merge de `origin/master`).
+
+---
+
+### `opencode-site` - reformulacion de las notas de la Unidad 3 (patrones) - 05/11/2026
+
+> [!success] Los titulos de U3 decian una cosa y las notas mostraban otra
+>
+> | Antes | Ahora | Por que |
+> |---|---|---|
+> | `01 - Qué es un patrón y encapsular lo que varía` | `01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo` | la nota es la definicion GoF, las 3 familias, los 2 principios y cuando aplicar un patron |
+> | `02 - Patrones esenciales I, Strategy Decorator Observer` | `02 - Strategy, Decorator y Observer` | "esenciales I" no decia nada; son los 3 patrones sin `if`, sin herencia y sin acople |
+> | `03 - Patrones esenciales II, creación y estructura` | `03 - Factory, Adapter, Facade, Singleton y Template Method` | **el titulo mentia**: la nota contenia Template Method, que es de comportamiento, no estructural |
+>
+> - **3 notas renombradas** con `git mv` (git los registra como renombre, no como borrado + alta) y
+>   **H1 actualizados**: cada uno dice que resuelve la nota.
+> - **13 wikilinks reescritos** en 6 notas: mapa de contenido (`Diseno de Software.md`), indice de
+>   U3, enlaces "anterior/siguiente" entre notas y los 3 enlaces de la nota del PDF.
+> - **Los 9 SVG de U3**: ruta corregida de `../Diagramas/` a `../Unidad 0 - Guias y Ejercicios/Diagramas/`
+>   (la vieja resolvia a una carpeta que no existe) y **rotulo `*Figura: ...*` debajo de cada
+>   diagrama**, que antes no tenian ninguno: no se podia saber que mostraba cada uno.
+> - **El PDF de las capturas embebido** en la nota 03 (`![[.../Patrones creacionales - capturas de
+>   clase.pdf]]`), antes solo habia un enlace a la nota del material.
+> - **LEEME de la Unidad 0**: los 5 libros con copyright que salieron del repo en `ca2891d1` pasan a
+>   texto plano; sus wikilinks quedaban rotos.
+>
+> **Slugs del sitio** (cambian los 3):
+> `/unidad-3-patrones-de-diseno/01-que-es-un-patron-de-diseno-gof-y-cuando-aplicarlo/`,
+> `/02-strategy-decorator-y-observer/`, `/03-factory-adapter-facade-singleton-y-template-method/`.
+> Los links internos se regeneran; los marcadores externos a las URLs viejas quedan obsoletos.
+
+> [!warning] Hallazgos para `opencode` (zona ajena, no los toque)
+>
+> 1. **2 `qa_links` BAD en Matematicas Discretas** (`Universidad/3er Semestre/Matematicas
+>    Discretas/00 - Leeme Unidad 0.md`): los enlaces a `LIBRO DE APOYO Discrete Mathematics and Its
+>    Applications by Kenneth Rosen (z-lib.org).pdf` y `LIBRO GUIA ... Johnsonbaugh (z-lib.org).pdf`
+>    quedaron rotos porque los libros con copyright salieron del indice de git en `ca2891d1` (siguen
+>    en el vault local, no se publican). En DSW lo resolvi pasando los 5 libros a texto plano;alli
+>    hace falta lo mismo.
+> 2. **52 wikilinks con ruta rota quedan en 14 notas de DSW** (los que habian reportado como 113):
+>    los de U1, U2, U4 y U5 siguen embebiendo `[[../Diagramas/dsw-u1-...svg]]` en vez de
+>    `../Unidad 0 - Guias y Ejercicios/Diagramas/`. Yo arregle los 9 de U3 (los que estaban en las
+>    notas de patrones); los 52 restantes son de las notas de las otras unidades. En el sitio no se
+>    rompen (el sync resuelve por nombre), pero **en Obsidian siguen rotos**.
+
+> [!question] Pendiente del dueño
+>
+> Las **2 reconstrucciones por contexto** (`â–` -> `▓` y `â€"` -> `—`, en ASCII-art de Algebra Lineal
+> y Calculo Vectorial): los bytes no existen ni en git ni en OneDrive, asi que se reconstruyeron
+> por contexto. Si prefieres otro caracter, es 1 commit.
+
+**PUSHEADO `286276e3`** - rama `sesion/opencode-site` -> `master`.
