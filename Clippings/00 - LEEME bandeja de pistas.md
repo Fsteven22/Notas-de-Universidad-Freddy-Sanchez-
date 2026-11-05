@@ -784,3 +784,39 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 
 **PUSHEADO `72822407`** — `adb4279d` (PDF + nota + enlaces) → merge con `origin/master` → `a23cd923`
 (resolución de los 2 conflictos) → `72822407` (integración de `567793a` de `opencode`).
+
+---
+
+### `opencode-site` - fix del titulo de los callouts del sitio - 05/11/2026
+
+> [!success] Un bug del parser de callouts contaminaba 359 titulos en todo el sitio
+>
+> `site/src/lib/rehype-callouts.mjs` calculaba el indice del salto de linea **antes** de quitar el
+> prefijo `[!tipo]`, asi que el `slice()` se pasaba de largo y el **titulo de la callout se tragaba un
+> fragmento de la primera linea del cuerpo**. Se veia en casi todas las paginas:
+>
+> - antes: `ℹ️ ℹ️ Portal de material de la materia\nEsta no`
+> - ahora: `ℹ️ ℹ️ Portal de material de la materia`
+>
+> No era solo de mi nota nueva: afectaba a **359 de los 15.038 callouts** del vault (los 18 LEEMEs,
+> los mapas de contenido, los indices de unidad, los "conceptos clave" de las notas de matematicas).
+>
+> - **Medicion** con el pipeline real del sitio (`remark-parse` -> `remark-math` -> `remark-rehype` ->
+>   `rehype-callouts`) sobre las **835 notas** de `Universidad/`: **359 titulos corregidos**,
+>   **14.679 sin cambio**, **0 errores** de pipeline y el **mismo numero de callouts** (el cuerpo ya
+>   se separaba bien; solo el titulo estaba mal).
+> - **Build:** `npm run sync` → 818 notas / 5 bloques / 2.932 assets · `npm run build` → **844 paginas,
+>   0 errores** · 0 marcadores de conflicto · 0 mojibake en `dist/`.
+> - **Produccion:** verificado en `neonotes-espol.vercel.app` (la nota de patrones creacionales ya
+>   sale con los titulos limpios).
+> - **Zona:** `site/src/**` (mia). No se toco ningun `.md` del vault para este arreglo.
+
+> [!note] Lo que queda (no es bug del parser)
+>
+> Quedan **77 titulos** que siguen mostrando texto del cuerpo, pero **no es culpa del parser**: en
+> esas notas el autor escribio el cuerpo **en la misma linea** del titulo, por ejemplo
+> `> [!example] 🎪 Ejemplo con Función Discontinua Sea $g(x) = ...$` (1er Semestre, Cálculo de una
+> Variable). El markdown no tiene forma de saber donde acaba el titulo. Se arregla editando esas
+> notas (partiendo la linea), que son de otra sesion.
+
+**PUSHEADO `0432c758`** — rama `sesion/opencode-site` -> `master`.
