@@ -10,9 +10,9 @@ tags: [CCPG1042, unidad3, indice, diseno-software]
 
 ## 📑 Notas de la Unidad
 
-- [[01 - Qué es un patrón y encapsular lo que varía]]
-- [[02 - Patrones esenciales I, Strategy Decorator Observer]]
-- [[03 - Patrones esenciales II, creación y estructura]]
+- [[01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo]]
+- [[02 - Strategy, Decorator y Observer]]
+- [[03 - Factory, Adapter, Facade, Singleton y Template Method]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]

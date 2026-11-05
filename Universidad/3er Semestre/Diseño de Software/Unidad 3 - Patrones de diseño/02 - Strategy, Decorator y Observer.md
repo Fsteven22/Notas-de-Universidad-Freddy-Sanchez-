@@ -3,7 +3,7 @@ dg-publish: true
 tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 ---
 
-# 🎯 Patrones Esenciales I: Strategy, Decorator, Observer
+# 🎯 Strategy, Decorator y Observer: Sin `if`, Sin Herencia, Sin Acople
 
 ## 🎯 Introducción
 
@@ -27,7 +27,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > | **Decorator** | Herencia explosiva | Envuelve y suma comportamiento |
 > | **Observer** | Acoplamiento N-a-N manual | Sujeto notifica, observadores reaccionan |
 
-![[../Diagramas/dsw-u3-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-01-graph.svg]]
+
+*Figura: del dolor de diseño al patrón — cambian los algoritmos → Strategy, se acumulan responsabilidades → Decorator, varios deben enterarse → Observer.*
 
 ---
 
@@ -122,7 +124,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Cuál de los Tres?
 
-![[../Diagramas/dsw-u3-03-02-flow.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-02-flow.svg]]
+
+*Figura: «¿qué varía?» — algoritmo completo → Strategy, capas opcionales → Decorator, quién se entera → Observer.*
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -281,7 +285,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u3-03-03-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-03-mind.svg]]
+
+*Figura: resumen — Strategy (algoritmos, sin `if`), Decorator (capas, sin herencia) y Observer (suscripción, sin acople).*
 
 > [!success] 🔍 Comparación Final
 >
@@ -330,8 +336,8 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
-> - Anterior: [[01 - Qué es un patrón y encapsular lo que varía]]
-> - Siguiente: [[03 - Patrones esenciales II, creación y estructura]]
+> - Anterior: [[01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo]]
+> - Siguiente: [[03 - Factory, Adapter, Facade, Singleton y Template Method]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias

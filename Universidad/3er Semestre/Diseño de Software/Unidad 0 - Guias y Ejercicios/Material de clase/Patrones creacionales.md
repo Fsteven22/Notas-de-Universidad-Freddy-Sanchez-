@@ -49,9 +49,9 @@ final: el que no lleva sufijo (`Patrones creacionales.png`) es la **primera** ca
 
 ## 🔗 Teoría que acompana a estas capturas
 
-- [[Unidad 3 - Patrones de diseño/01 - Qué es un patrón y encapsular lo que varía|01 — Qué es un patrón y encapsular lo que varía]]
-- [[Unidad 3 - Patrones de diseño/02 - Patrones esenciales I, Strategy Decorator Observer|02 — Patrones esenciales I: Strategy, Decorator, Observer]]
-- [[Unidad 3 - Patrones de diseño/03 - Patrones esenciales II, creación y estructura|03 — Patrones esenciales II: creación y estructura]]
+- [[Unidad 3 - Patrones de diseño/01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo|01 — Qué es un patrón de diseño, GoF y cuándo aplicarlo]]
+- [[Unidad 3 - Patrones de diseño/02 - Strategy, Decorator y Observer|02 — Strategy, Decorator y Observer]]
+- [[Unidad 3 - Patrones de diseño/03 - Factory, Adapter, Facade, Singleton y Template Method|03 — Factory, Adapter, Facade, Singleton y Template Method]]
 
 > [!quote] 📂 Material de clase
 > - [[../Diseño de Software|Diseño de Software]] — mapa de contenido de la materia

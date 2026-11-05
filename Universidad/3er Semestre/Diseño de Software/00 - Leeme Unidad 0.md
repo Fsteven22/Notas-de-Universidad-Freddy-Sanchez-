@@ -71,11 +71,11 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 0 - Guias y Ejercicios/Exámenes/2023_2PAO_Examen_Parcial_CCPG1042.pdf|2023 2PAO Examen Parcial CCPG1042]]
 
 > [!info] 📁 Bibliografía (no publicable)
-> Libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`).
-> - [[Unidad 0 - Guias y Ejercicios/Guías/01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf|01 Software Engineering — Pressman & Maxim]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf|02 Using UML — Stevens]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf|03 Design Patterns Explained — Shalloway & Trott]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf|04 Refactoring — Fowler]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/Clean Architecture - Robert C. Martin (libro completo).pdf|Clean Architecture — Robert C. Martin]]
+> Libros de texto con copyright: **ya no están en el repo** (se sacaron del índice para no publicar el archivo), pero siguen en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`). Por eso van como texto plano y no como enlaces.
+> - `01 Software Engineering — Pressman & Maxim` — en tu vault local (fuera del repo)
+> - `02 Using UML — Stevens` — en tu vault local (fuera del repo)
+> - `03 Design Patterns Explained — Shalloway & Trott` — en tu vault local (fuera del repo)
+> - `04 Refactoring — Fowler` — en tu vault local (fuera del repo)
+> - `Clean Architecture — Robert C. Martin` — en tu vault local (fuera del repo)
 
 **Tags:** #dsw #unidad0 #recursos

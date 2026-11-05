@@ -3,7 +3,7 @@ dg-publish: true
 tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 ---
 
-# 🧬 Qué es un Patrón y Encapsular lo que Varía
+# 🧬 Qué es un Patrón de Diseño: GoF, Familias y Cuándo Aplicarlo
 
 ## 🎯 Introducción
 
@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > | **Flexibilidad** | Cambios rompen todo | Lo que varía está encapsulado |
 > | **Aprendizaje** | Años de cicatrices | Cicatrices ajenas, gratis |
 
-![[../Diagramas/dsw-u3-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-01-graph.svg]]
+
+*Figura: de un problema recurrente a un patrón — inventar algo propio o adaptar una solución probada con nombre compartido.*
 
 ---
 
@@ -84,7 +86,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Necesito un Patrón?
 
-![[../Diagramas/dsw-u3-02-02-flow.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-02-flow.svg]]
+
+*Figura: «¿qué varía?» — algoritmo intercambiable → Strategy, responsabilidades apilables → Decorator, varios deben enterarse → Observer, creación acoplada → Factory, incompatibilidad → Adapter.*
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -242,7 +246,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u3-02-03-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-03-mind.svg]]
+
+*Figura: mapa mental de la nota — anatomía de un patrón, las tres familias (creacional, estructural y de comportamiento) y los dos principios (encapsular lo que varía, encapsular a las interfaces).*
 
 > [!success] 🔍 Comparación Final
 >
@@ -291,7 +297,7 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
-> - Siguiente: [[02 - Patrones esenciales I, Strategy Decorator Observer]]
+> - Siguiente: [[02 - Strategy, Decorator y Observer]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 
 ## 📚 Referencias

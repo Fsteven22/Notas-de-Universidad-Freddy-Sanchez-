@@ -3,7 +3,7 @@ dg-publish: true
 tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 ---
 
-# 🏭 Patrones Esenciales II: Creación y Estructura
+# 🏭 Factory, Adapter, Facade, Singleton y Template Method: Crear, Compatibilizar y Simplificar
 
 ## 🎯 Introducción
 
@@ -31,7 +31,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > | **Singleton** | Creacional | Una sola instancia global ⚠️ |
 > | **Template Method** | Comportamiento | Esqueleto fijo + pasos variables |
 
-![[../Diagramas/dsw-u3-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-01-graph.svg]]
+
+*Figura: de la necesidad al patrón — acoplar la creación → Factory, compatibilizar → Adapter, simplificar el acceso → Facade, fijar el esqueleto → Template Method.*
 
 ---
 
@@ -102,7 +104,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Patrón de Creación/Estructura?
 
-![[../Diagramas/dsw-u3-04-02-flow.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-02-flow.svg]]
+
+*Figura: «¿crear con lógica, compatibilizar, simplificar el uso o una sola instancia?» El diagrama que decide entre Factory, Adapter, Facade y Singleton.*
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -257,7 +261,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u3-04-03-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-03-mind.svg]]
+
+*Figura: resumen — Factory (crear sin acoplar), Adapter (compatibilizar), Facade (simplificar), Singleton (uno solo, con cuidado) y Template Method (esqueleto fijo).*
 
 > [!success] 🔍 Comparación Final
 >
@@ -303,8 +309,11 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 ## 📄 Capturas de la clase
 
 > [!quote] 🏭 Pizarra de la clase
-> Las capturas de la clase de patrones creacionales, reunidas en un documento con portada, índice y paginación:
-> [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] (PDF, 19 páginas).
+> Las capturas de la clase de **patrones creacionales**, reunidas en un documento con portada,
+> índice y paginación (19 páginas):
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]]
+
+![[../Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales - capturas de clase.pdf]]
 
 ## 🔗 Seguir estudiando
 
@@ -312,7 +321,7 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
-> - Anterior: [[02 - Patrones esenciales I, Strategy Decorator Observer]]
+> - Anterior: [[02 - Strategy, Decorator y Observer]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 > - Capturas de la clase: [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]]
 
