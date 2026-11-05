@@ -55,8 +55,8 @@ final: el que no lleva sufijo (`Patrones creacionales.png`) es la **primera** ca
 
 > [!quote] 📂 Material de clase
 > - [[../Diseño de Software|Diseño de Software]] — mapa de contenido de la materia
-> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL — Casos de Uso]] — caso trabajado en otra clase
-> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|SIEL — Casos de Uso]] — caso trabajado en otra clase
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
 
 ---
 

@@ -110,7 +110,7 @@ dg-publish: true
 > ├── 📄 Bienvenida y Syllabus Diseño de Software.md  ← estás aquí
 > ├── 📁 Unidad 0 - Guias y Ejercicios/
 > │   ├── 📁 Diapositivas/ (decks del docente) · 📁 Exámenes/ · 📁 Material de clase/
-> │   ├── 📁 Material de clase/SIEL - Casos de Uso/ · SIEL - Modelo de Clases/ (pizarra)
+> │   ├── 📁 Material de clase/Caso SIEL - Casos de Uso/ · Caso SIEL - Modelo de Clases/ (pizarra)
 > │   ├── 📄 Syllabus + 5 libros de apoyo (raíz, solo local por copyright)
 > │   └── 📄 Enlaces del Aula Virtual.md (incl. video del docente)
 > ├── 📁 Unidad 1 - Introducción al diseño/

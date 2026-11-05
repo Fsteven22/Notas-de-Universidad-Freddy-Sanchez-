@@ -3,7 +3,7 @@ dg-publish: true
 tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 ---
 
-# 🏛️ SIEL — Modelo de Clases: lo necesario y nada más (capturas)
+# 🏛️ Caso SIEL — Modelo de Clases: lo necesario y nada más (capturas)
 
 > [!info] ℹ️ Qué es esto
 > Transcripción completa de las 8 capturas del deck de **Modelo de Clases**, segunda lección del caso **SIEL** (Sistema de Elecciones) para Control03. Fuentes: Stevens cap. 5 · Pressman & Maxim, Apéndice 1. Deck: *Bloque 2 · minutos 60 a 107*.
@@ -177,7 +177,7 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 
 - Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
 - Índice Unidad 2: [[00 - Índice Unidad 2]]
-- Complemento: [[SIEL - Casos de Uso]]
+- Complemento: [[Caso SIEL - Casos de Uso]]
 - Deck oficial de la cátedra: [[../../Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] — explica la notación (elementos de clase, `+`/`#`/`-`, multiplicidad, clases de asociación, generalización) con el ejemplo de *AcademicChoice*; estas capturas son el caso **SIEL** aplicado.
 
 **Tags:** #CCPG1042 #unidad2 #siel #modelo-de-clases

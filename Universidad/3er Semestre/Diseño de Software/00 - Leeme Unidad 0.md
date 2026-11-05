@@ -64,8 +64,8 @@ tags: [unidad0, indice, recursos]
 
 > [!info] 📁 Material de clase
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — PDF de las capturas de pizarra
-> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL — Casos de Uso]]
-> - [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|SIEL — Casos de Uso]]
+> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
 
 > [!info] 📁 Exámenes
 > - [[Unidad 0 - Guias y Ejercicios/Exámenes/2023_2PAO_Examen_Parcial_CCPG1042.pdf|2023 2PAO Examen Parcial CCPG1042]]

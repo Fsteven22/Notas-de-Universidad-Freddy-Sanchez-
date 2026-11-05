@@ -764,12 +764,12 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 
 > [!question] Pendientes que necesitan decisión del dueño
 >
-> 1. **Renombrar las notas SIEL.** `SIEL` = **Sistema de Elecciones Seccionales** (definido en
->    `SIEL - Modelo de Clases.md`). El nombre actual no dice qué es. Propuesta:
->    `SIEL - Casos de Uso.md` → **`SIEL - Caso — Sistema de Elecciones Seccionales.md`** y
->    `SIEL - Modelo de Clases.md` → **`SIEL - Modelo de clases — Sistema de Elecciones Seccionales.md`**,
->    con los ~8 enlaces de `Unidad 2/00`, `Unidad 2/03`, `Unidad 2/04`, `Unidad 2/05`, el mapa de
->    contenido y entre las dos notas. **No ejecutado**: falta tu visto bueno.
+> 1. ~~**Renombrar las notas SIEL.**~~ ✅ **HECHO** (05/11, `opencode-site`): el dueño eligió
+>    `Caso SIEL - Casos de Uso` / `Caso SIEL - Modelo de Clases`. `SIEL` = **Sistema de Elecciones
+>    Seccionales** (el sistema de elecciones seccionales de Ecuador: alcaldía cantonal y prefectura
+>    provincial, con JRV, actas de escrutinio y padrón del Registro Civil). El acrónimo se conserva
+>    porque es como lo llama la cátedra y aparece en el Control03; el título ahora dice que es un
+>    "caso" y el significado completo queda en la primera línea de cada nota.
 > 2. **Las 2 reconstrucciones por contexto** (`â–` → `▓` y `â€"` → `—`, en ASCII-art de Álgebra Lineal
 >    y Cálculo Vectorial): los bytes no existen en git ni en OneDrive. Si prefieres otro carácter, es 1 commit.
 
@@ -821,65 +821,94 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 
 **PUSHEADO `0432c758`** — rama `sesion/opencode-site` -> `master`.
 
-### `opencode` - estandarización de `Unidad 0 - Guias y Ejercicios` en las 18 materias - 04/11/2026
+---
 
-> [!success] Reorganización completa: los 3 `.md` de cada materia en su raíz, todo lo demás en subcarpetas por taxonomía
+### `opencode-site` - renombrado de las notas SIEL a `Caso SIEL - ...` - 05/11/2026
+
+> [!success] Por que se llamaban "SIEL" y como quedo
 >
-> - **Hecho:** **183 movimientos** con `git mv` (182 renames + 1 borrado de duplicado byte-idéntico) en las
->   18 materias: `00 - Leeme Unidad 0.md`, `Bienvenida y Syllabus …` y la nota índice (mismo nombre que la
->   materia) quedaron **en la raíz de la materia**; el resto se movió a `Diapositivas/`, `Guías/`,
->   `Material de clase/`, `Talleres/`, `Lecciones/`, `Exámenes/`, `Diagramas/` y `Figuras/`.
->   Verificado en disco: **18/18 materias con exactamente 3 `.md` en la raíz y 0 archivos sueltos en la raíz de U0**.
-> - **Hecho:** **814 wikilinks reescritos** en **195 notas** (ruta relativa con `/`, sin `.md`, alias = nombre del
->   archivo con su número) + **61 links absolutos** `[[Universidad/…]]` convertidos a relativos (5 de ellos con la
->   carpeta obsoleta `Comunicación Efectiva` → `MOOC de Comunicación`).
-> - **Hecho:** prosa de los 18 LEEMEs ajustada ("Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`…",
->   rutas completas de subcarpetas, "soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/`"); tabla de taxonomía
->   repetida eliminada; sin placeholders `**(raíz de U0)/**` ni `## Material de la unidad` vacío.
-> - **QA:** `qa_links.py` **targets=7961 bad=0** · `qa_assets_huerfanos.py` **2974 assets, 0 huérfanos** ·
->   `qa_fugas_copyright.py` **0 fugas** · `qa_omitidas.py` **825 revisadas / 817 publican** (sin cambios) ·
->   `qa_leemes.py` 18 avisos = solo separadores `---` (falsos positivos) · comparativo antes/después:
->   **536 → 517 enlaces rotos, 0 nuevos, 19 resueltos** por la reorg.
-> - **Commits:** `4224b0f` (1er) · `bc6ef71` (2do) · `10971c3` (3er) · `4824d05` (preu + `Universidad/Index.md`) →
->   `origin/sesion/opencode` → merge `--ff-only` a `master` en OneDrive → `origin/master` = `master` = `4824d05`.
+> **SIEL** es el acronimo de la catedra para el caso de ejemplo: **SI**stema de **EL**ecciones
+> (Seccionales), asi estaba escrito en el propio material (`SIEL - Casos de Uso.md:9` y
+> `SIEL - Modelo de Clases.md:9`). El caso es el sistema de elecciones seccionales de Ecuador:
+> provincias -> cantones -> parroquias; organizaciones politicas que inscriben candidaturas para
+> alcaldia o prefectura; ciudadanos que consultan lugar de votacion y resultados; observador
+> acreditado que descarga actas escrutadas; presidente de JRV que registra el acta; funcionario
+> electoral que califica la candidatura; Registro Civil (sistema externo) que importa el padron.
 >
-> [!warning] Tres incidencias que quedan fuera de git (no recuperables desde el repo)
+> **Decision del dueño:** renombrar a `Caso SIEL - ...` (el acronimo se conserva porque es como lo
+> llama la catedra y sale en el Control03; el titulo ahora aclara que es un "caso").
 >
-> 1. **`Patrones creacionales-*.png` (19) y `Patrones creacionales.md` de la raíz de `OneSyncFiles`**
->    desaparecieron del disco durante la sesión. **Nunca estuvieron trackeados** (`git ls-tree` no los tiene en
->    ningún commit) y `git merge` no borra untracked, así que no proceden de este trabajo: no hay copia en git.
->    No estaban tampoco en `.trash/`. Sí existe material equivalente del dueño en el worktree de otra sesión:
->    `Desktop/wt-opencode-site/Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Material de clase/`
->    → `Patrones creacionales.md` (2.772 B) y `Patrones creacionales - capturas de clase.pdf` (2,1 MB).
->    Los **19 PNG sueltos** no tienen copia en el disco: si el dueño los necesita, hay que regenerarlos desde su origen.
-> 2. **`00 - Mapa PAO 2-2026.md`**: sigue borrado localmente en el clon de OneDrive (` D`), **sin commitear**
->    (decisión del dueño, intacta por el merge porque `3c38d98..4824d05` no toca ese archivo).
-> 3. **`Escucha Activa Parte 1_OCR.pdf` / `Parte 2_OCR.pdf`** (Comunicación): al ser la única anomalía
->    estructural restante, se movieron de la raíz de U0 a `Unidad 0 - Guias y Ejercicios/Guías/`. Son
->    derivados OCR **ignorados por `.gitignore`** (`*_OCR.pdf`), con **0 referencias** en notas → no afecta git
->    ni el sitio. Se dejan los originales `Escucha Activa Parte 1.pdf` / `Parte 2.pdf` en `Guías/` (ya estaban).
+> | Antes | Ahora |
+> |---|---|
+> | `SIEL - Casos de Uso/SIEL - Casos de Uso.md` | `Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso.md` |
+> | `SIEL - Modelo de Clases/SIEL - Modelo de Clases.md` | `Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases.md` |
 >
-> [!success] Housekeeping del merge en OneDrive (material ajeno, no se tocó)
+> - **Renombradas** las 2 notas y las 2 carpetas (con `git mv`: git lo registra como renombre, no como
+>   borrado + alta). Los **15 PNG** (`Casos de uso SIEL-1..7.png`, `Modelo de clases*.png`) conservan
+>   su nombre: nombran el caso, no la nota.
+> - **Actualizados los 18 wikilinks** en 9 notas: LEEME de la Unidad 0, mapa de contenido
+>   (`Diseno de Software.md`), indice de la Unidad 2, las 3 notas de UML (clases, casos de uso,
+>   diagrama al codigo), la nota de patrones creacionales, el arbol de carpetas del Syllabus y los
+>   enlaces cruzados entre las dos notas.
+> - **Slugs del sitio:** cambian de `/material-de-clase/siel-casos-de-uso/` y
+>   `/material-de-clase/siel-modelo-de-clases/` a `/material-de-clase/caso-siel-casos-de-uso/` y
+>   `/material-de-clase/caso-siel-modelo-de-clases/`. Los links internos se regeneran solos; los
+>   marcadores externos a esas URLs quedan obsoletos (mismo aviso que el bloque de `opencode`).
+> - **Tags** `siel` intactos: el acronimo sigue siendo el nombre del caso.
+
+**PUSHEADO** — el hash va en el mensaje del commit.
+
+### `opencode` - los 3 pendientes del dueño resueltos (publicar índices, consolidar Inglés I, libros con copyright) - 05/11/2026
+
+> [!success] 3 decisiones del dueño aplicadas, en 3 commits atómicos
 >
-> - **6 untracked de DSW** (`5 libros` + `SPA-SyllabusEUR_ACE-CCPG1042.pdf`) chocaban con el merge. Se verificó
->   **SHA-256 idéntico** contra la versión trackeada en `4824d05` y se borraron solo esas copias (backup en
->   `TEMP/opencode/onedrive_backup_untracked/`). **Los originales trackeados en la raíz de U0 los mueve el merge**
->   a `Guías/` y `Material de clase/`.
-> - Intactos: carpetas `_texto/` (4) y `RESUMEN PRIMER PARCIAL MATDIS.pdf`. `Patrones creacionales.md` de la
->   raíz también desapareció (ver incidencia 1), no se tocó.
+> - **Punto 1 — publicar las 4 notas índice sin frontmatter** (`445a813`): `dg-publish: true` +
+>   `tags: [<CÓDIGO>, <slug>, mapa-de-contenido]` en `Cálculo de una Variable.md` (MATG1045),
+>   `Fundamentos de Programación.md` (CCPG1001), `Física Mecánica.md` (FISG1001) e
+>   `Ingles I (B1-B2).md` (IDIG1006, código tomado de `Welcome & Syllabus English I`).
+>   **Efecto medido:** `qa_omitidas.py` pasa de **818 → 822 notas publicables** (825 revisadas, 2 omitidas,
+>   1 por revisar). Check extra: los destinos de esas 4 notas son **0 no publicables**, así que el enlace
+>   "Mapa de contenido" ya no cae en 404.
+> - **Punto 2 — consolidar el índice de Inglés I** (`eb03550`): el canónico es
+>   `1er Semestre/Ingles I (B1-B2)/Ingles I (B1-B2).md` (raíz de la materia). Se **reapuntaron los 18 links**
+>   `[[Inglés I (B1-B2)]]` → `[[Ingles I (B1-B2)|Inglés I (B1-B2)]]` en las notas de las Units 7-12 y se
+>   **eliminó el duplicado acentuado** (`git rm` de `Unidad 0 - Guias y Ejercicios/Material de clase/`).
+>   Ojo: **no eran equivalentes** — el canónico tiene los `00 - Índice` de las Units 10-12 y el duplicado no;
+>   por eso la consolidación se hizo sobre el canónico, que además es el único con los 3 `.md` en la raíz de
+>   la materia. La sección "Unidad 0" del canónico pasó a callout `[!note]`.
+> - **Punto 3 — sacar los 7 libros con copyright del índice de git** (`ca2891d`): `git rm --cached` de
+>   Pressman, UML, Design Patterns, Refactoring, Clean Architecture, Johnsonbaugh y Rosen (142,4 MB) +
+>   sus 7 rutas en `.gitignore` para que no vuelvan a entrar. **Los archivos siguen en el vault local**:
+>   verificado por SHA-256 antes y después (el merge a master los borró del disco de OneDrive y se
+>   restauraron desde un backup verificado).
+
+> [!danger] Lo que `git rm --cached` NO hace (importante para copyright)
 >
-> [!question] Pendientes que necesitan decisión del dueño
+> Los 7 libros **salen del árbol actual** del repo (ya no se sirven ni se descargan desde la rama), pero
+> **los blobs siguen en el histórico público**: se pueden descargar desde cualquier commit anterior.
+> Para sacarlos de verdad del histórico hay que **reescribirlo** (`git filter-repo` + force-push), y eso
+> cambia todos los hashes, invalida las ramas de las otras sesiones y exige coordinación. El protocolo de
+> este LEEME **prohíbe** el force-push sobre `master` y el `amend` de lo publicado, así que **no se hizo**.
+> Si el dueño lo autoriza, es una operación aparte y con las 3 sesiones avisadas.
+
+> [!info] QA de esta ronda
 >
-> 1. **`dg-publish: true` en 4 notas índice** (`Cálculo de una Variable.md`, `Fundamentos de Programación.md`,
->    `Física Mecánica.md`, `Ingles I (B1-B2).md`): sin frontmatter no se publican, así que su enlace
->    "Mapa de contenido" da 404 en el sitio.
-> 2. **Duplicado `Inglés I (B1-B2).md`** (con tilde) en `Unidad 0 - Guias y Ejercicios/Material de clase/`: el
->    canónico es `Ingles I (B1-B2).md` (sin tilde, en la raíz de la materia). ¿Consolidar o conservar?
-> 3. **Libros z-lib ya commiteados en GitHub** (Pressman, UML, Design Patterns, Refactoring, Clean Architecture,
->    Johnsonbaugh, Rosen): siguen en el repo público. ¿`git rm --cached` para sacarlos del histórico?
+> `qa_links.py` targets=**7957** bad=**0** · `qa_assets_huerfanos.py` **2975 assets, 0 huérfanos** ·
+> `qa_omitidas.py` **825 revisadas / 822 publican / 2 omitidas / 1 revisar** · estructura verificada en
+> OneDrive: **18/18 materias con 3 `.md` en la raíz y 0 sueltos** · los 7 libros: no trackeados, ignorados
+> y presentes en disco.
+
+> [!warning] Lo que queda con copyright/material restringido **seguido trackeado** (no estaba en el pendiente)
 >
-> [!note] Aviso de URLs
+> `Database Systems - Design, Implementation, and Management (9th Edition).pdf` (libro de texto completo,
+> 16,7 MB) · `Escucha Activa Parte 1.pdf` y `Parte 2.pdf` · `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` ·
+> `Dinámicas grupales y trabajo en equipo.wmv` · `Guía Didáctica Mat. discretas lógica y demostraciones.docx`.
+> Todos están en `_no-publicar.txt` (no se publican en el sitio), pero **siguen en el repo de GitHub**.
+> Quedan fuera de la lista de 7 por no ser "libros z-lib" del pendiente; si el dueño quiere, se sacan igual
+> con el mismo procedimiento.
+
+> [!note] Integración con las otras sesiones
 >
-> Las notas que subieron a la raíz de su materia cambian de slug en el sitio (p. ej.
-> `…/material-de-clase/fisica-mecanica` → `…/fisica-mecanica`). Los links internos se regeneran solos, pero
-> marcadores externos a esas URLs quedan obsoletos.
+> `master` avanzó dos veces durante el trabajo (`7282240`/`4977cd2`, sesión `opencode-site`: PDF de patrones
+> creacionales y fix de títulos de callouts). Se integró **con merge, nunca rebase**: `0ef8694`.
+> `master` = `origin/master` = `origin/sesion/opencode` = `0ef8694` al cierre de este bloque.

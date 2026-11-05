@@ -3,7 +3,7 @@ dg-publish: true
 tags: [CCPG1042, unidad2, siel, casos-de-uso]
 ---
 
-# 🗳️ SIEL — Casos de Uso (capturas de pizarra)
+# 🗳️ Caso SIEL — Casos de Uso (capturas de pizarra)
 
 > [!info] ℹ️ Qué es esto
 > Capturas de la pizarra de la clase de casos de uso: el caso **SIEL** (Sistema de Elecciones Seccionales) trabajado de punta a punta para Control03.
@@ -39,6 +39,6 @@ Todo lo transcrito ya está integrado en [[04 - UML casos de uso, secuencia y ac
 
 - Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
 - Índice Unidad 2: [[00 - Índice Unidad 2]]
-- Complemento: [[SIEL - Modelo de Clases]]
+- Complemento: [[Caso SIEL - Modelo de Clases]]
 
 **Tags:** #CCPG1042 #unidad2 #siel #casos-de-uso

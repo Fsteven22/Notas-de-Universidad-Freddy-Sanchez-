@@ -28,7 +28,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 - [[03 - UML clases, objetos y relaciones]]
 - [[04 - UML casos de uso, secuencia y actividad]]
 - [[05 - Del diagrama de clases al código]]
-- 🗳️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] — capturas de pizarra; contenido integrado en 04
+- 🗳️ [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|Caso SIEL - Casos de Uso]] — capturas de pizarra; contenido integrado en 04
 
 ---
 
@@ -60,7 +60,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 - 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] (módulos y recursos online)
-- 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Casos de Uso/SIEL - Casos de Uso|SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
+- 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|Caso SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|Caso SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
 - 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] (PDF de las capturas de pizarra)
 - 📽️ Decks de cátedra en `Unidad 0 - Guias y Ejercicios/Diapositivas/`: diseño de software, paradigmas, MVC/SOLID, [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|UML: casos de uso, clases y secuencia]] y [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|implementación desde el diseño]].
 - 📚 Syllabus en `Unidad 0 - Guias y Ejercicios/Material de clase/`, políticas y decks en `Unidad 0 - Guias y Ejercicios/Diapositivas/`, 5 libros de apoyo en `Unidad 0 - Guias y Ejercicios/Guías/`, exámenes en `Unidad 0 - Guias y Ejercicios/Exámenes/` y material suelto en `Unidad 0 - Guias y Ejercicios/Material de clase/`.

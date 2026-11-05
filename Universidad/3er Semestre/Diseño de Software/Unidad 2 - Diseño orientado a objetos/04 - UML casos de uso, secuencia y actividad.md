@@ -453,7 +453,7 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > - I. Jacobson — casos de uso (origen con "los tres amigos" de UML).
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
 > - Deck de cátedra: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] (50 p.) — notación UML, casos de uso, clases y **diagramas de secuencia** con frames `alt`/`opt`/`loop` y restricciones de tiempo; y [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04b Proceso de implementación desde un diseño]] (30 p.) — del diagrama de clases y de secuencia al código.
-> - Capturas de la clase: [[SIEL - Casos de Uso]] (caso SIEL en pizarra) y [[SIEL - Modelo de Clases]].
+> - Capturas de la clase: [[Caso SIEL - Casos de Uso]] (caso SIEL en pizarra) y [[Caso SIEL - Modelo de Clases]].
 
 ---
 

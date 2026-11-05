@@ -164,7 +164,7 @@ El sistema de registro académico que usa el docente: el estudiante gestiona ins
 
 ## 🏛️ Ejemplo de la Clase: el modelo de clases del SIEL
 
-> [!note] 📋 Caso trabajado en la clase de modelo de clases (transcripción completa con capturas: [[Unidad 0 - Guias y Ejercicios/Material de clase/SIEL - Modelo de Clases/SIEL - Modelo de Clases|SIEL - Modelo de Clases]])
+> [!note] 📋 Caso trabajado en la clase de modelo de clases (transcripción completa con capturas: [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|Caso SIEL - Modelo de Clases]])
 >
 > **1 · Identificar clases por sustantivos** (Stevens ch. 5): subraya los sustantivos → descarta los malos → quedan las clases.
 >
@@ -445,7 +445,7 @@ El sistema de registro académico que usa el docente: el estudiante gestiona ins
 > - G. Booch, J. Rumbaugh, I. Jacobson — UML 2.0 (unificación de métodos, años 90).
 > - Sílabo CCPG1042, Unidad 2: diseño orientado a objetos (7h).
 > - Deck de cátedra: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] (50 p.) — elementos de una clase, visibilidad `+`/`#`/`-`, clases de análisis, notación de relaciones, multiplicidad, clases de asociación y generalización; y [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04b Proceso de implementación desde un diseño]] (30 p.) — asociación, bidireccionalidad, generalización, realización, dependencia, agregación y composición en código.
-> - Capturas de la clase: [[SIEL - Modelo de Clases]] (caso SIEL: tarjetas CRC, atributos y operaciones, relaciones) y [[SIEL - Casos de Uso]].
+> - Capturas de la clase: [[Caso SIEL - Modelo de Clases]] (caso SIEL: tarjetas CRC, atributos y operaciones, relaciones) y [[Caso SIEL - Casos de Uso]].
 > - Traducción de estas relaciones a código: [[05 - Del diagrama de clases al código]].
 
 ---
