@@ -925,7 +925,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Siguiente: [[02 - Grammar & Examples - Phrasal Verbs + Unreal Conditionals]]
 
 **Tags:** #english #vocabulary #unit12 #accidents #extreme-adjectives #collocations #life-lessons #mistakes

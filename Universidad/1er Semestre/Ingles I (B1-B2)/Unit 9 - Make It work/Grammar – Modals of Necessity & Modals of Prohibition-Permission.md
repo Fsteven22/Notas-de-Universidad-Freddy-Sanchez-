@@ -993,7 +993,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Siguiente: [[Vocabulary – College Subjects & Employment]]
 
 **Tags:** #grammar #modals #necessity #obligation #prohibition #permission #must #have-to #need-to #can #may #rules #requirements

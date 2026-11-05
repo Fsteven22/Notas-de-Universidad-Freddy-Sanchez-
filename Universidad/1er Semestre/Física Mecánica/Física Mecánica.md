@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [FISG1001, fisica-mecanica, mapa-de-contenido]
+---
+
 # Física Mecánica
 
 **Semestre:** 1ro · [[Bienvenida y Syllabus Física Mecánica|Ver Syllabus completo]]

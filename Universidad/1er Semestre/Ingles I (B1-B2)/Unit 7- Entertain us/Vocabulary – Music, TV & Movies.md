@@ -809,7 +809,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Anterior: [[Grammar – Used to - Comparisons (not) as...as]]
 
 **Tags:** #vocabulary #music #tv-shows #movies #genres #entertainment #media #preferences #pop-culture

@@ -638,7 +638,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Anterior: [[02 - Grammar & Examples - Passive Voice (Present + Past)]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Why We Buy]]
 

@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [CCPG1001, fundamentos-programacion, mapa-de-contenido]
+---
+
 # Fundamentos de Programación
 
 **Semestre:** 1ro · [[Bienvenida y Syllabus Fundamentos de Programación|Ver Syllabus completo]]
