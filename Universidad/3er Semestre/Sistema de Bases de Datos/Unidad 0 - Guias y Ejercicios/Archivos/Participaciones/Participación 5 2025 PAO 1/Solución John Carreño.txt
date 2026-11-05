@@ -1,0 +1,7 @@
+create user 'JohnCarreno'@'localhost' identified by 'patito';
+
+grant select (first_name, last_name) on sakila.customer to 'JohnCarreno'@'localhost';
+
+grant insert, update on *.* to 'JohnCarreno'@'localhost';
+
+revoke select(first_name,last_name) on sakila.customer from 'JohnCarreno'@'localhost';

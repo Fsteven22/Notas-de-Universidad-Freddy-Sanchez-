@@ -34,3 +34,6 @@ Dinámicas grupales y trabajo en equipo.wmv
 
 # --- Material propio que ya se publica en PDF ---
 Guía Didáctica Mat. discretas lógica y demostraciones.docx
+
+# --- Video propio que no se publica (solo local) ---
+VideoBSDPrimerParcial.mp4

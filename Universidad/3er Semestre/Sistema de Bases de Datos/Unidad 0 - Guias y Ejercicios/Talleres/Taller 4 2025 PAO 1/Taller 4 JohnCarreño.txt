@@ -1,0 +1,181 @@
+John Carreño
+
+Se van a crear dos colecciones:
+1. Paciente
+Ejemplo de un archivo de esta coleccion:
+{
+  "_id": 1,
+  "nombres": "John Maximiliano",
+  "apellidos": "Carreño Robalino",
+  "fecha_nacimiento": "30/06/2006",
+  "genero": "Masculino",
+  "email": "jocarren@espol.edu.ec",
+  "telefono": "0962659728",
+  "fecha_registro": "21/08/2025",
+  "resultados": [
+    {
+      "id_test": 1,
+      "fecha_realizacion": "21/08/2025",
+      "puntaje_total": 56,
+      "interpretacion": "Estable",
+      "respuestas_paciente": [
+        "Respuesta 1",
+        "Respuesta 2"
+      ]
+    },
+    {
+      "id_test": 2,
+      "fecha_realizacion": "25/08/2025",
+      "puntaje_total": 98,
+      "interpretacion": "Loco",
+      "respuestas_paciente": [
+        "No",
+        "Si"
+      ]
+    }
+  ]
+}
+
+2. Test
+Ejemplo de un archivo de esta coleccion:
+{
+  "_id": 1,
+  "nombre": "Test 1",
+  "descripcion": "Test inicial",
+  "fecha_creacion": "30/06/2024",
+  "patologia": {
+    "nombre": "Trastornos de Ansiedad",
+    "descripcion": "Preocupación excesiva y persistente sobre diversos eventos o actividades, a menudo sin una causa clara."
+  },
+  "preguntas": [
+    {
+      "texto": "Te da ansiedad no presentar los deberes?",
+      "tipo": "Abierta"
+    },
+    {
+      "texto": "Cual de estas practicas te da mas ansiedad",
+      "tipo": "Cerrada",
+      "posibles_respuestas": [
+        {
+          "texto_respuestas": "Cambios importantes en la vida",
+          "valor": 1
+        },
+        {
+          "texto_respuestas": "Presión social y laboral",
+          "valor": 2
+        }
+      ]
+    }
+  ]
+}
+
+Insertar datos usando insertOne y insertMany:
+db.Paciente.insertOne({
+_id : 1, 
+nombres: "John Maximiliano", 
+apellidos: "Carreño Robalino",
+fecha_nacimiento: "30/06/2006",
+genero: "Masculino",
+email: "jocarren@espol.edu.ec",
+telefono: "0962659728",
+fecha_registro: "21/08/2025",
+resultados: [
+  {
+    id_test: 1,
+    fecha_realizacion: "21/08/2025",
+    puntaje_total: 56,
+    interpretacion: "Estable",
+    respuestas_paciente: ["Respuesta 1","Respuesta 2"]
+  },
+  {
+    id_test: 2,
+    fecha_realizacion: "25/08/2025",
+    puntaje_total: 98,
+    interpretacion: "Loco",
+    respuestas_paciente: ["No","Si"]
+  }
+]
+                      })
+
+db.Paciente.insertOne({
+_id : 2, 
+nombres: "Felix Sebastian", 
+apellidos: "Lucas Baque",
+fecha_nacimiento: "31/07/2006",
+genero: "Masculino",
+email: "feliluca@espol.edu.ec",
+telefono: "0962323234",
+fecha_registro: "21/08/2025",
+resultados: [
+  {
+    id_test: 1,
+    fecha_realizacion: "21/08/2025",
+    puntaje_total: 56,
+    interpretacion: "Estable",
+    respuestas_paciente: ["Respuesta 1","Respuesta 2"]
+  },
+  {
+    id_test: 2,
+    fecha_realizacion: "25/08/2025",
+    puntaje_total: 98,
+    interpretacion: "Loco",
+    respuestas_paciente: ["No","Si"]
+  }
+]
+                      })
+
+db.Test.insertMany([{
+  _id: 1,
+  nombre: "Test 1",
+  descripcion: "Test inicial",
+  fecha_creacion: "30/06/2024",
+  patologia: {
+    nombre: "Trastornos de Ansiedad",
+    descripcion: "Preocupación excesiva y persistente sobre diversos eventos o actividades, a menudo sin una causa clara."
+  },
+  preguntas: [
+  {
+    texto: "Te da ansiedad no presentar los deberes?",
+    tipo: "Abierta"
+  },{
+    texto:"Cual de estas practicas te da mas ansiedad",
+    tipo: "Cerrada",
+    posibles_respuestas: [{
+      texto_respuestas: "Cambios importantes en la vida",
+      valor: 1
+    },
+                          {
+    	texto_respuestas: "Presión social y laboral",
+      valor: 2
+    }],
+    
+  }
+  ]
+                        },
+                         {
+  _id: 2,
+  nombre: "Test 2",
+  fecha_creacion: "24/05/2023",
+  patologia: {
+    nombre: "Depresion",
+    descripcion: "Trastorno del estado de ánimo caracterizado por tristeza persistente",
+  },
+  preguntas: [
+    {
+      texto: "Todo bien en casa?",
+      tipo: "Abierta"
+    },{
+      texto: "Has intentando suicidarte?",
+      tipo: "Cerrada",
+      posibles_respuestas: [{texto_respuestas: "Si",
+                            valor: 1},{
+        				texto_respuestas: "No",
+        				valor: 0
+                            }]
+    }
+  ]
+                         }])
+
+Busqueda por nombres de Paciente:
+db.Paciente.find({nombres: "John Maximiliano"})
+

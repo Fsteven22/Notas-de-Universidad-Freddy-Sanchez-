@@ -1,0 +1,4 @@
+1.- Crear un usuario con su nombre@localhost
+2.- Permitir leer las columnas first_name, last_name de customer en sakila
+3.- Permitir insert y update en todas las tablas
+4.- Revokar el permiso del punto 2

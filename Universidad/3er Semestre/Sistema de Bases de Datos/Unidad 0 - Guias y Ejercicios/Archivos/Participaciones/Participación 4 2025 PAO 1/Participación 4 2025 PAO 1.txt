@@ -1,0 +1,11 @@
+Usando la base de datos papers, realizar lo siguiente: iswc.sql
+
+1.- Crear una tabla de resumen tblResumenPapers donde se lleve las estadísticas de la 
+cantidad de papers publicados por persona. Esta tabla debe contener el nombre y apellido 
+de las personas, el nombre del tópico, cantidad de papers publicados por esa persona en 
+ese tópico.
+
+Implementar la inserción masiva incial de datos y un disparador para mantener de forma 
+automática esta tabla cada vez que se inserte un dato en la tabla de papers.
+
+2.- Crear un procedimiento para la creación de un registro de un paper llamado spPaper.
