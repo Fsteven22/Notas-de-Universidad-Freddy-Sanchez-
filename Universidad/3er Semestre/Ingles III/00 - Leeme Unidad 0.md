@@ -47,7 +47,7 @@ tags: [unidad0, indice, recursos]
 ## 📋 Material de la unidad (enlaces directos)
 
 > [!info] 📁 Guías
-> - [[Unidad 0 - Guias y Ejercicios/Guías/CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf|CAMBRIDGE ONE GUIDE FOR STUDENTS UPDATED]]
+> - `CAMBRIDGE ONE GUIDE FOR STUDENTS UPDATED` — en tu vault local (fuera del repo, no se publica)
 
 > [!info] 📁 Bibliografía (no publicable)
 > Material de lectura con licencia Cambridge: queda en tu vault local y no se sube al sitio (está en `Universidad/_no-publicar.txt`).

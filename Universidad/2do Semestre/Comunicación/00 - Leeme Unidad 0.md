@@ -69,10 +69,10 @@ tags: [IDIG2012, unidad0, recursos]
 
 > [!info] 📁 Guías, talleres y material de lectura
 > - [[Unidad 0 - Guias y Ejercicios/Guías/Concordancia y cohesión.pdf|Concordancia y cohesión]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/Escucha Activa Parte 1.pdf|Escucha Activa Parte 1]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/Escucha Activa Parte 2.pdf|Escucha Activa Parte 2]]
 > - [[Unidad 0 - Guias y Ejercicios/Guías/Precisión y claridad en la redacción.pdf|Precisión y claridad en la redacción]]
 > - [[Unidad 0 - Guias y Ejercicios/Talleres/Taller Normas APA Básico.pdf|Taller Normas APA Básico]]
+> - `Escucha Activa Parte 1` — en tu vault local (fuera del repo)
+> - `Escucha Activa Parte 2` — en tu vault local (fuera del repo)
 > - Escucha Activa Parte 1 OCR (PDF con copyright: material de lectura local, no se publica ni se committea)
 > - Escucha Activa Parte 2 OCR (PDF con copyright: material de lectura local, no se publica ni se committea)
 

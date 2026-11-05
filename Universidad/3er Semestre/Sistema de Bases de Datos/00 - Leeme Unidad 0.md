@@ -79,7 +79,7 @@ tags: [unidad0, indice, recursos, bd, ticg1018]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD00 Políticas.pdf|BD00 Políticas]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD01 Introducción-1.pdf|BD01 Introducción-1]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/BD01 Introducción_datamodel.pdf|BD01 Introducción datamodel]]
-> - [[Unidad 0 - Guias y Ejercicios/Diapositivas/Database Systems - Design, Implementation, and Management (9th Edition).pdf|Database Systems - Design, Implementation, and Management (9)]]
+> - `Database Systems - Design, Implementation, and Management (9th Edition)` — en tu vault local (fuera del repo)
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/unidad1.3-1.5.pdf|unidad1.3-1.5]]
 
 > [!info] 📁 Exámenes
