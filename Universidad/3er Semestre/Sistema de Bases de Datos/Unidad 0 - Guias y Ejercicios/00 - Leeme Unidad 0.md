@@ -80,8 +80,8 @@ tags: [indice, base-de-datos, 3er-semestre]
 ## 🎞️ Diapositivas
 
 > [!example] Presentaciones del curso
-
-Estos archivos se encuentran en `Diapositivas/`. Se suben al sitio web como descarga.
+>
+> Estos archivos se encuentran en `Diapositivas/`. Se suben al sitio web como descarga.
 
 | Archivo | Tema | Tamaño |
 |---|---|---|
@@ -102,8 +102,8 @@ Estos archivos se encuentran en `Diapositivas/`. Se suben al sitio web como desc
 ## 📝 Exámenes
 
 > [!example] Exámenes parciales (con soluciones cuando corresponde)
-
-Estos archivos se encuentran en `Exámenes/`. Se suben al sitio web como descarga.
+>
+> Estos archivos se encuentran en `Exámenes/`. Se suben al sitio web como descarga.
 
 | Archivo | Año/Periodo | Tamaño |
 |---|---|---|
@@ -125,8 +125,8 @@ Estos archivos se encuentran en `Exámenes/`. Se suben al sitio web como descarg
 ## 📖 Lecciones
 
 > [!tip] Material de lectura y teoría
-
-Estos archivos se encuentran en `Lecciones/`. Se suben al sitio web como descarga.
+>
+> Estos archivos se encuentran en `Lecciones/`. Se suben al sitio web como descarga.
 
 | Archivo | Contenido | Tamaño |
 |---|---|---|
@@ -138,8 +138,8 @@ Estos archivos se encuentran en `Lecciones/`. Se suben al sitio web como descarg
 ## 🛠️ Talleres
 
 > [!example] Talleres prácticos y soluciones
-
-Estos archivos se encuentran en `Talleres/`. Se suben al sitio web como descarga.
+>
+> Estos archivos se encuentran en `Talleres/`. Se suben al sitio web como descarga.
 
 | Archivo | Qué es | Tamaño |
 |---|---|---|
@@ -160,8 +160,8 @@ Estos archivos se encuentran en `Talleres/`. Se suben al sitio web como descarga
 ## 📎 Material de clase
 
 > [!example] Apuntes y recursos sueltos
-
-Estos archivos se encuentran en `Material de clase/`. Se suben al sitio web como descarga.
+>
+> Estos archivos se encuentran en `Material de clase/`. Se suben al sitio web como descarga.
 
 | Archivo | Qué es | Tamaño |
 |---|---|---|
@@ -174,14 +174,14 @@ Estos archivos se encuentran en `Material de clase/`. Se suben al sitio web como
 ## 📊 Diagramas y figuras (solo en vault local)
 
 > [!info] Estos archivos están en tu vault pero no se listan aquí por cantidad (más de 150 SVG y drawio).
+>
+> Estos se pueden abrir directamente desde Obsidian. No se publican individualmente en el sitio web.
 
 | Carpeta | Contenido | Tamaño total aprox. |
 |---|---|---|
 | `Diagramas/` | Diagramas Entidad-Relación (`.drawio`, `.svg`) y ejercicios resueltos | 159 archivos |
 | `Diagramas/ej01-*.svg` hasta `ej16-*.svg` | 16 ejercicios de diagramado resueltos | varía |
 | `Diagramas/u1-01-0*.svg` | Diagramas de la Unidad 1 | varios archivos |
-
-Estos se pueden abrir directamente desde Obsidian. No se publican individualmente en el sitio web.
 
 ---
 
