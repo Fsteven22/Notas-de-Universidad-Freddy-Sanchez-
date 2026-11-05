@@ -86,11 +86,14 @@ function extractTitle(pNode) {
     if (child.type === "break") break;
     if (child.type === "text") {
       let v = child.value ?? "";
-      const nl = v.indexOf("\n");
       if (!stripped) {
         v = v.replace(/^\s*\[!(\w+)\]?[-+]?[ \t]?/, "");
         stripped = true;
       }
+      // el indice del salto se calcula DESPUES de quitar el prefijo [!tipo]:
+      // si se calcula antes, slice() se pasa de largo y el titulo se traga
+      // un fragmento de la primera linea del cuerpo.
+      const nl = v.indexOf("\n");
       if (nl !== -1) {
         if (v.slice(0, nl)) kids.push({ type: "text", value: v.slice(0, nl) });
         break;

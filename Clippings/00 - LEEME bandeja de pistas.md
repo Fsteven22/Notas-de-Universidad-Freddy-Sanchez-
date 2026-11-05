@@ -725,3 +725,98 @@ resuelven a un único archivo; las 2 notas de Preuniversitario, 0 CR / 0 `\ufffd
 **PUSHEADO `567793a`** — rama `sesion/opencode` → integrado a `master` con `git merge --ff-only` desde el worktree
 de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/sesion/opencode` = `567793a`.
 (El commit de cierre de esta línea es posterior y también queda integrado en `master`.)
+
+---
+
+### `opencode-site` - PDF de las capturas de patrones creacionales (DSW U3) - 04/11/2026
+
+> [!success] Cerrado: las 17 capturas de pizarra quedaron en un solo PDF, con nota y enlaces
+>
+> - **PDF:** `Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Material de clase/`
+>   → `Patrones creacionales - capturas de clase.pdf` — **19 páginas A4 horizontal, 2.114.754 B**
+>   (portada + índice de capturas + una captura por página, con paginación y nombre del archivo de
+>   origen en el pie). Generado con PyMuPDF desde los PNG, **sin leer el contenido de las imágenes**.
+> - **Orden:** el PNG **sin sufijo es el primero** (`Patrones creacionales.png` → pág. 3) y luego `-1` … `-16`
+>   (págs. 4 a 19). Confirmado por `LastWriteTime` (03:25 → 04:54) y por el patrón equivalente de
+>   `Modelo de clases.png` + `-1..-7`.
+> - **PNG borrados:** los **17** PNG sueltos de la raíz de `OneSyncFiles` (nunca trackeados) y la nota
+>   raíz `Patrones creacionales.md` que los embebía (quedó rota al borrarlos). **No hay copia en git de
+>   los PNG**: el PDF es ahora la única versión del material. Esto responde la incidencia 1 del bloque
+>   de `opencode` de arriba.
+> - **Nota nueva:** `Material de clase/Patrones creacionales.md` — PDF embebido, tabla captura→página
+>   (17 filas), enlaces a la teoría de la Unidad 3 y a las notas SIEL.
+> - **Notas enriquecidas (4):** `00 - Índice Unidad 3.md`, `03 - Patrones esenciales II, creación y
+>   estructura.md` (sección nueva `## 📄 Capturas de la clase`), `Diseño de Software.md` (mapa de
+>   contenido, en la raíz de la materia tras la reorg) y `00 - Leeme Unidad 0.md` (callout
+>   `📁 Material de clase` + línea en `🖼️ Recursos visuales`).
+> - **Merge con `origin/master`:** 2 conflictos resueltos a mano — el LEEME (borrado en el path viejo,
+>   movido a la raíz de la materia: se acepta el borrado y se re-aplican los enlaces en el LEEME nuevo)
+>   y la nota 03 (se conservan ambos lados: la ruta `../` del Syllabus traída por `opencode` + el enlace
+>   a las capturas). Rutas de la nota nueva corregidas a la nueva ubicación del mapa y de las notas SIEL.
+
+> [!info] Verificado
+>
+> `qa_links.py` **targets=9900 bad=0** (raíz del repo) · **0 marcadores** de conflicto en todo el árbol ·
+> **0 BOM / 0 CRLF** en las 380 notas tocadas · `npm run sync` → **818 notas · 5 bloques** ·
+> `npm run build` → **844 páginas, 0 errores** · asset publicado en
+> `/assets/3er-semestre/diseno-de-software/unidad-0-guias-y-ejercicios/material-de-clase/Patrones creacionales - capturas de clase.pdf`
+> · la nota publica el PDF embebido con el visor PDF.js (2,1 MB < 25 MB) · ZIP de la materia con 10 PDFs.
+
+> [!question] Pendientes que necesitan decisión del dueño
+>
+> 1. **Renombrar las notas SIEL.** `SIEL` = **Sistema de Elecciones Seccionales** (definido en
+>    `SIEL - Modelo de Clases.md`). El nombre actual no dice qué es. Propuesta:
+>    `SIEL - Casos de Uso.md` → **`SIEL - Caso — Sistema de Elecciones Seccionales.md`** y
+>    `SIEL - Modelo de Clases.md` → **`SIEL - Modelo de clases — Sistema de Elecciones Seccionales.md`**,
+>    con los ~8 enlaces de `Unidad 2/00`, `Unidad 2/03`, `Unidad 2/04`, `Unidad 2/05`, el mapa de
+>    contenido y entre las dos notas. **No ejecutado**: falta tu visto bueno.
+> 2. **Las 2 reconstrucciones por contexto** (`â–` → `▓` y `â€"` → `—`, en ASCII-art de Álgebra Lineal
+>    y Cálculo Vectorial): los bytes no existen en git ni en OneDrive. Si prefieres otro carácter, es 1 commit.
+
+> [!warning] Hallazgo para `opencode` (zona ajena, no lo toqué)
+>
+> Tras la estandarización de `Unidad 0` quedaron **113 wikilinks con ruta que ya no resuelve** en **17 notas**
+> de DSW: los diagramas se movieron a `Unidad 0 - Guias y Ejercicios/Diagramas/`, pero las notas de las
+> unidades 1–5 los siguen embebiendo como `[[../Diagramas/dsw-u1-02-01-graph.svg]]` (que resolvería a
+> `Unidad N - …/Diagramas/`, carpeta que no existe). En el sitio no se rompen porque el sync resuelve por
+> nombre, pero **en Obsidian esos embeds quedan rotos**. El arreglo es reemplazar `../Diagramas/` →
+> `../Unidad 0 - Guias y Ejercicios/Diagramas/` en esas 17 notas. Lo dejo a tu sesión porque son tus notas.
+
+**PUSHEADO `72822407`** — `adb4279d` (PDF + nota + enlaces) → merge con `origin/master` → `a23cd923`
+(resolución de los 2 conflictos) → `72822407` (integración de `567793a` de `opencode`).
+
+---
+
+### `opencode-site` - fix del titulo de los callouts del sitio - 05/11/2026
+
+> [!success] Un bug del parser de callouts contaminaba 359 titulos en todo el sitio
+>
+> `site/src/lib/rehype-callouts.mjs` calculaba el indice del salto de linea **antes** de quitar el
+> prefijo `[!tipo]`, asi que el `slice()` se pasaba de largo y el **titulo de la callout se tragaba un
+> fragmento de la primera linea del cuerpo**. Se veia en casi todas las paginas:
+>
+> - antes: `ℹ️ ℹ️ Portal de material de la materia\nEsta no`
+> - ahora: `ℹ️ ℹ️ Portal de material de la materia`
+>
+> No era solo de mi nota nueva: afectaba a **359 de los 15.038 callouts** del vault (los 18 LEEMEs,
+> los mapas de contenido, los indices de unidad, los "conceptos clave" de las notas de matematicas).
+>
+> - **Medicion** con el pipeline real del sitio (`remark-parse` -> `remark-math` -> `remark-rehype` ->
+>   `rehype-callouts`) sobre las **835 notas** de `Universidad/`: **359 titulos corregidos**,
+>   **14.679 sin cambio**, **0 errores** de pipeline y el **mismo numero de callouts** (el cuerpo ya
+>   se separaba bien; solo el titulo estaba mal).
+> - **Build:** `npm run sync` → 818 notas / 5 bloques / 2.932 assets · `npm run build` → **844 paginas,
+>   0 errores** · 0 marcadores de conflicto · 0 mojibake en `dist/`.
+> - **Produccion:** verificado en `neonotes-espol.vercel.app` (la nota de patrones creacionales ya
+>   sale con los titulos limpios).
+> - **Zona:** `site/src/**` (mia). No se toco ningun `.md` del vault para este arreglo.
+
+> [!note] Lo que queda (no es bug del parser)
+>
+> Quedan **77 titulos** que siguen mostrando texto del cuerpo, pero **no es culpa del parser**: en
+> esas notas el autor escribio el cuerpo **en la misma linea** del titulo, por ejemplo
+> `> [!example] 🎪 Ejemplo con Función Discontinua Sea $g(x) = ...$` (1er Semestre, Cálculo de una
+> Variable). El markdown no tiene forma de saber donde acaba el titulo. Se arregla editando esas
+> notas (partiendo la linea), que son de otra sesion.
+
+**PUSHEADO `0432c758`** — rama `sesion/opencode-site` -> `master`.
