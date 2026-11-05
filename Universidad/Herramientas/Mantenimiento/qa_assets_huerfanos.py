@@ -19,6 +19,7 @@ Uso:
 """
 
 import argparse
+import fnmatch
 import os
 import re
 import sys
@@ -47,6 +48,37 @@ def norm_name(s: str) -> str:
     return os.path.splitext(os.path.basename(s))[0].lower()
 
 
+def cargar_no_publicar(uni: str):
+    """Nombres de archivos que no se publican (`Universidad/_no-publicar.txt`).
+
+    Los assets de esa lista NO se copian al sitio, asi que ninguna nota puede
+    enlazarlos de verdad: si una nota los menciona en texto plano (no embebido),
+    el QA los marcaria como huerfanos aunque sea intencional. Mismo formato del
+    archivo: un nombre por linea, con comodin `*`.
+    """
+    ruta = os.path.join(uni, "_no-publicar.txt")
+    patrones = []
+    if os.path.isfile(ruta):
+        with open(ruta, encoding="utf-8") as fh:
+            for linea in fh:
+                s = linea.strip()
+                if not s or s.startswith("#"):
+                    continue
+                patrones.append(s.lower())
+    return patrones
+
+
+def es_no_publicable(nombre: str, patrones) -> bool:
+    n = nombre.lower()
+    for p in patrones:
+        if "*" in p:
+            if fnmatch.fnmatch(n, p):
+                return True
+        elif n == p:
+            return True
+    return False
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--vault", default=None, help="raiz del vault (default: deducida)")
@@ -61,13 +93,20 @@ def main():
         return 2
 
     # 1. Indexar todos los assets existentes en el vault
+    no_publicar = cargar_no_publicar(uni)
     assets_existentes = {}  # nombre_lower -> ruta completa
+    excluidos = 0
     for dp, ds, fs in os.walk(uni):
         ds[:] = [d for d in ds if d not in SKIP_DIRS]
         for f in fs:
             ext = os.path.splitext(f)[1].lower()
-            if ext in ASSET_EXTS:
-                assets_existentes[norm_name(f)] = os.path.join(dp, f)
+            if ext not in ASSET_EXTS:
+                continue
+            if es_no_publicable(f, no_publicar):
+                # asset que el sitio nunca publica: no puede estar referenciado
+                excluidos += 1
+                continue
+            assets_existentes[norm_name(f)] = os.path.join(dp, f)
 
     # 2. Recopilar todos los nombres de asset referenciados por notas .md
     referidos = set()
@@ -99,7 +138,7 @@ def main():
     total_assets = len(assets_existentes)
     total_referidos = len(referidos & set(assets_existentes.keys()))
     lineas = [
-        f"assets en el vault: {total_assets}",
+        f"assets en el vault: {total_assets} (+{excluidos} de _no-publicar.txt, excluidos)",
         f"assets referenciados por notas: {total_referidos}",
         f"assets HUERFANOS (sin referencia): {len(huerfanos)}",
         "",
