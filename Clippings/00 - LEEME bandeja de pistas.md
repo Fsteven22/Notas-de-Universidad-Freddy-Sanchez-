@@ -1105,3 +1105,37 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 README y este LEEME), con merge de `origin/master` (7 commits de `opencode`: material SBD, libros de
 MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando ambos bloques**
 (el de `opencode` y este). Rama `sesion/opencode-site` -> `master`.
+### `opencode` - barrido de callouts: prosa dentro de callouts - 05/11/2026
+
+> [!success] Barrido de 134 callouts en 36 notas (0955d3d4)
+>
+> Toda la prosa explicativa bajo un encabezado se cita ahora dentro de un
+> callout `> [!tipo] Emoji Titulo` que absorbe listas, tablas y codigos
+> contiguos. Resultado: inventario_plano paso de ~200 líneas de prosa real a ~0
+> (las restantes son exclusiones deliberadas: **Tags:**, flashes SR,
+> navegación `-> [[…]]`, LaTeX roto y `Herramientas/`).
+>
+> - **Títulos con texto**: 134/134 tienen tipo + emoji + título con texto (0 usan solo emoji).
+> - **72 overrides** aplicados por `ruta@línea_original`, 0 huérfanos; ningún título repetido sin desambiguar.
+> - **3 callouts partidos** reparados (`Interacciones y Fuerzas.md` y `Leyes de Newton.md`): se citó la prosa intermedia con `>` para reconectar el callout.
+> - **Artefactos resueltos**: `01 – Integral triple.md` (basura de IA borrada) y `02 – Volumen bajo una superficie.md:596` (`> ¡Error! Revisar…` citado).
+> - `Parts of a Sentence.md`: listas `4.`/`5.` re-citadas dentro del callout.
+>
+> [!info] Qué NO se tocó (por decisión del dueño)
+>
+> - Flashcards del plugin SR (`Q::A` + `<!--SR:…-->`): formato plano, intocable.
+> - Navegación `→ [[…]]` sin prosa y listas de wikilinks de índice.
+> - Fragmentos de LaTeX/código rotos, pies de figura en cursiva y material ajeno (`_texto/`, PDFs/PNG de clase, `Contenido Extra/`).
+> - Docs de `Herramientas/` (READMEs de scripts: no son material de estudio).
+>
+> [!warning] QA del barrido
+>
+> - `qa_links.py`: targets=7947 bad=0.
+> - `qa_assets_huerfanos.py`: 2918 assets, 0 huérfanos (+57 excluidos de `_no-publicar.txt`).
+> - `revisa_titulos.py`: 134 callouts, 0 problemas.
+> - `qa_omitidas.py`: 825 revisadas / 822 publican / 2 omitidas / 1 revisar.
+> - `fix_callout_overlap` / `fix_callout_nested` / `fix_callout_join`: sin regresiones (pegados=143, anidados=0, dispersos=1).
+> - Fences sin cerrar: 4 (preexistentes, no tocados).
+>
+> Commits atómicos en `sesion/opencode`: `0955d3d4` (barrido), `5f054df` (archivos restringidos fuera del índice de git, no pusheado aún). No se reescribe histórico (prohibido force-push/amend).
+
