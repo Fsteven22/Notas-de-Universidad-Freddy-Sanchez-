@@ -820,3 +820,66 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > notas (partiendo la linea), que son de otra sesion.
 
 **PUSHEADO `0432c758`** — rama `sesion/opencode-site` -> `master`.
+
+### `opencode` - estandarización de `Unidad 0 - Guias y Ejercicios` en las 18 materias - 04/11/2026
+
+> [!success] Reorganización completa: los 3 `.md` de cada materia en su raíz, todo lo demás en subcarpetas por taxonomía
+>
+> - **Hecho:** **183 movimientos** con `git mv` (182 renames + 1 borrado de duplicado byte-idéntico) en las
+>   18 materias: `00 - Leeme Unidad 0.md`, `Bienvenida y Syllabus …` y la nota índice (mismo nombre que la
+>   materia) quedaron **en la raíz de la materia**; el resto se movió a `Diapositivas/`, `Guías/`,
+>   `Material de clase/`, `Talleres/`, `Lecciones/`, `Exámenes/`, `Diagramas/` y `Figuras/`.
+>   Verificado en disco: **18/18 materias con exactamente 3 `.md` en la raíz y 0 archivos sueltos en la raíz de U0**.
+> - **Hecho:** **814 wikilinks reescritos** en **195 notas** (ruta relativa con `/`, sin `.md`, alias = nombre del
+>   archivo con su número) + **61 links absolutos** `[[Universidad/…]]` convertidos a relativos (5 de ellos con la
+>   carpeta obsoleta `Comunicación Efectiva` → `MOOC de Comunicación`).
+> - **Hecho:** prosa de los 18 LEEMEs ajustada ("Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`…",
+>   rutas completas de subcarpetas, "soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/`"); tabla de taxonomía
+>   repetida eliminada; sin placeholders `**(raíz de U0)/**` ni `## Material de la unidad` vacío.
+> - **QA:** `qa_links.py` **targets=7961 bad=0** · `qa_assets_huerfanos.py` **2974 assets, 0 huérfanos** ·
+>   `qa_fugas_copyright.py` **0 fugas** · `qa_omitidas.py` **825 revisadas / 817 publican** (sin cambios) ·
+>   `qa_leemes.py` 18 avisos = solo separadores `---` (falsos positivos) · comparativo antes/después:
+>   **536 → 517 enlaces rotos, 0 nuevos, 19 resueltos** por la reorg.
+> - **Commits:** `4224b0f` (1er) · `bc6ef71` (2do) · `10971c3` (3er) · `4824d05` (preu + `Universidad/Index.md`) →
+>   `origin/sesion/opencode` → merge `--ff-only` a `master` en OneDrive → `origin/master` = `master` = `4824d05`.
+>
+> [!warning] Tres incidencias que quedan fuera de git (no recuperables desde el repo)
+>
+> 1. **`Patrones creacionales-*.png` (19) y `Patrones creacionales.md` de la raíz de `OneSyncFiles`**
+>    desaparecieron del disco durante la sesión. **Nunca estuvieron trackeados** (`git ls-tree` no los tiene en
+>    ningún commit) y `git merge` no borra untracked, así que no proceden de este trabajo: no hay copia en git.
+>    No estaban tampoco en `.trash/`. Sí existe material equivalente del dueño en el worktree de otra sesión:
+>    `Desktop/wt-opencode-site/Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Material de clase/`
+>    → `Patrones creacionales.md` (2.772 B) y `Patrones creacionales - capturas de clase.pdf` (2,1 MB).
+>    Los **19 PNG sueltos** no tienen copia en el disco: si el dueño los necesita, hay que regenerarlos desde su origen.
+> 2. **`00 - Mapa PAO 2-2026.md`**: sigue borrado localmente en el clon de OneDrive (` D`), **sin commitear**
+>    (decisión del dueño, intacta por el merge porque `3c38d98..4824d05` no toca ese archivo).
+> 3. **`Escucha Activa Parte 1_OCR.pdf` / `Parte 2_OCR.pdf`** (Comunicación): al ser la única anomalía
+>    estructural restante, se movieron de la raíz de U0 a `Unidad 0 - Guias y Ejercicios/Guías/`. Son
+>    derivados OCR **ignorados por `.gitignore`** (`*_OCR.pdf`), con **0 referencias** en notas → no afecta git
+>    ni el sitio. Se dejan los originales `Escucha Activa Parte 1.pdf` / `Parte 2.pdf` en `Guías/` (ya estaban).
+>
+> [!success] Housekeeping del merge en OneDrive (material ajeno, no se tocó)
+>
+> - **6 untracked de DSW** (`5 libros` + `SPA-SyllabusEUR_ACE-CCPG1042.pdf`) chocaban con el merge. Se verificó
+>   **SHA-256 idéntico** contra la versión trackeada en `4824d05` y se borraron solo esas copias (backup en
+>   `TEMP/opencode/onedrive_backup_untracked/`). **Los originales trackeados en la raíz de U0 los mueve el merge**
+>   a `Guías/` y `Material de clase/`.
+> - Intactos: carpetas `_texto/` (4) y `RESUMEN PRIMER PARCIAL MATDIS.pdf`. `Patrones creacionales.md` de la
+>   raíz también desapareció (ver incidencia 1), no se tocó.
+>
+> [!question] Pendientes que necesitan decisión del dueño
+>
+> 1. **`dg-publish: true` en 4 notas índice** (`Cálculo de una Variable.md`, `Fundamentos de Programación.md`,
+>    `Física Mecánica.md`, `Ingles I (B1-B2).md`): sin frontmatter no se publican, así que su enlace
+>    "Mapa de contenido" da 404 en el sitio.
+> 2. **Duplicado `Inglés I (B1-B2).md`** (con tilde) en `Unidad 0 - Guias y Ejercicios/Material de clase/`: el
+>    canónico es `Ingles I (B1-B2).md` (sin tilde, en la raíz de la materia). ¿Consolidar o conservar?
+> 3. **Libros z-lib ya commiteados en GitHub** (Pressman, UML, Design Patterns, Refactoring, Clean Architecture,
+>    Johnsonbaugh, Rosen): siguen en el repo público. ¿`git rm --cached` para sacarlos del histórico?
+>
+> [!note] Aviso de URLs
+>
+> Las notas que subieron a la raíz de su materia cambian de slug en el sitio (p. ej.
+> `…/material-de-clase/fisica-mecanica` → `…/fisica-mecanica`). Los links internos se regeneran solos, pero
+> marcadores externos a esas URLs quedan obsoletos.
