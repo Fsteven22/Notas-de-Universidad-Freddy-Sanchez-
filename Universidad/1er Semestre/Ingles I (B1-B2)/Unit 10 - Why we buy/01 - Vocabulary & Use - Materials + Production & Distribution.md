@@ -470,7 +470,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Siguiente: [[02 - Grammar & Examples - Passive Voice (Present + Past)]]
 
 **Tags:** #english #vocabulary #materials #production #distribution #unit10 #whywebuy #collocations #business-english

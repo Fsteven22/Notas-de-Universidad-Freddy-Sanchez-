@@ -560,7 +560,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Siguiente: [[Vocabulary – Music, TV & Movies]]
 
 **Tags:** #grammar #used-to #comparisons #as-as #past-habits #equality #comparatives #english-grammar

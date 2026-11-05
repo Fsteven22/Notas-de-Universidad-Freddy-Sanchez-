@@ -985,7 +985,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Anterior: [[Grammar – Modals of Necessity & Modals of Prohibition-Permission]]
 
 **Tags:** #vocabulary #education #college #university #employment #jobs #careers #subjects #work #professional-development #academic-fields #salary #hiring

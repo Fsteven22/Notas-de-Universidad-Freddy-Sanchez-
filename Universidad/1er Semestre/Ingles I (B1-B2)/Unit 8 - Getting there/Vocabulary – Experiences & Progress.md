@@ -547,7 +547,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[Inglés I (B1-B2)]]
+> - Mapa: [[Ingles I (B1-B2)|Inglés I (B1-B2)]]
 > - Anterior: [[Grammar – Present Perfect vs Present Perfect Continuous]]
 
 **Tags:** #vocabulary #idioms #expressions #life-experiences #progress #achievement #motivation #success #challenges #opportunities #work-life-balance
