@@ -14,3 +14,12 @@ __pycache__/
 
 # Previews del pipeline SVG (renders PNG regenerables, no se versionan)
 Universidad/Herramientas/SVG-Pipeline/previews/
+
+# Libros completos con copyright: se conservan en el vault local, fuera del repo
+Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Guías/01_Software Engineering A Practitioners Approach (Roger S. Pressman Bruce R. Maxim) (z-lib.org).pdf
+Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Guías/02_Using UML Software Engineering with Objects and Components (2nd Edition) (Perdita Stevens) (z-lib.org).pdf
+Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Guías/03_Design patterns explained a new perspective on object-oriented design (Shalloway, AlanTrott, James).pdf
+Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Guías/04_Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf
+Universidad/3er Semestre/Diseño de Software/Unidad 0 - Guias y Ejercicios/Guías/Clean Architecture - Robert C. Martin (libro completo).pdf
+Universidad/3er Semestre/Matemáticas Discretas/Unidad 0 - Guias y Ejercicios/Guías/LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf
+Universidad/3er Semestre/Matemáticas Discretas/Unidad 0 - Guias y Ejercicios/Guías/LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf
