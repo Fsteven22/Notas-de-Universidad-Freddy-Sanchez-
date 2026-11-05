@@ -33,7 +33,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-01-graph.svg]]
 
-*Figura: de la necesidad al patrón — acoplar la creación → Factory, compatibilizar → Adapter, simplificar el acceso → Facade, fijar el esqueleto → Template Method.*
+> [!info] 🖼️ Figura
+>
+> de la necesidad al patrón — acoplar la creación → Factory, compatibilizar → Adapter, simplificar el acceso → Facade, fijar el esqueleto → Template Method.
 
 ---
 
@@ -106,7 +108,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-02-flow.svg]]
 
-*Figura: «¿crear con lógica, compatibilizar, simplificar el uso o una sola instancia?» El diagrama que decide entre Factory, Adapter, Facade y Singleton.*
+> [!info] 🖼️ Figura
+>
+> «¿crear con lógica, compatibilizar, simplificar el uso o una sola instancia?» El diagrama que decide entre Factory, Adapter, Facade y Singleton.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -263,7 +267,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-03-mind.svg]]
 
-*Figura: resumen — Factory (crear sin acoplar), Adapter (compatibilizar), Facade (simplificar), Singleton (uno solo, con cuidado) y Template Method (esqueleto fijo).*
+> [!info] 🖼️ Figura
+>
+> resumen — Factory (crear sin acoplar), Adapter (compatibilizar), Facade (simplificar), Singleton (uno solo, con cuidado) y Template Method (esqueleto fijo).
 
 > [!success] 🔍 Comparación Final
 >
