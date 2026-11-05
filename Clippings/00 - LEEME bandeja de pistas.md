@@ -764,12 +764,12 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 
 > [!question] Pendientes que necesitan decisión del dueño
 >
-> 1. **Renombrar las notas SIEL.** `SIEL` = **Sistema de Elecciones Seccionales** (definido en
->    `SIEL - Modelo de Clases.md`). El nombre actual no dice qué es. Propuesta:
->    `SIEL - Casos de Uso.md` → **`SIEL - Caso — Sistema de Elecciones Seccionales.md`** y
->    `SIEL - Modelo de Clases.md` → **`SIEL - Modelo de clases — Sistema de Elecciones Seccionales.md`**,
->    con los ~8 enlaces de `Unidad 2/00`, `Unidad 2/03`, `Unidad 2/04`, `Unidad 2/05`, el mapa de
->    contenido y entre las dos notas. **No ejecutado**: falta tu visto bueno.
+> 1. ~~**Renombrar las notas SIEL.**~~ ✅ **HECHO** (05/11, `opencode-site`): el dueño eligió
+>    `Caso SIEL - Casos de Uso` / `Caso SIEL - Modelo de Clases`. `SIEL` = **Sistema de Elecciones
+>    Seccionales** (el sistema de elecciones seccionales de Ecuador: alcaldía cantonal y prefectura
+>    provincial, con JRV, actas de escrutinio y padrón del Registro Civil). El acrónimo se conserva
+>    porque es como lo llama la cátedra y aparece en el Control03; el título ahora dice que es un
+>    "caso" y el significado completo queda en la primera línea de cada nota.
 > 2. **Las 2 reconstrucciones por contexto** (`â–` → `▓` y `â€"` → `—`, en ASCII-art de Álgebra Lineal
 >    y Cálculo Vectorial): los bytes no existen en git ni en OneDrive. Si prefieres otro carácter, es 1 commit.
 
@@ -820,3 +820,40 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > notas (partiendo la linea), que son de otra sesion.
 
 **PUSHEADO `0432c758`** — rama `sesion/opencode-site` -> `master`.
+
+---
+
+### `opencode-site` - renombrado de las notas SIEL a `Caso SIEL - ...` - 05/11/2026
+
+> [!success] Por que se llamaban "SIEL" y como quedo
+>
+> **SIEL** es el acronimo de la catedra para el caso de ejemplo: **SI**stema de **EL**ecciones
+> (Seccionales), asi estaba escrito en el propio material (`SIEL - Casos de Uso.md:9` y
+> `SIEL - Modelo de Clases.md:9`). El caso es el sistema de elecciones seccionales de Ecuador:
+> provincias -> cantones -> parroquias; organizaciones politicas que inscriben candidaturas para
+> alcaldia o prefectura; ciudadanos que consultan lugar de votacion y resultados; observador
+> acreditado que descarga actas escrutadas; presidente de JRV que registra el acta; funcionario
+> electoral que califica la candidatura; Registro Civil (sistema externo) que importa el padron.
+>
+> **Decision del dueño:** renombrar a `Caso SIEL - ...` (el acronimo se conserva porque es como lo
+> llama la catedra y sale en el Control03; el titulo ahora aclara que es un "caso").
+>
+> | Antes | Ahora |
+> |---|---|
+> | `SIEL - Casos de Uso/SIEL - Casos de Uso.md` | `Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso.md` |
+> | `SIEL - Modelo de Clases/SIEL - Modelo de Clases.md` | `Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases.md` |
+>
+> - **Renombradas** las 2 notas y las 2 carpetas (con `git mv`: git lo registra como renombre, no como
+>   borrado + alta). Los **15 PNG** (`Casos de uso SIEL-1..7.png`, `Modelo de clases*.png`) conservan
+>   su nombre: nombran el caso, no la nota.
+> - **Actualizados los 18 wikilinks** en 9 notas: LEEME de la Unidad 0, mapa de contenido
+>   (`Diseno de Software.md`), indice de la Unidad 2, las 3 notas de UML (clases, casos de uso,
+>   diagrama al codigo), la nota de patrones creacionales, el arbol de carpetas del Syllabus y los
+>   enlaces cruzados entre las dos notas.
+> - **Slugs del sitio:** cambian de `/material-de-clase/siel-casos-de-uso/` y
+>   `/material-de-clase/siel-modelo-de-clases/` a `/material-de-clase/caso-siel-casos-de-uso/` y
+>   `/material-de-clase/caso-siel-modelo-de-clases/`. Los links internos se regeneran solos; los
+>   marcadores externos a esas URLs quedan obsoletos (mismo aviso que el bloque de `opencode`).
+> - **Tags** `siel` intactos: el acronimo sigue siendo el nombre del caso.
+
+**PUSHEADO** — el hash va en el mensaje del commit.

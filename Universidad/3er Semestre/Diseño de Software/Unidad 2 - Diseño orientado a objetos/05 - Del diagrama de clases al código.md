@@ -506,7 +506,7 @@ O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y
 > - Deck de la misma sesión: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] — la notación que este nota traduce.
 > - P. Stevens, R. Pooley, *Using UML*, 2nd ed. — notación UML base.
 > - R. Pressman, B. Maxim, *Software Engineering: A Practitioner's Approach* — Apéndice 1 (notación de clases).
-> - Capturas de la clase: [[SIEL - Modelo de Clases]] y [[SIEL - Casos de Uso]].
+> - Capturas de la clase: [[Caso SIEL - Modelo de Clases]] y [[Caso SIEL - Casos de Uso]].
 
 ---
 
