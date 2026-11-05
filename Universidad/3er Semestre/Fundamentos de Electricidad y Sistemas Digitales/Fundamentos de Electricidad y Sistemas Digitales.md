@@ -24,6 +24,8 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[06 - Teoremas de Analisis de Circuitos|06 — Teoremas]]
 > - [[Ejercicios Recopilados - EYAG1037|Ejercicios Recopilados]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_1_01.svg]]
+
 ---
 
 ## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)* → [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|📂 Índice Dataview]]
@@ -35,6 +37,8 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales|04 — Filtrado y Fuentes]]
 > - [[05 - Reguladores en Fuentes Lineales|05 — Reguladores]]
 > - [[06 - Ruido Electrónico e Interferencia|06 — Ruido e Interferencia]]
+
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_2_01.svg]]
 
 ---
 
@@ -49,6 +53,8 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[06 - Aplicaciones de Integrados 555 - ADC - PWM|06 — 555 / ADC / PWM]]
 > - [[07 - Lógica fija y tablas de verdad|07 — Lógica Fija]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_3_01.svg]]
+
 ---
 
 ## 💻 Unidad 4 — Sistemas Digitales *(8h)* → [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|📂 Índice Dataview]]
@@ -56,6 +62,8 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!note] Sistemas Digitales
 > - [[01 - Introducción a la Electrónica Digital|01 — Electrónica Digital]]
 > - [[02 - Minimización de Funciones Lógicas|02 — Minimización]]
+
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_4_01.svg]]
 
 ---
 
@@ -72,7 +80,6 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[Práctica 4 — Fuentes Lineales|Práctica 4 — Fuentes Lineales]]
 > - [[Práctica 5 — Filtros Activos|Práctica 5 — Filtros Activos]]
 > - [[Práctica 6 — Logica Combinatoria y Arduino|Práctica 6 — Lógica y Arduino]]
-
 ---
 
 > [!quote] 🔗 Navegación

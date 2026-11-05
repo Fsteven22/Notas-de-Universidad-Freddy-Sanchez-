@@ -11,7 +11,6 @@ dg-publish: true
 ## Progreso del Curso
 
 ![[Unidad 0 - Guias y Ejercicios/Diagramas/Matemáticas_Discretas_01.svg]]
-
 ---
 
 ## Unidad I — Lógica y Conjuntos *(6h)* → [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|📂 Índice]]
@@ -36,6 +35,7 @@ dg-publish: true
 > - [[03 - Leyes de Conjuntos|03 — Leyes de conjuntos]]
 > - [[04 - Cardinalidad y Leyes de Cardinalidad|04 — Cardinalidad y leyes]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-01-01-graph.svg]]
 ---
 
 ## Unidad II — Funciones, Sucesiones y Relaciones *(5h)* → [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|📂 Índice]]
@@ -46,6 +46,7 @@ dg-publish: true
 > - [[03 - Propiedades y Equivalencia|03 — Propiedades y equivalencia]]
 > - [[04 - Sucesiones y Cadenas|04 — Sucesiones y cadenas]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-01-01-graph.svg]]
 ---
 
 ## Unidad III — Números y Conteo *(8h)* → [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3|📂 Índice]]
@@ -60,6 +61,7 @@ dg-publish: true
 > - [[05 - Permutaciones y Combinaciones|05 — Permutaciones y combinaciones]]
 > - [[06 - Teorema del Binomio y Principio del Palomar|06 — Binomio y Palomar]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-01-01-graph.svg]]
 ---
 
 ## Unidad IV — Recurrencia y Algoritmos *(7h)* → [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|📂 Índice]]
@@ -73,6 +75,7 @@ dg-publish: true
 > - [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas|04 — Análisis I]]
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real|05 — Análisis II]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-01-01-graph.svg]]
 ---
 
 ## Unidad V — Grafos y Árboles *(12h)* → [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|📂 Índice]]
@@ -86,6 +89,7 @@ dg-publish: true
 > - [[04 - Árboles I - Conceptos Básicos y Árboles de Expansión|04 — Árboles I]]
 > - [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman|05 — Árboles II]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-01-01-graph.svg]]
 ---
 
 ## Unidad VI — Lenguajes y Autómatas *(4h)* → [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|📂 Índice]]
@@ -94,6 +98,7 @@ dg-publish: true
 > - [[01 - Máquinas de Estado Finito - Definición y Estructura|01 — Máquinas de estado finito]]
 > - [[02 - Autómatas de Estado Finito - Diseño y Aceptación de Cadenas|02 — Autómatas]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-01-01-graph.svg]]
 ---
 
 ## 📂 Ejercicios y Guías
@@ -105,7 +110,6 @@ dg-publish: true
 > - [[Guía de Problemas 4 - Ejercicios Resueltos|Guía 4]]
 > - [[Guía de Problemas 5 - Ejercicios Resueltos|Guía 5]]
 > - [[Guía de Problemas 6 - Ejercicios Resueltos|Guía 6]]
-
 ---
 
 - [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]]
