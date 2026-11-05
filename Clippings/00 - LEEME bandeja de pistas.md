@@ -989,6 +989,52 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > creacionales y fix de títulos de callouts). Se integró **con merge, nunca rebase**: `0ef8694`.
 > `master` = `origin/master` = `origin/sesion/opencode` = `0ef8694` al cierre de este bloque.
 
+### `opencode` - regla de estilo: nada de texto plano fuera de callouts - 05/11/2026
+
+> [!success] Los pies de figura planos pasan a callouts
+>
+> El dueño señaló que el rótulo plano de las figuras no le gusta: *"no me gusta el texto plano sin
+> callout"*. Esos rótulos los había añadido la sesión `opencode-site` en `286276e` (los 9 SVG de la
+> Unidad 3 de DSW) como texto plano `*Figura: ...*` debajo de cada diagrama.
+>
+> - **9 rótulos convertidos en callout** (`99dc488`), con la convención que ya usaba la misma
+>   materia (`> [!info] 🖼️ …`): los 3 de `01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo.md`,
+>   los 3 de `02 - Strategy, Decorator y Observer.md` y los 3 de
+>   `03 - Factory, Adapter, Facade, Singleton y Template Method.md`. El texto no se pierde: pasa
+>   dentro del callout, sin la palabra "Figura:" y sin cursivas.
+> - **10 callouts reparados en `Machine Learning.md`** (`Fundamentos de FP`): 2 encabezados estaban
+>   **rotos** (`[!bug]-` y `[!abstract]-` sin `>`, salían como texto literal) y los otros 8 tenían el
+>   **cuerpo fuera de la caja** (encabezado citado, tablas y párrafos sin citar). Ahora los 10 son
+>   callouts de verdad, con separador `>` tras el título y el cuerpo citado.
+>
+> [!warning] Lo que queda con texto plano (medido, no aplicado)
+>
+> Inventario con `inventario_plano.py` sobre las 825 notas: **351 líneas de prosa real** fuera de
+> callouts en **~60 notas**, casi todas de **Física Mecánica** (prácticas y fundamentos),
+> **Comunicación** (Unidad 3: precisión, concordancia, APA), **Fundamentos de Programación**
+> (Regex y manejo de errores), **DSW** (U2 y el PDF de patrones) y **Preuniversitario**
+> (MOOC de Comunicación, MOOC de Inglés). Los `**Tags:**`, las display math (`$$`) y las tablas ya
+> se contaron aparte: no son prosa. **No se tocó nada de esto**: es un barrido de ~60 notas que
+> requiere decidir tipo de callout y título para cada bloque, y el dueño tiene que confirmarlo.
+>
+> [!info] Arreglo de fondo en la bibliografía con copyright
+>
+> Al revisar los enlaces rotos que había dejado la otra sesión (`qa_links` targets=9875 bad=2), salió
+> un problema real: el LEEME de **Matemáticas Discretas** seguía **enlazando** sus 2 libros
+> (Johnsonbaugh y Rosen), y esos archivos ya no están en el repo (`ca2891d`), así que en el sitio
+> esos links iban a 404. Ahora van **como texto plano**, igual que hizo la sesión de DSW con sus 5
+> libros (`e94d54c`).
+>
+> De paso, `qa_assets_huerfanos.py` ahora excluye los assets de `Universidad/_no-publicar.txt`:
+> esos archivos no se publican, así que no pueden estar referenciados y no deben contar como
+> huérfanos. Con eso el QA vuelve a **0 huérfanos** (2918 assets publicables; 57 excluidos).
+>
+> [!note] QA de esta ronda
+>
+> `qa_links.py` targets=**7951** bad=**0** · `qa_assets_huerfanos.py` **2918 assets, 0 huérfanos**
+> (+57 de `_no-publicar.txt` excluidos) · `qa_omitidas.py` **825 revisadas / 822 publican / 2 omitidas /
+> 1 revisar** · 0 pies de figura planos fuera de callout en todo `Universidad/`.
+
 ---
 
 ### `opencode-site` - la tipografia incrustada de los SVG: recorte automatico - 05/11/2026

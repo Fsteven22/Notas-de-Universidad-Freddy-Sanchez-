@@ -54,8 +54,8 @@ tags: [unidad0, indice, recursos]
 > - [[Guía Didáctica Mat. discretas lógica y demostraciones.pdf|Guía Didáctica - lógica y demostraciones]]
 
 > [!info] 📁 Bibliografía (no publicable)
-> Libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`).
-> - [[Unidad 0 - Guias y Ejercicios/Guías/LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf|LIBRO DE APOYO — Rosen, Discrete Mathematics and Its Applications]]
-> - [[Unidad 0 - Guias y Ejercicios/Guías/LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf|LIBRO GUIA — Johnsonbaugh, Discrete Mathematics 8th Edition]]
+> Libros de texto con copyright: **ya no están en el repo** (se sacaron del índice para no publicar el archivo), pero siguen en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`). Por eso van como texto plano y no como enlaces.
+> - `LIBRO DE APOYO — Rosen, Discrete Mathematics and Its Applications` — en tu vault local (fuera del repo)
+> - `LIBRO GUIA — Johnsonbaugh, Discrete Mathematics 8th Edition` — en tu vault local (fuera del repo)
 
 **Tags:** #md #unidad0 #recursos

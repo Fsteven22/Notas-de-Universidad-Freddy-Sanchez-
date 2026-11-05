@@ -29,7 +29,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-01-graph.svg]]
 
-*Figura: del dolor de diseño al patrón — cambian los algoritmos → Strategy, se acumulan responsabilidades → Decorator, varios deben enterarse → Observer.*
+> [!info] 🖼️ Figura
+>
+> del dolor de diseño al patrón — cambian los algoritmos → Strategy, se acumulan responsabilidades → Decorator, varios deben enterarse → Observer.
 
 ---
 
@@ -126,7 +128,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-02-flow.svg]]
 
-*Figura: «¿qué varía?» — algoritmo completo → Strategy, capas opcionales → Decorator, quién se entera → Observer.*
+> [!info] 🖼️ Figura
+>
+> «¿qué varía?» — algoritmo completo → Strategy, capas opcionales → Decorator, quién se entera → Observer.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -287,7 +291,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-03-mind.svg]]
 
-*Figura: resumen — Strategy (algoritmos, sin `if`), Decorator (capas, sin herencia) y Observer (suscripción, sin acople).*
+> [!info] 🖼️ Figura
+>
+> resumen — Strategy (algoritmos, sin `if`), Decorator (capas, sin herencia) y Observer (suscripción, sin acople).
 
 > [!success] 🔍 Comparación Final
 >

@@ -30,7 +30,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-01-graph.svg]]
 
-*Figura: de un problema recurrente a un patrón — inventar algo propio o adaptar una solución probada con nombre compartido.*
+> [!info] 🖼️ Figura
+>
+> de un problema recurrente a un patrón — inventar algo propio o adaptar una solución probada con nombre compartido.
 
 ---
 
@@ -88,7 +90,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-02-flow.svg]]
 
-*Figura: «¿qué varía?» — algoritmo intercambiable → Strategy, responsabilidades apilables → Decorator, varios deben enterarse → Observer, creación acoplada → Factory, incompatibilidad → Adapter.*
+> [!info] 🖼️ Figura
+>
+> «¿qué varía?» — algoritmo intercambiable → Strategy, responsabilidades apilables → Decorator, varios deben enterarse → Observer, creación acoplada → Factory, incompatibilidad → Adapter.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -248,7 +252,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-03-mind.svg]]
 
-*Figura: mapa mental de la nota — anatomía de un patrón, las tres familias (creacional, estructural y de comportamiento) y los dos principios (encapsular lo que varía, encapsular a las interfaces).*
+> [!info] 🖼️ Figura
+>
+> mapa mental de la nota — anatomía de un patrón, las tres familias (creacional, estructural y de comportamiento) y los dos principios (encapsular lo que varía, encapsular a las interfaces).
 
 > [!success] 🔍 Comparación Final
 >
