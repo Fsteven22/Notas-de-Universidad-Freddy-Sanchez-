@@ -54,5 +54,5 @@ tags: [recursos-visuales, bases-de-datos]
 
 ## 🔗 Ver también
 
-- `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` - índice de guías, material y lista negra de libros.
+- `../../00 - Índice de Contenido.md` - índice de guías, material y lista negra de libros.
 - `Guía de Problemas 1 - MC, ML y Normalización.md` - problemas de modelo conceptual, modelo lógico y normalización.

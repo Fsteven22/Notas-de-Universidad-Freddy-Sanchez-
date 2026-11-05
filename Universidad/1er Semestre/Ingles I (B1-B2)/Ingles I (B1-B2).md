@@ -66,7 +66,7 @@ tags: [IDIG1006, ingles-i, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la unidad
-> - [[00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - [[00 - Índice de Contenido|00 - Índice de Contenido]]
 
 ---
 

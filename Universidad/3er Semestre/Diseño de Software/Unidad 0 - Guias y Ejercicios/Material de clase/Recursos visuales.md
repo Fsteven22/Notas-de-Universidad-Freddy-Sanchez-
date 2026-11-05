@@ -71,4 +71,4 @@ tags: [recursos-visuales, diseno-de-software]
 
 ## 🔗 Ver también
 
-- `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` - índice de guías, material y enlaces del aula virtual.
+- `00 - Índice de Contenido.md` - índice de guías, material y enlaces del aula virtual.

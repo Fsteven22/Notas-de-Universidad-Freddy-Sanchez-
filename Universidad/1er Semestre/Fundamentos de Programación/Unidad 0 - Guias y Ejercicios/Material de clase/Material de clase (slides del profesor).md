@@ -51,7 +51,7 @@ tags: [CCPG1001, unidad0, teoria, slides]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[../../00 - Leeme Unidad 0|📂 Portal de la Unidad 0]]
+> - [[../../00 - Índice de Contenido|📂 Portal de la Unidad 0]]
 > - [[../../Fundamentos de Programación|🗺️ Mapa de contenido de la materia]]
 
 **Tags:** #CCPG1001 #unidad0 #teoria #slides

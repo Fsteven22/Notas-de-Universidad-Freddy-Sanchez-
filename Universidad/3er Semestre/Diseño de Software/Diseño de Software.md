@@ -76,7 +76,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[00 - Índice de Contenido]]
 
 - [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1|📂 Unidad 1 - Introducción al diseño]]
 

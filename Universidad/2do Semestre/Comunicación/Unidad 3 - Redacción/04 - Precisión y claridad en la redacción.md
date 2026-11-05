@@ -246,7 +246,7 @@ tags: [IDIG2012, unidad3, redaccion, precision, claridad, comunicacion]
 > - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Texto expositivo]]
 > - Siguiente: [[05 - Concordancia y cohesión en la redacción]]
-> - Origen del taller: [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - Origen del taller: [[../00 - Índice de Contenido|00 - Índice de Contenido]]
 > - Aplicación directa: [[01 - Texto expositivo]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Unidad 1 - El proceso de la comunicación/04 - Signos de puntuación y uso de mayúsculas|MOOC U1 — Signos de puntuación]]
 
