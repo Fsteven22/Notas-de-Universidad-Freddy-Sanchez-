@@ -128,7 +128,7 @@ dg-publish: true
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa: [[../Ingles III|Ingles III]]
-> - Unit 1: [[00 - Índice Unit 1]]
+> - Unit 1: [[../Ingles III|Ingles III]]
 > - Reported speech: [[02 - Grammar & Examples - Reported Statements & Questions]]
 
 ## 📚 Referencias

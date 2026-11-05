@@ -113,7 +113,7 @@ dg-publish: true
 > |1|1|0|1|1|1|
 > |1|1|1|1|0|1|
 > 
-> > 📌 $S$ es 1 en 5 de las 8 combinaciones posibles — este tipo de tabla es el punto de partida para simplificar la función con Karnaugh o álgebra de Boole (ver [[00 - Índice Unidad 4]]).
+> > 📌 $S$ es 1 en 5 de las 8 combinaciones posibles — este tipo de tabla es el punto de partida para simplificar la función con Karnaugh o álgebra de Boole (ver [[../../Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]).
 >
 
 > [!example]- ✏️ Ejercicio 2 — Circuito construido solo con NAND

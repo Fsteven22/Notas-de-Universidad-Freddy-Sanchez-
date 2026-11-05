@@ -12,7 +12,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-## Unit 1 — Can We Talk → [[00 - Índice Unit 1|📂 Índice]]
+## Unit 1 — Can We Talk
 
 - [[01 - Vocabulary & Use - Communication & Online Life|01 — Comunicación y vida online]]
 - [[02 - Grammar & Examples - Reported Statements & Questions|02 — Reported speech: statements y questions]]
@@ -20,12 +20,12 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 - [[04 - Reading, Writing, Speaking - Emoji, Emails & Survey|04 — Emoji, emails y survey]]
 
 > [!note] Recursos adicionales (temario anterior "Different Cultures")
-> - [[Unit 1 - Can We Talk/Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|Índice del syllabus Different Cultures]]
+> -
 > - [[Unit 1 - Can We Talk/Recursos adicionales/01 - Obligation Modals (Customs)|01 — Obligation modals]] · [[Unit 1 - Can We Talk/Recursos adicionales/02 - Comparatives and Superlatives (Food)|02 — Comparatives]] · [[Unit 1 - Can We Talk/Recursos adicionales/03 - Group Discussion Strategies|03 — Discusión en grupo]] · [[Unit 1 - Can We Talk/Recursos adicionales/04 - Three-Paragraph Outline|04 — Outline de 3 párrafos]] · [[Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 1|Speaking Practice # 1]] · [[Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 2|Speaking Practice # 2]]
 
 ---
 
-## Unit 2 — Lifestyles → [[00 - Índice Unit 2|📂 Índice]]
+## Unit 2 — Lifestyles
 
 - [[01 - Vocabulary & Use - Jobs, Work-Life & Balance|01 — Trabajo y balance de vida]]
 - [[02 - Grammar & Examples - Unreal Conditionals & I Wish|02 — Conditionals irreales + I wish]]
@@ -34,7 +34,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-## Unit 3 — Yes, You Can! → [[00 - Índice Unit 3|📂 Índice]]
+## Unit 3 — Yes, You Can!
 
 - [[01 - Vocabulary & Use - Places & Rules|01 — Lugares y reglas]]
 - [[02 - Grammar & Examples - Present & Past Rules|02 — Reglas en presente y pasado]]
@@ -43,7 +43,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-## Unit 4 — What If → [[00 - Índice Unit 4|📂 Índice]]
+## Unit 4 — What If
 
 - [[01 - Vocabulary & Use - Discoveries & Mistakes|01 — Descubrimientos y errores]]
 - [[02 - Grammar & Examples - Past Unreal & Past Modals|02 — Past unreal + past modals]]
@@ -52,7 +52,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-## Unit 5 — Contrasts → [[00 - Índice Unit 5|📂 Índice]]
+## Unit 5 — Contrasts
 
 - [[01 - Vocabulary & Use - College & Science|01 — Universidad y ciencia]]
 - [[02 - Grammar & Examples - Gerunds & Causatives|02 — Gerundios y causativos]]
@@ -61,7 +61,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-## Unit 6 — Review → [[00 - Índice Unit 6|📂 Índice]]
+## Unit 6 — Review
 
 - [[01 - Vocabulary & Use - Senses & Memories|01 — Sentidos y recuerdos]]
 - [[02 - Grammar & Examples - Emphasis & Substitution|02 — Énfasis y sustitución]]
@@ -88,17 +88,5 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 ---
 
 - [[00 - Leeme Unidad 0]]
-
-- [[Unit 1 - Can We Talk/00 - Índice Unit 1|📂 Unit 1 - Different Cultures]]
-
-- [[Unit 2 - Lifestyles/00 - Índice Unit 2|📂 Unit 2 - Homes]]
-
-- [[Unit 3 - Yes, You Can!/00 - Índice Unit 3|📂 Unit 3 - Everyday News]]
-
-- [[Unit 4 - What If/00 - Índice Unit 4|📂 Unit 4 - Entertainment Media]]
-
-- [[Unit 5 - Contrasts/00 - Índice Unit 5|📂 Unit 5 - Past and Future Chances]]
-
-- [[Unit 6 - Looking Back/00 - Índice Unit 6|📂 Unit 6 - Review]]
 
 **Tags:** #english #ESPOL #IDIG1008

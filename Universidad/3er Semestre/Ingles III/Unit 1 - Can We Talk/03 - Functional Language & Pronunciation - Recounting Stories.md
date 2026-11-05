@@ -230,7 +230,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Reported Statements & Questions]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Emoji, Emails & Survey]]
 

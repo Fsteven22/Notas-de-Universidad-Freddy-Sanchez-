@@ -134,7 +134,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../../Ingles III|Ingles III]]
 > - Anterior: [[01 - Obligation Modals (Customs)]]
 > - Siguiente: [[03 - Group Discussion Strategies]]
 

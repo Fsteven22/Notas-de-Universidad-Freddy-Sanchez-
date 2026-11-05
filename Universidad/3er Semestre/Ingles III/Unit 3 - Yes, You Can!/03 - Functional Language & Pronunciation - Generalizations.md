@@ -168,7 +168,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 3]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Present & Past Rules]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Ramp, Complaint & Town]]
 

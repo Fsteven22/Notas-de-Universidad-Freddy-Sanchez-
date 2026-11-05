@@ -15,8 +15,6 @@ tags: [IDIG2012, unidad2, indice, comunicacion]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Anterior: [[00 - Índice Unidad 1]]
-> - Siguiente: [[00 - Índice Unidad 3]]
 
 ---
 **Tags:** #IDIG2012 #unidad2 #indice #comunicacion

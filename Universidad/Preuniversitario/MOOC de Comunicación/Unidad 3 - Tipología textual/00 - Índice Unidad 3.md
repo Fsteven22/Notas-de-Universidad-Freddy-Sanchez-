@@ -62,7 +62,7 @@ dg-publish: true
 ---
 
 > [!quote] 🔗 Conexiones
-> - Anterior: [[../Unidad 2 - La oración gramatical/00 - Índice Unidad 2|00 - Índice Unidad 2]]
+> - Anterior: [[../Comunicación Efectiva|Comunicación Efectiva]]
 > - Siguiente: [[01 - Tipos de texto según su intención]]
 
 ---

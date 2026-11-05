@@ -252,7 +252,6 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[01 - Conversión MC a ML por cardinalidad]]
 > - Siguiente: [[03 - Segunda y tercera forma normal]]
 
@@ -268,4 +267,3 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 ---
 
 **Tags:** #TICG1018 #unidad2 #1fn #diccionario #bd
-

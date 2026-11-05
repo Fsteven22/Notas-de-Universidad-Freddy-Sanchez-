@@ -154,7 +154,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 6]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Emphasis & Substitution]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Pets, Moment & Review]]
 

@@ -247,7 +247,6 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 5: [[00 - Índice Unidad 5]]
 > - Anterior: [[02 - Control de versiones con Git]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 

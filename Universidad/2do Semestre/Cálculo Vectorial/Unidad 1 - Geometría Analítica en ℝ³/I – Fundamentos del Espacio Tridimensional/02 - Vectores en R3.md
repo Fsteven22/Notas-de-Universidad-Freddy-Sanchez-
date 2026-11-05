@@ -750,7 +750,7 @@ dg-publish: true
 > **Prerequisites (Prerrequisitos):**
 > 
 > - [[01 - Sistema de referencia espacial en R3]] - Base del espacio ℝ³
-> - [[00 - Índice Unidad 2#🗺️ Índice — Unidad 2: Números Reales]] - Componentes de vectores
+> - [[../../Cálculo Vectorial|Cálculo Vectorial]] - Componentes de vectores
 > - Álgebra Básica - Operaciones fundamentales
 > 
 > **Temas siguientes:**

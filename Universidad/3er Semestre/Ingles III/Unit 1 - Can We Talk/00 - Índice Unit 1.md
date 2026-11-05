@@ -18,11 +18,10 @@ tags: [IDIG1008, unit1, indice, english]
 ## 📎 Recursos
 
 - [[Speaking Practice # 1|Speaking Practice # 1]] — flooding, guion + Q&A
-- Notas del syllabus anterior (Different Cultures) como apoyo en [[Recursos adicionales/00 - Índice Unit 1 (syllabus Different Cultures)|índice syllabus]]
+- Notas del syllabus anterior (Different Cultures) como apoyo en [[../Ingles III|Ingles III]]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Ingles III|Ingles III]]
-> - Siguiente: [[00 - Índice Unit 2]]
 
 ---
 **Tags:** #IDIG1008 #unit1 #indice #english

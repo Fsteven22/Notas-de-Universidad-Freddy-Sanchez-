@@ -165,7 +165,6 @@ dg-publish: true
 
 ---
 
-
 > [!note] 🔄 Mapa — Recurrencia completa
 >
 > ![[../Diagramas/dis-u2-05-02-graph.svg]]
@@ -246,7 +245,6 @@ dg-publish: true
 > > Al verificar recurrencias con potencias, **factoriza la potencia de menor exponente** en cada grupo. Esto convierte $2^{n-1}$ y $2^{n-2}$ en $2^n$ multiplicado por una constante, lo que permite simplificar limpiamente.
 
 ---
-
 
 > [!note] 🔤 Mapa — Cadena y operaciones
 >
@@ -390,7 +388,6 @@ dg-publish: true
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[03 - Propiedades y Equivalencia]] · Guía: [[Guía de Problemas 2 - Ejercicios Resueltos]]
 
 ---

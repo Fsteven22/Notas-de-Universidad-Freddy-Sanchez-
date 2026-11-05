@@ -214,7 +214,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 2]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Unreal Conditionals & I Wish]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Detox, Podcast & Plan]]
 

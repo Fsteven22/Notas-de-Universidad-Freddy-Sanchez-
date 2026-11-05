@@ -18,8 +18,6 @@ tags: [CCPG1042, unidad2, indice, diseno-software]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Anterior: [[00 - Índice Unidad 1]]
-> - Siguiente: [[00 - Índice Unidad 3]]
 > - Material de pizarra (Unidad 0 - Guias y Ejercicios): [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|Caso SIEL - Casos de Uso]] · [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|Caso SIEL - Modelo de Clases]]
 > - Decks de cátedra (Unidad 0 - Guias y Ejercicios): [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] · [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|04b Implementación desde el diseño]]
 

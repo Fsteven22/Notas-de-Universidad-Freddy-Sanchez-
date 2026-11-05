@@ -312,7 +312,6 @@ tags: [IDIG2012, unidad3, ia-etica, prompts, redaccion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Siguiente: [[04 - Precisión y claridad en la redacción]]
 > - Protocolo institucional: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/Uso ético de la IA.pdf|PDF Uso ético de la IA]]

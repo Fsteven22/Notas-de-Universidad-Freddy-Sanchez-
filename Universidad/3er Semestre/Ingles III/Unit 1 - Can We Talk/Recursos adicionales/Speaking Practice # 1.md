@@ -282,7 +282,7 @@ tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../../Ingles III|Ingles III]]
 > - Anterior: (vacío — primer recurso de la unidad)
 > - Siguiente: (vacío — por ahora el único recurso)
 

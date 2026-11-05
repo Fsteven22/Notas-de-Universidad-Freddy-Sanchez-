@@ -282,7 +282,6 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 5: [[00 - Índice Unidad 5]]
 > - Anterior: [[01 - Pruebas unitarias con JUnit 5]]
 > - Siguiente: [[03 - Entrega continua y DevOps]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
@@ -304,7 +303,6 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > ![[01b-p42.png]]
 > ![[01b-p43.png]]
 > ![[01b-p44.png]]
-
 
 ---
 

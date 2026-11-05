@@ -347,7 +347,7 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 >
 > - [[03 - Uso correcto del verbo haber]] — la corrección ortográfica continúa: puntuación clara + verbo *haber* bien usado evitan los errores más frecuentes en textos académicos.
-> - [[00 - Índice Unidad 3]] — vuelve al índice para ubicar esta nota dentro de la tipología textual y pasar al siguiente tema de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — vuelve al índice para ubicar esta nota dentro de la tipología textual y pasar al siguiente tema de la unidad.
 > - Siguiente paso sugerido: revisar un texto propio y corregir puntos suspensivos, comillas, ¿? ¡! y mayúsculas con la lista de control del resumen ejecutivo.
 
 ---

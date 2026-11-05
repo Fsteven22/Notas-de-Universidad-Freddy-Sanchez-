@@ -301,7 +301,6 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[01 - Diseño arquitectónico y estilos]]
 > - Siguiente: [[03 - UML clases, objetos y relaciones]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
@@ -350,7 +349,6 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > ![[04p-p47.png]]
 > ![[04p-p48.png]]
 > ![[04p-p49.png]]
-
 
 ---
 

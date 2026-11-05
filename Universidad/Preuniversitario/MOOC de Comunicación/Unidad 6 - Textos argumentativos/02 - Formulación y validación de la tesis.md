@@ -218,7 +218,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 6]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [[01 - El texto argumentativo (concepto, ámbitos y estructura)]] — la tesis es el componente central de la Introducción en la estructura tripartita.
 > - [[03 - Análisis y desmontaje de textos argumentativos]] — al analizar un texto ajeno, el primer paso es identificar y validar su tesis con estos mismos filtros.
 

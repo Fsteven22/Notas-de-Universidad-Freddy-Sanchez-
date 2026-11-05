@@ -184,7 +184,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 6]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Senses & Memories]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Shared Memories]]
 

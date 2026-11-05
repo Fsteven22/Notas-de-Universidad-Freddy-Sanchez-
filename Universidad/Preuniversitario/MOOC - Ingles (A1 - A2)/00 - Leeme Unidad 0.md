@@ -18,8 +18,8 @@ tags: [unidad0, indice, recursos]
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
 > - [[01  - Basic Greetings and Introductions]] — *Unit 0 - Foundations*
-> - [[Unit 1 - Basic Grammar/00 - Índice|00 - Índice]] — *Unit 1 - Basic Grammar*
-> - [[Unit 2 - Sentence Structure/00 - Índice|00 - Índice]] — *Unit 2 - Sentence Structure*
+> - [[Unit 1 - Basic Grammar/01 - Verb to be|01 - Verb to be]] — *Unit 1 - Basic Grammar*
+> - [[Unit 2 - Sentence Structure/01 - Parts of Speech (POS)|01 - Parts of Speech (POS)]] — *Unit 2 - Sentence Structure*
 > - [[01 - Capitalization Rules]] — *Unit 3 - Writing and Punctuation*
 > - [[01 - Regular and Irregular Verbs]] — *Unit 4 - Vocabulary and Verbs*
 

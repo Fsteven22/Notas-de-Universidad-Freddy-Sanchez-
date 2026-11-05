@@ -494,7 +494,6 @@ O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[04 - UML casos de uso, secuencia y actividad]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 

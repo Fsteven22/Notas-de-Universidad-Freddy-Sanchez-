@@ -204,7 +204,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 2]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Jobs, Work-Life & Balance]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Options & Warnings]]
 

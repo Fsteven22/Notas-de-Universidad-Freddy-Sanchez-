@@ -17,8 +17,6 @@ tags: [IDIG1008, unit2, indice, english]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Ingles III|Ingles III]]
-> - Anterior: [[00 - Índice Unit 1]]
-> - Siguiente: [[00 - Índice Unit 3]]
 
 ---
 **Tags:** #IDIG1008 #unit2 #indice #english

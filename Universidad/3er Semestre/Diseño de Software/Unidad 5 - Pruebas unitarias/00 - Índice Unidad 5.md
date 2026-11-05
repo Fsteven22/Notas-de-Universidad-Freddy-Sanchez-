@@ -16,7 +16,6 @@ tags: [CCPG1042, unidad5, indice, diseno-software]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Anterior: [[00 - Índice Unidad 4]]
 
 ---
 **Tags:** #CCPG1042 #unidad5 #indice #diseno-software

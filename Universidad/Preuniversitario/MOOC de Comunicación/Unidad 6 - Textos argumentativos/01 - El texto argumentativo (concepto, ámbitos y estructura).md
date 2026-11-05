@@ -271,7 +271,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 6]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [[02 - Formulación y validación de la tesis]] — profundiza en cómo formular la tesis presentada en la Introducción.
 > - [[03 - Análisis y desmontaje de textos argumentativos]] — aplica esta estructura para analizar textos ajenos.
 

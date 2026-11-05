@@ -17,7 +17,6 @@ tags: [IDIG1008, unit6, indice, english]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Ingles III|Ingles III]]
-> - Anterior: [[00 - Índice Unit 5]]
 > - Siguiente: (vacío — última unidad del libro)
 
 ---

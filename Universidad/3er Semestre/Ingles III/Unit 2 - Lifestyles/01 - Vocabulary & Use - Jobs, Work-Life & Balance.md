@@ -215,7 +215,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 2]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro U8)
 > - Siguiente: [[02 - Grammar & Examples - Unreal Conditionals & I Wish]]
 

@@ -165,7 +165,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 6]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Shared Memories]]
 > - Siguiente: (vacío — última unidad del libro)
 

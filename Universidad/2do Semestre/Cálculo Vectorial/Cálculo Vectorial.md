@@ -42,7 +42,6 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 > - [[04 – Clasificación de superficies por secciones]]
 
 > [!note] II · Sistemas de Coordenadas
-> - 📂 [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice|Índice del subtema]]
 > - [[01 - Coordenadas cilíndricas y esféricas]]
 > - [[02 - Transformaciones entre Coordenadas]]
 > - [[03 - Representación gráfica]]
@@ -186,7 +185,6 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 > [!info] 📚 Seguir estudiando
 >
 > - Syllabus completo: [[Bienvenida y Syllabus Calculo Vectorial]]
-> - Subtema con índice propio: [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice|II · Sistemas de Coordenadas]]
 
 ---
 

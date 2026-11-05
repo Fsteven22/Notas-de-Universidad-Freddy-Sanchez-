@@ -268,7 +268,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro)
 > - Siguiente: [[02 - Grammar & Examples - Reported Statements & Questions]]
 

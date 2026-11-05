@@ -17,12 +17,12 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Unidad 1 - Lógica y Conjuntos/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Lógica y Conjuntos*
-> - [[Unidad 2 - Números Reales/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Números Reales*
-> - [[Unidad 3 - Funciones y Trigonometría/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Funciones y Trigonometría*
-> - [[Unidad 4 - Matrices y Sistemas/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Matrices y Sistemas*
-> - [[Unidad 5 - Geometría/00 - Índice Unidad 5|00 - Índice Unidad 5]] — *Unidad 5 - Geometría*
-> - [[Unidad 6 - Complejos y Polares/00 - Índice Unidad 6|00 - Índice Unidad 6]] — *Unidad 6 - Complejos y Polares*
+> - [[Unidad 1 - Lógica y Conjuntos/I - Lógica proposicional/01 - Proposiciones|01 - Proposiciones]] — *Unidad 1 - Lógica y Conjuntos*
+> - [[Unidad 2 - Números Reales/I - Números Reales/01 - Conjuntos Numéricos|01 - Conjuntos Numéricos]] — *Unidad 2 - Números Reales*
+> - [[Unidad 3 - Funciones y Trigonometría/I - Funciones de Variable Real/01 - Definición, dominio y rango|01 - Definición, dominio y rango]] — *Unidad 3 - Funciones y Trigonometría*
+> - [[Unidad 4 - Matrices y Sistemas/I - Matrices y Sistemas de Ecuaciones/01 - Definición y clases de matrices|01 - Definición y clases de matrices]] — *Unidad 4 - Matrices y Sistemas*
+> - [[Unidad 5 - Geometría/I - Geometría Plana/01 - Figuras geométricas en el plano|01 - Figuras geométricas en el plano]] — *Unidad 5 - Geometría*
+> - [[Unidad 6 - Complejos y Polares/I - Números Complejos/01 - Definición y representación geométrica|01 - Definición y representación geométrica]] — *Unidad 6 - Complejos y Polares*
 
 > [!info] 📁 Material existente
 > - `Unidad 0 - Guias y Ejercicios/Diagramas/` — 97 diagramas SVG de las unidades, embebidos en sus notas.

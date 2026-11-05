@@ -121,7 +121,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../../Ingles III|Ingles III]]
 > - Anterior: [[03 - Group Discussion Strategies]]
 > - Siguiente: (vacío — última nota de la unidad)
 

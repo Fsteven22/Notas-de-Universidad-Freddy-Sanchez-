@@ -12,7 +12,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-## Unidad 1 — Modelos de Datos y ER → [[00 - Índice Unidad 1|📂 Índice]]
+## Unidad 1 — Modelos de Datos y ER
 
 - [[01 - Dato, información y modelos de datos]]
 - [[02 - Entidades, atributos, claves y relaciones]]
@@ -21,7 +21,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-## Unidad 2 — Modelo Lógico y Conversión → [[00 - Índice Unidad 2|📂 Índice]]
+## Unidad 2 — Modelo Lógico y Conversión
 
 - [[01 - Conversión MC a ML por cardinalidad]]
 - [[02 - Primera forma normal y diccionario de datos]]
@@ -30,7 +30,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-## Unidad 3 — SQL y PL-SQL → [[00 - Índice Unidad 3|📂 Índice]]
+## Unidad 3 — SQL y PL-SQL
 
 - Guía: [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] (talleres 3 y 4: SQL, transacciones, triggers, usuarios; MongoDB)
 - *Notas teóricas pendientes: avanza con lo que la docente publique en AV.*
@@ -57,9 +57,5 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 ---
 
 - [[00 - Leeme Unidad 0]]
-
-- [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1|📂 Unidad 1 - Modelos de Datos y ER]]
-
-- [[Unidad 2 - Modelo lógico y conversión/00 - Índice Unidad 2|📂 Unidad 2 - Modelo lógico y conversión]]
 
 **Tags:** #bases-de-datos #ESPOL #TICG1018

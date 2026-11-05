@@ -149,7 +149,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 4]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Keep Engaged]]
 > - Siguiente: (vacío — U5 Contrasts en camino)
 

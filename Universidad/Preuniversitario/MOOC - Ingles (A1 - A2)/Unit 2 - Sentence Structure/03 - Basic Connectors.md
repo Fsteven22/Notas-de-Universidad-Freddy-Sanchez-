@@ -988,7 +988,7 @@ tags: [ingles-a1a2, unit2, connectors, mooc]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice Unit 2: [[00 - Índice]]
+> - Índice: [[../Inglés (A1-A2)|Inglés (A1-A2)]]
 > - Anterior: [[02 - Parts of a Sentence]]
 > - Mapa: [[../Inglés (A1-A2)|Inglés (A1-A2)]]
 

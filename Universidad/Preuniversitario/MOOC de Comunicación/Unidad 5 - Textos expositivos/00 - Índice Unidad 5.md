@@ -79,7 +79,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - Anterior: [[../Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4|00 - Índice Unidad 4]] — la disección en ideas centrales de esta unidad es la base para resumir.
+> - Anterior: [[../Comunicación Efectiva|Comunicación Efectiva]] — la disección en ideas centrales de esta unidad es la base para resumir.
 > - Siguiente: [[01 - El texto expositivo (concepto, tipos y estructura)]] — primera nota de la unidad.
 
 ---

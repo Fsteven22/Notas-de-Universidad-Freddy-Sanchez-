@@ -524,7 +524,6 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Siguiente: [[02 - Comunicación grupal y toma de decisiones]]
 > - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]

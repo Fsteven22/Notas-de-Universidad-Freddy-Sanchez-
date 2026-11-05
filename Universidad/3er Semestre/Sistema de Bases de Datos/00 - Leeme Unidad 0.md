@@ -18,9 +18,9 @@ tags: [unidad0, indice, recursos, bd, ticg1018]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Modelos de Datos y ER*
-> - [[Unidad 2 - Modelo lógico y conversión/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Modelo lógico y conversión*
-> - [[Unidad 3 - SQL y PL-SQL/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - SQL y PL-SQL*
+> - [[Unidad 1 - Modelos de Datos y ER/01 - Dato, información y modelos de datos|01 - Dato, información y modelos de datos]] — *Unidad 1 - Modelos de Datos y ER*
+> - [[Unidad 2 - Modelo lógico y conversión/01 - Conversión MC a ML por cardinalidad|01 - Conversión MC a ML por cardinalidad]] — *Unidad 2 - Modelo lógico y conversión*
+> - [[Unidad 3 - SQL y PL-SQL/Guía de Problemas 3 - SQL, PL-SQL y Seguridad|Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — *Unidad 3 - SQL y PL-SQL*
 
 > [!note] 🗂️ Notas de la materia
 > - [[Sistema de Bases de Datos|Sistema de Bases de Datos]] — índice de la materia.

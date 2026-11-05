@@ -187,7 +187,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 4]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Discoveries & Mistakes]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Keep Engaged]]
 

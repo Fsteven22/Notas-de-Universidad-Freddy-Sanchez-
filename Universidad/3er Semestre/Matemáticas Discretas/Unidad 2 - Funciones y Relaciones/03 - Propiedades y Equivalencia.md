@@ -14,7 +14,6 @@ dg-publish: true
 
 ---
 
-
 > [!note] 📋 Mapa — Orden vs equivalencia
 >
 > ![[../Diagramas/dis-u2-04-02-graph.svg]]
@@ -160,7 +159,6 @@ dg-publish: true
 > - Si [a] ≠ [b], entonces [a] ∩ [b] = ∅ (son disjuntas).
 > - ⋃ₐ [a] = X (cubren todo X).
 
-
 > [!abstract] 📐 Teorema 3 — Equivalencia ⟹ Partición (Conjunto Cociente)
 > 
 > Si R es una relación de equivalencia sobre X, entonces la familia:
@@ -264,7 +262,6 @@ dg-publish: true
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[02 - Relaciones]] · Siguiente: [[04 - Sucesiones y Cadenas]]
 
 ---

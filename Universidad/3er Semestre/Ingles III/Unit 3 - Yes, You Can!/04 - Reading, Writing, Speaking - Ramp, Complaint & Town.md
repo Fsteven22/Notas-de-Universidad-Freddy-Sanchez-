@@ -163,9 +163,9 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 3]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Generalizations]]
-> - Siguiente: [[00 - Índice Unit 4]]
+> - Siguiente: [[../Ingles III|Ingles III]]
 
 ## 📚 Referencias
 

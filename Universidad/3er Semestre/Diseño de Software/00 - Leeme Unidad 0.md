@@ -22,11 +22,11 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Introducción al diseño*
-> - [[Unidad 2 - Diseño orientado a objetos/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Diseño orientado a objetos*
-> - [[Unidad 3 - Patrones de diseño/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Patrones de diseño*
-> - [[Unidad 4 - Refactorización/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Refactorización*
-> - [[Unidad 5 - Pruebas unitarias/00 - Índice Unidad 5|00 - Índice Unidad 5]] — *Unidad 5 - Pruebas unitarias*
+> - [[Unidad 1 - Introducción al diseño/01 - Naturaleza del software y el diseño|01 - Naturaleza del software y el diseño]] — *Unidad 1 - Introducción al diseño*
+> - [[Unidad 2 - Diseño orientado a objetos/01 - Diseño arquitectónico y estilos|01 - Diseño arquitectónico y estilos]] — *Unidad 2 - Diseño orientado a objetos*
+> - [[Unidad 3 - Patrones de diseño/01 - Qué es un patrón y encapsular lo que varía|01 - Qué es un patrón y encapsular lo que varía]] — *Unidad 3 - Patrones de diseño*
+> - [[Unidad 4 - Refactorización/01 - Qué y cuándo refactorizar, smells|01 - Qué y cuándo refactorizar, smells]] — *Unidad 4 - Refactorización*
+> - [[Unidad 5 - Pruebas unitarias/01 - Pruebas unitarias con JUnit 5|01 - Pruebas unitarias con JUnit 5]] — *Unidad 5 - Pruebas unitarias*
 
 > [!note] 🔗 Enlaces del Aula Virtual
 > [[Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] — enlaces de clases, rúbricas y archivos del aula virtual.

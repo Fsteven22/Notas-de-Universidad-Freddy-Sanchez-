@@ -22,7 +22,6 @@ tags: [IDIG1008, unit1, indice, english]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../../Ingles III|Ingles III]]
-> - Siguiente: [[00 - Índice Unit 2]]
 
 ---
 **Tags:** #IDIG1008 #unit1 #indice #english

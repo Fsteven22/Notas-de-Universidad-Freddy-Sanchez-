@@ -190,8 +190,6 @@ dg-publish: true
 >
 > Respuestas abiertas. Para el punto 3: copiar y pegar frases textuales no es una reconstrucción propia del contenido, sino una selección de fragmentos — el resumen académico exige reformular la organización de las ideas (fase 5), no solo recortar.
 
-
-
 ---
 
 ## ✅ Metas de Aprendizaje
@@ -239,7 +237,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 4]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [[02 - Técnicas de parafraseo y citación]] — contrasta el resumen (reducción) con el parafraseo (reformulación).
 > - [[03 - La síntesis de múltiples fuentes]] — extiende esta metodología a la integración de varias fuentes.
 > - [!info] Conexión cruzada con la Unidad 5: la fase 3 (localizar ideas secundarias esenciales) reutiliza la técnica de disección de párrafos de [[../Unidad 5 - Textos expositivos/02 - Análisis del texto expositivo|02 - Análisis del texto expositivo]].

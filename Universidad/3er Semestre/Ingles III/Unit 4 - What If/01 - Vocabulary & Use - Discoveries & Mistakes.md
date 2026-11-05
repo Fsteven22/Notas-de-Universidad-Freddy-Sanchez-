@@ -179,7 +179,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 4]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro U10)
 > - Siguiente: [[02 - Grammar & Examples - Past Unreal & Past Modals]]
 

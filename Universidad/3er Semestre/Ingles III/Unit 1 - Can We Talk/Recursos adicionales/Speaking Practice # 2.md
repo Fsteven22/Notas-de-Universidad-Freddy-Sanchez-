@@ -319,7 +319,7 @@ tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1 (syllabus Different Cultures)]]
+> - Índice: [[../../Ingles III|Ingles III]]
 > - Anterior: [[Speaking Practice # 1]]
 > - Siguiente: (vacío — por ahora el último recurso)
 

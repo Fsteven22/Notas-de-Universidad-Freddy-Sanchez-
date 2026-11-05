@@ -73,7 +73,6 @@ tags: [EYAG1037, electricidad, syllabus]
 > | — | Actividades de evaluación | 4 h |
 > | | **Total** | **32 h** |
 
-
 ![[Horario de clases.png]]
 
 ---
@@ -194,7 +193,7 @@ tags: [EYAG1037, electricidad, syllabus]
 
 > [!quote] 🔗 Conexiones
 > - Entrada principal: [[Fundamentos de Electricidad y Sistemas Digitales]] — landing con Dataview de toda la materia
-> - Unidades: [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] · [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] · [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] · [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]]
+> - Unidades: [[Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 
 ---
 

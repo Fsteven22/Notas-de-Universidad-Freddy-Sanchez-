@@ -296,7 +296,6 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[04 - Precisión y claridad en la redacción]]
 > - Siguiente: [[06 - Normas APA, citación y referencias]]
 > - Mapa de la unidad: [[01 - Texto expositivo]]

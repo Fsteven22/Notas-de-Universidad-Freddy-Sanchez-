@@ -744,7 +744,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[03 - Paradigmas de programación y diseño]]
 > - Relacionado: [[02 - Principios de diseño, cohesión y acoplamiento]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]

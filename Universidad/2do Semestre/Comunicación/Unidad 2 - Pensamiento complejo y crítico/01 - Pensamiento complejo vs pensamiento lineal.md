@@ -182,7 +182,6 @@ tags: [IDIG2012, unidad2, pensamiento-complejo, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Siguiente: [[02 - Pensamiento crítico y perfil prosumidor]]
 > - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]

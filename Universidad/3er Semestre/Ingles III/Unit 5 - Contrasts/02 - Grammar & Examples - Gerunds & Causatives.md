@@ -184,7 +184,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 5]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - College & Science]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Alternatives]]
 

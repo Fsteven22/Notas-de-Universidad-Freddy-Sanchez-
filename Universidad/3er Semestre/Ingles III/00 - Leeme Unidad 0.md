@@ -19,12 +19,12 @@ tags: [unidad0, indice, recursos]
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
 > - [[01 - Grammar Review - Object Pronouns & Present Continuous]] — *Unit 0 - Preliminar*
-> - [[Unit 1 - Can We Talk/00 - Índice Unit 1|00 - Índice Unit 1]] — *Unit 1 - Can We Talk*
-> - [[Unit 2 - Lifestyles/00 - Índice Unit 2|00 - Índice Unit 2]] — *Unit 2 - Lifestyles*
-> - [[Unit 3 - Yes, You Can!/00 - Índice Unit 3|00 - Índice Unit 3]] — *Unit 3 - Yes, You Can!*
-> - [[Unit 4 - What If/00 - Índice Unit 4|00 - Índice Unit 4]] — *Unit 4 - What If*
-> - [[Unit 5 - Contrasts/00 - Índice Unit 5|00 - Índice Unit 5]] — *Unit 5 - Contrasts*
-> - [[Unit 6 - Looking Back/00 - Índice Unit 6|00 - Índice Unit 6]] — *Unit 6 - Looking Back*
+> - [[Unit 1 - Can We Talk/01 - Vocabulary & Use - Communication & Online Life|01 - Vocabulary & Use - Communication & Online Life]] — *Unit 1 - Can We Talk*
+> - [[Unit 2 - Lifestyles/01 - Vocabulary & Use - Jobs, Work-Life & Balance|01 - Vocabulary & Use - Jobs, Work-Life & Balance]] — *Unit 2 - Lifestyles*
+> - [[Unit 3 - Yes, You Can!/01 - Vocabulary & Use - Places & Rules|01 - Vocabulary & Use - Places & Rules]] — *Unit 3 - Yes, You Can!*
+> - [[Unit 4 - What If/01 - Vocabulary & Use - Discoveries & Mistakes|01 - Vocabulary & Use - Discoveries & Mistakes]] — *Unit 4 - What If*
+> - [[Unit 5 - Contrasts/01 - Vocabulary & Use - College & Science|01 - Vocabulary & Use - College & Science]] — *Unit 5 - Contrasts*
+> - [[Unit 6 - Looking Back/01 - Vocabulary & Use - Senses & Memories|01 - Vocabulary & Use - Senses & Memories]] — *Unit 6 - Looking Back*
 
 > [!note] 📄 Material del curso
 > `Unidad 0 - Guias y Ejercicios/Material de clase/` — PDFs del libro (Empower U7-U9 y U10-U12), apuntes de Fluent 2 y capturas de clase.

@@ -14,7 +14,6 @@ tags: [TICG1018, unidad3, indice, bd]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
-> - Unidad anterior: [[00 - Índice Unidad 2]]
 > - Material de base: [[../00 - Leeme Unidad 0|Leeme Unidad 0]] (talleres y lecciones)
 
 ---

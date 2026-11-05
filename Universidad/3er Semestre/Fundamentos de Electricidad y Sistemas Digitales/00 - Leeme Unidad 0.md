@@ -17,10 +17,10 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Electricidad y Circuitos*
-> - [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Introducción a la Electrónica*
-> - [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Circuitos integrados*
-> - [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Sistemas Digitales*
+> - [[Teórico/Unidad 1 - Electricidad y Circuitos/01 - Conceptos Fundamentales de la Electricidad|01 - Conceptos Fundamentales de la Electricidad]] — *Unidad 1 - Electricidad y Circuitos*
+> - [[Teórico/Unidad 2 - Introducción a la Electrónica/01 - Semiconductores y Bandas de Energía|01 - Semiconductores y Bandas de Energía]] — *Unidad 2 - Introducción a la Electrónica*
+> - [[Teórico/Unidad 3 - Circuitos integrados/01 - CI no programables|01 - CI no programables]] — *Unidad 3 - Circuitos integrados*
+> - [[Teórico/Unidad 4 - Sistemas Digitales/01 - Introducción a la Electrónica Digital|01 - Introducción a la Electrónica Digital]] — *Unidad 4 - Sistemas Digitales*
 
 > [!note] 🧪 Prácticas de laboratorio
 > La carpeta `Practico/` (en la raíz de la materia) tiene los recursos del laboratorio, los equipos y las 4 prácticas con sus soluciones.

@@ -290,7 +290,6 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[05 - Concordancia y cohesión en la redacción]]
 > - Aplicación directa: [[01 - Texto expositivo]]
 > - Origen del taller: [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]

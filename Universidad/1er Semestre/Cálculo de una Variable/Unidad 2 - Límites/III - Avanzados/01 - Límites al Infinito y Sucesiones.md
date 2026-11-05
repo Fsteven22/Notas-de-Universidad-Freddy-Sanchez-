@@ -514,7 +514,7 @@ dg-publish: true
 > 
 > **Prerrequisitos necesarios:**
 > 
-> - [[00 - Índice Unidad 2#🗺️ Índice — Unidad 2: Números Reales]] - Propiedades de completitud
+> - [[../../Cálculo de una Variable|Cálculo de una Variable]] - Propiedades de completitud
 > - Desigualdades - Manipulación de inecuaciones
 > - Límites Básicos - Conceptos fundamentales
 > - [[02 - Funciones trigonométricas elementales]] - Para sucesiones definidas por funciones

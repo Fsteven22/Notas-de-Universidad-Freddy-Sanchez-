@@ -243,7 +243,6 @@ tags: [IDIG2012, unidad3, redaccion, precision, claridad, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Texto expositivo]]
 > - Siguiente: [[05 - Concordancia y cohesión en la redacción]]
 > - Origen del taller: [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]

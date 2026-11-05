@@ -329,7 +329,6 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Qué es un patrón y encapsular lo que varía]]
 > - Siguiente: [[03 - Patrones esenciales II, creación y estructura]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]

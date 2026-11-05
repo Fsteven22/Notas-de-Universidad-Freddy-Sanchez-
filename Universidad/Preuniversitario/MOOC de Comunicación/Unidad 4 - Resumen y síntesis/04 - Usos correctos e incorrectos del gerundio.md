@@ -205,7 +205,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 4]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [!info] Aunque temáticamente es un tema gramatical distinto al resumen/síntesis, esta nota se agrupa en la Unidad 4 como apoyo a la redacción formal cohesiva exigida en [[01 - El resumen académico]] y en [[03 - La síntesis de múltiples fuentes]].
 
 ---

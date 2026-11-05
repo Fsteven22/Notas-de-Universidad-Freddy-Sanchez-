@@ -13,7 +13,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 ---
 
-## ⚡ Unidad 1 — Electricidad y Circuitos *(8h)* → [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|📂 Índice Dataview]]
+## ⚡ Unidad 1 — Electricidad y Circuitos *(8h)*
 
 > [!note] Electricidad y Circuitos
 > - [[01 - Conceptos Fundamentales de la Electricidad|01 — Conceptos Fundamentales]]
@@ -28,7 +28,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 ---
 
-## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)* → [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|📂 Índice Dataview]]
+## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)*
 
 > [!note] Electrónica
 > - [[01 - Semiconductores y Bandas de Energía|01 — Semiconductores]]
@@ -42,7 +42,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 ---
 
-## 🧩 Unidad 3 — Circuitos Integrados *(6h)* → [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|📂 Índice Dataview]]
+## 🧩 Unidad 3 — Circuitos Integrados *(6h)*
 
 > [!note] Circuitos Integrados
 > - [[01 - CI no programables|01 — CI No Programables]]
@@ -57,7 +57,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 ---
 
-## 💻 Unidad 4 — Sistemas Digitales *(8h)* → [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|📂 Índice Dataview]]
+## 💻 Unidad 4 — Sistemas Digitales *(8h)*
 
 > [!note] Sistemas Digitales
 > - [[01 - Introducción a la Electrónica Digital|01 — Electrónica Digital]]
@@ -84,18 +84,9 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 > [!quote] 🔗 Navegación
 > - Syllabus: [[Bienvenida y Syllabus FESD]]
-> - Índices: [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] · [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] · [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] · [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]]
 
 - [[00 - Recursos del laboratorio]]
 
 - [[00 - Recursos Unidad 0]]
-
-- [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|📂 Unidad 1 - Electricidad y Circuitos]]
-
-- [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|📂 Unidad 2 - Introducción a la Electrónica]]
-
-- [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|📂 Unidad 3 - Circuitos integrados]]
-
-- [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|📂 Unidad 4 - Sistemas Digitales]]
 
 **Tags:** #FESD #EYAG1037 #ESPOL #indice #mapa-de-contenido

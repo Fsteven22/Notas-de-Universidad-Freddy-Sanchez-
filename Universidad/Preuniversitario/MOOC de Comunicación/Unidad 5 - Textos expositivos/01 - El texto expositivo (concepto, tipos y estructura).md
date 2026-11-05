@@ -278,7 +278,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 5]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [[02 - Análisis del texto expositivo]] — aplica esta estructura para disecar párrafos en ideas centrales y de apoyo.
 > - [[03 - Conectores textuales y coherencia lógica]] — los conectores son la herramienta que enlaza los párrafos temáticos de esta estructura.
 > - [!info] Conexión cruzada con la Unidad 6: el texto expositivo se distingue del texto argumentativo por la ausencia de tesis y de sesgo persuasivo — ver [[../Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]].

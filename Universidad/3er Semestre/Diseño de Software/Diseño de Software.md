@@ -12,7 +12,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-## Unidad 1 — Introducción al diseño *(5h)* → [[00 - Índice Unidad 1|📂 Índice]]
+## Unidad 1 — Introducción al diseño *(5h)*
 
 - [[01 - Naturaleza del software y el diseño]]
 - [[02 - Principios de diseño, cohesión y acoplamiento]]
@@ -21,7 +21,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-## Unidad 2 — Diseño orientado a objetos *(7h)* → [[00 - Índice Unidad 2|📂 Índice]]
+## Unidad 2 — Diseño orientado a objetos *(7h)*
 
 - [[01 - Diseño arquitectónico y estilos]]
 - [[02 - Diseño por componentes e interfaces]]
@@ -32,24 +32,23 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-## Unidad 3 — Patrones de diseño *(7h)* → [[00 - Índice Unidad 3|📂 Índice]]
+## Unidad 3 — Patrones de diseño *(7h)*
 
 - [[01 - Qué es un patrón y encapsular lo que varía]]
 - [[02 - Patrones esenciales I, Strategy Decorator Observer]]
 - [[03 - Patrones esenciales II, creación y estructura]]
 - 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — capturas de pizarra de la clase
 
-
 ---
 
-## Unidad 4 — Refactorización *(5h)* → [[00 - Índice Unidad 4|📂 Índice]]
+## Unidad 4 — Refactorización *(5h)*
 
 - [[01 - Qué y cuándo refactorizar, smells]]
 - [[02 - Catálogo esencial de Fowler, Extract Move Rename]]
 
 ---
 
-## Unidad 5 — Pruebas unitarias *(4h)* → [[00 - Índice Unidad 5|📂 Índice]]
+## Unidad 5 — Pruebas unitarias *(4h)*
 
 - [[01 - Pruebas unitarias con JUnit 5]]
 - [[02 - Control de versiones con Git]]
@@ -77,15 +76,5 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 ---
 
 - [[00 - Leeme Unidad 0]]
-
-- [[Unidad 1 - Introducción al diseño/00 - Índice Unidad 1|📂 Unidad 1 - Introducción al diseño]]
-
-- [[Unidad 2 - Diseño orientado a objetos/00 - Índice Unidad 2|📂 Unidad 2 - Diseño orientado a objetos]]
-
-- [[Unidad 3 - Patrones de diseño/00 - Índice Unidad 3|📂 Unidad 3 - Patrones de diseño]]
-
-- [[Unidad 4 - Refactorización/00 - Índice Unidad 4|📂 Unidad 4 - Refactorización]]
-
-- [[Unidad 5 - Pruebas unitarias/00 - Índice Unidad 5|📂 Unidad 5 - Pruebas unitarias]]
 
 **Tags:** #diseno-software #ESPOL #CCPG1042

@@ -211,7 +211,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Communication & Online Life]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Recounting Stories]]
 

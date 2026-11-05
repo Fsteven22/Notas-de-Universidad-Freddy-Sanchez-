@@ -360,7 +360,6 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Siguiente: [[02 - Diseño por componentes e interfaces]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 

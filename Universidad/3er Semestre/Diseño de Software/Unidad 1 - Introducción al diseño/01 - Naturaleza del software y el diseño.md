@@ -390,7 +390,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Siguiente: [[02 - Principios de diseño, cohesión y acoplamiento]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 

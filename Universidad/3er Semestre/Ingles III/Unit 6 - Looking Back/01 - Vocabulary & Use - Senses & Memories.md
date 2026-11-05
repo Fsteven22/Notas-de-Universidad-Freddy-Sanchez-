@@ -196,7 +196,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 6]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro U12)
 > - Siguiente: [[02 - Grammar & Examples - Emphasis & Substitution]]
 

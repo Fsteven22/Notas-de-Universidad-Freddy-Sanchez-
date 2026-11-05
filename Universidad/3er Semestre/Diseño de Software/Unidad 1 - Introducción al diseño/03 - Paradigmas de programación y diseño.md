@@ -395,7 +395,7 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > | Tema | Qué verás | Por qué importa |
 > |---|---|---|
 > | **Principios SOLID** | 5 reglas OO (S3 del docente) | El examen de diseño bien hecho |
-> | **Repasa** | [[00 - Índice Unidad 1]] (repaso general U1) | Control lunes 23:59 en papel |
+> | **Repasa** | [[../Diseño de Software|Diseño de Software]] (repaso general U1) | Control lunes 23:59 en papel |
 
 ---
 
@@ -404,7 +404,6 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[02 - Principios de diseño, cohesión y acoplamiento]]
 > - Siguiente: [[04 - Principios SOLID]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]

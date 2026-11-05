@@ -47,7 +47,6 @@ dg-publish: true
 
 ---
 
-
 > [!note] 🔍 Mapa — Inyectiva, sobreyectiva, biyectiva
 >
 > ![[../Diagramas/dis-u2-02-02-flow.svg]]
@@ -425,7 +424,6 @@ dg-publish: true
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Siguiente: [[02 - Relaciones]] · Guía: [[Guía de Problemas 2 - Ejercicios Resueltos]]
 
 ---

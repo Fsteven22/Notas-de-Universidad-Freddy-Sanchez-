@@ -248,7 +248,6 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[01 - Escucha activa, empatía y barreras]]
 > - Siguiente: [[03 - Comunicación estratégica, IIR y pitch personal]]
 > - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]

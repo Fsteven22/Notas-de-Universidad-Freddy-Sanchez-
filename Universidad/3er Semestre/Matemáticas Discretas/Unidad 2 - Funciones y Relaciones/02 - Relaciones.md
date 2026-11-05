@@ -346,7 +346,6 @@ dg-publish: true
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Matemáticas Discretas|Matemáticas Discretas]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[01 - Funciones]] · Siguiente: [[03 - Propiedades y Equivalencia]]
 
 ---

@@ -17,12 +17,12 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Unidad 1 - El proceso de la comunicación/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - El proceso de la comunicación*
-> - [[Unidad 2 - La oración gramatical/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - La oración gramatical*
-> - [[Unidad 3 - Tipología textual/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Tipología textual*
-> - [[Unidad 4 - Resumen y síntesis/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Resumen y síntesis*
-> - [[Unidad 5 - Textos expositivos/00 - Índice Unidad 5|00 - Índice Unidad 5]] — *Unidad 5 - Textos expositivos*
-> - [[Unidad 6 - Textos argumentativos/00 - Índice Unidad 6|00 - Índice Unidad 6]] — *Unidad 6 - Textos argumentativos*
+> - [[Unidad 1 - El proceso de la comunicación/01 - El proceso y las funciones de la comunicación|01 - El proceso y las funciones de la comunicación]] — *Unidad 1 - El proceso de la comunicación*
+> - [[Unidad 2 - La oración gramatical/01 - Estructura de la oración y tipos de sujeto|01 - Estructura de la oración y tipos de sujeto]] — *Unidad 2 - La oración gramatical*
+> - [[Unidad 3 - Tipología textual/01 - Tipos de texto según su intención|01 - Tipos de texto según su intención]] — *Unidad 3 - Tipología textual*
+> - [[Unidad 4 - Resumen y síntesis/01 - El resumen académico|01 - El resumen académico]] — *Unidad 4 - Resumen y síntesis*
+> - [[Unidad 5 - Textos expositivos/01 - El texto expositivo (concepto, tipos y estructura)|01 - El texto expositivo (concepto, tipos y estructura)]] — *Unidad 5 - Textos expositivos*
+> - [[Unidad 6 - Textos argumentativos/01 - El texto argumentativo (concepto, ámbitos y estructura)|01 - El texto argumentativo (concepto, ámbitos y estructura)]] — *Unidad 6 - Textos argumentativos*
 
 > [!info] 📁 Material existente
 > - `Unidad 0 - Guias y Ejercicios/Diagramas/` — 61 diagramas SVG de las unidades, embebidos en sus notas.

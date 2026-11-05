@@ -17,7 +17,6 @@ tags: [TICG1018, unidad2, indice, bd]
 
 > [!quote] 🔗 Conexiones
 > - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
-> - Unidad anterior: [[00 - Índice Unidad 1]]
 > - Diapositivas: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/BD 02 MC_a_ML.pdf|Unidad 0 — BD 02 MC_a_ML]]
 
 ---

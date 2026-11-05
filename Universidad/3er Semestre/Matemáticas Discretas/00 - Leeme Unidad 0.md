@@ -22,12 +22,12 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] 🚪 Entradas por unidad/módulo
 > Primera nota de cada bloque: el punto de partida.
-> - [[Unidad 1 - Logica y Conjuntos/00 - Índice Unidad 1|00 - Índice Unidad 1]] — *Unidad 1 - Logica y Conjuntos*
-> - [[Unidad 2 - Funciones y Relaciones/00 - Índice Unidad 2|00 - Índice Unidad 2]] — *Unidad 2 - Funciones y Relaciones*
-> - [[Unidad 3 - Números y Conteo/00 - Índice Unidad 3|00 - Índice Unidad 3]] — *Unidad 3 - Números y Conteo*
-> - [[Unidad 4 - Recurrencia y Algoritmos/00 - Índice Unidad 4|00 - Índice Unidad 4]] — *Unidad 4 - Recurrencia y Algoritmos*
-> - [[Unidad 5 - Grafos y Árboles/00 - Índice Unidad 5|00 - Índice Unidad 5]] — *Unidad 5 - Grafos y Árboles*
-> - [[Unidad 6 - Lenguajes y Autómatas/00 - Índice Unidad 6|00 - Índice Unidad 6]] — *Unidad 6 - Lenguajes y Autómatas*
+> - [[Unidad 1 - Logica y Conjuntos/Guía de Problemas 1 - Ejercicios Resueltos|Guía de Problemas 1 - Ejercicios Resueltos]] — *Unidad 1 - Logica y Conjuntos*
+> - [[Unidad 2 - Funciones y Relaciones/01 - Funciones|01 - Funciones]] — *Unidad 2 - Funciones y Relaciones*
+> - [[Unidad 3 - Números y Conteo/01 - Divisibilidad y Números Primos|01 - Divisibilidad y Números Primos]] — *Unidad 3 - Números y Conteo*
+> - [[Unidad 4 - Recurrencia y Algoritmos/01 - Relaciones de Recurrencia|01 - Relaciones de Recurrencia]] — *Unidad 4 - Recurrencia y Algoritmos*
+> - [[Unidad 5 - Grafos y Árboles/01 - Grafos I - Conceptos Básicos y Recorridos|01 - Grafos I - Conceptos Básicos y Recorridos]] — *Unidad 5 - Grafos y Árboles*
+> - [[Unidad 6 - Lenguajes y Autómatas/01 - Máquinas de Estado Finito - Definición y Estructura|01 - Máquinas de Estado Finito - Definición y Estructura]] — *Unidad 6 - Lenguajes y Autómatas*
 
 > [!note] 📚 Recursos de la unidad
 > [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]] — guías de problemas, talleres, lecciones y exámenes de la unidad, con los videos recomendados.
