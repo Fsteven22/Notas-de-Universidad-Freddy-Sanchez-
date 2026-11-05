@@ -988,3 +988,72 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > `master` avanzó dos veces durante el trabajo (`7282240`/`4977cd2`, sesión `opencode-site`: PDF de patrones
 > creacionales y fix de títulos de callouts). Se integró **con merge, nunca rebase**: `0ef8694`.
 > `master` = `origin/master` = `origin/sesion/opencode` = `0ef8694` al cierre de este bloque.
+
+---
+
+### `opencode-site` - la tipografia incrustada de los SVG: recorte automatico - 05/11/2026
+
+> [!warning] LEER ANTES DE GENERAR UN SVG (o de compilar uno con `mmdc`)
+>
+> **Mermaid CLI incrusta la tipografia "Recursive Variable" dentro de cada SVG que genera**: 4 reglas
+> `@font-face` con la fuente en base64 (`data:font/woff2;base64,…`) + su licencia OFL. Son **161 KB de
+> base64 por archivo**, el **90% del peso** de un diagrama. Con los 2.126 SVG del vault eran
+> **~340 MB de fuente repetida**.
+>
+> La fuente va incrustada **a proposito**: un SVG mostrado con `<img src="…svg">` se dibuja en un
+> contexto aislado, no puede cargar el CSS de la pagina ni una fuente externa. **Si se le quita la
+> fuente, las etiquetas del diagrama salen con la tipografia del sistema** y el diagrama se ve distinto.
+> Por eso no se quita: se recorta.
+>
+> **Regla para las demas sesiones:** todo SVG nuevo que salga de `mmdc` tiene que pasar por
+> `subconjuntar_fuente.py` (o generarse con `mmdc_ligero.py`, que lo hace solo). Si no, el SVG entra
+> al repo con 161 KB de fuente repetida y hay que volver a recortarlo despues — que es exactamente
+> el trabajo que se hizo el 05/11 sobre los 2.126 SVG existentes.
+>
+> | Script (en `Universidad/Herramientas/SVG-Pipeline/`) | Que hace |
+> |---|---|
+> | `subconjuntar_fuente.py` | Recorta la fuente incrustada a **los glifos que ese diagrama usa** (texto visible + `aria-label`/`title`). El SVG se ve igual (misma variable font, mismos avances y contornos) y pasa de ~182 KB a ~36 KB. Verifica que la cobertura de glifos no cambie y que se conserve la licencia OFL; si algo no cuadra, **deja el archivo como esta**. CLI: `py -3.12 subconjuntar_fuente.py <carpeta>` (con `--dry-run` solo mide). |
+> | `mmdc_ligero.py` | **Reemplazo directo de `mmdc`**: hace lo mismo y ademas recorta la fuente del SVG que genera. `py -3.12 mmdc_ligero.py -i x.mmd -o x.svg -b white` (acepta todos los argumentos de `mmdc`). |
+> | `qa_svg_fuente.py` | QA de la fuente incrustada: (a) **cobertura** — todo caracter que el diagrama muestra y que la fuente declara en su `unicode-range` tiene que estar de verdad en la fuente (si alguien edita un SVG a mano y anade una etiqueta con un caracter que la fuente ya no trae, ese glifo saldria con la tipografia del sistema); (b) **peso** — avisa de los SVG que todavia llevan la tipografia completa. Los emoji y simbolos que **nunca** estuvieron en la fuente (`✅ ❌ 🧩 🔴 →`) se dibujan con la tipografia del sistema a proposito: **no cuentan como fallo**. |
+>
+> Requisito: `py -3.12 -m pip install fonttools brotli`.
+
+> [!success] Lote aplicado a todo el vault (05/11/2026)
+>
+> | | Antes | Despues |
+> |---|---|---|
+> | SVG con tipografia incrustada | 2.126 | 2.126 (recortados) |
+> | Peso de los SVG | **421,8 MB** | **124,3 MB** (**−71%**, ahorro ~297 MB) |
+> | Peso medio por SVG | ~182 KB | ~36 KB |
+> | SVG sin tipografia incrustada (intactos) | 249 | 249 |
+> | Rechazados / errores | — | **0** |
+>
+> - El **sitio publicado** baja de **961 MB** a ~660 MB (`dist`) y cada diagrama carga ~5x mas rapido.
+> - **El vault no cambia de tipografia:** se conserva la misma variable font (eje `wght` 300-1000),
+>   los mismos avances (`hmtx`), la misma geometria (`glyf`, composites resueltos), los mismos deltas
+>   variables (`gvar`) y las mismas tablas de ejes (`avar`/`fvar`). Medido en Chromium: `N` = 9,1 px y
+>   `Necesidad` = 70,7 px **identicos** antes y despues. La licencia OFL sigue incrustada.
+> - **El SVG sigue siendo autonomo**: funciona igual en `<img>`, en Obsidian, descargado o embebido.
+> - **Verificacion por archivo:** la cobertura de glifos antes y despues tiene que ser identica y
+>   **ningun glifo que la fuente original traia puede perderse**; si no, el script **no toca el
+>   archivo**. 0 rechazos en el lote.
+> - **Los huecos de la fuente original** (glifos que el diagrama usa y que "Recursive Variable" no
+>   trae: `‴` prima triple, ZWJ, `ᵢ`, `‖`, emoji, `→`) se dibujan con la tipografia del sistema **ya
+>   hoy, antes y despues**: no es un cambio. El recorte los registra en el propio SVG
+>   (`/*fuente-sin-glifo:U+2034*/`) para que el QA no los confunda con una regresion.
+>   **92 SVG** tienen algun hueco de esos.
+> - **QA final sobre todo el vault** (`qa_svg_fuente.py`): **2.375 SVG revisados · 2.126 con fuente
+>   recortada (ok) · 0 con la fuente completa · 0 con glifos declarados y ausentes · 92 con huecos
+>   preexistentes documentados** → **exit 0**.
+> - **Render real medido en Chromium** (el SVG en linea, con su CSS y su fuente): **12/12 elementos de
+>   texto con el mismo ancho y alto**, 580,56 px de ancho total en original y subconjuntado.
+> - **Reversible:** es un commit. `git revert <hash>` deja el vault como estaba.
+
+> [!info] Donde vive la regla
+>
+> El detalle completo esta en `Universidad/Herramientas/README.md` (seccion "la tipografia incrustada de
+> los SVG"). El sitio **no cambia**: el sync sigue copiando el SVG tal cual, asi que **Vercel no
+> necesita Python** ni `fontTools`.
+
+**PUSHEO EN CURSO** · `sesion/opencode-site` · 2.131 archivos (2.126 SVG + 3 scripts + README + este
+LEEME) · ~2 min.
