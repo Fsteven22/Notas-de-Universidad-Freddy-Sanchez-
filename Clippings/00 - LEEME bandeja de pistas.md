@@ -1101,5 +1101,7 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > los SVG"). El sitio **no cambia**: el sync sigue copiando el SVG tal cual, asi que **Vercel no
 > necesita Python** ni `fontTools`.
 
-**PUSHEO EN CURSO** · `sesion/opencode-site` · 2.131 archivos (2.126 SVG + 3 scripts + README + este
-LEEME) · ~2 min.
+**PUSHEADO `7604b35c`** — commits `c151d9d0` (los 2.126 SVG) + `12cc58df` (las 3 herramientas, el
+README y este LEEME), con merge de `origin/master` (7 commits de `opencode`: material SBD, libros de
+MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando ambos bloques**
+(el de `opencode` y este). Rama `sesion/opencode-site` -> `master`.
