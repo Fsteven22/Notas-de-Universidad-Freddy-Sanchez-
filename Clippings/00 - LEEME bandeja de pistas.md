@@ -910,7 +910,27 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > El dueño eligió **ASCII puro**: relleno del triangulo `#` (en vez de `▓`) y linea base `=` (en vez de `—`).
 > **12 lineas en 3 notas** de Algebra Lineal / Calculo Vectorial.
 
-**PUSHEADO `286276e3`** - rama `sesion/opencode-site` -> `master`.
+**PUSHEADO `a684ffa8`** - commit `286276e3` + `d50e69c1`, merge con `origin/master` -> `master`.
+
+---
+
+### `opencode-site` - ASCII puro en el ASCII-art reconstruido - 05/11/2026
+
+> [!success] Decision del dueño aplicada
+>
+> El dueño eligió **ASCII puro** para los 2 caracteres que hubo que reconstruir por contexto
+> (los bytes originales **no existen ni en git ni en OneDrive**: el primer commit ya venia corrupto):
+> el relleno del triangulo pasa de `▓` a `#` y la linea base de `—` a `=`.
+>
+> - **12 lineas de ASCII-art en 3 notas**:
+>   `Algebra Lineal / 02 - Combinacion lineal.md` (triangulo de combinaciones convexas),
+>   `Algebra Lineal / 04 - Suma de subespacios.md` (ejes x y U) y
+>   `Calculo Vectorial / 02 - Dominio y Rango.md` (region bajo la parabola).
+> - El resto del arte del vault (`•`, `▲`, `→`, `↑`, `•`) queda igual: son simbolos
+>   originales, no reconstrucciones.
+> - Los 2 puntos que quedaban pendientes del dueño quedan marcados como **HECHO** en este LEEME.
+
+**PUSHEADO `6e402cfa`** - rama `sesion/opencode-site` -> `master`.
 
 ---
 
