@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [MATG1045, calculo-variable, mapa-de-contenido]
+---
+
 # Cálculo de una Variable
 
 **Código:** MATG1045 · **Semestre:** 1ro · [[Bienvenida y Syllabus Cálculo de una Variable|Ver Syllabus completo]]

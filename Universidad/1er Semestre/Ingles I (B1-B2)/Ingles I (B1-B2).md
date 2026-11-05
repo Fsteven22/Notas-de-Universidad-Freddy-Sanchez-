@@ -1,3 +1,8 @@
+---
+dg-publish: true
+tags: [IDIG1006, ingles-i, mapa-de-contenido]
+---
+
 # Ingles I (B1-B2)
 
 **Semester:** 1st · [[Welcome & Syllabus English I|Ver Syllabus completo]]
