@@ -3,8 +3,7 @@ dg-publish: true
 tags: [unidad0, indice, recursos]
 ---
 
-# 📂 Unidad 0 — Guías y Ejercicios (Matemáticas — Preuniversitario)
-
+# 📂 Índice de Contenido — Matemáticas — Preuniversitario
 > [!info] ℹ️ Portal de material de la materia
 > Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 

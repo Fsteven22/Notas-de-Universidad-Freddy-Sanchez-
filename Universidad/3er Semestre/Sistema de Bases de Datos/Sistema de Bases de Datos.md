@@ -56,7 +56,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[00 - Índice de Contenido]]
 
 - [[Unidad 1 - Modelos de Datos y ER/00 - Índice Unidad 1|📂 Unidad 1 - Modelos de Datos y ER]]
 

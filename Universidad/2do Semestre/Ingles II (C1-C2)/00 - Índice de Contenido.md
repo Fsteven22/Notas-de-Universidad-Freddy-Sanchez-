@@ -3,8 +3,7 @@ dg-publish: true
 tags: [unidad0, indice, recursos]
 ---
 
-# 📂 Unidad 0 — Guías y Ejercicios (Inglés II (C1-C2))
-
+# 📂 Índice de Contenido — Inglés II (C1-C2)
 > [!info] ℹ️ Portal de material de la materia
 > Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 

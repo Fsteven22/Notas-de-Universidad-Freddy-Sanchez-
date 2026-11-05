@@ -1139,3 +1139,86 @@ MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando a
 >
 > Commits atómicos en `sesion/opencode`: `0955d3d4` (barrido), `5f054df` (archivos restringidos fuera del índice de git, no pusheado aún). No se reescribe histórico (prohibido force-push/amend).
 
+
+---
+
+### `opencode` - renombrar los 19 leemes a "00 - Índice de Contenido" y fusionar el de SBD - 05/11/2026
+
+> [!success] Un solo índice por materia, con nombre consistente
+>
+> - **19 leemes → 18 índices.** Los `00 - Leeme Unidad 0.md` pasan a `00 - Índice de Contenido.md`
+>   y el H1 a `# 📂 Índice de Contenido — <materia>`. 17 se renombran en su lugar; los **2 de SBD**
+>   (raíz de la materia y `Unidad 0 - Guias y Ejercicios/`) se **fusionan en uno solo en la raíz**:
+>   `Universidad/3er Semestre/Sistema de Bases de Datos/00 - Índice de Contenido.md`.
+> - **Enlaces actualizados:** 20 wikilinks en 18 notas + 3 menciones en texto plano.
+>   **0 referencias residuales** al nombre viejo en todo `Universidad/`.
+> - El índice nuevo de SBD es **explicativo**: qué es cada archivo, para qué sirve y qué no se publica.
+
+> [!danger] Hallazgo de fondo: 68 medios de SBD NO se publicaban
+>
+> El sync solo copia un asset si **alguna nota publicada lo referencia con un wikilink real**
+> (`site/scripts/sync-vault.mjs:320`, gate `referidos`). Los índices anteriores tenían los archivos
+> de SBD **en código inline** (`` `Exámenes/2019-2PAO-2E-SBD.pdf` ``), así que nunca se subían:
+> el ZIP, los 10 PPTX, 16 exámenes, el proyecto y las participaciones estaban en el vault y **no en la web**.
+>
+> - **Antes:** SBD 179/247 medios publicados. **Después:** **245/247**. Los 2 que faltan son el video
+>   (`VideoBSDPrimerParcial.mp4`, 13 MB) y el libro *Database Systems…* — los 2 en `_no-publicar.txt`
+>   **por decisión del dueño**, no por error.
+> - El **ZIP de scripts**, `sakila-db.zip` y `world-db.zip` ahora se publican (antes 0 de 3).
+> - Los 12 SVG `u2-02-01`…`u2-02-12` no los embebía ninguna nota: se listan en el índice para que
+>   tampoco queden colgados. Los otros 100 diagramas de trabajo de U1/U2 **no se repiten** en el
+>   índice porque ya están embebidos donde corresponde.
+
+> [!warning] 2 trampas del sync que conviene no volver a pisar
+>
+> 1. **En tablas markdown, el wikilink va SIN alias.** `[[archivo.pdf]]` resuelve y renderiza
+>    `[📎 archivo.pdf](url)`; `[[archivo.pdf\|alias]]` **no** resuelve (queda `**alias**`).
+>    El separador de alias debe ser `\|` para no romper la tabla, y el sync no lo entiende.
+>    Los alias solo funcionan **fuera** de tablas (listas y callouts).
+> 2. **Los assets se resuelven por nombre, no por ruta** (`resolveAssetInfo`, `sync-vault.mjs:684`):
+>    el wikilink puede llevar la ruta completa, pero lo que decide es el basename. Por eso
+>    `dupes_basename.py` da **0 duplicados** en SBD (296 medios, 296 nombres únicos).
+
+> [!info] QA de esta ronda
+>
+> - `qa_links.py` (raíz `Universidad`): targets **7951 → 8029**, **bad=0**.
+> - Sync de prueba en disco local (`site-test`, sin tocar `site/` del repo): **822 notas publicadas ·
+>   2 omitidas · 2.987 assets referenciados**; assets totales **2.922 → 2.988** (400,5 → 444,1 MB).
+> - `qa_links.py` del repo completo: no se corrió (los 39 placeholders de `Clippings/` y `site/`
+>   son deliberados, el QA los saltea por defecto).
+
+> [!question] DECISIÓN PENDIENTE DEL DUEÑO: los 47 índices de unidad
+>
+> Hay **47 notas `00 - Índice Unidad N`** en el vault (14 con material propio, 33 redundantes).
+> Medición recursiva de solapamiento contra la nota puente de cada materia:
+>
+> | Materias | Índices | Links exclusivos del índice | Veredicto |
+> |---|---|---|---|
+> | Ingles I, Comunicación, Cálculo Vectorial, DSW, FESD, Ingles III, MatDisc, SBD | 33 | 0–1 | **100% redundantes** |
+> | MOOC Inglés, MOOC Comunicación, Preuniversitario Matemáticas | 14 | 9 / 20 / 83 | **112 links únicos** |
+>
+> - **Opción A (recomendada):** borrar los 33 índices redundantes de las 8 materias; trasplantar antes
+>   los **25 embeds SVG exclusivos** a las notas puente (si no, se pierden del sitio).
+>   En Preuniversitario y MOOC hay que **trasplantar 112 links** antes de borrar los 14.
+> - **Opción B:** dejarlos como están.
+>
+> No se borró nada: **falta tu decisión**.
+
+> [!note] Aviso para `opencode-onedrive` (zona `site/scripts/sync-vault.mjs`)
+>
+> El comentario de `site/scripts/sync-vault.mjs:224` cita `00 - Leeme Unidad 0` como ejemplo de
+> homónimo. Ese nombre ya no existe: ahora es `00 - Índice de Contenido`. **No toqué el archivo**
+> (zona de `opencode-onedrive`): el comentario queda desactualizado, es cosmético.
+
+> [!note] Lo que NO se tocó (cambios ajenos)
+>
+> `Universidad/00 - Mapa PAO 2-2026.md` (borrado, sin commitear) · `Recursos visuales.md` de
+> Matemáticas Discretas · las carpetas `_texto/` · los PDF sin trackear de MatDisc y DSW ·
+> los 2 PDF de SBD **sí** entraron al repo porque el índice nuevo los enlaza
+> (`3.4 Operaciones Derivadas-agregacion.pdf`, `BD04 DDL_dml_create_alter_drop.pdf`).
+
+**PUSHEO EN CURSO** — commit `bf15a059` (43 archivos: 17 renombres, 2 borrados, 1 índice nuevo,
+21 notas con enlaces actualizados, 2 PDF de SBD). Falta el `PUSHEADO <hash>` al confirmar el push.
+
+**PUSHEADO `e8c19ba4`** — commits `bf15a059` (el renombrado y la fusión) + `e8c19ba4` (este bloque
+del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
