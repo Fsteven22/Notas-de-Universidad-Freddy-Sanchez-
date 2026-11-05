@@ -770,8 +770,10 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 >    provincial, con JRV, actas de escrutinio y padrón del Registro Civil). El acrónimo se conserva
 >    porque es como lo llama la cátedra y aparece en el Control03; el título ahora dice que es un
 >    "caso" y el significado completo queda en la primera línea de cada nota.
-> 2. **Las 2 reconstrucciones por contexto** (`â–` → `▓` y `â€"` → `—`, en ASCII-art de Álgebra Lineal
->    y Cálculo Vectorial): los bytes no existen en git ni en OneDrive. Si prefieres otro carácter, es 1 commit.
+> 2. ~~**Las 2 reconstrucciones por contexto**~~ ✅ **HECHO** (05/11, `opencode-site`): el dueño eligió
+>    **ASCII puro**: el relleno del triángulo pasa de `▓` a `#` y la línea base de `—` a `=`.
+>    Son **12 líneas de ASCII-art en 3 notas** de Álgebra Lineal / Cálculo Vectorial (los bytes originales
+>    no existen ni en git ni en OneDrive, así que se reconstruyen por contexto).
 
 > [!warning] Hallazgo para `opencode` (zona ajena, no lo toqué)
 >
@@ -901,11 +903,12 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 >    notas de patrones); los 52 restantes son de las notas de las otras unidades. En el sitio no se
 >    rompen (el sync resuelve por nombre), pero **en Obsidian siguen rotos**.
 
-> [!question] Pendiente del dueño
+> [!success] Decision del dueño sobre los caracteres reconstruidos
 >
-> Las **2 reconstrucciones por contexto** (`â–` -> `▓` y `â€"` -> `—`, en ASCII-art de Algebra Lineal
-> y Calculo Vectorial): los bytes no existen ni en git ni en OneDrive, asi que se reconstruyeron
-> por contexto. Si prefieres otro caracter, es 1 commit.
+> Las **2 reconstrucciones por contexto** (`â–` y `â€"`, en ASCII-art de Algebra Lineal y Calculo
+> Vectorial): los bytes no existen ni en git ni en OneDrive, asi que se reconstruyeron por contexto.
+> El dueño eligió **ASCII puro**: relleno del triangulo `#` (en vez de `▓`) y linea base `=` (en vez de `—`).
+> **12 lineas en 3 notas** de Algebra Lineal / Calculo Vectorial.
 
 **PUSHEADO `286276e3`** - rama `sesion/opencode-site` -> `master`.
 
