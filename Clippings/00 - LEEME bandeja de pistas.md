@@ -1279,3 +1279,83 @@ del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
 > Pedido: rebuild del sitio y verificacion de que las tablas dentro de callouts
 > renderizan igual que en Obsidian (van como `> | ...`).
 
+### `opencode-onedrive` — índices de unidad eliminados + recursos visuales unificados — 05/11/2026
+
+> [!success] 4 commits + merge de `master` · 47 índices de unidad eliminados · 6 `Recursos Visuales.md` · QA `bad=0`
+>
+> - **Hecho:** `5e7834da` (volcado de 119 notas + 25 SVG a los índices de materia) ·
+>   `163d7280` (273 enlaces entrantes reescritos en 147 archivos) ·
+>   `3b3d5cfd` (47 índices de unidad eliminados) ·
+>   `fb03d8bf` (recursos visuales unificados) · `680e0c80` (merge de `origin/master`).
+> - **Pendiente:** `opencode-nube` — integrar los 3 índices de material local (abajo).
+>   `opencode` — siguen los 2 BADs de Comunicación. Del dueño — material de DSW U3/U4 y firma de P1.
+> - **Necesito:** nada más de otras sesiones; `site/src/**` quedó intacto (solo se corrió sync/build para verificar).
+
+**1. Los 47 índices de notas por unidad quedaron eliminados (`3b3d5cfd`).**
+
+> [!info] Qué se eliminó y por qué
+> El índice de cada materia ya distribuye todas sus notas por unidad, así que los índices por
+> unidad eran **redundantes**. Antes de borrar, su contenido quedó a salvo:
+>
+> - **119 notas volcadas** a los índices de materia (Matemáticas 83 · MOOC Comunicación 20 ·
+>   MOOC Inglés 17 · Inglés III recupera `Speaking Practice # 2` · Fundamentos de Programación ya los tenía).
+> - **25 SVG de mapa visual reubicados** a rutas que ahora resuelven (los antiguos usaban rutas relativas rotas).
+> - El PDF `BD 02 MC_a_ML.pdf`, que solo referenciaba el índice de la U2 de SBD, se enlaza desde el índice de la materia.
+
+> [!warning] Si tu nota enlazaba a un índice de unidad
+> Los 273 enlaces entrantes se reescribieron según su contexto (`163d7280`):
+>
+> | Contexto | A qué apunta ahora |
+> |---|---|
+> | Nota con bloque "Mapa de contenido" | se borra la línea redundante del índice de unidad |
+> | Nota sin ese bloque | el índice de la **materia** |
+> | Bloque "Entradas por unidad/módulo" de los Leeme | la **primera nota** de cada unidad (es lo que promete el bloque) |
+> | Índice de materia | se quita la flecha del encabezado y las listas de unidades al pie |
+> | Lista "Índices:"/"Unidades:" | un enlace al índice de materia, conservando los links que no son de unidad |
+
+> [!danger] `opencode-nube` — 3 índices de material local para integrar
+> Estos **no** son índices de notas (por eso no se borraron), sino listados de material. Ya apuntan
+> al `Recursos Visuales.md` de su materia, pero siguen duplicando el índice de contenido:
+>
+> | Archivo | Qué hacer |
+> |---|---|
+> | `3er Semestre/Fundamentos de Electricidad y Sistemas Digitales/Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` | integrar en el `00 - Índice de Contenido.md` de FESD |
+> | `3er Semestre/Matemáticas Discretas/Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0.md` | integrar en el `00 - Índice de Contenido.md` de Mat. Discretas |
+> | `3er Semestre/Ingles III/Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Unidad 0.md` | integrar en el `00 - Índice de Contenido.md` de Inglés III |
+
+**2. Los archivos de recursos visuales quedaron unificados (`fb03d8bf`).**
+
+Nombre canónico: **`Recursos Visuales.md`** (sin prefijo), **un archivo por materia**, que fusiona
+videos + aula virtual + laboratorio + extras por unidad.
+
+| Materia | Antes | Ahora |
+|---|---|---|
+| Diseño de Software | `Recursos visuales.md` + `Enlaces del Aula Virtual.md` | `Recursos Visuales.md` (se fusiona el Aula Virtual) |
+| FESD | `Recursos visuales.md` + `00 - Recursos del laboratorio.md` | `Recursos Visuales.md` (se fusiona el laboratorio; se elimina la tabla de videos duplicada) |
+| Inglés III | `Recursos visuales.md` | `Recursos Visuales.md` |
+| Matemáticas Discretas | `Recursos visuales.md` | `Recursos Visuales.md` |
+| Sistema de Bases de Datos | `Recursos visuales.md` | `Recursos Visuales.md` |
+| Inglés II | `01 - Recursos Unit 1.md` | `Recursos Visuales.md` |
+
+> [!note] También se corrigió un enlace equivocado
+> El `00 - Recursos Unidad 0.md` de Matemáticas Discretas apuntaba por error a la carpeta de
+> **Diseño de Software**; ahora apunta a su propia materia. Se actualizaron H1, tags y los 10
+> archivos que enlazaban a los nombres viejos. **0 enlaces rotos.**
+
+**3. Verificación (después del merge de `master`).**
+
+`qa_links.py` targets=**7523** bad=**0** · `qa_assets_huerfanos.py` **2960 assets, 0 huérfanos** ·
+`qa_omitidas.py` **776 revisadas / 773 publican / 2 omitidas / 1 revisar** (las 3 preexistentes) ·
+0 índices de unidad en disco · `npm run sync` (773 notas) + `npm run build` (799 páginas) **OK**.
+
+> [!warning] Conflictos del merge con `master` y cómo se resolvieron
+> `master` había reformulado las notas de U3 de DS, envuelto prosa en callouts y renombrado los
+> 19 Leeme a `00 - Índice de Contenido.md`. Se resolvió **conservando ambas versiones**:
+> las notas de U3 de DS y la `Guía de Problemas 1` de SBD quedaron con la versión de `master` +
+> la reescritura de enlaces de esta tanda; los callouts que `master` agrego a los dos archivos
+> fusionados se trasplantaron a `Recursos Visuales.md`; los índices de unidad que `master` modificó
+> y esta tanda eliminó se quedaron eliminados, con sus enlaces re-apuntados a la primera nota
+> (SBD) o al nombre nuevo de la nota (DS).
+>
+> La mención de la línea 567 (`[[MOOC de Comunicación/Unidad N .../00 - Índice]]`) es **documental**
+> (describe un bug que `opencode-nube` arregló el 04/11), no un enlace vivo: se deja como está.
