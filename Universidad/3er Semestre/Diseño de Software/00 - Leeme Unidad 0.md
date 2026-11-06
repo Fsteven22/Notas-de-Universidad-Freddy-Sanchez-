@@ -29,10 +29,10 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 5 - Pruebas unitarias/01 - Pruebas unitarias con JUnit 5|01 - Pruebas unitarias con JUnit 5]] — *Unidad 5 - Pruebas unitarias*
 
 > [!note] 🔗 Enlaces del Aula Virtual
-> [[Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]] — enlaces de clases, rúbricas y archivos del aula virtual.
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]] — enlaces de clases, rúbricas y archivos del aula virtual.
 
 > [!note] 🖼️ Recursos visuales
-> [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos visuales|Recursos visuales]] — capturas y diagramas del material de clase (casos de uso y modelo de clases de SIEL).
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]] — capturas y diagramas del material de clase (casos de uso y modelo de clases de SIEL).
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — las capturas de pizarra de patrones creacionales, reunidas en un PDF con portada, índice y paginación
 
 ## 📥 Pendiente de cargar

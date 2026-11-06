@@ -3,7 +3,7 @@ dg-publish: true
 tags: [recursos-visuales, ingles-iii]
 ---
 
-# 🎬 Recursos visuales — Inglés III
+# 🎬 Recursos Visuales — Inglés III
 
 > [!info] ℹ️ Para qué sirve esta página
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.

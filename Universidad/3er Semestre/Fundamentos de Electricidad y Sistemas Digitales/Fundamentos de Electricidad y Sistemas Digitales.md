@@ -85,7 +85,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!quote] 🔗 Navegación
 > - Syllabus: [[Bienvenida y Syllabus FESD]]
 
-- [[00 - Recursos del laboratorio]]
+- [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]]
 
 - [[00 - Recursos Unidad 0]]
 

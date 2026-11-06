@@ -3,7 +3,7 @@ dg-publish: true
 tags: [recursos-visuales, matematicas-discretas]
 ---
 
-# 🎬 Recursos visuales — Matemáticas Discretas
+# 🎬 Recursos Visuales — Matemáticas Discretas
 
 > [!info] ℹ️ Para qué sirve esta página
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.

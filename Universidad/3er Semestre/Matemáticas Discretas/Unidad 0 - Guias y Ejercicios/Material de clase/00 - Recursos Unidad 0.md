@@ -110,7 +110,7 @@ tags: [MATG1051, unidad0, recursos]
 - `Syllabus_MATG1051.pdf` — programa oficial de la materia.
 - `LIBRO GUIA - Johnsonbaugh Discrete Mathematics 8th Edition.pdf` y `LIBRO DE APOYO Discrete Mathematics and Its Applications by Kenneth Rosen (z-lib.org).pdf` — libros de texto con copyright: quedan en tu vault local y no se suben al sitio (están en `_no-publicar.txt`).
 
-> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos Visuales|Recursos Visuales]].
 
 ---
 

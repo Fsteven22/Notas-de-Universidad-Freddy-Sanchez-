@@ -80,7 +80,7 @@ Qué hay en esta carpeta y qué se publica en el sitio.
 - `CAMBRIDGE ONE_GUIDE FOR STUDENTS_UPDATED.pdf` — guía de la plataforma (licencia de lectura: está en `Universidad/_no-publicar.txt`).
 - Empower (U7-U12) — libro de texto del curso: el libro completo no se publica; lo que hay son capturas por unidad ([[Libro de ingles las primeras unidades]] y [[Libro de ingles ultimas unidades]]).
 
-> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos Visuales|Recursos Visuales]].
 
 ---
 

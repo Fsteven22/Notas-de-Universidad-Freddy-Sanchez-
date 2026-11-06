@@ -61,7 +61,7 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > | Deshacer último commit local | `git reset --soft HEAD~1` |
 > | Ver historia legible | `git log --oneline --graph -10` |
 >
-> Profundiza con tus enlaces guardados: [Video YouTube — Git (desde 1:30)](https://www.youtube.com/watch?v=4XpnKHJAok8&t=1m30s), [Git: cómo gestionar y cuidar nuestro código](https://www.enmilocalfunciona.io/git-como-gestionar-y-cuidar-nuestro-codigo/) y [Resolución de conflictos en GitHub — David Jurado](https://www.youtube.com/watch?v=H34vxQeQkgg) — todos en [[../Unidad 0 - Guias y Ejercicios/Material de clase/Enlaces del Aula Virtual|Enlaces del Aula Virtual]].
+> Profundiza con tus enlaces guardados: [Video YouTube — Git (desde 1:30)](https://www.youtube.com/watch?v=4XpnKHJAok8&t=1m30s), [Git: cómo gestionar y cuidar nuestro código](https://www.enmilocalfunciona.io/git-como-gestionar-y-cuidar-nuestro-codigo/) y [Resolución de conflictos en GitHub — David Jurado](https://www.youtube.com/watch?v=H34vxQeQkgg) — todos en [[../Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]].
 
 ### 🔍 Buenas Prácticas que Evalúan Colaboración
 

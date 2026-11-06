@@ -3,7 +3,7 @@ dg-publish: true
 tags: [recursos-visuales, fesd]
 ---
 
-# 🎬 Recursos visuales — Fundamentos de Electricidad y Sistemas Digitales
+# 🎬 Recursos Visuales — Fundamentos de Electricidad y Sistemas Digitales
 
 > [!info] ℹ️ Para qué sirve esta página
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.
@@ -69,7 +69,32 @@ tags: [recursos-visuales, fesd]
 > | Aprende a usar un multímetro | [Link](https://www.youtube.com/watch?v=uUw-mYk8iCA) | Mentalidad de Ingeniería, 28:16 | curso completo, con los errores típicos. |
 > | Funciones del multímetro | [Link](https://www.youtube.com/watch?v=VQE6udqyr6Y) | IngE Darwin, 0:56 | el resumen de un minuto. |
 
+## 🧪 Práctico y Laboratorio
+
+> [!tip] 🎬 Los videos de la materia están en las secciones por tema de esta misma nota.
+
+> [!info] ℹ️ Documentos publicados
+> PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
+
+![[FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
+
+![[FESD_Practico_2026_PAO1_Politicas.pdf]]
+
+![[FORMATO INFORME DE PRÁCTICA.pdf]]
+
+![[Formato Pre-prácticas.pdf]]
+
+Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
+
+![[Pasted image 20260525231841.png]]
+
+---
+
 ## 🔗 Ver también
 
 - `Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` - índice del material teórico.
-- `Practico/Fundamentos del Laboratorio/00 - Recursos del laboratorio.md` - índice del material práctico.
+- `Practico/Fundamentos del Laboratorio/` - material práctico del laboratorio.
+
+---
+
+**Tags:** #EYAG1037 #laboratorio #recursos #FESD

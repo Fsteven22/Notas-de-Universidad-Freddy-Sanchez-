@@ -60,7 +60,7 @@ tags: [EYAG1037, unidad0, recursos]
 > | Amplificador integrador en 6 minutos | [Link](https://www.youtube.com/watch?v=qMHSr4FAPAM) | Les Ingenieurs, 7:57 | el integrador con op-amp, paso a paso. |
 > | Amplificador operacional: comparador | [Link](https://www.youtube.com/watch?v=EbobLluwmP4) | Electrónica FP, 6:38 | el comparador como caso de uso. |
 
-> [!tip] 🎬 Recursos visuales: videos de la materia en [[Recursos visuales]].
+> [!tip] 🎬 Recursos visuales: videos de la materia en [[../../Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]].
 
 ---
 

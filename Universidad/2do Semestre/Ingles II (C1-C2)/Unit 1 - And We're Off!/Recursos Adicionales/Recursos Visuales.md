@@ -1,8 +1,9 @@
 ---
+tags: [recursos-visuales]
 dg-publish: true
 ---
 
-# Recursos Unit 1 — And We're Off!
+# 🎬 Recursos Visuales — Inglés II (C1-C2)
 
 ## 🎯 Sobre esta nota
 
