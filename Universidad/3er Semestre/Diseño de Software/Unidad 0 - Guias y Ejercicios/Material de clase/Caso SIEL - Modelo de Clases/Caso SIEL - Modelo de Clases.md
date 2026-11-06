@@ -21,7 +21,9 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 
 ## 🔍 Identificar clases por sustantivos (Stevens cap. 5)
 
-Flujo: **1 · Subraya los sustantivos → 2 · Descarta los malos → 3 · Quedan las clases**.
+> [!note] 📖 Identificar clases por sustantivos (Stevens cap. 5)
+>
+> Flujo: **1 · Subraya los sustantivos → 2 · Descarta los malos → 3 · Quedan las clases**.
 
 > [!tip] 🧹 Filtro de descarte (Stevens cap. 5)
 > | Se descarta si es… | Ejemplo en el SIEL | Por qué |
@@ -40,11 +42,13 @@ Flujo: **1 · Subraya los sustantivos → 2 · Descarta los malos → 3 · Queda
 
 ## ✅ Un buen modelo y las tarjetas CRC
 
-**Un buen modelo de clases…**
-
-- ✔ **soporta los casos de uso**: cada paso tiene una clase que responde;
-- ✔ **refleja el dominio**: usa el vocabulario de los usuarios;
-- ✔ **modela lo necesario** y nada más.
+> [!info] 💡 Un buen modelo y las tarjetas CRC
+>
+> **Un buen modelo de clases…**
+>
+> - ✔ **soporta los casos de uso**: cada paso tiene una clase que responde;
+> - ✔ **refleja el dominio**: usa el vocabulario de los usuarios;
+> - ✔ **modela lo necesario** y nada más.
 
 > [!example] 🗂️ Tarjeta CRC de ejemplo — *Candidatura*
 > | Candidatura — Tarjeta CRC |

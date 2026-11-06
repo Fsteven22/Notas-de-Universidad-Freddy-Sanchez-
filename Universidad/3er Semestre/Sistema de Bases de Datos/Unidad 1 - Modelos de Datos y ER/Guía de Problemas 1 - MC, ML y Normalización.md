@@ -662,7 +662,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > [!info] 🧭 Seguir con
 >
 > - Método: [[02 - Entidades, atributos, claves y relaciones]] · [[03 - Modelo relacional, ERM y casos Tiny College]] · [[01 - Conversión MC a ML por cardinalidad]] · [[02 - Primera forma normal y diccionario de datos]] · [[03 - Segunda y tercera forma normal]]
-> - Índices: [[../00 - Leeme Unidad 0|Unidad 0]] · [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
+> - Índices: [[../00 - Índice de Contenido|Unidad 0]] · [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 
 ## 📚 Referencias
 
@@ -684,3 +684,4 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 ---
 
 **Tags:** #TICG1018 #unidad0 #guia #taller1 #bd
+

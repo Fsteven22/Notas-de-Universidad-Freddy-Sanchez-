@@ -6,11 +6,12 @@ dg-publish: true
 
 ### 🌍 Contexto
 
-El objetivo es determinar experimentalmente el valor de la aceleración de la gravedad ($g$) al simular la caída libre de un cuerpo en laboratorio. Se busca verificar que:
-
-- Un cuerpo en caída libre tiene aceleración constante.
-    
-- Su valor coincide con la gravedad terrestre ($g \approx 9.8,m/s^2$).
+> [!info] 📖 Contexto
+>
+> El objetivo es determinar experimentalmente el valor de la aceleración de la gravedad ($g$) al simular la caída libre de un cuerpo en laboratorio. Se busca verificar que:
+>
+> - Un cuerpo en caída libre tiene aceleración constante.
+> - Su valor coincide con la gravedad terrestre ($g \approx 9.8,m/s^2$).
     
 
 ### 📊 Variables Comunes
@@ -74,23 +75,28 @@ El objetivo es determinar experimentalmente el valor de la aceleración de la gr
 
 #### e. 📌 Notas Importantes
 
-Registrar observaciones y situaciones imprevistas durante la toma de datos.
+> [!warning] ⚠️ e. Notas Importantes
+>
+> Registrar observaciones y situaciones imprevistas durante la toma de datos.
 
 ### 🧐 Explicación Teórica
 
-La caída libre es un MRUV (Movimiento Rectilíneo Uniformemente Variado) con aceleración constante, donde la única fuerza es la gravedad:
-
-$X_f = \frac{1}{2} a t^2 \Rightarrow h = \frac{1}{2} g t^2$
-
-Objetivo: Comprobar que $a = g$.
+> [!note] 📖 Explicación Teórica · Caída Libre
+>
+> La caída libre es un MRUV (Movimiento Rectilíneo Uniformemente Variado) con aceleración constante, donde la única fuerza es la gravedad:
+>
+> $X_f = \frac{1}{2} a t^2 \Rightarrow h = \frac{1}{2} g t^2$
+>
+> Objetivo: Comprobar que $a = g$.
 
 ### 🎓 Explicación Práctica
 
-Se mide el tiempo que tarda en caer una esfera desde distintas alturas. Al graficar $h$ vs. $t$, se obtiene una curva. Para linealizar:
-
-- Graficar $h$ vs. $t^2$
-    
-- La pendiente será $\frac{1}{2} g$ → permite hallar $g$ experimentalmente.
+> [!example] 🧪 Explicación Práctica · Caída Libre
+>
+> Se mide el tiempo que tarda en caer una esfera desde distintas alturas. Al graficar $h$ vs. $t$, se obtiene una curva. Para linealizar:
+>
+> - Graficar $h$ vs. $t^2$
+> - La pendiente será $\frac{1}{2} g$ → permite hallar $g$ experimentalmente.
     
 
 ### 🍒 Relación con Otros Temas
@@ -117,11 +123,12 @@ Se mide el tiempo que tarda en caer una esfera desde distintas alturas. Al grafi
 
 ### 🌍 Contexto del Experimento
 
-Estudiantes analizan la tensión de ruptura ($F$) de un cable al hacer girar un objeto de masa conocida ($m$). Registran:
-
-- Longitud del cable ($L$)
-    
-- Periodo de giro ($T$)
+> [!info] 📖 Contexto del Experimento
+>
+> Estudiantes analizan la tensión de ruptura ($F$) de un cable al hacer girar un objeto de masa conocida ($m$). Registran:
+>
+> - Longitud del cable ($L$)
+> - Periodo de giro ($T$)
     
 
 #### Datos:
@@ -129,27 +136,33 @@ Estudiantes analizan la tensión de ruptura ($F$) de un cable al hacer girar un 
 - Masa: $0.50 \pm 0.01,kg$
     
 
-|L (m) ± 0.0005|T (s) ± 0.01|
-|---|---|
-|0.0800|0.17|
-|0.3500|0.38|
-|0.5000|0.42|
-|0.7500|0.50|
-|0.9500|0.56|
+> [!info] 📊 Datos
+>
+> |L (m) ± 0.0005|T (s) ± 0.01|
+> |---|---|
+> |0.0800|0.17|
+> |0.3500|0.38|
+> |0.5000|0.42|
+> |0.7500|0.50|
+> |0.9500|0.56|
 
-Modelo matemático:
-
-$F = mg + \frac{4\pi^2 mL}{T^2}$
+> [!note] 📋 Datos y modelo matemático
+>
+> Modelo matemático:
+>
+> $F = mg + \frac{4\pi^2 mL}{T^2}$
 
 ### 🤔 Preguntas y Respuestas
 
 #### 1. Modelo $T = f(L)$
 
-Despejando $T$:
-
-$T^2 = \frac{4\pi^2 mL}{F - mg}$
-
-$T = 2\pi \sqrt{\frac{mL}{F - mg}}$
+> [!info] 🧮 1. Modelo T = f(L)
+>
+> Despejando $T$:
+>
+> $T^2 = \frac{4\pi^2 mL}{F - mg}$
+>
+> $T = 2\pi \sqrt{\frac{mL}{F - mg}}$
 
 #### 2. Graficar $T$ vs $L$
 
@@ -160,7 +173,9 @@ $T = 2\pi \sqrt{\frac{mL}{F - mg}}$
 
 #### 3. ¿Relación lineal?
 
-No. Es una relación de tipo raíz cuadrada.
+> [!info] 💡 3. ¿Relación lineal?
+>
+> No. Es una relación de tipo raíz cuadrada.
 
 #### a. Linealización: $T^2$ vs $L$
 
@@ -173,7 +188,9 @@ No. Es una relación de tipo raíz cuadrada.
 
 #### 4. Relación entre nuevas variables
 
-Lineal directa: $T^2 \propto L$
+> [!info] 💡 4. Relación entre nuevas variables
+>
+> Lineal directa: $T^2 \propto L$
 
 #### 5. Comparación con $y = mx + b$
 
@@ -184,13 +201,15 @@ Lineal directa: $T^2 \propto L$
 
 #### 6. Tabla linealizada
 
-|Observación|L (m) ± 0.0005|T (s) ± 0.01|T^2 (s^2)|
-|---|---|---|---|
-|1|0.0800|0.17|0.0289|
-|2|0.3500|0.38|0.1444|
-|3|0.5000|0.42|0.1764|
-|4|0.7500|0.50|0.2500|
-|5|0.9500|0.56|0.3136|
+> [!info] 📊 6. Tabla linealizada
+>
+> |Observación|L (m) ± 0.0005|T (s) ± 0.01|T^2 (s^2)|
+> |---|---|---|---|
+> |1|0.0800|0.17|0.0289|
+> |2|0.3500|0.38|0.1444|
+> |3|0.5000|0.42|0.1764|
+> |4|0.7500|0.50|0.2500|
+> |5|0.9500|0.56|0.3136|
 
 #### 7. Gráfica en hoja milimetrada
 
@@ -212,11 +231,15 @@ Lineal directa: $T^2 \propto L$
 
 ### 🧮 Explicación Teórica
 
-Linealizar datos permite usar técnicas sencillas de análisis (rectas) para estudiar relaciones no lineales.
+> [!note] 📖 Explicación Teórica · Trabajo Previo
+>
+> Linealizar datos permite usar técnicas sencillas de análisis (rectas) para estudiar relaciones no lineales.
 
 ### 📅 Explicación Práctica
 
-Se transforma una curva en una recta para facilitar el cálculo de constantes usando regresión lineal.
+> [!example] 🧪 Explicación Práctica · Trabajo Previo
+>
+> Se transforma una curva en una recta para facilitar el cálculo de constantes usando regresión lineal.
 
 ### 📊 Relación con Otros Temas
 

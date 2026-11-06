@@ -29,12 +29,12 @@ dg-publish: true
 > [!tip] 🎯 Reducción de Potencias Para integrar **potencias de funciones trigonométricas**, usamos identidades que las expresan en términos de **múltiples ángulos**:
 > 
 > $$\sin^2 x = \frac{1 - \cos(2x)}{2}$$ $$\cos^2 x = \frac{1 + \cos(2x)}{2}$$ $$\tan^2 x = \sec^2 x - 1$$ $$\sin^3 x = \frac{3\sin x - \sin(3x)}{4}$$ $$\cos^3 x = \frac{3\cos x + \cos(3x)}{4}$$
-
-|Potencia|Identidad de Reducción|Forma Integrable|
-|---|---|---|
-|$\sin^2 x$|$\frac{1 - \cos(2x)}{2}$|$\frac{1}{2}(x - \frac{\sin(2x)}{2})$|
-|$\cos^2 x$|$\frac{1 + \cos(2x)}{2}$|$\frac{1}{2}(x + \frac{\sin(2x)}{2})$|
-|$\sin^4 x$|$\frac{3 - 4\cos(2x) + \cos(4x)}{8}$|Términos lineales en $x$|
+>
+> |Potencia|Identidad de Reducción|Forma Integrable|
+> |---|---|---|
+> |$\sin^2 x$|$\frac{1 - \cos(2x)}{2}$|$\frac{1}{2}(x - \frac{\sin(2x)}{2})$|
+> |$\cos^2 x$|$\frac{1 + \cos(2x)}{2}$|$\frac{1}{2}(x + \frac{\sin(2x)}{2})$|
+> |$\sin^4 x$|$\frac{3 - 4\cos(2x) + \cos(4x)}{8}$|Términos lineales en $x$|
 
 > [!example] 📊 Ejemplo: Integral de sen²(x) **Integral:** $\int \sin^2(x) , dx$
 > 
@@ -72,12 +72,12 @@ dg-publish: true
 > [!tip] 🎯 Sustitución de Weierstrass Para integrales **racionales en funciones trigonométricas**: $$t = \tan\left(\frac{x}{2}\right)$$
 > 
 > **Conversiones resultantes:** $$\sin x = \frac{2t}{1+t^2}, \quad \cos x = \frac{1-t^2}{1+t^2}, \quad dx = \frac{2}{1+t^2}dt$$
-
-|Tipo de Integral|Sustitución Recomendada|Resultado|
-|---|---|---|
-|$\int \frac{dx}{a + b\cos x}$|$t = \tan(x/2)$|Integral racional en $t$|
-|$\int \frac{dx}{a + b\sin x}$|$t = \tan(x/2)$|Integral racional en $t$|
-|$\int R(\sin x, \cos x)dx$|$t = \tan(x/2)$|Función racional|
+>
+> |Tipo de Integral|Sustitución Recomendada|Resultado|
+> |---|---|---|
+> |$\int \frac{dx}{a + b\cos x}$|$t = \tan(x/2)$|Integral racional en $t$|
+> |$\int \frac{dx}{a + b\sin x}$|$t = \tan(x/2)$|Integral racional en $t$|
+> |$\int R(\sin x, \cos x)dx$|$t = \tan(x/2)$|Función racional|
 
 > [!example] 🔥 Ejemplo: Integral Racional Trigonométrica **Integral:** $\int \frac{dx}{2 + \cos x}$
 > 

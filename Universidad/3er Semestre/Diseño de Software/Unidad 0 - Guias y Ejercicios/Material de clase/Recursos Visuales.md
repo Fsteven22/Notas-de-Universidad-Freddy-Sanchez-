@@ -71,7 +71,9 @@ tags: [recursos-visuales, diseno-de-software]
 
 ## 🔗 Enlaces del Aula Virtual
 
-Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces clicables (funcionan en Obsidian y en Neonotes).
+> [!info] 📖 Enlaces del Aula Virtual — Diseño de Software
+>
+> Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces clicables (funcionan en Obsidian y en Neonotes).
 
 ### Recursos externos
 

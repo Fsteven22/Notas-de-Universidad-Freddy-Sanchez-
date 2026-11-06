@@ -34,9 +34,9 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ## Unidad 3 — Patrones de diseño *(7h)*
 
-- [[01 - Qué es un patrón y encapsular lo que varía]]
-- [[02 - Patrones esenciales I, Strategy Decorator Observer]]
-- [[03 - Patrones esenciales II, creación y estructura]]
+- [[01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo]]
+- [[02 - Strategy, Decorator y Observer]]
+- [[03 - Factory, Adapter, Facade, Singleton y Template Method]]
 - 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — capturas de pizarra de la clase
 
 ---
@@ -75,6 +75,6 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[00 - Índice de Contenido]]
 
 **Tags:** #diseno-software #ESPOL #CCPG1042

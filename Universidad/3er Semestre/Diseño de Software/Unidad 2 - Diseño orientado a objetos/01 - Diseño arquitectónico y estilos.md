@@ -84,31 +84,33 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!info] 🖼️ Los estilos del deck 01b (pp. 20-31)
 > El deck recorre **cinco** estilos, en este orden y con esta figura cada uno. Los cuatro primeros son de Pressman cap. 10; el quinto (orientada a objetos) es el puente hacia las Unidades 2-3.
 
-**1 · Arquitectura centrada en datos** — un repositorio de datos al que otros componentes acceden para actualizar, agregar, eliminar o leer. El deck avisa: el repositorio se convierte en cuello de botella.
-
-![[Archivos/01b-p22.png]]
-
-![[Archivos/01b-p23.png]]
-
-**2 · Arquitectura de flujo de datos** — un dato de entrada se transforma en un dato de salida a través de una serie de componentes de manipulación.
-
-![[Archivos/01b-p25.png]]
-
-![[Archivos/01b-p26.png]]
-
-**3 · Arquitectura en capas** — varias capas, cada una con operaciones que se acercan progresivamente al conjunto de datos.
-
-![[Archivos/01b-p28.png]]
-
-![[Archivos/01b-p29.png]]
-
-**4 · Arquitectura de llamada y retorno** — estructura de programa modificable y escalable, donde un componente llama a otro y recibe el control de vuelta.
-
-![[Archivos/01b-p30.png]]
-
-**5 · Arquitectura orientada a objetos** — los componentes encapsulan datos y operaciones para manipularlos; cada componente tiene responsibilities.
-
-![[Archivos/01b-p31.png]]
+> [!info] 💡 Los cinco estilos del deck, con su figura
+>
+> **1 · Arquitectura centrada en datos** — un repositorio de datos al que otros componentes acceden para actualizar, agregar, eliminar o leer. El deck avisa: el repositorio se convierte en cuello de botella.
+>
+> ![[Archivos/01b-p22.png]]
+>
+> ![[Archivos/01b-p23.png]]
+>
+> **2 · Arquitectura de flujo de datos** — un dato de entrada se transforma en un dato de salida a través de una serie de componentes de manipulación.
+>
+> ![[Archivos/01b-p25.png]]
+>
+> ![[Archivos/01b-p26.png]]
+>
+> **3 · Arquitectura en capas** — varias capas, cada una con operaciones que se acercan progresivamente al conjunto de datos.
+>
+> ![[Archivos/01b-p28.png]]
+>
+> ![[Archivos/01b-p29.png]]
+>
+> **4 · Arquitectura de llamada y retorno** — estructura de programa modificable y escalable, donde un componente llama a otro y recibe el control de vuelta.
+>
+> ![[Archivos/01b-p30.png]]
+>
+> **5 · Arquitectura orientada a objetos** — los componentes encapsulan datos y operaciones para manipularlos; cada componente tiene responsibilities.
+>
+> ![[Archivos/01b-p31.png]]
 
 ### 🎭 MVC: Modelo-Vista-Controlador (Semana 4)
 

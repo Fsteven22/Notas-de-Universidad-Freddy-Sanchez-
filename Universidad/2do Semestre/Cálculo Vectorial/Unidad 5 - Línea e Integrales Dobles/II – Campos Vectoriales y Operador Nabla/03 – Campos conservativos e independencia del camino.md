@@ -1565,12 +1565,14 @@ dg-publish: true
 
 ### Tabla Resumen de Criterios
 
-|Criterio|Condición|Ventaja|Limitación|
-|---|---|---|---|
-|**Rotacional**|∇×F = 0|✅ Necesario y suficiente|Requiere región simple|
-|**Derivadas parciales**|∂P/∂y = ∂Q/∂x|Rápido de verificar|Solo en ℝ²|
-|**Integral cerrada**|∮C F·dr = 0|Verificación directa|Todas las curvas|
-|**Potencial**|∃U: F=∇U|Cálculo eficiente|Hay que encontrar U|
+> [!info] 📊 Tabla Resumen de Criterios · Resumen Visual Completo
+>
+> |Criterio|Condición|Ventaja|Limitación|
+> |---|---|---|---|
+> |**Rotacional**|∇×F = 0|✅ Necesario y suficiente|Requiere región simple|
+> |**Derivadas parciales**|∂P/∂y = ∂Q/∂x|Rápido de verificar|Solo en ℝ²|
+> |**Integral cerrada**|∮C F·dr = 0|Verificación directa|Todas las curvas|
+> |**Potencial**|∃U: F=∇U|Cálculo eficiente|Hay que encontrar U|
 
 ### Diagrama de Flujo: Resolver Problemas
 

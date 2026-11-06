@@ -96,13 +96,13 @@ dg-publish: true
 ### 📋 Tipos de Puntos según Continuidad y Derivabilidad
 
 > [!tip] 🎯 **Clasificación Completa**
-
-| Tipo | Continua | Derivable | Ejemplo | Descripción |
-|------|----------|-----------|---------|-------------|
-| **Tipo A** | ✅ | ✅ | $f(x) = x^2$ en $x = 1$ | Función suave |
-| **Tipo B** | ✅ | ❌ | $f(x) = \|x\|$ en $x = 0$ | Esquina/pico |
-| **Tipo C** | ❌ | ❌ | Discontinuidad de salto | Salto finito |
-| **Tipo D** | ❌ | ❌ | $f(x) = \frac{1}{x}$ en $x = 0$ | Discontinuidad infinita |
+>
+> | Tipo | Continua | Derivable | Ejemplo | Descripción |
+> |------|----------|-----------|---------|-------------|
+> | **Tipo A** | ✅ | ✅ | $f(x) = x^2$ en $x = 1$ | Función suave |
+> | **Tipo B** | ✅ | ❌ | $f(x) = \|x\|$ en $x = 0$ | Esquina/pico |
+> | **Tipo C** | ❌ | ❌ | Discontinuidad de salto | Salto finito |
+> | **Tipo D** | ❌ | ❌ | $f(x) = \frac{1}{x}$ en $x = 0$ | Discontinuidad infinita |
 
 ![[Diagramas/03_-_Derivabilidad_y_Continuidad_02.svg]]
 

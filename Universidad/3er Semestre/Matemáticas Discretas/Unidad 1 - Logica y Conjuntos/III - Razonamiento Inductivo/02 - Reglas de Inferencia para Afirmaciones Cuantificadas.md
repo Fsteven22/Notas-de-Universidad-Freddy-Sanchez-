@@ -63,8 +63,10 @@ dg-publish: true
 > Si $P(d)$ es verdadera para **todo** $d \in D$ (sin imponer restricciones especiales sobre $d$), entonces $\forall x \in D : P(x)$ es verdadera.
 > 
 > $$\frac{P(d), \quad \text{para toda } d \in D}{\therefore\ \forall x \in D : P(x)}$$
-> 
-⚠️ El elemento $d$ debe ser **arbitrario**: no puede tener propiedades especiales que no compartan todos los elementos del dominio.
+
+> [!info] 💡 2 — Generalización universal
+>
+> ⚠️ El elemento $d$ debe ser **arbitrario**: no puede tener propiedades especiales que no compartan todos los elementos del dominio.
 
 ---
 

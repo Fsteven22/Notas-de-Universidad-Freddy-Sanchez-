@@ -2093,18 +2093,18 @@ dg-publish: true
 ## 📊 Comparación: Una vs Varias Variables
 
 > [!note] 📈 Tabla Comparativa
-
-|Concepto|Una Variable ($f: \mathbb{R} \to \mathbb{R}$)|Dos Variables ($f: \mathbb{R}^2 \to \mathbb{R}$)|
-|---|---|---|
-|**Derivada**|$f'(x)$|$f_x(x,y)$ y $f_y(x,y)$|
-|**Aproximación**|Recta tangente|Plano tangente|
-|**Ecuación**|$y = f(a) + f'(a)(x-a)$|$z = f(x_0,y_0) + f_x(x-x_0) + f_y(y-y_0)$|
-|**Diferencial**|$df = f'(x)dx$|$df = f_x dx + f_y dy$|
-|**Condición suficiente**|$f'$ existe|$f_x, f_y$ continuas|
-|**Geométrico**|Pendiente de la recta|Vector normal $(f_x, f_y, -1)$|
-|**Punto crítico**|$f'(x) = 0$|$f_x = 0$ y $f_y = 0$|
-|**Continuidad**|Diferenciable ⟹ Continua|Diferenciable ⟹ Continua|
-|**Recíproco**|Continua ⟹ Diferenciable (FALSO)|Derivadas existen ⟹ Diferenciable (FALSO)|
+>
+> |Concepto|Una Variable ($f: \mathbb{R} \to \mathbb{R}$)|Dos Variables ($f: \mathbb{R}^2 \to \mathbb{R}$)|
+> |---|---|---|
+> |**Derivada**|$f'(x)$|$f_x(x,y)$ y $f_y(x,y)$|
+> |**Aproximación**|Recta tangente|Plano tangente|
+> |**Ecuación**|$y = f(a) + f'(a)(x-a)$|$z = f(x_0,y_0) + f_x(x-x_0) + f_y(y-y_0)$|
+> |**Diferencial**|$df = f'(x)dx$|$df = f_x dx + f_y dy$|
+> |**Condición suficiente**|$f'$ existe|$f_x, f_y$ continuas|
+> |**Geométrico**|Pendiente de la recta|Vector normal $(f_x, f_y, -1)$|
+> |**Punto crítico**|$f'(x) = 0$|$f_x = 0$ y $f_y = 0$|
+> |**Continuidad**|Diferenciable ⟹ Continua|Diferenciable ⟹ Continua|
+> |**Recíproco**|Continua ⟹ Diferenciable (FALSO)|Derivadas existen ⟹ Diferenciable (FALSO)|
 
 ---
 

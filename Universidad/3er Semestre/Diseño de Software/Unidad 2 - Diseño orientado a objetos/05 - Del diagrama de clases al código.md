@@ -53,9 +53,11 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Qué es
 > Dos clases que **se conocen**: una guarda una referencia a la otra. No implica propiedad: el `Cliente` conoce su `CuentaBancaria`, y viceversa no es obligatorio.
 
-En el diagrama se dibuja como una línea con multiplicidad; en el código es un **atributo**.
-
-![[Archivos/04b-p9-codigo-asociacion.png]]
+> [!info] 💡 1. Asociación: la relación más común
+>
+> En el diagrama se dibuja como una línea con multiplicidad; en el código es un **atributo**.
+>
+> ![[Archivos/04b-p9-codigo-asociacion.png]]
 
 > [!example] 🔧 Asociación en Java
 > ```java
@@ -97,9 +99,11 @@ En el diagrama se dibuja como una línea con multiplicidad; en el código es un 
 > [!info] 📖 Qué dice el deck (p. 10)
 > "La **clase de asociación se instancia al ejecutar la relación** entre `Cliente` y `CuentaBancaria`. `RealizarTransaccion()` **asocia** los clientes y las cuentas."
 
-O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y la línea del diagrama se convierte en un atributo de esa clase.
-
-![[Archivos/04b-p4-relaciones.png]]
+> [!info] 💡 2. Clase de asociación: la relación que tiene datos
+>
+> O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y la línea del diagrama se convierte en un atributo de esa clase.
+>
+> ![[Archivos/04b-p4-relaciones.png]]
 
 > [!example] 🔧 Clase de asociación en Java
 > ```java

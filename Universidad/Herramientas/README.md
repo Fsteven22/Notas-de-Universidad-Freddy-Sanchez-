@@ -77,3 +77,32 @@ Los scripts que deducen la raíz del vault la calculan desde su propia ubicació
 Pipeline estándar: `catalogo → buildNN.py (dict MMD) → mmdc → QA de previews → commit+push`.
 Flujos: `QA_BY_PATH = "QA: <tramo 1>; ..."` para verificar cada flecha en los previews.
 Fórmulas en vyphen: sin `<>` (rompe mmdc) — usar `∫[a→b]`, `[i=1→n]`.
+
+## SVG-Pipeline/ — la tipografía incrustada de los SVG (leer antes de generar uno)
+
+Mermaid CLI incrusta la tipografía **"Recursive Variable"** dentro de cada SVG que genera: 4 reglas
+`@font-face` con la fuente en base64 (`data:font/woff2;base64,…`) + su licencia OFL. Son **161 KB de
+base64 por archivo**, el 90% del peso de un diagrama (un SVG de 182 KB de media en el vault). Con
+2.126 SVG, son **~340 MB de fuente repetida**.
+
+La fuente va incrustada porque un SVG que se muestra con `<img src="…svg">` se dibuja en un contexto
+aislado: no puede cargar el CSS de la página ni una fuente externa. Si no la lleva, las etiquetas del
+diagrama salen con la tipografía del sistema.
+
+| Script | Qué hace |
+|---|---|
+| `subconjuntar_fuente.py` | Recorta la fuente incrustada a **los glifos que ese diagrama usa** (texto visible + `aria-label`/`title`). El SVG se ve igual (misma variable font, mismos avances y contornos) y pasa de 182 KB a ~36 KB. Verifica que la cobertura por rangos no cambie y que **ningún glifo que la fuente original traía se pierda**; los glifos que el diagrama usa y que la fuente original NO traía (emoji, `→`, `‴`, ZWJ…) se registran en el propio SVG como `/*fuente-sin-glifo:U+2034*/` (se dibujan con la tipografía del sistema, igual que antes). Si algo no cuadra, **deja el archivo como está**. CLI: `py -3.12 subconjuntar_fuente.py <carpeta>` (con `--dry-run` solo mide). |
+| `mmdc_ligero.py` | **Reemplazo directo de `mmdc`**: hace lo mismo y ademas recorta la fuente del SVG que genera. Úsalo en vez de `mmdc` al crear diagramas: `py -3.12 mmdc_ligero.py -i x.mmd -o x.svg -b white`. |
+| `qa_svg_fuente.py` | QA de la fuente incrustada: (a) **cobertura** — todo carácter que el diagrama muestra y que la fuente declara en su `unicode-range` tiene que estar de verdad en la fuente (si alguien edita un SVG a mano y añade una etiqueta con un carácter que la fuente ya no trae, ese glifo saldría con la tipografía del sistema); (b) **peso** — avisa de los SVG que todavía llevan la tipografía completa. Los emoji y símbolos que nunca estuvieron en la fuente (✅ ❌ →) se dibujan con la tipografía del sistema a propósito: no cuentan como fallo. Los huecos preexistentes (los que la fuente original no traía) están documentados en el propio SVG y tampoco cuentan como fallo. |
+
+> [!warning] Regla para quien genere diagramas
+> Todo SVG nuevo que salga de `mmdc` debe pasar por `subconjuntar_fuente.py` (o generarse con
+> `mmdc_ligero.py`). Si no, el SVG entra al repo con 161 KB de fuente repetida y hay que volver a
+> recortarlo después — que es exactamente el trabajo que se hizo el 05/11/2026 sobre los 2.126 SVG
+> existentes. `qa_svg_fuente.py` es la red de seguridad: avisa de los que se quedaron pesados.
+
+Requisito: `py -3.12 -m pip install fonttools brotli`.
+
+**Estado del recorte (05/11/2026):** 2.375 SVG revisados · **2.126 recortados** (421,8 MB → 124,3 MB,
+−71%) · 249 sin tipografía incrustada (intactos) · **0 rechazados** · QA final: 0 pesados, 0 fallos de
+cobertura, 92 SVG con huecos preexistentes documentados.

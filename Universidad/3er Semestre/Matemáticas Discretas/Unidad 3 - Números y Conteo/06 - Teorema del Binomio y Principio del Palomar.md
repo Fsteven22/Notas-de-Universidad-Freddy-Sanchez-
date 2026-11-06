@@ -25,7 +25,9 @@ dg-publish: true
 
 ## 📐 Coeficientes Binomiales
 
-Los coeficientes $\binom{n}{k}$ ya aparecieron como número de combinaciones. Aquí revelan otra propiedad: son exactamente los coeficientes en la expansión de $(a+b)^n$.
+> [!info] 💡 Coeficientes binomiales
+>
+> Los coeficientes $\binom{n}{k}$ ya aparecieron como número de combinaciones. Aquí revelan otra propiedad: son exactamente los coeficientes en la expansión de $(a+b)^n$.
 
 > [!note] 📋 Teorema Binomial
 > 

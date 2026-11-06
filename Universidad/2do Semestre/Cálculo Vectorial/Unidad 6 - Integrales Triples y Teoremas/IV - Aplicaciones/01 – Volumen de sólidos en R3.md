@@ -456,14 +456,16 @@ dg-publish: true
 
 ### 🎯 Tabla Comparativa Completa
 
-|Método|Fórmula|Ventajas|Desventajas|Mejor Para|
-|---|---|---|---|---|
-|**Integral Triple Cartesiana**|$\iiint dx,dy,dz$|Directa, versátil|Límites complejos|Regiones rectangulares|
-|**Cilíndricas**|$\iiint r,dr,d\theta,dz$|Simplifica simetría circular|Requiere conversión|Cilindros, conos|
-|**Esféricas**|$\iiint \rho^2\sin\phi,d\rho,d\theta,d\phi$|Ideal para esferas|Compleja para otros|Esferas, simetría radial|
-|**Disco**|$\pi\int R^2,dx$|Simple, una variable|Solo sólidos de revolución|Rotación sin hueco|
-|**Arandela**|$\pi\int (R^2-r^2) dx$|Maneja huecos|Dos funciones necesarias|Rotación con hueco|
-|**Secciones**|$\int A(x),dx$|Áreas generales|Requiere geometría|Formas irregulares|
+> [!info] 📊 Tabla Comparativa Completa
+>
+> |Método|Fórmula|Ventajas|Desventajas|Mejor Para|
+> |---|---|---|---|---|
+> |**Integral Triple Cartesiana**|$\iiint dx,dy,dz$|Directa, versátil|Límites complejos|Regiones rectangulares|
+> |**Cilíndricas**|$\iiint r,dr,d\theta,dz$|Simplifica simetría circular|Requiere conversión|Cilindros, conos|
+> |**Esféricas**|$\iiint \rho^2\sin\phi,d\rho,d\theta,d\phi$|Ideal para esferas|Compleja para otros|Esferas, simetría radial|
+> |**Disco**|$\pi\int R^2,dx$|Simple, una variable|Solo sólidos de revolución|Rotación sin hueco|
+> |**Arandela**|$\pi\int (R^2-r^2) dx$|Maneja huecos|Dos funciones necesarias|Rotación con hueco|
+> |**Secciones**|$\int A(x),dx$|Áreas generales|Requiere geometría|Formas irregulares|
 
 ### 🗺️ Mapa Mental del Tema
 

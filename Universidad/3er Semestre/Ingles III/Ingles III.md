@@ -87,6 +87,6 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-- [[00 - Leeme Unidad 0]]
+- [[00 - Índice de Contenido]]
 
 **Tags:** #english #ESPOL #IDIG1008

@@ -799,14 +799,16 @@ dg-publish: true
 
 ### Tabla Comparativa Completa
 
-|Aspecto|Cartesianas|Polares/Cilíndricas|Esféricas|
-|---|---|---|---|
-|**Dimensión**|2D/3D|2D/3D|3D solamente|
-|**Variables**|$(x,y)$ o $(x,y,z)$|$(r,\theta)$ o $(r,\theta,z)$|$(\rho,\theta,\phi)$|
-|**Rangos**|$-\infty$ a $\infty$|$r \geq 0$, $0 \leq \theta < 2\pi$|$\rho \geq 0$, $0 \leq \phi \leq \pi$|
-|**Mejor para**|Rectángulos, cajas|Círculos, cilindros|Esferas|
-|**Jacobiano**|$1$|$r$|$\rho^2\sin\phi$|
-|**Complejidad**|Simple conceptualmente|Intermedia|Más compleja|
+> [!info] 📊 Tabla Comparativa Completa
+>
+> |Aspecto|Cartesianas|Polares/Cilíndricas|Esféricas|
+> |---|---|---|---|
+> |**Dimensión**|2D/3D|2D/3D|3D solamente|
+> |**Variables**|$(x,y)$ o $(x,y,z)$|$(r,\theta)$ o $(r,\theta,z)$|$(\rho,\theta,\phi)$|
+> |**Rangos**|$-\infty$ a $\infty$|$r \geq 0$, $0 \leq \theta < 2\pi$|$\rho \geq 0$, $0 \leq \phi \leq \pi$|
+> |**Mejor para**|Rectángulos, cajas|Círculos, cilindros|Esferas|
+> |**Jacobiano**|$1$|$r$|$\rho^2\sin\phi$|
+> |**Complejidad**|Simple conceptualmente|Intermedia|Más compleja|
 
 ### Diagrama de Flujo de Selección
 

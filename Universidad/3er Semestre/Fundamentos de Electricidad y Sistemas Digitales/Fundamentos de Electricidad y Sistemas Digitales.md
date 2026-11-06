@@ -7,9 +7,11 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ---
 
 # ⚡ Fundamentos de Electricidad y Sistemas Digitales
-**EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus FESD|📖 Ver Syllabus completo]]
-
-![[Unidad 0 - Guias y Ejercicios/Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
+> [!info] 💡 Fundamentos de Electricidad y Sistemas Digitales
+>
+> **EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus FESD|📖 Ver Syllabus completo]]
+>
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
 
 ---
 

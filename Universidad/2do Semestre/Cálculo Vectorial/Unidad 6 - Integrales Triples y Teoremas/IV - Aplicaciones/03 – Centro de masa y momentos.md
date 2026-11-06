@@ -632,16 +632,18 @@ dg-publish: true
 
 ## 📊 Tabla de Momentos de Inercia Comunes
 
-|Objeto|Densidad|Eje|Momento de Inercia|
-|---|---|---|---|
-|**Varilla delgada** (longitud $L$)|Uniforme $\rho$|Por el centro, perpendicular|$I = \frac{1}{12}ML^2$|
-|**Varilla delgada**|Uniforme|Por un extremo, perpendicular|$I = \frac{1}{3}ML^2$|
-|**Disco/Cilindro** (radio $R$, altura $h$)|Uniforme|Eje central (z)|$I_z = \frac{1}{2}MR^2$|
-|**Cilindro hueco** (radios $R_1$, $R_2$)|Uniforme|Eje central|$I = \frac{1}{2}M(R_1^2 + R_2^2)$|
-|**Esfera sólida** (radio $R$)|Uniforme|Por el centro|$I = \frac{2}{5}MR^2$|
-|**Cascarón esférico** (radio $R$)|Uniforme|Por el centro|$I = \frac{2}{3}MR^2$|
-|**Cono sólido** (radio $R$, altura $h$)|Uniforme|Eje central|$I = \frac{3}{10}MR^2$|
-|**Paralelepípedo** ($a \times b \times c$)|Uniforme|A través del centro, paralelo a $c$|$I = \frac{1}{12}M(a^2+b^2)$|
+> [!info] 📊 Tabla de Momentos de Inercia Comunes
+>
+> |Objeto|Densidad|Eje|Momento de Inercia|
+> |---|---|---|---|
+> |**Varilla delgada** (longitud $L$)|Uniforme $\rho$|Por el centro, perpendicular|$I = \frac{1}{12}ML^2$|
+> |**Varilla delgada**|Uniforme|Por un extremo, perpendicular|$I = \frac{1}{3}ML^2$|
+> |**Disco/Cilindro** (radio $R$, altura $h$)|Uniforme|Eje central (z)|$I_z = \frac{1}{2}MR^2$|
+> |**Cilindro hueco** (radios $R_1$, $R_2$)|Uniforme|Eje central|$I = \frac{1}{2}M(R_1^2 + R_2^2)$|
+> |**Esfera sólida** (radio $R$)|Uniforme|Por el centro|$I = \frac{2}{5}MR^2$|
+> |**Cascarón esférico** (radio $R$)|Uniforme|Por el centro|$I = \frac{2}{3}MR^2$|
+> |**Cono sólido** (radio $R$, altura $h$)|Uniforme|Eje central|$I = \frac{3}{10}MR^2$|
+> |**Paralelepípedo** ($a \times b \times c$)|Uniforme|A través del centro, paralelo a $c$|$I = \frac{1}{12}M(a^2+b^2)$|
 
 ---
 

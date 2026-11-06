@@ -1212,17 +1212,19 @@ dg-publish: true
 
 ### 📋 Tabla Resumen de Fórmulas
 
-|Concepto|Fórmula|Condiciones|Uso|
-|---|---|---|---|
-|**Proyección sobre u**|(⟨v,u⟩/\|u\|²)u|u ≠ 0|Caso 1D|
-|**Proyección sobre u unitario**|⟨v,u⟩u|\|u\| = 1|Simplificado|
-|**Proyección sobre W (ortogonal)**|Σ(⟨v,uᵢ⟩/\|uᵢ\|²)uᵢ|{uᵢ} ortogonal|Más común|
-|**Proyección sobre W (ortonormal)**|Σ⟨v,uᵢ⟩uᵢ|{uᵢ} ortonormal|Más simple|
-|**Matriz de proyección**|UU^T|U ortonormal|Representación matricial|
-|**Matriz (base arbitraria)**|A(A^TA)^{-1}A^T|A invertible|General|
-|**Componente perpendicular**|v - proj_W(v)|Siempre|Residuo|
-|**Distancia a subespacio**|\|v - proj_W(v)\||Siempre|Métrica|
-|**Mínimos cuadrados**|A^TA\hat{x} = A^Tb|Sistema sobredeterminado|Regresión|
+> [!info] 📊 Tabla Resumen de Fórmulas
+>
+> |Concepto|Fórmula|Condiciones|Uso|
+> |---|---|---|---|
+> |**Proyección sobre u**|(⟨v,u⟩/\|u\|²)u|u ≠ 0|Caso 1D|
+> |**Proyección sobre u unitario**|⟨v,u⟩u|\|u\| = 1|Simplificado|
+> |**Proyección sobre W (ortogonal)**|Σ(⟨v,uᵢ⟩/\|uᵢ\|²)uᵢ|{uᵢ} ortogonal|Más común|
+> |**Proyección sobre W (ortonormal)**|Σ⟨v,uᵢ⟩uᵢ|{uᵢ} ortonormal|Más simple|
+> |**Matriz de proyección**|UU^T|U ortonormal|Representación matricial|
+> |**Matriz (base arbitraria)**|A(A^TA)^{-1}A^T|A invertible|General|
+> |**Componente perpendicular**|v - proj_W(v)|Siempre|Residuo|
+> |**Distancia a subespacio**|\|v - proj_W(v)\||Siempre|Métrica|
+> |**Mínimos cuadrados**|A^TA\hat{x} = A^Tb|Sistema sobredeterminado|Regresión|
 
 ### 🎯 Diagrama de Flujo de Decisión
 

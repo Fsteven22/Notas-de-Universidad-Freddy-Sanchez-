@@ -55,7 +55,6 @@ dg-publish: true
 
 ![[Diagramas/01_–_Integral_triple_02.svg]]
 
-Let me create the complete document:
 
 # 📦 Integral Triple
 

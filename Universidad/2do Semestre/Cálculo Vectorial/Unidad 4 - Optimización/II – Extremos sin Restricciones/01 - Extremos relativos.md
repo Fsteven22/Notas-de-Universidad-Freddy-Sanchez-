@@ -613,12 +613,12 @@ dg-publish: true
 > 
 > **Criterio de clasificación:**
 > 
-| Condición             | Clasificación        |
-|----------------------|----------------------|
-| D > 0, fxx > 0       | ✅ Mínimo relativo   |
-| D > 0, fxx < 0       | ✅ Máximo relativo   |
-| D < 0                | ⚠️ Punto silla      |
-| D = 0                | ❓ Indeterminado     |
+> | Condición             | Clasificación        |
+> |----------------------|----------------------|
+> | D > 0, fxx > 0       | ✅ Mínimo relativo   |
+> | D > 0, fxx < 0       | ✅ Máximo relativo   |
+> | D < 0                | ⚠️ Punto silla      |
+> | D = 0                | ❓ Indeterminado     |
 > 
 > **Procedimiento:**
 > 1. Encontrar puntos críticos (∇f = 0)

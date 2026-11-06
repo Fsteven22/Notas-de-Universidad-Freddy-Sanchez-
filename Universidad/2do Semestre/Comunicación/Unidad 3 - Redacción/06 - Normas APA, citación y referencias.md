@@ -292,7 +292,7 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
 > - Anterior: [[05 - Concordancia y cohesión en la redacción]]
 > - Aplicación directa: [[01 - Texto expositivo]]
-> - Origen del taller: [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - Origen del taller: [[../00 - Índice de Contenido|00 - Índice de Contenido]]
 > - IA y citas: [[03 - IA ética y prompts para redacción]]
 > - Base MOOC: [[Preuniversitario/MOOC de Comunicación/Unidad 2 - Análisis del texto/02 - Técnicas de parafraseo y citación|MOOC U2 — Parafraseo y citación]]
 

@@ -386,13 +386,13 @@ dg-publish: true
 > **2. Límite del múltiplo de una constante:** $$\lim_{x \to a} [c \cdot f(x)] = c \cdot \lim_{x \to a} f(x)$$
 > 
 > **3. Límite de múltiples funciones:** $$\lim_{x \to a} [f_1(x) + f_2(x) + ... + f_n(x)] = \lim_{x \to a} f_1(x) + \lim_{x \to a} f_2(x) + ... + \lim_{x \to a} f_n(x)$$
-
-|Operación|Notación|Resultado|Condición|
-|---|---|---|---|
-|Suma|$\lim [f + g]$|$L + M$|Ambos límites existen|
-|Diferencia|$\lim [f - g]$|$L - M$|Ambos límites existen|
-|Constante por función|$\lim [c \cdot f]$|$c \cdot L$|Límite de f existe|
-|Suma múltiple|$\lim [f_1 + f_2 + ... + f_n]$|$L_1 + L_2 + ... + L_n$|Todos los límites existen|
+>
+> |Operación|Notación|Resultado|Condición|
+> |---|---|---|---|
+> |Suma|$\lim [f + g]$|$L + M$|Ambos límites existen|
+> |Diferencia|$\lim [f - g]$|$L - M$|Ambos límites existen|
+> |Constante por función|$\lim [c \cdot f]$|$c \cdot L$|Límite de f existe|
+> |Suma múltiple|$\lim [f_1 + f_2 + ... + f_n]$|$L_1 + L_2 + ... + L_n$|Todos los límites existen|
 
 > [!example] 💡 Ejemplos Prácticos
 > 
@@ -442,13 +442,13 @@ dg-publish: true
 > - Si $M = 0$ y $L ≠ 0$ → Límite no existe (∞)
 > - Si $M = 0$ y $L = 0$ → Forma indeterminada $\frac{0}{0}$
 > - Si $L = ∞$ y $M = ∞$ → Forma indeterminada $\frac{∞}{∞}$
-
-|Situación|$\lim f(x)$|$\lim g(x)$|$\lim \frac{f(x)}{g(x)}$|Observación|
-|---|---|---|---|---|
-|Normal|$L$|$M ≠ 0$|$\frac{L}{M}$|✅ Aplicar teorema|
-|Infinito|$L ≠ 0$|$0$|$±∞$|❌ Límite no existe|
-|Indeterminada|$0$|$0$|?|🔧 Usar otras técnicas|
-|Indeterminada|$∞$|$∞$|?|🔧 Usar L'Hôpital|
+>
+> |Situación|$\lim f(x)$|$\lim g(x)$|$\lim \frac{f(x)}{g(x)}$|Observación|
+> |---|---|---|---|---|
+> |Normal|$L$|$M ≠ 0$|$\frac{L}{M}$|✅ Aplicar teorema|
+> |Infinito|$L ≠ 0$|$0$|$±∞$|❌ Límite no existe|
+> |Indeterminada|$0$|$0$|?|🔧 Usar otras técnicas|
+> |Indeterminada|$∞$|$∞$|?|🔧 Usar L'Hôpital|
 
 > [!example] 📝 Ejemplos de Producto y Cociente
 > 
@@ -487,14 +487,14 @@ dg-publish: true
 > **2. Exponente entero negativo:** $$\lim_{x \to a} [f(x)]^{-n} = \frac{1}{L^n}, \quad L ≠ 0$$
 > 
 > **3. Exponente racional:** $$\lim_{x \to a} [f(x)]^{p/q} = L^{p/q}, \quad \text{si } L^{p/q} \text{ está definida}$$
-
-|Tipo de Potencia|Condiciones|Ejemplo|Resultado|
-|---|---|---|---|
-|Cuadrado|$L$ cualquier|$\lim_{x \to 2} (x-1)^2$|$(2-1)^2 = 1$|
-|Cubo|$L$ cualquier|$\lim_{x \to 3} (x+1)^3$|$(3+1)^3 = 64$|
-|Raíz cuadrada|$L \geq 0$|$\lim_{x \to 4} \sqrt{x-3}$|$\sqrt{4-3} = 1$|
-|Raíz cúbica|$L$ cualquier|$\lim_{x \to -1} \sqrt[3]{x+9}$|$\sqrt[3]{-1+9} = 2$|
-|Potencia negativa|$L ≠ 0$|$\lim_{x \to 1} (x+1)^{-2}$|$(1+1)^{-2} = \frac{1}{4}$|
+>
+> |Tipo de Potencia|Condiciones|Ejemplo|Resultado|
+> |---|---|---|---|
+> |Cuadrado|$L$ cualquier|$\lim_{x \to 2} (x-1)^2$|$(2-1)^2 = 1$|
+> |Cubo|$L$ cualquier|$\lim_{x \to 3} (x+1)^3$|$(3+1)^3 = 64$|
+> |Raíz cuadrada|$L \geq 0$|$\lim_{x \to 4} \sqrt{x-3}$|$\sqrt{4-3} = 1$|
+> |Raíz cúbica|$L$ cualquier|$\lim_{x \to -1} \sqrt[3]{x+9}$|$\sqrt[3]{-1+9} = 2$|
+> |Potencia negativa|$L ≠ 0$|$\lim_{x \to 1} (x+1)^{-2}$|$(1+1)^{-2} = \frac{1}{4}$|
 
 ### ⚠️ Casos Especiales y Restricciones
 
@@ -554,14 +554,14 @@ dg-publish: true
 > **2. Función dentro de exponencial:** $$\lim_{x \to a} e^{g(x)} = e^{\lim_{x \to a} g(x)}$$
 > 
 > **3. Función dentro de logaritmo:** $$\lim_{x \to a} \ln(g(x)) = \ln\left(\lim_{x \to a} g(x)\right)$$ (si $\lim g(x) > 0$)
-
-|Función Externa $f$|Condición en $L$|Ejemplo|Evaluación|
-|---|---|---|---|
-|$\sin(u)$|Siempre continua|$\lim_{x \to 0} \sin(x^2)$|$\sin(0) = 0$|
-|$e^u$|Siempre continua|$\lim_{x \to 1} e^{2x-2}$|$e^{0} = 1$|
-|$\ln(u)$|$L > 0$|$\lim_{x \to 2} \ln(x^2)$|$\ln(4)$|
-|$\sqrt{u}$|$L \geq 0$|$\lim_{x \to 3} \sqrt{x+1}$|$\sqrt{4} = 2$|
-|$\frac{1}{u}$|$L ≠ 0$|$\lim_{x \to 1} \frac{1}{x+2}$|$\frac{1}{3}$|
+>
+> |Función Externa $f$|Condición en $L$|Ejemplo|Evaluación|
+> |---|---|---|---|
+> |$\sin(u)$|Siempre continua|$\lim_{x \to 0} \sin(x^2)$|$\sin(0) = 0$|
+> |$e^u$|Siempre continua|$\lim_{x \to 1} e^{2x-2}$|$e^{0} = 1$|
+> |$\ln(u)$|$L > 0$|$\lim_{x \to 2} \ln(x^2)$|$\ln(4)$|
+> |$\sqrt{u}$|$L \geq 0$|$\lim_{x \to 3} \sqrt{x+1}$|$\sqrt{4} = 2$|
+> |$\frac{1}{u}$|$L ≠ 0$|$\lim_{x \to 1} \frac{1}{x+2}$|$\frac{1}{3}$|
 
 > [!example] 🎨 Ejemplos de Composición
 > 
@@ -728,22 +728,22 @@ dg-publish: true
 > **Ejemplo:** $$\lim_{x \to 3} \frac{x^2 + 2x - 1}{x - 1}$$
 > 
 > **Verificación:** $Q(3) = 3 - 1 = 2 ≠ 0$ ✅ **Solución:** $\frac{9 + 6 - 1}{2} = \frac{14}{2} = 7$
-
-|Tipo de Función|Dominio de Continuidad|Ejemplo|Límite en x = 1|
-|---|---|---|---|
-|Polinomial|$\mathbb{R}$ (todos los reales)|$x^2 + 3x - 2$|$1 + 3 - 2 = 2$|
-|Racional|$\mathbb{R}$ excepto donde denominador = 0|$\frac{x+2}{x-3}$|$\frac{3}{-2} = -\frac{3}{2}$|
+>
+> |Tipo de Función|Dominio de Continuidad|Ejemplo|Límite en x = 1|
+> |---|---|---|---|
+> |Polinomial|$\mathbb{R}$ (todos los reales)|$x^2 + 3x - 2$|$1 + 3 - 2 = 2$|
+> |Racional|$\mathbb{R}$ excepto donde denominador = 0|$\frac{x+2}{x-3}$|$\frac{3}{-2} = -\frac{3}{2}$|
 
 ### 📐 Funciones Trigonométricas
 
 > [!tip] 🌊 Continuidad Trigonométrica Las funciones trigonométricas básicas tienen dominios específicos de continuidad:
-
-|Función|Dominio de Continuidad|Puntos de Discontinuidad|
-|---|---|---|
-|$\sin(x)$|$\mathbb{R}$|Ninguno|
-|$\cos(x)$|$\mathbb{R}$|Ninguno|
-|$\tan(x)$|$\mathbb{R} - {\frac{\pi}{2} + n\pi}$|$x = \frac{\pi}{2} + n\pi$|
-|$\cot(x)$|$\mathbb{R} - {n\pi}$|$x = n\pi$|
+>
+> |Función|Dominio de Continuidad|Puntos de Discontinuidad|
+> |---|---|---|
+> |$\sin(x)$|$\mathbb{R}$|Ninguno|
+> |$\cos(x)$|$\mathbb{R}$|Ninguno|
+> |$\tan(x)$|$\mathbb{R} - {\frac{\pi}{2} + n\pi}$|$x = \frac{\pi}{2} + n\pi$|
+> |$\cot(x)$|$\mathbb{R} - {n\pi}$|$x = n\pi$|
 
 > [!example] 📊 Ejemplos Trigonométricos **Ejemplo 1:** $\lim_{x \to \pi/6} \sin(x) = \sin(\pi/6) = \frac{1}{2}$
 > 
@@ -768,13 +768,13 @@ dg-publish: true
 > - **Continuas** para $x > 0$
 > - **Dominio:** $(0, +∞)$
 > - **Rango:** $\mathbb{R}$
-
-|Función|Ejemplo de Límite|Sustitución|Resultado|
-|---|---|---|---|
-|Exponencial|$\lim_{x \to 2} e^x$|$e^2$|$≈ 7.39$|
-|Exponencial|$\lim_{x \to 0} 2^x$|$2^0$|$1$|
-|Logarítmica|$\lim_{x \to 1} \ln(x)$|$\ln(1)$|$0$|
-|Logarítmica|$\lim_{x \to e} \ln(x)$|$\ln(e)$|$1$|
+>
+> |Función|Ejemplo de Límite|Sustitución|Resultado|
+> |---|---|---|---|
+> |Exponencial|$\lim_{x \to 2} e^x$|$e^2$|$≈ 7.39$|
+> |Exponencial|$\lim_{x \to 0} 2^x$|$2^0$|$1$|
+> |Logarítmica|$\lim_{x \to 1} \ln(x)$|$\ln(1)$|$0$|
+> |Logarítmica|$\lim_{x \to e} \ln(x)$|$\ln(e)$|$1$|
 
 > [!warning] ⚠️ Casos Problemáticos **NO usar sustitución directa cuando:**
 > 

@@ -84,7 +84,9 @@ tags: [recursos-visuales, fesd]
 
 ![[Formato Pre-prácticas.pdf]]
 
-Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
+> [!info] 🔗 Unidad 0 — Guías y Ejercicios (FESD Práctico)
+>
+> Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 
 ![[Pasted image 20260525231841.png]]
 

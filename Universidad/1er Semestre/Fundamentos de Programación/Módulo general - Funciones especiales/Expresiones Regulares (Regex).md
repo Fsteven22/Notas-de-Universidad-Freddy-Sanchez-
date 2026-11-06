@@ -5,17 +5,20 @@ dg-publish: true
 
 ### Contexto
 
-Las Expresiones Regulares, comúnmente abreviadas como Regex o Regexp, son secuencias de caracteres que forman un patrón de búsqueda. Son una herramienta increíblemente poderosa para manipular cadenas de texto: permiten buscar, reemplazar y validar texto de maneras muy complejas y eficientes. Son fundamentales en tareas como la validación de formatos (correos electrónicos, números de teléfono), el análisis de logs, el procesamiento de texto y la extracción de información específica de grandes volúmenes de datos.
+> [!info] 📖 Contexto
+>
+> Las Expresiones Regulares, comúnmente abreviadas como Regex o Regexp, son secuencias de caracteres que forman un patrón de búsqueda. Son una herramienta increíblemente poderosa para manipular cadenas de texto: permiten buscar, reemplazar y validar texto de maneras muy complejas y eficientes. Son fundamentales en tareas como la validación de formatos (correos electrónicos, números de teléfono), el análisis de logs, el procesamiento de texto y la extracción de información específica de grandes volúmenes de datos.
 
 ### Fórmula/Procedimiento
 
-En Python, las expresiones regulares se trabajan principalmente con el módulo `re`.
+> [!info] 🧩 El módulo `re` en Python
+>
+> En Python, las expresiones regulares se trabajan principalmente con el módulo `re`.
 
 #### **1. Importar el Módulo `re`:**
 
-Python
 
-```
+```python
 import re
 ```
 
@@ -109,44 +112,39 @@ import re
 
 ### Explicación Teórica
 
-Las expresiones regulares se basan en el concepto de lenguajes formales y autómatas finitos. Son una notación compacta para describir "lenguajes" o conjuntos de cadenas que siguen un patrón. Cuando usas Regex, compilas un patrón que el motor de expresiones regulares interpreta para buscar coincidencias. La sintaxis de Regex es un lenguaje en sí mismo, muy conciso, que permite definir patrones complejos con pocos caracteres, optimizado para operaciones de búsqueda y manipulación de texto a gran escala.
+> [!note] 📖 Explicación teórica
+>
+> Las expresiones regulares se basan en el concepto de lenguajes formales y autómatas finitos. Son una notación compacta para describir "lenguajes" o conjuntos de cadenas que siguen un patrón. Cuando usas Regex, compilas un patrón que el motor de expresiones regulares interpreta para buscar coincidencias. La sintaxis de Regex es un lenguaje en sí mismo, muy conciso, que permite definir patrones complejos con pocos caracteres, optimizado para operaciones de búsqueda y manipulación de texto a gran escala.
 
 ### Explicación Imaginativa
 
-Imagina que tienes un "detector de patrones súper inteligente".
-
-- Tú le das al detector un "plano" de lo que quieres encontrar (el **patrón Regex**).
-    
-- `.` (punto): Es como decir "encuentra cualquier cosa que se vea como un carácter aquí".
-    
-- `*` (asterisco): Es como decir "encuentra esto, no importa cuántas veces se repita, incluso si no aparece ninguna vez".
-    
-- `+` (más): Es como decir "encuentra esto, pero tiene que aparecer al menos una vez".
-    
-- `[]` (corchetes): Es como dar una lista de "ingredientes" y decir "encuentra cualquiera de estos".
-    
-- `\d` (barra d): Es un atajo para decir "encuentra cualquier número".
-    
-- `re.search()`: Es como decirle al detector: "Dame la primera cosa que coincida con este plano".
-    
-- `re.findall()`: Es como decirle: "Dame una lista de _todas_ las cosas que coincidan con este plano".
-    
-- `re.sub()`: Es como decirle: "Cada vez que encuentres algo que coincida con este plano, reemplázalo con esto otro".
+> [!example] 🧪 Explicación imaginativa
+>
+> Imagina que tienes un "detector de patrones súper inteligente".
+>
+> - Tú le das al detector un "plano" de lo que quieres encontrar (el **patrón Regex**).
+> - `.` (punto): Es como decir "encuentra cualquier cosa que se vea como un carácter aquí".
+> - `*` (asterisco): Es como decir "encuentra esto, no importa cuántas veces se repita, incluso si no aparece ninguna vez".
+> - `+` (más): Es como decir "encuentra esto, pero tiene que aparecer al menos una vez".
+> - `[]` (corchetes): Es como dar una lista de "ingredientes" y decir "encuentra cualquiera de estos".
+> - `\d` (barra d): Es un atajo para decir "encuentra cualquier número".
+> - `re.search()`: Es como decirle al detector: "Dame la primera cosa que coincida con este plano".
+> - `re.findall()`: Es como decirle: "Dame una lista de _todas_ las cosas que coincidan con este plano".
+> - `re.sub()`: Es como decirle: "Cada vez que encuentres algo que coincida con este plano, reemplázalo con esto otro".
     
 
 ### Relación
 
-Las expresiones regulares son una herramienta indispensable para cualquier programador que trabaje con texto. Complementan y amplían las capacidades de las operaciones de cadenas básicas de Python. Son cruciales para:
-
-- **Limpieza de datos:** Eliminar caracteres no deseados, normalizar formatos.
-    
-- **Extracción de datos:** Sacar información específica (ej., números, fechas, URLs) de texto no estructurado.
-    
-- **Validación de entrada:** Asegurar que los datos ingresados por el usuario cumplen con un formato específico antes de procesarlos.
-    
-- Parsing (análisis): Descomponer cadenas complejas en sus componentes significativos.
-    
-    Su dominio abre un abanico enorme de posibilidades para automatizar y optimizar tareas de manipulación de texto.
+> [!info] 🔗 Relación con otros temas
+>
+> Las expresiones regulares son una herramienta indispensable para cualquier programador que trabaje con texto. Complementan y amplían las capacidades de las operaciones de cadenas básicas de Python. Son cruciales para:
+>
+> - **Limpieza de datos:** Eliminar caracteres no deseados, normalizar formatos.
+> - **Extracción de datos:** Sacar información específica (ej., números, fechas, URLs) de texto no estructurado.
+> - **Validación de entrada:** Asegurar que los datos ingresados por el usuario cumplen con un formato específico antes de procesarlos.
+> - Parsing (análisis): Descomponer cadenas complejas en sus componentes significativos.
+>
+>     Su dominio abre un abanico enorme de posibilidades para automatizar y optimizar tareas de manipulación de texto.
     
 
 ### Gráfico (Representación conceptual)
@@ -177,11 +175,15 @@ Las expresiones regulares son una herramienta indispensable para cualquier progr
     (ej. 'usuario@dominio.com') (ej. ['usuario@dominio.com', '123-456-7890']) (ej. "Esto es UN email...")
 ```
 
-_(Este gráfico ilustra cómo el motor de expresiones regulares, usando diferentes funciones, procesa una cadena de entrada con un patrón Regex para encontrar, extraer o reemplazar texto.)_
+> [!info] 🖼️ Gráfico (representación conceptual)
+>
+> _(Este gráfico ilustra cómo el motor de expresiones regulares, usando diferentes funciones, procesa una cadena de entrada con un patrón Regex para encontrar, extraer o reemplazar texto.)_
 
 ### Ejemplo de Aplicación
 
-Aquí tienes ejemplos de comandos y su uso con Expresiones Regulares en Python:
+> [!example] 🧪 Ejemplo de aplicación
+>
+> Aquí tienes ejemplos de comandos y su uso con Expresiones Regulares en Python:
 
 - **Validar un formato básico de correo electrónico:**
     

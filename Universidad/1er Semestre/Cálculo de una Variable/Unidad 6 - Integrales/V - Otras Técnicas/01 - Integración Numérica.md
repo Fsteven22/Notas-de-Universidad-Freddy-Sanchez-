@@ -285,9 +285,10 @@ dg-publish: true
 >
 >| Método | Aproximación | Error Estimado |
 >|--------|--------------|----------------|
-| Trapecio | 0.7468 | $O(h^2)$ |
-| Simpson | 0.7468 | $O(h^4)$ |
-| Valor "exacto" | 0.7468241 | - |
+>
+> | Trapecio | 0.7468 | $O(h^2)$ |
+> | Simpson | 0.7468 | $O(h^4)$ |
+> | Valor "exacto" | 0.7468241 | - |
 >
 >**Observación**: Simpson alcanza la precisión con menos evaluaciones
 

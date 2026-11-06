@@ -1143,13 +1143,15 @@ dg-publish: true
 
 **Próximos pasos:**
 
-| Tema | Conexión | Aplicación |
-|------|----------|------------|
-| **Polinomio minimal** | Divide a p(λ) | Más eficiente |
-| **Forma canónica de Jordan** | Cuando no diagonaliza | Estructura fina |
-| **Teoría espectral** | Análisis de autovalores | Física cuántica |
-| **Localización de raíces** | Teoremas de Gerschgorin | Estimación rápida |
-| **Polinomios matriciales** | Generalización | Ecuaciones diferenciales |
+> [!info] 📊 Conexión con Próximos Temas
+>
+> | Tema | Conexión | Aplicación |
+> |------|----------|------------|
+> | **Polinomio minimal** | Divide a p(λ) | Más eficiente |
+> | **Forma canónica de Jordan** | Cuando no diagonaliza | Estructura fina |
+> | **Teoría espectral** | Análisis de autovalores | Física cuántica |
+> | **Localización de raíces** | Teoremas de Gerschgorin | Estimación rápida |
+> | **Polinomios matriciales** | Generalización | Ecuaciones diferenciales |
 
 **Roadmap:**
 

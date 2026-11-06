@@ -131,13 +131,15 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!info] 📖 De dónde sale esta sección
 > Del deck `04aLenguajeUnificadoModelado.pdf` (Unidad 2, 2024): la parte de secuencia es la más extensa del deck y define la notación con precisión.
 
-**Qué demuestra un diagrama de secuencia** (p. 32): el **comportamiento de los objetos en un caso de uso**, describiendo los objetos y los mensajes que transmiten. Se lee **de izquierda a derecha** y **de forma descendente** — el tiempo corre hacia abajo.
-
-**Los elementos** (pp. 32-33): objetos sobre su **life-line**, la **activation** (el objeto activo, la barra vertical sobre la lifeline), los **messages** (las flechas) y el **destroy** (la X al final de la lifeline).
-
-![[Archivos/04a-p33-elementos-secuencia.png]]
-
-**Frames: `alt`, `opt`, `loop`** (pp. 38-41). El deck explica por qué existen: lo que dibujas al principio es una **instancia** del diagrama de interacción, *una posible* secuencia de mensajes. Pero un caso de uso puede incluir muchos escenarios → hace falta mostrar **comportamiento condicional** y **posibles iteraciones**. Un diagrama de interacción **genérico** muestra todas las secuencias posibles.
+> [!info] 💡 Qué demuestra un diagrama de secuencia
+>
+> **Qué demuestra un diagrama de secuencia** (p. 32): el **comportamiento de los objetos en un caso de uso**, describiendo los objetos y los mensajes que transmiten. Se lee **de izquierda a derecha** y **de forma descendente** — el tiempo corre hacia abajo.
+>
+> **Los elementos** (pp. 32-33): objetos sobre su **life-line**, la **activation** (el objeto activo, la barra vertical sobre la lifeline), los **messages** (las flechas) y el **destroy** (la X al final de la lifeline).
+>
+> ![[Archivos/04a-p33-elementos-secuencia.png]]
+>
+> **Frames: `alt`, `opt`, `loop`** (pp. 38-41). El deck explica por qué existen: lo que dibujas al principio es una **instancia** del diagrama de interacción, *una posible* secuencia de mensajes. Pero un caso de uso puede incluir muchos escenarios → hace falta mostrar **comportamiento condicional** y **posibles iteraciones**. Un diagrama de interacción **genérico** muestra todas las secuencias posibles.
 
 > | Frame | Qué ejecuta | Equivalencia / regla |
 > |---|---|---|
@@ -152,17 +154,19 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!tip] Cómo se usa en tu entrega
 > `alt` para el flujo alternativo de la descripción (A1, A2), `opt` cuando el bloque es opcional (un parche `<<extend>>`), `loop` para lo que se repite (reintentar, recorrer una lista). La **guard** es la condición entre corchetes: `[cupo > 0]`, `[hay errores]`.
 
-**Restricciones de tiempo** (p. 43): el deck muestra cómo anotar una restricción de tipo `time` sobre un mensaje, para cuando el orden no basta y necesitas el plazo.
-
-![[Archivos/04a-p43-restricciones-tiempo.png]]
-
-**Tipos de interacción** (p. 44): el deck distingue los mensajes **síncrono**, **asíncrono** y de **retorno**, y el mensaje tipo *choice* (la bifurcación). El aviso del propio deck: *algunas versiones de UML usan el mismo símbolo para los casos que aquí se distinguen*.
-
-![[Archivos/04a-p44-tipos-interaccion.png]]
-
-**El ejemplo canónico del deck** (p. 42): el diagrama de secuencia de la biblioteca, para comparar con el tuyo.
-
-![[Archivos/04a-p42-biblioteca.png]]
+> [!info] 💡 Restricciones de tiempo
+>
+> **Restricciones de tiempo** (p. 43): el deck muestra cómo anotar una restricción de tipo `time` sobre un mensaje, para cuando el orden no basta y necesitas el plazo.
+>
+> ![[Archivos/04a-p43-restricciones-tiempo.png]]
+>
+> **Tipos de interacción** (p. 44): el deck distingue los mensajes **síncrono**, **asíncrono** y de **retorno**, y el mensaje tipo *choice* (la bifurcación). El aviso del propio deck: *algunas versiones de UML usan el mismo símbolo para los casos que aquí se distinguen*.
+>
+> ![[Archivos/04a-p44-tipos-interaccion.png]]
+>
+> **El ejemplo canónico del deck** (p. 42): el diagrama de secuencia de la biblioteca, para comparar con el tuyo.
+>
+> ![[Archivos/04a-p42-biblioteca.png]]
 
 ### 🎭 4. Actividad: el Flujo con Decisiones
 

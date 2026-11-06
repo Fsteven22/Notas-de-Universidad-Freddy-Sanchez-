@@ -770,8 +770,10 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 >    provincial, con JRV, actas de escrutinio y padrón del Registro Civil). El acrónimo se conserva
 >    porque es como lo llama la cátedra y aparece en el Control03; el título ahora dice que es un
 >    "caso" y el significado completo queda en la primera línea de cada nota.
-> 2. **Las 2 reconstrucciones por contexto** (`â–` → `▓` y `â€"` → `—`, en ASCII-art de Álgebra Lineal
->    y Cálculo Vectorial): los bytes no existen en git ni en OneDrive. Si prefieres otro carácter, es 1 commit.
+> 2. ~~**Las 2 reconstrucciones por contexto**~~ ✅ **HECHO** (05/11, `opencode-site`): el dueño eligió
+>    **ASCII puro**: el relleno del triángulo pasa de `▓` a `#` y la línea base de `—` a `=`.
+>    Son **12 líneas de ASCII-art en 3 notas** de Álgebra Lineal / Cálculo Vectorial (los bytes originales
+>    no existen ni en git ni en OneDrive, así que se reconstruyen por contexto).
 
 > [!warning] Hallazgo para `opencode` (zona ajena, no lo toqué)
 >
@@ -856,7 +858,81 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 >   marcadores externos a esas URLs quedan obsoletos (mismo aviso que el bloque de `opencode`).
 > - **Tags** `siel` intactos: el acronimo sigue siendo el nombre del caso.
 
-**PUSHEADO** — el hash va en el mensaje del commit.
+**PUSHEADO `9e82665f`** — rama `sesion/opencode-site` -> `master` (con merge de `origin/master`).
+
+---
+
+### `opencode-site` - reformulacion de las notas de la Unidad 3 (patrones) - 05/11/2026
+
+> [!success] Los titulos de U3 decian una cosa y las notas mostraban otra
+>
+> | Antes | Ahora | Por que |
+> |---|---|---|
+> | `01 - Qué es un patrón y encapsular lo que varía` | `01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo` | la nota es la definicion GoF, las 3 familias, los 2 principios y cuando aplicar un patron |
+> | `02 - Patrones esenciales I, Strategy Decorator Observer` | `02 - Strategy, Decorator y Observer` | "esenciales I" no decia nada; son los 3 patrones sin `if`, sin herencia y sin acople |
+> | `03 - Patrones esenciales II, creación y estructura` | `03 - Factory, Adapter, Facade, Singleton y Template Method` | **el titulo mentia**: la nota contenia Template Method, que es de comportamiento, no estructural |
+>
+> - **3 notas renombradas** con `git mv` (git los registra como renombre, no como borrado + alta) y
+>   **H1 actualizados**: cada uno dice que resuelve la nota.
+> - **13 wikilinks reescritos** en 6 notas: mapa de contenido (`Diseno de Software.md`), indice de
+>   U3, enlaces "anterior/siguiente" entre notas y los 3 enlaces de la nota del PDF.
+> - **Los 9 SVG de U3**: ruta corregida de `../Diagramas/` a `../Unidad 0 - Guias y Ejercicios/Diagramas/`
+>   (la vieja resolvia a una carpeta que no existe) y **rotulo `*Figura: ...*` debajo de cada
+>   diagrama**, que antes no tenian ninguno: no se podia saber que mostraba cada uno.
+> - **El PDF de las capturas embebido** en la nota 03 (`![[.../Patrones creacionales - capturas de
+>   clase.pdf]]`), antes solo habia un enlace a la nota del material.
+> - **LEEME de la Unidad 0**: los 5 libros con copyright que salieron del repo en `ca2891d1` pasan a
+>   texto plano; sus wikilinks quedaban rotos.
+>
+> **Slugs del sitio** (cambian los 3):
+> `/unidad-3-patrones-de-diseno/01-que-es-un-patron-de-diseno-gof-y-cuando-aplicarlo/`,
+> `/02-strategy-decorator-y-observer/`, `/03-factory-adapter-facade-singleton-y-template-method/`.
+> Los links internos se regeneran; los marcadores externos a las URLs viejas quedan obsoletos.
+
+> [!warning] Hallazgos para `opencode` (zona ajena, no los toque)
+>
+> 1. **2 `qa_links` BAD en Matematicas Discretas** (`Universidad/3er Semestre/Matematicas
+>    Discretas/00 - Leeme Unidad 0.md`): los enlaces a `LIBRO DE APOYO Discrete Mathematics and Its
+>    Applications by Kenneth Rosen (z-lib.org).pdf` y `LIBRO GUIA ... Johnsonbaugh (z-lib.org).pdf`
+>    quedaron rotos porque los libros con copyright salieron del indice de git en `ca2891d1` (siguen
+>    en el vault local, no se publican). En DSW lo resolvi pasando los 5 libros a texto plano;alli
+>    hace falta lo mismo.
+> 2. **52 wikilinks con ruta rota quedan en 14 notas de DSW** (los que habian reportado como 113):
+>    los de U1, U2, U4 y U5 siguen embebiendo `[[../Diagramas/dsw-u1-...svg]]` en vez de
+>    `../Unidad 0 - Guias y Ejercicios/Diagramas/`. Yo arregle los 9 de U3 (los que estaban en las
+>    notas de patrones); los 52 restantes son de las notas de las otras unidades. En el sitio no se
+>    rompen (el sync resuelve por nombre), pero **en Obsidian siguen rotos**.
+
+> [!success] Decision del dueño sobre los caracteres reconstruidos
+>
+> Las **2 reconstrucciones por contexto** (`â–` y `â€"`, en ASCII-art de Algebra Lineal y Calculo
+> Vectorial): los bytes no existen ni en git ni en OneDrive, asi que se reconstruyeron por contexto.
+> El dueño eligió **ASCII puro**: relleno del triangulo `#` (en vez de `▓`) y linea base `=` (en vez de `—`).
+> **12 lineas en 3 notas** de Algebra Lineal / Calculo Vectorial.
+
+**PUSHEADO `a684ffa8`** - commit `286276e3` + `d50e69c1`, merge con `origin/master` -> `master`.
+
+---
+
+### `opencode-site` - ASCII puro en el ASCII-art reconstruido - 05/11/2026
+
+> [!success] Decision del dueño aplicada
+>
+> El dueño eligió **ASCII puro** para los 2 caracteres que hubo que reconstruir por contexto
+> (los bytes originales **no existen ni en git ni en OneDrive**: el primer commit ya venia corrupto):
+> el relleno del triangulo pasa de `▓` a `#` y la linea base de `—` a `=`.
+>
+> - **12 lineas de ASCII-art en 3 notas**:
+>   `Algebra Lineal / 02 - Combinacion lineal.md` (triangulo de combinaciones convexas),
+>   `Algebra Lineal / 04 - Suma de subespacios.md` (ejes x y U) y
+>   `Calculo Vectorial / 02 - Dominio y Rango.md` (region bajo la parabola).
+> - El resto del arte del vault (`•`, `▲`, `→`, `↑`, `•`) queda igual: son simbolos
+>   originales, no reconstrucciones.
+> - Los 2 puntos que quedaban pendientes del dueño quedan marcados como **HECHO** en este LEEME.
+
+**PUSHEADO `6e402cfa`** - rama `sesion/opencode-site` -> `master`.
+
+---
 
 ### `opencode` - los 3 pendientes del dueño resueltos (publicar índices, consolidar Inglés I, libros con copyright) - 05/11/2026
 
@@ -912,3 +988,294 @@ de OneDrive y pusheado a `origin/master`. `master` = `origin/master` = `origin/s
 > `master` avanzó dos veces durante el trabajo (`7282240`/`4977cd2`, sesión `opencode-site`: PDF de patrones
 > creacionales y fix de títulos de callouts). Se integró **con merge, nunca rebase**: `0ef8694`.
 > `master` = `origin/master` = `origin/sesion/opencode` = `0ef8694` al cierre de este bloque.
+
+### `opencode` - regla de estilo: nada de texto plano fuera de callouts - 05/11/2026
+
+> [!success] Los pies de figura planos pasan a callouts
+>
+> El dueño señaló que el rótulo plano de las figuras no le gusta: *"no me gusta el texto plano sin
+> callout"*. Esos rótulos los había añadido la sesión `opencode-site` en `286276e` (los 9 SVG de la
+> Unidad 3 de DSW) como texto plano `*Figura: ...*` debajo de cada diagrama.
+>
+> - **9 rótulos convertidos en callout** (`99dc488`), con la convención que ya usaba la misma
+>   materia (`> [!info] 🖼️ …`): los 3 de `01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo.md`,
+>   los 3 de `02 - Strategy, Decorator y Observer.md` y los 3 de
+>   `03 - Factory, Adapter, Facade, Singleton y Template Method.md`. El texto no se pierde: pasa
+>   dentro del callout, sin la palabra "Figura:" y sin cursivas.
+> - **10 callouts reparados en `Machine Learning.md`** (`Fundamentos de FP`): 2 encabezados estaban
+>   **rotos** (`[!bug]-` y `[!abstract]-` sin `>`, salían como texto literal) y los otros 8 tenían el
+>   **cuerpo fuera de la caja** (encabezado citado, tablas y párrafos sin citar). Ahora los 10 son
+>   callouts de verdad, con separador `>` tras el título y el cuerpo citado.
+>
+> [!warning] Lo que queda con texto plano (medido, no aplicado)
+>
+> Inventario con `inventario_plano.py` sobre las 825 notas: **351 líneas de prosa real** fuera de
+> callouts en **~60 notas**, casi todas de **Física Mecánica** (prácticas y fundamentos),
+> **Comunicación** (Unidad 3: precisión, concordancia, APA), **Fundamentos de Programación**
+> (Regex y manejo de errores), **DSW** (U2 y el PDF de patrones) y **Preuniversitario**
+> (MOOC de Comunicación, MOOC de Inglés). Los `**Tags:**`, las display math (`$$`) y las tablas ya
+> se contaron aparte: no son prosa. **No se tocó nada de esto**: es un barrido de ~60 notas que
+> requiere decidir tipo de callout y título para cada bloque, y el dueño tiene que confirmarlo.
+>
+> [!info] Arreglo de fondo en la bibliografía con copyright
+>
+> Al revisar los enlaces rotos que había dejado la otra sesión (`qa_links` targets=9875 bad=2), salió
+> un problema real: el LEEME de **Matemáticas Discretas** seguía **enlazando** sus 2 libros
+> (Johnsonbaugh y Rosen), y esos archivos ya no están en el repo (`ca2891d`), así que en el sitio
+> esos links iban a 404. Ahora van **como texto plano**, igual que hizo la sesión de DSW con sus 5
+> libros (`e94d54c`).
+>
+> De paso, `qa_assets_huerfanos.py` ahora excluye los assets de `Universidad/_no-publicar.txt`:
+> esos archivos no se publican, así que no pueden estar referenciados y no deben contar como
+> huérfanos. Con eso el QA vuelve a **0 huérfanos** (2918 assets publicables; 57 excluidos).
+>
+> [!note] QA de esta ronda
+>
+> `qa_links.py` targets=**7951** bad=**0** · `qa_assets_huerfanos.py` **2918 assets, 0 huérfanos**
+> (+57 de `_no-publicar.txt` excluidos) · `qa_omitidas.py` **825 revisadas / 822 publican / 2 omitidas /
+> 1 revisar** · 0 pies de figura planos fuera de callout en todo `Universidad/`.
+
+---
+
+### `opencode-site` - la tipografia incrustada de los SVG: recorte automatico - 05/11/2026
+
+> [!warning] LEER ANTES DE GENERAR UN SVG (o de compilar uno con `mmdc`)
+>
+> **Mermaid CLI incrusta la tipografia "Recursive Variable" dentro de cada SVG que genera**: 4 reglas
+> `@font-face` con la fuente en base64 (`data:font/woff2;base64,…`) + su licencia OFL. Son **161 KB de
+> base64 por archivo**, el **90% del peso** de un diagrama. Con los 2.126 SVG del vault eran
+> **~340 MB de fuente repetida**.
+>
+> La fuente va incrustada **a proposito**: un SVG mostrado con `<img src="…svg">` se dibuja en un
+> contexto aislado, no puede cargar el CSS de la pagina ni una fuente externa. **Si se le quita la
+> fuente, las etiquetas del diagrama salen con la tipografia del sistema** y el diagrama se ve distinto.
+> Por eso no se quita: se recorta.
+>
+> **Regla para las demas sesiones:** todo SVG nuevo que salga de `mmdc` tiene que pasar por
+> `subconjuntar_fuente.py` (o generarse con `mmdc_ligero.py`, que lo hace solo). Si no, el SVG entra
+> al repo con 161 KB de fuente repetida y hay que volver a recortarlo despues — que es exactamente
+> el trabajo que se hizo el 05/11 sobre los 2.126 SVG existentes.
+>
+> | Script (en `Universidad/Herramientas/SVG-Pipeline/`) | Que hace |
+> |---|---|
+> | `subconjuntar_fuente.py` | Recorta la fuente incrustada a **los glifos que ese diagrama usa** (texto visible + `aria-label`/`title`). El SVG se ve igual (misma variable font, mismos avances y contornos) y pasa de ~182 KB a ~36 KB. Verifica que la cobertura de glifos no cambie y que se conserve la licencia OFL; si algo no cuadra, **deja el archivo como esta**. CLI: `py -3.12 subconjuntar_fuente.py <carpeta>` (con `--dry-run` solo mide). |
+> | `mmdc_ligero.py` | **Reemplazo directo de `mmdc`**: hace lo mismo y ademas recorta la fuente del SVG que genera. `py -3.12 mmdc_ligero.py -i x.mmd -o x.svg -b white` (acepta todos los argumentos de `mmdc`). |
+> | `qa_svg_fuente.py` | QA de la fuente incrustada: (a) **cobertura** — todo caracter que el diagrama muestra y que la fuente declara en su `unicode-range` tiene que estar de verdad en la fuente (si alguien edita un SVG a mano y anade una etiqueta con un caracter que la fuente ya no trae, ese glifo saldria con la tipografia del sistema); (b) **peso** — avisa de los SVG que todavia llevan la tipografia completa. Los emoji y simbolos que **nunca** estuvieron en la fuente (`✅ ❌ 🧩 🔴 →`) se dibujan con la tipografia del sistema a proposito: **no cuentan como fallo**. |
+>
+> Requisito: `py -3.12 -m pip install fonttools brotli`.
+
+> [!success] Lote aplicado a todo el vault (05/11/2026)
+>
+> | | Antes | Despues |
+> |---|---|---|
+> | SVG con tipografia incrustada | 2.126 | 2.126 (recortados) |
+> | Peso de los SVG | **421,8 MB** | **124,3 MB** (**−71%**, ahorro ~297 MB) |
+> | Peso medio por SVG | ~182 KB | ~36 KB |
+> | SVG sin tipografia incrustada (intactos) | 249 | 249 |
+> | Rechazados / errores | — | **0** |
+>
+> - El **sitio publicado** baja de **961 MB** a ~660 MB (`dist`) y cada diagrama carga ~5x mas rapido.
+> - **El vault no cambia de tipografia:** se conserva la misma variable font (eje `wght` 300-1000),
+>   los mismos avances (`hmtx`), la misma geometria (`glyf`, composites resueltos), los mismos deltas
+>   variables (`gvar`) y las mismas tablas de ejes (`avar`/`fvar`). Medido en Chromium: `N` = 9,1 px y
+>   `Necesidad` = 70,7 px **identicos** antes y despues. La licencia OFL sigue incrustada.
+> - **El SVG sigue siendo autonomo**: funciona igual en `<img>`, en Obsidian, descargado o embebido.
+> - **Verificacion por archivo:** la cobertura de glifos antes y despues tiene que ser identica y
+>   **ningun glifo que la fuente original traia puede perderse**; si no, el script **no toca el
+>   archivo**. 0 rechazos en el lote.
+> - **Los huecos de la fuente original** (glifos que el diagrama usa y que "Recursive Variable" no
+>   trae: `‴` prima triple, ZWJ, `ᵢ`, `‖`, emoji, `→`) se dibujan con la tipografia del sistema **ya
+>   hoy, antes y despues**: no es un cambio. El recorte los registra en el propio SVG
+>   (`/*fuente-sin-glifo:U+2034*/`) para que el QA no los confunda con una regresion.
+>   **92 SVG** tienen algun hueco de esos.
+> - **QA final sobre todo el vault** (`qa_svg_fuente.py`): **2.375 SVG revisados · 2.126 con fuente
+>   recortada (ok) · 0 con la fuente completa · 0 con glifos declarados y ausentes · 92 con huecos
+>   preexistentes documentados** → **exit 0**.
+> - **Render real medido en Chromium** (el SVG en linea, con su CSS y su fuente): **12/12 elementos de
+>   texto con el mismo ancho y alto**, 580,56 px de ancho total en original y subconjuntado.
+> - **Reversible:** es un commit. `git revert <hash>` deja el vault como estaba.
+
+> [!info] Donde vive la regla
+>
+> El detalle completo esta en `Universidad/Herramientas/README.md` (seccion "la tipografia incrustada de
+> los SVG"). El sitio **no cambia**: el sync sigue copiando el SVG tal cual, asi que **Vercel no
+> necesita Python** ni `fontTools`.
+
+**PUSHEADO `7604b35c`** — commits `c151d9d0` (los 2.126 SVG) + `12cc58df` (las 3 herramientas, el
+README y este LEEME), con merge de `origin/master` (7 commits de `opencode`: material SBD, libros de
+MatDisc y callouts). El unico conflicto fue este LEEME: resuelto **conservando ambos bloques**
+(el de `opencode` y este). Rama `sesion/opencode-site` -> `master`.
+### `opencode` - barrido de callouts: prosa dentro de callouts - 05/11/2026
+
+> [!success] Barrido de 134 callouts en 36 notas (0955d3d4)
+>
+> Toda la prosa explicativa bajo un encabezado se cita ahora dentro de un
+> callout `> [!tipo] Emoji Titulo` que absorbe listas, tablas y codigos
+> contiguos. Resultado: inventario_plano paso de ~200 líneas de prosa real a ~0
+> (las restantes son exclusiones deliberadas: **Tags:**, flashes SR,
+> navegación `-> [[…]]`, LaTeX roto y `Herramientas/`).
+>
+> - **Títulos con texto**: 134/134 tienen tipo + emoji + título con texto (0 usan solo emoji).
+> - **72 overrides** aplicados por `ruta@línea_original`, 0 huérfanos; ningún título repetido sin desambiguar.
+> - **3 callouts partidos** reparados (`Interacciones y Fuerzas.md` y `Leyes de Newton.md`): se citó la prosa intermedia con `>` para reconectar el callout.
+> - **Artefactos resueltos**: `01 – Integral triple.md` (basura de IA borrada) y `02 – Volumen bajo una superficie.md:596` (`> ¡Error! Revisar…` citado).
+> - `Parts of a Sentence.md`: listas `4.`/`5.` re-citadas dentro del callout.
+>
+> [!info] Qué NO se tocó (por decisión del dueño)
+>
+> - Flashcards del plugin SR (`Q::A` + `<!--SR:…-->`): formato plano, intocable.
+> - Navegación `→ [[…]]` sin prosa y listas de wikilinks de índice.
+> - Fragmentos de LaTeX/código rotos, pies de figura en cursiva y material ajeno (`_texto/`, PDFs/PNG de clase, `Contenido Extra/`).
+> - Docs de `Herramientas/` (READMEs de scripts: no son material de estudio).
+>
+> [!warning] QA del barrido
+>
+> - `qa_links.py`: targets=7947 bad=0.
+> - `qa_assets_huerfanos.py`: 2918 assets, 0 huérfanos (+57 excluidos de `_no-publicar.txt`).
+> - `revisa_titulos.py`: 134 callouts, 0 problemas.
+> - `qa_omitidas.py`: 825 revisadas / 822 publican / 2 omitidas / 1 revisar.
+> - `fix_callout_overlap` / `fix_callout_nested` / `fix_callout_join`: sin regresiones (pegados=143, anidados=0, dispersos=1).
+> - Fences sin cerrar: 4 (preexistentes, no tocados).
+>
+> Commits atómicos en `sesion/opencode`: `0955d3d4` (barrido), `5f054df` (archivos restringidos fuera del índice de git, no pusheado aún). No se reescribe histórico (prohibido force-push/amend).
+
+
+---
+
+### `opencode` - renombrar los 19 leemes a "00 - Índice de Contenido" y fusionar el de SBD - 05/11/2026
+
+> [!success] Un solo índice por materia, con nombre consistente
+>
+> - **19 leemes → 18 índices.** Los `00 - Leeme Unidad 0.md` pasan a `00 - Índice de Contenido.md`
+>   y el H1 a `# 📂 Índice de Contenido — <materia>`. 17 se renombran en su lugar; los **2 de SBD**
+>   (raíz de la materia y `Unidad 0 - Guias y Ejercicios/`) se **fusionan en uno solo en la raíz**:
+>   `Universidad/3er Semestre/Sistema de Bases de Datos/00 - Índice de Contenido.md`.
+> - **Enlaces actualizados:** 20 wikilinks en 18 notas + 3 menciones en texto plano.
+>   **0 referencias residuales** al nombre viejo en todo `Universidad/`.
+> - El índice nuevo de SBD es **explicativo**: qué es cada archivo, para qué sirve y qué no se publica.
+
+> [!danger] Hallazgo de fondo: 68 medios de SBD NO se publicaban
+>
+> El sync solo copia un asset si **alguna nota publicada lo referencia con un wikilink real**
+> (`site/scripts/sync-vault.mjs:320`, gate `referidos`). Los índices anteriores tenían los archivos
+> de SBD **en código inline** (`` `Exámenes/2019-2PAO-2E-SBD.pdf` ``), así que nunca se subían:
+> el ZIP, los 10 PPTX, 16 exámenes, el proyecto y las participaciones estaban en el vault y **no en la web**.
+>
+> - **Antes:** SBD 179/247 medios publicados. **Después:** **245/247**. Los 2 que faltan son el video
+>   (`VideoBSDPrimerParcial.mp4`, 13 MB) y el libro *Database Systems…* — los 2 en `_no-publicar.txt`
+>   **por decisión del dueño**, no por error.
+> - El **ZIP de scripts**, `sakila-db.zip` y `world-db.zip` ahora se publican (antes 0 de 3).
+> - Los 12 SVG `u2-02-01`…`u2-02-12` no los embebía ninguna nota: se listan en el índice para que
+>   tampoco queden colgados. Los otros 100 diagramas de trabajo de U1/U2 **no se repiten** en el
+>   índice porque ya están embebidos donde corresponde.
+
+> [!warning] 2 trampas del sync que conviene no volver a pisar
+>
+> 1. **En tablas markdown, el wikilink va SIN alias.** `[[archivo.pdf]]` resuelve y renderiza
+>    `[📎 archivo.pdf](url)`; `[[archivo.pdf\|alias]]` **no** resuelve (queda `**alias**`).
+>    El separador de alias debe ser `\|` para no romper la tabla, y el sync no lo entiende.
+>    Los alias solo funcionan **fuera** de tablas (listas y callouts).
+> 2. **Los assets se resuelven por nombre, no por ruta** (`resolveAssetInfo`, `sync-vault.mjs:684`):
+>    el wikilink puede llevar la ruta completa, pero lo que decide es el basename. Por eso
+>    `dupes_basename.py` da **0 duplicados** en SBD (296 medios, 296 nombres únicos).
+
+> [!info] QA de esta ronda
+>
+> - `qa_links.py` (raíz `Universidad`): targets **7951 → 8029**, **bad=0**.
+> - Sync de prueba en disco local (`site-test`, sin tocar `site/` del repo): **822 notas publicadas ·
+>   2 omitidas · 2.987 assets referenciados**; assets totales **2.922 → 2.988** (400,5 → 444,1 MB).
+> - `qa_links.py` del repo completo: no se corrió (los 39 placeholders de `Clippings/` y `site/`
+>   son deliberados, el QA los saltea por defecto).
+
+> [!question] DECISIÓN PENDIENTE DEL DUEÑO: los 47 índices de unidad
+>
+> Hay **47 notas `00 - Índice Unidad N`** en el vault (14 con material propio, 33 redundantes).
+> Medición recursiva de solapamiento contra la nota puente de cada materia:
+>
+> | Materias | Índices | Links exclusivos del índice | Veredicto |
+> |---|---|---|---|
+> | Ingles I, Comunicación, Cálculo Vectorial, DSW, FESD, Ingles III, MatDisc, SBD | 33 | 0–1 | **100% redundantes** |
+> | MOOC Inglés, MOOC Comunicación, Preuniversitario Matemáticas | 14 | 9 / 20 / 83 | **112 links únicos** |
+>
+> - **Opción A (recomendada):** borrar los 33 índices redundantes de las 8 materias; trasplantar antes
+>   los **25 embeds SVG exclusivos** a las notas puente (si no, se pierden del sitio).
+>   En Preuniversitario y MOOC hay que **trasplantar 112 links** antes de borrar los 14.
+> - **Opción B:** dejarlos como están.
+>
+> No se borró nada: **falta tu decisión**.
+
+> [!note] Aviso para `opencode-onedrive` (zona `site/scripts/sync-vault.mjs`)
+>
+> El comentario de `site/scripts/sync-vault.mjs:224` cita `00 - Leeme Unidad 0` como ejemplo de
+> homónimo. Ese nombre ya no existe: ahora es `00 - Índice de Contenido`. **No toqué el archivo**
+> (zona de `opencode-onedrive`): el comentario queda desactualizado, es cosmético.
+
+> [!note] Lo que NO se tocó (cambios ajenos)
+>
+> `Universidad/00 - Mapa PAO 2-2026.md` (borrado, sin commitear) · `Recursos visuales.md` de
+> Matemáticas Discretas · las carpetas `_texto/` · los PDF sin trackear de MatDisc y DSW ·
+> los 2 PDF de SBD **sí** entraron al repo porque el índice nuevo los enlaza
+> (`3.4 Operaciones Derivadas-agregacion.pdf`, `BD04 DDL_dml_create_alter_drop.pdf`).
+
+**PUSHEO EN CURSO** — commit `bf15a059` (43 archivos: 17 renombres, 2 borrados, 1 índice nuevo,
+21 notas con enlaces actualizados, 2 PDF de SBD). Falta el `PUSHEADO <hash>` al confirmar el push.
+
+**PUSHEADO `e8c19ba4`** — commits `bf15a059` (el renombrado y la fusión) + `e8c19ba4` (este bloque
+del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
+### `opencode` - barrido de tablas + pedido de rebuild del sitio - 05/11/2026
+
+> [!success] Las 147 tablas markdown que quedaban fuera de callouts ya estan dentro
+>
+> Cierre de la regla de estilo del dueno ("nada de texto plano fuera de callouts"):
+> las tablas tambien contaban. Medicion inicial: **133 bloques de tabla fuera de todo
+> callout en 42 notas** (10 de ellos "huerfanos", con un callout justo encima y la
+> tabla colgada). Resultado: **0 tablas fuera de callout en todo el vault**.
+>
+> - **35 absorbidas** en el callout que ya tenian encima (mismo encabezado): la tabla
+>   se cita dentro (`> | ...`) y el contenido del callout se conserva intacto.
+> - **98 convertidas** en callout nuevo, con el titulo del encabezado mas cercano
+>   (mismo criterio que el barrido de prosa) y desambiguacion con el encabezado
+>   padre si el titulo se repite en la nota.
+> - **14 mas** en el `00 - Indice de Contenido.md` de Base de Datos, que arrastro las
+>   tablas del LEEME de U0 al fusionarlo (commit `bf15a059` de `master`).
+> - **2 overrides** de titulo: `a. Partes del Equipo` (titulo de 69 chars) y
+>   `Tabla Resumen de Criterios - Resumen Visual Completo` (colision con un callout
+>   previo de la misma nota).
+>
+> [!info] Conflictos con otra sesion (resueltos a mano)
+>
+> - `master` habia renombrado los 19 LEEMEs a `00 - Indice de Contenido` y fusionado
+>   el de SBD U0, **borrando** `3er Semestre/Sistema de Bases de Datos/Unidad 0 -
+>   Guias y Ejercicios/00 - Leeme Unidad 0.md` (que nosotros habiamos citado en
+>   callouts). Se **acepto el borrado** (decision de `master`) y se reaplico el
+>   formato de callouts/tablas sobre el archivo que quedo.
+> - La prosa real del vault quedo en **206 lineas** (de 412 en el baseline
+>   `3758a0db`), sin regresiones: lo que queda son exclusiones deliberadas
+>   (**Tags:**, flashcards SR, navegacion `-> [[...]]`, LaTeX/codigo roto y
+>   `Herramientas/`).
+>
+> [!warning] QA del barrido de tablas
+>
+> - Tablas fuera de callout: **133 -> 0** (y 14 -> 0 en el indice fusionado).
+> - `qa_links.py`: targets=**8041** bad=**0**.
+> - `qa_omitidas.py`: **824 revisadas / 822 publican / 2 omitidas / 0 revisar**.
+> - Callouts: pegados=**143** (preexistente), anidados=**0**, dispersos=**1**
+>   (preexistente). Fences sin cerrar: **4** (preexistentes).
+> - Validador de los 103 callouts nuevos: **0 errores** (todos con tipo, emoji y
+>   titulo con texto, con separador `>` y la tabla citada entera).
+>
+> [!todo] `opencode-site` - falta el rebuild del sitio
+>
+> El sitio publicado (`neonotes-espol.vercel.app`) todavia no tiene este trabajo.
+> Con lo que hay ahora en `master` (`11a26057`) :
+>
+> - **822 notas publicables** (de 824 revisadas; 2 omitidas por copyright).
+> - **42 notas** con las tablas dentro de callouts + **37 notas** con la prosa
+>   citada (el barrido de `0955d3d4` + el fix `8a46ae11`).
+> - **1.916 callouts** que ya tienen titulo con texto pero sin emoji (preexistente,
+>   fuera del alcance aprobado): si `opencode-site` normaliza ese formato, el sitio
+>   queda 100% con la casa.
+>
+> Pedido: rebuild del sitio y verificacion de que las tablas dentro de callouts
+> renderizan igual que en Obsidian (van como `> | ...`).
+

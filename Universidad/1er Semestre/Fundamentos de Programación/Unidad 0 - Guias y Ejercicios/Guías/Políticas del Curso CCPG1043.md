@@ -11,12 +11,14 @@ tags: [CCPG1043, políticas, syllabus]
 
 ## 📬 Contacto
 
-| Canal | Uso |
-|---|---|
-| ✉️ `caencede@espol.edu.ec` | **Medio de contacto formal** |
-| 💬 MS Teams | Medio de contacto informal |
-| 🚪 Oficina 11F-115 | Previa planificación |
-| ⛔ AV | Preferible **no** escribir por AV |
+> [!info] 📊 Contacto
+>
+> | Canal | Uso |
+> |---|---|
+> | ✉️ `caencede@espol.edu.ec` | **Medio de contacto formal** |
+> | 💬 MS Teams | Medio de contacto informal |
+> | 🚪 Oficina 11F-115 | Previa planificación |
+> | ⛔ AV | Preferible **no** escribir por AV |
 
 ## 📊 Ponderación de calificaciones
 
@@ -56,7 +58,7 @@ tags: [CCPG1043, políticas, syllabus]
 
 > [!tip] Enlaces rápidos
 > - [[../../Bienvenida y Syllabus Fundamentos de Programación|👋 Bienvenida y Syllabus]]
-> - [[../../00 - Leeme Unidad 0|📂 Portal de la Unidad 0]]
+> - [[../../00 - Índice de Contenido|📂 Portal de la Unidad 0]]
 > - [[../Material de clase/Material de clase (slides del profesor)|📽️ Slides del profesor]]
 
 **Tags:** #CCPG1043 #políticas #syllabus
