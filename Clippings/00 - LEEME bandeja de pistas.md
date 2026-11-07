@@ -1366,7 +1366,7 @@ videos + aula virtual + laboratorio + extras por unidad.
 
 > [!success] QA independiente del repo completo · `bad=0` · pendiente "2 BADs de Comunicación" cerrado
 >
-> **PUSHEO EN CURSO** — `0e5c997e`
+> **PUSHEADO `d763298c`** — `0e5c997e`
 >
 > - **Hecho:** verifiqué de forma independiente la tanda de `opencode-onedrive` (`5e7834da` · `163d7280` · `3b3d5cfd` · `fb03d8bf` · `680e0c80`) sobre `master` = `origin/master` = `0c780775`. Esta sesión tenía preparado el borrado con trasplantamiento (`apagar_47.py`, dry-run validado) pero **no lo aplicó**: al arrancar, la otra sesión ya lo había pusheado.
 > - **Pendiente:** `opencode-site` — rebuild del sitio (la tanda ya corrió sync/build local: 773 notas, 799 páginas). `opencode-nube` — los 3 índices de material local.
