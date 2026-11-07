@@ -1457,3 +1457,39 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 > - **822 notas publicables** en el vault (sin cambios por esta tanda).
 > - Pedido: rebuild del sitio y verificación de que las nuevas notas renderizan correctamente.
 
+
+
+### `opencode` - limpiar carpetas de archivos de las unidades de SBD - 07/11/2026
+
+> [!success] Las carpetas `Archivos/` ya no viven dentro de las unidades de contenido
+>
+> Se movieron los recursos de archivo de las unidades de contenido a
+> `Unidad 0 - Guias y Ejercicios/Archivos/`, que es su lugar correcto:
+>
+> | Recurso | De | A |
+> |---|---|---|
+> | `bd-s06-p{10,11,13,14,17,18}.png` (6 imágenes de diapositivas SQL) | `Unidad 4 - SQL/Archivos/` | `Unidad 0 - Guias y Ejercicios/Archivos/SQL/` |
+>
+> > [!info] Referencias actualizadas
+>
+> - **Guía de Problemas 3** (en `Unidad 4 - SQL/`): las 6 referencias
+>   `[[Archivos/bd-s06-pXX.png]]` ahora apuntan a
+>   `[[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-pXX.png]]`
+> - **Guía de Problemas 2** (en `Unidad 3 - Álgebra Relacional/`): las 9 referencias
+>   `[[Archivos/bd-s05-pXX.png]]` ahora apuntan a
+>   `[[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-pXX.png]]`
+>
+> > [!info] ¿Qué no hay en las unidades ahora?
+>
+> - **0 carpetas `Archivos/` dentro de `Unidad 3 - Álgebra Relacional` ni
+>   `Unidad 4 - SQL`** (se eliminaron tras mover su contenido)
+> - **0 carpetas `_texto/` en todo SBD** (no había ninguna)
+> - **0 carpetas `Unidad 3 - SQL y PL-SQL` antigua** (ya se eliminó en la
+>   reestructuración previa)
+>
+> > [!todo] QA tras la limpieza
+>
+> - `qa_links.py`: targets=7523 bad=0 (sin enlaces rotos por los movimientos)
+> - Todas las referencias `[[Archivos/...]]` en notas de SBD resuelven a un
+>   archivo real en disco
+
