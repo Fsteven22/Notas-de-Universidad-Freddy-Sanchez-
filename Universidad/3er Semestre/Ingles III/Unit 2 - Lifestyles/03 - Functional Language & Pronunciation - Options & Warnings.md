@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** talking through options, warnings (8.3), *I guess* (insider) y /ɜː/ vs /ʊ/.
 
-![[../Diagramas/en3-u2-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-04-01-graph.svg]]
 
 ---
 
@@ -199,7 +199,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u2-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

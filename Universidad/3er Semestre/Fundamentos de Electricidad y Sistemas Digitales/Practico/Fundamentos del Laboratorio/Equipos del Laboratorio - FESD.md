@@ -29,7 +29,7 @@ dg-publish: true
 > - **Puntos grandes**: aislados entre sí eléctricamente.
 > - **Puntos pequeños alrededor de un punto grande**: comparten potencial con él (arriba, abajo, izquierda, derecha).
 > 
-> ![[../../Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
 > ![[Pasted image 20260519230457.png]]
 > 
 > > ⚠️ Los puntos grandes están **aislados entre sí**. No confundir con el protoboard.

@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** debate pets (12.4), summary/response, national moment y Review 4.
 
-![[../Diagramas/en3-u6-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-05-01-graph.svg]]
 
 ---
 
@@ -150,7 +150,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u6-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -21,7 +21,7 @@ tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 >
 > **En esta nota:** el guion nuevo completo con anclas en negrita (sección 📜, ~400 palabras ≈ 3:00 a ritmo B1), vocabulario, estructura en 6 slides, drill de Q&A y checklist.
 
-![[../../Diagramas/en3-u1-11-01-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-11-01-graph.svg]]
 
 ---
 
@@ -249,7 +249,7 @@ tags: [ingles-iii, speaking, presentaciones, IDIG1008]
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/en3-u1-11-02-mind.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-11-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

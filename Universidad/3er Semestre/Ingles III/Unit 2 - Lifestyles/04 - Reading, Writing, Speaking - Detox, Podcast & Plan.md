@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** listening detox (8.4), énfasis en pronunciación, podcast comment y plan 8.5.
 
-![[../Diagramas/en3-u2-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-05-01-graph.svg]]
 
 ---
 
@@ -174,7 +174,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u2-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

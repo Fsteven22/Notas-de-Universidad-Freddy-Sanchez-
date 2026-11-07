@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** *must / mustn't / have to / don't have to / should* con fórmula, tabla 1×1, método para discutir costumbres, errores clásicos y drill.
 
-![[../../Diagramas/en3-u1-07-01-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-07-01-graph.svg]]
 
 ---
 
@@ -118,7 +118,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/en3-u1-07-02-mind.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-07-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

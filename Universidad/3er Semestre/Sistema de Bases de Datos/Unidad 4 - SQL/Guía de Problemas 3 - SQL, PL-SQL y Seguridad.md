@@ -17,7 +17,7 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 >
 > Las soluciones del bloque A son propias (no hay solución oficial publicada del taller). En B/C/D se nota **dónde el enunciado deja detalles libres** (nombres de columnas, columnas extra ansiosas) y se elige un esquema asumido, declarado en cada bloque.
 >
-> Teoría base: consultas y agregación → [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] (σ = WHERE, γ = GROUP BY); normalización del campo `línea` → [[03 - Segunda y tercera forma normal]], [[04 - Normalización paso a paso]].
+> Teoría base: consultas y agregación → [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]] (σ = WHERE, γ = GROUP BY); normalización del campo `línea` → [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]], [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]].
 
 ![[../Unidad 0 - Guias y Ejercicios/Talleres/ENUNCIADO.pdf]]
 
@@ -30,25 +30,25 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 > [!info] 📖 El deck de cátedra: SQL y las restricciones (slides06, pp. 10-18)
 > El deck del Ing. Jorge Magallanes cierra el curso con SQL. Estas son las figuras que definen la sintaxis que usan los ejercicios de esta guía.
 
-![[Archivos/bd-s06-p10.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p10.png
 
-![[Archivos/bd-s06-p11.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p11.png
 
 > **Creación de tablas (p. 10):** `CREATE TABLE department (department_name VARCHAR(15), building VARCHAR(15), budget NUMERIC(12,2))` — el ejemplo base del deck.
 >
 > **Restricciones de clave (p. 11):** *"la especificación de primary key({L}) define la lista L de atributos de clave primaria"*, con `CREATE TABLE course (course_id VARCHAR(7), title VARCHAR(50) NOT NULL, …)`.
 
-![[Archivos/bd-s06-p13.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p13.png
 
-![[Archivos/bd-s06-p14.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p14.png
 
 > **Restricciones de integridad (p. 13):** *"una restricción de integridad (integrity constraint) asegura que un cambio realizado en la DB no conduzca a la pérdida de la consistencia de datos"*.
 >
 > **Restricciones solo de tabla (p. 14):** `not null` (columnas obligatorias) y `unique ({L})` (lista de atributos que debe ser única).
 
-![[Archivos/bd-s06-p17.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p17.png
 
-![[Archivos/bd-s06-p18.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p18.png
 
 > **Integridad referencial (p. 17):** *"las restricciones de clave foránea son la manera de asegurarnos que los valores de unos atributos coincidan con algún valor de la clave primaria en otra relación"*.
 >
@@ -809,8 +809,8 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Normalización del campo `línea` (B1): [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
-> - Operadores del álgebra que hace de fondo: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]]
+> - Normalización del campo `línea` (B1): [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
+> - Operadores del álgebra que hace de fondo: [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 
 ## 📚 Fuentes

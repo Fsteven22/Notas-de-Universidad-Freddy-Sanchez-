@@ -23,7 +23,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 > Primera nota de cada bloque: el punto de partida.
 > - [[Unidad 1 - Modelos de Datos y ER/01 - Dato, información y modelos de datos|01 - Dato, información y modelos de datos]] — *Unidad 1 - Modelos de Datos y ER*
 > - [[Unidad 2 - Modelo lógico y conversión/01 - Conversión MC a ML por cardinalidad|01 - Conversión MC a ML por cardinalidad]] — *Unidad 2 - Modelo lógico y conversión*
-> - [[Unidad 3 - SQL y PL-SQL/Guía de Problemas 3 - SQL, PL-SQL y Seguridad|Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — *Unidad 3 - SQL y PL-SQL*
+> - [[Unidad 4 - SQL/Guía de Problemas 3 - SQL, PL-SQL y Seguridad|Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — *Unidad 4 - SQL*
 
 > [!note] 🗂️ Notas de la materia
 > - [[Sistema de Bases de Datos|Sistema de Bases de Datos]] — índice de la materia.
@@ -32,6 +32,12 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 > - [[02 - Entidades, atributos, claves y relaciones]] — *U1 · Entidades y claves*
 > - [[03 - Modelo relacional, ERM y casos Tiny College]] — *U1 · Modelo relacional*
 > - [[04 - Normalización paso a paso]] — *U2 · Normalización*
+> - [[Unidad 3 - Álgebra Relacional/01 - Operadores Básicos|01 - Operadores Básicos]] — *U3 · Álgebra Relacional · Operadores Básicos*
+> - [[Unidad 3 - Álgebra Relacional/02 - Operadores Derivados y Joins|02 - Operadores Derivados y Joins]] — *U3 · Álgebra Relacional · Joins*
+> - [[Unidad 3 - Álgebra Relacional/03 - Renombre y Agregación|03 - Renombre y Agregación]] — *U3 · Álgebra Relacional · Renombre y Agregación*
+> - [[Unidad 4 - SQL/01 - Introducción a SQL|01 - Introducción a SQL]] — *U4 · SQL · Introducción*
+> - [[Unidad 4 - SQL/02 - DDL y DML|02 - DDL y DML]] — *U4 · SQL · DDL y DML*
+> - [[Unidad 4 - SQL/03 - Consultas Avanzadas|03 - Consultas Avanzadas]] — *U4 · SQL · Consultas Avanzadas*
 
 ---
 

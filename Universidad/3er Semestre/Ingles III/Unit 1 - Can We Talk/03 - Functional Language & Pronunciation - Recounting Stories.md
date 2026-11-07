@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart de recounting (7.3), back on track, /s/ vs /z/ y role play.
 
-![[../Diagramas/en3-u1-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-04-01-graph.svg]]
 
 ---
 
@@ -215,7 +215,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u1-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

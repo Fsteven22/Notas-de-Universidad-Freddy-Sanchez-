@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present (9.1) + past (9.2) + pasiva de autoridad + accuracy check.
 
-![[../Diagramas/en3-u3-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-03-01-graph.svg]]
 
 ---
 
@@ -174,7 +174,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u3-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

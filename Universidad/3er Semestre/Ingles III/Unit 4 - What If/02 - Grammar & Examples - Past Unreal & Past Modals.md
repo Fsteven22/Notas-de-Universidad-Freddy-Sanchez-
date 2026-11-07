@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** past unreal (10.1) + *should/could/might/couldn't have* (10.2) + accuracy checks.
 
-![[../Diagramas/en3-u4-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-03-01-graph.svg]]
 
 ---
 
@@ -172,7 +172,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u4-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

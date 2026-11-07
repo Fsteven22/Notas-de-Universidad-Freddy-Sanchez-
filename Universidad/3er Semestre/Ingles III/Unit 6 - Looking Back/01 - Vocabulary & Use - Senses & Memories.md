@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** senses (12.1), memory words (12.2) y drills pp. 152.
 
-![[../Diagramas/en3-u6-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-02-01-graph.svg]]
 
 ---
 
@@ -181,7 +181,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u6-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

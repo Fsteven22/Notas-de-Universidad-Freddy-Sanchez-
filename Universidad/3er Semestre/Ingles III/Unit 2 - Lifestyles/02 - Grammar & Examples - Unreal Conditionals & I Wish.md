@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present unreal (8.1) + *I wish* presente/futuro/pasado (8.2) + *wish vs hope*.
 
-![[../Diagramas/en3-u2-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-03-01-graph.svg]]
 
 ---
 
@@ -189,7 +189,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u2-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

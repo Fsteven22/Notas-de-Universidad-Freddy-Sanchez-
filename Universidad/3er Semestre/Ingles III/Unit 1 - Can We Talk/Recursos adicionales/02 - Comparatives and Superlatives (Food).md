@@ -18,7 +18,7 @@ dg-publish: true
 >
 > **En esta nota:** formación (cortos, largos, irregulares + ortografía), tabla 1×1, comidas del Ecuador y errores clásicos.
 
-![[../../Diagramas/en3-u1-08-01-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-08-01-graph.svg]]
 
 ---
 
@@ -119,7 +119,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/en3-u1-08-02-mind.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-08-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -76,33 +76,33 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > [!info] 📖 El deck de cátedra: cada operador con su figura (slides05, pp. 4-27)
 > El deck del Ing. Magallanes recorre el álgebra relacional operador por operador, con ejemplos numéricos. Estas son las figuras que corresponden al catálogo de arriba.
 
-![[Archivos/bd-s05-p5.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p5.png]]
 
 > **Selección (p. 5):** la condición puede ser uno o varios términos unidos con operadores lógicos (`and`, `∧`, `or`, `∨`). El ejemplo del deck: `σ type='laptop' ∧ model≥2005 (Product)`.
 
-![[Archivos/bd-s05-p7.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p7.png]]
 
 > **Proyección y composición (p. 7):** `π maker, type (σ type='laptop' ∧ model≥2005 (Product))` — el deck dibuja el **diagrama de ejecución** con los pasos numerados (3 → 2 → 1) y el resultado. Es la mejor explicación de por qué se proyecta *después* de filtrar.
 
-![[Archivos/bd-s05-p9.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p9.png]]
 
 > **Producto cartesiano (p. 9):** el ejemplo `Department ⨯ Course` del deck muestra por qué el producto casi nunca es lo que quieres — de ahí la necesidad del join.
 
-![[Archivos/bd-s05-p15.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p15.png]]
 
-![[Archivos/bd-s05-p16.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p16.png]]
 
-![[Archivos/bd-s05-p18.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p18.png]]
 
 > **Joins (pp. 15-18):** el deck presenta el **natural join** (`department ⨝ course`), el **left outer join** (`R ⟕ S`) y el **theta join** (`R ⨝c S`), con el resultado tabulado en cada caso.
 
-![[Archivos/bd-s05-p20.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p20.png]]
 
 > **División (p. 20):** *"es útil para consultas que incluye la expresión 'para todo' o 'para cada'"* — es el operador del ejercicio de la casa que pide los items ordenados por todos los clientes.
 
-![[Archivos/bd-s05-p24.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p24.png]]
 
-![[Archivos/bd-s05-p26.png]]
+![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p26.png]]
 
 > **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el **agrupamiento** aplica la función por grupos de datos.
 
@@ -278,7 +278,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > Reserva_Habitacion: ReservaID (PK/FK), NumHabitacion (PK/FK)
 > > ```
 > >
-> > El desarrollo completo está en [[03 - Segunda y tercera forma normal]] y el método en [[04 - Normalización paso a paso]] (misma marca 3 para este caso del taller ya trabajada en `Taller 2 SOL.pdf` — aquí queda la transcripción).
+> > El desarrollo completo está en [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] y el método en [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]] (misma marca 3 para este caso del taller ya trabajada en `Taller 2 SOL.pdf` — aquí queda la transcripción).
 
 ---
 
@@ -287,7 +287,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > [!info] 📚 Seguir estudiando
 >
 > - Modelo relacional y operadores: [[03 - Modelo relacional, ERM y casos Tiny College]]
-> - Normalización completa: [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
+> - Normalización completa: [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Guía anterior: [[Guía de Problemas 1 - MC, ML y Normalización]]
 
