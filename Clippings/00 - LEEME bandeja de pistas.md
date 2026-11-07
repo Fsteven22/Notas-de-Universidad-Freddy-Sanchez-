@@ -1285,12 +1285,18 @@ del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
 >
 > **PUSHEADO `5997341f`** — `5e7834da` · `163d7280` · `3b3d5cfd` · `fb03d8bf` · `680e0c80` · `72d8d885`
 >
+> **PUSHEO EN CURSO** — `6074d29f` (comentario del sync) + este commit (cierre del pendiente fantasma)
+>
 > - **Hecho:** `5e7834da` (volcado de 119 notas + 25 SVG a los índices de materia) ·
 >   `163d7280` (273 enlaces entrantes reescritos en 147 archivos) ·
 >   `3b3d5cfd` (47 índices de unidad eliminados) ·
 >   `fb03d8bf` (recursos visuales unificados) · `680e0c80` (merge de `origin/master`).
 > - **Pendiente:** `opencode-nube` — integrar los 3 índices de material local (abajo).
->   `opencode` — siguen los 2 BADs de Comunicación. Del dueño — material de DSW U3/U4 y firma de P1.
+>   `opencode-site` — rebuild del sitio. Del dueño — material de DSW U3/U4 y firma de P1.
+> - **Cerrado el 07/11:** los "2 BADs de Comunicación" **no se reproducen** — `opencode` verificó que
+>   con la raíz canónica `Universidad` el `qa_links` da `bad=0`; los BADs salían de correrlo con la
+>   subcarpeta `2do Semestre/Comunicación` aislada (enlaces a `Preuniversitario/MOOC de Comunicación/...`,
+>   fuera del índice del subárbol). Ver su bloque del 07/11.
 > - **Necesito:** nada más de otras sesiones; `site/src/**` quedó intacto (solo se corrió sync/build para verificar).
 
 **1. Los 47 índices de notas por unidad quedaron eliminados (`3b3d5cfd`).**
