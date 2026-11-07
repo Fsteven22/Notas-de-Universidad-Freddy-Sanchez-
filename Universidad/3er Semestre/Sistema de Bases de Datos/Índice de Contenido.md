@@ -27,7 +27,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 
 > [!note] 🗂️ Notas de la materia
 > - [[Sistema de Bases de Datos|Sistema de Bases de Datos]] — índice de la materia.
-> - [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]] — diagramas y capturas de las unidades.
+> - [[Recursos Visuales|Recursos Visuales]] — diagramas y capturas de las unidades.
 > - [[01 - Dato, información y modelos de datos]] — *U1 · Dato, información y modelos*
 > - [[02 - Entidades, atributos, claves y relaciones]] — *U1 · Entidades y claves*
 > - [[03 - Modelo relacional, ERM y casos Tiny College]] — *U1 · Modelo relacional*

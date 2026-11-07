@@ -34,7 +34,7 @@ tags: [IDIG1007, english2, mapa-de-contenido]
 > - [[05 - Academic Post - And We're Off!]]
 
 > [!note] Recursos adicionales
-> - [[Unit 1 - And We're Off!/Recursos Adicionales/Recursos Visuales|Recursos Visuales]]
+> - [[Recursos Visuales|Recursos Visuales]]
 
 ---
 

@@ -58,7 +58,7 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ## 📂 Unidad 0 — Guías y Ejercicios
 
-- 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]] (módulos y recursos online)
+- 🔗 [[Recursos Visuales|Recursos Visuales]] (módulos y recursos online)
 - 🎬 [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|Caso SIEL - Casos de Uso]] (capturas de pizarra de casos de uso) · 🏛️ [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|Caso SIEL - Modelo de Clases]] (capturas + modelo de clases del SIEL)
 - 🏭 [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] (PDF de las capturas de pizarra)
 - 📽️ Decks de cátedra en `Unidad 0 - Guias y Ejercicios/Diapositivas/`: diseño de software, paradigmas, MVC/SOLID, [[Unidad 0 - Guias y Ejercicios/Diapositivas/04aLenguajeUnificadoModelado.pdf|UML: casos de uso, clases y secuencia]] y [[Unidad 0 - Guias y Ejercicios/Diapositivas/04bImplementaciónDesdeDiseno.pdf|implementación desde el diseño]].

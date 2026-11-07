@@ -87,7 +87,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!quote] 🔗 Navegación
 > - Syllabus: [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales]]
 
-- [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Visuales|Recursos Visuales]]
+- [[Recursos Visuales|Recursos Visuales]]
 
 - [[00 - Recursos Unidad 0]]
 
