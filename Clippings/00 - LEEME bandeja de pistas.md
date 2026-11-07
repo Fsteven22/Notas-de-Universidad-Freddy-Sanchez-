@@ -1361,3 +1361,34 @@ videos + aula virtual + laboratorio + extras por unidad.
 >
 > La mención de la línea 567 (`[[MOOC de Comunicación/Unidad N .../00 - Índice]]`) es **documental**
 > (describe un bug que `opencode-nube` arregló el 04/11), no un enlace vivo: se deja como está.
+
+### `opencode` — verificación de la eliminación de los 47 índices de unidad — 07/11/2026
+
+> [!success] QA independiente del repo completo · `bad=0` · pendiente "2 BADs de Comunicación" cerrado
+>
+> - **Hecho:** verifiqué de forma independiente la tanda de `opencode-onedrive` (`5e7834da` · `163d7280` · `3b3d5cfd` · `fb03d8bf` · `680e0c80`) sobre `master` = `origin/master` = `0c780775`. Esta sesión tenía preparado el borrado con trasplantamiento (`apagar_47.py`, dry-run validado) pero **no lo aplicó**: al arrancar, la otra sesión ya lo había pusheado.
+> - **Pendiente:** `opencode-site` — rebuild del sitio (la tanda ya corrió sync/build local: 773 notas, 799 páginas). `opencode-nube` — los 3 índices de material local.
+> - **Necesito:** nada más de otras sesiones; `site/**` quedó intacto.
+
+**1. Los 47 índices de unidad están eliminados y nada quedó apuntando a ellos.**
+
+| Verificación | Resultado |
+|---|---|
+| `00 - Índice` que no sea "de Contenido" en disco | **0** (quedan los 18 índices de materia) |
+| Wikilinks vivos a `[[...00 - Índice Unidad N...]]` | **0** |
+| `qa_links.py` (repo completo) | targets=**9445** bad=**0** |
+| `qa_assets_huerfanos.py` | 2960 assets, **0** huérfanos (los 9 que lista son PDFs sin trackear del dueño) |
+
+Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron embebidos en las notas puente (`Fundamentos de Electricidad y Sistemas Digitales.md`, `Matemáticas Discretas.md`, `Comunicación Efectiva.md`, `Matemáticas.md`), así que el sync los sigue publicando.
+
+**2. El pendiente "2 BADs de Comunicación" no se reproduce.**
+
+> [!info] Por qué
+> Con raíz `Universidad` —el alcance canónico— `qa_links.py` da `bad=0`. Los 28 BADs que aparecen al
+> pasarle la carpeta `2do Semestre/Comunicación` aislada son enlaces a `Preuniversitario/MOOC de
+> Comunicación/...`, que quedan fuera del índice del subárbol y por eso no resuelven; con raíz
+> `Universidad` sí. Los 140 hits de `qa_resolucion_diagramas.py` en MOOC de Comunicación son
+> preexistentes (los SVG viven en `Unidad 0 - Guias y Ejercicios/Diagramas/` y se enlazan por basename
+> desde las notas de U5/U6); `qa_assets_huerfanos` los cuenta como referenciados.
+
+**3. Cambio local del dueño preservado.** `fb03d8bf` renombró `Recursos visuales.md` → `Recursos Visuales.md` en Mat. Discretas. Al hacer fast-forward de `master` (8 commits) el cambio sin commitear del dueño (los 2 links a Drive/WorkDrive) se habría perdido; se restauró sobre el archivo renombrado y sigue **sin commitear**, igual que estaba. Tampoco se tocaron `Universidad/00 - Mapa PAO 2-2026.md` (borrado), los PDFs sin trackear de MatDisc/DSW ni las carpetas `_texto/`.
