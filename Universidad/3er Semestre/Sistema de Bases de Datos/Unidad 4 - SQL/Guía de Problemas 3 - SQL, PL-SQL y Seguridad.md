@@ -30,25 +30,25 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 > [!info] 📖 El deck de cátedra: SQL y las restricciones (slides06, pp. 10-18)
 > El deck del Ing. Jorge Magallanes cierra el curso con SQL. Estas son las figuras que definen la sintaxis que usan los ejercicios de esta guía.
 
-![[Archivos/bd-s06-p10.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p10.png
 
-![[Archivos/bd-s06-p11.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p11.png
 
 > **Creación de tablas (p. 10):** `CREATE TABLE department (department_name VARCHAR(15), building VARCHAR(15), budget NUMERIC(12,2))` — el ejemplo base del deck.
 >
 > **Restricciones de clave (p. 11):** *"la especificación de primary key({L}) define la lista L de atributos de clave primaria"*, con `CREATE TABLE course (course_id VARCHAR(7), title VARCHAR(50) NOT NULL, …)`.
 
-![[Archivos/bd-s06-p13.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p13.png
 
-![[Archivos/bd-s06-p14.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p14.png
 
 > **Restricciones de integridad (p. 13):** *"una restricción de integridad (integrity constraint) asegura que un cambio realizado en la DB no conduzca a la pérdida de la consistencia de datos"*.
 >
 > **Restricciones solo de tabla (p. 14):** `not null` (columnas obligatorias) y `unique ({L})` (lista de atributos que debe ser única).
 
-![[Archivos/bd-s06-p17.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p17.png
 
-![[Archivos/bd-s06-p18.png]]
+!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p18.png
 
 > **Integridad referencial (p. 17):** *"las restricciones de clave foránea son la manera de asegurarnos que los valores de unos atributos coincidan con algún valor de la clave primaria en otra relación"*.
 >
