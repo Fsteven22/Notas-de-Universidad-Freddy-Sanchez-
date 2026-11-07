@@ -1503,5 +1503,5 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 > - **QA:** todos los 382 SVGs corregidos resuelven en disco. `qa_links.py` con raíz `Universidad` → `bad=7` (los 7 son enlaces de SBD a archivos que no existen en ninguna parte del vault: 5 SVG `u3-*/u4-*` y 1 PNG `bd-s05-p23.png` y 1 PDF de diapositivas — introducidos por commits recientes de SBD, no por esta sesión; son del dueño del vault).
 > - **No se tocaron:** cambios sin commitear del dueño (`Mapa PAO` borrado, `Recursos Visuales.md` de MatDisc, PDFs sin trackear, carpetas `_texto/`).
 >
-> **PUSHEO EN CURSO** — `3353d22a`
+> **PUSHEADO `2e66439f`** — `3353d22a`
 
