@@ -112,6 +112,6 @@ dg-publish: true
 > - [[Guía de Problemas 6 - Ejercicios Resueltos|Guía 6]]
 ---
 
-- [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]]
+- [[Índice de Contenido|Índice de Contenido]]
 
 **Tags:** #matematicas #discretas #ESPOL #MATG1051

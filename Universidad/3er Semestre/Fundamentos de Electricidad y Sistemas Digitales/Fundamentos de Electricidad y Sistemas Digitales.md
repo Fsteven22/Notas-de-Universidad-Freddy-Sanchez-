@@ -89,6 +89,6 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 
 - [[Recursos Visuales|Recursos Visuales]]
 
-- [[00 - Recursos Unidad 0]]
+- [[Índice de Contenido]]
 
 **Tags:** #FESD #EYAG1037 #ESPOL #indice #mapa-de-contenido

@@ -72,7 +72,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ## 📂 Unit 0 — Resources
 
-- 🔗 [[Unidad 0 - Guias y Ejercicios/Material de clase/Recursos Unidad 0|Recursos Unidad 0]] (qué es cada archivo y para qué unidad sirve)
+- 🔗 [[Índice de Contenido|Índice de Contenido]] (qué es cada archivo y para qué unidad sirve)
 - 📝 [[Unit 0 - Preliminar/01 - Grammar Review - Object Pronouns & Present Continuous|Grammar Review: object pronouns & present continuous]] (visto en clase, base de reported speech)
 
 ---

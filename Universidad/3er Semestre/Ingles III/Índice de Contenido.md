@@ -37,6 +37,42 @@ tags: [unidad0, indice, recursos]
 
 ---
 
+
+## 📦 Unidad 0 — Material integrado desde Recursos Unidad 0
+
+> [!info] ℹ️ Material de la Unidad 0 de Inglés III
+> Integrado desde el archivo original de Recursos Unidad 0.
+
+### 📄 PDFs de la Unidad 0
+
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/EIII Course Contents.pdf|EIII Course Contents.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/Empower U7-U9 lessons.pdf|Empower U7-U9 lessons.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/Empower U10-U12 lessons.pdf|Empower U10-U12 lessons.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/Empower Back Matter drills.pdf|Empower Back Matter drills.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Common Phrasal Verbs List and Examples.pdf|Common Phrasal Verbs List and Examples.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/EVOLVE_Level 4_Irregular_verbs_chart.pdf|EVOLVE_Level 4_Irregular_verbs_chart.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/Flooding Guayaquil Freddy Sánchez.pdf|Flooding Guayaquil Freddy Sánchez.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Material de clase/Living Without a Phone Freddy Sánchez.pdf|Living Without a Phone Freddy Sánchez.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Normas de uso en los laboratorios de CELEX-signed.pdf|Normas de uso en los laboratorios de CELEX-signed.pdf]]
+
+### 🖼️ Imágenes de la Unidad 0
+
+> - ![[Unidad 0 - Guias y Ejercicios/Figuras/GRAMMATICAL TENSES.png|GRAMMATICAL TENSES.png]]
+> - ![[Unidad 0 - Guias y Ejercicios/Figuras/SELF CORRECTION SYMBOLS.png|SELF CORRECTION SYMBOLS.png]]
+> - ![[Unidad 0 - Guias y Ejercicios/Figuras/ESPOL FACULTIES.png|ESPOL FACULTIES.png]]
+
+### 🎬 Videos recomendados de la Unidad 0
+
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> |  | [Link](PRESENT PERFECT or PAST SIMPLE?) | [Link](https://www.youtube.com/watch?v=UmdGwttUfKU) | Learn English with Rebecca, 29:36 |
+> |  | [Link](PAST SIMPLE or PRESENT PERFECT? comparación) | [Link](https://www.youtube.com/watch?v=vM5trdispow) | Arnel's Everyday English, 13:45 |
+> |  | [Link](Presente perfecto vs pasado simple) | [Link](https://www.youtube.com/watch?v=3tk8HDa0O-4) | Clases de inglés en español, 9:03 |
+> |  | [Link](50 phrasal verbs con ejemplos) | [Link](https://www.youtube.com/watch?v=B0heWo1XGhc) | Learn English with Bob the Canadian, 7:57 |
+> |  | [Link](50+ phrasal verbs comunes con workbook) | [Link](https://www.youtube.com/watch?v=r7VKVXbaj_Y) | mmmEnglish, 33:36 |
+> |  | [Link](Irregular Verbs en una canción) | [Link](https://www.youtube.com/watch?v=MA3NFtLc22k) | Lingportal, 5:36 |
+> |  | [Link](Advanced speaking practice: English Imitation Lesson) | [Link](https://www.youtube.com/watch?v=FfhZFRvmaVY) | mmmEnglish, 13:51 |
+> |  | [Link](Presentations in English: how to give a presentation) | [Link](https://www.youtube.com/watch?v=fzIxD1jXn44) | Oxford Online English, 16:46 |
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos

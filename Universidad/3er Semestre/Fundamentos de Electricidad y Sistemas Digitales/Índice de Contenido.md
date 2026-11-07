@@ -39,6 +39,45 @@ tags: [unidad0, indice, recursos]
 
 ---
 
+
+## 📦 Unidad 0 — Material integrado desde Recursos Unidad 0
+
+> [!info] ℹ️ Material de la Unidad 0 de Fundamentos de Electricidad y Sistemas Digitales
+> Integrado desde el archivo original de Recursos Unidad 0.
+
+### 📄 PDFs de la Unidad 0
+
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 1 2026.pdf|FESD SESIÓN 1 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 2 2026.pdf|FESD SESIÓN 2 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 3 2026.pdf|FESD SESIÓN 3 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 5 2026.pdf|FESD SESIÓN 5 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 6 y 7 2026.pdf|FESD SESIÓN 6 y 7 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 9 y 10.pdf|FESD SESIÓN 9 y 10.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 11.pdf|FESD SESIÓN 11.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 12 2026.pdf|FESD SESIÓN 12 2026.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 13.pdf|FESD SESIÓN 13.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 14.pdf|FESD SESIÓN 14.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/SÍLABO-1.pdf|SÍLABO-1.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD_DIODOS.pdf|FESD_DIODOS.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Guías/CONTENIDO.pdf|CONTENIDO.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Guías/EjREsAmpOp.pdf|EjREsAmpOp.pdf]]
+> - ![[Teórico/Unidad 0 - Guías y Ejercicios/Guías/Demostración 555 biestable.pdf|Demostración 555 biestable.pdf]]
+
+### 🎬 Videos recomendados de la Unidad 0
+
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> |  | [Link](ANÁLISIS DE NODOS: pasos para calcular voltaje con leyes de Kirchhoff) | [Link](https://www.youtube.com/watch?v=rshQaTLyiQE) | El_estudiante, 6:48 |
+> |  | [Link](Método de los nodos, parte 1: explicación) | [Link](https://www.youtube.com/watch?v=zYW3DEgVUsg) | Electrónica FP, 12:18 |
+> |  | [Link](Teorema de Thévenin) | [Link](https://www.youtube.com/watch?v=VF_qr9VUwvw) | Electrónica FP, 8:52 |
+> |  | [Link](Equivalentes de Thévenin y Norton) | [Link](https://www.youtube.com/watch?v=BlkME9ypmuc) | El Traductor de Ingeniería, 28:00 |
+> |  | [Link](CI 555: aplicación biestable) | [Link](https://www.youtube.com/watch?v=4EfFQS2afb0) | ACADENAS, 16:32 |
+> |  | [Link](Teoría y análisis del circuito integrado 555, modo biestable) | [Link](https://www.youtube.com/watch?v=egk8ahqDMAc) | Dix al Cubo, 21:05 |
+> |  | [Link](Diodos explicados) | [Link](https://www.youtube.com/watch?v=aPY3I8pG478) | Mentalidad de Ingeniería, 11:33 |
+> |  | [Link](Amplificadores operacionales desde cero) | [Link](https://www.youtube.com/watch?v=YNKE5-vuziU) | AulaVirtual, 32:35 |
+> |  | [Link](Amplificador operacional: lo que debes saber para empezar) | [Link](https://www.youtube.com/watch?v=-jNR4824ifo) | ACADENAS, 20:25 |
+> |  | [Link](Amplificador integrador en 6 minutos) | [Link](https://www.youtube.com/watch?v=qMHSr4FAPAM) | Les Ingenieurs, 7:57 |
+> |  | [Link](Amplificador operacional: comparador) | [Link](https://www.youtube.com/watch?v=EbobLluwmP4) | Electrónica FP, 6:38 |
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos

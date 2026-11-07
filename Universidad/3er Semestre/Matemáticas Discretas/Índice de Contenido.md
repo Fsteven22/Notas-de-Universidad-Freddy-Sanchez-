@@ -29,7 +29,6 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 6 - Lenguajes y Autómatas/01 - Máquinas de Estado Finito - Definición y Estructura|01 - Máquinas de Estado Finito - Definición y Estructura]] — *Unidad 6 - Lenguajes y Autómatas*
 
 > [!note] 📚 Recursos de la unidad
-> [[Unidad 0 - Guias y Ejercicios/Material de clase/00 - Recursos Unidad 0|00 - Recursos Unidad 0]] — guías de problemas, talleres, lecciones y exámenes de la unidad, con los videos recomendados.
 
 ## 📥 Pendiente de cargar
 
@@ -41,6 +40,65 @@ tags: [unidad0, indice, recursos]
 
 ---
 
+
+## 📦 Unidad 0 — Material integrado desde Recursos Unidad 0
+
+> [!info] ℹ️ Material de la Unidad 0 de Matemáticas Discretas
+> Integrado desde el archivo original de Recursos Unidad 0.
+
+### 📄 PDFs de la Unidad 0
+
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/GUÍA 1 DE PROBLEMAS.pdf|GUÍA 1 DE PROBLEMAS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Guía de problemas 2.pdf|Guía de problemas 2.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Guía de problemas 3.pdf|Guía de problemas 3.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/GUÍA DE PROBLEMAS 4.pdf|GUÍA DE PROBLEMAS 4.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/GUÍA_DE_PROBLEMAS 5.pdf|GUÍA_DE_PROBLEMAS 5.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Ejercicios sobre el principio del palomar.pdf|Ejercicios sobre el principio del palomar.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Guías/Guía Didáctica Mat. discretas lógica y demostraciones.pdf|Guía Didáctica Mat. discretas lógica y demostraciones.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Talleres/Taller I P4.pdf|Taller I P4.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Talleres/Solución taller I P4.pdf|Solución taller I P4.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Talleres/Taller I PAO I 2026 P5.pdf|Taller I PAO I 2026 P5.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Talleres/Solución taller I P5.pdf|Solución taller I P5.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Talleres/2026_1PAO_Taller_1_(Solución)_MATG1051.pdf|2026_1PAO_Taller_1_(Solución)_MATG1051.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Lecciones/lección I P4.pdf|lección I P4.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Lecciones/Solución lección I P4.pdf|Solución lección I P4.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Lecciones/2026_1PAO_Lección_1_(Solución)_MATG1051.pdf|2026_1PAO_Lección_1_(Solución)_MATG1051.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Lecciones/notas_maquinas_automatas.pdf|notas_maquinas_automatas.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 I PAO - EXAMEN 1P - MATDIS.pdf|2024 I PAO - EXAMEN 1P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 I PAO - EXAMEN 2P - MATDIS.pdf|2024 I PAO - EXAMEN 2P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 I PAO - MEJORAMIENTO - MATDIS.pdf|2024 I PAO - MEJORAMIENTO - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 II PAO - EXAMEN 1P - MATDIS.pdf|2024 II PAO - EXAMEN 1P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 II PAO - EXAMEN 2P - MATDIS.pdf|2024 II PAO - EXAMEN 2P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2024 II PAO - MEJORAMIENTO - MATDIS.pdf|2024 II PAO - MEJORAMIENTO - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 I PAO - EXAMEN 1P - MATDIS.pdf|2025 I PAO - EXAMEN 1P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 I PAO - EXAMEN 2P - MATDIS.pdf|2025 I PAO - EXAMEN 2P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 I PAO - MEJORAMIENTO - MATDIS.pdf|2025 I PAO - MEJORAMIENTO - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 II PAO - EXAMEN 1P - MATDIS.pdf|2025 II PAO - EXAMEN 1P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 II PAO - EXAMEN 2P - MATDIS.pdf|2025 II PAO - EXAMEN 2P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2025 II PAO - MEJORAMIENTO - MATDIS.pdf|2025 II PAO - MEJORAMIENTO - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2026 I PAO - EXAMEN 1P - MATDIS.pdf|2026 I PAO - EXAMEN 1P - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/2026 I PAO - MEJORAMIENTO - MATDIS.pdf|2026 I PAO - MEJORAMIENTO - MATDIS.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/Modelo de examen de mejoramiento 1.pdf|Modelo de examen de mejoramiento 1.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/Examen de mejoramiento PAO II 2023 dibujo.pdf|Examen de mejoramiento PAO II 2023 dibujo.pdf]]
+> - ![[Unidad 0 - Guias y Ejercicios/Exámenes/EXAMEN PAO I 2026 SOLUCION_2P.pdf|EXAMEN PAO I 2026 SOLUCION_2P.pdf]]
+
+### 🎬 Videos recomendados de la Unidad 0
+
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> |  | [Link](El principio del palomar explicado en 3 minutos) | [Link](https://www.youtube.com/watch?v=4iUoYylC8lU) | QuantumPatch, 3:19 |
+> |  | [Link](Matemáticas discretas II: principio del palomar) | [Link](https://www.youtube.com/watch?v=58tBNVrfPHw) | Carlos Delgado - Computación, 31:19 |
+> |  | [Link](Tablas de verdad, ejemplo 1) | [Link](https://www.youtube.com/watch?v=ZK8QUphO4MA) | Matemáticas profe Alex, 12:30 |
+> |  | [Link](Tablas de verdad, lógica proposicional) | [Link](https://www.youtube.com/watch?v=n_t1f0xa3D0) | ProfeGuille Matemática, 17:33 |
+> |  | [Link](El principio de inducción matemática) | [Link](https://www.youtube.com/watch?v=5HuMMTTfAGs) | Derivando, 3:15 |
+> |  | [Link](Qué es la inducción matemática, ejercicios resueltos) | [Link](https://www.youtube.com/watch?v=qJLUuLEqfS8) | Matemáticas con Juan, 23:17 |
+> |  | [Link](Sucesión recurrente o recursiva) | [Link](https://www.youtube.com/watch?v=kzMurQ2H4oc) | Pi-ensa Matematik, 8:45 |
+> |  | [Link](Relaciones de recurrencia, ejercicio 1) | [Link](https://www.youtube.com/watch?v=6Nn4ALsmH8U) | Joel Alvarado, 13:44 |
+> |  | [Link](Aprende grafos desde cero) | [Link](https://www.youtube.com/watch?v=vnNFiNVy9KM) | BitBoss, 5:54 |
+> |  | [Link](Matemáticas Discretas: teoría de grafos) | [Link](https://www.youtube.com/watch?v=PdA1Jz6iEWQ) | PassItEDU, 13:25 |
+> |  | [Link](Qué es un autómata finito determinista) | [Link](https://www.youtube.com/watch?v=d9aEE-uLmNE) | Codemath, 8:02 |
+> |  | [Link](Definición formal de un AFD) | [Link](https://www.youtube.com/watch?v=P0AxQvJcN2Q) | Juancar Molinero, 5:38 |
+> |  | [Link](Qué es un autómata finito no determinista) | [Link](https://www.youtube.com/watch?v=dIgKBNuaglE) | Codemath, 5:25 |
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
