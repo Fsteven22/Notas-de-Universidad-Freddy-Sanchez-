@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** statements (7.1) + questions (7.2) con reglas, fórmula en texto y accuracy checks del libro.
 
-![[../Diagramas/en3-u1-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-03-01-graph.svg]]
 
 ---
 
@@ -196,7 +196,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u1-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** 6 frases-llave bilingües, método de 4 turnos, errores de interacción y drill.
 
-![[../../Diagramas/en3-u1-09-01-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-09-01-graph.svg]]
 
 ---
 
@@ -111,7 +111,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/en3-u1-09-02-mind.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-09-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

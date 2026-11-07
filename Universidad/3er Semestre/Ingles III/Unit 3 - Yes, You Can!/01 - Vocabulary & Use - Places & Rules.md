@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** places (9.1), rule words verbo→sustantivo (9.2), *I get it* y drills p. 149.
 
-![[../Diagramas/en3-u3-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-02-01-graph.svg]]
 
 ---
 
@@ -194,7 +194,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u3-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

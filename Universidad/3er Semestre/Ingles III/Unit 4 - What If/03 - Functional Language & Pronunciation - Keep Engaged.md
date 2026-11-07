@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart keep-engaged (10.3), *anyway* (insider), vocales largas/cortas y wallet story.
 
-![[../Diagramas/en3-u4-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-04-01-graph.svg]]
 
 ---
 
@@ -153,7 +153,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u4-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

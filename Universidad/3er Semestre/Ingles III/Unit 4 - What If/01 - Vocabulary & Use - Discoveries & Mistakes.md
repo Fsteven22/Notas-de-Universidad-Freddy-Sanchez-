@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** collocations de descubrimiento (10.1), right vs wrong (10.2) y drills p. 150.
 
-![[../Diagramas/en3-u4-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-02-01-graph.svg]]
 
 ---
 
@@ -164,7 +164,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u4-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** anatomía de los 3 párrafos, plantilla copiable, ejemplo con comidas y errores de estructura.
 
-![[../../Diagramas/en3-u1-10-01-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-10-01-graph.svg]]
 
 ---
 
@@ -106,7 +106,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/en3-u1-10-02-mind.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-10-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

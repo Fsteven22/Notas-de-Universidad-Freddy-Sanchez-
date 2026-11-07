@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** reading driverless (11.4), argument comment y mediación del árbol (11.5).
 
-![[../Diagramas/en3-u5-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-05-01-graph.svg]]
 
 ---
 
@@ -140,7 +140,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u5-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

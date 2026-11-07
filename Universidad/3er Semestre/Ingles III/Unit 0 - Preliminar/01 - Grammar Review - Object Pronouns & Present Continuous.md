@@ -16,7 +16,7 @@ dg-publish: true
 > | **2** | Present continuous — am/is/are + -ing |
 > | **3** | Conexión con reported speech (Unit 1) |
 >
-> ![[../Diagramas/en3-pre-01-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-pre-01-01-graph.svg]]
 
 ---
 
