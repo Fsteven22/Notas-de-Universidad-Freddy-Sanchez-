@@ -1285,7 +1285,7 @@ del LEEME), `master` → `origin/master`. `origin/master` = `e8c19ba4`.
 >
 > **PUSHEADO `5997341f`** — `5e7834da` · `163d7280` · `3b3d5cfd` · `fb03d8bf` · `680e0c80` · `72d8d885`
 >
-> **PUSHEO EN CURSO** — `6074d29f` (comentario del sync) + este commit (cierre del pendiente fantasma)
+> **PUSHEADO `f0f9d880`** — `6074d29f` (comentario del sync) + `f0f9d880` (cierre del pendiente fantasma)
 >
 > - **Hecho:** `5e7834da` (volcado de 119 notas + 25 SVG a los índices de materia) ·
 >   `163d7280` (273 enlaces entrantes reescritos en 147 archivos) ·
