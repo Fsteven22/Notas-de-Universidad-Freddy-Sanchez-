@@ -221,7 +221,7 @@ async function main() {
 
   // Resolución de wikilinks (bug reportado por `opencode-nube` en el LEEME):
   // antes se indexaba solo por basename y las notas homónimas se pisaban
-  // (`00 - Índice`, `00 - Leeme Unidad 0`, `03 - Functional Language…`), así
+  // (`00 - Índice de Contenido`, `Recursos Visuales`, `03 - Functional Language…`), así
   // que la web podía enlazar a la materia/unidad equivocada aunque Obsidian
   // resolviera bien. Ahora:
   //   · porRuta    ruta del vault (y todos sus sufijos) → nota. Manda sobre basename.
