@@ -5,7 +5,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 # 🇬🇧 Ingles III
 
-**Código:** IDIG1008 · **Semestre:** 3ro · [[Bienvenida y Syllabus Ingles III|Ver Syllabus completo]]
+**Código:** IDIG1008 · **Semestre:** 3ro · [[Welcome & Syllabus English III|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Esta nota es el acceso directo a Ingles III. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
@@ -81,7 +81,7 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Syllabus completo: [[Bienvenida y Syllabus Ingles III]]
+> - Syllabus completo: [[Welcome & Syllabus English III]]
 > - Base MOOC: [[../../Preuniversitario/MOOC - Ingles (A1 - A2)/Inglés (A1-A2)|MOOC de ingles (A1-A2)]]
 > - Previo: [[Inglés II (C1-C2)]] (2do semestre)
 

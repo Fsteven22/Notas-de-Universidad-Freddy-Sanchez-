@@ -15,7 +15,7 @@ tags: [MATG1046, unidad0, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Calculo_Vectorial_01.svg]]
-> Ver [[Bienvenida y Syllabus Calculo Vectorial|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus Cálculo Vectorial|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -42,6 +42,6 @@ tags: [MATG1046, unidad0, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Cálculo Vectorial|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus Calculo Vectorial|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus Cálculo Vectorial|👋 Bienvenida y Syllabus]]
 
 **Tags:** #MATG1046 #unidad0 #recursos

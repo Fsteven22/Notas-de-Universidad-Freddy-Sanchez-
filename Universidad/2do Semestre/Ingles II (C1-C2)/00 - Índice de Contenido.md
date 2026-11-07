@@ -15,7 +15,7 @@ tags: [unidad0, indice, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Welcome_&_Syllabus_English_II_01.svg]]
-> Ver [[Welcome & Syllabus English II|Welcome & Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -47,6 +47,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Inglés II (C1-C2)|🗺️ Mapa de contenido de la materia]]
-> - [[Welcome & Syllabus English II|👋 Bienvenida y Syllabus]]
+> - [[Welcome & Syllabus English II (C1-C2)|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ingles-ii #unidad0 #recursos

@@ -298,7 +298,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar & Examples - Too Enough & Modifying Comparisons]]
 > - Siguiente: [[04 - Reading Writing Speaking - Buyer Beware & Product Reviews]]
 

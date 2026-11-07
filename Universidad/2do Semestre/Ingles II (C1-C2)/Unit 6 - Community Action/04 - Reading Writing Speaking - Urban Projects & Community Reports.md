@@ -241,7 +241,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Offering Refusing Help & Consonant Sounds]]
 
 **Tags:** #reading #writing #speaking #urban-projects #community #English #IDIG1007 #ESPOL #unit6

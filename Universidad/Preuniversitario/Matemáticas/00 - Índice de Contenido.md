@@ -10,7 +10,7 @@ tags: [unidad0, indice, recursos]
 ## 📎 Syllabus y políticas
 
 > [!note] 💛 El syllabus completo está como nota
-> Ver [[Bienvenida Matemáticas|Bienvenida Matemáticas]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus Matemáticas|Bienvenida Matemáticas]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -41,6 +41,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Matemáticas|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida Matemáticas|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus Matemáticas|👋 Bienvenida y Syllabus]]
 
 **Tags:** #matematicas-pre #unidad0 #recursos

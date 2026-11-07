@@ -220,7 +220,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Siguiente: [[02 - Grammar & Examples - Tense Review & Dynamic vs Stative Verbs]]
 
 **Tags:** #vocabulary #accomplishments #qualities #adjectives #nouns #English #IDIG1007 #ESPOL #unit1

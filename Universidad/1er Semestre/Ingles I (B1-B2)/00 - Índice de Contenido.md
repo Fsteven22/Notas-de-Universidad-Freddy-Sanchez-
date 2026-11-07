@@ -11,7 +11,7 @@ tags: [unidad0, indice, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Welcome_&_Syllabus_English_I_01.svg]]
-> Ver [[Welcome & Syllabus English I|Welcome & Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Welcome & Syllabus English I (B1-B2)|Welcome & Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -42,6 +42,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Ingles I (B1-B2)|🗺️ Mapa de contenido de la materia]]
-> - [[Welcome & Syllabus English I|👋 Bienvenida y Syllabus]]
+> - [[Welcome & Syllabus English I (B1-B2)|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ingles-i #unidad0 #recursos

@@ -5,7 +5,7 @@ tags: [indice, comunicacion, preuniversitario]
 
 # 🗣️ Comunicación Efectiva
 
-**Nivel:** Preuniversitario · [[Bienvenida Comunicación Efectiva|Ver Bienvenida]]
+**Nivel:** Preuniversitario · [[Bienvenida y Syllabus MOOC de Comunicación|Ver Bienvenida]]
 
 > [!info] 📚 Mapa de contenido
 > El MOOC se divide en **6 unidades**. Cada índice lista las notas de su unidad.

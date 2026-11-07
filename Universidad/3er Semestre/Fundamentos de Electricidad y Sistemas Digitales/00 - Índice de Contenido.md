@@ -10,7 +10,7 @@ tags: [unidad0, indice, recursos]
 ## 📎 Syllabus y políticas
 
 > [!note] 💛 El syllabus completo está como nota
-> Ver [[Bienvenida y Syllabus FESD|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -43,6 +43,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Fundamentos de Electricidad y Sistemas Digitales|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus FESD|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #fesd #unidad0 #recursos

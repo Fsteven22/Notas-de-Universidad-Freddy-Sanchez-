@@ -83,7 +83,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../../../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../../../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[Capitulo I - The Canterville Ghost]]
 > - Siguiente: [[Capítulo III - The Canterville Ghost]]
 

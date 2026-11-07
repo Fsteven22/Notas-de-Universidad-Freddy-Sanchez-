@@ -10,7 +10,7 @@ tags: [unidad0, indice, recursos]
 ## 📎 Syllabus y políticas
 
 > [!note] 💛 El syllabus completo está como nota
-> Ver [[Bienvenida Comunicación Efectiva|Bienvenida Comunicación Efectiva]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus MOOC de Comunicación|Bienvenida Comunicación Efectiva]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -41,6 +41,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Comunicación Efectiva|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida Comunicación Efectiva|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus MOOC de Comunicación|👋 Bienvenida y Syllabus]]
 
 **Tags:** #mooc-comunicacion #unidad0 #recursos

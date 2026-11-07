@@ -212,7 +212,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar Review - Gerund, FANBOYS & NOR]]
 > - Repaso base: [[01 - Grammar Review - The Sentence & Clauses]]
 

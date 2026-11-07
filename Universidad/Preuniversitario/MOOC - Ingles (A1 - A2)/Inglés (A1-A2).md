@@ -5,7 +5,7 @@ tags: [indice, english, A1A2, preuniversitario]
 
 # 🇬🇧 English (A1-A2)
 
-**Level:** Pre-university · [[Welcome English (A1-A2)|View Welcome]]
+**Level:** Pre-university · [[Welcome & Syllabus English (A1-A2)|View Welcome]]
 
 > [!info] 📚 Course map
 > The MOOC is organized in **5 units**. Units 1 and 2 have an index; Units 0, 3 and 4 link to their first note.

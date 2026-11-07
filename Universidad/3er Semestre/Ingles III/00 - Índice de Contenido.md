@@ -11,7 +11,7 @@ tags: [unidad0, indice, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/en3-bienv-map.svg]]
-> Ver [[Bienvenida y Syllabus Ingles III|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Welcome & Syllabus English III|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -41,7 +41,7 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Ingles III|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus Ingles III|👋 Bienvenida y Syllabus]]
+> - [[Welcome & Syllabus English III|👋 Bienvenida y Syllabus]]
 
 ## 📋 Material de la unidad (enlaces directos)
 

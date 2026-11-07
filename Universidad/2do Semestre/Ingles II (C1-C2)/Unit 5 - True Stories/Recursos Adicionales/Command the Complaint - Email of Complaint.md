@@ -351,6 +351,6 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 
 **Tags:** #writing #complaint-email #awc #exam-prep #English #IDIG1007 #ESPOL #unit5

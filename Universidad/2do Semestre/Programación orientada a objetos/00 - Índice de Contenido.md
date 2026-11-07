@@ -15,7 +15,7 @@ tags: [CCPG1005, unidad0, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_POO_01.svg]]
-> Ver [[Bienvenida y Syllabus POO|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus Programación orientada a objetos|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -43,6 +43,6 @@ tags: [CCPG1005, unidad0, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Programación Orientada a Objetos|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus POO|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus Programación orientada a objetos|👋 Bienvenida y Syllabus]]
 
 **Tags:** #CCPG1005 #unidad0 #recursos

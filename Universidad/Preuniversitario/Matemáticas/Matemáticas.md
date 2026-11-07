@@ -35,7 +35,7 @@ dg-publish: true
 ---
 
 > [!quote] 🔗 Conexiones
-> - [[Bienvenida Matemáticas]]
+> - [[Bienvenida y Syllabus Matemáticas]]
 
 ---
 

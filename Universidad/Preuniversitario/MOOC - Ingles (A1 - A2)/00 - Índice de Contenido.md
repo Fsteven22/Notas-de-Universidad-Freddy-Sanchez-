@@ -10,7 +10,7 @@ tags: [unidad0, indice, recursos]
 ## 📎 Syllabus y políticas
 
 > [!note] 💛 El syllabus completo está como nota
-> Ver [[Welcome English (A1-A2)|Welcome English]] — objetivos, evaluación y contenido.
+> Ver [[Welcome & Syllabus English (A1-A2)|Welcome English]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -39,6 +39,6 @@ tags: [unidad0, indice, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Inglés (A1-A2)|🗺️ Mapa de contenido de la materia]]
-> - [[Welcome English (A1-A2)|👋 Bienvenida y Syllabus]]
+> - [[Welcome & Syllabus English (A1-A2)|👋 Bienvenida y Syllabus]]
 
 **Tags:** #mooc-ingles #unidad0 #recursos

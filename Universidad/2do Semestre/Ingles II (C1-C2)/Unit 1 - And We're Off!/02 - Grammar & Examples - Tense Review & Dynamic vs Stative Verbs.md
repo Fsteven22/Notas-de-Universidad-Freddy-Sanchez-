@@ -298,7 +298,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[01 - Vocabulary & Use - Describing Accomplishments & Key Qualities]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Introductions & Saying the Letter Y]]
 

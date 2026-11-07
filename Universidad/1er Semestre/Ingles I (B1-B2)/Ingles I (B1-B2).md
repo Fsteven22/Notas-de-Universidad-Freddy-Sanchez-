@@ -5,7 +5,7 @@ tags: [IDIG1006, ingles-i, mapa-de-contenido]
 
 # Ingles I (B1-B2)
 
-**Semester:** 1st · [[Welcome & Syllabus English I|Ver Syllabus completo]]
+**Semester:** 1st · [[Welcome & Syllabus English I (B1-B2)|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Esta nota es el acceso directo a la materia. Cada unidad reúne sus notas en un callout; los enlaces apuntan a los archivos reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
@@ -69,7 +69,7 @@ tags: [IDIG1006, ingles-i, mapa-de-contenido]
 > [!info] 📚 Seguir estudiando
 
 > - Mapa: Inglés I (B1-B2)
-> - Siguiente: [[Welcome & Syllabus English I]]
+> - Siguiente: [[Welcome & Syllabus English I (B1-B2)]]
 
 ---
 

@@ -97,7 +97,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[03 - Grammar Review - Sentence Types by Structure]]
 
 **Tags:** #english #speaking #hardware #software #script #FIEC

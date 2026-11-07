@@ -15,7 +15,7 @@ tags: [CCPG1004, unidad0, recursos]
 
 > [!note] 💛 El syllabus completo está como nota
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Computacion_y_Sociedad_01.svg]]
-> Ver [[Bienvenida y Syllabus Computacion y Sociedad|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
+> Ver [[Bienvenida y Syllabus Computación y Sociedad|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
@@ -42,6 +42,6 @@ tags: [CCPG1004, unidad0, recursos]
 
 > [!tip] Enlaces rápidos
 > - [[Computación y Sociedad|🗺️ Mapa de contenido de la materia]]
-> - [[Bienvenida y Syllabus Computacion y Sociedad|👋 Bienvenida y Syllabus]]
+> - [[Bienvenida y Syllabus Computación y Sociedad|👋 Bienvenida y Syllabus]]
 
 **Tags:** #CCPG1004 #unidad0 #recursos

@@ -5,7 +5,7 @@ tags: [IDIG1007, english2, mapa-de-contenido]
 
 # 🇬🇧 English II (C1–C2)
 
-**Código:** IDIG1007 · **Semestre:** 2do · [[Welcome & Syllabus English II|Ver Syllabus completo]]
+**Código:** IDIG1007 · **Semestre:** 2do · [[Welcome & Syllabus English II (C1-C2)|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Esta nota es el acceso directo a English II (IDIG1007). Las unidades siguen el libro de curso; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
@@ -106,7 +106,7 @@ tags: [IDIG1007, english2, mapa-de-contenido]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Syllabus completo: [[Welcome & Syllabus English II]]
+> - Syllabus completo: [[Welcome & Syllabus English II (C1-C2)]]
 > - Empezar por: [[01 - Grammar Review - The Sentence & Clauses]]
 
 ---
