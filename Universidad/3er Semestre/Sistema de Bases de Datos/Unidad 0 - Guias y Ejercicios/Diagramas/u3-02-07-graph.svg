@@ -1,0 +1,16 @@
+<svg width="700" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1b5e20"/>
+    </marker>
+  </defs>
+  <rect x="60" y="30" width="180" height="70" rx="12" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="150" y="60" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b">Relación A</text>
+  <rect x="460" y="30" width="180" height="70" rx="12" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="550" y="60" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b">Relación B</text>
+  <rect x="240" y="130" width="220" height="70" rx="12" fill="#e8f5e9" stroke="#1b5e20" stroke-width="2"/>
+  <text x="350" y="162" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#1b5e20">A ÷ B</text>
+  <text x="350" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#1b5e20">"para todo" / "para cada"</text>
+  <path d="M 240 65 L 350 65 L 350 130" stroke="#1b5e20" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="350" y="50" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1b5e20">÷</text>
+</svg>
