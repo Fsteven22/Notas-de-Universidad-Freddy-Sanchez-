@@ -1,0 +1,27 @@
+<svg width="700" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1b5e20"/>
+    </marker>
+  </defs>
+  <!-- Conjunto A -->
+  <ellipse cx="250" cy="140" rx="120" ry="80" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="250" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#01579b">A</text>
+  <text x="210" y="170" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">{a1, a2, a3}</text>
+  
+  <!-- Conjunto B -->
+  <ellipse cx="450" cy="140" rx="120" ry="80" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="450" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#01579b">B</text>
+  <text x="490" y="170" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">{b1, b2, b3}</text>
+  
+  <!-- Intersección (centro) -->
+  <ellipse cx="350" cy="140" rx="60" ry="40" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+  <text x="350" y="140" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#e65100">A ∪ B</text>
+  
+  <!-- Operador ∪ -->
+  <rect x="330" y="30" width="40" height="40" rx="8" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+  <text x="350" y="60" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#e65100">∪</text>
+  
+  <path d="M 300 100 L 330 100" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 370 100 L 400 100" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+</svg>

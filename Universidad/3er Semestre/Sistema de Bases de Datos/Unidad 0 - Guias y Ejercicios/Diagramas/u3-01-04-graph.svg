@@ -1,0 +1,38 @@
+<svg width="700" height="280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1b5e20"/>
+    </marker>
+  </defs>
+  <!-- Tabla A: PRODUCTO (3 filas) -->
+  <rect x="50" y="40" width="160" height="160" rx="12" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="130" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b">PRODUCTO</text>
+  <rect x="70" y="95" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="130" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">101 | Pasta | 3.50</text>
+  <rect x="70" y="120" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="130" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">104 | Gel | 4.00</text>
+  <rect x="70" y="145" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="130" y="160" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">105 | Shampoo | 10.00</text>
+  
+  <!-- Tabla B: VENTA (3 filas) -->
+  <rect x="490" y="40" width="160" height="160" rx="12" fill="#e3f2fd" stroke="#01579b" stroke-width="2"/>
+  <text x="570" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b">VENTA</text>
+  <rect x="510" y="95" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="570" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">1 | 02/02 | 104 | 54</text>
+  <rect x="510" y="120" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="570" y="135" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">2 | 04/02 | 101 | 2</text>
+  <rect x="510" y="145" width="120" height="20" rx="4" fill="#ffffff" stroke="#01579b" stroke-width="1"/>
+  <text x="570" y="160" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">4 | 04/04 | 110 | -2</text>
+  
+  <!-- Operador × -->
+  <rect x="270" y="120" width="160" height="60" rx="12" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+  <text x="350" y="150" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold" fill="#e65100">×</text>
+  
+  <!-- Flechas -->
+  <path d="M 210 120 L 270 120" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 430 120 L 490 120" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Resultado: 9 filas -->
+  <rect x="50" y="220" width="600" height="40" rx="8" fill="#e8f5e9" stroke="#1b5e20" stroke-width="2"/>
+  <text x="350" y="242" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1b5e20">Resultado: 3 × 3 = 9 filas (todas las combinaciones)</text>
+</svg>

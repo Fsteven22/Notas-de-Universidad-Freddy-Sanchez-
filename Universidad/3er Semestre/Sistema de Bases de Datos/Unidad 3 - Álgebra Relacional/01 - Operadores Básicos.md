@@ -147,10 +147,27 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > [!example] 🧪 Ejemplo de diferencia
 > Listar las aerolíneas que no tienen vuelos para hoy:
 >
-> Π nombre(AEROLINEA) − Π nombre(AEROLINEA ⨝ σ hora_salida=HOY(VUELO))
+> ```
+> 'Π nombre(AEROLINEA) − Π nombre(AEROLINEA ⨝ σ hora_salida=HOY(VUELO))'
+> ```
 >
 > La diferencia es la negación: trae las aerolíneas ausentes en el conjunto de vuelos de hoy.
->
+
+```mermaid
+erDiagram
+    AEROLINEA ||--o{ VUELO : opera
+    AEROLINEA {
+        string nombre PK
+        string pais
+    }
+    VUELO {
+        string numero_vuelo PK
+        string aerolinea_nombre FK
+        datetime hora_salida
+        string destino
+    }
+```
+
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-06-graph.svg]]
 
 ---
