@@ -57,6 +57,6 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-- [[00 - Índice de Contenido]]
+- [[Índice de Contenido]]
 
 **Tags:** #bases-de-datos #ESPOL #TICG1018

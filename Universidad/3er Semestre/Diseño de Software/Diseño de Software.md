@@ -75,6 +75,6 @@ tags: [CCPG1042, diseno-software, mapa-de-contenido]
 
 ---
 
-- [[00 - Índice de Contenido]]
+- [[Índice de Contenido]]
 
 **Tags:** #diseno-software #ESPOL #CCPG1042

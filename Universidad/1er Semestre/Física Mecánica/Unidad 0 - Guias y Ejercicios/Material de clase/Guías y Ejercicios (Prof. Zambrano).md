@@ -95,7 +95,7 @@ tags: [FISG1001, unidad0, guias, ejercicios]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
-> - [[../../00 - Índice de Contenido|📂 Portal de la Unidad 0]]
+> - [[../../Índice de Contenido|📂 Portal de la Unidad 0]]
 > - [[../../Física Mecánica|🗺️ Mapa de contenido de la materia]]
 
 **Tags:** #FISG1001 #unidad0 #guias #ejercicios

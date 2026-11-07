@@ -87,6 +87,6 @@ tags: [IDIG1008, ingles-iii, mapa-de-contenido]
 
 ---
 
-- [[00 - Índice de Contenido]]
+- [[Índice de Contenido]]
 
 **Tags:** #english #ESPOL #IDIG1008

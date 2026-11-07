@@ -55,10 +55,10 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Sílabo de la Asignatura IDIG2012.pdf|Syllabus IDIG2012.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf|Políticas PAO 2-2026.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf|Planificación PAO 2-2026.pdf]]
-- [[00 - Índice de Contenido|00 - Índice de Contenido]]
+- [[Índice de Contenido|00 - Índice de Contenido]]
 
 > [!tip] 🆕 Talleres convertidos a nota
-> Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[00 - Índice de Contenido|Índice de Contenido]].
+> Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[Índice de Contenido|Índice de Contenido]].
 
 ---
 

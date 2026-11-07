@@ -81,7 +81,7 @@ tags: [CCPG1001, fundamentos-programacion, mapa-de-contenido]
 ## 📂 Unidad 0 — Guías y Ejercicios
 
 > [!note] Material de la unidad
-> - [[00 - Índice de Contenido|00 - Índice de Contenido]]
+> - [[Índice de Contenido|00 - Índice de Contenido]]
 
 ---
 
