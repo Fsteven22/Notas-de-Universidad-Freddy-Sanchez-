@@ -17,7 +17,7 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 >
 > Las soluciones del bloque A son propias (no hay solución oficial publicada del taller). En B/C/D se nota **dónde el enunciado deja detalles libres** (nombres de columnas, columnas extra ansiosas) y se elige un esquema asumido, declarado en cada bloque.
 >
-> Teoría base: consultas y agregación → [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] (σ = WHERE, γ = GROUP BY); normalización del campo `línea` → [[03 - Segunda y tercera forma normal]], [[04 - Normalización paso a paso]].
+> Teoría base: consultas y agregación → [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]] (σ = WHERE, γ = GROUP BY); normalización del campo `línea` → [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]], [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]].
 
 ![[../Unidad 0 - Guias y Ejercicios/Talleres/ENUNCIADO.pdf]]
 
@@ -809,8 +809,8 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Normalización del campo `línea` (B1): [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
-> - Operadores del álgebra que hace de fondo: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]]
+> - Normalización del campo `línea` (B1): [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
+> - Operadores del álgebra que hace de fondo: [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 
 ## 📚 Fuentes

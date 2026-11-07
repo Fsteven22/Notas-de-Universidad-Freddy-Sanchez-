@@ -278,7 +278,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > Reserva_Habitacion: ReservaID (PK/FK), NumHabitacion (PK/FK)
 > > ```
 > >
-> > El desarrollo completo está en [[03 - Segunda y tercera forma normal]] y el método en [[04 - Normalización paso a paso]] (misma marca 3 para este caso del taller ya trabajada en `Taller 2 SOL.pdf` — aquí queda la transcripción).
+> > El desarrollo completo está en [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] y el método en [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]] (misma marca 3 para este caso del taller ya trabajada en `Taller 2 SOL.pdf` — aquí queda la transcripción).
 
 ---
 
@@ -287,7 +287,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > [!info] 📚 Seguir estudiando
 >
 > - Modelo relacional y operadores: [[03 - Modelo relacional, ERM y casos Tiny College]]
-> - Normalización completa: [[03 - Segunda y tercera forma normal]] · [[04 - Normalización paso a paso]]
+> - Normalización completa: [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Guía anterior: [[Guía de Problemas 1 - MC, ML y Normalización]]
 

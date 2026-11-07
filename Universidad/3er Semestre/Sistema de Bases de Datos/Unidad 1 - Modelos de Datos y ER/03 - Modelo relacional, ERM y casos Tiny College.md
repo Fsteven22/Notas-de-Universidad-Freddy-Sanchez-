@@ -413,7 +413,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > - [[02 - Entidades, atributos, claves y relaciones]] — el vocabulario que aquí se vuelve tablas.
 > - [[01 - Dato, información y modelos de datos]] — el problema original.
-> - Álgebra relacional aplicada al taller 2 (σ, π, ⨝ y catálogo con ⟕, ⟖, ⋉, τ): [[Guía de Problemas 2 - Álgebra Relacional y Normalización]].
+> - Álgebra relacional aplicada al taller 2 (σ, π, ⨝ y catálogo con ⟕, ⟖, ⋉, τ): [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]].
 > - Ver también la nota de **Claves** integrada en 02 si vienes de un link viejo: ahora vive ahí.
 
 ---

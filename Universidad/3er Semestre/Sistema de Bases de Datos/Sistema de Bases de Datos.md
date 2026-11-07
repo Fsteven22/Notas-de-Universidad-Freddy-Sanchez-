@@ -17,7 +17,6 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 - [[01 - Dato, información y modelos de datos]]
 - [[02 - Entidades, atributos, claves y relaciones]]
 - [[03 - Modelo relacional, ERM y casos Tiny College]]
-- Guía: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]]
 
 ---
 
@@ -31,8 +30,20 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 
 ---
 
-## Unidad 3 — SQL y PL-SQL
+## Unidad 3 — Álgebra Relacional
 
+- [[01 - Operadores Básicos]]
+- [[02 - Operadores Derivados y Joins]]
+- [[03 - Renombre y Agregación]]
+- Guía: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] (Taller 2: 4 consultas de álgebra + normalización del hotel)
+
+---
+
+## Unidad 4 — SQL
+
+- [[01 - Introducción a SQL]]
+- [[02 - DDL y DML]]
+- [[03 - Consultas Avanzadas]]
 - Guía: [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] (talleres 3 y 4: SQL, transacciones, triggers, usuarios; MongoDB)
 - *Notas teóricas pendientes: avanza con lo que la docente publique en AV.*
 
