@@ -43,15 +43,15 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > [!info] 📖 El deck de cátedra: la dependencia funcional (slides04 y BD 02.3)
 > El deck del Ing. Magallanes define la DF así: *"la relación que existe entre las columnas de una tabla"* — considerando dos columnas A y B donde B queda determinado por A. El otro deck (BD 02.3, Unidad 2) añade el vocabulario formal.
 
-![[Archivos/bd-s04-p10.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p10.png]]
 
-![[Archivos/bd-023-p12.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p12.png]]
 
 > **Definición formal (BD 02.3, p. 12):** *"ocurre cuando el valor de un atributo o varios determina el valor de un segundo atributo o varios"* (A → B). El atributo a la izquierda es el **determinante**, el de la derecha el **dependiente**.
 >
 > **Ejemplo del deck (BD 02.3, p. 13):** `CLIENTE(Número_cliente, Nombre, Teléfono, Fecha_Nacimiento, Edad)` tiene las DF `Número_cliente → Nombre`, `Número_cliente → Teléfono`, `Número_cliente → Fecha_Nacimiento`… y `Fecha_Nacimiento → Edad` — que es **transitiva** y por eso va a la 3FN.
 
-![[Archivos/bd-s04-p11.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p11.png]]
 
 > **El ejemplo del deck (slides04, p. 11):** el diagrama de flechas de `StdSSN`, `StdCity`, `StdClass → OfferNo`, `OffTerm`, `OffYear`, `Course` es la forma en que el docente espera ver las DF dibujadas.
 
@@ -72,9 +72,9 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > [!info] 📖 El deck de cátedra: las anomalías, con su ejemplo (slides04, pp. 2-4 y BD 02.3, pp. 5-7)
 > El deck arranca con la redundancia: *"las tablas que tienen datos redundantes pueden tener problemas llamados anomalías de actualización"*, y las clasifica en inserción, eliminación y modificación.
 
-![[Archivos/bd-s04-p8.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
 
-![[Archivos/bd-023-p14.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p14.png]]
 
 > **Dependencia completa y parcial (BD 02.3, p. 14):** *"existe una dependencia completa si B es dependiente completamente de A y no de un subconjunto de los atributos de A"* — la definición exacta de la 2FN.
 >
@@ -142,11 +142,11 @@ tags: [TICG1018, unidad2, fn, normalizacion, bd]
 > [!info] 📖 El deck de cátedra: la 3FN y la dependencia transitiva (slides04 y BD 02.3)
 > El deck del Ing. Magallanes cierra con la tabla que **no** está en 3FN y su partición en 3FN.
 
-![[Archivos/bd-s04-p14.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p14.png]]
 
-![[Archivos/bd-s04-p15.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p15.png]]
 
-![[Archivos/bd-023-p20.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p20.png]]
 
 > **3FN según el deck (slides04, p. 14):** *"una tabla está en tercera forma normal cuando está en 1FN y 2FN, y cada columna que non-primary-key es dependiente solo de las columnas de clave primaria y… "*.
 >

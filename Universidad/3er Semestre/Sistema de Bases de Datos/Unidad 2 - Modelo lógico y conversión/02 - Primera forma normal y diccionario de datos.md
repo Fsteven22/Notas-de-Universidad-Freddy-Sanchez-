@@ -60,9 +60,9 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > [!info] 📖 El deck de cátedra: la 1FN en la pizarra (slides04 y BD 02.3)
 > El deck del Ing. Magallanes define la 1FN como *"una tabla donde la intersección de cada fila y columna contiene solo un valor"* y da el ejemplo canónico de la rama con varios teléfonos.
 
-![[Archivos/bd-s04-p8.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
 
-![[Archivos/bd-023-p10.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p10.png]]
 
 > **Las 5 condiciones (BD 02.3, p. 10):** *"1. No hay orden de arriba-a-abajo en las filas. 2. No hay orden de izquierda-a-derecha en las columnas. 3. No hay filas duplicadas. 4. Cada intersección…"* — el checklist de esta nota es el mismo, con la condición 5 (columnas regulares) completada.
 >

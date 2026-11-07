@@ -160,7 +160,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 >
 > *"es útil para consultas que incluye la expresión 'para todo' o 'para cada'"*.
 
-![[Archivos/bd-s05-p20.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p20.png]]
 
 ---
 

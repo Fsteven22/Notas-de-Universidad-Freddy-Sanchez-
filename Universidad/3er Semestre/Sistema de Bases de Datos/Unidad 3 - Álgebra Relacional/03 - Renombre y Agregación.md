@@ -73,9 +73,9 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 >
 > El deck del Ing. Magallanes cierra el módulo de álgebra con agregaciones y agrupamiento.
 
-![[Archivos/bd-s05-p23.png]]
-![[Archivos/bd-s05-p24.png]]
-![[Archivos/bd-s05-p26.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p23.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p24.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p26.png]]
 
 > **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el agrupamiento aplica la función por grupos de datos.
 

@@ -43,7 +43,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Finalmente, la empresa necesita gestionar los pagos realizados por los clientes. Para cada transacción se registra un número de comprobante, fecha, valor cancelado, método de pago y estado de la transacción. La gerencia también desea generar reportes sobre los servicios más solicitados, los ingresos obtenidos en determinados períodos y la productividad de los empleados, con el fin de mejorar la calidad del servicio y optimizar la toma de decisiones.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej01-lavanderia.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej01-lavanderia.svg]]
 >
 > > [!success]- Clave de modelado
 > > - Entidades: CLIENTE, SOLICITUD, PRENDA, SERVICIO, EMPLEADO, PAGO.
@@ -78,7 +78,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Los datos de la carrera deben incluir, dirección de origen y destino en texto y también expresados en longitud y latitud, y su precio estimado. A la empresa también le interesa generar estadísticas de uso de la aplicación, por ello es importante registrar también las cancelaciones y viajes que culminaron con éxito.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej02-taxigo.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej02-taxigo.svg]]
 >
 > > [!success]- Clave de modelado
 > > - Lugar de recojo: atributo **compuesto** (principal, número, secundaria, ciudad), no entidad. Coordenadas: compuesto (lat, long).
@@ -109,7 +109,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Una vez que el articulo es aprobado la revista asigna revisores de AZM para verificar gramática, citado, referencias y formato. Una vez aprobado por todos los revisores de la revista, el artículo es publicado.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej03-azm.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej03-azm.svg]]
 >
 > > [!success]- Clave de modelado
 > > - AUTOR y REVISOR son **roles** de PERSONA: un autor es revisor de otros artículos, nunca del suyo (restricción; anótala como regla de negocio).
@@ -148,7 +148,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Cuando se realiza la venta el comprador puede decidir dar sus datos o pedir que le facturen a nombre del propietario del vehículo, de ambos, los datos a almacenar son cédula, nombre, apellidos, correo electrónico. Recuerde que un vehículo puede cambiar de propietario, pero la venta debería mantener el histórico del propietario que se le vendió el combustible.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej04-subsidio.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej04-subsidio.svg]]
 >
 > > [!success]- Clave de modelado
 > > - EMPLEADO *supervisa* EMPLEADO: **recursiva** 1:M con roles (supervisor / supervisado); la VENTA cuelga de EMPLEADO sin distinguir (ambos venden).
@@ -187,7 +187,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (El examen incluye una figura con el modelo.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej05-concursos.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej05-concursos.svg]]
 >
 > > [!success]- Clave de modelado
 > > - INSCRIPCIÓN: intermedia ESTUDIANTE–CONCURSO con atributos (fecha, valor pagado).
@@ -224,7 +224,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Al final del día, los organizadores deben tomar nuevamente lista a los voluntarios y registrar por cada área si existieron árboles que no fueron sembrados y que cantidad.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej06-naren.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej06-naren.svg]]
 >
 > > [!success]- Clave de modelado
 > > - ASISTENTE supertipo con subtipos ORGANIZADOR y VOLUNTARIO (líder/ayudante salen de VOLUNTARIO: **roles**, no subtipos nuevos).
@@ -256,7 +256,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Considere a las fotos y archivos digitales como medios digitales divididos en dos grupos: medios estáticos y medios dinámicos (audio y video). Estos medios estarán almacenados en un repositorio en donde cada medio está representado por un id, una URL de acceso. A cada medio le corresponde un texto corto y un conjunto de hashtags. La aplicación debe permitir gestionar los medios que los usuarios suban a los lugares.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej07-phograh.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej07-phograh.svg]]
 >
 > > [!success]- Clave de modelado
 > > - LUGAR *contiene* LUGAR: **recursiva** 1:M de profundidad libre (FK padre).
@@ -305,7 +305,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (El examen incluye dos figuras.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej08-expreso.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej08-expreso.svg]]
 >
 > > [!success]- Clave de modelado
 > > - Roles múltiples: PERSONA supertipo con roles PADRE / CHOFER / AYUDANTE / ESTUDIANTE (**sobrelapado**: un chofer puede ser padre).
@@ -338,7 +338,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Durante la vigencia del préstamo hipotecario, se establece una relación continua entre el prestamista y el prestatario según se realizan los pagos mensuales. Estos pagos se registran como parte del historial crediticio del prestatario, lo que puede afectar las relaciones futuras con otras entidades financieras. Además, en caso de incumplimiento de pago, se activa una relación legal que puede llevar a medidas como la ejecución hipotecaria de la propiedad.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej09-hipotecario.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej09-hipotecario.svg]]
 >
 > > [!success]- Clave de modelado
 > > - PRESTATARIO y PRESTAMISTA: roles de PERSONA (el prestamista es empleado del banco).
@@ -372,7 +372,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (El examen incluye una figura. La Sección 2 pide además el modelo lógico con notación pata de gallo completamente normalizado.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej10-ecolife.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej10-ecolife.svg]]
 >
 > > [!success]- Clave de modelado
 > > - MIEMBRO–MARCA M:N con **tope 4** (restricción de app, anótala). Redes + cuentas: multivaluado doble (red, cuenta) → tabla propia.
@@ -388,7 +388,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > [!example] 🧪 Planteamiento (fuente: `2026_1PAO_Taller_1_TICG1018.pdf`, punto 2)
 > - Figura del examen (diagrama de dependencias; la tabla universal sin normalizar):
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej11-diagrama-dependencias.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej11-diagrama-dependencias.svg]]
 > - 📌 Se pide:
 >   - 1) Clave primaria.
 >   - 2) Dependencias parciales.
@@ -407,9 +407,9 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > 4. Normalice la relación hasta Tercera Forma Normal (3FN) y obtenga el diagrama lógico.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej11-dep-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej11-dep-flow.svg]]
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej11-modelo-3fn.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej11-modelo-3fn.svg]]
 >
 > > [!success]- Solución guiada
 > > - 1) La nota depende del **par** (estudiante, curso): PK = `(cod_estud, cod_curso)`.
@@ -459,14 +459,14 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (La tabla de datos va arriba. El documento del examen trae además la solución oficial con rúbrica, que es la usada en la clave.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej12-modelo-3fn.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej12-modelo-3fn.svg]]
 >
 > > [!success]- Solución (la del examen)
 > > - DF adicionales:
 > >   - (las 3) → Precio Unitario.
 > >   - Producto ID → Producto Nombre, Precio Unitario.
 > > - Diagrama de dependencias (léelo antes de partir):
-> > ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej12-dependencias.svg]]
+> > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej12-dependencias.svg]]
 > > - 1FN: cumplida (sin listas ni multivaluados).
 > > - 2FN (fuera parciales):
 > >   - PRODUCTO(Producto ID PK, Nombre, Precio).
@@ -498,7 +498,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (La tabla de recetas va arriba.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej13-modelo.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej13-modelo.svg]]
 >
 > > [!success]- Solución guiada
 > > - 1FN: Ingredientes, Cantidades y Etapas son **listas paralelas** (multivaluados) → filas atómicas:
@@ -529,7 +529,7 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (Tabla DATOS DE ARTEFACTOS arriba, girada a orientación normal.)
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej14-modelo.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej14-modelo.svg]]
 >
 > > [!success]- Solución guiada
 > > - 1FN: distribuidor e importador son listas → tablas propias:
@@ -564,11 +564,11 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > (La tabla de datos con las listas de C va en el PDF.)
 > **📊 Complementos de la solución** — función + diagrama; dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dep-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dep-flow.svg]]
 >
 > > [!success]- Solución guiada
 > > - Diagrama de dependencias:
-> > ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dependencias.svg]]
+> > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dependencias.svg]]
 > > - 1FN: C trae listas → separa con PK (K, C).
 > > - 2FN (fuera parciales sobre (K, C)):
 > >   - K_TABLA(K PK, A, B).
@@ -602,15 +602,15 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > Tabla: MORE_STUFF (D, O, N, T, C, R, Y). Dependencias: (D, O) → N, T, C, R, Y; (C, R) → Y; D → N.
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej16-dep-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej16-dep-flow.svg]]
 >
 > > [!success]- Solución guiada
 > > - Diagrama de dependencias STORE_ITEM:
-> > ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej16-store-item.svg]]
+> > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej16-store-item.svg]]
 > > - STORE_ITEM: parcial SKU → Vendor, Style ⇒ está en **1FN**.
 > >   - 2FN: ITEM(SKU PK, Vendor, Style); PROMO(SKU PK/FK, PromotionID PK/FK, Price) — el precio depende del par (precio *en esa promoción*), así que queda en la intermedia.
 > > - Diagrama de dependencias MORE_STUFF:
-> > ![[Unidad 0 - Guias y Ejercicios/Diagramas/ej16-more-stuff.svg]]
+> > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej16-more-stuff.svg]]
 > > - MORE_STUFF: parcial D → N ⇒ **1FN**.
 > >   - 2FN: D_TABLA(D PK, N) + resto (D, O, T, C, R, Y).
 > >   - Transitiva (C, R) → Y con (C, R) no-primo ⇒ **3FN**: CR_TABLA(C PK, R PK, Y) + resto (D, O, T, C, R con FK).

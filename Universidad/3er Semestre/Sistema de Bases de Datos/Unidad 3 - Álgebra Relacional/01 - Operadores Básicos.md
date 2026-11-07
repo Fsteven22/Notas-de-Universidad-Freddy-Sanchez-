@@ -61,7 +61,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > `σ CÓDIGO = 104 (PRODUCTO)`
 
-![[Archivos/bd-s05-p5.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p5.png]]
 
 > **Proyección y composición (p. 7):** `π maker, type (σ type='laptop' ∧ model≥2005 (Product))` — el deck dibuja el diagrama de ejecución con los pasos numerados (3 → 2 → 1) y el resultado. Es la mejor explicación de por qué se proyecta *después* de filtrar.
 
@@ -69,8 +69,8 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 
 > **Producto cartesiano (p. 9):** el ejemplo `Department ⨯ Course` muestra por qué el producto casi nunca es lo que quieres — de ahí la necesidad del join.
 
-![[Archivos/bd-s05-p9.png]]
-![[Archivos/bd-s05-p15.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p9.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p15.png]]
 
 ---
 

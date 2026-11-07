@@ -123,7 +123,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > [!info] 📖 El deck de cátedra: los puntos clave de la conversión (slides3, pp. 13-15)
 > El deck del Ing. Magallanes enuncia las mismas reglas, con la formulación del docente: *"las relaciones del MER se clasifican como uno a uno (1:1), uno a muchos (1:N) y de muchos a muchos (M:N o N:N)"*.
 
-![[Archivos/bd-s03-p16.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
 
 > **El objetivo (p. 14):** *"traducir un modelo conceptual a un modelo lógico y luego validar si este modelo es de una estructura correcta"*.
 >
