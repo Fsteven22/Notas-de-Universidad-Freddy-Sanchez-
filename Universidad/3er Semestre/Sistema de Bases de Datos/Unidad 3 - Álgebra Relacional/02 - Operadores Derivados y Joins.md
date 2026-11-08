@@ -24,7 +24,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > El join natural combina dos relaciones sobre atributos con el mismo nombre y mismo valor, y luego elimina las columnas repetidas.
 > Sintaxis: relaciónA ⨝ relaciónB
 > Base matemática: σ F (A × B) donde F es el predicado de igualdad en atributos comunes, seguido de π que borra la columna duplicada.
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-01-graph.svg]]
 
 > [!example] 🧪 Ejemplo de join natural
 > | PRODUCTO |
@@ -48,7 +48,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Join con condición de igualdad explícita entre columnas que pueden tener nombres distintos. Las columnas de la condición NO se eliminan (a diferencia del natural join).
 > Sintaxis: relaciónA ⨝(columnaA = columnaB) relaciónB
 > SQL mental: JOIN ... ON columnaA = columnaB
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-04-graph.svg]]
 
 > [!example] 🧪 Ejemplo de equi join
 > PRODUCTO ⨝(CODIGO = ID_PRODUCT) VENTA devuelve 2 filas:
@@ -63,7 +63,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Join con una condición que no es igualdad (≠, >, <, ≥, ≤). Útil para comparaciones de rangos o exclusiones.
 > Sintaxis: relaciónA ⨝(condición) relaciónB
 > SQL mental: JOIN ... ON con comparación no-igualdad.
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-05-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-05-graph.svg]]
 
 > [!example] 🧪 Ejemplo de theta join
 > VENTA ⨝(CANTIDAD > 50) PRODUCTO — ventas donde la cantidad supera 50 unidades.
@@ -74,7 +74,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Trae TODAS las filas de la izquierda; las de la derecha que no casan se rellenan con null.
 > Sintaxis: relaciónA ⟕ relaciónB
 > SQL mental: LEFT JOIN ... ON
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-02-graph.svg]]
 
 > [!example] 🧪 Ejemplo de left outer join
 > PRODUCTO ⟕ VENTA devuelve las 2 filas del join normal + la fila del Shampoo 105 con null en todo lo de VENTA.
@@ -85,7 +85,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Trae TODAS las filas de la derecha; las de la izquierda que no casan se rellenan con null.
 > Sintaxis: relaciónA ⟖ relaciónB
 > SQL mental: RIGHT JOIN ... ON
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-03-graph.svg]]
 
 > [!example] 🧪 Ejemplo de right outer join
 > PRODUCTO ⟖ VENTA devuelve las 2 filas del join normal + la fila de la venta 4 (ID_PRODUCT=110) con null en todo lo de PRODUCTO.
@@ -96,7 +96,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Trae las filas de la relación izquierda que participan en el join con la derecha, pero solo con los atributos de la izquierda.
 > Sintaxis: relaciónA ⋉ relaciónB
 > SQL mental: WHERE ... IN / EXISTS
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-06-graph.svg]]
 
 > [!example] 🧪 Ejemplo de semijoin
 > VENTA ⋉ PRODUCTO devuelve ventas 1 y 2, solo columnas de VENTA (sus productos sí existen).
@@ -107,7 +107,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Útil para consultas con la expresión "para todo" o "para cada". Es el operador del ejercicio que pide ítems ordenados por todos los clientes.
 > Sintaxis: relaciónA ÷ relaciónB
 > SQL mental: doble NOT EXISTS o GROUP BY ... HAVING COUNT = total.
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-07-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-07-graph.svg]]
 
 ---
 

@@ -14,7 +14,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > - Diseño de consultas: entender qué hace cada cláusula SQL bajo el capó.
 > - Optimización: reescribir consultas para que corran más rápido.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-01-graph.svg]]
 
 ---
 
@@ -31,7 +31,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > Ejemplo: la tabla es la relación; cada fila una tupla; cada columna un atributo.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-01-graph.svg]]
 
 ### 2️⃣ Selección σ
 
@@ -46,7 +46,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > Ejemplo: σ CÓDIGO = 104 (PRODUCTO)
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-02-graph.svg]]
 
 > [!example] 🧪 Ejemplo de selección
 >
@@ -63,7 +63,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > |---|---|---|
 > | 104 | Gel | 4.00 |
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-02-graph.svg]]
 
 ### 3️⃣ Proyección π
 
@@ -74,7 +74,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > Resultado: una relación con solo las columnas solicitadas, sin filas duplicadas.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-03-graph.svg]]
 
 > [!example] 🧪 Ejemplo de proyección
 >
@@ -89,7 +89,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > |---|
 > | Gel |
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-03-graph.svg]]
 
 ### 4️⃣ Producto Cruz ×
 
@@ -102,7 +102,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > Resultado: una relación con todas las columnas de A y todas las columnas de B, y m×n filas.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-04-graph.svg]]
 
 > [!example] 🧪 Ejemplo de producto cruz
 >
@@ -120,7 +120,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 >
 > PRODUCTO × VENTA produce 9 filas (3 × 3): toda combinación. Casi nunca es lo que quieres, es el punto de partida de los joins.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-04-graph.svg]]
 
 > [!warning] ⚠️ Cuidado con el producto cruz
 > El producto cruz genera muchas filas innecesarias.
@@ -140,9 +140,9 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > | Diferencia | − | Filas de A que NO están en B | NOT IN / NOT EXISTS |
 > | Intersección | ∩ | Filas que están tanto en A como en B | INTERSECT |
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-05-graph.svg]]
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-06-graph.svg]]
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-07-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-05-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-07-graph.svg]]
 
 > [!example] 🧪 Ejemplo de diferencia
 > Listar las aerolíneas que no tienen vuelos para hoy:
@@ -168,7 +168,7 @@ erDiagram
     }
 ```
 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-01-06-graph.svg]]
 
 ---
 
