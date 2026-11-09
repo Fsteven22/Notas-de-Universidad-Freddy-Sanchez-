@@ -24,15 +24,24 @@ tags: [TICG1018, unidad4, sql, introduccion, estandares, bd]
 > **Se lee así:** pides el **qué** y el optimizador decide el **cómo** (índices, joins, orden). Si el plan no es el esperado, la respuesta no es "SQL más mágico": es reescribir la consulta o revisar el índice.
 
 > [!info] 📖 El deck de cátedra: qué es SQL (slides06, pp. 1-3)
+>
 > El deck del Ing. Jorge Magallanes abre la unidad de SQL: qué es, de dónde viene y qué promete.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p2.png]]
-> 
-> **Introducción a SQL (p. 2):** *"Structured Query Language (SQL), es un lenguaje declarativo de acceso a bases de datos que combina construcciones del álgebra relacional y del cálculo relacional"*, desarrollado en los '70 por IBM a partir del cálculo de predicados de Codd. La misma página lista los estándares: SEQUEL (IBM 1976), SQL-86, SQL-89, SQL-92, SQL:1999, SQL:2003 y SQL:2005-2016.
-> 
+>
+> **Se lee así:** la lámina (p. 2) es la **ficha de identidad de SQL**, y trae cuatro datos que se preguntan en examen. (1) El **nombre y su origen**: *"Structured Query Language (SQL), es un lenguaje declarativo de acceso a bases de datos que combina construcciones del álgebra relacional y del cálculo relacional"*. (2) La **procedencia**: *"originalmente fue desarrollado en los '70 por IBM en su Research Laboratory de San José a partir del cálculo de predicados creado por Codd"*. (3) La **genealogía**: SEQUEL (IBM, 1976) → SQL-86 → SQL-89 → SQL-92 → SQL:1999 → SQL:2003 → SQL:2005-2016. (4) El **qué trae cada revisión**: SQL-92 fue la "gran revisión", SQL:1999 añadió disparadores y algo de OO, SQL:2003 añadió XML, secuencias y columnas autonuméricas, y SQL:2016 permite búsqueda de patrones.
+>
+> **Por qué importa:** el punto (1) es la conexión con la Unidad 3: SQL es **álgebra relacional con sintaxis**. Lo que en álgebra escribías `π DESCRIPCION (σ CODIGO = 104 (PRODUCTO))`, en SQL lo escribes `SELECT DESCRIPCION FROM PRODUCTO WHERE CODIGO = 104`. No es "parecido": es la misma operación con otra notación. Y el punto (2) explica el diseño: viene del **cálculo de predicados**, que es declarativo — por eso SQL dice *qué* quieres y no *cómo* obtenerlo.
+>
+> **Ejemplo:** el dato de SQL:2003 ("columnas autonuméricas") es la historia de tu `id INT AUTO_INCREMENT` de MySQL: el estándar lo llamó "columnas generadas" y cada motor le puso su nombre. Conocer la genealogía del estándar explica por qué dos motores que "siguen el estándar" tienen sintaxis distintas para lo mismo.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p3.png]]
-> 
-> **Características (p. 3):** *"Idealmente un lenguaje de DB debería permitir al usuario realizar lo siguiente con un mínimo esfuerzo"*: crear bases de datos y estructuras de relaciones, ejecutar tareas de administración de datos (inserción, modificación y borrado) y realizar consultas simples y complejas.
+>
+> **Se lee así:** la lámina (p. 3) es la que **organiza toda la unidad**, porque divide SQL en dos grupos. Arriba, el **ideal** de un lenguaje de bases de datos: crear bases de datos y estructuras de relaciones, ejecutar tareas de administración de datos (inserción, modificación y borrado) y realizar consultas simples y complejas, todo *"con un mínimo esfuerzo"*. Abajo, la **división oficial**: **DDL** (*Data Definition Language*), para definir la estructura de la base y controlar el acceso a los datos; y **DML** (*Data Manipulation Language*), para recuperar y actualizar datos.
+>
+> **Por qué importa:** la frase que cierra la lámina es la más importante de toda la unidad de SQL: *"SQL es un lenguaje en donde se especifica **qué** datos se requiere obtener, en lugar de **cómo** se obtienen. El cómo se obtienen se refiere al método de acceso"*. Esa es la definición de **declarativo**, y es la que explica el diagrama del principio de la nota: tú pides el qué, el optimizador decide el cómo (índices, joins, orden).
+>
+> **Ejemplo:** la diferencia se ve entre `SELECT * FROM VENTA WHERE CANTIDAD > 50` y un `SELECT` con `JOIN`s explícitos, índices forzados y `ORDER BY` manual. El primero dice *"dame las ventas de más de 50 unidades"* y deja que el motor decida. El segundo dice *"cómo* obténgalas" — y por eso el primero es el que se puede **optimizar** y el segundo, no.
 
 ---
 
@@ -121,19 +130,38 @@ tags: [TICG1018, unidad4, sql, introduccion, estandares, bd]
 > `CHAR(20)` guarda exactamente 20 caracteres (rellena con espacios si es necesario). `VARCHAR(50)` guarda solo los caracteres que se escriben, ahorrando espacio.
 
 > [!info] 📖 El deck de cátedra: los tipos de datos del estándar (slides06, pp. 4-7)
+>
 > El estándar SQL no se queda en "texto y número": separa los tipos en escalares exactos, aproximados, de cadena, de fecha y de intervalo.
-> 
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p4.png]]
+>
+> **Se lee así:** la lámina (p. 4) es la **portada del bloque**: *"Data Definition: Tipos de datos SQL"*. Es un separador, pero conviene saber que existe porque te dice que lo que viene es **DDL**: la definición de la estructura. Los tipos de datos son parte de la **estructura**, no de los datos.
+>
+> **Por qué importa:** esa distinción es la que separa DDL de DML. `INT`, `VARCHAR(30)` y `DECIMAL(10,2)` son **declaraciones de estructura**: viven en el `CREATE TABLE` y se cambian con `ALTER TABLE`. Un `INSERT` no declara un tipo: solo mete un valor en una estructura que ya lo tiene.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p5.png]]
-> 
-> **Tipos escalares (p. 5):** *"los tipos character y bit son referidos como strings"*; los numéricos se dividen en *exact* y *approximate*.
-> 
+>
+> **Se lee así:** la lámina (p. 5) es la **taxonomía completa de los tipos escalares**, y hay que leerla como un mapa de **cuatro familias**. La tabla del centro clasifica: `BOOLEAN`; los *character* `CHAR` y `VARCHAR`; los *bit* `BIT` y `BIT VARYNG`; los *exact numeric* `NUMERIC`, `DECIMAL`, `INTEGER`, `SMALLINT`, `BIGINT`; los *approximate numeric* `FLOAT`, `REAL`, `DOUBLE PRECISION`; los *datetime* `DATE`, `TIME`, `TIMESTAMP`; `INTERVAL`; y los *large objects* `CHARACTER LARGE OBJECT` y `BINARY LARGE OBJECT`.
+>
+> **Por qué importa:** fíjate en el detalle de la esquina inferior derecha: *"character consiste en una secuencia de caracteres. Cuando se define una columna de este tipo se debe especificar la longitud: fija o variable. Ejemplo: `branchNo CHAR(4)`, `address VARCHAR(30)`"*. Ahí está el origen de la discusión `CHAR` vs `VARCHAR` de esta nota: en el estándar son **dos tipos distintos**, no una abreviatura del mismo.
+>
+> **Ejemplo:** `branchNo CHAR(4)` es el código de sucursal: siempre 4 caracteres, padded con espacios. `address VARCHAR(30)` es la dirección: hasta 30, los que se escriban. Si el estándar no hubiera distinguido longitud fija de variable, el motor no podría saber cuánto espacio reservar.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p6.png]]
-> 
-> **Numéricos exactos (p. 6):** *"números con una representación exacta"*, que *"consisten de precisión y escala"*: precisión = dígitos totales (parte entera + decimal), escala = dígitos a la derecha del punto.
-> 
+>
+> **Se lee así:** la lámina (p. 6) desarrolla los **numéricos exactos**: *"números con una representación exacta. Consisten de precisión y escala: la precisión es el número de dígitos que incluye los de la parte entera y decimal. La escala es el número de lugares decimales"*. Y el ejemplo visual es el que hay que recordar: `1 2 . 3 4 5` → **precisión 5, escala 3**. Los tipos de esta familia son `NUMERIC(precision, scale)`, `DECIMAL(precision, scale)`, `INTEGER`, `SMALLINT` y `BIGINT`.
+>
+> **Por qué importa:** la **precisión y la escala son cosas distintas**, y confundirlas es el error más común al elegir un tipo. La precisión es el **tope de dígitos**; la escala es **cuántos de esos dígitos son decimales**. `DECIMAL(10,2)` admite hasta 8 dígitos enteros y 2 decimales, no "10 enteros y 2 decimales".
+>
+> **Ejemplo:** el deck propone un caso real: una columna `rooms` que representa el número de cuartos de una propiedad → `rooms SMALLINT`. La razón es que el rango de `SMALLINT` (hasta 32767) es de sobra y ocupa menos espacio que `INTEGER`. Elegir el tipo más **justo** para el dominio es lo que hace un diseño sólido.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p7.png]]
-> 
-> **Numéricos aproximados (p. 7):** representación inexacta, con notación similar a la científica donde la precisión es la mantisa; `FLOAT(precisión)` y `DOUBLE PRECISION` para cálculos con decimales.
+>
+> **Se lee así:** la lámina (p. 7) cierra con los **numéricos aproximados** y los demás grupos. Aproximados: *"números con una representación inexacta. La notación es similar a la notación científica, donde la precisión es la mantisa"*, con los tipos `FLOAT[precision]`, `REAL` y `DOUBLE PRECISION`. `datetime`: `DATE` (con `YEAR`, `MONTH`, `DAY`), `TIME` (con `HOUR`, `MINUTE`, `SECOND`) y `TIMESTAMP` (que guarda DATE y TIME juntos). Y *large objects*: `BLOB` (binario) y `CLOB` (texto largo), para archivos de texto largos o archivos gráficos.
+>
+> **Por qué importa:** la diferencia entre **exacto** y **aproximado** no es cosmética, es de **resultados**. En un tipo exacto, `0.1 + 0.2 = 0.3` (el motor guarda la representación decimal exacta). En un tipo aproximado (binario en coma flotante), el resultado puede ser `0.30000000000000004`. Por eso **los valores de dinero nunca deben ir en `FLOAT`**: van en `DECIMAL`, y el error de redondeo se acumula en cada suma.
+>
+> **Ejemplo:** una columna `precio DECIMAL(10,2)` guarda `19.99` exacto. La misma columna como `FLOAT` devolvería `19.989999999999998` al consultarla, y al sumar 1000 precios el total no cuadra con el centavo. Es el motivo por el que los motores  el error "no uses FLOAT para dinero".
 
 ---
 

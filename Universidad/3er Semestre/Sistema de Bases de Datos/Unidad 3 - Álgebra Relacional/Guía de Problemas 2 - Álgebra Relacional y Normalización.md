@@ -102,19 +102,32 @@ tags: [TICG1018, unidad3, guia, taller2, algebra-relacional, normalizacion, bd]
 > | `τ precio desc (PRODUCTO)` | 105, 101, 104 — del más caro al más barato |
 
 > [!info] 📖 El deck de cátedra: cada operador con su figura (slides05, pp. 4-27)
+>
 > El deck del Ing. Magallanes recorre el álgebra relacional operador por operador, con ejemplos numéricos. Estas son las figuras que corresponden al catálogo de arriba.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p5.png]]
 >
-> > **Selección (p. 5):** la condición puede ser uno o varios términos unidos con operadores lógicos (`and`, `∧`, `or`, `∨`). El ejemplo del deck: `σ type='laptop' ∧ model≥2005 (Product)`.
+> **Se lee así:** la lámina (p. 5) es la **selección con dos condiciones encadenadas**, y por eso es la que explica cómo se combinan. La tabla `Product` tiene seis filas (`maker, model, type`): cuatro `pc` (1001-1003) y dos `laptop` (2004, 2005)… y la condición es `σ type='laptop' ∧ model≥2005 (Product)`. Debajo, el resultado `R` con solo las filas que cumplen **las dos** condiciones a la vez: `A · 2005 · laptop` y `A · 2006 · laptop`. Abajo del todo, la **forma general**: `R2 = σ <condición> (R1)`, con la nota *"operar sobre la nueva relación"*.
+>
+> **Por qué importa:** el `∧` es lo que cambia respecto a la selección simple: con `type='laptop'` solo, saldrían también los modelos 2004 y 2006… es decir, `model≥2005` **filtra dentro** del resultado anterior. Y la forma general de abajo es la que se repite en todo el tema: **cada operador recibe una relación y devuelve otra relación**, así que se pueden encadenar sin problemas.
+>
+> **Ejemplo:** el `A` en la primera columna es el *maker* (el fabricante), no una letra de la condición. La condición completa se lee: de todos los productos, quédate con los que son *laptop* **y** además son del modelo 2005 en adelante. La conjunción se evalúa primero y el resultado se puede ir acotando paso a paso.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p7.png]]
 >
-> > **Proyección y composición (p. 7):** `π maker, type (σ type='laptop' ∧ model≥2005 (Product))` — el deck dibuja el **diagrama de ejecución** con los pasos numerados (3 → 2 → 1) y el resultado. Es la mejor explicación de por qué se proyecta *después* de filtrar.
+> **Se lee así:** la lámina (p. 7) es **la composición de operaciones** — dos operadores encadenados: `π maker, type (σ type='laptop' ∧ model≥2005 (Product))`. Y lo interesante es que la lámina dibuja un **diagrama de ejecución con los pasos numerados en orden inverso**: `3 → 2 → 1`. El resultado final tiene solo dos columnas (`maker`, `type`) con tres filas: `A · laptop`, `F · laptop`, `G · laptop`.
+>
+> **Por qué importa:** ese diagrama de ejecución es la explicación visual de por qué **se proyecta después de filtrar**. El paso 1 (abajo) es la selección, el 2 es la proyección y el 3 es el resultado; pero el motor **los ejecuta al revés**, de adentro hacia afuera: primero filtra (1), luego proyecta (2), y por último entrega (3). El orden de escritura va de afuera hacia adentro; el de ejecución, de adentro hacia afuera.
+>
+> **Ejemplo:** los makers `A`, `F` y `G` que salen son los que tienen **algún** laptop del modelo 2005 en adelante. Fíjate en que `F` y `G` no estaban en el `Product` de la lámina anterior: son filas que la selección anterior no mostraba porque esa lámina usaba otros datos. La idea no cambia: el resultado tiene **menos columnas** y **solo las filas que cumplen la condición**.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p9.png]]
 >
-> > **Producto cartesiano (p. 9):** el ejemplo `Department ⨯ Course` del deck muestra por qué el producto casi nunca es lo que quieres — de ahí la necesidad del join.
+> **Se lee así:** la lámina (p. 9) es el **producto cartesiano con el esquema del resultado**, y es la lámina que mejor explica por qué el `×` casi nunca se quiere. `Department` tiene 3 filas (Biology, Comp. Sci., History) y `Course` tiene 4 (BIO-301, BIO-399, CS-101, CS-190) → **12 filas**. La lámina dibuja además el esquema del resultado: `R(department.dept_name, department.building, department.budget, course.course_id, course.title, course.dept_name, course.credits)` — y avisa: *"en caso de que R1 y R2 tengan columnas con el mismo nombre, el resultado tendrá estas 2 columnas"*.
+>
+> **Por qué importa:** fíjate en el esquema: aparecen **`department.dept_name` y `course.dept_name`**, las dos. Es el detalle técnico que distingue el producto cartesiano del natural join: el producto **conserva las dos columnas** aunque se llamen igual, y para poder distinguirlas el motor las califica con el nombre de la tabla. Ese es el motivo por el que el `×` se llama también "producto cruzado con esquema-qualified".
+>
+> **Ejemplo:** de las 12 filas, solo 4 tienen sentido: cada curso con **su** departamento. Las otras 8 emparejan un curso de Biology con el edificio de Comp. Sci. y así sucesivamente. De ahí la necesidad del join.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p15.png]]
 >
@@ -122,19 +135,30 @@ tags: [TICG1018, unidad3, guia, taller2, algebra-relacional, normalizacion, bd]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p18.png]]
 >
-> > **Joins (pp. 15-18):** el deck presenta el **natural join** (`department ⨝ course`), el **left outer join** (`R ⟕ S`) y el **theta join** (`R ⨝c S`), con el resultado tabulado en cada caso.
+> **Se lee así (los joins, pp. 15-18):** estas tres láminas son el bloque de joins del deck, y se leen como una progresión. La **p. 15** es el natural join (`department ⨝ course`): el resultado tiene `dept_name` **una sola vez** y las filas que no casan desaparecen. La **p. 16** es el *left outer join* (`R ⟕ S`): las filas de `R` que no encuentran pareja se quedan con `-` en las columnas de `S`. Y la **p. 18** es el *theta join* (`R ⨝c S`): un join con **cualquier condición de comparación**, y con el aviso de que si la condición solo tiene igualdades, es un *equi-join*.
+>
+> **Por qué importa:** la diferencia entre las tres se ve en **qué filas sobreviven**. En el natural join sobreviven las que casan por las dos partes; en el left outer sobreviven **todas** las de la izquierda; en el theta join lo decide la condición `C`, que puede ser cualquier cosa. Si solo te sabe una de las tres, es casi seguro que la vas a confundir con otra.
+>
+> **Ejemplo:** en la p. 16, el curso `CS-190 Game Design` aparece con `dept_name = -` porque no tiene departamento asignado, y el departamento `History` aparece con todos los campos de `course` en `-` porque no tiene cursos. En la p. 15, en cambio, History **desaparece**: es un join interno.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p20.png]]
 >
-> > **División (p. 20):** *"es útil para consultas que incluye la expresión 'para todo' o 'para cada'"* — es el operador del ejercicio de la casa que pide los items ordenados por todos los clientes.
+> **Se lee así (la división, p. 20):** la lámina es el ejemplo numérico de la división, con `A(sno, pno)` y los divisores `B1`, `B2` y `B3`. La regla que rotula la lámina es: *"el resultado de la división contiene todos los valores de las columnas no comunes, que están asociadas con todas las filas del divisor"*. Los resultados son `A ÷ B1 = {s1, s2, s3, s4}`, `A ÷ B2 = {s1, s4}` y `A ÷ B3 = {s1}`.
+>
+> **Por qué importa:** la palabra clave de la lámina es **"todas"**. La división no es un join: un join te da las filas que casan *con alguna* fila de la otra relación; la división te da las que casan *con todas*. Y el caso `B3` muestra la versión fuerte: el divisor puede pedir el mismo valor **dos veces**, y entonces la fila de `A` tiene que dos veces también.
+>
+> **Ejemplo:** `A ÷ B2 = {s1, s4}` quiere decir que `s1` y `s4` son los únicos que aparecen **con todos** los `pno` que pide `B2`. `s2` aparece con `p1` y `p2` pero le falta `p4`, así que no sale. Esa es exactamente la lógica de "ítems ordenados por todos los clientes".
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p24.png]]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p26.png]]
 >
-> > **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el **agrupamiento** aplica la función por grupos de datos.
+> **Se lee así (las agregaciones, pp. 24 y 26):** la **p. 24** explica la agregación sin agrupar: `G sum(rating) (R)` sobre la relación `Marinero` (`mid, mnombre, rating, edad`) da `135`; `G max(rating) (R)` da `10`; `G min(edad) (R)` da `35`; `G avg(rating) (R)` da `8.3`; `G count(rating) (R)` da `3`. Y explica la notación: *"Gamma significa que se debe aplicar una función agregación, y el subíndice indica la operación de agregación a aplicar"*. La **p. 26** añade el **agrupamiento**: `nombre-sucursal G sum(sueldo) (R)` da `Centro · 5300`, `Leganés · 3100`, `Navacerrada · 8100`.
 >
+> **Por qué importa:** las dos láminas juntas explican por qué el `G` (o `γ`) del álgebra **no se parece** al `GROUP BY` de SQL: en álgebra el agrupamiento va **dentro del operador** (`γ columna-de-agrupamiento; función → atributo`), mientras que en SQL es una cláusula aparte (`GROUP BY columna`). No es que sean distintos: es que el álgebra mete en una sola caja lo que SQL separa en dos.
 >
+> **Ejemplo:** `G sum(rating) (R)` sin columna de agrupamiento es el agregado global: una sola fila con la suma de todos los ratings. `nombre-sucursal G sum(sueldo) (R)` es el agregado por grupo: una fila por cada valor distinto de `nombre-sucursal`. El primero responde *"¿cuánto es el total?"*; el segundo, *"¿cuánto es el total de cada sucursal?"*.
+
 #### ✏️ Ejercicio 1 — Pasajeros del vuelo 777 "boeing" de American Airlines
 > [!example]- 📝 Enunciado y desarrollo
 >

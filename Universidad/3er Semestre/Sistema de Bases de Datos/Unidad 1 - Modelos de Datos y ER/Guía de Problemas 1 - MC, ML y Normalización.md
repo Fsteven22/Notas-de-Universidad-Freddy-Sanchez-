@@ -398,6 +398,12 @@ tags: [TICG1018, unidad1, guia, taller1, modelo-conceptual, normalizacion, bd]
 >
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej11-diagrama-dependencias.svg]]
+>
+> **Se lee así:** el diagrama es el **diagrama de dependencias del ejercicio 11**, y se lee como una colección de flechas donde cada flecha dice *"lo de la izquierda determina a lo de la derecha"*. La PK compuesta `(cod_estud, cod_curso)` tiene una sola flecha: hacia `nota_final` — la nota depende de **las dos** columnas a la vez (dependencia **completa**). `cod_estud` tiene su flecha hacia `nombre_estud` y `correo_estud`. `cod_curso` tiene dos flechas: hacia `nomb_curso` y `horas_curso`, y hacia `cod_instructor`. Y `cod_instructor` tiene la suya hacia `nomb_instructor`.
+>
+> **Por qué importa:** el diagrama **ya dice cuál es el problema**, solo que hay que saber mirarlo. Hay tres tipos de flecha y cada uno pide una partición distinta. Las flechas que salen de **una parte de la PK** (`cod_estud` y `cod_curso`) son **parciales** → 2FN. Las flechas que salen de `cod_instructor`, que **no es parte de la PK**, son **transitivas** → 3FN. Y la flecha que sale de la PK **completa** (`nota_final`) es la única que **no se mueve**.
+>
+> **Ejemplo:** la cadena `cod_curso → cod_instructor → nomb_instructor` es el ejemplo perfecto de transitiva: `nomb_instructor` no depende de la PK, depende de un intermediario (`cod_instructor`). Por eso `nomb_instructor` termina en la tabla `INSTRUCTOR` y no en `CURSO`. Y `nota_final`, en cambio, se queda en la tabla intermedia porque depende de la PK completa.
 > - 📌 Se pide:
 >   - 1) Clave primaria.
 >   - 2) Dependencias parciales.
@@ -469,6 +475,14 @@ tags: [TICG1018, unidad1, guia, taller1, modelo-conceptual, normalizacion, bd]
 > **📊 Diagrama de la solución** — dibuja el tuyo primero y compara al abrir la clave.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej12-modelo-3fn.svg]]
+>
+> **Se lee así:** el diagrama es **el esquema final en 3FN** del ejercicio 12, con las cuatro tablas y sus etiquetas. `VENDEDOR(vendedor_id PK, nombre, servidor_id FK)`, `PRODUCTO(producto_id PK, nombre, precio)`, `SERVIDOR(servidor_id PK, region)` y `VENTA(vendedor_id PK FK, producto_id PK FK, fecha, cantidad)`. Las relaciones van rotuladas con verbo: `VENDEDOR ||--o{ VENTA : realiza`, `PRODUCTO ||--o{ VENTA : incluye` y `SERVIDOR ||--o{ VENDEDOR : aloja`.
+>
+> **Por qué importa:** fíjate en **dónde está cada dato** y por qué. `nombre` del vendedor vive en `VENDEDOR` y `precio` en `PRODUCTO` porque cada uno depende de su propio identificador. `region` vive en `SERVIDOR` porque `servidor_id → region` (la transitiva del ejercicio). Y `VENTA` es la **tabla intermedia** de la relación N:N entre vendedor y producto, con su PK compuesta y su atributo propio `cantidad`.
+>
+> **Ejemplo:** la prueba de que el modelo quedó bien es que **cada hecho vive en un solo lugar**. `SERVER` es un ejemplo: `servidor_id` está en `VENDEDOR` como FK, pero la `region` solo está en `SERVIDOR`. Si el servidor cambia de región, hay un solo `UPDATE` que lo cambia, por más vendedores que tenga.
+>
+> **Por qué importa (la comparación):** este diagrama es lo que la rúbrica del examen llama *"el esquema relacional obtenido en cada etapa"*. La clave para comparar no es si tu diagrama se ve igual, sino si **cada flecha del diagrama de dependencias se respetó**: toda flecha que sale de una parte de la PK debe haber producido una tabla propia, y toda flecha que sale de un atributo no-clave también.
 >
 > > [!success]- Solución (la del examen)
 > > - DF adicionales:
@@ -575,9 +589,21 @@ tags: [TICG1018, unidad1, guia, taller1, modelo-conceptual, normalizacion, bd]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dep-flow.svg]]
 >
+> **Se lee así:** este es el **mismo diagrama de dependencias del ejercicio 15** que el de abajo, pero con una **pregunta añadida** sobre `F`: el nodo dice *"F ¿? transitiva"*. Las flechas del resto son las del enunciado: `K → A, B`; `C → D, E, F`; y `D → F`. La pregunta es si esa tercera flecha (`D → F`) constituye una dependencia transitiva.
+>
+> **Por qué importa:** es la **pregunta que hay que responder antes de partir la tabla**, y la forma de responderla es aplicar la definición literal: hay transitiva si `X → Y` y `Y → Z`, **pero no** `X → Z`. Aquí `C → F` **existe** (está en la misma flecha `C → D, E, F`), así que **no hay transitiva**: `F` depende de `C` **directamente**. La flecha `D → F` es una dependencia de `D`, no una cadena.
+>
+> **Ejemplo:** el resultado es que `F` se queda en la tabla de `C`. `D` sí se va a su propia tabla (`D_TABLA(D PK, F)`) porque `D → F` es una dependencia de la clave `D`; pero `F` **no** depende transitivamente de `C`, así que no se separa en otra tabla. Esa distinción es la que separa una respuesta correcta de una que parte de más.
+>
 > > [!success]- Solución guiada
 > > - Diagrama de dependencias:
 > > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej15-dependencias.svg]]
+>
+> **Se lee así:** el diagrama es el **diagrama de dependencias limpio** del ejercicio 15, y es la versión "de estudio" (sin la pregunta de la lámina anterior). `K → A, B`; `C → D, E, F`; `D → F`. Los nodos son deliberadamente genéricos — `K`, `A`, `B`, `C`… — porque el ejercicio pide **razonar sobre la forma** y no sobre nombres de negocio.
+>
+> **Por qué importa:** es el **mapa del ejercicio**, y hay que recorrerlo en orden. (1) La **1FN** falla porque `C` trae listas (el enunciado lo dice: *"1FN: C trae listas → separa con PK (K, C)"*). (2) Una vez separadas, la PK es `(K, C)` y las flechas `K → A, B` y `C → D, E, F` son **parciales**: hay que partir en `K_TABLA(K PK, A, B)`, `C_TABLA(C PK, D, E, F)` y el `PUENTE(K PK/FK, C PK/FK)`. (3) La **3FN** solo tiene trabajo si hay transitiva, y aquí la pregunta es si `D → F` lo es.
+>
+> **Ejemplo:** fíjate en por qué aparece `PUENTE(K PK/FK, C PK/FK)`: como `K` y `C` están en listas, la relación que las une es N:N y necesita **tabla intermedia**. Sus dos FKs forman la PK compuesta y no lleva atributos propios, porque la relación no tiene datos propios: solo la existencia de la combinación.
 > > - 1FN: C trae listas → separa con PK (K, C).
 > > - 2FN (fuera parciales sobre (K, C)):
 > >   - K_TABLA(K PK, A, B).

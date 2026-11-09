@@ -28,6 +28,12 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > | **Regla de oro** | Qué existe | Cómo se guarda |
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-01-graph.svg]]
+>
+> **Se lee así:** el diagrama es la **tubería de cuatro pasos** que convierte un modelo conceptual en una base de datos lista para usarse: (1) *modelo conceptual ER* → (2) *tablas con sus claves* → (3) *normalizar (1FN…)* → (4) *diccionario de datos*. Cada flecha es un entregable distinto: el ER es un dibujo, las tablas son el esquema, la normalización es el ajuste, y el diccionario es la documentación que acompaña al esquema.
+>
+> **Por qué importa:** el paso 4 es el que casi nadie hace y el que más se nota en un parcial. Un modelo lógico sin diccionario de datos no es entregable: el diccionario es donde se escribe **qué significa cada columna, de dónde viene y qué restricción tiene**. Si te piden "entregable de la Unidad 2", son estos cuatro, no solo el paso 2.
+>
+> **Ejemplo:** para el ER de la cátedra, el paso 1 da `ESTUDIANTE`, `MATERIA`, `MATRICULA`; el paso 2 da `ESTUDIANTE(carnet, …)`, `MATERIA(codigo, …)`, `MATRICULA(carnet, codigo, nota)` con las FK ya puestas; el paso 3 revisa que `MATERIA` no tenga atributos multivaluados; y el paso 4 describe cada columna de `MATRICULA` (qué es `nota`, de qué tabla viene `codigo`, y qué valores admite).
 
 ---
 
@@ -120,14 +126,25 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > 5. **Especiales:** supertipo/subtipo, dependencia, recursiva (ver sección).
 > 6. **Normaliza** el esquema resultante (mínimo [[02 - Primera forma normal y diccionario de datos|1FN]]).
 
-> [!info] 📖 El deck de cátedra: los puntos clave de la conversión (slides3, pp. 13-15)
+> [!info] 📖 El deck de cátedra: los puntos clave de la conversión (slides3, pp. 13-16)
+>
 > El deck del Ing. Magallanes enuncia las mismas reglas, con la formulación del docente: *"las relaciones del MER se clasifican como uno a uno (1:1), uno a muchos (1:N) y de muchos a muchos (M:N o N:N)"*.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
 >
-> **El objetivo (p. 14):** *"traducir un modelo conceptual a un modelo lógico y luego validar si este modelo es de una estructura correcta"*.
+> **Se lee así:** la lámina (p. 16) es el **caso fuerte vs débil en forma de esquema**, y es la mejor forma de aprender la diferencia: `COURSE(CRS_CODE, CRS_DESCRIPTION, CRS_CREDIT)` es la entidad **fuerte** — tiene clave propia y `Foreign Key: -` (nadie la referencia). `CLASS(CLASS_CODE, CRS_CODE, CLASS_SECTION, CLASS_TIME)` es la **débil** — su `Foreign Key: CRS_CODE` apunta a `COURSE`. Y el deck remata: *"existe una clave compuesta y una clave parcial"*. En la versión débil, `CLASS` se dibuja con `CRS_CODE` **dentro** de sus propias columnas: la PK de la fuerte viaja dentro de la débil.
 >
-> **Las estructuras que se derivan (p. 15):** entidad fuerte · entidad débil · relación binaria… — el deck cierra la lista con los casos especiales que esta nota develops en las reglas 5-8.
+> **Por qué importa:** fíjate en la diferencia de criterio entre las dos versiones de `CLASS` que da la lámina. En la **fuerte**, `CLASS` lleva `CRS_CODE` como simple FK y su PK es `CLASS_CODE` sola. En la **débil**, `CRS_CODE` pasa a formar parte de la **clave primaria compuesta**: `(CLASS_CODE, CRS_CODE)`. La misma realidad, dos decisiones de clave, y por eso la PK compuesta es la señal de que has identificado una entidad débil.
+>
+> **Ejemplo:** un `CLASS` sin `CRS_CODE` no existe como concepto: no hay "clase 1" en el aire, hay "clase 1 **de SBD1**". Esa dependencia de existencia es exactamente lo que obliga a que `CRS_CODE` entre en la PK. Cambia a entidad fuerte solo si el negocio permite una clase sin curso — y entonces la clave compuesta sobra.
+>
+> **Se lee así (la lámina anterior, p. 13):** el deck da el **criterio de diseño** que hay detrás de las reglas de esta nota, y son cuatro frases que se preguntan en examen: (1) las relaciones del MER se clasifican en 1:1, 1:N y M:N, y para pasar del MER al MR hay que aplicar reglas de transformación; (2) *"la relación 1:N es la ideal del modelamiento relacional, por tanto este tipo de relación debería ser la norma en cualquier diseño"*; (3) *"la relación 1:1 sería poco común en cualquier diseño"*; (4) *"las relaciones N:N no se pueden implementar como tales en el modelo relacional"*, y luego se verá cómo se convierten en dos 1:N.
+>
+> **Por qué importa:** el punto (4) es el que explica por qué la regla 2 (M:N → tabla intermedia) no es una manía del profe: es una **imposibilidad técnica** del modelo relacional. Y el punto (2) es el criterio para elegir: si tu diseño tiene muchas N:N o 1:1, es señal de que el modelo conceptual está mal, no de que el relacional sea limitado.
+>
+> **Por qué importa (el objetivo, p. 14):** el deck define el objetivo de toda la unidad: *"traducir un modelo conceptual a un modelo lógico y luego validar si este modelo es de una estructura correcta que sea capaz de soportar los requerimientos"*. Y da las **tareas** que hay que cumplir: derivar las relaciones, validarlas con normalización, validarlas contra las transacciones del usuario, verificar las restricciones de integridad, revisar el modelo con el usuario y verificar el crecimiento futuro.
+>
+> **Ejemplo:** fíjate en que solo una de esas seis tareas es "convertir". Las otras cinco son **validar**. Ese es el cambio de mentalidad de la unidad: la conversión es mecánica, lo difícil es comprobar que el resultado aguanta las transacciones, la integridad y el futuro. Por eso la Unidad 2 no termina al sacar las tablas, sino al normalizar y revisar con el usuario.
 
 ### 🔍 Regla 1 — Entidades → tablas directas
 

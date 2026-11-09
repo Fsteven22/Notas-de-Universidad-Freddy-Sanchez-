@@ -173,6 +173,12 @@ tags: [TICG1018, unidad2, normalizacion, paso-a-paso, bd]
 > > Resultado: 4 tablas, 0 duplicados. Cambiar el nombre de un instructor toca **una** fila.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-04-04-er.svg]]
+>
+> **Se lee así:** el diagrama es **el modelo final del ejercicio**, con las cuatro tablas ya separadas: `ESTUDIANTE(cod_estud PK, nomb_estud)`, `CURSO(cod_curso PK, nomb_curso, creditos, cod_instructor FK)`, `INSTRUCTOR(cod_instructor PK, nomb_instructor)` y `MATRICULA(cod_estud PK FK, cod_curso PK FK, nota_final)`. Las tres relaciones llevan etiqueta en singular: `ESTUDIANTE ||--o{ MATRICULA : "matricula"`, `CURSO ||--o{ MATRICULA : "recibe"` y `INSTRUCTOR ||--o{ CURSO : "dicta"`.
+>
+> **Por qué importa:** fíjate en que `MATRICULA` es **la única tabla con PK compuesta** (dos columnas marcadas `PK, FK`) y también la única con un atributo propio, `nota_final`. Esa es la señal de que era una relación N:N: la PK compuesta es la huella de la tabla intermedia. Y fíjate en que `CURSO` **conserva** `cod_instructor` como FK: el curso sigue sabiendo quién lo dicta, pero ya no repite el nombre del instructor.
+>
+> **Ejemplo:** la prueba de que el modelo está bien es que **cada dato vive en un solo lugar**. El nombre del instructor está en `INSTRUCTOR` y en ninguna otra tabla. Si el instructor cambia de nombre, hay un solo `UPDATE` que lo cambia, y no importa cuántos cursos dicta ni cuántos alumnos lo tienen matriculado.
 
 ---
 

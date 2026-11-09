@@ -17,6 +17,12 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > - **Lección 1 (13-oct):** definir cada pieza con ejemplo propio es pregunta segura.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-01-graph.svg]]
+>
+> **Se lee así:** el diagrama es un ERD mínimo con **las cinco piezas del vocabulario** ya en su sitio. `ESTUDIANTE` y `MATERIA` son **entidades** (rectángulos) y cada una lleva su **clave** escrita debajo (`carnet`, `codigo`). Los rombos son **relaciones y su verbo**: `realiza`, `contiene`, `dicta`. Y fíjate en que `MATRICULA` está en medio: es una entidad que también es el resultado de una relación — el caso donde la relación se convierte en tabla.
+>
+> **Por qué importa:** este es el **patrón de lectura** que se repite en toda la unidad. Ante cualquier ERD: busca los rectángulos (entidades), mira qué clave lleva cada uno (identificador), lee los rombos en voz alta (relación + verbo) y fíjate en si hay un rombo con atributos propios (relación que se vuelve tabla).
+>
+> **Ejemplo:** `PROFESOR --dicta--> MATERIA` se lee "un profesor dicta una materia". Si al leerlo en voz alta el verbo te suena raro o no encaja con las reglas de negocio, el diagrama está mal — aunque el dibujo "se vea bien".
 
 ---
 
@@ -60,18 +66,29 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Se lee así:** ante un atributo pregunta *¿uno o varios?* (multivaluado), *¿se parte?* (compuesto), *¿se calcula?* (derivado). Lo que sobre es simple.
 
-> [!info] 📖 El deck de cátedra: la taxonomía de atributos en figuras (slides02, pp. 7-10)
+> [!info] 📖 El deck de cátedra: la taxonomía de atributos en figuras (slides02, pp. 5-10)
+>
 > El deck del Ing. Magallanes recorre los tipos de atributo con su figura: el **compuesto** (un número de teléfono se subdivide en código de país, código de área y número), el **multivaluado** y el **derivado**.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p5.png]]
 >
+> **Se lee así:** la lámina (p. 5) es la **portada del modelo**: *"¿Qué es el Modelo Entidad Relación?"*. Da tres datos que sí se preguntan en examen: el E/R es un modelo **conceptual** (alto nivel, independiente del DBMS), lo ideó **Peter Chen en 1976-1977**, y nació con tres conceptos (entidad, relación, atributo) a los que después se añadieron los compuestos y las generalizaciones — por eso ahora se llama **E/R Extendido**. También aclara que hay otras notaciones (Crow's Foot, modelo orientado a objetos) y que la cátedra usa **Chen y Crow's Foot**.
+>
+> **Por qué importa:** que el E/R sea *conceptual* es lo que te permite usarlo antes de elegir motor. Chen lo inventó justamente para poder hablar del negocio sin saber nada de MySQL. Y el dato histórico (Chen, 1976-77) es pregunta clásica de examen.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p8.png]]
+>
+> **Se lee así:** la lámina (p. 8) mete dos conceptos que el Chen "a secas" no trae: el **atributo requerido** y el **dominio**. Requerido = *"debe tener valor o no puede ser vacío"* (Not null): en la figura, los atributos en negrita de Estudiante son obligatorios, mientras que el email es **opcional** porque hay estudiantes que no lo tienen. Y el **dominio** es el conjunto de valores permitidos: el atributo `Sexo` solo puede ser `Masculino` o `Femenino`, nada más.
+>
+> **Por qué importa:** requerido/opcional no es un detalle de dibujo, es una **restricción** que viaja hasta el `NOT NULL` del SQL, y el dominio es el `CHECK` o el `ENUM`. Si los distingues en el modelo, el motor te los va a reclamar más tarde; si no los distingues, la base de datos te va a sorprender con datos basura.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p10.png]]
 >
-> **Atributo requerido (p. 8):** *"un atributo que debe tener valor o no puede ser vacío (Not null)"*.
+> **Se lee así:** la lámina (p. 10) confirma tu taxonomía con un ejemplo por tipo: **compuesto** (el teléfono se subdivide en código de país + código de área + número), **multivaluado** (una persona con varias direcciones) y **derivado** (la edad se calcula desde la fecha de nacimiento).
 >
-> **Identificadores (p. 9):** *"uno o más atributos que identifican a cada instancia de una Entidad"* — en el modelo relacional, la entidad es una tabla y el identificador es la clave primaria.
+> **Por qué importa:** cada uno de los tres tiene una consecuencia distinta en el modelo lógico. El **compuesto** se despliega en columnas (`tel_pais`, `tel_area`, `tel_num`). El **multivaluado** se va a una tabla aparte — y es justamente lo que rompe la 1FN, como verás en la Unidad 2. El **derivado** **no se guarda**: se calcula con `edad = YEAR(NOW()) - fecha_nac` cuando lo necesites, porque guardar una edad es guardar un dato que envejece solo.
+>
+> **Ejemplo:** en `ESTUDIANTE`, `telefono` es compuesto, `direcciones` es multivaluado, y `edad` es derivado — **no existe como columna**. Esto último es pregunta de examen clásica: *¿qué atributo de la tabla `ESTUDIANTE` no debería estar guardado?*
 
 ### 3️⃣ Relación — el verbo que conecta
 
@@ -84,25 +101,38 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > **Ejemplo:** *toma* conecta ESTUDIANTE con MATERIA. Sin verbo no hay relación (ver Error 1: línea muda).
 
 > [!info] 📖 El deck de cátedra: relación, cardinalidad y grado (slides02, pp. 11-19)
+>
 > *"Una Relación representa a un conjunto de asociaciones entre las instancias u ocurrencias de Entidades"* (p. 12). El deck dibuja la cardinalidad con el par (mín, máx) por lado.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p13.png]]
 >
+> **Se lee así:** la lámina (p. 13) define la cardinalidad como *"el número mín y máx de ocurrencias de la Entidad con relación a una ocurrencia de la otra"*, y lo dibuja como un **par ordenado (mín, máx)** pegado a cada entidad. Lo que se tiene que memorizar es el juego de valores: la mínima solo puede ser **0 o 1**, y la máxima solo **1 o N**. Los dos ejemplos de la lámina: `Factura` con `(0,N)` significa que un cliente genera mínimo 0 facturas y máximo varias; `Factura` con `(1,1)` significa que esa factura la genera exactamente un cliente.
+>
+> **Por qué importa:** el par se lee **junto a la entidad que describe**, no a la relación. `Factura (0,N)` junto a Cliente significa "cuántas facturas genera un cliente". Si inviertes el lado, cambias el significado sin cambiar el dibujo — ese es el error clásico de las 1:N.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p15.png]]
 >
-> **Las dos preguntas del deck (p. 14):** para Departamento, *"un empleado trabaja mínimo en cuántos departamentos?"* — si es 0, la participación del empleado es **opcional**; y el máximo define si es 1:1, 1:N o N:N.
+> **Se lee así:** esta lámina (p. 15) es **la que hay que saber dibujar**, porque muestra el mismo modelo N:1 con dos participaciones distintas. En la **figura 1**, `Empleado (0,N)` y `Departamento (0,1)`: *"cada empleado puede trabajar en un departamento"* y *"hay empleados que no trabajan en departamento alguno"* → el departamento es **opcional** para el empleado. En la **figura 2**, `Empleado (0,N)` y `Departamento (1,1)`: *"cada empleado debe trabajar en uno y solo un departamento"* → el departamento es **obligatorio** para el empleado.
 >
-> **Cardinalidad (p. 13):** *"el número mín y máx de ocurrencias de la Entidad con relación a una ocurrencia de la otra"*.
+> **Por qué importa:** la diferencia entre (0,1) y (1,1) es la diferencia entre *"puede no tener jefe"* y *"obligatoriamente tiene jefe"*, y se traduce directo a `NULL` o `NOT NULL` en la FK. La misma pregunta — *"un empleado trabaja mínimo en cuántos departamentos?"* — es la que te da el cero.
 >
-> **Grado (p. 16):** el número de entidades que participan — casi todas son binarias, pero las ternarias y superiores están permitidas.
+> **Ejemplo:** en la práctica, `EMPLEADO(dept_id FK)` con `NOT NULL` significa que todo empleado está asignado; con `NULL` permitido, significa que puede haber empleados pendientes de asignación. Es el mismo ERD, y solo cambia una letra del modelo.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p17.png]]
 >
+> **Se lee así:** la lámina (p. 17) introduce las **relaciones recursivas**, que son las que más confunden. Fig 1: un empleado puede dirigir a muchos empleados `(0,N)` y puede ser dirigido por uno `(0,1)`. Fig 2: un curso puede ser prerrequisito de varios cursos y tener varios prerrequisitos — recursiva **N:N** con `(0,N)` en ambos lados.
+>
+> **Por qué importa:** el deck da además la regla de diseño que lo justifica: en la industria manufacturera es común que una pieza se ensamble con otras piezas del mismo tipo, y en vez de crear una entidad `PIEZA`, `SUBPIEZA`, `SUBSUBPIEZA`... se usa **una sola entidad recursiva**. Igual con `PAIS → PROVINCIA → CIUDAD`: mejor una entidad `LOCALIZACION` recursiva que tres entidades encadenadas.
+>
+> **Ejemplo:** `EMPLEADO` con `FK supervisor_id → EMPLEADO(id)` es recursiva 1:N. Se distingue de la N:N porque en la N:N la PK de la tabla intermedia lleva **las dos** FKs, no una sola.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p19.png]]
 >
-> **Relaciones recursivas (p. 17):** un empleado puede dirigir a muchos empleados (0,N) y ser dirigido por uno (0,1); un curso puede ser prerrequisito de otros.
+> **Se lee así:** la lámina (p. 19) cierra el bloque de cardinalidades con los **cuatro tipos** que te pueden pedir: 1:1, 1:N, N:1 y N:N. El deck los da con un ejemplo verbal: *"en la fig. 'nace' es una relación N:1 y 'reside' es una relación N:N"*. Y añade dos avisos de diseño que son de examen: **una relación N:N se convierte en una nueva entidad en el relacional**, y por eso es normal que una N:N tenga atributos propios (la fecha de la reserva, la nota de la matrícula). También dice que las 1:1 *"son difíciles de encontrar"* y que por cuestiones de diseño relacional *"no aparecen"*.
 >
-> **Los cuatro tipos (p. 19):** *"en la fig. 'nace' es una relación N:1 y 'reside' es una relación N:N"*. El deck avisa: **una relación N:N en el E/R se convierte en una nueva tabla en el relacional** — es la regla 2 de la conversión.
+> **Por qué importa:** fíjate en que N:1 y 1:N son **la misma relación vista desde el otro lado**. La diferencia de nombre solo depende de hacia dónde mires. Y la frase sobre las 1:1 es la que sostiene la regla de "fusión mínima de tablas" de la Unidad 2: si una 1:1 es rara y no aporta nada, se fusiona.
+>
+> **Ejemplo:** `PERSONA --nace--> PAIS` es N:1 (muchas personas, un país); `EMPLEADO --trabaja en--> DEPARTAMENTO` es 1:N (un departamento, muchos empleados). Cambia la flecha y cambia el nombre, no el modelo.
 
 > [!info] 📖 El deck de cátedra: generalización y herencia (slides02, pp. 26-28)
 > *"Car y Truck son sub-clases o especializaciones de Vehicule y por lo tanto heredan los atributos y relaciones"* (p. 28).
@@ -166,6 +196,10 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-08-er.svg]]
 >
+> **Se lee así:** el diagrama trae los **tres casos lado a lado**, para que los compares de un vistazo: `A ||--|| B` (1:1), `C ||--o{ D` (1:M) y `E o{--o{ F` (M:N). Los dos extremos de cada línea son entidades; lo que hay en el medio son los símbolos de multiplicidad. Fíjate en que **la 1:1 usa `||` en los dos lados**, mientras que la 1:M usa `||` en un lado y `o{` en el otro.
+>
+> **Por qué importa:** el diagrama existe para que no tengas que memorizar la nomenclatura suelta: los tres casos están uno al lado del otro y la diferencia se ve en los símbolos. Esta es la forma en que el motor (y MySQL Workbench) dibuja las relaciones, así que leerla te sirve también para leer un diagrama que te entregue el professor.
+>
 > **Leyenda pata de gallo → (x,y):**
 >
 > - Barra `||` = exactamente 1 → (1,1).
@@ -222,6 +256,12 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > **Principio clave:** lo que no está dibujado no existe; lo que no tiene clave no es entidad.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-11-flow.svg]]
+>
+> **Se lee así:** el diagrama es el método de los 6 pasos, pero dibujado como un **ciclo con una compuerta**. Los pasos lineales son: subraya sustantivos y verbos → asigna PK a cada entidad → nombra relaciones con verbo → clasifica en ambas direcciones → anota (x,y) y reglas. Y luego está la **compuerta final**: *¿se lee en voz alta y todo tiene PK?*. Si la respuesta es no, el diagrama **no vuelve al principio**: vuelve al paso 3 (nombrar relaciones con verbo), que es donde casi siempre está el error.
+>
+> **Por qué importa:** que la vuelta sea al paso 3 y no al paso 1 es la información más útil del diagrama. No es que te falte vocabulario o no sepas qué es una entidad: si algo no se lee en voz alta, casi siempre es que **una relación no tiene verbo** o **no la clasificaste en las dos direcciones**.
+>
+> **Ejemplo:** si escribes `ESTUDIANTE --toma--> MATERIA` y no puedes responder *"¿y la materia, qué toma?"*, el problema es el paso 3 o el 4, no el paso 1. Vuelve a esa caja y no rehagas el diagrama entero.
 
 ---
 
@@ -330,7 +370,11 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-18-flow.svg]]
 >
-> Carga el lado 1 primero o violas integridad referencial.
+> **Se lee así:** el diagrama enseña el **error y su remedio en dos ramas**. La rama de arriba (❌) es *"cargar MATRICULA antes que ESTUDIANTE"*, y termina en *"FK apunta a nada → inserción rechazada"*. La rama de abajo (✅) es el orden correcto: *"primero el 1 — ESTUDIANTE, MATERIA; después el N — MATRICULA"*.
+>
+> **Por qué importa:** el motor no te deja meter una fila hija antes que su padre, porque la FK se valida en el momento del `INSERT`. Es la **integridad referencial** funcionando: la base de datos se niega a quedar con una MATRICULA apuntando a un estudiante que no existe.
+>
+> **Ejemplo:** si haces `INSERT` en `MATRICULA` con `carnet = 999` y ese carnet no existe en `ESTUDIANTE`, MySQL te devuelve un error de foreign key. El diagrama te dice por qué: insertaste el N antes del 1.
 
 ### ❌ Error 6: Multivaluado como columna
 

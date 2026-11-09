@@ -25,50 +25,108 @@ tags: [TICG1018, unidad4, guia, taller3, taller4, bd]
 > **Se lee así:** la guía se lee bloque por bloque — cada bloque es un taller independiente con su propia base de datos. El enunciado va arriba de cada ejercicio y la solución va plegada debajo, para que puedas intentar antes de desplegar.
 
 > [!info] 📖 Los enunciados originales de los talleres (capturas de página)
+>
 > Los PDFs de los talleres son material de clase y no se embeben: cada enunciado se cita con la captura de su página y el número de página.
 >
 > **Taller 3 — consultas sobre la base University (`ENUNCIADO.pdf`, p. 1):**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller3-p1.png]]
 >
+> **Se lee así:** el enunciado pide **11 consultas SQL sobre la base `University`**, y están numeradas con su puntaje (de 7 a 13 puntos). Los primeros cinco puntos de cada consulta son la clave: (1) ID, name y dept_name de los instructores cuyo nombre **empiece con "A"** → `LIKE 'A%'`; (2) course_id, title y los créditos **duplicados** (`credits * 2 AS "doble creditos"`) de cursos con créditos **entre 3 y 5** → `BETWEEN` + alias de columna; (3) estudiantes **sin asesor asignado** → `LEFT JOIN` + `IS NULL`; (4) por cada departamento, **incluyendo los que aún no tienen instructores**, su número de instructores → `LEFT JOIN` + `COUNT` + `GROUP BY`; (5) dept_name y **salario promedio** por departamento, solo los que superen **70000**, ordenados de mayor a menor → `HAVING` + `ORDER BY`.
+>
+> **Por qué importa:** la segunda mitad del taller (puntos 8 a 11) es la que cambia de tema: pide explícitamente **operadores de conjuntos** — *"obtener el ID de todas las personas que son estudiantes o instructores del departamento de Comp. Sci (sin duplicados)"* → `UNION`; *"course_id que aparecen en `takes` y en `teaches`"*, con y sin duplicados → `UNION` vs `UNION ALL`; *"course_id que aparecen tanto en `takes` como en `teaches`"* → `INTERSECT`; y *"estudiantes que nunca han tomado ningún curso"* → `EXCEPT`/`MINUS`. Es la traducción literal del bloque de conjuntos de la Unidad 3.
+>
+> **Ejemplo:** el punto 4 es el que mejor resume el taller: para incluir a los departamentos **sin** instructores hay que usar `LEFT JOIN` y contar con `COUNT(i.instructor_id)` en vez de `COUNT(*)`, porque `COUNT(*)` cuenta la fila del `NULL` y daría 1 en vez de 0. El enunciado incluso avisa al final: *"presta atención a la diferencia entre JOIN, LEFT JOIN y RIGHT JOIN al momento de incluir o excluir filas sin coincidencia"*.
+>
 > **Taller 3 2026 — base supermercado (`Taller 3 2026 PAO 1.pdf`, p. 1):**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller3b-p1.png]]
+>
+> **Se lee así:** este taller **no son solo consultas**: tiene cuatro entregables de lo más heterogeneous. (1) **Normalizar un campo**: crear la tabla `linea (id, nombre)` y enlazarla a `producto`, usando **`UPDATE` con `JOIN`**. (2) **Promedio de ventas por sucursal**, sin considerar descuentos. (3) El **producto que más se vende en cada sucursal**, usando `cantidad` de `detalleventa`, y esa consulta **tiene que ser una vista** llamada `vProductoMasVendido` que presente nombre de sucursal, nombre de producto y cantidad de veces vendida, resuelta **con subqueries**. (4) Un **procedimiento** `sPCrearVenta` que recibe producto, tipo de pago y cajero, usando **transacciones**. Y (5) un **disparador** `tgrResumenProductos` que mantenga una tabla de resumen `tblResumenProductos` (id_producto, nombre_producto, cantidad_vendida, valor_ventas) **acumulando** si el producto aparece en una segunda venta.
+>
+> **Por qué importa:** este taller es el **examen final de la materia** disfrazado de ejercicio. Cada bullet es un tema de una unidad distinta: normalizar un campo es **Unidad 2**; el promedio por sucursal es **Unidad 3/4** (agregación); la vista con subqueries es **Unidad 4/03**; el procedimiento con transacciones y el trigger de acumulación son **Unidad 4/03** otra vez; y el `UPDATE` con `JOIN` es la técnica de **migración de datos** que no se explica en las notas pero se pide.
+>
+> **Ejemplo:** el punto (1) tiene una sutileza que conviene ver: el enunciado no pide "borrar el campo `linea`", pide **crear la tabla nueva y enlazarla**. El `UPDATE ... JOIN` es lo que copia los valores del campo texto a la nueva tabla (`UPDATE producto p JOIN linea l ON l.nombre = p.linea SET p.id_linea = l.id`), y **después** hay que quitar la columna redundante. Ese orden es el mismo que usaste al normalizar en la Unidad 2, pero automating con SQL.
 >
 > **Taller 4 — base DBalquiler (`Taller 4_20agorep.pdf`, pp. 1-2):**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4-p1.png]]
 >
+> **Se lee así:** la primera página del taller 4 pide **cinco entregables** sobre la base `DBalquiler`. (1) El procedimiento `sp_registrar_alquiler`: inicia **transacción**, valida que `dias_alquilados > 0` y que `id_juego` tenga `stock_disponible > 0`, y si algo falla **revierte** sin insertar; si todo pasa, **confirma**, inserta el alquiler y **descuenta 1** del stock **dentro de la misma transacción**, devolviendo 1 o 0. (2) El trigger `trg_validar_resena`, **antes** de insertar, que bloquea la inserción con un **error controlado** si `puntuacion` no está entre 1 y 5. (3) La vista `vista_juegos_populares`: por título de videojuego, la plataforma, el número de alquileres y el total de días alquilados, **solo los que superen 100 días**, ordenados por total de alquileres de menor a mayor. (4) El procedimiento `sp_reporte_popularidad_juegos`, que **consulta esa vista** filtrando por plataforma y devuelve la cantidad de filas con mayor puntuación promedio. (5) El **análisis de impacto de un índice**: `EXPLAIN` de una consulta que filtra alquileres por cliente y rango de fechas, antes y después de crear un índice compuesto.
+>
+> **Por qué importa:** el punto (1) es el **ejemplo canónico de transacción** y por eso merece leerse despacio: el enunciado insiste en que la validación, el `INSERT` y el `UPDATE` del stock ocurren **en la misma transacción**. Si el descuento de stock estuviera fuera, otra sesión podría leer un stock viejo entre el `INSERT` y el `UPDATE`. Y fíjate en el retorno `1`/`0`: el procedimiento **notifica** el resultado sin lanzar un error, que es un patrón distinto al del trigger.
+>
+> **Ejemplo:** el punto (5) es el que conecta con el bloque de índices de la nota: el enunciado pide una consulta con `JOIN` + `WHERE nombre = 'Sofía Leon' AND fecha_alquiler BETWEEN '2024-06-01' AND '2024-06-30'`, y luego el mismo `EXPLAIN` después de crear el índice. La lectura del resultado es: comparar el **tipo de acceso** (`ALL` vs `ref`/`range`) y el **número de filas examinadas**. Si no baja, el índice está mal colocado.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4-p2.png]]
+>
+> **Se lee así:** la segunda página **continúa el punto (5)**: tras crear el índice compuesto hay que **volver a ejecutar la misma consulta con `EXPLAIN`** y comparar. Es la segunda mitad del ejercicio, y por eso la captura se cita aparte: sin ella falta el "después", que es justamente la prueba de que el índice sirvió.
+>
+> **Por qué importa:** el ejercicio está construido como un **antes y después** deliberado. El `EXPLAIN` inicial muestra el plan de la consulta sin índice; el final muestra el plan con índice. Si los dos planes son iguales, el índice no se está usando y hay que revisar el orden de las columnas del índice compuesto.
+>
+> **Ejemplo:** el orden importa: un índice compuesto sobre `(nombre, fecha_alquiler)` sirve para filtrar **por nombre y luego por rango de fecha**. Si el índice fuera `(fecha_alquiler, nombre)`, el filtro por nombre no lo usaría bien, porque el nombre no es la columna **prefijo**. Esa es la regla de oro del índice compuesto, y el taller la hace verificar a mano con `EXPLAIN`.
 >
 > **Taller 4 2024 — seguridad en sakila (`Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf`, p. 1):**
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4b-p1.png]]
+>
+> **Se lee así:** el taller 2024 es **el bloque de seguridad completo**, y cada viñeta es una pieza distinta del DCL y de las vistas. (1) Un **disparador** que encripte con **MD5** el nombre y apellido de los clientes nuevos. (2) `CREATE USER` con la **primera letra del nombre + el apellido** (el ejemplo del enunciado: *Frank Malo → `fmalo`*, dominio `localhost`). (3) `GRANT SELECT` sobre `payment`, `customer`, `country` y `city`. (4) `GRANT SELECT` sobre **una sola columna** (`name`) de `category`. (5) `GRANT INSERT` y `UPDATE` sobre `address` y `country`. Y al final, **hacer login con ese usuario** y crear una vista con las ciudades y sus países, *"de generar error por permisos, solucionarlo"*.
+>
+> **Por qué importa:** el punto (4) es el que demuestra que el SQL estándar permite **privilegios por columna**, algo que muchos motores no implementan. Y el último punto es el que hay que entender de verdad: la vista se crea **con el usuario administrador**, y el usuario nuevo **no puede verla** porque no tiene `SELECT` sobre la vista. La solución es `GRANT SELECT ON vista_ciudades TO 'fmalo'@'localhost';` — y ese es exactamente el tercer motivo de las vistas del deck ("seguridad al compartir información").
+>
+> **Ejemplo:** el trigger con MD5 es un ejemplo **didáctico, no de producción**: MD5 no es un hash de contraseñas, es criptografía débil y no debe usarse para nada real. En producción se usan `bcrypt`, `Argon2` o `SHA-256` con sal. El taller lo pide porque sirve para practicar triggers, no porque sea una buena práctica.
 
 > [!info] 📖 El deck de cátedra: SQL y las restricciones (slides06, pp. 10-18)
+>
 > El deck del Ing. Jorge Magallanes cierra el curso con SQL. Estas son las figuras que definen la sintaxis que usan los ejercicios de esta guía.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p10.png]]
 >
+> **Se lee así:** la lámina (p. 10) es la **base de todo**: *"esta tarea se consigue usando la sentencia `CREATE TABLE`"*, y da la tabla `department` con sus tres atributos: `dept_name VARCHAR(200)`, `building VARCHAR(15)` y `budget NUMERIC(12, 2)`, más `PRIMARY KEY (dept_name)`. Y hace una observación estructural que conviene retener: *"se divide en 2 secciones: (1) la definición de columnas, y (2) las restricciones de integridad"*. Al pie, el contrapeso: *"para remover una relación se utiliza la sentencia `DROP TABLE t;`"*.
+>
+> **Por qué importa:** esa división en dos secciones es **exactamente** la estructura de un `CREATE TABLE` y por eso el enunciado de los talleres se puede leer así: primero las columnas, después las reglas. Y fíjate en que la PK se declara **al final**, como restricción de tabla: `PRIMARY KEY (dept_name)`. No es que la clave sea "la última columna": es que es una **regla sobre el conjunto**.
+>
+> **Ejemplo:** `dept_name VARCHAR(200)` con `PRIMARY KEY (dept_name)` significa "una columna de texto de hasta 200 caracteres que, además, no puede repetirse ni ser nula". El `VARCHAR(200)` es la **columna**; el `PRIMARY KEY` es la **restricción**. Son dos capas distintas y por eso pueden escribirse en lugares distintos del `CREATE`.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p11.png]]
 >
-> **Creación de tablas (p. 10):** `CREATE TABLE department (department_name VARCHAR(15), building VARCHAR(15), budget NUMERIC(12,2))` — el ejemplo base del deck.
+> **Se lee así:** la lámina (p. 11) añade la **restricción de clave foránea**, y el ejemplo completo es `CREATE TABLE course (course_id VARCHAR(7), title VARCHAR(50) NOT NULL, dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY (course_id), FOREIGN KEY (dept_name) REFERENCES department);`. El deck define: *"la especificación de `foreign key({L}) references s` define la lista L de atributos de clave foránea y que deben coincidir con algún valor de la clave primaria en s"*.
 >
-> **Restricciones de clave (p. 11):** *"la especificación de primary key({L}) define la lista L de atributos de clave primaria"*, con `CREATE TABLE course (course_id VARCHAR(7), title VARCHAR(50) NOT NULL, …)`.
+> **Por qué importa:** el deck cierra con la consecuencia práctica: *"en cada tupla de `course`, el valor de `dept_name` debe existir en el atributo de PK de `department`, sin esto, es posible que las tuplas de `course` especifiquen un `dept_name` que no existe"*. Eso **es** la integridad referencial, y es la regla que el motor aplica en cada `INSERT` y en cada `UPDATE`.
+>
+> **Ejemplo:** la FK `dept_name → department.dept_name` crea la relación que en el ER era `department 1—N course`. Si insertas un curso con `dept_name = 'Física'` y no existe ese departamento, el motor **rechaza** el `INSERT`. Es la misma regla del diagrama "carga el 1 primero" de la Unidad 1, pero automatizada y garantizada por el motor.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p13.png]]
 >
+> **Se lee así:** la lámina (p. 13) da la **definición general de restricción de integridad**: *"una restricción de integridad (integrity constraint) asegura que un cambio realizado en la DB no conduzca a la pérdida de la consistencia de datos"*. Y da tres ejemplos que son literalmente las tres reglas de la Unidad 2: el nombre de un instructor no puede ser `null`; dos instructores no pueden tener el mismo ID; y cada `dept_name` en `course` debe coincidir con uno de `department`.
+>
+> **Por qué importa:** el deck añade un detalle práctico que no aparece en las notas: *"usualmente las restricciones de integridad son parte de la definición de las tablas, sin embargo, pueden ser agregadas mediante la sentencia `ALTER TABLE table-name ADD constraint`"*. Es la puerta de entrada al `ALTER TABLE` que se usa en los talleres: **no siempre puedes reconstruir la tabla**, a veces lo que puedes es añadir la restricción después.
+>
+> **Ejemplo:** si la tabla `course` ya existe con miles de filas y quieres imponer la FK, no reescribes la tabla: haces `ALTER TABLE course ADD CONSTRAINT fk_course_dept FOREIGN KEY (dept_name) REFERENCES department(dept_name);`. Si alguna fila existente incumple la regla, el motor **rechaza** el `ALTER` — lo cual es una forma rápida de auditar si tus datos son válidos.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p14.png]]
 >
-> **Restricciones de integridad (p. 13):** *"una restricción de integridad (integrity constraint) asegura que un cambio realizado en la DB no conduzca a la pérdida de la consistencia de datos"*.
+> **Se lee así:** la lámina (p. 14) es la de las **restricciones solo de tabla**, y introduce tres. `not null`: *"es utilizado [para] columnas obligatorias"* (ejemplos: `name VARCHAR(20) NOT NULL`, `budget NUMERIC(2,0) NOT NULL`). `unique({L})`: *"define la lista L de atributos de una clave candidata, a diferencia de PK, los atributos declarados pueden ser nulos"*. Y `check(P)`: *"se especifica un predicado P, es usado para campos que deben satisfacer una condición"*.
 >
-> **Restricciones solo de tabla (p. 14):** `not null` (columnas obligatorias) y `unique ({L})` (lista de atributos que debe ser única).
+> **Por qué importa:** la diferencia entre `UNIQUE` y `PRIMARY KEY` que hace el deck es **el punto que más se pregunta**: un `UNIQUE` **admite `NULL`s** (en el SQL estándar, varios `NULL` no se consideran "repetidos"), mientras que la PK **no admite ninguno**. Por eso una clave candidata alternativa puede tener nulos y la primaria no. Y el `check(P)` se presenta además como la forma de **simular datos enumerados**: *"la columna semestre debe ser uno de estos valores: 'Fall', 'Winter', 'Spring' o 'Summer'"*.
+>
+> **Ejemplo:** el `CHECK` de dominio es la traducción directa del **dominio del atributo** que definiste en el diccionario de datos de la Unidad 2. `semestre VARCHAR(10) CHECK (semestre IN ('Fall','Winter','Spring','Summer'))` es exactamente "el dominio de `semestre` es ese conjunto". Y fíjate en que el deck dice que el `CHECK`, como el `NOT NULL`, **puede aparecer junto a la definición de la columna**, además de como restricción de tabla.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p17.png]]
 >
+> **Se lee así:** la lámina (p. 17) es la de la **integridad referencial**, y su contenido clave está al final. Define: *"las restricciones de clave foránea son la manera de asegurarnos que los valores de unos atributos coincidan con algún valor de la clave primaria en otra relación"*, y muestra las dos formas de declararla: como restricción de tabla (`foreign key(dept_name) references department(dept_name)`) o **junto a la columna** (`dept_name varchar(20) references department`). Pero lo importante es lo que viene después: *"cuando una restricción de clave foránea es violada, lo normal es que se rechace la acción. Sin embargo, puede especificarse algo distinto cuando una operación de `delete` o de `update` viola la restricción"*, con el ejemplo `on update cascade` / `on delete cascade`.
+>
+> **Por qué importa:** hasta ahora la integridad referencial solo se había visto como "el motor rechaza". La lámina dice que hay **tres opciones**, y que la elección depende de la regla de negocio: rechazar (por defecto), propagar (`cascade`), o poner `null`/`default` (`set null`, `set default`). No es un detalle: define qué pasa con las filas **hijas** cuando el padre desaparece.
+>
+> **Ejemplo:** con `ON DELETE CASCADE` en `course.dept_name`, si borras el departamento *"Comp. Sci."*, **se borran también** sus cursos. Con `ON DELETE SET NULL`, los cursos se quedan pero con `dept_name` vacío. Con el comportamiento por defecto (sin cláusula), el `DELETE` del departamento es **rechazado**. Los tres son válidos; lo que no vale es no decidir y que el motor decida por ti.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p18.png]]
 >
-> **Integridad referencial (p. 17):** *"las restricciones de clave foránea son la manera de asegurarnos que los valores de unos atributos coincidan con algún valor de la clave primaria en otra relación"*.
+> **Se lee así:** la lámina (p. 18) es la **consecuencia** de la anterior, con el caso concreto. Plantea: *"¿qué sucede con las tuplas que hacen referencia?"* cuando se intenta **borrar** la tupla con `dept_name = 'Comp. Sci.'` en `department`, o **cambiar** ese mismo valor. Y lista las opciones: **`cascade`** (*"es propagar el cambio, e.g., en una operación delete se propaga el borrado"*) y **`set null`, o `set default`** (*"se establece null o el valor default respectivamente"*). Abajo, las dos tablas del ejemplo (`course` con sus 4 filas y `department` con sus 3), con la columna `dept_name` marcada como *join columns*.
+>
+> **Por qué importa:** fíjate en que `CS-101` y `CS-190` son los dos cursos de `Comp. Sci.`: son las **filas hijas** que se ven afectadas. La lámina cierra el bloque de SQL del deck mostrándote que la integridad referencial **no es solo una regla de inserción**: es una regla que obliga a **decidir qué pasa con los hijos** cuando el padre cambia o desaparece. Esa decisión es una regla de negocio, y por eso se escribe en el `CREATE TABLE`.
+>
+> **Ejemplo:** si en la ESPOL se decide que al **borrar** un curso también se borran las notas de los alumnos que lo tomó, la FK debe llevar `ON DELETE CASCADE`. Si en cambio se decide que las notas **se conservan** (porque son histórico), lo correcto es `ON DELETE SET NULL` o， borrar el curso con un `DELETE` restringido. La misma sintaxis, dos políticas opuestas.
 >
 > **Violación (p. 18):** qué pasa con las tuplas que hacen referencia cuando se borra o cambia la tupla referenciada — la pregunta que responde el bloque D de esta guía con `ON DELETE` / `ON UPDATE`.
 

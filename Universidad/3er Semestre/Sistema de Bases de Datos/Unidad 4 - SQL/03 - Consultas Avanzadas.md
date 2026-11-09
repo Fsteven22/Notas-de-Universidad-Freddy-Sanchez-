@@ -19,14 +19,19 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-03-01-graph.svg]]
 >
-> **Se lee así:** hay dos familias distintas de "juntar" datos. Los **JOIN** pegan tablas **horizontalmente** (una fila de A se une con una de B, Growing el número de columnas); los **operadores de conjuntos** (`UNION`, `INTERSECT`, `EXCEPT`) apilan resultados **verticalmente** (mismas columnas, filas de una consulta encima de otra). Confundirlos es el error más común de la unidad.
+> **Se lee así:** hay dos familias distintas de "juntar" datos. Los **JOIN** pegan tablas **horizontalmente** (una fila de A se une con una de B, aumentando el número de columnas); los **operadores de conjuntos** (`UNION`, `INTERSECT`, `EXCEPT`) apilan resultados **verticalmente** (mismas columnas, filas de una consulta encima de otra). Confundirlos es el error más común de la unidad.
 
 > [!info] 📖 El deck de cátedra: el temario de SQL Avanzado (SQL Avanzado, p. 1)
+>
 > El deck que acompaña a esta nota se organiza en tres bloques: vistas, disparadores y procedimientos almacenados.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p1.png]]
-> 
-> **El temario (p. 1):** *Vistas · Disparadores · Procedimientos Almacenados*. Es el orden del deck y el orden en que aparecen las definiciones más abajo.
+>
+> **Se lee así:** la lámina (p. 1) es la **portada del deck** y su índice: tres títulos, *Vistas · Disparadores · Procedimientos Almacenados*. No hay ninguna definición en ella; su trabajo es decirte **en qué orden viene el temario**.
+>
+> **Por qué importa:** ese orden es también el **orden de dependencia** del bloque, y por eso conviene leerlo como una progresión y no como una lista. Las **vistas** guardan una *consulta*. Los **disparadores** guardan una *reacción* a un evento. Los **procedimientos** guardan *lógica de negocio* que se invoca a mano. De menos a más: de "consulta reutilizable" a "regla que se dispara sola" a "programa que se ejecuta bajo demanda".
+>
+> **Ejemplo:** si un cliente pide "dame siempre los botes rojos con su número de reservas", eso es una **vista**. Si el sistema debe "cada vez que alguien inserta un pedido, descontar el límite de crédito del cliente", eso es un **disparador**. Y si el sistema debe "cerrar el mes y recalcular los totales de cada cliente", eso es un **procedimiento**: lo llamas cuando toca y no se dispara solo.
 
 ---
 
@@ -187,19 +192,32 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > Crear una vista requiere 3 derechos: SELECT de las tablas base, CREATE VIEW, y SELECT sobre la vista para leerla. Tener SELECT de las tablas base no garantiza poder crear la vista.
 
 > [!info] 📖 El deck de cátedra: las vistas (SQL Avanzado, pp. 2-4)
+>
 > El deck define la vista y luego la usa sobre la base de ejemplo.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p2.png]]
-> 
-> **La definición (p. 2):** `CREATE VIEW nombre_de_vista [columnas] AS <expresion de consulta>`, *"utilizadas para aumentar las posibilidades de acceso a tablas"*, con el ejemplo de la vista `Rojos` sobre `SELECT B.bid, COUNT(*) AS s...`.
-> 
+>
+> **Se lee así:** la lámina (p. 2) da la **sintaxis** — `CREATE VIEW nombre_de_vista [<columnas>] AS <expresion de consulta>` — y el propósito: *"utilizadas para aumentar las posibilidades de acceso a tablas"*. Abajo, el ejemplo completo de la vista `Rojos`: `CREATE VIEW Rojos AS SELECT B.bid, COUNT(*) AS scount FROM Botes B, Reservacion R WHERE R.bid = B.bid AND B.color = 'rojo' GROUP BY B.bid;` — o sea, "qué botes rojos existen y cuántas reservas tiene cada uno".
+>
+> **Por qué importa:** fíjate en que la vista **hereda toda la complejidad** de la consulta: un `JOIN`, un `WHERE`, un `GROUP BY` y un `COUNT`. Eso es precisamente su valor: quien use la vista después escribe `SELECT * FROM Rojos;` y **no necesita saber** que hay dos tablas en juego. Y fíjate en el `AS` con su subconsulta: la vista **no guarda datos**, guarda la **consulta**.
+>
+> **Ejemplo:** el nombre `Rojos` es el **nombre de la vista** y `scount` el nombre de la columna (`AS scount`). Si el `AS` no estuviera, la columna se llamaría `COUNT(*)`, que es un nombre horrible para usar en un reporte. El `AS` dentro de la vista es lo que hace que la vista sea usable.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p3.png]]
-> 
-> **Vistas vs tablas (p. 3):** *"parecidas a las tablas, la diferencia es que las vistas son creadas a partir de una consulta"* — no almacenan datos, se calculan.
-> 
+>
+> **Se lee así:** la lámina (p. 3) es la que explica **para qué sirve una vista**, y tiene tres motivos: *"parecidas a las tablas, la diferencia es que las vistas son creadas a partir de las tablas"*, y luego las tres razones: **"hace la programación simple"**, *"usadas normalmente para crear reportes"* y *"seguridad al compartir información"*.
+>
+> **Por qué importa:** esas tres razones son **exactamente** los tres motivos para usar una vista, y cada una tiene un uso distinto. *Simplificar*: encapsular una consulta complicada. *Reportes*: la vista es el reporte, y se consulta como si fuera una tabla. *Seguridad*: **es la razón más potente**, porque puedes darle a un usuario permiso de `SELECT` **solo sobre la vista** y sin acceso a las tablas base. El usuario ve exactamente las columnas del `SELECT`, ni una más.
+>
+> **Ejemplo:** la vista `promedios_clientes` del punto siguiente expone `nombres`, `apellidos` y `promedios`. Si le das acceso a un usuario de gerencia, él puede hacer `SELECT * FROM promedios_clientes` y **nunca** ver el `payment.amount` de otros clientes ni las columnas de la tabla `customer` que no necesitas. Es la misma idea del DCL del deck de DDL, pero aplicada al diseño de datos.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p4.png]]
-> 
-> **El ejemplo completo (p. 4):** `create view promedios_clientes as select c.first_name as nombres, c.last_name as apellidos, avg(p.amount) as promedios from customer as c inner join payment as p on c.customer_id = p.customer_id group by c.customer_id;` — una vista con JOIN + `AVG` + `GROUP BY`, exactamente el tipo de consulta que acabas de ver.
+>
+> **Se lee así:** la lámina (p. 4) es la **vista completa sobre la base `sakila`**: `create view promedios_clientes as select c.first_name as nombres, c.last_name as apellidos, avg(p.amount) as promedios from customer as c inner join payment as p on c.customer_id = p.customer_id group by c.customer_id;`. Es el mismo patrón de la vista `Rojos`, pero sobre un `JOIN` real.
+>
+> **Por qué importa:** mira lo que hace la vista: **une dos tablas, agrupa por cliente y promedia**. Con una sola sentencia. Y desde ese momento, cualquier persona que necesite "el promedio de gasto por cliente" escribe una consulta de **una línea** en lugar de la de ocho.
+>
+> **Ejemplo:** la diferencia práctica está en el **mantenimiento**. Si mañana el negocio cambia "promedio" por "total" y además quiere contar las compras, cambias **una vez** la definición de la vista y las 50 consultas que la usan se actualizan solas. Si las 50 consultas tuvieran el `JOIN` escrito a mano, tendrías que editar 50 archivos. Esa es la diferencia entre "copiar y pegar" y "definir una vista".
 
 ### 5️⃣ Índices y EXPLAIN — acelerar el acceso
 
@@ -295,54 +313,102 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > **Se lee así:** vista, índice y trigger son tres caras de *"código que vive dentro de la base de datos"*. La **vista** guarda una consulta, el **índice** guarda una estructura de acceso y el **trigger** guarda una reacción automática. El **procedimiento** es el cuarto: guarda lógica de negocio que se invoca a mano con `CALL`.
 
 > [!info] 📖 El deck de cátedra: los disparadores (SQL Avanzado, pp. 5-13)
+>
 > El deck dedica nueve láminas a los triggers: qué son, cómo se escriben y cuatro casos reales.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p5.png]]
-> 
-> **Qué es un trigger (p. 5):** *"procedimiento que se ejecuta cuando se cumple una condición establecida al realizar una operación de inserción (INSERT), actualización (UPDATE) o borrado (DELETE)"*, usado para mejorar la administración...
-> 
+>
+> **Se lee así:** la lámina (p. 5) da la **definición**: un trigger es un *"procedimiento que se ejecuta cuando se cumple una condición establecida al realizar una operación de inserción (INSERT), actualización (UPDATE) o borrado (DELETE)"*, y el deck lo presenta como algo usado para mejorar la administración de la base de datos.
+>
+> **Por qué importa:** la definición tiene tres palabras clave: **procedimiento**, **condición** y **operación**. Un trigger no es una consulta que tú ejecutas: es un bloque de código que el motor **ejecuta solo** cuando ocurre el evento. Y el evento es siempre uno de los tres del DML: `INSERT`, `UPDATE` o `DELETE`.
+>
+> **Ejemplo:** el caso más claro: cada vez que se inserta un pago, el motor recalcula el total del cliente. La aplicación no tiene que acordarse de hacerlo — el motor lo hace porque alguien lo programó una vez. Esa es la diferencia entre "la aplicación que se porta bien" y "la base de datos que garantiza la regla".
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p6.png]]
-> 
-> **Las dos piezas (p. 6):** la **llamada de activación** es la sentencia que dispara el código; la **restricción** es la condición necesaria para ejecutarlo, y puede ser condicional o de otro tipo.
-> 
+>
+> **Se lee así:** la lámina (p. 6) descompone el trigger en **dos piezas**, y esto es lo que hay que entender: la **llamada de activación** es *"la sentencia que permite 'disparar' el código a ejecutar"*, y la **restricción** es *"la condición necesaria para realizar el código"*, que *"puede ser de tipo condicional o de otro tipo"*.
+>
+> **Por qué importa:** esta separación explica por qué existen `BEFORE` y `AFTER`. La **llamada de activación** es el *cuándo* (el evento: `INSERT`, `UPDATE`, `DELETE`) y la **restricción** es el *condicional* (la condición que debe cumplirse). Un trigger `BEFORE` modifica el valor **antes** de que se grabe; uno `AFTER` actúa **después** de que ya se grabó.
+>
+> **Ejemplo:** un trigger `BEFORE INSERT` que aplica un descuento **cambia el valor que se va a guardar** (todavía no está guardado, por eso es `BEFORE`). Un trigger `AFTER INSERT` que recalcula un total **lee lo que ya se guardó** y escribe en otra tabla. Si te confunde el orden, pregúntate: *¿necesito ver el valor final?* Si sí, `AFTER`.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p7.png]]
-> 
-> **La sintaxis (p. 7):** `trigger_time: BEFORE or AFTER` y `trigger_event: INSERT, UPDATE OR DELETE`, seguidos del `CREATE TRIGGER <nombre> ... ON <tabla>` y del `DELIMITER` que delimita el bloque.
-> 
+>
+> **Se lee así:** la lámina (p. 7) es la **sintaxis**, y son solo dos palabras que hay que saber: `trigger_time: BEFORE or AFTER` y `trigger_event: INSERT, UPDATE OR DELETE`. Después, la forma completa: `CREATE TRIGGER <trigger_name> <trigger_time> <trigger_event> ON <table_name> FOR EACH ROW ...`, y el `DELIMITER` que delimita el bloque.
+>
+> **Por qué importa:** la estructura mental es `CREATE TRIGGER <nombre> <cuándo> <qué evento> ON <tabla>`. Es la misma estructura mental del `CREATE TABLE <nombre> (...)`: primero el **nombre**, luego las **características**. Y fíjate en el `FOR EACH ROW`: el trigger se ejecuta **una vez por cada fila afectada**, no una vez por sentencia. Por eso un `INSERT` de 500 filas dispara 500 veces el trigger.
+>
+> **Ejemplo:** `CREATE TRIGGER tr1 BEFORE INSERT ON PAYMENTS FOR EACH ROW BEGIN ... END` se lee de izquierda a derecha: "cada vez que se inserte en `PAYMENTS`, antes de guardarlo, haz esto". Y el `DELIMITER` existe porque el cuerpo del trigger tiene varios `;` (uno por sentencia) y MySQL necesita saber dónde acaba el bloque; con `DELIMITER $$` le dices que el bloque termina en `$$` y no en `;`.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p8.png]]
-> 
-> **Un trigger de ejemplo (p. 8):** `CREATE TRIGGER testref BEFORE INSERT ON test1 FOR EACH ROW BEGIN INSERT INTO test2 ...; DELETE FROM test3 ...; UPDATE test4 ...; END` — un solo disparo, varias acciones.
-> 
+>
+> **Se lee así:** la lámina (p. 8) es el **trigger de ejemplo**, y su valor está en que **un solo disparo hace tres cosas**: `CREATE TRIGGER testref BEFORE INSERT ON test1 FOR EACH ROW BEGIN INSERT INTO test2 SET a2 = NEW.a1; DELETE FROM test3 WHERE a3 = NEW.a1; UPDATE test4 SET b4 = b4 + 1 WHERE a4 = NEW.a1; END`. Un `INSERT` en `test2`, un `DELETE` en `test3` y un `UPDATE` en `test4`, todos disparados por la misma inserción en `test1`.
+>
+> **Por qué importa:** fíjate en `NEW.a1`: esa es la forma de referirse al valor de la fila que se está insertando. El `NEW` es el "nuevo" valor; el otro pseudo-registro, `OLD`, es el valor anterior (solo tiene sentido en `UPDATE` y `DELETE`). Con `NEW` y `OLD` un trigger puede **comparar antes y después** sin consultar la tabla.
+>
+> **Ejemplo:** en un `AFTER UPDATE` sobre `PAYMENTS`, `OLD.amount` es el importe que tenía y `NEW.amount` el que tiene ahora. Con solo `NEW` sabes el valor nuevo; con los dos, puedes detectar el cambio y actuar solo si hubo cambio real. Un trigger `AFTER UPDATE` con `IF NOT (OLD.amount <=> NEW.amount) THEN ...` evita disparar trabajo inútil.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p9.png]]
-> 
-> **Trigger de negocio (p. 9):** `CREATE TRIGGER update_limitecredito BEFORE INSERT ON PEDIDOS` que descuenta `new.IMPORTE` del `LIMITECREDITO` del cliente: la regla de negocio vive en la base de datos, no en la aplicación.
-> 
+>
+> **Se lee así:** la lámina (p. 9) es el **primer caso de negocio real**, y es el que explica para qué sirve un trigger: `CREATE TRIGGER update_limitecredito BEFORE INSERT ON PEDIDOS FOR EACH ROW BEGIN update CLIENTES SET LIMITECREDITO = LIMITECREDITO - new.IMPORTE where CLIENTES.NUMCLIE = new.CLIE; END`.
+>
+> **Por qué importa:** la regla de negocio es *"cada pedido reduce el límite de crédito del cliente"*, y fíjate en que está escrita **en la base de datos**, no en la aplicación. Eso significa que se cumple **aunque el pedido lo inserte otra aplicación, un script o un usuario a mano**. Esa es la diferencia entre un trigger y una regla en el código.
+>
+> **Ejemplo:** sin trigger, cualquier programa que inserte en `PEDIDOS` tiene que acordarse de actualizar `CLIENTES.LIMITECREDITO`. Con tres programas distintos, el día que uno de ellos se olvide, el límite queda mal. Con el trigger, la regla está **en un solo sitio** y no se puede olvidar.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p10.png]]
-> 
-> **Trigger con IF/ELSEIF (p. 10):** `CREATE TRIGGER tr1 BEFORE INSERT ON PAYMENTS` que aplica un 10% de descuento si `new.amount < 100` y pone el importe en 0 si es mayor o igual.
-> 
+>
+> **Se lee así:** la lámina (p. 10) añade la **lógica condicional** dentro del trigger: `CREATE TRIGGER tr1 BEFORE INSERT ON PAYMENTS FOR EACH ROW BEGIN IF new.amount < 100 THEN SET new.amount = new.amount * 0.90; ELSEIF NEW.amount >= 100 THEN SET NEW.amount = 0; END IF; END`.
+>
+> **Por qué importa:** esta lámina conecta el trigger con la sección de la nota sobre **control de flujo**: dentro del `BEGIN…END` caben `IF`, `ELSEIF`, `ELSE`, variables y bucles. Un trigger no es un `INSERT` simple: es **programación** dentro de la base de datos. Y fíjate en el uso de `SET new.amount = …`: el trigger puede **reescribir** el valor que se va a insertar.
+>
+> **Ejemplo:** la regla es "los pagos menores de 100 reciben 10% de descuento; los de 100 o más, se anulan (importe 0)". Con `SET new.amount = new.amount * 0.90` el descuento se aplica **sobre el valor nuevo**, así que el `INSERT` guarda el importe ya descontado. Quien haga el `SELECT` después ve el valor final, sin saber que hubo trigger.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p11.png]]
-> 
-> **Trigger AFTER UPDATE (p. 11):** `CREATE TRIGGER tr4 AFTER UPDATE ON PAYMENTS` que propaga el nuevo saldo al `creditLimit` del cliente.
-> 
+>
+> **Se lee así:** la lámina (p. 11) cambia el **momento**: `CREATE TRIGGER tr4 AFTER UPDATE ON PAYMENTS FOR EACH ROW BEGIN IF new.amount < 0 THEN UPDATE customers SET creditLimit = new.amount WHERE customerNumber = new.customerNumber; ELSEIF …`.
+>
+> **Por qué importa:** aquí el trigger es `AFTER UPDATE`, no `BEFORE INSERT`. La diferencia es **qué información tienes disponible**: en `BEFORE`, el pago todavía no está grabado, así que para actualizar el crédito del cliente tendrías que restar a mano. En `AFTER`, el pago **ya está en la tabla** y puedes leer el saldo real (`SELECT SUM(...)`) en lugar de mantenerlo a mano.
+>
+> **Ejemplo:** la regla "si el pago actualizado deja el saldo del cliente negativo, ajusta su `creditLimit`" **solo** se puede escribir correctamente con `AFTER UPDATE`: necesitas el saldo ya calculado. Con `BEFORE` tendrías que restar a ciegas.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p12.png]]
-> 
-> **Recalcular un total (p. 12):** `CREATE TRIGGER actualizar_promedio after update on payment` que vuelve a sumar `amount` del cliente y actualiza `totalcliente`.
-> 
+>
+> **Se lee así:** la lámina (p. 12) es el caso de **recalcular un total**: `CREATE TRIGGER actualizar_promedio after update on payment` que vuelve a sumar los `amount` del cliente y actualiza el `totalcliente`.
+>
+> **Por qué importa:** este es el patrón clásico de **dato desnormalizado mantido por trigger**. `totalcliente` es un dato que **podría** calcularse con un `SUM`, pero se guarda para no tener que recalcularlo en cada consulta. El trigger es lo que garantiza que ese dato **no se quede viejo**.
+>
+> **Ejemplo:** la alternativa sin trigger sería un `SELECT SUM(amount) FROM payment WHERE customerNumber = X` en cada consulta que necesite el total. Funciona, pero es caro. La alternativa con trigger guarda el total **ya calculado**, y el `SELECT` es un `SELECT`. El precio es que ahora **dos** datos guardan la misma información, y ambos tienen que mantenerse consistentes.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p13.png]]
-> 
-> **Trigger con tabla temporal (p. 13):** `CREATE TRIGGER insertar_promedio after insert on payment` que cuenta los pagos del cliente en una tabla temporal y, si es el primero, inserta el total en `totalcliente`.
+>
+> **Se lee así:** la lámina (p. 13) es el caso del **trigger con tabla temporal**: `CREATE TRIGGER insertar_promedio after insert on payment` que cuenta los pagos del cliente en una tabla temporal y, si es el primero, inserta el total en `totalcliente`.
+>
+> **Por qué importa:** esta lámina resuelve el problema del trigger anterior: recalcular el total con un `SUM` en **cada** inserción es caro (el motor recorre todos los pagos del cliente una y otra vez). Con la tabla temporal, el trigger **acumula**: cada pago suma su importe a un acumulado y solo cuando el acumulado es el primero se crea la fila en `totalcliente`.
+>
+> **Ejemplo:** es el mismo razonamiento que usaste en la **Unidad 2** cuando decidiste guardar los datos calculados para no recalcularlos: la decisión es siempre la misma — *guardar vs. calcular* — y el trigger es el mecanismo que garantiza la consistencia del dato guardado.
 
 > [!info] 📖 El deck de cátedra: los procedimientos almacenados (SQL Avanzado, pp. 14-15)
+>
 > El deck cierra con el bloque de procedimientos.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p14.png]]
-> 
-> **Qué es un Stored Procedure (p. 14):** *"un programa (o procedimiento) el cual es almacenado físicamente en una base de datos"*. La ventaja: se ejecuta **directamente en el motor**, *"el cual usualmente corre en un servidor separado"*, así que *"solo necesita enviar sus resultados de regreso al usuario, deshaciéndose de la sobrecarga resultante de comunicar grandes cantidades de datos salientes y entrantes"*.
-> 
+>
+> **Se lee así:** la lámina (p. 14) define el *Stored Procedure* y, sobre todo, explica **por qué existe**: *"un programa (o procedimiento) el cual es almacenado físicamente en una base de datos"*. Y la ventaja, textualmente: *"al ser ejecutado, en respuesta a una petición de usuario, es ejecutado directamente en el motor de bases de datos, el cual usualmente corre en un servidor separado"*, de modo que *"sólo necesita enviar sus resultados de regreso al usuario, deshaciéndose de la sobrecarga resultante de comunicar grandes cantidades de datos salientes y entrantes"*.
+>
+> **Por qué importa:** el argumento es de **red**, no de programación. El programa vive **junto a los datos**, así que no tiene que traerlos al cliente para procesarlos ni devolverlos. En una base en las afueras de la ciudad, un `SELECT` de un millón de filas que se procesa en el servidor viaja como **una fila** de resultado.
+>
+> **Ejemplo:** un reporte que cruza `CUSTOMER`, `PAYMENT` y `RENTAL` y calcula tres totales: si lo escribes en la aplicación, el motor te manda los datos crudos y tú los procesas (si los datos están en otro servidor, el viaje es enorme). Como procedimiento, el motor hace todo el cruce **allá** y te devuelve solo los tres totales.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p15.png]]
-> 
-> **El ejemplo con parámetros (p. 15):** `create procedure calcular_iva(in iva decimal(3,2), in valor decimal(5,2), out resultado decimal)` con `select valor*iva into resultado;`, invocada como `call calcular_iva(0.14, 100.34, @r);` — el `IN` entra, el `OUT` sale, y `@r` es la variable que lo recibe.
+>
+> **Se lee así:** la lámina (p. 15) es el **ejemplo con parámetros**, y ahí está la diferencia con un trigger: el procedimiento **no se dispara solo**, **se lo invoca**. La firma es `create procedure calcular_iva(in iva decimal(3,2), in valor decimal(5,2), out resultado decimal)` con `select valor*iva into resultado;`, y la invocación es `call calcular_iva(0.14, 100.34, @r);`.
+>
+> **Por qué importa:** fíjate en los tres tipos de parámetro: `IN` **entra** al procedimiento, `OUT` **sale** de él, y `@r` es la **variable de MySQL** que recibe el resultado. El `INTO resultado` es lo que asigna el valor calculado al parámetro `OUT`. Y fíjate en el `decimal(3,2)`: un parámetro también tiene **tipo y precisión**, igual que una columna.
+>
+> **Ejemplo:** `call calcular_iva(0.14, 100.34, @r);` deja el 14% de 100.34 en `@r`. Fíjate en que se usa `decimal` y no `float`: **el dinero no se guarda en coma flotante**, y esa regla se aplica igual a los parámetros de un procedimiento. Es el mismo cuidado que con `DECIMAL(10,2)` en la tabla del DDL.
+>
+> **Por qué importa (trigger vs. procedimiento):** la diferencia final entre los dos es **quién decide cuándo se ejecuta**. El trigger se ejecuta **automáticamente** cuando ocurre el evento; el procedimiento se ejecuta **cuando alguien lo llama** con `CALL`. El trigger es una regla; el procedimiento es una herramienta.
 
 ### 7️⃣ Usuarios y permisos (DCL)
 

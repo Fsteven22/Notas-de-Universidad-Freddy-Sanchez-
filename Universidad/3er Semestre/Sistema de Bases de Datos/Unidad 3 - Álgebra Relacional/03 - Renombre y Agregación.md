@@ -48,11 +48,18 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > Ahora `S` y `L` son dos copias distintas de la misma tabla, y puedes comparar `S.pais = L.pais ∧ S.ciudad ≠ L.ciudad`.
 
 > [!info] 📖 El deck de cátedra: el renombramiento (slides05, p. 27)
+>
 > La última lámina del deck define el operador ρ con la misma fórmula que esta nota.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p27.png]]
-> 
-> **Renombramiento (p. 27):** *"permite renombrar atributos y relaciones. Asigna el nombre S a la relación resultante de la expresión E, y los nombres a1, a2, ... , ak a sus atributos"* — el `S` del deck es exactamente el `S` del self-join de arriba.
+>
+> **Se lee así:** la lámina (p. 27) da la **fórmula general del operador**: `ρs(a1, a2, …, ak)(E)` — *"permite renombrar atributos y relaciones. Asigna el nombre S a la relación resultante de la expresión E, y los nombres a1, a2, …, ak a sus atributos"*. Debajo trae un ejemplo completo: `R1 = nombre-sucursal G sum(sueldo) (R)` y luego `ρ R2(sucursal, total)(R1)`, con el resultado `R2` de dos columnas: `sucursal` y `total`, con los valores `Centro · 5300`, `Leganés · 3100` y `Navacerrada · 8100`.
+>
+> **Por qué importa:** el `ρ` tiene **dos formas** y conviene distinguirlas: `ρs(E)` renombra **solo la relación** (le pone un nombre nuevo), y `ρs(a1, …, ak)(E)` renombra **la relación y sus atributos**. La segunda es la que se usa en SQL como `SELECT expr AS alias`: estás cambiando el nombre de la columna, no su valor.
+>
+> **Ejemplo:** el `ρ R2(sucursal, total)(R1)` del deck es exactamente un `SELECT nombre_sucursal AS sucursal, SUM(sueldo) AS total FROM ... GROUP BY nombre_sucursal`. El alias `total` **no crea** una columna nueva: le pone etiqueta a la que el motor ya calculó. Esa es la diferencia entre renombrar y transformar.
+>
+> **Por qué importa (el self-join):** el `ρ` también existe para **resolver la ambigüedad** cuando una tabla aparece dos veces en la misma consulta. En el ejemplo del airlines de esta nota, `AEROPUERTO` entra dos veces: una como salida (`S`) y otra como llegada (`L`). Sin `ρ`, la consulta sería ambigua: `pais` podría referirse a cualquiera de las dos copias. Con `ρ S(...)` y `ρ L(...)`, cada copia tiene su propio nombre y se puede escribir `S.pais = L.pais ∧ S.ciudad ≠ L.ciudad` sin ambigüedad.
 
 ### 2️⃣ Agregación γ
 

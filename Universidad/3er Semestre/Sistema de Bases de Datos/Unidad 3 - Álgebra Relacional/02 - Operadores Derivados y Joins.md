@@ -54,15 +54,24 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > Si renombráramos `ID_PRODUCT` a `CODIGO`, el join natural haría `σ PRODUCTO.CODIGO = VENTA.CODIGO (PRODUCTO × VENTA)` y eliminaría la `CODIGO` duplicada, dejando 2 filas: 101↔venta 2, 104↔venta 1.
 
 > [!info] 📖 El deck de cátedra: los joins y el natural join (slides05, pp. 14-15)
+>
 > El deck abre el bloque de joins con la definición del natural join y su ejemplo.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p14.png]]
-> 
-> **Joins (p. 14):** *"Natural join, junta dos tablas seleccionando solo las filas con valores comunes en sus atributos comunes. Join permite que inteligentemente se combinen 2 relaciones, aquí radica el poder de las relaciones"*.
-> 
+>
+> **Se lee así:** la lámina (p. 14) define el join y **te da las dos tablas crudas**. La de arriba es `course` con `course_id, title, dept_name, credits` y cuatro filas (`BIO-301 Genetics Biology 4`, `BIO-399 Computational Biology Biology 3`, `CS-101 Intro. to CS Comp. Sci. 4`, `CS-190 Game Design Comp. Sci. 4`). La de abajo es `department` con `dept_name, building, budget` y tres filas (`Biology · Watson · 90000`, `Comp. Sci. · Taylor · 100000`, `History · Painter · 50000`). La lámina marca la **columna común** (`dept_name`) en las dos tablas: esa es la que se usa para emparejar.
+>
+> **Por qué importa:** fíjate ya en un detalle que define al natural join: la columna que empareja **se llama igual en las dos tablas**. No hay `ON course.dept = department.dept_name`; simplemente `dept_name` con `dept_name`. Esa es su única diferencia con el equi join, y también su debilidad: si las dos tablas no coinciden en el nombre, el natural join **no hace nada** y te devuelve el producto cruz.
+>
+> **Ejemplo:** en el ejemplo de esta nota, `PRODUCTO` tiene `CODIGO` y `VENTA` tiene `ID_PRODUCT`. Como los nombres difieren, `PRODUCTO ⨝ VENTA` **no puede ser un natural join**: es un producto cruz puro de 9 filas. Si renombraras `ID_PRODUCT` a `CODIGO`, el natural join funcionaría y dejaría solo las 2 filas que casan.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p15.png]]
-> 
-> **El ejemplo del deck (p. 15):** `department ⨝ course` sobre `course_id, title, dept_name, credits` y `dept_name, building, budget` — las columnas comunes (`dept_name`) quedan **una sola vez** en el resultado.
+>
+> **Se lee así:** la lámina (p. 15) es la **lámina más útil del bloque de joins**, porque da el resultado y **los tres pasos para obtenerlo**: (1) obtener el producto cartesiano, (2) seleccionar las filas cuyos valores de `dept_name` son iguales (las *join columns*), (3) hacer la proyección del resultado eliminando las columnas duplicadas. El resultado final tiene `course_id, title, dept_name, credits, building, budget` y **4 filas**; fíjate en que `dept_name` aparece **una sola vez**.
+>
+> **Por qué importa:** esos tres pasos son la **definición operativa** del natural join, y explican por qué el `JOIN` de SQL es tan eficiente: el motor no genera las 12 filas del producto cartesiano para descartar 8; genera directamente las 4. En el modelo relacional el join es "producto cartesiano + filtro + proyección", y por eso su costo se mide por el del producto cartesiano… salvo que el optimizador lo evite.
+>
+> **Ejemplo:** el resultado de la lámina tiene **4 filas, no 5**: el departamento `History` (Painter, 50000) desaparece, porque ningún curso pertenece a Historia. Ese es el comportamiento del join **interno**: solo sobreviven las filas que casan. La lámina lo dice al final: *"el resultado final no incluye las filas que no concuerdan (no match) con las columnas de join"*.
 
 ### 2️⃣ Equi Join ⨝(a=b)
 
@@ -100,11 +109,16 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > `VENTA ⨝(CANTIDAD > 50) PRODUCTO` — ventas donde la cantidad supera 50 unidades.
 
 > [!info] 📖 El deck de cátedra: el theta join (slides05, p. 18)
+>
 > El deck distingue el theta join del equi join por el tipo de comparación.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p18.png]]
-> 
-> **Theta Join (p. 18):** *"es una operación de Join que usa una condición C de comparación para juntar las tablas"*, y si la condición está formada **sólo de igualdades**, se conoce como Equi-Join. El deck trae el ejemplo `DID NOT IN (SELECT ...)` para el caso de no-igualdad.
+>
+> **Se lee así:** la lámina (p. 18) da la **definición en una línea**: *"es una operación de Join que usa una condición C de comparación para juntar las tablas"*, y añade la precisión que importa: *"si la condición C está formada de sólo igualdades, se conoce como Equi-Join"*. Abajo, el ejemplo numérico: `DEPTO(DID, Nombre, Ciudad)` con `d1·dpto1·Cali` y `d2·dpto2·Bta`, y `EMPO(EID, Nombres, Apellidos, Sueldo, Depart_id)` con cuatro empleados (`e1·emp1·ap1·10·d1`, `e2·emp2·ap2·20·d2`, `e3·emp3·ap3·10·(vacío)`, `e6·emp6·ap6·30·(vacío)`). El join que se dibuja lleva la condición `EMPO.DEPART_ID = DEPTO.DID`.
+>
+> **Por qué importa:** la jerarquía del deck es exacta y es la que hay que usar para clasificar: **theta join es el caso general** (cualquier condición `C`); **equi join es el caso particular** donde `C` solo tiene igualdades. Y el ejemplo trae un detalle que explica el motivo de existir del theta join: dos empleados (`e3` y `e6`) **no tienen departamento asignado**. Con un `INNER JOIN` desaparecen; con una condición de no-igualdad (`DID NOT IN (...)`) sí se pueden seleccionar, que es justo el caso que trae la lámina.
+>
+> **Ejemplo:** `VENTA ⨝(CANTIDAD > 50) PRODUCTO` es theta join: la condición `CANTIDAD > 50` es una comparación que no es igualdad. `PRODUCTO ⨝(CODIGO = ID_PRODUCT) VENTA` es equi join: la condición es una igualdad. Y `VENTA ⨝(ID_PRODUCT NOT IN (SELECT CODIGO FROM PRODUCTO)) VENTA` es theta join de no-igualdad: es la versión que **conserva** las ventas de productos que no están en el catálogo, en lugar de perderlas.
 
 ### 4️⃣ Left Outer Join ⟕
 
@@ -121,11 +135,18 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > `PRODUCTO ⟕ VENTA` devuelve las 2 filas del join normal + la fila del Shampoo 105 con `null` en todo lo de VENTA.
 
 > [!info] 📖 El deck de cátedra: el left outer join (slides05, p. 16)
-> El deck dibuja el caso donde las filas de la derecha no encuentra pareja.
-> 
+>
+> El deck dibuja el caso donde las filas de la derecha no encuentran pareja.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p16.png]]
-> 
-> **Left outer join (p. 16):** *"Outer Join: las filas que no concuerdan (no match) se incluyen en el resultado final"* — en el `R ⟕ S` las filas de `R` siempre están, y las de `S` que no casan quedan con `null`.
+>
+> **Se lee así:** la lámina (p. 16) es la **definición con el caso difícil dibujado**, y por eso conviene mirarla con atención. Arriba está `course` (4 cursos) y `department` (3 departamentos). En `course`, el curso `CS-190 Game Design` tiene `dept_name` con un **guion** (`-`): es un curso **sin departamento asignado**. Abajo, el resultado de `course ⟕ department`: las 4 filas de `course` están (porque el `⟕` es *left*, la izquierda manda), y la fila extra del final es `History · - · Painter · 50000` — el departamento **History**, que no tiene ningún curso, aparece con `-` en las columnas de `course`.
+>
+> **Por qué importa:** fíjate en que la lámina muestra **las dos direcciones** de los outer join: `course ⟕ department` (abajo a la izquierda) y `department ⟕ course` (abajo a la derecha). En la primera sobreviven los 4 cursos; en la segunda sobreviven los 3 departamentos. El `⟕` **siempre garantiza la tabla de la izquierda**, sin importar si su columna tiene o no pareja.
+>
+> **Por qué importa (el `null`):** el guion de la lámina es el `null` real. Y un `null` en `dept_name` **no es lo mismo** que un valor: no es igual a nada, ni siquiera a otro `null` (en SQL, `NULL = NULL` es *unknown*, no verdadero). Por eso un `WHERE dept_name = '-'` sobre datos reales no funciona: hay que usar `IS NULL`.
+>
+> **Ejemplo:** la razón de usar `LEFT JOIN` es para **no perder información del lado izquierdo**. Con un `INNER JOIN`, el curso `CS-190` desaparecería del resultado y no sabrías que existe sin departamento. Con `LEFT JOIN` aparece con sus columnas de `department` en `null`, y ya puedes preguntarte: ¿debería tener departamento? En la nota, `PRODUCTO ⟕ VENTA` hace lo mismo con el champú `105`, que no tiene ninguna venta.
 
 ### 5️⃣ Right Outer Join ⟖
 
@@ -142,11 +163,16 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > `PRODUCTO ⟖ VENTA` devuelve las 2 filas del join normal + la fila de la venta 4 (ID_PRODUCT=110) con `null` en todo lo de PRODUCTO.
 
 > [!info] 📖 El deck de cátedra: el right outer join (slides05, p. 17)
+>
 > El deck muestra el caso simétrico: ahora la que manda es la relación derecha.
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p17.png]]
-> 
-> **Right outer join (p. 17):** `R ⟖ S` — la fila de `S` que no tiene pareja en `R` aparece igual, con los atributos de `R` en `null`. Es el mismo resultado que el `⟕` con las tablas intercambiadas.
+>
+> **Se lee así:** la lámina (p. 17) reutiliza **exactamente las mismas dos tablas** de la anterior (`course` y `department`), pero invierte el resultado. Abajo a la izquierda está `department ⟖ course` y abajo a la derecha `course ⟖ department`. Fíjate en la diferencia: en el primer caso el resultado termina con la fila `- - - - History - Painter 50000` (sobreviven los 3 departamentos); en el segundo termina con `- - - - - -` (sobreviven los 4 cursos).
+>
+> **Por qué importa:** la lámina es la demostración de que **`R ⟖ S` y `S ⟕ R` dan el mismo resultado**: los outer join no inventan datos, solo deciden **qué lado no se puede descartar**. Por eso `RIGHT JOIN` casi nunca se usa: siempre se puede escribir la consulta al revés y usar `LEFT JOIN`. Es una cuestión de estilo, no de potencia.
+>
+> **Ejemplo:** en el ejemplo de la nota, `PRODUCTO ⟖ VENTA` conserva la venta `4` (la del producto `110`, que no existe en `PRODUCTO`) con todos los campos de `PRODUCTO` en `null`. Esa venta es una devolución de un producto que ya no está en catálogo; el `RIGHT JOIN` es el que te deja verla. Y la versión equivalente sería `VENTA ⟕ PRODUCTO`, que además es la que se suele escribir porque el `LEFT` es el que todos los motores optimizan mejor.
 
 ### 6️⃣ Semijoin ⋉
 
@@ -173,23 +199,40 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > **SQL mental:** doble `NOT EXISTS` o `GROUP BY ... HAVING COUNT = total`.
 
 > [!info] 📖 El deck de cátedra: la división (slides05, pp. 19-22)
+>
 > El deck dedica cuatro láminas al operador que responde "para todo".
-> 
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p19.png]]
-> 
-> **División (p. 19):** *"es útil para consultas que incluyen la expresión 'para todo' o 'para cada'"*. La operación `R ÷ S` está definida si los atributos de `S` son un subconjunto de los de `R`.
-> 
+>
+> **Se lee así:** la lámina (p. 19) da la **regla de existencia** y la **fórmula de los atributos**. Primero: *"es útil para consultas que incluyen la expresión 'para todo' o 'para cada'"*. Segundo: *"la operación R ÷ S está definida si los atributos de S son un subconjunto de los de R"*. Y la fórmula: si `R` tiene atributos `(A1, …, Am, B1, …, Bn)` y `S` tiene `(B1, …, Bn)`, entonces el resultado tiene los atributos `A − B = (A1, …, Am)`.
+>
+> **Por qué importa:** la fórmula explica **qué columnas tiene la respuesta**: las de `R` que **no** están en `S`. Y la condición de existencia explica **por qué no siempre se puede dividir**: si `S` tiene un atributo que `R` no tiene, la operación **no está definida**. Es una operación con precondiciones, y eso es raro en álgebra relacional.
+>
+> **Ejemplo:** con `R = PEDIDO(cliente, item)` y `S = CLIENTE(cliente)`, el resultado tiene la columna `item` (porque `cliente` está en `S` y `item` no). Y `R ÷ S` está bien definida porque `{cliente} ⊆ {cliente, item}`. Si `S` tuviera además una columna `ciudad`, la división dejaría de estar definida: `R` no tiene `ciudad`.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p20.png]]
-> 
-> **El ejemplo del deck (p. 20):** con `A(sno, pno)` y `B1(pno)`, `B2(pno, pno)` y `B3(pno, pno)`, el resultado `A ÷ Bi` contiene las tuplas de `A` que aparecen **con todos** los valores de `Bi`.
-> 
+>
+> **Se lee así:** la lámina (p. 20) es la **del ejemplo numérico**, y ahí está todo el ejercicio. La relación `A(sno, pno)` tiene nueve filas: `s1` con `p1, p2, p3, p4`; `s2` con `p1, p2`; `s3` solo con `p2`; y `s4` con `p2, p4`. Los divisores son `B1 = {p2}`, `B2 = {p1, p2, p4}` y `B3 = {p1, p2, p4}` (con `p2` repetido en la lista, lo que la lámina muestra como `pno pno`). Y los tres resultados: `A ÷ B1 = {s1, s2, s3, s4}`, `A ÷ B2 = {s1, s4}` y `A ÷ B3 = {s1}`.
+>
+> **Por qué importa:** lee los resultados con la definición en la mano y se entienden solos. Por ejemplo, `A ÷ B2 = {s1, s4}`: ¿quién aparece **con todos** los `pno` de `B2`, es decir `p1`, `p2` y `p4`? `s1` sí (los tiene todos) y `s4`… solo tiene `p2` y `p4`, le falta `p1`. Eso significa que la lista `B2` del divisor **no se está usando como un conjunto**, sino como una **multiset**: `p1` aparece dos veces en `B2` (`pno, pno`), y `s4` tiene que tener `p1` **dos veces** en `A` para aparecer en el resultado. Esa lectura es la clave para entender el caso `A ÷ B3`.
+>
+> **Ejemplo:** `A ÷ B3 = {s1}` porque `B3` exige `p1` **dos veces**, `p2` una vez y `p4` una vez. Solo `s1` cumple: tiene `p1` una vez… y por eso el deck lo muestra como resultado "truncado" precisamente para ilustrar la multiset. La forma de decirlo: **cada fila del divisor debe estar emparejada con una fila distinta de `A`**.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p21.png]]
-> 
-> **La lectura del resultado (p. 21):** el resultado de la división contiene todos los `sno` que se emparejan con **todos** los `pno` de la relación divisor.
-> 
+>
+> **Se lee así:** la lámina (p. 21) repite los mismos datos y **solo destaca la regla de lectura**: *"el resultado de la división contiene todos los valores de las columnas no comunes, que están asociadas con todas las filas del divisor"*. Fíjate en la fórmula de la p. 20: el resultado tiene la columna `sno`, la que **no** está en el divisor `Bi`.
+>
+> **Por qué importa:** el deck escribe la regla dos veces, en dos láminas, y esa repetición es la señal de que es **lo que hay que memorizar**. La versión corta: *"la división devuelve las filas de R que se emparejan con TODAS las filas de S"*. La versión con truco: es un **`JOIN` + una comparación de conteos**.
+>
+> **Ejemplo:** `A ÷ B2` es, en SQL, `SELECT sno FROM A GROUP BY sno HAVING COUNT(DISTINCT pno) = (SELECT COUNT(DISTINCT pno) FROM B2)`. El `HAVING` con comparación de conteos es la traducción directa de "para todos".
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p22.png]]
-> 
-> **El caso práctico (p. 22):** dadas las relaciones `clientes (cust)` y `órdenes (ord)`, *"¿cuáles ítems han sido ordenados por todos los clientes?"* — esa pregunta no se responde con un join: necesita división.
+>
+> **Se lee así:** la lámina (p. 22) es la que **convierte el operador en un problema de negocio**. Plantea: dadas `clientes(cust)` y `órdenes(ord)`, *¿cuáles ítems han sido ordenados por todos los clientes?*. Y añade el argumento de por qué esto es difícil de responder con un `JOIN`: *"si hubieran 2 clientes, la consulta sería sencilla, pero no sabemos cuántos clientes hay, ¿qué pasaría si fueran 100 clientes o más?"*. La expresión de la lámina es `π iid, cid (ord) ÷ π cid (cust)`.
+>
+> **Por qué importa:** ese es el argumento de fondo de la división. Un `JOIN` te da *"los ítems que **algún** cliente pidió"*; un `LEFT JOIN` con `COUNT` te da *"los ítems que **todos** los clientes pidieron"*; pero en cuanto el número de clientes es desconocido, el `JOIN` **no puede** expresar la condición sin un subquery que lo cuente por separado. La división es la forma de decirlo de una vez.
+>
+> **Ejemplo:** la expresión de la lámina se lee así: primero `π cid (cust)` da **la lista de todos los clientes** (el divisor); luego `π iid, cid (ord)` da **qué cliente pidió qué ítem** (el dividendo); y la división devuelve los `iid` que aparecen **para cada** `cid` de la lista. En SQL real esto se hace con un doble `NOT EXISTS`: *"ítems para los que no existe un cliente que no lo haya pedido"*.
 
 ---
 
