@@ -1505,3 +1505,58 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 >
 > **PUSHEADO `2e66439f`** — `3353d22a`
 
+---
+
+### `opencode-site` — rediseño del sitio (acento por semestre, animaciones locales, lectura y búsqueda) — 09/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` · 2 commits (código + este bloque) · ~1 min
+>
+> - **Hecho (código, `6348f206`):** rediseño del sitio en `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/`.
+>   - **Acento por semestre, resuelto en el servidor:** `<html style="--nx-accent:…">` con un color
+>     distinto para cada semestre (preuniversitario, 1er, 2do, 3er). Antes era siempre el mismo verde.
+>   - **Notas más legibles:** en las notas (>3 segmentos) se apagan las texturas de fondo (scanline y
+>     grano) y se enciende la **ETA de lectura** ("11 min restantes") abajo a la izquierda.
+>   - **Animaciones locales, sin CDN:** GSAP 3.15.1 + ScrollTrigger + SplitText + ScrambleText + Lenis +
+>     Three.js servidos desde `public/` (este entorno da 404 a cualquier CDN). La portada monta la
+>     escena Three.js de forma diferida (`requestIdleCallback`), y todo se apaga con
+>     `prefers-reduced-motion`.
+>   - **Portada nueva:** sección **"Continuar leyendo"** (lee `localStorage["nx-last"]`), panel de
+>     atajos y **filtro por semestre** (18 tarjetas de materia).
+>   - **Búsqueda por apartados:** el buscador ya encuentra dentro de las notas, no solo por título
+>     (18.043 apartados indexados). Verificado: 15 coincidencias con contador "15 COINCIDENCIAS" y
+>     **todas las anclas generadas resuelven** en la página destino.
+>   - **Atajos de teclado:** `g h` (inicio), `g i` (índice de semestres), `g b` (buscar), `/` (buscar).
+>     Verificados: `g i` lleva a `#semestres` con el scroll exacto de la sección.
+>   - **Botón "copiar"** en cada bloque de código, con respaldo a `execCommand` cuando la API del
+>     portapapeles está denegada (en el navegador de pruebas está denegada y aun así confirma
+>     "copiado ✓").
+>
+> - **Bugs corregidos de paso:**
+>   - **220 enlaces PDF rotos** (`href="[object Object]"`) en **13 materias**: `vault.json` guarda el
+>     PDF como string en unas materias y como `{url,size}` en otras. Normalizado en `[mat].astro`.
+>     Verificado: **0** restantes, y los 70 PDFs de Física Mecánica ya apuntan a su asset real.
+>   - **Listeners duplicados:** las guardas vivían en `data-*` de `<html>`, que `swapRootAttributes`
+>     borra en cada navegación SPA; ahora están en `window` (`__nxKeys`, `__nxDirBound`,
+>     `__nxSearchKeys`). Antes, Ctrl+K alternaba abrir/cerrar con un listener por visita.
+>   - **Plugin de GSAP mal registrado** como `window.ScrambleText` (no existe): el scramble de texto
+>     nunca corría. Ahora es `window.ScrambleTextPlugin`.
+>   - **"Continuar leyendo" invisible:** se medía su `ScrollTrigger` estando oculta. Se fuerza
+>     `ScrollTrigger.refresh()` al mostrarla.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1
+>   múltiple, 0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas; los ZIP no se listan por
+>   falta de `unzip` en Windows) · navegador sin errores de consola: PDFs, buscador, filtros, atajos,
+>   ETA y "Continuar leyendo" funcionando.
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **206 anclas cruzadas rotas** (preexistentes, **no** de este lote): enlaces `#encabezado` entre
+>     notas apuntan a encabezados cuyo slug en el destino **no coincide** con el que escribió el autor
+>     (acentos, guiones iniciales, emojis). Ejemplo: `#funciones-definidas-por-partes` → el destino
+>     tiene `id="funciones-definidas-por-partes-"` (guion final) o directamente no existe. **Solo 1**
+>     se arregla solo (el guion final). Corregir el resto implica tocar las notas de origen (zonas de
+>     otras sesiones) o un slugger más tolerante en el sitio. **Lo dejo reportado, no lo toqué.**
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
