@@ -9,7 +9,7 @@ tags: [TICG1018, bases-de-datos, mapa-de-contenido]
 >
 > Esta nota es el acceso directo a Sistema de Bases de Datos. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
 >
-> **Cómo se lee este mapa:** cada bloque es una unidad del curso. Las notas numeradas (`01`, `02`, `03`…) son las **lecciones**: todas siguen el mismo guion — qué es el concepto, cómo se aplica, qué errores te vas a topar y qué exercises para practicar. Las **guías de problemas** (`Guía de Problemas N`) no repiten la teoría: son ejercicios resueltos con material real de la carrera (talleres, participaciones, exámenes).
+> **Cómo se lee este mapa:** cada bloque es una unidad del curso. Las notas numeradas (`01`, `02`, `03`…) son las **lecciones**: todas siguen el mismo guion — qué es el concepto, cómo se aplica, qué errores te vas a topar y qué ejercicios para practicar. Las **guías de problemas** (`Guía de Problemas N`) no repiten la teoría: son ejercicios resueltos con material real de la carrera (talleres, participaciones, exámenes).
 >
 > **Si solo tienes 20 minutos hoy:** lee la Introducción y las Definiciones Formales de la primera nota de la unidad, y haz un ejercicio de la guía. El orden del bloque inferior (Unidad 0) es el orden en que la cátedra va soltando el material: policies → introducción → modelo conceptual → conversión.
 

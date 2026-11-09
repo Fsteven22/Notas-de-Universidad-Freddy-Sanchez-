@@ -19,7 +19,9 @@ Severidades: H (error duro) y W (desviacion de formato).
   R12 embeds que resuelven; profundidad '..' vs '../..'    H
       + material ajeno (_texto, Contenido Extra, etc.)     H
   R13 '**Tags:**' al final                                 W
-  R14 cada PNG de deck va con explicacion propia           W
+  R14 todo lo visual se explica, no se transcribe             W
+      + embeds (.png de deck / .svg de diagrama) con lectura   W
+      + callouts 📖 de deck con etiqueta de lectura            W
 
 DRY por defecto (solo reporta). --fix-rutas repara R12 cuando la ruta
 corta (un nivel menos en '../') existe de verdad.
@@ -356,38 +358,74 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
     if not any(RE_TAGS_FOOT.match(x) for x in lineas):
         hallazgos.append((rel, len(lineas), "R13-tags-final", "falta '**Tags:** ...'"))
 
-    # ---------- R14 cada PNG de deck va con explicacion propia
-    # Una captura del deck no se documenta sola: al lado debe haber una
-    # lectura (lo que significa), no solo la transcripcion de la lamina.
-    # Se acepta 'Se lee asi:', 'Por que importa:', 'Ejemplo(s):', 'Nota:'
-    # o una linea de prosa que explique (>= 40 chars) tras el embed.
+    # ---------- R14 todo lo visual se explica (no se transcribe)
+    # Una captura del deck o un diagrama no se documenta solo: al lado debe
+    # haber una lectura (lo que significa), no solo la transcripcion.
+    # Se acepta 'Se lee asi:', 'Por que importa:', 'Ejemplo(s):', 'Nota:',
+    # 'Verificacion', 'Analogia', 'Resumen', 'Para que sirve', ...
     ETIQUETAS_EXPL = re.compile(
-        r"\*\*(Se lee as[ií]|Por qu[eé] importa|Ejemplos?|Nota|C[uú]mo se lee)", re.I)
-    for i, ln in enumerate(lineas):
-        if ".png" not in ln.lower():
-            continue
-        if "![" not in ln:
-            continue
-        # buscar la explicacion en las siguientes 6 lineas del mismo bloque
-        ventana = []
-        for k in range(i + 1, min(len(lineas), i + 7)):
+        r"\*\*(Se lee as[ií]|Por qu[eé] importa|Ejemplos?|Nota|C[uú]mo se lee|"
+        r"Verificaci[oó]n|Analog[ií]a|Resumen|Para qu[eé] sirve|Qu[eé] notas|Pista)", re.I)
+
+    def ventana_expl(i, n):
+        """Lineas siguientes al embed, dentro del mismo callout."""
+        out = []
+        for k in range(i + 1, min(n, i + 7)):
             s = lineas[k].strip()
             if not s:
                 continue
             if not s.startswith(">"):
                 break            # salio del callout: no hay explicacion
-            ventana.append(s)
+            out.append(s)
+        return out
+
+    # (a) cada embed visual (.png de deck o .svg de diagrama) lleva lectura
+    for i, ln in enumerate(lineas):
+        bajo = ln.lower()
+        if ".png" not in bajo and ".svg" not in bajo:
+            continue
+        if "![" not in ln:
+            continue
+        ventana = ventana_expl(i, len(lineas))
         if not ventana:
-            hallazgos.append((rel, i + 1, "R14-png-sin-explicacion",
-                              "captura sin lectura: %s" % ln.strip()[:50]))
+            hallazgos.append((rel, i + 1, "R14-embed-sin-explicacion",
+                              "embed visual sin lectura: %s" % ln.strip()[:50]))
             continue
         tiene_etiqueta = any(ETIQUETAS_EXPL.search(x) for x in ventana)
         # la prosa debe ser texto real: la ruta del propio embed no cuenta
         tiene_prosa = any(
             "![[" not in x and len(re.sub(r"^>\s*", "", x)) >= 60 for x in ventana)
         if not (tiene_etiqueta or tiene_prosa):
-            hallazgos.append((rel, i + 1, "R14-png-sin-explicacion",
-                              "captura sin lectura propia: %s" % ln.strip()[:50]))
+            hallazgos.append((rel, i + 1, "R14-embed-sin-explicacion",
+                              "embed visual sin lectura propia: %s" % ln.strip()[:50]))
+
+    # (b) cada callout 📖 de deck lleva al menos una etiqueta de lectura.
+    #     Excepcion: los callouts 📖 de 'Fuentes' son bibliografia.
+    i = 0
+    n = len(lineas)
+    while i < n:
+        m = RE_CALL_HDR.match(lineas[i])
+        if not m:
+            i += 1
+            continue
+        depth = m.group("gg").count(">")
+        titulo = m.group("titulo")
+        interior = []
+        j = i + 1
+        while j < n:
+            mh = RE_CALL_HDR.match(lineas[j])
+            if mh and mh.group("gg").count(">") <= depth:
+                break
+            mm = RE_CALL_CONT.match(lineas[j])
+            if not mm:
+                break
+            interior.append(mm.group("resto"))
+            j += 1
+        if "\U0001F4D6" in titulo and depth == 1 and "Fuente" not in titulo:
+            if not any(ETIQUETAS_EXPL.search(x) for x in interior):
+                hallazgos.append((rel, i + 1, "R14-deck-sin-explicacion",
+                                  "callout de deck sin lectura: %s" % titulo[:50]))
+        i = j
 
 
 def fix_rutas(nota_path):

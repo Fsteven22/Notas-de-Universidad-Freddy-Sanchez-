@@ -43,16 +43,29 @@ tags: [recursos-visuales, bases-de-datos]
 > | NORMALIZACIÓN en BASES DE DATOS \| MASTER CLASS con ejercicio | [Link](https://www.youtube.com/watch?v=kvt2wE-q-yY) | TodoCode, 36:08 | normalización de punta a punta. |
 > | Formas Normales (1FN, 2FN y 3FN) desde cero | [Link](https://www.youtube.com/watch?v=RlgbWESXySI) | Viera Class, 7:40 | cada forma normal por separado. |
 > | Normalización (1FN, 2FN, 3FN) | [Link](https://www.youtube.com/watch?v=MdYvCMbQji4) | Daniela Bohórquez Escovar, 4:45 | el resumen rápido de las tres formas. |
-> | Álgebra Relacional: operaciones con ejemplos | [Link](https://www.youtube.com/watch?v=580_6ySKy4Q) | Denisse VM, 15:19 | para la guía de álgebra relacional del Taller 2. |
-> | Álgebra Relacional: operadores básicos | [Link](https://www.youtube.com/watch?v=hsNZnJjYXGM) | Antonio FI UPM, 14:33 | selección, proyección y unión uno a uno. |
 >
 > **Estrategia sugerida:** ve primero el de 4:45 (resumen) y luego el de 7:40 (cada forma por separado). El resumen te da el *qué*; el detallado te da el *por qué* de cada partición, que es justo lo que pide el parcial.
 >
-> **Sobre el de álgebra relacional:** los dos videos usan notación distinta a la de la guía (flechas, subíndices). Si los ves, fíjate solo en la **idea** de cada operador (filtrar, proyectar, unir) y usa la guía de la Unidad 3 para la notación que sí se examina.
+> **Ejemplo:** si te enredas con **por qué** partir una tabla, el video de 36:08 es el que lo explica con un ejercicio completo de principio a fin. Pero ojo: usa una notación de dependencias distinta a la de las notas. Úsalo para entender la *intuición* y vuelve a la nota 03 de la Unidad 2 para la notación que sí se examina.
 
 ---
 
-## 📕 Unidad 3 — SQL y PL/SQL
+## 📙 Unidad 3 — Álgebra Relacional
+
+> [!info] 🎬 Videos de la unidad
+>
+> | Video | Enlace | Autor y duración | Para qué sirve |
+> | --- | --- | --- | --- |
+> | Álgebra Relacional: operaciones con ejemplos | [Link](https://www.youtube.com/watch?v=580_6ySKy4Q) | Denisse VM, 15:19 | para la guía de álgebra relacional del Taller 2. |
+> | Álgebra Relacional: operadores básicos | [Link](https://www.youtube.com/watch?v=hsNZnJjYXGM) | Antonio FI UPM, 14:33 | selección, proyección y unión uno a uno. |
+>
+> **Sobre la notación:** los dos videos usan notación distinta a la de la guía (flechas, subíndices). Si los ves, fíjate solo en la **idea** de cada operador (filtrar, proyectar, unir) y usa la guía de la Unidad 3 para la notación que sí se examina.
+>
+> **Ejemplo:** un `SELECT` con `WHERE` es una **selección** (`σ`) y un `SELECT` con dos columnas es una **proyección** (`π`). Si reconoces eso en SQL, ya tienes el 80% del álgebra relacional sin necesidad de la notación formal.
+
+---
+
+## 📕 Unidad 4 — SQL y PL/SQL
 
 > [!info] 🎬 Videos de la unidad
 >
@@ -73,6 +86,8 @@ tags: [recursos-visuales, bases-de-datos]
 > **Estrategia sugerida:** si vas al Taller 3, mira primero los dos de JOIN (8 min cada uno) — son el mismo contenido que la consulta 1 del taller, y verlos con ejemplos te ahorra media hora de ensayo y error.
 >
 > **Cuidado con los cursores:** hay tres videos porque PL/SQL tiene cursor explícito y cursor implícito, y cada video se queda con uno. El de *hdeleon.net* (10:32) es el que mejor explica la **idea**; el de *Informaticonfig* es el único que te da la sintaxis completa de Oracle, que es la que se usa en la cátedra.
+>
+> **Ejemplo:** el video de triggers de *hdeleon.net* es el que mejor prepara el punto 1 del Taller 4 (el disparador que valida la puntuación de una reseña). Usa SQL Server en vez de Oracle, así que el `DELIMITER` no aparece — pero la idea (`BEFORE INSERT` + validación + error) es idéntica a la que pide el enunciado.
 
 ---
 
@@ -80,7 +95,7 @@ tags: [recursos-visuales, bases-de-datos]
 
 > [!info] 🔗 Ver también
 >
-> - [[../../00 - Índice de Contenido|Índice de Contenido]] — índice de guías, material y lista negra de libros.
+> - [[Índice de Contenido|Índice de Contenido]] — índice de guías, material y lista negra de libros.
 > - [[Guía de Problemas 1 - MC, ML y Normalización|Guía de Problemas 1]] — problemas de modelo conceptual, modelo lógico y normalización.
 > - [[Guía de Problemas 2 - Álgebra Relacional y Normalización|Guía de Problemas 2]] — consultas de álgebra relacional y normalización del hotel (Taller 2).
 > - [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad|Guía de Problemas 3]] — SQL, transacciones, triggers, usuarios y MongoDB (Talleres 3 y 4).
