@@ -15,15 +15,15 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > - **Diseño de BD:** cada diagrama del curso y del proyecto usa estas piezas.
 > - **Validación:** leer un ER en voz alta detecta relaciones falsas en segundos.
 > - **Lección 1 (13-oct):** definir cada pieza con ejemplo propio es pregunta segura.
-
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-01-graph.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-02-01-graph.svg]]
 
 ---
 
 ## 📋 Definiciones Formales
 
 > [!info] ℹ️ Cómo leer esta sección
-> Una definición por bloque, cada una con su ejemplo y su figura. Todo en Chen: rectángulo = entidad, rombo = relación, óvalo = atributo, subrayado = clave.
+>
 
 ### 1️⃣ Entidad — lo que existe por sí mismo
 
@@ -62,13 +62,13 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!info] 📖 El deck de cátedra: la taxonomía de atributos en figuras (slides02, pp. 7-10)
 > El deck del Ing. Magallanes recorre los tipos de atributo con su figura: el **compuesto** (un número de teléfono se subdivide en código de país, código de área y número), el **multivaluado** y el **derivado**.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p5.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p8.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p10.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p5.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p8.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p10.png]]
+>
 > **Atributo requerido (p. 8):** *"un atributo que debe tener valor o no puede ser vacío (Not null)"*.
 >
 > **Identificadores (p. 9):** *"uno o más atributos que identifican a cada instancia de una Entidad"* — en el modelo relacional, la entidad es una tabla y el identificador es la clave primaria.
@@ -85,31 +85,41 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 
 > [!info] 📖 El deck de cátedra: relación, cardinalidad y grado (slides02, pp. 11-19)
 > *"Una Relación representa a un conjunto de asociaciones entre las instancias u ocurrencias de Entidades"* (p. 12). El deck dibuja la cardinalidad con el par (mín, máx) por lado.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p13.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p15.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p13.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p15.png]]
+>
 > **Las dos preguntas del deck (p. 14):** para Departamento, *"un empleado trabaja mínimo en cuántos departamentos?"* — si es 0, la participación del empleado es **opcional**; y el máximo define si es 1:1, 1:N o N:N.
 >
 > **Cardinalidad (p. 13):** *"el número mín y máx de ocurrencias de la Entidad con relación a una ocurrencia de la otra"*.
 >
 > **Grado (p. 16):** el número de entidades que participan — casi todas son binarias, pero las ternarias y superiores están permitidas.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p17.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p19.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p17.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p19.png]]
+>
 > **Relaciones recursivas (p. 17):** un empleado puede dirigir a muchos empleados (0,N) y ser dirigido por uno (0,1); un curso puede ser prerrequisito de otros.
 >
 > **Los cuatro tipos (p. 19):** *"en la fig. 'nace' es una relación N:1 y 'reside' es una relación N:N"*. El deck avisa: **una relación N:N en el E/R se convierte en una nueva tabla en el relacional** — es la regla 2 de la conversión.
 
 > [!info] 📖 El deck de cátedra: generalización y herencia (slides02, pp. 26-28)
 > *"Car y Truck son sub-clases o especializaciones de Vehicule y por lo tanto heredan los atributos y relaciones"* (p. 28).
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p26.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p28.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p26.png]]
+>
+> **Se lee así:** esta lámina es la **portada del tema** dentro del deck: *"Mejoras al Modelo E/R — Subclases, Superclase y Herencia"*. No trae un diagrama nuevo, sino el aviso de que el E/R clásico se queda corto cuando una entidad tiene variantes que comparten atributos. Fíjate en el título: los tres términos (subclase, superclase, herencia) son las tres piezas del mecanismo.
+>
+> **Por qué importa:** leer la portada te da el mapa de las dos láminas siguientes. Si solo miraras el diagrama de la p. 28 sin saber que hay un tema detrás, verías *"Car, Truck, Vehicle"* como un ejemplo suelto; con la portada, lo entiendes como la solución a un problema concreto.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p28.png]]
+>
+> **Se lee así:** aquí está el **concepto**, con las tres piezas ya montadas. `Vehicle` es la **superclase** (el conceito general: cualquier vehículo); `Car` y `Truck` son las **subclases** (las especializaciones: un vehículo que además es carro o camión). La palabra clave es *heredan*: `Car` y `Truck` reciben automáticamente los atributos y las relaciones de `Vehicle`, sin repetirlos.
+>
+> **Por qué importa:** la herencia es lo que te evita el duplicado. Si `Vehicle` tiene `placa` y `color`, y `Car` tiene `puertas`, no dibujes `placa` otra vez dentro de `Car`: lo hereda. Y en el modelo lógico esto se convierte en tablas — con las cuatro traducciones que ya viste: tabla por tipo, tabla ancha, o supertabla con hijas.
+>
+> **Ejemplo:** si `Vehicle` tiene `matricula` y `Car` añade `num_puertas`, entonces el auto de la María hereda `matricula` y suma `num_puertas`. La entities `Vehicle` no necesita saber de autos; `Car` no necesita saber de matrículas. Cada pieza vive donde le corresponde.
 
 ### 4️⃣ Claves — PK, FK, candidata y compuesta
 
@@ -218,7 +228,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 ## 🎨 Ejemplos Trabajados
 
 > [!info] ℹ️ Cómo trabajarlos
-> Cada ejemplo trae su dibujo: tapa la solución, clasifica tú, compara.
+>
 
 ### ✏️ Ejemplo 1 — Clasificar DIVISION–EMPLOYEE
 
@@ -284,7 +294,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!warning] ⚠️ Cómo leer esta sección
-> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
+>
 
 ### ❌ Error 1: Relación sin verbo ("línea muda")
 
@@ -339,7 +349,7 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
-> Tapa la solución, resuelve, compara. Respuestas colapsables abajo.
+>
 
 ### ✏️ Ejercicio 1 — Clasifica en ambas direcciones
 
@@ -433,18 +443,18 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 #flashcards/bd-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Entidad vs atributo vs relación?::Sustantivo que existe / propiedad que describe / verbo que conecta.
-- ¿Reglas de una buena PK?::Única + no nula + estable + mínima.
-- ¿Conectividad vs cardinalidad?::Clasificación 1:1/1:M/M:N vs mínimo-máximo (x,y).
-- ¿Entidad débil (2 condiciones)?::Existencia-dependiente + PK derivada del padre.
-- ¿Cómo sé si una relación es 1:M y no 1:1?::Escribiendo ambas direcciones (pregunta de vuelta).
-- ¿Trampa CALIFICACIÓN?::La nota no existe sola (alumno + asignatura a la vez): atributo de la relación, no entidad.
-- ¿Simple/compuesto/derivado/multivaluado?::Atómico / se parte / se calcula / N valores (pide tabla).
-- ¿Volátil vs no volátil?::Edad cambia sola (mala); fecha_nacimiento no (úsala).
-- ¿PK artificial cuándo?::Incremental sin significado, cuando ninguna candidata es estable.
-- ¿Mandatory vs Optional (ERDPlus)?::Mínimo 1 vs mínimo 0 (tu x de (x,y)).
-- ¿Identifying prendido/apagado?::PK del padre entra a la PK del hijo vs FK normal.
+>
+> - ¿Entidad vs atributo vs relación?::Sustantivo que existe / propiedad que describe / verbo que conecta.
+> - ¿Reglas de una buena PK?::Única + no nula + estable + mínima.
+> - ¿Conectividad vs cardinalidad?::Clasificación 1:1/1:M/M:N vs mínimo-máximo (x,y).
+> - ¿Entidad débil (2 condiciones)?::Existencia-dependiente + PK derivada del padre.
+> - ¿Cómo sé si una relación es 1:M y no 1:1?::Escribiendo ambas direcciones (pregunta de vuelta).
+> - ¿Trampa CALIFICACIÓN?::La nota no existe sola (alumno + asignatura a la vez): atributo de la relación, no entidad.
+> - ¿Simple/compuesto/derivado/multivaluado?::Atómico / se parte / se calcula / N valores (pide tabla).
+> - ¿Volátil vs no volátil?::Edad cambia sola (mala); fecha_nacimiento no (úsala).
+> - ¿PK artificial cuándo?::Incremental sin significado, cuando ninguna candidata es estable.
+> - ¿Mandatory vs Optional (ERDPlus)?::Mínimo 1 vs mínimo 0 (tu x de (x,y)).
+> - ¿Identifying prendido/apagado?::PK del padre entra a la PK del hijo vs FK normal.
 
 ---
 

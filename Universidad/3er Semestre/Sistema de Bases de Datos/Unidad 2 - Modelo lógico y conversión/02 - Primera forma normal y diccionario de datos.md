@@ -59,11 +59,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 > [!info] 📖 El deck de cátedra: la 1FN en la pizarra (slides04 y BD 02.3)
 > El deck del Ing. Magallanes define la 1FN como *"una tabla donde la intersección de cada fila y columna contiene solo un valor"* y da el ejemplo canónico de la rama con varios teléfonos.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p10.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p10.png]]
+>
 > **Las 5 condiciones (BD 02.3, p. 10):** *"1. No hay orden de arriba-a-abajo en las filas. 2. No hay orden de izquierda-a-derecha en las columnas. 3. No hay filas duplicadas. 4. Cada intersección…"* — el checklist de esta nota es el mismo, con la condición 5 (columnas regulares) completada.
 >
 > **El ejemplo del deck (slides04, p. 9):** la tabla `branchNo / branchAddress / telNos` con `B001 · 8 Jeffesorn Way, Portland, OR 97201 · 212-…` y varios teléfonos separados por comas — la celda con lista que viola la 1FN.
@@ -184,6 +184,27 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Distingo una relación 1:1, 1:M y M:N solo con leerla en voz alta.
+> - [ ] Sé en qué lado va la FK en cada cardinalidad.
+> - [ ] Identifico cuándo una relación necesita tabla intermedia.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Convierto un ERD completo a modelo lógico aplicando las reglas de cardinalidad.
+> - [ ] Detecto relaciones recursivas y supertipo-subtipo y elijo su traducción.
+> - [ ] Hago la conversión inversa (del modelo lógico al conceptual) sin perder información.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Justifico por qué una 1:1 total-total se fusiona y cuándo no.
+> - [ ] Reviso el esquema resultante y cuento tablas para detectar las que sobran.
+
 ## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — Detectar la violación
@@ -226,11 +247,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 #flashcards/bd-u2
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
-- ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
-- ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
-- ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
+>
+> - ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
+> - ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
+> - ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
+> - ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
 
 ---
 
@@ -246,6 +267,15 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > **Próxima clase:** taller de conversión y normalización.
 
 ---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[01 - Conversión MC a ML por cardinalidad]] — de dónde sale el esquema que hay que documentar.
+> - [[03 - Segunda y tercera forma normal]] — el siguiente escalón: 2FN y 3FN.
+> - [[04 - Normalización paso a paso]] — el protocolo completo, paso a paso.
+> - [[../Unidad 1 - Modelos de Datos y ER/Guía de Problemas 1 - MC, ML y Normalización|Guía de Problemas 1]] — el caso de las recetas de farmacia, resuelto con este método.
 
 ## 🔗 Seguir estudiando
 

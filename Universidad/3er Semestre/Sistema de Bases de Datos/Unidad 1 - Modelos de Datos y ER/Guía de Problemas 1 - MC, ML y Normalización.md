@@ -1,26 +1,35 @@
 ---
 dg-publish: true
-tags: [TICG1018, unidad0, guia, taller1, bd]
+tags: [TICG1018, unidad1, guia, taller1, modelo-conceptual, normalizacion, bd]
 ---
 
 # 📝 Guía de Problemas 1 — MC, ML y Normalización (Taller 1)
 
-> [!info] ℹ️ Qué es esta guía
-> Recopilación de los ejercicios reales de talleres, lecciones y exámenes (2022–2026) que cubren lo del **Taller 1**: modelo conceptual en Chen, conversión a modelo lógico pata de gallo, supertipos, dependencias y normalización hasta 3FN. Los enunciados salen de los PDFs de la Unidad 0; las soluciones y claves son propias.
-> - Bloque A: casos de modelado (enunciado + clave + esqueleto del diagrama).
-> - Bloque B: dependencias y normalización (resueltos paso a paso, con diagrama).
-> - Bloque C: banco de conceptos V/F.
-> - Método completo en: [[02 - Entidades, atributos, claves y relaciones]], [[01 - Conversión MC a ML por cardinalidad]], [[02 - Primera forma normal y diccionario de datos]], [[03 - Segunda y tercera forma normal]].
+## 🎯 Introducción
 
-## 🅰️ Bloque A — Modelo conceptual (casos reales)
+> [!info] ℹ️ Qué es esta guía
+>
+> Recopilación de los ejercicios reales de talleres, lecciones y exámenes (2022–2026) que cubren lo del **Taller 1**: modelo conceptual en Chen, conversión a modelo lógico pata de gallo, supertipos, dependencias y normalización hasta 3FN. Los enunciados salen de los PDFs de la Unidad 0; las soluciones y claves son propias.
+>
+> - **Bloque A:** casos de modelado (enunciado + clave + esqueleto del diagrama).
+> - **Bloque B:** dependencias y normalización (resueltos paso a paso, con diagrama).
+> - **Bloque C:** banco de conceptos V/F.
+> - **Método completo en:** [[02 - Entidades, atributos, claves y relaciones]], [[01 - Conversión MC a ML por cardinalidad]], [[02 - Primera forma normal y diccionario de datos]], [[03 - Segunda y tercera forma normal]].
+>
+> **Se lee así:** el bloque A te pide *dibujar* (conceptual en Chen, luego lógico en pata de gallo) y el bloque B te pide *partir* (normalizar). La rúbrica del 1E 2025 al final dice exactamente qué te califican, así que úsala como checklist antes de entregar.
+
+---
+
+## 📝 Ejercicios Propuestos
+#### 🅰️ Bloque A — Modelo conceptual (casos reales)
 
 > [!tip] 📌 Cómo trabajar cada caso
-> Lee el enunciado, dibuja el Chen en papel o ERDPlus (rectángulo = entidad, rombo = relación, óvalo = atributo, subrayado = PK), abre la clave, compara. La clave trae lo que el corrector verifica (entidades, identificadores, cardinalidades, la trampa) más el esqueleto del diagrama esperado.
+>
 
-### ✏️ Ejercicio 1 — Lavandería (Taller 1, 2026)
+#### ✏️ Ejercicio 1 — Lavandería (Taller 1, 2026)
 
 > [!example] 🧪 Planteamiento (fuente: `2026_1PAO_Taller_1_TICG1018.pdf`)
-> - Empresa de limpieza en seco; se registran CLIENTES (identificación, nombres, apellidos, teléfono, correo, dirección) con **historial de solicitudes y preferencias**.
+>
 > - PRENDAS (descripción, color, material, marca, observaciones, tratamientos especiales por manchas o tejidos delicados).
 > - EMPLEADOS (identificación, nombres, apellidos, cargo, fecha de contratación, teléfono, correo) que participan en etapas: recepción, clasificación, limpieza, planchado, entrega.
 > - SOLICITUDES (fecha de recepción, fecha estimada de entrega, estado: recibido / en proceso / listo / entregado) con **varias prendas y varios servicios**.
@@ -55,10 +64,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - 1:M: CLIENTE–SOLICITUD (FK cliente en solicitud); SOLICITUD–PAGO (FK solicitud en pago).
 > > - Trampa: el historial **no** es entidad (sale de CLIENTE 1:M SOLICITUD con fechas); estado = valor con dominio, no entidad.
 
-### ✏️ Ejercicio 2 — TaxiGo! (Lección 1, 2024)
+#### ✏️ Ejercicio 2 — TaxiGo! (Lección 1, 2024)
 
 > [!example] 🧪 Planteamiento (fuente: `Leccion 1 - PAO I 2024.pdf`)
-> - USUARIO se registra (nombres, apellidos, fecha de nacimiento, móvil) con usuario y contraseña.
+>
 > - Registra el lugar de recojo: calle principal, número, calle secundaria, ciudad.
 > - CONDUCTOR (nombres, apellidos, cuenta bancaria, cédula, género, licencia, dirección, teléfono, código único en la compañía).
 > - CARRO (placa, gasolina, modelo, color, alquilado sí/no; si es alquilado, datos del PROPIETARIO: nombres, apellidos, dirección, teléfono).
@@ -87,10 +96,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - Tarjeta: solo 4 dígitos + fecha (atributo simple de la carrera aceptada); nunca el número completo.
 > > - Cancelación vs éxito: **estado** de CARRERA (aceptada / cancelada / culminada); las estadísticas salen por consulta.
 
-### ✏️ Ejercicio 3 — Revista AZM (Taller 1, 2024 / 1E 2022)
+#### ✏️ Ejercicio 3 — Revista AZM (Taller 1, 2024 / 1E 2022)
 
 > [!example] 🧪 Planteamiento (fuente: `2024_1PAO_Taller_1_TICG1018.pdf`)
-> - Autores envían ARTÍCULOS (título, categoría, resumen, cuerpo, tags, ID único, estado informado por email).
+>
 > - Revisores asignados por área: **3 por artículo**; autores y coautores de *otros* artículos pueden ser revisores de artículos ajenos.
 > - Si se rechaza: se devuelve con criterios y hay **reenvío** (2da revisión con 2 revisores nuevos; si falla, rechazo final).
 > - Aprobación exige que **todos** los revisores aprueben.
@@ -118,10 +127,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - Reenvío: el mismo ARTÍCULO con versión/ronda (atributo), no artículo nuevo.
 > > - Estado: valor (enviado / observado / aprobado / publicado).
 
-### ✏️ Ejercicio 4 — Subsidio de combustibles (1E, 2024)
+#### ✏️ Ejercicio 4 — Subsidio de combustibles (1E, 2024)
 
 > [!example] 🧪 Planteamiento (fuente: `2024-1PAO-1E-SBD.docx`, Sección 2)
-> - VEHÍCULO (placa, chasis, tipo, última matriculación, edad, cilindraje, gama: baja/media/alta).
+>
 > - SUBSIDIO configurable: porcentaje según edad + cilindraje + gama; **cambia en cualquier momento**.
 > - VENTA (tipo de gasolina, cantidad, valor oficial, % de subsidio, total pagado, vendedor, comprador).
 > - GASOLINERA (empresa, dirección); CIUDAD compuesta (país, provincia, ciudad, calle principal, secundaria + **referencias**: varias).
@@ -156,10 +165,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - CIUDAD: entidad con ubicación compuesta + multivaluado referencias.
 > > - SUBSIDIO: entidad de configuración con vigencia (desde / hasta) porque cambia en el tiempo; la VENTA copia el % aplicado (foto del momento).
 
-### ✏️ Ejercicio 5 — Concursos del ministerio (1E, 2025)
+#### ✏️ Ejercicio 5 — Concursos del ministerio (1E, 2025)
 
 > [!example] 🧪 Planteamiento (fuente: `2025-1PAO-1E-SBD.docx`, Sección 1)
-> - ESTUDIANTE (cédula, nombres, apellidos, fecha de nacimiento, escuela); ESCUELA (nombre, dirección, teléfono, email).
+>
 > - CONCURSO (nombre, descripción, fecha del evento, inicio/cierre de inscripción, costo, premios).
 > - PREMIOS por puesto (puesto + descripción; N premios libres, ej. 1er lugar: $200 en cines).
 > - INSCRIPCIÓN registra fecha y valor pagado (descuento por registro temprano).
@@ -195,10 +204,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - CALIFICACIÓN: ternaria PROFESOR–ESTUDIANTE–CRITERIO (puntaje) — verifica que necesite a los tres (sí: el puntaje es *de un profesor a un estudiante en un criterio*).
 > > - Trampa: el comité es agrupación, no entidad (PROFESOR–CONCURSO M:N "integra comité"); el ganador sale por consulta.
 
-### ✏️ Ejercicio 6 — Reforestación NAREN (1E, 2023)
+#### ✏️ Ejercicio 6 — Reforestación NAREN (1E, 2023)
 
 > [!example] 🧪 Planteamiento (fuente: `2023-1PAO-1E-SBD.docx`, Sección 2)
-> - EVENTOS (nombre, inicio/fin) con organizadores y voluntarios.
+>
 > - ÁREAS con varios PUNTOS de encuentro (coordenadas) y fotos del antes/después.
 > - ASISTENTES —organizadores y voluntarios— (cédula, nombre, apellido, nacimiento, dirección, foto).
 > - RECOMENDACIONES por evento (botas, agua, abrigo…).
@@ -232,10 +241,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - ASISTENCIA: intermedia VOLUNTARIO–EVENTO (jornada inicio/fin, presente sí/no).
 > > - GRUPO: junta líder + ayudante + miembros + punto asignado + árboles asignados/sembrados.
 
-### ✏️ Ejercicio 7 — Pho-grah.local (1E, 2023-2)
+#### ✏️ Ejercicio 7 — Pho-grah.local (1E, 2023-2)
 
 > [!example] 🧪 Planteamiento (fuente: `2023-2PAO-1E-SBD.docx`, Sección 2)
-> - Usuarios (email, nombre, contraseña, edad, género, lugares de interés) suben MEDIOS a LUGARES (edificios, paisajes…).
+>
 > - LUGAR con **jerarquía libre** (Ecuador : Guayas : Guayaquil : Malecón : Torre Morisca).
 > - MEDIOS en dos grupos: **estáticos** y **dinámicos** (audio/video); cada medio con id, URL, texto corto y **hashtags**; repositorio de medios.
 > - Se gestiona qué usuario subió qué medio a qué lugar.
@@ -264,10 +273,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - MEDIO supertipo con subtipos ESTÁTICO y DINÁMICO (¿aportan algo propio? duración el dinámico, dimensiones el estático; si no, basta atributo tipo — justifica).
 > > - SUBIDA: ternaria USUARIO–MEDIO–LUGAR (fecha): el mismo medio puede subirlo varios usuarios a varios lugares (sí necesita a los tres).
 
-### ✏️ Ejercicio 8 — Expresos escolares (1E, 2024-2)
+#### ✏️ Ejercicio 8 — Expresos escolares (1E, 2024-2)
 
 > [!example] 🧪 Planteamiento (fuente: `2024-2PAO-1E-SBD.docx`, Sección 1)
-> - Colegios contratan rutas; PADRES registran hogar (coordenadas) y representados (valida el colegio).
+>
 > - BUSETAS, CHOFERES (licencia + expiración), AYUDANTES; asignación semanal chofer + buseta + ayudante + ruta (**cambios a media semana** por enfermedad).
 > - App envía posición periódica; padres ven distancia, placa, foto y nombre del conductor y ayudante.
 > - CHECK de subida/bajada del estudiante (fecha/hora + novedad).
@@ -314,10 +323,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - Suspensión por pago: **estado** del ESTUDIANTE (activo / suspendido); la parada se filtra por consulta.
 > > - Posición periódica: débil de BUSETA (timestamp + coordenadas); no mezclar con PARADA (puntos fijos).
 
-### ✏️ Ejercicio 9 — Crédito hipotecario (3E, 2023-2)
+#### ✏️ Ejercicio 9 — Crédito hipotecario (3E, 2023-2)
 
 > [!example] 🧪 Planteamiento (fuente: `2023-2PAO-3E-SBD.docx`, Sección 1)
-> - PRESTATARIO (cédula, nombre, dirección, teléfono, ingresos, historial) y PRESTAMISTA del banco.
+>
 > - CONTRATO (tasa, plazo, monto, pagos mensuales, fechas); PROPIEDAD en garantía (dirección, tasación por TASADOR: ubicación, tamaño, estado).
 > - HISTORIAL: deudas (descripción, fecha contraída / límite / pagada) + tipos de crédito (tarjeta, estatal…, deuda actual, límite).
 > - Pagos mensuales alimentan el historial; incumplimiento → relación legal (ejecución hipotecaria).
@@ -346,10 +355,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - DEUDA: débil de PRESTATARIO. CONTRATO: intermedia PRESTATARIO–PRESTAMISTA–PROPIEDAD (tasa, plazo, monto).
 > > - Incumplimiento/ejecución: **estado** del CONTRATO (vigente / en mora / en ejecución), no entidad nueva.
 
-### ✏️ Ejercicio 10 — Comunidad EcoLife (3E, 2024-2)
+#### ✏️ Ejercicio 10 — Comunidad EcoLife (3E, 2024-2)
 
 > [!example] 🧪 Planteamiento (fuente: `2024-2PAO-3E-SBD.docx`, Sección 1)
-> - MIEMBRO (ID, nombre, apellido, email único, registro, ubicación, puntos; **redes + cuentas**: multivaluados) en **hasta 4 MARCAS** (ID, nombre, descripción, email).
+>
 > - PUBLICACIONES (ID, título, contenido, fecha, red, cuenta, tipo: artículo / pregunta / respuesta / comentario) en un TEMA (ID, nombre único, descripción).
 > - EVENTOS (ID, nombre, fecha/hora, ubicación, capacidad); RECOMPENSAS (ID, tipo, descripción, puntos requeridos).
 > - Reglas: miembro crea N publicaciones (cada una de un miembro y un tema); miembro asiste a N eventos; miembros reclaman recompensas; marcas crean publicaciones y organizan eventos.
@@ -381,12 +390,12 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - ASISTENCIA (miembro–evento) y CANJE (miembro–recompensa con fecha y puntos usados): intermedias con atributos.
 > > - Capacidad del evento: restricción, no entidad.
 
-## 🅱️ Bloque B — Dependencias y normalización (resueltos)
+#### 🅱️ Bloque B — Dependencias y normalización (resueltos)
 
-### ✏️ Ejercicio 11 — Caso `cod_estud` (Taller 1, 2026)
+#### ✏️ Ejercicio 11 — Caso `cod_estud` (Taller 1, 2026)
 
 > [!example] 🧪 Planteamiento (fuente: `2026_1PAO_Taller_1_TICG1018.pdf`, punto 2)
-> - Figura del examen (diagrama de dependencias; la tabla universal sin normalizar):
+>
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/ej11-diagrama-dependencias.svg]]
 > - 📌 Se pide:
@@ -427,10 +436,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > >   - MATRÍCULA(cod_estud PK/FK, cod_curso PK/FK, nota_final).
 > > - Verifica: toda FK referencia una PK; la intermedia lleva la PK compuesta; sin transitivas restantes.
 
-### ✏️ Ejercicio 12 — Ventas digitales (1E, 2025, con solución oficial)
+#### ✏️ Ejercicio 12 — Ventas digitales (1E, 2025, con solución oficial)
 
 > [!example] 🧪 Planteamiento (fuente: `2025-1PAO-1E-SBD.docx`, Sección 3)
-> - Tabla de Excel a normalizar (PK: Vendedor ID + Producto ID + Fecha Venta):
+>
 >
 > | Vendedor ID | Producto ID | Fecha Venta | Cantidad | Vendedor Nombre | Producto Nombre | Precio Unitario | Servidor ID | Servidor Región |
 > |---|---|---|---|---|---|---|---|---|
@@ -477,10 +486,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > >   - VENDEDOR(Vendedor ID PK, Nombre, Servidor ID FK).
 > > - Moraleja de corrector: declara cada DF con su tipo (total / parcial / transitiva) antes de partir; eso solo ya da puntos.
 
-### ✏️ Ejercicio 13 — Recetas de farmacia (1E, 2024)
+#### ✏️ Ejercicio 13 — Recetas de farmacia (1E, 2024)
 
 > [!example] 🧪 Planteamiento (fuente: `2024-1PAO-1E-SBD.docx`, Sección 4)
-> - Tabla a normalizar (fíjate en las columnas con listas):
+>
 >
 > | ID_Receta | Nombre_Producto | Ingredientes | Cantidad_Ingredientes | Precio_Unitario | Etapa_Produccion |
 > |---|---|---|---|---|---|
@@ -510,10 +519,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - 3FN: sin no-primos que dependan de no-primos (verifica: el precio depende de la PK — sano).
 > > - Justificación que pide el examen: nombra la anomalía que elimina cada paso (inserción: no puedes crear un ingrediente sin receta; borrado: borrar la receta borra el catálogo).
 
-### ✏️ Ejercicio 14 — Artefactos MABE/Xiaomi (1E, 2022)
+#### ✏️ Ejercicio 14 — Artefactos MABE/Xiaomi (1E, 2022)
 
 > [!example] 🧪 Planteamiento (fuente: `2022-2PAO-1E-SBD.docx`, Sección 4)
-> - Tabla de artefactos (el examen la trae traspuesta; aquí ya girada con las listas a la vista):
+>
 >
 > | numero | linea | modelo | litros | precio_venta | codigo_linea | marca | tipo | distribuidor | importador |
 > |---|---|---|---|---|---|---|---|---|---|
@@ -541,10 +550,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > >   - ARTEFACTO(numero PK, modelo, litros, precio, tipo, codigo_linea FK).
 > > - Ojo: litros vacío en una fila = NULL permitido (no rompe 1FN); tipo depende del modelo — solo haz tabla TIPO si el examen lo exige.
 
-### ✏️ Ejercicio 15 — Dependencias abstractas K-A-B-C-D-E-F (1E, 2023)
+#### ✏️ Ejercicio 15 — Dependencias abstractas K-A-B-C-D-E-F (1E, 2023)
 
 > [!example] 🧪 Planteamiento (fuente: `2023-1PAO-1E-SBD.docx`, Sección 4)
-> - DF conocidas:
+>
 >   - K → A, B.
 >   - C → D, E, F.
 >   - D → F.
@@ -579,10 +588,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > >   - C_TABLA(C PK, D FK, E).
 > > - Verifica las claves corriendo la función de arriba en tu cuaderno de Python (los dos `print` confirman la PK y las tablas).
 
-### ✏️ Ejercicio 16 — STORE_ITEM y MORE_STUFF (Lección 2, 2024)
+#### ✏️ Ejercicio 16 — STORE_ITEM y MORE_STUFF (Lección 2, 2024)
 
 > [!example] 🧪 Planteamiento (fuente: `Leccion 2 - PAO I 2024.pdf` — texto completo, sin figura)
-> - `STORE_ITEM(SKU, PromotionID, Vendor, Style, Price)` con DF:
+>
 >   - (SKU, PromotionID) → todos.
 >   - SKU → Vendor, Style.
 > - `MORE_STUFF(D, O, N, T, C, R, Y)` con DF:
@@ -616,10 +625,10 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > >   - Transitiva (C, R) → Y con (C, R) no-primo ⇒ **3FN**: CR_TABLA(C PK, R PK, Y) + resto (D, O, T, C, R con FK).
 > > - Patrón de examen: determinante doble → sospecha parcial; DF entre no-primos → transitiva.
 
-## 🅲️ Bloque C — Banco de conceptos (V/F y completar)
+#### 🅲️ Bloque C — Banco de conceptos (V/F y completar)
 
 > [!question] ❓ Ronda 1 — de exámenes reales (responde, luego abre)
-> - De modelado:
+>
 >   - Una relación de una entidad consigo misma se llama… (1E 2024).
 >   - Un atributo calculable desde otros atributos es válido (1E 2022).
 >   - Una entidad fuerte no depende de otra para existir (1E 2022).
@@ -636,37 +645,35 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > > - De integridad: **verdadero** (integridad referencial); **falso** (entidad: PK nunca NULL).
 > > - De normalización: **2FN**; **verdadero**; **verdadero**.
 
-## ✅ Checklist pre-taller (rúbrica 1E 2025)
+#### ✅ Checklist pre-taller (rúbrica 1E 2025)
 
 > [!tip] 📌 Con qué te califican (25 pts el lógico)
-> Entidades completas (6) + atributos con tipos (6) + PK/FK y binarias (6) + especiales ternarias/recursivas/multivaluadas (7). Antes de entregar verifica: ¿conté tablas al final? ¿toda FK apunta a una PK? ¿las M:N tienen intermedia? ¿la 1:1 total-total se fusionó? (protocolo en [[01 - Conversión MC a ML por cardinalidad]]).
+>
 
-## 🔁 Repaso SR (flashcards)
+#### 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-guia1
-- ¿Recursiva vs ternaria?::1 entidad en 2 roles (FK a sí misma) vs 3 entidades que se necesitan a la vez (intermedia triple).
-- ¿Histórico propietario (subsidio) cómo?::M:N con vigencia desde/hasta; la venta referencia al propietario de ese momento.
-- ¿Multivaluado al lógico?::Tabla propia con (PK original como FK + valor) en PK compuesta.
-- ¿Supervisor que vende (subsidio)?::Recursiva 1:M; la venta cuelga de EMPLEADO sin distinguir.
-- ¿PK de (cod_estud, cod_curso) por qué?::La nota depende del par; ni del uno ni del otro solos.
-- ¿2FN automática cuándo?::PK de un solo atributo (no hay parte de la cual depender).
-- ¿Transitiva típica?::No-primo → no-primo (instructor → nombre; servidor → región; línea → marca).
-- ¿Reenvío AZM es artículo nuevo?::No: mismo artículo, versión/ronda como atributo.
-- ¿Lugar jerárquico (Pho-grah) cómo?::Recursiva 1:M (FK padre), profundidad libre.
-- ¿Asignación semanal con cambios (expreso)?::Intermedia con vigencia; cambio = cerrar fila + abrir otra.
-- ¿Precio en PROMO (Ej. 16) por qué en la intermedia?::Depende del par (SKU, PromotionID): es total, no parcial.
-- ¿Clausura para qué?::Verificar que la PK candidata determine todo el universo antes de partir.
 
-## 🧭 Seguir con
-
-> [!info] 🧭 Seguir con
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
 >
-> - Método: [[02 - Entidades, atributos, claves y relaciones]] · [[03 - Modelo relacional, ERM y casos Tiny College]] · [[01 - Conversión MC a ML por cardinalidad]] · [[02 - Primera forma normal y diccionario de datos]] · [[03 - Segunda y tercera forma normal]]
-> - Índices: [[../Índice de Contenido|Unidad 0]] · [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
+> - ¿Recursiva vs ternaria?::1 entidad en 2 roles (FK a sí misma) vs 3 entidades que se necesitan a la vez (intermedia triple).
+> - ¿Histórico propietario (subsidio) cómo?::M:N con vigencia desde/hasta; la venta referencia al propietario de ese momento.
+> - ¿Multivaluado al lógico?::Tabla propia con (PK original como FK + valor) en PK compuesta.
+> - ¿Supervisor que vende (subsidio)?::Recursiva 1:M; la venta cuelga de EMPLEADO sin distinguir.
+> - ¿PK de (cod_estud, cod_curso) por qué?::La nota depende del par; ni del uno ni del otro solos.
+> - ¿2FN automática cuándo?::PK de un solo atributo (no hay parte de la cual depender).
+> - ¿Transitiva típica?::No-primo → no-primo (instructor → nombre; servidor → región; línea → marca).
+> - ¿Reenvío AZM es artículo nuevo?::No: mismo artículo, versión/ronda como atributo.
+> - ¿Lugar jerárquico (Pho-grah) cómo?::Recursiva 1:M (FK padre), profundidad libre.
+> - ¿Asignación semanal con cambios (expreso)?::Intermedia con vigencia; cambio = cerrar fila + abrir otra.
+> - ¿Precio en PROMO (Ej. 16) por qué en la intermedia?::Depende del par (SKU, PromotionID): es total, no parcial.
+> - ¿Clausura para qué?::Verificar que la PK candidata determine todo el universo antes de partir.
+
+---
 
 ## 📚 Referencias
 
-> [!quote] 📚 Referencias
+> [!quote] 📚 Fuentes
 >
 > - `2026_1PAO_Taller_1_TICG1018.pdf` — Taller 1 (lavandería + `cod_estud`).
 > - `2024_1PAO_Taller_1_TICG1018.pdf` — Taller 1 2024 (revista AZM; escaneado, enunciado extraído por OCR).
@@ -679,9 +686,33 @@ tags: [TICG1018, unidad0, guia, taller1, bd]
 > - `2023-2PAO-1E-SBD.docx` — 1E 2023-2 (Pho-grah + conteo de tablas).
 > - `2024-2PAO-1E-SBD.docx` — 1E 2024-2 (expreso escolar).
 > - `2023-2PAO-3E-SBD.docx` / `2024-2PAO-3E-SBD.docx` — 3E (hipotecario, EcoLife).
-> - `Taller 2 PAO-2026-1  SOL.pdf` — hotel 1FN–3FN con solución (desarrollado en [[03 - Segunda y tercera forma normal]]).
+> - `Taller 2 PAO-2026-1  SOL.pdf` — hotel 1FN–3FN con solución (desarrollado en [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]]).
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 2 (modelo conceptual), cap. 5 (normalización) y cap. 11 (ERD).
+> - Los diagramas `ej01`–`ej16` y las claves de modelado son propios.
 
 ---
 
-**Tags:** #TICG1018 #unidad0 #guia #taller1 #bd
+## 🔗 Conexiones
 
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[02 - Entidades, atributos, claves y relaciones]] — el vocabulario Chen (entidad, atributo, relación, cardinalidad).
+> - [[03 - Modelo relacional, ERM y casos Tiny College]] — del conceptual al relacional.
+> - [[../Unidad 2 - Modelo lógico y conversión/01 - Conversión MC a ML por cardinalidad|01 - Conversión MC a ML por cardinalidad]] — el paso a pata de gallo.
+> - [[../Unidad 2 - Modelo lógico y conversión/02 - Primera forma normal y diccionario de datos|02 - Primera forma normal y diccionario de datos]] — 1FN y el diccionario.
+> - [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal|03 - Segunda y tercera forma normal]] — 2FN y 3FN con anomalías.
+> - [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso|04 - Normalización paso a paso]] — el método completo.
+> - [[Guía de Problemas 2 - Álgebra Relacional y Normalización|Guía de Problemas 2]] — la guía siguiente (álgebra + el hotel 1FN–3FN).
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Método: [[02 - Entidades, atributos, claves y relaciones]] · [[03 - Modelo relacional, ERM y casos Tiny College]] · [[../Unidad 2 - Modelo lógico y conversión/01 - Conversión MC a ML por cardinalidad]] · [[../Unidad 2 - Modelo lógico y conversión/02 - Primera forma normal y diccionario de datos]] · [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]]
+> - Índices: [[../Índice de Contenido|Índice de Contenido]] · [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
+
+---
+
+**Tags:** #TICG1018 #unidad1 #guia #taller1 #modelo-conceptual #normalizacion #bd

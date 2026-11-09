@@ -19,6 +19,7 @@ Severidades: H (error duro) y W (desviacion de formato).
   R12 embeds que resuelven; profundidad '..' vs '../..'    H
       + material ajeno (_texto, Contenido Extra, etc.)     H
   R13 '**Tags:**' al final                                 W
+  R14 cada PNG de deck va con explicacion propia           W
 
 DRY por defecto (solo reporta). --fix-rutas repara R12 cuando la ruta
 corta (un nivel menos en '../') existe de verdad.
@@ -121,6 +122,11 @@ def bloques_callout(lineas):
         interior = []
         j = i + 1
         while j < n:
+            # un nuevo header de callout al mismo depth (o menor) cierra el
+            # bloque actual: no es contenido suyo
+            mh = RE_CALL_HDR.match(lineas[j])
+            if mh and mh.group("gg").count(">") <= depth:
+                break
             mm = RE_CALL_CONT.match(lineas[j])
             if not mm:
                 break
@@ -286,7 +292,7 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
     # ---------- R10/R11 metas y flashcards
     for b in bloques:
         t = b["titulo"]
-        if "Nivel" in t:
+        if re.search(r"\bNivel\b", t):
             for idx, depth, rest in b["lineas"]:
                 if depth != b["depth"] or not rest.strip():
                     continue
@@ -349,6 +355,39 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
     # ---------- R13 tags al pie
     if not any(RE_TAGS_FOOT.match(x) for x in lineas):
         hallazgos.append((rel, len(lineas), "R13-tags-final", "falta '**Tags:** ...'"))
+
+    # ---------- R14 cada PNG de deck va con explicacion propia
+    # Una captura del deck no se documenta sola: al lado debe haber una
+    # lectura (lo que significa), no solo la transcripcion de la lamina.
+    # Se acepta 'Se lee asi:', 'Por que importa:', 'Ejemplo(s):', 'Nota:'
+    # o una linea de prosa que explique (>= 40 chars) tras el embed.
+    ETIQUETAS_EXPL = re.compile(
+        r"\*\*(Se lee as[ií]|Por qu[eé] importa|Ejemplos?|Nota|C[uú]mo se lee)", re.I)
+    for i, ln in enumerate(lineas):
+        if ".png" not in ln.lower():
+            continue
+        if "![" not in ln:
+            continue
+        # buscar la explicacion en las siguientes 6 lineas del mismo bloque
+        ventana = []
+        for k in range(i + 1, min(len(lineas), i + 7)):
+            s = lineas[k].strip()
+            if not s:
+                continue
+            if not s.startswith(">"):
+                break            # salio del callout: no hay explicacion
+            ventana.append(s)
+        if not ventana:
+            hallazgos.append((rel, i + 1, "R14-png-sin-explicacion",
+                              "captura sin lectura: %s" % ln.strip()[:50]))
+            continue
+        tiene_etiqueta = any(ETIQUETAS_EXPL.search(x) for x in ventana)
+        # la prosa debe ser texto real: la ruta del propio embed no cuenta
+        tiene_prosa = any(
+            "![[" not in x and len(re.sub(r"^>\s*", "", x)) >= 60 for x in ventana)
+        if not (tiene_etiqueta or tiene_prosa):
+            hallazgos.append((rel, i + 1, "R14-png-sin-explicacion",
+                              "captura sin lectura propia: %s" % ln.strip()[:50]))
 
 
 def fix_rutas(nota_path):

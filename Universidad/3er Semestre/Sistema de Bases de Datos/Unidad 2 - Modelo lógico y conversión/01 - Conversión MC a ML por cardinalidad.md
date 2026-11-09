@@ -26,15 +26,15 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > | **Instancia** | — | Fila (tupla) |
 > | **Relación** | Rombo | FK o tabla intermedia |
 > | **Regla de oro** | Qué existe | Cómo se guarda |
-
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-01-graph.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-01-graph.svg]]
 
 ---
 
 ## 📋 Definiciones Formales
 
 > [!info] ℹ️ Cómo leer esta sección
-> Una definición por bloque con su figura. Cada figura anticipa la regla donde se usa.
+>
 
 ### 1️⃣ Tabla, columna, fila — el vocabulario lógico
 
@@ -122,9 +122,9 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 > [!info] 📖 El deck de cátedra: los puntos clave de la conversión (slides3, pp. 13-15)
 > El deck del Ing. Magallanes enuncia las mismas reglas, con la formulación del docente: *"las relaciones del MER se clasifican como uno a uno (1:1), uno a muchos (1:N) y de muchos a muchos (M:N o N:N)"*.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
+>
 > **El objetivo (p. 14):** *"traducir un modelo conceptual a un modelo lógico y luego validar si este modelo es de una estructura correcta"*.
 >
 > **Las estructuras que se derivan (p. 15):** entidad fuerte · entidad débil · relación binaria… — el deck cierra la lista con los casos especiales que esta nota develops en las reglas 5-8.
@@ -285,7 +285,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 ### ✏️ Ejercicio inverso 1 — MATRÍCULA
 
 > [!example] 🧪 Planteamiento
-> - Tablas: `ESTUDIANTE(carnet PK, nombre)`, `MATERIA(cod PK, nombre)`, `MATRICULA(carnet PK/FK, cod PK/FK, nota)`. Reconstruye el ER.
+>
 >
 > > [!success]- Solución
 > > - MATRICULA tiene PK compuesta de 2 FK + atributo propio (nota) → intermedia de M:N.
@@ -294,7 +294,7 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 ### ✏️ Ejercicio inverso 2 — El supervisor fantasma
 
 > [!example] 🧪 Planteamiento
-> - Tablas: `EMPLEADO(id PK, nombre, idSup FK→EMPLEADO)`, `VENDEDOR(id PK/FK→EMPLEADO, numVentas)`, `VENTA(id PK, fecha, idEmp FK→EMPLEADO)`. Reconstruye el ER.
+>
 >
 > > [!success]- Solución
 > > - idSup a la misma tabla → recursiva *supervisa* 1:M con roles (supervisor/supervisado).
@@ -333,14 +333,22 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ## 🗺️ Diagrama de Decisión: ¿Cómo Convierto Esta Relación?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-21-flow.svg]]
+> [!tip] 🗺️ El árbol de decisiones de la conversión
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-21-flow.svg]]
+>
+> **Se lee así:** el diagrama arranca preguntando *"¿es M:N o ternaria?"* porque son los dos casos que exigen **crear** una tabla. Si la respuesta es no, el camino se bifurca en 1:M (la FK va al hijo) y 1:1 (hay que preguntar además por la participación: si es (0,1)-(1,1) se propaga la PK del lado 1,1; si es total se fusiona todo en una tabla). La última rama, *"¿es especial?"*, recoge los tres casos que no encajan en cardinalidades simples: supertipo-subtipo (tabla por tipo con la PK heredada), entidad débil (la PK del fuerte como PK,FK) y recursiva (FK a sí misma o intermedia con doble FK).
+>
+> **Por qué importa:** sirve para *no improvisar*. Cuando estés frente a un rombo y no sepas qué hacer, caminas el árbol de izquierda a derecha: cada pregunta tiene una sola salida válida y cada salida es una tabla concreta. Si te saltas una pregunta (por ejemplo, la participación en el 1:1), el diagrama te avisa: ahí es donde suelen aparecer los errores.
+>
+> **Ejemplo:** `REGISTRA(estudiante, materia, fecha, hora)` — ternaria, y además con atributos propios. La primera pregunta del árbol ya te da la respuesta: tabla intermedia con las PK de estudiante y materia como PK compuesta, y `fecha` + `hora` bajan con ella.
 
 ---
 
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!warning] ⚠️ Cómo leer esta sección
-> Cada error trae su diagrama: primero lo **malo** (❌) y luego lo **correcto** (✅). Si tu conversión se parece al primero, ya sabes qué regla aplicar.
+>
 
 ### ❌ Error 1: FK al revés en 1:M
 
@@ -349,9 +357,11 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > Poner la FK en el padre (lado 1) es absurdo: un departamento tendría que apuntar a **uno** de sus 50 empleados.
 >
 > ❌ Así NO:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-22-er.svg]]
 >
 > ✅ Así SÍ:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-23-er.svg]]
 >
 > **Regla que lo evita:** en 1:M el hijo (M) recibe; el padre (1) no apunta a nadie.
@@ -365,9 +375,11 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > Aplanar la relación en columnas numeradas crea un grupo repetitivo: ¿y si una venta lleva 4 productos?
 >
 > ❌ Así NO:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-24-er.svg]]
 >
 > ✅ Así SÍ:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-25-er.svg]]
 >
 > **Regla que lo evita:** toda M:N produce tabla intermedia con las PK de ambos lados.
@@ -381,9 +393,11 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > Si cada equipo tiene exactamente un presidente y viceversa, dos tablas solo generan un JOIN obligatorio en cada consulta.
 >
 > ❌ Así NO:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-26-er.svg]]
 >
 > ✅ Así SÍ:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-27-er.svg]]
 >
 > **Regla que lo evita:** caso C (1,1)-(1,1) se unifica en una sola tabla.
@@ -397,9 +411,11 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > Convertir `Registra` bajando solo la FK pero perdiendo `fechaReservacion, horaReservacion` destruye datos del conceptual.
 >
 > ❌ Así NO:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-28-er.svg]]
 >
 > ✅ Así SÍ:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-29-er.svg]]
 >
 > **Regla que lo evita:** todo atributo del rombo viaja a la tabla que absorbe la relación.
@@ -413,9 +429,11 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > Darle al subtipo una PK propia rompe el vínculo: ya no se sabe qué empleado es ese vendedor.
 >
 > ❌ Así NO:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-30-er.svg]]
 >
 > ✅ Así SÍ:
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-01-31-er.svg]]
 >
 > **Regla que lo evita:** cada subtipo lleva la PK del supertipo como (PK,FK) — en los casos (a) y (c); en (b) y (d) no hay tablas hijas que hereden.
@@ -438,10 +456,31 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 
 ---
 
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Distingo una relación 1:1, 1:M y M:N solo con leerla en voz alta.
+> - [ ] Sé en qué lado va la FK en cada cardinalidad.
+> - [ ] Identifico cuándo una relación necesita tabla intermedia.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Convierto un ERD completo a modelo lógico aplicando las reglas de cardinalidad.
+> - [ ] Detecto relaciones recursivas y supertipo-subtipo y elijo su traducción.
+> - [ ] Hago la conversión inversa (del modelo lógico al conceptual) sin perder información.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Justifico por qué una 1:1 total-total se fusiona y cuándo no.
+> - [ ] Reviso el esquema resultante y cuento tablas para detectar las que sobran.
+
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
-> Cada ejercicio trae su **planteamiento visual** (lo que te dan) y la **solución guiada** (cómo se llega). Tapa la solución, resuelve, compara.
+>
 
 ### ✏️ Ejercicio 1 — Ternaria con atributos
 
@@ -519,21 +558,25 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u2
-- ¿3 pasos del diseño de BD?::Requerimientos → conceptual (ER) → lógico/físico (tablas + triggers).
-- ¿Equivalencias tabla/fila/columna?::Archivo/registro/campo = relación/tupla/atributo.
-- ¿M:N al lógico?::Tabla intermedia con las PK de ambos lados como (PK,FK) + atributos de la relación.
-- ¿1:M dónde va la FK?::En el hijo (lado M); el padre (lado 1) no recibe nada.
-- ¿1:1 caso A, B y C?::A: (0,1)-(1,1) propaga PK del 1,1 al 0,1. B: parcial, PK del padre al hijo. C: (1,1)-(1,1) unifica en una tabla.
-- ¿Supertipo-subtipo al lógico?::(a) 3 tablas con banderas; (b) 1 tabla con discriminante tipo; (c) supertabla + hijos opcionales; (d) 1 tabla ancha.
-- ¿Débil y recursiva?::Débil: PK del fuerte como (PK,FK). Recursiva 1:M: FK a sí misma; M:N: intermedia con doble FK.
-- ¿Fusión de tablas en 1 línea?::Mínimo de tablas: elimina las de 1 atributo y fusiona 1:1 total-total.
-- ¿Cómo detecto jerarquía parcial/exclusiva?::"No encaja en ninguno" = parcial; "nadie dos perfiles" = exclusiva; si calla, pregunto.
-- ¿Reflexiva bien dibujada?::Etiqueto roles (principal/dependiente) en cada rama.
-- ¿Intermedia con 2 FK en la PK qué fue?::M:N con atributos propios (el rombo): la leo como relación, no como entidad.
-- ¿PK compartida como (PK,FK) qué fue?::Subtipo del supertipo referenciado (o 1:1 total-total si no aporta nada).
-- ¿FK a sí misma qué fue?::Recursiva 1:M con roles; doble FK a la misma tabla: recursiva M:N.
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+>
+> - ¿3 pasos del diseño de BD?::Requerimientos → conceptual (ER) → lógico/físico (tablas + triggers).
+> - ¿Equivalencias tabla/fila/columna?::Archivo/registro/campo = relación/tupla/atributo.
+> - ¿M:N al lógico?::Tabla intermedia con las PK de ambos lados como (PK,FK) + atributos de la relación.
+> - ¿1:M dónde va la FK?::En el hijo (lado M); el padre (lado 1) no recibe nada.
+> - ¿1:1 caso A, B y C?::A: (0,1)-(1,1) propaga PK del 1,1 al 0,1. B: parcial, PK del padre al hijo. C: (1,1)-(1,1) unifica en una tabla.
+> - ¿Supertipo-subtipo al lógico?::(a) 3 tablas con banderas; (b) 1 tabla con discriminante tipo; (c) supertabla + hijos opcionales; (d) 1 tabla ancha.
+> - ¿Débil y recursiva?::Débil: PK del fuerte como (PK,FK). Recursiva 1:M: FK a sí misma; M:N: intermedia con doble FK.
+> - ¿Fusión de tablas en 1 línea?::Mínimo de tablas: elimina las de 1 atributo y fusiona 1:1 total-total.
+> - ¿Cómo detecto jerarquía parcial/exclusiva?::"No encaja en ninguno" = parcial; "nadie dos perfiles" = exclusiva; si calla, pregunto.
+> - ¿Reflexiva bien dibujada?::Etiqueto roles (principal/dependiente) en cada rama.
+> - ¿Intermedia con 2 FK en la PK qué fue?::M:N con atributos propios (el rombo): la leo como relación, no como entidad.
+> - ¿PK compartida como (PK,FK) qué fue?::Subtipo del supertipo referenciado (o 1:1 total-total si no aporta nada).
+> - ¿FK a sí misma qué fue?::Recursiva 1:M con roles; doble FK a la misma tabla: recursiva M:N.
+
+---
+
 ## 🚀 Próximos Pasos
 
 > [!quote] 🌟 Continuando
@@ -551,6 +594,17 @@ tags: [TICG1018, unidad2, modelo-logico, conversion, ml]
 > | **1FN y diccionario** | 5 condiciones + documento por tabla | Valida tu conversión (Lección 1) |
 
 ---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[../Unidad 1 - Modelos de Datos y ER/03 - Modelo relacional, ERM y casos Tiny College|03 - Modelo relacional, ERM y casos Tiny College]] — el modelo conceptual que aquí se traduce.
+> - [[02 - Primera forma normal y diccionario de datos]] — el paso siguiente: validar y documentar el esquema salido de la conversión.
+> - [[03 - Segunda y tercera forma normal]] — dependencias y 3FN una vez que el esquema existe.
+> - [[04 - Normalización paso a paso]] — el protocolo completo, paso a paso.
+> - [[../Unidad 1 - Modelos de Datos y ER/Guía de Problemas 1 - MC, ML y Normalización|Guía de Problemas 1]] — casos reales de modelado + conversión resueltos.
+> - [[Guía de Problemas 2 - Álgebra Relacional y Normalización|Guía de Problemas 2]] — la normalización aplicada a un caso de hotel.
 
 ## 🔗 Seguir estudiando
 

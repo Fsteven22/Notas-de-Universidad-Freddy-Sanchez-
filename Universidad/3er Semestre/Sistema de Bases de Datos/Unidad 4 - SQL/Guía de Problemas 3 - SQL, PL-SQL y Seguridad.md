@@ -1,11 +1,14 @@
 ---
 dg-publish: true
-tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
+tags: [TICG1018, unidad4, guia, taller3, taller4, bd]
 ---
 
 # 📝 Guía de Problemas 3 — SQL, PL-SQL y Seguridad (Talleres 3 y 4)
 
+## 🎯 Introducción
+
 > [!info] ℹ️ Qué es esta guía
+>
 > Desarrollo completo de los talleres 3 y 4 de la materia, con los enunciados reales de la Unidad 0:
 >
 > | Bloque | Fuente | Tema |
@@ -18,47 +21,64 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 > Las soluciones del bloque A son propias (no hay solución oficial publicada del taller). En B/C/D se nota **dónde el enunciado deja detalles libres** (nombres de columnas, columnas extra ansiosas) y se elige un esquema asumido, declarado en cada bloque.
 >
 > Teoría base: consultas y agregación → [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]] (σ = WHERE, γ = GROUP BY); normalización del campo `línea` → [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]], [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]].
+>
+> **Se lee así:** la guía se lee bloque por bloque — cada bloque es un taller independiente con su propia base de datos. El enunciado va arriba de cada ejercicio y la solución va plegada debajo, para que puedas intentar antes de desplegar.
 
-![[../Unidad 0 - Guias y Ejercicios/Talleres/ENUNCIADO.pdf]]
-
-![[../Unidad 0 - Guias y Ejercicios/Talleres/Taller 3 2026 PAO 1.pdf]]
-
-![[../Unidad 0 - Guias y Ejercicios/Talleres/Taller 4_20agorep.pdf]]
-
-![[../Unidad 0 - Guias y Ejercicios/Talleres/Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf]]
+> [!info] 📖 Los enunciados originales de los talleres (capturas de página)
+> Los PDFs de los talleres son material de clase y no se embeben: cada enunciado se cita con la captura de su página y el número de página.
+>
+> **Taller 3 — consultas sobre la base University (`ENUNCIADO.pdf`, p. 1):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller3-p1.png]]
+>
+> **Taller 3 2026 — base supermercado (`Taller 3 2026 PAO 1.pdf`, p. 1):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller3b-p1.png]]
+>
+> **Taller 4 — base DBalquiler (`Taller 4_20agorep.pdf`, pp. 1-2):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4-p1.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4-p2.png]]
+>
+> **Taller 4 2024 — seguridad en sakila (`Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf`, p. 1):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller4b-p1.png]]
 
 > [!info] 📖 El deck de cátedra: SQL y las restricciones (slides06, pp. 10-18)
 > El deck del Ing. Jorge Magallanes cierra el curso con SQL. Estas son las figuras que definen la sintaxis que usan los ejercicios de esta guía.
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p10.png
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p11.png
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p10.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p11.png]]
+>
 > **Creación de tablas (p. 10):** `CREATE TABLE department (department_name VARCHAR(15), building VARCHAR(15), budget NUMERIC(12,2))` — el ejemplo base del deck.
 >
 > **Restricciones de clave (p. 11):** *"la especificación de primary key({L}) define la lista L de atributos de clave primaria"*, con `CREATE TABLE course (course_id VARCHAR(7), title VARCHAR(50) NOT NULL, …)`.
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p13.png
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p14.png
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p13.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p14.png]]
+>
 > **Restricciones de integridad (p. 13):** *"una restricción de integridad (integrity constraint) asegura que un cambio realizado en la DB no conduzca a la pérdida de la consistencia de datos"*.
 >
 > **Restricciones solo de tabla (p. 14):** `not null` (columnas obligatorias) y `unique ({L})` (lista de atributos que debe ser única).
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p17.png
-
-!../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p18.png
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p17.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-s06-p18.png]]
+>
 > **Integridad referencial (p. 17):** *"las restricciones de clave foránea son la manera de asegurarnos que los valores de unos atributos coincidan con algún valor de la clave primaria en otra relación"*.
 >
 > **Violación (p. 18):** qué pasa con las tuplas que hacen referencia cuando se borra o cambia la tupla referenciada — la pregunta que responde el bloque D de esta guía con `ON DELETE` / `ON UPDATE`.
 
 ---
 
-## 🅰️ Bloque A — SQL sobre la base University (Taller 3, 11 consultas)
+## 📝 Ejercicios Propuestos
+### 🅰️ Bloque A — SQL sobre la base University (Taller 3, 11 consultas)
 
 > [!tip] 📌 Cómo trabajar cada pregunta
+>
 > La base `University.sql` trae las tablas estándar del esquema University (el clásico de los libros de SBD): `student(ID, name, dept_name, tot_cred)`, `instructor(ID, name, dept_name, salary)`, `course(course_id, title, dept_name, credits)`, `takes(ID, course_id, sec_id, semester, year, grade)`, `teaches(ID, course_id, sec_id, semester, year)`, `advisor(s_ID, i_ID)`, `department(dept_name, ...)`, `prerequisite(course_id, prereq_id)`. Verifica los nombres exactos de columnas y la diferencia JOIN vs LEFT JOIN (la nota del propio taller).
 
 ### ✏️ Ejercicio 1 — Instructores que empiezan con "A" (7 pts)
@@ -278,9 +298,10 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 ---
 
-## 🅱️ Bloque B — Supermercado: normalización + consultas + transacción + trigger (Taller 3 2026)
+### 🅱️ Bloque B — Supermercado: normalización + consultas + transacción + trigger (Taller 3 2026)
 
 > [!info] 📋 Esquema asumido (el enunciado deja detalles libres)
+>
 > `producto(id, nombre, precio, linea, stock)`, `venta(id, fecha, sucursal_id, tipo_pago, cajero_id)`, `detalleventa(id, venta_id, producto_id, cantidad, precio_unit`, `descuento)`, `sucursal(id, nombre)`. Ajusta nombres al proyecto real.
 
 ### ✏️ Ejercicio 1 — Normalizar el campo `línea` con UPDATE-JOIN
@@ -468,9 +489,10 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 ---
 
-## 🅲 Bloque C — Alquileres de videojuegos: PL-SQL, índices y MongoDB (Taller 4, 20-agosto-2026)
+### 🅲 Bloque C — Alquileres de videojuegos: PL-SQL, índices y MongoDB (Taller 4, 20-agosto-2026)
 
 > [!info] 📋 Esquema asumido
+>
 > `videojuegos(id_juego, titulo, plataforma, stock_disponible)`, `alquileres(id_alquiler, id_cliente, id_juego, fecha_alquiler, dias_alquilados)`, `clientes(id_cliente, nombre)`, `resenas(id_resena, id_juego, puntuacion, comentario)`. Base general: `DBalquiler`.
 
 ### ✏️ Ejercicio 1 — `sp_registrar_alquiler` con transacción y stock
@@ -713,9 +735,10 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 ---
 
-## 🅳 Bloque D — Seguridad en sakila: MD5, usuarios y GRANT por columna (Taller 4 2024)
+### 🅳 Bloque D — Seguridad en sakila: MD5, usuarios y GRANT por columna (Taller 4 2024)
 
 > [!info] 📋 Contexto
+>
 > Base `sakila` (la de Oracle — la sample database MySQL oficial: `customer`, `payment`, `country`, `city`, `category`, `address`). El enunciado asume que la tabla `customer` tiene una columna para guardar la huella; si no existe, `ALTER TABLE customer ADD pass CHAR(32);` antes del trigger.
 
 ### ✏️ Ejercicio 1 — Trigger que aplica el algoritmo MD5
@@ -805,19 +828,42 @@ tags: [TICG1018, unidad3, guia, taller3, taller4, bd]
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Diapositivas `2026_1PAO_slides6_1_TICG1018.pdf` — SQL: creación de tablas, restricciones de clave, integridad referencial (pp. 10-18).
+> - Taller 3 (base University) — `Unidad 0 - Guias y Ejercicios/Talleres/ENUNCIADO.pdf` (11 consultas con puntaje).
+> - Taller 3 2026 (base supermercado) — `Unidad 0 - Guias y Ejercicios/Talleres/Taller 3 2026 PAO 1.pdf`.
+> - Taller 4 (base DBalquiler) — `Unidad 0 - Guias y Ejercicios/Talleres/Taller 4_20agorep.pdf` (20-agosto-2026).
+> - Taller 4 2024 (base sakila) — `Unidad 0 - Guias y Ejercicios/Talleres/Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf`.
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 3 (SQL: DDL, DML, vistas, seguridad) y cap. 5 (restricciones e integridad).
+> - Núcleo DDL/DML de MySQL 8; las soluciones de consulta son propias.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[../Unidad 4 - SQL/01 - Introducción a SQL|01 - Introducción a SQL]] — el lenguaje y su estándar.
+> - [[../Unidad 4 - SQL/02 - DDL y DML|02 - DDL y DML]] — `CREATE TABLE`, `ALTER`, `DROP`, `INSERT`, `UPDATE`, `DELETE`.
+> - [[../Unidad 4 - SQL/03 - Consultas Avanzadas|03 - Consultas Avanzadas]] — JOIN, subconsultas, vistas y triggers.
+> - [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización|Guía de Problemas 2]] — σ = `WHERE`, γ = `GROUP BY`, ρ = alias.
+> - [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal|03 - Segunda y tercera forma normal]] — por qué el campo `línea` sale de `producto`.
+> - [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso|04 - Normalización paso a paso]] — el paso a paso de 1FN a 3FN.
+
+---
+
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
 >
 > - Normalización del campo `línea` (B1): [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
-> - Operadores del álgebra que hace de fondo: [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]]
-> - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
-
-## 📚 Fuentes
-
-> [!quote] 📖 Fuentes
-> `Unidad 0 - Guias y Ejercicios/Talleres/ENUNCIADO.pdf` · `Taller 3 2026 PAO 1.pdf` · `Taller 4_20agorep.pdf` (20-agosto-2026) · `Taller 4 - PAO I 2024 - Triggers, Vistas e Usuarios.pdf`. Base University: esquema estándar de ejemplo para SBD. Soluciones de consulta propias; núcleo DDL/DML de MySQL 8.
+> - Operadores del álgebra que hacen de fondo: [[../Unidad 3 - Álgebra Relacional/Guía de Problemas 2 - Álgebra Relacional y Normalización]]
+> - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
+> - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 
 ---
 
-**Tags:** #TICG1018 #unidad3 #guia #taller3 #taller4 #bd
+**Tags:** #TICG1018 #unidad4 #guia #taller3 #taller4 #sql #bd

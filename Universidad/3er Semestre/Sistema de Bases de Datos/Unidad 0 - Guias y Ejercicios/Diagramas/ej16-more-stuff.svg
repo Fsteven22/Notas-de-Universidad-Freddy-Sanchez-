@@ -1,407 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572.4pt" height="269.424pt" viewBox="0 0 572.4 269.424" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-15T00:20:34.439809</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 269.424 
-L 572.4 269.424 
-L 572.4 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 19.881818 139.212424 
-L 89.631818 139.212424 
-L 89.631818 102.008922 
-L 19.881818 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 95.972727 139.212424 
-L 165.722727 139.212424 
-L 165.722727 102.008922 
-L 95.972727 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 172.063636 139.212424 
-L 241.813636 139.212424 
-L 241.813636 102.008922 
-L 172.063636 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 248.154545 139.212424 
-L 317.904545 139.212424 
-L 317.904545 102.008922 
-L 248.154545 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 324.245455 139.212424 
-L 393.995455 139.212424 
-L 393.995455 102.008922 
-L 324.245455 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 400.336364 139.212424 
-L 470.086364 139.212424 
-L 470.086364 102.008922 
-L 400.336364 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 476.427273 139.212424 
-L 546.177273 139.212424 
-L 546.177273 102.008922 
-L 476.427273 102.008922 
-z
-" clip-path="url(#p381e8c37ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.4; stroke-linejoin: miter"/>
-   </g>
-   <g id="line2d_1">
-    <path d="M 54.756818 102.008922 
-L 54.756818 69.005816 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_2">
-    <path d="M 54.756818 69.005816 
-L 206.938636 69.005816 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_3">
-    <path d="M 92.802273 102.008922 
-L 92.802273 48.00384 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_4">
-    <path d="M 92.802273 48.00384 
-L 283.029545 48.00384 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_5">
-    <path d="M 92.802273 102.008922 
-L 92.802273 27.001864 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_6">
-    <path d="M 92.802273 27.001864 
-L 359.120455 27.001864 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_7">
-    <path d="M 397.165909 139.212424 
-L 397.165909 184.216659 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_8">
-    <path d="M 397.165909 184.216659 
-L 511.302273 184.216659 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_9">
-    <path d="M 19.881818 139.212424 
-L 19.881818 157.214118 
-L 165.722727 157.214118 
-L 165.722727 139.212424 
-" clip-path="url(#p381e8c37ef)" style="fill: none; stroke: #000000; stroke-width: 1.4; stroke-linecap: square"/>
-   </g>
-   <g id="text_1">
-    <!-- D -->
-    <g transform="translate(51.746662 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-27" d="M 1363 519 
-Q 2159 519 2475 911 
-Q 2791 1303 2791 2328 
-Q 2791 3363 2477 3755 
-Q 2163 4147 1363 4147 
-L 1063 4147 
-L 1063 519 
-L 1363 519 
-z
-M 1375 4666 
-Q 2444 4666 2950 4097 
-Q 3456 3528 3456 2328 
-Q 3456 1134 2950 567 
-Q 2444 0 1375 0 
-L 428 0 
-L 428 4666 
-L 1375 4666 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-27"/>
-    </g>
-   </g>
-   <g id="text_2">
-    <!-- O -->
-    <g transform="translate(127.837571 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-32" d="M 2828 2328 
-Q 2828 3356 2617 3797 
-Q 2406 4238 1925 4238 
-Q 1447 4238 1236 3797 
-Q 1025 3356 1025 2328 
-Q 1025 1303 1236 862 
-Q 1447 422 1925 422 
-Q 2406 422 2617 861 
-Q 2828 1300 2828 2328 
-z
-M 3488 2328 
-Q 3488 1109 3102 509 
-Q 2716 -91 1925 -91 
-Q 1134 -91 750 506 
-Q 366 1103 366 2328 
-Q 366 3550 752 4150 
-Q 1138 4750 1925 4750 
-Q 2716 4750 3102 4150 
-Q 3488 3550 3488 2328 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-32"/>
-    </g>
-   </g>
-   <g id="text_3">
-    <!-- N -->
-    <g transform="translate(203.92848 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-31" d="M 434 4666 
-L 1234 4666 
-L 2809 825 
-L 2809 4666 
-L 3419 4666 
-L 3419 0 
-L 2619 0 
-L 1044 3841 
-L 1044 0 
-L 434 0 
-L 434 4666 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-31"/>
-    </g>
-   </g>
-   <g id="text_4">
-    <!-- T -->
-    <g transform="translate(280.019389 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-37" d="M 147 4666 
-L 3706 4666 
-L 3706 4134 
-L 2247 4134 
-L 2247 0 
-L 1613 0 
-L 1613 4134 
-L 147 4134 
-L 147 4666 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-37"/>
-    </g>
-   </g>
-   <g id="text_5">
-    <!-- C -->
-    <g transform="translate(356.110298 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-26" d="M 3353 166 
-Q 3113 38 2859 -26 
-Q 2606 -91 2322 -91 
-Q 1425 -91 929 543 
-Q 434 1178 434 2328 
-Q 434 3472 932 4111 
-Q 1431 4750 2322 4750 
-Q 2606 4750 2859 4686 
-Q 3113 4622 3353 4494 
-L 3353 3847 
-Q 3122 4038 2856 4138 
-Q 2591 4238 2322 4238 
-Q 1706 4238 1400 3763 
-Q 1094 3288 1094 2328 
-Q 1094 1372 1400 897 
-Q 1706 422 2322 422 
-Q 2597 422 2861 522 
-Q 3125 622 3353 813 
-L 3353 166 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-26"/>
-    </g>
-   </g>
-   <g id="text_6">
-    <!-- R -->
-    <g transform="translate(432.201207 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-35" d="M 2375 2203 
-Q 2619 2141 2791 1967 
-Q 2963 1794 3219 1275 
-L 3853 0 
-L 3175 0 
-L 2619 1178 
-Q 2378 1681 2186 1826 
-Q 1994 1972 1684 1972 
-L 1081 1972 
-L 1081 0 
-L 447 0 
-L 447 4666 
-L 1747 4666 
-Q 2516 4666 2925 4319 
-Q 3334 3972 3334 3316 
-Q 3334 2853 3082 2561 
-Q 2831 2269 2375 2203 
-z
-M 1081 4147 
-L 1081 2491 
-L 1772 2491 
-Q 2225 2491 2447 2694 
-Q 2669 2897 2669 3316 
-Q 2669 3719 2433 3933 
-Q 2197 4147 1747 4147 
-L 1081 4147 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-35"/>
-    </g>
-   </g>
-   <g id="text_7">
-    <!-- Y -->
-    <g transform="translate(508.292116 123.208329) scale(0.1 -0.1)">
-     <defs>
-      <path id="DejaVuSansMono-3c" d="M 116 4666 
-L 788 4666 
-L 1925 2606 
-L 3059 4666 
-L 3738 4666 
-L 2241 2094 
-L 2241 0 
-L 1606 0 
-L 1606 2094 
-L 116 4666 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSansMono-3c"/>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 206.938636 69.005816 
-Q 206.938636 85.207341 206.938636 100.067225 
-" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-    <path d="M 209.338636 95.267225 
-L 206.938636 100.067225 
-L 204.538636 95.267225 
-z
-" style="stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 283.029545 48.00384 
-Q 283.029545 74.706353 283.029545 100.067225 
-" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-    <path d="M 285.429545 95.267225 
-L 283.029545 100.067225 
-L 280.629545 95.267225 
-z
-" style="stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 359.120455 27.001864 
-Q 359.120455 64.205365 359.120455 100.067225 
-" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-    <path d="M 361.520455 95.267225 
-L 359.120455 100.067225 
-L 356.720455 95.267225 
-z
-" style="stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 511.302273 184.216659 
-Q 511.302273 162.014569 511.302273 141.154121 
-" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-    <path d="M 508.902273 145.954121 
-L 511.302273 141.154121 
-L 513.702273 145.954121 
-z
-" style="stroke: #000000; stroke-width: 1.2; stroke-linecap: round"/>
-   </g>
-   <g id="text_8">
-    <!-- PK -->
-    <g transform="translate(84.509304 178.772782) scale(0.11 -0.11)">
-     <defs>
-      <path id="DejaVuSans-Bold-33" d="M 588 4666 
-L 2584 4666 
-Q 3475 4666 3951 4270 
-Q 4428 3875 4428 3144 
-Q 4428 2409 3951 2014 
-Q 3475 1619 2584 1619 
-L 1791 1619 
-L 1791 0 
-L 588 0 
-L 588 4666 
-z
-M 1791 3794 
-L 1791 2491 
-L 2456 2491 
-Q 2806 2491 2997 2661 
-Q 3188 2831 3188 3144 
-Q 3188 3456 2997 3625 
-Q 2806 3794 2456 3794 
-L 1791 3794 
-z
-" transform="scale(0.015625)"/>
-      <path id="DejaVuSans-Bold-2e" d="M 588 4666 
-L 1791 4666 
-L 1791 2963 
-L 3525 4666 
-L 4922 4666 
-L 2675 2456 
-L 5153 0 
-L 3647 0 
-L 1791 1838 
-L 1791 0 
-L 588 0 
-L 588 4666 
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#DejaVuSans-Bold-33"/>
-     <use xlink:href="#DejaVuSans-Bold-2e" transform="translate(73.296875 0)"/>
-    </g>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p381e8c37ef">
-   <rect x="7.2" y="7.2" width="558" height="255.024"/>
-  </clipPath>
- </defs>
-</svg>
+<svg id="my-svg" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 360px; background-color: white;" viewBox="4 4 360 231" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#my-svg{font-family:"Recursive Variable",arial,sans-serif;font-size:14px;fill:#28253D;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#ffffff;}#my-svg .error-text{fill:#000000;stroke:#000000;}#my-svg .edge-thickness-normal{stroke-width:2px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#000000;stroke:#000000;}#my-svg .marker.cross{stroke:#000000;}#my-svg svg{font-family:"Recursive Variable",arial,sans-serif;font-size:14px;}#my-svg p{margin:0;}#my-svg [data-look="neo"][data-color-id="color-0"].cluster:not(.swimlane) rect{stroke:#E879F9;fill:#FDF4FF;}#my-svg [data-look="neo"][data-color-id="color-0"].cluster:not(.swimlane) path{stroke:#E879F9;fill:#FDF4FF;}#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster rect.swimlane-body{stroke:#E879F9;fill:#FDF4FF;}#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#E879F9;}#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-0"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#FDF4FF;}#my-svg [data-look="neo"][data-color-id="color-0"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-0"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-0"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-0"].rough-node .collapsed-group path{stroke:#E879F9;fill:#FDF4FF;}#my-svg [data-look="neo"][data-color-id="color-0"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-0"].rough-node .collapsed-indicator{fill:#E879F9;}#my-svg [data-look="neo"][data-color-id="color-0"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-0"].rough-node .collapsed-separator{stroke:#E879F9;}#my-svg [data-look="neo"][data-color-id="color-1"].cluster:not(.swimlane) rect{stroke:#2DD4BF;fill:#F0FDFA;}#my-svg [data-look="neo"][data-color-id="color-1"].cluster:not(.swimlane) path{stroke:#2DD4BF;fill:#F0FDFA;}#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster rect.swimlane-body{stroke:#2DD4BF;fill:#F0FDFA;}#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#2DD4BF;}#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-1"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#F0FDFA;}#my-svg [data-look="neo"][data-color-id="color-1"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-1"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-1"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-1"].rough-node .collapsed-group path{stroke:#2DD4BF;fill:#F0FDFA;}#my-svg [data-look="neo"][data-color-id="color-1"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-1"].rough-node .collapsed-indicator{fill:#2DD4BF;}#my-svg [data-look="neo"][data-color-id="color-1"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-1"].rough-node .collapsed-separator{stroke:#2DD4BF;}#my-svg [data-look="neo"][data-color-id="color-2"].cluster:not(.swimlane) rect{stroke:#FB923C;fill:#FFF7ED;}#my-svg [data-look="neo"][data-color-id="color-2"].cluster:not(.swimlane) path{stroke:#FB923C;fill:#FFF7ED;}#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster rect.swimlane-body{stroke:#FB923C;fill:#FFF7ED;}#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#FB923C;}#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-2"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#FFF7ED;}#my-svg [data-look="neo"][data-color-id="color-2"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-2"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-2"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-2"].rough-node .collapsed-group path{stroke:#FB923C;fill:#FFF7ED;}#my-svg [data-look="neo"][data-color-id="color-2"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-2"].rough-node .collapsed-indicator{fill:#FB923C;}#my-svg [data-look="neo"][data-color-id="color-2"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-2"].rough-node .collapsed-separator{stroke:#FB923C;}#my-svg [data-look="neo"][data-color-id="color-3"].cluster:not(.swimlane) rect{stroke:#22D3EE;fill:#ECFEFF;}#my-svg [data-look="neo"][data-color-id="color-3"].cluster:not(.swimlane) path{stroke:#22D3EE;fill:#ECFEFF;}#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster rect.swimlane-body{stroke:#22D3EE;fill:#ECFEFF;}#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#22D3EE;}#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-3"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#ECFEFF;}#my-svg [data-look="neo"][data-color-id="color-3"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-3"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-3"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-3"].rough-node .collapsed-group path{stroke:#22D3EE;fill:#ECFEFF;}#my-svg [data-look="neo"][data-color-id="color-3"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-3"].rough-node .collapsed-indicator{fill:#22D3EE;}#my-svg [data-look="neo"][data-color-id="color-3"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-3"].rough-node .collapsed-separator{stroke:#22D3EE;}#my-svg [data-look="neo"][data-color-id="color-4"].cluster:not(.swimlane) rect{stroke:#4ADE80;fill:#F0FDF4;}#my-svg [data-look="neo"][data-color-id="color-4"].cluster:not(.swimlane) path{stroke:#4ADE80;fill:#F0FDF4;}#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster rect.swimlane-body{stroke:#4ADE80;fill:#F0FDF4;}#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#4ADE80;}#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-4"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#F0FDF4;}#my-svg [data-look="neo"][data-color-id="color-4"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-4"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-4"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-4"].rough-node .collapsed-group path{stroke:#4ADE80;fill:#F0FDF4;}#my-svg [data-look="neo"][data-color-id="color-4"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-4"].rough-node .collapsed-indicator{fill:#4ADE80;}#my-svg [data-look="neo"][data-color-id="color-4"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-4"].rough-node .collapsed-separator{stroke:#4ADE80;}#my-svg [data-look="neo"][data-color-id="color-5"].cluster:not(.swimlane) rect{stroke:#A78BFA;fill:#F5F3FF;}#my-svg [data-look="neo"][data-color-id="color-5"].cluster:not(.swimlane) path{stroke:#A78BFA;fill:#F5F3FF;}#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster rect.swimlane-body{stroke:#A78BFA;fill:#F5F3FF;}#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#A78BFA;}#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-5"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#F5F3FF;}#my-svg [data-look="neo"][data-color-id="color-5"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-5"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-5"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-5"].rough-node .collapsed-group path{stroke:#A78BFA;fill:#F5F3FF;}#my-svg [data-look="neo"][data-color-id="color-5"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-5"].rough-node .collapsed-indicator{fill:#A78BFA;}#my-svg [data-look="neo"][data-color-id="color-5"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-5"].rough-node .collapsed-separator{stroke:#A78BFA;}#my-svg [data-look="neo"][data-color-id="color-6"].cluster:not(.swimlane) rect{stroke:#F87171;fill:#FEF2F2;}#my-svg [data-look="neo"][data-color-id="color-6"].cluster:not(.swimlane) path{stroke:#F87171;fill:#FEF2F2;}#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster rect.swimlane-body{stroke:#F87171;fill:#FEF2F2;}#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#F87171;}#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-6"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#FEF2F2;}#my-svg [data-look="neo"][data-color-id="color-6"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-6"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-6"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-6"].rough-node .collapsed-group path{stroke:#F87171;fill:#FEF2F2;}#my-svg [data-look="neo"][data-color-id="color-6"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-6"].rough-node .collapsed-indicator{fill:#F87171;}#my-svg [data-look="neo"][data-color-id="color-6"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-6"].rough-node .collapsed-separator{stroke:#F87171;}#my-svg [data-look="neo"][data-color-id="color-7"].cluster:not(.swimlane) rect{stroke:#FACC15;fill:#FEFCE8;}#my-svg [data-look="neo"][data-color-id="color-7"].cluster:not(.swimlane) path{stroke:#FACC15;fill:#FEFCE8;}#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster rect.swimlane-body{stroke:#FACC15;fill:#FEFCE8;}#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#FACC15;}#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-7"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#FEFCE8;}#my-svg [data-look="neo"][data-color-id="color-7"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-7"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-7"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-7"].rough-node .collapsed-group path{stroke:#FACC15;fill:#FEFCE8;}#my-svg [data-look="neo"][data-color-id="color-7"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-7"].rough-node .collapsed-indicator{fill:#FACC15;}#my-svg [data-look="neo"][data-color-id="color-7"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-7"].rough-node .collapsed-separator{stroke:#FACC15;}#my-svg [data-look="neo"][data-color-id="color-8"].cluster:not(.swimlane) rect{stroke:#818CF8;fill:#EEF2FF;}#my-svg [data-look="neo"][data-color-id="color-8"].cluster:not(.swimlane) path{stroke:#818CF8;fill:#EEF2FF;}#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster rect.swimlane-body{stroke:#818CF8;fill:#EEF2FF;}#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#818CF8;}#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-8"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#EEF2FF;}#my-svg [data-look="neo"][data-color-id="color-8"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-8"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-8"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-8"].rough-node .collapsed-group path{stroke:#818CF8;fill:#EEF2FF;}#my-svg [data-look="neo"][data-color-id="color-8"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-8"].rough-node .collapsed-indicator{fill:#818CF8;}#my-svg [data-look="neo"][data-color-id="color-8"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-8"].rough-node .collapsed-separator{stroke:#818CF8;}#my-svg [data-look="neo"][data-color-id="color-9"].cluster:not(.swimlane) rect{stroke:#A3E635;fill:#F7FEE7;}#my-svg [data-look="neo"][data-color-id="color-9"].cluster:not(.swimlane) path{stroke:#A3E635;fill:#F7FEE7;}#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster rect.swimlane-body{stroke:#A3E635;fill:#F7FEE7;}#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#A3E635;}#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-9"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#F7FEE7;}#my-svg [data-look="neo"][data-color-id="color-9"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-9"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-9"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-9"].rough-node .collapsed-group path{stroke:#A3E635;fill:#F7FEE7;}#my-svg [data-look="neo"][data-color-id="color-9"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-9"].rough-node .collapsed-indicator{fill:#A3E635;}#my-svg [data-look="neo"][data-color-id="color-9"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-9"].rough-node .collapsed-separator{stroke:#A3E635;}#my-svg [data-look="neo"][data-color-id="color-10"].cluster:not(.swimlane) rect{stroke:#38BDF8;fill:#F0F9FF;}#my-svg [data-look="neo"][data-color-id="color-10"].cluster:not(.swimlane) path{stroke:#38BDF8;fill:#F0F9FF;}#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster rect.swimlane-body{stroke:#38BDF8;fill:#F0F9FF;}#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#38BDF8;}#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-10"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#F0F9FF;}#my-svg [data-look="neo"][data-color-id="color-10"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-10"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-10"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-10"].rough-node .collapsed-group path{stroke:#38BDF8;fill:#F0F9FF;}#my-svg [data-look="neo"][data-color-id="color-10"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-10"].rough-node .collapsed-indicator{fill:#38BDF8;}#my-svg [data-look="neo"][data-color-id="color-10"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-10"].rough-node .collapsed-separator{stroke:#38BDF8;}#my-svg [data-look="neo"][data-color-id="color-11"].cluster:not(.swimlane) rect{stroke:#FB7185;fill:#FFF1F2;}#my-svg [data-look="neo"][data-color-id="color-11"].cluster:not(.swimlane) path{stroke:#FB7185;fill:#FFF1F2;}#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster rect.swimlane-title,#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster rect.swimlane-body{stroke:#FB7185;fill:#FFF1F2;}#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster .swimlane-title path:nth-of-type(2),#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster .swimlane-body path:nth-of-type(2){stroke:#FB7185;}#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster .swimlane-title path:first-of-type,#my-svg [data-look="neo"][data-color-id="color-11"].swimlane.cluster .swimlane-body path:first-of-type{stroke:#FFF1F2;}#my-svg [data-look="neo"][data-color-id="color-11"].node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-11"].rough-node .collapsed-group,#my-svg [data-look="neo"][data-color-id="color-11"].node .collapsed-group path,#my-svg [data-look="neo"][data-color-id="color-11"].rough-node .collapsed-group path{stroke:#FB7185;fill:#FFF1F2;}#my-svg [data-look="neo"][data-color-id="color-11"].node .collapsed-indicator,#my-svg [data-look="neo"][data-color-id="color-11"].rough-node .collapsed-indicator{fill:#FB7185;}#my-svg [data-look="neo"][data-color-id="color-11"].node .collapsed-separator,#my-svg [data-look="neo"][data-color-id="color-11"].rough-node .collapsed-separator{stroke:#FB7185;}#my-svg .label{font-family:"Recursive Variable",arial,sans-serif;color:#28253D;}#my-svg .cluster-label text{fill:#000000;}#my-svg .cluster-label span{color:#000000;}#my-svg .cluster-label span p{background-color:transparent;}#my-svg .label text,#my-svg span{fill:#28253D;color:#28253D;}#my-svg .node rect,#my-svg .node circle,#my-svg .node ellipse,#my-svg .node polygon,#my-svg .node path{fill:#ffffff;stroke:#28253D;stroke-width:2px;}#my-svg .rough-node .label text,#my-svg .node .label text,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-anchor:middle;}#my-svg .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#my-svg .rough-node .label,#my-svg .node .label,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-align:center;}#my-svg .node.clickable{cursor:pointer;}#my-svg .root .anchor path{fill:#000000!important;stroke-width:0;stroke:#000000;}#my-svg .arrowheadPath{fill:#000000;}#my-svg .edgePaths .path{stroke:#000000;stroke-width:2px;}#my-svg .flowchart-link{stroke:#000000;fill:none;}#my-svg .edgeLabel{background-color:hsl(-120, 0%, 80%);text-align:center;}#my-svg .edgeLabel p{background-color:hsl(-120, 0%, 80%);}#my-svg .edgeLabel rect{opacity:0.5;background-color:hsl(-120, 0%, 80%);fill:hsl(-120, 0%, 80%);}#my-svg .labelBkg{background-color:rgba(204, 204, 204, 0.5);}#my-svg .cluster rect{fill:#F9F9FB;stroke:#BDBCCC;stroke-width:1px;}#my-svg .cluster text{fill:#000000;}#my-svg .cluster span{color:#000000;}#my-svg .node .collapsed-indicator{fill:#BDBCCC;stroke:none;opacity:0.6;}#my-svg .node .collapsed-separator{stroke:#BDBCCC;stroke-width:0.75px;}#my-svg div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"Recursive Variable",arial,sans-serif;font-size:12px;background:#ffffff;border:1px solid hsl(0, 0%, 90%);border-radius:2px;pointer-events:none;z-index:100;}#my-svg .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#28253D;}#my-svg rect.text{fill:none;stroke-width:0;}#my-svg .icon-shape,#my-svg .image-shape{background-color:hsl(-120, 0%, 80%);text-align:center;}#my-svg .icon-shape p,#my-svg .image-shape p{background-color:hsl(-120, 0%, 80%);padding:2px;}#my-svg .icon-shape .label rect,#my-svg .image-shape .label rect{opacity:0.5;background-color:hsl(-120, 0%, 80%);fill:hsl(-120, 0%, 80%);}#my-svg .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#my-svg .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#my-svg .node .neo-node{stroke:#28253D;}#my-svg [data-look="neo"].node rect,#my-svg [data-look="neo"].cluster rect,#my-svg [data-look="neo"].node polygon{stroke:#28253D;filter:url(#my-svg-drop-shadow);}#my-svg [data-look="neo"].swimlane.cluster rect{filter:none;}#my-svg [data-look="neo"].node path{stroke:#28253D;stroke-width:2px;}#my-svg [data-look="neo"].node .outer-path{filter:url(#my-svg-drop-shadow);}#my-svg [data-look="neo"].node .neo-line path{stroke:#28253D;filter:none;}#my-svg [data-look="neo"].node circle{stroke:#28253D;filter:url(#my-svg-drop-shadow);}#my-svg [data-look="neo"].node circle .state-start{fill:#000000;}#my-svg [data-look="neo"].icon-shape .icon{fill:#28253D;filter:url(#my-svg-drop-shadow);}#my-svg [data-look="neo"].icon-shape .icon-neo path{stroke:#28253D;filter:url(#my-svg-drop-shadow);}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><style>/* Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+ */
+
+
+
+
+@font-face { font-family: "Recursive Variable"; font-style: normal; font-display: swap; font-weight: 300 1000; src: url("data:font/woff2;base64,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") format("woff2-variations"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }</style><g><marker id="my-svg_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointEnd-margin" class="marker flowchart-v2" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart-margin" class="marker flowchart-v2" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd-margin" class="marker flowchart-v2" viewBox="0 0 10 10" refY="5" refX="12.25" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart-margin" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-2" refY="5" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd-margin" class="marker cross flowchart-v2" viewBox="0 0 15 15" refX="17.7" refY="7.5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 1,1 L 14,14 M 1,14 L 14,1" class="arrowMarkerPath" style="stroke-width: 2.5;"/></marker><marker id="my-svg_flowchart-v2-crossStart-margin" class="marker cross flowchart-v2" viewBox="0 0 15 15" refX="-3.5" refY="7.5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 1,1 L 14,14 M 1,14 L 14,1" class="arrowMarkerPath" style="stroke-width: 2.5; stroke-dasharray: 1, 0;"/></marker><g class="root"><g class="clusters"/><g class="edges edgePaths"><path d="M164,34.5L200,34.5" id="my-svg-L_DO_TCRY_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="stroke-dasharray: 0 0 32 4; stroke-dashoffset: 0;;" data-edge="true" data-et="edge" data-id="L_DO_TCRY_0" data-points="W3sieCI6MTY0LCJ5IjozNC41fSx7IngiOjIwNCwieSI6MzQuNX1d" data-look="neo" marker-end="url(#my-svg_flowchart-v2-pointEnd-margin)"/><path d="M164,119.5L200,119.5" id="my-svg-L_CR_Y_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="stroke-dasharray: 0 0 32 4; stroke-dashoffset: 0;;" data-edge="true" data-et="edge" data-id="L_CR_Y_0" data-points="W3sieCI6MTY0LCJ5IjoxMTkuNX0seyJ4IjoyMDQsInkiOjExOS41fV0=" data-look="neo" marker-end="url(#my-svg_flowchart-v2-pointEnd-margin)"/><path d="M164,204.5L200,204.5" id="my-svg-L_D_N_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="stroke-dasharray: 0 0 32 4; stroke-dashoffset: 0;;" data-edge="true" data-et="edge" data-id="L_D_N_0" data-points="W3sieCI6MTY0LCJ5IjoyMDQuNX0seyJ4IjoyMDQsInkiOjIwNC41fV0=" data-look="neo" marker-end="url(#my-svg_flowchart-v2-pointEnd-margin)"/></g><g class="edgeLabels"/><g class="nodes"><g class="node default" id="my-svg-flowchart-DO-0" data-look="neo" transform="translate(88, 34.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>(D, O)</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-TCRY-1" data-look="neo" transform="translate(280, 34.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>T, C, R, Y</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-CR-2" data-look="neo" transform="translate(88, 119.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>(C, R)</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-Y-3" data-look="neo" transform="translate(280, 119.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>Y</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-D-4" data-look="neo" transform="translate(88, 204.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>D</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-N-5" data-look="neo" transform="translate(280, 204.5)"><rect class="basic label-container" style="" x="-76" y="-22.5" width="152" height="45"/><g class="label" style="" transform="translate(-60, -10.5)"><rect/><foreignObject width="120" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: center; width: 120px;"><span class="nodeLabel"><p>N</p></span></div></foreignObject></g></g></g></g></g><defs><filter id="my-svg-drop-shadow" height="130%" width="130%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"/></filter></defs><defs><filter id="my-svg-drop-shadow-small" height="150%" width="150%"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"/></filter></defs></svg>

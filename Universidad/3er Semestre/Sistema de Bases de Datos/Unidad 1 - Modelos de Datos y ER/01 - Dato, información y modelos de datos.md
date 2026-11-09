@@ -160,8 +160,7 @@ tags: [TICG1018, unidad1, datos, modelos, historia]
 >
 > **Principio clave:** modela lo permanente (Estudiantes, Materias), no los formularios — las pantallas cambian, el negocio no.
 >
-
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-01-10-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-01-10-flow.svg]]
 
 ---
 

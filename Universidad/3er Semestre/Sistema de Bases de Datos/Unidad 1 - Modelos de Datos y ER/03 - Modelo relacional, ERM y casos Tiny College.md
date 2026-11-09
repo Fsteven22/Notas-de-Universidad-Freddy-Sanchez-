@@ -22,15 +22,15 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > | **Pieza base** | Relación = tabla (filas × columnas) | Entidad + relación graficadas |
 > | **Conexión** | Columna en común | Rombo/verbo + cardinalidad |
 > | **Notaciones ERD** | — (no se dibuja: se escribe en tablas) | Chen, pata de gallo, clases |
-
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-01-graph.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-01-graph.svg]]
 
 ---
 
 ## 📋 Definiciones Formales
 
 > [!info] ℹ️ Cómo leer esta sección
-> Una definición por bloque, cada una con su ejemplo y su figura. Nivel lógico: aquí las tablas sí son las protagonistas.
+>
 
 ### 1️⃣ Relación, tupla y atributo — el vocabulario de tabla
 
@@ -62,9 +62,9 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 
 > [!info] 📖 El deck de cátedra: del conceptual al lógico (slides3, p. 3)
 > El deck del Ing. Magallanes abre la unidad del modelo lógico con el diagrama que resume todo el proceso: una **ciudad** y un **estudiante** en el modelo conceptual, con sus cardinalidades (1,1) y (0,n), y la misma información ya como tablas en el modelo lógico.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p3.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p3.png]]
+>
 > **El diseño lógico (p. 4):** *"es el proceso de construir un modelo lógico a partir de un modelo conceptual"*, y tanto el conceptual como el lógico son **procesos iterativos**, no lineales.
 
 ### 3️⃣ Regla de traducción ER→tablas — el puente
@@ -77,34 +77,46 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 >
 > **Ejemplo:** ESTUDIANTE(entidad) → tabla; `carnet`(clave) → PK; *toma*(N:M) → MATRÍCULA con 2 FK. El detalle completo vive en la Unidad 2.
 
-> [!info] 📖 El deck de cátedra: las tres formas de derivar relaciones (slides3, pp. 16-21)
+> [!info] 📖 El deck de cátedra: las cuatro formas de derivar relaciones (slides3, pp. 16-21)
 > El deck cierra el módulo con la derivación del modelo lógico según la cardinalidad, y usa los mismos ejemplos que Tiny College.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p17.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p20.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p21.png]]
-
-> **Entidad fuerte y débil (p. 16):** `COURSE(CRS_CODE, …)` y `CLASS(CLASS_CODE, CRS_CODE, …)` con la `CRS_CODE` como foreign key.
 >
-> **1:N (p. 17):** la entidad **padre** es la del lado de uno y la **hija** la del lado de muchos; para representarla se copia el atributo clave del lado uno al lado muchos.
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p16.png]]
 >
-> **N:N (p. 20):** *"se crea una nueva Tabla para representar la relación (ER) y se incluyen todos los atributos de la relación"*.
+> **Se lee así:** la lámina (p. 16) parte de un error de la base de datos y lo corrige delante de tus ojos. En la tabla de arriba `CLASS` lleva su propia `CLASS_CODE` **más** la `CRS_CODE` del curso: eso significa que un mismo curso se repite en varias filas de `CLASS`, cada una con su propio código de clase. Abajo, la versión corregida ya no repite `CLASS_CODE`: la `CRS_CODE` sola identifica cada fila. Esa diferencia es exactamente lo que distingue una **entidad fuerte** (se identifica con su propia clave) de una **entidad débil** (necesita la clave de otra para existir: *clave compuesta + clave parcial*).
+>
+> **Por qué importa:** es el prefijo de todas las reglas que siguen. Si una tabla tiene una clave que **depende** de otra tabla, no es un error: es una entidad débil, y su clave compuesta se arma con la PK del fuerte + la clave parcial.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p17.png]]
+>
+> **Se lee así:** la 1:N con el ejemplo `EQUIPO` / `JUGADOR`. La lámina dice la regla en una frase: *"se copia el atributo PK del Padre al Hijo"*. Mira el diagrama de la derecha: la relación `contrata` va de `(1,N)` a `(0,1)`, y el atributo **Equipo Id** aparece **dentro** de la tabla `Jugador`. Esa es la señal visual de que la FK se quedó en el lado de muchos.
+>
+> **Por qué importa:** *(0,1)* en el lado del padre significa que un jugador puede no tener equipo todavía, pero un equipo **siempre** tiene jugadores. Por eso la FK puede quedar vacía y la tabla del padre nunca se duplica.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p20.png]]
+>
+> **Se lee así:** la N:N con `STUDENT`, `CLASS` y la tabla nueva `ENROLL`. Observa las tres cosas que dice la lámina y que tienes que hacer sí o sí: (1) **se crea una tabla nueva** para representar la relación — el rombo se convierte en tabla; (2) se **copian las PK de las dos entidades** (`STU_NUM` y `CLASS_CODE`) como FKs; (3) **bajan los atributos del rombo** (`ENROLL_DATE`, `ENROLL_GRADE`). Y un detalle que parece menor pero es el corazón del tema: la PK de `ENROLL` es **compuesta** por las dos PK copiadas.
+>
+> **Por qué importa:** las dos FKs de `ENROLL` son opcionales (`(0,N)` en ambos lados), así que la tabla admite la myriad de combinaciones — un estudiante sin clases, una clase sin estudiantes — sin inventar filas vacías.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p21.png]]
+>
+> **Se lee así:** el cuarto caso, que no es una cardinalidad sino un **truco**: la relación recursiva. `EMPLOYEE` apunta a `EMPLOYEE` mediante `MANAGER_EMP`. Fíjate en la instrucción exacta de la lámina: *"se incluye una copia de la clave primaria **pero se renombra**"*. El jefe y el empleado son la misma tabla; se distinguen por el **rol**, y por eso la FK necesita otro nombre.
+>
+> **Por qué importa:** renombrar no es un capricho de estilo. Si la FK se llamara igual que la PK (`EMP_NUM → EMP_NUM`), no sabrías cuál de las dos columnas es la que apunta. `MANAGER_EMP` dice con una palabra qué significa cada valor.
+>
+> **Resumen del bloque:** fuerte/débil → clave compuesta; 1:N → FK en el hijo; N:N → tabla intermedia con dos FKs; recursiva → FK a la misma tabla, renombrada por rol. Las cuatro reglas son el 100% de la conversión que harás en la Unidad 2.
 >
 > **Recursiva (p. 21):** *"se incluye una copia de la clave primaria pero se renombra"* — `EMPLOYEE(EMP_NUM, …, MANAGER_EMP)` con `MANAGER_EMP` como FK a la misma tabla.
 
 > [!info] 📖 El deck de cátedra: elementos del modelo relacional (slides3, pp. 6-10)
 > *"Creado por Edgar F. Codd a principios de los 70, laboratorios de IBM. Modelo lógico de datos no de muy alto nivel, orientado a registro. Sólida base teórica…"* (p. 6).
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p7.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p8.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p10.png]]
-
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p7.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p8.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s03-p10.png]]
+>
 > **Claves (p. 8):** *"una clave candidata es el atributo o conjunto de atributos que identifica de manera única a cada tupla de la relación"*; la **clave primaria** es la candidata elegida; la **clave foránea** referencia la primaria de otra relación.
 >
 > **Representación del esquema (p. 10):** el deck escribe el esquema completo con la sintaxis `CLIENTE(codcli, nombre, …)` — el formato exacto que se usa en los ejercicios de conversión de la Unidad 2.
@@ -243,8 +255,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 > | Si sí | 1:M: "Un EMPLEADO maneja muchas DIVISIONes" |
 > | Si no | 1:1: "Un EMPLEADO maneja una sola DIVISIÓN" |
 >
-
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-12-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u1-03-12-flow.svg]]
 
 ---
 
@@ -269,7 +280,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 ## ⚠️ Errores Comunes y Principios Lógicos
 
 > [!warning] ⚠️ Cómo leer esta sección
-> Cada error trae su dibujo: lo ❌ que delata el problema y lo ✅ que lo evita.
+>
 
 ### ❌ Error 1: Tablas sin pasar por el ER
 
@@ -312,7 +323,7 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 ## 📝 Ejercicios Propuestos
 
 > [!info] ℹ️ Cómo trabajarlos
-> Tapa la solución, resuelve, compara. Respuestas colapsables abajo.
+>
 
 ### ✏️ Ejercicio 1 — ¿Débil o fuerte?
 
@@ -394,16 +405,16 @@ tags: [TICG1018, unidad1, relacional, erm, chen, casos]
 #flashcards/bd-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Relacional en 1 frase (Codd)?::Todo en tablas unidas por columna común, con base matemática.
-- ¿Chen 1976 aportó qué?::El ERD gráfico que complementa al relacional para diseñar.
-- ¿Débil vs fuerte (línea y PK)?::Débil: solo FK, punteada. Fuerte: PK heredada compuesta, sólida.
-- ¿N:M al relacional?::Tabla intermedia con las 2 FK.
-- ¿Símbolo Chen de entidad débil y de derivado?::Rectángulo doble; óvalo con línea punteada.
-- ¿Por qué "relacional" se llama así?::Porque guarda datos como relaciones (= tablas), no por las FK.
-- ¿Supertipo vs subtipo?::Común arriba (identificador compartido); propio abajo (hereda todo).
-- ¿d vs o (círculo)?::Disjunto (solo uno) vs sobrelapado (varios a la vez).
-- ¿Ternaria cuándo?::Solo si el hecho exige a las tres entidades a la vez.
+>
+> - ¿Relacional en 1 frase (Codd)?::Todo en tablas unidas por columna común, con base matemática.
+> - ¿Chen 1976 aportó qué?::El ERD gráfico que complementa al relacional para diseñar.
+> - ¿Débil vs fuerte (línea y PK)?::Débil: solo FK, punteada. Fuerte: PK heredada compuesta, sólida.
+> - ¿N:M al relacional?::Tabla intermedia con las 2 FK.
+> - ¿Símbolo Chen de entidad débil y de derivado?::Rectángulo doble; óvalo con línea punteada.
+> - ¿Por qué "relacional" se llama así?::Porque guarda datos como relaciones (= tablas), no por las FK.
+> - ¿Supertipo vs subtipo?::Común arriba (identificador compartido); propio abajo (hereda todo).
+> - ¿d vs o (círculo)?::Disjunto (solo uno) vs sobrelapado (varios a la vez).
+> - ¿Ternaria cuándo?::Solo si el hecho exige a las tres entidades a la vez.
 
 ---
 

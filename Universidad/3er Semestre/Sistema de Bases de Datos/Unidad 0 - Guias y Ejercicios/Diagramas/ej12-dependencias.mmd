@@ -1,0 +1,12 @@
+flowchart LR
+    PK["(Vendedor ID, Producto ID, Fecha Venta)"]
+    TOT["Cantidad<br/>Vendedor Nombre<br/>Producto Nombre<br/>Servidor ID<br/>Servidor Región"]
+    V["Vendedor ID"]
+    VN["Vendedor Nombre<br/>Servidor ID<br/>Servidor Región"]
+    P["Producto ID"]
+    PN["Producto Nombre"]
+    PU["Precio Unitario"]
+    PK --> TOT
+    V --> VN
+    P --> PN
+    P --> PU

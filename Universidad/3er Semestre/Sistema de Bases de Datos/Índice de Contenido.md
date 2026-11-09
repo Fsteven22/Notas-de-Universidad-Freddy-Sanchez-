@@ -6,6 +6,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 # 📂 Índice de Contenido — Sistema de Bases de Datos
 
 > [!info] ℹ️ Portal de material de la materia
+>
 > Este es el **índice único** de **Sistema de Bases de Datos** (3er Semestre · PAO 2-2026).
 > Reúne el material de la Unidad 0 (diapositivas, exámenes, talleres, lecciones, scripts SQL,
 > modelos de base de datos, proyecto y participaciones) y los puntos de entrada a las demás unidades.
@@ -16,16 +17,19 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 ## 🧭 Navegación por la materia
 
 > [!note] 💛 Syllabus
+>
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/bienv-01-map.svg]]
 > Ver [[Bienvenida y Syllabus Sistema de Bases de Datos|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 > [!tip] 🚪 Entradas por unidad
+>
 > Primera nota de cada bloque: el punto de partida.
 > - [[Unidad 1 - Modelos de Datos y ER/01 - Dato, información y modelos de datos|01 - Dato, información y modelos de datos]] — *Unidad 1 - Modelos de Datos y ER*
 > - [[Unidad 2 - Modelo lógico y conversión/01 - Conversión MC a ML por cardinalidad|01 - Conversión MC a ML por cardinalidad]] — *Unidad 2 - Modelo lógico y conversión*
 > - [[Unidad 4 - SQL/Guía de Problemas 3 - SQL, PL-SQL y Seguridad|Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — *Unidad 4 - SQL*
 
 > [!note] 🗂️ Notas de la materia
+>
 > - [[Sistema de Bases de Datos|Sistema de Bases de Datos]] — índice de la materia.
 > - [[Recursos Visuales|Recursos Visuales]] — diagramas y capturas de las unidades.
 > - [[01 - Dato, información y modelos de datos]] — *U1 · Dato, información y modelos*
@@ -112,6 +116,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 ## 🎞️ Diapositivas
 
 > [!example] Presentaciones del curso
+>
 > Cada PDF se abre con el visor embebido del sitio; los PPTX se descargan.
 >
 > | Archivo | Qué es |
@@ -149,6 +154,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 ## 📝 Exámenes
 
 > [!example] Exámenes parciales y evaluaciones
+>
 > Los que dicen *incluye solución* traen la resolución resuelta.
 >
 > | Archivo | Qué es |
@@ -243,7 +249,9 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 
 ## 🏗️ Proyecto
 
-> [!example] Entregas del proyecto (Primer y Segundo Parcial)
+> [!example] 📦 Entregas del proyecto (Primer y Segundo Parcial)
+>
+> Todo lo que el grupo 8 entregó en las dos entregas del proyecto: los documentos de entrega, los modelos conceptual y lógico, y la retroalimentación del docente.
 
 ### Primer Parcial
 
@@ -274,6 +282,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 > | [[Unidad 0 - Guias y Ejercicios/Archivos/Proyecto/Segundo Parcial/Proyecto Entrega Final.pdf]] | Entrega final del Segundo Parcial. |
 
 > [!note] 🧩 Código Python del CRUD (solo en el vault)
+>
 > El código fuente del módulo CRUD (`Crud_Grupo8/Clientes.py`, `Conexion.py`, `PythonMySQL.py`,
 > `tempCodeRunnerFile.py`) queda solo en tu vault: no tiene formato web ni entra en el ZIP.
 
@@ -293,6 +302,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 ## 📊 Diagramas y figuras
 
 > [!info] Diagramas del material
+>
 > La carpeta `Diagramas/` tiene los modelos Entidad-Relacional, los ejercicios de diagramado
 > resueltos y los diagramas de cada unidad. Abajo están los que se publican desde este índice;
 > en Obsidian además tenés los `.drawio` editables (4 de ellos).
@@ -342,6 +352,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 ### Diagramas de trabajo de la Unidad 1 y la Unidad 2
 
 > [!note] 🗂️ 112 SVG de trabajo
+>
 > `Diagramas/` tiene además **112 SVG** de trabajo de la U1 y la U2
 > (`u1-01-01-graph.svg` … `u2-04-06-er.svg`): grafos de dependencias, diagramas
 > Entidad-Relacional y diagramas de flujo de cada tema de esas unidades.
@@ -349,6 +360,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 > así que no se repiten acá.
 
 > [!warning] 12 diagramas sin nota que los embeba
+>
 > Estos 12 SVG de trabajo no los menciona ninguna nota de la materia. Se listan acá
 > para que al menos se puedan abrir desde la web:
 >
@@ -380,6 +392,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 > | `Universidad/_no-publicar.txt` | Lista negra de archivos que no se publican. |
 
 > [!note] Scripts SQL sueltos
+>
 > Los archivos `.sql`, `.mwb` y `.txt` no tienen formato web, por eso van todos dentro del
 > ZIP de la sección *Paquete único de scripts y modelos*.
 
@@ -401,6 +414,12 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 
 ---
 
-> [!success] Todo este material está en tu vault de Obsidian bajo
+> [!success] ✅ Todo este material está en tu vault de Obsidian bajo
+>
 > `3er Semestre/Sistema de Bases de Datos/Unidad 0 - Guias y Ejercicios/`.
+>
 > Los archivos con enlace se descargan o abren desde la web; el resto queda en el vault local.
+
+---
+
+**Tags:** #indice #base-de-datos #3er-semestre #unidad0 #recursos #TICG1018
