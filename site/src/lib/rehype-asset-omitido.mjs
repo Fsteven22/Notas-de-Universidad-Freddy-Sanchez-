@@ -12,15 +12,21 @@
 
 const RE_INLINE = /<!--\s*nx:(asset|link)-omitido\s*([\s\S]*?)\s*-->/g;
 
+// entidades por codepoint: no dependen de literales HTML en el fuente
+const AMP = String.fromCharCode(38);
+const LT = String.fromCharCode(60);
+const GT = String.fromCharCode(62);
+const QUOT = String.fromCharCode(34);
+
 function decodeEntities(s) {
   return s
     .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
-    .replace(/"/g, '"')
+    .replace(/"/g, QUOT)
     .replace(/&apos;/g, "'")
-    .replace(/</g, "<")
-    .replace(/>/g, ">")
-    .replace(/&/g, "&");
+    .replace(/</g, LT)
+    .replace(/>/g, GT)
+    .replace(/&/g, AMP);
 }
 
 function aviso(tipo, nombre) {

@@ -7,6 +7,8 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { rehypeCallouts } from "./src/lib/rehype-callouts.mjs";
 import { rehypeAssetOmitido } from "./src/lib/rehype-asset-omitido.mjs";
+import { rehypeH1Demote } from "./src/lib/rehype-h1-demote.mjs";
+import { rehypeImgLazy } from "./src/lib/rehype-img-lazy.mjs";
 
 export default defineConfig({
   site: "https://neonotes-espol.vercel.app",
@@ -32,7 +34,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeSlug, rehypeCallouts, rehypeAssetOmitido, [rehypeKatex, { throwOnError: false }]],
+      rehypePlugins: [rehypeSlug, rehypeCallouts, rehypeAssetOmitido, [rehypeKatex, { throwOnError: false }], rehypeH1Demote, rehypeImgLazy],
   },
   build: {
     assets: "assets",

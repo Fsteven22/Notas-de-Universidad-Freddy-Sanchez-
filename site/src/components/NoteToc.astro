@@ -1,0 +1,309 @@
+---
+/**
+ * NoteToc.astro — el índice de la nota, en dos presentaciones.
+ *
+ * Antes solo existía como columna de la derecha (`hidden lg:block`), pero el
+ * grid de 3 columnas solo se arma a 1280 px: por debajo de 1024 px no había
+ * índice, y entre 1024 y 1279 px caía DEBAJO de una nota que puede medir
+ * 76.000 px de alto. Ahora:
+ *   · >= 1280 px  → columna lateral (como antes, pero con scroll-spy)
+ *   · <  1280 px → drawer que se abre desde el botón "Índice" del header
+ *
+ * El drawer reutiliza el patrón del modal de búsqueda (backdrop con blur,
+ * cerrar con Escape, scroll bloqueado) para que el gesto se sienta el mismo.
+ *
+ * El índice lo construye el navegador leyendo los h2/h3 reales de la nota,
+ * así que los anclas son siempre los que puso rehype-slug.
+ */
+interface Props {
+  /** ruta de unidad de la nota, para saber dónde estás ("Unidad 3 › IV. …") */
+  unitPath?: string;
+  matTitle?: string;
+  matUrl?: string;
+  prev?: { title: string; url: string } | null;
+  next?: { title: string; url: string } | null;
+}
+
+const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = Astro.props;
+---
+
+<!-- Columna de escritorio -->
+<aside class="nx-toc-col hidden xl:block">
+  <div class="nx-toc-sticky">
+    <p class="nx-section-title mb-3">Contenido</p>
+    {unitPath && <p class="nx-toc-path">{unitPath}</p>}
+    <nav id="nx-toc" class="nx-toc-list" aria-label="Índice de la nota"></nav>
+    {
+      (prev || next || matUrl) && (
+        <div class="nx-toc-foot">
+          <p class="nx-toc-foot-title">En esta materia</p>
+          {prev && (
+            <a href={prev.url} class="nx-toc-nav">
+              <span class="nx-toc-nav-label">← Anterior</span>
+              <span class="nx-toc-nav-title">{prev.title}</span>
+            </a>
+          )}
+          {next && (
+            <a href={next.url} class="nx-toc-nav nx-toc-nav--next">
+              <span class="nx-toc-nav-label">Siguiente →</span>
+              <span class="nx-toc-nav-title">{next.title}</span>
+            </a>
+          )}
+          {matUrl && (
+            <a href={matUrl} class="nx-toc-mat">
+              ← Todas las notas de {matTitle}
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+</aside>
+
+<!-- Drawer (móvil y tablet) -->
+<div id="nx-toc-drawer" class="nx-drawer" hidden>
+  <div class="nx-drawer-backdrop" data-nx-toc-close></div>
+  <div
+    class="nx-drawer-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Índice de la nota"
+  >
+    <div class="nx-drawer-head">
+      <div class="min-w-0">
+        <p class="nx-section-title">Contenido</p>
+        {unitPath && <p class="nx-toc-path">{unitPath}</p>}
+      </div>
+      <button
+        type="button"
+        class="nx-hbtn nx-hbtn--icon"
+        data-nx-toc-close
+        aria-label="Cerrar índice"
+      >
+        <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav
+      id="nx-toc-m"
+      class="nx-toc-list nx-toc-list--drawer"
+      aria-label="Índice de la nota"
+    ></nav>
+
+    {
+      (prev || next || matUrl) && (
+        <div class="nx-drawer-foot">
+          {prev && (
+            <a href={prev.url} class="nx-toc-nav">
+              <span class="nx-toc-nav-label">← Anterior</span>
+              <span class="nx-toc-nav-title">{prev.title}</span>
+            </a>
+          )}
+          {next && (
+            <a href={next.url} class="nx-toc-nav nx-toc-nav--next">
+              <span class="nx-toc-nav-label">Siguiente →</span>
+              <span class="nx-toc-nav-title">{next.title}</span>
+            </a>
+          )}
+          {matUrl && (
+            <a href={matUrl} class="nx-toc-mat">
+              ← Todas las notas de {matTitle}
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<script>
+  type NxTocItem = { id: string; text: string; level: 2 | 3 };
+
+  // escapes con unicode: no depende de entidades HTML en el fuente
+  const nxEsc = (s: string) =>
+    s
+      .replace(/&/g, "\u0026")
+      .replace(/</g, "\u003c")
+      .replace(/>/g, "\u003e")
+      .replace(/"/g, "\u0022");
+
+  /** lista plana de h2/h3 con id, saltando el h1 degradado del markdown */
+  function nxHeadings(): NxTocItem[] {
+    const prose = document.querySelector(".note-prose");
+    if (!prose) return [];
+    const out: NxTocItem[] = [];
+    for (const h of Array.from(prose.querySelectorAll<HTMLElement>("h2, h3"))) {
+      if (h.hasAttribute("data-nx-toc-skip")) continue;
+      const text = (h.textContent || "").trim();
+      if (!text) continue;
+      if (!h.id) {
+        h.id = text
+          .toLowerCase()
+          .replace(/[^\w\s-]/g, "")
+          .trim()
+          .replace(/\s+/g, "-");
+      }
+      out.push({ id: h.id, text, level: h.tagName === "H3" ? 3 : 2 });
+    }
+    return out;
+  }
+
+  function nxTocHtml(items: NxTocItem[]) {
+    return items
+      .map(
+        (it) =>
+          `<a href="#${nxEsc(it.id)}" class="nx-toc-item nx-toc-l${it.level}" data-nx-toc-id="${nxEsc(it.id)}">${nxEsc(it.text)}</a>`
+      )
+      .join("");
+  }
+
+  /** mantiene visible el item activo dentro de la lista con scroll propio */
+  function nxReveal(container: HTMLElement, el: HTMLElement) {
+    const cr = container.getBoundingClientRect();
+    const er = el.getBoundingClientRect();
+    if (er.top < cr.top) container.scrollTop -= cr.top - er.top + 8;
+    else if (er.bottom > cr.bottom) container.scrollTop += er.bottom - cr.bottom + 8;
+  }
+
+  /**
+   * Con el router de cliente el arranque puede ocurrir DOS veces (al cargar y
+   * en `astro:page-load`). Sin cancelar lo anterior, el boton del drawer
+   * tendria dos listeners: uno lo abria y el otro lo cerraba, y el drawer no
+   * se veria nunca. Por eso cada arranque aborta el anterior.
+   */
+  let nxCtl: AbortController | undefined;
+  let nxTimers: number[] = [];
+
+  function nxBootToc() {
+    nxCtl?.abort();
+    nxCtl = new AbortController();
+    const signal = nxCtl.signal;
+    for (const t of nxTimers) window.clearTimeout(t);
+    nxTimers = [];
+
+    const desktop = document.getElementById("nx-toc");
+    const mobile = document.getElementById("nx-toc-m");
+    const drawer = document.getElementById("nx-toc-drawer");
+    const items = nxHeadings();
+
+    // pintar las dos listas
+    const vacio = '<p class="nx-toc-empty">Esta nota no tiene apartados.</p>';
+    if (desktop) desktop.innerHTML = items.length ? nxTocHtml(items) : vacio;
+    if (mobile) mobile.innerHTML = items.length ? nxTocHtml(items) : vacio;
+
+    // scroll-spy: marca el apartado en el que estas
+    let offsets: { id: string; top: number }[] = [];
+    const measure = () => {
+      offsets = items
+        .map((it) => {
+          const el = document.getElementById(it.id);
+          if (!el) return null;
+          return { id: it.id, top: el.getBoundingClientRect().top + window.scrollY };
+        })
+        .filter((x): x is { id: string; top: number } => !!x);
+    };
+
+    let activeId = "";
+    const setActive = (id: string) => {
+      if (id === activeId) return;
+      activeId = id;
+      for (const nav of [desktop, mobile]) {
+        if (!nav) continue;
+        for (const a of Array.from(nav.querySelectorAll<HTMLElement>("[data-nx-toc-id]"))) {
+          const on = a.dataset.nxTocId === id;
+          a.classList.toggle("is-active", on);
+          if (on) nxReveal(nav, a);
+        }
+      }
+    };
+
+    const spy = () => {
+      if (!offsets.length) return;
+      const y = window.scrollY + 140;
+      let id = offsets[0].id;
+      for (const o of offsets) {
+        if (o.top <= y) id = o.id;
+        else break;
+      }
+      setActive(id);
+    };
+
+    // las imagenes lazy y las fuentes mueven el texto: se remide al estabilizarse
+    const remeasure = () => {
+      measure();
+      spy();
+    };
+    measure();
+    spy();
+    window.addEventListener("resize", remeasure, { passive: true, signal });
+    window.addEventListener("load", remeasure, { once: true, signal });
+    const fontsReady = (document as any).fonts?.ready;
+    if (fontsReady?.then) fontsReady.then(remeasure).catch(() => {});
+    nxTimers.push(window.setTimeout(remeasure, 900));
+    nxTimers.push(window.setTimeout(remeasure, 2500));
+
+    let ticking = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          ticking = false;
+          spy();
+        });
+      },
+      { passive: true, signal }
+    );
+
+    // drawer
+    const toggle = document.querySelector<HTMLElement>("[data-nx-toc-toggle]");
+    if (!drawer) return;
+
+    let lastFocus: HTMLElement | null = null;
+    const closeDrawer = () => {
+      drawer.classList.remove("is-open");
+      document.body.style.overflow = "";
+      toggle?.setAttribute("aria-expanded", "false");
+      window.setTimeout(() => {
+        drawer.hidden = true;
+      }, 180);
+      lastFocus?.focus?.();
+    };
+    const openDrawer = () => {
+      lastFocus = document.activeElement as HTMLElement | null;
+      drawer.hidden = false;
+      document.body.style.overflow = "hidden";
+      toggle?.setAttribute("aria-expanded", "true");
+      requestAnimationFrame(() => drawer.classList.add("is-open"));
+      drawer.querySelector<HTMLElement>("[data-nx-toc-close]")?.focus();
+    };
+
+    toggle?.addEventListener(
+      "click",
+      () => {
+        if (drawer.classList.contains("is-open")) closeDrawer();
+        else openDrawer();
+      },
+      { signal }
+    );
+    drawer.querySelectorAll("[data-nx-toc-close]").forEach((el) => {
+      el.addEventListener("click", closeDrawer, { signal });
+    });
+    drawer.querySelectorAll<HTMLElement>("[data-nx-toc-id]").forEach((a) => {
+      a.addEventListener("click", closeDrawer, { signal });
+    });
+    document.addEventListener(
+      "keydown",
+      (e) => {
+        if (e.key === "Escape" && drawer.classList.contains("is-open")) closeDrawer();
+      },
+      { signal }
+    );
+  }
+
+  document.addEventListener("astro:page-load", nxBootToc);
+  nxBootToc();
+</script>

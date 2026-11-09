@@ -1,0 +1,143 @@
+---
+/**
+ * SiteHeader.astro — el header ÚNICO del sitio.
+ *
+ * Antes cada página se montaba el suyo: la portada tenía un logo de 40 px,
+ * el semestre un "← INICIO" de 11 px, la materia un "← 2DO SEMESTRE" y la
+ * nota un "⌂" minúsculo que además desaparecía al hacer scroll. El lector
+ * que no conoce el sitio no tenía forma de saber qué era cada cosa.
+ *
+ * Ahora las cuatro páginas comparten este componente:
+ *   · la marca (logo 32 px, siempre visible, enlace a / con nombre accesible)
+ *   · las migas de pan (truncadas, la última es la página actual)
+ *   · las acciones: buscar (con el atajo ⌘K en escritorio) y, en las notas,
+ *     el índice de la nota.
+ *
+ * El contenedor (`container`) lo fija cada página para que el header quede
+ * alineado con su propio contenido: antes el header era max-w-6xl (1152 px)
+ * y el cuerpo max-w-[1500px], así que el logo no caía sobre ninguna columna.
+ */
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  /** "portada" = home (marca grande + lema) · "nivel" = semestre/materia · "nota" = nota */
+  variant?: "portada" | "nivel" | "nota";
+  crumbs?: Crumb[];
+  /** clase de anchura: debe coincidir con la del contenido de la página */
+  container?: string;
+  sticky?: boolean;
+  /** botón de índice de la nota (solo en páginas de nota) */
+  showIndex?: boolean;
+  /** botón explícito "← Inicio" (útil en semestre/materia) */
+  showHome?: boolean;
+}
+
+const {
+  variant = "nivel",
+  crumbs = [],
+  container = "max-w-6xl",
+  sticky = false,
+  showIndex = false,
+  showHome = false,
+} = Astro.props;
+---
+
+<header class:list={["nx-header", sticky && "nx-header--sticky"]}>
+  <div class:list={["nx-header-inner", container, "px-6"]}>
+    <a href="/" class="nx-header-brand" aria-label="Neonotes — ir al inicio">
+      <img src="/logo.svg" alt="" width="32" height="32" class="nx-header-logo" />
+      <span class:list={["nx-header-name nx-brand-text", variant === "portada" ? "text-xl" : "text-base"]}>
+        Neonotes
+      </span>
+    </a>
+
+    {
+      variant === "portada" && (
+        <p class="nx-header-tag hidden lg:block">REPOSITORIO PERSONAL · ESPOL</p>
+      )
+    }
+
+    {
+      crumbs.length > 0 && (
+        <nav class="nx-header-crumbs" aria-label="Ruta de navegación">
+          {crumbs.map((c, i) => (
+            <Fragment>
+              {i > 0 && (
+                <span class="nx-header-sep" aria-hidden="true">
+                  ›
+                </span>
+              )}
+              {c.href ? (
+                <a href={c.href} class="nx-header-crumb nx-header-crumb--link nx-scramble">
+                  {c.label}
+                </a>
+              ) : (
+                <span class="nx-header-crumb nx-header-crumb--now" aria-current="page">
+                  {c.label}
+                </span>
+              )}
+            </Fragment>
+          ))}
+        </nav>
+      )
+    }
+
+    <div class="nx-header-actions">
+      {
+        showHome && (
+          <a
+            href="/"
+            class="nx-hbtn nx-hbtn--home"
+            aria-label="Ir al inicio"
+          >
+            <span class="hidden sm:inline">← Inicio</span>
+            <span class="inline sm:hidden">⌂</span>
+          </a>
+        )
+      }
+      {
+        showIndex && (
+          <button
+            type="button"
+            class="nx-hbtn"
+            data-nx-toc-toggle
+            aria-expanded="false"
+            aria-controls="nx-toc-drawer"
+          >
+            <svg
+              class="size-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 6h16M4 12h11M4 18h7" />
+            </svg>
+            <span class="hidden sm:inline">Índice</span>
+          </button>
+        )
+      }
+      <button type="button" class="nx-hbtn nx-search-open">
+        <svg
+          class="size-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+        <span class="hidden sm:inline">Buscar</span>
+        <kbd class="nx-hbtn-kbd hidden lg:inline">⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>

@@ -75,8 +75,9 @@ body {
 /* ─── Explorador lateral ─────────────────────────────────── */
 .nx-explorer-wrap {
   position: sticky;
-  top: 4.5rem;
-  max-height: calc(100vh - 6rem);
+  /* el header pegajoso mide 56 px: se deja un margen de 8 px */
+  top: 4rem;
+  max-height: calc(100vh - 5rem);
   overflow-y: auto;
   padding-right: 2px;
 }
@@ -201,8 +202,9 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: 1rem;
   padding: 1.25rem;
+  /* sin `transform` en la transición: GSAP (reveal/tilt) anima transform por
+     frame y la transición CSS lo arrastraba con retardo */
   transition:
-    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
     border-color 0.25s,
     background 0.25s,
     box-shadow 0.25s;
@@ -218,7 +220,185 @@ body {
 .nx-bar {
   height: 2px;
   background: var(--brand-grad);
+  background-size: 200% 100%;
   border-radius: 2px;
+}
+
+/* Barra de progreso de scroll (la anima GSAP en Base.astro) */
+#nx-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--color-nexus-purple), var(--color-nexus-blue), var(--color-nexus-green));
+  z-index: 1200;
+  pointer-events: none;
+}
+
+/* ── Cursor glow personalizado (lo crea GSAP en Base.astro) ── */
+#nx-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.85), rgba(0, 255, 136, 0) 70%);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.45);
+  pointer-events: none;
+  z-index: 1500;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+@media (pointer: coarse) {
+  #nx-cursor { display: none; }
+}
+
+/* ── Botón volver arriba con anillo de progreso ── */
+#nx-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(10, 12, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e5e7eb;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1150;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(6px);
+}
+#nx-top:hover {
+  border-color: rgba(0, 255, 136, 0.5);
+  box-shadow: var(--nexus-glow);
+  color: var(--color-nexus-green);
+}
+#nx-top svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+#nx-top .nx-top-ring {
+  fill: none;
+  stroke: var(--color-nexus-green);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  opacity: 0.85;
+}
+#nx-top span { position: relative; z-index: 1; }
+
+/* ── Franja de materias en loop infinito (marquee) ── */
+.nx-marquee {
+  overflow: hidden;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.015);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.nx-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: nx-marquee 55s linear infinite;
+}
+.nx-marquee:hover .nx-marquee__track { animation-play-state: paused; }
+.nx-marquee__group {
+  display: flex;
+  gap: 2.5rem;
+  padding-right: 2.5rem;
+}
+.nx-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-marquee__item::before {
+  content: "◆";
+  font-size: 0.5rem;
+  color: var(--color-nexus-green);
+  opacity: 0.8;
+}
+@keyframes nx-marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* ── Transiciones de página (View Transitions de Astro) ── */
+::view-transition-old(root) {
+  animation: nx-vt-out 0.22s cubic-bezier(0.4, 0, 1, 1) both;
+}
+::view-transition-new(root) {
+  animation: nx-vt-in 0.32s cubic-bezier(0, 0, 0.2, 1) both;
+}
+@keyframes nx-vt-out {
+  to { opacity: 0; transform: scale(0.99); }
+}
+@keyframes nx-vt-in {
+  from { opacity: 0; transform: translateY(12px); }
+}
+
+/* ── Neón retro sutil: scanlines + grano de película ── */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 900;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20px;
+  pointer-events: none;
+  z-index: 900;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: nx-grain 0.8s steps(4) infinite;
+}
+@keyframes nx-grain {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-5px, 3px); }
+  50% { transform: translate(4px, -5px); }
+  75% { transform: translate(-3px, -2px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Glow sutil en acentos */
+.nx-section-title { text-shadow: 0 0 14px rgba(170, 102, 255, 0.35); }
+.nx-badge { box-shadow: 0 0 12px rgba(170, 102, 255, 0.15); }
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-marquee__track { animation: none; }
+  body::before { animation: none; }
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none; }
 }
 
 /* Botón primario */
@@ -230,7 +410,8 @@ body {
   border-radius: 0.625rem;
   font-weight: 600;
   font-size: 0.875rem;
-  transition: all 0.2s;
+  /* sin `all`: GSAP anima x/y del hover magnético y la transición lo frenaba */
+  transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
   min-height: 44px;
   cursor: pointer;
 }
@@ -273,6 +454,27 @@ body {
   pointer-events: none;
   background: radial-gradient(closest-side, rgba(140, 120, 255, 0.18), transparent);
 }
+/* deriva muy lenta: da vida al fondo sin distraer */
+.nx-aura--drift {
+  animation: nx-aura-drift 26s ease-in-out infinite alternate;
+}
+.nx-aura--slow {
+  animation-duration: 38s;
+  animation-direction: alternate-reverse;
+}
+@keyframes nx-aura-drift {
+  from {
+    transform: translate3d(-3%, -2%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(4%, 3%, 0) scale(1.08);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nx-aura--drift {
+    animation: none;
+  }
+}
 
 /* Animación de entrada */
 @keyframes nx-fade-up {
@@ -283,6 +485,32 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Animación de entrada del hero: se activa al cargar, sin hacer scroll */
+@keyframes nx-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nx-hero-in {
+  animation: nx-hero-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.nx-hero-in--delay-1 { animation-delay: 0.15s; }
+.nx-hero-in--delay-2 { animation-delay: 0.3s; }
+.nx-hero-in--delay-3 { animation-delay: 0.45s; }
+.nx-hero-in--delay-4 { animation-delay: 0.6s; }
+.nx-hero-in--delay-5 { animation-delay: 0.75s; }
+@media (prefers-reduced-motion: reduce) {
+  .nx-hero-in {
+    animation: none;
+    opacity: 1;
   }
 }
 .nx-fade-up {
@@ -298,3 +526,458 @@ body {
     transition: none;
   }
 }
+
+/* ─── Header del sitio ──────────────────────────────────── */
+/* Un solo header para las cuatro páginas. Antes cada una tenía el suyo:
+   un logo de 40 px en la portada, un "← INICIO" de 11 px en el semestre,
+   un "← 2DO SEMESTRE" en la materia y un "⌂" minúsculo en la nota que
+   además desaparecía al hacer scroll. */
+.nx-header {
+  position: relative;
+  z-index: 45;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(5, 7, 13, 0.74);
+  backdrop-filter: blur(12px);
+}
+.nx-header--sticky {
+  position: sticky;
+  top: 0;
+}
+.nx-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 56px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nx-header-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex: none;
+  text-decoration: none;
+}
+.nx-header-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 0.6rem;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s;
+}
+.nx-header-brand:hover .nx-header-logo {
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 0 18px rgba(120, 140, 255, 0.45);
+}
+.nx-header-name {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.nx-header-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-header-crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+.nx-header-sep {
+  flex: none;
+  color: var(--color-nexus-muted);
+  opacity: 0.55;
+}
+.nx-header-crumb {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nx-header-crumb--link {
+  color: var(--color-nexus-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nx-header-crumb--link:hover {
+  color: var(--color-nexus-green);
+}
+.nx-header-crumb--now {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+.nx-header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: none;
+}
+
+/* Botón compacto del header (buscar / índice) */
+.nx-hbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 36px;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.55rem;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: #d1d5db;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s, background 0.18s, transform 0.18s;
+}
+.nx-hbtn:hover {
+  border-color: rgba(0, 170, 255, 0.45);
+  color: var(--color-nexus-blue);
+  background: rgba(0, 170, 255, 0.06);
+}
+.nx-hbtn:active {
+  transform: translateY(1px);
+}
+.nx-hbtn--home {
+  color: var(--color-nexus-green);
+}
+.nx-hbtn--home:hover {
+  color: #fff;
+  background: rgba(0, 255, 136, 0.1);
+  border-color: var(--color-nexus-green);
+}
+.nx-hbtn--icon {
+  padding: 0.35rem;
+  min-width: 36px;
+  justify-content: center;
+}
+.nx-hbtn-kbd {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  padding: 1px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  color: #94a3b8;
+}
+/* target táctil: 44 px en teléfono */
+@media (max-width: 639px) {
+  .nx-hbtn {
+    min-height: 44px;
+    min-width: 44px;
+    justify-content: center;
+  }
+  .nx-hbtn-kbd {
+    display: none;
+  }
+}
+
+/* ─── Índice de la nota (columna de escritorio) ──────────── */
+.nx-toc-col {
+  min-width: 0;
+}
+.nx-toc-sticky {
+  position: sticky;
+  top: 4rem;
+  max-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+}
+.nx-toc-path {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.55;
+  color: var(--color-nexus-muted);
+  margin-bottom: 0.7rem;
+}
+.nx-toc-list {
+  min-height: 0;
+  max-height: calc(100vh - 19rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  padding-right: 0.2rem;
+}
+.nx-toc-list--drawer {
+  max-height: none;
+  flex: 1;
+  border-left: 0;
+  padding: 0 0.25rem 0 0;
+}
+.nx-toc-item {
+  display: block;
+  margin-left: -1px;
+  padding: 0.3rem 0.6rem;
+  border-left: 2px solid transparent;
+  color: #9ca3af;
+  text-decoration: none;
+  line-height: 1.35;
+  font-size: 12.5px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.nx-toc-item:hover {
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.04);
+}
+.nx-toc-item.is-active {
+  color: var(--color-nexus-green);
+  border-left-color: var(--color-nexus-green);
+  background: rgba(0, 255, 136, 0.06);
+}
+.nx-toc-l3 {
+  padding-left: 1.4rem;
+  font-size: 12px;
+  color: #7f8ea8;
+}
+.nx-toc-empty {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-nexus-muted);
+  padding: 0.5rem 0.6rem;
+}
+.nx-toc-foot {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.nx-toc-foot-title {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+}
+.nx-toc-nav {
+  display: block;
+  margin-top: 0.45rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.5rem;
+  border-left: 2px solid var(--color-nexus-muted);
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  transition: border-color 0.16s, background 0.16s;
+}
+.nx-toc-nav:hover {
+  border-left-color: var(--color-nexus-green);
+  background: rgba(0, 255, 136, 0.05);
+}
+.nx-toc-nav--next {
+  border-left-color: var(--color-nexus-green);
+  background: rgba(0, 255, 136, 0.04);
+}
+.nx-toc-nav-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--color-nexus-muted);
+}
+.nx-toc-nav-title {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #d1d5db;
+}
+.nx-toc-mat {
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nx-toc-mat:hover {
+  color: var(--color-nexus-green);
+}
+
+/* ─── Drawer del índice (móvil y tablet) ─────────────────── */
+.nx-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+}
+.nx-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 4, 10, 0.72);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+.nx-drawer.is-open .nx-drawer-backdrop {
+  opacity: 1;
+}
+.nx-drawer-panel {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(340px, 88vw);
+  display: flex;
+  flex-direction: column;
+  background: #0a0e1a;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -24px 0 60px rgba(0, 0, 0, 0.55);
+  transform: translateX(100%);
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nx-drawer.is-open .nx-drawer-panel {
+  transform: translateX(0);
+}
+.nx-drawer-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1rem 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.nx-drawer-foot {
+  padding: 0.9rem 1rem 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* ─── Materia: unidades ─────────────────────────────────── */
+.nx-unit {
+  margin-bottom: 2.75rem;
+  scroll-margin-top: 4.5rem;
+}
+.nx-unit-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+  padding: 0.85rem 1.05rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--glass-border);
+  border-left: 3px solid var(--accent, var(--color-nexus-blue));
+  background: linear-gradient(90deg, var(--accent-soft, rgba(0, 170, 255, 0.08)), rgba(255, 255, 255, 0.015));
+}
+.nx-unit-kicker {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent, var(--color-nexus-blue));
+}
+.nx-unit-title {
+  margin-top: 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+.nx-unit-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.nx-note-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  border-left: 2px solid var(--accent, var(--color-nexus-blue));
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  transition: background 0.16s, transform 0.16s, border-color 0.16s;
+}
+.nx-note-row:hover {
+  background: rgba(255, 255, 255, 0.055);
+  transform: translateX(3px);
+}
+.nx-note-title {
+  flex: 1;
+  min-width: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #e5e7eb;
+  transition: color 0.16s;
+}
+.nx-note-row:hover .nx-note-title {
+  color: #fff;
+}
+.nx-note-date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.nx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: border-color 0.16s, color 0.16s, background 0.16s;
+}
+.nx-chip:hover {
+  color: var(--accent, var(--color-nexus-blue));
+  border-color: var(--accent, var(--color-nexus-blue));
+  background: var(--accent-soft, rgba(0, 170, 255, 0.08));
+}
+.nx-chip-count {
+  color: var(--color-nexus-muted);
+}
+
+/* ─── Revelado al hacer scroll ──────────────────────────── */
+/* Solo se oculta si hay JS: sin JS el contenido se ve siempre. */
+.nx-js [data-nx-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--nx-reveal-delay, 0ms);
+}
+.nx-js [data-nx-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nx-js [data-nx-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .nx-header-logo,
+  .nx-note-row,
+  .nx-drawer-panel,
+  .nx-drawer-backdrop {
+    transition: none !important;
+  }
+}
+

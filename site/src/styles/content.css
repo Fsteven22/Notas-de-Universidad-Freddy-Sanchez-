@@ -3,6 +3,9 @@
   font-size: 15.5px;
   line-height: 1.75;
   color: #e5e7eb;
+  /* Medida de lectura: medido, la columna daba 90 caracteres por linea
+     (904 px a 14,7 px). Lo comodo para texto corrido esta entre 60 y 75. */
+  max-width: 43rem;
 }
 
 .note-prose h1 {
@@ -10,6 +13,17 @@
   font-weight: 800;
   color: #fff;
   margin: 2rem 0 1rem;
+}
+
+/* El h1 del markdown se degrada a h2 (plugin rehype-h1-demote) para que
+   quede un solo h1 por pagina. Se le devuelve aqui el aspecto que tenia. */
+.note-prose h2.nx-h1-md {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .note-prose h2 {
@@ -72,6 +86,9 @@
 
 .note-prose img {
   max-width: 100%;
+  /* con width/height en el HTML (plugin rehype-img-lazy) el navegador
+     reserva el hueco; sin height:auto la imagen se deformaria */
+  height: auto;
   border-radius: 0.75rem;
   border: 1px solid var(--glass-border);
   margin: 1rem auto;

@@ -504,10 +504,13 @@ async function main() {
     if (existsSync(srcBuild)) {
       await rm(dstBuild, { recursive: true, force: true });
       await mkdir(dstBuild, { recursive: true });
+      // El visor propio (public/pdfjs/viewer.html) solo carga pdf.js y
+      // pdf.worker.min.js. Los demas (pdf.min.js, pdf.worker.js,
+      // pdf.worker.entry.js) eran 2,30 MB que nadie usaba.
+      const NECESARIOS = new Set(["pdf.js", "pdf.worker.min.js"]);
       let copied = 0;
       for (const f of await readdir(srcBuild)) {
-        // sin sourcemaps ni sandbox: el visor propio no los usa y multiplican el peso del deploy
-        if (f.endsWith(".map") || f.startsWith("pdf.sandbox")) continue;
+        if (!NECESARIOS.has(f)) continue;
         await copyFile(path.join(srcBuild, f), path.join(dstBuild, f));
         copied++;
       }
