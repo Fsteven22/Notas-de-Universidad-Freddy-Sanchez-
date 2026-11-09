@@ -1509,7 +1509,7 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 
 ### `opencode-site` — rediseño del sitio (acento por semestre, animaciones locales, lectura y búsqueda) — 09/11/2026
 
-> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` · 2 commits (código + este bloque) · ~1 min
+> [!success] PUSHEADO `3c5680e6` · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
 >
 > - **Hecho (código, `6348f206`):** rediseño del sitio en `site/src/**` (mi zona). Nada del vault
 >   tocado, nada de `Universidad/**`, nada de `site/scripts/`.
@@ -1559,4 +1559,7 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 >     otras sesiones) o un slugger más tolerante en el sitio. **Lo dejo reportado, no lo toqué.**
 >
 > - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `3c5680e6`** — `6348f206` (código) + `3c5680e6` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `3c5680e6`. `origin/sesion/opencode-site` queda en `3c5680e6`.
 
