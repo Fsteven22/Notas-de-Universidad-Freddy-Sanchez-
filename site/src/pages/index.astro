@@ -125,6 +125,45 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     </div>
   </div>
 
+  <!-- Continuar leyendo (lo llena Base.astro desde localStorage) -->
+  <section id="continuar" class="mx-auto max-w-6xl px-6 pt-10 hidden">
+    <p class="nx-section-title mb-6">Continuar leyendo</p>
+    <a id="continuar-card" href="#" class="nx-card group block max-w-2xl" data-nx-reveal>
+      <div class="flex items-center justify-between gap-3">
+        <p id="continuar-title" class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-cyan)]"></p>
+        <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-cyan)]">→</span>
+      </div>
+      <p class="mt-3 font-mono text-[11px] text-[var(--color-nexus-muted)]">
+        <span id="continuar-mat" class="text-[var(--color-nexus-cyan)]"></span>
+        <span id="continuar-when"></span>
+      </p>
+    </a>
+  </section>
+
+  <!-- Atajos de teclado -->
+  <section class="mx-auto max-w-6xl px-6 py-6">
+    <p class="nx-section-title mb-6">Atajos</p>
+    <div class="grid gap-4 sm:grid-cols-3">
+      {[
+        { k: ["g", "h"], t: "Inicio", d: "Vuelve a la portada desde cualquier nota." },
+        { k: ["g", "i"], t: "Índice", d: "Salta al índice de semestres." },
+        { k: ["g", "b"], t: "Buscar", d: "Abre el buscador por apartados." },
+      ].map((s, i) => (
+        <div
+          class="nx-card !py-5 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]"
+          data-nx-reveal
+          style={`--nx-reveal-delay:${i * 70}ms`}
+        >
+          <div class="nx-kbd-seq mb-2">
+            {s.k.map((k) => <kbd class="nx-kbd">{k}</kbd>)}
+          </div>
+          <h3 class="text-sm font-bold text-white">{s.t}</h3>
+          <p class="mt-1 font-mono text-[11px] text-[var(--color-nexus-muted)] leading-relaxed">{s.d}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- Semestres -->
   <section id="semestres" class="mx-auto max-w-6xl px-6 py-10">
     <p class="nx-section-title mb-6">Semestres</p>
@@ -182,6 +221,74 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     </div>
   </section>
 
+  <!-- Todas las materias, con filtro por semestre -->
+  <section id="materias" class="mx-auto max-w-6xl px-6 py-10">
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+      <p class="nx-section-title">Todas las materias</p>
+      <div class="nx-chips" role="group" aria-label="Filtrar por semestre">
+        <button
+          type="button"
+          class="nx-chip is-active"
+          data-nx-filter="todas"
+          style="--accent:var(--color-nexus-purple); --accent-soft:rgba(170,102,255,0.10)"
+          aria-pressed="true"
+        >
+          Todas
+        </button>
+        {
+          sems.map((s) => (
+            <button
+              type="button"
+              class="nx-chip"
+              data-nx-filter={s.id}
+              style={`--accent:${accent(s.id)}; --accent-soft:rgba(255,255,255,0.05)`}
+              aria-pressed="false"
+            >
+              {s.title}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        sems.flatMap((s, si) =>
+          s.materias.map((m, i) => (
+            <a
+              href={`/${s.id}/${m.id}/`}
+              class="nx-card nx-mat-card group block !p-4"
+              data-nx-sem={s.id}
+              data-nx-reveal
+              style={`--nx-reveal-delay:${((si * 3 + i) % 6) * 50}ms`}
+            >
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-blue)]">
+                  {m.title}
+                </h3>
+                <span
+                  class="shrink-0 font-mono text-[10px]"
+                  style={`color:${accent(s.id)}`}
+                >
+                  {m.total}
+                </span>
+              </div>
+              <p class="mt-2 font-mono text-[10px] tracking-wider uppercase text-[var(--color-nexus-muted)]">
+                {s.title}
+                {m.pdfs?.length ? ` · ${m.pdfs.length} PDFs` : ""}
+              </p>
+            </a>
+          ))
+        )
+      }
+    </div>
+    <p
+      id="materias-empty"
+      class="hidden font-mono text-[11px] text-[var(--color-nexus-muted)]"
+    >
+      Sin materias en ese semestre.
+    </p>
+  </section>
+
   <!-- Recién actualizadas -->
   <section id="recientes" class="mx-auto max-w-6xl px-6 py-10 pb-24">
     <p class="nx-section-title mb-6">Recién actualizadas</p>
@@ -222,17 +329,32 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     import * as THREE from "/three.module.js";
 
     (function(){
-      var container = document.getElementById("three-bg");
-      if (!container) return;
+      var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      // Cleanup de la escena actual (se registra una sola vez)
+      var stopScene = null;
 
-      try {
-        initThree();
-      } catch(e){
-        console.warn("Three.js no se pudo inicializar:", e);
-        container.style.display = "none";
+      // ── Escena Three.js (diferida a idle; se reinicia en cada visita) ──
+      function startScene(){
+        var container = document.getElementById("three-bg");
+        if (!container || container.dataset.nxStarted) return;
+        container.dataset.nxStarted = "1";
+        if (REDUCED) { container.style.display = "none"; return; }
+        var start = function(){
+          // Si se navegó antes de que entrara el idle, el contenedor ya no
+          // está en el árbol: no arrancar la escena (evita un bucle huérfano).
+          if (!container.isConnected) return;
+          try {
+            initThree(container);
+          } catch(e){
+            console.warn("Three.js no se pudo inicializar:", e);
+            container.style.display = "none";
+          }
+        };
+        if (window.requestIdleCallback) requestIdleCallback(start, { timeout: 2500 });
+        else setTimeout(start, 1200);
       }
 
-      function initThree(){
+      function initThree(container){
         var scene = new THREE.Scene();
         var camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
         camera.position.z = 30;
@@ -305,6 +427,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         var raycaster = new THREE.Raycaster();
         var timer = new THREE.Timer();
         var animationId;
+        // El raycast contra 1500 puntos es lo más caro del bucle:
+        // se recalcula solo cada 6 frames (el resto usa el último resultado).
+        var frame = 0;
+        var lastHit = null;
 
         window.addEventListener("mousemove", function(e){
           mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
@@ -325,8 +451,12 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
           particles.rotation.x = elapsed * 0.05;
           particles.rotation.y = elapsed * 0.03;
 
-          raycaster.setFromCamera(mouse, camera);
-          var intersects = raycaster.intersectObject(particles);
+          if (frame % 6 === 0) {
+            raycaster.setFromCamera(mouse, camera);
+            lastHit = raycaster.intersectObject(particles);
+          }
+          frame++;
+          var intersects = lastHit;
 
           var pos = geometry.attributes.position.array;
           for (var i = 0; i < particleCount; i++) {
@@ -384,15 +514,25 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
 
         animate();
 
-        window.addEventListener("astro:before-swap", function(){
+        // Limpieza al salir de la portada (se registra una sola vez)
+        stopScene = function(){
           if (animationId) cancelAnimationFrame(animationId);
+          animationId = null;
           renderer.dispose();
-        });
+          geometry.dispose();
+          lineGeo.dispose();
+          material.dispose();
+          lineMat.dispose();
+          stopScene = null;
+        };
       }
 
       // ── SplitText oficial: texto letra por letra en el hero ──
-      var heroTitle = document.querySelector(".nx-hero-in h1");
-      if (heroTitle && window.SplitText && typeof window.gsap !== "undefined") {
+      function heroSplit(){
+        var heroTitle = document.querySelector(".nx-hero-in h1");
+        if (!heroTitle || heroTitle.dataset.nxSplit) return;
+        if (REDUCED || !window.SplitText || typeof window.gsap === "undefined") return;
+        heroTitle.dataset.nxSplit = "1";
         try {
           var split = new window.SplitText(heroTitle, { type: "chars,words", charsClass: "nx-char" });
           gsap.from(split.chars, {
@@ -403,6 +543,82 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
           console.warn("SplitText falló, el h1 queda visible:", e);
         }
       }
+
+      // La portada puede cargarse de nuevo tras navegar con el ClientRouter:
+      // el script no se re-ejecuta, así que arrancamos desde astro:page-load.
+      function bootIndex(){
+        if (stopScene) { stopScene(); }
+        startScene();
+        heroSplit();
+      }
+      document.addEventListener("astro:before-swap", function(){
+        if (stopScene) stopScene();
+      });
+      document.addEventListener("astro:page-load", bootIndex);
+      bootIndex();
+    })();
+  </script>
+
+  <script is:inline>
+    // Filtro de materias por semestre + tarjeta "Continuar leyendo".
+    // is:inline: se ejecuta en cada visita a la portada (el ClientRouter
+    // deduplica por contenido, así que usamos astro:page-load abajo).
+    (function(){
+      function nxIndexUI(){
+        // ── Filtro por semestre ──
+        var chips = document.querySelectorAll("[data-nx-filter]");
+        var cards = document.querySelectorAll(".nx-mat-card");
+        var empty = document.getElementById("materias-empty");
+        chips.forEach(function(chip){
+          if (chip.dataset.nxBound) return;
+          chip.dataset.nxBound = "1";
+          chip.addEventListener("click", function(){
+            var f = chip.getAttribute("data-nx-filter");
+            chips.forEach(function(c){
+              var on = c === chip;
+              c.classList.toggle("is-active", on);
+              c.setAttribute("aria-pressed", on ? "true" : "false");
+            });
+            var visible = 0;
+            cards.forEach(function(card){
+              var show = f === "todas" || card.getAttribute("data-nx-sem") === f;
+              card.classList.toggle("is-filtered-out", !show);
+              if (show) visible++;
+            });
+            if (empty) empty.classList.toggle("hidden", visible > 0);
+          });
+        });
+
+        // ── Continuar leyendo (localStorage "nx-last") ──
+        var sec = document.getElementById("continuar");
+        var cardEl = document.getElementById("continuar-card");
+        if (sec && cardEl && !sec.dataset.nxBound) {
+          sec.dataset.nxBound = "1";
+          try {
+            var raw = localStorage.getItem("nx-last");
+            if (raw) {
+              var d = JSON.parse(raw);
+              if (d && d.url && d.title) {
+                cardEl.setAttribute("href", d.url);
+                document.getElementById("continuar-title").textContent = d.title;
+                document.getElementById("continuar-mat").textContent = d.mat || "";
+                var days = Math.floor((Date.now() - (d.at || 0)) / 86400000);
+                document.getElementById("continuar-when").textContent =
+                  d.mat ? " · " + (days <= 0 ? "hoy" : "hace " + days + " d") :
+                  (days <= 0 ? " · hoy" : " · hace " + days + " d");
+                sec.classList.remove("hidden");
+                // La tarjeta estaba oculta al crearse su ScrollTrigger:
+                // hay que remedir para que el reveal no se quede colgado.
+                if (window.ScrollTrigger) {
+                  requestAnimationFrame(function(){ ScrollTrigger.refresh(); });
+                }
+              }
+            }
+          } catch(e){}
+        }
+      }
+      document.addEventListener("astro:page-load", nxIndexUI);
+      nxIndexUI();
     })();
   </script>
 

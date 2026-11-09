@@ -404,8 +404,11 @@ const { scope = "" } = Astro.props;
     });
   }
 
-  if (!document.documentElement.dataset.nxSearchKeys) {
-    document.documentElement.dataset.nxSearchKeys = "1";
+  // Guarda en window: swapRootAttributes borra los data-* de <html> en cada
+  // navegación; si viviera ahí, cada swap registraría otro keydown y Ctrl+K
+  // alternaría abrir/cerrar con tantos listeners como visitas previas.
+  if (!window.__nxSearchKeys) {
+    window.__nxSearchKeys = 1;
     document.addEventListener("keydown", (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();

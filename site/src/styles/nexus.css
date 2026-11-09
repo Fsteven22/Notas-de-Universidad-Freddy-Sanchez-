@@ -21,6 +21,10 @@
   --glass-bg-hover: rgba(255, 255, 255, 0.05);
   --brand-grad: linear-gradient(90deg, #aa66ff, #00aaff);
   --nexus-glow: 0 0 24px rgba(120, 140, 255, 0.28);
+  /* Acento por semestre (lo cambia Base.astro al navegar):
+     cursor glow, barra de progreso, anillo del botón arriba y glow lo usan */
+  --nx-accent: #aa66ff;
+  --nx-accent-rgb: 170, 102, 255;
 }
 
 /* Texto de marca con degradado violeta -> azul */
@@ -233,7 +237,8 @@ body {
   height: 2px;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, var(--color-nexus-purple), var(--color-nexus-blue), var(--color-nexus-green));
+  background: linear-gradient(90deg, var(--nx-accent), var(--color-nexus-blue), var(--nx-accent));
+  background-size: 200% 100%;
   z-index: 1200;
   pointer-events: none;
 }
@@ -247,8 +252,8 @@ body {
   height: 26px;
   margin: -13px 0 0 -13px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 255, 136, 0.85), rgba(0, 255, 136, 0) 70%);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.45);
+  background: radial-gradient(circle, rgba(var(--nx-accent-rgb), 0.85), rgba(var(--nx-accent-rgb), 0) 70%);
+  box-shadow: 0 0 20px rgba(var(--nx-accent-rgb), 0.45);
   pointer-events: none;
   z-index: 1500;
   opacity: 0;
@@ -279,9 +284,9 @@ body {
   backdrop-filter: blur(6px);
 }
 #nx-top:hover {
-  border-color: rgba(0, 255, 136, 0.5);
+  border-color: rgba(var(--nx-accent-rgb), 0.5);
   box-shadow: var(--nexus-glow);
-  color: var(--color-nexus-green);
+  color: var(--nx-accent);
 }
 #nx-top svg {
   position: absolute;
@@ -292,7 +297,7 @@ body {
 }
 #nx-top .nx-top-ring {
   fill: none;
-  stroke: var(--color-nexus-green);
+  stroke: var(--nx-accent);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-dasharray: 100;
@@ -343,18 +348,45 @@ body {
   to { transform: translateX(-50%); }
 }
 
-/* ── Transiciones de página (View Transitions de Astro) ── */
+/* ── Transiciones de página (View Transitions de Astro) ──
+   La dirección (adelante/atrás) la pone Base.astro en <html data-nx-dir>
+   al escuchar astro:before-swap: adelante entra deslizando desde la
+   derecha, atrás desde la izquierda. */
 ::view-transition-old(root) {
   animation: nx-vt-out 0.22s cubic-bezier(0.4, 0, 1, 1) both;
 }
 ::view-transition-new(root) {
   animation: nx-vt-in 0.32s cubic-bezier(0, 0, 0.2, 1) both;
 }
+html[data-nx-dir="forward"]::view-transition-old(root) {
+  animation-name: nx-vt-out-fwd;
+}
+html[data-nx-dir="forward"]::view-transition-new(root) {
+  animation-name: nx-vt-in-fwd;
+}
+html[data-nx-dir="back"]::view-transition-old(root) {
+  animation-name: nx-vt-out-back;
+}
+html[data-nx-dir="back"]::view-transition-new(root) {
+  animation-name: nx-vt-in-back;
+}
 @keyframes nx-vt-out {
   to { opacity: 0; transform: scale(0.99); }
 }
 @keyframes nx-vt-in {
   from { opacity: 0; transform: translateY(12px); }
+}
+@keyframes nx-vt-out-fwd {
+  to { opacity: 0; transform: translateX(-6%) scale(0.99); }
+}
+@keyframes nx-vt-in-fwd {
+  from { opacity: 0; transform: translateX(8%); }
+}
+@keyframes nx-vt-out-back {
+  to { opacity: 0; transform: translateX(6%) scale(0.99); }
+}
+@keyframes nx-vt-in-back {
+  from { opacity: 0; transform: translateX(-8%); }
 }
 
 /* ── Neón retro sutil: scanlines + grano de película ── */
@@ -393,6 +425,126 @@ body::before {
 /* Glow sutil en acentos */
 .nx-section-title { text-shadow: 0 0 14px rgba(170, 102, 255, 0.35); }
 .nx-badge { box-shadow: 0 0 12px rgba(170, 102, 255, 0.15); }
+
+/* ── Lectura de notas: sin texturas (scanlines/grano) ──
+   Las 821 notas son texto largo: las texturas restan legibilidad.
+   La clase la pone Base.astro según la profundidad de la ruta. */
+html.nx-note-page body::before,
+html.nx-note-page body::after {
+  display: none;
+}
+
+/* ── Tiempo restante de lectura (lo crea y actualiza Base.astro) ── */
+#nx-read-eta {
+  position: fixed;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1150;
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(10, 12, 20, 0.82);
+  backdrop-filter: blur(6px);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+}
+html.nx-note-page #nx-read-eta {
+  display: inline-flex;
+}
+#nx-read-eta::before {
+  content: "◆";
+  font-size: 7px;
+  color: var(--nx-accent);
+  animation: nx-eta-pulse 2s ease-in-out infinite;
+}
+@keyframes nx-eta-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+#nx-read-eta.is-done {
+  color: var(--nx-accent);
+  border-color: rgba(var(--nx-accent-rgb), 0.4);
+}
+@media (prefers-reduced-motion: reduce) {
+  #nx-read-eta::before { animation: none; }
+}
+
+/* ── Botón "copiar" en bloques de código ── */
+.note-prose pre {
+  position: relative;
+}
+.nx-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 14, 26, 0.9);
+  color: #9ca3af;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.18s, color 0.18s, border-color 0.18s;
+}
+.note-prose pre:hover .nx-copy,
+.nx-copy:focus-visible {
+  opacity: 1;
+}
+.nx-copy:hover {
+  color: var(--color-nexus-blue);
+  border-color: rgba(0, 170, 255, 0.45);
+}
+.nx-copy.is-ok {
+  opacity: 1;
+  color: var(--color-nexus-green);
+  border-color: rgba(0, 255, 136, 0.4);
+}
+/* sin hover (táctil): el botón siempre visible */
+@media (hover: none) {
+  .nx-copy { opacity: 1; }
+}
+
+/* ── Atajos de teclado (tarjetas de la portada) ── */
+.nx-kbd {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #cbd5e1;
+  text-align: center;
+}
+.nx-kbd-seq {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── Filtro de materias en la portada ── */
+.nx-chip {
+  cursor: pointer;
+}
+.nx-chip.is-active {
+  color: var(--accent, var(--color-nexus-blue));
+  border-color: var(--accent, var(--color-nexus-blue));
+  background: var(--accent-soft, rgba(0, 170, 255, 0.1));
+}
+.nx-mat-card.is-filtered-out {
+  display: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .nx-marquee__track { animation: none; }

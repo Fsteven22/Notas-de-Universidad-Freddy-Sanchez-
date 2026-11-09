@@ -157,10 +157,12 @@ const unidades = gruposOrden.map(([key, notas], gi) => {
             <section class="mt-14">
               <p class="nx-section-title mb-5">Material descargable</p>
               <ul class="space-y-2">
+                {/* vault.json guarda el PDF como string o como { url, size }
+                    según la materia: se normaliza el href. */}
                 {data.pdfs.map((p) => (
                   <li>
                     <a
-                      href={p.url}
+                      href={typeof p.url === "string" ? p.url : p.url?.url}
                       target="_blank"
                       class="flex items-center justify-between rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.025)] px-4 py-3 transition hover:border-[rgba(0,255,136,0.4)] hover:bg-[rgba(255,255,255,0.05)]"
                     >

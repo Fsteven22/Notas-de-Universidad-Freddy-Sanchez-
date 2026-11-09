@@ -13,11 +13,32 @@ const canonical = new URL(Astro.url.pathname, SITE).href;
 
 // Alcance de la búsqueda: semestre/materia de la página actual. Sirve para
 // que los resultados de la materia que estás leyendo salgan primero.
-const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/");
+const parts = Astro.url.pathname.split("/").filter(Boolean);
+const scope = parts.slice(0, 2).join("/");
+
+// Nota = ruta con 3+ segmentos (sem/mat/slug...). En notas se apagan las
+// texturas (scanlines/grano) porque restan legibilidad en texto largo.
+const isNote = parts.length >= 3;
+
+// Acento por semestre: pinta el cursor glow, la barra de progreso, el anillo
+// del botón arriba y el ETA de lectura. Va en <html> para que el router de
+// Astro lo actualice solo en cada navegación.
+const ACCENTS: Record<string, [string, string]> = {
+  preuniversitario: ["#aa66ff", "170, 102, 255"],
+  "1er-semestre": ["#00aaff", "0, 170, 255"],
+  "2do-semestre": ["#00ff88", "0, 255, 136"],
+  "3er-semestre": ["#00ddbb", "0, 221, 187"],
+  raiz: ["#f59f00", "245, 159, 0"],
+};
+const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 ---
 
 <!doctype html>
-<html lang="es">
+<html
+  lang="es"
+  class={isNote ? "nx-note-page" : undefined}
+  style={`--nx-accent:${accent};--nx-accent-rgb:${accentRgb}`}
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,7 +76,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
     <script src="/SplitText.min.js" is:inline></script>
     <script src="/ScrambleTextPlugin.min.js" is:inline></script>
     <script is:inline>
-      window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText, window.ScrambleText);
+      window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
     </script>
     <script src="/lenis.min.js" is:inline></script>
     <style is:global>
@@ -66,13 +87,27 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
     <slot />
     <SearchModal scope={scope} />
 
+    <!-- Barra de progreso de scroll (la anima GSAP en Base) -->
+    <div id="nx-scroll-progress" data-astro-transition-persist="nx-scroll-progress"></div>
+
+    <!-- Cursor glow personalizado (solo lo muestra puntero fino) -->
+    <div id="nx-cursor" data-astro-transition-persist="nx-cursor"></div>
+
     <!-- Botón volver arriba con anillo de progreso (lo anima GSAP en Base) -->
-    <button id="nx-top" type="button" aria-label="Volver arriba">
+    <button
+      id="nx-top"
+      type="button"
+      aria-label="Volver arriba"
+      data-astro-transition-persist="nx-top"
+    >
       <svg viewBox="0 0 44 44" aria-hidden="true">
         <circle class="nx-top-ring" cx="22" cy="22" r="19" pathLength="100"></circle>
       </svg>
       <span aria-hidden="true">↑</span>
     </button>
+
+    <!-- Minutos restantes de lectura (solo visible en notas; lo actualiza el scroll) -->
+    <div id="nx-read-eta" aria-live="polite" data-astro-transition-persist="nx-read-eta">—</div>
 
     <script>
       /**
@@ -132,72 +167,231 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
 
         function track(tw){ pageTweens.push(tw); return tw; }
 
+        // Preferencia del sistema: con "reducir movimiento" no se anima nada
+        // (el CSS ya muestra el contenido; aquí nos aseguramos de no crear tweens).
+        var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        // ── Tiempo restante de lectura (solo notas) ──
+        // Cuenta palabras del .note-prose (sin el MathML de KaTeX, que duplica
+        // el texto) y estima minutos a 200 palabras/min.
+        function nxEtaUpdate(){
+          var eta = document.getElementById("nx-read-eta");
+          if (!eta) return;
+          if (!document.documentElement.classList.contains("nx-note-page")) return;
+          var prose = document.querySelector(".note-prose");
+          if (!prose) return;
+          if (!prose.dataset.nxEtaTotal) {
+            var clone = prose.cloneNode(true);
+            var math = clone.querySelectorAll(".katex-mathml, annotation");
+            for (var m = 0; m < math.length; m++) math[m].remove();
+            var words = (clone.textContent || "").trim().split(/\s+/).length;
+            prose.dataset.nxEtaTotal = String(Math.max(1, Math.round(words / 200)));
+          }
+          var total = parseInt(prose.dataset.nxEtaTotal, 10);
+          var doc = document.documentElement;
+          var max = Math.max(1, doc.scrollHeight - doc.clientHeight);
+          var p = Math.min(1, Math.max(0, window.scrollY / max));
+          var rest = Math.ceil(total * (1 - p));
+          eta.textContent = rest > 0 ? rest + " min restantes" : "terminado";
+          eta.classList.toggle("is-done", rest <= 0);
+        }
+
+        // ── Botón "copiar" en cada bloque de código de las notas ──
+        function nxCopyBind(){
+          var pres = document.querySelectorAll(".note-prose pre");
+          for (var i = 0; i < pres.length; i++) {
+            (function(pre){
+              if (pre.dataset.nxCopyBound) return;
+              pre.dataset.nxCopyBound = "1";
+              var btn = document.createElement("button");
+              btn.type = "button";
+              btn.className = "nx-copy";
+              btn.textContent = "copiar";
+              btn.addEventListener("click", function(){
+                var code = pre.querySelector("code");
+                var text = (code || pre).textContent || "";
+                var ok = function(){
+                  btn.textContent = "copiado ✓";
+                  btn.classList.add("is-ok");
+                  setTimeout(function(){
+                    btn.textContent = "copiar";
+                    btn.classList.remove("is-ok");
+                  }, 1600);
+                };
+                // Respaldo para cuando la API moderna falla (permiso
+                // denegado, documento sin foco, contexto no seguro).
+                var fallback = function(){
+                  var ta = document.createElement("textarea");
+                  ta.value = text;
+                  ta.setAttribute("readonly", "");
+                  ta.style.position = "fixed";
+                  ta.style.opacity = "0";
+                  document.body.appendChild(ta);
+                  ta.select();
+                  try { ta.setSelectionRange(0, ta.value.length); } catch(e){}
+                  var done = false;
+                  try { done = document.execCommand("copy"); } catch(e){}
+                  ta.remove();
+                  if (done) ok();
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(text).then(ok, fallback);
+                } else {
+                  fallback();
+                }
+              });
+              pre.appendChild(btn);
+            })(pres[i]);
+          }
+        }
+
+        // ── Atajos de teclado: g h (inicio), g i (índice), g b (buscar), / ──
+        function nxShortcuts(){
+          // La guarda va en window: swapRootAttributes borra los data-* de
+          // <html> en cada navegación y el listener se duplicaría.
+          if (window.__nxKeys) return;
+          window.__nxKeys = 1;
+          var pending = false;
+          var timer = null;
+          var goto = function(url){
+            var a = document.createElement("a");
+            a.href = url;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          };
+          var openSearch = function(){
+            var btn = document.querySelector(".nx-search-open");
+            if (btn) btn.click();
+          };
+          document.addEventListener("keydown", function(e){
+            if (e.metaKey || e.ctrlKey || e.altKey) return;
+            var t = e.target;
+            if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" ||
+              (t as HTMLElement).isContentEditable)) return;
+            var modal = document.getElementById("nx-search");
+            if (modal && !modal.classList.contains("hidden")) return;
+            if (pending) {
+              pending = false;
+              clearTimeout(timer);
+              if (e.key === "h") { e.preventDefault(); goto("/"); }
+              else if (e.key === "i") { e.preventDefault(); goto("/#semestres"); }
+              else if (e.key === "b") { e.preventDefault(); openSearch(); }
+              return;
+            }
+            if (e.key === "/") { e.preventDefault(); openSearch(); return; }
+            if (e.key === "g") {
+              pending = true;
+              clearTimeout(timer);
+              timer = setTimeout(function(){ pending = false; }, 1200);
+            }
+          });
+        }
+
+        // ── Dirección de la transición (adelante/atrás) para el CSS ──
+        // Ojo: swapRootAttributes borra todos los atributos de <html> al
+        // sustituir el documento, así que el dato se guarda en una variable
+        // y se vuelve a aplicar en after-swap (justo antes de que corran las
+        // animaciones de view-transition).
+        function nxDirBind(){
+          if (window.__nxDirBound) return;
+          window.__nxDirBound = 1;
+          var dir = "forward";
+          document.addEventListener("astro:before-swap", function(e){
+            dir = (e as any).direction === "back" ? "back" : "forward";
+            document.documentElement.dataset.nxDir = dir;
+          });
+          document.addEventListener("astro:after-swap", function(){
+            document.documentElement.dataset.nxDir = dir;
+          });
+        }
+
         function initAnimations(){
           if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-          gsap.registerPlugin(ScrollTrigger, window.SplitText, window.ScrambleText);
+          gsap.registerPlugin(ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
 
           // ── Arranque único: Lenis, barra de progreso, cursor, botón arriba ──
           if (!booted) {
             booted = true;
 
-            var lenis = new Lenis({
-              autoRaf: true,
-              smooth: true,
-              easing: function(t){ return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
-              gestureOrientation: 'vertical',
-              touchMultiplier: 2,
-              wheelMultiplier: 0.8,
-              stopInertiaOnNavigate: true
-            });
-            lenis.on('scroll', ScrollTrigger.update);
-            gsap.ticker.add(function(time){ lenis.raf(time * 1000); });
-            gsap.ticker.lagSmoothing(0);
-            window.__nxLenis = lenis;
+            nxDirBind();
+            nxShortcuts();
 
-            // Barra de progreso de scroll (siempre visible al navegar)
-            var prog = document.createElement("div");
-            prog.id = "nx-scroll-progress";
-            document.body.appendChild(prog);
-            gsap.to(prog, { scaleX: 1, ease: "none",
-              scrollTrigger: { start: 0, end: "max", scrub: 0.3 } });
+            // ETA de lectura: se actualiza con el scroll (solo actúa en notas)
+            window.addEventListener("scroll", nxEtaUpdate, { passive: true });
+
+            // Con "reducir movimiento": scroll nativo, sin cursor, sin Lenis.
+            if (!REDUCED) {
+              var lenis = new Lenis({
+                autoRaf: true,
+                smooth: true,
+                easing: function(t){ return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+                gestureOrientation: 'vertical',
+                touchMultiplier: 2,
+                wheelMultiplier: 0.8,
+                stopInertiaOnNavigate: true
+              });
+              lenis.on('scroll', ScrollTrigger.update);
+              gsap.ticker.add(function(time){ lenis.raf(time * 1000); });
+              gsap.ticker.lagSmoothing(0);
+              window.__nxLenis = lenis;
+            }
+
+            // Barra de progreso de scroll (vive en el markup y persiste entre
+            // navegaciones gracias a data-astro-transition-persist)
+            var prog = document.getElementById("nx-scroll-progress");
+            if (prog && !prog.dataset.nxBound) {
+              prog.dataset.nxBound = "1";
+              gsap.to(prog, { scaleX: 1, ease: "none",
+                scrollTrigger: { start: 0, end: "max", scrub: 0.3 } });
+            }
 
             // Cursor glow personalizado (solo en puntero fino)
-            if (window.matchMedia("(pointer: fine)").matches) {
-              var cur = document.createElement("div");
-              cur.id = "nx-cursor";
-              document.body.appendChild(cur);
-              var qx = gsap.quickTo(cur, "x", { duration: 0.18, ease: "power3.out" });
-              var qy = gsap.quickTo(cur, "y", { duration: 0.18, ease: "power3.out" });
-              var shown = false;
-              window.addEventListener("mousemove", function(e){
-                qx(e.clientX); qy(e.clientY);
-                if (!shown) { shown = true; gsap.to(cur, { opacity: 0.6, duration: 0.4 }); }
-              }, { passive: true });
-              document.addEventListener("mouseover", function(e){
-                var t = e.target as Element | null;
-                var hit = t && t.closest ? t.closest("a, button, .nx-card, input, kbd") : null;
-                gsap.to(cur, { scale: hit ? 2.3 : 1, opacity: hit ? 0.95 : 0.6,
-                  duration: 0.3, ease: "power2.out" });
-              });
+            if (!REDUCED && window.matchMedia("(pointer: fine)").matches) {
+              var cur = document.getElementById("nx-cursor");
+              if (cur && !cur.dataset.nxBound) {
+                cur.dataset.nxBound = "1";
+                var qx = gsap.quickTo(cur, "x", { duration: 0.18, ease: "power3.out" });
+                var qy = gsap.quickTo(cur, "y", { duration: 0.18, ease: "power3.out" });
+                var shown = false;
+                window.addEventListener("mousemove", function(e){
+                  qx(e.clientX); qy(e.clientY);
+                  if (!shown) { shown = true; gsap.to(cur, { opacity: 0.6, duration: 0.4 }); }
+                }, { passive: true });
+                document.addEventListener("mouseover", function(e){
+                  var t = e.target as Element | null;
+                  var hit = t && t.closest ? t.closest("a, button, .nx-card, input, kbd") : null;
+                  gsap.to(cur, { scale: hit ? 2.3 : 1, opacity: hit ? 0.95 : 0.6,
+                    duration: 0.3, ease: "power2.out" });
+                });
+              }
             }
 
             // Botón volver arriba con anillo de progreso
             var topBtn = document.getElementById("nx-top");
-            if (topBtn) {
-              gsap.fromTo(topBtn, { autoAlpha: 0, y: 14 },
-                { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out",
-                  scrollTrigger: { start: 400, toggleActions: "play none none reverse" } });
-              gsap.to("#nx-top .nx-top-ring", { strokeDashoffset: 0, ease: "none",
-                scrollTrigger: { start: 0, end: "max", scrub: 0.4 } });
+            if (topBtn && !topBtn.dataset.nxBound) {
+              topBtn.dataset.nxBound = "1";
+              if (REDUCED) {
+                // Sin animación: se muestra directo al llegar a 400px
+                gsap.set(topBtn, { autoAlpha: 1 });
+                topBtn.style.opacity = "";
+              } else {
+                gsap.fromTo(topBtn, { autoAlpha: 0, y: 14 },
+                  { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out",
+                    scrollTrigger: { start: 400, toggleActions: "play none none reverse" } });
+                gsap.to("#nx-top .nx-top-ring", { strokeDashoffset: 0, ease: "none",
+                  scrollTrigger: { start: 0, end: "max", scrub: 0.4 } });
+              }
               topBtn.addEventListener("click", function(){
                 if (window.__nxLenis) window.__nxLenis.scrollTo(0, { duration: 1.2 });
-                else window.scrollTo({ top: 0, behavior: "smooth" });
+                else window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" });
               });
             }
           }
 
           // ── Revelado al scroll (por página) ──
-          gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
+          // Sin GSAP o con movimiento reducido el CSS ya muestra el contenido.
+          if (!REDUCED) gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
             track(gsap.fromTo(el,
               { opacity: 0, y: 24 },
               { opacity: 1, y: 0, duration: 0.7, ease: "power3.out",
@@ -207,7 +401,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           });
 
           // Hero home (el h1 lo anima SplitText en index.astro)
-          if (window.location.pathname === "/"){
+          if (!REDUCED && window.location.pathname === "/"){
             var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
             tl.from(".nx-badge", { y: 20, opacity: 0, duration: 0.6 })
               .from("p.mt-4.max-w-xl", { y: 20, opacity: 0, duration: 0.6 }, "-=0.3")
@@ -222,7 +416,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           }
 
           // Stats home
-          if (window.location.pathname === "/"){
+          if (!REDUCED && window.location.pathname === "/"){
             gsap.utils.toArray("section.mx-auto.max-w-6xl.px-6.pb-4 .nx-card").forEach(function(card){
               var numberEl = card.querySelector("p.font-mono.text-3xl");
               if (!numberEl) return;
@@ -238,7 +432,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           }
 
           // Materia reveals
-          if (/^\/\w+\/\w+\/$/.test(window.location.pathname)){
+          if (!REDUCED && /^\/\w+\/\w+\/$/.test(window.location.pathname)){
             gsap.utils.toArray(".nx-unit-head").forEach(function(el){
               track(gsap.fromTo(el, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out",
                 scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" } }));
@@ -250,7 +444,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           }
 
           // ── Scramble en títulos de sección al entrar en pantalla ──
-          if (window.ScrambleText) {
+          if (!REDUCED && window.ScrambleTextPlugin) {
             gsap.utils.toArray(".nx-section-title").forEach(function(el){
               var full = (el.textContent || "").replace(/\s+/g, " ").trim();
               if (!full) return;
@@ -278,7 +472,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           }
 
           // ── Hover magnético en botones ──
-          gsap.utils.toArray(".nx-btn").forEach(function(btn){
+          if (!REDUCED) gsap.utils.toArray(".nx-btn").forEach(function(btn){
             if (btn.dataset.nxMagBound) return;
             btn.dataset.nxMagBound = "1";
             btn.addEventListener("mousemove", function(e){
@@ -295,7 +489,7 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           });
 
           // ── Tilt 3D en tarjetas ──
-          gsap.utils.toArray(".nx-card").forEach(function(card){
+          if (!REDUCED) gsap.utils.toArray(".nx-card").forEach(function(card){
             if (card.dataset.nxTiltBound) return;
             card.dataset.nxTiltBound = "1";
             card.addEventListener("mousemove", function(e){
@@ -311,10 +505,42 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           });
 
           // ── Parallax de auras al hacer scroll ──
-          gsap.utils.toArray(".nx-aura").forEach(function(a, i){
+          if (!REDUCED) gsap.utils.toArray(".nx-aura").forEach(function(a, i){
             track(gsap.to(a, { top: (i % 2 ? "-=140" : "+=140"), ease: "none",
               scrollTrigger: { start: 0, end: "max", scrub: 1.2 } }));
           });
+
+          // ── Nota: SplitText en el título, reveal en figuras/tablas, ETA y copiar ──
+          if (document.documentElement.classList.contains("nx-note-page")) {
+            nxCopyBind();
+            nxEtaUpdate();
+
+            if (!REDUCED) {
+              // Título de la nota: letras que suben al entrar
+              var noteH1 = document.querySelector<HTMLElement>("article > h1");
+              if (noteH1 && window.SplitText && !noteH1.dataset.nxSplit) {
+                noteH1.dataset.nxSplit = "1";
+                try {
+                  var nh = new window.SplitText(noteH1, { type: "chars,words", charsClass: "nx-char" });
+                  track(gsap.from(nh.chars, {
+                    yPercent: 110, opacity: 0, duration: 0.6,
+                    stagger: 0.016, ease: "power4.out", delay: 0.1
+                  }));
+                } catch(e){}
+              }
+
+              // Figuras, tablas y citas aparecen al llegar
+              gsap.utils.toArray(".note-prose figure, .note-prose table, .note-prose blockquote, .note-prose img")
+                .forEach(function(el){
+                  track(gsap.fromTo(el,
+                    { opacity: 0, y: 22 },
+                    { opacity: 1, y: 0, duration: 0.65, ease: "power3.out",
+                      scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none reverse" }
+                    }
+                  ));
+                });
+            }
+          }
         }
 
         // Re-arranca en cada navegación (ClientRouter) sin duplicar el boot único
@@ -328,6 +554,12 @@ const scope = Astro.url.pathname.split("/").filter(Boolean).slice(0, 2).join("/"
           }
           pageTweens = [];
           initAnimations();
+          // El swap reemplaza todo el body: los triggers guardados miden
+          // posiciones viejas. Se recalculan con el DOM ya montado.
+          if (window.ScrollTrigger) {
+            requestAnimationFrame(function(){ ScrollTrigger.refresh(); });
+            nxEtaUpdate();
+          }
         }
 
         route();
