@@ -62,7 +62,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 >
 > **¿Qué NO hay adentro?**
 > - El video del proyecto (`VideoBSDPrimerParcial.mp4`) quedó fuera por peso y está en `_no-publicar.txt`.
-> - Los diagramas (`.svg`, `.drawio`) no entran acá: están en la carpeta `Diagramas/` y se listan más abajo.
+> - Los diagramas (`.svg`) no entran acá: están en la carpeta `Diagramas/` y se listan más abajo.
 > - El código Python del CRUD (`Crud_Grupo8/*.py`) tampoco entra: queda solo en el vault local.
 
 ### Qué hay en el ZIP, archivo por archivo
@@ -305,7 +305,7 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 >
 > La carpeta `Diagramas/` tiene los modelos Entidad-Relacional, los ejercicios de diagramado
 > resueltos y los diagramas de cada unidad. Abajo están los que se publican desde este índice;
-> en Obsidian además tenés los `.drawio` editables (4 de ellos).
+> todos tienen su fuente `.mmd` editable al lado, así que se pueden re-renderizar.
 
 ### Ejercicios de diagramado resueltos
 
@@ -342,12 +342,31 @@ tags: [indice, base-de-datos, 3er-semestre, unidad0, recursos, ticg1018]
 >
 > | Archivo | Qué es |
 > |---|---|
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-01-entidad-relacion-atributo.drawio.svg]] | Diagrama en notación Chen · Entidad-Relación y atributos. |
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-02-claves.drawio.svg]] | Diagrama en notación Chen · Claves primarias y foráneas. |
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-03-conectividad.drawio.svg]] | Diagrama en notación Chen · Conectividad (1:1, 1:N, N:M). |
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-04-cardinalidad.drawio.svg]] | Diagrama en notación Chen · Cardinalidad de las relaciones. |
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-05-debil-fuerte.drawio.svg]] | Diagrama en notación Chen · Entidades débiles y fuertes. |
-> | [[Unidad 0 - Guias y Ejercicios/Diagramas/drawio-06-leyenda-chen.drawio.svg]] | Diagrama en notación Chen · Leyenda de la notación. |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-01-er.svg]] | Diagrama en notación Chen · Entidad-Relación y atributos. |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-02-graph.svg]] | Diagrama en notación Chen · Claves primarias y foráneas. |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-03-graph.svg]] | Diagrama en notación Chen · Conectividad (1:1, 1:N, N:M). |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-04-graph.svg]] | Diagrama en notación Chen · Cardinalidad de las relaciones. |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-05-graph.svg]] | Diagrama en notación Chen · Entidades débiles y fuertes. |
+> | [[Unidad 0 - Guias y Ejercicios/Diagramas/u0-01-06-graph.svg]] | Diagrama en notación Chen · Leyenda de la notación. |
+
+> [!tip] 🧭 Cómo se leen estos seis diagramas
+>
+> **Se lee así:** los seis diagramas de esta tabla son la **leyenda de la notación Chen**,
+> que es el lenguaje con el que la cátedra te pide dibujar el modelo conceptual. Cada
+> `.svg` tiene su fuente `.mmd` al lado en la carpeta `Diagramas/`, así que si un día
+> cambian los símbolos, se edita el `.mmd` y se vuelve a renderizar.
+>
+> **Por qué importa:** la Unidad 1 entera se entrega en este lenguaje. Si en el parcial
+> dibujas una relación como una entidad, o te olvidas del rombo, el punto se cae por
+> forma aunque el modelo conceptual esté perfecto. Y la diferencia entre **entidad fuerte**
+> y **entidad débil** (rectángulo doble) es la que decide si la clave primaria se hereda
+> o se define: es un detalle de dibujo que **cambia el modelo**.
+>
+> **Ejemplo:** el diagrama `u0-01-05-graph.svg` (débil vs. fuerte) muestra `DEPENDENT`
+> con rectángulo doble y `CLASE` con `PK heredada`: esa diferencia de dibujo es
+> exactamente la que en la Unidad 2 se convierte en "la PK de la tabla hija incluye la
+> PK de la padre". Si en el diagrama no marcas la entidad como débil, la tabla mal
+> diseñada no tiene forma de avisarte del error.
 
 ### Diagramas de trabajo de la Unidad 1 y la Unidad 2
 

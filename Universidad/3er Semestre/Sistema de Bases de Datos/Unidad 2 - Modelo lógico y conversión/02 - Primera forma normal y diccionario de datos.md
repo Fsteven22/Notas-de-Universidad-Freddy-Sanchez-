@@ -112,7 +112,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | `direccion` | `varchar(100)` | texto | Dirección de facturación |
 > | `telefono` | `varchar(15)` | 7–15 dígitos | Contacto principal |
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-15-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-15-er.svg]]
 >
 > **Se lee así:** el diagrama es un ERD de **una sola entidad** (`CLIENTE`) donde cada columna lleva **el comentario de la especificación** al lado. `cedula int PK "mayor que 0, unico. Identifica al cliente"`, `nombre string "varchar(50), no vacio. Nombre completo"`, `direccion string "varchar(100). Direccion de facturacion"`, `telefono string "varchar(15), 7 a 15 digitos. Contacto principal"`.
 >
@@ -131,7 +131,7 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > ❌ `CLIENTE(cédula, nombre, teléfonos)` → `teléfonos = "2345, 2654"` (grupo repetitivo)
 > ✅ `TELEFONO(cédula FK, número)` → una fila por teléfono
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-17-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-17-er.svg]]
 >
 > **Se lee así:** el diagrama es **el mismo par `CLIENTE` / `TELEFONO` del ejemplo de arriba**, pero con la relación rotulada simplemente `tiene`. Compáralo con la versión anterior: ahí la etiqueta decía *"un telefono por fila"*; aquí dice `tiene`. Las dos son correctas, pero responder con la segunda es más fácil de leer en un ERD real.
 >
