@@ -189,6 +189,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > Dada la tabla ESTUDIANTE(carnet, nombre, carrera, promedio), escribe en álgebra relacional: obtener los nombres de los estudiantes de Sistemas con promedio mayor a 8.5.
 >
 > > [!success]- ✅ Solución
+> >
 > > π nombre (σ carrera='Sistemas' ∧ promedio>8.5 (ESTUDIANTE))
 > >
 > > **Por qué:** primero filtramos las filas que cumplen ambas condiciones (σ), luego elegimos solo la columna nombre (π).
@@ -200,6 +201,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > Dadas CLIENTE(id, nombre) y PEDIDO(id, cliente_id, fecha), escribe en álgebra relacional: obtener nombre del cliente y fecha de cada pedido.
 >
 > > [!success]- ✅ Solución
+> >
 > > π CLIENTE.nombre, PEDIDO.fecha (σ CLIENTE.id = PEDIDO.cliente_id (CLIENTE × PEDIDO))
 > >
 > > **Por qué:** el producto cruz combina todo con todo, luego la selección filtra solo las combinaciones donde el cliente coincide, y la proyección elige las columnas que interesan.
@@ -211,6 +213,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > Dadas MATERIAS_1ER_SEMESTRE(codigo, nombre) y MATERIAS_2DO_SEMESTRE(codigo, nombre), escribe en álgebra relacional: listar todas las materias que se dan en el año, sin repetir las que se dan en ambos semestres.
 >
 > > [!success]- ✅ Solución
+> >
 > > MATERIAS_1ER_SEMESTRE ∪ MATERIAS_2DO_SEMESTRE
 > >
 > > **Por qué:** la unión combina todas las filas de ambas tablas y elimina duplicados automáticamente.
@@ -222,6 +225,7 @@ tags: [TICG1018, unidad3, algebra-relacional, operadores-basicos, bd]
 > Dadas ESTUDIANTE(carnet, nombre) y MATRICULA(carnet, cod_materia), escribe en álgebra relacional: obtener nombres de estudiantes que NO se han matriculado en ninguna materia.
 >
 > > [!success]- ✅ Solución
+> >
 > > π nombre (ESTUDIANTE) − π nombre (ESTUDIANTE ⨝ MATRICULA)
 > >
 > > **Por qué:** la primera parte trae todos los estudiantes; la segunda, los que sí están matriculados; la diferencia da los que no están en ninguna.

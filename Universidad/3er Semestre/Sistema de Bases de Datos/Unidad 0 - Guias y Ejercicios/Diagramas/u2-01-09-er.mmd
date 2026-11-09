@@ -1,0 +1,18 @@
+erDiagram
+    CLIENTE {
+        idCliente int PK
+        nombre string
+    }
+    RENTAR {
+        idRenta int PK
+        idCliente int PK, FK
+        idPropiedad int PK, FK
+        fechaInicioRenta date
+        fechaFinRenta date
+    }
+    PROPIEDAD {
+        idPropiedad int PK
+        direccion string
+    }
+    CLIENTE ||--o{ RENTAR : realiza
+    PROPIEDAD ||--o{ RENTAR : incluye

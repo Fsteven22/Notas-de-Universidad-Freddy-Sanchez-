@@ -15,16 +15,31 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > - **Implementación:** toda tabla del proyecto sale de DDL.
 > - **Operación diaria:** INSERT, UPDATE, DELETE, SELECT son DML.
 > - **Lección 1 (13-oct):** CREATE TABLE con restricciones, INSERT, UPDATE, DELETE.
-
-> [!example] 📎 Diapositivas de referencia
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/BD04 DDL_dml_create_alter_drop.pdf]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-02-01-graph.svg]]
+>
+> **Se lee así:** DDL responde *"¿cómo es la tabla?"* y DML responde *"¿qué hay en la tabla?"*. Por eso un `CREATE TABLE` va antes que cualquier `INSERT`: si cambias la estructura después, los datos ya guardados dejan de encajar.
+
+> [!info] 📖 El deck de cátedra: los tres lenguajes de SQL (BD04, pp. 7-9)
+> El deck de la unidad de DDL abre con la tabla de los tres lenguajes de SQL y el comando que le corresponde a cada uno.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p7.png]]
+> 
+> **DDL (p. 7):** `CREATE` crea objetos en la base de datos — tablas, vistas, triggers, etc.; `ALTER` modifica un objeto existente (tabla, vista...); `DROP` elimina un objeto.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p8.png]]
+> 
+> **DML (p. 8):** `SELECT` consulta datos en la base de datos, `INSERT` inserta registros en las tablas, `UPDATE` modifica o actualiza datos de las tablas y `DELETE` los elimina.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p9.png]]
+> 
+> **DCL (p. 9):** `GRANT` asigna privilegios a usuarios y `REVOKE` remueve los privilegios asignados.
 
 ---
 
-## 🛠️ DDL — Data Definition Language
+## 📋 Definiciones Formales
 
-### CREATE TABLE
+### 1️⃣ CREATE TABLE — la tabla con su esqueleto
 
 > [!note] 📋 Definición — CREATE TABLE
 >
@@ -40,6 +55,10 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```
 >
 > **Tipos de datos:** `CHAR(n)`, `VARCHAR2(n)`, `INTEGER`, `NUMERIC`, `FLOAT`, `DOUBLE PRECISION`, `DATE`, `TIME`, `TIMESTAMP`, `SERIAL`.
+>
+> **Ejemplos:**
+> - `DEFAULT 'Usuario Final'` — la columna nace con ese valor si el `INSERT` no lo da (deck p. 22).
+> - `PRIMARY KEY` en la misma línea de la columna — la clave en línea, sin tabla aparte.
 
 > [!example] 🧪 Ejemplo de CREATE TABLE
 >
@@ -60,8 +79,31 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 >   CONSTRAINT cons1 CHECK (did > 100 AND nombre <> ' ')
 > );
 > ```
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-02-02-er.svg]]
+>
+> **Se lee así:** el diagrama es el mismo `films`/`distribuidores` del código — `FILM.did` es FK a `DISTRIBUIDOR.did`. Lo que el diagrama **no** muestra son las restricciones: el `CHECK (did > 100 AND nombre <> ' ')` vive en el SQL, no en el modelo.
 
-### Restricciones de Columna y de Tabla
+> [!info] 📖 El deck de cátedra: la sintaxis del CREATE TABLE (BD04, pp. 22-25)
+> El deck separa la sintaxis en tres láminas: la forma general, las restricciones de columna y las de tabla.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p22.png]]
+> 
+> **La forma general (p. 22):** `CREATE TABLE <tbl_name> (<def_col1, def_col2,... restricc_tbl>)`, con cada columna como `<col_name> <col_tipoDato> [DEFAULT def_value] [restricc_col]`. El `DEFAULT` *"agrega un valor a la columna en caso de que no se defina durante el ingreso del registro"*.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p23.png]]
+> 
+> **Restricciones de columna (p. 23):** `NOT NULL`, `UNIQUE`, `PRIMARY KEY` y `CHECK` se declaran junto a la columna que restringen.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p24.png]]
+> 
+> **Restricciones de tabla (p. 24):** `UNIQUE (col1, col2, ...)`, `PRIMARY KEY (col1, col2, ...)` y `FOREIGN KEY` se declaran al final, cuando afectan a varias columnas.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p25.png]]
+> 
+> **Los ejemplos del deck (p. 25):** `films` con su `UNIQUE(fecha_prod)` y su FK a `distribuidores`, y `distribuidores` con el `CHECK` que exige `did > 100` y un nombre no vacío. Son los mismos dos `CREATE TABLE` de arriba.
+
+### 2️⃣ Restricciones — las reglas que el motor hace cumplir
 
 > [!note] 📋 Definición — Restricciones
 >
@@ -74,6 +116,10 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > | `CHECK` | Los valores cumplen una condición específica |
 > | `DEFAULT` | Valor por defecto si no se especifica uno |
 > | `INDEX` | Índice para recuperar datos rápidamente |
+>
+> **Dos niveles:**
+> - **De columna:** se escribe junto al tipo → `titulo VARCHAR(40) NOT NULL`.
+> - **De tabla:** se escribe al final del `CREATE TABLE` → `CONSTRAINT production UNIQUE(fecha_prod)`.
 
 > [!example] 🧪 Ejemplo de restricciones
 >
@@ -100,8 +146,25 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 >   FOREIGN KEY (bid) REFERENCES Botes
 > );
 > ```
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-02-03-er.svg]]
+>
+> **Se lee así:** `Reservacion` no tiene clave única de una sola columna: su PK es **compuesta** `(sid, bid, dia)`. El diagrama lo muestra con las tres columnas marcadas como PK — significa que la combinación identifica la fila, no cada columna por separado. Un marinero puede reservar muchos botes y un bote muchos marineros, pero no el mismo bote el mismo día dos veces.
+>
+> **Por qué importa:** la PK compuesta es la diferencia entre "una reserva" y "un par de claves que se repiten". Si dejas `sid` y `bid` sueltos, el motor acepta la fila duplicada y tu conteo de reservas miente.
 
-### ALTER TABLE
+> [!info] 📖 El deck de cátedra: el caso de las tres tablas (BD04, pp. 26-27)
+> El deck da los datos y el DDL de las mismas tres tablas del ejemplo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p26.png]]
+> 
+> **Los datos (p. 26):** Marineros (sid, snombre, rating, edad), Botes (bid, bnombre, color) y Reservacion (sid, bid, dia) con sus filas — la tabla `Reservacion` es la que se repite por día.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p27.png]]
+> 
+> **El DDL (p. 27):** `CREATE TABLE Marineros`, `CREATE TABLE Botes` y `CREATE TABLE Reservacion` con la PK compuesta y las dos FKs.
+
+### 3️⃣ ALTER TABLE — cambiar la estructura con datos dentro
 
 > [!note] 📋 Definición — ALTER TABLE
 >
@@ -112,6 +175,11 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > ALTER TABLE nombre_tabla {ADD | MODIFY | DROP} elemento [definicion];
 > ```
+>
+> **Ejemplos:**
+> - `ADD` — agrega columna o restricción.
+> - `MODIFY` — cambia el tipo de una columna.
+> - `DROP` — elimina columna o restricción.
 
 > [!example] 🧪 Ejemplos de ALTER TABLE
 >
@@ -122,8 +190,19 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ALTER TABLE Films DROP COLUMN genero;
 > ALTER TABLE Botes ADD CONSTRAINT con CHECK (edad < 100);
 > ```
+>
+> **Se lee así:** `ALTER` y `DROP` no se escriben igual. `DROP COLUMN genero` borra la columna; `DROP CONSTRAINT cons1` borra la regla, no el dato. El primero elimina información; el segundo abre la puerta a que la información que ya estaba sea inválida.
 
-### DROP TABLE
+> [!info] 📖 El deck de cátedra: el ALTER TABLE (BD04, p. 31)
+> El deck presenta el ALTER como un comando más de DDL, con su forma general y ejemplos.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p31.png]]
+> 
+> **La forma (p. 31):** `ALTER <elemento> <nombre> <specification1>, <especification2>,...` — por eso el `ALTER TABLE` admite **varias** especificaciones separadas por coma en un solo statement.
+> 
+> **Los ejemplos (p. 31):** `ALTER TABLE Botes ADD Edad INT`, `ALTER TABLE Marineros MODIFY rating REAL`, `ALTER TABLE Films DROP COLUMN genero` y `ALTER TABLE Botes ADD CONSTRAINT con CHECK (...)`.
+
+### 4️⃣ DROP TABLE — sin marcha atrás
 
 > [!note] 📋 Definición — DROP TABLE
 >
@@ -134,18 +213,45 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > DROP TABLE nombre_tabla;
 > ```
+>
+> **Ejemplo:**
+> - `DROP TABLE films;` — borra la tabla y todas sus filas.
 
 > [!example] 🧪 Ejemplo de DROP TABLE
 >
 > ```sql
 > DROP TABLE films;
 > ```
+>
+> **Por qué importa:** el deck lo dice literal — *"no tiene marcha atrás"*. No hay `UNDO TABLE`. Si necesitas deshacer, la única salida es un backup, y por eso el `DROP` se escribe al final del ciclo de vida de una tabla, nunca al principio.
 
----
+> [!info] 📖 El deck de cátedra: el DROP (BD04, pp. 29-30)
+> El deck dedicó dos láminas al borrado de objetos.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p29.png]]
+> 
+> **La advertencia (p. 29):** *"Sintáxis para el borrado de un elemento: no tiene marcha atrás"*, con `DROP TABLE films;` como ejemplo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p30.png]]
+> 
+> **La familia de comandos (p. 30):** el DROP no es solo de tablas — también de base de datos (`DROP DATABASE`), índices (`DROP INDEX`), triggers (`DROP TRIGGER`) y procedimientos (`DROP PROCEDURE`).
 
-## 🛠️ DML — Data Manipulation Language
+### 5️⃣ DML — INSERT, UPDATE, DELETE y SELECT
 
-### INSERT
+> [!note] 📋 Definición — DML (INSERT, UPDATE, DELETE, SELECT)
+>
+> El DML manipula los **datos** que viven dentro de una tabla ya definida. Son cuatro comandos con una diferencia clave: **qué filas tocan**.
+>
+> | Comando | Qué hace | Si omitas el `WHERE` |
+> |---|---|---|
+> | `INSERT` | Inserta registros en la tabla | — (no aplica) |
+> | `UPDATE` | Modifica o actualiza datos existentes | Modifica **todas** las filas |
+> | `DELETE` | Elimina datos existentes | Borra **todas** las filas |
+> | `SELECT` | Consulta datos en la base de datos | Devuelve toda la tabla |
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-02-05-graph.svg]]
+>
+> **Se lee así:** `INSERT` **agrega** filas, `UPDATE` **cambia** filas existentes y `DELETE` **quita** filas. `SELECT` no modifica nada: es la operación más usada del DML y la única de las cuatro que no toca el estado de la tabla.
 
 > [!note] 📋 Definición — INSERT
 >
@@ -156,6 +262,12 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > INSERT INTO nombreTabla[(lista_columnas)] VALUES (lista_valores);
 > ```
+>
+> **Reglas del deck:**
+> - El número de ítems debe ser el mismo de las columnas.
+> - Correspondencia directa entre nombre de columna y lista de valores.
+> - Los valores deben ser compatibles en tipo de dato.
+> - La lista de columnas es opcional: si se omite, se asume el orden usado para crear la tabla.
 
 > [!example] 🧪 Ejemplos de INSERT
 >
@@ -165,8 +277,8 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > INSERT INTO Tarjeta (idTarjeta, nombre_tarjeta, numero_tarjeta, fecha_expiracion)
 > VALUES (2, 'Vanessa E', '00112233445567', '2019-07-01');
 > ```
-
-### UPDATE
+>
+> **Se lee así:** las dos formas son equivalentes **si** el orden de las columnas coincide con el de la definición. En cuanto la tabla crezca o cambie el orden, la segunda forma es la segura: nombra las columnas y no depende de memorizar posiciones.
 
 > [!note] 📋 Definición — UPDATE
 >
@@ -177,14 +289,18 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > UPDATE nombre_tabla SET columna1 = valor1 [, columna2 = valor2, ...] WHERE condición;
 > ```
+>
+> **Reglas del deck:**
+> - Los nuevos valores deben ser compatibles con el tipo de la columna.
+> - El `WHERE` es opcional: si se omite, se modifican **TODAS** las filas.
 
 > [!example] 🧪 Ejemplo de UPDATE
 >
 > ```sql
 > UPDATE empleado SET salario = 5000 WHERE id = 1;
 > ```
-
-### DELETE
+>
+> **Por qué importa:** el deck muestra los dos casos — `UPDATE COSTUMERS SET CREDITLIMIT = CREDITLIMIT*1.12` (modificación de **todos** los registros) y el mismo UPDATE con `WHERE CUSTOMERNUMBER=103` (modificación de **filas**). Un `UPDATE` sin `WHERE` es el error más caro de la unidad.
 
 > [!note] 📋 Definición — DELETE
 >
@@ -195,16 +311,20 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > DELETE FROM nombre_tabla WHERE condición;
 > ```
+>
+> **Reglas del deck:**
+> - El `WHERE` es opcional: si se omite, se borran **todas** las filas.
+> - Si se especifica, borra las filas que cumplen con la condición.
 
 > [!example] 🧪 Ejemplo de DELETE
 >
 > ```sql
 > DELETE FROM empleado WHERE id = 1;
 > ```
+>
+> **Se lee así:** `DELETE FROM COSTUMERS` borra todos los registros; `DELETE FROM COSTUMERS WHERE CUSTOMERNUMBER=102` borra registros específicos. El `WHERE` es la única diferencia entre las dos — y entre una prueba y un incidente.
 
-### SELECT básico
-
-> [!note] 📋 Definición — SELECT
+> [!note] 📋 Definición — SELECT básico
 >
 > Consulta datos en la base de datos. Es la operación más usada de DML.
 >
@@ -219,10 +339,50 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > ```sql
 > SELECT ID, name, dept_name FROM instructor WHERE name LIKE 'A%';
 > ```
+>
+> **Ejemplos:**
+> - `LIKE 'A%'` — nombres que **empiezan** con A (`%` = cualquier secuencia).
+> - `LIKE 'A_'` — nombres de exactamente dos caracteres que empiezan con A (`_` = un solo carácter).
+> - `LIKE '%a'` — nombres que **terminan** en a.
+
+> [!info] 📖 El deck de cátedra: el DML en detalle (BD04, pp. 34-35, 39, 43)
+> El deck dedicó cuatro láminas al DML: la síntesis, las reglas del INSERT, el UPDATE y el DELETE.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p34.png]]
+> 
+> **La síntesis (p. 34):** `INSERT` ingresa datos (filas) a la base de datos; `UPDATE` modifica datos de las filas dependiendo de una condición; `DELETE` elimina filas de una tabla.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p35.png]]
+> 
+> **Las reglas del INSERT (p. 35):** *"el número de ítems debe ser el mismo de las columnas"*, con correspondencia directa entre nombre de columna y lista de valores y compatibilidad de tipos.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p39.png]]
+> 
+> **El UPDATE (p. 39):** `UPDATE nombreTabla SET columna1 = valor1 [,columna2 = valor2...] WHERE condicion` — y la advertencia de que sin `WHERE` se modifican todas las filas.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-04-p43.png]]
+> 
+> **El DELETE (p. 43):** `DELETE FROM nombreTabla WHERE condicion` — *"si se omite: se borran todas las filas"*.
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 🔄 El ciclo de vida de una tabla
+
+> [!note] 📋 El orden que no se negocia
+>
+> 1. `CREATE TABLE` — la tabla existe con su esqueleto y sus reglas.
+> 2. `INSERT` — llegan las filas.
+> 3. `ALTER TABLE` — la estructura cambia (y hay que revisar qué datos quedan fuera).
+> 4. `UPDATE` / `DELETE` — los datos cambian o desaparecen.
+> 5. `DROP TABLE` — la tabla se va, sin marcha atrás.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-02-04-flow.svg]]
+>
+> **Por qué importa:** casi todos los errores de esta unidad son errores de **orden**. Un `INSERT` antes del `CREATE` no tiene tabla donde insertar; un `DROP` antes del `DROP`… no. El ciclo se lee de izquierda a derecha como se lee el SQL de un proyecto real.
+
+---
+
+## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — Crear una tabla con restricciones
 
@@ -316,6 +476,17 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Diapositivas `BD04 DDL_dml_create_alter_drop.pdf` — Data Definition Language (DDL) y Data Manipulation Language (DML), 45 láminas (pp. 7-9, 21-31, 34-44).
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 8 — el modelo relacional y el lenguaje SQL.
+> - Guía: [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — 17 ejercicios resueltos de SQL real.
+> - Diagramas propios: `u4-02-01-graph` (DDL vs DML), `u4-02-02-er` (films/distribuidores), `u4-02-03-er` (Marineros/Botes/Reservacion), `u4-02-04-flow` (ciclo de vida), `u4-02-05-graph` (árbol DML).
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u4
@@ -331,8 +502,9 @@ tags: [TICG1018, unidad4, sql, ddl, dml, create, alter, drop, insert, update, de
 > - ¿PRIMARY KEY?::NOT NULL + UNIQUE; identifica cada fila.
 > - ¿FOREIGN KEY?::Referencia la PK de otra tabla; integridad referencial.
 > - ¿CHECK?::Los valores deben cumplir una condición específica.
-
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+> - ¿PK compuesta?::Varias columnas que juntas identifican la fila (ej. sid, bid, dia).
+> - ¿UPDATE sin WHERE?::Modifica TODAS las filas de la tabla.
+> - ¿DELETE sin WHERE?::Borra TODAS las filas de la tabla.
 
 ---
 

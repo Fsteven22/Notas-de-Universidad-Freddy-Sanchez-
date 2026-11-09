@@ -1,0 +1,9 @@
+flowchart TB
+    Q["Pides el QUÉ<br/>SELECT nombre FROM empleado"] --> O["El optimizador<br/>decide el CÓMO"]
+    O --> P["Plan de ejecución<br/>índices, joins, orden"]
+    P --> R["Resultado"]
+    R --> D{"¿El plan es<br/>el esperado?"}
+    D -->|"sí"| F["Listo"]
+    D -->|"no"| X["❌ Reescribe la consulta<br/>o revisa el índice"]
+    X --> O
+    style D fill:#fff4e1

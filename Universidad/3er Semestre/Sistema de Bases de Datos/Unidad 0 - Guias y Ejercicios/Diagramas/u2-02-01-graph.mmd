@@ -1,0 +1,10 @@
+flowchart LR
+    E["Entidad"]
+    T["Tabla"]
+    V{"¿Fiel?<br/>sin repetidos"}
+    O["✅ 1FN"]
+    R["❌ Formulario<br/>disfrazado"]
+    E --> T
+    T --> V
+    V -->|"Si"| O
+    V -->|"No"| R

@@ -1,0 +1,12 @@
+erDiagram
+    EDIFICIO {
+        idEdificio int PK
+        nombre string
+        direccion string
+    }
+    DEPARTAMENTO {
+        idEdificio int PK, FK
+        hab_num int PK
+        piso int
+    }
+    EDIFICIO ||--o{ DEPARTAMENTO : contiene

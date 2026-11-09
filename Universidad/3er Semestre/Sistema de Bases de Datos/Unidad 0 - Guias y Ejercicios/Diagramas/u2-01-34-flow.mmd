@@ -1,0 +1,14 @@
+flowchart TB
+    A["Lee el diagrama"]
+    B{"Simbolo en la pata?"}
+    C["Es M:N → intermedia"]
+    D["Es 1:M → FK al lado pata"]
+    E["Es 1:1 → mira el circulo"]
+    F["Caso A: propaga al opcional"]
+    G["Caso C: unifica"]
+    A --> B
+    B -->|"Muchos palitos<br/>los dos lados"| C
+    B -->|"Palito + pata"| D
+    B -->|"Palito + palito"| E
+    E -->|"Hay circulo<br/>un lado"| F
+    E -->|"Sin circulo"| G

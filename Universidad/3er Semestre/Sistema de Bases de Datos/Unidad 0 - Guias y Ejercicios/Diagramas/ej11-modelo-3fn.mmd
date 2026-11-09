@@ -1,0 +1,24 @@
+erDiagram
+    ESTUDIANTE {
+        cod_estud int PK
+        nombre string
+        correo string
+    }
+    MATRICULA {
+        cod_estud int PK, FK
+        cod_curso int PK, FK
+        nota_final float
+    }
+    CURSO {
+        cod_curso int PK
+        nombre string
+        horas int
+        cod_instructor int FK
+    }
+    INSTRUCTOR {
+        cod_instructor int PK
+        nombre string
+    }
+    ESTUDIANTE ||--o{ MATRICULA : se-matricula
+    CURSO ||--o{ MATRICULA : recibe
+    INSTRUCTOR ||--o{ CURSO : dicta

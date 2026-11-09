@@ -1,0 +1,17 @@
+erDiagram
+    PRODUCTO {
+        id_receta int PK
+        nombre string
+        precio float
+    }
+    DETALLE_ING {
+        id_receta int PK, FK
+        ingrediente string PK
+        cantidad string
+    }
+    DETALLE_ETAPA {
+        id_receta int PK, FK
+        etapa string PK
+    }
+    PRODUCTO ||--o{ DETALLE_ING : lleva
+    PRODUCTO ||--o{ DETALLE_ETAPA : sigue

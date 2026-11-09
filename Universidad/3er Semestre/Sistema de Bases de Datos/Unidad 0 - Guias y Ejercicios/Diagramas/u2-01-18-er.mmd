@@ -1,0 +1,7 @@
+erDiagram
+    EMPLEADO {
+        idEmpleado int PK
+        nombre string
+        idSupervisor int FK
+    }
+    EMPLEADO ||--o{ EMPLEADO : supervisa

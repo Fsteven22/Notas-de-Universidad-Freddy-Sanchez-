@@ -1,0 +1,19 @@
+erDiagram
+    EMPLEADO {
+    }
+    VENTA {
+    }
+    VEHICULO {
+    }
+    TENENCIA {
+    }
+    PROPIETARIO {
+    }
+    GASOLINERA {
+    }
+    EMPLEADO ||--o{ EMPLEADO : supervisa
+    EMPLEADO ||--o{ VENTA : realiza
+    VEHICULO ||--o{ TENENCIA : tiene
+    PROPIETARIO ||--o{ TENENCIA : posee
+    VENTA ||--o| TENENCIA : facturada-a
+    GASOLINERA ||--o{ VENTA : despacha

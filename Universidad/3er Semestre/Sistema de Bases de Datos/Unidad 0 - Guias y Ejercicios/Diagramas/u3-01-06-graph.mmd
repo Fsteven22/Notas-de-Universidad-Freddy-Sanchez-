@@ -1,0 +1,8 @@
+flowchart LR
+    A["AEROLINEA<br/>{Avianca, Latam, Copa}"]
+    R["A − B = {Copa}"]
+    B["VUELO<br/>σ hora_salida=HOY<br/>{Avianca, Latam}"]
+    N["Copa está en AEROLINEA<br/>pero no en VUELO de hoy"]
+    A -->|"−"| R
+    B -->|"−"| R
+    R --> N

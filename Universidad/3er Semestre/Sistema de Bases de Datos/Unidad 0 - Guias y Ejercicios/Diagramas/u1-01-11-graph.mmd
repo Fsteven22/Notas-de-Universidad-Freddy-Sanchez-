@@ -1,0 +1,12 @@
+flowchart TB
+    P["PROFESOR<br/> idProf"]
+    D{"dicta<br/>1:M"}
+    M["MATERIA<br/> codigo"]
+    T{"toma<br/>M:N"}
+    E["ESTUDIANTE<br/> carnet"]
+    A1["nombre"]
+    P -->|"(1,1)"| D
+    D -->|"(0,N)"| M
+    E -->|"(0,N)"| T
+    T -->|"(0,N)"| M
+    E --> A1

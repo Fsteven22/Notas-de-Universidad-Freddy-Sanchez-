@@ -1,0 +1,9 @@
+flowchart TB
+    A["FROM<br/>de dónde saco las filas"] --> B["WHERE<br/>filtro de filas"]
+    B --> C["GROUP BY<br/>agrupa por columna"]
+    C --> D["HAVING<br/>filtra grupos"]
+    D --> E["SELECT<br/>elige columnas y agrega"]
+    E --> F["ORDER BY<br/>ordena"]
+    F --> G["LIMIT<br/>recorta"]
+    style B fill:#e1f5ff
+    style D fill:#fff4e1

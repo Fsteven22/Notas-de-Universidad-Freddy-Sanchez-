@@ -1,0 +1,6 @@
+flowchart TB
+    F["Fila de la tabla exterior"] --> C["Subconsulta correlacionada<br/>usa el valor de esa fila"]
+    C --> R{"¿Hay coincidencia?"}
+    R -->|"sí"| K["La fila entra al resultado"]
+    R -->|"no"| N["La fila se descarta"]
+    style R fill:#fff4e1

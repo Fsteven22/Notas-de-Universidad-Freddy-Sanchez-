@@ -16,11 +16,10 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > - **Consultas agregadas:** promedios, conteos, sumas por grupo.
 > - **Ordenamiento:** ordenar resultados ascendente/descendente.
 > - **Lección 1 (13-oct):** ρ para alias, γ para agregación, τ para orden.
-
-> [!example] 📎 Diapositivas de referencia
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/3.4 Operaciones Derivadas-agregacion.pdf]]
-> ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/2026_1PAO_slides5_1_TICG1018.pdf]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-03-04-graph.svg]]
+>
+> **Se lee así:** los tres operadores de esta nota son **equivalencias**, no traducciones literales. ρ es un `AS`, γ es un `GROUP BY` con función de agregación, y τ es un `ORDER BY`. Cuando aprendes álgebra relacional aprendes tres formas de decir lo mismo que SQL ya dice — y por eso el examen pregunta *"¿qué equivalente en SQL tiene esta expresión?"*.
 
 ---
 
@@ -35,6 +34,10 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > **Sintaxis:** `ρ alias(expresión)` o `ρ nuevo_nombre(relación)`
 >
 > **SQL mental:** `AS`
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-03-01-graph.svg]]
+>
+> **Se lee así:** ρ **duplica** la relación con un nombre nuevo — no la modifica. Por eso `ρ S(AEROPUERTO)` y `ρ L(AEROPUERTO)` son dos copias distintas del mismo conjunto de filas, y el self-join es posible: sin ρ, la tabla no podría aparecer dos veces en la misma expresión con atributos distinguibles.
 
 > [!example] 🧪 Ejemplo de renombre (self-join)
 >
@@ -44,7 +47,12 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 >
 > Ahora `S` y `L` son dos copias distintas de la misma tabla, y puedes comparar `S.pais = L.pais ∧ S.ciudad ≠ L.ciudad`.
 
----
+> [!info] 📖 El deck de cátedra: el renombramiento (slides05, p. 27)
+> La última lámina del deck define el operador ρ con la misma fórmula que esta nota.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p27.png]]
+> 
+> **Renombramiento (p. 27):** *"permite renombrar atributos y relaciones. Asigna el nombre S a la relación resultante de la expresión E, y los nombres a1, a2, ... , ak a sus atributos"* — el `S` del deck es exactamente el `S` del self-join de arriba.
 
 ### 2️⃣ Agregación γ
 
@@ -55,6 +63,10 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > **Sintaxis:** `γ columnas_de_agrupación; función1 → atributo1, función2 → atributo2 (relación)`
 >
 > **Funciones:** COUNT, SUM, AVG, MIN, MAX.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-03-02-graph.svg]]
+>
+> **Se lee así:** γ tiene dos mitades: **dónde agrupas** (la columna o columnas de agrupamiento) y **qué calculas** (las funciones). Sin columna de agrupamiento, γ opera sobre toda la relación como un único grupo — el agregado global.
 
 > [!example] 🧪 Ejemplo de agregación
 >
@@ -69,17 +81,24 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 >
 > `γ avg(edad) (σ rating=10 (Marinero))` calcula la edad promedio de marineros con rating 10.
 
-> [!info] 📖 El deck de cátedra: agregaciones (slides05, pp. 23-26)
->
-> El deck del Ing. Magallanes cierra el módulo de álgebra con agregaciones y agrupamiento.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p23.png]]
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p24.png]]
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p26.png]]
-
-> **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el agrupamiento aplica la función por grupos de datos.
-
----
+> [!info] 📖 El deck de cátedra: las agregaciones (slides05, pp. 23-26)
+> El deck del Ing. Magallanes dedica cuatro láminas a la operación gamma: qué es, qué funciones tiene, cómo se pregunta y cómo se agrupa.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p23.png]]
+> 
+> **Agregaciones (p. 23):** la lámina introduce la **Operación Gamma (γ)** — la que agrupa y aplica una función de agregación sobre el grupo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p24.png]]
+> 
+> **Funciones de agregación (p. 24):** *"la función de agregación suma, toma la columna ratings de la relación R y suma la colección de valores: G sum(rating) (R)"* — y la regla general: **γ** significa aplicar una función de agregación a un grupo de tuplas.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p25.png]]
+> 
+> **Ejemplos de preguntas (p. 25):** *"¿Cuántos marineros hay?: G count(mid) (Marinero)"*, *"la edad promedio de los marineros con rating 10: G avg(edad) (σ rating=10 (Marinero))"* — el deck combina agregación con selección en una sola línea.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p26.png]]
+> 
+> **Agrupamiento (p. 26):** *"la función de agregación se puede aplicar por grupos de datos, de acuerdo a la columna o columnas especificadas"* — es la γ con más de una columna de agrupamiento.
 
 ### 3️⃣ Orden τ
 
@@ -90,6 +109,10 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > **Sintaxis:** `τ columna asc/desc (relación)`
 >
 > **SQL mental:** `ORDER BY columna ASC / DESC`
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-03-03-graph.svg]]
+>
+> **Se lee así:** τ es el único operador de la unidad que **no cambia el conjunto de datos**: las mismas filas, en otro orden. Por eso puede ir al final de la cadena sin alterar el resultado — y por eso el SQL lo pone al final por convención.
 
 > [!example] 🧪 Ejemplo de orden
 >
@@ -116,10 +139,12 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > O equivalentemente, con agregación:
 >
 > `π DESCRIPCION (σ PRECIO = γ MAX(PRECIO) (PRODUCTO) (PRODUCTO))`
+>
+> **Se lee así:** las dos versiones devuelven lo mismo con operadores distintos — una **ordena y toma el primero**, la otra **calcula el máximo y filtra**. La segunda no necesita τ, y por eso no depende de que el orden esté bien definido.
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — Renombre para self-join
 
@@ -206,6 +231,18 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Diapositivas `2026_1PAO_slides5_1_TICG1018.pdf` — Álgebra Relacional, pp. 23-27 (agregaciones, agrupamiento y renombramiento).
+> - Diapositivas `3.4 Operaciones Derivadas-agregacion.pdf` — módulo de operaciones derivadas y agregación.
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 8 — álgebra relacional y sus equivalencias en SQL.
+> - Guía: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] — ejercicios resueltos de renombre y agregación.
+> - Diagramas propios: `u3-03-01-graph` (ρ y self-join), `u3-03-02-graph` (γ), `u3-03-03-graph` (τ), `u3-03-04-graph` (ρ/γ/τ y su equivalente SQL).
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u3
@@ -220,8 +257,8 @@ tags: [TICG1018, unidad3, algebra-relacional, renombre, agregacion, orden, bd]
 > - ¿Equivalente SQL de γ?::GROUP BY con funciones de agregado.
 > - ¿Equivalente SQL de τ?::ORDER BY.
 > - ¿Operadores son cerrados?::Sí, el resultado de uno es entrada del siguiente.
-
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+> - ¿Sintaxis de γ?::γ col_agrup; función → atributo (relación).
+> - ¿τ cambia los datos?::No, solo el orden de las filas.
 
 ---
 

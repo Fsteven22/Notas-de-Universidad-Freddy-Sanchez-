@@ -73,6 +73,22 @@ def raiz_por_defecto():
     return os.path.dirname(os.path.dirname(aqui))              # ...\Universidad
 
 
+def perfil_nota(nota_path, rel):
+    """Perfil de la nota: 'clase' (leccion), 'guia' (guia de problemas) o 'indice'.
+
+    Las notas de clase replican la nota de referencia U1/01 completa (8 secciones H2).
+    Las guias de problemas son recopilaciones de ejercicios: exigen menos secciones.
+    Los indices/mapas/syllabus no exigen secciones, solo formato.
+    """
+    base = os.path.basename(nota_path).lower()
+    if base.startswith("guía de problemas") or base.startswith("guia de problemas"):
+        return "guia"
+    carpeta = os.path.basename(os.path.dirname(nota_path)).lower()
+    if re.match(r"^unidad \d+\s*-", carpeta):
+        return "clase"
+    return "indice"
+
+
 def clasifica(rest):
     s = rest.strip()
     if not s:
@@ -160,18 +176,32 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
         if not RE_EMOJI.search(ln1):
             hallazgos.append((rel, h1[0] + 1, "R2-h1-emoji", ln1[:60]))
 
-    # ---------- R3 secciones requeridas
+    # ---------- R3 secciones requeridas (segun perfil de nota)
     h2_textos = []
-    for ln in lineas:
+    h2_lineas = []
+    for i, ln in enumerate(lineas):
         m = RE_H.match(ln)
         if m and len(m.group(1)) == 2:
             h2_textos.append(m.group(2))
+            h2_lineas.append((i, m.group(2)))
     h2_join = "\n".join(h2_textos)
-    for nombre in ("Introducción", "Definiciones Formales", "Ejercicios Propuestos",
-                   "Metas de Aprendizaje", "Referencias", "Repaso SR", "Conexiones",
-                   "Seguir estudiando"):
+    perfil = perfil_nota(nota_path, rel)
+    if perfil == "clase":
+        requeridas = ("Introducción", "Definiciones Formales", "Ejercicios Propuestos",
+                      "Metas de Aprendizaje", "Referencias", "Repaso SR", "Conexiones",
+                      "Seguir estudiando")
+    elif perfil == "guia":
+        requeridas = ("Introducción", "Ejercicios Propuestos", "Referencias",
+                      "Conexiones", "Seguir estudiando")
+    else:  # indice / mapa / syllabus: no exige secciones
+        requeridas = ()
+    for nombre in requeridas:
         if nombre not in h2_join:
-            hallazgos.append((rel, 0, "R3-seccion-falta", nombre))
+            hallazgos.append((rel, 0, "R3-seccion-falta", "%s: %s" % (perfil, nombre)))
+    # cada H2 debe abrir con emoji (como la referencia)
+    for i, tit in h2_lineas:
+        if not RE_EMOJI.search(tit):
+            hallazgos.append((rel, i + 1, "R3-h2-emoji", tit[:50]))
 
     # ---------- R4 todo dentro de callouts
     dentro = {}
@@ -181,6 +211,8 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
     fences = {}
     f = False
     for i, ln in enumerate(lineas):
+        if ln.lstrip().startswith(">"):
+            continue  # un fence de callout no toca el estado top-level
         s = ln.strip()
         if s.startswith("```"):
             fences[i] = not f
@@ -192,6 +224,9 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
         if fm_fin is not None and i <= fm_fin:
             continue  # frontmatter: no es prosa top-level
         if i in fences:
+            # marcador de fence top-level: el de apertura fuera de callout es R4
+            if fences[i] and not dentro.get(i):
+                hallazgos.append((rel, i + 1, "R4-fence-top", ln.strip()[:60]))
             en_fence = fences[i]
             continue
         if en_fence or dentro.get(i):
@@ -283,6 +318,22 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
                 if bad in low:
                     hallazgos.append((rel, i + 1, "R12-ajeno", tgt[:60]))
                     break
+            # material de clase no se embebe (PDF/PPTX/DOC): se capturan sus
+            # paginas como PNG en Archivos/ y se citan con su numero de pagina
+            if low.endswith((".pdf", ".pptx", ".doc", ".docx", ".ppt", ".xlsx")):
+                hallazgos.append((rel, i + 1, "R12-clase-embebida", tgt[:60]))
+                continue
+            # cada SVG embebido debe tener su fuente .mmd al lado (regla del
+            # SVG-Pipeline: el diagrama se puede re-editar y volver a compilar)
+            if low.endswith(".svg"):
+                abs_svg = os.path.join(dir_nota, tgt)
+                if not os.path.isabs(abs_svg):
+                    abs_svg = os.path.normpath(abs_svg)
+                if os.path.isfile(abs_svg):
+                    mmd = os.path.splitext(abs_svg)[0] + ".mmd"
+                    if not os.path.isfile(mmd):
+                        hallazgos.append((rel, i + 1, "R12-svg-sin-mmd",
+                                          "%s sin .mmd fuente" % os.path.basename(abs_svg)))
             try:
                 if existe(os.path.join(dir_nota, tgt)) or existe(os.path.join(raiz, tgt)):
                     continue

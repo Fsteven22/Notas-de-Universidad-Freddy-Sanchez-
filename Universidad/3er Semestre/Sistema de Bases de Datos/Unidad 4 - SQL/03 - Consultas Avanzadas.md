@@ -16,16 +16,23 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > - **Optimización:** índices y EXPLAIN para ver el plan de ejecución.
 > - **Seguridad:** usuarios, permisos por columna, vistas con acceso restringido.
 > - **Lección 1 (13-oct):** JOIN, GROUP BY, HAVING, subquery, UNION.
-
-> [!example] 📎 Diapositivas de referencia
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/SQL Avanzado.pptx]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-03-01-graph.svg]]
+>
+> **Se lee así:** hay dos familias distintas de "juntar" datos. Los **JOIN** pegan tablas **horizontalmente** (una fila de A se une con una de B, Growing el número de columnas); los **operadores de conjuntos** (`UNION`, `INTERSECT`, `EXCEPT`) apilan resultados **verticalmente** (mismas columnas, filas de una consulta encima de otra). Confundirlos es el error más común de la unidad.
+
+> [!info] 📖 El deck de cátedra: el temario de SQL Avanzado (SQL Avanzado, p. 1)
+> El deck que acompaña a esta nota se organiza en tres bloques: vistas, disparadores y procedimientos almacenados.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p1.png]]
+> 
+> **El temario (p. 1):** *Vistas · Disparadores · Procedimientos Almacenados*. Es el orden del deck y el orden en que aparecen las definiciones más abajo.
 
 ---
 
-## 🛠️ JOINs Múltiples y Operadores de Conjuntos
+## 📋 Definiciones Formales
 
-### JOINs
+### 1️⃣ JOIN — unir filas de varias tablas
 
 > [!note] 📋 Definición — JOIN en SQL
 >
@@ -37,6 +44,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > | `LEFT JOIN` | `FROM a LEFT JOIN b ON a.x = b.x` | Todas las de `a`, null en `b` si no casan |
 > | `RIGHT JOIN` | `FROM a RIGHT JOIN b ON a.x = b.x` | Todas las de `b`, null en `a` si no casan |
 > | `SELF JOIN` | `FROM a JOIN a AS b ON ...` | La misma tabla dos veces con alias |
+>
+> **Ejemplos:**
+> - `LEFT JOIN` + `COUNT(i.ID)` — conserva los departamentos sin instructores y cuenta 0, no 1.
+> - `SELF JOIN` — un empleado contra su jefe: `FROM empleado e JOIN empleado j ON e.jefe_id = j.id`.
 
 > [!example] 🧪 Ejemplo de JOIN múltiple
 >
@@ -52,8 +63,8 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > HAVING COUNT(t.ID) > 5
 > ORDER BY estudiantes DESC;
 > ```
-
-### Operadores de Conjuntos
+>
+> **Se lee así:** la misma tabla `course` aparece dos veces con alias distintos (`c` y `pc`): la primera es el curso, la segunda es su prerrequisito. Por eso un JOIN no es "juntar dos tablas" sino **juntar filas** — y `course` se junta consigo misma.
 
 > [!note] 📋 Definición — UNION, INTERSECT, EXCEPT
 >
@@ -63,6 +74,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > | `UNION ALL` | Filas de ambas consultas, con duplicados | `UNION ALL` |
 > | `INTERSECT` | Filas que aparecen en ambas consultas | `INTERSECT` |
 > | `EXCEPT` | Filas de la primera que no están en la segunda | `NOT IN / NOT EXISTS` |
+>
+> **Ejemplos:**
+> - `UNION` vs `UNION ALL` — misma operación, distinta pregunta: ¿"qué filas aparecen" o "cuántas veces aparece cada fila"?
+> - `EXCEPT` — "estudiantes que nunca took un curso" = todos menos los que aparecen en `takes`.
 
 > [!example] 🧪 Ejemplo de INTERSECT
 >
@@ -76,16 +91,20 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 >   SELECT t2.course_id FROM teaches t2
 > ) x ON x.course_id = c.course_id;
 > ```
+>
+> **Por qué importa:** `INTERSECT` **elimina duplicados** implícitamente. Si necesitas contar cuántas veces se repite un `course_id`, `INTERSECT` no sirve: usa `INTERSECT ALL` o cuenta antes de intersectar.
 
----
-
-## 🛠️ GROUP BY y HAVING
+### 2️⃣ GROUP BY y HAVING — el orden de las cláusulas
 
 > [!note] 📋 Definición — GROUP BY y HAVING
 >
 > `GROUP BY` agrupa filas por una columna. `HAVING` filtra grupos (después de agrupar), a diferencia de `WHERE` que filtra filas (antes de agrupar).
 >
 > **Regla rápida:** filtro de fila → `WHERE`; filtro de grupo → `HAVING`.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-03-02-flow.svg]]
+>
+> **Se lee así:** las cláusulas se ejecutan en un orden fijo, no en el que las escribes. `WHERE` filtra **antes** de agrupar (más barato); `HAVING` filtra **después** (solo ve los grupos). Por eso un `HAVING` sobre `AVG(salary) > 70000` no se puede escribir como `WHERE AVG(salary) > ...` — en el `WHERE` todavía no existe el grupo.
 
 > [!example] 🧪 Ejemplo de GROUP BY con HAVING
 >
@@ -98,9 +117,11 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > ORDER BY salario_promedio DESC;
 > ```
 
----
+> [!warning] ⚠️ La columna del GROUP BY y la del SELECT
+>
+> Toda columna del `SELECT` que **no** sea una función de agregación (`AVG`, `COUNT`, `SUM`, `MAX`, `MIN`) tiene que estar en el `GROUP BY`. Si no, el motor no sabe de qué fila tomar el valor y la consulta falla.
 
-## 🛠️ Subconsultas
+### 3️⃣ Subconsultas — una consulta dentro de otra
 
 > [!note] 📋 Definición — Subconsulta
 >
@@ -111,6 +132,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > | Correlacionada | `WHERE` | Se ejecuta por cada fila externa |
 > | No correlacionada | `FROM` o `WHERE` | Se ejecuta una vez |
 > | Escalar | `SELECT` | Devuelve un solo valor |
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-03-03-flow.svg]]
+>
+> **Se lee así:** la subconsulta correlacionada **usa el valor de la fila que se está procesando** (`t.ID = s.ID`). Por eso el motor la reevalúa una vez por cada fila externa: es correcta, pero es la forma más lenta de las tres. Cuando puedas, usa `JOIN` o `EXCEPT`.
 
 > [!example] 🧪 Ejemplo de subconsulta correlacionada
 >
@@ -120,10 +145,12 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > EXCEPT
 > SELECT t.ID FROM takes t;
 > ```
+>
+> **Ejemplos:**
+> - **No correlacionada:** `WHERE salary > (SELECT AVG(salary) FROM instructor)` — el promedio se calcula una vez.
+> - **Escalar:** `SELECT (SELECT COUNT(*) FROM takes) AS total_inscripciones` — devuelve un solo valor.
 
----
-
-## 🛠️ Vistas
+### 4️⃣ Vistas — la consulta guardada con nombre
 
 > [!note] 📋 Definición — VISTA
 >
@@ -135,6 +162,9 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > CREATE VIEW nombre_vista AS
 > SELECT columnas FROM tabla WHERE condición;
 > ```
+>
+> **Ejemplo:**
+> - `CREATE VIEW vista_juegos_populares AS SELECT ...` — cada vez que la consultas, corre la consulta original.
 
 > [!example] 🧪 Ejemplo de vista
 >
@@ -149,14 +179,29 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > HAVING SUM(a.dias_alquilados) > 100
 > ORDER BY numero_alquileres ASC;
 > ```
+>
+> **Se lee así:** la vista no guarda datos: guarda la **consulta**. Por eso necesita los mismos permisos que las tablas base, y por eso una vista con `GROUP BY` + `HAVING` es literalmente la consulta que se re-ejecuta cada vez.
 
 > [!warning] ⚠️ Permisos para crear vistas
 >
 > Crear una vista requiere 3 derechos: SELECT de las tablas base, CREATE VIEW, y SELECT sobre la vista para leerla. Tener SELECT de las tablas base no garantiza poder crear la vista.
 
----
+> [!info] 📖 El deck de cátedra: las vistas (SQL Avanzado, pp. 2-4)
+> El deck define la vista y luego la usa sobre la base de ejemplo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p2.png]]
+> 
+> **La definición (p. 2):** `CREATE VIEW nombre_de_vista [columnas] AS <expresion de consulta>`, *"utilizadas para aumentar las posibilidades de acceso a tablas"*, con el ejemplo de la vista `Rojos` sobre `SELECT B.bid, COUNT(*) AS s...`.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p3.png]]
+> 
+> **Vistas vs tablas (p. 3):** *"parecidas a las tablas, la diferencia es que las vistas son creadas a partir de una consulta"* — no almacenan datos, se calculan.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p4.png]]
+> 
+> **El ejemplo completo (p. 4):** `create view promedios_clientes as select c.first_name as nombres, c.last_name as apellidos, avg(p.amount) as promedios from customer as c inner join payment as p on c.customer_id = p.customer_id group by c.customer_id;` — una vista con JOIN + `AVG` + `GROUP BY`, exactamente el tipo de consulta que acabas de ver.
 
-## 🛠️ Índices y EXPLAIN
+### 5️⃣ Índices y EXPLAIN — acelerar el acceso
 
 > [!note] 📋 Definición — Índice compuesto
 >
@@ -167,6 +212,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > ```sql
 > CREATE INDEX nombre_indice ON tabla (columna1, columna2);
 > ```
+>
+> **Ejemplos:**
+> - `CREATE INDEX idx_nombre_fecha ON alquileres (id_cliente, fecha_alquiler)` — sirve para filtrar por `id_cliente` **y** por el rango de `fecha_alquiler`.
+> - `CREATE INDEX idx (apellido, nombre)` — ese índice **no** sirve para buscar solo por `nombre`.
 
 > [!example] 🧪 Ejemplo de índice compuesto
 >
@@ -187,10 +236,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > |---|---|---|---|---|
 > | Antes | ALL | NULL | miles (scan completo) | Using where |
 > | Después | range | idx_nombre_fecha | pocas (solo el mes) | Using index condition |
+>
+> **Se lee así:** `Type = ALL` es la alarma — el motor leyó toda la tabla. `Type = range` con `Key` poblado significa que el índice se usó y solo se recorrió el rango del mes. Un índice mal ordenado no cambia nada: el `EXPLAIN` sigue diciendo `ALL`.
 
----
-
-## 🛠️ Triggers y Procedimientos
+### 6️⃣ Triggers y procedimientos almacenados
 
 > [!note] 📋 Definición — Trigger
 >
@@ -206,6 +255,11 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 >   -- lógica del trigger
 > END;
 > ```
+>
+> **Ejemplos:**
+> - `BEFORE INSERT` — valida o corrige el valor **antes** de que la fila exista.
+> - `AFTER UPDATE` — recalcula totales **después** de que la fila cambió.
+> - `FOR EACH ROW` — el cuerpo corre una vez por fila afectada.
 
 > [!example] 🧪 Ejemplo de trigger con SIGNAL
 >
@@ -220,6 +274,8 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 >   END IF;
 > END;
 > ```
+>
+> **Se lee así:** `SIGNAL SQLSTATE '45000'` aborta la operación. Un trigger `BEFORE` puede **cancelar** la sentencia; uno `AFTER` ya no puede — para cuando corres, la fila ya está escrita.
 
 > [!note] 📋 Definición — Procedimiento almacenado
 >
@@ -233,10 +289,62 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 >   -- lógica
 > END;
 > ```
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u4-03-04-graph.svg]]
+>
+> **Se lee así:** vista, índice y trigger son tres caras de *"código que vive dentro de la base de datos"*. La **vista** guarda una consulta, el **índice** guarda una estructura de acceso y el **trigger** guarda una reacción automática. El **procedimiento** es el cuarto: guarda lógica de negocio que se invoca a mano con `CALL`.
 
----
+> [!info] 📖 El deck de cátedra: los disparadores (SQL Avanzado, pp. 5-13)
+> El deck dedica nueve láminas a los triggers: qué son, cómo se escriben y cuatro casos reales.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p5.png]]
+> 
+> **Qué es un trigger (p. 5):** *"procedimiento que se ejecuta cuando se cumple una condición establecida al realizar una operación de inserción (INSERT), actualización (UPDATE) o borrado (DELETE)"*, usado para mejorar la administración...
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p6.png]]
+> 
+> **Las dos piezas (p. 6):** la **llamada de activación** es la sentencia que dispara el código; la **restricción** es la condición necesaria para ejecutarlo, y puede ser condicional o de otro tipo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p7.png]]
+> 
+> **La sintaxis (p. 7):** `trigger_time: BEFORE or AFTER` y `trigger_event: INSERT, UPDATE OR DELETE`, seguidos del `CREATE TRIGGER <nombre> ... ON <tabla>` y del `DELIMITER` que delimita el bloque.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p8.png]]
+> 
+> **Un trigger de ejemplo (p. 8):** `CREATE TRIGGER testref BEFORE INSERT ON test1 FOR EACH ROW BEGIN INSERT INTO test2 ...; DELETE FROM test3 ...; UPDATE test4 ...; END` — un solo disparo, varias acciones.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p9.png]]
+> 
+> **Trigger de negocio (p. 9):** `CREATE TRIGGER update_limitecredito BEFORE INSERT ON PEDIDOS` que descuenta `new.IMPORTE` del `LIMITECREDITO` del cliente: la regla de negocio vive en la base de datos, no en la aplicación.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p10.png]]
+> 
+> **Trigger con IF/ELSEIF (p. 10):** `CREATE TRIGGER tr1 BEFORE INSERT ON PAYMENTS` que aplica un 10% de descuento si `new.amount < 100` y pone el importe en 0 si es mayor o igual.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p11.png]]
+> 
+> **Trigger AFTER UPDATE (p. 11):** `CREATE TRIGGER tr4 AFTER UPDATE ON PAYMENTS` que propaga el nuevo saldo al `creditLimit` del cliente.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p12.png]]
+> 
+> **Recalcular un total (p. 12):** `CREATE TRIGGER actualizar_promedio after update on payment` que vuelve a sumar `amount` del cliente y actualiza `totalcliente`.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p13.png]]
+> 
+> **Trigger con tabla temporal (p. 13):** `CREATE TRIGGER insertar_promedio after insert on payment` que cuenta los pagos del cliente en una tabla temporal y, si es el primero, inserta el total en `totalcliente`.
 
-## 🛠️ Usuarios y Permisos (DCL)
+> [!info] 📖 El deck de cátedra: los procedimientos almacenados (SQL Avanzado, pp. 14-15)
+> El deck cierra con el bloque de procedimientos.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p14.png]]
+> 
+> **Qué es un Stored Procedure (p. 14):** *"un programa (o procedimiento) el cual es almacenado físicamente en una base de datos"*. La ventaja: se ejecuta **directamente en el motor**, *"el cual usualmente corre en un servidor separado"*, así que *"solo necesita enviar sus resultados de regreso al usuario, deshaciéndose de la sobrecarga resultante de comunicar grandes cantidades de datos salientes y entrantes"*.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/SQL/bd-sql-avanzado-p15.png]]
+> 
+> **El ejemplo con parámetros (p. 15):** `create procedure calcular_iva(in iva decimal(3,2), in valor decimal(5,2), out resultado decimal)` con `select valor*iva into resultado;`, invocada como `call calcular_iva(0.14, 100.34, @r);` — el `IN` entra, el `OUT` sale, y `@r` es la variable que lo recibe.
+
+### 7️⃣ Usuarios y permisos (DCL)
 
 > [!note] 📋 Definición — GRANT y REVOKE
 >
@@ -246,6 +354,10 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > | `GRANT` | Asigna privilegios a un usuario |
 > | `REVOKE` | Remueve privilegios asignados |
 > | `SHOW GRANTS` | Muestra los permisos de un usuario |
+>
+> **Ejemplos:**
+> - `GRANT SELECT ON sakila.category TO 'fmalo'@'localhost'` — permiso de lectura.
+> - `GRANT EXECUTE ON PROCEDURE ...` — permiso para correr un procedimiento, no para ver sus tablas.
 
 > [!example] 🧪 Ejemplo de GRANT por columnas
 >
@@ -266,7 +378,7 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — JOIN múltiple con agregación
 
@@ -386,6 +498,17 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Diapositivas `SQL Avanzado.pptx` — Vistas, Disparadores y Procedimientos Almacenados (15 láminas).
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 8 — el modelo relacional y el lenguaje SQL.
+> - Guía: [[Guía de Problemas 3 - SQL, PL-SQL y Seguridad]] — 17 ejercicios resueltos con JOIN, triggers, vistas, permisos.
+> - Diagramas propios: `u4-03-01-graph` (joins y operadores de conjuntos), `u4-03-02-flow` (orden de las cláusulas), `u4-03-03-flow` (subconsulta correlacionada), `u4-03-04-graph` (vistas, índices y triggers).
+
+---
+
 ## 🔁 Repaso SR (flashcards)
 
 #flashcards/bd-u4
@@ -402,8 +525,9 @@ tags: [TICG1018, unidad4, sql, consultas-avanzadas, join, group-by, subquery, un
 > - ¿Trigger?::Se ejecuta automáticamente ante INSERT/UPDATE/DELETE.
 > - ¿GRANT por columnas?::Concede SELECT solo de columnas específicas.
 > - ¿EXCEPT?::Filas de la primera consulta que no están en la segunda.
-
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+> - ¿WHEN antes o después del agrupar?::WHERE filtra filas antes; HAVING filtra grupos después.
+> - ¿BEFORE vs AFTER en un trigger?::BEFORE puede cancelar la sentencia; AFTER ya no.
+> - ¿Procedimiento almacenado?::Bloque de código guardado en la BD, con parámetros IN/OUT, se invoca con CALL.
 
 ---
 

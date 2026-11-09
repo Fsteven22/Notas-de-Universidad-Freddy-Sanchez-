@@ -1,0 +1,12 @@
+flowchart LR
+    A["1FN"]
+    B["2FN"]
+    C["3FN"]
+    V1["grupos<br/>repetitivos"]
+    V2["dependencias<br/>parciales"]
+    V3["dependencias<br/>transitivas"]
+    A --> B
+    B --> C
+    A -->|"mide"| V1
+    B -->|"mide"| V2
+    C -->|"mide"| V3

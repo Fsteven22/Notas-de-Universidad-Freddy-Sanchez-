@@ -8,11 +8,17 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por Qué Joins y no solo Producto Cruz?
+>
 > El producto cruz × genera todas las combinaciones (m × n filas), casi nunca lo que quieres. Los joins son derivados del producto cruz + selección + proyección que combinan tablas de forma inteligente: solo las filas que "encajan" por una condición.
+>
 > **Aplicaciones:**
-> - Consultas reales: casi toda consulta SQL usa al menos un join.
-> - Optimización: elegir el join correcto cambia si la consulta corre en milisegundos o en segundos.
-> - Lección 1 (13-oct): natural join, equi join, theta join, left/right outer join.
+> - **Consultas reales:** casi toda consulta SQL usa al menos un join.
+> - **Optimización:** elegir el join correcto cambia si la consulta corre en milisegundos o en segundos.
+> - **Lección 1 (13-oct):** natural join, equi join, theta join, left/right outer join.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-04-graph.svg]]
+>
+> **Se lee así:** todos los joins derivados se pueden escribir como `σ F (A × B)`: el producto cruz genera todo, la selección se queda con lo que empareja y la proyección borra las columnas sobrantes. Lo que cambia entre join y join es **qué** se queda y **qué columnas se borran**.
 
 ---
 
@@ -21,12 +27,15 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 ### 1️⃣ Join Natural ⨝
 
 > [!note] 📋 Definición — Join Natural ⨝
+>
 > El join natural combina dos relaciones sobre atributos con el mismo nombre y mismo valor, y luego elimina las columnas repetidas.
-> Sintaxis: relaciónA ⨝ relaciónB
-> Base matemática: σ F (A × B) donde F es el predicado de igualdad en atributos comunes, seguido de π que borra la columna duplicada.
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-01-graph.svg]]
+>
+> **Sintaxis:** `relaciónA ⨝ relaciónB`
+>
+> **Base matemática:** `σ F (A × B)` donde F es el predicado de igualdad en atributos comunes, seguido de `π` que borra la columna duplicada.
 
 > [!example] 🧪 Ejemplo de join natural
+>
 > | PRODUCTO |
 > |---|
 > | CODIGO | DESCRIPCION | PRECIO |
@@ -39,81 +48,155 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > | 1 | 02/02/2020 | 104 | 54 |
 > | 2 | 04/02/2020 | 101 | 2 |
 > | 4 | 04/04/2020 | 110 | -2 |
-> PRODUCTO ⨝ VENTA no tiene columnas de mismo nombre → producto cruz puro (9 filas).
-> Si renombráramos ID_PRODUCT a CODIGO, el join natural haría σ PRODUCTO.CODIGO = VENTA.CODIGO (PRODUCTO × VENTA) y eliminaría la CODIGO duplicada, dejando 2 filas: 101↔venta 2, 104↔venta 1.
+>
+> `PRODUCTO ⨝ VENTA` no tiene columnas de mismo nombre → producto cruz puro (9 filas).
+>
+> Si renombráramos `ID_PRODUCT` a `CODIGO`, el join natural haría `σ PRODUCTO.CODIGO = VENTA.CODIGO (PRODUCTO × VENTA)` y eliminaría la `CODIGO` duplicada, dejando 2 filas: 101↔venta 2, 104↔venta 1.
+
+> [!info] 📖 El deck de cátedra: los joins y el natural join (slides05, pp. 14-15)
+> El deck abre el bloque de joins con la definición del natural join y su ejemplo.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p14.png]]
+> 
+> **Joins (p. 14):** *"Natural join, junta dos tablas seleccionando solo las filas con valores comunes en sus atributos comunes. Join permite que inteligentemente se combinen 2 relaciones, aquí radica el poder de las relaciones"*.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p15.png]]
+> 
+> **El ejemplo del deck (p. 15):** `department ⨝ course` sobre `course_id, title, dept_name, credits` y `dept_name, building, budget` — las columnas comunes (`dept_name`) quedan **una sola vez** en el resultado.
 
 ### 2️⃣ Equi Join ⨝(a=b)
 
 > [!note] 📋 Definición — Equi Join ⨝(a=b)
-> Join con condición de igualdad explícita entre columnas que pueden tener nombres distintos. Las columnas de la condición NO se eliminan (a diferencia del natural join).
-> Sintaxis: relaciónA ⨝(columnaA = columnaB) relaciónB
-> SQL mental: JOIN ... ON columnaA = columnaB
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-04-graph.svg]]
+>
+> Join con condición de igualdad explícita entre columnas que pueden tener nombres distintos. Las columnas de la condición **NO** se eliminan (a diferencia del natural join).
+>
+> **Sintaxis:** `relaciónA ⨝(columnaA = columnaB) relaciónB`
+>
+> **SQL mental:** `JOIN ... ON columnaA = columnaB`
 
 > [!example] 🧪 Ejemplo de equi join
-> PRODUCTO ⨝(CODIGO = ID_PRODUCT) VENTA devuelve 2 filas:
+>
+> `PRODUCTO ⨝(CODIGO = ID_PRODUCT) VENTA` devuelve 2 filas:
+>
 > | CODIGO | DESCRIPCION | PRECIO | ID_VENTA | FECHA | ID_PRODUCT | CANTIDAD |
 > |---|---|---|---|---|---|---|
 > | 101 | Pasta | 3.50 | 2 | 04/02/2020 | 101 | 2 |
 > | 104 | Gel | 4.00 | 1 | 02/02/2020 | 104 | 54 |
+>
+> **Se lee así:** fíjate en la última tabla: `CODIGO` **y** `ID_PRODUCT` siguen las dos. Esa es exactamente la diferencia con el natural join, que habría dejado una sola columna de clave.
 
 ### 3️⃣ Theta Join ⨝(F)
 
 > [!note] 📋 Definición — Theta Join ⨝(F)
+>
 > Join con una condición que no es igualdad (≠, >, <, ≥, ≤). Útil para comparaciones de rangos o exclusiones.
-> Sintaxis: relaciónA ⨝(condición) relaciónB
-> SQL mental: JOIN ... ON con comparación no-igualdad.
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-05-graph.svg]]
+>
+> **Sintaxis:** `relaciónA ⨝(condición) relaciónB`
+>
+> **SQL mental:** `JOIN ... ON` con comparación no-igualdad.
 
 > [!example] 🧪 Ejemplo de theta join
-> VENTA ⨝(CANTIDAD > 50) PRODUCTO — ventas donde la cantidad supera 50 unidades.
+>
+> `VENTA ⨝(CANTIDAD > 50) PRODUCTO` — ventas donde la cantidad supera 50 unidades.
+
+> [!info] 📖 El deck de cátedra: el theta join (slides05, p. 18)
+> El deck distingue el theta join del equi join por el tipo de comparación.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p18.png]]
+> 
+> **Theta Join (p. 18):** *"es una operación de Join que usa una condición C de comparación para juntar las tablas"*, y si la condición está formada **sólo de igualdades**, se conoce como Equi-Join. El deck trae el ejemplo `DID NOT IN (SELECT ...)` para el caso de no-igualdad.
 
 ### 4️⃣ Left Outer Join ⟕
 
 > [!note] 📋 Definición — Left Outer Join ⟕
-> Trae TODAS las filas de la izquierda; las de la derecha que no casan se rellenan con null.
-> Sintaxis: relaciónA ⟕ relaciónB
-> SQL mental: LEFT JOIN ... ON
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-02-graph.svg]]
+>
+> Trae TODAS las filas de la izquierda; las de la derecha que no casan se rellenan con `null`.
+>
+> **Sintaxis:** `relaciónA ⟕ relaciónB`
+>
+> **SQL mental:** `LEFT JOIN ... ON`
 
 > [!example] 🧪 Ejemplo de left outer join
-> PRODUCTO ⟕ VENTA devuelve las 2 filas del join normal + la fila del Shampoo 105 con null en todo lo de VENTA.
+>
+> `PRODUCTO ⟕ VENTA` devuelve las 2 filas del join normal + la fila del Shampoo 105 con `null` en todo lo de VENTA.
+
+> [!info] 📖 El deck de cátedra: el left outer join (slides05, p. 16)
+> El deck dibuja el caso donde las filas de la derecha no encuentra pareja.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p16.png]]
+> 
+> **Left outer join (p. 16):** *"Outer Join: las filas que no concuerdan (no match) se incluyen en el resultado final"* — en el `R ⟕ S` las filas de `R` siempre están, y las de `S` que no casan quedan con `null`.
 
 ### 5️⃣ Right Outer Join ⟖
 
 > [!note] 📋 Definición — Right Outer Join ⟖
-> Trae TODAS las filas de la derecha; las de la izquierda que no casan se rellenan con null.
-> Sintaxis: relaciónA ⟖ relaciónB
-> SQL mental: RIGHT JOIN ... ON
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-03-graph.svg]]
+>
+> Trae TODAS las filas de la derecha; las de la izquierda que no casan se rellenan con `null`.
+>
+> **Sintaxis:** `relaciónA ⟖ relaciónB`
+>
+> **SQL mental:** `RIGHT JOIN ... ON`
 
 > [!example] 🧪 Ejemplo de right outer join
-> PRODUCTO ⟖ VENTA devuelve las 2 filas del join normal + la fila de la venta 4 (ID_PRODUCT=110) con null en todo lo de PRODUCTO.
+>
+> `PRODUCTO ⟖ VENTA` devuelve las 2 filas del join normal + la fila de la venta 4 (ID_PRODUCT=110) con `null` en todo lo de PRODUCTO.
+
+> [!info] 📖 El deck de cátedra: el right outer join (slides05, p. 17)
+> El deck muestra el caso simétrico: ahora la que manda es la relación derecha.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p17.png]]
+> 
+> **Right outer join (p. 17):** `R ⟖ S` — la fila de `S` que no tiene pareja en `R` aparece igual, con los atributos de `R` en `null`. Es el mismo resultado que el `⟕` con las tablas intercambiadas.
 
 ### 6️⃣ Semijoin ⋉
 
 > [!note] 📋 Definición — Semijoin ⋉
+>
 > Trae las filas de la relación izquierda que participan en el join con la derecha, pero solo con los atributos de la izquierda.
-> Sintaxis: relaciónA ⋉ relaciónB
-> SQL mental: WHERE ... IN / EXISTS
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-06-graph.svg]]
+>
+> **Sintaxis:** `relaciónA ⋉ relaciónB`
+>
+> **SQL mental:** `WHERE ... IN / EXISTS`
 
 > [!example] 🧪 Ejemplo de semijoin
-> VENTA ⋉ PRODUCTO devuelve ventas 1 y 2, solo columnas de VENTA (sus productos sí existen).
+>
+> `VENTA ⋉ PRODUCTO` devuelve ventas 1 y 2, solo columnas de VENTA (sus productos sí existen).
 
 ### 7️⃣ División
 
 > [!note] 📋 Definición — División
+>
 > Útil para consultas con la expresión "para todo" o "para cada". Es el operador del ejercicio que pide ítems ordenados por todos los clientes.
-> Sintaxis: relaciónA ÷ relaciónB
-> SQL mental: doble NOT EXISTS o GROUP BY ... HAVING COUNT = total.
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u3-02-07-graph.svg]]
+>
+> **Sintaxis:** `relaciónA ÷ relaciónB`
+>
+> **SQL mental:** doble `NOT EXISTS` o `GROUP BY ... HAVING COUNT = total`.
+
+> [!info] 📖 El deck de cátedra: la división (slides05, pp. 19-22)
+> El deck dedica cuatro láminas al operador que responde "para todo".
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p19.png]]
+> 
+> **División (p. 19):** *"es útil para consultas que incluyen la expresión 'para todo' o 'para cada'"*. La operación `R ÷ S` está definida si los atributos de `S` son un subconjunto de los de `R`.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p20.png]]
+> 
+> **El ejemplo del deck (p. 20):** con `A(sno, pno)` y `B1(pno)`, `B2(pno, pno)` y `B3(pno, pno)`, el resultado `A ÷ Bi` contiene las tuplas de `A` que aparecen **con todos** los valores de `Bi`.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p21.png]]
+> 
+> **La lectura del resultado (p. 21):** el resultado de la división contiene todos los `sno` que se emparejan con **todos** los `pno` de la relación divisor.
+> 
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p22.png]]
+> 
+> **El caso práctico (p. 22):** dadas las relaciones `clientes (cust)` y `órdenes (ord)`, *"¿cuáles ítems han sido ordenados por todos los clientes?"* — esa pregunta no se responde con un join: necesita división.
 
 ---
 
 ## 🛠️ Catálogo Completo de Operadores
 
 > [!note] 📚 Catálogo de operadores del álgebra
+>
 > | Operador | Símbolo | Qué hace | SQL mental |
 > |---|---|---|---|
 > | Selección | σ | Filtra filas que cumplen una condición | WHERE |
@@ -131,41 +214,59 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 > | Agregación | γ | Agrupa y calcula (COUNT, SUM, AVG) | GROUP BY (+ HAVING) |
 > | Renombre | ρ | Alias de tabla o expresión | AS |
 > | Orden | τ | Ordena filas asc / desc | ORDER BY |
+>
+> **Se lee así:** la primera mitad de la tabla son **operadores básicos** (se definieron desde cero) y la segunda son **derivados** (se construyen con los básicos). Si puedes escribir un join como `σ F (A × B)`, ya no necesitas memorizar su nombre.
 
 ---
 
-## 🎯 Ejercicios Propuestos
+## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — Join natural vs equi join
 
 > [!example] 📋 Planteamiento
+>
 > Dadas CLIENTE(id, nombre, ciudad) y PEDIDO(id, cliente_id, fecha, total), escribe en álgebra relacional: obtener nombre del cliente y total de cada pedido.
+>
 > > [!success]- ✅ Solución
+> >
 > > π CLIENTE.nombre, PEDIDO.total (CLIENTE ⨝(CLIENTE.id = PEDIDO.cliente_id) PEDIDO)
+> >
 > > **Por qué:** las columnas de las claves no se llaman igual (id vs cliente_id), así que usamos equi join con condición explícita.
 
 ### ✏️ Ejercicio 2 — Left outer join para inclusión
 
 > [!example] 📋 Planteamiento
+>
 > Dadas DEPARTAMENTO(id, nombre) y EMPLEADO(id, nombre, depto_id), escribe en álgebra relacional: listar todos los departamentos, incluso los que no tienen empleados, con el nombre de sus empleados si los hay.
+>
 > > [!success]- ✅ Solución
+> >
 > > DEPARTAMENTO ⟕ EMPLEADO
+> >
 > > **Por qué:** el left outer join conserva todos los departamentos, incluso los sin empleados (que aparecen con null en columnas de EMPLEADO).
 
 ### ✏️ Ejercicio 3 — Semijoin para existencia
 
 > [!example] 📋 Planteamiento
+>
 > Dadas PRODUCTO(codigo, nombre, precio) y VENTA(producto_id, cantidad, fecha), escribe en álgebra relacional: obtener códigos de productos que se han vendido al menos una vez.
+>
 > > [!success]- ✅ Solución
+> >
 > > π PRODUCTO.codigo (PRODUCTO ⋉ VENTA)
+> >
 > > **Por qué:** el semijoin trae solo los productos que aparecen en al menos una venta, con solo las columnas de PRODUCTO.
 
 ### ✏️ Ejercicio 4 — Theta join para rangos
 
 > [!example] 📋 Planteamiento
+>
 > Dada VENTA(monto, fecha), escribe en álgebra relacional: obtener todas las ventas con monto mayor a 1000.
+>
 > > [!success]- ✅ Solución
+> >
 > > σ monto > 1000 (VENTA) — en este caso no se necesita join, solo selección con operador de comparación (theta implícito).
+> >
 > > Si comparas dos tablas: VENTA1 ⨝(VENTA1.monto > VENTA2.monto) VENTA2.
 
 ---
@@ -173,18 +274,33 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 ## 🎯 Metas de Aprendizaje
 
 > [!note] 📋 Nivel Básico
-> Distingo join natural de equi join.
-> Sé cuándo usar left outer join vs right outer join.
-> Explico qué hace el semijoin.
+>
+> - [ ] Distingo join natural de equi join.
+> - [ ] Sé cuándo usar left outer join vs right outer join.
+> - [ ] Explico qué hace el semijoin.
 
 > [!note] 📋 Nivel Intermedio
-> Elijo el join correcto según el enunciado (inner, left, right).
-> Escribo la equivalencia SQL de cada operador derivado.
-> Detecto cuándo necesito renombrar (ρ) para un self-join.
+>
+> - [ ] Elijo el join correcto según el enunciado (inner, left, right).
+> - [ ] Escribo la equivalencia SQL de cada operador derivado.
+> - [ ] Detecto cuándo necesito renombrar (ρ) para un self-join.
 
 > [!note] 📋 Nivel Avanzado
-> Dibujo el diagrama de ejecución de una expresión con múltiples joins.
-> Detecto consultas que usan división y las reescribo con NOT EXISTS.
+>
+> - [ ] Dibujo el diagrama de ejecución de una expresión con múltiples joins.
+> - [ ] Detecto consultas que usan división y las reescribo con NOT EXISTS.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - Diapositivas `2026_1PAO_slides5_1_TICG1018.pdf` — Álgebra Relacional, pp. 14-22 (joins, outer joins, theta join y división).
+> - Diapositivas `3.2 Operaciones Derivadas-join-order2026.pdf` — módulo de joins y orden de ejecución.
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 8 — álgebra relacional y sus equivalentes en SQL.
+> - Guía: [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] — ejercicios resueltos de joins.
+> - Diagramas propios: `u3-02-01-graph` … `u3-02-07-graph` (un diagrama por operador derivado).
 
 ---
 
@@ -193,22 +309,24 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 #flashcards/bd-u3
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-> ¿Join natural?::Combina por columnas del mismo nombre y elimina la duplicada.
-> ¿Equi join?::Join con condición de igualdad explícita entre columnas.
-> ¿Theta join?::Join con condición no-igualdad (>, <, ≠, etc.).
-> ¿Left outer join?::Todas las filas de la izquierda, null a la derecha si no casan.
-> ¿Right outer join?::Todas las filas de la derecha, null a la izquierda si no casan.
-> ¿Semijoin?::Filas de la izquierda que participan en el join, solo sus atributos.
-> ¿División?::Consultas "para todo" o "para cada".
-> ¿Equi join vs join natural?::El equi join conserva las columnas de la condición; el natural las elimina.
-
-> [!note] 🧠 Repasa con el plugin Spaced Repetition (Lección 1: 13-oct)
+>
+> - ¿Join natural?::Combina por columnas del mismo nombre y elimina la duplicada.
+> - ¿Equi join?::Join con condición de igualdad explícita entre columnas.
+> - ¿Theta join?::Join con condición no-igualdad (>, <, ≠, etc.).
+> - ¿Left outer join?::Todas las filas de la izquierda, null a la derecha si no casan.
+> - ¿Right outer join?::Todas las filas de la derecha, null a la izquierda si no casan.
+> - ¿Semijoin?::Filas de la izquierda que participan en el join, solo sus atributos.
+> - ¿División?::Consultas "para todo" o "para cada".
+> - ¿Equi join vs join natural?::El equi join conserva las columnas de la condición; el natural las elimina.
+> - ¿Todos los joins derivados son?::σ F (A × B) — producto cruz + selección.
+> - ¿Qué conserva el outer join?::Todas las filas del lado que manda; la otra se rellena con null.
 
 ---
 
 ## 🔗 Conexiones
 
 > [!quote] 🔗 Notas Relacionadas
+>
 > - [[01 - Operadores Básicos]] — σ, π, ×, ∪, −, ∩ (la base de estos operadores derivados).
 > - [[03 - Renombre y Agregación]] — ρ, γ, τ.
 > - [[Guía de Problemas 2 - Álgebra Relacional y Normalización]] — 4 ejercicios resueltos con joins y álgebra.
@@ -218,6 +336,7 @@ tags: [TICG1018, unidad3, algebra-relacional, joins, derivados, bd]
 ## 🔗 Seguir estudiando
 
 > [!info] 📚 Seguir estudiando
+>
 > - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Siguiente: [[03 - Renombre y Agregación]]

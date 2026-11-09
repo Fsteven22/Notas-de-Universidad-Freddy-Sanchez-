@@ -1,0 +1,7 @@
+flowchart LR
+    A["CREATE TABLE<br/>crea el esquema"] --> B["INSERT<br/>carga filas"]
+    B --> C["ALTER TABLE<br/>cambia la estructura"]
+    C --> D["UPDATE / DELETE<br/>cambia los datos"]
+    D --> E["DROP TABLE<br/>elimina todo"]
+    style A fill:#fff4e1
+    style E fill:#ffe1e1

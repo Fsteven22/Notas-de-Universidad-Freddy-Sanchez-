@@ -1,0 +1,8 @@
+flowchart TB
+    E["EMPLEADO<br/> idEmpleado"]
+    R{"trabaja<br/>M:1"}
+    D["DEPARTAMENTO<br/> idDepartamento"]
+    A["fechaTrabaja"]
+    E --> R
+    R --> D
+    R --> A

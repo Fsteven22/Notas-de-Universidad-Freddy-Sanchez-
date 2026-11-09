@@ -1,0 +1,8 @@
+flowchart LR
+    A["Relación A"]
+    R["A ⟕ B<br/>todas las filas de A"]
+    B["Relación B"]
+    N["null"]
+    A -->|"⟕"| R
+    B -->|"⟕"| R
+    B -->|"sin coincidencia"| N

@@ -1,0 +1,14 @@
+erDiagram
+    DEPARTAMENTO {
+        idDepartamento int PK
+        nombre string
+    }
+    EMPLEADO {
+        idEmpleado int PK
+        nombre string
+        direccion string
+        telefono int
+        idDepartamento int FK
+        fechaTrabaja date
+    }
+    DEPARTAMENTO ||--o{ EMPLEADO : trabaja

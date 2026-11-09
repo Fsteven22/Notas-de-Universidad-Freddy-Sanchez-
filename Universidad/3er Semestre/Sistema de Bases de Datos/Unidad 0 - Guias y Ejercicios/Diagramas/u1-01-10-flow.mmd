@@ -1,0 +1,16 @@
+flowchart TB
+    A["Enunciado"]
+    B["Subraya sustantivos<br/>y verbos"]
+    C["¿Que decision se toma<br/>con cada tabla futura?"]
+    X["❌ Sobra la tabla"]
+    D["Dibuja ERD<br/>con claves dia 1"]
+    E["Traduce a tablas"]
+    F["Verifica reglas<br/>de negocio"]
+    G["Itera"]
+    A --> B
+    B --> C
+    C -->|"Ninguna"| X
+    C -->|"Hay decision"| D
+    D --> E
+    E --> F
+    F --> G

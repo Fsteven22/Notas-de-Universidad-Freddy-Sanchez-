@@ -1,0 +1,6 @@
+flowchart TB
+    CT["CREATE TABLE"] --> E["Define el esquema<br/>nombre de la tabla"]
+    E --> C["Cada columna:<br/>nombre + tipo + valor por defecto"]
+    C --> K["Claves<br/>PRIMARY KEY, FOREIGN KEY"]
+    K --> S["Restricciones<br/>NOT NULL, UNIQUE, CHECK"]
+    style CT fill:#fff4e1
