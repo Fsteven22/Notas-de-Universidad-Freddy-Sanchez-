@@ -12,7 +12,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
-## Unidad I — Comunicación efectiva *(4h)* → [[00 - Índice Unidad 1|📂 Índice]]
+## Unidad I — Comunicación efectiva *(4h)*
 
 > [!note] Notas de la unidad
 > - [[01 - Escucha activa, empatía y barreras]]
@@ -21,7 +21,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
-## Unidad II — Pensamiento complejo y crítico *(4h)* → [[00 - Índice Unidad 2|📂 Índice]]
+## Unidad II — Pensamiento complejo y crítico *(4h)*
 
 > [!note] Notas de la unidad
 > - [[01 - Pensamiento complejo vs pensamiento lineal]]
@@ -29,7 +29,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
-## Unidad III — Redacción *(6h)* → [[00 - Índice Unidad 3|📂 Índice]]
+## Unidad III — Redacción *(6h)*
 
 > [!note] Notas de la unidad
 > - [[01 - Texto expositivo]]
@@ -41,7 +41,7 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 
 ---
 
-## Unidad IV — Comportamiento comunicacional *(14h)* → [[00 - Índice Unidad 4|📂 Índice]]
+## Unidad IV — Comportamiento comunicacional *(14h)*
 
 > [!note] Notas de la unidad
 > - [[01 - Argumentación efectiva, convencer vs persuadir]]
@@ -55,10 +55,10 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Sílabo de la Asignatura IDIG2012.pdf|Syllabus IDIG2012.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf|Políticas PAO 2-2026.pdf]]
 - [[Unidad 0 - Guias y Ejercicios/Guías/Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf|Planificación PAO 2-2026.pdf]]
-- [[00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+- [[Índice de Contenido|00 - Índice de Contenido]]
 
 > [!tip] 🆕 Talleres convertidos a nota
-> Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[00 - Leeme Unidad 0|Leeme de Unidad 0]].
+> Los PDFs de los talleres de redacción (*Precisión y claridad*, *Concordancia y cohesión* y *Normas APA*) ya viven como notas temáticas en la **Unidad III** (04–06). Los PDFs originales siguen embebidos en el [[Índice de Contenido|Índice de Contenido]].
 
 ---
 
@@ -71,13 +71,5 @@ tags: [IDIG2012, comunicacion, mapa-de-contenido]
 > - Siguiente unidad en curso: Unidad 2 — Pensamiento complejo y crítico
 
 ---
-
-- [[Unidad 1 - Comunicación efectiva/00 - Índice Unidad 1|📂 Unidad 1 - Comunicación efectiva]]
-
-- [[Unidad 2 - Pensamiento complejo y crítico/00 - Índice Unidad 2|📂 Unidad 2 - Pensamiento complejo y crítico]]
-
-- [[Unidad 3 - Redacción/00 - Índice Unidad 3|📂 Unidad 3 - Redacción]]
-
-- [[Unidad 4 - Comportamiento comunicacional/00 - Índice Unidad 4|📂 Unidad 4 - Comportamiento comunicacional]]
 
 **Tags:** #comunicacion #ESPOL #IDIG2012

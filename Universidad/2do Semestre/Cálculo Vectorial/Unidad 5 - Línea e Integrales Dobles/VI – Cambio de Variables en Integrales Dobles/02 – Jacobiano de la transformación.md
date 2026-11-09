@@ -319,11 +319,13 @@ dg-publish: true
 
 ### 📋 Tabla de Fórmulas Clave
 
-|Sistema|Transformación|Jacobiano|Elemento Diferencial|
-|---|---|---|---|
-|**Polar (2D)**|$x=r\cos\theta$<br/>$y=r\sin\theta$|$r$|$r,dr,d\theta$|
-|**Cilíndrico (3D)**|$x=r\cos\theta$<br/>$y=r\sin\theta$<br/>$z=z$|$r$|$r,dr,d\theta,dz$|
-|**Esférico (3D)**|$x=\rho\sin\phi\cos\theta$<br/>$y=\rho\sin\phi\sin\theta$<br/>$z=\rho\cos\phi$|$\rho^2\sin\phi$|$\rho^2\sin\phi,d\rho,d\phi,d\theta$|
+> [!info] 📊 Tabla de Fórmulas Clave
+>
+> |Sistema|Transformación|Jacobiano|Elemento Diferencial|
+> |---|---|---|---|
+> |**Polar (2D)**|$x=r\cos\theta$<br/>$y=r\sin\theta$|$r$|$r,dr,d\theta$|
+> |**Cilíndrico (3D)**|$x=r\cos\theta$<br/>$y=r\sin\theta$<br/>$z=z$|$r$|$r,dr,d\theta,dz$|
+> |**Esférico (3D)**|$x=\rho\sin\phi\cos\theta$<br/>$y=\rho\sin\phi\sin\theta$<br/>$z=\rho\cos\phi$|$\rho^2\sin\phi$|$\rho^2\sin\phi,d\rho,d\phi,d\theta$|
 
 ### 🔍 Checklist de Cálculo
 

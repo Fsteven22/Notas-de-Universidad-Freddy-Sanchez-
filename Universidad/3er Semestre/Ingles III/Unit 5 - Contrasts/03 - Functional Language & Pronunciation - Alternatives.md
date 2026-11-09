@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart de alternativas (11.3), register check y word stress.
 
-![[../Diagramas/en3-u5-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-04-01-graph.svg]]
 
 ---
 
@@ -141,7 +141,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u5-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -156,7 +156,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 5]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Gerunds & Causatives]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Argument Comment & Mediation]]
 

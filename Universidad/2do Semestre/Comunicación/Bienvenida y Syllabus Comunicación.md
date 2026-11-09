@@ -106,7 +106,7 @@ tags: [IDIG2012, comunicacion]
 > ├── 📄 Bienvenida y Syllabus Comunicación.md  ← estás aquí
 > │
 > ├── 📁 Unidad 0 - Guias y Ejercicios/
-> │   ├── 📄 00 - Leeme Unidad 0.md
+> │   ├── 📄 00 - Índice de Contenido.md
 > │   ├── 📎 Sílabo de la Asignatura IDIG2012.pdf
 > │   ├── 📎 Políticas de la asignatura PAO 2_2026_PRESENCIAL.pdf
 > │   └── 📎 Planificación Académica actualizada_PAO 2_2026 - Estudiante.pdf

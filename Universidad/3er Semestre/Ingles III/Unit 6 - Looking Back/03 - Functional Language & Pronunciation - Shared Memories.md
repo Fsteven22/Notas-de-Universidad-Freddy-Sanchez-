@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** prompting/recalling chart (12.3), sharing strategy y clusters.
 
-![[../Diagramas/en3-u6-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-04-01-graph.svg]]
 
 ---
 
@@ -139,7 +139,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u6-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u6-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -154,7 +154,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 6]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Emphasis & Substitution]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Pets, Moment & Review]]
 

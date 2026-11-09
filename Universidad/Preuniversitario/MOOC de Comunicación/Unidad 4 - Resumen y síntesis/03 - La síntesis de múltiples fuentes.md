@@ -196,7 +196,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 4]] — mapa general de la unidad.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad.
 > - [[01 - El resumen académico]] — contraste base: una fuente y estructura del autor vs. varias fuentes y estructura propia.
 > - [[02 - Técnicas de parafraseo y citación]] — la síntesis depende de parafrasear y citar correctamente cada fuente integrada.
 

@@ -775,7 +775,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 1]] — presentación general de la Unidad 1 y su estructura.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — presentación general de la Unidad 1 y su estructura.
 > - [[02 - Propiedades de la redacción y textos académicos]] — aplica lo aprendido aquí (claridad, precisión, funciones) a la escritura académica.
 
 ---

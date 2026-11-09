@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** reading rampa (9.4), complaint letter y mejoras 9.5.
 
-![[../Diagramas/en3-u3-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-05-01-graph.svg]]
 
 ---
 
@@ -148,7 +148,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u3-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -163,9 +163,9 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 3]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Generalizations]]
-> - Siguiente: [[00 - Índice Unit 4]]
+> - Siguiente: [[../Ingles III|Ingles III]]
 
 ## 📚 Referencias
 

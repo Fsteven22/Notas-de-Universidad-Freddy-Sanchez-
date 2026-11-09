@@ -691,16 +691,18 @@ dg-publish: true
 
 ## ✅ Tabla Comparativa de Métodos
 
-|Aspecto|Cartesianas|Cilíndricas|Esféricas|
-|---|---|---|---|
-|**Densidad típica**|$\delta(x,y,z)$|$\delta(r,\theta,z)$|$\delta(\rho,\theta,\phi)$|
-|**Elemento dV**|$dx,dy,dz$|$r,dr,d\theta,dz$|$\rho^2\sin\phi,d\rho,d\theta,d\phi$|
-|**Jacobiano**|1|$r$|$\rho^2\sin\phi$|
-|**Mejor para**|Cajas, prismas|Cilindros, conos|Esferas, simetría radial|
-|**Conversión x**|$x$|$r\cos\theta$|$\rho\sin\phi\cos\theta$|
-|**Conversión y**|$y$|$r\sin\theta$|$\rho\sin\phi\sin\theta$|
-|**Conversión z**|$z$|$z$|$\rho\cos\phi$|
-|**Complejidad**|Baja-Media|Media|Alta|
+> [!info] 📊 Tabla Comparativa de Métodos
+>
+> |Aspecto|Cartesianas|Cilíndricas|Esféricas|
+> |---|---|---|---|
+> |**Densidad típica**|$\delta(x,y,z)$|$\delta(r,\theta,z)$|$\delta(\rho,\theta,\phi)$|
+> |**Elemento dV**|$dx,dy,dz$|$r,dr,d\theta,dz$|$\rho^2\sin\phi,d\rho,d\theta,d\phi$|
+> |**Jacobiano**|1|$r$|$\rho^2\sin\phi$|
+> |**Mejor para**|Cajas, prismas|Cilindros, conos|Esferas, simetría radial|
+> |**Conversión x**|$x$|$r\cos\theta$|$\rho\sin\phi\cos\theta$|
+> |**Conversión y**|$y$|$r\sin\theta$|$\rho\sin\phi\sin\theta$|
+> |**Conversión z**|$z$|$z$|$\rho\cos\phi$|
+> |**Complejidad**|Baja-Media|Media|Alta|
 
 ---
 

@@ -16,13 +16,15 @@ tags: [CCPG1042, unidad2, siel, casos-de-uso]
 
 ## 📚 Dónde quedó el contenido
 
-Todo lo transcrito ya está integrado en [[04 - UML casos de uso, secuencia y actividad]]:
-
-- El caso SIEL como sección trabajada con su diagrama (`dsw-u2-04-05-use`)
-- Descripción textual de `Registrar acta de escrutinio` con 2 escenarios concretos
-- Generalización de actores (`Observador ──▷ Ciudadano`) y punto de extensión del `<<extend>>`
-- Usos y riesgos de los casos de uso (test "Registrar acta" ✓ vs "Sumar votos" ✗)
-- Las 2 actividades de la pizarra = ejercicios 18 y 19
+> [!info] 📖 Dónde quedó el contenido
+>
+> Todo lo transcrito ya está integrado en [[04 - UML casos de uso, secuencia y actividad]]:
+>
+> - El caso SIEL como sección trabajada con su diagrama (`dsw-u2-04-05-use`)
+> - Descripción textual de `Registrar acta de escrutinio` con 2 escenarios concretos
+> - Generalización de actores (`Observador ──▷ Ciudadano`) y punto de extensión del `<<extend>>`
+> - Usos y riesgos de los casos de uso (test "Registrar acta" ✓ vs "Sumar votos" ✗)
+> - Las 2 actividades de la pizarra = ejercicios 18 y 19
 
 ## 🗂️ Originales
 
@@ -38,7 +40,6 @@ Todo lo transcrito ya está integrado en [[04 - UML casos de uso, secuencia y ac
 ---
 
 - Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
-- Índice Unidad 2: [[00 - Índice Unidad 2]]
 - Complemento: [[Caso SIEL - Modelo de Clases]]
 
 **Tags:** #CCPG1042 #unidad2 #siel #casos-de-uso

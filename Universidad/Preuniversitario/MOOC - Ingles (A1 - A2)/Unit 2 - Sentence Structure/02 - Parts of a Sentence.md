@@ -1102,13 +1102,13 @@ dg-publish: true
 >    Predicate: plays soccer every weekend
 > 
 > 3. Subject: The students in the library
-   Predicate: study quietly
+>    Predicate: study quietly
 >
->4. Subject: She
-   Predicate: sings beautifully
+> 4. Subject: She
+>    Predicate: sings beautifully
 >
->5. Subject: The old car
-   Predicate: needs repairs
+> 5. Subject: The old car
+>    Predicate: needs repairs
 > ```
 >
 

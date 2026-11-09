@@ -383,14 +383,16 @@ dg-publish: true
 
 ### Tabla Resumen
 
-|Aspecto|Descripción|Fórmula/Condición|
-|---|---|---|
-|**Teorema**|Valor promedio alcanzado|$\iint_R f , dA = f(x_0,y_0) \cdot A(R)$|
-|**Hipótesis**|Función continua|$f: R \to \mathbb{R}$ continua|
-|**Dominio**|Región cerrada y acotada|$R \subset \mathbb{R}^2$|
-|**Conclusión**|Existencia de punto medio|$\exists (x_0,y_0) \in R$|
-|**Valor promedio**|Promedio de $f$ sobre $R$|$f_{prom} = \frac{1}{A(R)} \iint_R f , dA$|
-|**Interpretación**|Altura del cilindro equivalente|Volumen mismo que bajo $f$|
+> [!info] 📊 Tabla Resumen
+>
+> |Aspecto|Descripción|Fórmula/Condición|
+> |---|---|---|
+> |**Teorema**|Valor promedio alcanzado|$\iint_R f , dA = f(x_0,y_0) \cdot A(R)$|
+> |**Hipótesis**|Función continua|$f: R \to \mathbb{R}$ continua|
+> |**Dominio**|Región cerrada y acotada|$R \subset \mathbb{R}^2$|
+> |**Conclusión**|Existencia de punto medio|$\exists (x_0,y_0) \in R$|
+> |**Valor promedio**|Promedio de $f$ sobre $R$|$f_{prom} = \frac{1}{A(R)} \iint_R f , dA$|
+> |**Interpretación**|Altura del cilindro equivalente|Volumen mismo que bajo $f$|
 
 ---
 

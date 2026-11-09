@@ -296,11 +296,10 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[04 - Precisión y claridad en la redacción]]
 > - Siguiente: [[06 - Normas APA, citación y referencias]]
 > - Mapa de la unidad: [[01 - Texto expositivo]]
-> - Origen del taller: [[../00 - Leeme Unidad 0|00 - Leeme Unidad 0]]
+> - Origen del taller: [[../Índice de Contenido|00 - Índice de Contenido]]
 > - Aplicación a informes: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]
 

@@ -501,6 +501,6 @@ dg-publish: true
 > - Base: [[03 - Pseudocódigo y Algoritmos]] — escritura de pseudocódigo
 > - Análisis: [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] — notación $O$ y $\Theta$
 > - Aplicación: [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] — conteo en código real
-> - Índice: [[00 - Índice Unidad 4]] — volver al índice de la unidad
+> - Índice: [[../Matemáticas Discretas|Matemáticas Discretas]] — volver al índice de la unidad
 
 **Tags:** #discretas #unidad4 #guia-problemas

@@ -345,7 +345,7 @@ dg-publish: true
 
 > [!quote] 🔗 Conexiones
 >
-> - [[00 - Índice Unidad 2]] — mapa general de la unidad La oración gramatical, objetivos y orden de estudio.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa general de la unidad La oración gramatical, objetivos y orden de estudio.
 > - [[02 - Oraciones compuestas]] — siguiente nota: oraciones con dos o más verbos conjugados, coordinación y subordinación.
 > - Unidad 1 — el párrafo y la idea principal, donde aplicas estas oraciones simples para construir textos claros.
 >

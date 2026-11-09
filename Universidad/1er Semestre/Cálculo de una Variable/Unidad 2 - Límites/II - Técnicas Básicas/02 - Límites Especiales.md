@@ -52,14 +52,14 @@ dg-publish: true
 > **Aplicando teorema del sandwich:** $$\lim_{x \to 0^+} \cos x = 1 \quad \text{y} \quad \lim_{x \to 0^+} 1 = 1$$
 > 
 > Por lo tanto: $\lim_{x \to 0^+} \frac{\sin x}{x} = 1$
-
-|Valor de $x$|$\sin x$|$\frac{\sin x}{x}$|Aproximación|
-|---|---|---|---|
-|$0.1$|$0.09983$|$0.99833$|≈ 1|
-|$0.01$|$0.00999$|$0.99998$|≈ 1|
-|$0.001$|$0.000999$|$0.999999$|≈ 1|
-|$-0.001$|$-0.000999$|$0.999999$|≈ 1|
-|$-0.01$|$-0.00999$|$0.99998$|≈ 1|
+>
+> |Valor de $x$|$\sin x$|$\frac{\sin x}{x}$|Aproximación|
+> |---|---|---|---|
+> |$0.1$|$0.09983$|$0.99833$|≈ 1|
+> |$0.01$|$0.00999$|$0.99998$|≈ 1|
+> |$0.001$|$0.000999$|$0.999999$|≈ 1|
+> |$-0.001$|$-0.000999$|$0.999999$|≈ 1|
+> |$-0.01$|$-0.00999$|$0.99998$|≈ 1|
 
 ### 🎨 Variaciones del Límite Fundamental
 
@@ -124,14 +124,14 @@ dg-publish: true
 > **Paso 3:** Usar identidad trigonométrica $1 - \cos^2 x = \sin^2 x$ $$= \frac{\sin^2 x}{x(1+\cos x)} = \frac{\sin x}{x} \cdot \frac{\sin x}{1+\cos x}$$
 > 
 > **Paso 4:** Aplicar límites $$\lim_{x \to 0} \frac{\sin x}{x} \cdot \frac{\sin x}{1+\cos x} = 1 \cdot \frac{0}{1+1} = 1 \cdot 0 = 0$$
-
-|Valor de $x$|$1-\cos x$|$\frac{1-\cos x}{x}$|Aproximación|
-|---|---|---|---|
-|$0.1$|$0.004996$|$0.04996$|≈ 0|
-|$0.01$|$0.000050$|$0.005000$|≈ 0|
-|$0.001$|$0.0000005$|$0.0005000$|≈ 0|
-|$-0.001$|$0.0000005$|$-0.0005000$|≈ 0|
-|$-0.01$|$0.000050$|$-0.005000$|≈ 0|
+>
+> |Valor de $x$|$1-\cos x$|$\frac{1-\cos x}{x}$|Aproximación|
+> |---|---|---|---|
+> |$0.1$|$0.004996$|$0.04996$|≈ 0|
+> |$0.01$|$0.000050$|$0.005000$|≈ 0|
+> |$0.001$|$0.0000005$|$0.0005000$|≈ 0|
+> |$-0.001$|$0.0000005$|$-0.0005000$|≈ 0|
+> |$-0.01$|$0.000050$|$-0.005000$|≈ 0|
 
 ### 📈 Límite Relacionado Más Útil
 
@@ -213,15 +213,17 @@ dg-publish: true
 
 ### 📊 Tabla de Límites Derivados Importantes
 
-|Límite|Valor|Método|
-|---|---|---|
-|$\lim_{x \to 0} \frac{\sin(ax)}{x}$|$a$|Sustitución $u = ax$|
-|$\lim_{x \to 0} \frac{\tan(ax)}{x}$|$a$|$\tan u = \frac{\sin u}{\cos u}$|
-|$\lim_{x \to 0} \frac{1-\cos(ax)}{x^2}$|$\frac{a^2}{2}$|Racionalización|
-|$\lim_{x \to 0} \frac{\arcsin(ax)}{x}$|$a$|Sustitución inversa|
-|$\lim_{x \to 0} \frac{\arctan(ax)}{x}$|$a$|Sustitución inversa|
-|$\lim_{x \to 0} \frac{\sin x}{x} \cos x$|$1$|Producto de límites|
-|$\lim_{x \to 0} \frac{x - \sin x}{x^3}$|$\frac{1}{6}$|Serie de Taylor|
+> [!info] 📊 Tabla de Límites Derivados Importantes
+>
+> |Límite|Valor|Método|
+> |---|---|---|
+> |$\lim_{x \to 0} \frac{\sin(ax)}{x}$|$a$|Sustitución $u = ax$|
+> |$\lim_{x \to 0} \frac{\tan(ax)}{x}$|$a$|$\tan u = \frac{\sin u}{\cos u}$|
+> |$\lim_{x \to 0} \frac{1-\cos(ax)}{x^2}$|$\frac{a^2}{2}$|Racionalización|
+> |$\lim_{x \to 0} \frac{\arcsin(ax)}{x}$|$a$|Sustitución inversa|
+> |$\lim_{x \to 0} \frac{\arctan(ax)}{x}$|$a$|Sustitución inversa|
+> |$\lim_{x \to 0} \frac{\sin x}{x} \cos x$|$1$|Producto de límites|
+> |$\lim_{x \to 0} \frac{x - \sin x}{x^3}$|$\frac{1}{6}$|Serie de Taylor|
 
 > [!example] 🏆 Ejercicio Complejo Resuelto $$\lim_{x \to 0} \frac{\sin(3x) \cdot \tan(2x)}{x^2 (1-\cos x)}$$
 > 

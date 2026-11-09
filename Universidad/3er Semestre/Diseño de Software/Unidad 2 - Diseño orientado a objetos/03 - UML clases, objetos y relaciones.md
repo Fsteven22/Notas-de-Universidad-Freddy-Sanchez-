@@ -94,21 +94,25 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > [!note] 📖 Definición del deck
 > Una **clase de análisis** abstrae una o más clases y/o subsistemas en el diseño del sistema.
 
-Sus cuatro rasgos según el deck:
-
-- Se enfoca en el **manejo de requisitos funcionales** (no en la persistencia).
-- Define **responsabilidades**: subconjuntos coherentes de comportamiento definidos por la clase.
-- Define **atributos**.
-- Expresa las **relaciones** en las que participa la clase.
+> [!info] 💡 Clases de análisis (p. 13)
+>
+> Sus cuatro rasgos según el deck:
+>
+> - Se enfoca en el **manejo de requisitos funcionales** (no en la persistencia).
+> - Define **responsabilidades**: subconjuntos coherentes de comportamiento definidos por la clase.
+> - Define **atributos**.
+> - Expresa las **relaciones** en las que participa la clase.
 
 > [!warning] ⚠️ La confusión clásica
 > Una clase de análisis describe *qué* responsabilidades tiene el sistema antes de decidir *cómo* se implementa. Si la mezclas con las tablas de la base, tu diagrama deja de ser diseño y pasa a ser un modelo de datos — es el error 1 de esta nota.
 
 ### 🧠 Identificar clases: las dos heurísticas (pp. 14, 16-17)
 
-**Deck — Data-Driven Design** (heurísticas de Shlaer y Mellor; Booch, p. 14): una clase es una cosa **tangible** o del mundo real (libro, copia, curso), un **rol** (miembro de la biblioteca, estudiante, director de estudios), un **evento** (llegada, salida, solicitud) o una **interacción** (reunión, intersección).
-
-**Tu clase — análisis sustantivo/verbo** (p. 16): subrayas los **sustantivos** → candidatos a clase; los **verbos** → operaciones o relaciones. El **first-cut** (p. 17) es ese primer borrador con nombres de clases y sus relaciones, que después se refina.
+> [!info] 💡 Identificar clases: las dos heurísticas (pp. 14, 16-17)
+>
+> **Deck — Data-Driven Design** (heurísticas de Shlaer y Mellor; Booch, p. 14): una clase es una cosa **tangible** o del mundo real (libro, copia, curso), un **rol** (miembro de la biblioteca, estudiante, director de estudios), un **evento** (llegada, salida, solicitud) o una **interacción** (reunión, intersección).
+>
+> **Tu clase — análisis sustantivo/verbo** (p. 16): subrayas los **sustantivos** → candidatos a clase; los **verbos** → operaciones o relaciones. El **first-cut** (p. 17) es ese primer borrador con nombres de clases y sus relaciones, que después se refina.
 
 > [!example] 🧠 Cómo se combinan (caso SIEL)
 >
@@ -134,9 +138,11 @@ Sus cuatro rasgos según el deck:
 > [!warning] Regla del docente, textual
 > "Se usa para adjuntar atributos a una asociación en lugar de las clases que asocia" y "**la línea de asociación de clase debe tener el mismo nombre**".
 
-En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatura` lleva atributos (fecha, estado de la candidatura) → nace `Inscripcion` **colgando de la línea**, con el mismo nombre de relación.
-
-![[Archivos/04a-p22-clase-asociacion.png]]
+> [!info] 💡 Clases de asociación (p. 22)
+>
+> En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatura` lleva atributos (fecha, estado de la candidatura) → nace `Inscripcion` **colgando de la línea**, con el mismo nombre de relación.
+>
+> ![[Archivos/04a-p22-clase-asociacion.png]]
 
 ### 🧬 Generalización y herencia (p. 23)
 
@@ -144,9 +150,11 @@ En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatur
 
 ### 🏫 El ejemplo del deck: AcademicChoice (pp. 6-7, 25)
 
-El sistema de registro académico que usa el docente: el estudiante gestiona inscripción de materias, paralelos y horarios; cada paralelo tiene estados (**abierto / en lista de espera / cerrado por falta de cupos**); el sistema valida prerrequisitos y conflictos de horario; los administradores fijan políticas (fechas límite, periodos especiales por grupo).
-
-![[Archivos/04a-p25-diagrama-clases.png]]
+> [!info] 💡 El ejemplo del deck: AcademicChoice (pp. 6-7, 25)
+>
+> El sistema de registro académico que usa el docente: el estudiante gestiona inscripción de materias, paralelos y horarios; cada paralelo tiene estados (**abierto / en lista de espera / cerrado por falta de cupos**); el sistema valida prerrequisitos y conflictos de horario; los administradores fijan políticas (fechas límite, periodos especiales por grupo).
+>
+> ![[Archivos/04a-p25-diagrama-clases.png]]
 
 > [!example] 🔍 Para comparar con tu SIEL
 > Mismo esqueleto: actor externo + **estado** de la entidad + **políticas** de un administrador. Si tu diagrama del SIEL no tiene quién administra las políticas (reparto de actas, anulación de-results), le falta el actor `Administrador`.
@@ -432,7 +440,6 @@ El sistema de registro académico que usa el docente: el estudiante gestiona ins
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 2: [[00 - Índice Unidad 2]]
 > - Anterior: [[02 - Diseño por componentes e interfaces]]
 > - Siguiente: [[04 - UML casos de uso, secuencia y actividad]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]

@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** *forget/remember/stop* + gerund/inf (11.1) y causativos (11.2).
 
-![[../Diagramas/en3-u5-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-03-01-graph.svg]]
 
 ---
 
@@ -169,7 +169,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u5-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -184,7 +184,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 5]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - College & Science]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Alternatives]]
 

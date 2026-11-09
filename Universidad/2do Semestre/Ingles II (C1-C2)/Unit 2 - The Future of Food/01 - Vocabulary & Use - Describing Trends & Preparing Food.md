@@ -240,7 +240,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Siguiente: [[02 - Grammar & Examples - Real Conditionals & Time Clauses]]
 
 **Tags:** #vocabulary #trends #food #cooking #English #IDIG1007 #ESPOL #unit2

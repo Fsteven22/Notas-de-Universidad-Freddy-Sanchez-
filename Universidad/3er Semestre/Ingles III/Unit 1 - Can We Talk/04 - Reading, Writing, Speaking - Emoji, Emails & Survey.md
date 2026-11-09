@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** lectura #WORLD, emails A/B con equivalentes, WRITE IT (100 palabras) y survey 7.5.
 
-![[../Diagramas/en3-u1-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-05-01-graph.svg]]
 
 ---
 
@@ -186,7 +186,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u1-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -201,7 +201,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Recounting Stories]]
 > - Siguiente: (vacío — por ahora última del libro; U2 Lifestyles en camino)
 

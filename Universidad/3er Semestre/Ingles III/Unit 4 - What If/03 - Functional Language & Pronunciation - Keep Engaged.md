@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** chart keep-engaged (10.3), *anyway* (insider), vocales largas/cortas y wallet story.
 
-![[../Diagramas/en3-u4-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-04-01-graph.svg]]
 
 ---
 
@@ -153,7 +153,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u4-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -168,7 +168,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 4]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Past Unreal & Past Modals]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Inventions, Comment & Turning Points]]
 

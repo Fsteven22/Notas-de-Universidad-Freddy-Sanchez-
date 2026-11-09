@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** jobs (8.1), work/life balance (8.2), el Venn work–commitments–home y drills del libro.
 
-![[../Diagramas/en3-u2-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-02-01-graph.svg]]
 
 ---
 
@@ -200,7 +200,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u2-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -215,7 +215,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 2]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro U8)
 > - Siguiente: [[02 - Grammar & Examples - Unreal Conditionals & I Wish]]
 

@@ -799,10 +799,11 @@ dg-publish: true
 > **TABLA DE DETERMINACIÓN:**
 > 
 >| Conocido            | Conocido            | Se calcula                     |
-|---------------------|----------------------|--------------------------------|
-| $\dim(V)$, nullity  | —                    | $\operatorname{rank} = \dim(V) - \operatorname{nullity}$ |
-| $\dim(V)$, rank     | —                    | $\operatorname{nullity} = \dim(V) - \operatorname{rank}$ |
-| nullity, rank       | —                    | $\dim(V) = \operatorname{nullity} + \operatorname{rank}$ |
+>
+> |---------------------|----------------------|--------------------------------|
+> | $\dim(V)$, nullity  | —                    | $\operatorname{rank} = \dim(V) - \operatorname{nullity}$ |
+> | $\dim(V)$, rank     | —                    | $\operatorname{nullity} = \dim(V) - \operatorname{rank}$ |
+> | nullity, rank       | —                    | $\dim(V) = \operatorname{nullity} + \operatorname{rank}$ |
 > 
 > **CARACTERIZACIONES:**
 > 

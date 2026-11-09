@@ -181,7 +181,6 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 4: [[00 - Índice Unidad 4]]
 > - Anterior: [[02 - Storytelling para comunicar ciencia]]
 > - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]
 > - Base MOOC: [[../../../Preuniversitario/MOOC de Comunicación/Comunicación Efectiva|MOOC de Comunicación]]

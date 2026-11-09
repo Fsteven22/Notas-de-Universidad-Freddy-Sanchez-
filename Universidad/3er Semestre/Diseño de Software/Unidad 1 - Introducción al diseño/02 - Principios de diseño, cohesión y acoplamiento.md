@@ -429,7 +429,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]]
 > - Anterior: [[01 - Naturaleza del software y el diseño]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]
 

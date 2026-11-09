@@ -283,7 +283,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[01 - Vocabulary & Use - Describing Trends & Preparing Food]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Offers & Vowel Sounds]]
 

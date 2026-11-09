@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present unreal (8.1) + *I wish* presente/futuro/pasado (8.2) + *wish vs hope*.
 
-![[../Diagramas/en3-u2-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-03-01-graph.svg]]
 
 ---
 
@@ -189,7 +189,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u2-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u2-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -204,7 +204,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 2]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Jobs, Work-Life & Balance]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Options & Warnings]]
 

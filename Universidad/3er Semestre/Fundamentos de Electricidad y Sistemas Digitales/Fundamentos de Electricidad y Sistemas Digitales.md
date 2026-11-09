@@ -7,13 +7,15 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ---
 
 # ⚡ Fundamentos de Electricidad y Sistemas Digitales
-**EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus FESD|📖 Ver Syllabus completo]]
-
-![[Unidad 0 - Guias y Ejercicios/Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
+> [!info] 💡 Fundamentos de Electricidad y Sistemas Digitales
+>
+> **EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|📖 Ver Syllabus completo]]
+>
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
 
 ---
 
-## ⚡ Unidad 1 — Electricidad y Circuitos *(8h)* → [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|📂 Índice Dataview]]
+## ⚡ Unidad 1 — Electricidad y Circuitos *(8h)*
 
 > [!note] Electricidad y Circuitos
 > - [[01 - Conceptos Fundamentales de la Electricidad|01 — Conceptos Fundamentales]]
@@ -24,9 +26,11 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[06 - Teoremas de Analisis de Circuitos|06 — Teoremas]]
 > - [[Ejercicios Recopilados - EYAG1037|Ejercicios Recopilados]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_1_01.svg]]
+
 ---
 
-## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)* → [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|📂 Índice Dataview]]
+## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)*
 
 > [!note] Electrónica
 > - [[01 - Semiconductores y Bandas de Energía|01 — Semiconductores]]
@@ -36,9 +40,11 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[05 - Reguladores en Fuentes Lineales|05 — Reguladores]]
 > - [[06 - Ruido Electrónico e Interferencia|06 — Ruido e Interferencia]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_2_01.svg]]
+
 ---
 
-## 🧩 Unidad 3 — Circuitos Integrados *(6h)* → [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|📂 Índice Dataview]]
+## 🧩 Unidad 3 — Circuitos Integrados *(6h)*
 
 > [!note] Circuitos Integrados
 > - [[01 - CI no programables|01 — CI No Programables]]
@@ -49,13 +55,17 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[06 - Aplicaciones de Integrados 555 - ADC - PWM|06 — 555 / ADC / PWM]]
 > - [[07 - Lógica fija y tablas de verdad|07 — Lógica Fija]]
 
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_3_01.svg]]
+
 ---
 
-## 💻 Unidad 4 — Sistemas Digitales *(8h)* → [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|📂 Índice Dataview]]
+## 💻 Unidad 4 — Sistemas Digitales *(8h)*
 
 > [!note] Sistemas Digitales
 > - [[01 - Introducción a la Electrónica Digital|01 — Electrónica Digital]]
 > - [[02 - Minimización de Funciones Lógicas|02 — Minimización]]
+
+![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_4_01.svg]]
 
 ---
 
@@ -72,23 +82,13 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > - [[Práctica 4 — Fuentes Lineales|Práctica 4 — Fuentes Lineales]]
 > - [[Práctica 5 — Filtros Activos|Práctica 5 — Filtros Activos]]
 > - [[Práctica 6 — Logica Combinatoria y Arduino|Práctica 6 — Lógica y Arduino]]
-
 ---
 
 > [!quote] 🔗 Navegación
-> - Syllabus: [[Bienvenida y Syllabus FESD]]
-> - Índices: [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|00 - Índice Unidad 1]] · [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|00 - Índice Unidad 2]] · [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|00 - Índice Unidad 3]] · [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|00 - Índice Unidad 4]]
+> - Syllabus: [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales]]
 
-- [[00 - Recursos del laboratorio]]
+- [[Recursos Visuales|Recursos Visuales]]
 
-- [[00 - Recursos Unidad 0]]
-
-- [[Teórico/Unidad 1 - Electricidad y Circuitos/00 - Índice Unidad 1|📂 Unidad 1 - Electricidad y Circuitos]]
-
-- [[Teórico/Unidad 2 - Introducción a la Electrónica/00 - Índice Unidad 2|📂 Unidad 2 - Introducción a la Electrónica]]
-
-- [[Teórico/Unidad 3 - Circuitos integrados/00 - Índice Unidad 3|📂 Unidad 3 - Circuitos integrados]]
-
-- [[Teórico/Unidad 4 - Sistemas Digitales/00 - Índice Unidad 4|📂 Unidad 4 - Sistemas Digitales]]
+- [[Índice de Contenido]]
 
 **Tags:** #FESD #EYAG1037 #ESPOL #indice #mapa-de-contenido

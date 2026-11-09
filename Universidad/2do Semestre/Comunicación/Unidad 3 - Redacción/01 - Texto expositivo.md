@@ -264,7 +264,6 @@ tags: [IDIG2012, unidad3, texto-expositivo, redaccion]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Siguiente: [[02 - Informes técnicos y ejecutivos, síntesis y paráfrasis]]
 > - Precisión y puntuación: [[04 - Precisión y claridad en la redacción]]
 > - Concordancia y cohesión: [[05 - Concordancia y cohesión en la redacción]]

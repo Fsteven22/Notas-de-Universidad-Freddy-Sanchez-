@@ -5,7 +5,7 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 
 # 🟧 Cálculo Vectorial
 
-**Código:** MATG1046 · **Semestre:** 2do · [[Bienvenida y Syllabus Calculo Vectorial|Ver Syllabus completo]]
+**Código:** MATG1046 · **Semestre:** 2do · [[Bienvenida y Syllabus Cálculo Vectorial|Ver Syllabus completo]]
 
 > [!info] ℹ️ Mapa de contenido de la materia
 > Esta nota es el acceso directo a Cálculo Vectorial (MATG1046). Cada unidad está organizada por subtemas; los enlaces apuntan a las notas reales del vault. Se actualiza a mano para que funcione igual en Obsidian y en Neonotes.
@@ -42,7 +42,6 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 > - [[04 – Clasificación de superficies por secciones]]
 
 > [!note] II · Sistemas de Coordenadas
-> - 📂 [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice|Índice del subtema]]
 > - [[01 - Coordenadas cilíndricas y esféricas]]
 > - [[02 - Transformaciones entre Coordenadas]]
 > - [[03 - Representación gráfica]]
@@ -185,8 +184,7 @@ tags: [MATG1046, calculo-vectorial, mapa-de-contenido]
 
 > [!info] 📚 Seguir estudiando
 >
-> - Syllabus completo: [[Bienvenida y Syllabus Calculo Vectorial]]
-> - Subtema con índice propio: [[Unidad 2 - Superficies y Coordenadas/II - Sistemas de Coordenadas/00 - Índice|II · Sistemas de Coordenadas]]
+> - Syllabus completo: [[Bienvenida y Syllabus Cálculo Vectorial]]
 
 ---
 

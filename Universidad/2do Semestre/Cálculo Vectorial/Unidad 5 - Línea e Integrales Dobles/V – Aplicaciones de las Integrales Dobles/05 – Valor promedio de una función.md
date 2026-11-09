@@ -947,11 +947,13 @@ dg-publish: true
 
 ### Tabla Resumen Dimensional
 
-|Dimensión|Función|Dominio|Medida|Fórmula Promedio|
-|---|---|---|---|---|
-|**1D**|$f(x)$|$[a,b]$|Longitud $L = b-a$|$\displaystyle \frac{1}{L}\int_a^b f , dx$|
-|**2D**|$f(x,y)$|Región $R$|Área $A(R)$|$\displaystyle \frac{1}{A(R)}\iint_R f , dA$|
-|**3D**|$f(x,y,z)$|Sólido $E$|Volumen $V(E)$|$\displaystyle \frac{1}{V(E)}\iiint_E f , dV$|
+> [!info] 📊 Tabla Resumen Dimensional
+>
+> |Dimensión|Función|Dominio|Medida|Fórmula Promedio|
+> |---|---|---|---|---|
+> |**1D**|$f(x)$|$[a,b]$|Longitud $L = b-a$|$\displaystyle \frac{1}{L}\int_a^b f , dx$|
+> |**2D**|$f(x,y)$|Región $R$|Área $A(R)$|$\displaystyle \frac{1}{A(R)}\iint_R f , dA$|
+> |**3D**|$f(x,y,z)$|Sólido $E$|Volumen $V(E)$|$\displaystyle \frac{1}{V(E)}\iiint_E f , dV$|
 
 ### Diagrama de Flujo para Cálculo
 

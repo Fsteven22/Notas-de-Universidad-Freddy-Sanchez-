@@ -696,13 +696,15 @@ dg-publish: true
 
 ### Tabla Resumen de Fórmulas
 
-|Concepto|Fórmula|Notas|
-|---|---|---|
-|**Transformación**|$x = \rho\sin\phi\cos\theta$<br/>$y = \rho\sin\phi\sin\theta$<br/>$z = \rho\cos\phi$|Convención matemática|
-|**Elemento volumen**|$dV = \rho^2\sin\phi,d\rho,d\theta,d\phi$|Factor $\rho^2\sin\phi$|
-|**Esfera**|$x^2 + y^2 + z^2 = a^2$ → $\rho = a$|Límite constante|
-|**Volumen esfera**|$V = \frac{4\pi a^3}{3}$|Fórmula clásica|
-|**Rangos estándar**|$\rho \geq 0$, $0 \leq \theta < 2\pi$, $0 \leq \phi \leq \pi$|Esfera completa|
+> [!info] 📊 Tabla Resumen de Fórmulas
+>
+> |Concepto|Fórmula|Notas|
+> |---|---|---|
+> |**Transformación**|$x = \rho\sin\phi\cos\theta$<br/>$y = \rho\sin\phi\sin\theta$<br/>$z = \rho\cos\phi$|Convención matemática|
+> |**Elemento volumen**|$dV = \rho^2\sin\phi,d\rho,d\theta,d\phi$|Factor $\rho^2\sin\phi$|
+> |**Esfera**|$x^2 + y^2 + z^2 = a^2$ → $\rho = a$|Límite constante|
+> |**Volumen esfera**|$V = \frac{4\pi a^3}{3}$|Fórmula clásica|
+> |**Rangos estándar**|$\rho \geq 0$, $0 \leq \theta < 2\pi$, $0 \leq \phi \leq \pi$|Esfera completa|
 
 ### Guía Rápida de Decisión
 

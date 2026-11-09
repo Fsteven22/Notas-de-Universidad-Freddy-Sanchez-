@@ -632,13 +632,15 @@ dg-publish: true
 
 ### Tabla Resumen de Fórmulas
 
-|Concepto|Fórmula|Notas|
-|---|---|---|
-|**Elemento de volumen**|$dV = r,dr,d\theta,dz$|Factor $r$ obligatorio|
-|**Volumen**|$V = \iiint_E r,dr,d\theta,dz$|$f = 1$|
-|**Masa**|$M = \iiint_E \rho(r,\theta,z) \cdot r,dr,d\theta,dz$|Con densidad|
-|**Centro de masa (z)**|$\bar{z} = \frac{1}{M}\iiint_E z\rho \cdot r,dr,d\theta,dz$|Requiere masa total|
-|**Momento de inercia**|$I_z = \iiint_E r^3\rho,dr,d\theta,dz$|Alrededor de eje $z$|
+> [!info] 📊 Tabla Resumen de Fórmulas
+>
+> |Concepto|Fórmula|Notas|
+> |---|---|---|
+> |**Elemento de volumen**|$dV = r,dr,d\theta,dz$|Factor $r$ obligatorio|
+> |**Volumen**|$V = \iiint_E r,dr,d\theta,dz$|$f = 1$|
+> |**Masa**|$M = \iiint_E \rho(r,\theta,z) \cdot r,dr,d\theta,dz$|Con densidad|
+> |**Centro de masa (z)**|$\bar{z} = \frac{1}{M}\iiint_E z\rho \cdot r,dr,d\theta,dz$|Requiere masa total|
+> |**Momento de inercia**|$I_z = \iiint_E r^3\rho,dr,d\theta,dz$|Alrededor de eje $z$|
 
 ### Diagrama de Flujo de Decisión
 

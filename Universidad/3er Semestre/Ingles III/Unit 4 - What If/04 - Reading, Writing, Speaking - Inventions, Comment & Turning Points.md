@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** podcast tone + weak *would* (10.4), comment con *Personally* y Turning Points 10.5.
 
-![[../Diagramas/en3-u4-05-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-05-01-graph.svg]]
 
 ---
 
@@ -134,7 +134,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u4-05-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u4-05-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -149,7 +149,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 4]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[03 - Functional Language & Pronunciation - Keep Engaged]]
 > - Siguiente: (vacío — U5 Contrasts en camino)
 

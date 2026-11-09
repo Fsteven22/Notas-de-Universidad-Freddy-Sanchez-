@@ -459,6 +459,6 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 > - MEF, tabla $S \backslash I$ y sumador en serie: [[01 - Máquinas de Estado Finito - Definición y Estructura]] — base de los Ej. 4, 8, 9 y 10.
 > - Diseño de autómatas, trayectorias y aceptación: [[02 - Autómatas de Estado Finito - Diseño y Aceptación de Cadenas]] — base de los Ej. 1, 2, 3, 5, 6, 7, 11 y 12.
-> - Índice y mapa de la unidad: [[00 - Índice Unidad 6]] — panorama de la Unidad 6.
+> - Índice y mapa de la unidad: [[../Matemáticas Discretas|Matemáticas Discretas]] — panorama de la Unidad 6.
 
 **Tags:** #discretas #unidad6 #guia-problemas

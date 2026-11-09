@@ -17,28 +17,30 @@ tags: [CCPG1042, patrones-creacionales, material-de-clase, diseno-software]
 
 ## 📑 Orden de las capturas
 
-El PDF conserva el orden real en que se tomaron. Los archivos originales se numeraron desde el
-final: el que no lleva sufijo (`Patrones creacionales.png`) es la **primera** captura.
-
-| # | Archivo de origen | Página |
-|---|---|---|
-| 1 | `Patrones creacionales.png` | 3 |
-| 2 | `Patrones creacionales-1.png` | 4 |
-| 3 | `Patrones creacionales-2.png` | 5 |
-| 4 | `Patrones creacionales-3.png` | 6 |
-| 5 | `Patrones creacionales-4.png` | 7 |
-| 6 | `Patrones creacionales-5.png` | 8 |
-| 7 | `Patrones creacionales-6.png` | 9 |
-| 8 | `Patrones creacionales-7.png` | 10 |
-| 9 | `Patrones creacionales-8.png` | 11 |
-| 10 | `Patrones creacionales-9.png` | 12 |
-| 11 | `Patrones creacionales-10.png` | 13 |
-| 12 | `Patrones creacionales-11.png` | 14 |
-| 13 | `Patrones creacionales-12.png` | 15 |
-| 14 | `Patrones creacionales-13.png` | 16 |
-| 15 | `Patrones creacionales-14.png` | 17 |
-| 16 | `Patrones creacionales-15.png` | 18 |
-| 17 | `Patrones creacionales-16.png` | 19 |
+> [!info] 📋 Orden de las capturas
+>
+> El PDF conserva el orden real en que se tomaron. Los archivos originales se numeraron desde el
+> final: el que no lleva sufijo (`Patrones creacionales.png`) es la **primera** captura.
+>
+> | # | Archivo de origen | Página |
+> |---|---|---|
+> | 1 | `Patrones creacionales.png` | 3 |
+> | 2 | `Patrones creacionales-1.png` | 4 |
+> | 3 | `Patrones creacionales-2.png` | 5 |
+> | 4 | `Patrones creacionales-3.png` | 6 |
+> | 5 | `Patrones creacionales-4.png` | 7 |
+> | 6 | `Patrones creacionales-5.png` | 8 |
+> | 7 | `Patrones creacionales-6.png` | 9 |
+> | 8 | `Patrones creacionales-7.png` | 10 |
+> | 9 | `Patrones creacionales-8.png` | 11 |
+> | 10 | `Patrones creacionales-9.png` | 12 |
+> | 11 | `Patrones creacionales-10.png` | 13 |
+> | 12 | `Patrones creacionales-11.png` | 14 |
+> | 13 | `Patrones creacionales-12.png` | 15 |
+> | 14 | `Patrones creacionales-13.png` | 16 |
+> | 15 | `Patrones creacionales-14.png` | 17 |
+> | 16 | `Patrones creacionales-15.png` | 18 |
+> | 17 | `Patrones creacionales-16.png` | 19 |
 
 > [!note] ℹ️ Por qué un PDF y no 17 PNG
 > Los PNG estaban sueltos en la raíz del vault: no se sabía de qué clase venían, ni en qué orden

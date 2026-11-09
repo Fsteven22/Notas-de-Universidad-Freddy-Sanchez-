@@ -619,7 +619,7 @@ dg-publish: true
 > [!quote] 🔗 Conexiones
 >
 > - [[02 - Propiedades de la redacción y textos académicos]] — las propiedades de adecuación, coherencia y cohesión enmarcan estos errores: la concordancia y la concisión son su aplicación directa.
-> - [[00 - Índice Unidad 1]] — mapa de la unidad: esta nota consolida los puntos 05, 06 y 07 en un solo documento.
+> - [[../Comunicación Efectiva|Comunicación Efectiva]] — mapa de la unidad: esta nota consolida los puntos 05, 06 y 07 en un solo documento.
 
 ---
 

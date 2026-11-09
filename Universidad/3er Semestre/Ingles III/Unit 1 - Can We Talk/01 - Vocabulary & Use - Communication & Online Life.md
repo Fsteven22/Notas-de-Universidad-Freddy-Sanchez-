@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** classroom language, 12 verbos de comunicación (7.1), 13 términos online (7.2) y drill de categorización.
 
-![[../Diagramas/en3-u1-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-02-01-graph.svg]]
 
 ---
 
@@ -253,7 +253,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u1-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u1-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -268,7 +268,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 1]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro)
 > - Siguiente: [[02 - Grammar & Examples - Reported Statements & Questions]]
 

@@ -252,7 +252,6 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Comunicación|Comunicación]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Texto expositivo]]
 > - Siguiente: [[03 - IA ética y prompts para redacción]]
 > - Syllabus: [[../Bienvenida y Syllabus Comunicación|Bienvenida y Syllabus Comunicación]]

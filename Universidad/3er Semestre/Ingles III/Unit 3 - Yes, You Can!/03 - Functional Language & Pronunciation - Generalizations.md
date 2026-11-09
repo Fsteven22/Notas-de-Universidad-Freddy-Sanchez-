@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** generalizing chart (9.3), contrasting culture y /d/ inicial.
 
-![[../Diagramas/en3-u3-04-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-04-01-graph.svg]]
 
 ---
 
@@ -153,7 +153,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u3-04-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-04-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -168,7 +168,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 3]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[02 - Grammar & Examples - Present & Past Rules]]
 > - Siguiente: [[04 - Reading, Writing, Speaking - Ramp, Complaint & Town]]
 

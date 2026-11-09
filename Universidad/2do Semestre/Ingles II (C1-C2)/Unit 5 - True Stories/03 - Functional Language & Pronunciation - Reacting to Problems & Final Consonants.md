@@ -231,7 +231,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Mapa: [[../Welcome & Syllabus English II|Welcome & Syllabus English II]]
+> - Mapa: [[../Welcome & Syllabus English II (C1-C2)|Welcome & Syllabus English II]]
 > - Anterior: [[02 - Grammar & Examples - Past Perfect & Was Were Going To]]
 > - Siguiente: [[04 - Reading Writing Speaking - The Perfect Apology & A Chance Meeting]]
 

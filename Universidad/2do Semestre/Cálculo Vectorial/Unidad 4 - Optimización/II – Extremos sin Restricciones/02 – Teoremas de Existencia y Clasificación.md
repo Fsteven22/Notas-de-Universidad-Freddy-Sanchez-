@@ -321,12 +321,14 @@ dg-publish: true
 
 ## 📊 Tabla Resumen de Clasificación
 
-|$D$|$f_{xx}$|Clasificación|Forma geométrica|
-|---|---|---|---|
-|$> 0$|$> 0$|**Mínimo local**|Paraboloide hacia arriba ⬆️|
-|$> 0$|$< 0$|**Máximo local**|Paraboloide hacia abajo ⬇️|
-|$< 0$|cualquiera|**Punto silla**|Superficie tipo silla 🏔️|
-|$= 0$|cualquiera|**Indeterminado**|Requiere análisis adicional ❓|
+> [!info] 📊 Tabla Resumen de Clasificación
+>
+> |$D$|$f_{xx}$|Clasificación|Forma geométrica|
+> |---|---|---|---|
+> |$> 0$|$> 0$|**Mínimo local**|Paraboloide hacia arriba ⬆️|
+> |$> 0$|$< 0$|**Máximo local**|Paraboloide hacia abajo ⬇️|
+> |$< 0$|cualquiera|**Punto silla**|Superficie tipo silla 🏔️|
+> |$= 0$|cualquiera|**Indeterminado**|Requiere análisis adicional ❓|
 
 ---
 

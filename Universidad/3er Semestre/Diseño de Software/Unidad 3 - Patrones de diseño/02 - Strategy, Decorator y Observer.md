@@ -341,7 +341,6 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Diseño de Software|Diseño de Software]]
-> - Índice Unidad 3: [[00 - Índice Unidad 3]]
 > - Anterior: [[01 - Qué es un patrón de diseño, GoF y cuándo aplicarlo]]
 > - Siguiente: [[03 - Factory, Adapter, Facade, Singleton y Template Method]]
 > - Syllabus: [[../Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus Diseño de Software]]

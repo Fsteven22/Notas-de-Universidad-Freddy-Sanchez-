@@ -123,7 +123,9 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 
 ## 🔗 Uso Combinado de Ambos Principios
 
-En la práctica, la mayoría de los problemas requieren **ambos principios** juntos.
+> [!info] 💡 Uso combinado de ambos principios
+>
+> En la práctica, la mayoría de los problemas requieren **ambos principios** juntos.
 
 > [!tip] 💡 Estrategia general
 > 

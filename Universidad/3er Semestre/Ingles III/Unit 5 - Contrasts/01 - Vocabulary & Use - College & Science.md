@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** college (11.1), science word families (11.2), *snake oil* y drills.
 
-![[../Diagramas/en3-u5-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-02-01-graph.svg]]
 
 ---
 
@@ -168,7 +168,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u5-02-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u5-02-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -183,7 +183,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 5]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: (vacío — primera nota del libro U11)
 > - Siguiente: [[02 - Grammar & Examples - Gerunds & Causatives]]
 

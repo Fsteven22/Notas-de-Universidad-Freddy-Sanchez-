@@ -63,11 +63,11 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] 📖 El deck de cátedra: la taxonomía de atributos en figuras (slides02, pp. 7-10)
 > El deck del Ing. Magallanes recorre los tipos de atributo con su figura: el **compuesto** (un número de teléfono se subdivide en código de país, código de área y número), el **multivaluado** y el **derivado**.
 
-![[Archivos/bd-s02-p5.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p5.png]]
 
-![[Archivos/bd-s02-p8.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p8.png]]
 
-![[Archivos/bd-s02-p10.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p10.png]]
 
 > **Atributo requerido (p. 8):** *"un atributo que debe tener valor o no puede ser vacío (Not null)"*.
 >
@@ -86,9 +86,9 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] 📖 El deck de cátedra: relación, cardinalidad y grado (slides02, pp. 11-19)
 > *"Una Relación representa a un conjunto de asociaciones entre las instancias u ocurrencias de Entidades"* (p. 12). El deck dibuja la cardinalidad con el par (mín, máx) por lado.
 
-![[Archivos/bd-s02-p13.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p13.png]]
 
-![[Archivos/bd-s02-p15.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p15.png]]
 
 > **Las dos preguntas del deck (p. 14):** para Departamento, *"un empleado trabaja mínimo en cuántos departamentos?"* — si es 0, la participación del empleado es **opcional**; y el máximo define si es 1:1, 1:N o N:N.
 >
@@ -96,9 +96,9 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 >
 > **Grado (p. 16):** el número de entidades que participan — casi todas son binarias, pero las ternarias y superiores están permitidas.
 
-![[Archivos/bd-s02-p17.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p17.png]]
 
-![[Archivos/bd-s02-p19.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p19.png]]
 
 > **Relaciones recursivas (p. 17):** un empleado puede dirigir a muchos empleados (0,N) y ser dirigido por uno (0,1); un curso puede ser prerrequisito de otros.
 >
@@ -107,9 +107,9 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] 📖 El deck de cátedra: generalización y herencia (slides02, pp. 26-28)
 > *"Car y Truck son sub-clases o especializaciones de Vehicule y por lo tanto heredan los atributos y relaciones"* (p. 28).
 
-![[Archivos/bd-s02-p26.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p26.png]]
 
-![[Archivos/bd-s02-p28.png]]
+![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s02-p28.png]]
 
 ### 4️⃣ Claves — PK, FK, candidata y compuesta
 
@@ -463,11 +463,10 @@ tags: [TICG1018, unidad1, er, claves, relaciones]
 > [!info] 📚 Seguir estudiando
 >
 > - Mapa de contenido: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
-> - Índice Unidad 1: [[00 - Índice Unidad 1]] · Índice Unidad 2: [[00 - Índice Unidad 2]]
+> - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Anterior: [[01 - Dato, información y modelos de datos]] · Siguiente: [[03 - Modelo relacional, ERM y casos Tiny College]]
 > - Conversión a tablas: [[01 - Conversión MC a ML por cardinalidad]]
 
 ---
 
 **Tags:** #TICG1018 #unidad1 #er #claves #relaciones #bd
-

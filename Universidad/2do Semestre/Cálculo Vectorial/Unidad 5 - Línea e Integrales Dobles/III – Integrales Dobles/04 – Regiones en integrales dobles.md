@@ -674,9 +674,13 @@ dg-publish: true
 > 
 > ```
 > (∫₀¹ eˣ dx)(∫₀^π sin y dy)
-= (eˣ]₀¹)(-cos y]₀^π)
-= (e-1)(2)
-= 2(e-1)
+
+> [!tip] 💡 Optimización de cálculos
+>
+> = (eˣ]₀¹)(-cos y]₀^π)
+> = (e-1)(2)
+> = 2(e-1)
+
 > ```
 > 
 > **4. Cambio de variable inteligente**

@@ -19,7 +19,7 @@ dg-publish: true
 >
 > **En esta nota:** present (9.1) + past (9.2) + pasiva de autoridad + accuracy check.
 
-![[../Diagramas/en3-u3-03-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-03-01-graph.svg]]
 
 ---
 
@@ -174,7 +174,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/en3-u3-03-02-mind.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/en3-u3-03-02-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -189,7 +189,7 @@ dg-publish: true
 
 > [!info] 📚 Seguir estudiando
 >
-> - Índice: [[00 - Índice Unit 3]]
+> - Índice: [[../Ingles III|Ingles III]]
 > - Anterior: [[01 - Vocabulary & Use - Places & Rules]]
 > - Siguiente: [[03 - Functional Language & Pronunciation - Generalizations]]
 

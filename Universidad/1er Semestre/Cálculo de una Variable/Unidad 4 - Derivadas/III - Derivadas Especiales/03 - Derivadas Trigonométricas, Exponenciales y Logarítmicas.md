@@ -130,13 +130,14 @@ dg-publish: true
 
 > [!info] 🎯 Tabla de Funciones Inversas
 >| Función        | Derivada                                               | Dominio                          |
-|----------------|--------------------------------------------------------|-----------------------------------|
-| arcsin(x)      | $\frac{1}{\sqrt{1 - x^2}}$                             | $(-1, 1)$                         |
-| arccos(x)      | $\frac{-1}{\sqrt{1 - x^2}}$                            | $(-1, 1)$                         |
-| arctan(x)      | $\frac{1}{1 + x^2}$                                    | $(-\infty, \infty)$               |
-| arccot(x)      | $\frac{-1}{1 + x^2}$                                   | $(-\infty, \infty)$               |
-| arcsec(x)      | $\frac{1}{\|x\| \sqrt{x^2 - 1}}$                       | $(-\infty, -1) \cup (1, \infty)$  |
-| arccsc(x)      | $\frac{-1}{\|x\| \sqrt{x^2 - 1}}$                      | $(-\infty, -1) \cup (1, \infty)$  |
+>
+> |----------------|--------------------------------------------------------|-----------------------------------|
+> | arcsin(x)      | $\frac{1}{\sqrt{1 - x^2}}$                             | $(-1, 1)$                         |
+> | arccos(x)      | $\frac{-1}{\sqrt{1 - x^2}}$                            | $(-1, 1)$                         |
+> | arctan(x)      | $\frac{1}{1 + x^2}$                                    | $(-\infty, \infty)$               |
+> | arccot(x)      | $\frac{-1}{1 + x^2}$                                   | $(-\infty, \infty)$               |
+> | arcsec(x)      | $\frac{1}{\|x\| \sqrt{x^2 - 1}}$                       | $(-\infty, -1) \cup (1, \infty)$  |
+> | arccsc(x)      | $\frac{-1}{\|x\| \sqrt{x^2 - 1}}$                      | $(-\infty, -1) \cup (1, \infty)$  |
 
 
 ## ⚠️ Errores Comunes y Prevención
