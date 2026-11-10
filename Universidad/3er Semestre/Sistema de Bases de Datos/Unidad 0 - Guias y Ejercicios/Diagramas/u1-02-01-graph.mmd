@@ -1,0 +1,14 @@
+flowchart TB
+    E1["ESTUDIANTE<br/> carnet"]
+    R1{"realiza"}
+    M["MATRICULA"]
+    R2{"contiene"}
+    E2["MATERIA<br/> codigo"]
+    P["PROFESOR"]
+    D{"dicta"}
+    P --> D
+    D --> E2
+    E1 --> R1
+    R1 --> M
+    M --> R2
+    R2 --> E2

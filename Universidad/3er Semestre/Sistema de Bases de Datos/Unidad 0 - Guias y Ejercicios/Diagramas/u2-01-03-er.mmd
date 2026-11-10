@@ -1,0 +1,10 @@
+erDiagram
+    CURSO {
+        codigo string PK
+        nombre string UK
+    }
+    MATRICULA {
+        codigo string PK, FK
+        carnet int PK, FK
+    }
+    CURSO ||--o{ MATRICULA : tiene

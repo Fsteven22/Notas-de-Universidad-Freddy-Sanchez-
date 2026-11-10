@@ -27,7 +27,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > | **Decorator** | Herencia explosiva | Envuelve y suma comportamiento |
 > | **Observer** | Acoplamiento N-a-N manual | Sujeto notifica, observadores reaccionan |
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-01-graph.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -126,7 +128,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Cuál de los Tres?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Cuál de los Tres
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-02-flow.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -271,16 +275,19 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino los 3 patrones con su dolor correspondiente.
 > - [ ] Explico el diagrama Contexto→Estrategia con ejemplo.
 > - [ ] Distingo alternativas excluyentes (Strategy) de capas (Decorator).
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Diseño Strategy/Decorator/Observer para casos nuevos.
 > - [ ] Decido cuándo NO aplicar cada uno.
 > - [ ] Dibujo roles UML antes de codear.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Combino patrones con justificación de costos.
 > - [ ] Mitigo debugging de Decorator y orden de Observer.
 > - [ ] Conecto Strategy con OCP/DIP correctamente.
@@ -289,7 +296,9 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-03-mind.svg]]
 
 > [!info] 🖼️ Figura
 >

@@ -1,0 +1,10 @@
+erDiagram
+    CLIENTE {
+        cedula int PK
+        nombre string
+    }
+    TELEFONO {
+        cedula int PK, FK
+        numero int PK
+    }
+    CLIENTE ||--o{ TELEFONO : tiene

@@ -1,0 +1,11 @@
+erDiagram
+    ESTUDIANTE {
+        carnet int PK
+        email string UK
+        nombre string
+    }
+    MATRICULA {
+        carnet int PK, FK
+        codigo string PK, FK
+    }
+    ESTUDIANTE ||--o{ MATRICULA : tiene

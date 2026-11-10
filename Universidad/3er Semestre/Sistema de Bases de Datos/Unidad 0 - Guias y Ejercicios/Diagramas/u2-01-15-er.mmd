@@ -1,0 +1,15 @@
+erDiagram
+    EMPLEADO {
+        idEmp int PK
+        nombre string
+        esVendedor string
+        esTecnico string
+    }
+    VENDEDOR {
+        idEmp int PK, FK
+        numVentas int
+    }
+    TECNICO {
+        idEmp int PK, FK
+        licencia string
+    }

@@ -1,0 +1,10 @@
+flowchart TB
+    J["JOINs múltiples"] --> A["Tabla A"]
+    J --> B["Tabla B"]
+    B --> C["Tabla C"]
+    C --> R["Resultado unido<br/>una sola fila por coincidencia"]
+    K["Operadores de conjuntos"] --> U["UNION<br/>filas de A y B"]
+    K --> I["INTERSECT<br/>filas de A y B"]
+    K --> E["EXCEPT<br/>filas de A menos B"]
+    style J fill:#e1f5ff
+    style K fill:#fff4e1

@@ -1,0 +1,10 @@
+erDiagram
+    EQUIPO {
+        codigo int PK
+        cedula_presi int FK
+    }
+    PRESIDENTE {
+        cedula int PK
+        codigo int FK
+    }
+    EQUIPO ||--|| PRESIDENTE : "❌ MAL: dos tablas"

@@ -30,7 +30,9 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 > | **Inline** | Elimina indirección inútil | Clase/método perezoso |
 > | **Split Phase / Split Loop** | Separa etapas mezcladas | Cambio divergente |
 
-![[../Diagramas/dsw-u4-03-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-01-graph.svg]]
 
 ---
 
@@ -129,7 +131,9 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Técnica Aplico?
 
-![[../Diagramas/dsw-u4-03-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Técnica Aplico
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -267,16 +271,19 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Describo las 8 técnicas con su smell correspondiente.
 > - [ ] Aplico Extract Function con los 4 pasos sin mirar.
 > - [ ] Explico por qué cada técnica cierra con tests + commit.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Ejecuto Move Function completo (copia, ajusta, delega, elimina).
 > - [ ] Decido Extract vs Inline y Split vs directo con criterio.
 > - [ ] Uso Rename del IDE en vez de buscar/reemplazar.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Planifico secuencias multi-técnica con verificación entre pasos.
 > - [ ] Reconstruyo historiales mezclados en commits atómicos.
 > - [ ] Conecto el catálogo con falsabilidad y YAGNI.
@@ -285,7 +292,9 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u4-03-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

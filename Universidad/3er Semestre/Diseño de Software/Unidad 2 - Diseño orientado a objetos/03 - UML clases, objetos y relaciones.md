@@ -27,7 +27,9 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | **Equipo** | Cada quien su estilo | Un solo idioma |
 > | **Evaluación** | Diagrama ambiguo | Diagrama calificable |
 
-![[../Diagramas/dsw-u2-04-01-class.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-01-class.svg]]
 
 ---
 
@@ -76,10 +78,14 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 ### 🔎 Por qué existe UML (p. 4)
 
+> [!note] 💡 El deck de cátedra (04a) en detalle
+>
 > En los años ochenta y noventa se propusieron **varias notaciones distintas** para describir diseños orientados a objetos. El lenguaje de modelado unificado es la **integración de esas notaciones**: describe notaciones para varios modelos que pueden producirse durante el análisis y el diseño OO, y hoy es un **estándar de facto** para el modelado OO.
 
 ### 🎓 Visibilidad con las palabras exactas del deck (p. 12)
 
+> [!note] 📊 Tabla — El deck de cátedra (04a) en detalle
+>
 > | Símbolo | Significado en el deck | Quién lo alcanza |
 > |---|---|---|
 > | `+` | público: cualquier cliente de la clase puede acceder a los miembros públicos | cualquiera |
@@ -87,6 +93,7 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | `-` | privado: solo los miembros de la **misma clase** | la propia clase |
 
 > [!tip] Detalle que se evalúa
+>
 > `#` no es "privado con permiso": es visible **para toda la jerarquía**. Y `-` no protege contra otras clases: protege contra todo lo que no sea la propia clase.
 
 ### 🧬 Clases de análisis (p. 13)
@@ -104,6 +111,7 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > - Expresa las **relaciones** en las que participa la clase.
 
 > [!warning] ⚠️ La confusión clásica
+>
 > Una clase de análisis describe *qué* responsabilidades tiene el sistema antes de decidir *cómo* se implementa. Si la mezclas con las tablas de la base, tu diagrama deja de ser diseño y pasa a ser un modelo de datos — es el error 1 de esta nota.
 
 ### 🧠 Identificar clases: las dos heurísticas (pp. 14, 16-17)
@@ -122,31 +130,38 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > | **Clase (Stevens)** | Filtro de descarte: redundante, vago, evento, atributo, metalenguaje, fuera de alcance | Un evento **sin estado propio** es operación, no clase (`DiaDeLaEleccion`) |
 
 > [!tip] Lectura del diagrama del deck
-> ![[Archivos/04a-p14-heuristicas.png]]
 >
-> ![[Archivos/04a-p16-sustantivo-verbo.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p14-heuristicas.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p16-sustantivo-verbo.png]]
 
 ### 🔗 Multiplicidad de una asociación (p. 19)
 
-![[Archivos/04a-p19-multiplicidad.png]]
+> [!note] 🖼️ captura 04a-p19 — El deck de cátedra (04a) en detalle
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p19-multiplicidad.png]]
 
 > [!note] Regla de la cátedra
+>
 > La multiplicidad se escribe **en el extremo de la clase que cuenta**, no en el de la que es contada: `Estudiante 1 ── * Curso` significa "un estudiante tiene muchos cursos".
 
 ### 🧷 Clases de asociación (p. 22)
 
 > [!warning] Regla del docente, textual
+>
 > "Se usa para adjuntar atributos a una asociación en lugar de las clases que asocia" y "**la línea de asociación de clase debe tener el mismo nombre**".
 
 > [!info] 💡 Clases de asociación (p. 22)
 >
 > En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatura` lleva atributos (fecha, estado de la candidatura) → nace `Inscripcion` **colgando de la línea**, con el mismo nombre de relación.
 >
-> ![[Archivos/04a-p22-clase-asociacion.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p22-clase-asociacion.png]]
 
 ### 🧬 Generalización y herencia (p. 23)
 
-![[Archivos/04a-p23-generalizacion.png]]
+> [!note] 🖼️ captura 04a-p23 — El deck de cátedra (04a) en detalle
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p23-generalizacion.png]]
 
 ### 🏫 El ejemplo del deck: AcademicChoice (pp. 6-7, 25)
 
@@ -154,19 +169,21 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 >
 > El sistema de registro académico que usa el docente: el estudiante gestiona inscripción de materias, paralelos y horarios; cada paralelo tiene estados (**abierto / en lista de espera / cerrado por falta de cupos**); el sistema valida prerrequisitos y conflictos de horario; los administradores fijan políticas (fechas límite, periodos especiales por grupo).
 >
-> ![[Archivos/04a-p25-diagrama-clases.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p25-diagrama-clases.png]]
 
 > [!example] 🔍 Para comparar con tu SIEL
+>
 > Mismo esqueleto: actor externo + **estado** de la entidad + **políticas** de un administrador. Si tu diagrama del SIEL no tiene quién administra las políticas (reparto de actas, anulación de-results), le falta el actor `Administrador`.
 
 ### 🖼️ Figuras del deck (capítulos 11-25)
 
 > [!example]- 🖼️ Elementos de clase, visibilidad y notación de relaciones
-> ![[Archivos/04a-p11-clase-uml.png]]
 >
-> ![[Archivos/04a-p12-visibilidad.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p11-clase-uml.png]]
 >
-> ![[Archivos/04a-p18-notacion-relaciones.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p12-visibilidad.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p18-notacion-relaciones.png]]
 
 ---
 
@@ -197,7 +214,9 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Relación Uso?
 
-![[../Diagramas/dsw-u2-04-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Relación Uso
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -367,16 +386,19 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Dibujo la caja UML con visibilidades correctas.
 > - [ ] Distingo las 6 relaciones con ejemplo propio.
 > - [ ] Pongo multiplicidad en ambos extremos siempre.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Modelo un dominio chico (biblioteca, reservas) completo y consistente.
 > - [ ] Decido agregación vs composición con la prueba de supervivencia.
 > - [ ] Detecto herencias falsas y las corrijo.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Divido diagramas grandes en paquetes con criterio.
 > - [ ] Diseño el diagrama de clases de mi proyecto con herencia real.
 > - [ ] Conecto clases con casos de uso (siguiente nota).
@@ -385,7 +407,9 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u2-04-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

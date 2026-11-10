@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph DEBIL["Entidad débil — rectángulo doble"]
+        direction LR
+        EMP["<b>EMPLOYEE</b><br/>PK propia"]
+        DEP["<b>DEPENDENT</b><br/>PK heredada"]
+
+        EMP --- DEP
+    end
+
+    subgraph FUERTE["Entidad fuerte — rectángulo simple"]
+        direction LR
+        CUR["<b>CURSO</b><br/>PK propia"]
+        CLA["<b>CLASE</b><br/>PK propia"]
+
+        CUR --- CLA
+    end
+
+    N1["rectángulo doble = débil"]
+    N2["línea sólida = fuerte"]
+    DEBIL --- N1
+    FUERTE --- N2
+
+    classDef fuerte fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef debil fill:#ffffff,stroke:#000000,stroke-width:4px
+    classDef nota fill:#fff4e6,stroke:#e69138,stroke-width:1px,stroke-dasharray:4 3
+    class EMP,CUR,CLA fuerte
+    class DEP debil
+    class N1,N2 nota

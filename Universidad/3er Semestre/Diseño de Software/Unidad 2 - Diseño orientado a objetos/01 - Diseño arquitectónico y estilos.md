@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > | **Atributos** | Rendimiento por accidente | Decisiones que garantizan calidad |
 > | **Costo del cambio** | Exponencial | Localizado por capa |
 
-![[../Diagramas/dsw-u2-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-01-graph.svg]]
 
 ---
 
@@ -49,12 +51,20 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!note] 📖 El deck de cátedra: los dos niveles en una sola página (01b, pp. 14-19)
 > "Dos niveles de diseño de software: 1. Diseño de alto nivel o arquitectural 2. Diseño detallado". El deck separa el **qué se decide** en cada uno con una lista explícita, que es la que se usa en el examen.
 
-![[Archivos/01b-p16.png]]
+> [!note] 🖼️ captura 01b-p16 — Dos Niveles: Arquitectural vs Detallado (Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p16.png]]
 
+> [!note] 💡 Qué decide el diseño arquitectural (deck, p. 17)
+>
 > **Qué decide el diseño arquitectural (deck, p. 17):** plataforma tecnológica · despliegue físico del sistema y sus subsistemas · estructura de componentes · intercomunicación (protocolos) · atributos no funcionales (desempeño, seguridad, robustez, escalabilidad) · concurrencia.
 
-![[Archivos/01b-p17.png]]
+> [!note] 🖼️ captura 01b-p17 — Dos Niveles: Arquitectural vs Detallado (Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p17.png]]
 
+> [!note] 💡 Qué se refina en el diseño detallado (deck, p. 19)
+>
 > **Qué se refina en el diseño detallado (deck, p. 19):** componentes → clases · interfaces a implementar · relaciones entre clases · patrones y estrategias de implementación.
 
 ---
@@ -82,35 +92,36 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 ### 📖 Los cinco estilos del deck, con su figura
 
 > [!info] 🖼️ Los estilos del deck 01b (pp. 20-31)
+>
 > El deck recorre **cinco** estilos, en este orden y con esta figura cada uno. Los cuatro primeros son de Pressman cap. 10; el quinto (orientada a objetos) es el puente hacia las Unidades 2-3.
 
 > [!info] 💡 Los cinco estilos del deck, con su figura
 >
 > **1 · Arquitectura centrada en datos** — un repositorio de datos al que otros componentes acceden para actualizar, agregar, eliminar o leer. El deck avisa: el repositorio se convierte en cuello de botella.
 >
-> ![[Archivos/01b-p22.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p22.png]]
 >
-> ![[Archivos/01b-p23.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p23.png]]
 >
 > **2 · Arquitectura de flujo de datos** — un dato de entrada se transforma en un dato de salida a través de una serie de componentes de manipulación.
 >
-> ![[Archivos/01b-p25.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p25.png]]
 >
-> ![[Archivos/01b-p26.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p26.png]]
 >
 > **3 · Arquitectura en capas** — varias capas, cada una con operaciones que se acercan progresivamente al conjunto de datos.
 >
-> ![[Archivos/01b-p28.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p28.png]]
 >
-> ![[Archivos/01b-p29.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p29.png]]
 >
 > **4 · Arquitectura de llamada y retorno** — estructura de programa modificable y escalable, donde un componente llama a otro y recibe el control de vuelta.
 >
-> ![[Archivos/01b-p30.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p30.png]]
 >
 > **5 · Arquitectura orientada a objetos** — los componentes encapsulan datos y operaciones para manipularlos; cada componente tiene responsibilities.
 >
-> ![[Archivos/01b-p31.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p31.png]]
 
 ### 🎭 MVC: Modelo-Vista-Controlador (Semana 4)
 
@@ -126,27 +137,41 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 >
 > **Flujo de una petición web:** usuario → **Controlador** (selecciona vista + pide datos) → **Modelo** (lee BD, calcula) → **Vista** (formatea) → browser. El Controlador coordina; Modelo y Vista no se hablan directo.
 >
-> ![[../Diagramas/dsw-u2-02-02-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-02-flow.svg]]
 >
 > **Conexión SOLID:** MVC es SRP a nivel arquitectura — si cambia la UI solo toca la Vista; si cambia la regla, solo el Modelo. Una Vista con lógica de negocio es el mismo pecado que `Employee` generando PDFs (ver caso [[../Unidad 0 - Guias y Ejercicios/Material de clase/Main.java]] en U1-04).
 >
-> 📎 Slides de clase: ![[../Unidad 0 - Guias y Ejercicios/Diapositivas/04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11).
+> 📎 Slides de clase: [[../Unidad 0 - Guias y Ejercicios/Diapositivas/04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf|04PrincipiosDiseñoAplicadosDesarrollo_MVC-1.pdf]] (Semana 4, MSc. Jurado / Dr. Mera 2020: SOLID + MVC + lecturas Martin caps. 7–11). Las láminas relevantes están capturadas abajo, página por página.
 
 > [!info] 📖 El deck de MVC en detalle (04p, pp. 44-49)
 > El deck explica por qué MVC nació: *"en 1988 se empezó a argumentar que las aplicaciones deben ser construidas usando capas, de manera que los diferentes componentes puedan aislarse y modificarse por separado"*.
 
-![[Archivos/04p-p45.png]]
+> [!note] 🖼️ captura 04p-p45 — Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p45.png]]
 
+> [!note] 💡 Las tres capas según el deck (p. 46)
+>
 > **Las tres capas según el deck (p. 46):** el **modelo** contiene objetos de contenido, el acceso a fuentes de información/datos y el procesamiento de la funcionalidad específica; la **vista** maneja la presentación; el **controlador** interpreta las peticiones.
 
-![[Archivos/04p-p47.png]]
+> [!note] 🖼️ captura 04p-p47 — Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p47.png]]
 
-![[Archivos/04p-p48.png]]
+> [!note] 🖼️ captura 04p-p48 — Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p48.png]]
 
+> [!note] 💡 La figura al detalle (p. 48)
+>
 > **La figura al detalle (p. 48):** las peticiones del usuario o los datos los maneja el **controlador**; el controlador selecciona el objeto vista que se debe mostrar y se lo pasa al modelo; el modelo interactúa con la base de datos y devuelve el resultado.
 
-![[Archivos/04p-p49.png]]
+> [!note] 🖼️ captura 04p-p49 — Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p49.png]]
 
+> [!note] 💡 Ejemplo del deck (p. 49)
+>
 > **Ejemplo del deck (p. 49):** una arquitectura de **4 capas**, cortesía del Dr. Rami Bahsoon — la variante con más capas que MVC simple, útil para separar además la capa de persistencia.
 
 ### 🔍 Vistas Mínimas: Componentes y Despliegue
@@ -163,7 +188,9 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Estilo Elijo?
 
-![[../Diagramas/dsw-u2-02-03-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Estilo Elijo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -296,16 +323,19 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino arquitectura y diferencio los dos niveles con su entregable.
 > - [ ] Nombro las 4 partes de un estilo y 4 estilos con su caso de uso.
 > - [ ] Dibujo vistas de componentes y despliegue de un sistema simple.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Elijo estilo con el diagrama de decisión y lo justifico por escrito.
 > - [ ] Detecto atajos entre capas y los corrijo con la regla UI→Servicio→Datos.
 > - [ ] Redacto un ADR corto que otro pueda entender sin mí.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Diagnostico cuellos de botella de una arquitectura centrada en datos.
 > - [ ] Diseño una ruta de extracción de microservicio desde un monolito.
 > - [ ] Decido despliegue, plataforma y protocolos de un caso nuevo.
@@ -314,7 +344,9 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u2-02-04-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

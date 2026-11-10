@@ -1,0 +1,16 @@
+flowchart TB
+    H["¿Tabla en 1FN?"]
+    C1{"¿Filas con orden<br/>o duplicadas?"}
+    R1["❌ Falla 1 o 3"]
+    C2{"¿Columnas con orden<br/>o ids ocultos?"}
+    R2["❌ Falla 2 o 5"]
+    C3{"¿Celda con<br/>varios valores?"}
+    R3["❌ Falla 4"]
+    O["✅ 1FN"]
+    H --> C1
+    C1 -->|"Sí"| R1
+    C1 -->|"No"| C2
+    C2 -->|"Sí"| R2
+    C2 -->|"No"| C3
+    C3 -->|"Sí"| R3
+    C3 -->|"No"| O

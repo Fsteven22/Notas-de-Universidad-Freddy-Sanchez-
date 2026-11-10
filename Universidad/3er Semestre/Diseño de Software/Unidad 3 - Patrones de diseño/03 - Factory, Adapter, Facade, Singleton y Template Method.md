@@ -31,7 +31,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > | **Singleton** | Creacional | Una sola instancia global ⚠️ |
 > | **Template Method** | Comportamiento | Esqueleto fijo + pasos variables |
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-01-graph.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -106,7 +108,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Patrón de Creación/Estructura?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Patrón de Creación/Estructura
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-02-flow.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -247,16 +251,19 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino los 5 patrones con familia y ejemplo.
 > - [ ] Diferencio Facade de Adapter con criterio.
 > - [ ] Explico por qué Singleton mutable es peligroso.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Diseño Factory/Adapter/Facade para casos nuevos.
 > - [ ] Decido Template vs Strategy según fijeza del esqueleto.
 > - [ ] Migro un Singleton con estado a inyección.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Combino 3+ patrones en un diseño justificado.
 > - [ ] Pongo fecha de muerte a adaptadores temporales.
 > - [ ] Diseño puntos de extensión de frameworks (Template vs Strategy).
@@ -265,7 +272,9 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-03-mind.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -315,11 +324,25 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 ## 📄 Capturas de la clase
 
 > [!quote] 🏭 Pizarra de la clase
+>
 > Las capturas de la clase de **patrones creacionales**, reunidas en un documento con portada,
 > índice y paginación (19 páginas):
+>
 > [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]]
-
-![[../Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales - capturas de clase.pdf]]
+>
+> **Se lee así:** la portada del documento identifica la sesión (**CCPG1042 · Diseño de Software**,
+> Unidad 3, 04/11/2026) y aclara que las **17 capturas** van en el **orden real en que se
+> tomaron**, una por página; el índice de la página 2 dice de qué archivo salió cada una.
+>
+> **Por qué importa:** estas capturas son la pizarra de la clase donde el docente dibuja **Factory,
+> Adapter, Facade, Singleton y Template Method** uno por uno. Como van en orden de exposición, la
+> página 3 es el punto de partida y las siguientes van encadenando un patrón con el anterior.
+>
+> **Ejemplo:** antes del parcial de U3, repasa la secuencia completa en el índice de la nota
+>
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales]]
+> para que la derivación de cada patrón te suene en el orden en que la viste, no como una lista
+> suelta de definiciones.
 
 ## 🔗 Seguir estudiando
 

@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > | **Documentación** | README que miente | Tests que muestran uso real |
 > | **Nota** | Validación improvisada | Evidencia de calidad |
 
-![[../Diagramas/dsw-u5-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-01-graph.svg]]
 
 ---
 
@@ -97,7 +99,9 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Tipo de Prueba Escribo?
 
-![[../Diagramas/dsw-u5-02-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Tipo de Prueba Escribo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -239,16 +243,19 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Escribo un test AAA completo con JUnit 5 sin mirar.
 > - [ ] Elijo la aserción correcta para cada caso.
 > - [ ] Explico el ciclo de vida con ejemplo propio.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Cubro ramas y bordes sistemáticamente.
 > - [ ] Sustituyo dependencias reales por fakes/mocks.
 > - [ ] Diagnostico tests orden-dependientes y los independizo.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Diseño suites separadas (unitarias vs integración) con criterio.
 > - [ ] Critico "cobertura 100%" con argumento y ejemplo.
 > - [ ] Escribo la política de tests de mi equipo.
@@ -257,7 +264,9 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u5-02-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

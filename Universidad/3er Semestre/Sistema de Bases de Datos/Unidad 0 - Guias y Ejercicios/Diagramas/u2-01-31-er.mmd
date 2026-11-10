@@ -1,0 +1,9 @@
+erDiagram
+    EMPLEADO {
+        idEmp int PK
+    }
+    VENDEDOR {
+        idEmp int PK, FK
+        numVentas int
+    }
+    EMPLEADO ||--o| VENDEDOR : "✅ BIEN: PK heredada"

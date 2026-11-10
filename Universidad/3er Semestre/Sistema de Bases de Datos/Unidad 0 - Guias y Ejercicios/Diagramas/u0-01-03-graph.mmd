@@ -1,0 +1,20 @@
+flowchart TB
+    subgraph CARD["Cardinalidad — (min, max) en cada extremo"]
+        direction LR
+        PROF["<b>PROFESOR</b> (1,1)"]
+        DICT{"dicta"}
+        CLAS["<b>CLASE</b> (1,4)"]
+
+        PROF --- DICT
+        DICT --- CLAS
+    end
+
+    NOTA["mínimo y máximo asociados a cada extremo"]
+    CARD --- NOTA
+
+    classDef ent fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef rel fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef nota fill:#fff4e6,stroke:#e69138,stroke-width:1px,stroke-dasharray:4 3
+    class PROF,CLAS ent
+    class DICT rel
+    class NOTA nota

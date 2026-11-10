@@ -1,0 +1,10 @@
+flowchart TB
+    SQL["SQL"] --> DDL["DDL<br/>Data Definition Language"]
+    SQL --> DML["DML<br/>Data Manipulation Language"]
+    SQL --> DCL["DCL<br/>Data Control Language"]
+    DDL --> D1["CREATE / ALTER / DROP<br/>tablas, vistas, índices"]
+    DML --> M1["SELECT / INSERT<br/>UPDATE / DELETE"]
+    DCL --> C1["GRANT / REVOKE<br/>privilegios"]
+    style DDL fill:#fff4e1
+    style DML fill:#e1f5ff
+    style DCL fill:#f3e5f5

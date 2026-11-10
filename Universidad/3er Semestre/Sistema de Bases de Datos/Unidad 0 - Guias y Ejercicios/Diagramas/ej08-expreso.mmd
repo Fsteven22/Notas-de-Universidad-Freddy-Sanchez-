@@ -1,0 +1,25 @@
+erDiagram
+    PERSONA {
+    }
+    ROL {
+    }
+    CHOFER {
+    }
+    ASIGNACION {
+    }
+    BUSETA {
+    }
+    RUTA {
+    }
+    ESTUDIANTE {
+    }
+    ASISTENCIA {
+    }
+    PARADA {
+    }
+    PERSONA ||--o{ ROL : tiene
+    CHOFER ||--o{ ASIGNACION : recibe
+    BUSETA ||--o{ ASIGNACION : cubre
+    RUTA ||--o{ ASIGNACION : forma
+    ESTUDIANTE ||--o{ ASISTENCIA : marca
+    RUTA ||--o{ PARADA : contiene

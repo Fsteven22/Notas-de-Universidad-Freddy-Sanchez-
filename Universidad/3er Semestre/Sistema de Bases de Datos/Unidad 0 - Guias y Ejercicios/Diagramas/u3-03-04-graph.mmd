@@ -1,0 +1,18 @@
+flowchart LR
+    subgraph my_svg_SQL["Equivalente en SQL"]
+    end
+    subgraph my_svg_ALG["Álgebra relacional"]
+    end
+    R["ρ<br/>renombre"]
+    G["γ<br/>agregación"]
+    O["τ<br/>orden"]
+    R2["AS<br/>alias"]
+    G2["GROUP BY<br/>+ COUNT, SUM, AVG"]
+    O2["ORDER BY<br/>ASC / DESC"]
+    R --> G
+    G --> O
+    R2 --> G2
+    G2 --> O2
+    R --> R2
+    G --> G2
+    O --> O2

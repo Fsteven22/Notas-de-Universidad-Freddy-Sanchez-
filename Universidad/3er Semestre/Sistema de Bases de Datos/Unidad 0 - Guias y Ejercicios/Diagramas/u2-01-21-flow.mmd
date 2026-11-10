@@ -1,0 +1,28 @@
+flowchart TB
+    A["Mira la cardinalidad"]
+    B{"Es M:N o ternaria?"}
+    C["Tabla intermedia<br/>con PK,FK de cada lado"]
+    D{"Es 1:M?"}
+    E["FK del padre 1<br/>en el hijo M"]
+    F{"Es 1:1?"}
+    G{"Participacion?"}
+    H["Propaga PK del 1,1<br/>al 0,1"]
+    I["Padre-Hijo:<br/>PK padre al hijo"]
+    J["Unifica en<br/>una tabla"]
+    K{"Es especial?"}
+    L["Tabla por tipo<br/>PK,FK heredada"]
+    M["PK fuerte como<br/>PK,FK"]
+    N["FK a si misma<br/>o intermedia doble"]
+    A --> B
+    B -->|"Si"| C
+    B -->|"No"| D
+    D -->|"Si"| E
+    D -->|"No"| F
+    F -->|"Si"| G
+    G -->|"(0,1)-(1,1)"| H
+    G -->|"Parcial"| I
+    G -->|"1,1-1,1"| J
+    F -->|"No"| K
+    K -->|"Supertipo"| L
+    K -->|"Debil"| M
+    K -->|"Recursiva"| N

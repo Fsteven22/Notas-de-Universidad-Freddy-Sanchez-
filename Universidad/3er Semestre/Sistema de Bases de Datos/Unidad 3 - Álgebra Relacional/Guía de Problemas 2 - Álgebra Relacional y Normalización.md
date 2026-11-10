@@ -1,12 +1,15 @@
 ---
 dg-publish: true
-tags: [TICG1018, unidad1, guia, taller2, bd]
+tags: [TICG1018, unidad3, guia, taller2, algebra-relacional, normalizacion, bd]
 ---
 
 # 📝 Guía de Problemas 2 — Álgebra Relacional y Normalización (Taller 2)
 
+## 🎯 Introducción
+
 > [!info] ℹ️ Qué es esta guía
-> Desarrollo completo del **Taller 2 (PAO 1 2026)**: 4 consultas de **álgebra relacional** (con la solución oficial del taller como base, explicada paso a paso) + la normalización **1FN→2FN→3FN** del hotel. Material puente entre la nota [[03 - Modelo relacional, ERM y casos Tiny College]] (operadores del álgebra) y [[03 - Segunda y tercera forma normal]] / [[04 - Normalización paso a paso]].
+>
+> Desarrollo completo del **Taller 2 (PAO 1 2026)**: 4 consultas de **álgebra relacional** (con la solución oficial del taller como base, explicada paso a paso) + la normalización **1FN→2FN→3FN** del hotel. Material puente entre la nota [[../Unidad 1 - Modelos de Datos y ER/03 - Modelo relacional, ERM y casos Tiny College]] (operadores del álgebra) y [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] / [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]].
 >
 > | Bloque | Tema | Ejercicios | Alimenta |
 > |---|---|---|---|
@@ -15,26 +18,50 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > | B | Normalización del hotel | 1FN, 2FN, 3FN | U2-03 y U2-04 |
 >
 > 📎 Esquema de referencia del taller (algebra): `RESERVA`, `PASAJERO`, `VUELO`, `AVION`, `AEROLINEA`, `AEROPUERTO`.
+>
+> **Se lee así:** el bloque A enseña a *escribir* la consulta en álgebra y el bloque B a *romper* una tabla mal diseñada. Los dos usan la misma lógica: primero decides qué filas y qué columnas quieres (σ, π), después decides de dónde vienen (⨝, γ, ρ).
 
-![[../Unidad 0 - Guias y Ejercicios/Talleres/Taller 2 PAO-2026-1  SOL.pdf]]
+> [!info] 📖 El enunciado y la solución oficial del taller (Taller 2, pp. 1-3)
+> Los PDFs del taller son material de clase y no se embeben: cada página se cita con su captura.
+>
+> **Taller 2 — álgebra relacional, enunciado y primera solución (`Taller 2 PAO-2026-1  SOL.pdf`, p. 1):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller2-p1.png]]
+>
+> **Las consultas 2, 3 y 4 + el enunciado de normalización (p. 2):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller2-p2.png]]
+>
+> **La tabla de reservas a normalizar (p. 3):**
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Talleres/bd-taller2-p3.png]]
+>
+> **Se lee así:** esta es la **solución comentada** del taller, y está escrita como una cadena de tres pasos que se leen de arriba abajo. Primero la **1FN**: la columna `Habitaciones` guarda algo como `"101:Doble, 102:Doble"` — un valor compuesto y repetido — así que se rompe en filas sueltas (`NumHabitacion`, `TipoHabitacion`) y, como `ReservaID` se repite en esas filas nuevas, la PK pasa a ser **compuesta** `(ReservaID, NumHabitacion)`. Luego la **2FN**: `TipoHabitacion` depende solo de `NumHabitacion`, y los datos de la reserva dependen solo de `ReservaID`, así que salen dos tablas (`Habitacion` y `Reserva_Detalle`) y queda la `Reserva`. Y por último la **3FN**: en la `Reserva` que quedó, `ClienteNombre` depende de `ClienteID`, y `ClienteID` depende de `ReservaID` — una transitiva clásica —, así que el cliente se extrae a su propia tabla.
+>
+> **Por qué importa:** es el mismo protocolo de la nota 04 aplicado a un caso real de la carrera, y por eso sirve como plantilla: **la 1FN siempre va primero** (si no partes los valores repetidos, las DFs que veas después son falsas), **la PK se vuelve compuesta en cuanto rompes un grupo**, y **cada atributo que "sobra" en una tabla se va con su determinante**. Al final quedan cuatro tablas y ninguna repite datos.
+>
+> **Ejemplo:** el error clásico aquí es quedarse en la 1FN y entregar la tabla con `Habitaciones` como texto. El enunciado pide el *esquema final en 3FN*, así que la respuesta incompleta no es "tabla con menos campos", sino **más tablas**: `Cliente`, `Habitacion`, `Reserva` y `Reserva_Habitacion`.
 
 ---
 
-## 🅰️ Bloque A — Álgebra Relacional (4 consultas)
+## 📝 Ejercicios Propuestos
+#### 🅰️ Bloque A — Álgebra Relacional (4 consultas)
 
 > [!tip] 📌 Cómo atacar cada consulta
+>
 > 1. Marca las tablas que participan y **sus claves** (si los nombres difieren, el `⨝` necesita condición explícita).
 > 2. Encadena joins **antes** de filtrar (σ) y proyectar (π).
 > 3. Reglas rápidas: `σ` = WHERE, `π` = SELECT de columnas, `γ` = GROUP BY con agregados, `-` = NOT IN / NOT EXISTS, `ρ` = alias para usos múltiples de la misma tabla.
 > 4. Los operadores nuevos de clase (`X`, `⟕/⟖`, `⋉`, `τ`) están en el catálogo con el ejemplo PRODUCTO × VENTA justo debajo.
 
-### 📚 Catálogo de operadores del álgebra (diapositivas 3.1 / 3.2)
+#### 📚 Catálogo de operadores del álgebra (diapositivas 3.1 / 3.2)
 
 > [!info] 🔗 Catálogo de operadores del álgebra (diapositivas 3.1 / 3.2)
 >
 > Referencia rápida tomada de las diapositivas de clase (Unidad 3 — álgebra relacional). Vive junto a los 4 ejercicios porque varios operadores aparecen disfrazados en los enunciados.
 
 > [!note] 📚 Catálogo de operadores del álgebra
+>
 > | Operador | Símbolo | Qué hace | SQL mental |
 > |---|---|---|---|
 > | Selección | `σ` | Filtra **filas** que cumplen una condición | `WHERE` |
@@ -52,6 +79,7 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > | Orden | `τ` | Ordena las filas asc / desc | `ORDER BY` |
 
 > [!example] 🧪 Ejemplo guía de la casa (PRODUCTO × VENTA, de las diapositivas)
+>
 > | CODIGO | DESCRIPCION | PRECIO |
 > |---|---|---|
 > | 101 | Pasta | 3.50 |
@@ -74,47 +102,68 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > | `τ precio desc (PRODUCTO)` | 105, 101, 104 — del más caro al más barato |
 
 > [!info] 📖 El deck de cátedra: cada operador con su figura (slides05, pp. 4-27)
+>
 > El deck del Ing. Magallanes recorre el álgebra relacional operador por operador, con ejemplos numéricos. Estas son las figuras que corresponden al catálogo de arriba.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p5.png]]
+>
+> **Se lee así:** la lámina (p. 5) es la **selección con dos condiciones encadenadas**, y por eso es la que explica cómo se combinan. La tabla `Product` tiene seis filas (`maker, model, type`): cuatro `pc` (1001-1003) y dos `laptop` (2004, 2005)… y la condición es `σ type='laptop' ∧ model≥2005 (Product)`. Debajo, el resultado `R` con solo las filas que cumplen **las dos** condiciones a la vez: `A · 2005 · laptop` y `A · 2006 · laptop`. Abajo del todo, la **forma general**: `R2 = σ <condición> (R1)`, con la nota *"operar sobre la nueva relación"*.
+>
+> **Por qué importa:** el `∧` es lo que cambia respecto a la selección simple: con `type='laptop'` solo, saldrían también los modelos 2004 y 2006… es decir, `model≥2005` **filtra dentro** del resultado anterior. Y la forma general de abajo es la que se repite en todo el tema: **cada operador recibe una relación y devuelve otra relación**, así que se pueden encadenar sin problemas.
+>
+> **Ejemplo:** el `A` en la primera columna es el *maker* (el fabricante), no una letra de la condición. La condición completa se lee: de todos los productos, quédate con los que son *laptop* **y** además son del modelo 2005 en adelante. La conjunción se evalúa primero y el resultado se puede ir acotando paso a paso.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p7.png]]
+>
+> **Se lee así:** la lámina (p. 7) es **la composición de operaciones** — dos operadores encadenados: `π maker, type (σ type='laptop' ∧ model≥2005 (Product))`. Y lo interesante es que la lámina dibuja un **diagrama de ejecución con los pasos numerados en orden inverso**: `3 → 2 → 1`. El resultado final tiene solo dos columnas (`maker`, `type`) con tres filas: `A · laptop`, `F · laptop`, `G · laptop`.
+>
+> **Por qué importa:** ese diagrama de ejecución es la explicación visual de por qué **se proyecta después de filtrar**. El paso 1 (abajo) es la selección, el 2 es la proyección y el 3 es el resultado; pero el motor **los ejecuta al revés**, de adentro hacia afuera: primero filtra (1), luego proyecta (2), y por último entrega (3). El orden de escritura va de afuera hacia adentro; el de ejecución, de adentro hacia afuera.
+>
+> **Ejemplo:** los makers `A`, `F` y `G` que salen son los que tienen **algún** laptop del modelo 2005 en adelante. Fíjate en que `F` y `G` no estaban en el `Product` de la lámina anterior: son filas que la selección anterior no mostraba porque esa lámina usaba otros datos. La idea no cambia: el resultado tiene **menos columnas** y **solo las filas que cumplen la condición**.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p9.png]]
+>
+> **Se lee así:** la lámina (p. 9) es el **producto cartesiano con el esquema del resultado**, y es la lámina que mejor explica por qué el `×` casi nunca se quiere. `Department` tiene 3 filas (Biology, Comp. Sci., History) y `Course` tiene 4 (BIO-301, BIO-399, CS-101, CS-190) → **12 filas**. La lámina dibuja además el esquema del resultado: `R(department.dept_name, department.building, department.budget, course.course_id, course.title, course.dept_name, course.credits)` — y avisa: *"en caso de que R1 y R2 tengan columnas con el mismo nombre, el resultado tendrá estas 2 columnas"*.
+>
+> **Por qué importa:** fíjate en el esquema: aparecen **`department.dept_name` y `course.dept_name`**, las dos. Es el detalle técnico que distingue el producto cartesiano del natural join: el producto **conserva las dos columnas** aunque se llamen igual, y para poder distinguirlas el motor las califica con el nombre de la tabla. Ese es el motivo por el que el `×` se llama también "producto cruzado con esquema-qualified".
+>
+> **Ejemplo:** de las 12 filas, solo 4 tienen sentido: cada curso con **su** departamento. Las otras 8 emparejan un curso de Biology con el edificio de Comp. Sci. y así sucesivamente. De ahí la necesidad del join.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p15.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p16.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p18.png]]
+>
+> **Se lee así (los joins, pp. 15-18):** estas tres láminas son el bloque de joins del deck, y se leen como una progresión. La **p. 15** es el natural join (`department ⨝ course`): el resultado tiene `dept_name` **una sola vez** y las filas que no casan desaparecen. La **p. 16** es el *left outer join* (`R ⟕ S`): las filas de `R` que no encuentran pareja se quedan con `-` en las columnas de `S`. Y la **p. 18** es el *theta join* (`R ⨝c S`): un join con **cualquier condición de comparación**, y con el aviso de que si la condición solo tiene igualdades, es un *equi-join*.
+>
+> **Por qué importa:** la diferencia entre las tres se ve en **qué filas sobreviven**. En el natural join sobreviven las que casan por las dos partes; en el left outer sobreviven **todas** las de la izquierda; en el theta join lo decide la condición `C`, que puede ser cualquier cosa. Si solo te sabe una de las tres, es casi seguro que la vas a confundir con otra.
+>
+> **Ejemplo:** en la p. 16, el curso `CS-190 Game Design` aparece con `dept_name = -` porque no tiene departamento asignado, y el departamento `History` aparece con todos los campos de `course` en `-` porque no tiene cursos. En la p. 15, en cambio, History **desaparece**: es un join interno.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p20.png]]
+>
+> **Se lee así (la división, p. 20):** la lámina es el ejemplo numérico de la división, con `A(sno, pno)` y los divisores `B1`, `B2` y `B3`. La regla que rotula la lámina es: *"el resultado de la división contiene todos los valores de las columnas no comunes, que están asociadas con todas las filas del divisor"*. Los resultados son `A ÷ B1 = {s1, s2, s3, s4}`, `A ÷ B2 = {s1, s4}` y `A ÷ B3 = {s1}`.
+>
+> **Por qué importa:** la palabra clave de la lámina es **"todas"**. La división no es un join: un join te da las filas que casan *con alguna* fila de la otra relación; la división te da las que casan *con todas*. Y el caso `B3` muestra la versión fuerte: el divisor puede pedir el mismo valor **dos veces**, y entonces la fila de `A` tiene que dos veces también.
+>
+> **Ejemplo:** `A ÷ B2 = {s1, s4}` quiere decir que `s1` y `s4` son los únicos que aparecen **con todos** los `pno` que pide `B2`. `s2` aparece con `p1` y `p2` pero le falta `p4`, así que no sale. Esa es exactamente la lógica de "ítems ordenados por todos los clientes".
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p24.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Modelos-ER/bd-s05-p26.png]]
+>
+> **Se lee así (las agregaciones, pp. 24 y 26):** la **p. 24** explica la agregación sin agrupar: `G sum(rating) (R)` sobre la relación `Marinero` (`mid, mnombre, rating, edad`) da `135`; `G max(rating) (R)` da `10`; `G min(edad) (R)` da `35`; `G avg(rating) (R)` da `8.3`; `G count(rating) (R)` da `3`. Y explica la notación: *"Gamma significa que se debe aplicar una función agregación, y el subíndice indica la operación de agregación a aplicar"*. La **p. 26** añade el **agrupamiento**: `nombre-sucursal G sum(sueldo) (R)` da `Centro · 5300`, `Leganés · 3100`, `Navacerrada · 8100`.
+>
+> **Por qué importa:** las dos láminas juntas explican por qué el `G` (o `γ`) del álgebra **no se parece** al `GROUP BY` de SQL: en álgebra el agrupamiento va **dentro del operador** (`γ columna-de-agrupamiento; función → atributo`), mientras que en SQL es una cláusula aparte (`GROUP BY columna`). No es que sean distintos: es que el álgebra mete en una sola caja lo que SQL separa en dos.
+>
+> **Ejemplo:** `G sum(rating) (R)` sin columna de agrupamiento es el agregado global: una sola fila con la suma de todos los ratings. `nombre-sucursal G sum(sueldo) (R)` es el agregado por grupo: una fila por cada valor distinto de `nombre-sucursal`. El primero responde *"¿cuánto es el total?"*; el segundo, *"¿cuánto es el total de cada sucursal?"*.
 
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p5.png]]
-
-> **Selección (p. 5):** la condición puede ser uno o varios términos unidos con operadores lógicos (`and`, `∧`, `or`, `∨`). El ejemplo del deck: `σ type='laptop' ∧ model≥2005 (Product)`.
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p7.png]]
-
-> **Proyección y composición (p. 7):** `π maker, type (σ type='laptop' ∧ model≥2005 (Product))` — el deck dibuja el **diagrama de ejecución** con los pasos numerados (3 → 2 → 1) y el resultado. Es la mejor explicación de por qué se proyecta *después* de filtrar.
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p9.png]]
-
-> **Producto cartesiano (p. 9):** el ejemplo `Department ⨯ Course` del deck muestra por qué el producto casi nunca es lo que quieres — de ahí la necesidad del join.
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p15.png]]
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p16.png]]
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p18.png]]
-
-> **Joins (pp. 15-18):** el deck presenta el **natural join** (`department ⨝ course`), el **left outer join** (`R ⟕ S`) y el **theta join** (`R ⨝c S`), con el resultado tabulado en cada caso.
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p20.png]]
-
-> **División (p. 20):** *"es útil para consultas que incluye la expresión 'para todo' o 'para cada'"* — es el operador del ejercicio de la casa que pide los items ordenados por todos los clientes.
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p24.png]]
-
-![[../Unidad 1 - Modelos de Datos y ER/Archivos/bd-s05-p26.png]]
-
-> **Agregaciones (pp. 23-26):** `γ` agrupa y calcula (`G sum(rating) (R)`, `G count(mid) (Marinero)`, `G avg(edad) (σ rating=10 (Marinero))`) y el **agrupamiento** aplica la función por grupos de datos.
-
-![[../Unidad 0 - Guias y Ejercicios/Diapositivas/3.1 Operaciones Básicas_2025.pdf]]
-
-![[../Unidad 0 - Guias y Ejercicios/Diapositivas/3.2 Operaciones Derivadas-join-order2026.pdf]]
-
-### ✏️ Ejercicio 1 — Pasajeros del vuelo 777 "boeing" de American Airlines
-
+#### ✏️ Ejercicio 1 — Pasajeros del vuelo 777 "boeing" de American Airlines
 > [!example]- 📝 Enunciado y desarrollo
 >
-> **Enunciado:** listar los pasajeros (nombres, apellidos y `num_pasaporte`) del vuelo 777, modelo boeing, de la aerolínea "American Airlines".
+>
+> > **Enunciado:** listar los pasajeros (nombres, apellidos y `num_pasaporte`) del vuelo 777, modelo boeing, de la aerolínea "American Airlines".
 >
 > > [!success]- ✅ Solución (oficial del taller, explicada)
 > >
@@ -156,12 +205,11 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > WHERE v.vuelo_id = 777 AND a.modelo = 'boeing'
 > >   AND al.nombre = 'American Airlines';
 > > ```
-
-### ✏️ Ejercicio 2 — Modelos con rango > 5000 km de aerolíneas con más de 50 aeronaves
-
+#### ✏️ Ejercicio 2 — Modelos con rango > 5000 km de aerolíneas con más de 50 aeronaves
 > [!example]- 📝 Enunciado y desarrollo
 >
-> **Enunciado:** listar los modelos de aviones con rango mayor a 5000 km que pertenecen a aerolíneas con más de 50 aeronaves.
+>
+> > **Enunciado:** listar los modelos de aviones con rango mayor a 5000 km que pertenecen a aerolíneas con más de 50 aeronaves.
 >
 > > [!success]- ✅ Solución (oficial del taller, explicada)
 > >
@@ -192,12 +240,11 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > >     GROUP BY av.aerolinea_id
 > >     HAVING COUNT(av.avion_id) > 50);
 > > ```
-
-### ✏️ Ejercicio 3 — Aerolíneas que no vuelan hoy
-
+#### ✏️ Ejercicio 3 — Aerolíneas que no vuelan hoy
 > [!example]- 📝 Enunciado y desarrollo
 >
-> **Enunciado:** listar los nombres de las aerolíneas que no tienen vuelos para el día de hoy (`hora_salida`).
+>
+> > **Enunciado:** listar los nombres de las aerolíneas que no tienen vuelos para el día de hoy (`hora_salida`).
 >
 > > [!success]- ✅ Solución (oficial del taller, explicada)
 > >
@@ -210,12 +257,11 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > - Queremos las aerolíneas **ausentes** en el conjunto de vuelos de hoy — la negación no se expresa con `σ` (que solo compara atributos) sino con **diferencia de conjuntos**.
 > > - El operando izquierdo trae TODAS las aerolíneas; el derecho, las que tienen un vuelo con `hora_salida = HOY` (join con VUELO y filtro).
 > > - En SQL mental: `NOT EXISTS` o `NOT IN` sobre la subconsulta de vuelos de hoy.
-
-### ✏️ Ejercicio 4 — Vuelos de hoy que aterrizan en el mismo país, ciudad distinta
-
+#### ✏️ Ejercicio 4 — Vuelos de hoy que aterrizan en el mismo país, ciudad distinta
 > [!example]- 📝 Enunciado y desarrollo
 >
-> **Enunciado:** listar los vuelos que salieron y llegaron hoy al mismo país pero a ciudades diferentes.
+>
+> > **Enunciado:** listar los vuelos que salieron y llegaron hoy al mismo país pero a ciudades diferentes.
 >
 > > [!success]- ✅ Solución (oficial del taller, explicada)
 > >
@@ -231,14 +277,12 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > 1. `ρ` (renombrar): se usa la MISMA tabla `AEROPUERTO` dos veces — una como aeropuerto de salida (alias `S`) y otra como de llegada (alias `L`). Sin `ρ`, el motor no distingue qué lado comparar.
 > > 2. La condición del `σ` compara **entre columnas de las dos copias**: `S.pais = L.pais` (mismo país) `∧ S.ciudad ≠ L.ciudad` (ciudad distinta). Es un join de la tabla consigo misma + un filtro cruzado — exactamente lo que en SQL sería un `self-join`.
 > > - El filtro temporal (`hora_salida=HOY ∧ hora_llegada=HOY`) va ANTES de los joins: menos filas arrastradas.
-
 ---
-
-## 🅱️ Bloque B — Normalización del hotel (1FN → 2FN → 3FN)
-
+#### 🅱️ Bloque B — Normalización del hotel (1FN → 2FN → 3FN)
 > [!example]- 📝 Enunciado y desarrollo
 >
-> **Enunciado:** normalizar la tabla de reservas de hotel en 1FN, 2FN y 3FN:
+>
+> > **Enunciado:** normalizar la tabla de reservas de hotel en 1FN, 2FN y 3FN:
 >
 > | ReservaID | FechaEntrada | FechaSalida | ClienteID | ClienteNombre | Habitaciones (Num:Tipo) | PrecioTotal |
 > |---|---|---|---|---|---|---|
@@ -252,7 +296,6 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > **Cura (dictada por la solución oficial):** separar cada habitación en su propia fila y dividir el campo en dos columnas (`NumHabitacion`, `TipoHabitacion`). Como `ReservaID` se repite en las filas divididas, la PK pasa a ser **compuesta** `(ReservaID, NumHabitacion)`.
 > >
 > > **Tabla 1FN:** `ReservaID, FechaEntrada, FechaSalida, ClienteID, ClienteNombre, NumHabitacion, TipoHabitacion, PrecioTotal`.
-
 > [!success]- ✅ 2FN — dependencias parciales en la.pk compuesta
 > >
 > > **Diagnóstico:** en la 1FN, con PK compuesta:
@@ -265,7 +308,6 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > Reserva_Habitacion: ReservaID (PK/FK), NumHabitacion (PK/FK)
 > > Reserva:            ReservaID (PK), FechaEntrada, FechaSalida, ClienteID, ClienteNombre, PrecioTotal
 > > ```
-
 > [!success]- ✅ 3FN — dependencias transitivas
 > >
 > > **Diagnóstico:** en la tabla `Reserva` de la 2FN, `ClienteNombre` depende de `ClienteID`, que a su vez depende de la PK `ReservaID` → **dependencia transitiva** viola 3FN.
@@ -279,24 +321,45 @@ tags: [TICG1018, unidad1, guia, taller2, bd]
 > > ```
 > >
 > > El desarrollo completo está en [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] y el método en [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]] (misma marca 3 para este caso del taller ya trabajada en `Taller 2 SOL.pdf` — aquí queda la transcripción).
+---
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes Consultadas
+>
+> - `Unidad 0 - Guias y Ejercicios/Talleres/Taller 2 PAO-2026-1  SOL.pdf` — solución oficial del taller (3 páginas; citada por captura arriba).
+> - Diapositivas `3.1 Operaciones Básicas_2025.pdf` y `3.2 Operaciones Derivadas-join-order2026.pdf` (Unidad 0 — Diapositivas) — el catálogo de operadores; sus figuras se citan como capturas de `slides05`.
+> - Diapositivas `2026_1PAO_slides5_1_TICG1018.pdf` — álgebra relacional, pp. 4-27 (operadores básicos, joins y agregaciones).
+> - C. Coronel, S. Morris, *Database Systems*, 9th ed., cap. 8 — álgebra relacional y sus equivalentes en SQL.
+> - La transcripción, las explicaciones SQL y los diagramas son propios.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[../Unidad 1 - Modelos de Datos y ER/03 - Modelo relacional, ERM y casos Tiny College|03 - Modelo relacional, ERM y casos Tiny College]] — el modelo relacional donde viven σ, π, ⨝, γ y ρ.
+> - [[../Unidad 3 - Álgebra Relacional/01 - Operadores Básicos|01 - Operadores Básicos]] — σ, π, ×, ∪, −, ∩.
+> - [[../Unidad 3 - Álgebra Relacional/02 - Operadores Derivados y Joins|02 - Operadores Derivados y Joins]] — joins, outer joins, semijoin y división.
+> - [[../Unidad 3 - Álgebra Relacional/03 - Renombre y Agregación|03 - Renombre y Agregación]] — ρ y γ.
+> - [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal|03 - Segunda y tercera forma normal]] — el bloque B en detalle.
+> - [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso|04 - Normalización paso a paso]] — el método paso a paso.
+> - [[Guía de Problemas 1 - MC, ML y Normalización|Guía de Problemas 1]] — la guía anterior (modelado y normalización).
 
 ---
 
 ## 🔗 Seguir estudiando
 
-> [!info] 📚 Seguir estudiando
+> [!info] 📚 Seguir Studying
 >
-> - Modelo relacional y operadores: [[03 - Modelo relacional, ERM y casos Tiny College]]
+> - Modelo relacional y operadores: [[../Unidad 1 - Modelos de Datos y ER/03 - Modelo relacional, ERM y casos Tiny College]]
 > - Normalización completa: [[../Unidad 2 - Modelo lógico y conversión/03 - Segunda y tercera forma normal]] · [[../Unidad 2 - Modelo lógico y conversión/04 - Normalización paso a paso]]
 > - Índice: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]] · Mapa: [[../Sistema de Bases de Datos|Sistema de Bases de Datos]]
 > - Guía anterior: [[Guía de Problemas 1 - MC, ML y Normalización]]
 
-## 📚 Fuente
-
-> [!quote] 📖 Fuente
-> `Unidad 0 - Guias y Ejercicios/Talleres/Taller 2 PAO-2026-1  SOL.pdf` (solución oficial del taller; la transcripción y las explicaciones SQL son propias). Otro recurso citado: el ejercicio de normalización ya se desarrolló en [[Guía de Problemas 1 - MC, ML y Normalización]].
-> Diapositivas de clase embebidas en el catálogo: `Unidad 0 - Guias y Ejercicios/Diapositivas/3.1 Operaciones Básicas_2025.pdf` y `Unidad 0 - Guias y Ejercicios/Diapositivas/3.2 Operaciones Derivadas-join-order2026.pdf`.
-
 ---
 
-**Tags:** #TICG1018 #unidad1 #guia #taller2 #bd
+**Tags:** #TICG1018 #unidad3 #guia #taller2 #algebra-relacional #normalizacion #bd

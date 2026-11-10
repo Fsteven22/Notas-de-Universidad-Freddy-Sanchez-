@@ -1,0 +1,6 @@
+erDiagram
+    DETALLE_REPORTE {
+        idReporte int PK, FK
+        producto string PK
+    }
+    REPORTE ||--o{ DETALLE_REPORTE : contiene

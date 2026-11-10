@@ -1,0 +1,15 @@
+flowchart TB
+    A["Subraya sustantivos<br/>y verbos"]
+    B["Asigna PK<br/>a cada entidad"]
+    C["Nombra relaciones<br/>con verbo"]
+    D["Clasifica en<br/>ambas direcciones"]
+    E["Anota (x,y)<br/>y reglas"]
+    F{"¿Se lee en voz alta<br/>y todo tiene PK?"}
+    G["ERD valido"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|"No"| C
+    F -->|"Si"| G

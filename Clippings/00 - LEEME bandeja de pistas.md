@@ -40,8 +40,8 @@ tags: [clippings, protocolo, colaboracion, estado]
 
 | Sesión | Worktree | Zona propia | No toca sin avisar |
 |---|---|---|---|
-| `opencode` (3er Semestre) | `Documents/wt-opencode` | `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**` | `site/**`, `Universidad/2do Semestre/Cálculo Vectorial/**`, `_no-publicar.txt` |
-| `opencode-onedrive` | `Desktop/wt-onedrive` | `Universidad/2do Semestre/Cálculo Vectorial/**`, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `Universidad/Herramientas/**` (scripts) | `site/src/**`, `site/public/**`, `Universidad/3er Semestre/**` |
+| `opencode` (3er Semestre) | `Documents/wt-opencode` | `Universidad/3er Semestre/**`, `Universidad/Herramientas/Mantenimiento/**` | `site/**`, `Universidad/2do Semestre/Cálculo Vectorial/**`, `Universidad/1er Semestre/Cálculo de una Variable/**`, `_no-publicar.txt` |
+| `opencode-onedrive` | `Desktop/wt-onedrive` | `Universidad/2do Semestre/Cálculo Vectorial/**`, **`Universidad/1er Semestre/Cálculo de una Variable/**` (desde 09/11/2026, decisión del dueño)**, `site/scripts/sync-vault.mjs`, `site/RUNBOOK.md`, `Universidad/Herramientas/**` (scripts) | `site/src/**`, `site/public/**`, `Universidad/3er Semestre/**` |
 | `opencode-site` | `Desktop/wt-opencode-site` | `site/src/**`, `site/public/**`, marca | `site/scripts/sync-vault.mjs`, `Universidad/**` |
 | `opencode-nube` | `TEMP/opencode/wt-nube` | `Clippings/**` (solo este archivo) | todo lo demás |
 | **Dueño del vault** | — | decisiones, material nuevo (carpetas `Unidad 0 - Guías y Ejercicios` de 3er Sem) | — |
@@ -1503,7 +1503,145 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 > - **QA:** todos los 382 SVGs corregidos resuelven en disco. `qa_links.py` con raíz `Universidad` → `bad=7` (los 7 son enlaces de SBD a archivos que no existen en ninguna parte del vault: 5 SVG `u3-*/u4-*` y 1 PNG `bd-s05-p23.png` y 1 PDF de diapositivas — introducidos por commits recientes de SBD, no por esta sesión; son del dueño del vault).
 > - **No se tocaron:** cambios sin commitear del dueño (`Mapa PAO` borrado, `Recursos Visuales.md` de MatDisc, PDFs sin trackear, carpetas `_texto/`).
 >
-> **PUSHEADO `2e66439f`** — `3353d22a`
+> **PUSHEADO `2e66439f`** - `3353d22a`
+
+---
+
+### `opencode` — MANUAL DE FLUJO DE TRABAJO para `opencode-onedrive` + encargo: 1er Semestre · Cálculo de una Variable — 09/11/2026
+
+> [!important] Qué te pido (decisión del dueño del vault, 09/11/2026)
+>
+> El dueño asigna a `opencode-onedrive` la materia **`Universidad/1er Semestre/Cálculo de una Variable/**`**
+> (65 notas) para que trabajes en paralelo mientras `opencode` sigue con 3er Semestre.
+> **Tu zona se amplía:** además de `2do Semestre/Cálculo Vectorial/**` y `site/scripts/sync-vault.mjs`,
+> ahora también `1er Semestre/Cálculo de una Variable/**`. `opencode` no toca esa materia.
+>
+> Este bloque es el **manual de trabajo**: exactamente cómo hago yo las notas, paso a paso, para que lo
+> repliques con el mismo resultado. No es teoría: cada paso viene de algo que hice y verifiqué en
+> SBD (20 notas) y Diseño de Software (24 notas), donde el validador terminó en **0 hallazgos**.
+
+> [!tip] Mi flujo de trabajo, en 9 pasos (en este orden)
+>
+> **1 · Auditar antes de tocar.** Escribo un validador **propio de la materia** antes de modificar nada:
+> `Universidad/Herramientas/Mantenimiento/qa_formato_<materia>.py`. Devuelve *hallazgos por regla*
+> (no un sí/no), con ruta y línea, para poder cerrar cada uno. Línea base real: Diseño empezó en
+> **684 hallazgos** → 195 → 0; SBD arranca hoy en **0**. Regla: *si no puedes nombrar el hallazgo,
+> no puedes cerrarlo*.
+>
+> **2 · Escribir el contrato ANTES de transformar.** `FORMATO-<MATERIA>.md` con las reglas `R1..Rn`,
+> una por encabezado, cada una con ejemplo bueno/malo y con la razón. Vive en
+> `Universidad/Herramientas/Mantenimiento/`, **no en la materia**: es herramienta de auditoría, no nota
+> publicable. El contrato decide; el validador lo ejecuta. Si el validador discrepa del contrato,
+> manda el contrato (y se arregla el validador).
+>
+> **3 · Perfiles de nota, no una sola plantilla.** Las notas no son todas iguales: en SBD hay perfil
+> `clase` (17 notas con esqueleto de 14 H2), `material` e `indice`. El validador resuelve el perfil solo,
+> y acepta `--solo <ruta>` para auditar una parte y `--calibrar` para ver el desglose.
+>
+> **4 · Transformar con scripts, nunca a mano.** Un transformador por familia de reglas, y —esto es la
+> clave— **importa la misma función de clasificación que el validador**. Si el transformador reimplementa
+> la clasificación, divergen y se rompe el render (me pasó; ver errores más abajo).
+>
+> **5 · Verificar que no se pierde contenido.** Backup de las notas antes de la fase pesada + un script
+> que compara el antes/después línea a línea y exige que todo el contenido original siga presente
+> (ej. `verifica_r4.py`: 178 bloques → 140 callouts con título, **0 diferencias de contenido**).
+>
+> **6 · Orden de las transformaciones (no es negociable).**
+> `R6/R7` → normalizar `> ` → `>` → `R4` (envolver en callouts) → normalizar de nuevo.
+> Al revés, los callouts quedan mal formados y el sitio los renderiza mal.
+>
+> **7 · Assets: centralizar, renombrar y dar fuente a cada SVG.**
+> · Capturas → `Unidad 0 - Guias y Ejercicios/Archivos/<Tema>/<materia>-<deck>-p<NN>-<slug>.png`,
+>   y el embed se reescribe a la ruta canónica (así se evita el PNG embebido con nombre feo).
+> · **Todo SVG embebido lleva su `.mmd` fuente al lado, sin excepción.** Si el SVG viene de mermaid, el
+>   `.mmd` se reconstruye parseando el XML del SVG; si no se puede reconstruir con fidelidad, se rehace
+>   el diagrama desde cero en mermaid y se vuelve a renderizar.
+> · **Round-trip obligatorio:** re-render del `.mmd` con `mmdc_ligero.py` y comparación contra el SVG
+>   original de **texto visible + viewBox**. Texto igual pero viewBox distinto = la dirección o el
+>   orden de las aristas está mal (ese fallo es real y frecuente).
+> · Sin duplicados byte-idénticos; sin carpetas `_texto/` (extracciones de PDF: son regenerables).
+>
+> **8 · Lecturas propias (R14): lo que más valor aporta.** Nada de "transcribir la imagen". Cada embed
+> y cada callout de deck lleva una lectura con **tres etiquetas fijas**: `**Se lee así:**`,
+> `**Por qué importa:**`, `**Ejemplo:**`. Para escribirla **sin mirar la imagen**: del PDF saco el texto
+> con PyMuPDF (`doc[i].get_text("text")`) y del SVG saco el texto visible parseando el XML
+> (`<foreignObject>` / `<text>`). Con eso se escribe una lectura *fundamentada*, no inventada.
+> Para las notas grandes, **subagentes en paralelo** (uno por unidad), con prompt cerrado: qué archivos
+> puede tocar, qué etiquetas exactas escribir, qué reglas de formato, y verificación obligatoria.
+>
+> **9 · Cerrar y commitear.** El validador debe dar **0 hallazgos** en la materia. `git add` con rutas
+> exactas (nunca `-A`), commit atómico, `git diff --cached --name-status` antes de commitear, y nunca
+> tocar el trabajo sin commitear de otra sesión.
+
+> [!warning] 6 errores que cometí — para que no los repitas
+>
+> 1. **Bug de R4 (el más caro).** El transformador comparaba el tipo `"table"` (inglés) cuando el tipo
+>    real era `"tabla"`: cada fila de una tabla insertaba un `>` extra que rompía el render de todas las
+>    tablas. → **Regla: el transformador importa la clasificación del validador; no la reimplementa.**
+> 2. **`ElementTree` destruye los `<br/>`.** Serializa los tags con prefijo de namespace (`<ns0:br />`),
+>    así que cualquier regex sobre el XML pierde los saltos de línea y los labels salen pegados
+>    (`Extract(function/variable/class)` en vez de `Extract (function/variable/class)`).
+>    → **Regla: recorrer el árbol, no parsear el XML serializado.**
+> 3. **Dirección del flowchart mal detectada.** Sumar el desplazamiento de todas las aristas se anula con
+>    las aristas de retroceso (ciclos): un diagrama `LR` salía `TB` y el viewBox no cuadraba.
+>    → **Regla: deducir la dirección por niveles/geometría, no por suma neta.**
+> 4. **OneDrive bloquea los duplicados.** 4 PNG byte-idénticos no se borraban y el error parecía "permiso
+>    denegado"; a la mañana siguiente OneDrive los liberó. → **Regla: reintentar con espera; no forzar.**
+> 5. **Wikilinks "rotos" que no lo son.** El sitio resuelve wikilinks globalmente
+>    (`site/scripts/sync-vault.mjs`): `[[Main.java]]` no se ve roto aunque no exista junto a la nota.
+>    → **Regla: antes de "arreglar" un wikilink, comprobar que el destino no exista en NINGUNA parte del vault.**
+> 6. **Borrar sin backup.** `_texto/` es regenerable desde los PDFs fuente, pero igual: backup fuera del
+>    vault primero, borrar después.
+
+> [!success] Herramientas que ya existen — úsalas, no las reescribas
+>
+> | Ruta | Qué es |
+> |---|---|
+> | `Universidad/Herramientas/Mantenimiento/qa_formato_sbd.py` | validador de SBD (14 reglas) — **0 hallazgos** |
+> | `Universidad/Herramientas/Mantenimiento/qa_formato_diseno.py` | validador de Diseño (16 reglas) — **copia esta estructura** |
+> | `Universidad/Herramientas/Mantenimiento/FORMATO-SBD.md` | contrato hermano (14 reglas + receta de producción) |
+> | `Universidad/Herramientas/Mantenimiento/FORMATO-DISENO.md` | contrato hermano (16 reglas) + dónde vive |
+> | `Universidad/Herramientas/SVG-Pipeline/mmdc_ligero.py` | render de mermaid con la tipografía recortada (el SVG pesa 1/5) |
+>
+> Comando de auditoría: `py -3.12 qa_formato_<materia>.py --solo "1er Semestre/Cálculo de una Variable"`
+> (con `$env:PYTHONIOENCODING="utf-8"`). Ambos validadores aceptan `--solo`, `--calibrar` y `--fix-rutas`.
+
+> [!note] Auditoría inicial de `Cálculo de una Variable` (hecha hoy por `opencode`, 09/11/2026)
+>
+> - **65 notas** en 7 unidades + U0 · **183 SVG** · **0 `.mmd`** · 3 PNG · 189 embeds · 1675 callouts.
+> - **La base prosa está bien:** H2 con emoji, callouts por todos lados, tablas resumen, mnemotecnias
+>   ("SCPR", "DELTA", "DERIVAR"), ejemplos trabajados. **El trabajo NO es reescribir prosa**: es
+>   (a) contrato + validador propios, (b) fuente `.mmd` para los 183 SVG, (c) lecturas R14 de los 189
+>   embeds, (d) R1 (frontmatter), R12 (rutas), R13 (tags al pie).
+> - **U0 está vacía de material:** `Diapositivas/`, `Guías/`, `Lecciones/`, `Talleres/`, `Material de clase/`
+>   y `Exámenes/` tienen **0 archivos**, y la materia no tiene ningún PDF.
+>   → **No hay de dónde sacar lecturas de deck ni aplicar R15 (deck + página): no inventes citas.**
+> - `Figuras/` tiene 4 PNG con nombres no temáticos (`Pasted image 20250823130623.png`, un `.jpg` con UUID)
+>   → renombrar y centralizar en `Archivos/<Tema>/`.
+> - **El esqueleto de H2 de esta materia es PROPIO**: `Técnica de Estudio: …`, `Tabla Resumen`, `Algoritmo de
+>   Decisión`, `Ejemplos Trabajados Completos`, `Conexiones y Aplicaciones`, `Ejercicios Progresivos`.
+>   **No copies el de SBD ni el de Diseño** — copia el *método*, no el esqueleto.
+
+> [!example] Plan que propongo para `Cálculo de una Variable` (si prefieres otro, dime antes de empezar)
+>
+> 1. `FORMATO-CALCULO1.md` + `qa_formato_calculo1.py` en `Universidad/Herramientas/Mantenimiento/`
+>    (perfiles `clase` / `material` / `indice`, esqueleto de H2 propio de la materia).
+> 2. Fase mecánica: frontmatter, `tags:` al pie, H2 sin emoji donde falte, `---` entre secciones,
+>    rutas de assets y embeds con la ruta canónica.
+> 3. Las **183 fuentes `.mmd`**, con round-trip verificado (texto visible + viewBox) contra cada SVG.
+> 4. Lecturas **R14** de los 189 embeds (subagentes en paralelo, uno por unidad).
+> 5. Reportar en este LEEME el antes/después del validador, y luego commitear por bloques.
+
+> [!info] Git (recordatorio, para que no se nos banque el trabajo)
+>
+> - `git add` con rutas exactas, nunca `-A` ni `commit -a`.
+> - Commit atómico: escribir + `add` + commit en el mismo ciclo (OneDrive revierte en segundos lo no commiteado).
+> - Antes de commitear: `git diff --cached --name-status` y confirmar que solo aparece lo tuyo.
+> - Push: solo con bloque `PUSHEO EN CURSO` acá → `PUSHEADO <hash>`.
+> - No tocar `Universidad/3er Semestre/**` (zona de `opencode`) ni `site/src/**`, `site/public/**`
+>   (zona de `opencode-site`).
+> - Si algo quedó mal: commit nuevo que lo corrija y se documenta. Nunca `amend` de lo publicado,
+>   nunca `reset --hard` ajeno, nunca `--force` sobre `master`.
 
 ---
 

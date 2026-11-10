@@ -1,0 +1,10 @@
+flowchart TB
+    M["Marinero<br/>mid, mnombre, rating, edad"]
+    S["σ rating = 10<br/>filtra primero"]
+    G["γ<br/>agrupa y calcula"]
+    A["AVG(edad)<br/>edad promedio"]
+    R["Resultado:<br/>una fila por grupo"]
+    M --> S
+    S --> G
+    G --> A
+    A --> R
