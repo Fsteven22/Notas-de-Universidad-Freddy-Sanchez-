@@ -22,7 +22,7 @@
   --brand-grad: linear-gradient(90deg, #aa66ff, #00aaff);
   --nexus-glow: 0 0 24px rgba(120, 140, 255, 0.28);
   /* Acento por semestre (lo cambia Base.astro al navegar):
-     cursor glow, barra de progreso, anillo del botón arriba y glow lo usan */
+     barra de progreso, anillo del botón arriba y glow lo usan */
   --nx-accent: #aa66ff;
   --nx-accent-rgb: 170, 102, 255;
 }
@@ -47,7 +47,14 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #05070d 0%, #090d18 50%, #05070d 100%);
+  /* Fondo en capas: viñeta (oscurece los bordes), dos focos de color muy
+     difusos arriba y el degradado base. Todo está detrás del contenido, así
+     que el texto nunca se ve afectado. */
+  background:
+    radial-gradient(125% 85% at 50% 34%, transparent 52%, rgba(2, 4, 9, 0.55) 100%),
+    radial-gradient(1100px 680px at 50% -14%, rgba(var(--nx-accent-rgb), 0.10), transparent 62%),
+    radial-gradient(880px 560px at 102% 4%, rgba(0, 170, 255, 0.06), transparent 60%),
+    linear-gradient(180deg, #070a13 0%, #0a0f1d 40%, #070a12 74%, #05070e 100%);
   background-attachment: fixed;
   color: #f9fafb;
   font-family: var(--font-sans);
@@ -243,26 +250,6 @@ body {
   pointer-events: none;
 }
 
-/* ── Cursor glow personalizado (lo crea GSAP en Base.astro) ── */
-#nx-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 26px;
-  height: 26px;
-  margin: -13px 0 0 -13px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(var(--nx-accent-rgb), 0.85), rgba(var(--nx-accent-rgb), 0) 70%);
-  box-shadow: 0 0 20px rgba(var(--nx-accent-rgb), 0.45);
-  pointer-events: none;
-  z-index: 1500;
-  opacity: 0;
-  mix-blend-mode: screen;
-}
-@media (pointer: coarse) {
-  #nx-cursor { display: none; }
-}
-
 /* ── Botón volver arriba con anillo de progreso ── */
 #nx-top {
   position: fixed;
@@ -435,45 +422,47 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   from { opacity: 0; transform: translateX(-8%); }
 }
 
-/* ── Neón retro sutil: scanlines + grano de película ── */
+/* ── Textura de fondo: retícula de puntos (sin grano ni scanlines) ──
+   Antes eran dos capas: scanlines (líneas de 1 px cada 3 px) y grano de
+   película saltando cada 0,2 s. Sobre pantallas con escalado de Windows
+   (125 %, 150 %) o 4K esas líneas de 1 px no caían sobre un píxel físico
+   exacto y producían muaré: el fondo se veía cortado en líneas y
+   parpadeaba como estática de televisión.
+
+   Ahora hay una retícula de puntos muy tenue y completamente estática (no
+   parpadea, no muarea) que da profundidad sin ensuciar la vista. La
+   viñeta ya va en el degradado del body, así que no hace falta otra
+   capa encima del contenido. */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 900;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.02) 0px,
-    rgba(255, 255, 255, 0.02) 1px,
-    transparent 1px,
-    transparent 3px
-  );
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 26px 26px;
+  /* La retícula se desvanece hacia abajo: arriba da "técnico", abajo
+     deja el fondo limpio donde se lee. */
+  -webkit-mask-image: radial-gradient(120% 85% at 50% 0%, #000 0%, transparent 76%);
+  mask-image: radial-gradient(120% 85% at 50% 0%, #000 0%, transparent 76%);
 }
 body::before {
   content: "";
   position: fixed;
-  inset: -20px;
+  inset: 0;
   pointer-events: none;
-  z-index: 900;
-  opacity: 0.05;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation: nx-grain 0.8s steps(4) infinite;
-}
-@keyframes nx-grain {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-5px, 3px); }
-  50% { transform: translate(4px, -5px); }
-  75% { transform: translate(-3px, -2px); }
-  100% { transform: translate(0, 0); }
+  z-index: 899;
+  /* Halo superior del acento: difumina el borde de la retícula y evita
+     que el fondo se vea "plano" contra el contenido. */
+  background: radial-gradient(90% 45% at 50% 0%, rgba(var(--nx-accent-rgb), 0.07), transparent 70%);
 }
 
 /* Glow sutil en acentos */
 .nx-section-title { text-shadow: 0 0 14px rgba(170, 102, 255, 0.35); }
 .nx-badge { box-shadow: 0 0 12px rgba(170, 102, 255, 0.15); }
 
-/* ── Lectura de notas: sin texturas (scanlines/grano) ──
-   Las 821 notas son texto largo: las texturas restan legibilidad.
+/* ── Lectura de notas: sin texturas (retícula/halo) ──
+   Las ~820 notas son texto largo: las texturas restan legibilidad.
    La clase la pone Base.astro según la profundidad de la ruta. */
 html.nx-note-page body::before,
 html.nx-note-page body::after {
@@ -680,7 +669,6 @@ html.nx-note-page #nx-read-eta {
 @media (prefers-reduced-motion: reduce) {
   :root:not([data-nx-motion="on"]) .nx-marquee__track { animation: none; }
   :root:not([data-nx-motion="on"]) .nx-marquee::after { animation: none; }
-  :root:not([data-nx-motion="on"]) body::before { animation: none; }
   :root:not([data-nx-motion="on"]) ::view-transition-old(root),
   :root:not([data-nx-motion="on"]) ::view-transition-new(root) { animation: none; }
 }
@@ -734,9 +722,9 @@ html.nx-note-page #nx-read-eta {
 .nx-aura {
   position: absolute;
   border-radius: 50%;
-  filter: blur(90px);
+  filter: blur(110px);
   pointer-events: none;
-  background: radial-gradient(closest-side, rgba(140, 120, 255, 0.18), transparent);
+  background: radial-gradient(closest-side, rgba(140, 120, 255, 0.13), transparent);
 }
 /* deriva muy lenta: da vida al fondo sin distraer */
 .nx-aura--drift {
@@ -1054,7 +1042,7 @@ html.nx-note-page #nx-read-eta {
   justify-content: center;
 }
 /* Botón de atajos: lleva etiqueta y tecla visible para que se entienda
-   qué hace. Antes era un icono suelto de 36 px al extremo derecho. */
+   qué hace. Vive en el pie de página (componente SiteFooter). */
 .nx-hbtn--shortcuts {
   gap: 0.45rem;
   border-color: rgba(170, 102, 255, 0.28);
@@ -1067,14 +1055,6 @@ html.nx-note-page #nx-read-eta {
 }
 .nx-hbtn-text {
   letter-spacing: 0.1em;
-}
-/* Separador vertical antes del grupo de acciones del header */
-.nx-header-sep-line {
-  flex: none;
-  width: 1px;
-  height: 22px;
-  margin-inline: 0.15rem;
-  background: rgba(255, 255, 255, 0.12);
 }
 .nx-hbtn-kbd {
   font-family: var(--font-mono);
@@ -1092,15 +1072,6 @@ html.nx-note-page #nx-read-eta {
     justify-content: center;
   }
   .nx-hbtn-kbd {
-    display: none;
-  }
-  /* En teléfono no hay teclado físico: el panel de atajos no aporta y
-     el header se satura con cuatro botones. */
-  .nx-hbtn--shortcuts {
-    display: none;
-  }
-  /* El separador solo tiene sentido junto al botón de atajos. */
-  .nx-header-sep-line {
     display: none;
   }
 }
@@ -1417,11 +1388,16 @@ html.nx-note-page #nx-read-eta {
 :root[data-nx-motion="off"] #nx-read-eta::before,
 :root[data-nx-motion="off"] .nx-marquee__track,
 :root[data-nx-motion="off"] .nx-marquee::after,
-:root[data-nx-motion="off"] body::before,
 :root[data-nx-motion="off"] .nx-aura--drift,
 :root[data-nx-motion="off"] .nx-hero-in,
 :root[data-nx-motion="off"] .nx-fade-up {
   animation: none;
+}
+/* Con "Nunca" tampoco hay textura de fondo: la retícula de puntos y el
+   halo del acento se retiran y queda un fondo limpio y plano. */
+:root[data-nx-motion="off"] body::before,
+:root[data-nx-motion="off"] body::after {
+  display: none;
 }
 :root[data-nx-motion="off"] .nx-hero-in {
   opacity: 1;

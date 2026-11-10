@@ -13,7 +13,8 @@
  *     tamaño de campo de texto (antes era un botón pequeño en el
  *     centro-derecha, lo menos visible del header)
  *   · las migas de pan (truncadas, la última es la página actual)
- *   · las acciones: inicio, índice de la nota y el panel de atajos.
+ *   · las acciones: inicio y índice de la nota. El panel de atajos vive
+ *     al final de la página (pie común), donde no compite con el resto.
  *
  * El contenedor (`container`) lo fija cada página para que el header quede
  * alineado con su propio contenido: antes el header era max-w-6xl (1152 px)
@@ -153,31 +154,6 @@ const {
           </button>
         )
       }
-      {/* Separador visual: el grupo de acciones ya no empieza de golpe
-          con un icono suelto. */}
-      <span class="nx-header-sep-line" aria-hidden="true"></span>
-      <button
-        type="button"
-        class="nx-hbtn nx-hbtn--shortcuts"
-        data-nx-shortcuts-open
-        aria-label="Ver atajos de teclado"
-        title="Atajos de teclado (?)"
-      >
-        <svg
-          class="size-4"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          aria-hidden="true"
-        >
-          <rect x="2" y="6" width="20" height="12" rx="2" />
-          <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
-        </svg>
-        <span class="nx-hbtn-text">Atajos</span>
-        <kbd class="nx-hbtn-kbd">?</kbd>
-      </button>
     </div>
   </div>
 </header>

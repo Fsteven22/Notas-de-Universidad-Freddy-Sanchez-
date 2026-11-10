@@ -2,6 +2,7 @@
 import { ClientRouter } from "astro:transitions";
 import SearchModal from "./../components/SearchModal.astro";
 import ShortcutsPanel from "./../components/ShortcutsPanel.astro";
+import SiteFooter from "./../components/SiteFooter.astro";
 
 interface Props {
   title?: string;
@@ -18,10 +19,10 @@ const parts = Astro.url.pathname.split("/").filter(Boolean);
 const scope = parts.slice(0, 2).join("/");
 
 // Nota = ruta con 3+ segmentos (sem/mat/slug...). En notas se apagan las
-// texturas (scanlines/grano) porque restan legibilidad en texto largo.
+// texturas (retícula/halo) porque restan legibilidad en texto largo.
 const isNote = parts.length >= 3;
 
-// Acento por semestre: pinta el cursor glow, la barra de progreso, el anillo
+// Acento por semestre: pinta la barra de progreso, el anillo
 // del botón arriba y el ETA de lectura. Va en <html> para que el router de
 // Astro lo actualice solo en cada navegación.
 const ACCENTS: Record<string, [string, string]> = {
@@ -73,8 +74,8 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
     </script>
     <!-- ── Preferencia de movimiento ───────────────────────────────
          El sitio respeta "reducir movimiento" del sistema: con esa
-         preferencia el CSS apaga las animaciones y el JS no crea Lenis,
-         cursor glow ni Three.js. En el entorno de pruebas el navegador
+         preferencia el CSS apaga las animaciones y el JS no crea Lenis
+         ni Three.js. En el entorno de pruebas el navegador
          reporta SIEMPRE "reduce", así que las animaciones nunca se veían.
 
          Aquí se resuelve la preferencia real:
@@ -135,7 +136,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             },
             /**
              * Cambia la preferencia. Recarga porque el JS de animación
-             * (Lenis, cursor glow, Three.js) se decide al arrancar: cambiarlo
+             * (Lenis, Three.js) se decide al arrancar: cambiarlo
              * en caliente dejaría la página a medias.
              */
             set: function(v){
@@ -174,6 +175,10 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
   </head>
   <body>
     <slot />
+    {/* Pie común: marca, avisos, fecha y el acceso a los atajos. Se monta
+        aquí para que TODAS las páginas (portada, semestre, materia, nota
+        y 404) terminen igual. */}
+    <SiteFooter />
     <SearchModal scope={scope} />
     <ShortcutsPanel />
 
@@ -184,9 +189,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 
     <!-- Barra de progreso de scroll (la anima GSAP en Base) -->
     <div id="nx-scroll-progress" data-astro-transition-persist="nx-scroll-progress"></div>
-
-    <!-- Cursor glow personalizado (solo lo muestra puntero fino) -->
-    <div id="nx-cursor" data-astro-transition-persist="nx-cursor"></div>
 
     <!-- Botón volver arriba con anillo de progreso (lo anima GSAP en Base) -->
     <button
@@ -487,27 +489,6 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
                 scrollTrigger: { start: 0, end: "max", scrub: 0.3 } });
             }
 
-            // Cursor glow personalizado (solo en puntero fino)
-            if (!nxReduced() && window.matchMedia("(pointer: fine)").matches) {
-              var cur = document.getElementById("nx-cursor");
-              if (cur && !cur.dataset.nxBound) {
-                cur.dataset.nxBound = "1";
-                var qx = gsap.quickTo(cur, "x", { duration: 0.18, ease: "power3.out" });
-                var qy = gsap.quickTo(cur, "y", { duration: 0.18, ease: "power3.out" });
-                var shown = false;
-                window.addEventListener("mousemove", function(e){
-                  qx(e.clientX); qy(e.clientY);
-                  if (!shown) { shown = true; gsap.to(cur, { opacity: 0.6, duration: 0.4 }); }
-                }, { passive: true });
-                document.addEventListener("mouseover", function(e){
-                  var t = e.target as Element | null;
-                  var hit = t && t.closest ? t.closest("a, button, .nx-card, input, kbd") : null;
-                  gsap.to(cur, { scale: hit ? 2.3 : 1, opacity: hit ? 0.95 : 0.6,
-                    duration: 0.3, ease: "power2.out" });
-                });
-              }
-            }
-
             // Botón volver arriba con anillo de progreso
             var topBtn = document.getElementById("nx-top");
             if (topBtn && !topBtn.dataset.nxBound) {
@@ -612,24 +593,32 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             });
           }
 
-          // ── Hover magnético en botones ──
+          // ── Inclinación 3D en botones (sin desplazamiento) ──
+          // Antes el botón se desplazaba hacia el puntero (hover magnético)
+          // y volvía con rebote elástico: se le escapaba de debajo del
+          // cursor y temblaba al regresar. Ahora solo rota en profundidad:
+          // el botón no se mueve de su sitio y el retorno es suave, sin
+          // rebote.
           if (!nxReduced()) gsap.utils.toArray(".nx-btn").forEach(function(btn){
-            if (btn.dataset.nxMagBound) return;
-            btn.dataset.nxMagBound = "1";
+            if (btn.dataset.nxTiltBound) return;
+            btn.dataset.nxTiltBound = "1";
             btn.addEventListener("mousemove", function(e){
               var r = btn.getBoundingClientRect();
+              var px = (e.clientX - r.left) / r.width - 0.5;
+              var py = (e.clientY - r.top) / r.height - 0.5;
               gsap.to(btn, {
-                x: (e.clientX - r.left - r.width / 2) * 0.25,
-                y: (e.clientY - r.top - r.height / 2) * 0.35,
-                duration: 0.4, ease: "power3.out"
+                rotationY: px * 5, rotationX: -py * 5,
+                transformPerspective: 700, duration: 0.35, ease: "power2.out"
               });
             });
             btn.addEventListener("mouseleave", function(){
-              gsap.to(btn, { x: 0, y: 0, duration: 0.7, ease: "elastic.out(1, 0.4)" });
+              gsap.to(btn, { rotationY: 0, rotationX: 0, duration: 0.45, ease: "power3.out" });
             });
           });
 
           // ── Tilt 3D en tarjetas ──
+          // Mismo criterio que los botones: inclinación sin rebote al
+          // volver (el rebote elástico mareaba un poco).
           if (!nxReduced()) gsap.utils.toArray(".nx-card").forEach(function(card){
             if (card.dataset.nxTiltBound) return;
             card.dataset.nxTiltBound = "1";
@@ -637,11 +626,11 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
               var r = card.getBoundingClientRect();
               var px = (e.clientX - r.left) / r.width - 0.5;
               var py = (e.clientY - r.top) / r.height - 0.5;
-              gsap.to(card, { rotationY: px * 10, rotationX: -py * 10,
-                transformPerspective: 800, duration: 0.4, ease: "power2.out" });
+              gsap.to(card, { rotationY: px * 7, rotationX: -py * 7,
+                transformPerspective: 900, duration: 0.4, ease: "power2.out" });
             });
             card.addEventListener("mouseleave", function(){
-              gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.8, ease: "elastic.out(1, 0.5)" });
+              gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.5, ease: "power3.out" });
             });
           });
 

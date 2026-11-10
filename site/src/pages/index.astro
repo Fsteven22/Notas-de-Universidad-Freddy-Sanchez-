@@ -55,7 +55,7 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
       </div>
       <div class="nx-bar mt-8 max-w-md"></div>
       <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
-        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} BLOQUES
+        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} SEMESTRES
       </p>
     </div>
   </section>
@@ -348,12 +348,8 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     </div>
   </section>
 
-  <footer class="border-t border-[rgba(255,255,255,0.06)]">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">⚡ NEONOTES · STEVEN SÁNCHEZ</p>
-      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">built with Astro</p>
-    </div>
-  </footer>
+  {/* El pie de página (marca, avisos, fecha, atajos y movimiento) lo
+      monta Base.astro: ahora todas las páginas terminan igual. */}
 
   <script is:inline type="module">
     import * as THREE from "/three.module.js";
@@ -411,7 +407,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-        var particleCount = 1500;
+        // Partículas: menos y más pequeñas que antes. El fondo tiene que
+        // acompañar, no ser protagonista: 1.500 puntos grandes se leían
+        // como "ruido" por encima del contenido.
+        var particleCount = 800;
         var positions = new Float32Array(particleCount * 3);
         var originals = new Float32Array(particleCount * 3);
 
@@ -429,10 +428,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
 
         var material = new THREE.PointsMaterial({
           color: 0x00ff88,
-          size: 0.15,
+          size: 0.11,
           sizeAttenuation: true,
           transparent: true,
-          opacity: 0.6,
+          opacity: 0.42,
           blending: THREE.AdditiveBlending,
           depthWrite: false,
         });
@@ -441,8 +440,8 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         scene.add(particles);
 
         // ── Líneas de constelación: conecta nodos cercanos con una red ──
-        var nodeStep = 14;                 // cada 14ava partícula es "nodo"
-        var maxLines = 420;
+        var nodeStep = 20;                 // cada 20ava partícula es "nodo"
+        var maxLines = 260;
         var linkDist2 = 15 * 15;           // distancia² máxima de conexión
         var linePositions = new Float32Array(maxLines * 6);
         var lineGeo = new THREE.BufferGeometry();
@@ -450,7 +449,7 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         var lineMat = new THREE.LineBasicMaterial({
           color: 0x4da6ff,
           transparent: true,
-          opacity: 0.13,
+          opacity: 0.09,
           blending: THREE.AdditiveBlending,
           depthWrite: false,
         });
@@ -485,8 +484,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
           timer.update();
           var elapsed = timer.getElapsed();
 
-          particles.rotation.x = elapsed * 0.05;
-          particles.rotation.y = elapsed * 0.03;
+          // Giro más lento: el campo de puntos acompaña el scroll en vez
+          // de girar delante.
+          particles.rotation.x = elapsed * 0.035;
+          particles.rotation.y = elapsed * 0.02;
 
           if (frame % 6 === 0) {
             raycaster.setFromCamera(mouse, camera);
