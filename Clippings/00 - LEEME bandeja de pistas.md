@@ -1563,3 +1563,61 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 **PUSHEADO `3c5680e6`** — `6348f206` (código) + `3c5680e6` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `3c5680e6`. `origin/sesion/opencode-site` queda en `3c5680e6`.
 
+---
+
+### `opencode-site` — override de movimiento, atajos visibles y cinta de materias — 09/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `84bf73ad`):** segunda vuelta de UX sobre `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/**`.
+>   - **Override explícito de movimiento.** Antes el sitio solo obedecía `prefers-reduced-motion` del
+>     sistema y no había forma de cambiarlo: si el sistema pedía quietud, las animaciones no se veían y
+>     no había salida. Ahora hay tres estados (Auto / Siempre / Nunca):
+>     - atributo `data-nx-motion="on|off"` en `<html>`, aplicado en el `<head>` con `data-astro-rerun`
+>       (porque `swapRootAttributes` borra los atributos de `<html>` en cada navegación SPA);
+>     - `window.__nxMotion` con `pref`, `effective()` y `set()`;
+>     - persistido en `localStorage["nx-motion"]` y forzable por URL con `?motion=1|0|auto`
+>       (la URL se limpia con `history.replaceState`);
+>     - **CSS en dos capas:** los 10 bloques `@media (prefers-reduced-motion: reduce)` se condicionan con
+>       `:root:not([data-nx-motion="on"])` (permite forzar "Siempre") y se añade un bloque explícito
+>       `:root[data-nx-motion="off"]` para que "Nunca" sea "nunca" aunque el sistema no lo pida;
+>     - **consulta en caliente:** `REDUCED` (constante capturada al cargar) pasa a `nxReduced()`, que
+>       pregunta a `window.__nxMotion.effective()` en el momento (13 usos en `Base.astro`, 2 en
+>       `index.astro`). El cambio de preferencia **recarga** la página (Lenis, cursor glow y Three.js se
+>       deciden al arrancar) guardando el scroll en `sessionStorage` para restaurarlo.
+>   - **Interruptor visible (Auto / Siempre / Nunca):** componente nuevo `MotionToggle.astro`, en el panel
+>     de atajos, en el pie del buscador (versión compacta, accesible también en móvil) y en la portada.
+>   - **Atajos descubribles:** el botón del header ya no es un icono suelto: ahora es icono + etiqueta
+>     **"Atajos"** + `kbd ?`, con un separador visual antes del grupo de acciones. El panel de atajos
+>     (`ShortcutsPanel.astro`, nuevo y autocontenido) incluye la sección "Movimiento". En ≤639 px se
+>     ocultan el botón y el separador (no hay teclado físico), pero el interruptor sigue accesible desde
+>     el buscador.
+>   - **Cinta de materias continua:** la franja de la portada se desplaza de derecha a izquierda **sin
+>     cortes ni huecos**. El JS mide el grupo real, calcula las copias necesarias
+>     (`ceil(innerWidth / grupo) + 2`), fija `--nx-marquee-shift` (un grupo entero → bucle invisible) y
+>     `--nx-marquee-duration` para mantener una **velocidad constante** (32 px/s) sea cual sea el número
+>     de copias. El markup inicial trae 4 grupos para que, sin JS, la cinta cubra el ancho. Añadido brillo
+>     (`nx-marquee-sheen`) y glow en los items.
+>   - **CSP:** `https://vercel.live` añadido a `script-src` y `connect-src` en `site/vercel.json`: el widget
+>     de Vercel provocaba un error de consola en producción.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1 múltiple,
+>   0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas; los ZIP no se listan por falta de `unzip`
+>   en Windows) · navegador **sin errores de consola**: con `?motion=1` las animaciones corren aunque el
+>   navegador de pruebas tenga `prefers-reduced-motion: reduce` forzado (`data-nx-motion="on"`, marquee
+>   con `animation-name: nx-marquee`), y con `?motion=0` no corre ninguna (`animation-name: none`).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): enlaces `#encabezado` entre
+>     notas apuntan a encabezados cuyo slug en el destino **no coincide** con el que escribió el autor
+>     (acentos, guiones iniciales, emojis). Se comprobó compilando la versión anterior del sitio
+>     (`8050f589`) y dio **exactamente las mismas 207**: 206 cuyo encabezado no existe en el destino + 1
+>     con el slug terminado en guion (`#funciones-definidas-por-partes` →
+>     `id="funciones-definidas-por-partes-"`). **Ninguna está en la portada.** Corregir el resto implica
+>     tocar las notas de origen (zonas de otras sesiones) o un slugger más tolerante en el sitio.
+>     **Lo dejo reportado, no lo toqué.**
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
