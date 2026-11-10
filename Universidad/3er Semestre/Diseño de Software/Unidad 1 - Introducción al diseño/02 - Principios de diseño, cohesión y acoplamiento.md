@@ -29,6 +29,12 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-01-graph.svg]]
+>
+> **Se lee así:** El diagrama arranca en "Clase Dios hace todo" y pregunta "¿Diseño sano?". La rama mala es "Baja cohesión / Alto acoplamiento", cuyas consecuencias son que cambia todo junto, nadie la reutiliza y el refactor es doloroso. La rama buena es "Alta cohesión / Bajo acoplamiento", que produce una misión por módulo, interfaces mínimas y que el sistema evoluciona sin miedo.
+>
+> **Por qué importa:** el mismo par (cohesión alta / acoplamiento bajo) es el que el deck define como ideal y el que después se traduce en SRP, en ocultamiento y en límites de microservicios.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, una clase `GestorTodo` con login, reportes y nómina es la rama izquierda del diagrama; partirla en módulos con interfaces mínimas la mueve a la derecha.
 
 ---
 
@@ -37,6 +43,12 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > [!note] 📊 Escala de Cohesión (de peor a mejor)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-02-graph.svg]]
+>
+> **Se lee así:** Es una escalera de siete peldaños que va de peor a mejor: *Coincidente* → *Lógica* → *Temporal* → *Procedimental* → *Comunicacional* → *Secuencial* → *Funcional*. Cada peldaño se apoya en el anterior, así que la mejora es gradual: de "juntas por accidente" a "todo contribuye a una sola tarea".
+>
+> **Por qué importa:** da un lenguaje común para negociar qué tan buena es la cohesión de un módulo, en vez de un "bien o mal" sin criterio.
+>
+> **Ejemplo:** en el proyecto de ESPOL, una clase `Utilidades` con 40 métodos varios es cohesión lógica; `CalculadoraIVA`, que solo calcula IVA, es cohesión funcional, el último peldaño.
 >
 > | Nivel | Qué significa | Ejemplo |
 > |---|---|---|
@@ -203,6 +215,12 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Ajustar en mi Diseño
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-03-flow.svg]]
+>
+> **Se lee así:** El diagrama revisa un módulo existente y le hace tres preguntas encadenadas. Primera: "¿Puedes describirlo en 1 frase sin 'y'?" — si no puedes, es problema de cohesión y hay que dividir por responsabilidad. Segunda: "¿Sus métodos reciben 3+ booleanos o el objeto completo de otro módulo?" — si es así, es problema de acoplamiento y la salida es pasar datos simples o usar Strategy. Tercera: "¿Puedes usarlo sin leer su código fuente?" — si no, es problema de abstracción y hay que revisar que la interfaz baste; si sí, el diseño está sano.
+>
+> **Por qué importa:** es la versión operativa del "test de 10 segundos" de la nota: tres preguntas binarias que se pueden aplicar hoy mismo a cualquier clase propia.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un `ReporteVentas` que lee, calcula y además manda el correo falla en la primera pregunta, y el diagrama ya dice "divide por responsabilidad".
 
 ---
 
@@ -374,6 +392,12 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-04-mind.svg]]
+>
+> **Se lee así:** El mapa mental organiza la unidad en cuatro ramas. *Cohesión*: funcional ideal, secuencial y comunicacional ok, procedimental/lógica/temporal mal. *Acoplamiento*: datos ideal, sello medio, control evitar, externo frágil, común peligroso, contenido prohibido. *Mecanismos*: abstracción y ocultamiento de información. *Errores comunes*: clase `Utilidades`, getters y setters para todo, clase Dios.
+>
+> **Por qué importa:** cada rama termina en un juicio —ideal, ok, mal, evitar, prohibido— que ya está traducido a las escalas y a los tres errores de la nota.
+>
+> **Ejemplo:** para el control de ESPOL, este mapa sirve como lista de verificación: si en el diagrama de clases aparece un `Util` con getters para todo, ya sabes en qué error estás.
 
 > [!success] 🔍 Comparación Final
 >

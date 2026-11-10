@@ -31,6 +31,20 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-01-graph.svg]]
+>
+> **Se lee así:** el diagrama entra por **código con smells** y hace la pregunta **¿refactorizo?**.
+> La rama ❌ es **parche encima**, y su cuenta final es: **funciona hoy**, **deuda crece**,
+> **reescritura**. La rama ✅ es **pasos pequeños + tests**, que promete **mismo
+> comportamiento**, **diseño más simple** y **cambios baratos**. Cada rama lleva escrita su
+> consecuencia.
+>
+> **Por qué importa:** el diagrama pone las dos rutas lado a lado para que el costo del parche se
+> vea completo: funciona hoy, sí, pero la deuda crece y termina en reescritura. La ruta buena no
+> promete resultados más rápidos hoy, promete que el cambio futuro sale más barato.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el `Pedido` al que se le pega un `if` más por
+> cada tarifa nueva es el camino ❌; extraer la tarifa a una interfaz y correr los tests entre
+> cada paso es el camino ✅.
 
 ---
 
@@ -70,6 +84,21 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Refactorizo Ahora
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-02-flow.svg]]
+>
+> **Se lee así:** el diagrama es un flujo que arranca en **veo un smell** y decide por pasos.
+> Primero pregunta **¿tengo tests verdes?**: si la respuesta es **no**, la instrucción es
+> **escribe 3 asserts primero**; si es **sí**, pregunta **¿voy a tocar ese código pronto?**. Si
+> tampoco la vas a tocar, la salida es **anótalo y sigue (YAGNI)**; si sí, la salida es
+> **refactoriza en pasos de 5 min + commit**.
+>
+> **Por qué importa:** el diagrama convierte «refactorizar cuando se pueda» en una decisión con
+> dos filtros. El primero es la red de tests —sin ella ni se empieza— y el segundo es el
+> criterio de oportunidad: el smell que no vas a tocar se anota y se sigue, no se arregla de
+> paso.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, si te cruzas con un método sospechoso de
+> `Cliente` que no vas a modificar en esta entrega, se anota; si el `Pedido` sí lo vas a tocar,
+> primero se escriben 3 asserts y después se avanza en pasos de 5 minutos con commit.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -264,6 +293,19 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Refactor** y tres ramas. **Cuándo** lista los tres
+> momentos de Fowler: **regla de tres**, **preparatorio** y **limpieza**. **Smells** agrupa lo
+> que vas a encontrar en **nombres**, **datos** y **acoplamiento**. **Cómo** fija el ritmo:
+> **1 técnica**, **tests verdes** y **commit chico**.
+>
+> **Por qué importa:** el mapa junta las tres preguntas de la unidad en un solo lugar: cuándo se
+> refactoriza, qué se busca y con qué ritmo se avanza. La rama **Cómo** es la que evita el error
+> típico de la unidad: tocar cinco cosas y commitear una sola vez al final.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, la **regla de tres** aparece cuando el tercer
+> `if` de tarifa te obliga a generalizar, y el **commit chico** es el que te deja revertir solo
+> esa extracción si el review la rechaza.
 
 > [!success] 🔍 Comparación Final
 >

@@ -31,6 +31,21 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-01-graph.svg]]
+>
+> **Se lee así:** el diagrama es un árbol de decisión con una sola bifurcación. Arriba está
+> **problema recurrente** y la pregunta **¿existe patrón?**. Si la respuesta es no, la rama ❌
+> lleva a **invento propio**, y sus consecuencias son **prueba y error**, **deuda oculta** y
+> que **nadie lo entiende**. Si la respuesta es sí, la rama ✅ lleva a **adapto patrón**, con
+> **solución probada**, **nombre compartido** y **consecuencias conocidas**.
+>
+> **Por qué importa:** un patrón no es una receta que se copia, es una decisión que se justifica
+> frente a la alternativa de inventar. Preguntar «¿existe patrón?» antes de abrir el IDE es
+> justo lo que separa un diseño con nombre compartido de un invento propio que después nadie
+> entiende.
+>
+> **Ejemplo:** en el SIEL trabajado en clase, antes de inventar una forma propia de registrar el
+> resultado de un acta, se revisa si ese problema ya tiene un patrón conocido que aporte nombre
+> compartido.
 
 > [!info] 🖼️ Figura
 >
@@ -93,6 +108,21 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Necesito un Patrón
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-02-flow.svg]]
+>
+> **Se lee así:** es un flujo de dos preguntas encadenadas. La primera es **¿lo has visto antes?**:
+> si la respuesta es **no, es único**, el diagrama va a **diseño directo sin patrón**; si es
+> **sí, recurrente**, pasa a la segunda pregunta, **¿qué varía?**. De esa segunda pregunta salen
+> cinco salidas: **algoritmo intercambiable → Strategy**, **responsabilidades apilables →
+> Decorator**, **varios deben enterarse → Observer**, **creación acoplada → Factory** e
+> **incompatibilidad → Adapter**.
+>
+> **Por qué importa:** el diagrama separa dos preguntas que se mezclan al buscar un patrón. No
+> todo problema recurrente necesita patrón —si es único, la alternativa es diseño directo— y no
+> todo problema recurrente se resuelve con el mismo patrón: depende de **qué** es lo que varía.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el aviso de «cupo lleno» tiene que llegar a más
+> de un destino: eso es **varios deben enterarse → Observer**, y no dos `if` de aviso repartidos
+> por el código.
 
 > [!info] 🖼️ Figura
 >
@@ -260,6 +290,19 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con una raíz, **Patrones**, y tres ramas. **Anatomía**
+> desglosa lo que trae todo patrón: **nombre**, **contexto** y **consecuencias**. **Familias**
+> los clasifica en **creacional**, **estructural** y **comportamiento**. **Principios** recoge
+> los dos mensajes de Shalloway: **encapsular lo que varía** y **diseñar a interfaces**.
+>
+> **Por qué importa:** el mapa condensa el contrato de la unidad en tres preguntas: cómo se
+> nombra, en qué contexto aplica y a qué familia pertenece. Con eso un patrón se elige por
+> categoría y no por gusto, y se puede justificar el precio que se paga por usarlo.
+>
+> **Ejemplo:** en el SIEL trabajado en clase, crear el objeto `Inscripcion` es un problema
+> **creacional** (entra un Factory), mientras que avisar al JRV y a la candidatura que el conteo
+> ya está listo es **comportamiento** (entra un Observer).
 
 > [!info] 🖼️ Figura
 >

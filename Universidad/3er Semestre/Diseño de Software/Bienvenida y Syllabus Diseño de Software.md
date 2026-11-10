@@ -74,6 +74,12 @@ tags: [CCPG1042, syllabus, bienvenida, diseno-software]
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/dsw-bienv-map.svg]]
 >
+> **Se lee así:** el diagrama resume la materia en una cabecera (**🧩 Diseño SW · CCPG1042**) y cinco bloques que cuelgan de ella en orden: U1 Intro 5h, U2 Diseño OO 7h, U3 Patrones 7h, U4 Refactor 5h y U5 Pruebas 4h. Es la misma información de la tabla siguiente, puesta en forma de mapa.
+>
+> **Por qué importa:** de un vistazo muestra el peso de cada unidad en horas, que es lo que sirve para planear el estudio semana por semana y saber dónde cae cada parcial.
+>
+> **Ejemplo:** el bloque **U3 Patrones (7h)** es el que prepara el parcial de patrones de diseño, el mismo tema que la Unidad 3 del repositorio.
+>
 > | Unidad | Tema | Horas |
 > |---|---|---|
 > | **1** | Introducción al diseño | 5h |

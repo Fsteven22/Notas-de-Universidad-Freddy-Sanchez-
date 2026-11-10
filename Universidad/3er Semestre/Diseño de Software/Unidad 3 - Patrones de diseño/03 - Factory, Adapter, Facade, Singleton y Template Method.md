@@ -34,6 +34,20 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-01-graph.svg]]
+>
+> **Se lee así:** el diagrama parte de una **necesidad** y hace una sola pregunta, **¿cuál?**, con
+> cuatro salidas: **crear sin acoplar → Factory**, **compatibilizar → Adapter**, **simplificar
+> acceso → Facade** y **fijar pasos → Template Method**. Cada salida nombra el patrón y, en la
+> misma línea, el problema que resuelve.
+>
+> **Por qué importa:** el diagrama convierte una necesidad difusa («necesito crear cosas»,
+> «necesito que algo encaje») en una elección entre cuatro patrones con consecuencias distintas.
+> No hay un quinto camino: lo que no sea crear, compatibilizar, simplificar ni fijar pasos no
+> pertenece a esta nota.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el punto donde se decide si crear un `Documento`
+> PDF o Word es **crear sin acoplar → Factory**, y la capa que traduce el formato de un servicio
+> externo al que espera tu vista es **compatibilizar → Adapter**.
 
 > [!info] 🖼️ Figura
 >
@@ -111,6 +125,20 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Patrón de Creación/Estructura
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-02-flow.svg]]
+>
+> **Se lee así:** el diagrama abre con **necesidad** y una pregunta de tres vías: **¿crear,
+> compatibilizar o simplificar?** Cada respuesta lleva a su patrón: **crear con lógica →
+> Factory**, **compatibilizar → Adapter**, **simplificar uso → Facade**. Hay una cuarta salida,
+> **una sola instancia**, que a su vez pregunta **¿sin estado mutable?**: si la respuesta es
+> **sí**, **Singleton aceptable**; si es **no**, la recomendación es **inyección en su lugar**.
+>
+> **Por qué importa:** el diagrama no solo ofrece cuatro patrones, además pone el precio sobre
+> la mesa. Singleton entra solo cuando la instancia no tiene estado mutable; en cualquier otro
+> caso la respuesta es inyectar la dependencia, que es lo que evita el global mutable.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, la configuración de solo lectura (puertos,
+> cadena de conexión) es un **Singleton aceptable** por ser inmutable, mientras que un contador
+> de matrículas es estado mutable y debe entrar por constructor, no como singleton.
 
 > [!info] 🖼️ Figura
 >
@@ -275,6 +303,19 @@ tags: [CCPG1042, unidad3, factory, adapter, facade, singleton, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-04-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Esenciales II** y cinco ramas, una por patrón.
+> **Factory** lleva **crear sin acoplar**; **Adapter** lleva **compatibilizar**; **Facade**
+> lleva **simplificar**; **Singleton** lleva **uno solo, cuidado**; **Template Method** lleva
+> **esqueleto fijo**. La rama de Singleton es la única que trae una advertencia pegada.
+>
+> **Por qué importa:** el mapa deja ver la diferencia entre lo que cada patrón compra y lo que
+> cuesta. Cuatro son herramientas de la unidad y una —Singleton— llega marcada con «cuidado»,
+> porque un global mutable rompe los tests y el acoplamiento.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el esqueleto fijo de un reporte que pide
+> encabezado, cuerpo y pie es **Template Method**, y la configuración de solo lectura es el
+> **Singleton** que la cátedra sí tolera.
 
 > [!info] 🖼️ Figura
 >

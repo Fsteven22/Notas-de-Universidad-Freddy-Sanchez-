@@ -32,6 +32,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-01-graph.svg]]
+>
+> **Se lee así:** El diagrama parte de los *Requerimientos* y abre la pregunta "¿Diseñas?". Si la respuesta es "código directo", las consecuencias son que todo queda conectado, los cambios se vuelven caros, aparece la deuda técnica y el proyecto queda frágil. Si la respuesta es "modelo de diseño", se llega a arquitectura clara, componentes con UML, cambios baratos y un producto mantenible.
+>
+> **Por qué importa:** convierte una decisión de fondo —diseñar o no— en una cadena de consecuencias visibles, que es la misma comparación de la tabla "Codificar Directo / Diseñar Primero" de arriba.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, escribir el modelo UML antes de abrir el IDE es lo que evita quedarse en la rama "todo conectado" y "cambios caros".
 
 ---
 
@@ -43,6 +49,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-02-graph.svg]]
 >
+> **Se lee así:** Es una cadena de cuatro pasos: *Necesidad* → *Instrucciones* → *Datos* → *Documentación* → *Software útil*. La necesidad se convierte en instrucciones ejecutables, esas instrucciones manipulan estructuras de datos, y todo eso queda documentado; solo con las tres capas se llega a un software que realmente sirve.
+>
+> **Por qué importa:** muestra que el software no es solo código: sin datos no hay programa que corra, y sin documentación nadie puede operarlo ni mantenerlo.
+>
+> **Ejemplo:** en un sistema de matrícula de ESPOL, las clases Java son las instrucciones, la base de datos con los estudiantes son los datos, y el README con los diagramas UML es la documentación.
+>
 > | Cara | Qué es | Ejemplo en tu proyecto |
 > |---|---|---|
 > | **Instrucciones** | Programas que se ejecutan | Clases Java del sistema |
@@ -51,10 +63,22 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > [!info] 📖 El deck de cátedra: qué es diseño de software (01b, pp. 4-13)
 > *"Diseño de software es un proceso que define la arquitectura, co…"* — el deck abre así y de ahí sale el **modelo general de proceso de diseño** que aparece en la p. 5.
+>
+> **Se lee así:** La apertura del deck distingue dos sentidos: el diseño de software puede ser un proceso o el resultado de ese proceso. El proceso, según SWEBOK, "define la arquitectura, componentes, interfaces y otras características de un sistema o un componente"; el resultado, según Sommerville, es "una descripción de la estructura del software a ser implementado, los modelos de datos y estructuras usadas por el sistema, las interfaces entre los componentes del sistema y, algunas veces, los algoritmos utilizados". De ahí sale el modelo general de proceso de diseño con entradas, actividades y salidas.
+>
+> **Por qué importa:** los dos sentidos conviven en la carrera —el boceto UML que uno hace es el proceso, y el diagrama que entrega es el resultado— y confundirlos lleva a hacer el diagrama como trámite posterior, que es el Error 2 de esta nota.
+>
+> **Ejemplo:** en el proyecto de ESPOL, el boceto de clases en el pizarrón es el proceso de diseño y el UML versionado en el repositorio es su resultado.
 
 > [!note] 🖼️ captura 01b-p5 — Qué es el Software (Pressman cap. 1)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p5.png]]
+>
+> **Se lee así:** La figura es un modelo general de proceso de diseño con tres bandas: *Design inputs* (entradas), *Design activities* (interface design, component selection and design, database design) y *Design outputs* (salidas). Las actividades de diseño dibujadas son justamente las tres que producen los artefactos que entrega esta materia.
+>
+> **Por qué importa:** muestra que el diseño no es un paso único, sino entradas → actividades → salidas, y que las salidas (interfaces, componentes, base de datos) son lo que después se construye.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el diagrama de clases y el modelo de datos son las "design outputs" que salen de las actividades de diseño de interfaces y de base de datos del diagrama.
 
 > [!note] 💡 Los 7 principios de diseño del deck (pp. 6-13)
 >
@@ -79,6 +103,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > [!note] 🖼️ captura 01b-p13 — Qué es el Software (Pressman cap. 1)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p13.png]]
+>
+> **Se lee así:** La diapositiva enuncia el principio 7, "separación de preocupaciones": una preocupación (*concern*) es un área de interés del diseño, y la arquitectura debe tener vistas de preocupaciones que permitan concentrarse en pocas cosas a la vez para reducir la complejidad. La figura lo ilustra con dos vistas: *Presentational (visual design) Concerns* y *Services (conditions for data & business) Concerns*.
+>
+> **Por qué importa:** es la idea detrás de las capas y de MVC que la nota menciona justo antes: si cada vista se ocupa de un área, la complejidad se reparte en vez de acumularse.
+>
+> **Ejemplo:** en un sistema web de ESPOL, la vista de presentación (HTML/CSS) y la vista de servicios (reglas de negocio y acceso a datos) son las dos vistas de preocupaciones que separa la figura.
 
 > [!success] 📋 Por Qué el Software NO es Como el Hardware
 >
@@ -164,6 +194,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-03-graph.svg]]
 >
+> **Se lee así:** La figura arranca en "Un compromiso con la calidad" y se despliega en tres capas encadenadas: *Proceso* (cómo organizas el trabajo), *Métodos* (las técnicas concretas: diseño, pruebas) y *Herramientas* (UML, IDEs, control de versiones). Son las tres capas con las que la nota glosa la definición del IEEE.
+>
+> **Por qué importa:** sitúa esta materia dentro del proceso: el diseño es una de las técnicas de la capa de métodos, y se apoya en las herramientas de la tercera.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el proceso es el Scrum del semestre, el método es el diagrama UML de clases y la herramienta es el IDE con Git.
+>
 > - **Proceso:** el marco de trabajo (ej. ágil, cascada) que organiza cuándo ocurre cada actividad.
 > - **Métodos:** las técnicas concretas — cómo modelar requerimientos, cómo diseñar, cómo probar.
 > - **Herramientas:** el soporte automatizado o semiautomatizado de los métodos (UML, Git, IDEs).
@@ -177,6 +213,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > [!note] 🗺️ Diagrama — ️ ¿Cuánto Diseño Necesito? — Diagrama de Decisión
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-04-flow.svg]]
+>
+> **Se lee así:** Es un árbol de decisión que parte de "Nuevo módulo o proyecto" y pregunta primero "¿Más de 1 persona lo va a tocar?". Si la respuesta es "Sí", se sigue con "¿Se va a mantener más de unas semanas?"; si es "No, soy solo yo" y además "No, script desechable", el diagrama concluye que el código directo es aceptable. Si el módulo sí se mantiene, aparece la pregunta "¿Más de 7 clases sin agrupar?": con más de 7 clases falta arquitectura y hay que definir subsistemas; con menos, basta un boceto UML y seguir adelante.
+>
+> **Por qué importa:** da un criterio verificable para calibrar cuánto diseño hacer, en lugar de aplicar siempre el mismo nivel de formalidad.
+>
+> **Ejemplo:** en un trabajo en grupo de ESPOL con un módulo que vive más de un semestre, el diagrama lleva a la rama "diseña arquitectura e interfaces antes de codear".
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -351,6 +393,12 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-05-mind.svg]]
+>
+> **Se lee así:** Es el mapa mental de la unidad: *Software* (instrucciones, datos, documentación) frente a *Vs Hardware* (no se fabrica en serie, no se desgasta, se deteriora por cambios); los *tipos de aplicación* (sistema y aplicación, científico y embebido, línea de producto, web móvil e IA); la *ingeniería de software* (proceso, métodos, herramientas) y dentro de los métodos el *diseño* (datos, arquitectónico, interfaces, componente); y cierra con *costo de cambio* → *curva de Boehm* → "más barato temprano".
+>
+> **Por qué importa:** condensa en un solo mapa los cuatro bloques de la nota y deja visible que el costo de cambio es la bisagra entre todo lo anterior y la Curva de Boehm.
+>
+> **Ejemplo:** para repasar antes del control de ESPOL, este mapa sirve de índice: si no puedes explicar "curva de Boehm → más barato temprano", todavía no cerraste la unidad.
 
 > [!success] 🔍 Comparación Final
 >

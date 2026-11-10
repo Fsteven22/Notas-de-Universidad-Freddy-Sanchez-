@@ -34,6 +34,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-01-graph.svg]]
+>
+> **Se lee así:** El diagrama parte de "Clase con problemas" y pregunta "¿SOLID?". La respuesta se desglosa en cinco comprobaciones: *S: una misión*, *O: extiende sin editar*, *L: sustituye sin romper*, *I: interfaces justas* y *D: abstracciones*. No hay un nodo final: son cinco criterios de diagnóstico, no una secuencia.
+>
+> **Por qué importa:** cada letra del acrónimo es una pregunta que se le puede hacer a cualquier clase, y es la forma en que la nota va a diagnosticar cada una de las cinco violaciones.
+>
+> **Ejemplo:** en el proyecto de ESPOL, el `Main.java` de nómina que la nota usa como caso integrador tiene una respuesta distinta para cada letra, y por eso sirve como ejemplo de los cinco principios juntos.
 
 ---
 
@@ -53,10 +59,22 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📖 El deck de cátedra: por qué SOLID (04p, pp. 3-12)
 > El deck abre con **código limpio** (Robert C. Martin, "Uncle Bob") y luego muestra el problema que SOLID viene a resolver. Esta es la motivation literal de la diapositiva.
+>
+> **Se lee así:** El arranque del deck es el "código limpio": Robert C. Martin (Uncle Bob) empezó el debate de los principios SOLID a finales de los 1980, el grupo se consolidó en los 2000 y pasó a llamarse SOLID en 2004. El objetivo que el deck enuncia para estos principios es la creación de estructuras de software que toleren cambios, sean entendibles y sean la base de componentes que puedan ser reutilizables. Y el problema que resuelven aparece en la diapositiva "Bad Coding": rigidez (un cambio afecta muchas partes), fragilidad (fallos en lugares donde no debería) e inmovilidad (el código no se puede reusar fuera de su contexto original).
+>
+> **Por qué importa:** el deck no expone cinco reglas sueltas, sino una causa y cinco respuestas: los males del código enredado son el motivo y SOLID es el remedio.
+>
+> **Ejemplo:** en el proyecto de ESPOL, el trío de males sirve de diagnóstico: si un cambio de requisitos toca tres archivos, hay rigidez; si un fallo aparece donde no lo tocaste, hay fragilidad.
 
 > [!note] 🖼️ captura 04p-p10 — SOLID en el Contexto de la Unidad
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p10.png]]
+>
+> **Se lee así:** La diapositiva "Bad Coding…" describe el código espagueti: "In spaghetti code, the relations between the pieces of code are so tangled that it is nearly impossible to add or change something without unpredictably breaking something somewhere else". Es el punto de partida del deck: el problema que SOLID viene a resolver.
+>
+> **Por qué importa:** enuncia por qué existen los principios: no es purismo de estilo, es que las relaciones enredadas hacen que cualquier cambio rompa algo en otro lugar sin que se pueda anticipar.
+>
+> **Ejemplo:** en el proyecto de ESPOL, cuando agregar un método nuevo obliga a revisar cinco clases porque todas se llaman entre sí, se está frente a ese mismo código espagueti.
 
 > [!note] 💡 El trío de males del deck (p. 11)
 >
@@ -117,14 +135,32 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📖 El deck de cátedra: el ejemplo de SRP (04p, pp. 15-17)
 > El deck lo plantea como pregunta de examen: *"¿Se viola el principio SRP? ¿Cuántas responsabilidades tiene esta clase?"* — la misma pregunta que el docente hace en el control.
+>
+> **Se lee así:** El deck enuncia SRP como "a class should have one and only one reason to change, meaning that a class should have only one job", y luego muestra la clase `Employee` con sus cuatro atributos, sus getters y setters y dos métodos de negocio —`isPromotionDueThisYear()` y `calcIncomeTaxForCurrentYear()`— para formular la pregunta de examen. La solución que propone después es mantener `Employee` con la responsabilidad de manejar la información del empleado y usar los servicios de las demás clases.
+>
+> **Por qué importa:** el deck recorre SRP en tres tiempos (definición, contraejemplo, solución), y el contraejemplo no es una clase "con muchos métodos", sino una clase con dos actores distintos pidiendo cambios.
+>
+> **Ejemplo:** en el control de ESPOL, frente a `Employee`, la respuesta esperada es "dos responsabilidades: promoción e impuesto", no "tiene getters y setters".
 
 > [!note] 🖼️ captura 04p-p15 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p15.png]]
+>
+> **Se lee así:** La diapositiva muestra una clase `Employee` con `employeeld`, `name`, `address` y `dateOfJoining`, con getters y setters para todos los atributos privados, y dos responsabilidades de negocio: `isPromotionDueThisYear()` (lógica de promoción) y `calcIncomeTaxForCurrentYear()` (lógica de impuesto). Debajo, la pregunta del deck: "¿Se viola el principio SRT? ¿Cuántas responsabilidades tiene esta clase?".
+>
+> **Por qué importa:** el deck no afirma la violación, la plantea como pregunta de examen: el trabajo del estudiante es contar las responsabilidades, no memorizar la definición.
+>
+> **Ejemplo:** en el control de ESPOL, frente a esta misma clase, la respuesta esperada es "dos responsabilidades: la promoción y el impuesto", no "tiene getters y setters".
 
 > [!note] 🖼️ captura 04p-p17 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p17.png]]
+>
+> **Se lee así:** La diapositiva "Implementación con SRP" conserva la clase `Employee` con sus datos (`employeeld`, `name`, `address`, `dateOfJoining`), y según el texto del deck esa clase mantiene su responsabilidad de manejar la información del empleado y usa los servicios de las demás clases en lugar de implementar ella misma las otras responsabilidades.
+>
+> **Por qué importa:** muestra que la solución de SRP no es partir la clase en trozos, sino dejar cada clase con su información y delegar lo demás a servicios ajenos.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el `Empleado` guarda sus datos y delega el cálculo de sueldo y el guardado en un repositorio, tal como hace la solución del deck.
 
 > [!note] 💡 Solución del deck (p. 17)
 >
@@ -171,14 +207,32 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📖 El deck de cátedra: el ejemplo de OCP (04p, pp. 20-23)
 > *"Objects or entities should be open for extension, but closed for modification"*. El deck calcula el área de varias figuras geométricas y pregunta **"¿Se cumple el OCP?"**.
+>
+> **Se lee así:** El deck construye el ejemplo en dos diapositivas: primero un `AreaCalculator` con un método por forma (`calculateRectangleArea`, `calculateCircleArea`) y la pregunta "¿Se cumple el OCP?"; después la solución, una interfaz `Shape` con `calculateArea()` que `Rectangle` y `Circle` implementan. El cierre del deck lo resume: el código queda abierto para extensión porque muchas más formas pueden agregarse sin modificar el código existente, y queda cerrado para modificación porque `AreaCalculator` ejecuta su función con independencia de las formas que se agreguen.
+>
+> **Por qué importa:** el ejemplo geométrico del deck es el mismo que la nota usa con descuentos: la clave es que el cliente final (`AreaCalculator`) no cambia, no que desaparezca el `if`.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el `CalculadoraArea` del deck se traduce tal cual a un módulo de descuentos: agregar un tipo de descuento es una clase nueva, no un método nuevo en el calculador.
 
 > [!note] 🖼️ captura 04p-p21 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p21.png]]
+>
+> **Se lee así:** La diapositiva muestra el diseño que NO cumple OCP: una clase `Circle` con su radio y un `AreaCalculator` con un método por forma (`calculateRectangleArea(Rectangle)` y `calculateCircleArea(Circle)`). La pregunta del deck, en la esquina superior, es "¿Se cumple el OCP?".
+>
+> **Por qué importa:** el problema es visible en la firma: cada variante nueva obliga a agregar un método al calculador, o sea a editar el código que ya funcionaba.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un `CalculadoraArea` con un método por figura obligaría a tocarlo cada vez que se agrega un triángulo.
 
 > [!note] 🖼️ captura 04p-p22 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p22.png]]
+>
+> **Se lee así:** La diapositiva "Cumpliendo OCP" muestra la corrección: una interfaz `Shape` con `calculateArea()`, y las clases `Rectangle` (con `length` y `width`) y `Circle` (con `radius`) implementándola. Cada forma conoce su propio cálculo y todas responden al mismo contrato.
+>
+> **Por qué importa:** el cliente ya no menciona formas concretas: agregar un triángulo es una clase nueva que implementa `Shape`, sin editar ni el calculador ni las formas existentes.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el módulo de reportes que calcula áreas de piezas queda intacto cuando se incorpora una pieza hexagonal.
 
 > [!note] 💡 El cierre del deck (p. 23)
 >
@@ -237,10 +291,22 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📖 El deck de cátedra: el ejemplo de LSP (04p, pp. 26-30)
 > *"Derived classes must be completely substitutable for their base classes."* El deck usa un pato: `IDuck` con `Swim()`, y `ElectricDuck` que además necesita encenderse.
+>
+> **Se lee así:** El deck enuncia LSP como "derived classes must be completely substitutable for their base classes" y pone el ejemplo del pato eléctrico: `ElectricDuck.Swim()` solo nada si está encendido, de modo que `MakeDuckSwim(IDuck duck)` puede recibir un pato que no nada. El deck descarta uno de sus dos parches: el `if (duck is ElectricDuck) TurnOn()` en el cliente queda marcado como problema de OCP, mientras que mover el encendido dentro del propio `Swim()` mantiene el contrato y deja al cliente igual.
+>
+> **Por qué importa:** muestra que LSP y OCP se vigilan mutuamente: el parche que arregla la sustitución en el cliente rompe la extensión, y solo se resuelve dentro de la implementación.
+>
+> **Ejemplo:** en un proyecto de ESPOL, una `Ventana` que solo se abre si hay sesión activa debería resolverlo por dentro, igual que hace `ElectricDuck`, y no con un `instanceof` en cada vista.
 
 > [!note] 🖼️ captura 04p-p26 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p26.png]]
+>
+> **Se lee así:** La diapositiva muestra el código del contraejemplo: `interface IDuck { void Swim(); }`, `class Duck implements IDuck` que nada, y `class ElectricDuck implements IDuck` cuyo `Swim()` hace `if (!IsTurnedOn) return;` y solo nada si está encendido. Es la interfaz la que promete "nadar", pero una implementación puede no hacerlo.
+>
+> **Por qué importa:** el problema no está en `ElectricDuck`, está en la promesa de `IDuck`: el cliente que recibe un `IDuck` no tiene forma de saber que le puede tocar un pato apagado.
+>
+> **Ejemplo:** en un proyecto de ESPOL, una interfaz `Impresora` con `imprimir()` y una implementación `ImpresoraApagada` que no imprime es la misma mentira de contrato.
 
 > [!note] 💡 El problema que el deck plantea (p. 27)
 >
@@ -286,14 +352,32 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!info] 📖 El deck de cátedra: el ejemplo de ISP (04p, pp. 32-37)
 > *"Make fine-grained interfaces with specific methods. Clients should not be forced to depend upon interfaces that they don't use."* El deck parte de una interfaz `Messenger` que muestra una variedad de mensajes.
+>
+> **Se lee así:** El deck enuncia ISP como "make fine-grained interfaces with specific methods; clients should not be forced to depend upon interfaces that they don't use" y lo lleva hasta el extremo con la pregunta "¿Problema?" sobre una interfaz con Volar, Correr, Nadar, Comer, Cantar, Graznar, Planear, Caminar, Hablar y Poner huevo. La solución que propone es segmentar: la interfaz `Messenger` del cajero automático se divide en interfaces por cliente, y para la App de depósitos se usa solo una interfaz con los métodos que sí va a utilizar.
+>
+> **Por qué importa:** el caso del cajero muestra el patrón completo de ISP: el problema aparece cuando un cliente nuevo (la App de depósitos) tiene que depender de una interfaz que le sobra, y se resuelve separando por cliente, no por método suelto.
+>
+> **Ejemplo:** en un proyecto de ESPOL, si el cliente de consola implementa una interfaz de mensajes con diez métodos, está pagando el costo de ISP roto que el deck señala con "¿Problema?".
 
 > [!note] 🖼️ captura 04p-p33 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p33.png]]
+>
+> **Se lee así:** La diapositiva plantea el caso: existe una interfaz `Messenger` que permite mostrar una variedad de mensajes cuando un usuario interactúa con un cajero automático, con métodos como `askForCard`, `tellInvalidCard`, `askForPin`, `tellInvalidPin`, `askForAccount`, `tellNotEnoughMoneyInAccount`, `tellAmountDeposited` y `tellBalance`. Se quiere crear una App que muestre mensajes cuando se efectúe un Depósito, y la diapositiva pregunta "¿Problema?".
+>
+> **Por qué importa:** la App de depósitos solo necesita `tellAmountDeposited` y `tellBalance`, pero al depender de `Messenger` queda atada a la tarjeta, al PIN y a los retiros.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un módulo de notificaciones que declara diez métodos obliga al cliente de consola a implementar los que no usa.
 
 > [!note] 🖼️ captura 04p-p34 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p34.png]]
+>
+> **Se lee así:** La diapositiva propone la solución: "Dividamos la interfaz, así una clase no es forzada a implementar lo que no necesita". El código divide `Messenger` en `LoginMessenger` (con `askForCard`, `tellInvalidCard`, `askForPin`, `tellInvalidPin`) y `WithdrawalMessenger` (con `tellNotEnoughMoneyInAccount` y `askForFeeConfirmation`), y una clase `EnglishMessenger` implementa ambas.
+>
+> **Por qué importa:** la clave no es solo partir la interfaz, es partirla *por cliente*: cada interfaz reúne lo que un tipo de usuario realmente usa.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un cajero de depósitos implementa solo la interfaz de mensajes de depósito y no necesita los de retiro.
 
 > [!note] 💡 La pregunta provocadora del deck (p. 36)
 >
@@ -314,17 +398,41 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!note] 🗺️ Diagrama — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-02-graph.svg]]
+>
+> **Se lee así:** El diagrama tiene dos subgráficas. En "Sin DIP", `PedidoService (alto nivel)` apunta directo a `PagoConTarjeta (bajo nivel)`: la dependencia va del negocio hacia lo concreto. En "Con DIP", `PedidoService (alto nivel)` apunta a `interface Pago`, y tanto `PagoConTarjeta` como `PagoPayPal` apuntan a esa misma interfaz con la etiqueta "implementa".
+>
+> **Por qué importa:** la diferencia entre las dos subgráficas es la dirección de la flecha: en la versión correcta las dependencias apuntan a la abstracción, que pertenece al módulo de alto nivel.
+>
+> **Ejemplo:** en un proyecto de ESPOL, `PedidoService` recibe un `Pago` por constructor: cambiar de tarjeta a PayPal es cambiar la implementación, no el servicio.
 
 > [!info] 📖 El deck de cátedra: el ejemplo de DIP (04p, pp. 39-43)
 > *"Depend on abstractions, not on concretions. High-level modules should not depend on low-level modules. Both should depend on abstractions."*
+>
+> **Se lee así:** El deck enuncia DIP y de inmediato propone tomar ventaja de las interfaces; después muestra el incumplimiento con la clase `House` que instancia `new Door()` y `new Window()` en su propio constructor, y el cumplimiento con un `House` que recibe `IDoor` e `IWindow` por constructor. El par del deck es un antes y un después sobre la misma clase: lo único que cambia es de dónde vienen las piezas.
+>
+> **Por qué importa:** el ejemplo del deck muestra que DIP no exige una abstracción previa ni un framework: basta con que la clase de alto nivel reciba sus dependencias desde afuera.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el `ServicioPedido` de la nota es el `House` del deck: con `Pago` recibido por constructor, la prueba puede inyectar un `PagoFalso` sin tarjetas reales ni red.
 
 > [!note] 🖼️ captura 04p-p40 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p40.png]]
+>
+> **Se lee así:** La diapositiva "Incumpliendo DIP" muestra la clase `House` con los campos `private Door _door` y `private Window _window`, y un constructor que hace `_door = new Door();` y `_window = new Window();`. La casa es el módulo de alto nivel y decide, ella misma, qué piezas concretas usar.
+>
+> **Por qué importa:** el problema es que la creación de los detalles quedó dentro de la clase de alto nivel: no hay forma de entregarle otra puerta sin reescribirla.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un `ServicioPedido` que hace `new PagoConTarjeta()` en su constructor tiene exactamente esta forma, y por eso no se puede probar con un pago falso.
 
 > [!note] 🖼️ captura 04p-p43 — Los 5 Principios, Uno por Uno
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p43.png]]
+>
+> **Se lee así:** La diapositiva cierra el deck con el título "SOLID" y una sola frase: "Software Development is not a Jenga game". No hay código ni texto adicional: es la frase con la que el docente resume todo el bloque.
+>
+> **Por qué importa:** la metáfora encaja con lo que mostró el deck: en Jenga cada pieza sostiene a las de arriba, así que quitar una obliga a rehacer las demás; un diseño con SOLID busca que cada cambio se quede en su pieza.
+>
+> **Ejemplo:** en un proyecto de ESPOL, esa es la razón para partir la clase `GestorTodo` antes de que una modificación obligue a mover veinte archivos.
 
 > [!note] 💡 El par del deck (pp. 40-41)
 >
@@ -399,6 +507,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-03-graph.svg]]
 >
+> **Se lee así:** El diagrama coloca a OCP en el centro y muestra las flechas que llegan a él: desde SRP ("clases enfocadas"), desde ISP ("interfaces justas"), desde DIP ("depender de abstracciones") y desde LSP ("implementaciones confiables"). Además hay una flecha de LSP a DIP, porque LSP es lo que garantiza que la abstracción de DIP no mienta.
+>
+> **Por qué importa:** da el orden de ataque que usa la nota: SRP primero (piezas pequeñas), luego DIP e ISP (cómo se conectan) y LSP (que el intercambio sea real); OCP es el resultado.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un módulo con una clase por responsabilidad y constructores que reciben interfaces ya tiene camino a OCP; si además las derivadas respetan el contrato, el sistema crece sin editar lo existente.
+>
 > - **OCP es el objetivo**: un sistema que crece agregando código, no editándolo.
 > - **SRP** da las piezas pequeñas; **DIP** y **ISP** definen cómo se conectan; **LSP** garantiza que cualquier pieza intercambiable de verdad lo sea.
 > - Sin LSP, la abstracción de OCP/DIP miente: la interfaz dice una cosa y la implementación hace otra.
@@ -410,6 +524,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Principio Estoy Violando
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-04-flow.svg]]
+>
+> **Se lee así:** Es un embudo de cuatro preguntas que van descartando un principio a la vez. Primero "¿Cambia por más de una razón o actor?": si es "Sí", es SRP y se divide por responsabilidad. Si es "No", "¿Agregar una variante obliga a editar if/switch?": si es "Sí", es OCP y se extrae una interfaz con una clase por variante. Si tampoco, "¿Una subclase no puede usarse donde va la base?": si es "Sí", es LSP y se revisa el contrato o se evita la herencia. Y si tampoco, "¿Hay métodos vacíos o UnsupportedOperation?": si es "Sí", es ISP y se divide la interfaz por rol; si es "No", "¿Hay new Concreta() en la lógica de negocio?": si es "Sí", es DIP y se recibe interfaz por constructor; si es "No", el diseño está sano.
+>
+> **Por qué importa:** es el diagnóstico en cascada que la nota propone: cada pregunta descarta una causa antes de pasar a la siguiente, así que no se "arreglan" cinco problemas a la vez.
+>
+> **Ejemplo:** en el `Main.java` de nómina que la nota usa como caso integrador, la primera pregunta ya salta a SRP, mientras que un `new MySql()` dentro de `ServicePerson` cae en la última rama, DIP.
 
 > [!note] 👃 Olores de Código → Principio
 >
@@ -432,6 +552,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 >
 > - **Tesis de la Parte III:** los ladrillos bien hechos no bastan — con buenos ladrillos también se construye un desastre. SOLID ordena funciones y datos en clases; su meta son estructuras de nivel medio que **toleren el cambio, sean fáciles de entender y sirvan de base a componentes reutilizables**. Historia: Martin los reunió desde fines de los 80 (debates en USENET); hacia 2004 Michael Feathers propuso reordenarlos para formar el acrónimo **SOLID**.
 > - **SRP, corolario de Conway:** la mejor estructura refleja la organización social — cada módulo, una sola razón para cambiar = **un solo actor**. No significa "una función por clase": significa separar el código del que dependen actores distintos.
+>
+> **Se lee así:** La Parte III de *Clean Architecture* es la lectura que pide el Control 02 y es la que da el marco: los principios no se aplican uno por uno, se leen como un argumento sobre la estructura de nivel medio. El texto de la nota traduce la tesis central —estructuras que toleren el cambio, sean fáciles de entender y sirvan de base a componentes reutilizables— y el corolario de Conway, que un módulo responde a un solo actor, que es la formulación final del SRP.
+>
+> **Por qué importa:** fija la vara de la lectura: el objetivo no es tener clases "bonitas", sino estructuras que aguanten el cambio; sin ese marco, los cinco principios se leen como una lista de reglas sueltas.
+>
+> **Ejemplo:** en el proyecto de ESPOL, el `Employee` de nómina sirve como ejemplo de SRP en versión final: cálculo de sueldo, reporte de horas y guardado responden a tres actores (CFO, COO y CTO), y por eso hay que separarlos.
 
 ### 🧪 Los 6 casos que el control puede citar
 
@@ -717,6 +843,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-05-mind.svg]]
+>
+> **Se lee así:** El mapa mental recorre los cinco principios con su eslogan: *SRP* → una misión, un actor; *OCP* → extiende sin editar, polimorfismo; *LSP* → sustituye sin romper, contrato; *ISP* → interfaces por rol, sin métodos vacíos; *DIP* → abstracciones, inyección por constructor. Cierra con *errores comunes*: decoración, sobreingeniería y herencia por reutilización.
+>
+> **Por qué importa:** cada principio queda asociado a una técnica concreta (polimorfismo, contrato, inyección por constructor) y a un error típico, que es justo lo que pide el control.
+>
+> **Ejemplo:** para el control de ESPOL, este mapa sirve como checklist: si un principio no tiene técnica ni error asociado, todavía no lo has estudiado.
 
 > [!success] 🔍 Comparación Final
 >

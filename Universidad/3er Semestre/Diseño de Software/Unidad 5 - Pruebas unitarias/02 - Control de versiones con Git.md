@@ -32,10 +32,36 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-01-graph.svg]]
+>
+> **Se lee así:** el diagrama parte de un **cambio en rama** y pregunta **¿flujo?**. La rama ❌
+> es **push directo a main**, con las consecuencias **rompe a todos**, **sin revisión** y
+> **culpa difusa**. La rama ✅ es **rama + PR + review**, que produce **tests en verde**,
+> **2 ojos revisan** y **merge limpio**.
+>
+> **Por qué importa:** el diagrama contrapone dos costos distintos. El push directo no falla de
+> forma visible: falla en diferido, cuando main ya está roto y nadie sabe quién lo rompió. La
+> ruta con PR mueve el costo al momento de revisar, que es donde todavía se puede corregir
+> barato.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el compañero que empuja directo a main un
+> viernes rompe la demo del lunes; el mismo cambio enviado por PR con los tests en verde se
+> revisa y se fusiona sin sustos.
 
 > [!note] 🖼️ captura 01b-p35 — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p35.png]]
+>
+> **Se lee así:** es la **portada** de la lámina: el título «Control de versiones de software» y
+> nada más. No hay diagrama ni texto de contenido; es la lámina que abre el bloque del material
+> de clase.
+>
+> **Por qué importa:** sirve de ancla para el resto del bloque: las láminas que siguen
+> desarrollan los comandos y los casos. Reconocerla evita confundirla con una lámina de
+> contenido y deja claro que el material arranca por la teoría y recién después pasa a la
+> práctica.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, esta es la lámina que se cita como deck 01b,
+> p. 35 al referenciar el material de la unidad.
 
 ---
 
@@ -53,7 +79,32 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-02-graph.svg]]
 >
+> **Se lee así:** el diagrama es un ciclo cerrado que arranca en **main verde** y avanza por
+> **rama feat**, **commits chicos**, **Pull Request** y **Review + tests**, para volver al punto
+> de partida: **main verde**. La vuelta al origen es explícita, no implícita.
+>
+> **Por qué importa:** el ciclo muestra que la rama no es un estado alternativo: se crea desde un
+> main verde y debe terminar dejando un main verde. Las condiciones de entrada y de salida son
+> la misma, y por eso **main verde** aparece en los dos extremos del recorrido.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, abres `feat/validacion-cupo` desde main verde,
+> haces commits chicos y el PR vuelve a main verde con la validación incluida.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p39.png]]
+>
+> **Se lee así:** la lámina dibuja el recorrido de un cambio por **cuatro zonas**: **directorio
+> local**, **staging**, **repositorio local** y **repositorio público**, cada una con su
+> descripción. Abajo aparecen los comandos: `git status`, `git add`, `git rm`, `git commit`,
+> `git push` y `git pull`. Dice que en staging «se registran los cambios realizados» y que al
+> repositorio local se le puede «reorganizar commit, agruparlos».
+>
+> **Por qué importa:** la lámina muestra que `commit` no es el final del viaje: hay un **staging**
+> intermedio que permite elegir *qué* se versiona, y un **repositorio local** que es donde se
+> puede reescribir la historia antes de compartirla. Por eso `git add` es un paso propio y no
+> un detalle de `commit`.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, `git add -p` es la forma de elegir a mano qué
+> hunks de `Pedido.java` entran al staging antes de `git commit -m "agrega validación de cupo"`.
 >
 > **Comandos que cubren el 90% del curso:**
 >
@@ -85,18 +136,68 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Directo, Rama o PR
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-03-flow.svg]]
+>
+> **Se lee así:** el diagrama abre con **voy a cambiar código** y pregunta **¿toca main
+> directo?**. Si estás en **solo mi rama**, la salida es **commit directo en tu rama**. Si es
+> **main compartido**, pregunta **¿cambio trivial?**: para un **typo, 1 línea** la salida es
+> **commit directo con buen mensaje**; para un **feature/fix real**, la salida es **rama + PR +
+> review**.
+>
+> **Por qué importa:** el diagrama da un criterio de excepción en lugar de una prohibición
+> absoluta. La regla general es rama y PR; el commit directo se acepta solo en el caso trivial, y
+> **solo en tu rama**, que es donde no hay nadie más que pueda sufrirlo.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, corregir una tilde en el README va como commit
+> directo, pero agregar la validación de cupo a `Pedido` sale por rama y PR.
 
 > [!note] 🖼️ captura 01b-p42 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p42.png]]
+>
+> **Se lee así:** la lámina es el **ejemplo de la lista de compras**, que arranca vacía en la
+> **versión 0** y va creciendo por commits: primero una **hamburguesa**, después **verduras** y
+> **cerveza**, hasta las **versiones 1, 2 y 3** de la lista. En el **repositorio** se ve el
+> historial de esos commits, y una nota explica que al intentar hacer commit **no tiene la
+> versión reciente**.
+>
+> **Por qué importa:** la lámina muestra el caso que el curso necesita que entiendas: el commit
+> falla no porque el código esté mal, sino porque la copia local está **desactualizada**. Por eso
+> la secuencia obligatoria es **pull antes de commit**, no después.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, si tú y un compañero editan el mismo
+> `README.md`, tu commit falla con el mismo aviso de «no tiene la versión reciente» hasta que
+> haces `git pull --rebase`.
 
 > [!note] 🖼️ captura 01b-p43 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p43.png]]
+>
+> **Se lee así:** es una lámina de una sola línea: el título **«Resolver un conflicto»**. No
+> muestra código ni pasos: es el encabezado que anuncia la parte de la lámina donde se explica
+> cómo salir de un conflicto.
+>
+> **Por qué importa:** aísla el concepto en su propio momento del material: el conflicto es el
+> estado esperado del trabajo en equipo —no el error excepcional— y por eso tiene un
+> procedimiento propio en lugar de resolverse improvisando.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el aviso de conflicto al abrir un PR de
+> `Pedido.java` se resuelve con `git pull --rebase`, se combinan las dos versiones a mano y se
+> sigue con el merge.
 
 > [!note] 🖼️ captura 01b-p44 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p44.png]]
+>
+> **Se lee así:** la lámina repite el título del paso anterior con el resultado: **«Conflicto
+> solucionado»**. Es la contraparte de la lámina 43: donde esa anunciaba el problema, esta
+> muestra el final del procedimiento.
+>
+> **Por qué importa:** el par de láminas **«Resolver un conflicto» / «Conflicto solucionado»**
+> convierte el conflicto en un procedimiento con salida, no en un callejón sin salida. Es la
+> misma lógica del ciclo de la unidad: detectar, actuar, verificar.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, tras combinar las versiones y correr los tests
+> en verde, el PR de `Pedido.java` se fusiona y ese es el «conflicto solucionado».
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -253,6 +354,18 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-04-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Git en equipo** y tres ramas. **Flujo** recoge
+> **rama por función**, **PR + review** y **main verde**. **Higiene** recoge **commits
+> atómicos**, **`.gitignore`** y **sin secretos**. **Historia** fija la regla de reescritura:
+> **rebase local**, **merge al integrar**.
+>
+> **Por qué importa:** el mapa separa las tres dimensiones de trabajar en equipo con Git: el
+> proceso de entrega, la higiene del repositorio y el manejo del historial. La rama **Historia**
+> es la que evita el error caro, porque un `rebase` publicado reescribe historia compartida.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, tu rama `feat/validacion-cupo` la rebases a
+> diario, pero el `merge` a main lo hace quien aprueba el PR.
 
 > [!success] 🔍 Comparación Final
 >
@@ -318,13 +431,63 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p35.png]]
 >
+> **Se lee así:** es la **portada** de la lámina, con el título «Control de versiones de
+> software» y ningún otro contenido. Abre el bloque de láminas del material de clase.
+>
+> **Por qué importa:** fija el punto de partida del material: el bloque empieza por la teoría del
+> control de versiones y recién después pasa a los comandos y a los casos de conflicto.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, esta es la lámina que se cita como deck 01b,
+> p. 35 al referenciar el material de la unidad.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p39.png]]
+>
+> **Se lee así:** la lámina dibuja el recorrido de un cambio por **directorio local**, **staging**,
+> **repositorio local** y **repositorio público**, con la descripción de cada zona. Debajo
+> aparecen los comandos `git status`, `git add`, `git rm`, `git commit`, `git push` y `git pull`.
+>
+> **Por qué importa:** deja claro que `commit` no es el final del viaje: el **staging** decide
+> qué se versiona y el **repositorio local** es donde todavía se puede reescribir la historia.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, `git add -p` es la forma de elegir a mano qué
+> hunks de `Pedido.java` entran al staging antes del commit.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p42.png]]
 >
+> **Se lee así:** es el **ejemplo de la lista de compras**: parte vacía en la **versión 0** y
+> crece por commits —**hamburguesa**, después **verduras** y **cerveza**— hasta las **versiones
+> 1, 2 y 3**. Una nota del repositorio avisa que al intentar hacer commit **no tiene la versión
+> reciente**.
+>
+> **Por qué importa:** muestra que el commit puede fallar no porque el código esté mal, sino
+> porque la copia local está desactualizada, y por eso el `pull` va **antes** del commit.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el mismo aviso aparece cuando tú y un compañero
+> tocan el mismo `README.md` y hay que hacer `git pull --rebase` antes de seguir.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p43.png]]
 >
+> **Se lee así:** es una lámina de una sola línea con el título **«Resolver un conflicto»**. No
+> muestra código ni pasos: anuncia la parte del material dedicada a salir de un conflicto.
+>
+> **Por qué importa:** convierte el conflicto en un estado con procedimiento propio y no en el
+> error excepcional del trabajo en equipo, que es lo que exige un flujo ordenado de pull, merge
+> y tests.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el conflicto al abrir el PR de `Pedido.java` se
+> resuelve con `git pull --rebase` y combinando las dos versiones a mano.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p44.png]]
+>
+> **Se lee así:** la lámina cierra la secuencia con el resultado: **«Conflicto solucionado»**. Es
+> la contraparte directa de la lámina anterior, donde se anunciaba el problema.
+>
+> **Por qué importa:** el par **«Resolver un conflicto» / «Conflicto solucionado»** muestra que
+> todo el flujo de Git tiene salida: detectar, actuar, verificar, y con eso el equipo puede
+> seguir entregando.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, tras combinar las versiones y correr los tests
+> en verde, el PR de `Pedido.java` se fusiona y ese es el conflicto solucionado.
 
 ---
 

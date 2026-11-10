@@ -33,6 +33,19 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-01-graph.svg]]
+>
+> **Se lee así:** el diagrama entra por **smell detectado** y hace una pregunta, **¿cuál
+> técnica?**, con cuatro salidas, una por tipo de smell: **grande → Extract**, **mal ubicado →
+> Move**, **confuso → Rename** e **inútil → Inline**. Los cuatro caminos terminan en el mismo
+> punto: **tests verdes**.
+>
+> **Por qué importa:** el diagrama te da un criterio de selección objetivo para no improvisar, y
+> recuerda que la verificación es la misma en todos los casos. Elegir la técnica es la parte
+> fácil; lo que no se negocia es terminar con la suite en verde.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, un `Factura` con un método de 40 líneas es
+> **grande → Extract**, un método que usa 4 campos de `Cliente` es **mal ubicado → Move**, y
+> `procesar2()` es **confuso → Rename**.
 
 ---
 
@@ -134,6 +147,19 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Técnica Aplico
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-02-flow.svg]]
+>
+> **Se lee así:** el diagrama es una versión más detallada: **smell detectado** →
+> **¿qué tipo?** → **grande/mezclado → Extract** (con sus tres variantes: *function*, *variable*,
+> *class*), **mal ubicado → Move** (*function*, *field*), **confuso → Rename**, **inútil/pequeño →
+> Inline** y **etapas mezcladas → Split** (*phase*, *loop*).
+>
+> **Por qué importa:** cada técnica del catálogo se aplica a un tipo de smell concreto, y este
+> diagrama los separa en categorías disjuntas. Esa taxonomía es lo que hace la decisión
+> mecánica: identificas el tipo del smell y ya sabes qué receta seguir.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, un `mostrarFactura` que imprime y calcula es
+> **etapas mezcladas → Split Phase**, mientras que un `calcularTotal` de 18 líneas dentro de
+> `Pedido` es **grande → Extract Function**.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -295,6 +321,19 @@ tags: [CCPG1042, unidad4, catalogo, fowler, refactoring]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-03-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Catálogo** y cuatro ramas. **Extract** se abre en
+> **Function**, **Variable** y **Class**; **Move** en **Function** y **Field**; **Rename/Split**
+> se abre en **Nombres** y **Fases**; y la rama de **Cierre** fija el final obligatorio:
+> **Tests** y **Commit**.
+>
+> **Por qué importa:** el mapa muestra la granularidad del catálogo —no hay una sola técnica de
+> extracción, hay tres escalas— y coloca la verificación y el commit como parte de la técnica, no
+> como un extra. Por eso el curso insiste en **1 técnica, 1 commit, tests verdes**.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, separar `Pedido` y `DirecciónEnvio` es
+> **Extract Class**, mover el cálculo del descuento a `Cliente` es **Move Function**, y renombrar
+> `x1` a `descuentoAplicado` es **Rename** — cada una termina con su commit.
 
 > [!success] 🔍 Comparación Final
 >

@@ -80,6 +80,12 @@ tags: [recursos-visuales, diseno-de-software]
 > [!info] 📖 Enlaces del Aula Virtual — Diseño de Software
 >
 > Los módulos del Aula Virtual son links, no archivos: viven aquí como enlaces clicables (funcionan en Obsidian y en Neonotes).
+>
+> **Se lee así:** el callout abre la sección de enlaces del Aula Virtual y aclara una cosa: lo que sigue no son archivos adjuntos sino URLs verificadas (videoId + título real + canal + duración), agrupadas por bloques — control de versiones, notación UML y catálogos de patrones de diseño.
+>
+> **Por qué importa:** fija el alcance de la página: es material de apoyo externo que complementa las guías del curso, no material evaluable; saber eso evita confundir un video recomendado con una lectura obligatoria.
+>
+> **Ejemplo:** el tutorial "Casos de Uso" de Lucid Software sirve para practicar la notación, mientras que el material que sí se evalúa es el PDF del Aula Virtual y las guías de la Unidad 0.
 
 ### Recursos externos
 

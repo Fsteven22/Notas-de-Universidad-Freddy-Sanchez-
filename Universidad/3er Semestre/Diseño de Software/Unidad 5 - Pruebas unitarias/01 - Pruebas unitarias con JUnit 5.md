@@ -31,6 +31,20 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-01-graph.svg]]
+>
+> **Se lee así:** el diagrama parte de un **cambio en código** y pregunta **¿tests?**. La rama ❌
+> es **sin red**, y sus tres consecuencias son **probar todo a mano**, que **se escapa el bug** y
+> **miedo al cambio**. La rama ✅ es **suite JUnit**, que promete tres cosas: **corren en
+> segundos**, el **fallo apunta al método** y **refactor sin miedo**.
+>
+> **Por qué importa:** el diagrama muestra que el valor de los tests no es «detectar más errores»
+> sino **cambiar la relación con el código**: sin suite, cada cambio es un salto al vacío; con
+> suite, el tiempo de verificación baja a segundos y el fallo viene con la ubicación del
+> problema.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, tocar el cálculo de descuentos de `Pedido` sin
+> suite obliga a probar a mano todos los casos; con JUnit, el fallo te dice que el método
+> `total()` falló y lo reparas en minutos.
 
 ---
 
@@ -102,6 +116,19 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Tipo de Prueba Escribo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-02-flow.svg]]
+>
+> **Se lee así:** el diagrama arranca en **quiero verificar algo** y pregunta **¿una unidad
+> aislada?**. Si la respuesta es **sí**, se llega a **unitaria JUnit**, descrita como **rápida +
+> mocks**. Si es **no, varias piezas**, se pregunta **¿con BD/red real?**: con **sí**, el destino
+> es **integración (otra suite)**; con **no, con dobles**, se vuelve a **unitaria JUnit**.
+>
+> **Por qué importa:** la pregunta «¿con BD/red real?» es la que separa una prueba unitaria de
+> una de integración disfrazada. El diagrama además avisa que la integración vive en **otra
+> suite**, no mezclada dentro de la misma clase de tests.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, `Pedido.total()` con un repositorio falso es
+> unitaria JUnit, mientras que guardar el mismo `Pedido` en la base real es integración y va en
+> otra suite.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -267,6 +294,20 @@ tags: [CCPG1042, unidad5, junit, pruebas, testing, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-02-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Unitarias** y tres ramas. **Estructura** es el
+> **Arrange**, **Act**, **Assert**. **JUnit 5** muestra lo que te da la herramienta: **@Test**,
+> **aserciones** y **ciclo de vida**. **Foco** dice dónde poner el esfuerzo: **negocio**,
+> **bordes** y **excepciones**.
+>
+> **Por qué importa:** el mapa separa las tres cosas que puedes aprender: la forma de escribir un
+> test, la API que lo ejecuta y qué conviene probar primero. La rama **Foco** es la que evita
+> el error típico de la unidad —perder la semana probando getters— y la que define el orden
+> rentable del curso.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el primer test que escribes es el de la regla de
+> negocio del descuento de `Pedido`, después los casos borde (cero, vacío, nulo) y por último
+> que el cálculo inválido lance la excepción esperada.
 
 > [!success] 🔍 Comparación Final
 >
