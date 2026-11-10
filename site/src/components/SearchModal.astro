@@ -1,4 +1,6 @@
 ---
+import MotionToggle from "./MotionToggle.astro";
+
 /**
  * SearchModal.astro — el buscador.
  *
@@ -58,11 +60,12 @@ const { scope = "" } = Astro.props;
 
       <div id="nx-search-list" class="max-h-[52vh] min-h-[180px] overflow-y-auto p-2 nx-scroll"></div>
 
-      <div id="nx-search-foot" class="flex items-center justify-between border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
+      <div id="nx-search-foot" class="flex items-center justify-between gap-3 border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
         <span id="nx-search-count"></span>
-        <span class="flex items-center gap-2">
-          <span><span class="nx-search-key">↑↓</span> elegir</span>
-          <span><span class="nx-search-key">enter</span> ir</span>
+        <span class="flex items-center gap-3">
+          <span class="hidden sm:inline"><span class="nx-search-key">↑↓</span> elegir</span>
+          <span class="hidden sm:inline"><span class="nx-search-key">enter</span> ir</span>
+          <MotionToggle variant="compact" />
         </span>
       </div>
     </div>
@@ -348,10 +351,13 @@ const { scope = "" } = Astro.props;
     document.body.style.overflow = "hidden";
     ctx.input.value = "";
     render("");
-    requestAnimationFrame(() => {
-      ctx!.overlay.classList.add("nx-open");
-      ctx!.input.focus();
-    });
+    // Se fuerza un reflow para que el navegador registre el estado inicial
+    // (opacity 0) antes de aplicar "nx-open": así la entrada animada no
+    // depende de requestAnimationFrame, que no se dispara si la pestaña
+    // está en segundo plano (el panel se quedaría invisible y sin foco).
+    void ctx.overlay.offsetWidth;
+    ctx.overlay.classList.add("nx-open");
+    ctx.input.focus();
     // el índice de contenido se pide en segundo plano
     void ensureContentIndex();
   }
@@ -463,7 +469,9 @@ const { scope = "" } = Astro.props;
     transform: translateY(0) scale(1);
   }
   @media (prefers-reduced-motion: reduce) {
-    #nx-search, #nx-search #nx-search-panel, #nx-search-list .nx-hit {
+    :root:not([data-nx-motion="on"]) #nx-search,
+    :root:not([data-nx-motion="on"]) #nx-search #nx-search-panel,
+    :root:not([data-nx-motion="on"]) #nx-search-list .nx-hit {
       transition: none !important;
       animation: none !important;
     }

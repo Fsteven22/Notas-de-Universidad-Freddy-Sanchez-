@@ -307,21 +307,55 @@ body {
 #nx-top span { position: relative; z-index: 1; }
 
 /* ── Franja de materias en loop infinito (marquee) ── */
+/* La cinta se comporta como una cinta transportadora: el grupo de
+   materias avanza de derecha a izquierda sin cortes ni huecos.
+   El JS mide cuánto mide un grupo y repite el grupo las veces necesarias
+   para que siempre haya contenido a la vista (--nx-marquee-shift), con
+   una velocidad constante (--nx-marquee-duration). */
 .nx-marquee {
+  position: relative;
   overflow: hidden;
-  padding: 0.75rem 0;
+  padding: 0.9rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.015);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
+/* Brillo que recorre la cinta: da la sensación de banda en movimiento. */
+.nx-marquee::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 255, 136, 0.05) 38%,
+    rgba(170, 102, 255, 0.08) 50%,
+    rgba(0, 170, 255, 0.05) 62%,
+    transparent 100%
+  );
+  background-size: 260% 100%;
+  animation: nx-marquee-sheen 9s linear infinite;
+}
+@keyframes nx-marquee-sheen {
+  from {
+    background-position: 130% 0;
+  }
+  to {
+    background-position: -130% 0;
+  }
+}
 .nx-marquee__track {
   display: flex;
   width: max-content;
-  animation: nx-marquee 55s linear infinite;
+  animation: nx-marquee var(--nx-marquee-duration, 55s) linear infinite;
+  will-change: transform;
 }
-.nx-marquee:hover .nx-marquee__track { animation-play-state: paused; }
+.nx-marquee:hover .nx-marquee__track {
+  animation-play-state: paused;
+}
 .nx-marquee__group {
   display: flex;
   gap: 2.5rem;
@@ -337,6 +371,8 @@ body {
   text-transform: uppercase;
   color: var(--color-nexus-muted);
   white-space: nowrap;
+  text-shadow: 0 0 14px rgba(0, 255, 136, 0.16);
+  transition: color 0.25s, text-shadow 0.25s;
 }
 .nx-marquee__item::before {
   content: "◆";
@@ -344,8 +380,18 @@ body {
   color: var(--color-nexus-green);
   opacity: 0.8;
 }
+/* Al pasar el cursor por la cinta, la materia bajo el puntero se ilumina. */
+.nx-marquee__item:hover {
+  color: var(--color-nexus-green);
+  text-shadow: 0 0 18px rgba(0, 255, 136, 0.55);
+}
 @keyframes nx-marquee {
-  to { transform: translateX(-50%); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-1 * var(--nx-marquee-shift, 50%)), 0, 0);
+  }
 }
 
 /* ── Transiciones de página (View Transitions de Astro) ──
@@ -471,8 +517,10 @@ html.nx-note-page #nx-read-eta {
   color: var(--nx-accent);
   border-color: rgba(var(--nx-accent-rgb), 0.4);
 }
+/* El guard :not([data-nx-motion="on"]) permite que el usuario fuerce
+   movimiento con ?motion=1 aunque el sistema pida quietud. */
 @media (prefers-reduced-motion: reduce) {
-  #nx-read-eta::before { animation: none; }
+  :root:not([data-nx-motion="on"]) #nx-read-eta::before { animation: none; }
 }
 
 /* ── Botón "copiar" en bloques de código ── */
@@ -532,6 +580,89 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.3rem;
 }
+/* "luego" entre las teclas de una secuencia */
+.nx-seq-then {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* ── Aviso de secuencia ("g" espera la segunda tecla) ──
+   Sin esto, al pulsar "g" no ocurre nada visible y el atajo parece roto. */
+#nx-seq-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  z-index: 1160;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 12, 20, 0.94);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #cbd5e1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, 8px);
+  pointer-events: none;
+  transition: opacity 0.16s ease, transform 0.16s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#nx-seq-hint.is-on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.nx-seq-lead {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 2px 6px;
+  border: 1px solid var(--nx-accent, var(--color-nexus-blue));
+  border-radius: 5px;
+  background: rgba(0, 170, 255, 0.12);
+  color: var(--nx-accent, var(--color-nexus-blue));
+  font-size: 11px;
+  text-align: center;
+}
+.nx-seq-then,
+#nx-seq-hint .nx-seq-then {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+.nx-seq-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.nx-seq-label {
+  color: #94a3b8;
+}
+@media (max-width: 639px) {
+  #nx-seq-hint {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    transform: translateY(8px);
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+  #nx-seq-hint.is-on {
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-nx-motion="on"]) #nx-seq-hint {
+    transition: none;
+  }
+}
 
 /* ── Filtro de materias en la portada ── */
 .nx-chip {
@@ -547,10 +678,11 @@ html.nx-note-page #nx-read-eta {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nx-marquee__track { animation: none; }
-  body::before { animation: none; }
-  ::view-transition-old(root),
-  ::view-transition-new(root) { animation: none; }
+  :root:not([data-nx-motion="on"]) .nx-marquee__track { animation: none; }
+  :root:not([data-nx-motion="on"]) .nx-marquee::after { animation: none; }
+  :root:not([data-nx-motion="on"]) body::before { animation: none; }
+  :root:not([data-nx-motion="on"]) ::view-transition-old(root),
+  :root:not([data-nx-motion="on"]) ::view-transition-new(root) { animation: none; }
 }
 
 /* Botón primario */
@@ -623,7 +755,7 @@ html.nx-note-page #nx-read-eta {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .nx-aura--drift {
+  :root:not([data-nx-motion="on"]) .nx-aura--drift {
     animation: none;
   }
 }
@@ -660,7 +792,7 @@ html.nx-note-page #nx-read-eta {
 .nx-hero-in--delay-4 { animation-delay: 0.6s; }
 .nx-hero-in--delay-5 { animation-delay: 0.75s; }
 @media (prefers-reduced-motion: reduce) {
-  .nx-hero-in {
+  :root:not([data-nx-motion="on"]) .nx-hero-in {
     animation: none;
     opacity: 1;
   }
@@ -670,11 +802,11 @@ html.nx-note-page #nx-read-eta {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nx-fade-up {
+  :root:not([data-nx-motion="on"]) .nx-fade-up {
     animation: none;
   }
-  .nx-card,
-  .nx-btn {
+  :root:not([data-nx-motion="on"]) .nx-card,
+  :root:not([data-nx-motion="on"]) .nx-btn {
     transition: none;
   }
 }
@@ -702,6 +834,10 @@ html.nx-note-page #nx-read-eta {
   min-height: 56px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  /* el header debe caer exactamente sobre el contenido de la página:
+     sin esto, en pantallas de más de 1152 px la marca quedaba pegada al
+     borde (x=24) mientras el cuerpo se centraba (x=83). */
+  margin-inline: auto;
 }
 .nx-header-brand {
   display: inline-flex;
@@ -772,6 +908,113 @@ html.nx-note-page #nx-read-eta {
   flex: none;
 }
 
+/* ─── Barra de búsqueda del header ─────────────────────────── */
+/* Antes era un botón de 36 px metido en el centro-derecha del header,
+   junto a "Inicio" y "Índice": era lo menos visible de la barra. Ahora
+   es una barra con forma de campo de texto y está a la IZQUIERDA,
+   pegada a la marca. */
+.nx-header-search {
+  display: flex;
+  align-items: center;
+  /* basis 300 px pero encogible: en las notas, donde las migas de pan
+     también necesitan sitio, la barra cede espacio antes de partirse. */
+  flex: 0 1 300px;
+  min-width: 44px;
+}
+.nx-searchbar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 300px;
+  min-width: 44px;
+  height: 42px;
+  padding: 0 0.6rem 0 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(180deg, rgba(13, 18, 32, 0.92), rgba(8, 11, 20, 0.92));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+.nx-searchbar:hover {
+  border-color: rgba(0, 170, 255, 0.5);
+  color: #e5e7eb;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 22px rgba(0, 170, 255, 0.16);
+}
+.nx-searchbar:active {
+  transform: translateY(1px);
+}
+.nx-searchbar:focus-visible {
+  outline: 2px solid var(--color-nexus-blue);
+  outline-offset: 2px;
+}
+.nx-searchbar-icon {
+  flex: none;
+  color: var(--color-nexus-blue);
+  opacity: 0.9;
+}
+.nx-searchbar-text {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.nx-searchbar-text-full {
+  display: inline;
+}
+.nx-searchbar-text-short {
+  display: none;
+}
+.nx-searchbar-kbd {
+  flex: none;
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 5px;
+  color: #94a3b8;
+}
+/* En pantallas medianas la barra se acorta pero conserva la palabra;
+   en teléfono queda el icono con target táctil de 44 px. */
+@media (max-width: 899px) {
+  .nx-header-search {
+    flex-basis: 220px;
+  }
+  .nx-searchbar {
+    max-width: 220px;
+  }
+  .nx-searchbar-text-full {
+    display: none;
+  }
+  .nx-searchbar-text-short {
+    display: inline;
+  }
+  .nx-searchbar-kbd {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .nx-header-search {
+    flex: none;
+  }
+  .nx-searchbar {
+    width: 44px;
+    max-width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .nx-searchbar-text {
+    display: none;
+  }
+}
+
 /* Botón compacto del header (buscar / índice) */
 .nx-hbtn {
   display: inline-flex;
@@ -810,6 +1053,29 @@ html.nx-note-page #nx-read-eta {
   min-width: 36px;
   justify-content: center;
 }
+/* Botón de atajos: lleva etiqueta y tecla visible para que se entienda
+   qué hace. Antes era un icono suelto de 36 px al extremo derecho. */
+.nx-hbtn--shortcuts {
+  gap: 0.45rem;
+  border-color: rgba(170, 102, 255, 0.28);
+  color: #d8c7ff;
+}
+.nx-hbtn--shortcuts:hover {
+  border-color: rgba(170, 102, 255, 0.6);
+  color: #fff;
+  background: rgba(170, 102, 255, 0.1);
+}
+.nx-hbtn-text {
+  letter-spacing: 0.1em;
+}
+/* Separador vertical antes del grupo de acciones del header */
+.nx-header-sep-line {
+  flex: none;
+  width: 1px;
+  height: 22px;
+  margin-inline: 0.15rem;
+  background: rgba(255, 255, 255, 0.12);
+}
 .nx-hbtn-kbd {
   font-family: var(--font-mono);
   font-size: 9px;
@@ -826,6 +1092,15 @@ html.nx-note-page #nx-read-eta {
     justify-content: center;
   }
   .nx-hbtn-kbd {
+    display: none;
+  }
+  /* En teléfono no hay teclado físico: el panel de atajos no aporta y
+     el header se satura con cuatro botones. */
+  .nx-hbtn--shortcuts {
+    display: none;
+  }
+  /* El separador solo tiene sentido junto al botón de atajos. */
+  .nx-header-sep-line {
     display: none;
   }
 }
@@ -1120,16 +1395,55 @@ html.nx-note-page #nx-read-eta {
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .nx-js [data-nx-reveal] {
+  :root.nx-js:not([data-nx-motion="on"]) [data-nx-reveal] {
     opacity: 1;
     transform: none;
     transition: none;
   }
-  .nx-header-logo,
-  .nx-note-row,
-  .nx-drawer-panel,
-  .nx-drawer-backdrop {
+  :root:not([data-nx-motion="on"]) .nx-header-logo,
+  :root:not([data-nx-motion="on"]) .nx-note-row,
+  :root:not([data-nx-motion="on"]) .nx-drawer-panel,
+  :root:not([data-nx-motion="on"]) .nx-drawer-backdrop {
     transition: none !important;
   }
+}
+
+/* ─── Modo quieto explícito (data-nx-motion="off") ───────────────
+   El script del <head> pone "off" cuando el usuario elige "Nunca"
+   en el panel de atajos o con ?motion=0, y también cuando el sistema
+   pide reducir movimiento y la preferencia es "auto". Los bloques
+   @media de arriba solo se activan si el sistema lo pide; este los
+   cubre siempre, para que "Nunca" sea "nunca". */
+:root[data-nx-motion="off"] #nx-read-eta::before,
+:root[data-nx-motion="off"] .nx-marquee__track,
+:root[data-nx-motion="off"] .nx-marquee::after,
+:root[data-nx-motion="off"] body::before,
+:root[data-nx-motion="off"] .nx-aura--drift,
+:root[data-nx-motion="off"] .nx-hero-in,
+:root[data-nx-motion="off"] .nx-fade-up {
+  animation: none;
+}
+:root[data-nx-motion="off"] .nx-hero-in {
+  opacity: 1;
+}
+:root[data-nx-motion="off"] #nx-seq-hint,
+:root[data-nx-motion="off"] .nx-card,
+:root[data-nx-motion="off"] .nx-btn {
+  transition: none;
+}
+:root.nx-js[data-nx-motion="off"] [data-nx-reveal] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+:root[data-nx-motion="off"] .nx-header-logo,
+:root[data-nx-motion="off"] .nx-note-row,
+:root[data-nx-motion="off"] .nx-drawer-panel,
+:root[data-nx-motion="off"] .nx-drawer-backdrop {
+  transition: none !important;
+}
+:root[data-nx-motion="off"]::view-transition-old(root),
+:root[data-nx-motion="off"]::view-transition-new(root) {
+  animation: none;
 }
 

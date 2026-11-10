@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import SearchModal from "./../components/SearchModal.astro";
+import ShortcutsPanel from "./../components/ShortcutsPanel.astro";
 
 interface Props {
   title?: string;
@@ -70,6 +71,94 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
     <script is:inline data-astro-rerun>
       document.documentElement.classList.add("nx-js");
     </script>
+    <!-- ── Preferencia de movimiento ───────────────────────────────
+         El sitio respeta "reducir movimiento" del sistema: con esa
+         preferencia el CSS apaga las animaciones y el JS no crea Lenis,
+         cursor glow ni Three.js. En el entorno de pruebas el navegador
+         reporta SIEMPRE "reduce", así que las animaciones nunca se veían.
+
+         Aquí se resuelve la preferencia real:
+           · "auto"  → lo que diga el sistema (comportamiento por defecto)
+           · "on"    → forzar animaciones aunque el sistema pida quietud
+           · "off"   → forzar quietud aunque el sistema permita movimiento
+         Se guarda en localStorage y se puede forzar con ?motion=1|0|auto.
+         El atributo data-nx-motion en <html> es lo que lee el CSS; el
+         router de Astro borra los atributos de <html> en cada swap, por eso
+         este script se re-ejecuta en cada navegación (data-astro-rerun). -->
+    <script is:inline data-astro-rerun>
+      (function(){
+        var KEY = "nx-motion";
+        var root = document.documentElement;
+
+        function systemReduced(){
+          return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        }
+        function readStored(){
+          try { return localStorage.getItem(KEY); } catch(e){ return null; }
+        }
+        function writeStored(v){
+          try {
+            if (v === "on" || v === "off") localStorage.setItem(KEY, v);
+            else localStorage.removeItem(KEY);
+          } catch(e){}
+        }
+        function resolve(){
+          var p = readStored();
+          if (p === "on" || p === "off") return p;
+          return systemReduced() ? "off" : "on";
+        }
+
+        // ?motion=1|0|auto fija la preferencia y limpia la URL.
+        var q = null;
+        try { q = new URLSearchParams(location.search).get("motion"); } catch(e){}
+        if (q === "1" || q === "on") writeStored("on");
+        else if (q === "0" || q === "off") writeStored("off");
+        else if (q === "auto") writeStored(null);
+        try {
+          if (q !== null) {
+            var u = new URL(location.href);
+            u.searchParams.delete("motion");
+            history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+          }
+        } catch(e){}
+
+        // El atributo es lo que lee el CSS: "on" = anima, "off" = quieto.
+        root.setAttribute("data-nx-motion", resolve());
+
+        if (!window.__nxMotion) {
+          window.__nxMotion = {
+            /** preferencia del usuario: "auto" | "on" | "off" */
+            pref: "auto",
+            /** estado efectivo: ¿deben correr las animaciones? */
+            effective: function(){
+              return resolve() === "on";
+            },
+            /**
+             * Cambia la preferencia. Recarga porque el JS de animación
+             * (Lenis, cursor glow, Three.js) se decide al arrancar: cambiarlo
+             * en caliente dejaría la página a medias.
+             */
+            set: function(v){
+              writeStored(v === "on" || v === "off" ? v : null);
+              try { sessionStorage.setItem("nx-motion-scroll", String(window.scrollY)); } catch(e){}
+              location.reload();
+            }
+          };
+        }
+        // La preferencia se relee en cada navegación (puede haber cambiado
+        // en otra pestaña) para que el panel de atajos muestre el estado real.
+        window.__nxMotion.pref = readStored() || "auto";
+
+        // Recupera la posición de scroll tras el cambio de preferencia.
+        try {
+          var y = sessionStorage.getItem("nx-motion-scroll");
+          if (y) {
+            sessionStorage.removeItem("nx-motion-scroll");
+            setTimeout(function(){ window.scrollTo(0, parseInt(y, 10) || 0); }, 0);
+          }
+        } catch(e){}
+      })();
+    </script>
     <!-- Librerías de animación (servidas localmente, sin CDN externo) -->
     <script src="/gsap.min.js" is:inline></script>
     <script src="/ScrollTrigger.min.js" is:inline></script>
@@ -86,6 +175,12 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
   <body>
     <slot />
     <SearchModal scope={scope} />
+    <ShortcutsPanel />
+
+    <!-- Aviso de secuencia: al pulsar "g" se muestra qué teclas faltan.
+         Sin esto la secuencia "g h" es indescubrible: al pulsar "g" no
+         pasa nada visible y parece que el atajo está roto. -->
+    <div id="nx-seq-hint" aria-live="polite" data-astro-transition-persist="nx-seq-hint"></div>
 
     <!-- Barra de progreso de scroll (la anima GSAP en Base) -->
     <div id="nx-scroll-progress" data-astro-transition-persist="nx-scroll-progress"></div>
@@ -167,9 +262,17 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 
         function track(tw){ pageTweens.push(tw); return tw; }
 
-        // Preferencia del sistema: con "reducir movimiento" no se anima nada
-        // (el CSS ya muestra el contenido; aquí nos aseguramos de no crear tweens).
-        var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        // ── Preferencia de movimiento ─────────────────────────────
+        // "reducir movimiento" del sistema apaga las animaciones (el CSS
+        // muestra el contenido y aquí no se crean tweens). El usuario puede
+        // forzarlo con ?motion=1|0 o desde el panel de atajos: eso se resuelve
+        // en window.__nxMotion (ver el script del <head>), y se consulta en
+        // caliente para que un cambio de preferencia se note sin recargar.
+        function nxReduced(){
+          var m = window.__nxMotion;
+          if (m && typeof m.effective === "function") return !m.effective();
+          return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        }
 
         // ── Tiempo restante de lectura (solo notas) ──
         // Cuenta palabras del .note-prose (sin el MathML de KaTeX, que duplica
@@ -264,6 +367,33 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             var btn = document.querySelector(".nx-search-open");
             if (btn) btn.click();
           };
+
+          // Aviso de secuencia: al pulsar "g" se dice qué teclas cierran el
+          // atajo. Es lo que hace descubrible el patrón "g + otra tecla".
+          var SEQ = [
+            { k: "h", label: "Inicio" },
+            { k: "i", label: "Índice" },
+            { k: "b", label: "Buscar" }
+          ];
+          // El aviso se busca por id en cada llamada: el nodo se recrea al
+          // navegar y una referencia guardada apuntaría al nodo viejo.
+          var showSeq = function(){
+            var el = document.getElementById("nx-seq-hint");
+            if (!el) return;
+            el.innerHTML =
+              '<span class="nx-seq-lead">g</span>' +
+              '<span class="nx-seq-then">luego</span>' +
+              SEQ.map(function(s){
+                return '<span class="nx-seq-item"><kbd class="nx-kbd">' + s.k +
+                  '</kbd><span class="nx-seq-label">' + s.label + '</span></span>';
+              }).join("");
+            el.classList.add("is-on");
+          };
+          var hideSeq = function(){
+            var el = document.getElementById("nx-seq-hint");
+            if (el) el.classList.remove("is-on");
+          };
+
           document.addEventListener("keydown", function(e){
             if (e.metaKey || e.ctrlKey || e.altKey) return;
             var t = e.target;
@@ -271,9 +401,13 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
               (t as HTMLElement).isContentEditable)) return;
             var modal = document.getElementById("nx-search");
             if (modal && !modal.classList.contains("hidden")) return;
+            // Con el panel de atajos abierto no se ejecutan otros atajos.
+            var scPanel = document.getElementById("nx-shortcuts");
+            if (scPanel && !scPanel.classList.contains("hidden")) return;
             if (pending) {
               pending = false;
               clearTimeout(timer);
+              hideSeq();
               if (e.key === "h") { e.preventDefault(); goto("/"); }
               else if (e.key === "i") { e.preventDefault(); goto("/#semestres"); }
               else if (e.key === "b") { e.preventDefault(); openSearch(); }
@@ -283,9 +417,16 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             if (e.key === "g") {
               pending = true;
               clearTimeout(timer);
-              timer = setTimeout(function(){ pending = false; }, 1200);
+              showSeq();
+              timer = setTimeout(function(){
+                pending = false;
+                hideSeq();
+              }, 1400);
             }
           });
+
+          // El panel de atajos (tecla "?" y botón del header) lo gestiona
+          // ShortcutsPanel.astro: aquí solo viven las secuencias "g + tecla".
         }
 
         // ── Dirección de la transición (adelante/atrás) para el CSS ──
@@ -321,7 +462,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             window.addEventListener("scroll", nxEtaUpdate, { passive: true });
 
             // Con "reducir movimiento": scroll nativo, sin cursor, sin Lenis.
-            if (!REDUCED) {
+            if (!nxReduced()) {
               var lenis = new Lenis({
                 autoRaf: true,
                 smooth: true,
@@ -347,7 +488,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             }
 
             // Cursor glow personalizado (solo en puntero fino)
-            if (!REDUCED && window.matchMedia("(pointer: fine)").matches) {
+            if (!nxReduced() && window.matchMedia("(pointer: fine)").matches) {
               var cur = document.getElementById("nx-cursor");
               if (cur && !cur.dataset.nxBound) {
                 cur.dataset.nxBound = "1";
@@ -371,7 +512,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             var topBtn = document.getElementById("nx-top");
             if (topBtn && !topBtn.dataset.nxBound) {
               topBtn.dataset.nxBound = "1";
-              if (REDUCED) {
+              if (nxReduced()) {
                 // Sin animación: se muestra directo al llegar a 400px
                 gsap.set(topBtn, { autoAlpha: 1 });
                 topBtn.style.opacity = "";
@@ -384,14 +525,14 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
               }
               topBtn.addEventListener("click", function(){
                 if (window.__nxLenis) window.__nxLenis.scrollTo(0, { duration: 1.2 });
-                else window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" });
+                else window.scrollTo({ top: 0, behavior: nxReduced() ? "auto" : "smooth" });
               });
             }
           }
 
           // ── Revelado al scroll (por página) ──
           // Sin GSAP o con movimiento reducido el CSS ya muestra el contenido.
-          if (!REDUCED) gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
+          if (!nxReduced()) gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
             track(gsap.fromTo(el,
               { opacity: 0, y: 24 },
               { opacity: 1, y: 0, duration: 0.7, ease: "power3.out",
@@ -401,7 +542,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           });
 
           // Hero home (el h1 lo anima SplitText en index.astro)
-          if (!REDUCED && window.location.pathname === "/"){
+          if (!nxReduced() && window.location.pathname === "/"){
             var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
             tl.from(".nx-badge", { y: 20, opacity: 0, duration: 0.6 })
               .from("p.mt-4.max-w-xl", { y: 20, opacity: 0, duration: 0.6 }, "-=0.3")
@@ -416,7 +557,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           }
 
           // Stats home
-          if (!REDUCED && window.location.pathname === "/"){
+          if (!nxReduced() && window.location.pathname === "/"){
             gsap.utils.toArray("section.mx-auto.max-w-6xl.px-6.pb-4 .nx-card").forEach(function(card){
               var numberEl = card.querySelector("p.font-mono.text-3xl");
               if (!numberEl) return;
@@ -432,7 +573,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           }
 
           // Materia reveals
-          if (!REDUCED && /^\/\w+\/\w+\/$/.test(window.location.pathname)){
+          if (!nxReduced() && /^\/\w+\/\w+\/$/.test(window.location.pathname)){
             gsap.utils.toArray(".nx-unit-head").forEach(function(el){
               track(gsap.fromTo(el, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out",
                 scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" } }));
@@ -444,7 +585,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           }
 
           // ── Scramble en títulos de sección al entrar en pantalla ──
-          if (!REDUCED && window.ScrambleTextPlugin) {
+          if (!nxReduced() && window.ScrambleTextPlugin) {
             gsap.utils.toArray(".nx-section-title").forEach(function(el){
               var full = (el.textContent || "").replace(/\s+/g, " ").trim();
               if (!full) return;
@@ -472,7 +613,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           }
 
           // ── Hover magnético en botones ──
-          if (!REDUCED) gsap.utils.toArray(".nx-btn").forEach(function(btn){
+          if (!nxReduced()) gsap.utils.toArray(".nx-btn").forEach(function(btn){
             if (btn.dataset.nxMagBound) return;
             btn.dataset.nxMagBound = "1";
             btn.addEventListener("mousemove", function(e){
@@ -489,7 +630,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           });
 
           // ── Tilt 3D en tarjetas ──
-          if (!REDUCED) gsap.utils.toArray(".nx-card").forEach(function(card){
+          if (!nxReduced()) gsap.utils.toArray(".nx-card").forEach(function(card){
             if (card.dataset.nxTiltBound) return;
             card.dataset.nxTiltBound = "1";
             card.addEventListener("mousemove", function(e){
@@ -505,7 +646,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
           });
 
           // ── Parallax de auras al hacer scroll ──
-          if (!REDUCED) gsap.utils.toArray(".nx-aura").forEach(function(a, i){
+          if (!nxReduced()) gsap.utils.toArray(".nx-aura").forEach(function(a, i){
             track(gsap.to(a, { top: (i % 2 ? "-=140" : "+=140"), ease: "none",
               scrollTrigger: { start: 0, end: "max", scrub: 1.2 } }));
           });
@@ -515,7 +656,7 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
             nxCopyBind();
             nxEtaUpdate();
 
-            if (!REDUCED) {
+            if (!nxReduced()) {
               // Título de la nota: letras que suben al entrar
               var noteH1 = document.querySelector<HTMLElement>("article > h1");
               if (noteH1 && window.SplitText && !noteH1.dataset.nxSplit) {

@@ -1,0 +1,163 @@
+---
+/**
+ * MotionToggle.astro — interruptor de movimiento (Auto / Siempre / Nunca).
+ *
+ * El sitio respeta la preferencia del sistema de "reducir movimiento"
+ * (CSS + JS). Hasta ahora no había forma de cambiarlo: quien prefiriera
+ * más movimiento (o menos del que da el sistema) no tenía cómo.
+ *
+ * Aquí se resuelve con un interruptor de tres estados:
+ *   · Auto    → lo que diga el sistema (comportamiento por defecto)
+ *   · Siempre → animaciones siempre, aunque el sistema pida quietud
+ *   · Nunca   → sin animaciones, aunque el sistema las permita
+ *
+ * Se guarda en localStorage ("nx-motion") y el script del <head> de
+ * Base.astro lo aplica: pone data-nx-motion en <html> y expone
+ * window.__nxMotion. El cambio recarga la página (Lenis, cursor glow y
+ * Three.js se deciden al arrancar), guardando el scroll para restaurarlo.
+ *
+ * Se usa en dos sitios: el panel de atajos (escritorio) y el pie del
+ * buscador (también en móvil, donde el panel de atajos no se abre).
+ */
+interface Props {
+  /** "buttons" = tres botones con texto · "compact" = solo iconos */
+  variant?: "buttons" | "compact";
+  /** clase extra del contenedor */
+  class?: string;
+}
+
+const { variant = "buttons", class: className = "" } = Astro.props;
+
+const opciones = [
+  { v: "auto", t: "Auto", k: "A", d: "Lo que pida el sistema" },
+  { v: "on", t: "Siempre", k: "S", d: "Animaciones siempre" },
+  { v: "off", t: "Nunca", k: "N", d: "Sin animaciones" },
+];
+---
+
+<div class:list={["nx-motion-toggle", `nx-motion-toggle--${variant}`, className]} role="group" aria-label="Movimiento de las animaciones">
+  {
+    opciones.map((o) => (
+      <button
+        type="button"
+        class="nx-motion-opt"
+        data-nx-motion-set={o.v}
+        aria-pressed="false"
+        title={`${o.t}: ${o.d}`}
+      >
+        <span class="nx-motion-opt-label">{o.t}</span>
+        <kbd class="nx-motion-opt-kbd">{o.k}</kbd>
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  /**
+   * Interruptor de movimiento.
+   *
+   * El estado vive en window.__nxMotion (lo define el script del <head>
+   * de Base.astro). Como el panel de atajos y el buscador se recrean en
+   * cada navegación SPA, el marcado se marca como activo en cada
+   * `astro:page-load`; el clic se delega en document con una guarda en
+   * window para no registrar el listener dos veces.
+   */
+  function paint() {
+    const pref = (window as any).__nxMotion?.pref || "auto";
+    document.querySelectorAll<HTMLElement>("[data-nx-motion-set]").forEach((b) => {
+      const on = b.getAttribute("data-nx-motion-set") === pref;
+      b.classList.toggle("is-active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  if (!(window as any).__nxMotionToggleBound) {
+    (window as any).__nxMotionToggleBound = 1;
+    document.addEventListener("click", (e) => {
+      const t = e.target as HTMLElement | null;
+      if (!t || typeof t.closest !== "function") return;
+      const btn = t.closest<HTMLElement>("[data-nx-motion-set]");
+      if (!btn) return;
+      e.preventDefault();
+      const v = btn.getAttribute("data-nx-motion-set") || "auto";
+      const m = (window as any).__nxMotion;
+      if (m && typeof m.set === "function") m.set(v);
+      else {
+        try {
+          if (v === "on" || v === "off") localStorage.setItem("nx-motion", v);
+          else localStorage.removeItem("nx-motion");
+        } catch (err) {}
+        location.reload();
+      }
+    });
+  }
+
+  paint();
+  document.addEventListener("astro:page-load", paint);
+</script>
+
+<style is:global>
+  .nx-motion-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6rem;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .nx-motion-opt {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.55rem;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #94a3b8;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s, border-color 0.15s;
+  }
+  .nx-motion-opt:hover {
+    color: #e5e7eb;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .nx-motion-opt.is-active {
+    color: #fff;
+    background: rgba(170, 102, 255, 0.16);
+    border-color: rgba(170, 102, 255, 0.45);
+  }
+  .nx-motion-opt-kbd {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    padding: 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    color: #64748b;
+  }
+  .nx-motion-opt.is-active .nx-motion-opt-kbd {
+    border-color: rgba(170, 102, 255, 0.5);
+    color: #d8b4fe;
+  }
+  /* Versión compacta: solo la inicial, para el pie del buscador */
+  .nx-motion-toggle--compact .nx-motion-opt {
+    padding: 0.3rem 0.4rem;
+  }
+  .nx-motion-toggle--compact .nx-motion-opt-label {
+    display: none;
+  }
+  .nx-motion-toggle--compact .nx-motion-opt-kbd {
+    border: none;
+    padding: 0;
+    font-size: 10px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root:not([data-nx-motion="on"]) .nx-motion-opt {
+      transition: none;
+    }
+  }
+</style>

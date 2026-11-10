@@ -9,9 +9,11 @@
  *
  * Ahora las cuatro páginas comparten este componente:
  *   · la marca (logo 32 px, siempre visible, enlace a / con nombre accesible)
+ *   · la barra de búsqueda, pegada a la izquierda junto a la marca y con
+ *     tamaño de campo de texto (antes era un botón pequeño en el
+ *     centro-derecha, lo menos visible del header)
  *   · las migas de pan (truncadas, la última es la página actual)
- *   · las acciones: buscar (con el atajo ⌘K en escritorio) y, en las notas,
- *     el índice de la nota.
+ *   · las acciones: inicio, índice de la nota y el panel de atajos.
  *
  * El contenedor (`container`) lo fija cada página para que el header quede
  * alineado con su propio contenido: antes el header era max-w-6xl (1152 px)
@@ -53,6 +55,35 @@ const {
         Neonotes
       </span>
     </a>
+
+    {/* La barra de búsqueda va a la IZQUIERDA, junto a la marca: era un
+        botón pequeño perdido en el centro-derecha del header. */}
+    <div class="nx-header-search">
+      <button
+        type="button"
+        class="nx-searchbar nx-search-open"
+        aria-label="Buscar en el sitio"
+        title="Buscar en el sitio ( / )"
+      >
+        <svg
+          class="nx-searchbar-icon size-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+        <span class="nx-searchbar-text">
+          <span class="nx-searchbar-text-full">Buscar en el sitio…</span>
+          <span class="nx-searchbar-text-short">Buscar</span>
+        </span>
+        <kbd class="nx-searchbar-kbd">/</kbd>
+      </button>
+    </div>
 
     {
       variant === "portada" && (
@@ -122,21 +153,30 @@ const {
           </button>
         )
       }
-      <button type="button" class="nx-hbtn nx-search-open">
+      {/* Separador visual: el grupo de acciones ya no empieza de golpe
+          con un icono suelto. */}
+      <span class="nx-header-sep-line" aria-hidden="true"></span>
+      <button
+        type="button"
+        class="nx-hbtn nx-hbtn--shortcuts"
+        data-nx-shortcuts-open
+        aria-label="Ver atajos de teclado"
+        title="Atajos de teclado (?)"
+      >
         <svg
           class="size-4"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2.5"
+          stroke-width="2"
           stroke-linecap="round"
           aria-hidden="true"
         >
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-3.5-3.5" />
+          <rect x="2" y="6" width="20" height="12" rx="2" />
+          <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
         </svg>
-        <span class="hidden sm:inline">Buscar</span>
-        <kbd class="nx-hbtn-kbd hidden lg:inline">⌘K</kbd>
+        <span class="nx-hbtn-text">Atajos</span>
+        <kbd class="nx-hbtn-kbd">?</kbd>
       </button>
     </div>
   </div>
