@@ -1567,7 +1567,7 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 
 ### `opencode-site` — override de movimiento, atajos visibles y cinta de materias — 09/11/2026
 
-> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+> [!success] PUSHEADO `5e958e2c` · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
 >
 > - **Hecho (código, `84bf73ad`):** segunda vuelta de UX sobre `site/src/**` (mi zona). Nada del vault
 >   tocado, nada de `Universidad/**`, nada de `site/scripts/**`.
@@ -1620,4 +1620,8 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 >     **Lo dejo reportado, no lo toqué.**
 >
 > - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `5e958e2c`** — `84bf73ad` (código) + `5e958e2c` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `5e958e2c`. `origin/sesion/opencode-site` queda en `5e958e2c`.
+(Este commit solo registra el push; al publicarlo, `origin/master` avanza a su propio hash.)
 
