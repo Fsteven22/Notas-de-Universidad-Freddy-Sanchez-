@@ -1,0 +1,12 @@
+flowchart LR
+    subgraph ANTES["Sin DIP"]
+    direction LR
+        A1["PedidoService<br/>alto nivel"] --> B1["PagoConTarjeta<br/>bajo nivel"]
+    end
+    subgraph DESPUES["Con DIP"]
+    direction LR
+        A2["PedidoService<br/>alto nivel"] --> I["interface Pago"]
+        B2["PagoConTarjeta<br/>bajo nivel"] -.->|"implementa"| I
+        C2["PagoPayPal<br/>bajo nivel"] -.->|"implementa"| I
+    end
+    style I fill:#e1ffe1 !important
