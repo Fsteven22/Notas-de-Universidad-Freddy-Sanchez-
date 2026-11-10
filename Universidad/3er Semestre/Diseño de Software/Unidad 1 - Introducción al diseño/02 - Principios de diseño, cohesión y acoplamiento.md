@@ -26,7 +26,9 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > | **Probar** | Necesitas todo el sistema | Prueba unitaria aislada (Unidad 5) |
 > | **Equipo** | Conflictos en Git | Cada quien su módulo |
 
-![[../Diagramas/dsw-u1-03-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-01-graph.svg]]
 
 ---
 
@@ -34,7 +36,7 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 
 > [!note] 📊 Escala de Cohesión (de peor a mejor)
 >
-> ![[../Diagramas/dsw-u1-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-02-graph.svg]]
 >
 > | Nivel | Qué significa | Ejemplo |
 > |---|---|---|
@@ -48,7 +50,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >
 > **Test de 10 segundos:** describe tu clase en 1 frase sin usar "y". Si necesitas "y", divídela.
 >
-
 > [!example]- 💻 Código — Cohesión Funcional vs. Lógica
 >
 > ```java
@@ -74,7 +75,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >
 > Si cambia la lógica de validación de emails, en la versión cohesiva solo tocas `ValidadorEmail`. En `Utilidades`, ese cambio obliga a revisar una clase con responsabilidades que no tienen nada que ver entre sí.
 >
-
 > [!tip] 🎯 Caso límite: no todo necesita ser puramente funcional
 >
 > En la práctica, la cohesión **secuencial** y **comunicacional** suelen ser aceptables. El problema real empieza en **procedimental** hacia abajo, donde las partes agrupadas ya no comparten ni datos ni un flujo natural, solo "convivencia forzada".
@@ -94,7 +94,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > | **Común** | Comparten estado global mutable | `public static Config x` tocada por 6 clases |
 > | **Contenido** ❌ | Una modifica el interior de otra | Acceso directo a campos privados ajenos |
 >
-
 > [!example]- 💻 Código — Acoplamiento de Control vs. Datos
 >
 > ```java
@@ -114,7 +113,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > }
 > ```
 >
-
 > [!note] ✅ Datos — Acoplamiento ideal
 >
 > Solo parámetros simples (primitivos, strings, records inmutables). La función no conoce estructura ni ciclo de vida del dato.
@@ -123,7 +121,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > - **Regla:** si pasas un objeto, usa solo lo que necesitas (Ley de Demeter).
 > - **Anti-patrón:** pasar un `DTO` entero cuando solo necesitas un campo.
 >
-
 > [!note] 🟡 Sello (Stamp) — Acoplamiento medio
 >
 > Pasa una estructura completa pero usa solo una parte de ella.
@@ -132,7 +129,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > - **Mejora:** extrae el dato necesario antes de llamar, o usa un parámetro específico.
 > - **Señal de alerta:** si tu test debe construir un objeto complejo solo por un campo, es acoplamiento de sello.
 >
-
 > [!warning] 🎚️ Control — Acoplamiento a evitar
 >
 > Una función decide qué hace otra mediante banderas/booleanos.
@@ -141,7 +137,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > - **Solución:** polimorfismo (`ReportePDF` vs `ReporteHTML`) o patrón Strategy.
 > - **Test:** 3+ booleanos en una firma son 3 clases esperando nacer.
 >
-
 > [!warning] 🔌 Externo — Acoplamiento frágil
 >
 > Depende de algo fuera del sistema: formato de archivo, protocolo, variable de entorno hardcodeada.
@@ -149,7 +144,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > - **Ejemplo:** leer `APP_CONFIG` directamente desde `System.getenv()` en la lógica de negocio.
 > - **Solución:** aislar detrás de una interfaz (`ConfigProvider`) e inyectar la dependencia.
 >
-
 > [!danger] 🌐 Común — Acoplamiento peligroso
 >
 > Comparten estado global mutable.
@@ -158,7 +152,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > - **Solución:** inyección de dependencias (constructor/setter) + inmutabilidad.
 > - **Regla de oro:** nada de `static` mutable en el dominio.
 >
-
 > [!danger] 🚫 Contenido — Acoplamiento prohibido
 >
 > Una clase accede directamente a campos privados de otra (reflexión, `friend` en C++, paquetes abiertos en Java).
@@ -179,7 +172,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >
 > Si para usar tu clase debo leer su código fuente, tu abstracción falló.
 >
-
 > [!example]- 💻 Código — Ocultamiento en una Pila (Stack)
 >
 > ```java
@@ -194,7 +186,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >
 > Quien usa `Pila<T>` solo conoce `push`, `pop` y `estaVacia` — no sabe si por dentro usa un `ArrayList`, un arreglo nativo o una lista enlazada. Si cambias la implementación interna, ningún código externo se entera ni se rompe.
 >
-
 > [!note] 📋 Cómo se relacionan los tres conceptos
 >
 > | Concepto | Qué resuelve | Mecanismo |
@@ -209,7 +200,9 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Ajustar en mi Diseño?
 
-![[../Diagramas/dsw-u1-03-03-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Ajustar en mi Diseño
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-03-flow.svg]]
 
 ---
 
@@ -246,7 +239,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 >
 > **Solución:** expón comportamiento (`retirar(monto)` con validación adentro), no acceso crudo. Si el código que llama a tus getters hace lógica que debería vivir dentro de la clase, muévela adentro.
 >
-
 > [!danger] ❌ Error 3: La "Clase Dios" (viola **cohesión + acoplamiento a la vez**)
 >
 > **Síntomas:** una sola clase conoce y controla casi todo:
@@ -301,7 +293,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > > - **4.** Acoplamiento de contenido (el prohibido).
 > > - **5.** Respuesta libre — una función que solo recibe parámetros simples, sin estructuras completas ni banderas.
 >
-
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Refactoriza (en prosa) una clase `GestorPedidos` que valida, calcula descuento, genera factura y notifica — divídela por cohesión funcional.
@@ -322,7 +313,6 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 > > - **9.** Respuesta libre — ej. una clase `Fecha` que expone `siguienteDia()` sin revelar si guarda día/mes/año o un timestamp.
 > > - **10.** Porque agrupar por pasos mezcla código que cambia por razones distintas; agrupar por "qué cambiará" aísla cada futuro cambio en un solo módulo.
 >
-
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta por qué el Principio de Responsabilidad Única (SRP) es una reformulación de "alta cohesión funcional".
@@ -360,18 +350,19 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Explico qué es cohesión y qué es acoplamiento con mis propias palabras.
 > - [ ] Ubico un módulo dado en la escala de cohesión.
 > - [ ] Identifico acoplamiento de datos vs. de control en un ejemplo de código.
 >
-
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Aplico el "test de 10 segundos" para diagnosticar baja cohesión.
 > - [ ] Explico por qué getters/setters para todo rompe el ocultamiento de información.
 > - [ ] Refactorizo (en prosa) una clase con múltiples responsabilidades.
 >
-
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Relaciono cohesión/acoplamiento con SRP y otros principios SOLID.
 > - [ ] Diseño una interfaz que aísle correctamente una dependencia externa.
 > - [ ] Diagnostico una "Clase Dios" y propongo cómo dividirla.
@@ -380,7 +371,9 @@ tags: [CCPG1042, unidad1, cohesion, acoplamiento, principios]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u1-03-04-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

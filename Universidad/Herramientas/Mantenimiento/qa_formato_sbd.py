@@ -4,7 +4,7 @@
 Verifica que una nota siga el formato de la nota de referencia
 `01 - Dato, informacion y modelos de datos` (Unidad 1), tal como el dueño
 del vault lo definio. El contrato escrito vive en
-`3er Semestre/Sistema de Bases de Datos/FORMATO-SBD.md` (reglas R1..R13).
+`Herramientas/Mantenimiento/FORMATO-SBD.md` (reglas R1..R14).
 
 Severidades: H (error duro) y W (desviacion de formato).
   R1  frontmatter con dg-publish + tags                    W

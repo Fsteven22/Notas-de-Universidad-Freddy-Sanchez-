@@ -6,18 +6,23 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 # 🏛️ Caso SIEL — Modelo de Clases: lo necesario y nada más (capturas)
 
 > [!info] ℹ️ Qué es esto
+>
 > Transcripción completa de las 8 capturas del deck de **Modelo de Clases**, segunda lección del caso **SIEL** (Sistema de Elecciones) para Control03. Fuentes: Stevens cap. 5 · Pressman & Maxim, Apéndice 1. Deck: *Bloque 2 · minutos 60 a 107*.
 >
 > El ejemplo resumido vive en [[03 - UML clases, objetos y relaciones]]; aquí queda el desarrollo completo con las capturas.
 
 ## 🧭 Portada — qué cubre
 
+> [!note] 💡 Portada — qué cubre
+>
 > Bloque 2 · Modelado de clases en UML a partir del enunciado de SIEL:
 > identificar clases (sustantivos), tarjetas CRC, atributos/operaciones y
 > visibilidad, asociaciones y multiplicidades, agregación/composición/
 > dependencia, notas y generalización.
 
-![[Modelo de clases.png]]
+> [!note] 🖼️ captura del deck — Portada — qué cubre
+>
+> ![[Modelo de clases.png]]
 
 ## 🔍 Identificar clases por sustantivos (Stevens cap. 5)
 
@@ -26,6 +31,7 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 > Flujo: **1 · Subraya los sustantivos → 2 · Descarta los malos → 3 · Quedan las clases**.
 
 > [!tip] 🧹 Filtro de descarte (Stevens cap. 5)
+>
 > | Se descarta si es… | Ejemplo en el SIEL | Por qué |
 > |---|---|---|
 > | **Redundante** | "elector" y "ciudadano" | Nombran lo mismo: queda uno |
@@ -36,9 +42,12 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 > | **Fuera de alcance** | "campaña publicitaria" | El sistema no la gestiona |
 
 > [!warning] 🎯 Pregunta típica de examen
+>
 > "¿Cuál de estas NO sería una buena clase?"
 
-![[Modelo de clases-7.png]]
+> [!note] 🖼️ captura del deck — Identificar clases por sustantivos (Stevens cap. 5)
+>
+> ![[Modelo de clases-7.png]]
 
 ## ✅ Un buen modelo y las tarjetas CRC
 
@@ -51,6 +60,7 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 > - ✔ **modela lo necesario** y nada más.
 
 > [!example] 🗂️ Tarjeta CRC de ejemplo — *Candidatura*
+>
 > | Candidatura — Tarjeta CRC |
 > |---|
 > | **Responsabilidades** |
@@ -62,29 +72,35 @@ tags: [CCPG1042, unidad2, siel, modelo-de-clases]
 > | · Dignidad · OrganizacionPolitica · Candidato · Acta |
 
 > [!tip] Validar con un escenario
+>
 > "El funcionario califica una candidatura". Recorre los pasos: ¿qué tarjeta
 > sabe cada cosa? Si nadie responde, falta una responsabilidad o una clase.
 
-![[Modelo de clases-1.png]]
+> [!note] 🖼️ captura del deck — Un buen modelo y las tarjetas CRC
+>
+> ![[Modelo de clases-1.png]]
 
 ## 📦 Una clase: nombre, atributos y operaciones (Pressman Ap. 1)
 
-```
-┌──────────────────────────────────────────┐
-│               Candidatura                 │
-├──────────────────────────────────────────┤
-│ - codigo: String                          │
-│ - estado: EstadoCalificacion              │
-│ # fechaInscripcion: Date                  │
-├──────────────────────────────────────────┤
-│ + calificar(aprobada: Boolean)            │
-│ + totalVotos(): Integer                   │
-│ ~ validarRequisitos(): Boolean            │
-└──────────────────────────────────────────┘
-Compartimentos: nombre · atributos (visibilidad nombre: tipo) · operaciones
-```
+> [!note] 💻 Código — Una clase: nombre, atributos y operaciones (Pressman Ap. 1)
+>
+> ```
+> ┌──────────────────────────────────────────┐
+> │               Candidatura                 │
+> ├──────────────────────────────────────────┤
+> │ - codigo: String                          │
+> │ - estado: EstadoCalificacion              │
+> │ # fechaInscripcion: Date                  │
+> ├──────────────────────────────────────────┤
+> │ + calificar(aprobada: Boolean)            │
+> │ + totalVotos(): Integer                   │
+> │ ~ validarRequisitos(): Boolean            │
+> └──────────────────────────────────────────┘
+> Compartimentos: nombre · atributos (visibilidad nombre: tipo) · operaciones
+> ```
 
 > [!note] 🔍 Visibilidad
+>
 > | Símbolo | Significa |
 > |---|---|
 > | `+` | Pública: cualquiera la usa |
@@ -93,18 +109,24 @@ Compartimentos: nombre · atributos (visibilidad nombre: tipo) · operaciones
 > | `~` | Paquete: clases del mismo paquete |
 
 > [!note] Clase abstracta
+>
 > Su nombre va en **cursiva** (ej.: *Dignidad*).
 
-![[Modelo de clases-2.png]]
+> [!note] 🖼️ captura del deck — Una clase: nombre, atributos y operaciones (Pressman Ap. 1)
+>
+> ![[Modelo de clases-2.png]]
 
 ## 🔗 Asociaciones: nombre, multiplicidad y roles (Stevens cap. 5)
 
-```
-OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
-(auspiciante)                      (candidaturas)
-```
+> [!note] 💻 Código — Asociaciones: nombre, multiplicidad y roles (Stevens cap. 5)
+>
+> ```
+> OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
+> (auspiciante)                      (candidaturas)
+> ```
 
 > [!note] 🔢 Glosario de multiplicidades
+>
 > | Multiplicidad | Significa |
 > |---|---|
 > | `1` | exactamente uno |
@@ -113,6 +135,7 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 > | `1..*` | uno o más |
 
 > [!example] Se lee en ambos sentidos
+>
 > Una `OrganizacionPolitica` inscribe `0..*` candidaturas; **cada** `Candidatura`
 > tiene exactamente `1` auspiciante.
 >
@@ -120,11 +143,14 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 > **Lectura:** un Cliente tiene cero o más Reservas — y cada Reserva pertenece
 > a exactamente un Cliente.
 
-![[Modelo de clases-3.png]]
+> [!note] 🖼️ captura del deck — Asociaciones: nombre, multiplicidad y roles (Stevens cap. 5)
+>
+> ![[Modelo de clases-3.png]]
 
 ## 🧷 Agregación, composición, dependencia y notas (Pressman Ap. 1)
 
 > [!info] 🧷 Notación de relación en el diagrama
+>
 > | Relación | Notación | Lectura en SIEL |
 > |---|---|---|
 > | **Agregación** | Rombo **vacío** en el todo (`Candidatura 1..2 ─◇─ Candidato`) | La parte existe sola: el candidato sigue existiendo si la candidatura se rechaza |
@@ -132,13 +158,17 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 > | **Dependencia** | Línea **punteada** con flecha y estereotipo (`ValidadorActa ⤳ "use" Padron`) | Una clase usa a otra de forma temporal |
 > | **Nota** | Esquina **doblada** unida con línea punteada | ("Los votos nulos no suman a ninguna candidatura") — comentario sobre el elemento |
 
-![[Modelo de clases-4.png]]
+> [!note] 🖼️ captura del deck — Agregación, composición, dependencia y notas (Pressman Ap. 1)
+>
+> ![[Modelo de clases-4.png]]
 
 ## 🎲 Actividad 3 (individual · 7 min): Caza los sustantivos del SIEL
 
-1. Relee el enunciado y anota **todos** los sustantivos.
-2. Marca cada uno: **clase** o **descarte**, con el motivo.
-3. Responde en el chat: **P1 _**, **P2 _**.
+> [!note] 📋 Actividad 3 (individual · 7 min): Caza los sustantivos del SIEL
+>
+> 1. Relee el enunciado y anota **todos** los sustantivos.
+> 2. Marca cada uno: **clase** o **descarte**, con el motivo.
+> 3. Responde en el chat: **P1 _**, **P2 _**.
 
 > [!question] Preguntas de la actividad (con respuesta sugerida)
 >
@@ -155,32 +185,42 @@ OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura
 > **Respuesta sugerida: c) DiaDeLaEleccion** — es un *evento* ("es algo que
 > ocurre, no algo que perdura").
 
-![[Modelo de clases-5.png]]
+> [!note] 🖼️ captura del deck — Actividad 3 (individual · 7 min): Caza los sustantivos del SIEL
+>
+> ![[Modelo de clases-5.png]]
 
 ## 🌿 Generalización: la relación "es un" (Stevens cap. 5 · Pressman Ap. 1)
 
-```
-        ‹abstract› Dignidad            (nombre en cursiva = abstracta)
-                   △
-                   │
-            ┌──────┴──────┐
-        Alcaldia       Prefectura
-```
+> [!note] 💻 Código — Generalización: la relación "es un" (Stevens cap. 5 · Pressman Ap. 1)
+>
+> ```
+>         ‹abstract› Dignidad            (nombre en cursiva = abstracta)
+>                    △
+>                    │
+>             ┌──────┴──────┐
+>         Alcaldia       Prefectura
+> ```
 
-- **"Es un"**: una Alcaldía **es una** Dignidad. Si la frase suena rara, no es
-  generalización.
-- **Herencia**: la subclase recibe atributos, operaciones y asociaciones de la
-  superclase.
-- **Sustituibilidad**: donde se espera una Dignidad, sirve una Alcaldía o una
-  Prefectura — una `Candidatura` apunta a `1` Dignidad, sea cual sea.
-- Triángulo hueco apuntando a la superclase.
+> [!note] 💡 Generalización: la relación "es un" (Stevens cap. 5 · Pressman…
+>
+> - **"Es un"**: una Alcaldía **es una** Dignidad. Si la frase suena rara, no es
+>   generalización.
+> - **Herencia**: la subclase recibe atributos, operaciones y asociaciones de la
+>   superclase.
+> - **Sustituibilidad**: donde se espera una Dignidad, sirve una Alcaldía o una
+>   Prefectura — una `Candidatura` apunta a `1` Dignidad, sea cual sea.
+> - Triángulo hueco apuntando a la superclase.
 
-![[Modelo de clases-6.png]]
+> [!note] 🖼️ captura del deck — Generalización: la relación "es un" (Stevens cap. 5 · Pressman Ap. 1)
+>
+> ![[Modelo de clases-6.png]]
 
 ---
 
-- Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
-- Complemento: [[Caso SIEL - Casos de Uso]]
-- Deck oficial de la cátedra: [[../../Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] — explica la notación (elementos de clase, `+`/`#`/`-`, multiplicidad, clases de asociación, generalización) con el ejemplo de *AcademicChoice*; estas capturas son el caso **SIEL** aplicado.
+> [!note] 📋 Generalización: la relación "es un" (Stevens cap. 5 · Pressman Ap. 1)
+>
+> - Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
+> - Complemento: [[Caso SIEL - Casos de Uso]]
+> - Deck oficial de la cátedra: [[../../Diapositivas/04aLenguajeUnificadoModelado.pdf|04a Lenguaje unificado de modelado]] — explica la notación (elementos de clase, `+`/`#`/`-`, multiplicidad, clases de asociación, generalización) con el ejemplo de *AcademicChoice*; estas capturas son el caso **SIEL** aplicado.
 
 **Tags:** #CCPG1042 #unidad2 #siel #modelo-de-clases

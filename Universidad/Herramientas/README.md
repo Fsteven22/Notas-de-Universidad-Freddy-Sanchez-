@@ -14,7 +14,7 @@ Todo lo que mantiene el vault vive en `Universidad/Herramientas/`. Se ejecuta co
 | Carpeta | Qué hay |
 |---|---|
 | `Scripts/` | Conversores y verificadores de uso diario: PDF→Markdown, Office→Markdown, Markdown→PDF, flashcards, `verificar_nota.py`, `limpiar_espacios.py`, `kit_recuperacion.py`. Guías `GUIA-*.md` y `LEEME-SCRIPTS.md`. |
-| `Mantenimiento/` | Auditores y fixers del vault: callouts, wikilinks, PDFs huérfanos o duplicados, refs tipo checkbox, PDF→Markdown en lote. |
+| `Mantenimiento/` | Auditores y fixers del vault: callouts, wikilinks, PDFs huérfanos o duplicados, refs tipo checkbox, PDF→Markdown en lote. También los **contratos de formato** (`FORMATO-SBD.md`, `FORMATO-DISENO.md`) y sus auditores (`qa_formato_sbd.py`, `qa_formato_diseno.py`). |
 | `SVG-Pipeline/` | Recreación de SVG fantasma con Mermaid, con `mmd2/` (fuentes) y `previews/` (PNG de control). |
 | `Reportes/` | Salidas de los auditors (markdown/txt). |
 | `Figuras/` | Imágenes reutilizables embebidas en las notas. |
@@ -57,6 +57,8 @@ La nota espejo `_Test Callout Fences.md` se excluye de los fixers (sus ejemplos 
 | `qa_fugas_copyright.py` | (base) | Archivos listados en `_no-publicar.txt` (o variantes `_OCR`) que aparecen en `site/public/assets/`. Red de seguridad contra fugas de copyright. |
 | `qa_svg_titulo.py` | (base) | SVGs con titulos placeholder genericos (`flowchartTitleText`) que nunca se les asigno uno real. |
 | `qa_omitidas.py` | (base) | Notas que el sitio NO publica por el gate silencioso de frontmatter: sin `dg-publish: true`, sin frontmatter o con BOM UTF-8 al inicio (rompe el parseo). Agrupa por semestre/materia. `--estricto` → exit 1 si hay omitidas (CI). |
+| `FORMATO-SBD.md` + `qa_formato_sbd.py` | (contrato) | Contrato de formato de las notas de **Sistema de Bases de Datos** (R1–R14) y su auditor. El contrato vive aquí (no en la carpeta de la materia) porque es una herramienta, no una nota publicable. |
+| `FORMATO-DISENO.md` + `qa_formato_diseno.py` | (contrato) | Contrato de formato de las notas de **Diseño de Software** (R1–R16) y su auditor. Hermano de SBD; cambia el esqueleto de secciones (12 H2 propios de Diseño) y añade R15 (cada captura cita deck + página) y R16 (nada de material ajeno). |
 
 Cifras del dry-run (2026-10): pegados=204 (90 notas), dispersos=0, anidados=62 (20 notas),
 links BAD=1989 (con sugerencias), matemática=893 candidatos, fuera-de-callout=229 bloques.

@@ -29,9 +29,13 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > | **Errores** | Reescribir a mano | `revert` de 1 commit |
 > | **Colaboración** | Turnos | Revisión por pull request |
 
-![[../Diagramas/dsw-u5-03-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-01-graph.svg]]
 
-![[Figuras/01b-p35.png]]
+> [!note] 🖼️ captura 01b-p35 — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p35.png]]
 
 ---
 
@@ -47,8 +51,9 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 > 4. **Review con checklist:** ¿compila? ¿tests verdes? ¿respeta capas? (ver Unidad 2).
 > 5. **Merge y borra la rama:** main siempre verde y desplegable.
 >
-> ![[../Diagramas/dsw-u5-03-02-graph.svg]]
-> ![[Figuras/01b-p39.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-02-graph.svg]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p39.png]]
 >
 > **Comandos que cubren el 90% del curso:**
 >
@@ -77,13 +82,21 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Directo, Rama o PR?
 
-![[../Diagramas/dsw-u5-03-03-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Directo, Rama o PR
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-03-flow.svg]]
 
-![[Figuras/01b-p42.png]]
+> [!note] 🖼️ captura 01b-p42 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p42.png]]
 
-![[Figuras/01b-p43.png]]
+> [!note] 🖼️ captura 01b-p43 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p43.png]]
 
-![[Figuras/01b-p44.png]]
+> [!note] 🖼️ captura 01b-p44 — ️ Diagrama de Decisión: ¿Directo, Rama o PR
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p44.png]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -216,16 +229,19 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Describo el ciclo completo rama→merge sin mirar.
 > - [ ] Uso los 6 comandos base con soltura.
 > - [ ] Escribo mensajes de commit que cuentan la historia.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Rescato commits mezclados sin perder trabajo.
 > - [ ] Respondo a un secreto filtrado en orden correcto.
 > - [ ] Configuro protección de main con criterio.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Decido rebase vs merge según el caso.
 > - [ ] Diseño el flujo Git completo de un equipo.
 > - [ ] Escribo la guía Git de 1 página para recién llegados.
@@ -234,7 +250,9 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u5-03-04-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -298,11 +316,15 @@ tags: [CCPG1042, unidad5, git, versiones, colaboracion, diseno-software]
 >
 > Renderizados del deck de la unidad, en orden de presentación.
 >
-> ![[01b-p35.png]]
-> ![[01b-p39.png]]
-> ![[01b-p42.png]]
-> ![[01b-p43.png]]
-> ![[01b-p44.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p35.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p39.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p42.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p43.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Pruebas/dsw-01b-p44.png]]
 
 ---
 

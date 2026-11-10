@@ -1,0 +1,34 @@
+flowchart TD
+    IN["Dos clases se relacionan"] --> Q1{"El todo CREA y DESTRUYE al<br/>parte?"}
+    Q1 -->|Sí| COMP["Composición<br/>rombo negro"]
+    Q1 -->|No| Q2{"Solo comparten el dato?<br/>el parte sobrevive?"}
+    Q2 -->|Sí| AGG["Agregación<br/>rombo blanco"]
+    Q2 -->|No| Q3{"Uno es un tipo más<br/>ESPECÍFICO del otro?"}
+    Q3 -->|Sí| GEN["Generalización<br/>extends + clase abstracta"]
+    Q3 -->|No| Q4{"Uno cumple un CONTRATO<br/>del otro?"}
+    Q4 -->|Sí| REA["Realización<br/>implements + interface"]
+    Q4 -->|No| Q5{"Solo lo usas dentro de un<br/>método, sin guardarlo?"}
+    Q5 -->|Sí| DEP["Dependencia<br/>import o parámetro"]
+    Q5 -->|No| Q6{"La relación tiene DATOS<br/>PROPIOS?"}
+    Q6 -->|Sí| CLASE["Clase de asociación<br/>clase propia con atributos"]
+    Q6 -->|No| ASOC["Asociación simple<br/>atributo de referencia"]
+    COMP --> CODE["Código Java"]
+    AGG --> CODE
+    GEN --> CODE
+    REA --> CODE
+    DEP --> CODE
+    CLASE --> CODE
+    ASOC --> CODE
+    style COMP fill:#fff4e1
+    style AGG fill:#e8f4fd
+    style GEN fill:#e1ffe1
+    style REA fill:#e1ffe1
+    style DEP fill:#f0e8fd
+    style CLASE fill:#fff4e1
+    style ASOC fill:#e8f4fd
+    style Q1 fill:#fffde7
+    style Q2 fill:#fffde7
+    style Q3 fill:#fffde7
+    style Q4 fill:#fffde7
+    style Q5 fill:#fffde7
+    style Q6 fill:#fffde7

@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 > | **Lectura** | Solo el autor entiende | Cualquiera se ubica |
 > | **Costo** | Reescritura total al final | Inversión diaria pequeña |
 
-![[../Diagramas/dsw-u4-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-01-graph.svg]]
 
 ---
 
@@ -65,7 +67,9 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Refactorizo Ahora?
 
-![[../Diagramas/dsw-u4-02-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Refactorizo Ahora
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -236,16 +240,19 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino refactor y distingo los 3 momentos con ejemplo.
 > - [ ] Clasifico 12 smells por familia con su técnica.
 > - [ ] Describo el ciclo de 5 minutos sin mirar.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Ordeno ataques multi-smell (envidia primero).
 > - [ ] Decido con el diagrama si un smell se ataca hoy o se anota.
 > - [ ] Distingo cambio divergente de cirugía shotgun en código real.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Evalúo "semanas de refactor" con criterio Fowler.
 > - [ ] Escribo la guía de refactor de 1 página de mi equipo.
 > - [ ] Conecto falsabilidad con red de tests correctamente.
@@ -254,7 +261,9 @@ tags: [CCPG1042, unidad4, refactoring, smells, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u4-02-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u4-02-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

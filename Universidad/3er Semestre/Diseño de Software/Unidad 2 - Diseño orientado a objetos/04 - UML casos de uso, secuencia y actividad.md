@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > | **Secuencia** | ¿Quién llama a quién y en qué orden? | Antes de codear un flujo clave |
 > | **Actividad** | ¿Qué decisiones y caminos hay? | Procesos con ramas/paralelo |
 
-![[../Diagramas/dsw-u2-05-01-seq.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-01-seq.svg]]
 
 ---
 
@@ -55,7 +57,9 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > **Mnemotecnia de los sentidos:** *include* lo canta el base ("yo siempre llamo a validar"); *extend* lo canta el extra ("yo interrumpo si pasa algo").
 
-![[../Diagramas/dsw-u2-04-04-flow.svg]]
+> [!note] 🗺️ Diagrama — Los Tres Diagramas (Stevens caps. 7-11)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-04-flow.svg]]
 
 ### 📝 2. Descripción Textual del Caso de Uso (Stevens ch. 8)
 
@@ -137,36 +141,41 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > **Los elementos** (pp. 32-33): objetos sobre su **life-line**, la **activation** (el objeto activo, la barra vertical sobre la lifeline), los **messages** (las flechas) y el **destroy** (la X al final de la lifeline).
 >
-> ![[Archivos/04a-p33-elementos-secuencia.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p33-elementos-secuencia.png]]
 >
 > **Frames: `alt`, `opt`, `loop`** (pp. 38-41). El deck explica por qué existen: lo que dibujas al principio es una **instancia** del diagrama de interacción, *una posible* secuencia de mensajes. Pero un caso de uso puede incluir muchos escenarios → hace falta mostrar **comportamiento condicional** y **posibles iteraciones**. Un diagrama de interacción **genérico** muestra todas las secuencias posibles.
-
+>
 > | Frame | Qué ejecuta | Equivalencia / regla |
 > |---|---|---|
 > | **`alt`** | fragmento alternativo múltiple | **solo se ejecuta el que cuya condición (guard) sea verdadera** |
 > | **`opt`** | fragmento opcional | se ejecuta solo si la condición se cumple: **equivale a un `alt` con una sola traza** |
 > | **`loop`** | fragmento que puede ejecutarse **múltiples veces** | la **guard indica la base de las iteraciones** |
 
-![[Archivos/04a-p39-alt.png]]
+> [!note] 🖼️ captura 04a-p39 — Los Tres Diagramas (Stevens caps. 7-11)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p39-alt.png]]
 
-![[Archivos/04a-p40-opt.png]]
+> [!note] 🖼️ captura 04a-p40 — Los Tres Diagramas (Stevens caps. 7-11)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p40-opt.png]]
 
 > [!tip] Cómo se usa en tu entrega
+>
 > `alt` para el flujo alternativo de la descripción (A1, A2), `opt` cuando el bloque es opcional (un parche `<<extend>>`), `loop` para lo que se repite (reintentar, recorrer una lista). La **guard** es la condición entre corchetes: `[cupo > 0]`, `[hay errores]`.
 
 > [!info] 💡 Restricciones de tiempo
 >
 > **Restricciones de tiempo** (p. 43): el deck muestra cómo anotar una restricción de tipo `time` sobre un mensaje, para cuando el orden no basta y necesitas el plazo.
 >
-> ![[Archivos/04a-p43-restricciones-tiempo.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p43-restricciones-tiempo.png]]
 >
 > **Tipos de interacción** (p. 44): el deck distingue los mensajes **síncrono**, **asíncrono** y de **retorno**, y el mensaje tipo *choice* (la bifurcación). El aviso del propio deck: *algunas versiones de UML usan el mismo símbolo para los casos que aquí se distinguen*.
 >
-> ![[Archivos/04a-p44-tipos-interaccion.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p44-tipos-interaccion.png]]
 >
 > **El ejemplo canónico del deck** (p. 42): el diagrama de secuencia de la biblioteca, para comparar con el tuyo.
 >
-> ![[Archivos/04a-p42-biblioteca.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p42-biblioteca.png]]
 
 ### 🎭 4. Actividad: el Flujo con Decisiones
 
@@ -185,6 +194,7 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > El país se divide en **provincias → cantones → parroquias**. Las **organizaciones políticas** inscriben candidatura para **alcaldía (canton)** o **prefectura (provincia)**; para prefectura van candidato principal + vice. Un **funcionario electoral** califica la candidatura (aprueba o rechaza). El censo se importa del **Registro Civil**. El día de la elección, el **presidente de la JRV** registra el acta con votos por candidatura, nulos y blancos; el sistema la valida contra el padrón de la junta, y con inconsistencias el acta se envía a revisión. El **ciudadano** consulta su lugar de votación y los resultados; el **observador acreditado** descarga las actas escaneadas.
 
 > [!info] 🎭 Actores del SIEL
+>
 > | Actor | Tipo | Casos que le piden al sistema |
 > |---|---|---|
 > | **Ciudadano** | humano | Consultar lugar de votación, Consultar resultados |
@@ -194,7 +204,9 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > | **Organización política** | rol institucional | Inscribir candidatura |
 > | **Registro Civil** | «sistema» externo | Importar padrón |
 
-![[../Diagramas/dsw-u2-04-05-use.svg]]
+> [!note] 🗺️ Diagrama — ️ Ejemplo de la Clase: el SIEL (Sistema de Elecciones Seccionales)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-05-use.svg]]
 
 > [!note] 💡 ¿Para qué sirven y cómo se echan a perder?
 >
@@ -212,7 +224,9 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Diagrama Dibujo?
 
-![[../Diagramas/dsw-u2-05-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Diagrama Dibujo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -368,16 +382,19 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino actor y caso de uso y distingo objetivos de pasos.
 > - [ ] Leo una secuencia de arriba abajo con `alt` y `loop`.
 > - [ ] Decido con el diagrama qué dibujar en cada situación.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Escribo 5-9 casos a nivel objetivo para un dominio nuevo.
 > - [ ] Dibujo secuencias por escenario (feliz + error).
 > - [ ] Uso actividad solo donde hay ramas o paralelo real.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Mantengo coherentes clases + casos + secuencias del mismo sistema.
 > - [ ] Particiono secuencias gigantes por escenario con criterio.
 > - [ ] Diseño los 3 diagramas del flujo principal de mi proyecto.
@@ -386,7 +403,9 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u2-05-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
