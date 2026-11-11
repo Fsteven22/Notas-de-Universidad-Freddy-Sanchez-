@@ -47,7 +47,10 @@ SKIP_DIRS = (".obsidian", ".trash", ".git", "node_modules", "__pycache__")
 
 RE_H = re.compile(r"^(#{1,6})\s+(.*)$")
 RE_RULE = re.compile(r"^\s*(?:-{3,}|\*{3,}|_{3,})\s*$")
-RE_EMOJI = re.compile(r"[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\u2190-\u21FF\u2049\u203C\u2757]")
+# Rango de emoji: bloques Miscellaneous Symbols (2600-27BF), Dingbats (2B00-2BFF),
+# Supplemental Symbols (1F000-1FAFF), flechas, y TECHNICAL (2300-23FF): este
+# ultimo cubre los emoji de reloj y cronometro (⏱️ U+23F1, ⌛ U+231B, ⏳ U+23F3).
+RE_EMOJI = re.compile(r"[\U0001F000-\U0001FAFF\u2300-\u23FF\u2600-\u27BF\u2B00-\u2BFF\u2190-\u21FF\u2049\u203C\u2757]")
 
 RE_CALL_HDR = re.compile(r"^\s*(?P<gg>(?:>\s*)+)+\[!(?P<tipo>[\w\-]+)\](?P<plegado>-?)\s*(?P<titulo>.*)$")
 RE_CALL_CONT = re.compile(r"^\s*(?P<gg>(?:>\s*)+)(?P<resto>.*)$")
