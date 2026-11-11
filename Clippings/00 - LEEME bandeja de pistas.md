@@ -1805,3 +1805,6 @@ en `82bd9398`.
 >
 > - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
 
+**PUSHEADO `03732bc5`** — `8030bb03` (código) + `03732bc5` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `03732bc5`. `origin/sesion/opencode-site` queda en `03732bc5`.
+
