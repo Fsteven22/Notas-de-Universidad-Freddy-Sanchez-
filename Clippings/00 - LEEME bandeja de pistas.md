@@ -1625,3 +1625,120 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 `master` → `origin/master` = `master` = `5e958e2c`. `origin/sesion/opencode-site` queda en `5e958e2c`.
 (Este commit solo registra el push; al publicarlo, `origin/master` avanza a su propio hash.)
 
+---
+
+### `opencode-site` — fondo rediseñado, sin esfera del puntero y atajos al final de la página — 10/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `2b4089d9` + `67da9a8f`):** tercera vuelta de UX sobre `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/**`. Todo lo que pidió el dueño en la ronda
+>   anterior, más el rediseño del fondo y el titular nuevo.
+>   - **Fondo rediseñado (lo que más molestaba).** Se fue el "ruido" de fondo:
+>     - **Scanlines eliminados.** Eran líneas de 1 px cada 3 px al 2 % de opacidad. Con el escalado de
+>       Windows (125 %, 150 %) o en 4K esas líneas no caen sobre un píxel físico exacto y producen
+>       **muaré**: el fondo se veía cortado en líneas. Era el diseño, no la máquina.
+>     - **Grano de película eliminado.** Era un tile SVG de ruido al 5 % que saltaba 5 px cada 0,2 s
+>       en 4 pasos: literalmente estática de televisión parpadeando sobre el texto.
+>     - **En su lugar:** una **retícula de puntos** de 26 px, muy tenue (blanco al 5,5 %) y totalmente
+>       estática, que se desvanece hacia abajo con una máscara; un **halo del color del semestre** arriba;
+>       y el degradado base reescrito en cuatro capas (viñeta que oscurece los bordes + dos focos de
+>       color difusos + azul casi negro). Todo el degrade va **detrás** del contenido, así que el texto
+>       nunca se ve afectado.
+>     - **Con el movimiento en "Nunca"** desaparecen también la retícula y el halo: el fondo queda
+>       limpio y plano.
+>   - **Fuera la esfera de color del puntero.** Era un div de 26 px con `mix-blend-mode: screen` que
+>     seguía al puntero con 0,18 s de retardo y crecía a 2,3× sobre los enlaces. Problems: se veía el
+>     puntero real **y** la esfera a la vez, aclaraba el texto que tenía debajo y en trackpad se
+>     sentía lento. Para un sitio donde se estudia es ruido, no carácter. Se eliminó el elemento, su
+>     JS y su CSS. Los brillos en acentos y estados hover se quedan.
+>   - **Botones y tarjetas: solo 3D, sin rebote.** Se quitó el **hover magnético** (el botón se
+>     desplazaba hacia el puntero y volvía con `elastic.out`: se le escapaba de debajo del cursor y
+>     temblaba al regresar). Ahora los botones solo **rotan en perspectiva** (5°, `transform-perspective`
+>     700) y las tarjetas giran 7° con perspectiva 900; el retorno es `power3.out`, **sin rebote**.
+>   - **Pie de página común (nuevo `SiteFooter.astro`).** Antes solo la portada tenía pie; semestre,
+>     materia y nota terminaban en seco. Ahora `Base.astro` monta un pie en **todas** las páginas con:
+>     marca y créditos, el aviso de que el material es personal y de que algunos archivos no se
+>     publican, la **fecha de la última compilación** (el sitio es estático: es la del último
+>     despliegue), el **botón "Atajos" con la tecla "?"** y el interruptor de movimiento.
+>   - **El botón "?" de los atajos pasa al final de la página**, como pidió el dueño: sale del header
+>     (donde competía con inicio, índice y búsqueda) y queda en el pie. Efecto colateral bueno: antes
+>     se ocultaba a ≤639 px, así que en móvil no había forma de llegar a los atajos; **ahora se ve
+>     siempre**. La tecla "?" sigue funcionando en todo el sitio.
+>   - **Escena de Three.js más discreta:** 1.500 → **800** partículas, más pequeñas (0,15 → 0,11) y
+>     más tenues (0,6 → 0,42); la constelación de líneas, 420 → 260 y al 60 % de opacidad; giro más
+>     lento. Las auras del hero, más difusas (blur 90 → 110, opacidad 0,18 → 0,13).
+>   - **Números de la portada:** ya eran dinámicos (se calculan desde `vault.json`, que genera el
+>     `sync` leyendo el vault), así que se actualizan solos en cada compilación. Se unificó el nombre:
+>     el hero decía "4 BLOQUES" y la tarjeta decía "Semestres" → ahora **SEMESTRES** en los dos.
+>
+> - **Bug encontrado y corregido: la portada mentía con los números.** Los tres totales del hero y de
+>   las tarjetas de estadísticas suman los datos de los cuatro semestres, pero el cálculo usaba
+>   `reduce` **sin acumular**: el callback recibía el total anterior y lo descartaba, así que el
+>   resultado era el del **último semestre** (3er). La portada llegaba a decir
+>   "181 NOTAS · 5 MATERIAS · 113 PDFS" cuando el vault tiene **822 notas, 18 materias y 220 PDFs**
+>   en 4 semestres. El mismo error está en el sitio publicado en producción ("156 NOTAS · 5 MATERIAS ·
+>   137 PDFS"), así que no es de este lote: estaba desde antes. Corregido acumulando de verdad
+>   (`n + ...`): ahora la portada y las tarjetas dicen **822 NOTAS · 18 MATERIAS · 220 PDFS ·
+>   4 SEMESTRES**, que es lo que este LEEME venía anunciando. Comprobado contra el `vault.json` a
+>   mano y en la página compilada.
+>
+> - **Hero nuevo (titular y frase), pedido del dueño.** El titular era "Mis apuntes de carrera en un
+>   solo lugar.": no enganchaba, no decía qué es el sitio ni qué problema resuelve.
+>   - **h1:** `¿Tuviste el PDF y no sabes por dónde empezar?` — el gancho es una situación real del
+>     estudiante; el degradado va solo en la parte que carga la emoción ("no sabes por dónde empezar?").
+>   - **debajo:** "Neonotes hace ese trabajo por ti: apuntes de ESPOL resumidos y ordenados por
+>     semestre, con gráficos, fórmulas y búsqueda por temas. ¿Te los quieres llevar? Cada materia se
+>     baja en un ZIP."
+>   - **distintivos:** `BÚSQUEDA POR TEMAS` · `GRÁFICOS Y FÓRMULAS` · `ZIP POR MATERIA` (las tres cosas
+>     ya existían: el buscador entra en el texto de las notas, las notas llevan diagramas y fórmulas
+>     KaTeX, y cada materia tiene su ZIP de PDFs).
+>   - El badge de arriba se mantiene: `INGENIERÍA COMPUTACIONAL · ESPOL`.
+>
+> - **Bug encontrado y corregido: el degradado se partía al saltar de línea.** La frase "en un solo
+>   lugar." se veía en dos colores: "en un" quedaba violeta plano y "solo lugar." reiniciaba la rampa.
+>   La causa es que `background-clip: text` calcula el degradado sobre la caja completa del `<span>`,
+>   no sobre cada línea. Se arregla con **`box-decoration-break: clone`**, que hace que cada línea
+>   pinte su propia copia del degradado. Además el h1 lleva `text-wrap: balance` para que el corte de
+>   línea caiga en un sitio razonable. **Verificado con capturas reales** (no solo con estilos
+>   calculados): el degradado sale bien tanto en una línea (1280 px) como repartido en dos y tres
+>   líneas (500 px y 390 px).
+>
+> - **Bug encontrado y corregido: la página se ensanchaba en móvil.** El halo decorativo del hero
+>   (420 px, `left: 10%`) sobresalía del ancho de la ventana, así que el documento medía **459 px en
+>   una pantalla de 390** y Chrome "encogía" el contenido para que cupiera: el texto se veía más
+>   pequeño de lo que debía. Ahora el halo está limitado a `72vw` y `html` lleva `overflow-x: clip`
+>   (no rompe los `position: sticky`). Comprobado por CDP a 390 px: `innerWidth = 390` y
+>   `scrollWidth = 390`, sin desbordes.
+>
+> - **Herramienta nueva de verificación:** captura por CDP (`shot-cdp.mjs`) a un ancho exacto. El
+>   modo `--headless --screenshot` de Edge/Chrome impone un ancho mínimo de ventana (~500 px) y recorta
+>   la imagen, así que no servía para comprobar móvil.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1 múltiple,
+>   0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas) · **navegador sin errores de consola**:
+>   `#nx-cursor` ya no existe en el DOM, el pie aparece en portada y en nota, el header ya no tiene el
+>   botón de atajos, el hover magnético no queda enganchado (`data-nx-mag-bound` ausente) y el tilt 3D sí
+>   (`data-nx-tilt-bound` en botones y 40 tarjetas). Medido a 375 px: el pie **no se desborda** (el
+>   bloque de herramientas pasa a dos líneas).
+> - **Portada compilada, comprobada con capturas reales** (390 px y 1280 px, por CDP): el titular sale
+>   bien con el degradado repartido por línea, **sin desbordes** (`innerWidth` = `scrollWidth` = 390 y
+>   1280) y los totales ya son los reales: **822 NOTAS · 18 MATERIAS · 220 PDFS · 4 SEMESTRES**, los
+>   mismos que salen de `vault.json` a mano.
+>
+> - [!note] Los tres números de "notas" son tres cosas distintas (no hay inconsistencia)
+>   - **822** = notas de los 4 semestres (`vault.json`), que es lo que muestra la portada.
+>   - **823** = páginas de nota publicadas: las 822 + `raiz/general` (la portada excluye `raiz` a
+>     propósito, así que no cuenta esa nota).
+>   - **821** = notas **indexadas para el buscador**: el índice solo entra en las que tienen apartados
+>     (`build-search-content.mjs` salta las que no tienen encabezados).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): igual que en la ronda
+>     anterior, ver el bloque de `opencode-site` del 09/11/2026. Se comprobó compilando la versión
+>     anterior (`8050f589`): dio **exactamente las mismas 207** (206 sin encabezado en el destino + 1
+>     con el slug terminado en guion). Ninguna está en la portada.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
