@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [recurrencia, relacionesderecurrencia, fibonacci, interescompuesto, torredehanoi, metodoiterativo, MATG1051, unidad4, ESPOL]
 ---
 # 🔁 Relaciones de Recurrencia
 
@@ -125,13 +126,17 @@ dg-publish: true
 > |4|15|
 > |10|1023|
 
-![[ChatGPT Image 18 ago 2026, 20_16_45.png]]
+> [!note] 🖼️ Captura — El Problema de la Torre de Hanoi
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_16_45.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-03-graph.svg]]
 
 ---
 
@@ -148,25 +153,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Defino una relación de recurrencia a partir de un problema.
 > - [ ] Escribo los primeros términos dados la recurrencia y condiciones iniciales.
 > - [ ] Identifico recurrencias lineales de primer y segundo orden.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo recurrencias lineales con constantes por sustitución iterativa.
 > - [ ] Construyo la solución homogénea y particular.
 > - [ ] Aplico recurrencias a problemas de conteo (torres de Hanoi, Fibonacci).
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo recurrencias no lineales usando transformaciones.
 > - [ ] Aplico el método generador de funciones a recurrencias complejas.
 > - [ ] Analizo el comportamiento asintótico de recurrencias.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[03 - Inducción Matemática]] — inducción para probar recurrencias
 > - Siguiente: [[02 - Recurrencia Homogénea]] — solución por ecuaciones características
 > - Relacionado: [[03 - Pseudocódigo y Algoritmos]] — recursión en algoritmos

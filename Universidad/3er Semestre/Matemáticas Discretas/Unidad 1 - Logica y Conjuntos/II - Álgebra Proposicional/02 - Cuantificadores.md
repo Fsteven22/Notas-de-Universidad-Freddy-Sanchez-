@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantificador-existencial, cuantificador-existencia-unica, cuantificadores-anidados, funciones-proposicionales, MATG1051]
 ---
 
 # 🔍 Cuantificadores
@@ -54,7 +55,7 @@ dg-publish: true
 
 ---
 
-## ∀ Cuantificador Universal
+## 📚 ∀ Cuantificador Universal
 
 > [!note] 📖 Definición 2 — Cuantificador Universal
 > 
@@ -109,7 +110,7 @@ dg-publish: true
 
 ---
 
-## ∃ Cuantificador Existencial
+## 📚 ∃ Cuantificador Existencial
 
 > [!note] 📖 Definición 3 — Cuantificador Existencial
 > 
@@ -161,7 +162,7 @@ dg-publish: true
 
 ---
 
-## ∃! Cuantificador de Existencia Única
+## 📚 ∃! Cuantificador de Existencia Única
 
 > [!note] 📖 Definición 5 — Cuantificador de Existencia Única
 >
@@ -221,6 +222,8 @@ dg-publish: true
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-02-graph.svg]]
 >
 > **Se lee así:** negar intercambia el cuantificador y niega adentro; el orden nunca se permuta gratis.
+
+---
 
 ## 🔄 Negación de Cuantificadores
 
@@ -432,7 +435,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-03-graph.svg]]
 
 ---
 

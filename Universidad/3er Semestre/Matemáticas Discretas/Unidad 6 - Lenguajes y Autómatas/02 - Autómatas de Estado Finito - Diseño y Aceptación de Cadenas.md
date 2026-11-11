@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion, lenguajes-formales, MATG1051]
 ---
 
 # 🤖 Autómatas de Estado Finito
@@ -186,7 +187,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: Proceso de Diseño y Verificación
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión: Proceso de Diseño y Verificación
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-05-graph.svg]]
 
 ---
 

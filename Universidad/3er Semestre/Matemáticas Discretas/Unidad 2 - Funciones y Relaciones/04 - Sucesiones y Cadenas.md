@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MATG1051]
 ---
 
 # 🔢 Sucesiones y Cadenas
@@ -65,7 +66,7 @@ dg-publish: true
 
 ---
 
-## ∑ Suma y Producto de Sucesiones
+## 📚 ∑ Suma y Producto de Sucesiones
 
 > [!note] ∑ Definición 9 — Notación de suma y producto
 > 
@@ -171,6 +172,8 @@ dg-publish: true
 >
 > **Se lee así:** sin iniciales la ecuación no define nada; el orden dice cuántas necesitas.
 
+---
+
 ## 🔄 Recurrencias
 
 > [!note] 🔄 Definición — [[01 - Relaciones de Recurrencia|Relación de Recurrencia]]
@@ -252,6 +255,8 @@ dg-publish: true
 >
 > **Se lee así:** la subcadena exige contigüidad; sin bloque contiguo no hay subcadena.
 
+---
+
 ## 🔤 Cadenas
 
 > [!note] 📋 Definición 10 — Cadena
@@ -304,7 +309,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-04-graph.svg]]
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sumador-en-serie, MATG1051]
 ---
 
 # 🖥️ Máquinas de Estado Finito
@@ -235,7 +236,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué modelo usar?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-06-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión: ¿Qué modelo usar
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-06-graph.svg]]
 
 ---
 

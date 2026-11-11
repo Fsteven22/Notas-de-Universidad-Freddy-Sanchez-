@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [discretas, unidad5, guia-problemas]
 ---
 
 # 📘 Guía de Problemas 5 - Ejercicios Resueltos
@@ -16,7 +17,9 @@ dg-publish: true
 
 ---
 
-![[GUÍA_DE_PROBLEMAS 5.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Guías/GUÍA_DE_PROBLEMAS 5.pdf]]
 
 ## 📚 5.1 - Grafos: Grados, Hamilton, Euler y Handshake
 
@@ -78,7 +81,7 @@ dg-publish: true
 >
 > **Enunciado:** Dado el grafo con $V = \{v_1, \dots, v_{10}\}$ y adyacencias: $v_1$: $v_2,v_{10}$; $v_2$: $v_1,v_3,v_5,v_9$; $v_3$: $v_2,v_4$; $v_4$: $v_3,v_5,v_7$; $v_5$: $v_2,v_4,v_6$; $v_6$: $v_5,v_8,v_9$; $v_7$: $v_4,v_8$; $v_8$: $v_6,v_7,v_9,v_{10}$; $v_9$: $v_2,v_6,v_8,v_{10}$; $v_{10}$: $v_1,v_8,v_9$. Determinar: (a) grados, conexidad, bipartición, completitud; (b) ciclo/camino de Hamilton; (c) ciclo/camino de Euler.
 >
-> ![[g5-ej03-grafo.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej03-grafo.png]]
 > **Figura generada con Python — grafo del Ej. 3 (rojo = grado impar, azul = grado par).**
 >
 > **(a) Grados y propiedades básicas:**
@@ -141,6 +144,8 @@ dg-publish: true
 >
 > $$\boxed{M \sim N:\ M \text{ y } N \text{ se conocen entre sí}}$$
 
+---
+
 ## 📚 5.2 - Árboles de Expansión: DFS, BFS, TSP y Prim
 
 > [!example]- ✏️ Ejercicio 5 - Árbol de expansión por DFS
@@ -168,7 +173,7 @@ dg-publish: true
 >
 > **Paso 2 — Árbol resultante ($11$ aristas, $3$ de retroceso: $h-k$, $g-b$, $b-a$):**
 >
-> ![[g5-ej05-dfs.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej05-dfs.png]]
 > **Figura generada con Python — árbol DFS del Ej. 5 (azul grueso) y retrocesos h–k, g–b, b–a (gris).**
 >
 > $$\boxed{T_{DFS} = \{hl, lk, kf, fe, ed, dc, cb, bi, ij, jg, ga\}}$$
@@ -191,7 +196,7 @@ dg-publish: true
 >
 > Orden de descubrimiento BFS: $a, c, e, b, f, d, h, g, j, i$. ✅
 >
-> ![[g5-ej06-bfs.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej06-bfs.png]]
 > **Figura generada con Python — árbol BFS del Ej. 6 (azul grueso) y aristas de cruce d–h, j–i (gris).**
 >
 > $$\boxed{T_{BFS} = \{ac, ae, cb, cf, ed, eh, bg, fj, gi\}}$$
@@ -200,7 +205,7 @@ dg-publish: true
 >
 > Camino: $a \to c \to b \to g \to i \to j \to f$, retroceso hasta $a \to e \to d \to h$. Orden de descubrimiento: $a, c, b, g, i, j, f, e, d, h$.
 >
-> ![[g5-ej06-dfs.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej06-dfs.png]]
 > **Figura generada con Python — árbol DFS del Ej. 6 (azul grueso) y aristas fuera del árbol c–f, e–h (gris).**
 >
 > $$\boxed{T_{DFS} = \{ac, cb, bg, gi, ij, jf, ae, ed, dh\}}$$
@@ -211,7 +216,7 @@ dg-publish: true
 >
 > **Supuesto (grafo reconstruido de la figura, pesos):** $V = \{A, \dots, F\}$; aristas: $A$-$B$ $4$, $A$-$C$ $3$, $A$-$F$ $10$, $B$-$C$ $2$, $B$-$D$ $5$, $B$-$F$ $9$, $C$-$D$ $6$, $C$-$E$ $7$, $D$-$E$ $1$, $D$-$F$ $8$, $E$-$F$ $2$.
 >
-> ![[g5-ej07-prim.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej07-prim.png]]
 > **Figura generada con Python — grafo del Ej. 7 con el MST de Prim en verde (peso 13).**
 >
 > **1) Tour TSP (vecino más cercano desde $A$):**
@@ -235,6 +240,8 @@ dg-publish: true
 > >  ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-07-05-graph.svg]]
 >
 > $$\boxed{MST = \{AC, CB, BD, DE, EF\} \text{ con peso } 13}$$
+
+---
 
 ## 📚 5.3 - Caminos Mínimos: Dijkstra
 
@@ -264,7 +271,7 @@ dg-publish: true
 >
 > >  ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-07-06-graph.svg]]
 >
-> ![[g5-ej08-dijkstra.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej08-dijkstra.png]]
 > **Figura generada con Python — camino mínimo A→J del Ej. 8 en verde (d = 19).**
 >
 > $$\boxed{d(A,J) = 19 \text{ vía } A-C-B-D-E-F-G-I-J}$$
@@ -275,7 +282,7 @@ dg-publish: true
 >
 > **Supuesto (grafo reconstruido de la figura, pesos; $z$ es el vértice adicional de la figura):** aristas: $a$-$b$ $3$, $a$-$c$ $5$, $b$-$c$ $2$, $b$-$d$ $6$, $c$-$e$ $4$, $c$-$z$ $12$, $d$-$e$ $1$, $d$-$f$ $7$, $e$-$f$ $2$, $e$-$g$ $8$, $f$-$g$ $3$, $f$-$h$ $6$, $g$-$h$ $2$, $g$-$j$ $4$, $g$-$z$ $9$, $h$-$j$ $3$, $j$-$z$ $5$.
 >
-> ![[g5-ej09-distancias.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej09-distancias.png]]
 > **Figura generada con Python — grafo ponderado del Ej. 9.**
 >
 > **Paso 1 — Dijkstra desde $a$:** distancias finales $a=0$, $b=3$, $c=5$, $d=9$, $e=9$, $f=11$, $g=14$, $h=16$, $j=18$, $z=17$ (vía directa $a$-$c$-$z$ $= 5+12$).
@@ -347,7 +354,7 @@ dg-publish: true
 >
 > >  ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-07-09-graph.svg]]
 >
-> ![[g5-ej11-dijkstra.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/g5-ej11-dijkstra.png]]
 > **Figura generada con Python — camino mínimo v4→v7 del Ej. 11 en verde (d = 15).**
 >
 > $$\boxed{d(v_4,v_7) = 15 \text{ vía } v_4-v_1-v_2-v_3-v_5-v_6-v_7}$$
@@ -370,26 +377,35 @@ dg-publish: true
 > |10|$d(A,J) = 17$|
 > |11|$d(v_4,v_7) = 15$|
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel 1 - Comprender
+> 
 > - [ ] Explicar con mis palabras los teoremas de Dirac, Ore y Euler (conexidad + paridad)
 > - [ ] Verificar a mano los grados y la lista de aristas del Ejercicio 3
 >   - [ ] Reproducir el argumento de imposibilidad del ciclo de Hamilton
 
 > [!note] 🎯 Nivel 2 - Aplicar
+> 
 > - [ ] Ejecutar BFS, DFS, Prim y Dijkstra sin mirar la solución
 > - [ ] Trazar los árboles de expansión de los Ejercicios 5 y 6 desde otro vértice inicial
 >   - [ ] Comparar el orden de descubrimiento obtenido con el de la guía
 
 > [!note] 🎯 Nivel 3 - Dominar
+> 
 > - [ ] Resolver un TSP y un Dijkstra con pesos nuevos inventados por mí
 > - [ ] Demostrar el Ejercicio 4 por contradicción sin consultar los casos
 >   - [ ] Construir un contraejemplo tipo Ejercicio 2 para otra afirmación falsa
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-07-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-07-01-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 >

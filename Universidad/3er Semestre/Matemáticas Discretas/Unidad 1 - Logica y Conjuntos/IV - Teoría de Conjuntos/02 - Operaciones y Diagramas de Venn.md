@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, complemento, producto-cartesiano, venn, MATG1051]
 ---
 
 # ⚙️ Operaciones de Conjuntos y Diagramas de Venn
@@ -262,7 +263,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-03-graph.svg]]
 
 ---
 
@@ -380,6 +383,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Conjuntos, Cardinalidad y Subconjuntos]]
 > - Siguiente: [[03 - Leyes de Conjuntos]]
+
+---
 
 ## 📚 Referencias
 

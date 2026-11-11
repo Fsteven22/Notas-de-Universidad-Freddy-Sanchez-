@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-de-verdad, equivalencias, circuitos-combinatorios, compuertas-logicas, MATG1051]
 ---
 
 # 🔣 Lógica Proposicional
@@ -348,7 +349,8 @@ dg-publish: true
 >     Equivalente a decir que $P \leftrightarrow Q$ es una **tautología**.
 
 > [!success] 📋 Principales Equivalencias Lógicas
-> ![[Pasted image 20260517162520.png]]
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260517162520.png]]
 > **Leyes de identidad:**
 > 
 > |Ley|Expresión|
@@ -451,7 +453,10 @@ dg-publish: true
 > |**NAND**|$\neg(p \wedge q)$|AND con círculo|Falso solo si ambas entradas son 1|
 > |**NOR**|$\neg(p \vee q)$|OR con círculo|Verdadero solo si ambas entradas son 0|
 > 
-![[ChatGPT Image 20 may 2026, 13_02_00.png]]
+
+> [!note] 🖼️ Captura — Circuitos Combinatorios
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 may 2026, 13_02_00.png]]
 
 > [!example] 🧮 Tablas de Verdad de Compuertas
 > 
@@ -510,7 +515,8 @@ dg-publish: true
 > q ───────────┘          ├──[ AND ]──→ Salida
 > r ──────────────────────┘
 > ```
-> ![[ChatGPT Image 20 may 2026, 13_05_26.png]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 may 2026, 13_05_26.png]]
 > 
 > |$p$|$q$|$r$|$\neg p$|$\neg p \vee q$|$(\neg p \vee q) \wedge r$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -548,7 +554,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-05-graph.svg]]
 
 ---
 
@@ -678,6 +686,8 @@ dg-publish: true
 >
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Siguiente: [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
+
+---
 
 ## 📚 Referencias
 

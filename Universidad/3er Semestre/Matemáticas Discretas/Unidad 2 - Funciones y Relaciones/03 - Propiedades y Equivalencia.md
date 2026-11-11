@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion, clases-equivalencia, conjunto-cociente, MATG1051]
 ---
 
 # ⚖️ Propiedades y Equivalencia
@@ -19,6 +20,8 @@ dg-publish: true
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-02-graph.svg]]
 >
 > **Se lee así:** reflexiva + transitiva es la base; la tercera propiedad decide la familia.
+
+---
 
 ## 📋 Relaciones de Orden y de Equivalencia
 
@@ -117,6 +120,8 @@ dg-publish: true
 >
 > **Se lee así:** partir y equivaler son lo mismo visto de dos lados; el cociente reúne las clases.
 
+---
+
 ## 🧩 Particiones
 
 > [!note] 🧩 Definición 14 — Partición
@@ -187,7 +192,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-04-graph.svg]]
 
 ---
 

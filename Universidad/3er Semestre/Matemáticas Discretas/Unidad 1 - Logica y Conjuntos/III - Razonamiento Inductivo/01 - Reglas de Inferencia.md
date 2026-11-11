@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-ponens, modus-tollens, silogismo, falacias, MATG1051]
 ---
 
 # 🧩 Reglas de Inferencia
@@ -54,6 +55,8 @@ dg-publish: true
 >
 > **Se lee así:** Ponens afirma el antecedente; Tollens niega el consecuente; el silogismo encadena.
 
+---
+
 ## 📋 Tabla de Reglas de Inferencia
 
 > [!note] 📖 Reglas fundamentales
@@ -68,7 +71,10 @@ dg-publish: true
 > | $p \vee q,\ \neg p \Rightarrow q$ | **Silogismo Disyuntivo** |
 > | $p \wedge q \Rightarrow p$ | **Simplificación** |
 > 
-![[ChatGPT Image 2 jun 2026, 00_08_36.png]]
+
+> [!note] 🖼️ Captura — Tabla de Reglas de Inferencia
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 2 jun 2026, 00_08_36.png]]
 
 ---
 
@@ -274,7 +280,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-03-graph.svg]]
 
 
 ---

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [recurrencia, recurrenciahomogenea, ecuacioncaracteristica, raicesdistintas, raizdoble, MATG1051, unidad4, ESPOL]
 ---
 # 🧩 Recurrencia Homogénea
 
@@ -122,13 +123,17 @@ dg-publish: true
 > > 
 > > $$\boxed{a_n = 3^n + 2n\cdot 3^n}$$
 
-![[ChatGPT Image 18 ago 2026, 20_21_32.png]]
+> [!note] 🖼️ Captura — Resolución con Raíces Reales Iguales
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_21_32.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-03-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-03-02-graph.svg]]
 
 ---
 
@@ -145,25 +150,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Escribo la ecuación característica de una recurrencia homogénea.
 > - [ ] Resuelvo recurrencias con raíces reales distintas.
 > - [ ] Aplico condiciones iniciales para encontrar constantes.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo recurrencias con raíces repetidas (caso especial).
 > - [ ] Resuelvo recurrencias con raíces complejas.
 > - [ ] Verifico la solución sustituyendo en la recurrencia original.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo sistemas de recurrencias acopladas.
 > - [ ] Aplico transformadas Z a recurrencias lineales.
 > - [ ] Analizo estabilidad de recurrencias según las raíces características.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[01 - Relaciones de Recurrencia]] — definición
 > - Relacionado: [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] — complejidad
 > - Aplicación: [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]]

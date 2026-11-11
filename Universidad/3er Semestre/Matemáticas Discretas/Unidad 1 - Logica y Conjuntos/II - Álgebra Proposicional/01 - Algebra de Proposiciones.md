@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, algebra-proposicional, demostraciones-algebraicas, equivalencias-logicas, MATG1051]
 ---
 
 # 🧮 Álgebra de Proposiciones
@@ -190,7 +191,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-05-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-05-02-graph.svg]]
 
 ---
 

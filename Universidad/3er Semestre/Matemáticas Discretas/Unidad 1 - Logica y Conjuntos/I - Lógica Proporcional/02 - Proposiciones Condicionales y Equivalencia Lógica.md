@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-logica, tautologia, contradiccion, contrarreciproco, leyes-de-morgan, MATG1051]
 ---
 
 # 🔀 Proposiciones Condicionales y Equivalencia Lógica
@@ -74,6 +75,8 @@ dg-publish: true
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-02-graph.svg]]
 >
 > **Se lee así:** solo la contrapositiva conserva el valor; recíproca e inversa son independientes.
+
+---
 
 ## 🔁 Proposiciones Derivadas del Condicional
 
@@ -372,13 +375,17 @@ dg-publish: true
 
 ## 🗺️ Mapa Conceptual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-04-graph.svg]]
+> [!note] 🗺️ Diagrama — ️ Mapa Conceptual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-04-graph.svg]]
 
 ---
 
 ## 📊 Resumen de Equivalencias Clave
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen de Equivalencias Clave
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-05-graph.svg]]
 
 ---
 
@@ -468,6 +475,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Proposiciones y conectivos]]
 > - Siguiente: [[01 - Algebra de Proposiciones]]
+
+---
 
 ## 📚 Referencias
 

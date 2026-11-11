@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MATG1051, computacion-y-sociedad]
 ---
 # 🌳 Árboles II — Árboles Binarios, Recorridos y Códigos Huffman
 
@@ -173,19 +174,25 @@ dg-publish: true
 > 
 > No confundas "entreorden" con "el orden en que fueron insertados los datos". El **entreorden** de un árbol de búsqueda binaria siempre produce los datos en **orden alfabético/numérico ascendente**, sin importar en qué orden se insertaron originalmente — esa es justamente la propiedad que lo hace útil.
 
-![[ChatGPT Image 18 ago 2026, 19_13_53.png]]
+> [!note] 🖼️ Captura — Recorridos de Árboles Binarios
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 19_13_53.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-02-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Estrategia de Elección — Flujograma de Decisión
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-03-graph.svg]]
 
 ---
 

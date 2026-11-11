@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [divisibilidad, criterios, binario, hexadecimal, decimal, bases, numeracion, conversion, teoria-de-numeros, MATG1051, unidad3, ESPOL]
 ---
 # 🔣 Criterios de Divisibilidad y Sistemas de Numeración
 ## 🎯 Introducción
@@ -199,7 +200,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-04-graph.svg]]
 
 ---
 
@@ -216,25 +219,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Aplico criterios de divisibilidad para 2, 3, 5, 9 y 11.
 > - [ ] Convierto números entre decimal, binario, octal y hexadecimal.
 > - [ ] Realizo operaciones básicas en sistema binario.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Uso criterios de divisibilidad para simplificar cálculos.
 > - [ ] Convierto fracciones decimales a representación binaria.
 > - [ ] Analizo ventajas de diferentes bases para computación.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de representación en bases arbitrarias.
 > - [ ] Aplico aritmética modular a sistemas de numeración.
 > - [ ] Analizo el impacto de la precisión finita en computación.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[02 - MCD, MCM y Algoritmo de Euclides]]
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]]
 > - Aplicación: [[03 - Pseudocódigo y Algoritmos]] — representación binaria

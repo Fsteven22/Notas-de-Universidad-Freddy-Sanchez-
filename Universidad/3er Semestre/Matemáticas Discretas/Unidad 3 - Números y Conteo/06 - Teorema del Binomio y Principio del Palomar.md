@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, palomar, combinatoria, MATG1051]
 ---
 # 🔣 Teorema del Binomio y Principio del Palomar
 
@@ -22,6 +23,8 @@ dg-publish: true
 > Así que no memorices la fórmula: piensa "tomé $b$ de $k$ paréntesis, ¿de cuántas formas pude elegir esos $k$ paréntesis de entre los $n$?" → esa es la respuesta.
 > 
 > **Truco extra para el signo:** si $b$ es negativo, cada vez que la tomas un número impar de veces el signo se voltea, por eso los términos alternan $+,-,+,-,\ldots$
+
+---
 
 ## 📐 Coeficientes Binomiales
 
@@ -247,25 +250,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Expando (a+b)^n usando el teorema del binomio.
 > - [ ] Identifico coeficientes binomiales en el triángulo de Pascal.
 > - [ ] Aplico el principio del palomar para probar existencia.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo problemas de conteo usando coeficientes binomiales.
 > - [ ] Aplico el principio del palomar generalizado a problemas de distribución.
 > - [ ] Uso identidades binomiales para simplificar sumatorias.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo identidades binomiales usando el método combinatorio.
 > - [ ] Aplico el principio del palomar a problemas de complejidad computacional.
 > - [ ] Conecto el teorema del binomio con distribuciones de probabilidad.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[05 - Permutaciones y Combinaciones]] — combinaciones
 > - Relacionado: 04 - Recurrencia y Algoritmos — relación con recurrencias
 > - Aplicación: [[01 - Grafos I - Conceptos Básicos y Recorridos]]

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equivalencia, MATG1051]
 ---
 # 🕸️ Grafos III — Isomorfismo
 
@@ -146,7 +147,9 @@ dg-publish: true
 > 
 > Se aplica la misma estrategia de 4 pasos del Ejercicio 1. La diferencia clave suele estar en un invariante más fino (como el número de triángulos) cuando el número de vértices, aristas y la secuencia de grados coinciden entre ambos candidatos — por eso el curso recalca revisar ciclos de longitud 3 y 4 antes de intentar construir la biyección.
 
-![[ChatGPT Image 18 ago 2026, 18_13_08.png]]
+> [!note] 🖼️ Captura — Ejercicios Resueltos del Curso
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_13_08.png]]
 
 ---
 
@@ -166,13 +169,17 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Son isomorfos $G_1$ y $G_2$?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Son isomorfos $G_1$ y $G_2$
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-02-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-03-graph.svg]]
+> [!note] 🗺️ Diagrama — ️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-03-graph.svg]]
 
 ---
 
@@ -249,7 +256,8 @@ dg-publish: true
 
 ---
 
-> [!quote] 📖 Referencias [1] Pineda, E. (2025). _Isomorfismo de grafos_. Departamento de Matemáticas, FCNM-ESPOL.
+> [!quote] 📖 Referencias [1]
+> Pineda, E. (2025). _Isomorfismo de grafos_. Departamento de Matemáticas, FCNM-ESPOL.
 
 > [!quote] 🔗 Conexiones
 > 

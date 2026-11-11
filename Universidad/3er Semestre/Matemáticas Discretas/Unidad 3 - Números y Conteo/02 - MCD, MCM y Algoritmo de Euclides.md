@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de-numeros, MATG1051, unidad3, ESPOL]
 ---
 # 📐 MCD, MCM y Algoritmo de Euclides
 
@@ -289,7 +290,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-04-graph.svg]]
 
 ---
 
@@ -306,25 +309,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Calculo MCD y MCM de dos números por descomposición en primos.
 > - [ ] Aplico el algoritmo de Euclides para hallar MCD.
 > - [ ] Verifico que MCD(a,b) × LCM(a,b) = a × b.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Uso el algoritmo de Euclides extendido para hallar coeficientes de Bézout.
 > - [ ] Resuelvo ecuaciones diofantineas lineales ax + by = c.
 > - [ ] Calculo MCD y MCM de más de dos números.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Aplico el algoritmo de Euclides extendido para calcular inversos modulares.
 > - [ ] Resuelvo sistemas de congruencias usando el teorema chino del residuo.
 > - [ ] Analizo la complejidad temporal del algoritmo de Euclides.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[01 - Divisibilidad y Números Primos]] — divisibilidad
 > - Siguiente: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]] — conteo

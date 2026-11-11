@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsberg, MATG1051]
 ---
 # 🕸️ Grafos I — Conceptos Básicos y Recorridos
 
@@ -20,7 +21,9 @@ dg-publish: true
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-01-graph.svg]]
 
 
-![[demo-grafo-euler.png]]
+> [!note] 🖼️ Captura — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/demo-grafo-euler.png]]
 
 ---
 
@@ -249,7 +252,9 @@ dg-publish: true
 > 
 > > [!tip]- 💡 Dirac es un caso particular de Ore Si todos los vértices tienen grado $\geq n/2$ (Dirac), entonces cualquier par $u,v$ suma $\geq n$ (Ore). Por eso Dirac se puede deducir de Ore, pero no al revés — Ore es más general.
 
-![[ChatGPT Image 18 ago 2026, 18_00_05.png]]
+> [!note] 🖼️ Captura — Caminos y Ciclos Hamiltonianos
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_00_05.png]]
 
 ---
 
@@ -270,13 +275,17 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de recorrido busco?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-09-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Qué tipo de recorrido busco
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-09-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-10-graph.svg]]
+> [!note] 🗺️ Diagrama — ️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-10-graph.svg]]
 
 ---
 
@@ -353,7 +362,8 @@ dg-publish: true
 
 ---
 
-> [!quote] 📖 Referencias [1] Pineda, E. (2025). _Teoría de grafos — Definiciones básicas_. Departamento de Matemáticas, FCNM-ESPOL.
+> [!quote] 📖 Referencias [1]
+> Pineda, E. (2025). _Teoría de grafos — Definiciones básicas_. Departamento de Matemáticas, FCNM-ESPOL.
 
 > [!quote] 🔗 Conexiones
 > 

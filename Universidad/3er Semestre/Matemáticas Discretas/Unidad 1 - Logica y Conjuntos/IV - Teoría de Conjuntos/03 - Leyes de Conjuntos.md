@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, leyes-de-conjuntos, de-morgan, inclusion-exclusion, demostraciones, MATG1051]
 ---
 
 # ⚖️ Leyes de Conjuntos
@@ -228,7 +229,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-13-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-13-02-graph.svg]]
 
 ---
 
@@ -340,6 +343,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[02 - Operaciones y Diagramas de Venn]]
 > - Siguiente: [[04 - Cardinalidad y Leyes de Cardinalidad]]
+
+---
 
 ## 📚 Referencias
 

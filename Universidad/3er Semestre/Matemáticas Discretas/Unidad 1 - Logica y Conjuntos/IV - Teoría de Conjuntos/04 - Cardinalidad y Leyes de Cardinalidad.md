@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn, MATG1051]
 ---
 
 # 🔢 Cardinalidad y Leyes de Cardinalidad
@@ -117,7 +118,7 @@ dg-publish: true
 >
 > **Diagrama de Venn real** (con los valores del Ejercicio 1: 22 solo M, 14 solo F, 8 ambos, 6 ninguno):
 >
-> ![[venn-2-conjuntos.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/venn-2-conjuntos.png]]
 
 ---
 
@@ -152,7 +153,7 @@ dg-publish: true
 >
 > **Diagrama de Venn real** (con los valores del Ejercicio 2 de deportes: 23, 18, 13, 10, 7, 5, 5, 19 ninguno):
 >
-> ![[venn-3-conjuntos.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/venn-3-conjuntos.png]]
 
 
 ---
@@ -407,30 +408,36 @@ dg-publish: true
 > | Diferencia simétrica | $\lvert A \triangle B\rvert = \lvert A\rvert + \lvert B\rvert - 2\lvert A \cap B\rvert$ |
 > | Conjunto potencia | $\lvert\mathcal{P}(A)\rvert = 2^{\lvert A\rvert}$ |
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-14-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen de Fórmulas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-14-04-graph.svg]]
 
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Calculo |A ∪ B| usando el principio de inclusión-exclusión para 2 conjuntos.
 > - [ ] Extiendo la inclusión-exclusión a 3 conjuntos.
 > - [ ] Determino cardinalidad de diferencias y complementos.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo problemas de conteo usando inclusión-exclusión generalizada.
 > - [ ] Aplico cardinalidad a problemas de encuestas y grupos superpuestos.
 > - [ ] Calculo cardinalidad de productos cartesianos |A × B|.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas complejos de conteo con 4 o más conjuntos.
 > - [ ] Aplico el principio de inclusión-exclusión a problemas de probabilidad.
 > - [ ] Combino cardinalidad con principios de multiplicación y suma.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[03 - Leyes de Conjuntos]] — leyes
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]] — principios de conteo
 > - Relacionado: [[05 - Permutaciones y Combinaciones]] — conteo avanzado

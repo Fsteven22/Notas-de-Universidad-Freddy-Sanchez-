@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, unidad3]
 ---
 # 🔢 Divisibilidad y Números Primos
 
@@ -194,7 +195,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-02-graph.svg]]
 
 ---
 
@@ -208,25 +211,29 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Defino divisibilidad y uso notación a | b.
 > - [ ] Identifico números primos usando criba de Eratóstenes.
 > - [ ] Descompongo un número en factores primos.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Aplico el teorema fundamental de la aritmética.
 > - [ ] Calculo el número de divisores de un entero.
 > - [ ] Uso propiedades de primos para resolver problemas de divisibilidad.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de distribución de primos.
 > - [ ] Analizo algoritmos de primalidad y su complejidad.
 
 ---
 
 > [!quote] 🔗 Conexiones
+> 
 > - Siguiente: [[02 - MCD, MCM y Algoritmo de Euclides]] — divisores comunes
 > - Relacionado: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
 > - Aplicación: [[06 - Teorema del Binomio y Principio del Palomar]]

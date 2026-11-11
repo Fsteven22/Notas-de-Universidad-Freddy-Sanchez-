@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, unidad4, ESPOL]
 ---
 # 📈 Análisis de Algoritmos I — Fundamentos y Funciones Matemáticas
 
@@ -26,6 +27,8 @@ dg-publish: true
 > > - $\Omega$ → cota mínima ("al menos crece así")
 > > - $\Theta$ → crecimiento exacto ("crece exactamente así")
 
+---
+
 ## 🟢 El Atajo de Polinomios (el más común)
 
 > [!note] 📋 Regla rápida
@@ -39,6 +42,8 @@ dg-publish: true
 > **Teorema.** Cualquier polinomio en $n$ de grado $k$ es $\Theta(n^k)$, **aun cuando algunos de sus coeficientes sean negativos** (incluido el líder).
 > 
 > La razón es que la definición formal usa **valor absoluto**: $|f(n)| \leq C_1|g(n)|$. Aunque $f(n)=-4n^3+n^2-5n$ se vuelve negativa para $n$ grande, $|f(n)|$ se comporta como $4n^3$, así que $f(n)=\Theta(n^3)$ sin ninguna salvedad.
+
+---
 
 ## 🎓 Cuándo Piden Demostrar de Verdad ($c_1$, $c_2$, $n_0$ explícitos)
 
@@ -331,7 +336,9 @@ dg-publish: true
 > 
 > Nótese que "$c_1$ agranda / $c_2$ achica" sigue siendo la misma lógica de siempre — lo único distinto es que, al ser $f(n)$ decreciente, "más grande" para el numerador y "más chico" para el denominador todavía producen una cota superior, exactamente como en el ejercicio 4.
 
-![[ChatGPT Image 18 ago 2026, 20_42_23.png]]
+> [!note] 🖼️ Captura — Ejercicio Extra — Cuatro Casos que No Aparecieron Arriba
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_42_23.png]]
 
 ---
 
@@ -341,12 +348,16 @@ dg-publish: true
 > 
 > El siguiente paso es aprender a obtener $\mathcal{O}$, $\Omega$ y $\Theta$ **a partir de pseudocódigo** (contando operaciones en ciclos, recursión, mejor/peor/promedio caso) — eso está en [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]].
 
+---
+
 ## 🔗 Conexiones
 
 > [!note] 📋 Temas relacionados
 > 
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] — segunda parte de esta nota.
 > - [[03 - Pseudocódigo y Algoritmos]] — la sintaxis de los algoritmos que se analizan en la Nota II.
+
+---
 
 ## 📚 Referencias
 
@@ -361,19 +372,22 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Defino notación O, Ω y Θ para complejidad temporal.
 > - [ ] Clasifico algoritmos en O(1), O(log n), O(n), O(n log n), O(n²).
 > - [ ] Cuento operaciones básicas para determinar la complejidad.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Aplico reglas de la O grande (suma, producto, composición).
 > - [ ] Comparo funciones usando límites (regla de L'Hôpital para complejidad).
 > - [ ] Analizo la complejidad de algoritmos con ciclos anidados.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Determino la complejidad exacta de algoritmos recursivos usando recurrencias.
 > - [ ] Aplico teorema maestro para análisis de divide y vencerás.
 > - [ ] Analizo complejidad espacial junto con la temporal.

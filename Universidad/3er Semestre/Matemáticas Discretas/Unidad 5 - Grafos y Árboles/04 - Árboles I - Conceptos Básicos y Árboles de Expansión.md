@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, BFS, DFS, MATG1051]
 ---
 # 🌳 Árboles I — Conceptos Básicos y Árboles de Expansión
 
@@ -229,19 +230,25 @@ dg-publish: true
 > > 
 > > La versión simple de Prim (revisando todas las aristas en cada paso) tiene complejidad $O(n^2)$, adecuada para grafos densos. Con una cola de prioridad (heap), se puede optimizar a $O(m \log n)$, mejor para grafos dispersos. Es uno de los algoritmos "greedy" (voraz) más citados en cursos de estructuras de datos, junto con el algoritmo de Kruskal (que en vez de crecer desde un vértice, ordena todas las aristas por peso y las va agregando si no forman ciclo).
 
-![[ChatGPT Image 18 ago 2026, 18_29_57.png]]
+> [!note] 🖼️ Captura — ️ Árbol de Expansión Mínima y Algoritmo de Prim
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_29_57.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-03-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Estrategia de Elección — Flujograma de Decisión
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-04-graph.svg]]
 
 ---
 

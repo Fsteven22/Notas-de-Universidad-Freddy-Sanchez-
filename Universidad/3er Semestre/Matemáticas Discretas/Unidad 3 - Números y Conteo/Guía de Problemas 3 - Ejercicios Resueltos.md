@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [discretas, unidad3, guia-problemas]
 ---
 
 # 📘 Guía de Problemas 3 - Ejercicios Resueltos
@@ -18,7 +19,9 @@ dg-publish: true
 
 ---
 
-![[Guía de problemas 3.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Guías/Guía de problemas 3.pdf]]
 
 ## 📚 3.1 - Divisibilidad y Números Primos
 
@@ -722,6 +725,8 @@ dg-publish: true
 > - **Bloques y casillas:** agrupar objetos juntos como un bloque, método de las casillas para objetos separados, complemento para "al menos".
 > - **Binomio y palomar:** identidad de Pascal, término general del binomio, estrellas y barras, inclusión–exclusión, principio del palomar con doble conteo.
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
@@ -742,9 +747,13 @@ dg-publish: true
 > - [ ] Detectar y refutar identidades falsas con contraejemplos (Ej. 27).
 > - [ ] Redactar pruebas por palomar con doble conteo (Ej. 24–25).
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-03-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 >

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizacion-universal, generalizacion-existencial, reglas-de-inferencia, MATG1051]
 ---
 
 # 🔢 Reglas de Inferencia para Afirmaciones Cuantificadas
@@ -28,7 +29,10 @@ dg-publish: true
 > | $P(d),\ \text{para toda } d \in D \Rightarrow \forall x \in D : P(x)$ | **Generalización Universal** |
 > | $\exists x \in D : P(x) \Rightarrow P(d),\ \text{para alguna } d \in D$ | **Particularización Existencial** |
 > | $P(d),\ \text{para alguna } d \in D \Rightarrow \exists x \in D : P(x)$ | **Generalización Existencial** |
-![[ChatGPT Image 2 jun 2026, 01_40_53 1.png]]
+
+> [!note] 🖼️ Captura — Tabla de Reglas para Cuantificadores
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 2 jun 2026, 01_40_53 1.png]]
 
 ---
 
@@ -38,6 +42,8 @@ dg-publish: true
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-02-graph.svg]]
 >
 > **Se lee así:** universal baja a caso, casos suben a universal; existencial exige testigo fresco.
+
+---
 
 ## 🔍 Reglas Detalladas
 
@@ -173,7 +179,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-03-graph.svg]]
 
 ---
 

@@ -1,6 +1,9 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dominio, rango, matriz-relacion, inversa, composicion, MATG1051]
 ---
+
+# 🟧 Relaciones
 
 ## 🎯 Introducción
 
@@ -77,7 +80,7 @@ dg-publish: true
 > 
 > $$M_R = \begin{pmatrix} 0&1&0&1&0 \\ 1&0&0&1&0 \\ 0&1&0&0&0 \\ 0&0&0&0&0 \end{pmatrix}$$
 >
-> ![[U2-02-matriz-relacion.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/U2-02-matriz-relacion.png]]
 >
 > *Figura generada con Python (verificada: divisibilidad, dom/rango y matriz coinciden).*
 > 
@@ -188,6 +191,8 @@ dg-publish: true
 >
 > **Se lee así:** tres preguntas sí/no; cada combinación define una familia (orden, equivalencia...).
 
+---
+
 ## 🏷️ Propiedades de Relaciones sobre X
 
 > [!note] 🏷️ Definición 12 — Propiedades (resumen)
@@ -292,7 +297,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-05-graph.svg]]
 
 ---
 

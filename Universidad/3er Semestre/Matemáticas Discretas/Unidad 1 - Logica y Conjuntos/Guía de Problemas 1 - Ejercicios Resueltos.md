@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, guia-problemas, logica, conjuntos, induccion, demostraciones, MATG1051]
 ---
 
 # 📝 Guía de Problemas 1 — Ejercicios Resueltos
@@ -17,7 +18,9 @@ dg-publish: true
 
 ---
 
-![[GUÍA 1 DE PROBLEMAS.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Guías/GUÍA 1 DE PROBLEMAS.pdf]]
 
 ## 🔌 1.1 — Proposiciones, Tablas de Verdad y Circuitos
 
@@ -759,11 +762,11 @@ dg-publish: true
 > 
 > Como $\dfrac{(k+1)(k-2)}{2} = \dfrac{(k+1)((k+1)-3)}{2}$, que es exactamente la fórmula para $n = k+1$. $\blacksquare$
 > 
-> ![[Pasted image 20260613145551.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145551.png]]
 > 
-> ![[Pasted image 20260613145600.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145600.png]]
 > 
-> ![[Pasted image 20260613145618.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145618.png]]
 > 
 >
 > >[!note] 📌 Nota — Lo que muestran las imágenes
@@ -884,32 +887,42 @@ dg-publish: true
 ---
 
 > [!summary] 📋 Resumen
+> 
 > - Simplificación booleana con De Morgan, absorción, distributiva e idempotencia para reducir circuitos a su mínima expresión (Ej. 1–6).
 > - Tablas de verdad para evaluar fórmulas, clasificar contingencias y verificar equivalencias como $p \to q \equiv \neg p \lor q$ (Ej. 4–6).
 > - Reglas de inferencia (Modus Ponens, Modus Tollens, silogismo disyuntivo) y reducción al absurdo para validar argumentos (Ej. 8–12).
 > - Cuantificadores con contraejemplos y análisis de discriminante, cotas y paridad para decidir valores de verdad (Ej. 13–14).
 > - Inducción matemática y doble contención con álgebra de conjuntos para sumas, divisibilidad y demostraciones conjuntistas (Ej. 15–28).
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+> 
 > - [ ] Leo un circuito y escribo su expresión booleana con NOT, AND y OR.
 > - [ ] Construyo tablas de verdad y clasifico una fórmula como tautología, contradicción o contingencia.
 > - [ ] Aplico De Morgan y doble negación en proposiciones y conjuntos.
 
 > [!note] 🎯 Nivel Intermedio
+> 
 > - [ ] Simplifico expresiones con absorción, distributiva e idempotencia hasta su forma mínima.
 > - [ ] Formalizo argumentos y los valido con Modus Ponens, Modus Tollens y resolución.
 > - [ ] Decido el valor de verdad de proposiciones cuantificadas con contraejemplos.
 
 > [!note] 🎯 Nivel Avanzado
+> 
 > - [ ] Estructuro demostraciones por inducción con base, hipótesis y paso inductivo.
 > - [ ] Demuestro igualdades de conjuntos por doble contención y por álgebra de conjuntos.
 > - [ ] Combino técnicas para resolver problemas nuevos de lógica y conjuntos sin guía.
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-02-01-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[GUÍA 1 DE PROBLEMAS.pdf]] en Unidad 0 - Guias y Ejercicios.
@@ -917,6 +930,7 @@ dg-publish: true
 > - R. Johnsonbaugh, _Discrete Mathematics_, 8th ed., Pearson, 2017.
 
 > [!quote] 🔗 Conexiones
+> 
 > - Lógica proposicional: [[01 - Proposiciones y conectivos|Proposiciones y circuitos]] — base de los Ej. 1–6.
 > - Condicionales: [[02 - Proposiciones Condicionales y Equivalencia Lógica]] — base de los Ej. 7–12.
 > - Inferencia: [[01 - Reglas de Inferencia]] y [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]] — reglas usadas en Ej. 8–12.

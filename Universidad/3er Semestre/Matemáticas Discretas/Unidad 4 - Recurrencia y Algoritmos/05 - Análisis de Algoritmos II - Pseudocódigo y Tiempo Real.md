@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051, unidad4, ESPOL]
 ---
 # ⏱️ Análisis de Algoritmos II — Pseudocódigo y Tiempo Real
 
@@ -521,7 +522,9 @@ dg-publish: true
 > 
 > A partir de $n\approx50$, un algoritmo $\Theta(2^n)$ ya es impracticable; los algoritmos $\Theta(n!)$ se vuelven inviables incluso antes. Esta es la razón práctica detrás de todo el trabajo de las dos notas: **la notación asintótica predice, sin ejecutar nada, si un algoritmo será usable para el tamaño de entrada que te interesa.**
 
-![[ChatGPT Image 18 ago 2026, 20_44_56.png]]
+> [!note] 🖼️ Captura — De la Notación Asintótica al Tiempo Real
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_44_56.png]]
 
 ---
 
@@ -532,6 +535,8 @@ dg-publish: true
 > - [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] — primera parte: cómo obtener las cotas a partir de una fórmula $f(n)$ ya dada.
 > - [[03 - Pseudocódigo y Algoritmos]] — la sintaxis de los algoritmos analizados aquí.
 > - [[01 - Relaciones de Recurrencia]] — la recurrencia de Fibonacci reaparece en el ejemplo de la caminata del robot.
+
+---
 
 ## 📚 Referencias
 
@@ -548,19 +553,22 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Analizo algoritmos de búsqueda lineal y binaria.
 > - [ ] Analizo algoritmos de ordenamiento (bubble, selection, insertion).
 > - [ ] Determino peor caso, mejor caso y caso promedio.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Analizo algoritmos de ordenamiento eficientes (merge sort, quicksort).
 > - [ ] Comparo algoritmos de ordenamiento por complejidad.
 > - [ ] Identifico el caso promedio y su relación con el peor caso.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Analizo algoritmos de grafos (BFS, DFS) y su complejidad.
 > - [ ] Aplico análisis amortizado a estructuras de datos (pilas, colas).
 > - [ ] Resuelvo problemas de diseño de algoritmos óptimos.
