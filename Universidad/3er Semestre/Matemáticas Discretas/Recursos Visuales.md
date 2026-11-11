@@ -72,3 +72,6 @@ tags: [recursos-visuales, matematicas-discretas]
 ## 🔗 Ver también
 
 - `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.
+
+https://drive.google.com/drive/folders/1HyhhdEIVPhcZNs1u3AJrfGdDKZ35f44p EXAMENES ANTERIORES MATDIS
+https://workdrive.zohoexternal.com/folder/73t6j666a8a75fe5c4eeaa4cafa4d06a6352c?layout=list Clases virtuales grabadas

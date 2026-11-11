@@ -9,7 +9,7 @@ dg-publish: true
 > 
 > Esta nota cubre las dos últimas herramientas del capítulo de conteo:
 > 
-> ![[../Diagramas/dis-u3-07-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-07-01-graph.svg]]
 
 ---
 

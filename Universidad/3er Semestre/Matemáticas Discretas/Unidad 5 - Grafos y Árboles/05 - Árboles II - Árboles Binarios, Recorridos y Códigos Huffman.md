@@ -13,7 +13,7 @@ dg-publish: true
 > 
 > **Aplicaciones modernas:** compresión de archivos (ZIP, JPEG usan variantes de Huffman), bases de datos e índices, autocompletado y diccionarios, árboles de decisión en machine learning, y expresiones aritméticas en compiladores (donde los recorridos preorden/entreorden/postorden generan notación prefija, infija y postfija respectivamente).
 > 
-> ![[../Diagramas/dis-u5-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-01-graph.svg]]
 
 ---
 
@@ -179,13 +179,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u5-06-02-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-02-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-![[../Diagramas/dis-u5-06-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-03-graph.svg]]
 
 ---
 

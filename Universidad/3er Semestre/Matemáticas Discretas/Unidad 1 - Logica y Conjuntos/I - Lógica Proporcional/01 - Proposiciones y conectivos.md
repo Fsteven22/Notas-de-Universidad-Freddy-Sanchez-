@@ -19,7 +19,7 @@ dg-publish: true
 > 
 > Sus técnicas son especialmente útiles en **computación** y **ciencias de la información**.
 >
-> ![[../../Diagramas/dis-u1-03-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-01-graph.svg]]
 >
 > **En esta nota:** qué cuenta como proposición (y qué no: preguntas, órdenes, predicados abiertos), los 5 conectivos con su tabla, y cómo leer tautologías y contradicciones — la base de todo el curso.
 >
@@ -95,7 +95,7 @@ dg-publish: true
 
 > [!note] 🗺️ Mapa — ¿Cuándo es verdadero cada conectivo?
 >
-> ![[../../Diagramas/dis-u1-03-02-flow.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-02-flow.svg]]
 >
 > **Se lee así:** memoriza el único caso que rompe cada conectivo; todo lo demás es el caso contrario.
 
@@ -274,7 +274,7 @@ dg-publish: true
 
 > [!note] 📋 Resumen de Contectivos
 > 
-> ![[../../Diagramas/dis-u1-03-03-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-03-graph.svg]]
 > 
 > | Conectivo            | Símbolo               | Nombre               | Falso cuando...              |
 > | -------------------- | --------------------- | -------------------- | ---------------------------- |
@@ -434,7 +434,7 @@ dg-publish: true
 > 
 > Los **circuitos combinatorios** (o circuitos lógicos) son sistemas digitales cuya salida depende **únicamente** de los valores actuales de las entradas. Están construidos con **compuertas lógicas** que implementan directamente los conectivos de la lógica proposicional.
 > 
-> ![[../../Diagramas/dis-u1-03-04-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-04-graph.svg]]
 
 ### 🔌 Compuertas Lógicas Básicas
 
@@ -548,7 +548,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-03-05-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-05-graph.svg]]
 
 ---
 

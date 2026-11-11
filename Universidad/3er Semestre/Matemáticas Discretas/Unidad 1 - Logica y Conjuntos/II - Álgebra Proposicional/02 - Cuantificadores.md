@@ -21,7 +21,7 @@ dg-publish: true
 > 
 > Para poder trabajar con este tipo de enunciados necesitamos las **funciones proposicionales** y los **cuantificadores**.
 >
-> ![[../../Diagramas/dis-u1-06-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-01-graph.svg]]
 >
 > **En esta nota:** funciones proposicionales y dominios, $\forall$/$\exists$/$\exists!$ con negación (De Morgan cuantificado), orden de cuantificadores y el error clásico: negar $\forall$ como $\forall\neg$ en vez de $\exists\neg$.
 
@@ -218,7 +218,7 @@ dg-publish: true
 
 > [!note] 🔄 Mapa — Negar cuantificadores
 >
-> ![[../../Diagramas/dis-u1-06-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-02-graph.svg]]
 >
 > **Se lee así:** negar intercambia el cuantificador y niega adentro; el orden nunca se permuta gratis.
 
@@ -432,7 +432,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-06-03-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-03-graph.svg]]
 
 ---
 

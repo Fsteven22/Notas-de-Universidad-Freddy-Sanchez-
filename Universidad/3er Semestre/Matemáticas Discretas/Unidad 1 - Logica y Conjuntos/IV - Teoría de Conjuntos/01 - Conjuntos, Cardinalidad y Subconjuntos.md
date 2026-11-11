@@ -10,7 +10,7 @@ dg-publish: true
 >
 > La **Teoría de Conjuntos** es la base formal de las Matemáticas Discretas. Un conjunto es la estructura más fundamental sobre la que se construyen relaciones, funciones y estructuras más complejas.
 >
-> ![[../../Diagramas/dis-u1-11-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-11-01-graph.svg]]
 >
 > | Concepto | Descripción breve |
 > |---|---|
@@ -214,7 +214,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-11-02-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-11-02-graph.svg]]
 
 ---
 

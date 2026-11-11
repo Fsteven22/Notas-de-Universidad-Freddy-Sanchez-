@@ -243,7 +243,7 @@ dg-publish: true
 >
 > **Paso 2 — Conexión con Fibonacci:** Con $F_1 = 1$, $F_2 = 1$, $F_{k} = F_{k-1} + F_{k-2}$, se tiene $a_n = F_{n+1}$.
 >
-> ![[../Diagramas/dis-u4-07-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-07-01-graph.svg]]
 >
 > **Paso 3 — Fórmula explícita (Binet):** La ecuación característica $t^2 - t - 1 = 0$ tiene raíces $\phi = \frac{1+\sqrt{5}}{2}$ y $\psi = \frac{1-\sqrt{5}}{2}$. Con $a_1 = 1$, $a_2 = 2$:
 >
@@ -493,7 +493,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u4-07-02-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-07-02-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 > - Previo: [[01 - Relaciones de Recurrencia]] — definición y método iterativo

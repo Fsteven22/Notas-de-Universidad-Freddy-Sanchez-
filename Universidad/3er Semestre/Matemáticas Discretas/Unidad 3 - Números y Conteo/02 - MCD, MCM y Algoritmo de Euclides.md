@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Imagina dos engranajes con $30$ y $105$ dientes. El MCD es el tamaño del engranaje auxiliar más grande que encaja perfectamente en ambos. El MCM es el número mínimo de dientes que deben girar para que ambos engranajes vuelvan simultáneamente a su posición inicial.
 > 
-> ![[../Diagramas/dis-u3-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -234,7 +234,7 @@ dg-publish: true
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[../Diagramas/dis-u3-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-02-graph.svg]]
 > 
 > ---
 > 
@@ -262,7 +262,7 @@ dg-publish: true
 > |**Factorización prima**|Factorizar ambos, tomar mínimos exponentes|Se necesita también el MCM|
 > |**Algoritmo de Euclides**|Divisiones sucesivas hasta residuo $0$|Números grandes, solo se necesita el MCD|
 > 
-> ![[../Diagramas/dis-u3-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-03-graph.svg]]
 
 ---
 
@@ -289,7 +289,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-03-04-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-04-graph.svg]]
 
 ---
 

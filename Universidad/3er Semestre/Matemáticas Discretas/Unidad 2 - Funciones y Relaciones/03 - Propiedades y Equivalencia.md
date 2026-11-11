@@ -10,13 +10,13 @@ dg-publish: true
 > 
 > Dos tipos especiales de relaciones sobre X surgen de combinar las cuatro propiedades básicas de maneras distintas. La **relación de equivalencia** generaliza la idea de igualdad; la **relación de orden** generaliza la idea de "menor o igual que".
 > 
-> ![[../Diagramas/dis-u2-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-01-graph.svg]]
 
 ---
 
 > [!note] 📋 Mapa — Orden vs equivalencia
 >
-> ![[../Diagramas/dis-u2-04-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-02-graph.svg]]
 >
 > **Se lee así:** reflexiva + transitiva es la base; la tercera propiedad decide la familia.
 
@@ -113,7 +113,7 @@ dg-publish: true
 
 > [!note] 🧩 Mapa — Partición ↔ equivalencia
 >
-> ![[../Diagramas/dis-u2-04-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-03-graph.svg]]
 >
 > **Se lee así:** partir y equivaler son lo mismo visto de dos lados; el cociente reúne las clases.
 
@@ -187,7 +187,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-04-04-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-04-graph.svg]]
 
 ---
 

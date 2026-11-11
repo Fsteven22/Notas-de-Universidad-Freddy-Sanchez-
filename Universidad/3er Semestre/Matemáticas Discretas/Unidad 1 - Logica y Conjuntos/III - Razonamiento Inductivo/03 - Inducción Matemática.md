@@ -12,7 +12,7 @@ dg-publish: true
 >
 > **La idea en 1 imagen (dominó):** tumbar infinitas fichas una por una es imposible; basta probar 2 cosas: que cae la **primera** (base) y que **cada ficha tumba a la siguiente** (paso). Con eso, caen todas sin tocarlas una por una.
 >
-> ![[../../Diagramas/dis-u1-10-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-01-graph.svg]]
 >
 > **Dónde la usarás en esta nota:**
 >
@@ -87,7 +87,7 @@ dg-publish: true
 
 > [!note] 📋 Cómo reconocer cada caso
 >
-> ![[../../Diagramas/dis-u1-10-02-flow.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-02-flow.svg]]
 >
 > ### Caso 1 — Sumatorias (el clásico)
 >
@@ -320,7 +320,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-10-03-flow.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-03-flow.svg]]
 
 ---
 

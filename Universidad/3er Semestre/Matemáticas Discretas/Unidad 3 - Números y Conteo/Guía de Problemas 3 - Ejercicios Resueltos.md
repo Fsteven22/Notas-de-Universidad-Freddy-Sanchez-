@@ -356,7 +356,7 @@ dg-publish: true
 > - Paraguas: 4 opciones.
 > - Sombrero: 2 sombreros + no llevar ninguno = 3 opciones.
 >
-> ![[../Diagramas/dis-u3-08-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-01-graph.svg]]
 >
 > $$3 \cdot 4 \cdot 3 = 36$$
 >
@@ -564,7 +564,7 @@ dg-publish: true
 >
 > **Supuesto:** Los jugadores llevan dorsales $1$–$12$ (uno cada uno) y se suma el dorsal.
 >
-> ![[../Diagramas/dis-u3-08-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-02-graph.svg]]
 >
 > **Paso 1 — Supuesto de contradicción:** cada terna de consecutivos suma $\leq 19$.
 >
@@ -744,7 +744,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-08-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-03-graph.svg]]
 
 > [!quote] 🔗 Conexiones
 >

@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Imagina que quieres repartir $72$ caramelos en grupos iguales. ¿En cuántos grupos diferentes puedes hacerlo sin que sobre ninguno? Eso es divisibilidad: $72$ es divisible por $1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72$ — exactamente $12$ formas.
 > 
-> ![[../Diagramas/dis-u3-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -194,7 +194,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-02-02-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-02-graph.svg]]
 
 ---
 

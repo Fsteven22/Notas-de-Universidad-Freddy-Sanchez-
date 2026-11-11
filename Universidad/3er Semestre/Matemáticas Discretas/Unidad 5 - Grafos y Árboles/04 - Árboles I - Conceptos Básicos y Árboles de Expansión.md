@@ -13,7 +13,7 @@ dg-publish: true
 > 
 > **Aplicaciones modernas:** sistemas de archivos (carpetas y subcarpetas), bases de datos (índices B-tree), inteligencia artificial (árboles de decisión, minimax en juegos), redes de telecomunicaciones (árboles de expansión mínima para tender cableado al menor costo), y compresión de datos (códigos Huffman — tema que ya viste en Computación y Sociedad, y al que volveremos en la nota [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman|Árboles II]]).
 > 
-> ![[../Diagramas/dis-u5-05-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-01-graph.svg]]
 
 ---
 
@@ -33,7 +33,7 @@ dg-publish: true
 > 
 > Dado el árbol $T$ con vértices $v_1, \ldots, v_7$, si se elige $v_1$ como raíz:
 > 
-> ![[../Diagramas/dis-u5-05-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-02-graph.svg]]
 > 
 > - $v_1$ está en el **nivel 0**
 > - $v_2$ y $v_3$ están en el **nivel 1**
@@ -235,13 +235,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u5-05-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-03-graph.svg]]
 
 ---
 
 ## 🧭 Estrategia de Elección — Flujograma de Decisión
 
-![[../Diagramas/dis-u5-05-04-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-04-graph.svg]]
 
 ---
 

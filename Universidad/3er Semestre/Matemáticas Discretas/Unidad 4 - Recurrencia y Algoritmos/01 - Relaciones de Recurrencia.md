@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Una relación de recurrencia es como una receta de cocina que dice "para preparar la porción $n$, toma la porción $n-1$ y agrégale un ingrediente". Sin saber cómo se ve la primera porción (condición inicial), no puedes reconstruir ninguna de las siguientes.
 > 
-> ![[../Diagramas/dis-u4-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -79,7 +79,7 @@ dg-publish: true
 > 
 > El **método iterativo** consiste en sustituir repetidamente la relación en sí misma hasta detectar un patrón generalizable.
 > 
-> ![[../Diagramas/dis-u4-02-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-02-graph.svg]]
 > 
 > ### 🧮 Ejemplo resuelto — interés compuesto
 > 
@@ -131,7 +131,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u4-02-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-03-graph.svg]]
 
 ---
 

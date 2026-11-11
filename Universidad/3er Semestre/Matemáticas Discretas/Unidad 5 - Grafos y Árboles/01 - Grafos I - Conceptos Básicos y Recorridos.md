@@ -17,7 +17,7 @@ dg-publish: true
 > - Diseño de circuitos y planificación de tareas (dependencias entre procesos)
 > - Biología computacional (redes de interacción de proteínas)
 > 
-> ![[../Diagramas/dis-u5-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-01-graph.svg]]
 
 
 ![[demo-grafo-euler.png]]
@@ -78,7 +78,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 1 — Identificando lazos, aristas paralelas y vértices aislados
 > 
-> ![[../Diagramas/dis-u5-02-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-02-graph.svg]]
 > 
 > - $e_3$ es un **lazo** (incide dos veces en $v_2$).
 > - $e_1$ y $e_2$ son **aristas paralelas** (ambas unen $v_1$ con $v_2$).
@@ -108,7 +108,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 2 — $K_4$
 > 
-> ![[../Diagramas/dis-u5-02-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-03-graph.svg]]
 > 
 > $K_4$ tiene $4$ vértices y $\binom{4}{2} = 6$ aristas — todos los pares están conectados.
 
@@ -124,11 +124,11 @@ dg-publish: true
 > 
 > **Bipartito** (con $V_1 = {v_1, v_2, v_3}$, $V_2 = {v_4, v_5}$):
 > 
-> ![[../Diagramas/dis-u5-02-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-04-graph.svg]]
 > 
 > **No bipartito** (contiene un ciclo de longitud impar):
 > 
-> ![[../Diagramas/dis-u5-02-05-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-05-graph.svg]]
 > 
 > $K_4$ tampoco es bipartito — inténtalo probar por qué.
 
@@ -165,7 +165,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 4 — Trayectorias, ciclos y grados
 > 
-> ![[../Diagramas/dis-u5-02-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-06-graph.svg]]
 > 
 > - $(v_1, e_2, v_2, e_4, v_3)$ es una **trayectoria simple** de $v_1$ a $v_3$.
 >     
@@ -197,7 +197,7 @@ dg-publish: true
 > 
 > El primer artículo de teoría de grafos fue de **Leonhard Euler en 1736**. Dos islas en el río Pregel en Königsberg estaban conectadas entre sí y con las orillas por **7 puentes**. El problema: comenzar en cualquier lugar ($A$, $B$, $C$ o $D$), cruzar cada puente **exactamente una vez** y regresar al punto de inicio.
 > 
-> ![[../Diagramas/dis-u5-02-07-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-07-graph.svg]]
 > 
 > Al modelar el problema como grafo (vértices = regiones de tierra, aristas = puentes), se reduce a encontrar un **ciclo de Euler**. Como algunos vértices tienen grado impar, **el problema no tiene solución** — este fue precisamente el resultado que Euler demostró.
 
@@ -213,7 +213,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 5 — Ciclo hamiltoniano
 > 
-> ![[../Diagramas/dis-u5-02-08-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-08-graph.svg]]
 > 
 > El ciclo $(v_1, v_2, v_5, v_3, v_4, v_1)$ es un **ciclo hamiltoniano** — pasa por todos los vértices exactamente una vez y regresa al inicio. El grafo tiene además varios caminos hamiltonianos posibles.
 
@@ -270,13 +270,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de recorrido busco?
 
-![[../Diagramas/dis-u5-02-09-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-09-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Diagramas/dis-u5-02-10-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-10-graph.svg]]
 
 ---
 

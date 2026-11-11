@@ -909,7 +909,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u1-02-01-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-02-01-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[GUÍA 1 DE PROBLEMAS.pdf]] en Unidad 0 - Guias y Ejercicios.

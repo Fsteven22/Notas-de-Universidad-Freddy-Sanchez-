@@ -8,7 +8,7 @@ dg-publish: true
 > 
 > Una **relación** es una generalización de las funciones: también es un subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] X × Y, pero **sin** la restricción de unicidad. Permite asociar un elemento de X con cero, uno o varios elementos de Y. Toda función es una relación, pero no toda relación es una función.
 > 
-> ![[../Diagramas/dis-u2-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-01-graph.svg]]
 
 ---
 
@@ -141,7 +141,7 @@ dg-publish: true
 > 
 > $$R = \{(2,4),(2,6),(3,3),(3,6),(4,4)\}$$
 > 
-> ![[../Diagramas/dis-u2-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-02-graph.svg]]
 > 
 > El 8 no tiene ninguna flecha saliente porque ningún elemento de Y es múltiplo de 8. El 5 y el 7 no reciben flechas porque ningún elemento de X los divide.
 
@@ -163,7 +163,7 @@ dg-publish: true
 > 
 > Sea X = {1, 3, 4} y R₁ = {(1,1),(1,3),(3,1),(3,3),(4,4)}:
 > 
-> ![[../Diagramas/dis-u2-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-03-graph.svg]]
 > 
 > - Los lazos en 1, 3 y 4 indican **reflexividad**.
 > - Las flechas (1→3) y (3→1) en ambos sentidos indican **simetría** en ese par.
@@ -184,7 +184,7 @@ dg-publish: true
 
 > [!note] 🏷️ Mapa — Reflexiva, simétrica, transitiva
 >
-> ![[../Diagramas/dis-u2-03-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-04-graph.svg]]
 >
 > **Se lee así:** tres preguntas sí/no; cada combinación define una familia (orden, equivalencia...).
 
@@ -292,7 +292,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-03-05-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-05-graph.svg]]
 
 ---
 

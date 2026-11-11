@@ -16,7 +16,7 @@ dg-publish: true
 > - Redes de telecomunicaciones (matrices de adyacencia para representar conexiones)
 > - Diseño de circuitos impresos (minimizar el recorrido de un taladro entre agujeros, como en el ejemplo de la hoja de metal)
 > 
-> ![[../Diagramas/dis-u5-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-01-graph.svg]]
 
 ---
 
@@ -36,7 +36,7 @@ dg-publish: true
 > 
 > Grafo original $G$ con vértices ${v_1,\ldots,v_8}$ y aristas ${e_1,\ldots,e_{11}}$. Un subgrafo $G'$ válido puede tomar solo algunas aristas y sus vértices incidentes, por ejemplo:
 > 
-> ![[../Diagramas/dis-u5-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-02-graph.svg]]
 > 
 > $G'$ conserva únicamente ${v_1,v_3,v_4,v_6,v_7}$ y las aristas ${e_5,e_8,e_{10},e_{11}}$ — cada arista incluida trae consigo sus dos vértices.
 
@@ -53,7 +53,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 2 — Grafo disconexo y sus componentes
 > 
-> ![[../Diagramas/dis-u5-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-03-graph.svg]]
 > 
 > Este grafo **no es conexo**: tiene 3 componentes:
 > 
@@ -202,13 +202,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué algoritmo necesito?
 
-![[../Diagramas/dis-u5-03-04-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-04-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Diagramas/dis-u5-03-05-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-05-graph.svg]]
 
 ---
 

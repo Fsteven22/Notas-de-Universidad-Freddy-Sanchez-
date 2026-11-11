@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Así como los números tienen operaciones (suma, resta, multiplicación), los conjuntos tienen sus propias operaciones que permiten combinarlos o compararlos. Estas operaciones son la base del álgebra de conjuntos.
 >
-> ![[../../Diagramas/dis-u1-12-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-01-graph.svg]]
 >
 > | Operación | Símbolo | Descripción breve |
 > |---|---|---|
@@ -171,7 +171,7 @@ dg-publish: true
 >
 > ### Diagramas de Venn para 2 conjuntos
 >
-> ![[../../Diagramas/dis-u1-12-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-02-graph.svg]]
 >
 > | Operación | Región sombreada |
 > |---|---|
@@ -262,7 +262,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-12-03-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-03-graph.svg]]
 
 ---
 

@@ -1,8 +1,7 @@
 ---
 dg-publish: true
 ---
-# 🔣 Criterios de [[01 - Divisibilidad y Números Primos|Divisibilidad]] y Sistemas de Numeración
-
+# 🔣 Criterios de Divisibilidad y Sistemas de Numeración
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por qué son útiles estos temas?
@@ -17,7 +16,7 @@ dg-publish: true
 > 
 > Un criterio de divisibilidad es como mirar solo el último dígito de un precio para saber si es divisible entre 2 o 5, sin necesidad de hacer la división. Y un sistema de numeración es como cambiar de moneda: el valor es el mismo, solo cambia la forma de representarlo.
 > 
-> ![[../Diagramas/dis-u3-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -137,7 +136,7 @@ dg-publish: true
 > 
 > Se divide repetidamente el número entre $b$. Los **residuos leídos de abajo hacia arriba** forman la representación en base $b$.
 > 
-> ![[../Diagramas/dis-u3-04-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-02-graph.svg]]
 > 
 > **Ejemplo — decimal 146 a binario:**
 > 
@@ -194,13 +193,13 @@ dg-publish: true
 > |Binario → hexadecimal|Agrupar bits de 4 en 4|Cada grupo de 4 bits = 1 dígito hex|
 > |Hexadecimal → binario|Expandir cada dígito|Cada dígito hex = 4 bits|
 > 
-> ![[../Diagramas/dis-u3-04-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-03-graph.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-04-04-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-04-graph.svg]]
 
 ---
 

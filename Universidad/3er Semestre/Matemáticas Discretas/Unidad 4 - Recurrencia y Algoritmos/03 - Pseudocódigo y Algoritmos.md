@@ -12,7 +12,7 @@ dg-publish: true
 > - Esta nota cubre la **sintaxis básica** (asignación, `if`, `while`, `for`, funciones) y la noción formal de **algoritmo**.
 > - Se conecta con [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] y [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]], donde estos mismos algoritmos se analizan para obtener sus cotas asintóticas.
 > 
-> ![[../Diagramas/dis-u4-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-04-01-graph.svg]]
 
 ---
 
@@ -210,8 +210,7 @@ dg-publish: true
 
 ---
 
-## 🎓 Ejemplos Avanzados: [[02 - Cuantificadores|Cuantificadores]] Lógicos
-
+## 🎓 Ejemplos Avanzados: Cuantificadores Lógicos
 > [!example] 🟢 Valor lógico de $\forall x: P(x)$
 > 
 > Sea $P$ una función proposicional cuyo dominio de discurso son $d_1,\dots,d_n$:

@@ -11,7 +11,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > 
 > La distinción fundamental en conteo es si el **orden de selección importa** o no:
 > 
-> ![[../Diagramas/dis-u3-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-06-01-graph.svg]]
 
 ---
 

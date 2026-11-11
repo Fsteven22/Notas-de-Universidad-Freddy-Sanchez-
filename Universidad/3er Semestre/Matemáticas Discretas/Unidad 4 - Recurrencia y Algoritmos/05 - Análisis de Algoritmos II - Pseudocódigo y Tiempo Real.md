@@ -9,7 +9,7 @@ dg-publish: true
 > 
 > En [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] obtuvimos $\mathcal{O}$, $\Omega$ y $\Theta$ a partir de una **fórmula $f(n)$ ya dada**. Aquí el punto de partida es distinto: un **algoritmo en seudocódigo** (ver [[03 - Pseudocódigo y Algoritmos]]), y el trabajo consiste en **contar cuántas veces se ejecuta una instrucción clave**, para luego acotar esa cuenta asintóticamente — incluyendo algoritmos recursivos.
 > 
-> ![[../Diagramas/dis-u4-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-06-01-graph.svg]]
 
 ---
 

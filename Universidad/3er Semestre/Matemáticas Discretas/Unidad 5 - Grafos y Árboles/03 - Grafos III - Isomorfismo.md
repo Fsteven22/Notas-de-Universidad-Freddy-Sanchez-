@@ -16,7 +16,7 @@ dg-publish: true
 > - Comparación de redes (¿esta red social tiene la misma estructura que aquella?)
 > - Criptografía: el problema de isomorfismo de grafos es la base de algunos esquemas de conocimiento cero
 > 
-> ![[../Diagramas/dis-u5-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-01-graph.svg]]
 
 ---
 
@@ -166,13 +166,13 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Son isomorfos $G_1$ y $G_2$?
 
-![[../Diagramas/dis-u5-04-02-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-02-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Diagramas/dis-u5-04-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-03-graph.svg]]
 
 ---
 

@@ -240,11 +240,11 @@ dg-publish: true
 > 
 > El diagrama sagital tiene dos copias del [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] $A$ (dominio a la izquierda, codominio a la derecha), con flechas de $x$ a $y$ para cada $(x,y) \in R$:
 > 
-> ![[../Diagramas/dis-u2-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-01-graph.svg]]
 > 
 > **(b) Digrafo:** Nodos: 2, 3, 5, 6, 9, 15. Aristas reflexivas en todos; aristas adicionales: $2\to6$, $3\to6$, $3\to9$, $3\to15$, $5\to15$.
 > 
-> ![[../Diagramas/dis-u2-06-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-02-graph.svg]]
 > 
 > **(c) Matriz relativa al orden $2,3,5,6,9,15$:**
 > 
@@ -790,7 +790,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-06-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-03-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[Guía de problemas 2.pdf]] en Unidad 0 - Guias y Ejercicios.

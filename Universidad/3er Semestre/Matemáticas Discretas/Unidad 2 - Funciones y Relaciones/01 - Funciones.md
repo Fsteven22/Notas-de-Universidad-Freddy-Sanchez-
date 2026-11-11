@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Una **función** es un caso especial de relación entre dos conjuntos: una regla que asigna a cada elemento del dominio **exactamente un** elemento del codominio. Formalmente, es cualquier subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] con una restricción de unicidad.
 > 
-> ![[../Diagramas/dis-u2-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-02-01-graph.svg]]
 
 ---
 
@@ -49,7 +49,7 @@ dg-publish: true
 
 > [!note] 🔍 Mapa — Inyectiva, sobreyectiva, biyectiva
 >
-> ![[../Diagramas/dis-u2-02-02-flow.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-02-02-flow.svg]]
 >
 > **Se lee así:** dos preguntas independientes; biyectiva exige sí en ambas.
 
@@ -368,7 +368,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-02-03-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-02-03-graph.svg]]
 
 ---
 

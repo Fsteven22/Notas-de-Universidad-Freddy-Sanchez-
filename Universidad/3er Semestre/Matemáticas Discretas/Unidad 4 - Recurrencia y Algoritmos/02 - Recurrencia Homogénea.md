@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Resolver una recurrencia con la ecuación característica es como usar una llave maestra: en vez de ir probando manualmente término por término (método iterativo), planteas una ecuación cuadrática, la resuelves una sola vez, y esa solución abre la fórmula para _cualquier_ $n$.
 > 
-> ![[../Diagramas/dis-u4-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-03-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -128,7 +128,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u4-03-02-graph.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-03-02-graph.svg]]
 
 ---
 

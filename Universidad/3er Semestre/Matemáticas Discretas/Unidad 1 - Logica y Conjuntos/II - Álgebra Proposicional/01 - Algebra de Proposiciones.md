@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Ya conocemos las leyes (de las notas de Lógica Proposicional). Ahora las usamos para **transformar** una proposición en otra equivalente, paso a paso y citando la ley de cada paso.
 >
-> ![[../../Diagramas/dis-u1-05-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-05-01-graph.svg]]
 >
 > **En esta nota:** tabla de leyes de referencia, formato estándar de demostración algebraica y errores típicos (aplicar De Morgan a medias, olvidar la doble negación).
 > 
@@ -190,7 +190,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-05-02-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-05-02-graph.svg]]
 
 ---
 

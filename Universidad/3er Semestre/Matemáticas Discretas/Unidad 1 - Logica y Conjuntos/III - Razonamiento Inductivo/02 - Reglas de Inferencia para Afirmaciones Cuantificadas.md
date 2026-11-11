@@ -2,8 +2,7 @@
 dg-publish: true
 ---
 
-# 🔢 [[01 - Reglas de Inferencia|Reglas de Inferencia]] para Afirmaciones Cuantificadas
-
+# 🔢 Reglas de Inferencia para Afirmaciones Cuantificadas
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por qué necesitamos reglas cuantificadas?
@@ -12,7 +11,7 @@ dg-publish: true
 > 
 > Estas reglas combinan naturalmente con las reglas proposicionales para construir argumentos más complejos.
 >
-> ![[../../Diagramas/dis-u1-09-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-01-graph.svg]]
 >
 > **En esta nota:** las 4 reglas con su restricción (el testigo existencial debe ser **nuevo**, no usado antes), combinadas con MP/MT, y el error clásico: generalizar desde un caso particular.
 >
@@ -36,7 +35,7 @@ dg-publish: true
 
 > [!note] 🔍 Mapa — Las 4 direcciones
 >
-> ![[../../Diagramas/dis-u1-09-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-02-graph.svg]]
 >
 > **Se lee así:** universal baja a caso, casos suben a universal; existencial exige testigo fresco.
 
@@ -174,7 +173,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-09-03-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-03-graph.svg]]
 
 ---
 

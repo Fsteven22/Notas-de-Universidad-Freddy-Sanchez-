@@ -18,7 +18,7 @@ dg-publish: true
 > 
 > $$\text{Si } p_1 \text{ y } p_2 \text{ y } \cdots \text{ y } p_n \text{ entonces } q.$$
 >
-> ![[../../Diagramas/dis-u1-08-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-01-graph.svg]]
 >
 > **En esta nota:** validez vs verdad (premisas verdaderas + forma válida = conclusión verdadera), reglas clásicas (Modus Ponens/Tollens, silogismo, dilema) y falacias típicas (afirmar el consecuente, negar el antecedente).
 >
@@ -50,7 +50,7 @@ dg-publish: true
 
 > [!note] 📋 Mapa — Reglas clásicas
 >
-> ![[../../Diagramas/dis-u1-08-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-02-graph.svg]]
 >
 > **Se lee así:** Ponens afirma el antecedente; Tollens niega el consecuente; el silogismo encadena.
 
@@ -274,7 +274,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-08-03-graph.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-03-graph.svg]]
 
 
 ---
