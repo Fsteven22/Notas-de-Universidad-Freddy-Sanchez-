@@ -1808,3 +1808,78 @@ en `82bd9398`.
 **PUSHEADO `03732bc5`** — `8030bb03` (código) + `03732bc5` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `03732bc5`. `origin/sesion/opencode-site` queda en `03732bc5`.
 
+---
+
+### `opencode-site` — modo de estudio con las flashcards de las notas, modo lectura e impresión — 11/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `4419ebcc`):** modo de estudio con las flashcards que ya tenían las notas, modo
+>   lectura e impresión a PDF. Todo en `site/**` (mi zona): nada del vault, nada de
+>   `Universidad/**`, nada de `site/scripts/**`. Único archivo de configuración tocado:
+>   `site/astro.config.mjs`, para registrar el plugin nuevo de Markdown.
+>
+> - **El pedido:** "un modo de estudio que aproveche las flashcards que poseen las notas en la última
+>   sección".
+>   - **Lo que había:** las notas ya traían sus tarjetas, en el formato del plugin *Spaced
+>     Repetition* de Obsidian:
+>
+>         ## 🔁 Repaso SR (flashcards)
+>         #flashcards/bd-u4
+>         > [!note] 🧠 Repasa con el plugin Spaced Repetition
+>         > - ¿SQL en 1 frase?::Lenguaje declarativo de acceso a bases de datos.
+>
+>     El sitio las renderizaba como una lista más, con el `::` a la vista. Eran material
+>     desperdiciado: ya estaban escritas y no había ninguna forma de practicarlas.
+>   - **Lo que se hizo (sin tocar el vault):** leer esas tarjetas del mismo Markdown que el sitio
+>     renderiza y convertirlas en dos cosas:
+>
+> - **Página nueva `/estudio/`: sesiones de repaso.**
+>   - Filtros por **materia** y por **mazo**, botón de **barajar** y opción **"solo las que no sé"**.
+>   - Se destapa la respuesta, se marca **"sí" / "no sé"** y el progreso se guarda en el navegador
+>     (`localStorage`), con contador de dominadas y barra de avance.
+>   - Atajos: `espacio` destapa · `1` no sé · `2` sí · `←`/`→` navegan · `s` baraja.
+>   - Las respuestas con matemática ($...$) se compilan con **KaTeX en el servidor**, así que las
+>     fórmulas se ven igual que en la nota.
+>   - En el build local hay **321 tarjetas en 64 notas, 15 mazos y 4 materias**. En producción saldrán
+>     más: el `notes-md` local va retrasado respecto al vault (allí se sincroniza antes de compilar).
+>
+> - **Dentro de cada nota: tarjetas interactivas.** Un plugin de Markdown (`rehype-flashcards.mjs`)
+>   convierte el bloque "Repaso SR" en tarjetas que se destapan al hacer clic. Se usa
+>   `<details>/<summary>` a propósito: **funciona sin JavaScript**, se lee bien con teclado y con
+>   lector de pantalla y no añade ni un script al sitio. También quita la línea `#flashcards/mazo`
+>   (metadato del plugin de Obsidian, que fuera solo se veía como un hashtag suelto) y pone el
+>   enlace **"Practicar estas tarjetas →"** a esa nota concreta.
+>
+> - **Entradas:** la portada y la ficha de cada materia dicen cuántas tarjetas hay y llevan al modo
+>   de estudio.
+>
+> - **Modo lectura (notas):** un botón deja la nota sola — sin header, sin pie, sin explorador, sin
+>   índice y sin fondo, con más cuerpo de texto. La preferencia se recuerda entre páginas.
+> - **Imprimir / Guardar como PDF:** hoja de estilos de impresión que saca solo la nota, en blanco y
+>   negro, con los encabezados sin partirse al final de la página. Es la respuesta directa al
+>   titular "¿tuviste el PDF?": ahora la nota también se puede llevar en PDF.
+>
+> - **Verificado con navegador real (CDP), no solo con el HTML:**
+>   - `check-estudio.mjs`: la página carga con 321 tarjetas · "Mostrar respuesta" destapa (87
+>     caracteres) · "Sí" avanza y **guarda** (1 → 2 tarjetas guardadas) · la tecla `2` también avanza
+>     · el filtro por materia deja 134 tarjetas de Inglés III · la nota de inducción trae **8
+>     tarjetas** con su CTA bien construido (`/estudio/?nota=...`) · **cero errores de consola**.
+>   - `check-lectura.mjs`: el modo lectura oculta header, pie y explorador, la nota sigue visible y
+>     **se mantiene al recargar** · con la media `print` emulada: sin menús, texto negro sobre blanco
+>     · `Page.printToPDF` generó un **PDF real de 12 páginas** (3 MB).
+>
+> - **Verificado:** `npm run build` → **850 páginas, 0 errores** (849 + `/estudio/`) ·
+>   `search-content.json` → 821 notas / 18.043 apartados / 4.95 MB · **QA estático: 851 HTML (849 de
+>   contenido), 0 sin h1, 0 con h1 múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas
+>   preexistentes) · `CI-PRIVADO: OK` (18 patrones, 0 fugas).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): siguen igual que en las
+>     rondas anteriores. Ninguna está en la portada.
+>   - **Lo que sigue en la lista del dueño** (todavía no hecho): mapa de la carrera en 3D, progreso y
+>     favoritos, mejoras del buscador (filtros e historial) y el rescate de esas 207 anclas. Se siguen
+>     en la siguiente ronda.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
