@@ -585,7 +585,25 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         if (nxReduced() || !window.SplitText || typeof window.gsap === "undefined") return;
         heroTitle.dataset.nxSplit = "1";
         try {
-          var split = new window.SplitText(heroTitle, { type: "chars,words", charsClass: "nx-char" });
+          // `ignore`: el <span> del degradado NO se parte. Si se partiese,
+          // cada letra sería un div inline-block y el `background-clip: text`
+          // dejaría de pintarse detrás: con el color transparente, la frase
+          // "no sabes por dónde empezar?" desaparecía al activar animaciones.
+          var split = new window.SplitText(heroTitle, {
+            type: "chars,words",
+            charsClass: "nx-char",
+            ignore: ".nx-brand-text"
+          });
+          // Comprobación de integridad: si el titular se quedó sin texto
+          // (por ejemplo, si una versión futura de SplitText parte el span
+          // pese al `ignore`), se deshace la partición y el titular se queda
+          // como texto normal, siempre visible.
+          var marca = heroTitle.querySelector(".nx-brand-text");
+          var antes = heroTitle.textContent || "";
+          if (!antes.trim() || (marca && !marca.textContent.trim())) {
+            split.revert();
+            return;
+          }
           gsap.from(split.chars, {
             yPercent: 110, opacity: 0, duration: 0.7,
             stagger: 0.022, ease: "power4.out", delay: 0.35

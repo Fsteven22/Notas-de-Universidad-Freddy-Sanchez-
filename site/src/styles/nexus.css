@@ -48,6 +48,22 @@
   }
 }
 
+/* Red de seguridad del degradado.
+   `background-clip: text` pinta el fondo sobre el texto del propio elemento.
+   Si algo parte ese texto en letras sueltas (SplitText hace exactamente eso:
+   cada letra pasa a ser un <div> inline-block), el fondo deja de pintarse
+   detrás de las letras y, como el color es transparente, la frase
+   DESAPARECE. Se evita dejando el span intacto al partir (opción `ignore`
+   de SplitText) y, si aun así se partiera, estas letras reciben un color
+   sólido: se pierde la rampa, pero el texto nunca se borra. */
+.nx-brand-text .nx-char,
+.nx-section-title .nx-char {
+  color: var(--color-nexus-purple);
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+}
+
 /* ─── Base ───────────────────────────────────────────────── */
 html {
   color-scheme: dark;

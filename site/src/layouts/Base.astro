@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import Analytics from "@vercel/analytics/astro";
 import SearchModal from "./../components/SearchModal.astro";
 import ShortcutsPanel from "./../components/ShortcutsPanel.astro";
 import SiteFooter from "./../components/SiteFooter.astro";
@@ -651,7 +652,18 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
               if (noteH1 && window.SplitText && !noteH1.dataset.nxSplit) {
                 noteH1.dataset.nxSplit = "1";
                 try {
-                  var nh = new window.SplitText(noteH1, { type: "chars,words", charsClass: "nx-char" });
+                  // `ignore`: si el título tuviera un span con degradado
+                  // (background-clip: text), partirlo en letras haría que el
+                  // fondo dejara de pintarse y el texto se vería invisible.
+                  var nh = new window.SplitText(noteH1, {
+                    type: "chars,words", charsClass: "nx-char", ignore: ".nx-brand-text"
+                  });
+                  // Integridad: si el título se quedó sin texto, se deshace la
+                  // partición y se deja el título tal cual.
+                  if (!(noteH1.textContent || "").trim()) {
+                    nh.revert();
+                    return;
+                  }
                   track(gsap.from(nh.chars, {
                     yPercent: 110, opacity: 0, duration: 0.6,
                     stagger: 0.016, ease: "power4.out", delay: 0.1
@@ -696,5 +708,9 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
         document.addEventListener("astro:page-load", route);
       })();
     </script>
+
+    <!-- Vercel Analytics: primero de Analytics (script propio de Vercel,
+         sin CDN externo). Va al final del body para no retrasar el render. -->
+    <Analytics />
   </body>
 </html>
