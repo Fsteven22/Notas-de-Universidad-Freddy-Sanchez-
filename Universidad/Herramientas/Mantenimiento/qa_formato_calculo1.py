@@ -419,10 +419,13 @@ def auditar(nota_path, raiz, raiz_mat, hallazgos, idx_vault):
                               "embed visual sin lectura propia: %s" % ln.strip()[:50]))
 
 
-def fix_rutas(nota_path, raiz_mat):
-    """Reescribe embeds a la ruta canonica (prefijo según profundidad)."""
-    texto = io.open(nota_path, encoding="utf-8").read()
-    dir_nota = os.path.dirname(nota_path)
+def fix_rutas_texto(texto, dir_nota, raiz_mat):
+    """Reescribe embeds a la ruta canonica (prefijo segun profundidad).
+
+    Opera sobre TEXTO (no sobre el archivo) para que el transformador pueda
+    encadenar fases sin que una reescriba el archivo desde disco y pise lo
+    anterior.
+    """
     pref = prefijo_esperado(dir_nota, raiz_mat)
     cambios = []
 
@@ -449,6 +452,12 @@ def fix_rutas(nota_path, raiz_mat):
 
     nuevo_texto = RE_EMBED.sub(repl, texto)
     return nuevo_texto, cambios
+
+
+def fix_rutas(nota_path, raiz_mat):
+    texto = io.open(nota_path, encoding="utf-8").read()
+    dir_nota = os.path.dirname(nota_path)
+    return fix_rutas_texto(texto, dir_nota, raiz_mat)
 
 
 CODIGOS_H = {

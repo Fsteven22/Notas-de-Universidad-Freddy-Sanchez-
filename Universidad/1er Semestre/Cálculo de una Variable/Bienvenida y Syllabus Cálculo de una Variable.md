@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, MATG1001, matematicas, semester1]
 ---
 
-# Cálculo de una Variable — Bienvenida y Syllabus
+# 📘 Cálculo de una Variable — Bienvenida y Syllabus
 
 ## 🎉 ¡Bienvenido/a a Cálculo de una Variable!
 
@@ -58,7 +59,7 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.svg]]
 >
 > | Unidad | Tema |
 > |---|---|
@@ -109,4 +110,4 @@ dg-publish: true
 
 ---
 
-**Tags:** #calculo #ESPOL #MATG1001 #matematicas #semester1
+**Tags:** #MATG1045 #bienvenida-y-syllabus-calculo-de-una-variable #calculo #ESPOL #MATG1001 #matematicas #semester1

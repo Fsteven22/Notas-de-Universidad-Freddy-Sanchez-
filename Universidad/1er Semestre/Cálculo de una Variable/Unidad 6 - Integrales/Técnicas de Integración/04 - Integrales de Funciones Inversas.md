@@ -1,40 +1,45 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad6, integrales-de-funciones-inversas, calculo, integrales, funciones-inversas, integracion-por-partes, arcsin, arccos, arctan, arcsec, identidades-trigonometricas]
 ---
 
 # 🔄 Integrales de Funciones Inversas
 
-> [!tip] 💡 Concepto Clave Las integrales de funciones inversas requieren principalmente **integración por partes**, aprovechando la relación especial entre una función y su inversa. La clave está en reconocer patrones y usar las identidades adecuadas.
+> [!tip] 💡 Concepto Clave
+>
+> Las integrales de funciones inversas requieren principalmente **integración por partes**, aprovechando la relación especial entre una función y su inversa. La clave está en reconocer patrones y usar las identidades adecuadas.
 
 ## 🎯 Estrategia General
 
 ### 🔑 Método Principal: Integración por Partes
 
 > [!info] 📊 Patrón Estándar Para ∫ f⁻¹(x) dx, usar:
-> 
+>
 > - **u = f⁻¹(x)** (función inversa)
 > - **dv = dx** → **v = x**
 > - **du = ?** (usar derivada de función inversa)
 > - **Resultado**: x·f⁻¹(x) - ∫ x·(df⁻¹/dx) dx
 
-![[Diagramas/Integrales_de_Funciones_Inversas_01.svg]]
+> [!info] 🖼️ Método Principal: Integración por Partes
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_01.svg]]
 
 ## 📐 Funciones Trigonométricas Inversas
 
 ### 1️⃣ Arcoseno y Arcocoseno
 
 > [!info] 🧮 Fórmulas Básicas **Derivadas clave**:
-> 
+>
 > - $\frac{d}{dx}[\arcsin(x)] = \frac{1}{\sqrt{1-x^2}}$
 > - $\frac{d}{dx}[\arccos(x)] = -\frac{1}{\sqrt{1-x^2}}$
-> 
+>
 > **Identidad útil**: $\arcsin(x) + \arccos(x) = \frac{\pi}{2}$
 >
 
 > [!example] 🔢 Ejemplo 1: Integral de Arcoseno **Resolver**: $\int \arcsin(x) , dx$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \arcsin(x)$, $dv = dx$
 > - $du = \frac{1}{\sqrt{1-x^2}} dx$, $v = x$
 > - $\int \arcsin(x) , dx = x\arcsin(x) - \int \frac{x}{\sqrt{1-x^2}} , dx$
@@ -44,9 +49,9 @@ dg-publish: true
 >
 
 > [!example] 🔢 Ejemplo 2: Integral de Arcocoseno **Resolver**: $\int \arccos(x) , dx$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \arccos(x)$, $dv = dx$
 > - $du = -\frac{1}{\sqrt{1-x^2}} dx$, $v = x$
 > - $\int \arccos(x) , dx = x\arccos(x) + \int \frac{x}{\sqrt{1-x^2}} , dx$
@@ -56,17 +61,17 @@ dg-publish: true
 ### 2️⃣ Arcotangente y Arcocotangente
 
 > [!info] 🧮 Fórmulas Básicas **Derivadas clave**:
-> 
+>
 > - $\frac{d}{dx}[\arctan(x)] = \frac{1}{1+x^2}$
 > - $\frac{d}{dx}[\text{arccot}(x)] = -\frac{1}{1+x^2}$
-> 
+>
 > **Identidad útil**: $\arctan(x) + \text{arccot}(x) = \frac{\pi}{2}$
 >
 
 > [!example] 🔢 Ejemplo 3: Integral de Arcotangente **Resolver**: $\int \arctan(x) , dx$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \arctan(x)$, $dv = dx$
 > - $du = \frac{1}{1+x^2} dx$, $v = x$
 > - $\int \arctan(x) , dx = x\arctan(x) - \int \frac{x}{1+x^2} , dx$
@@ -77,15 +82,15 @@ dg-publish: true
 ### 3️⃣ Arcosecante y Arcocosecante
 
 > [!info] 🧮 Fórmulas Básicas **Derivadas clave**:
-> 
+>
 > - $\frac{d}{dx}[\text{arcsec}(x)] = \frac{1}{|x|\sqrt{x^2-1}}$ para $|x| > 1$
 > - $\frac{d}{dx}[\text{arccsc}(x)] = -\frac{1}{|x|\sqrt{x^2-1}}$ para $|x| > 1$
 >
 
 > [!example] 🔢 Ejemplo 4: Integral de Arcosecante **Resolver**: $\int \text{arcsec}(x) , dx$ para $x > 1$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \text{arcsec}(x)$, $dv = dx$
 > - $du = \frac{1}{x\sqrt{x^2-1}} dx$, $v = x$
 > - $\int \text{arcsec}(x) , dx = x\text{arcsec}(x) - \int \frac{1}{\sqrt{x^2-1}} , dx$
@@ -97,9 +102,9 @@ dg-publish: true
 ### Casos con x·f⁻¹(x)
 
 > [!example] 🔢 Ejemplo 5: Producto con Variable **Resolver**: $\int x \arcsin(x) , dx$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \arcsin(x)$, $dv = x , dx$
 > - $du = \frac{1}{\sqrt{1-x^2}} dx$, $v = \frac{x^2}{2}$
 > - $\int x \arcsin(x) , dx = \frac{x^2}{2}\arcsin(x) - \int \frac{x^2}{2\sqrt{1-x^2}} , dx$
@@ -112,9 +117,9 @@ dg-publish: true
 ### Casos con Potencias
 
 > [!example] 🔢 Ejemplo 6: Potencia de Arcotangente **Resolver**: $\int \arctan^2(x) , dx$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Integración por partes**: $u = \arctan^2(x)$, $dv = dx$
 > - $du = \frac{2\arctan(x)}{1+x^2} dx$, $v = x$
 > - $\int \arctan^2(x) , dx = x\arctan^2(x) - 2\int \frac{x\arctan(x)}{1+x^2} , dx$
@@ -123,29 +128,31 @@ dg-publish: true
 > - Después de resolver: $\int \frac{x\arctan(x)}{1+x^2} , dx = \frac{1}{2}\arctan(x)\ln(1+x^2) - \frac{x}{2} + \frac{1}{2}\arctan(x)$
 > - **Resultado complejo**: Requiere múltiples aplicaciones de integración por partes
 
-![[Diagramas/Integrales_de_Funciones_Inversas_02.svg]]
+> [!info] 🖼️ Casos con Potencias
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_02.svg]]
 
 ## 🔄 Identidades y Relaciones Útiles
 
 > [!info] 🧮 Identidades Fundamentales
-> 
+>
 > ### Relaciones Complementarias
-> 
+>
 > - $\arcsin(x) + \arccos(x) = \frac{\pi}{2}$
 > - $\arctan(x) + \text{arccot}(x) = \frac{\pi}{2}$
 > - $\text{arcsec}(x) + \text{arccsc}(x) = \frac{\pi}{2}$ para $x > 0$
-> 
+>
 > ### Identidades Trigonométricas para Inversas
-> 
+>
 > - $\sin(\arcsin(x)) = x$
 > - $\cos(\arcsin(x)) = \sqrt{1-x^2}$
 > - $\tan(\arcsin(x)) = \frac{x}{\sqrt{1-x^2}}$
 > - $\sin(\arccos(x)) = \sqrt{1-x^2}$
 > - $\cos(\arctan(x)) = \frac{1}{\sqrt{1+x^2}}$
 > - $\sin(\arctan(x)) = \frac{x}{\sqrt{1+x^2}}$
-> 
+>
 > ### Relaciones de Conversión
-> 
+>
 > - $\arcsin(x) = \arctan\left(\frac{x}{\sqrt{1-x^2}}\right)$
 > - $\arccos(x) = \arctan\left(\frac{\sqrt{1-x^2}}{x}\right)$ para $x > 0$
 > - $\text{arcsec}(x) = \arccos\left(\frac{1}{x}\right)$ para $|x| \geq 1$
@@ -153,7 +160,7 @@ dg-publish: true
 ## 📊 Tabla de Integrales de Funciones Inversas
 
 > [!info] 📋 Resultados Fundamentales
-> 
+>
 > |Función|Integral|
 > |---|---|
 > |$\arcsin(x)$|$x\arcsin(x) + \sqrt{1-x^2} + C$|
@@ -165,7 +172,7 @@ dg-publish: true
 >
 
 > [!info] 📋 Integrales con Productos Simples
-> 
+>
 > |Función|Integral|
 > |---|---|
 > |$x\arcsin(x)$|$\frac{x^2}{2}\arcsin(x) + \frac{\sqrt{1-x^2}(x^2-2)}{4} + C$|
@@ -176,42 +183,42 @@ dg-publish: true
 ## ⚠️ Consideraciones Especiales
 
 > [!warning] 🚨 Dominios y Restricciones
-> 
+>
 > ### Dominios de Funciones Inversas
-> 
+>
 > - **arcsin(x), arccos(x)**: $x \in [-1, 1]$
 > - **arctan(x), arccot(x)**: $x \in \mathbb{R}$
 > - **arcsec(x), arccsc(x)**: $|x| \geq 1$
-> 
+>
 > ### Rangos Principales
-> 
+>
 > - **arcsin(x)**: $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
 > - **arccos(x)**: $[0, \pi]$
 > - **arctan(x)**: $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$
-> 
+>
 > ### Cuidados en la Integración
-> 
+>
 > - **Verificar el dominio** antes de aplicar fórmulas
 > - **Considerar el signo** en las derivadas con valor absoluto
 > - **Simplificar usando identidades** antes de integrar cuando sea posible
 >
 
 > [!tip] 💡 Estrategias de Éxito
-> 
+>
 > ### Preparación
-> 
+>
 > - **Memorizar las derivadas** de todas las inversas
 > - **Conocer las identidades básicas** para simplificación
 > - **Identificar el patrón** antes de aplicar integración por partes
-> 
+>
 > ### Durante la Resolución
-> 
+>
 > - **Siempre usar u = función inversa** en integración por partes
 > - **Buscar simplificaciones** usando identidades trigonométricas
 > - **Verificar el dominio** de validez de la solución
-> 
+>
 > ### Verificación
-> 
+>
 > - **Derivar el resultado** para comprobar
 > - **Verificar continuidad** en los puntos críticos del dominio
 > - **Comprobar casos límite** cuando sea relevante
@@ -221,9 +228,9 @@ dg-publish: true
 ### Composiciones con Otras Funciones
 
 > [!example] 🔢 Ejemplo 7: Composición Compleja **Resolver**: $\int \arcsin\left(\frac{x}{a}\right) , dx$ donde $a > 0$
-> 
+>
 > **Solución**:
-> 
+>
 > - **Sustitución**: $u = \frac{x}{a} \Rightarrow x = au, dx = a , du$
 > - $\int \arcsin\left(\frac{x}{a}\right) , dx = a\int \arcsin(u) , du$
 > - Usar el resultado conocido: $\int \arcsin(u) , du = u\arcsin(u) + \sqrt{1-u^2} + C$
@@ -233,9 +240,9 @@ dg-publish: true
 ### Integrales Definidas Especiales
 
 > [!info] 🎯 Resultados Notables
-> 
+>
 > **Integrales definidas útiles**:
-> 
+>
 > - $\int_0^1 \arcsin(x) , dx = 1$
 > - $\int_0^1 \arctan(x) , dx = \frac{\pi}{4} - \frac{\ln(2)}{2}$
 > - $\int_{-1}^1 x\arcsin(x) , dx = 0$ (función impar)
@@ -243,21 +250,21 @@ dg-publish: true
 ## 🔗 Conexiones con Otros Temas
 
 > [!quote] 📚 Notas Relacionadas
-> 
+>
 > ### Prerequisitos
-> 
+>
 > - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Técnica fundamental para estas integrales
 > - [[05 - Identidades trigonométricas]] - Necesarias para simplificaciones
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md#Funciones Trigonométricas|Funciones Trigonométricas]] - Base para entender las inversas
-> 
+>
 > ### Temas Relacionados
-> 
+>
 > - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Complemento natural
 > - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Para casos con composiciones
 > - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva.md#Sustitución Trigonométrica|Sustitución Trigonométrica]] - Conexión con √(a²±x²)
-> 
+>
 > ### Aplicaciones
-> 
+>
 > - **Cálculo de Áreas** - Especialmente con funciones periódicas
 > - **Física Mathematical** - Problemas de oscilaciones y ondas
 > - **Geometría Analítica** - Cálculo de longitudes de arco
@@ -266,29 +273,31 @@ dg-publish: true
 ## 📝 Ejercicios Recomendados
 
 > [!note] 🎓 Para Practicar
-> 
+>
 > ### Nivel Básico
-> 
+>
 > 1. $\int \arcsin(2x) , dx$
 > 2. $\int \arctan(3x) , dx$
 > 3. $\int x\arccos(x) , dx$
-> 
+>
 > ### Nivel Intermedio
-> 
+>
 > 4. $\int \arcsin^2(x) , dx$
 > 5. $\int \frac{\arctan(x)}{x^2} , dx$
 > 6. $\int \text{arcsec}(\sqrt{x}) , dx$
-> 
+>
 > ### Nivel Avanzado
-> 
+>
 > 7. $\int \arctan(x) \ln(x) , dx$
 > 8. $\int \frac{\arcsin(x)}{\sqrt{1-x^2}} , dx$
 > 9. $\int_0^{\pi/2} x \arcsin(\sin(x)) , dx$
 
 ## 🎯 Patrones de Reconocimiento
 
-![[Diagramas/Integrales_de_Funciones_Inversas_03.svg]]
+> [!info] 🖼️ Patrones de Reconocimiento
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_03.svg]]
 
 ---
 
-**Tags**: #calculo #integrales #funciones-inversas #integracion-por-partes #arcsin #arccos #arctan #arcsec #identidades-trigonometricas
+**Tags:** #MATG1045 #unidad6 #integrales-de-funciones-inversas #calculo #integrales #funciones-inversas #integracion-por-partes #arcsin #arccos #arctan #arcsec #identidades-trigonometricas

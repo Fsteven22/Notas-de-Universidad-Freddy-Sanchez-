@@ -1,15 +1,18 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad6, teoremas-de-comparacion-y-desigualdades, matematicas/calculo/teoremas, comparacion/integrales, desigualdades/analisis, convergencia/criterios, estimacion/valores, preparacion/impropias, herramientas/teoricas]
 ---
 
 # ⚖️ Teoremas de Comparación y Desigualdades para Integrales
 
 >[!info] 💡 **Concepto Central**
+>
 >Los teoremas de comparación y desigualdades proporcionan herramientas poderosas para estimar, acotar y comparar integrales definidas sin necesidad de evaluarlas exactamente. Son fundamentales para el análisis de convergencia de integrales impropias y la estimación de valores integrales.
 
 ## 🎯 Teorema Fundamental de Comparación
 
 >[!tip] 🏆 **Teorema de Comparación Básico**
+>
 >Si $f(x) \leq g(x)$ para todo $x \in [a,b]$ y ambas funciones son integrables en $[a,b]$, entonces:
 >
 >$$\int_a^b f(x) dx \leq \int_a^b g(x) dx$$
@@ -17,6 +20,7 @@ dg-publish: true
 >**Interpretación**: "La integral de la función menor es menor o igual que la integral de la función mayor"
 >
 >[!warning] ⚠️ **Condiciones Necesarias**
+>
 >- Ambas funciones deben ser **integrables** en $[a,b]$
 >- La desigualdad $f(x) \leq g(x)$ debe cumplirse para **todo** $x \in [a,b]$
 >- Si la desigualdad es estricta ($f(x) < g(x)$) excepto en un conjunto finito de puntos, entonces $\int_a^b f(x) dx < \int_a^b g(x) dx$
@@ -38,13 +42,16 @@ dg-publish: true
 >
 >**Conclusión**: $\int_a^b f(x) dx \leq \int_a^b g(x) dx$ ✓
 
-![[Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_01.svg]]
+> [!info] 🖼️ Demostración del Teorema Básico
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_01.svg]]
 
 ## 📊 Corolarios Importantes
 
 ### 🔢 Corolario 1: Desigualdad Triangular para Integrales
 
 >[!tip] 📐 **Desigualdad Triangular**
+>
 >Si $f$ es integrable en $[a,b]$, entonces:
 >
 >$$\left|\int_a^b f(x) dx\right| \leq \int_a^b |f(x)| dx$$
@@ -54,6 +61,7 @@ dg-publish: true
 ### 🔢 Corolario 2: Acotación por Constantes
 
 >[!info] 📏 **Acotación Constante**
+>
 >Si $m \leq f(x) \leq M$ para todo $x \in [a,b]$, entonces:
 >
 >$$m(b-a) \leq \int_a^b f(x) dx \leq M(b-a)$$
@@ -63,6 +71,7 @@ dg-publish: true
 ### 🔢 Corolario 3: Comparación con Funciones Elementales
 
 >[!warning] ⚡ **Funciones de Referencia**
+>
 >Para estimar integrales complejas, se compara con:
 >- **Polinomios**: $x^n$, especialmente para $x$ grande o pequeño
 >- **Exponenciales**: $e^{-x}$, $e^{x}$ para comportamiento asintótico  
@@ -122,6 +131,7 @@ dg-publish: true
 ### 🎯 Teorema de Comparación en el Límite
 
 >[!tip] 🔬 **Criterio de Comparación Límite**
+>
 >Sean $f(x) \geq 0$ y $g(x) > 0$ funciones continuas en $[a,b)$ donde $b$ puede ser infinito. Si:
 >
 >$$\lim_{x \to b^-} \frac{f(x)}{g(x)} = L$$
@@ -130,25 +140,29 @@ dg-publish: true
 >- $\int_a^b f(x) dx$ y $\int_a^b g(x) dx$ **convergen o divergen juntas**
 >
 >[!info] 🎯 **Casos Especiales del Límite**
+>
 >- Si $L = 0$ y $\int_a^b g(x) dx$ converge → $\int_a^b f(x) dx$ converge
 >- Si $L = \infty$ y $\int_a^b g(x) dx$ diverge → $\int_a^b f(x) dx$ diverge
 
 ### 🔄 Criterio de Comparación Directa
 
 >[!warning] ⚡ **Para Integrales Impropias**
+>
 >Sean $0 \leq f(x) \leq g(x)$ para $x \geq a$ (o cerca de una singularidad):
 >
 >**Convergencia**: Si $\int g(x) dx$ converge → $\int f(x) dx$ converge
 >**Divergencia**: Si $\int f(x) dx$ diverge → $\int g(x) dx$ diverge
 
-![[Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_02.svg]]
+> [!info] 🖼️ Criterio de Comparación Directa
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_02.svg]]
 
 ## 🌟 Funciones de Referencia Estándar
 
 ### 📚 Tabla de Funciones de Comparación Comunes
 
 >[!info] 📋 **Funciones de Referencia para Comparación**
-> 
+>
 > | **Tipo** | **Función** | **Comportamiento** | **Uso Principal** |
 > |----------|-------------|-------------------|------------------|
 > | **Potencias** | $\frac{1}{x^p}$ | $p > 1$: converge en $[1,\infty)$ | Integrales con singularidades |
@@ -156,7 +170,7 @@ dg-publish: true
 > | **Logarítmicas** | $\frac{1}{x \ln^p(x)}$ | $p > 1$: converge en $[2,\infty)$ | Funciones con decrecimiento logarítmico |
 > | **Trigonométricas** | $\frac{\sin(x)}{x^p}$ | Comportamiento oscilatorio acotado | Integrales oscilatorias |
 > | **Racionales** | $\frac{P(x)}{Q(x)}$ | Depende del grado | Funciones racionales complejas |
-> 
+>
 ### 🎯 Estrategias de Selección de Función de Referencia
 
 >[!tip] 💡 **Cómo Elegir la Función de Comparación**
@@ -217,41 +231,42 @@ dg-publish: true
 >**R**evisar y verificar el resultado
 
 ### 📋 Desarrollo Detallado del Método COMPAR
-> [!summary] Pasos a Seguir:
+> [!abstract] Pasos a Seguir:
+>
 > #### **C - Comparar Funciones** 🔍
 > - Identificar las funciones involucradas
 > - Establecer el dominio de comparación
 > - Determinar puntos problemáticos (singularidades, infinitos)
-> 
+>
 > #### **O - Ordenar las Funciones** 📊
 > - Decidir cuál función es mayor/menor
 > - Verificar la desigualdad en todo el intervalo relevante
 > - Considerar comportamiento asintótico
-> 
+>
 > #### **M - Mayorar o Minorar** ⚖️
 > - **Mayorar**: Encontrar función más grande que converja
 > - **Minorar**: Encontrar función más pequeña que diverja
 > - Elegir funciones de referencia apropiadas
-> 
+>
 > #### **P - Probar Convergencia de Referencia** ✅
 > - Evaluar integral de la función de comparación
 > - Usar criterios conocidos (p-integrales, exponenciales, etc.)
 > - Verificar convergencia/divergencia
-> 
+>
 > #### **A - Aplicar Criterio** ⚡
 > - **Comparación directa**: Si $0 \leq f \leq g$
 > - **Comparación límite**: Si $\lim \frac{f}{g} = L$
 > - Deducir resultado para la función original
-> 
+>
 > #### **R - Revisar Resultado** 🔄
 > - Verificar coherencia del resultado
 > - Comprobar casos límite si es posible
 > - Validar con intuición física/geométrica
-> 
+>
 ### 🎯 Ejemplo Aplicando COMPAR
 
 >[!example] 📈 **Problema**: Analizar $\int_2^{\infty} \frac{1}{x \ln(x)} dx$
-> 
+>
 > **C** - Comparar: Función problemática en infinito, comportamiento $\sim \frac{1}{x \ln(x)}$
 > **O** - Ordenar: Comparar con $\frac{1}{x}$ y $\frac{1}{x^2}$
 > **M** - Mayorar: Para $x \geq 2$, $\ln(x) \geq \ln(2) > 0$, entonces $\frac{1}{x \ln(x)} \leq \frac{1}{x \ln(2)}$
@@ -297,6 +312,7 @@ dg-publish: true
 ### 🎯 Estimación de Integrales Definidas
 
 >[!tip] 💡 **Uso Práctico para Estimaciones**
+>
 >Cuando no podemos evaluar $\int_a^b f(x) dx$ exactamente:
 >
 >1. **Encontrar cotas**: $m \leq f(x) \leq M$ en $[a,b]$
@@ -306,6 +322,7 @@ dg-publish: true
 ### ⚡ Preparación para Integrales Impropias
 
 >[!info] 🚀 **Base para Análisis de Convergencia**
+>
 >Los teoremas de comparación son **esenciales** para:
 >- Determinar convergencia sin calcular la integral
 >- Clasificar comportamiento asintótico
@@ -315,6 +332,7 @@ dg-publish: true
 ### 🌊 Aplicaciones en Análisis de Fourier
 
 >[!warning] 📊 **Convergencia de Series de Fourier**
+>
 >Para determinar convergencia de coeficientes:
 >$$a_n = \int_{-\pi}^{\pi} f(x) \cos(nx) dx$$
 >
@@ -323,28 +341,38 @@ dg-publish: true
 ---
 
 > [!quote] ## 📚 Referencias y Conexiones
-> 
-> 
+>
+>
 > ### 🔗 Notas Relacionadas
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral.md|02 - Propiedades de la Integral.md]] - Base algebraica para las desigualdades
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/03 - Teoremas Especiales para Integrales Definidas.md|03 - Teoremas Especiales para Integrales Definidas.md]] - Herramienta para acotaciones
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]] - Definición formal subyacente
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Evaluación exacta cuando es posible
-> 
+>
 > ### 📖 Para Profundizar
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]] - Aplicación principal de estos teoremas
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md#Criterios de Convergencia|Criterios de Convergencia]] - Extensión de los conceptos de comparación
 > - Series Infinitas - Análisis de convergencia análogo
 > - Análisis Asintótico - Comportamiento de funciones en límites
-> 
+>
 > ### 🎯 Notas Recomendadas
 > - Funciones de Referencia Estándar - Catálogo de funciones para comparación
 > - Estimación de Integrales - Aplicaciones prácticas de acotación
 > - Métodos de Aproximación - Técnicas numéricas complementarias
 > - Desigualdades Clásicas - Herramientas auxiliares (Cauchy-Schwarz, Hölder, etc.)
-> 
+>
 
 ---
 
-### 🏷️ Tags
-#matematicas/calculo/teoremas #comparacion/integrales #desigualdades/analisis #convergencia/criterios #estimacion/valores #preparacion/impropias #herramientas/teoricas
+## 📚 Referencias
+
+> [!quote] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral.md]]
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/03 - Teoremas Especiales para Integrales Definidas.md]]
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md]]
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md]]
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md]]
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md#Criterios de Convergencia]]
+
+**Tags:** #MATG1045 #unidad6 #teoremas-de-comparacion-y-desigualdades #matematicas/calculo/teoremas #comparacion/integrales #desigualdades/analisis #convergencia/criterios #estimacion/valores #preparacion/impropias #herramientas/teoricas
