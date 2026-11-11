@@ -15,11 +15,18 @@ const coloresSem = {
   "3er-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
 };
 const sems = vault.semestres.filter((s) => s.id !== "raiz");
-const totalNotas = sems.reduce((n, s) => s.materias.reduce((m, x) => m + x.total, 0), 0);
-const totalMaterias = sems.reduce((n, s) => s.materias.length, 0);
+// OJO: el acumulador "n" tiene que usarse. Si el callback lo ignora,
+// reduce() se queda con el valor del ÚLTIMO semestre y la portada muestra
+// 181 notas / 5 materias / 113 PDFs en vez de 822 / 18 / 220.
+const totalNotas = sems.reduce(
+  (n, s) => n + s.materias.reduce((m, x) => m + x.total, 0),
+  0
+);
+const totalMaterias = sems.reduce((n, s) => n + s.materias.length, 0);
 const totalPdf = sems.reduce(
-  (n, s) => s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0)
-  , 0);
+  (n, s) => n + s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0),
+  0
+);
 
 const accent = (id) => coloresSem[id]?.c ?? "var(--color-nexus-blue)";
 const subEstado = (id) => coloresSem[id]?.t ?? "";
@@ -39,13 +46,13 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
   <section class="mx-auto max-w-6xl px-6 pt-14 pb-16">
     <div class="nx-hero-in nx-hero-in--delay-1">
       <span class="nx-badge">INGENIERÍA COMPUTACIONAL · ESPOL</span>
-      <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
-        Mis apuntes de carrera{" "}
-        <span class="nx-brand-text">en un solo lugar.</span>
+      <h1 class="mt-4 text-balance text-4xl font-black tracking-tight text-white sm:text-5xl">
+        ¿Tuviste el PDF y{" "}
+        <span class="nx-brand-text">no sabes por dónde empezar?</span>
       </h1>
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[#e5e7eb]">
-        Apuntes, diagramas, talleres y material de estudio organizados por semestre.
-        Consulta lo que necesites desde donde estés y descarga lo que quieras compartir.
+        Neonotes hace ese trabajo por ti: apuntes de ESPOL resumidos y ordenados por semestre, con
+        gráficos, fórmulas y búsqueda por temas. ¿Te los quieres llevar? Cada materia se baja en un ZIP.
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
         <button class="nx-btn nx-btn-primary nx-search-open">
@@ -53,6 +60,12 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         </button>
         <a class="nx-btn nx-btn-ghost" href="#semestres">Explorar semestres</a>
       </div>
+      {/* Los distintivos: lo que el sitio ya hace, dicho en tres palabras. */}
+      <ul class="nx-hero-points">
+        <li>Búsqueda por temas</li>
+        <li>Gráficos y fórmulas</li>
+        <li>ZIP por materia</li>
+      </ul>
       <div class="nx-bar mt-8 max-w-md"></div>
       <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
         {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} SEMESTRES

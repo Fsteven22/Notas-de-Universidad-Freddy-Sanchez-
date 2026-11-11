@@ -38,12 +38,23 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* Imprescindible cuando el titular salta de línea: sin esto el
+       degradado se calcula sobre la caja completa del <span> y solo la
+       primera línea recibe el inicio de la rampa (la segunda empieza
+       otra vez en violeta y la frase se ve partida en dos colores).
+       Con "clone" cada línea pinta su propia copia del degradado. */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 }
 
 /* ─── Base ───────────────────────────────────────────────── */
 html {
   color-scheme: dark;
+  /* Red de seguridad: nada (decoraciones, cintas, halos) debe poder
+     ensanchar el documento. "clip" no crea contenedor de scroll, así que
+     no rompe los position: sticky. */
+  overflow-x: clip;
 }
 
 body {
@@ -706,6 +717,35 @@ html.nx-note-page #nx-read-eta {
   color: var(--color-nexus-blue);
 }
 
+/* Distintivos del hero: las tres cosas que el sitio ya hace, en una línea */
+.nx-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+.nx-hero-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Separador entre distintivos (excepto el primero) */
+.nx-hero-points li + li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-nexus-green);
+  opacity: 0.6;
+  margin-right: 0.75rem;
+}
+
 /* Badge mono */
 .nx-badge {
   font-family: var(--font-mono);
@@ -725,6 +765,12 @@ html.nx-note-page #nx-read-eta {
   filter: blur(110px);
   pointer-events: none;
   background: radial-gradient(closest-side, rgba(140, 120, 255, 0.13), transparent);
+  /* En pantallas estrechas el halo no puede salirse del ancho de la
+     ventana: si se sale, la página se ensancha y Chrome "encoge" el
+     contenido para que quepa (el texto se ve más pequeño de lo que
+     debería). El límite en vw lo mantiene dentro siempre. */
+  max-width: 72vw;
+  max-height: 72vw;
 }
 /* deriva muy lenta: da vida al fondo sin distraer */
 .nx-aura--drift {
