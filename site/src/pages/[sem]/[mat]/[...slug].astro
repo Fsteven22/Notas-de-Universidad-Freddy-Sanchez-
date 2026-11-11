@@ -84,6 +84,14 @@ const matUrl = `/${sem}/${mat}/`;
       <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">{note.title}</h1>
       <p class="mt-2 font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">ÚLTIMA EDICIÓN · {fecha(note.mtime)}</p>
       <div class="nx-bar mt-4 max-w-xs"></div>
+      <div class="nx-note-tools">
+        <button type="button" id="nx-lectura" class="nx-note-tools__btn" aria-pressed="false">
+          <span class="nx-note-tools__ico" aria-hidden="true">◐</span> Modo lectura
+        </button>
+        <button type="button" id="nx-imprimir" class="nx-note-tools__btn">
+          <span class="nx-note-tools__ico" aria-hidden="true">⎙</span> Imprimir / PDF
+        </button>
+      </div>
       <div class="note-prose mt-8">
         <Content />
       </div>
@@ -247,5 +255,59 @@ const matUrl = `/${sem}/${mat}/`;
     }
     document.addEventListener("astro:page-load", boot);
     boot();
+  </script>
+
+  <script>
+    /**
+     * Modo lectura + impresión.
+     *
+     * · "Modo lectura": quita header, pie, explorador, índice y fondo, y deja
+     *   la nota sola, con más cuerpo. La preferencia se guarda (localStorage)
+     *   y se aplica en todas las notas.
+     * · "Imprimir / PDF": abre el diálogo del navegador, que con la hoja de
+     *   estilos de impresión saca la nota en blanco y negro, lista para
+     *   guardarse como PDF. Es la respuesta al "¿tuviste el PDF?": ahora la
+     *   nota también se puede llevar en PDF.
+     */
+    (function () {
+      var KEY = "nx-lectura";
+      var html = document.documentElement;
+
+      function leer() {
+        try { return localStorage.getItem(KEY) === "1"; } catch (e) { return false; }
+      }
+      function guardar(v) {
+        try { localStorage.setItem(KEY, v ? "1" : "0"); } catch (e) {}
+      }
+
+      function aplicar() {
+        var activo = leer();
+        html.classList.toggle("nx-lectura", activo);
+        var btn = document.getElementById("nx-lectura");
+        if (btn) {
+          btn.setAttribute("aria-pressed", activo ? "true" : "false");
+          var ico = btn.querySelector(".nx-note-tools__ico");
+          var txt = btn.childNodes[btn.childNodes.length - 1];
+          if (txt && txt.nodeType === 3) txt.textContent = activo ? " Salir del modo lectura" : " Modo lectura";
+        }
+      }
+
+      document.addEventListener("click", function (ev) {
+        var t = ev.target;
+        if (!(t instanceof Element)) return;
+        if (t.closest("#nx-lectura")) {
+          var activo = !html.classList.contains("nx-lectura");
+          guardar(activo);
+          aplicar();
+          return;
+        }
+        if (t.closest("#nx-imprimir")) {
+          window.print();
+        }
+      });
+
+      document.addEventListener("astro:page-load", aplicar);
+      aplicar();
+    })();
   </script>
 </Base>

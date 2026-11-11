@@ -1485,3 +1485,350 @@ html.nx-note-page #nx-read-eta {
   animation: none;
 }
 
+/* ── Modo de estudio (/estudio/) ───────────────────────────────────────── */.nx-estudio {
+  margin-top: 2rem;
+}
+.nx-estudio__controles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+.nx-estudio__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+}
+.nx-estudio__campo--check {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.55rem;
+  cursor: pointer;
+}
+.nx-estudio__campo--check input {
+  accent-color: var(--color-nexus-purple);
+  width: 15px;
+  height: 15px;
+}
+.nx-estudio__select {
+  appearance: none;
+  background: rgba(10, 14, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  color: #e5e7eb;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  padding: 0.45rem 2rem 0.45rem 0.7rem;
+  min-width: 11rem;
+  background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
+    linear-gradient(135deg, #64748b 50%, transparent 50%);
+  background-position: calc(100% - 14px) 52%, calc(100% - 9px) 52%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.nx-estudio__select:focus-visible {
+  outline: 2px solid var(--color-nexus-purple);
+  outline-offset: 1px;
+}
+.nx-estudio__botones {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.nx-estudio__progreso {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1.4rem 0 0.6rem;
+}
+.nx-estudio__progreso-barra {
+  flex: 1;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.nx-estudio__progreso-barra span {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--color-nexus-purple), var(--color-nexus-blue));
+  transition: width 0.25s ease;
+}
+.nx-estudio__avance {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-estudio__tarjeta {
+  position: relative;
+  margin-top: 0.8rem;
+  padding: 2.2rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 1rem;
+  background:
+    radial-gradient(120% 140% at 50% -20%, rgba(170, 102, 255, 0.10), transparent 60%),
+    rgba(8, 12, 22, 0.72);
+  cursor: pointer;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.nx-estudio__tarjeta:hover {
+  border-color: rgba(170, 102, 255, 0.35);
+}
+.nx-estudio__tarjeta:focus-visible {
+  outline: 2px solid var(--color-nexus-purple);
+  outline-offset: 2px;
+}
+.nx-estudio__tarjeta.es-sabida {
+  border-color: rgba(0, 255, 136, 0.30);
+}
+.nx-estudio__tarjeta.es-pendiente {
+  border-color: rgba(245, 159, 0, 0.30);
+}
+.nx-estudio__etiqueta {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+  text-align: center;
+}
+.nx-estudio__pregunta {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-wrap: balance;
+}
+.nx-estudio__respuesta {
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.14);
+  color: #d7dce6;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.nx-estudio__respuesta p {
+  margin: 0.3rem 0;
+}
+.nx-estudio__acciones {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.nx-estudio__acciones kbd {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  opacity: 0.6;
+  margin-left: 0.3rem;
+}
+.nx-estudio__pie {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--color-nexus-muted);
+}
+.nx-estudio__pie a {
+  color: var(--color-nexus-blue);
+  text-decoration: none;
+}
+.nx-estudio__pie a:hover {
+  text-decoration: underline;
+}
+.nx-estudio__pie-sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+.nx-estudio__ayuda {
+  margin-top: 1.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-nexus-muted);
+}
+.nx-estudio__ayuda summary {
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+.nx-estudio__ayuda ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.1rem;
+  line-height: 1.9;
+}
+.nx-estudio__ayuda kbd {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  padding: 0 0.3rem;
+  color: #cbd5e1;
+}
+@media (max-width: 640px) {
+  .nx-estudio__tarjeta {
+    padding: 1.6rem 1.1rem;
+    min-height: 13rem;
+  }
+  .nx-estudio__pregunta {
+    font-size: 1.1rem;
+  }
+  .nx-estudio__botones {
+    margin-left: 0;
+  }
+  .nx-estudio__select {
+    min-width: 0;
+    width: 100%;
+  }
+  .nx-estudio__campo {
+    width: 100%;
+  }
+}
+
+/* Enlaces al modo de estudio (portada y ficha de materia) */.nx-hero-study {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(170, 102, 255, 0.28);
+  border-radius: 9999px;
+  background: rgba(170, 102, 255, 0.06);
+  color: #cbd5e1;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+.nx-hero-study:hover {
+  border-color: rgba(170, 102, 255, 0.6);
+  background: rgba(170, 102, 255, 0.12);
+  color: #fff;
+}
+.nx-hero-study__n {
+  color: var(--color-nexus-purple);
+  font-weight: 700;
+}
+.nx-flash-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid rgba(170, 102, 255, 0.25);
+  border-radius: 0.8rem;
+  background: rgba(170, 102, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.nx-flash-cta:hover {
+  border-color: rgba(170, 102, 255, 0.55);
+  background: rgba(170, 102, 255, 0.1);
+}
+.nx-flash-cta__n {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-nexus-purple);
+  line-height: 1;
+}
+.nx-flash-cta__hint {
+  color: var(--color-nexus-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Modo lectura (notas) ────────────────────────────────────────────────
+   Deja la nota sola: sin header, sin pie, sin explorador, sin índice y sin
+   fondo. Se activa con el botón de la nota y se recuerda entre páginas. */
+.nx-note-tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.1rem;
+}
+.nx-note-tools__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #cbd5e1;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+.nx-note-tools__btn:hover {
+  border-color: rgba(170, 102, 255, 0.5);
+  background: rgba(170, 102, 255, 0.08);
+  color: #fff;
+}
+.nx-note-tools__btn[aria-pressed="true"] {
+  border-color: rgba(170, 102, 255, 0.65);
+  background: rgba(170, 102, 255, 0.14);
+  color: #fff;
+}
+.nx-note-tools__ico {
+  color: var(--color-nexus-purple);
+  font-size: 0.85rem;
+}
+html.nx-lectura .nx-header,
+html.nx-lectura .nx-footer,
+html.nx-lectura .nx-explorer-wrap,
+html.nx-lectura .nx-toc-col,
+html.nx-lectura #nx-top,
+html.nx-lectura #nx-read-eta,
+html.nx-lectura #nx-scroll-progress,
+html.nx-lectura #three-bg,
+html.nx-lectura .nx-aura {
+  display: none !important;
+}
+html.nx-lectura .nx-note-layout {
+  max-width: 52rem !important;
+}
+html.nx-lectura .note-prose {
+  font-size: 1.12rem;
+  line-height: 1.85;
+}
+html.nx-lectura .nx-note-tools {
+  justify-content: center;
+}
+html.nx-lectura .nx-note-layout a.nx-card {
+  display: none;
+}
+
+

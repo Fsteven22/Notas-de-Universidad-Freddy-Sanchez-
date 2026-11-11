@@ -422,3 +422,147 @@ details.nx-fc p {
 @media (max-width: 640px) {
   .nx-pdf-frame { height: 60vh; }
 }
+
+/* ── Tarjetas de repaso (bloque "🔁 Repaso SR" de las notas) ──────────────
+   Cada tarjeta es un <details>: se destapa al hacer clic, funciona sin
+   JavaScript y se lee bien con teclado y con lector de pantalla. */
+.nx-flashcards {
+  margin: 1.2rem 0;
+  border: 1px solid var(--glass-border);
+  border-radius: 0.8rem;
+  background: rgba(170, 102, 255, 0.04);
+  overflow: hidden;
+}
+.nx-flashcards__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-nexus-muted);
+}
+.nx-flashcards__cta {
+  color: var(--color-nexus-purple);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(170, 102, 255, 0.4);
+  padding-bottom: 1px;
+}
+.nx-flashcards__cta:hover {
+  color: #c79bff;
+  border-bottom-color: currentColor;
+}
+.nx-flashcard {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nx-flashcard:last-child {
+  border-bottom: 0;
+}
+.nx-flashcard__q {
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  list-style: none;
+  transition: background 0.15s ease;
+}
+.nx-flashcard__q::-webkit-details-marker {
+  display: none;
+}
+.nx-flashcard__q::before {
+  content: "▸ ";
+  color: var(--color-nexus-purple);
+}
+.nx-flashcard[open] .nx-flashcard__q::before {
+  content: "▾ ";
+}
+.nx-flashcard__q:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.nx-flashcard__q:focus-visible {
+  outline: 2px solid var(--color-nexus-purple);
+  outline-offset: -2px;
+}
+.nx-flashcard__a {
+  padding: 0.1rem 1rem 0.85rem 2rem;
+  color: #cbd5e1;
+  font-size: 0.95em;
+}
+.nx-flashcard__a p {
+  margin: 0.35rem 0;
+}
+
+/* ── Impresión / "Guardar como PDF" ──────────────────────────────────────
+   Al imprimir (o al elegir "Guardar como PDF" en el diálogo del navegador)
+   sale solo la nota, en blanco y negro, sin menús ni botones. */
+@media print {
+  .nx-header,
+  .nx-footer,
+  .nx-explorer-wrap,
+  .nx-toc-col,
+  #nx-top,
+  #nx-read-eta,
+  #nx-scroll-progress,
+  #three-bg,
+  .nx-aura,
+  #nx-search,
+  #nx-shortcuts,
+  .nx-note-tools,
+  .nx-note-layout a.nx-card,
+  .nx-marquee,
+  .nx-flashcards__cta {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .nx-note-layout {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  article > h1,
+  .note-prose h1,
+  .note-prose h2,
+  .note-prose h3,
+  .note-prose h4 {
+    color: #000 !important;
+    break-after: avoid;
+  }
+  .note-prose {
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .note-prose a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .note-prose pre,
+  .note-prose code,
+  .note-prose .nx-callout,
+  .note-prose .nx-flashcards {
+    background: #f6f6f8 !important;
+    color: #000 !important;
+    border-color: #cccccc !important;
+  }
+  .note-prose .nx-callout-title {
+    color: #000 !important;
+  }
+  .note-prose img,
+  .note-prose figure,
+  .note-prose table {
+    max-width: 100% !important;
+    break-inside: avoid;
+  }
+  @page {
+    margin: 16mm 14mm;
+  }
+}
+

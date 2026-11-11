@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import MotionToggle from "../components/MotionToggle.astro";
 import vault from "../data/vault.json";
+import { todasLasFlashcards } from "../lib/flashcards.mjs";
 
 function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short" }).toLowerCase();
@@ -30,6 +31,9 @@ const totalPdf = sems.reduce(
 
 const accent = (id) => coloresSem[id]?.c ?? "var(--color-nexus-blue)";
 const subEstado = (id) => coloresSem[id]?.t ?? "";
+
+// Tarjetas de repaso que ya vienen escritas en las notas
+const nTarjetas = todasLasFlashcards().length;
 
 // Franja de materias en loop infinito (marquee)
 const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
@@ -66,6 +70,14 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         <li>Gráficos y fórmulas</li>
         <li>ZIP por materia</li>
       </ul>
+      {
+        nTarjetas > 0 && (
+          <a href="/estudio/" class="nx-hero-study">
+            <span class="nx-hero-study__n">{nTarjetas}</span>
+            tarjetas de repaso esperando en tus notas → prepárate con ellas
+          </a>
+        )
+      }
       <div class="nx-bar mt-8 max-w-md"></div>
       <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
         {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} SEMESTRES
