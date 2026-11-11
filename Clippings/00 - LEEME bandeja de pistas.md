@@ -1742,3 +1742,7 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 >
 > - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
 
+**PUSHEADO `82bd9398`** — `2b4089d9` + `67da9a8f` (código) + `82bd9398` (este bloque) → merge
+`--ff-only` a `master` → `origin/master` = `master` = `82bd9398`. `origin/sesion/opencode-site` queda
+en `82bd9398`.
+
