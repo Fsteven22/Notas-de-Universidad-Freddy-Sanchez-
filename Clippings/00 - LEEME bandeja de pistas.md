@@ -1746,3 +1746,62 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 `--ff-only` a `master` → `origin/master` = `master` = `82bd9398`. `origin/sesion/opencode-site` queda
 en `82bd9398`.
 
+---
+
+### `opencode-site` — el titular ya no desaparece con las animaciones + Vercel Analytics — 10/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `8030bb03`):** corrección del bug del titular y analítica de visitas. Todo en
+>   `site/**` (mi zona): nada del vault, nada de `Universidad/**`, nada de `site/scripts/**`.
+>
+> - **Bug del titular: la frase desaparecía con las animaciones activas.** El dueño lo detectó al
+>   poner el movimiento en "Siempre": el h1 se quedaba en "¿Tuviste el PDF y" y la frase
+>   **"no sabes por dónde empezar?" se borraba de la pantalla**. En producción, confirmado.
+>   - **Causa:** `SplitText` (GSAP) parte el titular letra por letra, y cada letra pasa a ser un
+>     `<div>` inline-block. El degradado del `<span>` se pinta con `background-clip: text`, que
+>     pinta el fondo **sobre el texto del propio elemento**: al partirse el span, el fondo deja de
+>     pintarse detrás de las letras y, como el color es transparente (`color: transparent`), las
+>     letras quedan invisibles. El texto estaba en el DOM, pero no pintaba **ni un píxel**.
+>   - **Por qué llevaba tiempo sin verse:** solo pasaba con las animaciones activas. Con el sistema
+>     en "reducir movimiento" (o el interruptor en "Auto"/"Nunca") el `SplitText` no se ejecuta, el
+>     span queda entero y el degradado se ve bien. Por eso las capturas "en frío" salían
+>     correctas y el problema solo se veía al activar el movimiento a mano. **El titular anterior
+>     ("en un solo lugar.") tenía el mismo bug.**
+>   - **Arreglo (tres capas):**
+>     1. `SplitText` recibe `ignore: ".nx-brand-text"`: el span del degradado **no se parte** y la
+>        animación se aplica al resto del titular.
+>     2. Red de seguridad en CSS: si algo volviera a partir el span, sus letras reciben un color
+>        sólido (`--color-nexus-purple`) → se pierde la rampa, pero **el texto nunca se borra**.
+>     3. Comprobación de integridad en JS: si tras partir el titular se queda sin texto, se
+>        deshace la partición (`split.revert()`) y se deja el texto normal. El título de las notas
+>        recibe el mismo tratamiento.
+>
+> - **Verificación con evidencia de píxeles, no solo de estilos.** Nuevo script `check-titular.mjs`:
+>   carga la página por CDP (ancho exacto), comprueba el DOM **y captura la pantalla y decodifica el
+>   PNG en Node** (zlib + filtros PNG) para contar los píxeles realmente pintados dentro de la caja
+>   del span del degradado.
+>   - **Control negativo (producción, con el bug):** el span partido en **23 letras** y **0 píxeles
+>     violeta y 0 azules** en toda su caja (42.624 píxeles: 42.585 de fondo). Los 6.293 píxeles
+>     blancos del h1 eran solo de "¿Tuviste el PDF y".
+>   - **Después del arreglo:** `charsEnSpan` = **0** (el span no se parte) y **6.277 violeta +
+>     4.772 azules** a 1280 px; **3.500 + 2.603** a 390 px. Sin desborde en ambos anchos.
+>   - También comprobado con el movimiento apagado (`?motion=0`): todo igual de bien.
+>
+> - **Vercel Analytics.** `@vercel/analytics` 2.0.1 y `<Analytics />` al final del `<body>` de
+>   `Base.astro`, así que está en **todas** las páginas. El script se sirve desde el propio
+>   dominio (`/_vercel/insights/script.js`): **sin CDN de terceros** (comprobado: el HTML no tiene
+>   ningún `src="http..."` externo). Con esto ya se pueden ver visitas y páginas vistas en el panel
+>   de Vercel.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · **QA estático: 850 HTML (848 de
+>   contenido), 0 sin h1, 0 con h1 múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas
+>   preexistentes) · `CI-PRIVADO: OK` (18 patrones, 0 fugas) · titular verificado por píxeles a
+>   1280 px y 390 px, con animaciones activas y apagadas.
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): siguen igual que en las
+>     rondas anteriores. Ninguna está en la portada.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
