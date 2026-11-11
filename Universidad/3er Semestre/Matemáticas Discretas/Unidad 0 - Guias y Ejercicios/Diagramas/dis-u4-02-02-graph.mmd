@@ -1,0 +1,6 @@
+flowchart TB
+    P1["1️⃣ Escribir aₙ en función de aₙ₋₁"] --> P2["2️⃣ Sustituir aₙ₋₁ por su propia expresión"]
+    P2 --> P3["3️⃣ Repetir la sustitución varias veces"]
+    P3 --> P4{"¿Se reconoce el patrón?"}
+    P4 -->|"No"| P3
+    P4 -->|"Sí"| P5["4️⃣ Generalizar en función de n ✅"]
