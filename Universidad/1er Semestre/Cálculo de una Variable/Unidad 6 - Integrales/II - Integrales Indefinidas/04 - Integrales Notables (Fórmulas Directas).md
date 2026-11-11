@@ -393,7 +393,7 @@ tags: [MATG1045, unidad6, integrales-notables-formulas-directas, matemáticas, c
 > ### Las 20 Integrales Notables Fundamentales
 > [!info] 🖼️ Integrales Notables (Fórmulas Directas)
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-integrales-tabla-20-notables.jpg]]
 >
 > _Esta tabla contiene las fórmulas directas más importantes para la integración inmediata. Cada fórmula representa una antiderivada que debe memorizarse para resolver integrales de manera eficiente._
 >

@@ -1,0 +1,19 @@
+---
+title: "Integrales_Trigonométricas_01"
+---
+flowchart TD
+    A["∫ sinᵐ(x)·cosⁿ(x) dx"]
+    C1["m impar →<br/>u = cos(x), du = −sin(x) dx<br/>sobra una sin(x)"]
+    C2["n impar →<br/>u = sin(x), du = cos(x) dx<br/>sobra un cos(x)"]
+    C3["ambos pares →<br/>identidades de reducción:<br/>sin² = (1 − cos 2x)/2<br/>cos² = (1 + cos 2x)/2"]
+    C4["ambos impares →<br/>elige la sustitución<br/>más conveniente"]
+    A --> C1
+    A --> C2
+    A --> C3
+    A --> C4
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C3 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00

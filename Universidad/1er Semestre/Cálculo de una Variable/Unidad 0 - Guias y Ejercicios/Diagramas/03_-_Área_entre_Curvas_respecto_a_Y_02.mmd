@@ -1,0 +1,25 @@
+---
+title: "Área_entre_Curvas_respecto_a_Y_02"
+---
+flowchart TD
+    A["Bucle de x = y³ − 3y"]
+    S1["1. Intersecciones con el eje y:<br/>y(y² − 3) = 0 → y = 0, ±√3"]
+    S2["2. El bucle ocurre<br/>entre y = −√3 y y = √3"]
+    S3["3. Lados del bucle:<br/>para y en (−√3, 0): x > 0, derecha<br/>para y en (0, √3): x < 0, izquierda"]
+    S4["4. Área:<br/>A = ∫ desde −√3 hasta 0 de (y³ − 3y) dy<br/>+ ∫ desde 0 hasta √3 de −(y³ − 3y) dy"]
+    S5["Signo absoluto dentro de<br/>cada tramo: ¡el área nunca es negativa!"]
+    T["¿dx o dy?<br/>franjas horizontales con curvas<br/>x = f(y): mejor integrar en y<br/>franjas verticales: mejor en x"]
+    A --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    A --> T
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style S1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style S5 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style T fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

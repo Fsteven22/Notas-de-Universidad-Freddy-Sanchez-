@@ -1,0 +1,28 @@
+---
+title: "Cambio_de_Variable_en_Integrales_01"
+---
+flowchart TD
+    A["Objetivo:<br/>∫ f(g(x))·g′(x) dx"]
+    S1["1. Identificar<br/>u = g(x)"]
+    S2["2. Derivar<br/>du = g′(x) dx"]
+    S3["3. Sustituir<br/>∫ f(u) du"]
+    S4["4. Resolver<br/>integrar respecto a u"]
+    S5["5. Regresar<br/>u = g(x)"]
+    R["Resultado en la<br/>variable original"]
+    OK["Consejo:<br/>si g′(x) no aparece exacto,<br/>verifica si sobra un<br/>múltiplo constante"]
+    A --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> R
+    R --> OK
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style S1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S4 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S5 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style R fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style OK fill:#ffebee,stroke:#e53935,color:#4a1010

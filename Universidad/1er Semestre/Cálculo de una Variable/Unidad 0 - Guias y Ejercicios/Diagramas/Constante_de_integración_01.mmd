@@ -1,0 +1,22 @@
+---
+title: "Constante_de_integración_01"
+---
+flowchart TD
+    A["∫ f(x) dx = F(x) + C"]
+    B["C = constante de integración<br/>valores arbitrarios"]
+    C["d/dx de [F(x) + C] = F′(x) + 0 = f(x)"]
+    D["Por eso F(x) + C también<br/>es antiderivada de f"]
+    E["C representa a todas las<br/>antiderivadas posibles de f"]
+    G["En integrales definidas,<br/>las C se cancelan:<br/>[F(b)+C] − [F(a)+C] = F(b) − F(a)"]
+    A --> B
+    A --> C
+    C --> D
+    D --> E
+    E --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

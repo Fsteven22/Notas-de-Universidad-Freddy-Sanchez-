@@ -86,7 +86,7 @@ tags: [MATG1045, unidad6, antiderivadas-primitivas, matemáticas, cálculo, anti
 
 > [!info] 🖼️ Fórmulas Básicas de Antiderivadas
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/bc93763d-46e7-4187-9f53-1bd5847dcd28 1.jpg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-integrales-tabla-20-notables.jpg]]
 ## 📏 Propiedades de las Antiderivadas
 
 > [!tip] 📋 Propiedades Lineales

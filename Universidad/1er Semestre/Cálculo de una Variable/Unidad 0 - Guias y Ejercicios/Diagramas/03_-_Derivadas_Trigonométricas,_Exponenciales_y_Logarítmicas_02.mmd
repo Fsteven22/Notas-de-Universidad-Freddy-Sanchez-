@@ -1,0 +1,19 @@
+flowchart TD
+    A["Función Exponencial/Logarítmica"] --> B{"¿Qué tipo es?"}
+    
+    B -->|"e^x o ln(x)"| C["Fórmulas Naturales<br/>e^x → e^x<br/>ln(x) → 1/x"]
+    B -->|"Base a ≠ e"| D["Necesita ln(a)<br/>a^x → a^x·ln(a)<br/>log_a(x) → 1/(x·ln(a))"]
+    
+    C --> E{"¿Hay composición?"}
+    D --> E
+    
+    E -->|"Sí"| F["Aplicar Regla de la Cadena<br/>f(g(x)) → f'(g(x))·g'(x)"]
+    E -->|"No"| G["Aplicar fórmula directa"]
+    
+    F --> H["Resultado Final"]
+    G --> H
+    
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style F fill:#e3f2fd
+    style H fill:#ffebee

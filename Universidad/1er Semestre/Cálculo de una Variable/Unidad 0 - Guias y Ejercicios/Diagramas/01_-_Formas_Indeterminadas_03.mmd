@@ -1,0 +1,22 @@
+flowchart TD
+    A[Limite con posible 0/0] --> B[Sustituir directamente]
+    B --> C{Resultado es 0/0?}
+    C -->|No| D[Usar teoremas normales]
+    C -->|Si| E[Forma indeterminada 0/0]
+    E --> F{Hay radicales?}
+    F -->|Si| G[Racionalizar]
+    F -->|No| H{Se puede factorizar?}
+    G --> H
+    H -->|Si| I[Factorizar num y den]
+    H -->|No| J[Usar otras tecnicas]
+    I --> K[Cancelar factores comunes]
+    K --> L[Evaluar limite simplificado]
+    J --> M[L Hopital o sustitucion]
+    
+    style A fill:#e3f2fd
+    style E fill:#fff3e0
+    style G fill:#e8f5e8
+    style I fill:#e8f5e8
+    style K fill:#e8f5e8
+    style L fill:#f3e5f5
+    style D fill:#f3e5f5

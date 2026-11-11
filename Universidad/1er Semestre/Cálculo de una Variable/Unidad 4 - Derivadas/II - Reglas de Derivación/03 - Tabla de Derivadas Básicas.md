@@ -29,7 +29,7 @@ tags: [MATG1045, unidad4, tabla-de-derivadas-basicas, matemáticas, cálculo, de
 >
 > ### Las 13 Fórmulas Fundamentales
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20250824170857.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-15-formulas-dx.png]]
 >
 > _Esta tabla contiene las reglas de derivación esenciales que debes memorizar. Cada fórmula representa la derivada directa de las funciones elementales más importantes en cálculo diferencial._
 >
@@ -192,7 +192,7 @@ tags: [MATG1045, unidad4, tabla-de-derivadas-basicas, matemáticas, cálculo, de
 
 > [!info] 🖼️ Notas Recomendadas
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20250823130623.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-13-reglas-dx.png]]
 ---
 
 **Tags:** #MATG1045 #unidad4 #tabla-de-derivadas-basicas #matemáticas #cálculo #derivadas #fórmulas-básicas #referencia-rápida #cálculo-diferencial #tabla-derivadas

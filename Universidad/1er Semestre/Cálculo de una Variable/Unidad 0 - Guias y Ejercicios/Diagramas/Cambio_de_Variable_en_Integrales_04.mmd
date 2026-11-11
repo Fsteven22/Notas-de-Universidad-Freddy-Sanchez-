@@ -1,0 +1,31 @@
+---
+title: "Cambio_de_Variable_en_Integrales_04"
+---
+flowchart TD
+    A["Construcción de triángulos<br/>para regresar a la variable x"]
+    T1["Caso 1 · √(a² − x²)"]
+    T1a["hipotenusa a<br/>cateto opuesto x<br/>cateto adyacente √(a² − x²)"]
+    T1b["x = a·sin t ← t = arcsin(x/a)"]
+    T2["Caso 2 · √(a² + x²)"]
+    T2a["hipotenusa √(a² + x²)<br/>cateto opuesto x<br/>cateto adyacente a"]
+    T2b["x = a·tan t ← t = arctan(x/a)"]
+    T3["Caso 3 · √(x² − a²)"]
+    T3a["hipotenusa x<br/>cateto opuesto √(x² − a²)<br/>cateto adyacente a"]
+    T3b["x = a·sec t ← t = arcsec(x/a)"]
+    A --> T1
+    T1 --> T1a
+    T1a --> T1b
+    A --> T2
+    T2 --> T2a
+    T2a --> T2b
+    A --> T3
+    T3 --> T3a
+    T3a --> T3b
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style T1a fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style T1b fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style T2a fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style T2b fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style T3a fill:#e0f2f1,stroke:#009688,color:#00332e
+    style T3b fill:#e0f2f1,stroke:#009688,color:#00332e

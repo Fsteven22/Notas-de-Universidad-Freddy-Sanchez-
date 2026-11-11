@@ -138,7 +138,7 @@ tags: [MATG1045, unidad5, monotonia-y-puntos-criticos, matemáticas, cálculo, d
 
 > [!info] 🖼️ Diagrama de Flujo del Análisis
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/demo-funcion.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-analisis-grafica-cubica-x3-3x.png]]
 
 ## 🎨 Ejemplos Detallados
 

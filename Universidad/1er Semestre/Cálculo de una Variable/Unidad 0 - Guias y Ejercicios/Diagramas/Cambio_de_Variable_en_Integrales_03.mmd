@@ -1,0 +1,43 @@
+---
+title: "Cambio_de_Variable_en_Integrales_03"
+---
+flowchart TD
+    A["Sustituciones trigonométricas:<br/>3 casos según la raíz"]
+    C1["Caso 1: √(a² − x²)<br/>x = a·sin t"]
+    C1a["dx = a·cos t dt"]
+    C1b["√(a² − x²) = a·cos t"]
+    C1c["Triángulo: hip = a,<br/>op = x, ady = √(a² − x²)"]
+    C2["Caso 2: √(a² + x²)<br/>x = a·tan t"]
+    C2a["dx = a·sec² t dt"]
+    C2b["√(a² + x²) = a·sec t"]
+    C2c["Triángulo: hip = √(a² + x²),<br/>op = x, ady = a"]
+    C3["Caso 3: √(x² − a²)<br/>x = a·sec t"]
+    C3a["dx = a·sec t·tan t dt"]
+    C3b["√(x² − a²) = a·tan t"]
+    C3c["Triángulo: hip = x,<br/>op = √(x² − a²), ady = a"]
+    A --> C1
+    C1 --> C1a
+    C1 --> C1b
+    C1 --> C1c
+    A --> C2
+    C2 --> C2a
+    C2 --> C2b
+    C2 --> C2c
+    A --> C3
+    C3 --> C3a
+    C3 --> C3b
+    C3 --> C3c
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C1a fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C1b fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C1c fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2a fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2b fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2c fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C3 fill:#e0f2f1,stroke:#009688,color:#00332e
+    style C3a fill:#e0f2f1,stroke:#009688,color:#00332e
+    style C3b fill:#e0f2f1,stroke:#009688,color:#00332e
+    style C3c fill:#e0f2f1,stroke:#009688,color:#00332e

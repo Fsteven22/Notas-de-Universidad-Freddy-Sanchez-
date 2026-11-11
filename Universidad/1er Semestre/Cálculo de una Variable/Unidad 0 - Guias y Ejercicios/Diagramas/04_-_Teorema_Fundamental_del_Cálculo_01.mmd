@@ -1,0 +1,25 @@
+---
+title: "04_-_Teorema_Fundamental_del_Cálculo_01"
+---
+flowchart TD
+    A["TFC · Parte I<br/>d/dx de ∫[a→x] f(t) dt = f(x)"]
+    B["Condición:<br/>f continua en [a, b]"]
+    C["Definir F(x) = ∫[a→x] f(t) dt"]
+    D["F es diferenciable en (a, b)"]
+    E["F′(x) = f(x)"]
+    G["Interpretación:<br/>F(x) = área acumulada desde a hasta x"]
+    H["La tasa de cambio del área<br/>es la altura de f en x"]
+    B --> A
+    A --> C
+    C --> D
+    D --> E
+    E --> G
+    G --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style H fill:#ffebee,stroke:#e53935,color:#4a1010

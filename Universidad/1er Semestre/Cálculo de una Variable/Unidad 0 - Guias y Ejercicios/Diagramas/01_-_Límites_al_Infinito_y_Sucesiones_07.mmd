@@ -1,0 +1,18 @@
+flowchart TD
+    A["Sucesion {an}"] --> B["Es monotona?"]
+    B -->|Si| C["Es acotada?"]
+    B -->|No| D["Analizar otros metodos"]
+    
+    C -->|Si| E["CONVERGE por Teorema Monotono"] 
+    C -->|No| F["DIVERGE"]
+    
+    D --> G["Teorema del Sandwich"]
+    D --> H["Analisis directo"]
+    
+    G --> I["Cumple condiciones?"]
+    I -->|Si| E
+    I -->|No| J["Otros metodos"]
+    
+    style E fill:#4caf50,color:#fff
+    style F fill:#f44336,color:#fff
+    style A fill:#2196f3,color:#fff

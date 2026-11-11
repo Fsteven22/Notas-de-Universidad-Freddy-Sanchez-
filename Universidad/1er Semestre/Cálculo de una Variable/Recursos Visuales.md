@@ -71,7 +71,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 
 > [!tip] 📋 Ver también
 >
-> - `Unidad 0 - Guias y Ejercicios/00 - Recursos Unidad 0.md` - índice de guías, guías de estudio y material de la unidad.
+> - [[Índice de Contenido.md|Índice de Contenido]] — índice de la materia: unidades, diagramas y figuras disponibles.
 
 ## 📚 Referencias
 

@@ -1,0 +1,14 @@
+graph TB
+    A[Integral Impropia] --> B[Convergente]
+    A --> C[Divergente]
+    B --> D["Convergencia Absoluta<br/>∫|f(x)|dx converge"]
+    B --> E["Convergencia Condicional<br/>∫f(x)dx converge, ∫|f(x)|dx diverge"]
+    C --> F["Diverge a +∞<br/>Límite = +∞"]
+    C --> G["Diverge a -∞<br/>Límite = -∞"]
+    C --> H[Oscila<br/>Límite no existe]
+    I[Ejemplos Clásicos] --> J["∫₁^∞ 1/x² dx = 1 (Converge)<br/>∫₁^∞ 1/x dx = ∞ (Diverge)<br/>∫₀¹ 1/√x dx = 2 (Converge)"]
+    style A fill:#e8f5e8
+    style B fill:#c8e6c9
+    style C fill:#ffcdd2
+    style D fill:#e1f5fe
+    style E fill:#fff3e0
