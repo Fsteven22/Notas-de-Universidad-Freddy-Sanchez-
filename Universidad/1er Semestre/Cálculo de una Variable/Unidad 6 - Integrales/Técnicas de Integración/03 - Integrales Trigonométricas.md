@@ -21,6 +21,12 @@ tags: [MATG1045, unidad6, integrales-trigonometricas, calculo, integrales, trigo
 > [!info] 🖼️ 1️⃣ Potencias de Seno y Coseno
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_Trigonométricas_01.svg]]
+>
+> **Se lee así:** Una caja raíz con el patrón general abre cuatro ramas en abanico, y cada rama es un rectángulo con la condición de los exponentes y el camino a seguir. No hay rombos ni bifurcaciones posteriores: las cuatro hojas cuelgan al mismo nivel y cubren desde el caso de un solo exponente impar hasta el de los dos impares, que se resuelve eligiendo.
+>
+> **Por qué importa:** Fíjate en que este esquema es un árbol de una sola pregunta: mirar si los exponentes son pares o impares. Te ahorra probar sustituciones al aire en una integral trigonométrica, que es donde más tiempo se pierde.
+>
+> **Ejemplo:** Con $\int \sin^3(x) \cos^2(x) dx$ de la nota, el exponente impar del seno te manda a la primera rama, con $u = \cos(x)$, y de ahí sale $-\frac{\cos^3(x)}{3} + \frac{\cos^5(x)}{5} + C$.
 
 > [!example] 🔢 Ejemplo 1: Exponente Impar **Resolver**: $\int \sin^3(x) \cos^2(x) , dx$
 >
@@ -51,6 +57,12 @@ tags: [MATG1045, unidad6, integrales-trigonometricas, calculo, integrales, trigo
 > [!info] 🖼️ 2️⃣ Potencias de Tangente y Secante
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_Trigonométricas_02.svg]]
+>
+> **Se lee así:** El esquema repite la forma de la raíz con cuatro ramas en abanico, pero ahora las condiciones se leen sobre los exponentes de tangente y secante. Dos de las ramas proponen una sustitución directa con su diferencial, la tercera manda reescribir una potencia repetidamente y la última no fija sustitución, sino que indica que hay que combinar métodos o reducir.
+>
+> **Por qué importa:** Fíjate en que la estructura es idéntica a la del seno y el coseno, así que aprendes un solo criterio de lectura. Esto te sirve para detectar en segundos el caso par-impar, que es el que más se confunde y donde menos sustituciones funcionan.
+>
+> **Ejemplo:** Con $\int \tan^3(x) \sec^4(x) dx$ de la nota, el exponente par de la secante te lleva a la primera rama, con $u = \tan(x)$, y la integral se vuelve $\int u^3(1+u^2) du$.
 
 > [!example] 🔢 Ejemplo 3: Secante Par **Resolver**: $\int \tan^3(x) \sec^4(x) , dx$
 >

@@ -104,6 +104,12 @@ tags: [MATG1045, unidad6, cambio-de-variable-en-integrales, calculo, integrales,
 > [!info] 🖼️ Integrales Definidas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Cambio_de_Variable_en_Integrales_02.svg]]
+>
+> **Se lee así:** De una caja inicial con la integral definida salen dos ramas paralelas, una por cada vía. La primera se abre en dos cajas hermanas con los valores de la variable auxiliar en los extremos y desemboca en una caja con la integral ya escrita en la variable nueva; la segunda baja en línea recta hasta una caja con el resultado antiderivativo en la variable original. Las dos convergen en una caja final que pide elegir la vía con menos álgebra.
+>
+> **Por qué importa:** Fíjate en que las dos ramas llegan al mismo número por caminos distintos, y el esquema te hace comparar antes de calcular. Esto te sirve para no arrastrar la variable auxiliar hasta el final y para elegir rápido la vía que te da menos trabajo.
+>
+> **Ejemplo:** Con $\int_0^1 2x e^{x^2} dx$ de la nota, la rama de cambiar límites lleva a $u = x^2$ con extremos 0 y 1 y a $\int_0^1 e^u du$, mientras la otra pide integrar primero y evaluar al final.
 
 > [!example] 🔢 Ejemplo de Integral Definida **Resolver**: $\int_0^1 2x e^{x^2} , dx$
 >

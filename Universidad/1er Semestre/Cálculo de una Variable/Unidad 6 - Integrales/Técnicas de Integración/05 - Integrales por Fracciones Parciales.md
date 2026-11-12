@@ -58,6 +58,12 @@ tags: [MATG1045, unidad6, integrales-por-fracciones-parciales, matemáticas, cá
 > [!tip] 🧮 **Paso 3: Establecer la descomposición**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_por_Fracciones_Parciales_01.svg]]
+>
+> **Se lee así:** Es una cadena horizontal de rectángulos unidos por flechas rectas, sin rombos ni bifurcaciones: cada caja es un paso y el orden de las flechas impone el orden de trabajo. La cadena arranca en el objetivo general y termina en una caja de cierre que manda comprobar el resultado derivando.
+>
+> **Por qué importa:** Fíjate en que el diagrama es una lista de control y no una encrucijada: el error típico es saltarse la verificación de grados o la factorización completa. Te sirve como orden de trabajo para no inventarte la descomposición antes de tener el denominador factorizado.
+>
+> **Ejemplo:** Con $\int \frac{x+5}{x^2+x-2} dx$ de la nota, la cadena te lleva de la verificación de grados a factorizar $(x+2)(x-1)$, declarar las constantes $A$ y $B$, integrar cada parte y cerrar derivando para comprobar.
 
 > [!tip] 🧩 **Paso 4: Resolver para las constantes**
 >
@@ -153,6 +159,12 @@ tags: [MATG1045, unidad6, integrales-por-fracciones-parciales, matemáticas, cá
 > [!info] 🖼️ Visualización Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_por_Fracciones_Parciales_03.svg]]
+>
+> **Se lee así:** Es un árbol de recuadros que baja por pasos: del integrando inicial a la descomposición propuesta, luego a la igualdad de la que salen dos cajas hermanas, una por cada valor de $x$ donde se evalúa. Esas dos cajas vuelven a unirse en la integral ya descompuesta, que desciende en línea recta por la antiderivada, su forma compacta y un recuadro final de comprobación por derivación.
+>
+> **Por qué importa:** Fíjate en que los dos caminos de constantes se resuelven por separado y luego convergen, de modo que la respuesta queda determinada por completo. Esto te sirve como plantilla para cualquier racional con dos factores lineales: descomponer, evaluar en las raíces, integrar y verificar.
+>
+> **Ejemplo:** Con la integral de la nota, la caja de la raíz $x = 1$ da $B = 2$ y la de $x = -2$ da $A = -1$, y de ahí sale $-\ln|x+2| + 2\ln|x-1| + C$, que se puede compactar en un solo logaritmo.
 
 > [!info] 📊 **Interpretación gráfica**
 >

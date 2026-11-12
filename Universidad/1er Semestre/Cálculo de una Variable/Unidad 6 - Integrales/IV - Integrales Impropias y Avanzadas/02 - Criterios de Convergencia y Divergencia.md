@@ -31,6 +31,12 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_01.svg]]
 >
+> **Se lee así:** La raíz es una caja de series infinitas que se bifurca en dos ramas, convergentes y divergentes. La rama convergente se abre otra vez en dos hojas, una para la convergencia absoluta y otra para la condicional, mientras la rama divergente se abre en tres, hacia el infinito positivo, el infinito negativo y la oscilación sin límite. Aparte, más abajo, hay una caja que anuncia casos típicos y apunta a una sola caja con su lista.
+>
+> **Por qué importa:** Fíjate en que el esquema te da el mapa completo de los desenlaces posibles antes de aplicar un criterio. Esto te sirve para saber qué estás buscando y para no responder solo converge o diverge, sino **de qué tipo** es la convergencia o la divergencia.
+>
+> **Ejemplo:** Con la serie geométrica $\sum_{n=0}^{\infty} r^n$ de la nota, si $|r| < 1$ encajas en la hoja de convergencia absoluta y si $|r| \geq 1$ en una de las tres hojas de divergencia.
+>
 
 > [!tip] Criterios de Convergencia para Series Positivas 🔬
 >
@@ -280,6 +286,12 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 > ### Estados de una Integral Impropia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_03.svg]]
+>
+> **Se lee así:** Arranca con una caja única de integral impropia y se divide en dos ramas, una de resultados convergentes y otra divergentes. La primera vuelve a partirse en dos hojas, la de convergencia absoluta y la de condicional; la segunda se abre en tres, la que crece a infinito positivo, la que cae a infinito negativo y la que oscila sin límite. Debajo, aparte, una caja de casos clásicos apunta a la lista de tres integrales ya resueltas.
+>
+> **Por qué importa:** Fíjate en que la estructura es la misma que la de las series, así que puedes reutilizar el mismo esquema mental en las dos unidades. Esto te sirve para clasificar el resultado de una integral impropia antes de calcularlo y para saber que la **condicional** exige revisar el valor absoluto.
+>
+> **Ejemplo:** Con $\int_1^{\infty} \frac{1}{x^2} dx$ de la nota, el resultado 1 te lleva a la hoja de convergencia absoluta, mientras que $\int_1^{\infty} \frac{1}{x} dx$ se va a una de las hojas de divergencia.
 >
 
 > [!tip] Criterios de Convergencia para Integrales Tipo I (∞) 🔬

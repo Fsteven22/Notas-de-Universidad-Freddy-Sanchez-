@@ -395,6 +395,12 @@ tags: [MATG1045, unidad6, integrales-notables-formulas-directas, matemáticas, c
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-integrales-tabla-20-notables.jpg]]
 >
+> **Se lee así:** Es una tabla vertical de veinte filas numeradas: el símbolo integral abre cada fila, el integrando va al centro y la antiderivada termina a la derecha con su constante de integración. Las filas se agrupan por familias, primero las algebraicas, luego las exponenciales, las trigonométricas, las inversas y al final las hiperbólicas. No hay flechas ni decisiones, es un **catálogo** para consultar en orden.
+>
+> **Por qué importa:** Fíjate en que tenerlas numeradas y juntas te ahorra buscar cada fórmula en la nota mientras resuelves. Esto te sirve como **lista de control**: si reconoces la forma del integrando, la fila te dice qué fórmula aplicar y con qué restricciones de dominio.
+>
+> **Ejemplo:** Con $\int \frac{4}{x^2+9}dx$ de la nota, buscas la fila de la integral arctangente y aplicas $\frac{1}{a}\arctan(x/a) + C$ con $a = 3$, y sale $\frac{4}{3}\arctan(x/3) + C$.
+>
 > _Esta tabla contiene las fórmulas directas más importantes para la integración inmediata. Cada fórmula representa una antiderivada que debe memorizarse para resolver integrales de manera eficiente._
 >
 

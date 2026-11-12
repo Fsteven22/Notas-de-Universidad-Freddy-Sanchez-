@@ -148,6 +148,12 @@ tags: [MATG1045, unidad6, asintotas-en-integrales-definidas, matemáticas, asín
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Asíntotas_en_Integrales_Definidas_02.svg]]
 >
+> **Se lee así:** Es un árbol que arranca con una caja que enuncia el caso a resolver y baja a una caja de descomposición, desde la que salen dos ramas paralelas. Cada rama termina en un recuadro de veredicto, diverge en una y converge en la otra, y ambas flechas se reencuentran en una caja final común que cierra el recorrido con la conclusión sobre la integral total.
+>
+> **Por qué importa:** Fíjate en que el esquema te obliga a separar el integrando en partes y a juzgar cada una por separado antes de sumar. Esto te evita el error típico de declarar convergente la integral porque una de las partes lo es, y te muestra **por qué** una parte divergente arruina el total.
+>
+> **Ejemplo:** Con $\int_1^{\infty} \frac{x + \sin x}{x^2} dx$ de la nota, la rama de $\frac{1}{x}$ diverge, la de $\frac{\sin x}{x^2}$ converge por comparación con $\frac{1}{x^2}$ y la caja final concluye que la integral total diverge.
+>
 > ### Técnicas de Evaluación
 > 4. **Identificar todas las asíntotas** en el intervalo de integración
 > 5. **Determinar el tipo** de asíntota (vertical, horizontal, oblicua)

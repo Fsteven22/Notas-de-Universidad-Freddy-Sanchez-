@@ -411,6 +411,12 @@ tags: [MATG1045, unidad6, teoremas-especiales-para-integrales-definidas, matemat
 > [!info] 🖼️ Interpretación Geométrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_03.svg]]
+>
+> **Se lee así:** El diagrama es una cadena vertical de rectángulos: una caja inicial con el nombre del teorema baja por flecha a las hipótesis, luego a la existencia de un punto interior, y desde ahí el flujo se abre en dos ramas paralelas. La rama geométrica describe un rectángulo y se vuelve a bifurcar en dos cajas hermanas, la base y la coincidencia de áreas; la otra rama cierra en una caja que señala el carácter promedio de ese valor en todo el intervalo.
+>
+> **Por qué importa:** Fíjate en que el esquema separa la parte lógica, hipótesis y existencia de $c$, de la parte geométrica, el rectángulo. Esto te sirve para justificar **por qué** el teorema exige continuidad y para leer el resultado como un área y no solo como un cociente.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $[0,3]$ de la nota, el rectángulo del esquema te dice que $\int_0^3 x^2 dx = 9$ es el área de un rectángulo de base 3 y altura 3, y el punto donde se alcanza esa altura es $c = \sqrt{3}$.
 
 > [!tip] 🎯 **Interpretación del Valor Medio** El número $\frac{1}{b-a}\int_a^b f(x) dx$ se llama el **valor medio** (o **promedio**) de $f$ en $[a,b]$.
 >
@@ -541,6 +547,12 @@ tags: [MATG1045, unidad6, teoremas-especiales-para-integrales-definidas, matemat
 > [!info] 🖼️ Relación con el Teorema del Valor Medio para Derivadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_05.svg]]
+>
+> **Se lee así:** Es un árbol con una caja raíz sobre un viaje y dos ramas: una va a la caja que fija la fórmula del promedio y la otra a la que invoca el teorema para dar la existencia de un instante concreto. Esa segunda rama baja en cadena hasta una caja que marca la diferencia entre calcular el promedio y garantizar que se alcanza, y remata en una caja con la imagen del velocímetro.
+>
+> **Por qué importa:** Fíjate en que el dibujo separa dos cosas que suelen confundirse: el promedio se obtiene dividiendo, y el teorema solo añade que ese número **aparece** en algún instante. Esto te sirve para explicar la diferencia entre velocidad media y velocidad instantánea en un problema de movimiento.
+>
+> **Ejemplo:** En un viaje con posición $s(t)$ de $a$ a $b$, el esquema te lleva a calcular $v_{prom} = \frac{s(b)-s(a)}{b-a}$ y luego a afirmar que hubo un momento en que el velocímetro marcó exactamente ese valor.
 
 > [!info] 🔄 **Conexión Profunda** Si aplicamos el Segundo Teorema Fundamental del Cálculo a una función $F(x) = \int_a^x f(t)dt$:
 >
