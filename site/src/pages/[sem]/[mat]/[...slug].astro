@@ -340,4 +340,71 @@ const matUrl = `/${sem}/${mat}/`;
       aplicar();
     })();
   </script>
+
+  <script>
+    /**
+     * Aviso de "sección no encontrada".
+     *
+     * Un puntero de la lectura puede apuntar a una sección que no existe
+     * (una de esas 12 anclas del vault que apuntan a un apartado que no
+     * está en la nota). Antes, al hacer clic no pasaba nada: el navegador
+     * se quedaba arriba y no había ni un indicio de qué había pasado. Ahora
+     * se dice qué pasó y se ofrece el índice de la materia.
+     */
+    (function () {
+      var matUrl = document.getElementById("nx-aviso-ancla")?.getAttribute("data-mat") || "";
+
+      function revisar() {
+        var h = location.hash || "";
+        if (h.length < 2) return;
+        var id = "";
+        try {
+          id = decodeURIComponent(h.slice(1));
+        } catch (e) {
+          id = h.slice(1);
+        }
+        if (!id) return;
+        var existe = document.getElementById(id);
+        if (!existe) {
+          try {
+            existe = document.querySelector('[id="' + CSS.escape(id) + '"]');
+          } catch (e) {
+            existe = null;
+          }
+        }
+        var aviso = document.getElementById("nx-aviso-ancla");
+        if (!aviso) return;
+        if (existe) {
+          aviso.hidden = true;
+          return;
+        }
+        var et = aviso.querySelector("[data-nx-aviso-t]");
+        if (et) et.textContent = id.replace(/-/g, " ");
+        aviso.hidden = false;
+      }
+
+      document.addEventListener("astro:page-load", function () {
+        setTimeout(revisar, 120);
+      });
+      document.addEventListener("hashchange", revisar);
+      document.addEventListener("click", function (ev) {
+        var t = ev.target;
+        if (t instanceof Element && t.closest("[data-nx-aviso-cerrar]")) {
+          var aviso = document.getElementById("nx-aviso-ancla");
+          if (aviso) aviso.hidden = true;
+        }
+      });
+      setTimeout(revisar, 400);
+    })();
+  </script>
+
+  <div id="nx-aviso-ancla" class="nx-aviso-ancla" data-mat={matUrl} hidden>
+    <p class="nx-aviso-ancla__t">
+      No encontramos la sección <strong data-nx-aviso-t></strong> en esta nota.
+    </p>
+    <div class="nx-aviso-ancla__acc">
+      <a href={matUrl}>Ver el índice de la materia</a>
+      <button type="button" data-nx-aviso-cerrar aria-label="Cerrar el aviso">×</button>
+    </div>
+  </div>
 </Base>

@@ -58,6 +58,28 @@ const { scope = "" } = Astro.props;
         </button>
       </div>
 
+      {/* Filtros por semestre y materia: el buscador ya traía los
+          resultados de la materia actual primero ("scope"), pero no había
+          forma de quedarse solo con un semestre o con una materia. */}
+      <div
+        id="nx-search-filters"
+        class="hidden items-center gap-2 border-b border-[rgba(255,255,255,0.06)] px-4 py-2"
+      >
+        <select id="nx-search-sem" class="nx-search-sel" aria-label="Filtrar por semestre">
+          <option value="">Todos los semestres</option>
+        </select>
+        <select id="nx-search-mat" class="nx-search-sel" aria-label="Filtrar por materia">
+          <option value="">Todas las materias</option>
+        </select>
+        <button
+          id="nx-search-clear"
+          type="button"
+          class="ml-auto shrink-0 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] transition hover:text-white"
+        >
+          Quitar filtros
+        </button>
+      </div>
+
       <div id="nx-search-list" class="max-h-[52vh] min-h-[180px] overflow-y-auto p-2 nx-scroll"></div>
 
       <div id="nx-search-foot" class="flex items-center justify-between gap-3 border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
@@ -82,6 +104,54 @@ const { scope = "" } = Astro.props;
   }
   .nx-scroll::-webkit-scrollbar { width: 6px; }
   .nx-scroll::-webkit-scrollbar-thumb { background: rgba(0, 170, 255, 0.18); border-radius: 6px; }
+  .nx-search-sel {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.45rem;
+    color: #d1d5db;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 1.6rem 0.3rem 0.55rem;
+    max-width: 11rem;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
+      linear-gradient(135deg, #64748b 50%, transparent 50%);
+    background-position: calc(100% - 11px) 55%, calc(100% - 7px) 55%;
+    background-size: 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+  }
+  .nx-search-sel:focus-visible {
+    outline: 2px solid var(--color-nexus-purple);
+    outline-offset: 1px;
+  }
+  .nx-search-sel option {
+    background: #0a0e1a;
+    color: #e5e7eb;
+  }
+  /* Búsquedas recientes */
+  #nx-search-list .nx-hist {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-radius: 0.55rem;
+    color: #cbd5e1;
+    font-size: 13px;
+    transition: background 0.14s ease, color 0.14s ease;
+  }
+  #nx-search-list .nx-hist:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+  }
+  #nx-search-list .nx-hist span {
+    color: var(--color-nexus-muted);
+    font-family: var(--font-mono);
+    font-size: 10px;
+  }
 </style>
 
 <script>
@@ -109,6 +179,29 @@ const { scope = "" } = Astro.props;
   let selected = -1;
   /** semestre/materia de la página actual (lo pone data-nx-scope) */
   let scope = "";
+  /** filtros del buscador */
+  let filtroSem = "";
+  let filtroMat = "";
+  /** historial de búsquedas (localStorage) */
+  const KEY_HIST = "nx-busq-historial";
+  let historial: string[] = [];
+  try {
+    const h = JSON.parse(localStorage.getItem(KEY_HIST) || "[]");
+    historial = Array.isArray(h) ? h.filter((x) => typeof x === "string") : [];
+  } catch (e) {
+    historial = [];
+  }
+
+  function guardarHistorial(q: string) {
+    const limpio = q.trim();
+    if (!limpio) return;
+    historial = [limpio, ...historial.filter((x) => x !== limpio)].slice(0, 8);
+    try {
+      localStorage.setItem(KEY_HIST, JSON.stringify(historial));
+    } catch (e) {
+      /* sin almacenamiento: el historial es solo de esta visita */
+    }
+  }
   let ctx: {
     overlay: HTMLElement;
     input: HTMLInputElement;
@@ -279,11 +372,27 @@ const { scope = "" } = Astro.props;
   function render(query: string) {
     if (!ctx) return;
     const terms = norm(query).trim().split(/\s+/).filter(Boolean);
+    mostrarFiltros(terms.length > 0 || !!filtroSem || !!filtroMat);
 
     if (!terms.length) {
-      const recent = [...idx].sort((a, b) => (b.mt ?? 0) - (a.mt ?? 0)).slice(0, 6);
+      // con un filtro puesto, "RECIENTES" también se filtra: si no, el
+      // desplegable dice "1er Semestre" y la lista enseña otras materias
+      const recent = [...idx]
+        .filter((n) => (!filtroSem || n.s === filtroSem) && (!filtroMat || n.m === filtroMat))
+        .sort((a, b) => (b.mt ?? 0) - (a.mt ?? 0))
+        .slice(0, 6);
       hits = recent;
+      const histHtml = historial.length
+        ? `<p class="px-2 pb-1.5 pt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">TUS BÚSQUEDAS</p>` +
+          historial
+            .map(
+              (q) =>
+                `<button type="button" class="nx-hist" data-q="${esc(q)}"><span>↺</span>${esc(q)}</button>`
+            )
+            .join("")
+        : "";
       ctx.listEl.innerHTML =
+        histHtml +
         `<p class="px-2 pb-1.5 pt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">RECIENTES</p>` +
         recent.map((n, i) => hitHtml(n, [], i, true)).join("");
       ctx.countEl.textContent = idx.length ? `${idx.length} NOTAS INDEXADAS` : "";
@@ -308,21 +417,41 @@ const { scope = "" } = Astro.props;
     }
 
     hits = encontrados
-      .sort((a, b) => (b.sc ?? 0) - (a.sc ?? 0) || a.t.localeCompare(b.t, "es"))
-      .slice(0, 15);
+      .sort((a, b) => (b.sc ?? 0) - (a.sc ?? 0) || a.t.localeCompare(b.t, "es"));
+
+    // Filtros por semestre y materia (se aplican antes de recortar: así el
+    // filtro también afecta a los resultados de dentro de las notas y no se
+    // quedan fuera los que estaban por debajo del corte).
+    const filtrados = hits.filter((h) => {
+      if (filtroSem && h.s !== filtroSem) return false;
+      if (filtroMat && h.m !== filtroMat) return false;
+      return true;
+    });
+    const habiaResultados = hits.length > 0;
+    hits = filtrados.slice(0, 15);
 
     if (!hits.length) {
-      hits = [];
       selected = -1;
+      const porFiltro = habiaResultados && (filtroSem || filtroMat);
       ctx.listEl.innerHTML = `
         <div class="flex flex-col items-center justify-center px-4 py-10 text-center">
           <svg class="size-8 text-[rgba(255,255,255,0.15)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
           </svg>
-          <p class="mt-3 text-sm text-[#e5e7eb]">Sin resultados para <span class="text-white">"${esc(query.trim())}"</span></p>
-          <p class="mt-1 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">PRUEBA CON MENOS PALABRAS</p>
+          <p class="mt-3 text-sm text-[#e5e7eb]">${
+            porFiltro
+              ? "Sin resultados con ese filtro"
+              : `Sin resultados para <span class="text-white">"${esc(query.trim())}"</span>`
+          }</p>
+          ${
+            porFiltro
+              ? `<button type="button" class="nx-hist mt-2" data-clear-filters>Quitar los filtros y ver todo</button>`
+              : `<p class="mt-1 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">PRUEBA CON MENOS PALABRAS</p>`
+          }
         </div>`;
-      ctx.countEl.textContent = "0 COINCIDENCIAS";
+      ctx.countEl.textContent = porFiltro
+        ? "0 COINCIDENCIAS CON EL FILTRO"
+        : "0 COINCIDENCIAS";
       return;
     }
 
@@ -342,6 +471,52 @@ const { scope = "" } = Astro.props;
       el.classList.toggle("is-selected", i === selected);
     });
     (ctx.listEl.querySelector(".nx-hit.is-selected") as HTMLElement | null)?.scrollIntoView({ block: "nearest" });
+  }
+
+  /* ── Filtros por semestre y materia ─────────────────────────────────── */
+
+  const selSem = () => document.getElementById("nx-search-sem") as HTMLSelectElement | null;
+  const selMat = () => document.getElementById("nx-search-mat") as HTMLSelectElement | null;
+
+  /** Rellena los desplegables con lo que hay en el índice. */
+  function poblarFiltros() {
+    const s = selSem();
+    const m = selMat();
+    if (!s || !m || !idx.length) return;
+
+    const semestres = [...new Set(idx.map((n) => n.s).filter(Boolean))].sort((a, b) =>
+      a.localeCompare(b, "es", { numeric: true })
+    );
+    s.innerHTML =
+      `<option value="">Todos los semestres</option>` +
+      semestres.map((x) => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    s.value = filtroSem;
+
+    const materias = [...new Set(idx.filter((n) => !filtroSem || n.s === filtroSem).map((n) => n.m).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, "es"));
+    m.innerHTML =
+      `<option value="">Todas las materias</option>` +
+      materias.map((x) => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    m.value = filtroMat;
+  }
+
+  /** La fila de filtros solo se muestra cuando hay algo que filtrar. */
+  function mostrarFiltros(visible: boolean) {
+    const f = document.getElementById("nx-search-filters");
+    if (!f) return;
+    f.classList.toggle("hidden", !visible);
+    f.classList.toggle("flex", visible);
+  }
+
+  function limpiarFiltros() {
+    filtroSem = "";
+    filtroMat = "";
+    const s = selSem();
+    const m = selMat();
+    if (s) s.value = "";
+    if (m) m.value = "";
+    poblarFiltros();
+    if (ctx) render(ctx.input.value);
   }
 
   function openSearch() {
@@ -400,9 +575,58 @@ const { scope = "" } = Astro.props;
       if (e.target === overlay) closeSearch();
     });
     listEl.addEventListener("click", (e) => {
-      const btn = (e.target as HTMLElement).closest(".nx-hit") as HTMLElement | null;
-      if (btn?.dataset.url) location.href = btn.dataset.url;
+      const t = e.target as HTMLElement;
+      // búsqueda del historial: se vuelve a escribir y se busca
+      const hist = t.closest(".nx-hist[data-q]") as HTMLElement | null;
+      if (hist?.dataset.q) {
+        input.value = hist.dataset.q;
+        render(hist.dataset.q);
+        input.focus();
+        return;
+      }
+      // quitar los filtros desde el mensaje de "sin resultados"
+      if (t.closest("[data-clear-filters]")) {
+        limpiarFiltros();
+        return;
+      }
+      const btn = t.closest(".nx-hit") as HTMLElement | null;
+      if (btn?.dataset.url) {
+        guardarHistorial(input.value);
+        location.href = btn.dataset.url;
+      }
     });
+
+    // Filtros
+    const s = selSem();
+    const m = selMat();
+    if (s && !s.dataset.nxBound) {
+      s.dataset.nxBound = "1";
+      s.addEventListener("change", () => {
+        filtroSem = s.value;
+        // la lista de materias depende del semestre elegido
+        const materiaAntes = filtroMat;
+        filtroMat = "";
+        poblarFiltros();
+        const mm = selMat();
+        if (mm && materiaAntes && [...mm.options].some((o) => o.value === materiaAntes)) {
+          mm.value = materiaAntes;
+          filtroMat = materiaAntes;
+        }
+        render(input.value);
+      });
+    }
+    if (m && !m.dataset.nxBound) {
+      m.dataset.nxBound = "1";
+      m.addEventListener("change", () => {
+        filtroMat = m.value;
+        render(input.value);
+      });
+    }
+    const clear = document.getElementById("nx-search-clear");
+    if (clear && !clear.dataset.nxBound) {
+      clear.dataset.nxBound = "1";
+      clear.addEventListener("click", limpiarFiltros);
+    }
     document.querySelectorAll<HTMLElement>(".nx-search-open").forEach((b) => {
       if (b.dataset.nxSearchBound) return;
       b.dataset.nxSearchBound = "1";
@@ -429,10 +653,21 @@ const { scope = "" } = Astro.props;
         return;
       }
       if (e.key === "Escape") { e.preventDefault(); closeSearch(); }
+      // Con el campo vacío, la flecha arriba recalls la última búsqueda.
+      if (e.key === "ArrowUp" && ctx && !ctx.input.value && historial.length) {
+        e.preventDefault();
+        ctx.input.value = historial[0];
+        render(ctx.input.value);
+        return;
+      }
       if (e.key === "ArrowDown") { e.preventDefault(); if (selected < hits.length - 1) { selected++; updateSelected(); } }
       if (e.key === "ArrowUp") { e.preventDefault(); if (selected > 0) { selected--; updateSelected(); } }
       if (e.key === "Enter") {
         const h = selected >= 0 ? hits[selected] : null;
+        // OJO: este manejador vive fuera de bind(), así que `input` no
+        // existe aquí: el campo se pide a través de ctx.
+        const consulta = ctx ? ctx.input.value : "";
+        guardarHistorial(consulta);
         if (h) location.href = h.anchor ? `${h.u}#${h.anchor}` : h.u;
       }
     });
@@ -445,9 +680,11 @@ const { scope = "" } = Astro.props;
 
   bind();
   ensureIndex();
+  poblarFiltros();
   document.addEventListener("astro:page-load", async () => {
     bind();
     await ensureIndex();
+    poblarFiltros();
   });
 </script>
 
