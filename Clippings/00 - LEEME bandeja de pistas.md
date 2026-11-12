@@ -1701,3 +1701,79 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 **PUSHEADO `3c5680e6`** — `6348f206` (código) + `3c5680e6` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `3c5680e6`. `origin/sesion/opencode-site` queda en `3c5680e6`.
 
+
+
+---
+
+> [!success] `Cálculo de una Variable`: contrato propio, fase mecánica, 183 fuentes `.mmd` y lecturas R14 — **0 hallazgos**
+>
+> **Encargo (09/11/2026):** *"quiero que el formato que tienen sbd lo muevas a calculo de una variable,
+> con los svg y las explicaciones y todo eso"*.
+>
+> **Qué se hizo**
+> - **Contrato + validador propios** (`FORMATO-CALCULO1.md`, `qa_formato_calculo1.py`, 14 reglas R1-R14
+>   con perfiles `clase`/`material`/`indice`). El esqueleto de H2 de esta materia es **propio**: no se
+>   copió el de SBD ni el de Diseño, se copió el método.
+> - **Fase mecánica** sobre las 65 notas: frontmatter con `dg-publish` y `tags`, `---` entre secciones,
+>   H1/H2 con emoji, rutas de embed canónicas, pie de `**Tags:**` y sección de cierre
+>   (`Referencias|Notas Recomendadas|Conexiones`) antes de los tags.
+> - **90 callouts de una línea partidos** en título corto + cuerpo (mapa manual revisado uno a uno).
+>   Es el defecto exclusivo de esta materia: SBD, Diseño y Cálculo Vectorial tienen **0**, y el parser
+>   del sitio (`site/src/lib/rehype-callouts.mjs:74-110`) se come el primer párrafo como título.
+> - **183 fuentes `.mmd`** al lado de los 183 SVG: **144 recuperadas del historial** (eran las fuentes
+>   mermaid reales, borradas en `6424ecfb`) y **39 reconstruidas** desde el SVG con `svg_a_mmd.py`.
+>   Round-trip verificado en los **183/183**: texto visible y viewBox idénticos al SVG.
+> - **4 figuras renombradas** a `cal1-<tema>-<slug>` (eran `Pasted image …`, un UUID y `demo-funcion`)
+>   y sus embeds reescritos.
+> - **Lecturas R14** de los 189 embeds: `**Se lee así:**` · `**Por qué importa:**` · `**Ejemplo:**`,
+>   redactadas sobre la estructura de cada diagrama (cajas y flechas, sin mirar la imagen). Cada lectura
+>   explica la estructura del diagrama y no transcribe sus textos.
+>
+> **Antes / después del validador**
+> | | hallazgos | R12 (svg sin .mmd) | R14 (embed sin lectura) | resto |
+> |---|---|---|---|---|
+> | línea base | **1309** | 184 | 151 | 974 |
+> | fase mecánica | 335 | 184 | 151 | 0 |
+> | fuentes `.mmd` | 151 | **0** | 151 | 0 |
+> | lecturas R14 | **0** | 0 | **0** | 0 |
+>
+> **Verificado**
+> - `qa_formato_calculo1.py` → **0 hallazgos** en las 65 notas.
+> - Control de lecturas: los **189 embeds** tienen las tres etiquetas y el bloque completo, 0 problemas.
+> - Control contra la fuente de cada lectura: **0 truncados, 0 restos de etiqueta**, 0 problemas.
+> - `verifica_calculo1.py` (no se pierde contenido) → **65/65 notas, 0 problemas**: mismo texto,
+>   mismos embeds, mismos wikilinks, mismos tags.
+> - `verifica_mmd.py` (round-trip) → **183/183** con texto visible y viewBox idénticos.
+> - `qa_links.py Universidad` → 6 "bad", los **3 preexistentes** de `FORMATO-SBD.md`/`FORMATO-DISENO.md`
+>   y los **3 nuevos** de `FORMATO-CALCULO1.md` (los `[[…]]`/`![[…]]` de ejemplo dentro de bloques de
+>   código de la propia documentación: falsos positivos, no enlaces rotos).
+>
+> **U0 sigue vacía de material** (0 PDFs): no hay de dónde sacar lecturas de deck ni aplicar R15, y no
+> se inventó ninguna cita.
+>
+> **Commits**
+> - `e3b4419a` docs(calculo1): deja constancia en el contrato de que la materia esta en 0 hallazgos
+> - `d6fdb5f2` feat(calculo1): completa las lecturas R14 de los 189 embeds visuales
+> - `da81a9b8` feat(calculo1): bloque R14 de tres etiquetas en los 26 embeds con lectura preexistente
+> - `138f6537` feat(calculo1): lecturas R14 en Aplicaciones de la Integral
+> - `cacbdf39` feat(calculo1): lecturas R14 en fracciones parciales, integracion numerica y polar
+> - `24643db0` feat(calculo1): lecturas R14 en el teorema fundamental, improperas y tecnicas
+> - `c727ccbd` fix(calculo1): quita la redundancia 'Se lee asi: Se lee asi...' en 17 lecturas
+> - `222934d1` feat(calculo1): lecturas R14 en Derivadas Especiales e Integrales
+> - `31ea1d92` feat(calculo1): lecturas R14 en los embeds de Preliminares, Limites y Derivadas
+> - `0d57a2ad` docs(calculo1): reglas de sintaxis mermaid verificadas en los 183 diagramas
+> - `296be5ef` feat(calculo1): fuente .mmd para los 183 diagramas + figuras con nombre tematico
+> - `2b0ffe7c` refactor(calculo1): fase mecanica del contrato FORMATO-CALCULO1 en las 65 notas
+> - `0e53a159` qa(calculo1): contrato FORMATO-CALCULO1 + validador qa_formato_calculo1.py
+> - `ffaafcd4` Merge branch 'master' into sesion/opencode-onedrive
+
+> **Herramientas nuevas** (en `Universidad/Herramientas/`): `Mantenimiento/split_callouts_calculo1.py`,
+> `Mantenimiento/transform_calculo1.py`, `Mantenimiento/verifica_calculo1.py`,
+> `SVG-Pipeline/svg_a_mmd.py`, `SVG-Pipeline/verifica_mmd.py`.
+>
+> **Nota de alcance:** `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se revisaron y **no**
+> necesitaron cambios: el sync solo publica `ASSET_DIRS = ["Figuras","Diagramas"]` y las notas
+> `.md`, así que las fuentes `.mmd` no llegan al sitio (y no deben).
+>
+> **PUSHEO EN CURSO** — rama `sesion/opencode-onedrive` → `master` → `origin/master`. Falta el
+> `PUSHEADO <hash>` al confirmar el push.
