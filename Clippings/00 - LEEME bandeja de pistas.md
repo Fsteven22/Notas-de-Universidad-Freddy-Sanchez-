@@ -1942,4 +1942,74 @@ en `82bd9398`.
 **PUSHEADO `95568e79`** — `35d2367a` (código) + `95568e79` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `95568e79`. `origin/sesion/opencode-site` queda en `95568e79`.
 
+---
+
+### `opencode-site` — rescate de las anclas rotas + filtros e historial del buscador — 11/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `ceede7d1`):** las 207 anclas cruzadas rotas y las dos mejoras del
+>   buscador. Todo en `site/**` (mi zona): nada del vault, nada de `Universidad/**`, nada de
+>   `site/scripts/**`.
+>
+> - **Las 207 anclas rotas: primero la causa exacta (medida, no supuesta).**
+>   - `rehype-slug` genera el id con el texto **EXACTO** del encabezado:
+>     - "Definición de Límite" → `definición-de-límite` (con tildes)
+>     - "🤔 Derivadas Laterales" → `-derivadas-laterales` (con un guion delante, por el emoji)
+>     - "Funciones Definidas por Partes ?" → `funciones-definidas-por-partes-` (guion al final)
+>   - Los enlaces escritos a mano en los apuntes usan el criterio de siempre: **minúsculas, sin
+>     tildes, sin emojis y sin guiones sobrantes** (`#definicion-de-limite`, `#derivadas-laterales`).
+>   - Resultado: el enlace apuntaba a un id que no existía y al hacer clic no pasaba nada.
+>   - **Medición sobre el `dist` (427 enlaces con ancla):** 220 funcionaban · **195 se resolvían
+>     con el id "limpio"** · 12 apuntaban a apartados que **no existen** en la nota de destino.
+>
+> - **El arreglo (`rehype-anclas.mjs`, sin tocar el vault).** El id **canónico** de cada
+>   encabezado pasa a ser el limpio (sin tildes, sin emojis, sin guiones en los extremos) y el id
+>   antiguo se conserva como un **alias invisible dentro del propio encabezado**: los enlaces que
+>   ya funcionaban siguen funcionando, los que estaban rotos ahora encuentran su destino y las
+>   URLs que se copian del navegador quedan limpias.
+>   - **Las anclas que funcionan pasan de 220 a 415** (las 195 rescatadas). Las **12 que quedan**
+>     son enlaces mal puestos en el vault (apuntan a un apartado que no está en la nota): eso no lo
+>     puede arreglar el sitio.
+>   - Para esas 12, la nota **avisa**: en vez de no pasar nada, sale un aviso ("no encontramos la
+>     sección X en esta nota") con un enlace al **índice de la materia**.
+>
+> - **Buscador: filtros por semestre y por materia.** El buscador ya traía los resultados de la
+>   materia actual primero, pero no había forma de quedarse solo con un semestre o con una
+>   materia. Ahora hay dos desplegables (la lista de materias se rehace según el semestre
+>   elegido), un botón para quitar los filtros y un mensaje claro cuando el filtro deja la
+>   búsqueda sin resultados.
+> - **Buscador: historial.** Se guardan las últimas **8 búsquedas** en el navegador, se ven al
+>   abrir el buscador ("TUS BÚSQUEDAS"), se reutilizan con un clic y con la **flecha arriba**
+>   recalls la última.
+> - **Un fallo que solo apareció al probarlo con el navegador:** al pulsar Enter, el manejador de
+>   teclado (que vive fuera de `bind()`) usaba una variable que solo existe dentro, así que
+>   tiraba `ReferenceError` y **no guardaba nada** en el historial. Corregido: el campo se pide
+>   a través del contexto del buscador.
+>
+> - **Verificado:**
+>   - `npm run build` → **853 páginas, 0 errores** · **QA estático: 854 HTML, 0 enlaces rotos, 0
+>     con h1 múltiple** · **anclas ok 415 · anclas rotas 12** (antes: 220 ok / 207 rotas) ·
+>     `CI-PRIVADO: OK` (18 patrones, 0 fugas).
+>   - `check-anclas.mjs` (navegador real): el enlace que estaba roto **llega a su apartado** y el
+>     navegador se sitúa sobre él · el id antiguo **sigue existiendo como alias dentro del
+>     encabezado** · un enlace a una sección inexistente **muestra el aviso** con su enlace al
+>     índice de la materia · en una nota normal, sin hash, **no aparece el aviso**.
+>   - `check-buscador.mjs` (navegador real): el buscador abre y encuentra resultados · los
+>     desplegables se rellenan con los semestres y las materias del índice · **filtrar por
+>     semestre reduce la lista y todos los resultados son de ese semestre** · quitar los filtros
+>     devuelve la lista completa · filtrar por **materia** también funciona (todos los resultados son de
+>     esa materia) · la búsqueda **se guarda en el historial** al pulsar Enter y **navega** a la
+>     nota · al reabrir aparecen "TUS BÚSQUEDAS" y al pulsar una **se vuelve a buscar** · 0
+>     errores de consola.
+>
+> - [!note] Con esto queda **cerrada la lista del dueño**
+>   - Fondo limpio y titular nuevo ✓ · modo de estudio con las flashcards de las notas ✓ · modo
+>     lectura ✓ · impresión a PDF ✓ · mapa de la carrera en 3D ✓ · progreso y favoritos ✓ ·
+>     filtros e historial del buscador ✓ · rescate de las anclas (195 de 207; las 12 restantes son
+>     enlaces mal puestos en el vault).
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+
 
