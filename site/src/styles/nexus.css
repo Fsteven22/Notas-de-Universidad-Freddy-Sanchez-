@@ -1831,4 +1831,444 @@ html.nx-lectura .nx-note-layout a.nx-card {
   display: none;
 }
 
+/* ── Mapa de la carrera (/mapa/) ───────────────────────────────────────
+   El mapa 3D (Three.js, servido por el propio sitio) y su versión 2D,
+   que es la que se ve si no hay JavaScript o no hay WebGL. */
+.nx-mapa {
+  position: relative;
+  margin-top: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1rem;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(170, 102, 255, 0.07), transparent 60%),
+    rgba(6, 9, 18, 0.6);
+  overflow: hidden;
+}
+.nx-mapa__stage {
+  position: relative;
+  height: min(62vh, 560px);
+  min-height: 340px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: grab;
+  touch-action: none;
+}
+.nx-mapa--3d .nx-mapa__stage {
+  opacity: 1;
+}
+.nx-mapa__stage.is-arrastrando {
+  cursor: grabbing;
+}
+.nx-mapa__stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nx-mapa__labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.nx-mapa__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+  background: rgba(8, 12, 22, 0.78);
+  backdrop-filter: blur(4px);
+  color: #dbe2f0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-decoration: none;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.nx-mapa__label:hover,
+.nx-mapa__label:focus-visible {
+  color: #fff;
+  border-color: var(--nx-c, var(--color-nexus-purple));
+  background: rgba(12, 16, 28, 0.92);
+  outline: none;
+}
+.nx-mapa__label--sem {
+  border-color: color-mix(in srgb, var(--nx-c, #fff) 45%, transparent);
+  color: var(--nx-c, #fff);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.nx-mapa__tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid rgba(170, 102, 255, 0.35);
+  border-radius: 0.5rem;
+  background: rgba(8, 12, 22, 0.94);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #e5e7eb;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.nx-mapa__tip strong {
+  color: #fff;
+  font-weight: 700;
+}
+.nx-mapa__tip span {
+  color: var(--color-nexus-muted);
+  font-size: 0.62rem;
+}
+.nx-mapa__hint {
+  position: absolute;
+  left: 50%;
+  bottom: 0.7rem;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--color-nexus-muted);
+  pointer-events: none;
+  white-space: nowrap;
+}
+/* Mapa 2D (sin JS o sin WebGL): columnas por semestre */
+.nx-mapa__2d {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  padding: 1.1rem;
+}
+.nx-mapa--3d .nx-mapa__2d {
+  display: none;
+}
+.nx-mapa2d__sem {
+  border: 1px solid color-mix(in srgb, var(--nx-c, #fff) 28%, transparent);
+  border-top: 2px solid var(--nx-c, #fff);
+  border-radius: 0.7rem;
+  padding: 0.8rem 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+.nx-mapa2d__tit {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.nx-mapa2d__tit a {
+  color: var(--nx-c, #fff);
+  text-decoration: none;
+}
+.nx-mapa2d__tit a:hover {
+  text-decoration: underline;
+}
+.nx-mapa2d__lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.nx-mapa2d__lista li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+}
+.nx-mapa2d__lista a {
+  color: #dbe2f0;
+  text-decoration: none;
+}
+.nx-mapa2d__lista a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.nx-mapa2d__n {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-nexus-muted);
+  white-space: nowrap;
+}
+.nx-mapa__leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.1rem;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--color-nexus-muted);
+}
+.nx-mapa__leyenda li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.nx-mapa__leyenda-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--nx-c, #fff);
+  box-shadow: 0 0 10px var(--nx-c, #fff);
+}
+@media (max-width: 640px) {
+  .nx-mapa__stage {
+    height: 56vh;
+    min-height: 300px;
+  }
+  .nx-mapa__hint {
+    font-size: 0.54rem;
+  }
+  .nx-mapa__label {
+    font-size: 0.58rem;
+  }
+}
 
+/* ── Favoritos, avance y botón de estrella ──────────────────────
+   Los datos viven en el localStorage del lector (sin servidor). */
+.nx-hbtn--fav {
+  color: var(--color-nexus-gold);
+}
+.nx-hbtn--fav:hover {
+  color: #fff;
+  border-color: var(--color-nexus-gold);
+  background: rgba(245, 159, 0, 0.1);
+}
+.nx-hbtn__count {
+  min-width: 1.1rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  font-size: 10px;
+  text-align: center;
+}
+.nx-hbtn__count.es-vacio {
+  opacity: 0.45;
+}
+.nx-fav-btn .nx-note-tools__ico {
+  color: var(--color-nexus-gold);
+}
+.nx-fav-btn.es-fav {
+  border-color: rgba(245, 159, 0, 0.6);
+  background: rgba(245, 159, 0, 0.12);
+  color: #fff;
+}
+.nx-hecha-btn .nx-note-tools__ico {
+  color: var(--color-nexus-green);
+}
+.nx-hecha-btn.es-hecha {
+  border-color: rgba(0, 255, 136, 0.55);
+  background: rgba(0, 255, 136, 0.1);
+  color: #fff;
+}
+/* Estrella dentro de la lista de notas de la materia */
+.nx-note-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.nx-note-item .nx-note-row {
+  flex: 1;
+  min-width: 0;
+}
+.nx-fav-star {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 0.45rem;
+  background: transparent;
+  color: rgba(245, 159, 0, 0.45);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.nx-fav-star:hover {
+  color: var(--color-nexus-gold);
+  background: rgba(245, 159, 0, 0.1);
+  border-color: rgba(245, 159, 0, 0.35);
+}
+.nx-fav-star.es-fav {
+  color: var(--color-nexus-gold);
+}
+.nx-fav-star:focus-visible {
+  outline: 2px solid var(--color-nexus-gold);
+  outline-offset: 1px;
+}
+/* Listas de favoritos y de avance */
+.nx-fav-lista {
+  margin-top: 1.6rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nx-fav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.7rem;
+  background: rgba(255, 255, 255, 0.025);
+  padding: 0.6rem 0.75rem 0.6rem 0.9rem;
+}
+.nx-fav-item__link {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-decoration: none;
+}
+.nx-fav-item__t {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.nx-fav-item__link:hover .nx-fav-item__t {
+  color: #fff;
+}
+.nx-fav-item__sub {
+  color: var(--color-nexus-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+}
+.nx-fav-item__quitar {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--color-nexus-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.nx-fav-item__quitar:hover {
+  border-color: rgba(255, 120, 120, 0.5);
+  color: #ff9a9a;
+}
+.nx-fav-vacio {
+  margin-top: 1.6rem;
+  padding: 1.4rem 1.2rem;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+.nx-prog__global {
+  margin-top: 1.6rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+.nx-prog__global-cab {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.nx-prog__global-n {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-nexus-green);
+  line-height: 1;
+}
+.nx-prog__global-t {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--color-nexus-muted);
+}
+.nx-prog__barra {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.nx-prog__barra--sm {
+  height: 4px;
+}
+.nx-prog__barra span {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--color-nexus-green), var(--color-nexus-blue));
+  transition: width 0.3s ease;
+}
+.nx-prog__sem {
+  margin-top: 1.8rem;
+}
+.nx-prog__sem-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.nx-prog__sem-head h2 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+.nx-prog__sem-n {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--color-nexus-muted);
+}
+.nx-prog__mats {
+  list-style: none;
+  padding: 0;
+  margin: 0.9rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.nx-prog__mat {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.25rem 0.8rem;
+}
+.nx-prog__mat-t {
+  font-size: 0.85rem;
+  color: #d1d5db;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nx-prog__mat-n {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--color-nexus-muted);
+}
+.nx-prog__mat .nx-prog__barra {
+  grid-column: 1 / -1;
+}

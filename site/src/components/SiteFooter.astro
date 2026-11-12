@@ -35,6 +35,15 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
     </div>
 
     <div class="nx-footer-tools">
+      {/* Atajos de navegación: mapa de la carrera, modo de estudio, favoritos
+          y avance. El pie es el sitio donde ya se busca "qué más hay". */}
+      <nav class="nx-footer-links" aria-label="Secciones del sitio">
+        <a href="/mapa/" class="nx-hbtn">Mapa</a>
+        <a href="/estudio/" class="nx-hbtn">Estudio</a>
+        <a href="/favoritos/" class="nx-hbtn">Favoritos</a>
+        <a href="/progreso/" class="nx-hbtn">Avance</a>
+      </nav>
+
       {/* El botón de atajos vivía en el header. Ahora está al final de la
           página: es donde se busca cuando ya terminaste de leer, y además
           así se ve también en móvil (antes se ocultaba a ≤639 px). */}
@@ -112,6 +121,12 @@ const actualizado = new Date().toLocaleDateString("es-EC", {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .nx-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
   .nx-footer-meta {

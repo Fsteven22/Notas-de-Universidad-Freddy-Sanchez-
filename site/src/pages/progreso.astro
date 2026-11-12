@@ -1,0 +1,160 @@
+---
+/**
+ * /progreso/ — cuánto has avanzado por la carrera.
+ *
+ * El avance sale de las notas que marcaste como "leída" (el botón de cada
+ * nota). Los totales por semestre y por materia salen del vault en tiempo de
+ * compilación; lo que el lector marcó se lee del `localStorage`.
+ */
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import vault from "../data/vault.json";
+
+const sems = vault.semestres.filter((s) => s.id !== "raiz");
+
+const datos = {
+  semestres: sems.map((s) => ({
+    id: s.id,
+    titulo: s.title,
+    total: s.materias.reduce((n, m) => n + (m.total ?? m.notas.length), 0),
+    materias: s.materias.map((m) => ({
+      id: m.id,
+      titulo: m.title,
+      total: m.total ?? m.notas.length,
+    })),
+  })),
+};
+
+const totalNotas = datos.semestres.reduce((n, s) => n + s.total, 0);
+---
+
+<Base
+  title="Tu avance · Neonotes"
+  description="Cuántas notas has leído de cada materia y de la carrera"
+>
+  <SiteHeader
+    variant="nivel"
+    crumbs={[{ label: "Inicio", href: "/" }, { label: "Avance" }]}
+  />
+
+  <section class="mx-auto max-w-3xl px-6 pt-10 pb-20">
+    <p class="nx-section-title">Tu avance</p>
+    <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">
+      Cuánto has avanzado
+    </h1>
+    <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-[#e5e7eb]">
+      Marca una nota como <span class="text-white">leída</span> y aquí verás el avance por
+      materia y por semestre. Todo se guarda en este navegador.
+    </p>
+
+    <div class="nx-prog__global">
+      <div class="nx-prog__global-cab">
+        <span class="nx-prog__global-n" id="nx-prog-global-n">0</span>
+        <span class="nx-prog__global-t">de {totalNotas} notas leídas</span>
+      </div>
+      <div class="nx-prog__barra">
+        <span id="nx-prog-global-barra" style="width:0%"></span>
+      </div>
+    </div>
+
+    <div id="nx-prog-lista"></div>
+
+    <div class="nx-fav-vacio" id="nx-prog-vacio" hidden>
+      <p class="text-sm font-semibold text-white">Todavía no has marcado ninguna nota</p>
+      <p class="mt-1 text-sm text-[#e5e7eb]">
+        Abre una nota y pulsa "Marcar leída". Cada nota suma a su materia y a su semestre.
+      </p>
+    </div>
+  </section>
+
+  <script is:inline type="application/json" id="nx-prog-data" set:html={JSON.stringify(datos)}></script>
+
+  <script>
+    import { leidas } from "../lib/progreso.js";
+
+    function pintar() {
+      const raiz = document.getElementById("nx-prog-lista");
+      const vacio = document.getElementById("nx-prog-vacio");
+      const nEl = document.getElementById("nx-prog-global-n");
+      const barra = document.getElementById("nx-prog-global-barra");
+      if (!raiz || !vacio || !nEl || !barra) return;
+
+      let datos = { semestres: [] };
+      try {
+        const crudo = document.getElementById("nx-prog-data");
+        datos = crudo ? JSON.parse(crudo.textContent || "{}") : datos;
+      } catch (e) {
+        /* sin datos: se muestra la lista vacía */
+      }
+
+      const l = leidas();
+      const leidasPorMat = new Map();
+      for (const m of Object.values(l)) {
+        if (!m || !m.m) continue;
+        leidasPorMat.set(m.m, (leidasPorMat.get(m.m) || 0) + 1);
+      }
+
+      const totalNotas = datos.semestres.reduce((n, s) => n + s.total, 0);
+      const nLeidas = Object.keys(l).length;
+      nEl.textContent = String(nLeidas);
+      barra.style.width = totalNotas ? ((nLeidas / totalNotas) * 100).toFixed(1) + "%" : "0%";
+      vacio.hidden = nLeidas > 0;
+
+      raiz.innerHTML = "";
+      for (const s of datos.semestres) {
+        const leidasSem = s.materias.reduce((n, m) => n + (leidasPorMat.get(m.id) || 0), 0);
+        const sec = document.createElement("section");
+        sec.className = "nx-prog__sem";
+        sec.innerHTML =
+          '<header class="nx-prog__sem-head">' +
+          "<h2>" +
+          s.titulo +
+          "</h2>" +
+          '<span class="nx-prog__sem-n">' +
+          leidasSem +
+          " / " +
+          s.total +
+          "</span></header>";
+        const barraSem = document.createElement("div");
+        barraSem.className = "nx-prog__barra";
+        const span = document.createElement("span");
+        span.style.width = s.total ? ((leidasSem / s.total) * 100).toFixed(1) + "%" : "0%";
+        barraSem.appendChild(span);
+        sec.appendChild(barraSem);
+
+        const ul = document.createElement("ul");
+        ul.className = "nx-prog__mats";
+        for (const m of s.materias) {
+          const n = leidasPorMat.get(m.id) || 0;
+          const li = document.createElement("li");
+          li.className = "nx-prog__mat";
+          li.innerHTML =
+            '<span class="nx-prog__mat-t">' +
+            m.titulo +
+            '</span><span class="nx-prog__mat-n">' +
+            n +
+            " / " +
+            m.total +
+            "</span>";
+          const b = document.createElement("div");
+          b.className = "nx-prog__barra nx-prog__barra--sm";
+          const sp = document.createElement("span");
+          sp.style.width = m.total ? ((n / m.total) * 100).toFixed(1) + "%" : "0%";
+          b.appendChild(sp);
+          li.appendChild(b);
+          ul.appendChild(li);
+        }
+        sec.appendChild(ul);
+        raiz.appendChild(sec);
+      }
+    }
+
+    document.addEventListener("astro:page-load", pintar);
+    document.addEventListener("click", (ev) => {
+      const t = ev.target;
+      if (!(t instanceof Element)) return;
+      if (t.closest("[data-nx-hecha]")) setTimeout(pintar, 0);
+    });
+    pintar();
+  </script>
+</Base>

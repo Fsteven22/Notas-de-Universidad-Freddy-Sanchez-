@@ -152,6 +152,7 @@ const nTarjetas = tarjetasMat.length;
                 <ul class="nx-note-list">
                   {u.notas.map((n, i) => (
                     <li
+                      class="nx-note-item"
                       data-nx-reveal
                       style={`--nx-reveal-delay:${Math.min(i * 45, 360)}ms`}
                     >
@@ -162,6 +163,21 @@ const nTarjetas = tarjetasMat.length;
                         <span class="nx-note-title">{n.title}</span>
                         <span class="nx-note-date">{fecha(n.mtime)}</span>
                       </a>
+                      <button
+                        type="button"
+                        class="nx-fav-star"
+                        data-nx-fav
+                        aria-pressed="false"
+                        aria-label={`Guardar "${n.title}" en favoritos`}
+                        data-url={`/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/") : ""}/${n.slug}/`}
+                        data-t={n.title}
+                        data-m={mat}
+                        data-mt={data.title}
+                        data-s={sem}
+                        title="Guardar en favoritos"
+                      >
+                        <span data-nx-fav-ico aria-hidden="true">☆</span>
+                      </button>
                     </li>
                   ))}
                 </ul>

@@ -130,6 +130,27 @@ const {
           </a>
         )
       }
+      {/* Favoritos y avance: el contador lo pinta el script de progreso
+          (localStorage), así que el enlace funciona aunque no haya nada
+          guardado todavía. */}
+      <a
+        href="/favoritos/"
+        class="nx-hbtn nx-hbtn--fav"
+        aria-label="Tus notas guardadas"
+        title="Tus notas guardadas"
+      >
+        <span aria-hidden="true">★</span>
+        <span class="nx-hbtn__count" data-nx-fav-count>0</span>
+      </a>
+      <a
+        href="/progreso/"
+        class="nx-hbtn nx-hbtn--fav"
+        aria-label="Tu avance por la carrera"
+        title="Tu avance por la carrera"
+      >
+        <span aria-hidden="true">✓</span>
+        <span class="nx-hbtn__count" data-nx-leidas-count>0</span>
+      </a>
       {
         showIndex && (
           <button

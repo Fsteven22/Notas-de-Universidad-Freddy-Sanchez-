@@ -712,5 +712,13 @@ const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
     <!-- Vercel Analytics: primero de Analytics (script propio de Vercel,
          sin CDN externo). Va al final del body para no retrasar el render. -->
     <Analytics />
+
+    <!-- Favoritos y notas leídas: viven en el localStorage del lector.
+         El script se empaqueta una sola vez y se apoya en astro:page-load
+         para repintar los botones en cada navegación. -->
+    <script>
+      import { iniciar as iniciarProgreso } from "../lib/progreso.js";
+      iniciarProgreso();
+    </script>
   </body>
 </html>

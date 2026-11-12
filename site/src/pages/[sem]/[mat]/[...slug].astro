@@ -91,6 +91,36 @@ const matUrl = `/${sem}/${mat}/`;
         <button type="button" id="nx-imprimir" class="nx-note-tools__btn">
           <span class="nx-note-tools__ico" aria-hidden="true">⎙</span> Imprimir / PDF
         </button>
+        <button
+          type="button"
+          class="nx-note-tools__btn nx-fav-btn"
+          data-nx-fav
+          aria-pressed="false"
+          data-url={`/${file}/`}
+          data-t={note.title}
+          data-m={mat}
+          data-mt={matData.title}
+          data-s={sem}
+          title="Guardar esta nota en tus favoritos"
+        >
+          <span class="nx-note-tools__ico" data-nx-fav-ico aria-hidden="true">☆</span>
+          <span data-nx-fav-txt>Guardar</span>
+        </button>
+        <button
+          type="button"
+          class="nx-note-tools__btn nx-hecha-btn"
+          data-nx-hecha
+          aria-pressed="false"
+          data-url={`/${file}/`}
+          data-t={note.title}
+          data-m={mat}
+          data-mt={matData.title}
+          data-s={sem}
+          title="Marcar esta nota como leída (para llevar tu avance)"
+        >
+          <span class="nx-note-tools__ico" data-nx-hecha-ico aria-hidden="true">○</span>
+          <span data-nx-hecha-txt>Marcar leída</span>
+        </button>
       </div>
       <div class="note-prose mt-8">
         <Content />
