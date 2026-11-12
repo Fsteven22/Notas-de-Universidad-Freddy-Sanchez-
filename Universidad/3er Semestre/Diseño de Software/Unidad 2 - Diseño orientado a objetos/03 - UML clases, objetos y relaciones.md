@@ -30,6 +30,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-01-class.svg]]
+>
+> **Se lee así:** Un diagrama de clases con dos cajas: `Estudiante` (atributo `- String carnet` y operación `+ inscribirse(curso)`) y `Curso` (atributo `- int cupo` y operación `+ matricular(e)`), unidas por una asociación rotulada «se inscribe» con multiplicidad `*` del lado del estudiante y `1..*` del lado del curso.
+>
+> **Por qué importa:** Es la notación mínima de UML en una sola figura: compartimentos, visibilidades, multiplicidades y nombre de relación, todo junto.
+>
+> **Ejemplo:** Traducido al SIEL: `Candidatura` con `-totalVotos : int` y `+aprobada() : boolean`, unida a `Acta` por la relación «registra» con `0..*` y `1`.
 
 ---
 
@@ -75,6 +81,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 > [!info] 📖 De dónde sale esta sección
 > `04aLenguajeUnificadoModelado.pdf` (50 p., MSc. Jurado / Dr. Mera, 2024) es el deck oficial de la Unidad 2. Aquí va lo que el deck explica y que tu nota de clase solo rozaba.
+>
+> **Se lee así:** El deck recorre cuatro bloques en orden: por qué existe el UML (p. 4), el sistema de registro académico como ejercicio (pp. 6-7), los diagramas de clases con su notación (pp. 8-29) y los diagramas de secuencia con sus frames (pp. 30-46). Cierra con «puntos para recordar» y la lectura adicional (pp. 48-49).
+>
+> **Por qué importa:** Señala de qué lámina sale cada figura de esta nota, para que puedas volver al deck cuando una duda sea de notación y no de concepto.
+>
+> **Ejemplo:** La multiplicidad que aplicas en `Acta 1 ── 0..* Candidatura` está explicada en la p. 19 del deck.
 
 ### 🔎 Por qué existe UML (p. 4)
 
@@ -100,6 +112,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 
 > [!note] 📖 Definición del deck
 > Una **clase de análisis** abstrae una o más clases y/o subsistemas en el diseño del sistema.
+>
+> **Nota:** Es la definición textual del deck (p. 13), tal como aparece en la lámina.
+>
+> **Por qué importa:** Una clase de análisis no se implementa: describe responsabilidades antes de decidir persistencia, y esa diferencia es justo el error 1 de esta nota.
+>
+> **Ejemplo:** `Candidatura` como clase de análisis define responsabilidades (conocer su dignidad, informar su total de votos) sin decidir todavía cómo se guarda en la base.
 
 > [!info] 💡 Clases de análisis (p. 13)
 >
@@ -133,13 +151,31 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p14-heuristicas.png]]
 >
+> **Se lee así:** Lámina de 04a, p. 14: «Enfoque 1: Data-Driven Design» con las heurísticas de Shlaer y Mellor / Booch y cuatro familias de candidatos a clase —cosas tangibles o del mundo real (libro, copia, curso), roles (miembro de la biblioteca, estudiante, director de estudios), eventos (llegada, salida, solicitud) e interacciones (reunión, intersección).
+>
+> **Por qué importa:** Es el filtro de entrada para decidir qué sustantivo merece caja antes de dibujar nada.
+>
+> **Ejemplo:** En el SIEL, `Acta` es un evento con identidad propia y `DiaDeLaEleccion` un evento sin estado: uno queda como clase y el otro como fecha.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p16-sustantivo-verbo.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 16: dos párrafos de requerimientos de una biblioteca escritos en prosa —«Books and journals» y «Borrowing»—: la biblioteca contiene libros y revistas, puede tener varias copias, los préstamos duran tres semanas, un miembro puede llevar hasta seis ítems a la vez y el personal hasta doce, y solo el personal puede llevarse revistas.
+>
+> **Por qué importa:** Es el insumo real del análisis sustantivo/verbo: los sustantivos dan clases y los verbos dan operaciones, y solo funciona sobre texto así.
+>
+> **Ejemplo:** Con el mismo método, el enunciado del SIEL produce `Candidatura`, `Acta` y `Candidato` como clases y `inscribir`, `calificar`, `registrar` como operaciones.
 
 ### 🔗 Multiplicidad de una asociación (p. 19)
 
 > [!note] 🖼️ captura 04a-p19 — El deck de cátedra (04a) en detalle
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p19-multiplicidad.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 19: la definición de multiplicidad («número de objetos que pueden participar en una relación en un momento dado») sobre un diagrama de biblioteca con `LibraryPatron`, `Copy` y `Journal`, donde la línea «is copy of» lleva `1` en el patrón y `1..*` en la copia, y las líneas «borrows/returns» llevan `0`.
+>
+> **Por qué importa:** Muestra en la práctica la regla que sigue el docente: la multiplicidad se escribe en el extremo de la clase que cuenta.
+>
+> **Ejemplo:** En tu diagrama del SIEL, `Candidatura 1` junto a `0..* Actas` dice que una candidatura tiene cero o más actas y que cada acta pertenece a una sola candidatura.
 
 > [!note] Regla de la cátedra
 >
@@ -156,12 +192,24 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > En el SIEL: la relación `OrganizacionPolitica ── inscribe ── Candidatura` lleva atributos (fecha, estado de la candidatura) → nace `Inscripcion` **colgando de la línea**, con el mismo nombre de relación.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p22-clase-asociacion.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 22: las dos frases de la regla («se usa para adjuntar atributos a una asociación en lugar de las clases que asocia» y «la línea de asociación de clase debe tener el mismo nombre») sobre un ejemplo `Student` — is taking → `Module`, donde la línea se convierte en una clase de asociación con el atributo `mark : int`.
+>
+> **Por qué importa:** Los atributos de una relación no se cuelgan de una de las dos clases: nacen en una clase que queda pegada a la línea de asociación.
+>
+> **Ejemplo:** `OrganizacionPolitica` — inscribe → `Candidatura` con atributos de fecha y estado produce la clase `Inscripcion` colgando de la línea.
 
 ### 🧬 Generalización y herencia (p. 23)
 
 > [!note] 🖼️ captura 04a-p23 — El deck de cátedra (04a) en detalle
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p23-generalizacion.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 23: «Generalización y Herencia» la presenta como «un tipo especial de asociación» y explica que la subclase hereda los atributos y operaciones de la superclase y puede extenderla; el ejemplo usa `LibraryPatron` y `Copy` con `Researcher` y `Journal`.
+>
+> **Por qué importa:** Justifica la herencia como reutilización de estructura, no como simple copia de datos: la flecha hueca significa «todo lo del padre, más lo mío».
+>
+> **Ejemplo:** En el SIEL, `Alcaldia` y `Prefectura` heredan de `Dignidad` y no repiten el cálculo de votos.
 
 ### 🏫 El ejemplo del deck: AcademicChoice (pp. 6-7, 25)
 
@@ -170,6 +218,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > El sistema de registro académico que usa el docente: el estudiante gestiona inscripción de materias, paralelos y horarios; cada paralelo tiene estados (**abierto / en lista de espera / cerrado por falta de cupos**); el sistema valida prerrequisitos y conflictos de horario; los administradores fijan políticas (fechas límite, periodos especiales por grupo).
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p25-diagrama-clases.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 25: un diagrama de clases de ejemplo (Office, Person, PersonnelRecord) con anotaciones que apuntan a cada elemento del diagrama —multiplicidad, atributos, operaciones, una interface, una agregación y una dependencia.
+>
+> **Por qué importa:** Es la lámina de referencia de la notación completa: cada flecha del ejemplo está rotulada con el nombre del concepto, así se lee sin el manual.
+>
+> **Ejemplo:** Tu diagrama del SIEL debería rotular lo mismo: multiplicidad en ambos extremos, interface marcada con `<<interface>>`, rombo de agregación y flecha punteada de dependencia.
 
 > [!example] 🔍 Para comparar con tu SIEL
 >
@@ -181,9 +235,27 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p11-clase-uml.png]]
 >
+> **Se lee así:** Lámina de 04a, p. 11: un diagrama de la clase `Book` con sus tres compartimentos (nombre, atributos `#title : String` y `#available : Boolean = true`, y operaciones `<<constructor>> create()`, `+copiesOnShelf() : Int`, `+borrow(c : Copy)`), con anotaciones que explican cada adorno: la visibilidad `+ - # ~`, el nombre en cursiva si la clase es abstracta, el tipo del atributo, el valor inicial y la firma de la operación.
+>
+> **Por qué importa:** Cada elemento de la caja significa algo; dibujar la caja sin conocer los adornos es perder la mitad de la información.
+>
+> **Ejemplo:** En el SIEL, `Candidatura` se dibuja con `-totalVotos : int` y `+aprobada() : boolean`, y el `#` lo reservas para lo que hereda de `Dignidad`.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p12-visibilidad.png]]
 >
+> **Se lee así:** Lámina de 04a, p. 12: tres viñetas con los signos `+`, `#` y `-` y su definición textual —`+` público: cualquier cliente de la clase puede acceder a los miembros públicos; `#` protegido: los miembros de la clase o cualquier subclase pueden acceder a los protegidos; `-` privado: solo los miembros de la misma clase.
+>
+> **Por qué importa:** Fija el alcance real de cada visibilidad: `#` es para toda la jerarquía, no «privado con permiso».
+>
+> **Ejemplo:** En `Acta`, `-votos : List<Integer>` es privado, `#padron : Padron` lo usan `Acta` y sus subclases, y `+registrar() : Comprobante` es público.
+>
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p18-notacion-relaciones.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 18: un catálogo de la notación de relaciones en UML con los cinco trazos del manual de referencia (bidireccional/binaria, unidireccional, composición, asociación con nombre y flecha unidireccional simple), y en cada extremo se pueden anotar el nombre del rol, las características y la multiplicidad.
+>
+> **Por qué importa:** El mismo trazo significa cosas distintas según los adornos; sin ellos, dos diagramas con la misma línea dicen relaciones diferentes.
+>
+> **Ejemplo:** En `OrganizacionPolitica 1 ── inscribe ── 0..* Candidatura`, el nombre de rol «auspicia» y la multiplicidad `0..*` son los que dicen quién puede tener qué.
 
 ---
 
@@ -217,6 +289,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Relación Uso
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-02-flow.svg]]
+>
+> **Se lee así:** Una cascada de dos preguntas: «Dos clases relacionadas» → «¿Una es parte de la otra?». Si la respuesta es «No, solo se usan», sale a «Asociación simple»; si es «Sí», la segunda pregunta («¿Sobrevive sin el todo?») separa «Agregación — rombo blanco» de «Composición — rombo negro».
+>
+> **Por qué importa:** Da el criterio del rombo en dos pasos: primero parte/todo, después supervivencia. Es la versión corta de la regla que el deck aplica en código.
+>
+> **Ejemplo:** `Acta ◆— ConteoVotos` es composición porque el conteo no sobrevive al acta; `Candidatura ◇— Candidato` es agregación porque el candidato sobrevive si se rechaza la candidatura.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -410,6 +488,12 @@ tags: [CCPG1042, unidad2, uml, clases, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-03-mind.svg]]
+>
+> **Se lee así:** Mapa mental con raíz «UML Clases» y tres ramas: «Caja» (Atributos, Operaciones), «Relaciones» (Asociación, Agregación, Composición, Herencia) y «Reglas» (Multiplicidad, Sustantivos).
+>
+> **Por qué importa:** Es el índice de la nota: caja, relaciones y reglas son las tres cosas que el docente revisa en un diagrama de clases.
+>
+> **Ejemplo:** Tu diagrama del SIEL se revisa con esta lista: caja bien formada, relación bien nombrada, multiplicidad en ambos extremos y nombres del dominio.
 
 > [!success] 🔍 Comparación Final
 >

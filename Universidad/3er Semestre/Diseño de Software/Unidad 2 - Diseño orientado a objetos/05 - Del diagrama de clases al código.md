@@ -25,6 +25,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-06-01-flow.svg]]
+>
+> **Se lee así:** Un flowchart con un nodo de entrada «Relación en el diagrama de clases» que abre un rombo «¿Qué relación?» con siete salidas —Asociación (atributo de referencia + getter/setter), Clase de asociación (clase propia con sus atributos), Agregación (referencia al todo, el parte sobrevive), Composición (el todo CREA el parte y lo destruye), Generalización (`extends`, clase abstracta), Realización (`implements`, interface) y Dependencia (import/parámetro sin estado guardado)— y las siete convergen en una caja final «Código fuente».
+>
+> **Por qué importa:** Es el mapa de traducción completo de la unidad: cada relación del diagrama tiene una salida única en Java, y todas terminan en el mismo entregable.
+>
+> **Ejemplo:** En tu proyecto, `Factura` y `Cliente` entran por la rama «Asociación» y salen como `private Cliente cliente;` dentro de `Factura`.
 
 > [!tip] 💡 La regla del deck
 >
@@ -46,10 +52,22 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > | 5 | **Realización** | flecha punteada a interface | `implements` |
 > | 6 | **Dependencia** | flecha punteada a clase | `import` o parámetro |
 > | 7 | **Clase de asociación** | clase colgando de la línea | clase propia que se instancia al ejecutar la relación |
+>
+> **Se lee así:** La tabla traduce las siete relaciones del deck a su forma en código, y lo hace con tres preguntas: ¿quién crea?, ¿sobrevive? y ¿guarda datos? Cada fila da el símbolo del diagrama y la construcción de Java que le corresponde.
+>
+> **Por qué importa:** Es la tabla que hay que memorizar para el examen: si no puedes pasar de una fila a la otra, no sabes traducir el diagrama.
+>
+> **Ejemplo:** La fila 5 (Realización) es la que explica por qué `CuentaBancaria implements Impresion` necesita dos métodos implementados y no un atributo.
 
 > [!note] 🖼️ captura 04b-p5 — Las 7 relaciones del diagrama de clases
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p5-tabla-relaciones.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 5: un esquema-resumen titulado «Relaciones en DC» que reagrupa las siete relaciones del deck en familias —asociación simple y asociación directa, agregación, composición, herencia/generalización, realización y dependencia— cada una con su símbolo junto al nombre.
+>
+> **Por qué importa:** Ordena las relaciones por familias (asociaciones, parte/todo, jerarquía, contrato y uso), que es justo la forma en que se memorizan para el examen.
+>
+> **Ejemplo:** Al leer tu diagrama decides primero la familia: ¿es parte/todo, jerarquía, contrato o solo uso temporal?
 
 ---
 
@@ -57,12 +75,24 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Qué es
 > Dos clases que **se conocen**: una guarda una referencia a la otra. No implica propiedad: el `Cliente` conoce su `CuentaBancaria`, y viceversa no es obligatorio.
+>
+> **Se lee así:** La lámina de 04b, p. 8 titula la relación «Asociación» y la p. 9 la lleva al código: la línea del diagrama se convierte en un atributo que guarda la referencia.
+>
+> **Por qué importa:** Aclarar que la asociación no implica propiedad evita el error de pensar que el `Cliente` es «dueño» de la `CuentaBancaria` y de asignarle su ciclo de vida.
+>
+> **Ejemplo:** En `Cliente` del banco, `private CuentaBancaria cuenta;` dice «conozco una cuenta», no «la cuenta existe porque yo existo».
 
 > [!info] 💡 1. Asociación: la relación más común
 >
 > En el diagrama se dibuja como una línea con multiplicidad; en el código es un **atributo**.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p9-codigo-asociacion.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 9: dos clases Java lado a lado —`Cliente` con `id`, `direccion` y un `ArrayList<CuentaBancaria> cuentas`, y `CuentaBancaria` con `nro_cuenta`, `saldo` y sus getters/setters— mostrando que la línea del diagrama se materializa como un atributo.
+>
+> **Por qué importa:** Es la traducción literal de la asociación, con la colección que corresponde a la multiplicidad `*`.
+>
+> **Ejemplo:** `Factura` con `private Cliente cliente;` y `Cliente` con `private List<Factura> facturas` reproducen exactamente esta lámina.
 
 > [!example] 🔧 Asociación en Java
 >
@@ -105,12 +135,24 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Qué dice el deck (p. 10)
 > "La **clase de asociación se instancia al ejecutar la relación** entre `Cliente` y `CuentaBancaria`. `RealizarTransaccion()` **asocia** los clientes y las cuentas."
+>
+> **Se lee así:** La lámina de 04b, p. 10 lleva la frase textual del deck y el dibujo de la relación con su clase de asociación colgando de la línea.
+>
+> **Por qué importa:** Aclara quién crea el objeto de la relación: no el diagrama ni el framework, sino el método del cliente que ejecuta la relación.
+>
+> **Ejemplo:** En el SIEL, el método que inscribe una candidatura es el que instancia el objeto `Inscripcion` con su fecha y su estado.
 
 > [!info] 💡 2. Clase de asociación: la relación que tiene datos
 >
 > O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y la línea del diagrama se convierte en un atributo de esa clase.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p4-relaciones.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 4: la frase «Las clases deben estar relacionadas con otras» sobre los siete casos numerados del deck, cada uno con su notación —dependencia (línea punteada), asociación (línea), asociación dirigida (flecha abierta), agregación (rombo blanco), composición (rombo negro), generalización (triángulo hueco) y realización (punteada con triángulo hueco).
+>
+> **Por qué importa:** Es la lámina que define las siete relaciones que esta nota traduce a código: el símbolo del diagrama es la partida para saber qué palabra reservada toca.
+>
+> **Ejemplo:** El rombo negro de `Pedido ◆— LineaPedido` es lo que te dice que el `Pedido` hace `new LineaPedido(...)`.
 
 > [!example] 🔧 Clase de asociación en Java
 >
@@ -147,10 +189,22 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Qué es
 > Una asociación puede ser **unidireccional** (A conoce a B, B no conoce a A) o **bidireccional** (A conoce a B y B conoce a A). El deck dedica cuatro páginas (pp. 11-14) a las variantes, porque **es el punto donde los diagramas se contradicen con el código**.
+>
+> **Se lee así:** Las pp. 11-14 del deck recorren las variantes de la bidireccionalidad y su código: la p. 11 muestra el caso «Bidireccional con multiplicidad 0..1» entre `Cliente` y `CtaCte`, con el nombre de rol `+dueño` y el atributo `public Cliente dueño;` en la cuenta.
+>
+> **Por qué importa:** Cuatro páginas para un solo tema dicen que es donde más se equivocan los equipos: la flecha doble del diagrama son dos atributos, y hay que mantenerlos sincronizados.
+>
+> **Ejemplo:** En `Cliente.abrir(cuenta)`, además de agregar la cuenta a la lista hay que hacer `cuenta.setTitular(this)`; si no, el diagrama y el código dejan de contarse.
 
 > [!note] 🖼️ captura 04b-p11 — 3. Bidireccionalidad: quién conoce a quién
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p11-bidireccionalidad.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 11: el caso «Bidireccional con multiplicidad 0..1» dibujado con `Cliente` y `CtaCte` unidos por una línea con flecha en ambos sentidos, el nombre de rol `+dueño` sobre el lado de la cuenta, y el código donde cada clase guarda la referencia al otro (`public Cliente dueño;` dentro de `CtaCte`).
+>
+> **Por qué importa:** La bidireccionalidad no es solo la flecha: son dos atributos que hay que mantener sincronizados, y el deck le dedica cuatro páginas por eso.
+>
+> **Ejemplo:** En `Cliente.abrir(cuenta)` del curso, además de agregar la cuenta a la lista hay que hacer `cuenta.setTitular(this)`.
 
 > [!example] 🔧 Las dos formas
 >
@@ -188,6 +242,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Del deck (pp. 15-16)
 > - **Múltiples relaciones:** dos clases pueden estar unidas por **más de una** asociación a la vez (p. ej. `Empleado` ↔ `Empresa`: *trabaja para* y *es dirigida por*). Cada una necesita su propio atributo.
 > - **Recursividad:** una clase se relaciona **consigo misma** (un empleado es jefe de otro empleado). En código, el atributo apunta al mismo tipo.
+>
+> **Se lee así:** La p. 15 del deck titula «Múltiples relaciones» y la p. 16 «Asociación con recursividad»: en ambos casos el diagrama muestra una relación que se sale de la forma clase–clase habitual.
+>
+> **Por qué importa:** Las dos relaciones son las que más se olvidan al escribir el código: si hay dos líneas entre las mismas clases, hacen falta dos atributos, y si la relación es consigo misma, el atributo es del mismo tipo.
+>
+> **Ejemplo:** `Empleado` guarda `private Empresa empresa;` y `private Empleado jefe;`: son dos atributos distintos, y el segundo apunta al mismo tipo que la clase.
 
 > [!example] 🔧 Ejemplo
 >
@@ -206,10 +266,22 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Del deck (p. 18)
 > "En el diagrama de clases el nombre de la clase está **en cursiva**; esto se traduce como **clase abstracta**".
+>
+> **Se lee así:** La p. 18 del deck titula «Generalización» y muestra la frase textual junto al código: `public abstract class CuentaBancaria implements Impresion` y `public final class Ahorros extends CuentaBancaria`.
+>
+> **Por qué importa:** Es la regla que conecta la notación con el lenguaje: si el nombre va en cursiva, en Java la clase es `abstract` y no se instancia.
+>
+> **Ejemplo:** `Dignidad` en cursiva en tu diagrama del SIEL se traduce como `abstract class Dignidad`, que nadie instancia directamente.
 
 > [!note] 🖼️ captura 04b-p18 — 5. Generalización: `extends` y clase abstracta
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p18-generalizacion.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 18: el código de la jerarquía del deck —`public abstract class CuentaBancaria implements Impresion` y `public final class Ahorros extends CuentaBancaria` con sus atributos (`nro_cuenta`, `interes_anual`, `saldo`) y métodos— más el recordatorio de que en el diagrama de clases el nombre de la clase abstracta va en cursiva.
+>
+> **Por qué importa:** El nombre en cursiva del diagrama es el que te dice que la clase va `abstract`; sin leerlo, la herencia se implementa como una clase concreta que se puede instanciar.
+>
+> **Ejemplo:** `Dignidad` en cursiva en tu diagrama del SIEL se traduce como `abstract class Dignidad`, que nadie instancia directamente.
 
 > [!example] 🔧 Generalización en Java
 >
@@ -243,10 +315,22 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Del deck (p. 19)
 > "**Impresión** es una Interface. **CuentaBancaria** implementa esa interface y por lo tanto desarrolla los métodos `ImprimirRecibo()` y `EstadoCuenta()`".
+>
+> **Se lee así:** La p. 19 del deck titula «Ejemplo - Realización» y resume en dos viñetas que `Impresión` es una interface y que `CuentaBancaria` la implementa desarrollando `ImprimirRecibo()` y `EstadoCuenta()`; la p. 20 dibuja el código con la interface al lado de la clase.
+>
+> **Por qué importa:** Separa las dos mitades de la realización: la interface declara el contrato y la clase lo desarrolla. Por eso en el diagrama la interface no tiene compartimentos.
+>
+> **Ejemplo:** `<<interface>> Pagable` con `+pagar(monto : double) : Comprobante` es el contrato que la `Factura` del curso implementa.
 
 > [!note] 🖼️ captura 04b-p20 — 6. Realización: `implements` y el contrato
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p20-realizacion.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 20: la interface `Impresion` con sus dos métodos (`ImprimirRecibo()` y `EstadoCuenta()`) al lado de la clase `CuentaBancaria implements Impresion`, con los cuerpos todavía como «TODO implement here».
+>
+> **Por qué importa:** La interface declara el contrato y la clase lo desarrolla: por eso en el diagrama la interface no tiene compartimentos que mostrar.
+>
+> **Ejemplo:** `<<interface>> Pagable` con `+pagar(monto : double) : Comprobante` es el contrato que la `Factura` del curso implementa.
 
 > [!example] 🔧 Realización en Java
 >
@@ -277,10 +361,22 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Del deck (p. 21)
 > "Indica que los **cambios sobre la clase B pueden afectar a la clase A**. `ClassA` **usa los servicios** de `ClassB`. En Java se podría representar con un `import`."
+>
+> **Se lee así:** La p. 21 del deck titula «Dependencia» y da las tres viñetas textuales (los cambios en B pueden afectar a A, A usa los servicios de B y en Java se podría representar con un `import`); la p. 22 lo muestra en código.
+>
+> **Por qué importa:** Define la dependencia como un vínculo de uso, no de estado: quien depende no guarda al otro, solo lo usa mientras dura la llamada.
+>
+> **Ejemplo:** `Reporte` usa `LocalDate` como parámetro o variable local; si lo guardara en un atributo, ya no sería dependencia sino asociación.
 
 > [!note] 🖼️ captura 04b-p22 — 7. Dependencia: el `import` disfrazado
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p22-dependencia.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 22: el ejemplo de dependencia con `import authentication.MetodoAutenticacion;` y la clase `Login` que declara `private string user`, `private string pass` y un método `ValidarCredenciales(MetodoAutenticacion metodo)` que recibe el tipo como parámetro.
+>
+> **Por qué importa:** La dependencia se ve en el `import` y en el parámetro: el objeto usado no queda guardado en ningún atributo.
+>
+> **Ejemplo:** Si `Login` guardara `private MetodoAutenticacion metodo;` ya no sería dependencia sino asociación — el error 3 de esta nota.
 
 > [!example] 🔧 Dependencia en Java
 >
@@ -302,14 +398,32 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 > [!info] 📖 Del deck (pp. 23-24)
 > El deck las llama "ejemplificación" y las muestra con los mismos ejemplos del curso: la **composición** es el rombo negro, la **agregación** el rombo blanco.
+>
+> **Se lee así:** Dos láminas contiguas del deck (pp. 23-24) tituladas «Ejemplificación de composición» y «Ejemplificación de Agregación», ambas con la clase `Automovil`: en la primera el constructor hace `new Estereo()` y `new Motor()`; en la segunda hay un constructor vacío y un método `ensamblar(Estereo e, Motor m)`.
+>
+> **Por qué importa:** El deck no explica la diferencia: la muestra en el código. El contraste entre las dos láminas es exactamente la prueba de supervivencia aplicada al constructor.
+>
+> **Ejemplo:** `Pedido` con `new LineaPedido(...)` dentro se parece a la p. 23; `Equipo.fichar(jugador)` se parece a la p. 24.
 
 > [!note] 🖼️ captura 04b-p23 — 8. Composición y agregación: quién manda
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p23-composicion.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 23: el ejemplo `Automovil` con los atributos `Estereo estereo` y `Motor motor`, y un constructor que hace `estereo = new Estereo();` y `motor = new Motor();` —las dos piezas creadas dentro del propio todo— sobre el diagrama con rombo negro.
+>
+> **Por qué importa:** El `new` dentro del constructor es la señal inequívoca de composición: el todo es dueño y el parte nace con él.
+>
+> **Ejemplo:** En el curso, `Pedido` con `lineas.add(new LineaPedido(p, cantidad))` es exactamente esta lámina.
 
 > [!note] 🖼️ captura 04b-p24 — 8. Composición y agregación: quién manda
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p24-agregacion.png]]
+>
+> **Se lee así:** Lámina de 04b, p. 24: el mismo `Automovil` pero con un constructor vacío y un método `ensamblar(Estereo e, Motor m)` que recibe las piezas ya hechas y las guarda; el diagrama marca la relación como agregación, con rombo blanco.
+>
+> **Por qué importa:** El contraste con la lámina anterior es la lección: en agregación el todo recibe partes que ya existían, y por eso el parte sobrevive.
+>
+> **Ejemplo:** `Equipo.fichar(jugador)` recibe un `Jugador` que ya existía, mientras que `Pedido` crea sus líneas.
 
 > [!example] 🔧 La diferencia en el código
 >
@@ -352,6 +466,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > | **mensaje** | una llamada a método (y su retorno, si la flecha es punteada) |
 > | **mensaje asíncrono** | un `ExecutorService.submit(...)` o un evento |
 > | **destroy** | el objeto se descarta: `=null` o sale del ámbito |
+>
+> **Se lee así:** La p. 25 del deck anuncia el cierre («Traduciendo un diagrama de secuencia en código fuente y viceversa») y la p. 28 lista los dos puntos para recordar: ir del diagrama de clase al código y del diagrama de secuencia al código, en ambos sentidos.
+>
+> **Por qué importa:** El «viceversa» es la parte que se examina: si el código ya existe, el diagrama se genera y cualquier diferencia revela que el modelo estaba mal.
+>
+> **Ejemplo:** De los tres mensajes de tu secuencia de inscripción salen tres firmas: `inscribirse(curso)`, `verificarCupo(curso)` y `confirmarInscripcion()`.
 
 > [!example] 🔧 Una secuencia y su código
 >
@@ -524,6 +644,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-06-02-mind.svg]]
+>
+> **Se lee así:** Mapa mental con raíz «Del diagrama al código» y siete ramas —una por relación—: Asociación (atributo de referencia, getter y setter, multiplicidad a colección), Clase de asociación (clase propia, atributos de la relación, se instancia al ejecutar la relación), Agregación (referencia al todo, el parte sobrevive), Composición (el todo crea el parte, el todo lo destruye), Generalización (`extends`, clase abstracta en cursiva), Realización (`implements`, interface con contrato) y Dependencia (import o parámetro, sin estado guardado).
+>
+> **Por qué importa:** Es el índice de la unidad: las siete ramas son las siete relaciones del deck y cada hoja es la construcción de Java que le toca.
+>
+> **Ejemplo:** Para tu proyecto, recorre las ramas y marca en cuáles caes: si tu relación es parte/todo, la rama de agregación o la de composición decide quién escribe el `new`.
 
 ---
 

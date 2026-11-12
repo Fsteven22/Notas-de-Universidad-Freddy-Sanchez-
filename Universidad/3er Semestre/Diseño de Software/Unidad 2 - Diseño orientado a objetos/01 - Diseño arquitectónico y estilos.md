@@ -31,6 +31,13 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-01-graph.svg]]
+>
+> **Se lee así:** Es un árbol de decisión con una raíz «Requerimientos + atributos» que llega a un rombo «¿Estilo decidido?». La rama «❌ Improvisar» se abre en tres consecuencias («Todo conectado», «Cuello de botella sorpresa», «Reescritura») y la rama «✅ Decidir estilo» en tres resultados («Capas / servicios», «Interfaces entre piezas», «Evolución planificada»).
+>
+> **Por qué importa:** Convierte el argumento abstracto («la arquitectura se decide al principio») en una cadena causal visible: improvisar no es solo mal gusto, produce tres consecuencias concretas que el equipo va a sufrir.
+>
+> **Ejemplo:** En el proyecto de reservas de la ESPOL, decidir «Capas / servicios» antes del sprint 1 evitó el «cuello de botella sorpresa» cuando tres personas tocaban la misma tabla de stock.
+
 
 ---
 
@@ -50,6 +57,13 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 
 > [!note] 📖 El deck de cátedra: los dos niveles en una sola página (01b, pp. 14-19)
 > "Dos niveles de diseño de software: 1. Diseño de alto nivel o arquitectural 2. Diseño detallado". El deck separa el **qué se decide** en cada uno con una lista explícita, que es la que se usa en el examen.
+>
+> **Se lee así:** El deck abre la sección con esa frase de dos niveles y la p. 16 aclara que arquitectura es «un enfoque de macro diseño para crear modelos que ilustren aspectos de calidad y funciones del sistema de software». La p. 17 enumera uno por uno los casilleros de «¿Qué se decide en el diseño arquitectural?»: plataforma tecnológica, despliegue físico del sistema y sus subsistemas, selección de los principales componentes estructurales, intercomunicación, problemas de concurrencia y requerimientos no funcionales.
+>
+> **Por qué importa:** Es la lista literal que la cátedra usa en el examen: decidir es completar esos seis casilleros, y una respuesta que los mezcle con el diseño detallado se puntúa como incompleta.
+>
+> **Ejemplo:** En tu proyecto de reservas, el nivel arquitectural decide plataforma, despliegue en tres cajas (web, servicio, BD), componentes, protocolo HTTP, concurrencia y «responde < 2 s»; el nivel detallado decide las clases e interfaces de cada componente.
+
 
 > [!note] 🖼️ captura 01b-p16 — Dos Niveles: Arquitectural vs Detallado (Deck 01b)
 >
@@ -122,6 +136,13 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > **5 · Arquitectura orientada a objetos** — los componentes encapsulan datos y operaciones para manipularlos; cada componente tiene responsibilities.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p31.png]]
+>
+> **Se lee así:** La quinta lámina se titula «Estilos arquitectónicos — 5. Arquitectura orientada a objetos» y trae dos viñetas: los componentes de un sistema encapsulan los datos y las operaciones que se deben aplicar para manipular esos datos, y la comunicación y coordinación entre componentes debe realizarse por medio de paso de mensajes.
+>
+> **Por qué importa:** Es el puente del deck hacia esta unidad: si la coordinación entre piezas es paso de mensajes, entonces cada componente necesita una interfaz explícita — de ahí los contratos de la nota 02.
+>
+> **Ejemplo:** En el SIEL, `Candidatura` encapsula sus votos y sus operaciones, y se coordina con `Acta` enviando mensajes en vez de compartir tablas.
+
 
 ### 🎭 MVC: Modelo-Vista-Controlador (Semana 4)
 
@@ -145,6 +166,13 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 
 > [!info] 📖 El deck de MVC en detalle (04p, pp. 44-49)
 > El deck explica por qué MVC nació: *"en 1988 se empezó a argumentar que las aplicaciones deben ser construidas usando capas, de manera que los diferentes componentes puedan aislarse y modificarse por separado"*.
+>
+> **Se lee así:** La lámina 45 del deck 04p arranca con ese dato histórico de 1988 y propone «un diseño de tres capas que desacople interfaz, navegación y comportamiento de la aplicación». Define MVC como «un patrón de diseño arquitectural que desacopla la interfaz de usuario de la funcionalidad de la aplicación y del contenido de información» y añade que «también es un modelo de infraestructura de aplicaciones Web».
+>
+> **Por qué importa:** Da el «por qué» que el docente pide en el examen: MVC no es una moda de nombres, es la respuesta de 1988 al problema de que la interfaz, la navegación y los datos cambiaran juntos.
+>
+> **Ejemplo:** En el portal de notas de la ESPOL, cambiar el formulario de «Consultar resultados» no debe tocar `Candidatura`: ese desacople de interfaz, navegación y comportamiento es lo que describe la lámina.
+
 
 > [!note] 🖼️ captura 04p-p45 — Estilos Arquitectónicos (Pressman cap. 10 + Deck 01b)
 >
@@ -347,6 +375,13 @@ tags: [CCPG1042, unidad2, arquitectura, estilos, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-02-04-mind.svg]]
+>
+> **Se lee así:** Es un mapa mental con la raíz «Arquitectura» y cuatro ramas: «Niveles» (Arquitectural, Detallado), «Estilos» (Capas, Datos y flujo, Servicios), «Vistas» (Componentes, Despliegue) y «Reglas» (Sin atajos, ADR escrito).
+>
+> **Por qué importa:** Funciona como índice de la unidad: si puedes recitar las cuatro ramas y sus hojas, tienes el esqueleto completo de lo que el docente evalúa.
+>
+> **Ejemplo:** Tu proyecto de curso debe mostrar en su resumen dos niveles dibujados, un estilo elegido, dos vistas (componentes y despliegue) y dos reglas: cero atajos entre capas y un ADR escrito.
+
 
 > [!success] 🔍 Comparación Final
 >

@@ -31,6 +31,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-01-seq.svg]]
+>
+> **Se lee así:** Un diagrama de secuencia con tres lifeline —Estudiante, Sistema y BD— y cuatro mensajes en orden vertical: `inscribirse(curso)` del estudiante al sistema, `verificar cupo` del sistema a la base de datos, el retorno punteado `cupo OK` y, al final, el retorno `matrícula confirmada` al estudiante.
+>
+> **Por qué importa:** Es el contraste con la «foto» del diagrama de clases: aquí se ve el tiempo y quién espera a quién. Cada flecha es una llamada a método.
+>
+> **Ejemplo:** En el SIEL, la misma estructura sirve para «registrar acta»: el presidente llama al sistema, el sistema valida contra el padrón y devuelve el comprobante.
 
 ---
 
@@ -60,6 +66,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🗺️ Diagrama — Los Tres Diagramas (Stevens caps. 7-11)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-04-flow.svg]]
+>
+> **Se lee así:** Un mini-diagrama de casos de uso: el actor «Actor» se une al caso «Inscribirse a curso»; de ese caso sale una flecha gruesa rotulada «include: siempre» hacia «Validar identidad», y hacia el caso base entra una flecha punteada rotulada «extend: opcional» desde «Aplicar descuento».
+>
+> **Por qué importa:** La dirección de las dos flechas es la regla: el `include` nace del caso base y el `extend` nace del parche opcional. Dibujarlas al revés es el error típico del examen.
+>
+> **Ejemplo:** En el SIEL, `Registrar acta de escrutinio` llama siempre a «Validar acta contra padrón» (`include`) y «Enviar acta a revisión» (`extend`) entra en el paso 4 cuando hay inconsistencia.
 
 ### 📝 2. Descripción Textual del Caso de Uso (Stevens ch. 8)
 
@@ -116,6 +128,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > Y el caso de uso a trabajar es **`Registrarse en un paralelo`**, con **al menos 2 refinamientos** de cada tipo (`<<include>>` y `<<extend>>`) y **2 escenarios** descritos.
 >
+> **Se lee así:** La lámina de 04a, pp. 6-7, pide tres cosas: un diagrama de casos de uso con al menos dos refinamientos de cada tipo, dos escenarios de uso y la descripción del caso «Registrarse en un paralelo» con los campos Actores (principales y secundarios), Precondiciones, Flujo de eventos (incluidos los alternativos) y Post condiciones.
+>
+> **Por qué importa:** El deck fija el formato de papel: la misma plantilla que se entrega en el Control03 y que sirve para cualquier sistema, no solo para el de registro académico.
+>
+> **Ejemplo:** «Registrarse en un paralelo» se traslada tal cual a `Inscribir candidatura` del SIEL: mismos campos, un `include` para la validación que siempre ocurre y un `extend` para el parche opcional.
+>
 > > [!tip] Traducción directa al SIEL
 > > `Registrarse en un paralelo` ≈ `Inscribir candidatura`: mismo esqueleto (actor + precondición + flujo + postcondición). Los refinamientos del deck te dan la plantilla: **1 `include`** para la validación que siempre ocurre y **1 `extend`** para el parche opcional.
 
@@ -134,6 +152,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 
 > [!info] 📖 De dónde sale esta sección
 > Del deck `04aLenguajeUnificadoModelado.pdf` (Unidad 2, 2024): la parte de secuencia es la más extensa del deck y define la notación con precisión.
+>
+> **Se lee así:** Las pp. 30-46 del deck son la parte de secuencia: qué demuestra un diagrama de secuencia y cómo se lee (p. 32), sus elementos —objects, life-line, activation, message y destroy— (pp. 32-33), el ejemplo de la máquina de autoservicio (pp. 35-37), el por qué de los frames condicionales (p. 38), los operadores `alt`, `opt` y `loop` (pp. 39-41), el ejemplo de la biblioteca (p. 42), las restricciones de tiempo (p. 43) y los tipos de interacción (p. 44).
+>
+> **Por qué importa:** Permite saber qué lámina consultar cuando una duda es de notación (¿qué flecha es un retorno? ¿dónde va la guarda?) y no de concepto.
+>
+> **Ejemplo:** La pregunta «¿la flecha punteada es un retorno o un mensaje?» se resuelve en la p. 44, y la duda «¿qué pongo dentro del `opt`?» en la p. 40.
 
 > [!info] 💡 Qué demuestra un diagrama de secuencia
 >
@@ -142,6 +166,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > **Los elementos** (pp. 32-33): objetos sobre su **life-line**, la **activation** (el objeto activo, la barra vertical sobre la lifeline), los **messages** (las flechas) y el **destroy** (la X al final de la lifeline).
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p33-elementos-secuencia.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 33: un diagrama de secuencia con sus cuatro elementos rotulados —los objetos sobre su línea de vida (life-line), la activation (el objeto activo, la barra vertical), el mensaje (la flecha) y la X de destroy al final de la línea.
+>
+> **Por qué importa:** Nombra las cuatro piezas de la notación de secuencia, que es lo que el docente pide recordar en la lámina final del deck.
+>
+> **Ejemplo:** En tu secuencia de inscripción, `Sistema` es la lifeline, la barra marca la activation mientras corre `verificarCupo` y la X marca el objeto que se descarta.
 >
 > **Frames: `alt`, `opt`, `loop`** (pp. 38-41). El deck explica por qué existen: lo que dibujas al principio es una **instancia** del diagrama de interacción, *una posible* secuencia de mensajes. Pero un caso de uso puede incluir muchos escenarios → hace falta mostrar **comportamiento condicional** y **posibles iteraciones**. Un diagrama de interacción **genérico** muestra todas las secuencias posibles.
 >
@@ -154,10 +184,22 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🖼️ captura 04a-p39 — Los Tres Diagramas (Stevens caps. 7-11)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p39-alt.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 39: la tabla de operadores del frame `alt` con las columnas sender/receiver y la columna Guard, donde cada traza lleva su condición entre corchetes (`[condición!]`, `[condición?]`, `[else]`), y al pie la frase «fragmento alternativo múltiple: solo se ejecuta el que cuya condición sea verdadera».
+>
+> **Por qué importa:** Deja explícito que las trazas de un `alt` son excluyentes: es la diferencia entre un `if/else` y un bloque que puede disparar dos ramas.
+>
+> **Ejemplo:** En el `alt` de registrar acta, la traza «votos > padrón → revisión» y la traza «votos ≤ padrón → registrada» no pueden ejecutarse las dos.
 
 > [!note] 🖼️ captura 04a-p40 — Los Tres Diagramas (Stevens caps. 7-11)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p40-opt.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 40: el frame `opt` dibujado con el mensaje principal y, debajo, un segundo mensaje entre corchetes con la condición; la lámina resume que «opt es opcional, el fragmento se ejecuta solo si la condición es verdadera» y que equivale a un `alt` con una sola traza.
+>
+> **Por qué importa:** Convierte el `<<extend>>` del diagrama de casos en algo verificable: el parche opcional es exactamente un `opt`.
+>
+> **Ejemplo:** El `<<extend>>` «Aplicar descuento» se dibuja como `opt` con guard `[aplica descuento]` en la secuencia del cobro.
 
 > [!tip] Cómo se usa en tu entrega
 >
@@ -169,13 +211,31 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p43-restricciones-tiempo.png]]
 >
+> **Se lee así:** Lámina de 04a, p. 43: la secuencia de la biblioteca con anotaciones de restricción de tiempo sobre los mensajes —una curly `{C-A < 5 sec}` junto al mensaje y otra `{borrowed - borrowed < 1 sec}` sobre la respuesta.
+>
+> **Por qué importa:** El tiempo es una restricción que se anota en el propio mensaje, no un comentario aparte: por eso se la lleva al código y a las pruebas.
+>
+> **Ejemplo:** Si tu portal de notas exige responder los resultados en menos de 2 segundos, esa restricción se anota sobre el mensaje de retorno de la secuencia.
+>
 > **Tipos de interacción** (p. 44): el deck distingue los mensajes **síncrono**, **asíncrono** y de **retorno**, y el mensaje tipo *choice* (la bifurcación). El aviso del propio deck: *algunas versiones de UML usan el mismo símbolo para los casos que aquí se distinguen*.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p44-tipos-interaccion.png]]
 >
+> **Se lee así:** Lámina de 04a, p. 44: una tabla de tipos de interacción con su símbolo y su significado —llamada síncrona (el emisor pierde el control hasta que el receptor termina), retorno (no es un mensaje nuevo sino la respuesta de uno anterior), flat (el mensaje no espera respuesta) y asíncrona (el emisor sigue activo)— con la advertencia de que algunas versiones de UML usan el mismo símbolo para flat y asíncrona.
+>
+> **Por qué importa:** Distingue «el receptor contesta» de «el emisor sigue trabajando»: es lo que separa un `Future.get()` de un `ExecutorService.submit()` en el código.
+>
+> **Ejemplo:** Al enviar el acta a revisión, el mensaje es asíncrono: el sistema registra y sigue, sin esperar respuesta.
+>
 > **El ejemplo canónico del deck** (p. 42): el diagrama de secuencia de la biblioteca, para comparar con el tuyo.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p42-biblioteca.png]]
+>
+> **Se lee así:** Lámina de 04a, p. 42: la secuencia de la biblioteca con las lifeline de `Member`, `BookBorrower` y el libro, y los mensajes numerados `1: okToBorrow`, `2: borrow` y la respuesta `2.1: borrowed`.
+>
+> **Por qué importa:** Es el ejemplo canónico del deck: muestra una guarda («¿puede prestarse?») antes del mensaje que cambia el estado, que es el patrón de toda validación.
+>
+> **Ejemplo:** Tu secuencia de inscripción repite el patrón: `1: okToInscribir` (guard de prerrequisitos y cupo) y luego `2: inscribir` con su retorno.
 
 ### 🎭 4. Actividad: el Flujo con Decisiones
 
@@ -207,6 +267,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🗺️ Diagrama — ️ Ejemplo de la Clase: el SIEL (Sistema de Elecciones Seccionales)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-04-05-use.svg]]
+>
+> **Se lee así:** El diagrama de casos del SIEL: «Ciudadano» se une a «Consultar resultados» y «Consultar su lugar de votación», y «Observador acreditado» apunta a «Ciudadano» con una flecha punteada rotulada «es-un / generalización», además de su caso propio «Descargar actas escaneadas». «Presidente de JRV» llama siempre a «Validar acta contra padrón» (`include`) y «Enviar acta a revisión» entra con flecha punteada `extend` en el paso 4 cuando hay inconsistencia; «Funcionario electoral», «Organización política» y «Registro Civil «sistema»» cierran con sus casos.
+>
+> **Por qué importa:** Junta en una sola figura las tres relaciones que el docente evalúa: `include` con flecha gruesa desde el caso base, `extend` con flecha punteada hacia el caso base y generalización entre actores con triángulo hueco.
+>
+> **Ejemplo:** El «Observador acreditado» no repite los casos del ciudadano: hereda su relación con «Ciudadano» y añade solo el caso que le es propio.
 
 > [!note] 💡 ¿Para qué sirven y cómo se echan a perder?
 >
@@ -227,6 +293,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Diagrama Dibujo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-02-flow.svg]]
+>
+> **Se lee así:** Un flowchart que arranca en «Quiero mostrar algo del sistema» y pregunta «¿Estructura o tiempo?». Si es estructura, la respuesta es «Diagrama de clases»; si es tiempo, pregunta «¿Vista de usuario o de objetos?» y, en el caso de objetos, decide con «¿Hay ramas o paralelo?» entre «Actividad» (si los hay) y «Secuencia» (si el flujo es lineal).
+>
+> **Por qué importa:** Ordena los tres diagramas por la pregunta que resuelven, no por el orden de las láminas: estructura → clases, tiempo del usuario → casos de uso, tiempo de los objetos → secuencia o actividad.
+>
+> **Ejemplo:** El «registro de acta» del SIEL pide estructura (sus clases) y tiempo de objetos con ramas (el `alt` de inconsistencia), así que lleva diagrama de clases + secuencia; actividad solo si además hubiera un paralelo real.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -406,6 +478,12 @@ tags: [CCPG1042, unidad2, uml, casos-de-uso, secuencia]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-05-03-mind.svg]]
+>
+> **Se lee así:** Mapa mental con raíz «UML Dinámica» y tres ramas: «Casos de uso» (Actor + objetivo, include/extend), «Secuencia» (Tiempo vertical, alt/loop) y «Actividad» (Ramas, Paralelo).
+>
+> **Por qué importa:** Es el índice de la nota: cada rama es un diagrama y cada hoja es la regla que lo gobierna.
+>
+> **Ejemplo:** Tu entrega debe poder responder con esta lista: qué objetivos pide cada actor, qué flechas tiene el `include` y el `extend`, cómo se leen las trazas de una secuencia y cuándo hay un `fork/join` en la actividad.
 
 > [!success] 🔍 Comparación Final
 >
