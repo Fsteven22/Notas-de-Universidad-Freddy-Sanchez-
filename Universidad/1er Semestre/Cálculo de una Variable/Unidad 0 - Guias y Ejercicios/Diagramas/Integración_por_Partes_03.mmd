@@ -1,0 +1,33 @@
+---
+title: "Integración_por_Partes_03"
+---
+flowchart TD
+    A["Método tabular<br/>∫ u(x)·v(x) dx"]
+    W["Útil cuando:<br/>un factor se deriva hasta 0<br/>polinomios · el otro se integra fácil"]
+    T["tabla"]
+    R1["+ f(x) | ∫ g dx"]
+    R2["− f′(x) | ∫∫ g dx"]
+    R3["+ f″(x) | ∫∫∫ g dx"]
+    R4["− f‴(x) | …"]
+    R5["± … | …"]
+    R6["0 | fin"]
+    RES["Resultado = Σ signo · derivada<br/>· integral de la misma fila"]
+    A --> W
+    W --> T
+    T --> R1
+    T --> R2
+    T --> R3
+    T --> R4
+    T --> R5
+    T --> R6
+    R6 --> RES
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style W fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style R1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R3 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R4 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R5 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R6 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style RES fill:#fff3e0,stroke:#ff9800,color:#4a2c00

@@ -1,0 +1,25 @@
+flowchart TD
+    A[Problemas Geométricos Dinámicos] --> B[Área Variable]
+    A --> C[Perímetros/Circunferencias]
+    A --> D[Ángulos Variables]
+    A --> E[Volúmenes Variables]
+    
+    B --> F[Triángulos, Rectángulos, Círculos]
+    C --> G[Figuras que crecen/decrecen uniformemente]
+    D --> H[Rotación, Oscilación, Observación]
+    E --> I[Sólidos de revolución, Recipientes]
+    
+    F --> J[dA/dt = función de dimensiones]
+    G --> K[dP/dt proporcional a crecimiento]
+    H --> L[dθ/dt relacionado con movimiento]
+    I --> M[dV/dt por forma del recipiente]
+    
+    classDef mainNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px
+    classDef categoryNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef typeNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
+    classDef formulaNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class A mainNode
+    class B,C,D,E categoryNode
+    class F,G,H,I typeNode
+    class J,K,L,M formulaNode

@@ -1,6 +1,34 @@
+---
+import MotionToggle from "./MotionToggle.astro";
+
+/**
+ * SearchModal.astro — el buscador.
+ *
+ * Antes el índice (public/search-index.json) solo guardaba por nota el
+ * TÍTULO, la materia y el semestre: buscar "gradiente" solo encontraba notas
+ * que se llamaran "Gradiente" y buscar "teorema de Rolle" no encontraba nada
+ * aunque estuviera escrito en tres notas. El buscador era casi inútil.
+ *
+ * Ahora hay dos índices:
+ *   · search-index.json (186 KB, títulos) → se carga al instante
+ *   · search-content.json (apartados + fragmento de texto, ~2 MB) → se pide
+ *     en segundo plano la primera vez que se abre el buscador
+ *
+ * Con el segundo, un resultado dice en qué apartado apareció y lleva al ancla
+ * exacta, no al principio de la nota. Si estás dentro de una materia, sus
+ * resultados salen primero.
+ */
+interface Props {
+  /** semestre/materia de la página actual: sus resultados salen primero */
+  scope?: string;
+}
+const { scope = "" } = Astro.props;
+---
+
 <div
   id="nx-search"
   class="fixed inset-0 z-50 hidden items-start justify-center bg-[rgba(2,4,10,0.7)] px-4 pt-[11vh] backdrop-blur-[6px]"
+  data-nx-scope={scope}
 >
   <div id="nx-search-panel" class="w-full max-w-xl">
     <div class="relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#0a0e1a] shadow-[0_24px_80px_rgba(0,0,0,0.6),0_0_40px_rgba(120,140,255,0.12)]">
@@ -13,7 +41,7 @@
         <input
           id="nx-search-input"
           type="text"
-          placeholder="Buscar en todas tus notas…"
+          placeholder="Buscar en títulos y dentro de las notas…"
           autocomplete="off"
           spellcheck="false"
           class="w-full bg-transparent text-sm text-white placeholder:text-[var(--color-nexus-muted)] focus:outline-none"
@@ -32,11 +60,12 @@
 
       <div id="nx-search-list" class="max-h-[52vh] min-h-[180px] overflow-y-auto p-2 nx-scroll"></div>
 
-      <div id="nx-search-foot" class="flex items-center justify-between border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
+      <div id="nx-search-foot" class="flex items-center justify-between gap-3 border-t border-[rgba(255,255,255,0.06)] px-4 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">
         <span id="nx-search-count"></span>
-        <span class="flex items-center gap-2">
-          <span><span class="nx-search-key">↑↓</span> elegir</span>
-          <span><span class="nx-search-key">enter</span> ir</span>
+        <span class="flex items-center gap-3">
+          <span class="hidden sm:inline"><span class="nx-search-key">↑↓</span> elegir</span>
+          <span class="hidden sm:inline"><span class="nx-search-key">enter</span> ir</span>
+          <MotionToggle variant="compact" />
         </span>
       </div>
     </div>
@@ -56,17 +85,41 @@
 </style>
 
 <script>
-  type Hit = { t: string; m: string; s: string; u: string; mt?: number };
+  type Hit = {
+    t: string;
+    m: string;
+    s: string;
+    u: string;
+    mt?: number;
+    sec?: string;
+    anchor?: string;
+    snip?: string;
+    sc?: number;
+  };
+  type Sec = { n: number; a: string; t: string; x: string };
+  type SecIdx = Sec & { nt: string; nx: string };
+  type ContentNote = { u: string; t: string; m: string; s: string; sec: Sec[] };
+  type ContentNoteIdx = { u: string; t: string; m: string; s: string; sec: SecIdx[] };
+
   let idx: Hit[] = [];
   let loaded = false;
+  let contentIdx: ContentNoteIdx[] = [];
+  let contentLoaded = false;
   let hits: Hit[] = [];
   let selected = -1;
+  /** semestre/materia de la página actual (lo pone data-nx-scope) */
+  let scope = "";
   let ctx: {
     overlay: HTMLElement;
     input: HTMLInputElement;
     listEl: HTMLElement;
     countEl: HTMLElement;
   } | null = null;
+
+  const AMP = String.fromCharCode(38);
+  const LT = String.fromCharCode(60);
+  const GT = String.fromCharCode(62);
+  const QUOT = String.fromCharCode(34);
 
   const norm = (s: string) =>
     s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -82,13 +135,38 @@
     loaded = true;
   }
 
+  /** índice de contenido: se pide en segundo plano la primera vez */
+  async function ensureContentIndex() {
+    if (contentLoaded) return;
+    try {
+      const res = await fetch("/search-content.json");
+      if (!res.ok) throw new Error("http " + res.status);
+      const crudo: ContentNote[] = await res.json();
+      // el texto se normaliza UNA sola vez: hay 18.043 apartados y
+      // normalizar sus 280 caracteres en cada pulsacion era lo mas lento
+      contentIdx = crudo.map((nota) => ({
+        u: nota.u,
+        t: nota.t,
+        m: nota.m,
+        s: nota.s,
+        sec: nota.sec.map((s) => ({ ...s, nt: norm(s.t), nx: norm(s.x) })),
+      }));
+    } catch {
+      contentIdx = [];
+    }
+    contentLoaded = true;
+    if (ctx && !ctx.overlay.classList.contains("hidden")) {
+      render(ctx.input.value);
+    }
+  }
+
   const esc = (s: string) =>
-    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    s.replace(/&/g, AMP).replace(/</g, LT).replace(/>/g, GT).replace(/"/g, QUOT);
 
   const mapa = { a: "aáàäâã", e: "eéèëê", i: "iíìïî", o: "oóòöô", u: "uúùüû", n: "nñ", c: "cç" } as Record<string, string>;
   function accentRe(terms: string[]) {
     const parts = terms.map((t) =>
-      t.split("").map((ch) => (mapa[ch] ? `[${mapa[ch]}]` : `[${ch.replace(/[.*+?^${}()\\\[\]]/g, "\\$&")}]`)).join("")
+      t.split("").map((ch) => (mapa[ch] ? `[${mapa[ch]}]` : `[${ch.replace(/[.*+?^${}()\\[\]]/g, "\\$&")}]`)).join("")
     );
     return new RegExp(`(${parts.join("|")})`, "gi");
   }
@@ -104,28 +182,91 @@
     }
   }
 
+  /** puntúa una nota por su título */
   function score(n: Hit, terms: string[]) {
     const ht = norm(n.t), hm = norm(n.m), hs = norm(n.s);
+    const words = ht.split(/\s+/);
     let sc = 0;
     for (const w of terms) {
-      if (ht.startsWith(w)) sc += 6;
-      else if (ht.includes(w)) sc += 4;
-      const words = ht.split(/\s+/);
-      if (words.some((x) => x.startsWith(w))) sc += 3;
-      if (hm.includes(w)) sc += 1;
-      if (hs.includes(w)) sc += 0.5;
-      if (sc === 0) return 0;
+      // cada palabra tiene que aparecer en algun sitio: si no, la nota no vale
+      let s = 0;
+      if (ht.startsWith(w)) s += 6;
+      else if (ht.includes(w)) s += 4;
+      if (words.some((x) => x.startsWith(w))) s += 3;
+      if (hm.includes(w)) s += 1;
+      if (hs.includes(w)) s += 0.5;
+      if (s === 0) return 0;
+      sc += s;
     }
     return sc;
   }
 
+  /** ¿es de la materia que estoy viendo? */
+  function enAlcance(u: string) {
+    return !!scope && u.startsWith("/" + scope + "/");
+  }
+
+  /** busca dentro de los apartados: título del apartado + fragmento */
+  function buscarApartados(terms: string[]) {
+    const porNota = new Map<string, Hit[]>();
+    for (const nota of contentIdx) {
+      for (const sec of nota.sec) {
+        let sc = 0;
+        let ok = true;
+        for (const w of terms) {
+          let s = 0;
+          if (sec.nt.startsWith(w)) s += 6;
+          else if (sec.nt.includes(w)) s += 5;
+          if (sec.nx.includes(w)) s += 1.5;
+          if (s === 0) {
+            ok = false;
+            break;
+          }
+          sc += s;
+        }
+        if (!ok) continue;
+        if (enAlcance(nota.u)) sc += 2.5;
+        const arr = porNota.get(nota.u) || [];
+        arr.push({
+          t: nota.t,
+          m: nota.m,
+          s: nota.s,
+          u: nota.u,
+          sec: sec.t,
+          anchor: sec.a,
+          snip: sec.x,
+          sc,
+        });
+        porNota.set(nota.u, arr);
+      }
+    }
+    const out: Hit[] = [];
+    for (const arr of porNota.values()) {
+      arr.sort((a, b) => (b.sc ?? 0) - (a.sc ?? 0));
+      // como mucho 2 apartados de la misma nota: si no, se ahoga la lista
+      for (const h of arr.slice(0, 2)) out.push(h);
+    }
+    return out;
+  }
+
   function hitHtml(n: Hit, terms: string[], i: number, recent = false) {
+    const url = n.anchor ? `${n.u}#${n.anchor}` : n.u;
     return `
-      <button type="button" data-i="${i}" data-url="${esc(n.u)}" style="animation-delay:${i * 28}ms" class="nx-hit${i === 0 ? " is-selected" : ""}">
+      <button type="button" data-i="${i}" data-url="${esc(url)}" style="animation-delay:${i * 28}ms" class="nx-hit${i === 0 ? " is-selected" : ""}">
         <div class="flex items-start justify-between gap-3">
           <div class="min-w-0">
             <p class="text-sm font-semibold leading-snug text-white">${recent ? esc(n.t) : highlight(n.t, terms)}</p>
-            <p class="mt-0.5 flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] truncate">
+            ${
+              n.sec
+                ? `<p class="mt-1 text-[12.5px] leading-snug text-[var(--color-nexus-cyan)]">↳ ${highlight(n.sec, terms)}</p>`
+                : ""
+            }
+            ${
+              n.snip
+                ? `<p class="mt-1 text-[12px] leading-snug text-[#9ca3af]">${highlight(n.snip, terms)}</p>`
+                : ""
+            }
+            <p class="mt-1.5 flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] truncate">
               <span class="mt-1.5 size-1.5 shrink-0 rounded-full ${recent ? "bg-[var(--color-nexus-blue)] opacity-60" : "bg-[var(--color-nexus-purple)] opacity-40"}"></span>
               ${esc(n.s)} · ${esc(n.m)}
             </p>
@@ -150,12 +291,25 @@
       return;
     }
 
-    hits = idx
-      .map((n) => ({ n, sc: score(n, terms) }))
-      .filter((x) => x.sc > 0)
-      .sort((a, b) => b.sc - a.sc || a.n.t.localeCompare(b.n.t, "es"))
-      .slice(0, 15)
-      .map((x) => x.n);
+    const encontrados: Hit[] = [];
+
+    // 1) coincidencias en el título de la nota
+    for (const n of idx) {
+      const sc = score(n, terms);
+      if (sc <= 0) continue;
+      let s = sc + 3;
+      if (enAlcance(n.u)) s += 2.5;
+      encontrados.push({ ...n, sc: s });
+    }
+
+    // 2) coincidencias dentro de los apartados
+    if (contentIdx.length) {
+      for (const h of buscarApartados(terms)) encontrados.push(h);
+    }
+
+    hits = encontrados
+      .sort((a, b) => (b.sc ?? 0) - (a.sc ?? 0) || a.t.localeCompare(b.t, "es"))
+      .slice(0, 15);
 
     if (!hits.length) {
       hits = [];
@@ -172,7 +326,12 @@
       return;
     }
 
-    ctx.listEl.innerHTML = hits.map((n, i) => hitHtml(n, terms, i)).join("");
+    const cargando =
+      terms.length && !contentLoaded
+        ? `<p class="px-2 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">BUSCANDO TAMBIÉN DENTRO DE LAS NOTAS…</p>`
+        : "";
+
+    ctx.listEl.innerHTML = hits.map((n, i) => hitHtml(n, terms, i)).join("") + cargando;
     ctx.countEl.textContent = `${hits.length} COINCIDENCIA${hits.length === 1 ? "" : "S"}`;
     selected = 0;
   }
@@ -192,10 +351,15 @@
     document.body.style.overflow = "hidden";
     ctx.input.value = "";
     render("");
-    requestAnimationFrame(() => {
-      ctx!.overlay.classList.add("nx-open");
-      ctx!.input.focus();
-    });
+    // Se fuerza un reflow para que el navegador registre el estado inicial
+    // (opacity 0) antes de aplicar "nx-open": así la entrada animada no
+    // depende de requestAnimationFrame, que no se dispara si la pestaña
+    // está en segundo plano (el panel se quedaría invisible y sin foco).
+    void ctx.overlay.offsetWidth;
+    ctx.overlay.classList.add("nx-open");
+    ctx.input.focus();
+    // el índice de contenido se pide en segundo plano
+    void ensureContentIndex();
   }
 
   function closeSearch() {
@@ -219,13 +383,19 @@
     const input = document.getElementById("nx-search-input") as HTMLInputElement | null;
     if (!overlay || !input || overlay.dataset.nxBound) return;
     overlay.dataset.nxBound = "1";
+    scope = overlay.dataset.nxScope || "";
     const listEl = document.getElementById("nx-search-list")!;
     const countEl = document.getElementById("nx-search-count")!;
     const closeBtn = document.getElementById("nx-search-close")!;
     ctx = { overlay, input, listEl, countEl };
 
     closeBtn.addEventListener("click", closeSearch);
-    input.addEventListener("input", () => render(input.value));
+    // 18.043 apartados por pulsacion: se espera a que dejes de escribir
+    let timer: number | undefined;
+    input.addEventListener("input", () => {
+      if (timer) window.clearTimeout(timer);
+      timer = window.setTimeout(() => render(input.value), 110);
+    });
     overlay.addEventListener("mousedown", (e) => {
       if (e.target === overlay) closeSearch();
     });
@@ -233,13 +403,18 @@
       const btn = (e.target as HTMLElement).closest(".nx-hit") as HTMLElement | null;
       if (btn?.dataset.url) location.href = btn.dataset.url;
     });
-    document.querySelectorAll(".nx-search-open").forEach((b) =>
-      b.addEventListener("click", openSearch)
-    );
+    document.querySelectorAll<HTMLElement>(".nx-search-open").forEach((b) => {
+      if (b.dataset.nxSearchBound) return;
+      b.dataset.nxSearchBound = "1";
+      b.addEventListener("click", openSearch);
+    });
   }
 
-  if (!document.documentElement.dataset.nxSearchKeys) {
-    document.documentElement.dataset.nxSearchKeys = "1";
+  // Guarda en window: swapRootAttributes borra los data-* de <html> en cada
+  // navegación; si viviera ahí, cada swap registraría otro keydown y Ctrl+K
+  // alternaría abrir/cerrar con tantos listeners como visitas previas.
+  if (!window.__nxSearchKeys) {
+    window.__nxSearchKeys = 1;
     document.addEventListener("keydown", (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
@@ -257,7 +432,8 @@
       if (e.key === "ArrowDown") { e.preventDefault(); if (selected < hits.length - 1) { selected++; updateSelected(); } }
       if (e.key === "ArrowUp") { e.preventDefault(); if (selected > 0) { selected--; updateSelected(); } }
       if (e.key === "Enter") {
-        if (selected >= 0 && hits[selected]) location.href = hits[selected].u;
+        const h = selected >= 0 ? hits[selected] : null;
+        if (h) location.href = h.anchor ? `${h.u}#${h.anchor}` : h.u;
       }
     });
     document.addEventListener("astro:before-swap", () => {
@@ -293,7 +469,9 @@
     transform: translateY(0) scale(1);
   }
   @media (prefers-reduced-motion: reduce) {
-    #nx-search, #nx-search #nx-search-panel, #nx-search-list .nx-hit {
+    :root:not([data-nx-motion="on"]) #nx-search,
+    :root:not([data-nx-motion="on"]) #nx-search #nx-search-panel,
+    :root:not([data-nx-motion="on"]) #nx-search-list .nx-hit {
       transition: none !important;
       animation: none !important;
     }

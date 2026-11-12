@@ -1,0 +1,25 @@
+---
+title: "03_-_Teoremas_Especiales_para_Integrales_Definidas_03"
+---
+flowchart TD
+    A["TVMI · Teorema del valor medio<br/>para integrales"]
+    B["f continua en [a, b]<br/>con a ≠ b"]
+    C["Existe c en (a, b) tal que:<br/>f(c) = 1/(b−a) · ∫ ab f(x) dx"]
+    D["Interpretación:<br/>rectángulo con base b − a"]
+    E["Altura f(c)"]
+    G["Área del rectángulo =<br/>área bajo la curva<br/>de a hasta b"]
+    H["f(c) = variable promedio<br/>de f en [a, b]"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> G
+    C --> H
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

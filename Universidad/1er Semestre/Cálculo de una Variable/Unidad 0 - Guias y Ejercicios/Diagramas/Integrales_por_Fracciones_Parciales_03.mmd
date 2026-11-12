@@ -1,0 +1,32 @@
+---
+title: "Integrales_por_Fracciones_Parciales_03"
+---
+flowchart TD
+    A["Ejemplo:<br/>∫ (x+5)/((x+2)(x−1)) dx"]
+    S1["Descomposición:<br/>(x+5)/((x+2)(x−1)) = A/(x+2) + B/(x−1)"]
+    S2["x + 5 = A(x − 1) + B(x + 2)"]
+    C1["x = 1:  6 = 3B → B = 2"]
+    C2["x = −2: 3 = −3A → A = −1"]
+    I["∫ [−1/(x+2) + 2/(x−1)] dx"]
+    R["= −ln|x+2| + 2·ln|x−1| + C"]
+    RC["Forma compacta:<br/>ln | (x−1)² / (x+2) | + C"]
+    OK["Verificar derivando:<br/>recupera (x+5)/((x+2)(x−1))"]
+    A --> S1
+    S1 --> S2
+    S2 --> C1
+    S2 --> C2
+    C1 --> I
+    C2 --> I
+    I --> R
+    R --> RC
+    RC --> OK
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style S1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style I fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style R fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style RC fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style OK fill:#ffebee,stroke:#e53935,color:#4a1010

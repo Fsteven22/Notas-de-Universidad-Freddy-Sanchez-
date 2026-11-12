@@ -1,0 +1,369 @@
+---
+import MotionToggle from "./MotionToggle.astro";
+
+/**
+ * ShortcutsPanel.astro — el panel de atajos de teclado.
+ *
+ * Los atajos existían pero nadie los encontraba: solo se explicaban en una
+ * tarjeta de la portada, muy por debajo del fold, y el header anunciaba
+ * "⌘K" (que no existe en Windows ni en Linux). Además `g h` es una
+ * *secuencia* de dos teclas: al pulsar `g` no ocurre nada visible, así que
+ * quien lo prueba sin saberlo deduce que el atajo está roto.
+ *
+ * Este panel resuelve las tres cosas:
+ *   · se abre desde el header (icono de teclado) o con la tecla `?`
+ *   · lista los atajos con su tecla real, agrupados por contexto
+ *   · se indica explícitamente que `g` espera una segunda tecla
+ *
+ * Vive en el body de Base.astro, así que Astro lo vuelve a crear en cada
+ * navegación; por eso el binding se hace en `astro:page-load` (igual que
+ * SearchModal) y los listeners de document, que sobreviven al swap, se
+ * registran una sola vez con una guarda en `window`.
+ */
+interface Grupo {
+  titulo: string;
+  items: Atajo[];
+}
+
+/**
+ * Un atajo tiene tres formas distintas y no se deben mostrar igual:
+ *   · "secuencia" → una tecla después de otra ("g" luego "h")
+ *   · "combo"     → dos teclas a la vez ("ctrl" + "k")
+ *   · "sola"      → una única tecla (o varias alternativas: "↑" o "↓")
+ */
+interface Atajo {
+  keys: string[];
+  desc: string;
+  tipo?: "secuencia" | "combo" | "alternativas";
+}
+
+const grupos: Grupo[] = [
+  {
+    titulo: "Navegación",
+    items: [
+      { keys: ["g", "h"], desc: "Ir a la portada", tipo: "secuencia" },
+      { keys: ["g", "i"], desc: "Ir al índice de semestres", tipo: "secuencia" },
+      { keys: ["g", "b"], desc: "Abrir el buscador", tipo: "secuencia" },
+      { keys: ["/"], desc: "Abrir el buscador (rápido)" },
+    ],
+  },
+  {
+    titulo: "En el buscador",
+    items: [
+      { keys: ["↑", "↓"], desc: "Mover entre resultados", tipo: "alternativas" },
+      { keys: ["enter"], desc: "Abrir el resultado elegido" },
+      { keys: ["esc"], desc: "Cerrar el buscador" },
+    ],
+  },
+  {
+    titulo: "En cualquier página",
+    items: [
+      { keys: ["ctrl", "k"], desc: "Abrir el buscador (⌘ K en Mac)", tipo: "combo" },
+      { keys: ["?"], desc: "Abrir y cerrar este panel" },
+    ],
+  },
+];
+---
+
+<div
+  id="nx-shortcuts"
+  class="fixed inset-0 z-[60] hidden items-center justify-center bg-[rgba(2,4,10,0.72)] px-4 backdrop-blur-[6px]"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="nx-shortcuts-title"
+>
+  <div id="nx-shortcuts-panel" class="nx-shortcuts-panel w-full max-w-lg">
+    <div class="relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#0a0e1a] shadow-[0_24px_80px_rgba(0,0,0,0.6),0_0_40px_rgba(120,140,255,0.12)]">
+      <div
+        class="absolute inset-x-0 top-0 h-px"
+        style="background: linear-gradient(90deg, transparent, #aa66ff 25%, #00aaff 75%, transparent);"
+      >
+      </div>
+
+      <div class="flex items-center gap-3 border-b border-[rgba(255,255,255,0.07)] px-5 py-4">
+        <svg
+          class="size-4 shrink-0 text-[var(--color-nexus-blue)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <rect x="2" y="6" width="20" height="12" rx="2" />
+          <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
+        </svg>
+        <h2 id="nx-shortcuts-title" class="text-sm font-bold text-white">
+          Atajos de teclado
+        </h2>
+        <button
+          id="nx-shortcuts-close"
+          type="button"
+          aria-label="Cerrar atajos"
+          class="ml-auto flex size-7 shrink-0 items-center justify-center rounded-lg border border-[rgba(255,255,255,0.12)] text-[var(--color-nexus-muted)] transition hover:border-[rgba(255,255,255,0.3)] hover:text-white"
+        >
+          <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="nx-shortcuts-body nx-scroll max-h-[62vh] overflow-y-auto px-5 py-4">
+        {
+          grupos.map((g) => (
+            <section class="mb-5 last:mb-0">
+              <p class="nx-shortcuts-group">{g.titulo}</p>
+              <ul class="mt-2 space-y-1.5">
+                {g.items.map((it) => (
+                  <li class="nx-shortcuts-row">
+                    <span class="nx-shortcuts-keys">
+                      {it.tipo === "alternativas" ? (
+                        <kbd class="nx-kbd">{it.keys.join(" / ")}</kbd>
+                      ) : (
+                        it.keys.map((k, i) => (
+                          <>
+                            {i > 0 && (
+                              <span class="nx-shortcuts-then">
+                                {it.tipo === "combo" ? "+" : "luego"}
+                              </span>
+                            )}
+                            <kbd class="nx-kbd">{k}</kbd>
+                          </>
+                        ))
+                      )}
+                    </span>
+                    <span class="nx-shortcuts-desc">{it.desc}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+
+        <p class="nx-shortcuts-note">
+          Donde pone <span class="nx-shortcuts-then">luego</span> las teclas van una detrás de otra
+          (<kbd class="nx-kbd">g</kbd> y enseguida la otra). Con
+          <span class="nx-shortcuts-then">+</span> van las dos a la vez. Las secuencias se cancelan
+          solas si esperas más de un segundo.
+        </p>
+
+        {/* ── Movimiento ─────────────────────────────────────────
+            Aquí se decide si el sitio se mueve. "Auto" sigue al
+            sistema (reducir movimiento); "Siempre" y "Nunca" lo
+            fuerzan. También se puede forzar con ?motion=1|0. */}
+        <section class="nx-shortcuts-section">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <p class="nx-shortcuts-group">Movimiento</p>
+              <p class="nx-shortcuts-hint">
+                Animaciones de la página. Auto sigue la preferencia del sistema.
+              </p>
+            </div>
+            <MotionToggle />
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="flex items-center justify-between border-t border-[rgba(255,255,255,0.06)] px-5 py-2.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]"
+      >
+        <span>Atajos disponibles en todo el sitio</span>
+        <span><span class="nx-search-key">esc</span> cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  /**
+   * Panel de atajos.
+   *
+   * El overlay vive en el body, que Astro reemplaza en cada navegación: por
+   * eso NUNCA se guarda el elemento en una variable. Todas las funciones lo
+   * buscan por id en el momento de usarlo, así que funcionan igual en la
+   * primera página y después de navegar (donde el nodo anterior ya no existe).
+   *
+   * Los listeners de document, en cambio, sobreviven al swap: se registran
+   * una sola vez (guarda en `window`) para no abrir/cerrar dos veces.
+   */
+  function overlay() {
+    return document.getElementById("nx-shortcuts");
+  }
+
+  function isOpen() {
+    const o = overlay();
+    return !!o && !o.classList.contains("hidden");
+  }
+
+  /** El buscador abierto manda: si está, la "?" se escribe en su campo. */
+  function searchOpen() {
+    const s = document.getElementById("nx-search");
+    return !!s && !s.classList.contains("hidden");
+  }
+
+  function open() {
+    const o = overlay();
+    if (!o) return;
+    o.classList.remove("hidden");
+    o.classList.add("flex");
+    document.body.style.overflow = "hidden";
+    // La entrada animada necesita que el navegador registre el estado
+    // inicial (opacity 0) ANTES de aplicar "nx-open". Se fuerza con un
+    // reflow: así no depende de requestAnimationFrame, que no se dispara
+    // si la pestaña está en segundo plano y dejaría el panel invisible.
+    void o.offsetWidth;
+    o.classList.add("nx-open");
+    o.querySelector<HTMLElement>("#nx-shortcuts-close")?.focus({ preventScroll: true });
+  }
+
+  function close() {
+    const o = overlay();
+    if (!o) return;
+    o.classList.remove("nx-open");
+    window.setTimeout(() => {
+      const cur = overlay();
+      if (!cur) return;
+      cur.classList.add("hidden");
+      cur.classList.remove("flex");
+      document.body.style.overflow = "";
+    }, 160);
+    // La foco vuelve al botón que lo abrió (si sigue en pantalla).
+    document.querySelector<HTMLElement>("[data-nx-shortcuts-open]")?.focus({ preventScroll: true });
+  }
+
+  function toggle() {
+    isOpen() ? close() : open();
+  }
+
+  /** Botón de cerrar y clic fuera: se reenganchan en cada página. */
+  function bind() {
+    const o = overlay();
+    if (!o || o.dataset.nxBound) return;
+    o.dataset.nxBound = "1";
+
+    o.querySelector<HTMLElement>("#nx-shortcuts-close")?.addEventListener("click", close);
+    o.addEventListener("mousedown", (e) => {
+      if (e.target === o) close();
+    });
+  }
+
+  if (!window.__nxShortcutsKeys) {
+    window.__nxShortcutsKeys = 1;
+
+    // Botón del header (aparece y desaparece con el swap): delegación.
+    document.addEventListener("click", (e) => {
+      const t = e.target as HTMLElement | null;
+      if (!t || typeof t.closest !== "function") return;
+      if (t.closest("[data-nx-shortcuts-open]")) {
+        e.preventDefault();
+        toggle();
+      }
+    });
+
+    // "?" abre y cierra el panel; Escape lo cierra. No se registra en
+    // Base.astro para que no haya dos listeners peleando por la misma tecla.
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const t = e.target as HTMLElement | null;
+      if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+      if (e.key === "?") {
+        if (searchOpen()) return; // se escribe en el buscador
+        e.preventDefault();
+        toggle();
+      } else if (e.key === "Escape" && isOpen()) {
+        e.preventDefault();
+        close();
+      }
+    });
+
+    // Si se navega con el panel abierto, el body nuevo no debe heredar
+    // el scroll bloqueado.
+    document.addEventListener("astro:before-swap", () => {
+      document.body.style.overflow = "";
+    });
+  }
+
+  bind();
+  document.addEventListener("astro:page-load", bind);
+</script>
+
+<style is:global>
+  #nx-shortcuts {
+    opacity: 0;
+    transition: opacity 0.16s ease;
+  }
+  #nx-shortcuts.nx-open {
+    opacity: 1;
+  }
+  #nx-shortcuts #nx-shortcuts-panel {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  #nx-shortcuts.nx-open #nx-shortcuts-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root:not([data-nx-motion="on"]) #nx-shortcuts,
+    :root:not([data-nx-motion="on"]) #nx-shortcuts #nx-shortcuts-panel {
+      transition: none !important;
+    }
+  }
+
+  .nx-shortcuts-group {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--nx-accent, var(--color-nexus-blue));
+  }
+  .nx-shortcuts-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.3rem 0;
+  }
+  .nx-shortcuts-keys {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nx-shortcuts-then {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+  }
+  .nx-shortcuts-desc {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #cbd5e1;
+  }
+  .nx-shortcuts-note {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding-top: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1.7;
+    color: #64748b;
+  }
+  .nx-shortcuts-note .nx-kbd {
+    margin: 0 2px;
+  }
+  .nx-shortcuts-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+  }
+  .nx-shortcuts-hint {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-top: 0.3rem;
+  }
+</style>

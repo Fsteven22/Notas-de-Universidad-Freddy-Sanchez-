@@ -1,7 +1,9 @@
 ---
-import "../styles/nexus.css";
 import { ClientRouter } from "astro:transitions";
+import Analytics from "@vercel/analytics/astro";
 import SearchModal from "./../components/SearchModal.astro";
+import ShortcutsPanel from "./../components/ShortcutsPanel.astro";
+import SiteFooter from "./../components/SiteFooter.astro";
 
 interface Props {
   title?: string;
@@ -11,10 +13,35 @@ interface Props {
 const SITE = "https://neonotes-espol.vercel.app";
 const { title = "Neonotes", description = "Apuntes de Ingeniería Computacional ESPOL" } = Astro.props;
 const canonical = new URL(Astro.url.pathname, SITE).href;
+
+// Alcance de la búsqueda: semestre/materia de la página actual. Sirve para
+// que los resultados de la materia que estás leyendo salgan primero.
+const parts = Astro.url.pathname.split("/").filter(Boolean);
+const scope = parts.slice(0, 2).join("/");
+
+// Nota = ruta con 3+ segmentos (sem/mat/slug...). En notas se apagan las
+// texturas (retícula/halo) porque restan legibilidad en texto largo.
+const isNote = parts.length >= 3;
+
+// Acento por semestre: pinta la barra de progreso, el anillo
+// del botón arriba y el ETA de lectura. Va en <html> para que el router de
+// Astro lo actualice solo en cada navegación.
+const ACCENTS: Record<string, [string, string]> = {
+  preuniversitario: ["#aa66ff", "170, 102, 255"],
+  "1er-semestre": ["#00aaff", "0, 170, 255"],
+  "2do-semestre": ["#00ff88", "0, 255, 136"],
+  "3er-semestre": ["#00ddbb", "0, 221, 187"],
+  raiz: ["#f59f00", "245, 159, 0"],
+};
+const [accent, accentRgb] = ACCENTS[parts[0]] ?? ["#aa66ff", "170, 102, 255"];
 ---
 
 <!doctype html>
-<html lang="es">
+<html
+  lang="es"
+  class={isNote ? "nx-note-page" : undefined}
+  style={`--nx-accent:${accent};--nx-accent-rgb:${accentRgb}`}
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,9 +68,657 @@ const canonical = new URL(Astro.url.pathname, SITE).href;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>{title}</title>
     <ClientRouter />
+    <!-- Marca de "hay JS": el revelado al hacer scroll solo oculta contenido
+         si esta marca existe. Sin JS (o con JS roto) el contenido se ve. -->
+    <script is:inline data-astro-rerun>
+      document.documentElement.classList.add("nx-js");
+    </script>
+    <!-- ── Preferencia de movimiento ───────────────────────────────
+         El sitio respeta "reducir movimiento" del sistema: con esa
+         preferencia el CSS apaga las animaciones y el JS no crea Lenis
+         ni Three.js. En el entorno de pruebas el navegador
+         reporta SIEMPRE "reduce", así que las animaciones nunca se veían.
+
+         Aquí se resuelve la preferencia real:
+           · "auto"  → lo que diga el sistema (comportamiento por defecto)
+           · "on"    → forzar animaciones aunque el sistema pida quietud
+           · "off"   → forzar quietud aunque el sistema permita movimiento
+         Se guarda en localStorage y se puede forzar con ?motion=1|0|auto.
+         El atributo data-nx-motion en <html> es lo que lee el CSS; el
+         router de Astro borra los atributos de <html> en cada swap, por eso
+         este script se re-ejecuta en cada navegación (data-astro-rerun). -->
+    <script is:inline data-astro-rerun>
+      (function(){
+        var KEY = "nx-motion";
+        var root = document.documentElement;
+
+        function systemReduced(){
+          return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        }
+        function readStored(){
+          try { return localStorage.getItem(KEY); } catch(e){ return null; }
+        }
+        function writeStored(v){
+          try {
+            if (v === "on" || v === "off") localStorage.setItem(KEY, v);
+            else localStorage.removeItem(KEY);
+          } catch(e){}
+        }
+        function resolve(){
+          var p = readStored();
+          if (p === "on" || p === "off") return p;
+          return systemReduced() ? "off" : "on";
+        }
+
+        // ?motion=1|0|auto fija la preferencia y limpia la URL.
+        var q = null;
+        try { q = new URLSearchParams(location.search).get("motion"); } catch(e){}
+        if (q === "1" || q === "on") writeStored("on");
+        else if (q === "0" || q === "off") writeStored("off");
+        else if (q === "auto") writeStored(null);
+        try {
+          if (q !== null) {
+            var u = new URL(location.href);
+            u.searchParams.delete("motion");
+            history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+          }
+        } catch(e){}
+
+        // El atributo es lo que lee el CSS: "on" = anima, "off" = quieto.
+        root.setAttribute("data-nx-motion", resolve());
+
+        if (!window.__nxMotion) {
+          window.__nxMotion = {
+            /** preferencia del usuario: "auto" | "on" | "off" */
+            pref: "auto",
+            /** estado efectivo: ¿deben correr las animaciones? */
+            effective: function(){
+              return resolve() === "on";
+            },
+            /**
+             * Cambia la preferencia. Recarga porque el JS de animación
+             * (Lenis, Three.js) se decide al arrancar: cambiarlo
+             * en caliente dejaría la página a medias.
+             */
+            set: function(v){
+              writeStored(v === "on" || v === "off" ? v : null);
+              try { sessionStorage.setItem("nx-motion-scroll", String(window.scrollY)); } catch(e){}
+              location.reload();
+            }
+          };
+        }
+        // La preferencia se relee en cada navegación (puede haber cambiado
+        // en otra pestaña) para que el panel de atajos muestre el estado real.
+        window.__nxMotion.pref = readStored() || "auto";
+
+        // Recupera la posición de scroll tras el cambio de preferencia.
+        try {
+          var y = sessionStorage.getItem("nx-motion-scroll");
+          if (y) {
+            sessionStorage.removeItem("nx-motion-scroll");
+            setTimeout(function(){ window.scrollTo(0, parseInt(y, 10) || 0); }, 0);
+          }
+        } catch(e){}
+      })();
+    </script>
+    <!-- Librerías de animación (servidas localmente, sin CDN externo) -->
+    <script src="/gsap.min.js" is:inline></script>
+    <script src="/ScrollTrigger.min.js" is:inline></script>
+    <script src="/SplitText.min.js" is:inline></script>
+    <script src="/ScrambleTextPlugin.min.js" is:inline></script>
+    <script is:inline>
+      window.gsap.registerPlugin(window.ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
+    </script>
+    <script src="/lenis.min.js" is:inline></script>
+    <style is:global>
+      @import "../styles/nexus.css";
+    </style>
   </head>
   <body>
     <slot />
-    <SearchModal />
+    {/* Pie común: marca, avisos, fecha y el acceso a los atajos. Se monta
+        aquí para que TODAS las páginas (portada, semestre, materia, nota
+        y 404) terminen igual. */}
+    <SiteFooter />
+    <SearchModal scope={scope} />
+    <ShortcutsPanel />
+
+    <!-- Aviso de secuencia: al pulsar "g" se muestra qué teclas faltan.
+         Sin esto la secuencia "g h" es indescubrible: al pulsar "g" no
+         pasa nada visible y parece que el atajo está roto. -->
+    <div id="nx-seq-hint" aria-live="polite" data-astro-transition-persist="nx-seq-hint"></div>
+
+    <!-- Barra de progreso de scroll (la anima GSAP en Base) -->
+    <div id="nx-scroll-progress" data-astro-transition-persist="nx-scroll-progress"></div>
+
+    <!-- Botón volver arriba con anillo de progreso (lo anima GSAP en Base) -->
+    <button
+      id="nx-top"
+      type="button"
+      aria-label="Volver arriba"
+      data-astro-transition-persist="nx-top"
+    >
+      <svg viewBox="0 0 44 44" aria-hidden="true">
+        <circle class="nx-top-ring" cx="22" cy="22" r="19" pathLength="100"></circle>
+      </svg>
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Minutos restantes de lectura (solo visible en notas; lo actualiza el scroll) -->
+    <div id="nx-read-eta" aria-live="polite" data-astro-transition-persist="nx-read-eta">—</div>
+
+    <script>
+      /**
+       * Revelado al hacer scroll: las tarjetas de la portada y de la materia
+       * aparecen conforme llegan, no todas de golpe al cargar. Se apoya en
+       * `nx-js` (puesta en el head) para que sin JS nada quede invisible.
+       *
+       * Un solo observador para toda la vida de la pagina: con el router de
+       * cliente el arranque se ejecuta dos veces (carga inicial y
+       * `astro:page-load`) y con un observador por arranque cada elemento
+       * estaba vigilado dos veces.
+       */
+      let nxObserver: IntersectionObserver | null = null;
+
+      function nxReveal() {
+        // Si GSAP está activo, se encarga él del revelado: no interferir.
+        if (window.gsap) return;
+
+        const els = Array.from(
+          document.querySelectorAll<HTMLElement>(
+            "[data-nx-reveal]:not(.is-visible):not([data-nx-reveal-bound])"
+          )
+        );
+        if (!els.length) return;
+        if (!nxObserver) {
+          if (!("IntersectionObserver" in window)) {
+            for (const el of els) el.classList.add("is-visible");
+            return;
+          }
+          nxObserver = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                entry.target.classList.add("is-visible");
+                nxObserver?.unobserve(entry.target);
+              }
+            },
+            { rootMargin: "0px 0px -6% 0px", threshold: 0.04 }
+          );
+        }
+        for (const el of els) {
+          el.dataset.nxRevealBound = "1";
+          nxObserver.observe(el);
+        }
+      }
+
+      // Esperar 3s a que GSAP cargue antes del reveal nativo (respaldo)
+      setTimeout(nxReveal, 3000);
+      document.addEventListener("astro:page-load", function(){ setTimeout(nxReveal, 3000); });
+    </script>
+
+    <script>
+      (function(){
+        var booted = false;
+        var lastRoute = "";
+        var pageTweens = [];
+
+        function track(tw){ pageTweens.push(tw); return tw; }
+
+        // ── Preferencia de movimiento ─────────────────────────────
+        // "reducir movimiento" del sistema apaga las animaciones (el CSS
+        // muestra el contenido y aquí no se crean tweens). El usuario puede
+        // forzarlo con ?motion=1|0 o desde el panel de atajos: eso se resuelve
+        // en window.__nxMotion (ver el script del <head>), y se consulta en
+        // caliente para que un cambio de preferencia se note sin recargar.
+        function nxReduced(){
+          var m = window.__nxMotion;
+          if (m && typeof m.effective === "function") return !m.effective();
+          return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        }
+
+        // ── Tiempo restante de lectura (solo notas) ──
+        // Cuenta palabras del .note-prose (sin el MathML de KaTeX, que duplica
+        // el texto) y estima minutos a 200 palabras/min.
+        function nxEtaUpdate(){
+          var eta = document.getElementById("nx-read-eta");
+          if (!eta) return;
+          if (!document.documentElement.classList.contains("nx-note-page")) return;
+          var prose = document.querySelector(".note-prose");
+          if (!prose) return;
+          if (!prose.dataset.nxEtaTotal) {
+            var clone = prose.cloneNode(true);
+            var math = clone.querySelectorAll(".katex-mathml, annotation");
+            for (var m = 0; m < math.length; m++) math[m].remove();
+            var words = (clone.textContent || "").trim().split(/\s+/).length;
+            prose.dataset.nxEtaTotal = String(Math.max(1, Math.round(words / 200)));
+          }
+          var total = parseInt(prose.dataset.nxEtaTotal, 10);
+          var doc = document.documentElement;
+          var max = Math.max(1, doc.scrollHeight - doc.clientHeight);
+          var p = Math.min(1, Math.max(0, window.scrollY / max));
+          var rest = Math.ceil(total * (1 - p));
+          eta.textContent = rest > 0 ? rest + " min restantes" : "terminado";
+          eta.classList.toggle("is-done", rest <= 0);
+        }
+
+        // ── Botón "copiar" en cada bloque de código de las notas ──
+        function nxCopyBind(){
+          var pres = document.querySelectorAll(".note-prose pre");
+          for (var i = 0; i < pres.length; i++) {
+            (function(pre){
+              if (pre.dataset.nxCopyBound) return;
+              pre.dataset.nxCopyBound = "1";
+              var btn = document.createElement("button");
+              btn.type = "button";
+              btn.className = "nx-copy";
+              btn.textContent = "copiar";
+              btn.addEventListener("click", function(){
+                var code = pre.querySelector("code");
+                var text = (code || pre).textContent || "";
+                var ok = function(){
+                  btn.textContent = "copiado ✓";
+                  btn.classList.add("is-ok");
+                  setTimeout(function(){
+                    btn.textContent = "copiar";
+                    btn.classList.remove("is-ok");
+                  }, 1600);
+                };
+                // Respaldo para cuando la API moderna falla (permiso
+                // denegado, documento sin foco, contexto no seguro).
+                var fallback = function(){
+                  var ta = document.createElement("textarea");
+                  ta.value = text;
+                  ta.setAttribute("readonly", "");
+                  ta.style.position = "fixed";
+                  ta.style.opacity = "0";
+                  document.body.appendChild(ta);
+                  ta.select();
+                  try { ta.setSelectionRange(0, ta.value.length); } catch(e){}
+                  var done = false;
+                  try { done = document.execCommand("copy"); } catch(e){}
+                  ta.remove();
+                  if (done) ok();
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(text).then(ok, fallback);
+                } else {
+                  fallback();
+                }
+              });
+              pre.appendChild(btn);
+            })(pres[i]);
+          }
+        }
+
+        // ── Atajos de teclado: g h (inicio), g i (índice), g b (buscar), / ──
+        function nxShortcuts(){
+          // La guarda va en window: swapRootAttributes borra los data-* de
+          // <html> en cada navegación y el listener se duplicaría.
+          if (window.__nxKeys) return;
+          window.__nxKeys = 1;
+          var pending = false;
+          var timer = null;
+          var goto = function(url){
+            var a = document.createElement("a");
+            a.href = url;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          };
+          var openSearch = function(){
+            var btn = document.querySelector(".nx-search-open");
+            if (btn) btn.click();
+          };
+
+          // Aviso de secuencia: al pulsar "g" se dice qué teclas cierran el
+          // atajo. Es lo que hace descubrible el patrón "g + otra tecla".
+          var SEQ = [
+            { k: "h", label: "Inicio" },
+            { k: "i", label: "Índice" },
+            { k: "b", label: "Buscar" }
+          ];
+          // El aviso se busca por id en cada llamada: el nodo se recrea al
+          // navegar y una referencia guardada apuntaría al nodo viejo.
+          var showSeq = function(){
+            var el = document.getElementById("nx-seq-hint");
+            if (!el) return;
+            el.innerHTML =
+              '<span class="nx-seq-lead">g</span>' +
+              '<span class="nx-seq-then">luego</span>' +
+              SEQ.map(function(s){
+                return '<span class="nx-seq-item"><kbd class="nx-kbd">' + s.k +
+                  '</kbd><span class="nx-seq-label">' + s.label + '</span></span>';
+              }).join("");
+            el.classList.add("is-on");
+          };
+          var hideSeq = function(){
+            var el = document.getElementById("nx-seq-hint");
+            if (el) el.classList.remove("is-on");
+          };
+
+          document.addEventListener("keydown", function(e){
+            if (e.metaKey || e.ctrlKey || e.altKey) return;
+            var t = e.target;
+            if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" ||
+              (t as HTMLElement).isContentEditable)) return;
+            var modal = document.getElementById("nx-search");
+            if (modal && !modal.classList.contains("hidden")) return;
+            // Con el panel de atajos abierto no se ejecutan otros atajos.
+            var scPanel = document.getElementById("nx-shortcuts");
+            if (scPanel && !scPanel.classList.contains("hidden")) return;
+            if (pending) {
+              pending = false;
+              clearTimeout(timer);
+              hideSeq();
+              if (e.key === "h") { e.preventDefault(); goto("/"); }
+              else if (e.key === "i") { e.preventDefault(); goto("/#semestres"); }
+              else if (e.key === "b") { e.preventDefault(); openSearch(); }
+              return;
+            }
+            if (e.key === "/") { e.preventDefault(); openSearch(); return; }
+            if (e.key === "g") {
+              pending = true;
+              clearTimeout(timer);
+              showSeq();
+              timer = setTimeout(function(){
+                pending = false;
+                hideSeq();
+              }, 1400);
+            }
+          });
+
+          // El panel de atajos (tecla "?" y botón del header) lo gestiona
+          // ShortcutsPanel.astro: aquí solo viven las secuencias "g + tecla".
+        }
+
+        // ── Dirección de la transición (adelante/atrás) para el CSS ──
+        // Ojo: swapRootAttributes borra todos los atributos de <html> al
+        // sustituir el documento, así que el dato se guarda en una variable
+        // y se vuelve a aplicar en after-swap (justo antes de que corran las
+        // animaciones de view-transition).
+        function nxDirBind(){
+          if (window.__nxDirBound) return;
+          window.__nxDirBound = 1;
+          var dir = "forward";
+          document.addEventListener("astro:before-swap", function(e){
+            dir = (e as any).direction === "back" ? "back" : "forward";
+            document.documentElement.dataset.nxDir = dir;
+          });
+          document.addEventListener("astro:after-swap", function(){
+            document.documentElement.dataset.nxDir = dir;
+          });
+        }
+
+        function initAnimations(){
+          if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+          gsap.registerPlugin(ScrollTrigger, window.SplitText, window.ScrambleTextPlugin);
+
+          // ── Arranque único: Lenis, barra de progreso, cursor, botón arriba ──
+          if (!booted) {
+            booted = true;
+
+            nxDirBind();
+            nxShortcuts();
+
+            // ETA de lectura: se actualiza con el scroll (solo actúa en notas)
+            window.addEventListener("scroll", nxEtaUpdate, { passive: true });
+
+            // Con "reducir movimiento": scroll nativo, sin cursor, sin Lenis.
+            if (!nxReduced()) {
+              var lenis = new Lenis({
+                autoRaf: true,
+                smooth: true,
+                easing: function(t){ return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+                gestureOrientation: 'vertical',
+                touchMultiplier: 2,
+                wheelMultiplier: 0.8,
+                stopInertiaOnNavigate: true
+              });
+              lenis.on('scroll', ScrollTrigger.update);
+              gsap.ticker.add(function(time){ lenis.raf(time * 1000); });
+              gsap.ticker.lagSmoothing(0);
+              window.__nxLenis = lenis;
+            }
+
+            // Barra de progreso de scroll (vive en el markup y persiste entre
+            // navegaciones gracias a data-astro-transition-persist)
+            var prog = document.getElementById("nx-scroll-progress");
+            if (prog && !prog.dataset.nxBound) {
+              prog.dataset.nxBound = "1";
+              gsap.to(prog, { scaleX: 1, ease: "none",
+                scrollTrigger: { start: 0, end: "max", scrub: 0.3 } });
+            }
+
+            // Botón volver arriba con anillo de progreso
+            var topBtn = document.getElementById("nx-top");
+            if (topBtn && !topBtn.dataset.nxBound) {
+              topBtn.dataset.nxBound = "1";
+              if (nxReduced()) {
+                // Sin animación: se muestra directo al llegar a 400px
+                gsap.set(topBtn, { autoAlpha: 1 });
+                topBtn.style.opacity = "";
+              } else {
+                gsap.fromTo(topBtn, { autoAlpha: 0, y: 14 },
+                  { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out",
+                    scrollTrigger: { start: 400, toggleActions: "play none none reverse" } });
+                gsap.to("#nx-top .nx-top-ring", { strokeDashoffset: 0, ease: "none",
+                  scrollTrigger: { start: 0, end: "max", scrub: 0.4 } });
+              }
+              topBtn.addEventListener("click", function(){
+                if (window.__nxLenis) window.__nxLenis.scrollTo(0, { duration: 1.2 });
+                else window.scrollTo({ top: 0, behavior: nxReduced() ? "auto" : "smooth" });
+              });
+            }
+          }
+
+          // ── Revelado al scroll (por página) ──
+          // Sin GSAP o con movimiento reducido el CSS ya muestra el contenido.
+          if (!nxReduced()) gsap.utils.toArray("[data-nx-reveal]").forEach(function(el){
+            track(gsap.fromTo(el,
+              { opacity: 0, y: 24 },
+              { opacity: 1, y: 0, duration: 0.7, ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+              }
+            ));
+          });
+
+          // Hero home (el h1 lo anima SplitText en index.astro)
+          if (!nxReduced() && window.location.pathname === "/"){
+            var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+            tl.from(".nx-badge", { y: 20, opacity: 0, duration: 0.6 })
+              .from("p.mt-4.max-w-xl", { y: 20, opacity: 0, duration: 0.6 }, "-=0.3")
+              .from(".mt-6.flex", { y: 20, opacity: 0, duration: 0.6 }, "-=0.4")
+              .from(".nx-bar", { scaleX: 0, transformOrigin: "left center", duration: 0.8 }, "-=0.6");
+            track(tl);
+
+            // Brillo que viaja en loop por la barra de marca
+            track(gsap.to(".nx-bar", {
+              backgroundPosition: "200% 0", duration: 3.5, repeat: -1, ease: "none"
+            }));
+          }
+
+          // Stats home
+          if (!nxReduced() && window.location.pathname === "/"){
+            gsap.utils.toArray("section.mx-auto.max-w-6xl.px-6.pb-4 .nx-card").forEach(function(card){
+              var numberEl = card.querySelector("p.font-mono.text-3xl");
+              if (!numberEl) return;
+              var target = parseInt(numberEl.textContent, 10);
+              if (isNaN(target)) return;
+              track(gsap.fromTo(numberEl,
+                { innerText: 0 },
+                { innerText: target, duration: 1.2, ease: "power2.out", snap: { innerText: 1 },
+                  scrollTrigger: { trigger: card, start: "top 85%", toggleActions: "play none none reverse" }
+                }
+              ));
+            });
+          }
+
+          // Materia reveals
+          if (!nxReduced() && /^\/\w+\/\w+\/$/.test(window.location.pathname)){
+            gsap.utils.toArray(".nx-unit-head").forEach(function(el){
+              track(gsap.fromTo(el, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out",
+                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" } }));
+            });
+            gsap.utils.toArray(".nx-note-row").forEach(function(el, i){
+              track(gsap.fromTo(el, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, delay: i * 0.04, ease: "power2.out",
+                scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none reverse" } }));
+            });
+          }
+
+          // ── Scramble en títulos de sección al entrar en pantalla ──
+          if (!nxReduced() && window.ScrambleTextPlugin) {
+            gsap.utils.toArray(".nx-section-title").forEach(function(el){
+              var full = (el.textContent || "").replace(/\s+/g, " ").trim();
+              if (!full) return;
+              var st = ScrollTrigger.create({
+                trigger: el, start: "top 90%", once: true,
+                onEnter: function(){
+                  gsap.to(el, { duration: 1.1,
+                    scrambleText: { text: full, chars: "upperCase", speed: 0.4, revealDelay: 0.2 } });
+                }
+              });
+              track({ scrollTrigger: st, kill: function(){ st.kill(); } });
+            });
+
+            // Scramble al hover de enlaces marcados con .nx-scramble
+            gsap.utils.toArray(".nx-scramble").forEach(function(el){
+              if (el.dataset.nxScrambleBound) return;
+              el.dataset.nxScrambleBound = "1";
+              var original = el.textContent;
+              if (!original || !original.trim()) return;
+              el.addEventListener("mouseenter", function(){
+                gsap.to(el, { duration: 0.55, ease: "none",
+                  scrambleText: { text: original, chars: "lowerCase", speed: 0.55, revealDelay: 0.05 } });
+              });
+            });
+          }
+
+          // ── Inclinación 3D en botones (sin desplazamiento) ──
+          // Antes el botón se desplazaba hacia el puntero (hover magnético)
+          // y volvía con rebote elástico: se le escapaba de debajo del
+          // cursor y temblaba al regresar. Ahora solo rota en profundidad:
+          // el botón no se mueve de su sitio y el retorno es suave, sin
+          // rebote.
+          if (!nxReduced()) gsap.utils.toArray(".nx-btn").forEach(function(btn){
+            if (btn.dataset.nxTiltBound) return;
+            btn.dataset.nxTiltBound = "1";
+            btn.addEventListener("mousemove", function(e){
+              var r = btn.getBoundingClientRect();
+              var px = (e.clientX - r.left) / r.width - 0.5;
+              var py = (e.clientY - r.top) / r.height - 0.5;
+              gsap.to(btn, {
+                rotationY: px * 5, rotationX: -py * 5,
+                transformPerspective: 700, duration: 0.35, ease: "power2.out"
+              });
+            });
+            btn.addEventListener("mouseleave", function(){
+              gsap.to(btn, { rotationY: 0, rotationX: 0, duration: 0.45, ease: "power3.out" });
+            });
+          });
+
+          // ── Tilt 3D en tarjetas ──
+          // Mismo criterio que los botones: inclinación sin rebote al
+          // volver (el rebote elástico mareaba un poco).
+          if (!nxReduced()) gsap.utils.toArray(".nx-card").forEach(function(card){
+            if (card.dataset.nxTiltBound) return;
+            card.dataset.nxTiltBound = "1";
+            card.addEventListener("mousemove", function(e){
+              var r = card.getBoundingClientRect();
+              var px = (e.clientX - r.left) / r.width - 0.5;
+              var py = (e.clientY - r.top) / r.height - 0.5;
+              gsap.to(card, { rotationY: px * 7, rotationX: -py * 7,
+                transformPerspective: 900, duration: 0.4, ease: "power2.out" });
+            });
+            card.addEventListener("mouseleave", function(){
+              gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.5, ease: "power3.out" });
+            });
+          });
+
+          // ── Parallax de auras al hacer scroll ──
+          if (!nxReduced()) gsap.utils.toArray(".nx-aura").forEach(function(a, i){
+            track(gsap.to(a, { top: (i % 2 ? "-=140" : "+=140"), ease: "none",
+              scrollTrigger: { start: 0, end: "max", scrub: 1.2 } }));
+          });
+
+          // ── Nota: SplitText en el título, reveal en figuras/tablas, ETA y copiar ──
+          if (document.documentElement.classList.contains("nx-note-page")) {
+            nxCopyBind();
+            nxEtaUpdate();
+
+            if (!nxReduced()) {
+              // Título de la nota: letras que suben al entrar
+              var noteH1 = document.querySelector<HTMLElement>("article > h1");
+              if (noteH1 && window.SplitText && !noteH1.dataset.nxSplit) {
+                noteH1.dataset.nxSplit = "1";
+                try {
+                  // `ignore`: si el título tuviera un span con degradado
+                  // (background-clip: text), partirlo en letras haría que el
+                  // fondo dejara de pintarse y el texto se vería invisible.
+                  var nh = new window.SplitText(noteH1, {
+                    type: "chars,words", charsClass: "nx-char", ignore: ".nx-brand-text"
+                  });
+                  // Integridad: si el título se quedó sin texto, se deshace la
+                  // partición y se deja el título tal cual.
+                  if (!(noteH1.textContent || "").trim()) {
+                    nh.revert();
+                    return;
+                  }
+                  track(gsap.from(nh.chars, {
+                    yPercent: 110, opacity: 0, duration: 0.6,
+                    stagger: 0.016, ease: "power4.out", delay: 0.1
+                  }));
+                } catch(e){}
+              }
+
+              // Figuras, tablas y citas aparecen al llegar
+              gsap.utils.toArray(".note-prose figure, .note-prose table, .note-prose blockquote, .note-prose img")
+                .forEach(function(el){
+                  track(gsap.fromTo(el,
+                    { opacity: 0, y: 22 },
+                    { opacity: 1, y: 0, duration: 0.65, ease: "power3.out",
+                      scrollTrigger: { trigger: el, start: "top 88%", toggleActions: "play none none reverse" }
+                    }
+                  ));
+                });
+            }
+          }
+        }
+
+        // Re-arranca en cada navegación (ClientRouter) sin duplicar el boot único
+        function route(){
+          var key = location.pathname + location.search;
+          if (key === lastRoute) return;
+          lastRoute = key;
+          for (var i = 0; i < pageTweens.length; i++) {
+            var t = pageTweens[i];
+            try { if (t.scrollTrigger) t.scrollTrigger.kill(); if (t.kill) t.kill(); } catch(e){}
+          }
+          pageTweens = [];
+          initAnimations();
+          // El swap reemplaza todo el body: los triggers guardados miden
+          // posiciones viejas. Se recalculan con el DOM ya montado.
+          if (window.ScrollTrigger) {
+            requestAnimationFrame(function(){ ScrollTrigger.refresh(); });
+            nxEtaUpdate();
+          }
+        }
+
+        route();
+        document.addEventListener("astro:page-load", route);
+      })();
+    </script>
+
+    <!-- Vercel Analytics: primero de Analytics (script propio de Vercel,
+         sin CDN externo). Va al final del body para no retrasar el render. -->
+    <Analytics />
+
+    <!-- Favoritos y notas leídas: viven en el localStorage del lector.
+         El script se empaqueta una sola vez y se apoya en astro:page-load
+         para repintar los botones en cada navegación. -->
+    <script>
+      import { iniciar as iniciarProgreso } from "../lib/progreso.js";
+      iniciarProgreso();
+    </script>
   </body>
 </html>

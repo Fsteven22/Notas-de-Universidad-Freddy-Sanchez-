@@ -1,0 +1,19 @@
+---
+title: "Integrales_Trigonométricas_02"
+---
+flowchart TD
+    A["∫ tanᵐ(x)·secⁿ(x) dx"]
+    C1["n par →<br/>u = tan(x), du = sec²(x) dx<br/>secⁿ = secⁿ⁻²·sec²"]
+    C2["m y n ambos impares →<br/>u = sec(x), du = sec(x)·tan(x) dx<br/>sobra un tan"]
+    C3["m par, n impar →<br/>reducir: tan²(x) = sec²(x) − 1<br/>repetidamente"]
+    C4["m impar, n par →<br/>combinar métodos<br/>o usar reducción"]
+    A --> C1
+    A --> C2
+    A --> C3
+    A --> C4
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C3 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00

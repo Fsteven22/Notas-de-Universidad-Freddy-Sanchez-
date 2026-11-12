@@ -1,0 +1,25 @@
+---
+title: "Área_entre_Curvas_respecto_a_Y_01"
+---
+flowchart TD
+    A["Área respecto a Y<br/>región horizontal"]
+    S1["1. Expresar curvas como x = f(y)<br/>invertir y = g(x)"]
+    S2["2. Límites en y:<br/>menor valor c y mayor d"]
+    S3["3. Verificar orden:<br/>f(y) derecha ≥ g(y) izquierda<br/>para todo y en [c, d]"]
+    S4["4. Configurar:<br/>A = ∫ desde c hasta d de [f(y) − g(y)] dy"]
+    S5["5. Evaluar la integral"]
+    T["Si el orden cambia dentro del<br/>intervalo, separar en tramos<br/>o usar valor absoluto"]
+    A --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> T
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style S1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S4 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style S5 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style T fill:#ffebee,stroke:#e53935,color:#4a1010

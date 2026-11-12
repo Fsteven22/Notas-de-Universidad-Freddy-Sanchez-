@@ -1,48 +1,65 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad2, limites-en-graficas, calculo, limites, graficas, interpretacion-visual, continuidad, discontinuidades, asitotas, lectura-grafica, analisis-visual]
 ---
 
-# Límites en Gráficas 📈
+# 📈 Límites en Gráficas
 
-> [!tip] 🎯 Concepto Central **Leer límites en gráficas** es como ser un detective visual: observamos hacia dónde "apunta" la función cuando nos acercamos a un punto, sin importar qué pase exactamente en ese punto. La gráfica nos cuenta la historia completa del comportamiento de la función.
+> [!tip] 🎯 Concepto Central
+>
+> **Leer límites en gráficas** es como ser un detective visual: observamos hacia dónde "apunta" la función cuando nos acercamos a un punto, sin importar qué pase exactamente en ese punto. La gráfica nos cuenta la historia completa del comportamiento de la función.
 
-## Cómo Leer Límites Visualmente 👀
+## 👀 Cómo Leer Límites Visualmente
 
 > [!info] 🔍 Técnica de Lectura Visual Para encontrar $\lim_{x \to a} f(x)$ en una gráfica:
-> 
+>
 > 1. **📍 Localiza** el punto $x = a$ en el eje horizontal
 > 2. **👈👉 Acércate** al punto desde ambos lados
 > 3. **👀 Observa** hacia dónde "apuntan" los valores de $f(x)$
 > 4. **🎯 Determina** si ambos lados convergen al mismo valor
 
-![[Diagramas/03_-_Límites_en_Gráficas_01.svg]]
+> [!info] 🖼️ Cómo Leer Límites Visualmente
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límites_en_Gráficas_01.svg]]
+>
+> **Se lee así:** El diagrama arranca con una **gráfica de f(x)** y pasa a un rectángulo que pide localizar x = a. Desde ahí se bifurca en dos ramas paralelas, una por la izquierda y otra por la derecha, que vuelven a unirse en un rombo que pregunta si ambos lados coinciden. Si la respuesta es sí, un rectángulo cierra con que el límite existe y vale L; si es no, otro rectángulo avisa que el límite no existe.
+>
+> **Por qué importa:** Es el procedimiento mental que debes seguir frente a cualquier gráfica. Te evita el error más común: mirar solo un lado o confundir el punto dibujado con el valor del límite.
+>
+> **Ejemplo:** En `f(x) = (x²-1)/(x-1)` la curva apunta a y = 2 por los dos lados, aunque hay un hueco en x = 1, así que el límite existe y vale 2.
 
-## Casos Visuales Fundamentales 🎭
+## 🎭 Casos Visuales Fundamentales
 
 ### Caso 1: Función Continua 🌊
 
 > [!example] ✅ Límite Existe y Coincide con el Valor de la Función
-> 
-> ![[Diagramas/03_-_Límites_en_Gráficas_02.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límites_en_Gráficas_02.svg]]
+>
+> **Se lee así:** Es un recorrido lineal de tres rectángulos: primero la **curva suave** de la función, luego el punto concreto sobre el eje en x = a y, al final, el resultado de que el límite coincide con el valor de la función. No hay decisiones ni ramas, solo la secuencia de una gráfica sin interrupciones con un punto sólido, donde el límite existe y vale f(a).
+>
+> **Por qué importa:** Este es el caso base de todo lo demás: si la curva es continua, la lectura del límite es inmediata. Reconocerlo rápido te ahorra análisis algebraico innecesarios en ejercicios de gráfica.
+>
+> **Ejemplo:** En la función por partes `g(x) = x+1` si x < 2 y `2x-1` si x > 2, ambas ramas llegan a 3, así que `lim_{x → 2} g(x) = 3 = g(2)`.
+>
 > **Características visuales:**
-> 
+>
 > - 🌊 La curva es "suave" y sin interrupciones
 > - 📍 Hay un punto sólido en $(a, f(a))$
 > - ➡️ La función se acerca naturalmente al punto
-> 
+>
 > **Resultado:** $\lim_{x \to a} f(x) = f(a)$ ✨
 
 ### Caso 2: Discontinuidad Removible (Hueco) 🕳️
 
 > [!example] ✅ Límite Existe pero Diferente del Valor de la Función
-> 
+>
 > **Características visuales:**
-> 
+>
 > - ⚪ Círculo vacío (hueco) en el punto $(a, f(a))$
 > - 🔴 Posible punto sólido en otra altura
 > - ➡️ La curva "apunta" hacia donde debería estar el punto
-> 
+>
 > |Situación|Descripción Visual|Límite|
 > |---|---|---|
 > |🕳️ Solo hueco|Círculo vacío en $(a, L)$|$\lim_{x \to a} f(x) = L$|
@@ -51,15 +68,15 @@ dg-publish: true
 ### Caso 3: Discontinuidad de Salto 📈📉
 
 > [!warning] ❌ Límite No Existe - Salto Finito
-> 
+>
 > **Características visuales:**
-> 
+>
 > - 📈 La función "salta" de un nivel a otro
 > - ⬆️ Límite por la izquierda ≠ Límite por la derecha
 > - 🔴⚪ Puede haber combinación de puntos sólidos y huecos
-> 
+>
 > **Ejemplo típico:** Función escalón
-> 
+>
 > - 👈 Desde la izquierda: se acerca a un valor $L_1$
 > - 👉 Desde la derecha: se acerca a un valor $L_2 \neq L_1$
 > - 🚫 Como $L_1 \neq L_2$, el límite no existe
@@ -67,23 +84,23 @@ dg-publish: true
 ### Caso 4: Discontinuidad Infinita (Asíntota Vertical) ♾️
 
 > [!warning] ♾️ Límite Infinito - Asíntota Vertical
-> 
+>
 > **Características visuales:**
-> 
+>
 > - 📏 Línea vertical punteada (asíntota)
 > - ⬆️⬇️ La función crece o decrece sin límite
 > - 🚀 Los valores de $f(x)$ van hacia $+\infty$ o $-\infty$
-> 
+>
 > **Casos posibles:**
-> 
+>
 > - $\lim_{x \to a^-} f(x) = +\infty$ y $\lim_{x \to a^+} f(x) = +\infty$ → $\lim_{x \to a} f(x) = +\infty$
 > - $\lim_{x \to a^-} f(x) = -\infty$ y $\lim_{x \to a^+} f(x) = -\infty$ → $\lim_{x \to a} f(x) = -\infty$
 > - Límites laterales diferentes → Límite no existe
 
-## Análisis Detallado por Tipos 🔬
+## 🔬 Análisis Detallado por Tipos
 
 > [!info] 📊 Tabla de Identificación Visual
-> 
+>
 > |Tipo de Gráfica|Símbolo Visual|Límite|Continuidad|
 > |---|---|---|---|
 > |🌊 Curva suave|🔴 Punto sólido|✅ Existe = f(a)|✅ Continua|
@@ -92,122 +109,126 @@ dg-publish: true
 > |📈📉 Salto|🔴⚪ Sólido + vacío|❌ No existe|❌ Discontinua|
 > |♾️ Asíntota vertical|📏 Línea punteada|♾️ Infinito|❌ Discontinua|
 
-## Estrategias de Lectura Visual 🎯
+## 🎯 Estrategias de Lectura Visual
 
-> [!tip] 🔍 Método "MIRA" **M**arca el punto x = a en el eje horizontal **I**magina líneas verticales acercándose al punto **R**astra hacia dónde apuntan los valores de f(x) **A**naliza si ambos lados convergen al mismo valor
+> [!tip] 🔍 Método "MIRA"
+>
+> **M**arca el punto x = a en el eje horizontal **I**magina líneas verticales acercándose al punto **R**astra hacia dónde apuntan los valores de f(x) **A**naliza si ambos lados convergen al mismo valor
 
 ### Técnica del "Dedo Seguidor" 👆
 
 > [!example] 🖱️ Estrategia Práctica
-> 
+>
 > 1. **👆 Coloca tu dedo** en un punto alejado de $x = a$
 > 2. **➡️ Deslízalo** lentamente siguiendo la curva hacia $x = a$
 > 3. **👀 Observa** hacia dónde se dirige tu dedo en el eje $y$
 > 4. **🔄 Repite** desde el otro lado
 > 5. **🤝 Compara** ambas direcciones
 
-## Casos Especiales Visuales 🎪
+## 🎪 Casos Especiales Visuales
 
 ### Funciones Oscilantes 〰️
 
 > [!warning] 🌀 Comportamiento Oscilatorio **¿Cuándo no existe el límite por oscilación?**
-> 
+>
 > - 〰️ La función "vibra" infinitamente cerca del punto
 > - 📈📉 No se estabiliza en un valor específico
 > - 🌪️ Ejemplo clásico: $f(x) = \sin\left(\frac{1}{x}\right)$ cerca de $x = 0$
-> 
+>
 > **Identificación visual:**
-> 
+>
 > - Ondas que se vuelven más frecuentes cerca del punto
 > - No hay una "dirección clara" hacia donde apunta
 
 ### Límites al Infinito 🚀
 
 > [!info] ♾️ Comportamiento Asintótico Horizontal Para $\lim_{x \to \infty} f(x)$ o $\lim_{x \to -\infty} f(x)$:
-> 
+>
 > **Buscar:**
-> 
+>
 > - 📏 Líneas horizontales punteadas (asíntotas horizontales)
 > - ➡️ Comportamiento de la función cuando $x$ va muy a la derecha
 > - ⬅️ Comportamiento de la función cuando $x$ va muy a la izquierda
-> 
+>
 > **Casos:**
-> 
+>
 > - 📏 Se acerca a una línea horizontal → Límite = valor de esa línea
 > - ⬆️ Crece sin límite → Límite = $+\infty$
 > - ⬇️ Decrece sin límite → Límite = $-\infty$
 
-## Ejemplos Prácticos de Lectura 📚
+## 📚 Ejemplos Prácticos de Lectura
 
 > [!example] 🔍 Ejemplo 1: Función Racional Para $f(x) = \frac{x^2 - 1}{x - 1}$:
-> 
+>
 > **Observaciones visuales:**
-> 
+>
 > - 🕳️ Hueco en $x = 1$
 > - 📈 La función parece una recta $y = x + 1$ excepto en $x = 1$
 > - 👀 Al acercarse a $x = 1$, apunta hacia $y = 2$
-> 
+>
 > **Conclusión:** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$ ✨
 >
 
 > [!example] 🔍 Ejemplo 2: Función Definida por Partes $g(x) = \begin{cases} x + 1 & \text{si } x < 2 \ 3 & \text{si } x = 2 \ 2x - 1 & \text{si } x > 2 \end{cases}$
-> 
+>
 > **Análisis visual en x = 2:**
-> 
+>
 > - 👈 Desde la izquierda: sigue $y = x + 1$ → se acerca a $3$
 > - 👉 Desde la derecha: sigue $y = 2x - 1$ → se acerca a $3$
 > - 🔴 Punto sólido en $(2, 3)$
-> 
+>
 > **Conclusión:** $\lim_{x \to 2} g(x) = 3 = g(2)$ (función continua) ✅
 
-## Errores Visuales Comunes ⚠️
+## ⚠ Errores Visuales Comunes ️
 
 > [!warning] 🚨 Trampas en la Lectura Gráfica
-> 
+>
 > ### ❌ Error 1: Confundir el valor de la función con el límite
-> 
+>
 > **Problema:** Mirar solo el punto sólido **Solución:** Observar hacia dónde apunta la curva, no solo los puntos
-> 
+>
 > ### ❌ Error 2: No verificar ambos lados
-> 
+>
 > **Problema:** Solo mirar desde un lado del punto **Solución:** Siempre verificar límites laterales
-> 
+>
 > ### ❌ Error 3: Confundir escalas
-> 
+>
 > **Problema:** No leer correctamente los valores en los ejes **Solución:** Prestar atención a las escalas y unidades
 
-## Herramientas Tecnológicas 💻
+## 💻 Herramientas Tecnológicas
 
 > [!tip] 🛠️ Recursos para Práctica Visual **Software recomendado:**
-> 
+>
 > - 📊 **Desmos Graphing Calculator** - Gráficas interactivas
 > - 🧮 **GeoGebra** - Visualización dinámica
 > - 📱 **Wolfram Alpha** - Gráficas y análisis
 > - 🖥️ **Mathematica/Maple** - Análisis avanzado
-> 
+>
 > **Ventajas:**
-> 
+>
 > - 🔍 Zoom para ver detalles
 > - 🎚️ Manipulación de parámetros
 > - 📏 Medición precisa de valores
 
-## Técnica de Estudio: Mnemotecnia "VISUAL" 🧠
+## 🧠 Técnica de Estudio: Mnemotecnia "VISUAL"
 
-> [!tip] 🎓 Para Leer Límites en Gráficas **V**e hacia el punto de interés en x = a **I**dentifica el tipo de comportamiento (continuo, salto, hueco, etc.) **S**igue la curva desde ambos lados **U**bica hacia dónde apuntan los valores de f(x) **A**naliza si los límites laterales coinciden **L**ee el valor final del límite (si existe)
+> [!tip] 🎓 Para Leer Límites en Gráficas
+>
+> **V**e hacia el punto de interés en x = a **I**dentifica el tipo de comportamiento (continuo, salto, hueco, etc.) **S**igue la curva desde ambos lados **U**bica hacia dónde apuntan los valores de f(x) **A**naliza si los límites laterales coinciden **L**ee el valor final del límite (si existe)
 
-## Referencias 📚
+## 📚 Referencias
 
 > [!quote] 🔗 Notas Relacionadas
-> 
+>
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]] - Base conceptual
 > - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Límites laterales
 > - Funciones y Continuidad - Tipos de discontinuidades
 > - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones.md|02 - Asíntotas y Comportamiento de Funciones.md]] - Comportamiento asintótico
 
-## Notas Recomendadas 💡
+## 💡 Notas Recomendadas
 
 > [!note] 📖 Para Profundizar
-> 
+>
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Cálculo algebraico
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Propiedades fundamentales
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md|03 - Derivadas Paramétricas.md]] - Interpretación de la pendiente
@@ -216,4 +237,4 @@ dg-publish: true
 
 ---
 
-**Tags:** #calculo #limites #graficas #interpretacion-visual #continuidad #discontinuidades #asitotas #lectura-grafica #analisis-visual #matematicas #funciones
+**Tags:** #MATG1045 #unidad2 #limites-en-graficas #calculo #limites #graficas #interpretacion-visual #continuidad #discontinuidades #asitotas #lectura-grafica #analisis-visual #matematicas #funciones

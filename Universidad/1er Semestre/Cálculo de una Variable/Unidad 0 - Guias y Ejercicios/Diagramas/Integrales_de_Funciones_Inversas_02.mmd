@@ -1,0 +1,22 @@
+---
+title: "Integrales_de_Funciones_Inversas_02"
+---
+flowchart TD
+    A["Esqueleto:<br/>∫ arcsin(x) dx = x·arcsin(x) + √(1 − x²) + C"]
+    P1["u = arcsin(x), dv = dx<br/>du = dx/√(1 − x²), v = x"]
+    I1["x·arcsin(x) − ∫ x/√(1 − x²) dx"]
+    I2["∫ x·(1 − x²)^(−1/2) dx<br/>tiene antiderivada simple:<br/>−√(1 − x²)"]
+    R["x·arcsin(x) − (−√(1 − x²)) + C<br/>= x·arcsin(x) + √(1 − x²) + C"]
+    OK["Verificación por derivada:<br/>d/dx [x·arcsin(x) + √(1 − x²)] = arcsin(x)"]
+    A --> P1
+    P1 --> I1
+    I1 --> I2
+    I2 --> R
+    R --> OK
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style P1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style I1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style I2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style R fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style OK fill:#ffebee,stroke:#e53935,color:#4a1010

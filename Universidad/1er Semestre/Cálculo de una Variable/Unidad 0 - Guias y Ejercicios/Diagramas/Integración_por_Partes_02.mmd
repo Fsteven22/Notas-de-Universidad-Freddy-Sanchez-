@@ -1,0 +1,28 @@
+---
+title: "Integración_por_Partes_02"
+---
+flowchart TD
+    A["Ciclado: ∫ eˣ·sin(x) dx"]
+    P1["1ª pasada: u = sin(x), dv = eˣ dx<br/>du = cos(x) dx, v = eˣ"]
+    I1["I = eˣ·sin(x) − ∫ eˣ·cos(x) dx"]
+    P2["2ª pasada: u = cos(x), dv = eˣ dx<br/>du = −sin(x) dx, v = eˣ"]
+    I2["∫ eˣ·cos(x) dx = eˣ·cos(x) + I"]
+    S["Sustituir: I = eˣ·sin(x) − eˣ·cos(x) − I"]
+    SOL["2I = eˣ·(sin(x) − cos(x))<br/>I = eˣ·(sin(x) − cos(x)) / 2 + C"]
+    N["La misma elección de dv<br/>en ambas pasadas evita<br/>deshacer el trabajo"]
+    A --> P1
+    P1 --> I1
+    I1 --> P2
+    P2 --> I2
+    I2 --> S
+    S --> SOL
+    SOL --> N
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style P1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style I1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style I2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style S fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style SOL fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style N fill:#ffebee,stroke:#e53935,color:#4a1010

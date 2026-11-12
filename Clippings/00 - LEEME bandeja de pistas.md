@@ -1643,3 +1643,514 @@ Los 25 SVG de mapa visual que solo vivían en los índices borrados quedaron emb
 > - Si algo quedó mal: commit nuevo que lo corrija y se documenta. Nunca `amend` de lo publicado,
 >   nunca `reset --hard` ajeno, nunca `--force` sobre `master`.
 
+---
+
+### `opencode-site` — rediseño del sitio (acento por semestre, animaciones locales, lectura y búsqueda) — 09/11/2026
+
+> [!success] PUSHEADO `3c5680e6` · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `6348f206`):** rediseño del sitio en `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/`.
+>   - **Acento por semestre, resuelto en el servidor:** `<html style="--nx-accent:…">` con un color
+>     distinto para cada semestre (preuniversitario, 1er, 2do, 3er). Antes era siempre el mismo verde.
+>   - **Notas más legibles:** en las notas (>3 segmentos) se apagan las texturas de fondo (scanline y
+>     grano) y se enciende la **ETA de lectura** ("11 min restantes") abajo a la izquierda.
+>   - **Animaciones locales, sin CDN:** GSAP 3.15.1 + ScrollTrigger + SplitText + ScrambleText + Lenis +
+>     Three.js servidos desde `public/` (este entorno da 404 a cualquier CDN). La portada monta la
+>     escena Three.js de forma diferida (`requestIdleCallback`), y todo se apaga con
+>     `prefers-reduced-motion`.
+>   - **Portada nueva:** sección **"Continuar leyendo"** (lee `localStorage["nx-last"]`), panel de
+>     atajos y **filtro por semestre** (18 tarjetas de materia).
+>   - **Búsqueda por apartados:** el buscador ya encuentra dentro de las notas, no solo por título
+>     (18.043 apartados indexados). Verificado: 15 coincidencias con contador "15 COINCIDENCIAS" y
+>     **todas las anclas generadas resuelven** en la página destino.
+>   - **Atajos de teclado:** `g h` (inicio), `g i` (índice de semestres), `g b` (buscar), `/` (buscar).
+>     Verificados: `g i` lleva a `#semestres` con el scroll exacto de la sección.
+>   - **Botón "copiar"** en cada bloque de código, con respaldo a `execCommand` cuando la API del
+>     portapapeles está denegada (en el navegador de pruebas está denegada y aun así confirma
+>     "copiado ✓").
+>
+> - **Bugs corregidos de paso:**
+>   - **220 enlaces PDF rotos** (`href="[object Object]"`) en **13 materias**: `vault.json` guarda el
+>     PDF como string en unas materias y como `{url,size}` en otras. Normalizado en `[mat].astro`.
+>     Verificado: **0** restantes, y los 70 PDFs de Física Mecánica ya apuntan a su asset real.
+>   - **Listeners duplicados:** las guardas vivían en `data-*` de `<html>`, que `swapRootAttributes`
+>     borra en cada navegación SPA; ahora están en `window` (`__nxKeys`, `__nxDirBound`,
+>     `__nxSearchKeys`). Antes, Ctrl+K alternaba abrir/cerrar con un listener por visita.
+>   - **Plugin de GSAP mal registrado** como `window.ScrambleText` (no existe): el scramble de texto
+>     nunca corría. Ahora es `window.ScrambleTextPlugin`.
+>   - **"Continuar leyendo" invisible:** se medía su `ScrollTrigger` estando oculta. Se fuerza
+>     `ScrollTrigger.refresh()` al mostrarla.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1
+>   múltiple, 0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas; los ZIP no se listan por
+>   falta de `unzip` en Windows) · navegador sin errores de consola: PDFs, buscador, filtros, atajos,
+>   ETA y "Continuar leyendo" funcionando.
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **206 anclas cruzadas rotas** (preexistentes, **no** de este lote): enlaces `#encabezado` entre
+>     notas apuntan a encabezados cuyo slug en el destino **no coincide** con el que escribió el autor
+>     (acentos, guiones iniciales, emojis). Ejemplo: `#funciones-definidas-por-partes` → el destino
+>     tiene `id="funciones-definidas-por-partes-"` (guion final) o directamente no existe. **Solo 1**
+>     se arregla solo (el guion final). Corregir el resto implica tocar las notas de origen (zonas de
+>     otras sesiones) o un slugger más tolerante en el sitio. **Lo dejo reportado, no lo toqué.**
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `3c5680e6`** — `6348f206` (código) + `3c5680e6` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `3c5680e6`. `origin/sesion/opencode-site` queda en `3c5680e6`.
+
+---
+
+### `opencode-site` — override de movimiento, atajos visibles y cinta de materias — 09/11/2026
+
+> [!success] PUSHEADO `5e958e2c` · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `84bf73ad`):** segunda vuelta de UX sobre `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/**`.
+>   - **Override explícito de movimiento.** Antes el sitio solo obedecía `prefers-reduced-motion` del
+>     sistema y no había forma de cambiarlo: si el sistema pedía quietud, las animaciones no se veían y
+>     no había salida. Ahora hay tres estados (Auto / Siempre / Nunca):
+>     - atributo `data-nx-motion="on|off"` en `<html>`, aplicado en el `<head>` con `data-astro-rerun`
+>       (porque `swapRootAttributes` borra los atributos de `<html>` en cada navegación SPA);
+>     - `window.__nxMotion` con `pref`, `effective()` y `set()`;
+>     - persistido en `localStorage["nx-motion"]` y forzable por URL con `?motion=1|0|auto`
+>       (la URL se limpia con `history.replaceState`);
+>     - **CSS en dos capas:** los 10 bloques `@media (prefers-reduced-motion: reduce)` se condicionan con
+>       `:root:not([data-nx-motion="on"])` (permite forzar "Siempre") y se añade un bloque explícito
+>       `:root[data-nx-motion="off"]` para que "Nunca" sea "nunca" aunque el sistema no lo pida;
+>     - **consulta en caliente:** `REDUCED` (constante capturada al cargar) pasa a `nxReduced()`, que
+>       pregunta a `window.__nxMotion.effective()` en el momento (13 usos en `Base.astro`, 2 en
+>       `index.astro`). El cambio de preferencia **recarga** la página (Lenis, cursor glow y Three.js se
+>       deciden al arrancar) guardando el scroll en `sessionStorage` para restaurarlo.
+>   - **Interruptor visible (Auto / Siempre / Nunca):** componente nuevo `MotionToggle.astro`, en el panel
+>     de atajos, en el pie del buscador (versión compacta, accesible también en móvil) y en la portada.
+>   - **Atajos descubribles:** el botón del header ya no es un icono suelto: ahora es icono + etiqueta
+>     **"Atajos"** + `kbd ?`, con un separador visual antes del grupo de acciones. El panel de atajos
+>     (`ShortcutsPanel.astro`, nuevo y autocontenido) incluye la sección "Movimiento". En ≤639 px se
+>     ocultan el botón y el separador (no hay teclado físico), pero el interruptor sigue accesible desde
+>     el buscador.
+>   - **Cinta de materias continua:** la franja de la portada se desplaza de derecha a izquierda **sin
+>     cortes ni huecos**. El JS mide el grupo real, calcula las copias necesarias
+>     (`ceil(innerWidth / grupo) + 2`), fija `--nx-marquee-shift` (un grupo entero → bucle invisible) y
+>     `--nx-marquee-duration` para mantener una **velocidad constante** (32 px/s) sea cual sea el número
+>     de copias. El markup inicial trae 4 grupos para que, sin JS, la cinta cubra el ancho. Añadido brillo
+>     (`nx-marquee-sheen`) y glow en los items.
+>   - **CSP:** `https://vercel.live` añadido a `script-src` y `connect-src` en `site/vercel.json`: el widget
+>     de Vercel provocaba un error de consola en producción.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1 múltiple,
+>   0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas; los ZIP no se listan por falta de `unzip`
+>   en Windows) · navegador **sin errores de consola**: con `?motion=1` las animaciones corren aunque el
+>   navegador de pruebas tenga `prefers-reduced-motion: reduce` forzado (`data-nx-motion="on"`, marquee
+>   con `animation-name: nx-marquee`), y con `?motion=0` no corre ninguna (`animation-name: none`).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): enlaces `#encabezado` entre
+>     notas apuntan a encabezados cuyo slug en el destino **no coincide** con el que escribió el autor
+>     (acentos, guiones iniciales, emojis). Se comprobó compilando la versión anterior del sitio
+>     (`8050f589`) y dio **exactamente las mismas 207**: 206 cuyo encabezado no existe en el destino + 1
+>     con el slug terminado en guion (`#funciones-definidas-por-partes` →
+>     `id="funciones-definidas-por-partes-"`). **Ninguna está en la portada.** Corregir el resto implica
+>     tocar las notas de origen (zonas de otras sesiones) o un slugger más tolerante en el sitio.
+>     **Lo dejo reportado, no lo toqué.**
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `5e958e2c`** — `84bf73ad` (código) + `5e958e2c` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `5e958e2c`. `origin/sesion/opencode-site` queda en `5e958e2c`.
+(Este commit solo registra el push; al publicarlo, `origin/master` avanza a su propio hash.)
+
+---
+
+### `opencode-site` — fondo rediseñado, sin esfera del puntero y atajos al final de la página — 10/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `2b4089d9` + `67da9a8f`):** tercera vuelta de UX sobre `site/src/**` (mi zona). Nada del vault
+>   tocado, nada de `Universidad/**`, nada de `site/scripts/**`. Todo lo que pidió el dueño en la ronda
+>   anterior, más el rediseño del fondo y el titular nuevo.
+>   - **Fondo rediseñado (lo que más molestaba).** Se fue el "ruido" de fondo:
+>     - **Scanlines eliminados.** Eran líneas de 1 px cada 3 px al 2 % de opacidad. Con el escalado de
+>       Windows (125 %, 150 %) o en 4K esas líneas no caen sobre un píxel físico exacto y producen
+>       **muaré**: el fondo se veía cortado en líneas. Era el diseño, no la máquina.
+>     - **Grano de película eliminado.** Era un tile SVG de ruido al 5 % que saltaba 5 px cada 0,2 s
+>       en 4 pasos: literalmente estática de televisión parpadeando sobre el texto.
+>     - **En su lugar:** una **retícula de puntos** de 26 px, muy tenue (blanco al 5,5 %) y totalmente
+>       estática, que se desvanece hacia abajo con una máscara; un **halo del color del semestre** arriba;
+>       y el degradado base reescrito en cuatro capas (viñeta que oscurece los bordes + dos focos de
+>       color difusos + azul casi negro). Todo el degrade va **detrás** del contenido, así que el texto
+>       nunca se ve afectado.
+>     - **Con el movimiento en "Nunca"** desaparecen también la retícula y el halo: el fondo queda
+>       limpio y plano.
+>   - **Fuera la esfera de color del puntero.** Era un div de 26 px con `mix-blend-mode: screen` que
+>     seguía al puntero con 0,18 s de retardo y crecía a 2,3× sobre los enlaces. Problems: se veía el
+>     puntero real **y** la esfera a la vez, aclaraba el texto que tenía debajo y en trackpad se
+>     sentía lento. Para un sitio donde se estudia es ruido, no carácter. Se eliminó el elemento, su
+>     JS y su CSS. Los brillos en acentos y estados hover se quedan.
+>   - **Botones y tarjetas: solo 3D, sin rebote.** Se quitó el **hover magnético** (el botón se
+>     desplazaba hacia el puntero y volvía con `elastic.out`: se le escapaba de debajo del cursor y
+>     temblaba al regresar). Ahora los botones solo **rotan en perspectiva** (5°, `transform-perspective`
+>     700) y las tarjetas giran 7° con perspectiva 900; el retorno es `power3.out`, **sin rebote**.
+>   - **Pie de página común (nuevo `SiteFooter.astro`).** Antes solo la portada tenía pie; semestre,
+>     materia y nota terminaban en seco. Ahora `Base.astro` monta un pie en **todas** las páginas con:
+>     marca y créditos, el aviso de que el material es personal y de que algunos archivos no se
+>     publican, la **fecha de la última compilación** (el sitio es estático: es la del último
+>     despliegue), el **botón "Atajos" con la tecla "?"** y el interruptor de movimiento.
+>   - **El botón "?" de los atajos pasa al final de la página**, como pidió el dueño: sale del header
+>     (donde competía con inicio, índice y búsqueda) y queda en el pie. Efecto colateral bueno: antes
+>     se ocultaba a ≤639 px, así que en móvil no había forma de llegar a los atajos; **ahora se ve
+>     siempre**. La tecla "?" sigue funcionando en todo el sitio.
+>   - **Escena de Three.js más discreta:** 1.500 → **800** partículas, más pequeñas (0,15 → 0,11) y
+>     más tenues (0,6 → 0,42); la constelación de líneas, 420 → 260 y al 60 % de opacidad; giro más
+>     lento. Las auras del hero, más difusas (blur 90 → 110, opacidad 0,18 → 0,13).
+>   - **Números de la portada:** ya eran dinámicos (se calculan desde `vault.json`, que genera el
+>     `sync` leyendo el vault), así que se actualizan solos en cada compilación. Se unificó el nombre:
+>     el hero decía "4 BLOQUES" y la tarjeta decía "Semestres" → ahora **SEMESTRES** en los dos.
+>
+> - **Bug encontrado y corregido: la portada mentía con los números.** Los tres totales del hero y de
+>   las tarjetas de estadísticas suman los datos de los cuatro semestres, pero el cálculo usaba
+>   `reduce` **sin acumular**: el callback recibía el total anterior y lo descartaba, así que el
+>   resultado era el del **último semestre** (3er). La portada llegaba a decir
+>   "181 NOTAS · 5 MATERIAS · 113 PDFS" cuando el vault tiene **822 notas, 18 materias y 220 PDFs**
+>   en 4 semestres. El mismo error está en el sitio publicado en producción ("156 NOTAS · 5 MATERIAS ·
+>   137 PDFS"), así que no es de este lote: estaba desde antes. Corregido acumulando de verdad
+>   (`n + ...`): ahora la portada y las tarjetas dicen **822 NOTAS · 18 MATERIAS · 220 PDFS ·
+>   4 SEMESTRES**, que es lo que este LEEME venía anunciando. Comprobado contra el `vault.json` a
+>   mano y en la página compilada.
+>
+> - **Hero nuevo (titular y frase), pedido del dueño.** El titular era "Mis apuntes de carrera en un
+>   solo lugar.": no enganchaba, no decía qué es el sitio ni qué problema resuelve.
+>   - **h1:** `¿Tuviste el PDF y no sabes por dónde empezar?` — el gancho es una situación real del
+>     estudiante; el degradado va solo en la parte que carga la emoción ("no sabes por dónde empezar?").
+>   - **debajo:** "Neonotes hace ese trabajo por ti: apuntes de ESPOL resumidos y ordenados por
+>     semestre, con gráficos, fórmulas y búsqueda por temas. ¿Te los quieres llevar? Cada materia se
+>     baja en un ZIP."
+>   - **distintivos:** `BÚSQUEDA POR TEMAS` · `GRÁFICOS Y FÓRMULAS` · `ZIP POR MATERIA` (las tres cosas
+>     ya existían: el buscador entra en el texto de las notas, las notas llevan diagramas y fórmulas
+>     KaTeX, y cada materia tiene su ZIP de PDFs).
+>   - El badge de arriba se mantiene: `INGENIERÍA COMPUTACIONAL · ESPOL`.
+>
+> - **Bug encontrado y corregido: el degradado se partía al saltar de línea.** La frase "en un solo
+>   lugar." se veía en dos colores: "en un" quedaba violeta plano y "solo lugar." reiniciaba la rampa.
+>   La causa es que `background-clip: text` calcula el degradado sobre la caja completa del `<span>`,
+>   no sobre cada línea. Se arregla con **`box-decoration-break: clone`**, que hace que cada línea
+>   pinte su propia copia del degradado. Además el h1 lleva `text-wrap: balance` para que el corte de
+>   línea caiga en un sitio razonable. **Verificado con capturas reales** (no solo con estilos
+>   calculados): el degradado sale bien tanto en una línea (1280 px) como repartido en dos y tres
+>   líneas (500 px y 390 px).
+>
+> - **Bug encontrado y corregido: la página se ensanchaba en móvil.** El halo decorativo del hero
+>   (420 px, `left: 10%`) sobresalía del ancho de la ventana, así que el documento medía **459 px en
+>   una pantalla de 390** y Chrome "encogía" el contenido para que cupiera: el texto se veía más
+>   pequeño de lo que debía. Ahora el halo está limitado a `72vw` y `html` lleva `overflow-x: clip`
+>   (no rompe los `position: sticky`). Comprobado por CDP a 390 px: `innerWidth = 390` y
+>   `scrollWidth = 390`, sin desbordes.
+>
+> - **Herramienta nueva de verificación:** captura por CDP (`shot-cdp.mjs`) a un ancho exacto. El
+>   modo `--headless --screenshot` de Edge/Chrome impone un ancho mínimo de ventana (~500 px) y recorta
+>   la imagen, así que no servía para comprobar móvil.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · `search-content.json` → 821 notas /
+>   18.043 apartados / 4.95 MB · **QA estático: 848 páginas de contenido, 0 sin h1, 0 con h1 múltiple,
+>   0 enlaces rotos** · `CI-PRIVADO: OK` (18 patrones, 0 fugas) · **navegador sin errores de consola**:
+>   `#nx-cursor` ya no existe en el DOM, el pie aparece en portada y en nota, el header ya no tiene el
+>   botón de atajos, el hover magnético no queda enganchado (`data-nx-mag-bound` ausente) y el tilt 3D sí
+>   (`data-nx-tilt-bound` en botones y 40 tarjetas). Medido a 375 px: el pie **no se desborda** (el
+>   bloque de herramientas pasa a dos líneas).
+> - **Portada compilada, comprobada con capturas reales** (390 px y 1280 px, por CDP): el titular sale
+>   bien con el degradado repartido por línea, **sin desbordes** (`innerWidth` = `scrollWidth` = 390 y
+>   1280) y los totales ya son los reales: **822 NOTAS · 18 MATERIAS · 220 PDFS · 4 SEMESTRES**, los
+>   mismos que salen de `vault.json` a mano.
+>
+> - [!note] Los tres números de "notas" son tres cosas distintas (no hay inconsistencia)
+>   - **822** = notas de los 4 semestres (`vault.json`), que es lo que muestra la portada.
+>   - **823** = páginas de nota publicadas: las 822 + `raiz/general` (la portada excluye `raiz` a
+>     propósito, así que no cuenta esa nota).
+>   - **821** = notas **indexadas para el buscador**: el índice solo entra en las que tienen apartados
+>     (`build-search-content.mjs` salta las que no tienen encabezados).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): igual que en la ronda
+>     anterior, ver el bloque de `opencode-site` del 09/11/2026. Se comprobó compilando la versión
+>     anterior (`8050f589`): dio **exactamente las mismas 207** (206 sin encabezado en el destino + 1
+>     con el slug terminado en guion). Ninguna está en la portada.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `82bd9398`** — `2b4089d9` + `67da9a8f` (código) + `82bd9398` (este bloque) → merge
+`--ff-only` a `master` → `origin/master` = `master` = `82bd9398`. `origin/sesion/opencode-site` queda
+en `82bd9398`.
+
+---
+
+### `opencode-site` — el titular ya no desaparece con las animaciones + Vercel Analytics — 10/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `8030bb03`):** corrección del bug del titular y analítica de visitas. Todo en
+>   `site/**` (mi zona): nada del vault, nada de `Universidad/**`, nada de `site/scripts/**`.
+>
+> - **Bug del titular: la frase desaparecía con las animaciones activas.** El dueño lo detectó al
+>   poner el movimiento en "Siempre": el h1 se quedaba en "¿Tuviste el PDF y" y la frase
+>   **"no sabes por dónde empezar?" se borraba de la pantalla**. En producción, confirmado.
+>   - **Causa:** `SplitText` (GSAP) parte el titular letra por letra, y cada letra pasa a ser un
+>     `<div>` inline-block. El degradado del `<span>` se pinta con `background-clip: text`, que
+>     pinta el fondo **sobre el texto del propio elemento**: al partirse el span, el fondo deja de
+>     pintarse detrás de las letras y, como el color es transparente (`color: transparent`), las
+>     letras quedan invisibles. El texto estaba en el DOM, pero no pintaba **ni un píxel**.
+>   - **Por qué llevaba tiempo sin verse:** solo pasaba con las animaciones activas. Con el sistema
+>     en "reducir movimiento" (o el interruptor en "Auto"/"Nunca") el `SplitText` no se ejecuta, el
+>     span queda entero y el degradado se ve bien. Por eso las capturas "en frío" salían
+>     correctas y el problema solo se veía al activar el movimiento a mano. **El titular anterior
+>     ("en un solo lugar.") tenía el mismo bug.**
+>   - **Arreglo (tres capas):**
+>     1. `SplitText` recibe `ignore: ".nx-brand-text"`: el span del degradado **no se parte** y la
+>        animación se aplica al resto del titular.
+>     2. Red de seguridad en CSS: si algo volviera a partir el span, sus letras reciben un color
+>        sólido (`--color-nexus-purple`) → se pierde la rampa, pero **el texto nunca se borra**.
+>     3. Comprobación de integridad en JS: si tras partir el titular se queda sin texto, se
+>        deshace la partición (`split.revert()`) y se deja el texto normal. El título de las notas
+>        recibe el mismo tratamiento.
+>
+> - **Verificación con evidencia de píxeles, no solo de estilos.** Nuevo script `check-titular.mjs`:
+>   carga la página por CDP (ancho exacto), comprueba el DOM **y captura la pantalla y decodifica el
+>   PNG en Node** (zlib + filtros PNG) para contar los píxeles realmente pintados dentro de la caja
+>   del span del degradado.
+>   - **Control negativo (producción, con el bug):** el span partido en **23 letras** y **0 píxeles
+>     violeta y 0 azules** en toda su caja (42.624 píxeles: 42.585 de fondo). Los 6.293 píxeles
+>     blancos del h1 eran solo de "¿Tuviste el PDF y".
+>   - **Después del arreglo:** `charsEnSpan` = **0** (el span no se parte) y **6.277 violeta +
+>     4.772 azules** a 1280 px; **3.500 + 2.603** a 390 px. Sin desborde en ambos anchos.
+>   - También comprobado con el movimiento apagado (`?motion=0`): todo igual de bien.
+>
+> - **Vercel Analytics.** `@vercel/analytics` 2.0.1 y `<Analytics />` al final del `<body>` de
+>   `Base.astro`, así que está en **todas** las páginas. El script se sirve desde el propio
+>   dominio (`/_vercel/insights/script.js`): **sin CDN de terceros** (comprobado: el HTML no tiene
+>   ningún `src="http..."` externo). Con esto ya se pueden ver visitas y páginas vistas en el panel
+>   de Vercel.
+>
+> - **Verificado:** `npm run build` → **849 páginas, 0 errores** · **QA estático: 850 HTML (848 de
+>   contenido), 0 sin h1, 0 con h1 múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas
+>   preexistentes) · `CI-PRIVADO: OK` (18 patrones, 0 fugas) · titular verificado por píxeles a
+>   1280 px y 390 px, con animaciones activas y apagadas.
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): siguen igual que en las
+>     rondas anteriores. Ninguna está en la portada.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `03732bc5`** — `8030bb03` (código) + `03732bc5` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `03732bc5`. `origin/sesion/opencode-site` queda en `03732bc5`.
+
+---
+
+### `opencode-site` — modo de estudio con las flashcards de las notas, modo lectura e impresión — 11/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `4419ebcc`):** modo de estudio con las flashcards que ya tenían las notas, modo
+>   lectura e impresión a PDF. Todo en `site/**` (mi zona): nada del vault, nada de
+>   `Universidad/**`, nada de `site/scripts/**`. Único archivo de configuración tocado:
+>   `site/astro.config.mjs`, para registrar el plugin nuevo de Markdown.
+>
+> - **El pedido:** "un modo de estudio que aproveche las flashcards que poseen las notas en la última
+>   sección".
+>   - **Lo que había:** las notas ya traían sus tarjetas, en el formato del plugin *Spaced
+>     Repetition* de Obsidian:
+>
+>         ## 🔁 Repaso SR (flashcards)
+>         #flashcards/bd-u4
+>         > [!note] 🧠 Repasa con el plugin Spaced Repetition
+>         > - ¿SQL en 1 frase?::Lenguaje declarativo de acceso a bases de datos.
+>
+>     El sitio las renderizaba como una lista más, con el `::` a la vista. Eran material
+>     desperdiciado: ya estaban escritas y no había ninguna forma de practicarlas.
+>   - **Lo que se hizo (sin tocar el vault):** leer esas tarjetas del mismo Markdown que el sitio
+>     renderiza y convertirlas en dos cosas:
+>
+> - **Página nueva `/estudio/`: sesiones de repaso.**
+>   - Filtros por **materia** y por **mazo**, botón de **barajar** y opción **"solo las que no sé"**.
+>   - Se destapa la respuesta, se marca **"sí" / "no sé"** y el progreso se guarda en el navegador
+>     (`localStorage`), con contador de dominadas y barra de avance.
+>   - Atajos: `espacio` destapa · `1` no sé · `2` sí · `←`/`→` navegan · `s` baraja.
+>   - Las respuestas con matemática ($...$) se compilan con **KaTeX en el servidor**, así que las
+>     fórmulas se ven igual que en la nota.
+>   - En el build local hay **321 tarjetas en 64 notas, 15 mazos y 4 materias**. En producción saldrán
+>     más: el `notes-md` local va retrasado respecto al vault (allí se sincroniza antes de compilar).
+>
+> - **Dentro de cada nota: tarjetas interactivas.** Un plugin de Markdown (`rehype-flashcards.mjs`)
+>   convierte el bloque "Repaso SR" en tarjetas que se destapan al hacer clic. Se usa
+>   `<details>/<summary>` a propósito: **funciona sin JavaScript**, se lee bien con teclado y con
+>   lector de pantalla y no añade ni un script al sitio. También quita la línea `#flashcards/mazo`
+>   (metadato del plugin de Obsidian, que fuera solo se veía como un hashtag suelto) y pone el
+>   enlace **"Practicar estas tarjetas →"** a esa nota concreta.
+>
+> - **Entradas:** la portada y la ficha de cada materia dicen cuántas tarjetas hay y llevan al modo
+>   de estudio.
+>
+> - **Modo lectura (notas):** un botón deja la nota sola — sin header, sin pie, sin explorador, sin
+>   índice y sin fondo, con más cuerpo de texto. La preferencia se recuerda entre páginas.
+> - **Imprimir / Guardar como PDF:** hoja de estilos de impresión que saca solo la nota, en blanco y
+>   negro, con los encabezados sin partirse al final de la página. Es la respuesta directa al
+>   titular "¿tuviste el PDF?": ahora la nota también se puede llevar en PDF.
+>
+> - **Verificado con navegador real (CDP), no solo con el HTML:**
+>   - `check-estudio.mjs`: la página carga con 321 tarjetas · "Mostrar respuesta" destapa (87
+>     caracteres) · "Sí" avanza y **guarda** (1 → 2 tarjetas guardadas) · la tecla `2` también avanza
+>     · el filtro por materia deja 134 tarjetas de Inglés III · la nota de inducción trae **8
+>     tarjetas** con su CTA bien construido (`/estudio/?nota=...`) · **cero errores de consola**.
+>   - `check-lectura.mjs`: el modo lectura oculta header, pie y explorador, la nota sigue visible y
+>     **se mantiene al recargar** · con la media `print` emulada: sin menús, texto negro sobre blanco
+>     · `Page.printToPDF` generó un **PDF real de 12 páginas** (3 MB).
+>
+> - **Verificado:** `npm run build` → **850 páginas, 0 errores** (849 + `/estudio/`) ·
+>   `search-content.json` → 821 notas / 18.043 apartados / 4.95 MB · **QA estático: 851 HTML (849 de
+>   contenido), 0 sin h1, 0 con h1 múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas
+>   preexistentes) · `CI-PRIVADO: OK` (18 patrones, 0 fugas).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): siguen igual que en las
+>     rondas anteriores. Ninguna está en la portada.
+>   - **Lo que sigue en la lista del dueño** (todavía no hecho): mapa de la carrera en 3D, progreso y
+>     favoritos, mejoras del buscador (filtros e historial) y el rescate de esas 207 anclas. Se siguen
+>     en la siguiente ronda.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `f8615636`** — `4419ebcc` (código) + `f8615636` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `f8615636`. `origin/sesion/opencode-site` queda en `f8615636`.
+
+---
+
+### `opencode-site` — mapa de la carrera en 3D, favoritos y avance — 11/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `35d2367a`):** el mapa de la carrera en 3D, los favoritos y el avance del
+>   lector. Todo en `site/**` (mi zona): nada del vault, nada de `Universidad/**`, nada de
+>   `site/scripts/**`.
+>
+> - **El mapa de la carrera en 3D (`/mapa/`).** La carrera vista como un recorrido: cada
+>   **semestre es una constelación** (un nodo grande en el centro con sus materias orbitando) y las
+>   constelaciones se encadenan de izquierda a derecha: preuniversitario → 1ro → 2do → 3ro.
+>   - **Three.js es el del propio sitio** (`/three.module.js`): sin CDN, sin dependencias nuevas.
+>   - Se arrastra para girar, con la rueda se acerca, al pasar el cursor por un nodo sale el dato
+>     (materia, semestre y número de notas) y al hacer clic se abre la materia.
+>   - **Sin JavaScript (o sin WebGL) se ve el mapa 2D** en columnas, con los mismos enlaces: el
+>     contenido no depende del 3D. Cada nodo es un **enlace real**, así que se puede llegar con el
+>     teclado y el lector de pantalla los lee como enlaces.
+>   - El mapa arranca también cuando se entra desde la portada con el router de Astro
+>     (`data-astro-rerun`): comprobado con el navegador, no solo en el HTML.
+>
+> - **Favoritos.** Una estrella en cada nota (tanto en la nota como en la ficha de la materia), un
+>   contador en el header y la página `/favoritos/` con la lista. **Se guardan en el
+>   `localStorage` del lector**: sin cuentas, sin servidor y sin que salga nada de su dispositivo.
+> - **Avance.** Botón "Marcar leída" en cada nota y página `/progreso/` con el avance por
+>   semestre y por materia (barras), sobre los totales reales del vault.
+> - Entradas nuevas: el pie tiene ya Mapa, Estudio, Favoritos y Avance, y la portada enlaza al mapa.
+>
+> - **Verificado con navegador real (CDP), no solo con el HTML:**
+>   - `check-mapa.mjs`: el mapa carga, la escena 3D arranca (`nx-mapa--3d`) y el 2D se oculta ·
+>     **18 etiquetas de materia y 4 de semestre, todas con enlace válido** · **evidencia de
+>     píxeles: 11.882 píxeles de color pintados dentro del canvas** (si la escena no dibujara,
+>     el mapa "se vería" pero estaría vacío) · al pasar el cursor sale el dato de la materia ·
+>     entrando desde la portada con el router el mapa también arranca · 0 errores de consola.
+>   - `check-favoritos.mjs`: la estrella de la nota guarda y queda marcada · **persiste al
+>     recargar** · el contador del header sube · la estrella de la ficha de la materia también
+>     (51 estrellas en matemáticas discretas) · `/favoritos/` lista las 2 guardadas con su
+>     materia y se puede quitar una · `/progreso/` cuenta 1 leída y pinta las barras de los 4
+>     semestres y 18 materias · 0 errores de consola.
+>
+> - **Verificado:** `npm run build` → **853 páginas, 0 errores** · **QA estático: 854 HTML, 0 sin
+>   h1** (los 2 que no lo tienen son `404.html` y el visor de PDF, que no son contenido), **0 con h1
+>   múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas preexistentes; se arreglan en la
+>   siguiente ronda) · `CI-PRIVADO: OK` (18 patrones, 0 fugas).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): ya está estudiado y se
+>     sabe la causa exacta (los ids que genera `rehype-slug` llevan tildes y emoticonos, y los
+>     enlaces escritos a mano no). Se arreglan en la siguiente ronda, sin tocar el vault.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+**PUSHEADO `95568e79`** — `35d2367a` (código) + `95568e79` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `95568e79`. `origin/sesion/opencode-site` queda en `95568e79`.
+
+---
+
+> [!success] `Cálculo de una Variable`: contrato propio, fase mecánica, 183 fuentes `.mmd` y lecturas R14 — **0 hallazgos**
+>
+> **Encargo (09/11/2026):** *"quiero que el formato que tienen sbd lo muevas a calculo de una variable,
+> con los svg y las explicaciones y todo eso"*.
+>
+> **Qué se hizo**
+> - **Contrato + validador propios** (`FORMATO-CALCULO1.md`, `qa_formato_calculo1.py`, 14 reglas R1-R14
+>   con perfiles `clase`/`material`/`indice`). El esqueleto de H2 de esta materia es **propio**: no se
+>   copió el de SBD ni el de Diseño, se copió el método.
+> - **Fase mecánica** sobre las 65 notas: frontmatter con `dg-publish` y `tags`, `---` entre secciones,
+>   H1/H2 con emoji, rutas de embed canónicas, pie de `**Tags:**` y sección de cierre
+>   (`Referencias|Notas Recomendadas|Conexiones`) antes de los tags.
+> - **90 callouts de una línea partidos** en título corto + cuerpo (mapa manual revisado uno a uno).
+>   Es el defecto exclusivo de esta materia: SBD, Diseño y Cálculo Vectorial tienen **0**, y el parser
+>   del sitio (`site/src/lib/rehype-callouts.mjs:74-110`) se come el primer párrafo como título.
+> - **183 fuentes `.mmd`** al lado de los 183 SVG: **144 recuperadas del historial** (eran las fuentes
+>   mermaid reales, borradas en `6424ecfb`) y **39 reconstruidas** desde el SVG con `svg_a_mmd.py`.
+>   Round-trip verificado en los **183/183**: texto visible y viewBox idénticos al SVG.
+> - **4 figuras renombradas** a `cal1-<tema>-<slug>` (eran `Pasted image …`, un UUID y `demo-funcion`)
+>   y sus embeds reescritos.
+> - **Lecturas R14** de los 189 embeds: `**Se lee así:**` · `**Por qué importa:**` · `**Ejemplo:**`,
+>   redactadas sobre la estructura de cada diagrama (cajas y flechas, sin mirar la imagen). Cada lectura
+>   explica la estructura del diagrama y no transcribe sus textos.
+>
+> **Antes / después del validador**
+> | | hallazgos | R12 (svg sin .mmd) | R14 (embed sin lectura) | resto |
+> |---|---|---|---|---|
+> | línea base | **1309** | 184 | 151 | 974 |
+> | fase mecánica | 335 | 184 | 151 | 0 |
+> | fuentes `.mmd` | 151 | **0** | 151 | 0 |
+> | lecturas R14 | **0** | 0 | **0** | 0 |
+>
+> **Verificado**
+> - `qa_formato_calculo1.py` → **0 hallazgos** en las 65 notas.
+> - Control de lecturas: los **189 embeds** tienen las tres etiquetas y el bloque completo, 0 problemas.
+> - Control contra la fuente de cada lectura: **0 truncados, 0 restos de etiqueta**, 0 problemas.
+> - `verifica_calculo1.py` (no se pierde contenido) → **65/65 notas, 0 problemas**: mismo texto,
+>   mismos embeds, mismos wikilinks, mismos tags.
+> - `verifica_mmd.py` (round-trip) → **183/183** con texto visible y viewBox idénticos.
+> - `qa_links.py Universidad` → 6 "bad", los **3 preexistentes** de `FORMATO-SBD.md`/`FORMATO-DISENO.md`
+>   y los **3 nuevos** de `FORMATO-CALCULO1.md` (los `[[…]]`/`![[…]]` de ejemplo dentro de bloques de
+>   código de la propia documentación: falsos positivos, no enlaces rotos).
+>
+> **U0 sigue vacía de material** (0 PDFs): no hay de dónde sacar lecturas de deck ni aplicar R15, y no
+> se inventó ninguna cita.
+>
+> **Commits**
+> - `e3b4419a` docs(calculo1): deja constancia en el contrato de que la materia esta en 0 hallazgos
+> - `d6fdb5f2` feat(calculo1): completa las lecturas R14 de los 189 embeds visuales
+> - `da81a9b8` feat(calculo1): bloque R14 de tres etiquetas en los 26 embeds con lectura preexistente
+> - `138f6537` feat(calculo1): lecturas R14 en Aplicaciones de la Integral
+> - `cacbdf39` feat(calculo1): lecturas R14 en fracciones parciales, integracion numerica y polar
+> - `24643db0` feat(calculo1): lecturas R14 en el teorema fundamental, improperas y tecnicas
+> - `c727ccbd` fix(calculo1): quita la redundancia 'Se lee asi: Se lee asi...' en 17 lecturas
+> - `222934d1` feat(calculo1): lecturas R14 en Derivadas Especiales e Integrales
+> - `31ea1d92` feat(calculo1): lecturas R14 en los embeds de Preliminares, Limites y Derivadas
+> - `0d57a2ad` docs(calculo1): reglas de sintaxis mermaid verificadas en los 183 diagramas
+> - `296be5ef` feat(calculo1): fuente .mmd para los 183 diagramas + figuras con nombre tematico
+> - `2b0ffe7c` refactor(calculo1): fase mecanica del contrato FORMATO-CALCULO1 en las 65 notas
+> - `0e53a159` qa(calculo1): contrato FORMATO-CALCULO1 + validador qa_formato_calculo1.py
+> - `ffaafcd4` Merge branch 'master' into sesion/opencode-onedrive
+
+> **Herramientas nuevas** (en `Universidad/Herramientas/`): `Mantenimiento/split_callouts_calculo1.py`,
+> `Mantenimiento/transform_calculo1.py`, `Mantenimiento/verifica_calculo1.py`,
+> `SVG-Pipeline/svg_a_mmd.py`, `SVG-Pipeline/verifica_mmd.py`.
+>
+> **Nota de alcance:** `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se revisaron y **no**
+> necesitaron cambios: el sync solo publica `ASSET_DIRS = ["Figuras","Diagramas"]` y las notas
+> `.md`, así que las fuentes `.mmd` no llegan al sitio (y no deben).
+>
+> **PUSHEADO `e6654168`** — rama `sesion/opencode-onedrive` → `master` → `origin/master`.
+> `origin/master` = `master` = `e6654168`. `origin/sesion/opencode-onedrive` queda en `e6654168`.

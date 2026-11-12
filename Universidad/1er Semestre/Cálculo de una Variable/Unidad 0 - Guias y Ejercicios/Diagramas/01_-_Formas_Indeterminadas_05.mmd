@@ -1,0 +1,15 @@
+flowchart TD
+    A[Límite Difícil de Evaluar] --> B{Función acotada?}
+    B -->|No| C[Buscar otra técnica]
+    B -->|Sí| D["Encontrar f(x) ≤ g(x) ≤ h(x)"]
+    D --> E{"lim f(x) = lim h(x)?"}
+    E -->|No| F[Buscar mejores cotas]
+    E -->|Sí| G[Aplicar Teorema]
+    G --> H["lim g(x) = L"]
+    F --> D
+    
+    style A fill:#e3f2fd
+    style G fill:#e8f5e8
+    style H fill:#f3e5f5
+    style C fill:#ffebee
+    style F fill:#fff3e0

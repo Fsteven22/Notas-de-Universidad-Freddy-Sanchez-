@@ -1,0 +1,43 @@
+---
+title: "02 - Asíntotas y comportamiento de funciones"
+---
+flowchart TD
+    A["Función f(x)"]
+    B["1. Dominio y recorrido"]
+    C["2. Asíntotas"]
+    D["3. Intersecciones con los ejes"]
+    E["4. Comportamiento global"]
+    F["Asíntota vertical"]
+    G["x = a con lim(x→a⁺) f(x) = ±∞"]
+    H["Ejemplo: 1/(x−2) tiene asíntota en x = 2"]
+    I["x = a no pertenece al dominio"]
+    J["Divide el gráfico en ramas"]
+    K["Asíntota horizontal: lim(x→±∞) f(x) = L"]
+    L["Asíntota oblicua: m = lim f(x)/x, b = lim(f(x) − mx)"]
+    M["Sin asíntotas: polinomios y exponenciales"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    E --> K
+    E --> L
+    E --> M
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style I fill:#ffebee,stroke:#e53935,color:#4a1010
+    style J fill:#ffebee,stroke:#e53935,color:#4a1010
+    style K fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style L fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style M fill:#e0f2f1,stroke:#009688,color:#00332e

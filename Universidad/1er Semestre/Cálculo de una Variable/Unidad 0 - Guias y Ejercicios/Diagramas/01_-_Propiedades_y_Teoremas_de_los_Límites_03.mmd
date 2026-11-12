@@ -1,0 +1,14 @@
+flowchart TD
+    A[Limite de composicion f de g] --> B[Calcular limite de g]
+    B --> C{g tiene limite L?}
+    C -->|No| D[Limite no existe]
+    C -->|Si| E{f continua en L?}
+    E -->|No| F[No aplicar teorema]
+    E -->|Si| G[Aplicar f en L]
+    G --> H[Resultado f de L]
+    
+    style A fill:#e3f2fd
+    style G fill:#e8f5e8
+    style H fill:#f3e5f5
+    style D fill:#ffebee
+    style F fill:#fff3e0

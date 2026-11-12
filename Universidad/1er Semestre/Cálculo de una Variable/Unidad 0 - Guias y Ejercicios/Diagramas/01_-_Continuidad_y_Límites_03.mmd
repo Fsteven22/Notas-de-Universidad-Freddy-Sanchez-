@@ -1,0 +1,21 @@
+graph TD
+    A[Función f] --> B{¿Continua?}
+    B -->|No| C[Estudiar discontinuidades]
+    B -->|Sí| D{¿En compacto?}
+    
+    D -->|Sí| E[Uniformemente continua] 
+    D -->|No| F{¿Derivada acotada?}
+    
+    F -->|Sí| E
+    F -->|No| G[Verificar definición]
+    
+    C --> H[Clasificar tipo]
+    H --> I[Evitable/Salto/Infinita/Esencial]
+    
+    G --> J{¿Cumple condición ε-δ global?}
+    J -->|Sí| E
+    J -->|No| K[Solo continua puntualmente]
+    
+    style E fill:#4caf50,color:#fff
+    style K fill:#ff9800,color:#fff
+    style C fill:#f44336,color:#fff

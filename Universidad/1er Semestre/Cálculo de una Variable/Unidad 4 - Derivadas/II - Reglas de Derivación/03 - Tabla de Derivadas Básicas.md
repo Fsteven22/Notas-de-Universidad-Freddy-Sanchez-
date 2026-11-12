@@ -1,114 +1,122 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad4, tabla-de-derivadas-basicas, matemáticas, cálculo, derivadas, fórmulas-básicas, referencia-rápida, cálculo-diferencial, tabla-derivadas]
 ---
 
-# Tabla de Derivadas Básicas 
+# 📋 Tabla de Derivadas Básicas
 
 > [!quote] _"Las fórmulas de derivación son herramientas esenciales que todo estudiante de cálculo debe dominar. Esta tabla de referencia rápida complementa el estudio teórico profundo, proporcionando acceso inmediato a las fórmulas fundamentales necesarias para resolver problemas de derivación."_
 >
 
 > [!info]+ Propósito de esta Referencia 📚
-> 
+>
 > ### Complemento a tus Estudios de Derivadas
-> 
+>
 > Esta nota está diseñada como **referencia rápida** para complementar tus notas detalladas sobre:
-> 
+>
 > - **Derivabilidad y Continuidad** - Conceptos teóricos fundamentales
 > - **Derivadas y Definición Formal** - Demostraciones rigurosas usando límites
 > - **Interpretación Geométrica de la Derivada** - Significado visual y aplicaciones
-> 
+>
 > ### Notación Utilizada
-> 
+>
 > - **Funciones trigonométricas**: $\sin x$, $\cos x$, $\tan x$, $\cot x$, $\sec x$, $\csc x$
 > - **Operador derivada**: $D_x f(x)$ o $f'(x)$
 > - **Notación de Leibniz**: $\frac{dy}{dx}$
 >
 
-> [!summary]+ Tabla de Derivadas Básicas 📋
-> 
+> [!abstract]+ Tabla de Derivadas Básicas 📋
+>
 > ### Las 13 Fórmulas Fundamentales
-> ![[Pasted image 20250824170857.png]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-15-formulas-dx.png]]
+>
+> **Se lee así:** Es una lámina en **dos columnas numeradas**: la izquierda lleva las primeras ocho igualdades y la derecha las siete restantes, con la numeración corrida para que no falte ninguna. Cada línea repite la misma forma, operador de derivación a la izquierda y resultado a la derecha, y las últimas filas incluyen ya las inversas trigonométricas con sus raíces cuadradas.
+>
+> **Por qué importa:** Fíjate en que las quince entradas usan la misma notación de operador y la misma disposición, así que puedes leerlas en diagonal para repasar rápido. Tenerla delante en un parcial te evita improvisar y te permite **verificar** un resultado derivando la expresión otra vez.
+>
+> **Ejemplo:** Para derivar $f(x) = e^x + \sin x$ consultas las filas de exponencial y seno, sumas las dos derivadas y obtienes $f'(x) = e^x + \cos x$, tal como aparece en los ejemplos rápidos de la nota.
+>
 > _Esta tabla contiene las reglas de derivación esenciales que debes memorizar. Cada fórmula representa la derivada directa de las funciones elementales más importantes en cálculo diferencial._
 >
 
 > [!tip] Fórmulas Organizadas por Categoría 🔢
-> 
+>
 > ### Funciones Algebraicas
-> 
+>
 > **1.** $D_x(k) = 0$ para toda constante $k \in \mathbb{R}$ **2.** $D_x(x) = 1$ **3.** $D_x(x^n) = nx^{n-1}$
-> 
+>
 > ### Funciones Exponenciales
-> 
+>
 > **4.** $D_x(e^x) = e^x$ **5.** $D_x(a^x) = a^x \ln a$
-> 
+>
 > ### Funciones Logarítmicas
-> 
+>
 > **6.** $D_x(\ln x) = \frac{1}{x}$ **7.** $D_x(\log_a x) = \frac{1}{x \ln a}$
-> 
+>
 > ### Funciones Trigonométricas Básicas
-> 
+>
 > **8.** $D_x(\sin x) = \cos x$ **9.** $D_x(\cos x) = -\sin x$ **10.** $D_x(\tan x) = \sec^2 x$ **11.** $D_x(\cot x) = -\csc^2 x$
-> 
+>
 > ### Funciones Trigonométricas Recíprocas
-> 
+>
 > **12.** $D_x(\sec x) = \sec x \tan x$ **13.** $D_x(\csc x) = -\csc x \cot x$
 >
 
 > [!example] Reglas de Combinación (Referencia Rápida) ⚡
-> 
+>
 > ### Reglas Fundamentales para Funciones Compuestas
-> 
+>
 > **Regla de la Suma/Diferencia:** $$D_x[f(x) \pm g(x)] = f'(x) \pm g'(x)$$
-> 
+>
 > **Regla del Producto:** $$D_x[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x)$$
-> 
+>
 > **Regla del Cociente:** $$D_x\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}$$
-> 
+>
 > **Regla de la Cadena:** $$D_x[f(g(x))] = f'(g(x)) \cdot g'(x)$$
 >
 
 > [!note] Casos Especiales Importantes 📝
-> 
+>
 > ### Extensiones Útiles de las Fórmulas Básicas
-> 
+>
 > **Potencias con exponente negativo:**
-> 
+>
 > - $D_x(x^{-n}) = -nx^{-n-1} = -\frac{n}{x^{n+1}}$
 > - $D_x\left(\frac{1}{x}\right) = -\frac{1}{x^2}$
-> 
+>
 > **Raíces como potencias:**
-> 
+>
 > - $D_x(\sqrt{x}) = D_x(x^{1/2}) = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$
 > - $D_x(\sqrt[n]{x}) = \frac{1}{n}x^{(1/n)-1}$
-> 
+>
 > **Funciones trigonométricas con coeficientes:**
-> 
+>
 > - $D_x(\sin(ax)) = a\cos(ax)$
 > - $D_x(\cos(ax)) = -a\sin(ax)$
 > - $D_x(\tan(ax)) = a\sec^2(ax)$
 >
 
 > [!success] Ejemplos Rápidos de Aplicación 🚀
-> 
+>
 > ### Casos Comunes que Aparecen Frecuentemente
-> 
+>
 > **Ejemplo 1: Polinomio simple**
-> 
+>
 > ```
 > f(x) = 3x⁴ - 2x³ + 5x - 7
 > f'(x) = 12x³ - 6x² + 5
 > ```
-> 
+>
 > **Ejemplo 2: Combinación exponencial-trigonométrica**
-> 
+>
 > ```
 > f(x) = e^x + sin x
 > f'(x) = e^x + cos x
 > ```
-> 
+>
 > **Ejemplo 3: Producto simple**
-> 
+>
 > ```
 > f(x) = x² sin x
 > f'(x) = 2x sin x + x² cos x  (regla del producto)
@@ -118,19 +126,19 @@ dg-publish: true
 >
 
 > [!warning] Conexión con tus Otras Notas 🔗
-> 
+>
 > ### Cómo usar esta referencia junto con tus estudios
-> 
+>
 > **📖 Para teoría profunda:** Consulta tus notas de _Derivadas y Definición Formal_
-> 
+>
 > **📐 Para interpretación visual:** Revisa _Interpretación Geométrica de la Derivada_
-> 
+>
 > **🔍 Para conceptos avanzados:** Estudia _Derivabilidad y Continuidad_
-> 
+>
 > **⚡ Para aplicación rápida:** Usa esta tabla como referencia inmediata
-> 
+>
 > ### Flujo de Estudio Recomendado
-> 
+>
 > 1. **Entender el concepto** → Tus notas de definición formal
 > 2. **Visualizar geométricamente** → Tu nota de interpretación geométrica
 > 3. **Memorizar fórmulas** → Esta tabla de referencia
@@ -138,24 +146,24 @@ dg-publish: true
 >
 
 > [!info] Relación con Integrales 🔄
-> 
+>
 > ### Teorema Fundamental del Cálculo
-> 
+>
 > **Si conoces la derivada, puedes encontrar la integral:**
-> 
+>
 > ```
 > Si D_x F(x) = f(x), entonces ∫f(x)dx = F(x) + C
 > ```
-> 
+>
 > **Ejemplos de la relación inversa:**
-> 
+>
 > - $D_x(x^2) = 2x$ ↔ $\int 2x , dx = x^2 + C$
 > - $D_x(\sin x) = \cos x$ ↔ $\int \cos x , dx = \sin x + C$
 > - $D_x(e^x) = e^x$ ↔ $\int e^x , dx = e^x + C$
 >
 
 > [!success] Puntos Clave para Recordar 🎯
-> 
+>
 > 1. **📋 Referencia rápida**: Esta tabla es para consulta inmediata durante problemas
 > 2. **🔗 Complemento**: Funciona mejor junto con tus notas teóricas existentes
 > 3. **⚡ Memorización**: Las 13 fórmulas básicas son esenciales
@@ -165,30 +173,38 @@ dg-publish: true
 
 ---
 
-## Referencias
+## 📚 Referencias
 
 > [!quote] Notas Relacionadas
-> 
+>
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]]
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]]
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada.md|02 - Interpretación Geométrica de la Derivada.md]]
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas).md|04 - Integrales Notables (Fórmulas Directas).md]]
 
-## Notas Recomendadas
+## 🔗 Notas Recomendadas
 
 > [!info] Tus Notas de Derivadas
-> 
+>
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]] - Conceptos fundamentales
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]] - Demostraciones rigurosas
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada.md|02 - Interpretación Geométrica de la Derivada.md]] - Significado visual
 >
 
 > [!tip] Continuación del Tema
-> 
+>
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas).md|04 - Integrales Notables (Fórmulas Directas).md]] - Operación inversa
 > - [[Unidad 5 - Aplicaciones de la Derivada/II - Optimización/01 - Problemas de Optimización.md|01 - Problemas de Optimización.md]]
 
-![[Pasted image 20250823130623.png]]
+> [!info] 🖼️ Notas Recomendadas
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-13-reglas-dx.png]]
+>
+> **Se lee así:** Se ve una tabla enmarcada de trece filas, agrupadas por familias de funciones: algebraicas, exponenciales, logarítmicas y trigonométricas. Cada fila enfrenta la función en una columna con su derivada en la otra, y todas las igualdades están escritas con la notación de operador $D_x(f) = f'$. Debajo hay un pie que la presenta como referencia de consulta rápida.
+>
+> **Por qué importa:** Es tu chuleta para no improvisar: con la tabla a la vista pasas de la función al resultado sin memorizar de memoria, y la notación de operador te prepara para las reglas de composición.
+>
+> **Ejemplo:** En un parcial te piden derivar $f(x) = e^x + \sin x$: consultas la tabla, sumas las derivadas de cada parte y obtienes $f'(x) = e^x + \cos(x)$.
 ---
 
-**Tags:** #matemáticas #cálculo #derivadas #fórmulas-básicas #referencia-rápida #cálculo-diferencial #tabla-derivadas
+**Tags:** #MATG1045 #unidad4 #tabla-de-derivadas-basicas #matemáticas #cálculo #derivadas #fórmulas-básicas #referencia-rápida #cálculo-diferencial #tabla-derivadas

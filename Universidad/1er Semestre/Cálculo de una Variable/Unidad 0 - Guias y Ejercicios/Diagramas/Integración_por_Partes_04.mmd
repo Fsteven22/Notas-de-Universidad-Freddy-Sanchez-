@@ -1,0 +1,30 @@
+---
+title: "Integración_por_Partes_04"
+---
+flowchart TD
+    A["Método tabular con diagonales<br/>∫ u(x)·v(x) dx"]
+    B["Cada nodo toca al vecino<br/>de la fila siguiente<br/>en la otra columna"]
+    C1["+ f(x)  ⟍  ∫ g dx"]
+    C2["− f′(x)  ⟍  ∫∫ g dx"]
+    C3["+ f″(x)  ⟍  ∫∫∫ g dx"]
+    C4["− f‴(x)  ⟍  ∫∫∫∫ g dx"]
+    C5["± …  ⟍  …"]
+    C6["0  ⟍  fin de la cadena"]
+    RES["Resultado = Σ signo · fⁿ(x) ·<br/>∫∫∫ g(x) dx de la fila siguiente"]
+    A --> B
+    B --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    C4 --> C5
+    C5 --> C6
+    C6 --> RES
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style C1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C3 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C4 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C5 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C6 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style RES fill:#fff3e0,stroke:#ff9800,color:#4a2c00

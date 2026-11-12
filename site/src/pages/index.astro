@@ -1,6 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import MotionToggle from "../components/MotionToggle.astro";
 import vault from "../data/vault.json";
+import { todasLasFlashcards } from "../lib/flashcards.mjs";
 
 function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short" }).toLowerCase();
@@ -13,54 +16,99 @@ const coloresSem = {
   "3er-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
 };
 const sems = vault.semestres.filter((s) => s.id !== "raiz");
-const totalNotas = sems.reduce((n, s) => n + s.materias.reduce((m, x) => m + x.total, 0), 0);
+// OJO: el acumulador "n" tiene que usarse. Si el callback lo ignora,
+// reduce() se queda con el valor del ÚLTIMO semestre y la portada muestra
+// 181 notas / 5 materias / 113 PDFs en vez de 822 / 18 / 220.
+const totalNotas = sems.reduce(
+  (n, s) => n + s.materias.reduce((m, x) => m + x.total, 0),
+  0
+);
 const totalMaterias = sems.reduce((n, s) => n + s.materias.length, 0);
 const totalPdf = sems.reduce(
-  (n, s) => n + s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0)
-  , 0);
+  (n, s) => n + s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0),
+  0
+);
 
 const accent = (id) => coloresSem[id]?.c ?? "var(--color-nexus-blue)";
 const subEstado = (id) => coloresSem[id]?.t ?? "";
-const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
+
+// Tarjetas de repaso que ya vienen escritas en las notas
+const nTarjetas = todasLasFlashcards().length;
+
+// Franja de materias en loop infinito (marquee)
+const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
 ---
 
 <Base title="Neonotes · Apuntes ESPOL">
-  <div class="nx-aura" style="width:420px;height:420px;top:-120px;left:10%"></div>
-  <div class="nx-aura" style="width:300px;height:300px;top:120px;right:8%;opacity:.6"></div>
+  <div id="three-bg"></div>
+  <div class="nx-aura nx-aura--drift" style="width:420px;height:420px;top:-120px;left:10%"></div>
+  <div class="nx-aura nx-aura--drift nx-aura--slow" style="width:300px;height:300px;top:120px;right:8%;opacity:.6"></div>
 
-  <header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-    <div class="flex items-center gap-3">
-      <img src="/logo.svg" alt="Neonotes" width="40" height="40" class="size-10 rounded-xl" />
-      <div>
-        <p class="nx-brand-text font-semibold">Neonotes</p>
-        <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">REPOSITORIO PERSONAL · ESPOL</p>
-      </div>
-    </div>
-    <nav class="flex items-center gap-3">
-      <button class="nx-search-open nx-btn nx-btn-ghost" type="button">Buscar</button>
-    </nav>
-  </header>
+  <SiteHeader variant="portada" />
 
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-6 pt-14 pb-16">
-    <div class="nx-fade-up">
+    <div class="nx-hero-in nx-hero-in--delay-1">
       <span class="nx-badge">INGENIERÍA COMPUTACIONAL · ESPOL</span>
-      <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
-        Mis apuntes de carrera{" "}
-        <span class="nx-brand-text">en un solo lugar.</span>
+      <h1 class="mt-4 text-balance text-4xl font-black tracking-tight text-white sm:text-5xl">
+        ¿Tuviste el PDF y{" "}
+        <span class="nx-brand-text">no sabes por dónde empezar?</span>
       </h1>
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[#e5e7eb]">
-        Apuntes, diagramas, talleres y material de estudio organizados por semestre.
-        Consulta lo que necesites desde donde estés y descarga lo que quieras compartir.
+        Neonotes hace ese trabajo por ti: apuntes de ESPOL resumidos y ordenados por semestre, con
+        gráficos, fórmulas y búsqueda por temas. ¿Te los quieres llevar? Cada materia se baja en un ZIP.
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a class="nx-btn nx-btn-primary" href="#semestres">Explorar semestres</a>
-        <a class="nx-btn nx-btn-ghost" href="#recientes">Últimas notas</a>
+        <button class="nx-btn nx-btn-primary nx-search-open">
+          🔍 Buscar en apuntes
+        </button>
+        <a class="nx-btn nx-btn-ghost" href="/mapa/">Ver el mapa de la carrera</a>
+        <a class="nx-btn nx-btn-ghost" href="#semestres">Explorar semestres</a>
       </div>
+      {/* Los distintivos: lo que el sitio ya hace, dicho en tres palabras. */}
+      <ul class="nx-hero-points">
+        <li>Búsqueda por temas</li>
+        <li>Gráficos y fórmulas</li>
+        <li>ZIP por materia</li>
+      </ul>
+      {
+        nTarjetas > 0 && (
+          <a href="/estudio/" class="nx-hero-study">
+            <span class="nx-hero-study__n">{nTarjetas}</span>
+            tarjetas de repaso esperando en tus notas → prepárate con ellas
+          </a>
+        )
+      }
       <div class="nx-bar mt-8 max-w-md"></div>
       <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
-        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} BLOQUES
+        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} SEMESTRES
       </p>
+    </div>
+  </section>
+
+  <!-- Pasos rápidos -->
+  <section class="mx-auto max-w-6xl px-6 pb-10">
+    <p class="nx-section-title mb-6">Cómo empezar</p>
+    <div class="grid gap-6 sm:grid-cols-3">
+      {[
+        { n: "1", t: "Elige un semestre", d: "Preuniversitario, 1ro, 2do o 3ro de carrera." },
+        { n: "2", t: "Abre una materia", d: "Cada materia tiene sus notas organizadas por unidades." },
+        { n: "3", t: "Lee una nota", d: "Usa el índice de la nota para saltar al apartado que necesitas." },
+      ].map((s, i) => (
+        <div
+          class="nx-card !py-6 text-center border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]"
+          data-nx-reveal
+          style={`--nx-reveal-delay:${(i + 1) * 80}ms`}
+        >
+          <p class="font-mono text-3xl font-bold tracking-tight text-[var(--color-nexus-green)] mb-2">
+            {s.n}
+          </p>
+          <h3 class="text-sm font-bold text-white mb-2">{s.t}</h3>
+          <p class="font-mono text-[11px] text-[var(--color-nexus-muted)] leading-relaxed">
+            {s.d}
+          </p>
+        </div>
+      ))}
     </div>
   </section>
 
@@ -72,15 +120,103 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
         { n: totalMaterias, l: "Materias", c: "blue" },
         { n: totalPdf, l: "PDFs", c: "cyan" },
         { n: sems.length, l: "Semestres", c: "gold" },
-      ].map((s) => (
-        <div class={`nx-card !py-5 text-center border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]`}>
+      ].map((s, i) => (
+        <div
+          class="nx-card !py-5 text-center border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]"
+          data-nx-reveal
+          style={`--nx-reveal-delay:${i * 60}ms`}
+        >
           <p
             class={`font-mono text-3xl font-bold tracking-tight ${
               { violet: "text-[var(--color-nexus-purple)]", blue: "text-[var(--color-nexus-blue)]", cyan: "text-[var(--color-nexus-cyan)]", gold: "text-[var(--color-nexus-gold)]" }[s.c]
-            }`}>{s.n}</p>
-          <p class="mt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)] uppercase">{s.l}</p>
+            }`}
+          >
+            {s.n}
+          </p>
+          <p class="mt-1 font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)] uppercase">
+            {s.l}
+          </p>
         </div>
       ))}
+    </div>
+  </section>
+
+  {/* Cinta de materias: se desplaza de derecha a izquierda sin cortes.
+      Se renderizan 4 grupos para que, incluso sin JS, la cinta cubra
+      el ancho de la pantalla; el script mide el grupo real y ajusta
+      el número de copias y la velocidad (constante) según el viewport. */}
+  <div class="nx-marquee" aria-hidden="true" data-nx-marquee>
+    <div class="nx-marquee__track">
+      {[0, 1, 2, 3].map(() => (
+        <div class="nx-marquee__group">
+          {marqueeItems.map((t) => <span class="nx-marquee__item">{t}</span>)}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Continuar leyendo (lo llena Base.astro desde localStorage) -->
+  <section id="continuar" class="mx-auto max-w-6xl px-6 pt-10 hidden">
+    <p class="nx-section-title mb-6">Continuar leyendo</p>
+    <a id="continuar-card" href="#" class="nx-card group block max-w-2xl" data-nx-reveal>
+      <div class="flex items-center justify-between gap-3">
+        <p id="continuar-title" class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-cyan)]"></p>
+        <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-cyan)]">→</span>
+      </div>
+      <p class="mt-3 font-mono text-[11px] text-[var(--color-nexus-muted)]">
+        <span id="continuar-mat" class="text-[var(--color-nexus-cyan)]"></span>
+        <span id="continuar-when"></span>
+      </p>
+    </a>
+  </section>
+
+  <!-- Atajos de teclado -->
+  <section class="mx-auto max-w-6xl px-6 py-6">
+    <div class="mb-6 flex flex-wrap items-baseline justify-between gap-3">
+      <p class="nx-section-title">Atajos</p>
+      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">
+        Pulsa <kbd class="nx-kbd">?</kbd> en cualquier página para verlos todos
+      </p>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        { k: ["g", "h"], t: "Inicio", d: "Vuelve a la portada desde cualquier nota." },
+        { k: ["g", "i"], t: "Índice", d: "Salta al índice de semestres." },
+        { k: ["g", "b"], t: "Buscar", d: "Abre el buscador por apartados." },
+        { k: ["/"], t: "Buscar rápido", d: "Abre el buscador con una sola tecla." },
+      ].map((s, i) => (
+        <div
+          class="nx-card !py-5 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]"
+          data-nx-reveal
+          style={`--nx-reveal-delay:${i * 70}ms`}
+        >
+          <div class="nx-kbd-seq mb-2">
+            {s.k.map((k, ki) => (
+              <>
+                {ki > 0 && <span class="nx-seq-then">luego</span>}
+                <kbd class="nx-kbd">{k}</kbd>
+              </>
+            ))}
+          </div>
+          <h3 class="text-sm font-bold text-white">{s.t}</h3>
+          <p class="mt-1 font-mono text-[11px] text-[var(--color-nexus-muted)] leading-relaxed">{s.d}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-4 font-mono text-[11px] text-[var(--color-nexus-muted)]">
+      Las de dos teclas se escriben seguidas: <kbd class="nx-kbd">g</kbd> y luego la otra. Al pulsar
+      <kbd class="nx-kbd">g</kbd> el sitio te avisa qué teclas faltan. También sirve
+      <kbd class="nx-kbd">ctrl</kbd> + <kbd class="nx-kbd">k</kbd> para buscar.
+    </p>
+    <div class="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] px-4 py-3">
+      <p class="font-mono text-[11px] leading-relaxed text-[var(--color-nexus-muted)]">
+        Si las animaciones no se ven, el sistema puede estar pidiendo "reducir movimiento".
+        <a href="?motion=1" class="text-[var(--color-nexus-cyan)] underline underline-offset-2 hover:text-white">
+          Forzar animaciones
+        </a>
+        .
+      </p>
+      <MotionToggle />
     </div>
   </section>
 
@@ -89,10 +225,18 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
     <p class="nx-section-title mb-6">Semestres</p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {
-        sems.map((s) => {
+        sems.map((s, i) => {
           return (
-            <a href={`/${s.id}/`} class="nx-card group relative block overflow-hidden !p-0">
-              <div class="h-1 w-full" style={`background: linear-gradient(90deg, ${accent(s.id)}, transparent);`} />
+            <a
+              href={`/${s.id}/`}
+              class="nx-card group relative block overflow-hidden !p-0"
+              data-nx-reveal
+              style={`--nx-reveal-delay:${i * 70}ms`}
+            >
+              <div
+                class="h-1 w-full"
+                style={`background: linear-gradient(90deg, ${accent(s.id)}, transparent);`}
+              />
               <div class="p-5">
                 <div class="flex items-start justify-between gap-2">
                   <h2 class="text-lg font-bold text-white">{s.title}</h2>
@@ -119,7 +263,7 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
                 </ul>
                 <div class="mt-4 flex justify-end">
                   <span
-                    class="translate-x-1 font-mono text-[11px] opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100"
+                    class="nx-scramble translate-x-1 font-mono text-[11px] opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100"
                     style={`color: ${accent(s.id)};`}
                   >
                     Ver →
@@ -133,16 +277,93 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
     </div>
   </section>
 
+  <!-- Todas las materias, con filtro por semestre -->
+  <section id="materias" class="mx-auto max-w-6xl px-6 py-10">
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+      <p class="nx-section-title">Todas las materias</p>
+      <div class="nx-chips" role="group" aria-label="Filtrar por semestre">
+        <button
+          type="button"
+          class="nx-chip is-active"
+          data-nx-filter="todas"
+          style="--accent:var(--color-nexus-purple); --accent-soft:rgba(170,102,255,0.10)"
+          aria-pressed="true"
+        >
+          Todas
+        </button>
+        {
+          sems.map((s) => (
+            <button
+              type="button"
+              class="nx-chip"
+              data-nx-filter={s.id}
+              style={`--accent:${accent(s.id)}; --accent-soft:rgba(255,255,255,0.05)`}
+              aria-pressed="false"
+            >
+              {s.title}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        sems.flatMap((s, si) =>
+          s.materias.map((m, i) => (
+            <a
+              href={`/${s.id}/${m.id}/`}
+              class="nx-card nx-mat-card group block !p-4"
+              data-nx-sem={s.id}
+              data-nx-reveal
+              style={`--nx-reveal-delay:${((si * 3 + i) % 6) * 50}ms`}
+            >
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-blue)]">
+                  {m.title}
+                </h3>
+                <span
+                  class="shrink-0 font-mono text-[10px]"
+                  style={`color:${accent(s.id)}`}
+                >
+                  {m.total}
+                </span>
+              </div>
+              <p class="mt-2 font-mono text-[10px] tracking-wider uppercase text-[var(--color-nexus-muted)]">
+                {s.title}
+                {m.pdfs?.length ? ` · ${m.pdfs.length} PDFs` : ""}
+              </p>
+            </a>
+          ))
+        )
+      }
+    </div>
+    <p
+      id="materias-empty"
+      class="hidden font-mono text-[11px] text-[var(--color-nexus-muted)]"
+    >
+      Sin materias en ese semestre.
+    </p>
+  </section>
+
   <!-- Recién actualizadas -->
   <section id="recientes" class="mx-auto max-w-6xl px-6 py-10 pb-24">
     <p class="nx-section-title mb-6">Recién actualizadas</p>
     <div class="grid gap-4 md:grid-cols-3">
       {
-        vault.recent.filter((r) => r.sem !== "raiz").map((r) => (
-          <a href={r.url} class="nx-card group block">
+        vault.recent.filter((r) => r.sem !== "raiz").map((r, i) => (
+          <a
+            href={r.url}
+            class="nx-card group block"
+            data-nx-reveal
+            style={`--nx-reveal-delay:${(i % 3) * 70}ms`}
+          >
             <div class="flex items-center justify-between">
-              <p class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-blue)]">{r.title}</p>
-              <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-blue)]">→</span>
+              <p class="text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-blue)]">
+                {r.title}
+              </p>
+              <span class="shrink-0 font-mono text-xs text-[var(--color-nexus-muted)] transition-all group-hover:translate-x-0.5 group-hover:text-[var(--color-nexus-blue)]">
+                →
+              </span>
             </div>
             <p class="mt-3 font-mono text-[11px] text-[var(--color-nexus-muted)]">
               <span class="text-[var(--color-nexus-blue)]">{r.matTitle}</span> · {fecha(r.mtime)}
@@ -153,10 +374,403 @@ const share = (n) => Math.round((n / Math.max(1, totalNotas)) * 100);
     </div>
   </section>
 
-  <footer class="border-t border-[rgba(255,255,255,0.06)]">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">⚡ NEONOTES · STEVEN SÁNCHEZ</p>
-      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">built with Astro</p>
-    </div>
-  </footer>
+  {/* El pie de página (marca, avisos, fecha, atajos y movimiento) lo
+      monta Base.astro: ahora todas las páginas terminan igual. */}
+
+  <script is:inline type="module">
+    import * as THREE from "/three.module.js";
+
+    (function(){
+      // Preferencia de movimiento (ver Base.astro): "auto" sigue al sistema,
+      // "on"/"off" la fuerzan el usuario (?motion=1|0) o el panel de atajos.
+      // Se consulta en caliente y no como constante capturada al cargar.
+      function nxReduced(){
+        var m = window.__nxMotion;
+        if (m && typeof m.effective === "function") return !m.effective();
+        return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      }
+      // Cleanup de la escena actual (se registra una sola vez)
+      var stopScene = null;
+
+      // ── Escena Three.js (diferida a idle; se reinicia en cada visita) ──
+      function startScene(){
+        var container = document.getElementById("three-bg");
+        if (!container || container.dataset.nxStarted) return;
+        container.dataset.nxStarted = "1";
+        if (nxReduced()) { container.style.display = "none"; return; }
+        var start = function(){
+          // Si se navegó antes de que entrara el idle, el contenedor ya no
+          // está en el árbol: no arrancar la escena (evita un bucle huérfano).
+          if (!container.isConnected) return;
+          try {
+            initThree(container);
+          } catch(e){
+            console.warn("Three.js no se pudo inicializar:", e);
+            container.style.display = "none";
+          }
+        };
+        if (window.requestIdleCallback) requestIdleCallback(start, { timeout: 2500 });
+        else setTimeout(start, 1200);
+      }
+
+      function initThree(container){
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+        camera.position.z = 30;
+
+        var canvas = document.createElement("canvas");
+        canvas.className = "three-bg-canvas";
+        canvas.style.position = "fixed";
+        canvas.style.top = "0";
+        canvas.style.left = "0";
+        canvas.style.width = "100vw";
+        canvas.style.height = "100vh";
+        canvas.style.zIndex = "-1";
+        canvas.style.pointerEvents = "none";
+        container.appendChild(canvas);
+
+        var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // Partículas: menos y más pequeñas que antes. El fondo tiene que
+        // acompañar, no ser protagonista: 1.500 puntos grandes se leían
+        // como "ruido" por encima del contenido.
+        var particleCount = 800;
+        var positions = new Float32Array(particleCount * 3);
+        var originals = new Float32Array(particleCount * 3);
+
+        for (var i = 0; i < particleCount; i++) {
+          positions[i * 3] = (Math.random() - 0.5) * 80;
+          positions[i * 3 + 1] = (Math.random() - 0.5) * 80;
+          positions[i * 3 + 2] = (Math.random() - 0.5) * 40;
+          originals[i * 3] = positions[i * 3];
+          originals[i * 3 + 1] = positions[i * 3 + 1];
+          originals[i * 3 + 2] = positions[i * 3 + 2];
+        }
+
+        var geometry = new THREE.BufferGeometry();
+        geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+        var material = new THREE.PointsMaterial({
+          color: 0x00ff88,
+          size: 0.11,
+          sizeAttenuation: true,
+          transparent: true,
+          opacity: 0.42,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+        });
+
+        var particles = new THREE.Points(geometry, material);
+        scene.add(particles);
+
+        // ── Líneas de constelación: conecta nodos cercanos con una red ──
+        var nodeStep = 20;                 // cada 20ava partícula es "nodo"
+        var maxLines = 260;
+        var linkDist2 = 15 * 15;           // distancia² máxima de conexión
+        var linePositions = new Float32Array(maxLines * 6);
+        var lineGeo = new THREE.BufferGeometry();
+        lineGeo.setAttribute("position", new THREE.BufferAttribute(linePositions, 3));
+        var lineMat = new THREE.LineBasicMaterial({
+          color: 0x4da6ff,
+          transparent: true,
+          opacity: 0.09,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+        });
+        var constellation = new THREE.LineSegments(lineGeo, lineMat);
+        constellation.frustumCulled = false;
+        scene.add(constellation);
+        var nodes = [];
+        for (var ni = 0; ni < particleCount; ni += nodeStep) nodes.push(ni);
+
+        var mouse = new THREE.Vector2(-200, -200);
+        var raycaster = new THREE.Raycaster();
+        var timer = new THREE.Timer();
+        var animationId;
+        // El raycast contra 1500 puntos es lo más caro del bucle:
+        // se recalcula solo cada 6 frames (el resto usa el último resultado).
+        var frame = 0;
+        var lastHit = null;
+
+        window.addEventListener("mousemove", function(e){
+          mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+          mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+        });
+
+        window.addEventListener("resize", function(){
+          camera.aspect = container.clientWidth / container.clientHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(container.clientWidth, container.clientHeight);
+        });
+
+        function animate(){
+          animationId = requestAnimationFrame(animate);
+          timer.update();
+          var elapsed = timer.getElapsed();
+
+          // Giro más lento: el campo de puntos acompaña el scroll en vez
+          // de girar delante.
+          particles.rotation.x = elapsed * 0.035;
+          particles.rotation.y = elapsed * 0.02;
+
+          if (frame % 6 === 0) {
+            raycaster.setFromCamera(mouse, camera);
+            lastHit = raycaster.intersectObject(particles);
+          }
+          frame++;
+          var intersects = lastHit;
+
+          var pos = geometry.attributes.position.array;
+          for (var i = 0; i < particleCount; i++) {
+            var i3 = i * 3;
+            var x = originals[i3];
+            var y = originals[i3 + 1];
+            var z = originals[i3 + 2];
+
+            x += Math.sin(elapsed + i) * 0.5;
+            y += Math.cos(elapsed * 0.7 + i) * 0.5;
+            z += Math.sin(elapsed * 0.5 + i) * 0.3;
+
+            if (intersects.length > 0) {
+              var d = intersects[0].distance;
+              if (d < 20) {
+                var force = (20 - d) / 20;
+                x += (mouse.x * 10 - x) * force * 0.1;
+                y += (-mouse.y * 10 - y) * force * 0.1;
+              }
+            }
+
+            pos[i3] = x;
+            pos[i3 + 1] = y;
+            pos[i3 + 2] = z;
+          }
+          geometry.attributes.position.needsUpdate = true;
+
+          // Red de constelación: conecta nodos cuya distancia sea menor al umbral
+          var lc = 0;
+          for (var a = 0; a < nodes.length && lc < maxLines; a++) {
+            var ia = nodes[a] * 3;
+            for (var b = a + 1; b < nodes.length && lc < maxLines; b++) {
+              var ib = nodes[b] * 3;
+              var ddx = pos[ia] - pos[ib];
+              var ddy = pos[ia + 1] - pos[ib + 1];
+              var ddz = pos[ia + 2] - pos[ib + 2];
+              var d2 = ddx * ddx + ddy * ddy + ddz * ddz;
+              if (d2 < linkDist2) {
+                var lo = lc * 6;
+                linePositions[lo] = pos[ia];
+                linePositions[lo + 1] = pos[ia + 1];
+                linePositions[lo + 2] = pos[ia + 2];
+                linePositions[lo + 3] = pos[ib];
+                linePositions[lo + 4] = pos[ib + 1];
+                linePositions[lo + 5] = pos[ib + 2];
+                lc++;
+              }
+            }
+          }
+          lineGeo.setDrawRange(0, lc * 2);
+          lineGeo.attributes.position.needsUpdate = true;
+
+          renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Limpieza al salir de la portada (se registra una sola vez)
+        stopScene = function(){
+          if (animationId) cancelAnimationFrame(animationId);
+          animationId = null;
+          renderer.dispose();
+          geometry.dispose();
+          lineGeo.dispose();
+          material.dispose();
+          lineMat.dispose();
+          stopScene = null;
+        };
+      }
+
+      // ── SplitText oficial: texto letra por letra en el hero ──
+      function heroSplit(){
+        var heroTitle = document.querySelector(".nx-hero-in h1");
+        if (!heroTitle || heroTitle.dataset.nxSplit) return;
+        if (nxReduced() || !window.SplitText || typeof window.gsap === "undefined") return;
+        heroTitle.dataset.nxSplit = "1";
+        try {
+          // `ignore`: el <span> del degradado NO se parte. Si se partiese,
+          // cada letra sería un div inline-block y el `background-clip: text`
+          // dejaría de pintarse detrás: con el color transparente, la frase
+          // "no sabes por dónde empezar?" desaparecía al activar animaciones.
+          var split = new window.SplitText(heroTitle, {
+            type: "chars,words",
+            charsClass: "nx-char",
+            ignore: ".nx-brand-text"
+          });
+          // Comprobación de integridad: si el titular se quedó sin texto
+          // (por ejemplo, si una versión futura de SplitText parte el span
+          // pese al `ignore`), se deshace la partición y el titular se queda
+          // como texto normal, siempre visible.
+          var marca = heroTitle.querySelector(".nx-brand-text");
+          var antes = heroTitle.textContent || "";
+          if (!antes.trim() || (marca && !marca.textContent.trim())) {
+            split.revert();
+            return;
+          }
+          gsap.from(split.chars, {
+            yPercent: 110, opacity: 0, duration: 0.7,
+            stagger: 0.022, ease: "power4.out", delay: 0.35
+          });
+        } catch(e){
+          console.warn("SplitText falló, el h1 queda visible:", e);
+        }
+      }
+
+      // La portada puede cargarse de nuevo tras navegar con el ClientRouter:
+      // el script no se re-ejecuta, así que arrancamos desde astro:page-load.
+      function bootIndex(){
+        if (stopScene) { stopScene(); }
+        startScene();
+        heroSplit();
+      }
+      document.addEventListener("astro:before-swap", function(){
+        if (stopScene) stopScene();
+      });
+      document.addEventListener("astro:page-load", bootIndex);
+      bootIndex();
+    })();
+  </script>
+
+  <script is:inline>
+    // Filtro de materias por semestre + tarjeta "Continuar leyendo".
+    // is:inline: se ejecuta en cada visita a la portada (el ClientRouter
+    // deduplica por contenido, así que usamos astro:page-load abajo).
+    (function(){
+      function nxIndexUI(){
+        // ── Filtro por semestre ──
+        var chips = document.querySelectorAll("[data-nx-filter]");
+        var cards = document.querySelectorAll(".nx-mat-card");
+        var empty = document.getElementById("materias-empty");
+        chips.forEach(function(chip){
+          if (chip.dataset.nxBound) return;
+          chip.dataset.nxBound = "1";
+          chip.addEventListener("click", function(){
+            var f = chip.getAttribute("data-nx-filter");
+            chips.forEach(function(c){
+              var on = c === chip;
+              c.classList.toggle("is-active", on);
+              c.setAttribute("aria-pressed", on ? "true" : "false");
+            });
+            var visible = 0;
+            cards.forEach(function(card){
+              var show = f === "todas" || card.getAttribute("data-nx-sem") === f;
+              card.classList.toggle("is-filtered-out", !show);
+              if (show) visible++;
+            });
+            if (empty) empty.classList.toggle("hidden", visible > 0);
+          });
+        });
+
+        // ── Continuar leyendo (localStorage "nx-last") ──
+        var sec = document.getElementById("continuar");
+        var cardEl = document.getElementById("continuar-card");
+        if (sec && cardEl && !sec.dataset.nxBound) {
+          sec.dataset.nxBound = "1";
+          try {
+            var raw = localStorage.getItem("nx-last");
+            if (raw) {
+              var d = JSON.parse(raw);
+              if (d && d.url && d.title) {
+                cardEl.setAttribute("href", d.url);
+                document.getElementById("continuar-title").textContent = d.title;
+                document.getElementById("continuar-mat").textContent = d.mat || "";
+                var days = Math.floor((Date.now() - (d.at || 0)) / 86400000);
+                document.getElementById("continuar-when").textContent =
+                  d.mat ? " · " + (days <= 0 ? "hoy" : "hace " + days + " d") :
+                  (days <= 0 ? " · hoy" : " · hace " + days + " d");
+                sec.classList.remove("hidden");
+                // La tarjeta estaba oculta al crearse su ScrollTrigger:
+                // hay que remedir para que el reveal no se quede colgado.
+                if (window.ScrollTrigger) {
+                  requestAnimationFrame(function(){ ScrollTrigger.refresh(); });
+                }
+              }
+            }
+          } catch(e){}
+        }
+      }
+      document.addEventListener("astro:page-load", nxIndexUI);
+      nxIndexUI();
+    })();
+  </script>
+
+  <script is:inline>
+    // ── Cinta de materias ──────────────────────────────────────
+    // El grupo de materias se repite las veces necesarias para que la
+    // cinta nunca se quede corta en pantallas anchas: con 18 materias
+    // el grupo es más estrecho que un monitor grande y, al desplazarse,
+    // aparecía un hueco vacío al final del recorrido.
+    //
+    // Aquí se mide el ancho real del grupo (depende de la fuente y del
+    // ancho de la ventana) y se calculan:
+    //   · cuántas copias hacen falta para cubrir el viewport + 1 grupo
+    //   · el desplazamiento por ciclo (un grupo entero → bucle perfecto)
+    //   · la duración, para que la velocidad sea siempre la misma
+    //     (unos 42 px/s) y no depends del número de copias.
+    (function(){
+      var SPEED = 32; // px/s
+
+      function nxMarquee(){
+        var root = document.querySelector("[data-nx-marquee]");
+        if (!root) return;
+        var track = root.querySelector(".nx-marquee__track");
+        if (!track) return;
+        var groups = track.querySelectorAll(".nx-marquee__group");
+        if (!groups.length) return;
+
+        var groupWidth = groups[0].getBoundingClientRect().width;
+        if (!groupWidth) return; // aún sin medir (fuente cargando)
+
+        // Copias necesarias: el viewport entero más un grupo de sobra,
+        // para que al terminar el ciclo siempre haya contenido a la vista.
+        var need = Math.ceil(window.innerWidth / groupWidth) + 2;
+
+        // Reconstruye la cinta con el número de copias justo.
+        if (groups.length !== need) {
+          var template = groups[0].innerHTML;
+          var html = "";
+          for (var i = 0; i < need; i++){
+            html += '<div class="nx-marquee__group">' + template + "</div>";
+          }
+          track.innerHTML = html;
+          // Vuelve a medir: el ancho del grupo no cambia, pero el
+          // desplazamiento sí depende de cuántas copias hay.
+        }
+
+        // El ciclo desplaza exactamente un grupo: al ser todos iguales,
+        // el empalme es invisible.
+        root.style.setProperty("--nx-marquee-shift", groupWidth + "px");
+        root.style.setProperty("--nx-marquee-duration", (groupWidth / SPEED).toFixed(1) + "s");
+      }
+
+      // Se vuelve a medir al cambiar el tamaño de la ventana.
+      var t = null;
+      function onResize(){
+        clearTimeout(t);
+        t = setTimeout(nxMarquee, 150);
+      }
+
+      if (!window.__nxMarqueeBound) {
+        window.__nxMarqueeBound = 1;
+        window.addEventListener("resize", onResize);
+        document.addEventListener("astro:page-load", nxMarquee);
+      }
+      nxMarquee();
+      // La fuente puede tardar: se vuelve a medir cuando esté lista.
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(nxMarquee).catch(function(){});
+      }
+    })();
+  </script>
+
 </Base>

@@ -1,0 +1,28 @@
+---
+title: "03_-_Propiedades_de_la_Sumatoria_01"
+---
+flowchart TD
+    A["Notación Sigma<br/>Σ de i=a hasta b de f(i)"]
+    B["Índice i<br/>variable muda"]
+    C["Límite inferior a"]
+    D["Límite superior b"]
+    E["Término general f(i)"]
+    F["Casos especiales"]
+    F1["a mayor que b → suma vacía = 0"]
+    F2["a = b → un solo término f(i)"]
+    F3["Índice negativo permitido<br/>ej: i de −2 a 3"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    F --> F1
+    F --> F2
+    F --> F3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010

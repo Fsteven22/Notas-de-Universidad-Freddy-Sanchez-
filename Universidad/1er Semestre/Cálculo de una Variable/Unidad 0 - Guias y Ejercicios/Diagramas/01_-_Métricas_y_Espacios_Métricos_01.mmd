@@ -1,0 +1,21 @@
+graph TD
+    A[Espacio Métrico X, d] --> B[Componentes]
+    A --> C[Bolas]
+    
+    B --> B1[Conjunto X<br/>elementos/puntos]
+    B --> B2[Métrica d<br/>función de distancia]
+    
+    C --> C1[Bola Abierta<br/>B x₀, r<br/>d x, x₀ menos r]
+    C --> C2[Bola Cerrada<br/>B̄ x₀, r<br/>d x, x₀ ≤ r]
+    
+    C1 --> D1[En ℝ: a, b<br/>sin extremos]
+    C2 --> D2[En ℝ: a, b<br/>con extremos]
+    
+    C1 --> E1[En ℝ²: disco<br/>sin circunferencia]
+    C2 --> E2[En ℝ²: disco<br/>con circunferencia]
+    
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+    style C1 fill:#bbdefb
+    style C2 fill:#c5e1a5

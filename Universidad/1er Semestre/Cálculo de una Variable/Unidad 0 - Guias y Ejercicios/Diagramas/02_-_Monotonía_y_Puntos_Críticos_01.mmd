@@ -1,0 +1,44 @@
+---
+title: "02 - Monotonía y puntos críticos"
+---
+flowchart TD
+    A["Función f(x)"]
+    B["Derivar: obtener f'(x)"]
+    C["Resolver f'(x) = 0 y detectar donde f' no existe"]
+    D["Puntos críticos del dominio"]
+    E["Dividir el dominio en intervalos"]
+    F["Evaluar el signo de f'(x) en cada intervalo"]
+    G["Conclusión"]
+    H["f'(x) > 0 en el intervalo"]
+    I["f'(x) < 0 en el intervalo"]
+    J["f'(x) = 0 en el punto crítico"]
+    K["Clasificación del punto crítico"]
+    L["Máximo local: f' pasa de + a −"]
+    M["Mínimo local: f' pasa de − a +"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    G --> I
+    G --> J
+    H --> K
+    I --> K
+    K --> L
+    K --> M
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style F fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style I fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style J fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style K fill:#ffebee,stroke:#e53935,color:#4a1010
+    style L fill:#e0f2f1,stroke:#009688,color:#00332e
+    style M fill:#e0f2f1,stroke:#009688,color:#00332e

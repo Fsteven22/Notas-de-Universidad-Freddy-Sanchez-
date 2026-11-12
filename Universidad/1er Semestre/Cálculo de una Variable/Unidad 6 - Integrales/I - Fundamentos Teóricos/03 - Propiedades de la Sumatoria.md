@@ -1,17 +1,19 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad6, propiedades-de-la-sumatoria, matemáticas, sumatoria, sigma, series, límites, cálculo, integral-riemann, análisis, álgebra]
 ---
 
-# Propiedades de la Sumatoria
+# 🔄 Propiedades de la Sumatoria
 
 >[!quote] *"La sumatoria es el lenguaje matemático que nos permite expresar la acumulación y totalización de manera elegante y precisa. Sus propiedades no son solo reglas algebraicas, sino herramientas poderosas que simplifican cálculos complejos y revelan patrones ocultos en secuencias y series."*
 >
 
 > [!info]+ Definición y Notación Fundamental 📏
+>
 > La **sumatoria** es una operación matemática que representa la suma de una secuencia de términos. Se denota con la letra griega sigma (Σ) y tiene la forma general:
-> 
+>
 > **$$\sum_{i=a}^{b} f(i) = f(a) + f(a+1) + f(a+2) + \cdots + f(b)$$**
-> 
+>
 > Donde:
 > - **Σ** = Símbolo de sumatoria
 > - **i** = Índice de suma (variable dummy)
@@ -21,9 +23,17 @@ dg-publish: true
 >
 
 > [!note] Componentes de la Notación Sigma 📊
+>
 > ### Elementos Básicos
-> ![[Diagramas/03_-_Propiedades_de_la_Sumatoria_01.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Propiedades_de_la_Sumatoria_01.svg]]
+>
+> **Se lee así:** como una caja central de la que salen cinco flechas hacia sus piezas: el índice, el límite inferior, el límite superior y el término general, más una quinta flecha hacia un bloque de casos especiales, que a su vez se abre en tres ramas con los escenarios de límite inferior mayor, igual al superior, y de índice negativo.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa la *sumatoria* de sus piezas y luego te avisa de los tres casos límite que más confunden. Te evita errores al contar términos y al cambiar el índice sin cuidar la coherencia de los límites.
+>
+> **Ejemplo:** Para $\sum_{i=1}^{5} 7$ hay $5 - 1 + 1 = 5$ términos y el resultado es $35$; en cambio, una suma con $a > b$ vale $0$.
+>
 > ### Casos Especiales
 > - **Suma vacía**: Si a > b, entonces Σ = 0
 > - **Un solo término**: Si a = b, entonces Σ = f(a)
@@ -31,54 +41,58 @@ dg-publish: true
 >
 
 > [!tip] Propiedades Fundamentales ⚖️
+>
 > ### Propiedad 1: Linealidad (Factor Constante)
 > **$$\sum_{i=a}^{b} c \cdot f(i) = c \sum_{i=a}^{b} f(i)$$**
-> 
+>
 > > Una constante puede sacarse fuera de la sumatoria
-> 
+>
 > **Ejemplo:** $\sum_{i=1}^{4} 3i = 3\sum_{i=1}^{4} i = 3(1+2+3+4) = 3 \cdot 10 = 30$
-> 
+>
 > ### Propiedad 2: Distributividad (Suma de Funciones)
 > **$$\sum_{i=a}^{b} [f(i) + g(i)] = \sum_{i=a}^{b} f(i) + \sum_{i=a}^{b} g(i)$$**
-> 
+>
 > > La suma de sumatorias es igual a la sumatoria de la suma
-> 
+>
 > ### Propiedad 3: Diferencia de Funciones
 > **$$\sum_{i=a}^{b} [f(i) - g(i)] = \sum_{i=a}^{b} f(i) - \sum_{i=a}^{b} g(i)$$**
-> 
+>
 > ### Propiedad 4: Suma de Constantes
 > **$$\sum_{i=a}^{b} c = c(b-a+1)$$**
-> 
+>
 > > Una constante sumada n veces es igual a c×n
-> 
+>
 > **Ejemplo:** $\sum_{i=1}^{5} 7 = 7 \cdot (5-1+1) = 7 \cdot 5 = 35$
 >
 
 > [!example] Propiedades Avanzadas y Manipulaciones 🧮
+>
 > ### Propiedad 5: Separación de Sumatorias
 > **$$\sum_{i=a}^{c} f(i) = \sum_{i=a}^{b} f(i) + \sum_{i=b+1}^{c} f(i)$$** (donde a ≤ b < c)
-> 
+>
 > ### Propiedad 6: Cambio de Índice
 > **$$\sum_{i=a}^{b} f(i) = \sum_{j=a+k}^{b+k} f(j-k)$$**
-> 
+>
 > > Cambiar la variable índice por j = i + k
-> 
+>
 > **Ejemplo:** 
 > ```
 > Σ(i=1 to 3) i² = Σ(j=2 to 4) (j-1)²
 > 1² + 2² + 3² = (2-1)² + (3-1)² + (4-1)² = 1² + 2² + 3²
 > ```
-> 
+>
 > ### Propiedad 7: Inversión del Orden
 > **$$\sum_{i=a}^{b} f(i) = \sum_{i=a}^{b} f(a+b-i)$$**
-> 
+>
 > ### Propiedad 8: Sumatorias Dobles
 > **$$\sum_{i=1}^{n} \sum_{j=1}^{m} f(i,j) = \sum_{j=1}^{m} \sum_{i=1}^{n} f(i,j)$$**
-> 
+>
 > > Se puede cambiar el orden de sumación
 >
 > [!abstract] Fórmulas de Sumatorias Importantes 📚
+>
 > ### Sumatorias Básicas Fundamentales
+>
 > | Fórmula | Expresión | Resultado |
 > |---------|-----------|-----------|
 > | **Suma de enteros** | $\sum_{i=1}^{n} i$ | $\frac{n(n+1)}{2}$ |
@@ -86,27 +100,35 @@ dg-publish: true
 > | **Suma de cubos** | $\sum_{i=1}^{n} i^3$ | $\left[\frac{n(n+1)}{2}\right]^2$ |
 > | **Suma geométrica** | $\sum_{i=0}^{n} r^i$ | $\frac{1-r^{n+1}}{1-r}$ (r≠1) |
 > | **Suma de constantes** | $\sum_{i=1}^{n} c$ | $c \cdot n$ |
-> 
+>
 > ### Verificación con Ejemplo
 > ```
 > Para n = 4:
 > Σ(i=1 to 4) i = 1+2+3+4 = 10
 > Fórmula: 4(4+1)/2 = 4·5/2 = 10 ✓
-> 
+>
 > Σ(i=1 to 4) i² = 1+4+9+16 = 30
 > Fórmula: 4(4+1)(2·4+1)/6 = 4·5·9/6 = 30 ✓
 > ```
 >
 
 > [!success] Aplicaciones en Cálculo 🎯
+>
 > ### En Límites y Definición de Integral
-> ![[Diagramas/03_-_Propiedades_de_la_Sumatoria_02.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Propiedades_de_la_Sumatoria_02.svg]]
+>
+> **Se lee así:** Es una **cadena recta de rectángulos** sin bifurcaciones: se parte de la aplicación en la suma de Riemann, se particiona el intervalo, se calculan el ancho y el punto de evaluación, se obtiene el aporte de cada tramo, se suman todos los aportes y, al pasar al límite, se llega a la integral.
+>
+> **Por qué importa:** Fíjate en que la integral definida aparece como **el límite de un proceso de aproximación**, no como un misterio. Esto te sirve para entender por qué el método numérico y el método por antiderivadas llegan al mismo resultado.
+>
+> **Ejemplo:** Para aproximar $\int_0^1 x^2 dx$ con $n = 2$, el diagrama da $\Delta x = 0.5$ y $x_i = 0.5, 1$, y la suma $0.5(0.25 + 1) = 0.625$ se acerca al valor exacto $\frac{1}{3}$.
+>
 > ### En Cálculo Integral
 > - **Sumas de Riemann**: $\int_a^b f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} fx_i\Delta x$
 > - **Área bajo curvas**: Aproximación mediante rectángulos
 > - **Método del trapecio**: Integración numérica
-> 
+>
 > ### En Series y Sucesiones
 > - **Series aritméticas**: Suma de progresiones
 > - **Series geométricas**: Convergencia y divergencia
@@ -114,12 +136,13 @@ dg-publish: true
 >
 
 > [!warning] Errores Comunes y Precauciones ⚠️
+>
 > ### Errores Frecuentes
 > - **🔄 Confundir límites**: Verificar si incluyen o excluyen los extremos
 > - **📐 Cambio de índice incorrecto**: Mantener coherencia en los límites
 > - **➕ Distributividad**: No aplicar a productos: Σ[f(i)·g(i)] ≠ Σf(i)·Σg(i)
 > - **🔢 Índices negativos**: Cuidado con el sentido y número de términos
-> 
+>
 > ### Verificaciones Importantes
 > - **📊 Contar términos**: (b-a+1) términos en total
 > - **🔍 Casos límite**: a = b, a > b (suma vacía)
@@ -127,7 +150,8 @@ dg-publish: true
 > - **🧮 Cálculo directo**: Comprobar fórmulas con ejemplos simples
 >
 
-> [!summary]+ Resumen de Propiedades Clave 📋
+> [!abstract]+ Resumen de Propiedades Clave 📋
+>
 > ### Propiedades Esenciales
 > ```
 > Linealidad:           Σ c·f(i) = c·Σ f(i)
@@ -136,7 +160,7 @@ dg-publish: true
 > Separación:           Σ(a→c) = Σ(a→b) + Σ(b+1→c)
 > Cambio de índice:     Σ f(i) = Σ f(j-k) con j=i+k
 > ```
-> 
+>
 > ### Fórmulas Fundamentales para Memorizar
 > ```
 > Σ i = n(n+1)/2
@@ -146,11 +170,12 @@ dg-publish: true
 > ```
 >
 > [!brain]+ Técnica de Memorización: SUMA-SIGMA 🧠
+>
 > **S** - Sigma es el símbolo de sumatoria
 > **U** - Unir términos desde límite inferior
 > **M** - Multiplicar constantes se sacan fuera
 > **A** - Agregar funciones se distribuye
-> 
+>
 > **S** - Separar intervalos es posible
 > **I** - Índice se puede cambiar manteniendo coherencia
 > **G** - Geométrica tiene fórmula especial
@@ -159,6 +184,7 @@ dg-publish: true
 >
 
 > [!success] Puntos Clave para Recordar 🎯
+>
 > 1. **📏 Notación estándar**: Σ con límites e índice claramente definidos
 > 2. **⚖️ Linealidad**: Constantes salen, sumas se distribuyen
 > 3. **🔄 Flexibilidad de índices**: Se pueden cambiar manteniendo coherencia
@@ -168,23 +194,26 @@ dg-publish: true
 
 ---
 
-## Referencias
+## 📚 Referencias
 
 > [!quote] Notas Relacionadas
+>
 > - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]]
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]]
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]]
 
-## Notas Recomendadas
+## 🔗 Notas Recomendadas
 
 > [!info] Prerrequisitos
+>
 > - [[1er Semestre/Fundamentos de Programación/Módulo 2 - Tipos de datos, operadores, cadenas, listas y aleatoriedad/Módulo 2.1 Variables y Tipos de Datos.md]] (conceptos de índices)
 > - [[01 - Funciones]] (concepto de función)
 > - Álgebra básica
 >
 
 > [!tip] Continuación del Tema
+>
 > - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]]
 > - Series y Convergencia
@@ -192,4 +221,4 @@ dg-publish: true
 
 ---
 
-**Tags:** #matemáticas #sumatoria #sigma #series #límites #cálculo #integral-riemann #análisis #álgebra #fórmulas-básicas
+**Tags:** #MATG1045 #unidad6 #propiedades-de-la-sumatoria #matemáticas #sumatoria #sigma #series #límites #cálculo #integral-riemann #análisis #álgebra #fórmulas-básicas

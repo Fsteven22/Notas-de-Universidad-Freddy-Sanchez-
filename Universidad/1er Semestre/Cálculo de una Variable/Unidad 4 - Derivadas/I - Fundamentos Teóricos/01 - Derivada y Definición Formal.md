@@ -1,21 +1,24 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad4, derivada-y-definicion-formal, calculo, derivadas, limites, regla-cadena, optimizacion, fisica-matematica, razones-cambio, matematicas/calculo/derivadas, fundamentos/limites]
 ---
 
-# Derivadas 📈
+# 📈 Derivadas
 
-> [!quote] _"La derivada es el concepto más importante de todo el cálculo. Es la velocidad instantánea, la pendiente de la tangente, la razón de cambio... es el lenguaje con el que la naturaleza describe el cambio."_ - Gilbert Strang
+> [!quote] 💬 Cita de Gilbert Strang
+>
+> _"La derivada es el concepto más importante de todo el cálculo. Es la velocidad instantánea, la pendiente de la tangente, la razón de cambio... es el lenguaje con el que la naturaleza describe el cambio."_
 
 ---
 
 ## 📋 Conceptos Fundamentales
 
 > [!info] 🎯 **Definición de Derivada** La derivada de una función f(x) en un punto x es el límite de la razón de cambio promedio cuando el intervalo se aproxima a cero.
-> 
+>
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-> 
+>
 > **Interpretaciones principales:**
-> 
+>
 > - 📐 **Geométrica:** Pendiente de la recta tangente
 > - 🏃 **Física:** Velocidad instantánea (razón de cambio)
 > - 📊 **Algebraica:** Límite de cocientes de diferencias
@@ -23,7 +26,7 @@ dg-publish: true
 ## 🔢 Notaciones de la Derivada
 
 > [!tip] ✍️ **Diferentes Formas de Escribir Derivadas** Para una función y = f(x):
-> 
+>
 > |Notación|Descripción|Uso Principal|
 > |---|---|---|
 > |f'(x)|Notación de Lagrange|Matemáticas puras|
@@ -31,36 +34,36 @@ dg-publish: true
 > |$\dot{y}$|Notación de Newton|Física (tiempo)|
 > |Df(x)|Notación de operador|Análisis funcional|
 > |$D_x f$|Derivada respecto a x|Derivadas parciales|
-> 
+>
 > **Derivadas de orden superior:**
-> 
+>
 > - Segunda: f''(x), $\frac{d^2y}{dx^2}$, $\ddot{y}$
 > - n-ésima: f⁽ⁿ⁾(x), $\frac{d^ny}{dx^n}$
 
 ## 📊 Reglas Fundamentales de Derivación
 
 > [!warning] 🧮 **Reglas Básicas**
-> 
+>
 > **Reglas algebraicas:**
-> 
+>
 > ```
 > • Constante: (c)' = 0
 > • Identidad: (x)' = 1  
 > • Potencia: (x^n)' = nx^(n-1)
 > • Constante por función: (cf)' = cf'
 > ```
-> 
+>
 > **Reglas de combinación:**
-> 
+>
 > ```
 > • Suma: (f + g)' = f' + g'
 > • Diferencia: (f - g)' = f' - g'  
 > • Producto: (fg)' = f'g + fg'
 > • Cociente: (f/g)' = (f'g - fg')/g²
 > ```
-> 
+>
 > **Regla de la cadena:**
-> 
+>
 > ```
 > (f(g(x)))' = f'(g(x)) · g'(x)
 > ```
@@ -68,13 +71,19 @@ dg-publish: true
 ## 📈 Derivadas de Funciones Especiales
 
 > [!info] 🔢 **Funciones Elementales**
-> 
+>
 > **Funciones exponenciales y logarítmicas:**
-> 
-> ![[Diagramas/01_-_Derivada_y_Definición_Formal_01.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_01.svg]]
+>
+> **Se lee así:** Arriba hay una caja rectangular que se abre en tres ramas paralelas, y cada rama vuelve a partirse en dos cajas rectangulares con la fórmula de la derivada correspondiente. La idea visual es que las funciones especiales se agrupan por familias y que cada familia tiene sus propias derivadas ya resueltas en la hoja.
+>
+> **Por qué importa:** Esto te sirve como tabla de consulta rápida: cuando aparece $\ln x$ o $\tan x$ en un ejercicio ya sabes qué fórmula aplicar sin derivar desde cero. Te evita además el error clásico de olvidar el factor $\ln a$ en la base exponencial.
+>
+> **Ejemplo:** Un ejercicio típico: derivar $\frac{d}{dx}[\log_5 x]$; tomas la rama de logarítmicas y aplicas $\frac{1}{x \ln 5}$ sin volver a la definición por límites.
+>
 > **Funciones trigonométricas inversas:**
-> 
+>
 > - $(arcsin x)' = \frac{1}{\sqrt{1-x^2}}$
 > - $(arccos x)' = -\frac{1}{\sqrt{1-x^2}}$
 > - $(arctan x)' = \frac{1}{1+x^2}$
@@ -82,12 +91,12 @@ dg-publish: true
 ## 🧠 Técnica de Estudio: Método DERIVAR
 
 > [!tip] 🎓 **Estrategia de Aprendizaje: Mnemotecnia DERIVAR**
-> 
+>
 > **D - Detectar** el tipo de función **E - Elegir** la regla apropiada  
 > **R - Recordar** la fórmula base **I - Identificar** funciones compuestas **V - Verificar** aplicando la regla de la cadena **A - Aplicar** las reglas algebraicas **R - Revisar** y simplificar el resultado
-> 
+>
 > **Pasos para resolver derivadas:**
-> 
+>
 > 1. 🎯 **Identifica** la estructura: ¿Es suma, producto, composición?
 > 2. 🔍 **Clasifica** las funciones: polinomial, exponencial, trigonométrica...
 > 3. ⚙️ **Aplica** las reglas en el orden correcto
@@ -97,68 +106,68 @@ dg-publish: true
 ## 📋 Tipos de Derivación
 
 > [!info] 🔄 **Clasificación de Métodos**
-> 
+>
 > **1. Derivación Explícita**
-> 
+>
 > - Función en forma y = f(x)
 > - Aplicación directa de reglas
-> 
+>
 > **2. Derivación Implícita**
-> 
+>
 > - Ecuación F(x,y) = 0
 > - Derivar ambos lados respecto a x
 > - Despejar dy/dx
-> 
+>
 > **3. Derivación Logarítmica**
-> 
+>
 > - Para funciones de la forma f(x)^g(x)
 > - Aplicar ln a ambos lados
 > - Derivar implícitamente
-> 
+>
 > **4. Derivación Paramétrica**
-> 
+>
 > - x = f(t), y = g(t)
 > - $\frac{dy}{dx} = \frac{dy/dt}{dx/dt}$
 
 ## 🧪 Ejemplos Resueltos
 
 > [!example] 💡 **Problema 1: Regla del Producto** Derivar: f(x) = x² · sin(x)
-> 
+>
 > **Solución:** Usando (fg)' = f'g + fg':
-> 
+>
 > - f = x², f' = 2x
 > - g = sin(x), g' = cos(x)
-> 
+>
 > f'(x) = 2x · sin(x) + x² · cos(x)
 >
 
 > [!example] 💡 **Problema 2: Regla de la Cadena** Derivar: h(x) = sin(x³ + 2x)
-> 
+>
 > **Solución:** h'(x) = cos(x³ + 2x) · (3x² + 2)
-> 
+>
 > **Explicación:**
-> 
+>
 > - Función externa: sin(u), derivada: cos(u)
 > - Función interna: u = x³ + 2x, derivada: 3x² + 2
 
 ## 🎯 Aplicaciones de las Derivadas
 
 > [!warning] 🔬 **Principales Aplicaciones**
-> 
+>
 > **En Física:**
-> 
+>
 > - Velocidad: v(t) = x'(t)
 > - Aceleración: a(t) = v'(t) = x''(t)
 > - Corriente eléctrica: I = dQ/dt
-> 
+>
 > **En Geometría:**
-> 
+>
 > - Pendiente de tangentes
 > - Razón de cambio del área/volumen
 > - Curvatura de curvas
-> 
+>
 > **En Optimización:**
-> 
+>
 > - Máximos y mínimos
 > - Puntos críticos: f'(x) = 0
 > - Análisis de concavidad: f''(x)
@@ -166,7 +175,7 @@ dg-publish: true
 ## 🔍 Referencias y Conexiones
 
 > [!quote] 📚 **Referencias a otras notas**
-> 
+>
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]] - Base fundamental para la definición
 > - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Aplicación de derivadas a límites
 > - [[Unidad 5 - Aplicaciones de la Derivada/II - Optimización/01 - Problemas de Optimización.md|01 - Problemas de Optimización.md]] - Aplicación principal de derivadas
@@ -176,16 +185,16 @@ dg-publish: true
 ## 📖 Notas Recomendadas para Complementar
 
 > [!info] 🎯 **Prerrequisitos y Temas Relacionados**
-> 
+>
 > **Prerrequisitos esenciales:**
-> 
+>
 > - 01 - Derivada y Definición Formal - Definición formal de derivada
 > - [[01 - Funciones]] - Conceptos básicos de funciones
 > - Álgebra - Manipulación algebraica
 > - Trigonometría - Para derivadas trigonométricas
-> 
+>
 > **Temas complementarios:**
-> 
+>
 > - [[Unidad 4 - Derivadas/III - Derivadas Especiales/01 - Derivación Implícita.md|01 - Derivación Implícita.md]] - Técnica avanzada
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior.md|01 - Derivadas de Orden Superior.md]] - Extensión del concepto
 > - Aproximaciones Lineales - Aplicación geométrica
@@ -194,28 +203,28 @@ dg-publish: true
 ## 🔧 Técnicas de Verificación
 
 > [!tip] ✅ **Cómo Verificar tu Derivada**
-> 
+>
 > **Método 1: Derivación numérica**
-> 
+>
 > - Usa la definición: $\frac{f(x+h)-f(x)}{h}$ con h muy pequeño
 > - Compara con tu resultado analítico
-> 
+>
 > **Método 2: Integración**
-> 
+>
 > - Si F'(x) = f(x), entonces ∫f(x)dx debe darte F(x) + C
-> 
+>
 > **Método 3: Graficación**
-> 
+>
 > - Grafica f(x) y f'(x)
 > - Verifica que donde f'(x) = 0, f(x) tenga extremos
 
 ---
 
-**Tags:** #calculo #derivadas #limites #regla-cadena #optimizacion #fisica-matematica #razones-cambio
 
 # 📏 Límite y Definición de Derivada
 
 > [!info] 💡 **El Concepto Fundamental**
+>
 > La derivada es uno de los conceptos más importantes del cálculo, definida como el límite de la razón de cambio instantáneo. Conecta la geometría (pendiente de tangente) con la física (velocidad instantánea) de manera elegante y poderosa.
 
 ## 🎯 Definición Formal de la Derivada
@@ -223,32 +232,40 @@ dg-publish: true
 ### 📐 Definición por Límite
 
 > [!tip] 🏆 **Definición Principal**
+>
 > Sea $f(x)$ una función definida en un intervalo que contiene a $x = a$. La **derivada de $f$ en $x = a$** se define como:
-> 
+>
 > $$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
-> 
+>
 > **siempre que este límite exista y sea finito**.
 
 ### 🔄 Definiciones Equivalentes
 
 > [!info] 📊 **Formas Alternativas**
-> 
+>
 > #### Usando incremento $\Delta x$
 > $$f'(a) = \lim_{\Delta x \to 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
-> 
+>
 > #### Usando variable $x$ que tiende a $a$
 > $$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
-> 
+>
 > #### Para derivada en punto general $x$
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-> 
-> ![[Diagramas/01_-_Derivada_y_Definición_Formal_02.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_02.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos que baja paso a paso: se parte de una función, se toman dos puntos cercanos, se calcula la pendiente de la secante que los une, se toma el límite cuando el incremento se hace cero y se llega a la pendiente de la tangente. Cada eslabón explica una parte del cociente de la definición.
+>
+> **Por qué importa:** Así ves la fórmula $\frac{f(a+h)-f(a)}{h}$ como una pendiente real y no como un símbolo abstracto. Esta intuición es la que después usas para aproximar con tangentes y para justificar cuándo la derivada existe.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $x = 2$, la tabla de la nota muestra cómo las pendientes $5$, $4.1$, $4.01$ y $4.001$ se acercan a $f'(2) = 4$.
+>
 ## 🎨 Interpretación Geométrica
 
 ### 📈 De Secante a Tangente
 
 > [!tip] 🎯 **Proceso Visual**
+>
 > 1. **Recta secante**: Une dos puntos $(a, f(a))$ y $(a+h, f(a+h))$
 > 2. **Pendiente secante**: $m_{sec} = \frac{f(a+h) - f(a)}{h}$  
 > 3. **Límite**: Cuando $h \to 0$, el punto $(a+h, f(a+h))$ se acerca a $(a, f(a))$
@@ -258,25 +275,26 @@ dg-publish: true
 #### 🧪 Ejemplo Visual
 
 > [!tip] 🔬 **Ejemplo**: $f(x) = x^2$ en $x = 2$
-> 
+>
 > **Pendientes secantes para diferentes valores de $h$**:
-> 
+>
 > | $h$ | $f(2+h) = (2+h)^2$ | $\frac{f(2+h) - f(2)}{h} = \frac{(2+h)^2 - 4}{h}$ | Pendiente |
 > |-----|---------------------|---------------------------------------------------|-----------|
 > | 1 | 9 | $\frac{9-4}{1} = 5$ | 5 |
 > | 0.1 | 4.41 | $\frac{4.41-4}{0.1} = 4.1$ | 4.1 |
 > | 0.01 | 4.0401 | $\frac{4.0401-4}{0.01} = 4.01$ | 4.01 |
 > | 0.001 | 4.004001 | $\frac{4.004001-4}{0.001} = 4.001$ | 4.001 |
-> 
+>
 > **Observación**: Las pendientes se acercan a 4, por lo tanto $f'(2) = 4$
 
 ### 🎭 Ecuación de la Recta Tangente
 
 > [!warning] 📐 **Ecuación de la Tangente**
+>
 > Si $f'(a)$ existe, la ecuación de la recta tangente a $y = f(x)$ en el punto $(a, f(a))$ es:
-> 
+>
 > $$y - f(a) = f'(a)(x - a)$$
-> 
+>
 > o equivalentemente:
 > $$y = f(a) + f'(a)(x - a)$$
 
@@ -285,25 +303,26 @@ dg-publish: true
 ### 🚗 Velocidad Instantánea
 
 > [!info] 🎯 **Concepto Físico**
+>
 > Si $s(t)$ representa la posición de un objeto en el tiempo $t$, entonces:
-> 
+>
 > - **Velocidad promedio** en $[t, t+h]$: $v_{prom} = \frac{s(t+h) - s(t)}{h}$
 > - **Velocidad instantánea** en $t$: $v(t) = s'(t) = \lim_{h \to 0} \frac{s(t+h) - s(t)}{h}$
 
 #### 🧪 Ejemplo Físico
 
 > [!tip] 🔬 **Ejemplo**: Caída libre $s(t) = -\frac{1}{2}gt^2 + v_0 t + s_0$
-> 
+>
 > **Para $g = 9.8$ m/s², $v_0 = 10$ m/s, $s_0 = 0$**:
 > $s(t) = -4.9t^2 + 10t$
-> 
+>
 > **Velocidad instantánea en $t = 2$ segundos**:
 > $$v(2) = \lim_{h \to 0} \frac{s(2+h) - s(2)}{h}$$
-> 
+>
 > $$= \lim_{h \to 0} \frac{[-4.9(2+h)^2 + 10(2+h)] - [-4.9(4) + 20]}{h}$$
-> 
+>
 > $$= \lim_{h \to 0} \frac{-4.9(4 + 4h + h^2) + 20 + 10h + 19.6 - 20}{h}$$
-> 
+>
 > $$= \lim_{h \to 0} \frac{-19.6h - 4.9h^2 + 10h}{h} = \lim_{h \to 0} (-9.6 - 4.9h) = -9.6 \text{ m/s}$$
 
 ## 🔢 Notaciones para la Derivada
@@ -323,6 +342,7 @@ dg-publish: true
 ### 🌊 Significado de la Notación de Leibniz
 
 > [!warning] 🎯 **Interpretación de $\frac{dy}{dx}$**
+>
 > - **NO** es una fracción literal
 > - **SÍ** representa el límite de $\frac{\Delta y}{\Delta x}$ cuando $\Delta x \to 0$
 > - **Útil** para recordar reglas como la regla de la cadena
@@ -333,6 +353,7 @@ dg-publish: true
 ### 🎯 Metodología Paso a Paso
 
 > [!tip] 📋 **Proceso General**
+>
 > 1. **Escribir** la definición: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 > 2. **Sustituir** $f(x+h)$ y $f(x)$
 > 3. **Simplificar** la expresión algebraicamente
@@ -344,58 +365,58 @@ dg-publish: true
 #### 🔬 Ejemplo 1: Función Lineal
 
 > [!tip] 📈 **Calcular**: $f'(x)$ si $f(x) = 3x + 2$
-> 
+>
 > **Paso 1**: Aplicar definición
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-> 
+>
 > **Paso 2**: Sustituir
 > $$= \lim_{h \to 0} \frac{[3(x+h) + 2] - [3x + 2]}{h}$$
-> 
+>
 > **Paso 3**: Simplificar
 > $$= \lim_{h \to 0} \frac{3x + 3h + 2 - 3x - 2}{h} = \lim_{h \to 0} \frac{3h}{h}$$
-> 
+>
 > **Paso 4**: Cancelar
 > $$= \lim_{h \to 0} 3 = 3$$
-> 
+>
 > **Conclusión**: $f'(x) = 3$ (derivada constante = pendiente de la recta)
 
 #### 🔬 Ejemplo 2: Función Cuadrática
 
 > [!tip] 📊 **Calcular**: $f'(x)$ si $f(x) = x^2$
-> 
+>
 > **Paso 1**: Aplicar definición
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-> 
+>
 > **Paso 2**: Sustituir
 > $$= \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h}$$
-> 
+>
 > **Paso 3**: Expandir $(x+h)^2$
 > $$= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}$$
-> 
+>
 > **Paso 4**: Simplificar y factorizar
 > $$= \lim_{h \to 0} \frac{2xh + h^2}{h} = \lim_{h \to 0} \frac{h(2x + h)}{h}$$
-> 
+>
 > **Paso 5**: Cancelar y evaluar
 > $$= \lim_{h \to 0} (2x + h) = 2x$$
-> 
+>
 > **Conclusión**: $f'(x) = 2x$
 
 #### 🔬 Ejemplo 3: Función con Raíz
 
 > [!tip] 🌿 **Calcular**: $f'(x)$ si $f(x) = \sqrt{x}$ para $x > 0$
-> 
+>
 > **Paso 1**: Aplicar definición
 > $$f'(x) = \lim_{h \to 0} \frac{\sqrt{x+h} - \sqrt{x}}{h}$$
-> 
+>
 > **Paso 2**: Racionalizar multiplicando por el conjugado
 > $$= \lim_{h \to 0} \frac{\sqrt{x+h} - \sqrt{x}}{h} \cdot \frac{\sqrt{x+h} + \sqrt{x}}{\sqrt{x+h} + \sqrt{x}}$$
-> 
+>
 > **Paso 3**: Simplificar numerador
 > $$= \lim_{h \to 0} \frac{(x+h) - x}{h(\sqrt{x+h} + \sqrt{x})} = \lim_{h \to 0} \frac{h}{h(\sqrt{x+h} + \sqrt{x})}$$
-> 
+>
 > **Paso 4**: Cancelar y evaluar
 > $$= \lim_{h \to 0} \frac{1}{\sqrt{x+h} + \sqrt{x}} = \frac{1}{\sqrt{x} + \sqrt{x}} = \frac{1}{2\sqrt{x}}$$
-> 
+>
 > **Conclusión**: $f'(x) = \frac{1}{2\sqrt{x}}$
 
 ## ⚠️ Existencia y No Existencia de la Derivada
@@ -403,6 +424,7 @@ dg-publish: true
 ### 🔍 Condiciones para que Exista $f'(a)$
 
 > [!warning] 📋 **Requisitos**
+>
 > 1. **$f$ debe estar definida** en un entorno de $a$
 > 2. **El límite debe existir** (límites laterales iguales)
 > 3. **El límite debe ser finito**
@@ -411,51 +433,59 @@ dg-publish: true
 
 #### Caso 1: Discontinuidad
 > [!info] 🔴 **Ejemplo**: $f(x) = \begin{cases} x & \text{si } x < 1 \\ x+1 & \text{si } x \geq 1 \end{cases}$
-> 
+>
 > En $x = 1$: La función es discontinua, por lo tanto no es derivable.
 
 #### Caso 2: Esquina o Cúspide
 > [!info] 🔴 **Ejemplo**: $f(x) = |x|$ en $x = 0$
-> 
+>
 > **Derivada por la izquierda**: $\lim_{h \to 0^-} \frac{|0+h| - |0|}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1$
-> 
+>
 > **Derivada por la derecha**: $\lim_{h \to 0^+} \frac{|0+h| - |0|}{h} = \lim_{h \to 0^+} \frac{h}{h} = 1$
-> 
+>
 > Como $-1 \neq 1$, $f'(0)$ no existe.
 
 #### Caso 3: Tangente Vertical
 > [!info] 🔴 **Ejemplo**: $f(x) = \sqrt[3]{x}$ en $x = 0$
-> 
+>
 > $$f'(0) = \lim_{h \to 0} \frac{\sqrt[3]{h} - 0}{h} = \lim_{h \to 0} \frac{1}{h^{2/3}} = +\infty$$
-> 
+>
 > El límite es infinito, por lo tanto la derivada no existe (tangente vertical).
 
-![[Diagramas/01_-_Derivada_y_Definición_Formal_03.svg]]
+> [!info] 🖼️ Casos donde NO Existe la Derivada
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_03.svg]]
+>
+> **Se lee así:** Es un árbol de decisiones: un rombo pregunta si la función es continua en el punto y, si no, cierra ahí; si es continua, un segundo rombo compara los límites laterales de la derivada y un tercero pregunta si el límite es finito. Cada rama termina en una caja con el diagnóstico: no existe por discontinuidad, por esquina o por tangente vertical, o bien la derivada sí existe.
+>
+> **Por qué importa:** Es el filtro que te dice *qué revisar primero* cuando una derivada no aparece: primero continuidad, luego lados, después finitud. Así evitas afirmar que $f'(a)$ existe sin comprobar que el límite sea finito.
+>
+> **Ejemplo:** Para $f(x) = \sqrt[3]{x}$ en $x = 0$ el diagrama lleva a la última rama: el límite es infinito, así que hay tangente vertical y la derivada no existe.
 
 ## 🧠 Método de Estudio: "DELTA"
 
 > [!tip] 🎓 **Mnemotecnia "DELTA" para Definición de Derivada**
-> 
+>
 > ### 🔤 D - Definir el límite
 > - Escribir $f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$
 > - Identificar la función $f$ y el punto $a$
 > - Verificar que la función esté definida cerca de $a$
-> 
+>
 > ### 🔤 E - Expandir y sustituir
 > - Calcular $f(a+h)$ expandiendo algebraicamente
 > - Sustituir $f(a+h)$ y $f(a)$ en la expresión
 > - Simplificar el numerador
-> 
+>
 > ### 🔤 L - Limpiar la expresión
 > - Factorizar el numerador
 > - Cancelar el factor $h$ del denominador
 > - Asegurar que no quede $h$ en el denominador
-> 
+>
 > ### 🔤 T - Tomar el límite
 > - Evaluar $\lim_{h \to 0}$ de la expresión simplificada
 > - Verificar que el límite sea finito
 > - Escribir el resultado final
-> 
+>
 > ### 🔤 A - Asegurar e interpretar
 > - **Verificar**: ¿El resultado tiene sentido?
 > - **Interpretar**: ¿Qué significa geométrica o físicamente?
@@ -464,21 +494,21 @@ dg-publish: true
 ### 🎯 Aplicación del Método DELTA
 
 > [!info] 🔬 **Ejemplo con DELTA**: Encontrar $f'(x)$ si $f(x) = x^3$
-> 
+>
 > **D - Definir el límite**:
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-> 
+>
 > **E - Expandir y sustituir**:
 > $$f(x+h) = (x+h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$$
 > $$f'(x) = \lim_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h}$$
-> 
+>
 > **L - Limpiar la expresión**:
 > $$= \lim_{h \to 0} \frac{3x^2h + 3xh^2 + h^3}{h} = \lim_{h \to 0} \frac{h(3x^2 + 3xh + h^2)}{h}$$
 > $$= \lim_{h \to 0} (3x^2 + 3xh + h^2)$$
-> 
+>
 > **T - Tomar el límite**:
 > $$= 3x^2 + 3x(0) + 0^2 = 3x^2$$
-> 
+>
 > **A - Asegurar e interpretar**:
 > - **Resultado**: $f'(x) = 3x^2$
 > - **Interpretación**: La pendiente de $y = x^3$ en cualquier punto $x$ es $3x^2$
@@ -489,6 +519,7 @@ dg-publish: true
 ### 🔗 Relación con Otros Conceptos
 
 > [!info] 🌐 **Conexiones Importantes**
+>
 > - **[[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites.md|01 - Continuidad y Límites.md]]**: Fundamento matemático de la definición
 > - **[[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]]**: Condición necesaria para derivabilidad
 > - **01 - Derivada y Definición Formal**: Métodos más eficientes desarrollados a partir de esta definición
@@ -497,36 +528,46 @@ dg-publish: true
 ### ⚡ Preparación para Conceptos Avanzados
 
 > [!warning] 🎯 **Importancia Futura**
+>
 > Esta definición es la base para:
 > - Demostración de todas las reglas de derivación
 > - Derivadas de orden superior
 > - Derivadas parciales en cálculo multivariable
 > - Análisis real y teoría de funciones
 
-![[Diagramas/01_-_Derivada_y_Definición_Formal_04.svg]]
+> [!info] 🖼️ Preparación para Conceptos Avanzados
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_04.svg]]
+>
+> **Se lee así:** Es un mapa mental con un nodo central del que salen cinco ramas: la interpretación geométrica, la física, los métodos de cálculo, la existencia de la derivada y las aplicaciones. Cada rama abre en hojas que detallan lo que se apoya en la definición, como la pendiente tangente, la cancelación de $h$ o la continuidad necesaria.
+>
+> **Por qué importa:** Te sirve como panorama: la definición no es un trámite, es la base de todo lo que viene después, incluidas las derivadas de orden superior y las parciales. También te muestra qué rama conviene repasar antes de un parcial.
+>
+> **Ejemplo:** Siguiendo la rama de métodos, el paso de cancelar $h$ en $\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ es lo que permite después demostrar la regla del producto.
 
 ---
 
 ## 📚 Referencias y Conexiones
 
 >[!quote] 🔗 Notas Relacionadas
+>
 > - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites.md|01 - Continuidad y Límites.md]] - Fundamento matemático esencial
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]] - Condiciones de existencia
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada.md|02 - Interpretación Geométrica de la Derivada.md]] - Aplicación visual
 > - [[Unidad 4 - Derivadas/II - Reglas de Derivación/01 - Reglas Fundamentales de Derivación.md|01 - Reglas Fundamentales de Derivación.md]] - Métodos eficientes
 > - Universidad/Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Extensión para funciones compuestas
-> 
+>
 >
 >[!success] 📖 Para Profundizar
+>
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada.md|02 - Interpretación Geométrica de la Derivada.md]] - Análisis detallado de no derivabilidad
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]] - Relaciones teóricas
 >
 >
-> [!NOTE] 🎯 Aplicaciones Inmediatas
-> 
+> [!note] 🎯 Aplicaciones Inmediatas
+>
 > - [[Unidad 5 - Aplicaciones de la Derivada/III - Razones de Cambio/02 - Razones de Cambio Relacionadas.md|02 - Razones de Cambio Relacionadas.md]] - Problemas dinámicos
 > - [[Unidad 5 - Aplicaciones de la Derivada/III - Razones de Cambio/03 - Aproximaciones Lineales y Diferenciales.md|03 - Aproximaciones Lineales y Diferenciales.md]] - Uso de la tangente
 > - [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md|01 - Análisis Completo de Funciones.md]] - Comportamiento local
 
-### 🏷️ Tags
-#matematicas/calculo/derivadas #fundamentos/limites #definicion/formal #interpretacion/geometrica #interpretacion/fisica #metodos/calculo #existencia/derivada
+**Tags:** #MATG1045 #unidad4 #derivada-y-definicion-formal #calculo #derivadas #limites #regla-cadena #optimizacion #fisica-matematica #razones-cambio #matematicas/calculo/derivadas #fundamentos/limites #definicion/formal #interpretacion/geometrica #interpretacion/fisica #metodos/calculo #existencia/derivada

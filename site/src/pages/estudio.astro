@@ -1,0 +1,351 @@
+---
+/**
+ * /estudio/ — modo de estudio con las flashcards que ya traen las notas.
+ *
+ * No inventa preguntas: lee las tarjetas "pregunta::respuesta" del bloque
+ * "🔁 Repaso SR" de cada nota (ver src/lib/flashcards.mjs) y arma sesiones:
+ * eliges materia o mazo, destapas la respuesta y marcas lo que te sabes.
+ * El progreso se guarda en el navegador (localStorage).
+ */
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import { todasLasFlashcards, agruparFlashcards } from "../lib/flashcards.mjs";
+import katex from "katex";
+
+const tarjetas = todasLasFlashcards();
+const { materias, semestres, mazos } = agruparFlashcards(tarjetas);
+
+// Escapa el HTML con entidades numericas para que el texto de las tarjetas
+// nunca se interprete como marcado.
+const ESC_MAP: Record<string, string> = {
+  "&": "&#38;",
+  "<": "&#60;",
+  ">": "&#62;",
+  '"': "&#34;",
+};
+function esc(s: string) {
+  return s.replace(/[&<>"]/g, (c) => ESC_MAP[c]);
+}
+
+/** Convierte la respuesta a HTML: escapa el texto y renderiza la matemática. */
+function respuestaHTML(txt: string) {
+  let out = "";
+  const re = /\$([^$]+)\$/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(txt))) {
+    out += esc(txt.slice(last, m.index));
+    try {
+      out += katex.renderToString(m[1], { throwOnError: false, displayMode: false });
+    } catch {
+      out += esc(m[1]);
+    }
+    last = m.index + m[0].length;
+  }
+  out += esc(txt.slice(last));
+  return out.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+}
+
+const datos = tarjetas.map((t) => ({
+  id: t.id,
+  q: t.q,
+  a: respuestaHTML(t.a),
+  deck: t.deck,
+  file: t.file,
+  url: t.url,
+  nota: t.nota,
+  mat: t.mat,
+  matTitulo: t.matTitulo,
+  sem: t.sem,
+  semTitulo: t.semTitulo,
+}));
+
+const total = tarjetas.length;
+const conMazo = mazos.filter((m) => m.id !== "sin-mazo");
+---
+
+<Base
+  title="Modo de estudio · Neonotes"
+  description="Repasa con las tarjetas de repaso que ya vienen en los apuntes"
+>
+  <SiteHeader variant="portada" />
+
+  <main class="mx-auto max-w-4xl px-6 pt-12 pb-24">
+    <p class="nx-section-title">Modo de estudio</p>
+    <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">
+      Repasa con las tarjetas de tus notas
+    </h1>
+    <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-[#e5e7eb]">
+      {
+        total
+      } tarjetas que ya vienen escritas en los apuntes, repartidas en {materias.length} materias.
+      Elige un mazo, destapa la respuesta y marca lo que no te sabes: tu progreso se queda guardado
+      en este navegador.
+    </p>
+
+    {
+      total === 0 && (
+        <p class="mt-8 rounded-xl border border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)] p-6 text-sm text-[#e5e7eb]">
+          Todavía no hay tarjetas de repaso en las notas. Cuando se añadan, aparecerán aquí.
+        </p>
+      )
+    }
+
+    {
+      total > 0 && (
+        <div class="nx-estudio">
+          <div class="nx-estudio__controles">
+            <label class="nx-estudio__campo">
+              <span>Materia</span>
+              <select id="nx-est-mat" class="nx-estudio__select">
+                <option value="">Todas ({total})</option>
+                {materias.map((m) => (
+                  <option value={m.id}>{m.titulo} ({m.n})</option>
+                ))}
+              </select>
+            </label>
+
+            <label class="nx-estudio__campo">
+              <span>Mazo</span>
+              <select id="nx-est-deck" class="nx-estudio__select">
+                <option value="">Todos ({total})</option>
+                {conMazo.map((m) => (
+                  <option value={m.id}>{m.titulo} ({m.n})</option>
+                ))}
+              </select>
+            </label>
+
+            <label class="nx-estudio__campo nx-estudio__campo--check">
+              <input type="checkbox" id="nx-est-pendientes" />
+              <span>Solo las que no sé</span>
+            </label>
+
+            <div class="nx-estudio__botones">
+              <button type="button" id="nx-est-shuffle" class="nx-btn nx-btn-ghost">
+                Barajar
+              </button>
+              <button type="button" id="nx-est-reset" class="nx-btn nx-btn-ghost">
+                Reiniciar progreso
+              </button>
+            </div>
+          </div>
+
+          <div class="nx-estudio__progreso">
+            <div class="nx-estudio__progreso-barra">
+              <span id="nx-est-barra"></span>
+            </div>
+            <p id="nx-est-avance" class="nx-estudio__avance">—</p>
+          </div>
+
+          <article class="nx-estudio__tarjeta" id="nx-est-tarjeta" tabindex="0">
+            <p class="nx-estudio__etiqueta" id="nx-est-origen"></p>
+            <p class="nx-estudio__pregunta" id="nx-est-q"></p>
+            <div class="nx-estudio__respuesta" id="nx-est-a" hidden></div>
+          </article>
+
+          <div class="nx-estudio__acciones">
+            <button type="button" id="nx-est-no" class="nx-btn nx-btn-ghost">
+              No sé <kbd>1</kbd>
+            </button>
+            <button type="button" id="nx-est-flip" class="nx-btn nx-btn-primary">
+              Mostrar respuesta <kbd>espacio</kbd>
+            </button>
+            <button type="button" id="nx-est-si" class="nx-btn nx-btn-ghost">
+              Sí <kbd>2</kbd>
+            </button>
+          </div>
+
+          <p class="nx-estudio__pie">
+            <a id="nx-est-link" href="#">Ir a la nota de origen →</a>
+            <span class="nx-estudio__pie-sep">·</span>
+            <span id="nx-est-estado"></span>
+          </p>
+
+          <details class="nx-estudio__ayuda">
+            <summary>Atajos de este modo</summary>
+            <ul>
+              <li><kbd>espacio</kbd> o <kbd>enter</kbd>: destapar la respuesta</li>
+              <li><kbd>1</kbd>: no la sé · <kbd>2</kbd>: sí la sé</li>
+              <li><kbd>←</kbd> / <kbd>→</kbd>: tarjeta anterior / siguiente</li>
+              <li><kbd>s</kbd>: barajar el mazo</li>
+            </ul>
+          </details>
+        </div>
+      )
+    }
+  </main>
+
+  <script define:vars={{ datos }}>
+    (function () {
+      var CARDS = datos;
+      var KEY = "nx-flash-vistos";
+
+      var elMat = document.getElementById("nx-est-mat");
+      var elDeck = document.getElementById("nx-est-deck");
+      var elPend = document.getElementById("nx-est-pendientes");
+      var elBarajar = document.getElementById("nx-est-shuffle");
+      var elReset = document.getElementById("nx-est-reset");
+      var elBarra = document.getElementById("nx-est-barra");
+      var elAvance = document.getElementById("nx-est-avance");
+      var elQ = document.getElementById("nx-est-q");
+      var elA = document.getElementById("nx-est-a");
+      var elOrigen = document.getElementById("nx-est-origen");
+      var elLink = document.getElementById("nx-est-link");
+      var elEstado = document.getElementById("nx-est-estado");
+      var elFlip = document.getElementById("nx-est-flip");
+      var elNo = document.getElementById("nx-est-no");
+      var elSi = document.getElementById("nx-est-si");
+      var laTarjeta = document.getElementById("nx-est-tarjeta");
+      if (!elQ || !CARDS.length) return;
+
+      var vistos = {};
+      try { vistos = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { vistos = {}; }
+
+      var orden = [];
+      var i = 0;
+      var mostrada = false;
+
+      function guardar() {
+        try { localStorage.setItem(KEY, JSON.stringify(vistos)); } catch (e) {}
+      }
+
+      function notaDeUrl() {
+        var p = new URLSearchParams(location.search).get("nota");
+        return p ? decodeURIComponent(p) : "";
+      }
+
+      function filtrar() {
+        var mat = elMat ? elMat.value : "";
+        var deck = elDeck ? elDeck.value : "";
+        var soloPend = elPend && elPend.checked;
+        var nota = notaDeUrl();
+        var out = CARDS.filter(function (c) {
+          if (mat && c.mat !== mat) return false;
+          if (deck && c.deck !== deck) return false;
+          if (nota && c.file !== nota) return false;
+          if (soloPend && vistos[c.id] && vistos[c.id].ok) return false;
+          return true;
+        });
+        orden = out;
+      }
+
+      function barajar() {
+        for (var j = orden.length - 1; j > 0; j--) {
+          var k = Math.floor(Math.random() * (j + 1));
+          var t = orden[j]; orden[j] = orden[k]; orden[k] = t;
+        }
+      }
+
+      function dominadas() {
+        var n = 0;
+        for (var j = 0; j < orden.length; j++) if (vistos[orden[j].id] && vistos[orden[j].id].ok) n++;
+        return n;
+      }
+
+      function pintar() {
+        if (!orden.length) {
+          elQ.textContent = "No hay tarjetas con ese filtro.";
+          elA.hidden = true;
+          elA.innerHTML = "";
+          elAvance.textContent = "0 tarjetas";
+          elBarra.style.width = "0%";
+          elOrigen.textContent = "";
+          elLink.removeAttribute("href");
+          elEstado.textContent = "";
+          return;
+        }
+        if (i >= orden.length) i = orden.length - 1;
+        if (i < 0) i = 0;
+        var c = orden[i];
+        elQ.textContent = c.q;
+        elA.innerHTML = c.a;
+        elA.hidden = true;
+        mostrada = false;
+        elFlip.textContent = "Mostrar respuesta";
+        var borrarKbd = elFlip.querySelector("kbd");
+        if (borrarKbd) elFlip.appendChild(borrarKbd);
+        elOrigen.textContent = c.nota + (c.matTitulo ? " · " + c.matTitulo : "");
+        elLink.setAttribute("href", c.url);
+        var estado = vistos[c.id];
+        elEstado.textContent = estado ? (estado.ok ? "Ya la sabías" : "Pendiente") : "";
+        laTarjeta.classList.toggle("es-sabida", !!(estado && estado.ok));
+        laTarjeta.classList.toggle("es-pendiente", !!(estado && !estado.ok));
+        var dom = dominadas();
+        elAvance.textContent = i + 1 + " / " + orden.length + " · " + dom + " de " + orden.length + " dominadas";
+        elBarra.style.width = (orden.length ? ((i + 1) / orden.length) * 100 : 0) + "%";
+      }
+
+      function mostrar() {
+        if (mostrada) return;
+        elA.hidden = false;
+        mostrada = true;
+        elFlip.textContent = "Respuesta visible";
+      }
+
+      function siguiente() {
+        i++;
+        if (i >= orden.length) {
+          i = 0;
+          barajar();
+        }
+        pintar();
+      }
+
+      function marcar(ok) {
+        var c = orden[i];
+        if (!c) return;
+        vistos[c.id] = { ok: ok ? 1 : 0, t: Date.now() };
+        guardar();
+        siguiente();
+      }
+
+      function reiniciar() {
+        var soloFiltro = {};
+        if (elMat) soloFiltro.mat = elMat.value;
+        if (elDeck) soloFiltro.deck = elDeck.value;
+        var ids = {};
+        for (var j = 0; j < CARDS.length; j++) {
+          var c = CARDS[j];
+          if (soloFiltro.mat && c.mat !== soloFiltro.mat) continue;
+          if (soloFiltro.deck && c.deck !== soloFiltro.deck) continue;
+          ids[c.id] = 1;
+        }
+        var nuevo = {};
+        for (var k in vistos) if (!ids[k]) nuevo[k] = vistos[k];
+        vistos = nuevo;
+        guardar();
+        filtrar();
+        pintar();
+      }
+
+      if (elMat) elMat.addEventListener("change", function () { filtrar(); i = 0; pintar(); });
+      if (elDeck) elDeck.addEventListener("change", function () { filtrar(); i = 0; pintar(); });
+      if (elPend) elPend.addEventListener("change", function () { filtrar(); i = 0; pintar(); });
+      if (elBarajar) elBarajar.addEventListener("click", function () { barajar(); i = 0; pintar(); });
+      if (elReset) elReset.addEventListener("click", reiniciar);
+      if (elFlip) elFlip.addEventListener("click", mostrar);
+      if (elNo) elNo.addEventListener("click", function () { marcar(false); });
+      if (elSi) elSi.addEventListener("click", function () { marcar(true); });
+      if (laTarjeta) laTarjeta.addEventListener("click", function (ev) {
+        if (ev.target.closest("a, button, kbd")) return;
+        mostrar();
+      });
+
+      document.addEventListener("keydown", function (ev) {
+        var tag = (ev.target && ev.target.tagName) || "";
+        if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+        if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+        var k = ev.key.toLowerCase();
+        if (k === " " || k === "enter") { ev.preventDefault(); mostrar(); }
+        else if (k === "1") { ev.preventDefault(); marcar(false); }
+        else if (k === "2") { ev.preventDefault(); marcar(true); }
+        else if (k === "arrowright") { ev.preventDefault(); i++; if (i >= orden.length) i = 0; pintar(); }
+        else if (k === "arrowleft") { ev.preventDefault(); i--; if (i < 0) i = orden.length - 1; pintar(); }
+        else if (k === "s") { ev.preventDefault(); barajar(); i = 0; pintar(); }
+      });
+
+      filtrar();
+      pintar();
+    })();
+  </script>
+</Base>

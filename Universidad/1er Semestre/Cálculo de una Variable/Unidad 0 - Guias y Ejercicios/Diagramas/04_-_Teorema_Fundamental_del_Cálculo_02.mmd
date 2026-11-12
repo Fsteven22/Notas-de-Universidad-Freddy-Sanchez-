@@ -1,0 +1,25 @@
+---
+title: "04_-_Teorema_Fundamental_del_Cálculo_02"
+---
+flowchart TD
+    A["TFC · Parte II<br/>∫[a→b] f(x) dx = F(b) − F(a)"]
+    B["f continua en [a, b]<br/>F′(x) = f(x)"]
+    P1["Paso 1<br/>Hallar una antiderivada F(x)"]
+    P2["Paso 2<br/>Evaluar F en los límites"]
+    P3["Paso 3<br/>Calcular F(b) − F(a)"]
+    R["∫ ab f dx = [F(x)] de a hasta b<br/>= F(b) − F(a)"]
+    OK["Verificar derivando<br/>F′(x) debe dar f(x)"]
+    B --> A
+    A --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> R
+    R --> OK
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style P1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style R fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style OK fill:#ffebee,stroke:#e53935,color:#4a1010

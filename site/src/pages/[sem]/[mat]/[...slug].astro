@@ -1,6 +1,8 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import Explorer from "../../../components/Explorer.astro";
+import NoteToc from "../../../components/NoteToc.astro";
+import SiteHeader from "../../../components/SiteHeader.astro";
 import "../../../styles/content.css";
 import "katex/dist/katex.min.css";
 import vault from "../../../data/vault.json";
@@ -37,6 +39,11 @@ function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short", year: "numeric" }).toLowerCase();
 }
 
+const pretty = (s: string) =>
+  s
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+
 // secuencia de notas de la materia (para Anterior/Siguiente)
 const notasOrdenadas = matData.notas
   .map((n) => ({ n, k: (n.units?.length ? n.units.join("/") : "") + "/" + n.slug }))
@@ -45,40 +52,76 @@ const iOrd = notasOrdenadas.findIndex((x) => x.n.file === note.file);
 const prev = iOrd > 0 ? notasOrdenadas[iOrd - 1].n : null;
 const next = iOrd < notasOrdenadas.length - 1 ? notasOrdenadas[iOrd + 1].n : null;
 const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/") : ""}/${n.slug}/`;
+
+// Dónde estás dentro de la materia: "Unidad 3 › IV. Derivadas direccionales"
+const unitPath = (note.units ?? []).map(pretty).join(" › ");
+const matUrl = `/${sem}/${mat}/`;
 ---
 
 <Base title={`${note.title} · ${matData.title} · Neonotes`} description={`Apuntes de ${note.title} · ${matData.title} · ${semData.title}`}>
-  <div id="nx-progress" style="position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#00aaff,#00ff88);width:0%;z-index:50;transition:width .1s linear"></div>
-
   <div class="nx-aura" style="width:320px;height:320px;top:-90px;right:12%;opacity:.55"></div>
 
-  <header class="sticky top-0 z-40 border-b border-[rgba(255,255,255,0.06)] bg-[rgba(5,7,13,0.82)] backdrop-blur-md">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-      <div id="nx-bc" class="flex items-center gap-4 font-mono text-[11px] tracking-wider">
-        <a href="/" class="text-[var(--color-nexus-muted)] hover:text-[var(--color-nexus-green)]">⌂</a>
-        <span class="text-[var(--color-nexus-muted)]">/</span>
-        <a href={`/${sem}/`} class="text-[var(--color-nexus-muted)] hover:text-[var(--color-nexus-green)]">{semData.title}</a>
-        <span class="text-[var(--color-nexus-muted)]">/</span>
-        <a href={`/${sem}/${mat}/`} class="text-[var(--color-nexus-muted)] hover:text-[var(--color-nexus-green)]">{matData.title}</a>
-      </div>
-      <div id="nx-mini" class="hidden items-center justify-end gap-4">
-        {next ? (
-          <a href={noteUrl(next)} class="flex max-w-md items-center gap-2 font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)] transition hover:text-[var(--color-nexus-green)]" title={`Siguiente: ${next.title}`}>
-            <span class="truncate">{next.title}</span>
-            <span class="shrink-0 text-[var(--color-nexus-green)]">SIGUIENTE →</span>
-          </a>
-        ) : <span />}
-      </div>
-    </div>
-  </header>
+  <SiteHeader
+    variant="nota"
+    container="max-w-[1320px]"
+    sticky
+    showIndex
+    crumbs={[
+      { label: semData.title, href: `/${sem}/` },
+      { label: matData.title, href: matUrl },
+      { label: note.title },
+    ]}
+  />
 
-  <main class="nx-with-explorer nx-note-layout mx-auto max-w-[1500px] gap-10 px-6 pt-8 pb-20">
+  <main class="nx-with-explorer nx-note-layout mx-auto max-w-[1320px] gap-10 px-6 pt-8 pb-20">
     <Explorer semId={sem} matId={mat} currentUrl={`/${file}/`} />
     <article>
-      <p class="nx-section-title">{semData.title} › {matData.title}</p>
+      {unitPath ? (
+        <p class="nx-section-title">{unitPath}</p>
+      ) : (
+        <p class="nx-section-title">{semData.title} › {matData.title}</p>
+      )}
       <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">{note.title}</h1>
       <p class="mt-2 font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">ÚLTIMA EDICIÓN · {fecha(note.mtime)}</p>
       <div class="nx-bar mt-4 max-w-xs"></div>
+      <div class="nx-note-tools">
+        <button type="button" id="nx-lectura" class="nx-note-tools__btn" aria-pressed="false">
+          <span class="nx-note-tools__ico" aria-hidden="true">◐</span> Modo lectura
+        </button>
+        <button type="button" id="nx-imprimir" class="nx-note-tools__btn">
+          <span class="nx-note-tools__ico" aria-hidden="true">⎙</span> Imprimir / PDF
+        </button>
+        <button
+          type="button"
+          class="nx-note-tools__btn nx-fav-btn"
+          data-nx-fav
+          aria-pressed="false"
+          data-url={`/${file}/`}
+          data-t={note.title}
+          data-m={mat}
+          data-mt={matData.title}
+          data-s={sem}
+          title="Guardar esta nota en tus favoritos"
+        >
+          <span class="nx-note-tools__ico" data-nx-fav-ico aria-hidden="true">☆</span>
+          <span data-nx-fav-txt>Guardar</span>
+        </button>
+        <button
+          type="button"
+          class="nx-note-tools__btn nx-hecha-btn"
+          data-nx-hecha
+          aria-pressed="false"
+          data-url={`/${file}/`}
+          data-t={note.title}
+          data-m={mat}
+          data-mt={matData.title}
+          data-s={sem}
+          title="Marcar esta nota como leída (para llevar tu avance)"
+        >
+          <span class="nx-note-tools__ico" data-nx-hecha-ico aria-hidden="true">○</span>
+          <span data-nx-hecha-txt>Marcar leída</span>
+        </button>
+      </div>
       <div class="note-prose mt-8">
         <Content />
       </div>
@@ -94,7 +137,7 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
               <span class="mt-1 text-sm font-semibold leading-snug text-white transition-colors group-hover:text-[var(--color-nexus-green)] line-clamp-2">{prev.title}</span>
             </a>
           ) : <span />}
-          <a href={`/${sem}/${mat}/`} class="nx-card group flex flex-col items-center justify-center !py-4 px-4 text-center">
+          <a href={matUrl} class="nx-card group flex flex-col items-center justify-center !py-4 px-4 text-center">
             <span class="font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">MATERIA</span>
             <span class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-[var(--color-nexus-green)]">{matData.title}</span>
           </a>
@@ -111,179 +154,190 @@ const noteUrl = (n) => `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/"
       </div>
     </article>
 
-    <aside class="hidden lg:block">
-      <div class="sticky top-24">
-        <p class="nx-section-title mb-3">Contenido</p>
-        <nav id="nx-toc" class="space-y-1 text-[13px]"></nav>
+    <NoteToc
+      unitPath={unitPath}
+      matTitle={matData.title}
+      matUrl={matUrl}
+      prev={prev ? { title: prev.title, url: noteUrl(prev) } : null}
+      next={next ? { title: next.title, url: noteUrl(next) } : null}
+    />
+  </main>
 
-        <div class="mt-8 border-t border-[rgba(255,255,255,0.07)] pt-4">
-          <p class="font-mono text-[10px] tracking-[0.2em] text-[var(--color-nexus-muted)]">EN ESTA MATERIA</p>
-          <div class="mt-3 space-y-2 text-[13px]">
-            {prev ? (
-              <a href={noteUrl(prev)} class="block rounded-lg border-l-2 border-[var(--color-nexus-muted)] bg-[rgba(255,255,255,0.02)] px-3 py-2 transition hover:border-[var(--color-nexus-green)] hover:bg-[rgba(255,255,255,0.05)]">
-                <span class="font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]">← ANTERIOR</span>
-                <span class="mt-0.5 block leading-snug text-[#d1d5db] line-clamp-2">{prev.title}</span>
-              </a>
-            ) : null}
-            {next ? (
-              <a href={noteUrl(next)} class="block rounded-lg border-l-2 border-[var(--color-nexus-green)] bg-[rgba(0,255,136,0.04)] px-3 py-2 transition hover:bg-[rgba(0,255,136,0.08)]">
-                <span class="font-mono text-[10px] tracking-wider text-[var(--color-nexus-green)]">SIGUIENTE →</span>
-                <span class="mt-0.5 block leading-snug text-[#d1d5db] line-clamp-2">{next.title}</span>
-              </a>
-            ) : null}
-            <a href={`/${sem}/${mat}/`} class="block rounded-lg px-3 py-2 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)] transition hover:text-[var(--color-nexus-green)]">
-              ← TODAS LAS NOTAS DE {matData.title.toUpperCase()}
-            </a>
-          </div>
-        </div>
+  <script>
+    type NxPdfFrame = HTMLIFrameElement;
 
-        <script>
-          let nxNoteAC: AbortController | undefined;
+    function pdfFrameMap() {
+      const w = window as any;
+      if (!w.__nxPdfFrames) w.__nxPdfFrames = new Map<Window, NxPdfFrame>();
+      return w.__nxPdfFrames as Map<Window, NxPdfFrame>;
+    }
 
-          type NxPdfFrame = HTMLIFrameElement;
+    function mountPdf(card: HTMLElement) {
+      if (card.dataset.nxPdfMounted) return;
+      card.dataset.nxPdfMounted = "1";
+      const slot = card.querySelector(".nx-pdf-slot");
+      const src = card.dataset.nxPdfSrc;
+      if (!slot || !src) return;
+      const frame = document.createElement("iframe");
+      frame.className = "nx-pdf-frame";
+      frame.src = src;
+      frame.title = card.querySelector(".nx-pdf-name")?.textContent?.trim() || "Visor PDF";
+      frame.setAttribute("referrerpolicy", "no-referrer");
+      frame.setAttribute("allowfullscreen", "");
+      frame.setAttribute("loading", "lazy");
+      slot.appendChild(frame);
+      pdfFrameMap().set(frame.contentWindow, frame);
 
-          function pdfFrameMap() {
-            const w = window as any;
-            if (!w.__nxPdfFrames) w.__nxPdfFrames = new Map<Window, NxPdfFrame>();
-            return w.__nxPdfFrames as Map<Window, NxPdfFrame>;
-          }
+      const more = document.createElement("div");
+      more.className = "nx-pdf-more";
+      slot.after(more);
+      moreObserver().observe(more);
 
-          function mountPdf(card: HTMLElement) {
-            if (card.dataset.nxPdfMounted) return;
-            card.dataset.nxPdfMounted = "1";
-            const slot = card.querySelector(".nx-pdf-slot");
-            const src = card.dataset.nxPdfSrc;
-            if (!slot || !src) return;
-            const frame = document.createElement("iframe");
-            frame.className = "nx-pdf-frame";
-            frame.src = src;
-            frame.title = card.querySelector(".nx-pdf-name")?.textContent?.trim() || "Visor PDF";
-            frame.setAttribute("referrerpolicy", "no-referrer");
-            frame.setAttribute("allowfullscreen", "");
-            frame.setAttribute("loading", "lazy");
-            slot.appendChild(frame);
-            pdfFrameMap().set(frame.contentWindow, frame);
+      const btn = card.querySelector("[data-nx-pdf-open]");
+      if (btn instanceof HTMLButtonElement) {
+        btn.textContent = "Abierto";
+        btn.disabled = true;
+      }
+    }
 
-            const more = document.createElement("div");
-            more.className = "nx-pdf-more";
-            slot.after(more);
-            moreObserver().observe(more);
-
-            const btn = card.querySelector("[data-nx-pdf-open]");
-            if (btn instanceof HTMLButtonElement) {
-              btn.textContent = "Abierto";
-              btn.disabled = true;
-            }
-          }
-
-          function moreObserver() {
-            const w = window as any;
-            if (!w.__nxPdfMoreObserver) {
-              w.__nxPdfMoreObserver = new IntersectionObserver(
-                (entries) => {
-                  for (const entry of entries) {
-                    if (!entry.isIntersecting) continue;
-                    const card = (entry.target as HTMLElement).closest<HTMLElement>(".nx-pdf");
-                    const frame = card?.querySelector<NxPdfFrame>("iframe.nx-pdf-frame");
-                    if (frame?.contentWindow) {
-                      frame.contentWindow.postMessage({ type: "nx-pdf-more" }, location.origin);
-                    }
-                  }
-                },
-                { rootMargin: "300px 0px" }
-              );
-            }
-            return w.__nxPdfMoreObserver as IntersectionObserver;
-          }
-
-          function bindPdfMessages() {
-            const w = window as any;
-            if (w.__nxPdfMsgBound) return;
-            w.__nxPdfMsgBound = true;
-            window.addEventListener("message", (e) => {
-              if (e.origin !== location.origin) return;
-              const d = e.data || {};
-              if (d.type !== "nx-pdf-height") return;
-              const frame = pdfFrameMap().get(e.source as Window);
-              if (!frame) return;
-              const h = Math.max(420, Math.round(Number(d.h) || 0));
-              frame.style.height = `${h}px`;
-            });
-          }
-
-          function initPdfLazy() {
-            bindPdfMessages();
-            const cards = Array.from(document.querySelectorAll<HTMLElement>(".nx-pdf[data-nx-pdf-src]"));
-            if (!cards.length) return;
-            const w = window as any;
-            if (!w.__nxPdfObserver) {
-              w.__nxPdfObserver = new IntersectionObserver(
-                (entries) => {
-                  for (const entry of entries) {
-                    if (!entry.isIntersecting) continue;
-                    w.__nxPdfObserver.unobserve(entry.target);
-                    mountPdf(entry.target as HTMLElement);
-                  }
-                },
-                { rootMargin: "400px 0px" }
-              );
-            }
-            const io = w.__nxPdfObserver as IntersectionObserver;
-            for (const card of cards) {
-              if (card.dataset.nxPdfLazyReady) continue;
-              card.dataset.nxPdfLazyReady = "1";
-              io.observe(card);
-            }
-            document.querySelectorAll<HTMLButtonElement>("[data-nx-pdf-open]").forEach((btn) => {
-              if (btn.dataset.nxPdfBound) return;
-              btn.dataset.nxPdfBound = "1";
-              btn.addEventListener("click", () => {
-                const card = btn.closest<HTMLElement>(".nx-pdf");
-                if (!card) return;
-                io.unobserve(card);
-                mountPdf(card);
-              });
-            });
-          }
-
-          function boot() {
-            const toc = document.getElementById("nx-toc");
-            const bc = document.getElementById("nx-bc");
-            const mini = document.getElementById("nx-mini");
-            const bar = document.getElementById("nx-progress");
-            if (toc) {
-              const h2s = [...document.querySelectorAll(".note-prose h2")];
-              if (!h2s.length) {
-                toc.innerHTML = '<p class="font-mono text-[10px] text-[var(--color-nexus-muted)]">Sin títulos</p>';
-              } else {
-                toc.innerHTML = h2s.map((h) => {
-                  const id = h.id || h.textContent.trim().toLowerCase().replace(/[^\w-]/g, "");
-                  if (!h.id) h.id = id;
-                  return `<a href="#${id}" class="block rounded-md border-l-2 border-transparent px-2 py-1 text-[#9ca3af] hover:border-[var(--color-nexus-green)] hover:text-[var(--color-nexus-green)]">${h.textContent.trim()}</a>`;
-                }).join("");
+    function moreObserver() {
+      const w = window as any;
+      if (!w.__nxPdfMoreObserver) {
+        w.__nxPdfMoreObserver = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              const card = (entry.target as HTMLElement).closest<HTMLElement>(".nx-pdf");
+              const frame = card?.querySelector<HTMLIFrameElement>("iframe.nx-pdf-frame");
+              if (frame?.contentWindow) {
+                frame.contentWindow.postMessage({ type: "nx-pdf-more" }, location.origin);
               }
             }
-            if (bc && mini) {
-              nxNoteAC?.abort();
-              nxNoteAC = new AbortController();
-              addEventListener("scroll", () => {
-                const show = scrollY > 260;
-                bc.classList.toggle("hidden", show);
-                mini.classList.toggle("hidden", !show);
-                mini.classList.toggle("flex", show);
-                if (bar) {
-                  const h = document.documentElement;
-                  const p = scrollY / Math.max(1, h.scrollHeight - h.clientHeight);
-                  bar.style.width = (p * 100).toFixed(1) + "%";
-                }
-              }, { passive: true, signal: nxNoteAC.signal });
+          },
+          { rootMargin: "300px 0px" }
+        );
+      }
+      return w.__nxPdfMoreObserver as IntersectionObserver;
+    }
+
+    function bindPdfMessages() {
+      const w = window as any;
+      if (w.__nxPdfMsgBound) return;
+      w.__nxPdfMsgBound = true;
+      window.addEventListener("message", (e) => {
+        if (e.origin !== location.origin) return;
+        const d = e.data || {};
+        if (d.type !== "nx-pdf-height") return;
+        const frame = pdfFrameMap().get(e.source as Window);
+        if (!frame) return;
+        const h = Math.max(420, Math.round(Number(d.h) || 0));
+        frame.style.height = `${h}px`;
+      });
+    }
+
+    function initPdfLazy() {
+      bindPdfMessages();
+      const cards = Array.from(document.querySelectorAll<HTMLElement>(".nx-pdf[data-nx-pdf-src]"));
+      if (!cards.length) return;
+      const w = window as any;
+      if (!w.__nxPdfObserver) {
+        w.__nxPdfObserver = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              w.__nxPdfObserver.unobserve(entry.target);
+              mountPdf(entry.target as HTMLElement);
             }
-            initPdfLazy();
-          }
-          document.addEventListener("astro:page-load", boot);
-          boot();
-        </script>
-      </div>
-    </aside>
-  </main>
+          },
+          { rootMargin: "400px 0px" }
+        );
+      }
+      const io = w.__nxPdfObserver as IntersectionObserver;
+      for (const card of cards) {
+        if (card.dataset.nxPdfLazyReady) continue;
+        card.dataset.nxPdfLazyReady = "1";
+        io.observe(card);
+      }
+      document.querySelectorAll<HTMLButtonElement>("[data-nx-pdf-open]").forEach((btn) => {
+        if (btn.dataset.nxPdfBound) return;
+        btn.dataset.nxPdfBound = "1";
+        btn.addEventListener("click", () => {
+          const card = btn.closest<HTMLElement>(".nx-pdf");
+          if (!card) return;
+          io.unobserve(card);
+          mountPdf(card);
+        });
+      });
+    }
+
+    function boot() {
+      // Recuerda dónde quedaste: la portada lo muestra en "Continuar leyendo"
+      try {
+        const parts = document.title.split(" · ");
+        localStorage.setItem("nx-last", JSON.stringify({
+          title: parts[0] || "",
+          mat: parts[1] || "",
+          url: location.pathname,
+          at: Date.now(),
+        }));
+      } catch {}
+      initPdfLazy();
+    }
+    document.addEventListener("astro:page-load", boot);
+    boot();
+  </script>
+
+  <script>
+    /**
+     * Modo lectura + impresión.
+     *
+     * · "Modo lectura": quita header, pie, explorador, índice y fondo, y deja
+     *   la nota sola, con más cuerpo. La preferencia se guarda (localStorage)
+     *   y se aplica en todas las notas.
+     * · "Imprimir / PDF": abre el diálogo del navegador, que con la hoja de
+     *   estilos de impresión saca la nota en blanco y negro, lista para
+     *   guardarse como PDF. Es la respuesta al "¿tuviste el PDF?": ahora la
+     *   nota también se puede llevar en PDF.
+     */
+    (function () {
+      var KEY = "nx-lectura";
+      var html = document.documentElement;
+
+      function leer() {
+        try { return localStorage.getItem(KEY) === "1"; } catch (e) { return false; }
+      }
+      function guardar(v) {
+        try { localStorage.setItem(KEY, v ? "1" : "0"); } catch (e) {}
+      }
+
+      function aplicar() {
+        var activo = leer();
+        html.classList.toggle("nx-lectura", activo);
+        var btn = document.getElementById("nx-lectura");
+        if (btn) {
+          btn.setAttribute("aria-pressed", activo ? "true" : "false");
+          var ico = btn.querySelector(".nx-note-tools__ico");
+          var txt = btn.childNodes[btn.childNodes.length - 1];
+          if (txt && txt.nodeType === 3) txt.textContent = activo ? " Salir del modo lectura" : " Modo lectura";
+        }
+      }
+
+      document.addEventListener("click", function (ev) {
+        var t = ev.target;
+        if (!(t instanceof Element)) return;
+        if (t.closest("#nx-lectura")) {
+          var activo = !html.classList.contains("nx-lectura");
+          guardar(activo);
+          aplicar();
+          return;
+        }
+        if (t.closest("#nx-imprimir")) {
+          window.print();
+        }
+      });
+
+      document.addEventListener("astro:page-load", aplicar);
+      aplicar();
+    })();
+  </script>
 </Base>

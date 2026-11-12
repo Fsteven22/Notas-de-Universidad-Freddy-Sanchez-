@@ -1,0 +1,25 @@
+---
+title: "03_-_Teoremas_Especiales_para_Integrales_Definidas_02"
+---
+flowchart TD
+    A["Ejemplos pares e impares"]
+    B["cos(x): par y periódica<br/>∫−π π cos = 2·∫0 π cos = 0"]
+    C["sin(x): impar y periódica<br/>∫−π π sin = 0 por imparidad"]
+    D["Función compleja:<br/>f(x) = x·sin(x²)"]
+    D1["f(−x) = (−x)·sin(x²)<br/>= −x·sin(x²) = −f(x)"]
+    D2["impar → ∫ desde −a hasta a<br/>de x·sin(x²) dx = 0"]
+    T["Antes de calcular,<br/>chequear la paridad:<br/>puede ahorrar la<br/>integral entera"]
+    A --> B
+    A --> C
+    A --> D
+    D --> D1
+    D1 --> D2
+    D2 --> T
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D2 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style T fill:#ffebee,stroke:#e53935,color:#4a1010

@@ -1,139 +1,159 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad6, asintotas-en-integrales-definidas, matemáticas, asíntotas, integrales-definidas, integrales-impropias, discontinuidades, límites, convergencia, análisis-funciones, cálculo-integral]
 ---
 
-# Asíntotas en Integrales Definidas
+# 🎯 Asíntotas en Integrales Definidas
 
 >[!quote] *"Las asíntotas en integrales definidas revelan los secretos del comportamiento límite de las funciones. Cuando una función se acerca a sus fronteras—ya sea el infinito o una discontinuidad vertical—la integral definida nos muestra si el área bajo la curva permanece finita o se escapa hacia el infinito, convirtiendo integrales ordinarias en extraordinarias integrales impropias."*
 >
 
 > [!info]+ Definiciones Fundamentales 📏
+>
 > ### Asíntotas y su Impacto en Integrales
 > Una **asíntota** es una línea recta que una función se aproxima pero nunca toca. En integrales definidas, las asíntotas crean **situaciones especiales** que transforman integrales propias en **integrales impropias**.
-> 
+>
 > ### Tipos de Asíntotas Relevantes
 > - **Asíntota Vertical**: $x = a$ donde $\lim_{x \to a} f(x) = \pm\infty$
 > - **Asíntota Horizontal**: $y = L$ donde $\lim_{x \to \pm\infty} f(x) = L$
 > - **Asíntota Oblicua**: $y = mx + b$ donde $\lim_{x \to \pm\infty} [f(x) - (mx + b)] = 0$
-> 
+>
 > ### Transformación a Integral Impropia
 > $$\int_a^b f(x)dx \rightarrow \text{Integral Impropia cuando hay asíntotas en }[a,b]$$
 >
 
 > [!note] Clasificación de Asíntotas en Integrales 📊
-> ![[Diagramas/04_-_Asíntotas_en_Integrales_Definidas_01.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Asíntotas_en_Integrales_Definidas_01.svg]]
+>
+> **Se lee así:** El diagrama tiene una caja central que abre tres ramas horizontales, una por cada tipo de asíntota: vertical, horizontal y oblicua. Solo la rama de la asíntota vertical continúa hacia un recuadro final de advertencia, mientras que las otras dos cierran en su propia caja. Ese último recuadro resume la consecuencia: si aparece una singularidad o asíntota dentro del intervalo de integración, la integral deja de ser propia y hay que tratarla con límites.
+>
+> **Por qué importa:** Te enseña que las asíntotas son la señal de que debes cambiar de método, no solo un dato de la gráfica. Reconocerlas evita que apliques el teorema fundamental del cálculo a una integral que en realidad es impropia.
+>
+> **Ejemplo:** Con $\int_0^{1} \frac{1}{\sqrt{1-x^2}} dx$, la asíntota vertical en $x = 1$ te obliga a escribir $\lim_{t \to 1^-} \int_0^t \frac{1}{\sqrt{1-x^2}} dx$, que converge a $\frac{\pi}{2}$.
 >
 
 > [!tip] Asíntotas Verticales en Integrales 🔬
+>
 > ### Caso 1: Asíntota en un Extremo
 > **Si $f(x)$ tiene asíntota vertical en $x = b$:**
 > $$\int_a^b f(x)dx = \lim_{t \to b^-} \int_a^t f(x)dx$$
-> 
+>
 > **Ejemplo:** $\int_0^1 \frac{1}{\sqrt{1-x^2}}dx$
 > ```
 > f(x) = 1/√(1-x²) tiene asíntota vertical en x = 1
 > ∫₀¹ 1/√(1-x²) dx = lim(t→1⁻) ∫₀ᵗ 1/√(1-x²) dx
 >                   = lim(t→1⁻) [arcsin(x)]₀ᵗ
 >                   = lim(t→1⁻) [arcsin(t) - 0] = π/2
-> 
+>
 > → La integral converge a π/2
 > ```
-> 
+>
 > ### Caso 2: Asíntota en el Interior
 > **Si $f(x)$ tiene asíntota vertical en $x = c$ donde $a < c < b$:**
 > $$\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b f(x)dx$$
-> 
+>
 > **Ambas integrales deben converger para que la integral total converge**
-> 
+>
 > ### Caso 3: Múltiples Asíntotas
 > **Si hay asíntotas en varios puntos, cada segmento debe analizarse por separado**
 >
 
 > [!example] Asíntotas Horizontales y Oblicuas 🧮
+>
 > ### Asíntotas Horizontales: $y = L$
 > **Cuando $\lim_{x \to \infty} f(x) = L \neq 0$:**
 > $$\int_a^{\infty} f(x)dx \text{ generalmente diverge}$$
-> 
+>
 > **Ejemplo:** $\int_1^{\infty} \frac{2x^2 + 1}{x^2 + 3}dx$
 > ```
 > lim(x→∞) (2x² + 1)/(x² + 3) = lim(x→∞) (2 + 1/x²)/(1 + 3/x²) = 2
-> 
+>
 > Como f(x) → 2 ≠ 0, la integral diverge hacia +∞
 > ```
-> 
+>
 > ### Asíntotas Oblicuas: $y = mx + b$
 > **Para determinar convergencia, analizamos:**
 > $$\int_a^{\infty} [f(x) - (mx + b)]dx$$
-> 
+>
 > **Proceso:**
 > 1. Encontrar $m = \lim_{x \to \infty} \frac{f(x)}{x}$
 > 2. Encontrar $b = \lim_{x \to \infty} [f(x) - mx]$
 > 3. Analizar $\int [f(x) - (mx + b)]dx$
-> 
+>
 > **Ejemplo:** $\int_1^{\infty} (\sqrt{x^2 + x} - x)dx$
 > ```
 > f(x) = √(x² + x) - x
-> 
+>
 > Racionalizando: f(x) = [√(x² + x) - x][√(x² + x) + x]/[√(x² + x) + x]
 >                      = x/[√(x² + x) + x]
 >                      = 1/[√(1 + 1/x) + 1] → 1/2 cuando x → ∞
-> 
+>
 > Como f(x) → 1/2 ≠ 0, necesitamos analizar más cuidadosamente:
 > ∫₁^∞ x/[√(x² + x) + x] dx converge (puede demostrarse)
 > ```
 >
 > [!abstract] Análisis Detallado con Ejemplos Prácticos 📚
+>
 > ### Ejemplo 1: Asíntota Vertical en Extremo
 > **Analizar:** $\int_0^{\pi/2} \tan(x)dx$
-> 
+>
 > **Solución:**
 > ```
 > tan(x) tiene asíntota vertical en x = π/2
-> 
+>
 > ∫₀^(π/2) tan(x)dx = lim(t→(π/2)⁻) ∫₀ᵗ tan(x)dx
 >                    = lim(t→(π/2)⁻) [-ln|cos(x)|]₀ᵗ
 >                    = lim(t→(π/2)⁻) [-ln|cos(t)| + ln(1)]
 >                    = lim(t→(π/2)⁻) [-ln|cos(t)|] = +∞
-> 
+>
 > → La integral diverge debido a la asíntota vertical
 > ```
-> 
+>
 > ### Ejemplo 2: Asíntota en el Interior
 > **Analizar:** $\int_{-1}^1 \frac{1}{x^2}dx$
-> 
+>
 > **Solución:**
 > ```
 > f(x) = 1/x² tiene asíntota vertical en x = 0 (interior del intervalo)
-> 
+>
 > ∫₋₁¹ 1/x² dx = ∫₋₁⁰ 1/x² dx + ∫₀¹ 1/x² dx
-> 
+>
 > ∫₀¹ 1/x² dx = lim(t→0⁺) ∫ₜ¹ x⁻² dx = lim(t→0⁺) [-x⁻¹]ₜ¹ = lim(t→0⁺) [-1 + 1/t] = +∞
-> 
+>
 > Como una de las integrales diverge → La integral total diverge
 > ```
-> 
+>
 > ### Ejemplo 3: Comportamiento Asintótico
 > **Analizar:** $\int_1^{\infty} \frac{x + \sin(x)}{x^2}dx$
-> 
+>
 > **Solución:**
 > ```
 > f(x) = (x + sin(x))/x² = 1/x + sin(x)/x²
-> 
+>
 > Asíntota oblicua: Como x → ∞, f(x) ~ 1/x
 > No hay asíntota horizontal (f(x) → 0)
-> 
+>
 > ∫₁^∞ (x + sin(x))/x² dx = ∫₁^∞ 1/x dx + ∫₁^∞ sin(x)/x² dx
-> 
+>
 > ∫₁^∞ 1/x dx = ln(x)]₁^∞ = ∞ → Diverge
-> 
+>
 > Aunque ∫₁^∞ sin(x)/x² dx converge, la integral total diverge
 > ```
 >
 
 > [!success] Estrategias de Análisis 🎯
+>
 > ### Metodología de Identificación
-> ![[Diagramas/04_-_Asíntotas_en_Integrales_Definidas_02.svg]]
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Asíntotas_en_Integrales_Definidas_02.svg]]
+>
+> **Se lee así:** Es un árbol que arranca con una caja que enuncia el caso a resolver y baja a una caja de descomposición, desde la que salen dos ramas paralelas. Cada rama termina en un recuadro de veredicto, diverge en una y converge en la otra, y ambas flechas se reencuentran en una caja final común que cierra el recorrido con la conclusión sobre la integral total.
+>
+> **Por qué importa:** Fíjate en que el esquema te obliga a separar el integrando en partes y a juzgar cada una por separado antes de sumar. Esto te evita el error típico de declarar convergente la integral porque una de las partes lo es, y te muestra **por qué** una parte divergente arruina el total.
+>
+> **Ejemplo:** Con $\int_1^{\infty} \frac{x + \sin x}{x^2} dx$ de la nota, la rama de $\frac{1}{x}$ diverge, la de $\frac{\sin x}{x^2}$ converge por comparación con $\frac{1}{x^2}$ y la caja final concluye que la integral total diverge.
+>
 > ### Técnicas de Evaluación
 > 4. **Identificar todas las asíntotas** en el intervalo de integración
 > 5. **Determinar el tipo** de asíntota (vertical, horizontal, oblicua)
@@ -144,19 +164,20 @@ dg-publish: true
 >
 
 > [!warning] Errores Comunes y Precauciones ⚠️
+>
 > ### Errores Frecuentes
 > - **🔍 No identificar asíntotas en el interior**: Verificar todo el intervalo [a,b]
 > - **📊 Confundir tipos de asíntotas**: Vertical vs horizontal vs oblicua
 > - **⚠️ No transformar correctamente**: Integral propia → impropia
 > - **🔄 Evaluar límites incorrectamente**: Direcciones laterales importantes
 > - **➕ No separar correctamente**: Múltiples discontinuidades requieren separación
-> 
+>
 > ### Verificaciones Importantes
 > - **📈 Análisis gráfico**: Visualizar la función y sus asíntotas
 > - **🔢 Límites laterales**: Verificar comportamiento desde ambos lados
 > - **⚖️ Criterios de convergencia**: Aplicar tests apropiados
 > - **🧮 Cálculo paso a paso**: No saltar pasos en evaluación de límites
-> 
+>
 > ### Casos Especiales
 > - **🌀 Funciones oscilatorias**: $\sin(x)/x$, $\cos(x)/x^p$
 > - **📏 Funciones racionales**: Analizar grados del numerador y denominador
@@ -164,8 +185,10 @@ dg-publish: true
 > - **💫 Funciones exponenciales**: Crecimiento rápido vs decaimiento
 >
 
-> [!summary]+ Tabla de Referencia Rápida 📋
+> [!abstract]+ Tabla de Referencia Rápida 📋
+>
 > ### Tipos de Asíntotas y Consecuencias
+>
 > | Tipo de Asíntota | Ubicación | Transformación | Análisis Requerido |
 > |------------------|-----------|----------------|-------------------|
 > | **Vertical** | x = a (extremo) | $\lim_{t \to a^-} \int f(x)dx$ | Criterio p para discontinuidades |
@@ -173,7 +196,7 @@ dg-publish: true
 > | **Horizontal** | y = L ≠ 0 | $\int_a^{\infty} f(x)dx$ | Generalmente diverge |
 > | **Horizontal** | y = 0 | $\int_a^{\infty} f(x)dx$ | Aplicar criterios convergencia |
 > | **Oblicua** | y = mx + b | $\int [f(x) - (mx + b)]dx$ | Analizar diferencia |
-> 
+>
 > ### Funciones de Referencia con Asíntotas
 > ```
 > tan(x):         Asíntota vertical en x = π/2 + nπ
@@ -186,6 +209,7 @@ dg-publish: true
 > ```
 >
 > [!brain]+ Técnica de Memorización: ASÍNTOTAS 🧠
+>
 > **A** - Analizar discontinuidades primero
 > **S** - Separar intervalos con asíntotas múltiples
 > **Í** - Identificar tipo: vertical, horizontal, oblicua
@@ -198,6 +222,7 @@ dg-publish: true
 >
 
 > [!success] Puntos Clave para Recordar 🎯
+>
 > 1. **🔍 Identificación completa**: Buscar todas las asíntotas en [a,b]
 > 2. **⚡ Transformación automática**: Asíntotas → integrales impropias
 > 3. **📊 Tipos distintos**: Cada tipo de asíntota requiere análisis diferente
@@ -208,17 +233,19 @@ dg-publish: true
 
 ---
 
-## Referencias
+## 📚 Referencias
 
 > [!quote] Notas Relacionadas
+>
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]]
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/02 - Criterios de Convergencia y Divergencia.md#Criterios de Convergencia y Divergencia - Integrales Impropias|Criterios de Convergencia y Divergencia - Integrales Impropias]]
 > - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones.md|02 - Asíntotas y Comportamiento de Funciones.md]]
 > - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
 
-## Notas Recomendadas
+## 🔗 Notas Recomendadas
 
 > [!info] Prerrequisitos
+>
 > - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones.md|02 - Asíntotas y Comportamiento de Funciones.md]]
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]]
 > - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
@@ -226,6 +253,7 @@ dg-publish: true
 >
 
 > [!tip] Continuación del Tema
+>
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/02 - Criterios de Convergencia y Divergencia.md#Criterios de Convergencia y Divergencia - Integrales Impropias|Criterios de Convergencia y Divergencia - Integrales Impropias]]
 > - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
 > - [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md|01 - Análisis Completo de Funciones.md]]
@@ -233,4 +261,4 @@ dg-publish: true
 
 ---
 
-**Tags:** #matemáticas #asíntotas #integrales-definidas #integrales-impropias #discontinuidades #límites #convergencia #análisis-funciones #cálculo-integral #comportamiento-asintótico
+**Tags:** #MATG1045 #unidad6 #asintotas-en-integrales-definidas #matemáticas #asíntotas #integrales-definidas #integrales-impropias #discontinuidades #límites #convergencia #análisis-funciones #cálculo-integral #comportamiento-asintótico

@@ -1,0 +1,18 @@
+flowchart TD
+    A[Integral definida] --> B{¿Forma estándar?}
+    B -->|Sí| C[Aplicar TFC directo]
+    B -->|No| D{¿Producto de funciones?}
+    D -->|Sí| E{¿Una deriva la otra?}
+    E -->|Sí| F[Sustitución]
+    E -->|No| G[Integración por partes]
+    D -->|No| H{¿Fracción racional?}
+    H -->|Sí| I[Fracciones parciales]
+    H -->|No| J{¿Radical con cuadrática?}
+    J -->|Sí| K[Sustitución trigonométrica]
+    J -->|No| L[Técnicas especiales]
+    
+    style C fill:#96ceb4
+    style F fill:#45b7d1
+    style G fill:#ff6b6b
+    style I fill:#ffd93d
+    style K fill:#6bcf7f

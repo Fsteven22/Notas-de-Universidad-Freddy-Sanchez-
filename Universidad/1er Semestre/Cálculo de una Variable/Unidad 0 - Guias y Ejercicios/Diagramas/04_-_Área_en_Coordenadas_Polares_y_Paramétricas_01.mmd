@@ -1,0 +1,25 @@
+---
+title: "Área_en_Coordenadas_Polares_y_Paramétricas_01"
+---
+flowchart TD
+    A["Área entre curvas polares<br/>r = f(θ) y r = g(θ)"]
+    P1["1. Identificar las curvas"]
+    P2["2. Intersecciones:<br/>resolver f(θ) = g(θ)"]
+    P3["3. Límites de integración<br/>α y β"]
+    P4["4. Verificar el radio mayor<br/>en cada intervalo:<br/>r_ext y r_int"]
+    P5["5. Fórmula:<br/>A = ½ · ∫ desde α hasta β de<br/>(r_ext² − r_int²) dθ"]
+    N["Si el radio mayor cambia<br/>de curva dentro de [α, β],<br/>dividir en subintervalos"]
+    A --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> N
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style P1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P4 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P5 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style N fill:#ffebee,stroke:#e53935,color:#4a1010
