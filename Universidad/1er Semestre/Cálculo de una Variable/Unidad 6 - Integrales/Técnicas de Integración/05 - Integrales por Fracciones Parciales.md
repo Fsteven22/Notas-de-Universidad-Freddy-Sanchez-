@@ -93,6 +93,12 @@ tags: [MATG1045, unidad6, integrales-por-fracciones-parciales, matemáticas, cá
 > [!info] 🖼️ Fundamento Teórico
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_por_Fracciones_Parciales_02.svg]]
+>
+> **Se lee así:** El diagrama separa dos planos: arriba, una caja central sobre antiderivadas estándar se abre en tres ramas, según el factor que aparezca en el denominador, y cada rama termina en su fórmula; abajo, otra rama lleva a la base teórica, que se abre en tres pilares algebraicos. Todo son rectángulos, sin decisiones, y las flechas van en un solo sentido, de la causa a la consecuencia.
+>
+> **Por qué importa:** Esta es la tabla que necesitas cuando ya descompusiste la fracción: **cada tipo de factor pide una antiderivada distinta**, y confundirlas es el error típico. Entender los tres pilares te da la garantía de que la descomposición que encontraste es única y no arbitraria.
+>
+> **Ejemplo:** En $\int \frac{x+5}{x^2 + x - 2} dx$ de la nota, los factores $x+2$ y $x-1$ caen en la rama de lineal simple y cada uno aporta su logaritmo.
 
 ---
 

@@ -137,6 +137,12 @@ tags: [MATG1045, unidad6, integrales-de-funciones-inversas, calculo, integrales,
 > [!info] 🖼️ Casos con Potencias
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_02.svg]]
+>
+> **Se lee así:** Fíjate en que el diagrama es una cadena vertical de seis rectángulos sin ramas: arranca con el esqueleto de la integral de arcoseno y avanza paso a paso. De la primera caja sale el bloque de integración por partes con el reparto de u, dv, du y v; luego dos cajas encadenadas muestran la integral que sobra y su antiderivada elemental, y al final una caja de resultado y otra de verificación por derivada.
+>
+> **Por qué importa:** **Cada paso queda justificado**, así evitas saltarte la integral residual y reconoces que el truco está en ver que ya es elemental. La verificación por derivada es tu red de seguridad cuando el signo de la raíz no parece cuadrar.
+>
+> **Ejemplo:** En $\int \arcsin(x) dx$ de la nota, el diagrama desglosa el cálculo hasta llegar a $x\arcsin(x) + \sqrt{1-x^2} + C$.
 
 ## 🔄 Identidades y Relaciones Útiles
 
@@ -303,6 +309,12 @@ tags: [MATG1045, unidad6, integrales-de-funciones-inversas, calculo, integrales,
 > [!info] 🖼️ Patrones de Reconocimiento
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_03.svg]]
+>
+> **Se lee así:** Aquí el diagrama tiene forma de árbol: una caja central abre hacia cuatro destinos, tres de ellos de aplicaciones (geometría con áreas y longitudes, longitud de arco, probabilidad con distribuciones especiales) y uno de práctica, que a su vez se ramifica en tres niveles de dificultad. Una quinta flecha lleva a una caja aparte con el patrón de las potencias, que exigen por partes repetidas.
+>
+> **Por qué importa:** Te sirve para **ubicar un problema dentro de la ruta**: si te piden un área o una longitud de arco con inversa trigonométrica, ya sabes por dónde entrar. También te avisa que las potencias, como $\arcsin^2(x)$, ya no se resuelven con una sola aplicación de por partes.
+>
+> **Ejemplo:** El ejercicio 4 de la nota, $\int \arcsin^2(x) dx$, cae en el nivel intermedio y activa el patrón de por partes repetidas.
 
 ---
 

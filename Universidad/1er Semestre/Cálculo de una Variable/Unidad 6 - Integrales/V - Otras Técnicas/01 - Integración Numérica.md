@@ -39,6 +39,12 @@ tags: [MATG1045, unidad6, integracion-numerica, matematicas/calculo/numerico, in
 > [!info] 🖼️ Principio Fundamental: Suma de Riemann
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integración_Numérica_01.svg]]
+>
+> **Se lee así:** El diagrama avanza en línea recta hasta llegar a un rombo, la única decisión del recorrido: *¿con qué aproximo $f(x)$?*. De ese rombo salen tres ramas rotuladas *constante*, *lineal* y *cuadrática*, que llevan a la regla del rectángulo, la del trapecio y la de Simpson, y cada una desemboca en una caja final que resume el tipo de área que se está sumando.
+>
+> **Por qué importa:** Este es el **mapa de los métodos numéricos**: todos nacen de la suma de Riemann y solo cambian en cómo se elige el punto de muestra y qué polinomio se usa en cada tramo. Con el mapa entiendes por qué Simpson da menos error que el trapecio con el mismo $n$.
+>
+> **Ejemplo:** Para aproximar $\int_0^2 x^2 dx$ con $n = 4$ en la nota, tomas la rama cuadrática, o sea Simpson, y obtienes $\frac{8}{3}$ exacto.
 
 ## 📊 Regla del Rectángulo (Riemann)
 

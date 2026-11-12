@@ -38,6 +38,12 @@ tags: [MATG1045, unidad6, integrales-en-coordenadas-polares, matemáticas, integ
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Integrales_en_Coordenadas_Polares_01.svg]]
 >
+> **Se lee así:** El diagrama tiene dos caminos separados: a la izquierda, una cadena de cuatro rectángulos que va del sector circular infinitesimal a sus dimensiones y termina en el producto del incremento radial por el arco; a la derecha, una visualización hecha con caracteres, donde una franja sombreada entre dos radios muestra la altura aproximada y la apertura $d\theta$.
+>
+> **Por qué importa:** **El factor $r$ no sale de la nada**, aparece porque el arco crece con el radio, así que las zonas lejanas del origen aportan más área. Olvidarlo es el error número uno de la nota, y este diagrama te lo deja ver en vez de memorizarlo.
+>
+> **Ejemplo:** Al calcular el área de la cardioide $r = a(1+\cos\theta)$ de la nota, el integrando incluye $r$ porque $dA = r\,dr\,d\theta$.
+>
 > ### Construcción del Sector Circular
 > **Consideremos un sector circular infinitesimal:**
 > - **Radio interior**: $r$
