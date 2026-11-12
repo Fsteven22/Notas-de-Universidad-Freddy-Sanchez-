@@ -62,6 +62,12 @@ tags: [MATG1045, unidad6, antiderivadas-primitivas, matemáticas, cálculo, anti
 > [!info] 🖼️ Definiciones y Notación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Antiderivadas_(Primitivas)_02.svg]]
+>
+> **Se lee así:** Se lee así como un ciclo de ida y vuelta entre dos rectángulos: del rectángulo con la función $f$ sale una flecha de antiderivación hacia el rectángulo $F + C$, y de ese mismo rectángulo sale una flecha de derivación que vuelve a $f$. Una tercera caja, la familia de funciones, se une por flecha a $F + C$, así queda claro que a un integrando le corresponde toda una familia de antiderivadas.
+>
+> **Por qué importa:** Fíjate en que el diagrama te fija el orden mental correcto: primero derivas para verificar y después integras para construir. Te evita el error típico de integrar una sola función y olvidar que la respuesta es una familia completa, y te muestra de inmediato que derivar e integrar son operaciones inversas.
+>
+> **Ejemplo:** Por ejemplo, al resolver $\int 2x\,dx$ reconoces la flecha de antiderivación y obtienes $x^2 + C$, y al derivar $x^2 + C$ compruebas que vuelves a $2x$.
 
 ---
 
@@ -87,6 +93,12 @@ tags: [MATG1045, unidad6, antiderivadas-primitivas, matemáticas, cálculo, anti
 > [!info] 🖼️ Fórmulas Básicas de Antiderivadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-integrales-tabla-20-notables.jpg]]
+>
+> **Se lee así:** Se lee así como un catálogo numerado de veinte entradas: en cada línea aparece un integrando y, a continuación, su antiderivada, cerrada siempre con la constante $C$. Los bloques van por familias: potencias elementales, logaritmos y exponenciales, trigonométricas directas, inversas trigonométricas y, al final, las hiperbólicas. Es una hoja de consulta para reconocer de un vistazo qué fórmula aplica.
+>
+> **Por qué importa:** Fíjate en que tener esta tabla a la mano te ahorra el error de improvisar la antiderivada de un seno o de un $1/x$. Además te recuerda que **toda** integral indefinida termina en $+ C$, y que el valor absoluto en los logaritmos no es opcional.
+>
+> **Ejemplo:** Un ejercicio típico es calcular $\int (2\sin x - 3\cos x + 4\sec^2 x)\,dx$, donde la tabla te da directo las tres antiderivadas que debes combinar.
 ## 📏 Propiedades de las Antiderivadas
 
 > [!tip] 📋 Propiedades Lineales
@@ -197,6 +209,12 @@ tags: [MATG1045, unidad6, antiderivadas-primitivas, matemáticas, cálculo, anti
 > [!info] 🖼️ Interpretación Geométrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Antiderivadas_(Primitivas)_03.svg]]
+>
+> **Se lee así:** Se lee así como dos caminos que desembocan en la familia de antiderivadas. Por un lado, la función $f$ atraviesa un rombo de decisión, el campo de direcciones, y sale hacia la familia $F + C$, desde donde se abren tres ramas: curva de referencia con $C = 0$, curvas superiores con $C > 0$ y curvas inferiores con $C < 0$. Por otro lado, una cadena va de la condición inicial a fijar el valor de $C$ y luego a escoger una única curva.
+>
+> **Por qué importa:** Este esquema te muestra visualmente que **todas** las antiderivadas de $f$ tienen la misma forma y solo se distinguen por su altura. Te sirve para entender por qué, si te dan un punto por el que pasa la curva, esa condición es la que fija $C$ y deja un solo miembro de la familia.
+>
+> **Ejemplo:** Toma el caso de la nota: con $f(x) = 2x$ la familia es $x^2 + C$, y el problema de valor inicial $F'(x) = 3x^2 - 4x + 1$, $F(2) = 10$ te deja una sola curva.
 
 ---
 

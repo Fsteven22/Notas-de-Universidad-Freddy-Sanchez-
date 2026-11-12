@@ -193,6 +193,12 @@ tags: [MATG1045, unidad4, tabla-de-derivadas-basicas, matemáticas, cálculo, de
 > [!info] 🖼️ Notas Recomendadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-13-reglas-dx.png]]
+>
+> **Se lee así:** Se ve una tabla enmarcada de trece filas, agrupadas por familias de funciones: algebraicas, exponenciales, logarítmicas y trigonométricas. Cada fila enfrenta la función en una columna con su derivada en la otra, y todas las igualdades están escritas con la notación de operador $D_x(f) = f'$. Debajo hay un pie que la presenta como referencia de consulta rápida.
+>
+> **Por qué importa:** Es tu chuleta para no improvisar: con la tabla a la vista pasas de la función al resultado sin memorizar de memoria, y la notación de operador te prepara para las reglas de composición.
+>
+> **Ejemplo:** En un parcial te piden derivar $f(x) = e^x + \sin x$: consultas la tabla, sumas las derivadas de cada parte y obtienes $f'(x) = e^x + \cos(x)$.
 ---
 
 **Tags:** #MATG1045 #unidad4 #tabla-de-derivadas-basicas #matemáticas #cálculo #derivadas #fórmulas-básicas #referencia-rápida #cálculo-diferencial #tabla-derivadas

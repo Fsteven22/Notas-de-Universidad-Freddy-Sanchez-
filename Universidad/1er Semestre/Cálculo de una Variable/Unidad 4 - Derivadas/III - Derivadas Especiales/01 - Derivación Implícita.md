@@ -57,6 +57,12 @@ tags: [MATG1045, unidad4, derivacion-implicita, calculo, derivadas, regla-cadena
 > [!info] 🖼️ Métodos de Estudio y Mnemotecnias
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivación_Implícita_01.svg]]
+>
+> **Se lee así:** El diagrama arranca con la ecuación implícita en un rectángulo y baja hasta un **rombo de decisión** que es el nudo central. De él salen cuatro ramas rotuladas por el tipo de término: solo $x$, solo $y$, producto $xy$ o composición, y cada una lleva a su propio rectángulo con la regla que corresponde. Las cuatro vuelven a juntarse en una columna final de tres rectángulos encadenados: agrupar los términos con $\frac{dy}{dx}$, factorizar y despejar.
+>
+> **Por qué importa:** Te evita el error más caro de la técnica: olvidar el $\frac{dy}{dx}$ en los términos con $y$. Con este mapa decides *qué regla* usas en cada parte y llegas al despeje sin saltos ni cuentas a medias.
+>
+> **Ejemplo:** En la elipse $\frac{x^2}{16} + \frac{y^2}{9} = 1$ de la nota, derivas ambos lados, aplicas la cadena al bloque con $y$ y despejas $\frac{dy}{dx} = -\frac{9x}{16y}$.
 
 ## 🧮 Ejemplos Básicos
 

@@ -23,6 +23,12 @@ tags: [MATG1045, unidad4, derivacion-logaritmica, calculo, derivadas, funciones-
 > [!info] 🖼️ Principio Base
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Derivación_Logarítmica_01.svg]]
+>
+> **Se lee así:** Es una cadena recta de rectángulos, sin decisiones: cada caja es un paso y la flecha apunta al siguiente. La secuencia va de la función complicada a la aplicación del logaritmo, pasa por las propiedades del $\ln$ que convierten productos en sumas y potencias en coeficientes, sigue con la derivación implícita de ambos lados y termina despejando $\frac{dy}{dx}$ y volviendo a sustituir $y = f(x)$.
+>
+> **Por qué importa:** Muestra el esqueleto de la técnica: el logaritmo no es un truco, es una forma de **convertir multiplicaciones en sumas**. Si te saltas la caja de propiedades, pierdes justo la ventaja que hace el método rápido.
+>
+> **Ejemplo:** Para derivar $y = x^2(x+1)^3\sqrt{x-2}$ de la nota, tomas $\ln|y|$, lo separas en $2\ln x + 3\ln(x+1) + \frac{1}{2}\ln(x-2)$ y derivas esa suma.
 
 ## 📊 Casos de Aplicación
 
@@ -87,6 +93,12 @@ tags: [MATG1045, unidad4, derivacion-logaritmica, calculo, derivadas, funciones-
 > [!info] 🖼️ 3️⃣ Funciones de la Forma $f(x)^{g(x)}$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Derivación_Logarítmica_02.svg]]
+>
+> **Se lee así:** Es una cadena de seis rectángulos sin ramas: se parte de la potencia con base y exponente variables, se aplica el logaritmo y se llega a la igualdad clave, donde el exponente multiplica al logaritmo de la base. De ahí se deriva con la regla del producto, se despeja $\frac{dy}{dx}$ y la respuesta final aparece multiplicada por la potencia original.
+>
+> **Por qué importa:** Aquí ninguna regla directa sirve: la de potencias no admite exponente variable y la exponencial no admite base variable. **El logaritmo es la única salida**, y el diagrama te fija el orden en que van los pasos.
+>
+> **Ejemplo:** Con $y = x^x$ el diagrama se reduce a $\ln y = x\ln x$, de donde $\frac{1}{y}\frac{dy}{dx} = \ln x + 1$ y $\frac{dy}{dx} = x^x(\ln x + 1)$.
 
 > [!example] 🔢 Ejemplo 3: $x^x$
 >
@@ -168,6 +180,12 @@ tags: [MATG1045, unidad4, derivacion-logaritmica, calculo, derivadas, funciones-
 > [!info] 🖼️ Patrones de Reconocimiento Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Derivación_Logarítmica_03.svg]]
+>
+> **Se lee así:** Es un **árbol de decisión**: de una caja de entrada se llega a un rombo que pregunta cuántos factores multiplican o dividen. Con uno o dos, la rama baja a los métodos directos, producto o cociente; con tres o más, pasa a una caja que pregunta por los exponentes variables y desde ahí las ramas van a la derivación logarítmica obligatoria, la muy recomendada o la comparación entre métodos, según aparezcan o no raíces y potencias fraccionarias.
+>
+> **Por qué importa:** Te da el criterio antes de derivar y evita los dos extremos: encadenar la regla del producto sobre seis factores o aplicar logaritmos a un producto de dos, donde el método directo es más rápido.
+>
+> **Ejemplo:** Para $y = \sqrt{x}\sqrt[3]{x+1}\sqrt[4]{x+2}\sqrt[5]{x+3}$ la nota muestra que hay cuatro raíces, así que entras por la rama logarítmica y terminas sumando cuatro términos con $1/2$, $1/3$, $1/4$ y $1/5$.
 
 ### Casos Donde la Simplificación es Dramática
 

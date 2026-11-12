@@ -60,6 +60,12 @@ tags: [MATG1045, unidad4, derivadas-trigonometricas-exponenciales-y-logaritmicas
 > [!info] 🖼️ Métodos de Estudio y Mnemotecnias
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivadas_Trigonométricas,_Exponenciales_y_Logarítmicas_01.svg]]
+>
+> **Se lee así:** Se ven tres pares de rectángulos unidos por flechas de doble sentido, de modo que cada par forma un ciclo cerrado de dos pasos. El primer ciclo empareja seno con coseno y hace que uno se convierta en el otro; el segundo empareja tangente con secante y el tercero cotangente con cosecante. Cada ciclo repite sus propias dos fórmulas sin mezclarse con los demás.
+>
+> **Por qué importa:** Los signos y los cuadrados son donde más se equivocan los estudiantes. Tener el ciclo a la vista te deja *recorrer los dos pasos* y comprobar que la derivada de tangente trae $\sec^2(x)$ y no $\tan^2(x)$.
+>
+> **Ejemplo:** Para derivar $\sin^3(x)$ de la nota, reescribes $[\sin(x)]^3$, aplicas la regla de la potencia y usas el par seno-coseno para obtener $3\sin^2(x)\cos(x)$.
 
 ## 🧮 Ejemplos con Regla de la Cadena
 
@@ -313,6 +319,12 @@ tags: [MATG1045, unidad4, derivadas-trigonometricas-exponenciales-y-logaritmicas
 > [!info] 🖼️ Métodos de Estudio y Mnemotecnias
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivadas_Trigonométricas,_Exponenciales_y_Logarítmicas_02.svg]]
+>
+> **Se lee así:** Es un flujo con **dos decisiones en rombo** encadenadas. La primera separa las funciones de base natural o logaritmo natural de las que usan otra base, que necesitan el factor $\ln(a)$; en ambos casos las ramas vuelven a juntarse. La segunda decisión pregunta si hay composición: si la hay, se aplica la regla de la cadena y si no, la fórmula directa, y ambos caminos terminan en la misma caja de resultado final.
+>
+> **Por qué importa:** Resuelve las dos confusiones más frecuentes: olvidar el $\ln(a)$ en bases distintas de $e$ y saltarse la regla de la cadena. La segunda decisión te hace preguntarte *¿es compuesto o directo?* antes de derivar.
+>
+> **Ejemplo:** Para derivar $\ln(x^2+5x)$ de la nota, la primera decisión te manda a la fórmula del logaritmo natural y la segunda te hace aplicar la cadena, dando $\frac{2x+5}{x^2+5x}$.
 
 ## 🧮 Ejemplos Básicos
 

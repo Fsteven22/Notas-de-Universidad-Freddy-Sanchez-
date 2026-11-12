@@ -26,6 +26,12 @@ tags: [MATG1045, unidad4, derivadas-parametricas, calculo, derivadas, parametric
 > [!info] 🖼️ Fórmula Fundamental
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivadas_Paramétricas_01.svg]]
+>
+> **Se lee así:** El flujo arranca con la curva paramétrica en un rectángulo, sigue por el cálculo de las dos derivadas respecto al parámetro y llega a un **rombo de decisión** que pregunta si $\frac{dx}{dt}$ es distinto de cero. Si es así, una rama lleva a la caja de la pendiente $\frac{dy}{dx} = \frac{g'(t)}{f'(t)}$ y de ahí a evaluarla en un valor concreto de $t$; si no, la otra lleva a la tangente vertical o al punto singular, que se analizan aparte.
+>
+> **Por qué importa:** Te ordena el trabajo en pasos fijos y te obliga a **verificar la condición $\frac{dx}{dt} \neq 0$** antes de dividir. Esa comprobación evita el error clásico de dividir entre cero y perder tangentes verticales.
+>
+> **Ejemplo:** Para $x = t^3 - 3t$, $y = t^2$ de la nota, el cociente $\frac{2t}{3(t^2-1)}$ da tangente horizontal en $t = 0$ y tangentes verticales en $t = \pm 1$.
 
 ### 🧮 Justificación Matemática
 

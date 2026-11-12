@@ -28,6 +28,12 @@ tags: [MATG1045, unidad4, derivadas-de-funciones-inversas, calculo, derivadas, f
 > [!info] 🖼️ Teorema Fundamental
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Derivadas_de_Funciones_Inversas_01.svg]]
+>
+> **Se lee así:** Es una cadena vertical de rectángulos, sin rombos: cada paso depende del anterior. Se parte de tener una función invertible y su derivada, se pasa por el objetivo de hallar la derivada de la inversa, se usa la equivalencia que intercambia $x$ e $y$, se deriva esa relación de forma implícita, se despeja el cociente y se termina sustituyendo para dejar todo expresado en función de $x$.
+>
+> **Por qué importa:** Te da la ruta para derivar $\arcsin$, $\arctan$ o $\ln$ sin memorizar cada caso: inviertes la función, derivas y despejas. Además evita el error de escribir $(f^{-1})'(x) = \frac{1}{f'(x)}$, que **no es lo mismo**.
+>
+> **Ejemplo:** Para $y = \arctan(x)$ en la nota, usas $x = \tan(y)$, obtienes $\frac{dy}{dx} = \frac{1}{\sec^2(y)}$ y con $1 + \tan^2(y) = \sec^2(y)$ llegas a $\frac{1}{1+x^2}$.
 
 ### 🧮 Justificación Geométrica
 

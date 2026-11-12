@@ -32,6 +32,12 @@ tags: [MATG1045, unidad4, derivadas-de-orden-superior, calculo, derivadas, orden
 > [!info] 🖼️ Definición y Notación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivadas_de_Orden_Superior_01.svg]]
+>
+> **Se lee así:** Se ve una cadena de cinco rectángulos, uno por cada orden de derivación, donde cada caja apunta a la siguiente para mostrar que derivar es derivar de nuevo. De cada una sale además una flecha lateral hacia un recuadro de información paralelo, que indica qué aporta ese orden concreto: el valor, el crecimiento, la concavidad, los puntos de inflexión y el comportamiento más complejo.
+>
+> **Por qué importa:** Cada orden responde una pregunta distinta sobre la misma función: pendiente, velocidad, concavidad. Tener el mapa te evita confundir $f''(x) > 0$ con un máximo y te muestra **qué puedes concluir** de cada derivada.
+>
+> **Ejemplo:** En el análisis de $f(x) = x^4 - 4x^3 + 6x^2$ de la nota, la tercera derivada da $f'''(x) = 24(x-1)$ y con ella confirmas el punto de inflexión en $x = 1$.
 
 ## 📊 Cálculo de Derivadas de Orden Superior
 
@@ -113,6 +119,12 @@ tags: [MATG1045, unidad4, derivadas-de-orden-superior, calculo, derivadas, orden
 > [!info] 🖼️ 3️⃣ Funciones Trigonométricas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivadas_de_Orden_Superior_02.svg]]
+>
+> **Se lee así:** Aparecen dos ciclos cerrados de cuatro rectángulos, como dos ruedas que giran por separado. En cada rueda las casillas recorren el mismo ciclo de cuatro pasos: la función base, su derivada, la de la función opuesta y la de su opuesta, y la flecha de vuelta cierra el periodo. Los dos ciclos están desfasados, así que el coseno va un paso por delante del seno.
+>
+> **Por qué importa:** El periodo 4 es la clave: *¿cuántas derivadas hasta volver a la función original?* Con el ciclo a la vista no memorizas signos sueltos y puedes escribir la fórmula general con $n\pi/2$ sin equivocarte.
+>
+> **Ejemplo:** Para $\cos(x)$ de la nota, la cuarta derivada vuelve a $\cos(x)$, y por eso la fórmula general resulta $\frac{d^n}{dx^n}[\cos(x)] = \cos\left(x + \frac{n\pi}{2}\right)$.
 
 ### 4️⃣ Logaritmos y Potencias
 

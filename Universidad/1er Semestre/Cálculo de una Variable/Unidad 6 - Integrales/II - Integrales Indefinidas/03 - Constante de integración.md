@@ -34,6 +34,12 @@ tags: [MATG1045, unidad6, constante-de-integracion, matematicas/calculo/constant
 > [!info] 🖼️ ¿Por qué existe?
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_01.svg]]
+>
+> **Se lee así:** Se lee así como una cadena que arranca en una sola caja con la igualdad $\int f(x)\,dx = F(x) + C$, de la que salen dos flechas: una hacia la caja que identifica a $C$ como constante de integración de valores arbitrarios, y otra hacia el recuadro donde se deriva $F(x) + C$. Desde ahí el recorrido sigue hacia abajo y termina en la caja que recuerda que en una integral definida las constantes se cancelan.
+>
+> **Por qué importa:** Fíjate en que el diagrama encadena la definición, la demostración y la consecuencia en un solo recorrido. Te da la razón lógica de la $C$ (al derivarla da cero) y te evita el error de mantenerla en una integral definida, donde $[F(b)+C] - [F(a)+C]$ se simplifica a $F(b) - F(a)$.
+>
+> **Ejemplo:** En el problema de valor inicial de la nota, $\frac{dy}{dx} = 3x^2 - 2x$ con $y(1) = 5$, el diagrama marca que primero se integra con $C$ y luego la condición inicial la fija en $5$.
 
 ## 🌊 Interpretación Geométrica
 
@@ -61,6 +67,12 @@ tags: [MATG1045, unidad6, constante-de-integracion, matematicas/calculo/constant
 > [!info] 🖼️ Familia de Curvas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_02.svg]]
+>
+> **Se lee así:** Se lee así como un rectángulo inicial con el ejemplo $\int 2x\,dx = x^2 + C$, del que salen cuatro flechas hacia casos particulares: $C = 0$, $C = 2$, $C = -3$ y $C = k$, cada uno con su desplazamiento vertical. Una quinta flecha lleva a la caja que dice que todas las curvas tienen la misma pendiente $2x$ en cualquier punto, y desde ahí una última flecha cierra con que la forma es idéntica y solo se desplazan.
+>
+> **Por qué importa:** Esta vista te quita la duda de si la $C$ cambia la forma de la curva: no, solo la sube o la baja. Te sirve para entender por qué la derivada de todas ellas coincide y por qué, con un punto dado, se puede escoger una sola.
+>
+> **Ejemplo:** El caso de la nota con $C = 2$ y $C = -3$ te muestra las parábolas $y = x^2 + 2$ y $y = x^2 - 3$, que comparten la misma pendiente $2x$ en cada punto.
 
 ## 🔧 Determinación de la Constante
 
@@ -336,6 +348,12 @@ tags: [MATG1045, unidad6, constante-de-integracion, matematicas/calculo/constant
 > [!info] 🖼️ Análisis Funcional
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_03.svg]]
+>
+> **Se lee así:** Se lee así como una caja central sobre la $C$ en ecuaciones diferenciales de la que salen cinco flechas. Tres de ellas llevan a los casos de orden 1, 2 y $n$, con una, dos y $n$ constantes respectivamente; las otras dos van a la lectura de análisis funcional, que identifica el núcleo del operador derivada con las funciones constantes, y al recordatorio de que el valor particular de $C$ se fija con una condición inicial.
+>
+> **Por qué importa:** Fíjate en que el orden de la EDO y el número de constantes son el mismo dato. Esto te conecta lo que estás calculando con la solución de ecuaciones diferenciales y evita que trates la $C$ como un número decorativo en lugar de un parámetro que describe una familia de soluciones.
+>
+> **Ejemplo:** El doble caso de la nota, $\frac{d^2y}{dx^2} = 6$, da $y = 3x^2 + C_1 x + C_2$, con $C_1$ ligada a la velocidad inicial y $C_2$ a la posición inicial.
 
 ---
 

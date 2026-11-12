@@ -42,6 +42,12 @@ tags: [MATG1045, unidad6, integral-de-funciones-por-tramos, matemáticas, cálcu
 > [!info] 🖼️ Conexiones con Otros Temas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Integral_de_Funciones_por_Tramos_01.svg]]
+>
+> **Se lee así:** Se lee así como un mapa mental de cuatro ramas alrededor del nodo central. La primera es la definición, con sus hijos expresiones múltiples, intervalos diferentes, puntos de ruptura y continuidad. La segunda es la integración, con división del intervalo, integral por tramos, suma de resultados y evaluación de límites. La tercera reúne los tipos especiales, y la cuarta las aplicaciones, con modelos físicos, economía, procesamiento de señales y probabilidad.
+>
+> **Por qué importa:** Este mapa te ordena el tema completo: qué es una función por tramos, cómo se integra y para qué sirve. Te evita integrar la función equivocada en un subintervalo, el error más caro de esta técnica.
+>
+> **Ejemplo:** La función de Heaviside de la nota, $H(x)$, modela un interruptor en un circuito y su integral $\int_{-a}^{b} H(x)\,dx = b$ aparece en el procesamiento de señales.
 
 ---
 
@@ -311,6 +317,12 @@ tags: [MATG1045, unidad6, integral-de-funciones-por-tramos, matemáticas, cálcu
 > [!info] 🖼️ Visualización e Interpretación Geométrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Integral_de_Funciones_por_Tramos_02.svg]]
+>
+> **Se lee así:** Se lee así como un recorrido de cuatro pasos: de la función por tramos se pasa a la división en intervalos, luego al cálculo del área de cada tramo y de ahí a la suma algebraica de esas áreas. Por debajo, cinco cajas con los tramos 1, 2, 3, la elipsis y $n$ alimentan una caja central de suma total, y esa suma total es la que desemboca en la igualdad final de la integral con la suma de las áreas.
+>
+> **Por qué importa:** Fíjate en que el diagrama distingue el camino conceptual (dividir, calcular, sumar) del camino de los datos (cada tramo con su área). Te ayuda a no perder ningún subintervalo y a mantener los signos, porque las áreas negativas se restan.
+>
+> **Ejemplo:** Con $\int_{-2}^{3} |x|\,dx$ de la nota, el punto de ruptura en $x = 0$ parte el intervalo en dos y las áreas $2$ y $\frac{9}{2}$ se suman para dar $\frac{13}{2}$.
 
 ---
 

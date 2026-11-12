@@ -26,6 +26,12 @@ tags: [MATG1045, unidad6, metodos-de-integracion-definida, matematicas/calculo/m
 > [!info] 🖼️ Metodología Paso a Paso
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métodos_de_Integración_Definida_01.svg]]
+>
+> **Se lee así:** Se lee así como una secuencia de rectángulos que empieza en la integral definida original. Luego se pide identificar la sustitución $x = g(u)$, calcular el diferencial $dx = g'(u)\,du$ y buscar los nuevos límites; ese paso se bifurca en dos cajas, una por cada extremo, con $u_1$ y $u_2$ dados por las ecuaciones $g(u_1) = a$ y $g(u_2) = b$. Ambas flechas vuelven a unirse en la integral transformada, y la última caja es la evaluación en los nuevos límites.
+>
+> **Por qué importa:** Fíjate en que los límites son parte del cambio de variable, no un detalle final. Te evita el error más común de esta técnica, que es integrar en la variable nueva dejando los límites viejos, y te muestra que ambos extremos se resuelven con la misma ecuación.
+>
+> **Ejemplo:** Para $\int_1^4 \frac{x}{\sqrt{x-1}}\,dx$ de la nota, la sustitución $u = x - 1$ da los límites $u = 0$ y $u = 3$ y deja el integrando en una forma que se integra de inmediato.
 
 ### 🧪 Ejemplos de Sustitución
 
@@ -87,6 +93,12 @@ tags: [MATG1045, unidad6, metodos-de-integracion-definida, matematicas/calculo/m
 > [!info] 🖼️ Estrategia LIATE
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métodos_de_Integración_Definida_02.svg]]
+>
+> **Se lee así:** Se lee así como un rectángulo de entrada para identificar las funciones y un rombo de decisión donde se aplica LIATE. Del rombo salen dos ramas: una elige como $u$ la función prioritaria y otra toma el resto como $dv$ junto con $dx$. La rama de $u$ pide calcular $du$ y la de $dv$ pide calcular $v = \int dv$; ambas se juntan en la caja de aplicar la fórmula, y de ahí se pasa a evaluar los límites.
+>
+> **Por qué importa:** El rombo te obliga a decidir antes de integrar, y la regla LIATE te da un orden reproducible para decidir. Esto te evita los dos errores típicos: elegir mal $u$ y quedarte en un bucle de integrales que no avanzan, como el que aparece con $\int_0^{\pi} e^x \sin(x)\,dx$.
+>
+> **Ejemplo:** En $\int_1^e x \ln(x)\,dx$ de la nota, LIATE manda: $u = \ln(x)$ y $dv = x\,dx$, con $du = \frac{1}{x}dx$ y $v = \frac{x^2}{2}$.
 
 ### 🧪 Ejemplos de Integración por Partes
 
@@ -278,6 +290,12 @@ tags: [MATG1045, unidad6, metodos-de-integracion-definida, matematicas/calculo/m
 > [!info] 🖼️ Algoritmo de Decisión
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métodos_de_Integración_Definida_03.svg]]
+>
+> **Se lee así:** Se lee así como un algoritmo con rombos de decisión encadenados. El primer rombo pregunta si la integral está en forma estándar: si es sí, se aplica el teorema fundamental; si es no, se pasa al rombo del producto de funciones. Ese camino deriva a sustitución o a partes, y el resto lleva al rombo de fracción racional y al de radical con cuadrática, que terminan en fracciones parciales, sustitución trigonométrica o técnicas especiales.
+>
+> **Por qué importa:** Fíjate en que este diagrama te da un **criterio de decisión** antes de calcular, no una lista de técnicas sueltas. Te evita elegir la técnica equivocada, forzar una sustitución donde no aplica y perder tiempo cuando el teorema fundamental ya bastaba.
+>
+> **Ejemplo:** Con $\int_0^1 \frac{1}{\sqrt{1-x^2}}\,dx$ de la nota, el camino correcto es sustitución trigonométrica con $x = \sin(u)$ y límites $u = 0$ y $u = \frac{\pi}{2}$.
 
 ### 📋 Lista de Verificación
 
@@ -294,6 +312,12 @@ tags: [MATG1045, unidad6, metodos-de-integracion-definida, matematicas/calculo/m
 > [!info] 🖼️ Conexiones y Aplicaciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métodos_de_Integración_Definida_04.svg]]
+>
+> **Se lee así:** Se lee así como un mapa mental con un nodo central y cinco ramas: la sustitución, con sus hijos cambio de variable, límites nuevos y verificación; las partes, con LIATE, recursión y evaluación de límites; las fracciones parciales, con descomposición, factorización e integración término a término; las trigonométricas, con identidades, sustituciones estándar y geometría; y las aplicaciones, con áreas, volúmenes y física.
+>
+> **Por qué importa:** Fíjate en que el mapa te da el **índice** de la unidad de un vistazo: sabes qué técnica existe para cada tipo de problema y qué pasos tiene. Te evita trabajar de memoria suelta y te sirve para repasar antes de una evaluación.
+>
+> **Ejemplo:** Un caso de la carrera: al calcular el área de un semicírculo con $\int_0^a \sqrt{a^2 - x^2}\,dx$ recorres la rama de trigonométricas, con su sustitución estándar y la geometría del resultado.
 
 ---
 

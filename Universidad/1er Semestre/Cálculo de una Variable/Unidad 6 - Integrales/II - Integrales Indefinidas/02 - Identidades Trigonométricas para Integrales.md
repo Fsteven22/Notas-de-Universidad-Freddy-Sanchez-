@@ -52,6 +52,12 @@ tags: [MATG1045, unidad6, identidades-trigonometricas-para-integrales, matemáti
 > [!info] 🖼️ Identidades de Suma a Producto
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_02.svg]]
+>
+> **Se lee así:** Se lee así como una cadena de cinco rectángulos: la suma trigonométrica pasa por un paso de factorización, luego por un producto de factores, después por una sustitución del tipo $u = \ldots$ y termina en una integral estándar. Aparte aparecen dos pares de cajas, sin flechas hacia la cadena principal, que muestran una suma concreta y el producto factorizado equivalente.
+>
+> **Por qué importa:** Fíjate en que aquí la identidad no es un truco suelto: es un paso que abre la puerta a la sustitución y a las integrales estándar. Te evita quedarte atascado cuando la suma de dos senos o dos cosenos no tiene antiderivada directa, y te da el orden exacto: factorizar, sustituir, integrar.
+>
+> **Ejemplo:** El propio diagrama ilustra el paso con $\cos A - \cos B$, que se factoriza como $-2\operatorname{sen}\left(\frac{A+B}{2}\right)\operatorname{sen}\left(\frac{A-B}{2}\right)$ para poder integrarla por sustitución.
 
 ### 🎭 Identidades de Ángulo Doble y Mitad
 
@@ -98,6 +104,12 @@ tags: [MATG1045, unidad6, identidades-trigonometricas-para-integrales, matemáti
 > [!info] 🖼️ Estrategias de Selección de Identidades
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_03.svg]]
+>
+> **Se lee así:** Se lee así como un árbol de decisión. La integral trigonométrica entra a un rombo que pregunta por el tipo de expresión, y de ahí salen cuatro ramas: producto de funciones, potencias, suma de funciones o expresión racional. Cada rama lleva a su identidad, y de cada identidad sale un rectángulo con el paso final: integrar sumas simples, integrar términos lineales, factorizar y sustituir o resolver una integral racional en $t$.
+>
+> **Por qué importa:** Este diagrama te quita el *adivinar y probar*: antes de escribir un solo paso tienes que clasificar la expresión y elegir la identidad. Te evita perder tiempo con trigonométricas que no tienen antiderivada elemental en la forma en que están escritas.
+>
+> **Ejemplo:** Con $t = \tan(x/2)$ resuelves la integral de la nota $\int \frac{dx}{2 + \cos x}$, que al cambiar de variable se transforma en la integral racional $\int \frac{2\,dt}{3 + t^2}$.
 
 ## 🧠 Técnica de Estudio: Mnemotecnia "PRISA"
 
