@@ -44,6 +44,12 @@ tags: [MATG1045, unidad5, analisis-completo-de-funciones, calculo, analisis-func
 > [!info] 🖼️ Determinación del Rango
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análisis_Completo_de_Funciones_01.svg]]
+>
+> **Se lee así:** Se ve un diagrama de flujo que arranca con un rectángulo de la función y pasa a otro rectángulo donde se identifica el tipo de función. De ahí sale un rombo de decisión que abre seis ramas, una por cada familia: polinomial, racional, radical, logarítmica, exponencial y trigonométrica. Cada rama termina en un rectángulo con el criterio de dominio y rango que le corresponde.
+>
+> **Por qué importa:** Fíjate en que **no puedes calcular el dominio y el rango igual para todas las funciones**: cada familia trae su propia restricción. Usar este mapa te evita errores como olvidar que el argumento de un logaritmo debe ser positivo o que una raíz par exige un radicado no negativo.
+>
+> **Ejemplo:** Para la función $f(x) = \ln(x+1)$ de la nota, la rama logarítmica te dice de inmediato que $x+1 > 0$, así que el dominio es $(-1, \infty)$.
 
 ## 📏 Asíntotas
 
@@ -107,6 +113,12 @@ tags: [MATG1045, unidad5, analisis-completo-de-funciones, calculo, analisis-func
 > [!info] 🖼️ Asíntotas Oblicuas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análisis_Completo_de_Funciones_02.svg]]
+>
+> **Se lee así:** El diagrama parte de un rectángulo de búsqueda y se abre en tres rombos paralelos, uno por familia de asíntota. La rama vertical pasa por los ceros del denominador y la verificación de límites; la horizontal va del límite en el infinito a un rombo que pregunta si ese límite existe y es finito; la oblicua llega a otro rombo que decide si ya hay asíntota horizontal y, según eso, manda a calcular $m$ y $b$ o a descartarla.
+>
+> **Por qué importa:** Ordenar las asíntotas por tipo evita el error más común: buscar la oblicua sin comprobar antes la horizontal. Además te obliga a verificar los límites laterales, porque un cero del denominador no siempre significa asíntota vertical si la función no diverge allí.
+>
+> **Ejemplo:** Con $f(x) = (x^2+1)/x$ de la nota, el diagrama indica que no hay asíntota horizontal, así que se calculan $m = 1$ y $b = 0$ y se obtiene la asíntota oblicua $y = x$.
 
 ## 📍 Intersecciones con Ejes
 
@@ -248,6 +260,12 @@ tags: [MATG1045, unidad5, analisis-completo-de-funciones, calculo, analisis-func
 > [!info] 🖼️ Proceso de Graficación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análisis_Completo_de_Funciones_03.svg]]
+>
+> **Se lee así:** Se lee así: es una cadena vertical de rectángulos numerados, sin decisiones ni ramas, que va de la función $f(x)$ hasta una verificación final. Los pasos avanzan en un orden fijo: dominio y rango, intersecciones, simetría y periodicidad, primera y segunda derivada, asíntotas, comportamiento en el infinito, puntos adicionales, construcción de la gráfica y verificación.
+>
+> **Por qué importa:** Este orden evita graficar antes de tener datos: si te saltas el dominio o las asíntotas, la curva sale mal. Además te da un **checklist** para no olvidar intervalos de crecimiento, concavidad ni puntos de inflexión al entregar un análisis completo.
+>
+> **Ejemplo:** En el ejemplo completo de la nota con $f(x) = (x^2-1)/(x^2-4)$ recorres los diez pasos y llegas a dominio $\mathbb{R} - \{-2, 2\}$, asíntotas $x = \pm 2$ y $y = 1$, y un máximo local en $(0, 1/4)$.
 
 ### Orden de Prioridad en el Análisis
 

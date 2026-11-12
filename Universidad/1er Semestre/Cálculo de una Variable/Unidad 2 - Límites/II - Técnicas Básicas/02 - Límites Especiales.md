@@ -27,6 +27,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > [!info] 🖼️ ¿Por qué son Fundamentales estos Límites?
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_01.svg]]
+>
+> **Se lee así:** La estructura es un árbol que abre en los límites trigonométricos y se bifurca en dos ramas: una hacia el límite fundamental del seno sobre x y otra hacia el del uno menos coseno sobre x. Cada rama baja a su casillero de derivada correspondiente, y ambas vuelven a confluir en un rectángulo de límites derivados que alimenta el rectángulo de **aplicaciones en el cálculo**.
+>
+> **Por qué importa:** El diagrama te muestra de dónde sale todo: los dos límites fundamentales son la base de las derivadas de seno y coseno y de los límites derivados. Entender esta jerarquía te evita memorizar fórmulas sueltas y te da un método para deducir límites que no reconoces.
+>
+> **Ejemplo:** Para la derivada del seno se usa `lim_{h \to 0} (sin(x+h) - sin x)/h`, que se apoya justamente en el límite fundamental del seno.
 
 ## 📐 Límite fundamental: $\lim_{x \to 0} \frac{\sin x}{x} = 1$
 
@@ -217,6 +223,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > [!info] 🖼️ Límites Combinados
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_02.svg]]
+>
+> **Se lee así:** El diagrama es un selector de estrategia: un rombo central pregunta qué forma tiene el límite y reparte el flujo hacia cuatro caminos distintos. Tres de ellos llevan directo al rectángulo de resultado, dos aplicando el límite fundamental y uno reconvirtiendo a seno y coseno; el cuarto, el de las combinaciones, exige un paso extra de descomposición con identidades antes de reaplicar los fundamentales.
+>
+> **Por qué importa:** Este selector evita que intentes aplicar el límite fundamental a una expresión que no tiene su forma, el error más común al inicio de la unidad. Te obliga a identificar primero el patrón y luego a transformarlo, que es exactamente lo que se necesita en un parcial.
+>
+> **Ejemplo:** Para `lim_{x \to 0} (sin(2x) - 2 sin x)/x^3` la forma no es fundamental, así que tomas la ruta de combinación, usas `sin(2x) = 2 sin x cos x` y obtienes `-2/3`.
 
 ### 📊 Tabla de Límites Derivados Importantes
 
@@ -411,6 +423,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > [!info] 🖼️ Formas Indeterminadas Exponenciales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_03.svg]]
+>
+> **Se lee así:** El esquema parte de un límite del tipo f(x) elevado a g(x) y pasa por un rombo que clasifica la forma, de donde salen cuatro ramas bien diferenciadas. La de 1 elevado a infinito usa el límite fundamental de e y reescribe la base como 1 más algo pequeño; las de 0 elevado a 0 y de infinito elevado a 0 van por el **método logarítmico**, con el cálculo de g·ln f y la exponenciación final.
+>
+> **Por qué importa:** Cada rama exige una herramienta distinta: la forma 1 elevado a infinito se resuelve con el número e y las otras dos con logaritmos. Confundir las ramas es la causa de resultados inventados en límites exponenciales, así que conviene memorizar la clasificación.
+>
+> **Ejemplo:** Para `lim_{x \to +\infty} (1 + 3/x)^(2x)` tomas la rama de 1 elevado a infinito, reescribes como `(1 + u)^v` y aplicas `e^{lim (3/x)(2x)} = e^6`.
 
 ## 🎯 Método del Límite Fundamental de e
 
@@ -533,6 +551,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > [!info] 🖼️ Tabla de Límites Exponenciales Importantes
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_04.svg]]
+>
+> **Se lee así:** Arranca con un rectángulo de **límite exponencial** que entra a un rombo que pregunta por la forma. De ahí salen tres ramas: **1 elevado a infinito** usa el método del número e (reescribir como 1+u, calcular u·v) y acaba en un rectángulo de resultado; **0 elevado a 0** e **infinito elevado a 0** se juntan en el método logarítmico (tomar log y evaluar g·ln f), que también cierra en un resultado.
+>
+> **Por qué importa:** La forma decide la herramienta: con 1 elevado a infinito usas e, y con las otras dos necesitas logaritmos. Si mezclas las ramas inventas resultados, así que *memorizar esta clasificación* es lo que te salva en el parcial.
+>
+> **Ejemplo:** Para `lim_{x → ∞} (1 + 3/x)^(2x)` tomas la rama del número e: reescribes la base como 1+u con u = 3/x, calculas u·v = 6 y el resultado es `e^6`.
 
 ---
 
@@ -665,6 +689,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > [!info] 🖼️ Aplicaciones y Ejemplos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_06.svg]]
+>
+> **Se lee así:** Es un árbol con una raíz de **límites logarítmicos** que se abre en tres ramas. La primera lleva al límite de x·ln x y de ahí a la forma 0 por menos infinito, que se resuelve con L'Hôpital. La segunda lleva al cociente ln x sobre x y luego a la idea de que el logaritmo **crece lento**, con un cuadro de aplicaciones. La tercera compara crecimientos y desemboca en la jerarquía donde ln x queda por debajo de x^n y de e^x.
+>
+> **Por qué importa:** Te sirve para comparar funciones sin calcular cada límite: si el logaritmo va contra una potencia, *gana la potencia*. También te da la respuesta directa de la forma 0·(-∞) cuando aparece en un límite logarítmico.
+>
+> **Ejemplo:** Con `lim_{x → ∞} ln(x²)/x` reescribes como `2 ln x / x` y usas el resultado central del diagrama, que `ln x / x → 0`, para concluir que el límite es 0.
 
 ## 🎯 Técnica de Estudio: Método SHARP
 

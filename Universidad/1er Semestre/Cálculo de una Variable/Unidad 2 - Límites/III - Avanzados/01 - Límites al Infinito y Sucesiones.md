@@ -49,6 +49,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > [!info] 🖼️ Asíntotas Verticales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_01.svg]]
+>
+> **Se lee así:** Entra por la función cerca de x = a y llega a un rombo que pide los **límites laterales**, que se separan en rama derecha e izquierda. Si alguna da infinito, ambas convergen en la **asíntota vertical x = a** y de ahí al caso donde la función explota. Si las dos son finitas, se pasa al segundo rombo: si coinciden, el límite existe y la función es continua; si difieren, hay discontinuidad con salto finito.
+>
+> **Por qué importa:** Distingue los cuatro tipos de asíntota vertical según el comportamiento lateral. Esto te sirve para no afirmar que hay asíntota cuando en realidad el salto es finito.
+>
+> **Ejemplo:** En `f(x) = (x+1)/(x-2)` el límite por la izquierda es -∞ y por la derecha +∞, así que x = 2 es asíntota vertical tipo IV.
 
 > [!info] 🎯 **Tipos de Asíntotas Verticales**
 >
@@ -158,6 +164,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > [!info] 🖼️ Propiedades y Álgebra de Límites Infinitos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_02.svg]]
+>
+> **Se lee así:** El diagrama parte de un límite que podría ser infinito y pasa por un rombo que clasifica el **tipo de función**, con cuatro ramas: la racional, que analiza los ceros del denominador y aplica el método de signos; la exponencial, que evalúa base y exponente; la logarítmica, que verifica el dominio; y la trigonométrica, que identifica discontinuidades y revisa tangente y secante. Las cuatro terminan en el rectángulo de asíntota vertical.
+>
+> **Por qué importa:** Cada familia de funciones pide un análisis distinto, aunque todas busquen asíntota vertical. Reconocer la categoría evita que apliques el método de signos a una función trigonométrica.
+>
+> **Ejemplo:** En `f(x) = ln(x-3)` revisas el dominio, ves que solo existe para x > 3 y concluyes que x = 3 es asíntota vertical unilateral.
 
 ---
 
@@ -316,6 +328,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > [!info] 🖼️ Casos Especiales y Formas Indeterminadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_04.svg]]
+>
+> **Se lee así:** Parte del cociente de polinomios, se identifican los **grados n y m** y un rombo los compara. Si el grado del numerador es menor, el flujo lleva a un rectángulo de límite cero y asíntota horizontal, con la consecuencia de que la función decae a cero. Con grados iguales se obtiene el cociente de coeficientes principales y la función se estabiliza; con grado mayor arriba, el límite es infinito y no hay asíntota horizontal.
+>
+> **Por qué importa:** Es la regla que resuelve de un vistazo todos los límites al infinito de funciones racionales. Te dice también si la gráfica tendrá o no asíntota horizontal.
+>
+> **Ejemplo:** Para `lim_{x → ∞} (3x² - 5x + 2)/(2x² + x - 1)` los grados son iguales, así que el límite es 3/2 y la asíntota horizontal es y = 3/2.
 
 ---
 
@@ -378,6 +396,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > **Interpretación geométrica:** 🎪 A partir de cierto término $N$, todos los términos de la sucesión están dentro de una "banda" de anchura $2\varepsilon$ alrededor de $L$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_05.svg]]
+>
+> **Se lee así:** Es una cadena horizontal de rectángulos que representa los **términos de una sucesión** uno tras otro: a₁, luego a₂, luego a₃, un grupo de puntos suspensivos que indica que siguen más términos, y finalmente aₙ. De ese último rectángulo sale una flecha hacia un rectángulo aparte con el valor L, de modo que el diagrama muestra cómo los términos van avanzando hacia el valor buscado.
+>
+> **Por qué importa:** Fíjate en que L está fuera de la cadena: el límite no es uno de los términos, *es a dónde se acercan*. Esta imagen te ayuda a entender por qué la sucesión se define con una ε y un N.
+>
+> **Ejemplo:** En la sucesión `aₙ = 1/n` los términos van acercándose al rectángulo L con valor 0, de modo que `lim_{n → ∞} aₙ = 0` y la sucesión es convergente.
 
 ## 🔢 Convergencia de Sucesiones
 
@@ -504,6 +528,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > [!info] 🖼️ Sucesiones Monótonas Acotadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_07.svg]]
+>
+> **Se lee así:** Entra por la sucesión y llega a un rombo que pregunta si es **monótona**; si lo es, un segundo rombo pregunta si está **acotada**, y de las combinaciones sale la convergencia por el teorema monótono o la divergencia. Si no es monótona, se ofrecen dos rutas: el teorema del sandwich o un análisis directo, y la primera vuelve a pasar por un rombo de condiciones antes de confirmar la convergencia.
+>
+> **Por qué importa:** Te da una ruta de decisión para justificar si una sucesión converge, en vez de adivinar. Sirve especialmente en parciales, donde debes nombrar el teorema que usas.
+>
+> **Ejemplo:** Para `aₙ = (2n+1)/(n+3)` la diferencia `aₙ₊₁ - aₙ` es positiva y además `aₙ < 2`, así que es monótona y acotada y converge a 2.
 
 ## 🧗 Técnica de Estudio: Método CLIMB
 

@@ -67,6 +67,12 @@ tags: [MATG1045, unidad4, derivabilidad-y-continuidad, matematicas/calculo/deriv
 > [!info] 🖼️ Demostración
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivabilidad_y_Continuidad_01.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos que va de arriba abajo: parte de que la función es derivable, pasa por el cociente de la definición, multiplica por el incremento, llega a la igualdad de límites y termina en la conclusión de que la función es continua en ese punto. Cada caja es un paso algebraico encadenado.
+>
+> **Por qué importa:** Fíjate en que no es un recíproco: derivable **implica** continua, pero continua no implica derivable. Tener esta demostración en un diagrama te da el argumento limpio que necesitas en el examen.
+>
+> **Ejemplo:** Como contraejemplo, $f(x) = |x|$ en $x = 0$ es continua, pero sus derivadas laterales valen $-1$ y $1$, así que no es derivable.
 
 ## 🚫 El Recíproco NO es Cierto
 
@@ -115,6 +121,12 @@ tags: [MATG1045, unidad4, derivabilidad-y-continuidad, matematicas/calculo/deriv
 > [!info] 🖼️ Tipos de Puntos según Continuidad y Derivabilidad
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivabilidad_y_Continuidad_02.svg]]
+>
+> **Se lee así:** Es un diagrama de clasificación con dos decisiones encadenadas: primero un rombo pregunta si el punto es continuo y, si no, se cierra como caso no derivable; si lo es, un segundo rombo pregunta si es derivable y separa el punto entre función suave o esquina o cúspide. Cada salida lleva rotulada su categoría.
+>
+> **Por qué importa:** Te da una manera ordenada de *etiquetar* cada punto crítico de una gráfica: primero continuidad, después derivabilidad. Con eso evitas decir que una función con pico es derivable solo porque se ve continua.
+>
+> **Ejemplo:** Para $f(x) = |x - 2|$ en $x = 2$ el diagrama marca tipo B: continua porque $\lim_{x \to 2}|x-2| = 0$, pero con esquina y derivadas laterales distintas.
 
 ## 🧪 Ejemplos Detallados
 
@@ -340,6 +352,12 @@ tags: [MATG1045, unidad4, derivabilidad-y-continuidad, matematicas/calculo/deriv
 > [!info] 🖼️ Aplicaciones Prácticas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivabilidad_y_Continuidad_03.svg]]
+>
+> **Se lee así:** Es un esquema de recuadros redondeados con un bloque central del que salen cinco ramas: el teorema principal con su demostración y la advertencia de que no hay recíproco, la clasificación de puntos, los ejemplos clave, los métodos de verificación y las aplicaciones. Cada rama se abre en hojas concretas.
+>
+> **Por qué importa:** Reúne en una sola vista la teoría, los casos y los usos, así sabes qué revisar antes de responder. Te sirve tanto para un ejercicio de análisis de funciones como para justificar por qué una aproximación lineal es válida en un punto.
+>
+> **Ejemplo:** Para justificar la aproximación lineal de $f(x) = \sqrt{x}$ en $x = 4$, tomas la hoja de aplicaciones: la aproximación solo es válida donde la función es derivable.
 
 ---
 

@@ -79,6 +79,12 @@ tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limi
 > [!info] 🖼️ Interpretación Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_02.svg]]
+>
+> **Se lee así:** Arriba se ve la caja con la gráfica de f(x), que baja a un rombo de decisión con la pregunta central: *hacia dónde apunta la curva cuando x se acerca a a?* Del rombo salen tres ramas: una a un valor concreto, otra a un crecimiento sin cota y una tercera a que no hay convergencia; cada rama baja a su propio casillero de veredicto, con el límite finito, el límite infinito o la **falta de límite**.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa de entrada tres resultados muy distintos: un valor concreto, un crecimiento sin cota o la ausencia de límite. Esto te evita decir 'no existe' cuando la función simplemente se va a infinito, y te obliga a mirar la gráfica antes de calcular.
+>
+> **Ejemplo:** Un caso de la nota: `lim_{x \to 0} 1/x^2 = +∞` da asíntota vertical, mientras que `lim_{x \to 2} 1/(x-2)` **no existe** porque sus límites laterales son opuestos.
 
 ## 🎭 Situaciones Comunes
 
@@ -210,6 +216,12 @@ tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limi
 > [!info] 🖼️ La Definición Formal
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_03.svg]]
+>
+> **Se lee así:** Es una cadena de pasos encadenados: querer demostrar el límite, fijar un ε > 0 arbitrario, encontrar un δ > 0 apropiado y verificar la condición. El último paso es un rombo que pregunta *si se cumple para todo ε?*, y de él salen dos flechas rotuladas: una hacia la demostración lograda y otra hacia el fallo de la afirmación.
+>
+> **Por qué importa:** Este es el guion exacto de una demostración épsilon-delta: primero la tolerancia arbitraria y después el radio, nunca al revés. Seguirlo te evita el error típico de elegir un δ que dependa de x o de asumir el resultado que quieres probar.
+>
+> **Ejemplo:** Para demostrar `lim_{x \to 3} (2x + 1) = 7` se toma ε > 0 arbitrario, se calcula `|f(x) - L| = 2|x - 3|` y se elige como radio `δ = ε/2`.
 
 ## 📊 Interpretación Geométrica
 
@@ -230,6 +242,12 @@ tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limi
 > [!note] 🖼️ Interpretación Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_04.svg]]
+>
+> **Se lee así:** El esquema arranca en un punto, el par (a, L), del que salen dos ramas paralelas: una banda horizontal de tolerancia ε alrededor de L y una banda vertical de alcance δ alrededor de a. La rama vertical exige que toda x dentro de la franja cumpla la condición y la horizontal que f(x) quede dentro; ambas desembocan en la misma casilla de **definición satisfecha**.
+>
+> **Por qué importa:** Fíjate en que las dos bandas se cruzan en un mismo punto: la vertical te dice dónde mirar y la horizontal qué tan cerca debes quedar. Esta es la lectura geométrica de `0 < |x - a| < δ` y `|f(x) - L| < ε`, y con ella justificas el δ que eliges.
+>
+> **Ejemplo:** Para `lim_{x \to 2} x^2 = 4` la banda de δ alrededor de 2 debe ser tan angosta que toda la curva dentro de ella quede dentro de la banda de ε alrededor de 4, y el trabajo da `δ = min{1, ε/5}`.
 
 ## 🔍 Análisis de los Componentes
 
@@ -720,12 +738,24 @@ tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limi
 > [!info] 🖼️ Diagrama para Asíntotas Verticales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_05.svg]]
+>
+> **Se lee así:** El diagrama parte de que x se acerca a a y pasa por un rombo que separa según la tendencia de la función: hacia +∞ o hacia -∞. Cada rama repite la misma secuencia lógica: un M > 0 arbitrario, un δ > 0 que lo garantiza y la desigualdad que se exige dentro de la franja; las dos vuelven a juntarse en la casilla de **asíntota vertical**.
+>
+> **Por qué importa:** Aquí el papel del ε lo juega un M grande y arbitrario, y la condición es una desigualdad sin valor absoluto. Te sirve para evitar el error más común de esta sección: escribir `f(x) > -M` cuando el límite es -∞, donde corresponde `f(x) < -M`.
+>
+> **Ejemplo:** Un caso de la nota: para `lim_{x \to 0^+} 1/x = +∞` se elige `δ = 1/M` y se cumple que `0 < x < δ` implica `1/x > M` para todo M > 0.
 
 ### 📊 Diagrama para Asíntotas Horizontales
 
 > [!info] 🖼️ Diagrama para Asíntotas Horizontales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_06.svg]]
+>
+> **Se lee así:** El esquema arranca con x tendiendo a infinito y pasa por un rombo sobre la dirección, hacia +∞ o hacia -∞. Cada lado repite el patrón formal con un ε > 0 arbitrario, un N > 0 que lo acompaña y la condición sobre x mayor que N o menor que -N; las dos ramas concluyen en la misma casilla de **asíntota horizontal y = L**.
+>
+> **Por qué importa:** Cuando x se va al infinito, δ ya no sirve: ese papel lo cumple N, y como el límite sigue siendo finito se mantiene ε como tolerancia. Te evita mezclar M con N, el error número uno de esta sección, y te muestra que la asíntota horizontal no depende del lado.
+>
+> **Ejemplo:** Para `lim_{x \to +\infty} (2x + 1)/(x + 3) = 2` se simplifica la diferencia a `5/(x + 3)` y se toma como umbral `N = max{5/ε - 3, 1}`, para que x + 3 sea positivo.
 
 ## ⚠️ Errores Comunes en Demostraciones
 

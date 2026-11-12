@@ -367,6 +367,12 @@ tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, matemáticas, cál
 > [!info] 🖼️ Estrategias de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_01.svg]]
+>
+> **Se lee así:** Es un árbol de decisión que empieza en la función que quieres derivar y pasa por un rombo que pregunta por su tipo. Según la respuesta hay cuatro caminos paralelos: función simple que se resuelve con la tabla, suma o diferencia que se derivan término a término, y producto o cociente que exigen su regla específica; los cuatro caminos terminan en la misma caja de resultado final.
+>
+> **Por qué importa:** Te da el orden de trabajo: *detectar* el tipo antes de escribir fórmulas, y no al revés. Así evitas el error más caro del curso, aplicar la regla del producto a una simple suma.
+>
+> **Ejemplo:** Con $k(x) = \frac{x^2 e^x}{\ln x}$ tomas la rama del cociente, y en el numerador aplicas la regla del producto para derivar $x^2 e^x$.
 
 ---
 
@@ -468,6 +474,12 @@ tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, matemáticas, cál
 > [!info] 🖼️ Aplicaciones y Contexto
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_02.svg]]
+>
+> **Se lee así:** La raíz es el conjunto de reglas de derivación y de ahí sale un rombo que abre hacia cuatro áreas profesionales. Cada área se desglosa en tres campos concretos, desde la cinemática y la dinámica hasta la química cinética y los modelos ambientales, de modo que cada hoja muestra un uso concreto de derivar.
+>
+> **Por qué importa:** Te muestra que las mismas reglas sirven en campos muy distintos y por qué en la carrera te van a preguntar casos aplicados. También te orienta: si te interesa la ingeniería, ya sabes qué problemas te van a pedir.
+>
+> **Ejemplo:** En el modelo logístico de la nota, $P(t) = \frac{K}{1+ae^{-rt}}$, la tasa de crecimiento $P'(t)$ sale de derivar la exponencial interna con la regla de la cadena.
 
 ---
 
@@ -540,6 +552,12 @@ tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, matemáticas, cál
 > [!info] 🖼️ Conexiones con Otros Temas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_03.svg]]
+>
+> **Se lee así:** Es un mapa mental con un nodo central del que salen cuatro ramas: las reglas básicas, las reglas avanzadas, las funciones elementales y las aplicaciones. Las dos primeras se abren en hojas de fórmulas concretas, mientras que las dos últimas agrupan por tipo de función y por campo donde se usan.
+>
+> **Por qué importa:** Te sirve como índice mental del temario: sabes que producto, cociente, cadena e implícita forman un bloque, y que las elementales se derivan por tabla. Al revisar basta con recorrer las hojas de cada rama.
+>
+> **Ejemplo:** Un parcial típico pide derivar $e^x \cdot \ln x$: tomas la hoja de la regla del producto y la de funciones logarítmicas, y combinas $e^x \ln x + e^x \frac{1}{x}$.
 
 ---
 

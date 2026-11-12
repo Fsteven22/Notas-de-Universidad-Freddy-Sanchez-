@@ -494,6 +494,12 @@ tags: [MATG1045, unidad1, puntos-de-acumulacion, puntos-de-acumulación, topolog
 > [!info] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Puntos_de_Acumulación_01.svg]]
+>
+> **Se lee así:** A la izquierda está la caja del punto de acumulación y de ella salen **dos ramas**: la de arriba va a la definición, que se abre en tres cajas, la de cercanía, la de infinitud y la de tipos de punto, y de la primera cuelgan la condición del radio y la pertenencia a la clausura; la de abajo va a las aplicaciones, la clausura y la definición de límites.
+>
+> **Por qué importa:** Fíjate en que el mapa separa **qué es** un punto de acumulación de **para qué sirve**: la rama superior te da las definiciones equivalentes, con las que justificas en un examen, y la inferior te muestra que es la llave de la clausura y de la definición formal de límites.
+>
+> **Ejemplo:** Un ejemplo típico de la nota: para demostrar que 0 es punto de acumulación de {1/n : n en N}, tomas la sucesión x_n = 1/n, que es justo la rama de las definiciones por sucesión.
 
 ## 🎯 Conceptos Clave para Recordar
 

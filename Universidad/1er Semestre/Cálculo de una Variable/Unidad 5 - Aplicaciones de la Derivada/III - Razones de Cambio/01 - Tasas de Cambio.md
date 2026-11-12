@@ -23,6 +23,12 @@ tags: [MATG1045, unidad5, tasas-de-cambio, matemáticas, cálculo, tasas-cambio,
 > [!info] 🖼️ Tasa de Cambio Promedio
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Tasas_de_Cambio_01.svg]]
+>
+> **Se lee así:** El diagrama separa la tasa de cambio en dos ramas: a la izquierda la promedio, que se apoya en la recta secante y en un intervalo $[a, b]$, y a la derecha la instantánea, que se apoya en la recta tangente y en un punto específico. Cada rama termina en un recuadro con la fórmula de la pendiente: $\Delta y / \Delta x$ en un caso y $f'(a)$ en el otro. El mismo concepto, entendido como la recta que cruza o la recta que toca la curva.
+>
+> **Por qué importa:** Separar promedio e instantánea evita el error clásico de pedir una velocidad en un instante y responder con una secante. También te da el puente entre la geometría de la secante y la definición formal de derivada.
+>
+> **Ejemplo:** Para $f(x) = x^2 + 2x - 1$ en $[1, 4]$, la rama promedio da $(23 - 2)/(4 - 1) = 7$: la función crece 7 unidades por cada unidad de $x$.
 
 ### 🔢 Ejemplos de Tasa de Cambio Promedio
 
@@ -72,6 +78,12 @@ tags: [MATG1045, unidad5, tasas-de-cambio, matemáticas, cálculo, tasas-cambio,
 > [!info] 🖼️ Tasa de Cambio Instantánea
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Tasas_de_Cambio_02.svg]]
+>
+> **Se lee así:** El diagrama muestra el paso de la secante a la tangente: la recta secante pasa por el recuadro $h \to 0$ y llega a la tangente, mientras la tasa promedio queda enlazada directamente a la secante. Después, cada camino termina en su fórmula: $\Delta y / \Delta x$ para la promedio y $f'(a)$ para la instantánea. Es la definición de derivada dibujada como flujo.
+>
+> **Por qué importa:** Entender que la tangente es el límite de las secantes te da la interpretación geométrica de la derivada, que es justo lo que se pregunta en los parciales. También te sirve para justificar por qué el límite con $h \to 0$ da la pendiente de la tangente.
+>
+> **Ejemplo:** Para $f(x) = x^2 + 3x$ en $x = 2$, el diagrama lleva de la secante a la tangente y termina en $f'(2) = 7$, que coincide con el resultado obtenido por la definición de límite.
 
 ### 🧮 Cálculo de Tasas Instantáneas
 
@@ -163,6 +175,12 @@ tags: [MATG1045, unidad5, tasas-de-cambio, matemáticas, cálculo, tasas-cambio,
 > [!info] 🖼️ Algoritmo de Decisión
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Tasas_de_Cambio_04.svg]]
+>
+> **Se lee así:** El diagrama empieza con un rombo que te obliga a decidir si el problema habla de un intervalo o de un punto. La rama del intervalo lleva a la tasa promedio y termina calculando $\frac{f(b)-f(a)}{b-a}$; la del punto llega a otro rombo que pregunta si ya conoces $f'(x)$, y de ahí sale a evaluarla o a la definición de límite con $h \to 0$. Todas las rutas terminan en el recuadro de resultado e interpretación.
+>
+> **Por qué importa:** Este algoritmo evita el error de aplicar la fórmula equivocada y te obliga a interpretar el resultado final. La rama de la definición de límite es la red de seguridad para cuando todavía no dominas las reglas de derivación.
+>
+> **Ejemplo:** Para la posición $s(t) = -16t^2 + 64t + 80$ en $[1, 3]$ de la nota, entras por la rama del intervalo y obtienes una velocidad promedio de 0 pies/segundo, porque la altura inicial y la final coinciden.
 
 ## 🔗 Conexiones Conceptuales
 

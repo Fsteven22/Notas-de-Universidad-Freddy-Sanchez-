@@ -1760,6 +1760,12 @@ tags: [MATG1045, unidad1, metricas-y-espacios-metricos, matemáticas, análisis,
 > [!info] 🖼️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Métricas_y_Espacios_Métricos_01.svg]]
+>
+> **Se lee así:** Arriba hay una sola caja: el espacio métrico. De ella salen dos flechas: a la izquierda, una caja de componentes que se abre en el conjunto de puntos y en la función de distancia; a la derecha, una caja de bolas que se abre en bola abierta y bola cerrada. De cada bola cuelgan dos ejemplos, uno en la recta y otro en el plano, siempre emparejados: abierto con abierto y cerrado con cerrado.
+>
+> **Por qué importa:** Fíjate en que el diagrama te da la **jerarquía real del tema**: primero qué es un espacio métrico, después sus piezas y solo al final los ejemplos. Esto te evita memorizar ejercicios sueltos y te muestra que las bolas cambian de forma según la métrica y el espacio donde las mires.
+>
+> **Ejemplo:** Un ejemplo típico de la nota: en la métrica discreta sobre X = {a, b, c, d}, la bola B(a, 0.5) es solo {a} mientras que la bola cerrada B̄(a, 1) es todo X, y el diagrama te dice dónde encaja cada caso.
 
 ---
 

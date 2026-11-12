@@ -104,6 +104,12 @@ tags: [MATG1045, unidad3, continuidad-y-limites, continuidad, limites, discontin
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Continuidad_y_Límites_02.svg]]
 >
+> **Se lee así:** El diagrama tiene dos cadenas paralelas de rectángulos. La de arriba recorre los **valores que toma la función**: f(a), luego un valor intermedio k, luego f(b). La de abajo recorre el **intervalo del eje horizontal**: el extremo a, un punto intermedio c y el extremo b. Las flechas que cruzan emparejan cada valor con el punto del dominio donde se alcanza, de modo que k queda asociado a c.
+>
+> **Por qué importa:** Te muestra de forma visual por qué el teorema del valor intermedio necesita que f sea continua: sin continuidad la curva puede saltarse el valor k y no habría tal c. Es la base para justificar la existencia de raíces por bisección.
+>
+> **Ejemplo:** Para demostrar que `f(x) = x³ + x - 1` tiene raíz en (0,1) usas que f(0) es negativa y f(1) es positiva, con f continua.
+>
 > **Condiciones necesarias:** ⚠️
 >
 > 1. $f$ continua en $[a,b]$
@@ -192,6 +198,12 @@ tags: [MATG1045, unidad3, continuidad-y-limites, continuidad, limites, discontin
 > [!info] 🖼️ Continuidad Uniforme
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Continuidad_y_Límites_03.svg]]
+>
+> **Se lee así:** Es un árbol de decisiones que empieza con la función y pregunta si es **continua**. Si no lo es, se estudian y clasifican sus discontinuidades: evitable, de salto, infinita o esencial. Si sí lo es, se pregunta si el dominio es **compacto**, y entonces hay continuidad uniforme; si no, se pregunta si la derivada está acotada y, según se cumpla o no, se llega a la continuidad uniforme, a verificar la definición ε-δ o a concluir que solo es puntual.
+>
+> **Por qué importa:** Ordena el estudio de la continuidad en dos niveles, el local y el global. Te sirve para no afirmar continuidad uniforme solo porque la función es continua en cada punto.
+>
+> **Ejemplo:** Con `f(x) = 1/x` en (0,1] la función es continua pero no uniformemente continua, porque `f'(x) = -1/x²` no está acotada cerca de 0.
 
 ## 🎯 Técnica de Estudio: Método TRACE
 

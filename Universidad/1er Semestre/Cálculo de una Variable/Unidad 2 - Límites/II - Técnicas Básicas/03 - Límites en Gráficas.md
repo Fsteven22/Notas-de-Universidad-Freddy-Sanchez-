@@ -21,6 +21,12 @@ tags: [MATG1045, unidad2, limites-en-graficas, calculo, limites, graficas, inter
 > [!info] 🖼️ Cómo Leer Límites Visualmente
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límites_en_Gráficas_01.svg]]
+>
+> **Se lee así:** El diagrama arranca con una **gráfica de f(x)** y pasa a un rectángulo que pide localizar x = a. Desde ahí se bifurca en dos ramas paralelas, una por la izquierda y otra por la derecha, que vuelven a unirse en un rombo que pregunta si ambos lados coinciden. Si la respuesta es sí, un rectángulo cierra con que el límite existe y vale L; si es no, otro rectángulo avisa que el límite no existe.
+>
+> **Por qué importa:** Es el procedimiento mental que debes seguir frente a cualquier gráfica. Te evita el error más común: mirar solo un lado o confundir el punto dibujado con el valor del límite.
+>
+> **Ejemplo:** En `f(x) = (x²-1)/(x-1)` la curva apunta a y = 2 por los dos lados, aunque hay un hueco en x = 1, así que el límite existe y vale 2.
 
 ## 🎭 Casos Visuales Fundamentales
 
@@ -29,6 +35,12 @@ tags: [MATG1045, unidad2, limites-en-graficas, calculo, limites, graficas, inter
 > [!example] ✅ Límite Existe y Coincide con el Valor de la Función
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límites_en_Gráficas_02.svg]]
+>
+> **Se lee así:** Es un recorrido lineal de tres rectángulos: primero la **curva suave** de la función, luego el punto concreto sobre el eje en x = a y, al final, el resultado de que el límite coincide con el valor de la función. No hay decisiones ni ramas, solo la secuencia de una gráfica sin interrupciones con un punto sólido, donde el límite existe y vale f(a).
+>
+> **Por qué importa:** Este es el caso base de todo lo demás: si la curva es continua, la lectura del límite es inmediata. Reconocerlo rápido te ahorra análisis algebraico innecesarios en ejercicios de gráfica.
+>
+> **Ejemplo:** En la función por partes `g(x) = x+1` si x < 2 y `2x-1` si x > 2, ambas ramas llegan a 3, así que `lim_{x → 2} g(x) = 3 = g(2)`.
 >
 > **Características visuales:**
 >

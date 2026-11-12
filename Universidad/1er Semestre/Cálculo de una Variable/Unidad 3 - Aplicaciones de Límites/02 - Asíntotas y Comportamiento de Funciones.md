@@ -232,6 +232,12 @@ tags: [MATG1045, unidad3, asintotas-y-comportamiento-de-funciones, asintotas, li
 > ### Metodología sistemática para graficar
 >
 >![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_01.svg]]
+>
+> **Se lee así:** Es una guía ordenada: desde la función se pasa al **dominio y recorrido**, luego a las asíntotas, después a los interceptos con los ejes y por último al comportamiento global. Desde ahí salen cuatro ramas: la **asíntota vertical**, que encadena la definición del límite infinito, un ejemplo y la idea de que ese punto no está en el dominio y divide la gráfica; en paralelo, la horizontal y la oblicua, con sus fórmulas, y las funciones sin asíntota.
+>
+> **Por qué importa:** Es la metodología completa para graficar una función sin saltarte pasos. Ordenar el análisis en dominio, asíntotas, interceptos y comportamiento evita omisiones y te sirve en el examen de graficado.
+>
+> **Ejemplo:** Al graficar `f(x) = 1/(x-2)` el diagrama te lleva a la asíntota vertical x = 2, y de ahí a ver que esa recta divide la gráfica en dos ramas.
 
 ## 🎯 Técnica de Estudio: Método GRAPH
 

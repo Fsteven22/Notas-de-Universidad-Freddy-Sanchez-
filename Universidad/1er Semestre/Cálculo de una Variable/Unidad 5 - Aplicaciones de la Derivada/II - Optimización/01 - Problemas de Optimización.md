@@ -20,6 +20,12 @@ tags: [MATG1045, unidad5, problemas-de-optimizacion, calculo, optimizacion, apli
 > [!info] 🖼️ Proceso Sistemático de Resolución
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_01.svg]]
+>
+> **Se lee así:** Es un diagrama completamente lineal: un rectángulo inicial con el problema y una cadena de diez pasos encadenados, sin decisiones ni bifurcaciones. La secuencia va de leer y comprender hasta verificar y responder, pasando por identificar variables, construir la función objetivo, colocar las restricciones, expresar el problema en una sola variable, fijar el dominio, derivar, encontrar puntos críticos y evaluar los candidatos.
+>
+> **Por qué importa:** Fíjate en que el diagrama pone el modelado **antes** que el cálculo: si no defines variables y función objetivo, derivar no sirve de nada. La etapa de evaluar candidatos y verificar evita el error de responder con un punto crítico sin comprobar que sea el óptimo.
+>
+> **Ejemplo:** Para el rectángulo de área máxima con 200 m de cerca de la nota recorres la cadena completa: $A(x) = x(100 - x)$, dominio $0 < x < 100$, $A'(x) = 100 - 2x = 0$ y respuesta $50 \times 50$ m.
 
 ### Tipos de Puntos Candidatos
 
@@ -134,6 +140,12 @@ tags: [MATG1045, unidad5, problemas-de-optimizacion, calculo, optimizacion, apli
 > [!info] 🖼️ Problemas de Ruta Óptima
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_02.svg]]
+>
+> **Se lee así:** El diagrama arranca con un rombo que clasifica el tipo de medio o de trayectoria, y de él salen cuatro ramas. La rama de un solo medio termina en distancia euclídea, la de dos medios pasa por la ley de Snell hasta minimizar el tiempo total, la de obstáculos lleva al principio de reflexión y la de múltiples puntos exige combinatoria junto con optimización. Cada rama se cierra en un recuadro con la herramienta concreta que toca usar.
+>
+> **Por qué importa:** La clasificación evita que trates como geometría simple un problema de refracción o de rutas múltiples. Te muestra que la derivada cambia de rol según el contexto: distancia, tiempo o número de caminos.
+>
+> **Ejemplo:** El problema de refracción de la nota, con la luz más lenta en agua que en aire, cae en la rama de dos medios y se resuelve con $n_1 \operatorname{sen}(\theta_1) = n_2 \operatorname{sen}(\theta_2)$.
 
 ## 💰 Aplicaciones Económicas
 
@@ -219,6 +231,12 @@ tags: [MATG1045, unidad5, problemas-de-optimizacion, calculo, optimizacion, apli
 > [!info] 🖼️ Manejo de Restricciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_03.svg]]
+>
+> **Se lee así:** El centro del diagrama es un rombo que pregunta por el tipo de restricción, y de él salen tres ramas paralelas. La de igualdad lleva a la sustitución directa y termina en una función de una variable resuelta con optimización clásica; la de desigualdad pasa por los multiplicadores de Lagrange y un sistema de ecuaciones; la de sin restricciones va directo a la derivada ordinaria. Los tres caminos terminan en un extremo verificado.
+>
+> **Por qué importa:** Elegir bien la rama te ahorra trabajo: si la restricción es una igualdad, la sustitución es más rápida; si es una desigualdad o hay varias, Lagrange es más sistemático. El diagrama también te recuerda que un problema sin restricción se resuelve solo con $f'(x) = 0$.
+>
+> **Ejemplo:** El tanque cilíndrico de la nota, con volumen $1000$ m³ fijo, usa la rama de igualdad: despejas $h = 1000/(\pi r^2)$ y derivas $S(r) = 2\pi r^2 + 2000/r$.
 
 ### Técnicas de Simplificación
 

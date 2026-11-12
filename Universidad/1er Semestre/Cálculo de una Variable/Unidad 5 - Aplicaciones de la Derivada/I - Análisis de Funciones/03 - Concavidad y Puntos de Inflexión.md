@@ -85,6 +85,12 @@ tags: [MATG1045, unidad5, concavidad-y-puntos-de-inflexion, calculo, derivadas, 
 > [!info] 🖼️ Tabla de Signos para Intervalos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_01.svg]]
+>
+> **Se lee así:** Es una cadena de seis rectángulos, sin decisiones, que empieza en el dominio de la función y termina en la clasificación de la concavidad. En medio aparecen el paso de anular la segunda derivada, la lista de puntos críticos de curvatura, el corte del dominio en intervalos y la evaluación del signo en cada uno. Es la receta que produce la tabla de signos que aparece en la nota.
+>
+> **Por qué importa:** Este orden te evita el error típico de dar por hecho un punto de inflexión solo porque $f''(x) = 0$. Al evaluar el signo en cada intervalo, la concavidad queda **demostrada** y no supuesta.
+>
+> **Ejemplo:** Para $f(x) = x^3 - 6x^2 + 9x + 1$ de la nota, con $f''(x) = 6(x-2)$ el diagrama te lleva a la tabla donde la función es cóncava hacia abajo para $x < 2$ y hacia arriba para $x > 2$.
 
 ## 🎯 Puntos de Inflexión
 
@@ -114,6 +120,12 @@ tags: [MATG1045, unidad5, concavidad-y-puntos-de-inflexion, calculo, derivadas, 
 > [!info] 🖼️ Proceso para Encontrar Puntos de Inflexión
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_02.svg]]
+>
+> **Se lee así:** El diagrama tiene un solo rombo de decisión y el resto son rectángulos encadenados. Partiendo de anular la segunda derivada, se listan los candidatos, se arma la tabla de signos y se llega al rombo: si hay cambio de signo se sigue hacia el punto de inflexión y se calculan el valor de la función y las coordenadas; si no, se sale por la rama que descarta el candidato.
+>
+> **Por qué importa:** La rama de descarte es lo que separa un punto de inflexión real de un falso inflexión como el $x = 0$ de $f(x) = x^4$. Sin verificar el cambio de signo, la gráfica sale con la curvatura mal dibujada.
+>
+> **Ejemplo:** En $f(x) = x^3$ de la nota, $f''(x) = 6x$ cambia de signo en $0$, así que el diagrama confirma el punto de inflexión $(0, 0)$.
 
 ## 📐 Interpretación Geométrica
 
@@ -188,6 +200,12 @@ tags: [MATG1045, unidad5, concavidad-y-puntos-de-inflexion, calculo, derivadas, 
 > [!info] 🖼️ Pasos para Construir la Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Concavidad_y_Puntos_de_Inflexión_03.svg]]
+>
+> **Se lee así:** Es una cadena lineal de rectángulos que va de la función a la gráfica completa, sin rombos ni ramas alternativas. El orden es revelador: primero se calcula la primera derivada, luego la segunda, y solo después se localizan puntos críticos y puntos de inflexión, seguidos de los intervalos de monotonía y de concavidad. Al final se evalúan los puntos especiales y se arma la gráfica completa.
+>
+> **Por qué importa:** Fíjate en que la segunda derivada **no se usa sola**: aquí se combina con la primera para que cada tramo de la gráfica tenga una razón. Esto te sirve para no dejar huecos en el bosquejo y para que la curvatura quede bien dibujada.
+>
+> **Ejemplo:** Tomando $f(x) = x^3 - 6x^2 + 9x + 1$ de la nota, aplicas los pasos en cadena: $f'(x) = 3x^2 - 12x + 9$ para los puntos críticos y $f''(x) = 6(x - 2)$ para la inflexión en $x = 2$.
 
 ### Información que Proporciona cada Derivada
 

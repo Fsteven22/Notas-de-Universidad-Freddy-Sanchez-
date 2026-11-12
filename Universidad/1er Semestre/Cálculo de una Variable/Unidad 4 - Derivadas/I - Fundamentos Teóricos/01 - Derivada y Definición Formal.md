@@ -76,6 +76,12 @@ tags: [MATG1045, unidad4, derivada-y-definicion-formal, calculo, derivadas, limi
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_01.svg]]
 >
+> **Se lee así:** Arriba hay una caja rectangular que se abre en tres ramas paralelas, y cada rama vuelve a partirse en dos cajas rectangulares con la fórmula de la derivada correspondiente. La idea visual es que las funciones especiales se agrupan por familias y que cada familia tiene sus propias derivadas ya resueltas en la hoja.
+>
+> **Por qué importa:** Esto te sirve como tabla de consulta rápida: cuando aparece $\ln x$ o $\tan x$ en un ejercicio ya sabes qué fórmula aplicar sin derivar desde cero. Te evita además el error clásico de olvidar el factor $\ln a$ en la base exponencial.
+>
+> **Ejemplo:** Un ejercicio típico: derivar $\frac{d}{dx}[\log_5 x]$; tomas la rama de logarítmicas y aplicas $\frac{1}{x \ln 5}$ sin volver a la definición por límites.
+>
 > **Funciones trigonométricas inversas:**
 >
 > - $(arcsin x)' = \frac{1}{\sqrt{1-x^2}}$
@@ -247,6 +253,12 @@ tags: [MATG1045, unidad4, derivada-y-definicion-formal, calculo, derivadas, limi
 > $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_02.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos que baja paso a paso: se parte de una función, se toman dos puntos cercanos, se calcula la pendiente de la secante que los une, se toma el límite cuando el incremento se hace cero y se llega a la pendiente de la tangente. Cada eslabón explica una parte del cociente de la definición.
+>
+> **Por qué importa:** Así ves la fórmula $\frac{f(a+h)-f(a)}{h}$ como una pendiente real y no como un símbolo abstracto. Esta intuición es la que después usas para aproximar con tangentes y para justificar cuándo la derivada existe.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $x = 2$, la tabla de la nota muestra cómo las pendientes $5$, $4.1$, $4.01$ y $4.001$ se acercan a $f'(2) = 4$.
 >
 ## 🎨 Interpretación Geométrica
 
@@ -443,6 +455,12 @@ tags: [MATG1045, unidad4, derivada-y-definicion-formal, calculo, derivadas, limi
 > [!info] 🖼️ Casos donde NO Existe la Derivada
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_03.svg]]
+>
+> **Se lee así:** Es un árbol de decisiones: un rombo pregunta si la función es continua en el punto y, si no, cierra ahí; si es continua, un segundo rombo compara los límites laterales de la derivada y un tercero pregunta si el límite es finito. Cada rama termina en una caja con el diagnóstico: no existe por discontinuidad, por esquina o por tangente vertical, o bien la derivada sí existe.
+>
+> **Por qué importa:** Es el filtro que te dice *qué revisar primero* cuando una derivada no aparece: primero continuidad, luego lados, después finitud. Así evitas afirmar que $f'(a)$ existe sin comprobar que el límite sea finito.
+>
+> **Ejemplo:** Para $f(x) = \sqrt[3]{x}$ en $x = 0$ el diagrama lleva a la última rama: el límite es infinito, así que hay tangente vertical y la derivada no existe.
 
 ## 🧠 Método de Estudio: "DELTA"
 
@@ -520,6 +538,12 @@ tags: [MATG1045, unidad4, derivada-y-definicion-formal, calculo, derivadas, limi
 > [!info] 🖼️ Preparación para Conceptos Avanzados
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Derivada_y_Definición_Formal_04.svg]]
+>
+> **Se lee así:** Es un mapa mental con un nodo central del que salen cinco ramas: la interpretación geométrica, la física, los métodos de cálculo, la existencia de la derivada y las aplicaciones. Cada rama abre en hojas que detallan lo que se apoya en la definición, como la pendiente tangente, la cancelación de $h$ o la continuidad necesaria.
+>
+> **Por qué importa:** Te sirve como panorama: la definición no es un trámite, es la base de todo lo que viene después, incluidas las derivadas de orden superior y las parciales. También te muestra qué rama conviene repasar antes de un parcial.
+>
+> **Ejemplo:** Siguiendo la rama de métodos, el paso de cancelar $h$ en $\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$ es lo que permite después demostrar la regla del producto.
 
 ---
 

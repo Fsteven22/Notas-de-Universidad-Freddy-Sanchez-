@@ -27,6 +27,12 @@ tags: [MATG1045, unidad2, limites-laterales, calculo, limites, discontinuidades,
 > [!info] 🖼️ Definiciones Fundamentales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Límites_Laterales_01.svg]]
+>
+> **Se lee así:** Se ve un punto central x = a del que se separan dos ramas: una de aproximación por la izquierda y otra por la derecha, cada una con su propio rectángulo de límite lateral, L₁ y L₂. Las dos vuelven a juntarse en un rombo que compara si L₁ y L₂ coinciden, y de ahí salen las dos respuestas posibles: el límite existe con valor común o **no existe**.
+>
+> **Por qué importa:** Este es el teorema fundamental de los límites laterales: el límite existe si y solo si los dos lados coinciden. Tenerlo en la cabeza te impide concluir existencia mirando un solo lado, que es el error más repetido en los exámenes.
+>
+> **Ejemplo:** Para `k(x)` definida por partes, en x = 1 el límite izquierdo es 1 y el derecho es 3, así que el límite no existe aunque la función sí esté definida en ese punto.
 
 ## 🔑 Teorema Fundamental de Límites Laterales
 
@@ -140,6 +146,12 @@ tags: [MATG1045, unidad2, limites-laterales, calculo, limites, discontinuidades,
 > [!info] 🖼️ Análisis Visual en Gráficas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Límites_Laterales_02.svg]]
+>
+> **Se lee así:** El diagrama parte de una gráfica y la recorre en dos direcciones: siguiendo la curva desde la izquierda y desde la derecha, con un rectángulo en cada ruta que pregunta *a qué altura apunta la curva?* Esas dos alturas llegan a un rombo de comparación sobre si son la misma, y el veredicto final es que el límite existe o no existe.
+>
+> **Por qué importa:** Leer la altura de la curva es la forma más rápida de decidir en un examen, y el diagrama te entrena en mirar los dos lados antes de afirmar. Con una gráfica te ahorras toda la tabla de valores cuando lo que importa es solo la tendencia.
+>
+> **Ejemplo:** En la gráfica de `f(x) = 1/(x - 2)`, siguiendo la curva desde cada lado se llega a alturas opuestas, y por eso el límite en x = 2 no existe aunque ambos límites laterales sean infinitos.
 
 ## 🧩 Funciones Definidas por Partes
 

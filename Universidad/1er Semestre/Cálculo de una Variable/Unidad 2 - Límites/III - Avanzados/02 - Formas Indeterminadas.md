@@ -23,6 +23,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ ¿Qué es una Forma Indeterminada 0/0?
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_01.svg]]
+>
+> **Se lee así:** El diagrama sigue la ruta de un límite de cociente: primero se intenta la **sustitución directa** y un primer rombo decide si el resultado sigue siendo un cociente bien definido, en cuyo caso se aplica el teorema del cociente. Si en cambio aparece 0 sobre 0, un rombo lo declara **forma indeterminada** y abre tres ramas paralelas: factorización, racionalización y cancelación.
+>
+> **Por qué importa:** Fíjate en que el orden importa: primero se sustituye y solo si sale 0/0 se cambian de herramienta. Saltarte esa verificación es la causa más común de errores en exámenes.
+>
+> **Ejemplo:** En `lim_{x → 2} (x²-4)/(x-2)` la sustitución da 0/0, así que tomas la rama de factorización, cancelas x-2, evalúas x+2 y el límite es 4.
 
 ## 🔢 Factorización Algebraica
 
@@ -155,6 +161,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ Patrones Comunes en Racionalización
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_02.svg]]
+>
+> **Se lee así:** Parte de una forma 0/0 en la que hay radicales y llega a un rombo que pregunta **dónde está la raíz**. Si el radical está arriba, la rama pide multiplicar por el conjugado del numerador; si está abajo, por el conjugado del denominador. Las dos rutas se vuelven a juntar en un rectángulo de **diferencia de cuadrados** y de ahí a un último rectángulo donde se simplifica y se evalúa el límite.
+>
+> **Por qué importa:** Decide rápido cuál conjugado multiplicar, que es el paso donde más se equivoca la gente. Te evita cancelar el factor equivocado y perder el término que da el resultado.
+>
+> **Ejemplo:** En `lim_{x → 4} (√x - 2)/(x-4)` el radical está en el numerador, así que multiplicas por `(√x + 2)` y el límite queda 1/4.
 
 > [!tip] 🎯 Identificación Rápida **¿Cuándo racionalizar?**
 >
@@ -272,6 +284,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ Diagrama de Flujo Completo
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_03.svg]]
+>
+> **Se lee así:** Es el diagrama de flujo completo de la unidad: empieza con un límite que puede dar 0/0, se sustituye y un rombo separa el caso normal de la forma indeterminada. Desde ahí el flujo se bifurca: primero pregunta si hay radicales y manda a racionalizar, luego pregunta si se puede factorizar y lleva a factorizar, cancelar factores comunes y evaluar el límite. Si no se puede factorizar, la salida es L'Hôpital o sustitución.
+>
+> **Por qué importa:** Es tu mapa de decisión para resolver cualquier 0/0 sin saltarte pasos ni probar técnicas al azar. Recórrelo de izquierda a derecha y siempre sabrás qué hacer y en qué orden.
+>
+> **Ejemplo:** En `lim_{x → 1} (√(x+3) - 2)/(x²-1)` el diagrama te lleva a racionalizar, luego factorizar el denominador, cancelar x-1 y llegar a 1/8.
 
 ## 📚 Referencias y Conexiones
 
@@ -379,6 +397,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!success] ✅ Interpretación Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_04.svg]]
+>
+> **Se lee así:** El diagrama muestra tres rectángulos apilados en orden vertical: la **función superior**, la función emparedada en el medio y la **función inferior**, con flechas que bajan de una a otra para mostrar el orden de la desigualdad. A un lado, un rectángulo aparte con el **límite común L** se conecta con otro rectángulo que afirma que todas convergen a ese valor, de modo que la banda queda atrapada entre dos extremos que comparten destino.
+>
+> **Por qué importa:** Te da la intuición del teorema del emparedado: si aprieto una función entre dos que van al mismo sitio, ella también va. Entender esto evita usar el teorema con cotas que no coinciden.
+>
+> **Ejemplo:** Para `lim_{x → 0} x² sin(1/x)` acotas la función entre -x² y x², que comparten el límite 0, y concluyes que el límite buscado es 0.
 >
 > **Características visuales:**
 >
@@ -509,6 +533,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ Algoritmo de Aplicación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_05.svg]]
+>
+> **Se lee así:** Se entra con un límite difícil de evaluar y un rombo pregunta si la función está **acotada**. Si no lo está, el diagrama manda a buscar otra técnica; si lo está, se pasa a un rectángulo donde se escriben las desigualdades que emparedan la función, y un nuevo rombo pregunta si las dos cotas tienen el mismo límite. Si coinciden, se aplica el teorema; si no, hay que volver atrás y buscar cotas mejores.
+>
+> **Por qué importa:** Este es el algoritmo paso a paso del teorema del emparedado, con el control de calidad de las cotas. Fíjate en que el bucle de volver a buscar cotas es lo que falta en muchos ejercicios mal resueltos.
+>
+> **Ejemplo:** En `lim_{x → ∞} sin(x²)/x` usas que -1 ≤ sin(x²) ≤ 1, divides entre x y las dos cotas van a 0, así que el teorema aplica.
 
 ## 🚫 Errores Comunes
 
@@ -658,6 +688,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ ¿Qué es la Regla de L'Hôpital?
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_06.svg]]
+>
+> **Se lee así:** El diagrama arranca con un límite en forma indeterminada y pasa por un rombo de **verificación de condiciones**. Si no se cumplen, la salida es usar otras técnicas; si se cumplen, se deriva numerador y denominador y se evalúa el límite de las derivadas, con un rombo que pregunta si el resultado ya quedó determinado. Si sí, se llega al resultado final; si no, sale un rectángulo de aplicar L'Hôpital otra vez.
+>
+> **Por qué importa:** El error típico es derivar sin verificar la forma, así que el rombo de condiciones es lo que te protege. Además te muestra que se puede repetir la regla mientras siga saliendo una indeterminación.
+>
+> **Ejemplo:** En `lim_{x → 0} (1 - cos x - x²/2)/x⁴` aplicas L'Hôpital cuatro veces seguidas, porque en cada paso sigue apareciendo 0/0, y llegas a -1/24.
 
 ## ✅ Condiciones de Aplicación
 
@@ -837,6 +873,12 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > [!info] 🖼️ Formas Indeterminadas Principales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_07.svg]]
+>
+> **Se lee así:** Es un clasificador de formas indeterminadas: un rombo pregunta de qué tipo es y reparte el flujo en cuatro caminos. El de 0/0 y el de infinito sobre infinito va directo a L'Hôpital; el de 0 por infinito y el de infinito menos infinito obliga a reescribir como cociente o con denominador común, y solo entonces llega a L'Hôpital; el de potencias pasa por logaritmos y vuelve a la ruta del cociente. Todas terminan evaluando el límite.
+>
+> **Por qué importa:** Evita que intentes aplicar L'Hôpital a una potencia o a una resta infinita, que es el error más común al final de la unidad. Cada forma tiene su camino y aquí está el mapa completo.
+>
+> **Ejemplo:** En `lim_{x → ∞} (1 + 1/x)^x` tomas la rama de potencias, aplicas logaritmo para obtener x·ln(1+1/x), lo reescribes como cociente y el límite es e.
 
 ## ⚠️ Limitaciones y Precauciones
 

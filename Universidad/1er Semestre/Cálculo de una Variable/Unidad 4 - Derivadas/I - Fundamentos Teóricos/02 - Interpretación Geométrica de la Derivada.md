@@ -52,6 +52,12 @@ tags: [MATG1045, unidad4, interpretacion-geometrica-de-la-derivada, matemáticas
 > [!info] 🖼️ Definiciones y Conceptos Clave
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_01.svg]]
+>
+> **Se lee así:** El diagrama arranca con una función y dos puntos sobre la curva, de los que sale una recta secante con su pendiente promedio. En paralelo, otra rama muestra cómo se acercan los puntos hasta que el incremento se anula, y de ahí aparecen la recta tangente, su pendiente instantánea y finalmente la derivada.
+>
+> **Por qué importa:** Fíjate en que la tangente toca en un solo punto y la secante une dos: ahí está la diferencia entre cambio promedio y cambio instantáneo. Te evita el error de interpretar $f'(x)$ como el promedio entre dos puntos cualesquiera.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $x = 3$, la pendiente de la tangente es $f'(3) = 6$, mientras que la secante entre dos puntos alejados de la curva tiene otra pendiente.
 
 ---
 
@@ -79,6 +85,12 @@ tags: [MATG1045, unidad4, interpretacion-geometrica-de-la-derivada, matemáticas
 > [!info] 🖼️ Desarrollo del Concepto
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_02.svg]]
+>
+> **Se lee así:** Muestra dos secuencias encadenadas que avanzan a la vez: por un lado, secantes con incremento grande, mediano y pequeño que terminan en la tangente cuando el incremento tiende a cero; por el otro, la pendiente pasa de aproximada a mejor y luego a excelente aproximación hasta volverse la pendiente exacta. Es la idea de *zoom infinito* sobre un punto.
+>
+> **Por qué importa:** Te da la intuición de por qué la derivada es un límite y no un simple cociente evaluado en un $h$ cualquiera. También justifica el método numérico de diferencias finitas que usas para verificar tus resultados.
+>
+> **Ejemplo:** En la tabla de la nota, con $f(x) = x^2$ en $x = 2$, los valores $h = 1$, $0.1$, $0.01$ y $0.001$ dan pendientes $5$, $4.1$, $4.01$ y $4.001$, cada vez más cerca de $4$.
 
 ---
 
@@ -205,6 +217,12 @@ tags: [MATG1045, unidad4, interpretacion-geometrica-de-la-derivada, matemáticas
 > [!info] 🖼️ Interpretación Visual y Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_03.svg]]
+>
+> **Se lee así:** Parte de la gráfica de la función y entra a un rombo que ordena las pendientes en tres casos: positivo, negativo o nulo. Cada caso lleva a una caja con la forma de la tangente correspondiente, y solo la rama de la tangente horizontal continúa hacia los máximos y mínimos locales.
+>
+> **Por qué importa:** Es la traducción de los signos de la derivada a lo que ves en el dibujo, y con eso entiendes por qué los puntos críticos se buscan donde $f'(x) = 0$ o donde la derivada falla. Evita el error de leer $f'(x) > 0$ como si la función fuera positiva.
+>
+> **Ejemplo:** Para $f(x) = x^3 - 2x + 1$ en $x = 1$ la derivada vale $1 > 0$, así que la función es creciente ahí y su tangente tiene pendiente positiva.
 
 ---
 
@@ -365,6 +383,12 @@ tags: [MATG1045, unidad4, interpretacion-geometrica-de-la-derivada, matemáticas
 > [!info] 🖼️ Interpretación Física
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_04.svg]]
+>
+> **Se lee así:** El esquema parte de una función física y pasa por un rombo que pregunta de qué fenómeno se trata. De ahí salen tres ramas paralelas, cada una con su variable propia (posición, temperatura o población), la derivada asociada y una interpretación final expresada como rapidez de cambio.
+>
+> **Por qué importa:** Te muestra que la derivada siempre habla de rapidez de cambio y que solo cambia el nombre según la variable. Esto te sirve para leer un modelo físico o económico: primero identificas la variable, luego la tasa que te piden.
+>
+> **Ejemplo:** Con la posición $s(t) = 5t^2 + 2t$, la derivada $v(t) = 10t + 2$ indica que en $t = 3$ el objeto se mueve a $32$ m/s, su velocidad instantánea.
 
 ---
 
@@ -429,6 +453,12 @@ tags: [MATG1045, unidad4, interpretacion-geometrica-de-la-derivada, matemáticas
 > [!info] 🖼️ Conexiones con Otros Temas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Interpretación_Geométrica_de_la_Derivada_05.svg]]
+>
+> **Se lee así:** Es un mapa mental cuyo nodo central abre cuatro ramas: los conceptos base de donde partes, los elementos clave con los que trabajas (tangente, secante, normal), las áreas donde se aplica y los temas de cálculo que se conectan con él. Cada rama tiene después sus propias hojas.
+>
+> **Por qué importa:** Te sirve como mapa de la unidad: lo que aprendiste de geometría se reutiliza en optimización, integrales y ecuaciones diferenciales. Con esta vista sabes qué repasar cuando un tema se te resiste.
+>
+> **Ejemplo:** Un ejercicio de la carrera: al pedir la normal a $f(x) = x^2$ en $x = 1$, tomas la hoja de elementos clave y usas el recíproco negativo $m_n = -\frac{1}{2}$.
 
 ---
 

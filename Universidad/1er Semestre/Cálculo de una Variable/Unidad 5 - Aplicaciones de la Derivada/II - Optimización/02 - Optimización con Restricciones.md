@@ -25,6 +25,12 @@ tags: [MATG1045, unidad5, optimizacion-con-restricciones, calculo, optimizacion,
 > [!info] 🖼️ Procedimiento del Método
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Optimización_con_Restricciones_01.svg]]
+>
+> **Se lee así:** Es una línea recta de rectángulos, sin decisiones ni ramas. Arranca con la función objetivo y la restricción, sigue por despejar una variable y sustituirla para quedarse con una función de una sola variable, deriva e iguala a cero, y termina calculando la variable que faltaba y verificando la naturaleza del extremo.
+>
+> **Por qué importa:** Este diagrama te muestra que la restricción no se ignora: se convierte en una fórmula para eliminar una variable. Si te saltas el paso de volver a la restricción para hallar la otra variable, no tienes el punto completo del problema.
+>
+> **Ejemplo:** En el rectángulo de área máxima con perímetro 20 de la nota, despejas $y = 10 - x$, sustituyes en $A = xy$ para obtener $A(x) = 10x - x^2$ y el punto crítico $x = 5$.
 
 ### Ventajas y Limitaciones
 
@@ -138,6 +144,12 @@ tags: [MATG1045, unidad5, optimizacion-con-restricciones, calculo, optimizacion,
 > [!info] 🖼️ Comparación: Sustitución vs Lagrange
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Optimización_con_Restricciones_02.svg]]
+>
+> **Se lee así:** El diagrama decide por pasos: un rombo pregunta cuántas restricciones hay y otro si la restricción se puede despejar con facilidad. Con una sola restricción despejable se llega a una función de una variable y se resuelve con la derivada igualada a cero; si el despeje es difícil, la rama lleva al sistema con el multiplicador $\lambda$. Con varias restricciones, la ruta termina en un sistema complejo con varios multiplicadores.
+>
+> **Por qué importa:** Elegir el método correcto antes de calcular te ahorra horas: despejar puede volverse un desastre algebraico con varias restricciones. La comparación también te muestra qué información extra te da Lagrange, justamente el valor de $\lambda$.
+>
+> **Ejemplo:** Para el problema de producción con utilidad $U(x,y) = x^{0.4} y^{0.6}$ y presupuesto $2x + 3y = 100$ de la nota, hay una restricción difícil de despejar, así que te toca la rama de Lagrange.
 
 ## 🛠 Problemas Prácticos ️
 
@@ -257,6 +269,12 @@ tags: [MATG1045, unidad5, optimizacion-con-restricciones, calculo, optimizacion,
 > [!info] 🖼️ Visualización Gráfica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Optimización_con_Restricciones_03.svg]]
+>
+> **Se lee así:** El diagrama parte de una entrada con dos ramas: la familia de curvas de nivel del objetivo y la curva única de la restricción. Ambas convergen en el recuadro de buscar tangencia, que desemboca en un rombo con tres salidas: tangencia externa, interna y punto de silla. Cada salida lleva a un recuadro con la consecuencia: no hay intersección, la curva de nivel encierra a la restricción, o hace falta la segunda derivada.
+>
+> **Por qué importa:** Esta es la intuición detrás de Lagrange: el óptimo es donde la curva de nivel toca a la restricción, y el signo de $\lambda$ dice hacia dónde. Te sirve para entender por qué el método funciona y para interpretar el resultado cuando los números no tienen sentido.
+>
+> **Ejemplo:** En el ejemplo de la nota, con $xy$ como objetivo y $x + y = 10$ como restricción, las hipérbolas $xy = c$ se acercan a la recta hasta que en $c = 25$ quedan tangentes, y ese es el máximo en $(5, 5)$.
 
 ### Casos Especiales Geométricos
 

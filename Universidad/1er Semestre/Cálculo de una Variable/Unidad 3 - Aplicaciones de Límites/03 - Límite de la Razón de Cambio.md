@@ -258,6 +258,12 @@ tags: [MATG1045, unidad3, limite-de-la-razon-de-cambio, derivadas, limites, razo
 > [!info] 🖼️ Recta Tangente
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límite_de_la_Razón_de_Cambio_02.svg]]
+>
+> **Se lee así:** Recorre la definición de la razón de cambio instantánea: desde la función f(t) al **cambio total** en un intervalo, al cociente que es la razón promedio y de ahí al paso clave, el límite cuando Δt → 0, que produce la razón instantánea. De ese nodo salen dos ramas: una lleva a la fórmula de la derivada, la **pendiente de la tangente** y las unidades físicas; la otra, a las aplicaciones y a la optimización visual con máximos, mínimos e inflexiones.
+>
+> **Por qué importa:** Te muestra que la derivada no es un truco, sino el límite de una razón de cambio promedio. En la carrera esto aparece como velocidad, aceleración o costo marginal, y las unidades te aclaran el significado físico.
+>
+> **Ejemplo:** Si la posición de un móvil es `s(t)` en metros y el tiempo en segundos, entonces `s'(t)` es la velocidad instantánea en m/s.
 
 ## 🎯 Técnica de Estudio: Método DELTA
 

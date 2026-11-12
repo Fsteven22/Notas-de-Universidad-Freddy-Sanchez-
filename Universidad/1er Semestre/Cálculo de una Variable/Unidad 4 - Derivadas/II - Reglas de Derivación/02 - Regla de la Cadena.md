@@ -72,6 +72,12 @@ tags: [MATG1045, unidad4, regla-de-la-cadena, calculo, derivadas, regla-cadena, 
 > [!info] 🖼️ Identificación de Funciones Compuestas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Regla_de_la_Cadena_01.svg]]
+>
+> **Se lee así:** El diagrama empieza preguntando si lo que tienes es una composición y, si lo es, un rombo separa dos caminos: el de las funciones simples, que se resuelven con las reglas básicas, y el de las compuestas. En el camino compuesto los rectángulos van encadenados: identificar la función externa, identificar la interna, multiplicar ambas derivadas, sustituir y simplificar.
+>
+> **Por qué importa:** Este es el paso donde más se falla: decidir *antes de derivar* si hay algo dentro de otra función. Con el diagrama lo compruebas en segundos y evitas el error de olvidar la derivada interna.
+>
+> **Ejemplo:** Para $\frac{d}{dx}[\sin(x^2)]$ tomas la rama compuesta: función externa $\sin(u)$, función interna $u = x^2$, y obtienes $\cos(x^2) \cdot 2x$.
 
 ## 🧮 Ejemplos Resueltos
 

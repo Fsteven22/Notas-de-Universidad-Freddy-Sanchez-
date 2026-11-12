@@ -172,6 +172,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Algoritmo de Aplicación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_01.svg]]
+>
+> **Se lee así:** Es un mapa de decisión que empieza en un límite complejo y pasa por un rombo que pregunta cuál es la operación principal: suma o resta, producto, división o potencia y raíz. Cada rama lleva a un rectángulo distinto, y dos de ellas vuelven a abrir un rombo de verificación, uno sobre el denominador y otro sobre el **dominio**, antes de entregar el resultado o derivar a técnicas especiales.
+>
+> **Por qué importa:** Fíjate en que funciona como lista de control antes de operar: primero identificas qué operación domina y después qué condición se rompe. Seguirlo evita el error más caro de la materia, aplicar la propiedad del cociente cuando el denominador tiende a cero y quedarse con un 0/0 sin saber qué hacer.
+>
+> **Ejemplo:** Un ejercicio típico de la nota: `lim_{x \to 2} (x^3 + 2x^2 - 3x + 1)/(x^2 - 1)`, donde la rama de división aplica porque el límite del denominador es 3 y no cero.
 
 ## ⚠️ Casos Especiales y Limitaciones
 
@@ -473,6 +479,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Casos Especiales del Cociente
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_02.svg]]
+>
+> **Se lee así:** El diagrama abre con una casilla de producto o cociente y un rombo que exige verificar primero que los límites individuales existen; la rama negativa lleva a una casilla que advierte que el teorema no se aplica. Si existen, otro rombo separa producto y cociente: el producto va directo a multiplicar límites y el cociente pasa por un rombo extra sobre el denominador.
+>
+> **Por qué importa:** Este es el filtro de validez del teorema del producto y del cociente: primero los límites individuales, después el denominador. Te ahorra escribir una cuenta que no vale y te indica con claridad cuándo debes cambiar a factorización, L'Hôpital u otra técnica.
+>
+> **Ejemplo:** Para `lim_{x \to 2} (x^2 - 1)/(x + 3)` el diagrama lleva por la rama del cociente: los límites individuales existen y el denominador tiende a 5, así que el resultado es 3/5.
 
 ## 📊 Límite de una potencia
 
@@ -550,6 +562,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Proceso de Evaluación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_03.svg]]
+>
+> **Se lee así:** Se ve un recorrido de peldaños: partir del límite de una composición, calcular primero el límite de la función interna y llegar a un rombo que pregunta si ese límite existe. Si existe, un segundo rombo indaga si la función externa es **continua** en ese valor y solo entonces se aplica f en L; cada rombo fallido abre una salida que detiene el procedimiento.
+>
+> **Por qué importa:** El orden importa: primero se resuelve la función interna y solo después se evalúa la externa en ese valor, y solo si la externa es continua. Saltarse esa verificación es la causa más común de resultados falsos en límites compuestos con `sin`, `e^u` o `ln`.
+>
+> **Ejemplo:** Para `lim_{x \to 2} ln(x^2 - 3)` el límite interno es 1, se verifica que `ln` es continua en 1 y el resultado es `ln(1) = 0`.
 
 ### 📊 Tipos Comunes de Composiciones
 
@@ -717,6 +735,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Funciones Continuas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_04.svg]]
+>
+> **Se lee así:** El esquema es un atajo de dos rutas: del rectángulo inicial sale un rombo que pregunta si la función es continua en el punto. La rama afirmativa va a la **sustitución directa** y de ahí al resultado f(a), mientras que la negativa salta a un rectángulo de otras técnicas, que se desglosa en factorización y en la regla de L'Hôpital.
+>
+> **Por qué importa:** Este atajo te dice cuándo puedes limitarte a sustituir y cuándo tienes que trabajar: la continuidad es la llave. Aplicarlo te ahorra factorizar o invocar L'Hôpital en límites que se resuelven en un segundo, como el de cualquier polinomio.
+>
+> **Ejemplo:** Para `lim_{x \to 2} (3x^3 - 2x^2 + x - 5)` la función es continua, así que sustituyes directamente y obtienes 13 sin factorizar ni nada más.
 
 ### 🔢 Polinomios y Funciones Racionales
 
@@ -761,6 +785,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Funciones Trigonométricas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_05.svg]]
+>
+> **Se lee así:** Es un gráfico circular partido en dos porciones, con un título arriba que anuncia el bloque de continuidad trigonométrica. La porción grande, del 60%, corresponde a las funciones continuas salvo en puntos concretos, y la chica, del 40%, a las continuas en todo ℝ; la leyenda de colores aclara a cuál parte corresponde cada rótulo.
+>
+> **Por qué importa:** Fíjate en que la mayor parte de las funciones trigonométricas tiene puntos de corte, así que antes de sustituir tienes que verificar la continuidad en ese punto. Esto te evita responder `tan(π/2)` cuando lo que te piden es el **límite**.
+>
+> **Ejemplo:** Un caso de la nota: `lim_{x \to π/3} tan(x)` se resuelve por sustitución directa y da `√3`, porque la tangente es continua en `π/3`.
 
 ### 📈 Funciones Exponenciales y Logarítmicas
 
@@ -814,6 +844,12 @@ tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, c
 > [!info] 🖼️ Algoritmo de Decisión
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_06.svg]]
+>
+> **Se lee así:** El diagrama es un filtro de dos decisiones sucesivas: primero un rombo que pregunta si el punto de aproximación pertenece al dominio, y luego otro que pregunta si la función es continua ahí. Cada no lleva a una salida distinta, técnicas especiales si el punto está fuera del dominio y límites laterales con análisis de discontinuidad si no es continua; el sí doble desemboca en la sustitución directa.
+>
+> **Por qué importa:** Fíjate en que el diagrama ordena las comprobaciones de más básica a más específica: primero que el punto esté en el dominio y luego la continuidad. Así detectas temprano los casos en que no se puede sustituir y evitas perder tiempo con técnicas que no tocan el problema.
+>
+> **Ejemplo:** Para `lim_{x \to 0} (2x + 1)/(x^2 + 4)` el punto está en el dominio y la función es continua, así que la sustitución directa da 1/4.
 
 ## 📚 Referencias y Conexiones
 

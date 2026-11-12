@@ -134,11 +134,23 @@ tags: [MATG1045, unidad5, monotonia-y-puntos-criticos, matemáticas, cálculo, d
 > [!info] 🖼️ Diagrama de Flujo del Análisis
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Monotonía_y_Puntos_Críticos_01.svg]]
+>
+> **Se lee así:** El flujo deriva, busca los ceros de $f'(x)$ y los puntos donde la derivada no existe, y luego divide el dominio en intervalos para tabular el signo. De la conclusión salen tres ramas: derivada positiva, negativa o nula en el punto crítico. Las dos primeras se juntan en la clasificación del punto, que se abre en máximo local o mínimo local según el signo cambie de más a menos o al revés.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa **encontrar** candidatos de **clasificar** el extremo: eso evita declarar un máximo sin revisar el signo antes y después. También te recuerda que un punto crítico exige estar en el dominio y que la derivada puede no existir sin ser cero.
+>
+> **Ejemplo:** Para $f(x) = x^3 - 3x^2 - 9x + 5$ de la nota, los candidatos $x = -1$ y $x = 3$ salen de $f'(x) = 3(x+1)(x-3)$ y el diagrama te dice que el primero es máximo local y el segundo mínimo local.
 
 
 > [!info] 🖼️ Diagrama de Flujo del Análisis
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-analisis-grafica-cubica-x3-3x.png]]
+>
+> **Se lee así:** Se ve la gráfica de $f(x) = x^3 - 3x$ en el plano cartesiano, con la leyenda en la esquina superior izquierda. La curva tiene forma de S: sube, baja y vuelve a subir, y cruza el eje $x$ en $-\sqrt{3}$, en $0$ y en $\sqrt{3}$. Dos puntos están marcados en rojo y rotulados: el máximo en $(-1, 2)$ y el mínimo en $(1, -2)$, que son justamente los puntos críticos que busca el diagrama de flujo anterior.
+>
+> **Por qué importa:** Ver la gráfica te da la respuesta antes de derivar: los dos puntos rojos son exactamente donde $f'(x) = 0$. Esto te sirve como control para saber si tu tabla de signos y tu clasificación de máximo y mínimo local quedaron bien.
+>
+> **Ejemplo:** Si tu análisis de $f(x) = x^3 - 3x$ da un máximo local en $(-1, 2)$ y un mínimo local en $(1, -2)$, comparas esos puntos con los de la figura y confirmas que el resultado es correcto.
 
 ## 🎨 Ejemplos Detallados
 

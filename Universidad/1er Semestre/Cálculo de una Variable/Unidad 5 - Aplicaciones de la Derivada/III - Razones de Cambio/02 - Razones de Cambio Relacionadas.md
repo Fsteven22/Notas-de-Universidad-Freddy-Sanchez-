@@ -26,6 +26,12 @@ tags: [MATG1045, unidad5, razones-de-cambio-relacionadas, calculo, razones-cambi
 > [!info] 🖼️ Metodología Universal "DERIVA"
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Razones_de_Cambio_Relacionadas_01.svg]]
+>
+> **Se lee así:** Es una cadena recta de rectángulos numerados, sin decisiones, que reproduce la metodología DERIVA de la nota. Empieza en el problema de razones relacionadas y avanza paso a paso: definir variables, dibujar el diagrama, establecer la ecuación, derivar implícitamente, identificar los datos conocidos, sustituir valores, resolver para la incógnita y verificar la respuesta. El orden importa porque cada caja se apoya en la anterior.
+>
+> **Por qué importa:** El diagrama pone el dibujo y la ecuación antes que el cálculo, y eso elimina el error más frecuente: sustituir números antes de derivar. La última caja, la verificación, te obliga a revisar unidades y signo antes de entregar la respuesta.
+>
+> **Ejemplo:** En la escalera de 10 m de la nota, defines $x$ y $y$, usas $x^2 + y^2 = 100$, derivas $x\frac{dx}{dt} + y\frac{dy}{dt} = 0$ y con $x = 6$, $y = 8$ obtienes $\frac{dy}{dt} = -1.5$ m/s.
 
 ### Tipos de Variables Comunes
 
