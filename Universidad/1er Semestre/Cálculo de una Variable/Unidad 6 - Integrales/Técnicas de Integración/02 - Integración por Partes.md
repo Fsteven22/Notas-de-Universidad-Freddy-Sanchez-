@@ -61,6 +61,12 @@ tags: [MATG1045, unidad6, integracion-por-partes, calculo, integrales, por-parte
 > [!info] 🖼️ Estrategia LIATE
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integración_por_Partes_01.svg]]
+>
+> **Se lee así:** La caja de la fórmula abre el diagrama y da paso a una segunda caja con la estrategia de prioridad. De ella salen cinco ramas paralelas, una por cada familia de funciones, y además una sexta flecha directa hacia un recuadro final que fija la regla de qué tomar como $u$ y qué como $dv$. Las cinco familias quedan ordenadas de la prioridad más alta a la más baja, de modo que el criterio se lee como una lista descendente.
+>
+> **Por qué importa:** Te da un criterio objetivo para elegir $u$ en lugar de adivinar, y con eso resuelves el error más común de esta técnica. Además la fórmula y la estrategia quedan conectadas: no es un truco suelto, es el punto de partida del método.
+>
+> **Ejemplo:** Para $\int x \ln(x) dx$ de la nota, el logaritmo tiene la prioridad más alta, así que tomas $u = \ln(x)$ y $dv = x dx$, y llegas a $\frac{x^2}{2}\ln(x) - \frac{x^2}{4} + C$.
 
 ## 🧮 Ejemplos Resueltos
 
@@ -122,6 +128,12 @@ tags: [MATG1045, unidad6, integracion-por-partes, calculo, integrales, por-parte
 > [!info] 🖼️ Método Paso a Paso
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integración_por_Partes_02.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos que baja por el caso cíclico y se abre en dos pasadas sucesivas. La primera pasada registra la elección de $u$ y $dv$ y produce una integral nueva; esa integral es la que entra como nueva partida en la segunda pasada, y al sustituirla aparece la integral original otra vez, lo que cierra el ciclo. El bloque final despeja la incógnita y la última caja advierte sobre la elección de $dv$.
+>
+> **Por qué importa:** Te muestra por qué esta integral no se resuelve a la primera y cómo se rompe el círculo al reunir las dos ecuaciones. Es el recurso para integrales del tipo $\int e^x \sin(x) dx$, donde un solo paso por partes te devuelve al punto de partida.
+>
+> **Ejemplo:** Con $\int e^x \sin(x) dx$ de la nota, el ciclo da $2I = e^x(\sin(x) - \cos(x))$ y de ahí $I = \frac{e^x(\sin(x) - \cos(x))}{2} + C$.
 
 ## 🎲 Integrales Definidas
 
@@ -224,6 +236,12 @@ tags: [MATG1045, unidad6, integracion-por-partes, calculo, integrales, por-parte
 > [!info] 🖼️ Estructura de la Tabla
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integración_por_Partes_03.svg]]
+>
+> **Se lee así:** El diagrama arranca con una caja que presenta el método y otra que dice cuándo conviene, y de ahí pasa a una caja central que representa la tabla. De esa tabla cuelgan en vertical varias filas, cada una con su signo alternado, su derivada a la izquierda y su integral repetida a la derecha, hasta llegar a la fila donde la derivada se anula. Solo esa última fila enlaza con la caja del resultado, que se lee como una suma de productos con signo.
+>
+> **Por qué importa:** Fíjate en que la tabla resume en una sola vista todas las aplicaciones de partes que harías una por una. Te ahorra tiempo en polinomios de grado alto y hace visible el error cuando los signos alternados no encajan.
+>
+> **Ejemplo:** Para $\int x^2 e^x dx$ de la nota, la tabla da $x^2 e^x - 2x e^x + 2e^x + C$, que se factoriza como $e^x(x^2 - 2x + 2) + C$.
 
 ## 🧮 Ejemplos Paso a Paso
 
@@ -325,6 +343,12 @@ tags: [MATG1045, unidad6, integracion-por-partes, calculo, integrales, por-parte
 > [!info] 🖼️ Representación Visual de la Tabla
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integración_por_Partes_04.svg]]
+>
+> **Se lee así:** Es la misma idea de la tabla pero dibujada como una cadena: una caja describe el método, otra explica que cada nodo toca al vecino de la fila siguiente en la otra columna, y de ahí bajan una tras otra las filas con el signo alternado y la marca de la diagonal que une derivada e integral. La última fila, donde la derivada llega a cero, cierra el recorrido y dispara la caja del resultado.
+>
+> **Por qué importa:** La diagonal es la clave visual del método: te dice exactamente qué multiplicar con qué y con qué signo. Sin esa guía, las sumas largas de partes se llenan de errores de emparejamiento entre columnas.
+>
+> **Ejemplo:** Para $\int x^3 \sin(x) dx$ de la nota, cada diagonal aporta un producto con signo y la suma es $-x^3\cos(x) + 3x^2\sin(x) + 6x\cos(x) - 6\sin(x) + C$.
 
 ## ⚙️ Algoritmo del Método
 

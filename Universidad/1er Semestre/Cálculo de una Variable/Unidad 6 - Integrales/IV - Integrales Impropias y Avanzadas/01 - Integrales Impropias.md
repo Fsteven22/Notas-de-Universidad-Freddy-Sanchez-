@@ -48,6 +48,12 @@ tags: [MATG1045, unidad6, integrales-impropias, matemáticas, cálculo, converge
 > [!info] 🖼️ Conexiones con Otros Temas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integrales_Impropias_01.svg]]
+>
+> **Se lee así:** Es un mapa mental: un nodo central del que arrancan tres ramas, y cada rama se abre en varias hojas que cuelgan en paralelo. La primera agrupa la clasificación de la integral impropia en sus variantes, la segunda el proceso de evaluación con sus distintos desenlaces y criterios, y la tercera los campos donde se aplica. La jerarquía radial te muestra el tema completo y sus conexiones de un vistazo.
+>
+> **Por qué importa:** Te sirve para saber qué tienes que revisar antes de un parcial: si el ejercicio es de tipo, de evaluación o de aplicación, ya tienes el hilo conductor. Además te muestra que las integrales impropias no son un caso aislado, sino la base de probabilidad, transformadas y series infinitas.
+>
+> **Ejemplo:** Para $\int_1^{\infty} \frac{1}{x^2} dx$ de la nota, recorres la rama de evaluación y concluyes que converge a 1, mientras que para $\int_0^{\infty} \lambda e^{-\lambda x} dx$ usas la hoja de probabilidad para ver que vale 1.
 
 ---
 

@@ -23,6 +23,12 @@ tags: [MATG1045, unidad6, integrales-de-funciones-inversas, calculo, integrales,
 > [!info] 🖼️ Método Principal: Integración por Partes
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_de_Funciones_Inversas_01.svg]]
+>
+> **Se lee así:** Una caja con el patrón general abre el diagrama y se abre en tres cajas hermanas que corresponden a las tres decisiones de la integración por partes: qué se toma como $u$, qué se toma como $dv$ con su $v$ y cuál es el $du$. Las tres convergen en una sola caja donde se enuncia la fórmula del resultado, y de esa caja sale una última advertencia sobre el criterio para elegir las piezas.
+>
+> **Por qué importa:** Te da la receta única para integrar una función inversa, que siempre empieza por ponerla como $u$. Y te recuerda la condición de fondo: si la integral que queda no es más simple que la original, hay que cambiar la elección.
+>
+> **Ejemplo:** Para $\int \arctan(x) dx$ de la nota, tomas $u = \arctan(x)$, $v = x$ y resuelves la integral restante con $w = 1 + x^2$, obteniendo $x\arctan(x) - \frac{1}{2}\ln(1+x^2) + C$.
 
 ## 📐 Funciones Trigonométricas Inversas
 

@@ -175,6 +175,12 @@ tags: [MATG1045, unidad6, integrales-trigonometricas, calculo, integrales, trigo
 > [!info] 🖼️ Otras Sustituciones Útiles
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Integrales_Trigonométricas_03.svg]]
+>
+> **Se lee así:** El diagrama parte de una caja con el patrón general de una integral racional en seno y coseno, y de ella salen cuatro ramas paralelas. Tres ramas son criterios de simetría que dependen de cómo cambia el signo de los argumentos, y la cuarta es el caso general que no encaja en ninguno y desemboca en la sustitución de Weierstrass, de la que salen tres cajas con las identidades del seno, del coseno y del diferencial.
+>
+> **Por qué importa:** Fíjate en que los tres criterios de simetría son filtros rápidos: si la función responde a un cambio de signo, ya tienes la sustitución. Solo cuando ninguno aplica tiene sentido recurrir a Weierstrass, que es la herramienta pesada.
+>
+> **Ejemplo:** Para $\int \frac{1}{2 + \cos(x)} dx$ de la nota, ningún criterio de simetría aplica, así que tomas $t = \tan\left(\frac{x}{2}\right)$ y la integral se vuelve $\int \frac{2}{3 + t^2} dt$.
 
 ## 📊 Tabla Completa de Integrales Trigonométricas
 

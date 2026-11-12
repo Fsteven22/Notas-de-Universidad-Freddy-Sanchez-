@@ -22,6 +22,12 @@ tags: [MATG1045, unidad6, cambio-de-variable-en-integrales, calculo, integrales,
 > [!info] 🖼️ Definición y Método
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Cambio_de_Variable_en_Integrales_01.svg]]
+>
+> **Se lee así:** Es un diagrama de flujo con un rectángulo de objetivo y una columna de cinco pasos numerados que descienden en línea recta, cada uno unido al siguiente por una flecha. Los pasos son tipo de tarea, no ecuaciones sueltas: identificar, derivar, sustituir, resolver y regresar. La columna desemboca en un recuadro de resultado y de ahí sale una caja aparte de consejo sobre la derivada.
+>
+> **Por qué importa:** Fíjate en que el orden de los pasos es lo que evita los errores más comunes: olvidar el $dx$, no reemplazar de vuelta la variable o no verificar que la derivada esté presente. Te da una lista de control mental para cada integral que intentes por sustitución.
+>
+> **Ejemplo:** En $\int 2x(x^2+1)^3 dx$ de la nota, recorres la columna con $u = x^2 + 1$, obtienes $\int u^3 du$ y vuelves a la variable original para llegar a $\frac{(x^2+1)^4}{4} + C$.
 
 ## 🧮 Casos Comunes
 
@@ -152,6 +158,12 @@ tags: [MATG1045, unidad6, cambio-de-variable-en-integrales, calculo, integrales,
 > [!info] 🖼️ Los Tres Casos Principales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Cambio_de_Variable_en_Integrales_03.svg]]
+>
+> **Se lee así:** Desde una caja raíz salen tres ramas paralelas, una por cada forma de raíz cuadrada, y cada rama corresponde a una sustitución trigonométrica distinta. De cada una cuelgan tres cajas hermanas: el diferencial que se deriva de la sustitución, la igualdad que permite simplificar la raíz y el triángulo de referencia con sus lados. La simetría del esquema te muestra que el método es el mismo en los tres casos y solo cambian los lados del triángulo.
+>
+> **Por qué importa:** Te da la clave para elegir la sustitución sin adivinar: mira el signo que aparece bajo la raíz y ya sabes qué triángulo dibujar. Esto te resuelve en segundos las integrales con raíces cuadradas, que son las que más tiempo te toman.
+>
+> **Ejemplo:** Para $\int \frac{dx}{x^2 + 9}$ de la nota, tomas la rama de la raíz con más, usas $x = 3\tan(t)$ y llegas a $\frac{1}{3}\arctan\left(\frac{x}{3}\right) + C$.
 
 ## 🧮 Ejemplos Resueltos
 
@@ -196,6 +208,12 @@ tags: [MATG1045, unidad6, cambio-de-variable-en-integrales, calculo, integrales,
 > [!info] 🖼️ Triángulos de Referencia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Cambio_de_Variable_en_Integrales_04.svg]]
+>
+> **Se lee así:** El diagrama parte de una caja que anuncia la construcción de los triángulos para volver a la variable original, y de ella salen tres ramas, cada una rotulada con una raíz distinta. Cada rama tiene dos cajas encadenadas: la primera asigna hipotenusa y catetos, y la segunda da la relación entre la sustitución y el ángulo inverso. Las tres ramas avanzan con la misma lógica, así que puedes leer cualquiera de ellas como plantilla de las otras.
+>
+> **Por qué importa:** Fíjate en que el paso que más se olvida es justamente volver a $x$. Con estos triángulos tienes el ángulo en función de $x$ a la vista y evitas dejar la respuesta expresada en la variable auxiliar.
+>
+> **Ejemplo:** Para $\int \frac{dx}{\sqrt{4 - x^2}}$ de la nota, el triángulo del primer caso te da $t = \arcsin\left(\frac{x}{2}\right)$, y con eso la integral queda $\arcsin\left(\frac{x}{2}\right) + C$.
 
 ## 🎯 Cuándo Usar Cada Sustitución
 

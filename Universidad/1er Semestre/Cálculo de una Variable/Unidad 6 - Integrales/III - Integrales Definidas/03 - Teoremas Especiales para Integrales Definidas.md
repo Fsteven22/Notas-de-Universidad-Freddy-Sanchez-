@@ -431,6 +431,12 @@ tags: [MATG1045, unidad6, teoremas-especiales-para-integrales-definidas, matemat
 > [!info] 🖼️ Demostración
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_04.svg]]
+>
+> **Se lee así:** Es una cadena vertical de rectángulos: la caja inicial anuncia la demostración del teorema y de ella cuelgan cuatro pasos numerados que avanzan por flechas rectas, uno tras otro. Cada bloque sostiene un tramo del argumento, desde la hipótesis de continuidad hasta la invocación del teorema del valor intermedio, y el recorrido cierra en un recuadro final que marca el resultado como probado.
+>
+> **Por qué importa:** Fíjate en que la demostración se apoya en dos cosas que ya dominas, la comparación de integrales y el teorema del valor intermedio. Te sirve para justificar el teorema cuando te pidan una demostración escrita y para no saltarte la hipótesis de continuidad, que es donde más se equivocan los estudiantes.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $[0,3]$ de la nota, la cadena te lleva a calcular $\int_0^3 x^2 dx = 9$, dividir entre 3 para obtener el valor medio 3 y luego buscar el punto $c$ con $c^2 = 3$, o sea $c = \sqrt{3}$.
 
 ## 🧪 Ejemplos Detallados
 

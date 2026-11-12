@@ -30,6 +30,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > [!info] 🖼️ Introducción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_01.svg]]
+>
+> **Se lee así:** así: como una bifurcación que nace en un rombo de decisión. La función $f(x)$ entra al rombo que pregunta por la operación, y de ahí salen dos caminos paralelos: uno lleva a la derivación y termina en la tasa de cambio, el otro lleva a la integración y termina en la acumulación. Las dos ramas desembocan en resultados distintos pero complementarios.
+>
+> **Por qué importa:** Fíjate en que el diagrama ordena las dos caras del cálculo: derivar responde *¿qué tan rápido cambia?* e integrar responde *¿cuánto se acumula?*. Te evita mezclar los dos sentidos al resolver ejercicios de velocidad y distancia, o de costo total y costo marginal.
+>
+> **Ejemplo:** Si la velocidad de un auto es $v(t)$, entonces $v'(t)$ es la aceleración y $\int_0^t v(s) ds$ es la distancia recorrida.
 
 ---
 
@@ -253,6 +259,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > **Flujo de solución:**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_07.svg]]
+>
+> **Se lee así:** así: como un flujo que empieza en el enunciado del problema de valor inicial y termina en una solución única. Tras la familia general de primitivas, el diagrama abre la etapa de aplicar la condición inicial, que a su vez se bifurca en dos pasos paralelos: sustituir el punto dado y despejar la constante. Solo la rama que despeja $C$ lleva a la solución particular.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa el *qué* del *cómo*: la condición inicial no se aplica de una sola vez, se aplica en dos pasos explícitos. Te evita el error clásico de olvidar $+ C$ y responder con una familia de funciones cuando el problema pide una sola.
+>
+> **Ejemplo:** En la nota, para $F'(x) = 6x^2$ con $F(0) = 4$ se integra a $F(x) = 2x^3 + C$, se sustituye $x = 0$ y se despeja $C = 4$.
 
 ---
 
@@ -331,6 +343,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > |∫₁²(4x - 5)dx|4∫₁²xdx - 5∫₁²dx|4(3/2) - 5(1) = 1|
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_09.svg]]
+>
+> **Se lee así:** así: como un árbol que se abre desde una idea general hacia dos propiedades. Del nodo de linealidad sale una bifurcación hacia la constante multiplicativa y hacia la aditividad, cada una con su fórmula al lado; las dos líneas convergen luego en una caja final que combina ambas en una sola expresión con dos coeficientes.
+>
+> **Por qué importa:** Fíjate en que la linealidad te permite **romper una integral larga en varias integrales fáciles**. Te evita el error de integrar un producto como si fuera producto de integrales, algo que nunca es válido, y de perder tiempo buscando una antiderivada Monster.
+>
+> **Ejemplo:** Para calcular $\int_0^1 (3x^2 + 2x) dx$ separas en $3\int_0^1 x^2 dx + 2\int_0^1 x dx$ y obtienes $3(\frac{1}{3}) + 2(\frac{1}{2}) = 2$.
 
 ### 🔄 Cambio de Límites
 
@@ -587,6 +605,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_15.svg]]
 >
+> **Se lee así:** así: como un algoritmo de cinco pasos encadenados de izquierda a derecha. Se parte de la integral definida y se avanza por un rectángulo que pide la antiderivada, luego otro que evalúa esa antiderivada en el límite superior, otro en el inferior, otro que hace la resta y un último que entrega el resultado numérico. No hay decisiones: el orden de los pasos es fijo.
+>
+> **Por qué importa:** Fíjate en que la secuencia fija el **orden de la resta** $F(b) - F(a)$, que es donde más se equivocan los estudiantes. Te evita además saltarte el paso de encontrar la antiderivada y evaluar un solo límite nada más.
+>
+> **Ejemplo:** Para $\int_0^2 (3x^2 + 2x) dx$ se toma $F(x) = x^3 + x^2$, se evalúa $F(2) = 12$ y $F(0) = 0$, y el resultado es $12 - 0 = 12$.
+>
 > **Tabla de proceso:**
 >
 > |Paso|Acción|Ejemplo: ∫₀²(3x² + 2x)dx|
@@ -750,6 +774,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > 14. Segunda parte: $$\int_a^b f(x),dx = F(b) - F(a)$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_16.svg]]
+>
+> **Se lee así:** así: como un mapa mental con una raíz central de la que salen tres ramas. La rama de la integral indefinida despliega sus cuatro rasgos, la de la integral definida despliega los suyos, y una tercera rama es el TFC, que conecta ambas y destaca la evaluación práctica con $F(b) - F(a)$.
+>
+> **Por qué importa:** Fíjate en que el mapa resume en un solo vistazo **qué distingue** a la integral indefinida de la definida: una función más $C$ frente a un número, y qué papel juega el TFC como puente entre las dos. Te sirve como repaso rápido antes de un examen.
+>
+> **Ejemplo:** Al repasar, contrasta $\int f(x) dx = F(x) + C$ con $\int_a^b f(x) dx = F(b) - F(a)$, que es el número que aparece en el teorema fundamental.
 
 ---
 

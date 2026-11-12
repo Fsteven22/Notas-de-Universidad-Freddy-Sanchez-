@@ -26,6 +26,12 @@ tags: [MATG1045, unidad6, asintotas-en-integrales-definidas, matemáticas, asín
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Asíntotas_en_Integrales_Definidas_01.svg]]
 >
+> **Se lee así:** El diagrama tiene una caja central que abre tres ramas horizontales, una por cada tipo de asíntota: vertical, horizontal y oblicua. Solo la rama de la asíntota vertical continúa hacia un recuadro final de advertencia, mientras que las otras dos cierran en su propia caja. Ese último recuadro resume la consecuencia: si aparece una singularidad o asíntota dentro del intervalo de integración, la integral deja de ser propia y hay que tratarla con límites.
+>
+> **Por qué importa:** Te enseña que las asíntotas son la señal de que debes cambiar de método, no solo un dato de la gráfica. Reconocerlas evita que apliques el teorema fundamental del cálculo a una integral que en realidad es impropia.
+>
+> **Ejemplo:** Con $\int_0^{1} \frac{1}{\sqrt{1-x^2}} dx$, la asíntota vertical en $x = 1$ te obliga a escribir $\lim_{t \to 1^-} \int_0^t \frac{1}{\sqrt{1-x^2}} dx$, que converge a $\frac{\pi}{2}$.
+>
 
 > [!tip] Asíntotas Verticales en Integrales 🔬
 >

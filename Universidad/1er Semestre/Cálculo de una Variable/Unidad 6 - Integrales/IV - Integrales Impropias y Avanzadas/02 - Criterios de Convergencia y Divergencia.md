@@ -147,6 +147,12 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_02.svg]]
 >
+> **Se lee así:** Es un organigrama con dos rombos de decisión encadenados. La serie parte de una caja rectangular y llega al primer rombo, donde se pregunta si converge la suma de los valores absolutos; un sí lleva a la salida de convergencia absoluta y un no pasa al segundo rombo, que pregunta si converge la serie original, y sus dos salidas son convergencia condicional o divergencia.
+>
+> **Por qué importa:** Este es el orden de preguntas que te salva en un examen: primero decides si es absoluta y solo después analizas el caso alternado. Te evita aplicar Leibniz a una serie que no cumple las hipótesis y confundir convergencia simple con condicional, que es un tema que cambia al reordenar los términos.
+>
+> **Ejemplo:** Con la armónica alternada $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$, la suma de valores absolutos $\sum \frac{1}{n}$ diverge, así que pasas al segundo rombo: como $\frac{1}{n}$ es decreciente y tiende a 0, la serie converge condicionalmente a $\ln 2$.
+>
 
 > [!warning] Estrategia para Aplicar Criterios ⚠️
 >
@@ -394,6 +400,12 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 > ### Integrales de Referencia Importantes
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_04.svg]]
+>
+> **Se lee así:** Es un árbol con una caja raíz y cuatro ramas que se abren a la vez, cada una con su propia caja hija. Tres de esas hojas llevan después un recuadro adicional con la condición de convergencia y, cuando corresponde, el valor de la integral; la cuarta rama termina directamente en la caja con su resultado. El esquema revela que todas se analizan con el mismo patrón: identificar la integral, fijar la condición y leer el valor.
+>
+> **Por qué importa:** Fíjate en que estas cuatro son tus funciones patrón para comparar. Memorizar sus condiciones te evita recalcularlas cada vez y te permite resolver casi cualquier integral impropia con comparación directa o por límite.
+>
+> **Ejemplo:** Para decidir si $\int_1^{\infty} \frac{1}{x^p} dx$ converge, tomas la primera rama y usas $p > 1$ para converger, mientras que $\int_0^1 \frac{1}{x^p} dx$ exige $p < 1$, justo al revés de lo que parece.
 >
 
 > [!warning] Estrategia y Errores Comunes ⚠️

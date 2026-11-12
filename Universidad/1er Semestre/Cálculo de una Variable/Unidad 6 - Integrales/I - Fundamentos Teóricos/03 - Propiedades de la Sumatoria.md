@@ -28,6 +28,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-sumatoria, matemáticas, sumatoria, 
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Propiedades_de_la_Sumatoria_01.svg]]
 >
+> **Se lee así:** así: como una caja central de la que salen cinco flechas hacia sus piezas: el índice, el límite inferior, el límite superior y el término general, más una quinta flecha hacia un bloque de casos especiales, que a su vez se abre en tres ramas con los escenarios de límite inferior mayor, igual al superior, y de índice negativo.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa la *sumatoria* de sus piezas y luego te avisa de los tres casos límite que más confunden. Te evita errores al contar términos y al cambiar el índice sin cuidar la coherencia de los límites.
+>
+> **Ejemplo:** Para $\sum_{i=1}^{5} 7$ hay $5 - 1 + 1 = 5$ términos y el resultado es $35$; en cambio, una suma con $a > b$ vale $0$.
+>
 > ### Casos Especiales
 > - **Suma vacía**: Si a > b, entonces Σ = 0
 > - **Un solo término**: Si a = b, entonces Σ = f(a)

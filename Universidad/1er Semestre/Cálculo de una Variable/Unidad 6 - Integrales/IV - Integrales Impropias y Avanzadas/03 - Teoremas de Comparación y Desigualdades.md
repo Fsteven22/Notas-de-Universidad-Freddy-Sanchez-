@@ -45,6 +45,12 @@ tags: [MATG1045, unidad6, teoremas-de-comparacion-y-desigualdades, matematicas/c
 > [!info] 🖼️ Demostración del Teorema Básico
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_01.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos que arranca con el enunciado del teorema y baja por cuatro pasos encadenados por flechas verticales. Los pasos van de la definición de una función auxiliar no negativa, al hecho de que su integral es no negativa, al uso de la linealidad y a la desigualdad final entre las dos integrales. Del último bloque sale una caja aparte con la variante estricta cuando la desigualdad falla solo en puntos sueltos.
+>
+> **Por qué importa:** Fíjate en que comparar integrales no es una regla suelta sino linealidad de la integral aplicada a una diferencia. Entenderlo así te sirve para deducir corolarios como la desigualdad triangular y para estimar áreas sin calcularlas.
+>
+> **Ejemplo:** Con $f(x) = \frac{1}{x^2}$ y $g(x) = \frac{1}{x}$ en $[1,2]$ de la nota, aplicas la cadena y concluyes $\int_1^2 \frac{1}{x^2} dx \leq \int_1^2 \frac{1}{x} dx$, es decir $\frac{1}{2} \leq \ln 2$.
 
 ## 📊 Corolarios Importantes
 
@@ -156,6 +162,12 @@ tags: [MATG1045, unidad6, teoremas-de-comparacion-y-desigualdades, matematicas/c
 > [!info] 🖼️ Criterio de Comparación Directa
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_de_Comparación_y_Desigualdades_02.svg]]
+>
+> **Se lee así:** La caja principal abre el diagrama y da paso a un rectángulo con el supuesto, donde la función menor queda acotada por la mayor. De ese supuesto salen dos ramas paralelas: una lleva a la convergencia y termina en un recuadro con la regla de la función chica, y la otra lleva a la divergencia y cierra con la regla simétrica de la función grande. Las dos ramas son independientes y se leen como dos criterios distintos.
+>
+> **Por qué importa:** Fíjate en que aquí la comparación se usa al revés que en las integrales definidas: no para acotar, sino para decidir si la integral existe. Te da la herramienta para clasificar integrales impropias cuyo integrando no tiene antiderivada sencilla.
+>
+> **Ejemplo:** Como $0 \leq \frac{1}{x^2+1} \leq \frac{1}{x^2}$ para $x \geq 1$ y $\int_1^{\infty} \frac{1}{x^2} dx$ converge, la rama de convergencia te dice que $\int_1^{\infty} \frac{1}{x^2+1} dx$ también converge.
 
 ## 🌟 Funciones de Referencia Estándar
 

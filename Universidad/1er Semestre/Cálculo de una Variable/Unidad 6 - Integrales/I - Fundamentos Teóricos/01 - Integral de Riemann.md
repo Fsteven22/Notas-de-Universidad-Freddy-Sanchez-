@@ -41,6 +41,12 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 > [!info] 🖼️ Refinamiento de Particiones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integral_de_Riemann_01.svg]]
+>
+> **Se lee así:** así: como una cadena de cuatro rectángulos que avanza hacia la derecha. Una partición inicial da paso a la acción de agregar puntos de corte, y ese paso produce una partición refinada que, a su vez, desemboca en una mejor aproximación del área. No hay rombos ni ramas: es una secuencia lineal de pasos.
+>
+> **Por qué importa:** Fíjate en que este esquema fija qué significa *refinamiento*: no se cambian los puntos antiguos, se añaden más. Te evita el error de creer que al hacer una partición más fina se redefine la anterior, y te prepara para entender por qué el límite de la integral se toma con $\|P\| \to 0$.
+>
+> **Ejemplo:** En la nota, la partición regular $P = \{0, 0.5, 1, 1.5, 2\}$ de $f(x) = x^2$ en $[0,2]$ se refina con $n = 8$, donde $\|P\| = 0.25$ y la suma por la derecha mejora de $3.75$ a $3.21$.
 
 ## 📊 Norma de una Partición
 
@@ -63,6 +69,12 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 > [!info] 🖼️ Importancia de la Norma
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integral_de_Riemann_02.svg]]
+>
+> **Se lee así:** así: como dos ramas paralelas que comparan una norma grande con una norma pequeña. La rama de la norma grande conduce a subintervalos anchos y termina en una aproximación burda, mientras la rama de la norma pequeña pasa por subintervalos finos, luego por una aproximación precisa, y continúa hasta el límite $\|P\| \to 0$ y la integral exacta.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa dos caminos que a primera vista parecen el mismo: *muchos subintervalos* no es lo mismo que *subintervalos finos*. Te evita el error de pensar que basta con $n \to \infty$, porque lo que controla la precisión es que $\|P\| \to 0$.
+>
+> **Ejemplo:** Un error típico es aproximar $\int_0^2 x^2 dx$ con $n = 1000$ subintervalos desiguales: la suma sigue lejos de $\frac{8}{3}$ si el subintervalo más largo no se encoge.
 
 ## 🧮 Notación Sigma y Suma de Riemann
 
@@ -133,6 +145,12 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 > [!info] 🖼️ Interpretación del Límite
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integral_de_Riemann_03.svg]]
+>
+> **Se lee así:** así: como un diagrama con un rombo de decisión en el centro. Una partición de norma pequeña alimenta el cálculo de la suma de Riemann, y el rombo pregunta si la norma ya tiende a cero: si la respuesta es sí, las sumas convergen al valor $I$ y ese número queda identificado como la integral de Riemann; si es no, la flecha devuelve el proceso a refinar la partición y volver a empezar.
+>
+> **Por qué importa:** Fíjate en que el rombo convierte la definición en un **ciclo de refinamiento**: la integral no se obtiene en un solo intento, sino en la familia de sumas que se estabiliza al hacer $\|P\| \to 0$. Te evita tratar la suma de Riemann como un resultado único y definitivo.
+>
+> **Ejemplo:** En la nota, con $f(x) = x^2$ en $[0,2]$ se pasa de $R_4 = 3.75$ a $R_8 = 3.21$, $R_{16} = 2.94$ y $R_{32} = 2.80$, acercándose siempre a $\frac{8}{3}$.
 
 ## 🧪 Ejemplo Detallado
 
@@ -181,6 +199,12 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 > [!info] 🖼️ Condiciones de Integrabilidad
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integral_de_Riemann_04.svg]]
+>
+> **Se lee así:** así: como una escalera de decisiones. Partiendo de una función definida en un intervalo cerrado, el primer rombo pregunta si es continua; si lo es, se llega al rectángulo de integrabilidad, y si no, la flecha baja a un segundo rombo sobre la monotonía. Desde ahí se pasa a un tercer rombo que combina acotación y número finito de discontinuidades, y la última salida advierte que la función puede no ser integrable.
+>
+> **Por qué importa:** Fíjate en que el diagrama te da una **estrategia de verificación** antes de calcular: primero continuidad, luego monotonía, y por último acotación con discontinuidades finitas. Te evita Attempting积分 una función que no cumple ninguna condición y perder tiempo en sumas que no convergen.
+>
+> **Ejemplo:** La función $f(x) = x$ en $[0,1]$ es continua, así que el primer rombo ya responde sí y queda garantizada la integral $\int_0^1 x dx = \frac{1}{2}$.
 
 ## 🛠️ Propiedades Fundamentales
 
@@ -218,6 +242,12 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 > [!info] 🖼️ Interpretación Geométrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integral_de_Riemann_05.svg]]
+>
+> **Se lee así:** así: como un proceso de construcción con una bifurcación. Desde la función se divide el intervalo en subintervalos y se crean rectángulos; de cada rectángulo salen dos rutas, la altura y la base, que vuelven a juntarse en el área de un rectángulo. Después las áreas se suman, se toma el límite cuando la norma tiende a cero y se llega al área exacta.
+>
+> **Por qué importa:** Fíjate en que el esquema muestra el **puente entre la fórmula y el dibujo**: la integral es una suma de áreas que se hace cada vez más fina. Te sirve para entender por qué, si $f$ cambia de signo, obtienes un área neta y no un área positiva.
+>
+> **Ejemplo:** Para $f(x) = x - 1$ en $[0,2]$, los rectángulos sobre $[0,1]$ restan y los de $[1,2]$ suman, y el área neta da $\int_0^2 (x-1) dx = 0$.
 
 ---
 
