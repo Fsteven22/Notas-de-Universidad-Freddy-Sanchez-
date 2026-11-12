@@ -28,7 +28,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-sumatoria, matemáticas, sumatoria, 
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Propiedades_de_la_Sumatoria_01.svg]]
 >
-> **Se lee así:** así: como una caja central de la que salen cinco flechas hacia sus piezas: el índice, el límite inferior, el límite superior y el término general, más una quinta flecha hacia un bloque de casos especiales, que a su vez se abre en tres ramas con los escenarios de límite inferior mayor, igual al superior, y de índice negativo.
+> **Se lee así:** como una caja central de la que salen cinco flechas hacia sus piezas: el índice, el límite inferior, el límite superior y el término general, más una quinta flecha hacia un bloque de casos especiales, que a su vez se abre en tres ramas con los escenarios de límite inferior mayor, igual al superior, y de índice negativo.
 >
 > **Por qué importa:** Fíjate en que el diagrama separa la *sumatoria* de sus piezas y luego te avisa de los tres casos límite que más confunden. Te evita errores al contar términos y al cambiar el índice sin cuidar la coherencia de los límites.
 >
@@ -117,6 +117,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-sumatoria, matemáticas, sumatoria, 
 > ### En Límites y Definición de Integral
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Propiedades_de_la_Sumatoria_02.svg]]
+>
+> **Se lee así:** Es una **cadena recta de rectángulos** sin bifurcaciones: se parte de la aplicación en la suma de Riemann, se particiona el intervalo, se calculan el ancho y el punto de evaluación, se obtiene el aporte de cada tramo, se suman todos los aportes y, al pasar al límite, se llega a la integral.
+>
+> **Por qué importa:** Fíjate en que la integral definida aparece como **el límite de un proceso de aproximación**, no como un misterio. Esto te sirve para entender por qué el método numérico y el método por antiderivadas llegan al mismo resultado.
+>
+> **Ejemplo:** Para aproximar $\int_0^1 x^2 dx$ con $n = 2$, el diagrama da $\Delta x = 0.5$ y $x_i = 0.5, 1$, y la suma $0.5(0.25 + 1) = 0.625$ se acerca al valor exacto $\frac{1}{3}$.
 >
 > ### En Cálculo Integral
 > - **Sumas de Riemann**: $\int_a^b f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} fx_i\Delta x$

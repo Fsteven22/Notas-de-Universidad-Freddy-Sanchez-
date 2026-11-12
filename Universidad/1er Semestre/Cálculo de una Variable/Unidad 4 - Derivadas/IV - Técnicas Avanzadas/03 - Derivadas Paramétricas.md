@@ -120,6 +120,12 @@ tags: [MATG1045, unidad4, derivadas-parametricas, calculo, derivadas, parametric
 > [!info] 🖼️ Segunda Derivada Paramétrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Derivadas_Paramétricas_02.svg]]
+>
+> **Se lee así:** El diagrama es un **recorrido de seis rectángulos** que avanza siempre en una sola dirección: se empieza por la primera derivada ya calculada, se deriva respecto al parámetro, aparece un recuadro que recuerda usar la regla del cociente, sigue el desarrollo algebraico de ese cociente, aparece una división extra y se cierra con la segunda derivada ya simplificada.
+>
+> **Por qué importa:** Fíjate en que el paso clave es el *cociente*: derivar $\frac{dy}{dx}$ como si fuera una fracción corriente y luego dividir otra vez por $\frac{dx}{dt}$. Eso te evita el error típico de derivar respecto a $x$ o de olvidar el segundo cociente, que es donde se va el punto del ejercicio.
+>
+> **Ejemplo:** Con $x = r\cos(t)$ y $y = r\sin(t)$, el recorrido da $\frac{dy}{dx} = -\cot(t)$, su derivada respecto a $t$ es $\csc^2(t)$ y al dividir por $-r\sin(t)$ obtienes $\frac{d^2y}{dx^2} = -\frac{1}{r\sin^3(t)}$.
 
 > [!example] 🔢 Ejemplo 5: Segunda Derivada del Círculo
 >

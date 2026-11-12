@@ -31,7 +31,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_01.svg]]
 >
-> **Se lee así:** así: como una bifurcación que nace en un rombo de decisión. La función $f(x)$ entra al rombo que pregunta por la operación, y de ahí salen dos caminos paralelos: uno lleva a la derivación y termina en la tasa de cambio, el otro lleva a la integración y termina en la acumulación. Las dos ramas desembocan en resultados distintos pero complementarios.
+> **Se lee así:** como una bifurcación que nace en un rombo de decisión. La función $f(x)$ entra al rombo que pregunta por la operación, y de ahí salen dos caminos paralelos: uno lleva a la derivación y termina en la tasa de cambio, el otro lleva a la integración y termina en la acumulación. Las dos ramas desembocan en resultados distintos pero complementarios.
 >
 > **Por qué importa:** Fíjate en que el diagrama ordena las dos caras del cálculo: derivar responde *¿qué tan rápido cambia?* e integrar responde *¿cuánto se acumula?*. Te evita mezclar los dos sentidos al resolver ejercicios de velocidad y distancia, o de costo total y costo marginal.
 >
@@ -60,6 +60,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > **Relación fundamental:** $$\frac{d}{dx}[F(x)] = f(x) \quad \Leftrightarrow \quad \int f(x),dx = F(x) + C$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_02.svg]]
+>
+> **Se lee así:** El diagrama dibuja un **ciclo de cuatro rectángulos**: la integral indefinida entra a la primitiva que la justifica, esa primitiva lleva al resultado con la constante, y el resultado se traduce en notación para volver al inicio. Las flechas cierran el bucle, de modo que ninguna caja queda suelta.
+>
+> **Por qué importa:** Fíjate en que el recorrido es circular y **ninguna casilla se explica sola**. Esto te sirve como recordatorio rápido de que la primitiva y la constante no son un extra, sino parte de la definición de la integral indefinida.
+>
+> **Ejemplo:** Con el problema de valor inicial de la nota, $F'(x) = 3x^2 + 2$ y $F(1) = 5$, recorres el ciclo completo: integral, primitiva $x^3 + 2x$, más $C$ y de vuelta a la notación, con $C = 2$ al final.
 >
 > **Ejemplo simple:**
 >
@@ -105,6 +111,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_03.svg]]
 >
+> **Se lee así:** La estructura es un **árbol que se abre en dos ramas**. Del nodo de linealidad sale un bloque de reglas que se bifurca: una rama lleva a la constante multiplicativa y la otra a la aditividad, cada una con su fórmula. Esas dos ramas vuelven a converger en una caja final con la combinación de ambas reglas.
+>
+> **Por qué importa:** Fíjate en que la linealidad se demuestra **regla por regla** y no como una afirmación de una sola vez. Esto te sirve para romper una integral larga en varias integrales pequeñas, sin inventar atajos que no existen.
+>
+> **Ejemplo:** En el ejercicio 1 de la nota, $\int (4x^3 - 6x^2 + 2) dx$ se separa en tres integrales por la linealidad y termina en $x^4 - 2x^3 + 2x + C$.
+>
 > **⚠️ Importante:**
 >
 > - La linealidad NO aplica para productos: ∫f(x)·g(x)dx ≠ [∫f(x)dx]·[∫g(x)dx]
@@ -127,6 +139,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > **Visualización gráfica:**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_04.svg]]
+>
+> **Se lee así:** Del rectángulo de la constante sale una flecha hacia una caja central que pregunta *¿por qué existe?*. Desde ahí se abren cuatro ramas paralelas: una muestra varias derivadas que coinciden, otra explica que al derivar se pierde el término constante, y las dos últimas apuntan a la familia infinita de primitivas y a la igualdad final de la integral.
+>
+> **Por qué importa:** Fíjate en que el diagrama responde a la duda con **cuatro argumentos encadenados**, no con una simple definición. Esto te sirve para recordar por qué hay que escribir siempre $+ C$ en una integral indefinida.
+>
+> **Ejemplo:** La nota lo ilustra con $F'(x) = 3x^2 + 2$ y $F(1) = 5$: al integrar queda $x^3 + 2x + C$ y la condición inicial fija $C = 2$.
 >
 > **Interpretación geométrica:**
 >
@@ -185,6 +203,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_05.svg]]
 >
+> **Se lee así:** El diagrama tiene **dos cadenas paralelas**. La primera va de un rectángulo inicial a una caja que declara operaciones inversas y termina en la fórmula que deriva la integral. La segunda arranca en la integral de una derivada, pasa por una caja de consecuencia práctica y acaba en la igualdad del teorema fundamental con los límites $a$ y $b$.
+>
+> **Por qué importa:** Fíjate en que aparecen **las dos direcciones** de la misma relación, no solo una. Esto te sirve para verificar una antiderivada derivándola y para entender por qué el teorema fundamental se apoya en esa simetría.
+>
+> **Ejemplo:** En la nota, $\int 4x^3, dx = x^4 + C$ se comprueba derivando: $\frac{d}{dx}(x^4 + C) = 4x^3$, que es justamente la primera cadena del diagrama.
+>
 > **Tabla comparativa:**
 >
 > |Operación|Símbolo|Pregunta|Resultado|
@@ -226,6 +250,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_06.svg]]
 >
+> **Se lee así:** La estructura es un **abanico**: de la caja de primitivas salen cinco flechas hacia cinco rectángulos paralelos, cada uno con una constante distinta. Todas esas flechas vuelven a converger en una única caja final que afirma que las cinco comparten la misma derivada.
+>
+> **Por qué importa:** Fíjate en que el diagrama muestra **la convergencia**: muchas primitivas distintas, una sola derivada común. Esto te sirve para entender por qué la integral indefinida devuelve una familia y por qué hace falta un dato extra para quedarse con una función.
+>
+> **Ejemplo:** Con $F'(x) = 6x^2$ y $F(0) = 4$, la nota toma $F(x) = 2x^3 + C$ del abanico y usa la condición inicial para fijar $C = 4$.
+>
 > **Ejemplos:**
 >
 > |Función f(x)|Familia de Primitivas F(x) + C|Valores específicos|
@@ -260,7 +290,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_07.svg]]
 >
-> **Se lee así:** así: como un flujo que empieza en el enunciado del problema de valor inicial y termina en una solución única. Tras la familia general de primitivas, el diagrama abre la etapa de aplicar la condición inicial, que a su vez se bifurca en dos pasos paralelos: sustituir el punto dado y despejar la constante. Solo la rama que despeja $C$ lleva a la solución particular.
+> **Se lee así:** como un flujo que empieza en el enunciado del problema de valor inicial y termina en una solución única. Tras la familia general de primitivas, el diagrama abre la etapa de aplicar la condición inicial, que a su vez se bifurca en dos pasos paralelos: sustituir el punto dado y despejar la constante. Solo la rama que despeja $C$ lleva a la solución particular.
 >
 > **Por qué importa:** Fíjate en que el diagrama separa el *qué* del *cómo*: la condición inicial no se aplica de una sola vez, se aplica en dos pasos explícitos. Te evita el error clásico de olvidar $+ C$ y responder con una familia de funciones cuando el problema pide una sola.
 >
@@ -296,6 +326,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > |**Interpretación**|Familia de funciones|Área o acumulación|
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_08.svg]]
+>
+> **Se lee así:** El diagrama parte de una caja única con la integral y se **bifurca en dos ramas paralelas**. La rama izquierda describe la versión indefinida, con sus rasgos, y termina en una caja que anuncia el tipo de resultado que produce; la derecha hace lo mismo con la versión definida y acaba en un resultado numérico. Las dos ramas se mantienen separadas, sin converger.
+>
+> **Por qué importa:** Fíjate en que el diagrama te hace **comparar de entrada** las dos integrales y deja claro qué cambia entre ellas y qué resultado produce cada una. Esto te sirve para no esperar un número donde va una función, ni escribir una $+ C$ dentro de una integral definida.
+>
+> **Ejemplo:** En el ejercicio 2 de la nota, $\int_0^3 (2x+1) dx = 12$ sigue la rama de la definida y da un número, mientras $\int 2x, dx = x^2 + C$ sigue la otra y da una familia.
 >
 > **Interpretación geométrica:**
 >
@@ -344,7 +380,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_09.svg]]
 >
-> **Se lee así:** así: como un árbol que se abre desde una idea general hacia dos propiedades. Del nodo de linealidad sale una bifurcación hacia la constante multiplicativa y hacia la aditividad, cada una con su fórmula al lado; las dos líneas convergen luego en una caja final que combina ambas en una sola expresión con dos coeficientes.
+> **Se lee así:** como un árbol que se abre desde una idea general hacia dos propiedades. Del nodo de linealidad sale una bifurcación hacia la constante multiplicativa y hacia la aditividad, cada una con su fórmula al lado; las dos líneas convergen luego en una caja final que combina ambas en una sola expresión con dos coeficientes.
 >
 > **Por qué importa:** Fíjate en que la linealidad te permite **romper una integral larga en varias integrales fáciles**. Te evita el error de integrar un producto como si fuera producto de integrales, algo que nunca es válido, y de perder tiempo buscando una antiderivada Monster.
 >
@@ -382,6 +418,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_10.svg]]
 >
+> **Se lee así:** Del rectángulo inicial salen tres rutas distintas. Una llega a la caja de orden invertido y termina en la igualdad con el signo cambiado; otra toca la caja de límites iguales, que se queda sin salida; y la tercera pasa por la interpretación geométrica hasta la igualdad del intervalo vacío y su valor cero.
+>
+> **Por qué importa:** Fíjate en que el cambio de límites aparece como **dos hechos con la misma raíz**: invertir y anular. Esto te sirve para leer el signo del resultado en cualquier integral definida sin volver a derivarlo cada vez.
+>
+> **Ejemplo:** Si en un ejercicio te dan $\int_1^4 g(x) dx = -3$, la rama de orden invertido te da $\int_4^1 g(x) dx = 3$ de inmediato.
+>
 > **Tabla resumen:**
 >
 > |Condición|Expresión|Resultado|Significado|
@@ -405,6 +447,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > El área total es la suma de las áreas parciales.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_11.svg]]
+>
+> **Se lee así:** La lectura es un **árbol de dos rutas que convergen**. Del rectángulo de la integral sobre el intervalo se pasa a la aditividad, que se abre en el caso $a < c < b$ y en la lectura geométrica; ambas ramas terminan en la misma caja final con la suma de las dos integrales parciales.
+>
+> **Por qué importa:** Fíjate en que las dos ramas llegan **a la misma igualdad**, así que la propiedad no depende de cómo la mires. Esto te sirve para partir una integral en tramos cuando el integrando cambia de comportamiento o la función está definida por partes.
+>
+> **Ejemplo:** En el ejercicio 3 de la nota, con $\int_0^2 f(x) dx = 5$ y $\int_2^5 f(x) dx = 8$, la suma de las dos partes da $\int_0^5 f(x) dx = 13$.
 >
 > **Ejemplo numérico:**
 >
@@ -454,6 +502,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > **Interpretación:** Si una función está "debajo" de otra, su integral es menor.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_12.svg]]
+>
+> **Se lee así:** El diagrama no encadena pasos: son **tres parejas independientes** de rectángulos. Cada pareja tiene arriba una hipótesis sobre $f(x)$ y abajo la conclusión sobre el valor de la integral, y ninguna pareja está conectada con las otras.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa **condición y consecuencia** en tres reglas sueltas. Esto te sirve para acotar el resultado de una integral sin calcularla, y para saber de antemano qué signo debe tener.
+>
+> **Ejemplo:** Para $f(x) = \sin(x)$ en $[0, \pi]$, como $0 \leq \sin(x) \leq 1$, la tercera pareja acota la integral entre $0$ y $\pi$, y el valor real $2$ cumple esa cota.
 > **Propiedad 3: Cotas para la integral**
 >
 > Si m ≤ f(x) ≤ M para todo x ∈ [a,b], entonces: $$m(b-a) \leq \int_a^b f(x),dx \leq M(b-a)$$
@@ -500,6 +554,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 > |**Sobre el eje**|f(x) = 0|Sin área|0|
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_13.svg]]
+>
+> **Se lee así:** Del rectángulo de la integral se baja a una caja intermedia que clasifica el **signo del integrando** en el intervalo. Desde esa clasificación salen tres ramas paralelas, una por cada escenario posible, y ninguna de ellas vuelve a converger: cada una se queda como un caso aparte.
+>
+> **Por qué importa:** Fíjate en que el signo se decide **una sola vez**, antes de integrar, y de ahí se obtienen todas las conclusiones. Esto te sirve para saber de antemano si el resultado será positivo, negativo o una resta de áreas.
+>
+> **Ejemplo:** Con $f(x) = x - 3$ en $[0, 2]$, la función está bajo el eje, así que tomas la rama de $f(x) < 0$ y el resultado es $\int_0^2 (x-3) dx = -4$.
 >
 > **Ejemplo visual 1: Área positiva**
 >
@@ -571,6 +631,12 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_14.svg]]
 >
+> **Se lee así:** El diagrama es un **árbol de dos ramas** que cuelgan del mismo nodo superior. La rama izquierda despliega tres cajas paralelas sobre la primera parte, con una versión de la afirmación en cada una; la derecha hace lo mismo con la segunda parte, hasta la caja que anuncia la evaluación por antiderivadas.
+>
+> **Por qué importa:** Fíjate en que el teorema **no es una sola fórmula**, sino dos partes con usos distintos. Esto te sirve para saber cuándo conviene acumular $F(x) = \int_a^x f(t) dt$ y cuándo basta con buscar una antiderivada y restar valores en los extremos.
+>
+> **Ejemplo:** Para $\int_1^3 x^2, dx$ de la nota, la segunda parte da $F(3) - F(1) = 9 - \frac{1}{3} = \frac{26}{3}$ con $F(x) = \frac{x^3}{3}$.
+>
 > **Ejemplo completo:**
 >
 > Calcular ∫₁³x² dx
@@ -605,7 +671,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_15.svg]]
 >
-> **Se lee así:** así: como un algoritmo de cinco pasos encadenados de izquierda a derecha. Se parte de la integral definida y se avanza por un rectángulo que pide la antiderivada, luego otro que evalúa esa antiderivada en el límite superior, otro en el inferior, otro que hace la resta y un último que entrega el resultado numérico. No hay decisiones: el orden de los pasos es fijo.
+> **Se lee así:** como un algoritmo de cinco pasos encadenados de izquierda a derecha. Se parte de la integral definida y se avanza por un rectángulo que pide la antiderivada, luego otro que evalúa esa antiderivada en el límite superior, otro en el inferior, otro que hace la resta y un último que entrega el resultado numérico. No hay decisiones: el orden de los pasos es fijo.
 >
 > **Por qué importa:** Fíjate en que la secuencia fija el **orden de la resta** $F(b) - F(a)$, que es donde más se equivocan los estudiantes. Te evita además saltarte el paso de encontrar la antiderivada y evaluar un solo límite nada más.
 >
@@ -775,7 +841,7 @@ tags: [MATG1045, unidad6, propiedades-de-la-integral, cálculo, integrales, inte
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Propiedades_de_la_Integral_16.svg]]
 >
-> **Se lee así:** así: como un mapa mental con una raíz central de la que salen tres ramas. La rama de la integral indefinida despliega sus cuatro rasgos, la de la integral definida despliega los suyos, y una tercera rama es el TFC, que conecta ambas y destaca la evaluación práctica con $F(b) - F(a)$.
+> **Se lee así:** como un mapa mental con una raíz central de la que salen tres ramas. La rama de la integral indefinida despliega sus cuatro rasgos, la de la integral definida despliega los suyos, y una tercera rama es el TFC, que conecta ambas y destaca la evaluación práctica con $F(b) - F(a)$.
 >
 > **Por qué importa:** Fíjate en que el mapa resume en un solo vistazo **qué distingue** a la integral indefinida de la definida: una función más $C$ frente a un número, y qué papel juega el TFC como puente entre las dos. Te sirve como repaso rápido antes de un examen.
 >

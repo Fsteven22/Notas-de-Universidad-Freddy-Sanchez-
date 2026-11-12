@@ -62,6 +62,12 @@ tags: [MATG1045, unidad3, limite-de-la-razon-de-cambio, derivadas, limites, razo
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Límite_de_la_Razón_de_Cambio_01.svg]]
 >
+> **Se lee así:** El diagrama tiene dos recorridos separados. El principal encadena cuatro rectángulos: los dos puntos sobre la curva, la recta que los une, el acercamiento del punto móvil al fijo y la transformación de esa recta en tangente, que desemboca en la pendiente igual a la derivada. El recorrido corto, aparte, salta de la razón de cambio promedio a la instantánea.
+>
+> **Por qué importa:** Fíjate en que la tangente no aparece de la nada: es el final de un proceso de acercamiento. Verlo como una cadena evita que trates la pendiente como una fórmula suelta y te da la explicación de por qué el límite de las secantes es la derivada.
+>
+> **Ejemplo:** Con $f(x) = x^2$ en $a = 3$, el recorrido va de los puntos $P = (3, 9)$ y $Q = (3+h, f(3+h))$ a la secante, y al hacer $h \to 0$ la tangente queda con pendiente $f'(3) = 6$.
+>
 > **Proceso geométrico:** 🎪
 >
 > 1. **Punto fijo:** $P = (a, f(a))$ en la curva

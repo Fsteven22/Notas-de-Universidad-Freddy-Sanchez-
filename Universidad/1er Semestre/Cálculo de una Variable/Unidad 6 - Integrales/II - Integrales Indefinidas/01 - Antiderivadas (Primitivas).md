@@ -31,7 +31,7 @@ tags: [MATG1045, unidad6, antiderivadas-primitivas, matemáticas, cálculo, anti
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Antiderivadas_(Primitivas)_01.svg]]
 >
-> **Se lee así:** así: como un mapa mental con una raíz central y cuatro ramas anchas. Cada rama es un bloque de cuatro hojas: la de fundamentos con definición, notación, existencia y verificación; la de técnicas con fórmulas y simplificación; la de aplicaciones con valor inicial y modelado; y la de conexiones con temas externos del cálculo.
+> **Se lee así:** como un mapa mental con una raíz central y cuatro ramas anchas. Cada rama es un bloque de cuatro hojas: la de fundamentos con definición, notación, existencia y verificación; la de técnicas con fórmulas y simplificación; la de aplicaciones con valor inicial y modelado; y la de conexiones con temas externos del cálculo.
 >
 > **Por qué importa:** Fíjate en que el mapa te dice **todo lo que debes saber** de las antiderivadas en un vistazo: qué son, cómo se calculan, para qué sirven y con qué temas se conectan. Te sirve como índice de repaso antes de la prueba.
 >

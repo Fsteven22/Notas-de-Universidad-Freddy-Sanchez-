@@ -125,6 +125,12 @@ tags: [MATG1045, unidad4, derivadas-de-funciones-inversas, calculo, derivadas, f
 > [!info] 🖼️ Proceso Sistemático
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Derivadas_de_Funciones_Inversas_02.svg]]
+>
+> **Se lee así:** Es una **cadena de siete rectángulos**, sin rombos, donde cada paso depende del anterior: se parte de la inversa, se escriben las variables, se invierte la relación, se deriva de forma implícita, se despeja la derivada, se reescribe todo en función de $x$ y se cierra con la simplificación final.
+>
+> **Por qué importa:** Fíjate en que el orden importa: primero se invierte y se deriva, y solo al final se simplifica. Seguir esta ruta te da el mismo resultado que memorizar $\arcsin$ o $\text{arcsec}$ por separado, y te evita el error de escribir $\frac{1}{f'(x)}$ en vez de $\frac{1}{f'(f^{-1}(x))}$.
+>
+> **Ejemplo:** Para $y = \text{arcsec}(x)$ recorres la cadena: escribes $x = \sec(y)$, derivas, despejas $\frac{dy}{dx} = \frac{1}{\sec(y)\tan(y)}$ y con $1 + \tan^2(y) = \sec^2(y)$ llegas a $\frac{1}{|x|\sqrt{x^2 - 1}}$.
 
 > [!example] 🔢 Ejemplo 5: Derivada de $\text{arcsec}(x)$
 >

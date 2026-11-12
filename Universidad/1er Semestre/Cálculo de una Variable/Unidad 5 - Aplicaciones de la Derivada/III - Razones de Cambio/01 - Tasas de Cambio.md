@@ -141,6 +141,12 @@ tags: [MATG1045, unidad5, tasas-de-cambio, matemáticas, cálculo, tasas-cambio,
 > [!info] 🖼️ Comparación Visual: Promedio vs Instantánea
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Tasas_de_Cambio_03.svg]]
+>
+> **Se lee así:** Es un **gráfico circular** con el título arriba y tres porciones de colores distintos que suman el 100%: la más grande ocupa 40% y corresponde a la tasa promedio, otra de 35% a la instantánea y la menor, 25%, al rasgo que comparten ambas. A la derecha, una leyenda con tres recuadros de color identifica cada porción.
+>
+> **Por qué importa:** Fíjate en que la porción más grande es la promedio y la más pequeña el rasgo común: la imagen resume de un vistazo cuánto pesa cada rasgo y por qué conviene separar los dos conceptos. Te sirve para detectar de inmediato cuándo te piden una cosa y estás respondiendo con la otra.
+>
+> **Ejemplo:** En el problema de la nota con la posición $s(t) = -16t^2 + 64t + 80$ entre $t = 1$ y $t = 3$, el enunciado habla de un intervalo, así que corresponde la porción grande de la tasa promedio y la respuesta es 0 pies por segundo.
 
 > [!warning] ⚠️ Diferencias Clave **Tasa de Cambio Promedio:**
 >

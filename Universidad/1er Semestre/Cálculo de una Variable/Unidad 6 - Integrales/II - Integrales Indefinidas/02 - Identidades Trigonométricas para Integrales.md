@@ -20,6 +20,12 @@ tags: [MATG1045, unidad6, identidades-trigonometricas-para-integrales, matemáti
 > [!info] 🖼️ Identidades de Producto a Suma
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_01.svg]]
+>
+> **Se lee así:** El diagrama entra por un rectángulo de producto trigonométrico y llega a un **rombo de decisión** que pregunta por el tipo de producto. De ahí salen tres ramas paralelas, una por cada par de funciones, y cada una lleva a su fórmula correspondiente; las tres vuelven a converger en una caja final de integral de sumas simples.
+>
+> **Por qué importa:** Fíjate en que el rombo te obliga a **clasificar antes de calcular**. Esto te evita intentar integrar el producto directamente y te muestra que las tres salidas desembocan en el mismo tipo de integral, la de sumas simples.
+>
+> **Ejemplo:** En la lista de práctica de la nota, $\int \cos(4x)\cos(x) dx$ cae en la rama cos·cos y se convierte en $\frac{1}{2}[\cos(5x) + \cos(3x)]$ antes de integrar.
 
 > [!example] 🔍 Ejemplo Clásico: Producto sen·cos **Integral:** $\int \sin(3x)\cos(5x) , dx$
 >

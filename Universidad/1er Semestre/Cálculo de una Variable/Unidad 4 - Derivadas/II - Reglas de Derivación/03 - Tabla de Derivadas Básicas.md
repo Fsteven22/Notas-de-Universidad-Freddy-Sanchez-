@@ -31,6 +31,12 @@ tags: [MATG1045, unidad4, tabla-de-derivadas-basicas, matemáticas, cálculo, de
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/cal1-derivadas-tabla-15-formulas-dx.png]]
 >
+> **Se lee así:** Es una lámina en **dos columnas numeradas**: la izquierda lleva las primeras ocho igualdades y la derecha las siete restantes, con la numeración corrida para que no falte ninguna. Cada línea repite la misma forma, operador de derivación a la izquierda y resultado a la derecha, y las últimas filas incluyen ya las inversas trigonométricas con sus raíces cuadradas.
+>
+> **Por qué importa:** Fíjate en que las quince entradas usan la misma notación de operador y la misma disposición, así que puedes leerlas en diagonal para repasar rápido. Tenerla delante en un parcial te evita improvisar y te permite **verificar** un resultado derivando la expresión otra vez.
+>
+> **Ejemplo:** Para derivar $f(x) = e^x + \sin x$ consultas las filas de exponencial y seno, sumas las dos derivadas y obtienes $f'(x) = e^x + \cos x$, tal como aparece en los ejemplos rápidos de la nota.
+>
 > _Esta tabla contiene las reglas de derivación esenciales que debes memorizar. Cada fórmula representa la derivada directa de las funciones elementales más importantes en cálculo diferencial._
 >
 

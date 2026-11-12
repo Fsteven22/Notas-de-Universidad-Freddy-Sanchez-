@@ -228,6 +228,12 @@ tags: [MATG1045, unidad5, razones-de-cambio-relacionadas, calculo, razones-cambi
 > [!info] 🖼️ Problemas de Ángulos Variables
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Razones_de_Cambio_Relacionadas_02.svg]]
+>
+> **Se lee así:** Es un **árbol de dos niveles**: de la casilla de problemas geométricos dinámicos salen cuatro ramas (área, perímetros, ángulos y volúmenes) y cada una baja a un recuadro con el tipo de figura o de movimiento típico. Desde ahí, una última flecha lleva a la casilla con la **razón de cambio** que pide ese tipo de problema, como $\frac{dA}{dt}$ o $\frac{d\theta}{dt}$.
+>
+> **Por qué importa:** Fíjate en que la estructura te dice qué escribir en la línea de la derivada implícita: cada rama termina en una razón de cambio distinta. Esto te sirve para identificar de entrada si te piden área, perímetro, ángulo o volumen, y evita que busques una velocidad lineal donde la pregunta es angular.
+>
+> **Ejemplo:** En el problema del observador y el avión, el enunciado pide la velocidad angular, así que tomas la rama de ángulos variables y su salida $\frac{d\theta}{dt}$ te da exactamente la incógnita, con la relación $\tan(\theta) = \frac{1000}{x}$.
 
 > [!example] Problema: Observador y Avión **Enunciado:** Un avión vuela horizontalmente a 150 m/s y a 1000 m de altura. Un observador en tierra lo sigue con binoculares. ¿A qué velocidad angular giran los binoculares cuando el avión está a 1200 m horizontalmente del observador?
 >

@@ -44,6 +44,12 @@ tags: [MATG1045, unidad5, aproximaciones-lineales-y-diferenciales, calculo, apro
 > [!info] 🖼️ Aproximaciones Locales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Aproximaciones_Lineales_y_Diferenciales_01.svg]]
+>
+> **Se lee así:** El diagrama es una **cadena corta de cuatro rectángulos** con flechas que van hacia abajo: se parte de la función original, se marca el punto donde se va a trabajar, se traza la recta que toca la curva en ese punto y se llega a la casilla de aproximación local. Cada flecha significa un paso, no una decisión.
+>
+> **Por qué importa:** Fíjate en que la aproximación no se aplica a la función completa sino a un entorno del punto de tangencia: por eso el diagrama pasa siempre por la recta antes de llegar al resultado. Esto te evita usar $f(a+h) \approx f(a) + f'(a)h$ lejos de $a$, donde el error se dispara.
+>
+> **Ejemplo:** Para $f(x) = x^2$ en $a = 3$ con $dx = 0.1$, el recorrido da $dy = 6 \cdot 0.1 = 0.6$, frente al valor real $\Delta y = 0.61$, que muestra lo buena que es la aproximación en ese punto.
 
 > [!warning] ⚠️ Limitaciones de la Aproximación
 >
@@ -84,6 +90,12 @@ tags: [MATG1045, unidad5, aproximaciones-lineales-y-diferenciales, calculo, apro
 > [!info] 🖼️ Aplicaciones en Mediciones
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Aproximaciones_Lineales_y_Diferenciales_02.svg]]
+>
+> **Se lee así:** Es una **cadena de cuatro rectángulos** que sigue el recorrido de una medición real: la primera casilla es la medida con su incertidumbre, la segunda indica aplicar el diferencial, la tercera pide derivar la magnitud que se quiere propagar y la cuarta cierra con el resultado numérico acompañado de su margen de error.
+>
+> **Por qué importa:** Fíjate en que la incertidumbre de la medida entra una sola vez, al principio, y el error final sale amplificado por la derivada. Esto te sirve para los informes de laboratorio: te da una cota realista del volumen y evita que presentes un número sin margen.
+>
+> **Ejemplo:** Con $r = 5.0 \pm 0.1$ cm en una esfera, la cadena da $V'(r) = 4\pi r^2$, luego $\Delta V \approx 4\pi(25)(0.1) = 10\pi$ y termina en $V = 523.6 \pm 31.4\ \text{cm}^3$.
 
 > [!tip] 🎓 Técnica de Estudio: Mnemotecnia "DALE" Para recordar el proceso de aproximaciones lineales:
 >

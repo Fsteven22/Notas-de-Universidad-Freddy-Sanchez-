@@ -270,6 +270,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > [!info] 🖼️ Comportamiento Asintótico Horizontal
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_03.svg]]
+>
+> **Se lee así:** Arriba hay un rectángulo con la función y debajo un **rombo de decisión** que pregunta por el límite cuando $x$ tiende a infinito. Del rombo salen tres ramas rotuladas: dos según el tipo de resultado y una tercera para cuando el límite no existe. Las dos primeras bajan a un recuadro de consecuencia (estabilización o crecimiento sin cota) y la tercera a un recuadro con un ejemplo de función.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa tres resultados que a simple vista se confunden: un valor finito, un crecimiento ilimitado y una oscilación. Esto te evita responder *no existe* cuando en realidad la función se va a infinito, y te obliga a revisar los dos lados antes de concluir.
+>
+> **Ejemplo:** Con $f(x) = \sin x$ sigues la rama de comportamiento oscilatorio, mientras que con $f(x) = \frac{1}{x}$ sigues la del límite finito $L = 0$, que da la asíntota horizontal $y = 0$.
 
 > [!info] 🎯 **Interpretación Geométrica**
 >
@@ -446,6 +452,12 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > **Entonces:** $\lim_{n \to \infty} b_n = L$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_06.svg]]
+>
+> **Se lee así:** El esquema tiene **tres rectángulos de sucesión** en cadena, unidos por flechas rotuladas con el signo de desigualdad, de modo que el bloque central queda encajonado entre los dos externos. De los tres sale una flecha hacia un mismo rectángulo con el valor $L$, que es el destino común y el único punto de cierre del diagrama.
+>
+> **Por qué importa:** Fíjate en que las tres sucesiones apuntan al mismo $L$: la garantía no es que la central se acerque, sino que *no tiene dónde esconderse* porque está encajonada entre dos que sí convergen. Esto te da una forma de probar convergencia sin calcular el término general.
+>
+> **Ejemplo:** Con $a_n = -\frac{1}{n}$, $b_n = \frac{\sin n}{n}$ y $c_n = \frac{1}{n}$, el diagrama muestra que las tres convergen a 0 y que por eso $\lim_{n \to \infty} \frac{\sin n}{n} = 0$.
 >
 > **Visualización:** La sucesión $b_n$ está "atrapada" entre dos sucesiones que convergen al mismo límite 🎯
 >

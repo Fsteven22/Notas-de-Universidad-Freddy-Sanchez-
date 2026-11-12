@@ -652,6 +652,12 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_Especiales_05.svg]]
 >
+> **Se lee así:** Es una **cadena horizontal de cuatro rectángulos** unidos por flechas que siempre apuntan hacia la derecha, sin rombos ni bifurcaciones. La forma escalonada de la cadena indica que cada bloque es un peldaño superior en rapidez de crecimiento, hasta llegar al bloque final, que representa el escalón más alto de la escala.
+>
+> **Por qué importa:** Fíjate en que el orden de las flechas es justamente el orden de la velocidad: comparar dos funciones es solo seguir la cadena de izquierda a derecha. Esto te evita enfrentar un cociente de forma $\frac{\infty}{\infty}$ sin plan, porque ya sabes de antemano cuál de los dos términos crece más rápido.
+>
+> **Ejemplo:** Para $\lim_{x \to \infty} \frac{e^x}{x^n}$ con cualquier $n > 0$, la cadena te dice de inmediato que la exponencial le gana a la potencia y que el cociente diverge a $+\infty$.
+>
 > 1. **Logarítmico**: $\ln x$ 🐌
 > 2. **Polinomial**: $x^n$ (n > 0) 🚶
 > 3. **Exponencial**: $e^x$ 🏃

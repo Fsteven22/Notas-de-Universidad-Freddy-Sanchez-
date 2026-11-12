@@ -35,7 +35,7 @@ tags: [MATG1045, unidad6, teorema-fundamental-del-calculo, fundamental/conexione
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Teorema_Fundamental_del_Cálculo_01.svg]]
 >
-> **Se lee así:** así: como una cadena que arranca con la condición de continuidad y desemboca en dos lecturas finales. Tras enunciar la primera parte del teorema, el diagrama define $F(x)$, recuerda que esa función es diferenciable y de ahí sale la igualdad clave $F'(x) = f(x)$, que luego se traduce en la lectura del área acumulada y en la idea de que su tasa de cambio es la altura de la función.
+> **Se lee así:** como una cadena que arranca con la condición de continuidad y desemboca en dos lecturas finales. Tras enunciar la primera parte del teorema, el diagrama define $F(x)$, recuerda que esa función es diferenciable y de ahí sale la igualdad clave $F'(x) = f(x)$, que luego se traduce en la lectura del área acumulada y en la idea de que su tasa de cambio es la altura de la función.
 >
 > **Por qué importa:** Fíjate en que el diagrama te da la demostración esquemática en tres movimientos, así entiendes por qué la hipótesis de continuidad es indispensable. Te evita el error de derivar una integral con límites variables sin aplicar la regla de la cadena.
 >
@@ -81,7 +81,7 @@ tags: [MATG1045, unidad6, teorema-fundamental-del-calculo, fundamental/conexione
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Teorema_Fundamental_del_Cálculo_02.svg]]
 >
-> **Se lee así:** así: como un recorrido de seis pasos encadenados. Desde la hipótesis de continuidad se enuncia la segunda parte, y luego el diagrama desglosa el método en tres pasos numerados, cierra con la notación entre corchetes y termina en una caja de verificación que propone derivar el resultado para comprobarlo.
+> **Se lee así:** como un recorrido de seis pasos encadenados. Desde la hipótesis de continuidad se enuncia la segunda parte, y luego el diagrama desglosa el método en tres pasos numerados, cierra con la notación entre corchetes y termina en una caja de verificación que propone derivar el resultado para comprobarlo.
 >
 > **Por qué importa:** Fíjate en que la última caja es un **control de calidad**: derivar la antiderivada para verificar. Te evita el error de invertir la resta, escribir $F(a) - F(b)$ y obtener un número con el signo cambiado sin darte cuenta.
 >
@@ -169,7 +169,7 @@ tags: [MATG1045, unidad6, teorema-fundamental-del-calculo, fundamental/conexione
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Teorema_Fundamental_del_Cálculo_03.svg]]
 >
-> **Se lee así:** así: como una caja central de la que salen cuatro ramas paralelas. Tres ramas enumeran propiedades de la función acumulada: que es continua, que es diferenciable con derivada igual a $f$, y que vale cero en el extremo inicial. La cuarta y la quinta caja, más anchas, contienen los dos corolarios del teorema.
+> **Se lee así:** como una caja central de la que salen cuatro ramas paralelas. Tres ramas enumeran propiedades de la función acumulada: que es continua, que es diferenciable con derivada igual a $f$, y que vale cero en el extremo inicial. La cuarta y la quinta caja, más anchas, contienen los dos corolarios del teorema.
 >
 > **Por qué importa:** Fíjate en que el diagrama reúne en un solo lugar las **propiedades de la función acumulada** y los dos corolarios más usados del TFC. Te evita confundir el valor medio para integrales con el teorema del valor medio y aplicarlos donde no toca.
 >
@@ -237,7 +237,7 @@ tags: [MATG1045, unidad6, teorema-fundamental-del-calculo, fundamental/conexione
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Teorema_Fundamental_del_Cálculo_04.svg]]
 >
-> **Se lee así:** así: como un árbol histórico. Del nodo de importancia se abren dos ramas, el problema de las tangentes y el problema de las cuadraturas, y ambas confluyen en la caja de unificación. De esa unificación salen dos salidas finales: la comprobación del resultado derivando y el requisito de que el resultado varíe continuamente con los límites.
+> **Se lee así:** como un árbol histórico. Del nodo de importancia se abren dos ramas, el problema de las tangentes y el problema de las cuadraturas, y ambas confluyen en la caja de unificación. De esa unificación salen dos salidas finales: la comprobación del resultado derivando y el requisito de que el resultado varíe continuamente con los límites.
 >
 > **Por qué importa:** Fíjate en que el diagrama cuenta **por qué** el TFC importó: unificó dos problemas que antes se trataban por separado. Te da la motivación histórica y también el control de calidad de derivar tu resultado para verificarlo.
 >

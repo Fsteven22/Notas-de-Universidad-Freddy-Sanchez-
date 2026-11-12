@@ -46,6 +46,12 @@ tags: [MATG1045, unidad3, continuidad-y-limites, continuidad, limites, discontin
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Continuidad_y_Límites_01.svg]]
 >
+> **Se lee así:** El diagrama es un **árbol de clasificación**: de la casilla inicial de discontinuidad sale una primera bifurcación entre el tipo que se puede corregir y los que no. El segundo nivel reparte los no corregibles en tres ramas (salto finito, salto infinito y oscilación), y cada rama, incluida la corregible, termina en una casilla que explica la causa mediante los límites laterales.
+>
+> **Por qué importa:** Fíjate en que la estructura te obliga a decidir *en dos pasos*: primero si la discontinuidad es evitable y solo después qué tipo es. Esta jerarquía te evita clasificar mal un salto infinito como si fuera esencial, y es la forma de ordenar la respuesta cuando te piden el tipo de discontinuidad.
+>
+> **Ejemplo:** Con $f(x) = \frac{\sin x}{x}$ para $x \neq 0$ y $f(0) = 0$, sigues la rama evitable, porque el límite existe pero es distinto del valor de la función; con $f(x) = \sin\left(\frac{1}{x}\right)$ sigues la rama de oscilación.
+>
 
 > [!info] 📈 Ejemplos de Cada Tipo
 >

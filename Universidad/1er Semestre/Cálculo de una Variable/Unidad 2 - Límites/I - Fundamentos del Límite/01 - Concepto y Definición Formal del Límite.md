@@ -20,6 +20,12 @@ tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limi
 > [!info] 🖼️ ¿Qué es un Límite?
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_01.svg]]
+>
+> **Se lee así:** El diagrama es una cadena de **cuatro rectángulos** unidos por flechas, sin rombos: el primero marca el acercamiento de $x$ al punto de interés, el segundo es el paso de cálculo de $f(x)$, el tercero registra la aproximación de los valores y el cuarto cierra el recorrido con el límite ya fijado. Al no haber decisiones, el camino es único.
+>
+> **Por qué importa:** Fíjate en que el esquema separa el movimiento de $x$ del movimiento de $f(x)$: eso te deja claro que $x$ nunca tiene que *llegar* al punto de referencia y que lo que importa es el valor al que se acerca la salida. Te ahorra el error de sustituir $x = a$ cuando la función ni siquiera está definida ahí.
+>
+> **Ejemplo:** Con $g(x) = x^2$ para $x \neq 2$ y $g(2) = 10$, el recorrido del diagrama dice que el límite en 2 sigue siendo 4, aunque el valor de la función en ese punto sea 10.
 
 > [!example] 🌈 Ejemplo Visual Simple Considera $f(x) = 2x + 1$ y queremos $\lim_{x \to 3} f(x)$
 >
