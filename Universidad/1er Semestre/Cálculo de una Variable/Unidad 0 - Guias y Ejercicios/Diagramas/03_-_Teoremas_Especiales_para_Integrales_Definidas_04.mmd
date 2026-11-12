@@ -1,0 +1,22 @@
+---
+title: "03_-_Teoremas_Especiales_para_Integrales_Definidas_04"
+---
+flowchart TD
+    A["Demostración del TVMI"]
+    P1["1. f continua en [a, b]<br/>→ alcanza máx M y mín m"]
+    P2["2. Comparación:<br/>m·(b−a) ≤ ∫ ab f ≤ M·(b−a)"]
+    P3["3. Dividir por (b−a) > 0:<br/>m ≤ 1/(b−a)·∫ ab f ≤ M"]
+    P4["4. Teorema del Valor Intermedio:<br/>existe c con f(c) = promedio"]
+    R["TVMI probado ✓"]
+    A --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> R
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style P1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style P4 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style R fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b

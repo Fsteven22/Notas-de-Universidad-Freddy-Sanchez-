@@ -1,0 +1,13 @@
+flowchart TD
+    A["Dos funciones f(x) y g(x)"] --> B["Encontrar intersecciones"]
+    B --> C["f(x) = g(x)"]
+    C --> D["Puntos de intersección: x₁, x₂, ..."]
+    D --> E["Dividir en intervalos"]
+    E --> F["En cada intervalo: ¿f(x) ≥ g(x)?"]
+    F -->|Sí| G["A = ∫[f(x) - g(x)]dx"]
+    F -->|No| H["A = ∫[g(x) - f(x)]dx"]
+    G --> I["Sumar áreas de todos los intervalos"]
+    H --> I
+    I --> J["Área total"]
+    style J fill:#45b7d1
+    style I fill:#96ceb4

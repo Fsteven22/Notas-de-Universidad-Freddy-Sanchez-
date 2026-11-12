@@ -65,6 +65,12 @@ tags: [TICG1018, bienvenida, syllabus]
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/bienv-01-map.svg]]
 >
+> **Se lee así:** el diagrama es la **hoja de ruta de la materia** en dos ramas. Del nodo central (`🗄️ SBD · TICG1018`) sale una flecha hacia **U1 · Modelos y ER** (el bloque conceptual: datos, entidades, modelo relacional) y otra hacia **U2+ · SQL y diseño físico** (el bloque aplicado: convertir ER en tablas, normalizar y escribir SQL).
+>
+> **Por qué importa:** fíjate en que la división es **conceptual vs. aplicado**, no "semana 1 vs. semana 2". Todo lo de la Unidad 1 (E/R, cardinalidades, modelo relacional) es **diseño**: decidir qué se guarda y cómo se relaciona. Todo lo de la Unidad 2 en adelante es **implementación**: traducir ese diseño a tablas, normalizarlas y consultarlas con SQL. Si una duda no entra en ninguna de las dos ramas, es que todavía no sabes en qué nivel te la están preguntando.
+>
+> **Ejemplo:** *"¿cuál es la PK de `MATRICULA`?"* es una pregunta de la **Unidad 1** (es un modelo de clave compuesta). *"`SELECT` que sume las ventas por sucursal"* es de la **U2+** (SQL y agregación). Y el **proyecto** de la materia vive en las dos: primero diseñas el ER y lo justificas, y después lo entregas en tablas normalizadas con sus consultas.
+>
 > | Unidad | Tema | Fuente |
 > |---|---|---|
 > | **1** | Modelos de datos, ER, relacional | BD01 + unidad1.3-1.5.pdf |

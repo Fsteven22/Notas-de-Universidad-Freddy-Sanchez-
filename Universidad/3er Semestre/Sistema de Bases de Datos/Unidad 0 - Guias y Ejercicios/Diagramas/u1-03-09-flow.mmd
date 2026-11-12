@@ -1,0 +1,12 @@
+flowchart TB
+    A["Verifica ERD<br/>PK + verbo + (x,y)"]
+    B["Una tabla<br/>por entidad"]
+    C["N:M → intermedia"]
+    D["FK del lado N"]
+    E["¿Hereda PK?<br/>punteada/sólida"]
+    F["Carga: 1 primero"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F

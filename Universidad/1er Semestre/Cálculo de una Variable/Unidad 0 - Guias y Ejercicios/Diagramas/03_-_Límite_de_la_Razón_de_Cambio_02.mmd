@@ -1,0 +1,43 @@
+---
+title: "03 - Límite de la razón de cambio"
+---
+flowchart TD
+    A["Función f(t)"]
+    B["Cambio total Δf en el intervalo [t, t + Δt]"]
+    C["Razón de cambio promedio: Δf/Δt"]
+    D["Límite cuando Δt → 0"]
+    E["Razón de cambio instantánea"]
+    F["Aplicaciones de la derivada"]
+    G["f'(t) = lim(Δt→0) Δf/Δt"]
+    H["Interpretación geométrica: pendiente de la tangente"]
+    I["Unidades: cambio de posición por unidad de tiempo"]
+    J["Optimización visual"]
+    K["Máximos, mínimos y puntos de inflexión"]
+    L["Ejemplo: velocidad instantánea"]
+    M["Aproximación lineal: f(x) ≈ f(a) + f'(a)(x − a)"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    E --> G
+    F --> J
+    G --> H
+    G --> I
+    H --> L
+    I --> M
+    J --> K
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style I fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style J fill:#e0f2f1,stroke:#009688,color:#00332e
+    style K fill:#e0f2f1,stroke:#009688,color:#00332e
+    style L fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style M fill:#fff3e0,stroke:#ff9800,color:#4a2c00

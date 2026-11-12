@@ -1,0 +1,8 @@
+flowchart TB
+    DML["DML"] --> I["INSERT<br/>agrega filas"]
+    DML --> U["UPDATE<br/>cambia valores"]
+    DML --> X["DELETE<br/>quita filas"]
+    DML --> S["SELECT<br/>lee filas"]
+    I --> T["❌ Rompe la integridad:<br/>FK o CHECK incumplidos"]
+    style DML fill:#e1f5ff
+    style T fill:#ffe1e1

@@ -1,0 +1,26 @@
+---
+title: "04_-_Asíntotas_en_Integrales_Definidas_02"
+---
+flowchart TD
+    A["Ejemplo:<br/>∫ desde 1 hasta ∞ de (x + sin x)/x² dx"]
+    B["Descomponer:<br/>(x + sin x)/x² = 1/x + sin(x)/x²"]
+    C["∫ de 1 a ∞ de 1/x dx =<br/>ln(x) | 1 a ∞ = ∞"]
+    C1["Diverge"]
+    D["∫ de 1 a ∞ de sin(x)/x² dx<br/>converge por comparación<br/>con 1/x²"]
+    D1["Converge"]
+    E["Suma de una divergente<br/>+ una convergente:<br/>la integral total diverge"]
+    A --> B
+    B --> C
+    C --> C1
+    B --> D
+    D --> D1
+    C1 --> E
+    D1 --> E
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#ffebee,stroke:#e53935,color:#4a1010
+    style C1 fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D1 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00

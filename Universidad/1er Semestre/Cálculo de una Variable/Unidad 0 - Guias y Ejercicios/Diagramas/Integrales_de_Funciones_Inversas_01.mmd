@@ -1,0 +1,24 @@
+---
+title: "Integrales_de_Funciones_Inversas_01"
+---
+flowchart TD
+    A["Patrón general<br/>∫ f⁻¹(x) dx"]
+    B["u = f⁻¹(x)"]
+    C["dv = dx → v = x"]
+    D["du = (df⁻¹/dx) dx"]
+    E["∫ f⁻¹(x) dx =<br/>x·f⁻¹(x) − ∫ x·(df⁻¹/dx) dx"]
+    G["La nueva integral debe ser<br/>más simple que la original:<br/>si no, cambia la elección"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> E
+    D --> E
+    E --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#ffebee,stroke:#e53935,color:#4a1010

@@ -31,7 +31,9 @@ tags: [CCPG1042, unidad1, solid, principios]
 > | **I**SP | Interfaces pequeñas por rol | Clientes obligados a implementar métodos inútiles |
 > | **D**IP | Depende de abstracciones | `new Concreta()` regado por todos lados |
 
-![[../Diagramas/dsw-u1-05-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-01-graph.svg]]
 
 ---
 
@@ -52,15 +54,23 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📖 El deck de cátedra: por qué SOLID (04p, pp. 3-12)
 > El deck abre con **código limpio** (Robert C. Martin, "Uncle Bob") y luego muestra el problema que SOLID viene a resolver. Esta es la motivation literal de la diapositiva.
 
-![[Archivos/04p-p10.png]]
+> [!note] 🖼️ captura 04p-p10 — SOLID en el Contexto de la Unidad
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p10.png]]
 
+> [!note] 💡 El trío de males del deck (p. 11)
+>
 > **El trío de males del deck (p. 11):**
+
+> [!note] 📊 Tabla — SOLID en el Contexto de la Unidad
 >
 > | Mal | Qué significa en el deck |
 > |---|---|
 > | **Rigidez** | Un cambio afecta muchas partes |
 > | **Fragilidad** | Fallos en lugares donde no debería |
 > | **Inmovilidad** | No se puede reusar el código fuera de su contexto |
+
+> [!note] 💡 Y la salida
 >
 > **Y la salida:** SOLID — *S* Single Responsibility, *O* Open-Closed, *L* Liskov Substitution, *I* Interface Segregation, *D* Dependency Inversion. Los principios "nos dicen cómo ordenar nuestras funciones y estructuras de datos en clases".
 
@@ -81,7 +91,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Malentendido común:** SRP **no** significa "una clase con un solo método". Significa un solo motivo de cambio.
 > - **Caso clásico (freeCodeCamp/Sabalete 2022):** `Factura` con `calculaTotal()` + `imprimeFactura()` + `guardarArchivo()` = 3 razones para cambiar (cálculo, formato, persistencia). Remedio: `FacturaImpresion` + `FacturaPersistencia` separadas. Si ves impresión o guardado dentro de lógica de negocio, es SRP roto.
 >
-
 > [!example]- 💻 Código — SRP antes y después
 >
 > ```java
@@ -109,10 +118,16 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📖 El deck de cátedra: el ejemplo de SRP (04p, pp. 15-17)
 > El deck lo plantea como pregunta de examen: *"¿Se viola el principio SRP? ¿Cuántas responsabilidades tiene esta clase?"* — la misma pregunta que el docente hace en el control.
 
-![[Archivos/04p-p15.png]]
+> [!note] 🖼️ captura 04p-p15 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p15.png]]
 
-![[Archivos/04p-p17.png]]
+> [!note] 🖼️ captura 04p-p17 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p17.png]]
 
+> [!note] 💡 Solución del deck (p. 17)
+>
 > **Solución del deck (p. 17):** la clase `Employee` mantiene su responsabilidad de manejar la información del empleado y **usa los servicios de las demás clases**. Es el mismo movimiento que esta nota: la lógica queda en un lado, la persistencia en otro.
 
 ### 🔓 O — Open/Closed Principle (OCP)
@@ -127,7 +142,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Violación típica:** `switch`/`if` en cascada en la lógica de negocio.
 > - **Matiz importante:** el sistema nunca queda 100 % cerrado. Eliges **frente a qué tipo de cambio** quieres protegerte (el que ya viste ocurrir o es muy probable) y dejas el resto simple.
 >
-
 > [!example]- 💻 Código — OCP con descuentos
 >
 > ```java
@@ -158,10 +172,16 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📖 El deck de cátedra: el ejemplo de OCP (04p, pp. 20-23)
 > *"Objects or entities should be open for extension, but closed for modification"*. El deck calcula el área de varias figuras geométricas y pregunta **"¿Se cumple el OCP?"**.
 
-![[Archivos/04p-p21.png]]
+> [!note] 🖼️ captura 04p-p21 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p21.png]]
 
-![[Archivos/04p-p22.png]]
+> [!note] 🖼️ captura 04p-p22 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p22.png]]
 
+> [!note] 💡 El cierre del deck (p. 23)
+>
 > **El cierre del deck (p. 23):** con el diseño correcto, *"el código queda abierto para extensión pues muchas más formas pueden agregarse sin modificar el código existente y cada forma… "*. Esa frase es el OCP resumido en una línea.
 
 ### 🔄 L — Liskov Substitution Principle (LSP)
@@ -184,7 +204,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Violación típica:** `override` que lanza `UnsupportedOperationException`, métodos que hacen `instanceof` para saber con qué subclase tratan.
 > - **Idea clave:** que la relación "es un" exista en el mundo real no basta; debe existir en el **comportamiento**.
 >
-
 > [!example]- 💻 Código — LSP con Rectángulo y Cuadrado
 >
 > ```java
@@ -219,8 +238,12 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📖 El deck de cátedra: el ejemplo de LSP (04p, pp. 26-30)
 > *"Derived classes must be completely substitutable for their base classes."* El deck usa un pato: `IDuck` con `Swim()`, y `ElectricDuck` que además necesita encenderse.
 
-![[Archivos/04p-p26.png]]
+> [!note] 🖼️ captura 04p-p26 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p26.png]]
 
+> [!note] 💡 El problema que el deck plantea (p. 27)
+>
 > **El problema que el deck plantea (p. 27):** `void MakeDuckSwim(IDuck duck) { duck.Swim(); }` — *"se viola LSP, porque una clase derivada puede lanzar una excepción que la clase base no contemplaba"*. Es el mismo error que esta nota señala con `Cuadrado extends Rectangulo`.
 >
 > **Los dos intentos de solución del deck (pp. 28-30):** (1) hacer `if (duck is ElectricDuck) ((ElectricDuck)duck).TurnOn();` antes de nadar — el `instanceof` que esta nota marca como olor; (2) mover la lógica al `Swim()` de `ElectricDuck` (`if (!IsTurnedOn) TurnOnDuck();`) — el workaround que el deck prefiere.
@@ -237,7 +260,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Violación típica:** la "interfaz única para todo el sistema" o interfaces que crecen cada vez que alguien necesita "un método más".
 > - **Beneficio:** cambiar un método que no te importa deja de obligarte a recompilar y retestear.
 >
-
 > [!example]- 💻 Código — ISP con trabajadores y robots
 >
 > ```java
@@ -265,10 +287,16 @@ tags: [CCPG1042, unidad1, solid, principios]
 > [!info] 📖 El deck de cátedra: el ejemplo de ISP (04p, pp. 32-37)
 > *"Make fine-grained interfaces with specific methods. Clients should not be forced to depend upon interfaces that they don't use."* El deck parte de una interfaz `Messenger` que muestra una variedad de mensajes.
 
-![[Archivos/04p-p33.png]]
+> [!note] 🖼️ captura 04p-p33 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p33.png]]
 
-![[Archivos/04p-p34.png]]
+> [!note] 🖼️ captura 04p-p34 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p34.png]]
 
+> [!note] 💡 La pregunta provocadora del deck (p. 36)
+>
 > **La pregunta provocadora del deck (p. 36):** una interfaz con Volar · Correr · Nadar · Comer · Cantar · Graznar · Planear · Caminar · Hablar · Poner huevo — **"¿Problema?"**. Si tienes que implementar diez comportamientos para ser un "Worker", el problema es la interfaz, no la clase.
 
 ### 🔗 D — Dependency Inversion Principle (DIP)
@@ -283,15 +311,23 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Violación típica:** `new Concreto()` regado por el código: impide probar con mocks y cambiar de proveedor implica reescribir.
 > - **No confundir:** **DIP** es el principio (la dirección de las dependencias). **Inyección de dependencias (DI)** es una *técnica* para cumplirlo (Spring, constructores). Se puede cumplir DIP sin ningún framework.
 
-![[../Diagramas/dsw-u1-05-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-02-graph.svg]]
 
 > [!info] 📖 El deck de cátedra: el ejemplo de DIP (04p, pp. 39-43)
 > *"Depend on abstractions, not on concretions. High-level modules should not depend on low-level modules. Both should depend on abstractions."*
 
-![[Archivos/04p-p40.png]]
+> [!note] 🖼️ captura 04p-p40 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p40.png]]
 
-![[Archivos/04p-p43.png]]
+> [!note] 🖼️ captura 04p-p43 — Los 5 Principios, Uno por Uno
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p43.png]]
 
+> [!note] 💡 El par del deck (pp. 40-41)
+>
 > **El par del deck (pp. 40-41):** `House` que instancia `new Door()` y `new Window()` (DIP incumplido) frente a `House` que recibe `IDoor` e `IWindow` por constructor (DIP cumplido). Es literalmente el patrón de inyección por constructor que se muestra más abajo en esta nota.
 
 > [!example]- 💻 Código — DIP con inyección por constructor y prueba con un falso
@@ -361,7 +397,7 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 > [!tip] 🔄 Los Cinco no Son Independientes
 >
-> ![[../Diagramas/dsw-u1-05-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-03-graph.svg]]
 >
 > - **OCP es el objetivo**: un sistema que crece agregando código, no editándolo.
 > - **SRP** da las piezas pequeñas; **DIP** y **ISP** definen cómo se conectan; **LSP** garantiza que cualquier pieza intercambiable de verdad lo sea.
@@ -371,7 +407,9 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Principio Estoy Violando?
 
-![[../Diagramas/dsw-u1-05-04-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Principio Estoy Violando
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-04-flow.svg]]
 
 > [!note] 👃 Olores de Código → Principio
 >
@@ -405,28 +443,24 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - **Soluciones:** separar datos (`EmployeeData` sin métodos) de funciones en 3 clases que no se conocen; o **Facade** (`EmployeeFacade` que instancia y delega); o conservar el método clave en `Employee` y usarla como fachada.
 > - **Proyección:** SRP reaparece como Principio de Cierre Común (componentes) y como Eje de Cambio (fronteras arquitectónicas).
 >
-
 > [!example] 💡 Reporte financiero web→impresora (OCP, cap. 8)
 >
 > - **Experimento mental:** resumen financiero en web (rojo = negativos) que ahora debe salir en impresora B/N paginada (paréntesis = negativos). Buena arquitectura: **cero líneas viejas modificadas**.
 > - **Cómo:** SRP separa cálculo de presentación; DIP organiza dependencias en una dirección: si el componente A debe protegerse de cambios en B, **B depende de A**. El **Interactor** (reglas de negocio, máximo nivel) queda protegido de Base de Datos, Controlador, Presentadores y Vistas.
 > - **Conclusión OCP:** particionar en componentes y ordenarlos en jerarquía que proteja lo de alto nivel. Ojo con dependencias transitivas (violan el "no dependas de lo que no usas": anticipo del ISP).
 >
-
 > [!example] 💡 License/Billing, Square y taxis Acme (LSP, cap. 9)
 >
 > - **Caso bueno:** `License.calcFee()` usada por `Billing` con `PersonalLicense` y `BusinessLicense` intercambiables: la app no depende de cuál subtipo recibe.
 > - **Square/Rectangle (violación canónica):** `Square` no es subtipo válido de `Rectangle` porque alto y ancho mutan juntos; `r.setW(5); r.setH(2); assert(area==10)` falla si `r` es un cuadrado. Defenderse con `if` en el cliente = prueba de que no son sustituibles.
 > - **Taxis Acme (LSP arquitectónico):** todas las compañías deben respetar el mismo REST (`destination`); Acme manda `dest` y el sistema se contamina con `if (uri.startsWith("acme.com"))` + tabla de configuración por URI. Moraleja: una violación de sustituibilidad ensucia la arquitectura con mecanismos extra.
 >
-
 > [!example] 💡 OPS/User1-3 y framework con base de datos (ISP, cap. 10)
 >
 > - **Caso base:** `User1` solo usa `op1` de `OPS`, pero en Java su código depende también de `op2`/`op3` → un cambio ajeno lo obliga a recompilar y redesplegar. Remedio: segregar en interfaces (`U1Ops`...).
 > - **Lenguajes dinámicos (Ruby, Python):** sin declaraciones `import`, no hay dependencia de código fuente que fuerce recompilación — por eso acoplan menos. Pero ISP sigue valiendo a nivel arquitectura.
 > - **Caso arquitectónico:** sistema S incluye framework F atado a base de datos D con funciones que nadie usa; un cambio o una falla en lo no usado tumba F y S. Lección: depender de algo con lastre innecesario trae problemas inesperados (puente con el Principio de Reutilización Común, cap. 13).
 >
-
 > [!example] 💡 String estable, 4 prácticas y la línea curva (DIP, cap. 11)
 >
 > - **Matiz clave:** no toda dependencia concreta es mala. `String` es concreta pero estable y controlada: se tolera. El enemigo es lo concreto **volátil** (lo que desarrollas y cambia siempre).
@@ -489,7 +523,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > - 1 principio por semana de práctica: SRP esta semana en tu proyecto.
 > - El *code review* pregunta "¿qué principio protege este cambio?".
 >
-
 > [!danger] ❌ Error 2: Sobreingeniería, interfaz para todo (viola **simplicidad/YAGNI**)
 >
 > **Síntomas:** una interfaz con una única implementación "por si acaso":
@@ -504,7 +537,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 >
 > **Solución:** aplica el principio cuando hay **evidencia de variación** (ya cambió o cambiará seguro). Regla práctica: abstrae a la segunda variante, no a la primera.
 >
-
 > [!danger] ❌ Error 3: Interpretar SRP como "un método por clase" (viola **SRP real: razones de cambio**)
 >
 > **Síntomas:** cientos de clases diminutas donde seguir un flujo exige abrir 10 archivos:
@@ -519,7 +551,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 >
 > **Solución:** SRP se mide por **razones de cambio**, no por número de métodos. Una clase con 10 métodos cohesivos que cambian juntos cumple SRP.
 >
-
 > [!danger] ❌ Error 4: Herencia solo para reutilizar código (viola **LSP**)
 >
 > **Síntomas:** la subclase hereda métodos que no tienen sentido para ella:
@@ -533,7 +564,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 >
 > **Solución:** prefiere **composición** sobre herencia. Si no puedes decir "toda `B` se comporta como una `A` en todos los contextos", no heredes (LSP).
 >
-
 > [!danger] ❌ Error 5: DIP sin dueño de la abstracción (viola **DIP**)
 >
 > **Síntomas:** la interfaz vive en el paquete de la BD y el negocio sigue atado a infraestructura:
@@ -593,7 +623,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > > - **4.** Violación de ISP (la interfaz es demasiado grande) o de LSP (la subclase no cumple lo que prometía la base).
 > > - **5.** Viola DIP: depende de una clase concreta. Debe recibir una interfaz `Pago` por constructor.
 >
-
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica por qué `Cuadrado extends Rectangulo` viola LSP aunque "un cuadrado es un rectángulo" en geometría.
@@ -620,7 +649,6 @@ tags: [CCPG1042, unidad1, solid, principios]
 > > - **10b.** Síntoma 1: duplicación accidental. El cambio pedido por el CFO (contabilidad) corrompe silenciosamente los reportes de la COO (RRHH): código de actores distintos en proximidad, acoplados por algoritmo compartido.
 > > - **10c.** Porque `String` es estable: cambia rara vez y bajo control estricto, así que nadie teme sus cambios. Criterio: se tolera lo concreto **estable** (plataforma, SO); se evita lo concreto **volátil** (módulos en desarrollo activo con cambios frecuentes).
 >
-
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta por qué OCP depende de que se cumplan SRP, LSP y DIP.
@@ -664,19 +692,20 @@ tags: [CCPG1042, unidad1, solid, principios]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Enuncio los cinco principios con mis propias palabras.
 > - [ ] Reconozco una violación típica de cada principio en un fragmento de código.
 > - [ ] Aplico el chequeo de 10 segundos a una clase dada.
 >
-
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Refactorizo código con `if/switch` hacia polimorfismo (OCP).
 > - [ ] Divido una interfaz grande por roles (ISP) y una clase con varios actores (SRP).
 > - [ ] Explico por qué `Cuadrado extends Rectangulo` viola LSP.
 > - [ ] Relaciono cada caso del libro (Employee, reporte financiero, Square, Acme, OPS, Factory) con su principio.
 >
-
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Diseño un módulo con DIP e inyección por constructor, probable con falsos.
 > - [ ] Explico cómo SRP, ISP, DIP y LSP habilitan OCP.
 > - [ ] Decido cuándo **no** aplicar un principio para evitar sobreingeniería.
@@ -685,7 +714,9 @@ tags: [CCPG1042, unidad1, solid, principios]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u1-05-05-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-05-05-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

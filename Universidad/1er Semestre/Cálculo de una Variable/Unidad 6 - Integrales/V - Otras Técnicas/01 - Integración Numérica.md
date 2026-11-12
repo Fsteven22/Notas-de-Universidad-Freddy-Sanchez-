@@ -1,10 +1,12 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad6, integracion-numerica, matematicas/calculo/numerico, integracion/aproximacion, metodos/computacionales, trapecio/simpson, analisis/errores, aplicaciones/practicas, programacion/algoritmos]
 ---
 
 # 💻 Integración Numérica
 
 >[!info] 💡 **Concepto Central**
+>
 >La integración numérica proporciona métodos para aproximar el valor de integrales definidas cuando no es posible o práctico encontrar una antiderivada analítica. Estos métodos se basan en aproximar la función por funciones más simples (constantes, rectas, parábolas) y calcular el área exacta de estas aproximaciones.
 
 ## 🎯 ¿Cuándo Usar Integración Numérica?
@@ -18,6 +20,7 @@ dg-publish: true
 >5. **Aplicaciones en ingeniería**: Cuando se requiere rapidez sobre precisión exacta
 >
 >[!tip] 💡 **Ventajas de la Integración Numérica**
+>
 >- **Universalidad**: Funciona con cualquier función continua
 >- **Flexibilidad**: Se adapta a datos tabulados
 >- **Control de precisión**: Se puede ajustar según necesidades
@@ -26,30 +29,40 @@ dg-publish: true
 ## 📏 Principio Fundamental: Suma de Riemann
 
 >[!info] 🧮 **Base Teórica**
+>
 >Todos los métodos de integración numérica se basan en la definición de integral como límite de sumas de Riemann:
 >
 >$$\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x$$
 >
 >Los métodos numéricos aproximan esta suma con un número finito de términos, eligiendo diferentes formas de seleccionar $x_i^*$ y aproximar $f(x)$.
 
-![[Diagramas/01_-_Integración_Numérica_01.svg]]
+> [!info] 🖼️ Principio Fundamental: Suma de Riemann
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Integración_Numérica_01.svg]]
+>
+> **Se lee así:** El diagrama avanza en línea recta hasta llegar a un rombo, la única decisión del recorrido: *¿con qué aproximo $f(x)$?*. De ese rombo salen tres ramas rotuladas *constante*, *lineal* y *cuadrática*, que llevan a la regla del rectángulo, la del trapecio y la de Simpson, y cada una desemboca en una caja final que resume el tipo de área que se está sumando.
+>
+> **Por qué importa:** Este es el **mapa de los métodos numéricos**: todos nacen de la suma de Riemann y solo cambian en cómo se elige el punto de muestra y qué polinomio se usa en cada tramo. Con el mapa entiendes por qué Simpson da menos error que el trapecio con el mismo $n$.
+>
+> **Ejemplo:** Para aproximar $\int_0^2 x^2 dx$ con $n = 4$ en la nota, tomas la rama cuadrática, o sea Simpson, y obtienes $\frac{8}{3}$ exacto.
 
 ## 📊 Regla del Rectángulo (Riemann)
 
 ### 🔲 Definición y Variantes
 
 >[!tip] 📐 **Regla del Rectángulo**
+>
 >Aproxima $f(x)$ por una constante en cada subintervalo. Para $n$ subintervalos de ancho $h = \frac{b-a}{n}$:
-> 
+>
 > #### **Regla del Punto Izquierdo**
 > $$L_n = h \sum_{i=0}^{n-1} f(a + ih) = h[f(x_0) + f(x_1) + \cdots + f(x_{n-1})]$$
-> 
+>
 > #### **Regla del Punto Derecho**
 > $$R_n = h \sum_{i=1}^{n} f(a + ih) = h[f(x_1) + f(x_2) + \cdots + f(x_n)]$$
-> 
+>
 > #### **Regla del Punto Medio**
 > $$M_n = h \sum_{i=1}^{n} f\left(a + \left(i-\frac{1}{2}\right)h\right)$$
-> 
+>
 ### 🧪 Ejemplo: Regla del Rectángulo
 
 >[!example] 📈 **Aproximar $\int_0^2 x^2 dx$ con $n=4$**
@@ -75,6 +88,7 @@ dg-publish: true
 ### 📊 Análisis de Error
 
 >[!warning] ⚠️ **Error de la Regla del Rectángulo**
+>
 >Si $f''$ es continua en $[a,b]$, entonces:
 >
 >**Error del Punto Medio**: $|E_M| \leq \frac{(b-a)^3}{24n^2} \max_{[a,b]} |f''(x)|$
@@ -88,6 +102,7 @@ dg-publish: true
 ### 📐 Definición y Fórmula
 
 >[!tip] 🏆 **Regla del Trapecio**
+>
 >Aproxima $f(x)$ por segmentos lineales, creando trapecios en lugar de rectángulos.
 >
 >$$T_n = \frac{h}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)\right]$$
@@ -99,6 +114,7 @@ dg-publish: true
 ### 🎨 Interpretación Geométrica
 
 >[!info] 🎨 **Visualización del Método**
+>
 >- Conecta puntos consecutivos $(x_i, f(x_i))$ con líneas rectas
 >- Cada trapecio tiene bases $f(x_i)$ y $f(x_{i+1})$, altura $h$
 >- Área de cada trapecio: $\frac{h}{2}[f(x_i) + f(x_{i+1})]$
@@ -117,6 +133,7 @@ dg-publish: true
 ### 📊 Error del Trapecio
 
 >[!warning] 📏 **Análisis de Error**
+>
 >Si $f''$ es continua en $[a,b]$:
 >
 >$$|E_T| \leq \frac{(b-a)^3}{12n^2} \max_{[a,b]} |f''(x)|$$
@@ -131,6 +148,7 @@ dg-publish: true
 ### 🎯 Definición y Fórmula
 
 >[!tip] 🏆 **Regla de Simpson (1/3)**
+>
 >Aproxima $f(x)$ por parábolas en cada par de subintervalos. Requiere $n$ par.
 >
 >$$S_n = \frac{h}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)\right]$$
@@ -138,6 +156,7 @@ dg-publish: true
 >**Patrón de coeficientes**: $1, 4, 2, 4, 2, \ldots, 2, 4, 1$
 >
 >[!info] 🧮 **Deducción del Método**
+>
 >Se basa en aproximar $f(x)$ por polinomios de grado 2 en cada par de intervalos:
 >- Toma tres puntos consecutivos: $(x_i, f(x_i))$, $(x_{i+1}, f(x_{i+1}))$, $(x_{i+2}, f(x_{i+2}))$
 >- Encuentra la parábola que pasa por estos tres puntos
@@ -157,6 +176,7 @@ dg-publish: true
 ### 📊 Error de Simpson
 
 >[!warning] 🎯 **Análisis de Error Superior**
+>
 >Si $f^{(4)}$ es continua en $[a,b]$:
 >
 >$$|E_S| \leq \frac{(b-a)^5}{180n^4} \max_{[a,b]} |f^{(4)}(x)|$$
@@ -169,19 +189,20 @@ dg-publish: true
 ## 📊 Tabla Comparativa de Métodos
 
 >[!info] 📋 **Comparación de Métodos Numéricos**
-> 
+>
 > | **Método** | **Aproximación** | **Orden de Error** | **Exacto para** | **Coeficientes** |
 > |------------|------------------|-------------------|-----------------|------------------|
 > | **Rectángulo (extremos)** | Constante | $O(h)$ | Constantes | $1, 1, 1, \ldots$ |
 > | **Rectángulo (punto medio)** | Constante | $O(h^2)$ | Constantes | $1, 1, 1, \ldots$ |
 > | **Trapecio** | Lineal | $O(h^2)$ | Lineales | $\frac{1}{2}, 1, 1, \ldots, 1, \frac{1}{2}$ |
 > | **Simpson 1/3** | Cuadrática | $O(h^4)$ | Cúbicas | $1, 4, 2, 4, \ldots, 4, 1$ |
-> 
+>
 ## 🔢 Métodos Avanzados
 
 ### 🎯 Regla de Simpson 3/8
 
 >[!tip] 🔬 **Simpson 3/8 (para n múltiplo de 3)**
+>
 >$$S_{3/8} = \frac{3h}{8}[f(x_0) + 3f(x_1) + 3f(x_2) + 2f(x_3) + \cdots + f(x_n)]$$
 >
 >**Patrón**: $1, 3, 3, 2, 3, 3, 2, \ldots, 3, 3, 1$
@@ -190,6 +211,7 @@ dg-publish: true
 ### 🌟 Cuadratura de Gauss
 
 >[!warning] 🚀 **Método de Gauss-Legendre**
+>
 >Selecciona puntos de evaluación y pesos óptimos para maximizar precisión:
 >
 >$$\int_{-1}^1 f(x) dx \approx \sum_{i=1}^n w_i f(x_i)$$
@@ -201,6 +223,7 @@ dg-publish: true
 ### 📊 Cuadratura Adaptativa
 
 >[!info] 🎯 **Métodos Adaptativos**
+>
 >Ajustan automáticamente el tamaño del paso según:
 >- Error estimado localmente
 >- Comportamiento de la función
@@ -224,56 +247,56 @@ dg-publish: true
 >**Z**ona de validez: verificar condiciones del método
 >
 
-> [!summary] ### 📋 Desarrollo Detallado del Método TRAPEZ
-> 
-> 
+> [!abstract] ### 📋 Desarrollo Detallado del Método TRAPEZ
+>
+>
 > #### **T - Tipo de Método** 🎯
 > - **Analizar la función**: ¿Es suave? ¿Tiene oscilaciones?
 > - **Requerimientos de precisión**: ¿Cuánta exactitud se necesita?
 > - **Recursos computacionales**: ¿Cuántas evaluaciones son factibles?
 > - **Datos disponibles**: ¿Se conoce $f(x)$ analíticamente o son datos tabulados?
-> 
+>
 > #### **R - Resolver Intervalos** 📏
 > - Calcular $h = \frac{b-a}{n}$
 > - Generar puntos: $x_i = a + ih$ para $i = 0, 1, 2, \ldots, n$
 > - Evaluar $f(x_i)$ en todos los puntos necesarios
 > - Verificar que $n$ satisfaga restricciones del método (par para Simpson)
-> 
+>
 > #### **A - Aplicar Fórmula** ⚡
 > - **Rectángulo**: $h \sum f(x_i^*)$
 > - **Trapecio**: $\frac{h}{2}[f(a) + f(b) + 2\sum_{i=1}^{n-1} f(x_i)]$
 > - **Simpson**: $\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + f(x_n)]$
-> 
+>
 > #### **P - Precisión y Error** 📊
 > - Usar fórmulas de error teóricas
 > - Para mayor precisión: duplicar $n$ y comparar resultados
 > - Métodos adaptativos: continuar hasta alcanzar tolerancia
-> 
+>
 > #### **E - Error Experimental** 🔍
 > - Si se conoce el valor exacto: calcular error absoluto y relativo
 > - Verificar que el error decrece según el orden teórico
 > - Analizar convergencia al aumentar $n$
-> 
+>
 > #### **Z - Zona de Validez** ✅
 > - Verificar continuidad de $f$ y sus derivadas según el método
 > - Comprobar que no hay singularidades en $[a,b]$
 > - Validar que las estimaciones de error son aplicables
-> 
+>
 
 ### 🎯 Ejemplo Completo con TRAPEZ
 
 >[!example] 📈 **Problema**: Aproximar $\int_1^2 \frac{1}{x} dx$ con diferentes métodos
-> 
+>
 > **T** - Tipo: Probaremos trapecio y Simpson, función suave
 > **R** - Resolver: $n=4$, $h=0.25$, puntos: $1, 1.25, 1.5, 1.75, 2$
 > **A** - Aplicar:
 > - Trapecio: $T_4 = \frac{0.25}{2}[1 + 2(0.8 + 0.667 + 0.571) + 0.5] = 0.697$
 > - Simpson: $S_4 = \frac{0.25}{3}[1 + 4(0.8) + 2(0.667) + 4(0.571) + 0.5] = 0.693$
-> 
+>
 > **P** - Precisión: Valor exacto = $\ln(2) \approx 0.693147$
 > **E** - Error: Trapecio: $0.004$, Simpson: $0.000147$ (Simpson mucho mejor)
 > **Z** - Zona: $f(x) = \frac{1}{x}$ continua en $[1,2]$, métodos válidos ✅
-> 
+>
 ## 🧪 Ejemplos Avanzados
 
 ### 🔬 Ejemplo 1: Función sin Antiderivada Elemental
@@ -297,6 +320,7 @@ dg-publish: true
 >[!example] 📊 **Calcular trabajo a partir de datos de fuerza**
 >
 >**Datos de fuerza** $F(x)$ cada 0.5 metros:
+>
 >| $x$ (m) | 0 | 0.5 | 1.0 | 1.5 | 2.0 |
 >|---------|---|-----|-----|-----|-----|
 >| $F(x)$ (N) | 10 | 15 | 25 | 30 | 20 |
@@ -353,6 +377,7 @@ dg-publish: true
 ### 🔬 Integración Monte Carlo
 
 >[!tip] 🎲 **Método Monte Carlo para Altas Dimensiones**
+>
 >Para integrales múltiples complejas:
 >$$\int_a^b f(x) dx \approx \frac{b-a}{N} \sum_{i=1}^N f(x_i)$$
 >donde $x_i$ son puntos aleatorios en $[a,b]$.
@@ -363,12 +388,14 @@ dg-publish: true
 ### 🌊 Integración con Transformaciones
 
 >[!info] 🔄 **Manejo de Singularidades**
+>
 >Para $\int_0^1 \frac{f(x)}{\sqrt{x}} dx$, usar transformación $x = t^2$:
 >$$\int_0^1 \frac{f(x)}{\sqrt{x}} dx = \int_0^1 \frac{f(t^2)}{\sqrt{t^2}} \cdot 2t \, dt = 2\int_0^1 f(t^2) dt$$
 
 ### 💻 Integración Adaptativa Automática
 
 >[!warning] 🤖 **Algoritmos Inteligentes**
+>
 >Los métodos adaptativos modernos:
 >1. Estiman error local automáticamente
 >2. Refinan la malla donde sea necesario
@@ -378,36 +405,49 @@ dg-publish: true
 ---
 
 > [!quote] ## 📚 Referencias y Conexiones
-> 
-> 
+>
+>
 > ### 🔗 Notas Relacionadas
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]] - Base teórica de todos los métodos numéricos
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Comparación con métodos exactos
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Cuando usar métodos analíticos vs numéricos
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md|03 - Teoremas de Comparación y Desigualdades.md]] - Estimación de errores y validación
-> 
+>
 > ### 📖 Para Profundizar
 > - Análisis de Errores Numéricos - Teoría completa de errores de truncamiento
 > - Polinomios de Interpolación - Base teórica de Simpson y métodos avanzados
 > - Cuadratura de Gauss - Métodos óptimos de integración numérica
 > - Métodos Adaptativos - Algoritmos inteligentes de integración
-> 
+>
 > ### 🎯 Notas Recomendadas
 > - Programación de Métodos Numéricos - Implementación práctica en código
 > - Aplicaciones en Ingeniería - Casos reales de uso de integración numérica
 > - [[Validación de entradas de usuario]] - Técnicas para verificar aproximaciones
 
+> [!quote] ❝ Integración Adaptativa Automática
+>
 > - Validación de Resultados Numéricos - Técnicas para verificar aproximaciones
 > - [[01 – Transformaciones lineales|Transformaciones de Integrales]] - Manejo de casos difíciles
-> 
+>
 > ### 🧮 Aplicaciones Especializadas
 > - Análisis de Señales Digitales - Integración de funciones muestreadas
 > - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
 > - Procesamiento de Datos Experimentales - Análisis de mediciones discretas
 > - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en algoritmos de optimización
-> 
+>
 
 ---
 
-### 🏷️ Tags
-#matematicas/calculo/numerico #integracion/aproximacion #metodos/computacionales #trapecio/simpson #analisis/errores #aplicaciones/practicas #programacion/algoritmos
+## 📚 Referencias
+
+> [!quote] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md]]
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md]]
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md]]
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md]]
+> - [[Validación de entradas de usuario]]
+> - [[01 – Transformaciones lineales]]
+> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]]
+
+**Tags:** #MATG1045 #unidad6 #integracion-numerica #matematicas/calculo/numerico #integracion/aproximacion #metodos/computacionales #trapecio/simpson #analisis/errores #aplicaciones/practicas #programacion/algoritmos

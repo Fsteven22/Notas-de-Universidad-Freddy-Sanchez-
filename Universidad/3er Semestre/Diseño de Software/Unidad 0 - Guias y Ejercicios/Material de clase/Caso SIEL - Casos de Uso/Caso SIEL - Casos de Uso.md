@@ -6,6 +6,7 @@ tags: [CCPG1042, unidad2, siel, casos-de-uso]
 # 🗳️ Caso SIEL — Casos de Uso (capturas de pizarra)
 
 > [!info] ℹ️ Qué es esto
+>
 > Capturas de la pizarra de la clase de casos de uso: el caso **SIEL** (Sistema de Elecciones Seccionales) trabajado de punta a punta para Control03.
 
 ## 📎 Deck oficial de la cátedra
@@ -29,17 +30,26 @@ tags: [CCPG1042, unidad2, siel, casos-de-uso]
 ## 🗂️ Originales
 
 > [!example]- 📷 Capturas de pizarra (en orden)
+>
 > ![[Casos de uso SIEL-1.png]]
+>
 > ![[Casos de uso SIEL-2.png]]
+>
 > ![[Casos de uso SIEL-3.png]]
+>
 > ![[Casos de uso SIEL-4.png]]
+>
 > ![[Casos de uso SIEL-5.png]]
+>
 > ![[Casos de uso SIEL-6.png]]
+>
 > ![[Casos de uso SIEL-7.png]]
 
 ---
 
-- Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
-- Complemento: [[Caso SIEL - Modelo de Clases]]
+> [!note] 📋 ️ Originales
+>
+> - Mapa de contenido: [[../../../Diseño de Software|Diseño de Software]]
+> - Complemento: [[Caso SIEL - Modelo de Clases]]
 
 **Tags:** #CCPG1042 #unidad2 #siel #casos-de-uso

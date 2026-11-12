@@ -1,0 +1,14 @@
+flowchart LR
+    E["cod_estud<br/>(parte PK)"]
+    EN["nombre, correo<br/>⚠️ parcial"]
+    C["cod_curso<br/>(parte PK)"]
+    CN["nomb, horas, cod_instructor<br/>⚠️ parcial"]
+    CI["cod_instructor"]
+    NI["nomb_instructor<br/>⚠️ transitiva"]
+    EC["(cod_estud, cod_curso)"]
+    NF["nota_final<br/>✅ total"]
+    E --> EN
+    C --> CN
+    C --> CI
+    CI --> NI
+    EC --> NF

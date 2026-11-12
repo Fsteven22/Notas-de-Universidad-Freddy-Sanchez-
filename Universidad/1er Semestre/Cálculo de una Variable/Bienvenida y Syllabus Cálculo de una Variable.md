@@ -1,8 +1,9 @@
 ---
 dg-publish: true
+tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, MATG1001, matematicas, semester1]
 ---
 
-# Cálculo de una Variable — Bienvenida y Syllabus
+# 📘 Cálculo de una Variable — Bienvenida y Syllabus
 
 ## 🎉 ¡Bienvenido/a a Cálculo de una Variable!
 
@@ -58,7 +59,13 @@ dg-publish: true
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Diagramas/Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.svg]]
+> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.svg]]
+>
+> **Se lee así:** Se ve un recuadro central con el nombre de la materia y dos flechas que salen de él: una va a una región ancha en la parte superior con cuatro cajas azules en dos columnas, otra va a una región vertical a la derecha con cinco cajas verdes de evaluación apiladas. Las dos unidades de integrales forman una tercera región arriba a la izquierda, así el mapa separa **qué se estudia** de **qué se te califica**.
+>
+> **Por qué importa:** Este mapa te sirve para **planificar el semestre**: ves de entrada que todo el curso se apoya en Preliminares y termina en Integrales, y que hay cinco formas distintas de nota. Evita que estudies por partes sin saber cómo encajan las unidades entre sí ni cuánto pesa cada actividad.
+>
+> **Ejemplo:** Un ejemplo típico: al abrir la nota de Límites y continuidad ya sabes que viene detrás del bloque de Preliminares y que al final del semestre te tocarán exámenes, tareas, proyectos, lecciones y participación.
 >
 > | Unidad | Tema |
 > |---|---|
@@ -109,4 +116,4 @@ dg-publish: true
 
 ---
 
-**Tags:** #calculo #ESPOL #MATG1001 #matematicas #semester1
+**Tags:** #MATG1045 #bienvenida-y-syllabus-calculo-de-una-variable #calculo #ESPOL #MATG1001 #matematicas #semester1

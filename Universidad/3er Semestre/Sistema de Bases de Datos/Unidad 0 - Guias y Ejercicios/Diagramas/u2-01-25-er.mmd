@@ -1,0 +1,8 @@
+erDiagram
+    DETALLE {
+        idProd int PK, FK
+        codigo int PK, FK
+        cantidad int
+    }
+    PRODUCTO ||--o{ DETALLE : "✅ BIEN: intermedia"
+    VENTA ||--o{ DETALLE : "✅ BIEN: intermedia"

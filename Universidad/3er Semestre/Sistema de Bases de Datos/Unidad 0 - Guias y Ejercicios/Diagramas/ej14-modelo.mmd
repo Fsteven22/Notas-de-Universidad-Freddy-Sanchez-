@@ -1,0 +1,16 @@
+erDiagram
+    LINEA {
+        codigo int PK
+        linea string
+        marca string
+    }
+    ARTEFACTO {
+        numero int PK
+        modelo string
+        litros int
+        precio float
+        codigo int FK
+    }
+    LINEA ||--o{ ARTEFACTO : agrupa
+    ARTEFACTO ||--o{ ART_DIST : distribuye
+    ARTEFACTO ||--o{ ART_IMP : importa

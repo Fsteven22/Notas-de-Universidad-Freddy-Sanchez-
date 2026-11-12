@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [CCPG1042, syllabus, bienvenida, diseno-software]
 ---
 
 # 🧩 Bienvenida y Syllabus Diseño de Software

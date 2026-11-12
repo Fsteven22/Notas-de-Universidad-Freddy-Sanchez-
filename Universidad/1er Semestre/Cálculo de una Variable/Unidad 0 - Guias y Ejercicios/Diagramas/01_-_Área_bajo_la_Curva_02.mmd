@@ -1,0 +1,14 @@
+flowchart TD
+    A["Función f(x) en [a,b]"] --> B{"¿f(x) ≥ 0 siempre?"}
+    B -->|Sí| C["Área = ∫f(x)dx"]
+    B -->|No| D["Encontrar raíces f(x)=0"]
+    D --> E[Dividir en subintervalos]
+    E --> F["Calcular |∫f(x)dx| en cada parte"]
+    F --> G[Sumar todas las áreas]
+    
+    H{¿Hay simetría?} --> I[Función par: 2∫₀ᵃ]
+    H --> J[Función impar: especial cuidado]
+    
+    style C fill:#96ceb4
+    style G fill:#45b7d1
+    style I fill:#ffd93d

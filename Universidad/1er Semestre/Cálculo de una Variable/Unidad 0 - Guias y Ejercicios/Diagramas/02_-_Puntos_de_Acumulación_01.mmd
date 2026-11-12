@@ -1,0 +1,37 @@
+---
+title: "02 - Puntos de Acumulación"
+---
+flowchart LR
+    A["Punto de acumulación x₀"]
+    B["Definición"]
+    C["Todo entorno de x₀ contiene puntos de A"]
+    D["A es infinito en todo entorno"]
+    E["Tipos: adherente, aislado, de adherencia"]
+    F["Condición 0 < |x − x₀| < ε"]
+    G["x₀ ∈ cl(A)"]
+    H["El conjunto A' de adherencia es cerrado"]
+    I["Aplicaciones"]
+    J["Clausura: cl(A) = A ∪ A'"]
+    K["Límites: definición por puntos de acumulación"]
+    A --> B
+    A --> I
+    B --> C
+    B --> D
+    B --> E
+    C --> F
+    C --> G
+    D --> H
+    I --> J
+    I --> K
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style G fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style H fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style I fill:#ffebee,stroke:#e53935,color:#4a1010
+    style J fill:#e0f2f1,stroke:#009688,color:#00332e
+    style K fill:#e0f2f1,stroke:#009688,color:#00332e

@@ -1,0 +1,24 @@
+erDiagram
+    VENDEDOR {
+        vendedor_id int PK
+        nombre string
+        servidor_id int FK
+    }
+    VENTA {
+        vendedor_id int PK, FK
+        producto_id int PK, FK
+        fecha date
+        cantidad int
+    }
+    PRODUCTO {
+        producto_id int PK
+        nombre string
+        precio float
+    }
+    SERVIDOR {
+        servidor_id int PK
+        region string
+    }
+    VENDEDOR ||--o{ VENTA : realiza
+    PRODUCTO ||--o{ VENTA : incluye
+    SERVIDOR ||--o{ VENDEDOR : aloja

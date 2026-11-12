@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 > | **Flexibilidad** | Cambios rompen todo | Lo que varía está encapsulado |
 > | **Aprendizaje** | Años de cicatrices | Cicatrices ajenas, gratis |
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-01-graph.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -88,7 +90,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Necesito un Patrón?
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Necesito un Patrón
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-02-flow.svg]]
 
 > [!info] 🖼️ Figura
 >
@@ -232,16 +236,19 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino patrón con sus 4 partes y clasifico por familia.
 > - [ ] Explico los 2 principios de Shalloway con ejemplo.
 > - [ ] Distingo adaptar un patrón de copiar código.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Elijo Strategy vs Decorator vs Observer según el dolor.
 > - [ ] Dibujo roles antes de codear el patrón.
 > - [ ] Documento consecuencias en un ADR.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Combino patrones (Factory+Strategy) con justificación.
 > - [ ] Calculo el costo de herencia vs composición en casos reales.
 > - [ ] Decido con YAGNI cuándo NO aplicar un patrón.
@@ -250,7 +257,9 @@ tags: [CCPG1042, unidad3, patrones, principios, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-02-03-mind.svg]]
 
 > [!info] 🖼️ Figura
 >

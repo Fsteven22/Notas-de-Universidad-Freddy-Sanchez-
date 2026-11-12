@@ -1,0 +1,13 @@
+flowchart LR
+    subgraph my_svg_P3["3FN: corta transitivas"]
+    end
+    subgraph my_svg_P2["2FN: corta parciales"]
+    end
+    A["(PROJ_NUM, EMP_NUM)"]
+    B["PROJ_NAME<br/>dependencia parcial"]
+    C["EMP_NAME, JOB_CLASS,<br/>CHG_HOUR<br/>dependencia parcial"]
+    D["EMPLOYEE<br/>EMP_NUM, JOB_CLASS,<br/>CHG_HOUR"]
+    E["CHG_HOUR<br/>dependencia transitiva"]
+    A -->|"PROJ_NUM"| B
+    A -->|"EMP_NUM"| C
+    D -->|"JOB_CLASS"| E

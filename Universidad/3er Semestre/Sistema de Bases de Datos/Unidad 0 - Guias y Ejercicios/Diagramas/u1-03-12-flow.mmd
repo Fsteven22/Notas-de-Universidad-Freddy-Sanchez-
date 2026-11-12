@@ -1,0 +1,11 @@
+flowchart TB
+    A["¿Pregunta de vuelta?"]
+    B{"¿Puede manejar varias?"}
+    C["Dibuja 1:M<br/>FK en DIVISION"]
+    D["Dibuja 1:1<br/>caso A, B o C"]
+    E["Verifica: ¿el lado N<br/>carga al ultimo?"]
+    A --> B
+    B -->|"Si"| C
+    B -->|"No"| D
+    C --> E
+    D --> E

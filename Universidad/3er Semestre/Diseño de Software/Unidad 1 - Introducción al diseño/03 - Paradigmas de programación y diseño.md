@@ -27,7 +27,9 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > | **Mantenimiento** | Todo con el mismo martillo | Cada parte en su estilo natural |
 > | **Equipo** | Todos piensan igual (punto ciego) | Vocabulario más rico de diseños |
 
-![[../Diagramas/dsw-u1-04-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-01-graph.svg]]
 
 ---
 
@@ -95,7 +97,7 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 >
 > La POO modulariza en métodos, clases y paquetes — pero algunos *concerns* cruzan esos límites (ej. **seguridad**: el paquete Foro existe para mostrar posts, pero igual debe validar que solo moderadores aprueben o borren). **AOP** mueve cada concern transversal a su propio paquete y deja a los objetos con una sola responsabilidad clara.
 >
-> ![[../Diagramas/dsw-u1-04-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-02-graph.svg]]
 >
 > | Concepto AOP | Qué Es | Ejemplo (clase Account) |
 > |---|---|---|
@@ -115,14 +117,24 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!info] 📖 El deck de cátedra: AOP en figuras (02b, pp. 13-20)
 > *"Programación Orientada a Aspectos (AOP) es un paradigma de programación que complementa la programación orientada a objetos…"* — el deck lo desarrolla con la figura del **concern transversal** y luego con los dos síntomas de mala modularidad.
 
-![[Archivos/02b-p14.png]]
+> [!note] 🖼️ captura 02b-p14 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p14.png]]
 
-![[Archivos/02b-p16.png]]
+> [!note] 🖼️ captura 02b-p16 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p16.png]]
 
-![[Archivos/02b-p18.png]]
+> [!note] 🖼️ captura 02b-p18 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p18.png]]
 
-![[Archivos/02b-p20.png]]
+> [!note] 🖼️ captura 02b-p20 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p20.png]]
 
+> [!note] 💡 Punto clave del deck
+>
 > **Punto clave del deck:** la OO modulariza *concerns* en métodos, clases y paquetes, pero algunos *concerns* son **difíciles de modularizar** de esa forma — de ahí el "aspecto" como unidad central, equivalente a la clase en OO.
 
 ---
@@ -157,14 +169,24 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!info] 📖 El deck de cátedra: componentes en figuras (02b, pp. 33-40)
 > *"Un componente es una unidad de software independiente, desplegable que está completamente definida y accedida por medio de un conjunto de interfaces…"* — seguido de las características, la composición y los modelos de componente.
 
-![[Archivos/02b-p33.png]]
+> [!note] 🖼️ captura 02b-p33 — Paradigma Orientado a Componentes (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p33.png]]
 
-![[Archivos/02b-p34.png]]
+> [!note] 🖼️ captura 02b-p34 — Paradigma Orientado a Componentes (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p34.png]]
 
-![[Archivos/02b-p38.png]]
+> [!note] 🖼️ captura 02b-p38 — Paradigma Orientado a Componentes (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p38.png]]
 
-![[Archivos/02b-p40.png]]
+> [!note] 🖼️ captura 02b-p40 — Paradigma Orientado a Componentes (Deck 02b)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p40.png]]
 
+> [!note] 💡 Modelos de componente (p. 40)
+>
 > **Modelos de componente (p. 40):** un modelo de componente es *"una definición de estándares para implementación, documentación y despliegue de componentes"* — de ahí los estándares CORBA, COM y Enterprise JavaBeans que menciona el deck.
 
 ---
@@ -182,7 +204,9 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Paradigma Uso?
 
-![[../Diagramas/dsw-u1-04-03-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Paradigma Uso
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -203,7 +227,6 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > - Pregunta "¿qué varía aquí?" antes de elegir (ver diagrama de decisión).
 > - Mezcla declarada: funcional adentro (lógica pura), OO afuera (estructura).
 >
-
 > [!danger] ❌ Error 2: Seguridad (y Logs) Regados por Todo el Código (viola **separación de concerns/AOP**)
 >
 > **Síntomas:** la misma guarda copiada en cada método:
@@ -220,7 +243,6 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 >
 > **Solución:** muévelo a un aspecto con pointcut + advice; los módulos quedan con una sola responsabilidad.
 >
-
 > [!danger] ❌ Error 3: Reescribir lo que ya Existe como Componente (viola **reuso antes que construcción**)
 >
 > **Síntomas:** reinventar autenticación, paginación o reportes pudiendo integrar un COTS o servicio.
@@ -275,7 +297,6 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > > - **4.** Unidad independiente/desplegable accedida solo por interfaces. Tipos: servicios web (remotos), colecciones de objetos (.NET/JEE), stand-alone configurables.
 > > - **5.** Estructurado quita `goto` (Dijkstra 1968); OO quita punteros a función (Dahl/Nygaard 1966); funcional quita asignación (Church 1936).
 >
-
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica tangling vs scattering con un ejemplo propio de un proyecto universitario.
@@ -296,7 +317,6 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > > - **9.** Porque combina dos modelos mentales (qué vs cómo) sin frontera clara: se pierde legibilidad y cada parte asume garantías que la otra no da.
 > > - **10.** Inmutable: historial de commits (event sourcing real — nada se reescribe). Mutable: working directory y staging, protegidos por convenciones de ramas/PRs.
 >
-
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta con Martin por qué probablemente no veremos un cuarto paradigma "negativo" como los tres grandes.
@@ -334,19 +354,20 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino paradigma y distingo imperativo de declarativo con ejemplo.
 > - [ ] Explico cross-cutting concern con el caso foro-seguridad.
 > - [ ] Defino componente y nombro sus 3 tipos.
 > - [ ] Digo qué quita cada paradigma de Martin con autor y año.
 >
-
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Diferencio tangling de scattering con ejemplo propio.
 > - [ ] Defino join point, pointcut, advice y weaving con Account/credit().
 > - [ ] Aplico las 4 etapas de componentes a un caso de reuso.
 >
-
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Diseño la migración de un monolito acoplado a aspectos.
 > - [ ] Argumento monolito modular vs microservicios para un equipo chico.
 > - [ ] Explico event sourcing y su conexión con control de versiones.
@@ -355,7 +376,9 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u1-04-04-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

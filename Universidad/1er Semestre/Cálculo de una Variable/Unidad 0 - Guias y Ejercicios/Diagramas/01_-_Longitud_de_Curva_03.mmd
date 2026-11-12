@@ -1,0 +1,16 @@
+flowchart TD
+    A["Curva dada"] --> B{"¿En qué forma está expresada?"}
+    B -->|"y = f(x)"| C{"¿f'(x) es simple?"}
+    B -->|"x = g(y)"| D{"¿g'(y) es simple?"}
+    B -->|"r = h(θ)"| E["Usar coordenadas polares"]
+    B -->|"x(t), y(t)"| F["Usar forma paramétrica"]
+    C -->|Sí| G["Usar L = ∫√(1+[f'(x)]²)dx"]
+    C -->|No| H["Considerar parametrización"]
+    D -->|Sí| I["Usar L = ∫√(1+[g'(y)]²)dy"]
+    D -->|No| J["Considerar otra forma"]
+    E --> K["L = ∫√(r² + [r']²)dθ"]
+    F --> L["L = ∫√([x']² + [y']²)dt"]
+    style G fill:#96ceb4
+    style I fill:#96ceb4
+    style K fill:#ffb3ba
+    style L fill:#ffd93d

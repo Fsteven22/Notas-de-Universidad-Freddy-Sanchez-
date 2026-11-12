@@ -1,0 +1,35 @@
+flowchart TB
+    subgraph FORMAS["Formas"]
+        direction LR
+        EF["entidad fuerte"]
+        ED["entidad débil<br/>(rectángulo doble)"]
+        REL{"relación"}
+
+        EF ~~~ ED ~~~ REL
+    end
+
+    subgraph ATRI["Atributos"]
+        direction LR
+        AT(["atributo"])
+        DE(["atributo derivado<br/>(óvalo punteado)"])
+
+        AT ~~~ DE
+    end
+
+    KEY["clave = subrayado (carnet)"]
+
+    FORMAS ~~~ ATRI
+    ATRI ~~~ KEY
+
+    classDef fuerte fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef debil fill:#ffffff,stroke:#000000,stroke-width:4px
+    classDef rel fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef atr fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef der fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray:4 3
+    classDef nota fill:#fff4e6,stroke:#e69138,stroke-width:1px
+    class EF fuerte
+    class ED debil
+    class REL rel
+    class AT atr
+    class DE der
+    class KEY nota

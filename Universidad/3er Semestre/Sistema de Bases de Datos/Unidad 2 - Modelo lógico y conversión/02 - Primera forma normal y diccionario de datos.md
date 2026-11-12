@@ -40,6 +40,12 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > Cada fila tiene un solo teléfono. Un cliente puede tener N filas en TELEFONO.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-19-er.svg]]
+>
+> **Se lee así:** el diagrama es la **solución ya en notación de motor**, y hay que mirar tres cosas. Primera, `TELEFONO` tiene **dos columnas que forman la PK compuesta**: `cedula PK, FK` y `numero PK`. Segunda, la relación dice `CLIENTE ||--o{ TELEFONO : "un telefono por fila"` — de una a muchas, con la etiqueta en el lado de la-many. Tercera, la **relación tiene nombre en singular** (`un telefono por fila`), no `tiene`: es una convención de lectura que cada fila de `TELEFONO` representa *un* teléfono.
+>
+> **Por qué importa:** los atributos marcados `PK, FK` son el corazón de la normalización. `cedula` está en `TELEFONO` **por dos razones a la vez**: identifica la fila (junto a `numero`) y además señala a quién pertenece el teléfono. Por eso la PK de `TELEFONO` **no puede ser solo** `cedula`: si lo fuera, cada cliente podría tener un solo teléfono y estaríamos otra vez en la 1FN rota, solo que más escondida.
+>
+> **Ejemplo:** el cliente `0876456324` con tres teléfonos produce **tres filas** en `TELEFONO`: `(0876456324, 2345678)`, `(0876456324, 2345679)`, `(0876456324, 2345680)`. La tabla `CLIENTE` sigue teniendo una sola fila. Ese par de filas extra es, literalmente, lo que "normalizar" bought.
 
 ### 2️⃣ Las 5 condiciones de la 1FN
 
@@ -58,15 +64,24 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | 5 | Columnas regulares | No hay columnas ocultas como `id_fila`, `timestamp`, ni IDs de objeto sueltos |
 
 > [!info] 📖 El deck de cátedra: la 1FN en la pizarra (slides04 y BD 02.3)
-> El deck del Ing. Magallanes define la 1FN como *"una tabla donde la intersección de cada fila y columna contiene solo un valor"* y da el ejemplo canónico de la rama con varios teléfonos.
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
-
-![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p10.png]]
-
-> **Las 5 condiciones (BD 02.3, p. 10):** *"1. No hay orden de arriba-a-abajo en las filas. 2. No hay orden de izquierda-a-derecha en las columnas. 3. No hay filas duplicadas. 4. Cada intersección…"* — el checklist de esta nota es el mismo, con la condición 5 (columnas regulares) completada.
 >
-> **El ejemplo del deck (slides04, p. 9):** la tabla `branchNo / branchAddress / telNos` con `B001 · 8 Jeffesorn Way, Portland, OR 97201 · 212-…` y varios teléfonos separados por comas — la celda con lista que viola la 1FN.
+> El deck del Ing. Magallanes define la 1FN como *"una tabla donde la intersección de cada fila y columna contiene solo un valor"* y da el ejemplo canónico de la rama con varios teléfonos.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-s04-p8.png]]
+>
+> **Se lee así:** la lámina (p. 8) es la **definición y el ejemplo roto, en la misma pantalla**. Arriba, la definición: *"una tabla donde la intersección de cada fila y columna contiene solo un valor"*, y dos corolarios: *"esto prohíbe anidamientos o grupos repetidos"* y *"la intersección debe ser atómica"*. Abajo, la tabla `branchNo / branchAddress / telNos` con cuatro sucursales: `B001`, `B002`, `B003` y `B004`, y en la columna `telNos` los teléfonos **separados por comas** — `212-371-3000` para B001; `503-555-3618, 503-555-2727, 503-555-6241` para B003; `206-555-6756, 206-555-8234, 206-555-3131, 206-555-4112` para B004. La flecha de la lámina señala exactamente una de esas celdas: *"más de un valor, no está en 1NF"*.
+>
+> **Por qué importa:** la definición usa la palabra **intersección**, que es la misma imagen mental que da nombre al modelo relacional (Codd): una relación es un conjunto de pares ordenados, y cada par —una intersección fila-columna— debe tener un único valor. La 1FN no es una regla extra: es la **primera exigencia** de ese modelo. Por eso la lámina también marca `branchNo` como *Primary key*: aun con PK, la tabla sigue sin estar en 1FN.
+>
+> **Ejemplo:** la fila `B004 · 16 – 14th Avenue, Seattle, WA 98128 · 206-555-3131, 206-555-4112` es el ejemplo perfecto: la dirección también contiene comas, pero eso **no** viola la 1FN, porque sigue siendo **un** valor de texto. Lo que viola es la lista de teléfonos, que son **cuatro** valores en una celda. La distinción es "un texto que contiene separadores" ≠ "varios valores".
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Logico-Conversion/bd-023-p10.png]]
+>
+> **Se lee así:** la lámina (p. 10 de BD 02.3) es la **versión completa y formal** del checklist: *"una tabla está en 1FN si satisface las siguientes cinco condiciones: 1. No hay orden de arriba-a-abajo en las filas. 2. No hay orden de izquierda-a-derecha en las columnas. 3. No hay filas duplicadas. 4. Cada intersección de fila-y-columna contiene exactamente un valor del dominio aplicable y nada más. 5. Todas las columnas son regulares, es decir, las filas no tienen componentes como IDs de fila, IDs de objeto, o timestamps ocultos"*. Y remata con la intención histórica: *"la primera forma normal se definió para prohibir los atributos multivaluados, compuestos y sus combinaciones"*.
+>
+> **Por qué importa:** las condiciones 1 y 2 (sin orden) parecen raras, pero tienen una razón técnica: el modelo relacional es un **conjunto de tuplas**, no una lista. Si el motor te devolviera las filas en un orden fijo, ese orden se volvería un dato implícito que no podrías usar por error. La condición 5 es la más moderna: una columna `id_fila` o un `timestamp` de inserción son metadatos que el modelo relacional clásico no contempla, y por eso una tabla con esas columnas "no es regular".
+>
+> **Ejemplo:** el caso de la condición 3 en la vida real es una tabla `ALUMNO` importada del Excel donde el mismo alumno aparece dos veces porque alguien lo agregó dos veces. Con la PK `(cédula, código_materia)` no puede pasar: el motor rechaza el duplicado. La 1FN protege tu modelo de un error de carga, no solo de un error de diseño.
 
 ### 3️⃣ Violación de la 1FN
 
@@ -77,6 +92,12 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > **Ejemplo:** `productos = "arroz, leche, pan"` en una sola celda viola la condición 4. No puedes filtrar por "arroz" sin leer toda la celda.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-16-graph.svg]]
+>
+> **Se lee así:** el diagrama tiene una **caja de partida y tres salidas**, y esa estructura es lo que hay que entender: la misma tabla rota (`CLIENTE` con `telefono1, telefono2, telefono3`) produce tres consecuencias distintas. (1) **La violación**, en rojo: *"una celda guarda '2345, 2654' → viola la 1FN, condición 4: un valor por celda"*. (2) **La consecuencia operativa**: *"no se puede filtrar por un solo teléfono"*. (3) **El remedio**, en verde: *"TELEFONO(cedula FK, numero), una fila por teléfono"*.
+>
+> **Por qué importa:** la salida (2) es la que conecta la definición con la vida real. La 1FN no es un capricho académico: es lo que permite que un `WHERE telefono = '2345'` devuelva exactamente lo que esperas. Con la lista en una celda, esa consulta devuelve filas enteras y tú tienes que filtrar el texto a mano. La condición 4 existe **por una razón de uso**.
+>
+> **Ejemplo:** el `SELECT` que sí funciona con la tabla normalizada es `SELECT * FROM TELEFONO WHERE numero = '2345'`. Con la tabla rota, el motor te devuelve la fila completa del cliente y tú tienes que buscar dentro de una lista de texto para saber si ese teléfono estaba. La base de datos no puede indexar ni comparar una lista de texto; por eso el modelo relacional la prohíbe.
 
 ### 4️⃣ Diccionario de datos
 
@@ -91,7 +112,13 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > | `direccion` | `varchar(100)` | texto | Dirección de facturación |
 > | `telefono` | `varchar(15)` | 7–15 dígitos | Contacto principal |
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-15-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-15-er.svg]]
+>
+> **Se lee así:** el diagrama es un ERD de **una sola entidad** (`CLIENTE`) donde cada columna lleva **el comentario de la especificación** al lado. `cedula int PK "mayor que 0, unico. Identifica al cliente"`, `nombre string "varchar(50), no vacio. Nombre completo"`, `direccion string "varchar(100). Direccion de facturacion"`, `telefono string "varchar(15), 7 a 15 digitos. Contacto principal"`.
+>
+> **Por qué importa:** ese comentario **es** el diccionario de datos, dibujado. Fíjate en que cada columna responde a las tres preguntas de la definición: **tipo** (`int`, `varchar(50)`), **dominio** (mayor que 0 y único / no vacío / 7 a 15 dígitos) y **descripción** (qué representa). El diccionario de datos no es un documento aparte y redundante: es la especificación de cada campo, y el diagrama es una forma compacta de verla.
+>
+> **Ejemplo:** `telefono varchar(15) "7 a 15 digitos. Contacto principal"` dice algo que el tipo solo no dice. `varchar(15)` permite 15 caracteres cualesquiera; el dominio "7 a 15 dígitos" es lo que la vuelve un teléfono. En SQL eso se escribe como `CHECK (telefono REGEXP '^[0-9]{7,15}$')`. El comentario del diagrama es el requisito; el `CHECK` es su traducción.
 
 ### 5️⃣ Atributo multivaluado
 
@@ -104,7 +131,13 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > ❌ `CLIENTE(cédula, nombre, teléfonos)` → `teléfonos = "2345, 2654"` (grupo repetitivo)
 > ✅ `TELEFONO(cédula FK, número)` → una fila por teléfono
 >
-> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-17-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/u2-02-17-er.svg]]
+>
+> **Se lee así:** el diagrama es **el mismo par `CLIENTE` / `TELEFONO` del ejemplo de arriba**, pero con la relación rotulada simplemente `tiene`. Compáralo con la versión anterior: ahí la etiqueta decía *"un telefono por fila"*; aquí dice `tiene`. Las dos son correctas, pero responder con la segunda es más fácil de leer en un ERD real.
+>
+> **Por qué importa:** la diferencia entre "dibujar bien" y "dibujar rápido" está en la relación. Cuando la relación se llama `tiene`, un lector nuevo no sabe si es 1:1 o 1:N sin mirar los símbolos. Cuando se llama *"un teléfono por fila"*, la cardinalidad **ya está en el nombre** y el diagrama se documenta solo. Es la misma idea que aplica al diccionario de datos: el nombre del elemento es su primera línea de documentación.
+>
+> **Ejemplo:** si el diagrama de tu proyecto dice `CLIENTE ||--o{ TELEFONO : tiene`, y en la entrega te piden "explique las cardinalidades", tienes que abrir la etiqueta y leer los símbolos. Si en cambio dice `CLIENTE ||--o{ TELEFONO : "un telefono por fila"`, la explicación está escrita. Ninguno es incorrecto; el segundo te ahorra la mitad de la defensa oral.
 
 ---
 
@@ -184,6 +217,27 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 
 ---
 
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Distingo una relación 1:1, 1:M y M:N solo con leerla en voz alta.
+> - [ ] Sé en qué lado va la FK en cada cardinalidad.
+> - [ ] Identifico cuándo una relación necesita tabla intermedia.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Convierto un ERD completo a modelo lógico aplicando las reglas de cardinalidad.
+> - [ ] Detecto relaciones recursivas y supertipo-subtipo y elijo su traducción.
+> - [ ] Hago la conversión inversa (del modelo lógico al conceptual) sin perder información.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Justifico por qué una 1:1 total-total se fusiona y cuándo no.
+> - [ ] Reviso el esquema resultante y cuento tablas para detectar las que sobran.
+
 ## 📝 Ejercicios Propuestos
 
 ### ✏️ Ejercicio 1 — Detectar la violación
@@ -226,11 +280,11 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 #flashcards/bd-u2
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
-- ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
-- ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
-- ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
+>
+> - ¿Objetivo de la 1FN?::Tablas fieles a una relación, sin grupos repetitivos.
+> - ¿5 condiciones 1FN?::Filas sin orden, columnas sin orden, sin duplicadas, un valor por celda, columnas regulares.
+> - ¿Qué mide cada FN?::Vulnerabilidad a inconsistencias: 1FN grupos repetitivos, 2FN dependencias parciales, 3FN transitivas.
+> - ¿Diccionario de datos y sus 4 columnas?::Describe cada tabla: atributo, tipo de dato, dominio, descripción.
 
 ---
 
@@ -246,6 +300,15 @@ tags: [TICG1018, unidad2, primera-forma-normal, diccionario, ml]
 > **Próxima clase:** taller de conversión y normalización.
 
 ---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas Relacionadas
+>
+> - [[01 - Conversión MC a ML por cardinalidad]] — de dónde sale el esquema que hay que documentar.
+> - [[03 - Segunda y tercera forma normal]] — el siguiente escalón: 2FN y 3FN.
+> - [[04 - Normalización paso a paso]] — el protocolo completo, paso a paso.
+> - [[../Unidad 1 - Modelos de Datos y ER/Guía de Problemas 1 - MC, ML y Normalización|Guía de Problemas 1]] — el caso de las recetas de farmacia, resuelto con este método.
 
 ## 🔗 Seguir estudiando
 

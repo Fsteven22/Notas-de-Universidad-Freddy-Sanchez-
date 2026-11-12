@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > | **Pruebas** | Necesitan todo real | Mocks del contrato (Unidad 5) |
 > | **Reutilización** | Copiar-pegar | Importar componente |
 
-![[../Diagramas/dsw-u2-03-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-03-01-graph.svg]]
 
 ---
 
@@ -42,7 +44,7 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 > - **Requiere:** qué necesita para funcionar (fuente de `datos` válida).
 > - **Oculta:** qué nadie debe tocar (caché interna, queries crudas).
 >
-> ![[../Diagramas/dsw-u2-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-03-02-graph.svg]]
 >
 > **Principios de diseño de interfaces:**
 >
@@ -76,7 +78,9 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Fachada, Delegación o Directo?
 
-![[../Diagramas/dsw-u2-03-03-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Fachada, Delegación o Directo
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-03-03-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -235,16 +239,19 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino componente con sus tres caras y doy un ejemplo.
 > - [ ] Explico los 4 principios de interfaces con ejemplo.
 > - [ ] Diferencio fachada, delegación y composición.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Diseño una interfaz pequeña con errores del dominio.
 > - [ ] Detecto God Interface y God Facade y propongo división.
 > - [ ] Explico cómo testear con mocks vía DIP.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Versiono una API sin romper clientes.
 > - [ ] Diagnostico acoplamiento eferente y rediseño.
 > - [ ] Diseño un contrato completo listo para implementar.
@@ -253,7 +260,9 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u2-03-04-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-03-04-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -317,38 +326,69 @@ tags: [CCPG1042, unidad2, componentes, interfaces, diseno-software]
 >
 > Renderizados del deck de la unidad, en orden de presentación.
 >
-> ![[02b-p33.png]]
-> ![[02b-p34.png]]
-> ![[02b-p38.png]]
-> ![[02b-p40.png]]
-> ![[04a-p11-clase-uml.png]]
-> ![[04a-p12-visibilidad.png]]
-> ![[04a-p14-heuristicas.png]]
-> ![[04a-p16-sustantivo-verbo.png]]
-> ![[04a-p18-notacion-relaciones.png]]
-> ![[04a-p19-multiplicidad.png]]
-> ![[04a-p22-clase-asociacion.png]]
-> ![[04a-p23-generalizacion.png]]
-> ![[04a-p25-diagrama-clases.png]]
-> ![[04a-p33-elementos-secuencia.png]]
-> ![[04a-p39-alt.png]]
-> ![[04a-p40-opt.png]]
-> ![[04a-p42-biblioteca.png]]
-> ![[04a-p43-restricciones-tiempo.png]]
-> ![[04a-p44-tipos-interaccion.png]]
-> ![[04b-p11-bidireccionalidad.png]]
-> ![[04b-p18-generalizacion.png]]
-> ![[04b-p20-realizacion.png]]
-> ![[04b-p22-dependencia.png]]
-> ![[04b-p23-composicion.png]]
-> ![[04b-p24-agregacion.png]]
-> ![[04b-p4-relaciones.png]]
-> ![[04b-p5-tabla-relaciones.png]]
-> ![[04b-p9-codigo-asociacion.png]]
-> ![[04p-p45.png]]
-> ![[04p-p47.png]]
-> ![[04p-p48.png]]
-> ![[04p-p49.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p33.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p34.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p38.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p40.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p11-clase-uml.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p12-visibilidad.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p14-heuristicas.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p16-sustantivo-verbo.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p18-notacion-relaciones.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p19-multiplicidad.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p22-clase-asociacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p23-generalizacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p25-diagrama-clases.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p33-elementos-secuencia.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p39-alt.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p40-opt.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p42-biblioteca.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p43-restricciones-tiempo.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/UML/dsw-04a-p44-tipos-interaccion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p11-bidireccionalidad.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p18-generalizacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p20-realizacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p22-dependencia.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p23-composicion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p24-agregacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p4-relaciones.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p5-tabla-relaciones.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p9-codigo-asociacion.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p45.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p47.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p48.png]]
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Principios/dsw-04p-p49.png]]
 
 ---
 

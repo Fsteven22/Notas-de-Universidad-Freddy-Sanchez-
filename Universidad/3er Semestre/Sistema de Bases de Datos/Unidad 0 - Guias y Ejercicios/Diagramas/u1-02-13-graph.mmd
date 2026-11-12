@@ -1,0 +1,8 @@
+flowchart TB
+    E["ESTUDIANTE<br/> carnet"]
+    R{"matriculado"}
+    M["MATERIA<br/> codigo"]
+    A1["email<br/>cambia: no es PK"]
+    E -->|"(0,N)"| R
+    R -->|"(0,N)"| M
+    E --> A1

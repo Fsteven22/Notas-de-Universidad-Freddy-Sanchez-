@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph EJ["Notación Chen — un ejemplo completo"]
+        direction LR
+        EST["<b>ESTUDIANTE</b><br/><u>carnet PK</u>"]
+        REL{"toma"}
+        MAT["<b>MATERIA</b><br/><u>codigo PK</u>"]
+        NOM(["nombre"])
+        EDAD(["edad (derivado)"])
+
+        EST --- REL
+        REL --- MAT
+        EST --- NOM
+        EST --- EDAD
+    end
+
+    NOTA["<b>subrayado</b> = clave primaria · <b>óvalo punteado</b> = atributo derivado"]
+    EJ --- NOTA
+
+    classDef ent fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef rel fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef atr fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef der fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray:4 3
+    classDef nota fill:#fff4e6,stroke:#e69138,stroke-width:1px
+    class EST,MAT ent
+    class REL rel
+    class NOM atr
+    class EDAD der
+    class NOTA nota

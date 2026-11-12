@@ -1,0 +1,13 @@
+flowchart TD
+    A["Ver función complicada"] --> B{"¿Cuántos factores<br/>multiplicando/dividiendo?"}
+    B -->|"1-2"| C["Métodos directos<br/>probablemente mejores"]
+    B -->|"3+"| D["¿Hay exponentes<br/>variables?"]
+    C --> E["Regla producto/cociente"]
+    D -->|"Sí"| F["Derivación logarítmica<br/>OBLIGATORIA ✅"]
+    D -->|"No"| G["¿Hay raíces/potencias<br/>fraccionarias?"]
+    G -->|"Sí"| H["Derivación logarítmica<br/>MUY RECOMENDADA ✅"]
+    G -->|"No"| I["Derivación logarítmica<br/>vs. métodos directos<br/>(ambos viables)"]
+    
+    style F fill:#90EE90,stroke:#2E8B57,stroke-width:2px
+    style H fill:#87CEEB,stroke:#4682B4,stroke-width:2px
+    style E fill:#FFB6C1,stroke:#DC143C,stroke-width:2px

@@ -1,0 +1,17 @@
+flowchart TB
+    T["<b>Toda entidad nace con PK</b>"]
+
+    subgraph TIPOS["Los cuatro tipos de clave"]
+        direction LR
+        PK["<b>PK</b><br/>única + no nula<br/>estable"]
+        FK["<b>FK</b><br/>referencia<br/>otra PK"]
+        CAND["<b>Candidata</b><br/>reserva única"]
+        COMP["<b>Compuesta</b><br/>2+ columnas"]
+    end
+
+    T --- TIPOS
+
+    classDef tit fill:#fff4e6,stroke:#e69138,stroke-width:2px
+    classDef caja fill:#ffffff,stroke:#000000,stroke-width:2px
+    class T tit
+    class PK,FK,CAND,COMP caja

@@ -1,0 +1,19 @@
+erDiagram
+    MARINERO {
+        int sid PK
+        string snombre
+        int rating
+        real edad
+    }
+    BOTE {
+        int bid PK
+        string bnombre
+        string color
+    }
+    RESERVACION {
+        int sid PK, FK
+        int bid PK, FK
+        date dia PK
+    }
+    MARINERO ||--o{ RESERVACION : reserva
+    BOTE ||--o{ RESERVACION : reserva

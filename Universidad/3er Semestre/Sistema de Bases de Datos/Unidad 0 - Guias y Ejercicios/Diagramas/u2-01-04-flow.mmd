@@ -1,0 +1,8 @@
+flowchart TB
+    A["Insertar MATRICULA<br/>carnet=999"]
+    B{"¿Existe 999<br/>en ESTUDIANTE?"}
+    R["❌ Rechazado<br/>integridad referencial"]
+    O["✅ Aceptado"]
+    A --> B
+    B -->|"No"| R
+    B -->|"Si"| O

@@ -1,0 +1,28 @@
+---
+title: "Integrales_Trigonométricas_03"
+---
+flowchart TD
+    A["∫ R(sin x, cos x) dx<br/>con R racional"]
+    B["Si R·(−sin, cos) = −R<br/>→ u = cos(x)"]
+    C["Si R·(sin, −cos) = −R<br/>→ u = sin(x)"]
+    D["Si R·(−sin, −cos) = R<br/>→ u = tan(x)"]
+    E["En otros casos →<br/>sustitución de Weierstrass:<br/>t = tan(x/2)"]
+    E1["sin x = 2t/(1+t²)"]
+    E2["cos x = (1−t²)/(1+t²)"]
+    E3["dx = 2 dt/(1+t²)"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    E --> E1
+    E --> E2
+    E --> E3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E1 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E3 fill:#fff3e0,stroke:#ff9800,color:#4a2c00

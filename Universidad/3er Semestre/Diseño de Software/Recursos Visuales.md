@@ -6,13 +6,15 @@ tags: [recursos-visuales, diseno-de-software]
 # 🎬 Recursos Visuales — Diseño de Software
 
 > [!info] ℹ️ Para qué sirve esta página
+>
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.
 > Cada link está **verificado** (videoId + título real + canal + duración).
 > **Complementa** las guías y los apuntes del curso: no los sustituye.
 
-## Unidad 1 — Introducción al diseño
+## 📘 Unidad 1 — Introducción al diseño
 
 > [!info] 🎬 Videos de la unidad
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | ¿Qué son los paradigmas de programación? | [Link](https://www.youtube.com/watch?v=hcuvB58hwlE) | EDteam, 14:05 | el mapa de paradigmas: imperativo, funcional, OO. |
@@ -24,9 +26,10 @@ tags: [recursos-visuales, diseno-de-software]
 > | Los Principios SOLID explicados con ejemplos, 100% práctico | [Link](https://www.youtube.com/watch?v=lUPvI-Kv9UI) | The Coder Cave, 24:24 | cada principio con código. |
 > | Curso de PRINCIPIOS SOLID desde cero | [Link](https://www.youtube.com/watch?v=ASBC5drF-QU) | MoureDev by Brais Moure, 1:59:02 | clase larga para repasar con calma. |
 
-## Unidad 2 — Diseño orientado a objetos (UML)
+## 🧱 Unidad 2 — Diseño orientado a objetos (UML)
 
 > [!info] 🎬 Videos de la unidad
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | UML Tutorial: Diagrama de Clases desde cero | [Link](https://www.youtube.com/watch?v=Z0yLerU0g-Q) | Lucid Software Español, 11:41 | notación, atributos y relaciones. |
@@ -38,26 +41,29 @@ tags: [recursos-visuales, diseno-de-software]
 > | ¿Qué es Clean Architecture? | [Link](https://www.youtube.com/watch?v=EI4nOsec2Ao) | hdeleon.net, 17:32 | lectura asignada del Control 01 (caps. 3, 4 y 6). |
 > | Esto es Clean Architecture en 20 minutos | [Link](https://www.youtube.com/watch?v=07JAkHUoSKE) | Gentleman Programming, 20:08 | para la lectura del Control 01. |
 
-## Unidad 3 — Patrones de diseño
+## 🏭 Unidad 3 — Patrones de diseño
 
 > [!info] 🎬 Videos de la unidad
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | ¿Qué son los patrones de diseño en programación? | [Link](https://www.youtube.com/watch?v=-McoJKgvp28) | Programación en español, 17:56 | qué es un patrón y cuándo aplicarlo. |
 > | Los 6 patrones de diseño más utilizados | [Link](https://www.youtube.com/watch?v=JI_THVXPToQ) | HolaMundo, 8:59 | antes de la unidad, para tener el catálogo en la cabeza. |
 
-## Unidad 4 — Refactorización
+## 🧹 Unidad 4 — Refactorización
 
 > [!info] 🎬 Videos de la unidad
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Refactoring: definición y ejemplos | [Link](https://www.youtube.com/watch?v=-iuf9jYoClQ) | Programación Orientada a Objetos UNLP, 33:25 | la definición y el " smells". |
 > | ¿Qué es refactoring y cómo hacerlo paso a paso? | [Link](https://www.youtube.com/watch?v=Y8h_Zmedwn4) | OpenWebinars, 3:06 | el ciclo rojo-verde-refactor. |
 > | Refactoring | [Link](https://www.youtube.com/watch?v=omCFoofZUGY) | DesarrolloWeb.com, 2:13:33 | clase larga con muchos ejemplos. |
 
-## Unidad 5 — Pruebas unitarias
+## ✅ Unidad 5 — Pruebas unitarias
 
 > [!info] 🎬 Videos de la unidad
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | PRUEBAS UNITARIAS en JAVA (JUNIT 5) - Tutorial Completo Fácil | [Link](https://www.youtube.com/watch?v=74sClDEYSQ4) | Programando en JAVA, 12:01 | el camino completo para escribir un test. |
@@ -80,6 +86,7 @@ tags: [recursos-visuales, diseno-de-software]
 #### 🔧 Control de versiones (Git) — base para Unidad 1 y trabajo colaborativo
 
 > [!info] Recursos de Git
+>
 > | Recurso | Enlace | Notas |
 > | :--- | :--- | :--- |
 > | Video YouTube — Git | [Link](https://www.youtube.com/watch?v=4XpnKHJAok8&t=1m30s) | Intro rápida, punto de partida minuto 1:30. |
@@ -89,6 +96,7 @@ tags: [recursos-visuales, diseno-de-software]
 #### 📊 UML — diagramas (base para Unidad 1 y 2)
 
 > [!info] Tutoriales de UML (Lucid Software)
+>
 > | Diagrama | Enlace | Notas |
 > | :--- | :--- | :--- |
 > | Casos de Uso | [Link](https://youtu.be/zid-MVo7M-E?si=unHer8KeeRceRwNp) | Actores, sistema y relaciones. |
@@ -98,6 +106,7 @@ tags: [recursos-visuales, diseno-de-software]
 #### 🧱 Patrones de diseño — referencias (Unidad 2, componentes)
 
 > [!info] Catálogos de Referencia
+>
 > | Recurso | Enlace | Notas |
 > | :--- | :--- | :--- |
 > | Refactoring Guru | [Link](https://refactoring.guru/design-patterns) | Referencia principal con ejemplos multilinguaje. |
@@ -105,7 +114,9 @@ tags: [recursos-visuales, diseno-de-software]
 
 ## 🔗 Ver también
 
-- `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` - índice de guías, material y enlaces del aula virtual.
+> [!note] 📋 Ver también
+>
+> - `Unidad 0 - Guias y Ejercicios/00 - Leeme Unidad 0.md` - índice de guías, material y enlaces del aula virtual.
 
 ---
 

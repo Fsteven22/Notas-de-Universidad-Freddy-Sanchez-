@@ -1,0 +1,14 @@
+flowchart TB
+    E1["ESTUDIANTE<br/> carnet"]
+    R{"toma"}
+    E2["MATERIA<br/> codigo"]
+    W{"DEPENDIENTE<br/>carnet+dep"}
+    R2{"tiene"}
+    A1["nombre"]
+    A2["edad*<br/>derivada"]
+    E1 --> R
+    R --> E2
+    E1 --> A1
+    E1 --> A2
+    E2 --> R2
+    R2 --> W

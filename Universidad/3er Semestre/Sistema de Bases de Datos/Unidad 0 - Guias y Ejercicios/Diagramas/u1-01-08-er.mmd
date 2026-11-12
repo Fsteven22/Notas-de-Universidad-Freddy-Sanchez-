@@ -1,0 +1,9 @@
+erDiagram
+    EMPLEADO {
+        idEmp int PK
+    }
+    PROYECTO {
+        idProy int PK
+        idEmp int FK
+    }
+    EMPLEADO ||--o{ PROYECTO : asignado

@@ -1,0 +1,11 @@
+flowchart LR
+    A["AEROPUERTO<br/>(tabla)"]
+    S["ρ S(AEROPUERTO)<br/>copia de salida"]
+    L["ρ L(AEROPUERTO)<br/>copia de llegada"]
+    J["⨝<br/>S.pais = L.pais"]
+    R["Self-join:<br/>comparar una tabla consigo misma"]
+    A -->|"ρ S"| S
+    A -->|"ρ L"| L
+    S --> J
+    L --> J
+    J --> R

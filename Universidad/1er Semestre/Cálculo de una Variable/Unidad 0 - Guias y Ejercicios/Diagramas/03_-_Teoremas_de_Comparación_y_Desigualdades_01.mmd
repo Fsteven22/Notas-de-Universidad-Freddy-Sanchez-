@@ -1,0 +1,22 @@
+---
+title: "03_-_Teoremas_de_Comparación_y_Desigualdades_01"
+---
+flowchart TD
+    A["Teorema básico<br/>si f(x) ≤ g(x) en [a, b]<br/>entonces ∫ ab f ≤ ∫ ab g"]
+    D1["1. h(x) = g(x) − f(x) ≥ 0"]
+    D2["2. ∫ ab h(x) dx ≥ 0<br/>integral de no negativa es ≥ 0"]
+    D3["3. Linealidad:<br/>∫ h = ∫ g − ∫ f"]
+    D4["4. Conclusión:<br/>∫ f ≤ ∫ g ✓"]
+    S["Variante de punto:<br/>si f < g en un conjunto<br/>discreto de puntos,<br/>la desigualdad es estricta en la integral"]
+    A --> D1
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
+    D4 --> S
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style D1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D4 fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style S fill:#fff8e1,stroke:#fbc02d,color:#4a3b00

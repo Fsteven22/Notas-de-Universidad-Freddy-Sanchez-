@@ -1,0 +1,28 @@
+---
+title: "Integración_por_Partes_01"
+---
+flowchart TD
+    A["Fórmula:<br/>∫ u·dv = u·v − ∫ v·du"]
+    B["Estrategia LIATE<br/>para elegir u<br/>en orden de prioridad"]
+    L["L · Logarítmicas<br/>ln(x), log(x)"]
+    I["I · Inversas trig<br/>arcsin, arctan, arccos"]
+    Aa["A · Algebraicas<br/>xⁿ, polinomios"]
+    T["T · Trigonométricas<br/>sin, cos, tan"]
+    E["E · Exponenciales<br/>eˣ, aˣ"]
+    R["u = la que aparezca primero<br/>dv = el resto de la integrando"]
+    A --> B
+    B --> L
+    B --> I
+    B --> Aa
+    B --> T
+    B --> E
+    B --> R
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style L fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style I fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style Aa fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style T fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style R fill:#ffebee,stroke:#e53935,color:#4a1010

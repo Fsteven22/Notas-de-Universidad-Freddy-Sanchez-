@@ -1,0 +1,11 @@
+erDiagram
+    PERSONA {
+        cedula string PK
+        nombre string
+    }
+    LICENCIA {
+        numero string PK
+        categoria string
+        cedula string FK
+    }
+    PERSONA ||--o| LICENCIA : posee

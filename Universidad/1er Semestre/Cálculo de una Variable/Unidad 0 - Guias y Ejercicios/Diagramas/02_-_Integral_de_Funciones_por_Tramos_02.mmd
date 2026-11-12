@@ -1,0 +1,16 @@
+graph TD
+    A[Función por tramos] --> B[División en intervalos]
+    B --> C[Cálculo de área en cada tramo]
+    C --> D[Suma algebraica de áreas]
+    
+    E[Tramo 1: Área A₁] --> F[Suma total]
+    G[Tramo 2: Área A₂] --> F
+    H[Tramo 3: Área A₃] --> F
+    I[...] --> F
+    J[Tramo n: Área Aₙ] --> F
+    
+    F --> K["∫f(x)dx = A₁ + A₂ + A₃ + ... + Aₙ"]
+    
+    style A fill:#ffecb3
+    style F fill:#c8e6c9
+    style K fill:#e8f5e8

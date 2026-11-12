@@ -29,7 +29,9 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | **Calidad** | Se prueba al final | Se valida desde el modelo |
 > | **Equipo** | Pisan su código | Interfaces claras, trabajo paralelo |
 
-![[../Diagramas/dsw-u1-02-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-01-graph.svg]]
 
 ---
 
@@ -39,7 +41,7 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > **Software = instrucciones + estructuras de datos + documentación.** No es solo código: incluye lo que permite operar y mantener el programa.
 >
-> ![[../Diagramas/dsw-u1-02-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-02-graph.svg]]
 >
 > | Cara | Qué es | Ejemplo en tu proyecto |
 > |---|---|---|
@@ -47,13 +49,18 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | **Datos** | Estructuras que manipulan | Modelos, archivos, BD |
 > | **Documentación** | Describe operación y uso | Diagramas UML + README |
 >
-
 > [!info] 📖 El deck de cátedra: qué es diseño de software (01b, pp. 4-13)
 > *"Diseño de software es un proceso que define la arquitectura, co…"* — el deck abre así y de ahí sale el **modelo general de proceso de diseño** que aparece en la p. 5.
 
-![[Archivos/01b-p5.png]]
+> [!note] 🖼️ captura 01b-p5 — Qué es el Software (Pressman cap. 1)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p5.png]]
 
+> [!note] 💡 Los 7 principios de diseño del deck (pp. 6-13)
+>
 > **Los 7 principios de diseño del deck (pp. 6-13):** cada uno tiene su diapositiva con la definición textual, y varios reaparecen en [[02 - Principios de diseño, cohesión y acoplamiento]].
+
+> [!note] 📊 Tabla — Qué es el Software (Pressman cap. 1)
 >
 > | # | Principio | La frase del deck |
 > |---|---|---|
@@ -64,10 +71,14 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | 5 | **Separación de interfaz e implementación** | Especificar el componente por su interfaz pública (conocida) |
 > | 6 | **Suficiencia, completitud y primitivismo** | Cada componente debe tener lo suficiente y nada de más |
 > | 7 | **Separación de preocupaciones** | Cada área de interés (concern) vive en su propio lugar |
+
+> [!note] 💡 Qué es el Software (Pressman cap. 1)
 >
 > La p. 13 desarrolla el último con su figura — la separación de preocupaciones es la idea detrás de las capas y de MVC:
 
-![[Archivos/01b-p13.png]]
+> [!note] 🖼️ captura 01b-p13 — Qué es el Software (Pressman cap. 1)
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Diseno-Basico/dsw-01b-p13.png]]
 
 > [!success] 📋 Por Qué el Software NO es Como el Hardware
 >
@@ -80,7 +91,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > | **Deterioro** | Sigue una curva de fallas conocida ("curva de bañera": fallas tempranas por defectos de fábrica, vida útil estable, fallas por desgaste al final) | **Se deteriora por los cambios**: cada modificación mal planeada introduce nuevos defectos y aumenta la complejidad — a esto se le llama *entropía del software* |
 > | **Reparación** | Reemplazar la pieza dañada restaura el sistema | "Reparar" un defecto a veces introduce otro — el software no tiene piezas físicas intercambiables, solo lógica interconectada |
 >
-
 > [!tip] 🎯 Caso límite: la "curva de bañera" del software
 >
 > En hardware, la tasa de fallas grafica una curva en forma de "U" o bañera: alta al inicio (defectos de fabricación), baja y estable en medio (vida útil), alta al final (desgaste). El software **no sigue esta curva** — idealmente, su tasa de fallas debería mantenerse baja y constante si nadie lo toca. En la práctica, cada vez que se modifica (un parche, una nueva función) la tasa de fallas **sube temporalmente** antes de volver a estabilizarse, y con cada cambio mal diseñado, el nivel base de fallas tiende a subir un poco más que la vez anterior. Esa acumulación progresiva de deterioro por cambios sin control es exactamente lo que el diseño cuidadoso busca frenar.
@@ -118,7 +128,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > **Regla de oro:** si no puedes dibujarlo en UML, aún no lo entiendes lo suficiente para codificarlo.
 >
-
 > [!warning] ⚠️ Por Qué Diseñar Temprano Sale Más Barato
 >
 > Existe un principio ampliamente documentado en ingeniería de software (curva de costo de Boehm): **el costo de corregir un defecto crece exponencialmente** mientras más tarde se detecta en el ciclo de vida del proyecto.
@@ -132,7 +141,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > Un error de arquitectura detectado en un diagrama cuesta una conversación de 10 minutos; el mismo error detectado en producción puede costar semanas de reescritura.
 >
-
 > [!note] 📋 Las Cuatro Vistas del Diseño de Software
 >
 > El diseño de software no es una sola actividad — Pressman lo descompone en cuatro niveles, que se profundizarán en unidades posteriores de este curso:
@@ -154,7 +162,7 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > En la práctica, esto se traduce en tres capas que trabajan juntas:
 >
-> ![[../Diagramas/dsw-u1-02-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-03-graph.svg]]
 >
 > - **Proceso:** el marco de trabajo (ej. ágil, cascada) que organiza cuándo ocurre cada actividad.
 > - **Métodos:** las técnicas concretas — cómo modelar requerimientos, cómo diseñar, cómo probar.
@@ -166,7 +174,9 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 
 ## 🗺️ ¿Cuánto Diseño Necesito? — Diagrama de Decisión
 
-![[../Diagramas/dsw-u1-02-04-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ ¿Cuánto Diseño Necesito? — Diagrama de Decisión
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-04-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -192,7 +202,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > - 30 min de modelo (diagrama de clases borrador) antes de cada módulo nuevo.
 > - Si el diagrama tiene más de 7 clases sin agrupar, falta arquitectura (ver nota 02 y Unidad 2).
 >
-
 > [!danger] ❌ Error 2: Confundir "Documentar" con "Diseñar" (viola **diseño como herramienta previa**)
 >
 > **Síntomas:** se hace el diagrama UML *después* de terminar el código, solo para "cumplir con la entrega" — el diagrama no refleja decisiones reales, solo describe lo que ya se hizo por accidente.
@@ -201,7 +210,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 >
 > **Solución:** el diagrama debe preceder al código y ser una herramienta de pensamiento, no un formalismo posterior. Si cambia el código, el diagrama también debe actualizarse — ambos documentan la misma verdad.
 >
-
 > [!danger] ❌ Error 3: Sobre-diseñar un Proyecto Pequeño (viola **proporcionalidad del diseño**)
 >
 > **Síntomas:** se invierten días en diagramas UML exhaustivos y patrones de diseño complejos para un script de una sola clase que se usará una vez.
@@ -262,7 +270,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > > - **4.** (a) Software embebido. (b) Software de aplicación.
 > > - **5.** El software no sufre fricción ni fatiga de materiales; su calidad empeora cuando se le hacen modificaciones sin control, acumulando complejidad y defectos (entropía del software).
 >
-
 > [!example] 📋 Nivel 2 — Intermedio
 >
 > **6.** Explica con tus palabras la "curva de costo de Boehm" y por qué justifica diseñar antes de codificar.
@@ -283,7 +290,6 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 > > - **9.** Porque los cambios en una base de código compartida por múltiples variantes se propagan a todas ellas — sin una arquitectura clara que aísle lo específico de cada industria, un cambio para un cliente puede romper el producto para otro.
 > > - **10.** Según el diagrama: una sola persona lo usa y es desechable (no se mantiene por semanas) → código directo es aceptable, no requiere diseño formal.
 >
-
 > [!example] 📋 Nivel 3 — Avanzado
 >
 > **11.** Argumenta por qué la "crisis del software" de los años 60 llevó a tratar el desarrollo como ingeniería y no como oficio artesanal. ¿Qué problema concreto resolvía ese cambio de enfoque?
@@ -321,18 +327,19 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Defino software usando sus tres caras (instrucciones, datos, documentación).
 > - [ ] Explico al menos dos diferencias entre software y hardware.
 > - [ ] Ubico la etapa de diseño dentro del proceso general de desarrollo.
 >
-
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Explico la curva de costo de Boehm y su implicación práctica para diseñar temprano.
 > - [ ] Distingo las tres capas de la definición IEEE de ingeniería de software (proceso, métodos, herramientas).
 > - [ ] Clasifico un software dado según su tipo de aplicación y explico por qué eso afecta cuánto diseño necesita.
 >
-
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Diagnostico cuándo un proyecto real necesita más o menos diseño formal, usando el diagrama de decisión.
 > - [ ] Relaciono el deterioro del software con el concepto de deuda técnica.
 > - [ ] Argumento históricamente por qué el desarrollo de software se convirtió en una disciplina de ingeniería.
@@ -341,7 +348,9 @@ tags: [CCPG1042, unidad1, software, diseno, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u1-02-05-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-02-05-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >

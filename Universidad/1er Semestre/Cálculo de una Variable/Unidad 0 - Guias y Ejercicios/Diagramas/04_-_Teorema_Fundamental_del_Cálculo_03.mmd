@@ -1,0 +1,22 @@
+---
+title: "04_-_Teorema_Fundamental_del_Cálculo_03"
+---
+flowchart TD
+    A["Propiedades de F(x) = ∫[a→x] f(t) dt"]
+    B["1. F es continua en [a, b]"]
+    C["2. F es diferenciable:<br/>F′(x) = f(x)"]
+    D["3. Condición inicial:<br/>F(a) = 0"]
+    E["Corolario 1<br/>Valor medio para integrales:<br/>∫ ab f(x) dx = f(c)·(b − a)"]
+    G["Corolario 2<br/>Caracterización de antiderivadas:<br/>si F′ = G′ en un intervalo,<br/>entonces G(x) = F(x) + C"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> G
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style G fill:#e3f2fd,stroke:#2196f3,color:#0d2f52

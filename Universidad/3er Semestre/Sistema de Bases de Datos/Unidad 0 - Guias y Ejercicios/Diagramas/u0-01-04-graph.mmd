@@ -1,0 +1,19 @@
+flowchart LR
+    subgraph CON["Conectividad — cuántas entidades participan"]
+        direction TB
+        A11["<b>A</b> (1:1) <b>B</b>"]
+        T11["1:1 = uno a uno<br/>(pasaporte-persona)"]
+        A1M["<b>A</b> (1:M) <b>B</b>"]
+        T1M["1:M = uno a muchos<br/>(profesor-materias)"]
+        AMN["<b>A</b> (M:N) <b>B</b>"]
+        TMN["M:N = muchos a muchos<br/>(pide intermedia)"]
+
+        A11 --- T11
+        A1M --- T1M
+        AMN --- TMN
+    end
+
+    classDef ent fill:#ffffff,stroke:#000000,stroke-width:2px
+    classDef txt fill:#fff4e6,stroke:#e69138,stroke-width:1px
+    class A11,A1M,AMN ent
+    class T11,T1M,TMN txt

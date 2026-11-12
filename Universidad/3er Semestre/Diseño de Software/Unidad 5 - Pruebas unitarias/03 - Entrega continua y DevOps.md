@@ -28,7 +28,9 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > | **Reversión** | Horas | 1 click / 1 comando |
 > | **Nota** | Demo frágil | Entrega verificable |
 
-![[../Diagramas/dsw-u5-04-01-graph.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-01-graph.svg]]
 
 ---
 
@@ -59,7 +61,9 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 
 ## 🗺️ Diagrama de Decisión: ¿Qué Automatizo Primero?
 
-![[../Diagramas/dsw-u5-04-02-flow.svg]]
+> [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Automatizo Primero
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-02-flow.svg]]
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -191,16 +195,19 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Diferencio CI, entrega y despliegue con ejemplo.
 > - [ ] Describo las 4 etapas del pipeline mínimo.
 > - [ ] Explico por qué sin tests no hay CI.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Diseño un pipeline mínimo para mi proyecto.
 > - [ ] Diagnostico pipelines lentos con criterio.
 > - [ ] Decido entrega vs despliegue según contexto.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Argumento DevOps históricamente (muro dev/ops).
 > - [ ] Diseño releases con versionado y criterios.
 > - [ ] Evalúo prácticas de deploy con la regla "corre en limpio".
@@ -209,7 +216,9 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u5-04-03-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-03-mind.svg]]
 
 > [!success] 🔍 Comparación Final
 >
@@ -222,12 +231,24 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 
 ---
 
-## 🚀 Cierre Unidad 5
+## 🚀 Próximos Pasos
 
-> [!quote] 🌟 Lo de U5
+> [!quote] 🌟 Continuando
 >
-> - U5-01 pruebas JUnit + U5-02 Git + U5-03 DevOps = validar, colaborar y entregar.
-> - Repasa patrones (S8) y smells (S11) para lecciones del 19-oct y 4-nov.
+> **Has aprendido:**
+>
+> ✅ Pipeline CI/CD en 4 etapas: build, test, deploy y monitor
+> ✅ Qué automatizar primero (y qué no) con el diagrama de decisión
+> ✅ Errores de DevOps que se ven en proyectos de coursework
+>
+> **Próximo tema:**
+>
+> | Tema | Qué verás | Por qué importa |
+> |---|---|---|
+> | **Cierre de la materia** | Patrones (S8), smells (S11) y repaso de U1–U5 | Los tres parciales se evalúan con los apuntes de este vault |
+>
+> **Cierre de U5:** U5-01 pruebas JUnit + U5-02 Git + U5-03 DevOps = validar, colaborar y
+> entregar. Repasa patrones (S8) y smells (S11) para las lecciones del 19-oct y 4-nov.
 
 ---
 

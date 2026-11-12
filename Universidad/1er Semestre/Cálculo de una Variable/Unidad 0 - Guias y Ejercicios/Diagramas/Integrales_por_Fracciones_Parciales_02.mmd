@@ -1,0 +1,27 @@
+---
+title: "Integrales_por_Fracciones_Parciales_02"
+---
+flowchart TD
+    A["Antiderivadas estándar<br/>según el factor del denominador"]
+    B["Factor lineal simple:<br/>∫ dx/u = ln |u| + C"]
+    C["Potencias de un lineal:<br/>∫ u⁻ⁿ du = −1/((n−1)·uⁿ⁻¹) + C<br/>para n > 1"]
+    D["Cuadrático irreducible:<br/>∫ du/(u² + a²) = (1/a)·arctan(u/a) + C"]
+    E["Base teórica"]
+    E1["Factorización única<br/>sobre ℝ[x]"]
+    E2["Teorema fundamental<br/>del álgebra"]
+    E3["Descomposición única en<br/>fracciones parciales"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    E --> E1
+    E --> E2
+    E --> E3
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style C fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style D fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style E1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E2 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style E3 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52

@@ -1,0 +1,13 @@
+erDiagram
+    DISTRIBUIDOR {
+        decimal did PK
+        string nombre
+    }
+    FILM {
+        char codigo PK
+        string titulo
+        decimal did FK
+        date fecha_prod
+        string genero
+    }
+    DISTRIBUIDOR ||--o{ FILM : distribuye

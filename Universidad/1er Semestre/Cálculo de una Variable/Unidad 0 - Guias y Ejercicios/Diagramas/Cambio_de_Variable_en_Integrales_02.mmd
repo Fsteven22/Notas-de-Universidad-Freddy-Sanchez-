@@ -1,0 +1,30 @@
+---
+title: "Cambio_de_Variable_en_Integrales_02"
+---
+flowchart TD
+    A["Integrales definidas:<br/>∫[a→b] f(g(x))·g′(x) dx"]
+    O1["Opción 1: Cambiar límites"]
+    O1a["u1 = g(a)"]
+    O1b["u2 = g(b)"]
+    O1r["∫[u1→u2] f(u) du<br/>inmediata en u"]
+    O2["Opción 2: Resolver en u<br/>y regresar a x"]
+    O2r["∫ f(u) du → F(g(x))<br/>y evaluar F(g(b)) − F(g(a))"]
+    T["Elige la opción que<br/>dé menos álgebra"]
+    A --> O1
+    O1 --> O1a
+    O1 --> O1b
+    A --> O1r
+    O1b --> O1r
+    A --> O2
+    O2 --> O2r
+    O1r --> T
+    O2r --> T
+
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style O1 fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style O1a fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style O1b fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style O1r fill:#e8f5e8,stroke:#4caf50,color:#1b3a1b
+    style O2 fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style O2r fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style T fill:#ffebee,stroke:#e53935,color:#4a1010

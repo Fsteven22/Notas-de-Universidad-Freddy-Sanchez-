@@ -1,0 +1,12 @@
+erDiagram
+    CLIENTE {
+        idCliente int PK
+        nombre string
+    }
+    PREFERENCIA {
+        id_pref int PK
+        tipoPref string
+        maxRent int
+        idCliente int FK
+    }
+    CLIENTE ||--o| PREFERENCIA : establece

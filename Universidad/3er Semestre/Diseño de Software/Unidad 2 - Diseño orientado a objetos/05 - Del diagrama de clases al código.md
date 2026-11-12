@@ -22,9 +22,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > | **Dependencia** | un `import` o un parámetro |
 > | **Clase de asociación** | una clase propia con sus atributos |
 
-![[../Diagramas/dsw-u2-06-01-flow.svg]]
+> [!note] 🗺️ Diagrama — Introducción
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-06-01-flow.svg]]
 
 > [!tip] 💡 La regla del deck
+>
 > "Recordar cómo ir de un diagrama de clase a código fuente **y viceversa**". El viceversa importa: si el código ya está escrito, el diagrama se **genera** — y si no coincide, el diagrama estaba mal.
 
 ---
@@ -44,7 +47,9 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > | 6 | **Dependencia** | flecha punteada a clase | `import` o parámetro |
 > | 7 | **Clase de asociación** | clase colgando de la línea | clase propia que se instancia al ejecutar la relación |
 
-![[Archivos/04b-p5-tabla-relaciones.png]]
+> [!note] 🖼️ captura 04b-p5 — Las 7 relaciones del diagrama de clases
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p5-tabla-relaciones.png]]
 
 ---
 
@@ -57,9 +62,10 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 >
 > En el diagrama se dibuja como una línea con multiplicidad; en el código es un **atributo**.
 >
-> ![[Archivos/04b-p9-codigo-asociacion.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p9-codigo-asociacion.png]]
 
 > [!example] 🔧 Asociación en Java
+>
 > ```java
 > class Cliente {
 >     private String nombre;
@@ -88,6 +94,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!tip] Multiplicidad → tipo del atributo
+>
 > - `1` → una referencia: `private CuentaBancaria cuenta;`
 > - `0..*` o `*` → una colección: `private List<Factura> facturas = new ArrayList<>();`
 > - `0..1` → referencia **anulable** (`null` = "todavía no"): `private CuentaBancaria cuenta;`
@@ -103,9 +110,10 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 >
 > O sea: la relación **es un objeto**. Nace una clase propia con sus atributos, y la línea del diagrama se convierte en un atributo de esa clase.
 >
-> ![[Archivos/04b-p4-relaciones.png]]
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p4-relaciones.png]]
 
 > [!example] 🔧 Clase de asociación en Java
+>
 > ```java
 > class Transaccion {                      // la clase de asociación
 >     private Cliente cliente;
@@ -130,6 +138,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!note] 🔗 Patrón que ya usas
+>
 > Es exactamente el `Prestamo` entre `Copia` y `Socio` de la Biblioteca, o la `Inscripcion` entre `OrganizacionPolitica` y `Candidatura` del SIEL. La relación con datos **nace como clase**.
 
 ---
@@ -139,9 +148,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Qué es
 > Una asociación puede ser **unidireccional** (A conoce a B, B no conoce a A) o **bidireccional** (A conoce a B y B conoce a A). El deck dedica cuatro páginas (pp. 11-14) a las variantes, porque **es el punto donde los diagramas se contradicen con el código**.
 
-![[Archivos/04b-p11-bidireccionalidad.png]]
+> [!note] 🖼️ captura 04b-p11 — 3. Bidireccionalidad: quién conoce a quién
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p11-bidireccionalidad.png]]
 
 > [!example] 🔧 Las dos formas
+>
 > ```java
 > // Unidireccional: Cliente -> CuentaBancaria
 > class Cliente {
@@ -166,6 +178,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!danger] ❌ El error que el deck evita
+>
 > Poner la relación **solo en el diagrama** y no en el código, o al revés: el diagrama muestra `1 ── *` y el código guarda una sola referencia. **La multiplicidad es un contrato del código**: si dice `*`, el atributo es una colección.
 
 ---
@@ -177,6 +190,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > - **Recursividad:** una clase se relaciona **consigo misma** (un empleado es jefe de otro empleado). En código, el atributo apunta al mismo tipo.
 
 > [!example] 🔧 Ejemplo
+>
 > ```java
 > class Empleado {
 >     private String nombre;
@@ -193,9 +207,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Del deck (p. 18)
 > "En el diagrama de clases el nombre de la clase está **en cursiva**; esto se traduce como **clase abstracta**".
 
-![[Archivos/04b-p18-generalizacion.png]]
+> [!note] 🖼️ captura 04b-p18 — 5. Generalización: `extends` y clase abstracta
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p18-generalizacion.png]]
 
 > [!example] 🔧 Generalización en Java
+>
 > ```java
 > abstract class Figura {                 // <- el nombre en cursiva del diagrama
 >     protected String color;
@@ -212,6 +229,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!note] El mapeo completo
+>
 > | En el diagrama | En el código |
 > |---|---|
 > | nombre en **cursiva** | `abstract class` |
@@ -226,9 +244,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Del deck (p. 19)
 > "**Impresión** es una Interface. **CuentaBancaria** implementa esa interface y por lo tanto desarrolla los métodos `ImprimirRecibo()` y `EstadoCuenta()`".
 
-![[Archivos/04b-p20-realizacion.png]]
+> [!note] 🖼️ captura 04b-p20 — 6. Realización: `implements` y el contrato
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p20-realizacion.png]]
 
 > [!example] 🔧 Realización en Java
+>
 > ```java
 > interface Impresion {
 >     void ImprimirRecibo();
@@ -247,6 +268,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!tip] Por qué importa
+>
 > La interface **no tiene interior que mostrar** en el diagrama (por eso se dibuja como paleta o círculo): solo promete operaciones. Quien la usa depende del **contrato**, no de la clase concreta — es el mismo criterio que ya usabas en la nota de componentes e interfaces (U2-02).
 
 ---
@@ -256,9 +278,12 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Del deck (p. 21)
 > "Indica que los **cambios sobre la clase B pueden afectar a la clase A**. `ClassA` **usa los servicios** de `ClassB`. En Java se podría representar con un `import`."
 
-![[Archivos/04b-p22-dependencia.png]]
+> [!note] 🖼️ captura 04b-p22 — 7. Dependencia: el `import` disfrazado
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p22-dependencia.png]]
 
 > [!example] 🔧 Dependencia en Java
+>
 > ```java
 > import java.time.LocalDate;      // <- dependencia: ClassA usa los servicios de ClassB
 > // ---
@@ -268,6 +293,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!danger] ❌ Dependencia que se disfraza de asociación
+>
 > Si guardas el objeto de la clase B en un **atributo**, ya no es dependencia: es una **asociación**. La dependencia es de **uso temporal**: un parámetro, un `import`, una variable local que muere al salir del método.
 
 ---
@@ -277,11 +303,16 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > [!info] 📖 Del deck (pp. 23-24)
 > El deck las llama "ejemplificación" y las muestra con los mismos ejemplos del curso: la **composición** es el rombo negro, la **agregación** el rombo blanco.
 
-![[Archivos/04b-p23-composicion.png]]
+> [!note] 🖼️ captura 04b-p23 — 8. Composición y agregación: quién manda
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p23-composicion.png]]
 
-![[Archivos/04b-p24-agregacion.png]]
+> [!note] 🖼️ captura 04b-p24 — 8. Composición y agregación: quién manda
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Archivos/Implementacion/dsw-04b-p24-agregacion.png]]
 
 > [!example] 🔧 La diferencia en el código
+>
 > ```java
 > // COMPOSICIÓN: el todo crea el parte y lo destruye con él
 > class Pedido {
@@ -301,6 +332,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > ```
 
 > [!tip] La prueba del curso, en código
+>
 > - **Composición** → el constructor del todo **crea** a los partes (`new LineaPedido(...)`).
 > - **Agregación** → el constructor del todo **recibe** partes que ya existían (`fichar(j)`).
 >
@@ -322,6 +354,7 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 > | **destroy** | el objeto se descarta: `=null` o sale del ámbito |
 
 > [!example] 🔧 Una secuencia y su código
+>
 > ```java
 > // lifeline: Estudiante -> Sistema -> Pago
 > class Sistema {
@@ -333,6 +366,36 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 >     }
 > }
 > ```
+
+---
+
+## 🗺️ Diagrama de Decisión: ¿Qué Relación Pongo?
+
+> [!note] 🗺️ Diagrama — Diagrama de Decisión: ¿Qué Relación Pongo?
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-06-03-flow.svg]]
+>
+> **Se lee así:** el diagrama es una ** cascada de preguntas** que arranca en «Dos clases se
+> relacionan» y va bajando por seis decisiones hasta llegar al código Java. La primera pregunta
+> («¿El todo CREA y DESTRUYE al parte?») separa **composición** de todo lo demás; la segunda
+> («¿Solo comparten el dato? ¿el parte sobrevive?») separa **agregación**; la tercera busca un tipo
+> más específico (**generalización**); la cuarta un contrato (**realización**); la quinta un uso
+> puntual sin guardar estado (**dependencia**); y la última, si la relación lleva datos propios
+> (**clase de asociación**) o es simple (**asociación**). Cada respuesta lleva escrita la forma
+> exacta en Java: `extends`, `implements`, `import`, rombo negro, rombo blanco.
+>
+> **Por qué importa:** las 7 relaciones del deck no se distinguen por instincto sino por **tres
+> preguntas concretas**: ¿quién crea?, ¿sobrevive?, ¿guarda datos? Un diagrama bien hecho sale de
+> recorrer esta cascada en orden; si te saltas a «es composición» sin responder, el código y el
+> diagrama van a discrepar — y ese es el error 1 de la sección siguiente.
+>
+> **Ejemplo:** para modelar `Factura → Cliente`, la cascada dice: el cliente ya existe y lo
+> recibe la factura (**agregación**), no lo crea ni lo destruye (**no** composición), y la relación
+> no lleva atributos propios (**no** clase de asociación) → asociación o agregación simple, con
+> `private Cliente cliente;` en la factura.
+>
+> **Atajo cuando el tiempo aprieta:** la respuesta corta es la **prueba de supervivencia**: si el
+> objeto desaparece cuando muere el otro, es composición; si sobrevive, es agregación.
 
 ---
 
@@ -440,14 +503,17 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+>
 > - [ ] Traduzco asociación, generalización y realización a código.
 > - [ ] Elijo referencia o colección según la multiplicidad.
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Distingo composición de agregación en el constructor.
 > - [ ] Implemento una clase de asociación con sus atributos.
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Reconstruyo un diagrama de clases a partir del código.
 > - [ ] Traduzco una secuencia a firmas de métodos, marcando los opcionales.
 
@@ -455,7 +521,9 @@ tags: [CCPG1042, unidad2, uml, codigo, diseno-software]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dsw-u2-06-02-mind.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u2-06-02-mind.svg]]
 
 ---
 

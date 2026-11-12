@@ -1,50 +1,67 @@
 ---
 dg-publish: true
+tags: [MATG1045, unidad5, problemas-de-optimizacion, calculo, optimizacion, aplicaciones, maximos-minimos, modelado-matematico, problemas-aplicados, economia, geometria, ingenieria]
 ---
 
-# Problemas de Optimización 🎯
+# 🎯 Problemas de Optimización
 
-## Metodología General 🔧
+## 🔧 Metodología General
 
-> [!info] Concepto Fundamental Los **problemas de optimización** buscan encontrar el valor **máximo** o **mínimo** de una función objetivo sujeta a ciertas restricciones o condiciones.
+> [!info] 🎯 Concepto Fundamental
+>
+> Los **problemas de optimización** buscan encontrar el valor **máximo** o **mínimo** de una función objetivo sujeta a ciertas restricciones o condiciones.
 
 ### Proceso Sistemático de Resolución
 
-> [!tip] Metodología MODELO (Técnica de Memorización) **M**odelado - Identificar variables y función objetivo **O**rganizar - Establecer restricciones y dominio **D**erivar - Calcular la primera derivada **E**cuacionar - Resolver f'(x) = 0 **L**ocalizar - Encontrar puntos críticos **O**ptimizar - Verificar máximos/mínimos
+> [!tip] 🧭 Metodología MODELO (Técnica de Memorización)
+>
+> **M**odelado - Identificar variables y función objetivo **O**rganizar - Establecer restricciones y dominio **D**erivar - Calcular la primera derivada **E**cuacionar - Resolver f'(x) = 0 **L**ocalizar - Encontrar puntos críticos **O**ptimizar - Verificar máximos/mínimos
 
-![[Diagramas/01_-_Problemas_de_Optimización_01.svg]]
+> [!info] 🖼️ Proceso Sistemático de Resolución
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_01.svg]]
+>
+> **Se lee así:** Es un diagrama completamente lineal: un rectángulo inicial con el problema y una cadena de diez pasos encadenados, sin decisiones ni bifurcaciones. La secuencia va de leer y comprender hasta verificar y responder, pasando por identificar variables, construir la función objetivo, colocar las restricciones, expresar el problema en una sola variable, fijar el dominio, derivar, encontrar puntos críticos y evaluar los candidatos.
+>
+> **Por qué importa:** Fíjate en que el diagrama pone el modelado **antes** que el cálculo: si no defines variables y función objetivo, derivar no sirve de nada. La etapa de evaluar candidatos y verificar evita el error de responder con un punto crítico sin comprobar que sea el óptimo.
+>
+> **Ejemplo:** Para el rectángulo de área máxima con 200 m de cerca de la nota recorres la cadena completa: $A(x) = x(100 - x)$, dominio $0 < x < 100$, $A'(x) = 100 - 2x = 0$ y respuesta $50 \times 50$ m.
 
 ### Tipos de Puntos Candidatos
 
-> [!warning] Lugares Donde Buscar Extremos **1. Puntos Críticos Interiores:** f'(x) = 0 **2. Puntos de Frontera:** Extremos del dominio **3. Puntos de Discontinuidad:** f'(x) no existe **4. Puntos de Esquina:** En problemas con restricciones angulares
+> [!warning] 📍 Lugares Donde Buscar Extremos
+>
+> **1. Puntos Críticos Interiores:** f'(x) = 0 **2. Puntos de Frontera:** Extremos del dominio **3. Puntos de Discontinuidad:** f'(x) no existe **4. Puntos de Esquina:** En problemas con restricciones angulares
 
 ### Criterios de Verificación
 
 > [!tip] Métodos de Confirmación **Test de la Primera Derivada:**
-> 
+>
 > - f'(x) cambia de + a - → Máximo local
 > - f'(x) cambia de - a + → Mínimo local
-> 
+>
 > **Test de la Segunda Derivada:**
-> 
+>
 > - f''(x) < 0 → Máximo local
 > - f''(x) > 0 → Mínimo local
 > - f''(x) = 0 → Test inconcluso
-> 
+>
 > **Evaluación Directa:**
-> 
+>
 > - Comparar valores de f(x) en todos los candidatos
 
-## Problemas Geométricos 📐
+## 📐 Problemas Geométricos
 
-> [!info] Características Involucran **optimización de medidas geométricas** como área, volumen, perímetro, superficie, etc.
+> [!info] 📋 Características
+>
+> Involucran **optimización de medidas geométricas** como área, volumen, perímetro, superficie, etc.
 
 ### Problemas de Área
 
 > [!example] Problema Clásico: Rectángulo de Área Máxima **Enunciado:** Con 200 m de cerca, encontrar las dimensiones del rectángulo de área máxima.
-> 
+>
 > **Solución:**
-> 
+>
 > - Variables: largo = x, ancho = y
 > - Restricción: 2x + 2y = 200 → y = 100 - x
 > - Función objetivo: A(x) = x·y = x(100-x) = 100x - x²
@@ -55,14 +72,15 @@ dg-publish: true
 >
 
 > [!tip] Estrategias Comunes en Problemas de Área **Rectángulos:** A = base × altura **Triángulos:** A = ½ × base × altura  
+>
 > **Círculos:** A = πr² **Sectores:** A = ½r²θ **Figuras Compuestas:** Suma/resta de áreas simples
 
 ### Problemas de Volumen
 
 > [!example] Problema: Caja de Volumen Máximo **Enunciado:** De una lámina cuadrada de 12 cm de lado, cortar cuadrados en las esquinas para formar una caja. ¿Qué tamaño deben tener los cuadrados cortados?
-> 
+>
 > **Solución:**
-> 
+>
 > - Variable: lado del cuadrado cortado = x
 > - Dimensiones de la caja: (12-2x) × (12-2x) × x
 > - Función objetivo: V(x) = x(12-2x)² = x(144-48x+4x²) = 144x-48x²+4x³
@@ -73,27 +91,31 @@ dg-publish: true
 > - **Respuesta:** Cortar cuadrados de 2×2 cm
 >
 
-> [!warning] Fórmulas de Volumen Importantes **Prisma rectangular:** V = largo × ancho × alto **Cilindro:** V = πr²h **Cono:** V = ⅓πr²h **Esfera:** V = ⅘πr³ **Pirámide:** V = ⅓ × área_base × altura
+> [!warning] 📐 Fórmulas de Volumen Importantes
+>
+> **Prisma rectangular:** V = largo × ancho × alto **Cilindro:** V = πr²h **Cono:** V = ⅓πr²h **Esfera:** V = ⅘πr³ **Pirámide:** V = ⅓ × área_base × altura
 
 ### Problemas de Superficie
 
 > [!tip] Consideraciones Especiales
-> 
+>
 > - **Superficie total** vs **superficie lateral**
 > - **Costos por unidad de área** diferentes
 > - **Restricciones de material disponible**
 > - **Formas que minimizan pérdida de calor**
 
-## Problemas de Distancia 📏
+## 📏 Problemas de Distancia
 
-> [!info] Tipos Principales Optimización de **distancias mínimas** entre puntos, rectas, curvas, o **tiempos mínimos** de recorrido.
+> [!info] 🗂️ Tipos Principales
+>
+> Optimización de **distancias mínimas** entre puntos, rectas, curvas, o **tiempos mínimos** de recorrido.
 
 ### Distancia Punto-Curva
 
 > [!example] Problema: Punto más Cercano a una Parábola **Enunciado:** Encontrar el punto de y = x² más cercano al punto (0, 1).
-> 
+>
 > **Solución:**
-> 
+>
 > - Punto en la parábola: P(t, t²)
 > - Distancia: d(t) = √[(t-0)² + (t²-1)²] = √[t² + (t²-1)²]
 > - Para simplificar: d²(t) = t² + (t²-1)² = t² + t⁴ - 2t² + 1 = t⁴ - t² + 1
@@ -105,21 +127,31 @@ dg-publish: true
 ### Principio de Fermat (Tiempo Mínimo)
 
 > [!warning] Ley de Snell y Reflexión **Problema tipo:** Luz viaja de A a B reflejándose en una superficie.
-> 
+>
 > **Principio:** La luz toma el camino que minimiza el tiempo total. **Resultado:** Ángulo de incidencia = Ángulo de reflexión
 >
 
 > [!example] Problema de Refracción La luz viaja más lento en agua que en aire. Encontrar la trayectoria de tiempo mínimo.
-> 
+>
 > **Ley de Snell:** n₁ sen(θ₁) = n₂ sen(θ₂) donde n₁, n₂ son índices de refracción
 
 ### Problemas de Ruta Óptima
 
-![[Diagramas/01_-_Problemas_de_Optimización_02.svg]]
+> [!info] 🖼️ Problemas de Ruta Óptima
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_02.svg]]
+>
+> **Se lee así:** El diagrama arranca con un rombo que clasifica el tipo de medio o de trayectoria, y de él salen cuatro ramas. La rama de un solo medio termina en distancia euclídea, la de dos medios pasa por la ley de Snell hasta minimizar el tiempo total, la de obstáculos lleva al principio de reflexión y la de múltiples puntos exige combinatoria junto con optimización. Cada rama se cierra en un recuadro con la herramienta concreta que toca usar.
+>
+> **Por qué importa:** La clasificación evita que trates como geometría simple un problema de refracción o de rutas múltiples. Te muestra que la derivada cambia de rol según el contexto: distancia, tiempo o número de caminos.
+>
+> **Ejemplo:** El problema de refracción de la nota, con la luz más lenta en agua que en aire, cae en la rama de dos medios y se resuelve con $n_1 \operatorname{sen}(\theta_1) = n_2 \operatorname{sen}(\theta_2)$.
 
-## Aplicaciones Económicas 💰
+## 💰 Aplicaciones Económicas
 
-> [!info] Contexto Los problemas económicos buscan **maximizar beneficios**, **minimizar costos**, o **optimizar la utilidad** en diferentes escenarios comerciales.
+> [!info] 🌍 Contexto
+>
+> Los problemas económicos buscan **maximizar beneficios**, **minimizar costos**, o **optimizar la utilidad** en diferentes escenarios comerciales.
 
 ### Maximización de Beneficios
 
@@ -127,9 +159,9 @@ dg-publish: true
 >
 
 > [!example] Problema de Empresa **Enunciado:** Una empresa tiene costos C(x) = 100 + 2x + 0.01x² y puede vender x unidades a precio p = 10 - 0.02x. Encontrar la producción óptima.
-> 
+>
 > **Solución:**
-> 
+>
 > - Ingreso: I(x) = x(10 - 0.02x) = 10x - 0.02x²
 > - Beneficio: B(x) = 10x - 0.02x² - (100 + 2x + 0.01x²) = 8x - 0.03x² - 100
 > - B'(x) = 8 - 0.06x = 0 → x = 8/0.06 ≈ 133.33
@@ -143,19 +175,19 @@ dg-publish: true
 >
 
 > [!example] Modelo EOQ (Economic Order Quantity) **Variables:**
-> 
+>
 > - D = demanda anual
 > - K = costo por pedido
 > - h = costo de mantener inventario por unidad/año
-> 
+>
 > **Función de costo:** C(x) = (D/x)K + (x/2)h **Cantidad óptima:** x* = √(2DK/h)
 
 ### Problemas de Elasticidad
 
 > [!info] Elasticidad Precio-Demanda **Definición:** E = (dp/dx)/(p/x) = elasticidad de la demanda
-> 
+>
 > **Interpretación:**
-> 
+>
 > - |E| > 1: Demanda elástica
 > - |E| < 1: Demanda inelástica
 > - |E| = 1: Elasticidad unitaria (ingreso máximo)
@@ -163,12 +195,14 @@ dg-publish: true
 ### Análisis de Inversión
 
 > [!tip] Valor Presente Neto (VPN) **Fórmula:** VPN = Σ[CFₜ/(1+r)ᵗ] - Inversión Inicial
-> 
+>
 > **Optimización:** Encontrar la tasa de descuento o el momento óptimo de inversión
 
-## Estrategias de Modelado 🎨
+## 🎨 Estrategias de Modelado
 
-> [!info] Enfoque Sistemático El **modelado efectivo** es la clave para resolver problemas de optimización complejos.
+> [!info] 🧭 Enfoque Sistemático
+>
+> El **modelado efectivo** es la clave para resolver problemas de optimización complejos.
 
 ### Identificación de Variables
 
@@ -176,7 +210,7 @@ dg-publish: true
 >
 
 > [!warning] Errores Comunes en Variables
-> 
+>
 > - **Confundir** variables independientes con dependientes
 > - **No identificar** todas las restricciones
 > - **Usar más variables** de las necesarias
@@ -184,78 +218,97 @@ dg-publish: true
 
 ### Construcción de la Función Objetivo
 
-> [!example] Estrategias de Construcción **1. Directa:** La función se deriva inmediatamente del problema **2. Por partes:** Combinar diferentes componentes del sistema **3. Paramétrica:** Usar parámetros que luego se optimizan **4. Por analogía:** Usar modelos similares conocidos
+> [!example] 🧠 Estrategias de Construcción
+>
+> **1. Directa:** La función se deriva inmediatamente del problema **2. Por partes:** Combinar diferentes componentes del sistema **3. Paramétrica:** Usar parámetros que luego se optimizan **4. Por analogía:** Usar modelos similares conocidos
 
 ### Manejo de Restricciones
 
-> [!tip] Clasificación de Restricciones **Explícitas:** Claramente establecidas en el problema **Implícitas:** Se derivan del contexto físico/lógico **Activas:** Afectan la solución óptima **Inactivas:** No limitan el óptimo
+> [!tip] 🗂️ Clasificación de Restricciones
+>
+> **Explícitas:** Claramente establecidas en el problema **Implícitas:** Se derivan del contexto físico/lógico **Activas:** Afectan la solución óptima **Inactivas:** No limitan el óptimo
 
-![[Diagramas/01_-_Problemas_de_Optimización_03.svg]]
+> [!info] 🖼️ Manejo de Restricciones
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Problemas_de_Optimización_03.svg]]
+>
+> **Se lee así:** El centro del diagrama es un rombo que pregunta por el tipo de restricción, y de él salen tres ramas paralelas. La de igualdad lleva a la sustitución directa y termina en una función de una variable resuelta con optimización clásica; la de desigualdad pasa por los multiplicadores de Lagrange y un sistema de ecuaciones; la de sin restricciones va directo a la derivada ordinaria. Los tres caminos terminan en un extremo verificado.
+>
+> **Por qué importa:** Elegir bien la rama te ahorra trabajo: si la restricción es una igualdad, la sustitución es más rápida; si es una desigualdad o hay varias, Lagrange es más sistemático. El diagrama también te recuerda que un problema sin restricción se resuelve solo con $f'(x) = 0$.
+>
+> **Ejemplo:** El tanque cilíndrico de la nota, con volumen $1000$ m³ fijo, usa la rama de igualdad: despejas $h = 1000/(\pi r^2)$ y derivas $S(r) = 2\pi r^2 + 2000/r$.
 
 ### Técnicas de Simplificación
 
-> [!tip] Métodos de Reducción **Simetría:** Explotar simetrías para reducir variables **Escalamiento:** Usar unidades adecuadas para simplificar números **Normalización:** Convertir a forma estándar **Substitución:** Cambio de variables para simplificar
+> [!tip] 🛠️ Métodos de Reducción
+>
+> **Simetría:** Explotar simetrías para reducir variables **Escalamiento:** Usar unidades adecuadas para simplificar números **Normalización:** Convertir a forma estándar **Substitución:** Cambio de variables para simplificar
 
 ### Validación del Modelo
 
-> [!warning] Verificaciones Necesarias **1. Coherencia Dimensional:** Unidades correctas en toda la ecuación **2. Casos Límite:** Comportamiento en situaciones extremas **3. Sentido Físico:** ¿El resultado es lógicamente razonable? **4. Sensibilidad:** ¿Cómo cambia la solución con los parámetros?
+> [!warning] ✅ Verificaciones Necesarias
+>
+> **1. Coherencia Dimensional:** Unidades correctas en toda la ecuación **2. Casos Límite:** Comportamiento en situaciones extremas **3. Sentido Físico:** ¿El resultado es lógicamente razonable? **4. Sensibilidad:** ¿Cómo cambia la solución con los parámetros?
 
-## Técnicas de Estudio Efectivas 🧠
+## 🧠 Técnicas de Estudio Efectivas
 
 > [!tip] Mnemotecnia: "OPTIMIZA" **O**bjetivo - Define claramente qué optimizar **P**arámetros - Identifica variables y constantes  
+>
 > **T**ipo - Clasifica el problema (geométrico, económico, etc.) **I**dentifica - Encuentra restricciones **M**odela - Construye la función objetivo **I**gualación - Resuelve f'(x) = 0 **Z**ona - Determina el dominio válido **A**naliza - Verifica que sea máximo/mínimo
 >
 
-> [!tip] Método de Verificación "SPEC" **S**ignificado - ¿Tiene sentido la respuesta? **P**untos críticos - ¿Se encontraron todos? **E**xtremos - ¿Se evaluaron los bordes del dominio? **C**riterio - ¿Se aplicó el test correcto (1ª o 2ª derivada)?
+> [!tip] ✅ Método de Verificación "SPEC"
+>
+> **S**ignificado - ¿Tiene sentido la respuesta? **P**untos críticos - ¿Se encontraron todos? **E**xtremos - ¿Se evaluaron los bordes del dominio? **C**riterio - ¿Se aplicó el test correcto (1ª o 2ª derivada)?
 
 ### Plantilla de Resolución
 
 > [!example] Formato Estándar **1. DATOS:**
-> 
+>
 > - Variables: _____
 > - Restricciones: _____
 > - Objetivo: Maximizar/Minimizar _____
-> 
+>
 > **2. MODELADO:**
-> 
+>
 > - Función objetivo: f(x) = _____
 > - Dominio: x ∈ _____
-> 
+>
 > **3. CÁLCULO:**
-> 
+>
 > - f'(x) = _____
 > - Puntos críticos: _____
 > - Evaluación en candidatos: _____
-> 
+>
 > **4. VERIFICACIÓN:**
-> 
+>
 > - Criterio aplicado: _____
 > - Respuesta: _____
 
-## Ejemplos Integrados 📚
+## 📚 Ejemplos Integrados
 
 > [!example] Problema Complejo: Diseño de Envase **Enunciado:** Una empresa de bebidas quiere diseñar una lata cilíndrica que contenga 355 ml y minimice la cantidad de material usado.
-> 
+>
 > **Solución Completa:**
-> 
+>
 > **1. Variables:** r = radio, h = altura **2. Restricción:** πr²h = 355 → h = 355/(πr²) **3. Función objetivo:** Área = 2πr² + 2πrh (tapas + lateral) **4. Sustitución:** A(r) = 2πr² + 2πr[355/(πr²)] = 2πr² + 710/r **5. Dominio:** r > 0 **6. Derivada:** A'(r) = 4πr - 710/r² **7. Punto crítico:** 4πr - 710/r² = 0 → 4πr³ = 710 → r³ = 710/(4π) → r ≈ 3.84 cm **8. Segunda derivada:** A''(r) = 4π + 1420/r³ > 0 → Mínimo **9. Altura óptima:** h = 355/(π × 3.84²) ≈ 7.67 cm
-> 
+>
 > **Respuesta:** r ≈ 3.84 cm, h ≈ 7.67 cm
 >
 
 > [!example] Problema Económico: Precio Óptimo **Enunciado:** Un monopolista tiene función de demanda p = 100 - 2x y costos C(x) = 20x + 1000. ¿Cuál es el precio y cantidad que maximizan el beneficio?
-> 
+>
 > **Solución:**
-> 
+>
 > - Ingreso: I(x) = x(100 - 2x) = 100x - 2x²
 > - Beneficio: B(x) = 100x - 2x² - 20x - 1000 = 80x - 2x² - 1000
 > - B'(x) = 80 - 4x = 0 → x = 20
 > - Precio óptimo: p = 100 - 2(20) = 60
 > - Beneficio máximo: B(20) = 80(20) - 2(400) - 1000 = 600
-> 
+>
 > **Respuesta:** Vender 20 unidades a $60 cada una
 
-## Referencias 🔗
+## 🔗 Referencias
 
 > [!quote] [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md|01 - Análisis Completo de Funciones.md]] Herramientas fundamentales para el análisis de candidatos
 >
@@ -269,8 +322,10 @@ dg-publish: true
 > [!quote] Aplicaciones de Derivadas Contexto más amplio de usos prácticos del cálculo
 >
 
-> [!quote] Modelado Matemático Principios generales para convertir problemas reales en matemáticos
+> [!quote] 🧠 Modelado Matemático
+>
+> Principios generales para convertir problemas reales en matemáticos
 
 ---
 
-**Tags:** #calculo #optimizacion #aplicaciones #maximos-minimos #modelado-matematico #problemas-aplicados #economia #geometria #ingenieria #derivadas
+**Tags:** #MATG1045 #unidad5 #problemas-de-optimizacion #calculo #optimizacion #aplicaciones #maximos-minimos #modelado-matematico #problemas-aplicados #economia #geometria #ingenieria #derivadas

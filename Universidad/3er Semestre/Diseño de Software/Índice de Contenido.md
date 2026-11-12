@@ -5,21 +5,41 @@ tags: [unidad0, indice, recursos]
 
 # 📂 Índice de Contenido — Diseño de Software
 > [!info] ℹ️ Portal de material de la materia
-> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+>
+> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se **enlazan** (sin `!` inicial): el material de clase se captura como PNG y se cita por página, así el sitio publica la lámina y no el documento pesado.
 
 ## 📎 Syllabus y políticas
 
 > [!note] 📄 Syllabus oficial
-> ![[Unidad 0 - Guias y Ejercicios/Material de clase/SPA-SyllabusEUR_ACE-CCPG1042.pdf]]
-> Syllabus EUR-ACE de la asignatura (CCPG1042), subido desde el aula virtual.
+>
+> ![[Unidad 0 - Guias y Ejercicios/Archivos/Material/dsw-syllabus-p1.png]]
+>
+> **Se lee así:** la primera página del syllabus EUR-ACE de CCPG1042 abre con la **breve descripción**
+> del curso (paradigmas, patrones y técnicas de modelado para llegar a un producto mantenible y
+> extensible), el tipo de asignatura (**obligatoria**, 3.8 ECTS) y los **cuatro objetivos**: diseñar
+> aplicando principios OO, aplicar patrones en diagramas UML, reorganizar código con refactorización
+> y usar control de versiones y pruebas unitarias en un entorno colaborativo.
+>
+> **Por qué importa:** esos cuatro objetivos son literalmente las **cuatro unidades de la materia**
+> (U1–U2 diseño, U3 patrones, U4 refactorización, U5 pruebas). Si el syllabus es tu contrato con la
+> cátedra, la nota de cada unidad es tu evidencia de haberlo cumplido.
+>
+> **Ejemplo:** el objetivo 1 dice *"robusto, mantenible y escalable"* — un diseño que no pasa las
+> tres palabras no cumple el objetivo, por muy lindo que se vea el diagrama.
+>
+> El documento completo (2 páginas) está en
+>
+> [[Unidad 0 - Guias y Ejercicios/Material de clase/SPA-SyllabusEUR_ACE-CCPG1042.pdf|SPA-SyllabusEUR_ACE-CCPG1042.pdf]].
 
 > [!note] 💛 El syllabus completo está como nota
+>
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/dsw-bienv-map.svg]]
 > Ver [[Bienvenida y Syllabus Diseño de Software|Bienvenida y Syllabus]] — objetivos, evaluación y contenido.
 
 ## 📚 Guías y material de clase
 
 > [!tip] 🚪 Entradas por unidad/módulo
+>
 > Primera nota de cada bloque: el punto de partida.
 > - [[Unidad 1 - Introducción al diseño/01 - Naturaleza del software y el diseño|01 - Naturaleza del software y el diseño]] — *Unidad 1 - Introducción al diseño*
 > - [[Unidad 2 - Diseño orientado a objetos/01 - Diseño arquitectónico y estilos|01 - Diseño arquitectónico y estilos]] — *Unidad 2 - Diseño orientado a objetos*
@@ -28,15 +48,18 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 5 - Pruebas unitarias/01 - Pruebas unitarias con JUnit 5|01 - Pruebas unitarias con JUnit 5]] — *Unidad 5 - Pruebas unitarias*
 
 > [!note] 🔗 Enlaces del Aula Virtual
+>
 > [[Recursos Visuales|Recursos Visuales]] — enlaces de clases, rúbricas y archivos del aula virtual.
 
 > [!note] 🖼️ Recursos visuales
+>
 > [[Recursos Visuales|Recursos Visuales]] — capturas y diagramas del material de clase (casos de uso y modelo de clases de SIEL).
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — las capturas de pizarra de patrones creacionales, reunidas en un PDF con portada, índice y paginación
 
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
+>
 > Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/` con nombre con contexto:
 > - `CCPG1042-Guia-XX.pdf`
 > - `CCPG1042-Ejercicios-Tema.pdf`
@@ -47,12 +70,14 @@ tags: [unidad0, indice, recursos]
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos
+>
 > - [[Diseño de Software|🗺️ Mapa de contenido de la materia]]
 > - [[Bienvenida y Syllabus Diseño de Software|👋 Bienvenida y Syllabus]]
 
 ## 📋 Material de la unidad (enlaces directos)
 
 > [!info] 📁 Diapositivas
+>
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/01aPoliticasCurso-2026-2.pdf|01aPoliticasCurso-2026-2]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/01bDisenoSoftware.pdf|01bDisenoSoftware]]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/02bParadigmasDiseño.pdf|02bParadigmasDiseño]]
@@ -62,14 +87,17 @@ tags: [unidad0, indice, recursos]
 > - [[Unidad 0 - Guias y Ejercicios/Diapositivas/Diagrama de secuencia.pdf|Diagrama de secuencia]]
 
 > [!info] 📁 Material de clase
+>
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Patrones creacionales|Patrones creacionales — capturas de clase]] — PDF de las capturas de pizarra
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Casos de Uso/Caso SIEL - Casos de Uso|SIEL — Casos de Uso]]
 > - [[Unidad 0 - Guias y Ejercicios/Material de clase/Caso SIEL - Modelo de Clases/Caso SIEL - Modelo de Clases|SIEL — Modelo de Clases]]
 
 > [!info] 📁 Exámenes
+>
 > - [[Unidad 0 - Guias y Ejercicios/Exámenes/2023_2PAO_Examen_Parcial_CCPG1042.pdf|2023 2PAO Examen Parcial CCPG1042]]
 
 > [!info] 📁 Bibliografía (no publicable)
+>
 > Libros de texto con copyright: **ya no están en el repo** (se sacaron del índice para no publicar el archivo), pero siguen en tu vault local y no se suben al sitio (están en `Universidad/_no-publicar.txt`). Por eso van como texto plano y no como enlaces.
 > - `01 Software Engineering — Pressman & Maxim` — en tu vault local (fuera del repo)
 > - `02 Using UML — Stevens` — en tu vault local (fuera del repo)

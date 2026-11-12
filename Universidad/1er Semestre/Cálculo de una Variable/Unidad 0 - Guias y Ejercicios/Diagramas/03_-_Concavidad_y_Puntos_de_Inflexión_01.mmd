@@ -1,0 +1,20 @@
+graph LR
+    A[Dominio de la función] --> B[Encontrar f doble prima = 0]
+    B --> C[Puntos críticos de curvatura]
+    C --> D[Dividir en intervalos]
+    D --> E[Evaluar signo en cada intervalo]
+    E --> F[Clasificar concavidad]
+    
+    classDef startNode fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    classDef processNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef criticalNode fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef intervalNode fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    classDef evaluationNode fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
+    classDef resultNode fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class A startNode
+    class B processNode
+    class C criticalNode
+    class D intervalNode
+    class E evaluationNode
+    class F resultNode
