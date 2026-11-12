@@ -162,6 +162,39 @@ $env:PUPPETEER_EXECUTABLE_PATH="C:\Program Files\Google\Chrome\Application\chrom
   re-renderizando y comparando texto visible + viewBox. **Nunca** se sobrescribe un `.mmd` que ya
   está en git.
 
+**Sintaxis verificada en esta materia (183/183 diagramas con round-trip exacto):**
+- **Todo label va entre comillas dobles** (`A["texto"]`, `B{"decision"}`, `C("redondeado")`).
+  Sin comillas, una `{`, un `|`, un `;` o un `>` dentro del texto rompe el lexer.
+- La comilla doble del texto se escapa como `#quot;`.
+- En `mindmap`, los paréntesis del texto se escapan como entidades: `F#40;b#41; - F#40;a#41;`.
+  Con `F(b) - F(a)` a secas el diagrama **no parsea**.
+- En `mindmap`, para que el nodo conserve su forma hay que declararla:
+  `x1(F#40;…#41;)` (redondeada) o `x1[F#40;…#41;]` (cuadrada). Sin forma, el layout cambia.
+- El **título** que pinta mermaid (`<text class="flowchartTitleText">`) sale del frontmatter YAML:
+  ```
+  ---
+  title: "02 - Propiedades de la Integral: integral indefinida"
+  ---
+  ```
+  Sin ese bloque, el viewBox sale 54 px más corto.
+- Un diagrama con **subgrafos** necesita `flowchart LR` + `direction TB` dentro de cada `subgraph`
+  para reproducir el layout original (ver `Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.mmd`).
+
+**Herramientas del pipeline para esta materia:**
+- `Universidad/Herramientas/SVG-Pipeline/svg_a_mmd.py` — reconstruye el `.mmd` desde el SVG
+  (lee los ids de nodo `my-svg-flowchart-<ID>-<n>` y de arista `my-svg-L_<ORIG>_<DEST>_<n>`,
+  la forma de cada caja, sus estilos y el título). `--lote` reconstruye una carpeta; `--sincronizar`
+  alinea el frontmatter de título de los `.mmd` existentes. No cubre los diagramas con subgrafos.
+- `Universidad/Herramientas/SVG-Pipeline/verifica_mmd.py` — round-trip: re-renderiza cada `.mmd` y
+  compara **texto visible** (nodos, etiquetas de arista y título) y **viewBox** contra su SVG.
+  Es el que deja la materia en 0 hallazgos de R12.
+
+**Si el `.mmd` se borró del repo**, se recupera del historial (no se reescribe a mano):
+```
+git ls-tree -r --name-only <commit>^ -- "Universidad/1er Semestre/Cálculo de una Variable/Diagramas/"
+git show <commit>^:"Universidad/1er Semestre/Cálculo de una Variable/Diagramas/X.mmd"
+```
+
 ### Figuras (PNG/JPG)
 Viven en `Unidad 0 - Guias y Ejercicios/Figuras/` con **nombre temático**:
 `cal1-<tema>-<slug>.png`. Un archivo `Pasted image 2025….png` o con UUID **no** es publicable:
