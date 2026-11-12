@@ -2152,5 +2152,5 @@ en `82bd9398`.
 > necesitaron cambios: el sync solo publica `ASSET_DIRS = ["Figuras","Diagramas"]` y las notas
 > `.md`, así que las fuentes `.mmd` no llegan al sitio (y no deben).
 >
-> **PUSHEO EN CURSO** — rama `sesion/opencode-onedrive` → `master` → `origin/master`. Falta el
-> `PUSHEADO <hash>` al confirmar el push.
+> **PUSHEADO `e6654168`** — rama `sesion/opencode-onedrive` → `master` → `origin/master`.
+> `origin/master` = `master` = `e6654168`. `origin/sesion/opencode-onedrive` queda en `e6654168`.
