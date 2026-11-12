@@ -116,6 +116,12 @@ tags: [MATG1045, unidad7, volumenes-con-ejes-arbitrarios-y-casos-avanzados, mate
 > - Evitar funciones inversas complicadas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Volúmenes_con_Ejes_Arbitrarios_y_Casos_Avanzados_01.svg]]
+>
+> **Se lee así:** Es un árbol de decisión de dos niveles. El primer rombo pregunta por el eje de rotación y reparte en dos ramas, eje $x$ y eje $y$; de cada una cuelga un segundo rombo que pregunta *cómo vienen dadas las funciones*, y cada respuesta termina en una casilla que indica integrar en $dx$ o en $dy$, salvo cuando el eje es $y$ y las funciones están en $y$, donde toca integrar en $dx$ con capas.
+>
+> **Por qué importa:** La elección de variable y de método no es caprichosa: depende del eje y de cómo te dan la función. Con este árbol decides en segundos y evitas meterte en **inversas imposibles** o en un $dx$ con el radio mal definido.
+>
+> **Ejemplo:** La nota ilustra el caso con $x = y^2$ y $x = 4$ rotadas alrededor del eje $x$: conviene $dy$ y sale $V = \pi \int_{-2}^{2} (16 - y^4) dy = \frac{256\pi}{5}$.
 
 ### 🔄 Fórmulas Adaptadas para dy
 

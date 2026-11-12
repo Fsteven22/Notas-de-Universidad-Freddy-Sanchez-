@@ -22,6 +22,12 @@ tags: [MATG1045, unidad7, area-bajo-la-curva, matematicas/calculo/geometria, int
 > [!info] 🖼️ Interpretación Geométrica
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Área_bajo_la_Curva_01.svg]]
+>
+> **Se lee así:** El diagrama tiene dos cadenas de rectángulos. La primera avanza en línea recta: **función no negativa** en $[a,b]$, región bajo la curva, aproximación con rectángulos, suma de Riemann, límite cuando $n \to \infty$ y, al final, la **integral definida** como área exacta. La segunda cadena parte de la interpretación visual y se bifurca en dos cajas, la base $[a,b]$ y la altura variable $f(x)$, que desembocan juntas en el área.
+>
+> **Por qué importa:** Te muestra que la integral definida no es un truco algebraico sino el **límite de una suma de áreas**. Con esta idea justificas el paso de rectángulos a área exacta y evitas el error más común: reportar un resultado negativo como si fuera un área.
+>
+> **Ejemplo:** En el ejercicio de la nota, el área bajo $f(x) = x^2$ de $x = 0$ a $x = 2$ se obtiene como $\int_0^2 x^2 dx = \frac{8}{3}$, que coincide con la suma de Riemann al límite.
 
 ### 📋 Condiciones y Limitaciones
 
@@ -275,6 +281,12 @@ tags: [MATG1045, unidad7, area-bajo-la-curva, matematicas/calculo/geometria, int
 > [!info] 🖼️ Estrategia General
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Área_bajo_la_Curva_02.svg]]
+>
+> **Se lee así:** Una caja lleva a un rombo que decide *si la función es no negativa en todo el intervalo*. Del **sí** sale directo a la integral del área; del **no** se encadena una serie de rectángulos: buscar raíces, dividir en subintervalos, tomar el valor absoluto en cada parte y sumar. Aparte, otro rombo sobre simetría se abre en dos cajas: función par, que duplica la integral de la mitad, y función impar, que pide cuidado.
+>
+> **Por qué importa:** La mayoría de errores en área bajo la curva viene de ignorar el signo o de empezar la integral en el orden equivocado. Con este mapa de decisiones sabes de antemano qué revisar antes de integrar: **positividad, raíces y simetría**.
+>
+> **Ejemplo:** Para $f(x) = x^3 - x$ en $[-2, 2]$ la nota divide en $[-2,-1]$, $[-1,0]$, $[0,1]$ y $[1,2]$, y suma los cuatro valores absolutos hasta obtener un área de $5$.
 
 ### 🧠 Técnicas de Visualización
 

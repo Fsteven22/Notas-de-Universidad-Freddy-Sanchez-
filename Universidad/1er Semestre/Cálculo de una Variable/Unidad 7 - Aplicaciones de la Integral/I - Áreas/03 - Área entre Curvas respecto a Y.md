@@ -89,6 +89,12 @@ tags: [MATG1045, unidad7, area-entre-curvas-respecto-a-y, matematicas/calculo/in
 > **Paso 5**: Evaluar la integral
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_01.svg]]
+>
+> **Se lee así:** Es una escalera de rectángulos numerados que empieza en la **región horizontal** y baja paso a paso: expresses las curvas en términos de $y$, tomas el menor y el mayor valor de $y$ como límites, verificas que la función de la derecha quede a la derecha, configuras la integral con la diferencia y por fin la evalúas. Una caja final advierte que si el orden cambia dentro del intervalo, hay que separar en tramos o usar valor absoluto.
+>
+> **Por qué importa:** Integrar respecto a $y$ invierte la regla de arriba y abajo: ahora se resta **derecha menos izquierda**. Tener el orden claro evita áreas negativas y te deja entender por qué con $dy$ algunos ejercicios salen mucho más simples.
+>
+> **Ejemplo:** Para la región entre $x = y^2$ y $x = 4$ con $-2 \le y \le 2$, la nota usa $A = \int_{-2}^{2} (4 - y^2) dy = \frac{32}{3}$.
 
 ## 🧪 Ejemplos Fundamentales
 
@@ -229,6 +235,12 @@ tags: [MATG1045, unidad7, area-entre-curvas-respecto-a-y, matematicas/calculo/in
 > [!info] 💡 **Criterios de Decisión**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Área_entre_Curvas_respecto_a_Y_02.svg]]
+>
+> **Se lee así:** Una caja sobre el bucle abre una secuencia de rectángulos numerados: los cruces con el eje, el tramo donde vive el bucle, qué lado del bucle corresponde a cada subtramo, la integral partida en dos y el recordatorio de usar valor absoluto. Del mismo nodo sale además una caja aparte que compara **franjas horizontales** contra verticales para decidir entre $dy$ y $dx$.
+>
+> **Por qué importa:** En un bucle el orden de las curvas se invierte a mitad del recorrido, así que un solo integrando da un resultado sin sentido. El diagrama te entrena en detectar ese cambio de lado y **partir la integral en dos**, la trampa clásica de estos ejercicios.
+>
+> **Ejemplo:** Para el bucle de $x = y^3 - 3y$ la nota integra de $-\sqrt{3}$ a $0$ con $y^3 - 3y$ y de $0$ a $\sqrt{3}$ con su negativo, evitando un área negativa.
 
 ### 📊 Tabla Comparativa
 

@@ -31,6 +31,12 @@ tags: [MATG1045, unidad7, longitud-de-curva, matemáticas, geometría, longitud-
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Longitud_de_Curva_01.svg]]
 >
+> **Se lee así:** Una caja inicial se abre en **cuatro ramas paralelas**, una por cada forma de escribir una curva: paramétrica, cartesiana, polar y vectorial en 3D. De cada rama cuelga una caja con la integral de longitud correspondiente. Aparte, una caja de ejemplos se enlaza con un resumen de casos concretos, para tener de referencia longitudes ya conocidas.
+>
+> **Por qué importa:** La misma curva puede enunciarse de cuatro maneras y cada una da una **fórmula de longitud distinta**. Elegir bien la representación es lo que separa un cálculo directo de una integral imposible.
+>
+> **Ejemplo:** Para el arco superior del círculo $x^2 + y^2 = R^2$ la parametrización $x = R\cos t$, $y = R\sin t$ da $L = \int_0^{\pi} R\, dt = \pi R$.
+>
 
 > [!tip]+ Fórmulas para Diferentes Representaciones 🔬
 >
@@ -126,6 +132,12 @@ tags: [MATG1045, unidad7, longitud-de-curva, matemáticas, geometría, longitud-
 > ### Casos Especiales Integrables
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Longitud_de_Curva_02.svg]]
+>
+> **Se lee así:** Una sola caja en la parte superior se abre en **cinco ramas paralelas**, cada una una curva distinta con su longitud y su nivel de dificultad. Fíjate en que la primera es elemental y la segunda se resuelve con la circunferencia, mientras que las tres últimas exigen un cálculo más cuidadoso.
+>
+> **Por qué importa:** Conocer estas longitudes exactas te da un **banco de pruebas** para verificar cualquier integral de arco que resuelvas. Si tu resultado para un círculo o un semicírculo no coincide con $2\pi r$ o $\pi r$, algo salió mal.
+>
+> **Ejemplo:** La cardioide $r = a(1 + \cos\theta)$ de la nota tiene longitud $8a$, mientras que la elipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ exige una integral elíptica sin forma cerrada.
 >
 
 > [!success] Aplicaciones y Contextos Físicos 🌍
@@ -474,6 +486,12 @@ tags: [MATG1045, unidad7, longitud-de-curva, matemáticas, geometría, longitud-
 > [!info] 💡 **¿Cuándo usar cada método?**
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Longitud_de_Curva_03.svg]]
+>
+> **Se lee así:** Es un mapa de decisión con un rombo inicial de cuatro salidas, según cómo venga escrita la curva. La rama cartesiana y la rama en $y$ tienen un segundo rombo que pregunta *si la derivada es simple*, y según eso van a la fórmula directa o a la casilla de reconsiderar la representación. Las ramas polar y paramétrica no tienen decisión intermedia: van directo a su fórmula de longitud.
+>
+> **Por qué importa:** Elegir mal la representación te mete en **integrales elípticas** o en radicales imposibles. Con este mapa decides primero el sistema y luego la fórmula, en lugar de aplicar la de siempre y arrepentirte después.
+>
+> **Ejemplo:** Para el arco de cicloide $x = a(t - \sin t)$, $y = a(1 - \cos t)$ con $t$ de $0$ a $2\pi$, la parametrización da $L = 8a$, como indica la nota.
 
 ### 📋 Tabla de Decisión
 

@@ -38,6 +38,12 @@ tags: [MATG1045, unidad7, volumenes-de-solidos-de-revolucion, cálculo, integral
 > [!info] 🖼️ Método del Disco
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_01.svg]]
+>
+> **Se lee así:** Seis rectángulos en línea recta, sin ninguna decisión: la función entra en la rotación alrededor de un eje, esa rotación genera **discos**, el disco toma como radio el valor de la función, su área resulta $\pi[f(x)]^2$ y al integrar esa área aparece el volumen. Cada caja es el eslabón siguiente, así que la fórmula se construye paso a paso.
+>
+> **Por qué importa:** El método del disco se entiende como una suma de círculos, no como una fórmula que sale de la nada. Así justificas cada factor: el $\pi$ del círculo, el cuadrado del radio y el $dx$ como **grosor del disco**.
+>
+> **Ejemplo:** Al rotar $f(x) = \sqrt{x}$ alrededor del eje $x$ en $[0, 4]$ la nota aplica el método del disco y obtiene $V = \pi \int_0^4 (\sqrt{x})^2 dx = 8\pi$.
 
 ## 🍩 Método de las Arandelas
 
@@ -71,6 +77,12 @@ tags: [MATG1045, unidad7, volumenes-de-solidos-de-revolucion, cálculo, integral
 > [!info] 🖼️ Método de las Arandelas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_02.svg]]
+>
+> **Se lee así:** La región entre curvas se abre en dos ramas paralelas, una que identifica la **función exterior** y otra la interior. Cada rama produce su propio radio y ambas desembocan en la misma caja central, donde el anillo se modela como la diferencia entre el área del disco grande y la del hueco. Solo entonces se integra esa diferencia para dar el volumen.
+>
+> **Por qué importa:** La arandela es la generalización del disco cuando hay una cavidad, y su fórmula se obtiene **restando dos áreas**, no inventándola. Identificar bien qué función da el radio exterior evita el error de invertir los radios y perder el signo.
+>
+> **Ejemplo:** Rotando la región entre $f(x) = x + 2$ y $g(x) = x^2$ alrededor del eje $x$ en $[-1, 2]$, la nota usa $V = \pi \int_{-1}^{2} [(x+2)^2 - (x^2)^2] dx$.
 
 ## 🥤 Método de las Capas Cilíndricas
 
@@ -109,6 +121,12 @@ tags: [MATG1045, unidad7, volumenes-de-solidos-de-revolucion, cálculo, integral
 > [!info] 🖼️ Método de las Capas Cilíndricas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Volúmenes_de_Sólidos_de_Revolución_03.svg]]
+>
+> **Se lee así:** La función entra en la rotación alrededor del eje $y$, que produce **cilindros concéntricos**, y desde ahí el flujo se bifurca: una rama da el radio y otra la altura. Ambas vuelven a juntarse en la caja de la circunferencia, que multiplicada por la altura da el área lateral del cilindro, y esa área lateral es la que finalmente se integra para obtener el volumen.
+>
+> **Por qué importa:** Las capas cilíndricas son el método natural cuando se rota alrededor del eje $y$, y te ahorran despejar $x$ en función de $y$. Ver la circunferencia $2\pi x$ como la fuente del factor te evita **olvidar ese $2\pi$**, el error más común.
+>
+> **Ejemplo:** Rotando $f(x) = x^2$ alrededor del eje $y$ en $[0, 2]$, la nota arma $V = 2\pi \int_0^2 x \cdot x^2 dx$ y llega a $8\pi$.
 
 ## 📊 Comparación de Métodos
 

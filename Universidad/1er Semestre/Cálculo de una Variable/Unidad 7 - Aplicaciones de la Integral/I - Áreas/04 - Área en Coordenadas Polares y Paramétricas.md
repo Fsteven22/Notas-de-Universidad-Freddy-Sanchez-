@@ -39,6 +39,12 @@ tags: [MATG1045, unidad7, area-en-coordenadas-polares-y-parametricas, matematica
 > **Paso 5**: Aplicar la fórmula $A = \frac{1}{2}\int_\alpha^\beta [r_{\text{ext}}^2 - r_{\text{int}}^2] d\theta$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Área_en_Coordenadas_Polares_y_Paramétricas_01.svg]]
+>
+> **Se lee así:** Es una cadena de rectángulos numerados que arranca con dos curvas polares y registra los pasos: identificar las curvas, resolver la igualdad para hallar los cruces, fijar los límites angulares $\alpha$ y $\beta$, decidir cuál tiene mayor radio en cada tramo y recién entonces aplicar la fórmula con la **diferencia de los cuadrados**. Cierra con una advertencia: si el radio mayor cambia de curva dentro del intervalo, divide en subintervalos.
+>
+> **Por qué importa:** En polares el área se calcula **al cuadrado**, no linealmente, y ese $\frac{1}{2}$ es el error que más puntos cuesta. Revisar los cruces y el radio mayor te asegura que la resta de cuadrados sea positiva en todo el tramo.
+>
+> **Ejemplo:** Entre la cardioide $r = 2(1 + \cos\theta)$ y el círculo $r = 2$ la nota cruza en $\theta = \frac{\pi}{2}$ y $\frac{3\pi}{2}$, y separa por simetría para integrar solo ese arco.
 
 ### 🧪 Ejemplos en Coordenadas Polares
 

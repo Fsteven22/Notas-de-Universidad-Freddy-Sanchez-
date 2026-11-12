@@ -40,6 +40,12 @@ tags: [MATG1045, unidad7, area-entre-curvas, matematicas/calculo/aplicaciones, a
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Área_entre_Curvas_01.svg]]
 >
+> **Se lee así:** Es una cadena de rectángulos que empieza con dos funciones y termina en el **área total**. En medio, la decisión de qué función va arriba se resuelve con una caja que pregunta *si $f(x) \ge g(x)$*: el sí y el no abren dos caminos paralelos, cada uno con su integral, y ambos vuelven a unirse para sumar las áreas de todos los intervalos.
+>
+> **Por qué importa:** Te obliga a buscar los cruces antes de integrar y a decidir el **orden de la resta** en cada tramo. Así evitas el error más caro: escribir $\int (g - f)$ cuando arriba está $f$, o integrar sobre un tramo donde las curvas ya se intercambiaron.
+>
+> **Ejemplo:** En el ejemplo de la nota, entre $f(x) = 6 - x^2$ y $g(x) = x + 4$ se resuelven las intersecciones $x = -2$ y $x = 1$, y el área resulta $\frac{9}{2}$.
+>
 ## 🧪 Ejemplos Fundamentales
 
 ### 🔬 Ejemplo 1: Funciones sin Intersección
@@ -139,6 +145,12 @@ tags: [MATG1045, unidad7, area-entre-curvas, matematicas/calculo/aplicaciones, a
 >
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Área_entre_Curvas_02.svg]]
+>
+> **Se lee así:** Partes de la región entre curvas y llegas a un rombo que pregunta *cómo vienen dadas las funciones*. Se abre en tres ramas: si vienen como $y = f(x)$ tomas un candidato en $x$, si vienen como $x = g(y)$ tomas un candidato en $y$, y si están en ambas formas eliges la más simple. Cada candidato pasa a su propio rombo de cruces, que decide si conviene **cambiar a la otra variable**.
+>
+> **Por qué importa:** Elegir bien la variable es la diferencia entre una integral de tres líneas y una de dos páginas. Este diagrama te da un criterio objetivo para decidir entre $dx$ y $dy$ **sin adivinar**.
+>
+> **Ejemplo:** La nota compara la región entre $x = y^2$ y $x = 2y$ en $[0,2]$: con $dy$ sale $\int_0^2 (2y - y^2) dy = \frac{4}{3}$ sin despejar nada.
 >
 
 ### 🔄 Regiones Complejas
