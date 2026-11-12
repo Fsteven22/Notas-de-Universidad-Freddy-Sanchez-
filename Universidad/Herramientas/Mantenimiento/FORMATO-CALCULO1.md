@@ -135,6 +135,11 @@ Además:
 | `**Por qué importa:**` | ¿Qué **consecuencia** tiene? ¿Qué error evita? | 1–3 frases |
 | `**Ejemplo:**` | ¿Cómo se aplica a **un caso propio** de la ESPOL o de la carrera? | 1 frase con caso concreto |
 
+**Las tres etiquetas van siempre juntas** en esta materia: cada embed lleva su bloque completo
+(`**Se lee así:**` → `**Por qué importa:**` → `**Ejemplo:**`), separadas por líneas `>` de
+separador, como en `FORMATO-SBD.md`. El párrafo **no** repite la palabra de la etiqueta:
+la etiqueta es el encabezado, el párrafo es el contenido.
+
 ## Material que NO entra
 `_texto/` (extracciones de texto, solo local), documentos de `Herramientas/`, PDFs de clase.
 La `Unidad 0 - Guias y Ejercicios/` de esta materia **está vacía de material**: no hay PDF ni
@@ -216,6 +221,9 @@ py -3.12 "Universidad/Herramientas/Mantenimiento/qa_formato_calculo1.py" --solo 
 Severidades: **H** (error duro, rompe lectura o el sitio) y **W** (desviación de formato).
 `--estricto` también hace fallar los W. `--fix-rutas` repara automáticamente los embeds cuando la
 ruta canónica existe de verdad.
+
+**Estado actual (11/11/2026): 0 hallazgos.** Los **189 embeds** de la materia tienen el bloque
+completo de tres etiquetas, y los **183 SVG** tienen su `.mmd` al lado.
 
 ## Nota de ubicación
 Este contrato **no** vive en `1er Semestre/Cálculo de una Variable/`: es una herramienta, y el sitio
