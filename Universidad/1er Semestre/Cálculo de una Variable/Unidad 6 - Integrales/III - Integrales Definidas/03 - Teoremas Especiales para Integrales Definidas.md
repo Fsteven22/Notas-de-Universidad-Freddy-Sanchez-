@@ -39,7 +39,7 @@ tags: [MATG1045, unidad6, teoremas-especiales-para-integrales-definidas, matemat
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_01.svg]]
 >
-> **Se lee así:** Se lee así como una caja inicial sobre la simetría en el intervalo $[-a, a]$ que se divide en dos ramas. La rama superior es la función par, que conduce a la igualdad de la integral con el doble de la integral de $0$ a $a$ y a la lectura geométrica de áreas iguales que se duplican. La rama inferior es la función impar, que conduce a una integral igual a cero y a la idea de simetría respecto al origen, donde el área positiva y la negativa se cancelan.
+> **Se lee así:** como una caja inicial sobre la simetría en el intervalo $[-a, a]$ que se divide en dos ramas. La rama superior es la función par, que conduce a la igualdad de la integral con el doble de la integral de $0$ a $a$ y a la lectura geométrica de áreas iguales que se duplican. La rama inferior es la función impar, que conduce a una integral igual a cero y a la idea de simetría respecto al origen, donde el área positiva y la negativa se cancelan.
 >
 > **Por qué importa:** Fíjate en que el teorema te da el resultado sin calcular nada, y el recuadro geométrico te dice **por qué**. Esto te evita integrar media vuelta de la función a mano y te da la respuesta inmediata cuando el intervalo es simétrico.
 >
@@ -203,7 +203,7 @@ tags: [MATG1045, unidad6, teoremas-especiales-para-integrales-definidas, matemat
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Teoremas_Especiales_para_Integrales_Definidas_02.svg]]
 >
-> **Se lee así:** Se lee así como una caja de ejemplos pares e impares de la que salen tres ramas. Dos van a casos directos, el coseno par y periódico y el seno impar y periódico, cada uno con su integral ya resuelta en el mismo recuadro. La tercera baja a un caso compuesto: la función $x\sin(x^2)$, su verificación de imparidad y el cero resultante, para terminar en una caja de consejo sobre chequear la paridad antes de calcular.
+> **Se lee así:** como una caja de ejemplos pares e impares de la que salen tres ramas. Dos van a casos directos, el coseno par y periódico y el seno impar y periódico, cada uno con su integral ya resuelta en el mismo recuadro. La tercera baja a un caso compuesto: la función $x\sin(x^2)$, su verificación de imparidad y el cero resultante, para terminar en una caja de consejo sobre chequear la paridad antes de calcular.
 >
 > **Por qué importa:** Una función puede tener varias propiedades a la vez y cada una acorta el cálculo. Te evita integrar $\int_{-\pi}^{\pi}\cos(x)\,dx$ desde cero cuando la paridad ya te da el resultado, y te enseña a verificar $f(-x)$ en vez de suponerlo.
 >

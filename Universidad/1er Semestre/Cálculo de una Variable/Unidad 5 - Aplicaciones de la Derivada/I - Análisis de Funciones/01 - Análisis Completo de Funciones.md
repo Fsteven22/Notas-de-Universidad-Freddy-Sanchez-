@@ -261,7 +261,7 @@ tags: [MATG1045, unidad5, analisis-completo-de-funciones, calculo, analisis-func
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Análisis_Completo_de_Funciones_03.svg]]
 >
-> **Se lee así:** Se lee así: es una cadena vertical de rectángulos numerados, sin decisiones ni ramas, que va de la función $f(x)$ hasta una verificación final. Los pasos avanzan en un orden fijo: dominio y rango, intersecciones, simetría y periodicidad, primera y segunda derivada, asíntotas, comportamiento en el infinito, puntos adicionales, construcción de la gráfica y verificación.
+> **Se lee así:** así: es una cadena vertical de rectángulos numerados, sin decisiones ni ramas, que va de la función $f(x)$ hasta una verificación final. Los pasos avanzan en un orden fijo: dominio y rango, intersecciones, simetría y periodicidad, primera y segunda derivada, asíntotas, comportamiento en el infinito, puntos adicionales, construcción de la gráfica y verificación.
 >
 > **Por qué importa:** Este orden evita graficar antes de tener datos: si te saltas el dominio o las asíntotas, la curva sale mal. Además te da un **checklist** para no olvidar intervalos de crecimiento, concavidad ni puntos de inflexión al entregar un análisis completo.
 >

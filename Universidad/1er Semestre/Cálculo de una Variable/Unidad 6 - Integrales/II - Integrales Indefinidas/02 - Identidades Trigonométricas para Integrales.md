@@ -53,7 +53,7 @@ tags: [MATG1045, unidad6, identidades-trigonometricas-para-integrales, matemáti
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_02.svg]]
 >
-> **Se lee así:** Se lee así como una cadena de cinco rectángulos: la suma trigonométrica pasa por un paso de factorización, luego por un producto de factores, después por una sustitución del tipo $u = \ldots$ y termina en una integral estándar. Aparte aparecen dos pares de cajas, sin flechas hacia la cadena principal, que muestran una suma concreta y el producto factorizado equivalente.
+> **Se lee así:** como una cadena de cinco rectángulos: la suma trigonométrica pasa por un paso de factorización, luego por un producto de factores, después por una sustitución del tipo $u = \ldots$ y termina en una integral estándar. Aparte aparecen dos pares de cajas, sin flechas hacia la cadena principal, que muestran una suma concreta y el producto factorizado equivalente.
 >
 > **Por qué importa:** Fíjate en que aquí la identidad no es un truco suelto: es un paso que abre la puerta a la sustitución y a las integrales estándar. Te evita quedarte atascado cuando la suma de dos senos o dos cosenos no tiene antiderivada directa, y te da el orden exacto: factorizar, sustituir, integrar.
 >
@@ -105,7 +105,7 @@ tags: [MATG1045, unidad6, identidades-trigonometricas-para-integrales, matemáti
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Identidades_Trigonométricas_para_Integrales_03.svg]]
 >
-> **Se lee así:** Se lee así como un árbol de decisión. La integral trigonométrica entra a un rombo que pregunta por el tipo de expresión, y de ahí salen cuatro ramas: producto de funciones, potencias, suma de funciones o expresión racional. Cada rama lleva a su identidad, y de cada identidad sale un rectángulo con el paso final: integrar sumas simples, integrar términos lineales, factorizar y sustituir o resolver una integral racional en $t$.
+> **Se lee así:** como un árbol de decisión. La integral trigonométrica entra a un rombo que pregunta por el tipo de expresión, y de ahí salen cuatro ramas: producto de funciones, potencias, suma de funciones o expresión racional. Cada rama lleva a su identidad, y de cada identidad sale un rectángulo con el paso final: integrar sumas simples, integrar términos lineales, factorizar y sustituir o resolver una integral racional en $t$.
 >
 > **Por qué importa:** Este diagrama te quita el *adivinar y probar*: antes de escribir un solo paso tienes que clasificar la expresión y elegir la identidad. Te evita perder tiempo con trigonométricas que no tienen antiderivada elemental en la forma en que están escritas.
 >
