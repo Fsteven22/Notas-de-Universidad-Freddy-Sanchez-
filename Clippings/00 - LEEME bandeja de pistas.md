@@ -1886,3 +1886,57 @@ en `82bd9398`.
 **PUSHEADO `f8615636`** — `4419ebcc` (código) + `f8615636` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `f8615636`. `origin/sesion/opencode-site` queda en `f8615636`.
 
+---
+
+### `opencode-site` — mapa de la carrera en 3D, favoritos y avance — 11/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-site` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `35d2367a`):** el mapa de la carrera en 3D, los favoritos y el avance del
+>   lector. Todo en `site/**` (mi zona): nada del vault, nada de `Universidad/**`, nada de
+>   `site/scripts/**`.
+>
+> - **El mapa de la carrera en 3D (`/mapa/`).** La carrera vista como un recorrido: cada
+>   **semestre es una constelación** (un nodo grande en el centro con sus materias orbitando) y las
+>   constelaciones se encadenan de izquierda a derecha: preuniversitario → 1ro → 2do → 3ro.
+>   - **Three.js es el del propio sitio** (`/three.module.js`): sin CDN, sin dependencias nuevas.
+>   - Se arrastra para girar, con la rueda se acerca, al pasar el cursor por un nodo sale el dato
+>     (materia, semestre y número de notas) y al hacer clic se abre la materia.
+>   - **Sin JavaScript (o sin WebGL) se ve el mapa 2D** en columnas, con los mismos enlaces: el
+>     contenido no depende del 3D. Cada nodo es un **enlace real**, así que se puede llegar con el
+>     teclado y el lector de pantalla los lee como enlaces.
+>   - El mapa arranca también cuando se entra desde la portada con el router de Astro
+>     (`data-astro-rerun`): comprobado con el navegador, no solo en el HTML.
+>
+> - **Favoritos.** Una estrella en cada nota (tanto en la nota como en la ficha de la materia), un
+>   contador en el header y la página `/favoritos/` con la lista. **Se guardan en el
+>   `localStorage` del lector**: sin cuentas, sin servidor y sin que salga nada de su dispositivo.
+> - **Avance.** Botón "Marcar leída" en cada nota y página `/progreso/` con el avance por
+>   semestre y por materia (barras), sobre los totales reales del vault.
+> - Entradas nuevas: el pie tiene ya Mapa, Estudio, Favoritos y Avance, y la portada enlaza al mapa.
+>
+> - **Verificado con navegador real (CDP), no solo con el HTML:**
+>   - `check-mapa.mjs`: el mapa carga, la escena 3D arranca (`nx-mapa--3d`) y el 2D se oculta ·
+>     **18 etiquetas de materia y 4 de semestre, todas con enlace válido** · **evidencia de
+>     píxeles: 11.882 píxeles de color pintados dentro del canvas** (si la escena no dibujara,
+>     el mapa "se vería" pero estaría vacío) · al pasar el cursor sale el dato de la materia ·
+>     entrando desde la portada con el router el mapa también arranca · 0 errores de consola.
+>   - `check-favoritos.mjs`: la estrella de la nota guarda y queda marcada · **persiste al
+>     recargar** · el contador del header sube · la estrella de la ficha de la materia también
+>     (51 estrellas en matemáticas discretas) · `/favoritos/` lista las 2 guardadas con su
+>     materia y se puede quitar una · `/progreso/` cuenta 1 leída y pinta las barras de los 4
+>     semestres y 18 materias · 0 errores de consola.
+>
+> - **Verificado:** `npm run build` → **853 páginas, 0 errores** · **QA estático: 854 HTML, 0 sin
+>   h1** (los 2 que no lo tienen son `404.html` y el visor de PDF, que no son contenido), **0 con h1
+>   múltiple, 0 enlaces rotos** · anclas rotas 207 (las mismas preexistentes; se arreglan en la
+>   siguiente ronda) · `CI-PRIVADO: OK` (18 patrones, 0 fugas).
+>
+> - [!warning] Pendiente que necesita decisión del dueño
+>   - **207 anclas cruzadas rotas** (preexistentes, **no** de este lote): ya está estudiado y se
+>     sabe la causa exacta (los ids que genera `rehype-slug` llevan tildes y emoticonos, y los
+>     enlaces escritos a mano no). Se arreglan en la siguiente ronda, sin tocar el vault.
+>
+> - **Necesito:** nada de otras sesiones. `site/src/**` es mi zona; el commit solo lleva `site/**`.
+
+
