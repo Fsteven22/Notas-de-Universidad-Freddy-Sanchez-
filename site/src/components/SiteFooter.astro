@@ -1,0 +1,150 @@
+---
+/**
+ * SiteFooter.astro — el pie de página COMÚN del sitio.
+ *
+ * Antes solo la portada tenía pie (una línea con la marca y "built with
+ * Astro"). Semestre, materia y nota terminaban en seco: el lector que
+ * llegaba al final no tenía nada, y el botón de atajos — que estaba en
+ * el header — no aparecía en móvil (a ≤639 px se ocultaba).
+ *
+ * Ahora el pie se monta desde Base.astro, así que es el mismo en todas
+ * las páginas y trae:
+ *   · la marca y la línea de créditos
+ *   · el aviso de que el material es personal y de que algunos archivos
+ *     del vault no se publican
+ *   · la fecha de la última compilación (el sitio es estático: esta fecha
+ *     es la del último despliegue)
+ *   · el acceso a los atajos (botón "Atajos" con la tecla "?")
+ *   · el interruptor de movimiento (Auto / Siempre / Nunca)
+ */
+import MotionToggle from "./MotionToggle.astro";
+
+const actualizado = new Date().toLocaleDateString("es-EC", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<footer class="nx-footer">
+  <div class="nx-footer-inner">
+    <div class="nx-footer-brand">
+      <img src="/logo.svg" alt="" width="20" height="20" class="nx-footer-logo" />
+      <p class="nx-footer-name">NEONOTES</p>
+      <p class="nx-footer-sub">Steven Sánchez · Ingeniería Computacional · ESPOL</p>
+    </div>
+
+    <div class="nx-footer-tools">
+      {/* Atajos de navegación: mapa de la carrera, modo de estudio, favoritos
+          y avance. El pie es el sitio donde ya se busca "qué más hay". */}
+      <nav class="nx-footer-links" aria-label="Secciones del sitio">
+        <a href="/mapa/" class="nx-hbtn">Mapa</a>
+        <a href="/estudio/" class="nx-hbtn">Estudio</a>
+        <a href="/favoritos/" class="nx-hbtn">Favoritos</a>
+        <a href="/progreso/" class="nx-hbtn">Avance</a>
+      </nav>
+
+      {/* El botón de atajos vivía en el header. Ahora está al final de la
+          página: es donde se busca cuando ya terminaste de leer, y además
+          así se ve también en móvil (antes se ocultaba a ≤639 px). */}
+      <button
+        type="button"
+        class="nx-hbtn nx-hbtn--shortcuts"
+        data-nx-shortcuts-open
+        aria-label="Ver atajos de teclado"
+        title="Atajos de teclado (?)"
+      >
+        <svg
+          class="size-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <rect x="2" y="6" width="20" height="12" rx="2" />
+          <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
+        </svg>
+        <span class="nx-hbtn-text">Atajos</span>
+        <kbd class="nx-hbtn-kbd">?</kbd>
+      </button>
+
+      <MotionToggle />
+    </div>
+  </div>
+
+  <div class="nx-footer-meta">
+    <p>Material de estudio personal: algunos archivos del vault no se publican.</p>
+    <p>Última actualización: {actualizado}</p>
+  </div>
+</footer>
+
+<style is:global>
+  .nx-footer {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.012), transparent);
+  }
+  .nx-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0.75rem;
+  }
+  .nx-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nx-footer-logo {
+    opacity: 0.85;
+  }
+  .nx-footer-name {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: #e5e7eb;
+  }
+  .nx-footer-sub {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: #64748b;
+  }
+  .nx-footer-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .nx-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nx-footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1.25rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: #475569;
+  }
+  /* El botón de atajos vive en el pie: aquí ya no se oculta en móvil. */
+  .nx-footer .nx-hbtn--shortcuts {
+    display: inline-flex;
+  }
+</style>

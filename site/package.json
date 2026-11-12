@@ -15,6 +15,7 @@
   "dependencies": {
     "@astrojs/react": "^4.4.0",
     "@tailwindcss/vite": "^4.2.0",
+    "@vercel/analytics": "^2.0.1",
     "astro": "^5.16.0",
     "gsap": "^3.15.1",
     "jszip": "^3.10.2",

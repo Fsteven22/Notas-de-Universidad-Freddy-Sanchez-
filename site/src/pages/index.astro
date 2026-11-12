@@ -1,7 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
 import SiteHeader from "../components/SiteHeader.astro";
+import MotionToggle from "../components/MotionToggle.astro";
 import vault from "../data/vault.json";
+import { todasLasFlashcards } from "../lib/flashcards.mjs";
 
 function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short" }).toLowerCase();
@@ -14,14 +16,24 @@ const coloresSem = {
   "3er-semestre": { c: "var(--color-nexus-green)", t: "En curso" },
 };
 const sems = vault.semestres.filter((s) => s.id !== "raiz");
-const totalNotas = sems.reduce((n, s) => s.materias.reduce((m, x) => m + x.total, 0), 0);
-const totalMaterias = sems.reduce((n, s) => s.materias.length, 0);
+// OJO: el acumulador "n" tiene que usarse. Si el callback lo ignora,
+// reduce() se queda con el valor del ÚLTIMO semestre y la portada muestra
+// 181 notas / 5 materias / 113 PDFs en vez de 822 / 18 / 220.
+const totalNotas = sems.reduce(
+  (n, s) => n + s.materias.reduce((m, x) => m + x.total, 0),
+  0
+);
+const totalMaterias = sems.reduce((n, s) => n + s.materias.length, 0);
 const totalPdf = sems.reduce(
-  (n, s) => s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0)
-  , 0);
+  (n, s) => n + s.materias.reduce((m, x) => m + (x.pdfs?.length || 0), 0),
+  0
+);
 
 const accent = (id) => coloresSem[id]?.c ?? "var(--color-nexus-blue)";
 const subEstado = (id) => coloresSem[id]?.t ?? "";
+
+// Tarjetas de repaso que ya vienen escritas en las notas
+const nTarjetas = todasLasFlashcards().length;
 
 // Franja de materias en loop infinito (marquee)
 const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
@@ -38,23 +50,38 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
   <section class="mx-auto max-w-6xl px-6 pt-14 pb-16">
     <div class="nx-hero-in nx-hero-in--delay-1">
       <span class="nx-badge">INGENIERÍA COMPUTACIONAL · ESPOL</span>
-      <h1 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
-        Mis apuntes de carrera{" "}
-        <span class="nx-brand-text">en un solo lugar.</span>
+      <h1 class="mt-4 text-balance text-4xl font-black tracking-tight text-white sm:text-5xl">
+        ¿Tuviste el PDF y{" "}
+        <span class="nx-brand-text">no sabes por dónde empezar?</span>
       </h1>
       <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-[#e5e7eb]">
-        Apuntes, diagramas, talleres y material de estudio organizados por semestre.
-        Consulta lo que necesites desde donde estés y descarga lo que quieras compartir.
+        Neonotes hace ese trabajo por ti: apuntes de ESPOL resumidos y ordenados por semestre, con
+        gráficos, fórmulas y búsqueda por temas. ¿Te los quieres llevar? Cada materia se baja en un ZIP.
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
         <button class="nx-btn nx-btn-primary nx-search-open">
           🔍 Buscar en apuntes
         </button>
+        <a class="nx-btn nx-btn-ghost" href="/mapa/">Ver el mapa de la carrera</a>
         <a class="nx-btn nx-btn-ghost" href="#semestres">Explorar semestres</a>
       </div>
+      {/* Los distintivos: lo que el sitio ya hace, dicho en tres palabras. */}
+      <ul class="nx-hero-points">
+        <li>Búsqueda por temas</li>
+        <li>Gráficos y fórmulas</li>
+        <li>ZIP por materia</li>
+      </ul>
+      {
+        nTarjetas > 0 && (
+          <a href="/estudio/" class="nx-hero-study">
+            <span class="nx-hero-study__n">{nTarjetas}</span>
+            tarjetas de repaso esperando en tus notas → prepárate con ellas
+          </a>
+        )
+      }
       <div class="nx-bar mt-8 max-w-md"></div>
       <p class="mt-4 font-mono text-xs text-[var(--color-nexus-muted)] tracking-wider">
-        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} BLOQUES
+        {totalNotas} NOTAS · {totalMaterias} MATERIAS · {totalPdf} PDFS · {sems.length} SEMESTRES
       </p>
     </div>
   </section>
@@ -114,10 +141,13 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     </div>
   </section>
 
-  <!-- Franja de materias (loop infinito, pausa al hover) -->
-  <div class="nx-marquee" aria-hidden="true">
+  {/* Cinta de materias: se desplaza de derecha a izquierda sin cortes.
+      Se renderizan 4 grupos para que, incluso sin JS, la cinta cubra
+      el ancho de la pantalla; el script mide el grupo real y ajusta
+      el número de copias y la velocidad (constante) según el viewport. */}
+  <div class="nx-marquee" aria-hidden="true" data-nx-marquee>
     <div class="nx-marquee__track">
-      {[0, 1].map(() => (
+      {[0, 1, 2, 3].map(() => (
         <div class="nx-marquee__group">
           {marqueeItems.map((t) => <span class="nx-marquee__item">{t}</span>)}
         </div>
@@ -142,12 +172,18 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
 
   <!-- Atajos de teclado -->
   <section class="mx-auto max-w-6xl px-6 py-6">
-    <p class="nx-section-title mb-6">Atajos</p>
-    <div class="grid gap-4 sm:grid-cols-3">
+    <div class="mb-6 flex flex-wrap items-baseline justify-between gap-3">
+      <p class="nx-section-title">Atajos</p>
+      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">
+        Pulsa <kbd class="nx-kbd">?</kbd> en cualquier página para verlos todos
+      </p>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {[
         { k: ["g", "h"], t: "Inicio", d: "Vuelve a la portada desde cualquier nota." },
         { k: ["g", "i"], t: "Índice", d: "Salta al índice de semestres." },
         { k: ["g", "b"], t: "Buscar", d: "Abre el buscador por apartados." },
+        { k: ["/"], t: "Buscar rápido", d: "Abre el buscador con una sola tecla." },
       ].map((s, i) => (
         <div
           class="nx-card !py-5 border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)]"
@@ -155,12 +191,32 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
           style={`--nx-reveal-delay:${i * 70}ms`}
         >
           <div class="nx-kbd-seq mb-2">
-            {s.k.map((k) => <kbd class="nx-kbd">{k}</kbd>)}
+            {s.k.map((k, ki) => (
+              <>
+                {ki > 0 && <span class="nx-seq-then">luego</span>}
+                <kbd class="nx-kbd">{k}</kbd>
+              </>
+            ))}
           </div>
           <h3 class="text-sm font-bold text-white">{s.t}</h3>
           <p class="mt-1 font-mono text-[11px] text-[var(--color-nexus-muted)] leading-relaxed">{s.d}</p>
         </div>
       ))}
+    </div>
+    <p class="mt-4 font-mono text-[11px] text-[var(--color-nexus-muted)]">
+      Las de dos teclas se escriben seguidas: <kbd class="nx-kbd">g</kbd> y luego la otra. Al pulsar
+      <kbd class="nx-kbd">g</kbd> el sitio te avisa qué teclas faltan. También sirve
+      <kbd class="nx-kbd">ctrl</kbd> + <kbd class="nx-kbd">k</kbd> para buscar.
+    </p>
+    <div class="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] px-4 py-3">
+      <p class="font-mono text-[11px] leading-relaxed text-[var(--color-nexus-muted)]">
+        Si las animaciones no se ven, el sistema puede estar pidiendo "reducir movimiento".
+        <a href="?motion=1" class="text-[var(--color-nexus-cyan)] underline underline-offset-2 hover:text-white">
+          Forzar animaciones
+        </a>
+        .
+      </p>
+      <MotionToggle />
     </div>
   </section>
 
@@ -318,18 +374,21 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
     </div>
   </section>
 
-  <footer class="border-t border-[rgba(255,255,255,0.06)]">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <p class="font-mono text-[11px] tracking-wider text-[var(--color-nexus-muted)]">⚡ NEONOTES · STEVEN SÁNCHEZ</p>
-      <p class="font-mono text-[11px] text-[var(--color-nexus-muted)]">built with Astro</p>
-    </div>
-  </footer>
+  {/* El pie de página (marca, avisos, fecha, atajos y movimiento) lo
+      monta Base.astro: ahora todas las páginas terminan igual. */}
 
   <script is:inline type="module">
     import * as THREE from "/three.module.js";
 
     (function(){
-      var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      // Preferencia de movimiento (ver Base.astro): "auto" sigue al sistema,
+      // "on"/"off" la fuerzan el usuario (?motion=1|0) o el panel de atajos.
+      // Se consulta en caliente y no como constante capturada al cargar.
+      function nxReduced(){
+        var m = window.__nxMotion;
+        if (m && typeof m.effective === "function") return !m.effective();
+        return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      }
       // Cleanup de la escena actual (se registra una sola vez)
       var stopScene = null;
 
@@ -338,7 +397,7 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         var container = document.getElementById("three-bg");
         if (!container || container.dataset.nxStarted) return;
         container.dataset.nxStarted = "1";
-        if (REDUCED) { container.style.display = "none"; return; }
+        if (nxReduced()) { container.style.display = "none"; return; }
         var start = function(){
           // Si se navegó antes de que entrara el idle, el contenedor ya no
           // está en el árbol: no arrancar la escena (evita un bucle huérfano).
@@ -374,7 +433,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-        var particleCount = 1500;
+        // Partículas: menos y más pequeñas que antes. El fondo tiene que
+        // acompañar, no ser protagonista: 1.500 puntos grandes se leían
+        // como "ruido" por encima del contenido.
+        var particleCount = 800;
         var positions = new Float32Array(particleCount * 3);
         var originals = new Float32Array(particleCount * 3);
 
@@ -392,10 +454,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
 
         var material = new THREE.PointsMaterial({
           color: 0x00ff88,
-          size: 0.15,
+          size: 0.11,
           sizeAttenuation: true,
           transparent: true,
-          opacity: 0.6,
+          opacity: 0.42,
           blending: THREE.AdditiveBlending,
           depthWrite: false,
         });
@@ -404,8 +466,8 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         scene.add(particles);
 
         // ── Líneas de constelación: conecta nodos cercanos con una red ──
-        var nodeStep = 14;                 // cada 14ava partícula es "nodo"
-        var maxLines = 420;
+        var nodeStep = 20;                 // cada 20ava partícula es "nodo"
+        var maxLines = 260;
         var linkDist2 = 15 * 15;           // distancia² máxima de conexión
         var linePositions = new Float32Array(maxLines * 6);
         var lineGeo = new THREE.BufferGeometry();
@@ -413,7 +475,7 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
         var lineMat = new THREE.LineBasicMaterial({
           color: 0x4da6ff,
           transparent: true,
-          opacity: 0.13,
+          opacity: 0.09,
           blending: THREE.AdditiveBlending,
           depthWrite: false,
         });
@@ -448,8 +510,10 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
           timer.update();
           var elapsed = timer.getElapsed();
 
-          particles.rotation.x = elapsed * 0.05;
-          particles.rotation.y = elapsed * 0.03;
+          // Giro más lento: el campo de puntos acompaña el scroll en vez
+          // de girar delante.
+          particles.rotation.x = elapsed * 0.035;
+          particles.rotation.y = elapsed * 0.02;
 
           if (frame % 6 === 0) {
             raycaster.setFromCamera(mouse, camera);
@@ -531,10 +595,28 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
       function heroSplit(){
         var heroTitle = document.querySelector(".nx-hero-in h1");
         if (!heroTitle || heroTitle.dataset.nxSplit) return;
-        if (REDUCED || !window.SplitText || typeof window.gsap === "undefined") return;
+        if (nxReduced() || !window.SplitText || typeof window.gsap === "undefined") return;
         heroTitle.dataset.nxSplit = "1";
         try {
-          var split = new window.SplitText(heroTitle, { type: "chars,words", charsClass: "nx-char" });
+          // `ignore`: el <span> del degradado NO se parte. Si se partiese,
+          // cada letra sería un div inline-block y el `background-clip: text`
+          // dejaría de pintarse detrás: con el color transparente, la frase
+          // "no sabes por dónde empezar?" desaparecía al activar animaciones.
+          var split = new window.SplitText(heroTitle, {
+            type: "chars,words",
+            charsClass: "nx-char",
+            ignore: ".nx-brand-text"
+          });
+          // Comprobación de integridad: si el titular se quedó sin texto
+          // (por ejemplo, si una versión futura de SplitText parte el span
+          // pese al `ignore`), se deshace la partición y el titular se queda
+          // como texto normal, siempre visible.
+          var marca = heroTitle.querySelector(".nx-brand-text");
+          var antes = heroTitle.textContent || "";
+          if (!antes.trim() || (marca && !marca.textContent.trim())) {
+            split.revert();
+            return;
+          }
           gsap.from(split.chars, {
             yPercent: 110, opacity: 0, duration: 0.7,
             stagger: 0.022, ease: "power4.out", delay: 0.35
@@ -619,6 +701,75 @@ const marqueeItems = sems.flatMap((s) => s.materias.map((m) => m.title));
       }
       document.addEventListener("astro:page-load", nxIndexUI);
       nxIndexUI();
+    })();
+  </script>
+
+  <script is:inline>
+    // ── Cinta de materias ──────────────────────────────────────
+    // El grupo de materias se repite las veces necesarias para que la
+    // cinta nunca se quede corta en pantallas anchas: con 18 materias
+    // el grupo es más estrecho que un monitor grande y, al desplazarse,
+    // aparecía un hueco vacío al final del recorrido.
+    //
+    // Aquí se mide el ancho real del grupo (depende de la fuente y del
+    // ancho de la ventana) y se calculan:
+    //   · cuántas copias hacen falta para cubrir el viewport + 1 grupo
+    //   · el desplazamiento por ciclo (un grupo entero → bucle perfecto)
+    //   · la duración, para que la velocidad sea siempre la misma
+    //     (unos 42 px/s) y no depends del número de copias.
+    (function(){
+      var SPEED = 32; // px/s
+
+      function nxMarquee(){
+        var root = document.querySelector("[data-nx-marquee]");
+        if (!root) return;
+        var track = root.querySelector(".nx-marquee__track");
+        if (!track) return;
+        var groups = track.querySelectorAll(".nx-marquee__group");
+        if (!groups.length) return;
+
+        var groupWidth = groups[0].getBoundingClientRect().width;
+        if (!groupWidth) return; // aún sin medir (fuente cargando)
+
+        // Copias necesarias: el viewport entero más un grupo de sobra,
+        // para que al terminar el ciclo siempre haya contenido a la vista.
+        var need = Math.ceil(window.innerWidth / groupWidth) + 2;
+
+        // Reconstruye la cinta con el número de copias justo.
+        if (groups.length !== need) {
+          var template = groups[0].innerHTML;
+          var html = "";
+          for (var i = 0; i < need; i++){
+            html += '<div class="nx-marquee__group">' + template + "</div>";
+          }
+          track.innerHTML = html;
+          // Vuelve a medir: el ancho del grupo no cambia, pero el
+          // desplazamiento sí depende de cuántas copias hay.
+        }
+
+        // El ciclo desplaza exactamente un grupo: al ser todos iguales,
+        // el empalme es invisible.
+        root.style.setProperty("--nx-marquee-shift", groupWidth + "px");
+        root.style.setProperty("--nx-marquee-duration", (groupWidth / SPEED).toFixed(1) + "s");
+      }
+
+      // Se vuelve a medir al cambiar el tamaño de la ventana.
+      var t = null;
+      function onResize(){
+        clearTimeout(t);
+        t = setTimeout(nxMarquee, 150);
+      }
+
+      if (!window.__nxMarqueeBound) {
+        window.__nxMarqueeBound = 1;
+        window.addEventListener("resize", onResize);
+        document.addEventListener("astro:page-load", nxMarquee);
+      }
+      nxMarquee();
+      // La fuente puede tardar: se vuelve a medir cuando esté lista.
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(nxMarquee).catch(function(){});
+      }
     })();
   </script>
 
