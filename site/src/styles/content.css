@@ -566,3 +566,15 @@ details.nx-fc p {
   }
 }
 
+
+/* ── Alias de ancla ─────────────────────────────────────────────────
+   El plugin rehype-anclas deja el id limpio en el encabezado y guarda el
+   id antiguo (con tildes o emoticonos) como un alias invisible dentro de
+   él: los enlaces de siempre siguen llegando al mismo sitio. */
+.nx-anchor-alias {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  scroll-margin-top: 7rem;
+}
