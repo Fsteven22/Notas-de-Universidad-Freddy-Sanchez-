@@ -28,12 +28,15 @@ tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraci
 > [!note] 🖼️ Captura — Introducción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/file_00000000f17c71fba96939a05e098492.png]]
+> **Se lee así:** la analogía del dominó de la introducción en imagen: basta que caiga la primera ficha (paso base) y que cada ficha tumbe a la siguiente (paso inductivo) para que caigan todas — sin tocarlas una por una, que sería imposible.
 
 ---
 
 ## 📐 Principio de Inducción Matemática (Simple)
 
 > [!note] 📖 Principio de Inducción Matemática
+> 
+> **Se lee así:** las dos hipótesis son la base $S(1)$ y el paso inductivo $S(n) \Rightarrow S(n+1)$; la trampa típica es demostrar $S(n+1)$ sin usar la hipótesis $S(n)$ (eso es prueba directa, no inducción) o fijar una base distinta del $n_0$ del enunciado.
 > 
 > Suponga que se tiene una función proposicional $S(n)$, cuyo dominio de discurso es $\mathbb{N}$. Suponga que:
 > 
@@ -118,6 +121,8 @@ tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraci
 
 > [!note] 📖 Inducción fuerte en 5 líneas
 >
+> **Se lee así:** la diferencia con la inducción simple está en el cuantificador de la hipótesis: "todos los $k$ con $n_0 \leq k < n$" en vez de solo $n-1$; se usa solo cuando $S(n)$ necesita varios predecesores, como las recursiones $C_n = C_{\lfloor n/2 \rfloor} + n$.
+> 
 > Hipótesis reforzada: supones $S(k)$ verdadera para **todos** los $k$ con $n_0 \leq k < n$ (no solo $n-1$). Úsala cuando $S(n)$ necesita **varios predecesores** (recursiones como $C_n = C_{\lfloor n/2 \rfloor} + n$). Ambas formas son **lógicamente equivalentes**. Detalle completo y ejemplos en el historial git de esta nota.
 
 ---
@@ -328,6 +333,7 @@ tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraci
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-03-flow.svg]]
+> **Se lee así:** la cadena de la inducción simple: "S(n) para n ≥ n₀" → "Base: verifica S(n₀)" → "Hipótesis: supone S(n)" → "Demuestra S(n+1) usando la hipótesis" → "✅ S(n) ∀n ≥ n₀"; una arista punteada "¿Fuerte?" recuerda que solo se recurre a la inducción fuerte si S(n) pide varios predecesores.
 
 ---
 

@@ -173,6 +173,7 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 > ### Diagramas de Venn para 2 conjuntos
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-02-graph.svg]]
+> **Se lee así:** el lienzo base para sombrear operaciones: el rectángulo es el universo $U$ y los dos círculos superpuestos son $A$ y $B$; la tabla de abajo dice qué región pintar para $A \cup B$ (todo), $A \cap B$ (la lenteja central), $A - B$ (la luna de A) y $A^c$ (fuera de A dentro de U).
 >
 > | Operación | Región sombreada |
 > |---|---|
@@ -266,6 +267,7 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-12-03-graph.svg]]
+> **Se lee así:** el árbol de las cinco operaciones — Unión, Intersección, Diferencia, Complemento y Producto Cartesiano — cada una con su definición (p. ej. $A - B$: $x \in A$ y $x \notin B$) y su fórmula de cardinal ($|A|+|B|-|A\cap B|$ para la unión, $|A|\cdot|B|$ para el producto).
 
 ---
 

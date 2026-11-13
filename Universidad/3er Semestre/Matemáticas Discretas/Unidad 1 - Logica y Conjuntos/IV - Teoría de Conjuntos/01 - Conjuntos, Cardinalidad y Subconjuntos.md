@@ -29,6 +29,8 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 
 > [!note] 📖 Definición — Conjunto y notación
 >
+> **Se lee así:** las llaves $\{ \}$ son el conjunto: adentro van los elementos separados por comas (lista/extensión) o una propiedad tras los dos puntos (comprensión); el orden no importa, y $\in$ vs $\notin$ marcan pertenencia — la trampa clásica es confundir $\in$ con $\subseteq$.
+> 
 > Llamaremos **Conjunto** a cualquier colección de objetos. A estos objetos los llamaremos **elementos** o **miembros** del conjunto.
 >
 > Si un conjunto es finito o no muy grande, es posible describirlo por la **lista de sus elementos** entre llaves:
@@ -218,6 +220,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-11-02-graph.svg]]
+> **Se lee así:** "Conjuntos" se abre en cuatro ramas — Definición (lista o propiedad), Cardinalidad (número de elementos, con ∅ de cardinal 0), Subconjuntos ($A \subseteq B$, $A \subset B$ propio, y $\emptyset \subseteq X$ siempre) y Conjunto Potencia $P(A)$ (todos los subconjuntos, con cardinal $2^n$).
 
 ---
 

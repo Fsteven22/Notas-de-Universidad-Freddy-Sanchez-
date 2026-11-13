@@ -24,6 +24,8 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 
 > [!note] 📖 Definición 5 — Términos esenciales
 > 
+> **Se lee así:** la tabla es una jerarquía de confianza: el **axioma** se asume sin probar, el **teorema** ya se probó, el **lema** existe solo como andamio de otro teorema y el **corolario** cae solo; una **demostración** es el argumento, no el enunciado.
+> 
 > | Término | Definición |
 > |---|---|
 > | **Axioma** | Resultado que se supone **verdadero sin necesidad de demostrarlo**. Es el punto de partida de toda la teoría. |
@@ -65,6 +67,7 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 
 > [!note] 📖 Definición 6 — Números Pares e Impares
 > 
+> **Se lee así:** la clave es "existe un entero $k$": $n = 2k$ deja resto 0 al dividir entre 2 y $n = 2k + 1$ deja resto 1; como todo entero deja 0 o 1, cada $n$ es par o impar y nunca ambos — así se usa la paridad en demostraciones por casos.
 > Sea $n$ un número entero:
 > 
 > - $n$ es **par** si existe un entero $k$ tal que $n = 2k$.
@@ -394,6 +397,8 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-07-03-graph.svg]]
+> **Se lee así:** del teorema $p \to q$ parte la pregunta "¿qué estrategia?" con cuatro caminos —prueba directa (supón $p$, concluye $q$), por contradicción (supón $p \wedge \neg q$ y llega a $r \wedge \neg r$), por contrarrecíproco (supón $\neg q$, concluye $\neg p$) y por casos ($p_1 \vee \dots \vee p_n$)— que convergen en "✅ Demostración completa".
+> **Por qué importa:** es el menú para elegir la técnica antes de escribir el primer paso: si la hipótesis no da nada, prueba el contrarrecíproco o la contradicción.
 
 ---
 

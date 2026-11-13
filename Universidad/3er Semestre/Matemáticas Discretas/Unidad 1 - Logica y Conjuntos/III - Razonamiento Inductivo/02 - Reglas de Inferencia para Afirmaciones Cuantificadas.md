@@ -23,6 +23,8 @@ tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizac
 
 > [!note] 📖 Definición — Reglas de inferencia cuantificadas
 > 
+> **Se lee así:** las cuatro filas cubren las dos direcciones (bajar del cuantificador a un caso $P(d)$ y subir de un caso al cuantificador): la trampa está en las condiciones — $d$ debe pertenecer al dominio $D$, y para la generalización universal el caso debe ser arbitrario.
+> 
 > | Regla | Nombre |
 > |---|---|
 > | $\forall x \in D : P(x) \Rightarrow P(d),\ \text{si } d \in D$ | **Particularización Universal** |
@@ -33,6 +35,7 @@ tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizac
 > [!note] 🖼️ Captura — Tabla de Reglas para Cuantificadores
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 2 jun 2026, 01_40_53 1.png]]
+> **Se lee así:** la tabla de las 4 reglas cuantificadas en imagen: particularización y generalización universal trabajan con $\forall x \in D : P(x)$, particularización y generalización existencial con $\exists x \in D : P(x)$, y cada fila muestra la flecha hacia o desde $P(d)$ con su condición sobre $d$.
 
 ---
 
@@ -182,6 +185,8 @@ tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizac
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-03-graph.svg]]
+> **Se lee así:** cuatro flechas: $\forall x \in D : P(x)$ baja a $P\,d$ (particularización universal), $P\,d$ para todo $d$ sube a $\forall$ (generalización universal), $\exists x \in D : P(x)$ baja a $P\,d$ para algún $d$ (particularización existencial) y $P\,d$ concreto sube a $\exists$ (generalización existencial); las instancias combinadas pasan por "Combinar con reglas proposicionales" hasta la "✅ Conclusión".
+> **Por qué importa:** usar cualquier flecha al revés sin sus condiciones (dominio, arbitrariedad, testigo nuevo) invalida la prueba.
 
 ---
 

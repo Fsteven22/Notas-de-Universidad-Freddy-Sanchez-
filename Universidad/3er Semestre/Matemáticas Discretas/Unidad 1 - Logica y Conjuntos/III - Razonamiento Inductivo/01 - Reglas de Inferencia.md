@@ -30,6 +30,8 @@ tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-
 
 > [!note] 📖 Definición — Argumento válido e inválido
 > 
+> **Se lee así:** la barra fraccionaria pone las premisas $p_1, \ldots, p_n$ arriba y la conclusión $\therefore\ q$ abajo; la notación $p_1, \ldots, p_n \Rightarrow q$ se lee "implica" y solo garantiza que premisas verdaderas arrastran la conclusión — no afirma que $q$ sea verdadera en el mundo real.
+> 
 > Diremos que el argumento es **válido** si cada vez que $p_1, p_2, \ldots, p_n$ son verdaderas entonces $q$ también es verdadera. De lo contrario diremos que el argumento es **inválido**.
 > 
 > Los argumentos se representan en la forma:
@@ -61,6 +63,8 @@ tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-
 
 > [!note] 📖 Reglas fundamentales
 > 
+> **Se lee así:** cada fila escribe "premisas $\Rightarrow$ conclusión" y el nombre de la regla: $p \to q,\ p \Rightarrow q$ es Modus Ponens (afirmar el antecedente), $p \to q,\ \neg q \Rightarrow \neg p$ es Modus Tollens (negar el consecuente), y conjunción, silogismo hipotético/disyuntivo, adición y simplificación son el resto de piezas.
+> 
 > | Regla de inferencia | Nombre |
 > |---|---|
 > | $p \to q,\ p \Rightarrow q$ | **Modus Ponens** |
@@ -75,6 +79,7 @@ tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-
 > [!note] 🖼️ Captura — Tabla de Reglas de Inferencia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 2 jun 2026, 00_08_36.png]]
+> **Se lee así:** la tabla completa de reglas en una sola imagen: cada fila empareja la forma con el nombre — $p \to q,\ p \Rightarrow q$ es Modus Ponens, $p \to q,\ \neg q \Rightarrow \neg p$ es Modus Tollens, $p \vee q,\ \neg p \Rightarrow q$ es el silogismo disyuntivo — el mismo catálogo que la sección detalla una por una debajo.
 
 ---
 
@@ -283,6 +288,8 @@ tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-08-03-graph.svg]]
+> **Se lee así:** de "Premisas conocidas" se llega al rompecabezas "¿Qué regla aplica?", que se ramifica en Modus Ponens, Modus Tollens, silogismo hipotético, silogismo disyuntivo y adición/simplificación/conjunción; cada rama produce una "Nueva proposición derivada" que cae en "¿Es la conclusión?": si la respuesta es sí → "Argumento válido"; si no, la flecha de retorno vuelve a preguntar qué regla aplica.
+> **Por qué importa:** la validez se construye encadenando reglas una a una hasta derivar la conclusión, no de un solo salto.
 
 
 ---

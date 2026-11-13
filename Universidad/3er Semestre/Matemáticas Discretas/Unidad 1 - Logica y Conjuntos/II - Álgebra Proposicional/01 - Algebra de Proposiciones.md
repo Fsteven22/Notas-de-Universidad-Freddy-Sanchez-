@@ -194,6 +194,8 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones-algebraicas,
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-05-02-graph.svg]]
+> **Se lee así:** el álgebra proposicional como cadena de pasos: Expresión inicial →(Ley 1)→ Paso 1 →(Ley 2)→ Paso 2 →(Ley 3)→ … →(Ley n)→ Expresión final ✅, donde cada flecha lleva el nombre de la ley que justifica el paso.
+> **Por qué importa:** así se califica un desarrollo: si no puedes nombrar la ley de una flecha, el paso no está justificado — "una equivalencia por línea + ley al margen", como pide el resumen ejecutivo.
 
 ---
 
