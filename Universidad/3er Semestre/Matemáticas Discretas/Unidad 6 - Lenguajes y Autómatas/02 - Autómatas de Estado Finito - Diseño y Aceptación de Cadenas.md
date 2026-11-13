@@ -18,6 +18,8 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > - **Videojuegos e IA simple**: NPCs con comportamientos que cambian según una secuencia de eventos aceptada o no.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-01-graph.svg]]
+> **Se lee así:** el ciclo de aceptación en tres pasos — el autómata **lee** la cadena $\alpha$, **sigue la trayectoria** de estados que sus transiciones marcan, y al terminar pregunta si el estado final **pertenece a $\mathcal{A}$**: sí → aceptada, no → rechazada.
+> **Por qué importa:** el veredicto depende solo de **dónde terminas**, no de por dónde pasaste: una cadena puede recorrer estados no aceptantes y seguir siendo aceptada.
 
 ---
 
@@ -167,6 +169,8 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > Se usan dos estados: $E$ (número par de $a$ leídas) y $O$ (número impar). El estado inicial es $E$; el estado aceptante es $O$.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-04-graph.svg]]
+> **Se lee así:** el autómata de la paridad de $a$: el estado inicial $E$ (par de $a$ leídas) se queda en $E$ con $b$ y pasa a $O$ con $a$; $O$ hace lo simétrico. $O$ está dibujado con **círculo doble**, así que es el estado aceptante.
+> **Por qué importa:** es el ejemplo mínimo de "contar con memoria": un solo bit de historia (par o impar) basta para decidir.
 
 ---
 
@@ -190,6 +194,8 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > [!note] 🗺️ Diagrama — Diagrama de Decisión: Proceso de Diseño y Verificación
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-05-graph.svg]]
+> **Se lee así:** el método de 6 pasos en orden — partir del **lenguaje** a reconocer, identificar la **información mínima del pasado**, definir los **estados** (uno por clase de historia), elegir $\sigma$, marcar $\mathcal{A}$, definir $f$ para **todo** $(s,i)$, y **probar** con cadenas de ejemplo. Si las pruebas fallan, la flecha regresa al paso 2.
+> **Por qué importa:** el bucle de verificación es lo que hace al método un método: un autómata "probado a ojo" casi siempre tiene huecos en $f$.
 
 ---
 

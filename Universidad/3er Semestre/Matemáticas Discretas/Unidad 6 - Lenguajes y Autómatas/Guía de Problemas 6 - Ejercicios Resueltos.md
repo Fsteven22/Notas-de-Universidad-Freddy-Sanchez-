@@ -7,6 +7,8 @@ tags: [discretas, unidad6, guia-problemas]
 
 > [!info] 📖 Sobre esta guía
 >
+> **Se lee así:** la tabla de abajo es el índice de la guía — 6.1 actividades en clase (1–3), 6.2 ejercicios propuestos (4–8) y 6.3 complementarios (9–12). Úsala para saltar al bloque que te falta practicar.
+>
 > Ejercicios resueltos de la **Guía de Problemas 6** — Matemáticas Discretas (MATG 1051). Fuente: notas de clase MATG 1051, Ebner Pineda — Actividades en clase 1–3 + 5 Ejercicios propuestos + 4 Complementarios.
 >
 > |Sección|Tema|Ejercicios|
@@ -85,6 +87,8 @@ tags: [discretas, unidad6, guia-problemas]
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-02-graph.svg]]
+> **Se lee así:** el diagrama del autómata del paso 1 — desde $s_0$ un $0$ regresa a $s_0$ y un $1$ pasa a $s_1$; desde $s_1$ el $1$ mantiene y el $0$ regresa a $s_0$. El estado $s_1$ es el aceptante, así que la máquina acepta cadenas con **al menos un $1$**.
+> **Por qué importa:** sirve de base para la tabla de trazas de abajo: cada cadena de prueba se lee sobre estas flechas ($101$: $s_0 \to s_1 \to s_0 \to s_1$, aceptada).
 >
 > **Paso 2 — Trazas de prueba:**
 >
