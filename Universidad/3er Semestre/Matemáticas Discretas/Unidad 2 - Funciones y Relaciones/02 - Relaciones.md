@@ -322,6 +322,16 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 9.1 «Relations and Their Properties», p. 599; sec. 9.3 «Representing Relations», p. 621.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 3.3 «Relations», p. 141; sec. 3.5 «Matrices of Relations», p. 160.
+
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico

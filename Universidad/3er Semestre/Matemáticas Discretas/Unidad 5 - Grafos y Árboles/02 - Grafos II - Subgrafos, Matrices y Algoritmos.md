@@ -292,8 +292,15 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 
 ---
 
-> [!quote] 📖 Referencias [1]
-> Pineda, E. (2025). _Teoría de grafos: continuación_. FCNM-ESPOL.
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] Pineda, E. (2025). _Teoría de grafos: continuación_. FCNM-ESPOL.
+> 
+> [2] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 10.3 «Representing Graphs and Graph Isomorphism», p. 703; sec. 10.6 «Shortest-Path Problems», p. 743.
+> 
+> [3] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 8.4 «A Shortest-Path Algorithm», p. 405; sec. 8.5 «Representations of Graphs», p. 410.
 
 > [!quote] 🔗 Conexiones
 > 

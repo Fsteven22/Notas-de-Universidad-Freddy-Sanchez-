@@ -362,6 +362,16 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 2.4 «Sequences and Summations», p. 165.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 3.2 «Sequences and Strings», p. 129.
+
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico

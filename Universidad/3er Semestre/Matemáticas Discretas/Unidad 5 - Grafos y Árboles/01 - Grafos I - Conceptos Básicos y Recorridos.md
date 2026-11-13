@@ -362,8 +362,15 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 
 ---
 
-> [!quote] 📖 Referencias [1]
-> Pineda, E. (2025). _Teoría de grafos — Definiciones básicas_. Departamento de Matemáticas, FCNM-ESPOL.
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] Pineda, E. (2025). _Teoría de grafos — Definiciones básicas_. Departamento de Matemáticas, FCNM-ESPOL.
+> 
+> [2] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 10.1 «Graphs and Graph Models», p. 673; sec. 10.2 «Graph Terminology and Special Types of Graphs», p. 685; sec. 10.5 «Euler and Hamilton Paths», p. 728.
+> 
+> [3] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 8.1 «Introduction», p. 373; sec. 8.2 «Paths and Cycles», p. 384.
 
 > [!quote] 🔗 Conexiones
 > 

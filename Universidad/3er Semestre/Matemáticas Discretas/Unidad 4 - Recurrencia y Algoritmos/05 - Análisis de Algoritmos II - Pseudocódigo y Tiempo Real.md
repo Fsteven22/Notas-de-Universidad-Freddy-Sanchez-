@@ -538,6 +538,28 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 
 ---
 
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — cómo contar el tiempo de ejecución
+> 
+> | Tipo de bloque | Regla de conteo | Ejemplo de la nota |
+> |---|---|---|
+> | Bucles anidados | producto de los tamaños: $\Theta(n \cdot m)$ | `for i` con `for j` de tamaño $j$ |
+> | Bloques en secuencia | suma de los tiempos: $T_1(n) + T_2(n)$ | tres bloques distintos seguidos |
+> | `if` / `else` | solo corre **una** rama: peor caso $= \max(T_1, T_2)$ | dos niveles de decisión |
+> | Corte anticipado | el `break` acota el peor caso al punto de salida | buscar un par repetido |
+> | Recursión lineal | $T(n) = T(n-1) + c \implies \Theta(n)$ | `factorial(n)` |
+> | Recursión dividida | $T(n) = T(n/2) + c \implies \Theta(\log n)$ | búsqueda binaria |
+> | Doble recursión | $T(n) = T(n-1) + T(n-2) + c \implies \Theta(2^n)$ | caminatas del robot (Fibonacci) |
+> 
+> **Se lee así:** cada fila relaciona una forma de bloque con su regla de conteo y con el ejemplo concreto donde aparece en la nota.
+> 
+> **Por qué importa:** el tiempo real no se mide con el cronómetro sino contando operaciones por bloque; confundir suma con producto es el error que más cotas arruina.
+> 
+> **Ejemplo:** el Patrón B (`while` que divide entre 2 con un `for` interno de tamaño $j$) combina regla dividida y producto — por eso su cota no es la misma que la del Patrón A.
+
+---
+
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas

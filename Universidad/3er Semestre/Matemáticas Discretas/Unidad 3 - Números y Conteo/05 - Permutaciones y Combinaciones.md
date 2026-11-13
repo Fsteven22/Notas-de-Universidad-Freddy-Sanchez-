@@ -280,7 +280,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 
 ---
 
-## 📊 Tabla Resumen General
+## 📊 Resumen Visual
 
 > [!note] 📊 Resumen general
 > 
@@ -312,6 +312,17 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > **3.** Elegir qué 4 posiciones (de 8) serán 1s: $\binom{8}{4} = \mathbf{70}$.
 > 
 > **4.** Con $n=4$ variables y $r=10$: $\binom{10+4-1}{10} = \binom{13}{3} = \mathbf{286}$.
+
+---
+
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 6.3 «Permutations and Combinations», p. 428; sec. 6.5 «Generalized Permutations and Combinations», p. 445.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 6.2 «Permutations and Combinations», p. 269; sec. 6.3 «Generalized Permutations and Combinations», p. 283.
 
 ---
 

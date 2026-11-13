@@ -297,6 +297,27 @@ tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 
 ---
 
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — sintaxis de seudocódigo y sus trampas
+> 
+> | Elemento | Regla | Trampa típica |
+> |---|---|---|
+> | Asignación | `x = expr` | Leer `=` como igualdad (la igualdad es `==`) |
+> | Decisión | `if cond:` … `else:` … | Creer que se ejecutan ambas ramas: corre **una sola** |
+> | Ciclo `while` | la condición se reevalúa en cada vuelta | Olvidar actualizar el contador → bucle infinito |
+> | Ciclo `for` | `for i in 1..n` ejecuta $n$ veces | Confundir el límite superior con el número de iteraciones |
+> | Función | `f(parametros)` con cuerpo propio | Mezclar `=` y `==` dentro de la guarda |
+> | Cuantificadores | $\forall x: P(x)$ / $\exists x: P(x)$ | Negar mal al traducirlos a código |
+> 
+> **Se lee así:** cada fila es un elemento de la sintaxis que usa la nota, con la regla que lo gobierna y el error que suele cometerse al escribirlo.
+> 
+> **Por qué importa:** el seudocódigo es el puente entre la fórmula $f(n)$ y el conteo de operaciones; si la sintaxis se lee mal, la cota asintótica sale mal aunque el álgebra esté bien.
+> 
+> **Ejemplo:** el `while` del ejemplo "máximo de una sucesión" termina porque el índice avanza en cada vuelta — sin ese avance no se podrían contar sus iteraciones.
+
+---
+
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
