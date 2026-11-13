@@ -5,129 +5,140 @@ dg-publish: false
 # 📐 FORMATO-CALCULO1 — contrato de formato de las notas de Cálculo de una Variable
 
 > [!info] 📖 Fuente única de verdad
-> Este contrato vive en `Universidad/Herramientas/Mantenimiento/` (junto al validador que lo
-> aplica), **no** dentro de la carpeta de la materia: es una herramienta de auditoría, no una nota
-> que el sitio publique. Sus hermanos son `FORMATO-SBD.md` y `FORMATO-DISENO.md`, en la misma
-> carpeta.
+> Este contrato **adopta el de Sistema de Bases de Datos** (`FORMATO-SBD.md`, reglas R1..R14) sin
+> rebajarlo: la nota de referencia es `Universidad/3er Semestre/Sistema de Bases de Datos/Unidad 1 - Modelos de Datos y ER/01 - Dato, información y modelos de datos.md`, corregida por el dueño.
+> El validador `qa_formato_calculo1.py` **importa** `qa_formato_sbd.py` y ejecuta su mismo núcleo
+> (R1..R14) más las reglas propias de esta materia (**R15**, figura por definición).
 >
-> Cálculo de una Variable (MATG1045) tiene **65 notas**: 61 de clase (7 unidades, con subniveles
-> `I - …`, `II - …`) y 4 de raíz. El método es el de la casa (SBD, Diseño); lo **propio** de esta
-> materia es el esqueleto de secciones, que **no es fijo**: cada nota tiene sus secciones
-> temáticas y las de cierre.
+> Encargo del dueño (13/11/2026): *"quiero que el formato que tienen sbd lo muevas a calculo de una
+> variable, con los svg y las explicaciones y todo eso"*. Lo que sigue es ese formato.
+>
+> Además del formato, el contenido debe estar **bien explicado**: una nota que solo transcribe el PDF
+> es tan útil como leer el PDF. Ver **R14**.
 
-## Las 14 reglas
+## Las 14 reglas de SBD (adoptadas) + R15
 
 ### R1 · Frontmatter
 ```
 ---
 dg-publish: true
-tags: [MATG1045, calculo-de-una-variable, unidadN, temas...]
+tags: [MATG1045, unidadN, temas...]
 ---
 ```
-Sin `dg-publish: true` la nota no se publica. El código de la cátedra es **MATG1045**.
+Sin `dg-publish: true` la nota no se publica (`qa_omitidas.py` la detecta).
 
 ### R2 · Título H1 con emoji
-`# 🎯 Métricas en Matemáticas`. El emoji va **al inicio** (41 de 65 lo hacen; 14 lo llevan al
-final y 10 no llevan ninguno: se normalizan al inicio).
+`# 🤔 Concepto Intuitivo de Límite`. Emoji visible + texto.
 
-### R3 · Secciones H2 con emoji, y una sección de cierre
-Cada H2 lleva un emoji visible. En las notas de clase, además, la nota **cierra** con al menos una
-sección de cierre —`Referencias`, `Notas Recomendadas` o `Conexiones`— (55 de 61 la tienen hoy).
+### R3 · Secciones H2, cada una con emoji y separadas por `---`
+El esqueleto mínimo de una nota de clase:
+```
+## 🎯 Introducción
+## 📋 Definiciones Formales
+## 📝 Ejercicios Propuestos
+## 🎯 Metas de Aprendizaje
+## 📚 Referencias
+## 🔁 Repaso SR (flashcards)
+## 🔗 Conexiones
+## 🔗 Seguir estudiando
+```
+**8 secciones.** Las secciones temáticas de la materia (teoremas, técnicas, errores comunes,
+fórmulas) van **entre `Definiciones Formales` y `Ejercicios Propuestos`**.
 
-**No hay esqueleto fijo de H2.** A diferencia de SBD (14 secciones) y Diseño (12 secciones), aquí
-cada nota tiene su propio recorrido temático; lo que se exige es:
-
-- todo H2 con emoji;
-- el cierre con bibliografía o notas relacionadas;
-- las secciones características de la materia —`Técnica de Estudio: …`, `Tabla Resumen`,
-  `Algoritmo de Decisión`, `Ejemplos Trabajados Completos`, `Conexiones y Aplicaciones`,
-  `Ejercicios Progresivos`— **cuando apliquen**, con ese nombre.
-
-**Perfiles.** El validador distingue las notas por su ruta:
+**Perfiles.** El validador resuelve el perfil solo, por la ruta de la nota:
 
 | Perfil | Se aplica a | H2 requeridas |
 |---|---|---|
-| `clase` | `Unidad N - …/[subnivel/]0X - …md` | cierre (Referencias \| Notas Recomendadas \| Conexiones) |
-| `material` | `Unidad 0 - Guias y Ejercicios/Material de clase/…` | ninguna; todo H2 que exista lleva emoji |
-| `indice` | notas raíz (`Cálculo de una Variable.md`, `Índice de Contenido.md`, `Recursos Visuales.md`, `Bienvenida y Syllabus….md`) | ninguna; todo H2 que exista lleva emoji |
+| `clase` | notas dentro de `Unidad N - …/` (N ≥ 1), cualquier subnivel | las **8** de arriba |
+| `indice` | raíz de la materia (`Cálculo de una Variable.md`, `Índice de Contenido.md`, `Recursos Visuales.md`, `Bienvenida y Syllabus….md`) y `Unidad 0 - …/` | ninguna obligatoria (**0**), pero todo H2 que exista lleva emoji |
+
+> [!warning] ⚠️ C1 tiene unidades anidadas
+> La carpeta de una nota puede ser `Unidad 4 - Derivadas/IV - Técnicas Avanzadas/` (tres niveles
+> dentro de la materia). El perfil se decide **buscando un ancestro `Unidad N` con N ≥ 1**, no por
+> el nombre de la carpeta inmediata: si no, la mitad de las notas se clasificaría como `indice` y no
+> se les exigiría el esqueleto.
 
 ### R4 · TODO el contenido dentro de callouts
-Ningún bloque de prosa, tabla, lista, embed o fórmula vive fuera de un callout. Si un diagrama
-va suelto, se envuelve en un callout con título.
+Cero líneas de prosa, tabla o lista fuera de callouts. Todo bloque textual, tabla, embed y fórmula
+va dentro de un callout. (Los encabezados H2/H3 y los `---` sí van sueltos: son estructura.)
 
 ### R5 · Callout con título siempre
-`> [!note] 📋 Definición — Acoplamiento`: tipo + emoji + texto. Nunca un callout sin título.
+`> [!note] 📋 Definición — Límite`. Tipo + emoji + texto. Nunca un callout sin título.
 
 ### R6 · Línea en blanco `>` después del encabezado del callout
-El callout arranca con una línea `>` sola.
+```
+> [!note] 📋 Definición — Límite
+>
+> El cuerpo del callout…
+```
 
 ### R7 · Separadores internos dentro de un callout
-- Antes de un embed `> ![[...]]`: línea `>` vacía.
-- Antes de una tabla `> |...`: línea `>` vacía.
 - Entre dos párrafos de prosa: una línea `>` vacía entre medio.
+- Antes de un embed `> ![[…]]`: línea `>` vacía.
+- Antes de una tabla `> |…`: línea `>` vacía.
 - Los items del mismo punto/lista van pegados.
 
-### R8 · Callout anidado plegado en las soluciones
+### R8 · Solución anidada y plegada en los ejercicios
 ```
 > [!example] 📋 Planteamiento
 >
-> Enunciado...
+> Enunciado…
 >
 > > [!success]- ✅ Solución
 > >
-> > Respuesta...
+> > Respuesta…
 ```
-Prefijo `> >` en dos niveles.
+Prefijo `> >` en dos niveles, y el `success` **plegado** (`[!success]-`): el enunciado se ve, la
+solución se abre cuando la quieres. Aplica a los ejemplos de la sección **Ejercicios Propuestos**.
 
 ### R9 · Ejemplos con etiqueta en negrita
-Dentro del callout: `> **Ejemplo:**`, `> **Se lee así:**`, `> **Por qué importa:**`.
+Dentro del callout: `> **Ejemplos:**`, `> **Se lee así:**`, `> **Por qué importa:**`, `> **Ejemplo:**`.
 
-### R10 · Tipo de callout válido y en minúscula
-Tipos admitidos: `info`, `note`, `tip`, `success`, `example`, `warning`, `caution`, `danger`,
-`error`, `bug`, `quote`, `brain`, `todo`, `question`, `abstract`, `summary`.
-`> [!NOTE]` y `> [!info-]` no son tipos válidos: el sitio no los reconoce y caen a `Nota` genérica.
+### R10 · Metas de Aprendizaje con checkboxes
+```
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Defino el límite sin mirar.
+```
+Un callout por nivel, contenido como checkboxes. La sección **Metas de Aprendizaje** tiene que
+contener al menos un callout así.
 
-### R11 · Enlaces que resuelven
-Todo `[[wikilink]]` a una nota apunta a una nota que **existe en el vault** (se comprueba en
-todo el vault, no solo en la materia) y todo `![[embed]]` a un asset apunta a un archivo real.
+### R11 · Flashcards SR dentro de la sección Repaso
+```
+#flashcards/cal1-u4
 
-### R12 · Rutas de assets correctas, canónicas y existentes
-Los diagramas viven **todos** en `Unidad 0 - Guias y Ejercicios/Diagramas/`; las capturas, en
-`Unidad 0 - Guias y Ejercicios/Figuras/`. El prefijo relativo depende de la profundidad de la nota
-respecto a la raíz de la materia:
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué dice el teorema de Lagrange?::Respuesta.
+```
+La línea `#flashcards/cal1-uN` queda **fuera** del callout (es la directive del plugin), pero todas
+las líneas `- Q::A` van **dentro** del `> [!note] 🧠`. El identificador sigue `cal1-uN`, con N el
+número de unidad.
 
-| Profundidad de la nota | Prefijo a `Unidad 0 - Guias y Ejercicios/` |
+### R12 · Rutas de assets correctas y existentes
+Los diagramas viven en `Unidad 0 - Guias y Ejercicios/Diagramas/` y las capturas en
+`Unidad 0 - Guias y Ejercicios/Archivos/<Tema>/`. Desde una nota, el prefijo relativo tiene que
+tener **tantos `../` como la profundidad de la nota dentro de la materia**:
+
+| Nota | Prefijo |
 |---|---|
-| `Unidad N - …/0X - …md` | `../Unidad 0 - Guias y Ejercicios/…` |
-| `Unidad N - …/I - …/0X - …md` | `../../Unidad 0 - Guias y Ejercicios/…` |
+| `Cálculo de una Variable/Índice de Contenido.md` (0 niveles) | `Unidad 0 - Guias y Ejercicios/…` |
+| `Cálculo de una Variable/Unidad 2 - Límites/01 - …md` (1 nivel) | `../Unidad 0 - Guias y Ejercicios/…` |
+| `Cálculo de una Variable/Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - …md` (2 niveles) | `../../Unidad 0 - Guias y Ejercicios/…` |
 
-Además:
-- **Todo SVG embebido tiene su `.mmd` fuente al lado** (`R12-svg-sin-mmd`): sin fuente, el
-  diagrama no se puede re-editar ni volver a compilar.
-- **Ningún SVG fuera de la carpeta canónica** (`R12-diagrama-fuera`).
-- **Ningún PDF/PPTX/DOC embebido** (`R12-clase-embebida`).
-- **Nada de material ajeno** (`R12-ajeno`): `_texto/`, `site/`, `Herramientas/`, `Reportes/`.
+Además: **no se embeben PDF/PPTX/DOC/XLS de clase** (`R12-clase-embebida`). Un examen, un taller o
+un deck se **capturan como PNG** y se citan por número de página. Y **todo SVG embebido lleva su
+`.mmd` fuente al lado**.
 
 ### R13 · Tags al pie
-`**Tags:** #MATG1045 #unidad1 #...` al final de la nota.
+`**Tags:** #MATG1045 #…` al final de la nota.
 
 ### R14 · Todo lo visual se explica (no se transcribe)
-> [!warning] 🚨 La regla que separa "leer la nota" de "leer el PDF"
-> Un embed sin lectura propia es una transcripción: es tan difícil de entender como el material
-> original. Cada pieza visual lleva, **en las líneas siguientes**, una interpretación propia.
+Un embed o un bloque de deck **sin lectura propia** es una transcripción. Cada pieza visual lleva,
+en las líneas siguientes, una interpretación propia.
 
-**Qué exige R14:**
-1. **Cada SVG embebido** va seguido de una de estas etiquetas:
-   `**Se lee así:**` · `**Por qué importa:**` · `**Ejemplo(s):**` · `**Nota:**`
-   — o de prosa propia de **≥ 60 caracteres** que no sea la ruta del embed.
-   La ruta del propio embed **no cuenta** como explicación.
-2. **Cada PNG/JPG de figura** va seguido de la misma lectura.
-
-**Etiquetas aceptadas (case-insensitive):** `Se lee así` · `Por qué importa` · `Ejemplo(s)` ·
-`Nota` · `Cómo se lee` · `Verificación` · `Analogía` · `Resumen` · `Para qué sirve` ·
-`Qué notas` · `Pista`.
-
-**Cómo se escribe una buena lectura** (3 párrafos, en este orden):
+**Etiquetas fijas** (se aceptan en cualquiera de estos tres órdenes, pero las tres en la lectura):
+`**Se lee así:**` · `**Por qué importa:**` · `**Ejemplo:**`
 
 | Etiqueta | Qué responde | Mínimo |
 |---|---|---|
@@ -135,98 +146,83 @@ Además:
 | `**Por qué importa:**` | ¿Qué **consecuencia** tiene? ¿Qué error evita? | 1–3 frases |
 | `**Ejemplo:**` | ¿Cómo se aplica a **un caso propio** de la ESPOL o de la carrera? | 1 frase con caso concreto |
 
-**Las tres etiquetas van siempre juntas** en esta materia: cada embed lleva su bloque completo
-(`**Se lee así:**` → `**Por qué importa:**` → `**Ejemplo:**`), separadas por líneas `>` de
-separador, como en `FORMATO-SBD.md`. El párrafo **no** repite la palabra de la etiqueta:
-la etiqueta es el encabezado, el párrafo es el contenido.
+La lectura se escribe **desde la fuente** (el `.mmd` del SVG o el texto extraído del PDF), nunca
+transcribiendo la imagen a ojo.
 
-## Material que NO entra
-`_texto/` (extracciones de texto, solo local), documentos de `Herramientas/`, PDFs de clase.
-La `Unidad 0 - Guias y Ejercicios/` de esta materia **está vacía de material**: no hay PDF ni
-láminas, así que **no hay de dónde sacar lecturas de deck y no se inventan citas**.
+### R15 · Cada definición lleva su figura (regla propia de esta materia)
+> [!important] 🎯 La regla que diferencia esta materia
+> Un callout de definición (`> [!note] 📋 Definición — …`) **contiene su propia figura**: un embed
+> `.svg` o `.png` **dentro** del mismo callout, con su lectura R14.
+>
+> ```
+> > [!note] 📋 Definición — Límite
+> >
+> > Texto de la definición.
+> >
+> > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/…svg]]
+> >
+> > **Se lee así:** …
+> >
+> > **Por qué importa:** …
+> >
+> > **Ejemplo:** …
+> ```
+>
+> **Por qué:** en SBD la nota de referencia tiene una figura por definición (el diagrama es lo que
+> hace que la definición se entienda de un vistazo). En Cálculo 1, la figura de una definición es
+> la que dibuja la curva, el intervalo o la geometría: sin ella, el lector tiene que imaginarse lo
+> que la definición describe.
 
 ## Receta de producción
 
 ### Diagramas (SVG)
-Todos los diagramas viven en `Unidad 0 - Guias y Ejercicios/Diagramas/` y son **mermaid**, con su
-fuente `.mmd` **al lado** (R12-svg-sin-mmd).
-
-**Naming (convención ya vigente en la materia y en Cálculo Vectorial — no se renombra):**
-`NN_-_Titulo_de_la_Nota_NN.svg` · `01_-_Continuidad_y_Límites_01.svg`
+Todos los diagramas viven en `Unidad 0 - Guias y Ejercicios/Diagramas/`, son **mermaid** y llevan su
+fuente `.mmd` **al lado**. La nota se llama igual que el diagrama y se numera:
+`01_-_Concepto_y_Definición_Formal_del_Límite_01.mmd` / `.svg`.
 
 **Render:**
 ```
-py -3.12 Herramientas/SVG-Pipeline/mmdc_ligero.py -i X.mmd -o X.svg -b white
+py -X utf8 "Universidad/Herramientas/SVG-Pipeline/mmdc_ligero.py" -i X.mmd -o X.svg -b white
 $env:PUPPETEER_EXECUTABLE_PATH="C:\Program Files\Google\Chrome\Application\chrome.exe"
 ```
+
+**Round-trip obligatorio:** re-render del `.mmd` y comparación contra el SVG original de **texto
+visible + viewBox**. Texto igual pero viewBox distinto = la dirección o el orden de las aristas
+está mal.
 
 **Reglas de sintaxis mermaid (las que fallan sin avisar):**
 - En `erDiagram`, las etiquetas de relación con `,` o `:` **no parsean** → van entre comillas.
 - `<br/>` y emojis sí funcionan dentro de esas comillas.
-- Un SVG **siempre** necesita su `.mmd`. Si falta, se reconstruye desde el SVG y se valida
-  re-renderizando y comparando texto visible + viewBox. **Nunca** se sobrescribe un `.mmd` que ya
-  está en git.
+- Un SVG **siempre** necesita su `.mmd`. Si falta, se reconstruye desde el SVG (`svg_a_mmd.py`) y se
+  valida re-renderizando. **Nunca** se sobrescribe un `.mmd` que ya está en git.
 
-**Sintaxis verificada en esta materia (183/183 diagramas con round-trip exacto):**
-- **Todo label va entre comillas dobles** (`A["texto"]`, `B{"decision"}`, `C("redondeado")`).
-  Sin comillas, una `{`, un `|`, un `;` o un `>` dentro del texto rompe el lexer.
-- La comilla doble del texto se escapa como `#quot;`.
-- En `mindmap`, los paréntesis del texto se escapan como entidades: `F#40;b#41; - F#40;a#41;`.
-  Con `F(b) - F(a)` a secas el diagrama **no parsea**.
-- En `mindmap`, para que el nodo conserve su forma hay que declararla:
-  `x1(F#40;…#41;)` (redondeada) o `x1[F#40;…#41;]` (cuadrada). Sin forma, el layout cambia.
-- El **título** que pinta mermaid (`<text class="flowchartTitleText">`) sale del frontmatter YAML:
-  ```
-  ---
-  title: "02 - Propiedades de la Integral: integral indefinida"
-  ---
-  ```
-  Sin ese bloque, el viewBox sale 54 px más corto.
-- Un diagrama con **subgrafos** necesita `flowchart LR` + `direction TB` dentro de cada `subgraph`
-  para reproducir el layout original (ver `Bienvenida_y_Syllabus_Cálculo_de_una_Variable_01.mmd`).
-
-**Herramientas del pipeline para esta materia:**
-- `Universidad/Herramientas/SVG-Pipeline/svg_a_mmd.py` — reconstruye el `.mmd` desde el SVG
-  (lee los ids de nodo `my-svg-flowchart-<ID>-<n>` y de arista `my-svg-L_<ORIG>_<DEST>_<n>`,
-  la forma de cada caja, sus estilos y el título). `--lote` reconstruye una carpeta; `--sincronizar`
-  alinea el frontmatter de título de los `.mmd` existentes. No cubre los diagramas con subgrafos.
-- `Universidad/Herramientas/SVG-Pipeline/verifica_mmd.py` — round-trip: re-renderiza cada `.mmd` y
-  compara **texto visible** (nodos, etiquetas de arista y título) y **viewBox** contra su SVG.
-  Es el que deja la materia en 0 hallazgos de R12.
-
-**Si el `.mmd` se borró del repo**, se recupera del historial (no se reescribe a mano):
-```
-git ls-tree -r --name-only <commit>^ -- "Universidad/1er Semestre/Cálculo de una Variable/Diagramas/"
-git show <commit>^:"Universidad/1er Semestre/Cálculo de una Variable/Diagramas/X.mmd"
-```
-
-### Figuras (PNG/JPG)
-Viven en `Unidad 0 - Guias y Ejercicios/Figuras/` con **nombre temático**:
-`cal1-<tema>-<slug>.png`. Un archivo `Pasted image 2025….png` o con UUID **no** es publicable:
-se renombra y se reescribe el embed.
+### Capturas de PDF (PNG)
+1. Se **captura la página** del PDF, no se embebe el PDF.
+2. **DPI 140** (`Universidad/Herramientas/Mantenimiento/pdf_a_png.py`).
+3. Carpeta por tema: `Archivos/Examenes/`, `Archivos/Figuras/`, …
+4. Naming: `cal1-<examen>-p<NN>.png`.
+5. En la nota se cita **con el número de página**: `EXA-2023-0S-1Par, p. 6`.
+6. El contenido se extrae **por texto** del PDF (`pdf_a_markdown_lote.py`, PyMuPDF). **No se leen las
+   imágenes a ojo**: la lectura escrita sale del texto extraído.
 
 ### Nota nueva: orden de trabajo
-1. Frontmatter con `dg-publish` y `tags` (R1).
-2. H1 y H2 con emoji (R2, R3).
-3. Callouts con definiciones y ejemplos (**R4**, **R5**, **R6**, **R9**).
-4. Diagramas: escribir el `.mmd`, renderizar, embeber dentro de un callout, y **leerlo** (**R14**).
-5. Cierre con `Referencias` / `Notas Recomendadas` (**R3**).
-6. `**Tags:**` al pie (**R13**).
-7. Auditar y corregir hasta 0 hallazgos.
+1. Esqueleto con los H2 del perfil y `---` entre ellos.
+2. Callouts con definiciones y ejemplos (**R4**, **R5**, **R6**, **R9**).
+3. Diagramas: escribir el `.mmd`, renderizar, embeber **dentro del callout de la definición** y
+   **leerlo** (**R14**, **R15**).
+4. Capturas: capturar la página correcta, embeber, y **leerla** (**R14**).
+5. Ejercicios con solución plegada (**R8**).
+6. Metas con checkboxes (**R10**) y flashcards dentro del callout 🧠 (**R11**).
+7. `**Tags:**` al pie (**R13**).
+8. Auditar y corregir hasta 0 hallazgos.
 
 ## Cómo se audita
 ```
-py -3.12 "Universidad/Herramientas/Mantenimiento/qa_formato_calculo1.py" --solo "1er Semestre/Cálculo de una Variable"
+py -X utf8 "Universidad/Herramientas/Mantenimiento/qa_formato_calculo1.py"
 ```
-Severidades: **H** (error duro, rompe lectura o el sitio) y **W** (desviación de formato).
-`--estricto` también hace fallar los W. `--fix-rutas` repara automáticamente los embeds cuando la
-ruta canónica existe de verdad.
+Severidades: **H** (error duro) y **W** (desviación de formato). `--estricto` también hace fallar
+los W. `--solo <ruta>` audita una parte y `--calibrar` audita la nota de referencia.
 
-**Estado actual (11/11/2026): 0 hallazgos.** Los **189 embeds** de la materia tienen el bloque
-completo de tres etiquetas, y los **183 SVG** tienen su `.mmd` al lado.
-
-## Nota de ubicación
-Este contrato **no** vive en `1er Semestre/Cálculo de una Variable/`: es una herramienta, y el sitio
-publica la carpeta de la materia. Vive en `Universidad/Herramientas/Mantenimiento/`, junto al
-validador que lo aplica (`qa_formato_calculo1.py`) y a sus hermanos (`FORMATO-SBD.md`,
-`FORMATO-DISENO.md`).
+> [!success] ✅ Reglas heredadas de SBD, verificadas
+> `qa_formato_calculo1.py` **importa** `qa_formato_sbd.py`: no reimplementa R1..R14, las ejecuta.
+> Si el contrato de SBD cambia, Cálculo 1 lo hereda sin tocar una línea.
