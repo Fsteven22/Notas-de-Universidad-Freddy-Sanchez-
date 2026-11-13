@@ -126,6 +126,8 @@ tags: [recurrencia, recurrenciahomogenea, ecuacioncaracteristica, raicesdistinta
 > [!note] 🖼️ Captura — Resolución con Raíces Reales Iguales
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_21_32.png]]
+> **Se lee así:** la captura muestra el **caso de raíz doble** que resuelve la sección: cuando $t^2 - 6t + 9 = (t-3)^2$ da una sola raíz $r$, la solución no es solo $b\cdot r^n$ sino $b\cdot r^n + c\cdot n\cdot r^n$.
+> **Por qué importa:** el factor $n$ no es decorativo — $r^n$ solo aporta una solución independiente y una recurrencia de orden 2 necesita dos; el ejemplo $a_n = 6a_{n-1}-9a_{n-2}$ termina en $a_n = 3^n + 2n\cdot 3^n$.
 
 ---
 
@@ -134,6 +136,8 @@ tags: [recurrencia, recurrenciahomogenea, ecuacioncaracteristica, raicesdistinta
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-03-02-graph.svg]]
+> **Se lee así:** el flujo de la nota en cuatro pasos — **clasificación** (homogénea sin término independiente vs. no homogénea con $f(n)$), **ecuación característica** $t^2 - c_1 t - c_2 = 0$ obtenida proponiendo $a_n = t^n$, y luego las dos ramas de solución: **raíces distintas** $a_n = b\,r_1^n + c\,r_2^n$ o **raíz doble** $a_n = b\,r^n + c\,n\,r^n$.
+> **Por qué importa:** el camino se bifurca justo al mirar las raíces: si $r_1 \neq r_2$ no hay factor $n$, si coinciden sí (por independencia lineal).
 
 ---
 

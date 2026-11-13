@@ -7,6 +7,8 @@ tags: [discretas, unidad4, guia-problemas]
 
 > [!info] 📖 Sobre esta guía
 >
+> **Se lee así:** la tabla de abajo es el índice de la guía: enlaza cada sección del capítulo con sus ejercicios resueltos (4.1 pseudocódigo → 1–3, 4.5 conteo de operaciones → 15–17). Úsala para saltar directo al bloque que te falta practicar.
+>
 > Ejercicios resueltos de la **Guía de Problemas 4** — Matemáticas Discretas (MATG1051). Autores de la guía: Cristhian Hernández, Ebner Pineda, Liliana Pérez, Jennifer Avilés.
 >
 > |Sección|Tema|Ejercicios|

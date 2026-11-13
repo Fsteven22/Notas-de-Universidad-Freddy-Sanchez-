@@ -129,6 +129,8 @@ tags: [recurrencia, relacionesderecurrencia, fibonacci, interescompuesto, torred
 > [!note] 🖼️ Captura — El Problema de la Torre de Hanoi
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_16_45.png]]
+> **Se lee así:** la captura recoge el enunciado visual de la **Torre de Hanoi** que la nota acaba de resolver: $n$ discos en una varilla y la meta de moverlos todos a otra usando una auxiliar, sin apoyar un disco grande sobre uno pequeño.
+> **Por qué importa:** de ahí sale la recurrencia $c_n = 2c_{n-1}+1$ — los $n-1$ discos superiores viajan dos veces — y su solución $c_n = 2^n-1$, que la tabla de verificación confirma ($1, 3, 7, 15, 1023$).
 
 ---
 
@@ -137,6 +139,8 @@ tags: [recurrencia, relacionesderecurrencia, fibonacci, interescompuesto, torred
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-02-03-graph.svg]]
+> **Se lee así:** las cuatro ramas de la nota — **concepto** ($a_n$ en función de sus predecesores, con condiciones iniciales), **sucesiones clásicas** (Fibonacci $f_n = f_{n-1}+f_{n-2}$ e interés compuesto $A_n = 1.12\,A_{n-1}$), **método iterativo** (sustituir, detectar patrón, generalizar) y **Torre de Hanoi** ($c_n = 2c_{n-1}+1 \Rightarrow 2^n-1$).
+> **Por qué importa:** el orden es el de la nota: primero se define la recurrencia, luego se estudian casos conocidos y recién ahí se resuelve por iteración.
 
 ---
 
