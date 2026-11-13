@@ -2324,7 +2324,7 @@ el commit de esta línea de PUSHEADO.
 > - **No se tocó:** FESD (26 archivos), Inglés III, los 2 PDFs sin trackear de DSW ni los 17
 >   `EXA-*.pdf` de Cálculo. `git status` limpio en `Universidad/3er Semestre/Matemáticas Discretas/`.
 >
-> [!warning] Pendiente: push de `master` (ahead 6) — autorización del dueño
+> [!warning] PUSHEO EN CURSO · `master` → `origin/master` · 7 commits · autorización del dueño 13/11/2026
 >
-> **Sin push, `opencode-onedrive` NO recibe** el manual de flujo del bloque del 09/11 ni estos
-> commits. Espero la autorización para pushear (sin `--force`, fast-forward).
+> Los 6 commits de MatDisc (`7d89bdf5`…`5b041e0b`) + el bloque del LEEME (`7d3a25ef`).
+> Fast-forward, sin `--force`, sin `--no-verify`. Falta el `PUSHEADO <hash>` al confirmar.
