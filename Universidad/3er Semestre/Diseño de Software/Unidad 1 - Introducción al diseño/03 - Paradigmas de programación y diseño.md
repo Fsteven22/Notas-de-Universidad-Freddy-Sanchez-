@@ -30,6 +30,12 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-01-graph.svg]]
+>
+> **Se lee así:** El diagrama parte de un *Problema* y pregunta "¿Un paradigma alcanza?". La rama ❌ "Solo el que sé" produce diseños forzados y descabellados y deuda de diseño; la rama ✅ "El que mejor ajusta" produce subsistemas mixtos y un sistema mantenible.
+>
+> **Por qué importa:** separa "conocer muchos paradigmas" de "usarlos todos en todo lado": la mezcla es la respuesta, no la pureza.
+>
+> **Ejemplo:** en el proyecto de ESPOL, un módulo de reportes construido en estilo funcional e inmutable junto a un módulo de dominio en OO es "subsistemas mixtos", la rama buena del diagrama.
 
 ---
 
@@ -99,6 +105,12 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-02-graph.svg]]
 >
+> **Se lee así:** El diagrama contrasta dos estados del paquete Foro. En la subgráfica "sin AOP: seguridad regada", el *Paquete Foro (posts)* se conecta a `if(esModerador)... en cada método`, o sea la validación vive repetida dentro del propio paquete. En la subgráfica con AOP, el *Paquete Foro (limpio)* se conecta al *Aspecto Seguridad (un solo lugar)*, que es el nodo final.
+>
+> **Por qué importa:** la diferencia entre las dos ramas es exactamente lo que el deck llama code scattering frente a la solución por aspecto, y es la base del Error 2 de esta nota.
+>
+> **Ejemplo:** en el foro de un curso de ESPOL, sin aspecto cada método de moderación repite su propio `if`; con el aspecto, la regla vive en un solo paquete.
+>
 > | Concepto AOP | Qué Es | Ejemplo (clase Account) |
 > |---|---|---|
 > | **Join point** | Punto identificable de ejecución (método, asignación) | Ejecución de `credit()`, acceso a `_balance` |
@@ -116,22 +128,52 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 
 > [!info] 📖 El deck de cátedra: AOP en figuras (02b, pp. 13-20)
 > *"Programación Orientada a Aspectos (AOP) es un paradigma de programación que complementa la programación orientada a objetos…"* — el deck lo desarrolla con la figura del **concern transversal** y luego con los dos síntomas de mala modularidad.
+>
+> **Se lee así:** El deck define AOP como un paradigma que complementa la programación orientada a objetos separando los concerns de un sistema para mejorar su modularización, y muestra el ejemplo del paquete Foro: su propósito es mostrar y manejar los posts, pero igual necesita seguridad para validar que solo los moderadores puedan aprobar o borrar; AOP permite mover ese aspecto de seguridad a su propio paquete y dejar a los demás objetos con una responsabilidad clara. Después desarrolla los dos síntomas de mala modularidad, el *code tangling* (un módulo manipula múltiples concerns simultáneamente) y el *code scattering* (un único asunto implementado en varios módulos, por bloques duplicados o por bloques complementarios), y cierra con el *weaving*.
+>
+> **Por qué importa:** el deck construye el argumento AOP en tres pasos —problema, síntomas, mecanismo de tejer— y la nota reproduce esa secuencia con el diagrama del concern transversal y la tabla de join point, pointcut, advice y weaving.
+>
+> **Ejemplo:** en el foro de un curso de ESPOL, el "aspecto de seguridad" del deck es el paquete donde vive la regla de moderadores, y el *code scattering* es lo que ocurre si esa regla se repite en cada controlador.
 
 > [!note] 🖼️ captura 02b-p14 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p14.png]]
+>
+> **Se lee así:** La diapositiva introduce el AOP con la figura 1.1, "Viewing a system as a composition of multiple concerns". El sistema se ve como un conjunto de capas de concerns —*Business Logic Concerns*, *Persistence* y *Logging*— y de *System Implementation modules*, donde cada módulo de implementación atiende un elemento de cada concern que el sistema necesita cubrir.
+>
+> **Por qué importa:** esa es la definición operativa de modularidad que el deck quiere: un módulo no cubre un concern entero, sino un elemento de cada concern, y por eso algunos concerns se cruzan.
+>
+> **Ejemplo:** en un sistema de ESPOL, el módulo `Factura` implementa lógica de negocio, y el logging y la persistencia son concerns que lo atraviesan sin pertenecerle.
 
 > [!note] 🖼️ captura 02b-p16 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p16.png]]
+>
+> **Se lee así:** La diapositiva muestra el síntoma del *code tangling* en código: una clase de negocio que extiende de `OtherBusinessClass` acumula en un mismo método la preocupación central y varias periféricas —log de stream, cache, persistencia, verificación de autorización, cumplimiento de contratos, bloqueo para thread-safety y registro del resultado— con el comentario de la propia figura: "more operations above addressing multiple concerns".
+>
+> **Por qué importa:** muestra en código lo que la nota llama "un módulo manipula múltiples concerns a la vez": el problema no es que herede, es que cada método mezcla eslabones que cambian por motivos distintos.
+>
+> **Ejemplo:** en un proyecto de ESPOL, un `aprobarPost` que valida permisos, registra el log y persiste al mismo tiempo es exactamente ese tangling.
 
 > [!note] 🖼️ captura 02b-p18 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p18.png]]
+>
+> **Se lee así:** La diapositiva presenta el segundo síntoma con la figura 1.8, "Code scattering caused by the need to place nearly identical code blocks in multiple modules to implement a functionality". En el sistema bancario dibujado (contabilidad, banca por internet, ventanilla y atención al cliente) muchos módulos deben incrustar el código que asegura que solo los usuarios autorizados accede a los servicios.
+>
+> **Por qué importa:** el scattering no siempre es duplicación literal: también aparece como bloques de código complementarios, con un módulo central de autenticación y la autorización repartida módulo por módulo.
+>
+> **Ejemplo:** en un sistema de ESPOL, si cada controlador de la aplicación web repite su propia validación de sesión, se está reproduciendo este scattering.
 
 > [!note] 🖼️ captura 02b-p20 — Paradigma Orientado a Aspectos — AOP (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p20.png]]
+>
+> **Se lee así:** La diapositiva "Paradigma orientado a aspectos: Weaving" muestra el proceso de tejer: un *base/core program* y un *aspect* se combinan mediante el *weave* para producir el *final system*, que ya lleva el comportamiento del aspecto integrado.
+>
+> **Por qué importa:** explica cómo el aspecto deja de ser un archivo aparte y pasa a estar dentro del sistema ejecutable, que es lo que permite que la lógica transversal exista sin estar copiada en cada clase.
+>
+> **Ejemplo:** en un proyecto de ESPOL, el *base/core program* es la aplicación de foro y el *aspect* es el de seguridad; el sistema final ya valida moderadores sin que el paquete Foro repita la guarda.
 
 > [!note] 💡 Punto clave del deck
 >
@@ -168,22 +210,52 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 
 > [!info] 📖 El deck de cátedra: componentes en figuras (02b, pp. 33-40)
 > *"Un componente es una unidad de software independiente, desplegable que está completamente definida y accedida por medio de un conjunto de interfaces…"* — seguido de las características, la composición y los modelos de componente.
+>
+> **Se lee así:** El deck recorre el componente en tres planos. Primero sus características: *composable*, *deployable*, *documented*, *independent* y *standardized*. Segundo su composición: la figura del adaptador muestra cómo un componente propio se interpone entre un sensor y un colector de datos para que ambos se desarrollen por separado. Tercero su proceso: identificar componentes candidatos, modificar los requerimientos según lo disponible, diseñar el sistema con reuso e integrar componentes y sistemas COTS; y al final, los modelos de componente como conjuntos de estándares de implementación, documentación y despliegue (EJB, .NET, Corba).
+>
+> **Por qué importa:** el deck no trata el componente como una clase grande, sino como una unidad con contrato, estándar y proceso de integración, que es exactamente el salto hacia el diseño por componentes de la Unidad 2.
+>
+> **Ejemplo:** en un proyecto de ESPOL, integrar una librería externa de reportes exige comprobar que cumple las cinco características y que el modelo de componentes cubre su despliegue, no solo que compile.
 
 > [!note] 🖼️ captura 02b-p33 — Paradigma Orientado a Componentes (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p33.png]]
+>
+> **Se lee así:** La tabla enumera cinco características de un componente: *Composable* (toda interacción externa pasa por interfaces públicamente definidas), *Deployable* (es autocontenido y opera como entidad independiente sobre una plataforma de componentes), *Documented* (está totalmente documentado, con la sintaxis y, idealmente, la semántica de sus interfaces), *Independent* (se puede componer y desplegar sin depender de componentes específicos) y *Standardized* (conforma a un modelo de componentes estándar).
+>
+> **Por qué importa:** estas cinco propiedades son la vara de medir para decidir si algo es realmente un componente reutilizable o solo una clase con buen nombre.
+>
+> **Ejemplo:** al elegir una librería de pagos para un proyecto de ESPOL, se revisa si es documentada, desplegable por separado y estándar antes de llamarla "componente".
 
 > [!note] 🖼️ captura 02b-p34 — Paradigma Orientado a Componentes (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p34.png]]
+>
+> **Se lee así:** La diapositiva "Composición de componentes" muestra la figura 16.12: un *Adaptor* que enlaza un *Data collector* con un *sensor*. Del lado del sensor aparecen `start`, `get data` y `sensorData`; del lado del colector, `addSensor`, `removeSensor`, `startSensor`, `stopSensor`, `testSensor`, `initialize`, `report` y `listAll`.
+>
+> **Por qué importa:** ilustra que componer no es concatenar clases sino interponer un componente propio entre dos externos, para que ambos puedan seguir evolucionando por separado.
+>
+> **Ejemplo:** en el proyecto de ESPOL, un adaptador propio entre el sensor del laboratorio y el módulo que registra las lecturas es el mismo patrón de la figura.
 
 > [!note] 🖼️ captura 02b-p38 — Paradigma Orientado a Componentes (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p38.png]]
+>
+> **Se lee así:** La diapositiva reúne dos figuras del libro: "Figure 16.7 CBSE with reuse" y "Figure 16.8 The component identification process". El diagrama de la derecha es un flujo con los pasos *Identify candidate components according to discovered components*, *Component selection* (con un bucle de *search* y *validation*), *Modify requirements*, *Architectural design* y *Compose components*.
+>
+> **Por qué importa:** el diagrama muestra el orden real del proceso: no se compone primero y se busca después, se identifican candidatos, se ajustan los requerimientos y recién ahí se diseña y se compone.
+>
+> **Ejemplo:** en un proyecto de ESPOL, antes de integrar una pasarela de pagos existente se revisan los candidatos, se ajustan los requerimientos a lo que la pasarela soporta y recién después se diseña el framework de integración.
 
 > [!note] 🖼️ captura 02b-p40 — Paradigma Orientado a Componentes (Deck 02b)
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Archivos/Paradigmas/dsw-02b-p40.png]]
+>
+> **Se lee así:** La diapositiva define el modelo de componentes como "una definición de estándares para implementación, documentación y despliegue de componentes". Los estándares aseguran que los componentes puedan interoperar y que el middleware de ejecución soporte su operación. Los ejemplos que da son los modelos Enterprise JavaBeans (EJB), Microsoft .NET y Corba.
+>
+> **Por qué importa:** un modelo es el contrato que hace que dos componentes de distintos proveedores se entiendan; sin estándar, "integrar" significa que alguien escribe el pegamento a mano.
+>
+> **Ejemplo:** en un proyecto de ESPOL que integra un servicio de pagos, el modelo del componente (por ejemplo, un modelo de servicios web) es lo que garantiza que el cliente propio y el servicio puedan interoperar.
 
 > [!note] 💡 Modelos de componente (p. 40)
 >
@@ -207,6 +279,12 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Paradigma Uso
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-03-flow.svg]]
+>
+> **Se lee así:** El diagrama parte de "Nuevo módulo" y pregunta "¿Hay un concern transversal?". Si la respuesta es "Sí: seguridad, log, etc.", la salida es aislarlo en un aspecto (AOP). Si es "No", pregunta "¿Existe componente que lo resuelva?" — si es "Sí", se reutiliza e integra (componentes); si es "No", pregunta "¿El problema es transformar datos?" — si es "Sí", estilo funcional + inmutable; si es "No", OO con contratos y patrones.
+>
+> **Por qué importa:** la última rama (OO con contratos y patrones) muestra que OO es el estilo de salida por defecto: los otros tres son desvíos justificados, no el camino principal.
+>
+> **Ejemplo:** en un módulo de ESPOL que solo transforma datos de un CSV a otro, el diagrama lleva a "estilo funcional + inmutable" y no a una capa de clases.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -379,6 +457,12 @@ tags: [CCPG1042, unidad1, paradigmas, diseno-software, poa, componentes]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u1-04-04-mind.svg]]
+>
+> **Se lee así:** El mapa mental recorre *Paradigmas* → *Estilos* (imperativo, declarativo), *AOP* (concerns, weaving), *Componentes* (interfaces, COTS) y *Martin* (quita algo, prueba, inmutable). Cada rama nombra las palabras clave que el Control 01 puede pedir.
+>
+> **Por qué importa:** funciona como índice de repaso: si puedes recorrer el mapa completo de memoria, tienes los cuatro bloques de la unidad cubiertos.
+>
+> **Ejemplo:** para el control de ESPOL, el mapa sirve como lista de verificación: si no puedes ubicar "weaving" ni "COTS" en él, todavía falta repasar la sección de AOP o la de componentes.
 
 > [!success] 🔍 Comparación Final
 >

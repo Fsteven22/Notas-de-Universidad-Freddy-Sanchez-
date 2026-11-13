@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 ---
 # 💻 Pseudocódigo y Algoritmos
 
@@ -12,7 +13,7 @@ dg-publish: true
 > - Esta nota cubre la **sintaxis básica** (asignación, `if`, `while`, `for`, funciones) y la noción formal de **algoritmo**.
 > - Se conecta con [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] y [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]], donde estos mismos algoritmos se analizan para obtener sus cotas asintóticas.
 > 
-> ![[../Diagramas/dis-u4-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-04-01-graph.svg]]
 
 ---
 
@@ -210,8 +211,7 @@ dg-publish: true
 
 ---
 
-## 🎓 Ejemplos Avanzados: [[02 - Cuantificadores|Cuantificadores]] Lógicos
-
+## 🎓 Ejemplos Avanzados: Cuantificadores Lógicos
 > [!example] 🟢 Valor lógico de $\forall x: P(x)$
 > 
 > Sea $P$ una función proposicional cuyo dominio de discurso son $d_1,\dots,d_n$:
@@ -282,7 +282,9 @@ dg-publish: true
 > }
 > ```
 
-![[ChatGPT Image 18 ago 2026, 20_24_30.png]]
+> [!note] 🖼️ Captura — Otros Algoritmos Clásicos
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_24_30.png]]
 
 ---
 
@@ -292,6 +294,8 @@ dg-publish: true
 > 
 > - [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] — cómo obtener cotas asintóticas a partir de una fórmula ya dada.
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] — cómo obtener esas mismas cotas contando operaciones directamente sobre este seudocódigo, incluyendo los algoritmos recursivos.
+
+---
 
 ## 📚 Referencias
 
@@ -304,19 +308,22 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Leo y escribo pseudocódigo para algoritmos secuenciales.
 > - [ ] Identifico estructuras de control (if, while, for, repeat).
 > - [ ] Trazeo la ejecución de un algoritmo paso a paso.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Diseño algoritmos que resuelven problemas de búsqueda y ordenamiento.
 > - [ ] Identifico recursión en pseudocódigo y la expreso como recurrencia.
 > - [ ] Comparo algoritmos iterativos vs recursivos para el mismo problema.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Diseño algoritmos divide y vencerás y expreso su recurrencia.
 > - [ ] Analizo la corrección de algoritmos usando invariantes.
 > - [ ] Optimizo algoritmos eliminando llamadas recursivas innecesarias.

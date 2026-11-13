@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, leyes-de-conjuntos, de-morgan, inclusion-exclusion, demostraciones, MATG1051]
 ---
 
 # ⚖️ Leyes de Conjuntos
@@ -10,7 +11,7 @@ dg-publish: true
 >
 > Las **leyes de conjuntos** son identidades que permiten simplificar y transformar expresiones con conjuntos, de manera similar a como el álgebra transforma expresiones numéricas. Todas se obtienen de las correspondientes leyes para proposiciones lógicas.
 >
-> ![[../../Diagramas/dis-u1-13-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-13-01-graph.svg]]
 >
 > **En esta nota:** tabla completa de leyes, dualidad, y cómo cada ley de conjuntos espeja una ley proposicional (De Morgan, distributiva) — si dominas las de lógica, estas salen gratis.
 >
@@ -228,7 +229,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-13-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-13-02-graph.svg]]
 
 ---
 
@@ -340,6 +343,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[02 - Operaciones y Diagramas de Venn]]
 > - Siguiente: [[04 - Cardinalidad y Leyes de Cardinalidad]]
+
+---
 
 ## 📚 Referencias
 

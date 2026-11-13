@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-de-verdad, equivalencias, circuitos-combinatorios, compuertas-logicas, MATG1051]
 ---
 
 # 🔣 Lógica Proposicional
@@ -19,7 +20,7 @@ dg-publish: true
 > 
 > Sus técnicas son especialmente útiles en **computación** y **ciencias de la información**.
 >
-> ![[../../Diagramas/dis-u1-03-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-01-graph.svg]]
 >
 > **En esta nota:** qué cuenta como proposición (y qué no: preguntas, órdenes, predicados abiertos), los 5 conectivos con su tabla, y cómo leer tautologías y contradicciones — la base de todo el curso.
 >
@@ -95,7 +96,7 @@ dg-publish: true
 
 > [!note] 🗺️ Mapa — ¿Cuándo es verdadero cada conectivo?
 >
-> ![[../../Diagramas/dis-u1-03-02-flow.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-02-flow.svg]]
 >
 > **Se lee así:** memoriza el único caso que rompe cada conectivo; todo lo demás es el caso contrario.
 
@@ -274,7 +275,7 @@ dg-publish: true
 
 > [!note] 📋 Resumen de Contectivos
 > 
-> ![[../../Diagramas/dis-u1-03-03-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-03-graph.svg]]
 > 
 > | Conectivo            | Símbolo               | Nombre               | Falso cuando...              |
 > | -------------------- | --------------------- | -------------------- | ---------------------------- |
@@ -348,7 +349,8 @@ dg-publish: true
 >     Equivalente a decir que $P \leftrightarrow Q$ es una **tautología**.
 
 > [!success] 📋 Principales Equivalencias Lógicas
-> ![[Pasted image 20260517162520.png]]
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260517162520.png]]
 > **Leyes de identidad:**
 > 
 > |Ley|Expresión|
@@ -434,7 +436,7 @@ dg-publish: true
 > 
 > Los **circuitos combinatorios** (o circuitos lógicos) son sistemas digitales cuya salida depende **únicamente** de los valores actuales de las entradas. Están construidos con **compuertas lógicas** que implementan directamente los conectivos de la lógica proposicional.
 > 
-> ![[../../Diagramas/dis-u1-03-04-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-04-graph.svg]]
 
 ### 🔌 Compuertas Lógicas Básicas
 
@@ -451,7 +453,10 @@ dg-publish: true
 > |**NAND**|$\neg(p \wedge q)$|AND con círculo|Falso solo si ambas entradas son 1|
 > |**NOR**|$\neg(p \vee q)$|OR con círculo|Verdadero solo si ambas entradas son 0|
 > 
-![[ChatGPT Image 20 may 2026, 13_02_00.png]]
+
+> [!note] 🖼️ Captura — Circuitos Combinatorios
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 may 2026, 13_02_00.png]]
 
 > [!example] 🧮 Tablas de Verdad de Compuertas
 > 
@@ -510,7 +515,8 @@ dg-publish: true
 > q ───────────┘          ├──[ AND ]──→ Salida
 > r ──────────────────────┘
 > ```
-> ![[ChatGPT Image 20 may 2026, 13_05_26.png]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 may 2026, 13_05_26.png]]
 > 
 > |$p$|$q$|$r$|$\neg p$|$\neg p \vee q$|$(\neg p \vee q) \wedge r$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -548,7 +554,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-05-graph.svg]]
 
 ---
 
@@ -678,6 +686,8 @@ dg-publish: true
 >
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Siguiente: [[02 - Proposiciones Condicionales y Equivalencia Lógica]]
+
+---
 
 ## 📚 Referencias
 

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [discretas, unidad4, guia-problemas]
 ---
 
 # 📘 Guía de Problemas 4 - Ejercicios Resueltos
@@ -18,7 +19,9 @@ dg-publish: true
 
 ---
 
-![[GUÍA DE PROBLEMAS 4.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Guías/GUÍA DE PROBLEMAS 4.pdf]]
 
 ## 📚 4.1 — Pseudocódigo y Algoritmos Básicos
 
@@ -243,7 +246,7 @@ dg-publish: true
 >
 > **Paso 2 — Conexión con Fibonacci:** Con $F_1 = 1$, $F_2 = 1$, $F_{k} = F_{k-1} + F_{k-2}$, se tiene $a_n = F_{n+1}$.
 >
-> ![[../Diagramas/dis-u4-07-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-07-01-graph.svg]]
 >
 > **Paso 3 — Fórmula explícita (Binet):** La ecuación característica $t^2 - t - 1 = 0$ tiene raíces $\phi = \frac{1+\sqrt{5}}{2}$ y $\psi = \frac{1-\sqrt{5}}{2}$. Con $a_1 = 1$, $a_2 = 2$:
 >
@@ -462,7 +465,7 @@ dg-publish: true
 
 ---
 
-> [!summary]
+> [!summary]📝 Resumen
 >
 > Ideas que debes llevarte: el pseudocódigo se analiza contando comparaciones u operaciones dominantes; $O$ acota por arriba y $\Theta$ encierra entre dos múltiplos; toda recurrencia necesita condiciones iniciales; la ecuación característica convierte recurrencias de orden 2 en una cuadrática; los términos no homogéneos agregan una solución particular; los lazos con división entre 2 producen $\log n$ y los lazos con raíz producen potencias fraccionarias que al sumarse dan $\Theta(n^3)$.
 >
@@ -474,28 +477,38 @@ dg-publish: true
 > |Ecuación característica $t^2 - c_1 t - c_2 = 0$|Recurrencias lineales homogéneas de orden 2|
 > |Ensayo $An + B$ o $An$ para el término extra|Recurrencias no homogéneas con constante o lineal|
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+> 
 > - [ ] Escribo pseudocódigo que cuenta divisores, busca la última ocurrencia y verifica función y sobreyectividad con una matriz.
 > - [ ] Aplico la definición de $O$ y $\Theta$ con constantes $C$ y $k_0$ explícitas.
 > - [ ] Planteo la recurrencia de la escalera y de poblaciones con crecimiento porcentual.
 
 > [!note] 🎯 Nivel Intermedio
+> 
 > - [ ] Resuelvo recurrencias lineales de orden 2 con la ecuación característica y aplico condiciones iniciales.
 > - [ ] Resuelvo la recurrencia no homogénea $c_n = 3c_{n-1} - 2c_{n-2} + 4$ con solución particular.
 > - [ ] Cuento operaciones en lazos con $\lfloor \sqrt{n} \rfloor$, halvings y dobles lazos con raíz.
 
 > [!note] 🎯 Nivel Avanzado
+> 
 > - [ ] Demuestro fórmulas explícitas por inducción fuerte, como $x_n = 2n - 1$.
 > - [ ] Acoto sumas con integrales para probar $\Theta(n^3)$ en el doble lazo con $\lfloor \sqrt{i} \rfloor$.
 > - [ ] Combino recurrencia homogénea y particular para modelos con término $80n$ y factor $1{,}3$.
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u4-07-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-07-02-graph.svg]]
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[01 - Relaciones de Recurrencia]] — definición y método iterativo
 > - Método: [[02 - Recurrencia Homogénea]] — ecuación característica
 > - Base: [[03 - Pseudocódigo y Algoritmos]] — escritura de pseudocódigo

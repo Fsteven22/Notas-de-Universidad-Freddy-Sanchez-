@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sumador-en-serie, MATG1051]
 ---
 
 # 🖥️ Máquinas de Estado Finito
@@ -18,7 +19,7 @@ dg-publish: true
 > - Protocolos de red y validación de formatos (expresiones regulares).
 > - Control industrial y sistemas embebidos (semáforos, ascensores, máquinas expendedoras).
 >
-> ![[../Diagramas/dis-u6-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-01-graph.svg]]
 
 ---
 
@@ -42,7 +43,7 @@ dg-publish: true
 >
 > Un **retraso unitario de tiempo** acepta como entrada un bit $x_t$ en el tiempo $t$ y produce como salida $x_{t-1}$, el bit recibido en el tiempo $t-1$.
 >
-> ![[../Diagramas/dis-u6-02-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-02-graph.svg]]
 >
 > **Observación:** el retraso unitario permite almacenar información del instante anterior — es el bloque más simple que introduce "memoria" en un sistema digital.
 
@@ -77,7 +78,7 @@ dg-publish: true
 
 > [!note] 🔩 Estructura del sumador en serie
 >
-> ![[../Diagramas/dis-u6-02-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-03-graph.svg]]
 >
 > El **sumador completo** calcula el bit de suma $z_t$ y el nuevo acarreo $c_t$. El **retraso** guarda $c_t$ para usarlo como $c_{t-1}$ en el siguiente instante — esto es exactamente lo que le da "memoria" al sumador.
 
@@ -172,7 +173,7 @@ dg-publish: true
 
 > [!note] 📊 Diagrama del ejemplo de dos estados
 >
-> ![[../Diagramas/dis-u6-02-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-04-graph.svg]]
 
 ---
 
@@ -214,7 +215,7 @@ dg-publish: true
 >
 > donde $NC$: no hay acarreo, $C$: hay acarreo. El estado inicial es $NC$.
 >
-> ![[../Diagramas/dis-u6-02-05-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-05-graph.svg]]
 >
 > La salida de cada transición es el bit de suma; el nuevo estado indica si queda acarreo para el siguiente paso.
 
@@ -235,7 +236,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué modelo usar?
 
-![[../Diagramas/dis-u6-02-06-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión: ¿Qué modelo usar
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-06-graph.svg]]
 
 ---
 

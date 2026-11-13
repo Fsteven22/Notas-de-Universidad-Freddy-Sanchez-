@@ -30,6 +30,19 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-01-graph.svg]]
+>
+> **Se lee así:** el diagrama parte de un **dolor de diseño** y abre una pregunta única:
+> **¿cuál?**. De ella salen tres ramas, cada una con el patrón al que lleva: **algoritmos
+> cambian → Strategy**, **responsabilidades se acumulan → Decorator** y **muchos deben enterarse
+> → Observer**. No hay un cuarto camino: si el dolor es de otro tipo, este diagrama no aplica.
+>
+> **Por qué importa:** estos tres son los dolores que el curso se compromete a resolver. Saber
+> leer el dolor es más útil que memorizar los nombres, porque es el dolor —y no la estructura de
+> clases— lo que decide el patrón.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el medio de pago es un **algoritmo que cambia**
+> (tarjeta o PayPal) y la confirmación del cobro debe llegar a varios: el primer caso es
+> Strategy y el segundo Observer.
 
 > [!info] 🖼️ Figura
 >
@@ -131,6 +144,21 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Cuál de los Tres
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-02-flow.svg]]
+>
+> **Se lee así:** es un diagrama que arranca en **necesito flexibilidad** y pregunta **¿qué
+> varía?**. Según la respuesta se toma un camino distinto: **algoritmo completo → Strategy**
+> («una clase por variante»), **capas opcionales → Decorator** («envuelve y suma») o **quién se
+> entera → Observer** («publica y suscribe»). Cada rama incluye su lema de una línea, así que
+> el diagrama también dice qué te llevas aplicado.
+>
+> **Por qué importa:** la pregunta «¿qué varía?» evita el error de elegir patrón por moda. Si lo
+> que cambia es el algoritmo completo, una clase por variante; si lo que se acumula son capas
+> opcionales, envolver; y si lo que hay que avisar es un conjunto de interesados, publicar y
+> suscribir.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, si un pedido puede cobrar «sin descuento», «con
+> descuento por cupón» y «con descuento por antigüedad», lo que se acumula son **capas
+> opcionales** y el camino es Decorator, no tres subclases de `Pedido`.
 
 > [!info] 🖼️ Figura
 >
@@ -299,6 +327,19 @@ tags: [CCPG1042, unidad3, strategy, decorator, observer, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u3-03-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **Esenciales I** y tres ramas, una por patrón. Cada
+> rama tiene un par de etiquetas: **Strategy** lleva **algoritmos** y **sin `if`**; **Decorator**
+> lleva **capas** y **sin herencia**; **Observer** lleva **suscripción** y **sin acople**. La
+> segunda etiqueta de cada rama es justamente lo que el patrón elimina.
+>
+> **Por qué importa:** el mapa resume los tres patrones por el costo que pagan. Strategy borra el
+> `if` de variantes, Decorator borra la herencia explosiva y Observer borra el acoplamiento
+> N-a-N; reconocer ese «sin algo» es lo que hace que el patrón valga la pena.
+>
+> **Ejemplo:** en el ejemplo de canal de aviso de la Unidad 3 (email, SMS, push), el `Notificador`
+> es Observer: publica el evento y cada canal se suscribe **sin acople**, en vez de que el
+> notificador conozca las tres clases concretas.
 
 > [!info] 🖼️ Figura
 >

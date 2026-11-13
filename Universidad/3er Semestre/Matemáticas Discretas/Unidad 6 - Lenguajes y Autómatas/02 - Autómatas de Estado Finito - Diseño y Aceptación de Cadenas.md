@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion, lenguajes-formales, MATG1051]
 ---
 
 # 🤖 Autómatas de Estado Finito
@@ -16,7 +17,7 @@ dg-publish: true
 > - **Validación de formatos**: correos electrónicos, números de tarjeta, protocolos de red.
 > - **Videojuegos e IA simple**: NPCs con comportamientos que cambian según una secuencia de eventos aceptada o no.
 >
-> ![[../Diagramas/dis-u6-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-01-graph.svg]]
 
 ---
 
@@ -67,7 +68,7 @@ dg-publish: true
 
 > [!note] 📋 Diagrama del ejemplo — cadenas que terminan en $a$
 >
-> ![[../Diagramas/dis-u6-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-02-graph.svg]]
 >
 > **Lectura:** este diagrama acepta cadenas cuya trayectoria termina en $\sigma_1$ o $\sigma_2$ — es decir, cadenas cuyos últimos dos símbolos leídos no son ambos $b$ consecutivos, equivalentemente, cadenas que **no terminan en al menos dos símbolos $b$ consecutivos**.
 
@@ -157,7 +158,7 @@ dg-publish: true
 >
 > Se usan dos estados: $NA$ (no se ha encontrado una $a$) y $A$ (ya se encontró una $a$). El estado inicial y único estado aceptante es $NA$.
 >
-> ![[../Diagramas/dis-u6-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-03-graph.svg]]
 
 > [!example] 🟢 Diseño 2 — Número impar de símbolos $a$
 >
@@ -165,7 +166,7 @@ dg-publish: true
 >
 > Se usan dos estados: $E$ (número par de $a$ leídas) y $O$ (número impar). El estado inicial es $E$; el estado aceptante es $O$.
 >
-> ![[../Diagramas/dis-u6-03-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-04-graph.svg]]
 
 ---
 
@@ -186,7 +187,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: Proceso de Diseño y Verificación
 
-![[../Diagramas/dis-u6-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión: Proceso de Diseño y Verificación
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-05-graph.svg]]
 
 ---
 
@@ -243,7 +246,7 @@ dg-publish: true
 >
 > **5.** Estados $S=\{S_0,S_1\}$: $S_0$ = "el último símbolo leído no fue 1 (o no se ha leído nada)", $S_1$ = "el último símbolo leído fue 1". Estado inicial $S_0$; estado aceptante $\{S_1\}$. Transiciones: $f(S_0,0)=S_0$, $f(S_0,1)=S_1$, $f(S_1,0)=S_0$, $f(S_1,1)=S_1$.
 >
-> ![[../Diagramas/dis-u6-03-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-03-06-graph.svg]]
 >
 > **6.** Igual al "Diseño 1" pero invirtiendo los estados aceptantes: $NA$ (aún no se lee $a$, no aceptante) y $A$ (ya se leyó una $a$, **aceptante**). Estado inicial $NA$; $\mathcal{A}=\{A\}$. Transiciones: $f(NA,a)=A$, $f(NA,b)=NA$, $f(A,a)=A$, $f(A,b)=A$ (una vez en $A$ se permanece ahí, ya que la condición "contiene al menos una $a$" no puede dejar de cumplirse).
 

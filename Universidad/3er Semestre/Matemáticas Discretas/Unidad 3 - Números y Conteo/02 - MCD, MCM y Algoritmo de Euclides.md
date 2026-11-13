@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de-numeros, MATG1051, unidad3, ESPOL]
 ---
 # 📐 MCD, MCM y Algoritmo de Euclides
 
@@ -17,7 +18,7 @@ dg-publish: true
 > 
 > Imagina dos engranajes con $30$ y $105$ dientes. El MCD es el tamaño del engranaje auxiliar más grande que encaja perfectamente en ambos. El MCM es el número mínimo de dientes que deben girar para que ambos engranajes vuelvan simultáneamente a su posición inicial.
 > 
-> ![[../Diagramas/dis-u3-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -234,7 +235,7 @@ dg-publish: true
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[../Diagramas/dis-u3-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-02-graph.svg]]
 > 
 > ---
 > 
@@ -262,7 +263,7 @@ dg-publish: true
 > |**Factorización prima**|Factorizar ambos, tomar mínimos exponentes|Se necesita también el MCM|
 > |**Algoritmo de Euclides**|Divisiones sucesivas hasta residuo $0$|Números grandes, solo se necesita el MCD|
 > 
-> ![[../Diagramas/dis-u3-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-03-graph.svg]]
 
 ---
 
@@ -289,7 +290,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-03-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-04-graph.svg]]
 
 ---
 
@@ -306,25 +309,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Calculo MCD y MCM de dos números por descomposición en primos.
 > - [ ] Aplico el algoritmo de Euclides para hallar MCD.
 > - [ ] Verifico que MCD(a,b) × LCM(a,b) = a × b.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Uso el algoritmo de Euclides extendido para hallar coeficientes de Bézout.
 > - [ ] Resuelvo ecuaciones diofantineas lineales ax + by = c.
 > - [ ] Calculo MCD y MCM de más de dos números.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Aplico el algoritmo de Euclides extendido para calcular inversos modulares.
 > - [ ] Resuelvo sistemas de congruencias usando el teorema chino del residuo.
 > - [ ] Analizo la complejidad temporal del algoritmo de Euclides.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[01 - Divisibilidad y Números Primos]] — divisibilidad
 > - Siguiente: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]] — conteo

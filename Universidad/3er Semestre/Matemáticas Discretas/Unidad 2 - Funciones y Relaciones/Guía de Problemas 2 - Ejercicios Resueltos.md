@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, guia-problemas, funciones, relaciones, sucesiones, induccion, demostraciones, MATG1051]
 ---
 
 # 📝 Guía de Problemas 2 — Ejercicios Resueltos
@@ -17,7 +18,9 @@ dg-publish: true
 
 ---
 
-![[Guía de problemas 2.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Guías/Guía de problemas 2.pdf]]
 
 ## 🔢 2.1 — Funciones Inyectiva, Sobreyectiva, Composición e Inversa
 
@@ -240,11 +243,11 @@ dg-publish: true
 > 
 > El diagrama sagital tiene dos copias del [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] $A$ (dominio a la izquierda, codominio a la derecha), con flechas de $x$ a $y$ para cada $(x,y) \in R$:
 > 
-> ![[../Diagramas/dis-u2-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-01-graph.svg]]
 > 
 > **(b) Digrafo:** Nodos: 2, 3, 5, 6, 9, 15. Aristas reflexivas en todos; aristas adicionales: $2\to6$, $3\to6$, $3\to9$, $3\to15$, $5\to15$.
 > 
-> ![[../Diagramas/dis-u2-06-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-02-graph.svg]]
 > 
 > **(c) Matriz relativa al orden $2,3,5,6,9,15$:**
 > 
@@ -588,7 +591,7 @@ dg-publish: true
 
 ---
 
-## ∑ 2.4 — Sucesiones, Notación Sigma y Producto
+## 📚 ∑ 2.4 — Sucesiones, Notación Sigma y Producto
 
 > [!example]- 📝 Ejercicio 22 — [[04 - Sucesiones y Cadenas|Sucesión]] $s_n = 2^n + 4 \cdot 3^n$
 > 
@@ -765,32 +768,42 @@ dg-publish: true
 ---
 
 > [!summary] 📋 Resumen
+> 
 > - Inyectividad con contraejemplos o implicación $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$, y sobreyectividad despejando preimágenes o analizando el rango real (Ej. 1–6).
 > - Composición de funciones y de relaciones calculada por tabla de intermedios $b$, con verificación de inyectividad heredada (Ej. 7–8, 14).
 > - Representación de relaciones con diagrama sagital, matriz y digrafo para leer pares y detectar propiedades a simple vista (Ej. 9–13).
 > - Propiedades reflexiva, simétrica, antisimétrica y transitiva para clasificar relaciones en equivalencia u orden parcial y hallar clases (Ej. 15–21).
 > - Notación sigma y producto con inducción, doble suma y aritmética modular para sucesiones y criterios de divisibilidad (Ej. 22–28).
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+> 
 > - [ ] Decido si una función es inyectiva con un contraejemplo o con álgebra directa.
 > - [ ] Construyo la matriz y el digrafo de una relación finita dada por regla.
 > - [ ] Calculo términos de sucesiones y desarrollo sumas sigma y productos simples.
 
 > [!note] 🎯 Nivel Intermedio
+> 
 > - [ ] Demuestro sobreyectividad hallando la preimagen y verificando su existencia en el dominio.
 > - [ ] Verifico las cuatro propiedades de una relación y la clasifico como equivalencia u orden.
 > - [ ] Calculo composiciones $R_1 \circ R_2$ y $R_2 \circ R_1$ con tabla de elementos intermedios.
 
 > [!note] 🎯 Nivel Avanzado
+> 
 > - [ ] Estructuro demostraciones por inducción para identidades con sigma, producto y divisibilidad.
 > - [ ] Hallo clases de equivalencia describiendo el conjunto exacto que cumple la condición.
 > - [ ] Combino funciones, relaciones y sucesiones para modelar problemas nuevos sin guía.
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-06-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-06-03-graph.svg]]
 
 > [!quote] 📖 Fuentes
 > - Guía original: [[Guía de problemas 2.pdf]] en Unidad 0 - Guias y Ejercicios.
@@ -798,6 +811,7 @@ dg-publish: true
 > - R. Johnsonbaugh, _Discrete Mathematics_, 8th ed., Pearson, 2017.
 
 > [!quote] 🔗 Conexiones
+> 
 > - Funciones: [[01 - Funciones]] — base de los Ej. 1–8.
 > - Relaciones: [[02 - Relaciones]] — base de los Ej. 9–14.
 > - Equivalencia y orden: [[03 - Propiedades y Equivalencia]] — base de los Ej. 15–21.

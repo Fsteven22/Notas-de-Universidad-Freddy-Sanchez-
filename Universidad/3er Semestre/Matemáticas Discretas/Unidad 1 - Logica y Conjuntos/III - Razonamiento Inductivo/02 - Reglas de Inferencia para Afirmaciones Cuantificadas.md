@@ -1,9 +1,9 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizacion-universal, generalizacion-existencial, reglas-de-inferencia, MATG1051]
 ---
 
-# 🔢 [[01 - Reglas de Inferencia|Reglas de Inferencia]] para Afirmaciones Cuantificadas
-
+# 🔢 Reglas de Inferencia para Afirmaciones Cuantificadas
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por qué necesitamos reglas cuantificadas?
@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Estas reglas combinan naturalmente con las reglas proposicionales para construir argumentos más complejos.
 >
-> ![[../../Diagramas/dis-u1-09-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-01-graph.svg]]
 >
 > **En esta nota:** las 4 reglas con su restricción (el testigo existencial debe ser **nuevo**, no usado antes), combinadas con MP/MT, y el error clásico: generalizar desde un caso particular.
 >
@@ -29,16 +29,21 @@ dg-publish: true
 > | $P(d),\ \text{para toda } d \in D \Rightarrow \forall x \in D : P(x)$ | **Generalización Universal** |
 > | $\exists x \in D : P(x) \Rightarrow P(d),\ \text{para alguna } d \in D$ | **Particularización Existencial** |
 > | $P(d),\ \text{para alguna } d \in D \Rightarrow \exists x \in D : P(x)$ | **Generalización Existencial** |
-![[ChatGPT Image 2 jun 2026, 01_40_53 1.png]]
+
+> [!note] 🖼️ Captura — Tabla de Reglas para Cuantificadores
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 2 jun 2026, 01_40_53 1.png]]
 
 ---
 
 
 > [!note] 🔍 Mapa — Las 4 direcciones
 >
-> ![[../../Diagramas/dis-u1-09-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-02-graph.svg]]
 >
 > **Se lee así:** universal baja a caso, casos suben a universal; existencial exige testigo fresco.
+
+---
 
 ## 🔍 Reglas Detalladas
 
@@ -174,7 +179,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-09-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-09-03-graph.svg]]
 
 ---
 

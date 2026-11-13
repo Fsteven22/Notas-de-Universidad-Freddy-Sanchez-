@@ -1,8 +1,8 @@
 ---
 dg-publish: true
+tags: [divisibilidad, criterios, binario, hexadecimal, decimal, bases, numeracion, conversion, teoria-de-numeros, MATG1051, unidad3, ESPOL]
 ---
-# 🔣 Criterios de [[01 - Divisibilidad y Números Primos|Divisibilidad]] y Sistemas de Numeración
-
+# 🔣 Criterios de Divisibilidad y Sistemas de Numeración
 ## 🎯 Introducción
 
 > [!info] 💡 ¿Por qué son útiles estos temas?
@@ -17,7 +17,7 @@ dg-publish: true
 > 
 > Un criterio de divisibilidad es como mirar solo el último dígito de un precio para saber si es divisible entre 2 o 5, sin necesidad de hacer la división. Y un sistema de numeración es como cambiar de moneda: el valor es el mismo, solo cambia la forma de representarlo.
 > 
-> ![[../Diagramas/dis-u3-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-01-graph.svg]]
 > 
 > |Tema|Idea central|
 > |---|---|
@@ -137,7 +137,7 @@ dg-publish: true
 > 
 > Se divide repetidamente el número entre $b$. Los **residuos leídos de abajo hacia arriba** forman la representación en base $b$.
 > 
-> ![[../Diagramas/dis-u3-04-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-02-graph.svg]]
 > 
 > **Ejemplo — decimal 146 a binario:**
 > 
@@ -194,13 +194,15 @@ dg-publish: true
 > |Binario → hexadecimal|Agrupar bits de 4 en 4|Cada grupo de 4 bits = 1 dígito hex|
 > |Hexadecimal → binario|Expandir cada dígito|Cada dígito hex = 4 bits|
 > 
-> ![[../Diagramas/dis-u3-04-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-03-graph.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-04-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-04-graph.svg]]
 
 ---
 
@@ -217,25 +219,29 @@ dg-publish: true
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Aplico criterios de divisibilidad para 2, 3, 5, 9 y 11.
 > - [ ] Convierto números entre decimal, binario, octal y hexadecimal.
 > - [ ] Realizo operaciones básicas en sistema binario.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Uso criterios de divisibilidad para simplificar cálculos.
 > - [ ] Convierto fracciones decimales a representación binaria.
 > - [ ] Analizo ventajas de diferentes bases para computación.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de representación en bases arbitrarias.
 > - [ ] Aplico aritmética modular a sistemas de numeración.
 > - [ ] Analizo el impacto de la precisión finita en computación.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[02 - MCD, MCM y Algoritmo de Euclides]]
 > - Relacionado: [[04 - Principios de Multiplicación y Suma]]
 > - Aplicación: [[03 - Pseudocódigo y Algoritmos]] — representación binaria

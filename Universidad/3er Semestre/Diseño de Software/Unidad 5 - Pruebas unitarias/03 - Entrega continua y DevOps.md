@@ -31,6 +31,18 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > [!note] 🗺️ Diagrama — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-01-graph.svg]]
+>
+> **Se lee así:** el diagrama es una tubería de cinco etapas encadenadas: **Commit**, **Build**,
+> **Tests JUnit**, **Paquete** y **Despliegue**. De la etapa **Tests JUnit** sale una flecha
+> lateral marcada 🔴 **rojo** que apunta a **se detiene aquí**: el fallo no es una excepción, es
+> una salida controlada de la tubería.
+>
+> **Por qué importa:** el orden de las cajas es el argumento completo de la unidad: no se puede
+> empaquetar ni desplegar lo que no compiló y no pasó los tests. La salida roja convierte esa
+> condición en automática, sin depender de que alguien se acuerde de no desplegar.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, si el test de descuento de `Pedido` falla en el
+> push, el pipeline se detiene en rojo y tu PR nunca llega a main.
 
 ---
 
@@ -64,6 +76,20 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > [!note] 🗺️ Diagrama — ️ Diagrama de Decisión: ¿Qué Automatizo Primero
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-02-flow.svg]]
+>
+> **Se lee así:** el diagrama es una cascada de tres preguntas. Primero **¿tests automatizados?**:
+> si la respuesta es **no**, dice **primero U5-01: sin tests no hay CI**. Si es **sí**, pregunta
+> **¿build repetible?**; sin build repetible la salida es **scripts de build versionados**, y con
+> él se llega a **CI por push + artefacto**. Entonces aparece la última pregunta, **¿deploy manual
+> duele?**: si duele, **automatiza deploy (CD)**; si todavía no, **quédate en entrega continua**.
+>
+> **Por qué importa:** el diagrama impone el orden en que se invierte el esfuerzo: primero los
+> tests, después el build, después el pipeline y solo al final el despliegue automático. Cada
+> salto está condicionado por el anterior, así que automatizar el deploy sin tests automatizados
+> es automatizar un error.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, si publicas sin suite de JUnit, el diagrama te
+> devuelve al primer paso (U5-01) antes de dejarte configurar el pipeline.
 
 > [!tip] 💡 Lectura del diagrama
 >
@@ -219,6 +245,18 @@ tags: [CCPG1042, unidad5, devops, entrega-continua, diseno-software]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dsw-u5-04-03-mind.svg]]
+>
+> **Se lee así:** es un mapa mental con raíz **DevOps** y tres ramas. **CI** significa **build +
+> tests**, **CD** significa **deploy 1 click** y la rama **Base** dice **Git + main verde**. Las
+> tres se leen de abajo arriba: la base sostiene a las otras dos.
+>
+> **Por qué importa:** el mapa resume la unidad completa en tres capas y deja claro que CI y CD
+> no se inventan: se apoyan en la base. Sin **Git + main verde** no hay sobre qué montar un
+> pipeline, y sin pipeline no hay despliegue de un clic.
+>
+> **Ejemplo:** en el proyecto de curso de ESPOL, el **main verde** que tu equipo protege con PR
+> es la base, y el pipeline que corre `build` + `tests` en cada push es la capa de CI que
+> sostiene el despliegue.
 
 > [!success] 🔍 Comparación Final
 >

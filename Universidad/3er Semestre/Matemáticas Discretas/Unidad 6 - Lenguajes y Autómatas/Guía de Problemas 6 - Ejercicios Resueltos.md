@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [discretas, unidad6, guia-problemas]
 ---
 
 # 📘 Guía de Problemas 6 - Ejercicios Resueltos
@@ -16,7 +17,9 @@ dg-publish: true
 
 ---
 
-![[notas_maquinas_automatas.pdf]]
+> [!note] 🖼️ Captura — la materia
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Lecciones/notas_maquinas_automatas.pdf]]
 
 ## 📚 6.1 — Actividades en clase
 
@@ -42,7 +45,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ![[../Diagramas/dis-u6-04-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-01-graph.svg]]
 >
 > **Paso 2 — Pregunta guía:** ¿cuántas veces se cambia de estado al leer una $a$?
 >
@@ -81,7 +84,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ![[../Diagramas/dis-u6-04-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-02-graph.svg]]
 >
 > **Paso 2 — Trazas de prueba:**
 >
@@ -116,7 +119,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_1\}$.
 >
-> ![[../Diagramas/dis-u6-04-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-03-graph.svg]]
 >
 > **Paso 2 — Prueba de correctitud (acepta todas y sólo las pedidas):**
 >
@@ -126,6 +129,8 @@ dg-publish: true
 > Ejemplo: $bbab \to s_0 \to s_0 \to s_0 \to s_1 \to s_1$: aceptada. $bbb$: aceptada es falso, termina en $s_0$: rechazada.
 >
 > $$\boxed{L = \{\alpha \in \{a,b\}^* \mid \alpha \text{ contiene al menos una } a\}}$$
+
+---
 
 ## 📚 6.2 — Ejercicios propuestos
 
@@ -144,7 +149,7 @@ dg-publish: true
 >
 > Leyenda del diagrama: $s_0$ representa $\sigma_0$, $s_1$ representa $\sigma_1$.
 >
-> ![[../Diagramas/dis-u6-04-04-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-04-graph.svg]]
 >
 > **Paso 2 — Tabla paso a paso para $\alpha = bbaba$:**
 >
@@ -180,7 +185,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_0\}$.
 >
-> ![[../Diagramas/dis-u6-04-05-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-05-graph.svg]]
 >
 > **Paso 2 — Trazas:**
 >
@@ -217,7 +222,7 @@ dg-publish: true
 >
 > Estado inicial: $q_0$. Conjunto de aceptación: $\mathcal{A} = \{q_2\}$. Se necesitan **3 estados mínimos**: hay que distinguir "nada", "llevo una $a$ final pendiente" y "completé $ab$".
 >
-> ![[../Diagramas/dis-u6-04-06-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-06-graph.svg]]
 >
 > **Paso 2 — Trazas:**
 >
@@ -251,7 +256,7 @@ dg-publish: true
 >
 > Estado inicial: $s_0$. Conjunto de aceptación: $\mathcal{A} = \{s_0\}$.
 >
-> ![[../Diagramas/dis-u6-04-07-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-07-graph.svg]]
 >
 > **Paso 2 — Trazas y argumento:**
 >
@@ -296,6 +301,8 @@ dg-publish: true
 > El acarreo siguiente $c_t$ siempre es $0$ o $1$: basta **un bit** de memoria, es decir, exactamente **dos estados** ($NC$ = sin acarreo, $C$ = con acarreo). Más estados serían redundantes porque ninguna otra información del pasado afecta la salida futura.
 >
 > $$\boxed{\text{El acarreo } c_{t-1} \in \{0,1\} \text{ es toda la memoria necesaria: 2 estados}}$$
+
+---
 
 ## 📚 6.3 — Ejercicios complementarios
 
@@ -368,7 +375,7 @@ dg-publish: true
 >
 > Leyenda: $s_0$ representa $\sigma_0$, $s_1$ representa $\sigma_1$, $s_2$ representa $\sigma_2$.
 >
-> ![[../Diagramas/dis-u6-04-08-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-08-graph.svg]]
 >
 > **Paso 2 — Trazas pedidas:**
 >
@@ -412,7 +419,7 @@ dg-publish: true
 >
 > Detalle clave: en $q_2$ con $a$ se va a $q_1$ (esa $a$ puede iniciar un nuevo $abb$), no a $q_0$.
 >
-> ![[../Diagramas/dis-u6-04-09-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-09-graph.svg]]
 >
 > **Paso 2 — Dos trazas de verificación:**
 >
@@ -428,6 +435,7 @@ dg-publish: true
 ---
 
 > [!summary] 📋 Resumen
+> 
 > - Paridad con 2 estados que conmutan: $a$ alterna par/impar (Ej. 1) y $1$ alterna la paridad de unos, con $\varepsilon$ aceptada en el caso par (Ej. 5).
 > - Memoria del último símbolo o sufijo: terminar en $1$ (Ej. 2), terminar en $ab$ con 3 estados (Ej. 6), contener $abb$ con trampa aceptante (Ej. 12).
 > - Estados trampa irreversibles: "ya vi una $a$" acepta todo lo posterior (Ej. 3) y "ya vi una $a$" en negativo rechaza todo lo posterior (Ej. 7).
@@ -435,28 +443,38 @@ dg-publish: true
 > - Sumador en serie: basta 1 bit de acarreo, luego 2 estados (Ej. 8); traza $101 + 011 = 1000_2$ ($5 + 3 = 8$) con paso extra de drenado (Ej. 9).
 > - Lectura fina de autómatas: el autómata del Ej. 11 acepta si el último bloque de $b$'s tiene longitud $\geq 2$ (testigo: $bba$ contiene $bb$ pero se rechaza).
 
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico
+> 
 > - [ ] Distingo $f$ (siguiente estado) de $g$ (salida) y leo una tabla $S \backslash I$ fila por fila.
 > - [ ] Trazo la trayectoria de una cadena corta y decido aceptación según el estado final.
 > - [ ] Sé cuándo se acepta la cadena vacía $\varepsilon$ (sólo si el inicial es aceptante).
 
 > [!note] 🎯 Nivel Intermedio
+> 
 > - [ ] Diseño autómatas de 2–3 estados (paridad, terminar en un símbolo, contener un símbolo).
 > - [ ] Calculo la salida de una MEF para una cadena dada con tabla paso a paso.
 > - [ ] Trazo sumas en serie con acarreo, incluyendo el paso extra de drenado.
 
 > [!note] 🎯 Nivel Avanzado
+> 
 > - [ ] Diseño autómatas de sufijo y subcadena ($ab$, $abb$) con el número mínimo de estados.
 > - [ ] Describo con precisión el lenguaje de un autómata dado, con contraejemplos testigo.
 > - [ ] Justifico cuántos estados mínimos necesita un sistema (acarreo, paridad, residuos).
 
+---
+
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u6-04-10-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-04-10-graph.svg]]
 
 > [!quote] 🔗 Conexiones
+> 
 > - MEF, tabla $S \backslash I$ y sumador en serie: [[01 - Máquinas de Estado Finito - Definición y Estructura]] — base de los Ej. 4, 8, 9 y 10.
 > - Diseño de autómatas, trayectorias y aceptación: [[02 - Autómatas de Estado Finito - Diseño y Aceptación de Cadenas]] — base de los Ej. 1, 2, 3, 5, 6, 7, 11 y 12.
 > - Índice y mapa de la unidad: [[../Matemáticas Discretas|Matemáticas Discretas]] — panorama de la Unidad 6.

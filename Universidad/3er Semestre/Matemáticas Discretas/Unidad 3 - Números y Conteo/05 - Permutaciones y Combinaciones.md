@@ -11,7 +11,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > 
 > La distinción fundamental en conteo es si el **orden de selección importa** o no:
 > 
-> ![[../Diagramas/dis-u3-06-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-06-01-graph.svg]]
 
 ---
 
@@ -32,6 +32,8 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > Ejemplo con $n=4, r=2$: hay $P(4,2)=12$ formas ordenadas ($ab, ba, ac, ca,\ldots$), pero $ab$ y $ba$ son "el mismo grupo" si el orden no importa. Como cada grupo de 2 se puede ordenar de $2!=2$ maneras, divides $12/2=6$. Por eso $C(4,2)=6$.
 > 
 > > 💡 Nunca memorices cuál fórmula lleva el $r!$ abajo — razona: "¿estoy repitiendo grupos por el orden? Si sí, divido por las formas de reordenar ese grupo ($r!$)."
+
+---
 
 ## 🔀 Permutaciones de $n$ elementos
 
@@ -281,6 +283,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 ## 📊 Tabla Resumen General
 
 > [!note] 📊 Resumen general
+> 
 > | | **Sin repetición** | **Con repetición** |
 > |---|---|---|
 > | **Selección ordenada** (permutación) | $\dfrac{n!}{(n-r)!}$ | $\dfrac{n!}{k_1!\cdots k_r!}$ |
@@ -313,25 +316,29 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Calculo permutaciones P(n,r) = n!/(n-r)!
 > - [ ] Calculo combinaciones C(n,r) = n!/(r!(n-r)!).
 > - [ ] Distinguo cuándo importa el orden (permutación) vs cuándo no (combinación).
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo problemas de permutaciones con elementos repetidos.
 > - [ ] Aplico combinaciones con restricciones (selección sin reemplazo).
 > - [ ] Uso identidades de Pascal para simplificar cálculos.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de distribución de objetos en categorías.
 > - [ ] Aplico el principio de inclusión-exclusión a permutaciones con restricciones.
 > - [ ] Conecto combinaciones con el triángulo de Pascal y el teorema del binomio.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[04 - Principios de Multiplicación y Suma]] — fundamentos
 > - Siguiente: [[06 - Teorema del Binomio y Principio del Palomar]]
 > - Relacionado: [[04 - Cardinalidad y Leyes de Cardinalidad]]

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas, discretas, ESPOL, MATG1051, logica, grafos, algoritmos, semester2]
 ---
 
 # 🟧 Bienvenida y Syllabus Matemáticas Discretas

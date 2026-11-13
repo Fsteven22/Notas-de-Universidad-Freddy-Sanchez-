@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-directa, contradiccion, contrarreciproco, prueba-por-casos, axiomas, teoremas, MATG1051]
 ---
 
 # 🧾 Demostraciones
@@ -12,7 +13,7 @@ dg-publish: true
 > 
 > A diferencia de las demostraciones algebraicas (que manipulan equivalencias lógicas paso a paso), aquí se trabaja con proposiciones matemáticas del mundo real: propiedades de enteros, desigualdades, existencia de objetos, etc.
 >
-> ![[../../Diagramas/dis-u1-07-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-07-01-graph.svg]]
 >
 > **En esta nota:** vocabulario (axioma, teorema, lema, corolario), estructura de teorema, métodos directo/indirecto/contradicción/constructivo y cómo elegir método según la forma del enunciado.
 >
@@ -36,9 +37,11 @@ dg-publish: true
 
 > [!note] 📐 Mapa — Vocabulario de demostración
 >
-> ![[../../Diagramas/dis-u1-07-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-07-02-graph.svg]]
 >
 > **Se lee así:** todo nace de axiomas; el teorema es la meta, el lema el andamio, el corolario el regalo.
+
+---
 
 ## 📐 Estructura General de un Teorema
 
@@ -388,7 +391,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-07-03-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-07-03-graph.svg]]
 
 ---
 
@@ -446,11 +451,11 @@ dg-publish: true
 #flashcards/discretas-u1
 
 > [!note] 🧠 Repasa con el plugin Spaced Repetition
-
-- ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
-- ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
-- ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
-- ¿Lección 2026 conjuntos?::$A \subseteq B \cap C$ con $x = 12k+4$: factoriza $4$ (B) y $3$ de $x+2$ (C).
+>
+> - ¿Axioma vs teorema vs lema vs corolario?::Asumido / probado / auxiliar / consecuencia inmediata.
+> - ¿4 técnicas y cuándo?::Directa (P→Q), contradicción (¬Q→absurdo), contrapositiva, casos.
+> - ¿"Existe x" se prueba cómo?::Constructiva: exhibiendo el x.
+> - ¿Lección 2026 conjuntos?::$A \subseteq B \cap C$ con $x = 12k+4$: factoriza $4$ (B) y $3$ de $x+2$ (C).
 
 ---
 

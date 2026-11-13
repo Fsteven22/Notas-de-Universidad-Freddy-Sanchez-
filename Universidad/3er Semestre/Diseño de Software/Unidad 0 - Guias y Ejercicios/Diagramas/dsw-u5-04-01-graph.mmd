@@ -1,0 +1,9 @@
+flowchart TB
+    A["Commit"] --> B["Build"]
+    B --> T["Tests JUnit"]
+    T --> P["Paquete"]
+    P --> D["Despliegue"]
+    T -->|"🔴 Rojo"| X["Se detiene aquí"]
+    style T fill:#e1ffe1 !important
+    style D fill:#e1f5ff !important
+    style X fill:#ffe1e1 !important

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MATG1051]
 ---
 
 # 🔢 Sucesiones y Cadenas
@@ -10,7 +11,7 @@ dg-publish: true
 > 
 > Las **sucesiones** son un caso especial de función: asignan a cada entero en un rango dado un elemento de algún conjunto. Las **cadenas** son sucesiones finitas de elementos, con la diferencia de que el orden importa y las repeticiones se permiten.
 > 
-> ![[../Diagramas/dis-u2-05-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-01-graph.svg]]
 
 ---
 
@@ -65,7 +66,7 @@ dg-publish: true
 
 ---
 
-## ∑ Suma y Producto de Sucesiones
+## 📚 ∑ Suma y Producto de Sucesiones
 
 > [!note] ∑ Definición 9 — Notación de suma y producto
 > 
@@ -167,9 +168,11 @@ dg-publish: true
 
 > [!note] 🔄 Mapa — Recurrencia completa
 >
-> ![[../Diagramas/dis-u2-05-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-02-graph.svg]]
 >
 > **Se lee así:** sin iniciales la ecuación no define nada; el orden dice cuántas necesitas.
+
+---
 
 ## 🔄 Recurrencias
 
@@ -248,9 +251,11 @@ dg-publish: true
 
 > [!note] 🔤 Mapa — Cadena y operaciones
 >
-> ![[../Diagramas/dis-u2-05-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-03-graph.svg]]
 >
 > **Se lee así:** la subcadena exige contigüidad; sin bloque contiguo no hay subcadena.
+
+---
 
 ## 🔤 Cadenas
 
@@ -304,7 +309,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u2-05-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-04-graph.svg]]
 
 ---
 

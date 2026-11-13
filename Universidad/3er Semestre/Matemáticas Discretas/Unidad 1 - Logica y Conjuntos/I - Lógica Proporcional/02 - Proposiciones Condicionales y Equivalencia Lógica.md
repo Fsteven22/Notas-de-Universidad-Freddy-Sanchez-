@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-logica, tautologia, contradiccion, contrarreciproco, leyes-de-morgan, MATG1051]
 ---
 
 # 🔀 Proposiciones Condicionales y Equivalencia Lógica
@@ -21,7 +22,7 @@ dg-publish: true
 > - $q$ = **conclusión** (consecuente)
 > - **Solo es falso** cuando el antecedente es verdadero y el consecuente es falso.
 >
-> ![[../../Diagramas/dis-u1-04-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-01-graph.svg]]
 >
 > **En esta nota:** las formas del condicional en lenguaje natural (*solo si*, *es necesario*), sus 3 variantes con equivalencia, y equivalencias lógicas para simplificar — lo que evalúan los ejercicios 7–12 de la Guía 1.
 >
@@ -71,9 +72,11 @@ dg-publish: true
 
 > [!note] 🔁 Mapa — Derivadas de p → q
 >
-> ![[../../Diagramas/dis-u1-04-02-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-02-graph.svg]]
 >
 > **Se lee así:** solo la contrapositiva conserva el valor; recíproca e inversa son independientes.
+
+---
 
 ## 🔁 Proposiciones Derivadas del Condicional
 
@@ -90,7 +93,7 @@ dg-publish: true
 > 
 > **Relaciones de equivalencia:**
 > 
-> ![[../../Diagramas/dis-u1-04-03-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-03-graph.svg]]
 > 
 > > [!example] 🟢 Ejemplo
 > >
@@ -372,13 +375,17 @@ dg-publish: true
 
 ## 🗺️ Mapa Conceptual
 
-![[../../Diagramas/dis-u1-04-04-graph.svg]]
+> [!note] 🗺️ Diagrama — ️ Mapa Conceptual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-04-graph.svg]]
 
 ---
 
 ## 📊 Resumen de Equivalencias Clave
 
-![[../../Diagramas/dis-u1-04-05-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen de Equivalencias Clave
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-05-graph.svg]]
 
 ---
 
@@ -468,6 +475,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[01 - Proposiciones y conectivos]]
 > - Siguiente: [[01 - Algebra de Proposiciones]]
+
+---
 
 ## 📚 Referencias
 

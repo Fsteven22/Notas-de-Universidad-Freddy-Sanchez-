@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, induccion-matematica, induccion-fuerte, demostraciones, recursion, MATG1051]
 ---
 
 # 🔁 Inducción Matemática
@@ -12,7 +13,7 @@ dg-publish: true
 >
 > **La idea en 1 imagen (dominó):** tumbar infinitas fichas una por una es imposible; basta probar 2 cosas: que cae la **primera** (base) y que **cada ficha tumba a la siguiente** (paso). Con eso, caen todas sin tocarlas una por una.
 >
-> ![[../../Diagramas/dis-u1-10-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-01-graph.svg]]
 >
 > **Dónde la usarás en esta nota:**
 >
@@ -24,7 +25,9 @@ dg-publish: true
 > Es especialmente útil cuando queremos demostrar fórmulas de sumas, desigualdades, propiedades de divisibilidad, o cualquier propiedad que dependa de $n \in \mathbb{N}$.
 
 
-![[file_00000000f17c71fba96939a05e098492.png]]
+> [!note] 🖼️ Captura — Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/file_00000000f17c71fba96939a05e098492.png]]
 
 ---
 
@@ -87,7 +90,7 @@ dg-publish: true
 
 > [!note] 📋 Cómo reconocer cada caso
 >
-> ![[../../Diagramas/dis-u1-10-02-flow.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-02-flow.svg]]
 >
 > ### Caso 1 — Sumatorias (el clásico)
 >
@@ -306,6 +309,8 @@ dg-publish: true
 > - Anterior: [[02 - Reglas de Inferencia para Afirmaciones Cuantificadas]]
 > - Lógica previa: [[03 - Demostraciones]]
 
+---
+
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes
@@ -320,7 +325,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-10-03-flow.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-10-03-flow.svg]]
 
 ---
 

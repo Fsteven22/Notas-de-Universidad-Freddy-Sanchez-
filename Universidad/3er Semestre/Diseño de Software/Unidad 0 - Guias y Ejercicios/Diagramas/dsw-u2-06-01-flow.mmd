@@ -1,0 +1,20 @@
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px', 'useGradient': true, 'gradientStart': '#eeddbb', 'gradientStop': '#bdddee'}}}%%
+flowchart TB
+    A["Relación en el diagrama de clases"] --> B{"¿Qué relación?"}
+    B -->|"Asociación"| C["Atributo de referencia<br/>+ getter/setter"]
+    B -->|"Clase de asociación"| D["Clase propia<br/>con sus atributos"]
+    B -->|"Agregación"| E["Referencia al todo<br/>el parte sobrevive"]
+    B -->|"Composición"| F["El todo CREA el parte<br/>y lo destruye"]
+    B -->|"Generalización"| G["extends<br/>clase abstracta"]
+    B -->|"Realización"| H["implements<br/>interface"]
+    B -->|"Dependencia"| I["Import / parámetro<br/>sin estado guardado"]
+    C --> Z["Código fuente"]
+    D --> Z
+    E --> Z
+    F --> Z
+    G --> Z
+    H --> Z
+    I --> Z
+    style A fill:#e8f4ff !important
+    style B fill:#fff4e6 !important
+    style Z fill:#e6f7e6 !important

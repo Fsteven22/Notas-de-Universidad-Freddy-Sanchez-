@@ -11,7 +11,7 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > 
 > Los **métodos de conteo** permiten determinar cuántos elementos tiene un [[01 - Conjuntos, Cardinalidad y Subconjuntos|conjunto]] o cuántas formas existen de realizar una tarea, **sin listarlos todos**. Los dos principios fundamentales son:
 > 
-> ![[../Diagramas/dis-u3-05-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-01-graph.svg]]
 
 ---
 
@@ -152,9 +152,12 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-05-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-02-graph.svg]]
 
 > [!note] 📊 Multiplicación vs. Suma
+> 
 > | | Multiplicación | Suma |
 > |---|---|---|
 > | **Palabra clave** | "y" | "o" |
@@ -189,25 +192,29 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 ---
 
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Aplico el principio de multiplicación para contar secuencias de eventos.
 > - [ ] Aplico el principio de suma para contar eventos mutuamente excluyentes.
 > - [ ] Distinguo cuándo usar multiplicación vs suma.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Resuelvo problemas de conteo con restricciones (permutaciones con repetición).
 > - [ ] Aplico complemento para contar mediante la contrapositiva.
 > - [ ] Combino ambos principios en problemas de múltiples pasos.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de conteo con sobrerrepresentación (balls and bins).
 > - [ ] Aplico principios a problemas de programación (backtracking).
 > - [ ] Analizo la relación entre conteo y probabilidad.
 
 
 > [!quote] 🔗 Conexiones
+> 
 > - Previo: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
 > - Siguiente: [[05 - Permutaciones y Combinaciones]] — conteo avanzado
 > - Relacionado: [[04 - Cardinalidad y Leyes de Cardinalidad]] — inclusión-exclusión

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-potencia, MATG1051]
 ---
 
 # 🗃️ Conjuntos, Cardinalidad y Subconjuntos
@@ -10,7 +11,7 @@ dg-publish: true
 >
 > La **Teoría de Conjuntos** es la base formal de las Matemáticas Discretas. Un conjunto es la estructura más fundamental sobre la que se construyen relaciones, funciones y estructuras más complejas.
 >
-> ![[../../Diagramas/dis-u1-11-01-graph.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-11-01-graph.svg]]
 >
 > | Concepto | Descripción breve |
 > |---|---|
@@ -214,7 +215,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/dis-u1-11-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-11-02-graph.svg]]
 
 ---
 
@@ -332,6 +335,8 @@ dg-publish: true
 > - Mapa de contenido: [[../../Matemáticas Discretas|Matemáticas Discretas]]
 > - Anterior: [[03 - Inducción Matemática]]
 > - Siguiente: [[02 - Operaciones y Diagramas de Venn]]
+
+---
 
 ## 📚 Referencias
 

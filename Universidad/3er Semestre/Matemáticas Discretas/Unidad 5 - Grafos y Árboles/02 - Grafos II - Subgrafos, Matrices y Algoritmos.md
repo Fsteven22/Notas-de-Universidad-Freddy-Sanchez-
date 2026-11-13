@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algoritmos, MATG1051]
 ---
 # 🕸️ Grafos II — Subgrafos, Matrices y Algoritmos
 
@@ -16,7 +17,7 @@ dg-publish: true
 > - Redes de telecomunicaciones (matrices de adyacencia para representar conexiones)
 > - Diseño de circuitos impresos (minimizar el recorrido de un taladro entre agujeros, como en el ejemplo de la hoja de metal)
 > 
-> ![[../Diagramas/dis-u5-03-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-01-graph.svg]]
 
 ---
 
@@ -36,7 +37,7 @@ dg-publish: true
 > 
 > Grafo original $G$ con vértices ${v_1,\ldots,v_8}$ y aristas ${e_1,\ldots,e_{11}}$. Un subgrafo $G'$ válido puede tomar solo algunas aristas y sus vértices incidentes, por ejemplo:
 > 
-> ![[../Diagramas/dis-u5-03-02-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-02-graph.svg]]
 > 
 > $G'$ conserva únicamente ${v_1,v_3,v_4,v_6,v_7}$ y las aristas ${e_5,e_8,e_{10},e_{11}}$ — cada arista incluida trae consigo sus dos vértices.
 
@@ -53,7 +54,7 @@ dg-publish: true
 
 > [!example] 🟢 Ejemplo 2 — Grafo disconexo y sus componentes
 > 
-> ![[../Diagramas/dis-u5-03-03-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-03-graph.svg]]
 > 
 > Este grafo **no es conexo**: tiene 3 componentes:
 > 
@@ -63,7 +64,7 @@ dg-publish: true
 
 ---
 
-## ∑ Teorema de la Suma de Grados
+## 📚 ∑ Teorema de la Suma de Grados
 
 > [!success] ✅ Teorema — Suma de grados
 > 
@@ -183,7 +184,9 @@ dg-publish: true
 > 
 > > [!tip]- 💡 Idea central del algoritmo Dijkstra es **goloso** (greedy): en cada paso, fija la distancia del vértice más cercano ya conocido, y usa esa distancia fija para intentar **mejorar** (relajar) las distancias de sus vecinos. Una vez que un vértice sale de $T$, su distancia ya no cambia — por eso el algoritmo requiere pesos positivos.
 
-![[ChatGPT Image 18 ago 2026, 18_08_27.png]]
+> [!note] 🖼️ Captura — ️ Algoritmo de Dijkstra
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_08_27.png]]
 
 ---
 
@@ -202,13 +205,17 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué algoritmo necesito?
 
-![[../Diagramas/dis-u5-03-04-graph.svg]]
+> [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Qué algoritmo necesito
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-04-graph.svg]]
 
 ---
 
 ## 🗺️ Resumen Visual
 
-![[../Diagramas/dis-u5-03-05-graph.svg]]
+> [!note] 🗺️ Diagrama — ️ Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-05-graph.svg]]
 
 ---
 
@@ -285,7 +292,8 @@ dg-publish: true
 
 ---
 
-> [!quote] 📖 Referencias [1] Pineda, E. (2025). _Teoría de grafos: continuación_. FCNM-ESPOL.
+> [!quote] 📖 Referencias [1]
+> Pineda, E. (2025). _Teoría de grafos: continuación_. FCNM-ESPOL.
 
 > [!quote] 🔗 Conexiones
 > 

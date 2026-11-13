@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, unidad3]
 ---
 # 🔢 Divisibilidad y Números Primos
 
@@ -17,7 +18,7 @@ dg-publish: true
 > 
 > Imagina que quieres repartir $72$ caramelos en grupos iguales. ¿En cuántos grupos diferentes puedes hacerlo sin que sobre ninguno? Eso es divisibilidad: $72$ es divisible por $1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72$ — exactamente $12$ formas.
 > 
-> ![[../Diagramas/dis-u3-02-01-graph.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-01-graph.svg]]
 > 
 > |Concepto|Fórmula clave|
 > |---|---|
@@ -194,7 +195,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../Diagramas/dis-u3-02-02-graph.svg]]
+> [!note] 🗺️ Diagrama — Resumen Visual
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-02-graph.svg]]
 
 ---
 
@@ -208,25 +211,29 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
+## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico
+> 
 > - [ ] Defino divisibilidad y uso notación a | b.
 > - [ ] Identifico números primos usando criba de Eratóstenes.
 > - [ ] Descompongo un número en factores primos.
 
 > [!note] Nivel Intermedio
+> 
 > - [ ] Aplico el teorema fundamental de la aritmética.
 > - [ ] Calculo el número de divisores de un entero.
 > - [ ] Uso propiedades de primos para resolver problemas de divisibilidad.
 
 > [!note] Nivel Avanzado
+> 
 > - [ ] Resuelvo problemas de distribución de primos.
 > - [ ] Analizo algoritmos de primalidad y su complejidad.
 
 ---
 
 > [!quote] 🔗 Conexiones
+> 
 > - Siguiente: [[02 - MCD, MCM y Algoritmo de Euclides]] — divisores comunes
 > - Relacionado: [[03 - Criterios de Divisibilidad y Sistemas de Numeración]]
 > - Aplicación: [[06 - Teorema del Binomio y Principio del Palomar]]
