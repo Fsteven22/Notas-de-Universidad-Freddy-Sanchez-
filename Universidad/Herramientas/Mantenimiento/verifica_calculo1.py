@@ -119,6 +119,9 @@ def main():
     ap = argparse.ArgumentParser(description="Verifica que no se pierda contenido")
     ap.add_argument("--backup", required=True)
     ap.add_argument("--solo", default=None)
+    ap.add_argument("--flexible", action="store_true",
+                    help="modo reescritura: el texto puede reformularse; hard-fail solo si "
+                         "desaparecen embeds, wikilinks, tags o secciones (H2/H3)")
     args = ap.parse_args()
 
     vault = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -149,6 +152,7 @@ def main():
     print("backup: %s" % backup)
 
     problemas = []
+    reformulados = 0
     notas = 0
     for dp, ds, fs in os.walk(raiz):
         ds[:] = [d for d in ds if d not in (".obsidian", ".trash", ".git", "__pycache__", "_texto")]
@@ -173,7 +177,26 @@ def main():
                 if cnt[linea] > 0:
                     cnt[linea] -= 1
                 else:
-                    problemas.append((rel, "contenido perdido: %s" % linea[:90]))
+                    if args.flexible:
+                        reformulados += 1
+                    else:
+                        problemas.append((rel, "contenido perdido: %s" % linea[:90]))
+            # modo flexible: ninguna seccion (H2/H3) puede desaparecer
+            if args.flexible:
+                def tops(txt):
+                    out = set()
+                    for l in txt.split("\n"):
+                        m = re.match(r"^#{2,3}\s+(.*)$", l)
+                        if m:
+                            s = re.sub(r"[\U0001F000-\U0001FAFF\u2600-\u27BF"
+                                       r"\u2B00-\u2BFF\u2190-\u21FF]", "", m.group(1))
+                            s = re.sub(r"[^\wáéíóúñü ]", "", s.lower()).strip()
+                            if s:
+                                out.add(s)
+                    return out
+                perdidos = tops(io.open(bp, encoding="utf-8").read()) - tops(despues_txt)
+                for p in sorted(perdidos):
+                    problemas.append((rel, "seccion perdida: %s" % p[:80]))
             # tags: cada tag original debe seguir existiendo en la nota
             tags_perdidos = tags_de(antes_txt) - tags_de(despues_txt)
             if tags_perdidos:
@@ -189,6 +212,8 @@ def main():
                     problemas.append((rel, "%s perdidos: %s" % (nombre, dict(list(faltan.items())[:3]))))
 
     print("notas comparadas: %d" % notas)
+    if args.flexible:
+        print("lineas reformuladas (informativo): %d" % reformulados)
     print("problemas: %d" % len(problemas))
     for rel, det in problemas[:60]:
         print("  %-70s %s" % (rel[:70], det))
