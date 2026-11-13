@@ -18,6 +18,8 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > - Criptografía: el problema de isomorfismo de grafos es la base de algunos esquemas de conocimiento cero
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-01-graph.svg]]
+> **Se lee así:** "Isomorfismo de Grafos" se abre en cuatro frentes: la "Definición: biyecciones f, g", la "Relación de equivalencia" que esa definición induce, los "Invariantes" (usados para "Descartar isomorfismo rápido") y la vía constructiva "Certificar isomorfismo: construir biyección".
+> **Por qué importa:** refleja la estrategia de la nota: descarta primero con invariantes baratos ($|V|$, $|E|$, grados, ciclos) y solo si todo coincide invierte el esfuerzo en construir la biyección $f$.
 
 ---
 
@@ -150,6 +152,8 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > [!note] 🖼️ Captura — Ejercicios Resueltos del Curso
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_13_08.png]]
+> **Se lee así:** la captura recoge los ejercicios resueltos del curso de isomorfismo, donde se aplica la estrategia de 4 pasos sobre $G_1$ y $G_2$: comparar $|V|$ y $|E|$, comparar la secuencia de grados, revisar invariantes finos (triángulos, ciclos de longitud 3 y 4) y solo entonces construir la biyección explícita.
+> **Por qué importa:** muestra la secuencia completa que la tabla comparativa resume: descartar rápido primero, certificar al final, nunca al revés.
 
 ---
 
@@ -172,6 +176,8 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Son isomorfos $G_1$ y $G_2$
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-02-graph.svg]]
+> **Se lee así:** una cadena de filtros descendente: primero "¿|V1| = |V2| y |E1| = |E2|?", luego "¿Coinciden las secuencias de grados?" y luego "¿Coinciden invariantes finos (triángulos, ciclos)?"; cada "No" manda directo a "No son isomorfos ❌", y el último "Sí" lleva a "Intentar construir biyección f explícita" y a verificar que "f preserva todas las adyacencias".
+> **Por qué importa:** descartar es barato (basta un invariante que falle) y certificar es caro (hay que encontrar $f$ y comprobarla), por eso los filtros van de más barato a más caro.
 
 ---
 
@@ -180,6 +186,8 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > [!note] 🗺️ Diagrama — ️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-04-03-graph.svg]]
+> **Se lee así:** "Grafos III — Isomorfismo" con cuatro ramas: "Definición: f, g biyectivas", "Relación de equivalencia", "Teorema: matrices de adyacencia iguales" e "Invariantes" (desglosados en $|V|$, $|E|$, grados, ciclos), rematadas por la "Estrategia: descartar rápido, certificar con biyección".
+> **Por qué importa:** la rama de invariantes alimenta los filtros del diagrama de decisión y el teorema de matrices de adyacencia da una certificación alternativa: basta reordenar los vértices para que las matrices coincidan, sin construir $f$ a mano.
 
 ---
 

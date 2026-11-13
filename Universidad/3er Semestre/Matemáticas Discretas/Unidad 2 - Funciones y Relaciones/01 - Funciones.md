@@ -20,6 +20,7 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > Una **función** es un caso especial de relación entre dos conjuntos: una regla que asigna a cada elemento del dominio **exactamente un** elemento del codominio. Formalmente, es cualquier subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] con una restricción de unicidad.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-02-01-graph.svg]]
+> **Se lee así:** de cada $x$ del **dominio $X$** sale una flecha etiquetada $f(x)$ hacia el **codominio $Y$**: esa flecha es la regla de la función, y solo puede haber una por $x$.
 
 ---
 
@@ -375,6 +376,8 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-02-03-graph.svg]]
+> **Se lee así:** de la función cuelgan sus seis propiedades — **inyectiva** (cada $y$ tiene a lo más una preimagen), **sobreyectiva** (al menos una), **biyectiva** (las dos juntas, por eso es la única invertible), más compuesta, piso y techo.
+> **Por qué importa:** las flechas dicen qué exige cada una: inyectiva se verifica con $f(x_1)=f(x_2) \Rightarrow x_1=x_2$, sobreyectiva con $\forall y\, \exists x : f(x)=y$.
 
 ---
 

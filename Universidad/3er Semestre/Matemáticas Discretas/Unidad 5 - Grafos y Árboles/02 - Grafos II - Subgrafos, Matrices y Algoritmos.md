@@ -18,6 +18,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > - Diseño de circuitos impresos (minimizar el recorrido de un taladro entre agujeros, como en el ejemplo de la hoja de metal)
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-01-graph.svg]]
+> **Se lee así:** "Grafos II" se abre en tres bloques — "Subgrafos y Componentes", "Matrices: Adyacencia e Incidencia" y "Algoritmos" —; de "Algoritmos" cuelgan "Agente Viajero (TSP)" y "Dijkstra (ruta más corta)".
+> **Por qué importa:** es la agenda de la nota: primero recortar y analizar grafos (subgrafos y componentes), luego representarlos de forma computable (matrices) y solo después optimizar rutas sobre ellos (TSP y Dijkstra), justo los dos problemas de optimización del apartado de aplicaciones.
 
 ---
 
@@ -55,6 +57,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > [!example] 🟢 Ejemplo 2 — Grafo disconexo y sus componentes
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-03-graph.svg]]
+> **Se lee así:** el grafo aparece en tres piezas separadas: el triángulo $v_1, v_2, v_3$ con sus tres aristas, la arista suelta $v_5 v_6$ y el vértice $v_4$ aislado (sin ninguna arista incidente); no hay trayectoria que conecte una pieza con otra.
+> **Por qué importa:** cada pieza es exactamente una componente, así que este grafo tiene 3 componentes y no es conexo — estaría conexo solo si tuviera una sola.
 > 
 > Este grafo **no es conexo**: tiene 3 componentes:
 > 
@@ -187,6 +191,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > [!note] 🖼️ Captura — ️ Algoritmo de Dijkstra
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_08_27.png]]
+> **Se lee así:** la captura ilustra la ejecución del algoritmo de Dijkstra sobre el grafo del ejemplo: la tabla de distancias provisional que se actualiza paso a paso, fijando cada vez el vértice más cercano (el que sale de $T$) hasta obtener la ruta más corta al destino, $L(z) = 5$.
+> **Por qué importa:** muestra el paso "relajar" del recuadro de la idea central: cada vez que se fija un vértice, sus distancias ya no cambian y sirven para intentar mejorar las de sus vecinos.
 
 ---
 
@@ -208,6 +214,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Qué algoritmo necesito
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-04-graph.svg]]
+> **Se lee así:** de "¿Qué problema tengo?" salen dos ramas: la de "ruta más corta ENTRE DOS vértices" pregunta "¿Todos los pesos son positivos?" y manda a "Usar Dijkstra" (si no, Bellman-Ford); la de "visitar TODOS los vértices al menor costo" es TSP — con pocos vértices explora ciclos de Hamilton y compara longitudes, con muchos usa cotas mínimas o heurísticas.
+> **Por qué importa:** la primera rama es polinomial (Dijkstra) y la segunda es NP-difícil (TSP), así que el diagrama te avisa cuándo debes conformarte con una aproximación en vez de un óptimo exacto.
 
 ---
 
@@ -216,6 +224,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > [!note] 🗺️ Diagrama — ️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-03-05-graph.svg]]
+> **Se lee así:** "Grafos II" con cinco ramas — "Subgrafos", "Componentes", "Suma de grados = 2m" y "Matrices" (que se subdivide en "Adyacencia" e "Incidencia") — más la rama "Algoritmos" con "Agente Viajero (TSP)" y "Dijkstra".
+> **Por qué importa:** resume la nota en tres temas (subgrafos, matrices, algoritmos) y el teorema que los sostiene: la suma de grados = 2m es la identidad con la que se cuentan aristas al pasar de la lista de adyacencia a la matriz.
 
 ---
 

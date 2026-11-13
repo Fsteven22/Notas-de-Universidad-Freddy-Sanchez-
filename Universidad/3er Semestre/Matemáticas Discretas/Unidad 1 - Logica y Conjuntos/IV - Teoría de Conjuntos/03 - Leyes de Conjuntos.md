@@ -232,6 +232,8 @@ tags: [matematicas-discretas, conjuntos, leyes-de-conjuntos, de-morgan, inclusio
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-13-02-graph.svg]]
+> **Se lee así:** las leyes se agrupan en seis familias — identidad y dominación ($A \cup \emptyset = A$, $A \cap U = A$, $A \cup U = U$), complemento ($A \cup A^c = U$, $(A^c)^c = A$), conmutativa y asociativa, distributiva ($A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$), De Morgan ($(A \cup B)^c = A^c \cap B^c$) y absorción.
+> **Por qué importa:** cada familia espeja una ley proposicional: De Morgan y distributiva son las que más se usan para reescribir expresiones en los ejercicios.
 
 ---
 

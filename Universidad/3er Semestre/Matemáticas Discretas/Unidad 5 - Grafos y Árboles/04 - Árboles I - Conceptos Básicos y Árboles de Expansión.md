@@ -15,6 +15,8 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > **Aplicaciones modernas:** sistemas de archivos (carpetas y subcarpetas), bases de datos (índices B-tree), inteligencia artificial (árboles de decisión, minimax en juegos), redes de telecomunicaciones (árboles de expansión mínima para tender cableado al menor costo), y compresión de datos (códigos Huffman — tema que ya viste en Computación y Sociedad, y al que volveremos en la nota [[05 - Árboles II - Árboles Binarios, Recorridos y Códigos Huffman|Árboles II]]).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-01-graph.svg]]
+> **Se lee así:** "Árbol T" se bifurca en "Árbol libre" (cuya propiedad es una "Trayectoria simple única entre cualquier par de vértices") y "Árbol con raíz" ("Un vértice designado como raíz" más "Nivel y Altura"); de este último cuelga el "Árbol de expansión de un grafo G", con "Búsqueda a lo ancho (BFS)", "Búsqueda a profundidad (DFS)" y "Árbol de expansión mínima (Prim)".
+> **Por qué importa:** muestra el orden lógico de la unidad: definir el árbol, elegir una raíz para poder medir niveles y altura, y solo entonces construir árboles desde un grafo con BFS, DFS o Prim.
 
 ---
 
@@ -35,6 +37,8 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > Dado el árbol $T$ con vértices $v_1, \ldots, v_7$, si se elige $v_1$ como raíz:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-02-graph.svg]]
+> **Se lee así:** con $v_1$ como raíz, la primera flecha se bifurca en $v_2$ y $v_3$, y cada uno vuelve a ramificarse: $v_4$ y $v_5$ cuelgan de $v_2$, mientras $v_6$ y $v_7$ cuelgan de $v_3$ — siete vértices ordenados en tres niveles.
+> **Por qué importa:** el nivel de cada vértice es su distancia a la raíz elegida: $v_1$ en el nivel 0, $v_2$ y $v_3$ en el 1, $v_4, \ldots, v_7$ en el 2; por eso la altura del árbol es $2$.
 > 
 > - $v_1$ está en el **nivel 0**
 > - $v_2$ y $v_3$ están en el **nivel 1**
@@ -233,6 +237,8 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > [!note] 🖼️ Captura — ️ Árbol de Expansión Mínima y Algoritmo de Prim
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_29_57.png]]
+> **Se lee así:** la captura ilustra el árbol de expansión mínima y la ejecución del algoritmo de Prim sobre un grafo ponderado: las aristas se agregan una a una desde un vértice inicial, eligiendo siempre la de menor peso que conecta un vértice ya incluido con uno fuera, hasta cubrir todos los vértices sin formar ciclos.
+> **Por qué importa:** es el "voraz" del recuadro de complejidad en acción: la decisión local (arista más barata que cruza el corte) produce el óptimo global, y solo aplica si todos los pesos son positivos.
 
 ---
 
@@ -241,6 +247,8 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-03-graph.svg]]
+> **Se lee así:** de "Árbol de Expansión de G" parte la pregunta "¿Objetivo?": "Explorar por niveles" conduce a BFS y "Explorar profundo primero" a DFS, ambos que terminan en un "Árbol de expansión válido"; solo "Minimizar costo total" va a "Prim (grafo ponderado)", el único camino que entrega un "Árbol de expansión MÍNIMA".
+> **Por qué importa:** distingue "válido" de "mínimo": los tres cubren G sin ciclos, pero solo Prim garantiza el menor costo total y solo aplica si las aristas tienen peso.
 
 ---
 
@@ -249,6 +257,8 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > [!note] 🗺️ Diagrama — Estrategia de Elección — Flujograma de Decisión
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-05-04-graph.svg]]
+> **Se lee así:** el flujo arranca en "¿Qué necesitas hacer con el grafo G?": si "¿G es conexo?" responde "No" no existe árbol de expansión; si responde "Sí", la pregunta "¿Las aristas tienen peso/costo?" separa BFS y DFS (sin peso: "Niveles" lleva a BFS, "Profundidad" a DFS) de Prim (con peso y con el deseo del costo mínimo).
+> **Por qué importa:** condensa las condiciones de uso: la conexidad es necesaria y suficiente para que exista un árbol de expansión, y tu objetivo (recorrer vs. minimizar costo) decide el algoritmo.
 
 ---
 

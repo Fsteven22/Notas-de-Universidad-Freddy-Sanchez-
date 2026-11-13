@@ -41,6 +41,7 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 > [!note] 📖 Definición
 > 
+> **Se lee así:** un enunciado es proposición solo si admite valor fijo $V$ o $F$ —una pregunta, una orden o una fórmula con variable libre como $3y^2 - 5y < 4y^3$ no lo son—; $VL(p)$ es ese valor y las atómicas son las que aún no usan conectivos.
 > Una **proposición** es una oración (enunciado) que es **verdadero o falso**, pero no ambas cosas a la vez. Se representan con las letras $p, q, r, s$, etc.
 > 
 > - En general, se usarán $p_1, p_2, \ldots, p_n$ para representar proposiciones → las llamaremos **variables proposicionales**.
@@ -351,6 +352,7 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > [!success] 📋 Principales Equivalencias Lógicas
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260517162520.png]]
+> **Se lee así:** la lámina agrupa por familia el catálogo de equivalencias que las tablas de abajo detallan —identidad, dominación, idempotencia, complemento, conmutativa, asociativa, distributiva, De Morgan y condicional— para reescribir expresiones sin tablas de verdad.
 > **Leyes de identidad:**
 > 
 > |Ley|Expresión|
@@ -437,6 +439,8 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > Los **circuitos combinatorios** (o circuitos lógicos) son sistemas digitales cuya salida depende **únicamente** de los valores actuales de las entradas. Están construidos con **compuertas lógicas** que implementan directamente los conectivos de la lógica proposicional.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-04-graph.svg]]
+> **Se lee así:** la cadena de la teoría al hardware: Proposiciones Lógicas →"se implementan como"→ Compuertas Lógicas →"se combinan en"→ Circuitos Combinatorios →"se aplican en"→ Computadoras y Electrónica.
+> **Por qué importa:** cada etiqueta de flecha es la relación que estudia esta sección: los conectivos se vuelven compuertas y las compuertas se apilan en circuitos.
 
 ### 🔌 Compuertas Lógicas Básicas
 
@@ -457,6 +461,8 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > [!note] 🖼️ Captura — Circuitos Combinatorios
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 may 2026, 13_02_00.png]]
+> **Se lee así:** un circuito combinatorio como los del texto: compuertas lógicas (NOT, AND, OR) cableadas entre las entradas 0/1 y la salida, sin memoria — la salida depende solo de las entradas actuales.
+> **Por qué importa:** conecta el conectivo abstracto con su representación física: la compuerta AND es, fila a fila, la tabla de verdad de $p \wedge q$ que sigue abajo.
 
 > [!example] 🧮 Tablas de Verdad de Compuertas
 > 
@@ -557,6 +563,8 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-03-05-graph.svg]]
+> **Se lee así:** mapa de la nota con "Lógica Proposicional" en la raíz y cinco ramas —Proposiciones (atómicas, variables, valor V/F), Conectivos (NOT, AND, OR, XOR, IF-THEN, IFF), Tablas de Verdad (precedencia, $2^n$ filas), Propiedades (tautologías, contradicciones, equivalencias, De Morgan) y Circuitos (NAND, NOR, medio sumador).
+> **Por qué importa:** es el índice visual de la materia: cada sub-rama es una sección de esta nota, así que el mapa sirve para ubicar dónde queda lo que buscas.
 
 ---
 

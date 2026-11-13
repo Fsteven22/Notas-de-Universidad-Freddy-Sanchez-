@@ -32,6 +32,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 1 — Función Proposicional
 > 
+> **Se lee así:** $P(x)$ sola todavía no es proposición: solo al sustituir un $x \in D$ se vuelve $V$ o $F$; por eso el dominio de discurso $D$ forma parte de la definición, ya que cambiar $D$ puede cambiar lo que significan las cuantificaciones sobre $P$.
 > Sea $P(x)$ un enunciado que incluye a la variable $x$ y sea $D$ un conjunto. Diremos que $P$ es una **función proposicional** si para cada $x \in D$, $P(x)$ es una proposición. En este caso, $D$ es el **dominio de discurso** de $P$.
 
 > [!example] ✅ Ejemplo 1 — Números Primos
@@ -59,6 +60,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 2 — Cuantificador Universal
 > 
+> **Se lee así:** $\forall x \in D : P(x)$ exige cobertura completa del dominio: basta **un** $x$ con $P(x)$ falsa para que la proposición sea falsa, mientras que probarla requiere cubrir todos; "para todo" jamás significa "para muchos".
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
 > > [!example] 🟢 Ejemplo
@@ -114,6 +116,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 3 — Cuantificador Existencial
 > 
+> **Se lee así:** $\exists x \in D : P(x)$ solo pide un ejemplar que funcione: un caso basta para $V$ y hace falta que **todos** fallen para $F$; es el espejo exacto de $\forall$ y "existe" no dice cuántos ni cuál.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
 > > [!example] 🟢 Ejemplo
@@ -166,6 +169,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 5 — Cuantificador de Existencia Única
 >
+> **Se lee así:** $\exists!$ aprieta doble: al menos uno **y** a lo sumo uno; la equivalencia $\exists x\,(P(x) \wedge \forall y\,(P(y) \to y = x))$ muestra la trampa: mostrar que existe uno y olvidar la parte $\forall y$ que descarta un segundo candidato.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 >
 > > [!example] 🟢 Ejemplo
@@ -257,6 +261,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 4 — Cuantificadores Anidados
 > 
+> **Se lee así:** se leen de izquierda a derecha y el orden no es conmutable: $\forall x\,\exists y\,P(x,y)$ permite un $y$ distinto para cada $x$, mientras que $\exists x\,\forall y\,P(x,y)$ exige un solo $x$ que funcione con **todos** los $y$; la trampa clásica es tratarlos como intercambiables.
 > Se dice que hay **cuantificadores anidados** cuando una función proposicional depende de dos o más variables y cada una es cuantificada.
 > 
 > Sea $P(x,y)$ una función proposicional con dominio $D$. Entonces:
@@ -438,6 +443,8 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-06-03-graph.svg]]
+> **Se lee así:** de "Funciones Proposicionales" salen los tres cuantificadores con su regla de verdad: $\forall x \in D$ vale $V$ solo si $P(x)$ es $V$ para todo $x$ (un solo contraejemplo la tumba), $\exists x \in D$ vale $V$ con un solo $x$ que la cumpla y $\exists! x \in D$ pide exactamente uno; debajo, sus negaciones —$\neg\forall \equiv \exists\neg$, $\neg\exists \equiv \forall\neg$— y los anidados $\forall\forall$, $\forall\exists$, $\exists\forall$, $\exists\exists$.
+> **Por qué importa:** al negar se intercambia el cuantificador y se niega adentro; confundir $\forall\exists$ con $\exists\forall$ es el error clásico de estos ejercicios.
 
 ---
 

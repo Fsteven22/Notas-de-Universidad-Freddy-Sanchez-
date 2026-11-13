@@ -11,6 +11,7 @@ tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, pal
 > Esta nota cubre las dos últimas herramientas del capítulo de conteo:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-07-01-graph.svg]]
+> **Se lee así:** las dos herramientas de esta nota — el **teorema binomial** (expansión de $(a+b)^n$, identidades combinatorias e identidad de Pascal) y el **principio del palomar** en sus dos versiones: existencia de colisión y cuántas colisiones mínimo.
 
 ---
 

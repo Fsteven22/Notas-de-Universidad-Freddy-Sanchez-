@@ -198,6 +198,7 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-02-02-graph.svg]]
+> **Se lee así:** las cuatro ramas de la nota — **divisibilidad** (con $d \mid n = dq$ y la regla $d \mid n,\ d \mid m \Rightarrow d \mid m \pm n$), **números primos** (el test basta hasta $\sqrt{n}$), **TFA** (factorización única) e **infinitud** (por contradicción).
 
 ---
 

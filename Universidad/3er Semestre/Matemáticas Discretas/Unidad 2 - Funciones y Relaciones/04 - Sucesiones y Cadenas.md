@@ -12,6 +12,7 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > Las **sucesiones** son un caso especial de función: asignan a cada entero en un rango dado un elemento de algún conjunto. Las **cadenas** son sucesiones finitas de elementos, con la diferencia de que el orden importa y las repeticiones se permiten.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-01-graph.svg]]
+> **Se lee así:** la **sucesión** es una función $s : A \to X$ cuyo dominio $A$ son enteros consecutivos; si $A$ es finito la sucesión termina y de ahí sale una **cadena** sobre $X$.
 
 ---
 
@@ -312,6 +313,8 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-05-04-graph.svg]]
+> **Se lee así:** las **sucesiones** se descomponen en finita/infinita y aportan suma $\sum a_i$ y producto $\prod a_i$; las **cadenas** aportan longitud $|\alpha|$, concatenación $\alpha\beta$ y la cadena nula $\lambda$.
+> **Por qué importa:** es el mapa de la nota — cada operación cae en una rama, y confundir cadena con sucesión lleva a olvidar que en cadenas el orden y la repetición sí importan.
 
 ---
 

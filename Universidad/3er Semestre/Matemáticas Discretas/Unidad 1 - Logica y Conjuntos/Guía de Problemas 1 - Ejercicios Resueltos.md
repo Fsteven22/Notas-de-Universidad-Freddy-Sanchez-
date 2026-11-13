@@ -763,8 +763,10 @@ tags: [matematicas-discretas, guia-problemas, logica, conjuntos, induccion, demo
 > Como $\dfrac{(k+1)(k-2)}{2} = \dfrac{(k+1)((k+1)-3)}{2}$, que es exactamente la fórmula para $n = k+1$. $\blacksquare$
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145551.png]]
+> **Se lee así:** el paso inductivo dibujado: el polígono de $k$ lados con el lado $\overline{AB}$ elegido y el vértice nuevo $V_{k+1}$ insertado sobre él, que parte $\overline{AB}$ en los lados nuevos $\overline{AV_{k+1}}$ y $\overline{V_{k+1}B}$ al pasar de $k$ a $k+1$ lados.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145600.png]]
+> **Se lee así:** el mismo polígono ya con las diagonales del conteo: $\overline{AB}$ dejó de ser lado y cuenta como diagonal ($+1$), y $V_{k+1}$ traza sus $k-2$ diagonales hacia todos los vértices que no son sus vecinos $A$ y $B$.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260613145618.png]]
 > 

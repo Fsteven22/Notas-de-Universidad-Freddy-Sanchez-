@@ -20,6 +20,8 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 > - Control industrial y sistemas embebidos (semáforos, ascensores, máquinas expendedoras).
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-01-graph.svg]]
+> **Se lee así:** el esquema de un **sistema secuencial** — la entrada actual y el estado interno (memoria finita) se combinan para producir la nueva salida, y el estado interno a su vez produce el nuevo estado.
+> **Por qué importa:** ahí está la diferencia con lo combinacional: la salida sale de (entrada **+** estado previo), y el estado queda guardado para la próxima lectura.
 
 ---
 
@@ -174,6 +176,8 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 > [!note] 📊 Diagrama del ejemplo de dos estados
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-04-graph.svg]]
+> **Se lee así:** el diagrama de transiciones del ejemplo de dos estados: desde $\sigma_0$ la lectura $a/0$ regresa a $\sigma_0$ y $b/1$ pasa a $\sigma_1$; desde $\sigma_1$, $a/1$ mantiene y $b/0$ vuelve a $\sigma_0$. La flecha entrante sin origen marca el estado inicial $\sigma_0$.
+> **Por qué importa:** la etiqueta de cada flecha es $f$ y $g$ juntas — **entrada/salida** —; el círculo doble de $\sigma_1$ diría que es estado de aceptación si fuera un autómata.
 
 ---
 
@@ -239,6 +243,8 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 > [!note] 🗺️ Diagrama — Diagrama de Decisión: ¿Qué modelo usar
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-06-graph.svg]]
+> **Se lee así:** árbol de decisión para elegir el modelo — ¿la salida depende solo de la entrada actual? **Sí** → circuito combinacional; **no** → ¿basta registrar el símbolo anterior? **Sí** → retraso unitario; **no** → si la salida es un símbolo de $O$ → **MEF** $M = (I,O,S,f,g,\sigma)$, y si solo quieres saber si la cadena es válida → **autómata**.
+> **Por qué importa:** responde las preguntas de arriba hacia abajo hasta que el modelo quede decidido; elegir MEF o autómata depende de si necesitas salida o solo aceptación.
 
 ---
 

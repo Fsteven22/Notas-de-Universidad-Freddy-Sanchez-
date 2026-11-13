@@ -9,6 +9,7 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!info] 📖 Recordatorio: Definición del Condicional
 > 
+> **Se lee así:** la tabla solo marca **F** en la fila $p = V$, $q = F$: el condicional es una promesa rota únicamente cuando se cumple la hipótesis y falla la conclusión; si $p$ es $F$ la promesa no se exige y la fila vale $V$. La trampa típica es leer "si $p$ entonces $q$" como una causalidad.
 > Sean $p$ y $q$ dos proposiciones. El **condicional** $p \rightarrow q$ ("si $p$ entonces $q$") tiene la siguiente tabla de verdad:
 > 
 > |$p$|$q$|$p \rightarrow q$|
@@ -155,6 +156,7 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!note] 📖 Verdadero por omisión
 >
+> **Se lee así:** "verdadero por omisión" no es un elogio: con el antecedente falso el condicional vale $V$ de forma vacía —"si $2 + 2 = 5$ entonces el sol es frío" es $V$ porque la hipótesis nunca se cumple, no porque el sol esté frío.
 > 💡 En lógica, cuando el antecedente es falso, "no se promete nada", por eso el condicional es verdadero independientemente del consecuente.
 
 ---
@@ -163,6 +165,7 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!info] 📖 Definiciones Fundamentales
 > 
+> **Se lee así:** $P \equiv Q$ no es una equivalencia de palabras sino de columnas: ambas formas deben dar el mismo valor lógico en **todas** las filas de la tabla, por eso equivale a que $P \leftrightarrow Q$ sea una tautología. La trampa es "verificarlo" con un solo caso.
 > **Forma proposicional:** Cualquier expresión $P$ obtenida a partir de variables proposicionales $p_1, p_2, \ldots, p_n$ usando conectivos lógicos de forma adecuada.
 > 
 > **Equivalencia lógica:** Sean $P$ y $Q$ dos formas proposicionales. Se dice que $P$ y $Q$ son **lógicamente equivalentes**, denotado $P \equiv Q$ (o $P \Leftrightarrow Q$), si tienen los **mismos valores lógicos** para **todos** los posibles valores de las variables.
@@ -378,6 +381,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > [!note] 🗺️ Diagrama — ️ Mapa Conceptual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-04-graph.svg]]
+> **Se lee así:** del nodo "Proposición condicional $p \to q$" salen tres ramas: formas lingüísticas equivalentes (*q si p*, *p solo si q*, *q necesario para p*, *p suficiente para q*), las variantes derivadas —recíproco $q \to p$ ❌ e inverso $\neg p \to \neg q$ ❌ no equivalen al original, contrarrecíproco $\neg q \to \neg p$ ✅ sí— y las equivalencias como $p \to q \equiv \neg p \vee q$.
+> **Por qué importa:** la única variante marcada ✅ (el contrarrecíproco) es la que te deja demostrar por contrapositiva.
 
 ---
 
@@ -386,6 +391,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > [!note] 🗺️ Diagrama — Resumen de Equivalencias Clave
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-04-05-graph.svg]]
+> **Se lee así:** cinco familias de equivalencias —Condicional ($p \to q \equiv \neg p \vee q$, su negación $p \wedge \neg q$ y contrarrecíproco, con el recíproco marcado "NO equiv"), Bicondicional ($p \leftrightarrow q \equiv (p \to q) \wedge (q \to p)$), De Morgan, Tautologías (con Modus Ponens y Modus Tollens) y Contradicciones ($p \wedge \neg p$ siempre F).
+> **Por qué importa:** es la hoja de referencia de los ejercicios 7–12: identifica la familia y aplica la identidad en lugar de construir la tabla completa.
 
 ---
 

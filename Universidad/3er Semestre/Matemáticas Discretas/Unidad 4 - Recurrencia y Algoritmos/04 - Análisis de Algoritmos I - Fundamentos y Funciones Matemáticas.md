@@ -343,6 +343,8 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 > [!note] 🖼️ Captura — Ejercicio Extra — Cuatro Casos que No Aparecieron Arriba
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_42_23.png]]
+> **Se lee así:** la captura agrupa los cuatro casos extra del ejercicio — $\sqrt{n}$ con el lema del piso (donde el $-1$ se propaga como constante y queda absorbida), $n^2\log n$ (potencia por logaritmo: tratar $\log n$ como otra variable creciente, arrancando en $n_0=2$ porque $\log 1 = 0$) y $\dfrac{4n+7}{n^2-1}$ (denominador de mayor grado: la función **decrece**, así que $c_1$ agranda el numerador y $c_2$ achica el denominador).
+> **Por qué importa:** cada caso añade una única novedad sobre el procedimiento estándar; el álgebra de cotas es siempre la misma.
 
 ---
 

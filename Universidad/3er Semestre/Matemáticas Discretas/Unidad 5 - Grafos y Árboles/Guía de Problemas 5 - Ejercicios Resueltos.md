@@ -7,6 +7,7 @@ tags: [discretas, unidad5, guia-problemas]
 
 > [!info] 📖 Sobre esta guía
 >
+> **Se lee así:** esta portada dice cómo navegar la guía: la tabla reparte los 11 ejercicios en tres secciones — 5.1 Grafos (grados, ciclos de Hamilton y Euler, handshake; ejercicios 1–4), 5.2 Árboles de expansión (DFS, BFS, TSP y Prim; 5–7) y 5.3 Caminos mínimos con Dijkstra (8–11) —, así que ubica tu tema por la sección, no por el número global.
 > Ejercicios resueltos de la **Guía de Problemas 5** — Matemáticas Discretas (MATG1051). Autores de la guía: Cristhian Hernández, Ebner Pineda, Liliana Pérez, Jennifer Avilés.
 >
 > |Sección|Tema|Ejercicios|

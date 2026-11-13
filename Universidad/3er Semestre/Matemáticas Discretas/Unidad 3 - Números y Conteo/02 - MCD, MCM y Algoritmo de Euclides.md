@@ -236,6 +236,7 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > ### ⚙️ Procedimiento
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-02-graph.svg]]
+> **Se lee así:** el ciclo de Euclides — se calcula $r = a \bmod b$; si $r = 0$ entonces $\text{mcd} = b$, y si no se avanza al par $(b, r)$ y se vuelve al paso 2. **La flecha que regresa al paso 2 es la recursión.**
 > 
 > ---
 > 
@@ -264,6 +265,7 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > |**Algoritmo de Euclides**|Divisiones sucesivas hasta residuo $0$|Números grandes, solo se necesita el MCD|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-03-graph.svg]]
+> **Se lee así:** árbol de decisión para elegir método — números **pequeños** → inspección o factorización; números **grandes y solo MCD** → algoritmo de Euclides (el más eficiente); si piden **ambos** → factorización prima y después $\text{mcd} \cdot \text{mcm} = m \cdot n$.
 
 ---
 
@@ -293,6 +295,7 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-03-04-graph.svg]]
+> **Se lee así:** el mapa de la unidad en cinco herramientas — **mcd** (divisor común más grande; en factorización, mínimos exponentes), **mcm** (múltiplo común más pequeño; máximos exponentes), **Euclides** (divisiones sucesivas hasta $r=0$, eficiente con números grandes), **algoritmo de la división** ($n = dq + r$ con $q$ y $r$ únicos) y **principio del buen orden** (todo subconjunto no vacío de enteros tiene mínimo, la base de los anteriores).
 
 ---
 

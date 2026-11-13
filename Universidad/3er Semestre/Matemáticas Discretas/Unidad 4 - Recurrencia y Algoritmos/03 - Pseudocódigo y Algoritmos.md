@@ -14,6 +14,8 @@ tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 > - Se conecta con [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] y [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]], donde estos mismos algoritmos se analizan para obtener sus cotas asintóticas.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-04-01-graph.svg]]
+> **Se lee así:** las cinco secciones de la nota — sintaxis básica (asignación, `if`, comentarios), concepto de algoritmo, funciones con `return`, estructuras de control (`while`, `for`) y los ejemplos clásicos.
+> **Por qué importa:** todo esto es el vocabulario que después se cuenta operación por operación en [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] y [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]].
 
 ---
 
@@ -285,6 +287,8 @@ tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 > [!note] 🖼️ Captura — Otros Algoritmos Clásicos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_24_30.png]]
+> **Se lee así:** la captura retoma los dos algoritmos que la sección acaba de escribir — la **prueba de primalidad** (bucle `for d = 2 to ⌊√n⌋`, devuelve el divisor o $0$) y la **conversión de base $b$ a decimal** (acumulador `val_dec` y `potencia` que se multiplica por $b$ en cada vuelta).
+> **Por qué importa:** ambos son `for` lineales sin anidamiento, el tipo de bloque que se cuenta en la Nota II como $\Theta(n)$.
 
 ---
 

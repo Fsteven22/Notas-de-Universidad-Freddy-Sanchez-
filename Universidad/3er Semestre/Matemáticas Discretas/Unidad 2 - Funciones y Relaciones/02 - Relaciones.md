@@ -12,6 +12,7 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > Una **relación** es una generalización de las funciones: también es un subconjunto del [[01 - Conjuntos, Cardinalidad y Subconjuntos|producto cartesiano]] X × Y, pero **sin** la restricción de unicidad. Permite asociar un elemento de X con cero, uno o varios elementos de Y. Toda función es una relación, pero no toda relación es una función.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-01-graph.svg]]
+> **Se lee así:** una relación $R \subseteq X \times Y$ **se vuelve función** solo si se le impone la restricción de unicidad; sin esa restricción, un $x$ puede apuntar a varios $y$.
 
 ---
 
@@ -300,6 +301,8 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-03-05-graph.svg]]
+> **Se lee así:** de la relación $R$ cuelgan sus datos — dominio, rango, matriz e inversa — y sus cuatro **propiedades sobre $X$** (reflexiva, simétrica, antisimétrica, transitiva), que son las que deciden si es de equivalencia o de orden.
+> **Por qué importa:** el orden de lectura importa: primero se describe $R$ (dominio/rango/matriz) y solo después se le preguntan sus propiedades.
 
 ---
 

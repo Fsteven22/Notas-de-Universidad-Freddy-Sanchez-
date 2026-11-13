@@ -11,6 +11,8 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 > En [[04 - Análisis de Algoritmos I - Fundamentos y Funciones Matemáticas]] obtuvimos $\mathcal{O}$, $\Omega$ y $\Theta$ a partir de una **fórmula $f(n)$ ya dada**. Aquí el punto de partida es distinto: un **algoritmo en seudocódigo** (ver [[03 - Pseudocódigo y Algoritmos]]), y el trabajo consiste en **contar cuántas veces se ejecuta una instrucción clave**, para luego acotar esa cuenta asintóticamente — incluyendo algoritmos recursivos.
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u4-06-01-graph.svg]]
+> **Se lee así:** las cinco ramas del análisis desde pseudocódigo — **mejor, peor y caso promedio**, **contar operaciones en bucles anidados**, **ramificaciones, cortes y bloques**, **algoritmos recursivos** y **de $\Theta$ a tiempo real**.
+> **Por qué importa:** el punto de partida cambia respecto de la Nota I: aquí no hay $f(n)$ dada, hay que contarla sobre el código.
 
 ---
 
@@ -525,6 +527,8 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 > [!note] 🖼️ Captura — De la Notación Asintótica al Tiempo Real
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 20_44_56.png]]
+> **Se lee así:** la captura cierra la nota con el puente entre las tablas de arriba: cada $\Theta$ se traduce a tiempo con $1$ operación $= 1$ ns — $\Theta(n^2)$ con $n=1000$ son $10^6$ ns $\approx 1$ ms — y ahí se ve por qué $\Theta(2^n)$ se vuelve impracticable en $n \approx 50$ y $\Theta(n!)$ antes todavía.
+> **Por qué importa:** ese es el motivo práctico de toda la notación: predecir **sin ejecutar** si el algoritmo sirve para el tamaño de entrada que interesa.
 
 ---
 

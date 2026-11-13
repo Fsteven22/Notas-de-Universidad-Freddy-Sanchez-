@@ -12,6 +12,7 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > Los **métodos de conteo** permiten determinar cuántos elementos tiene un [[01 - Conjuntos, Cardinalidad y Subconjuntos|conjunto]] o cuántas formas existen de realizar una tarea, **sin listarlos todos**. Los dos principios fundamentales son:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-01-graph.svg]]
+> **Se lee así:** los dos principios y su disparador — tareas en pasos **sucesivos** (se hacen todos) usan multiplicación $n_1 \cdot n_2 \cdots n_t$; casos **excluyentes** (se hace uno u otro) usan suma $n_1 + n_2 + \cdots + n_t$.
 
 ---
 
@@ -155,6 +156,7 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-05-02-graph.svg]]
+> **Se lee así:** el árbol de decisión del conteo: **¿tipo de tarea?** → pasos sucesivos (todos) usa la multiplicación; casos excluyentes (uno) usa la suma; una **mezcla** de ambos se resuelve como suma de productos $\sum \prod n_{ij}$.
 
 > [!note] 📊 Multiplicación vs. Suma
 > 

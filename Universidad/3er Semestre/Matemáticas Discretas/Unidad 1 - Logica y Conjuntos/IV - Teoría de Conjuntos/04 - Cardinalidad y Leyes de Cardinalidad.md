@@ -22,6 +22,8 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 
 > [!note] 📖 Definición — Cardinal de un conjunto
 >
+> **Se lee así:** $|A|$ cuenta elementos **distintos** (las repeticiones no suman doble); la trampa clásica está en el cuadro de casos especiales: $|\emptyset| = 0$ pero $|\{0\}| = 1$ y $|\{\emptyset\}| = 1$ — el vacío usado como elemento sí cuenta.
+> 
 > Si $A$ es un conjunto **finito**, el **cardinal** de $A$, denotado $|A|$, es el número de elementos distintos que contiene.
 >
 > $$A = \{2, 4, 6, 8\} \implies |A| = 4$$
@@ -119,6 +121,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 > **Diagrama de Venn real** (con los valores del Ejercicio 1: 22 solo M, 14 solo F, 8 ambos, 6 ninguno):
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/venn-2-conjuntos.png]]
+> **Se lee así:** el Venn del Ejercicio 1 con sus números: 22 solo M en la luna de M, 14 solo F en la de F, 8 en la intersección M ∩ F y 6 en el exterior; las cuatro regiones suman 50, que es exactamente |U|.
 
 ---
 
@@ -154,6 +157,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 > **Diagrama de Venn real** (con los valores del Ejercicio 2 de deportes: 23, 18, 13, 10, 7, 5, 5, 19 ninguno):
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/venn-3-conjuntos.png]]
+> **Se lee así:** el Venn de 3 conjuntos con los valores del Ejercicio 2: las lunas tienen el "solo" de cada deporte (23 fútbol, 18 básquet, 13 natación), los pétalos el "exactamente dos" (10 F∩B, 7 F∩N, 5 B∩N), el centro 5 (los tres) y el exterior 19 — todo suma 100 = |U|.
 
 
 ---
@@ -411,6 +415,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 > [!note] 🗺️ Diagrama — Resumen de Fórmulas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u1-14-04-graph.svg]]
+> **Se lee así:** el flujo de resolución: "¿Cuántos conjuntos?" — con 2 se aplica PIE $|A \cup B| = |A| + |B| - |A \cap B|$; con 3, la inclusión-exclusión de 7 términos y el llenado de adentro hacia afuera (centro $A \cap B \cap C$ → pares → solos); ambas rutas cierran en "Verificar: suma de regiones = U".
 
 ---
 

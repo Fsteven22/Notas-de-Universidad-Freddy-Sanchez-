@@ -12,6 +12,7 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > Dos tipos especiales de relaciones sobre X surgen de combinar las cuatro propiedades básicas de maneras distintas. La **relación de equivalencia** generaliza la idea de igualdad; la **relación de orden** generaliza la idea de "menor o igual que".
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-01-graph.svg]]
+> **Se lee así:** las cuatro propiedades se combinan en dos recetas — **reflexiva + simétrica + transitiva** da relación de equivalencia, y **reflexiva + antisimétrica + transitiva** da orden parcial; la propiedad que sobra o falta cambia de familia.
 
 ---
 
@@ -195,6 +196,8 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u2-04-04-graph.svg]]
+> **Se lee así:** de una **relación de equivalencia** salen las clases $[a] = \{x \in X : xRa\}$, que son disjuntas o idénticas y **particionan** $X$; el conjunto cociente $\mathcal{S} = \{[a] : a \in X\}$ es esa partición.
+> **Por qué importa:** los teoremas 2 y 3 son ida y vuelta — toda partición genera una equivalencia y toda equivalencia genera una partición.
 
 ---
 
