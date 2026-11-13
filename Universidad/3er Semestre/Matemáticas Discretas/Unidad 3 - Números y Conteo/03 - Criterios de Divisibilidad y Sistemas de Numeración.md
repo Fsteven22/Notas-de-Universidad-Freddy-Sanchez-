@@ -195,6 +195,7 @@ tags: [divisibilidad, criterios, binario, hexadecimal, decimal, bases, numeracio
 > |Hexadecimal → binario|Expandir cada dígito|Cada dígito hex = 4 bits|
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-03-graph.svg]]
+> **Se lee así:** dos idas y venidas — de base $b$ a decimal se evalúa $\sum d_i \cdot b^i$; de decimal a base $b$ se reparten divisiones sucesivas y los **residuos se leen de abajo hacia arriba**. Entre binario y hexadecimal solo se agrupa o se expande de 4 en 4 bits.
 
 ---
 
@@ -203,6 +204,7 @@ tags: [divisibilidad, criterios, binario, hexadecimal, decimal, bases, numeracio
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-04-04-graph.svg]]
+> **Se lee así:** el mapa de la nota en cinco ramas — **criterios** (3, 9, 2 y 5, con su demostración por descomposición posicional), **sistemas de numeración** (base $b$ con dígitos $0 \dots b-1$), **conversión a decimal** (evaluar $\sum d_i b^i$), **desde decimal** (divisiones sucesivas) y **número de bits** ($1 + \log_2 n$).
 
 ---
 

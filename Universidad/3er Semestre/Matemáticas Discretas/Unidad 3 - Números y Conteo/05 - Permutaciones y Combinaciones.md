@@ -12,6 +12,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > La distinción fundamental en conteo es si el **orden de selección importa** o no:
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-06-01-graph.svg]]
+> **Se lee así:** una sola pregunta decide todo: **¿importa el orden?** Si sí → permutación $P(n,r) = \dfrac{n!}{(n-r)!}$; si no → combinación $\dbinom{n}{r}$. Cada rama baja a su versión con repetición ($n!/(k_1!\cdots k_r!)$ y $\binom{n+r-1}{r}$).
 
 ---
 

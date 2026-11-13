@@ -7,6 +7,8 @@ tags: [discretas, unidad3, guia-problemas]
 
 > [!info] 📖 Sobre esta guía
 >
+> **Se lee así:** la tabla de arriba es el índice de la guía: cada fila enlaza una sección del capítulo con sus ejercicios resueltos (3.1 divisibilidad → 1–6, 3.5 binomio y palomar → 26–32). Úsala para saltar directo al bloque que te falta practicar.
+>
 > Ejercicios resueltos de la **Guía de Problemas 3** — Matemáticas Discretas (MATG1051). Autores de la guía: Cristhian Hernández, Ebner Pineda, Liliana Pérez, Jennifer Avilés.
 >
 > |Sección|Tema|Ejercicios|
@@ -360,6 +362,7 @@ tags: [discretas, unidad3, guia-problemas]
 > - Sombrero: 2 sombreros + no llevar ninguno = 3 opciones.
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u3-08-01-graph.svg]]
+> **Se lee así:** el árbol de opciones del ejercicio 15 — impermeable (3) → paraguas (4) → sombrero (2 más "ninguno" = 3). Los niveles se **multiplican** porque son pasos sucesivos: $3 \cdot 4 \cdot 3 = 36$.
 >
 > $$3 \cdot 4 \cdot 3 = 36$$
 >
