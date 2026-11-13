@@ -1,6 +1,6 @@
 ---
 dg-publish: true
-tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, MATG1001, matematicas, semester1]
+tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, matematicas, semester1]
 ---
 
 # 📘 Cálculo de una Variable — Bienvenida y Syllabus
@@ -14,7 +14,7 @@ tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, 
 > | Dato | Detalle |
 > |---|---|
 > | **Materia** | Cálculo de una Variable |
-> | **Código** | MATG1001 |
+> | **Código** | MATG1045 |
 > | **Institución** | ESPOL |
 > | **Créditos** | 3 créditos — 5 horas de docencia |
 > | **Tipo** | Obligatorio |
@@ -76,6 +76,11 @@ tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, 
 > | **4** | Aplicaciones de la derivada |
 > | **5** | Antiderivadas y técnicas de integración |
 > | **6** | Integral definida y sus aplicaciones |
+>
+> **Ojo con la numeración:** esta tabla es la del **syllabus oficial** (la misma del diagrama de
+> arriba). En este vault el material está reorganizado en **7 unidades**, con los Preliminares
+> separados como Unidad 1 y lasAplicaciones de la Integral como Unidad 7. El mapa de la materia
+> ([[Cálculo de una Variable]]) es el que manda para moverse entre notas.
 
 ---
 
@@ -101,19 +106,22 @@ tags: [MATG1045, bienvenida-y-syllabus-calculo-de-una-variable, calculo, ESPOL, 
 
 > [!tip] 📂 Estructura del repositorio
 >
-> ```
-> 📁 Calculo de una Variable/
-> ├── 📄 Bienvenida y Syllabus Cálculo de una Variable.md   ← estás aquí
-> │
-> ├── 📁 Unidad 1 - Preliminares/
-> ├── 📁 Unidad 2 - Límites/
-> ├── 📁 Unidad 02 - Aplicaciones de Límites/
-> ├── 📁 Unidad 4 - Derivadas/
-> ├── 📁 Unidad 5 - Aplicaciones de la Derivada/
-> ├── 📁 Unidad 6 - Integrales/
-> └── 📁 Unidad 06 - Aplicaciones de la Integral/
-> ```
+> El material de la materia está organizado en **7 unidades** más un bloque de apoyo:
+>
+> - **Unidad 0 — Guías y Ejercicios:** exámenes reales (2021-2023), diagramas, figuras y el material
+>   de clase que la cátedra vaya soltando. Todo se lista en [[Índice de Contenido]].
+> - **Unidad 1 — Preliminares:** métricas, espacios métricos y puntos de acumulación.
+> - **Unidad 2 — Límites:** definición formal, propiedades y técnicas.
+> - **Unidad 3 — Aplicaciones de Límites:** continuidad, asíntotas y comportamiento de funciones.
+> - **Unidad 4 — Derivadas:** definición, interpretación, reglas y técnicas.
+> - **Unidad 5 — Aplicaciones de la Derivada:** análisis, optimización y razones de cambio.
+> - **Unidad 6 — Integrales:** de Riemann a las técnicas de integración y las integrales impropias.
+> - **Unidad 7 — Aplicaciones de la Integral:** áreas, volúmenes y longitud de arco.
+>
+> Cada nota numerada (`01`, `02`, `03`…) es una lección con el mismo guion: qué es el concepto, cómo
+> se aplica, qué errores te vas a topar y qué ejercicios para practicar. El punto de partida es el
+> mapa de la materia: [[Cálculo de una Variable]].
 
 ---
 
-**Tags:** #MATG1045 #bienvenida-y-syllabus-calculo-de-una-variable #calculo #ESPOL #MATG1001 #matematicas #semester1
+**Tags:** #MATG1045 #bienvenida-y-syllabus-calculo-de-una-variable #calculo #ESPOL #matematicas #semester1

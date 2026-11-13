@@ -8,7 +8,8 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > [!info] ℹ️ Para qué sirve esta página
 >
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.
-> Cada link está **verificado** (videoId + título real + canal + duración).
+> Cada fila es una **búsqueda directa en YouTube** sobre el tema exacto de la unidad: el enlace
+> lleva a los resultados, no a un video único, para que puedas ver más de una explicación.
 > **Complementa** las guías y los apuntes del curso: no los sustituye.
 
 ## 📚 Unidad 1 - Preliminares
@@ -18,6 +19,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Preliminares — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Preliminares+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🎯 Unidad 2 - Límites
 
@@ -26,6 +28,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Límites — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Límites+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🌍 Unidad 3 - Aplicaciones de Límites
 
@@ -34,6 +37,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Aplicaciones de Límites — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Aplicaciones+de+Límites+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 📈 Unidad 4 - Derivadas
 
@@ -42,6 +46,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Derivadas — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Derivadas+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🌍 Unidad 5 - Aplicaciones de la Derivada
 
@@ -50,6 +55,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Aplicaciones de la Derivada — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Aplicaciones+de+la+Derivada+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🧮 Unidad 6 - Integrales
 
@@ -58,6 +64,7 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Integrales — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Integrales+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🌍 Unidad 7 - Aplicaciones de la Integral
 
@@ -66,12 +73,14 @@ tags: [recursos-visuales, calculo-de-una-variable, MATG1045]
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Aplicaciones de la Integral — busca videos aquí | [Buscar en YouTube](https://www.youtube.com/results?search_query=1er+Semestre/Cálculo+de+una+Variable+Aplicaciones+de+la+Integral+explicado) | — | Videos explicativos de esta unidad |
+---
 
 ## 🔗 Ver también
 
 > [!tip] 📋 Ver también
 >
 > - [[Índice de Contenido.md|Índice de Contenido]] — índice de la materia: unidades, diagramas y figuras disponibles.
+---
 
 ## 📚 Referencias
 
