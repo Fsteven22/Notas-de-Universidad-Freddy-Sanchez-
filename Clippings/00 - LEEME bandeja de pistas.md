@@ -2154,3 +2154,53 @@ en `82bd9398`.
 >
 > **PUSHEADO `e6654168`** — rama `sesion/opencode-onedrive` → `master` → `origin/master`.
 > `origin/master` = `master` = `e6654168`. `origin/sesion/opencode-onedrive` queda en `e6654168`.
+
+---
+
+### `opencode-onedrive` — carpetas base de material en todas las materias — 13/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-onedrive` → `master` → `origin/master`
+>
+> **Encargo del dueño (13/11/2026):** *"tengo mucho material pero solo de exámenes… he notado que no
+> existen las carpetas base en algunas materias, puedes hacer que todos tengan estas carpetas? para que
+> yo pueda subirte lo que encontré, pero en todas las materias"*.
+>
+> **Diagnóstico:** las carpetas **sí existían** en la copia local del dueño, pero **git no trackea
+> carpetas vacías**: en cada `clone` desaparecían. No era un material perdido, era una carpeta que el
+> versionado no podía representar.
+>
+> **Hecho (commit `a47f32ae`):** las **7 carpetas base** —`Archivos`, `Diagramas`, `Diapositivas`,
+> `Exámenes`, `Lecciones`, `Material de clase`, `Talleres`— existen ahora en **las 18 materias** del
+> vault, dentro de su carpeta base de material, y cada carpeta lleva un **`.gitkeep`** para que el
+> versionado la conserve.
+> - **85 carpetas nuevas**: 78 en las 17 materias con `Unidad 0 - Guias y Ejercicios` + 7 en
+>   `MOOC - Ingles (A1 - A2)`, que nombra sus unidades en inglés (`Unit 0 - Foundations`). Se detectan
+>   **por nombre, no por número**.
+> - **41 carpetas ya existían** con contenido del dueño: **no se tocaron**.
+> - **0 archivos modificados y 0 borrados** (verificado con `git status`).
+> - El `.gitkeep` es la única pieza: está vacío, no es `.md` y no está en `MEDIA_EXT` de
+>   `site/scripts/sync-vault.mjs:66`, así que **el sitio lo ignora**.
+>
+> **Verificado**
+> - **126/126** carpetas base presentes en el worktree y en el clon de OneDrive (el vault que abre
+>   Obsidian), en disco.
+> - `npm run sync` → **788 notas, 5 bloques, sin errores**; `npm ci` + `npm run build` → **818 páginas,
+>   0 errores** · `search-content.json` → 786 notas / 18.104 apartados. **0 `.gitkeep` en `public/`**
+>   y `site/` sin cambios en git.
+> - `qa_formato_calculo1.py` → **0 hallazgos** en las 65 notas de Cálculo 1 (sin regresión).
+> - Los **30 archivos ajenos** del dueño que ya estaban modificados en el clon de OneDrive siguen
+>   intactos (sha256 verificado byte a byte).
+>
+> **Herramienta:** `Universidad/Herramientas/Mantenimiento/crea_carpetas_base.py` (idempotente;
+> `--dry` simula sin tocar disco). Deja el trabajo reproducible y auditable.
+>
+> **Ahora:** el dueño puede dejar dentro de `Unidad 0 - Guias y Ejercicios/Exámenes/` el material de
+> exámenes que tiene de Cálculo 1 (y de las demás materias). El detector
+> `qa_material_nuevo.py` (baseline CSV) avisará en cuanto entre material nuevo, para convertirlo en
+> capturas PNG por página y redactar lecturas fundamentadas **sin inventar citas**.
+>
+> **Commits**
+> - `a47f32ae` chore(vault): crea las carpetas base de material en todas las materias
+>
+> **Nota de alcance:** `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se revisaron y **no**
+> necesitaron cambios: el `.gitkeep` ni es nota ni es asset publicable.
