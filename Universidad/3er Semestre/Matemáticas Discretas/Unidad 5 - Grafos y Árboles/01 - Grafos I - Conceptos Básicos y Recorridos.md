@@ -19,11 +19,15 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Biología computacional (redes de interacción de proteínas)
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-01-graph.svg]]
+> **Se lee así:** el árbol parte de "Teoría de Grafos" y se bifurca en dos ramas — "Grafos no dirigidos" y "Digrafos (dirigidos)"; de los no dirigidos cuelgan "Tipos: simples, completos, bipartitos, ponderados", "Recorridos: Euler y Hamilton" y "Conectividad".
+> **Por qué importa:** es el mapa de la nota: primero decides si tu grafo es dirigido o no, y luego lo clasificas por tipos y por las tres preguntas que estudia la unidad (¿es conexo?, ¿existe ciclo de Euler?, ¿existe ciclo de Hamilton?).
 
 
 > [!note] 🖼️ Captura — Introducción
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/demo-grafo-euler.png]]
+> **Se lee así:** la figura de la introducción ilustra el problema con el que nació la disciplina: los puentes de Königsberg (1736) modelados como un grafo, donde cada tramo de tierra es un vértice y cada puente una arista — el mismo grafo que Euler demostró no admite un recorrido usando cada puente exactamente una vez.
+> **Por qué importa:** da rostro al ejemplo histórico del párrafo anterior: todo lo que viene después (grados, aristas, recorridos) nace de contar puentes en ese grafo.
 
 ---
 
@@ -128,6 +132,8 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > **Bipartito** (con $V_1 = {v_1, v_2, v_3}$, $V_2 = {v_4, v_5}$):
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-04-graph.svg]]
+> **Se lee así:** los cinco vértices se reparten en $V_1 = {v_1, v_2, v_3}$ y $V_2 = {v_4, v_5}$, y las cuatro aristas ($v_1v_4$, $v_1v_5$, $v_2v_4$, $v_3v_5$) cruzan siempre de un conjunto al otro: ninguna une dos vértices del mismo lado.
+> **Por qué importa:** esa regla "cero aristas internas" es exactamente la definición de bipartito: si puedes pintar los vértices con dos colores sin que ninguna arista una dos del mismo color, el grafo es bipartito.
 > 
 > **No bipartito** (contiene un ciclo de longitud impar):
 > 
@@ -255,6 +261,8 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 🖼️ Captura — Caminos y Ciclos Hamiltonianos
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 18_00_05.png]]
+> **Se lee así:** la captura de esta sección ilustra el segundo gran tipo de recorrido de la nota: un ciclo de Hamilton, que visita todos los vértices una sola vez y regresa al inicio, en contraste con el ciclo de Euler que cubre todas las aristas (el de los puentes de Königsberg).
+> **Por qué importa:** fija la distinción que resume la tabla siguiente: Euler repite vértices y recorre aristas; Hamilton no repite vértices y recorre el conjunto $V$ entero.
 
 ---
 
@@ -278,6 +286,8 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 🗺️ Diagrama — Diagrama de Decisión — ¿Qué tipo de recorrido busco
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-09-graph.svg]]
+> **Se lee así:** el árbol arranca en "¿Qué necesito recorrer?" y se bifurca: si buscas "¿Todas las ARISTAS una sola vez?" te lleva a EULER, que exige grafo conexo y todos los grados pares (o exactamente 2 vértices de grado impar para el camino, no el ciclo); si buscas "¿Todos los VÉRTICES una sola vez?" te lleva a HAMILTON, donde Dirac u Ore solo garantizan la existencia si se cumplen.
+> **Por qué importa:** el lado izquierdo tiene condición necesaria y suficiente (y fácil de comprobar), mientras el derecho termina en "No hay garantía — revisar caso por caso": decidir ciclos de Hamilton es NP-completo.
 
 ---
 
@@ -286,6 +296,8 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 🗺️ Diagrama — ️ Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-02-10-graph.svg]]
+> **Se lee así:** "Grafos I" se despliega en "Grafo G = (V, E)" y "Digrafo"; de G cuelgan sus clasificaciones — "Simple: sin lazos ni paralelas", "Completo Kn", "Bipartito / Bipartito completo Km,n", "Ponderado", "Conexo / Disconexo" — y la rama "Recorridos" con "Euler: todas las aristas" y "Hamilton: todos los vértices".
+> **Por qué importa:** resume en una página la nota completa: la definición G = (V, E), la taxonomía de tipos de grafo y los dos recorridos que cierran el tema.
 
 ---
 

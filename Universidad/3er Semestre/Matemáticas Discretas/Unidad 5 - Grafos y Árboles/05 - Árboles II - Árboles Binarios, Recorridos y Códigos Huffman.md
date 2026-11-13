@@ -15,6 +15,8 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > **Aplicaciones modernas:** compresión de archivos (ZIP, JPEG usan variantes de Huffman), bases de datos e índices, autocompletado y diccionarios, árboles de decisión en machine learning, y expresiones aritméticas en compiladores (donde los recorridos preorden/entreorden/postorden generan notación prefija, infija y postfija respectivamente).
 > 
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-01-graph.svg]]
+> **Se lee así:** "Árbol Binario" se abre en cuatro ramas — "Árbol binario completo", "Árbol de búsqueda binaria", "Árbol de codificación Huffman" y "Recorridos" —, y estos últimos se desglosan en "Preorden", "Entreorden" y "Postorden".
+> **Por qué importa:** es el mapa de la nota: la estructura restringida (completo), la variante ordenada para buscar (BST), la variante para comprimir (Huffman) y los tres recorridos que recorren cualquiera de ellas.
 
 ---
 
@@ -177,6 +179,8 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > [!note] 🖼️ Captura — Recorridos de Árboles Binarios
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 19_13_53.png]]
+> **Se lee así:** la captura muestra los tres recorridos de un árbol binario aplicados al mismo árbol — preorden (raíz-izq-der), entreorden (izq-raíz-der) y postorden (izq-der-raíz) —, el orden en que cada uno visita los vértices y la notación prefija, infija y postfija que generan para las expresiones aritméticas.
+> **Por qué importa:** es la traducción entre recorridos y notación: preorden copia el árbol sin ambigüedad, entreorden recupera los datos en orden y postorden deja los hijos antes que la raíz.
 
 ---
 
@@ -185,6 +189,8 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > [!note] 🗺️ Diagrama — Resumen Visual
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-02-graph.svg]]
+> **Se lee así:** "Árbol Binario" se separa con dos preguntas: "¿Cada vértice tiene 0 o 2 hijos?" (Sí → "Árbol binario completo", con su conteo "i internos → i+1 terminales, 2i+1 total" y la rama "Código Huffman: hojas = caracteres"; No → árbol binario general) y "¿Datos ordenados en cada subárbol?" (Sí → "Árbol de búsqueda binaria"); de "Recorridos" cuelgan "Preorden: Raíz-Izq-Der", "Entreorden: Izq-Raíz-Der" y "Postorden: Izq-Der-Raíz".
+> **Por qué importa:** cada pregunta elige la variante de árbol según su uso (contar, buscar o comprimir), y el orden de los recorridos explica por qué el entreorden es el único que entrega los datos ordenados.
 
 ---
 
@@ -193,6 +199,8 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > [!note] 🗺️ Diagrama — Estrategia de Elección — Flujograma de Decisión
 >
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u5-06-03-graph.svg]]
+> **Se lee así:** de "¿Qué necesitas del árbol binario?" salen tres decisiones: "¿Buscar/insertar datos ordenados?" → "Usar árbol de búsqueda binaria + Entreorden"; "¿Comprimir datos por frecuencia?" → "Construir árbol Huffman"; y si solo eliges el recorrido, "Copiar/serializar el árbol" → Preorden, "Liberar memoria / evaluar postfijo" → Postorden, "Obtener datos ordenados" → Entreorden.
+> **Por qué importa:** enlaza el propósito con el recorrido correcto: preorden serializa sin ambigüedad porque la raíz va primero, postorden deja los hijos antes que la raíz (liberar y evaluar) y entreorden es el único que devuelve los datos ordenados.
 
 ---
 
