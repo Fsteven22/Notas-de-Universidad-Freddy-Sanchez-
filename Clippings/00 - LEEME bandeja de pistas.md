@@ -2278,3 +2278,16 @@ que había pusheado a `master` mientras esta ronda estaba en marcha). `origin/se
 >
 > **Nota de alcance:** `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se revisaron y **no**
 > necesitaron cambios: el `.gitkeep` ni es nota ni es asset publicable.
+>
+> **Integración (13/11/2026):** `master` traía trabajo sin pushear de dos sesiones, así que antes de
+> pushear se integró todo: `1f9885fb` (merge de `master` en mi rama) · `5b3194c4` (merge de
+> `origin/master`, que había avanzado con la ronda del sitio: rescate de anclas + buscador) ·
+> `add8e92d` (merge de `f843657e`, el commit de `sesion/opencode` de 3er Semestre que entró mientras
+> esta ronda estaba en marcha). **El push fue fast-forward, sin `--force`.**
+> En el clon de OneDrive, los **32 archivos locales del dueño** (27 FESD + 1 borrado + 2 de Inglés III +
+> 2 de MatDisc) quedaron **intactos byte a byte** (sha256 antes y después del merge): el fast-forward
+> no reescribió ninguno de esos archivos.
+
+**PUSHEADO `add8e92d`** — `a47f32ae` (carpetas base) + `143520a6` (este bloque) → merge `--ff-only` a
+`master` → `origin/master` = `master` = `add8e92d`. `origin/sesion/opencode-onedrive` = `143520a6` +
+el commit de esta línea de PUSHEADO.
