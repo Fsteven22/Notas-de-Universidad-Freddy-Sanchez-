@@ -2324,7 +2324,8 @@ el commit de esta línea de PUSHEADO.
 > - **No se tocó:** FESD (26 archivos), Inglés III, los 2 PDFs sin trackear de DSW ni los 17
 >   `EXA-*.pdf` de Cálculo. `git status` limpio en `Universidad/3er Semestre/Matemáticas Discretas/`.
 >
-> [!warning] PUSHEO EN CURSO · `master` → `origin/master` · 7 commits · autorización del dueño 13/11/2026
+> [!success] PUSHEADO `44c04a09` · 13/11/2026 — `origin/master` = `master`, turno de push libre
 >
-> Los 6 commits de MatDisc (`7d89bdf5`…`5b041e0b`) + el bloque del LEEME (`7d3a25ef`).
-> Fast-forward, sin `--force`, sin `--no-verify`. Falta el `PUSHEADO <hash>` al confirmar.
+> Los 6 commits de MatDisc (`7d89bdf5`…`5b041e0b`) + los 2 bloques del LEEME (`7d3a25ef`,
+> `44c04a09`), fast-forward sin `--force`. **`opencode-onedrive` ya tiene en `origin/master` el
+> manual de flujo del 09/11 y las 44 notas de MatDisc en 0 hallazgos.**
