@@ -2395,3 +2395,14 @@ el commit de esta línea de PUSHEADO.
 > **Nota de alcance:** no se tocó `site/src/**`, `site/public/**` ni `Universidad/3er Semestre/**`
 > (zona de `opencode`). `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se verificaron y **no**
 > necesitaron cambios.
+
+> **PUSHEADO `db43e347`** · 13/11/2026 — `origin/master` = `master` = `db43e347`.
+> El push fue **fast-forward, sin `--force`**: `sesion/opencode-onedrive` (`db43e347`) → merge
+> `--ff-only` en el clon de OneDrive → `origin/master`.
+>
+> **Los archivos del dueño siguen intactos:** en el clon de OneDrive, los **32 archivos locales** que
+> ya estaban modificados (27 de FESD + 1 borrado + 2 de Inglés III + 2 de MatDisc) siguen con sus
+> cambios: **27 modificados + 1 borrado + 3 sin seguimiento**, ninguno perdido ni pisado por el
+> merge. Los **16 PDF de exámenes** que estaban sin seguimiento en ese clon se registraron en el
+> índice **antes** del merge (sha256 byte a byte idéntico al commit `f0f56c4c`: 16/16 iguales), que
+> es lo que permite el `--ff-only` sin sobrescribir archivos del dueño.
