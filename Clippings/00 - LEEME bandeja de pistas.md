@@ -2329,3 +2329,69 @@ el commit de esta línea de PUSHEADO.
 > Los 6 commits de MatDisc (`7d89bdf5`…`5b041e0b`) + los 2 bloques del LEEME (`7d3a25ef`,
 > `44c04a09`), fast-forward sin `--force`. **`opencode-onedrive` ya tiene en `origin/master` el
 > manual de flujo del 09/11 y las 44 notas de MatDisc en 0 hallazgos.**
+---
+
+### `opencode-onedrive` — Cálculo 1 al formato de la casa (SBD): contrato, validador y mapa — 13/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-onedrive` → `master` → `origin/master`
+>
+> **Encargo del dueño (13/11/2026):** *"quiero que el formato que tienen sbd lo muevas a calculo de
+> una variable, con los svg y las explicaciones y todo eso"*. Y antes: *"no crees una nota portal de
+> exámenes; en SBD todo se lista en el `Índice de Contenido.md`"*.
+>
+> **Diagnóstico (auditoría previa de las 65 notas):**
+> - La prosa estaba bien (H2 con emoji, 1.763 callouts con título, tablas, mnemotecnias). Lo que faltaba
+>   era **la arquitectura del formato**: de 57 callouts de definición, solo **5** tenían su figura
+>   **dentro**; de 349 `[!example]`, **0** tenían la solución verde anidada y plegada; faltaban
+>   **564** separadores `---`; **0/61** notas de clase tenían flashcards; **3/65** tenían metas con
+>   checkbox; y **18** callouts de deck seguían sin lectura.
+> - La raíz tenía un solo diagrama por nota y las unidades estaban anidadas dos niveles
+>   (`Unidad 4 - Derivadas/IV - Técnicas Avanzadas/`), así que un perfil de nota que mirara solo la
+>   carpeta inmediata clasificaba mal a la mitad de las notas.
+>
+> **Decisión de diseño (importante):** el formato objetivo es **el de SBD**, no un contrato paralelo.
+> Por eso `qa_formato_calculo1.py` **importa** `qa_formato_sbd.py` y ejecuta su mismo núcleo (R1..R14);
+> solo parchea `perfil_nota()` (perfil `clase` por ancestro `Unidad N` con N ≥ 1, `indice` para la raíz
+> y la Unidad 0) y añade lo propio de esta materia: **R15** (cada definición lleva su figura dentro),
+> **R8** (solución anidada y plegada en *Ejercicios Propuestos*), **R12-prefijo** (los `../` según la
+> profundidad de la nota), **R16** (`#flashcards/cal1-uN`) y **R17** (metas con checkbox).
+>
+> **Hecho (3 commits):**
+> - `f0f56c4c` — **material de exámenes del dueño incorporado**: 16 PDF en
+>   `Unidad 0 - Guias y Ejercicios/Exámenes/` (son **6 exámenes distintos**, 3 con el mismo texto
+>   repetido por número de copia), **62 capturas PNG** (DPI 140) de un representante por grupo en
+>   `Unidad 0 - Guias y Ejercicios/Archivos/Examenes/`, el `Índice de Contenido.md` reescrito con la
+>   sección **📝 Exámenes**, el **mapa tema → examen → nota** (21 filas) y los **9 formatos de
+>   pregunta** que se repiten en los 6 exámenes; y la herramienta `pdf_a_png.py`.
+>   Los PDF se **enlazan sin `!`**: el contrato prohíbe embebidos de clase y el sitio los publica como
+>   descarga. El contenido se extrajo con `pdf_a_markdown_lote.py` (PyMuPDF), **sin leer los PDF a ojo**.
+> - `821daf1c` — **contrato + validador + transformador**:
+>   `FORMATO-CALCULO1.md` (R1..R15 + receta de producción), `qa_formato_calculo1.py` (wrapper de SBD,
+>   con `--solo`, `--nota`, `--calibrar`, `-o` y `--estricto`) y `transform_calculo1_sbd.py` (fases
+>   R6/R7 y separadores; **importa la clasificación del validador**, no la reimplementa).
+> - `9e667978` — **las 4 notas de la raíz** al estilo de la casa: el mapa
+>   `Cálculo de una Variable.md` ahora describe cada unidad y **qué resuelve cada nota** (el guion de
+>   SBD), la Bienvenida corrige el código (`MATG1045`, no `MATG1001`) y avisa de que la numeración del
+>   syllabus oficial ≠ la del vault, y `Recursos Visuales.md` deja de afirmar que sus enlaces son
+>   videos verificados (son búsquedas de YouTube).
+>
+> **Verificado**
+> - Las 4 notas de la raíz: **0 hallazgos** con el validador nuevo; **66/66** enlaces del mapa resuelven.
+> - Línea base de la materia con el contrato nuevo: **1.095 hallazgos** (564 separadores, 399 secciones
+>   canónicas faltantes, 61 sin flashcards, 52 definiciones sin figura, 18 decks sin lectura, 1 metas).
+> - `verifica_calculo1.py` quedó apuntando al backup previo (`TEMP/opencode/c1_backup_pre_sbd`, 65
+>   notas) para exigir que la reescritura **no pierda contenido**.
+>
+> **En curso:** las **61 notas de clase**, por unidades y con subagentes en paralelo (uno por unidad,
+> cada uno con su lista exacta de notas y sus prefijos de diagrama). Cada bloque se valida con
+> `qa_formato_calculo1.py --nota` hasta 0 hallazgos antes de commitear.
+>
+> **Commits**
+> - `f0f56c4c` feat(calculo1): trae los 16 exámenes del dueño con capturas y mapa de temas
+> - `821daf1c` feat(calculo1): contrato SBD + validador que lo hereda + transformador
+> - `9e667978` docs(calculo1): mapa de la materia al estilo de SBD + ajustes de las notas raíz
+> - `5beff211` merge: integra `origin/master` (MatDisc cerrada: 133 → 0 hallazgos)
+>
+> **Nota de alcance:** no se tocó `site/src/**`, `site/public/**` ni `Universidad/3er Semestre/**`
+> (zona de `opencode`). `site/scripts/sync-vault.mjs` y `site/RUNBOOK.md` se verificaron y **no**
+> necesitaron cambios.
