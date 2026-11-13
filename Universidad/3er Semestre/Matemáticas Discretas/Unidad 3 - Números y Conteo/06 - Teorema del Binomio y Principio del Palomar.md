@@ -250,6 +250,38 @@ tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, pal
 ---
 
 
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — binomio y palomar en una tabla
+> 
+> | Herramienta | Fórmula o condición | Disparador: cuándo usarla |
+> |---|---|---|
+> | Coeficiente binomial | $\binom{n}{k} = \dfrac{n!}{k!(n-k)!}$ | ¿Cuántos subconjuntos de $k$ elementos hay? |
+> | Teorema binomial | $(a+b)^n = \sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$ | Expandir una suma elevada a $n$ |
+> | Identidad de Pascal | $\binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1}$ | Recorrer el triángulo sin factoriales |
+> | Suma de coeficientes | $\sum_{k=0}^{n}\binom{n}{k} = 2^n$ | Contar **todos** los subconjuntos de un conjunto con $n$ elementos |
+> | Palomar — primera versión | Si caen $n+1$ objetos en $n$ categorías, al menos 2 comparten | Garantizar una repetición |
+> | Palomar — generalizada | Al menos $\left\lceil \dfrac{n}{m} \right\rceil + 1$ objetos en alguna de $m$ categorías | Garantizar $k+1$ objetos juntos |
+> 
+> **Se lee así:** cada fila es una herramienta de esta nota con su fórmula y, en la última columna, la pregunta que hay que responder **antes** de elegirla.
+> 
+> **Por qué importa:** el error habitual no está en la fórmula sino en el disparador: contar posiciones en fila exige permutación, elegir un subconjunto exige combinación, y "garantizar" exige palomar.
+> 
+> **Ejemplo:** en el ejercicio 4 de arriba hay $m=12$ categorías (meses) y se piden $k+1=3$ personas en la misma → fila "palomar generalizada".
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 6.4 «Binomial Coefficients and Identities», p. 437; sec. 6.2 «The Pigeonhole Principle», p. 420.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 6.7 «Binomial Coefficients and Combinatorial Identities», p. 313; sec. 6.8 «The Pigeonhole Principle», p. 319.
+
+---
+
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico

@@ -192,6 +192,17 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 ---
 
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 6.1 «The Basics of Counting», p. 405.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 6.1 «Basic Principles», p. 255.
+
+---
+
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] Nivel Básico

@@ -237,6 +237,16 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 
 ---
 
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 9.5 «Equivalence Relations», p. 638; sec. 9.6 «Partial Orderings», p. 650.
+> 
+> [2] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 3.4 «Equivalence Relations», p. 151.
+
+---
+
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Básico

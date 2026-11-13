@@ -256,8 +256,15 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 
 ---
 
-> [!quote] 📖 Referencias [1]
-> Pineda, E. (2025). _Isomorfismo de grafos_. Departamento de Matemáticas, FCNM-ESPOL.
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes consultadas
+> 
+> [1] Pineda, E. (2025). _Isomorfismo de grafos_. Departamento de Matemáticas, FCNM-ESPOL.
+> 
+> [2] K. H. Rosen, _Discrete Mathematics and Its Applications_, 8th ed. New York, USA: McGraw-Hill, 2019, sec. 10.3 «Representing Graphs and Graph Isomorphism», p. 703.
+> 
+> [3] R. Johnsonbaugh, _Discrete Mathematics_, 8th ed. Hoboken, NJ, USA: Pearson, 2018, sec. 8.6 «Isomorphisms of Graphs», p. 415.
 
 > [!quote] 🔗 Conexiones
 > 

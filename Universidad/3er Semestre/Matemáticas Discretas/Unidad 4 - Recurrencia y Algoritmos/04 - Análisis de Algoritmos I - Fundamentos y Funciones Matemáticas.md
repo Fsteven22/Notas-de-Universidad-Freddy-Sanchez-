@@ -4,9 +4,13 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 ---
 # 📈 Análisis de Algoritmos I — Fundamentos y Funciones Matemáticas
 
+## 🎯 Introducción
+
 > [!info] 💡 De qué trata esta nota
 > 
 > Aquí el punto de partida es una **fórmula $f(n)$ ya dada explícitamente** (como $f(n) = 2n^2-5n+3$) y el trabajo es puramente algebraico: identificar el término dominante y, si se pide demostrar, exhibir $c_1$, $c_2$ y $n_0$. Es la **primera de dos partes**; la segunda, [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]], cubre cómo obtener las cotas contando operaciones en pseudocódigo.
+
+---
 
 ## 🔵 Definiciones Formales
 
@@ -356,6 +360,26 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 > 
 > - [[05 - Análisis de Algoritmos II - Pseudocódigo y Tiempo Real]] — segunda parte de esta nota.
 > - [[03 - Pseudocódigo y Algoritmos]] — la sintaxis de los algoritmos que se analizan en la Nota II.
+
+---
+
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — de la fórmula $f(n)$ a la cota asintótica
+> 
+> | Paso | Qué se hace | Con $f(n) = 2n^2 - 5n + 3$ |
+> |---|---|---|
+> | 1. Dominante | Quedarse con la mayor potencia de $n$ | $n^2$ |
+> | 2. Cota superior ($\mathcal{O}$) | Buscar $c$ y $n_0$ con $f(n) \leq c\,n^2$ para todo $n \geq n_0$ | $c = 2$, $n_0 = 3$ |
+> | 3. Cota inferior ($\Omega$) | Buscar $c$ y $n_0$ con $f(n) \geq c\,n^2$ para todo $n \geq n_0$ | $c = 1$, $n_0 = 5$ |
+> | 4. $\Theta$ | Si valen las dos cotas para el **mismo** $g(n)$ | $f(n) = \Theta(n^2)$ |
+> | 5. Coeficientes negativos | No invalidan la cota: basta tomar $n_0$ grande | $-4n^3 + n^2 - 5n = \Theta(n^3)$ |
+> 
+> **Se lee así:** las columnas son el orden de trabajo (paso, acción, aplicación concreta); la fila 5 recoge la observación que la nota demuestra aparte.
+> 
+> **Por qué importa:** el error típico es escribir $c_1$ y $c_2$ sin justificar $n_0$; aquí el procedimiento queda en cinco pasos verificables uno por uno.
+> 
+> **Ejemplo:** en el ejercicio 1, $f(n) = -4n^3 + n^2 - 5n$ tiene término dominante $n^3$ y, tomando $n_0$ suficientemente grande, $\Theta(n^3)$.
 
 ---
 

@@ -353,6 +353,27 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 
 ---
 
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — la MEF $M = (I, O, S, f, g, \sigma)$ en una tabla
+> 
+> | Componente | Símbolo | Papel | En el ejemplo de dos estados |
+> |---|---|---|---|
+> | Entradas | $I$ | símbolos que la máquina puede leer | $\{a, b\}$ |
+> | Salidas | $O$ | símbolos que la máquina puede producir | $\{0, 1\}$ |
+> | Estados | $S$ | memoria finita del sistema | $\{\sigma_0, \sigma_1\}$ |
+> | Siguiente estado | $f: S \times I \to S$ | regla que actualiza el estado | $f(\sigma_0, b) = \sigma_1$ |
+> | Salida | $g: S \times I \to O$ | regla que produce la salida | $g(\sigma_0, b) = 1$ |
+> | Estado inicial | $\sigma \in S$ | desde dónde arranca el proceso | $\sigma_0$ |
+> 
+> **Se lee así:** cada fila es un componente de la sextupla con su símbolo, su papel y el valor que toma en el ejemplo de dos estados de la nota.
+> 
+> **Por qué importa:** una MEF queda mal definida si falta cualquiera de los seis componentes; la tabla deja a la vista cuál revisar cuando un diseño no arranca.
+> 
+> **Ejemplo:** si la máquina está en $\sigma_0$ y lee $b$, pasa a $\sigma_1$ y emite $1$ — eso es leer $f$ y $g$ en la misma fila.
+
+---
+
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas

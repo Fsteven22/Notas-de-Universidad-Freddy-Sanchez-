@@ -293,6 +293,26 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 
 ---
 
+## 📊 Resumen Visual
+
+> [!note] 🗺️ Chuleta — el autómata $A = (I, S, f, \mathcal{A}, \sigma)$ en una tabla
+> 
+> | Componente | Símbolo | Papel | En el ejemplo de tres estados |
+> |---|---|---|---|
+> | Entradas | $I$ | símbolos que el autómata puede leer | $\{a, b\}$ |
+> | Estados | $S$ | memoria finita del sistema | $\{\sigma_0, \sigma_1, \sigma_2\}$ |
+> | Transición | $f: S \times I \to S$ | siguiente estado al leer un símbolo | $f(\sigma_0, a) = \sigma_1$ |
+> | Estados aceptantes | $\mathcal{A} \subseteq S$ | los círculos dobles del diagrama | $\{\sigma_1, \sigma_2\}$ |
+> | Estado inicial | $\sigma \in S$ | por dónde arranca | $\sigma_0$ |
+> 
+> **Se lee así:** cada fila es un componente de la quíntupla con su símbolo, su papel y el valor que toma en el ejemplo de tres estados de la nota.
+> 
+> **Por qué importa:** $\mathcal{A}$ (caligráfica) es el conjunto de estados aceptantes y $A$ es el autómata mismo; la tabla separa ambos símbolos para que no se confundan al escribir la definición.
+> 
+> **Ejemplo:** la cadena $aa$ se acepta porque su trayectoria $\sigma_0 \to \sigma_1 \to \sigma_2$ termina en $\sigma_2 \in \mathcal{A}$.
+
+---
+
 ## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
