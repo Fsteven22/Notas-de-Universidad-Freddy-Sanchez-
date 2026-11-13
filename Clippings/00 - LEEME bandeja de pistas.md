@@ -2291,3 +2291,40 @@ que había pusheado a `master` mientras esta ronda estaba en marcha). `origin/se
 **PUSHEADO `add8e92d`** — `a47f32ae` (carpetas base) + `143520a6` (este bloque) → merge `--ff-only` a
 `master` → `origin/master` = `master` = `add8e92d`. `origin/sesion/opencode-onedrive` = `143520a6` +
 el commit de esta línea de PUSHEADO.
+
+---
+
+### `opencode` — Matemáticas Discretas cerrada: 133 → 0 hallazgos + commits por unidad — 13/11/2026
+
+> [!success] `qa_formato_matdisc.py`: **44 notas, 0 hallazgos** · 6 commits atómicos locales (sin push)
+>
+> - **Hecho (requisito #5 + R3 + R14):**
+>   - **Commit `f843657e`** (anterior, ya integrado en `origin/master`): las **18 secciones núcleo**
+>     que faltaban (Introducción, Resumen Visual, Referencias, Metas de Aprendizaje en 18 notas de
+>     clase). R3-seccion-falta **18 → 0**.
+>   - **6 commits nuevos (hoy, locales, `master` ahead 6):**
+>
+>     | Commit | Bloque | Archivos |
+>     |---|---|---|
+>     | `7d89bdf5` | Raíz + Unidad 1 (49 visuales) | 14 |
+>     | `6806ecee` | U2 Funciones y Relaciones | 4 |
+>     | `1f005d25` | U3 Números y Conteo | 7 |
+>     | `6073e36f` | U4 Recurrencia y Algoritmos | 6 |
+>     | `3c89fcf5` | U5 Grafos y Árboles | 6 |
+>     | `5b041e0b` | U6 Lenguajes y Autómatas | 3 |
+>
+> - **Qué es una lectura R14:** junto a cada SVG embebido (o callout de deck) va `**Se lee así:**` /
+>   `**Por qué importa:**` a ≤6 líneas del embed, dentro del mismo callout. **Redactada desde la fuente
+>   `.mmd` del SVG** (nodos, flechas, orden reales), nunca abriendo la imagen; los PNG raster se
+>   redactan desde el título del callout y el prosado vecino. 112 hallazgos R14 → 0.
+> - **Reparto:** agente principal 45 (raíz + U2 + U3 + U4 + U6) + 3 subagentes en paralelo
+>   (U1a 22 · U1b 20 · U5 25). Cada bloque verificado con el validador antes de commitear.
+> - **Verificación final:** `qa_formato_matdisc.py` → **notas=44 hallazgos=0**
+>   (reporte `TEMP/opencode/matdisc_audit_final.txt`).
+> - **No se tocó:** FESD (26 archivos), Inglés III, los 2 PDFs sin trackear de DSW ni los 17
+>   `EXA-*.pdf` de Cálculo. `git status` limpio en `Universidad/3er Semestre/Matemáticas Discretas/`.
+>
+> [!warning] Pendiente: push de `master` (ahead 6) — autorización del dueño
+>
+> **Sin push, `opencode-onedrive` NO recibe** el manual de flujo del bloque del 09/11 ni estos
+> commits. Espero la autorización para pushear (sin `--force`, fast-forward).
