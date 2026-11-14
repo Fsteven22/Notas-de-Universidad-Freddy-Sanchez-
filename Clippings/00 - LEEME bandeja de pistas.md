@@ -2462,3 +2462,12 @@ el commit de esta línea de PUSHEADO.
 > **En curso:** las **56 notas de clase** que faltan, por unidades. Los subagentes van de uno
 > en uno porque el proveedor de modelos corta las peticiones simultáneas con HTTP 429: los
 > dos primeros (U1+U3 y U2-I) se quedaron a medias y su trabajo se retomó.
+
+> **PUSHEADO `051d6942`** · 14/11/2026 — `origin/master` = `master` = `051d6942`.
+> El push fue **fast-forward, sin `--force`**: `sesion/opencode-onedrive` (`051d6942`) → merge
+> `--ff-only` en el clon de OneDrive → `origin/master`.
+>
+> **Los archivos del dueño siguen intactos:** en el clon de OneDrive, los **58 archivos locales**
+> que ya estaban modificados o sin seguimiento (27 modificados + 1 borrado + 30 sin seguimiento)
+> siguen como estaban: ninguno está en Cálculo 1 ni en el LEEME, así que el `--ff-only` no los
+> tocó. Verificado con `git status --porcelain` antes y después del merge.
