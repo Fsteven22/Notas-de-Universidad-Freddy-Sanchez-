@@ -1,292 +1,336 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad3, asintotas-y-comportamiento-de-funciones, asintotas, limites, graficas, funciones-racionales, comportamiento-asintotico, analisis-funciones, calculo, geometria-analitica, limites-infinito]
+tags: [MATG1045, unidad3, asintotas, comportamiento-de-funciones, limites, graficas, funciones-racionales]
 ---
 
-# 🎯 Asíntotas y Comportamiento
+# 📐 Asíntotas y Comportamiento de Funciones
 
-## 📐 Concepto General de Asíntotas
+## 🎯 Introducción
 
-> [!tip] 🎪 Definición Fundamental de Asíntota
+> [!info] 💡 ¿Qué información da una asíntota?
 >
-> ### ¿Qué es una asíntota?
+> Una asíntota describe el comportamiento de una curva en una dirección importante: al acercarse a un punto problemático o al alejarse hacia el infinito. No es solo una recta auxiliar para el dibujo; es la traducción gráfica de un límite.
 >
-> Una **asíntota** es una recta a la cual se aproxima indefinidamente una curva sin llegar nunca a tocarla (excepto posiblemente en un número finito de puntos).
+> El análisis se organiza en tres familias. Una vertical $x=a$ corresponde a un límite infinito al acercarse a $a$. Una horizontal $y=L$ corresponde a un límite finito al llegar a $\pm\infty$. Una oblicua $y=mx+b$ corresponde a una recta a la que la función se aproxima con error tendente a cero.
 >
-> **Interpretación intuitiva:** 📐 "La función se comporta como la recta cuando nos alejamos hacia el infinito o nos acercamos a ciertos puntos problemáticos"
->
-> **Tipos de asíntotas:** 🗂️
->
-> - **Horizontales:** $y = k$ (comportamiento en $\pm\infty$)
-> - **Verticales:** $x = a$ (comportamiento cerca de discontinuidades)
-> - **Oblicuas:** $y = mx + b$ (comportamiento lineal asintótico)
->
-> **Mnemotecnia:** "**H**orizontal **V**ertical **O**blicua = **HVO** (como 'hablo')"
+> **Ejemplo:** $f(x)=1/(x-2)$ tiene asíntota vertical $x=2$ y asíntota horizontal $y=0$. La primera describe cada rama; la segunda, su comportamiento final.
 
-## 🎯 Asíntotas Horizontales
+---
 
-> [!info] ➡️ Asíntotas Horizontales
+## 📋 Definiciones Formales
+
+> [!note] 📋 Definición — Asíntota
 >
-> ### Definición y criterios
+> Una **asíntota** de $f$ es una recta a la que la gráfica de $f$ se aproxima indefinidamente sin intersectarla salvo, como máximo, en un número finito de puntos. En esta materia se estudian las asíntotas vertical, horizontal y oblicua.
 >
-> La recta $y = L$ es **asíntota horizontal** de $f(x)$ si: $$\lim_{x \to +\infty} f(x) = L \quad \text{o} \quad \lim_{x \to -\infty} f(x) = L$$
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_02.svg]]
 >
-> **Casos posibles:** 📊
+> **Se lee así:** una caja central de asíntota abre en tres ramas: vertical, horizontal y oblicua. Cada rama incluye la dirección de análisis y el límite o diferencia que la define; las dos últimas rejoinan en la idea de comportamiento final.
 >
-> - **Misma asíntota:** $\lim_{x \to +\infty} f(x) = \lim_{x \to -\infty} f(x) = L$
-> - **Asíntotas diferentes:** $\lim_{x \to +\infty} f(x) = L_1$, $\lim_{x \to -\infty} f(x) = L_2$
-> - **Solo una asíntota:** Uno de los límites existe, el otro no
-> - **Sin asíntotas horizontales:** Ningún límite existe o es infinito
+> **Por qué importa:** el diagrama impide mezclar las direcciones: una vertical se detecta al acercarse a un punto, mientras las otras se detectan al alejarse.
 >
-> |Comportamiento|Límite en $+\infty$|Límite en $-\infty$|Asíntotas|
+> **Ejemplo:** la curva $y=\log x$ se aproxima al eje $x=0$ sin tocarlo; esa recta es su asíntota vertical.
+
+> [!note] 📋 Definición — Asíntota horizontal
+>
+> La recta $y=L$ es una **asíntota horizontal** de $f$ si
+> $$\lim_{x\to+\infty}f(x)=L\quad\text{o}\quad\lim_{x\to-\infty}f(x)=L.$$
+> Puede haber una asíntota en cada dirección y sus valores pueden ser distintos.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_03.svg]]
+>
+> **Se lee así:** primero se analizan las dos direcciones hacia el infinito. Una decisión exige un límite finito; la rama verde conduce a la asíntota horizontal, mientras los límites infinitos o inexistentes la descartan. Las cajas finales resumen el criterio para racionales.
+>
+> **Por qué importa:** una asíntota horizontal no afirma que la función esté limitada en todo su dominio, solo en una dirección hacia el infinito.
+>
+> **Ejemplo:** si $f(x)=(3x^2+2x-1)/(x^2-4)$, los grados son iguales y la asíntota es $y=3$.
+
+> [!note] 📋 Definición — Asíntota vertical
+>
+> La recta $x=a$ es una **asíntota vertical** de $f$ si
+> $$\lim_{x\to a^-}f(x)=\pm\infty\quad\text{o}\quad\lim_{x\to a^+}f(x)=\pm\infty.$$
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_04.svg]]
+>
+> **Se lee así:** se parten de los candidatos donde la función no está definida y se decide con límites laterales infinitos. La rama verde distingue vertical simple, vertical con salto y vertical unilateral; una discontinuidad evitable se descarta.
+>
+> **Por qué importa:** el candidato no basta: $x=2$ puede ser un hueco reparable o una vertical. Solo el crecimiento infinito confirma la asíntota.
+>
+> **Ejemplo:** $f(x)=1/(x-2)$ satisface $\lim_{x\to2^-}f(x)=-\infty$ y $\lim_{x\to2^+}f(x)=+\infty$.
+
+> [!note] 📋 Definición — Asíntota oblicua
+>
+> La recta $y=mx+b$ es una **asíntota oblicua** de $f$ si
+> $$\lim_{x\to\pm\infty}\bigl(f(x)-(mx+b)\bigr)=0.$$
+> La pendiente y el intercepto se calculan por
+> $$m=\lim_{x\to\pm\infty}\frac{f(x)}x,\qquad b=\lim_{x\to\pm\infty}\bigl(f(x)-mx\bigr),$$
+> siempre que ambos límites existan y sean finitos.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_05.svg]]
+>
+> **Se lee así:** la búsqueda empieza con una recta candidata. Se calcula la pendiente como crecimiento relativo, se verifica que sea finita y luego se calcula el intercepto; solo si ambos controles pasan se declara la asíntota.
+>
+> **Por qué importa:** el error debe ser la distancia vertical entre curva y recta, no solo la razón $f(x)/x$. Calcular únicamente $m$ no basta.
+>
+> **Ejemplo:** para $f(x)=(x^2+x+1)/(x+1)$, $m=1$ y $b=0$; por tanto la asíntota es $y=x$.
+
+> [!note] 📋 Definición — Asíntota vertical, horizontal y oblicua
+>
+> Una asíntota vertical $x=a$ exige crecimiento infinito al acercarse a $a$; una horizontal $y=L$ exige un límite finito al alejarse; una oblicua $y=mx+b$ exige que la diferencia vertical con la recta tienda a cero al alejarse.
+>
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_02.svg]]
+>
+> **Se lee así:** las tres definiciones parallelas parten de $x\to a$ o $x\to\pm\infty$ y terminan, respectivamente, en una recta vertical, horizontal o inclinada.
+>
+> **Por qué importa:** memorizar una sola fórmula sin la dirección lleva a Buscar asíntotas donde no las hay.
+>
+> **Ejemplo:** $f(x)=x+2/x$ tiene $y=x$ como asíntota oblicua; no puede tener horizontal en la misma dirección.
+
+---
+
+## 🔎 Técnicas para Encontrar Asíntotas
+
+> [!info] 📊 Asíntotas horizontales
+>
+> | Comportamiento | $\lim_{x\to+\infty}f$ | $\lim_{x\to-\infty}f$ | Asíntotas |
 > |---|---|---|---|
-> |**Estable**|$L$|$L$|Una: $y = L$ ➡️|
-> |**Bifurcado**|$L_1$|$L_2$|Dos: $y = L_1$, $y = L_2$ ↔️|
-> |**Parcial**|$L$|$\pm\infty$|Una: $y = L$ (solo un lado) ⚡|
-> |**Explosivo**|$\pm\infty$|$\pm\infty$|Ninguna 💥|
+> | Estable | $L$ | $L$ | Una: $y=L$ |
+> | Bifurcado | $L_1$ | $L_2$ | Dos: $y=L_1$, $y=L_2$ |
+> | Parcial | $L$ | $\pm\infty$ | Una: $y=L$ |
+> | Explosivo | $\pm\infty$ | $\pm\infty$ | Ninguna |
 >
+> **Por qué importa:** una función puede tener dos asíntotas horizontales, una por dirección. Buscar solo en $+\infty$ deja casos incompletos.
 
-> [!warning] 🔍 Técnicas para Encontrar Asíntotas Horizontales
+> [!warning] 🔍 Criterios por tipo de función
 >
-> ### Análisis según el tipo de función
+> **Funciones racionales** $f=P/Q$:
 >
-> **1. Funciones racionales** $f(x) = \frac{P(x)}{Q(x)}$ donde $P$ y $Q$ son polinomios:
+> - Si $\deg P<\deg Q$, hay asíntota horizontal $y=0$.
+> - Si $\deg P=\deg Q$, hay $y=a_n/b_n$, cociente de coeficientes principales.
+> - Si $\deg P>\deg Q$, no hay asíntota horizontal.
 >
-> - **Si $\deg P < \deg Q$:** $y = 0$
-> - **Si $\deg P = \deg Q$:** $y = \frac{a_n}{b_n}$ (coeficientes principales)
-> - **Si $\deg P > \deg Q$:** No hay asíntota horizontal
+> **Exponenciales:**
 >
-> **2. Funciones exponenciales:**
+> - $\lim_{x\to+\infty}e^x=+\infty$ y $\lim_{x\to-\infty}e^x=0$.
+> - $\lim_{x\to+\infty}e^{-x}=0$ y $\lim_{x\to-\infty}e^{-x}=+\infty$.
 >
-> - $\lim_{x \to +\infty} e^x = +\infty$, $\lim_{x \to -\infty} e^x = 0$ → $y = 0$
-> - $\lim_{x \to +\infty} e^{-x} = 0$, $\lim_{x \to -\infty} e^{-x} = +\infty$ → $y = 0$
+> **Trigonométricas y relacionadas:**
 >
-> **3. Funciones trigonométricas acotadas:**
+> - $\lim_{x\to\pm\infty}\sin x/x=0$.
+> - $\sin x$ y $\cos x$ no tienen asíntotas horizontales porque oscilan.
 >
-> - $\lim_{x \to \pm\infty} \frac{\sin x}{x} = 0$ → $y = 0$
-> - $\sin x$, $\cos x$ no tienen asíntotas (oscilan)
->
+> **Mnemotecnia:** **H**orizontal, **V**ertical, **O**blicua = **HVO**.
 
-> [!tip] 🎯 Ejemplos Paso a Paso
+> [!warning] ↕️ Algoritmo para asíntotas verticales
 >
-> ### Casos representativos
+> 1. Identificar valores donde $f$ no está definida.
+> 2. Verificar que no sean discontinuidades evitables.
+> 3. Calcular ambos límites laterales.
+> 4. Clasificar el comportamiento.
+> 5. Confirmar visualmente la gráfica.
 >
-> **Ejemplo 1:** $f(x) = \frac{3x^2 + 2x - 1}{x^2 - 4}$
->
-> - Grados iguales: $\deg P = \deg Q = 2$
-> - Asíntota: $y = \frac{3}{1} = 3$ ✅
->
-> **Ejemplo 2:** $f(x) = \frac{2x - 1}{x^2 + 1}$
->
-> - $\deg P = 1 < \deg Q = 2$
-> - Asíntota: $y = 0$ ✅
->
-> **Ejemplo 3:** $f(x) = 2 + \frac{3}{x}$
->
-> - $\lim_{x \to \pm\infty} \left(2 + \frac{3}{x}\right) = 2$
-> - Asíntota: $y = 2$ ✅
->
-> **Ejemplo 4:** $f(x) = x \cdot e^{-x}$
->
-> - $\lim_{x \to +\infty} x e^{-x} = 0$ (exponencial domina)
-> - $\lim_{x \to -\infty} x e^{-x} = 0$ (producto negativo × positivo muy grande)
-> - Asíntota: $y = 0$ ✅
-
-## 🎯 Asíntotas Verticales
-
-> [!warning] ↕️ Asíntotas Verticales
->
-> ### Definición y detección
->
-> La recta $x = a$ es **asíntota vertical** de $f(x)$ si al menos uno de estos límites es infinito: $$\lim_{x \to a^-} f(x) = \pm\infty \quad \text{o} \quad \lim_{x \to a^+} f(x) = \pm\infty$$
->
-> **Tipos de comportamiento:** 🎢
->
-> |Límites laterales|Tipo de asíntota|Comportamiento|
+> | Límites laterales | Tipo | Comportamiento |
 > |---|---|---|
-> |$+\infty$, $+\infty$|Vertical simple|Ambos lados suben ⬆️⬆️|
-> |$-\infty$, $-\infty$|Vertical simple|Ambos lados bajan ⬇️⬇️|
-> |$+\infty$, $-\infty$|Vertical con salto|Un lado sube, otro baja ⬆️⬇️|
-> |$-\infty$, $+\infty$|Vertical con salto|Un lado baja, otro sube ⬇️⬆️|
+> | $+\infty,+\infty$ | Vertical simple | Ambos lados suben |
+> | $-\infty,-\infty$ | Vertical simple | Ambos lados bajan |
+> | $+\infty,-\infty$ | Vertical con salto | Un lado sube y otro baja |
+> | $-\infty,+\infty$ | Vertical con salto | Un lado baja y otro sube |
 >
-> **Fuentes comunes de asíntotas verticales:** 🔍
->
-> - Denominadores que se anulan
-> - Logaritmos de expresiones que tienden a 0⁺
-> - Tangentes en múltiplos impares de $\frac{\pi}{2}$
-> - Raíces con exponentes negativos
->
+> **Fuentes comunes:** denominadores que se anulan, logaritmos de expresiones que tienden a $0^+$, tangentes en múltiplos impares de $\pi/2$ y raíces con exponentes negativos.
 
-> [!info] 🕵️ Algoritmo de Búsqueda
+> [!warning] ↗️ Algoritmo para asíntotas oblicuas
 >
-> ### Pasos sistemáticos para encontrar asíntotas verticales
+> 1. Verificar que no exista asíntota horizontal en esa dirección.
+> 2. Calcular $m=\lim f(x)/x$.
+> 3. Si $m$ es finito, calcular $b=\lim(f(x)-mx)$.
+> 4. Si $b$ es finito, declarar $y=mx+b$.
+> 5. Repetir en la dirección opuesta si corresponde.
 >
-> **Proceso completo:**
+> **Casos especiales:**
 >
-> 1. **Identificar candidatos:** Valores donde $f(x)$ no está definida
-> 2. **Verificar discontinuidad:** Confirmar que no son discontinuidades evitables
-> 3. **Calcular límites laterales:** $\lim_{x \to a^-} f(x)$ y $\lim_{x \to a^+} f(x)$
-> 4. **Clasificar comportamiento:** Según la tabla anterior
-> 5. **Verificar mediante gráfica:** Confirmar el comportamiento visualmente
+> - Si $m=0$, el resultado es una asíntota horizontal $y=b$.
+> - Si $m=\pm\infty$ o $b=\pm\infty$, no hay asíntota oblicua.
+> - Hay como máximo una asíntota oblicua por dirección.
 >
-> **Casos especiales a considerar:** ⚠️
->
-> - **Discontinuidades evitables:** No generan asíntotas verticales
-> - **Funciones definidas por partes:** Verificar cada rama
-> - **Composiciones:** Analizar función interna y externa por separado
->
+> **Mnemotecnia de búsqueda:** **P**rimero **H**orizontales, **L**uego **V**erticales, **F**inalmente **O**blicuas = **PHLFO**.
 
-> [!tip] 🎪 Ejemplos Detallados
+> [!example] 🎯 Ejemplos horizontales
 >
-> ### Análisis completo de casos típicos
+> 1. $f(x)=\frac{3x^2+2x-1}{x^2-4}$: grados iguales; $y=3$.
+> 2. $f(x)=\frac{2x-1}{x^2+1}$: grado del numerador menor; $y=0$.
+> 3. $f(x)=2+\frac3x$: ambos límites son $2$; $y=2$.
+> 4. $f(x)=xe^{-x}$: $xe^{-x}\to0$ en ambas direcciones; $y=0$.
 >
-> **Ejemplo 1:** $f(x) = \frac{1}{x - 2}$
->
-> - Candidato: $x = 2$ (denominador se anula)
-> - $\lim_{x \to 2^-} \frac{1}{x-2} = -\infty$
-> - $\lim_{x \to 2^+} \frac{1}{x-2} = +\infty$
-> - **Asíntota vertical:** $x = 2$ (con salto) ✅
->
-> **Ejemplo 2:** $f(x) = \frac{x^2}{(x-1)^2}$
->
-> - Candidato: $x = 1$
-> - $\lim_{x \to 1^-} \frac{x^2}{(x-1)^2} = +\infty$
-> - $\lim_{x \to 1^+} \frac{x^2}{(x-1)^2} = +\infty$
-> - **Asíntota vertical:** $x = 1$ (simple) ✅
->
-> **Ejemplo 3:** $f(x) = \ln(x - 3)$
->
-> - Candidato: $x = 3$ (argumento del logaritmo se anula)
-> - $\lim_{x \to 3^+} \ln(x-3) = -\infty$
-> - No existe límite por la izquierda (dominio: $x > 3$)
-> - **Asíntota vertical:** $x = 3$ (unilateral) ✅
->
-> **Contraejemplo:** $f(x) = \frac{x^2 - 4}{x - 2} = \frac{(x-2)(x+2)}{x-2} = x + 2$ (para $x \neq 2$)
->
-> - En $x = 2$: discontinuidad evitable, NO asíntota vertical ❌
+> **Por qué importa:** el mismo resultado puede obtenerse por cociente de grados o por estructura de la expresión.
 
-## 🎯 Asíntotas Oblicuas
+> [!example] 🎪 Ejemplos verticales
+>
+> 1. $f(x)=1/(x-2)$: límites $-\infty$ y $+\infty$; asíntota vertical con salto en $x=2$.
+> 2. $f(x)=x^2/(x-1)^2$: ambos límites $+\infty$; vertical simple en $x=1$.
+> 3. $f(x)=\ln(x-3)$: el límite derecho es $-\infty$ y el dominio exige $x>3$; vertical unilateral en $x=3$.
+> 4. $f(x)=\frac{x^2-4}{x-2}=x+2$ para $x\ne2$: hueco evitable; **no** hay asíntota vertical en $2$.
+>
+> **Por qué importa:** el último caso evita el error de_llamar asíntota a cualquier raíz del denominador.
 
-> [!info] ↗️ Asíntotas Oblicuas
+> [!example] 🔬 Ejemplos oblicuas
 >
-> ### Definición y condiciones de existencia
+> Para $f(x)=\frac{x^2+x+1}{x+1}$:
+> $$m=\lim_{x\to+\infty}\frac{x^2+x+1}{x(x+1)}=1,$$
+> $$b=\lim_{x\to+\infty}\left(\frac{x^2+x+1}{x+1}-x\right)=\lim_{x\to+\infty}\frac1{x+1}=0.$$
+> Así, $y=x$ es asíntota oblicua.
 >
-> La recta $y = mx + b$ es **asíntota oblicua** de $f(x)$ si: $$\lim_{x \to \pm\infty} [f(x) - (mx + b)] = 0$$
->
-> **Condición necesaria:** 📋 No debe existir asíntota horizontal (es decir, $\lim_{x \to \pm\infty} f(x) = \pm\infty$)
->
-> **Fórmulas para calcular $m$ y $b$:** 🧮 $$m = \lim_{x \to \pm\infty} \frac{f(x)}{x}$$ $$b = \lim_{x \to \pm\infty} [f(x) - mx]$$
->
-> **Jerarquía de asíntotas:** 🏆
->
-> 1. Si existe asíntota horizontal → No hay oblicua
-> 2. Si no existe asíntota horizontal → Buscar oblicua
-> 3. Una función puede tener máximo una asíntota oblicua por cada dirección ($+\infty$ y $-\infty$)
->
+> Para $f(x)=x+\frac2x$:
+> $$m=\lim_{x\to\pm\infty}\left(1+\frac2{x^2}\right)=1,\qquad b=\lim_{x\to\pm\infty}\frac2x=0.$$
+> También $y=x$ es asíntota oblicua.
 
-> [!warning] 🎯 Proceso de Cálculo
->
-> ### Algoritmo paso a paso
->
-> **Para encontrar asíntota oblicua en $x \to +\infty$:**
->
-> 4. **Verificar ausencia de asíntota horizontal:** $\lim_{x \to +\infty} f(x) = \pm\infty$
-> 5. **Calcular la pendiente:** $m = \lim_{x \to +\infty} \frac{f(x)}{x}$
-> 6. **Si $m$ existe y es finita:** $b = \lim_{x \to +\infty} [f(x) - mx]$
-> 7. **Si $b$ existe y es finita:** La asíntota es $y = mx + b$
-> 8. **Repetir para $x \to -\infty$ si es necesario**
->
-> **Casos especiales:** ⚠️
->
-> - Si $m = 0$: Tenemos asíntota horizontal $y = b$
-> - Si $m = \pm\infty$: No hay asíntota oblicua
-> - Si $b = \pm\infty$: No hay asíntota oblicua
->
+---
 
-> [!tip] 🔬 Ejemplos Completos
->
-> ### Análisis detallado de funciones
->
-> **Ejemplo 1:** $f(x) = \frac{x^2 + x + 1}{x + 1}$
->
-> _Paso 1:_ Verificar ausencia de asíntota horizontal
->
-> - $\lim_{x \to \pm\infty} f(x) = \pm\infty$ ✅
->
-> _Paso 2:_ Calcular $m$ $$m = \lim_{x \to +\infty} \frac{x^2 + x + 1}{x(x + 1)} = \lim_{x \to +\infty} \frac{x^2 + x + 1}{x^2 + x} = 1$$
->
-> _Paso 3:_ Calcular $b$ $$b = \lim_{x \to +\infty} \left[\frac{x^2 + x + 1}{x + 1} - x\right] = \lim_{x \to +\infty} \frac{x^2 + x + 1 - x(x + 1)}{x + 1} = \lim_{x \to +\infty} \frac{1}{x + 1} = 0$$
->
-> **Asíntota oblicua:** $y = x$ ✅
->
-> **Ejemplo 2:** $f(x) = x + \frac{2}{x}$
->
-> _Calculamos directamente:_ $$m = \lim_{x \to \pm\infty} \frac{x + \frac{2}{x}}{x} = \lim_{x \to \pm\infty} \left(1 + \frac{2}{x^2}\right) = 1$$ $$b = \lim_{x \to \pm\infty} \left[x + \frac{2}{x} - x\right] = \lim_{x \to \pm\infty} \frac{2}{x} = 0$$
->
-> **Asíntota oblicua:** $y = x$ ✅
+## 📈 Análisis y Graficación
 
-## 🎯 Gráficas de Funciones
+> [!tip] 📊 Método GRAPH
+>
+> - **G**ráfica preliminar: esbozar el comportamiento general.
+> - **R**estricciones: identificar dominio y puntos problemáticos.
+> - **A**síntotas: encontrar vertical, horizontal y oblicua.
+> - **P**untos clave: interceptos, extremos e inflexiones.
+> - **H**erramientas: usar derivadas para el análisis completo.
+>
+> **Por qué importa:** el orden evita dibujar una rama sin conocer la asíntota que la limita o identificar una asíntota antes de revisar el dominio.
+>
+> **Ejemplo:** para $1/(x-2)$, primero se detecta $x=2$ como candidata; los límites infinito y finito confirman la vertical $x=2$ y la horizontal $y=0$.
 
-> [!tip] 📊 Análisis Completo de Funciones
+> [!info] 🖼️ Guía completa de graficación
 >
-> ### Metodología sistemática para graficar
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_01.svg]]
 >
->![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Asíntotas_y_Comportamiento_de_Funciones_01.svg]]
+> **Se lee así:** desde la función se recorre dominio y recorrido, asíntotas, interceptos y comportamiento global. De este último salen cuatro ramas: vertical, horizontal, oblicua y funciones sin asíntota; la vertical añade la definición por límite infinito y el ejemplo $1/(x-2)$.
 >
-> **Se lee así:** Es una guía ordenada: desde la función se pasa al **dominio y recorrido**, luego a las asíntotas, después a los interceptos con los ejes y por último al comportamiento global. Desde ahí salen cuatro ramas: la **asíntota vertical**, que encadena la definición del límite infinito, un ejemplo y la idea de que ese punto no está en el dominio y divide la gráfica; en paralelo, la horizontal y la oblicua, con sus fórmulas, y las funciones sin asíntota.
+> **Por qué importa:** ofrece una checklist reutilizable para graficar sin saltar pasos ni confundir asíntota con una tendencia aproximada.
 >
-> **Por qué importa:** Es la metodología completa para graficar una función sin saltarte pasos. Ordenar el análisis en dominio, asíntotas, interceptos y comportamiento evita omisiones y te sirve en el examen de graficado.
->
-> **Ejemplo:** Al graficar `f(x) = 1/(x-2)` el diagrama te lleva a la asíntota vertical x = 2, y de ahí a ver que esa recta divide la gráfica en dos ramas.
+> **Ejemplo:** al graficar $1/(x-2)$, el diagrama conduce a $x=2$, divide la gráfica en dos ramas y luego exige describir el comportamiento final con $y=0$.
 
-## 🎯 Técnica de Estudio: Método GRAPH
+> [!note] 📖 Tipos de límites infinitos
+>
+> - “Sube, sube”: ambos lados tienden a $+\infty$.
+> - “Baja, baja”: ambos lados tienden a $-\infty$.
+> - “Sube, baja”: el lado izquierdo sube y el derecho baja.
+> - “Baja, sube”: el lado izquierdo baja y el derecho sube.
+>
+> **Mnemotecnia:** **SSBB-SB-BS**.
+>
+> **Por qué importa:**（左）right describe una vertical simple y el resto una vertical con salto.
 
-> [!tip] 📖 Estrategia GRAPH para Análisis de Funciones
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
 >
-> - **G**ráfica preliminar: Esboza el comportamiento general
-> - **R**estricciones: Identifica dominio y puntos problemáticos
-> - **A**síntotas: Encuentra todas las asíntotas (H, V, O)
-> - **P**untos clave: Interceptos, extremos, inflexiones
-> - **H**erramientas: Usa derivadas para análisis completo
+> Determina las asíntotas verticales, horizontales y oblicuas de
+> $$f(x)=\frac{x^2+3x-2}{x-4}.$$
+> Justifica cada una.
 >
-> **Regla mnemotécnica para asíntotas:** "**H**orizontal **V**ertical **O**blicua = **HVO** (como 'hablo')"
+> > [!success]- ✅ Solución
+> >
+> > En $x=4$, el numerador vale $16+12-2=26\ne0$, por lo que
+> > $$\lim_{x\to4^-}f(x)=-\infty,\qquad \lim_{x\to4^+}f(x)=+\infty.$$
+> > Hay asíntota vertical $x=4$. Como $\deg P=2>1=\deg Q$, no hay horizontal. Al dividir,
+> > $$f(x)=x+7+\frac{26}{x-4},$$
+> > y el término residual tiende a cero en ambas direcciones; la asíntota oblicua es $y=x+7$.
+
+> [!example] 📋 Planteamiento
 >
-> **Para recordar el orden de búsqueda:** "**P**rimero **H**orizontales, **L**uego **V**erticales, **F**inalmente **O**blicuas = **PHLFO**"
+> Analiza $f(x)=\frac{2x-1}{x^2+1}$ y $g(x)=2+\frac3x$ por asíntotas horizontales.
 >
-> **Tipos de límites infinitos:** "**S**ube **S**ube, **B**aja **B**aja, **S**ube **B**aja, **B**aja **S**ube = **SSBB-SB-BS**"
+> > [!success]- ✅ Solución
+> >
+> > En $f$, $\deg P=1<2=\deg Q$, por tanto $\lim_{x\to\pm\infty}f(x)=0$ y $y=0$ es horizontal. En $g$, $\lim_{x\to\pm\infty}(2+3/x)=2$, de modo que $y=2$ es horizontal. Ninguna de las dos tiene asíntota vertical: sus denominadores no se anulan en $\mathbb R$.
+
+> [!example] 📋 Planteamiento
+>
+> Explica por qué $h(x)=\frac{x^2-4}{x-2}$ no tiene asíntota vertical en $x=2$, aunque $x=2$ sea raíz del denominador.
+>
+> > [!success]- ✅ Solución
+> >
+> > Para $x\ne2$, $h(x)=x+2$. El límite bilateral en $2$ es $4$, finito, por lo que la discontinuidad es evitable y no hay crecimiento infinito. La raíz del denominador es solo un candidato; deben calcularse los límites laterales.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula la asíntota oblicua de $f(x)=\frac{x^3+1}{x^2-1}$ en $x\to+\infty$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Se factoriza $x^3+1=(x+1)(x^2-x+1)$ y $x^2-1=(x-1)(x+1)$, de modo que $f(x)=\frac{x^2-x+1}{x-1}$ para $x\ne\pm1$. Entonces
+> > $$m=\lim_{x\to+\infty}\frac{f(x)}x=1,$$
+> > $$b=\lim_{x\to+\infty}(f(x)-x)=\lim_{x\to+\infty}\frac{-2x+1}{x-1}=-2.$$
+> > La asíntota es $y=x-2$.
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Distingo asíntota vertical, horizontal y oblicua por su dirección de análisis.
+> - [ ] Aplico el criterio de grados a funciones racionales.
+> - [ ] Identifico una vertical mediante límites laterales.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Calculo $m$ y $b$ para una asíntota oblicua.
+> - [ ] Distingo una discontinuidad evitable de una vertical.
+> - [ ] Construyo una gráfica usando el método GRAPH.
+
+---
 
 ## 📚 Referencias
 
-> [!quote] Enlaces a otras notas
+> [!quote] 📖 Fuentes consultadas
 >
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Base teórica para asíntotas horizontales
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Fundamental para asíntotas verticales
-> - [[12 - Funciones racionales]] - Tipo más común con asíntotas
-> - Derivadas y Gráficas - Análisis completo de funciones
-> - [[02 – Continuidad]] - Relación con discontinuidades
-> - Optimización - Aplicación de extremos y comportamiento
-
-## 🔗 Notas Recomendadas
-
-> [!info] 🎓 Prerrequisitos y Complementos
->
-> **Prerrequisitos necesarios:**
->
-> - Límites Básicos - Cálculo de límites en general
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Para asíntotas horizontales y oblicuas
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Para asíntotas verticales
-> - Funciones y Dominio - Análisis de restricciones
-> - Algebra de Polinomios - Para funciones racionales
->
-> **Para profundizar:**
->
-> - [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md|01 - Análisis Completo de Funciones.md]] - Integración con derivadas
-> - Funciones Trascendentes - Asíntotas en exponenciales y logaritmos
-> - Cálculo Diferencial Avanzado - Técnicas de graficación
-> - Geometría Analítica - Ecuaciones de rectas asintóticas
-> - Aplicaciones del Cálculo - Modelado con funciones asintóticas
-> - Software Matemático - Verificación gráfica con tecnología
+> - J. Stewart, *Cálculo*, comportamiento de funciones y asíntotas.
+> - G. B. Thomas, *Cálculo*, asíntotas y análisis de funciones racionales.
+> - Material de cátedra de MATG1045.
+> - EXA-2023-0S-CÁLCULO DE UNA VARIABLE-1-2Par.pdf, p. 2: práctica de análisis de funciones; enlace de estudio, sin incrustación.
 
 ---
 
-**Tags:** #MATG1045 #unidad3 #asintotas-y-comportamiento-de-funciones #asintotas #limites #graficas #funciones-racionales #comportamiento-asintotico #analisis-funciones #calculo #geometria-analitica #limites-infinito #discontinuidades
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u3
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Asíntota vertical?::$x=a$ con al menos un límite lateral infinito al acercarse a $a$.
+> - ¿Asíntota horizontal?::$y=L$ con límite $L$ finito en $x\to+\infty$ o $x\to-\infty$.
+> - ¿Asíntota oblicua?::$y=mx+b$ con $f(x)-(mx+b)\to0$ al infinito.
+> - ¿Cómo se calculan $m$ y $b$?::$m=\lim f(x)/x$ y $b=\lim(f(x)-mx)$, si son finitos.
+> - ¿Racional con grado P menor que Q?::Asíntota horizontal $y=0$.
+> - ¿Racional con grados iguales?::Asíntota horizontal $y=a_n/b_n$.
+> - ¿Una raíz del denominador garantiza vertical?::No; se deben verificar límites laterales infinitos.
+> - ¿Mnemotecnia HVO?::Horizontal, vertical, oblicua.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Notas relacionadas
+>
+> - [[01 - Continuidad y Límites]] — clasifica las discontinuidades y las verticales.
+> - [[../Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|Límites al Infinito y Sucesiones]] — base de horizontales y oblicuas.
+> - [[../Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|Límites Laterales]] — base de verticales.
+> - [[../Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones|Análisis Completo de Funciones]] — completa el estudio con derivadas.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Revisa límites laterales antes de buscar verticales.
+> - Continúa con [[../Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones|Análisis Completo de Funciones]].
+> - Usa [[../Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|Límites al Infinito y Sucesiones]] para justificar cada dirección.
+> - Dibuja primero las asíntotas y luego usa la tabla de límites infinitos para separar ramas.
+
+---
+
+**Tags:** #MATG1045 #unidad3 #asintotas #comportamiento-de-funciones #limites #graficas #funciones-racionales

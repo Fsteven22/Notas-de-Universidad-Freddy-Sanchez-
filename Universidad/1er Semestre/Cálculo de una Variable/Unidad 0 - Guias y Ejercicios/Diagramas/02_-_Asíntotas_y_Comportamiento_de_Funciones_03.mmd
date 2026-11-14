@@ -1,0 +1,21 @@
+---
+title: "Asíntota horizontal"
+---
+flowchart TD
+    A["Analizar x → +∞ y x → -∞"] --> B{"¿El límite es un número finito L?"}
+    B -->|Sí| C["y = L es asíntota horizontal"]
+    B -->|No| D{"¿El límite es infinito?"}
+    D -->|Sí| E["No hay asíntota horizontal"]
+    D -->|No| F["No hay asíntota horizontal"]
+    C --> G["Puede haber una o dos asíntotas, una por dirección"]
+    C --> H["Racionales: grado P menor que grado Q da y=0"]
+    C --> I["Racionales: grados iguales da y=a_n/b_n"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style D fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010
+    style F fill:#ffebee,stroke:#e53935,color:#4a1010
+    style G fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style H fill:#e0f2f1,stroke:#009688,color:#00332e
+    style I fill:#e0f2f1,stroke:#009688,color:#00332e

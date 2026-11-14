@@ -1,0 +1,21 @@
+---
+title: "Bolas y esferas en un espacio métrico"
+---
+flowchart LR
+    A["Centro x₀ y radio r > 0"] --> B["Bola abierta B(x₀,r)"]
+    A --> C["Bola cerrada B̄(x₀,r)"]
+    A --> D["Esfera S(x₀,r)"]
+    B --> B1["d(x,x₀) < r<br/>Excluye la frontera"]
+    C --> C1["d(x,x₀) ≤ r<br/>Incluye la frontera"]
+    D --> D1["d(x,x₀) = r<br/>Solo la frontera"]
+    B --> E["En la recta: intervalo abierto"]
+    C --> F["En la recta: intervalo cerrado"]
+    B1 --> G["Sirve para definir cercanía, abiertos y límites"]
+    C1 --> G
+    D1 --> H["La esfera separa interior y exterior"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style G fill:#e0f2f1,stroke:#009688,color:#00332e
+    style H fill:#e0f2f1,stroke:#009688,color:#00332e

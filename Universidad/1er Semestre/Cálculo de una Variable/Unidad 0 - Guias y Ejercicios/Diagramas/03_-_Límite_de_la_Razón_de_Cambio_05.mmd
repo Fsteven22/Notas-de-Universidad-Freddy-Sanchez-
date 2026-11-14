@@ -1,0 +1,20 @@
+---
+title: "Recta tangente y aproximación lineal"
+---
+flowchart TD
+    A["Función derivable en a"] --> B["Punto de tangencia (a,f(a))"]
+    A --> C["Pendiente f′(a)"]
+    B --> D["Ecuación punto-pendiente<br/>y-f(a)=f′(a)(x-a)"]
+    C --> D
+    D --> E["Recta tangente"]
+    E --> F["Aproximación lineal<br/>f(x) ≈ f(a)+f′(a)(x-a)"]
+    E --> G["Normal<br/>pendiente -1/f′(a) si f′(a) no es cero"]
+    F --> H["Error pequeño cuando x está cerca de a"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style F fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style G fill:#e0f2f1,stroke:#009688,color:#00332e
+    style H fill:#e0f2f1,stroke:#009688,color:#00332e

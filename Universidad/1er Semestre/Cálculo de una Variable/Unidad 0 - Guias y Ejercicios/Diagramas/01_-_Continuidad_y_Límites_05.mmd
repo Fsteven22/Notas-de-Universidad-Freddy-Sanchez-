@@ -1,0 +1,19 @@
+---
+title: "Continuidad uniforme"
+---
+flowchart LR
+    A["Continuidad puntual en cada punto"] --> B["δ puede depender del punto"]
+    C["Continuidad uniforme en A"] --> D["Un solo δ funciona para todos los puntos"]
+    B --> E["Pregunta local"]
+    D --> F["Pregunta global"]
+    E --> G["Heine-Cantor<br/>Continua en compacto implica uniformemente continua"]
+    F --> H["Criterio de la derivada<br/>Si f′ está acotada, f es uniformemente continua"]
+    G --> I["Ejemplo: 1/x en (0,1] es continua pero no uniformemente continua"]
+    H --> I
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#e0f2f1,stroke:#009688,color:#00332e
+    style B fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style G fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style H fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style I fill:#ffebee,stroke:#e53935,color:#4a1010

@@ -1,0 +1,23 @@
+---
+title: "Asíntota oblicua"
+---
+flowchart TD
+    A["Busca una recta y = mx + b"] --> B{"¿La función crece como una recta?"}
+    B -->|No| C["No hay asíntota oblicua"]
+    B -->|Sí| D["Calcular m = límite de f(x)/x"]
+    D --> E{"¿m es finito?"}
+    E -->|No| C
+    E -->|Sí| F["Calcular b = límite de f(x)-mx"]
+    F --> G{"¿b es finito?"}
+    G -->|No| C
+    G -->|Sí| H["Asíntota oblicua y = mx + b"]
+    H --> I["Una por dirección: +∞ y -∞"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C fill:#ffebee,stroke:#e53935,color:#4a1010
+    style D fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style H fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style I fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a

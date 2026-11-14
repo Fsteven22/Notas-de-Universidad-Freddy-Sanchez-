@@ -1,0 +1,20 @@
+---
+title: "Tipos de punto y vecindad"
+---
+flowchart TD
+    A["Un punto x₀ frente al conjunto A"] --> B{"¿Toda bola contiene otros puntos de A?"}
+    B -->|Sí| C["Punto de acumulación<br/>No requiere pertenecer a A"]
+    B -->|No| D{"¿Existe una bola con solo x₀ de A?"}
+    D -->|Sí| E["Punto aislado<br/>Pertenece a A"]
+    D -->|No| F["Punto frontera<br/>La bola toca A y su complemento"]
+    A --> G{"¿Existe una bola contenida en A?"}
+    G -->|Sí| H["Punto interior<br/>Pertenece a A"]
+    C --> I["También puede haber infinitos puntos en cada bola"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E fill:#ffebee,stroke:#e53935,color:#4a1010
+    style F fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style G fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style H fill:#e0f2f1,stroke:#009688,color:#00332e

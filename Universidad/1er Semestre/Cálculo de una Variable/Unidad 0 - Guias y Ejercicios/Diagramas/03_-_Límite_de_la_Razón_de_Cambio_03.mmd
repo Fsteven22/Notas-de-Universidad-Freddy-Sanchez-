@@ -1,0 +1,21 @@
+---
+title: "Derivada como límite"
+---
+flowchart TD
+    A["Punto fijo P = (a,f(a))"] --> B["Punto móvil Q = (a+h,f(a+h))"]
+    B --> C["Cociente de la secante<br/>(f(a+h)-f(a))/h"]
+    C --> D["Razón de cambio promedio"]
+    D --> E["Tomar el límite cuando h → 0"]
+    E --> F["f′(a)"]
+    F --> G["Pendiente de la tangente"]
+    F --> H["Razón de cambio instantánea"]
+    A --> I["Si el cociente tiene un límite finito, f es derivable en a"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style C fill:#fff3e0,stroke:#ff9800,color:#4a2c00
+    style D fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style E fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style F fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style G fill:#e0f2f1,stroke:#009688,color:#00332e
+    style H fill:#e0f2f1,stroke:#009688,color:#00332e
+    style I fill:#fff3e0,stroke:#ff9800,color:#4a2c00

@@ -1,0 +1,19 @@
+---
+title: "Tipos de asíntota"
+---
+flowchart TD
+    A["Asíntota<br/>Recta que aproxima la curva sin intersecarla salvo excepciones finitas"] --> B["Vertical<br/>x = a"]
+    A --> C["Horizontal<br/>y = L"]
+    A --> D["Oblícua<br/>y = mx + b"]
+    B --> B1["x → a por un lado<br/>f(x) tiende a infinito"]
+    C --> C1["x → infinito por un lado<br/>f(x) tiende a L"]
+    D --> D1["x → infinito por un lado<br/>f(x) - (mx+b) → 0"]
+    B1 --> E["La vertical divide la gráfica en ramas"]
+    C1 --> F["Describe el comportamiento final a lo largo del eje x"]
+    D1 --> F
+    style A fill:#f3e5f5,stroke:#9c27b0,color:#3a1b3a
+    style B fill:#ffebee,stroke:#e53935,color:#4a1010
+    style C fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style D fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style E fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style F fill:#fff3e0,stroke:#ff9800,color:#4a2c00

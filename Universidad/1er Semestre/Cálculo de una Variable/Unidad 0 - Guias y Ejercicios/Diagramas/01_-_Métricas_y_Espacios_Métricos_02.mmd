@@ -1,0 +1,17 @@
+---
+title: "Axiomas de una métrica"
+---
+flowchart TD
+    A["Función candidata d: X × X → R"] --> B{"¿Los cuatro axiomas se cumplen?"}
+    B -->|Sí| C["d es una métrica"]
+    B -->|No| D["No es una métrica"]
+    C --> E["No negatividad<br/>d(x,y) ≥ 0"]
+    C --> F["Identidad<br/>d(x,y)=0 si y solo si x=y"]
+    C --> G["Simetría<br/>d(x,y)=d(y,x)"]
+    C --> H["Desigualdad triangular<br/>d(x,z) ≤ d(x,y)+d(y,z)"]
+    D --> I["Identifica el axioma violado"]
+    I --> J["Corrige o descarta la candidata"]
+    style A fill:#e3f2fd,stroke:#2196f3,color:#0d2f52
+    style B fill:#fff8e1,stroke:#fbc02d,color:#4a3b00
+    style C fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style D fill:#ffebee,stroke:#e53935,color:#4a1010
