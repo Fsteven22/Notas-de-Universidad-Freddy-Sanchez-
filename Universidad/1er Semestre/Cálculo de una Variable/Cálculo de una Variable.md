@@ -5,6 +5,10 @@ tags: [MATG1045, calculo-variable, mapa-de-contenido, calculo-de-una-variable, c
 
 # 📘 Cálculo de una Variable
 
+> [!note] 📝 Cálculo de una Variable
+>
+> **Código:** MATG1045 · **Semestre:** 1ro · **Créditos:** 3 · [[Bienvenida y Syllabus Cálculo de una Variable|Ver Syllabus completo]]
+
 > [!info] ℹ️ Mapa de contenido de la materia
 >
 > Esta nota es el acceso directo a **Cálculo de una Variable** (MATG1045, ESPOL). Cada bloque es una
@@ -214,6 +218,7 @@ tags: [MATG1045, calculo-variable, mapa-de-contenido, calculo-de-una-variable, c
 >
 > - 🔗 [[Índice de Contenido|Índice de Contenido]] — el índice único de la materia: exámenes, mapa tema→examen→nota y los formatos de pregunta que se repiten.
 > - 📝 **Exámenes reales (2021-2023):** 16 PDF en `Unidad 0 - Guias y Ejercicios/Exámenes/`, que son en realidad **6 exámenes distintos**; el índice explica cuáles son cuáles y qué tema evalúa cada uno.
+> - 🖼️ **Las 62 páginas de los exámenes:** el índice las cataloga una por una (tema y número de pregunta en cada línea), para saltar a la página que necesitas sin paginar el PDF.
 > - 📄 **Guías, diapositivas, lecciones y talleres:** carpetas preparadas en cada unidad; el dueño las va subiendo según las entrega la cátedra.
 
 ---
