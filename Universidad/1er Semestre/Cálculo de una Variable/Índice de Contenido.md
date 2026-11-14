@@ -45,7 +45,7 @@ tags: [MATG1045, unidad0, recursos, indice-de-contenido, examenes]
 > |---|---|---|---|---|
 > | 2021 · 2S | 22/nov/2021 | 1.er parcial | 15 | `EXA-2021-2S-…-{7,15,17}-1Par.pdf` |
 > | 2022 · 0S | 22/abr/2022 | 2.a evaluación | 8 | `EXA-2022-0S-…-1-Mejora.pdf` |
-> | 2022 · 1S | 04/jul/2022 | 1.er parcial | 18 | `EXA-2022-1S-…-{1,2,4,6,9,18,21}-1Par.pdf` |
+> | 2022 · 1S | 04/jul/2022 | 1.er parcial | 18 | `EXA-2022-1S-…-{1,2,4,6,9,18,21}-1Par.pdf` + 2 copias con sufijo ` (1)` |
 > | 2023 · 0S | 31/03/2023 | 1.a evaluación | 7 | `EXA-2023-0S-…-1-1Par.pdf` |
 > | 2023 · 0S | 21/04/2023 | 2.a evaluación | 7 | `EXA-2023-0S-…-1-2Par.pdf` |
 > | 2023 · 0S | 28/04/2023 | 3.a evaluación | 7 | `EXA-2023-0S-…-1-Mejora.pdf` |
@@ -59,6 +59,7 @@ tags: [MATG1045, unidad0, recursos, indice-de-contenido, examenes]
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2021-2S-CÁLCULO DE UNA VARIABLE-7-1Par.pdf]] | 2021 · II PAO · 1.er parcial · 15 páginas (otra copia). |
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-0S-CÁLCULO DE UNA VARIABLE-1-Mejora.pdf]] | 2022 · PAE · 2.a evaluación · 8 páginas · 8 temas. |
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas · 44 preguntas. |
+> | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-1-1Par (1).pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas · 44 preguntas (otra copia). |
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-2-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-4-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
 > | [[Unidad 0 - Guias y Ejercicios/Exámenes/EXA-2022-1S-CÁLCULO DE UNA VARIABLE-6-1Par.pdf]] | 2022 · I PAO · 1.er parcial · 18 páginas (otra copia). |
@@ -201,6 +202,121 @@ tags: [MATG1045, unidad0, recursos, indice-de-contenido, examenes]
 > **Ejemplo:** la proposición "$f(a)f(b)<0$ ⇒ $f$ corta al eje" es **falsa** sin hipótesis de
 > continuidad: $f(x)=1/x$ en $[-1,1]$ cambia de signo pero tiene un salto en $0$. Añadir
 > "continua en $[a,b]$" la vuelve verdadera, y esa es la diferencia entre el punto y el medio punto.
+
+---
+
+## 🗂️ Las 62 páginas de los exámenes, una por una
+
+> [!example] 📋 El índice página por página de los seis exámenes
+>
+> Cada fila es una **captura real** de una página del examen (DPI 140, 1158 × 1638 px). Esta
+> lista sirve para dos cosas: saber **qué hay en cada página** sin abrir el PDF, y saltar directo
+> a la página que necesitas (por ejemplo, la del bosquejo del 2023).
+>
+> Las páginas van **enlazadas, no embebidas**: el PDF completo se descarga arriba y así esta
+> sección no carga 62 imágenes en el navegador. En Obsidian, un clic abre la imagen.
+>
+> **Se lee así:** cada línea empieza por la página (`p. 7`) y sigue con el tema y el número de
+> pregunta. Los números de pregunta son los del examen: sirven para comparar versiones.
+>
+> **Por qué importa:** el parcial de 2022-1S es *por temas* (8 temas de 5 preguntas), y ese
+> reparto es justo el temario del curso. Con esta lista vas directo a «el de razones de cambio» o
+> «el de áreas» sin paginar 18 hojas.
+>
+> **Ejemplo:** para practicar el bosquejo con 8 condiciones, la página que quieres es la 6 del
+> examen del 31 de marzo de 2023 (`p. 6`), no la primera.
+
+### 📄 2021 · 2S · 1.er parcial — 15 páginas
+
+> [!tip] 🗂️ Las 15 páginas del parcial de 2021
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p01.png]] · **p. 1** — Tema # 1 · Límite por el teorema del emparedado: preguntas 1 a 3, con $\lceil x^2-9\rceil$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p02.png]] · **p. 2** — Tema # 1 (cont.) · Preguntas 4 y 5 de emparedado, con $\lceil 7-x^3\rceil$ y $\lceil x^2-6\rceil$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p03.png]] · **p. 3** — Tema # 2 · Asíntota horizontal hallando el parámetro $a$: preguntas 6 a 9.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p04.png]] · **p. 4** — Tema # 2 (cont.) · Pregunta 10: asíntota horizontal $y=\tfrac{3}{2}$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p05.png]] · **p. 5** — Tema # 3 · Intervalos de continuidad de $h(x)=f(x+2)+g(x+1)$: preguntas 11 a 13.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p06.png]] · **p. 6** — Tema # 3 (cont.) · Preguntas 14 y 15: continuidad de composiciones con $\frac{1}{x-7}$ y $\ln(x+1)$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p07.png]] · **p. 7** — Tema # 4 · Recta tangente a una cuadrática: preguntas 16 a 20 (hallar $k$).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p08.png]] · **p. 8** — Tema # 5 · Verdadero o falso: preguntas 21 a 23 (racional no derivable, dos veces derivable ⇒ inflexión, suave y continua ⇒ derivable).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p09.png]] · **p. 9** — Tema # 5 (cont.) · Preguntas 24 y 25 (asíntotas ⇒ no derivable; valores extremos ⇒ no derivable).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p10.png]] · **p. 10** — Tema # 6 · Derivadas simplificadas: preguntas 26 a 29 (arcsen, arcctg, arccos, tangentes y logaritmos).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p11.png]] · **p. 11** — Tema # 6 (cont.) · Pregunta 30: derivada de $x\sqrt{x}+\arctan(x^2)-3\cot x$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p12.png]] · **p. 12** — Tema # 7 · Análisis de cálculo diferencial: preguntas 31 a 33 (dominio, asíntotas, monotonía, extremos, inflexión).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p13.png]] · **p. 13** — Tema # 7 (cont.) · Preguntas 34 y 35.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p14.png]] · **p. 14** — Tema # 8 · Modelos y optimización: preguntas 36 a 38 (mosquitos por lluvia, leche por hormonas, distancia de un meteorito).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2021-2s-1par-p15.png]] · **p. 15** — Tema # 8 (cont.) · Preguntas 39 y 40 (riqueza en 10 años, epidemia de gripe).
+
+### 📄 2022 · 0S · 2.a evaluación — 8 páginas
+
+> [!tip] 🗂️ Las 8 páginas de la segunda evaluación de 2022
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p01.png]] · **p. 1** — Tema 1 · Antiderivada con condición inicial: 3 problemas con contexto real (precio de una acción de Tesla, contaminación de CO₂, contagios de un virus).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p02.png]] · **p. 2** — Tema 2 · Técnicas de integración: demostrar una antiderivada dada (sustitución trigonométrica).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p03.png]] · **p. 3** — Tema 3 · Ecuaciones diferenciales separables: obtener $y=f(x)$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p04.png]] · **p. 4** — Tema 4 · Sumas de Riemann: la misma partición con punto medio y con extremo izquierdo.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p05.png]] · **p. 5** — Tema 5 · Valor medio para integrales: de $\int_a^b f = 8$ deducir que $f(x_0)=4$ en $[1,3]$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p06.png]] · **p. 6** — Tema 6 · Primer teorema fundamental: recta tangente a $f$ cuando $x=1$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p07.png]] · **p. 7** — Tema 7 · Áreas: bajo $2\operatorname{sen}(\pi x)$, entre $x^2-2x$ y $-x^4$, y con $2\operatorname{sen}(\pi x)$ restringida.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-0s-mejora-p08.png]] · **p. 8** — Tema 8 · Volúmenes de revolución alrededor de una recta vertical ($x=1$ y $x=2$) con rectángulos paralelos al eje.
+
+### 📄 2022 · 1S · 1.er parcial — 18 páginas
+
+> [!tip] 🗂️ Las 18 páginas del parcial de 2022
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p01.png]] · **p. 1** — Tema # 1 · Puntos de acumulación: preguntas 1 a 3 con el predicado $p(x):\lceil x+1\rceil=1$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p02.png]] · **p. 2** — Tema # 1 (cont.) · Preguntas 4 y 5: $p(x):\lceil x-1\rceil=0$ y si $x=2$ es de acumulación.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p03.png]] · **p. 3** — Tema # 2 · Límites con propiedades: preguntas 6 y 7, con $\lim f=2$ y $\lim g=-1$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p04.png]] · **p. 4** — Tema # 2 (cont.) · Preguntas 8 a 10, con $\lim f=1$ y $\lim g=-2$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p05.png]] · **p. 5** — Tema # 3 · Continuidad de funciones por tramos: preguntas 11 y 12 (definir $f$ en el punto de salto con límites).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p06.png]] · **p. 6** — Tema # 3 (cont.) · Preguntas 13 y 14, con $|x+2|$, $x^2$ y $\lceil x\rceil$ por tramos.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p07.png]] · **p. 7** — Tema # 3 (cont.) · Pregunta 15, con $-|x|$, $\lceil x\rceil$ y $(x+2)^2$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p08.png]] · **p. 8** — Tema # 4 · Regla de la cadena: preguntas 16 a 18, con $h(x)=x^2\cdot f^3(g(x))$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p09.png]] · **p. 9** — Tema # 4 (cont.) · Preguntas 19 y 20, con $f(2)=-1$ y $f'(2)=3$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p10.png]] · **p. 10** — Tema # 5 · Verdadero o falso: preguntas 21 a 25 (punto crítico ⇒ $f'=0$; $f''=0$ ⇒ inflexión; límite del cociente; continuidad ⇒ derivabilidad).
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p11.png]] · **p. 11** — Tema # 6 · Razones de cambio (se resuelve uno): bote en un río de 10 m y demanda $Q=\sqrt{356-P^2}/4$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p12.png]] · **p. 12** — Tema # 6 (cont.) · Cubo que encoge, acciones de dos empresas, cometa que sube a 2 m/s.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p13.png]] · **p. 13** — Tema # 6 (cont.) · Escalera de 15 pies contra la pared y ventas en función de la contaminación.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p14.png]] · **p. 14** — Tema # 6 (cont.) · Caja rectangular (altura y volumen) y subsidiar gasolina.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p15.png]] · **p. 15** — Tema # 7 · Bosquejo a partir de $f'(x)=\operatorname{sgn}(x-1)$ y $f(-2)=4$: preguntas 36 a 38.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p16.png]] · **p. 16** — Tema # 7 (cont.) · Preguntas 39 y 40, con $f'(x)=-\operatorname{sgn}(x)$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p17.png]] · **p. 17** — Tema # 8 · Optimización: programa de salud, planta que crece y leche por hormonas.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2022-1s-1par-p18.png]] · **p. 18** — Tema # 8 (cont.) · Pregunta 44: riqueza máxima en 12 años.
+
+### 📄 2023 · 0S · 1.a evaluación — 7 páginas
+
+> [!tip] 🗂️ Las 7 páginas de la primera evaluación de 2023
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p01.png]] · **p. 1** — Portada, Compromiso de Honor y pregunta 1 (20 pts) · Verdadero o falso: si $d(x,y)=|x^2-y^4|$ es una métrica en $\mathbb{R}$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p02.png]] · **p. 2** — Pregunta 1 (cont.) · Las otras tres proposiciones: $f(x)=1/x$ es continua; continuidad en $(a,b)$ implica extremos globales; el teorema del valor medio para derivadas.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p03.png]] · **p. 3** — Pregunta 2 (15 pts) · Asíntotas horizontales de $f(x)=\sqrt{\cos(1/x^2)}$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p04.png]] · **p. 4** — Pregunta 3 (15 pts) · Valor intermedio o Bolzano: $f(x)=x^3-e^{-x}$ corta el eje $X$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p05.png]] · **p. 5** — Pregunta 4 (15 pts) · Curva paramétrica $C_1$ e implícita $C_2$: recta tangente paralela en $(2,1)$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p06.png]] · **p. 6** — Pregunta 5 (20 pts) · Bosquejo con 8 condiciones: dominio, asíntotas, signos de $f'$ y $f''$, punto singular y punto estacionario.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-1par-p07.png]] · **p. 7** — Pregunta 6 (15 pts) · Escalera de $5\sqrt{2}$ m contra la pared: área máxima del triángulo.
+
+### 📄 2023 · 0S · 2.a evaluación — 7 páginas
+
+> [!tip] 🗂️ Las 7 páginas de la segunda evaluación de 2023
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p01.png]] · **p. 1** — Portada, Compromiso de Honor y pregunta 1 (20 pts) · Verdadero o falso sobre derivación e integración.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p02.png]] · **p. 2** — Pregunta 1 (cont.) · Cero de $f$ ⇒ punto estacionario de $F$; cambio de variable; $\int_{-1}^{1}\frac{1}{x}\,dx=0$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p03.png]] · **p. 3** — Pregunta 2 (15 pts) · Límite notable: $e^{a/b}$ con $a$ como suma de logaritmos y $b=1+2+\dots+n$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p04.png]] · **p. 4** — Pregunta 3 (15 pts) · Función periódica de período $p$: $\int_0^{np} f = n\int_0^p f$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p05.png]] · **p. 5** — Pregunta 4 (20 pts) · Integral definida de $\sqrt{(x^2-2x)/(x+3)}+x^7e^{-x^2}$ en $[-1,1]$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p06.png]] · **p. 6** — Pregunta 5 (30 pts) · Tres circunferencias en polares ($r=2\sqrt{2}$, $r=2$, $r=4\cos\theta$): área de la región sombreada.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-2par-p07.png]] · **p. 7** — Pregunta 5 (cont.) · Perímetro de la región en polares y volumen por cortezas alrededor de $x=-1$.
+
+### 📄 2023 · 0S · 3.a evaluación — 7 páginas
+
+> [!tip] 🗂️ Las 7 páginas de la tercera evaluación de 2023
+>
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p01.png]] · **p. 1** — Portada, Compromiso de Honor y pregunta 1 (20 pts) · Verdadero o falso de síntesis: punto de acumulación, Bolzano, $\lim_{x\to1}x^{1/(x-1)}=e$ y $F'>0$ ⇒ $F$ creciente.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p02.png]] · **p. 2** — Pregunta 1 (cont.) · Las otras tres proposiciones de la síntesis.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p03.png]] · **p. 3** — Pregunta 2 (20 pts) · Partícula sobre $f(x)=x\operatorname{sen}(x)$: a qué tasa varía la longitud de la curva en $x=\frac{\pi}{2}$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p04.png]] · **p. 4** — Pregunta 3 (15 pts) · Continuidad de $f(x)=\frac{\int_x^{x^2} t e^{t^2}\,dt}{x}$ en $x=0$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p05.png]] · **p. 5** — Pregunta 4 (15 pts) · Límite como suma de Riemann: $\lim_{n\to\infty}\sum_{i=1}^{n}\cos\left(\frac{\pi i}{n}\right)$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p06.png]] · **p. 6** — Pregunta 5 (15 pts) · Área entre $f(x)=e^{-|x|}$ y el eje $X$ para $x\ge -1$.
+> - [[Unidad 0 - Guias y Ejercicios/Archivos/Examenes/cal1-2023-0s-mejora-p07.png]] · **p. 7** — Pregunta 6 (15 pts) · $h=f\circ g\circ f$: ecuación de la recta normal en $x=0$.
 
 ---
 
