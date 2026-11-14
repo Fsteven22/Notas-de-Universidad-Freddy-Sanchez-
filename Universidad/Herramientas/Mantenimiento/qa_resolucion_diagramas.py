@@ -89,31 +89,42 @@ def main():
                 if not (target.lower().endswith(ASSET_EXTS) or "Diagramas" in target or "/" in target):
                     continue
 
-                resuelto = False
+                # Obsidian resuelve un wikilink sin extension contra el .md: se
+                # prueban los dos candidatos (con y sin .md).
+                candidatos = [target]
+                if not os.path.splitext(target)[1]:
+                    candidatos.append(target + ".md")
 
-                # 1. Relativo a la nota
-                if os.path.exists(os.path.join(nota_dir, target)):
-                    resuelto = True
-                else:
+                resuelto = False
+                for cand in candidatos:
+                    # 1. Relativo a la nota
+                    if os.path.exists(os.path.join(nota_dir, cand)):
+                        resuelto = True
+                        break
                     # 2. Ancestor folders
                     d = nota_dir
                     while True:
-                        if os.path.exists(os.path.join(d, target)):
+                        if os.path.exists(os.path.join(d, cand)):
                             resuelto = True
                             break
                         if d == uni or os.path.dirname(d) == d:
                             break
                         d = os.path.dirname(d)
-                if not resuelto:
+                    if resuelto:
+                        break
                     # 3. Desde la raiz del vault
-                    if os.path.exists(os.path.join(uni, target)):
+                    if os.path.exists(os.path.join(uni, cand)):
                         resuelto = True
+                        break
                 if not resuelto:
                     # 4. Por sufijo de ruta en cualquier parte del vault (Obsidian)
-                    clave = target.replace("\\", "/").lower().lstrip("/")
-                    for rel in indice.get(norm_name(target), set()):
-                        if rel == clave or rel.endswith("/" + clave):
-                            resuelto = True
+                    for cand in candidatos:
+                        clave = cand.replace("\\", "/").lower().lstrip("/")
+                        for rel in indice.get(norm_name(cand), set()):
+                            if rel == clave or rel.endswith("/" + clave):
+                                resuelto = True
+                                break
+                        if resuelto:
                             break
 
                 if not resuelto:
