@@ -2406,3 +2406,59 @@ el commit de esta línea de PUSHEADO.
 > merge. Los **16 PDF de exámenes** que estaban sin seguimiento en ese clon se registraron en el
 > índice **antes** del merge (sha256 byte a byte idéntico al commit `f0f56c4c`: 16/16 iguales), que
 > es lo que permite el `--ff-only` sin sobrescribir archivos del dueño.
+---
+
+### `opencode-onedrive` — Cálculo 1: Unidad 1 y 3 al formato SBD + catálogo de las 62 páginas — 14/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-onedrive` → `master` → `origin/master`
+>
+> **Continuación del bloque anterior** (Cálculo 1 al formato de la casa). Tres cosas:
+>
+> **1. El resolutor de wikilinks tenía un bug (era de la herramienta, no de las notas).**
+> `qa_resolucion_diagramas.py` resolvía un wikilink como carpeta si el nombre sin extensión
+> existía como directorio, y no probaba la variante con `.md` que es como Obsidian resuelve.
+> Con el arreglo los falsos positivos del vault bajan de **2.529 a 1.926** (603 menos) y los
+> enlaces de notas sí se resuelven. De paso se corrigió un enlace roto en Cálculo Vectorial
+> (`Unidad 03 - Derivadas` → `Unidad 4 - Derivadas`).
+>
+> **2. Las 62 capturas de los exámenes estaban huérfanas.** Solo se embebía la primera página
+> de cada examen: las otras **61** no las refería ninguna nota. Ahora el
+> `Índice de Contenido.md` las cataloga **una por una** (tema y número de pregunta en cada
+> línea), con el texto extraído con `pdf_a_markdown_lote.py` — **sin leer los PDF a ojo**.
+> Van **enlazadas, no embebidas**: en Obsidian un clic abre la imagen y en el sitio el wikilink
+> a media se resuelve a `/assets/...`, así la sección no carga 62 imágenes de golpe.
+> Además se listó el PDF `EXA-2022-1S-…-1-1Par (1).pdf`, que era una copia del mismo parcial
+> (texto extraído idéntico, verificado) y se había quedado fuera de la tabla: los **16 PDF**
+> del dueño quedan los **16** publicados.
+>
+> **3. Unidad 1 y Unidad 3 reescritas (5 notas).** Preliminares y Aplicaciones de Límites
+> ya tienen la arquitectura del formato de SBD: las 8 secciones canónicas en orden con `---`,
+> cada definición en su callout con **la figura dentro** y su lectura, los ejercicios con la
+> **solución anidada y plegada**, metas con checkbox, flashcards `#flashcards/cal1-u1` y
+> `#flashcards/cal1-u3`, y Referencias/Conexiones/Seguir estudiando. Se crearon **13
+> diagramas nuevos** (13 SVG + 13 `.mmd`) para que ninguna definición quedara sin figura.
+> Al revisar se corrigieron un wikilink roto (Aproximaciones Lineales, que vive en la
+> Unidad 5 y no en la 4), el título `Seguirstudiar` y un anglicismo.
+>
+> **Verificado**
+> - Las 5 notas de U1 y U3: **0 hallazgos** con el validador; **0** embeds rotos.
+> - **207 SVG** de la Unidad 0 con round-trip `.mmd` ↔ `.svg`: **207 OK, 0 problemas**.
+> - **0** notas con mojibake en las 65 de la materia.
+> - El `npm run sync` publica las **62 PNG** y los **16 PDF**; la galería sale con enlaces
+>   clickables a `/assets/...`.
+> - Línea base de la materia: **1.095 → 994 hallazgos**; **9/65** notas completas (las 4 de
+>   la raíz + U1 + U3).
+>
+> **Fuera de mi zona, para que lo sepa:** queda **1** enlace roto que apunta a Cálculo 1 y
+> vive en `Universidad/1er Semestre/Física Mecánica/` (usa la carpeta vieja
+> `Unidad 04 - Aplicaciones de la Derivada`). No lo toco porque Física Mecánica no es mi zona.
+>
+> **Commits**
+> - `54f39e22` fix(vault): el resolutor de wikilinks prueba también el `.md` y arregla un enlace viejo
+> - `9691ec6e` docs(calculo1): índice página por página de los 62 exámenes y el PDF que faltaba
+> - `c7ccd5ad` docs(calculo1): Unidad 1 y Unidad 3 al formato de la casa (SBD)
+> - `4b806018` docs(calculo1): el mapa de la materia dice el código correcto y lista las 62 páginas
+>
+> **En curso:** las **56 notas de clase** que faltan, por unidades. Los subagentes van de uno
+> en uno porque el proveedor de modelos corta las peticiones simultáneas con HTTP 429: los
+> dos primeros (U1+U3 y U2-I) se quedaron a medias y su trabajo se retomó.
