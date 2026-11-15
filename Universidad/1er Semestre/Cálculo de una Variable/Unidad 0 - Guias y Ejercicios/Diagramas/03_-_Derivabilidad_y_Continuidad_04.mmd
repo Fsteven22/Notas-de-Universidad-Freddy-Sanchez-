@@ -1,0 +1,14 @@
+flowchart TD
+    A["Continuidad de f en x = a"] --> B{"¿f(a) está definida?"}
+    B -->|No| X["No tiene sentido pedir continuidad en a"]
+    B -->|Sí| C{"¿existe el límite de f(x) cuando x tiende a a?"}
+    C -->|No| Y1["Discontinuidad: el límite no existe"]
+    C -->|Sí| D{"¿el límite es igual a f(a)?"}
+    D -->|No| Y2["Discontinuidad evitable o de salto"]
+    D -->|Sí| Z["Continua en a: el límite vale f(a)"]
+
+    style A fill:#e3f2fd
+    style Z fill:#c8e6c9
+    style X fill:#ffebee
+    style Y1 fill:#ffcdd2
+    style Y2 fill:#ffebee

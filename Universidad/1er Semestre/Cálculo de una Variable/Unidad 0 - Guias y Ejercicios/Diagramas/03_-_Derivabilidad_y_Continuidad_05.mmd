@@ -1,0 +1,14 @@
+flowchart TD
+    A["Derivabilidad de f en x = a"] --> B["Formar el cociente (f(a+h) - f(a)) / h"]
+    B --> C{"¿existe el límite cuando h tiende a 0?"}
+    C -->|"Sí, y es finito"| Z["f es derivable en a"]
+    C -->|No| D["Calcular las derivadas laterales f'+(a) y f'-(a)"]
+    D --> E{"¿Son iguales y finitas?"}
+    E -->|No| X["f no es derivable en a"]
+    E -->|Sí| Z
+    Z --> W["Derivable implica continua en a"]
+
+    style A fill:#e3f2fd
+    style Z fill:#c8e6c9
+    style W fill:#f3e5f5
+    style X fill:#ffebee

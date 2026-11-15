@@ -1,0 +1,14 @@
+flowchart TD
+    A["Punto de tangencia (a, f(a))"] --> B["f'(a) es la pendiente de la tangente"]
+    B --> C{"¿f'(a) = 0?"}
+    C -->|"Sí"| D["Tangente horizontal: y = f(a)"]
+    C -->|"No"| E["Pendiente normal: -1 / f'(a)"]
+    D --> F["Normal vertical: x = a"]
+    E --> G["Normal: y - f(a) = (-1 / f'(a)) (x - a)"]
+    F --> H["Tangente y normal son perpendiculares"]
+    G --> H
+
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style E fill:#fff3e0
+    style H fill:#c8e6c9
