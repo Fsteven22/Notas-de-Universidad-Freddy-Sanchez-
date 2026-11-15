@@ -25,15 +25,19 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > - Al elemento $s(n)$ lo denotaremos $s_n$ y lo llamaremos el **$n$-ésimo término** de la sucesión.
 > - A $n$ se le llama **índice** de la sucesión.
 > - Si $s : A \to X$ es una sucesión, la denotaremos por ${s_n}$ o ${s_n}_{n \in A}$.
+>
+> **Se lee así:** una sucesión asigna un término a cada índice consecutivo, de modo que $s_n$ indica el término que ocupa la posición $n$.
+>
+> **Ejemplo:** $s_n=2n$, con $n\geq1$, es la sucesión $2,4,6,\ldots$ sobre $\mathbb{R}$.
 
 > [!note] 📋 Definición 6 — Sucesión finita e infinita
 > 
+> $${s_n}_{n=k}^{\infty}$$
+>
 > - Una sucesión es **finita** si su dominio es finito.
 > - Una sucesión es **infinita** si su dominio es infinito.
 > 
 > Si $s$ es una sucesión infinita con índice inicial $k$:
-> 
-> $${s_n}_{n=k}^{\infty}$$
 > 
 > Una sucesión finita $x$ indexada desde $i$ hasta $j$:
 > 
@@ -42,6 +46,10 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > > [!tip]- 💡 Ejemplo de notación
 > > 
 > > Una sucesión $t$ cuyo dominio es ${-1, 0, 1, 2, 3}$ se denota ${t_n}_{n=-1}^{3}$.
+>
+> **Se lee así:** una sucesión es infinita cuando sus índices continúan sin fin y es finita cuando terminan en algún último índice.
+>
+> **Ejemplo:** $2,4,6,\ldots$ es una sucesión infinita, mientras que $2,1,\frac12,\frac14,\frac18,\frac1{16}$ es finita.
 
 ---
 
@@ -191,6 +199,10 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > > El **orden** de una recurrencia es la diferencia entre el índice mayor y el menor que aparecen. Por ejemplo:
 > > - $s_n = 3s_{n-1}$ es de **orden 1** — solo depende del término inmediatamente anterior.
 > > - $s_n = 5s_{n-1} - 6s_{n-2}$ es de **orden 2** — depende de los dos términos anteriores.
+>
+> **Se lee así:** una relación de recurrencia expresa un término con términos anteriores; junto con las condiciones iniciales, determina de forma única la sucesión.
+>
+> **Ejemplo:** $s_0=5$, $s_1=14$ y $s_n=5s_{n-1}-6s_{n-2}$ determinan los términos siguientes de la sucesión.
 
 ---
 
@@ -272,6 +284,10 @@ tags: [matematicas-discretas, conjuntos, sucesiones, cadenas, notacion-suma, MAT
 > - La **cadena nula** (sin elementos) se denota $\lambda$.
 > - $X^*$ denota el conjunto de **todas** las cadenas sobre $X$.
 > - $X^+$ denota el conjunto de las cadenas **no nulas** sobre $X$.
+>
+> **Se lee así:** una cadena es una sucesión finita de elementos de $X$ en la que el orden importa y se permiten repeticiones.
+>
+> **Ejemplo:** sobre $X=\{a,b,c\}$, los términos $b,a,a,c$ forman la cadena $baac$.
 
 > [!note] 📋 Longitud y Concatenación
 > 

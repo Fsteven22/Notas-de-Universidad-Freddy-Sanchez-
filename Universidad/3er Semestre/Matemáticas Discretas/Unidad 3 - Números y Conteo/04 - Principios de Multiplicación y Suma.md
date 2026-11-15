@@ -30,8 +30,11 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > [!note] 📋 Definición — Principio de la Multiplicación
 > 
 > Si una actividad se puede construir en $t$ **pasos sucesivos** donde el paso $i$ se puede realizar de $n_i$ maneras (independientemente de las elecciones anteriores), entonces el número total de actividades diferentes posibles es:
-> 
 > $$n_1 \cdot n_2 \cdots n_t$$
+> 
+> **Se lee así:** se multiplican las opciones de cada paso porque el total incluye todas las elecciones sucesivas e independientes.
+> 
+> **Ejemplo:** Una cadena de $4$ letras distintas ofrece $5$ opciones en el primer paso y $4,3,2$ en los siguientes, por lo que hay $5\cdot4\cdot3\cdot2=120$ cadenas.
 
 > [!tip] 💡 ¿Cuándo usarlo?
 > 
@@ -86,10 +89,13 @@ tags: [MATG1051, unidad3, conteo, multiplicacion, suma]
 > [!note] 📋 Definición — Principio de la Suma
 > 
 > Sean $X_1, X_2, \ldots, X_t$ conjuntos **disjuntos** (es decir, $X_i \cap X_j = \emptyset$ para $i \neq j$) con $|X_i| = n_i$ elementos. Entonces el número de maneras de seleccionar un elemento de $X_1$ **o** $X_2$ **o** $\cdots$ **o** $X_t$ es:
-> 
 > $$n_1 + n_2 + \cdots + n_t$$
 > 
 > De manera equivalente: $|X_1 \cup X_2 \cup \cdots \cup X_t| = n_1 + n_2 + \cdots + n_t$.
+> 
+> **Se lee así:** se suman las cantidades de cada caso porque las elecciones son disjuntas y cada una corresponde a un único resultado.
+> 
+> **Ejemplo:** Si el presidente es Alicia o Benjamín, hay $5\cdot4=20$ asignaciones en cada caso y $20+20=40$ en total.
 
 > [!tip] 💡 ¿Cuándo usarlo?
 > 

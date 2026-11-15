@@ -45,6 +45,10 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > > [!abstract] Teorema Existen $n!$ permutaciones de $n$ elementos, donde $n! = n(n-1)(n-2)\cdots 2 \cdot 1$.
 > > 
 > > **Demostración:** Por el principio de la multiplicación: $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $1$ para la última. $\blacksquare$
+> 
+> **Se lee así:** una permutación cuenta cada orden posible de todos los elementos, por lo que cambiar dos posiciones produce una permutación distinta.
+> 
+> **Ejemplo:** Los elementos $a,b,c$ tienen $3!=6$ ordenamientos: $abc,acb,bac,bca,cab,cba$.
 
 > [!example] 📝 Ejemplo 1 — Subcadena fija (DEF juntas en orden)
 > 
@@ -86,6 +90,10 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > > [!abstract] Teorema Si $r \leq n$: $$P(n, r) = n(n-1)(n-2)\cdots(n-r+1) = \frac{n!}{(n-r)!}$$
 > > 
 > > **Demostración:** $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $n-r+1$ para la $r$-ésima. $\blacksquare$
+> 
+> **Se lee así:** $P(n,r)$ cuenta los órdenes posibles de elegir y ordenar $r$ elementos distintos entre $n$, sin elegir los restantes.
+> 
+> **Ejemplo:** De $\{a,b,c\}$, los $2$-arreglos son $ab,ba,ac,ca,bc,cb$; por eso $P(3,2)=6$.
 
 > [!tip] 💡 Diferencia con permutación completa
 > 
@@ -137,10 +145,13 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > [!note] 📋 Definición — Permutación con repetición
 > 
 > Dada una [[04 - Sucesiones y Cadenas|sucesión]] de $n$ elementos con $k_1$ objetos del tipo 1, $k_2$ del tipo 2, ..., $k_r$ del tipo $r$ (donde $n = k_1 + k_2 + \cdots + k_r$), el número de **ordenamientos distintos** es:
-> 
 > $$\frac{n!}{k_1!, k_2!, \cdots, k_r!}$$
 > 
 > Se divide por los factoriales de las multiplicidades para eliminar los ordenamientos repetidos.
+> 
+> **Se lee así:** el resultado cuenta órdenes distintos aunque algunos elementos sean idénticos; para ello, se eliminan las permutaciones repetidas al dividir por los factoriales de sus multiplicidades.
+> 
+> **Ejemplo:** Las letras de MATEMATICA forman $\frac{10!}{2!\cdot3!\cdot2!}=151\,200$ cadenas distintas.
 
 > [!example] 📝 Ejemplo — Letras de MATEMATICA
 > 
@@ -175,10 +186,14 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > [!note] 📋 Definición — Combinación
 > 
 > Una **combinación $r$** de ${x_1, \ldots, x_n}$ es una **selección no ordenada** de $r$ elementos (un subconjunto de $r$ elementos). El número de combinaciones $r$ de $n$ elementos se denota:
-> 
+>
 > $$C(n,r) = \binom{n}{r} = \frac{n!}{(n-r)!, r!}$$
-> 
+>
 > > [!abstract] Demostración Cada permutación $r$ se construye en dos pasos: elegir la combinación ($\binom{n}{r}$ maneras) y luego ordenarla ($r!$ maneras). Entonces: $$\binom{n}{r} \cdot r! = P(n,r) = \frac{n!}{(n-r)!} \implies \binom{n}{r} = \frac{n!}{(n-r)!,r!} \quad \blacksquare$$
+> 
+> **Se lee así:** una combinación cuenta subconjuntos de $r$ elementos: cambiar el orden de selección no genera una combinación diferente.
+> 
+> **Ejemplo:** Las manos de $5$ cartas de una baraja de $52$ no distinguen el orden, por lo que hay $\binom{52}{5}=2\,598\,960$ manos.
 
 > [!tip] 💡 La diferencia clave
 > 
@@ -244,6 +259,10 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > Las **combinaciones con repetición** de $n$ tipos de elementos tomados de $r$ en $r$ son los grupos de $r$ elementos formados con los $n$ tipos dados, **sin importar el orden y permitiendo repetir** el mismo tipo.
 > 
 > > [!abstract] Teorema El número de combinaciones con repetición de $n$ tipos tomados de $r$ en $r$ es: $$\binom{n+r-1}{r} = \binom{n+r-1}{n-1}$$
+> 
+> **Se lee así:** $\binom{n+r-1}{r}$ cuenta selecciones de $r$ elementos entre $n$ tipos, donde el orden no importa y cada tipo puede repetirse.
+> 
+> **Ejemplo:** Las selecciones de $2$ elementos de $\{a,b,c\}$ con repetición son $aa,ab,ac,bb,bc,cc$, así que hay $\binom{4}{2}=6$.
 
 > [!example] 📝 Ejemplo — Combinaciones con rep. de {a,b,c}
 > 

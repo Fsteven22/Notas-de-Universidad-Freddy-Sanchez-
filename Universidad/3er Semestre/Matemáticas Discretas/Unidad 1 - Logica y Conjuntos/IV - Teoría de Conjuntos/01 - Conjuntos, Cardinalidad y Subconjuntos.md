@@ -29,13 +29,13 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 
 > [!note] 📖 Definición — Conjunto y notación
 >
+> $$A = \{-3, 1, 2, 5, 9\}$$
+>
 > **Se lee así:** las llaves $\{ \}$ son el conjunto: adentro van los elementos separados por comas (lista/extensión) o una propiedad tras los dos puntos (comprensión); el orden no importa, y $\in$ vs $\notin$ marcan pertenencia — la trampa clásica es confundir $\in$ con $\subseteq$.
 > 
 > Llamaremos **Conjunto** a cualquier colección de objetos. A estos objetos los llamaremos **elementos** o **miembros** del conjunto.
 >
 > Si un conjunto es finito o no muy grande, es posible describirlo por la **lista de sus elementos** entre llaves:
->
-> $$A = \{-3, 1, 2, 5, 9\}$$
 >
 > Un conjunto se determina por sus elementos y **no por el orden** en que aparecen. Así, $\{-3, 5, 9, 1, 2\}$ también representa al conjunto $A$.
 >
@@ -49,6 +49,9 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 > |---|---|---|
 > | $x \in X$ | x pertenece al conjunto X | $3 \in \{1, 3, 5\}$ |
 > | $x \notin X$ | x no pertenece al conjunto X | $4 \notin \{1, 3, 5\}$ |
+>
+> **Ejemplo:** El conjunto $A=\{-3,1,2,5,9\}$ tiene cinco elementos, y $\{-3,5,9,1,2\}$ representa el mismo conjunto porque el orden no importa.
+>
 
 ---
 
@@ -56,11 +59,13 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 
 > [!note] 🔢 Definición — Cardinal de un conjunto
 >
+> $$A = \{-4, -1, 0, 3, 5, 7\} \implies |A| = 6$$
+>
 > Si A es un conjunto finito, definimos el **cardinal** de A, denotado |A|, como el número de elementos que contiene.
 >
 > **Ejemplo:**
 >
-> $$A = \{-4, -1, 0, 3, 5, 7\} \implies |A| = 6$$
+> El conjunto $A=\{-4,-1,0,3,5,7\}$ contiene seis elementos distintos, por lo que $|A|=6$.
 >
 > ### Conjunto vacío
 >

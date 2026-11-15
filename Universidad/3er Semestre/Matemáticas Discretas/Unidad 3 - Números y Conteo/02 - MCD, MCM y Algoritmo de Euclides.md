@@ -61,7 +61,9 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 
 ## 🔵 Máximo Común Divisor (MCD)
 
-> [!note] 🔵 Definición y cálculo por factorización
+> [!note] 🔵 Definición — Máximo Común Divisor (MCD)
+> 
+> $$\boxed{\text{mcd}(m, n) = p_1^{\min{a_1,b_1}} \cdot p_2^{\min{a_2,b_2}} \cdots p_k^{\min{a_k,b_k}}}$$
 > 
 > **Definición.** Sean $m$ y $n$ enteros diferentes de cero. Un **divisor común** de $m$ y $n$ es un entero que divide tanto a $m$ como a $n$. El **máximo común divisor**, denotado $\text{mcd}(m, n)$, es el divisor común más grande.
 > 
@@ -76,8 +78,6 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > ### 📐 Teorema — MCD via factorización prima
 > 
 > Sean $m, n > 1$ con factorizaciones primas $m = p_1^{a_1} \cdots p_k^{a_k}$ y $n = p_1^{b_1} \cdots p_k^{b_k}$ (donde $a_i = 0$ si $p_i \nmid m$ y $b_i = 0$ si $p_i \nmid n$). Entonces:
-> 
-> $$\boxed{\text{mcd}(m, n) = p_1^{\min{a_1,b_1}} \cdot p_2^{\min{a_2,b_2}} \cdots p_k^{\min{a_k,b_k}}}$$
 > 
 > ---
 > 
@@ -96,6 +96,10 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > > |$11$|$0$|$1$|$0$|
 > > 
 > > $$\text{mcd}(82320,\ 950796) = 2^2 \cdot 3^1 \cdot 7^3 = 4 \cdot 3 \cdot 343 = 4116$$
+> 
+> **Se lee así:** $\text{mcd}(m,n)$ es el mayor valor que divide a ambos números. Al factorizarlos, se toma en cada primo el menor exponente.
+> 
+> **Ejemplo:** Para $30$ y $105$, sus divisores comunes son $1,3,5,15$, por lo que $\text{mcd}(30,105)=15$.
 
 ---
 
@@ -111,7 +115,9 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > 
 > Ejemplo: mcd(30,105) = 15 (lo sacas por Euclides en 2 pasos) → mcm(30,105) = $30\cdot105/15 = 210$. Listo, sin factorizar.
 
-> [!tip] 🟢 Definición y cálculo por factorización
+> [!tip] 🟢 Definición — Mínimo Común Múltiplo (MCM)
+> 
+> $$\boxed{\text{mcm}(m, n) = p_1^{\max{a_1,b_1}} \cdot p_2^{\max{a_2,b_2}} \cdots p_k^{\max{a_k,b_k}}}$$
 > 
 > **Definición.** Sean $m$ y $n$ enteros positivos. Un **múltiplo común** de $m$ y $n$ es un entero divisible tanto por $m$ como por $n$. El **mínimo común múltiplo**, denotado $\text{mcm}(m, n)$, es el múltiplo común positivo más pequeño.
 > 
@@ -126,8 +132,6 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > ### 📐 Teorema — MCM via factorización prima
 > 
 > Con la misma notación que para el MCD:
-> 
-> $$\boxed{\text{mcm}(m, n) = p_1^{\max{a_1,b_1}} \cdot p_2^{\max{a_2,b_2}} \cdots p_k^{\max{a_k,b_k}}}$$
 > 
 > ---
 > 
@@ -145,6 +149,10 @@ tags: [MCD, MCM, euclides, algoritmo, division, modulo, factorizacion, teoria-de
 > > |$7$|$0$|$1$|$1$|
 > > 
 > > $$\text{mcm}(30,105) = 2^1 \cdot 3^1 \cdot 5^1 \cdot 7^1 = 210$$
+> 
+> **Se lee así:** $\text{mcm}(m,n)$ es el menor múltiplo positivo común de ambos números; al factorizar, se toma en cada primo el mayor exponente.
+> 
+> **Ejemplo:** Como $210$ es divisible por $30$ y por $105$, y ningún múltiplo positivo menor lo es, $\text{mcm}(30,105)=210$.
 
 ---
 

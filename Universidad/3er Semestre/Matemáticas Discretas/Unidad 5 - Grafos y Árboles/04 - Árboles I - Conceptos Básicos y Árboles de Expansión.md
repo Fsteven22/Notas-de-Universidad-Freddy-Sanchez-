@@ -28,6 +28,10 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > 
 > Un **árbol con raíz** es un árbol en el que un vértice específico se designa como **raíz**.
 > 
+> **Se lee así:** entre cualquier par de vértices $v$ y $w$ hay exactamente un camino simple; añadir una raíz solo establece una jerarquía sobre esa estructura.
+> 
+> **Ejemplo:** un árbol con $n=7$ vértices tiene $7-1=6$ aristas, y el árbol del Ejemplo 1 conecta sus vértices $v_1,\ldots,v_7$ sin ciclos.
+> 
 > > [!tip]- 💡 Convención de dibujo
 > > 
 > > Al contrario de los árboles naturales (cuyas raíces están abajo), en teoría de grafos los árboles con raíz suelen dibujarse con la raíz **hacia arriba**.
@@ -56,6 +60,10 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > - El **nivel** de la raíz es el nivel $0$.
 > - El **nivel** de un vértice $v$ es la longitud de la trayectoria simple de la raíz a $v$.
 > - La **altura** de un árbol con raíz es el número máximo de nivel que ocurre.
+> 
+> **Se lee así:** el nivel mide la distancia de un vértice a la raíz, y la altura es el nivel más profundo alcanzado en el árbol.
+> 
+> **Ejemplo:** si se elige $e$ como raíz en el Ejemplo 2, el vértice $j$ está en el nivel $3$ y, por tanto, la altura de $T'$ es $3$.
 
 > [!example] 📝 Ejemplo 2 — Árbol con raíz elegida arbitrariamente
 > 
@@ -85,7 +93,11 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > - Si $x$ no tiene hijos, $x$ es un **vértice terminal** (u **hoja**).
 > - Si $x$ no es un vértice terminal, $x$ es un **vértice interno** (o **rama**).
 > - El **subárbol de $T$ con raíz en $x$** es el grafo con [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] de vértices $V$ = $x$ junto con los descendientes de $x$, y conjunto de aristas $E$ = las aristas en una trayectoria simple de $x$ a algún vértice en $V$.
-
+> 
+> **Se lee así:** al recorrer una trayectoria desde la raíz, cada vértice es hijo del anterior y los anteriores son sus ancestros; la relación depende de la raíz elegida.
+> 
+> **Ejemplo:** en el árbol genealógico del Ejemplo 3, Afrodita es la madre de Eros y Eros es un vértice terminal.
+> 
 > [!example] 📝 Ejemplo 3 — Árbol genealógico de los dioses griegos
 > 
 > En el árbol con raíz Urano → {Afrodita, Cronos, Atlas, Prometeo} → ... → {Apolo, Atenea, Hermes, Heracles}:
@@ -127,6 +139,10 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > [!note] 📋 Definición — Árbol de expansión
 > 
 > Un árbol $T$ es un **árbol de expansión** de un grafo $G$ si $T$ es un **subgrafo** de $G$ que contiene **todos los vértices** de $G$.
+> 
+> **Se lee así:** el árbol cubre todos los vértices de $G$ y conserva un camino sin ciclos entre ellos, aunque puede descartar algunas aristas.
+> 
+> **Ejemplo:** en un ciclo $C_4$, al quitar cualquiera de sus cuatro aristas se obtiene un árbol de expansión con 4 vértices y 3 aristas.
 
 > [!success] ✅ Teorema — Existencia de árbol de expansión
 > 
@@ -209,6 +225,10 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > [!note] 📋 Definición — Árbol de expansión mínima
 > 
 > Sea $G$ un grafo **ponderado** (cada arista tiene un peso/costo). Un **árbol de expansión mínima** de $G$ es un árbol de expansión de $G$ con **peso total mínimo** (la suma de los pesos de sus aristas es la menor posible entre todos los árboles de expansión posibles).
+> 
+> **Se lee así:** «mínima» se refiere al costo total de las aristas, no a la cantidad de aristas; todos los árboles de expansión tienen $n-1$ aristas.
+> 
+> **Ejemplo:** en el grafo de 6 ciudades del Ejemplo 7, un árbol de expansión tiene peso $20$ y el árbol de expansión mínima tiene peso $12$.
 
 > [!example] 📝 Ejemplo 7 — Seis ciudades y costos de carreteras
 > 

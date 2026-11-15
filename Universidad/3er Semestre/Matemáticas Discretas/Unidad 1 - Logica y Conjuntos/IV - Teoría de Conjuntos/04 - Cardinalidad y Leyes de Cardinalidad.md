@@ -22,11 +22,11 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 
 > [!note] 📖 Definición — Cardinal de un conjunto
 >
+> $$A = \{2, 4, 6, 8\} \implies |A| = 4$$
+>
 > **Se lee así:** $|A|$ cuenta elementos **distintos** (las repeticiones no suman doble); la trampa clásica está en el cuadro de casos especiales: $|\emptyset| = 0$ pero $|\{0\}| = 1$ y $|\{\emptyset\}| = 1$ — el vacío usado como elemento sí cuenta.
 > 
 > Si $A$ es un conjunto **finito**, el **cardinal** de $A$, denotado $|A|$, es el número de elementos distintos que contiene.
->
-> $$A = \{2, 4, 6, 8\} \implies |A| = 4$$
 >
 > ### Casos especiales
 >
@@ -36,6 +36,9 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, inclusion-exclusion, venn
 > | $\{0\}$ | 1 | Distinto del vacío — contiene el número cero |
 > | $\{\emptyset\}$ | 1 | El vacío usado como elemento |
 > | $U$ (universal) | $n$ | Depende del contexto del problema |
+>
+> **Ejemplo:** En $A=\{2,4,6,8\}$ hay cuatro elementos distintos, por lo que $|A|=4$.
+>
 
 > [!tip] 💡 Observación — Elementos repetidos no se cuentan doble
 >

@@ -8,9 +8,13 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 ## 🎯 El Condicional en Profundidad
 
 > [!info] 📖 Recordatorio: Definición del Condicional
-> 
+>
+> **Fórmula:** $VL(p \rightarrow q) = \max{1 - VL(p),\ VL(q)}$
+>
 > **Se lee así:** la tabla solo marca **F** en la fila $p = V$, $q = F$: el condicional es una promesa rota únicamente cuando se cumple la hipótesis y falla la conclusión; si $p$ es $F$ la promesa no se exige y la fila vale $V$. La trampa típica es leer "si $p$ entonces $q$" como una causalidad.
 > Sean $p$ y $q$ dos proposiciones. El **condicional** $p \rightarrow q$ ("si $p$ entonces $q$") tiene la siguiente tabla de verdad:
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-condicional.png]]
 > 
 > |$p$|$q$|$p \rightarrow q$|
 > |:-:|:-:|:-:|
@@ -27,8 +31,7 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 >
 > **En esta nota:** las formas del condicional en lenguaje natural (*solo si*, *es necesario*), sus 3 variantes con equivalencia, y equivalencias lógicas para simplificar — lo que evalúan los ejercicios 7–12 de la Guía 1.
 >
-> 
-> **Fórmula:** $VL(p \rightarrow q) = \max{1 - VL(p),\ VL(q)}$
+> **Ejemplo:** Si $p$ es «llueve» (verdadera) y $q$ es «salgo con paraguas» (falsa), $p \rightarrow q$ es falsa.
 
 ---
 
@@ -106,6 +109,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > 
 > Verifiquemos que $p \rightarrow q \equiv \neg q \rightarrow \neg p$:
 > 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-condicional-contrapositiva.png]]
+> 
 > |$p$|$q$|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q \rightarrow \neg p$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
 > |V|V|F|F|**V**|**V**|
@@ -116,6 +121,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > Las columnas son idénticas → $p \rightarrow q \equiv \neg q \rightarrow \neg p$ ✅
 > 
 > Y que el recíproco $q \rightarrow p$ **NO** es equivalente al original:
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-condicional-reciproco.png]]
 > 
 > |$p$|$q$|$p \rightarrow q$|$q \rightarrow p$|
 > |:-:|:-:|:-:|:-:|
@@ -173,11 +180,15 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > > [!example] 🟢 Ejemplo
 > >
 > > Dicho de otra forma: $P \equiv Q$ si y solo si $P \leftrightarrow Q$ es una **tautología**.
-> 
+>
+> **Ejemplo:** Las formas $p \rightarrow q$ y $\neg q \rightarrow \neg p$ son equivalentes porque $(p \rightarrow q) \leftrightarrow (\neg q \rightarrow \neg p)$ es una tautología.
+>
 > **Tautología:** Forma proposicional que es **siempre verdadera**.  
 > **Contradicción:** Forma proposicional que es **siempre falsa**.
 
 > [!example] ✅ Verificar $\neg(p \rightarrow q) \equiv p \wedge \neg q$
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-negacion-condicional.png]]
 > 
 > |$p$|$q$|$\neg q$|$p \rightarrow q$|$\neg(p \rightarrow q)$|$p \wedge \neg q$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -282,6 +293,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!example] 🧮 Ejemplo 1: $p \rightarrow q \equiv \neg p \vee q$
 > 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-condicional-disjuncion.png]]
+> 
 > |$p$|$q$|$\neg p$|$p \rightarrow q$|$\neg p \vee q$|
 > |:-:|:-:|:-:|:-:|:-:|
 > |V|V|F|V|V|
@@ -292,6 +305,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > Columnas idénticas → $p \rightarrow q \equiv \neg p \vee q$ ✅
 
 > [!example] 🧮 Ejemplo 2: $p \leftrightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow p)$
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-bicondicional-equivalencia.png]]
 > 
 > |$p$|$q$|$p \leftrightarrow q$|$p \rightarrow q$|$q \rightarrow p$|$(p \rightarrow q) \wedge (q \rightarrow p)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -304,6 +319,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!example] 🧮 Ejemplo 3: $p \veebar q \equiv (p \wedge \neg q) \vee (q \wedge \neg p)$
 > 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-disjuncion-exclusiva-equivalencia.png]]
+> 
 > |$p$|$q$|$\neg p$|$\neg q$|$p \veebar q$|$p \wedge \neg q$|$q \wedge \neg p$|$(p \wedge \neg q) \vee (q \wedge \neg p)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 > |V|V|F|F|F|F|F|F|
@@ -314,6 +331,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > Columnas idénticas → $p \veebar q \equiv (p \wedge \neg q) \vee (q \wedge \neg p)$ ✅
 
 > [!example] 🧮 Ejemplo 4: $(p \rightarrow q) \rightarrow r \not\equiv p \rightarrow (q \rightarrow r)$
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-tres-proposiciones.png]]
 > 
 > |$p$|$q$|$r$|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|$q \rightarrow r$|$p \rightarrow (q \rightarrow r)$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -356,6 +375,8 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!example] 🧮 Verificación: $p \vee \neg p$ es tautología
 > 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-tautologia.png]]
+> 
 > |$p$|$\neg p$|$p \vee \neg p$|
 > |:-:|:-:|:-:|
 > |V|F|**V**|
@@ -365,14 +386,16 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 
 > [!example] 🧮 Verificación: Modus Ponens $(p \wedge (p \rightarrow q)) \rightarrow q$
 > 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-modus-ponens.png]]
+> 
 > |$p$|$q$|$p \rightarrow q$|$p \wedge (p \rightarrow q)$|$(p \wedge (p \rightarrow q)) \rightarrow q$|
 > |:-:|:-:|:-:|:-:|:-:|
 > |V|V|V|V|**V**|
 > |V|F|F|F|**V**|
 > |F|V|V|F|**V**|
 > |F|F|V|F|**V**|
-> 
-> Siempre verdadera → es una tautología ✅
+>
+> **Se lee así:** La última columna es $V$ en todas las filas, así que $(p \wedge (p \rightarrow q)) \rightarrow q$ es una tautología y el modus ponens es válido ✅
 
 ---
 

@@ -27,21 +27,25 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 
 > [!note] 📋 Definición — Autómata de estado finito (como caso particular de MEF)
 >
-> Un **autómata de estado finito** es una máquina de estado finito
->
 > $$A = (I, O, S, f, g, \sigma)$$
+>
+> Un **autómata de estado finito** es una máquina de estado finito
 >
 > con $O = \{0,1\}$, donde el estado actual determina la última salida. Los estados cuya última salida fue $1$ se llaman **estados de aceptación**.
 >
 > En un diagrama de autómata:
 > - se suelen omitir los símbolos de salida;
 > - los estados de aceptación se dibujan con **círculos dobles**.
+>
+> **Se lee así:** es una MEF cuya salida solo distingue entre aceptar y rechazar; por eso basta con identificar qué estados son de aceptación.
+>
+> **Ejemplo:** en el autómata de tres estados con $\mathcal{A}=\{\sigma_1,\sigma_2\}$, la cadena $aa$ recorre $\sigma_0 \to \sigma_1 \to \sigma_2$ y termina en un estado aceptante.
 
 > [!note] 📋 Definición alternativa — Quíntupla
 >
-> También se puede definir un autómata de estado finito como una quíntupla
->
 > $$A = (I, S, f, \mathcal{A}, \sigma)$$
+>
+> También se puede definir un autómata de estado finito como una quíntupla
 >
 > donde:
 > 1. $I$ es un [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] finito de **símbolos de entrada**.
@@ -51,6 +55,8 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > 5. $\sigma \in S$ es el **estado inicial**.
 >
 > **Nota de notación:** se usa $\mathcal{A}$ (caligráfica) para el conjunto de estados aceptantes y $A$ para el autómata mismo — no confundir ambos símbolos.
+>
+> **Ejemplo:** con el autómata de tres estados y $\mathcal{A}=\{\sigma_1,\sigma_2\}$, la cadena $aa$ recorre $\sigma_0 \to \sigma_1 \to \sigma_2$ y es aceptada.
 
 > [!example] 🟢 Ejemplo — Autómata con $\mathcal{A} = \{\sigma_1, \sigma_2\}$
 >
@@ -87,6 +93,10 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > 3. $\sigma_n \in \mathcal{A}$.
 >
 > La **cadena nula** ($\lambda$) se acepta si y solo si $\sigma \in \mathcal{A}$.
+>
+> **Se lee así:** la aceptación se decide al final: se sigue la trayectoria desde $\sigma$ y se comprueba si el último estado pertenece a $\mathcal{A}$.
+>
+> **Ejemplo:** para el autómata de tres estados con $\mathcal{A}=\{\sigma_2\}$, la cadena $abb$ recorre $\sigma_0 \xrightarrow{a} \sigma_0 \xrightarrow{b} \sigma_1 \xrightarrow{b} \sigma_2$ y es aceptada.
 
 > [!note] 📋 Definición — Trayectoria
 >
@@ -97,6 +107,10 @@ tags: [matematicas-discretas, automatas-estado-finito, teoria-de-la-computacion,
 > 2. Leer la cadena símbolo por símbolo.
 > 3. Seguir la transición indicada por cada símbolo.
 > 4. Aceptar si el estado final es aceptante.
+>
+> **Se lee así:** la trayectoria registra los estados visitados durante la lectura: comienza en $\sigma$ y cada estado siguiente se obtiene al aplicar $f$ al símbolo leído.
+>
+> **Ejemplo:** en el autómata de tres estados, la trayectoria de $abb$ es $\sigma_0 \xrightarrow{a} \sigma_0 \xrightarrow{b} \sigma_1 \xrightarrow{b} \sigma_2$.
 
 > [!example] 🟢 Ejemplo — Autómata que acepta cadenas con al menos dos $b$ consecutivos al final
 >

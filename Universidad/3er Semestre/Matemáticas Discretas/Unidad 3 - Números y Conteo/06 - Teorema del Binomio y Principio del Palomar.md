@@ -156,9 +156,13 @@ tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, pal
 > 
 > El paso que más cuesta es el 2 — inventar las categorías correctas. Usualmente conviene pensar "¿qué pares de cosas quiero que colisionen?" y diseñar la categoría a partir de ahí (mira la tabla de estrategia más abajo).
 
-> [!note] 📋 Definición — Primera versión
+> [!note] 📋 Definición — Principio del palomar (primera versión)
 > 
 > Si $n$ palomas vuelan a $k$ palomares y $k < n$, entonces **algún palomar contiene al menos 2 palomas**.
+> 
+> **Se lee así:** al distribuir más de $k$ palomas en $k$ palomares, al menos un palomar recibe dos o más; la conclusión es una existencia, no un procedimiento para hallarlas.
+> 
+> **Ejemplo:** Entre $14$ personas y $12$ nombres completos posibles, como $14>12$, al menos dos personas comparten un nombre completo.
 
 > [!warning] ⚠️ Limitación importante
 > 
@@ -177,13 +181,16 @@ tags: [matematicas-discretas, conteo, teorema-binomial, identidades, pascal, pal
 
 ## 🐦🐦 Principio del Palomar — Segunda Versión (Generalizada)
 
-> [!note] 📋 Definición — Segunda versión
+> [!note] 📋 Definición — Principio del palomar (segunda versión)
 > 
 > Sea $f: X \to Y$ con $|X| = n$ y $|Y| = m$. Sea $k = \left\lceil \dfrac{n}{m} \right\rceil$. Entonces existen al menos $k$ valores $a_1, \ldots, a_k \in X$ tales que:
-> 
 > $$f(a_1) = f(a_2) = \cdots = f(a_k)$$
 > 
 > Es decir, algún valor de $Y$ tiene **al menos $k$ preimágenes** en $X$.
+> 
+> **Se lee así:** $k=\lceil n/m\rceil$ es una cota inferior garantizada para la cantidad de elementos que caen en una misma preimagen; puede haber más, pero nunca menos.
+> 
+> **Ejemplo:** Con $n=26$ y $m=12$, $k=\lceil26/12\rceil=3$, así que alguna de las $12$ categorías contiene al menos $3$ elementos.
 
 > [!tip] 💡 ¿Por qué $\lceil n/m \rceil$?
 > 

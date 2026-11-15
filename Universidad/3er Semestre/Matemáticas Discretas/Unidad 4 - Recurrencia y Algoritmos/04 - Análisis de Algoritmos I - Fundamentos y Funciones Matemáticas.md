@@ -14,7 +14,7 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 
 ## 🔵 Definiciones Formales
 
-> [!note] 📋 Definiciones (como las plantea la clase)
+> [!note] 📋 Definiciones — Cotas $\mathcal{O}$, $\Omega$ y $\Theta$ (como las plantea la clase)
 > 
 > Sea $f(n)$ el número de operaciones de un algoritmo. La definición que usa el profesor Pineda usa **valor absoluto** y la frase "excepto una cantidad finita de valores de $n$" (equivalente a "$\forall n \geq n_0$"):
 > 
@@ -23,13 +23,16 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 > - **Cota inferior $\Omega$:** $f(n) = \Omega(g(n))$ si existe una constante $C_2>0$ tal que $|f(n)| \geq C_2|g(n)|$, para todo $n \in \mathbb{N}$, excepto una cantidad finita de valores de $n$.
 >     
 > - **Cota estrecha $\Theta$:** $f(n) = \Theta(g(n))$ si $f(n) = \mathcal{O}(g(n))$ **y** $f(n) = \Omega(g(n))$.
->     
+> 
+> **Se lee así:** $\mathcal{O}$ da una cota superior, $\Omega$ una cota inferior y $\Theta$ afirma que ambas coinciden; así describen el orden de crecimiento de $f(n)$ respecto de $g(n)$.
 > 
 > > [!tip] 📌 Intuición rápida
 > > 
 > > - $\mathcal{O}$ → cota máxima ("a lo sumo crece así")
 > > - $\Omega$ → cota mínima ("al menos crece así")
 > > - $\Theta$ → crecimiento exacto ("crece exactamente así")
+> 
+> **Ejemplo:** $f(n)=2n^2-5n+3$ queda acotada entre $n^2$ y $5n^2$ para $n\geq5$, por lo que $f(n)=\Theta(n^2)$.
 
 ---
 
