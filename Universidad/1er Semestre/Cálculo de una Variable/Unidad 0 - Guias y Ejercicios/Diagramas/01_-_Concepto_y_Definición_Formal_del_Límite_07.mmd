@@ -1,0 +1,12 @@
+flowchart TD
+    A["x se acerca a a por un solo lado"] --> B{"Dirección de x"}
+    B -->|"Por la derecha"| C["a < x < a + δ"]
+    B -->|"Por la izquierda"| D["a - δ < x < a"]
+    C --> E["Para todo M > 0 se exige f(x) > M o f(x) < -M"]
+    D --> E
+    E --> F["Conclusión: límite lateral infinito"]
+
+    style A fill:#e3f2fd
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style F fill:#f3e5f5

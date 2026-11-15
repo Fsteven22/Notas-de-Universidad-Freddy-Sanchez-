@@ -1,0 +1,10 @@
+flowchart TD
+    A["Buscar dos funciones que acoten f(x)"] --> B["Verificar g(x) ≤ f(x) ≤ h(x) cerca de a"]
+    B --> C{"Los límites de g y h son iguales a L"}
+    C -->|No| D["El teorema no permite concluir el límite de f(x)"]
+    C -->|Sí| E["Entonces el límite de f(x) es L"]
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style D fill:#ffebee
+    style E fill:#c8e6c9

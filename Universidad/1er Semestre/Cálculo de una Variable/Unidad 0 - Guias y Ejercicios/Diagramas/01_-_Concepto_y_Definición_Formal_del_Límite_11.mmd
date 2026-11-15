@@ -1,0 +1,12 @@
+flowchart TD
+    A["Suponer un candidato L"] --> B["Fijar ε₀ > 0"]
+    B --> C["Para cada δ > 0"]
+    C --> D["Encontrar x a distancia positiva de a y menor que δ"]
+    D --> E["Pero f(x) está a distancia al menos ε₀ de L"]
+    E --> F["La definición falla para el candidato L"]
+    F --> G["Conclusión: no existe un límite finito en a"]
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style E fill:#ffcdd2
+    style G fill:#f3e5f5

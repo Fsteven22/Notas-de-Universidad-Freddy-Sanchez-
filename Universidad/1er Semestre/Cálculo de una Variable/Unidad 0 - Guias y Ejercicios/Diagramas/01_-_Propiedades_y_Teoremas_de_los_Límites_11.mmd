@@ -1,0 +1,12 @@
+flowchart TD
+    A["Suponer dos límites L₁ y L₂"] --> B["Tomar una tolerancia menor que la mitad de su distancia"]
+    B --> C["Cerca de a, f(x) debe estar cerca de L₁"]
+    C --> D["La misma f(x) también debe estar cerca de L₂"]
+    D --> E{"Las dos zonas de tolerancia se contradicen"}
+    E -->|Sí| F["Conclusión: L₁ = L₂"]
+    E -->|No| G["Revisar las hipótesis"]
+
+    style A fill:#e3f2fd
+    style E fill:#fff3e0
+    style F fill:#c8e6c9
+    style G fill:#ffcdd2

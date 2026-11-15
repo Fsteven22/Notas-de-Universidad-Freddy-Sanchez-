@@ -1,0 +1,12 @@
+flowchart TD
+    A["Preguntar por la distancia entre valores cercanos"] --> B{"Para todo ε > 0 existe δ > 0"}
+    B -->|Sí| C{"Si x y z están cerca de a, f(x) y f(z) también"}
+    C -->|Sí| D["La función es Cauchy cerca de a"]
+    D --> E["Entonces existe un único límite en a"]
+    B -->|No| F["La condición de Cauchy falla"]
+    C -->|No| F
+
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style E fill:#c8e6c9
+    style F fill:#ffebee

@@ -1,0 +1,11 @@
+flowchart TD
+    A["Tomar cualquier sucesión xₙ que tienda a a"] --> B{"Cada término es distinto de a"}
+    B -->|Sí| C["Evaluar la sucesión f(xₙ)"]
+    C --> D{"Todas las sucesiones producen valores que tienden a L"}
+    D -->|Sí| E["El límite de f(x) es L"]
+    D -->|No| F["Una sucesión revela que el límite falla"]
+
+    style A fill:#e3f2fd
+    style D fill:#fff3e0
+    style E fill:#c8e6c9
+    style F fill:#ffebee

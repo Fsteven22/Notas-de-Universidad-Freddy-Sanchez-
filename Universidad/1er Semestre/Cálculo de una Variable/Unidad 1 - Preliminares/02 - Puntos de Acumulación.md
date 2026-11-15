@@ -270,7 +270,7 @@ tags: [MATG1045, unidad1, puntos-de-acumulacion, topologia, clausura, conjuntos-
 >
 > > [!success]- ✅ Solución
 > >
-> > $A'=\varnothing$, porque los términos se separan yEscape al infinito. $B'=\mathbb R$, por la densidad de $\mathbb Q$ y porque cada racional es límite de $r+1/n$. $C'=\{0\}$, pues la sucesión alterna de signo pero converge a $0$.
+> > $A'=\varnothing$, porque los términos se separan y escapan al infinito. $B'=\mathbb R$, por la densidad de $\mathbb Q$ y porque cada racional es límite de $r+1/n$. $C'=\{0\}$, pues la sucesión alterna de signo pero converge a $0$.
 
 > [!example] 📋 Planteamiento
 >

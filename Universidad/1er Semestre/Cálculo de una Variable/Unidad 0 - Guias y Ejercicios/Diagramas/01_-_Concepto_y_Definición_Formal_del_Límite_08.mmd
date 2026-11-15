@@ -1,0 +1,13 @@
+flowchart TD
+    A["x crece sin cota"] --> B{"Dirección de x y signo de f(x)"}
+    B -->|"x hacia +∞ y f(x) hacia +∞"| C["x > N implica f(x) > M"]
+    B -->|"x hacia +∞ y f(x) hacia -∞"| D["x > N implica f(x) < -M"]
+    B -->|"x hacia -∞ y f(x) hacia +∞"| E["x < -N implica f(x) > M"]
+    B -->|"x hacia -∞ y f(x) hacia -∞"| F["x < -N implica f(x) < -M"]
+    C --> G["Conclusión: límite infinito al infinito"]
+    D --> G
+    E --> G
+    F --> G
+
+    style A fill:#e3f2fd
+    style G fill:#f3e5f5

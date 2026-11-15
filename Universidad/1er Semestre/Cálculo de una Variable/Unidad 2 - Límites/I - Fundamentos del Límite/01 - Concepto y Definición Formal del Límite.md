@@ -1,945 +1,561 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad2, concepto-y-definicion-formal-del-limite, calculo, limites, concepto-intuitivo, fundamentos, aproximacion, convergencia, matematicas, definicion-basica, interpretacion-grafica]
+tags: [MATG1045, unidad2, limite, epsilon-delta, limites-laterales, limites-infinitos, limites-al-infinito, asintotas, demostraciones]
 ---
 
-# 🤔 Concepto Intuitivo de Límite
+# 🤓 Concepto y Definición Formal del Límite
 
-> [!tip] 🎯 Idea Central
->
-> Un **límite** describe hacia dónde se dirige una función cuando la variable independiente se acerca a un valor específico, **sin necesariamente llegar a ese valor**. Es como observar hacia dónde camina una persona, no necesariamente dónde está parada.
+## 🎯 Introducción
 
-## 🔍 ¿Qué es un Límite?
+> [!info] 💡 ¿Qué quiere decir "límite"?
+>
+> Un **límite** describe hacia dónde se dirige una función cuando la variable independiente se acerca a un valor específico, **sin necesitar llegar a ese valor**. Es observar hacia dónde camina una persona, no dónde está parada.
+>
+> Ese matiz es la que sostiene toda la nota: el límite no pide que la función esté definida en el punto ni que valga algo ahí. Pide que los valores de $f(x)$ se acerquen arbitrariamente a un número $L$ conforme $x$ se acerca a $a$ por el dominio.
+>
+> **Notación:** $\lim_{x \to a} f(x) = L$.
+>
+> **Ejemplo:** con $g(x)=x^2$ para $x\neq2$ y $g(2)=10$, el límite en $2$ sigue siendo $4$: el recorrido de $x$ es el mismo aunque el valor fijo sea otro.
 
-> [!info] 🌟 Definición Intuitiva Decimos que el **límite de $f(x)$ cuando $x$ se acerca a $a$ es $L$** si:
+> [!warning] ⚠️ Lo que NO es un límite
 >
-> Los valores de $f(x)$ se acercan arbitrariamente a $L$ cuando $x$ toma valores cada vez más cercanos a $a$ (pero diferentes de $a$).
+> - **NO hace falta** que $f(a)$ exista.
+> - **NO importa** el valor de $f(a)$ si existe.
+> - **NO hace falta** que $x$ llegue exactamente a $a$.
 >
-> **Notación:** $$\lim_{x \to a} f(x) = L$$
+> Y lo que sí importa:
+>
+> - **SÍ importa** hacia dónde tienden los valores de $f(x)$.
+> - **SÍ hace falta** que $x$ se acerque a $a$ por el dominio.
+> - **SÍ debe existir** un valor al que se acercan $f(x)$, o al menos una tendencia bien definida.
 
-> [!info] 🖼️ ¿Qué es un Límite?
+> [!tip] 🔢 Aproximación por tablas de valores
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_01.svg]]
+> Cuando el límite no se resuelve por reglas, una tabla lo descubre:
 >
-> **Se lee así:** El diagrama es una cadena de **cuatro rectángulos** unidos por flechas, sin rombos: el primero marca el acercamiento de $x$ al punto de interés, el segundo es el paso de cálculo de $f(x)$, el tercero registra la aproximación de los valores y el cuarto cierra el recorrido con el límite ya fijado. Al no haber decisiones, el camino es único.
+> 1. **Crear tabla:** valores de $x$ acercándose a $a$ por ambos lados.
+> 2. **Calcular:** los valores correspondientes de $f(x)$.
+> 3. **Observar:** hacia qué valor tienden.
+> 4. **Concluir:** ese es el límite, si existe.
 >
-> **Por qué importa:** Fíjate en que el esquema separa el movimiento de $x$ del movimiento de $f(x)$: eso te deja claro que $x$ nunca tiene que *llegar* al punto de referencia y que lo que importa es el valor al que se acerca la salida. Te ahorra el error de sustituir $x = a$ cuando la función ni siquiera está definida ahí.
->
-> **Ejemplo:** Con $g(x) = x^2$ para $x \neq 2$ y $g(2) = 10$, el recorrido del diagrama dice que el límite en 2 sigue siendo 4, aunque el valor de la función en ese punto sea 10.
-
-> [!example] 🌈 Ejemplo Visual Simple Considera $f(x) = 2x + 1$ y queremos $\lim_{x \to 3} f(x)$
->
-> |$x$ acercándose a 3|$f(x) = 2x + 1$|
+> | $x$ acercándose a $3$ | $f(x)=2x+1$ |
 > |---|---|
-> |$x = 2.9$|$f(2.9) = 6.8$|
-> |$x = 2.99$|$f(2.99) = 6.98$|
-> |$x = 2.999$|$f(2.999) = 6.998$|
-> |$x = 3.001$|$f(3.001) = 7.002$|
-> |$x = 3.01$|$f(3.01) = 7.02$|
-> |$x = 3.1$|$f(3.1) = 7.2$|
+> | $2.9$ | $6.8$ |
+> | $2.99$ | $6.98$ |
+> | $2.999$ | $6.998$ |
+> | $3.001$ | $7.002$ |
+> | $3.01$ | $7.02$ |
+> | $3.1$ | $7.2$ |
 >
-> 🎯 **Observación:** Conforme $x$ se acerca a 3, $f(x)$ se acerca a 7
+> **Por qué importa:** la tabla es solo una pista, nunca una prueba. En el caso de $\lim_{x \to 0} \frac{\sin x}{x}$ la tabla sugiere $1$, pero el valor se demuestra aparte.
 >
-> Por tanto: $\lim_{x \to 3} (2x + 1) = 7$ ✨
+> **Ejemplo:** para $\lim_{x \to 0} \frac{\sin x}{x}$ los valores van de $0.998334$ a $0.999999$ por ambos lados, con $\frac{\sin x}{x}\to 1$.
 
-## 🗝 Conceptos Clave para Entender Límites ️
-
-> [!warning] ⚠️ Misconcepciones Importantes
+> [!info] 📝 El mismo enunciado, cinco formas
 >
-> ### 🚫 Lo que NO es un límite:
+> Todas dicen lo mismo:
 >
-> - **NO necesitamos** que $f(a)$ exista
-> - **NO importa** el valor de $f(a)$ si existe
-> - **NO necesitamos** que $x$ llegue exactamente a $a$
->
-> ### ✅ Lo que SÍ importa:
->
-> - **SÍ importa** hacia dónde tienden los valores de $f(x)$
-> - **SÍ necesitamos** que $x$ se acerque a $a$
-> - **SÍ debe existir** un valor específico al que se acercan $f(x)$
->
-
-> [!example] 🎪 Ejemplo con Función Discontinua Sea $g(x) = \begin{cases} x^2 & \text{si } x \neq 2 \ 10 & \text{si } x = 2 \end{cases}$
->
-> Para $\lim_{x \to 2} g(x)$:
->
-> |$x$ cerca de 2|$g(x)$|
-> |---|---|
-> |$x = 1.9$|$g(1.9) = 3.61$|
-> |$x = 1.99$|$g(1.99) = 3.9601$|
-> |$x = 2.01$|$g(2.01) = 4.0401$|
-> |$x = 2.1$|$g(2.1) = 4.41$|
->
-> 🎯 **Resultado:** $\lim_{x \to 2} g(x) = 4$
->
-> 📝 **Nota:** ¡Aunque $g(2) = 10$, el límite es 4! 🤯
-
-## 📊 Interpretación Gráfica
-
-> [!info] 📈 Lectura Visual de Límites En una gráfica, el límite se ve como:
->
-> - 👀 **Observamos** hacia dónde "apunta" la función cuando nos acercamos al punto
-> - 🎯 **No importa** si hay un "hueco" o "salto" en ese punto exacto
-> - ✨ **Importa** la "tendencia" o "dirección" de la función
-
-> [!info] 🖼️ Interpretación Gráfica
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_02.svg]]
->
-> **Se lee así:** Arriba se ve la caja con la gráfica de f(x), que baja a un rombo de decisión con la pregunta central: *hacia dónde apunta la curva cuando x se acerca a a?* Del rombo salen tres ramas: una a un valor concreto, otra a un crecimiento sin cota y una tercera a que no hay convergencia; cada rama baja a su propio casillero de veredicto, con el límite finito, el límite infinito o la **falta de límite**.
->
-> **Por qué importa:** Fíjate en que el diagrama separa de entrada tres resultados muy distintos: un valor concreto, un crecimiento sin cota o la ausencia de límite. Esto te evita decir 'no existe' cuando la función simplemente se va a infinito, y te obliga a mirar la gráfica antes de calcular.
->
-> **Ejemplo:** Un caso de la nota: `lim_{x \to 0} 1/x^2 = +∞` da asíntota vertical, mientras que `lim_{x \to 2} 1/(x-2)` **no existe** porque sus límites laterales son opuestos.
-
-## 🎭 Situaciones Comunes
-
-> [!note] 📚 Casos Típicos de Límites
->
-> ### 1️⃣ **Función Continua** 🌊
->
-> $\lim_{x \to a} f(x) = f(a)$
->
-> - La función no tiene "interrupciones"
-> - El límite coincide con el valor de la función
->
-> ### 2️⃣ **Función con Hueco** 🕳️
->
-> $\lim_{x \to a} f(x) = L$, pero $f(a)$ no existe
->
-> - Hay un "punto faltante" en la gráfica
-> - El límite existe pero la función no está definida ahí
->
-> ### 3️⃣ **Función con Salto** 📈📉
->
-> $\lim_{x \to a} f(x)$ no existe
->
-> - La función "salta" de un valor a otro
-> - Los límites laterales son diferentes
->
-> ### 4️⃣ **Límite Infinito** ♾️
->
-> $\lim_{x \to a} f(x) = \pm\infty$
->
-> - La función crece sin límite
-> - Hay una asíntota vertical
-
-## 🎯 Aproximación por Valores
-
-> [!tip] 🔢 Estrategia de Tablas de Valores Para encontrar un límite intuitivamente:
->
-> 1. **📊 Crear tabla:** Valores de $x$ acercándose a $a$ por ambos lados
-> 2. **🧮 Calcular:** Los valores correspondientes de $f(x)$
-> 3. **👀 Observar:** Hacia qué valor tienden $f(x)$
-> 4. **🎯 Concluir:** Ese es el límite (si existe)
->
-
-> [!example] 🧪 Ejemplo Práctico: $\lim_{x \to 0} \frac{\sin x}{x}$
->
-> |$x$|$\frac{\sin x}{x}$|
-> |---|---|
-> |$-0.1$|$0.998334...$|
-> |$-0.01$|$0.999983...$|
-> |$-0.001$|$0.999999...$|
-> |$0.001$|$0.999999...$|
-> |$0.01$|$0.999983...$|
-> |$0.1$|$0.998334...$|
->
-> 🎯 **Conclusión:** $\lim_{x \to 0} \frac{\sin x}{x} = 1$ ✨
->
-> 📝 **Nota:** Este es un límite fundamental muy importante!
-
-## 🗣 Lenguaje Matemático ️
-
-> [!info] 📝 Frases Equivalentes Todas estas expresiones significan lo mismo:
->
-> - "$\lim_{x \to a} f(x) = L$"
+> - $\lim_{x \to a} f(x) = L$
 > - "El límite de $f(x)$ cuando $x$ tiende a $a$ es $L$"
 > - "Cuando $x$ se acerca a $a$, $f(x)$ se acerca a $L$"
 > - "$f(x)$ tiende a $L$ cuando $x$ tiende a $a$"
 > - "$f(x) \to L$ cuando $x \to a$"
 
-## 🧠 Técnica de Estudio: Mnemotecnia "CERCA"
-
-> [!tip] 🎓 Para Recordar el Concepto de Límite
+> [!tip] 🎓 Mnemotecnia "CERCA"
 >
-> **C**ercanos: Los valores de $x$ están cerca de $a$ **E**xacto: No necesita llegar exactamente a $a$  
-> **R**esultado: Los $f(x)$ se acercan a un resultado $L$ **C**onvergencia: Los valores deben converger a $L$ **A**proximación: Es sobre aproximarse, no sobre llegar
-
-## ⚠ Errores Comunes ️
-
-> [!warning] 🚨 Trampas Frecuentes
->
-> ### ❌ Error 1: Confundir límite con valor de función
->
-> **Incorrecto:** "Si $f(2) = 5$, entonces $\lim_{x \to 2} f(x) = 5$" **Correcto:** El límite puede ser diferente al valor de la función
->
-> ### ❌ Error 2: Pensar que el límite requiere que la función esté definida
->
-> **Incorrecto:** "No puedo hallar el límite si la función no existe en ese punto" **Correcto:** El límite puede existir aunque la función no esté definida ahí
->
-> ### ❌ Error 3: Usar solo un lado para aproximarse
->
-> **Incorrecto:** Solo mirar valores desde la derecha o desde la izquierda **Correcto:** Verificar ambos lados para asegurar que convergen al mismo valor
-
-## 📚 Referencias
-
-> [!quote] 🔗 Notas Relacionadas
->
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Extensión del concepto
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/03 - Límites en Gráficas.md|03 - Límites en Gráficas.md]] - Interpretación visual detallada
-> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites.md|01 - Continuidad y Límites.md]] - Relación entre límites y continuidad
-> - 01 - Concepto y Definición Formal del Límite - Formalización rigurosa
-
-## 💡 Notas Recomendadas
-
-> [!note] 📖 Para Profundizar
->
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Casos simples
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Propiedades y leyes
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Casos más complejos
-> - Carpeta Aplicaciones de Límites - Usos en ciencias e ingeniería
+> - **C**ercanos: los valores de $x$ están cerca de $a$.
+> - **E**xacto: no hace falta llegar exactamente a $a$.
+> - **R**esultado: los valores de $f(x)$ se acercan a un resultado $L$.
+> - **C**onvergencia: los valores deben converger a $L$.
+> - **A**proximación: es sobre aproximarse, no sobre llegar.
 
 ---
 
+## 📋 Definiciones Formales
 
-# Definición Épsilon-Delta 🔬
-
-> [!tip] 🎯 Concepto Central
+> [!note] 📋 Definición — Límite (sentido intuitivo)
 >
-> La **definición épsilon-delta** es la formalización matemática rigurosa del concepto de límite. Es como establecer las "reglas del juego" de manera precisa: podemos acercarnos tanto como queramos al límite, siempre que nos acerquemos lo suficiente al punto de interés.
-
-## 📐 La Definición Formal
-
-> [!info] 🔬 Definición Rigurosa de Límite **Decimos que** $\lim_{x \to a} f(x) = L$ **si y solo si:**
+> Decimos que el **límite de $f(x)$ cuando $x$ se acerca a $a$ es $L$** si los valores de $f(x)$ se acercan arbitrariamente a $L$ cuando $x$ toma valores cada vez más cercanos a $a$ y diferentes de $a$.
 >
-> Para todo $\varepsilon > 0$, existe un $\delta > 0$ tal que:
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_01.svg]]
 >
-> $$\text{Si } 0 < |x - a| < \delta \text{, entonces } |f(x) - L| < \varepsilon$$
+> **Se lee así:** el diagrama es una cadena de cuatro rectángulos unidos por flechas, sin rombos: el primero marca el acercamiento de $x$ al punto, el segundo es el cálculo de $f(x)$, el tercero registra la aproximación de los valores y el cuarto cierra con el límite ya fijado. Al no haber decisiones, el camino es único.
 >
-> **En otras palabras:** No importa qué tan pequeño sea $\varepsilon$ (qué tan cerca queremos estar del límite), siempre podemos encontrar un $\delta$ (qué tan cerca debemos estar del punto) que garantice esa precisión.
+> **Por qué importa:** la secuencia separa el movimiento de $x$ del movimiento de $f(x)$. Eso deja claro que $x$ nunca tiene que llegar al punto y que lo que importa es el valor al que se acerca la salida. Te ahorra el error de sustituir $x=a$ cuando la función no está definida ahí.
+>
+> **Ejemplo:** para $g(x)=x^2$ con $g(2)=10$, el límite en $2$ sigue siendo $4$: el valor fijo del punto no entra en la definición.
 
-> [!info] 🖼️ La Definición Formal
+> [!note] 📋 Definición — Límite (formal $\varepsilon$-$\delta$)
+>
+> Se dice que $\lim_{x \to a} f(x) = L$ si y solo si: **para todo $\varepsilon > 0$ existe un $\delta > 0$** tal que
+>
+> $$\text{si } 0 < |x - a| < \delta \text{ entonces } |f(x) - L| < \varepsilon.$$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_03.svg]]
 >
-> **Se lee así:** Es una cadena de pasos encadenados: querer demostrar el límite, fijar un ε > 0 arbitrario, encontrar un δ > 0 apropiado y verificar la condición. El último paso es un rombo que pregunta *si se cumple para todo ε?*, y de él salen dos flechas rotuladas: una hacia la demostración lograda y otra hacia el fallo de la afirmación.
+> **Se lee así:** es una cadena de pasos encadenados: querer demostrar el límite, fijar un $\varepsilon > 0$ arbitrario, encontrar un $\delta > 0$ apropiado y verificar la condición. El último paso es un rombo que pregunta si se cumple para todo $\varepsilon$, y de él salen dos flechas rotuladas: una hacia la demostración lograda y otra hacia el fallo de la afirmación.
 >
-> **Por qué importa:** Este es el guion exacto de una demostración épsilon-delta: primero la tolerancia arbitraria y después el radio, nunca al revés. Seguirlo te evita el error típico de elegir un δ que dependa de x o de asumir el resultado que quieres probar.
+> **Por qué importa:** este es el guion exacto de una demostración $\varepsilon$-$\delta$. Primero la tolerancia arbitraria y después el radio, nunca al revés. Seguirlo evita el error típico de elegir un $\delta$ que dependa de $x$ o de asumir el resultado que quieres probar.
 >
-> **Ejemplo:** Para demostrar `lim_{x \to 3} (2x + 1) = 7` se toma ε > 0 arbitrario, se calcula `|f(x) - L| = 2|x - 3|` y se elige como radio `δ = ε/2`.
+> **Ejemplo:** para demostrar $\lim_{x \to 3} (2x + 1) = 7$ se toma $\varepsilon > 0$ arbitrario, se calcula $|f(x) - L| = 2|x - 3|$ y se elige $\delta = \varepsilon/2$.
 
-## 📊 Interpretación Geométrica
-
-> [!example] 🎨 Visualización Gráfica **La definición épsilon-delta se traduce en:**
->
-> - **📏 Banda horizontal:** $L - \varepsilon < f(x) < L + \varepsilon$
-> - **📏 Banda vertical:** $a - \delta < x < a + \delta$ (excluyendo $x = a$)
-> - **🎯 Condición:** Toda la función en la banda vertical debe quedar dentro de la banda horizontal
->
-> |Elemento|Significado Geométrico|Representación|
-> |---|---|---|
-> |$\varepsilon$|Mitad del ancho de la banda horizontal|$\pm \varepsilon$ alrededor de $L$|
-> |$\delta$|Mitad del ancho de la banda vertical|$\pm \delta$ alrededor de $a$|
-> |$\|f(x) - L\|$|Distancia vertical entre $f(x)$ y $L$|Altura desde la función al límite|
-> |$\|x - a\|$|Distancia horizontal entre $x$ y $a$|Distancia desde $x$ al punto de interés|
->
-
-> [!note] 🖼️ Interpretación Visual
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_04.svg]]
->
-> **Se lee así:** El esquema arranca en un punto, el par (a, L), del que salen dos ramas paralelas: una banda horizontal de tolerancia ε alrededor de L y una banda vertical de alcance δ alrededor de a. La rama vertical exige que toda x dentro de la franja cumpla la condición y la horizontal que f(x) quede dentro; ambas desembocan en la misma casilla de **definición satisfecha**.
->
-> **Por qué importa:** Fíjate en que las dos bandas se cruzan en un mismo punto: la vertical te dice dónde mirar y la horizontal qué tan cerca debes quedar. Esta es la lectura geométrica de `0 < |x - a| < δ` y `|f(x) - L| < ε`, y con ella justificas el δ que eliges.
->
-> **Ejemplo:** Para `lim_{x \to 2} x^2 = 4` la banda de δ alrededor de 2 debe ser tan angosta que toda la curva dentro de ella quede dentro de la banda de ε alrededor de 4, y el trabajo da `δ = min{1, ε/5}`.
-
-## 🔍 Análisis de los Componentes
-
-> [!info] 🧮 Disección de la Definición
->
-> ### 📏 Épsilon ($\varepsilon$) - La Tolerancia
->
-> - **🎯 Representa:** Qué tan cerca queremos que $f(x)$ esté de $L$
-> - **📊 Controla:** La precisión vertical (en el eje $y$)
-> - **🔢 Rango:** Cualquier número positivo, por pequeño que sea
-> - **💭 Interpretación:** "Margen de error" permitido
->
-> ### 📏 Delta ($\delta$) - La Respuesta
->
-> - **🎯 Representa:** Qué tan cerca de $a$ debe estar $x$
-> - **📊 Controla:** El rango horizontal (en el eje $x$)
-> - **🔗 Dependencia:** Generalmente depende de $\varepsilon$: $\delta = \delta(\varepsilon)$
-> - **💭 Interpretación:** "Radio de acción" alrededor de $a$
->
-
-> [!warning] ⚠️ Condiciones Importantes
->
-> ### 🚫 Exclusiones Críticas
->
-> - **$0 < |x - a|$:** Excluimos $x = a$ (no nos importa $f(a)$)
-> - **$x \neq a$:** La función puede no estar definida en $a$
-> - **$\varepsilon > 0$:** Solo consideramos tolerancias positivas
-> - **$\delta > 0$:** Solo consideramos rangos positivos
-
-## 🎯 Estrategia de Demostración
-
-> [!tip] 📝 Método Sistemático para Demostraciones
->
-> ### **Paso 1: Configuración Inicial** 🎬
->
-> - Sea $\varepsilon > 0$ arbitrario (dado)
-> - Queremos encontrar $\delta > 0$ tal que la implicación se cumpla
->
-> ### **Paso 2: Análisis Algebraico** 🧮
->
-> - Partimos de $|f(x) - L| < \varepsilon$
-> - Manipulamos algebraicamente para obtener una condición en $|x - a|$
-> - Identificamos qué $\delta$ funcionará
->
-> ### **Paso 3: Elección de Delta** 🎯
->
-> - Elegimos $\delta$ basado en el análisis anterior
-> - A menudo $\delta = \min{\text{valor}_1, \text{valor}_2, ...}$
->
-> ### **Paso 4: Verificación** ✅
->
-> - Asumimos $0 < |x - a| < \delta$
-> - Demostramos que esto implica $|f(x) - L| < \varepsilon$
-
-## 📚 Ejemplos Fundamentales
-
-### Ejemplo 1: Función Lineal 📈
-
-> [!example] 🎯 Demostrar que $\lim_{x \to 3} (2x + 1) = 7$
->
-> **Configuración:**
->
-> - Queremos probar: $\lim_{x \to 3} (2x + 1) = 7$
-> - Sea $\varepsilon > 0$ arbitrario
->
-> **Análisis:** $|f(x) - L| = |(2x + 1) - 7| = |2x - 6| = 2|x - 3|$
->
-> **Queremos:** $2|x - 3| < \varepsilon$ **Esto significa:** $|x - 3| < \frac{\varepsilon}{2}$
->
-> **Elección de Delta:** Elegimos $\delta = \frac{\varepsilon}{2}$
->
-> **Verificación:** Si $0 < |x - 3| < \delta = \frac{\varepsilon}{2}$, entonces: $|f(x) - L| = 2|x - 3| < 2 \cdot \frac{\varepsilon}{2} = \varepsilon$ ✅
->
-> **Conclusión:** El límite está demostrado 🎉
-
-### Ejemplo 2: Función Cuadrática 📊
-
-> [!example] 🎯 Demostrar que $\lim_{x \to 2} x^2 = 4$
->
-> ### Configuración:
->
-> - Queremos probar: $\lim_{x \to 2} x^2 = 4$
-> - Sea $\varepsilon > 0$ arbitrario
->
-> ### Análisis:
-> $$
->
-> |f(x) - L| = |x^2 - 4| = |(x - 2)(x + 2)| = |x - 2| \cdot |x + 2|
-> $$
->
-> ### Restricción preliminar:
->
-> Supongamos $|x - 2| < 1$, entonces $1 < x < 3$, así que $3 < x + 2 < 5$  
-> Por tanto: $|x + 2| < 5$
->
-> ### Condición deseada:
-> $$
->
-> |x^2 - 4| = |x - 2| \cdot |x + 2| < |x - 2| \cdot 5 < \varepsilon
-> $$
->
-> Esto requiere: $|x - 2| < \frac{\varepsilon}{5}$
->
-> ### Elección de Delta:
-> $$
-> \delta = \min\left\{1, \frac{\varepsilon}{5}\right\}
-> $$
->
-> ### Verificación:
->
-> Si $0 < |x - 2| < \delta = \min\left\{1, \frac{\varepsilon}{5}\right\}$, entonces:
->
-> - $|x - 2| < 1$, lo que implica $1 < x < 3$, por tanto $3 < x + 2 < 5$, así $|x + 2| < 5$
-> - $|x - 2| < \frac{\varepsilon}{5}$
->
-> Por tanto:
-> $$
->
-> |x^2 - 4| = |x - 2| \cdot |x + 2| < \frac{\varepsilon}{5} \cdot 5 = \varepsilon \quad \blacksquare
-> $$
->
-
-### Ejemplo 3: Función Racional 📉
-
-> [!example] 🎯 Demostrar que $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$
->
-> **Configuración:**
->
-> - Función: $f(x) = \frac{x^2 - 1}{x - 1} = \frac{(x-1)(x+1)}{x-1} = x + 1$ (para $x \neq 1$)
-> - Queremos probar: $\lim_{x \to 1} f(x) = 2$
->
-> **Análisis:** Para $x \neq 1$: $|f(x) - L| = |(x + 1) - 2| = |x - 1|$
->
-> **Condición:** $|x - 1| < \varepsilon$
->
-> **Elección de Delta:** $\delta = \varepsilon$
->
-> **Verificación:** Si $0 < |x - 1| < \delta = \varepsilon$, entonces: $|f(x) - 2| = |x - 1| < \varepsilon$ ✅
->
-> 📝 **Nota:** La simplicidad surge porque la función se simplifica a una forma lineal.
-
-## 📜 Propiedades y Teoremas
-
-> [!info] ⚖️ Propiedades Fundamentales
->
-> ### 🎯 Unicidad del Límite
->
-> **Si** $\lim_{x \to a} f(x) = L_1$ **y** $\lim_{x \to a} f(x) = L_2$, **entonces** $L_1 = L_2$
->
-> ### ➕ Límite de la Suma
->
-> **Si** $\lim_{x \to a} f(x) = L$ **y** $\lim_{x \to a} g(x) = M$, **entonces:** $\lim_{x \to a} [f(x) + g(x)] = L + M$
->
-> ### ✖️ Límite del Producto
->
-> $\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$
->
-> ### ➗ Límite del Cociente
->
-> $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}$ (si $M \neq 0$)
-
-## 🌍 Aplicaciones de la Definición
-
-> [!example] 🔬 Demostrar que un Límite NO Existe **Para probar que** $\lim_{x \to a} f(x)$ **no existe:**
->
-> Encontramos un $\varepsilon_0 > 0$ tal que para cualquier $\delta > 0$, existe al menos un $x$ con $0 < |x - a| < \delta$ pero $|f(x) - L| \geq \varepsilon_0$
->
-> **Ejemplo:** Función escalón $f(x) = \begin{cases} 0 & \text{si } x < 0 \ 1 & \text{si } x \geq 0 \end{cases}$
->
-> **En $x = 0$:** No importa qué valor de $L$ propongamos, siempre podemos encontrar puntos cerca de 0 donde $f(x)$ está lejos de $L$.
-
-## ↔ Relación con Límites Laterales ️
-
-> [!info] 🔗 Conexión Épsilon-Delta con Límites Laterales
->
-> **Límite por la izquierda:** $\lim_{x \to a^-} f(x) = L$ Para todo $\varepsilon > 0$, existe $\delta > 0$ tal que: Si $a - \delta < x < a$, entonces $|f(x) - L| < \varepsilon$
->
-> **Límite por la derecha:** $\lim_{x \to a^+} f(x) = L$ Para todo $\varepsilon > 0$, existe $\delta > 0$ tal que: Si $a < x < a + \delta$, entonces $|f(x) - L| < \varepsilon$
-
-## ⚠ Errores Comunes ️
-
-> [!warning] 🚨 Trampas en Demostraciones Épsilon-Delta
->
-> ### ❌ Error 1: Delta dependiente de x
->
-> **Problema:** Elegir $\delta$ que dependa de $x$ **Correcto:** $\delta$ solo debe depender de $\varepsilon$ (y posiblemente de $a$ y $L$)
->
-> ### ❌ Error 2: Asumir el resultado
->
-> **Problema:** Comenzar asumiendo $|f(x) - L| < \varepsilon$ **Correcto:** Comenzar con la condición de $\delta$ y llegar a la de $\varepsilon$
->
-> ### ❌ Error 3: No manejar casos extremos
->
-> **Problema:** No considerar restricciones adicionales necesarias **Correcto:** Usar $\min$ para combinar múltiples restricciones en $\delta$
-
-## 📖 Importancia Histórica
-
-> [!note] 🏛️ Contexto Histórico **Desarrollo por:**
->
-> - **Karl Weierstrass** (1815-1897) - Formalización rigurosa
-> - **Augustin-Louis Cauchy** (1789-1857) - Trabajos preliminares
-> - **Bernard Bolzano** (1781-1848) - Contribuciones tempranas
->
-> **Importancia:**
->
-> - 🔬 Eliminó la vaguedad del concepto intuitivo
-> - 📐 Permitió demostraciones rigurosas
-> - 🏗️ Base para todo el análisis matemático moderno
-> - 🌍 Fundamento para derivadas, integrales y continuidad
-
-## 🧠 Técnica de Estudio: Mnemotecnia "ÉPSILON"
-
-> [!tip] 🎓 Para Recordar el Proceso de Demostración
->
-> **É**ligE un épsilon arbitrario > 0 **P**artE de la condición |f(x) - L| < ε **S**implifica algebraicamente la expresión **I**dentifica la relación con |x - a| **L**ogra una condición de la forma |x - a| < algo **O**ptimiza eligiendo δ apropiado **N**avega la verificación final
-
-## 📚 Referencias
-
-> [!quote] 🔗 Notas Relacionadas
->
-> - 01 - Concepto y Definición Formal del Límite - Base conceptual informal
-> - Límites por la Izquierda y Derecha - Extensión lateral
-> - Continuidad de Funciones - Aplicación directa
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Propiedades demostradas rigurosamente
-
-## 💡 Notas Recomendadas
-
-> [!note] 📖 Para Profundizar
->
-> - Análisis Real - Contexto matemático completo
-> - Topología Básica - Conceptos de vecindades
-> - Historia del Cálculo - Desarrollo histórico
-> - Demostraciones Matemáticas - Técnicas de prueba
-> - Fundamentos de Análisis - Teoría avanzada de límites
-> - Espacios Métricos - Generalización abstracta
-
----
-
-
-# 📏 Definición Formal del Límite para Asíntotas
-
-## 🎯 Fundamentos de Límites Infinitos
-
-> [!info] 💡 Introducción a las Definiciones Formales Las **definiciones formales** de límites para asíntotas extienden el concepto clásico de límite (definición épsilon-delta) a casos donde:
->
-> - **Variable tiende al infinito:** $x \to \pm\infty$ (asíntotas horizontales)
-> - **Función tiende al infinito:** $f(x) \to \pm\infty$ (asíntotas verticales)
->
-> **Notación clave:**
->
-> - **M:** Número arbitrariamente grande (para límites infinitos)
-> - **N:** Número arbitrariamente grande (para límites al infinito)
-> - **δ:** Delta, distancia pequeña alrededor de un punto
-> - **ε:** Épsilon, tolerancia pequeña para valores finitos
-
-### 🔍 Recordatorio: Definición Épsilon-Delta Clásica
-
-> [!note] 📚 Definición Base (Límites Finitos)
->
-> **Para límites finitos:** $\lim_{x \to a} f(x) = L$
->
-> **Definición:** Para todo $\varepsilon > 0$, existe $\delta > 0$ tal que:
->
-> $$\text{Si } 0 < |x - a| < \delta \text{ entonces } |f(x) - L| < \varepsilon$$
->
-> **Interpretación:**
->
-> - $\varepsilon$ controla qué tan cerca está $f(x)$ de $L$
-> - $\delta$ controla qué tan cerca está $x$ de $a$
->
-> Esta definición es la base para extender a casos infinitos.
-
-## 🔺 Asíntotas Verticales - Definición Formal
-
-### ➕ Límite Infinito Positivo
-
-> [!example] 📈 Definición: $\lim_{x \to a} f(x) = +\infty$
->
-> **Definición formal:** Para todo $M > 0$, existe $\delta > 0$ tal que:
->
-> $$\text{Si } 0 < |x - a| < \delta \text{ entonces } f(x) > M$$
->
-> **Interpretación geométrica:**
->
-> - No importa qué tan grande sea $M$, podemos hacer que $f(x)$ sea aún más grande
-> - Esto ocurre cuando $x$ está suficientemente cerca de $a$
->
-> **Elementos clave:**
->
-> - **M:** Cualquier número positivo grande que elijamos
-> - **δ:** Distancia alrededor de $x = a$ que garantiza $f(x) > M$
-> - **Condición:** $0 < |x - a| < \delta$ (excluimos $x = a$)
->
-> **Ejemplo típico:** $\lim_{x \to 0} \frac{1}{x^2} = +\infty$
-
-### ➖ Límite Infinito Negativo
-
-> [!example] 📉 Definición: $\lim_{x \to a} f(x) = -\infty$
->
-> **Definición formal:** Para todo $M > 0$, existe $\delta > 0$ tal que:
->
-> $$\text{Si } 0 < |x - a| < \delta \text{ entonces } f(x) < -M$$
->
-> **Nota importante:** Usamos $-M$ donde $M > 0$, así $f(x)$ es más negativo que $-M$
->
-> **Interpretación:**
->
-> - $f(x)$ se vuelve arbitrariamente negativa (grande en valor absoluto)
-> - Cuando $x$ se acerca a $a$
->
-> **Ejemplo típico:** $\lim_{x \to 0^+} \frac{-1}{x} = -\infty$
-
-### 🔄 Límites Laterales Infinitos
-
-> [!tip] 🎯 Límites Unilaterales Infinitos
->
-> **Por la derecha:** $\lim_{x \to a^+} f(x) = +\infty$
->
-> Para todo $M > 0$, existe $\delta > 0$ tal que: $$\text{Si } a < x < a + \delta \text{ entonces } f(x) > M$$
->
-> **Por la izquierda:** $\lim_{x \to a^-} f(x) = +\infty$
->
-> Para todo $M > 0$, existe $\delta > 0$ tal que: $$\text{Si } a - \delta < x < a \text{ entonces } f(x) > M$$
->
-> **Asíntota vertical:** Existe si al menos uno de los límites laterales es infinito.
-
-## 📐 Asíntotas Horizontales - Definición Formal
-
-### ➡️ Límite al Infinito Positivo
-
-> [!success] 📊 Definición: $\lim_{x \to +\infty} f(x) = L$
->
-> **Definición formal:** Para todo $\varepsilon > 0$, existe $N > 0$ tal que:
->
-> $$\text{Si } x > N \text{ entonces } |f(x) - L| < \varepsilon$$
->
-> **Interpretación:**
->
-> - Cuando $x$ es suficientemente grande, $f(x)$ está arbitrariamente cerca de $L$
-> - $L$ es la **asíntota horizontal** por la derecha
->
-> **Elementos clave:**
->
-> - **N:** Umbral grande; para $x > N$ la función se comporta como queremos
-> - **ε:** Tolerancia pequeña para la distancia entre $f(x)$ y $L$
-> - **L:** Valor límite (asíntota horizontal)
->
-> **Ejemplo:** $\lim_{x \to +\infty} \frac{1}{x} = 0$
-
-### ⬅️ Límite al Infinito Negativo
-
-> [!success] 📊 Definición: $\lim_{x \to -\infty} f(x) = L$
->
-> **Definición formal:** Para todo $\varepsilon > 0$, existe $N > 0$ tal que:
->
-> $$\text{Si } x < -N \text{ entonces } |f(x) - L| < \varepsilon$$
->
-> **Nota:** Usamos $-N$ donde $N > 0$, así $x$ es muy negativo
->
-> **Interpretación:**
->
-> - Cuando $x$ es suficientemente negativo, $f(x)$ se acerca a $L$
-> - $L$ es la **asíntota horizontal** por la izquierda
-
-### ♾️ Límites Infinitos al Infinito
-
-> [!warning] ⚡ Definiciones para Casos Infinito-Infinito
->
-> **1. $\lim_{x \to +\infty} f(x) = +\infty$**
->
-> Para todo $M > 0$, existe $N > 0$ tal que: $$\text{Si } x > N \text{ entonces } f(x) > M$$
->
-> **2. $\lim_{x \to +\infty} f(x) = -\infty$**
->
-> Para todo $M > 0$, existe $N > 0$ tal que: $$\text{Si } x > N \text{ entonces } f(x) < -M$$
->
-> **3. $\lim_{x \to -\infty} f(x) = +\infty$**
->
-> Para todo $M > 0$, existe $N > 0$ tal que: $$\text{Si } x < -N \text{ entonces } f(x) > M$$
->
-> **4. $\lim_{x \to -\infty} f(x) = -\infty$**
+> [!note] 📋 Definición — Límite por la izquierda
 >
-> Para todo $M > 0$, existe $N > 0$ tal que: $$\text{Si } x < -N \text{ entonces } f(x) < -M$$
-
-## 📊 Tabla Resumen de Definiciones
-
-> [!note] 📋 Compendio de Definiciones Formales
+> Se dice que $\lim_{x \to a^-} f(x) = L$ si para todo $\varepsilon > 0$ existe $\delta > 0$ tal que
 >
-> |Tipo de Límite|Notación|Definición Formal|Variables|
-> |---|---|---|---|
-> |**Finito → Finito**|$\lim_{x \to a} f(x) = L$|$\|f(x) - L\| < \varepsilon$ cuando $0 < \|x - a\| < \delta$|$\varepsilon, \delta$|
-> |**Finito → +∞**|$\lim_{x \to a} f(x) = +\infty$|$f(x) > M$ cuando $0 < \|x - a\| < \delta$|$M, \delta$|
-> |**Finito → -∞**|$\lim_{x \to a} f(x) = -\infty$|$f(x) < -M$ cuando $0 < \|x - a\| < \delta$|$M, \delta$|
-> |**+∞ → Finito**|$\lim_{x \to +\infty} f(x) = L$|$\|f(x) - L\| < \varepsilon$ cuando $x > N$|$\varepsilon, N$|
-> |**-∞ → Finito**|$\lim_{x \to -\infty} f(x) = L$|$\|f(x) - L\| < \varepsilon$ cuando $x < -N$|$\varepsilon, N$|
-> |**+∞ → +∞**|$\lim_{x \to +\infty} f(x) = +\infty$|$f(x) > M$ cuando $x > N$|$M, N$|
-> |**+∞ → -∞**|$\lim_{x \to +\infty} f(x) = -\infty$|$f(x) < -M$ cuando $x > N$|$M, N$|
-
-## 🧠 Técnica de Estudio: Método "EMDN"
-
-> [!tip] 🎓 Mnemotecnia "EMDN"
+> $$\text{si } a - \delta < x < a \text{ entonces } |f(x) - L| < \varepsilon.$$
 >
-> **E** - **E**légir la definición correcta **M** - **M** o **N** según el tipo de límite **D** - **D**elta para límites en puntos finitos **N** - **N**úmero grande para límites al infinito
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_09.svg]]
 >
-> **Frase nemotécnica:** _"Escojo Métodos Definidos Numéricamente"_
+> **Se lee así:** el esquema arranca en el acercamiento por la izquierda, luego fija un $\varepsilon > 0$ y busca un $\delta > 0$; con el radio en mano toma los $x$ que cumplen $a - \delta < x < a$, comprueba que la distancia vertical de $f(x)$ a $L$ queda por debajo de $\varepsilon$ y concluye que el límite izquierdo es $L$.
 >
-> **Guía de decisión:**
+> **Por qué importa:** solo cambia la condición sobre $x$: la banda vertical es unilateral. Es la que permite decidir si un límite existe y, sobre todo, detectar saltos, que son la diferencia entre una asíntota vertical con salto y una simple.
 >
-> - Si $x \to a$ (finito) → usar **δ** (delta)
-> - Si $x \to \pm\infty$ → usar **N**
-> - Si $f(x) \to \pm\infty$ → usar **M**
-> - Si $f(x) \to L$ (finito) → usar **ε** (épsilon)
-
-## 🔧 Ejemplos Detallados de Demostración
-
-### 📊 Ejemplo 1: Asíntota Vertical
+> **Ejemplo:** $\lim_{x \to 1^-} \frac{1}{x-1} = -\infty$: basta con que $x$ esté por debajo de $1$ y cercana a $1$.
 
-> [!example] 📈 Demostrar: $\lim_{x \to 0^+} \frac{1}{x} = +\infty$
+> [!note] 📋 Definición — Límite por la derecha
 >
-> **Problema:** Usar la definición formal para demostrar que $\frac{1}{x}$ tiende a $+\infty$ cuando $x$ se acerca a $0$ por la derecha.
+> Se dice que $\lim_{x \to a^+} f(x) = L$ si para todo $\varepsilon > 0$ existe $\delta > 0$ tal que
 >
-> **Demostración:**
+> $$\text{si } a < x < a + \delta \text{ entonces } |f(x) - L| < \varepsilon.$$
 >
-> **Paso 1:** Establecer lo que debemos probar Para todo $M > 0$, debemos encontrar $\delta > 0$ tal que: $$\text{Si } 0 < x < \delta \text{ entonces } \frac{1}{x} > M$$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_10.svg]]
 >
-> **Paso 2:** Trabajo algebraico Queremos $\frac{1}{x} > M$, donde $x > 0$.
+> **Se lee así:** el esquema es el espejo del anterior: el acercamiento es por la derecha, se fija $\varepsilon > 0$, se busca $\delta > 0$, se toman los $x$ con $a < x < a + \delta$ y se comprueba que $f(x)$ cae dentro de la banda de $\varepsilon$.
 >
-> Esto es equivalente a $x < \frac{1}{M}$ (al invertir, se cambia el sentido)
+> **Por qué importa:** la condición sobre $x$ se escribe del lado contrario al de la izquierda. Cometer ese intercambio es el error que hace pasar por alto un límite que sí existe.
 >
-> **Paso 3:** Elegir δ Tomemos $\delta = \frac{1}{M}$
->
-> **Paso 4:** Verificación Si $0 < x < \delta = \frac{1}{M}$, entonces: $$x < \frac{1}{M} \Rightarrow \frac{1}{x} > M$$
->
-> **Conclusión:** Para cualquier $M > 0$, con $\delta = \frac{1}{M}$ se cumple la definición. ∎
-
-### 📊 Ejemplo 2: Asíntota Horizontal
+> **Ejemplo:** $\lim_{x \to 2^+} \frac{1}{x-2} = +\infty$: con $x$ justo a la derecha de $2$ el denominador es positivo y pequeño.
 
-> [!example] 📉 Demostrar: $\lim_{x \to +\infty} \frac{2x + 1}{x + 3} = 2$
->
-> **Problema:** Demostrar usando la definición formal que la función tiene asíntota horizontal en $y = 2$.
->
-> **Demostración:**
->
-> **Paso 1:** Establecer lo que debemos probar Para todo $\varepsilon > 0$, debemos encontrar $N > 0$ tal que: $$\text{Si } x > N \text{ entonces } \left|\frac{2x + 1}{x + 3} - 2\right| < \varepsilon$$
+> [!note] 📋 Definición — Límite (existencia y unicidad)
 >
-> **Paso 2:** Simplificar la expresión $$\left|\frac{2x + 1}{x + 3} - 2\right| = \left|\frac{2x + 1 - 2(x + 3)}{x + 3}\right|$$ $$= \left|\frac{2x + 1 - 2x - 6}{x + 3}\right| = \left|\frac{-5}{x + 3}\right| = \frac{5}{x + 3}$$
+> El límite existe cuando los dos laterales convergen al mismo número: $\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L$.
 >
-> (Nota: $x + 3 > 0$ para $x$ suficientemente grande)
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_12.svg]]
 >
-> **Paso 3:** Establecer la desigualdad Queremos $\frac{5}{x + 3} < \varepsilon$
+> **Se lee así:** el esquema parte de un límite supuesto $L_1$, fija $\varepsilon$ como la mitad de la distancia entre $L_1$ y $L_2$ y hace que $f(x)$ deba estar cerca de $L_1$ y a la vez cerca de $L_2$ cerca de $a$. El rombo pregunta si las dos tolerancias son incompatibles: si lo son, la conclusión es que $L_1 = L_2$.
 >
-> Esto es equivalente a $x + 3 > \frac{5}{\varepsilon}$
+> **Por qué importa:** la unicidad no es un lujo: si existieran dos valores distintos, una misma bola de $\varepsilon$ sería imposible de cumplir. Así se justifica que buscar el límite sea razonable y que el método del emparedado no dé resultados contradictorios.
 >
-> Es decir, $x > \frac{5}{\varepsilon} - 3$
->
-> **Paso 4:** Elegir N Tomemos $N = \max\left{\frac{5}{\varepsilon} - 3, 1\right}$
->
-> (El máximo asegura que $N > 0$ y que $x + 3 > 0$)
->
-> **Paso 5:** Verificación Si $x > N$, entonces $x > \frac{5}{\varepsilon} - 3$, por lo que: $$x + 3 > \frac{5}{\varepsilon} \Rightarrow \frac{5}{x + 3} < \varepsilon$$
->
-> **Conclusión:** Para cualquier $\varepsilon > 0$, con $N = \max\left{\frac{5}{\varepsilon} - 3, 1\right}$ se cumple la definición. ∎
+> **Ejemplo:** $\lim_{x \to 1} \frac{x^2-1}{x-1}$ vale $2$, no $0$ ni $3$: hay un solo valor posible, $2$.
 
-### 📊 Ejemplo 3: Límite Infinito al Infinito
-
-> [!example] 🚀 Demostrar: $\lim_{x \to +\infty} x^2 = +\infty$
->
-> **Problema:** Demostrar que $x^2$ crece sin límite cuando $x \to +\infty$.
+> [!note] 📋 Definición — Límite infinito
 >
-> **Demostración:**
+> Se dice que $\lim_{x \to a} f(x) = +\infty$ si para todo $M > 0$ existe $\delta > 0$ tal que
 >
-> **Paso 1:** Establecer lo que debemos probar Para todo $M > 0$, debemos encontrar $N > 0$ tal que: $$\text{Si } x > N \text{ entonces } x^2 > M$$
+> $$\text{si } 0 < |x - a| < \delta \text{ entonces } f(x) > M.$$
 >
-> **Paso 2:** Análisis algebraico Queremos $x^2 > M$
->
-> Como $x > 0$ (para $x$ suficientemente grande), esto es equivalente a: $$x > \sqrt{M}$$
->
-> **Paso 3:** Elegir N Tomemos $N = \sqrt{M}$
->
-> **Paso 4:** Verificación Si $x > N = \sqrt{M}$, entonces: $$x > \sqrt{M} \Rightarrow x^2 > M$$
->
-> **Conclusión:** Para cualquier $M > 0$, con $N = \sqrt{M}$ se cumple la definición. ∎
-
-## 🎨 Visualización de las Definiciones
-
-### 📊 Diagrama para Asíntotas Verticales
-
-> [!info] 🖼️ Diagrama para Asíntotas Verticales
+> Con $f(x) < -M$ en la desigualdad se define $\lim_{x \to a} f(x) = -\infty$.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_05.svg]]
 >
-> **Se lee así:** El diagrama parte de que x se acerca a a y pasa por un rombo que separa según la tendencia de la función: hacia +∞ o hacia -∞. Cada rama repite la misma secuencia lógica: un M > 0 arbitrario, un δ > 0 que lo garantiza y la desigualdad que se exige dentro de la franja; las dos vuelven a juntarse en la casilla de **asíntota vertical**.
+> **Se lee así:** el diagrama parte de que $x$ se acerca a $a$ y pasa por un rombo que separa según la tendencia de la función: hacia $+\infty$ o hacia $-\infty$. Cada rama repite la misma secuencia lógica: un $M > 0$ arbitrario, un $\delta > 0$ que lo garantiza y la desigualdad que se exige dentro de la franja; las dos vuelven a juntarse en la casilla de **asíntota vertical**.
 >
-> **Por qué importa:** Aquí el papel del ε lo juega un M grande y arbitrario, y la condición es una desigualdad sin valor absoluto. Te sirve para evitar el error más común de esta sección: escribir `f(x) > -M` cuando el límite es -∞, donde corresponde `f(x) < -M`.
+> **Por qué importa:** aquí el papel del $\varepsilon$ lo juega un $M$ grande y arbitrario, y la condición es una desigualdad sin valor absoluto. Es el motivo del error más común de esta sección: escribir $f(x) > -M$ cuando el límite es $-\infty$, donde corresponde $f(x) < -M$.
 >
-> **Ejemplo:** Un caso de la nota: para `lim_{x \to 0^+} 1/x = +∞` se elige `δ = 1/M` y se cumple que `0 < x < δ` implica `1/x > M` para todo M > 0.
+> **Ejemplo:** para $\lim_{x \to 0^+} \frac{1}{x} = +\infty$ se elige $\delta = 1/M$ y se cumple que $0 < x < \delta$ implica $\frac{1}{x} > M$ para todo $M > 0$.
 
-### 📊 Diagrama para Asíntotas Horizontales
+> [!note] 📋 Definición — Límite lateral infinito
+>
+> Se dice que $\lim_{x \to a^+} f(x) = +\infty$ si para todo $M > 0$ existe $\delta > 0$ tal que
+>
+> $$\text{si } a < x < a + \delta \text{ entonces } f(x) > M.$$
+>
+> En $\lim_{x \to a^-} f(x) = +\infty$ la condición se sustituye por $a - \delta < x < a$. Existe una asíntota vertical cuando al menos uno de los límites laterales es infinito.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_07.svg]]
+>
+> **Se lee así:** el esquema arranca en el acercamiento por un solo lado y pasa por un rombo sobre la dirección: por la derecha queda la condición $a < x < a + \delta$ y por la izquierda $a - \delta < x < a$. Las dos ramas se juntan en una sola exigencia, para todo $M > 0$ con $f(x) > M$ o $f(x) < -M$, y cierran en la conclusión de límite lateral infinito.
+>
+> **Por qué importa:** una vertical puede nacer de un solo lado. Por eso un salto con infinitos opuestos no se describe como "asíntota vertical simple" sino como vertical con salto, y porque una discontinuidad evitable no genera asíntota.
+>
+> **Ejemplo:** $\lim_{x \to 1^-} \frac{1}{x-1} = -\infty$ y $\lim_{x \to 1^+} \frac{1}{x-1} = +\infty$: $x=1$ es asíntota vertical aunque los laterales signen distinto.
 
-> [!info] 🖼️ Diagrama para Asíntotas Horizontales
+> [!note] 📋 Definición — Límite al infinito
+>
+> Se dice que $\lim_{x \to +\infty} f(x) = L$ si para todo $\varepsilon > 0$ existe $N > 0$ tal que
+>
+> $$\text{si } x > N \text{ entonces } |f(x) - L| < \varepsilon.$$
+>
+> En $\lim_{x \to -\infty} f(x) = L$ la condición se sustituye por $x < -N$ con $N > 0$.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_06.svg]]
 >
-> **Se lee así:** El esquema arranca con x tendiendo a infinito y pasa por un rombo sobre la dirección, hacia +∞ o hacia -∞. Cada lado repite el patrón formal con un ε > 0 arbitrario, un N > 0 que lo acompaña y la condición sobre x mayor que N o menor que -N; las dos ramas concluyen en la misma casilla de **asíntota horizontal y = L**.
+> **Se lee así:** el esquema arranca con $x$ tendiendo a infinito y pasa por un rombo sobre la dirección, hacia $+\infty$ o hacia $-\infty$. Cada lado repite el patrón formal con un $\varepsilon > 0$ arbitrario, un $N > 0$ que lo acompaña y la condición sobre $x$ mayor que $N$ o menor que $-N$; las dos ramas concluyen en la misma casilla de **asíntota horizontal $y = L$**.
 >
-> **Por qué importa:** Cuando x se va al infinito, δ ya no sirve: ese papel lo cumple N, y como el límite sigue siendo finito se mantiene ε como tolerancia. Te evita mezclar M con N, el error número uno de esta sección, y te muestra que la asíntota horizontal no depende del lado.
+> **Por qué importa:** cuando $x$ se va al infinito el $\delta$ ya no sirve: ese papel lo cumple $N$, y como el límite sigue siendo finito se mantiene $\varepsilon$ como tolerancia. Evita mezclar $M$ con $N$ y muestra que la asíntota horizontal no depende del lado.
 >
-> **Ejemplo:** Para `lim_{x \to +\infty} (2x + 1)/(x + 3) = 2` se simplifica la diferencia a `5/(x + 3)` y se toma como umbral `N = max{5/ε - 3, 1}`, para que x + 3 sea positivo.
+> **Ejemplo:** para $\lim_{x \to +\infty} \frac{2x+1}{x+3} = 2$ se simplifica la diferencia a $\frac{5}{x+3}$ y se toma como umbral $N = \max\{\frac{5}{\varepsilon} - 3,\, 1\}$, para que $x+3$ sea positivo.
 
-## ⚠️ Errores Comunes en Demostraciones
-
-> [!warning] 🚫 Errores Frecuentes
+> [!note] 📋 Definición — Límite infinito al infinito
 >
-> **Error 1: Confundir M y N**
+> Se dice que $\lim_{x \to +\infty} f(x) = +\infty$ si para todo $M > 0$ existe $N > 0$ tal que
 >
-> - ❌ Usar M para límites al infinito
-> - ✅ M para función infinita, N para variable infinita
+> $$\text{si } x > N \text{ entonces } f(x) > M.$$
 >
-> **Error 2: Signos en límites negativos**
+> Las otras tres variantes se escriben cambiando $M$ por $-M$ en la conclusión, o $x > N$ por $x < -N$.
 >
-> - ❌ $f(x) > -M$ para límite $-\infty$
-> - ✅ $f(x) < -M$ para límite $-\infty$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_08.svg]]
 >
-> **Error 3: Dominios incorrectos**
+> **Se lee así:** el esquema arranca en $x$ creciendo sin cota y pasa por un rombo que separa las cuatro combinaciones posibles: dirección de $x$ ($+\infty$ o $-\infty$) y signo de $f(x)$ ($+\infty$ o $-\infty$). Cada rama lleva su condición de umbral, $x > N$ implica $f(x) > M$ o $f(x) < -M$, y las cuatro desembocan en la misma conclusión de límite infinito al infinito.
 >
-> - ❌ No considerar restricciones de dominio
-> - ✅ Verificar que las desigualdades sean válidas
+> **Por qué importa:** es la mezcla de las dos definiciones anteriores: el umbral $N$ gobierna el crecimiento de $x$ y el número $M$ gobierna el crecimiento de $f(x)$. Por eso el caso $\lim_{x \to +\infty} \frac{1}{x} = 0$ se resuelve con $\varepsilon$ y $N$, y el caso $\lim_{x \to +\infty} x^2 = +\infty$ con $M$ y $N$.
 >
-> **Error 4: Elección de parámetros**
->
-> - ❌ Elegir δ o N que no funcionan para todos los casos
-> - ✅ Verificar que la elección sea general
->
-> **Error 5: Direcciones de desigualdades**
->
-> - ❌ Invertir desigualdades sin cambiar el sentido
-> - ✅ Ser cuidadoso al manipular desigualdades
-
-## 🎯 Estrategias de Demostración
-
-### 🔧 Metodología General
-
-> [!tip] 📋 Proceso Paso a Paso
->
-> **Para Asíntotas Verticales ($x \to a$, $f(x) \to \pm\infty$):**
->
-> 1. **Identificar:** ¿$f(x) \to +\infty$ o $f(x) \to -\infty$?
-> 2. **Plantear:** "Para todo $M > 0$, existe $δ > 0$..."
-> 3. **Trabajar:** Resolver la desigualdad $f(x) > M$ o $f(x) < -M$
-> 4. **Encontrar δ:** Expresar la condición en términos de $|x - a|$
-> 5. **Verificar:** Comprobar que la elección funciona
->
-> **Para Asíntotas Horizontales ($x \to \pm\infty$, $f(x) \to L$):**
->
-> 6. **Simplificar:** Calcular $|f(x) - L|$
-> 7. **Plantear:** "Para todo $ε > 0$, existe $N > 0$..."
-> 8. **Resolver:** La desigualdad $|f(x) - L| < ε$
-> 9. **Encontrar N:** Expresar en términos de $x > N$ o $x < -N$
-> 10. **Verificar:** Comprobar la validez general
-
-### 🎪 Casos Especiales
-
-> [!note] 🔄 Situaciones Particulares
->
-> **Límites laterales infinitos:**
->
-> - Modificar la condición: $0 < x - a < δ$ (derecha) o $0 < a - x < δ$ (izquierda)
->
-> **Funciones racionales:**
->
-> - Factorizar numerador y denominador
-> - Identificar el comportamiento dominante
->
-> **Funciones con raíces:**
->
-> - Considerar restricciones de dominio
-> - Usar propiedades de radicales
->
-> **Composición de funciones:**
->
-> - Aplicar definiciones en cascada
-> - Verificar continuidad en puntos intermedios
-
-## 📖 Ejercicios de Práctica Progresiva
-
-> [!example] 💪 Secuencia de Entrenamiento
->
-> **Nivel 1 - Asíntotas Básicas:** 🟢
->
-> - Demostrar: $\lim_{x \to 0^+} \frac{1}{x^2} = +\infty$
-> - Demostrar: $\lim_{x \to +\infty} \frac{1}{x} = 0$
-> - Demostrar: $\lim_{x \to 2} \frac{1}{x-2} = $ no existe (límites laterales diferentes)
->
-> **Nivel 2 - Funciones Racionales:** 🟡
->
-> - Demostrar: $\lim_{x \to +\infty} \frac{3x + 1}{x - 2} = 3$
-> - Demostrar: $\lim_{x \to 1^-} \frac{x}{x-1} = -\infty$
-> - Demostrar: $\lim_{x \to -\infty} \frac{x^2 + 1}{2x^2 - 3} = \frac{1}{2}$
->
-> **Nivel 3 - Casos Complejos:** 🟠
->
-> - Demostrar: $\lim_{x \to +\infty} \frac{2x^3 - x + 1}{x^3 + 5} = 2$
-> - Demostrar: $\lim_{x \to 0} \frac{\sin x}{x^2} = $ no existe
-> - Demostrar: $\lim_{x \to \pi/2^-} \tan x = +\infty$
->
-> **Nivel 4 - Experto:** 🔴
->
-> - Demostrar: $\lim_{x \to +\infty} x \sin(\frac{1}{x}) = 1$
-> - Demostrar: $\lim_{x \to 1} \frac{x^2 - 1}{(x-1)^2} = $ no existe
-> - Demostrar: $\lim_{x \to 0^+} x \ln x = 0$
-
-## 🔗 Aplicaciones en Análisis de Funciones
-
-### 📊 Identificación de Asíntotas
-
-> [!success] 🎯 Metodología Práctica
->
-> **Para encontrar asíntotas usando definiciones formales:**
->
-> **Asíntotas verticales:**
->
-> 1. Buscar puntos donde $f(x)$ no está definida
-> 2. Calcular límites laterales usando definiciones formales
-> 3. Si algún límite lateral es $\pm\infty$, hay asíntota vertical
->
-> **Asíntotas horizontales:**
->
-> 4. Calcular $\lim_{x \to +\infty} f(x)$ y $\lim_{x \to -\infty} f(x)$
-> 5. Si alguno es finito, hay asíntota horizontal
-> 6. Usar definiciones formales para demostrarlo
->
-> **Ejemplo completo:** $f(x) = \frac{2x + 3}{x - 1}$
->
-> - **Asíntota vertical:** $x = 1$ (demostrar que $\lim_{x \to 1} f(x) = \pm\infty$)
-> - **Asíntota horizontal:** $y = 2$ (demostrar que $\lim_{x \to \pm\infty} f(x) = 2$)
-
-## 📚 Conexiones con Otros Temas
-
-> [!quote] 🔗 Enlaces a Otras Notas
->
-> **Prerrequisitos:**
->
-> - Definición de Límite - Base épsilon-delta
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Casos básicos
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Álgebra de límites
->
-> **Temas relacionados:**
->
-> - Continuidad de Funciones - Conexión con definiciones formales
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Extensión unilateral
-> - Comportamiento Asintótico - Análisis de funciones
->
-> **Aplicaciones:**
->
-> - Derivadas - Límites en la definición
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]] - Límites de integración infinitos
-> - Series Infinitas - Criterios de convergencia
->
-> **Análisis avanzado:**
->
-> - Topología de la Recta Real - Fundamentos teóricos
-> - Funciones de Variable Real - Comportamiento global
-> - Análisis Asintótico - Aplicaciones en ingeniería
-
-## 💡 Notas Históricas y Conceptuales
-
-> [!info] 🏛️ Contexto Matemático
->
-> **Desarrollo histórico:**
->
-> - **Cauchy (1821):** Primera definición rigurosa de límite
-> - **Weierstrass (1860s):** Formalización épsilon-delta
-> - **Extensiones modernas:** Límites infinitos y al infinito
->
-> **Importancia conceptual:**
->
-> - Las definiciones formales eliminan la ambigüedad
-> - Permiten demostraciones rigurosas
-> - Base para todo el análisis matemático moderno
->
-> **Filosofía matemática:**
->
-> - Transforman intuición geométrica en lógica algebraica
-> - Proporcionan criterios objetivos de convergencia
-> - Fundamento para la construcción de los números reales
+> **Ejemplo:** $\lim_{x \to +\infty} x^2 = +\infty$ se cumple tomando $N = \sqrt{M}$: si $x > N$ entonces $x^2 > M$.
 
 ---
 
-**Tags:** #MATG1045 #unidad2 #concepto-y-definicion-formal-del-limite #calculo #limites #concepto-intuitivo #fundamentos #aproximacion #convergencia #matematicas #definicion-basica #interpretacion-grafica #ejemplos #definicion-formal #epsilon-delta #rigor-matematico #demostraciones #weierstrass #analisis-real #matematica-pura #teoria-limites #matemáticas #cálculo #límites #definición-formal #épsilon-delta #asíntotas #límites-infinitos #límites-al-infinito #análisis-real #university #calculus-advanced #mathematical-rigor #asymptotes
+## 📐 Interpretación Geométrica y Método de Demostración
+
+> [!example] 🎨 Las dos bandas de la definición
+>
+> La definición $\varepsilon$-$\delta$ se traduce en:
+>
+> - **Banda horizontal:** $L - \varepsilon < f(x) < L + \varepsilon$
+> - **Banda vertical:** $a - \delta < x < a + \delta$ (excluyendo $x = a$)
+> - **Condición:** toda la función en la banda vertical debe quedar dentro de la banda horizontal
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_04.svg]]
+>
+> **Se lee así:** el esquema arranca en un punto, el par $(a, L)$, del que salen dos ramas paralelas: una banda horizontal de tolerancia $\varepsilon$ alrededor de $L$ y una banda vertical de alcance $\delta$ alrededor de $a$. La rama vertical exige que toda $x$ dentro de la franja cumpla la condición y la horizontal que $f(x)$ quede dentro; ambas desembocan en la misma casilla de **definición satisfecha**.
+>
+> **Por qué importa:** las dos bandas se cruzan en un mismo punto: la vertical te dice dónde mirar y la horizontal qué tan cerca debes quedar. Es la lectura geométrica de $0 < |x - a| < \delta$ y $|f(x) - L| < \varepsilon$, y con ella justificas el $\delta$ que eliges.
+>
+> **Ejemplo:** para $\lim_{x \to 2} x^2 = 4$ la banda de $\delta$ alrededor de $2$ debe ser tan angosta que toda la curva dentro de ella quede dentro de la banda de $\varepsilon$ alrededor de $4$, y el trabajo da $\delta = \min\{1, \varepsilon/5\}$.
+>
+> | Elemento | Significado geométrico | Representación |
+> |---|---|---|
+> | $\varepsilon$ | Mitad del ancho de la banda horizontal | $\pm \varepsilon$ alrededor de $L$ |
+> | $\delta$ | Mitad del ancho de la banda vertical | $\pm \delta$ alrededor de $a$ |
+> | $\|f(x) - L\|$ | Distancia vertical entre $f(x)$ y $L$ | Altura desde la función al límite |
+> | $\|x - a\|$ | Distancia horizontal entre $x$ y $a$ | Distancia desde $x$ al punto de interés |
+
+> [!info] 📈 Cómo se lee el límite en una gráfica
+>
+> En una gráfica, el límite se ve como:
+>
+> - **Observamos** hacia dónde apunta la función cuando nos acercamos al punto.
+> - **No importa** si hay un "hueco" o un "salto" en ese punto exacto.
+> - **Importa** la tendencia o la dirección de la función.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concepto_y_Definición_Formal_del_Límite_02.svg]]
+>
+> **Se lee así:** arriba está la caja con la gráfica de $f(x)$, que baja a un rombo de decisión con la pregunta central: hacia dónde apunta la curva cuando $x$ se acerca a $a$. Del rombo salen tres ramas: una a un valor concreto, otra a un crecimiento sin cota y una tercera a que no hay convergencia; cada rama baja a su propio casillero de veredicto, con el límite finito, el límite infinito o la falta de límite.
+>
+> **Por qué importa:** el diagrama separa de entrada tres resultados muy distintos: un valor concreto, un crecimiento sin cota o la ausencia de límite. Te evita decir "no existe" cuando la función simplemente se va a infinito y te obliga a mirar la gráfica antes de calcular.
+>
+> **Ejemplo:** $\lim_{x \to 0} \frac{1}{x^2} = +\infty$ da asíntota vertical, mientras que $\lim_{x \to 2} \frac{1}{x-2}$ no existe porque sus límites laterales son opuestos.
+
+> [!note] 📚 Los cuatro casos típicos
+>
+> - **Función continua:** $\lim_{x \to a} f(x) = f(a)$. No tiene interrupciones y el límite coincide con el valor de la función.
+> - **Función con hueco:** $\lim_{x \to a} f(x) = L$, pero $f(a)$ no existe. Hay un punto faltante en la gráfica.
+> - **Función con salto:** $\lim_{x \to a} f(x)$ no existe. La función salta de un valor a otro y los límites laterales son distintos.
+> - **Límite infinito:** $\lim_{x \to a} f(x) = \pm\infty$. La función crece sin límite y hay asíntota vertical.
+>
+> **Por qué importa:** estos cuatro casos son los que una función real puede presentar y cada uno lleva una respuesta distinta. Identificarlos antes de calcular evita el error de dar por perdido un límite que sí existe.
+>
+> **Ejemplo:** la función escalón $f(x) = \begin{cases} 0 & \text{si } x < 0 \\ 1 & \text{si } x \geq 0 \end{cases}$ está en el caso de salto: el límite en $0$ no existe, aunque $f(0)=1$.
+
+> [!tip] 📝 Cómo se demuestra un límite
+>
+> 1. **Configuración inicial:** sea $\varepsilon > 0$ arbitrario; queremos encontrar $\delta > 0$ tal que la implicación se cumpla.
+> 2. **Análisis algebraico:** partir de $|f(x) - L| < \varepsilon$ y manipular para obtener una condición en $|x - a|$.
+> 3. **Elección de $\delta$:** identificar qué $\delta$ funciona, casi siempre como mínimo de varias restricciones.
+> 4. **Verificación:** asumir $0 < |x - a| < \delta$ y demostrar que esto implica $|f(x) - L| < \varepsilon$.
+>
+> **Por qué importa:** el orden importa tanto como el cálculo: primero la tolerancia arbitraria y luego el radio. Si inviertes el orden acabas asumiendo lo que quieres probar.
+>
+> **Ejemplo:** en el ejemplo 2 de los ejercicios, $\lim_{x \to 2} x^2 = 4$, la restricción preliminar $|x - 2| < 1$ es lo que permite acotar $|x + 2| < 5$ y fijar $\delta = \min\{1, \varepsilon/5\}$.
+
+> [!warning] ⚠️ Condiciones que no se pueden saltar
+>
+> - **$0 < |x - a|$:** excluimos $x = a$, porque no nos importa $f(a)$.
+> - **$x \neq a$:** la función puede no estar definida en $a$.
+> - **$\varepsilon > 0$:** solo consideramos tolerancias positivas.
+> - **$\delta > 0$:** solo consideramos rangos positivos.
+>
+> **Por qué importa:** la desigualdad estricta del lado izquierdo es la que hace que el límite no dependa del valor de la función en el punto. Quitarla convierte la definición en un teorema de continuidad.
+>
+> **Ejemplo:** para $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$ la función no está definida en $1$, y aun así el límite existe y vale $2$.
+
+> [!tip] 🎓 Mnemotecnia "ÉPSILON"
+>
+> - **É**lige un $\varepsilon$ arbitrario mayor que $0$.
+> - **P**artes de la condición $|f(x) - L| < \varepsilon$.
+> - **S**implificas algebraicamente la expresión.
+> - **I**dentificas la relación con $|x - a|$.
+> - **L**logras una condición de la forma $|x - a| < \text{algo}$.
+> - **O**ptimizas eligiendo $\delta$ apropiado.
+> - **N**avegas la verificación final.
+
+---
+
+## ⚠️ Errores y Trampas Frecuentes
+
+> [!warning] 🚨 Trampas conceptuales
+>
+> - **Confundir límite con valor de función.** "Si $f(2) = 5$, entonces $\lim_{x \to 2} f(x) = 5$" es incorrecto: el límite puede ser distinto.
+> - **Pensar que el límite requiere que la función esté definida.** "No puedo hallar el límite si la función no existe en ese punto" es incorrecto: el límite puede existir igual.
+> - **Usar solo un lado.** Mirar valores desde la derecha o desde la izquierda basta para engañarse; hay que verificar ambos lados para asegurar convergencia.
+>
+> **Por qué importa:** los tres errores son de concepto, no de cálculo, y ninguno se detecta revisando la aritmética. Se detectan volviendo a la definición.
+>
+> **Ejemplo:** en $g(x)=x^2$ para $x\neq2$ y $g(2)=10$, el límite en $2$ vale $4$ y no $10$: el valor fijo es irrelevante.
+
+> [!warning] 🚫 Errores en demostraciones $\varepsilon$-$\delta$
+>
+> - **$\delta$ dependiente de $x$:** el radio solo puede depender de $\varepsilon$ y de los datos del problema ($a$, $L$), nunca de la variable.
+> - **Asumir el resultado:** empezar asumiendo $|f(x) - L| < \varepsilon$ no demuestra nada; hay que partir de la condición de $\delta$.
+> - **No manejar casos extremos:** faltan restricciones de dominio o acotaciones temporales; usa $\min$ para combinarlas.
+> - **Confundir $M$ con $N$:** $M$ es para $f(x)$, $N$ es para $x$.
+> - **Signos en límites negativos:** para $-\infty$ corresponde $f(x) < -M$, no $f(x) > -M$.
+> - **Invertir desigualdades:** al multiplicar por un número negativo cambia el sentido.
+>
+> **Por qué importa:** los primeros tres rompen la lógica de la demostración; los últimos tres la invalidan por aritmética. Revisarlos antes de dar por cerrado un ejercicio es más barato que corregirlo después.
+>
+> **Ejemplo:** para $\lim_{x \to 0^+} \frac{1}{x} = +\infty$, el error clásico es proponer $\delta = M$; el correcto es $\delta = 1/M$.
+
+> [!info] 🏛️ Contexto histórico
+>
+> - **Bernard Bolzano (1781-1848):** primeras contribuciones sobre la idea de límite.
+> - **Augustin-Louis Cauchy (1789-1857):** primera definición rigurosa de límite en su *Cours d'Analyse* (1821).
+> - **Karl Weierstrass (1815-1897):** formalización $\varepsilon$-$\delta$ tal como se usa hoy.
+>
+> **Por qué importa:** la definición formal elimina la vaguedad de la intuición y permite demostraciones rigurosas. Es la base de la continuidad, la derivabilidad y la integrabilidad.
+>
+> **Ejemplo:** el concepto de convergencia de sucesiones que se usa en Cálculo 1 nace de esta formalización.
+
+---
+
+## ♾️ Límites Infinitos y Asíntotas
+
+> [!note] 📋 Tabla resumen de las seis variantes
+>
+> | Tipo de límite | Notación | Condición | Parámetros |
+> |---|---|---|---|
+> | **Finito $\to$ finito** | $\lim_{x \to a} f(x) = L$ | $\|f(x) - L\| < \varepsilon$ cuando $0 < \|x - a\| < \delta$ | $\varepsilon, \delta$ |
+> | **Finito $\to$ $+\infty$** | $\lim_{x \to a} f(x) = +\infty$ | $f(x) > M$ cuando $0 < \|x - a\| < \delta$ | $M, \delta$ |
+> | **Finito $\to$ $-\infty$** | $\lim_{x \to a} f(x) = -\infty$ | $f(x) < -M$ cuando $0 < \|x - a\| < \delta$ | $M, \delta$ |
+> | **$+\infty$ $\to$ finito** | $\lim_{x \to +\infty} f(x) = L$ | $\|f(x) - L\| < \varepsilon$ cuando $x > N$ | $\varepsilon, N$ |
+> | **$-\infty$ $\to$ finito** | $\lim_{x \to -\infty} f(x) = L$ | $\|f(x) - L\| < \varepsilon$ cuando $x < -N$ | $\varepsilon, N$ |
+> | **$+\infty$ $\to$ $+\infty$** | $\lim_{x \to +\infty} f(x) = +\infty$ | $f(x) > M$ cuando $x > N$ | $M, N$ |
+>
+> **Por qué importa:** la tabla resume en una sola página la decisión más importante de la nota: qué letra tocar según el caso. Es lo que separa una demostración bien planteada de una que se atasca.
+>
+> **Ejemplo:** $\lim_{x \to +\infty} \frac{2x+1}{x+3} = 2$ es la cuarta fila; $\lim_{x \to 0^+} \frac{1}{x} = +\infty$, la segunda.
+
+> [!tip] 🎓 Método "EMDN"
+>
+> - **E**líge la definición correcta.
+> - **M** o **N** según el tipo de límite.
+> - **D**elta para límites en puntos finitos.
+> - **N**úmero grande para límites al infinito.
+>
+> **Frase nemotécnica:** "Escojo Métodos Definidos Numéricamente".
+>
+> **Guía de decisión:**
+>
+> - Si $x \to a$ (finito) $\rightarrow$ usar $\delta$.
+> - Si $x \to \pm\infty$ $\rightarrow$ usar $N$.
+> - Si $f(x) \to \pm\infty$ $\rightarrow$ usar $M$.
+> - Si $f(x) \to L$ (finito) $\rightarrow$ usar $\varepsilon$.
+
+> [!success] 🎯 Cómo encontrar asíntotas: el algoritmo
+>
+> **Asíntotas verticales:**
+>
+> 1. Buscar puntos donde $f(x)$ no está definida.
+> 2. Calcular los límites laterales usando las definiciones formales.
+> 3. Si algún límite lateral es $\pm\infty$, hay asíntota vertical.
+>
+> **Asíntotas horizontales:**
+>
+> 4. Calcular $\lim_{x \to +\infty} f(x)$ y $\lim_{x \to -\infty} f(x)$.
+> 5. Si alguno es finito, hay asíntota horizontal.
+> 6. Usar las definiciones formales para demostrarlo.
+>
+> **Por qué importa:** el algoritmo evita la tentación de "mirar" la gráfica y adivinar. En exámenes como el de 2021 (Tema # 2, preguntas 6 a 10) la asíntota se pide encontrando el parámetro con los límites, no por inspección.
+>
+> **Ejemplo:** para $f(x) = \frac{2x + 3}{x - 1}$ la vertical es $x = 1$ y la horizontal $y = 2$.
+
+> [!note] 📋 Casos especiales y situaciones particulares
+>
+> - **Límites laterales infinitos:** modificar la condición a $0 < x - a < \delta$ (derecha) o $0 < a - x < \delta$ (izquierda).
+> - **Funciones racionales:** factorizar numerador y denominador e identificar el comportamiento dominante.
+> - **Funciones con raíces:** considerar restricciones de dominio y usar propiedades de radicales.
+> - **Composición de funciones:** aplicar las definiciones en cascada y verificar la continuidad en los puntos intermedios.
+>
+> **Por qué importa:** en los cuatro casos la definición sigue siendo la misma, pero el $\delta$ o el $N$ se eligen de forma distinta. Reconocer el patrón evita perder tiempo en demostraciones que no avanzan.
+>
+> **Ejemplo:** $\lim_{x \to +\infty} \frac{3x^2 + 1}{x^2 - 5} = 3$ se resuelve con el caso "$+\infty \to$ finito" y $N = \max\{3/\varepsilon, 1\}$.
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to 3} (2x + 1) = 7$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sea $\varepsilon > 0$ arbitrario. Como $|(2x+1) - 7| = |2x - 6| = 2|x - 3|$, basta con exigir $2|x - 3| < \varepsilon$, es decir $|x - 3| < \varepsilon/2$. Tomamos $\delta = \varepsilon/2 > 0$.
+> >
+> > Si $0 < |x - 3| < \delta = \varepsilon/2$, entonces $|f(x) - 7| = 2|x - 3| < 2 \cdot \frac{\varepsilon}{2} = \varepsilon$. Como $\varepsilon$ era arbitrario, queda demostrado que el límite es $7$.
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to 2} x^2 = 4$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sea $\varepsilon > 0$ arbitrario. Como $|x^2 - 4| = |(x-2)(x+2)| = |x - 2| \cdot |x + 2|$, acotamos el segundo factor. Supongamos $|x - 2| < 1$, entonces $1 < x < 3$ y por tanto $3 < x + 2 < 5$, así que $|x + 2| < 5$.
+> >
+> > Con esa acotación queda $|x^2 - 4| < 5|x - 2|$, que es menor que $\varepsilon$ siempre que $|x - 2| < \varepsilon/5$. Tomamos
+> >
+> > $$\delta = \min\left\{1, \frac{\varepsilon}{5}\right\}.$$
+> >
+> > Si $0 < |x - 2| < \delta$, entonces $|x - 2| < 1$ da $|x + 2| < 5$ y $|x - 2| < \varepsilon/5$ da $|x^2 - 4| < \frac{\varepsilon}{5} \cdot 5 = \varepsilon$.
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = 2$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Para $x \neq 1$ la función se simplifica: $\frac{x^2 - 1}{x - 1} = \frac{(x-1)(x+1)}{x-1} = x + 1$. Entonces
+> >
+> > $$|f(x) - 2| = |(x + 1) - 2| = |x - 1|.$$
+> >
+> > Sea $\varepsilon > 0$ arbitrario y tomemos $\delta = \varepsilon$. Si $0 < |x - 1| < \delta = \varepsilon$, entonces $|f(x) - 2| = |x - 1| < \varepsilon$.
+> >
+> > **Nota:** el límite existe aunque la función no esté definida en $1$: la simplificación solo se usa fuera del punto.
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to 0^+} \frac{1}{x} = +\infty$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sea $M > 0$ arbitrario. Buscamos $\delta > 0$ tal que si $0 < x < \delta$ entonces $\frac{1}{x} > M$. Para $x > 0$, la desigualdad $\frac{1}{x} > M$ es equivalente a $x < \frac{1}{M}$. Tomamos $\delta = \frac{1}{M}$.
+> >
+> > Si $0 < x < \delta = \frac{1}{M}$, entonces $x < \frac{1}{M}$ y, invirtiendo con signo positivo, $\frac{1}{x} > M$. Como $M$ era arbitrario, el límite es $+\infty$.
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to +\infty} \frac{2x + 1}{x + 3} = 2$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sea $\varepsilon > 0$ arbitrario. Simplificamos la diferencia:
+> >
+> > $$\left|\frac{2x + 1}{x + 3} - 2\right| = \left|\frac{2x + 1 - 2x - 6}{x + 3}\right| = \frac{5}{x + 3},$$
+> >
+> > válido para $x + 3 > 0$, es decir $x > -3$. Queremos $\frac{5}{x + 3} < \varepsilon$, que equivale a $x + 3 > \frac{5}{\varepsilon}$, es decir $x > \frac{5}{\varepsilon} - 3$. Tomamos
+> >
+> > $$N = \max\left\{\frac{5}{\varepsilon} - 3,\ 1\right\}.$$
+> >
+> > Si $x > N$, entonces $x > \frac{5}{\varepsilon} - 3$ y, como $x + 3 > 0$,
+> >
+> > $$\left|\frac{2x + 1}{x + 3} - 2\right| = \frac{5}{x + 3} < \varepsilon.$$
+
+> [!example] 📋 Planteamiento
+>
+> Demostra, usando la definición formal, que $\lim_{x \to +\infty} x^2 = +\infty$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sea $M > 0$ arbitrario. Buscamos $N > 0$ tal que si $x > N$ entonces $x^2 > M$. Como $x > N > 0$, la condición equivale a $x > \sqrt{M}$. Tomamos $N = \sqrt{M}$.
+> >
+> > Si $x > N = \sqrt{M}$, entonces $x > 0$ y al elevar al cuadrado se obtiene $x^2 > M$. Como $M$ era arbitrario, el límite es $+\infty$.
+
+> [!example] 📋 Planteamiento
+>
+> Demuestra que $\lim_{x \to 2} \frac{1}{x - 2}$ no existe, y enuncia el criterio que lo justifica.
+>
+> > [!success]- ✅ Solución
+> >
+> > Por la derecha, con $x = 2 + t$ y $t > 0$ pequeño, $\frac{1}{x - 2} = \frac{1}{t} \to +\infty$. Por la izquierda, con $x = 2 - t$ y $t > 0$ pequeño, $\frac{1}{x - 2} = -\frac{1}{t} \to -\infty$.
+> >
+> > Los dos laterales no son finitos ni coinciden: uno va a $+\infty$ y el otro a $-\infty$. Como $\lim_{x \to 2^-} f(x) \neq \lim_{x \to 2^+} f(x)$, el límite no existe.
+> >
+> > **Criterio general:** el límite existe si y solo si los dos laterales existen, son finitos e iguales; si los laterales divergen de forma opuesta, la función no tiene límite en ese punto.
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Defino qué es un límite y en qué se diferencia del valor de una función.
+> - [ ] Escribo y leo la notación $\lim_{x \to a} f(x) = L$ y la entiendo en cinco formas equivalentes.
+> - [ ] Identifico los cuatro casos típicos: continua, con hueco, con salto y límite infinito.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Escribo la definición formal $\varepsilon$-$\delta$ y sé qué papel juega cada parámetro.
+> - [ ] Demuestro límites simples de funciones lineales y cuadráticas con la definición formal.
+> - [ ] Distinguo $M$, $N$, $\delta$ y $\varepsilon$ y aplico el método EMDN para elegir definición.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Demuestro que un límite no existe usando laterales opuestos.
+> - [ ] Conecto el límite infinito y el límite al infinito con las asíntotas verticales y horizontales.
+> - [ ] Identifico las trampas habituales de una demostración $\varepsilon$-$\delta$ antes de dar el resultado por bueno.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage), cap. 2: el límite y su definición formal.
+> - R. Larson, *Cálculo* (Cengage), cap. 1: límites y su demostración.
+> - T. Apostol, *Calculus, Vol. 1* (Wiley), cap. 3: construcción analítica del límite.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites|02 - Propiedades y Teoremas de los Límites]] — álgebra de límites y límites directos.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — extensión unilateral del concepto.
+> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]] — aplicación directa de la definición.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué significa $\lim_{x \to a} f(x) = L$ y qué NO exige?::Que para todo $\varepsilon > 0$ existe $\delta > 0$ tal que $0 < |x - a| < \delta$ implica $|f(x) - L| < \varepsilon$. No exige que $f$ esté definida en $a$ ni que $f(a) = L$.
+> - ¿Qué papel juega $\varepsilon$ y cuál $\delta$?::$\varepsilon$ es la tolerancia sobre la salida y fija primero; $\delta$ es el radio de entrada que responde a $\varepsilon$. El orden nunca se invierte.
+> - ¿Cuándo un límite lateral infinito deja de existir?::Cuando los dos laterales no existen finitos o no coinciden, por ejemplo $1/(x-2)$ en $x=2$, donde los laterales son $+\infty$ y $-\infty$.
+> - ¿Cómo se escribe el límite al infinito con umbral?::Para todo $\varepsilon > 0$ existe $N > 0$ tal que si $x > N$ entonces $|f(x) - L| < \varepsilon$; en el caso infinito el papel de $\varepsilon$ lo tiene $M$.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 1 - Preliminares/02 - Puntos de Acumulación|02 - Puntos de Acumulación]] — base topológica del acercamiento por el dominio.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites|02 - Propiedades y Teoremas de los Límites]] — álgebra de límites y sustitución directa.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — extensión de los laterales y discontinuidades.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales|02 - Límites Especiales]] — $\sin x / x$, $1 - \cos x / x^2$ y $(1 + x)^{1/x}$.
+> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — secuencias y convergencia.
+> - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones|02 - Asíntotas y Comportamiento de Funciones]] — asíntotas y análisis completo.
+> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]] — la derivada como límite de cocientes incrementales.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — límites de integración infinitos.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Continúa con [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites|Propiedades y Teoremas de los Límites]] para resolver límites sin demostrarlos uno por uno.
+> - Practica antes de saltar a las formas indeterminadas: sin el $\varepsilon$-$\delta$ de esta nota no hay forma de justificar que se cancela el factor que anula.
+> - En cada problema, escribe qué definición usas y por qué letra ($\delta$, $N$, $M$) antes de calcular.
+> - Practica las formas indeterminadas con [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|Formas Indeterminadas]] después de dominar los límites directos.
+
+---
+
+**Tags:** #MATG1045 #unidad2 #limite #epsilon-delta #limites-laterales #limites-infinitos #limites-al-infinito #asintotas #demostraciones

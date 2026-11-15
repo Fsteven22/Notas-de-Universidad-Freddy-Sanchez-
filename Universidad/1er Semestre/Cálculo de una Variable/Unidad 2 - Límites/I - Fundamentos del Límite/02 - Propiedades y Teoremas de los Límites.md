@@ -1,903 +1,496 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad2, propiedades-y-teoremas-de-los-limites, matemáticas, cálculo, límites, álgebra-límites, propiedades-límites, operaciones-límites, técnicas-límites, continuidad, university]
+tags: [MATG1045, unidad2, propiedades-limite, teoremas-limite, algebra-de-limites, sustitucion-directa, continuidad, emparedado, caracterizacion-sucesional, criterio-cauchy]
 ---
 
-# ⚖️ Propiedades de los Límites
+# ⚖️ Propiedades y Teoremas de los Límites
 
-## 🎯 Álgebra de Límites
+## 🎯 Introducción
 
-> [!info] 💡 Definición Fundamental Las **propiedades de los límites** (también llamadas **álgebra de límites**) son reglas que nos permiten calcular límites de funciones complejas a partir de límites más simples.
+> [!info] 💡 ¿Para qué sirven las propiedades?
 >
-> **Condición previa:** Todas las propiedades requieren que los límites individuales **existan y sean finitos**.
+> Las **propiedades de los límites** (también llamadas **álgebra de límites**) son reglas que permiten calcular límites de expresiones complejas a partir de límites más simples. En vez de demostrar cada límite desde cero con $\varepsilon$-$\delta$, se descompone la expresión, se resuelven las piezas y se recombinan.
 >
-> Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, donde $L$ y $M$ son números reales, entonces se cumplen las siguientes propiedades fundamentales.
+> **Condición previa:** todas las propiedades exigen que los límites individuales que se usan **existan y sean finitos**. Si alguno no existe, la regla no se puede aplicar.
+>
+> **Ejemplo:** $\lim_{x \to 2} \frac{x^3 + 2x^2 - 3x + 1}{x^2 - 1}$ se resuelve en tres cuentas: el numerador tiende a $11$, el denominador a $3$ y el cociente da $11/3$.
 
-### 📊 Propiedades Básicas
+> [!warning] ⚠️ Lo que NO autorizan las propiedades
+>
+> - **NO autorizan** dividir cuando el denominador tiende a $0$.
+> - **NO autorizan** sustituir en una forma indeterminada como $0/0$ o $\infty/\infty$.
+> - **NO autorizan** componer $f(g(x))$ con $f$ discontinua en el límite interno.
+>
+> Y lo que sí autorizan:
+>
+> - **SÍ permiten** separar sumas, productos, cocientes, potencias y raíces cuando todos los límites implicados existen.
+> - **SÍ permiten** sustituir directamente cuando la función es continua en el punto.
+> - **SÍ permiten** extenderse a límites laterales, $\lim_{x \to a^+}$ y $\lim_{x \to a^-}$, sin cambiar de reglas.
 
-> [!success] ✅ Propiedad del Límite de una Constante **Regla:** El límite de una constante es la constante misma.
+> [!tip] 🔢 Estrategia de descomposición en cuatro pasos
 >
-> $$\lim_{x \to a} k = k$$
+> 1. **Identificar la estructura:** ¿suma, producto, cociente, potencia o composición?
+> 2. **Descomponer:** separar la expresión en piezas más simples.
+> 3. **Evaluar cada pieza:** usar sustitución directa cuando la función sea continua.
+> 4. **Recombinar:** aplicar la propiedad correspondiente y escribir el resultado.
 >
-> donde $k$ es cualquier número real.
+> **Por qué importa:** el orden evita el error clásico de intentar una técnica pesada (factorización, L'Hôpital) en un límite que se resuelve sustituyendo.
 >
-> **Ejemplos:**
->
-> - $\lim_{x \to 3} 7 = 7$
-> - $\lim_{x \to -2} \pi = \pi$
-> - $\lim_{x \to \infty} (-5) = -5$
->
+> **Ejemplo:** $\lim_{x \to 3} (2x^3 - x^2 + 4x - 7) = 50$ se obtiene pieza a pieza: $2(27) - 9 + 12 - 7$.
 
-> [!success] ✅ Propiedad del Límite de la Variable **Regla:** El límite de la variable independiente es el valor al que tiende.
->
-> $$\lim_{x \to a} x = a$$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 5} x = 5$
-> - $\lim_{x \to -3} x = -3$
-> - $\lim_{t \to 0} t = 0$
+---
 
-## 🧮 Propiedades Aritméticas
+## 📋 Definiciones Formales
 
-### ➕ Suma y Resta
-
-> [!example] 📊 Propiedad de la Suma **Regla:** El límite de una suma es la suma de los límites.
+> [!note] 📋 Definición — Álgebra de límites
 >
-> $$\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x) = L + M$$
+> Sean $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, con $L$ y $M$ números reales (es decir, ambos límites existen y son finitos). Entonces se cumplen:
 >
-> **Extensión:** Para múltiples funciones: $$\lim_{x \to a} [f_1(x) + f_2(x) + \cdots + f_n(x)] = \lim_{x \to a} f_1(x) + \lim_{x \to a} f_2(x) + \cdots + \lim_{x \to a} f_n(x)$$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 2} (x^2 + 3x) = \lim_{x \to 2} x^2 + \lim_{x \to 2} 3x = 4 + 6 = 10$
-> - $\lim_{x \to 1} (2x + 5 + \sin x) = 2 + 5 + \sin(1) = 7 + \sin(1)$
->
-
-> [!example] 📊 Propiedad de la Resta **Regla:** El límite de una diferencia es la diferencia de los límites.
->
-> $$\lim_{x \to a} [f(x) - g(x)] = \lim_{x \to a} f(x) - \lim_{x \to a} g(x) = L - M$$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 3} (x^2 - 2x) = \lim_{x \to 3} x^2 - \lim_{x \to 3} 2x = 9 - 6 = 3$
-> - $\lim_{x \to 0} (\cos x - 1) = \cos(0) - 1 = 1 - 1 = 0$
-
-### ✖️ Multiplicación
-
-> [!example] 📊 Propiedad del Producto **Regla:** El límite de un producto es el producto de los límites.
->
-> $$\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x) = L \cdot M$$
->
-> **Caso especial - Múltiple constante:** $$\lim_{x \to a} [k \cdot f(x)] = k \cdot \lim_{x \to a} f(x) = k \cdot L$$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 2} (x \cdot x^2) = \lim_{x \to 2} x \cdot \lim_{x \to 2} x^2 = 2 \cdot 4 = 8$
-> - $\lim_{x \to 1} (5 \cdot x^3) = 5 \cdot \lim_{x \to 1} x^3 = 5 \cdot 1 = 5$
-> - $\lim_{x \to 0} (x \sin x) = \lim_{x \to 0} x \cdot \lim_{x \to 0} \sin x = 0 \cdot 0 = 0$
-
-### ➗ División
-
-> [!example] 📊 Propiedad del Cociente **Regla:** El límite de un cociente es el cociente de los límites, **siempre que el denominador no sea cero**.
->
-> $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)} = \frac{L}{M}$$
->
-> **Condición crucial:** $M = \lim_{x \to a} g(x) \neq 0$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 3} \frac{x^2 + 1}{x - 1} = \frac{\lim_{x \to 3} (x^2 + 1)}{\lim_{x \to 3} (x - 1)} = \frac{10}{2} = 5$
-> - $\lim_{x \to 1} \frac{2x + 3}{x^2 + 4} = \frac{5}{5} = 1$
->
-> **⚠️ Cuidado:** Si $M = 0$, la propiedad NO aplica y necesitamos otras técnicas.
-
-## 🔢 Propiedades de Potencias y Raíces
-
-### 📈 Potencias
-
-> [!tip] 🚀 Propiedad de Potencias **Regla:** El límite de una potencia es la potencia del límite.
->
-> $$\lim_{x \to a} [f(x)]^n = \left[\lim_{x \to a} f(x)\right]^n = L^n$$
->
-> donde $n$ es cualquier entero positivo.
->
-> **Casos especiales:**
->
-> - **Cuadrados:** $\lim_{x \to a} [f(x)]^2 = [L]^2$
-> - **Cubos:** $\lim_{x \to a} [f(x)]^3 = [L]^3$
-> - **Polinomios:** $\lim_{x \to a} x^n = a^n$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 2} x^4 = 2^4 = 16$
-> - $\lim_{x \to 1} (x + 1)^3 = (1 + 1)^3 = 8$
-> - $\lim_{x \to 3} (x^2 - 1)^2 = (9 - 1)^2 = 64$
-
-### 🔍 Raíces
-
-> [!tip] 🌱 Propiedad de Raíces **Regla:** El límite de una raíz es la raíz del límite.
->
-> $$\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a} f(x)} = \sqrt[n]{L}$$
->
-> **Condiciones:**
->
-> - Si $n$ es par: $L \geq 0$
-> - Si $n$ es impar: $L$ puede ser cualquier valor real
->
-> **Casos comunes:**
->
-> - **Raíz cuadrada:** $\lim_{x \to a} \sqrt{f(x)} = \sqrt{L}$ (si $L \geq 0$)
-> - **Raíz cúbica:** $\lim_{x \to a} \sqrt[3]{f(x)} = \sqrt[3]{L}$
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 4} \sqrt{x + 5} = \sqrt{4 + 5} = 3$
-> - $\lim_{x \to 1} \sqrt[3]{x^3 - 1} = \sqrt[3]{0} = 0$
-> - $\lim_{x \to 8} \sqrt[3]{\frac{x}{2}} = \sqrt[3]{4}$
-
-## 📊 Tabla Resumen de Propiedades
-
-> [!note] 📋 Resumen Completo
->
-> |Operación|Propiedad|Condición|
-> |---|---|---|
-> |**Constante**|$\lim_{x \to a} k = k$|Ninguna|
-> |**Variable**|$\lim_{x \to a} x = a$|Ninguna|
-> |**Suma**|$\lim_{x \to a} [f(x) + g(x)] = L + M$|$L, M$ finitos|
-> |**Resta**|$\lim_{x \to a} [f(x) - g(x)] = L - M$|$L, M$ finitos|
-> |**Producto**|$\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$|$L, M$ finitos|
-> |**Cociente**|$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}$|$L, M$ finitos, $M \neq 0$|
-> |**Potencia**|$\lim_{x \to a} [f(x)]^n = L^n$|$L$ finito|
-> |**Raíz par**|$\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$|$L \geq 0$|
-> |**Raíz impar**|$\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$|$L$ finito|
-
-## 🧠 Técnica de Estudio: Método "SCPR"
-
-> [!tip] 🎓 Mnemotecnia "SCPR"
->
-> **S** - **S**uma y resta directas **C** - **C**onstantes se mantienen **P** - **P**roducto de límites **R** - **R**azón cuidando el denominador
->
-> **Frase nemotécnica:** _"Siempre Calculo Propiedades Rápidamente"_
->
-> **Proceso de aplicación:**
->
-> 1. 🎯 Identificar la operación principal
-> 2. ✅ Verificar que los límites individuales existan
-> 3. 🔍 Comprobar condiciones especiales (denominador ≠ 0)
-> 4. 🧮 Aplicar la propiedad correspondiente
-
-## 📊 Algoritmo de Aplicación
-
-> [!info] 🖼️ Algoritmo de Aplicación
+> - **Suma y diferencia:** $\lim_{x \to a} [f(x) \pm g(x)] = L \pm M$
+> - **Producto:** $\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$
+> - **Cociente:** $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}$, si $M \neq 0$
+> - **Potencia:** $\lim_{x \to a} [f(x)]^n = L^n$, si la potencia está definida
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_01.svg]]
 >
-> **Se lee así:** Es un mapa de decisión que empieza en un límite complejo y pasa por un rombo que pregunta cuál es la operación principal: suma o resta, producto, división o potencia y raíz. Cada rama lleva a un rectángulo distinto, y dos de ellas vuelven a abrir un rombo de verificación, uno sobre el denominador y otro sobre el **dominio**, antes de entregar el resultado o derivar a técnicas especiales.
+> **Se lee así:** el esquema parte de un límite complejo y pasa por un rombo que pregunta por la operación principal. Cada rama aplica su regla: suma o resta lleva a límites separados y al resultado $L \pm M$; producto lleva al producto de límites; división pasa por un rombo sobre el denominador, que si es cero deriva a técnicas especiales; potencia o raíz pasa por un rombo sobre las condiciones de dominio, que si fallan obliga a redefinir el dominio.
 >
-> **Por qué importa:** Fíjate en que funciona como lista de control antes de operar: primero identificas qué operación domina y después qué condición se rompe. Seguirlo evita el error más caro de la materia, aplicar la propiedad del cociente cuando el denominador tiende a cero y quedarse con un 0/0 sin saber qué hacer.
+> **Por qué importa:** el rombo del denominador y el de dominio son los dos filtros de validez del álgebra. Te recuerdan que la regla no se aplica a ciegas: primero verifica que cada pieza exista y que la operación tenga sentido.
 >
-> **Ejemplo:** Un ejercicio típico de la nota: `lim_{x \to 2} (x^3 + 2x^2 - 3x + 1)/(x^2 - 1)`, donde la rama de división aplica porque el límite del denominador es 3 y no cero.
+> **Ejemplo:** para $\lim_{x \to 2} \frac{x^2 - 1}{x + 3}$ el denominador tiende a $5 \neq 0$, así que se aplica el cociente y el resultado es $3/5$.
 
-## ⚠️ Casos Especiales y Limitaciones
-
-### 🚫 Cuando las Propiedades NO Aplican
-
-> [!warning] 🛑 Limitaciones Importantes
->
-> **1. Límites no existen:**
->
-> - Si $\lim_{x \to a} f(x)$ no existe, las propiedades no aplican
-> - Ejemplo: $\lim_{x \to 0} \frac{1}{x}$ no existe
->
-> **2. Límites infinitos:**
->
-> - Las propiedades básicas no aplican directamente
-> - Necesitamos reglas especiales para $\pm\infty$
->
-> **3. Formas indeterminadas:**
->
-> - $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$
-> - Requieren técnicas como L'Hôpital
->
-> **4. División por cero:**
->
-> - Si $\lim_{x \to a} g(x) = 0$, no podemos usar la propiedad del cociente directamente
-
-### 🔄 Formas Indeterminadas Comunes
-
-> [!danger] ⚡ Casos Problemáticos
->
-> |Forma|Ejemplo|Técnica Alternativa|
-> |---|---|---|
-> |$\frac{0}{0}$|$\lim_{x \to 0} \frac{\sin x}{x}$|L'Hôpital, Emparedado|
-> |$\frac{\infty}{\infty}$|$\lim_{x \to \infty} \frac{x^2}{e^x}$|L'Hôpital|
-> |$0 \cdot \infty$|$\lim_{x \to 0^+} x \ln x$|Transformación|
-> |$\infty - \infty$|$\lim_{x \to \infty} (x - \sqrt{x^2 + 1})$|Racionalización|
-> |$1^{\infty}$|$\lim_{x \to \infty} (1 + \frac{1}{x})^x$|Logaritmos|
-> |$0^0$, $\infty^0$|$\lim_{x \to 0^+} x^x$|Logaritmos|
-
-## 🌟 Propiedades Avanzadas
-
-### 🔗 Composición de Funciones
-
-> [!note] 🎭 Límite de Función Compuesta
->
-> **Teorema:** Si $\lim_{x \to a} g(x) = L$ y $f$ es continua en $L$, entonces:
->
-> $$\lim_{x \to a} f(g(x)) = f(\lim_{x \to a} g(x)) = f(L)$$
->
-> **Aplicaciones comunes:**
->
-> - $\lim_{x \to a} \sin(g(x)) = \sin(\lim_{x \to a} g(x))$
-> - $\lim_{x \to a} e^{g(x)} = e^{\lim_{x \to a} g(x)}$
-> - $\lim_{x \to a} \ln(g(x)) = \ln(\lim_{x \to a} g(x))$ (si $L > 0$)
->
-> **Ejemplos:**
->
-> - $\lim_{x \to 0} \sin(x^2) = \sin(0) = 0$
-> - $\lim_{x \to 1} e^{x-1} = e^0 = 1$
-> - $\lim_{x \to 2} \ln(x + 1) = \ln(3)$
-
-### 📈 Límites Unilaterales
-
-> [!note] 🔄 Propiedades para Límites Laterales
->
-> **Todas las propiedades se extienden a límites laterales:**
->
-> - **Por la derecha:** $\lim_{x \to a^+}$
-> - **Por la izquierda:** $\lim_{x \to a^-}$
->
-> **Ejemplo:** $$\lim_{x \to 2^+} [f(x) + g(x)] = \lim_{x \to 2^+} f(x) + \lim_{x \to 2^+} g(x)$$
->
-> **Condición de existencia:** Un límite existe si y solo si ambos límites laterales existen y son iguales.
-
-## 💡 Estrategias de Resolución
-
-### 🎯 Método de Descomposición
-
-> [!example] 🔧 Estrategia Paso a Paso
->
-> **Para evaluar límites complejos:**
->
-> 1. **Identificar la estructura:**
->     - ¿Suma, producto, cociente, composición?
-> 2. **Descomponer en partes simples:**
->     - Separar cada operación
-> 3. **Evaluar límites individuales:**
->     - Usar sustitución directa cuando sea posible
-> 4. **Aplicar propiedades:**
->     - Combinar resultados según las reglas
->
-> **Ejemplo completo:** $$\lim_{x \to 2} \frac{x^3 + 2x^2 - 3x + 1}{x^2 - 1}$$
->
-> **Solución:**
->
-> - Numerador: $\lim_{x \to 2} (x^3 + 2x^2 - 3x + 1) = 8 + 8 - 6 + 1 = 11$
-> - Denominador: $\lim_{x \to 2} (x^2 - 1) = 4 - 1 = 3$
-> - Resultado: $\frac{11}{3}$
-
-## 📖 Ejercicios de Práctica Progresiva
-
-> [!example] 💪 Secuencia de Entrenamiento
->
-> **Nivel 1 - Operaciones Básicas:** 🟢
->
-> - $\lim_{x \to 3} (x^2 + 2x - 1)$
-> - $\lim_{x \to 1} (4x - 3)$
-> - $\lim_{x \to 2} \sqrt{x + 7}$
->
-> **Nivel 2 - Productos y Cocientes:** 🟡
->
-> - $\lim_{x \to 4} \frac{x^2 - 16}{x - 4}$
-> - $\lim_{x \to 0} x \cdot \sin(x)$
-> - $\lim_{x \to 1} \frac{2x + 3}{x^2 + 5}$
->
-> **Nivel 3 - Funciones Compuestas:** 🟠
->
-> - $\lim_{x \to 0} \sin(x^2 + 2x)$
-> - $\lim_{x \to 1} e^{x^2 - 1}$
-> - $\lim_{x \to 4} \ln(\sqrt{x})$
->
-> **Nivel 4 - Combinaciones Complejas:** 🔴
->
-> - $\lim_{x \to 2} \frac{\sin(x-2)}{x^2-4}$
-> - $\lim_{x \to 0} \frac{e^x - 1}{x}$
-> - $\lim_{x \to \infty} \frac{3x^2 + 2x - 1}{x^2 - 5}$
-
-## 🎨 Ejemplos Trabajados Completos
-
-### 📊 Ejemplo Integral: Función Racional
-
-> [!example] 📝 Problema Resuelto
->
-> **Problema:** Evaluar $\lim_{x \to 3} \frac{2x^3 - x^2 + 4x - 7}{x^2 + 2x - 1}$
->
-> **Solución paso a paso:**
->
-> **Paso 1:** Verificar continuidad en $x = 3$
->
-> - Denominador en $x = 3$: $9 + 6 - 1 = 14 \neq 0$ ✅
->
-> **Paso 2:** Aplicar propiedad del cociente $$\lim_{x \to 3} \frac{2x^3 - x^2 + 4x - 7}{x^2 + 2x - 1} = \frac{\lim_{x \to 3} (2x^3 - x^2 + 4x - 7)}{\lim_{x \to 3} (x^2 + 2x - 1)}$$
->
-> **Paso 3:** Evaluar numerador $$\lim_{x \to 3} (2x^3 - x^2 + 4x - 7) = 2(27) - 9 + 12 - 7 = 54 - 9 + 12 - 7 = 50$$
->
-> **Paso 4:** Evaluar denominador $$\lim_{x \to 3} (x^2 + 2x - 1) = 9 + 6 - 1 = 14$$
->
-> **Paso 5:** Resultado final $$\lim_{x \to 3} \frac{2x^3 - x^2 + 4x - 7}{x^2 + 2x - 1} = \frac{50}{14} = \frac{25}{7}$$
-
-### 🌊 Ejemplo con Funciones Trigonométricas
-
-> [!example] 🎯 Problema Trigonométrico
->
-> **Problema:** Evaluar $\lim_{x \to \pi/6} (\sin x \cdot \cos x + 2x)$
->
-> **Solución:**
->
-> **Paso 1:** Aplicar propiedad de suma $$\lim_{x \to \pi/6} (\sin x \cdot \cos x + 2x) = \lim_{x \to \pi/6} (\sin x \cdot \cos x) + \lim_{x \to \pi/6} (2x)$$
->
-> **Paso 2:** Evaluar primer término usando producto $$\lim_{x \to \pi/6} (\sin x \cdot \cos x) = \lim_{x \to \pi/6} \sin x \cdot \lim_{x \to \pi/6} \cos x$$ $$= \sin(\pi/6) \cdot \cos(\pi/6) = \frac{1}{2} \cdot \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4}$$
->
-> **Paso 3:** Evaluar segundo término $$\lim_{x \to \pi/6} (2x) = 2 \cdot \frac{\pi}{6} = \frac{\pi}{3}$$
->
-> **Paso 4:** Combinar resultados $$\lim_{x \to \pi/6} (\sin x \cdot \cos x + 2x) = \frac{\sqrt{3}}{4} + \frac{\pi}{3}$$
-
-## 🔗 Conexiones con Otros Temas
-
-> [!quote] 📚 Enlaces a Otras Notas
->
-> **Prerrequisitos:**
->
-> - 02 - Propiedades y Teoremas de los Límites - Casos básicos
-> - Definición de Límite - Fundamento teórico
-> - Continuidad de Funciones - Base para aplicación
->
-> **Temas relacionados:**
->
-> - Límites Indeterminados - Casos donde las propiedades fallan
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Técnica para formas indeterminadas
-> - Teorema del Emparedado - Técnica alternativa
->
-> **Aplicaciones:**
->
-> - Derivadas - Límites en la definición de derivada
-> - [[02 – Continuidad]] - Criterio de continuidad
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Comportamiento asintótico
->
-> **Extensiones:**
->
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Límites discretos
-> - Límites Multivariables - Extensión a varias variables
-
----
-
-
-# 📜 Teoremas de Límites
-
-## 🎯 Límite de una suma/diferencia
-
-> [!info] 📐 Teorema de Suma y Diferencia Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, entonces:
->
-> **Suma:** $\lim_{x \to a} [f(x) + g(x)] = L + M$
->
-> **Diferencia:** $\lim_{x \to a} [f(x) - g(x)] = L - M$
->
-> 🔑 **Principio:** El límite de una suma es la suma de los límites
-
-### 📊 Propiedades de la Suma/Diferencia
-
-> [!success] ✅ Reglas Fundamentales
->
-> **1. Límite de una constante:** $$\lim_{x \to a} c = c$$
->
-> **2. Límite del múltiplo de una constante:** $$\lim_{x \to a} [c \cdot f(x)] = c \cdot \lim_{x \to a} f(x)$$
->
-> **3. Límite de múltiples funciones:** $$\lim_{x \to a} [f_1(x) + f_2(x) + ... + f_n(x)] = \lim_{x \to a} f_1(x) + \lim_{x \to a} f_2(x) + ... + \lim_{x \to a} f_n(x)$$
->
-> |Operación|Notación|Resultado|Condición|
-> |---|---|---|---|
-> |Suma|$\lim [f + g]$|$L + M$|Ambos límites existen|
-> |Diferencia|$\lim [f - g]$|$L - M$|Ambos límites existen|
-> |Constante por función|$\lim [c \cdot f]$|$c \cdot L$|Límite de f existe|
-> |Suma múltiple|$\lim [f_1 + f_2 + ... + f_n]$|$L_1 + L_2 + ... + L_n$|Todos los límites existen|
-
-> [!example] 💡 Ejemplos Prácticos
->
-> **Ejemplo 1: Suma simple** $$\lim_{x \to 2} [(x^2 + 3) + (2x - 1)]$$
->
-> **Solución:**
->
-> - $\lim_{x \to 2} (x^2 + 3) = 4 + 3 = 7$
-> - $\lim_{x \to 2} (2x - 1) = 4 - 1 = 3$
-> - **Resultado:** $7 + 3 = 10$
->
-> **Ejemplo 2: Diferencia con constante** $$\lim_{x \to 1} [3x^2 - 5x + 2]$$
->
-> **Solución:**
->
-> - $\lim_{x \to 1} 3x^2 = 3 \cdot 1 = 3$
-> - $\lim_{x \to 1} 5x = 5 \cdot 1 = 5$
-> - $\lim_{x \to 1} 2 = 2$
-> - **Resultado:** $3 - 5 + 2 = 0$
-
-## 🔢 Límite de un producto/cociente
-
-> [!info] 🎯 Teorema de Producto y Cociente Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, entonces:
->
-> **Producto:** $\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$
->
-> **Cociente:** $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}$ (si $M ≠ 0$)
-
-### 📈 Casos Especiales del Producto
-
-> [!tip] ⚡ Reglas del Producto
->
-> **1. Potencia natural:** $$\lim_{x \to a} [f(x)]^n = [L]^n$$
->
-> **2. Producto de múltiples funciones:** $$\lim_{x \to a} [f_1 \cdot f_2 \cdot ... \cdot f_n] = L_1 \cdot L_2 \cdot ... \cdot L_n$$
->
-> **3. Raíz n-ésima:** $$\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$$ (si la raíz está definida)
-
-### 🔄 Casos Especiales del Cociente
-
-> [!warning] ⚠️ Precauciones del Cociente
->
-> **Condición necesaria:** $M ≠ 0$
->
-> **Casos problemáticos:**
->
-> - Si $M = 0$ y $L ≠ 0$ → Límite no existe (∞)
-> - Si $M = 0$ y $L = 0$ → Forma indeterminada $\frac{0}{0}$
-> - Si $L = ∞$ y $M = ∞$ → Forma indeterminada $\frac{∞}{∞}$
+> [!note] 📋 Definición — Sustitución directa
 >
-> |Situación|$\lim f(x)$|$\lim g(x)$|$\lim \frac{f(x)}{g(x)}$|Observación|
-> |---|---|---|---|---|
-> |Normal|$L$|$M ≠ 0$|$\frac{L}{M}$|✅ Aplicar teorema|
-> |Infinito|$L ≠ 0$|$0$|$±∞$|❌ Límite no existe|
-> |Indeterminada|$0$|$0$|?|🔧 Usar otras técnicas|
-> |Indeterminada|$∞$|$∞$|?|🔧 Usar L'Hôpital|
-
-> [!example] 📝 Ejemplos de Producto y Cociente
->
-> **Ejemplo 1: Producto** $$\lim_{x \to 3} [(x + 1)(2x - 1)]$$
->
-> **Solución:**
->
-> - $\lim_{x \to 3} (x + 1) = 4$
-> - $\lim_{x \to 3} (2x - 1) = 5$
-> - **Resultado:** $4 \cdot 5 = 20$
->
-> **Ejemplo 2: Cociente válido** $$\lim_{x \to 2} \frac{x^2 - 1}{x + 3}$$
->
-> **Solución:**
->
-> - $\lim_{x \to 2} (x^2 - 1) = 3$
-> - $\lim_{x \to 2} (x + 3) = 5 ≠ 0$ ✅
-> - **Resultado:** $\frac{3}{5}$
-
-> [!info] 🖼️ Casos Especiales del Cociente
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_02.svg]]
->
-> **Se lee así:** El diagrama abre con una casilla de producto o cociente y un rombo que exige verificar primero que los límites individuales existen; la rama negativa lleva a una casilla que advierte que el teorema no se aplica. Si existen, otro rombo separa producto y cociente: el producto va directo a multiplicar límites y el cociente pasa por un rombo extra sobre el denominador.
->
-> **Por qué importa:** Este es el filtro de validez del teorema del producto y del cociente: primero los límites individuales, después el denominador. Te ahorra escribir una cuenta que no vale y te indica con claridad cuándo debes cambiar a factorización, L'Hôpital u otra técnica.
->
-> **Ejemplo:** Para `lim_{x \to 2} (x^2 - 1)/(x + 3)` el diagrama lleva por la rama del cociente: los límites individuales existen y el denominador tiende a 5, así que el resultado es 3/5.
-
-## 📊 Límite de una potencia
-
-> [!info] 🚀 Teorema de la Potencia Si $\lim_{x \to a} f(x) = L$ existe, entonces:
->
-> **Potencia entera:** $\lim_{x \to a} [f(x)]^n = L^n$ (para $n \in \mathbb{Z}$)
->
-> **Raíz n-ésima:** $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$ (si la raíz está definida)
-
-### 🔢 Tipos de Potencias
-
-> [!success] 📈 Clasificación por Exponente
->
-> **1. Exponente entero positivo:** $$\lim_{x \to a} [f(x)]^n = L^n, \quad n \in \mathbb{N}$$
->
-> **2. Exponente entero negativo:** $$\lim_{x \to a} [f(x)]^{-n} = \frac{1}{L^n}, \quad L ≠ 0$$
->
-> **3. Exponente racional:** $$\lim_{x \to a} [f(x)]^{p/q} = L^{p/q}, \quad \text{si } L^{p/q} \text{ está definida}$$
->
-> |Tipo de Potencia|Condiciones|Ejemplo|Resultado|
-> |---|---|---|---|
-> |Cuadrado|$L$ cualquier|$\lim_{x \to 2} (x-1)^2$|$(2-1)^2 = 1$|
-> |Cubo|$L$ cualquier|$\lim_{x \to 3} (x+1)^3$|$(3+1)^3 = 64$|
-> |Raíz cuadrada|$L \geq 0$|$\lim_{x \to 4} \sqrt{x-3}$|$\sqrt{4-3} = 1$|
-> |Raíz cúbica|$L$ cualquier|$\lim_{x \to -1} \sqrt[3]{x+9}$|$\sqrt[3]{-1+9} = 2$|
-> |Potencia negativa|$L ≠ 0$|$\lim_{x \to 1} (x+1)^{-2}$|$(1+1)^{-2} = \frac{1}{4}$|
-
-### ⚠️ Casos Especiales y Restricciones
-
-> [!warning] 🚨 Condiciones Importantes
->
-> **Para raíces pares:** $L \geq 0$ (en números reales) **Para raíces impares:** $L$ puede ser cualquier número real **Para exponentes negativos:** $L ≠ 0$ **Para exponentes fraccionarios:** Verificar dominio y restricciones
->
-
-> [!example] 🎯 Ejemplos de Potencias
->
-> **Ejemplo 1: Potencia positiva** $$\lim_{x \to 2} (x^2 - 1)^3$$
->
-> **Solución:**
->
-> - $\lim_{x \to 2} (x^2 - 1) = 4 - 1 = 3$
-> - **Resultado:** $3^3 = 27$
->
-> **Ejemplo 2: Raíz cuadrada** $$\lim_{x \to 5} \sqrt{2x - 1}$$
->
-> **Solución:**
->
-> - $\lim_{x \to 5} (2x - 1) = 10 - 1 = 9$
-> - Verificar: $9 \geq 0$ ✅
-> - **Resultado:** $\sqrt{9} = 3$
->
-> **Ejemplo 3: Potencia negativa** $$\lim_{x \to 1} \frac{1}{(x + 2)^2}$$
->
-> **Solución:**
->
-> - $\lim_{x \to 1} (x + 2) = 3 ≠ 0$ ✅
-> - **Resultado:** $\frac{1}{3^2} = \frac{1}{9}$
-
-## 🔗 Límite de composición de funciones
-
-> [!info] 🎭 Teorema de Composición Si $\lim_{x \to a} g(x) = L$ y $f$ es continua en $L$, entonces: $$\lim_{x \to a} f(g(x)) = f\left(\lim_{x \to a} g(x)\right) = f(L)$$
->
-> **Condición clave:** $f$ debe ser continua en el punto $L$
-
-### 🔄 Proceso de Evaluación
-
-> [!tip] 📋 Algoritmo para Composiciones
->
-> **Paso 1:** Calcular $\lim_{x \to a} g(x) = L$
->
-> **Paso 2:** Verificar que $f$ es continua en $L$
->
-> **Paso 3:** Aplicar $\lim_{x \to a} f(g(x)) = f(L)$
-
-> [!info] 🖼️ Proceso de Evaluación
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_03.svg]]
->
-> **Se lee así:** Se ve un recorrido de peldaños: partir del límite de una composición, calcular primero el límite de la función interna y llegar a un rombo que pregunta si ese límite existe. Si existe, un segundo rombo indaga si la función externa es **continua** en ese valor y solo entonces se aplica f en L; cada rombo fallido abre una salida que detiene el procedimiento.
->
-> **Por qué importa:** El orden importa: primero se resuelve la función interna y solo después se evalúa la externa en ese valor, y solo si la externa es continua. Saltarse esa verificación es la causa más común de resultados falsos en límites compuestos con `sin`, `e^u` o `ln`.
->
-> **Ejemplo:** Para `lim_{x \to 2} ln(x^2 - 3)` el límite interno es 1, se verifica que `ln` es continua en 1 y el resultado es `ln(1) = 0`.
-
-### 📊 Tipos Comunes de Composiciones
-
-> [!success] 🎯 Ejemplos Típicos
->
-> **1. Función dentro de trigonométrica:** $$\lim_{x \to a} \sin(g(x)) = \sin\left(\lim_{x \to a} g(x)\right)$$
->
-> **2. Función dentro de exponencial:** $$\lim_{x \to a} e^{g(x)} = e^{\lim_{x \to a} g(x)}$$
->
-> **3. Función dentro de logaritmo:** $$\lim_{x \to a} \ln(g(x)) = \ln\left(\lim_{x \to a} g(x)\right)$$ (si $\lim g(x) > 0$)
->
-> |Función Externa $f$|Condición en $L$|Ejemplo|Evaluación|
-> |---|---|---|---|
-> |$\sin(u)$|Siempre continua|$\lim_{x \to 0} \sin(x^2)$|$\sin(0) = 0$|
-> |$e^u$|Siempre continua|$\lim_{x \to 1} e^{2x-2}$|$e^{0} = 1$|
-> |$\ln(u)$|$L > 0$|$\lim_{x \to 2} \ln(x^2)$|$\ln(4)$|
-> |$\sqrt{u}$|$L \geq 0$|$\lim_{x \to 3} \sqrt{x+1}$|$\sqrt{4} = 2$|
-> |$\frac{1}{u}$|$L ≠ 0$|$\lim_{x \to 1} \frac{1}{x+2}$|$\frac{1}{3}$|
-
-> [!example] 🎨 Ejemplos de Composición
->
-> **Ejemplo 1: Trigonométrica compuesta** $$\lim_{x \to \pi/4} \cos(2x)$$
->
-> **Solución:**
->
-> - Sea $g(x) = 2x$, entonces $\lim_{x \to \pi/4} g(x) = \pi/2$
-> - $f(u) = \cos(u)$ es continua en $\pi/2$
-> - **Resultado:** $\cos(\pi/2) = 0$
->
-> **Ejemplo 2: Exponencial compuesta** $$\lim_{x \to 0} e^{x^2 + 2x}$$
->
-> **Solución:**
->
-> - Sea $g(x) = x^2 + 2x$, entonces $\lim_{x \to 0} g(x) = 0$
-> - $f(u) = e^u$ es continua en $0$
-> - **Resultado:** $e^0 = 1$
->
-> **Ejemplo 3: Logaritmo compuesto** $$\lim_{x \to 2} \ln(x^2 - 3)$$
->
-> **Solución:**
->
-> - Sea $g(x) = x^2 - 3$, entonces $\lim_{x \to 2} g(x) = 1$
-> - Verificar: $1 > 0$ ✅
-> - $f(u) = \ln(u)$ es continua en $1$
-> - **Resultado:** $\ln(1) = 0$
-
-## 🧠 Técnica de Estudio: Mnemotecnia "SPCP"
-
-> [!tip] 🎓 Método "SPCP" para Teoremas de Límites
->
-> **S** - **S**uma: límite de suma = suma de límites **P** - **P**roducto: límite de producto = producto de límites  
-> **C** - **C**ociente: límite de cociente = cociente de límites (denominador ≠ 0) **P** - **P**otencia: límite de potencia = potencia del límite
->
-> **Frase nemotécnica:** _"Suma, Producto, Cociente, Potencia - Siempre Preservan Cálculos Precisos"_
->
-> **Regla adicional para composición:** _"Componer Funciones: Límite interno + Continuidad externa"_
-
-## 📊 Tabla Resumen de Teoremas
-
-> [!info] 📋 Referencia Rápida
->
-> |Operación|Teorema|Condiciones|Ejemplo|
-> |---|---|---|---|
-> |**Suma**|$\lim [f ± g] = \lim f ± \lim g$|Ambos límites existen|$\lim (x+1) + \lim (2x) = 3+4 = 7$|
-> |**Producto**|$\lim [f \cdot g] = \lim f \cdot \lim g$|Ambos límites existen|$\lim (x) \cdot \lim (x+1) = 2 \cdot 3 = 6$|
-> |**Cociente**|$\lim [f/g] = \frac{\lim f}{\lim g}$|Ambos existen, $\lim g ≠ 0$|$\frac{\lim (x+1)}{\lim (x-1)} = \frac{3}{1} = 3$|
-> |**Potencia**|$\lim [f^n] = (\lim f)^n$|Límite existe, potencia definida|$\lim (x+1)^2 = 3^2 = 9$|
-> |**Composición**|$\lim f(g(x)) = f(\lim g(x))$|$\lim g$ existe, $f$ continua|$\lim \sin(x) = \sin(0) = 0$|
-
-## 📚 Referencias y Conexiones
-
-> [!quote] 🔗 Enlaces a Otras Notas
->
-> - 02 - Propiedades y Teoremas de los Límites - Aplicación práctica de los teoremas
-> - Continuidad de Funciones - Requisito para composición
-> - Límites Indeterminados - Casos donde los teoremas no aplican directamente
-> - Álgebra de Funciones - Operaciones básicas entre funciones
-> - [[05 - Funciones compuestas]] - Teoría de composición de funciones
-
-## 📖 Notas Recomendadas para Estudio Complementario
-
-> [!info] 📝 Secuencia de Aprendizaje Óptima
->
-> **Fundamentos:**
->
-> 1. **[[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]]** - Base conceptual
-> 2. **Propiedades de los Números Reales** - Operaciones algebraicas
->
-> **Aplicaciones:** 3. **Técnicas de Factorización** - Para casos indeterminados 4. **[[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]]** - Alternativa para formas indeterminadas
->
-> **Extensiones:** 5. **[[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]** - Comportamiento asintótico 6. **[[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]]** - Aplicación práctica de límites
-
-## 🎯 Ejercicios Progresivos
-
-> [!example] 💪 Práctica Estructurada
->
-> **Nivel 1 - Operaciones Básicas:** 🟢
->
-> - $\lim_{x \to 2} [(x^2 + 1) + (3x - 1)]$
-> - $\lim_{x \to 1} [(2x + 3)(x - 1)]$
-> - $\lim_{x \to 3} \frac{x^2 - 1}{x + 1}$
->
-> **Nivel 2 - Potencias y Raíces:** 🟡
->
-> - $\lim_{x \to 4} (x - 3)^3$
-> - $\lim_{x \to 8} \sqrt[3]{x + 1}$
-> - $\lim_{x \to 2} \frac{1}{(x + 1)^2}$
->
-> **Nivel 3 - Composiciones:** 🟠
->
-> - $\lim_{x \to 0} \sin(x^2 + x)$
-> - $\lim_{x \to 1} e^{2x - 2}$
-> - $\lim_{x \to 3} \ln(x^2 - 8)$
->
-> **Nivel 4 - Combinados:** 🔴
->
-> - $\lim_{x \to 2} \frac{(x+1)^2 \cdot \sin(x-2)}{e^{x-2} - 1}$
-> - $\lim_{x \to 0} \sqrt{1 + x^2} \cdot \cos(2x)$
-
-## 🔍 Casos Especiales y Advertencias
-
-> [!warning] ⚠️ Situaciones Problemáticas Comunes
->
-> **1. División por cero:**
->
-> - Verificar siempre que el denominador no sea cero
-> - Si es cero, usar técnicas especiales
->
-> **2. Raíces de números negativos:**
+> Si $f$ está **definida** y es **continua** en $x = a$, entonces
 >
-> - Para raíces pares: verificar que el argumento sea ≥ 0
-> - Para raíces impares: sin restricciones
+> $$\lim_{x \to a} f(x) = f(a).$$
 >
-> **3. Logaritmos de números no positivos:**
->
-> - Verificar que el argumento sea > 0
-> - Si no, el límite puede no existir
->
-> **4. Composiciones discontinuas:**
->
-> - La función externa debe ser continua en el límite interno
-> - Si no, no se puede aplicar el teorema
-
----
-
-
-# 📈 Límites Básicos y Directos
-
-## 🎯 Límites por Sustitución Directa
-
-> [!info] 💡 Definición Fundamental Los **límites por sustitución directa** se pueden calcular cuando la función es **continua** en el punto de aproximación. En estos casos: $$\lim_{x \to a} f(x) = f(a)$$
->
-> Simplemente **sustituimos** el valor de $a$ directamente en la función.
-
-### 📊 Funciones Continuas
-
-> [!success] ✅ Características de Continuidad Una función $f(x)$ es **continua** en $x = a$ si:
->
-> 1. $f(a)$ está definida
-> 2. $\lim_{x \to a} f(x)$ existe
-> 3. $\lim_{x \to a} f(x) = f(a)$
->
-> **Condición clave:** Si la función es continua → Aplicamos sustitución directa
-
-> [!info] 🖼️ Funciones Continuas
+> Es decir, basta sustituir el valor en la función.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_04.svg]]
 >
-> **Se lee así:** El esquema es un atajo de dos rutas: del rectángulo inicial sale un rombo que pregunta si la función es continua en el punto. La rama afirmativa va a la **sustitución directa** y de ahí al resultado f(a), mientras que la negativa salta a un rectángulo de otras técnicas, que se desglosa en factorización y en la regla de L'Hôpital.
+> **Se lee así:** el diagrama es un atajo de dos rutas: del rectángulo inicial sale un rombo que pregunta si la función es continua en el punto. La rama afirmativa va a la **sustitución directa** y de ahí al resultado $f(a)$; la negativa salta a un rectángulo de otras técnicas, que se desglosa en factorización y en la regla de L'Hôpital.
 >
-> **Por qué importa:** Este atajo te dice cuándo puedes limitarte a sustituir y cuándo tienes que trabajar: la continuidad es la llave. Aplicarlo te ahorra factorizar o invocar L'Hôpital en límites que se resuelven en un segundo, como el de cualquier polinomio.
+> **Por qué importa:** la continuidad es la llave que decide si trabajas o no. Aplicar el atajo te ahorra factorizar o invocar L'Hôpital en límites que se resuelven en un segundo, como los de cualquier polinomio.
 >
-> **Ejemplo:** Para `lim_{x \to 2} (3x^3 - 2x^2 + x - 5)` la función es continua, así que sustituyes directamente y obtienes 13 sin factorizar ni nada más.
+> **Ejemplo:** para $\lim_{x \to 2} (3x^3 - 2x^2 + x - 5)$ la función es continua, así que sustituyes y obtienes $13$ sin factorizar.
 
-### 🔢 Polinomios y Funciones Racionales
+> [!note] 📋 Definición — Teorema del emparedado (sandwich)
+>
+> Si existen tres funciones $g$, $f$ y $h$ tales que $g(x) \leq f(x) \leq h(x)$ para toda $x$ cerca de $a$ (sin importar en $a$), y si
+>
+> $$\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L,$$
+>
+> entonces $\lim_{x \to a} f(x) = L$.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_08.svg]]
+>
+> **Se lee así:** el esquema arranca en la búsqueda de dos funciones que acoten a $f(x)$, sigue con la verificación de la cadena $g(x) \leq f(x) \leq h(x)$ cerca de $a$ y llega a un rombo que pregunta si los límites de $g$ y $h$ coinciden en $L$. Si no coinciden, el teorema no permite concluir; si coinciden, la conclusión es que el límite de $f$ es $L$.
+>
+> **Por qué importa:** es la herramienta que resuelve límites que no se pueden calcular ni sustituyendo ni factorizando, como $\lim_{x \to 0} x^2 \sin(1/x)$. La rama negativa del rombo recuerda que acotar por un lado solo no basta: hace falta que las dos cotas converjan.
+>
+> **Ejemplo:** como $-x^2 \leq x^2 \sin(1/x) \leq x^2$ y ambos extremos tienden a $0$, el límite central es $0$.
 
-> [!example] 📝 Polinomios Los **polinomios** son continuos en todos los números reales: $$P(x) = a_nx^n + a_{n-1}x^{n-1} + ... + a_1x + a_0$$
+> [!note] 📋 Definición — Caracterización por sucesiones
 >
-> **Ejemplo:** $$\lim_{x \to 2} (3x^3 - 2x^2 + x - 5)$$
+> $\lim_{x \to a} f(x) = L$ si y solo si, para **toda** sucesión $x_n \to a$ con $x_n \neq a$ para todo $n$, se cumple $f(x_n) \to L$.
 >
-> **Solución:** $P(2) = 3(8) - 2(4) + 2 - 5 = 24 - 8 + 2 - 5 = 13$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_09.svg]]
 >
+> **Se lee así:** el esquema parte de tomar cualquier sucesión $x_n$ que tienda a $a$, pasa por un rombo que exige que cada término sea distinto de $a$, evalúa la sucesión $f(x_n)$ y llega a un segundo rombo: si **todas** las sucesiones producen valores que tienden a $L$, el límite de $f$ es $L$; si una sola sucesión falla, esa sucesión revela que el límite no existe.
+>
+> **Por qué importa:** convierte un problema de todos los $x$ en un problema de sucesiones, y sobre todo da una **receta para desmentir**: basta una sucesión que dé valores distintos para probar que el límite no es el propuesto.
+>
+> **Ejemplo:** $\lim_{x \to 0} \sin(1/x)$ no existe porque con $x_n = 1/(n\pi)$ se obtiene $\sin(n\pi) = 0$, mientras que con $y_n = 1/((2n+1)\pi/2)$ se obtiene $\sin = 1$.
 
-> [!example] 🔄 Funciones Racionales Para funciones racionales $f(x) = \frac{P(x)}{Q(x)}$:
+> [!note] 📋 Definición — Criterio de Cauchy
 >
-> - **Continuas** cuando $Q(a) ≠ 0$
-> - **Discontinuas** cuando $Q(a) = 0$
+> $\lim_{x \to a} f(x)$ existe (y es finito) si y solo si: para todo $\varepsilon > 0$ existe $\delta > 0$ tal que, para todo $x, z$ con $0 < |x - a| < \delta$ y $0 < |z - a| < \delta$,
 >
-> **Ejemplo:** $$\lim_{x \to 3} \frac{x^2 + 2x - 1}{x - 1}$$
+> $$|f(x) - f(z)| < \varepsilon.$$
 >
-> **Verificación:** $Q(3) = 3 - 1 = 2 ≠ 0$ ✅ **Solución:** $\frac{9 + 6 - 1}{2} = \frac{14}{2} = 7$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_10.svg]]
 >
-> |Tipo de Función|Dominio de Continuidad|Ejemplo|Límite en x = 1|
-> |---|---|---|---|
-> |Polinomial|$\mathbb{R}$ (todos los reales)|$x^2 + 3x - 2$|$1 + 3 - 2 = 2$|
-> |Racional|$\mathbb{R}$ excepto donde denominador = 0|$\frac{x+2}{x-3}$|$\frac{3}{-2} = -\frac{3}{2}$|
+> **Se lee así:** el esquema arranca preguntando por la distancia entre valores cercanos, pasa por un rombo que exige la condición $\forall \varepsilon > 0\ \exists \delta > 0$ y por otro que comprueba que si $x$ y $z$ están cerca de $a$, entonces $f(x)$ y $f(z)$ están cerca la una de la otra. Si ambas se cumplen, la función es Cauchy cerca de $a$ y existe un único límite; si alguna falla, la condición de Cauchy falla.
+>
+> **Por qué importa:** a diferencia de la definición usual, este criterio **no necesita conocer $L$** para verificar la existencia. Por eso sirve para demostrar que un límite existe antes de saber cuál es.
+>
+> **Ejemplo:** para $f(x) = \sum_{k=1}^{n} 1/k^2$ acotada cerca de $0$, la diferencia $|f(x) - f(z)|$ se controla por la cola de la serie y se hace menor que $\varepsilon$ con un $\delta$ adecuado.
 
-### 📐 Funciones Trigonométricas
-
-> [!tip] 🌊 Continuidad Trigonométrica Las funciones trigonométricas básicas tienen dominios específicos de continuidad:
+> [!note] 📋 Definición — Unicidad del límite
 >
-> |Función|Dominio de Continuidad|Puntos de Discontinuidad|
-> |---|---|---|
-> |$\sin(x)$|$\mathbb{R}$|Ninguno|
-> |$\cos(x)$|$\mathbb{R}$|Ninguno|
-> |$\tan(x)$|$\mathbb{R} - {\frac{\pi}{2} + n\pi}$|$x = \frac{\pi}{2} + n\pi$|
-> |$\cot(x)$|$\mathbb{R} - {n\pi}$|$x = n\pi$|
-
-> [!example] 📊 Ejemplos Trigonométricos **Ejemplo 1:** $\lim_{x \to \pi/6} \sin(x) = \sin(\pi/6) = \frac{1}{2}$
+> Si $\lim_{x \to a} f(x)$ existe, es **único**: no pueden convivir dos valores distintos $L_1 \neq L_2$ con la función acercándose a ambos.
 >
-> **Ejemplo 2:** $\lim_{x \to \pi/4} \cos(x) = \cos(\pi/4) = \frac{\sqrt{2}}{2}$
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_11.svg]]
 >
-> **Ejemplo 3:** $\lim_{x \to \pi/3} \tan(x) = \tan(\pi/3) = \sqrt{3}$
-
-> [!info] 🖼️ Funciones Trigonométricas
+> **Se lee así:** el esquema supone dos límites $L_1$ y $L_2$, toma una tolerancia menor que la mitad de su distancia y obliga a que cerca de $a$ la misma $f(x)$ esté cerca de $L_1$ y a la vez cerca de $L_2$. El rombo pregunta si las dos zonas de tolerancia se contradicen: si se contradicen, la conclusión es que $L_1 = L_2$.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_05.svg]]
+> **Por qué importa:** la unicidad garantiza que "buscar el límite" tenga sentido y que métodos distintos (sustitución, emparedado, tablas) no puedan dar respuestas incompatibles.
 >
-> **Se lee así:** Es un gráfico circular partido en dos porciones, con un título arriba que anuncia el bloque de continuidad trigonométrica. La porción grande, del 60%, corresponde a las funciones continuas salvo en puntos concretos, y la chica, del 40%, a las continuas en todo ℝ; la leyenda de colores aclara a cuál parte corresponde cada rótulo.
->
-> **Por qué importa:** Fíjate en que la mayor parte de las funciones trigonométricas tiene puntos de corte, así que antes de sustituir tienes que verificar la continuidad en ese punto. Esto te evita responder `tan(π/2)` cuando lo que te piden es el **límite**.
->
-> **Ejemplo:** Un caso de la nota: `lim_{x \to π/3} tan(x)` se resuelve por sustitución directa y da `√3`, porque la tangente es continua en `π/3`.
-
-### 📈 Funciones Exponenciales y Logarítmicas
-
-> [!success] 🚀 Exponenciales Las funciones exponenciales $f(x) = a^x$ donde $a > 0, a ≠ 1$:
->
-> - **Continuas** en todos los números reales
-> - **Dominio:** $\mathbb{R}$
-> - **Rango:** $(0, +∞)$
->
-
-> [!success] 📊 Logarítmicas  
->
-> Las funciones logarítmicas $f(x) = \log_a(x)$ donde $a > 0, a ≠ 1$:
->
-> - **Continuas** para $x > 0$
-> - **Dominio:** $(0, +∞)$
-> - **Rango:** $\mathbb{R}$
->
-> |Función|Ejemplo de Límite|Sustitución|Resultado|
-> |---|---|---|---|
-> |Exponencial|$\lim_{x \to 2} e^x$|$e^2$|$≈ 7.39$|
-> |Exponencial|$\lim_{x \to 0} 2^x$|$2^0$|$1$|
-> |Logarítmica|$\lim_{x \to 1} \ln(x)$|$\ln(1)$|$0$|
-> |Logarítmica|$\lim_{x \to e} \ln(x)$|$\ln(e)$|$1$|
-
-> [!warning] ⚠️ Casos Problemáticos **NO usar sustitución directa cuando:**
->
-> - La función no está definida en el punto
-> - Resulta en formas indeterminadas: $\frac{0}{0}$, $\frac{∞}{∞}$, $0 \cdot ∞$
-> - Hay discontinuidades en el punto de evaluación
->
-> **En estos casos:** Usar factorización, racionalización, L'Hôpital, etc.
-
-## 🧠 Técnica de Estudio: Mnemotecnia "CESD"
-
-> [!tip] 🎓 Método "CESD" para Límites Directos
->
-> **C** - **C**ontinuidad verificada **E** - **E**valuación posible  
-> **S** - **S**ustitución directa **D** - **D**irecto al resultado
->
-> **Frase nemotécnica:** _"Cuando Es Seguro, Directamente"_
->
-> **Proceso:**
->
-> 1. ✅ Verificar continuidad en el punto
-> 2. 🎯 Sustituir el valor directamente
-> 3. 📊 Obtener el resultado
-
-## 📊 Algoritmo de Decisión
-
-> [!info] 🖼️ Algoritmo de Decisión
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_06.svg]]
->
-> **Se lee así:** El diagrama es un filtro de dos decisiones sucesivas: primero un rombo que pregunta si el punto de aproximación pertenece al dominio, y luego otro que pregunta si la función es continua ahí. Cada no lleva a una salida distinta, técnicas especiales si el punto está fuera del dominio y límites laterales con análisis de discontinuidad si no es continua; el sí doble desemboca en la sustitución directa.
->
-> **Por qué importa:** Fíjate en que el diagrama ordena las comprobaciones de más básica a más específica: primero que el punto esté en el dominio y luego la continuidad. Así detectas temprano los casos en que no se puede sustituir y evitas perder tiempo con técnicas que no tocan el problema.
->
-> **Ejemplo:** Para `lim_{x \to 0} (2x + 1)/(x^2 + 4)` el punto está en el dominio y la función es continua, así que la sustitución directa da 1/4.
-
-## 📚 Referencias y Conexiones
-
-> [!quote] 🔗 Enlaces a Otras Notas
->
-> - Continuidad de Funciones - Fundamento teórico para sustitución directa
-> - Límites Indeterminados - Casos donde NO aplicar sustitución
-> - [[02 – Dominio y Rango]] - Verificación previa a la evaluación
-> - Funciones Elementales - Catálogo de funciones continuas
-> - Gráficas de Funciones - Interpretación visual de continuidad
-
-## 📖 Notas Recomendadas para Estudio Complementario
-
-> [!info] 📝 Ruta de Aprendizaje Sugerida
->
-> **Prerrequisitos:**
->
-> 1. **Definición de Función** - Conceptos básicos
-> 2. **Definición Informal de Límite** - Intuición geométrica
->
-> **Temas Paralelos:** 3. **Álgebra de Límites** - Operaciones con límites 4. **[[Unidad 2 - Límites/II - Técnicas Básicas/03 - Límites en Gráficas.md|03 - Límites en Gráficas.md]]** - Visualización de límites
->
-> **Siguientes Pasos:** 5. **[[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]]** - Extensión del concepto 6. **[[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]]** - Casos complejos
-
-## 🎯 Ejercicios de Práctica Progresiva
-
-> [!example] 💪 Secuencia de Entrenamiento
->
-> **Nivel 1 - Funciones Básicas:** 🟢
->
-> - $\lim_{x \to 2} (x^2 + 3x - 1)$
-> - $\lim_{x \to -1} (2x^3 - x + 4)$
->
-> **Nivel 2 - Funciones Racionales:** 🟡
->
-> - $\lim_{x \to 3} \frac{x^2 - 1}{x + 2}$
-> - $\lim_{x \to 0} \frac{2x + 1}{x^2 + 4}$
->
-> **Nivel 3 - Trigonométricas:** 🟠
->
-> - $\lim_{x \to \pi/2} \cos(x)$
-> - $\lim_{x \to \pi/6} (2\sin(x) + 1)$
->
-> **Nivel 4 - Exponenciales:** 🔴
->
-> - $\lim_{x \to 1} e^{2x-1}$
-> - $\lim_{x \to 2} \ln(x^2 - 3)$
+> **Ejemplo:** $\lim_{x \to 1} \frac{x^2-1}{x-1}$ vale $2$, y no puede valer a la vez $0$ o $3$: cualquier banda de $\varepsilon = 1/2$ alrededor de $2$ excluye a los otros dos.
 
 ---
 
-**Tags:** #MATG1045 #unidad2 #propiedades-y-teoremas-de-los-limites #matemáticas #cálculo #límites #álgebra-límites #propiedades-límites #operaciones-límites #técnicas-límites #continuidad #university #calculus-fundamentals #mathematical-properties #teoremas #suma #producto #cociente #potencia #composición #técnicas-estudio #calculus-theorems #análisis-matemático #sustitución-directa #funciones-continuas #polinomios #trigonométricas #exponenciales #logarítmicas
+## 📐 Teoremas del álgebra de límites
+
+> [!success] ✅ Teorema de suma y diferencia
+>
+> Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, entonces:
+>
+> $$\lim_{x \to a} [f(x) + g(x)] = L + M, \qquad \lim_{x \to a} [f(x) - g(x)] = L - M.$$
+>
+> **Reglas derivadas:**
+>
+> 1. **Constante:** $\lim_{x \to a} c = c$
+> 2. **Múltiplo:** $\lim_{x \to a} [c \cdot f(x)] = c \cdot L$
+> 3. **Suma finita:** $\lim_{x \to a} [f_1 + \dots + f_n] = L_1 + \dots + L_n$
+>
+> | Operación | Notación | Resultado | Condición |
+> |---|---|---|---|
+> | Suma | $\lim [f + g]$ | $L + M$ | Ambos límites existen |
+> | Diferencia | $\lim [f - g]$ | $L - M$ | Ambos límites existen |
+> | Constante por función | $\lim [c \cdot f]$ | $c \cdot L$ | El límite de $f$ existe |
+> | Suma múltiple | $\lim [f_1 + \dots + f_n]$ | $L_1 + \dots + L_n$ | Todos existen |
+>
+> **Ejemplo:** $\lim_{x \to 2} [(x^2 + 3) + (2x - 1)] = 7 + 3 = 10$, porque $x^2 + 3 \to 7$ y $2x - 1 \to 3$.
+
+> [!success] ✅ Teorema de producto y cociente
+>
+> Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, entonces:
+>
+> $$\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M, \qquad \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M} \ \text{si } M \neq 0.$$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_02.svg]]
+>
+> **Se lee así:** el diagrama abre con una casilla de producto o cociente y un rombo que exige verificar primero que los límites individuales existen; la rama negativa lleva a una casilla que advierte que el teorema no se aplica. Si existen, otro rombo separa producto y cociente: el producto va directo a multiplicar límites y el cociente pasa por un rombo extra sobre el denominador.
+>
+> **Por qué importa:** este es el filtro de validez de ambas reglas: primero los límites individuales, después el denominador. Te ahorra escribir una cuenta que no vale y te indica cuándo cambiar a factorización u otra técnica.
+>
+> **Ejemplo:** para $\lim_{x \to 2} \frac{x^2 - 1}{x + 3}$ los límites individuales existen y el denominador tiende a $5$, así que el resultado es $3/5$.
+>
+> **Casos del cociente:**
+>
+> | Situación | $\lim f(x)$ | $\lim g(x)$ | $\lim \frac{f(x)}{g(x)}$ | Acción |
+> |---|---|---|---|---|
+> | Normal | $L$ | $M \neq 0$ | $L/M$ | Aplicar el teorema |
+> | Infinito | $L \neq 0$ | $0$ | $\pm\infty$ | Límite no existe (asíntota) |
+> | Indeterminada | $0$ | $0$ | ¿? | Factorizar o racionalizar |
+> | Indeterminada | $\infty$ | $\infty$ | ¿? | Ver nota de formas indeterminadas |
+
+> [!success] ✅ Teorema de potencia y raíz
+>
+> Si $\lim_{x \to a} f(x) = L$ existe, entonces:
+>
+> $$\lim_{x \to a} [f(x)]^n = L^n \ (n \in \mathbb{Z}), \qquad \lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L} \ \text{(si la raíz está definida)}.$$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_07.svg]]
+>
+> **Se lee así:** el esquema arranca en la evaluación de una potencia o una raíz y pasa por un rombo que pregunta si el límite de $f(x)$ existe y es finito; si no, la rama lleva a no aplicar la regla. Si existe, un segundo rombo comprueba que la potencia esté definida sobre el dominio y solo entonces se sustituye el límite $L$ en la potencia, con resultado $L$ elevado al exponente.
+>
+> **Por qué importa:** las dos restricciones son las que suelen olvidarse. Exponente negativo exige $L \neq 0$, raíz par exige $L \geq 0$ y exponente racional $p/q$ exige verificar el dominio de la raíz.
+>
+> **Ejemplo:** $\lim_{x \to 5} \sqrt{2x - 1} = \sqrt{9} = 3$, porque el límite interno es $9 \geq 0$ y la raíz está definida.
+>
+> | Tipo de potencia | Condición | Ejemplo | Resultado |
+> |---|---|---|---|
+> | Cuadrado | $L$ cualquiera | $\lim_{x \to 2} (x-1)^2$ | $1$ |
+> | Raíz cuadrada | $L \geq 0$ | $\lim_{x \to 4} \sqrt{x-3}$ | $1$ |
+> | Raíz cúbica | $L$ cualquiera | $\lim_{x \to -1} \sqrt[3]{x+9}$ | $2$ |
+> | Potencia negativa | $L \neq 0$ | $\lim_{x \to 1} (x+1)^{-2}$ | $1/4$ |
+
+> [!note] 🎭 Teorema de composición de funciones
+>
+> Si $\lim_{x \to a} g(x) = L$ y $f$ es **continua en $L$**, entonces
+>
+> $$\lim_{x \to a} f(g(x)) = f\!\left(\lim_{x \to a} g(x)\right) = f(L).$$
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_03.svg]]
+>
+> **Se lee así:** se ve un recorrido de peldaños: partir del límite de una composición, calcular primero el límite de la función interna y llegar a un rombo que pregunta si ese límite existe. Si existe, un segundo rombo indaga si la función externa es **continua** en ese valor y solo entonces se aplica $f$ en $L$; cada rombo fallido abre una salida que detiene el procedimiento.
+>
+> **Por qué importa:** el orden importa: primero se resuelve la función interna y solo después se evalúa la externa en ese valor, y solo si la externa es continua. Saltarse esa verificación es la causa más común de resultados falsos en límites compuestos con $\sin$, $e^u$ o $\ln$.
+>
+> **Ejemplo:** para $\lim_{x \to 2} \ln(x^2 - 3)$ el límite interno es $1$, se verifica que $\ln$ es continua en $1$ y el resultado es $\ln(1) = 0$.
+>
+> | Función externa $f$ | Condición en $L$ | Ejemplo | Evaluación |
+> |---|---|---|---|
+> | $\sin(u)$ | Siempre continua | $\lim_{x \to 0} \sin(x^2)$ | $\sin(0) = 0$ |
+> | $e^u$ | Siempre continua | $\lim_{x \to 1} e^{2x-2}$ | $e^{0} = 1$ |
+> | $\ln(u)$ | $L > 0$ | $\lim_{x \to 2} \ln(x^2)$ | $\ln(4)$ |
+> | $\sqrt{u}$ | $L \geq 0$ | $\lim_{x \to 3} \sqrt{x+1}$ | $\sqrt{4} = 2$ |
+> | $1/u$ | $L \neq 0$ | $\lim_{x \to 1} \frac{1}{x+2}$ | $1/3$ |
+
+> [!tip] 🎓 Mnemotecnia "SPCP"
+>
+> - **S**uma: límite de suma = suma de límites.
+> - **P**roducto: límite de producto = producto de límites.
+> - **C**ociente: límite de cociente = cociente de límites (denominador $\neq 0$).
+> - **P**otencia: límite de potencia = potencia del límite.
+>
+> **Frase:** *"Suma, Producto, Cociente, Potencia — Siempre Preservan Cálculos Precisos"*.
+>
+> **Regla adicional para composición:** *"Componer funciones: límite interno + continuidad externa"*.
+
+---
+
+## 🚀 Límites directos: sustitución y continuidad
+
+> [!success] ✅ Polinomios y funciones racionales
+>
+> - **Polinomios:** continuos en todos los reales, así que $\lim_{x \to a} P(x) = P(a)$ siempre.
+> - **Racionales:** $f(x) = P(x)/Q(x)$ es continua donde $Q(a) \neq 0$; donde $Q(a) = 0$ hay que analizar.
+>
+> | Tipo de función | Dominio de continuidad | Ejemplo | $\lim_{x \to 1}$ |
+> |---|---|---|---|
+> | Polinomial | $\mathbb{R}$ | $x^2 + 3x - 2$ | $1 + 3 - 2 = 2$ |
+> | Racional | $\mathbb{R}$ salvo donde el denominador es $0$ | $\frac{x+2}{x-3}$ | $\frac{3}{-2} = -\frac{3}{2}$ |
+>
+> **Ejemplo:** $\lim_{x \to 3} \frac{x^2 + 2x - 1}{x - 1} = \frac{9 + 6 - 1}{3 - 1} = 7$, porque el denominador vale $2 \neq 0$.
+
+> [!tip] 🌊 Funciones trigonométricas, exponenciales y logarítmicas
+>
+> | Función | Dominio de continuidad | Puntos de discontinuidad |
+> |---|---|---|
+> | $\sin(x)$, $\cos(x)$ | $\mathbb{R}$ | Ninguno |
+> | $\tan(x)$ | $\mathbb{R} \setminus \{\frac{\pi}{2} + n\pi\}$ | $x = \frac{\pi}{2} + n\pi$ |
+> | $\cot(x)$ | $\mathbb{R} \setminus \{n\pi\}$ | $x = n\pi$ |
+> | $a^x$ ($a > 0$, $a \neq 1$) | $\mathbb{R}$ | Ninguno |
+> | $\log_a(x)$ ($a > 0$, $a \neq 1$) | $(0, +\infty)$ | Ninguno |
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_05.svg]]
+>
+> **Se lee así:** es un gráfico circular partido en dos porciones, con un título arriba que anuncia el bloque de continuidad trigonométrica. La porción grande, del 60%, corresponde a las funciones continuas salvo en puntos concretos, y la chica, del 40%, a las continuas en todo $\mathbb{R}$; la leyenda de colores aclara a cuál parte corresponde cada rótulo.
+>
+> **Por qué importa:** la mayor parte de las funciones trigonométricas tiene puntos de corte, así que antes de sustituir tienes que verificar la continuidad en ese punto. Esto te evita responder $\tan(\pi/2)$ cuando lo que te piden es el **límite**.
+>
+> **Ejemplo:** $\lim_{x \to \pi/3} \tan(x) = \sqrt{3}$ por sustitución directa, porque la tangente es continua en $\pi/3$.
+
+> [!info] 🗺️ Algoritmo de decisión para límites directos
+>
+> 1. **¿El punto está en el dominio?** Si no, no se sustituye.
+> 2. **¿La función es continua en el punto?** Si sí, sustituir: $\lim_{x \to a} f(x) = f(a)$.
+> 3. **Si no es continua:** analizar límites laterales y discontinuidad, o aplicar técnicas especiales (factorización, racionalización, emparedado).
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Propiedades_y_Teoremas_de_los_Límites_06.svg]]
+>
+> **Se lee así:** el diagrama es un filtro de dos decisiones sucesivas: primero un rombo que pregunta si el punto de aproximación pertenece al dominio, y luego otro que pregunta si la función es continua ahí. Cada "no" lleva a una salida distinta —técnicas especiales si el punto está fuera del dominio y límites laterales con análisis de discontinuidad si no es continua—; el "sí" doble desemboca en la sustitución directa.
+>
+> **Por qué importa:** el diagrama ordena las comprobaciones de más básica a más específica: primero que el punto esté en el dominio y luego la continuidad. Así detectas temprano los casos en que no se puede sustituir y evitas perder tiempo con técnicas que no tocan el problema.
+>
+> **Ejemplo:** para $\lim_{x \to 0} \frac{2x + 1}{x^2 + 4}$ el punto está en el dominio y la función es continua, así que la sustitución directa da $1/4$.
+
+> [!warning] ⚠️ Cuándo NO usar sustitución directa
+>
+> - La función **no está definida** en el punto.
+> - Resulta una **forma indeterminada:** $0/0$, $\infty/\infty$, $0 \cdot \infty$, $\infty - \infty$.
+> - Hay **discontinuidad** en el punto de evaluación (salto o asíntota).
+>
+> **En esos casos:** factorizar, racionalizar, usar el emparedado o pasar a la nota de formas indeterminadas.
+>
+> **Por qué importa:** sustituir en una indeterminada produce una respuesta falsa con apariencia correcta, que es el error más caro en un examen.
+>
+> **Ejemplo:** $\lim_{x \to 4} \frac{x^2 - 16}{x - 4}$ da $0/0$ al sustituir; factorizando, $\frac{(x-4)(x+4)}{x-4} = x+4 \to 8$.
+
+---
+
+## ⚠️ Errores y Trampas Frecuentes
+
+> [!warning] 🚨 Errores en el álgebra de límites
+>
+> - **Dividir sin verificar el denominador:** si $M = 0$ y $L \neq 0$, el límite no existe (infinito); si ambos son $0$, es indeterminado.
+> - **Aplicar la regla con límites que no existen:** las propiedades exigen que todos los límites implicados existan y sean finitos.
+> - **Raíz de un número negativo:** para raíces pares verifica que el límite interno sea $\geq 0$; para impares no hay restricción.
+> - **Exponente negativo con $L = 0$:** la potencia no está definida y la regla no se aplica.
+> - **Componer con la externa discontinua:** $\lim f(g(x)) = f(\lim g(x))$ solo si $f$ es continua en el límite interno.
+>
+> **Por qué importa:** los cinco errores son de condiciones de aplicación, no de cálculo; ninguno se detecta revisando la aritmética, se detecta revisando las hipótesis del teorema.
+>
+> **Ejemplo:** $\lim_{x \to 0} \frac{\sin x}{x}$ no se resuelve sustituyendo ($0/0$): el límite vale $1$ por un teorema especial, no por el cociente de límites.
+
+> [!warning] 🚫 Trampas en la sustitución directa
+>
+> - **Sustituir donde no hay dominio:** $\lim_{x \to 0} \frac{1}{x}$ no se resuelve poniendo $x = 0$.
+> - **Creer que el límite es el valor de la función:** puede haber hueco o salto; el límite puede existir aunque $f(a)$ no, o ser distinto de $f(a)$.
+> - **Olvidar los laterales:** si los laterales no coinciden, el límite no existe aunque cada lado se calcule bien.
+> - **Usar la tabla como prueba:** la tabla sugiere, no demuestra; la demostración es la definición o un teorema.
+>
+> **Por qué importa:** son confusiones de concepto que arrastran el resto del problema. Revisarlas antes de dar por cerrado un ejercicio es más barato que corregirlo después.
+>
+> **Ejemplo:** en $f(x) = \frac{x^2-1}{x-1}$ con $f(1)$ definida como $0$, el límite en $1$ sigue siendo $2$: el valor fijo no entra en el límite.
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 2} [(x^2 + 3) + (2x - 1)]$ aplicando las propiedades de suma.
+>
+> > [!success]- ✅ Solución
+> >
+> > Por la propiedad de suma, el límite de la suma es la suma de los límites:
+> >
+> > $$\lim_{x \to 2} (x^2 + 3) = 4 + 3 = 7, \qquad \lim_{x \to 2} (2x - 1) = 4 - 1 = 3.$$
+> >
+> > Ambos existen y son finitos, así que se pueden combinar: $7 + 3 = 10$. Respuesta: $\lim_{x \to 2} [(x^2 + 3) + (2x - 1)] = 10$.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 3} \frac{2x^3 - x^2 + 4x - 7}{x^2 + 2x - 1}$ usando el teorema del cociente.
+>
+> > [!success]- ✅ Solución
+> >
+> > Primero verifica el denominador en $x = 3$: $9 + 6 - 1 = 14 \neq 0$, así que el cociente se puede aplicar.
+> >
+> > Numerador: $\lim_{x \to 3} (2x^3 - x^2 + 4x - 7) = 2(27) - 9 + 12 - 7 = 50$.
+> >
+> > Denominador: $\lim_{x \to 3} (x^2 + 2x - 1) = 14$.
+> >
+> > Resultado: $\frac{50}{14} = \frac{25}{7}$.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 5} \sqrt{2x - 1}$ verificando las condiciones de la raíz.
+>
+> > [!success]- ✅ Solución
+> >
+> > El límite interno es $\lim_{x \to 5} (2x - 1) = 9$, que existe y es finito.
+> >
+> > Como la raíz es par, comprueba que $9 \geq 0$: se cumple, y la raíz cuadrada está definida en ese punto.
+> >
+> > Aplica el teorema de raíz: $\lim_{x \to 5} \sqrt{2x - 1} = \sqrt{9} = 3$.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 2} \ln(x^2 - 3)$ usando el teorema de composición.
+>
+> > [!success]- ✅ Solución
+> >
+> > Función interna: $g(x) = x^2 - 3$ con $\lim_{x \to 2} g(x) = 1$.
+> >
+> > Función externa: $f(u) = \ln(u)$. Como $\ln$ es continua en $u = 1 > 0$, se puede aplicar el teorema de composición.
+> >
+> > Resultado: $\lim_{x \to 2} \ln(x^2 - 3) = \ln(1) = 0$.
+> >
+> > **Nota:** si el límite interno hubiera dado un valor $\leq 0$, la composición no se podría evaluar así.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to \pi/6} (\sin x \cdot \cos x + 2x)$ combinando las propiedades de suma y producto.
+>
+> > [!success]- ✅ Solución
+> >
+> > Por suma: $\lim_{x \to \pi/6} (\sin x \cdot \cos x) + \lim_{x \to \pi/6} (2x)$.
+> >
+> > Por producto y porque $\sin$ y $\cos$ son continuas: $\sin(\pi/6) \cdot \cos(\pi/6) = \frac{1}{2} \cdot \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4}$.
+> >
+> > Segundo término: $2 \cdot \frac{\pi}{6} = \frac{\pi}{3}$.
+> >
+> > Resultado: $\frac{\sqrt{3}}{4} + \frac{\pi}{3}$.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 4} \frac{x^2 - 16}{x - 4}$ y explica por qué no aplica el teorema del cociente.
+>
+> > [!success]- ✅ Solución
+> >
+> > Al sustituir se obtiene $\frac{16 - 16}{4 - 4} = \frac{0}{0}$, una forma indeterminada: el teorema del cociente exige que el denominador tienda a un número distinto de cero, y aquí tiende a $0$.
+> >
+> > Se factoriza el numerador: $x^2 - 16 = (x-4)(x+4)$. Para $x \neq 4$,
+> >
+> > $$\frac{x^2 - 16}{x - 4} = x + 4.$$
+> >
+> > Ahora sí se sustituye: $\lim_{x \to 4} (x + 4) = 8$. Respuesta: $8$.
+
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 0} e^{x^2 + 2x}$ y verifica las hipótesis antes de aplicar el teorema.
+>
+> > [!success]- ✅ Solución
+> >
+> > Función interna: $g(x) = x^2 + 2x$ con $\lim_{x \to 0} g(x) = 0$.
+> >
+> > Función externa: $f(u) = e^u$, que es continua en todo $\mathbb R$, en particular en $0$.
+> >
+> > Se aplica la composición: $\lim_{x \to 0} e^{x^2 + 2x} = e^{0} = 1$.
+> >
+> > **Nota:** la exponencial no necesita condición adicional sobre el límite interno; con $\ln$ sí haría falta que fuera positivo.
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Enuncio las propiedades de suma, producto, cociente y potencia con sus condiciones.
+> - [ ] Aplico la sustitución directa a polinomios, racionales y funciones elementales continuas.
+> - [ ] Identifico cuándo el cociente o la raíz no se pueden aplicar tal cual.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Descompongo un límite complejo en piezas simples y lo resuelvo con el álgebra de límites.
+> - [ ] Verifico las hipótesis de composición: límite interno existente y externa continua.
+> - [ ] Distingo una forma indeterminada de un cociente legítimo y elijo la técnica siguiente.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Aplico el teorema del emparedado a límites que no se resuelven sustituyendo.
+> - [ ] Uso la caracterización por sucesiones para demostrar que un límite no existe.
+> - [ ] Explico por qué el límite es único y qué garantiza esa unicidad en el resto del curso.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage), cap. 2: propiedades de los límites y límite directo.
+> - R. Larson, *Cálculo* (Cengage), cap. 1: álgebra de límites y límites directos.
+> - T. Apostol, *Calculus, Vol. 1* (Wiley), cap. 3: teoremas básicos y teorema del emparedado.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — de dónde salen las reglas que aquí se aplican.
+> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]] — qué hacer cuando el álgebra no alcanza.
+> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]] — el concepto que hace válida la sustitución directa.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Cuál es la condición previa de todo el álgebra de límites?::Que todos los límites individuales que se usen existan y sean finitos; si alguno no existe, la regla no se aplica.
+> - ¿Cuándo puedes resolver un límite por sustitución directa?::Cuando la función está definida y es continua en el punto: entonces $\lim_{x \to a} f(x) = f(a)$.
+> - ¿Qué hacer si el cociente da $0/0$?::No aplica el teorema del cociente: factorizar o racionalizar; si no se puede, pasar a la nota de formas indeterminadas.
+> - ¿Qué dice el teorema del emparedado?::Si $g(x) \leq f(x) \leq h(x)$ cerca de $a$ y $\lim g = \lim h = L$, entonces $\lim f = L$; las dos cotas deben converger al mismo valor.
+> - ¿Cómo se desmiente un límite con sucesiones?::Basta encontrar una sucesión $x_n \to a$ con $x_n \neq a$ cuya imagen $f(x_n)$ no tienda al valor propuesto.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — la definición $\varepsilon$-$\delta$ que fundamenta todas estas reglas.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — las mismas propiedades aplicadas a $\lim_{x \to a^+}$ y $\lim_{x \to a^-}$.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales|02 - Límites Especiales]] — límites que no se resuelven con el álgebra directo.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/03 - Límites en Gráficas|03 - Límites en Gráficas]] — lectura visual de las mismas reglas.
+> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — la caracterización por sucesiones llevada a sucesiones de números.
+> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]] — los casos donde el álgebra de límites se queda corto.
+> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]] — la sustitución directa como criterio de continuidad.
+> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]] — la derivada como límite de un cociente, con sus condiciones.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero los límites directos de la sección de ejercicios hasta que la sustitución sea automática.
+> - Después salta a [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|Límites Laterales]] para aprender a tratar los puntos donde la sustitución falla.
+> - Cuando te encuentres con $0/0$ o $\infty/\infty$, ve directo a [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|Formas Indeterminadas]].
+> - En cada problema, escribe antes de calcular **qué teorema vas a usar y por qué se cumplen sus hipótesis**.
+
+---
+
+**Tags:** #MATG1045 #unidad2 #propiedades-limite #teoremas-limite #algebra-de-limites #sustitucion-directa #continuidad #emparedado #caracterizacion-sucesional #criterio-cauchy
