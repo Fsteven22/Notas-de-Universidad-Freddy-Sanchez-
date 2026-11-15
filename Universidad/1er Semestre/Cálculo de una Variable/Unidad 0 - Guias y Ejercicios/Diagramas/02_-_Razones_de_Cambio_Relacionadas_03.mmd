@@ -1,0 +1,13 @@
+flowchart TD
+    A["Ecuacion que vincula las variables: f(x, y) = 0"] --> B["Derivar todo con respecto al tiempo t"]
+    B --> C["Regla de la cadena: (df/dx)(dx/dt) + (df/dy)(dy/dt) = 0"]
+    C --> D{"¿Cuál de las dos razones se busca?"}
+    D -->|"dx/dt conocida"| E["dx/dt entra como dato"]
+    D -->|"dy/dt conocida"| F["dy/dt entra como dato"]
+    E --> G["Sustituir los valores del instante dado"]
+    F --> G
+    G --> H["Despejar la incognita y verificar unidades y signo"]
+
+    style A fill:#e3f2fd
+    style C fill:#c8e6c9
+    style H fill:#fff3e0

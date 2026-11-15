@@ -1,0 +1,11 @@
+flowchart TD
+    A["Punto de tangencia (a, f(a))"] --> B["dx: incremento pequeno en x"]
+    B --> C["dy = f'(a) dx"]
+    C --> D["dy: cambio aproximado en y"]
+    D --> E["En la recta tangente el cambio es EXACTO"]
+    E --> F["En la curva el cambio real es Delta y = f(a + dx) - f(a)"]
+    F --> G["La diferencia entre ambos es de segundo orden: proporcional a dx al cuadrado"]
+
+    style A fill:#e3f2fd
+    style C fill:#c8e6c9
+    style G fill:#fff3e0
