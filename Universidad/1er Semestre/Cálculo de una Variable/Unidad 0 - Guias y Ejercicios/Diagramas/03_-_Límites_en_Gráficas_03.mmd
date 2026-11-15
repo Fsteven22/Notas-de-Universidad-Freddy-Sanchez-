@@ -1,0 +1,16 @@
+graph TD
+    A["Gráfica de f(x) cerca de x = a"] --> B{"¿Qué ve la curva en el punto?"}
+    B -->|Curva sin interrupciones y punto sólido| C["Continua: el limite vale f(a)"]
+    B -->|Círculo vacío en la curva| D["Hueco: el limite existe y no coincide con f(a)"]
+    B -->|La curva salta de un nivel a otro| E["Salto: los limites laterales difieren"]
+    B -->|Línea vertical punteada| F["Asintota: el limite es infinito"]
+    C --> G["El límite sí existe"]
+    D --> G
+    E --> H["El límite no existe"]
+    F --> H
+    style G fill:#c8e6c9
+    style H fill:#ffcdd2
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffe0b2
+    style F fill:#f3e5f5

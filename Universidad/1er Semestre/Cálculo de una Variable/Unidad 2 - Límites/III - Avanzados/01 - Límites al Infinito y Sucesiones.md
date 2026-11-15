@@ -3,91 +3,150 @@ dg-publish: true
 tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-infinitos, asintotas-verticales, funciones-racionales, calculo, discontinuidades, comportamiento-asintotico, analisis-signos, infinito]
 ---
 
-# 🎯 Límites Infinitos ∞
+# 🎯 Límites Infinitos, Límites al Infinito y Sucesiones
 
-> [!tip] 💡 **Concepto Clave**
+## 🎯 Introducción
+
+> [!tip] 💡 Concepto clave de los límites infinitos
 >
 > Los **límites infinitos** ocurren cuando una función crece o decrece sin límite cuando la variable independiente se aproxima a un valor específico. A diferencia de los límites al infinito, aquí **x se acerca a un punto finito**, pero **f(x) tiende a infinito**.
 
-## 📐 Definición y Notación de Límites Infinitos
+> [!tip] 💡 Concepto clave de los límites al infinito
+>
+> Los límites al infinito nos permiten estudiar el **comportamiento de funciones cuando la variable independiente crece o decrece sin límite**. Son fundamentales para entender el comportamiento asintótico y las tendencias a largo plazo de las funciones.
 
-> [!info] 📚 **Definición Formal**
->
-> ### Límite Infinito Positivo
->
-> Decimos que $\lim_{x \to a} f(x) = +\infty$ si para todo número $M > 0$, existe $\delta > 0$ tal que: $$f(x) > M \text{ siempre que } 0 < |x - a| < \delta$$
->
-> ### Límite Infinito Negativo
->
-> Decimos que $\lim_{x \to a} f(x) = -\infty$ si para todo número $M > 0$, existe $\delta > 0$ tal que: $$f(x) < -M \text{ siempre que } 0 < |x - a| < \delta$$
->
+---
 
-> [!warning] ⚠️ **Importante: Los Límites Infinitos NO EXISTEN** Cuando escribimos $\lim_{x \to a} f(x) = \infty$, estamos describiendo un **comportamiento específico** de la función, pero técnicamente **el límite no existe** porque infinito no es un número real.
+## 📋 Definiciones Formales
+
+> [!info] 📚 Definición de límite infinito
 >
-> **Notación correcta:**
+> Decimos que $\lim_{x \to a} f(x) = +\infty$ si para todo número $M > 0$ existe $\delta > 0$ tal que $$f(x) > M \text{ siempre que } 0 < |x - a| < \delta$$
 >
-> - ✅ $\lim_{x \to a} f(x) = +\infty$ (comportamiento específico)
-> - ❌ "El límite existe y vale infinito" (incorrecto conceptualmente)
-
-### Tabla de Comportamientos
-
-> [!info] 📊 Tabla de Comportamientos
+> Decimos que $\lim_{x \to a} f(x) = -\infty$ si para todo número $M > 0$ existe $\delta > 0$ tal que $$f(x) < -M \text{ siempre que } 0 < |x - a| < \delta$$
 >
-> |Tipo de Límite|Notación|Comportamiento de f(x)|Interpretación Gráfica|
-> |---|---|---|---|
-> |**Infinito positivo**|$\lim_{x \to a} f(x) = +\infty$|Crece sin límite|Asíntota vertical, función sube|
-> |**Infinito negativo**|$\lim_{x \to a} f(x) = -\infty$|Decrece sin límite|Asíntota vertical, función baja|
-> |**Límites laterales diferentes**|$\lim_{x \to a^+} f(x) = +\infty$, $\lim_{x \to a^-} f(x) = -\infty$|Comportamientos opuestos|Asíntota vertical con salto|
-
-## 🎯 Asíntotas Verticales
-
-> [!tip] 📈 **Definición de Asíntota Vertical** La recta vertical $x = a$ es una **asíntota vertical** de la función $f(x)$ si al menos uno de los siguientes límites es infinito:
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_08.svg]]
 >
-> - $\lim_{x \to a^+} f(x) = \pm\infty$ (límite lateral derecho)
-> - $\lim_{x \to a^-} f(x) = \pm\infty$ (límite lateral izquierdo)
+> **Se lee así:** El diagrama entra con $x$ acercándose al punto finito $a$ y llega a un rombo que pregunta qué le pasa a $f(x)$. De ahí salen dos ramas: una donde la función crece más que cualquier cota $M$ y otra donde decrece más que cualquier cota. Cada rama lleva a su recuadro de límite infinito, positivo o negativo, y las dos convergen en el recuadro de que la recta $x = a$ es asíntota vertical. Un último recuadro recuerda que escribir ese símbolo no significa que el límite exista.
+>
+> **Por qué importa:** La $\delta$ del enunciado dice algo muy concreto: por muy grande que sea la cota $M$ que te den, siempre hay un entorno del punto donde la función la supera. Eso es lo que convierte "se va a infinito" en una afirmación verificable.
+>
+> **Ejemplo:** En $f(x) = 1/x^2$ con $x \to 0$, elige $M = 1000$: basta tomar $\delta = 0.03$ para que $f(x) > 1000$ en todo el entorno, así que el límite es $+\infty$.
 
-> [!info] 🖼️ Asíntotas Verticales
+> [!warning] 📈 Definición de asíntota vertical
+>
+> La recta vertical $x = a$ es una **asíntota vertical** de la función $f(x)$ si al menos uno de los siguientes límites es infinito:
+>
+> - $\lim_{x \to a^+} f(x) = \pm\infty$ (límite lateral derecho),
+> - $\lim_{x \to a^-} f(x) = \pm\infty$ (límite lateral izquierdo).
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_01.svg]]
 >
-> **Se lee así:** Entra por la función cerca de x = a y llega a un rombo que pide los **límites laterales**, que se separan en rama derecha e izquierda. Si alguna da infinito, ambas convergen en la **asíntota vertical x = a** y de ahí al caso donde la función explota. Si las dos son finitas, se pasa al segundo rombo: si coinciden, el límite existe y la función es continua; si difieren, hay discontinuidad con salto finito.
+> **Se lee así:** Entra por la función cerca de $x = a$ y llega a un rombo que pide los **límites laterales**, que se separan en rama derecha e izquierda. Si alguna da infinito, ambas convergen en la **asíntota vertical $x = a$** y de ahí al caso donde la función explota. Si las dos son finitas, se pasa al segundo rombo: si coinciden, el límite existe y la función es continua; si difieren, hay discontinuidad con salto finito.
 >
 > **Por qué importa:** Distingue los cuatro tipos de asíntota vertical según el comportamiento lateral. Esto te sirve para no afirmar que hay asíntota cuando en realidad el salto es finito.
 >
-> **Ejemplo:** En `f(x) = (x+1)/(x-2)` el límite por la izquierda es -∞ y por la derecha +∞, así que x = 2 es asíntota vertical tipo IV.
+> **Ejemplo:** En $f(x) = (x+1)/(x-2)$ el límite por la izquierda es menos infinito y por la derecha más infinito, así que $x = 2$ es asíntota vertical de tipo IV.
 
-> [!info] 🎯 **Tipos de Asíntotas Verticales**
+> [!info] 📚 Definición de límite al infinito
 >
-> ### Según el comportamiento lateral:
+> Decimos que $\lim_{x \to \infty} f(x) = L$ si para todo $\varepsilon > 0$ existe un número $M > 0$ tal que $$|f(x) - L| < \varepsilon \text{ siempre que } x > M$$
 >
-> |Comportamiento|Límites Laterales|Ejemplo Visual|
+> **Tipos de límites al infinito:**
+>
+> - $\lim_{x \to +\infty} f(x) = L$: límite cuando $x$ tiende a $+\infty$.
+> - $\lim_{x \to -\infty} f(x) = L$: límite cuando $x$ tiende a $-\infty$.
+> - $\lim_{x \to \infty} f(x) = \infty$: límite infinito.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_03.svg]]
+>
+> **Se lee así:** Arriba hay un rectángulo con la función y debajo un **rombo de decisión** que pregunta por el límite cuando $x$ tiende a infinito. Del rombo salen tres ramas rotuladas: dos según el tipo de resultado y una tercera para cuando el límite no existe. Las dos primeras bajan a un recuadro de consecuencia (estabilización o crecimiento sin cota) y la tercera a un recuadro con un ejemplo de función.
+>
+> **Por qué importa:** Fíjate en que el diagrama separa tres resultados que a simple vista se confunden: un valor finito, un crecimiento ilimitado y una oscilación. Esto te evita responder *no existe* cuando en realidad la función se va a infinito, y te obliga a revisar los dos lados antes de concluir.
+>
+> **Ejemplo:** Con $f(x) = \sin x$ sigues la rama de comportamiento oscilatorio, mientras que con $f(x) = 1/x$ sigues la del límite finito $L = 0$, que da la asíntota horizontal $y = 0$.
+
+> [!tip] 🎯 Definición del límite de una sucesión
+>
+> Una sucesión $(a_n)$ **converge** al límite $L$ si: $$\forall \varepsilon > 0, \exists N \in \mathbb{N} : n > N \Rightarrow |a_n - L| < \varepsilon$$
+>
+> **Notación:** $\lim_{n \to \infty} a_n = L$ o $a_n \to L$.
+>
+> **Interpretación geométrica:** a partir de cierto término $N$, todos los términos de la sucesión están dentro de una "banda" de anchura $2\varepsilon$ alrededor de $L$.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_05.svg]]
+>
+> **Se lee así:** Es una cadena horizontal de rectángulos que representa los **términos de una sucesión** uno tras otro: $a_1$, luego $a_2$, luego $a_3$, un grupo de puntos suspensivos que indica que siguen más términos, y finalmente $a_n$. De ese último rectángulo sale una flecha hacia un rectángulo aparte con el valor $L$, de modo que el diagrama muestra cómo los términos van avanzando hacia el valor buscado.
+>
+> **Por qué importa:** Fíjate en que $L$ está fuera de la cadena: el límite no es uno de los términos, *es a dónde se acercan*. Esta imagen te ayuda a entender por qué la sucesión se define con una $\varepsilon$ y una $N$.
+>
+> **Ejemplo:** En la sucesión $a_n = 1/n$ los términos van acercándose al rectángulo $L$ con valor $0$, de modo que $\lim_{n \to \infty} a_n = 0$ y la sucesión es convergente.
+
+> [!warning] 🥪 Definición del teorema del emparedado
+>
+> Si $(a_n)$, $(b_n)$ y $(c_n)$ son sucesiones tales que:
+>
+> 1. $a_n \leq b_n \leq c_n$ para todo $n$ suficientemente grande,
+> 2. $\lim_{n \to \infty} a_n = \lim_{n \to \infty} c_n = L$,
+>
+> **entonces** $\lim_{n \to \infty} b_n = L$.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_06.svg]]
+>
+> **Se lee así:** El esquema tiene **tres rectángulos de sucesión** en cadena, unidos por flechas rotuladas con el signo de desigualdad, de modo que el bloque central queda encajonado entre los dos externos. De los tres sale una flecha hacia un mismo rectángulo con el valor $L$, que es el destino común y el único punto de cierre del diagrama.
+>
+> **Por qué importa:** Fíjate en que las tres sucesiones apuntan al mismo $L$: la garantía no es que la central se acerque, sino que *no tiene dónde esconderse* porque está encajonada entre dos que sí convergen. Esto te da una forma de probar convergencia sin calcular el término general.
+>
+> **Ejemplo:** Con $a_n = -1/n$, $b_n = \sin(n)/n$ y $c_n = 1/n$, el diagrama muestra que las tres convergen a $0$ y que por eso $\lim_{n \to \infty} \frac{\sin n}{n} = 0$.
+
+---
+
+## 📐 Límites Infinitos en un Punto
+
+> [!warning] ⚠️ Los límites infinitos no existen como números
+>
+> Cuando escribimos $\lim_{x \to a} f(x) = \infty$, estamos describiendo un **comportamiento específico** de la función, pero técnicamente **el límite no existe** porque infinito no es un número real.
+>
+> **Notación correcta:**
+>
+> - $\lim_{x \to a} f(x) = +\infty$ describe un comportamiento concreto.
+> - Decir "el límite existe y vale infinito" es incorrecto conceptualmente.
+
+> [!info] 📊 Tabla de comportamientos
+>
+> |Tipo de límite|Notación|Comportamiento de $f(x)$|Interpretación gráfica|
+> |---|---|---|---|
+> |Infinito positivo|$\lim_{x \to a} f(x) = +\infty$|Crece sin límite|Asíntota vertical, función sube|
+> |Infinito negativo|$\lim_{x \to a} f(x) = -\infty$|Decrece sin límite|Asíntota vertical, función baja|
+> |Laterales diferentes|$\lim_{x \to a^+} f(x) = +\infty$ y $\lim_{x \to a^-} f(x) = -\infty$|Comportamientos opuestos|Asíntota vertical con salto|
+
+> [!info] 🎯 Tipos de asíntotas verticales
+>
+> |Comportamiento|Límites laterales|Ejemplo visual|
 > |---|---|---|
-> |**Tipo I**|$\lim_{x \to a^-} f(x) = +\infty$ y $\lim_{x \to a^+} f(x) = +\infty$|Ambos lados suben|
-> |**Tipo II**|$\lim_{x \to a^-} f(x) = -\infty$ y $\lim_{x \to a^+} f(x) = -\infty$|Ambos lados bajan|
-> |**Tipo III**|$\lim_{x \to a^-} f(x) = +\infty$ y $\lim_{x \to a^+} f(x) = -\infty$|Un lado sube, otro baja|
-> |**Tipo IV**|$\lim_{x \to a^-} f(x) = -\infty$ y $\lim_{x \to a^+} f(x) = +\infty$|Un lado baja, otro sube|
+> |Tipo I|$\lim_{x \to a^-} f(x) = +\infty$ y $\lim_{x \to a^+} f(x) = +\infty$|Ambos lados suben|
+> |Tipo II|$\lim_{x \to a^-} f(x) = -\infty$ y $\lim_{x \to a^+} f(x) = -\infty$|Ambos lados bajan|
+> |Tipo III|$\lim_{x \to a^-} f(x) = +\infty$ y $\lim_{x \to a^+} f(x) = -\infty$|Un lado sube, el otro baja|
+> |Tipo IV|$\lim_{x \to a^-} f(x) = -\infty$ y $\lim_{x \to a^+} f(x) = +\infty$|Un lado baja, el otro sube|
 
-## 🎯 Determinación de Límites Infinitos
-
-> [!tip] 🧮 **Estrategias para Encontrar Límites Infinitos**
+> [!tip] 🧮 Estrategia para encontrar límites infinitos
 >
-> ### 1. Funciones Racionales $f(x) = \frac{P(x)}{Q(x)}$
->
-> **Regla fundamental:** Si $Q(a) = 0$ pero $P(a) \neq 0$, entonces existe asíntota vertical en $x = a$.
+> **Funciones racionales** $f(x) = \frac{P(x)}{Q(x)}$: si $Q(a) = 0$ pero $P(a) \neq 0$, existe asíntota vertical en $x = a$.
 >
 > **Proceso de análisis:**
 >
-> 1. **Factoriza** numerador y denominador
-> 2. **Identifica** puntos donde el denominador se anula
-> 3. **Evalúa** el signo del numerador en esos puntos
-> 4. **Analiza** el comportamiento lateral del denominador
->
+> 1. **Factoriza** numerador y denominador.
+> 2. **Identifica** los puntos donde el denominador se anula.
+> 3. **Evalúa** el signo del numerador en esos puntos.
+> 4. **Analiza** el comportamiento lateral del denominador.
 
-> [!warning] 🔍 **Método del Análisis de Signos**
+> [!warning] 🔍 Método del análisis de signos
 >
-> ### Para $f(x) = \frac{P(x)}{Q(x)}$ cerca de $x = a$ donde $Q(a) = 0$:
+> Para $f(x) = \frac{P(x)}{Q(x)}$ cerca de $x = a$ donde $Q(a) = 0$:
 >
-> **Paso 1:** Determina el signo de $P(a)$ **Paso 2:** Analiza el signo de $Q(x)$ en intervalos $(a-\delta, a)$ y $(a, a+\delta)$ **Paso 3:** Aplica la regla de signos para cocientes
+> 1. **Determina** el signo de $P(a)$.
+> 2. **Analiza** el signo de $Q(x)$ en los intervalos $(a-\delta, a)$ y $(a, a+\delta)$.
+> 3. **Aplica** la regla de signos para cocientes.
 >
 > |$P(a)$|$Q(x)$ cerca de $a^-$|$Q(x)$ cerca de $a^+$|Límite por izquierda|Límite por derecha|
 > |---|---|---|---|---|
@@ -99,69 +158,50 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 > |$-$|$+$|$-$|$-\infty$|$+\infty$|
 > |$-$|$-$|$+$|$+\infty$|$-\infty$|
 > |$-$|$-$|$-$|$+\infty$|$+\infty$|
+>
+> **Por qué importa:** la tabla evita recordar de memoria la regla de signos del cociente: basta leer la fila que corresponde a las dos señales que hayas encontrado.
 
-### Ejemplos Trabajados
+> [!info] 📝 Ejemplo 1: función racional simple
+>
+> Encontrar $\lim_{x \to 2} \frac{x+1}{x-2}$.
+>
+> 1. **Identificar:** $Q(2) = 2-2 = 0$ y $P(2) = 2+1 = 3 > 0$.
+> 2. **Analizar signos de $Q(x) = x - 2$:** para $x < 2$ es negativo y para $x > 2$ es positivo.
+> 3. **Aplicar la regla de signos:** $\lim_{x \to 2^-} \frac{x+1}{x-2} = -\infty$ y $\lim_{x \to 2^+} \frac{x+1}{x-2} = +\infty$.
+> 4. **Conclusión:** $x = 2$ es asíntota vertical tipo IV.
 
-> [!info] 📝 **Ejemplo 1: Función Racional Simple**
+> [!info] 📝 Ejemplo 2: con factorización
 >
-> Encontrar $\lim_{x \to 2} \frac{x+1}{x-2}$
+> Encontrar $\lim_{x \to 3} \frac{x^2-9}{(x-3)^2}$.
 >
-> **Solución:**
+> 1. **Factorizar:** $\frac{x^2-9}{(x-3)^2} = \frac{(x-3)(x+3)}{(x-3)^2} = \frac{x+3}{x-3}$ para $x \neq 3$.
+> 2. **Evaluar:** $\lim_{x \to 3} \frac{x+3}{x-3}$.
+> 3. **Analizar:** $P(3) = 6 > 0$ y $Q(x) = x - 3$ cambia de signo en $x = 3$.
+> 4. **Resultado:** $\lim_{x \to 3^-} \frac{x+3}{x-3} = -\infty$ y $\lim_{x \to 3^+} \frac{x+3}{x-3} = +\infty$.
 >
-> 1. **Identificar:** $Q(2) = 2-2 = 0$, $P(2) = 2+1 = 3 > 0$
-> 2. **Análizar signos de $Q(x) = x-2$:**
->
-> - Para $x < 2$: $x-2 < 0$ (negativo)
-> - Para $x > 2$: $x-2 > 0$ (positivo)
->
-> 3. **Aplicar regla de signos:**
->
-> - $\lim_{x \to 2^-} \frac{x+1}{x-2} = \frac{(+)}{(-)} = -\infty$
-> - $\lim_{x \to 2^+} \frac{x+1}{x-2} = \frac{(+)}{(+)} = +\infty$
->
-> 4. **Conclusión:** $x = 2$ es asíntota vertical tipo IV
->
+> **Por qué importa:** el cuadrado en el denominador original hacía pensar que no habría cambio de signo; cancelar primero revela la forma real del problema.
 
-> [!info] 📝 **Ejemplo 2: Con Factorización**
->
-> Encontrar $\lim_{x \to 3} \frac{x^2-9}{(x-3)^2}$
->
-> **Solución:**
->
-> 5. **Factorizar:** $\frac{x^2-9}{(x-3)^2} = \frac{(x-3)(x+3)}{(x-3)^2} = \frac{x+3}{x-3}$ (para $x \neq 3$)
-> 6. **Evaluar:** $\lim_{x \to 3} \frac{x+3}{x-3}$
-> 7. **Análizar:** $P(3) = 6 > 0$, $Q(x) = x-3$ cambia de signo en $x = 3$
-> 8. **Resultado:**
->
-> - $\lim_{x \to 3^-} \frac{x+3}{x-3} = -\infty$
-> - $\lim_{x \to 3^+} \frac{x+3}{x-3} = +\infty$
-
-## 🔄 Propiedades y Álgebra de Límites Infinitos
-
-> [!tip] ⚖️ **Reglas Algebraicas**
->
-> ### Operaciones con Límites Infinitos
+> [!tip] ⚖️ Reglas algebraicas con infinito
 >
 > |Operación|Resultado|Condición|
 > |---|---|---|
 > |$\infty + \infty$|$\infty$|Mismo signo|
 > |$\infty - \infty$|**Indeterminada**|Requiere análisis especial|
-> |$\infty \cdot c$|$\infty$ si $c > 0$, $-\infty$ si $c < 0$|$c \neq 0$|
+> |$\infty \cdot c$|$+\infty$ si $c > 0$, $-\infty$ si $c < 0$|$c \neq 0$|
 > |$\frac{\infty}{\infty}$|**Indeterminada**|Requiere L'Hôpital o factorización|
 > |$\frac{c}{\infty}$|$0$|$c$ finito|
-> |$\frac{c}{0}$|$\pm\infty$|Depende del signo de $c$ y aproximación a $0$|
->
+> |$\frac{c}{0}$|$\pm\infty$|Depende del signo de $c$ y de la aproximación|
 
-> [!warning] 🚨 **Formas Indeterminadas Relacionadas**
+> [!warning] 🚨 Formas indeterminadas relacionadas
 >
-> ### Casos que requieren técnicas especiales:
+> Casos que requieren técnicas especiales:
 >
-> - $\infty - \infty$: Factorización o racionalización
-> - $\frac{\infty}{\infty}$: L'Hôpital o comparación de grados
-> - $0 \cdot \infty$: Reescribir como cociente
-> - $\frac{0}{0}$ que puede llevar a $\infty$: Factorización y simplificación
+> - $\infty - \infty$: factorización o racionalización.
+> - $\frac{\infty}{\infty}$: L'Hôpital o comparación de grados.
+> - $0 \cdot \infty$: reescribir como cociente.
+> - $\frac{0}{0}$ que puede llevar a $\infty$: factorización y simplificación.
 
-> [!info] 🖼️ Propiedades y Álgebra de Límites Infinitos
+> [!info] 🖼️ Selector según el tipo de función
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_02.svg]]
 >
@@ -169,375 +209,187 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 >
 > **Por qué importa:** Cada familia de funciones pide un análisis distinto, aunque todas busquen asíntota vertical. Reconocer la categoría evita que apliques el método de signos a una función trigonométrica.
 >
-> **Ejemplo:** En `f(x) = ln(x-3)` revisas el dominio, ves que solo existe para x > 3 y concluyes que x = 3 es asíntota vertical unilateral.
+> **Ejemplo:** En $f(x) = \ln(x-3)$ revisas el dominio, ves que solo existe para $x > 3$ y concluyes que $x = 3$ es asíntota vertical unilateral.
+
+> [!tip] 🧠 Técnica de estudio "FASE"
+>
+> - **F**actoriza numerador y denominador.
+> - **A**naliza dónde se anula el denominador.
+> - **S**ignos: determina el signo en cada lado.
+> - **E**valúa el comportamiento lateral.
+>
+> **Método de estudio activo:** dibuja una tabla con columnas $x$, $P(x)$, $Q(x)$ y $\frac{P(x)}{Q(x)}$, marca los valores críticos, practica cinco ejemplos diarios y visualiza cada función con software gráfico.
+>
+> **Tarjetas de memorización:** en el anverso, una función con denominador que se anula; en el reverso, la tabla de signos y los límites laterales completos.
 
 ---
 
-> [!quote] 📚 **Referencias**
->
-> - 01 - Límites al Infinito y Sucesiones - Comportamiento cuando x tiende a infinito
-> - Asíntotas - Estudio completo de comportamiento asintótico
-> - [[02 – Continuidad]] - Relación con discontinuidades infinitas
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Herramienta fundamental para el análisis
-> - [[12 - Funciones racionales]] - Casos más comunes de límites infinitos
->
+## 🚀 Límites al Infinito
 
-> [!info] 📖 **Notas Recomendadas para Complementar**
+> [!warning] ⚠️ Cuidado con la notación
 >
-> ### Prerrequisitos:
->
-> - [[01 – Límite de Funciones de Varias Variables#Definición de Límite|Definición de Límite]] - Conceptos fundamentales
-> - Factorización de Polinomios - Técnica algebraica esencial
-> - Análisis de Signos - Para determinar comportamiento
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Base para límites infinitos
->
-> ### Temas Relacionados:
->
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Para formas indeterminadas
-> - Discontinuidades - Clasificación completa
-> - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones.md#Gráficas de Funciones|Gráficas de Funciones]] - Interpretación visual
-> - Comportamiento Asintótico - Análisis avanzado
->
+> - $x \to \infty$ significa que $x$ crece sin límite.
+> - $x \to -\infty$ significa que $x$ decrece sin límite.
+> - El símbolo $\infty$ **no es un número**: es una notación para expresar comportamiento.
 
-> [!tip] 🧠 **Técnica de Estudio: "FASE" (Factoriza-Analiza-Signos-Evalúa)**
->
-> ### Mnemotecnia para Límites Infinitos:
->
-> **F**actoriza numerador y denominador **A**naliza dónde se anula el denominador  
-> **S**ignos: determina el signo en cada lado **E**valúa el comportamiento lateral
->
-> ### Método de Estudio Activo - "Tabla de Signos Sistemática":
->
-> 1. **Dibuja** una tabla con columnas: $x$, $P(x)$, $Q(x)$, $\frac{P(x)}{Q(x)}$
-> 2. **Marca** valores críticos y puntos de prueba
-> 3. **Practica** 5 ejemplos diarios variando complejidad
-> 4. **Visualiza** cada función con software gráfico
-> 5. **Conecta** con aplicaciones: crecimiento poblacional, circuitos RC, etc.
->
-> ### Tarjetas de Memorización:
->
-> - **Anverso:** Función con denominador que se anula
-> - **Reverso:** Tabla de signos y límites laterales completos
-
----
-
-
-# Límites al Infinito 🚀
-
-> [!tip] 💡 **Concepto Clave**
->
-> Los límites al infinito nos permiten estudiar el **comportamiento de funciones cuando la variable independiente crece o decrece sin límite**. Son fundamentales para entender el comportamiento asintótico y las tendencias a largo plazo de las funciones.
-
-## 📐 $\lim_{x \to \infty} f(x)$ - Definición y Notación
-
-> [!info] 📚 **Definición Formal** Decimos que $\lim_{x \to \infty} f(x) = L$ si para todo $\varepsilon > 0$, existe un número $M > 0$ tal que:
->
-> $$|f(x) - L| < \varepsilon \text{ siempre que } x > M$$
->
-> **Tipos de límites al infinito:**
->
-> - $\lim_{x \to +\infty} f(x) = L$ (límite cuando x tiende a $+\infty$)
-> - $\lim_{x \to -\infty} f(x) = L$ (límite cuando x tiende a $-\infty$)
-> - $\lim_{x \to \infty} f(x) = \infty$ (límite infinito)
->
-
-> [!warning] ⚠️ **Cuidado con la Notación**
->
-> - $x \to \infty$ significa que x crece sin límite
-> - $x \to -\infty$ significa que x decrece sin límite
-> - El símbolo $\infty$ **no es un número**, es una notación para expresar comportamiento
-
-### Casos Especiales
-
-> [!info] 📊 Casos Especiales
+> [!info] 📊 Casos especiales del límite al infinito
 >
 > |Caso|Notación|Significado|
 > |---|---|---|
-> |**Límite finito**|$\lim_{x \to \infty} f(x) = L$|La función se aproxima a un valor L|
-> |**Límite infinito positivo**|$\lim_{x \to \infty} f(x) = +\infty$|La función crece sin límite|
-> |**Límite infinito negativo**|$\lim_{x \to \infty} f(x) = -\infty$|La función decrece sin límite|
-> |**No existe**|$\lim_{x \to \infty} f(x) = \nexists$|La función oscila o no tiene comportamiento definido|
+> |Límite finito|$\lim_{x \to \infty} f(x) = L$|La función se aproxima a un valor $L$|
+> |Infinito positivo|$\lim_{x \to \infty} f(x) = +\infty$|La función crece sin límite|
+> |Infinito negativo|$\lim_{x \to \infty} f(x) = -\infty$|La función decrece sin límite|
+> |No existe|$\lim_{x \to \infty} f(x) = \nexists$|La función oscila o no tiene comportamiento definido|
 
-## 🎯 Comportamiento Asintótico Horizontal
+> [!tip] 📈 Asíntotas horizontales
+>
+> Una **asíntota horizontal** es una recta horizontal $y = L$ tal que la gráfica de la función se aproxima a esta recta cuando $x \to \pm\infty$.
+>
+> **Condición:** $y = L$ es asíntota horizontal si $\lim_{x \to +\infty} f(x) = L$ o $\lim_{x \to -\infty} f(x) = L$.
 
-> [!tip] 📈 **Asíntotas Horizontales** Una **asíntota horizontal** es una recta horizontal $y = L$ tal que la gráfica de la función se aproxima a esta recta cuando $x \to \pm\infty$.
+> [!info] 🎯 Interpretación geométrica del comportamiento asintótico
 >
-> **Condición:** $y = L$ es asíntota horizontal si:
+> - **Aproximación gradual**: la función se acerca cada vez más a la asíntota.
+> - **Nunca se toca**: la función puede acercarse indefinidamente sin tocar la asíntota.
+> - **Estabilidad**: para valores grandes de $x$, $f(x) \approx L$.
 >
-> - $\lim_{x \to +\infty} f(x) = L$ y/o
-> - $\lim_{x \to -\infty} f(x) = L$
+> **Ejemplos visuales:**
+>
+> - $f(x) = \frac{1}{x}$ tiene asíntota horizontal $y = 0$.
+> - $f(x) = e^{-x}$ tiene asíntota horizontal $y = 0$ cuando $x \to +\infty$.
+> - $f(x) = \arctan(x)$ tiene asíntotas horizontales $y = \pm\frac{\pi}{2}$.
 
-> [!info] 🖼️ Comportamiento Asintótico Horizontal
+> [!tip] 🧮 Regla fundamental para funciones racionales
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_03.svg]]
+> Para una función racional $f(x) = \frac{P(x)}{Q(x)}$ con $$f(x) = \frac{a_n x^n + a_{n-1}x^{n-1} + \cdots + a_0}{b_m x^m + b_{m-1}x^{m-1} + \cdots + b_0}$$
 >
-> **Se lee así:** Arriba hay un rectángulo con la función y debajo un **rombo de decisión** que pregunta por el límite cuando $x$ tiende a infinito. Del rombo salen tres ramas rotuladas: dos según el tipo de resultado y una tercera para cuando el límite no existe. Las dos primeras bajan a un recuadro de consecuencia (estabilización o crecimiento sin cota) y la tercera a un recuadro con un ejemplo de función.
+> el límite cuando $x \to \infty$ depende de los **grados** de los polinomios:
 >
-> **Por qué importa:** Fíjate en que el diagrama separa tres resultados que a simple vista se confunden: un valor finito, un crecimiento ilimitado y una oscilación. Esto te evita responder *no existe* cuando en realidad la función se va a infinito, y te obliga a revisar los dos lados antes de concluir.
->
-> **Ejemplo:** Con $f(x) = \sin x$ sigues la rama de comportamiento oscilatorio, mientras que con $f(x) = \frac{1}{x}$ sigues la del límite finito $L = 0$, que da la asíntota horizontal $y = 0$.
-
-> [!info] 🎯 **Interpretación Geométrica**
->
-> ### Características del Comportamiento Asintótico:
->
-> - **Aproximación gradual**: La función se acerca cada vez más a la asíntota
-> - **Nunca se toca**: La función puede acercarse indefinidamente sin tocar la asíntota
-> - **Estabilidad**: Para valores grandes de x, f(x) ≈ L
->
-> ### Ejemplos Visuales:
->
-> - $f(x) = \frac{1}{x}$ tiene asíntota horizontal $y = 0$
-> - $f(x) = e^{-x}$ tiene asíntota horizontal $y = 0$ cuando $x \to +\infty$
-> - $f(x) = \arctan(x)$ tiene asíntotas horizontales $y = \pm\frac{\pi}{2}$
-
-## 🎯 Límites de Funciones Racionales
-
-> [!tip] 🧮 **Regla Fundamental para Funciones Racionales** Para una función racional $f(x) = \frac{P(x)}{Q(x)}$ donde $P(x)$ y $Q(x)$ son polinomios:
->
-> $$f(x) = \frac{a_n x^n + a_{n-1}x^{n-1} + \cdots + a_0}{b_m x^m + b_{m-1}x^{m-1} + \cdots + b_0}$$
->
-> El límite cuando $x \to \infty$ depende de los **grados** de los polinomios:
-
-### Tabla de Casos para Funciones Racionales
-
-> [!info] 📊 Tabla de Casos para Funciones Racionales
->
-> |Relación de Grados|Resultado del Límite|Ejemplo|
+> |Relación de grados|Resultado del límite|Ejemplo|
 > |---|---|---|
-> |$n < m$ (grado numerador < denominador)|$\lim_{x \to \infty} f(x) = 0$|$\frac{x^2}{x^3 + 1} \to 0$|
+> |$n < m$ (numerador de menor grado)|$\lim_{x \to \infty} f(x) = 0$|$\frac{x^2}{x^3 + 1} \to 0$|
 > |$n = m$ (grados iguales)|$\lim_{x \to \infty} f(x) = \frac{a_n}{b_m}$|$\frac{3x^2 + 1}{2x^2 - 5} \to \frac{3}{2}$|
-> |$n > m$ (grado numerador > denominador)|$\lim_{x \to \infty} f(x) = \pm\infty$|$\frac{x^3 + 2}{x^2 - 1} \to \infty$|
+> |$n > m$ (numerador de mayor grado)|$\lim_{x \to \infty} f(x) = \pm\infty$|$\frac{x^3 + 2}{x^2 - 1} \to \infty$|
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_04.svg]]
+>
+> **Se lee así:** Parte del cociente de polinomios, se identifican los **grados $n$ y $m$** y un rombo los compara. Si el grado del numerador es menor, el flujo lleva a un rectángulo de límite cero y asíntota horizontal, con la consecuencia de que la función decae a cero. Con grados iguales se obtiene el cociente de coeficientes principales y la función se estabiliza; con grado mayor arriba, el límite es infinito y no hay asíntota horizontal.
+>
+> **Por qué importa:** Es la regla que resuelve de un vistazo todos los límites al infinito de funciones racionales. Te dice también si la gráfica tendrá o no asíntota horizontal.
+>
+> **Ejemplo:** Para $\lim_{x \to \infty} \frac{3x^2 - 5x + 2}{2x^2 + x - 1}$ los grados son iguales, así que el límite es $3/2$ y la asíntota horizontal es $y = 3/2$.
 
-> [!warning] 🔍 **Método de Resolución**
+> [!warning] 🔍 Método de dividir por la mayor potencia
 >
-> ### Estrategia "Dividir por la Mayor Potencia":
+> **Estrategia:**
 >
-> 1. **Identifica** la mayor potencia de x en denominador
-> 2. **Divide** numerador y denominador por esa potencia
-> 3. **Evalúa** el límite usando que $\lim_{x \to \infty} \frac{1}{x^k} = 0$ para $k > 0$
+> 1. **Identifica** la mayor potencia de $x$ en el denominador.
+> 2. **Divide** numerador y denominador por esa potencia.
+> 3. **Evalúa** el límite usando que $\lim_{x \to \infty} \frac{1}{x^k} = 0$ para $k > 0$.
 >
 > **Ejemplo:** $$\lim_{x \to \infty} \frac{3x^2 - 5x + 2}{2x^2 + x - 1}$$
 >
 > Dividimos por $x^2$: $$\lim_{x \to \infty} \frac{3 - \frac{5}{x} + \frac{2}{x^2}}{2 + \frac{1}{x} - \frac{1}{x^2}} = \frac{3 - 0 + 0}{2 + 0 - 0} = \frac{3}{2}$$
-
-### Casos Especiales y Formas Indeterminadas
-
-> [!info] 🤔 **Formas Indeterminadas Comunes**
 >
-> |Forma|Ejemplo|Estrategia de Resolución|
+> **Por qué importa:** el método convierte una forma $\frac{\infty}{\infty}$ en un cociente de constantes, sin necesidad de derivar.
+
+> [!info] 🤔 Formas indeterminadas al infinito
+>
+> |Forma|Ejemplo|Estrategia de resolución|
 > |---|---|---|
-> |$\frac{\infty}{\infty}$|$\lim_{x \to \infty} \frac{x^2}{x^2 + 1}$|Dividir por mayor potencia|
+> |$\frac{\infty}{\infty}$|$\lim_{x \to \infty} \frac{x^2}{x^2 + 1}$|Dividir por la mayor potencia|
 > |$\infty - \infty$|$\lim_{x \to \infty} (x^2 - x^2)$|Factorizar o racionalizar|
 > |$1^\infty$|$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x$|Usar límites exponenciales|
 
-> [!info] 🖼️ Casos Especiales y Formas Indeterminadas
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_04.svg]]
->
-> **Se lee así:** Parte del cociente de polinomios, se identifican los **grados n y m** y un rombo los compara. Si el grado del numerador es menor, el flujo lleva a un rectángulo de límite cero y asíntota horizontal, con la consecuencia de que la función decae a cero. Con grados iguales se obtiene el cociente de coeficientes principales y la función se estabiliza; con grado mayor arriba, el límite es infinito y no hay asíntota horizontal.
->
-> **Por qué importa:** Es la regla que resuelve de un vistazo todos los límites al infinito de funciones racionales. Te dice también si la gráfica tendrá o no asíntota horizontal.
->
-> **Ejemplo:** Para `lim_{x → ∞} (3x² - 5x + 2)/(2x² + x - 1)` los grados son iguales, así que el límite es 3/2 y la asíntota horizontal es y = 3/2.
-
----
-
-> [!quote] 📚 **Referencias**
->
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]] - Fundamentos teóricos
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales.md|01 - Límites Laterales.md]] - Para casos puntuales
-> - Asíntotas - Comportamiento gráfico completo
-> - [[02 – Continuidad]] - Relación con límites
-> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]] - Aplicación en tasas de cambio
->
-
-> [!info] 📖 **Notas Recomendadas para Complementar**
->
-> ### Prerrequisitos:
->
-> - [[11 - Funciones polinomiales]] - Base algebraica necesaria
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md#Álgebra de Límites|Álgebra de Límites]] - Propiedades operacionales
-> - [[12 - Funciones racionales]] - Características específicas
->
-> ### Temas Relacionados:
->
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Casos complejos
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Herramienta avanzada
-> - Series Infinitas - Comportamiento asintótico avanzado
->
-
-> [!tip] 🧠 **Técnica de Estudio: Mnemotecnia "GMD"**
->
-> ### Para recordar el comportamiento de funciones racionales:
+> [!tip] 🧠 Técnica de estudio "GMD"
 >
 > **G**rado **M**ayor **D**etermina:
 >
-> - **G**rado mayor arriba (numerador) → Límite **∞**
-> - **G**rado mayor abajo (denominador) → Límite **0**
-> - **G**rados iguales → Límite = **coeficientes principales**
+> - **G**rado mayor arriba (numerador): el límite es infinito.
+> - **G**rado mayor abajo (denominador): el límite es cero.
+> - **G**rados iguales: el límite es el cociente de los coeficientes principales.
 >
-> ### Método de Estudio Activo:
->
-> 1. **Practica** con 3 ejemplos diarios de cada tipo
-> 2. **Dibuja** las gráficas para visualizar comportamiento
-> 3. **Verifica** siempre dividiendo por la mayor potencia
-> 4. **Conecta** con aplicaciones físicas (velocidad límite, concentraciones)
+> **Método de estudio activo:** practica tres ejemplos diarios de cada tipo, dibuja las gráficas para visualizar el comportamiento y verifica siempre dividiendo por la mayor potencia.
 
 ---
 
+## 📊 Límites de Sucesiones
 
-# Límites de Sucesiones 📊
-
-## 📐 Definición Fundamental
-
-> [!tip] 🎯 Concepto de Convergencia
->
-> ### Definición formal de límite de sucesión
->
-> Una sucesión $(a_n)$ **converge** al límite $L$ si: $$\forall \varepsilon > 0, \exists N \in \mathbb{N} : n > N \Rightarrow |a_n - L| < \varepsilon$$
->
-> **Notación:** $\lim_{n \to \infty} a_n = L$ o $a_n \to L$
->
-> **Interpretación geométrica:** 🎪 A partir de cierto término $N$, todos los términos de la sucesión están dentro de una "banda" de anchura $2\varepsilon$ alrededor de $L$
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_05.svg]]
->
-> **Se lee así:** Es una cadena horizontal de rectángulos que representa los **términos de una sucesión** uno tras otro: a₁, luego a₂, luego a₃, un grupo de puntos suspensivos que indica que siguen más términos, y finalmente aₙ. De ese último rectángulo sale una flecha hacia un rectángulo aparte con el valor L, de modo que el diagrama muestra cómo los términos van avanzando hacia el valor buscado.
->
-> **Por qué importa:** Fíjate en que L está fuera de la cadena: el límite no es uno de los términos, *es a dónde se acercan*. Esta imagen te ayuda a entender por qué la sucesión se define con una ε y un N.
->
-> **Ejemplo:** En la sucesión `aₙ = 1/n` los términos van acercándose al rectángulo L con valor 0, de modo que `lim_{n → ∞} aₙ = 0` y la sucesión es convergente.
-
-## 🔢 Convergencia de Sucesiones
-
-> [!info] 📈 Tipos de Comportamiento
->
-> ### Clasificación de sucesiones
+> [!info] 📈 Tipos de comportamiento de una sucesión
 >
 > |Tipo|Definición|Ejemplo|Comportamiento|
 > |---|---|---|---|
-> |**Convergente**|$\lim_{n \to \infty} a_n = L \in \mathbb{R}$|$\frac{1}{n} \to 0$|Se acerca a un valor finito 🎯|
-> |**Divergente a ∞**|$\lim_{n \to \infty} a_n = +\infty$|$n^2 \to +\infty$|Crece sin límite ⬆️|
-> |**Divergente a -∞**|$\lim_{n \to \infty} a_n = -\infty$|$-n \to -\infty$|Decrece sin límite ⬇️|
-> |**Oscilante**|No tiene límite|$(-1)^n$|Alterna entre valores 〰️|
+> |Convergente|$\lim_{n \to \infty} a_n = L \in \mathbb{R}$|$\frac{1}{n} \to 0$|Se acerca a un valor finito|
+> |Divergente a $+\infty$|$\lim_{n \to \infty} a_n = +\infty$|$n^2 \to +\infty$|Crece sin límite|
+> |Divergente a $-\infty$|$\lim_{n \to \infty} a_n = -\infty$|$-n \to -\infty$|Decrece sin límite|
+> |Oscilante|No tiene límite|$(-1)^n$|Alterna entre valores|
 >
-> **Mnemotecnia:** "**C**onverge **C**erca, **D**iverge **D**istante, **O**scila **O**nda"
->
+> **Mnemotecnia:** *"Converge Cerca, Diverge Distante, Oscila Onda"*.
 
-> [!tip] 🧮 Propiedades de Límites
->
-> ### Álgebra de límites
+> [!tip] 🧮 Álgebra de límites de sucesiones
 >
 > Si $\lim_{n \to \infty} a_n = A$ y $\lim_{n \to \infty} b_n = B$, entonces:
 >
-> - **Suma:** $\lim_{n \to \infty} (a_n + b_n) = A + B$
-> - **Producto:** $\lim_{n \to \infty} (a_n \cdot b_n) = A \cdot B$
-> - **Cociente:** $\lim_{n \to \infty} \frac{a_n}{b_n} = \frac{A}{B}$ (si $B \neq 0$)
-> - **Potencia:** $\lim_{n \to \infty} a_n^k = A^k$
+> - **Suma:** $\lim_{n \to \infty} (a_n + b_n) = A + B$.
+> - **Producto:** $\lim_{n \to \infty} (a_n \cdot b_n) = A \cdot B$.
+> - **Cociente:** $\lim_{n \to \infty} \frac{a_n}{b_n} = \frac{A}{B}$, siempre que $B \neq 0$.
+> - **Potencia:** $\lim_{n \to \infty} a_n^k = A^k$.
 >
-> **⚠️ Formas indeterminadas:** $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$
+> **Formas indeterminadas:** $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$ y $\infty - \infty$.
 
-## 🥪 Teorema del Sandwich
+> [!info] 🎲 Ejemplos del teorema del emparedado
+>
+> **Ejemplo 1:** $\lim_{n \to \infty} \frac{\sin n}{n}$.
+> Como $-1 \leq \sin n \leq 1$, entonces $-\frac{1}{n} \leq \frac{\sin n}{n} \leq \frac{1}{n}$.
+> Dado que $\lim_{n \to \infty} \left(-\frac{1}{n}\right) = \lim_{n \to \infty} \frac{1}{n} = 0$, por el teorema del emparedado $\lim_{n \to \infty} \frac{\sin n}{n} = 0$ ✅.
+>
+> **Ejemplo 2:** $\lim_{n \to \infty} \frac{1}{n} \cos(n^2)$.
+> Como $-1 \leq \cos(n^2) \leq 1$, se tiene $-\frac{1}{n} \leq \frac{\cos(n^2)}{n} \leq \frac{1}{n}$, y el resultado es $0$ ✅.
+>
+> **Visualización:** la sucesión central está "atrapada" entre dos que convergen al mismo límite.
 
-> [!warning] 🔒 Teorema de Compresión (Sandwich)
+> [!tip] 🎢 Teorema de convergencia monótona
 >
-> ### Enunciado del teorema
->
-> Si $(a_n)$, $(b_n)$ y $(c_n)$ son sucesiones tales que:
->
-> 1. $a_n \leq b_n \leq c_n$ para todo $n$ suficientemente grande
-> 2. $\lim_{n \to \infty} a_n = \lim_{n \to \infty} c_n = L$
->
-> **Entonces:** $\lim_{n \to \infty} b_n = L$
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_06.svg]]
->
-> **Se lee así:** El esquema tiene **tres rectángulos de sucesión** en cadena, unidos por flechas rotuladas con el signo de desigualdad, de modo que el bloque central queda encajonado entre los dos externos. De los tres sale una flecha hacia un mismo rectángulo con el valor $L$, que es el destino común y el único punto de cierre del diagrama.
->
-> **Por qué importa:** Fíjate en que las tres sucesiones apuntan al mismo $L$: la garantía no es que la central se acerque, sino que *no tiene dónde esconderse* porque está encajonada entre dos que sí convergen. Esto te da una forma de probar convergencia sin calcular el término general.
->
-> **Ejemplo:** Con $a_n = -\frac{1}{n}$, $b_n = \frac{\sin n}{n}$ y $c_n = \frac{1}{n}$, el diagrama muestra que las tres convergen a 0 y que por eso $\lim_{n \to \infty} \frac{\sin n}{n} = 0$.
->
-> **Visualización:** La sucesión $b_n$ está "atrapada" entre dos sucesiones que convergen al mismo límite 🎯
->
-
-> [!info] 🎲 Ejemplos del Teorema del Sandwich
->
-> ### Ejemplo 1: $\lim_{n \to \infty} \frac{\sin n}{n}$
->
-> Como $-1 \leq \sin n \leq 1$, entonces: $$-\frac{1}{n} \leq \frac{\sin n}{n} \leq \frac{1}{n}$$
->
-> Dado que $\lim_{n \to \infty} \left(-\frac{1}{n}\right) = \lim_{n \to \infty} \frac{1}{n} = 0$
->
-> **Por el teorema del sandwich:** $\lim_{n \to \infty} \frac{\sin n}{n} = 0$ ✅
->
-> ### Ejemplo 2: $\lim_{n \to \infty} \frac{1}{n} \cos(n^2)$
->
-> Como $-1 \leq \cos(n^2) \leq 1$: $$-\frac{1}{n} \leq \frac{\cos(n^2)}{n} \leq \frac{1}{n}$$
->
-> **Resultado:** $\lim_{n \to \infty} \frac{\cos(n^2)}{n} = 0$ ✅
-
-## 📈 Sucesiones Monótonas Acotadas
-
-> [!tip] 🎢 Teorema de Convergencia Monótona
->
-> ### Teorema fundamental
->
-> **Toda sucesión monótona y acotada es convergente**
+> **Toda sucesión monótona y acotada es convergente.**
 >
 > **Casos específicos:**
 >
-> - **Creciente y acotada superiormente** → converge al **supremo**
-> - **Decreciente y acotada inferiormente** → converge al **ínfimo**
+> - Creciente y acotada superiormente converge al **supremo**.
+> - Decreciente y acotada inferiormente converge al **ínfimo**.
 >
 > |Tipo|Definición|Convergencia|Ejemplo|
 > |---|---|---|---|
-> |**Monótona creciente**|$a_n \leq a_{n+1}$|Converge si acotada superiormente 📈|$a_n = 1 - \frac{1}{n}$|
-> |**Monótona decreciente**|$a_n \geq a_{n+1}$|Converge si acotada inferiormente 📉|$a_n = \frac{1}{n}$|
-> |**Estrictamente creciente**|$a_n < a_{n+1}$|Mismas condiciones ⬆️|$a_n = n$ (no acotada)|
-> |**Estrictamente decreciente**|$a_n > a_{n+1}$|Mismas condiciones ⬇️|$a_n = -n$ (no acotada)|
->
+> |Monótona creciente|$a_n \leq a_{n+1}$|Converge si acotada superiormente|$a_n = 1 - \frac{1}{n}$|
+> |Monótona decreciente|$a_n \geq a_{n+1}$|Converge si acotada inferiormente|$a_n = \frac{1}{n}$|
+> |Estrictamente creciente|$a_n < a_{n+1}$|Mismas condiciones|$a_n = n$ (no acotada)|
+> |Estrictamente decreciente|$a_n > a_{n+1}$|Mismas condiciones|$a_n = -n$ (no acotada)|
 
-> [!warning] 🔍 Criterios de Monotonía
->
-> ### Métodos para determinar monotonía
+> [!warning] 🔍 Criterios de monotonía
 >
 > **1. Diferencia de términos consecutivos:**
 >
-> - Si $a_{n+1} - a_n \geq 0$ → creciente
-> - Si $a_{n+1} - a_n \leq 0$ → decreciente
+> - Si $a_{n+1} - a_n \geq 0$ la sucesión es creciente.
+> - Si $a_{n+1} - a_n \leq 0$ la sucesión es decreciente.
 >
 > **2. Cociente de términos consecutivos:**
 >
-> - Si $\frac{a_{n+1}}{a_n} \geq 1$ (y $a_n > 0$) → creciente
-> - Si $\frac{a_{n+1}}{a_n} \leq 1$ (y $a_n > 0$) → decreciente
+> - Si $\frac{a_{n+1}}{a_n} \geq 1$ con $a_n > 0$ es creciente.
+> - Si $\frac{a_{n+1}}{a_n} \leq 1$ con $a_n > 0$ es decreciente.
 >
 > **3. Función asociada:**
 >
-> - Si $f(x) = a_x$ y $f'(x) \geq 0$ → creciente
-> - Si $f(x) = a_x$ y $f'(x) \leq 0$ → decreciente
->
+> - Si $f(x) = a_x$ y $f'(x) \geq 0$ es creciente.
+> - Si $f(x) = a_x$ y $f'(x) \leq 0$ es decreciente.
 
-> [!info] 🎯 Ejemplos Clásicos
+> [!info] 🎯 Ejemplos clásicos de monotonía
 >
-> ### Ejemplo 1: Sucesión $a_n = \frac{2n + 1}{n + 3}$
+> **Ejemplo 1: sucesión $a_n = \frac{2n + 1}{n + 3}$.**
+> $$a_{n+1} - a_n = \frac{2(n+1) + 1}{(n+1) + 3} - \frac{2n + 1}{n + 3} = \frac{(2n + 3)(n + 3) - (2n + 1)(n + 4)}{(n + 4)(n + 3)} = \frac{5}{(n + 4)(n + 3)} > 0$$
+> Es estrictamente creciente. Además $a_n = 2 - \frac{5}{n + 3} < 2$, así que está acotada y converge a $\lim_{n \to \infty} a_n = 2$ ✅.
 >
-> **Análisis de monotonía:** $$a_{n+1} - a_n = \frac{2(n+1) + 1}{(n+1) + 3} - \frac{2n + 1}{n + 3}$$ $$= \frac{(2n + 3)(n + 3) - (2n + 1)(n + 4)}{(n + 4)(n + 3)} = \frac{5}{(n + 4)(n + 3)} > 0$$
->
-> **Conclusión:** Estrictamente creciente ⬆️
->
-> **Acotación:** $a_n = 2 - \frac{5}{n + 3} < 2$
->
-> **Resultado:** Converge a $\lim_{n \to \infty} a_n = 2$ ✅
->
-> ### Ejemplo 2: Sucesión de Fibonacci normalizada
->
-> $$a_n = \frac{F_{n+1}}{F_n}$$ donde $F_n$ es la n-ésima término de Fibonacci
->
-> **Resultado:** Converge al **número áureo** $\phi = \frac{1 + \sqrt{5}}{2} \approx 1.618$ 🌟
+> **Ejemplo 2: sucesión de Fibonacci normalizada.** Con $a_n = \frac{F_{n+1}}{F_n}$, donde $F_n$ es el término $n$-ésimo de Fibonacci, la sucesión converge al **número áureo** $\phi = \frac{1 + \sqrt{5}}{2} \approx 1.618$.
 
-> [!info] 🖼️ Sucesiones Monótonas Acotadas
+> [!info] 🖼️ Ruta de decisión para la convergencia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Límites_al_Infinito_y_Sucesiones_07.svg]]
 >
@@ -545,48 +397,167 @@ tags: [MATG1045, unidad2, limites-al-infinito-y-sucesiones, limites, limites-inf
 >
 > **Por qué importa:** Te da una ruta de decisión para justificar si una sucesión converge, en vez de adivinar. Sirve especialmente en parciales, donde debes nombrar el teorema que usas.
 >
-> **Ejemplo:** Para `aₙ = (2n+1)/(n+3)` la diferencia `aₙ₊₁ - aₙ` es positiva y además `aₙ < 2`, así que es monótona y acotada y converge a 2.
+> **Ejemplo:** Para $a_n = (2n+1)/(n+3)$ la diferencia $a_{n+1} - a_n$ es positiva y además $a_n < 2$, así que es monótona y acotada y converge a $2$.
 
-## 🧗 Técnica de Estudio: Método CLIMB
+> [!tip] 📚 Estrategia CLIMB para sucesiones
+>
+> - **C**onvergencia: determina si la sucesión converge.
+> - **L**ímite: calcula el valor límite si existe.
+> - **I**dentifica: el tipo de sucesión (monótona, oscilante, etc.).
+> - **M**étodo: elige la herramienta apropiada (sandwich, monotonía, etc.).
+> - **B**ound: verifica las cotas si es necesario.
+>
+> **Regla mnemotécnica:** *"Monótona Acotada Siempre Converge"*.
 
-> [!tip] 📚 Estrategia CLIMB para Sucesiones
->
-> - **C**onvergencia: Determina si la sucesión converge
-> - **L**ímite: Calcula el valor límite si existe
-> - **I**dentifica: El tipo de sucesión (monótona, oscilante, etc.)
-> - **M**étodo: Elige la herramienta apropiada (sandwich, monotonía, etc.)
-> - **B**ound: Verifica las cotas si es necesario
->
-> **Regla mnemotécnica para recordar criterios:** "**M**onótona **A**cotada **S**iempre **C**onverge" (MASC)
+---
 
-## 🔗 Referencias
+## 📝 Ejercicios Propuestos
 
-> [!quote] Enlaces a otras notas
+> [!example] 📋 Planteamiento
 >
-> - Límites de Funciones - Relación entre límites funcionales y sucesiones
-> - Series Numéricas - Aplicación de sucesiones en series
-> - [[02 – Continuidad]] - Caracterización secuencial de continuidad
-> - Topología de los Reales - Conceptos de supremo e ínfimo
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md#Criterios de Convergencia|Criterios de Convergencia]] - Herramientas avanzadas para series
+> Calcula $\lim_{x \to 2} \frac{x+1}{x-2}$ por cada lado y clasifica la asíntota vertical.
+>
+> > [!success]- ✅ Solución
+> >
+> > El numerador en $x = 2$ vale $3 > 0$ y el denominador cambia de signo: es negativo por la izquierda y positivo por la derecha.
+> >
+> > Por lo tanto $\lim_{x \to 2^-} \frac{x+1}{x-2} = -\infty$ y $\lim_{x \to 2^+} \frac{x+1}{x-2} = +\infty$.
+> >
+> > Los dos lados van a infinito con signos opuestos, así que $x = 2$ es una asíntota vertical tipo IV.
 
-## 📚 Notas Recomendadas
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 3} \frac{x^2-9}{(x-3)^2}$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sustituir da $\frac{0}{0}$, así que factorizamos: $\frac{(x-3)(x+3)}{(x-3)^2} = \frac{x+3}{x-3}$ para $x \neq 3$.
+> >
+> > En $x = 3$ el numerador vale $6 > 0$ y el denominador $x - 3$ cambia de signo.
+> >
+> > Entonces $\lim_{x \to 3^-} \frac{x+3}{x-3} = -\infty$ y $\lim_{x \to 3^+} \frac{x+3}{x-3} = +\infty$; el límite no existe y hay asíntota vertical.
 
-> [!info] 🎓 Prerrequisitos y Complementos
+> [!example] 📋 Planteamiento
 >
-> **Prerrequisitos necesarios:**
+> Calcula $\lim_{x \to \infty} \frac{3x^2 - 5x + 2}{2x^2 + x - 1}$ y di si la gráfica tiene asíntota horizontal.
 >
-> - [[../../Cálculo de una Variable|Cálculo de una Variable]] - Propiedades de completitud
-> - Desigualdades - Manipulación de inecuaciones
-> - Límites Básicos - Conceptos fundamentales
-> - [[02 - Funciones trigonométricas elementales]] - Para sucesiones definidas por funciones
+> > [!success]- ✅ Solución
+> >
+> > Los grados del numerador y del denominador son iguales ($n = m = 2$), así que el límite es el cociente de los coeficientes principales: $\frac{3}{2}$.
+> >
+> > Se verifica dividiendo por $x^2$: $\lim_{x \to \infty} \frac{3 - 5/x + 2/x^2}{2 + 1/x - 1/x^2} = \frac{3}{2}$.
+> >
+> > Como el límite es finito, la gráfica tiene asíntota horizontal $y = \frac{3}{2}$.
+
+> [!example] 📋 Planteamiento
 >
-> **Para profundizar:**
+> Calcula $\lim_{x \to \infty} \frac{x^3 + 2}{x^2 - 1}$ comparando los grados.
 >
-> - Sucesiones de Cauchy - Caracterización alternativa de convergencia
-> - Límites Superior e Inferior - Conceptos avanzados
-> - Compacidad - Teorema de Bolzano-Weierstrass
-> - [[Unidad 1 - Preliminares/01 - Métricas y Espacios Métricos.md#Espacios Métricos|Espacios Métricos]] - Generalización de conceptos
-> - Análisis Real Avanzado - Teoría completa de sucesiones
+> > [!success]- ✅ Solución
+> >
+> > El grado del numerador ($3$) es mayor que el del denominador ($2$), así que el límite es infinito.
+> >
+> > Dividiendo por $x^2$ queda $\lim_{x \to \infty} \frac{x + 2/x^2}{1 - 1/x^2} = \infty$, porque el numerador crece sin límite y el denominador tiende a $1$.
+> >
+> > Conclusión: no hay asíntota horizontal y la función crece sin cota.
+
+> [!example] 📋 Planteamiento
+>
+> Demuestra con el teorema del emparedado que $\lim_{n \to \infty} \frac{\sin n}{n} = 0$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Como para todo $n$ se tiene $-1 \leq \sin n \leq 1$, dividiendo entre $n > 0$ obtenemos $-\frac{1}{n} \leq \frac{\sin n}{n} \leq \frac{1}{n}$.
+> >
+> > Los extremos cumplen $\lim_{n \to \infty} -\frac{1}{n} = 0$ y $\lim_{n \to \infty} \frac{1}{n} = 0$.
+> >
+> > Como ambas cotas comparten el mismo límite, por el teorema del emparedado $\lim_{n \to \infty} \frac{\sin n}{n} = 0$.
+
+> [!example] 📋 Planteamiento
+>
+> Decide si $a_n = \frac{2n+1}{n+3}$ converge y, si lo hace, encuentra su límite.
+>
+> > [!success]- ✅ Solución
+> >
+> > Calculamos la diferencia: $a_{n+1} - a_n = \frac{5}{(n+4)(n+3)}$, que es siempre positiva, así que la sucesión es creciente.
+> >
+> > Reescribimos $a_n = 2 - \frac{5}{n+3}$, lo que muestra que $a_n < 2$ para todo $n$: está acotada superiormente.
+> >
+> > Por el teorema de convergencia monótona, una sucesión creciente y acotada converge. Su límite es $\lim_{n \to \infty} a_n = 2$.
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Explico la diferencia entre un límite infinito en un punto y un límite al infinito.
+> - [ ] Interpreto la $\delta$ del límite infinito y la $\varepsilon$ y la $N$ del límite de una sucesión.
+> - [ ] Distingo un límite finito de uno infinito y de uno inexistente en una función racional.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Aplico el análisis de signos para determinar los límites laterales y el tipo de asíntota vertical.
+> - [ ] Resuelvo límites al infinito de funciones racionales comparando grados o dividiendo por la mayor potencia.
+> - [ ] Verifico la monotonía y la acotación de una sucesión para decidir su convergencia.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Demuestro un límite de sucesión con el teorema del emparedado eligiendo cotas adecuadas.
+> - [ ] Explico por qué escribir un límite igual a infinito no significa que el límite exista.
+> - [ ] Conecto el límite al infinito con la existencia de asíntotas horizontales en la gráfica.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage), cap. 2 y 4: límites al infinito, asíntotas y sucesiones.
+> - R. Larson, *Cálculo* (Cengage), cap. 1: límites infinitos y comportamiento asintótico.
+> - T. Apostol, *Calculus, Vol. 1* (Wiley), cap. 3 y 10: sucesiones, convergencia y teorema del emparedado.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — los $\varepsilon$ y $\delta$ que reaparecen en estas definiciones.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — la herramienta fundamental para el análisis lateral.
+> - [[Unidad 3 - Aplicaciones de Límites/02 - Asíntotas y Comportamiento de Funciones|02 - Asíntotas y Comportamiento de Funciones]] — estudio completo del comportamiento asintótico.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué significa que $\lim_{x \to a} f(x) = +\infty$?::Que por muy grande que sea la cota $M$, siempre hay un entorno de $a$ donde $f(x)$ supera $M$; el límite como número no existe.
+> - ¿Cuándo es $x = a$ una asíntota vertical?::Cuando al menos uno de los límites laterales en $a$ es $+\infty$ o $-\infty$.
+> - ¿Qué dice la regla de los grados para una racional al infinito?::Si el grado del numerador es menor el límite es $0$; si son iguales es el cociente de coeficientes principales; si es mayor es infinito.
+> - ¿Qué condiciones exige el teorema de convergencia monótona?::Que la sucesión sea monótona y que además esté acotada del lado hacia el que crece.
+> - ¿Cómo se demuestra que $\sin(n)/n$ tiende a $0$?::Con el emparedado: se acota entre $-1/n$ y $1/n$, dos sucesiones que convergen a $0$.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — la definición $\varepsilon$-$\delta$ que aquí se adapta al infinito.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites|02 - Propiedades y Teoremas de los Límites]] — las propiedades operacionales y el emparedado.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — los dos lados que deciden la asíntota vertical.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales|02 - Límites Especiales]] — exponenciales y logarítmicos en el comportamiento al infinito.
+> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]] — qué hacer con las formas $\frac{\infty}{\infty}$ y $\infty - \infty$.
+> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]] — la caracterización por sucesiones de la continuidad.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — donde los límites al infinito se aplican a integrales.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero el análisis de signos hasta que la tabla de cocientes sea automática.
+> - Después domina la regla de los grados antes de tocar las formas indeterminadas.
+> - Cuando aparezca $\frac{\infty}{\infty}$ o $\infty - \infty$, ve a [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]].
+> - En cada problema, escribe antes de calcular **qué teorema vas a usar y por qué se cumplen sus hipótesis**.
 
 ---
 

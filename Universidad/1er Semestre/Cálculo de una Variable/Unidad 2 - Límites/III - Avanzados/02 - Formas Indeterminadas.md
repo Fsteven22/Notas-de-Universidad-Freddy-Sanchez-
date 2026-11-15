@@ -1,26 +1,41 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límites, factorización, racionalización, cancelación, algebra, técnicas-estudio, university]
+tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límites, factorización, racionalización, cancelación, algebra, técnicas-estudio, teorema-emparedado, lhopital, derivadas, university]
 ---
 
-# ❓ Formas Indeterminadas 0/0
+# ❓ Formas Indeterminadas, Teorema del Emparedado y Regla de L'Hôpital
 
-## 🎯 ¿Qué es una Forma Indeterminada 0/0?
+## 🎯 Introducción
 
-> [!info] 🔍 Definición Fundamental Una **forma indeterminada** $\frac{0}{0}$ surge cuando: $$\lim_{x \to a} \frac{f(x)}{g(x)}$$ donde $\lim_{x \to a} f(x) = 0$ y $\lim_{x \to a} g(x) = 0$
+> [!tip] 💡 Qué son las formas indeterminadas
 >
-> 🚫 **No podemos aplicar** el teorema del cociente de límites porque obtendríamos $\frac{0}{0}$, que **no está definido**.
->
+> Una **forma indeterminada** aparece cuando la sustitución directa en un límite produce una expresión sin sentido por sí sola: $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$, $0^0$, $1^\infty$ o $\infty^0$. El símbolo no está mal escrito: lo que falta es información sobre **qué tan rápido** tienden a cero (o a infinito) numerador y denominador, y esa velocidad es la que decide el valor real del límite.
 
-> [!warning] ⚠️ Por qué es "Indeterminada" La forma $\frac{0}{0}$ es indeterminada porque **puede tomar cualquier valor** dependiendo de cómo las funciones se aproximen a cero.
+> [!warning] ⚠️ Por qué $\frac{0}{0}$ no tiene un valor fijo
 >
-> **Ejemplos:**
+> - $\lim_{x \to 0} \frac{x}{x} = 1$, aunque numerador y denominador tienden a $0$.
+> - $\lim_{x \to 0} \frac{2x}{x} = 2$, con exactamente la misma forma.
+> - $\lim_{x \to 0} \frac{x^2}{x} = 0$, otra vez $\frac{0}{0}$.
 >
-> - $\lim_{x \to 0} \frac{x}{x} = 1$ (ambos tienden a 0, resultado = 1)
-> - $\lim_{x \to 0} \frac{2x}{x} = 2$ (ambos tienden a 0, resultado = 2)
-> - $\lim_{x \to 0} \frac{x^2}{x} = 0$ (ambos tienden a 0, resultado = 0)
+> **Por qué importa:** la misma forma admite cualquier resultado, por eso se llama *indeterminada*. No puedes "cancelar el cero" a ciegas: primero hay que transformar la expresión y solo después sustituir.
 
-> [!info] 🖼️ ¿Qué es una Forma Indeterminada 0/0?
+> [!tip] 💡 Las tres vías de salida que estudiamos aquí
+>
+> 1. **Técnicas algebraicas** (factorización, racionalización y cancelación): reescriben la expresión hasta que la sustitución directa vuelve a funcionar.
+> 2. **Teorema del emparedado**: acota la función entre otras dos cuyo límite sí se conoce.
+> 3. **Regla de L'Hôpital**: sustituye numerador y denominador por sus derivadas, siempre que se cumplan sus condiciones.
+>
+> **Orden de ataque:** primero las técnicas algebraicas, que son las que más se usan en el parcial; después el emparedado si la función está acotada; y en última instancia L'Hôpital, que exige derivar y verificar condiciones.
+
+---
+
+## 📋 Definiciones Formales
+
+> [!info] 📚 Definición de forma indeterminada $\frac{0}{0}$
+>
+> Decimos que $\lim_{x \to a} \frac{f(x)}{g(x)}$ tiene la **forma indeterminada** $\frac{0}{0}$ cuando $$\lim_{x \to a} f(x) = 0 \quad \text{y} \quad \lim_{x \to a} g(x) = 0$$
+>
+> En ese caso el teorema del cociente no se puede aplicar porque daría $\frac{0}{0}$, que no está definido. El límite puede valer cualquier cosa (o no existir), así que hay que transformar la expresión antes de sustituir.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_01.svg]]
 >
@@ -28,32 +43,66 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 >
 > **Por qué importa:** Fíjate en que el orden importa: primero se sustituye y solo si sale 0/0 se cambian de herramienta. Saltarte esa verificación es la causa más común de errores en exámenes.
 >
-> **Ejemplo:** En `lim_{x → 2} (x²-4)/(x-2)` la sustitución da 0/0, así que tomas la rama de factorización, cancelas x-2, evalúas x+2 y el límite es 4.
+> **Ejemplo:** En $\lim_{x \to 2} \frac{x^2-4}{x-2}$ la sustitución da $\frac{0}{0}$, así que tomas la rama de factorización, cancelas $x-2$, evalúas $x+2$ y el límite es $4$.
 
-## 🔢 Factorización Algebraica
+> [!warning] 🥪 Definición del teorema del emparedado
+>
+> Sean $f(x)$, $g(x)$ y $h(x)$ tres funciones tales que:
+>
+> 1. $f(x) \leq g(x) \leq h(x)$ para todo $x$ en una vecindad de $a$ (excepto posiblemente en $a$),
+> 2. $\lim_{x \to a} f(x) = \lim_{x \to a} h(x) = L$,
+>
+> **entonces** $\lim_{x \to a} g(x) = L$.
+>
+> **Intuición:** si una función está "emparedada" entre otras dos que tienden al mismo límite, ella también debe tender a ese límite, porque no tiene dónde esconderse.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_04.svg]]
+>
+> **Se lee así:** El diagrama muestra tres rectángulos apilados en orden vertical: la **función superior**, la función emparedada en el medio y la **función inferior**, con flechas que bajan de una a otra para mostrar el orden de la desigualdad. A un lado, un rectángulo aparte con el **límite común L** se conecta con otro rectángulo que afirma que todas convergen a ese valor, de modo que la banda queda atrapada entre dos extremos que comparten destino.
+>
+> **Por qué importa:** Te da la intuición del teorema: si aprieto una función entre dos que van al mismo sitio, ella también va. Entender esto evita usar el teorema con cotas que no coinciden.
+>
+> **Ejemplo:** Para $\lim_{x \to 0} x^2 \sin(1/x)$ acotas la función entre $-x^2$ y $x^2$, que comparten el límite $0$, y concluyes que el límite buscado es $0$.
 
-> [!success] 🎯 Estrategia de Factorización **Objetivo:** Factorizar numerador y denominador para **cancelar factores comunes** que causan la indeterminación.
+> [!info] 📚 Definición de la regla de L'Hôpital
+>
+> Si $\lim_{x \to a} \frac{f(x)}{g(x)}$ es una forma indeterminada $\frac{0}{0}$ o $\frac{\infty}{\infty}$, y se cumplen las condiciones de la regla, entonces $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+>
+> siempre que el límite de la derecha exista (finito o infinito). Es decir: podemos reemplazar las funciones por sus derivadas y el límite se mantiene.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_06.svg]]
+>
+> **Se lee así:** El diagrama arranca con un límite en forma indeterminada y pasa por un rombo de **verificación de condiciones**. Si no se cumplen, la salida es usar otras técnicas; si se cumplen, se deriva numerador y denominador y se evalúa el límite de las derivadas, con un rombo que pregunta si el resultado ya quedó determinado. Si sí, se llega al resultado final; si no, sale un rectángulo de aplicar L'Hôpital otra vez.
+>
+> **Por qué importa:** El error típico es derivar sin verificar la forma, así que el rombo de condiciones es lo que te protege. Además te muestra que se puede repetir la regla mientras siga saliendo una indeterminación.
+>
+> **Ejemplo:** En $\lim_{x \to 0} \frac{1 - \cos x - x^2/2}{x^4}$ aplicas L'Hôpital cuatro veces seguidas, porque en cada paso sigue apareciendo $\frac{0}{0}$, y llegas a $-\frac{1}{24}$.
+
+---
+
+## 🔢 Técnicas Algebraicas para el $\frac{0}{0}$
+
+> [!success] 🎯 Estrategia de factorización
+>
+> **Objetivo:** factorizar numerador y denominador para **cancelar los factores comunes** que causan la indeterminación.
 >
 > **Proceso:**
 >
-> 1. Factorizar completamente el numerador
-> 2. Factorizar completamente el denominador
-> 3. Cancelar factores comunes
-> 4. Evaluar el límite resultante
+> 1. Factorizar completamente el numerador.
+> 2. Factorizar completamente el denominador.
+> 3. Cancelar los factores comunes.
+> 4. Evaluar el límite resultante por sustitución directa.
 
-### 📊 Técnicas de Factorización Principales
-
-> [!tip] 🔧 Métodos de Factorización
+> [!tip] 🔧 Métodos de factorización
 >
-> **1. Diferencia de cuadrados:** $$a^2 - b^2 = (a+b)(a-b)$$
+> **Patrones que conviene tener a mano:**
 >
-> **2. Trinomio cuadrado perfecto:** $$a^2 + 2ab + b^2 = (a+b)^2$$ $$a^2 - 2ab + b^2 = (a-b)^2$$
+> - Diferencia de cuadrados: $a^2 - b^2 = (a+b)(a-b)$
+> - Trinomio cuadrado perfecto: $a^2 + 2ab + b^2 = (a+b)^2$ y $a^2 - 2ab + b^2 = (a-b)^2$
+> - Factor común: $ax + bx = x(a + b)$
+> - Trinomio de segundo grado: $ax^2 + bx + c = (px + q)(rx + s)$
 >
-> **3. Factor común:** $$ax + bx = x(a + b)$$
->
-> **4. Trinomio de segundo grado:** $$ax^2 + bx + c = (px + q)(rx + s)$$
->
-> |Tipo de Factorización|Patrón|Ejemplo|Factorizado|
+> |Tipo de factorización|Patrón|Ejemplo|Factorizado|
 > |---|---|---|---|
 > |Diferencia de cuadrados|$a^2 - b^2$|$x^2 - 4$|$(x+2)(x-2)$|
 > |Cuadrado perfecto|$(a \pm b)^2$|$x^2 + 6x + 9$|$(x+3)^2$|
@@ -61,30 +110,24 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > |Trinomio general|$ax^2 + bx + c$|$2x^2 + 7x + 3$|$(2x+1)(x+3)$|
 > |Diferencia de cubos|$a^3 - b^3$|$x^3 - 8$|$(x-2)(x^2+2x+4)$|
 
-> [!example] 📝 Ejemplos de Factorización
+> [!example] 📝 Ejemplos de factorización
 >
-> **Ejemplo 1: Diferencia de cuadrados** $$\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$$
+> **Ejemplo 1: diferencia de cuadrados** $$\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$$
 >
-> **Solución:**
+> - Verificar: $\frac{2^2 - 4}{2 - 2} = \frac{0}{0}$, así que sí es indeterminada.
+> - Factorizar: $x^2 - 4 = (x+2)(x-2)$.
+> - Simplificar: $\frac{(x+2)(x-2)}{x-2} = x+2$ para $x \neq 2$.
+> - Evaluar: $\lim_{x \to 2} (x+2) = 4$.
 >
-> - Verificar: $\frac{2^2 - 4}{2 - 2} = \frac{0}{0}$ ✓ (Forma indeterminada)
-> - Factorizar: $x^2 - 4 = (x+2)(x-2)$
-> - Simplificar: $\frac{(x+2)(x-2)}{x-2} = x+2$ (para $x ≠ 2$)
-> - Evaluar: $\lim_{x \to 2} (x+2) = 4$
+> **Ejemplo 2: trinomio cuadrático** $$\lim_{x \to -1} \frac{x^2 + 3x + 2}{x^2 - 1}$$
 >
-> **Ejemplo 2: Trinomio cuadrático** $$\lim_{x \to -1} \frac{x^2 + 3x + 2}{x^2 - 1}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{1 - 3 + 2}{1 - 1} = \frac{0}{0}$ ✓
-> - Factorizar numerador: $x^2 + 3x + 2 = (x+1)(x+2)$
-> - Factorizar denominador: $x^2 - 1 = (x+1)(x-1)$
-> - Simplificar: $\frac{(x+1)(x+2)}{(x+1)(x-1)} = \frac{x+2}{x-1}$ (para $x ≠ -1$)
-> - Evaluar: $\lim_{x \to -1} \frac{x+2}{x-1} = \frac{1}{-2} = -\frac{1}{2}$
+> - Verificar: $\frac{1 - 3 + 2}{1 - 1} = \frac{0}{0}$.
+> - Numerador: $x^2 + 3x + 2 = (x+1)(x+2)$.
+> - Denominador: $x^2 - 1 = (x+1)(x-1)$.
+> - Simplificar: $\frac{(x+1)(x+2)}{(x+1)(x-1)} = \frac{x+2}{x-1}$ para $x \neq -1$.
+> - Evaluar: $\lim_{x \to -1} \frac{x+2}{x-1} = \frac{1}{-2} = -\frac{1}{2}$.
 
-### 🎲 Casos Especiales de Factorización
-
-> [!tip] ⚡ Factorizaciones Avanzadas
+> [!tip] ⚡ Factorizaciones avanzadas
 >
 > **Suma y diferencia de cubos:**
 >
@@ -95,32 +138,19 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 >
 > - $ax + ay + bx + by = a(x+y) + b(x+y) = (a+b)(x+y)$
 >
-> **Sustitución trigonométrica:**
->
-> - Usar identidades como $\sin^2 x + \cos^2 x = 1$
->
+> **Sustitución trigonométrica:** cuando aparezcan identidades como $\sin^2 x + \cos^2 x = 1$, úsalas para reescribir la expresión antes de buscar factores comunes.
 
-> [!example] 🎯 Ejemplo Avanzado $$\lim_{x \to 2} \frac{x^3 - 8}{x^2 - 4}$$
+> [!example] 🎯 Ejemplo avanzado con diferencia de cubos $$\lim_{x \to 2} \frac{x^3 - 8}{x^2 - 4}$$
 >
-> **Solución:**
+> - Verificar: $\frac{8 - 8}{4 - 4} = \frac{0}{0}$.
+> - Numerador: $x^3 - 8 = (x-2)(x^2 + 2x + 4)$.
+> - Denominador: $x^2 - 4 = (x-2)(x+2)$.
+> - Simplificar: $\frac{(x-2)(x^2 + 2x + 4)}{(x-2)(x+2)} = \frac{x^2 + 2x + 4}{x+2}$ para $x \neq 2$.
+> - Evaluar: $\lim_{x \to 2} \frac{4 + 4 + 4}{4} = \frac{12}{4} = 3$.
+
+> [!success] 🔄 Estrategias de racionalización
 >
-> - Verificar: $\frac{8 - 8}{4 - 4} = \frac{0}{0}$ ✓
-> - Factorizar numerador: $x^3 - 8 = (x-2)(x^2 + 2x + 4)$
-> - Factorizar denominador: $x^2 - 4 = (x-2)(x+2)$
-> - Simplificar: $\frac{(x-2)(x^2 + 2x + 4)}{(x-2)(x+2)} = \frac{x^2 + 2x + 4}{x+2}$
-> - Evaluar: $\lim_{x \to 2} \frac{4 + 4 + 4}{4} = \frac{12}{4} = 3$
-
-## 📐 Racionalización
-
-> [!info] 🔄 Técnica de Racionalización **Objetivo:** Eliminar **radicales del denominador** o numerador multiplicando por el **conjugado**.
->
-> **Conjugado:** Si tenemos $\sqrt{a} + \sqrt{b}$, su conjugado es $\sqrt{a} - \sqrt{b}$
->
-> **Propiedad clave:** $(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b$
-
-### 🌊 Tipos de Racionalización
-
-> [!success] 🎯 Estrategias de Racionalización
+> **Objetivo:** eliminar los **radicales** multiplicando por el **conjugado**. Si tenemos $\sqrt{a} + \sqrt{b}$, su conjugado es $\sqrt{a} - \sqrt{b}$, y la propiedad clave es $(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = a - b$.
 >
 > **1. Racionalización simple:** $$\frac{1}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}} = \frac{\sqrt{a}}{a}$$
 >
@@ -134,31 +164,25 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 > |$\frac{A}{\sqrt{x} + \sqrt{y}}$|$\frac{\sqrt{x} - \sqrt{y}}{\sqrt{x} - \sqrt{y}}$|$\frac{A(\sqrt{x} - \sqrt{y})}{x - y}$|Suma de raíces en denominador|
 > |$\frac{\sqrt{x} - \sqrt{y}}{A}$|$\frac{\sqrt{x} + \sqrt{y}}{\sqrt{x} + \sqrt{y}}$|$\frac{x - y}{A(\sqrt{x} + \sqrt{y})}$|Resta de raíces en numerador|
 
-> [!example] 📊 Ejemplos de Racionalización
+> [!example] 📊 Ejemplos de racionalización
 >
-> **Ejemplo 1: Racionalización básica** $$\lim_{x \to 0} \frac{\sqrt{x + 1} - 1}{x}$$
+> **Ejemplo 1: racionalización básica** $$\lim_{x \to 0} \frac{\sqrt{x + 1} - 1}{x}$$
 >
-> **Solución:**
+> - Verificar: $\frac{\sqrt{1} - 1}{0} = \frac{0}{0}$.
+> - Multiplicar por el conjugado: $\frac{\sqrt{x + 1} - 1}{x} \cdot \frac{\sqrt{x + 1} + 1}{\sqrt{x + 1} + 1}$.
+> - Diferencia de cuadrados: $\frac{(x + 1) - 1}{x(\sqrt{x + 1} + 1)} = \frac{x}{x(\sqrt{x + 1} + 1)}$.
+> - Simplificar: $\frac{1}{\sqrt{x + 1} + 1}$ para $x \neq 0$.
+> - Evaluar: $\lim_{x \to 0} \frac{1}{\sqrt{1} + 1} = \frac{1}{2}$.
 >
-> - Verificar: $\frac{\sqrt{1} - 1}{0} = \frac{0}{0}$ ✓
-> - Multiplicar por conjugado: $\frac{\sqrt{x + 1} - 1}{x} \cdot \frac{\sqrt{x + 1} + 1}{\sqrt{x + 1} + 1}$
-> - Aplicar diferencia de cuadrados: $\frac{(x + 1) - 1}{x(\sqrt{x + 1} + 1)} = \frac{x}{x(\sqrt{x + 1} + 1)}$
-> - Simplificar: $\frac{1}{\sqrt{x + 1} + 1}$ (para $x ≠ 0$)
-> - Evaluar: $\lim_{x \to 0} \frac{1}{\sqrt{1} + 1} = \frac{1}{2}$
+> **Ejemplo 2: racionalización compleja** $$\lim_{x \to 4} \frac{\sqrt{x} - 2}{x - 4}$$
 >
-> **Ejemplo 2: Racionalización compleja** $$\lim_{x \to 4} \frac{\sqrt{x} - 2}{x - 4}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{2 - 2}{4 - 4} = \frac{0}{0}$ ✓
-> - Multiplicar por conjugado: $\frac{\sqrt{x} - 2}{x - 4} \cdot \frac{\sqrt{x} + 2}{\sqrt{x} + 2}$
-> - Simplificar numerador: $\frac{x - 4}{(x - 4)(\sqrt{x} + 2)}$
-> - Cancelar: $\frac{1}{\sqrt{x} + 2}$ (para $x ≠ 4$)
-> - Evaluar: $\lim_{x \to 4} \frac{1}{\sqrt{4} + 2} = \frac{1}{4}$
+> - Verificar: $\frac{2 - 2}{4 - 4} = \frac{0}{0}$.
+> - Multiplicar por el conjugado: $\frac{\sqrt{x} - 2}{x - 4} \cdot \frac{\sqrt{x} + 2}{\sqrt{x} + 2}$.
+> - Simplificar numerador: $\frac{x - 4}{(x - 4)(\sqrt{x} + 2)}$.
+> - Cancelar: $\frac{1}{\sqrt{x} + 2}$ para $x \neq 4$.
+> - Evaluar: $\lim_{x \to 4} \frac{1}{\sqrt{4} + 2} = \frac{1}{4}$.
 
-### 🔍 Patrones Comunes en Racionalización
-
-> [!info] 🖼️ Patrones Comunes en Racionalización
+> [!info] 🖼️ Patrones comunes en racionalización
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_02.svg]]
 >
@@ -166,122 +190,86 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 >
 > **Por qué importa:** Decide rápido cuál conjugado multiplicar, que es el paso donde más se equivoca la gente. Te evita cancelar el factor equivocado y perder el término que da el resultado.
 >
-> **Ejemplo:** En `lim_{x → 4} (√x - 2)/(x-4)` el radical está en el numerador, así que multiplicas por `(√x + 2)` y el límite queda 1/4.
+> **Ejemplo:** En $\lim_{x \to 4} \frac{\sqrt{x} - 2}{x - 4}$ el radical está en el numerador, así que multiplicas por $(\sqrt{x} + 2)$ y el límite queda $\frac{1}{4}$.
 
-> [!tip] 🎯 Identificación Rápida **¿Cuándo racionalizar?**
+> [!tip] 🎯 Identificación rápida de cuándo racionalizar
 >
-> - Hay raíces cuadradas en numerador o denominador
-> - La sustitución directa da $\frac{0}{0}$
-> - Se pueden formar conjugados útiles
+> **¿Cuándo racionalizar?**
+>
+> - Hay raíces cuadradas en numerador o denominador.
+> - La sustitución directa da $\frac{0}{0}$.
+> - Se pueden formar conjugados útiles.
 >
 > **¿Qué conjugado usar?**
 >
-> - Para $\sqrt{a} + b$ usar $\sqrt{a} - b$
-> - Para $\sqrt{a} - \sqrt{b}$ usar $\sqrt{a} + \sqrt{b}$
-> - Para $a + \sqrt{b}$ usar $a - \sqrt{b}$
+> - Para $\sqrt{a} + b$ usar $\sqrt{a} - b$.
+> - Para $\sqrt{a} - \sqrt{b}$ usar $\sqrt{a} + \sqrt{b}$.
+> - Para $a + \sqrt{b}$ usar $a - \sqrt{b}$.
 
-## ✂️ Cancelación de Factores Comunes
-
-> [!success] 🎯 Proceso de Cancelación **Objetivo:** Eliminar los **factores que causan la indeterminación** mediante cancelación algebraica.
+> [!success] ✂️ Proceso de cancelación
+>
+> **Objetivo:** eliminar los **factores que causan la indeterminación** mediante cancelación algebraica.
 >
 > **Pasos fundamentales:**
 >
-> 1. **Identificar** el factor problemático
-> 2. **Factorizar** tanto numerador como denominador
-> 3. **Cancelar** factores comunes
-> 4. **Evaluar** el límite simplificado
+> 1. **Identificar** el factor problemático.
+> 2. **Factorizar** tanto numerador como denominador.
+> 3. **Cancelar** los factores comunes.
+> 4. **Evaluar** el límite simplificado.
 
-### 🔄 Tipos de Cancelación
-
-> [!tip] ⚡ Métodos de Cancelación
+> [!tip] ⚡ Métodos de cancelación
 >
-> **1. Cancelación directa:** $$\frac{(x-a) \cdot P(x)}{(x-a) \cdot Q(x)} = \frac{P(x)}{Q(x)} \quad (x ≠ a)$$
+> **1. Cancelación directa:** $$\frac{(x-a) \cdot P(x)}{(x-a) \cdot Q(x)} = \frac{P(x)}{Q(x)} \quad (x \neq a)$$
 >
-> **2. Cancelación múltiple:** $$\frac{(x-a)^2 \cdot P(x)}{(x-a) \cdot Q(x)} = \frac{(x-a) \cdot P(x)}{Q(x)} \quad (x ≠ a)$$
+> **2. Cancelación múltiple:** $$\frac{(x-a)^2 \cdot P(x)}{(x-a) \cdot Q(x)} = \frac{(x-a) \cdot P(x)}{Q(x)} \quad (x \neq a)$$
 >
 > **3. Cancelación con factorización previa:** $$\frac{f(x)}{g(x)} \to \frac{A(x)(x-a)}{B(x)(x-a)} = \frac{A(x)}{B(x)}$$
 >
-> |Situación|Antes de Cancelar|Después de Cancelar|Factor Cancelado|
+> |Situación|Antes de cancelar|Después de cancelar|Factor cancelado|
 > |---|---|---|---|
 > |Factor lineal|$\frac{(x-2)(x+1)}{(x-2)(x+3)}$|$\frac{x+1}{x+3}$|$(x-2)$|
 > |Factor cuadrático|$\frac{(x^2-1)(x+2)}{(x^2-1)(x-3)}$|$\frac{x+2}{x-3}$|$(x^2-1)$|
 > |Múltiples factores|$\frac{(x-1)^2(x+2)}{(x-1)(x+5)}$|$\frac{(x-1)(x+2)}{x+5}$|$(x-1)$|
-> |Con constantes|$\frac{2(x-3)(x+1)}{4(x-3)}$|$\frac{(x+1)}{2}$|$2(x-3)$|
+> |Con constantes|$\frac{2(x-3)(x+1)}{4(x-3)}$|$\frac{x+1}{2}$|$2(x-3)$|
 
-> [!example] 🎨 Ejemplos de Cancelación
+> [!example] 🎨 Ejemplos de cancelación
 >
-> **Ejemplo 1: Cancelación simple** $$\lim_{x \to 3} \frac{x^2 - 9}{x - 3}$$
+> **Ejemplo 1: cancelación simple** $$\lim_{x \to 3} \frac{x^2 - 9}{x - 3}$$
 >
-> **Solución:**
+> - Verificar: $\frac{9 - 9}{3 - 3} = \frac{0}{0}$.
+> - Factorizar: $\frac{(x+3)(x-3)}{x-3}$.
+> - Cancelar: queda $x+3$ para $x \neq 3$.
+> - Evaluar: $\lim_{x \to 3} (x+3) = 6$.
 >
-> - Verificar: $\frac{9 - 9}{3 - 3} = \frac{0}{0}$ ✓
-> - Factorizar: $\frac{(x+3)(x-3)}{x-3}$
-> - Cancelar: $\frac{(x+3)\cancel{(x-3)}}{\cancel{x-3}} = x+3$ (para $x ≠ 3$)
-> - Evaluar: $\lim_{x \to 3} (x+3) = 6$
+> **Ejemplo 2: cancelación múltiple** $$\lim_{x \to -2} \frac{x^3 + 8}{x^2 + 4x + 4}$$
 >
-> **Ejemplo 2: Cancelación múltiple** $$\lim_{x \to -2} \frac{x^3 + 8}{x^2 + 4x + 4}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{-8 + 8}{4 - 8 + 4} = \frac{0}{0}$ ✓
-> - Factorizar numerador: $x^3 + 8 = (x+2)(x^2 - 2x + 4)$
-> - Factorizar denominador: $x^2 + 4x + 4 = (x+2)^2$
-> - Cancelar: $\frac{(x+2)(x^2 - 2x + 4)}{(x+2)^2} = \frac{x^2 - 2x + 4}{x+2}$ (para $x ≠ -2$)
-> - Evaluar: $\lim_{x \to -2} \frac{4 + 4 + 4}{0}$ → Límite no existe (∞)
+> - Verificar: $\frac{-8 + 8}{4 - 8 + 4} = \frac{0}{0}$.
+> - Numerador: $x^3 + 8 = (x+2)(x^2 - 2x + 4)$.
+> - Denominador: $x^2 + 4x + 4 = (x+2)^2$.
+> - Cancelar: $\frac{x^2 - 2x + 4}{x+2}$ para $x \neq -2$.
+> - Evaluar: el numerador tiende a $12$ y el denominador a $0$, así que el límite no existe (la función se va a infinito).
 
-### 🚨 Precauciones en la Cancelación
+> [!warning] ⚠️ Cuidados en la cancelación
+>
+> **1. Verificar la indeterminación:** confirma siempre que la sustitución da $\frac{0}{0}$ antes de cancelar.
+>
+> **2. Restricción de dominio:** recuerda que $x \neq a$ después de la cancelación; el límite estudia el comportamiento *cerca* de $a$, no en $a$.
+>
+> **3. Cancelación completa:** si queda un factor $(x-a)$ en el denominador, el límite será infinito.
+>
+> **4. Factorización correcta:** revisa cada factorización antes de cancelar; un factor mal factorizado arrastra todo el problema.
 
-> [!warning] ⚠️ Cuidados Importantes
+> [!example] 🔍 Ejemplo con múltiples técnicas $$\lim_{x \to 1} \frac{\sqrt{x+3} - 2}{x^2 - 1}$$
 >
-> **1. Verificar la indeterminación:**
+> - Verificar: $\frac{\sqrt{4} - 2}{1 - 1} = \frac{0}{0}$.
+> - **Racionalizar el numerador:** multiplicar por $\frac{\sqrt{x+3} + 2}{\sqrt{x+3} + 2}$; el numerador da $(\sqrt{x+3})^2 - 4 = x - 1$.
+> - **Factorizar el denominador:** $x^2 - 1 = (x-1)(x+1)$.
+> - **Cancelar:** $\frac{x-1}{(x-1)(x+1)(\sqrt{x+3} + 2)} = \frac{1}{(x+1)(\sqrt{x+3} + 2)}$.
+> - **Evaluar:** $\lim_{x \to 1} \frac{1}{(2)(\sqrt{4} + 2)} = \frac{1}{2 \cdot 4} = \frac{1}{8}$.
 >
-> - Siempre confirmar que se obtiene $\frac{0}{0}$ antes de cancelar
->
-> **2. Restricción de dominio:**
->
-> - Recordar que $x ≠ a$ después de la cancelación
-> - El límite evalúa el comportamiento cerca de $a$, no en $a$
->
-> **3. Cancelación completa:**
->
-> - Asegurar que todos los factores problemáticos se cancelen
-> - Si queda un factor $(x-a)$ en denominador → límite infinito
->
-> **4. Factorización correcta:**
->
-> - Verificar cada factorización antes de cancelar
->
+> **Por qué importa:** aquí conviven racionalización, factorización y cancelación; el orden (primero quitar la raíz, después factorizar) es lo que hace que los pasos encajen.
 
-> [!example] 🔍 Ejemplo con Múltiples Técnicas $$\lim_{x \to 1} \frac{\sqrt{x+3} - 2}{x^2 - 1}$$
->
-> **Solución combinada:**
->
-> - Verificar: $\frac{\sqrt{4} - 2}{1 - 1} = \frac{0}{0}$ ✓
-> - **Racionalizar numerador:** Multiplicar por $\frac{\sqrt{x+3} + 2}{\sqrt{x+3} + 2}$
-> - Numerador: $(\sqrt{x+3})^2 - 4 = x + 3 - 4 = x - 1$
-> - **Factorizar denominador:** $x^2 - 1 = (x-1)(x+1)$
-> - **Cancelar factor común:** $\frac{x-1}{(x-1)(x+1)(\sqrt{x+3} + 2)} = \frac{1}{(x+1)(\sqrt{x+3} + 2)}$
-> - **Evaluar:** $\lim_{x \to 1} \frac{1}{(2)(\sqrt{4} + 2)} = \frac{1}{2 \cdot 4} = \frac{1}{8}$
-
-## 🧠 Técnica de Estudio: Mnemotecnia "FRC"
-
-> [!tip] 🎓 Método "FRC" para Formas Indeterminadas 0/0
->
-> **F** - **F**actorizar (buscar factores comunes) **R** - **R**acionalizar (si hay radicales) **C** - **C**ancelar (eliminar factores problemáticos)
->
-> **Algoritmo de decisión:**
->
-> 1. **Verificar** si es forma $\frac{0}{0}$
-> 2. **¿Hay radicales?** → Racionalizar primero
-> 3. **¿Se puede factorizar?** → Factorizar
-> 4. **¿Hay factores comunes?** → Cancelar
-> 5. **Evaluar** el límite simplificado
->
-> **Frase nemotécnica:** _"Factoriza, Racionaliza, Cancela"_
-
-## 📊 Diagrama de Flujo Completo
-
-> [!info] 🖼️ Diagrama de Flujo Completo
+> [!info] 🖼️ Diagrama de flujo completo del $\frac{0}{0}$
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_03.svg]]
 >
@@ -289,743 +277,236 @@ tags: [MATG1045, unidad2, formas-indeterminadas, matemáticas, cálculo, límite
 >
 > **Por qué importa:** Es tu mapa de decisión para resolver cualquier 0/0 sin saltarte pasos ni probar técnicas al azar. Recórrelo de izquierda a derecha y siempre sabrás qué hacer y en qué orden.
 >
-> **Ejemplo:** En `lim_{x → 1} (√(x+3) - 2)/(x²-1)` el diagrama te lleva a racionalizar, luego factorizar el denominador, cancelar x-1 y llegar a 1/8.
+> **Ejemplo:** En $\lim_{x \to 1} \frac{\sqrt{x+3} - 2}{x^2-1}$ el diagrama te lleva a racionalizar, luego factorizar el denominador, cancelar $x-1$ y llegar a $\frac{1}{8}$.
 
-## 📚 Referencias y Conexiones
+> [!tip] 🧠 Técnica de estudio "FRC"
+>
+> - **F**actorizar: buscar factores comunes.
+> - **R**acionalizar: si hay radicales, multiplicar por el conjugado.
+> - **C**ancelar: eliminar los factores problemáticos.
+>
+> **Algoritmo de decisión:**
+>
+> 1. Verificar si es la forma $\frac{0}{0}$.
+> 2. ¿Hay radicales? → racionalizar primero.
+> 3. ¿Se puede factorizar? → factorizar.
+> 4. ¿Hay factores comunes? → cancelar.
+> 5. Evaluar el límite simplificado.
+>
+> **Frase nemotécnica:** *"Factoriza, Racionaliza, Cancela"*.
 
-> [!quote] 🔗 Enlaces a Otras Notas
+> [!tip] 💪 Banco de prácticas: técnicas algebraicas
 >
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Base teórica para entender por qué fallan
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md#📊 Técnicas de Factorización Principales|02 - Formas Indeterminadas.md]] - Herramientas algebraicas fundamentales
-> - Conjugados y Racionalización - Técnicas específicas para radicales
-> - 02 - Formas Indeterminadas - Método alternativo para formas indeterminadas
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales.md|02 - Límites Especiales.md]] - Casos especiales con funciones trigonométricas
-
-## 📖 Notas Recomendadas para Estudio Complementario
-
-> [!info] 📝 Secuencia de Aprendizaje Progresiva
->
-> **Prerrequisitos:**
->
-> 1. **Álgebra de Polinomios** - Factorización básica
-> 2. **Productos Notables** - Patrones algebraicos
-> 3. **Radicales y Conjugados** - Operaciones con raíces
->
-> **Temas Paralelos:** 4. **Gráficas y Discontinuidades** - Interpretación visual 5. **Simplificación Algebraica** - Técnicas de reducción
->
-> **Siguientes Pasos:** 6. **02 - Formas Indeterminadas** - ∞/∞, 0·∞, etc. 7. **02 - Formas Indeterminadas** - Método sistemático 8. **[[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales.md|02 - Límites Especiales.md]]** - Casos avanzados
-
-## 🎯 Ejercicios de Práctica Estructurada
-
-> [!example] 💪 Entrenamiento por Técnicas
->
-> **Nivel 1 - Factorización Básica:** 🟢
+> **Nivel 1 - Factorización básica:**
 >
 > - $\lim_{x \to 3} \frac{x^2 - 9}{x - 3}$
 > - $\lim_{x \to -2} \frac{x^2 + 4x + 4}{x + 2}$
 > - $\lim_{x \to 1} \frac{x^3 - 1}{x^2 - 1}$
 >
-> **Nivel 2 - Racionalización Simple:** 🟡
+> **Nivel 2 - Racionalización simple:**
 >
 > - $\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$
 > - $\lim_{x \to 9} \frac{\sqrt{x} - 3}{x - 9}$
 > - $\lim_{x \to 1} \frac{x - 1}{\sqrt{x} - 1}$
 >
-> **Nivel 3 - Técnicas Combinadas:** 🟠
+> **Nivel 3 - Técnicas combinadas:**
 >
 > - $\lim_{x \to 4} \frac{x^2 - 16}{\sqrt{x + 5} - 3}$
 > - $\lim_{x \to 2} \frac{\sqrt{x + 7} - 3}{x^2 - 4}$
 > - $\lim_{x \to 0} \frac{(1 + x)^2 - 1}{x}$
 >
-> **Nivel 4 - Casos Complejos:** 🔴
+> **Nivel 4 - Casos complejos:**
 >
 > - $\lim_{x \to 1} \frac{x^4 - 1}{x^3 - 1}$
 > - $\lim_{x \to 8} \frac{\sqrt[3]{x} - 2}{x - 8}$
 > - $\lim_{x \to 0} \frac{\sqrt{1 + 2x} - \sqrt{1 - 2x}}{x}$
 
-## 🔍 Casos Especiales y Patrones Frecuentes
+> [!tip] 📊 Patrones que conviene reconocer de un vistazo
+>
+> **1. Diferencia de cuadrados en el numerador:** $$\frac{x^2 - a^2}{x - a} = x + a$$
+>
+> **2. Radical menos constante:** $$\frac{\sqrt{x + c} - \sqrt{c}}{x} = \frac{1}{\sqrt{x + c} + \sqrt{c}}$$
+>
+> **3. Diferencia de cubos:** $$\frac{x^3 - a^3}{x - a} = x^2 + ax + a^2$$
+>
+> **4. Tras cancelar $(x-a)$, si en el denominador queda $(x-a)^2$:** el límite es infinito, no un valor finito.
 
-> [!tip] 📊 Patrones Comunes a Reconocer
+> [!warning] 🚨 Errores comunes en las técnicas algebraicas
 >
-> **1. Diferencia de cuadrados en numerador:** $$\frac{x^2 - a^2}{x - a} = x + a$$
+> **1. No verificar la forma indeterminada:** sustituye siempre primero para confirmar $\frac{0}{0}$.
 >
-> **2. Cuadrado perfecto en denominador:** $$\frac{f(x)}{(x-a)^2} \text{ después de cancelar } (x-a)$$
+> **2. Factorización incorrecta:** revisa cada paso de factorización antes de cancelar.
 >
-> **3. Radical menos constante:** $$\frac{\sqrt{x + c} - \sqrt{c}}{x} = \frac{1}{\sqrt{x + c} + \sqrt{c}}$$
+> **3. Cancelación prematura:** no canceles antes de factorizar completamente.
 >
-> **4. Diferencia de cubos:** $$\frac{x^3 - a^3}{x - a} = x^2 + ax + a^2$$
->
-
-> [!warning] 🚨 Errores Comunes a Evitar
->
-> **1. No verificar la forma indeterminada:**
->
-> - Siempre sustituir primero para confirmar $\frac{0}{0}$
->
-> **2. Factorización incorrecta:**
->
-> - Verificar cada paso de factorización
->
-> **3. Cancelación prematura:**
->
-> - No cancelar antes de factorizar completamente
->
-> **4. Olvidar restricciones de dominio:**
->
-> - Recordar que $x ≠ a$ en la expresión simplificada
+> **4. Olvidar las restricciones de dominio:** en la expresión simplificada sigue valiendo $x \neq a$.
 
 ---
 
+## 📝 Ejercicios Propuestos
 
-# 🥪 Teorema del Emparedado (Sándwich/Squeeze)
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 3} \frac{x^2 - 9}{x - 3}$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sustitución directa: $\frac{9-9}{3-3} = \frac{0}{0}$, forma indeterminada.
+> >
+> > Factorizar: $x^2 - 9 = (x+3)(x-3)$, así que $\frac{(x+3)(x-3)}{x-3} = x+2$ para $x \neq 3$.
+> >
+> > Evaluar: $\lim_{x \to 3} (x+3) = 6$.
+> >
+> > **Respuesta:** el límite vale $6$.
 
-## 🎯 Definición del Teorema del Emparedado
+> [!example] 📋 Planteamiento
+>
+> Resuelve $\lim_{x \to 0} \frac{\sqrt{x + 4} - 2}{x}$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sustitución: $\frac{\sqrt{4}-2}{0} = \frac{0}{0}$.
+> >
+> > Multiplicar por el conjugado del numerador:
+> >
+> > $$\frac{\sqrt{x+4}-2}{x} \cdot \frac{\sqrt{x+4}+2}{\sqrt{x+4}+2} = \frac{(x+4)-4}{x(\sqrt{x+4}+2)} = \frac{x}{x(\sqrt{x+4}+2)}.$$
+> >
+> > Cancelar y evaluar: $\lim_{x \to 0} \frac{1}{\sqrt{x+4}+2} = \frac{1}{4}$.
+> >
+> > **Respuesta:** el límite vale $\frac{1}{4}$.
 
-> [!info] 💡 Definición Fundamental El **Teorema del Emparedado** (también conocido como **Teorema del Sandwich** o **Squeeze Theorem**) establece que:
+> [!example] 📋 Planteamiento
 >
-> Si tenemos tres funciones $f(x)$, $g(x)$ y $h(x)$ tales que:
+> Encuentra $\lim_{x \to -1} \frac{x^2 + 3x + 2}{x^2 - 1}$.
 >
-> 1. $f(x) \leq g(x) \leq h(x)$ para todos los $x$ en un intervalo que contiene $a$ (excepto posiblemente en $a$)
-> 2. $\lim_{x \to a} f(x) = \lim_{x \to a} h(x) = L$
->
-> Entonces: $$\lim_{x \to a} g(x) = L$$
->
-> **Intuición:** Si una función está "emparedada" entre otras dos que tienden al mismo límite, entonces ella también debe tender a ese límite.
+> > [!success]- ✅ Solución
+> >
+> > Sustitución: $\frac{1-3+2}{1-1} = \frac{0}{0}$.
+> >
+> > Factorizar: numerador $= (x+1)(x+2)$ y denominador $= (x+1)(x-1)$.
+> >
+> > Cancelar $(x+1)$: queda $\frac{x+2}{x-1}$ para $x \neq -1$.
+> >
+> > Evaluar: $\frac{-1+2}{-1-1} = -\frac{1}{2}$.
+> >
+> > **Respuesta:** el límite vale $-\frac{1}{2}$.
 
-### 📊 Visualización Geométrica
+> [!example] 📋 Planteamiento
+>
+> Usa el teorema del emparedado para hallar $\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right)$.
+>
+> > [!success]- ✅ Solución
+> >
+> > Como $-1 \leq \sin(1/x) \leq 1$ para todo $x \neq 0$, multiplicando por $x^2 \geq 0$:
+> >
+> > $$-x^2 \leq x^2 \sin(1/x) \leq x^2.$$
+> >
+> > Los extremos cumplen $\lim_{x \to 0} (-x^2) = \lim_{x \to 0} x^2 = 0$, así que por el teorema del emparedado el límite central también es $0$.
+> >
+> > **Respuesta:** el límite vale $0$, aunque $\sin(1/x)$ oscila sin límite cerca del origen.
 
-> [!success] ✅ Interpretación Gráfica
+> [!example] 📋 Planteamiento
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_04.svg]]
+> Aplica la regla de L'Hôpital para calcular $\lim_{x \to 0} \frac{1 - \cos x - x^2/2}{x^4}$.
 >
-> **Se lee así:** El diagrama muestra tres rectángulos apilados en orden vertical: la **función superior**, la función emparedada en el medio y la **función inferior**, con flechas que bajan de una a otra para mostrar el orden de la desigualdad. A un lado, un rectángulo aparte con el **límite común L** se conecta con otro rectángulo que afirma que todas convergen a ese valor, de modo que la banda queda atrapada entre dos extremos que comparten destino.
->
-> **Por qué importa:** Te da la intuición del teorema del emparedado: si aprieto una función entre dos que van al mismo sitio, ella también va. Entender esto evita usar el teorema con cotas que no coinciden.
->
-> **Ejemplo:** Para `lim_{x → 0} x² sin(1/x)` acotas la función entre -x² y x², que comparten el límite 0, y concluyes que el límite buscado es 0.
->
-> **Características visuales:**
->
-> - $h(x)$ es la función "techo" (superior)
-> - $g(x)$ está atrapada en el medio
-> - $f(x)$ es la función "piso" (inferior)
-> - Todas convergen al mismo punto $L$ cuando $x \to a$
+> > [!success]- ✅ Solución
+> >
+> > Sustitución: $\frac{1-1-0}{0} = \frac{0}{0}$, así que se aplica L'Hôpital:
+> >
+> > 1. $\frac{\sin x - x}{4x^3}$ (sigue $\frac{0}{0}$).
+> > 2. $\frac{\cos x - 1}{12x^2}$ (sigue $\frac{0}{0}$).
+> > 3. $\frac{-\sin x}{24x}$ (sigue $\frac{0}{0}$).
+> > 4. $\frac{-\cos x}{24} \to -\frac{1}{24}$.
+> >
+> > **Respuesta:** el límite vale $-\frac{1}{24}$: se necesitaron cuatro aplicaciones seguidas porque la indeterminación se heredaba en cada paso.
 
-### 🔢 Condiciones de Aplicación
-
-> [!example] 🎨 Condiciones Necesarias Para aplicar el teorema necesitamos verificar:
->
-> **Condición 1: Desigualdad** $$f(x) \leq g(x) \leq h(x)$$
->
-> **Condición 2: Límites iguales** $$\lim_{x \to a} f(x) = \lim_{x \to a} h(x) = L$$
->
-> **Condición 3: Vecindad** Las desigualdades deben cumplirse en una vecindad de $a$ (excepto posiblemente en $a$ mismo)
->
-> |Verificación|Símbolo|Descripción|
-> |---|---|---|
-> |Orden|$f \leq g \leq h$|Función emparedada|
-> |Límites|$\lim f = \lim h$|Convergencia común|
-> |Dominio|Vecindad de $a$|Validez local|
-
-## 🧮 Ejemplos Clásicos
-
-### 📐 Ejemplo 1: Límite Trigonométrico Fundamental
-
-> [!example] 📊 Límite $\lim_{x \to 0} \frac{\sin x}{x} = 1$
->
-> **Problema:** Demostrar que $\lim_{x \to 0} \frac{\sin x}{x} = 1$
->
-> **Solución usando emparedado:**
->
-> Para $0 < |x| < \frac{\pi}{2}$, se puede demostrar geométricamente que: $$\cos x < \frac{\sin x}{x} < 1$$
->
-> **Paso 1:** Definir las funciones
->
-> - $f(x) = \cos x$ (función inferior)
-> - $g(x) = \frac{\sin x}{x}$ (función emparedada)
-> - $h(x) = 1$ (función superior)
->
-> **Paso 2:** Verificar límites $$\lim_{x \to 0} \cos x = \cos(0) = 1$$ $$\lim_{x \to 0} 1 = 1$$
->
-> **Paso 3:** Aplicar teorema Como $\cos x \leq \frac{\sin x}{x} \leq 1$ y ambos extremos tienden a $1$: $$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
-
-### 🔢 Ejemplo 2: Función Oscilante Acotada
-
-> [!example] 🌊 Límite $\lim_{x \to 0} x^2 \sin(\frac{1}{x}) = 0$
->
-> **Problema:** Evaluar $\lim_{x \to 0} x^2 \sin(\frac{1}{x})$
->
-> **Análisis:** La función $\sin(\frac{1}{x})$ oscila infinitamente cerca de $x = 0$
->
-> **Solución:**
->
-> **Paso 1:** Usar la propiedad $-1 \leq \sin(\frac{1}{x}) \leq 1$
->
-> **Paso 2:** Multiplicar por $x^2$ (asumiendo $x \neq 0$): $$-x^2 \leq x^2 \sin(\frac{1}{x}) \leq x^2$$
->
-> **Paso 3:** Definir funciones
->
-> - $f(x) = -x^2$
-> - $g(x) = x^2 \sin(\frac{1}{x})$
-> - $h(x) = x^2$
->
-> **Paso 4:** Calcular límites extremos $$\lim_{x \to 0} (-x^2) = 0$$ $$\lim_{x \to 0} x^2 = 0$$
->
-> **Conclusión:** $\lim_{x \to 0} x^2 \sin(\frac{1}{x}) = 0$
-
-### 💫 Ejemplo 3: Función Exponencial con Oscilación
-
-> [!example] 🚀 Límite con Exponencial
->
-> **Problema:** Evaluar $\lim_{x \to +\infty} \frac{\sin x}{e^x}$
->
-> **Solución:**
->
-> **Paso 1:** Acotar el seno: $-1 \leq \sin x \leq 1$
->
-> **Paso 2:** Dividir por $e^x > 0$: $$\frac{-1}{e^x} \leq \frac{\sin x}{e^x} \leq \frac{1}{e^x}$$
->
-> **Paso 3:** Evaluar límites extremos: $$\lim_{x \to +\infty} \frac{-1}{e^x} = 0$$ $$\lim_{x \to +\infty} \frac{1}{e^x} = 0$$
->
-> **Conclusión:** $\lim_{x \to +\infty} \frac{\sin x}{e^x} = 0$
-
-## 🎪 Variantes del Teorema
-
-### 📈 Límites Laterales
-
-> [!tip] 🔄 Aplicación a Límites Laterales
->
-> El teorema también se aplica a límites laterales:
->
-> **Límite por la derecha:** Si $f(x) \leq g(x) \leq h(x)$ para $x > a$ cerca de $a$, y $\lim_{x \to a^+} f(x) = \lim_{x \to a^+} h(x) = L$
->
-> Entonces: $\lim_{x \to a^+} g(x) = L$
->
-> **Límite por la izquierda:** Análogamente para $x \to a^-$
-
-### ∞ Límites al Infinito
-
-> [!tip] 🌌 Límites en el Infinito
->
-> **Para $x \to +\infty$:** Si $f(x) \leq g(x) \leq h(x)$ para $x$ suficientemente grande, y $\lim_{x \to +\infty} f(x) = \lim_{x \to +\infty} h(x) = L$
->
-> Entonces: $\lim_{x \to +\infty} g(x) = L$
->
-> **Para $x \to -\infty$:** Análogamente
-
-## 🧠 Técnica de Estudio: Método "DAVE"
-
-> [!tip] 🎓 Mnemotecnia "DAVE"
->
-> **D** - **D**esigualdad establecida **A** - **A**cotar la función problema **V** - **V**erificar límites extremos **E** - **E**mparedar y concluir
->
-> **Frase nemotécnica:** _"Dave Atrapa Valores Exactos"_
->
-> **Proceso paso a paso:**
->
-> 1. 🎯 Identificar función a emparedar
-> 2. 📏 Encontrar cotas superior e inferior
-> 3. ✅ Verificar que las cotas tienen el mismo límite
-> 4. 🏆 Aplicar el teorema para concluir
-
-## 📊 Algoritmo de Aplicación
-
-> [!info] 🖼️ Algoritmo de Aplicación
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_05.svg]]
->
-> **Se lee así:** Se entra con un límite difícil de evaluar y un rombo pregunta si la función está **acotada**. Si no lo está, el diagrama manda a buscar otra técnica; si lo está, se pasa a un rectángulo donde se escriben las desigualdades que emparedan la función, y un nuevo rombo pregunta si las dos cotas tienen el mismo límite. Si coinciden, se aplica el teorema; si no, hay que volver atrás y buscar cotas mejores.
->
-> **Por qué importa:** Este es el algoritmo paso a paso del teorema del emparedado, con el control de calidad de las cotas. Fíjate en que el bucle de volver a buscar cotas es lo que falta en muchos ejercicios mal resueltos.
->
-> **Ejemplo:** En `lim_{x → ∞} sin(x²)/x` usas que -1 ≤ sin(x²) ≤ 1, divides entre x y las dos cotas van a 0, así que el teorema aplica.
-
-## 🚫 Errores Comunes
-
-> [!warning] ⚠️ Errores Frecuentes
->
-> **Error 1: Desigualdades incorrectas**
->
-> - ❌ No verificar que $f(x) \leq g(x) \leq h(x)$
-> - ✅ Siempre comprobar el orden correcto
->
-> **Error 2: Límites diferentes**
->
-> - ❌ Asumir que si $\lim f \neq \lim h$, no se puede aplicar
-> - ✅ Los límites extremos DEBEN ser iguales
->
-> **Error 3: Dominio insuficiente**
->
-> - ❌ Las desigualdades solo en puntos aislados
-> - ✅ Deben cumplirse en una vecindad de $a$
->
-> **Error 4: Confundir dirección**
->
-> - ❌ Intercambiar funciones superior e inferior
-> - ✅ Mantener consistencia en las desigualdades
-
-## 🎯 Cuándo NO Usar el Teorema
-
-> [!danger] 🛑 Limitaciones del Teorema
->
-> **Casos donde NO aplica:**
->
-> 1. **Límites extremos diferentes:**
->     - Si $\lim_{x \to a} f(x) \neq \lim_{x \to a} h(x)$
-> 2. **Desigualdades no mantenidas:**
->     - Si las cotas no se mantienen cerca de $a$
-> 3. **Función no acotada:**
->     - Si $g(x)$ no está entre dos funciones conocidas
-> 4. **Alternativas más simples:**
->     - Si el límite se puede calcular directamente
->
-> |Situación|¿Usar Emparedado?|Alternativa|
-> |---|---|---|
-> |Función continua|❌|Sustitución directa|
-> |Forma 0/0|❌|L'Hôpital|
-> |Función oscilante acotada|✅|-|
-> |Límites infinitos|❌|Análisis asintótico|
-
-## 📚 Aplicaciones Importantes
-
-### 🌟 En Análisis Real
-
-> [!note] 🔬 Aplicaciones Teóricas
->
-> **1. Demostración de límites trigonométricos:**
->
-> - $\lim_{x \to 0} \frac{\sin x}{x} = 1$
-> - $\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$
->
-> **2. Estudio de funciones oscilantes:**
->
-> - Productos de funciones acotadas por funciones que tienden a cero
->
-> **3. Criterios de convergencia:**
->
-> - Series y sucesiones con términos acotados
-
-### 🧮 En Cálculo Aplicado
-
-> [!note] 🔧 Aplicaciones Prácticas
->
-> **1. Análisis de errores:**
->
-> - Acotar errores de aproximación
->
-> **2. Estabilidad numérica:**
->
-> - Análisis de algoritmos con perturbaciones
->
-> **3. Física matemática:**
->
-> - Comportamiento de sistemas oscilantes con amortiguamiento
-
-## 📖 Ejercicios de Práctica Progresiva
-
-> [!example] 💪 Secuencia de Entrenamiento
->
-> **Nivel 1 - Básicos:** 🟢
->
-> - $\lim_{x \to 0} x \sin(\frac{1}{x})$
-> - $\lim_{x \to 0} x^2 \cos(\frac{2}{x})$
->
-> **Nivel 2 - Intermedios:** 🟡
->
-> - $\lim_{x \to 0} \frac{x \sin(x)}{x^2 + 1}$
-> - $\lim_{x \to \infty} \frac{\sin(x^2)}{x}$
->
-> **Nivel 3 - Avanzados:** 🟠
->
-> - $\lim_{x \to 0} \frac{\sin x - x \cos x}{x^3}$
-> - $\lim_{x \to 0} x^{3/2} \sin(\frac{1}{\sqrt{x}})$
->
-> **Nivel 4 - Experto:** 🔴
->
-> - $\lim_{x \to 0^+} x^x$
-> - $\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3}$
-
-## 🔗 Conexiones con Otros Temas
-
-> [!quote] 📚 Enlaces a Otras Notas
->
-> **Prerrequisitos:**
->
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md|02 - Propiedades y Teoremas de los Límites.md]] - Base para casos simples
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]] - Fundamento teórico
-> - Desigualdades - Herramienta para acotar
->
-> **Temas relacionados:**
->
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales.md|02 - Límites Especiales.md]] - Aplicaciones específicas
-> - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites.md|01 - Continuidad y Límites.md]] - Conexión con funciones continuas
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Extensión del teorema
->
-> **Aplicaciones:**
->
-> - 02 - Formas Indeterminadas - Técnica alternativa
-> - Series de Taylor - Desarrollo y acotaciones
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]] - Criterios de convergencia
+> [!example] 📋 Planteamiento
+>
+> Calcula $\lim_{x \to 0} \frac{\sin 3x}{\tan 5x}$ con la regla de L'Hôpital.
+>
+> > [!success]- ✅ Solución
+> >
+> > Sustitución: $\frac{0}{0}$, así que se deriva numerador y denominador:
+> >
+> > $$\lim_{x \to 0} \frac{\sin 3x}{\tan 5x} = \lim_{x \to 0} \frac{3\cos 3x}{5\sec^2 5x} = \frac{3 \cdot 1}{5 \cdot 1} = \frac{3}{5}.$$
+> >
+> > Comprobación con límites notables: $\frac{\sin 3x}{\tan 5x} = \frac{\sin 3x}{3x} \cdot \frac{5x}{\tan 5x} \cdot \frac{3}{5} \to 1 \cdot 1 \cdot \frac{3}{5}$.
+> >
+> > **Respuesta:** el límite vale $\frac{3}{5}$.
 
 ---
 
+## 🎯 Metas de Aprendizaje
 
-# 🎯 Regla de L'Hôpital
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Reconozco las siete formas indeterminadas y sé que $\frac{0}{0}$ no tiene valor fijo.
+> - [ ] Aplico factorización, racionalización y cancelación para eliminar una indeterminación $\frac{0}{0}$.
+> - [ ] Verifico siempre la forma antes de usar una técnica.
 
-## 🎯 ¿Qué es la Regla de L'Hôpital?
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Enuncio y aplico el teorema del emparedado con cotas que comparten el mismo límite.
+> - [ ] Aplico la regla de L'Hôpital a $\frac{0}{0}$ y $\frac{\infty}{\infty}$ verificando sus condiciones.
+> - [ ] Repito L'Hôpital cuantas veces haga falta mientras persista la indeterminación.
 
-> [!info] 🔍 Definición y Propósito La **Regla de L'Hôpital** es una técnica sistemática para evaluar límites que resultan en **formas indeterminadas**.
->
-> **Principio fundamental:** Si tenemos una forma indeterminada, podemos reemplazar las funciones por sus derivadas y el límite se mantiene.
->
-> $$\text{Si } \lim_{x \to a} \frac{f(x)}{g(x)} \text{ es indeterminada, entonces } \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
->
-
-> [!warning] ⚠️ Importancia Histórica
->
-> Aunque se llama "Regla de L'Hôpital" por Guillaume de l'Hôpital (1661-1704), **fue desarrollada por Johann Bernoulli**. L'Hôpital la publicó en el primer libro de cálculo de la historia.
-
-> [!info] 🖼️ ¿Qué es la Regla de L'Hôpital?
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_06.svg]]
->
-> **Se lee así:** El diagrama arranca con un límite en forma indeterminada y pasa por un rombo de **verificación de condiciones**. Si no se cumplen, la salida es usar otras técnicas; si se cumplen, se deriva numerador y denominador y se evalúa el límite de las derivadas, con un rombo que pregunta si el resultado ya quedó determinado. Si sí, se llega al resultado final; si no, sale un rectángulo de aplicar L'Hôpital otra vez.
->
-> **Por qué importa:** El error típico es derivar sin verificar la forma, así que el rombo de condiciones es lo que te protege. Además te muestra que se puede repetir la regla mientras siga saliendo una indeterminación.
->
-> **Ejemplo:** En `lim_{x → 0} (1 - cos x - x²/2)/x⁴` aplicas L'Hôpital cuatro veces seguidas, porque en cada paso sigue apareciendo 0/0, y llegas a -1/24.
-
-## ✅ Condiciones de Aplicación
-
-> [!success] 🎯 Requisitos Obligatorios La Regla de L'Hôpital **SOLO** se puede aplicar cuando se cumplen **TODAS** estas condiciones:
->
-> **1. Forma indeterminada:** El límite debe ser de la forma $\frac{0}{0}$ o $\frac{∞}{∞}$
->
-> **2. Funciones diferenciables:** $f(x)$ y $g(x)$ deben ser diferenciables en un intervalo alrededor de $a$
->
-> **3. Denominador derivado no cero:** $g'(x) ≠ 0$ en un intervalo alrededor de $a$ (excepto posiblemente en $a$)
->
-> **4. Límite de derivadas existe:** $\lim_{x \to a} \frac{f'(x)}{g'(x)}$ debe existir (finito o infinito)
-
-### 📊 Verificación de Condiciones
-
-> [!info] 📊 Verificación de Condiciones
->
-> |Condición|¿Cómo verificar?|Ejemplo|✓/✗|
-> |---|---|---|---|
-> |Forma indeterminada|Sustituir directamente|$\lim_{x \to 0} \frac{\sin x}{x} = \frac{0}{0}$|✓|
-> |Diferenciabilidad|Verificar que existen $f'(x)$ y $g'(x)$|$f(x) = \sin x$, $f'(x) = \cos x$|✓|
-> |$g'(x) ≠ 0$|Calcular $g'(x)$ y verificar|$g(x) = x$, $g'(x) = 1 ≠ 0$|✓|
-> |Límite existe|Evaluar $\lim \frac{f'(x)}{g'(x)}$|$\lim_{x \to 0} \frac{\cos x}{1} = 1$|✓|
-
-> [!example] 📝 Verificación Paso a Paso $$\lim_{x \to 0} \frac{e^x - 1}{x}$$
->
-> **Verificación:**
->
-> 1. **Forma:** $\frac{e^0 - 1}{0} = \frac{0}{0}$ ✓
-> 2. **Diferenciables:** $f'(x) = e^x$, $g'(x) = 1$ ✓
-> 3. **$g'(x) ≠ 0$:** $g'(x) = 1 ≠ 0$ ✓
-> 4. **Límite existe:** $\lim_{x \to 0} \frac{e^x}{1} = 1$ ✓
->
-> **Aplicación:** $\lim_{x \to 0} \frac{e^x - 1}{x} = \lim_{x \to 0} \frac{e^x}{1} = 1$
-
-## 🔢 Formas Indeterminadas 0/0
-
-> [!info] 📐 Casos Típicos de 0/0 La forma $\frac{0}{0}$ es la más común y directa para aplicar L'Hôpital.
->
-> **Patrón general:** $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{0}{0} \Rightarrow \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
-
-### 📊 Ejemplos Básicos con 0/0
-
-> [!example] 🎯 Casos Fundamentales
->
-> **Ejemplo 1: Polinomios** $$\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{4-4}{2-2} = \frac{0}{0}$ ✓
-> - Derivar: $\frac{d}{dx}(x^2-4) = 2x$, $\frac{d}{dx}(x-2) = 1$
-> - Aplicar: $\lim_{x \to 2} \frac{2x}{1} = 4$
->
-> **Ejemplo 2: Exponenciales** $$\lim_{x \to 0} \frac{e^{2x} - 1}{x}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{1-1}{0} = \frac{0}{0}$ ✓
-> - Derivar: $\frac{d}{dx}(e^{2x}-1) = 2e^{2x}$, $\frac{d}{dx}(x) = 1$
-> - Aplicar: $\lim_{x \to 0} \frac{2e^{2x}}{1} = 2$
->
-> **Ejemplo 3: Trigonométricas** $$\lim_{x \to 0} \frac{\sin(3x)}{\tan(2x)}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{0}{0}$ ✓
-> - Derivar: $\frac{d}{dx}\sin(3x) = 3\cos(3x)$, $\frac{d}{dx}\tan(2x) = 2\sec^2(2x)$
-> - Aplicar: $\lim_{x \to 0} \frac{3\cos(3x)}{2\sec^2(2x)} = \frac{3 \cdot 1}{2 \cdot 1} = \frac{3}{2}$
-
-### 🔄 Aplicaciones Múltiples de L'Hôpital
-
-> [!tip] ⚡ Cuando Aplicar Varias Veces Si después de aplicar L'Hôpital una vez obtenemos otra forma indeterminada, podemos aplicarlo de nuevo.
->
-> **Regla:** Continuar aplicando hasta obtener un resultado determinado o concluir que el límite no existe.
->
-
-> [!example] 🎨 Ejemplo con Aplicación Múltiple $$\lim_{x \to 0} \frac{1 - \cos x - \frac{x^2}{2}}{x^4}$$
->
-> **Primera aplicación:**
->
-> - Verificar: $\frac{1-1-0}{0} = \frac{0}{0}$ ✓
-> - Derivar: $\frac{d}{dx}(1-\cos x - \frac{x^2}{2}) = \sin x - x$, $\frac{d}{dx}(x^4) = 4x^3$
-> - Resultado: $\lim_{x \to 0} \frac{\sin x - x}{4x^3} = \frac{0}{0}$ (otra indeterminada)
->
-> **Segunda aplicación:**
->
-> - Derivar: $\frac{d}{dx}(\sin x - x) = \cos x - 1$, $\frac{d}{dx}(4x^3) = 12x^2$
-> - Resultado: $\lim_{x \to 0} \frac{\cos x - 1}{12x^2} = \frac{0}{0}$ (otra indeterminada)
->
-> **Tercera aplicación:**
->
-> - Derivar: $\frac{d}{dx}(\cos x - 1) = -\sin x$, $\frac{d}{dx}(12x^2) = 24x$
-> - Resultado: $\lim_{x \to 0} \frac{-\sin x}{24x} = \frac{0}{0}$ (otra indeterminada)
->
-> **Cuarta aplicación:**
->
-> - Derivar: $\frac{d}{dx}(-\sin x) = -\cos x$, $\frac{d}{dx}(24x) = 24$
-> - Resultado: $\lim_{x \to 0} \frac{-\cos x}{24} = \frac{-1}{24}$ ✓
-
-## ♾️ Formas Indeterminadas ∞/∞
-
-> [!info] 🚀 Casos con Infinitos La forma $\frac{∞}{∞}$ aparece frecuentemente con:
->
-> - Polinomios de alto grado
-> - Funciones exponenciales
-> - Límites al infinito
->
-> **L'Hôpital es especialmente útil** para estos casos.
-
-### 📈 Ejemplos con ∞/∞
-
-> [!example] 📊 Casos Típicos
->
-> **Ejemplo 1: Polinomios al infinito** $$\lim_{x \to ∞} \frac{3x^2 + 2x}{2x^2 - x + 1}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{∞}{∞}$ ✓
-> - Derivar: $\frac{d}{dx}(3x^2+2x) = 6x+2$, $\frac{d}{dx}(2x^2-x+1) = 4x-1$
-> - Aplicar: $\lim_{x \to ∞} \frac{6x+2}{4x-1} = \frac{∞}{∞}$ (otra indeterminada)
-> - Segunda aplicación: $\lim_{x \to ∞} \frac{6}{4} = \frac{3}{2}$
->
-> **Ejemplo 2: Exponencial vs Polinomial** $$\lim_{x \to ∞} \frac{e^x}{x^3}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{∞}{∞}$ ✓
-> - Primera aplicación: $\lim_{x \to ∞} \frac{e^x}{3x^2} = \frac{∞}{∞}$
-> - Segunda aplicación: $\lim_{x \to ∞} \frac{e^x}{6x} = \frac{∞}{∞}$
-> - Tercera aplicación: $\lim_{x \to ∞} \frac{e^x}{6} = ∞$
->
-> **Ejemplo 3: Logaritmo vs Polinomial** $$\lim_{x \to ∞} \frac{\ln x}{x}$$
->
-> **Solución:**
->
-> - Verificar: $\frac{∞}{∞}$ ✓
-> - Aplicar: $\lim_{x \to ∞} \frac{1/x}{1} = \lim_{x \to ∞} \frac{1}{x} = 0$
-
-### 🔍 Jerarquía de Infinitos
-
-> [!tip] 📊 Orden de Crecimiento (de menor a mayor) $$\ln x \ll x^a \ll e^{bx} \ll x! \ll x^x$$
->
-> **Regla práctica:** Las funciones de la derecha "ganan" sobre las de la izquierda cuando $x \to ∞$
-
-## 🔄 Otras Formas Indeterminadas
-
-> [!warning] 📐 Formas que Requieren Transformación L'Hôpital
->
-> **NO se aplica directamente** a estas formas. Primero debemos transformarlas a $\frac{0}{0}$ o $\frac{∞}{∞}$.
-
-### 🎭 Formas Indeterminadas Principales
-
-> [!info] 📊 Formas Indeterminadas Principales
->
-> |Forma|Transformación|Método|
-> |---|---|---|
-> |$0 \cdot ∞$|$\frac{0}{1/∞}$ o $\frac{∞}{1/0}$|Reescribir como cociente|
-> |$∞ - ∞$|$∞(1 - \frac{∞}{∞})$|Factor común o denominador común|
-> |$0^0$|$e^{0 \cdot \ln 0}$|Logaritmo → forma $0 \cdot ∞$|
-> |$1^∞$|$e^{∞ \cdot \ln 1}$|Logaritmo → forma $∞ \cdot 0$|
-> |$∞^0$|$e^{0 \cdot \ln ∞}$|Logaritmo → forma $0 \cdot ∞$|
-
-> [!example] 🎯 Ejemplos de Transformación
->
-> **Ejemplo 1: Forma 0 · ∞** $$\lim_{x \to 0^+} x \ln x$$
->
-> **Transformación:** $x \ln x = \frac{\ln x}{1/x}$ (forma $\frac{-∞}{∞}$) **Aplicar L'Hôpital:** $\lim_{x \to 0^+} \frac{1/x}{-1/x^2} = \lim_{x \to 0^+} \frac{x^2}{-x} = \lim_{x \to 0^+} (-x) = 0$
->
-> **Ejemplo 2: Forma ∞ - ∞** $$\lim_{x \to 0^+} \left(\frac{1}{x} - \frac{1}{\sin x}\right)$$
->
-> **Transformación:** $\frac{1}{x} - \frac{1}{\sin x} = \frac{\sin x - x}{x \sin x}$ (forma $\frac{0}{0}$) **Aplicar L'Hôpital:** $\lim_{x \to 0^+} \frac{\cos x - 1}{x \cos x + \sin x} = \frac{-1+1}{0+0} = \frac{0}{0}$ (Requiere más aplicaciones)
->
-> **Ejemplo 3: Forma 1^∞** $$\lim_{x \to ∞} \left(1 + \frac{1}{x}\right)^x$$
->
-> **Transformación:** Sea $y = \left(1 + \frac{1}{x}\right)^x$, entonces $\ln y = x \ln\left(1 + \frac{1}{x}\right)$ **Evaluar:** $\lim_{x \to ∞} x \ln\left(1 + \frac{1}{x}\right)$ (forma $∞ \cdot 0$) **Reescribir:** $\lim_{x \to ∞} \frac{\ln(1 + 1/x)}{1/x}$ (forma $\frac{0}{0}$) **L'Hôpital:** Resultado = 1, por tanto $\lim y = e^1 = e$
-
-> [!info] 🖼️ Formas Indeterminadas Principales
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Formas_Indeterminadas_07.svg]]
->
-> **Se lee así:** Es un clasificador de formas indeterminadas: un rombo pregunta de qué tipo es y reparte el flujo en cuatro caminos. El de 0/0 y el de infinito sobre infinito va directo a L'Hôpital; el de 0 por infinito y el de infinito menos infinito obliga a reescribir como cociente o con denominador común, y solo entonces llega a L'Hôpital; el de potencias pasa por logaritmos y vuelve a la ruta del cociente. Todas terminan evaluando el límite.
->
-> **Por qué importa:** Evita que intentes aplicar L'Hôpital a una potencia o a una resta infinita, que es el error más común al final de la unidad. Cada forma tiene su camino y aquí está el mapa completo.
->
-> **Ejemplo:** En `lim_{x → ∞} (1 + 1/x)^x` tomas la rama de potencias, aplicas logaritmo para obtener x·ln(1+1/x), lo reescribes como cociente y el límite es e.
-
-## ⚠️ Limitaciones y Precauciones
-
-> [!warning] 🚨 Cuándo NO Usar L'Hôpital
->
-> **1. Forma no indeterminada:** $$\lim_{x \to 0} \frac{\sin x}{1} = \frac{0}{1} = 0$$ (NO necesita L'Hôpital)
->
-> **2. Funciones no diferenciables:** $$\lim_{x \to 0} \frac{|x|}{x}$$ (NO existe derivada en $x = 0$)
->
-> **3. Límite de derivadas no existe:** $$\lim_{x \to ∞} \frac{x + \sin x}{x}$$ (derivadas oscilan sin límite)
-
-### 🔍 Errores Comunes
-
-> [!danger] 🚫 Errores Frecuentes a Evitar
->
-> **1. No verificar condiciones:**
->
-> ```
-> INCORRECTO: lim(x→1) (x²)/(x) = lim(x→1) (2x)/(1) = 2
-> CORRECTO: lim(x→1) (x²)/(x) = 1²/1 = 1 (sustitucion directa)
-> ```
->
-> **2. Aplicar regla del cociente por error:**
->
-> ```
-> INCORRECTO: d/dx[f(x)/g(x)] = f'(x)/g'(x)
-> CORRECTO: d/dx[f(x)/g(x)] = [f'(x)g(x) - f(x)g'(x)]/[g(x)]²
-> ```
->
-> **3. No simplificar antes de derivar:**
->
-> ```
-> ANTES: lim(x→0) (sin 2x)/(2x) puede simplificarse sin L'Hôpital
-> DESPUÉS: Reconocer como limite fundamental = 1
-> ```
-
-### 📊 Cuándo Usar Métodos Alternativos
-
-> [!info] 📊 Cuándo Usar Métodos Alternativos
->
-> |Situación|Método Alternativo|Ejemplo|
-> |---|---|---|
-> |Límite trigonométrico básico|Límites fundamentales|$\lim_{x \to 0} \frac{\sin x}{x} = 1$|
-> |Factorización posible|Cancelación algebraica|$\lim_{x \to 2} \frac{x^2-4}{x-2}$|
-> |Racionalización aplicable|Conjugados|$\lim_{x \to 0} \frac{\sqrt{1+x}-1}{x}$|
-> |Sustitución trigonométrica|Identidades|$\lim_{x \to 0} \frac{1-\cos x}{x^2}$|
-
-> [!tip] 🎯 Estrategia Óptima **Orden de preferencia:**
->
-> 1. **Sustitución directa** (si no es indeterminada)
-> 2. **Técnicas algebraicas** (factorización, racionalización)
-> 3. **Límites fundamentales** conocidos
-> 4. **L'Hôpital** como último recurso para casos complejos
-
-## 🧠 Técnica de Estudio: Mnemotecnia "VDAE"
-
-> [!tip] 🎓 Método "VDAE" para L'Hôpital
->
-> **V** - **V**erificar forma indeterminada (0/0 o ∞/∞) **D** - **D**erivar numerador y denominador por separado **A** - **A**plicar el límite a las derivadas **E** - **E**valuar o repetir si es necesario
->
-> **Checklist antes de aplicar:**
->
-> - [ ] ¿Es forma 0/0 o ∞/∞?
-> - [ ] ¿Son diferenciables f(x) y g(x)?
-> - [ ] ¿g'(x) ≠ 0 cerca de a?
-> - [ ] ¿Existe el límite de las derivadas?
->
-> **Frase nemotécnica:** _"Verificar, Derivar, Aplicar, Evaluar"_
-
-## 📚 Referencias y Conexiones
-
-> [!quote] 🔗 Enlaces a Otras Notas
->
-> - 02 - Formas Indeterminadas - Métodos alternativos
-> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]] - Herramienta fundamental para L'Hôpital
-> - [[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales.md|02 - Límites Especiales.md]] - Casos donde L'Hôpital no es necesario
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]] - Contexto para formas ∞/∞
-> - Logaritmos y Exponenciales - Para formas 0^0, 1^∞, ∞^0
-> - Series de Taylor - Método alternativo para casos complejos
-
-## 📖 Notas Recomendadas para Estudio Complementario
-
-> [!info] 📝 Ruta de Aprendizaje Estructurada
->
-> **Prerrequisitos esenciales:**
->
-> 1. **[[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas.md|03 - Tabla de Derivadas Básicas.md]]** - Técnicas de derivación
-> 2. **[[03 – Funciones vectoriales#Reglas de Derivación|Reglas de Derivación]]** - Regla de la cadena, producto, cociente
-> 3. **02 - Formas Indeterminadas** - Conceptos previos
->
-> **Temas paralelos:** 4. **[[Unidad 2 - Límites/II - Técnicas Básicas/02 - Límites Especiales.md#Límites Fundamentales|Límites Fundamentales]]** - Cuándo NO usar L'Hôpital 5. **[[Unidad 4 - Derivadas/I - Fundamentos Teóricos/03 - Derivabilidad y Continuidad.md|03 - Derivabilidad y Continuidad.md]]** - Condiciones de aplicación
->
-> **Aplicaciones avanzadas:** 6. **[[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior.md#Análisis de Funciones|Análisis de Funciones]]** - Comportamiento asintótico 7. **Optimización** - Máximos y mínimos 8. **Series Infinitas** - Criterios de convergencia
-
-## 🎯 Ejercicios de Práctica Progresiva
-
-> [!example] 💪 Entrenamiento por Tipos de Indeterminación
->
-> **Nivel 1 - Formas 0/0 Básicas:** 🟢
->
-> - $\lim_{x \to 0} \frac{e^x - 1}{x}$
-> - $\lim_{x \to 0} \frac{\ln(1+x)}{x}$
-> - $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$
->
-> **Nivel 2 - Formas ∞/∞:** 🟡
->
-> - $\lim_{x \to ∞} \frac{x^2}{e^x}$
-> - $\lim_{x \to ∞} \frac{\ln x}{x}$
-> - $\lim_{x \to ∞} \frac{x^3 + 2x}{2x^3 - x^2}$
->
-> **Nivel 3 - Aplicaciones Múltiples:** 🟠
->
-> - $\lim_{x \to 0} \frac{x - \sin x}{x^3}$
-> - $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$
-> - $\lim_{x \to ∞} \frac{x^2 e^{-x}}{1}$ (forma 0 · ∞)
->
-> **Nivel 4 - Formas Complejas:** 🔴
->
-> - $\lim_{x \to 0^+} x^x$ (forma 0^0)
-> - $\lim_{x \to ∞} \left(\frac{x}{x+1}\right)^x$ (forma 1^∞)
-> - $\lim_{x \to 0^+} \left(\frac{1}{x} - \frac{1}{\sin x}\right)$ (forma ∞ - ∞)
->
-> **Nivel 5 - Casos Especiales:** 🔥
->
-> - $\lim_{x \to 0} \frac{\sin x - x \cos x}{x^3}$
-> - $\lim_{x \to ∞} x(\ln(x+1) - \ln x)$
-> - $\lim_{x \to 1} \frac{x^{1/(x-1)} - e}{x-1}$
-
-## 🔍 Casos Especiales y Patrones Avanzados
-
-> [!tip] 📊 Reconocimiento de Patrones
->
-> **Patrón 1: Exponenciales vs Polinomios**
->
-> - $e^x$ siempre "gana" sobre $x^n$ cuando $x \to ∞$
-> - Requiere $n$ aplicaciones de L'Hôpital para $\frac{e^x}{x^n}$
->
-> **Patrón 2: Logaritmos vs Polinomios**
->
-> - $x^n$ siempre "gana" sobre $\ln x$ cuando $x \to ∞$
-> - Una sola aplicación resuelve $\frac{\ln x}{x^n}$
->
-> **Patrón 3: Funciones trigonométricas**
->
-> - Verificar si se pueden usar límites fundamentales antes
-> - L'Hôpital útil para combinaciones complejas
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Eligo entre técnica algebraica, emparedado y L'Hôpital según el tipo de función.
+> - [ ] Resuelvo indeterminaciones $0 \cdot \infty$, $\infty - \infty$ y $0^0$ reescribiéndolas a una forma $\frac{0}{0}$ o $\frac{\infty}{\infty}$.
+> - [ ] Detecto cuándo L'Hôpital no aplica y cambio de estrategia sin perder tiempo.
 
 ---
 
-**Tags:** #MATG1045 #unidad2 #formas-indeterminadas #matemáticas #cálculo #límites #factorización #racionalización #cancelación #algebra #técnicas-estudio #university #calculus-advanced #análisis-matemático #resolución-problemas #teorema-emparedado #squeeze-theorem #funciones-trigonométricas #funciones-oscilantes #técnicas-límites #análisis-real #mathematical-proofs #lhopital #derivadas #técnicas-avanzadas #bernoulli
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage), cap. 4 y 6: formas indeterminadas y regla de L'Hôpital.
+> - R. Larson, *Cálculo* (Cengage), cap. 8: teorema del emparedado y límites notables.
+> - T. Apostol, *Calculus, Vol. 1* (Wiley), cap. 5: límites y la regla de L'Hôpital.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — la definición de límite que aquí se aplica.
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites|02 - Propiedades y Teoremas de los Límites]] — las propiedades que sostienen cada manipulación.
+> - [[Unidad 4 - Derivadas/II - Reglas de Derivación/01 - Reglas Fundamentales de Derivación|01 - Reglas Fundamentales de Derivación]] — las derivadas que usa L'Hôpital.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u2
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué es una forma indeterminada?::Una expresión como $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0\cdot\infty$, $\infty-\infty$, $0^0$, $1^\infty$ o $\infty^0$ que no tiene valor fijo: el resultado depende de cómo tienden numerador y denominador.
+> - ¿Cuál es el enunciado del teorema del emparedado?::Si $f(x) \leq g(x) \leq h(x)$ cerca de $a$ y $\lim f = \lim h = L$, entonces $\lim g = L$ también.
+> - ¿Cuándo se puede aplicar la regla de L'Hôpital?::Cuando la sustitución da $\frac{0}{0}$ o $\frac{\infty}{\infty}$ (tras reescribir si hace falta) y el límite de las derivadas existe.
+> - ¿Cuál es el orden de ataque ante un $\frac{0}{0}$?::Primero técnicas algebraicas (factorizar, racionalizar, cancelar); después emparedado si la función está acotada; al final L'Hôpital.
+> - ¿Por qué $\lim_{x \to 0} x^2\sin(1/x) = 0$?::Por emparedado: $-x^2 \leq x^2\sin(1/x) \leq x^2$ y ambos extremos tienden a $0$.
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]] — la definición de límite que se usa en cada técnica.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/01 - Límites Laterales|01 - Límites Laterales]] — comprobar el límite por lados cuando la expresión no es continua.
+> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — las formas $\frac{\infty}{\infty}$ y $\infty-\infty$ del infinito.
+> - [[Unidad 4 - Derivadas/II - Reglas de Derivación/01 - Reglas Fundamentales de Derivación|01 - Reglas Fundamentales de Derivación]] — las reglas que ejecuta L'Hôpital en cada paso.
+> - [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones|01 - Análisis Completo de Funciones]] — dónde se usan estos límites para hallar asíntotas.
+> - [[Unidad 2 - Límites/II - Técnicas Básicas/03 - Límites en Gráficas|03 - Límites en Gráficas]] — leer un límite directamente de su gráfica.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero el banco de técnicas algebraicas de la nota hasta que factorizar y racionalizar salgan sin pensarlo.
+> - Después salta al emparedado: domina $x^2\sin(1/x)$ y $\frac{\sin x}{x}$ antes de seguir.
+> - Cuando las tres vías estén claras, resuelve los seis ejercicios propuestos en orden: los tres primeros son algebraicos, el cuarto es emparedado y los dos últimos son L'Hôpital.
+> - En cada ejercicio, escribe **qué forma indeterminada salió** y **por qué técnica elegiste** antes de calcular.
+
+---
+
+**Tags:** #MATG1045 #unidad2 #formas-indeterminadas #teorema-emparedado #lhopital #factorizacion #racionalizacion #cancelacion #limites

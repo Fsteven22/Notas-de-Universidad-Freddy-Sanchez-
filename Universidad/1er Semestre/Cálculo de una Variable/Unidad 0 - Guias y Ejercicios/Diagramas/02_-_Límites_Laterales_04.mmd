@@ -1,0 +1,12 @@
+graph TD
+    A["Punto de interés x = a"] --> B["Valores x mayores que a"]
+    B --> C["x se acerca a a por la derecha"]
+    C --> D["f(x) se acerca a un valor fijo"]
+    D --> E{"¿Los valores se estabilizan?"}
+    E -->|Sí| G["Limite derecho existe y vale L2"]
+    E -->|No| H["Limite derecho no existe"]
+    G --> I["Se escribe: lim de f(x) cuando x tiende a a por la derecha"]
+    style G fill:#c8e6c9
+    style H fill:#ffcdd2
+    style I fill:#e3f2fd
+    style D fill:#fff3e0
