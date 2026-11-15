@@ -1,0 +1,17 @@
+flowchart TD
+    A["Candidato x = c"] --> B{"¿c esta en el dominio de f?"}
+    B -->|"No"| X["No es punto critico"]
+    B -->|"Si"| C{"¿f'(c) = 0 o f'(c) no existe?"}
+    C -->|"Ninguna"| X
+    C -->|"Si"| Y["c es punto critico de f"]
+    Y --> D{"¿Cambia el signo de f' en c?"}
+    D -->|"+ a -"| M["Maximo local en c"]
+    D -->|"- a +"| N["Minimo local en c"]
+    D -->|"Mismo signo"| S["No es extremo: punto de inflexion horizontal"]
+
+    style A fill:#e3f2fd
+    style Y fill:#c8e6c9
+    style M fill:#f3e5f5
+    style N fill:#e8f5e8
+    style X fill:#ffebee
+    style S fill:#fff3e0

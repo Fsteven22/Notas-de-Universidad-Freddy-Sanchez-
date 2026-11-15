@@ -1,0 +1,13 @@
+flowchart TD
+    A["Funcion f definida en un intervalo I"] --> B{"Para x1 < x2 en I: ¿f(x1) <= f(x2)?"}
+    B -->|"Si"| C["Creciente en I: la curva sube"]
+    B -->|"No"| D{"Para x1 < x2 en I: ¿f(x1) >= f(x2)?"}
+    D -->|"Si"| E["Decreciente en I: la curva baja"]
+    D -->|"No"| F["No monotonica en I"]
+    C --> G["Criterio con derivada: f'(x) > 0 en el intervalo"]
+    E --> H["Criterio con derivada: f'(x) < 0 en el intervalo"]
+
+    style A fill:#e3f2fd
+    style C fill:#c8e6c9
+    style E fill:#fff3e0
+    style F fill:#ffebee
