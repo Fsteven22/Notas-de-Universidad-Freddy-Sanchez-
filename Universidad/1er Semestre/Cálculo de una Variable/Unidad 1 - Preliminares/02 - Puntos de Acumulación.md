@@ -115,7 +115,7 @@ tags: [MATG1045, unidad1, puntos-de-acumulacion, topologia, clausura, conjuntos-
 >
 > **Se lee así:** la clausura se compara con el espacio completo $X$ para decidir si $A$ es denso; además, el conjunto derivado debe coincidir con $A$ para que sea perfecto.
 >
-> **Por qué importa:**这两个 conceptos separan “muchos puntos de acumulación” de “todos sus puntos son de acumulación”.
+> **Por qué importa:** estos dos conceptos separan “muchos puntos de acumulación” de “todos sus puntos son de acumulación”.
 >
 > **Ejemplo:** $\mathbb Q$ es denso pero no perfecto; $[0,1]$ y el conjunto de Cantor son perfectos.
 

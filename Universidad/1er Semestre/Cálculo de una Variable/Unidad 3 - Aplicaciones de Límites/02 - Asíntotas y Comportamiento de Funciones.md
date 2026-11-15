@@ -218,7 +218,7 @@ tags: [MATG1045, unidad3, asintotas, comportamiento-de-funciones, limites, grafi
 >
 > **Mnemotecnia:** **SSBB-SB-BS**.
 >
-> **Por qué importa:**（左）right describe una vertical simple y el resto una vertical con salto.
+> **Por qué importa:** «sube-sube» y «baja-baja» describen una vertical simple; «sube-baja» y «baja-sube», una vertical con salto.
 
 ---
 

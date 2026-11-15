@@ -202,7 +202,7 @@ tags: [MATG1045, unidad6, integral-de-riemann, matematicas/calculo/integralesb, 
 >
 > **Se lee así:** como una escalera de decisiones. Partiendo de una función definida en un intervalo cerrado, el primer rombo pregunta si es continua; si lo es, se llega al rectángulo de integrabilidad, y si no, la flecha baja a un segundo rombo sobre la monotonía. Desde ahí se pasa a un tercer rombo que combina acotación y número finito de discontinuidades, y la última salida advierte que la función puede no ser integrable.
 >
-> **Por qué importa:** Fíjate en que el diagrama te da una **estrategia de verificación** antes de calcular: primero continuidad, luego monotonía, y por último acotación con discontinuidades finitas. Te evita Attempting积分 una función que no cumple ninguna condición y perder tiempo en sumas que no convergen.
+> **Por qué importa:** Fíjate en que el diagrama te da una **estrategia de verificación** antes de calcular: primero continuidad, luego monotonía, y por último acotación con discontinuidades finitas. Te evita intentar integrar una función que no cumple ninguna condición y perder tiempo en sumas que no convergen.
 >
 > **Ejemplo:** La función $f(x) = x$ en $[0,1]$ es continua, así que el primer rombo ya responde sí y queda garantizada la integral $\int_0^1 x dx = \frac{1}{2}$.
 

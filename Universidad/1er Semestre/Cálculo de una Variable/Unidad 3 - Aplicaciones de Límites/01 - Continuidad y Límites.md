@@ -36,7 +36,7 @@ tags: [MATG1045, unidad3, continuidad, limites, discontinuidades, valor-intermed
 >
 > **Por qué importa:** el control simultáneo de $x$ y $f(x)$ explica por qué “el límite coincide con el valor” es una definición y no solo una slogan.
 >
-> **Ejemplo:** $f(x)=x^2$ es continua en todo real porque $|x^2-a^2|=|x-a||x+a|$ puede 控制arse eligiendo $\delta$ en función de $\varepsilon$ y de $a$.
+> **Ejemplo:** $f(x)=x^2$ es continua en todo real porque $|x^2-a^2|=|x-a||x+a|$ puede controlarse eligiendo $\delta$ en función de $\varepsilon$ y de $a$.
 
 > [!note] 📋 Definición — Continuidad uniforme
 >
