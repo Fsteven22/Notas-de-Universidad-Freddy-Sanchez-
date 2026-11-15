@@ -1,0 +1,18 @@
+flowchart TD
+    A["Candidato x = c: f'(c) = 0 o f'(c) no existe"] --> B{"¿Test de la primera derivada?"}
+    B -->|"f' cambia de + a -"| M["Maximo local en c"]
+    B -->|"f' cambia de - a +"| N["Minimo local en c"]
+    B -->|"f' no cambia"| S["No es extremo"]
+    A --> C{"¿Test de la segunda derivada?"}
+    C -->|"f''(c) < 0"| M
+    C -->|"f''(c) > 0"| N
+    C -->|"f''(c) = 0"| D["Test inconcluso: evaluar f en todos los candidatos"]
+    D --> E["Comparar valores en criticos y en los bordes del dominio"]
+    E --> R["Respuesta: el mayor es maximo, el menor es minimo"]
+
+    style A fill:#e3f2fd
+    style M fill:#c8e6c9
+    style N fill:#fff3e0
+    style S fill:#ffebee
+    style D fill:#fff3e0
+    style R fill:#f3e5f5
