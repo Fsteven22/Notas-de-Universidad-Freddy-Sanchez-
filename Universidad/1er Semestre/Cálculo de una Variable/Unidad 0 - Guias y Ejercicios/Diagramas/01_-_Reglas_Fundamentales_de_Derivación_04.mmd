@@ -1,0 +1,15 @@
+flowchart TD
+    A["Tres reglas para arrancar"] --> B["Constante: la derivada de una constante es 0"]
+    A --> C["Múltiplo constante: la constante sale afuera"]
+    A --> D["Potencia: el exponente baja y se resta 1"]
+
+    B --> E["Ejemplos: (5)' = 0 y (-pi)' = 0"]
+    C --> F["Ejemplo: (3x^2)' = 3 por 2x = 6x"]
+    D --> G["Ejemplos: (x^2)' = 2x y (x^-1)' = -1/x^2"]
+
+    E --> H["Se aplican término a término en cualquier polinomio"]
+    F --> H
+    G --> H
+
+    style A fill:#fff3e0
+    style H fill:#e8f5e8

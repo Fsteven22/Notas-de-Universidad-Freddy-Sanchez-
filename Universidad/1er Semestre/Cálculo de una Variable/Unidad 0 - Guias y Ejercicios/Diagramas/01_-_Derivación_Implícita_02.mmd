@@ -1,0 +1,15 @@
+flowchart TD
+    A["Ecuación con x e y"] --> B{"¿y está despejada?"}
+
+    B -->|"Sí"| C["Función explícita: y = f(x)"]
+    B -->|"No"| D["Función implícita: F(x,y) = 0"]
+
+    C --> E["Deriva directamente con las reglas"]
+    D --> F["Deriva ambos lados respecto a x y despeja dy/dx"]
+
+    E --> G["Resultado: la derivada dy/dx"]
+    F --> G
+
+    style A fill:#ffebee
+    style D fill:#fff3e0
+    style G fill:#e8f5e8

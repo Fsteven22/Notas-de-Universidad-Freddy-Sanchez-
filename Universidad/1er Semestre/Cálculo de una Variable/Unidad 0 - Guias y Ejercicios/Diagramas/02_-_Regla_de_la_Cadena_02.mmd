@@ -1,0 +1,15 @@
+flowchart TD
+    A["Función compuesta f(g(x))"] --> B["Capa externa: f(u)"]
+    A --> C["Capa interna: u = g(x)"]
+
+    B --> D["Deriva la externa: f'(u)"]
+    C --> E["Deriva la interna: g'(x)"]
+
+    D --> F["Multiplica ambas: f'(u) por g'(x)"]
+    E --> F
+
+    F --> G["Sustituye u = g(x) y simplifica"]
+
+    style A fill:#ffebee
+    style F fill:#e8f5e8
+    style G fill:#e3f2fd

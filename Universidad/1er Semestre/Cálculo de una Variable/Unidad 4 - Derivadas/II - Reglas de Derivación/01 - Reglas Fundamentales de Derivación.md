@@ -1,593 +1,468 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, matemáticas, cálculo, derivadas, reglas-derivación, funciones-elementales, regla-producto, regla-cociente, regla-potencia, trigonométricas]
+tags: [MATG1045, unidad4, reglas-fundamentales-de-derivacion, potencia, regla-producto, regla-cociente, funciones-elementales, mnemotecnia]
 ---
 
 # ⚙️ Reglas Fundamentales de Derivación
 
-## 📖 Introducción
+## 🎯 Introducción
 
-> [!info] 💡 Concepto Fundamental
+> [!info] 💡 Derivar sin volver al límite
 >
-> Las **reglas fundamentales de derivación** son un conjunto de fórmulas y técnicas que nos permiten calcular derivadas de manera sistemática y eficiente, sin necesidad de recurrir constantemente a la definición por límites. Estas reglas forman la base del cálculo diferencial y son herramientas esenciales para cualquier aplicación matemática, física o ingenieril.
+> Las **reglas fundamentales de derivación** son el conjunto de fórmulas que permite calcular derivadas de forma sistemática, sin rehacer el cociente incremental en cada paso. La definición $f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$ es el origen de todo, pero usarla en cada ejercicio costaría diez minutos por función; estas reglas convierten ese límite en un cálculo de segundos.
 >
+> **Lo que cubre esta nota:** constantes, múltiplo constante, potencia, suma, diferencia, producto y cociente, más el catálogo de derivadas de las funciones elementales.
+>
+> **Por qué importa:** el 99% de los ejercicios del curso se resuelven con estas fórmulas. La definición queda para demostrarlas y para los casos raros; aquí aprendes a reconocer cuál toca en cada expresión.
+>
+> **Ejemplo:** en $f(x) = 3x^4 - 2x^3 + 5x^2 - 7x + 9$ no se toca ningún límite: se deriva término a término y queda $12x^3 - 6x^2 + 10x - 7$.
 
-> [!tip] 🎯 ¿Por qué son importantes?
+> [!warning] ⚠️ Lo que ya debías dominar antes de entrar
 >
-> - Permiten **calcular derivadas rápidamente** sin usar límites
-> - Son la **base** para técnicas más avanzadas de derivación
-> - **Simplifican** enormemente los cálculos en aplicaciones
-> - Facilitan el **análisis de funciones** complejas
-> - Son **fundamentales** para optimización y modelado matemático
-> - **Ahorran tiempo** y reducen errores en cálculos
-
----
-
-## 🔤 Definiciones y Notación
-
-> [!note] 📝 **Notación de Derivadas**
+> - La definición de derivada y por qué el $h$ se cancela: [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]].
+> - El límite del que nace todo: [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite|01 - Concepto y Definición Formal del Límite]].
+> - Las funciones elementales (potencias, trigonométricas, exponenciales, logarítmicas) y sus dominios.
 >
-> **Notación de Leibniz**:
-> • $\frac{d}{dx}[f(x)]$ o $\frac{df}{dx}$
-> • Énfasis en la variable de derivación
->
-> **Notación de Lagrange**:
-> • $f'(x)$ (derivada primera)
-> • $f''(x)$ (derivada segunda)
-> • Más compacta para cálculos
->
-> **Notación de Newton**:
-> • $\dot{f}$ (primera derivada respecto al tiempo)
-> • $\ddot{f}$ (segunda derivada respecto al tiempo)
-> • Común en física
->
-> **Notación Funcional**:
-> • $D_x[f(x)]$ (operador derivada)
-> • $(f \circ g)'(x)$ (derivada de composición)
->
-
-> [!warning] ⚠️ **Elementos clave para recordar**
->
-> - La derivada es un **operador lineal**
-> - Las reglas se aplican **sistemáticamente**
-> - **Orden de operaciones** importa en reglas complejas
-> - Siempre verificar el **dominio** de la función derivada
+> **Por qué importa:** si la regla de la potencia o la del producto te suenan nuevas, todo el tema se te va a caer encima. Repasa esas dos notas antes de seguir.
 
 ---
 
-## 🧮 Reglas Básicas de Derivación
+## 📋 Definiciones Formales
 
-> [!tip] 📊 **Reglas Fundamentales - Funciones Básicas**
+> [!note] 📋 Definición — Reglas básicas de derivación
 >
-> ### 🔹 **Regla de la Constante**
+> Son tres las reglas con las que arranca cualquier cálculo de derivadas:
 >
-> **Enunciado**: La derivada de una constante es cero
-> • $\frac{d}{dx}[c] = 0$ donde $c$ es constante
+> $$\frac{d}{dx}[c] = 0, \qquad \frac{d}{dx}[c \cdot f(x)] = c \cdot f'(x), \qquad \frac{d}{dx}[x^n] = n x^{n-1}.$$
 >
-> **Ejemplos**:
-> • $\frac{d}{dx}[5] = 0$
-> • $\frac{d}{dx}[-\pi] = 0$
-> • $\frac{d}{dx}[\sqrt{2}] = 0$
+> La primera dice que una constante no cambia, por lo tanto su tasa de cambio es cero; la segunda permite sacar el factor constante antes de derivar; la tercera es la **regla de la potencia**, válida para cualquier número real $n$.
 >
-> **Interpretación**: Una constante no cambia, por lo que su tasa de cambio es cero
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_04.svg]]
 >
-> ### 🔹 **Regla del Múltiplo Constante**
+> **Se lee así:** el diagrama arranca en una caja con las tres reglas y se abre en tres ramas paralelas: constante, múltiplo constante y potencia. Cada rama baja a un par de ejemplos concretos y las tres se juntan en una caja final que dice que se aplican término a término en cualquier polinomio.
 >
-> **Enunciado**: La derivada de una constante por una función
-> • $\frac{d}{dx}[c \cdot f(x)] = c \cdot \frac{d}{dx}[f(x)] = c \cdot f'(x)$
+> **Por qué importa:** son las únicas tres que no dependen de ninguna otra regla. Todas las demás se construyen sobre ellas, y aplicarlas por partes es lo que permite derivar un polinomio completo de un solo golpe.
 >
-> **Ejemplos**:
-> • $\frac{d}{dx}[3x^2] = 3 \cdot \frac{d}{dx}[x^2] = 3 \cdot 2x = 6x$
-> • $\frac{d}{dx}[-4\sin x] = -4 \cdot \cos x$
-> • $\frac{d}{dx}[\frac{1}{2}e^x] = \frac{1}{2} \cdot e^x$
->
-> ### 🔹 **Regla de la Potencia** 
->
-> **Enunciado**: Para cualquier número real $n$
-> • $\frac{d}{dx}[x^n] = n \cdot x^{n-1}$
->
-> **Casos Importantes**:
-> • $\frac{d}{dx}[x] = 1 \cdot x^0 = 1$
-> • $\frac{d}{dx}[x^2] = 2x$
-> • $\frac{d}{dx}[x^3] = 3x^2$
-> • $\frac{d}{dx}[\sqrt{x}] = \frac{d}{dx}[x^{1/2}] = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$
-> • $\frac{d}{dx}[\frac{1}{x}] = \frac{d}{dx}[x^{-1}] = -x^{-2} = -\frac{1}{x^2}$
+> **Ejemplo:** $\frac{d}{dx}[3x^2] = 3 \cdot 2x = 6x$ combina múltiplo constante con potencia, y $\frac{d}{dx}[5] = 0$ es la primera regla en estado puro.
 
----
-
-## ➕ Reglas de Combinación
-
-> [!tip] 📊 **Reglas para Combinar Funciones**
+> [!note] 📋 Definición — Reglas de combinación (suma, diferencia, producto y cociente)
 >
-> ### ➕ **Regla de la Suma**
+> Para combinar funciones ya derivadas:
 >
-> **Enunciado**: La derivada de una suma es la suma de las derivadas
-> • $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
+> $$(f \pm g)' = f' \pm g', \qquad (fg)' = f'g + fg', \qquad \left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}.$$
 >
-> **Generalización**: 
-> • $\frac{d}{dx}[f_1(x) + f_2(x) + \cdots + f_n(x)] = f_1'(x) + f_2'(x) + \cdots + f_n'(x)$
->
-> **Ejemplos**:
-> • $\frac{d}{dx}[x^3 + 2x^2 - 5x + 7] = 3x^2 + 4x - 5$
-> • $\frac{d}{dx}[\sin x + \cos x] = \cos x - \sin x$
-> • $\frac{d}{dx}[e^x + \ln x] = e^x + \frac{1}{x}$
->
-> ### ➖ **Regla de la Diferencia**
->
-> **Enunciado**: La derivada de una diferencia es la diferencia de las derivadas
-> • $\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$
->
-> **Ejemplos**:
-> • $\frac{d}{dx}[x^4 - 3x^2] = 4x^3 - 6x$
-> • $\frac{d}{dx}[\tan x - \sec x] = \sec^2 x - \sec x \tan x$
->
-> ### ✖️ **Regla del Producto**
->
-> **Enunciado**: Para el producto de dos funciones
-> • $\frac{d}{dx}[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x)$
->
-> **Mnemotecnia**: "**PRIMERO por segundo + primero por SEGUNDO**"
->
-> **Ejemplos**:
-> • $\frac{d}{dx}[x^2 \cdot \sin x] = 2x \cdot \sin x + x^2 \cdot \cos x$
-> • $\frac{d}{dx}[e^x \cdot \ln x] = e^x \cdot \ln x + e^x \cdot \frac{1}{x}$
-> • $\frac{d}{dx}[(3x + 1)(x^2 - 2)] = 3(x^2 - 2) + (3x + 1)(2x)$
->
-> ### ➗ **Regla del Cociente**
->
-> **Enunciado**: Para el cociente de dos funciones
-> • $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}$
->
-> **Mnemotecnia**: "**ABAJO por arriba MENOS arriba por ABAJO, todo sobre abajo al cuadrado**"
->
-> **Ejemplos**:
-> • $\frac{d}{dx}\left[\frac{x^2}{x + 1}\right] = \frac{2x(x + 1) - x^2(1)}{(x + 1)^2} = \frac{x^2 + 2x}{(x + 1)^2}$
-> • $\frac{d}{dx}\left[\frac{\sin x}{\cos x}\right] = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{1}{\cos^2 x} = \sec^2 x$
-
----
-
-## 📈 Derivadas de Funciones Elementales
-
-> [!tip] 📊 **Tabla de Derivadas - Funciones Algebraicas**
->
-> **Función** ➜ **Derivada** ➜ **Observaciones**
->
-> • $f(x) = c$ ➜ $f'(x) = 0$ ➜ 🔹 Constante
-> • $f(x) = x$ ➜ $f'(x) = 1$ ➜ 🔹 Identidad
-> • $f(x) = x^n$ ➜ $f'(x) = nx^{n-1}$ ➜ 🔹 Regla de potencia
-> • $f(x) = \sqrt{x}$ ➜ $f'(x) = \frac{1}{2\sqrt{x}}$ ➜ 🔹 Raíz cuadrada
-> • $f(x) = \frac{1}{x}$ ➜ $f'(x) = -\frac{1}{x^2}$ ➜ ⚠️ $x \neq 0$
->
-
-> [!tip] 📊 **Tabla de Derivadas - Funciones Exponenciales y Logarítmicas**
->
-> **Función** ➜ **Derivada** ➜ **Observaciones**
->
-> • $f(x) = e^x$ ➜ $f'(x) = e^x$ ➜ 🔹 Única función igual a su derivada
-> • $f(x) = a^x$ ➜ $f'(x) = a^x \ln a$ ➜ 🔹 Base $a > 0, a \neq 1$
-> • $f(x) = \ln x$ ➜ $f'(x) = \frac{1}{x}$ ➜ ⚠️ $x > 0$
-> • $f(x) = \log_a x$ ➜ $f'(x) = \frac{1}{x \ln a}$ ➜ 🔹 Base $a > 0, a \neq 1$
->
-
-> [!tip] 📊 **Tabla de Derivadas - Funciones Trigonométricas**
->
-> **Función** ➜ **Derivada** ➜ **Observaciones**
->
-> • $f(x) = \sin x$ ➜ $f'(x) = \cos x$ ➜ 🔹 Básica
-> • $f(x) = \cos x$ ➜ $f'(x) = -\sin x$ ➜ ⚠️ Signo negativo
-> • $f(x) = \tan x$ ➜ $f'(x) = \sec^2 x$ ➜ 🔹 Equivale a $\frac{1}{\cos^2 x}$
-> • $f(x) = \cot x$ ➜ $f'(x) = -\csc^2 x$ ➜ ⚠️ Signo negativo
-> • $f(x) = \sec x$ ➜ $f'(x) = \sec x \tan x$ ➜ 🔹 Producto
-> • $f(x) = \csc x$ ➜ $f'(x) = -\csc x \cot x$ ➜ ⚠️ Signo negativo
->
-
-> [!tip] 📊 **Tabla de Derivadas - Funciones Trigonométricas Inversas**
->
-> **Función** ➜ **Derivada** ➜ **Condiciones**
->
-> • $f(x) = \arcsin x$ ➜ $f'(x) = \frac{1}{\sqrt{1-x^2}}$ ➜ $|x| < 1$
-> • $f(x) = \arccos x$ ➜ $f'(x) = -\frac{1}{\sqrt{1-x^2}}$ ➜ $|x| < 1$
-> • $f(x) = \arctan x$ ➜ $f'(x) = \frac{1}{1+x^2}$ ➜ $x \in \mathbb{R}$
-> • $f(x) = \text{arccot } x$ ➜ $f'(x) = -\frac{1}{1+x^2}$ ➜ $x \in \mathbb{R}$
-> • $f(x) = \text{arcsec } x$ ➜ $f'(x) = \frac{1}{|x|\sqrt{x^2-1}}$ ➜ $|x| > 1$
-> • $f(x) = \text{arccsc } x$ ➜ $f'(x) = -\frac{1}{|x|\sqrt{x^2-1}}$ ➜ $|x| > 1$
->
-
-> [!tip] 📊 **Tabla de Derivadas - Funciones Hiperbólicas**
->
-> **Función** ➜ **Derivada** ➜ **Observaciones**
->
-> • $f(x) = \sinh x$ ➜ $f'(x) = \cosh x$ ➜ 🔹 Seno hiperbólico
-> • $f(x) = \cosh x$ ➜ $f'(x) = \sinh x$ ➜ 🔹 Coseno hiperbólico
-> • $f(x) = \tanh x$ ➜ $f'(x) = \text{sech}^2 x$ ➜ 🔹 Tangente hiperbólica
-> • $f(x) = \text{coth } x$ ➜ $f'(x) = -\text{csch}^2 x$ ➜ ⚠️ Signo negativo
-> • $f(x) = \text{sech } x$ ➜ $f'(x) = -\text{sech } x \tanh x$ ➜ ⚠️ Signo negativo
-> • $f(x) = \text{csch } x$ ➜ $f'(x) = -\text{csch } x \coth x$ ➜ ⚠️ Signo negativo
-
-## 💡 Ejemplos Desarrollados
-
-> [!example] 🎯 **Ejemplo 1**: Aplicación de reglas básicas
->
-> **Encontrar la derivada de $f(x) = 3x^4 - 2x^3 + 5x^2 - 7x + 9$**
->
-> **Aplicación de regla de suma y múltiplo constante**:
-> • $f'(x) = \frac{d}{dx}[3x^4] - \frac{d}{dx}[2x^3] + \frac{d}{dx}[5x^2] - \frac{d}{dx}[7x] + \frac{d}{dx}[9]$
-> • $f'(x) = 3(4x^3) - 2(3x^2) + 5(2x) - 7(1) + 0$
-> • $f'(x) = 12x^3 - 6x^2 + 10x - 7$
->
-
-> [!example] 🎯 **Ejemplo 2**: Regla del producto
->
-> **Encontrar la derivada de $g(x) = x^3 \sin x$**
->
-> **Identificación**: $f(x) = x^3$, $g(x) = \sin x$
-> • $f'(x) = 3x^2$, $g'(x) = \cos x$
->
-> **Aplicación de regla del producto**:
-> • $h'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$
-> • $h'(x) = 3x^2 \cdot \sin x + x^3 \cdot \cos x$
-> • $h'(x) = 3x^2\sin x + x^3\cos x$
->
-
-> [!example] 🎯 **Ejemplo 3**: Regla del cociente
->
-> **Encontrar la derivada de $h(x) = \frac{2x + 1}{x^2 + 3}$**
->
-> **Identificación**: $f(x) = 2x + 1$, $g(x) = x^2 + 3$
-> • $f'(x) = 2$, $g'(x) = 2x$
->
-> **Aplicación de regla del cociente**:
-> • $h'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}$
-> • $h'(x) = \frac{2(x^2 + 3) - (2x + 1)(2x)}{(x^2 + 3)^2}$
-> • $h'(x) = \frac{2x^2 + 6 - 4x^2 - 2x}{(x^2 + 3)^2}$
-> • $h'(x) = \frac{-2x^2 - 2x + 6}{(x^2 + 3)^2}$
->
-
-> [!example] 🎯 **Ejemplo 4**: Combinación de reglas
->
-> **Encontrar la derivada de $k(x) = \frac{x^2 e^x}{\ln x}$**
->
-> **Estrategia**: Usar regla del cociente, donde el numerador requiere regla del producto
->
-> **Numerador**: $u(x) = x^2 e^x$
-> • $u'(x) = 2x \cdot e^x + x^2 \cdot e^x = e^x(2x + x^2)$
->
-> **Denominador**: $v(x) = \ln x$
-> • $v'(x) = \frac{1}{x}$
->
-> **Aplicación**:
-> • $k'(x) = \frac{e^x(2x + x^2) \cdot \ln x - x^2 e^x \cdot \frac{1}{x}}{(\ln x)^2}$
-> • $k'(x) = \frac{e^x[(2x + x^2)\ln x - x]}{(\ln x)^2}$
-> • $k'(x) = \frac{xe^x[(2 + x)\ln x - 1]}{(\ln x)^2}$
-
----
-
-## 🧠 Método de Estudio con Mnemotecnia
-
-> [!tip] 🎯 **Estrategias de Memorización y Comprensión**
->
-> ### 📝 **Mnemotecnias para Reglas de Derivación**
->
-> **Reglas Básicas - "CMP"**:
-> • **C**onstante = 0
-> • **M**últiplo constante sale afuera
-> • **P**otencia: baja exponente, resta uno
->
-> **Regla del Producto - "PRIMERO + SEGUNDO"**:
-> • **PRIMERO** derivado × segundo + primero × **SEGUNDO** derivado
-> • Mnemotecnia visual: "👆🥇 × 🥈 + 🥇 × 👆🥈"
->
-> **Regla del Cociente - "ABAJO ARRIBA MENOS ARRIBA ABAJO"**:
-> • $\frac{d}{dx}\left[\frac{f}{g}\right] = \frac{\text{ABAJO} × \text{ARRIBA}' - \text{ARRIBA} × \text{ABAJO}'}{(\text{ABAJO})^2}$
-> • Mnemotecnia: "**BAM-AAB sobre B²**" (Bottom-A'M minus A-A'B over Bottom²)
->
-> **Funciones Trigonométricas - "SICO TANECO"**:
-> • **SI**n → **CO**s (seno va a coseno)
-> • **CO**s → **-SI**n (coseno va a menos seno)
-> • **TAN** → **SEC²** (tangente va a secante cuadrada)
-> • **COT** → **-CSC²** (cotangente va a menos cosecante cuadrada)
->
-> **Funciones Exponenciales - "LA E SE QUEDA"**:
-> • $e^x$ derivada es $e^x$ (la única que se queda igual)
-> • $a^x$ derivada es $a^x \ln a$ (se multiplica por ln de la base)
->
-> **Funciones Logarítmicas - "UNO SOBRE X"**:
-> • $\ln x$ derivada es $\frac{1}{x}$
-> • $\log_a x$ derivada es $\frac{1}{x \ln a}$ (dividido por ln de la base)
->
-> ### 🎨 **Métodos de Estudio Visual**
->
-> **Técnica de "Árbol de Derivación"**:
-> 1. Dibuja la función como raíz
-> 2. Identifica qué regla aplicar (ramas principales)
-> 3. Descompón en subfunciones (ramas menores)
-> 4. Deriva cada parte (hojas)
-> 5. Combina según la regla (fruto final)
->
-> **Método de Colores por Reglas**:
-> • **Verde**: Reglas básicas (constante, potencia, suma)
-> • **Azul**: Regla del producto
-> • **Rojo**: Regla del cociente
-> • **Amarillo**: Funciones trigonométricas
-> • **Naranja**: Funciones exponenciales/logarítmicas
->
-> **Tarjetas de Patrones**:
-> • Anverso: Tipo de función o regla
-> • Reverso: Fórmula + ejemplo + truco nemotécnico
-> • Práctica diaria con reconocimiento de patrones
-
----
-
-## 🔍 Estrategias de Resolución
-
-> [!info] 💡 **Estrategias Sistemáticas para Derivar**
->
-> ### 🎯 **Algoritmo de Derivación**
->
-> **Paso 1: Identificación**
-> • ¿Es suma/diferencia? → Deriva término a término
-> • ¿Es producto? → Regla del producto
-> • ¿Es cociente? → Regla del cociente
-> • ¿Es función simple? → Busca en tabla de derivadas
->
-> **Paso 2: Descomposición**
-> • Identifica la función "exterior" e "interior"
-> • Separa constantes multiplicativas
-> • Simplifica antes de derivar si es posible
->
-> **Paso 3: Aplicación**
-> • Aplica la regla correspondiente
-> • Deriva paso a paso, sin saltar
-> • Mantén términos organizados
->
-> **Paso 4: Simplificación**
-> • Factoriza cuando sea posible
-> • Combina términos semejantes
-> • Verifica el resultado
->
-> ### 🧮 **Casos Especiales y Trucos**
->
-> **Funciones Polinomiales**:
-> • Deriva término por término
-> • Las constantes desaparecen
-> • El término de mayor grado determina el comportamiento
->
-> **Productos de Tres Funciones**:
-> • $(fgh)' = f'gh + fg'h + fgh'$
-> • O aplica regla del producto dos veces: $[(fg)h]'$
->
-> **Cocientes que se Simplifican**:
-> • A veces es mejor simplificar antes de derivar
-> • Ejemplo: $\frac{x^3}{x} = x^2$, entonces deriva $x^2$ directamente
->
-> **Reconocimiento de Patrones**:
-> • $\frac{d}{dx}[\tan x] = \sec^2 x$ (memorizar, no derivar $\frac{\sin x}{\cos x}$ cada vez)
-> • $\frac{d}{dx}[x^n e^x]$ aparece frecuentemente → patrón de producto
-
-> [!info] 🖼️ Estrategias de Resolución
+> La suma y la diferencia derivan término a término; el producto y el cociente **no**: ahí participan las derivadas de las dos funciones, y en el cociente el denominador va al cuadrado. Estas siete fórmulas (las tres básicas más estas) sustituyen a la definición en casi todos los ejercicios.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_01.svg]]
 >
-> **Se lee así:** Es un árbol de decisión que empieza en la función que quieres derivar y pasa por un rombo que pregunta por su tipo. Según la respuesta hay cuatro caminos paralelos: función simple que se resuelve con la tabla, suma o diferencia que se derivan término a término, y producto o cociente que exigen su regla específica; los cuatro caminos terminan en la misma caja de resultado final.
+> **Se lee así:** es un árbol de decisión. La caja de entrada, "función a derivar", llega a un rombo que pregunta por el tipo de función y sale en cuatro ramas paralelas: simple, suma o diferencia, producto y cociente. Cada rama indica la acción correspondiente (fórmula directa de la tabla, derivar término a término, regla del producto, regla del cociente) y las cuatro terminan en la misma caja de resultado final.
 >
-> **Por qué importa:** Te da el orden de trabajo: *detectar* el tipo antes de escribir fórmulas, y no al revés. Así evitas el error más caro del curso, aplicar la regla del producto a una simple suma.
+> **Por qué importa:** fija el orden de trabajo: **detectar el tipo antes de escribir fórmulas**, y no al revés. El error más caro del curso es aplicar la regla del producto a una suma simple, y este árbol te obliga a preguntarlo antes de empezar.
 >
-> **Ejemplo:** Con $k(x) = \frac{x^2 e^x}{\ln x}$ tomas la rama del cociente, y en el numerador aplicas la regla del producto para derivar $x^2 e^x$.
+> **Ejemplo:** en $k(x) = \frac{x^2 e^x}{\ln x}$ entras por la rama del cociente y, dentro del numerador, vuelves a la rama del producto para derivar $x^2 e^x$.
 
 ---
 
-## ⚠️ Errores Comunes y Cómo Evitarlos
+## 🧮 Reglas en detalle y sus trucos
 
-> [!warning] 🚨 **Errores Frecuentes**
+> [!tip] ➕ Reglas de suma, diferencia y múltiplo constante
 >
-> **1. Error en regla del producto**
-> • ❌ Incorrecto: $(fg)' = f'g'$
-> • ✅ Correcto: $(fg)' = f'g + fg'$
+> $$\frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x), \qquad \frac{d}{dx}[c \cdot f(x)] = c \cdot f'(x).$$
 >
-> **2. Error en regla del cociente - orden**
-> • ❌ Incorrecto: $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$
-> • ✅ Correcto: $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$ (numerador correcto)
+> **Generalización:** la derivada de una suma finita es la suma de las derivadas:
 >
-> **3. Olvidar signo negativo en trigonométricas**
-> • ❌ Incorrecto: $\frac{d}{dx}[\cos x] = \sin x$
-> • ✅ Correcto: $\frac{d}{dx}[\cos x] = -\sin x$
+> $$\frac{d}{dx}[f_1(x) + f_2(x) + \cdots + f_n(x)] = f_1'(x) + f_2'(x) + \cdots + f_n'(x).$$
 >
-> **4. Error en regla de potencia con exponentes negativos**
-> • ❌ Incorrecto: $\frac{d}{dx}[x^{-2}] = -2x^{-3}$ (olvidar que es $-3$)
-> • ✅ Correcto: $\frac{d}{dx}[x^{-2}] = -2x^{-3} = -\frac{2}{x^3}$
+> **Por qué importa:** son lineales, es decir, reparten la derivada entre los términos. Por eso un polinomio se deriva de un barrido, de izquierda a derecha, sin más cuenta que multiplicar el exponente.
 >
-> **5. No simplificar constantes multiplicativas**
-> • ❌ Incorrecto: No factorizar constantes al inicio
-> • ✅ Correcto: $\frac{d}{dx}[3x^2 + 6x] = 3 \frac{d}{dx}[x^2] + 6 \frac{d}{dx}[x] = 6x + 6$
->
-> **6. Confundir $\ln x$ con $\log x$**
-> • ❌ Incorrecto: $\frac{d}{dx}[\log x] = \frac{1}{x}$
-> • ✅ Correcto: $\frac{d}{dx}[\ln x] = \frac{1}{x}$, $\frac{d}{dx}[\log x] = \frac{1}{x \ln 10}$
->
+> **Ejemplo:** $\frac{d}{dx}[x^3 + 2x^2 - 5x + 7] = 3x^2 + 4x - 5$; el $7$ desaparece porque su derivada es cero.
 
-> [!tip] 💡 **Estrategias para Evitar Errores**
+> [!tip] ✖️ Regla del producto
 >
-> **Lista de Verificación**:
-> ✅ ¿Identifiqué correctamente el tipo de función?
-> ✅ ¿Apliqué la regla correcta?
-> ✅ ¿Mantuve todos los signos correctos?
-> ✅ ¿Simplifiqué apropiadamente?
-> ✅ ¿Verifiqué casos especiales (denominadores ≠ 0)?
+> $$\frac{d}{dx}[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x).$$
 >
-## 🎯 Aplicaciones y Contexto
+> **Mnemotecnia:** "*PRIMERO por segundo + primero por SEGUNDO*", es decir, se deriva cada factor por separado y se va sumando.
+>
+> **Por qué importa:** el producto **no** se deriva multiplicando las derivadas ($(fg)' \neq f'g'$). Cada factor aparece dos veces, una vez derivado y otra vez intacto.
+>
+> **Ejemplo:** $\frac{d}{dx}[x^2 \cdot \sin x] = 2x \cdot \sin x + x^2 \cdot \cos x$.
 
-> [!note] 🌐 **Aplicaciones de las Reglas de Derivación**
+> [!tip] ➗ Regla del cociente
 >
-> ### 🚀 **Física y Ciencias**
+> $$\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}.$$
 >
-> **Cinemática**:
-> • **Posición**: $s(t) = 5t^3 - 2t^2 + t$
-> • **Velocidad**: $v(t) = s'(t) = 15t^2 - 4t + 1$
-> • **Aceleración**: $a(t) = v'(t) = s''(t) = 30t - 4$
+> **Mnemotecnia:** "*ABAJO por arriba MENOS arriba por ABAJO, todo sobre abajo al cuadrado*".
 >
-> **Crecimiento Poblacional**:
-> • $P(t) = P_0 e^{rt}$ (crecimiento exponencial)
-> • $P'(t) = rP_0 e^{rt} = rP(t)$ (tasa proporcional a población)
+> **Por qué importa:** el orden del numerador importa: si cambias los términos de lugar, el signo se va. Y el denominador va **al cuadrado**, no sin exponente.
 >
-> ### 📈 **Economía y Finanzas**
->
-> **Función de Costo**:
-> • $C(x) = 1000 + 50x + 0.1x^2$ (costo total)
-> • $C'(x) = 50 + 0.2x$ (costo marginal)
-> • Indica el costo de producir una unidad adicional
->
-> **Función de Ingresos**:
-> • $R(x) = 100x - 0.5x^2$ (ingresos por venta)
-> • $R'(x) = 100 - x$ (ingreso marginal)
-> • Determina política de precios óptima
->
-> **Función de Beneficio**:
-> • $B(x) = R(x) - C(x) = 100x - 0.5x^2 - (1000 + 50x + 0.1x^2)$
-> • $B'(x) = 50 - 0.6x$ (beneficio marginal)
-> • $B'(x) = 0$ determina producción óptima
->
-> ### 🏗️ **Ingeniería**
->
-> **Análisis de Estructuras**:
-> • Momento flector: $M(x) = \frac{1}{2}wx^2 - \frac{1}{6}wx^3$
-> • Fuerza cortante: $V(x) = M'(x) = wx - \frac{1}{2}wx^2$
-> • Carga distribuida: $q(x) = V'(x) = w - wx$
->
-> **Control de Procesos**:
-> • Respuesta del sistema: $y(t) = e^{-t}(A\cos(\omega t) + B\sin(\omega t))$
-> • Derivada para análisis de estabilidad y control
->
-> **Circuitos Eléctricos**:
-> • Corriente en capacitor: $i(t) = C\frac{dv}{dt}$ (derivada del voltaje)
-> • Voltaje en inductor: $v(t) = L\frac{di}{dt}$ (derivada de la corriente)
->
-> ### 🌡️ **Ciencias Naturales**
->
-> **Química - Cinética de Reacciones**:
-> • Concentración: $[A](t) = [A]_0 e^{-kt}$
-> • Velocidad de reacción: $r = -\frac{d[A]}{dt} = k[A]_0 e^{-kt}$
->
-> **Biología - Crecimiento de Poblaciones**:
-> • Modelo logístico: $P(t) = \frac{K}{1 + ae^{-rt}}$
-> • Tasa de crecimiento: $P'(t) = \frac{rKae^{-rt}}{(1 + ae^{-rt})^2}$
+> **Ejemplo:** $\frac{d}{dx}\left[\frac{x^2}{x+1}\right] = \frac{2x(x+1) - x^2 \cdot 1}{(x+1)^2} = \frac{x^2+2x}{(x+1)^2}$.
 
-> [!info] 🖼️ Aplicaciones y Contexto
+> [!info] 🧩 Casos especiales y atajos
+>
+> - **Producto de tres funciones:** $(fgh)' = f'gh + fg'h + fgh'$, o aplica la regla del producto dos veces con $[(fg)h]'$.
+> - **Cocientes que se simplifican:** a veces conviene simplificar antes de derivar: $\frac{x^3}{x} = x^2$ y luego $(x^2)' = 2x$.
+> - **Potencias con exponente negativo:** $\frac{d}{dx}[x^{-2}] = -2x^{-3} = -\frac{2}{x^3}$: el signo se conserva y el exponente baja igual.
+> - **Racicones como potencias:** $\frac{d}{dx}[\sqrt{x}] = \frac{d}{dx}[x^{1/2}] = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$.
+>
+> **Por qué importa:** simplificar antes de derivar reduce el tamaño de la expresión y con eso baja la probabilidad de error algebraico.
+>
+> **Ejemplo:** $\left(\frac{1}{x}\right)' = (x^{-1})' = -x^{-2} = -\frac{1}{x^2}$, la potencia con exponente negativo aplicada a la función recíproca.
+
+---
+
+## 📈 Derivadas de funciones elementales
+
+> [!tip] 📊 Algebraicas
+>
+> | Función $f(x)$ | Derivada $f'(x)$ | Nota |
+> |---|---|---|
+> | $c$ | $0$ | constante |
+> | $x$ | $1$ | identidad |
+> | $x^n$ | $n x^{n-1}$ | regla de la potencia |
+> | $\sqrt{x}$ | $\frac{1}{2\sqrt{x}}$ | raíz como potencia |
+> | $\frac{1}{x}$ | $-\frac{1}{x^2}$ | definida para $x \neq 0$ |
+
+> [!tip] 📊 Exponenciales y logarítmicas
+>
+> | Función $f(x)$ | Derivada $f'(x)$ | Nota |
+> |---|---|---|
+> | $e^x$ | $e^x$ | la única igual a su derivada |
+> | $a^x$ | $a^x \ln a$ | $a > 0$, $a \neq 1$ |
+> | $\ln x$ | $\frac{1}{x}$ | $x > 0$ |
+> | $\log_a x$ | $\frac{1}{x \ln a}$ | $a > 0$, $a \neq 1$ |
+
+> [!tip] 📊 Trigonométricas
+>
+> | Función $f(x)$ | Derivada $f'(x)$ | Nota |
+> |---|---|---|
+> | $\sin x$ | $\cos x$ | básica |
+> | $\cos x$ | $-\sin x$ | **signo negativo** |
+> | $\tan x$ | $\sec^2 x$ | equivale a $1/\cos^2 x$ |
+> | $\cot x$ | $-\csc^2 x$ | **signo negativo** |
+> | $\sec x$ | $\sec x \tan x$ | producto de secante y tangente |
+> | $\csc x$ | $-\csc x \cot x$ | **signo negativo** |
+
+> [!tip] 📊 Trigonométricas inversas
+>
+> | Función $f(x)$ | Derivada $f'(x)$ | Condición |
+> |---|---|---|
+> | $\arcsin x$ | $\frac{1}{\sqrt{1-x^2}}$ | $\|x\| < 1$ |
+> | $\arccos x$ | $-\frac{1}{\sqrt{1-x^2}}$ | $\|x\| < 1$ |
+> | $\arctan x$ | $\frac{1}{1+x^2}$ | $x \in \mathbb{R}$ |
+> | $\text{arccot } x$ | $-\frac{1}{1+x^2}$ | $x \in \mathbb{R}$ |
+> | $\text{arcsec } x$ | $\frac{1}{\|x\|\sqrt{x^2-1}}$ | $\|x\| > 1$ |
+> | $\text{arccsc } x$ | $-\frac{1}{\|x\|\sqrt{x^2-1}}$ | $\|x\| > 1$ |
+
+> [!tip] 📊 Hiperbólicas
+>
+> | Función $f(x)$ | Derivada $f'(x)$ | Nota |
+> |---|---|---|
+> | $\sinh x$ | $\cosh x$ | |
+> | $\cosh x$ | $\sinh x$ | sin signo negativo |
+> | $\tanh x$ | $\text{sech}^2 x$ | |
+> | $\text{coth } x$ | $-\text{csch}^2 x$ | signo negativo |
+> | $\text{sech } x$ | $-\text{sech } x \tanh x$ | signo negativo |
+> | $\text{csch } x$ | $-\text{csch } x \coth x$ | signo negativo |
+>
+> **Por qué importa:** esta tabla es la hoja de consulta rápida del curso. Para la versión resumida y lista para imprimir, consulta [[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas|03 - Tabla de Derivadas Básicas]].
+>
+> **Ejemplo:** $\frac{d}{dx}[\log_5 x] = \frac{1}{x \ln 5}$: se toma la rama de logarítmicas y se aplica sin volver a la definición.
+
+---
+
+## 💡 Ejemplos desarrollados
+
+> [!example] 🎯 Ejemplo 1: polinomio completo
+>
+> **Derivar** $f(x) = 3x^4 - 2x^3 + 5x^2 - 7x + 9$.
+>
+> Se aplica suma, diferencia y múltiplo constante, derivando término a término:
+>
+> $$f'(x) = 3(4x^3) - 2(3x^2) + 5(2x) - 7(1) + 0 = 12x^3 - 6x^2 + 10x - 7.$$
+>
+> **Por qué importa:** el $9$ desaparece y el $7$ se queda sin factor: cada término se toma por separado.
+
+> [!example] 🎯 Ejemplo 2: regla del producto
+>
+> **Derivar** $g(x) = x^3 \sin x$.
+>
+> - Factores: $f(x) = x^3$ con $f'(x) = 3x^2$; $g(x) = \sin x$ con $g'(x) = \cos x$.
+> - Aplicando $(fg)' = f'g + fg'$:
+>
+> $$g'(x) = 3x^2 \sin x + x^3 \cos x.$$
+>
+> **Por qué importa:** el segundo término mantiene $\sin x$ intacto; si hubieras escrito $3x^2 \cos x$ estarías multiplicando las derivadas, que es el error clásico.
+
+> [!example] 🎯 Ejemplo 3: regla del cociente
+>
+> **Derivar** $h(x) = \frac{2x+1}{x^2+3}$.
+>
+> - $f(x) = 2x+1$ con $f'(x) = 2$; $g(x) = x^2+3$ con $g'(x) = 2x$.
+> - Aplicando la regla del cociente:
+>
+> $$h'(x) = \frac{2(x^2+3) - (2x+1)(2x)}{(x^2+3)^2} = \frac{2x^2+6-4x^2-2x}{(x^2+3)^2} = \frac{-2x^2-2x+6}{(x^2+3)^2}.$$
+>
+> **Por qué importa:** el orden del numerador decide el signo de todo el resultado.
+
+> [!example] 🎯 Ejemplo 4: cociente con producto adentro
+>
+> **Derivar** $k(x) = \frac{x^2 e^x}{\ln x}$.
+>
+> - Numerador $u(x) = x^2 e^x$: $u'(x) = 2x e^x + x^2 e^x = e^x(2x + x^2)$.
+> - Denominador $v(x) = \ln x$: $v'(x) = \frac{1}{x}$.
+> - Aplicando la regla del cociente:
+>
+> $$k'(x) = \frac{e^x(2x+x^2)\ln x - x^2 e^x \cdot \frac{1}{x}}{(\ln x)^2} = \frac{x e^x[(2+x)\ln x - 1]}{(\ln x)^2}.$$
+>
+> **Por qué importa:** es el patrón de "regla dentro de regla": decides con el árbol exterior (cociente) y luego resuelves el numerador con el árbol interior (producto).
+
+---
+
+## 🧠 Mnemotecnias para no olvidar las fórmulas
+
+> [!tip] 🎓 Las seis frases del curso
+>
+> - **Reglas básicas "CMP":** **C**onstante = 0, **M**últiplo constante sale afuera, **P**otencia: baja el exponente y resta uno.
+> - **Producto "PRIMERO + SEGUNDO":** primero derivado por segundo, más primero por segundo derivado.
+> - **Cociente "ABAJO ARRIBA MENOS ARRIBA ABAJO":** $\frac{\text{ABAJO} \cdot \text{ARRIBA}' - \text{ARRIBA} \cdot \text{ABAJO}'}{(\text{ABAJO})^2}$.
+> - **Trigonométricas "SICO TANECO":** **SI**n → **CO**s; **CO**s → **-SI**n; **TAN** → **SEC²**; **COT** → **-CSC²**.
+> - **Exponenciales "LA E SE QUEDA":** $e^x$ se queda igual; $a^x$ se multiplica por $\ln a$.
+> - **Logarítmicas "UNO SOBRE X":** $\ln x \to \frac{1}{x}$; $\log_a x \to \frac{1}{x \ln a}$.
+>
+> **Por qué importa:** en un parcial no hay tiempo de derivar desde cero; lo que se memoriza es el patrón, y el patrón se recuerda mejor con una frase que con una fórmula suelta.
+
+> [!info] 🎨 Método de estudio visual: el árbol de derivación
+>
+> 1. Dibuja la función como raíz.
+> 2. Identifica qué regla aplicar (ramas principales).
+> 3. Descompón en subfunciones (ramas menores).
+> 4. Deriva cada parte (hojas).
+> 5. Combina según la regla (fruto final).
+>
+> **Colores sugeridos:** verde para reglas básicas (constante, potencia, suma), azul para producto, rojo para cociente, amarillo para trigonométricas y naranja para exponenciales y logarítmicas.
+>
+> **Ejemplo:** para $\frac{x^2 e^x}{\ln x}$ la raíz se parte en cociente (rojo), el numerador en producto (azul) y $\ln x$ en logarítmica (naranja).
+
+---
+
+## 🔍 Estrategias de resolución
+
+> [!info] 💡 Algoritmo de derivación en cuatro pasos
+>
+> 1. **Identificación:** ¿es suma o diferencia? → término a término; ¿producto? → regla del producto; ¿cociente? → regla del cociente; ¿función simple? → tabla de derivadas.
+> 2. **Descomposición:** separa la función "exterior" de la "interior", saca las constantes multiplicativas y simplifica la expresión si conviene.
+> 3. **Aplicación:** aplica la regla elegida paso a paso, sin saltos, manteniendo ordenados los términos.
+> 4. **Simplificación y verificación:** factoriza, combina términos semejantes y comprueba el resultado.
+>
+> **Por qué importa:** la mitad de los errores no son de cálculo sino de elección: se deriva mal porque se eligió mal la regla. Los pasos 1 y 2 existen para que eso no pase.
+>
+> **Ejemplo:** en $\frac{x^3}{x}$ el paso 2 (simplificar) ahorra aplicar la regla del cociente entera: $x^3/x = x^2$ y $(x^2)' = 2x$.
+
+> [!success] ✅ Tres formas de verificar tu derivada
+>
+> 1. **Numérica:** evalúa $\frac{f(x+h)-f(x)}{h}$ con $h$ muy pequeño y compara con tu resultado.
+> 2. **Gráfica:** grafica $f$ y $f'$; donde $f$ crece, $f'$ debe ser positiva, y los máximos de $f$ deben caer donde $f' = 0$.
+> 3. **Por integración:** si $F'(x) = f(x)$, entonces $\int f(x)\,dx$ devuelve $F(x) + C$.
+>
+> **Por qué importa:** verificar cuesta segundos y detecta el error más común: una regla mal aplicada que ni siquiera produce una curva con el signo correcto.
+
+---
+
+## ⚠️ Errores comunes y cómo evitarlos
+
+> [!warning] 🚨 Los seis errores que más se repiten
+>
+> 1. **Producto:** $(fg)' = f'g'$ es **incorrecto**; lo correcto es $(fg)' = f'g + fg'$.
+> 2. **Cociente:** invertir el numerador, $\frac{fg' - f'g}{g^2}$, cambia el signo de todo; lo correcto es $\frac{f'g - fg'}{g^2}$.
+> 3. **Signo en trigonométricas:** $\frac{d}{dx}[\cos x] = \sin x$ es incorrecto; lo correcto es $-\sin x$ (y lo mismo para $\cot$ y $\csc$).
+> 4. **Potencia con exponente negativo:** $\frac{d}{dx}[x^{-2}] = -2x^{-3}$ sí, pero al final conviene escribir $-\frac{2}{x^3}$ para no confundir el signo.
+> 5. **Constantes sin factorizar:** deriva más lento y con más errores no sacar las constantes al principio; $\frac{d}{dx}[3x^2+6x] = 3\frac{d}{dx}[x^2] + 6\frac{d}{dx}[x] = 6x+6$.
+> 6. **Confundir $\ln x$ con $\log x$:** $\frac{d}{dx}[\ln x] = \frac{1}{x}$, mientras que $\frac{d}{dx}[\log_{10} x] = \frac{1}{x \ln 10}$.
+>
+> **Por qué importa:** los cinco primeros se corrigen con una sola revisión de signos y de orden; el sexto es una confusión de notación que invalida la respuesta completa.
+
+---
+
+## 🌍 Aplicaciones y contexto
+
+> [!note] 🌐 Dónde se usan estas reglas
+>
+> - **Cinemática:** con $s(t) = 5t^3 - 2t^2 + t$ la velocidad es $v(t) = s'(t) = 15t^2 - 4t + 1$ y la aceleración $a(t) = v'(t) = 30t - 4$.
+> - **Crecimiento poblacional:** $P(t) = P_0 e^{rt}$ tiene $P'(t) = rP(t)$, es decir, la tasa de crecimiento es proporcional a la población.
+> - **Economía:** si $C(x) = 1000 + 50x + 0.1x^2$ es el costo total, $C'(x) = 50 + 0.2x$ es el costo marginal, el costo de producir una unidad más.
+> - **Ingeniería:** en un capacitor, $i(t) = C \frac{dv}{dt}$; en un inductor, $v(t) = L \frac{di}{dt}$.
+> - **Química:** la velocidad de reacción de primer orden es $r = -\frac{d[A]}{dt} = k[A]$.
+>
+> **Por qué importa:** la misma fórmula de potencia resuelve un polinomio de examen y el modelo de costo de una empresa. Por eso los exámenes de la unidad mezclan casos aplicados.
+>
+> **Ejemplo:** con $B(x) = R(x) - C(x) = 50x - 0.6x^2 - 1000$ el beneficio marginal es $B'(x) = 50 - 1.2x$, y $B'(x) = 0$ da la producción óptima.
+
+> [!info] 🖼️ Las reglas, en cuatro campos profesionales
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_02.svg]]
 >
-> **Se lee así:** La raíz es el conjunto de reglas de derivación y de ahí sale un rombo que abre hacia cuatro áreas profesionales. Cada área se desglosa en tres campos concretos, desde la cinemática y la dinámica hasta la química cinética y los modelos ambientales, de modo que cada hoja muestra un uso concreto de derivar.
+> **Se lee así:** la raíz es el conjunto de reglas de derivación y de ahí sale un rombo que abre hacia cuatro áreas profesionales: física, economía, ingeniería y ciencias naturales. Cada área se desglosa en tres campos concretos, desde la cinemática y las ondas hasta el análisis marginal, el control de sistemas y la química cinética.
 >
-> **Por qué importa:** Te muestra que las mismas reglas sirven en campos muy distintos y por qué en la carrera te van a preguntar casos aplicados. También te orienta: si te interesa la ingeniería, ya sabes qué problemas te van a pedir.
+> **Por qué importa:** te muestra que las mismas reglas sirven en campos muy distintos y por qué en la carrera te van a pedir casos aplicados y no solo fórmulas sueltas.
 >
-> **Ejemplo:** En el modelo logístico de la nota, $P(t) = \frac{K}{1+ae^{-rt}}$, la tasa de crecimiento $P'(t)$ sale de derivar la exponencial interna con la regla de la cadena.
+> **Ejemplo:** en el modelo logístico de biología, $P(t) = \frac{K}{1+ae^{-rt}}$, la tasa $P'(t)$ sale de derivar la exponencial interna con la regla de la cadena.
 
 ---
 
-## 🔄 Verificación de Resultados
+## 📝 Ejercicios Propuestos
 
-> [!success] ✅ **Métodos de Verificación**
+### ✏️ Ejercicio 1 — Polinomio completo
+
+> [!example] 📋 Planteamiento
 >
-> ### 🧪 **Verificación por Sustitución**
+> Deriva $f(x) = 3x^4 - 2x^3 + 5x^2 - 7x + 9$ usando las reglas básicas y verifica el resultado en $x = 1$ por el cociente incremental con $h = 0.001$.
 >
-> **Método**:
-> 1. Calcula la derivada usando reglas
-> 2. Elige valores específicos de $x$
-> 3. Evalúa tanto $f'(x)$ como $\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$
-> 4. Compara los resultados
+> > [!success]- ✅ Solución
+> >
+> > Se deriva término a término con potencia, múltiplo constante y constante:
+> >
+> > $$f'(x) = 12x^3 - 6x^2 + 10x - 7.$$
+> >
+> > Verificación: $f'(1) = 12 - 6 + 10 - 7 = 9$.
+> >
+> > Con $h = 0.001$: $f(1) = 8$ y $f(1.001) = 3(1.001)^4 - 2(1.001)^3 + 5(1.001)^2 - 7(1.001) + 9 = 8.009006...$, de modo que $\frac{f(1.001)-f(1)}{0.001} \approx 9.006$, que se acerca a $9$.
+
+### ✏️ Ejercicio 2 — Regla del producto
+
+> [!example] 📋 Planteamiento
 >
-> **Ejemplo**: Para $f(x) = x^2$, $f'(x) = 2x$
-> • En $x = 3$: $f'(3) = 6$
-> • Verificación: $\lim_{h \to 0} \frac{(3+h)^2 - 9}{h} = \lim_{h \to 0} \frac{6h + h^2}{h} = 6$ ✅
+> Deriva $g(x) = x^3 \sin x$ con la regla del producto y determina la pendiente de la tangente en $x = 0$.
 >
-> ### 📊 **Verificación Gráfica**
+> > [!success]- ✅ Solución
+> >
+> > $f(x) = x^3$ con $f'(x) = 3x^2$; $g(x) = \sin x$ con $g'(x) = \cos x$.
+> >
+> > $$g'(x) = 3x^2 \sin x + x^3 \cos x.$$
+> >
+> > En $x = 0$: $g'(0) = 0 + 0 = 0$, así que la tangente al origen es horizontal, $y = 0$.
+
+### ✏️ Ejercicio 3 — Regla del cociente
+
+> [!example] 📋 Planteamiento
 >
-> **Interpretación Visual**:
-> • Grafica $f(x)$ y $f'(x)$ simultáneamente
-> • Donde $f(x)$ crece, $f'(x) > 0$
-> • Donde $f(x)$ decrece, $f'(x) < 0$
-> • Máximos/mínimos de $f(x)$ corresponden a $f'(x) = 0$
+> Deriva $h(x) = \frac{2x+1}{x^2+3}$ y comprueba si puede anularse el numerador de tu resultado.
 >
-> ### 🔢 **Verificación Numérica**
+> > [!success]- ✅ Solución
+> >
+> > $$h'(x) = \frac{2(x^2+3) - (2x+1)(2x)}{(x^2+3)^2} = \frac{-2x^2-2x+6}{(x^2+3)^2}.$$
+> >
+> > El numerador $-2x^2-2x+6 = 0$ cuando $x^2 + x - 3 = 0$, es decir $x = \frac{-1 \pm \sqrt{13}}{2} \approx 1.30$ o $-2.30$: ahí $h$ tiene tangente horizontal. El denominador nunca se anula, así que la derivada está definida en todo $\mathbb{R}$.
+
+### ✏️ Ejercicio 4 — Cociente con producto adentro
+
+> [!example] 📋 Planteamiento
 >
-> **Aproximación por Diferencias**:
-> • $f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}$ con $h$ pequeño
-> • Compara con resultado analítico
-> • Útil para funciones complicadas
+> Deriva $k(x) = \frac{x^2 e^x}{\ln x}$ (dominio $x > 0$ y $x \neq 1$) combinando la regla del cociente con la del producto.
 >
-> ### 🧮 **Verificación por Software**
+> > [!success]- ✅ Solución
+> >
+> > Numerador $u = x^2 e^x$ con $u' = 2x e^x + x^2 e^x = e^x(2x + x^2)$; denominador $v = \ln x$ con $v' = 1/x$.
+> >
+> > $$k'(x) = \frac{e^x(2x+x^2)\ln x - x^2 e^x \cdot \frac{1}{x}}{(\ln x)^2} = \frac{x e^x[(2+x)\ln x - 1]}{(\ln x)^2}.$$
+> >
+> > En $x = 1$ el denominador $\ln x$ se anula, así que la derivada no existe en ese punto: el dominio de $k'$ es $x > 0$ con $x \neq 1$.
+
+### ✏️ Ejercicio 5 — Simplificar antes de derivar
+
+> [!example] 📋 Planteamiento
 >
-> **Herramientas Recomendadas**:
-> • **Wolfram Alpha**: Verificación inmediata de derivadas
-> • **GeoGebra**: Visualización gráfica de funciones y derivadas  
-> • **Symbolab**: Paso a paso de cálculos
-> • **Desmos**: Graficación de funciones para verificación visual
+> Deriva $f(x) = \frac{x^4 - x^2}{x^2}$ de dos formas: simplificando primero y aplicando la regla del cociente tal cual. ¿Coinciden?
+>
+> > [!success]- ✅ Solución
+> >
+> > **Forma A (simplificando):** para $x \neq 0$, $f(x) = \frac{x^4}{x^2} - \frac{x^2}{x^2} = x^2 - 1$, así que $f'(x) = 2x$.
+> >
+> > **Forma B (regla del cociente):** con numerador $u = x^4 - x^2$ ($u' = 4x^3 - 2x$) y denominador $v = x^2$ ($v' = 2x$):
+> >
+> > $$f'(x) = \frac{(4x^3-2x)x^2 - (x^4-x^2)(2x)}{x^4} = \frac{4x^5 - 2x^3 - 2x^5 + 2x^3}{x^4} = \frac{2x^5}{x^4} = 2x.$$
+> >
+> > **Coinciden:** $f'(x) = 2x$. La forma A es más corta porque cancela términos antes de derivar; la forma B es más larga pero verifica que la regla del cociente funciona aunque la expresión se pueda simplificar.
 
 ---
 
-## 🔗 Conexiones con Otros Temas
+## 🎯 Metas de Aprendizaje
 
-> [!info] 🌐 **Temas Relacionados y Conexiones**
+> [!note] 📋 Nivel Básico
 >
-> **Fundamentos Previos**:
-> • **Límites** - Base para la definición de derivada
-> • **Funciones** - Conocimiento de diferentes tipos de funciones
-> • **Álgebra** - Manipulación de expresiones matemáticas
-> • **Trigonometría** - Para derivadas de funciones trigonométricas
->
-> **Desarrollos Posteriores**:
-> • **Regla de la Cadena** - Derivación de funciones compuestas
-> • **Derivación Implícita** - Funciones definidas implícitamente
-> • **Aplicaciones de Derivadas** - Optimización, análisis de funciones
-> • **Integrales** - Proceso inverso, antiderivadas
-> • **Ecuaciones Diferenciales** - Modelado de sistemas dinámicos
-> • **Cálculo Multivariable** - Derivadas parciales
->
-> **Conexiones Interdisciplinarias**:
-> • **Física** - Velocidad, aceleración, fuerzas
-> • **Economía** - Análisis marginal, optimización
-> • **Ingeniería** - Control, análisis de sistemas
-> • **Biología** - Modelos de crecimiento poblacional
-> • **Química** - Cinética de reacciones
+> - [ ] Derivo un polinomio término a término sin mirar la tabla.
+> - [ ] Escribo de memoria las reglas de producto y de cociente con su mnemotecnia.
+> - [ ] Distingo cuándo una función pide producto, cuándo cociente y cuándo basta la potencia.
 
-> [!info] 🖼️ Conexiones con Otros Temas
+> [!note] 📋 Nivel Intermedio
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_03.svg]]
+> - [ ] Derivo funciones que combinan dos o más reglas (cociente con producto adentro).
+> - [ ] Reproduzco de memoria las derivadas de las seis trigonométricas y sus signos.
+> - [ ] Verifico una derivada con el cociente incremental y con la gráfica.
+
+> [!note] 📋 Nivel Avanzado
 >
-> **Se lee así:** Es un mapa mental con un nodo central del que salen cuatro ramas: las reglas básicas, las reglas avanzadas, las funciones elementales y las aplicaciones. Las dos primeras se abren en hojas de fórmulas concretas, mientras que las dos últimas agrupan por tipo de función y por campo donde se usan.
->
-> **Por qué importa:** Te sirve como índice mental del temario: sabes que producto, cociente, cadena e implícita forman un bloque, y que las elementales se derivan por tabla. Al revisar basta con recorrer las hojas de cada rama.
->
-> **Ejemplo:** Un parcial típico pide derivar $e^x \cdot \ln x$: tomas la hoja de la regla del producto y la de funciones logarítmicas, y combinas $e^x \ln x + e^x \frac{1}{x}$.
+> - [ ] Elijo simplificar antes de derivar cuando la expresión lo permite.
+> - [ ] Aplico las reglas a un problema de costo marginal o de velocidad sin perder el contexto.
 
 ---
 
 ## 📚 Referencias
 
-> [!quote] 📖 **Notas relacionadas**
+> [!quote] 📖 Fuentes y material de la casa
 >
-> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal.md|01 - Derivada y Definición Formal.md]] - Fundamento teórico de las reglas
-> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada.md|02 - Interpretación Geométrica de la Derivada.md]] - Significado visual de las derivadas  
-> - [[03 – Funciones vectoriales#Límites y Continuidad|Límites y Continuidad]] - Base matemática previa
-> - Funciones y sus Propiedades - Conocimiento de funciones elementales
-> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas).md|01 - Antiderivadas (Primitivas).md]] - Proceso inverso de la derivación
+> - J. Stewart, *Cálculo* (Cengage), cap. 3: reglas de derivación.
+> - R. Larson, *Cálculo* (Cengage), cap. 3: producto, cociente y potencia.
+> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]] — la definición de la que salen estas reglas.
+> - [[Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena|02 - Regla de la Cadena]] — la regla que completa este conjunto.
+> - [[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas|03 - Tabla de Derivadas Básicas]] — la tabla resumen para consulta rápida.
 
 ---
 
-## 🔍 Notas Recomendadas
+## 🔁 Repaso SR (flashcards)
 
-> [!info] 📚 **Para profundizar y complementar**
+#flashcards/cal1-u4
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
 >
-> - Universidad/Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena - Derivación de funciones compuestas
-> - [[Unidad 4 - Derivadas/III - Derivadas Especiales/01 - Derivación Implícita.md|01 - Derivación Implícita.md]] - Técnica para funciones implícitas
-> - Aplicaciones de la Derivada - Optimización y análisis de funciones
-> - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior.md|01 - Derivadas de Orden Superior.md]] - Segunda derivada y análisis de concavidad
-> - [[Unidad 5 - Aplicaciones de la Derivada/III - Razones de Cambio/03 - Aproximaciones Lineales y Diferenciales.md|03 - Aproximaciones Lineales y Diferenciales.md]] - Uso práctico de derivadas
-> - Teoremas del Valor Medio - Teoremas fundamentales del cálculo
-> - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior.md#Análisis de Funciones|Análisis de Funciones]] - Uso conjunto de derivadas para estudiar funciones
-> - Optimización en Cálculo - Aplicaciones en problemas de máximos y mínimos
-> - Modelado Matemático con Derivadas - Aplicaciones en ciencias e ingeniería
-> - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas.md|02 - Formas Indeterminadas.md]] - Uso avanzado de derivadas en límites
+> - ¿Qué dice la regla de la potencia y para qué valores de $n$ vale?::$\frac{d}{dx}[x^n] = n x^{n-1}$ para cualquier $n$ real; el exponente baja y se resta uno.
+> - ¿Cuál es la regla del producto?::$(fg)' = f'g + fg'$: se deriva cada factor por turnos y se suman los dos términos.
+> - ¿Qué orden tiene el numerador de la regla del cociente?::$\frac{f'g - fg'}{g^2}$: primero la derivada del numerador por el denominador, menos numerador por derivada del denominador, todo sobre el denominador al cuadrado.
+> - ¿Qué signo tienen las derivadas de $\cos$, $\cot$ y $\csc$?::Negativo: $-\sin x$, $-\csc^2 x$ y $-\csc x \cot x$.
+> - ¿Qué dos reglas fallan si no simplificas antes?::Ninguna falla, pero simplificar antes evita errores de signo: en $\frac{x^4-x^2}{x^2}$ conviene reducir a $x^2-1$ antes de derivar.
 
 ---
 
-**Tags:** #MATG1045 #unidad4 #reglas-fundamentales-de-derivacion #matemáticas #cálculo #derivadas #reglas-derivación #funciones-elementales #regla-producto #regla-cociente #regla-potencia #trigonométricas #exponenciales #logarítmicas #aplicaciones #física #economía #ingeniería #universidad #análisis-matemático #verificación #mnemotecnia #optimización #modelado-matemático
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/01 - Derivada y Definición Formal|01 - Derivada y Definición Formal]] — de dónde salen todas estas reglas.
+> - [[Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena|02 - Regla de la Cadena]] — la composición, que completa el conjunto.
+> - [[Unidad 4 - Derivadas/III - Derivadas Especiales/01 - Derivación Implícita|01 - Derivación Implícita]] — cuando la función no viene despejada.
+> - [[Unidad 4 - Derivadas/III - Derivadas Especiales/02 - Derivación Logarítmica|02 - Derivación Logarítmica]] — cuando conviene tomar $\ln$ antes de derivar.
+> - [[Unidad 5 - Aplicaciones de la Derivada/II - Optimización/01 - Problemas de Optimización|01 - Problemas de Optimización]] — donde estas reglas se usan a fondo.
+>
+> **El mapa de la herramientería:**
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Reglas_Fundamentales_de_Derivación_03.svg]]
+>
+> **Se lee así:** es un mapa mental con un nodo central, "Reglas de Derivación", del que salen cuatro ramas: reglas básicas (constante, potencia, múltiplo constante, suma y diferencia), reglas avanzadas (producto, cociente, cadena, implícita), funciones elementales (algebraicas, trigonométricas, exponenciales, logarítmicas, hiperbólicas) y aplicaciones (física, economía, ingeniería, optimización).
+>
+> **Por qué importa:** te sirve como índice mental del temario: en un parcial solo puedes estar en una de esas ramas, y saber en cuál te dice qué fórmula abrir.
+>
+> **Ejemplo:** si el ejercicio pide derivar $e^x \ln x$, vas a la rama de reglas avanzadas (producto) y a la de funciones elementales (logarítmica), y combinas $e^x \ln x + e^x \frac{1}{x}$.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica hasta que el árbol de decisión sea automático: identifica el tipo de función antes de escribir cualquier fórmula.
+> - Después salta a [[Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena|02 - Regla de la Cadena]] para las funciones compuestas.
+> - Consulta [[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas|03 - Tabla de Derivadas Básicas]] como chuleta rápida antes de un parcial.
+> - Cuando aparezcan ecuaciones con $y$ mezclada, ve a [[Unidad 4 - Derivadas/III - Derivadas Especiales/01 - Derivación Implícita|01 - Derivación Implícita]].
+
+---
+
+**Tags:** #MATG1045 #unidad4 #reglas-fundamentales-de-derivacion #potencia #regla-producto #regla-cociente #funciones-elementales #mnemotecnia
