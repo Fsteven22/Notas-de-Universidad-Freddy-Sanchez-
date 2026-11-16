@@ -2601,3 +2601,17 @@ el commit de esta línea de PUSHEADO.
 >
 > **Commits de este push:** `c62faa76` `2b497379` `f6aabbb8` `563884d2` `32c900e0` `fa01d8c3`
 > `b45ad6b7` `7558dabe` `d3815892` `adcdcbb1` `bbfb00b1` `beceabca` (12).
+
+> [!success] PUSHEADO `042c9d1f` · 16/11/2026 — `origin/master` = `master` = `042c9d1f`
+>
+> Push **fast-forward, sin `--force`**: `sesion/opencode-onedrive` (`9cc34113..042c9d1f`,
+> 13 commits) → merge `--ff-only` en el clon de OneDrive → `origin/master`
+> (`3f337a81..042c9d1f`).
+>
+> **Los archivos del dueño siguen intactos:** los **51 archivos locales** modificados o sin
+> seguimiento del clon (FESD, Inglés III, PDFs de Diseño, `EXA-*.pdf` de Cálculo y las 18 PNG de
+> MatDisc) están **idénticos antes y después** del merge: `git status --porcelain` comparado
+> línea a línea, 0 diferencias.
+>
+> **En la bóveda de OneDrive ya se ven las 44 notas rehechas** con el formato de la casa
+> (U1, U2, U3, U4, U5, U6-I y U6-II). Quedan **21**: U6-III, U6-IV, U6-Técnicas, U6-V y U7.
