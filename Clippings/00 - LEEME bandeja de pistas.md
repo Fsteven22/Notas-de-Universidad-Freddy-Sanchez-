@@ -2615,3 +2615,90 @@ el commit de esta línea de PUSHEADO.
 >
 > **En la bóveda de OneDrive ya se ven las 44 notas rehechas** con el formato de la casa
 > (U1, U2, U3, U4, U5, U6-I y U6-II). Quedan **21**: U6-III, U6-IV, U6-Técnicas, U6-V y U7.
+
+---
+
+### `opencode` — MatDisc: sin callouts anidados en las definiciones + las figuras ya no cruzan su pie de nota — 16/11/2026
+
+> [!success] Requisito del dueño: dos defectos visuales corregidos y auditados · 3 commits atómicos locales (sin push)
+>
+> **Encargo del dueño (16/11/2026):** *"no me gusta como se ve ese callout de ejemplo… y sobre la
+> imagen, sus lineas se sobreponen al texto de abajo, creo que tienes que hacer una auditoria donde
+> los callout de ejemplo sean reemplazados por texto normal o por otro callout que tenga mas
+> sentido"*.
+>
+> **1. El callout anidado: diagnóstico y alcance.**
+> En una definición la jerarquía estaba rota en **tres capas**: el bloque ya decía la regla en
+> `**Se lee así:**`, luego venía un `[!example]` **anidado** que volvía a decir la regla, y después
+> un `**Ejemplo:**` en texto plano con el ejemplo de verdad. El anidado no era un ejemplo: era una
+> segunda lectura. Con la caja exterior de fondo se ve **caja dentro de caja**.
+>
+> Decisión del dueño: aplanar **todos** los callouts anidados dentro de definiciones.
+> **Lo que NO se toca:** los callouts anidados dentro de **ejercicios** (`✏️ Ejercicio N` →
+> `✅ Solución guiada`): ahí el hijo es de verdad la solución del padre y es el patrón SBD de todo
+> el vault. Quedan **54** intactos.
+>
+> **2. Lo que se aplanó: 41 casos en 15 notas** (la estimación inicial de 40 era 41: un callout
+> escrito `> >[!abstract]`, sin espacio tras el `>`, se le escapaba a la primera auditoría).
+> - **35** se vuelven **texto plano conservando su rótulo**: `> **Observación:** el conjunto vacío no
+>   es lo mismo que {0}.` Si el padre tenía un `**Ejemplo:**` **vacío**, el ejemplo lo rellena (no
+>   queda un "Ejemplo 2" redundante). Las tablas y listas conservan su línea en blanco para que
+>   markdown las siga renderizando.
+> - **5** se **eliminan** porque solo repetían lo que ya decía el `**Se lee así:**` del padre
+>   (Disyunción, Conjunción, Disyunción exclusiva, Condicional y Bicondicional). Su contenido sigue
+>   cubierto por la lectura; el matiz *"(superficialmente verdadero)"* del condicional se conservó.
+> - **1** es el Teorema 1 de la Función Invertible (el que estaba escrito sin espacio).
+>
+> **3. La imagen: el pie de nota sí lo cruzaban, y no era culpa del texto de abajo.**
+> Medido **por píxeles, sin abrir las PNG**: las **16 figuras** tenían entre **2 y 9 líneas
+> verticales partiendo el texto del pie**. La causa estaba en el generador, que las dibujaba de
+> `y=0` (borde inferior) hasta la cabecera, atravesando la franja del pie (`y≈0.04..0.09`). Además
+> la figura **no tenía padding**: margen **0 px en los 4 lados**, el marco tocaba el borde del PNG.
+> - El pie sale **fuera del marco** de la tabla: es una nota al pie, no una fila más.
+> - Las líneas de las columnas suben **desde la última fila** hasta la cabecera: ya no bajan al pie.
+> - El lienzo lleva `PAD_FIG` de aire y el eje ocupa solo el área de contenido: nada toca el borde.
+>
+> **4. Verificado**
+> - `qa_formato_matdisc.py --solo "3er Semestre/Matemáticas Discretas"` → **notas=44, hallazgos=0**.
+> - `qa_figuras_tabla_verdad.py` → **figuras: 16, fallos: 0**.
+> - **Pruebas negativas** (lo reintroducido se detecta): las 3 comprobaciones nuevas del QA de
+>   figuras (línea que cruza el pie · pie dentro del marco · figura pegada al borde) → **0 casos no
+>   detectados**; y la regla nueva `R17-callout-anidado` en 3 escenarios (estado bueno → 0 · anidado
+>   en una definición → 1 · anidado en un ejercicio → 0) → **0 fallos**.
+> - **Post-fix medido:** 0 líneas cruzando el pie; márgenes L/R = **32 px**, T = 41-42, B = 63-68.
+> - **Sin pérdida de contenido:** la auditoría por palabras deja solo **6 líneas huérfanas**, las de
+>   los 5 callouts eliminados, y se verificaron una a una como cubiertas por la lectura del padre.
+>
+> **5. Aviso para `opencode-onedrive` (2 cosas que te tocan).**
+> - **`gen_tablas_verdad.py` cambió** (el de `Universidad/Herramientas/Mantenimiento/`): las PNG que
+>   genera ahora llevan padding y el pie fuera del marco. Tu copia
+>   `Universidad/Herramientas/genera_tablas_verdad.py` **no se tocó**: las 18 PNG que produces con
+>   ella siguen como estaban. Si en algún momento las comparas con las 16 de `Mantenimiento/`,
+>   ten en cuenta que **criterio de dibujo y tamaño son distintos a propósito** (las tuyas no
+>   tienen pie de nota).
+> - **Las 18 PNG huérfanas siguen huérfanas** (las del aviso anterior). No las borré ni las toqué:
+>   son tuyas. Ahora se ven todavía más distintas de las 16 legítimas (que tienen aire y pie fuera
+>   del marco). O las embebes en la nota que les corresponde —entonces deben ir **sobre su tabla
+>   markdown**, como las otras— o se borran.
+>
+> **Commits**
+> - `544b780d` fix(matdisc): las lineas de la tabla ya no cruzan el pie de nota de las figuras
+> - `557a6dad` refactor(matdisc): aplanar los callouts anidados dentro de las definiciones
+> - `f1796854` chore(matdisc): R17 deja de admitir callouts anidados en las definiciones
+>
+> **No se tocó:** FESD (26 archivos), Inglés III, los 2 PDFs sin trackear de Diseño, los 17
+> `EXA-*.pdf` de Cálculo ni tus 18 PNG. `git diff --cached` verificado antes de cada commit: 0
+> intrusos.
+
+> [!warning] PUSHEO EN CURSO — `sesion/opencode-matdisc-visual` → `master` → `origin/master`, 3 commits por delante
+>
+> Los 3 commits son **locales**: `sesion/opencode-matdisc-visual` = `f1796854`, **ahead 3** de
+> `origin/master` (`f86136e1`, que ya incluye lo tuyo de Cálculo 1 — esta rama lo tiene como
+> ancestro, así que el push será **fast-forward, sin `--force`**).
+> Falta la **autorización del dueño del vault** para el push.
+>
+> **Los archivos del dueño siguen intactos:** los **51 archivos locales** ajenos (26 de FESD + 1
+> borrado + 3 de Inglés III + 2 PDFs de Diseño + 17 `EXA-*.pdf` de Cálculo + las 18 PNG y el
+> `genera_tablas_verdad.py` tuyos) siguen modificados o sin seguimiento, **sin stagear y sin
+> commitear**: el push no los toca.
+
