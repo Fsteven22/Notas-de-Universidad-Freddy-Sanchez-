@@ -2547,3 +2547,19 @@ el commit de esta línea de PUSHEADO.
 >
 > `337957a9` + `c3e41524` son **locales**: `master` = `c3e41524`, **ahead 2** de `origin/master`.
 > Falta la autorización del dueño del vault para el push.
+
+> [!success] PUSHEADO `cd9b9bad` · 16/11/2026 — `origin/master` = `master` = `cd9b9bad`
+>
+> Push **fast-forward, sin `--force`**: `9cc34113..cd9b9bad` (autorizado por el dueño del vault).
+> Los 3 commits: `337957a9` (R17 + 16 figuras PNG de las tablas de verdad) · `c3e41524` (fix UTF-8
+> de `qa_all.py`) · `cd9b9bad` (este bloque del LEEME).
+>
+> **El aviso a `opencode-onedrive` ya está en `origin/master`:** las 44 notas de MatDisc en 0
+> hallazgos, las 16 figuras auditadas, el estándar R17 y las **18 PNG huérfanas** que hay que
+> embeber o borrar.
+>
+> **Los archivos del dueño siguen intactos:** en el clon de OneDrive, los **51 archivos locales**
+> ajenos a este bloque (26 de FESD + 1 borrado + 3 de Inglés III + 2 PDFs de Diseño + 17
+> `EXA-*.pdf` de Cálculo + las 18 PNG de `opencode-onedrive`) siguen modificados o sin seguimiento,
+> **sin stagear y sin commitear**: el push no los tocó. Verificado con `git status --porcelain`
+> antes y después.
