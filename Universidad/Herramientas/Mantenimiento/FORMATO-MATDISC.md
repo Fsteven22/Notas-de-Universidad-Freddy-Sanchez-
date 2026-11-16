@@ -203,10 +203,22 @@ Todo callout cuyo título es una definición (`Definición`, `Definición N — 
 > **Se lee así:** una sola columna de entrada y una de salida: el valor de la derecha es el
 > contrario del de la izquierda, fila a fila.
 >
-> > [!example] 🟢 Ejemplo
-> > >
-> > Si $p$ es «llueve», entonces $\neg p$ es «no llueve».
+> **Ejemplo:** Si $p$ es «llueve», entonces $\neg p$ es «no llueve».
 ```
+
+**Dentro de una definición no hay callouts anidados.** La caja exterior ya dice «esto es una
+definición»; meterle dentro otra caja con icono y título (un `[!example]`, un `[!tip]`, un
+`[!warning]`…) compite con ella y se ve como **caja dentro de caja**: el lector no sabe si lo
+que ve es parte de la definición u otra cosa.
+
+- Si el contenido aporta, se **aplana a texto plano** conservando su rótulo:
+  `> **Observación:** el conjunto vacío no es lo mismo que el conjunto {0}.`
+- Si solo **repite** lo que ya dice la lectura, se **elimina**: sobra.
+- Las tablas markdown y las listas necesitan su línea en blanco (`>`) para renderizarse.
+
+> [!warning] ⚠️ Esto solo aplica a las definiciones
+> En los **ejercicios** el callout anidado sí significa algo: es la solución del enunciado
+> (`✏️ Ejercicio N` → `✅ Solución guiada`). Ese patrón se conserva intacto.
 
 **Qué exige R17 (lo comprueba `qa_formato_matdisc.py`):**
 
@@ -216,7 +228,8 @@ Todo callout cuyo título es una definición (`Definición`, `Definición N — 
 | 2 | Si hay fórmula (`**Fórmula:**` o `$$`), va **arriba**: es el primer contenido del bloque | `R17-formula-no-arriba` |
 | 3 | Toda **tabla de verdad** lleva su **figura PNG encima** (la tabla markdown queda debajo, como respaldo textual copiable) | `R17-tv-sin-figura` |
 | 4 | El bloque tiene **lectura** (`**Se lee así:**` u otra etiqueta de R14) | `R17-sin-lectura` |
-| 5 | El bloque tiene **ejemplo** (`**Ejemplo:**` o sub-callout `[!example]`) | `R17-sin-ejemplo` |
+| 5 | El bloque tiene **ejemplo** (`**Ejemplo:**`) | `R17-sin-ejemplo` |
+| 6 | El bloque **no tiene callouts anidados**: todo su contenido va en texto plano | `R17-callout-anidado` |
 
 **Quién es un callout de definición:** el título empieza por `Definición`/`Definiciones` (con o sin
 número) o por `Recordatorio: Definición`. **No** son definiciones los callouts de error

@@ -475,7 +475,10 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
     ETIQUETAS_EXPL = re.compile(
         r"\*\*(Se lee as[ií]|Por qu[eé] importa|Ejemplos?|Nota|C[uú]mo se lee|"
         r"Verificaci[oó]n|Analog[ií]a|Resumen|Para qu[eé] sirve|Qu[eé] notas|Pista|"
-        r"C[oó]mo se aplica|Lo queves|Truco)", re.I)
+        r"C[oó]mo se aplica|Lo queves|Truco|"
+        r"Observaci[oó]n(?: importante)?|Propiedad(?:es)?|Comparaci[oó]n|"
+        r"Intuici[oó]n|Convenci[oó]n|Relaci[oó]n|F[oó]rmula|Equivalente|"
+        r"En palabras|Corolario)", re.I)
 
     def ventana_expl(i, n, es_tv=False):
         """Lineas siguientes al embed, dentro del mismo callout.
@@ -614,6 +617,17 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
         if not any(RE_EJEMPLO.search(r) for r in cont):
             hallazgos.append((rel, b["inicio"] + 1, "R17-sin-ejemplo",
                               "definicion sin ejemplo: %r" % limpio[:40]))
+
+        # (R17-f) dentro de una definicion no hay callouts anidados: la caja
+        #         exterior ya dice 'esto es una definicion'; otra caja
+        #         dentro compite con ella y se ve como caja dentro de caja.
+        #         (En los ejercicios el anidado SI significa algo: es la
+        #         solucion del enunciado, y se conserva.)
+        for j, depth, rest in b["lineas"]:
+            if depth > b["depth"] and rest.strip().startswith("[!"):
+                hallazgos.append((rel, j + 1, "R17-callout-anidado",
+                                  "callout anidado dentro de la definicion: "
+                                  "%r" % rest.strip()[:40]))
 
 
 def fix_rutas(nota_path):
