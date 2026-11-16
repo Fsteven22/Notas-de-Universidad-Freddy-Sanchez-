@@ -1,0 +1,24 @@
+flowchart TD
+    A["Integral inmediata: integrar f de x"] --> B{"¿Forma del integrando?"}
+    B --> C["Potencia x a la n"]
+    B --> D["Recíproco 1 sobre x"]
+    B --> E["Exponencial a la x"]
+    B --> F["Trigonométrica"]
+    B --> G["Racional con radical"]
+    C --> C1["Si n distinto de -1: x a la n+1 sobre n+1"]
+    C --> C2["Si n igual a -1: logaritmo natural de valor absoluto"]
+    D --> D1["Logaritmo natural de valor absoluto de x"]
+    E --> E1["e a la x; o a a la x sobre logaritmo de a"]
+    F --> F1["Par directo: seno, coseno, sec al cuadrado, cosec al cuadrado"]
+    F --> F2["Producto: sec por tangente, cosec por cotangente"]
+    F --> F3["Cociente: tangente y cotangente dan logaritmos"]
+    G --> G1["Arcoseno o arco tangente segun el denominador"]
+    C1 --> H["Aplicar linealidad: sacar constantes y sumar"]
+    D1 --> H
+    E1 --> H
+    F1 --> H
+    F2 --> H
+    F3 --> H
+    G1 --> H
+    H --> I["Anadir la constante de integracion C"]
+    I --> J["Verificar derivando el resultado"]

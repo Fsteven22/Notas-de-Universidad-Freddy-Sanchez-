@@ -1,383 +1,359 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad6, constante-de-integracion, matematicas/calculo/constantes, integrales/indefinidas, ecuaciones/diferenciales, condiciones/iniciales, aplicaciones/fisica, teoria/fundamental, errores/comunes, metodos/estudio]
+tags: [MATG1045, unidad6, constante-integracion, familia-curvas, problemas-valor-inicial, condiciones-iniciales, ecuaciones-diferenciales, aplicaciones-fisica]
 ---
 
-# 🔑 Constante de Integración y su Significado
+# 🔑 Constante de Integración
 
-> [!info] 💡 **El Elemento Crucial**
->
-> La constante de integración es el factor que distingue entre una antiderivada particular y la familia completa de todas las antiderivadas posibles. Su comprensión es fundamental para el manejo correcto de integrales indefinidas y ecuaciones diferenciales.
+## 🎯 Introducción
 
-## 🎯 Definición y Origen
+> [!info] 💡 Qué es y por qué existe la $C$
+>
+> La **constante de integración** $C$ es el factor que distingue una antiderivada particular de la familia completa de todas las antiderivadas. Derivar elimina las constantes, por eso integrar debe devolverlas: $\int f(x)\,dx = F(x) + C$.
+>
+> **Por qué importa:** sin la $C$ solo obtienes una solución particular de infinitas, y en ecuaciones diferenciales eso significa perder soluciones válidas del problema físico.
+>
+> **Ejemplo:** $\int 2x\,dx = x^2$ está incompleto; $\int 2x\,dx = x^2 + C$ es la respuesta correcta: todas las parábolas cuya derivada es $2x$.
 
-### 📐 ¿Qué es la Constante de Integración?
+> [!warning] ⚠️ Los tres errores que más se repiten
+>
+> 1. **NO** omitas la $C$ en una integral indefinida: es la diferencia entre la general y la particular.
+> 2. **NO** la conserves después de sustituir límites: $(F(b)+C) - (F(a)+C) = F(b) - F(a)$, se cancela sola.
+> 3. **NO** escribas una $C$ por término: al sumar integrales, $C_1 + C_2$ se combina en **una sola** $C$.
+>
+> **Por qué importa:** los tres son errores de concepto, no de cálculo, y por eso sobreviven a la comprobación derivando.
 
-> [!tip] 🏆 **Definición**
->
-> La **constante de integración** $C$ es una constante arbitraria que se añade al resultado de una integral indefinida para representar todas las posibles antiderivadas de una función.
->
-> $$\int f(x) dx = F(x) + C$$
->
-> donde $F(x)$ es una antiderivada particular de $f(x)$.
+---
 
-### 🔍 ¿Por qué existe?
+## 📋 Definiciones Formales
 
-> [!warning] 🎯 **Razón Fundamental**
+> [!note] 📋 Definición — Constante de integración
 >
-> Si $F'(x) = f(x)$, entonces para cualquier constante $C$:
+> La **constante de integración** $C$ es una constante arbitraria que se añade al resultado de una integral indefinida para representar todas las posibles antiderivadas de una función:
 >
-> $$\frac{d}{dx}[F(x) + C] = F'(x) + 0 = f(x)$$
+> $$\int f(x)\,dx = F(x) + C,$$
 >
-> Por tanto, $F(x) + C$ también es antiderivada de $f(x)$.
-
-> [!info] 🖼️ ¿Por qué existe?
+> donde $F(x)$ es una antiderivada particular de $f(x)$. Existe porque si $F'(x) = f(x)$, entonces $\frac{d}{dx}[F(x) + C] = F'(x) + 0 = f(x)$ para cualquier $C$.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_01.svg]]
 >
 > **Se lee así:** como una cadena que arranca en una sola caja con la igualdad $\int f(x)\,dx = F(x) + C$, de la que salen dos flechas: una hacia la caja que identifica a $C$ como constante de integración de valores arbitrarios, y otra hacia el recuadro donde se deriva $F(x) + C$. Desde ahí el recorrido sigue hacia abajo y termina en la caja que recuerda que en una integral definida las constantes se cancelan.
 >
-> **Por qué importa:** Fíjate en que el diagrama encadena la definición, la demostración y la consecuencia en un solo recorrido. Te da la razón lógica de la $C$ (al derivarla da cero) y te evita el error de mantenerla en una integral definida, donde $[F(b)+C] - [F(a)+C]$ se simplifica a $F(b) - F(a)$.
+> **Por qué importa:** el diagrama encadena la definición, la demostración y la consecuencia en un solo recorrido. Te da la razón lógica de la $C$ (al derivarla da cero) y te evita el error de mantenerla en una integral definida, donde $[F(b)+C] - [F(a)+C]$ se simplifica a $F(b) - F(a)$.
 >
-> **Ejemplo:** En el problema de valor inicial de la nota, $\frac{dy}{dx} = 3x^2 - 2x$ con $y(1) = 5$, el diagrama marca que primero se integra con $C$ y luego la condición inicial la fija en $5$.
+> **Ejemplo:** en el problema de valor inicial de la nota, $\frac{dy}{dx} = 3x^2 - 2x$ con $y(1) = 5$, el diagrama marca que primero se integra con $C$ y luego la condición inicial la fija.
 
-## 🌊 Interpretación Geométrica
-
-### 📊 Familia de Curvas
-
-> [!info] 🎨 **Visualización Geométrica**
+> [!note] 📋 Condición inicial y solución particular
 >
-> La constante $C$ genera una **familia infinita de curvas paralelas**:
-> - Todas tienen la **misma forma**
-> - Están **desplazadas verticalmente** por la constante $C$
-> - Todas tienen la **misma pendiente** en cualquier punto $x$ dado
-
-#### 🧪 Ejemplo Visual
-
-> [!tip] 🔬 **Ejemplo**: $\int 2x dx = x^2 + C$
+> Para **fijar** el valor de $C$ hace falta información adicional: una condición inicial $y(x_0) = y_0$, una condición de frontera o una lectura física del problema. El procedimiento es:
 >
-> **Diferentes valores de $C$**:
-> - $C = 0$: $y = x^2$ (parábola estándar)
-> - $C = 2$: $y = x^2 + 2$ (desplazada 2 unidades hacia arriba)
-> - $C = -3$: $y = x^2 - 3$ (desplazada 3 unidades hacia abajo)
-> - $C = k$: $y = x^2 + k$ (desplazada $k$ unidades)
+> 1. Integrar para obtener la familia general $F(x) + C$.
+> 2. Sustituir la condición conocida.
+> 3. Despejar $C$ y reescribir la solución particular.
 >
-> **Observación**: Todas tienen pendiente $2x$ en cualquier punto $x$.
+> **Por qué importa:** la condición inicial es lo que convierte una familia infinita en la única función que modela el problema concreto; sin ella, el modelo admite infinitas respuestas.
+>
+> **Ejemplo:** con $\frac{dy}{dx} = 3x^2 - 2x$ y $y(1) = 5$: $y = x^3 - x^2 + C$, y $5 = 1 - 1 + C$ da $C = 5$, luego $y = x^3 - x^2 + 5$.
 
-> [!info] 🖼️ Familia de Curvas
+---
+
+## 🌐 Interpretación geométrica
+
+> [!info] 🖼️ La familia de curvas paralelas
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_02.svg]]
 >
 > **Se lee así:** como un rectángulo inicial con el ejemplo $\int 2x\,dx = x^2 + C$, del que salen cuatro flechas hacia casos particulares: $C = 0$, $C = 2$, $C = -3$ y $C = k$, cada uno con su desplazamiento vertical. Una quinta flecha lleva a la caja que dice que todas las curvas tienen la misma pendiente $2x$ en cualquier punto, y desde ahí una última flecha cierra con que la forma es idéntica y solo se desplazan.
 >
-> **Por qué importa:** Esta vista te quita la duda de si la $C$ cambia la forma de la curva: no, solo la sube o la baja. Te sirve para entender por qué la derivada de todas ellas coincide y por qué, con un punto dado, se puede escoger una sola.
+> **Por qué importa:** la vista quita la duda de si la $C$ cambia la forma de la curva: no, solo la sube o la baja. Explica por qué la derivada de todas ellas coincide y por qué, con un punto dado, se puede escoger una sola.
 >
-> **Ejemplo:** El caso de la nota con $C = 2$ y $C = -3$ te muestra las parábolas $y = x^2 + 2$ y $y = x^2 - 3$, que comparten la misma pendiente $2x$ en cada punto.
+> **Ejemplo:** con $C = 2$ y $C = -3$ se obtienen las parábolas $y = x^2 + 2$ y $y = x^2 - 3$, que comparten la pendiente $2x$ en cada punto.
 
-## 🔧 Determinación de la Constante
+> [!example] 📐 Lo que significa cada pieza en el plano
+>
+> - **Misma forma:** todas las curvas de la familia son congruentes.
+> - **Desplazamiento vertical:** $C$ las mueve arriba ($C > 0$), abajo ($C < 0$) o las deja donde están ($C = 0$).
+> - **Pendiente común:** en $x = a$ todas tienen pendiente $f(a)$, porque la derivada no "ve" la constante.
+>
+> **Por qué importa:** es la lectura geométrica que conecta con la Unidad 4: la primitiva recorre el campo de direcciones trazado por $f$, y $C$ elige qué curva de la familia lo sigue.
 
-### 🎯 Condiciones Iniciales
+---
 
-> [!tip] 🏆 **Método Principal**
->
-> Para determinar el valor específico de $C$, necesitamos **información adicional**, típicamente:
->
-> - **Condición inicial**: Un punto $(x_0, y_0)$ por el que pasa la curva
-> - **Condición de frontera**: Valor específico en algún punto
-> - **Condición física**: Interpretación del problema
+## 🔧 Determinación de la constante
 
-### 🧪 Ejemplos de Determinación
+> [!tip] 🔧 Problema de valor inicial en tres pasos
+>
+> 1. **Integrar:** obtener la familia general $F(x) + C$.
+> 2. **Aplicar la condición:** sustituir $x = x_0$ e igualar al valor dado.
+> 3. **Despejar:** hallar $C$ y escribir la solución particular.
+>
+> **Por qué importa:** es el formato exacto del examen; escribirlo en tres pasos con etiqueta evita perder puntos por saltos.
+>
+> **Ejemplo:** $\frac{dy}{dx} = e^x$ con $y(0) = 3$: familia $y = e^x + C$; $3 = e^0 + C = 1 + C$ da $C = 2$; solución $y = e^x + 2$ (verificando: $y(0) = 3$ ✓ y $y' = e^x$ ✓).
 
-#### 🔬 Ejemplo 1: Problema de Valor Inicial
+> [!example] 🚗 Interpretación física: aceleración y velocidad
+>
+> Un objeto tiene $a(t) = 6t$ m/s² y $v(0) = 10$ m/s.
+>
+> $$v(t) = \int 6t\,dt = 3t^2 + C, \qquad v(0) = 10 \Rightarrow C = 10, \qquad v(t) = 3t^2 + 10.$$
+>
+> **Por qué importa:** aquí $C$ no es un formalismo: **es la velocidad inicial**. Cada contexto le da un significado concreto.
 
-> [!tip] 📈 **Resolver**: $\frac{dy}{dx} = 3x^2 - 2x$ con $y(1) = 5$
+> [!example] 🎯 Integraciones sucesivas: dos constantes
 >
-> **Paso 1**: Integrar la ecuación diferencial
-> $$y = \int (3x^2 - 2x) dx = x^3 - x^2 + C$$
+> Si $\frac{d^2y}{dx^2} = 6$:
 >
-> **Paso 2**: Aplicar la condición inicial $y(1) = 5$
-> $$5 = 1^3 - 1^2 + C = 1 - 1 + C = C$$
+> $$\frac{dy}{dx} = \int 6\,dx = 6x + C_1, \qquad y = \int (6x + C_1)\,dx = 3x^2 + C_1 x + C_2.$$
 >
-> **Paso 3**: Solución particular
-> $$y = x^3 - x^2 + 5$$
+> $C_1$ se fija con la velocidad inicial y $C_2$ con la posición inicial.
 >
-> **Verificación**: $y(1) = 1 - 1 + 5 = 5$ ✓
+> **Por qué importa:** una EDO de orden $n$ aporta $n$ constantes, y por eso hacen falta $n$ condiciones para determinarlas todas.
 
-#### 🔬 Ejemplo 2: Interpretación Física
+---
 
-> [!tip] 🚗 **Problema**: Un objeto tiene aceleración $a(t) = 6t$ m/s². En $t = 0$ su velocidad es $v_0 = 10$ m/s.
->
-> **Paso 1**: Relación aceleración-velocidad
-> $$v(t) = \int a(t) dt = \int 6t dt = 3t^2 + C$$
->
-> **Paso 2**: Condición inicial $v(0) = 10$
-> $$10 = 3(0)^2 + C = C$$
->
-> **Paso 3**: Función velocidad específica
-> $$v(t) = 3t^2 + 10$$
->
-> **Interpretación física**: $C = 10$ representa la velocidad inicial.
+## 📊 La $C$ en distintos contextos
 
-## ⚠️ Importancia de No Olvidar la Constante
-
-### 🔴 Consecuencias de Omitir $C$
-
-> [!warning] 🚨 **Errores Graves**
->
-> #### Error 1: Pérdida de Generalidad
-> **Problema**: Sin $C$, solo obtenemos una antiderivada particular
-> **Ejemplo**: $\int 2x dx = x^2$ (incompleto) vs $\int 2x dx = x^2 + C$ (correcto)
->
-> #### Error 2: Ecuaciones Diferenciales Incorrectas
-> **Problema**: Las soluciones de EDOs requieren todas las constantes
-> **Consecuencia**: Perder soluciones válidas del problema físico
->
-> #### Error 3: Problemas de Continuidad
-> **Problema**: Al unir soluciones en diferentes intervalos
-> **Necesidad**: La constante permite ajustar continuidad
->
-
-### ✅ Verificación Sistemática
-
-> [!info] 📋 **Lista de Control**
->
-> 1. **¿Incluí la constante $C$?**
-> 2. **¿Es necesario determinar $C$ con condiciones adicionales?**
-> 3. **¿El resultado representa todas las soluciones posibles?**
-> 4. **¿La verificación por derivación funciona?**
-
-## 🎭 Casos Especiales y Variaciones
-
-### 🔢 Múltiples Constantes
-
-> [!tip] 🎯 **Integrales Sucesivas**
->
-> Cuando integramos múltiples veces, aparecen múltiples constantes:
->
-> $$\int \int f(x) dx dx = \int [F(x) + C_1] dx = G(x) + C_1 x + C_2$$
-
-#### 🧪 Ejemplo con Doble Integración
-
-> [!tip] 🔬 **Ejemplo**: Si $\frac{d^2y}{dx^2} = 6$
->
-> **Primera integración**:
-> $$\frac{dy}{dx} = \int 6 dx = 6x + C_1$$
->
-> **Segunda integración**:
-> $$y = \int (6x + C_1) dx = 3x^2 + C_1 x + C_2$$
->
-> **Interpretación**: 
-> - $C_1$ relacionada con la velocidad inicial
-> - $C_2$ relacionada con la posición inicial
-
-### 🌐 Constantes en Diferentes Contextos
-
-> [!info] 🔧 **Contextos Específicos**
+> [!info] 📋 Significado y determinación por contexto
 >
 > | Contexto | Significado de $C$ | Determinación |
-> |----------|-------------------|---------------|
-> | **Ecuaciones Diferenciales** | Condición inicial | $y(x_0) = y_0$ |
-> | **Física - Posición** | Posición inicial | $s(0) = s_0$ |
-> | **Física - Velocidad** | Velocidad inicial | $v(0) = v_0$ |
-> | **Economía** | Capital inicial | $K(0) = K_0$ |
-> | **Biología** | Población inicial | $P(0) = P_0$ |
+> |---|---|---|
+> | Ecuaciones diferenciales | familia de soluciones | condición inicial $y(x_0) = y_0$ |
+> | Física — posición | posición inicial | $s(0) = s_0$ |
+> | Física — velocidad | velocidad inicial | $v(0) = v_0$ |
+> | Circuitos — carga | carga inicial | $q(0) = q_0$ |
+> | Economía | capital inicial | $K(0) = K_0$ |
+> | Biología | población inicial | $P(0) = P_0$ |
 >
+> **Por qué importa:** la tabla convierte la $C$ de símbolo abstracto a dato con nombre; cuando el enunciado da una condición, ya sabes qué representa.
 
-## 🧮 Propiedades Algebraicas
+> [!example] ⚡ Circuitos: carga en un capacitor
+>
+> Si la corriente es $i(t) = 0.5e^{-t}$ A y $q(0) = 2$ C, con $i = \frac{dq}{dt}$:
+>
+> $$q(t) = \int 0.5e^{-t}\,dt = -0.5e^{-t} + C, \qquad 2 = -0.5 + C \Rightarrow C = 2.5,$$
+>
+> luego $q(t) = -0.5e^{-t} + 2.5$.
+>
+> **Por qué importa:** la carga inicial fija la constante igual que la velocidad en cinemática: mismo procedimiento, distinto nombre.
 
-### 🔄 Operaciones con Constantes
+---
 
-> [!tip] 📊 **Reglas de Manipulación**
->
-> #### Suma de Integrales
-> $$\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2 = F(x) + G(x) + C$$
-> donde $C = C_1 + C_2$ (nueva constante)
->
-> #### Múltiplo Escalar
-> $$k \int f(x) dx = k(F(x) + C_1) = kF(x) + kC_1 = kF(x) + C$$
-> donde $C = kC_1$ (nueva constante)
->
-> #### Combinación Lineal
-> $$a \int f(x) dx + b \int g(x) dx = aF(x) + bG(x) + C$$
-> donde $C$ absorbe todas las constantes particulares.
->
+## 🧮 Propiedades algebraicas
 
-### 🧪 Ejemplo de Simplificación
+> [!success] ✅ Una sola constante por expresión
+>
+> Al combinar integrales, las constantes particulares se absorben en una:
+>
+> $$\int f\,dx + \int g\,dx = F(x) + C_1 + G(x) + C_2 = F(x) + G(x) + C, \qquad C = C_1 + C_2.$$
+>
+> Y con múltiplos: $k\int f\,dx = kF(x) + kC_1 = kF(x) + C$, donde $C = kC_1$.
+>
+> **Por qué importa:** por eso se escribe **una sola** $C$ al final de una expresión integrada término a término, no una por término.
+>
+> **Ejemplo:** $3\int x\,dx - 2\int x^2\,dx + 5\int 1\,dx = \frac{3x^2}{2} - \frac{2x^3}{3} + 5x + C$ con $C = 3C_1 - 2C_2 + 5C_3$.
 
-> [!tip] 🔬 **Ejemplo**: Simplificar $3\int x dx - 2\int x^2 dx + 5\int 1 dx$
->
-> **Desarrollo completo**:
-> $$3\left(\frac{x^2}{2} + C_1\right) - 2\left(\frac{x^3}{3} + C_2\right) + 5(x + C_3)$$
->
-> $$= \frac{3x^2}{2} + 3C_1 - \frac{2x^3}{3} - 2C_2 + 5x + 5C_3$$
->
-> **Simplificación**:
-> $$= \frac{3x^2}{2} - \frac{2x^3}{3} + 5x + C$$
->
-> donde $C = 3C_1 - 2C_2 + 5C_3$ (constante combinada)
+---
 
-## 🎪 Aplicaciones Físicas Específicas
+## 🧠 Orden y constantes en ecuaciones diferenciales
 
-### 🚗 Cinemática
-
-> [!info] ⚡ **Secuencia de Integración**
->
-> **Aceleración → Velocidad → Posición**
->
-> $$a(t) \xrightarrow{\int} v(t) = \int a(t) dt + C_1 \xrightarrow{\int} s(t) = \int v(t) dt + C_2$$
-
-#### 🧪 Ejemplo Cinemático Completo
-
-> [!tip] 🔬 **Problema**: Objeto con $a(t) = -9.8$ m/s² (gravedad), $v(0) = 20$ m/s, $s(0) = 100$ m
->
-> **Paso 1**: Velocidad
-> $$v(t) = \int (-9.8) dt = -9.8t + C_1$$
->
-> Condición: $v(0) = 20 \Rightarrow C_1 = 20$
-> $$v(t) = -9.8t + 20$$
->
-> **Paso 2**: Posición
-> $$s(t) = \int (-9.8t + 20) dt = -4.9t^2 + 20t + C_2$$
->
-> Condición: $s(0) = 100 \Rightarrow C_2 = 100$
-> $$s(t) = -4.9t^2 + 20t + 100$$
-
-### 💡 Circuitos Eléctricos
-
-> [!tip] ⚡ **Ejemplo**: Carga en un capacitor
->
-> Si la corriente es $i(t) = 0.5e^{-t}$ A, encontrar la carga $q(t)$ sabiendo que $q(0) = 2$ C.
->
-> **Relación**: $i(t) = \frac{dq}{dt}$
->
-> **Integración**: $q(t) = \int 0.5e^{-t} dt = -0.5e^{-t} + C$
->
-> **Condición inicial**: $q(0) = 2 \Rightarrow 2 = -0.5 + C \Rightarrow C = 2.5$
->
-> **Solución**: $q(t) = -0.5e^{-t} + 2.5$
-
-## 🧠 Método de Estudio: "CLAVE"
-
-> [!tip] 🎓 **Mnemotecnia "CLAVE" para la Constante de Integración**
->
-> ### 🔤 C - Constante siempre presente
-> - Nunca omitir $+ C$ en integrales indefinidas
-> - Representa infinitas antiderivadas
-> - Es la diferencia entre general y particular
->
-> ### 🔤 L - Localizar información adicional
-> - ¿Hay condiciones iniciales?
-> - ¿Hay condiciones de frontera?
-> - ¿Hay información física del problema?
->
-> ### 🔤 A - Aplicar la condición
-> - Sustituir valores conocidos
-> - Resolver para $C$
-> - Verificar que sea consistente
->
-> ### 🔤 V - Verificar la solución
-> - Derivar para comprobar
-> - Verificar condiciones iniciales
-> - Comprobar que tenga sentido físico
->
-> ### 🔤 E - Expresar claramente
-> - Escribir la solución final
-> - Indicar el significado de $C$
-> - Especificar el dominio si es necesario
-
-### 🎯 Aplicación del Método CLAVE
-
-> [!info] 🔬 **Ejemplo con CLAVE**: Resolver $\frac{dy}{dx} = e^x$ con $y(0) = 3$
->
-> **C - Constante siempre presente**:
-> $$y = \int e^x dx = e^x + C$$
->
-> **L - Localizar información adicional**:
-> Tenemos la condición inicial $y(0) = 3$
->
-> **A - Aplicar la condición**:
-> $$3 = e^0 + C = 1 + C \Rightarrow C = 2$$
->
-> **V - Verificar la solución**:
-> - Derivada: $\frac{d}{dx}[e^x + 2] = e^x$ ✓
-> - Condición: $y(0) = e^0 + 2 = 3$ ✓
->
-> **E - Expresar claramente**:
-> $$y = e^x + 2$$
-> donde $C = 2$ representa el valor inicial de $y$ desplazado por la función exponencial base.
-
-## 🌟 Errores Conceptuales Profundos
-
-### 🔴 Malentendidos Comunes
-
-> [!warning] 🚨 **Conceptos Erróneos**
->
-> #### Error Conceptual 1: "La constante es opcional"
-> **Incorrecto**: Pensar que $C$ se puede omitir
-> **Realidad**: $C$ es esencial para la completitud matemática
->
-> #### Error Conceptual 2: "Todas las constantes son iguales"
-> **Problema**: $\int f(x) dx + \int g(x) dx = F(x) + C_1 + G(x) + C_2$
-> **Corrección**: Se combinan en una sola $C = C_1 + C_2$
->
-> #### Error Conceptual 3: "La constante es siempre positiva"
-> **Realidad**: $C$ puede ser cualquier número real (positivo, negativo, cero)
->
-> #### Error Conceptual 4: "Una vez determinada, $C$ no cambia"
-> **Matiz**: En un problema específico $C$ es fija, pero cada problema puede tener diferente $C$
->
-
-## 🌐 Conexiones Avanzadas
-
-### 🔧 Teoría de Ecuaciones Diferenciales
-
-> [!info] 🎯 **Orden y Constantes**
->
-> - **EDO de orden 1**: Una constante $C$
-> - **EDO de orden 2**: Dos constantes $C_1, C_2$  
-> - **EDO de orden $n$**: $n$ constantes $C_1, C_2, \ldots, C_n$
-
-### 🌊 Análisis Funcional
-
-> [!warning] 🎓 **Concepto Avanzado**
->
-> La constante de integración está relacionada con el **espacio nulo** del operador derivada:
->
-> $$\ker(D) = \{f : Df = 0\} = \{\text{funciones constantes}\}$$
-
-> [!info] 🖼️ Análisis Funcional
+> [!info] 🖼️ El orden de la EDO decide el número de constantes
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Constante_de_integración_03.svg]]
 >
 > **Se lee así:** como una caja central sobre la $C$ en ecuaciones diferenciales de la que salen cinco flechas. Tres de ellas llevan a los casos de orden 1, 2 y $n$, con una, dos y $n$ constantes respectivamente; las otras dos van a la lectura de análisis funcional, que identifica el núcleo del operador derivada con las funciones constantes, y al recordatorio de que el valor particular de $C$ se fija con una condición inicial.
 >
-> **Por qué importa:** Fíjate en que el orden de la EDO y el número de constantes son el mismo dato. Esto te conecta lo que estás calculando con la solución de ecuaciones diferenciales y evita que trates la $C$ como un número decorativo en lugar de un parámetro que describe una familia de soluciones.
+> **Por qué importa:** el orden de la EDO y el número de constantes son el mismo dato. Conecta lo que estás calculando con la solución de ecuaciones diferenciales y evita tratar la $C$ como un número decorativo en lugar de un parámetro que describe una familia de soluciones.
 >
-> **Ejemplo:** El doble caso de la nota, $\frac{d^2y}{dx^2} = 6$, da $y = 3x^2 + C_1 x + C_2$, con $C_1$ ligada a la velocidad inicial y $C_2$ a la posición inicial.
+> **Ejemplo:** el doble caso de la nota, $\frac{d^2y}{dx^2} = 6$, da $y = 3x^2 + C_1 x + C_2$, con $C_1$ ligada a la velocidad inicial y $C_2$ a la posición inicial.
+
+> [!note] 📋 Núcleo del operador derivada (lectura avanzada)
+>
+> En análisis funcional, la constante de integración es el **espacio nulo** del operador derivada:
+>
+> $$\ker(D) = \{f : Df = 0\} = \{\text{funciones constantes}\}.$$
+>
+> **Por qué importa:** explica *por qué exactamente* una y solo una dimensión de indeterminación aparece al integrar una vez: el núcleo de $D$ tiene dimensión 1. Integrar dos veces lo duplica, y así sucesivamente.
 
 ---
 
->[!quote] ## 📚 Referencias y Conexiones
->
->
-> ### 🔗 Notas Relacionadas
-> - Teorema Fundamental del Cálculo para Integrales Indefinidas - Base teórica
-> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas).md|01 - Antiderivadas (Primitivas).md]] - Tabla de fórmulas con constantes
-> - [[01 – Área de una superficie#Técnicas de Integración|Técnicas de Integración]] - Manejo de constantes en métodos avanzados
-> - Ecuaciones Diferenciales Básicas - Aplicación principal
-> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas).md#Problemas de Valor Inicial|Problemas de Valor Inicial]] - Determinación práctica de constantes
->
-> ### 📖 Para Profundizar
-> - Espacios Vectoriales de Funciones - Fundamento teórico avanzado
-> - Condiciones de Frontera - Otros métodos de determinación
-> - Unicidad de Soluciones - Teoremas de existencia y unicidad
-> - [[1er Semestre/Física Mecánica/05 - Equilibrio y Elasticidad/Aplicaciones de Equilibrio/Problemas de Estabilidad.md]] - Comportamiento de soluciones
->
-> ### 🎯 Aplicaciones Especializadas
-> - Mecánica Clásica - Leyes de Newton y movimiento
-> - Circuitos RLC - Análisis de corriente y voltaje
-> - Modelos de Crecimiento - Poblaciones y economía
-> - [[08 – Teorema espectral#Sistemas Dinámicos|Sistemas Dinámicos]] - Evolución temporal
->
+## ⚠️ Errores comunes
 
-**Tags:** #MATG1045 #unidad6 #constante-de-integracion #matematicas/calculo/constantes #integrales/indefinidas #ecuaciones/diferenciales #condiciones/iniciales #aplicaciones/fisica #teoria/fundamental #errores/comunes #metodos/estudio
+> [!warning] 🚨 Los cinco malentendidos clásicos
+>
+> 1. **"La constante es opcional":** no lo es; sin ella la respuesta es incompleta.
+> 2. **"Todas las constantes son iguales":** $C_1 + C_2$ se combinan en una sola $C$ nueva.
+> 3. **"La constante es siempre positiva":** $C \in \mathbb{R}$, puede ser negativa o cero.
+> 4. **"Una vez determinada no cambia":** en un problema es fija, pero cada problema tiene la suya.
+> 5. **"Se mantiene en la integral definida":** se cancela en la evaluación.
+>
+> **Por qué importa:** los cinco son de concepto y se detectan con una pregunta: *¿estoy devolviendo una familia o un número?*
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
+>
+> Escribe la antiderivada general de $f(x) = 6x^2 - 4x + 3$ e intégrala dos veces para ver dónde aparecen las constantes.
+>
+> > [!success]- ✅ Solución
+> > 
+> > Primera integración:
+> > 
+> > $$\int (6x^2 - 4x + 3)\,dx = 2x^3 - 2x^2 + 3x + C_1.$$
+> > 
+> > Segunda integración (aplicando la fórmula a cada término):
+> > 
+> > $$\int (2x^3 - 2x^2 + 3x + C_1)\,dx = \frac{x^4}{2} - \frac{2x^3}{3} + \frac{3x^2}{2} + C_1 x + C_2.$$
+> > 
+> > **Respuesta:** $2x^3 - 2x^2 + 3x + C_1$ y $\frac{x^4}{2} - \frac{2x^3}{3} + \frac{3x^2}{2} + C_1x + C_2$: dos integraciones, dos constantes.
+
+> [!example] 📋 Planteamiento
+>
+> Resuelve el problema de valor inicial: $\frac{dy}{dx} = 3x^2 - 2x$ con $y(1) = 5$.
+>
+> > [!success]- ✅ Solución
+> > 
+> > **Paso 1 (integrar):** $y = \int (3x^2 - 2x)\,dx = x^3 - x^2 + C$.
+> > 
+> > **Paso 2 (condición):** $y(1) = 1 - 1 + C = C = 5$.
+> > 
+> > **Paso 3 (solución):** $y = x^3 - x^2 + 5$.
+> > 
+> > **Respuesta:** $y = x^3 - x^2 + 5$.
+> > 
+> > Verificación: $y(1) = 1 - 1 + 5 = 5$ ✓ y $y' = 3x^2 - 2x$ ✓
+
+> [!example] 📋 Planteamiento
+>
+> Un móvil tiene aceleración $a(t) = -9.8$ m/s², con $v(0) = 20$ m/s y $s(0) = 100$ m. Encuentra $v(t)$ y $s(t)$.
+>
+> > [!success]- ✅ Solución
+> > 
+> > **Velocidad:** $v(t) = \int (-9.8)\,dt = -9.8t + C_1$; con $v(0) = 20$ se obtiene $C_1 = 20$, luego $v(t) = -9.8t + 20$.
+> > 
+> > **Posición:** $s(t) = \int (-9.8t + 20)\,dt = -4.9t^2 + 20t + C_2$; con $s(0) = 100$ se obtiene $C_2 = 100$.
+> > 
+> > **Respuesta:** $v(t) = -9.8t + 20$ m/s y $s(t) = -4.9t^2 + 20t + 100$ m.
+> > 
+> > Cada condición fija una constante distinta, en el orden en que aparecen.
+
+> [!example] 📋 Planteamiento
+>
+> Simplifica $3\int x\,dx - 2\int x^2\,dx + 5\int 1\,dx$ en una sola expresión.
+>
+> > [!success]- ✅ Solución
+> > 
+> > Integrando por separado:
+> > 
+> > $$3\left(\frac{x^2}{2} + C_1\right) - 2\left(\frac{x^3}{3} + C_2\right) + 5(x + C_3) = \frac{3x^2}{2} - \frac{2x^3}{3} + 5x + (3C_1 - 2C_2 + 5C_3).$$
+> > 
+> > **Respuesta:** $\dfrac{3x^2}{2} - \dfrac{2x^3}{3} + 5x + C$ con $C = 3C_1 - 2C_2 + 5C_3$, una sola constante.
+
+> [!example] 📋 Planteamiento
+>
+> Justifica por qué $\int_1^4 2x\,dx$ no lleva $+C$, aunque su antiderivada sí la tenga.
+>
+> > [!success]- ✅ Solución
+> > 
+> > La antiderivada general es $F(x) + C$. Al evaluar en los límites:
+> > 
+> > $$[F(x) + C]_1^4 = (F(4) + C) - (F(1) + C) = F(4) - F(1),$$
+> > 
+> > porque $C - C = 0$.
+> > 
+> > **Respuesta:** $\int_1^4 2x\,dx = 16 - 1 = 15$; la $C$ se cancela sola, así que la integral definida es un número.
+
+> [!example] 📋 Planteamiento
+>
+> Encuentra la carga $q(t)$ si la corriente es $i(t) = 0.5e^{-t}$ A y $q(0) = 2$ C.
+>
+> > [!success]- ✅ Solución
+> > 
+> > Como $i = \frac{dq}{dt}$:
+> > 
+> > $$q(t) = \int 0.5e^{-t}\,dt = -0.5e^{-t} + C.$$
+> > 
+> > Condición inicial: $2 = -0.5e^{0} + C = -0.5 + C$, de donde $C = 2.5$.
+> > 
+> > **Respuesta:** $q(t) = -0.5e^{-t} + 2.5$ coulombs.
+> > 
+> > Verificación: $q'(t) = 0.5e^{-t} = i(t)$ ✓ y $q(0) = -0.5 + 2.5 = 2$ ✓
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Explico por qué existe la constante de integración (la derivada anula las constantes).
+> - [ ] Escribo siempre la familia completa $F(x) + C$ en una integral indefinida.
+> - [ ] Interpreto geométricamente la $C$ como desplazamiento vertical de una familia de curvas.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Resuelvo problemas de valor inicial en tres pasos con la condición dada.
+> - [ ] Combino varias integrales en una sola expresión con una única $C$.
+> - [ ] Traduzco cada contexto (velocidad, carga, población) a su condición inicial correspondiente.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Resuelvo integraciones sucesivas distinguiendo $C_1$, $C_2$ y su significado físico.
+> - [ ] Relaciono el orden de una EDO con el número de constantes y de condiciones necesarias.
+> - [ ] Explico la $C$ como el núcleo del operador derivada en el lenguaje de análisis funcional.
+
+---
+
+## 📚 Referencias
+
+> [!quote] 📖 Fuentes y material de la casa
+>
+> - J. Stewart, *Cálculo* (Cengage), cap. 4: problemas de valor inicial.
+> - R. Larson, *Cálculo* (Cengage), cap. 5: la constante de integración.
+> - G. Strang, *Calculus* (Wellesley-Cambridge), cap. 5: familias de curvas.
+> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas)|01 - Antiderivadas (Primitivas)]] — la notación que aquí se completa con la $C$.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la segunda parte, donde la $C$ se cancela.
+> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas)|04 - Integrales Notables (Fórmulas Directas)]] — la tabla a la que siempre se le añade $+C$.
+
+---
+
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u6
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Por qué existe la constante de integración?::Porque derivar anula las constantes: $\frac{d}{dx}(F+C) = f$ para cualquier $C$, así que la integral devuelve una familia entera.
+> - ¿Qué representa geométricamente la $C$?::Un desplazamiento vertical: todas las curvas de la familia tienen la misma forma y la misma pendiente en cada punto.
+> - ¿Cómo fijo el valor de $C$?::Con una condición inicial: se integra, se sustituye $y(x_0) = y_0$ y se despeja $C$.
+> - ¿Se conserva la $C$ en una integral definida?::No: $(F(b)+C) - (F(a)+C) = F(b) - F(a)$, se cancela en la evaluación.
+> - ¿Cuántas constantes aporta una EDO de orden $n$?::$n$ constantes ($C_1, \ldots, C_n$), y por eso hacen falta $n$ condiciones iniciales.
+> - ¿Cuántas $C$ se escriben al integrar varios términos?::Una sola: las constantes particulares se combinan ($C = C_1 + C_2 + \ldots$).
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas)|01 - Antiderivadas (Primitivas)]] — de donde sale la familia $F(x) + C$.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral|02 - Propiedades de la Integral]] — el problema de valor inicial visto desde las propiedades.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la regla de Barrow, donde la $C$ se cancela.
+> - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas)|04 - Integrales Notables (Fórmulas Directas)]] — la tabla de fórmulas, siempre con $+C$.
+> - [[1er Semestre/Física Mecánica/01 - Cinemática/Cinemática Traslacional|Cinemática Traslacional]] — donde las condiciones iniciales fijan constantes con nombre propio (velocidad y posición iniciales).
+> - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada|02 - Interpretación Geométrica de la Derivada]] — el análogo de las derivadas: allí hace falta un punto, aquí una condición inicial.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero los ejercicios 2 y 4: valor inicial y constantes combinadas, los dos casos mínimos.
+> - Después salta al 3 y al 6, donde cada condición fija una constante con nombre (velocidad, carga).
+> - Cuando lo tengas, ataca el 1 (integraciones sucesivas), que prepara las EDO de segundo orden.
+> - Cierra con [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|Teorema Fundamental del Cálculo]], donde verás por qué la $C$ desaparece al evaluar límites.
+
+---
+
+**Tags:** #MATG1045 #unidad6 #constante-integracion #familia-curvas #problemas-valor-inicial #condiciones-iniciales #ecuaciones-diferenciales #aplicaciones-fisica
