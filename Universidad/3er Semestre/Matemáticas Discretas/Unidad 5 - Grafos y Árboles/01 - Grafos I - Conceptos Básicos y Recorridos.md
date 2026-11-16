@@ -176,7 +176,7 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > 
 > **Ejemplo:** si una ruta tiene aristas de pesos $2$ y $3$, su longitud ponderada es $2+3=5$.
 > 
-> > [!warning] ⚠️ Longitud en grafos ponderados En un grafo ponderado, la **longitud** de una ruta es la **suma de los pesos** de las aristas en la ruta — no el número de aristas.
+> **⚠️ Longitud en grafos ponderados:** En un grafo ponderado, la **longitud** de una ruta es la **suma de los pesos** de las aristas en la ruta — no el número de aristas.
 
 > [!note] 📋 Definición 9 — Grafo bipartito completo $K_{m,n}$
 > 
@@ -186,7 +186,7 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > 
 > **Ejemplo:** $K_{2,4}$ tiene $2$ vértices en un conjunto, $4$ en el otro y $2\times4=8$ aristas.
 > 
-> > [!warning] ⚠️ Cuidado con la confusión Un grafo bipartito completo **no necesariamente** es un grafo completo. $K_{2,4}$ tiene $2 \times 4 = 8$ aristas, mientras que un grafo completo con $6$ vértices ($K_6$) tendría $\binom{6}{2}=15$.
+> **⚠️ Cuidado con la confusión:** Un grafo bipartito completo **no necesariamente** es un grafo completo. $K_{2,4}$ tiene $2 \times 4 = 8$ aristas, mientras que un grafo completo con $6$ vértices ($K_6$) tendría $\binom{6}{2}=15$.
 
 ---
 

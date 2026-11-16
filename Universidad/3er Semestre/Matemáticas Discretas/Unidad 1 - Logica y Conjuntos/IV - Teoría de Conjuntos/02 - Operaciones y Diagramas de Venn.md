@@ -34,23 +34,17 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 >
 > $$A \cup B = \{x : x \in A \lor x \in B\}$$
 >
-> **Ejemplo:**
+> **Ejemplo:** $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
-> >
-> > $A \cup B = \{1, 2, 3, 4, 5\}$
+> $A \cup B = \{1, 2, 3, 4, 5\}$
 >
-> > [!tip]- 💡 Unión disjunta
-> >
-> > Si $A \cap B = \emptyset$, decimos que $A$ y $B$ son **disjuntos**. En ese caso, la unión se llama **unión disjunta** y se cumple que:
-> >
-> > $$|A \cup B| = |A| + |B|$$
-> >
-> > En general (cuando pueden tener elementos comunes):
-> >
-> > $$|A \cup B| = |A| + |B| - |A \cap B|$$
+> **Unión disjunta:** Si $A \cap B = \emptyset$, decimos que $A$ y $B$ son **disjuntos**. En ese caso, la unión se llama **unión disjunta** y se cumple que:
+>
+> $$|A \cup B| = |A| + |B|$$
+>
+> En general (cuando pueden tener elementos comunes):
+>
+> $$|A \cup B| = |A| + |B| - |A \cap B|$$
 
 ---
 
@@ -62,19 +56,13 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 >
 > $$A \cap B = \{x : x \in A \land x \in B\}$$
 >
-> **Ejemplo:**
+> **Ejemplo:** $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > $A = \{1, 2, 3\}$, $B = \{3, 4, 5\}$
-> >
-> > $A \cap B = \{3\}$
+> $A \cap B = \{3\}$
 >
 > Si $A \cap B = \emptyset$, los conjuntos son **disjuntos por pares**.
 >
-> > [!tip]- 💡 Colección disjunta por pares
-> >
-> > Diremos que una colección $S$ de conjuntos es **disjunta por pares** si para cualquier par de conjuntos distintos $A, B \in S$, se cumple que $A \cap B = \emptyset$.
+> **Colección disjunta por pares:** Diremos que una colección $S$ de conjuntos es **disjunta por pares** si para cualquier par de conjuntos distintos $A, B \in S$, se cumple que $A \cap B = \emptyset$.
 
 ---
 
@@ -86,23 +74,17 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 >
 > $$A - B = \{x : x \in A \land x \notin B\}$$
 >
-> **Ejemplo:**
+> **Ejemplo:** $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$
-> >
-> > $A - B = \{1, 2\}$
-> >
-> > $B - A = \{5\}$
+> $A - B = \{1, 2\}$
 >
-> > [!tip]- 💡 Ley de diferencia
-> >
-> > $$A - B = A \cap B^c$$
-> >
-> > Esto es, la diferencia $A - B$ equivale a la intersección de $A$ con el complemento de $B$.
-> >
-> > Nótese que en general $A - B \neq B - A$.
+> $B - A = \{5\}$
+>
+> **Ley de diferencia:** $$A - B = A \cap B^c$$
+>
+> Esto es, la diferencia $A - B$ equivale a la intersección de $A$ con el complemento de $B$.
+>
+> Nótese que en general $A - B \neq B - A$.
 
 ---
 
@@ -114,17 +96,11 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 >
 > $$A^c = \{x \in U : x \notin A\} = U - A$$
 >
-> **Ejemplo:**
+> **Ejemplo:** $U = \{1, 2, 3, 4, 5\}$, $A = \{1, 3, 5\}$
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > $U = \{1, 2, 3, 4, 5\}$, $A = \{1, 3, 5\}$
-> >
-> > $A^c = \{2, 4\}$
+> $A^c = \{2, 4\}$
 >
-> > [!tip]- 💡 Observación
-> >
-> > El [[03 - Leyes de Conjuntos|complemento de un conjunto]] **depende del universo** $U$ con el que se trabaje. Si $U$ cambia, $A^c$ también cambia.
+> **Observación:** El [[03 - Leyes de Conjuntos|complemento de un conjunto]] **depende del universo** $U$ con el que se trabaje. Si $U$ cambia, $A^c$ también cambia.
 
 ---
 
@@ -146,21 +122,15 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 >
 > $$A \times B = \{(a, b) : a \in A \land b \in B\}$$
 >
-> **Ejemplo:**
+> **Ejemplo:** $A = \{1, 2\}$, $B = \{a, b, c\}$
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > $A = \{1, 2\}$, $B = \{a, b, c\}$
-> >
-> > $A \times B = \{(1,a),\ (1,b),\ (1,c),\ (2,a),\ (2,b),\ (2,c)\}$
-> >
-> > $|A \times B| = |A| \cdot |B| = 2 \cdot 3 = 6$
+> $A \times B = \{(1,a),\ (1,b),\ (1,c),\ (2,a),\ (2,b),\ (2,c)\}$
 >
-> > [!tip]- 💡 Cardinal del producto cartesiano
-> >
-> > $$|A \times B| = |A| \cdot |B|$$
-> >
-> > En general, $A \times B \neq B \times A$ a menos que $A = B$.
+> $|A \times B| = |A| \cdot |B| = 2 \cdot 3 = 6$
+>
+> **Cardinal del producto cartesiano:** $$|A \times B| = |A| \cdot |B|$$
+>
+> En general, $A \times B \neq B \times A$ a menos que $A = B$.
 
 ---
 

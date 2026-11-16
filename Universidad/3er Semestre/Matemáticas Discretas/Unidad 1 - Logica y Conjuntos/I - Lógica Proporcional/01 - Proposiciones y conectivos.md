@@ -145,10 +145,6 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 >
 > **Se lee así:** $p \vee q$ es verdadera cuando al menos una de las dos proposiciones es verdadera; solo es falsa si ambas son falsas.
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > La disyunción es **falsa solo cuando ambas proposiciones son falsas**; en cualquier otro caso es verdadera.
->
 > **Ejemplo:** Si $p$ es «llueve» (verdadera) y $q$ es «hace frío» (falsa), $p \vee q$ es verdadera.
 
 ---
@@ -172,10 +168,6 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 >
 > **Se lee así:** $p \wedge q$ exige que ambas proposiciones sean verdaderas; basta que una sea falsa para que la conjunción sea falsa.
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > La conjunción es **verdadera solo cuando ambas proposiciones son verdaderas**; en cualquier otro caso es falsa.
->
 > **Ejemplo:** Si $p$ es «estudio» (verdadera) y $q$ es «apruebo» (falsa), $p \wedge q$ es falsa.
 
 ---
@@ -198,10 +190,6 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > |F|F|F|
 >
 > **Se lee así:** $p \veebar q$ exige exactamente una verdad: es falsa si $p$ y $q$ son ambas verdaderas o ambas falsas.
->
-> > [!example] 🟢 Ejemplo
-> >
-> > La disyunción exclusiva es **verdadera solo cuando $p$ y $q$ tienen valores lógicos distintos**.
 >
 > **Ejemplo:**
 > 
@@ -232,12 +220,7 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 >
 > - $q$ es la **conclusión** (consecuente)
 >
-> **Se lee así:** $p \rightarrow q$ solo es falsa cuando $p$ es verdadera y $q$ es falsa; si $p$ es falsa, el condicional es verdadero por omisión.
->
-> > [!example] 🟢 Ejemplo
-> >
-> > El condicional es **falso solo cuando el antecedente es verdadero y el consecuente es falso**.  
-> > Cuando el antecedente es falso, el condicional es **verdadero por omisión** (superficialmente verdadero).
+> **Se lee así:** $p \rightarrow q$ solo es falsa cuando $p$ es verdadera y $q$ es falsa; si $p$ es falsa, el condicional es verdadero por omisión (superficialmente verdadero).
 >
 > **Ejemplo:** Si $p$ es «llueve» (verdadera) y $q$ es «salgo con paraguas» (falsa), $p \rightarrow q$ es falsa.
 
@@ -295,10 +278,6 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > |F|F|**V**|
 >
 > **Se lee así:** $p \leftrightarrow q$ afirma que $p$ y $q$ tienen el mismo valor lógico: ambas verdaderas o ambas falsas.
->
-> > [!example] 🟢 Ejemplo
-> >
-> > El bicondicional es **verdadero cuando $p$ y $q$ tienen el mismo valor lógico**.
 >
 > **Ejemplo:** Si $p$ es «2 + 2 = 4» y $q$ es «2 × 2 = 4», ambas son verdaderas y $p \leftrightarrow q$ es verdadera.
 

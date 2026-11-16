@@ -111,9 +111,7 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 >
 > $$g \circ f(x) = g(f(x)), \quad \forall x \in X$$
 > 
-> > [!warning]- ⚠️ La composición NO es conmutativa
-> > 
-> > En general, g ∘ f ≠ f ∘ g.
+> **⚠️ La composición NO es conmutativa:** En general, g ∘ f ≠ f ∘ g.
 >
 > **Se lee así:** primero se aplica $f$ y al resultado se le aplica $g$; por eso se lee de derecha a izquierda.
 >
@@ -131,11 +129,9 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 >
 > Si f es invertible, entonces g es **única**. La llamaremos la **inversa** de f, denotada f⁻¹.
 >
-> >[!abstract] 📐 Teorema 1 — Invertible ⟺ Biyectiva
-> >
-> >Sea f : X → Y una función. Entonces:
-> >
-> >$$f \text{ es invertible} \iff f \text{ es biyectiva}$$
+> **Teorema 1 — Invertible ⟺ Biyectiva:** Sea f : X → Y una función. Entonces:
+>
+> $$f \text{ es invertible} \iff f \text{ es biyectiva}$$
 >
 > **Se lee así:** una función es invertible cuando puede deshacer su propio efecto en ambos sentidos; esa función inversa es única.
 >

@@ -73,15 +73,13 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 >
 > $$\emptyset = \{\} \qquad |\emptyset| = 0$$
 >
-> > [!tip]- 💡 Observación importante
-> >
-> > El conjunto vacío $\emptyset$ **no es lo mismo** que el conjunto {0}. El primero no tiene elementos; el segundo tiene exactamente un elemento (el cero).
-> >
-> > | Conjunto | Cardinal |
-> > |---|---|
-> > | $\emptyset$ | 0 |
-> > | {0} | 1 |
-> > | {$\emptyset$} | 1 |
+> **Observación importante:** El conjunto vacío $\emptyset$ **no es lo mismo** que el conjunto {0}. El primero no tiene elementos; el segundo tiene exactamente un elemento (el cero).
+>
+> | Conjunto | Cardinal |
+> |---|---|
+> | $\emptyset$ | 0 |
+> | {0} | 1 |
+> | {$\emptyset$} | 1 |
 
 ---
 
@@ -115,9 +113,7 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 >
 > Sea A = {1, 2, 3} y B = {3, 1, 2}. Como tienen los mismos elementos (sin importar el orden), A = B. ✅
 >
-> > [!tip]- 💡 Observación
-> >
-> > La igualdad de conjuntos es una **[[03 - Propiedades y Equivalencia|relación de equivalencia]]** — es reflexiva, simétrica y transitiva.
+> **Observación:** La igualdad de conjuntos es una **[[03 - Propiedades y Equivalencia|relación de equivalencia]]** — es reflexiva, simétrica y transitiva.
 
 ---
 
@@ -151,16 +147,14 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 >
 > ### Propiedades de los subconjuntos
 >
-> > [!tip]- 💡 Propiedades fundamentales
-> >
-> > Para cualquier conjunto X:
-> >
-> > - ∅ ⊆ X — el conjunto vacío es subconjunto de cualquier conjunto.
-> > - X ⊆ X — todo conjunto es subconjunto de sí mismo.
-> >
-> > **Demostración de ∅ ⊆ X:**
-> >
-> > Supongamos por absurdo que ∅ ⊄ X. Entonces existe x ∈ ∅ tal que x ∉ X. Pero ∅ no tiene elementos, lo cual es una contradicción. $\blacksquare$
+> **Propiedades fundamentales:** Para cualquier conjunto X:
+>
+> - ∅ ⊆ X — el conjunto vacío es subconjunto de cualquier conjunto.
+> - X ⊆ X — todo conjunto es subconjunto de sí mismo.
+>
+> **Demostración de ∅ ⊆ X:**
+>
+> Supongamos por absurdo que ∅ ⊄ X. Entonces existe x ∈ ∅ tal que x ∉ X. Pero ∅ no tiene elementos, lo cual es una contradicción. $\blacksquare$
 
 ---
 
@@ -180,17 +174,15 @@ tags: [matematicas-discretas, conjuntos, cardinalidad, subconjuntos, conjunto-po
 >
 > $$|\mathcal{P}(A)| = 8 = 2^3$$
 >
-> > [!tip]- 💡 Fórmula del cardinal del conjunto potencia
-> >
-> > Si |A| = n, entonces |P(A)| = 2^n.
-> >
-> > | \|A\| | \|P(A)\| |
-> > |---|---|
-> > | 0 | 2^0 = 1 |
-> > | 1 | 2^1 = 2 |
-> > | 2 | 2^2 = 4 |
-> > | 3 | 2^3 = 8 |
-> > | n | 2^n |
+> **Fórmula del cardinal del conjunto potencia:** Si |A| = n, entonces |P(A)| = 2^n.
+>
+> | \|A\| | \|P(A)\| |
+> |---|---|
+> | 0 | 2^0 = 1 |
+> | 1 | 2^1 = 2 |
+> | 2 | 2^2 = 4 |
+> | 3 | 2^3 = 8 |
+> | n | 2^n |
 
 ---
 

@@ -32,9 +32,7 @@ tags: [matematicas-discretas, grafos, arboles, arbol-expansion, algoritmo-prim, 
 > 
 > **Ejemplo:** un árbol con $n=7$ vértices tiene $7-1=6$ aristas, y el árbol del Ejemplo 1 conecta sus vértices $v_1,\ldots,v_7$ sin ciclos.
 > 
-> > [!tip]- 💡 Convención de dibujo
-> > 
-> > Al contrario de los árboles naturales (cuyas raíces están abajo), en teoría de grafos los árboles con raíz suelen dibujarse con la raíz **hacia arriba**.
+> **Convención de dibujo:** Al contrario de los árboles naturales (cuyas raíces están abajo), en teoría de grafos los árboles con raíz suelen dibujarse con la raíz **hacia arriba**.
 
 > [!example] 📝 Ejemplo 1 — Árbol libre vs. árbol con raíz
 > 

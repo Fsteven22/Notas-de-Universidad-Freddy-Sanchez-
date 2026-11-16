@@ -33,14 +33,14 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > - R es una **relación de orden (parcial)** sobre X si R es **reflexiva, antisimétrica y transitiva**.
 > - R es una **relación de equivalencia** sobre X si R es **reflexiva, simétrica y transitiva**.
 > 
-> > [!tip]- 💡 Comparación rápida
-> > 
-> > | Propiedad | Equivalencia | Orden Parcial |
-> > |---|---|---|
-> > | Reflexiva | ✅ | ✅ |
-> > | Simétrica | ✅ | ❌ |
-> > | Antisimétrica | ❌ | ✅ |
-> > | Transitiva | ✅ | ✅ |
+> **Comparación rápida:**
+>
+> | Propiedad | Equivalencia | Orden Parcial |
+> |---|---|---|
+> | Reflexiva | ✅ | ✅ |
+> | Simétrica | ✅ | ❌ |
+> | Antisimétrica | ❌ | ✅ |
+> | Transitiva | ✅ | ✅ |
 >
 > **Se lee así:** ambas familias exigen reflexividad y transitividad; la equivalencia añade simetría, mientras que el orden parcial añade antisimetría.
 >

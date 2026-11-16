@@ -26,11 +26,11 @@ tags: [analisisdealgoritmos, notacionasintotica, bigO, complejidad, MATG1051, un
 > 
 > **Se lee así:** $\mathcal{O}$ da una cota superior, $\Omega$ una cota inferior y $\Theta$ afirma que ambas coinciden; así describen el orden de crecimiento de $f(n)$ respecto de $g(n)$.
 > 
-> > [!tip] 📌 Intuición rápida
-> > 
-> > - $\mathcal{O}$ → cota máxima ("a lo sumo crece así")
-> > - $\Omega$ → cota mínima ("al menos crece así")
-> > - $\Theta$ → crecimiento exacto ("crece exactamente así")
+> **Intuición rápida:**
+>
+> - $\mathcal{O}$ → cota máxima ("a lo sumo crece así")
+> - $\Omega$ → cota mínima ("al menos crece así")
+> - $\Theta$ → crecimiento exacto ("crece exactamente así")
 > 
 > **Ejemplo:** $f(n)=2n^2-5n+3$ queda acotada entre $n^2$ y $5n^2$ para $n\geq5$, por lo que $f(n)=\Theta(n^2)$.
 
