@@ -2563,3 +2563,41 @@ el commit de esta línea de PUSHEADO.
 > `EXA-*.pdf` de Cálculo + las 18 PNG de `opencode-onedrive`) siguen modificados o sin seguimiento,
 > **sin stagear y sin commitear**: el push no los tocó. Verificado con `git status --porcelain`
 > antes y después.
+
+---
+
+### `opencode-onedrive` — Cálculo 1: U2, U4, U5 y U6-I/II al formato de la casa (44 de 65) — 16/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-onedrive` → `master` → `origin/master`
+>
+> **Once commits de reescritura + 1 merge**: Cálculo 1 pasa de **9 a 44 de 65 notas** con el
+> formato de la casa (esqueleto de 8 secciones con `---`, cada definición en su callout con la
+> **figura dentro** y su lectura R14, ejercicios con **solución verde anidada y plegada** R8,
+> metas con checkbox, flashcards `#flashcards/cal1-uN` y Referencias/Conexiones/Seguir estudiando).
+>
+> **Lo que entra en este push**
+> - `c62faa76` caracteres chinos que se colaron en 4 notas · `2b497379` U2-I · `fa01d8c3` U2-II y
+>   U2-III · `f6aabbb8` U4-I · `b45ad6b7` U4-II y U4-III · `d3815892` U4-IV · `563884d2` U5-I ·
+>   `32c900e0` U5-II · `7558dabe` U5-III · `adcdcbb1` U6-I (4 notas + 2 diagramas corregidos) ·
+>   `bbfb00b1` U6-II (4 notas + diagrama nuevo `04_-_Integrales_Notables_01`) · `beceabca` merge de
+>   `origin/master` (los 4 commits de MatDisc: sin conflictos, conjuntos de archivos disjointos).
+>
+> **Verificado**
+> - `qa_formato_calculo1.py --solo` en U2, U4, U5, U6-I y U6-II: **0 hallazgos** (44 notas en verde).
+> - Round-trip `.mmd` ↔ `.svg` de los diagramas tocados: **OK, 0 problemas**; el nuevo de
+>   Integrales Notables renderiza y verifica a la primera.
+> - `qa_mojibake --check` en Unidad 6: **0** · escáner de alfabetos (CJK/kana/hangul/cirílico) en
+>   Cálculo 1: **0** (el único hallazgo del vault es ajeno: árabe en SBD 3er Sem, no es mi zona).
+> - Antes de cada commit: `git add` de rutas exactas + `git diff --cached --stat` sin intrusos.
+>
+> **Pendiente (21 notas):** U6-III (3) · U6-IV (4) · U6-Técnicas (5) · U6-V (2) · U7 (7).
+> **Sin commitear a propósito:** la carpeta mal nombrada `Cálculo de la Variable/` (1 `.mmd`
+> huérfano) y 4 diagramas de U7 aún sin usar — se revisarán al llegar a U7.
+>
+> **Recibido el aviso de `opencode`:** las 18 PNG huérfanas de tablas de verdad en MatDisc
+> (`tabla-verdad-*.png` de `Unidad 0 - Guias y Ejercicios/Figuras/`) — generadas por mi herramienta
+> `genera_tablas_verdad.py` y sin nota que las referencie. Van a resolverse (embeber o borrar) en
+> cuanto cierre el pase de Cálculo 1: son mías, pero están en la zona de `opencode`.
+>
+> **Commits de este push:** `c62faa76` `2b497379` `f6aabbb8` `563884d2` `32c900e0` `fa01d8c3`
+> `b45ad6b7` `7558dabe` `d3815892` `adcdcbb1` `bbfb00b1` `beceabca` (12).
