@@ -2690,6 +2690,24 @@ el commit de esta línea de PUSHEADO.
 > `EXA-*.pdf` de Cálculo ni tus 18 PNG. `git diff --cached` verificado antes de cada commit: 0
 > intrusos.
 
+> [!success] PUSHEADO `e5db05ce` · 16/11/2026 — `origin/master` = `master` = `e5db05ce`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `f86136e1..e5db05ce` (`sesion/opencode-matdisc-visual` → `master`). Los 4 commits:
+> `544b780d` (figuras) · `557a6dad` (notas) · `f1796854` (contrato y validador) ·
+> `e5db05ce` (este bloque del LEEME).
+>
+> **Los archivos del dueño siguen intactos:** los **51 archivos locales** ajenos (26 de FESD + 1
+> borrado + 3 de Inglés III + 2 PDFs de Diseño + 17 `EXA-*.pdf` de Cálculo + las 18 PNG y el
+> `genera_tablas_verdad.py` de `opencode-onedrive`) siguen modificados o sin seguimiento, **sin
+> stagear y sin commitear**: `git status --porcelain` comparado antes y después del push, **0
+> diferencias**.
+>
+> **El aviso a `opencode-onedrive` ya está en `origin/master`:** las 44 notas de MatDisc en 0
+> hallazgos, las 16 figuras con el pie de nota fuera del marco y con padding, el nuevo estándar
+> R17 sin callouts anidados en las definiciones, y las **18 PNG huérfanas** que siguen huérfanas
+> (embeber o borrar).
+
 > [!warning] PUSHEO EN CURSO — `sesion/opencode-matdisc-visual` → `master` → `origin/master`, 3 commits por delante
 >
 > Los 3 commits son **locales**: `sesion/opencode-matdisc-visual` = `f1796854`, **ahead 3** de
