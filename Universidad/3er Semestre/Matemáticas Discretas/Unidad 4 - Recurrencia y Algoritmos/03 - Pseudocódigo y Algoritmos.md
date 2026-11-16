@@ -85,7 +85,7 @@ tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 
 ## 🟢 ¿Qué es un Algoritmo?
 
-> [!note] 🟢 Definición
+> [!note] 🟢 Definición — Algoritmo
 > 
 > Un **algoritmo** es un método paso a paso para resolver un problema, generalmente pensado para ser ejecutado por una computadora.
 > 
@@ -100,6 +100,10 @@ tags: [pseudocodigo, algoritmos, estructurasdecontrol, MATG1051, unidad4, ESPOL]
 > |**Carácter finito**|Termina tras un número finito de instrucciones|
 > |**Corrección**|La salida producida es correcta — resuelve el problema sin errores|
 > |**Generalidad**|Se aplica a un [[04 - Cardinalidad y Leyes de Cardinalidad\|Cardinalidad]] de entradas, no a un solo caso|
+> 
+> **Se lee así:** un algoritmo se interpreta como una secuencia ordenada y finita de pasos: recibe una entrada, la transforma mediante instrucciones precisas y produce una salida.
+> 
+> **Ejemplo:** para hallar el máximo entre $a$, $b$ y $c$, se comparan los valores y se conserva el mayor en `grande`.
 
 > [!example] 🟢 Ejemplo — máximo de tres números (con rastreo)
 > 

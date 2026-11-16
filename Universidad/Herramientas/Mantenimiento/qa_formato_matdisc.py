@@ -7,7 +7,7 @@ materia ya usa: las notas de clase comparten cuatro secciones nucleo
 depende de la unidad; las guias de problemas son cuadernos de ejercicios; los
 indices (materia, indice, recursos, syllabus) no exigen secciones. El
 contrato escrito vive en `Herramientas/Mantenimiento/FORMATO-MATDISC.md`
-(reglas R1..R16).
+(reglas R1..R17).
 
 Severidades: H (error duro) y W (desviacion de formato).
   R1  frontmatter con dg-publish + tags                    W
@@ -26,6 +26,8 @@ Severidades: H (error duro) y W (desviacion de formato).
   R13 '**Tags:**' al final                                 W
   R14 todo lo visual se explica, no se transcribe          W
       + embeds (.png de figura / .svg de diagrama) con lectura  W
+  R17 bloque de definicion canonico (formula arriba, visual,  W
+      lectura, ejemplo; titulo que nombra el objeto)
 
 R15 NO APLICA en esta materia: no hay decks de clase (el material son guias
 de problemas, lecciones, talleres y examenes), asi que no hay lecturas con
@@ -67,6 +69,18 @@ RE_LISTITEM = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+")
 RE_TABLE = re.compile(r"^\s*\|")
 RE_QA = re.compile(r"::")
 RE_TAGS_FOOT = re.compile(r"^\s*\*\*Tags:\*\*")
+
+# ---- R17: bloque de definicion canonico
+# un callout es de definicion si su titulo empieza por Definicion/Definiciones
+# o por 'Recordatorio: Definicion'. Los callouts de ERROR no lo son.
+RE_DEF_TITULO = re.compile(
+    r"^(?:Definici[oó]n(?:es)?\b|Recordatorio:\s*Definici[oó]n\b)", re.I)
+RE_TITULO_GENERICO = re.compile(
+    r"^Definici[oó]n(?:es)?\s*(?:\d+\s*[—–-]\s*)?(?:y\s+Tabla\s+de\s+Verdad)?\s*$",
+    re.I)
+RE_FORMULA_LINEA = re.compile(r"^\s*(?:\*\*|__)?\s*F[oó]rmula\s*(?:\*\*|__)?\s*:?", re.I)
+RE_FIG_TV = re.compile(r"!\[\[([^\]]*tabla-verdad-[^\]]*\.png)\]\]")
+RE_EJEMPLO = re.compile(r"\[!example\]|^\s*(?:\*\*|__)?\s*Ejemplo", re.I)
 
 # material que no debe referenciarse desde el sitio
 AJENO = ("_texto/", "contenido extra/", "herramientas/", "site/", "reportes/", "svg-pipeline/")
@@ -124,6 +138,63 @@ def clasifica(rest):
     if RE_QA.search(s):
         return "qa"
     return "prose"
+
+
+# ---------------------------------------------------------------- R17
+# El criterio de "que es una tabla de verdad" y el manifiesto de figures
+# viven en tablas_verdad_comun.py (compartidos con gen_tablas_verdad.py):
+# asi generador y validador no pueden discrepar sobre que tabla es cual.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from tablas_verdad_comun import escanea_lineas, firma as tv_firma, RE_CELL as RE_TV_CELL  # noqa: E402
+except ImportError:      # pragma: no cover
+    escanea_lineas = None
+    tv_firma = None
+    RE_TV_CELL = None
+
+RE_TITULO_GENERICO = re.compile(
+    r"^Definici[oó]n(?:es)?\s*(?:\d+\s*[—–-]\s*)?(?:y\s+Tabla\s+de\s+Verdad)?\s*$",
+    re.I)
+RE_FORMULA_LINEA = re.compile(r"^\s*(?:\*\*|__)?\s*F[oó]rmula\s*(?:\*\*|__)?\s*:?", re.I)
+RE_FIG_TV = re.compile(r"!\[\[([^\]]*tabla-verdad-[^\]]*\.png)\]\]")
+RE_EJEMPLO = re.compile(r"\[!example\]|^\s*(?:\*\*|__)?\s*Ejemplo", re.I)
+
+MANIFIESTO_TV = None
+
+
+def manifiesto_tv():
+    """Mapa firma-de-tabla -> nombre de figura (lo escribe el generador)."""
+    global MANIFIESTO_TV
+    if MANIFIESTO_TV is None:
+        import json
+        ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            "tablas_verdad.json")
+        try:
+            with io.open(ruta, encoding="utf-8") as f:
+                MANIFIESTO_TV = json.load(f).get("figuras", {})
+        except Exception:
+            MANIFIESTO_TV = {}
+    return MANIFIESTO_TV
+
+
+def titulo_sin_emoji(titulo):
+    """Titulo de callout sin los emojis ni simbolos de decoracion."""
+    t = re.sub(r"[\U0001F000-\U0001FAFF\u2600-\u27BF\u2190-\u21FF\u2B00-\u2BFF]", "", titulo or "")
+    return t.replace("\ufe0f", "").strip()
+
+
+def es_titulo_definicion(titulo):
+    t = titulo_sin_emoji(titulo)
+    if not t or t.lower().startswith("error"):
+        return False
+    return bool(RE_DEF_TITULO.match(t))
+
+
+def es_linea_formula(rest):
+    s = rest.strip()
+    if RE_FORMULA_LINEA.match(s):
+        return True
+    return s.startswith("$$")
 
 
 def bloques_callout(lineas):
@@ -406,15 +477,23 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
         r"Verificaci[oó]n|Analog[ií]a|Resumen|Para qu[eé] sirve|Qu[eé] notas|Pista|"
         r"C[oó]mo se aplica|Lo queves|Truco)", re.I)
 
-    def ventana_expl(i, n):
-        """Lineas siguientes al embed, dentro del mismo callout."""
+    def ventana_expl(i, n, es_tv=False):
+        """Lineas siguientes al embed, dentro del mismo callout.
+
+        Las figuras de tabla de verdad (tabla-verdad-*.png) llevan debajo
+        su tabla markdown (el respaldo textual): la lectura va DESPUES de
+        la tabla, asi que la ventana salta las filas de la tabla.
+        """
         out = []
-        for k in range(i + 1, min(n, i + 7)):
+        limite = min(n, i + (24 if es_tv else 7))
+        for k in range(i + 1, limite):
             s = lineas[k].strip()
             if not s:
                 continue
             if not s.startswith(">"):
                 break            # salio del callout: no hay explicacion
+            if es_tv and RE_TV_CELL.match(s):
+                continue         # la tabla markdown va con la figura
             out.append(s)
         return out
 
@@ -425,7 +504,8 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
             continue
         if "![" not in ln:
             continue
-        ventana = ventana_expl(i, len(lineas))
+        es_tv = "tabla-verdad-" in bajo
+        ventana = ventana_expl(i, len(lineas), es_tv)
         if not ventana:
             hallazgos.append((rel, i + 1, "R14-embed-sin-explicacion",
                               "embed visual sin lectura: %s" % ln.strip()[:50]))
@@ -465,6 +545,75 @@ def auditar(nota_path, raiz, hallazgos, es_referencia=False):
                 hallazgos.append((rel, i + 1, "R14-deck-sin-explicacion",
                                   "callout de deck sin lectura: %s" % titulo[:50]))
         i = j
+
+    # ---------- R17 bloque de definicion canonico
+    # El bloque va: formula (arriba) -> visual (figura de la tabla de verdad)
+    # -> lectura -> ejemplo. El titulo nombra el objeto.
+    for b in bloques:
+        cont = [rest for _, depth, rest in b["lineas"] if depth == b["depth"]]
+        if not cont:
+            continue
+
+        # (R17-c) toda tabla de verdad lleva su figura PNG ENCIMA,
+        #         y esa figura es LA de esa tabla (manifiesto del generador)
+        if escanea_lineas is not None:
+            for t in escanea_lineas(cont):
+                ini = t["inicio"]
+                previa = None
+                for k in range(ini - 1, -1, -1):
+                    if cont[k].strip():
+                        previa = cont[k]
+                        break
+                m = RE_FIG_TV.search(previa or "")
+                if not m:
+                    hallazgos.append((rel, b["inicio"] + 1 + ini + 1,
+                                      "R17-tv-sin-figura",
+                                      "tabla de verdad sin figura PNG encima"))
+                    continue
+                embebida = os.path.basename(m.group(1))
+                info = manifiesto_tv().get(tv_firma(t["cab"], t["filas"]))
+                if info is None:
+                    hallazgos.append((rel, b["inicio"] + 1 + ini + 1,
+                                      "R17-tv-sin-manifiesto",
+                                      "tabla de verdad sin figura generada: %s"
+                                      % embebida[:40]))
+                else:
+                    esperada = info["nombre"] if isinstance(info, dict) else info
+                    if esperada + ".png" != embebida:
+                        hallazgos.append((rel, b["inicio"] + 1 + ini + 1,
+                                          "R17-tv-figura-equivocada",
+                                          "esperaba %s, hay %s"
+                                          % (esperada, embebida[:40])))
+
+        if not es_titulo_definicion(b["titulo"]):
+            continue
+
+        # (R17-a) el titulo nombra el objeto
+        limpio = titulo_sin_emoji(b["titulo"])
+        if RE_TITULO_GENERICO.match(limpio):
+            hallazgos.append((rel, b["inicio"] + 1, "R17-titulo-generico",
+                              "titulo generico: %r" % limpio[:40]))
+
+        # (R17-b) si hay formula, va ARRIBA: en las dos primeras lineas de
+        # contenido del bloque (como mucho una frase la introduce).
+        idx_formula = [k for k, r in enumerate(cont) if es_linea_formula(r)]
+        if idx_formula:
+            primeros = [k for k, r in enumerate(cont) if r.strip()][:2]
+            if not any(k in primeros for k in idx_formula):
+                hallazgos.append((rel, b["inicio"] + 1 + primeros[0] + 1,
+                                  "R17-formula-no-arriba",
+                                  "la formula no esta entre las dos primeras "
+                                  "lineas del bloque"))
+
+        # (R17-d) el bloque tiene lectura
+        if not any(ETIQUETAS_EXPL.search(r) for r in cont):
+            hallazgos.append((rel, b["inicio"] + 1, "R17-sin-lectura",
+                              "definicion sin lectura: %r" % limpio[:40]))
+
+        # (R17-e) el bloque tiene ejemplo
+        if not any(RE_EJEMPLO.search(r) for r in cont):
+            hallazgos.append((rel, b["inicio"] + 1, "R17-sin-ejemplo",
+                              "definicion sin ejemplo: %r" % limpio[:40]))
 
 
 def fix_rutas(nota_path):

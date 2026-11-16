@@ -27,13 +27,17 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 
 > [!note] 📋 Definición 1 — Isomorfismo de grafos
 > 
-> Sean $G_1 = (V_1, E_1)$ y $G_2 = (V_2, E_2)$ dos grafos. Decimos que $G_1$ y $G_2$ son **isomorfos** si existen funciones
-> 
 > $$f: V_1 \to V_2, \qquad g: E_1 \to E_2$$
+> 
+> Sean $G_1 = (V_1, E_1)$ y $G_2 = (V_2, E_2)$ dos grafos. Decimos que $G_1$ y $G_2$ son **isomorfos** si existen funciones
 > 
 > **biyectivas**, tales que una arista $e$ incide en $u$ y $v$ en $G_1$ **si y solo si** $g(e)$ incide en $f(u)$ y $f(v)$ en $G_2$.
 > 
 > Al par de funciones $(f, g)$ se le llama un **isomorfismo** de $G_1$ en $G_2$.
+> 
+> **Se lee así:** $f$ empareja vértices y $g$ empareja aristas; las dos biyecciones deben conservar exactamente la incidencia.
+> 
+> **Ejemplo:** para los grafos del Ejemplo 1, las asignaciones $f(a)=A,\ldots,f(e)=E$ y $g(x_i)=y_i$ forman un isomorfismo si preservan la incidencia de las cinco aristas.
 > 
 > > [!warning] ⚠️ Se necesitan DOS biyecciones No basta con una biyección entre vértices: también se necesita una biyección $g$ entre aristas que sea **consistente** con $f$. Ambas funciones deben "viajar juntas" — la incidencia debe preservarse exactamente.
 
@@ -91,6 +95,10 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > [!note] 📋 Definición 2 — Propiedad invariante
 > 
 > Una propiedad $P$ es **invariante** (bajo isomorfismo) si para cualquier par de grafos isomorfos $G_1$ y $G_2$: si $G_1$ tiene la propiedad $P$, entonces $G_2$ también la tiene.
+> 
+> **Se lee así:** una propiedad invariante no cambia al renombrar o redibujar el grafo, siempre que se preserve su estructura.
+> 
+> **Ejemplo:** si $|E(G_1)|=7$ y $|E(G_2)|=6$, los grafos no pueden ser isomorfos porque el número de aristas es invariante.
 
 > [!note] 📋 Ejemplos de invariantes
 > 

@@ -132,13 +132,13 @@ tags: [matematicas-discretas, conjuntos, union, interseccion, diferencia, comple
 
 > [!note] 🟣 Definición — Par ordenado y Producto Cartesiano
 >
+> $$\{a, b\} = \{b, a\} \quad \text{(conjuntos)} \qquad (a, b) \neq (b, a) \quad \text{(pares ordenados, si } a \neq b\text{)}$$
+>
 > ### Par ordenado
 >
 > Dados elementos $a$ y $b$, sabemos que $\{a, b\} = \{b, a\}$ como conjuntos. Sin embargo, a veces el **orden importa**.
 >
 > Llamaremos **par ordenado** formado por $a$ y $b$, denotado $(a, b)$, al conjunto $\{a, \{a, b\}\}$, donde indicamos que $a$ es el primer elemento y $b$ es el segundo.
->
-> $$\{a, b\} = \{b, a\} \quad \text{(conjuntos)} \qquad (a, b) \neq (b, a) \quad \text{(pares ordenados, si } a \neq b\text{)}$$
 >
 > ### Producto Cartesiano
 >

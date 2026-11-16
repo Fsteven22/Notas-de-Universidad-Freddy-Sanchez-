@@ -1,0 +1,84 @@
+{
+  "figuras": {
+    "$p$|$\\negp$#V,F|F,V": {
+      "nombre": "tabla-verdad-negacion",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:110",
+      "titulo": "Negación"
+    },
+    "$p$|$\\negp$|$p\\vee\\negp$#V,F,V|F,V,V": {
+      "nombre": "tabla-verdad-tautologia",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:359",
+      "titulo": "Tautología"
+    },
+    "$p$|$q$|$\\negp$|$\\negq$|$p\\rightarrowq$|$\\negq\\rightarrow\\negp$#V,V,F,F,V,V|V,F,F,V,F,F|F,V,V,F,V,V|F,F,V,V,V,V": {
+      "nombre": "tabla-verdad-condicional-contrapositiva",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:109",
+      "titulo": "Condicional y contrapositiva"
+    },
+    "$p$|$q$|$\\negp$|$\\negq$|$p\\veebarq$|$p\\wedge\\negq$|$q\\wedge\\negp$|$(p\\wedge\\negq)\\vee(q\\wedge\\negp)$#V,V,F,F,F,F,F,F|V,F,F,V,V,V,F,V|F,V,V,F,V,F,V,V|F,F,V,V,F,F,F,F": {
+      "nombre": "tabla-verdad-disjuncion-exclusiva-equivalencia",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:307",
+      "titulo": "Disyunción exclusiva: ⊻ y ⊕"
+    },
+    "$p$|$q$|$\\negp$|$p\\rightarrowq$|$\\negp\\veeq$#V,V,F,V,V|V,F,F,F,F|F,V,V,V,V|F,F,V,V,V": {
+      "nombre": "tabla-verdad-condicional-disjuncion",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:285",
+      "titulo": "Condicional y disyunción"
+    },
+    "$p$|$q$|$\\negq$|$p\\rightarrowq$|$\\neg(p\\rightarrowq)$|$p\\wedge\\negq$#V,V,F,V,F,F|V,F,V,F,V,V|F,V,F,V,F,F|F,F,V,V,F,F": {
+      "nombre": "tabla-verdad-negacion-condicional",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:328",
+      "titulo": "Negación del condicional"
+    },
+    "$p$|$q$|$p\\leftrightarrowq$#V,V,V|V,F,F|F,V,F|F,F,V": {
+      "nombre": "tabla-verdad-bicondicional",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:260",
+      "titulo": "Bicondicional"
+    },
+    "$p$|$q$|$p\\leftrightarrowq$|$p\\rightarrowq$|$q\\rightarrowp$|$(p\\rightarrowq)\\wedge(q\\rightarrowp)$#V,V,V,V,V,V|V,F,F,F,V,F|F,V,F,V,F,F|F,F,V,V,V,V": {
+      "nombre": "tabla-verdad-bicondicional-equivalencia",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:296",
+      "titulo": "Bicondicional y su equivalencia"
+    },
+    "$p$|$q$|$p\\rightarrowq$#V,V,V|V,F,F|F,V,V|F,F,V": {
+      "nombre": "tabla-verdad-condicional",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:199",
+      "titulo": "Condicional"
+    },
+    "$p$|$q$|$p\\rightarrowq$|$p\\wedge(p\\rightarrowq)$|$(p\\wedge(p\\rightarrowq))\\rightarrowq$#V,V,V,V,V|V,F,F,F,V|F,V,V,F,V|F,F,V,F,V": {
+      "nombre": "tabla-verdad-modus-ponens",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:368",
+      "titulo": "Modus ponens"
+    },
+    "$p$|$q$|$p\\rightarrowq$|$q\\rightarrowp$#V,V,V,V|V,F,F,V|F,V,V,F|F,F,V,V": {
+      "nombre": "tabla-verdad-condicional-reciproco",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:120",
+      "titulo": "Condicional y recíproco"
+    },
+    "$p$|$q$|$p\\veebarq$#V,V,F|V,F,V|F,V,V|F,F,F": {
+      "nombre": "tabla-verdad-disjuncion-exclusiva",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:172",
+      "titulo": "Disyunción exclusiva (XOR)"
+    },
+    "$p$|$q$|$p\\veeq$#V,V,V|V,F,V|F,V,V|F,F,F": {
+      "nombre": "tabla-verdad-disjuncion",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:130",
+      "titulo": "Disyunción"
+    },
+    "$p$|$q$|$p\\wedgeq$#V,V,V|V,F,F|F,V,F|F,F,F": {
+      "nombre": "tabla-verdad-conjuncion",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:151",
+      "titulo": "Conjunción"
+    },
+    "$p$|$q$|$r$|$p\\rightarrowq$|$(p\\rightarrowq)\\rightarrowr$|$q\\rightarrowr$|$p\\rightarrow(q\\rightarrowr)$#V,V,V,V,V,V,V|V,V,F,V,F,F,F|V,F,V,F,V,V,V|V,F,F,F,V,V,V|F,V,V,V,V,V,V|F,V,F,V,F,F,V|F,F,V,V,V,V,V|F,F,F,V,F,V,V": {
+      "nombre": "tabla-verdad-tres-proposiciones",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:318",
+      "titulo": "Tres proposiciones: 2³ = 8 filas"
+    },
+    "$p$|$q$|$r$|$p\\toq$|$\\negr\\lorp$|$(p\\toq)\\land(\\negr\\lorp)$|$q\\lorr$|$s$#V,V,V,V,V,V,V,V|V,V,F,V,V,V,V,V|V,F,V,F,V,F,V,V|V,F,F,F,V,F,F,V|F,V,V,V,F,F,V,V|F,V,F,V,V,V,V,V|F,F,V,V,F,F,V,V|F,F,F,V,V,V,F,F": {
+      "nombre": "tabla-verdad-ejercicio-guia1",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\Guía de Problemas 1 - Ejercicios Resueltos.md:144",
+      "titulo": "Ejercicio 4 — tabla de verdad"
+    }
+  }
+}

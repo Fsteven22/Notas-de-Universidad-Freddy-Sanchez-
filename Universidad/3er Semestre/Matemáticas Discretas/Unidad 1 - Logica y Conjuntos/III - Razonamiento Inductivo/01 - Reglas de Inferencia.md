@@ -29,16 +29,18 @@ tags: [matematicas-discretas, logica-proposicional, reglas-de-inferencia, modus-
 ## 📚 Argumentos y Validez
 
 > [!note] 📖 Definición — Argumento válido e inválido
-> 
+>
+> $$\frac{p_1 \quad p_2 \quad \cdots \quad p_n}{\therefore\ q}$$
+>
 > **Se lee así:** la barra fraccionaria pone las premisas $p_1, \ldots, p_n$ arriba y la conclusión $\therefore\ q$ abajo; la notación $p_1, \ldots, p_n \Rightarrow q$ se lee "implica" y solo garantiza que premisas verdaderas arrastran la conclusión — no afirma que $q$ sea verdadera en el mundo real.
 > 
 > Diremos que el argumento es **válido** si cada vez que $p_1, p_2, \ldots, p_n$ son verdaderas entonces $q$ también es verdadera. De lo contrario diremos que el argumento es **inválido**.
 > 
 > Los argumentos se representan en la forma:
-> 
-> $$\frac{p_1 \quad p_2 \quad \cdots \quad p_n}{\therefore\ q}$$
-> 
+>
 > Si el argumento es válido, lo denotaremos $p_1, p_2, \ldots, p_n \Rightarrow q$. El símbolo $\Rightarrow$ se lee: **implica**.
+>
+> **Ejemplo:** Del argumento «Si $p$ es verdadera y $p \rightarrow q$, entonces $q$» se sigue $q$; por eso la forma es válida, aunque $p$ y $q$ no tengan valores de verdad fijados.
 
 > [!warning] ⚠️ Observación importante
 > 

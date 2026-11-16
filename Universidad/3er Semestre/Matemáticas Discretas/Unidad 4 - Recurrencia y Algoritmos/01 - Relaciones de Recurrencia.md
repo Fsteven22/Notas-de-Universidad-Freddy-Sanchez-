@@ -34,17 +34,19 @@ tags: [recurrencia, relacionesderecurrencia, fibonacci, interescompuesto, torred
 
 > [!note] 🔵 Definición — Ecuación de recurrencia
 > 
-> Una **ecuación de recurrencia** para una sucesión ${a_n}$ es una fórmula que expresa $a_n$ en términos de uno o más de sus antecesores $a_{n-1}, a_{n-2}, \dots$
-> 
 > $$a_n = f(a_{n-1}, a_{n-2}, \dots, a_{n-k})$$
 > 
+> Una **ecuación de recurrencia** para una sucesión ${a_n}$ es una fórmula que expresa $a_n$ en términos de uno o más de sus antecesores $a_{n-1}, a_{n-2}, \dots$
+> 
 > Para que la sucesión quede **completamente determinada**, se necesitan las **condiciones iniciales**: valores explícitos para los primeros $k$ términos (ej. $a_0$, $a_1$, …).
+> 
+> **Se lee así:** cada $a_n$ se obtiene a partir de los $k$ términos anteriores; las condiciones iniciales fijan el punto de partida y hacen que la sucesión quede determinada de forma única.
 > 
 > ---
 > 
 > ### 📌 Por qué no basta la recurrencia sola
 > 
-> > La ecuación $a_n = a_{n-1} + 2$ describe infinitas sucesiones distintas dependiendo de $a_0$: si $a_0 = 0$ se obtiene $0,2,4,6,\dots$; si $a_0=1$ se obtiene $1,3,5,7,\dots$ Sin condición inicial, la recurrencia solo describe el _patrón de crecimiento_, no la sucesión exacta.
+> **Ejemplo:** La ecuación $a_n = a_{n-1} + 2$ describe infinitas sucesiones distintas dependiendo de $a_0$: si $a_0 = 0$ se obtiene $0,2,4,6,\dots$; si $a_0=1$ se obtiene $1,3,5,7,\dots$ Sin condición inicial, la recurrencia solo describe el _patrón de crecimiento_, no la sucesión exacta.
 
 ---
 

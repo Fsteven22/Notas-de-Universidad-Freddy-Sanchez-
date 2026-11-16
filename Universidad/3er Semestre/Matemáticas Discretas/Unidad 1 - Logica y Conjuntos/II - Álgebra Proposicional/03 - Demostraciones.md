@@ -33,6 +33,8 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > | **Lema** | Teorema auxiliar que **por sí mismo no es interesante**, pero resulta útil para probar otro teorema más importante. |
 > | **Corolario** | Teorema que es **consecuencia inmediata** de otro teorema ya demostrado. |
 > | **Demostración / Prueba** | Argumento lógico que **establece la veracidad** de un teorema. |
+>
+> **Ejemplo:** El teorema «si $m^2$ es impar, entonces $m$ es impar» se demuestra en la nota; la equivalencia «$m^2$ es par $\Leftrightarrow$ $m$ es par» se presenta como un **corolario** de ese resultado.
 
 ---
 
@@ -78,6 +80,8 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > > Todo número entero es par **o** impar, y nunca ambos a la vez.
 > 
 > Esta definición es la base de muchos ejemplos de demostración.
+>
+> **Ejemplo:** El número $8$ es par porque $8=2\cdot4$ con $k=4$, mientras que $7$ es impar porque $7=2\cdot3+1$ con $k=3$.
 
 ---
 
@@ -292,11 +296,7 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > 
 > **Caso 2:** $x < y$ → $x - y < 0$, entonces $|x-y| = -(x-y) = y-x$.
 > $$\frac{x+y+(y-x)}{2} = \frac{2y}{2} = y = \max\{x,y\}$$ ✅
-> 
-> 
-> 
-> 
-> 
+>
 > **Demostración del mínimo por casos:**
 > 
 > **Caso 1:** $x \geq y \Rightarrow x - y \geq 0$, entonces $|x - y| = x - y$.
@@ -306,10 +306,7 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > **Caso 2:** $x < y \Rightarrow x - y < 0$, entonces $|x - y| = -(x-y) = y - x$.
 > 
 > $$\frac{x + y - (y - x)}{2} = \frac{2x}{2} = x = \min\{x, y\} \checkmark$$
-> 
-> 
-> 
-> 
+>
 > La lógica es simétrica a la del mínimo: en cada caso, al restar $|x-y|$ en lugar de sumarlo, "cancela" el mayor y deja el menor.
 > 
 ---

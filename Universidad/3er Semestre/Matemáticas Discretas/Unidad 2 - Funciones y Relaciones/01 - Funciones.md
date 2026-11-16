@@ -45,8 +45,11 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > [!note] 📋 Definición 1 — Igualdad de funciones
 > 
 > Sean f, g : X → Y dos funciones. Diremos que **f es igual a g** si se cumple que:
-> 
 > $$f(x) = g(x), \quad \forall x \in X$$
+>
+> **Se lee así:** dos funciones son iguales cuando producen el mismo valor para todo $x\in X$.
+>
+> **Ejemplo:** si $f(x)=2x+1$ y $g(x)=2x+1$, entonces $f=g$ porque sus valores coinciden para todo $x$.
 
 ---
 
@@ -62,29 +65,37 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 
 > [!note] 🔍 Definición 2 — Función Inyectiva
 > 
+> $$f(x_1) = f(x_2) \Rightarrow x_1 = x_2$$
+>
 > Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **inyectiva** si cada elemento de Y posee **a lo más una** preimagen en X mediante f.
 > 
 > Dicho de otra forma:
 > 
-> $$f(x_1) = f(x_2) \Rightarrow x_1 = x_2$$
-> 
-> o equivalentemente:
-> 
 > $$x_1 \neq x_2 \Rightarrow f(x_1) \neq f(x_2)$$
 > 
 > Es decir, **elementos distintos tienen imágenes distintas**.
+>
+> **Se lee así:** para comprobar la inyectividad, se toma una igualdad de imágenes y se deduce que los elementos de partida también son iguales.
+>
+> **Ejemplo:** $f(x)=x^2$ en $\mathbb{R}$ no es inyectiva porque $f(1)=f(-1)$ pese a que $1\neq-1$.
 
 > [!note] 🔍 Definición 3 — Función Sobreyectiva
 > 
-> Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **sobreyectiva** si cada elemento de Y posee **al menos una** preimagen en X mediante f.
-> 
-> Esto es:
-> 
 > $$\forall y \in Y,\ \exists x \in X : f(x) = y$$
+>
+> Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **sobreyectiva** si cada elemento de Y posee **al menos una** preimagen en X mediante f.
+>
+> **Se lee así:** cada elemento del codominio debe aparecer como salida de alguna entrada del dominio.
+>
+> **Ejemplo:** $h(x)=-2x+3$ es sobreyectiva en $\mathbb{R}$ porque, para todo $y\in\mathbb{R}$, existe $x=(y-3)/(-2)$ con $h(x)=y$.
 
 > [!note] 🔍 Definición 4 — Función Biyectiva
 > 
 > Sean X e Y dos conjuntos y f : X → Y una función. Diremos que f es **biyectiva** si es **inyectiva y sobreyectiva** a la vez.
+>
+> **Se lee así:** una función es biyectiva cuando reúne las dos condiciones: no repite imágenes y alcanza todos los valores del codominio.
+>
+> **Ejemplo:** $h(x)=-2x+3$ es biyectiva en $\mathbb{R}$ porque es inyectiva y sobreyectiva.
 
 ---
 
@@ -93,16 +104,20 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > [!note] 🔗 Definición 5 — Función Compuesta
 > 
 > Sean X, Y, Z conjuntos y f : X → Y, g : Y → Z funciones. Llamaremos **compuesta de g con f**, denotada g ∘ f, a la función:
-> 
+>
 > $$g \circ f : X \to Z$$
-> 
+>
 > dada por:
-> 
+>
 > $$g \circ f(x) = g(f(x)), \quad \forall x \in X$$
 > 
 > > [!warning]- ⚠️ La composición NO es conmutativa
 > > 
 > > En general, g ∘ f ≠ f ∘ g.
+>
+> **Se lee así:** primero se aplica $f$ y al resultado se le aplica $g$; por eso se lee de derecha a izquierda.
+>
+> **Ejemplo:** si $f(x)=x^2+1$ y $g(x)=3x+5$, entonces $(g\circ f)(x)=3x^2+8$.
 
 ---
 
@@ -111,9 +126,9 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > [!note] 🔄 Definición 6 — Función Invertible e Inversa
 > 
 > Sean X, Y dos conjuntos y f : X → Y una función. Diremos que f es **invertible** si existe una función g : Y → X tal que:
-> 
+>
 > $$g \circ f(x) = x, \quad \forall x \in X \qquad \text{y} \qquad f \circ g(y) = y, \quad \forall y \in Y$$
-> 
+>
 > Si f es invertible, entonces g es **única**. La llamaremos la **inversa** de f, denotada f⁻¹.
 >
 > >[!abstract] 📐 Teorema 1 — Invertible ⟺ Biyectiva
@@ -121,6 +136,10 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > >Sea f : X → Y una función. Entonces:
 > >
 > >$$f \text{ es invertible} \iff f \text{ es biyectiva}$$
+>
+> **Se lee así:** una función es invertible cuando puede deshacer su propio efecto en ambos sentidos; esa función inversa es única.
+>
+> **Ejemplo:** $f(x)=\frac13x-\frac53$ es invertible y su inversa es $g(x)=3x+5$.
 
 ---
 
@@ -132,6 +151,10 @@ tags: [matematicas-discretas, funciones, inyectiva, sobreyectiva, biyectiva, com
 > 
 > - El **piso** de x, denotado ⌊x⌋, es el mayor entero menor o igual a x.
 > - El **techo** de x, denotado ⌈x⌉, es el menor entero mayor o igual a x.
+>
+> **Se lee así:** el piso baja hasta el entero más cercano por debajo, mientras el techo sube hasta el entero más cercano por arriba.
+>
+> **Ejemplo:** para $x=3.7$ se tiene $\lfloor x\rfloor=3$ y $\lceil x\rceil=4$.
 
 ---
 

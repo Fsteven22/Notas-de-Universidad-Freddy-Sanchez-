@@ -141,6 +141,8 @@ tags: [matematicas-discretas, guia-problemas, logica, conjuntos, induccion, demo
 > 
 > Usando $p \to q \equiv \neg p \lor q$:
 > 
+> ![[../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-ejercicio-guia1.png]]
+> 
 > |$p$|$q$|$r$|$p \to q$|$\neg r \lor p$|$(p\to q)\land(\neg r\lor p)$|$q \lor r$|$s$|
 > |---|---|---|---|---|---|---|---|
 > |V|V|V|V|V|V|V|**V**|

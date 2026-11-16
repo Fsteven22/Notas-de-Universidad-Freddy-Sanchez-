@@ -19,7 +19,7 @@ dg-publish: false
 > problemas, lecciones, talleres y exámenes (43 PDF). Por eso **R15 no aplica** y las capturas son
 > figuras propias, no láminas.
 
-## Las 16 reglas
+## Las 17 reglas
 
 ### R1 · Frontmatter
 ```
@@ -175,6 +175,65 @@ esta regla se reactiva como en `FORMATO-DISENO.md`.
 ### R16 · Nada de material ajeno
 `_texto/`, `Contenido Extra/`, docs de `Herramientas/` — no se referencian ni se embeben
 (`R12-ajeno`).
+
+### R17 · Bloque de definición canónico
+> [!info] 📖 El orden en que el cerebro procesa una definición
+> Primero la **fórmula** (es lo que se memoriza), después el **visual** (es lo que se ve),
+> luego la **lectura** (es lo que se entiende) y al final el **ejemplo** (es lo que se aplica).
+> Un bloque de definición que empieza con un párrafo y esconde la fórmula al final obliga a leer
+> dos veces.
+
+Todo callout cuyo título es una definición (`Definición`, `Definición N — Objeto`, `Definiciones…`,
+`Recordatorio: Definición de X`) sigue este bloque:
+
+```markdown
+> [!info] 📋 Definición — Negación
+>
+> **Fórmula:** $\neg p$
+>
+> Sea $p$ una proposición. La **negación** de $p$ es la proposición que dice que $p$ es falsa.
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-negacion.png]]
+>
+> |$p$|$\neg p$|
+> |:-:|:-:|
+> |V|F|
+> |F|V|
+>
+> **Se lee así:** una sola columna de entrada y una de salida: el valor de la derecha es el
+> contrario del de la izquierda, fila a fila.
+>
+> > [!example] 🟢 Ejemplo
+> > >
+> > Si $p$ es «llueve», entonces $\neg p$ es «no llueve».
+```
+
+**Qué exige R17 (lo comprueba `qa_formato_matdisc.py`):**
+
+| # | Exigencia | Código del validador |
+|---|---|---|
+| 1 | El título **nombra el objeto**: vale `Definición — Negación`, no `Definición` a secas | `R17-titulo-generico` |
+| 2 | Si hay fórmula (`**Fórmula:**` o `$$`), va **arriba**: es el primer contenido del bloque | `R17-formula-no-arriba` |
+| 3 | Toda **tabla de verdad** lleva su **figura PNG encima** (la tabla markdown queda debajo, como respaldo textual copiable) | `R17-tv-sin-figura` |
+| 4 | El bloque tiene **lectura** (`**Se lee así:**` u otra etiqueta de R14) | `R17-sin-lectura` |
+| 5 | El bloque tiene **ejemplo** (`**Ejemplo:**` o sub-callout `[!example]`) | `R17-sin-ejemplo` |
+
+**Quién es un callout de definición:** el título empieza por `Definición`/`Definiciones` (con o sin
+número) o por `Recordatorio: Definición`. **No** son definiciones los callouts de error
+(`❌ Error 2: … (viola **definición**)`).
+
+**Las figuras de tabla de verdad** no se dibujan a mano: las genera
+`Universidad/Herramientas/Mantenimiento/gen_tablas_verdad.py`, que **lee las tablas de las notas**
+(fuente única de verdad), las deduplica y dibuja un PNG por tabla distinta. Si editas una tabla,
+regenera las figuras:
+
+```
+py -3.12 "Universidad/Herramientas/Mantenimiento/gen_tablas_verdad.py"
+py -3.12 "Universidad/Herramientas/Mantenimiento/qa_figuras_tabla_verdad.py"
+```
+
+El QA de figuras comprueba que el PNG en disco es **pixel a pixel** el que produce el script: una
+figura desfasada (tabla editada sin regenerar) falla.
 
 ## Material que NO entra
 `_texto/` (extracciones de texto de los libros, solo local), `Contenido Extra/`,

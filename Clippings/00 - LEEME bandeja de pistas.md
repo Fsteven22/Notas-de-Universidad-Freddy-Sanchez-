@@ -2471,3 +2471,95 @@ el commit de esta línea de PUSHEADO.
 > que ya estaban modificados o sin seguimiento (27 modificados + 1 borrado + 30 sin seguimiento)
 > siguen como estaban: ninguno está en Cálculo 1 ni en el LEEME, así que el `--ff-only` no los
 > tocó. Verificado con `git status --porcelain` antes y después del merge.
+
+---
+
+### `opencode` — Matemáticas Discretas: bloque de definición canónico R17 + figuras PNG de las tablas de verdad — 15-16/11/2026
+
+> [!success] Requisito #5 cerrado: 44 notas de MatDisc en 0 hallazgos y 16 figuras PNG de tabla de verdad verificadas
+>
+> **1. El estándar nuevo (R17) — el bloque de definición canónico.**
+> `FORMATO-MATDISC.md` pasó de 16 a 17 reglas. R17 fija el orden de una definición y el validador
+> lo exige en las 44 notas:
+>
+> | # | Elemento | Regla |
+> |---|---|---|
+> | 1 | Título | Nombra el objeto (`Definición 3 — Función Sobreyectiva`), nunca "Definición" a secas |
+> | 2 | Fórmula | Arriba, en las dos primeras líneas de contenido del callout |
+> | 3 | Figura | PNG embebido **encima** de la tabla de verdad (si la hay) |
+> | 4 | Tabla | Tabla markdown **debajo** de la figura, como respaldo copiable |
+> | 5 | Lectura | `**Se lee así:**` — la fórmula dicha en palabras |
+> | 6 | Ejemplo | `**Ejemplo:**` — un caso concreto que la ilustra |
+>
+> Ojo al orden de 3 y 4: la **figura va primero**, la tabla markdown después. La tabla sigue ahí
+> (copiable, indexable), pero es el respaldo, no el protagonista.
+>
+> **2. Las figuras se generan desde las notas, no aparte.**
+> `Universidad/Herramientas/Mantenimiento/gen_tablas_verdad.py` escanea las tablas de verdad del
+> curso, deduplica y dibuja. La **fuente única de verdad es la tabla markdown de la nota**: si
+> editas la tabla, regeneras y la figura sigue a la nota — no puede desincronizarse.
+> Una PNG por tabla **distinta**: 18 tablas en 3 notas → **16 figuras** (2 se repiten).
+> `qa_figuras_tabla_verdad.py` las audita **sin abrirlas a ojo** (catálogo bidireccional, PNG,
+> color, texto real vía SVG, geometría y **frescura píxel a píxel**: una figura desfasada falla).
+> Generador y validador comparten el criterio de "qué es una tabla de verdad" en
+> `tablas_verdad_comun.py`, y el validador comprueba con el manifiesto que la figura embebida
+> sea **la** de esa tabla (no otra).
+>
+> **3. Verificado**
+> - `qa_formato_matdisc.py --solo "3er Semestre/Matemáticas Discretas"` → **notas=44, hallazgos=0**.
+> - `qa_figuras_tabla_verdad.py` → **figuras: 16, fallos: 0** (con prueba negativa: detecta la
+>   figura desfasada y la ausente).
+> - **107** definiciones normalizadas al bloque canónico · **211** lecturas · **114** ejemplos ·
+>   **18** tablas de verdad con la figura encima y la tabla markdown debajo.
+> - Sin pérdida de contenido: 53 líneas quitadas / 242 añadidas, y las 15 no reubicadas revisadas
+>   una a una (11 títulos renombrados, 2 conectores que sobraban al subir la fórmula, 1 frase
+>   convertida en lectura, 1 en ejemplo).
+>
+> **4. El error a no repetir (aviso para `opencode-onedrive`).** Hay **18 PNG huérfanas** en
+> `Matemáticas Discretas/Unidad 0 - Guias y Ejercicios/Figuras/`: las generaste con
+> `Universidad/Herramientas/genera_tablas_verdad.py` (13/11 19:05) y **ninguna nota del vault las
+> referencia** — no se ven, no se auditan y no se pueden desincronizar de nada:
+> `bicondicional-2`, `circuito-1`, `circuito-2`, `compuerta-and`, `compuerta-not`, `compuerta-or`,
+> `compuerta-xor`, `condicional-2`, `contrapositiva`, `disyuncion`, `disyuncion-exclusiva`,
+> `disyuncion-exclusiva-2`, `equivalencia-implicacion`, `guia1-ej03`, `guia1-ej04`,
+> `negacion-condicional-2`, `reciproco`, `transitividad-condicional` (todas `tabla-verdad-*.png`).
+> La lección: **la figura se genera desde la tabla de la nota y se embebe en ella**; una PNG
+> suelta es un activo muerto. No las borré ni las toqué porque son tuyas: o las embebes en la nota
+> que les corresponde (y entonces van sobre su tabla markdown) o se borran.
+>
+> **5. Bug preexistente arreglado: `qa_all.py` se caía a mitad de camino.**
+> Las sub-herramientas corren con `-X utf8` y su salida trae `α, θ, ω, ℝ, ⁿ` (Física Mecánica y
+> Cálculo Vectorial), que la consola de Windows (cp1252) no sabe imprimir: `print()` abortaba con
+> `UnicodeEncodeError` y el QA global moría **sin llegar al resumen final**, aunque las 4 ya
+> hubieran terminado. Ahora reconfigura stdout/stderr a utf-8 con `errors="replace"`. Commit
+> aparte, para no mezclarlo con R17. Verificado: las 4 sub-herramientas corren y llega a
+> `QA completo. Exit code: 1` (los hallazgos son reales y ajenos: assets huérfanos y BADs de otras
+> zonas).
+>
+> **Commits**
+> - `337957a9` feat(matdisc): bloque de definicion canonico R17 con figuras PNG de las tablas de verdad
+> - `c3e41524` fix(herramientas): qa_all.py ya no se cae al imprimir caracteres no-cp1252
+>
+> **No se tocó:** FESD (26 archivos), Inglés III, los 2 PDFs sin trackear de Diseño, los 17
+> `EXA-*.pdf` de Cálculo ni tus 18 PNG. `git diff --cached` verificado antes de cada commit: 0 intrusos.
+
+> [!warning] PUSHEO EN CURSO — `master` (clon de OneDrive) → `origin/master`, 2 commits por delante
+>
+> `337957a9` + `c3e41524` son **locales**: `master` = `c3e41524`, **ahead 2** de `origin/master`.
+> Falta la autorización del dueño del vault para el push.
+
+> [!success] PUSHEADO `cd9b9bad` · 16/11/2026 — `origin/master` = `master` = `cd9b9bad`
+>
+> Push **fast-forward, sin `--force`**: `9cc34113..cd9b9bad` (autorizado por el dueño del vault).
+> Los 3 commits: `337957a9` (R17 + 16 figuras PNG de las tablas de verdad) · `c3e41524` (fix UTF-8
+> de `qa_all.py`) · `cd9b9bad` (este bloque del LEEME).
+>
+> **El aviso a `opencode-onedrive` ya está en `origin/master`:** las 44 notas de MatDisc en 0
+> hallazgos, las 16 figuras auditadas, el estándar R17 y las **18 PNG huérfanas** que hay que
+> embeber o borrar.
+>
+> **Los archivos del dueño siguen intactos:** en el clon de OneDrive, los **51 archivos locales**
+> ajenos a este bloque (26 de FESD + 1 borrado + 3 de Inglés III + 2 PDFs de Diseño + 17
+> `EXA-*.pdf` de Cálculo + las 18 PNG de `opencode-onedrive`) siguen modificados o sin seguimiento,
+> **sin stagear y sin commitear**: el push no los tocó. Verificado con `git status --porcelain`
+> antes y después.

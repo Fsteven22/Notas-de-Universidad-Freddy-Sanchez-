@@ -55,12 +55,12 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 
 ## 🔵 Divisibilidad
 
-> [!note] 📋 Definición
+> [!note] 📋 Definición — Divisibilidad
 > 
 > **Definición.** Sean $n, d$ números enteros con $d \neq 0$. Diremos que $d$ **divide** a $n$, o que $n$ es **divisible** para $d$, si existe un entero $q$ tal que:
-> 
+>
 > $$\boxed{n = d \cdot q}$$
-> 
+>
 > - $q$ se llama **cociente**
 > - $n$ se llama **múltiplo** de $d$
 > - $d$ se llama **divisor** o **factor** de $n$
@@ -77,6 +77,10 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 > > |$6 \mid 21$|❌|$21 = 6 \cdot 3 + 3$ (residuo ≠ 0)|
 > 
 > > 💡 Para cualquier $k \neq 0$: $0 = k \cdot 0$, es decir $q = 0 \in \mathbb{Z}$. Todo entero no nulo divide a cero.
+> 
+> **Se lee así:** $d \mid n$ significa que $n$ se obtiene como un número entero de veces $d$. Así, $q$ es el cociente y el resto de la división de $n$ entre $d$ es $0$.
+> 
+> **Ejemplo:** Como $72 = 6 \cdot 12$, se tiene $6 \mid 72$ y el cociente es $q = 12$.
 
 ---
 
@@ -100,7 +104,7 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 
 ## 🟡 Números Primos y Compuestos
 
-> [!note] 📋 Definición
+> [!note] 📋 Definición — Número primo y compuesto
 > 
 > **Definición.** Diremos que un entero $m > 1$ es **primo** si sus únicos divisores positivos son $1$ y $m$. En caso contrario, diremos que $m$ es **compuesto**.
 > 
@@ -116,6 +120,10 @@ tags: [divisibilidad, primos, TFA, factorizacion, teoria-de-numeros, MATG1051, u
 > > |$1$|Ninguno|Por definición se requiere $m > 1$|
 > 
 > Los primeros números primos son: $2,\ 3,\ 5,\ 7,\ 11,\ 13,\ 17,\ 19,\ 23,\ \ldots$
+> 
+> **Se lee así:** para comprobar si $m$ es primo, basta identificar todos sus divisores positivos y verificar que sean únicamente $1$ y $m$. Si aparece otro divisor, $m$ es compuesto.
+> 
+> **Ejemplo:** Como $17$ solo tiene los divisores positivos $1$ y $17$, $17$ es primo; en cambio, $72$ tiene más de dos divisores y es compuesto.
 
 ---
 

@@ -18,13 +18,17 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 
 ## 🔵 Tiempos de Ejecución: Mejor, Peor y Promedio Caso
 
-> [!note] 🔵 Definiciones
+> [!note] 🔵 Definiciones — Tiempos de ejecución
 > 
 > Si la entrada de un algoritmo es un [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] de $n$ elementos, se dice que el **tamaño de la entrada** es $n$.
 > 
 > - **Tiempo del mejor caso:** el tiempo _mínimo_ necesario para entradas de tamaño $n$.
 > - **Tiempo del peor caso:** el tiempo _máximo_ necesario para entradas de tamaño $n$.
 > - **Tiempo del caso promedio:** el tiempo necesario promediado sobre un conjunto finito de entradas, todas de tamaño $n$.
+> 
+> **Se lee así:** las tres definiciones comparan ejecuciones con entradas del mismo tamaño $n$: el mínimo, el máximo y el promedio de esa cantidad.
+> 
+> **Ejemplo:** en una búsqueda secuencial de $n$ términos, el mejor caso es $\Theta(1)$ y el peor caso es $\Theta(n)$.
 
 > [!example] 🟢 Ejemplo — búsqueda secuencial
 > 
@@ -365,9 +369,13 @@ tags: [analisisdealgoritmos, notacionasintotica, recursion, tiemporeal, MATG1051
 
 ## 🔴 Algoritmos Recursivos y su Análisis
 
-> [!note] 🔴 Definición
+> [!note] 🔴 Definición — Algoritmo recursivo
 > 
 > Una **[[01 - Funciones|función]] recursiva** es una función que se invoca a sí misma. Un **algoritmo recursivo** es aquel que contiene una función recursiva.
+> 
+> **Se lee así:** una función es recursiva cuando incluye una llamada a sí misma; el caso base es lo que detiene esas llamadas.
+> 
+> **Ejemplo:** en `factorial(n)`, la llamada `factorial(n - 1)` hace que la función sea recursiva.
 
 > [!example] 🟢 Ejemplo — factorial y su correctitud
 > 

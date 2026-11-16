@@ -41,6 +41,10 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > > | Simétrica | ✅ | ❌ |
 > > | Antisimétrica | ❌ | ✅ |
 > > | Transitiva | ✅ | ✅ |
+>
+> **Se lee así:** ambas familias exigen reflexividad y transitividad; la equivalencia añade simetría, mientras que el orden parcial añade antisimetría.
+>
+> **Ejemplo:** la divisibilidad sobre $\mathbb{N}$ es una relación de orden parcial, mientras que la igualdad módulo $2$ es una relación de equivalencia.
 
 > [!example] 📝 Ejemplo 15 — Clasificación de relaciones
 > 
@@ -128,6 +132,10 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > [!note] 🧩 Definición 14 — Partición
 > 
 > Sea X un conjunto no vacío. Una **partición** de X es cualquier familia 𝒮 de subconjuntos de X, **no vacíos**, **disjuntos dos a dos** y cuya **unión es X**.
+>
+> **Se lee así:** una partición divide $X$ en piezas no vacías que no se superponen y que, entre todas, cubren todo el conjunto.
+>
+> **Ejemplo:** para $X=\{1,2,3\}$, la familia $\{\{1,2\},\{3\}\}$ es una partición de $X$.
 
 > [!example] 📝 Ejemplo 16 — Particiones de un conjunto
 > 
@@ -155,15 +163,18 @@ tags: [matematicas-discretas, relaciones, equivalencia, orden-parcial, particion
 > [!note] 🔍 Definición 15 — Clase de Equivalencia
 > 
 > Sea R una relación de equivalencia sobre X. Dado a ∈ X, llamaremos **clase de equivalencia** de a, denotada [a], al conjunto:
-> 
 > $$[a] = \{x \in X : xRa\}$$
-> 
+>
 > **Propiedades de las clases:**
 > 
 > - a ∈ [a] para todo a ∈ X (por reflexividad).
 > - Bicondicional de: [x] = [b] ⟺ aRb.
 > - Si [a] ≠ [b], entonces [a] ∩ [b] = ∅ (son disjuntas).
 > - ⋃ₐ [a] = X (cubren todo X).
+>
+> **Se lee así:** $[a]$ reúne todos los elementos relacionados con $a$; dos clases distintas no comparten elementos y juntas cubren $X$.
+>
+> **Ejemplo:** para $R_1=\{(1,1),(1,3),(3,1),(3,3),(4,4)\}$ se tiene $[1]=\{1,3\}$ y $[4]=\{4\}$.
 
 > [!abstract] 📐 Teorema 3 — Equivalencia ⟹ Partición (Conjunto Cociente)
 > 

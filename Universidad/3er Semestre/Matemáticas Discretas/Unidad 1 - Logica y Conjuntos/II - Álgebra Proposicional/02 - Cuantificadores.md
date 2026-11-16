@@ -34,6 +34,9 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > 
 > **Se lee así:** $P(x)$ sola todavía no es proposición: solo al sustituir un $x \in D$ se vuelve $V$ o $F$; por eso el dominio de discurso $D$ forma parte de la definición, ya que cambiar $D$ puede cambiar lo que significan las cuantificaciones sobre $P$.
 > Sea $P(x)$ un enunciado que incluye a la variable $x$ y sea $D$ un conjunto. Diremos que $P$ es una **función proposicional** si para cada $x \in D$, $P(x)$ es una proposición. En este caso, $D$ es el **dominio de discurso** de $P$.
+>
+> **Ejemplo:** Si $P(n)$ es «$n$ es un número primo» y $D=\mathbb{Z}_{>0}$, entonces $P(17)$ es verdadera y $P(21)$ es falsa.
+>
 
 > [!example] ✅ Ejemplo 1 — Números Primos
 > 
@@ -59,7 +62,9 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 ## 📚 ∀ Cuantificador Universal
 
 > [!note] 📖 Definición 2 — Cuantificador Universal
-> 
+>
+> $$\forall x \in D : P(x)$$
+>
 > **Se lee así:** $\forall x \in D : P(x)$ exige cobertura completa del dominio: basta **un** $x$ con $P(x)$ falsa para que la proposición sea falsa, mientras que probarla requiere cubrir todos; "para todo" jamás significa "para muchos".
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
@@ -68,10 +73,10 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > > "**Para toda** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada universalmente**, y se escribe:
-> 
-> $$\forall x \in D : P(x)$$
-> 
+>
 > El símbolo $\forall$ se llama **cuantificador universal** y significa: "para todo", "para cualquier" o "para cada".
+>
+> **Ejemplo:** Para $P(x)$: «$x^2 \geq 0$» sobre $D=\mathbb{R}$, la proposición $\forall x \in D : P(x)$ es verdadera.
 
 > [!tip] ⚙️ Valor de Verdad
 > 
@@ -115,7 +120,9 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 ## 📚 ∃ Cuantificador Existencial
 
 > [!note] 📖 Definición 3 — Cuantificador Existencial
-> 
+>
+> $$\exists x \in D : P(x)$$
+>
 > **Se lee así:** $\exists x \in D : P(x)$ solo pide un ejemplar que funcione: un caso basta para $V$ y hace falta que **todos** fallen para $F$; es el espejo exacto de $\forall$ y "existe" no dice cuántos ni cuál.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
@@ -124,10 +131,10 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > > "**Existe** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada existencialmente**, y se escribe:
-> 
-> $$\exists x \in D : P(x)$$
-> 
+>
 > El símbolo $\exists$ se llama **cuantificador existencial** y significa: "existe", "existe un" o "existe algún".
+>
+> **Ejemplo:** La proposición $\exists x \in \mathbb{R} : x^2 = 4$ es verdadera porque $x=2$ es un valor que satisface $P(x)$.
 
 > [!tip] ⚙️ Valor de Verdad
 > 
@@ -169,6 +176,8 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 
 > [!note] 📖 Definición 5 — Cuantificador de Existencia Única
 >
+> $$\exists! x \in D : P(x)$$
+>
 > **Se lee así:** $\exists!$ aprieta doble: al menos uno **y** a lo sumo uno; la equivalencia $\exists x\,(P(x) \wedge \forall y\,(P(y) \to y = x))$ muestra la trampa: mostrar que existe uno y olvidar la parte $\forall y$ que descarta un segundo candidato.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 >
@@ -178,13 +187,13 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 >
 > es una proposición **cuantificada de existencia única**, y se escribe:
 >
-> $$\exists! x \in D : P(x)$$
->
 > El símbolo $\exists!$ se llama **cuantificador de existencia única** y significa: "existe exactamente uno" o "existe un único".
 >
 > Equivalentemente: hay al menos uno **y** no hay dos distintos que la cumplan:
 >
 > $$\exists! x \in D : P(x) \equiv \exists x \in D : \left(P(x) \wedge \forall y \in D : (P(y) \to y = x)\right)$$
+>
+> **Ejemplo:** $\exists! x \in \mathbb{R} : 2x+4=10$ es verdadera porque la única solución es $x=2$.
 
 > [!tip] ⚙️ Valor de Verdad
 >
@@ -265,6 +274,8 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > Se dice que hay **cuantificadores anidados** cuando una función proposicional depende de dos o más variables y cada una es cuantificada.
 > 
 > Sea $P(x,y)$ una función proposicional con dominio $D$. Entonces:
+>
+> **Ejemplo:** Si $P(x,y)$ significa «$y$ es un múltiplo de $x$» con $x,y\in\mathbb{Z}_{>0}$, entonces $\forall x\,\exists y : P(x,y)$ es verdadera porque cada $x$ tiene el múltiplo $2x$; en cambio, $\exists x\,\forall y : P(x,y)$ es falsa porque no hay un $x$ positivo que sea múltiplo de todos los positivos.
 
 ### Caso ∀∀
 

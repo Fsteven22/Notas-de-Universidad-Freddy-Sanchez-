@@ -24,7 +24,6 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 >
 > **En esta nota:** qué cuenta como proposición (y qué no: preguntas, órdenes, predicados abiertos), los 5 conectivos con su tabla, y cómo leer tautologías y contradicciones — la base de todo el curso.
 >
-> 
 > **Algunas aplicaciones:**
 > 
 > |Área|Aplicación|
@@ -39,7 +38,7 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 ## 📋 Proposiciones
 
-> [!note] 📖 Definición
+> [!note] 📖 Definición — Proposición
 > 
 > **Se lee así:** un enunciado es proposición solo si admite valor fijo $V$ o $F$ —una pregunta, una orden o una fórmula con variable libre como $3y^2 - 5y < 4y^3$ no lo son—; $VL(p)$ es ese valor y las atómicas son las que aún no usan conectivos.
 > Una **proposición** es una oración (enunciado) que es **verdadero o falso**, pero no ambas cosas a la vez. Se representan con las letras $p, q, r, s$, etc.
@@ -47,6 +46,8 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > - En general, se usarán $p_1, p_2, \ldots, p_n$ para representar proposiciones → las llamaremos **variables proposicionales**.
 > - El **valor lógico** de $p$, denotado $VL(p)$, es el valor $V$ o $F$ (también $1$ o $0$) dependiendo si $p$ es verdadera o falsa, respectivamente.
 > - Las proposiciones que **no contienen conectivos lógicos** se llaman **proposiciones atómicas**.
+> 
+> **Ejemplo:** $p$: «2 + 2 = 4» es una proposición con valor lógico $V$.
 
 ### 🔍 ¿Cuál es una proposición?
 
@@ -103,17 +104,21 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 ### 1️⃣ Negación ($\neg p$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Negación
+>
+> **Fórmula:** $VL(\neg p) = 1 - VL(p)$
+>
 > Sea $p$ una proposición. La **negación** de $p$, denotada $\neg p$, es la proposición "no $p$".
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-negacion.png]]
+>
 > |$p$|$\neg p$|
 > |:-:|:-:|
 > |V|F|
 > |F|V|
-> 
-> **Fórmula:** $VL(\neg p) = 1 - VL(p)$
-> 
+>
+> **Se lee así:** $\neg p$ invierte el valor lógico de $p$: si $p$ es verdadera, $\neg p$ es falsa, y viceversa.
+>
 > **Ejemplo:**
 > 
 > - $p$: "El cielo es azul." → $VL(p) = V$
@@ -123,65 +128,81 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 ### 2️⃣ Disyunción ($p \vee q$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Disyunción
+>
+> **Fórmula:** $VL(p \vee q) = \max{VL(p),\ VL(q)}$
+>
 > Sean $p$ y $q$ dos proposiciones. La **disyunción** de $p$ y $q$, denotada $p \vee q$, es la proposición "$p$ **o** $q$".
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-disjuncion.png]]
+>
 > |$p$|$q$|$p \vee q$|
 > |:-:|:-:|:-:|
 > |V|V|V|
 > |V|F|V|
 > |F|V|V|
 > |F|F|**F**|
-> 
+>
+> **Se lee así:** $p \vee q$ es verdadera cuando al menos una de las dos proposiciones es verdadera; solo es falsa si ambas son falsas.
+>
 > > [!example] 🟢 Ejemplo
 > >
 > > La disyunción es **falsa solo cuando ambas proposiciones son falsas**; en cualquier otro caso es verdadera.
-> 
-> **Fórmula:** $VL(p \vee q) = \max{VL(p),\ VL(q)}$
+>
+> **Ejemplo:** Si $p$ es «llueve» (verdadera) y $q$ es «hace frío» (falsa), $p \vee q$ es verdadera.
 
 ---
 
 ### 3️⃣ Conjunción ($p \wedge q$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Conjunción
+>
+> **Fórmula:** $VL(p \wedge q) = \min{VL(p),\ VL(q)}$
+>
 > Sean $p$ y $q$ dos proposiciones. La **conjunción** de $p$ y $q$, denotada $p \wedge q$, es la proposición "$p$ **y** $q$".
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-conjuncion.png]]
+>
 > |$p$|$q$|$p \wedge q$|
 > |:-:|:-:|:-:|
 > |V|V|**V**|
 > |V|F|F|
 > |F|V|F|
 > |F|F|F|
-> 
+>
+> **Se lee así:** $p \wedge q$ exige que ambas proposiciones sean verdaderas; basta que una sea falsa para que la conjunción sea falsa.
+>
 > > [!example] 🟢 Ejemplo
 > >
 > > La conjunción es **verdadera solo cuando ambas proposiciones son verdaderas**; en cualquier otro caso es falsa.
-> 
-> **Fórmula:** $VL(p \wedge q) = \min{VL(p),\ VL(q)}$
+>
+> **Ejemplo:** Si $p$ es «estudio» (verdadera) y $q$ es «apruebo» (falsa), $p \wedge q$ es falsa.
 
 ---
 
 ### 4️⃣ Disyunción Exclusiva ($p \veebar q$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Disyunción exclusiva
+>
+> **Fórmula:** $VL(p \veebar q) = |VL(p) - VL(q)|$
+>
 > Sean $p$ y $q$ dos proposiciones. La **disyunción exclusiva** de $p$ y $q$, denotada $p \veebar q$, es la proposición "**ó** $p$ **ó** $q$" (pero no ambas).
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-disjuncion-exclusiva.png]]
+>
 > |$p$|$q$|$p \veebar q$|
 > |:-:|:-:|:-:|
 > |V|V|F|
 > |V|F|**V**|
 > |F|V|**V**|
 > |F|F|F|
-> 
+>
+> **Se lee así:** $p \veebar q$ exige exactamente una verdad: es falsa si $p$ y $q$ son ambas verdaderas o ambas falsas.
+>
 > > [!example] 🟢 Ejemplo
 > >
 > > La disyunción exclusiva es **verdadera solo cuando $p$ y $q$ tienen valores lógicos distintos**.
-> 
-> **Fórmula:** $VL(p \veebar q) = |VL(p) - VL(q)|$
-> 
+>
 > **Ejemplo:**
 > 
 > - $p$: $(-5)^3 = -125$ → $VL(p) = V$
@@ -192,28 +213,33 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 ### 5️⃣ Condicional ($p \rightarrow q$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Condicional
+>
+> **Fórmula:** $VL(p \rightarrow q) = \max{1 - VL(p),\ VL(q)}$
+>
 > Sean $p$ y $q$ dos proposiciones. El **condicional** de $p$ y $q$, denotado $p \rightarrow q$, es la proposición "**si** $p$ **entonces** $q$".
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-condicional.png]]
+>
 > |$p$|$q$|$p \rightarrow q$|
 > |:-:|:-:|:-:|
 > |V|V|V|
 > |V|F|**F**|
 > |F|V|V|
 > |F|F|V|
-> 
+>
 > - $p$ es la **hipótesis** (antecedente)
->     
+>
 > - $q$ es la **conclusión** (consecuente)
->     
-> 
+>
+> **Se lee así:** $p \rightarrow q$ solo es falsa cuando $p$ es verdadera y $q$ es falsa; si $p$ es falsa, el condicional es verdadero por omisión.
+>
 > > [!example] 🟢 Ejemplo
 > >
 > > El condicional es **falso solo cuando el antecedente es verdadero y el consecuente es falso**.  
 > > Cuando el antecedente es falso, el condicional es **verdadero por omisión** (superficialmente verdadero).
-> 
-> **Fórmula:** $VL(p \rightarrow q) = \max{1 - VL(p),\ VL(q)}$
+>
+> **Ejemplo:** Si $p$ es «llueve» (verdadera) y $q$ es «salgo con paraguas» (falsa), $p \rightarrow q$ es falsa.
 
 > [!tip] 🔄 Formas Equivalentes del Condicional
 > 
@@ -253,22 +279,28 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 
 ### 6️⃣ Bicondicional ($p \leftrightarrow q$)
 
-> [!info] 📋 Definición y Tabla de Verdad
-> 
+> [!info] 📋 Definición — Bicondicional
+>
+> **Fórmula:** $VL(p \leftrightarrow q) = 1 - |VL(p) - VL(q)|$
+>
 > Sean $p$ y $q$ dos proposiciones. El **bicondicional** de $p$ y $q$, denotado $p \leftrightarrow q$, es la proposición "$p$ **si y solo si** $q$".
-> 
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-bicondicional.png]]
+>
 > |$p$|$q$|$p \leftrightarrow q$|
 > |:-:|:-:|:-:|
 > |V|V|**V**|
 > |V|F|F|
 > |F|V|F|
 > |F|F|**V**|
-> 
+>
+> **Se lee así:** $p \leftrightarrow q$ afirma que $p$ y $q$ tienen el mismo valor lógico: ambas verdaderas o ambas falsas.
+>
 > > [!example] 🟢 Ejemplo
 > >
 > > El bicondicional es **verdadero cuando $p$ y $q$ tienen el mismo valor lógico**.
-> 
-> **Fórmula:** $VL(p \leftrightarrow q) = 1 - |VL(p) - VL(q)|$
+>
+> **Ejemplo:** Si $p$ es «2 + 2 = 4» y $q$ es «2 × 2 = 4», ambas son verdaderas y $p \leftrightarrow q$ es verdadera.
 
 ---
 
@@ -324,6 +356,8 @@ tags: [matematicas-discretas, logica-proposicional, conectivos-logicos, tablas-d
 > |$p \rightarrow (q \rightarrow r)$|$VL(q \rightarrow r) = V$ (antecedente falso), luego $V \rightarrow V$|**V**|
 
 > [!example] 🧮 Ejemplo 3: Verificar equivalencia $\neg(p \rightarrow q) \equiv p \wedge \neg q$
+> 
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/tabla-verdad-negacion-condicional.png]]
 > 
 > |$p$|$q$|$\neg q$|$p \rightarrow q$|$\neg(p \rightarrow q)$|$p \wedge \neg q$|
 > |:-:|:-:|:-:|:-:|:-:|:-:|

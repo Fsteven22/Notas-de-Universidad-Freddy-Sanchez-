@@ -20,15 +20,19 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 
 > [!note] 📋 Definición 2 — Par Ordenado y Producto Cartesiano
 > 
-> Sean a, b dos elementos. El **par ordenado** (a, b) indica que a es el primer elemento y b el segundo. Por ello, (a, b) ≠ (b, a) salvo que a = b.
-> 
 > $$(a, b) = (c, d) \iff a = c \text{ y } b = d$$
+>
+> Sean a, b dos elementos. El **par ordenado** (a, b) indica que a es el primer elemento y b el segundo. Por ello, (a, b) ≠ (b, a) salvo que a = b.
 > 
 > Sean X, Y dos conjuntos. El **producto cartesiano** de X e Y, denotado X × Y, es:
 > 
 > $$X \times Y = {(x,y) : x \in X \text{ y } y \in Y}$$
 > 
 > En general, X × Y ≠ Y × X.
+>
+> **Se lee así:** el par ordenado conserva las posiciones de sus elementos, mientras que el producto cartesiano reúne todas las combinaciones posibles de X con Y.
+>
+> **Ejemplo:** para $X=\{1,2\}$ y $Y=\{a\}$, se tiene $X\times Y=\{(1,a),(2,a)\}$ y $(1,2)\neq(2,1)$.
 
 > [!example] 📝 Ejemplo 11 — Producto cartesiano
 > 
@@ -49,6 +53,10 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > Si R es una relación de X en Y, escribiremos **xRy** si (x, y) ∈ R, y diremos que x está **relacionado con y** mediante R.
 > 
 > Si X = Y, diremos que R es una **relación sobre X**.
+>
+> **Se lee así:** una relación es un conjunto de pares: $xRy$ significa exactamente que el par $(x,y)$ pertenece a $R$.
+>
+> **Ejemplo:** $R=\{(1,2),(3,2),(4,0),(3,5)\}$ es una relación de $\{1,3,4\}$ en $\{0,2,5\}$.
 
 > [!example] 📝 Ejemplo 10 — Relación vs. función
 > 
@@ -64,10 +72,13 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > [!note] 🔍 Definición 9 — Dominio y Rango de una Relación
 > 
 > Si R es una relación de X en Y:
-> 
 > $$\text{dom}(R) = {x \in X : xRy \text{ para algún } y \in Y}$$
-> 
+>
 > $$\text{rang}(R) = {y \in Y : xRy \text{ para algún } x \in X}$$
+>
+> **Se lee así:** el dominio reúne las primeras componentes de los pares de $R$, mientras que el rango reúne sus segundas componentes.
+>
+> **Ejemplo:** para $R=\{(2,4),(2,6),(3,3),(3,6),(4,4)\}$ se tiene $\text{dom}(R)=\{2,3,4\}$ y $\text{rang}(R)=\{3,4,6\}$.
 
 > [!example] 📝 Ejemplo 11 — Dominio, rango y matriz
 > 
@@ -96,10 +107,13 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > [!note] 🔁 Definición 10 — Relación Inversa
 > 
 > Sea R una relación de X en Y. La **inversa** de R, denotada R⁻¹, es la relación de Y en X:
-> 
 > $$R^{-1} = {(y,x) : (x,y) \in R}$$
-> 
+>
 > Equivalentemente: xR⁻¹y ⟺ yRx.
+>
+> **Se lee así:** para invertir una relación se intercambian las dos posiciones de cada par, obteniendo una relación de $Y$ en $X$.
+>
+> **Ejemplo:** si $R=\{(2,4),(2,6),(3,3),(3,6),(4,4)\}$, entonces $R^{-1}=\{(4,2),(6,2),(3,3),(6,3),(4,4)\}$.
 
 > [!example] 📝 Ejemplo 12 — Relación inversa
 > 
@@ -110,8 +124,11 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > [!note] 🔁 Definición 11 — Composición de Relaciones
 > 
 > Sean R₁ de X en Y y R₂ de Y en Z. La **compuesta** de R₂ y R₁, denotada R₂ ∘ R₁, es:
-> 
 > $$R_2 \circ R_1 = {(x,z) : xR_1y \land yR_2z \text{ para algún } y \in Y}$$
+>
+> **Se lee así:** primero se sigue $R_1$ desde $X$ hasta $Y$ y luego $R_2$ desde $Y$ hasta $Z$, usando un elemento intermedio $y$.
+>
+> **Ejemplo:** con $R_1=\{(1,3),(2,3),(2,4)\}$ y $R_2=\{(2,0),(3,0),(3,-1),(4,2)\}$, el par $(2,2)$ pertenece a $R_2\circ R_1$ porque $2R_1 4$ y $4R_2 2$.
 
 > [!example] 📝 Ejemplo 13 — Composición de relaciones
 > 
@@ -206,6 +223,10 @@ tags: [matematicas-discretas, relaciones, producto-cartesiano, par-ordenado, dom
 > |**Simétrica**|xRy ⟹ yRx|
 > |**Antisimétrica**|xRy ∧ yRx ⟹ x = y|
 > |**Transitiva**|xRy ∧ yRz ⟹ xRz|
+>
+> **Se lee así:** cada fila plantea una pregunta sobre los pares de una relación sobre $X$ y la implicación que debe cumplirse.
+>
+> **Ejemplo:** $R=\{(1,1),(2,2),(1,2),(2,1)\}$ sobre $\{1,2\}$ es reflexiva y simétrica, pero no antisimétrica.
 
 > [!note] 🔵 Propiedad Reflexiva
 > 

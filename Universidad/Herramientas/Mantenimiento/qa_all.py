@@ -26,6 +26,16 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Las sub-herramientas corren con -X utf8 y su salida puede traer caracteres
+# que la consola de Windows (cp1252) no sabe imprimir: α, θ, ω, ℝ, ⁿ...
+# Sin esto, print() aborta con UnicodeEncodeError y el QA global se cae a
+# mitad de camino, sin llegar al resumen final.
+for _flujo in (sys.stdout, sys.stderr):
+    try:
+        _flujo.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):   # pragma: no cover
+        pass
+
 SCRIPTS = [
     "qa_assets_huerfanos.py",
     "qa_resolucion_diagramas.py",

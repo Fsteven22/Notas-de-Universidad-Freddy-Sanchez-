@@ -27,6 +27,10 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > Un **árbol binario** es un árbol con raíz en el que cada vértice tiene **a lo más dos hijos**. Si el vértice tiene un solo hijo, se designa como **hijo izquierdo** o **hijo derecho** (pero no ambos). Si tiene dos hijos, uno se designa como **hijo izquierdo** y el otro como **hijo derecho**.
 > 
 > Un **árbol binario completo** es un árbol binario en el que cada vértice tiene **dos o cero hijos** (nunca exactamente uno).
+> 
+> **Se lee así:** cada vértice admite como máximo dos hijos, y la distinción entre izquierda y derecha fija el orden de la estructura.
+> 
+> **Ejemplo:** una raíz $A$ con hijo izquierdo $B$ y hijo derecho $C$ es un árbol binario; una raíz con tres hijos no lo sería.
 
 > [!success] ✅ Teorema — Conteo de vértices en un árbol binario completo
 > 
@@ -119,6 +123,10 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > [!note] 📋 Definición — Árbol de búsqueda binaria
 > 
 > Un **árbol de búsqueda binaria** es un árbol binario $T$ en el que se asocian datos a los vértices, arreglados de manera que para cada vértice $v$ en $T$: cada dato en el **subárbol izquierdo** de $v$ es **menor** que el dato en $v$, y cada dato en el **subárbol derecho** de $v$ es **mayor** que el dato en $v$.
+> 
+> **Se lee así:** en cada vértice, los datos menores quedan a la izquierda y los mayores a la derecha; por eso el entreorden entrega los datos ordenados.
+> 
+> **Ejemplo:** con `PERRO` como raíz, `GATO` queda en el subárbol izquierdo y `ZORRO` en el derecho, porque `GATO < PERRO < ZORRO`.
 
 > [!example] 📝 Ejemplo 4 — Ordenando palabras alfabéticamente
 > 
@@ -143,6 +151,10 @@ tags: [matematicas-discretas, arboles, arboles-binarios, huffman, recorridos, MA
 > - **Postorden:** el subárbol izquierdo primero, luego el subárbol derecho, luego la raíz **al final**.
 > 
 > Cada recorrido se define **recursivamente**: para recorrer un subárbol, se aplica la misma regla a sus propios subárboles.
+> 
+> **Se lee así:** el prefijo indica si la raíz se visita antes, entre o después de sus dos subárboles, y esa misma regla se repite en cada subárbol.
+> 
+> **Ejemplo:** para la raíz $A$ con hijo izquierdo $B$ y derecho $C$, el preorden es $A,B,C$, el entreorden es $B,A,C$ y el postorden es $B,C,A$.
 
 > [!example] 📝 Ejemplo 5 — Los tres recorridos sobre el mismo árbol
 > 

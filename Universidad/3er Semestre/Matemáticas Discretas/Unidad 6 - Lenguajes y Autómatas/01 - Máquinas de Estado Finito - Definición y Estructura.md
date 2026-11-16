@@ -48,6 +48,10 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 > ![[../Unidad 0 - Guias y Ejercicios/Diagramas/dis-u6-02-02-graph.svg]]
 >
 > **Observación:** el retraso unitario permite almacenar información del instante anterior — es el bloque más simple que introduce "memoria" en un sistema digital.
+>
+> **Se lee así:** la salida del instante $t$ es exactamente la entrada recibida en $t-1$; por eso este sistema conserva solo el último bit.
+>
+> **Ejemplo:** con $x_{-1}=0$, la entrada $(1,0,1,1,0)$ produce la salida $(0,1,0,1,1)$.
 
 > [!example] 🟢 Ejemplo — Retraso unitario aplicado a una secuencia
 >
@@ -70,13 +74,17 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 
 > [!note] 📋 Definición — Sumador en serie
 >
-> Un **sumador en serie** acepta dos números binarios
->
 > $$x = 0x_Nx_{N-1}\cdots x_0, \qquad y = 0y_Ny_{N-1}\cdots y_0$$
+>
+> $$(x_0,y_0),(x_1,y_1),\ldots,(x_N,y_N),(0,0)$$
+>
+> Un **sumador en serie** acepta dos números binarios
 >
 > y produce la suma $z = z_{N+1}z_N\cdots z_0$. Los bits se introducen secuencialmente por pares:
 >
-> $$(x_0,y_0),(x_1,y_1),\ldots,(x_N,y_N),(0,0)$$
+> **Se lee así:** los bits se procesan de derecha a izquierda, y los dos estados $NC$ y $C$ conservan únicamente si hay un acarreo pendiente.
+>
+> **Ejemplo:** con $x=010$ y $y=011$, la trayectoria de estados es $NC \xrightarrow{(0,1)} NC \xrightarrow{(1,1)} C \xrightarrow{(0,0)} NC$, y la salida es $z_2z_1z_0=101$.
 
 > [!note] 🔩 Estructura del sumador en serie
 >
@@ -121,9 +129,9 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 
 > [!note] 📋 Definición — Máquina de estado finito
 >
-> Una **máquina de estado finito** es una sextupla
->
 > $$M = (I, O, S, f, g, \sigma)$$
+>
+> Una **máquina de estado finito** es una sextupla
 >
 > donde:
 > 1. $I$ es un [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] finito de **símbolos de entrada**.
@@ -132,6 +140,10 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 > 4. $f : S \times I \to S$ es la **[[01 - Funciones|función]] de siguiente estado**.
 > 5. $g : S \times I \to O$ es la **función de salida**.
 > 6. $\sigma \in S$ es el **estado inicial**.
+>
+> **Se lee así:** la sextupla separa memoria, reglas y punto de partida: $f$ decide el estado siguiente y $g$ la salida emitida para cada par $(s,i)$.
+>
+> **Ejemplo:** en la máquina de dos estados, desde $\sigma_0$ la entrada $b$ produce $f(\sigma_0,b)=\sigma_1$ y $g(\sigma_0,b)=1$.
 
 > [!note] 📋 Interpretación de los componentes
 >
@@ -167,11 +179,15 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 
 > [!note] 📋 Definición — Diagrama de transición
 >
-> Sea $M=(I,O,S,f,g,\sigma)$ una máquina de estado finito. El **diagrama de transición** de $M$ es un digrafo cuyos vértices son los estados de $S$. Hay una [[01 - Grafos I - Conceptos Básicos y Recorridos|arista]] dirigida de $s_1$ a $s_2$ con etiqueta $i/o$ si
->
 > $$f(s_1,i)=s_2 \quad \text{y} \quad g(s_1,i)=o$$
 >
+> Sea $M=(I,O,S,f,g,\sigma)$ una máquina de estado finito. El **diagrama de transición** de $M$ es un digrafo cuyos vértices son los estados de $S$. Hay una [[01 - Grafos I - Conceptos Básicos y Recorridos|arista]] dirigida de $s_1$ a $s_2$ con etiqueta $i/o$ si
+>
 > Una flecha entrante señala el estado inicial $\sigma$. Cada etiqueta tiene la forma **entrada/salida**.
+>
+> **Se lee así:** cada flecha resume una transición y su salida: la etiqueta $i/o$ se lee «entrada/salida», mientras que la flecha sin origen señala el estado inicial.
+>
+> **Ejemplo:** en la máquina de dos estados, $\sigma_0 \xrightarrow{b/1} \sigma_1$ significa $f(\sigma_0,b)=\sigma_1$ y $g(\sigma_0,b)=1$.
 
 > [!note] 📊 Diagrama del ejemplo de dos estados
 >
@@ -185,11 +201,15 @@ tags: [matematicas-discretas, maquinas-estado-finito, sistemas-secuenciales, sum
 
 > [!note] 📋 Definición — Cadena de salida
 >
-> Sea $\alpha = x_1x_2\cdots x_n$ una cadena de entrada. La cadena $y_1y_2\cdots y_n$ es la **salida correspondiente** si existen estados $\sigma_0,\sigma_1,\ldots,\sigma_n$ tales que
->
 > $$\sigma_0=\sigma, \qquad \sigma_i=f(\sigma_{i-1},x_i), \qquad y_i=g(\sigma_{i-1},x_i)$$
 >
+> Sea $\alpha = x_1x_2\cdots x_n$ una cadena de entrada. La cadena $y_1y_2\cdots y_n$ es la **salida correspondiente** si existen estados $\sigma_0,\sigma_1,\ldots,\sigma_n$ tales que
+>
 > Una máquina de estado finito puede verse como una computadora sencilla: inicia en $\sigma$, lee una cadena sobre $I$, y produce una cadena de salida sobre $O$.
+>
+> **Se lee así:** la salida se obtiene símbolo por símbolo: $f$ avanza al estado siguiente y $g$ emite la salida usando el estado anterior y el símbolo leído.
+>
+> **Ejemplo:** para $\alpha=aababba$, la máquina de dos estados emite la cadena $0011001$.
 
 > [!example] 🟢 Ejemplo — Salida para la cadena $aababba$
 >

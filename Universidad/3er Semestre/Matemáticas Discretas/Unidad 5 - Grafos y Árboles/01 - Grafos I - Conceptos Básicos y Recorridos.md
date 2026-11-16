@@ -35,23 +35,31 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 
 > [!note] 📋 Definición 1 — Grafo no dirigido
 > 
+> $$e = {u, v}$$
+> 
 > Un **grafo (no dirigido)** $G$ consiste en un [[04 - Cardinalidad y Leyes de Cardinalidad|Cardinalidad]] $V$ de **vértices** (o nodos) y un conjunto $E$ de **aristas**, tal que cada arista $e \in E$ se asocia con un **par no ordenado** de vértices.
 > 
 > Si existe una arista única $e$ asociada con los vértices $u, v \in V$, se escribe:
 > 
-> $$e = {u, v}$$
-> 
 > Aquí ${u, v}$ simplemente denota una arista entre $u$ y $v$.
+> 
+> **Se lee así:** $V$ es el conjunto de vértices y $E$ el de aristas; como el par es no ordenado, ${u,v}$ y ${v,u}$ representan la misma conexión.
+> 
+> **Ejemplo:** en el triángulo $K_3$, la arista entre $v_1$ y $v_2$ se escribe ${v_1,v_2}$, y ${v_2,v_1}$ sigue siendo la misma arista.
 
 > [!note] 📋 Definición 2 — Digrafo (grafo dirigido)
+> 
+> $$e = (u, v)$$
 > 
 > Un **digrafo** $G$ consiste en un conjunto $V$ de vértices y un conjunto $E$ de aristas (o **arcos**), tal que cada arista $e \in E$ está asociada con un **par ordenado** de vértices.
 > 
 > Si hay una arista única $e$ asociada con el par ordenado $(u, v)$, se escribe:
 > 
-> $$e = (u, v)$$
-> 
 > lo que denota una arista dirigida **de $u$ a $v$**.
+> 
+> **Se lee así:** el par $(u,v)$ indica el origen y el destino, por lo que invertir sus posiciones cambia el arco.
+> 
+> **Ejemplo:** en un digrafo, los arcos $(u,v)$ y $(v,u)$ representan conexiones en direcciones opuestas y no son el mismo arco.
 
 > [!tip] 🖥️ Diferencia clave para programar
 > 
@@ -69,6 +77,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Los vértices $u$ y $v$ se dicen **adyacentes**.
 > 
 > Se escribe $G = (V, E)$ para indicar explícitamente el conjunto de vértices y el conjunto de aristas.
+> 
+> **Se lee así:** la incidencia relaciona una arista con sus extremos, mientras que la adyacencia relaciona directamente a dos vértices unidos por una arista.
+> 
+> **Ejemplo:** en el triángulo $K_3$, la arista $e={v_1,v_2}$ incide en $v_1$ y $v_2$, por lo que $v_1$ y $v_2$ son adyacentes.
 
 ---
 
@@ -82,6 +94,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Si dos aristas distintas $e_1, e_2 \in E$ se asocian con el **mismo par** de vértices, se llaman **aristas paralelas**.
 > - Un vértice que **no incide** en ninguna arista se llama **vértice aislado**.
 > - Un grafo **sin lazos ni aristas paralelas** se llama **grafo simple**.
+> 
+> **Se lee así:** un grafo simple excluye tanto los lazos como las aristas paralelas; un vértice aislado es el caso extremo de grado $0$.
+> 
+> **Ejemplo:** en el grafo del Ejemplo 1, $e_3$ es un lazo, $e_1$ y $e_2$ son paralelas, y $v_4$ es un vértice aislado; por ello ese grafo no es simple.
 
 > [!example] 🟢 Ejemplo 1 — Identificando lazos, aristas paralelas y vértices aislados
 > 
@@ -100,10 +116,13 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 📋 Definición 5 — Trayectoria (ruta)
 > 
 > Sean $u$ y $v$ vértices en un grafo. Una **trayectoria o ruta** de $u$ a $v$ de longitud $n$ es una [[04 - Sucesiones y Cadenas|sucesión]] alternante de $n+1$ vértices y $n$ aristas que comienza en $v_0 = u$ y termina en $v_n = v$:
-> 
 > $$(v_0, e_1, v_1, e_2, v_2, \ldots, v_{n-1}, e_n, v_n)$$
 > 
 > donde la arista $e_i$ es incidente sobre $v_{i-1}$ y $v_i$ para $i = 1, \ldots, n$.
+> 
+> **Se lee así:** la sucesión alterna vértices y aristas; su longitud $n$ cuenta las aristas recorridas, no los vértices.
+> 
+> **Ejemplo:** en el triángulo $K_3$, la trayectoria $v_0-v_1-v_2$ tiene longitud $2$ y pasa por tres vértices.
 
 ---
 
@@ -112,6 +131,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 📋 Definición 6 — Grafo completo $K_n$
 > 
 > El **grafo completo** sobre $n$ vértices, denotado $K_n$, es el grafo simple con $n$ vértices en el que hay una arista entre **cada par de vértices distintos**.
+> 
+> **Se lee así:** cada par de vértices de $K_n$ está unido por exactamente una arista, de modo que el grafo tiene $\binom{n}{2}$ aristas.
+> 
+> **Ejemplo:** un triángulo $K_3$ tiene 3 vértices, 3 aristas y un ciclo de longitud 3.
 
 > [!example] 🟢 Ejemplo 2 — $K_4$
 > 
@@ -126,6 +149,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - $V_1 \cap V_2 = \varnothing$
 > - $V_1 \cup V_2 = V$
 > - cada arista en $E$ es incidente sobre un vértice en $V_1$ y un vértice en $V_2$
+> 
+> **Se lee así:** los vértices se reparten en dos conjuntos $V_1$ y $V_2$, y cada arista debe cruzar de un conjunto al otro.
+> 
+> **Ejemplo:** en el grafo bipartito del ejemplo se usa $V_1={v_1,v_2,v_3}$ y $V_2={v_4,v_5}$, sin aristas entre vértices de un mismo conjunto.
 
 > [!example] 🟢 Ejemplo 3 — Grafo bipartito vs. no bipartito
 > 
@@ -145,11 +172,19 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > 
 > Un grafo $G$ es **ponderado** si se asigna un valor o etiqueta (llamado **peso**) a cada arista. Si el valor de la arista $e$ es $k$, decimos que el **peso** de $e$ es $k$.
 > 
+> **Se lee así:** el peso etiqueta cada arista; la longitud de una ruta en este grafo se obtiene sumando los pesos de sus aristas.
+> 
+> **Ejemplo:** si una ruta tiene aristas de pesos $2$ y $3$, su longitud ponderada es $2+3=5$.
+> 
 > > [!warning] ⚠️ Longitud en grafos ponderados En un grafo ponderado, la **longitud** de una ruta es la **suma de los pesos** de las aristas en la ruta — no el número de aristas.
 
 > [!note] 📋 Definición 9 — Grafo bipartito completo $K_{m,n}$
 > 
 > El **grafo bipartito completo** sobre $m$ y $n$ vértices, denotado $K_{m,n}$, es el grafo simple donde el conjunto de vértices tiene una partición en $V_1$ (con $m$ vértices) y $V_2$ (con $n$ vértices), y donde el conjunto de aristas consiste en **todas** las aristas de la forma ${v_1, v_2}$ con $v_1 \in V_1$ y $v_2 \in V_2$.
+> 
+> **Se lee así:** cada vértice de $V_1$ se conecta con todos los vértices de $V_2$, pero no hay aristas dentro de cada conjunto.
+> 
+> **Ejemplo:** $K_{2,4}$ tiene $2$ vértices en un conjunto, $4$ en el otro y $2\times4=8$ aristas.
 > 
 > > [!warning] ⚠️ Cuidado con la confusión Un grafo bipartito completo **no necesariamente** es un grafo completo. $K_{2,4}$ tiene $2 \times 4 = 8$ aristas, mientras que un grafo completo con $6$ vértices ($K_6$) tendría $\binom{6}{2}=15$.
 
@@ -160,6 +195,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > [!note] 📋 Definición 10 — Grafo conexo
 > 
 > Un grafo $G = (V, E)$ es **conexo** si para cualquier par de vértices $u, v \in V$ existe una trayectoria en $G$ de $u$ a $v$. En caso contrario, $G$ es **disconexo**.
+> 
+> **Se lee así:** hay que poder ir de cualquier vértice $u$ a cualquier otro vértice $v$ siguiendo aristas del grafo.
+> 
+> **Ejemplo:** en un triángulo $K_3$ existe una trayectoria entre cualquier par de vértices, así que $K_3$ es conexo.
 
 ---
 
@@ -171,6 +210,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Un **ciclo** es una trayectoria de longitud distinta de cero de $v$ a $v$ **sin aristas repetidas**.
 > - Un **ciclo simple** es un ciclo de $v$ a $v$ en el que no hay vértices repetidos, excepto por el inicio y el fin que coinciden.
 > - El **grado** de un vértice $v$, denotado $\delta(v)$, es el número de aristas que inciden en $v$ (**los lazos se cuentan doble**).
+> 
+> **Se lee así:** una trayectoria simple no repite vértices; un ciclo vuelve al origen, y el grado cuenta las incidencias en cada vértice, contando dos veces cada lazo.
+> 
+> **Ejemplo:** en $K_3$, cada vértice tiene grado $2$ y el recorrido $v_1-v_2-v_3-v_1$ es un ciclo simple de longitud 3.
 
 > [!example] 🟢 Ejemplo 4 — Trayectorias, ciclos y grados
 > 
@@ -182,7 +225,6 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 >     
 > - Grados: $\delta(v_1)=2,\ \delta(v_2)=5,\ \delta(v_3)=1,\ \delta(v_4)=0,\ \delta(v_5)=1,\ \delta(v_6)=1$.
 >     
-> 
 > > [!tip]- 💡 ¿Por qué $\delta(v_2) = 5$? $v_2$ incide en $e_1$ (1), $e_2$ (1), $e_3$ como lazo (**2**, porque los lazos cuentan doble) y $e_4$ (1). Total: $1+1+2+1 = 5$.
 
 ---
@@ -194,6 +236,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Un **camino de Euler** en un grafo $G$ es una trayectoria **sin aristas repetidas** que incluye **todas** las aristas y **todos** los vértices de $G$.
 > - Un **ciclo de Euler** en un grafo $G$ es un ciclo que incluye todas las aristas y todos los vértices de $G$.
 > - Un **grafo Euleriano** es un grafo que contiene un ciclo de Euler.
+> 
+> **Se lee así:** el recorrido de Euler debe usar cada arista exactamente una vez; el ciclo añade que el recorrido termine donde empezó.
+> 
+> **Ejemplo:** el triángulo $K_3$ es Euleriano, pues el recorrido $v_1-v_2-v_3-v_1$ usa sus tres aristas una sola vez y regresa al inicio.
 
 > [!success] ✅ Teorema de Euler (condición necesaria y suficiente)
 > 
@@ -219,6 +265,10 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 > - Un **camino hamiltoniano** en un grafo $G$ es una trayectoria simple que pasa por **todos** los vértices de $G$.
 > - Un **ciclo hamiltoniano** es un ciclo simple que pasa por **todos** los vértices de $G$.
 > - Un grafo que contiene un ciclo hamiltoniano se llama **grafo hamiltoniano**.
+> 
+> **Se lee así:** el recorrido hamiltoniano visita cada vértice exactamente una vez; el ciclo termina además en el vértice inicial.
+> 
+> **Ejemplo:** en $C_5$, el ciclo $v_1-v_2-v_3-v_4-v_5-v_1$ pasa por los cinco vértices exactamente una vez, por lo que es hamiltoniano.
 
 > [!example] 🟢 Ejemplo 5 — Ciclo hamiltoniano
 > 
@@ -245,7 +295,6 @@ tags: [matematicas-discretas, grafos, teoria-de-grafos, euler, hamilton, konigsb
 >     
 > 4. Si $|V| = n$, cualquier ciclo de Hamilton en $G$ tiene longitud $n$.
 >     
-> 
 > > [!warning] ⚠️ Estas son condiciones necesarias, no suficientes Que un grafo cumpla estas 4 condiciones **no garantiza** que tenga ciclo de Hamilton. Solo sirven para **descartar** rápidamente grafos que NO pueden tenerlo.
 
 > [!success] ✅ Teorema de Dirac (condición suficiente)

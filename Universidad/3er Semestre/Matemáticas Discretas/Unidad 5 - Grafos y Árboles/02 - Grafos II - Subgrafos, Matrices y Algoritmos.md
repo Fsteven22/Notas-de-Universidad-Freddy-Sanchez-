@@ -33,6 +33,10 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > b) Para cada arista $e \in E'$, si $e$ incide en $v'$ y en $w'$, entonces $v', w' \in V'$.
 > 
+> **Se lee así:** un subgrafo recorta tanto vértices como aristas del grafo original, pero toda arista conservada debe conservar también sus dos extremos.
+> 
+> **Ejemplo:** en el grafo del Ejemplo 1, el subgrafo que conserva las aristas $e_5,e_8,e_{10},e_{11}$ incluye también todos sus vértices incidentes.
+> 
 > > [!warning] ⚠️ La condición (b) es la que suele fallar No basta con tomar cualquier [[01 - Conjuntos, Cardinalidad y Subconjuntos|subconjunto]] de aristas: si una arista está en $E'$, **ambos** vértices que toca deben estar en $V'$. No puedes "recortar" una arista dejando uno de sus extremos afuera.
 
 > [!example] 🟢 Ejemplo 1 — Un subgrafo válido
@@ -50,6 +54,10 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > [!note] 📋 Definición 2 — Componente de un grafo
 > 
 > Sea $G$ un grafo y $v$ un vértice en $G$. El subgrafo $G'$ de $G$ que consiste en **todas** las aristas y vértices de $G$ que están contenidos en trayectorias que comienzan en $v$ se llama la **componente** de $G$ que contiene a $v$.
+> 
+> **Se lee así:** desde $v$ se sigue todas las trayectorias posibles; los vértices alcanzados y las aristas usadas forman su componente conexa.
+> 
+> **Ejemplo:** en el grafo disconexo del Ejemplo 2, $\{v_1,v_2,v_3\}$ es una componente, $\{v_4\}$ es otra y $\{v_5,v_6\}$ es la tercera.
 > 
 > > [!success] ✅ [[02 - Relaciones|Relación]] entre conexidad y componentes:
 > > $G$ es **conexo** si y solo si $G$ posee **una sola componente**.
@@ -92,11 +100,19 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > Sea $G$ un grafo con $m$ vértices y un orden fijo para ellos. La **matriz de adyacencia** de $G$ es la matriz cuadrada de orden $m$ cuya componente $ij$ es el **número de aristas** que inciden en los vértices $v_i$ y $v_j$, **contando los lazos dos veces**.
 > 
+> **Se lee así:** cada posición $(i,j)$ cuenta las aristas entre $v_i$ y $v_j$; por eso la suma de una fila da el grado del vértice correspondiente.
+> 
+> **Ejemplo:** en la matriz del Ejemplo 3, la segunda fila suma $6=\delta(v_2)$ y el valor $A_{22}=2$ indica un lazo en $v_2$.
+> 
 > > [!tip] 🖥️ Propiedad útil para programar Dado $i \in {1,\ldots,m}$, la suma de los elementos en la fila $i$ es exactamente $\delta(v_i)$ — puedes calcular todos los grados sumando filas de la matriz.
 
 > [!note] 📋 Definición 4 — Matriz de incidencia
 > 
 > Si $G$ tiene $m$ vértices y $n$ aristas, fijado un orden para ambos conjuntos, la **matriz de incidencia** es la matriz de orden $m \times n$ cuya componente $ij$ es $1$ si la arista $j$ incide en el vértice $i$, y $0$ en caso contrario.
+> 
+> **Se lee así:** las filas corresponden a vértices y las columnas a aristas; la entrada $ij$ indica si la arista $j$ toca al vértice $i$.
+> 
+> **Ejemplo:** en la matriz de incidencia del Ejemplo 3, la primera fila es $(1,0,1,0,0,0,0)$, así que $e_1$ y $e_3$ inciden en $v_1$.
 
 > [!example] 🟢 Ejemplo 3 — Matrices de adyacencia e incidencia
 > 
@@ -115,6 +131,10 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > Dado un grafo ponderado $G$, el **problema del agente viajero (TSP)** consiste en encontrar un **ciclo de Hamilton de longitud mínima**.
 > 
 > Si los vértices son ciudades y los pesos son distancias, el problema consiste en encontrar la ruta más corta que visite cada ciudad exactamente una vez, comenzando y terminando en la misma ciudad.
+> 
+> **Se lee así:** se comparan ciclos de Hamilton que pasan una vez por cada vértice y se elige el de menor suma de pesos.
+> 
+> **Ejemplo:** en el grafo del Ejemplo 4, el ciclo $(a,b,c,d,a)$ es un ciclo de Hamilton de longitud mínima $10$.
 
 > [!example] 🟢 Ejemplo 4 — Resolviendo un TSP pequeño
 > 

@@ -31,6 +31,8 @@ tags: [matematicas-discretas, logica-predicados, cuantificadores, particularizac
 > | $P(d),\ \text{para toda } d \in D \Rightarrow \forall x \in D : P(x)$ | **Generalización Universal** |
 > | $\exists x \in D : P(x) \Rightarrow P(d),\ \text{para alguna } d \in D$ | **Particularización Existencial** |
 > | $P(d),\ \text{para alguna } d \in D \Rightarrow \exists x \in D : P(x)$ | **Generalización Existencial** |
+>
+> **Ejemplo:** Si $\forall x \in \mathbb{R} : x^2 \geq 0$ es verdadera, la particularización universal permite tomar $d=2$ y obtener $P(2)$: «$2^2 \geq 0$» es verdadera.
 
 > [!note] 🖼️ Captura — Tabla de Reglas para Cuantificadores
 >
