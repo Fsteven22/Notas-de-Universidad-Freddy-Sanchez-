@@ -17,7 +17,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
 >
 > - Trabaja con fuente DC dual ±15 V.
 > - Manipula conexiones solo con la fuente apagada.
@@ -152,7 +152,9 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
 ## Metas de Aprendizaje
 

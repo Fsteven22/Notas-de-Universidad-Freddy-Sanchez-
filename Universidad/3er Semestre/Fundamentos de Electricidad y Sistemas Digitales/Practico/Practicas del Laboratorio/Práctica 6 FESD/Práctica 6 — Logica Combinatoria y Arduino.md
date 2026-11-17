@@ -17,7 +17,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
 >
 > - No exceder **5 V** en entradas lógicas de los IC (74LS/74HC).
 > - Manipula conexiones con la fuente apagada.
@@ -202,7 +202,9 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> [!tip] 📄 Informe
+>
+> Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
 ## Metas de Aprendizaje
 

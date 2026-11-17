@@ -136,7 +136,7 @@ dg-publish: true
 
 ### Convertidor Tensión → Corriente (Howland simplificado)
 
-> [!note] 🔁 V → I
+> [!note] 🔁 Convertidor V → I
 >
 > $$i_s = \frac{v_i}{R}$$
 >
@@ -144,7 +144,7 @@ dg-publish: true
 
 ### Convertidor Corriente → Tensión (Transimpedancia)
 
-> [!note] 🔁 I → V
+> [!note] 🔁 Convertidor I → V
 >
 > $$\boxed{v_o = -R\,i_e}$$
 >

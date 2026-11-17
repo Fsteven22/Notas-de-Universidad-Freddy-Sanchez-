@@ -594,7 +594,7 @@ def main():
         for reln, a, b in fijados:
             print("  %s :: %s -> %s" % (reln, a[:36], b[:36]))
 
-    filas = ["qa_formato_sbd — %s — %d notas" % (os.path.relpath(raiz, vault), notas), ""]
+    filas = ["qa_formato_fesd — %s — %d notas" % (os.path.relpath(raiz, vault), notas), ""]
     for cod, n in orden:
         sev = " (H)" if cod in CODIGOS_H else (" (P)" if cod in CODIGOS_P else "")
         filas.append("%s=%d%s" % (cod, n, sev))

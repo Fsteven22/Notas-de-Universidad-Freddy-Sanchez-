@@ -101,9 +101,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!quote] 🔗 Navegación
 >
 > - Syllabus: [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales]]
-
-- [[Recursos Visuales|Recursos Visuales]]
-
-- [[Índice de Contenido]]
+> - [[Recursos Visuales|Recursos Visuales]]
+> - [[Índice de Contenido]]
 
 **Tags:** #FESD #EYAG1037 #ESPOL #indice #mapa-de-contenido

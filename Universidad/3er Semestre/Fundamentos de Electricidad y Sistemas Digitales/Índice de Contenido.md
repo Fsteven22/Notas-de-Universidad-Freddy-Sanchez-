@@ -54,6 +54,8 @@ tags: [unidad0, indice, recursos]
 
 ### 📄 PDFs de la Unidad 0
 
+> [!info] 📎 15 PDFs de la Unidad 0
+>
 > - [[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 1 2026.pdf|FESD SESIÓN 1 2026.pdf]]
 > - [[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 2 2026.pdf|FESD SESIÓN 2 2026.pdf]]
 > - [[Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/FESD SESIÓN 3 2026.pdf|FESD SESIÓN 3 2026.pdf]]
@@ -72,6 +74,8 @@ tags: [unidad0, indice, recursos]
 
 ### 🎬 Videos recomendados de la Unidad 0
 
+> [!info] 🎬 Videos recomendados de la Unidad 0
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > |  | [Link](ANÁLISIS DE NODOS: pasos para calcular voltaje con leyes de Kirchhoff) | [Link](https://www.youtube.com/watch?v=rshQaTLyiQE) | El_estudiante, 6:48 |

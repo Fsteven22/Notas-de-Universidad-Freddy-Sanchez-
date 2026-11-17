@@ -143,7 +143,11 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📝 Notas personales
 
-> [!question] 🤔 Mis observaciones de la práctica _(Espacio para agregar reflexiones, errores encontrados, diferencias entre valor teórico y medido, etc.)_
+> [!question]- 🤔 Mis observaciones de la práctica _(espacio para tus reflexiones)_
+>
+> - Diferencias teórico vs medido:
+> - Errores encontrados:
+> - Dudas para el informe:
 
 ---
 

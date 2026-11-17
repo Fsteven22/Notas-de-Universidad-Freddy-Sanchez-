@@ -17,7 +17,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
 >
 > - Manipula el transformador TX 110 V/12 V **solo con supervisión del profesor**.
 > - Trabaja con la fuente apagada al modificar conexiones.
@@ -140,7 +140,9 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar.
+> [!tip] 📄 Informe
+>
+> Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar.
 
 ## Metas de Aprendizaje
 
