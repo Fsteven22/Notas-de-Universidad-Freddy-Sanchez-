@@ -108,7 +108,9 @@ def perfil_nota(nota_path, rel):
         return "practica"
     if "equipos del laboratorio" in base:
         return "referencia"
-    if base.startswith("ejercicios"):
+    if base.startswith("ejercicios") or "ejercicios resueltos" in base:
+        # compilaciones de ejercicios (no son lecciones): U1 Ejercicios
+        # Recopilados y U3 05 - Ejercicios Resueltos y de Oposicion
         return "guia"
     if re.match(r"^unidad \d+\s*-", carpeta) and re.match(r"^\d+\s*-", base):
         return "clase"
