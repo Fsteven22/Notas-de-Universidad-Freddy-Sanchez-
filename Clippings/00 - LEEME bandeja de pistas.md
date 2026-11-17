@@ -2844,3 +2844,26 @@ el commit de esta línea de PUSHEADO.
 >
 > **No se tocaron:** los 6 commits de Cálculo 1 y sus docs que ya están en `master`
 > (`61e5c55c`…`5317b31c`, U6-III/IV), ni los 2 PDFs de Diseño, ni las PNG de MatDisc.
+
+
+> [!success] PUSHEADO `15e7e083` · 16/11/2026 — `origin/master` = `master` = `15e7e083`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault, tras integrar la
+> decisión: merge de `sesion/opencode-fesd` → `master`; sin reescribir historia).
+> `5317b31c..15e7e083` (`master`, incluye los 16 commits de la ronda FESD: 14 de
+> `sesion/opencode-fesd` + 2 de documentación/merge).
+>
+> **FESD CERRADA (ronda mecánica):** 0 errores · 0 avisos · 118 P (las lecturas, segunda ronda).
+> Contrato y validador propios en `Mantenimiento/` (`FORMATO-FESD.md`, `qa_formato_fesd.py`).
+>
+> **Los archivos del dueño siguen intactos:** los **24 pendientes ajenos** sin stagear y
+> sin commitear: 2 PDF sin trackear de Diseño · 18 PNG + `manifiesto_tablas_verdad.json` de
+> MatDisc · `genera_tablas_verdad.py` (copia del dueño) · `D` de Vocabulario + `??` su versión
+> en `Recursos adicionales/` (Inglés III). **FESD está en 0 pendientes**.
+>
+> **El daño de esta sesión:** los cambios sin commitear de
+> `Ingles III/Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 2.md` se perdieron al
+> usar `git reset --hard` (quedó como `master/HEAD`). El contenido **no** es recuperable desde git;
+> **sí** desde OneDrive → clic derecho → **Historial de versiones** → restaurar la versión previa.
+> El otro cambio de esa orden (el `D` del Formato 01 de Vocabulario) se restituyó a mano y el
+> traslado a `Recursos adicionales/` sigue intacto.
