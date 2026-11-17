@@ -2935,3 +2935,5 @@ el commit de esta línea de PUSHEADO.
 >
 > - **No se tocó** la zona `opencode` (DSW U1/U2/U4/U5, Matemáticas Discretas, SBD, Inglés), ni
 >   `Universidad/**`, ni `site/scripts/**`. Sin `npm run sync` y sin compilar en OneDrive.
+
+> [!success] PUSHEADO `64041715` · 17/11/2026 — `714ff60b` (código) + `64041715` (PUSHEO EN CURSO) + este bloque → merge `--ff-only` a `master` → un solo push, sin `--force`.
