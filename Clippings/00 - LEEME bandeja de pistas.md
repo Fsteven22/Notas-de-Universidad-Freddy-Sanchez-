@@ -2907,3 +2907,24 @@ el commit de esta línea de PUSHEADO.
 > El trabajo masivo en `M` de 2do Semestre (~250 archivos, pase de rutas de
 > `opencode-onedrive`) **no** se tocó ni stageó, como manda la regla de "staging solo con
 > rutas explícitas".
+
+
+> [!success] PUSHEADO `054b161f` · 16/11/2026 — `origin/master` = `master` = `054b161f`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `6c893a43..054b161f` (`master`). Incluye la **reorganización de carpetas de FESD**:
+> `e2034bda` (Unidad 0 unificada en `Teórico/`, `Anexos` fusionado con `Figuras`, `Practico`
+> plano) y `054b161f` (`Practico/` en dos carpetas: `Fundamentos del Laboratorio/` con los 10
+> PDF —oficiales + guías— y `Practicas del Laboratorio/` con las 7 notas, Equipos y
+> Práctica 1–6 en lista, sin subcarpeta por práctica).
+>
+> **Verificado antes de pushear:** `qa_formato_fesd.py` → 33 notas, **0 hallazgos**
+> (0 H / 0 W / 0 P); chequeador de wikilinks → **527 OK, 0 rotos**; movimientos con
+> `git mv` (historial preservado); enlaces reescritos en el mismo commit (14 en notas
+> raíz + 19 en notas de práctica + embeds de `../` a `../../Teórico/`).
+>
+> **Los archivos del dueño siguen intactos:** los **24 pendientes ajenos** sin stagear ni
+> commitear (2 PDF de Diseño, 18 PNG + manifiesto de MatDisc, `genera_tablas_verdad.py`,
+> el `D` de Vocabulario de Inglés III y su versión en `Recursos adicionales/`). **FESD en 0
+> pendientes.** El pase de rutas de 2do Semestre del otro agente ya está en `origin/master`
+> (`857388ae`, 618 rutas) y no se tocó.
