@@ -16,7 +16,7 @@ dg-publish: true
 > - **Electricidad** → Como el agua en una tubería: el voltaje es la presión, la corriente es el caudal, y la resistencia es el diámetro de la tubería.
 > - **Sin diferencia de presión** → Sin voltaje = sin flujo de corriente.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
 > 
 > **Las tres magnitudes esenciales:**
 > 
@@ -34,7 +34,7 @@ dg-publish: true
 > 
 > La **carga eléctrica** es la propiedad fundamental de la materia que da origen a los fenómenos eléctricos. Existe en dos tipos: positiva (+) y negativa (−).
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
 > 
 > **Propiedades de la carga:**
 > 
@@ -52,7 +52,11 @@ dg-publish: true
 
 > [!note] 🖼️ Carga Eléctrica
 >
-> ![[../../Anexos/Pasted image 20260519222355.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519222355.png]]
+> 
+> **Se lee así:** El dibujo presenta el modelo atómico clásico: un núcleo central formado por protones (rojos, carga +) y neutrones (azules, sin carga), rodeado de electrones en órbitas, con rótulos que identifican cada partícula. A la derecha resume las tres partículas subatómicas: el protón habita el núcleo, el neutrón lo acompaña sin carga, y el electrón es la única que puede encontrarse libre o ligada al átomo.
+> 
+> **Por qué importa:** Ancla la cuantización de la carga ($Q = n \cdot e$) en algo concreto: como el electrón es la unidad elemental que se mueve, distinguir qué se mueve de qué permanece en el núcleo evita errores al calcular la carga neta de un cuerpo.
 
 ---
 
@@ -99,7 +103,7 @@ dg-publish: true
 > |Mismo signo ($++$ o $--$)|Repulsiva (se alejan)|
 > |Signo opuesto ($+-$)|Atractiva (se acercan)|
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
 > 
 > **Ejemplo resuelto:**
 > 
@@ -140,11 +144,12 @@ dg-publish: true
 
 > [!note] 🖼️ Campo Eléctrico
 >
-> ![[../../Anexos/Pasted image 20260519222513.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519222513.png]]
+> 
+> **Se lee así:** Muestra las líneas de campo para tres configuraciones de cargas puntuales: (a) dos cargas de signo opuesto, cuyas líneas salen del + y llegan al −; (b) dos cargas positivas, cuyas líneas se repelen y dejan una zona central sin campo; y (c) dos cargas de signo opuesto con patrón asimétrico. En los tres paneles las flechas siguen el sentido + → − y la densidad de líneas marca la intensidad de $E$.
+> 
+> **Por qué importa:** Convierte en imagen las reglas de la tabla (dirección + → −, densidad proporcional a $|E|$, líneas que no se cruzan): viendo dónde se amontonan las líneas sabes dónde el campo es más intenso y por dónde viajaría una carga de prueba positiva.
 
-> [!note] 🖼️ Campo Eléctrico
->
-> ![[../../Anexos/Pasted image 20260519222726.png]]
 
 ---
 
@@ -191,7 +196,11 @@ dg-publish: true
 > - $Q$ = Carga (Culombios, C)
 > - $t$ = Tiempo (Segundos, s)
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
+>
+> **Se lee así:** diagrama DC vs AC: de la corriente eléctrica nacen las dos ramas — DC (flujo constante en un sentido: baterías, pilas, paneles) y AC (dirección oscilante: red eléctrica, generadores).
+>
+> **Por qué importa:** es el criterio más usado para decidir qué equipos van con qué fuente (la electrónica con DC, los electrodomésticos con AC).
 > 
 > **Comparación DC vs AC:**
 > 
@@ -228,7 +237,11 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
+> 
+> **Se lee así:** Es un mapa mental de la sesión: parte de "Sesión 1 — Conceptos Fundamentales" y ramifica en cinco nodos — Carga Eléctrica ($Q = n \cdot e$, culombio, Millikan 1909), Fuerza Eléctrica (Ley de Coulomb, $F_e = K_e q_1 q_2 / r^2$), Campo Eléctrico ($E = kQ/r^2$, líneas de campo), Potencial Eléctrico ($U = F_e \cdot r$, $V = U/q$, $\Delta V = W/q$) y Corriente Eléctrica ($I = Q/t$, DC vs AC).
+> 
+> **Por qué importa:** Sirve de índice visual para repasar: ubica de un vistazo qué fórmula y qué unidad corresponde a cada concepto antes de pasar a las Metas de Aprendizaje y evita mezclar magnitudes (p. ej. caudal de carga $I$ con diferencia de potencial $\Delta V$).
 
 ---
 

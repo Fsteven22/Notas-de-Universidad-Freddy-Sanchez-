@@ -23,7 +23,7 @@ dg-publish: true
 > >
 > > 💡 **FANBOYS** (conjunciones coordinantes): **F**or · **A**nd · **N**or · **B**ut · **O**r · **Y**et · **S**o
 >
-> ![[Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_01.svg]]
 
 ---
 
@@ -108,7 +108,7 @@ dg-publish: true
 > | **Complex** | 1 | 1 o más | Subordinating conjunction |
 > | **Compound-Complex** | 2 o más | 1 o más | FANBOYS + Subordinating conjunction |
 >
-> ![[Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Grammar_Review_-_Sentence_Types_by_Structure_02.svg]]
 
 ---
 

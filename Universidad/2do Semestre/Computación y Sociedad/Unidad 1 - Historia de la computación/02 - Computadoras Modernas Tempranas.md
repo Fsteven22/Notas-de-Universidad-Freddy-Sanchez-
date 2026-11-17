@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Entre finales del siglo XIX y mediados del XX, los avances en electromecánica y electrónica permitieron dar el salto de las calculadoras mecánicas a las primeras computadoras programables. Este período sentó las bases de la arquitectura que usamos hasta hoy.
 >
-> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ dg-publish: true
 >
 > Este modelo teórico sentó las bases del concepto moderno de **algoritmo** y demostró que mediante dispositivos formales y simples era posible resolver cualquier problema matemático representable mediante un algoritmo.
 >
-> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_02.svg]]
 >
 > | Dato | Detalle |
 > |---|---|
@@ -95,7 +95,7 @@ dg-publish: true
 >
 > ### Arquitectura Von Neumann
 >
-> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_03.svg]]
 >
 > | Componente | Función |
 > |---|---|
@@ -119,7 +119,7 @@ dg-publish: true
 
 > [!summary] 📅 De Hollerith a Von Neumann
 >
-> ![[Diagramas/02_-_Computadoras_Modernas_Tempranas_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Computadoras_Modernas_Tempranas_04.svg]]
 
 ---
 

@@ -23,7 +23,7 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 > | **Lectura** | Doble interpretación | Una sola, correcta |
 > | **Escala** | El error se repite página por página | Al corregir, mejora todo el texto |
 
-![[Diagramas/05_-_Concordancia_y_cohesión_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Concordancia_y_cohesión_06.svg]]
 
 ---
 
@@ -50,7 +50,7 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 > | Más de un sustantivo como sujeto | Verbo en **3.ª persona del plural** | Adela, Martina, Irene y Ana **fueron** seleccionadas |
 > | Sustantivos **colectivos** (muchedumbre, equipo, flota) | Verbo en **singular** | La muchedumbre **protestó** toda la noche |
 >
-> ![[Diagramas/05_-_Concordancia_y_cohesión_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Concordancia_y_cohesión_03.svg]]
 >
 > **Truco de verificación:** identifica el sujeto, mira género y número, y pregunta "¿verbo, adjetivo y artículo concuerdan con ese sujeto?". Si cambiaste el sujeto editando al final, relee de arriba abajo: la mayoría de errores nace de ediciones tardías.
 
@@ -79,7 +79,7 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 >
 > Los **conectores** funcionan como puente entre oraciones o párrafos y establecen **relaciones lógicas**. Para elegirlos, pregúntate qué quieres expresar:
 >
-> ![[Diagramas/05_-_Concordancia_y_cohesión_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Concordancia_y_cohesión_08.svg]]
 >
 > | Relación de sentido | Conector de ejemplo | Ejemplo del taller |
 > |---|---|---|
@@ -94,7 +94,7 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 
 > [!tip] 💡 Protocolo de 5 pasos
 >
-> ![[Diagramas/05_-_Concordancia_y_cohesión_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Concordancia_y_cohesión_07.svg]]
 >
 > **Antes de y después (del taller):**
 >
@@ -155,7 +155,7 @@ tags: [IDIG2012, unidad3, redaccion, concordancia, cohesion, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/05_-_Concordancia_y_cohesión_09.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Concordancia_y_cohesión_09.svg]]
 
 > [!success] 🔍 Comparación Final
 >

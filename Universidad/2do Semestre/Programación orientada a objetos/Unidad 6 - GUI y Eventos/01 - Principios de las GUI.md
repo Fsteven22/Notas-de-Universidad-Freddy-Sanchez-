@@ -15,7 +15,7 @@ dg-publish: true
 > - **CLI (línea de comandos)** → Como hablar por teléfono: solo voz, sin ver
 > - **GUI** → Como una conversación cara a cara: gestos, expresiones, señales visuales
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_01.svg]]
 > 
 > **Ventajas de las GUI:**
 > 
@@ -33,7 +33,7 @@ dg-publish: true
 
 > [!note] 📚 Evolución de las Bibliotecas
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_02.svg]]
 > 
 > **Comparación:**
 > 
@@ -53,7 +53,7 @@ dg-publish: true
 > 
 > Los **contenedores** son componentes que pueden contener otros componentes.
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_03.svg]]
 > 
 > **Contenedores principales en Swing:**
 > 
@@ -190,7 +190,7 @@ dg-publish: true
 > - ✅ Mantenimiento más fácil
 > - ✅ Diseño responsivo
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_04.svg]]
 
 ### 🌊 FlowLayout
 
@@ -426,7 +426,7 @@ dg-publish: true
 > 
 > **4. Jerarquía visual**
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_05.svg]]
 > 
 > **5. Agrupación lógica**
 > 
@@ -453,7 +453,7 @@ dg-publish: true
 > 
 > Las GUI funcionan con **eventos**: acciones del usuario que disparan código.
 > 
-> ![[Diagramas/01_-_Principios_de_las_GUI_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_06.svg]]
 > 
 > **Componentes del modelo:**
 > 
@@ -657,7 +657,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Principios_de_las_GUI_07.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Principios_de_las_GUI_07.svg]]
 
 ---
 

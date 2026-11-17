@@ -28,7 +28,7 @@ dg-publish: true
 > |**Probabilística**|Correlación y covarianza|Coeficiente de Pearson ≤ 1|
 > |**Optimización**|Límites en problemas de máximos|Teoría de aproximación|
 
-![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_01.svg]]
 
 ---
 
@@ -101,7 +101,7 @@ dg-publish: true
 > 
 > **Visualización en ℝ²:**
 > 
-> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_02.svg]]
 
 ### 🔄 Formulaciones Equivalentes
 
@@ -152,7 +152,7 @@ dg-publish: true
 > 
 > **Equivalencias:**
 > 
-> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_03.svg]]
 
 ---
 
@@ -206,7 +206,7 @@ dg-publish: true
 > 
 > La igualdad ocurre cuando la componente ortogonal es cero, es decir, cuando **u** es paralelo a **v**.
 > 
-> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_04.svg]]
 
 ### 🧮 Demostración Algebraica
 
@@ -347,7 +347,7 @@ dg-publish: true
 > 
 > **Diagrama de casos:**
 > 
-> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_05.svg]]
 
 ---
 
@@ -470,7 +470,7 @@ dg-publish: true
 > 2. **Forma general (n vectores):** ‖**v₁** + **v₂** + ⋯ + **vₙ**‖ ≤ ‖**v₁**‖ + ‖**v₂**‖ + ⋯ + ‖**vₙ**‖
 >     
 > 
-> ![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_06.svg]]
 
 ### 📊 Coeficiente de Correlación
 
@@ -788,7 +788,7 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Desigualdad_de_Cauchy–Schwarz_07.svg]]
 
 ### Tabla Resumen
 

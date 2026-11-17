@@ -15,6 +15,16 @@ tags: [MATG1045, unidad6, teorema-fundamental-calculo, regla-barrow, funciones-i
 >
 > **Ejemplo:** para calcular $\int_0^3 2x\,dx$ ya no hace falta particionar el intervalo: basta con $F(x) = x^2$ y evaluar $9 - 0 = 9$.
 
+> [!info] 🗺️ La unificación de Newton y Leibniz
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Teorema_Fundamental_del_Cálculo_04.svg]]
+>
+> **Se lee así:** una caja raíz con la importancia del TFC (Newton y Leibniz, siglo XVII) abre dos ramas hacia los problemas clásicos: el de tangentes (derivadas) y el de cuadraturas (áreas). Ambas convergen en una caja central de unificación —derivar y antiderivar como operaciones inversas—, de la que cuelgan dos conclusiones: la verificación derivando y el requisito de continuidad.
+>
+> **Por qué importa:** la parte de abajo es la que más se olvida: el TFC exige continuidad, y la única comprobación honesta de un resultado es derivarlo. Te sirve como mapa histórico y como recordatorio de las condiciones de uso.
+>
+> **Ejemplo:** $\int_0^1 6x^2\,dx$ no es un área: es la evaluación práctica de la unificación —derivar y antiderivar se cancelan—, y se comprueba derivando el resultado.
+
 > [!warning] ⚠️ La confusión que separa las dos partes
 >
 > - **Parte I:** da la derivada de una integral con límite variable: $\frac{d}{dx}\int_a^x f(t)\,dt = f(x)$. Responde *qué derivada tiene el área acumulada*.

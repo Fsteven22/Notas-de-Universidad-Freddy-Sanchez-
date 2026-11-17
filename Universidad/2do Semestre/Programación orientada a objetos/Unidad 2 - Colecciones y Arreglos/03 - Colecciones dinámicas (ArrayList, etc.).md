@@ -19,7 +19,7 @@ dg-publish: true
 > 
 > **Problema que resuelven:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_01.svg]]
 > 
 > **Comparación rápida:**
 > 
@@ -89,7 +89,7 @@ dg-publish: true
 > 
 > **Visualización interna:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_02.svg]]
 
 ### ➕ Operaciones Básicas
 
@@ -324,7 +324,7 @@ dg-publish: true
 > 
 > **Estructura interna:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_03.svg]]
 > 
 > **Comparación de rendimiento:**
 > 
@@ -364,7 +364,7 @@ dg-publish: true
 > 
 > **Cuándo usar cada una:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_04.svg]]
 > 
 > **Recomendación general:**
 > 
@@ -381,7 +381,7 @@ dg-publish: true
 > 
 > **Propiedades del HashSet:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_05.svg]]
 > 
 > **Uso básico:**
 > 
@@ -456,7 +456,7 @@ dg-publish: true
 > 
 > **Concepto:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_06.svg]]
 > 
 > **Sintaxis básica:**
 > 
@@ -574,7 +574,7 @@ dg-publish: true
 > 
 > **Árbol de decisión:**
 > 
-> ![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_07.svg]]
 
 ---
 
@@ -729,7 +729,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_08.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Colecciones_dinámicas_(ArrayList,_etc.)_08.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

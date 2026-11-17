@@ -12,7 +12,7 @@ dg-publish: true
 > - **Tense review:** repaso de los seis tiempos verbales más usados en inglés, con sus estructuras, usos y expresiones de tiempo características.
 > - **Dynamic vs. Stative verbs:** distinción entre verbos de acción y verbos de estado, incluyendo excepciones clave donde el mismo verbo puede funcionar de las dos maneras.
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Tense_Review_&_Dynamic_vs_Stative_Verbs_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Tense_Review_&_Dynamic_vs_Stative_Verbs_01.svg]]
 > 
 > |Bloque|Enfoque|Sección del libro|
 > |---|---|---|
@@ -162,7 +162,7 @@ dg-publish: true
 > - **Dynamic verbs (verbos dinámicos):** describen acciones físicas o mentales en progreso. ✅ Pueden usarse en tiempos continuos.
 > - **Stative verbs (verbos estativos):** describen estados, emociones, percepciones o posesiones. ❌ Generalmente **no** se usan en tiempos continuos.
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Tense_Review_&_Dynamic_vs_Stative_Verbs_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Tense_Review_&_Dynamic_vs_Stative_Verbs_02.svg]]
 
 ---
 

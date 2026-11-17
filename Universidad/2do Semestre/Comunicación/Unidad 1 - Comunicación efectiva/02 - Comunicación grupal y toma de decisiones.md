@@ -22,7 +22,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 > | **Conflictos** | Se evitan y explotan | Se gestionan y resuelven |
 > | **Cohesión** | Subgrupos enfrentados | Compromiso compartido |
 
-![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_01.svg]]
 
 ---
 
@@ -36,7 +36,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 >
 > Es el patrón invisible de interacción: quién habla, quién calla, cómo se decide. Si no la gestionas, ella te gestiona a ti.
 >
-> ![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_02.svg]]
 >
 > **Regla de Oro del grupo universitario:**
 >
@@ -149,7 +149,7 @@ tags: [IDIG2012, unidad1, comunicacion-grupal, taller1, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Comunicación_grupal_y_toma_de_decisiones_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -13,7 +13,7 @@ dg-publish: true
 > - **Discussing good works:** verbos y frases para hablar de trabajo voluntario y participación comunitaria (sección 6.1).
 > - **Describing good deeds:** familias de palabras (verbo/sustantivo/adjetivo/expresión) para hablar de actos de bondad y su recepción (sección 6.2).
 > 
-> ![[Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -131,7 +131,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Discussing_Good_Works_&_Describing_Good_Deeds_02.svg]]
 
 ---
 

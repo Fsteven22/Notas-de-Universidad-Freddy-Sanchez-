@@ -743,7 +743,7 @@ dg-publish: true
 
 ## 📊 Diagrama Conceptual del Rango
 
-![[Diagramas/01_-_Rango_de_una_Matriz_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Rango_de_una_Matriz_01.svg]]
 
 ## 🔗 Relación Rango-Nulidad
 

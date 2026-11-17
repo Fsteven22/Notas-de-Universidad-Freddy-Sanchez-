@@ -299,7 +299,7 @@ dg-publish: true
 > 
 > **INTERPRETACIÓN GEOMÉTRICA:**
 > 
-> ![[Diagramas/06_–_Espacio_fila_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_01.svg]]
 > 
 > **Espacios diferentes, misma dimensión:**
 > 
@@ -336,7 +336,7 @@ dg-publish: true
 > [!note] Visualización del Espacio Fila
 > **Comparación visual Row vs Col:**
 > 
-> ![[Diagramas/06_–_Espacio_fila_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_02.svg]]
 > 
 > **CASO 1: Matriz 2×3 con filas LI**
 > 
@@ -382,7 +382,7 @@ dg-publish: true
 > [!success] Teorema de los Cuatro Subespacios
 > **Para matriz $A$ de $m \times n$ con rango $r$:**
 > 
-> ![[Diagramas/06_–_Espacio_fila_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Espacio_fila_03.svg]]
 > 
 > **TABLA COMPARATIVA:**
 > 

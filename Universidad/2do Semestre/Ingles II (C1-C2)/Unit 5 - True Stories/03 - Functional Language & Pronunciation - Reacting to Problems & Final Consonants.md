@@ -13,7 +13,7 @@ dg-publish: true
 > - **Accepting bad news:** expresiones para mostrar que algo te decepciona, pero que lo aceptas con calma.
 > - **Pronunciation:** cómo pronunciar con claridad los sonidos consonánticos al final de una palabra.
 > 
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -133,7 +133,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Reacting_to_Problems_&_Final_Consonants_02.svg]]
 
 ---
 

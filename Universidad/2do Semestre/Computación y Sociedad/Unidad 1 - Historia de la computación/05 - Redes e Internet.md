@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Durante décadas, las computadoras trabajaron de forma aislada. La necesidad de compartir información y recursos impulsó el desarrollo de las redes, que eventualmente evolucionaron hasta formar la Internet que conocemos hoy.
 >
-> ![[Diagramas/05_-_Redes_e_Internet_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_01.svg]]
 
 ---
 
@@ -32,7 +32,7 @@ dg-publish: true
 >
 > ### Expansión de ARPANET
 >
-> ![[Diagramas/05_-_Redes_e_Internet_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_02.svg]]
 
 ---
 
@@ -64,7 +64,7 @@ dg-publish: true
 >
 > En **1989**, **Netware de Novell** conectó PCs a un servidor de archivos central con gran capacidad de almacenamiento, permitiendo una medida de control central sobre los recursos compartidos.
 >
-> ![[Diagramas/05_-_Redes_e_Internet_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_03.svg]]
 >
 > | Término | Definición |
 > |---|---|
@@ -81,7 +81,7 @@ dg-publish: true
 >
 > **Internet** no es una sola red, sino una **red de muchas redes diferentes** alrededor del mundo que se comunican usando un protocolo común: **TCP/IP** (*Transmission Control Protocol / Internet Protocol*).
 >
-> ![[Diagramas/05_-_Redes_e_Internet_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_04.svg]]
 >
 > ### Componentes clave
 >
@@ -126,7 +126,7 @@ dg-publish: true
 
 > [!summary] 📅 De ARPANET a la WWW
 >
-> ![[Diagramas/05_-_Redes_e_Internet_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Redes_e_Internet_05.svg]]
 
 ---
 

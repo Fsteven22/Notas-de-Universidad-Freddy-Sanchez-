@@ -2426,7 +2426,7 @@ dg-publish: true
 
 ## 📊 Diagrama Conceptual de Formas Escalonadas
 
-![[Diagramas/02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Formas_Escalonadas_y_Matriz_Escalonada_01.svg]]
 
 ## 🔍 Diferencias Clave: Resumen Visual
 

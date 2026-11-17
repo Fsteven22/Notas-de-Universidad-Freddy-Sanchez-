@@ -32,7 +32,7 @@ dg-publish: true
 > | **Vibraciones** | Modos naturales de oscilación | Análisis estructural, cuerdas |
 > | **Ranking** | Importancia de elementos | PageRank de Google |
 
-![[Diagramas/01_-_Valores_y_Vectores_propios_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_01.svg]]
 
 ---
 
@@ -44,7 +44,7 @@ dg-publish: true
 > 
 > **Comparación visual de vectores:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_02.svg]]
 > 
 > **Ejemplo concreto:**
 > 
@@ -59,7 +59,7 @@ dg-publish: true
 > 
 > **Representación gráfica:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_03.svg]]
 > 
 > **Casos especiales de valores propios:**
 > 
@@ -97,7 +97,7 @@ dg-publish: true
 > 
 > **Proceso paso a paso:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_04.svg]]
 > 
 > **Ejemplo detallado (2×2):**
 > 
@@ -208,7 +208,7 @@ dg-publish: true
 > 
 > **Casos especiales:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_05.svg]]
 
 ---
 
@@ -225,7 +225,7 @@ dg-publish: true
 > 
 > **Proceso algorítmico:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_06.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -305,7 +305,7 @@ dg-publish: true
 > 
 > **Base de vectores propios:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_07.svg]]
 
 ---
 
@@ -337,11 +337,11 @@ dg-publish: true
 > 
 > **Visualización geométrica:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_08.svg]]
 > 
 > **Proceso de diagonalización:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_09.svg]]
 
 ### 📊 Ejemplo Completo
 
@@ -454,7 +454,7 @@ dg-publish: true
 > 
 > Si A = Aᵄ (simétrica):
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_10.svg]]
 > 
 > **Ventajas:**
 > - Q⁻ = Qᵄ (fácil de calcular)
@@ -503,7 +503,7 @@ dg-publish: true
 > 
 > **Regla:** Multiplicidad geométrica ≄ Multiplicidad algebraica
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_11.svg]]
 
 ### 🔢 Casos Especiales
 
@@ -588,7 +588,7 @@ dg-publish: true
 > 
 > **Resumen comparativo:**
 > 
-> ![[Diagramas/01_-_Valores_y_Vectores_propios_12.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_12.svg]]
 
 ---
 ## 🎓 Ejercicios Guiados
@@ -865,7 +865,7 @@ dg-publish: true
 
 ### Mapa Conceptual General
 
-![[Diagramas/01_-_Valores_y_Vectores_propios_13.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_13.svg]]
 
 ### Tabla Resumen Completa
 
@@ -943,7 +943,7 @@ dg-publish: true
 
 **Has dominado:**
 
-![[Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Valores_y_Vectores_propios_14.svg]]
 
 
 ---

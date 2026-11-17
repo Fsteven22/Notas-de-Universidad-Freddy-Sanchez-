@@ -2797,8 +2797,6 @@ el commit de esta línea de PUSHEADO.
 > El `master` del clon de OneDrive se actualizó de nuevo por ref
 > (`git fetch origin master:master`), con **0 cambios en su working tree**.
 
-
-
 > [!warning] FESD CERRADA (ronda mecánica) — `sesion/opencode-fesd` = `a5aed9ba`, 14 commits locales desde `32d59fa4`; falta integrar a `master`
 >
 > **Qué se hizo.** La materia de Fundamentos de Electricidad y Sistemas Digitales (33 notas: 21 de clase,
@@ -2867,6 +2865,95 @@ el commit de esta línea de PUSHEADO.
 > **sí** desde OneDrive → clic derecho → **Historial de versiones** → restaurar la versión previa.
 > El otro cambio de esa orden (el `D` del Formato 01 de Vocabulario) se restituyó a mano y el
 > traslado a `Recursos adicionales/` sigue intacto.
+
+---
+
+### `opencode` — Fase 0 del 2do Semestre: 618 rutas de embed SVG reparadas — 16/11/2026
+
+> [!success] 618 embeds reparados · 133 notas · 5 materias · 0 rutas `Diagramas/` rotas quedan
+>
+> - **Hecho:** en las 5 materias del 2do Semestre que no son de otra sesión (Álgebra Lineal, Computación y Sociedad, Comunicación, Inglés II, POO; **Cálculo Vectorial excluido** por ser zona de `opencode-onedrive`), los embeds `[[Diagramas/…svg]]` y `[[../Diagramas/…svg]]` apuntaban a la carpeta `Diagramas/` raíz que se unificó en `Unidad 0 - Guias y Ejercicios/Diagramas/` (commit `c4088779`). Recalculé la ruta relativa correcta desde cada nota hacia su SVG en `U0/Diagramas/`. Mismo criterio que la ronda de 3er Semestre (`3353d22a`).
+> - **Alcance:** solo rutas que no resolvían en disco **y** cuyo basename existía en `U0/Diagramas/` de la **misma** materia. 0 embeds quedaron sin equivalente.
+> - **Verificado:** post-fix 0 rutas `Diagramas/` rotas; `qa_links.py` raíz `Universidad` **bad=7 sin cambios** (los 7 son de SBD, preexistentes, ajenos); `qa_mojibake --check` 2do Semestre: 0; los 58 "rotos" de un escáner estricto propio son 56 falsos positivos (basename puro que resuelve en su materia) + 2 wikilinks Álgebra Lineal → Cálculo Vectorial con ruta sin `Universidad/` al inicio (resuelven por basename en sitio y en `qa_links`; caso límite para el dueño, no tocado).
+> - **No se tocó:** Cálculo Vectorial, el `D` de Inglés III de `opencode-onedrive`, `site/**`, cambios sin commitear ajenos.
+> - **Siguiente fase (contrato + validador por materia):** pendiente de confirmación del dueño sobre la materia piloto.
+>
+> **PUSHEADO `f241e19a`** — `857388ae`
+
+
+> [!success] PUSHEADO `f8b4b2ac` · 16/11/2026 — `origin/master` = `master` = `f8b4b2ac`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault): `0f96d5f8..f8b4b2ac`
+> (`master`). Incluye la **ronda de lecturas (R14 → 0)** y las **reubicaciones de figuras**:
+> `b8feb08a` (lecturas) · `07c79521` (reubicaciones + contrato) · `f8b4b2ac` (tomacorrientes).
+>
+> **FESD CERRADA por completo:** `qa_formato_fesd.py` → las 33 notas,
+> **0 errores · 0 avisos · 0 pendientes**. Línea base 608 → 482 → 118 → **0**.
+> Segunda ronda: las 118 lecturas (`**Se lee así:**` / `**Por qué importa:**` dentro del
+> callout tras cada embed; 6 bloques paralelos + pasada del orquestador). Además:
+> - Los 6 `.mmd` reconstruidos desde SVG con su re-render verificado (6/6).
+> - 4 figuras reubicadas a la sección cuyo contenido muestran: potencia vs energía
+>   (kW vs kWh) → Filtro de Resistencias de 03-Elementos; "Por qué todo es binario"
+>   → Sistemas de Numeración de U4/01; chuleta MK de 4 variables → Mapas de
+>   Karnaugh de U4/02; tomacorrientes en paralelo → Seguridad de Práctica 1.
+> - `FORMATO-FESD.md`: estado actual actualizado a 0/0/0.
+>
+> **Los archivos del dueño siguen intactos:** los **24 pendientes ajenos** sin stagear ni
+> commitear: 2 PDF sin trackear de Diseño · 18 PNG + `manifiesto_tablas_verdad.json` de
+> MatDisc · `genera_tablas_verdad.py` (copia del dueño) · `D` de Vocabulario + `??` su
+> versión en `Recursos adicionales/` (Inglés III). **FESD está en 0 pendientes.**
+> El trabajo masivo en `M` de 2do Semestre (~250 archivos, pase de rutas de
+> `opencode-onedrive`) **no** se tocó ni stageó, como manda la regla de "staging solo con
+> rutas explícitas".
+
+
+> [!success] PUSHEADO `054b161f` · 16/11/2026 — `origin/master` = `master` = `054b161f`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `6c893a43..054b161f` (`master`). Incluye la **reorganización de carpetas de FESD**:
+> `e2034bda` (Unidad 0 unificada en `Teórico/`, `Anexos` fusionado con `Figuras`, `Practico`
+> plano) y `054b161f` (`Practico/` en dos carpetas: `Fundamentos del Laboratorio/` con los 10
+> PDF —oficiales + guías— y `Practicas del Laboratorio/` con las 7 notas, Equipos y
+> Práctica 1–6 en lista, sin subcarpeta por práctica).
+>
+> **Verificado antes de pushear:** `qa_formato_fesd.py` → 33 notas, **0 hallazgos**
+> (0 H / 0 W / 0 P); chequeador de wikilinks → **527 OK, 0 rotos**; movimientos con
+> `git mv` (historial preservado); enlaces reescritos en el mismo commit (14 en notas
+> raíz + 19 en notas de práctica + embeds de `../` a `../../Teórico/`).
+>
+> **Los archivos del dueño siguen intactos:** los **24 pendientes ajenos** sin stagear ni
+> commitear (2 PDF de Diseño, 18 PNG + manifiesto de MatDisc, `genera_tablas_verdad.py`,
+> el `D` de Vocabulario de Inglés III y su versión en `Recursos adicionales/`). **FESD en 0
+> pendientes.** El pase de rutas de 2do Semestre del otro agente ya está en `origin/master`
+> (`857388ae`, 618 rutas) y no se tocó.
+
+---
+
+### `opencode-onedrive` — Cálculo 1: U6-V completa + 5 figuras conectadas en U2/U6-I (56 de 65) — 17/11/2026
+
+> [!success] PUSHEADO `ccd98813` · 17/11/2026 — `origin/master` = `master` = `ccd98813`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `5317b31c..ccd98813` (`sesion/opencode-onedrive`) y `378ec32e..ccd98813` (`master`).
+> Incluye el merge de `origin/master` (rondas FESD y 2do Semestre del 16/11): el conflicto
+> del LEEME se resolvió conservando **ambos bloques**, ajenos primero (16/11) y mío después
+> (17/11).
+>
+> - **Hecho:** U6-V `V - Técnicas de Integración` completa (5 notas: cambio de variable,
+>   por partes, trigonométricas, funciones inversas y fracciones parciales) al esqueleto de
+>   la casa; **0 hallazgos** por nota, round-trip **17/17**, mojibake 0, escáner limpio.
+>   Correcciones de contenido verificadas con sympy: en 04, $\int_0^1\arcsin = \pi/2-1$
+>   (la original decía 1), $\int_{-1}^1 x\arcsin x = \pi/4$ (decía 0 y la llamaba impar;
+>   es **par**), fila de tabla de $x\arcsin$ y $\int\arctan\ln x$ con $-\frac14\text{Li}_2(-x^2)$;
+>   en 05, las 12 soluciones de ejemplos y ejercicios.
+> - **Además:** 5 diagramas conectados en 4 notas ya publicadas de U2 y U6-I (bloques de
+>   figura con sus tres lecturas), validadas a 0 hallazgos.
+> - **Estado: 56 de 65.** Pendientes (9): `VI - Otras Técnicas` (2) · U7 (7; las notas de
+>   Volúmenes y Áreas polares ya tienen su figura nueva, pendiente de reescribir la nota).
+> - **Clon de OneDrive:** tiene `master` checkoutado y el working tree sucio (sus 24
+>   pendientes ajenos), así que git rechaza el `fetch origin master:master` directo. Se hizo
+>   `git fetch origin` (seguro): su `origin/master` ya apunta a `ccd98813`; el `pull` local
+>   queda para el dueño cuando le convenga.
 
 ---
 

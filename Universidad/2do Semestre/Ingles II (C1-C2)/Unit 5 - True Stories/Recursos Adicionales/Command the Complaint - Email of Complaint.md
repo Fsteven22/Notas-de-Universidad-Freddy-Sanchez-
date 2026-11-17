@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Esta nota organiza el material del taller **"Command the Complaint: Email Writing Strategies"** del Academic Writing Center (AWC) de ESPOL, impartido por Karen Yambay de Armijos. Es un recurso transversal de escritura académica/profesional en inglés — no pertenece a una lección específica del libro Keynote, pero se ubica aquí en la Unidad 5 porque fue el material adicional trabajado durante ese período. Es especialmente relevante porque **forma parte del writing del examen final**.
 > 
-> ![[Diagramas/Command_the_Complaint_-_Email_of_Complaint_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Command_the_Complaint_-_Email_of_Complaint_01.svg]]
 
 ---
 
@@ -254,7 +254,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — Estructura del correo
 
-![[Diagramas/Command_the_Complaint_-_Email_of_Complaint_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Command_the_Complaint_-_Email_of_Complaint_02.svg]]
 
 ---
 

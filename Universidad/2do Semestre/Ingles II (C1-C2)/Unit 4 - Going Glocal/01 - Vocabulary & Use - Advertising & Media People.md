@@ -12,7 +12,7 @@ dg-publish: true
 > - **Talking about advertising:** términos para describir cómo las marcas se promocionan y venden productos (sección 4.1).
 > - **Talking about people in the media:** vocabulario para describir a personas famosas o influyentes en internet y los medios (sección 4.2).
 > 
-> ![[Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -126,7 +126,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Qué palabra uso?
 
-![[Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Advertising_&_Media_People_02.svg]]
 
 ---
 

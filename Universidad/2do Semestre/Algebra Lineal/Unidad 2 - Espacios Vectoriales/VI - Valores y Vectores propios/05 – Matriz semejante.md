@@ -26,7 +26,7 @@ dg-publish: true
 > |**Aplicaciones**|Resolver sistemas, ecuaciones diferenciales|Diagonalización|
 > |**Comprensión**|Ver transformación desde mejor ángulo|Intuición geométrica|
 
-![[Diagramas/05_–_Matriz_semejante_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_01.svg]]
 
 ---
 
@@ -55,7 +55,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/05_–_Matriz_semejante_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_02.svg]]
 
 ### 🔄 Transformación de Semejanza
 
@@ -86,7 +86,7 @@ dg-publish: true
 > 
 > **Secuencia de operaciones:**
 > 
-> ![[Diagramas/05_–_Matriz_semejante_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_03.svg]]
 
 ---
 
@@ -147,7 +147,7 @@ dg-publish: true
 > 
 > **Resumen visual:**
 > 
-> ![[Diagramas/05_–_Matriz_semejante_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_04.svg]]
 
 ### 🔢 Invariantes de Semejanza
 
@@ -218,7 +218,7 @@ dg-publish: true
 > |**Vectores propios**|$\mathbf{v}_i$|❌ NO (cambian)|
 > |**Entradas de matriz**|$a_{ij}$|❌ NO (cambian)|
 
-![[Diagramas/05_–_Matriz_semejante_05.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_05.svg]]
 
 ---
 
@@ -367,7 +367,7 @@ dg-publish: true
 > 
 > **Proceso de diagonalización:**
 > 
-> ![[Diagramas/05_–_Matriz_semejante_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_06.svg]]
 
 ### 📐 Ejemplo Completo de Diagonalización
 
@@ -522,7 +522,7 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[Diagramas/05_–_Matriz_semejante_07.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_07.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -637,7 +637,7 @@ dg-publish: true
 > 
 > **Progresión natural:**
 > 
-> ![[Diagramas/05_–_Matriz_semejante_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Matriz_semejante_08.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

@@ -17,7 +17,7 @@ dg-publish: true
 > - **Sin manejo** → Si falla, se apaga y deja al usuario confundido
 > - **Con manejo** → Muestra mensaje "Servicio temporalmente no disponible, intente más tarde"
 > 
-> ![[Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_01.svg]]
 
 ---
 
@@ -138,7 +138,7 @@ dg-publish: true
 > 
 > **Ventajas del wrapping:**
 > 
-> ![[Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_02.svg]]
 
 ---
 
@@ -207,7 +207,7 @@ dg-publish: true
 > 
 > **Estructura jerárquica:**
 > 
-> ![[Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_03.svg]]
 > 
 > **Implementación:**
 > 
@@ -269,7 +269,7 @@ dg-publish: true
 > 
 > **Regla de decisión:**
 > 
-> ![[Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_04.svg]]
 > 
 > **Excepción VERIFICADA (extends Exception):**
 > 
@@ -881,7 +881,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Manejo_de_excepciones_y_personalizadas_05.svg]]
 
 ---
 

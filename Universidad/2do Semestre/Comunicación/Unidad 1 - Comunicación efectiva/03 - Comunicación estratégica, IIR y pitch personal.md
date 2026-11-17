@@ -23,7 +23,7 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 > | **Reputación** | Azarosa | Construida en el tiempo |
 > | **Oportunidades** | Se pierden | Te buscan |
 
-![[Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_01.svg]]
 
 ---
 
@@ -70,7 +70,7 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 >
 > **3. Estructura tu pitch personal (1:45–2:00):**
 >
-> ![[Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_02.svg]]
 >
 > **4. Gestiona tu I+I+R cada semana:**
 >
@@ -159,7 +159,7 @@ tags: [IDIG2012, unidad1, estrategia, iir, pitch, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Comunicación_estratégica,_IIR_y_pitch_personal_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este enfoque —anterior a las fuentes conmutadas (switching)— sigue siendo relevante en equipos de audio de alta fidelidad, instrumentación de precisión y aplicaciones donde el ruido eléctrico debe ser mínimo, precisamente porque no genera la interferencia de alta frecuencia típica de un convertidor conmutado.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_01.svg]]
 > 
 > |Etapa|Función|Elemento típico|
 > |---|---|---|
@@ -107,7 +107,7 @@ dg-publish: true
 > 
 > El circuito más simple: un solo diodo en serie con la carga (ver [[02 - El Diodo - Unión P-N]]). Solo deja pasar el semiciclo positivo (o negativo, según orientación) de la señal de entrada.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_02.svg]]
 > 
 > $$V_{DC} = \frac{V_m}{\pi} \approx 0.318 \times V_m$$
 > 
@@ -159,7 +159,7 @@ dg-publish: true
 > 
 > Un capacitor en paralelo con la carga se carga hasta el pico de la señal rectificada y se descarga lentamente a través de $R_L$ mientras el rectificador no conduce, "rellenando" el valle entre pulsos.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_03.svg]]
 > 
 > **Voltaje de rizado pico a pico:**
 > 
@@ -190,7 +190,11 @@ dg-publish: true
 
 > [!note] 🖼️ El Regulador (adelanto)
 >
-> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_31_07.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 14 jul 2026, 21_31_07.png]]
+> 
+> **Se lee así:** el póster muestra la cadena completa de la fuente lineal — red CA, transformador, rectificador de puente, filtro capacitivo y regulador (7805 como ejemplo) — con la forma de onda de la señal en cada etapa y el detalle de cada bloque: qué hace y qué componentes externos exige.
+> 
+> **Por qué importa:** ver la señal transformarse etapa por etapa evita estudiar el regulador como una caja negra aislada; es el puente directo al tema de reguladores que sigue.
 
 ---
 
@@ -198,7 +202,7 @@ dg-publish: true
 
 > [!note] 🧭 Cómo elegir la configuración
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_04.svg]]
 > 
 > > 📌 La etapa de **regulación** (Zener, serie o IC) es un tema aparte — ver [[05 - Reguladores en Fuentes Lineales]].
 
@@ -263,7 +267,11 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Filtrado y Fuentes Lineales»: los cuatro filtros por frecuencia (LPF, HPF, BPF, Notch), el transformador (relación de vueltas, aislamiento galvánico), la rectificación en sus tres variantes (media onda, onda completa center-tap, puente de Graetz), el filtro capacitivo con el rizado $V_r$ y el $V_{DC}$ aproximado, y el paso siguiente a los reguladores en serie.
+> 
+> **Por qué importa:** es el índice visual para repasar antes del examen; la cadena completa y $V_r \approx I_{DC}/(f \cdot C)$ con la frecuencia de rizado correcta son lo que más se pregunta.
 
 ---
 

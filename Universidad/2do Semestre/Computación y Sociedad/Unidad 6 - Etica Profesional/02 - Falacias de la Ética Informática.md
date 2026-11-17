@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Una **falacia de ética informática** no es un argumento que alguien use conscientemente para justificar algo incorrecto — muchas veces es una **creencia genuina y difundida** que distorsiona el juicio ético de personas por lo demás razonables. Esta nota recopila seis de las más comunes, todas relacionadas con el uso de computadoras.
 > 
-> ![[Diagramas/02_-_Falacias_de_la_Ética_Informática_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Falacias_de_la_Ética_Informática_01.svg]]
 
 ---
 
@@ -117,7 +117,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué falacia está en juego?
 
-![[Diagramas/02_-_Falacias_de_la_Ética_Informática_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Falacias_de_la_Ética_Informática_02.svg]]
 
 ---
 

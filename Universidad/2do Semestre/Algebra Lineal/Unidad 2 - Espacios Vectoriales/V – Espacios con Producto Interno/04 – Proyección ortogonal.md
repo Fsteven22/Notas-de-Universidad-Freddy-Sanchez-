@@ -28,7 +28,7 @@ dg-publish: true
 > |**Filtrado**|Extraer componentes deseadas|Procesamiento de señales, imágenes|
 > |**Geometría**|Distancias y ángulos|Colisiones, renderizado 3D|
 
-![[Diagramas/04_–_Proyección_ortogonal_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_01.svg]]
 
 ---
 
@@ -61,7 +61,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_02.svg]]
 > 
 > **Propiedades fundamentales:**
 > 
@@ -242,7 +242,7 @@ dg-publish: true
 > 
 > **Diferencia con proyección sobre vector:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_03.svg]]
 > 
 > **Caracterización del subespacio:**
 > 
@@ -280,7 +280,7 @@ dg-publish: true
 > 
 > **Algoritmo de cálculo:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_04.svg]]
 > 
 > **Ejemplo completo: Proyección sobre plano**
 > 
@@ -399,7 +399,7 @@ dg-publish: true
 > 
 > **Comparación de métodos:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_05.svg]]
 
 ---
 
@@ -421,7 +421,7 @@ dg-publish: true
 > 
 > **Algoritmo:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_06.svg]]
 > 
 > **Ejemplo 1: Distancia punto-línea en ℝ²**
 > 
@@ -508,7 +508,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_07.svg]]
 > 
 > **Aplicación: Ajuste de curvas**
 > 
@@ -824,7 +824,7 @@ dg-publish: true
 > 
 > **Comparación de métodos:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_08.svg]]
 
 ---
 
@@ -842,7 +842,7 @@ dg-publish: true
 > - Buscar **\hat{x}** tal que **A\hat{x}** sea la proyección de **b** sobre Col(A)
 > - Minimizar ||**b** - **Ax**||² (error cuadrático)
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_09.svg]]
 > 
 > **Ecuación normal:**
 > 
@@ -1063,7 +1063,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/04_–_Proyección_ortogonal_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_10.svg]]
 > 
 > **Ejemplos en ℝ³:**
 > 
@@ -1208,7 +1208,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Conceptual
 
-![[Diagramas/04_–_Proyección_ortogonal_11.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_11.svg]]
 
 ### 📋 Tabla Resumen de Fórmulas
 
@@ -1228,7 +1228,7 @@ dg-publish: true
 
 ### 🎯 Diagrama de Flujo de Decisión
 
-![[Diagramas/04_–_Proyección_ortogonal_12.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_–_Proyección_ortogonal_12.svg]]
 
 ---
 

@@ -32,7 +32,7 @@ dg-publish: true
 > |**Estabilidad numérica**|No amplifica errores|Computación científica|
 > |**Cambios de base**|Transforma coordenadas|Física, ingeniería|
 
-![[Diagramas/07_–_Matriz_ortogonal_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_01.svg]]
 
 ---
 
@@ -85,7 +85,7 @@ dg-publish: true
 > 
 > **Visualización geométrica:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_02.svg]]
 > 
 > **4. Vectores ortonormales:**
 > 
@@ -169,7 +169,7 @@ dg-publish: true
 > 
 > **Propiedades equivalentes:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_03.svg]]
 > 
 > **Matriz identidad como matriz ortogonal:**
 > 
@@ -233,7 +233,7 @@ dg-publish: true
 > 
 > **Flujo de verificación:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_04.svg]]
 > 
 > **Casos de matrices NO ortogonales:**
 > 
@@ -299,7 +299,7 @@ dg-publish: true
 > 
 > **Visualización geométrica:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_05.svg]]
 > 
 > **Composición de rotaciones:**
 > 
@@ -384,7 +384,7 @@ dg-publish: true
 > 
 > **Comparación rotación vs reflexión:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_06.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -483,7 +483,7 @@ dg-publish: true
 > 
 > **Importancia computacional:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_07.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -589,7 +589,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_08.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -635,7 +635,7 @@ dg-publish: true
 > - **det(Q) = +1**: Preserva orientación (rotación)
 > - **det(Q) = -1**: Invierte orientación (reflexión)
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_09.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -748,7 +748,7 @@ dg-publish: true
 > 
 > **Pipeline gráfico:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_10.svg]]
 
 ### 🔬 Física y Mecánica
 
@@ -848,7 +848,7 @@ dg-publish: true
 > 
 > **Visualización:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_11.svg]]
 > 
 > **Otras aplicaciones estadísticas:**
 > 
@@ -978,7 +978,7 @@ dg-publish: true
 > 
 > **Flujo del algoritmo:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_12.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_12.svg]]
 > 
 > **Aplicaciones:**
 > 
@@ -1024,7 +1024,7 @@ dg-publish: true
 > 2. **Σ**: Escalado a lo largo de direcciones principales
 > 3. **U**: Rotación en espacio destino
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_13.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_13.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -1153,7 +1153,7 @@ dg-publish: true
 > 
 > **Aplicaciones:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_14.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_14.svg]]
 > 
 > **Cálculo de funciones matriciales:**
 > 
@@ -1191,7 +1191,7 @@ dg-publish: true
 > 
 > **Esquema de equivalencias:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_15.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_15.svg]]
 > 
 > **Demostración de algunas implicaciones:**
 > 
@@ -1248,7 +1248,7 @@ dg-publish: true
 > 
 > **Estructura de grupo:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_16.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_16.svg]]
 > 
 > **Propiedades adicionales:**
 > 
@@ -1289,7 +1289,7 @@ dg-publish: true
 > 
 > **Relación entre O(n) y SO(n):**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_17.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_17.svg]]
 > 
 > **Ejemplos en dimensiones bajas:**
 > 
@@ -1543,7 +1543,7 @@ dg-publish: true
 > 
 > **Definiciones fundamentales:**
 > 
-> ![[Diagramas/07_–_Matriz_ortogonal_18.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Matriz_ortogonal_18.svg]]
 > 
 > **Propiedades esenciales:**
 > 

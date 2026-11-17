@@ -14,7 +14,7 @@ dg-publish: true
 > - **Register Check:** la voz pasiva (*Passive Voice*) como herramienta de formalidad académica.
 > - **Listening/Speaking:** discusión sobre etiquetado de alimentos y pronunciación de la /t/ omitida.
 >
-> ![[Diagramas/04_-_Reading_Writing_Speaking_-_Survey_Results_&_Passive_Voice_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_Survey_Results_&_Passive_Voice_01.svg]]
 >
 > | Bloque | ¿Para qué sirve? | Dónde se usa |
 > |---|---|---|

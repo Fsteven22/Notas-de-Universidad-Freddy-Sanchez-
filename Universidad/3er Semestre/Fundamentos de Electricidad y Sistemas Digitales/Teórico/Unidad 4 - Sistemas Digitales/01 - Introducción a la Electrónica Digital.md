@@ -12,7 +12,11 @@ dg-publish: true
 >
 > Esta nota abre la Unidad 4 retomando esa conexión: un **ADC** (Unidad 3) no hace otra cosa que traducir una señal analógica del mundo real a un número representado en binario, y las **compuertas lógicas** (Unidad 3, nota 04) operan precisamente sobre esos unos y ceros. Aquí formalizamos cómo se representan, convierten y codifican esos números, y cómo se interpretan eléctricamente los niveles de voltaje que los transportan.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
+> 
+> **Se lee así:** El diagrama muestra el recorrido completo de una señal: una magnitud continua del mundo real entra a un ADC, sale como número binario discreto, las compuertas lógicas lo procesan como 0 y 1, y todo se transporta físicamente como niveles de voltaje H/L. Es, en una línea, la cadena «mundo analógico → digital → niveles eléctricos» que recorre esta introducción.
+> 
+> **Por qué importa:** Es el modelo mental de toda la unidad: el ADC no es un tema aparte, es el puente entre el mundo físico y la lógica binaria. Entender qué hace cada eslabón evita confundir la señal física (voltaje) con su interpretación lógica (0/1).
 
 ---
 
@@ -35,6 +39,14 @@ dg-publish: true
 > |**Octal**|8|0–7|Notación compacta de grupos de 3 bits (menos común hoy)|
 > |**Decimal**|10|0–9|Sistema natural humano; punto de partida para conversión|
 > |**Hexadecimal**|16|0–9, A–F|Notación compacta de grupos de 4 bits (direcciones de memoria, colores, registros)|
+
+> [!note] 🖼️ Por qué todo es binario
+>
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 21_14_00.png]]
+> 
+> **Se lee así:** La infografía resume en tres paneles por qué todo se representa en binario: (1) el mundo analógico entrega una señal continua, (2) un ADC de 8 bits la discretiza (ej. Vin = 3.42 V → código de 8 bits, ≈256 niveles, 5 V/255 ≈ 19.6 mV por LSB), y (3) las compuertas solo entienden dos niveles de voltaje, H ≈ 5 V y L ≈ 0 V, con umbrales típicos TTL/CMOS. Abajo incluye además la conversión de (173)₁₀ a binario por divisiones sucesivas.
+> 
+> **Por qué importa:** Cierra el círculo entre el voltaje físico y el bit que el circuito interpreta: por eso el sistema de esta unidad es el binario.
 
 ---
 
@@ -137,7 +149,11 @@ dg-publish: true
 >
 > Una **tabla de verdad** enumera todas las combinaciones posibles de entrada de un circuito lógico y la salida correspondiente. Los valores lógicos se representan indistintamente como `True/False`, `V/F` o `1/0`.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
+> 
+> **Se lee así:** El diagrama es el esqueleto de cualquier circuito lógico: dos entradas (A y B) llegan a un bloque «Circuito lógico» y de allí sale una única salida F. La tabla de verdad es simplemente el inventario de qué vale F para cada combinación posible de A y B.
+> 
+> **Por qué importa:** Todo diseño combinacional empieza por este esquema; recordar que las $2^n$ combinaciones se enumeran sin saltarse ninguna es lo que hace correcta una tabla de verdad desde la que luego se deriva la función lógica.
 >
 
 > [!note] 📋 Las tres compuertas fundamentales
@@ -180,9 +196,6 @@ dg-publish: true
 >
 > Es decir, "A en lógica positiva (activo en alto)" es la misma señal física que "$\overline{A}$ en lógica negativa (activo en bajo)". Esto permite, por ejemplo, leer una compuerta AND con salida negada como si fuera una OR en lógica negativa — el circuito físico no cambia, cambia la interpretación.
 
-> [!note] 🖼️ Lógica Positiva y Negativa
->
-> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
 
 ---
 
@@ -208,7 +221,11 @@ dg-publish: true
 
 > [!note] 🖼️ Diagrama de Decisión: ¿Qué convención de lógica usar?
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
+> 
+> **Se lee así:** El diagrama de decisión parte de una pregunta: ¿la señal viene de un datasheet o una especificación externa? Si especifica activo en H, lógica positiva para esa señal; si especifica activo en L (ej. Reset activo bajo), lógica negativa; sin restricción externa, elige la convención que minimice el número de inversores. El último paso pregunta si se combinan señales de ambas convenciones en el mismo circuito (si sí → lógica mixta con la equivalencia A.H ↔ Ā.L; si no → una sola convención en todo el circuito).
+> 
+> **Por qué importa:** Seguir el árbol evita el error clásico de mezclar convenciones sin traducir las señales, que produce una función lógica distinta a la deseada aunque el circuito físico esté bien armado.
 
 ---
 
@@ -297,7 +314,11 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
+> 
+> **Se lee así:** El mapa mental recoge todo el contenido de la nota: sistemas de numeración (binario, octal, decimal, hex y la notación $(N)_r$), conversión (a decimal por notación polinomial; desde decimal por divisiones/multiplicaciones sucesivas), BCD (un nibble por dígito), tablas de verdad de AND/OR/NOT, lógica positiva y negativa (H→1/L→0, pull-down/pull-up, lógica mixta) y lo pendiente (operaciones binarias, complemento a base 2, minimización SOP/POS).
+> 
+> **Por qué importa:** Sirve como índice visual para el repaso final: si alguna rama no te resulta familiar, es justo el punto que conviene volver a estudiar antes del examen.
 
 ---
 

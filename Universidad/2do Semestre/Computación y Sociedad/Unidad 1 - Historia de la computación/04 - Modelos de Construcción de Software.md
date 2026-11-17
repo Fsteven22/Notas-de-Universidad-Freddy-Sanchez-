@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Desarrollar software no es simplemente escribir código. Requiere planificación, análisis, diseño, pruebas y mantenimiento. Los **modelos de construcción de software** son marcos de trabajo que definen cómo organizar estas etapas para producir software de calidad de forma predecible.
 >
-> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_01.svg]]
 
 ---
 
@@ -20,7 +20,7 @@ dg-publish: true
 >
 > El **Modelo Cascada** es el más antiguo y tradicional. Las fases se ejecutan de forma **secuencial y lineal**: cada etapa debe completarse antes de pasar a la siguiente, como el agua cayendo en cascada.
 >
-> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_02.svg]]
 >
 > ### Fases del modelo
 >
@@ -50,7 +50,7 @@ dg-publish: true
 >
 > El **Modelo Espiral** combina elementos del modelo cascada con la naturaleza iterativa del prototipado. Cada vuelta de la espiral representa una fase del proyecto, con especial énfasis en el **análisis de riesgos** en cada iteración.
 >
-> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_03.svg]]
 >
 > ### Cuadrantes de cada iteración
 >
@@ -78,7 +78,7 @@ dg-publish: true
 >
 > El **Modelo Incremental** divide el desarrollo en **incrementos**, cada uno de los cuales añade funcionalidad al sistema. El cliente recibe versiones parciales del producto que ya son funcionales y usables.
 >
-> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_04.svg]]
 >
 > ### Fases de cada incremento
 >
@@ -107,7 +107,7 @@ dg-publish: true
 >
 > **SCRUM** es el marco de trabajo ágil más popular. Organiza el desarrollo en ciclos cortos llamados **sprints** (generalmente de 2 a 4 semanas), al final de los cuales se entrega un incremento funcional del producto.
 >
-> ![[Diagramas/04_-_Modelos_de_Construcción_de_Software_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Modelos_de_Construcción_de_Software_05.svg]]
 >
 > ### Roles en SCRUM
 >

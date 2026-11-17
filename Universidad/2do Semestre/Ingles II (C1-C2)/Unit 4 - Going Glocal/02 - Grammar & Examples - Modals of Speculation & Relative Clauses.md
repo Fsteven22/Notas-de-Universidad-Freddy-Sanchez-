@@ -12,7 +12,7 @@ dg-publish: true
 > - **Modals of speculation:** verbos modales para expresar distintos grados de certeza al especular sobre algo (sección 4.1).
 > - **Subject and object relative clauses:** cláusulas que añaden información extra sobre personas, cosas o lugares (sección 4.2).
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -138,7 +138,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Modals_of_Speculation_&_Relative_Clauses_02.svg]]
 
 ---
 

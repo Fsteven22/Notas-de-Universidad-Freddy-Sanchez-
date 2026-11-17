@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > No todo ataque informático busca robar información. Algunos tienen un objetivo distinto: **interrumpir un servicio**, dejarlo inaccesible, o simplemente **observar el tráfico** que circula por una red para recolectar información sin que nadie lo note. Esta nota cubre esas dos familias de ataque: el **sabotaje de servicios** (DoS/DDoS) y la **interceptación de tráfico** (sniffers, botnets como infraestructura).
 > 
-> ![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_01.svg]]
 
 ---
 
@@ -40,7 +40,7 @@ dg-publish: true
 > 
 > La forma más común de realizar un DDoS es a través de una **red de bots (botnet)**, siendo esta técnica el ciberataque más usual y eficaz por su **sencillez tecnológica**.
 
-![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_02.svg]]
 
 > [!warning] ⚠️ DoS vs. DDoS — no confundir
 > 
@@ -78,7 +78,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de ataque de red es?
 
-![[Diagramas/06_-_Sabotaje_y_Ataques_de_Red_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Sabotaje_y_Ataques_de_Red_03.svg]]
 
 ---
 

@@ -32,7 +32,7 @@ dg-publish: true
 > | **Clasificación** | Distingue matrices similares | Teoría de matrices |
 > | **Herramienta computacional** | Base para algoritmos numéricos | Cálculo práctico |
 
-![[Diagramas/02_-_Polinomio_Característico_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_01.svg]]
 
 ---
 
@@ -44,7 +44,7 @@ dg-publish: true
 > 
 > **Pasos fundamentales:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_02.svg]]
 > 
 > **Ejemplo detallado para matriz 2×2:**
 > 
@@ -194,7 +194,7 @@ dg-publish: true
 > - $m_i$ es la multiplicidad algebraica de $\lambda_i$
 > - $\sum_{i=1}^k m_i = n$
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_03.svg]]
 
 ### 🎯 Coeficientes Significativos
 
@@ -247,7 +247,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_04.svg]]
 
 ---
 
@@ -324,7 +324,7 @@ dg-publish: true
 > 
 > **Métodos de cálculo:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_05.svg]]
 > 
 > **Ejemplo con expansión por cofactores:**
 > 
@@ -402,7 +402,7 @@ dg-publish: true
 > 
 > **Estrategias según estructura:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_06.svg]]
 > 
 > **Forma general n×n:**
 > 
@@ -482,7 +482,7 @@ dg-publish: true
 > - Si A tiene n valores propios distintos → A es diagonalizable
 > - Valores propios complejos aparecen en **pares conjugados** (si A es real)
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_07.svg]]
 > 
 > ---
 > 
@@ -623,7 +623,7 @@ dg-publish: true
 > 
 > **Diagrama de relaciones:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_08.svg]]
 
 ---
 
@@ -738,7 +738,7 @@ dg-publish: true
 > 
 > **Resumen visual:**
 > 
-> ![[Diagramas/02_-_Polinomio_Característico_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_09.svg]]
 
 ### 🌟 Patrones Notables
 
@@ -1112,7 +1112,7 @@ dg-publish: true
 > 
 ## 📊 Resumen Visual Completo
 
-![[Diagramas/02_-_Polinomio_Característico_10.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_10.svg]]
 
 ### Tabla Resumen Global
 
@@ -1139,7 +1139,7 @@ dg-publish: true
 
 **Has dominado:**
 
-![[Diagramas/02_-_Polinomio_Característico_11.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_11.svg]]
 
 **Próximos pasos:**
 
@@ -1155,7 +1155,7 @@ dg-publish: true
 
 **Roadmap:**
 
-![[Diagramas/02_-_Polinomio_Característico_12.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Polinomio_Característico_12.svg]]
 
 ---
 

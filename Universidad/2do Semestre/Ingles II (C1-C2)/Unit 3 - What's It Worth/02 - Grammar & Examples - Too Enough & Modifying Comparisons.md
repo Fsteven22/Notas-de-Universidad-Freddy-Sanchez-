@@ -12,7 +12,7 @@ dg-publish: true
 > - **Too and enough:** para indicar si algo es excesivo o insuficiente.
 > - **Modifying comparisons:** para mostrar el grado exacto de una diferencia al comparar.
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Too_Enough_&_Modifying_Comparisons_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Too_Enough_&_Modifying_Comparisons_01.svg]]
 > 
 > |Estructura|Función|Ejemplo de uso real|
 > |---|---|---|

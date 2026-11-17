@@ -27,7 +27,7 @@ dg-publish: true
 > |**Respaldo**|Crear copias de seguridad|Backups automáticos, historial de cambios|
 > |**Procesamiento por lotes**|Procesar múltiples archivos automáticamente|Conversión de formatos, análisis de datos|
 
-![[Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ dg-publish: true
 > 
 > Java proporciona un rico conjunto de clases para trabajar con archivos, organizadas en una **jerarquía lógica** que separa responsabilidades.
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_02.svg]]
 > 
 > **Categorías principales:**
 > 
@@ -57,11 +57,11 @@ dg-publish: true
 > 
 > **Lectura de archivos:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_03.svg]]
 > 
 > **Escritura de archivos:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_04.svg]]
 > 
 > **¿Por qué usar buffers?**
 > 
@@ -82,7 +82,7 @@ dg-publish: true
 > 
 > **Proceso paso a paso:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_05.svg]]
 > 
 > **Métodos de lectura:**
 > 
@@ -177,7 +177,7 @@ dg-publish: true
 > 
 > **Comparación de estrategias:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_06.svg]]
 
 ---
 
@@ -189,7 +189,7 @@ dg-publish: true
 > 
 > **Proceso paso a paso:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_07.svg]]
 > 
 > **Modos de escritura:**
 > 
@@ -300,7 +300,7 @@ dg-publish: true
 > 
 > **Comparación de modos:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_08.svg]]
 
 ---
 
@@ -314,7 +314,7 @@ dg-publish: true
 > 
 > **Operaciones más comunes:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_09.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_09.svg]]
 > 
 > **Ejemplo completo de uso:**
 > 
@@ -442,7 +442,7 @@ dg-publish: true
 > 
 > **Flujo de exploración:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_10.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_10.svg]]
 
 ---
 
@@ -454,7 +454,7 @@ dg-publish: true
 > 
 > **Jerarquía de excepciones:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_11.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_11.svg]]
 > 
 > **Tabla de excepciones:**
 > 
@@ -552,7 +552,7 @@ dg-publish: true
 > 
 > **Flujo de ejecución:**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_12.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_12.svg]]
 
 ---
 
@@ -625,7 +625,7 @@ dg-publish: true
 > 
 > **5. Elegir el nivel correcto de abstracción**
 > 
-> ![[Diagramas/02_-_Lectura_y_escritura_de_archivos_13.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_13.svg]]
 
 ### 🔄 Patrón Común: Copiar Archivo
 
@@ -697,7 +697,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[Diagramas/02_-_Lectura_y_escritura_de_archivos_14.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Lectura_y_escritura_de_archivos_14.svg]]
 
 >[!success] ### 📋 Tabla Comparativa Final
 > 

@@ -27,7 +27,7 @@ dg-publish: true
 > - Un Perro **ES-UN** Animal ✅
 > - Un Coche **TIENE-UN** Motor ❌ (composición, no herencia)
 
-![[Diagramas/01_-_Herencia_en_Java_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_01.svg]]
 
 > [!tip] 🎯 ¿Cuándo Usar Herencia?
 > 
@@ -724,7 +724,7 @@ dg-publish: true
 > 
 > **Lineal - Un nivel de herencia:**
 > 
-> ![[Diagramas/01_-_Herencia_en_Java_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_02.svg]]
 > 
 > ```java
 > public class Persona {
@@ -743,7 +743,7 @@ dg-publish: true
 > 
 > **Múltiples niveles - Herencia en cadena:**
 > 
-> ![[Diagramas/01_-_Herencia_en_Java_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_03.svg]]
 > 
 > ```java
 > public class Persona {
@@ -782,7 +782,7 @@ dg-publish: true
 > 
 > **Una superclase, múltiples subclases:**
 > 
-> ![[Diagramas/01_-_Herencia_en_Java_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_04.svg]]
 
 ---
 
@@ -1090,7 +1090,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Herencia_en_Java_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Herencia_en_Java_05.svg]]
 
 > [!quote] 💡 Puntos Clave
 > 

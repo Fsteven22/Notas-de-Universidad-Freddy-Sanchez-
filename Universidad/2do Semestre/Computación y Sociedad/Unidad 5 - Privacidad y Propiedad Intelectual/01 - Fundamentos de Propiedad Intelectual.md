@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Hasta ahora hemos visto amenazas contra la información y la privacidad de las personas. Esta nota cambia de eje: no se trata de proteger datos personales, sino de proteger **creaciones de la mente** — ideas, obras, invenciones — que también tienen valor y también pueden ser robadas o usadas sin autorización.
 > 
-> ![[Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_01.svg]]
 
 ---
 
@@ -88,7 +88,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿A qué organismo o derecho corresponde?
 
-![[Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Fundamentos_de_Propiedad_Intelectual_02.svg]]
 
 ---
 

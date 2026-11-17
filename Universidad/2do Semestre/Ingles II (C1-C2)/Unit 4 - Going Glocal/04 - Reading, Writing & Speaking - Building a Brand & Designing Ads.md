@@ -12,7 +12,7 @@ dg-publish: true
 > - **Building a Brand:** el caso de estudio de Havaianas como marca que pasó de ser local a global, más un ejercicio de writing sobre el impacto de las marcas globales en comunidades locales (sección 4.4).
 > - **Design an Ad:** una tarea de speaking en grupo para diseñar un anuncio publicitario aplicando técnicas reales de marketing (sección 4.5, Time to Speak).
 > 
-> ![[Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -144,7 +144,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Qué técnica publicitaria usar?
 
-![[Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading,_Writing_&_Speaking_-_Building_a_Brand_&_Designing_Ads_02.svg]]
 
 ---
 

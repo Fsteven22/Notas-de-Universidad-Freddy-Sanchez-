@@ -12,7 +12,7 @@ dg-publish: true
 > - **Describing accomplishments:** expresiones para hablar de metas alcanzadas, miedos superados y momentos de orgullo personal.
 > - **Key qualities:** adjetivos y sustantivos para describir las cualidades de una persona en un entorno laboral o académico.
 > 
-> ![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Accomplishments_&_Key_Qualities_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Describing_Accomplishments_&_Key_Qualities_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|

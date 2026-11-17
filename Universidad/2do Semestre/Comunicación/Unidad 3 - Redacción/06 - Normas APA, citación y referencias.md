@@ -23,7 +23,7 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 > | **Honestidad** | Copia detectable como plagio | Trazable al original |
 > | **Lector** | No puede verificar tus fuentes | Rastrea cada afirmación |
 
-![[Diagramas/06_-_Normas_APA,_citación_y_referencias_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Normas_APA,_citación_y_referencias_03.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 > | 4 | Sangría, **negrita** y punto final | Misma línea |
 > | 5 | Sangría, **negrita, cursiva** y punto | Misma línea |
 >
-> ![[Diagramas/06_-_Normas_APA,_citación_y_referencias_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Normas_APA,_citación_y_referencias_02.svg]]
 >
 > **Cómo se ve en un capítulo real (del taller):** "Capítulo 2 – Metodología" (nivel 1) → "2.1 Periodo y lugar..." (nivel 2) → "2.1.1 Análisis de la organización" (nivel 3) → "2.1.1.1 Análisis del entorno." (nivel 4, con sangría y punto).
 
@@ -107,7 +107,7 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 >
 > Todos los tipos de fuente comparten el esqueleto: **Autor → Fecha → Título de la obra → Fuente**, con **orden alfabético**, **interlineado doble** y **sangría francesa**. Lo que cambia es el detalle distintivo:
 >
-> ![[Diagramas/06_-_Normas_APA,_citación_y_referencias_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Normas_APA,_citación_y_referencias_07.svg]]
 >
 > | Tipo de fuente | Ejemplo | Dato distintivo |
 > |---|---|---|
@@ -194,7 +194,7 @@ tags: [IDIG2012, unidad3, apa, citacion, referencias, redaccion, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/06_-_Normas_APA,_citación_y_referencias_06.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Normas_APA,_citación_y_referencias_06.svg]]
 
 > [!success] 🔍 Comparación Final
 >

@@ -245,7 +245,7 @@ dg-publish: true
 > [!note] Visualización del Espacio Columna
 > **En $\mathbb{R}^3$:**
 > 
-> ![[Diagramas/05_–_Espacio_columna_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_01.svg]]
 > 
 > **Casos visuales:**
 > 
@@ -305,7 +305,7 @@ dg-publish: true
 > 
 > **Relaciones de ortogonalidad:**
 > 
-> ![[Diagramas/05_–_Espacio_columna_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_–_Espacio_columna_02.svg]]
 > 
 > **Teorema de la dimensión:**
 > 

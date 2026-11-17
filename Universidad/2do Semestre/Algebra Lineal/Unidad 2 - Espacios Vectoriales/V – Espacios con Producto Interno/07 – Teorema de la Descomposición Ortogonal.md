@@ -34,7 +34,7 @@ dg-publish: true
 > |**Geometría**|Entender distancias y ángulos|Gráficos computacionales|
 > |**Optimización**|Resolver problemas de aproximación|Regresión lineal|
 
-![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_01.svg]]
 
 ---
 
@@ -74,7 +74,7 @@ dg-publish: true
 > 
 > **Visualización de subespacios:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_02.svg]]
 > 
 > **Base de un subespacio:**
 > 
@@ -134,7 +134,7 @@ dg-publish: true
 > 
 > **Propiedades fundamentales:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_03.svg]]
 > 
 > **Teorema de la dimensión:**
 > 
@@ -248,7 +248,7 @@ dg-publish: true
 > 
 > **Flujo de cálculo:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_04.svg]]
 > 
 > **Propiedades de la proyección:**
 > 
@@ -283,7 +283,7 @@ dg-publish: true
 > 
 > **Componentes del teorema:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_05.svg]]
 > 
 > **Notación y terminología:**
 > 
@@ -367,7 +367,7 @@ dg-publish: true
 > 
 > **Diagrama de la demostración:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_06.svg]]
 
 ### 🎯 Consecuencias Importantes
 
@@ -501,7 +501,7 @@ dg-publish: true
 > 
 > **Flujo del proceso:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_07.svg]]
 > Si {q₁, q₂, ..., qₖ} es base ortonormal de W:
 > - qᵢ · qⱼ = 0 para i ≠ j (ortogonales)
 > - ‖qᵢ‖ = 1 para todo i (unitarios)
@@ -627,7 +627,7 @@ dg-publish: true
 > 
 > **Diagrama del proceso:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_08.svg]]
 
 ---
 
@@ -662,7 +662,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_09.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -779,7 +779,7 @@ dg-publish: true
 > 
 > **Proceso de compresión:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_10.svg]]
 > 
 > **Ventaja de la ortogonalidad:**
 > 
@@ -1033,7 +1033,7 @@ dg-publish: true
 > 
 > **Teorema fundamental:**
 > 
-> ![[Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_–_Teorema_de_la_Descomposición_Ortogonal_11.svg]]
 > 
 > **Fórmulas esenciales:**
 > 

@@ -9,7 +9,7 @@ dg-publish: true
 >
 > Convertir entre decimal y binario tiene **dos direcciones** (decimal→binario y binario→decimal), y cada una se complica un poco cuando el número tiene **parte fraccionaria**. Esta nota cubre los cuatro casos con ejemplos resueltos paso a paso.
 >
-> ![[Diagramas/04_-_Conversion_Decimal-Binario_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Conversion_Decimal-Binario_01.svg]]
 
 ---
 
@@ -154,7 +154,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/04_-_Conversion_Decimal-Binario_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Conversion_Decimal-Binario_02.svg]]
 
 ---
 

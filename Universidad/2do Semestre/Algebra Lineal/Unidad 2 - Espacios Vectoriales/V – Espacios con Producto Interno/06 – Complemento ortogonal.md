@@ -26,7 +26,7 @@ dg-publish: true
 > |**Unicidad**|Descomposición única|Estabilidad|
 > |**Geometría**|Visualización clara|Intuición|
 
-![[Diagramas/06_–_Complemento_ortogonal_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_01.svg]]
 
 ---
 
@@ -59,7 +59,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/06_–_Complemento_ortogonal_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_02.svg]]
 
 ### 🔍 Criterio Práctico
 
@@ -214,7 +214,7 @@ dg-publish: true
 > 
 > **Diagrama de los cuatro subespacios:**
 > 
-> ![[Diagramas/06_–_Complemento_ortogonal_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_03.svg]]
 > 
 > **Fórmulas de dimensión:**
 > 
@@ -725,7 +725,7 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[Diagramas/06_–_Complemento_ortogonal_04.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_04.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -985,7 +985,7 @@ dg-publish: true
 > 
 > **Progresión natural:**
 > 
-> ![[Diagramas/06_–_Complemento_ortogonal_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Complemento_ortogonal_05.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

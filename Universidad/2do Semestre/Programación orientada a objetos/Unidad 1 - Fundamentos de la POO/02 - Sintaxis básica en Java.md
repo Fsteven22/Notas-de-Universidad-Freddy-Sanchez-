@@ -25,7 +25,7 @@ dg-publish: true
 > |**Mantenimiento**|😫 Difícil de modificar|✅ Fácil de actualizar|
 > |**Colaboración**|❌ Difícil de compartir|✅ Estándar reconocible|
 
-![[Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_01.svg]]
 
 ---
 
@@ -73,7 +73,7 @@ dg-publish: true
 > |`public class`|✅ Sí|Definir la clase principal|
 > |`main()`|✅ Sí|Punto de inicio del programa|
 > 
-> ![[Diagramas/02_-_Sintaxis_básica_en_Java_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_02.svg]]
 
 ### 🎪 El Método main
 
@@ -218,7 +218,7 @@ dg-publish: true
 > 
 > **Diferencia clave: Primitivos vs Referencias**
 > 
-> ![[Diagramas/02_-_Sintaxis_básica_en_Java_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_03.svg]]
 
 ---
 
@@ -520,7 +520,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Sintaxis_básica_en_Java_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Sintaxis_básica_en_Java_04.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
 > |Concepto|Sintaxis|Ejemplo|

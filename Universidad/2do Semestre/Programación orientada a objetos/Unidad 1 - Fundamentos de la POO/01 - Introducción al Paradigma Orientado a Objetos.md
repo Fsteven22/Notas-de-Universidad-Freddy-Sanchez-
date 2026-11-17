@@ -25,7 +25,7 @@ dg-publish: true
 > |**Abstracción**|Ocultar complejidad innecesaria|✅ Código más simple|
 > |**Mantenibilidad**|Cambios localizados, no globales|✅ Menos errores|
 
-![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_01.svg]]
 
 ---
 
@@ -37,7 +37,7 @@ dg-publish: true
 > 
 > **Clase:** El plano o molde que define cómo será algo **Objeto:** Una instancia concreta creada a partir de ese molde
 > 
-> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_02.svg]]
 > 
 > **Ejemplo básico:**
 > 
@@ -210,7 +210,7 @@ dg-publish: true
 > - Referencia al objeto actual
 > - Distingue entre parámetros y atributos con el mismo nombre
 > 
-> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_03.svg]]
 
 ---
 
@@ -289,7 +289,7 @@ dg-publish: true
 > 
 > La **herencia** permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos.
 > 
-> ![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_04.svg]]
 > 
 > ```java
 > // Clase base (superclase/padre)
@@ -474,7 +474,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_al_Paradigma_Orientado_a_Objetos_05.svg]]
 
 > [!success]  🎯 Tabla Comparativa
 > |Concepto|Qué es|Cuándo usar|Ejemplo|

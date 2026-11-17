@@ -18,7 +18,7 @@ dg-publish: true
 > 
 > **Características fundamentales:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_01.svg]]
 > 
 > |Característica|Descripción|Implicación|
 > |---|---|---|
@@ -150,7 +150,7 @@ dg-publish: true
 > 
 > **Visualización de inicialización:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_02.svg]]
 
 ---
 
@@ -190,7 +190,7 @@ dg-publish: true
 > 
 > **Representación visual:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_03.svg]]
 > 
 > **⚠️ Error común - ArrayIndexOutOfBoundsException:**
 > 
@@ -285,7 +285,7 @@ dg-publish: true
 > 
 > **Flujo de decisión:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_04.svg]]
 
 ---
 
@@ -400,7 +400,7 @@ dg-publish: true
 > 
 > **Visualización del problema:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_05.svg]]
 > 
 > **✅ Formas correctas de copiar:**
 > 
@@ -550,7 +550,7 @@ dg-publish: true
 > 
 > **Visualización de matriz 3x3:**
 > 
-> ![[Diagramas/01_-_Arreglos_estáticos_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_06.svg]]
 > 
 > **Inicialización:**
 > 
@@ -698,7 +698,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Arreglos_estáticos_07.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Arreglos_estáticos_07.svg]]
 
 > [!quote] 🎓 Puntos Clave para Recordar
 > 

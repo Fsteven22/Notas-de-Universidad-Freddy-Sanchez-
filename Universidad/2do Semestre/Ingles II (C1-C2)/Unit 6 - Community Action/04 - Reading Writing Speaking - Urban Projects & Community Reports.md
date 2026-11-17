@@ -13,7 +13,7 @@ dg-publish: true
 > - **Painting Safer Streets:** comparación de dos proyectos urbanos reales (Portland y Ciudad de México), con enfoque en cómo introducir citas de opiniones distintas dentro de un reporte (sección 6.4).
 > - **Your Urban Art Project:** una tarea de speaking en grupo inspirada en el proyecto Morrinho de Río de Janeiro, para diseñar tu propio proyecto de arte urbano (sección 6.5, Time to Speak).
 > 
-> ![[Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -146,7 +146,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión — ¿Cómo introduzco una cita en mi reporte?
 
-![[Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_Urban_Projects_&_Community_Reports_02.svg]]
 
 ---
 

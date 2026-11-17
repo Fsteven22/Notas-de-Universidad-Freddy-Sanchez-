@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Barack Obama lo resumió así: *"It's now clear this cyber threat is one of the most serious economic and national security challenges we face as a nation."* Esta nota cierra el bloque de ciberseguridad conectando dos ideas: **el derecho a la privacidad** que toda persona tiene, y los **métodos concretos** con los que se protege (o se vulnera) ese derecho en la práctica.
 > 
-> ![[Diagramas/07_-_Privacidad_y_Protección_de_Datos_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Privacidad_y_Protección_de_Datos_01.svg]]
 
 ---
 
@@ -115,7 +115,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué método de protección aplicar?
 
-![[Diagramas/07_-_Privacidad_y_Protección_de_Datos_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Privacidad_y_Protección_de_Datos_02.svg]]
 
 ---
 

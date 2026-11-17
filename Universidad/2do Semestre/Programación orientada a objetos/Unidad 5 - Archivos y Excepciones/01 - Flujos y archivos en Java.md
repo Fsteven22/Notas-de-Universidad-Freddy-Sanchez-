@@ -16,7 +16,7 @@ dg-publish: true
 > - **Flujo** → Corriente de agua (datos fluyendo)
 > - **Destino** → Desembocadura (pantalla, archivo, red)
 > 
-> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_01.svg]]
 
 ---
 
@@ -36,13 +36,13 @@ dg-publish: true
 > |**Ejemplos**|Imágenes, audio, video|.txt, .csv, .log|
 > |**Codificación**|No maneja|✅ Maneja UTF-8, etc.|
 
-![[Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_02.svg]]
 
 ### 📊 Jerarquía Completa
 
 > [!note] 🌳 Árbol de Clases de E/S
 > 
-> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_03.svg]]
 
 ---
 
@@ -109,7 +109,7 @@ dg-publish: true
 > 
 > Java usa el **patrón Decorator** para añadir capacidades a los flujos básicos sin modificarlos.
 > 
-> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_04.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -177,7 +177,7 @@ dg-publish: true
 > 
 > **Problema:** Los flujos consumen recursos del sistema operativo.
 > 
-> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_05.svg]]
 > 
 > **Solución: try-with-resources** (Java 7+)
 > 
@@ -194,7 +194,7 @@ dg-publish: true
 
 > [!summary] 🎯 Guía Rápida de Decisión
 > 
-> ![[Diagramas/01_-_Flujos_y_archivos_en_Java_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Flujos_y_archivos_en_Java_06.svg]]
 > 
 > |Pregunta|Respuesta|Clase a usar|
 > |---|---|---|

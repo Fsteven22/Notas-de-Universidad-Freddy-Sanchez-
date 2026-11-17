@@ -18,7 +18,7 @@ dg-publish: true
 > 
 > **Problema que resuelven:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_01.svg]]
 > 
 > **Tabla de correspondencia:**
 > 
@@ -64,7 +64,7 @@ dg-publish: true
 > 
 > **Visualización del proceso:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_02.svg]]
 > 
 > **Ejemplos prácticos:**
 > 
@@ -170,7 +170,7 @@ dg-publish: true
 > 
 > **Visualización del caché:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_03.svg]]
 
 ---
 
@@ -245,7 +245,7 @@ dg-publish: true
 > 
 > **Diagrama de conversiones:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_04.svg]]
 
 ### 🧮 Métodos de Utilidad
 
@@ -397,7 +397,7 @@ dg-publish: true
 > 
 > **Visualización en memoria:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_05.svg]]
 > 
 > **Mejor práctica:**
 > 
@@ -576,7 +576,7 @@ dg-publish: true
 > 
 > **Guía de decisión:**
 > 
-> ![[Diagramas/02_-_Clases_Wrapper_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_06.svg]]
 > 
 > **Mejores prácticas:**
 > 
@@ -701,4 +701,4 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Clases_Wrapper_07.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Clases_Wrapper_07.svg]]

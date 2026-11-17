@@ -11,7 +11,7 @@ dg-publish: true
 > 
 > Es común dividir esta evolución en generaciones o "versiones" de la Web para estudiar esos cambios.
 > 
-> ![[Diagramas/02_-_Evolución_de_la_Web_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Evolución_de_la_Web_01.svg]]
 
 ---
 

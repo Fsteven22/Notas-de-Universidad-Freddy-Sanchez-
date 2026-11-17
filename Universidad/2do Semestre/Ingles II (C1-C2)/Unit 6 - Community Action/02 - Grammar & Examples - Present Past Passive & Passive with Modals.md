@@ -13,7 +13,7 @@ dg-publish: true
 > - **Present and past passive:** para describir acciones cuando el agente (quién hace la acción) no es importante o no se conoce (sección 6.1).
 > - **Passive with modals:** para combinar la voz pasiva con distintos grados de certeza, posibilidad o necesidad (sección 6.2).
 > 
-> ![[Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -129,7 +129,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_&_Examples_-_Present_Past_Passive_&_Passive_with_Modals_02.svg]]
 
 ---
 

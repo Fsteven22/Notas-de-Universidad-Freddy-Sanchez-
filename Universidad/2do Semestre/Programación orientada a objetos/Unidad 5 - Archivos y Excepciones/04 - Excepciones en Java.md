@@ -19,7 +19,7 @@ dg-publish: true
 > - **Manejo** → Detenerte, cambiar la llanta, continuar
 > - **Sin manejo** → Accidente, daños mayores
 > 
-> ![[Diagramas/04_-_Excepciones_en_Java_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_01.svg]]
 
 ---
 
@@ -29,7 +29,7 @@ dg-publish: true
 
 > [!note] 🗂️ Organización de Excepciones en Java
 > 
-> ![[Diagramas/04_-_Excepciones_en_Java_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_02.svg]]
 > 
 > **Categorías principales:**
 > 
@@ -129,7 +129,7 @@ dg-publish: true
 > 
 > **Flujo de ejecución:**
 > 
-> ![[Diagramas/04_-_Excepciones_en_Java_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_03.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -348,7 +348,7 @@ dg-publish: true
 > 
 > **Cadena de propagación:**
 > 
-> ![[Diagramas/04_-_Excepciones_en_Java_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_04.svg]]
 
 ---
 
@@ -712,7 +712,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/04_-_Excepciones_en_Java_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Excepciones_en_Java_05.svg]]
 
 ---
 
