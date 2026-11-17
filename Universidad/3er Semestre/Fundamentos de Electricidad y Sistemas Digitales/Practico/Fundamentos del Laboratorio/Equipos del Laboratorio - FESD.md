@@ -30,6 +30,7 @@ dg-publish: true
 > - **Puntos pequeños alrededor de un punto grande**: comparten potencial con él (arriba, abajo, izquierda, derecha).
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
+>
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230457.png]]
 > 
 > > ⚠️ Los puntos grandes están **aislados entre sí**. No confundir con el protoboard.
@@ -100,6 +101,7 @@ dg-publish: true
 > |Verde|Referencia (0V)|CH3(+) — CH1(−)|
 > |Rojo|+Vcc|CH1(+)|
 > |Azul|−Vcc|CH3(−)|
+>
 > ![[../../Anexos/Pasted image 20260525231619.png]]
 
 ---
