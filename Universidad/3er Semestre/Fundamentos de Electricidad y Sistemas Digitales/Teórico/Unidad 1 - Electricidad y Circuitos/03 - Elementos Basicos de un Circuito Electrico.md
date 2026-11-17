@@ -31,9 +31,9 @@ tags: [EYAG1037, unidad1, electricidad]
 
 
 
-![[Pasted image 20260519230346.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230346.png]]
 
-![[Pasted image 20260519225934.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519225934.png]]
 
 ---
 

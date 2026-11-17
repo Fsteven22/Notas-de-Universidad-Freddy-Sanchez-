@@ -35,9 +35,9 @@ tags: [EYAG1037, unidad1, electricidad]
 
 
 
-![[ChatGPT Image 17 jun 2026, 22_31_35.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
 
-![[ChatGPT Image 17 jun 2026, 21_36_10.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
 
 ---
 

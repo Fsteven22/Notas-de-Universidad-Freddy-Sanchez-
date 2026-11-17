@@ -86,7 +86,7 @@ dg-publish: true
 > |**Saturación**|$I_B$ suficientemente grande|$I_{C_{max}}$|$\approx 0$|Switch cerrado|
 
 
-![[ChatGPT Image 20 jun 2026, 21_58_10.png]]
+![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
 
 ---
 

@@ -73,7 +73,7 @@ tags: [EYAG1037, electricidad, syllabus]
 > | — | Actividades de evaluación | 4 h |
 > | | **Total** | **32 h** |
 
-![[Horario de clases.png]]
+![[Unidad 0 - Guias y Ejercicios/Figuras/Horario de clases.png]]
 
 ---
 
