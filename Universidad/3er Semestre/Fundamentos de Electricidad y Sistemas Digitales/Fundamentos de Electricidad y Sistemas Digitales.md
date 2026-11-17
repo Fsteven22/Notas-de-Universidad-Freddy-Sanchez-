@@ -18,6 +18,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ## ⚡ Unidad 1 — Electricidad y Circuitos *(8h)*
 
 > [!note] Electricidad y Circuitos
+>
 > - [[01 - Conceptos Fundamentales de la Electricidad|01 — Conceptos Fundamentales]]
 > - [[02 - Principios de Generacion de Energia Electrica|02 — Generación de Energía]]
 > - [[03 - Elementos Basicos de un Circuito Electrico|03 — Elementos Básicos]]
@@ -33,6 +34,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ## 🔌 Unidad 2 — Introducción a la Electrónica *(6h)*
 
 > [!note] Electrónica
+>
 > - [[01 - Semiconductores y Bandas de Energía|01 — Semiconductores]]
 > - [[02 - El Diodo - Unión P-N|02 — Diodo Unión P-N]]
 > - [[03 - Transistor BJT|03 — Transistor BJT]]
@@ -47,6 +49,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ## 🧩 Unidad 3 — Circuitos Integrados *(6h)*
 
 > [!note] Circuitos Integrados
+>
 > - [[01 - CI no programables|01 — CI No Programables]]
 > - [[02 - Aplicaciones de los OPAMs - Minimización de Ruido|02 — OPAMs y Ruido]]
 > - [[03 - Configuraciones Lineales Básicas del OPAM|03 — Lineales Básicas]]
@@ -62,6 +65,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ## 💻 Unidad 4 — Sistemas Digitales *(8h)*
 
 > [!note] Sistemas Digitales
+>
 > - [[01 - Introducción a la Electrónica Digital|01 — Electrónica Digital]]
 > - [[02 - Minimización de Funciones Lógicas|02 — Minimización]]
 
@@ -72,10 +76,12 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ## 🧪 Práctico y Laboratorio
 
 > [!note] Fundamentos
+>
 > - [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]]
 >
 
 > [!note] Prácticas
+>
 > - [[Práctica 1 — Manejo de Equipos del Laboratorio|Práctica 1 — Manejo de Equipos]]
 > - [[Práctica 2 — Ley de Ohm y Kirchhoff|Práctica 2 — Ohm y Kirchhoff]]
 > - [[Práctica 3 — Diodos y Transistores|Práctica 3 — Diodos y Transistores]]
@@ -85,6 +91,7 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 ---
 
 > [!quote] 🔗 Navegación
+>
 > - Syllabus: [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales]]
 
 - [[Recursos Visuales|Recursos Visuales]]

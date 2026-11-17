@@ -147,18 +147,21 @@ dg-publish: true
 ## Metas de Aprendizaje
 
 > [!note] Nivel Basico
+>
 > - [ ] Describo la union P-N, la region de vaciamiento y Vbarrera (0.7 V Si, 0.3 V Ge).
 > - [ ] Distingo polarizacion directa (vaciamiento se reduce, conduce) vs inversa (se ensancha, Is).
 > - [ ] Identifico anodo (P) y catodo (N) y el sentido convencional de corriente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Interpreto la curva I-V en sus 3 zonas (directa exponencial, inversa ~-Is, ruptura) y ubico Zener.
 > - [ ] Aplico modelo ideal (0 V) y 2a aproximacion (0.7 V) para calcular IL en un circuito con diodo.
 > - [ ] Diferencio diodo rectificador, Zener, LED y varicap por aplicacion.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Resuelvo un circuito con 2-3 resistencias y diodo determinando si conduce antes de calcular.
 > - [ ] Justifico por que Is(Si) << Is(Ge) y que implica en bloqueo inverso.
 > - [ ] Predigo el comportamiento en ruptura y por que solo el Zener esta disenado para operar ahi.
@@ -186,6 +189,7 @@ dg-publish: true
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[01 - Semiconductores y Bandas de Energía]] — base fisica
 > - Siguiente: [[03 - Transistor BJT]] — dos uniones P-N
 > - Adelante: [[06 - Ruido Electrónico e Interferencia]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]

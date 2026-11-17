@@ -18,6 +18,7 @@ tags: [EYAG1037, laboratorio, practicas]
 ## ⚠️ Seguridad
 
 > [!danger]
+>
 > - Manipula el transformador TX 110 V/12 V **solo con supervisión del profesor**.
 > - Trabaja con la fuente apagada al modificar conexiones.
 > - El LM7805 se calienta — usa disipador.
@@ -144,24 +145,28 @@ tags: [EYAG1037, laboratorio, practicas]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Básico
+>
 > - [ ] Identifico las 4 etapas de una fuente lineal (transformador, rectificador, filtro, regulador) en el diagrama de bloques.
 > - [ ] Uso el osciloscopio para observar la forma de onda antes y después del rectificador de onda completa.
 > - [ ] Verifico que los semiperiodos negativos se reflejan al positivo gracias a los 4 diodos del puente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Mido el voltaje rizado del capacitor y calculo el factor de rizado ($V_{pp}/V_{dc}$).
 > - [ ] Observo cómo el capacitor de 1000 µF reduce el rizado vs uno de 470 µF.
 > - [ ] Mido la salida del LM7805 y confirmo que es estable en 5 Vdc.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Explico la caída de tensión necesaria (~3 V típica) para que el LM7805 regule correctamente.
 > - [ ] Diferencio entre una fuente regulada (LM7805) y no regulada (solo capacitor) midiendo ambas salidas.
 > - [ ] Identifico en qué condiciones el LM7805 puede dañarse (caída de tensión excesiva sin carga adecuada).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[02 - El Diodo - Unión P-N]], [[04 - Circuitos de Filtrado y Fuentes Lineales]] y [[05 - Reguladores en Fuentes Lineales]]
 > - Previa: [[Práctica 3 — Diodos y Transistores]]
 > - Siguiente: [[Práctica 5 — Filtros Activos]]

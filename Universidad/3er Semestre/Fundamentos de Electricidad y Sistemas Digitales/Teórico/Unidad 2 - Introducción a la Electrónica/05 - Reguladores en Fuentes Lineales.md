@@ -129,6 +129,7 @@ dg-publish: true
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — rizado que regula
 > - Siguiente: [[06 - Ruido Electrónico e Interferencia]] — lo que filtra
 > - Adelante: [[01 - CI no programables]] — el 7805 como CI

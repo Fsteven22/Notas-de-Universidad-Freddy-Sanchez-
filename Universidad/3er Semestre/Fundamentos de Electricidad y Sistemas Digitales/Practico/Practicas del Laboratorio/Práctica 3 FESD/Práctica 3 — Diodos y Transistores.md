@@ -21,6 +21,7 @@ tags: [EYAG1037, laboratorio, practicas]
 ## ⚠️ Seguridad
 
 > [!danger]
+>
 > - Trabaja con fuente DC a 12 V.
 > - Manipula conexiones solo con la fuente apagada.
 > - No invertir polaridad del diodo ni del transistor.
@@ -156,24 +157,28 @@ tags: [EYAG1037, laboratorio, practicas]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Básico
+>
 > - [ ] Identifico el ánodo y cátodo del diodo 1N4007 y verifico la polaridad en el montaje.
 > - [ ] Uso el osciloscopio para observar la rectificación de un semiciclo en la salida del diodo.
 > - [ ] Distinguo la diferencia entre entrada (cuadrada) y salida (rectificada) en CH1 vs CH2.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Identifico terminales B, C, E del 2N3904 y verifico la orientación NPN en el circuito.
 > - [ ] Mido $V_{BE}$ y determino si el transistor está en corte ($V_{BE} < 0.7\text{ V}$) o saturación.
 > - [ ] Explico por qué $V_{CE(sat)}$ es aprox. 0.2 V cuando el transistor conduce completamente.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Reconozco la función de protección del diodo 1N4007 en el circuito del relé.
 > - [ ] Monto el circuito con LDR y ajusto el potenciómetro para controlar la sensibilidad del LED.
 > - [ ] Relaciono el comportamiento del sensor de luz con la región de operación del BJT (corte vs saturación).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[01 - Semiconductores y Bandas de Energía]], [[02 - El Diodo - Unión P-N]] y [[03 - Transistor BJT]]
 > - Previa: [[Práctica 2 — Ley de Ohm y Kirchhoff]]
 > - Siguiente: [[Práctica 4 — Fuentes Lineales]]

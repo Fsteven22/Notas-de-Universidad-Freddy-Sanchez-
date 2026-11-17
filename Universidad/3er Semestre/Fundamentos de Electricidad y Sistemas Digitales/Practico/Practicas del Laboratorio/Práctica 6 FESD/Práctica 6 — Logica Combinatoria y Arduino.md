@@ -18,6 +18,7 @@ tags: [EYAG1037, laboratorio, practicas]
 ## ⚠️ Seguridad
 
 > [!danger]
+>
 > - No exceder **5 V** en entradas lógicas de los IC (74LS/74HC).
 > - Manipula conexiones con la fuente apagada.
 > - El Zener 1N4733A protege las entradas — verificar su presencia antes de energizar.
@@ -206,24 +207,28 @@ tags: [EYAG1037, laboratorio, practicas]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Básico
+>
 > - [ ] Identifico los integrados 74LS04, 74LS08 y 74HC32 y verifico sus pines VCC y GND en el datasheet.
 > - [ ] Acondiciono una señal analógica a 0–5 V usando Zener 1N4733A para proteger las entradas lógicas.
 > - [ ] Implemento la función lógica $F = A' + (B \cdot C)$ con compuertas NOT, AND y OR.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Verifico la tabla de verdad midiendo voltajes en las salidas de cada compuerta.
 > - [ ] Uso el mapa de Karnaugh para simplificar una función booleana y la comparo con la implementación física.
 > - [ ] Programo el Arduino para leer un sensor analógico con `analogRead()` y mapear el valor a un rango útil.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Controlo 3 LEDs (rojo, amarillo, verde) con `digitalWrite()` según rangos del sensor.
 > - [ ] Uso `Serial.println()` para enviar datos al Monitor Serial y graficar el comportamiento del sensor.
 > - [ ] Comparo ventajas y desventajas de controlar con compuertas lógicas vs Arduino en una aplicación real.
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[01 - Introducción a la Electrónica Digital]], [[02 - Minimización de Funciones Lógicas]] y [[07 - Lógica fija y tablas de verdad]]
 > - Previa: [[Práctica 5 — Filtros Activos]]
 > - Equipos: [[Equipos del Laboratorio - FESD]]

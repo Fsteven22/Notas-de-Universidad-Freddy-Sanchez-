@@ -116,18 +116,21 @@ dg-publish: true
 ## Metas de Aprendizaje
 
 > [!note] Nivel Basico
+>
 > - [ ] Identifico terminales B, C, E y leo la flecha del simbolo para distinguir NPN vs PNP.
 > - [ ] Escribo IE = IC + IB y en activa IC = beta·IB con beta tipico 20-500.
 > - [ ] Distingo corte (IB=0, switch abierto), activa (amplificador) y saturacion (VCE 0.2 V, switch cerrado).
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Aplico la metodologia de 5 pasos (asumir activa -> KVL base -> IC -> KVL colector -> verificar VCE).
 > - [ ] Calculo ICsat = (VCC-VCEsat)/(RC+RE) y verifico si ICactiva > ICsat para declarar saturacion.
 > - [ ] Aplico la regla de saturacion forzada con beta forzada 5-10 para garantizar margen.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Diseno la RB o VIN minima para forzar saturacion dado VCC, RC, RE y beta.
 > - [ ] Justifico por que la union EB debe estar en directa y BC en inversa para amplificar.
 > - [ ] Predigo el modo de un BJT en un circuito mixto y uso la analogia de la llave de agua.
@@ -153,6 +156,7 @@ dg-publish: true
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[02 - El Diodo - Unión P-N]] y [[01 - Semiconductores y Bandas de Energía]]
 > - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — donde el BJT conmuta
 > - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]

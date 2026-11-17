@@ -18,6 +18,7 @@ tags: [EYAG1037, laboratorio, practicas]
 ## ⚠️ Seguridad
 
 > [!danger]
+>
 > - Trabaja con fuente DC a 10–15 V.
 > - Manipula conexiones **solo con la fuente apagada** (OUTPUT off).
 > - No exceder 1 A por resistencia.
@@ -190,24 +191,28 @@ tags: [EYAG1037, laboratorio, practicas]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Básico
+>
 > - [ ] Identifico la fuente, el amperímetro en serie y la resistencia en el diagrama de montaje.
 > - [ ] Conecto la fuente apagada y verifico polaridad antes de energizar.
 > - [ ] Cambio el rango del amperímetro entre mA y 10A según la corriente estimada.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Explico la Ley de Ohm ($V=IR$) y uso $R=V/I$ para predecir corriente con R de 100 KΩ.
 > - [ ] Leo la corriente en los 4 valores de resistencia y confirmo que crece cuando R disminuye.
 > - [ ] Identifico un nodo y cuento corrientes que entran y salen para verificar KCL.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Mido corriente por cada resistencia en paralelo y confirmo que la suma es igual a la total.
 > - [ ] Uso el divisor de corriente para predecir la fracción por cada rama y la comparo con lo medido.
 > - [ ] Mido voltajes en serie y confirmo que suman el voltaje de la fuente (KVL).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[05 - Leyes de Ohm y Kirchhoff]], [[04 - Circuitos en Serie Paralelo y Mixtos]] y [[06 - Teoremas de Analisis de Circuitos]]
 > - Previa: [[Práctica 1 — Manejo de Equipos del Laboratorio]]
 > - Equipos: [[Equipos del Laboratorio - FESD]]

@@ -18,6 +18,7 @@ tags: [EYAG1037, laboratorio, practicas]
 ## ⚠️ Seguridad
 
 > [!danger]
+>
 > - Trabaja con fuente DC dual ±15 V.
 > - Manipula conexiones solo con la fuente apagada.
 > - Verifica polaridad de alimentación del LM358 antes de energizar.
@@ -156,24 +157,28 @@ tags: [EYAG1037, laboratorio, practicas]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Básico
+>
 > - [ ] Identifico las entradas (+) y (-) del LM358 y verifico la conexión correcta en el montaje.
 > - [ ] Uso fuente dual ±15 V para alimentar el OPAMP y verifico los voltajes con el multimetro.
 > - [ ] Calculo $f_c = 1/(2\pi RC)$ con los valores R y C del filtro y la comparo con la frecuencia medida.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Observo en el osciloscopio cómo el filtro atenúa frecuencias altas de ruido en Vo vs Vsum.
 > - [ ] Calculo la ganancia en dB usando $20 \cdot \log(V_o/V_{sum})$ y la registro en la tabla.
 > - [ ] Ajusto el potenciómetro R6 del acondicionador para mapear 0–10 V a -5 V a +5 V.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Verifico la linealidad de la función de transferencia del acondicionador con al menos 5 puntos.
 > - [ ] Dibujo la gráfica Vo vs Vin e identifico pendiente y punto medio.
 > - [ ] Explico por qué el voltaje DC persiste en todo el barrido de frecuencia del filtro.
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]], [[03 - Configuraciones Lineales Básicas del OPAM]] y [[04 - Integrador, Derivador y Circuitos No Lineales]]
 > - Previa: [[Práctica 4 — Fuentes Lineales]]
 > - Siguiente: [[Práctica 6 — Logica Combinatoria y Arduino]]

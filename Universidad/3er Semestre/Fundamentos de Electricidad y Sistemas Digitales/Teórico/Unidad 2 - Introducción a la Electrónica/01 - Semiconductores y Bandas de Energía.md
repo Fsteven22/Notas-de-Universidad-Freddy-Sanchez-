@@ -136,18 +136,21 @@ dg-publish: true
 ## Metas de Aprendizaje
 
 > [!note] Nivel Basico
+>
 > - [ ] Defino semiconductor y distingo conductor vs semiconductor vs aislante por resistividad y Eg.
 > - [ ] Explico banda de valencia, conduccion y band gap (Si 1.1 eV, Ge 0.67 eV) con diagrama.
 > - [ ] Distingo silicio intrinseco (puro) vs extrinseco (dopado) y por que aumenta la conductividad.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Diferencio tipo N (donadores P/Sb, electrones mayoritarios) y tipo P (aceptores B/Ga, huecos).
 > - [ ] Calculo R = delta·l/A y comparo conductividades de Cu, Ge, Si, mica.
 > - [ ] Justifico por que el material dopado sigue neutro pese a tener portadores libres.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Relaciono coeficiente negativo de temperatura con liberacion de portadores.
 > - [ ] Predigo portador mayoritario/minoritario y el ion fijo tras el dopaje.
 > - [ ] Conecto bandas y dopaje con la futura union P-N y el BJT.
@@ -175,6 +178,7 @@ dg-publish: true
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Siguiente: [[02 - El Diodo - Unión P-N]] — union P-N
 > - Luego: [[03 - Transistor BJT]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]
 

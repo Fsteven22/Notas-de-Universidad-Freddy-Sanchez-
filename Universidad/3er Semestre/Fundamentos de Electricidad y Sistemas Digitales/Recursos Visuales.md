@@ -6,6 +6,7 @@ tags: [recursos-visuales, fesd]
 # 🎬 Recursos Visuales — Fundamentos de Electricidad y Sistemas Digitales
 
 > [!info] ℹ️ Para qué sirve esta página
+>
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.
 > Cada link está **verificado** (videoId + título real + canal + duración).
 > **Complementa** las guías y los apuntes del curso: no los sustituye.
@@ -13,6 +14,7 @@ tags: [recursos-visuales, fesd]
 ## Teoría — Diodos y dispositivos
 
 > [!info] 🎬 Teoría — Diodos y dispositivos
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Diodos explicados | [Link](https://www.youtube.com/watch?v=aPY3I8pG478) | Mentalidad de Ingeniería, 11:33 | para el material de diodos. |
@@ -26,6 +28,7 @@ tags: [recursos-visuales, fesd]
 ## Teoría — Análisis de circuitos
 
 > [!info] 🎬 Teoría — Análisis de circuitos
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Leyes de Kirchhoff (mallas y nodos), ejercicio resuelto paso a paso | [Link](https://www.youtube.com/watch?v=EwY13yT1tSo) | FísicaPRO, 16:57 | el método con un ejemplo completo. |
@@ -39,6 +42,7 @@ tags: [recursos-visuales, fesd]
 ## Teoría — Amplificadores operacionales
 
 > [!info] 🎬 Teoría — Amplificadores operacionales
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Amplificadores operacionales desde cero | [Link](https://www.youtube.com/watch?v=YNKE5-vuziU) | AulaVirtual, 32:35 | lo que pide la guía de op-amps (`EjREsAmpOp.pdf`). |
@@ -49,6 +53,7 @@ tags: [recursos-visuales, fesd]
 ## Teoría — Corrientes alternas y RLC
 
 > [!info] 🎬 Teoría — Corrientes alternas y RLC
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | RESONANCIA de un Cto RLC | [Link](https://www.youtube.com/watch?v=WNOINqPEo0g) | Electrónica FP, 12:04 | la resonancia explicada sin fórmulas de más. |
@@ -59,6 +64,7 @@ tags: [recursos-visuales, fesd]
 ## Práctica — Instrumentos de medición
 
 > [!info] 🎬 Práctica — Instrumentos de medición
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Tutorial: cómo usar el osciloscopio | [Link](https://www.youtube.com/watch?v=2U-mR62OVUg) | Medición Instrumentación, 6:31 | lo primero para conectar y medir en la práctica. |
@@ -74,6 +80,7 @@ tags: [recursos-visuales, fesd]
 > [!tip] 🎬 Los videos de la materia están en las secciones por tema de esta misma nota.
 
 > [!info] ℹ️ Documentos publicados
+>
 > PDFs oficiales (enlace 📎 con alias): el sitio no publica PDFs; abrirlos aquí.
 
 [[Practico/Fundamentos del Laboratorio/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]

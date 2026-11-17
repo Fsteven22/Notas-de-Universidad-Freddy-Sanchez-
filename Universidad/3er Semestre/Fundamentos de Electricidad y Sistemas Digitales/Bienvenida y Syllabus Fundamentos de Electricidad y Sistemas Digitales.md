@@ -192,6 +192,7 @@ tags: [EYAG1037, electricidad, syllabus]
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Entrada principal: [[Fundamentos de Electricidad y Sistemas Digitales]] — landing con Dataview de toda la materia
 > - Unidades: [[Fundamentos de Electricidad y Sistemas Digitales|Fundamentos de Electricidad y Sistemas Digitales]]
 

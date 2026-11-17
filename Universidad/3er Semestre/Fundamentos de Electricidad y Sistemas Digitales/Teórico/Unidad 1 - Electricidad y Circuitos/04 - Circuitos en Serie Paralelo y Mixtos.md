@@ -357,24 +357,28 @@ tags: [EYAG1037, unidad1, electricidad]
 ## Metas de Aprendizaje
 
 > [!note] Nivel Basico
+>
 > - [ ] Enuncio leyes de serie (I igual, V se divide, Req suma) y paralelo (V igual, I se divide).
 > - [ ] Calculo Req en serie y paralelo (caso 2 resistencias: R1·R2/(R1+R2)).
 > - [ ] Aplico divisor de voltaje Vk=Vs·Rk/Req y divisor de corriente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Simplifico un circuito mixto reduciendo grupos paralelos y sumando en serie.
 > - [ ] Calculo C e L equivalentes en serie/paralelo.
 > - [ ] Verifico con KVL/KCL y balances de potencia.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Resuelvo un mixto con 4+ resistencias y determino voltajes y corrientes.
 > - [ ] Predigo efecto de agregar/quitar una rama paralela sobre Req y potencia.
 > - [ ] Justifico por que un fallo en serie interrumpe todo y en paralelo no.
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[03 - Elementos Basicos de un Circuito Electrico]] — R, C, L que combinas aqui
 > - Siguiente: [[05 - Leyes de Ohm y Kirchhoff]] — KVL/KCL que usas para resolver mixtos
 > - Adelante: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — filtros que usan estas mismas combinaciones
