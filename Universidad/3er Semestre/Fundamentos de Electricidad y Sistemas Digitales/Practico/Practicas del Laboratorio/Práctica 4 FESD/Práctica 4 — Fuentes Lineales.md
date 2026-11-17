@@ -172,5 +172,5 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📎 Guía oficial (sitio web)
 
-![[Práctica 4 - Funcionamiento de Fuentes Lineales.pdf]]
+[[ráctica 4 - Funcionamiento de Fuentes Lineales.pdf|ráctica 4 - Funcionamiento de Fuentes Lineales.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad2 #fuentesLineales #LM7805 #rectificador

@@ -74,15 +74,15 @@ tags: [recursos-visuales, fesd]
 > [!tip] 🎬 Los videos de la materia están en las secciones por tema de esta misma nota.
 
 > [!info] ℹ️ Documentos publicados
-> PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
+> PDFs oficiales (enlace 📎 con alias): el sitio no publica PDFs; abrirlos aquí.
 
-![[FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
+[[Practico/Fundamentos del Laboratorio/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
 
-![[FESD_Practico_2026_PAO1_Politicas.pdf]]
+[[Practico/Fundamentos del Laboratorio/FESD_Practico_2026_PAO1_Politicas.pdf|FESD_Practico_2026_PAO1_Politicas.pdf]]
 
-![[FORMATO INFORME DE PRÁCTICA.pdf]]
+[[Practico/Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
 
-![[Formato Pre-prácticas.pdf]]
+[[Practico/Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
 
 > [!info] 🔗 Unidad 0 — Guías y Ejercicios (FESD Práctico)
 >

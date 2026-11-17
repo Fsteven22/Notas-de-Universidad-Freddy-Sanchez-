@@ -151,5 +151,5 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📎 Guía oficial (sitio web)
 
-![[PRÁCTICA 1 FESD GUÍA.pdf]]
+[[RÁCTICA 1 FESD GUÍA.pdf|RÁCTICA 1 FESD GUÍA.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #multimetro #osciloscopio #fuenteDC
