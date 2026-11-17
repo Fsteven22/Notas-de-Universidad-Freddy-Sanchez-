@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema cierra el círculo de lo visto en la Unidad 2: los diodos ([[02 - El Diodo - Unión P-N]]), transistores BJT ([[03 - Transistor BJT]]) y los circuitos de filtrado/regulación ([[04 - Circuitos de Filtrado y Fuentes Lineales]], [[05 - Reguladores en Fuentes Lineales]]) que estudiaste como componentes o etapas discretas, en la práctica suelen venir **ya integrados** dentro de un solo chip (por ejemplo, el propio regulador 7805 que viste es en sí mismo un circuito integrado).
 > 
-> ![[../../Diagramas/01_-_CI_no_programables_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_01.svg]]
 
 ---
 
@@ -56,7 +56,7 @@ dg-publish: true
 
 > [!note] 🗂️ Por programabilidad — la clasificación clave de esta unidad
 > 
-> ![[../../Diagramas/01_-_CI_no_programables_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_02.svg]]
 > 
 > |Tipo|Definición|Ejemplos|
 > |---|---|---|
@@ -92,7 +92,9 @@ dg-publish: true
 > |**06 — Aplicaciones de 555 / ADC / PWM**|Temporizador 555, convertidores ADC, generación de PWM|Acondicionamiento de señales|
 > |**07 — Lógica fija**|Compuertas lógicas (familias 74xx/40xx)|Circuitos combinacionales y tablas de verdad|
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
+> [!note] 🖼️ Vista Previa: Qué Viene en Esta Unidad
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
 
 ---
 
@@ -136,9 +138,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_CI_no_programables_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -149,12 +155,25 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[05 - Reguladores en Fuentes Lineales]] — el 78xx/79xx y el LM317 son, en sí mismos, ejemplos de CI no programables ya estudiados.
 > - [[02 - El Diodo - Unión P-N]] y [[03 - Transistor BJT]] — los componentes discretos que un CI integra internamente en un solo chip.
 > - Siguiente nota (Unidad 3, punto 2): Aplicaciones de los OPAMs para minimización de ruido.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #CInoProgramable #EYAG1037 #FESD #ESPOL #unidad3

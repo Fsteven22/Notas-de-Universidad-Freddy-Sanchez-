@@ -11,13 +11,14 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Una fuente lineal convierte la corriente alterna de la red (110 VAC) en un voltaje DC estable. Tiene **4 etapas funcionales**: transformador reductor, rectificador de onda completa, filtro capacitivo y regulador LM7805. En esta práctica identificas cada etapa y mides las formas de onda en cada punto.
 >
-> ![[../../../Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
+> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
 
 ---
 
 ## ⚠️ Seguridad
 
-> [!danger]
+> [!danger] ⚠️ Seguridad
+>
 > - Manipula el transformador TX 110 V/12 V **solo con supervisión del profesor**.
 > - Trabaja con la fuente apagada al modificar conexiones.
 > - El LM7805 se calienta — usa disipador.
@@ -139,38 +140,41 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📄 Informe
 
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf]] para entregar.
+> [!tip] 📄 Informe
+>
+> Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
+>
 > - [ ] Identifico las 4 etapas de una fuente lineal (transformador, rectificador, filtro, regulador) en el diagrama de bloques.
 > - [ ] Uso el osciloscopio para observar la forma de onda antes y después del rectificador de onda completa.
 > - [ ] Verifico que los semiperiodos negativos se reflejan al positivo gracias a los 4 diodos del puente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Mido el voltaje rizado del capacitor y calculo el factor de rizado ($V_{pp}/V_{dc}$).
 > - [ ] Observo cómo el capacitor de 1000 µF reduce el rizado vs uno de 470 µF.
 > - [ ] Mido la salida del LM7805 y confirmo que es estable en 5 Vdc.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Explico la caída de tensión necesaria (~3 V típica) para que el LM7805 regule correctamente.
 > - [ ] Diferencio entre una fuente regulada (LM7805) y no regulada (solo capacitor) midiendo ambas salidas.
 > - [ ] Identifico en qué condiciones el LM7805 puede dañarse (caída de tensión excesiva sin carga adecuada).
 >
 
 > [!quote] 🔗 Conexiones
+>
 > - Teoría: [[02 - El Diodo - Unión P-N]], [[04 - Circuitos de Filtrado y Fuentes Lineales]] y [[05 - Reguladores en Fuentes Lineales]]
 > - Previa: [[Práctica 3 — Diodos y Transistores]]
 > - Siguiente: [[Práctica 5 — Filtros Activos]]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-![[Práctica 4 - Funcionamiento de Fuentes Lineales.pdf]]
+[[Práctica 4 - Funcionamiento de Fuentes Lineales.pdf|Práctica 4 - Funcionamiento de Fuentes Lineales.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad2 #fuentesLineales #LM7805 #rectificador

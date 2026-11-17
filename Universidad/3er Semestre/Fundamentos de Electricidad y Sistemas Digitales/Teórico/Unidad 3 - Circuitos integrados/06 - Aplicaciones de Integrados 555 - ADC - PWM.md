@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > En esta sección se cubren tres bloques muy usados en la práctica:
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
 
 ---
 
@@ -58,7 +58,7 @@ dg-publish: true
 >
 > Ambos pines de control (2 y 4) se mantienen normalmente en ALTO mediante resistencias **pull-up** (típicamente 10 kΩ) hacia $V_{CC}$; el cambio de estado ocurre al llevarlos momentáneamente a BAJO (por ejemplo, con un pulsador a tierra).
 >
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
 >
 > > 📌 Es, en esencia, una **memoria de 1 bit**: no mide tiempo, solo recuerda cuál de los dos botones se presionó por última vez.
 >
@@ -103,7 +103,7 @@ dg-publish: true
 > 
 > Donde $D$ es el ciclo de trabajo (0 a 1) y $V_{max}$ es el voltaje del pulso en alto.
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
 > 
 > **Formas comunes de generar PWM:**
 > 
@@ -123,7 +123,7 @@ dg-publish: true
 > 
 > Un **ADC (Analog-to-Digital Converter)** transforma una señal analógica continua en un número digital que un sistema digital (microcontrolador, FPGA, etc.) puede procesar. El proceso involucra tres pasos:
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
 >
 
 > [!note] 🎯 Resolución y LSB
@@ -157,7 +157,9 @@ dg-publish: true
 > |**Rampa / doble rampa**|Cuenta el tiempo que tarda una rampa en alcanzar la señal|Baja|Baja (pero muy precisa)|
 > |**Sigma-Delta**|Sobremuestreo + filtrado digital|Baja-media|Alta precisión, buena para audio/instrumentación|
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_41_51.png]]
+> [!note] 🖼️ ADC (Conversor Analógico-Digital)
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_41_51.png]]
 
 ---
 
@@ -229,9 +231,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -246,12 +252,25 @@ dg-publish: true
 > [5] Cajape R., Sánchez F., Terán E., Vega A., _Tarea Autónoma #2 — Demostración 555 Biestable_, EYAG1037, FIEC-ESPOL, I PAO 2026.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]] → [[03 - Configuraciones Lineales Básicas del OPAM]] → [[04 - Integrador, Derivador y Circuitos No Lineales]] → [[05 - Ejercicios Resueltos y de Oposición]] — bloque completo de OPAMs del PDF EjREsAmpOp.
 > - [[01 - CI no programables]] — fundamento de los CI usados aquí.
 > - [[07 - Lógica fija y tablas de verdad]] — siguiente tema de la unidad: lógica digital fija (el biestable comparte la idea de "enclavamiento" con los flip-flops que se ven más adelante en Unidad 4).
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[07 - Lógica fija y tablas de verdad]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #555 #PWM #ADC #modoBiestable #acondicionamientoDeSeñales #EYAG1037 #FESD #ESPOL #unidad3

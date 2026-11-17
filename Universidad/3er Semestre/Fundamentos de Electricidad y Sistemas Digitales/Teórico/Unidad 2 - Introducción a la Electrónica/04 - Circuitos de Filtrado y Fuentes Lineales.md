@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este enfoque —anterior a las fuentes conmutadas (switching)— sigue siendo relevante en equipos de audio de alta fidelidad, instrumentación de precisión y aplicaciones donde el ruido eléctrico debe ser mínimo, precisamente porque no genera la interferencia de alta frecuencia típica de un convertidor conmutado.
 > 
-> ![[../../Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_01.svg]]
 > 
 > |Etapa|Función|Elemento típico|
 > |---|---|---|
@@ -107,7 +107,7 @@ dg-publish: true
 > 
 > El circuito más simple: un solo diodo en serie con la carga (ver [[02 - El Diodo - Unión P-N]]). Solo deja pasar el semiciclo positivo (o negativo, según orientación) de la señal de entrada.
 > 
-> ![[../../Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_02.svg]]
 > 
 > $$V_{DC} = \frac{V_m}{\pi} \approx 0.318 \times V_m$$
 > 
@@ -159,7 +159,7 @@ dg-publish: true
 > 
 > Un capacitor en paralelo con la carga se carga hasta el pico de la señal rectificada y se descarga lentamente a través de $R_L$ mientras el rectificador no conduce, "rellenando" el valle entre pulsos.
 > 
-> ![[../../Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_03.svg]]
 > 
 > **Voltaje de rizado pico a pico:**
 > 
@@ -188,7 +188,9 @@ dg-publish: true
 > 
 > > 📌 El detalle de cómo lo logra (Zener, transistor en serie, IC 78xx/79xx, LM317/LM337) se desarrolla en [[05 - Reguladores en Fuentes Lineales]].
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_31_07.png]]
+> [!note] 🖼️ El Regulador (adelanto)
+>
+> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_31_07.png]]
 
 ---
 
@@ -196,7 +198,7 @@ dg-publish: true
 
 > [!note] 🧭 Cómo elegir la configuración
 > 
-> ![[../../Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_04.svg]]
 > 
 > > 📌 La etapa de **regulación** (Zener, serie o IC) es un tema aparte — ver [[05 - Reguladores en Fuentes Lineales]].
 
@@ -259,9 +261,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -272,12 +278,25 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018, pp. 510–540.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[02 - El Diodo - Unión P-N]] — el rectificador es una aplicación directa del diodo en polarización directa/inversa.
 > - [[01 - Semiconductores y Bandas de Energía]] — fundamento físico de los diodos usados en la rectificación.
 > - [[05 - Reguladores en Fuentes Lineales]] — tema siguiente de la unidad: reguladores en serie fijos (78xx/79xx) y ajustables (LM317/LM337/LM137).
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[05 - Reguladores en Fuentes Lineales]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #fuentesLineales #rectificacion #filtroCapacitivo #filtros #EYAG1037 #FESD #ESPOL #unidad2

@@ -23,7 +23,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - El **Teorema de Norton** es el equivalente usando una fuente de corriente.
 > - La **Máxima Transferencia de Potencia** responde cuándo una carga extrae el máximo de energía posible de la fuente.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
 > 
 > |Teorema|Utilidad principal|
 > |---|---|
@@ -33,11 +33,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Máx. transferencia**|Encontrar $R_L$ que maximiza potencia entregada|
 > |**Transformación de fuentes**|Convertir entre fuente de voltaje y corriente|
 
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
 
-
-![[ChatGPT Image 17 jun 2026, 22_31_35.png]]
-
-![[ChatGPT Image 17 jun 2026, 21_36_10.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
 
 ---
 
@@ -51,7 +53,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
 > 
 > ### 🔕 Cómo "apagar" una fuente
 > 
@@ -87,7 +89,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > |Voltajes y corrientes (cantidades lineales)|Potencia ($P = I^2R$: no lineal)|
 > |Circuitos con elementos lineales|Circuitos con elementos no lineales|
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
+> [!note] 🖼️ Teorema de Superposición
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
 
 ---
 
@@ -152,9 +156,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Fórmula**|$V_{R_i} = \dfrac{V_f \cdot R_i}{R_{eq}}$|$I_{R_i} = \dfrac{R_{eq} \cdot I_f}{R_j}$|
 > |**Estructura**|Una sola malla|Un solo par de nodos|
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
+> [!note] 🖼️ Divisor de Voltaje y Divisor de Corriente
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
 
 ---
 
@@ -169,7 +175,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por el ingeniero francés **Léon Charles Thévenin** en 1883.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
 > 
 > ### ⚙️ Procedimiento para obtener $V_{Th}$ y $R_{Th}$
 > 
@@ -222,7 +228,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por **Edward Lawry Norton** en 1926.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
 > 
 > ### ⚙️ Parámetros del equivalente Norton
 > 
@@ -239,7 +245,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$V_{Th} = I_N \cdot R_N \qquad\qquad I_N = \frac{V_{Th}}{R_{Th}}$$
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
 > 
 > ### 🧮 Ejemplo resuelto
 > 
@@ -253,7 +259,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > ✅ Verificación: $V_{Th} = I_N \times R_N = 5 \times 2.4 = 12\text{ V}$ ✓
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
+> [!note] 🖼️ Teorema de Norton
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
 
 ---
 
@@ -265,7 +273,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Es la base práctica de la relación Thévenin-Norton.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
 > 
 > ### ⚙️ Fórmulas de transformación
 > 
@@ -282,7 +290,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > Equivalente Norton: $$I_s = \frac{20}{5} = 4\text{ A} \qquad \text{con } R_s = 5\ \Omega \text{ en paralelo}$$
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
+> [!note] 🖼️ Transformación de Fuentes
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
 
 ---
 
@@ -326,7 +336,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > **Verificación:** $$I_L = \frac{12}{3+3} = 2\text{ A} \qquad P_L = (2)^2 \times 3 = 12\text{ W}\ ✓$$
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
+> [!note] 🖼️ Teorema de Máxima Transferencia de Potencia
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
 
 ---
 
@@ -430,10 +442,11 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚡ Regla mnemotécnica — mismo patrón para mallas y nodos
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
-
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
+> [!note] 🖼️ Métodos Directos Matriciales — Mallas y Nodos
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
 
 ---
 
@@ -449,13 +462,15 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Transf. de fuentes**|Intercambia Vs ↔ Is|Fuente + resistencia|Simplifica nodos o mallas sucesivos|
 > |**Máx. transferencia**|$R_L = R_{Th}$|Red Thévenin conocida|Optimiza la potencia entregada|
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 
 ---
 
@@ -473,31 +488,47 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > [5] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 76–130. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Enuncio superposicion, Thevenin (Vth+Rth), Norton (IN+RN) y maxima transferencia.
 > - [ ] Explico como apagar una fuente (voltaje->corto, corriente->abierto).
 > - [ ] Aplico divisor de voltaje y de corriente como atajo.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Calculo Vth (circuito abierto) y Rth y hallo IL=Vth/(Rth+RL).
 > - [ ] Convierto Thevenin<->Norton con Vth=IN·RN.
 > - [ ] Determino RL para Pmax y calculo Pmax=Vth2/(4Rth).
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Resuelvo red con 2 fuentes por superposicion sumando respuestas parciales.
 > - [ ] Armo matriz R·I=V y G·V=If por inspeccion.
 > - [ ] Decido teorema optimo segun lo que se pide y topologia.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[05 - Leyes de Ohm y Kirchhoff]] — base para Thevenin/Norton y mallas/nodos
 > - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — Thevenin aplicado a fuentes
 > - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]] — donde Thevenin reaparece con OPAMs
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - Semiconductores y Bandas de Energía]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #teoremas #superposición #thévenin #norton #transformación #potencia #divisorVoltaje #divisorCorriente #mallas #nodos #matricial #circuitoPlano #circuitos #análisis #EYAG1037 #FESD #ESPOL #unidad1

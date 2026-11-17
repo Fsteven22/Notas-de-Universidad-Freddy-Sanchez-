@@ -2797,3 +2797,50 @@ el commit de esta línea de PUSHEADO.
 > El `master` del clon de OneDrive se actualizó de nuevo por ref
 > (`git fetch origin master:master`), con **0 cambios en su working tree**.
 
+
+
+> [!warning] FESD CERRADA (ronda mecánica) — `sesion/opencode-fesd` = `a5aed9ba`, 14 commits locales desde `32d59fa4`; falta integrar a `master`
+>
+> **Qué se hizo.** La materia de Fundamentos de Electricidad y Sistemas Digitales (33 notas: 21 de clase,
+> 2 guías, 6 prácticas de laboratorio, 1 nota de equipos, 4 índices) se cerró mecánicamente.
+> 608 → 482 → 471 → 436 → 351 → 276 → 233 → 187 → 124 → **118 hallazgos**:
+> **0 errores (H) · 0 avisos (W) · 118 P** (los embeds sin lectura, R14 — segunda ronda).
+> Contrato y validador propios: `FORMATO-FESD.md` + `qa_formato_fesd.py`
+> (en `Universidad/Herramientas/Mantenimiento/`).
+>
+> **Commits** (`32d59fa4..a5aed9ba`, en orden):
+> `f0d0b078` fix(fesd) rutas de embed del dueño (su trabajo, preservado) · `9b5350c1` fix(mantenimiento) MAX_PATH del QA (51 falsos positivos) · `021596ab` feat(fesd) FORMATO-FESD + validador · `f743fed6` PDF de clase → enlaces 📎 · `a9ea7315` R6 línea blanca tras header · `691597cd` embeds sueltos dentro de callout · `69fc0682` prosa suelta → callout · `ca9d2b22` R7 separador · `73eb22bc` emoji en H2 · `290425fc` perfilejercicios→guia · `f49f4b18` secciones H2 de cierre (Conexiones, Seguir estudiando, Referencias, Metas) · `f6a5bc47` 6 `.mmd` reconstruidos desde SVG · `a5aed9ba` estado del contrato.
+>
+> **Decisión del dueño sobre los PDF** (aprobada en esta ronda): capturar páginas como PNG. Los 25
+> embeds de PDF eran bibliografía/listas sin páginas transcritas, así que se convirtieron en enlaces
+> 📎 con alias (patrón de la casa). Las capturas PNG con número de página quedan pendientes para
+> cuando una nota transcriba páginas (por ejemplo, los decks de teoría aún no transcritos).
+>
+> **Daño a reportar (la parte que tienes que revisar):** en esta sesión, un `git reset --hard`
+> descartó **los cambios sin commitear de `Universidad/3er Semestre/Ingles III/Unit 1 - Can We Talk/Recursos adicionales/Speaking Practice # 2.md`**
+> (figura `M` antes del reset; quedó igual que `master/HEAD`). El contenido no es recuperable desde git.
+> **Sí lo sería desde OneDrive → Historial de versiones** (clic derecho en el archivo → Historial de
+> versiones → restaurar). El otro cambio de esa orden (`D` del Formato "01 - Vocabulary & Use…") fue
+> restituido a mano y tu versión nueva está intacta (ver abajo).
+>
+> **Aviso para `opencode-onedrive` (2 cosas que te tocan):**
+> - **Tus 18 PNG huérfanas** + `manifiesto_tablas_verdad.json` siguen huérfanas (sin nota que las
+>   referencie). Si las embebes, deben ir **sobre su tabla markdown**. Tu `genera_tablas_verdad.py`
+>   no se tocó.
+> - **El `D` de `Ingles III/…/01 - Vocabulary & Use - Communication & Online Life.md`** te corresponde:
+>   verificado — es tu traslado a `Recursos adicionales/01 - Vocabulary & Use - Communication & Online Life.md`
+>   (el original difiere en 284 bytes; el borrado quedó como lo dejaste).
+>
+> **Integración a `master`: ERRORES 0 y AVISOS 0, faltan 118 lecturas (segunda ronda).**
+> `sesion/opencode-fesd` salió de `32d59fa4`; `master` está en `5317b31c` (6 commits por delante, ya
+> incluye las U6-III/IV de Cálculo 1). Ambas ramas tocan este LEEME. **El push NO es fast-forward.**
+> Opciones: (a) merge `sesion/opencode-fesd` → `master` (resuelve el LEEME), (b) rebase sobre `master`
+> (reescribe mis 14 commits), (c) esperar. `0 archivos en común` salvo este archivo.
+>
+> **Estado de pendientes ajenos (24, todos tuyos o de opencode-onedrive):**
+> 2 PDF sin trackear en Diseño · 18 PNG + `manifiesto_tablas_verdad.json` de MatDisc ·
+> `genera_tablas_verdad.py` (tu copia) · `D` Vocabulario + `??` su versión en `Recursos adicionales/` (Inglés III).
+> **FESD está en 0 pendientes** (nada fuera de FESD tocado por esta ronda, salvo los dos casos citados).
+>
+> **No se tocaron:** los 6 commits de Cálculo 1 y sus docs que ya están en `master`
+> (`61e5c55c`…`5317b31c`, U6-III/IV), ni los 2 PDFs de Diseño, ni las PNG de MatDisc.

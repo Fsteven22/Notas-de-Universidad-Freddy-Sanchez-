@@ -16,8 +16,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Generar electricidad es como llenar un tanque de agua: necesitas una fuente (río, lluvia, pozo) que convierta algo disponible en algo utilizable.
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
-> ![[ChatGPT Image 19 may 2026, 22_52_00.png]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_52_00.png]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
 
@@ -39,12 +40,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - $\Phi$ = Flujo magnético (Webers, Wb)
 > - $t$ = Tiempo (segundos, s)
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
 >
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
+> [!note] 🖼️ Campo Magnético e Inducción — Orsted y Faraday
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
 
 ---
 ## 🔄 Ley de Lenz
@@ -59,7 +62,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > "La naturaleza se resiste a los cambios en el flujo magnético."
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
 >
 > **Procedimiento para determinar la dirección de la corriente inducida:**
 >
@@ -85,7 +88,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > El flujo $\Phi$ **aumenta**. Por Lenz, la bobina genera un campo que **se opone** al imán → la cara de la bobina más cercana se comporta como polo **Norte** (repele al imán). La corriente inducida circula en sentido antihorario vista desde el imán.
 > > 
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
+> [!note] 🖼️ Ley de Lenz
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
 
 ---
 ## ⚡ DC vs AC — Edison vs Tesla
@@ -111,11 +116,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > **Generador de Corriente Alterna (Alternador):**
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
 >
 > **Generador de Corriente Continua (Dínamo):**
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
 >
 > | Característica | Alternador (AC) | Dínamo (DC) |
 > |---|---|---|
@@ -124,14 +129,16 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Eficiencia** | ✅ Alta | Media |
 > | **Uso típico** | Plantas eléctricas, automóviles | Tracción eléctrica, carga de baterías |
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
+> [!note] 🖼️ Tipos de Generadores Eléctricos
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
 
 ---
 ## 🔁 Proceso General de Generación
 
 > [!info]- 🏭 De la Fuente a tu Enchufe
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
 
 ---
 ## 🌊 Fuentes de Generación Eléctrica
@@ -142,7 +149,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte la energía **potencial del agua** en energía eléctrica mediante turbinas.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -159,7 +166,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Quema combustibles fósiles (gas, petróleo, carbón) para producir vapor que mueve turbinas.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -176,7 +183,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte directamente la luz solar en electricidad mediante el **efecto fotoeléctrico** en celdas semiconductoras de silicio.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -236,7 +243,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!tip]- 🔌 Etapas y Voltajes Típicos
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
 >
 > | Etapa | Voltaje típico | Función |
 > |---|---|---|
@@ -249,7 +256,9 @@ tags: [EYAG1037, unidad1, electricidad]
 ---
   
 ## 📊 Resumen Visual 
-![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 
 ## 📚 Referencias
 
@@ -265,31 +274,47 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] M. A. El-Sharkawi, *Electric Energy: An Introduction*, 3rd ed. Boca Raton, FL, USA: CRC Press, 2012, pp. 1–60.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Enuncio la Ley de Faraday E = -N·dF/dt y explico el rol del flujo magnetico.
 > - [ ] Distingo entre energia primaria y energia electrica con ejemplos (hidro, solar, eolica).
 > - [ ] Diferencio un alternador (AC) de un dinamo (DC) y por que gano AC.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Aplico la Ley de Lenz para determinar la direccion de la corriente inducida.
 > - [ ] Describo el proceso generacion -> transmision -> distribucion -> consumo con voltajes tipicos.
 > - [ ] Comparo fuentes hidro, termo, solar, eolica y nuclear en renovabilidad y costo.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Analizo el experimento de Orsted y predigo el campo inducido por una corriente.
 > - [ ] Estimo la potencia eolica P = 1/2 rho A v3 y discuto su dependencia cubica.
 > - [ ] Justifico la eleccion de una fuente segun disponibilidad y contexto de Ecuador.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[01 - Conceptos Fundamentales de la Electricidad]] — carga y campo base para induccion
 > - Siguiente: [[03 - Elementos Basicos de un Circuito Electrico]] — del generador a los componentes
 > - Relacionado: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas la energia generada
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Elementos Basicos de un Circuito Electrico]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #generacion #electricidad #orsted #faraday #lenz #induccion #hidroelectrica #solar #eolica #termoelectrica #nuclear #EYAG1037 #FESD #ESPOL #unidad1

@@ -35,7 +35,7 @@ dg-publish: true
 
 ---
 
-## 1. Ley de Coulomb + Campo Eléctrico
+## 📝 1. Ley de Coulomb + Campo Eléctrico
 
 > [!example] ✏️ Tres cargas en línea — fuerza neta y campo en el punto central
 > 
@@ -99,7 +99,7 @@ dg-publish: true
 
 ---
 
-## 2. Fuentes Dependientes en Circuito Resistivo
+## 📝 2. Fuentes Dependientes en Circuito Resistivo
 
 > [!example] ✏️ Red con CCCS — encontrar voltaje de salida
 > 
@@ -153,7 +153,7 @@ dg-publish: true
 
 ---
 
-## 3. Ley de Ohm + Potencia
+## 📝 3. Ley de Ohm + Potencia
 
 > [!example] ✏️ Diseño con restricción de disipación máxima
 > 
@@ -213,7 +213,7 @@ dg-publish: true
 
 ---
 
-## 4. KCL — Nodo con Cuatro Ramas
+## 📝 4. KCL — Nodo con Cuatro Ramas
 
 > [!example] ✏️ Dos nodos desconocidos con fuente de corriente compartida
 > 
@@ -284,7 +284,7 @@ dg-publish: true
 
 ---
 
-## 5. KVL — Malla con Dos Fuentes Opuestas
+## 📝 5. KVL — Malla con Dos Fuentes Opuestas
 
 > [!example] ✏️ Tres fuentes en una sola malla — signo crítico
 > 
@@ -338,7 +338,7 @@ dg-publish: true
 
 ---
 
-## 6. Análisis de Tres Mallas
+## 📝 6. Análisis de Tres Mallas
 
 > [!example] ✏️ Tres mallas con dos ramas compartidas
 > 
@@ -399,7 +399,7 @@ dg-publish: true
 
 ---
 
-## 7. Forma Matricial — Mallas 3×3
+## 📝 7. Forma Matricial — Mallas 3×3
 
 > [!example] ✏️ Sistema completo por inspección directa con Cramer
 > 
@@ -437,7 +437,7 @@ dg-publish: true
 
 ---
 
-## 8. Forma Matricial — Nodos 3×3
+## 📝 8. Forma Matricial — Nodos 3×3
 
 > [!example] ✏️ Tres nodos desconocidos con conductancias
 > 
@@ -492,7 +492,7 @@ dg-publish: true
 
 ---
 
-## 9. Interconexión de Fuentes Mixtas
+## 📝 9. Interconexión de Fuentes Mixtas
 
 > [!example] ✏️ Reducción de fuentes antes de plantear KVL
 > 
@@ -543,7 +543,7 @@ dg-publish: true
 
 ---
 
-## 10. Circuito Mixto de Cinco Resistencias
+## 📝 10. Circuito Mixto de Cinco Resistencias
 
 > [!example] ✏️ Tres etapas de simplificación — topología compleja
 > 
@@ -606,7 +606,7 @@ dg-publish: true
 
 ---
 
-## 11. Capacitores e Inductores en Red Mixta
+## 📝 11. Capacitores e Inductores en Red Mixta
 
 > [!example] ✏️ Reducción en dos etapas con C y L combinados
 > 
@@ -648,7 +648,7 @@ dg-publish: true
 
 ---
 
-## 12. Divisor de Voltaje en Circuito de Tres Etapas
+## 📝 12. Divisor de Voltaje en Circuito de Tres Etapas
 
 > [!example] ✏️ Divisor encadenado con dos grupos paralelos
 > 
@@ -686,7 +686,7 @@ dg-publish: true
 
 ---
 
-## 13. Divisor de Corriente con Tres Ramas
+## 📝 13. Divisor de Corriente con Tres Ramas
 
 > [!example] ✏️ Distribución de corriente con verificación de potencia
 > 
@@ -723,7 +723,7 @@ dg-publish: true
 
 ---
 
-## 14. Superposición con Tres Fuentes
+## 📝 14. Superposición con Tres Fuentes
 
 > [!example] ✏️ Tres sub-circuitos independientes — verificación cruzada
 > 
@@ -748,7 +748,7 @@ dg-publish: true
 
 ---
 
-## 15. Thévenin con Fuente Dependiente
+## 📝 15. Thévenin con Fuente Dependiente
 
 > [!example] ✏️ $R_{Th}$ con fuente de prueba — caso con fuente controlada
 > 
@@ -772,7 +772,7 @@ dg-publish: true
 
 ---
 
-## 16. Norton y Máxima Transferencia de Potencia
+## 📝 16. Norton y Máxima Transferencia de Potencia
 
 > [!example] ✏️ Cadena completa: Thévenin → Norton → MTP
 > 
@@ -799,7 +799,7 @@ dg-publish: true
 
 ---
 
-## 17. Transformación de Fuentes Encadenada
+## 📝 17. Transformación de Fuentes Encadenada
 
 > [!example] ✏️ Tres transformaciones sucesivas para simplificar a una malla
 > 
@@ -847,5 +847,34 @@ dg-publish: true
 > |Transformación encadenada|$I_N = V_s/R_s$ ↔ $V_{Th} = I_N \cdot R_N$|S17|
 
 ---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Metas de este recopilado
+>
+> - [ ] Resuelvo el banco S1–S17 sin mirar la solución y verifico cada resultado.
+> - [ ] Planteo KCL/KVL en nodos y mallas con fuentes dependientes cuidando el signo.
+> - [ ] Aplico Thévenin/Norton y la transferencia de máxima potencia aunque la red tenga fuentes dependientes.
+> - [ ] Reduzco redes con capacitores/inductores combinados en dos etapas.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Conexiones
+>
+> - Teoría: [[01 - Conceptos Fundamentales de la Electricidad]], [[03 - Elementos Basicos de un Circuito Electrico]], [[04 - Circuitos en Serie Paralelo y Mixtos]], [[05 - Leyes de Ohm y Kirchhoff]] y [[06 - Teoremas de Analisis de Circuitos]]
+> - Práctica: [[Práctica 2 — Ley de Ohm y Kirchhoff|🧪 Práctica 2 — Ley de Ohm y Kirchhoff]]
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ejercicios #práctica #repaso #ohm #kirchhoff #KCL #KVL #thévenin #norton #superposición #serie #paralelo #mixto #divisor #fuentes #dependientes #matricial #EYAG1037 #FESD #ESPOL #unidad1

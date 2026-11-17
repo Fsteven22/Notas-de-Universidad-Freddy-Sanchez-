@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Esta nota abre la Unidad 4 retomando esa conexión: un **ADC** (Unidad 3) no hace otra cosa que traducir una señal analógica del mundo real a un número representado en binario, y las **compuertas lógicas** (Unidad 3, nota 04) operan precisamente sobre esos unos y ceros. Aquí formalizamos cómo se representan, convierten y codifican esos números, y cómo se interpretan eléctricamente los niveles de voltaje que los transportan.
 >
-> ![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
 
 ---
 
@@ -137,7 +137,7 @@ dg-publish: true
 >
 > Una **tabla de verdad** enumera todas las combinaciones posibles de entrada de un circuito lógico y la salida correspondiente. Los valores lógicos se representan indistintamente como `True/False`, `V/F` o `1/0`.
 >
-> ![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
 >
 
 > [!note] 📋 Las tres compuertas fundamentales
@@ -180,7 +180,9 @@ dg-publish: true
 >
 > Es decir, "A en lógica positiva (activo en alto)" es la misma señal física que "$\overline{A}$ en lógica negativa (activo en bajo)". Esto permite, por ejemplo, leer una compuerta AND con salida negada como si fuera una OR en lógica negativa — el circuito físico no cambia, cambia la interpretación.
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
+> [!note] 🖼️ Lógica Positiva y Negativa
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
 
 ---
 
@@ -204,7 +206,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué convención de lógica usar?
 
-![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
+> [!note] 🖼️ Diagrama de Decisión: ¿Qué convención de lógica usar?
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
 
 ---
 
@@ -291,9 +295,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 >
@@ -301,6 +309,10 @@ dg-publish: true
 >
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre sistemas de numeración y códigos binarios.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -310,5 +322,14 @@ dg-publish: true
 > - Próxima nota (Unidad 4, punto 2): Solución de problemas con circuitos electrónicos digitales — profundiza en operaciones binarias, complemento a base 2, minterms/maxterms y las formas canónicas SOP/POS.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Minimización de Funciones Lógicas]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #electronicaDigital #sistemasNumeracion #BCD #compuertasLogicas #logicaPositivaNegativa #EYAG1037 #FESD #ESPOL #unidad4

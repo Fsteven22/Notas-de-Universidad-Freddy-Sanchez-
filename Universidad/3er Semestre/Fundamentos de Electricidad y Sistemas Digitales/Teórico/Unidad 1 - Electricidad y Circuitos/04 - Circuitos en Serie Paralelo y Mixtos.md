@@ -17,7 +17,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Un circuito en **paralelo** es como los carriles de una autopista: si uno se cierra, los demás siguen funcionando.
 > - Un circuito **mixto** combina ambas configuraciones, como las instalaciones eléctricas de un edificio.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
 >
 > | Configuración | Corriente | Voltaje | Aplicación típica |
 > |---|---|---|---|
@@ -25,11 +25,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Paralelo** | Se divide entre ramas | Igual en todas las ramas | Instalaciones domésticas |
 > | **Mixto** | Varía por sección | Varía por sección | Circuitos electrónicos |
 
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230523.png]]
 
-
-![[Pasted image 20260519230523.png]]
-
-![[ChatGPT Image 17 jun 2026, 22_43_52.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_43_52.png]]
 
 ---
 
@@ -39,7 +41,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en serie**, los elementos están conectados uno tras otro formando una única trayectoria. La misma corriente recorre todos los elementos secuencialmente.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
 >
 > ### ⚙️ Leyes fundamentales en serie
 >
@@ -89,7 +91,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Misma potencia base** | $P = I^2 R$ varía según la resistencia de cada elemento |
 > 
 
-![[../../Anexos/ChatGPT Image 30 may 2026, 20_14_44.png]]
+> [!note] 🖼️ Circuito en Serie
+>
+> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_14_44.png]]
 
 ---
 
@@ -99,7 +103,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en paralelo**, los elementos comparten los mismos dos nodos (terminales), por lo que el voltaje en todos ellos es idéntico. La corriente total se reparte entre las ramas disponibles.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
 >
 > ### ⚙️ Leyes fundamentales en paralelo
 >
@@ -150,11 +154,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Mismo voltaje** | Todos los elementos operan a la misma tensión |
 > | **Mayor corriente total** | Al agregar ramas, la corriente de la fuente aumenta |
 
-![[../../Anexos/ChatGPT Image 30 may 2026, 20_24_25.png]]
+> [!note] 🖼️ Circuito en Paralelo
+>
+> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_24_25.png]]
 
 ---
 
-## ⊣⊢ Capacitores en Serie y Paralelo
+## 🔋 Capacitores en Serie y Paralelo
 
 > [!tip]- ⚡ Combinación de Capacitores
 >
@@ -183,7 +189,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > >
 > > En serie: $C_t = \frac{4 \times 6}{4 + 6} = \frac{24}{10} = 2.4\,\mu F$
 
-![[../../Anexos/ChatGPT Image 30 may 2026, 20_29_23.png]]
+> [!note] 🖼️ ⊣⊢ Capacitores en Serie y Paralelo
+>
+> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_29_23.png]]
 
 ---
 
@@ -216,7 +224,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > >
 > > En paralelo: $L_t = \frac{3 \times 6}{3 + 6} = \frac{18}{9} = 2\,mH$
 
-![[../../Anexos/file_000000006634720e8575d8d5057e5f59.png]]
+> [!note] 🖼️ Inductores en Serie y Paralelo
+>
+> ![[../../Anexos/file_000000006634720e8575d8d5057e5f59.png]]
 
 ---
 ## 🔁 Circuito Mixto (Serie-Paralelo)
@@ -227,11 +237,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > El método de análisis consiste en **simplificar progresivamente** el circuito, reduciendo grupos paralelos o series a su equivalente, hasta obtener un único $R_{eq}$.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
 >
 > ### 🧮 Metodología de simplificación paso a paso
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
 >
 > **Ejemplo resuelto:**
 >
@@ -254,7 +264,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > >
 > > ✅ Verificación KCL: $0.8 + 1.6 = 2.4\text{ A}$ ✓
 
-![[../../Anexos/file_00000000bdc471f7b12b164a687c03e7.png]]
+> [!note] 🖼️ Circuito Mixto (Serie-Paralelo)
+>
+> ![[../../Anexos/file_00000000bdc471f7b12b164a687c03e7.png]]
 
 ---
 ## 🔋 Potencia en Circuitos
@@ -295,13 +307,15 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Fallo de un elemento** | Interrumpe todo | Solo esa rama | Depende de la ubicación |
 > | **Ejemplo real** | Luces navideñas antiguas | Tomacorrientes del hogar | Circuitos electrónicos |
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
 
 ---
 
@@ -354,31 +368,47 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] A. Hermosa Donante, *Electrónica Aplicada*, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 76–130. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Enuncio leyes de serie (I igual, V se divide, Req suma) y paralelo (V igual, I se divide).
 > - [ ] Calculo Req en serie y paralelo (caso 2 resistencias: R1·R2/(R1+R2)).
 > - [ ] Aplico divisor de voltaje Vk=Vs·Rk/Req y divisor de corriente.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Simplifico un circuito mixto reduciendo grupos paralelos y sumando en serie.
 > - [ ] Calculo C e L equivalentes en serie/paralelo.
 > - [ ] Verifico con KVL/KCL y balances de potencia.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Resuelvo un mixto con 4+ resistencias y determino voltajes y corrientes.
 > - [ ] Predigo efecto de agregar/quitar una rama paralela sobre Req y potencia.
 > - [ ] Justifico por que un fallo en serie interrumpe todo y en paralelo no.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[03 - Elementos Basicos de un Circuito Electrico]] — R, C, L que combinas aqui
 > - Siguiente: [[05 - Leyes de Ohm y Kirchhoff]] — KVL/KCL que usas para resolver mixtos
 > - Adelante: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — filtros que usan estas mismas combinaciones
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[05 - Leyes de Ohm y Kirchhoff]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuito #serie #paralelo #mixto #kirchhoff #KVL #KCL #divisor #resistencia #potencia #EYAG1037 #FESD #ESPOL #unidad1

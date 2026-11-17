@@ -16,7 +16,7 @@ dg-publish: true
 > - **Electricidad** → Como el agua en una tubería: el voltaje es la presión, la corriente es el caudal, y la resistencia es el diámetro de la tubería.
 > - **Sin diferencia de presión** → Sin voltaje = sin flujo de corriente.
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
 > 
 > **Las tres magnitudes esenciales:**
 > 
@@ -34,7 +34,7 @@ dg-publish: true
 > 
 > La **carga eléctrica** es la propiedad fundamental de la materia que da origen a los fenómenos eléctricos. Existe en dos tipos: positiva (+) y negativa (−).
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
 > 
 > **Propiedades de la carga:**
 > 
@@ -50,7 +50,9 @@ dg-publish: true
 > 
 > Donde $n$ es el número de electrones y $e = 1.6 \times 10^{-19}$ C.
 
-![[../../Anexos/Pasted image 20260519222355.png]]
+> [!note] 🖼️ Carga Eléctrica
+>
+> ![[../../Anexos/Pasted image 20260519222355.png]]
 
 ---
 
@@ -97,7 +99,7 @@ dg-publish: true
 > |Mismo signo ($++$ o $--$)|Repulsiva (se alejan)|
 > |Signo opuesto ($+-$)|Atractiva (se acercan)|
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
 > 
 > **Ejemplo resuelto:**
 > 
@@ -136,9 +138,13 @@ dg-publish: true
 > 
 > Cuando se tienen dos placas paralelas cargadas, el campo eléctrico entre ellas es constante (uniforme): el vector $E$ no cambia de dirección ni de magnitud entre las placas.
 
-![[../../Anexos/Pasted image 20260519222513.png]]
+> [!note] 🖼️ Campo Eléctrico
+>
+> ![[../../Anexos/Pasted image 20260519222513.png]]
 
-![[../../Anexos/Pasted image 20260519222726.png]]
+> [!note] 🖼️ Campo Eléctrico
+>
+> ![[../../Anexos/Pasted image 20260519222726.png]]
 
 ---
 
@@ -185,7 +191,7 @@ dg-publish: true
 > - $Q$ = Carga (Culombios, C)
 > - $t$ = Tiempo (Segundos, s)
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
 > 
 > **Comparación DC vs AC:**
 > 
@@ -220,25 +226,30 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
 
 ---
 
 ## ✅ Metas de Aprendizaje
 
 > [!note] 🎯 Nivel Basico
+>
 > - [ ] Explico que es la carga electrica y su unidad (culombio) y calculo Q = n·e.
 > - [ ] Distingo voltaje, corriente y resistencia con sus unidades (V, A, ohm) y la analogia hidraulica.
 > - [ ] Enuncio la Ley de Coulomb y predigo si la fuerza es atractiva o repulsiva segun el signo.
 >
 
 > [!note] 🎯 Nivel Intermedio
+>
 > - [ ] Calculo la fuerza entre dos cargas puntuales con F = Ke·|q1·q2|/r2 y el campo E = Ke·Q/r2.
 > - [ ] Diferencio energia potencial U, potencial V y diferencia de potencial deltaV = W/q.
 > - [ ] Explico la direccion de las lineas de campo y que es un campo uniforme entre placas paralelas.
 >
 
 > [!note] 🎯 Nivel Avanzado
+>
 > - [ ] Resuelvo un problema completo que combine Coulomb, campo y potencial en un sistema de cargas.
 > - [ ] Relaciono I = Q/t con el flujo de electrones y distingo DC vs AC en aplicaciones reales.
 > - [ ] Justifico la diferencia entre electronica y electricidad segun su enfoque y componentes.
@@ -260,10 +271,24 @@ dg-publish: true
 > [5] R. L. Boylestad, _Introductory Circuit Analysis_, 13th ed. Hoboken, NJ, USA: Pearson, 2016, pp. 1–55.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Siguiente: [[02 - Principios de Generacion de Energia Electrica]] — de la carga al generador
 > - Relacionado: [[03 - Elementos Basicos de un Circuito Electrico]] y [[05 - Leyes de Ohm y Kirchhoff]] — aplicas Coulomb y campo en circuitos
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #electricidad #carga #voltaje #corriente #coulomb #campo #potencial #millikan #EYAG1037 #FESD #ESPOL #unidad1

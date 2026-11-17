@@ -13,7 +13,7 @@ dg-publish: true
 > 
 > Su historia moderna comienza en los años cuarenta con la introducción del transistor semiconductor, que hizo posible la **miniaturización** de los circuitos y dio origen a toda la electrónica moderna.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
 > 
 > |Elemento|Tipo|Función principal|
 > |---|---|---|
@@ -57,7 +57,7 @@ dg-publish: true
 > 
 > Los niveles de energía discretos de los átomos se expanden al cristalizarse en **bandas de energía**. Entre bandas existe una zona prohibida llamada **banda gap** ($E_g$) donde ningún electrón puede existir.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
 > 
 > |Material|Band gap $E_g$|Comportamiento|
 > |---|---|---|
@@ -66,7 +66,9 @@ dg-publish: true
 > |**Semiconductor Ge**|$0.67\text{ eV}$|Más fácil de excitar que el Si|
 > |**Conductor**|$\approx 0$|Bandas solapadas, electrones libres siempre|
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
+> [!note] 🖼️ Estructura Atómica y Bandas de Energía
+>
+> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
 
 ---
 
@@ -85,7 +87,7 @@ dg-publish: true
 > - Se agrega una impureza controlada (**dopaje**) para crear estados de energía permisibles en la banda prohibida, reduciendo $E_g$ efectivo.
 > - Resultado: mayor conductividad controlada.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
 > 
 
 > [!tip] 🔴 Material Tipo N
@@ -110,7 +112,9 @@ dg-publish: true
 > 
 > > 💡 **Analogía del hueco:** es como un asiento vacío en un bus. El asiento no se mueve, pero cuando alguien lo ocupa deja otro vacío — la "ausencia" se desplaza.
 
-![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
+> [!note] 🖼️ Tipos de Semiconductores
+>
+> ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
 
 ---
 
@@ -129,30 +133,36 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Defino semiconductor y distingo conductor vs semiconductor vs aislante por resistividad y Eg.
 > - [ ] Explico banda de valencia, conduccion y band gap (Si 1.1 eV, Ge 0.67 eV) con diagrama.
 > - [ ] Distingo silicio intrinseco (puro) vs extrinseco (dopado) y por que aumenta la conductividad.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Diferencio tipo N (donadores P/Sb, electrones mayoritarios) y tipo P (aceptores B/Ga, huecos).
 > - [ ] Calculo R = delta·l/A y comparo conductividades de Cu, Ge, Si, mica.
 > - [ ] Justifico por que el material dopado sigue neutro pese a tener portadores libres.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Relaciono coeficiente negativo de temperatura con liberacion de portadores.
 > - [ ] Predigo portador mayoritario/minoritario y el ion fijo tras el dopaje.
 > - [ ] Conecto bandas y dopaje con la futura union P-N y el BJT.
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -165,19 +175,27 @@ dg-publish: true
 > [4] Ing. Adriana Aguirre Alonso, _Sesión 6,7 — Introducción a la Electrónica_, EYAG1037. Guayaquil, Ecuador: ESPOL — FIEC, 2026.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> Esta nota es la base conceptual para:
-> 
-> - [[02 - El Diodo - Unión P-N]] — la unión de un material tipo P con uno tipo N.
-> - [[03 - Transistor BJT]] — dispositivo de tres terminales formado por dos uniones P-N.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
+>
+> Esta nota es la base conceptual para:
+> - [[02 - El Diodo - Unión P-N]] — la unión de un material tipo P con uno tipo N.
+> - [[03 - Transistor BJT]] — dispositivo de tres terminales formado por dos uniones P-N.
 > - Siguiente: [[02 - El Diodo - Unión P-N]] — union P-N
 > - Luego: [[03 - Transistor BJT]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - El Diodo - Unión P-N]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #semiconductores #electronica #bandasEnergia #tipoN #tipoP #EYAG1037 #FESD #ESPOL #unidad2

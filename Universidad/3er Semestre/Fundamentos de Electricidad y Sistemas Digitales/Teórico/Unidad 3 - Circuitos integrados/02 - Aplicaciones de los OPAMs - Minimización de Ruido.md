@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Como se trata de un **circuito integrado no programable** (ver [[01 - CI no programables]]), su función interna es fija; lo que cambia según la aplicación es la red de resistencias/capacitores externos que lo rodean — exactamente las configuraciones que se resolvieron en la guía de ejercicios de amplificador operacional.
 > 
-> ![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
 
 ---
 
@@ -91,11 +91,13 @@ dg-publish: true
 > 
 > El **comparador con histéresis** (Schmitt trigger) resuelve esto definiendo **dos umbrales distintos** (uno de subida, otro de bajada) mediante realimentación positiva, de modo que un pequeño ruido superpuesto ya no alcanza a provocar conmutaciones falsas.
 > 
-> ![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
 > 
 > > 📌 Es la configuración recomendada siempre que una señal analógica ruidosa deba convertirse en una señal digital limpia — puente directo hacia el siguiente tema de esta unidad (555, ADC, PWM).
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_36_02.png]]
+> [!note] 🖼️ Comparador con Histéresis — Inmunidad en Señales Digitales
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_36_02.png]]
 
 ---
 
@@ -210,9 +212,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -225,8 +231,12 @@ dg-publish: true
 > [4] Ing. Adriana Aguirre Alonso, _Tarea Autónoma #2 — Amplificadores Operacionales_, EYAG1037, FIEC-ESPOL, I PAO 2026.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[06 - Ruido Electrónico e Interferencia]] — el concepto de rechazo de modo común anticipado ahí se desarrolla aquí con el amplificador diferencial.
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — los filtros pasivos LPF/HPF se retoman aquí en su versión activa con OPAM.
 > - [[01 - CI no programables]] — el OPAM como ejemplo central de CI no programable.
@@ -235,5 +245,14 @@ dg-publish: true
 > - Después: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] — acondicionamiento con 555/ADC/PWM.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Configuraciones Lineales Básicas del OPAM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #minimizacionRuido #EYAG1037 #FESD #ESPOL #unidad3

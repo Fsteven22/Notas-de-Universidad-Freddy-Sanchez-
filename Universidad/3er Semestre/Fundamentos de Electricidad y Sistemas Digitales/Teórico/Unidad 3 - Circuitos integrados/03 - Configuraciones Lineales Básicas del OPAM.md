@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Esta nota cierra ese hueco y recoge **todo el bloque lineal básico** del PDF guía *EjREsAmpOp* [3] que faltaba: inversor, no inversor, sumadores ponderados, amplificador con eliminación de nivel DC y convertidores tensión↔corriente — incluido el caso de **ganancia de intensidad con carga flotante** (p. 18 del PDF). Son las piezas con las que luego se construyen integradores, derivadores y los circuitos no lineales de [[04 - Integrador, Derivador y Circuitos No Lineales]].
 >
-> ![[../../Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
 >
 
 > [!note] 🗂️ Qué ya viste y qué es nuevo
@@ -136,7 +136,7 @@ dg-publish: true
 
 ### Convertidor Tensión → Corriente (Howland simplificado)
 
-> [!note] 🔁 V → I
+> [!note] 🔁 Convertidor V → I
 >
 > $$i_s = \frac{v_i}{R}$$
 >
@@ -144,7 +144,7 @@ dg-publish: true
 
 ### Convertidor Corriente → Tensión (Transimpedancia)
 
-> [!note] 🔁 I → V
+> [!note] 🔁 Convertidor I → V
 >
 > $$\boxed{v_o = -R\,i_e}$$
 >
@@ -218,9 +218,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 >
@@ -228,6 +232,10 @@ dg-publish: true
 > [2] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 — configuración inversora/no inversora.
 > [3] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos_, 10th ed., cap. 10.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -237,5 +245,14 @@ dg-publish: true
 > - Después: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] y [[07 - Lógica fija y tablas de verdad]].
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[04 - Integrador, Derivador y Circuitos No Lineales]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #inversor #noInversor #sumador #convertidorVI #EYAG1037 #FESD #ESPOL #unidad3

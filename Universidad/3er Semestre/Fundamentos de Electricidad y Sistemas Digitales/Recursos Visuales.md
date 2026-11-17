@@ -6,13 +6,15 @@ tags: [recursos-visuales, fesd]
 # 🎬 Recursos Visuales — Fundamentos de Electricidad y Sistemas Digitales
 
 > [!info] ℹ️ Para qué sirve esta página
+>
 > Videos para entender la materia **viendo y escuchando**, no solo leyendo.
 > Cada link está **verificado** (videoId + título real + canal + duración).
 > **Complementa** las guías y los apuntes del curso: no los sustituye.
 
-## Teoría — Diodos y dispositivos
+## 📖 Teoría — Diodos y dispositivos
 
 > [!info] 🎬 Teoría — Diodos y dispositivos
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Diodos explicados | [Link](https://www.youtube.com/watch?v=aPY3I8pG478) | Mentalidad de Ingeniería, 11:33 | para el material de diodos. |
@@ -23,9 +25,10 @@ tags: [recursos-visuales, fesd]
 > | Transistores BJT - Polarización I | [Link](https://www.youtube.com/watch?v=LpZYUTWK2Kk) | Radioelectronica-Spain, 31:45 | la polarización, parte 1. |
 > | Transistores BJT - Polarización II | [Link](https://www.youtube.com/watch?v=rhTZOegfbQI) | Radioelectronica-Spain, 13:11 | la polarización, parte 2. |
 
-## Teoría — Análisis de circuitos
+## 📖 Teoría — Análisis de circuitos
 
 > [!info] 🎬 Teoría — Análisis de circuitos
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Leyes de Kirchhoff (mallas y nodos), ejercicio resuelto paso a paso | [Link](https://www.youtube.com/watch?v=EwY13yT1tSo) | FísicaPRO, 16:57 | el método con un ejemplo completo. |
@@ -36,9 +39,10 @@ tags: [recursos-visuales, fesd]
 > | Teorema de Thévenin | [Link](https://www.youtube.com/watch?v=VF_qr9VUwvw) | Electrónica FP, 8:52 | para simplificar circuitos antes de analizar. |
 > | Equivalentes de Thévenin y Norton | [Link](https://www.youtube.com/watch?v=BlkME9ypmuc) | El Traductor de Ingeniería, 28:00 | la misma idea con Norton. |
 
-## Teoría — Amplificadores operacionales
+## 📖 Teoría — Amplificadores operacionales
 
 > [!info] 🎬 Teoría — Amplificadores operacionales
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Amplificadores operacionales desde cero | [Link](https://www.youtube.com/watch?v=YNKE5-vuziU) | AulaVirtual, 32:35 | lo que pide la guía de op-amps (`EjREsAmpOp.pdf`). |
@@ -46,9 +50,10 @@ tags: [recursos-visuales, fesd]
 > | Amplificador integrador en 6 minutos | [Link](https://www.youtube.com/watch?v=qMHSr4FAPAM) | Les Ingenieurs, 7:57 | el integrador con op-amp, paso a paso. |
 > | Amplificador operacional: comparador | [Link](https://www.youtube.com/watch?v=EbobLluwmP4) | Electrónica FP, 6:38 | el comparador como caso de uso. |
 
-## Teoría — Corrientes alternas y RLC
+## 📖 Teoría — Corrientes alternas y RLC
 
 > [!info] 🎬 Teoría — Corrientes alternas y RLC
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | RESONANCIA de un Cto RLC | [Link](https://www.youtube.com/watch?v=WNOINqPEo0g) | Electrónica FP, 12:04 | la resonancia explicada sin fórmulas de más. |
@@ -56,9 +61,10 @@ tags: [recursos-visuales, fesd]
 > | Análisis resonancia serie y paralelo, parte I | [Link](https://www.youtube.com/watch?v=KxDOmMMo6so) | ACADENAS, 24:20 | serie contra paralelo. |
 > | Circuitos RLC: resonancia en RLC serie y RLC paralelo | [Link](https://www.youtube.com/watch?v=M-JqtwZ-BmM) | Federico Barisani, 5:13 | el resumen. |
 
-## Práctica — Instrumentos de medición
+## 🧪 Práctica — Instrumentos de medición
 
 > [!info] 🎬 Práctica — Instrumentos de medición
+>
 > | Video | Enlace | Autor y duración | Para qué sirve |
 > | --- | --- | --- | --- |
 > | Tutorial: cómo usar el osciloscopio | [Link](https://www.youtube.com/watch?v=2U-mR62OVUg) | Medición Instrumentación, 6:31 | lo primero para conectar y medir en la práctica. |
@@ -71,31 +77,35 @@ tags: [recursos-visuales, fesd]
 
 ## 🧪 Práctico y Laboratorio
 
-> [!tip] 🎬 Los videos de la materia están en las secciones por tema de esta misma nota.
+> [!tip] 🎬 Dónde están los videos
+>
+> Los videos de la materia están en las secciones por tema de esta misma nota.
 
 > [!info] ℹ️ Documentos publicados
-> PDFs embebidos (`![[]]`): el sitio los sube y se ven aquí mismo.
-
-![[FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
-
-![[FESD_Practico_2026_PAO1_Politicas.pdf]]
-
-![[FORMATO INFORME DE PRÁCTICA.pdf]]
-
-![[Formato Pre-prácticas.pdf]]
+>
+> PDFs oficiales (enlace 📎 con alias): el sitio no publica PDFs; abrirlos aquí.
+>
+> - [[Practico/Fundamentos del Laboratorio/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/FESD_Practico_2026_PAO1_Politicas.pdf|FESD_Practico_2026_PAO1_Politicas.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
 
 > [!info] 🔗 Unidad 0 — Guías y Ejercicios (FESD Práctico)
 >
 > Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 
-![[Pasted image 20260525231841.png]]
+> [!note] 🖼️ Práctico y Laboratorio
+>
+> ![[Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260525231841.png]]
 
 ---
 
 ## 🔗 Ver también
 
-- `Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` - índice del material teórico.
-- `Practico/Fundamentos del Laboratorio/` - material práctico del laboratorio.
+> [!info] 🔗 Ver también
+>
+> - `Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` — índice del material teórico.
+> - `Practico/Fundamentos del Laboratorio/` — material práctico del laboratorio.
 
 ---
 

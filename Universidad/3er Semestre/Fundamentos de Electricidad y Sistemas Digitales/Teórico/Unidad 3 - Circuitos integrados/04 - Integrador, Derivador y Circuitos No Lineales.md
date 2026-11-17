@@ -13,11 +13,11 @@ dg-publish: true
 > 1. **Con memoria ($C$)**: integrador y derivador — la salida depende de la **historia** de la entrada (integral/derivada en el tiempo).
 > 2. **No lineales (saturación, diodos)**: comparadores, rectificadores y log/antilog — el OPAM ya **no está en zona lineal**, satura a $\pm V_{sat}$ o usa la exponencial del diodo.
 >
-> ![[../../Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
 
 ---
 
-## ∫ Integrador — La salida es la integral de la entrada
+## ➗ Integrador — La salida es la integral de la entrada
 
 > [!note] ∫ Principio (PDF p. 21)
 >
@@ -60,7 +60,7 @@ dg-publish: true
 
 ---
 
-## d/dt Derivador — La salida es la derivada de la entrada
+## ➗ Derivador — La salida es la derivada de la entrada
 
 > [!note] d/dt Principio (PDF p. 24)
 >
@@ -242,9 +242,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 >
@@ -252,6 +256,10 @@ dg-publish: true
 > [2] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 y 17 — integrador/derivador y no lineales.
 > [3] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos_, 10th ed., cap. 10-11.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -261,5 +269,14 @@ dg-publish: true
 > - Luego: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] y [[07 - Lógica fija y tablas de verdad]].
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #integrador #derivador #comparador #rectificador #logaritmico #EYAG1037 #FESD #ESPOL #unidad3

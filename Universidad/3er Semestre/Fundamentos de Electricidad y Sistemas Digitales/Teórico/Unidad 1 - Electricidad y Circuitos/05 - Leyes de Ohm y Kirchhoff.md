@@ -20,7 +20,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - KCL es como un cruce de tuberías: el agua que entra debe ser igual al agua que sale.
 > - KVL es como una ruta circular de montaña: si subes 1000 m, al volver al punto de inicio habrás bajado exactamente 1000 m.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
 > 
 > |Ley|Postulado|Aplica a|
 > |---|---|---|
@@ -52,7 +52,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$I = \frac{V}{R} \qquad\qquad R = \frac{V}{I}$$
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
 > 
 > ### 📐 Relación gráfica: curva V-I
 > 
@@ -92,7 +92,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > $$V = I \cdot R = 3 \times 15 = 45\text{ V}$$
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 23_07_06.png]]
+> [!note] 🖼️ Ley de Ohm
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 23_07_06.png]]
 
 ---
 
@@ -121,7 +123,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Un **nodo** es cualquier punto de conexión entre dos o más elementos. Un **nodo principal** conecta tres o más elementos.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
 > 
 > > KCL en el nodo A: $I_1 + I_2 - I_3 - I_4 - I_5 = 0$
 > > 
@@ -173,7 +175,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Resistencia**|La corriente asumida va en el mismo sentido del recorrido|−|
 > |**Resistencia**|La corriente asumida va en sentido contrario al recorrido|+|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
 > 
 > > KVL: $+V_s - V_{R1} - V_{R2} - V_{R3} = 0$
 > > 
@@ -189,7 +191,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > ✅ Verificación KVL: $4 + 8 + 6 = 18\text{ V}$ ✓
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_46_11.png]]
+> [!note] 🖼️ KVL — Ley de Voltaje de Kirchhoff
+>
+> ![[../../Anexos/ChatGPT Image 31 may 2026, 23_46_11.png]]
 
 ---
 
@@ -199,7 +203,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Para circuitos con múltiples mallas, se asigna una **corriente de malla** a cada malla independiente y se aplica KVL en cada una. Esto genera un sistema de ecuaciones que se resuelve simultáneamente.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
 > 
 > **Procedimiento:**
 > 
@@ -219,7 +223,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > Resolviendo el sistema: $$I_1 = \frac{60}{26} \approx 2.31\text{ A} \qquad I_2 = \frac{12}{26} \approx 0.46\text{ A}$$
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_56_09.png]]
+> [!note] 🖼️ Análisis de Circuitos con Múltiples Mallas
+>
+> ![[../../Anexos/ChatGPT Image 31 may 2026, 23_56_09.png]]
 
 ---
 
@@ -303,7 +309,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > Una vez memorizado el patrón, construir la matriz toma **menos de un minuto** por circuito. No se necesita recorrer mallas ni escribir KVL/KCL paso a paso — el sistema completo surge directamente de la topología del circuito.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
 
 ---
 
@@ -390,7 +396,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > ⚠️ Dos fuentes de corriente **no pueden conectarse en serie** a menos que entreguen exactamente la misma corriente; de lo contrario, violan KCL.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
 
 ---
 
@@ -404,7 +410,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Mallas (KVL)**|$\sum V = 0$|Corrientes de malla|Hay pocas mallas y muchos nodos|
 > |**Nodos (KCL)**|$\sum I = 0$|Tensiones de nodo|Hay pocos nodos y muchas mallas|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
 > 
 > > 💡 Ambos métodos producen el mismo resultado. La elección depende de la estructura del circuito y la cantidad de incógnitas que genera cada enfoque.
 
@@ -416,7 +422,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > En la práctica, las tres leyes se aplican de manera conjunta e iterativa para resolver cualquier circuito:
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
 > 
 > **Resumen de fórmulas esenciales:**
 > 
@@ -434,7 +440,9 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
 
 ---
 
@@ -452,31 +460,47 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > [5] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 30–75. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
+>
 > - [ ] Escribo V=IR y sus formas I=V/R, R=V/I y distingo elemento lineal vs no lineal.
 > - [ ] Enuncio KCL sum Ik=0 y KVL sum Vk=0 con su convencion de signos.
 > - [ ] Identifico nodos, mallas y lazos en un circuito.
 >
 
 > [!note] Nivel Intermedio
+>
 > - [ ] Resuelvo circuito de 2 mallas con KVL y 2 nodos con KCL paso a paso.
 > - [ ] Aplico forma matricial R·I=V y G·V=If.
 > - [ ] Combino fuentes de voltaje en serie y de corriente en paralelo.
 >
 
 > [!note] Nivel Avanzado
+>
 > - [ ] Elijo entre mallas vs nodos segun incognitas y resuelvo por inspeccion.
 > - [ ] Interpreto curva V-I y determino R por pendiente.
 > - [ ] Integro Ohm+KCL+KVL para hallar corrientes y voltajes completos.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
+>
 > - Previo: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas KVL/KCL
 > - Siguiente: [[06 - Teoremas de Analisis de Circuitos]] — atajos que derivan de estas leyes
 > - Adelante: [[03 - Transistor BJT]] — donde estas leyes se usan en polarizacion
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Teoremas de Analisis de Circuitos]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ohm #kirchhoff #KCL #KVL #nodos #mallas #análisis #corriente #voltaje #resistencia #matrices #conductancia #fuentes #EYAG1037 #FESD #ESPOL #unidad1

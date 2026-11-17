@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Esta idea no es exclusiva del papel y lápiz: las herramientas modernas de síntesis lógica (usadas para programar FPGAs o diseñar circuitos integrados completos) aplican exactamente estos mismos principios de simplificación booleana, solo que a una escala de millones de variables mediante algoritmos automatizados.
 > 
-> ![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
 
 ---
 
@@ -69,7 +69,9 @@ dg-publish: true
 
 ## 🔀 ¿SOP o POS? Criterio de elección
 
-![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
+> [!note] 🖼️ ¿SOP o POS? Criterio de elección
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
 
 ---
 
@@ -161,7 +163,9 @@ dg-publish: true
 > 
 > > 📌 El patrón general: con **NAND**, para obtener AND necesitas negar la salida; para obtener OR necesitas negar las entradas. Con **NOR** es al revés: para OR niegas la salida, para AND niegas las entradas.
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
+> [!note] 🖼️ Implementación Solo con NAND o Solo con NOR
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
 
 ---
 
@@ -258,9 +262,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -269,12 +277,25 @@ dg-publish: true
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre mapas de Karnaugh y minimización booleana.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[01 - Introducción a la Electrónica Digital]] — tema previo de la unidad: sistemas de numeración, tablas de verdad y lógica positiva/negativa/mixta.
 > - [[07 - Lógica fija y tablas de verdad]] — compuertas lógicas y la propiedad de completitud funcional de NAND/NOR (Unidad 3).
 > - Próxima nota (Unidad 4, punto 4): Circuitos integrados programables.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[../../Índice de Contenido|Índice de Contenido]] — repaso del curso completo
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #minimizacionLogica #mapaKarnaugh #SOP #POS #minterm #maxterm #EYAG1037 #FESD #ESPOL #unidad4

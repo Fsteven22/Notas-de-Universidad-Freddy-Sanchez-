@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Un **circuito integrado de lógica fija** implementa una función booleana predeterminada por su fabricación (por ejemplo, una compuerta AND o un decodificador), a diferencia de los dispositivos **programables** (como una FPGA), cuya función se define después de fabricados. Son la base de casi todo sistema digital: desde un simple circuito combinacional hasta la lógica de control de un procesador.
 > 
-> ![[../../Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
 
 ---
 
@@ -126,7 +126,9 @@ dg-publish: true
 > |**2**|Aplicar una tercera NAND a las entradas invertidas: $S = NAND(\overline{A}, \overline{B})$|
 > |**3**|Verificación: $NAND(\overline{A},\overline{B}) = \overline{\overline{A}\cdot\overline{B}} = A + B$ (por la ley de De Morgan) ✅|
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_08_17.png]]
+> [!note] 🖼️ Ejercicios Prácticos
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_08_17.png]]
 
 ---
 
@@ -156,9 +158,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -169,13 +175,26 @@ dg-publish: true
 > [3] Texas Instruments, _SN74HC00 Quad 2-Input NAND Gate Datasheet_, 2015.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] — tema previo de la unidad.
 > - [[05 - Ejercicios Resueltos y de Oposición]] y [[04 - Integrador, Derivador y Circuitos No Lineales]] — bloque de OPAMs que antecede al 555.
 > - [[01 - CI no programables]] — fundamento de los CI de lógica fija.
 > - Unidad 4 — Fundamentos de sistemas digitales: introduce codificación, álgebra de Bool y minimización de funciones lógicas a partir de estas mismas tablas de verdad.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - Introducción a la Electrónica Digital]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #logicaFija #tablasVerdad #TTL #CMOS #EYAG1037 #FESD #ESPOL #unidad3

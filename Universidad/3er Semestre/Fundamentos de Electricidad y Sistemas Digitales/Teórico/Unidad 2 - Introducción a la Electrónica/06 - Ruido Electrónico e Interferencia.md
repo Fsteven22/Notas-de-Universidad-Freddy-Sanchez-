@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema conecta directamente con lo visto en [[04 - Circuitos de Filtrado y Fuentes Lineales]] (el rizado de una fuente lineal es, en el fondo, un tipo de ruido de baja frecuencia) y sirve de puente hacia las aplicaciones de amplificadores operacionales para minimización de ruido de la Unidad 3.
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
 
 ---
 
@@ -55,7 +55,7 @@ dg-publish: true
 > 
 > Una señal de ruido externa (motores, líneas de potencia, radiofrecuencia, conmutación digital) puede acoplarse al circuito de cuatro maneras:
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
 > 
 > |Modo|Mecanismo|Mitigación típica|
 > |---|---|---|
@@ -87,7 +87,9 @@ dg-publish: true
 > 
 > Una de las técnicas más potentes contra el ruido —sobre todo el que se acopla igual a dos líneas de señal— es amplificar solo la **diferencia** entre dos entradas y rechazar lo que sea común a ambas (modo común). Esto se logra con un **amplificador diferencial** basado en amplificadores operacionales, tema que se profundiza en la Unidad 3 (Aplicaciones de los OPAMs — Minimización de ruido).
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
+> [!note] 🖼️ Técnicas de Mitigación con Semiconductores y Componentes Pasivos
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
 
 ---
 
@@ -131,9 +133,13 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
 
 ---
+
+## 📚 Referencias
 
 > [!quote] 📖 Fuentes consultadas
 > 
@@ -144,13 +150,26 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018 — sección de compatibilidad electromagnética y técnicas de blindaje.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — el filtro capacitivo y los conceptos de LPF/HPF ya vistos son la base de varias técnicas de mitigación de ruido.
 > - [[05 - Reguladores en Fuentes Lineales]] — el diodo Zener regulador reaparece aquí como elemento de recorte de transitorios (TVS).
 > - [[02 - El Diodo - Unión P-N]] — el ruido de disparo (shot noise) se origina en la misma unión P-N estudiada ahí.
 > - Siguiente tema (Unidad 3): Aplicaciones de los OPAMs para minimización de ruido — amplificador diferencial y rechazo de modo común.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - CI no programables]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ruidoElectronico #interferenciaEMI #fuentesLineales #EYAG1037 #FESD #ESPOL #unidad2
