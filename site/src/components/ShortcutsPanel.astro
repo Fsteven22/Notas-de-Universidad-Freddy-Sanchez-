@@ -67,22 +67,17 @@ const grupos: Grupo[] = [
 
 <div
   id="nx-shortcuts"
-  class="fixed inset-0 z-[60] hidden items-center justify-center bg-[rgba(2,4,10,0.72)] px-4 backdrop-blur-[6px]"
+  class="nx-overlay fixed inset-0 z-[60] hidden items-center justify-center px-4"
   role="dialog"
   aria-modal="true"
   aria-labelledby="nx-shortcuts-title"
 >
   <div id="nx-shortcuts-panel" class="nx-shortcuts-panel w-full max-w-lg">
-    <div class="relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[#0a0e1a] shadow-[0_24px_80px_rgba(0,0,0,0.6),0_0_40px_rgba(120,140,255,0.12)]">
-      <div
-        class="absolute inset-x-0 top-0 h-px"
-        style="background: linear-gradient(90deg, transparent, #aa66ff 25%, #00aaff 75%, transparent);"
-      >
-      </div>
+    <div class="relative overflow-hidden rounded border border-[var(--nx-line)] bg-[var(--nx-surface)]">
 
-      <div class="flex items-center gap-3 border-b border-[rgba(255,255,255,0.07)] px-5 py-4">
+      <div class="flex items-center gap-3 border-b border-[var(--nx-line)] px-5 py-4">
         <svg
-          class="size-4 shrink-0 text-[var(--color-nexus-blue)]"
+          class="size-4 shrink-0 text-[var(--nx-accent)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -93,14 +88,14 @@ const grupos: Grupo[] = [
           <rect x="2" y="6" width="20" height="12" rx="2" />
           <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8" />
         </svg>
-        <h2 id="nx-shortcuts-title" class="text-sm font-bold text-white">
+        <h2 id="nx-shortcuts-title" class="text-sm font-bold text-[var(--nx-text)]">
           Atajos de teclado
         </h2>
         <button
           id="nx-shortcuts-close"
           type="button"
           aria-label="Cerrar atajos"
-          class="ml-auto flex size-7 shrink-0 items-center justify-center rounded-lg border border-[rgba(255,255,255,0.12)] text-[var(--color-nexus-muted)] transition hover:border-[rgba(255,255,255,0.3)] hover:text-white"
+          class="ml-auto flex size-7 shrink-0 items-center justify-center rounded border border-[var(--nx-line)] text-[var(--nx-muted)] transition hover:border-[var(--nx-line-strong)] hover:text-[var(--nx-text)]"
         >
           <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
             <path d="M6 6l12 12M18 6L6 18" />
@@ -165,7 +160,7 @@ const grupos: Grupo[] = [
       </div>
 
       <div
-        class="flex items-center justify-between border-t border-[rgba(255,255,255,0.06)] px-5 py-2.5 font-mono text-[10px] tracking-wider text-[var(--color-nexus-muted)]"
+        class="flex items-center justify-between border-t border-[var(--nx-line)] px-5 py-2.5 text-[var(--nx-muted)]"
       >
         <span>Atajos disponibles en todo el sitio</span>
         <span><span class="nx-search-key">esc</span> cerrar</span>
@@ -312,12 +307,14 @@ const grupos: Grupo[] = [
     }
   }
 
+  /* Títulos de grupo: sans, sin mayúsculas espaciadas (es texto secundario,
+     no código). El acento no se gasta en títulos: queda para enlaces,
+     estado activo, foco y progreso. */
   .nx-shortcuts-group {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--nx-accent, var(--color-nexus-blue));
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--nx-muted);
   }
   .nx-shortcuts-row {
     display: flex;
@@ -331,39 +328,38 @@ const grupos: Grupo[] = [
     align-items: center;
     gap: 0.35rem;
   }
+  /* "luego" / "+" entre teclas: palabra, no tecla → sans. */
   .nx-shortcuts-then {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #64748b;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    color: var(--nx-muted);
   }
   .nx-shortcuts-desc {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
-    color: #cbd5e1;
+    color: var(--nx-dim);
   }
   .nx-shortcuts-note {
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-top: 1px solid var(--nx-line);
     padding-top: 0.75rem;
-    font-family: var(--font-mono);
-    font-size: 10px;
+    font-family: var(--font-sans);
+    font-size: 12px;
     line-height: 1.7;
-    color: #64748b;
+    color: var(--nx-muted);
   }
   .nx-shortcuts-note .nx-kbd {
     margin: 0 2px;
   }
   .nx-shortcuts-section {
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-top: 1px solid var(--nx-line);
     margin-top: 0.9rem;
     padding-top: 0.9rem;
   }
   .nx-shortcuts-hint {
-    font-family: var(--font-mono);
-    font-size: 10px;
+    font-family: var(--font-sans);
+    font-size: 12px;
     line-height: 1.6;
-    color: #64748b;
+    color: var(--nx-muted);
     margin-top: 0.3rem;
   }
 </style>

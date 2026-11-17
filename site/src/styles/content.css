@@ -1,86 +1,111 @@
-/* Render de notas markdown */
+/* ══════════════════════════════════════════════════════════════════════
+   Render de notas markdown.
+
+   Reglas de la casa:
+   · sin gradientes, sin sombras, sin glows
+   · un solo acento (el ámbar del sitio) y un solo radio (4 px)
+   · la separación se hace con espacio y con líneas de 1 px
+   · mono solo para código, atajos y números
+   ══════════════════════════════════════════════════════════════════════ */
+
 .note-prose {
   font-size: 15.5px;
   line-height: 1.75;
-  color: #e5e7eb;
-  /* Medida de lectura: medido, la columna daba 90 caracteres por linea
-     (904 px a 14,7 px). Lo comodo para texto corrido esta entre 60 y 75. */
-  max-width: 43rem;
-}
-
-.note-prose h1 {
-  font-size: 1.9rem;
-  font-weight: 800;
-  color: #fff;
-  margin: 2rem 0 1rem;
+  color: var(--nx-dim);
+  /* Medida de lectura: 68 caracteres por línea (lo cómodo para texto
+     corrido está entre 60 y 75). En pantallas estrechas manda el ancho
+     disponible: sin esto la columna se salen en el móvil. */
+  max-width: min(68ch, 100%);
 }
 
 /* El h1 del markdown se degrada a h2 (plugin rehype-h1-demote) para que
-   quede un solo h1 por pagina. Se le devuelve aqui el aspecto que tenia. */
+   quede un solo h1 por página. Si además su texto coincide con el título
+   de la nota, el script de la página lo oculta. */
+.note-prose h1,
 .note-prose h2.nx-h1-md {
-  font-size: 1.9rem;
-  font-weight: 800;
-  color: #fff;
-  margin: 2rem 0 1rem;
-  padding-bottom: 0;
-  border-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--nx-text);
+  margin: 2.4rem 0 1rem;
+  scroll-margin-top: 5rem;
+}
+.note-prose h2.nx-h1-md[hidden] {
+  display: none;
 }
 
 .note-prose h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--nx-text);
   margin: 2.2rem 0 0.8rem;
   padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(0, 170, 255, 0.2);
+  border-bottom: 1px solid var(--nx-line);
   scroll-margin-top: 5rem;
 }
 
 .note-prose h3 {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: #f3f4f6;
-  margin: 1.6rem 0 0.6rem;
+  color: var(--nx-text);
+  margin: 1.6rem 0 0.5rem;
   scroll-margin-top: 5rem;
 }
 
+.note-prose h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--nx-dim);
+  margin: 1.4rem 0 0.4rem;
+}
+
 .note-prose p {
-  margin: 0.7rem 0;
+  margin: 0.8rem 0;
+}
+
+/* Palabras largas sin espacios (URLs, rutas, identificadores): que se
+   partan en vez de empujar la página. */
+.note-prose p,
+.note-prose li,
+.note-prose h1,
+.note-prose h2,
+.note-prose h3,
+.note-prose h4,
+.note-prose td,
+.note-prose th {
+  overflow-wrap: break-word;
 }
 
 .note-prose strong {
-  color: #ffffff;
+  color: var(--nx-text);
+  font-weight: 600;
 }
 
 .note-prose a {
-  color: var(--color-nexus-blue);
+  color: var(--nx-accent);
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: rgba(0, 170, 255, 0.45);
+  text-decoration-color: rgba(var(--nx-accent-rgb), 0.4);
 }
 .note-prose a:hover {
-  text-decoration-color: var(--color-nexus-blue);
+  text-decoration-color: var(--nx-accent);
 }
 
 .note-prose ul,
 .note-prose ol {
-  margin: 0.7rem 0;
+  margin: 0.8rem 0;
   padding-left: 1.4rem;
 }
 .note-prose li {
   margin: 0.3rem 0;
 }
-.note-prose ul li::marker {
-  color: var(--color-nexus-purple);
-}
-.note-prose ol li::marker {
-  color: var(--color-nexus-blue);
+.note-prose li::marker {
+  color: var(--nx-muted);
 }
 
 .note-prose hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  background: var(--nx-line);
   margin: 2rem 0;
 }
 
@@ -89,151 +114,220 @@
   /* con width/height en el HTML (plugin rehype-img-lazy) el navegador
      reserva el hueco; sin height:auto la imagen se deformaria */
   height: auto;
-  border-radius: 0.75rem;
-  border: 1px solid var(--glass-border);
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
   margin: 1rem auto;
-  background: rgba(255, 255, 255, 0.02);
   display: block;
 }
 
+/* Cita que no es callout: una guía neutra, sin color. */
 .note-prose blockquote {
-  border-left: 3px solid rgba(0, 170, 255, 0.5);
-  padding: 0.4rem 1rem;
+  border-left: 1px solid var(--nx-line-strong);
+  padding: 0.2rem 1rem;
   margin: 1rem 0;
-  color: #d1d5db;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 0 0.5rem 0.5rem 0;
+  color: var(--nx-muted);
 }
 
+/* ── Código ────────────────────────────────────────────────────────── */
 .note-prose code {
   font-family: var(--font-mono);
   font-size: 0.84em;
-  background: rgba(0, 221, 187, 0.08);
-  color: var(--color-nexus-cyan);
+  background: rgba(var(--nx-text-rgb), 0.05);
+  color: var(--nx-text);
   padding: 0.12em 0.4em;
-  border-radius: 0.375rem;
+  border-radius: var(--nx-radius);
 }
 
 .note-prose pre {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid var(--glass-border);
-  border-radius: 0.75rem;
-  padding: 1rem 1.25rem;
+  position: relative;
+  background: var(--nx-bg-soft);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  padding: 1rem 1.15rem;
   overflow-x: auto;
-  margin: 1.1rem 0;
+  margin: 1.2rem 0;
+  /* scrollbar fina y gris */
+  scrollbar-width: thin;
+  scrollbar-color: var(--nx-line-strong) transparent;
+}
+.note-prose pre::-webkit-scrollbar {
+  height: 8px;
+}
+.note-prose pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.note-prose pre::-webkit-scrollbar-thumb {
+  background: var(--nx-line-strong);
+  border-radius: var(--nx-radius);
 }
 .note-prose pre code {
   background: none;
   padding: 0;
-  color: #e5e7eb;
+  color: var(--nx-dim);
   font-size: 0.85rem;
   line-height: 1.6;
 }
 
-/* Tablas */
+/* Nombre del bloque de código (el lenguaje) arriba a la izquierda. */
+.note-prose pre[data-lang]::before {
+  content: attr(data-lang);
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Indicador de línea cortada: cuando el bloque se desplaza hacia la
+   derecha, una flecha lo dice. No se usa un degradado (regla de la casa):
+   es un chevron que el script pone solo si el bloque se puede desplazar. */
+.note-prose pre.is-scrollable {
+  padding-right: 2.2rem;
+}
+.note-prose pre.is-scrollable::after {
+  content: "›";
+  position: absolute;
+  top: 0.45rem;
+  right: 0.6rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--nx-muted);
+  pointer-events: none;
+}
+
+/* ── Tablas ────────────────────────────────────────────────────────── */
+/* El envoltorio (plugin rehype-table-scroll) deja que la tabla se
+   desplace dentro de su caja en vez de empujar la página entera. */
+.nx-table-scroll {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  scrollbar-width: thin;
+  scrollbar-color: var(--nx-line-strong) transparent;
+}
+.nx-table-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.nx-table-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nx-table-scroll::-webkit-scrollbar-thumb {
+  background: var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+}
 .note-prose table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.2rem 0;
+  margin: 0;
   font-size: 0.9rem;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 0.75rem;
-  overflow: hidden;
+  font-family: var(--font-sans);
 }
 .note-prose th {
   text-align: left;
-  font-weight: 700;
-  color: #fff;
-  padding: 0.6rem 0.9rem;
-  background: rgba(255, 255, 255, 0.05);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--nx-dim);
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--nx-line-strong);
+  white-space: nowrap;
 }
 .note-prose td {
-  padding: 0.55rem 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.5rem 0.8rem;
+  border-top: 1px solid var(--nx-line);
+  color: var(--nx-muted);
+}
+.note-prose tbody tr:first-child td {
+  border-top: 0;
 }
 
-/* Callouts */
+/* ── Callouts ────────────────────────────────────────────────────────
+   Fondo transparente, borde de 1 px y una barra de 3 px a la izquierda
+   con el color del tipo. Solo hay tres colores (info, aviso, peligro) y
+   van únicamente en esa barra: el título va en la misma tipografía que
+   el texto. */
 .nx-callout {
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--nx-line);
   border-left-width: 3px;
-  border-radius: 0.6rem;
+  border-radius: var(--nx-radius);
   padding: 0.8rem 1.1rem;
   margin: 1.2rem 0;
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
   font-size: 0.95em;
 }
 .nx-callout-title {
-  font-weight: 700;
-  font-size: 0.85rem;
+  /* El título va en línea (no en flex): así el texto puede pasar de línea
+     y las fórmulas de KaTeX se quedan donde caen. Con display:flex cada
+     fórmula era un item y el título no cabía en el móvil. */
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--nx-text);
   margin: 0 0 0.35rem;
-  font-family: var(--font-mono);
-  letter-spacing: 0.04em;
+}
+.nx-callout-ico {
+  display: inline-block;
+  vertical-align: -0.08em;
+  margin-right: 0.35rem;
+  font-size: 0.9em;
+  line-height: 1;
 }
 .nx-callout p {
-  margin: 0.4rem 0;
+  margin: 0.45rem 0;
+}
+/* El cuerpo del callout va en su propia caja y en peso normal: el título
+   es lo único en negrita. */
+.nx-callout-body {
+  font-weight: 400;
+}
+.nx-callout-body > :first-child {
+  margin-top: 0;
+}
+.nx-callout-body > :last-child {
+  margin-bottom: 0;
+}
+.nx-callout-body p {
+  margin: 0.45rem 0;
+}
+/* Una tabla dentro de un callout no debe romper el ancho de la nota:
+   se desplaza dentro de su caja. */
+.nx-callout .nx-table-scroll {
+  margin: 0.6rem 0;
+}
+.nx-callout table {
+  border: 0;
+  font-size: 0.85rem;
 }
 
-.nx-callout[data-color="blue"] {
-  border-left-color: var(--color-nexus-blue);
-  background: rgba(0, 170, 255, 0.05);
+.nx-callout[data-color="info"] {
+  border-left-color: var(--nx-info);
 }
-.nx-callout[data-color="green"] {
-  border-left-color: var(--color-nexus-green);
-  background: rgba(0, 255, 136, 0.045);
+.nx-callout[data-color="warn"] {
+  border-left-color: var(--nx-warn);
 }
-.nx-callout[data-color="green"] .nx-callout-title {
-  color: var(--color-nexus-green);
+.nx-callout[data-color="danger"] {
+  border-left-color: var(--nx-danger);
 }
-.nx-callout[data-color="gold"] {
-  border-left-color: var(--color-nexus-gold);
-  background: rgba(245, 159, 0, 0.05);
-}
-.nx-callout[data-color="gold"] .nx-callout-title {
-  color: var(--color-nexus-gold);
-}
-.nx-callout[data-color="red"] {
-  border-left-color: var(--color-nexus-red);
-  background: rgba(255, 56, 96, 0.05);
-}
-.nx-callout[data-color="red"] .nx-callout-title {
-  color: var(--color-nexus-red);
-}
-.nx-callout[data-color="purple"] {
-  border-left-color: var(--color-nexus-purple);
-  background: rgba(170, 102, 255, 0.05);
-}
-.nx-callout[data-color="purple"] .nx-callout-title {
-  color: var(--color-nexus-purple);
-}
-.nx-callout[data-color="cyan"] {
-  border-left-color: var(--color-nexus-cyan);
-  background: rgba(0, 221, 187, 0.045);
-}
-.nx-callout[data-color="cyan"] .nx-callout-title {
-  color: var(--color-nexus-cyan);
-}
-.nx-callout[data-color="muted"] {
-  border-left-color: var(--color-nexus-muted);
+.nx-callout[data-color="neutral"] {
+  border-left-color: var(--nx-line-strong);
 }
 
-/* Flashcards */
+/* ── Tarjetas de repaso (bloque "🔁 Repaso SR" de las notas) ──────────
+   Cada tarjeta es un <details>: se destapa al hacer clic, funciona sin
+   JavaScript y se lee bien con teclado y con lector de pantalla. */
 details.nx-fc {
-  border: 1px solid rgba(0, 170, 255, 0.28);
-  background: rgba(0, 170, 255, 0.03);
-  border-radius: 0.6rem;
+  border: 1px solid var(--nx-line);
+  background: transparent;
+  border-radius: var(--nx-radius);
   margin: 0.6rem 0;
   overflow: hidden;
 }
 details.nx-fc summary {
   cursor: pointer;
   padding: 0.6rem 1rem;
+  font-family: var(--font-sans);
   font-weight: 600;
-  color: #f9fafb;
+  color: var(--nx-text);
   list-style: none;
   position: relative;
   padding-right: 2.2rem;
@@ -247,20 +341,93 @@ details.nx-fc summary::after {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-nexus-blue);
+  color: var(--nx-muted);
   transition: transform 0.2s;
 }
 details.nx-fc[open] summary::after {
   transform: translateY(-50%) rotate(90deg);
 }
+details.nx-fc summary:hover {
+  color: var(--nx-accent);
+}
 details.nx-fc p {
   padding: 0.5rem 1.1rem 0.75rem;
   margin: 0;
-  color: #d1d5db;
-  border-top: 1px dashed rgba(0, 170, 255, 0.18);
+  color: var(--nx-dim);
+  border-top: 1px solid var(--nx-line);
 }
 
-/* Documentos embebidos no-imagen (pdf, docx, ...) */
+/* ── Bloque de flashcards del final de la nota ─────────────────────── */
+.nx-flashcards {
+  margin: 1.2rem 0;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: transparent;
+  overflow: hidden;
+}
+.nx-flashcards__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--nx-line);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--nx-muted);
+}
+.nx-flashcards__cta {
+  color: var(--nx-accent);
+  text-decoration: none;
+}
+.nx-flashcards__cta:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.nx-flashcard {
+  border-bottom: 1px solid var(--nx-line);
+}
+.nx-flashcard:last-child {
+  border-bottom: 0;
+}
+.nx-flashcard__q {
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--nx-text);
+  list-style: none;
+  transition: background 0.15s ease;
+}
+.nx-flashcard__q::-webkit-details-marker {
+  display: none;
+}
+.nx-flashcard__q::before {
+  content: "▸ ";
+  color: var(--nx-muted);
+}
+.nx-flashcard[open] .nx-flashcard__q::before {
+  content: "▾ ";
+}
+.nx-flashcard__q:hover {
+  background: rgba(var(--nx-text-rgb), 0.03);
+}
+.nx-flashcard__q:focus-visible {
+  outline: 2px solid var(--nx-neon);
+  outline-offset: -2px;
+}
+.nx-flashcard__a {
+  padding: 0.1rem 1rem 0.85rem 2rem;
+  color: var(--nx-dim);
+  font-size: 0.95em;
+}
+.nx-flashcard__a p {
+  margin: 0.35rem 0;
+}
+
+/* ── Documentos embebidos no-imagen (pdf, docx, ...) ─────────────── */
 .nx-doc {
   margin: 1rem 0;
 }
@@ -269,22 +436,21 @@ details.nx-fc p {
   align-items: center;
   gap: 0.6rem;
   padding: 0.7rem 1rem;
-  border: 1px solid var(--glass-border);
-  border-radius: 0.6rem;
-  background: rgba(0, 170, 255, 0.05);
-  color: var(--color-nexus-blue);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: transparent;
+  color: var(--nx-accent);
   text-decoration: none;
   font-weight: 600;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.85rem;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color 0.2s, color 0.2s;
 }
 .nx-doc a:hover {
-  border-color: var(--color-nexus-blue);
-  background: rgba(0, 170, 255, 0.06);
+  border-color: var(--nx-accent-line);
 }
 
-/* Chips de tags */
+/* ── Chips de tags ────────────────────────────────────────────────── */
 .nx-tags {
   display: flex;
   flex-wrap: wrap;
@@ -292,48 +458,43 @@ details.nx-fc p {
   margin: 1.2rem 0;
 }
 .nx-tag {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  padding: 0.22rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(170, 102, 255, 0.3);
-  background: rgba(170, 102, 255, 0.06);
-  color: var(--color-nexus-purple);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
+  background: transparent;
+  color: var(--nx-muted);
 }
 
-/* Aviso de material que no se publica (asset omitido) */
+/* ── Aviso de material que no se publica (asset omitido) ──────────── */
 .nx-omitido {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   margin: 0.9rem 0;
   padding: 0.65rem 0.9rem;
-  border: 1px dashed rgba(245, 159, 0, 0.42);
-  border-left: 3px solid var(--color-nexus-gold);
-  border-radius: 0.6rem;
-  background: rgba(245, 159, 0, 0.06);
-  color: #d1d5db;
+  border: 1px dashed var(--nx-line-strong);
+  border-left: 3px solid var(--nx-accent);
+  border-radius: var(--nx-radius);
+  background: transparent;
+  color: var(--nx-dim);
   font-size: 0.92em;
   line-height: 1.55;
 }
 .nx-omitido strong {
-  color: var(--color-nexus-gold);
-  font-family: var(--font-mono);
-  font-size: 0.8em;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  color: var(--nx-text);
+  font-family: var(--font-sans);
+  font-size: 0.95em;
 }
 .nx-omitido-link {
-  border-color: rgba(107, 127, 163, 0.4);
-  border-left-color: var(--color-nexus-muted);
-  background: rgba(255, 255, 255, 0.03);
+  border-left-color: var(--nx-line-strong);
 }
 .nx-omitido-link strong {
-  color: var(--color-nexus-muted);
+  color: var(--nx-dim);
 }
 
-/* KaTeX: tamano dentro de titulos de callout + overflow horizontal en movil */
+/* ── KaTeX ─────────────────────────────────────────────────────────── */
 .nx-callout-title .katex {
   font-size: 1em;
 }
@@ -346,12 +507,13 @@ details.nx-fc p {
   font-size: 1.05em;
 }
 
+/* ── Visor de PDF incrustado ───────────────────────────────────────── */
 .nx-pdf {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 0.75rem;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
   overflow: hidden;
   margin: 1rem 0;
-  background: #0b0c10;
+  background: var(--nx-bg-soft);
   display: flex;
   flex-direction: column;
 }
@@ -362,9 +524,10 @@ details.nx-fc p {
   gap: 0.5rem 0.85rem;
   font-size: 0.85rem;
   align-items: center;
+  border-bottom: 1px solid var(--nx-line);
 }
 .nx-pdf-name {
-  color: #e5e7eb;
+  color: var(--nx-text);
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -372,10 +535,9 @@ details.nx-fc p {
   max-width: 100%;
 }
 .nx-pdf-meta {
-  color: #6b7fa3;
+  color: var(--nx-muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  letter-spacing: 0.04em;
 }
 .nx-pdf-acts {
   margin-left: auto;
@@ -386,22 +548,23 @@ details.nx-fc p {
 }
 .nx-pdf-acts a,
 .nx-pdf-open {
-  color: #22d3ee;
+  color: var(--nx-accent);
   text-decoration: underline;
-  text-decoration-color: rgba(34, 211, 238, 0.45);
   text-underline-offset: 2px;
+  text-decoration-color: rgba(var(--nx-accent-rgb), 0.4);
   font: inherit;
+  font-family: var(--font-sans);
   font-size: 0.82rem;
   background: transparent;
-  border: 1px solid rgba(34, 211, 238, 0.35);
-  border-radius: 5px;
+  border: 1px solid var(--nx-accent-line);
+  border-radius: var(--nx-radius);
   padding: 0.25rem 0.6rem;
   cursor: pointer;
 }
 .nx-pdf-acts a:hover,
 .nx-pdf-open:hover {
-  color: #67e8f9;
-  border-color: #22d3ee;
+  color: var(--nx-accent);
+  border-color: var(--nx-accent);
 }
 .nx-pdf-slot:empty {
   display: none;
@@ -416,97 +579,42 @@ details.nx-fc p {
   min-height: 420px;
   border: none;
   display: block;
-  background: #000;
+  /* El visor del PDF pinta su propia interfaz (es un documento aparte,
+     como los diagramas); el fondo del marco es el del tema. */
+  background: var(--nx-bg-soft);
   transition: height 0.15s ease-out;
 }
 @media (max-width: 640px) {
   .nx-pdf-frame { height: 60vh; }
 }
 
-/* ── Tarjetas de repaso (bloque "🔁 Repaso SR" de las notas) ──────────────
-   Cada tarjeta es un <details>: se destapa al hacer clic, funciona sin
-   JavaScript y se lee bien con teclado y con lector de pantalla. */
-.nx-flashcards {
-  margin: 1.2rem 0;
-  border: 1px solid var(--glass-border);
-  border-radius: 0.8rem;
-  background: rgba(170, 102, 255, 0.04);
-  overflow: hidden;
-}
-.nx-flashcards__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
-}
-.nx-flashcards__cta {
-  color: var(--color-nexus-purple);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(170, 102, 255, 0.4);
-  padding-bottom: 1px;
-}
-.nx-flashcards__cta:hover {
-  color: #c79bff;
-  border-bottom-color: currentColor;
-}
-.nx-flashcard {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-.nx-flashcard:last-child {
-  border-bottom: 0;
-}
-.nx-flashcard__q {
-  cursor: pointer;
-  padding: 0.7rem 1rem;
-  font-weight: 600;
-  color: #e5e7eb;
-  list-style: none;
-  transition: background 0.15s ease;
-}
-.nx-flashcard__q::-webkit-details-marker {
-  display: none;
-}
-.nx-flashcard__q::before {
-  content: "▸ ";
-  color: var(--color-nexus-purple);
-}
-.nx-flashcard[open] .nx-flashcard__q::before {
-  content: "▾ ";
-}
-.nx-flashcard__q:hover {
-  background: rgba(255, 255, 255, 0.03);
-}
-.nx-flashcard__q:focus-visible {
-  outline: 2px solid var(--color-nexus-purple);
-  outline-offset: -2px;
-}
-.nx-flashcard__a {
-  padding: 0.1rem 1rem 0.85rem 2rem;
-  color: #cbd5e1;
-  font-size: 0.95em;
-}
-.nx-flashcard__a p {
-  margin: 0.35rem 0;
+/* ── Diagramas ──────────────────────────────────────────────────────────
+   Los diagramas del vault son SVG ya renderizados (Mermaid exportado), no
+   código mermaid: no hay nada que re-dibujar. Vienen con el tema claro
+   horneado (fondo blanco, texto oscuro), así que se tratan como una
+   figura: borde de 1 px, el mismo radio que el resto y sin flotar.
+
+   En el tema oscuro el papel del diagrama se ve claro. Es intencional: el
+   SVG es un documento aparte y su interior no se puede re-tematizar desde
+   el CSS de la página (el vault es zona protegida, no se edita). Invertirlo
+   con un filtro falsearía también los colores de las cajas y las flechas.
+
+   Ojo: al ser un <img>, el SVG es un documento aparte. Desde el CSS de la
+   página no se puede tocar su interior (ni sus animaciones internas). */
+.note-prose img[src$=".svg"] {
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  padding: 0.25rem;
+  background: var(--nx-surface);
 }
 
-/* ── Impresión / "Guardar como PDF" ──────────────────────────────────────
-   Al imprimir (o al elegir "Guardar como PDF" en el diálogo del navegador)
-   sale solo la nota, en blanco y negro, sin menús ni botones. */
+/* ── Impresión / "Guardar como PDF" ────────────────────────────────── */
 @media print {
   .nx-header,
   .nx-footer,
   .nx-explorer-wrap,
   .nx-toc-col,
   #nx-top,
-  #nx-read-eta,
   #nx-scroll-progress,
   #three-bg,
   .nx-aura,
@@ -565,7 +673,6 @@ details.nx-fc p {
     margin: 16mm 14mm;
   }
 }
-
 
 /* ── Alias de ancla ─────────────────────────────────────────────────
    El plugin rehype-anclas deja el id limpio en el encabezado y guarda el

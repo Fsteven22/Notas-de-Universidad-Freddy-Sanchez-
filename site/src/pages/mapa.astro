@@ -8,22 +8,23 @@
  * → 1ro → 2do → 3ro. Así se ve de un vistazo cuánto hay en cada etapa y por
  * dónde se avanza.
  *
- * · Sin CDN: el Three.js es el del propio sitio (`/three.module.js`).
+ · Sin CDN: el Three.js es el del propio sitio (`/three.module.js`) y
+ *   solo se carga si alguien elige la vista 3D.
  * · Sin JavaScript: el mapa 2D de abajo (el mismo contenido, en columnas)
  *   es lo que se ve; el 3D lo sustituye cuando puede.
  * · Accesible: cada nodo es un enlace real, se puede llegar con el teclado
  *   y el lector de pantalla los lee como enlaces.
+ *
+ * El color: los semestres se distinguen por la POSICIÓN (de izquierda a
+ * derecha va el avance), por la ETIQUETA (el título del semestre) y por el
+ * MISMO código de color que el rótulo de la portada: el semestre en curso
+ * va en coral, el completado en verde de mar y el que está en reconstrucción
+ * en ámbar. Tres señales, tres tokens compartidos.
  */
 import Base from "../layouts/Base.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import vault from "../data/vault.json";
-
-const COLORES: Record<string, string> = {
-  "preuniversitario": "#aa66ff",
-  "1er-semestre": "#00aaff",
-  "2do-semestre": "#00ff88",
-  "3er-semestre": "#f59f00",
-};
+import { estadoSem } from "../lib/estados-sem.mjs";
 
 const sems = vault.semestres.filter((s) => s.id !== "raiz");
 
@@ -31,7 +32,7 @@ const datos = {
   semestres: sems.map((s) => ({
     id: s.id,
     titulo: s.title,
-    color: COLORES[s.id] ?? "#7dd3fc",
+    estado: estadoSem(s.id),
     url: `/${s.id}/`,
     materias: s.materias.map((m) => ({
       id: m.id,
@@ -47,6 +48,8 @@ const totalNotas = datos.semestres.reduce(
   (n, s) => n + s.materias.reduce((m, x) => m + x.notas, 0),
   0
 );
+
+const secuencia = datos.semestres.map((s) => s.titulo).join(" · ");
 ---
 
 <Base
@@ -57,15 +60,24 @@ const totalNotas = datos.semestres.reduce(
 
   <section class="mx-auto max-w-6xl px-6 pt-10 pb-20">
     <p class="nx-section-title">Mapa de la carrera</p>
-    <h1 class="mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">
+    <h1 class="mt-2 text-3xl font-bold text-white sm:text-4xl">
       Todo el camino, de un vistazo
     </h1>
-    <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-[#e5e7eb]">
+    <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-[var(--nx-dim)]">
       {datos.semestres.length} etapas · {totalMaterias} materias · {totalNotas} notas. Cada esfera
       es una materia: pásale el cursor para ver de qué es y haz clic para abrirla.
     </p>
 
     <div class="nx-mapa" id="nx-mapa">
+      {/* ── Cómo se quiere ver ── */}
+      <div class="nx-mapa__cabecera">
+        <div class="nx-mapa__vista" role="group" aria-label="Cómo ver el mapa">
+          <button type="button" data-nx-mapa-vista="3d" aria-pressed="false">3D</button>
+          <button type="button" data-nx-mapa-vista="lista" aria-pressed="false">Lista</button>
+        </div>
+        <p class="nx-mapa__secuencia">De izquierda a derecha: {secuencia}</p>
+      </div>
+
       {/* ── Escena 3D (la construye el script) ── */}
       <div class="nx-mapa__stage" id="nx-mapa-stage">
         <canvas id="nx-mapa-canvas" aria-hidden="true"></canvas>
@@ -80,7 +92,7 @@ const totalNotas = datos.semestres.reduce(
       <div class="nx-mapa__2d" id="nx-mapa-2d">
         {
           datos.semestres.map((s) => (
-            <section class="nx-mapa2d__sem" style={`--nx-c:${s.color}`}>
+            <section class="nx-mapa2d__sem">
               <h2 class="nx-mapa2d__tit">
                 <a href={s.url}>{s.titulo}</a>
               </h2>
@@ -97,25 +109,14 @@ const totalNotas = datos.semestres.reduce(
         }
       </div>
     </div>
-
-    <ul class="nx-mapa__leyenda">
-      {
-        datos.semestres.map((s) => (
-          <li style={`--nx-c:${s.color}`}>
-            <span class="nx-mapa__leyenda-dot" aria-hidden="true" />
-            {s.titulo}
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
   <script is:inline type="application/json" id="nx-mapa-data" set:html={JSON.stringify(datos)}></script>
 
   <script is:inline type="module" data-astro-rerun>
-    import * as THREE from "/three.module.js";
-
     (function () {
+      var KEY = "nx-mapa-vista";
+
       // Si ya habia una escena (navegacion con el ClientRouter), se para
       // antes de montar la nueva: si no, quedan dos bucles pintando a la vez.
       if (window.__nxMapaStop) {
@@ -123,429 +124,641 @@ const totalNotas = datos.semestres.reduce(
         window.__nxMapaStop = null;
       }
 
-      function iniciar() {
-      var datos = null;
-      try {
-        var crudo = document.getElementById("nx-mapa-data");
-        datos = crudo ? JSON.parse(crudo.textContent || "{}") : null;
-      } catch (e) {
-        datos = null;
-      }
-      if (!datos || !datos.semestres || !datos.semestres.length) return;
       var root = document.getElementById("nx-mapa");
-      if (!root || root.dataset.nxMapaListo === "1") return;
+      if (!root) return;
 
-      var stage = document.getElementById("nx-mapa-stage");
-      var canvas = document.getElementById("nx-mapa-canvas");
-      var labelsEl = document.getElementById("nx-mapa-labels");
-      var tip = document.getElementById("nx-mapa-tip");
-      if (!root || !stage || !canvas || !labelsEl) return;
+      var botones = Array.prototype.slice.call(
+        root.querySelectorAll("[data-nx-mapa-vista]")
+      );
+      var escena = null;
+      var cargando = false;
 
-      function reducido() {
-        var m = window.__nxMotion;
-        if (m && typeof m.effective === "function") return !m.effective();
-        return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      function leer() {
+        try { return localStorage.getItem(KEY) || ""; } catch (e) { return ""; }
+      }
+      function guardar(v) {
+        try { localStorage.setItem(KEY, v); } catch (e) {}
+      }
+      // En el movil la lista se lee mejor que una escena 3D: se gira y se
+      // pierde la noción de recorrido.
+      function porDefecto() {
+        return window.matchMedia("(max-width: 767px)").matches ? "lista" : "3d";
       }
 
-      // ── Escena ─────────────────────────────────────────────────────────
-      var scene = new THREE.Scene();
-      var camera = new THREE.PerspectiveCamera(45, 1, 0.1, 500);
-      var renderer;
-      try {
-        renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
-      } catch (e) {
-        return; // sin WebGL se queda el mapa 2D
-      }
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-      var grupo = new THREE.Group();
-      scene.add(grupo);
-
-      scene.add(new THREE.AmbientLight(0xffffff, 0.75));
-      var luz = new THREE.PointLight(0xffffff, 1.1, 300);
-      luz.position.set(0, 12, 24);
-      scene.add(luz);
-
-      // Disposición: los semestres van en el eje X (de izquierda a derecha el
-      // avance de la carrera) y las materias orbitan alrededor de su hub.
-      var X_SEM = 16;   // separación entre semestres
-      var R = 6.2;      // radio de la órbita de materias
-      var hubs = [];
-      var nodos = [];   // { mesh, halo, datos, pos }
-      var etiquetas = []; // { el, pos, sem }
-      var lineas = [];
-
-      function materialNodo(color, emisivo) {
-        return new THREE.MeshStandardMaterial({
-          color: color,
-          roughness: 0.32,
-          metalness: 0.12,
-          emissive: color,
-          emissiveIntensity: emisivo || 0.32,
-        });
-      }
-
-      function etiquetaHTML(clase, texto, href, aria) {
-        var el = document.createElement(href ? "a" : "span");
-        el.className = clase;
-        el.textContent = texto;
-        if (href) el.setAttribute("href", href);
-        if (aria) el.setAttribute("aria-label", aria);
-        labelsEl.appendChild(el);
-        return el;
-      }
-
-      datos.semestres.forEach(function (s, si) {
-        var x = (si - (datos.semestres.length - 1) / 2) * X_SEM;
-        var color = new THREE.Color(s.color);
-
-        // Hub del semestre
-        var hubGeo = new THREE.SphereGeometry(1.05, 28, 20);
-        var hubMat = materialNodo(color, 0.45);
-        var hub = new THREE.Mesh(hubGeo, hubMat);
-        hub.position.set(x, 0, 0);
-        grupo.add(hub);
-        hubs.push({ mesh: hub, datos: s, pos: hub.position });
-
-        var haloHub = new THREE.Mesh(
-          new THREE.SphereGeometry(1.9, 20, 14),
-          new THREE.MeshBasicMaterial({
-            color: color,
-            transparent: true,
-            opacity: 0.11,
-            blending: THREE.AdditiveBlending,
-            depthWrite: false,
-          })
-        );
-        haloHub.position.copy(hub.position);
-        grupo.add(haloHub);
-        hubs[hubs.length - 1].halo = haloHub;
-
-        var et = etiquetaHTML(
-          "nx-mapa__label nx-mapa__label--sem",
-          s.titulo.toUpperCase(),
-          s.url,
-          s.titulo + ": abrir el semestre"
-        );
-        et.style.setProperty("--nx-c", s.color);
-        etiquetas.push({ el: et, pos: hub.position, sem: true });
-
-        // Materias orbitando
-        var M = s.materias.length;
-        s.materias.forEach(function (m, mi) {
-          var ang = (mi / M) * Math.PI * 2 - Math.PI / 2 + si * 0.35;
-          var px = x + Math.cos(si * 0.6) * 1.2;
-          var py = Math.sin(ang) * R;
-          var pz = Math.cos(ang) * R;
-
-          var geo = new THREE.SphereGeometry(0.62, 24, 16);
-          var mat = materialNodo(color, 0.38);
-          var mesh = new THREE.Mesh(geo, mat);
-          mesh.position.set(px, py, pz);
-          mesh.userData = { url: m.url, titulo: m.titulo, notas: m.notas, sem: s.titulo };
-          grupo.add(mesh);
-
-          var halo = new THREE.Mesh(
-            new THREE.SphereGeometry(1.25, 16, 12),
-            new THREE.MeshBasicMaterial({
-              color: color,
-              transparent: true,
-              opacity: 0.13,
-              blending: THREE.AdditiveBlending,
-              depthWrite: false,
-            })
+      function marcar(v) {
+        for (var i = 0; i < botones.length; i++) {
+          var b = botones[i];
+          b.setAttribute(
+            "aria-pressed",
+            b.getAttribute("data-nx-mapa-vista") === v ? "true" : "false"
           );
-          halo.position.copy(mesh.position);
-          grupo.add(halo);
+        }
+      }
 
-          nodos.push({ mesh: mesh, halo: halo, datos: m, sem: s, pos: mesh.position });
+      function aplicar(v) {
+        marcar(v);
+        if (v === "3d") {
+          root.classList.add("nx-mapa--3d");
+          if (escena) {
+            escena.arrancar();
+          } else if (!cargando) {
+            cargando = true;
+            // El Three.js solo se descarga si alguien elige la vista 3D.
+            import("/three.module.js")
+              .then(function (THREE) {
+                cargando = false;
+                if (!document.getElementById("nx-mapa")) return;
+                escena = montar(THREE);
+                if (!escena) {
+                  aplicar("lista");
+                  return;
+                }
+                escena.arrancar();
+              })
+              .catch(function () {
+                cargando = false;
+                aplicar("lista");
+              });
+          }
+        } else {
+          root.classList.remove("nx-mapa--3d");
+          if (escena) escena.parar();
+        }
+      }
 
-          var el = etiquetaHTML(
-            "nx-mapa__label",
-            m.titulo,
-            m.url,
-            m.titulo + " (" + s.titulo + "): " + m.notas + " notas"
+      /* ══════════════════════════════════════════════════════════════════
+         La escena 3D.
+         ══════════════════════════════════════════════════════════════════ */
+      function montar(THREE) {
+        var datos = null;
+        try {
+          var crudo = document.getElementById("nx-mapa-data");
+          datos = crudo ? JSON.parse(crudo.textContent || "{}") : null;
+        } catch (e) {
+          datos = null;
+        }
+        if (!datos || !datos.semestres || !datos.semestres.length) return null;
+
+        var stage = document.getElementById("nx-mapa-stage");
+        var canvas = document.getElementById("nx-mapa-canvas");
+        var labelsEl = document.getElementById("nx-mapa-labels");
+        var tip = document.getElementById("nx-mapa-tip");
+        if (!stage || !canvas || !labelsEl) return null;
+
+        // ── Color: leído de los tokens del tema ───────────────────────────
+        // El mapa NO lleva colores metidos a mano: lee el acento, el fondo
+        // y las líneas del tema activo, y se vuelve a pintar cuando el
+        // lector cambia de tema. Así el mapa es azul en el mar y celeste
+        // en el océano, sin dos paletas que mantener.
+        function hexToken(nombre, porDefecto) {
+          var v = getComputedStyle(document.documentElement).getPropertyValue(nombre).trim();
+          if (!v || v.charAt(0) !== "#") return porDefecto;
+          var h = v.slice(1);
+          if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+          var n = parseInt(h, 16);
+          return isNaN(n) ? porDefecto : n;
+        }
+
+        /** Mezcla dos colores (t=0 devuelve a, t=1 devuelve b). */
+        function mezclar(a, b, t) {
+          var ar = (a >> 16) & 255, ag = (a >> 8) & 255, ab = a & 255;
+          var br = (b >> 16) & 255, bg = (b >> 8) & 255, bb = b & 255;
+          return (
+            (Math.round(ar + (br - ar) * t) << 16) |
+            (Math.round(ag + (bg - ag) * t) << 8) |
+            Math.round(ab + (bb - ab) * t)
           );
-          el.style.setProperty("--nx-c", s.color);
-          etiquetas.push({ el: el, pos: mesh.position, sem: false });
+        }
 
-          // Línea hub -> materia
-          var g = new THREE.BufferGeometry().setFromPoints([
-            hub.position.clone(),
-            mesh.position.clone(),
-          ]);
-          var lm = new THREE.LineBasicMaterial({
-            color: color,
-            transparent: true,
-            opacity: 0.4,
+        // Tonos por estado: los MISMOS que el rótulo de la portada.
+        // En curso → coral · Completado → verde de mar · Reconstrucción → ámbar.
+        // Cada estado tiene su token; nada de colores metidos a mano.
+        var PALETA = { acento: 0x5cc8e8, linea: 0x31434f };
+
+        function leerPaleta() {
+          var acento = hexToken("--nx-accent", 0x5cc8e8);
+          var fondo = hexToken("--nx-bg", 0x0b1318);
+          function tono(token, porDefecto) {
+            var hub = hexToken(token, porDefecto);
+            return { hub: hub, nodo: mezclar(hub, fondo, 0.32) };
+          }
+          PALETA = {
+            acento: acento,
+            // El mismo mapeo estado → token que la portada.
+            estados: {
+              "En curso": tono("--nx-coral", 0xff8a6b),
+              "Completado": tono("--nx-done", 0x6fd6a8),
+              "Reconstrucción": tono("--nx-warn", 0xd6b46b),
+            },
+            // Un semestre sin estado conocido se pinta con el acento.
+            porDefecto: { hub: acento, nodo: mezclar(acento, fondo, 0.3) },
+            linea: hexToken("--nx-line-strong", 0x31434f),
+          };
+          return PALETA;
+        }
+        leerPaleta();
+
+        /** Tono de una esfera según el estado de su semestre. */
+        function colorSem(estado, esHub) {
+          var t = (PALETA.estados && PALETA.estados[estado]) || PALETA.porDefecto;
+          return esHub ? t.hub : t.nodo;
+        }
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 500);
+        var renderer;
+        try {
+          renderer = new THREE.WebGLRenderer({
+            canvas: canvas,
+            alpha: true,
+            antialias: true,
+            // Sin esto el buffer se borra al presentar el fotograma y la
+            // escena no se puede leer ni capturar (solo afecta a pruebas).
+            preserveDrawingBuffer: true,
           });
-          grupo.add(new THREE.Line(g, lm));
-          lineas.push(lm);
+        } catch (e) {
+          return null; // sin WebGL se queda el mapa 2D
+        }
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        var grupo = new THREE.Group();
+        scene.add(grupo);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.9));
+        var luz = new THREE.PointLight(0xffffff, 0.85, 300);
+        luz.position.set(0, 12, 24);
+        scene.add(luz);
+
+        // Disposición: los semestres van en el eje X (de izquierda a derecha el
+        // avance de la carrera) y las materias orbitan alrededor de su hub.
+        // El mundo es compacto a propósito: si los semestres se separan
+        // mucho, las esferas quedan diminutas y el mapa no se lee.
+        var X_SEM = 9;  // separación entre semestres
+        var R = 4;      // radio de la órbita de materias
+        var hubs = [];
+        var nodos = [];   // { mesh, datos, pos, color }
+        var lineas = [];  // materiales de las líneas (hub -> materia)
+        var etiquetas = []; // { el, pos, sem, ancho, alto }
+
+        function materialNodo(color) {
+          return new THREE.MeshStandardMaterial({
+            color: color,
+            roughness: 0.85,
+            metalness: 0,
+            emissive: color,
+            emissiveIntensity: 0.12,
+          });
+        }
+
+        function etiquetaHTML(clase, texto, href, aria) {
+          var el = document.createElement(href ? "a" : "span");
+          el.className = clase;
+          el.textContent = texto;
+          if (href) el.setAttribute("href", href);
+          if (aria) el.setAttribute("aria-label", aria);
+          labelsEl.appendChild(el);
+          return el;
+        }
+
+        datos.semestres.forEach(function (s, si) {
+          var x = (si - (datos.semestres.length - 1) / 2) * X_SEM;
+
+          // Hub del semestre
+          var hubGeo = new THREE.SphereGeometry(0.95, 28, 20);
+          var hubMat = materialNodo(colorSem(s.estado, true));
+          var hub = new THREE.Mesh(hubGeo, hubMat);
+          hub.position.set(x, 0, 0);
+          grupo.add(hub);
+          hubs.push({ mesh: hub, datos: s, pos: hub.position });
+
+          var et = etiquetaHTML(
+            "nx-mapa__label nx-mapa__label--sem",
+            s.titulo,
+            s.url,
+            s.titulo + ": abrir el semestre"
+          );
+          etiquetas.push({ el: et, pos: hub.position, sem: true });
+
+          // Materias orbitando
+          var M = s.materias.length;
+          s.materias.forEach(function (m, mi) {
+            var ang = (mi / M) * Math.PI * 2 - Math.PI / 2 + si * 0.35;
+            var px = x + Math.cos(si * 0.6) * 1.1;
+            var py = Math.sin(ang) * R;
+            var pz = Math.cos(ang) * R;
+
+            var geo = new THREE.SphereGeometry(0.55, 24, 16);
+            var base = colorSem(s.estado, false);
+            var mat = materialNodo(base);
+            var mesh = new THREE.Mesh(geo, mat);
+            mesh.position.set(px, py, pz);
+            mesh.userData = {
+              url: m.url,
+              titulo: m.titulo,
+              notas: m.notas,
+              sem: s.titulo,
+            };
+            grupo.add(mesh);
+
+            nodos.push({ mesh: mesh, datos: m, sem: s, pos: mesh.position, base: base });
+
+            var el = etiquetaHTML(
+              "nx-mapa__label",
+              m.titulo,
+              m.url,
+              m.titulo + " (" + s.titulo + "): " + m.notas + " notas"
+            );
+            etiquetas.push({ el: el, pos: mesh.position, sem: false, nodo: mesh });
+
+            // Línea hub -> materia
+            var g = new THREE.BufferGeometry().setFromPoints([
+              hub.position.clone(),
+              mesh.position.clone(),
+            ]);
+            var lm = new THREE.LineBasicMaterial({
+              color: PALETA.linea,
+              transparent: true,
+              opacity: 0.55,
+            });
+            lineas.push(lm);
+            grupo.add(new THREE.Line(g, lm));
+          });
         });
-      });
 
-      // Curvas que encadenan los semestres (el avance de la carrera)
-      for (var i = 0; i < hubs.length - 1; i++) {
-        var a = hubs[i].pos.clone();
-        var b = hubs[i + 1].pos.clone();
-        var medio = a.clone().lerp(b, 0.5);
-        medio.z += 5.5; // se arquea hacia el espectador
-        var curva = new THREE.QuadraticBezierCurve3(a, medio, b);
-        var puntos = curva.getPoints(48);
-        var g2 = new THREE.BufferGeometry().setFromPoints(puntos);
-        var lm2 = new THREE.LineBasicMaterial({
-          color: 0x9aa7ff,
-          transparent: true,
-          opacity: 0.3,
+        // Curvas que encadenan los semestres (el avance de la carrera)
+        for (var i = 0; i < hubs.length - 1; i++) {
+          var a = hubs[i].pos.clone();
+          var b = hubs[i + 1].pos.clone();
+          var medio = a.clone().lerp(b, 0.5);
+          medio.z += 4.5; // se arquea hacia el espectador
+          var curva = new THREE.QuadraticBezierCurve3(a, medio, b);
+          var puntos = curva.getPoints(48);
+          var g2 = new THREE.BufferGeometry().setFromPoints(puntos);
+          var lm2 = new THREE.LineBasicMaterial({
+            color: PALETA.linea,
+            transparent: true,
+            opacity: 0.7,
+          });
+          lineas.push(lm2);
+          grupo.add(new THREE.Line(g2, lm2));
+        }
+
+        // ── Cambio de tema: se repinta todo con los tonos nuevos ──────────
+        // El interruptor de la cabecera cambia data-theme en <html>; al
+        // detectarlo, el mapa vuelve a leer los tokens y recolorea las
+        // esferas y las líneas.
+        function retintar() {
+          leerPaleta();
+          for (var i = 0; i < hubs.length; i++) {
+            var h = hubs[i];
+            var c = colorSem(h.datos.estado, true);
+            h.mesh.material.color.setHex(c);
+            h.mesh.material.emissive.setHex(c);
+          }
+          for (var n = 0; n < nodos.length; n++) {
+            var nd = nodos[n];
+            nd.base = colorSem(nd.sem.estado, false);
+            var destino = nd.mesh === hover ? PALETA.acento : nd.base;
+            nd.color = destino;
+            nd.mesh.material.color.setHex(destino);
+            nd.mesh.material.emissive.setHex(destino);
+          }
+          for (var l = 0; l < lineas.length; l++) {
+            lineas[l].color.setHex(PALETA.linea);
+          }
+        }
+        var observadorTema = new MutationObserver(function () {
+          retintar();
         });
-        grupo.add(new THREE.Line(g2, lm2));
-        lineas.push(lm2);
-      }
+        observadorTema.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ["data-theme"],
+        });
 
-      // ── Cámara y tamaño ───────────────────────────────────────────────
-      var yaw = 0;
-      var pitch = 0.12;
-      var dist = 60;
-      var distMin = 18;
-      var distMax = 110;
-      var W = 1;
-      var H = 1;
+        // ── Cámara y tamaño ───────────────────────────────────────────────
+        var yaw = 0;
+        var pitch = 0.1;
+        var dist = 60;
+        var distMin = 14;
+        var distMax = 110;
+        var W = 1;
+        var H = 1;
 
-      function anchoTotal() {
-        return (datos.semestres.length - 1) * X_SEM + R * 2 + 6;
-      }
+        function anchoTotal() {
+          return (datos.semestres.length - 1) * X_SEM + R * 2 + 5;
+        }
 
-      function ajustarDistancia() {
-        var fovV = (camera.fov * Math.PI) / 180;
-        var alto = R * 2 + 7;
-        var distV = alto / 2 / Math.tan(fovV / 2);
-        var fovH = 2 * Math.atan(Math.tan(fovV / 2) * camera.aspect);
-        var distH = anchoTotal() / 2 / Math.tan(fovH / 2);
-        return Math.max(distV, distH) * 1.14;
-      }
+        function ajustarDistancia() {
+          var fovV = (camera.fov * Math.PI) / 180;
+          var alto = R * 2 + 6;
+          var distV = alto / 2 / Math.tan(fovV / 2);
+          var fovH = 2 * Math.atan(Math.tan(fovV / 2) * camera.aspect);
+          var distH = anchoTotal() / 2 / Math.tan(fovH / 2);
+          // Un margen pequeño: si se aleja más, las esferas quedan
+          // irreconocibles y las etiquetas no caben.
+          return Math.max(distV, distH) * 1.02;
+        }
 
-      function redimensionar() {
-        var r = stage.getBoundingClientRect();
-        W = Math.max(320, r.width);
-        H = Math.max(280, r.height);
-        renderer.setSize(W, H, false);
-        camera.aspect = W / H;
-        camera.updateProjectionMatrix();
-        if (!usuarioAjusto) dist = ajustarDistancia();
-      }
+        function redimensionar() {
+          var r = stage.getBoundingClientRect();
+          W = Math.max(320, r.width);
+          H = Math.max(280, r.height);
+          renderer.setSize(W, H, false);
+          camera.aspect = W / H;
+          camera.updateProjectionMatrix();
+          if (!usuarioAjusto) dist = ajustarDistancia();
+        }
 
-      var usuarioAjusto = false;
-      window.addEventListener("resize", redimensionar);
-      redimensionar();
+        var usuarioAjusto = false;
+        window.addEventListener("resize", redimensionar);
+        redimensionar();
 
-      function colocarCamara() {
-        camera.position.set(
-          Math.sin(yaw) * dist,
-          pitch * dist * 0.55 + 2,
-          Math.cos(yaw) * dist
-        );
-        camera.lookAt(0, 0, 0);
-      }
+        function colocarCamara() {
+          camera.position.set(
+            Math.sin(yaw) * dist,
+            pitch * dist * 0.55 + 2,
+            Math.cos(yaw) * dist
+          );
+          camera.lookAt(0, 0, 0);
+        }
 
-      // ── Interacción ────────────────────────────────────────────────────
-      var raycaster = new THREE.Raycaster();
-      var mouse = new THREE.Vector2(-10, -10);
-      var hover = null;
-      var arrastrando = false;
-      var ultimoX = 0;
-      var ultimoY = 0;
-      var ultimaInteraccion = Date.now();
+        // ── Interacción ────────────────────────────────────────────────────
+        var raycaster = new THREE.Raycaster();
+        var mouse = new THREE.Vector2(-10, -10);
+        var hover = null;
+        var arrastrando = false;
+        var ultimoX = 0;
+        var ultimoY = 0;
 
-      function raycast() {
-        raycaster.setFromCamera(mouse, camera);
-        var hits = raycaster.intersectObjects(
-          nodos.map(function (n) { return n.mesh; }),
-          false
-        );
-        return hits.length ? hits[0].object : null;
-      }
+        function raycast() {
+          raycaster.setFromCamera(mouse, camera);
+          var hits = raycaster.intersectObjects(
+            nodos.map(function (n) { return n.mesh; }),
+            false
+          );
+          return hits.length ? hits[0].object : null;
+        }
 
-      stage.addEventListener("mousemove", function (ev) {
-        var r = stage.getBoundingClientRect();
-        mouse.x = ((ev.clientX - r.left) / r.width) * 2 - 1;
-        mouse.y = -((ev.clientY - r.top) / r.height) * 2 + 1;
-        ultimaInteraccion = Date.now();
-        if (arrastrando) {
-          yaw += (ev.clientX - ultimoX) * 0.006;
-          pitch += (ev.clientY - ultimoY) * 0.003;
-          pitch = Math.max(-0.45, Math.min(0.6, pitch));
+        stage.addEventListener("mousemove", function (ev) {
+          var r = stage.getBoundingClientRect();
+          mouse.x = ((ev.clientX - r.left) / r.width) * 2 - 1;
+          mouse.y = -((ev.clientY - r.top) / r.height) * 2 + 1;
+          if (arrastrando) {
+            yaw += (ev.clientX - ultimoX) * 0.006;
+            pitch += (ev.clientY - ultimoY) * 0.003;
+            pitch = Math.max(-0.45, Math.min(0.6, pitch));
+            ultimoX = ev.clientX;
+            ultimoY = ev.clientY;
+            usuarioAjusto = true;
+          }
+        });
+
+        stage.addEventListener("mousedown", function (ev) {
+          arrastrando = true;
           ultimoX = ev.clientX;
           ultimoY = ev.clientY;
-          usuarioAjusto = true;
-          return;
-        }
-      });
+          stage.classList.add("is-arrastrando");
+        });
 
-      stage.addEventListener("mousedown", function (ev) {
-        arrastrando = true;
-        ultimoX = ev.clientX;
-        ultimoY = ev.clientY;
-        stage.classList.add("is-arrastrando");
-      });
+        window.addEventListener("mouseup", function () {
+          arrastrando = false;
+          stage.classList.remove("is-arrastrando");
+        });
 
-      window.addEventListener("mouseup", function () {
-        arrastrando = false;
-        stage.classList.remove("is-arrastrando");
-      });
+        stage.addEventListener("mouseleave", function () {
+          mouse.set(-10, -10);
+          hover = null;
+          if (tip) tip.hidden = true;
+        });
 
-      stage.addEventListener("mouseleave", function () {
-        mouse.set(-10, -10);
-        hover = null;
-        if (tip) tip.hidden = true;
-      });
+        stage.addEventListener("click", function () {
+          if (!hover) return;
+          var url = hover.userData && hover.userData.url;
+          if (url) window.location.href = url;
+        });
 
-      stage.addEventListener("click", function () {
-        if (!hover) return;
-        var url = hover.userData && hover.userData.url;
-        if (url) window.location.href = url;
-      });
+        stage.addEventListener(
+          "wheel",
+          function (ev) {
+            ev.preventDefault();
+            dist = Math.max(distMin, Math.min(distMax, dist + ev.deltaY * 0.05));
+            usuarioAjusto = true;
+          },
+          { passive: false }
+        );
 
-      stage.addEventListener(
-        "wheel",
-        function (ev) {
-          ev.preventDefault();
-          dist = Math.max(distMin, Math.min(distMax, dist + ev.deltaY * 0.05));
-          usuarioAjusto = true;
-          ultimaInteraccion = Date.now();
-        },
-        { passive: false }
-      );
+        // ── Bucle ──────────────────────────────────────────────────────────
+        var reloj = new THREE.Timer();
+        var proyectado = new THREE.Vector3();
+        var activo = false;
+        var animId = null;
 
-      // ── Bucle ──────────────────────────────────────────────────────────
-      var reloj = new THREE.Timer();
-      var proyectado = new THREE.Vector3();
-      var activo = false;
-      var animId = null;
-
-      function proyectar(pos, el) {
-        proyectado.copy(pos);
-        grupo.localToWorld(proyectado);
-        proyectado.project(camera);
-        var visible = proyectado.z < 1;
-        el.style.opacity = visible ? "1" : "0";
-        el.style.pointerEvents = visible ? "auto" : "none";
-        el.style.transform =
-          "translate(-50%,-50%) translate(" +
-          ((proyectado.x * 0.5 + 0.5) * W).toFixed(1) +
-          "px," +
-          ((-proyectado.y * 0.5 + 0.5) * H).toFixed(1) +
-          "px)";
-      }
-
-      function frame() {
-        animId = requestAnimationFrame(frame);
-        reloj.update();
-        var t = reloj.getElapsed();
-
-        if (!reducido() && !arrastrando && Date.now() - ultimaInteraccion > 3200) {
-          yaw += 0.0022;
+        /* Una etiqueta se dibuja si no pisa a otra ya puesta: primero los
+           semestres (que son los que ordenan el mapa) y después las
+           materias, de la más cercana a la cámara a la más lejana. */
+        function solapan(a, b) {
+          return !(
+            a.derecha <= b.izquierda ||
+            a.izquierda >= b.derecha ||
+            a.abajo <= b.arriba ||
+            a.arriba >= b.abajo
+          );
         }
 
-        colocarCamara();
+        function pintarEtiquetas() {
+          var puestas = [];
+          var orden = [];
 
-        // pulso suave de las esferas (con reduced motion, quieto)
-        var pulso = reducido() ? 0 : Math.sin(t * 1.6) * 0.05;
-        for (var i = 0; i < nodos.length; i++) {
-          var n = nodos[i];
-          var esHover = hover === n.mesh;
-          var escala = (esHover ? 1.45 : 1) + pulso;
-          n.mesh.scale.setScalar(escala);
-          n.halo.scale.setScalar(esHover ? 1.5 : 1 + pulso * 0.8);
-          n.halo.material.opacity = esHover ? 0.3 : 0.13;
-        }
-        for (var j = 0; j < hubs.length; j++) {
-          var h = hubs[j];
-          h.mesh.scale.setScalar(1 + (reducido() ? 0 : Math.sin(t * 1.2 + j) * 0.04));
-          h.halo.material.opacity = 0.11;
-        }
+          for (var k = 0; k < etiquetas.length; k++) {
+            var e = etiquetas[k];
+            proyectado.copy(e.pos);
+            grupo.localToWorld(proyectado);
+            proyectado.project(camera);
+            e.x = (proyectado.x * 0.5 + 0.5) * W;
+            e.y = (-proyectado.y * 0.5 + 0.5) * H;
+            e.z = proyectado.z;
+            e.visible = proyectado.z < 1;
+            if (e.ancho === undefined) {
+              e.ancho = e.el.offsetWidth || 80;
+              e.alto = e.el.offsetHeight || 18;
+            }
+            orden.push(e);
+          }
 
-        // hover por raycast (una vez por frame es barato con 18 nodos)
-        if (!arrastrando) {
-          var hit = raycast();
-          if (hit !== hover) {
-            hover = hit;
-            stage.style.cursor = hit ? "pointer" : "grab";
-            if (tip) {
-              if (hit && hit.userData) {
-                tip.hidden = false;
-                tip.innerHTML =
-                  "<strong>" +
-                  hit.userData.titulo +
-                  "</strong><span>" +
-                  hit.userData.sem +
-                  " · " +
-                  hit.userData.notas +
-                  " notas</span>";
-              } else {
-                tip.hidden = true;
+          // 1) los semestres, siempre
+          for (var i = 0; i < orden.length; i++) {
+            var sem = orden[i];
+            if (!sem.sem || !sem.visible) continue;
+            sem.el.style.opacity = "1";
+            sem.el.style.pointerEvents = "auto";
+            sem.el.style.transform =
+              "translate(-50%,-50%) translate(" +
+              sem.x.toFixed(1) + "px," + sem.y.toFixed(1) + "px)";
+            var rs = {
+              izquierda: sem.x - sem.ancho / 2,
+              derecha: sem.x + sem.ancho / 2,
+              arriba: sem.y - sem.alto / 2,
+              abajo: sem.y + sem.alto / 2,
+            };
+            sem.caja = rs;
+            puestas.push(rs);
+          }
+
+          // 2) las materias: la que señalas primero, luego por cercanía
+          var mats = [];
+          for (var j = 0; j < orden.length; j++) {
+            if (!orden[j].sem) mats.push(orden[j]);
+          }
+          mats.sort(function (a, b) {
+            var pa = a.nodo === hover ? -1 : 0;
+            var pb = b.nodo === hover ? -1 : 0;
+            if (pa !== pb) return pa - pb;
+            return a.z - b.z;
+          });
+
+          var caben = 0;
+          for (var m = 0; m < mats.length; m++) {
+            var t = mats[m];
+            if (!t.visible) continue;
+            var esHover = t.nodo === hover;
+            var caja = {
+              izquierda: t.x - t.ancho / 2,
+              derecha: t.x + t.ancho / 2,
+              arriba: t.y - t.alto / 2,
+              abajo: t.y + t.alto / 2,
+            };
+            var choca = false;
+            if (!esHover) {
+              for (var q = 0; q < puestas.length; q++) {
+                if (solapan(caja, puestas[q])) {
+                  choca = true;
+                  break;
+                }
               }
+              // tampoco se acumulan: como mucho 12 etiquetas de materia
+              if (!choca && caben >= 12) choca = true;
+            }
+            if (choca) {
+              t.el.style.opacity = "0";
+              t.el.style.pointerEvents = "none";
+              continue;
+            }
+            t.el.style.opacity = "1";
+            t.el.style.pointerEvents = "auto";
+            t.el.style.transform =
+              "translate(-50%,-50%) translate(" +
+              t.x.toFixed(1) + "px," + t.y.toFixed(1) + "px)";
+            if (!esHover) {
+              puestas.push(caja);
+              caben++;
             }
           }
-          if (tip && hover && hover.userData) {
-            var r2 = stage.getBoundingClientRect();
-            tip.style.transform =
-              "translate(-50%,0) translate(" +
-              (mouse.x * 0.5 + 0.5) * r2.width +
-              "px," +
-              (-mouse.y * 0.5 + 0.5) * r2.height +
-              "px)";
+        }
+
+        function frame() {
+          animId = requestAnimationFrame(frame);
+          reloj.update();
+
+          colocarCamara();
+
+          // Sin pulsos ni crecimientos: el mapa está quieto salvo que lo
+          // mueva quien lo mira.
+          var hit = null;
+          if (!arrastrando) {
+            hit = raycast();
+            if (hit !== hover) {
+              hover = hit;
+              stage.style.cursor = hit ? "pointer" : "grab";
+              if (tip) {
+                if (hit && hit.userData) {
+                  tip.hidden = false;
+                  tip.innerHTML =
+                    "<strong>" +
+                    hit.userData.titulo +
+                    "</strong><span>" +
+                    hit.userData.sem +
+                    " · " +
+                    hit.userData.notas +
+                    " notas</span>";
+                } else {
+                  tip.hidden = true;
+                }
+              }
+            }
+            if (tip && hover && hover.userData) {
+              var r2 = stage.getBoundingClientRect();
+              tip.style.transform =
+                "translate(-50%,0) translate(" +
+                (mouse.x * 0.5 + 0.5) * r2.width +
+                "px," +
+                (-mouse.y * 0.5 + 0.5) * r2.height +
+                "px)";
+            }
           }
+
+          // lo que señalas se enciende en acento; el resto vuelve a su tono
+          for (var n = 0; n < nodos.length; n++) {
+            var nd = nodos[n];
+            var encendido = nd.mesh === hover;
+            var destino = encendido ? PALETA.acento : nd.base;
+            if (nd.color !== destino) {
+              nd.color = destino;
+              nd.mesh.material.color.setHex(destino);
+              nd.mesh.material.emissive.setHex(destino);
+            }
+          }
+
+          pintarEtiquetas();
+          renderer.render(scene, camera);
         }
 
-        for (var k = 0; k < etiquetas.length; k++) {
-          proyectar(etiquetas[k].pos, etiquetas[k].el);
+        function arrancar() {
+          if (activo) return;
+          activo = true;
+          frame();
         }
 
-        renderer.render(scene, camera);
+        function parar() {
+          activo = false;
+          if (animId) cancelAnimationFrame(animId);
+          animId = null;
+        }
+
+        document.addEventListener("astro:before-swap", function () {
+          parar();
+          observadorTema.disconnect();
+        });
+        document.addEventListener("astro:page-load", arrancar);
+        arrancar();
+
+        // Red de seguridad: si el navegador no puede con WebGL, el mapa 2D
+        // (que ya esta en el HTML) se queda visible.
+        try {
+          renderer.render(scene, camera);
+        } catch (e) {
+          parar();
+          root.classList.remove("nx-mapa--3d");
+          return null;
+        }
+
+        return { arrancar: arrancar, parar: parar };
       }
 
-      function arrancar() {
-        if (activo) return;
-        activo = true;
-        root.classList.add("nx-mapa--3d");
-        frame();
+      // ── Estado inicial y botones ──────────────────────────────────────
+      for (var i = 0; i < botones.length; i++) {
+        botones[i].addEventListener("click", function (ev) {
+          var v = ev.currentTarget.getAttribute("data-nx-mapa-vista");
+          guardar(v);
+          aplicar(v);
+        });
       }
 
-      function parar() {
-        activo = false;
-        if (animId) cancelAnimationFrame(animId);
-        animId = null;
-      }
+      var vista = leer() || porDefecto();
+      aplicar(vista);
 
-      // El ClientRouter puede volver a montar la pagina: el script inline se
-      // re-ejecuta (data-astro-rerun), pero aun asi hay que arrancar y
-      // parar con los eventos del router.
-      document.addEventListener("astro:before-swap", parar);
-      document.addEventListener("astro:page-load", arrancar);
-      arrancar();
-
-      // Red de seguridad: si el navegador no puede con WebGL, el mapa 2D
-      // (que ya esta en el HTML) se queda visible.
-      try {
-        renderer.render(scene, camera);
-      } catch (e) {
-        parar();
-        root.classList.remove("nx-mapa--3d");
-      }
-      root.dataset.nxMapaListo = "1";
       window.__nxMapaStop = function () {
-        parar();
-        root.dataset.nxMapaListo = "";
+        if (escena) escena.parar();
       };
-      }
-
-      // Un solo listener aunque el script se re-ejecute varias veces.
-      if (window.__nxMapaHandler) {
-        document.removeEventListener("astro:page-load", window.__nxMapaHandler);
-      }
-      window.__nxMapaHandler = iniciar;
-      document.addEventListener("astro:page-load", iniciar);
-      iniciar();
     })();
   </script>
 </Base>

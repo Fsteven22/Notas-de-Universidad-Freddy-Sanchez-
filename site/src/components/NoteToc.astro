@@ -9,8 +9,16 @@
  *   · >= 1280 px  → columna lateral (como antes, pero con scroll-spy)
  *   · <  1280 px → drawer que se abre desde el botón "Índice" del header
  *
- * El drawer reutiliza el patrón del modal de búsqueda (backdrop con blur,
- * cerrar con Escape, scroll bloqueado) para que el gesto se sienta el mismo.
+ * Cómo se presenta:
+ *   · solo los h2 de la nota; los h3 aparecen cuando la sección a la que
+ *     pertenecen es la que estás leyendo
+ *   · al final van plegados los grupos que se repiten en casi todas las
+ *     notas (Resumen, Metas, Repaso, Próximos pasos, Referencias), para que
+ *     no ensucien la lista de arriba
+ *   · el emoji del título se quita del índice: ahí solo importa el texto
+ *
+ * El drawer reutiliza el patrón del modal de búsqueda (fondo sólido, cerrar
+ * con Escape, scroll bloqueado) para que el gesto se sienta el mismo.
  *
  * El índice lo construye el navegador leyendo los h2/h3 reales de la nota,
  * así que los anclas son siempre los que puso rehype-slug.
@@ -120,6 +128,17 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
 
 <script>
   type NxTocItem = { id: string; text: string; level: 2 | 3 };
+  type NxTocGroup = { id: string; text: string; hijos: NxTocItem[] };
+
+  /* Los grupos que se repiten en casi todas las notas y que, por eso, van
+     plegados al final del índice. */
+  const GRUPOS: { key: string; label: string; re: RegExp }[] = [
+    { key: "resumen", label: "Resumen", re: /^resumen\b/i },
+    { key: "metas", label: "Metas", re: /^metas\b/i },
+    { key: "repaso", label: "Repaso", re: /^repaso\b/i },
+    { key: "proximos", label: "Próximos pasos", re: /^pr[oó]ximos\b/i },
+    { key: "referencias", label: "Referencias", re: /^referencias\b/i },
+  ];
 
   // escapes con unicode: no depende de entidades HTML en el fuente
   const nxEsc = (s: string) =>
@@ -129,6 +148,46 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
       .replace(/>/g, "\u003e")
       .replace(/"/g, "\u0022");
 
+  /**
+   * En el índice los emojis no aportan nada: son el adorno del título de la
+   * nota, no parte del nombre de la sección. Se quitan todos (no solo el
+   * inicial): "Referencias 🔗" se lee mejor como "Referencias".
+   */
+  const nxSinEmoji = (s: string) =>
+    (s || "").replace(
+      /\p{Regional_Indicator}{2}|\p{Extended_Pictographic}(?:[\uFE0E\uFE0F]|[\u{1F3FB}-\u{1F3FF}]|\u200D\p{Extended_Pictographic})*/gu,
+      ""
+    );
+
+  /**
+   * El texto del encabezado tal como se ve en la nota. Si el encabezado
+   * lleva un enlace dentro ("Unidad 1 … → 📂 Índice"), el enlace no se
+   * copia al índice: ahí solo importa el título de la sección.
+   *
+   * Las fórmulas tampoco: en el índice la línea "Límite fundamental:
+   * limx→0​xsinx​=1" (el KaTeX pegado, sin espacios) no dice más que
+   * "Límite fundamental", y se lee mucho mejor.
+   */
+  function nxTexto(h: HTMLElement): string {
+    const original = (h.textContent || "").trim();
+    const clone = h.cloneNode(true) as HTMLElement;
+    // KaTeX trae dos copias: el MathML (con el código LaTeX) y el dibujo.
+    // En el índice va solo el texto de la sección.
+    clone.querySelectorAll(".katex").forEach((n) => n.remove());
+    const enlaces = clone.querySelectorAll("a");
+    let quitado = false;
+    enlaces.forEach((a) => {
+      quitado = true;
+      a.remove();
+    });
+    let texto = (clone.textContent || "").replace(/\s+/g, " ").trim();
+    if (!quitado) return texto || original;
+    texto = texto.replace(/[\s→»›\-–—|]+$/, "").trim();
+    // los dos puntos que quedaban colgando tras quitar la fórmula
+    texto = texto.replace(/[:\s]+$/, "").trim();
+    return texto || original;
+  }
+
   /** lista plana de h2/h3 con id, saltando el h1 degradado del markdown */
   function nxHeadings(): NxTocItem[] {
     const prose = document.querySelector(".note-prose");
@@ -136,7 +195,7 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
     const out: NxTocItem[] = [];
     for (const h of Array.from(prose.querySelectorAll<HTMLElement>("h2, h3"))) {
       if (h.hasAttribute("data-nx-toc-skip")) continue;
-      const text = (h.textContent || "").trim();
+      const text = nxTexto(h);
       if (!text) continue;
       if (!h.id) {
         h.id = text
@@ -150,13 +209,96 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
     return out;
   }
 
-  function nxTocHtml(items: NxTocItem[]) {
-    return items
-      .map(
-        (it) =>
-          `<a href="#${nxEsc(it.id)}" class="nx-toc-item nx-toc-l${it.level}" data-nx-toc-id="${nxEsc(it.id)}">${nxEsc(it.text)}</a>`
-      )
-      .join("");
+  /** agrupa los h3 bajo su h2 y separa los grupos del final */
+  function nxEstructura(items: NxTocItem[]) {
+    const grupos: NxTocGroup[] = [];
+    for (const it of items) {
+      if (it.level === 2) {
+        grupos.push({ id: it.id, text: it.text, hijos: [] });
+        continue;
+      }
+      if (!grupos.length) continue;
+      grupos[grupos.length - 1].hijos.push(it);
+    }
+
+    const clave = (t: string) => nxSinEmoji(t).trim();
+    const normales: NxTocGroup[] = [];
+    const plegados = new Map<string, { label: string; items: NxTocGroup[] }>();
+    for (const g of grupos) {
+      const k = clave(g.text);
+      const def = GRUPOS.find((x) => x.re.test(k));
+      if (def) {
+        if (!plegados.has(def.key)) plegados.set(def.key, { label: def.label, items: [] });
+        plegados.get(def.key)!.items.push(g);
+      } else {
+        normales.push(g);
+      }
+    }
+    return { normales, plegados };
+  }
+
+  /** el h2 al que pertenece un h3 (para saber qué sección está abierta) */
+  function nxPadreDe(estructura: ReturnType<typeof nxEstructura>, id: string) {
+    for (const g of estructura.normales) {
+      if (g.id === id) return g;
+      if (g.hijos.some((h) => h.id === id)) return g;
+    }
+    for (const grupo of estructura.plegados.values()) {
+      for (const g of grupo.items) {
+        if (g.id === id) return g;
+        if (g.hijos.some((h) => h.id === id)) return g;
+      }
+    }
+    return null;
+  }
+
+  /** pinta una lista (la de escritorio o la del drawer) */
+  function nxPintar(
+    nav: HTMLElement | null,
+    estructura: ReturnType<typeof nxEstructura>,
+    activoId: string
+  ) {
+    if (!nav) return;
+    // los grupos que el lector haya abierto se conservan al repintar
+    const abiertos = new Set<string>();
+    for (const d of Array.from(nav.querySelectorAll<HTMLDetailsElement>("details[data-nx-toc-group][open]"))) {
+      const k = d.dataset.nxTocGroup;
+      if (k) abiertos.add(k);
+    }
+    const abierto = nxPadreDe(estructura, activoId);
+    const partes: string[] = [];
+
+    for (const g of estructura.normales) {
+      partes.push(
+        `<a href="#${nxEsc(g.id)}" class="nx-toc-item nx-toc-l2${g.id === activoId ? " is-active" : ""}" data-nx-toc-id="${nxEsc(g.id)}">${nxEsc(nxSinEmoji(g.text))}</a>`
+      );
+      // los h3 solo salen cuando su sección es la que estás leyendo
+      if (abierto && abierto.id === g.id && g.hijos.length) {
+        for (const h of g.hijos) {
+          partes.push(
+            `<a href="#${nxEsc(h.id)}" class="nx-toc-item nx-toc-l3${h.id === activoId ? " is-active" : ""}" data-nx-toc-id="${nxEsc(h.id)}">${nxEsc(nxSinEmoji(h.text))}</a>`
+          );
+        }
+      }
+    }
+
+    for (const [key, grupo] of estructura.plegados) {
+      const abiertoGrupo = abiertos.has(key) || (abierto ? grupo.items.some((g) => g.id === abierto.id) : false);
+      partes.push(
+        `<details class="nx-toc-group" data-nx-toc-group="${nxEsc(key)}"${abiertoGrupo ? " open" : ""}>` +
+          `<summary>${nxEsc(grupo.label)} <span class="nx-toc-group__n">${grupo.items.length}</span></summary>` +
+          `<div class="nx-toc-list">` +
+          grupo.items
+            .map(
+              (g) =>
+                `<a href="#${nxEsc(g.id)}" class="nx-toc-item nx-toc-l2${g.id === activoId ? " is-active" : ""}" data-nx-toc-id="${nxEsc(g.id)}">${nxEsc(nxSinEmoji(g.text))}</a>`
+            )
+            .join("") +
+          `</div></details>`
+      );
+    }
+
+    nav.innerHTML = partes.join("");
   }
 
   /** mantiene visible el item activo dentro de la lista con scroll propio */
@@ -187,11 +329,7 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
     const mobile = document.getElementById("nx-toc-m");
     const drawer = document.getElementById("nx-toc-drawer");
     const items = nxHeadings();
-
-    // pintar las dos listas
-    const vacio = '<p class="nx-toc-empty">Esta nota no tiene apartados.</p>';
-    if (desktop) desktop.innerHTML = items.length ? nxTocHtml(items) : vacio;
-    if (mobile) mobile.innerHTML = items.length ? nxTocHtml(items) : vacio;
+    const estructura = nxEstructura(items);
 
     // scroll-spy: marca el apartado en el que estas
     let offsets: { id: string; top: number }[] = [];
@@ -209,12 +347,12 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
     const setActive = (id: string) => {
       if (id === activeId) return;
       activeId = id;
+      nxPintar(desktop, estructura, id);
+      nxPintar(mobile, estructura, id);
       for (const nav of [desktop, mobile]) {
         if (!nav) continue;
         for (const a of Array.from(nav.querySelectorAll<HTMLElement>("[data-nx-toc-id]"))) {
-          const on = a.dataset.nxTocId === id;
-          a.classList.toggle("is-active", on);
-          if (on) nxReveal(nav, a);
+          if (a.dataset.nxTocId === id) nxReveal(nav, a);
         }
       }
     };
@@ -236,6 +374,11 @@ const { unitPath = "", matTitle = "", matUrl = "", prev = null, next = null } = 
       spy();
     };
     measure();
+    // pintado inicial: la primera sección ya sale desplegada
+    const primera = items.length ? items[0].id : "";
+    nxPintar(desktop, estructura, primera);
+    nxPintar(mobile, estructura, primera);
+    activeId = primera;
     spy();
     window.addEventListener("resize", remeasure, { passive: true, signal });
     window.addEventListener("load", remeasure, { once: true, signal });

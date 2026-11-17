@@ -1,64 +1,20 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
-/* ─── Tokens Neonotes ─────────────────────────────────────── */
-@theme {
-  --color-nexus-green: #00ff88;
-  --color-nexus-blue: #00aaff;
-  --color-nexus-cyan: #00ddbb;
-  --color-nexus-gold: #f59f00;
-  --color-nexus-red: #ff3860;
-  --color-nexus-pink: #ff44aa;
-  --color-nexus-purple: #aa66ff;
-  --color-nexus-muted: #6b7fa3;
+/* ─── Tokens ─────────────────────────────────────────────────
+   La paleta, la tipografía, el radio y los colores de estado viven en
+   tokens.css (la fuente de verdad). Este archivo solo aporta componentes. */
 
-  --font-mono: "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
-  --font-sans: "Inter", system-ui, sans-serif;
-}
-
-:root {
-  --glass-bg: rgba(255, 255, 255, 0.025);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-bg-hover: rgba(255, 255, 255, 0.05);
-  --brand-grad: linear-gradient(90deg, #aa66ff, #00aaff);
-  --nexus-glow: 0 0 24px rgba(120, 140, 255, 0.28);
-  /* Acento por semestre (lo cambia Base.astro al navegar):
-     barra de progreso, anillo del botón arriba y glow lo usan */
-  --nx-accent: #aa66ff;
-  --nx-accent-rgb: 170, 102, 255;
-}
-
-/* Texto de marca con degradado violeta -> azul */
+/* Texto de marca: un solo color de acento, sin degradado. */
 .nx-brand-text {
-  color: var(--color-nexus-purple);
-}
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  .nx-brand-text,
-  .nx-section-title {
-    background-image: var(--brand-grad);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    /* Imprescindible cuando el titular salta de línea: sin esto el
-       degradado se calcula sobre la caja completa del <span> y solo la
-       primera línea recibe el inicio de la rampa (la segunda empieza
-       otra vez en violeta y la frase se ve partida en dos colores).
-       Con "clone" cada línea pinta su propia copia del degradado. */
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-  }
+  color: var(--nx-accent);
 }
 
-/* Red de seguridad del degradado.
-   `background-clip: text` pinta el fondo sobre el texto del propio elemento.
-   Si algo parte ese texto en letras sueltas (SplitText hace exactamente eso:
-   cada letra pasa a ser un <div> inline-block), el fondo deja de pintarse
-   detrás de las letras y, como el color es transparente, la frase
-   DESAPARECE. Se evita dejando el span intacto al partir (opción `ignore`
-   de SplitText) y, si aun así se partiera, estas letras reciben un color
-   sólido: se pierde la rampa, pero el texto nunca se borra. */
+/* Red de seguridad: si el titular se parte en letras sueltas, cada letra
+   conserva el color sólido del span. */
 .nx-brand-text .nx-char,
 .nx-section-title .nx-char {
-  color: var(--color-nexus-purple);
+  color: inherit;
   background: none;
   -webkit-background-clip: border-box;
   background-clip: border-box;
@@ -66,7 +22,8 @@
 
 /* ─── Base ───────────────────────────────────────────────── */
 html {
-  color-scheme: dark;
+  /* El color-scheme lo pone tokens.css (claro u oscuro según el tema);
+     aquí no se repite para no pisarlo. */
   /* Red de seguridad: nada (decoraciones, cintas, halos) debe poder
      ensanchar el documento. "clip" no crea contenedor de scroll, así que
      no rompe los position: sticky. */
@@ -74,24 +31,17 @@ html {
 }
 
 body {
-  /* Fondo en capas: viñeta (oscurece los bordes), dos focos de color muy
-     difusos arriba y el degradado base. Todo está detrás del contenido, así
-     que el texto nunca se ve afectado. */
-  background:
-    radial-gradient(125% 85% at 50% 34%, transparent 52%, rgba(2, 4, 9, 0.55) 100%),
-    radial-gradient(1100px 680px at 50% -14%, rgba(var(--nx-accent-rgb), 0.10), transparent 62%),
-    radial-gradient(880px 560px at 102% 4%, rgba(0, 170, 255, 0.06), transparent 60%),
-    linear-gradient(180deg, #070a13 0%, #0a0f1d 40%, #070a12 74%, #05070e 100%);
-  background-attachment: fixed;
-  color: #f9fafb;
+  background: var(--nx-bg);
+  color: var(--nx-text);
   font-family: var(--font-sans);
+  font-weight: var(--nx-weight-normal);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: rgba(0, 170, 255, 0.28);
-  color: #fff;
+  background: rgba(var(--nx-accent-rgb), 0.28);
+  color: var(--nx-text);
 }
 
 /* Scrollbar neón */
@@ -100,14 +50,44 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #05070d;
+  background: var(--nx-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 170, 255, 0.22);
-  border-radius: 8px;
+  background: var(--nx-line-strong);
+  border-radius: var(--nx-radius);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 170, 255, 0.42);
+  background: var(--nx-muted);
+}
+
+/* ─── Capas superpuestas (buscador y atajos) ──────────────── */
+/* Fondo del overlay: plano y opaco. Sin blur — es decoración y encarece
+   el pintado; la separación la da el propio fondo oscuro. */
+.nx-overlay {
+  background: rgba(var(--nx-bg-rgb), 0.88);
+}
+
+/* Scroll fino dentro de paneles que abren encima de la página. */
+.nx-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.nx-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nx-scroll::-webkit-scrollbar-thumb {
+  background: var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+}
+
+/* Tecla suelta dentro de un texto ("esc" para cerrar). La tecla es mono;
+   la palabra que la rodea no. */
+.nx-search-key {
+  font-family: var(--font-mono);
+  border: 1px solid var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+  padding: 1px 5px;
+  color: var(--nx-dim);
 }
 
 /* ─── Explorador lateral ─────────────────────────────────── */
@@ -121,10 +101,10 @@ body {
 }
 
 .nx-explorer {
-  font-size: 0.82rem;
-  border: 1px solid var(--glass-border);
-  border-radius: 0.9rem;
-  background: rgba(255, 255, 255, 0.015);
+  font-size: 0.875rem;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: transparent;
   padding: 0.75rem 0.6rem;
 }
 
@@ -134,12 +114,11 @@ body {
 .nx-explorer summary {
   cursor: pointer;
   padding: 0.3rem 0.45rem;
-  border-radius: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #9ca3af;
+  border-radius: var(--nx-radius);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--nx-dim);
   list-style: none;
   display: flex;
   align-items: center;
@@ -147,26 +126,26 @@ body {
 }
 .nx-explorer summary::before {
   content: "▸";
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
   transition: transform 0.15s;
   flex: none;
 }
 .nx-explorer details[open] > summary::before {
   transform: rotate(90deg);
-  color: var(--color-nexus-blue);
+  color: var(--nx-accent);
 }
 .nx-explorer summary::-webkit-details-marker {
   display: none;
 }
 .nx-explorer summary:hover {
-  color: var(--color-nexus-blue);
-  background: rgba(255, 255, 255, 0.04);
+  color: var(--nx-accent);
+  background: rgba(var(--nx-text-rgb), 0.04);
 }
 .nx-explorer .nx-ex-sem {
-  color: #d1d5db;
+  color: var(--nx-dim);
 }
 .nx-explorer .nx-ex-sub {
-  color: #9ca3af;
+  color: var(--nx-muted);
   text-transform: none;
 }
 .nx-explorer .nx-ex-arrow {
@@ -183,26 +162,32 @@ body {
 .nx-explorer a {
   display: block;
   padding: 0.24rem 0.45rem;
-  border-radius: 0.45rem;
-  color: #9ca3af;
+  border-radius: var(--nx-radius);
+  color: var(--nx-muted);
   text-decoration: none;
   line-height: 1.35;
   transition: color 0.15s, background 0.15s;
 }
 .nx-explorer a:hover {
-  color: #e5e7eb;
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--nx-dim);
+  background: rgba(var(--nx-text-rgb), 0.05);
 }
 .nx-explorer .nx-ex-active {
-  color: var(--color-nexus-blue) !important;
-  background: rgba(0, 170, 255, 0.08) !important;
-  border-left: 2px solid var(--color-nexus-blue);
+  color: var(--nx-accent) !important;
+  background: rgba(var(--nx-accent-rgb), 0.08) !important;
+  border-left: 2px solid var(--nx-accent);
+  /* La nota en la que estás se lee de un vistazo: en negrita. */
+  font-weight: 600;
 }
 
 /* layout con explorador */
 .nx-with-explorer {
   display: grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, 1fr): la columna no crece con el contenido más ancho
+     (una tabla, una fórmula, un código largo). Con "1fr" a secas el
+     track se dimensionaba al min-content y la página se salía en el
+     móvil. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
 }
 @media (min-width: 1280px) {
@@ -211,7 +196,7 @@ body {
   }
 }
 .nx-with-explorer.nx-note-layout {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 1280px) {
   .nx-with-explorer.nx-note-layout {
@@ -220,49 +205,38 @@ body {
 }
 
 
-/* Header de sección estilo // comentario */
+/* Título de sección: texto normal, sin mono ni mayúsculas. */
 .nx-section-title {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--color-nexus-purple);
-  opacity: 0.9;
-}
-.nx-section-title::before {
-  content: "// ";
-  opacity: 0.5;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--nx-dim);
 }
 
-/* Card glass con glow violeta al hover */
+/* Card plana: fondo de superficie, borde de 1 px, sin sombra ni glow. */
 .nx-card {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 1rem;
+  background: var(--nx-surface);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
   padding: 1.25rem;
-  /* sin `transform` en la transición: GSAP (reveal/tilt) anima transform por
-     frame y la transición CSS lo arrastraba con retardo */
-  transition:
-    border-color 0.25s,
-    background 0.25s,
-    box-shadow 0.25s;
+  transition: border-color 0.2s, background 0.2s;
 }
 .nx-card:hover {
-  border-color: rgba(120, 140, 255, 0.45);
-  background: var(--glass-bg-hover);
-  box-shadow: var(--nexus-glow);
-  transform: translateY(-3px);
+  border-color: var(--nx-line-strong);
+  background: var(--nx-surface-hover);
 }
 
-/* Barra divisoria de marca */
+/* Separador de 1 px */
 .nx-bar {
-  height: 2px;
-  background: var(--brand-grad);
-  background-size: 200% 100%;
-  border-radius: 2px;
+  height: 1px;
+  background: var(--nx-line);
 }
 
-/* Barra de progreso de scroll (la anima GSAP en Base.astro) */
+/* Barra de progreso de scroll (la escala GSAP en Base.astro).
+   Es la ÚNICA excepción a "sin gradientes": son 2 px de alto, marca el
+   avance de la lectura y lleva el neón. El degradado se mueve despacio
+   (6 s) como una marea; con movimiento reducido o con el interruptor en
+   "Nunca" se queda quieto. */
 #nx-scroll-progress {
   position: fixed;
   top: 0;
@@ -271,10 +245,31 @@ body {
   height: 2px;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, var(--nx-accent), var(--color-nexus-blue), var(--nx-accent));
+  background: linear-gradient(90deg, var(--nx-accent), var(--nx-neon), var(--nx-accent));
   background-size: 200% 100%;
+  animation: nx-tide 6s ease-in-out infinite;
   z-index: 1200;
   pointer-events: none;
+}
+@keyframes nx-tide {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+/* Sin movimiento: la barra sigue marking el avance, pero quieta. */
+@media (prefers-reduced-motion: reduce) {
+  #nx-scroll-progress {
+    animation: none;
+    background: var(--nx-accent);
+  }
+}
+:root:not([data-nx-motion="on"]) #nx-scroll-progress {
+  animation: none;
+  background: var(--nx-accent);
 }
 
 /* ── Botón volver arriba con anillo de progreso ── */
@@ -286,20 +281,18 @@ body {
   height: 46px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: rgba(10, 12, 20, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #e5e7eb;
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
+  border: 1px solid var(--nx-line);
+  color: var(--nx-dim);
   font-size: 1rem;
   cursor: pointer;
   z-index: 1150;
   opacity: 0;
   visibility: hidden;
-  backdrop-filter: blur(6px);
 }
 #nx-top:hover {
-  border-color: rgba(var(--nx-accent-rgb), 0.5);
-  box-shadow: var(--nexus-glow);
+  border-color: var(--nx-accent-line);
   color: var(--nx-accent);
 }
 #nx-top svg {
@@ -319,94 +312,6 @@ body {
   opacity: 0.85;
 }
 #nx-top span { position: relative; z-index: 1; }
-
-/* ── Franja de materias en loop infinito (marquee) ── */
-/* La cinta se comporta como una cinta transportadora: el grupo de
-   materias avanza de derecha a izquierda sin cortes ni huecos.
-   El JS mide cuánto mide un grupo y repite el grupo las veces necesarias
-   para que siempre haya contenido a la vista (--nx-marquee-shift), con
-   una velocidad constante (--nx-marquee-duration). */
-.nx-marquee {
-  position: relative;
-  overflow: hidden;
-  padding: 0.9rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.015);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-/* Brillo que recorre la cinta: da la sensación de banda en movimiento. */
-.nx-marquee::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(0, 255, 136, 0.05) 38%,
-    rgba(170, 102, 255, 0.08) 50%,
-    rgba(0, 170, 255, 0.05) 62%,
-    transparent 100%
-  );
-  background-size: 260% 100%;
-  animation: nx-marquee-sheen 9s linear infinite;
-}
-@keyframes nx-marquee-sheen {
-  from {
-    background-position: 130% 0;
-  }
-  to {
-    background-position: -130% 0;
-  }
-}
-.nx-marquee__track {
-  display: flex;
-  width: max-content;
-  animation: nx-marquee var(--nx-marquee-duration, 55s) linear infinite;
-  will-change: transform;
-}
-.nx-marquee:hover .nx-marquee__track {
-  animation-play-state: paused;
-}
-.nx-marquee__group {
-  display: flex;
-  gap: 2.5rem;
-  padding-right: 2.5rem;
-}
-.nx-marquee__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
-  white-space: nowrap;
-  text-shadow: 0 0 14px rgba(0, 255, 136, 0.16);
-  transition: color 0.25s, text-shadow 0.25s;
-}
-.nx-marquee__item::before {
-  content: "◆";
-  font-size: 0.5rem;
-  color: var(--color-nexus-green);
-  opacity: 0.8;
-}
-/* Al pasar el cursor por la cinta, la materia bajo el puntero se ilumina. */
-.nx-marquee__item:hover {
-  color: var(--color-nexus-green);
-  text-shadow: 0 0 18px rgba(0, 255, 136, 0.55);
-}
-@keyframes nx-marquee {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(calc(-1 * var(--nx-marquee-shift, 50%)), 0, 0);
-  }
-}
 
 /* ── Transiciones de página (View Transitions de Astro) ──
    La dirección (adelante/atrás) la pone Base.astro en <html data-nx-dir>
@@ -449,96 +354,6 @@ html[data-nx-dir="back"]::view-transition-new(root) {
   from { opacity: 0; transform: translateX(-8%); }
 }
 
-/* ── Textura de fondo: retícula de puntos (sin grano ni scanlines) ──
-   Antes eran dos capas: scanlines (líneas de 1 px cada 3 px) y grano de
-   película saltando cada 0,2 s. Sobre pantallas con escalado de Windows
-   (125 %, 150 %) o 4K esas líneas de 1 px no caían sobre un píxel físico
-   exacto y producían muaré: el fondo se veía cortado en líneas y
-   parpadeaba como estática de televisión.
-
-   Ahora hay una retícula de puntos muy tenue y completamente estática (no
-   parpadea, no muarea) que da profundidad sin ensuciar la vista. La
-   viñeta ya va en el degradado del body, así que no hace falta otra
-   capa encima del contenido. */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 900;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
-  background-size: 26px 26px;
-  /* La retícula se desvanece hacia abajo: arriba da "técnico", abajo
-     deja el fondo limpio donde se lee. */
-  -webkit-mask-image: radial-gradient(120% 85% at 50% 0%, #000 0%, transparent 76%);
-  mask-image: radial-gradient(120% 85% at 50% 0%, #000 0%, transparent 76%);
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 899;
-  /* Halo superior del acento: difumina el borde de la retícula y evita
-     que el fondo se vea "plano" contra el contenido. */
-  background: radial-gradient(90% 45% at 50% 0%, rgba(var(--nx-accent-rgb), 0.07), transparent 70%);
-}
-
-/* Glow sutil en acentos */
-.nx-section-title { text-shadow: 0 0 14px rgba(170, 102, 255, 0.35); }
-.nx-badge { box-shadow: 0 0 12px rgba(170, 102, 255, 0.15); }
-
-/* ── Lectura de notas: sin texturas (retícula/halo) ──
-   Las ~820 notas son texto largo: las texturas restan legibilidad.
-   La clase la pone Base.astro según la profundidad de la ruta. */
-html.nx-note-page body::before,
-html.nx-note-page body::after {
-  display: none;
-}
-
-/* ── Tiempo restante de lectura (lo crea y actualiza Base.astro) ── */
-#nx-read-eta {
-  position: fixed;
-  left: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 1150;
-  display: none;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 0.75rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(10, 12, 20, 0.82);
-  backdrop-filter: blur(6px);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
-}
-html.nx-note-page #nx-read-eta {
-  display: inline-flex;
-}
-#nx-read-eta::before {
-  content: "◆";
-  font-size: 7px;
-  color: var(--nx-accent);
-  animation: nx-eta-pulse 2s ease-in-out infinite;
-}
-@keyframes nx-eta-pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
-}
-#nx-read-eta.is-done {
-  color: var(--nx-accent);
-  border-color: rgba(var(--nx-accent-rgb), 0.4);
-}
-/* El guard :not([data-nx-motion="on"]) permite que el usuario fuerce
-   movimiento con ?motion=1 aunque el sistema pida quietud. */
-@media (prefers-reduced-motion: reduce) {
-  :root:not([data-nx-motion="on"]) #nx-read-eta::before { animation: none; }
-}
-
 /* ── Botón "copiar" en bloques de código ── */
 .note-prose pre {
   position: relative;
@@ -548,13 +363,12 @@ html.nx-note-page #nx-read-eta {
   top: 8px;
   right: 8px;
   padding: 3px 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(10, 14, 26, 0.9);
-  color: #9ca3af;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  border-radius: var(--nx-radius);
+  border: 1px solid rgba(var(--nx-text-rgb), 0.14);
+  background: rgba(var(--nx-surface-rgb), 0.9);
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.18s, color 0.18s, border-color 0.18s;
@@ -564,13 +378,13 @@ html.nx-note-page #nx-read-eta {
   opacity: 1;
 }
 .nx-copy:hover {
-  color: var(--color-nexus-blue);
-  border-color: rgba(0, 170, 255, 0.45);
+  color: var(--nx-accent);
+  border-color: rgba(var(--nx-accent-rgb), 0.45);
 }
 .nx-copy.is-ok {
   opacity: 1;
-  color: var(--color-nexus-green);
-  border-color: rgba(0, 255, 136, 0.4);
+  color: var(--nx-accent);
+  border-color: rgba(var(--nx-accent-rgb), 0.4);
 }
 /* sin hover (táctil): el botón siempre visible */
 @media (hover: none) {
@@ -582,13 +396,13 @@ html.nx-note-page #nx-read-eta {
   display: inline-block;
   min-width: 1.5rem;
   padding: 2px 6px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(var(--nx-text-rgb), 0.16);
   border-bottom-width: 2px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.04);
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #cbd5e1;
+  color: var(--nx-dim);
   text-align: center;
 }
 .nx-kbd-seq {
@@ -596,13 +410,11 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.3rem;
 }
-/* "luego" entre las teclas de una secuencia */
+/* "luego" entre las teclas de una secuencia: es una palabra, va en sans. */
 .nx-seq-then {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #64748b;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
 }
 
 /* ── Aviso de secuencia ("g" espera la segunda tecla) ──
@@ -616,14 +428,12 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.55rem;
   padding: 0.5rem 0.85rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(10, 12, 20, 0.94);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: #cbd5e1;
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
+  background: var(--nx-surface);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--nx-dim);
   white-space: nowrap;
   opacity: 0;
   transform: translate(-50%, 8px);
@@ -638,19 +448,19 @@ html.nx-note-page #nx-read-eta {
   display: inline-block;
   min-width: 1.5rem;
   padding: 2px 6px;
-  border: 1px solid var(--nx-accent, var(--color-nexus-blue));
-  border-radius: 5px;
-  background: rgba(0, 170, 255, 0.12);
-  color: var(--nx-accent, var(--color-nexus-blue));
+  border: 1px solid var(--nx-accent);
+  border-radius: var(--nx-radius);
+  background: var(--nx-accent-soft);
+  color: var(--nx-accent);
+  font-family: var(--font-mono);
   font-size: 11px;
   text-align: center;
 }
 .nx-seq-then,
 #nx-seq-hint .nx-seq-then {
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #64748b;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
 }
 .nx-seq-item {
   display: inline-flex;
@@ -658,7 +468,7 @@ html.nx-note-page #nx-read-eta {
   gap: 0.3rem;
 }
 .nx-seq-label {
-  color: #94a3b8;
+  color: var(--nx-muted);
 }
 @media (max-width: 639px) {
   #nx-seq-hint {
@@ -685,17 +495,311 @@ html.nx-note-page #nx-read-eta {
   cursor: pointer;
 }
 .nx-chip.is-active {
-  color: var(--accent, var(--color-nexus-blue));
-  border-color: var(--accent, var(--color-nexus-blue));
-  background: var(--accent-soft, rgba(0, 170, 255, 0.1));
+  color: var(--nx-accent);
+  border-color: var(--nx-accent-line);
+  background: var(--nx-accent-soft);
 }
-.nx-mat-card.is-filtered-out {
+.nx-mat-row.is-filtered-out {
   display: none;
 }
 
+/* ── Hero de la portada: título corto + buscador grande ────────────── */
+.nx-hero-title {
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--nx-text);
+}
+.nx-hero-lead {
+  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+  line-height: 1.45;
+  color: var(--nx-dim);
+  max-width: 34ch;
+}
+/* El subtítulo va en neutro y en cursiva: con el color del acento parecía
+   un enlace (y no lo es). */
+.nx-hero-lead .nx-brand-text {
+  color: inherit;
+  font-style: italic;
+}
+/* El buscador ocupa todo el ancho del hero: es lo primero que se usa. */
+.nx-hero-search {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.16s, background 0.16s, color 0.16s;
+}
+.nx-hero-search:hover {
+  border-color: var(--nx-accent-line);
+  background: var(--nx-surface-hover);
+  color: var(--nx-dim);
+}
+.nx-hero-search:focus-visible {
+  outline: 2px solid var(--nx-neon);
+  outline-offset: 2px;
+}
+.nx-hero-search-icon {
+  flex: none;
+  color: var(--nx-accent);
+}
+.nx-hero-search-text {
+  flex: 1;
+}
+
+/* ── Semestres: dos columnas de texto (sin cards) ───────────────────── */
+/* 4 semestres en 2 × 2: el reparto queda parejo. Con 3 columnas el
+   último semestre quedaba solo en la segunda fila, con un hueco vacío. */
+.nx-sem-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .nx-sem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.nx-sem-col {
+  min-width: 0;
+}
+.nx-sem-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--nx-line);
+}
+.nx-sem-title {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--nx-text);
+  text-decoration: none;
+}
+.nx-sem-title:hover {
+  color: var(--nx-accent);
+}
+.nx-sem-state {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
+  white-space: nowrap;
+  font-weight: 600;
+}
+/* Cada estado con su color, y solo con su color: el rótulo dice en qué punto
+   está el semestre sin necesidad de un color propio por semestre.
+     · En curso       → coral (el punto de calidez del arrecife)
+     · Completado     → verde de mar
+     · Reconstrucción → ámbar (está a medias)
+   Los tres tokens pasan el contraste mínimo contra el fondo y la
+   superficie, y no se usan en ningún otro sitio. */
+.nx-sem-state--en-curso {
+  color: var(--nx-coral);
+}
+.nx-sem-state--completado {
+  color: var(--nx-done);
+}
+.nx-sem-state--reconstruccion {
+  color: var(--nx-warn);
+}
+.nx-sem-list {
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.nx-sem-list li {
+  padding: 0.15rem 0;
+}
+.nx-sem-list a {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--nx-dim);
+  text-decoration: none;
+}
+.nx-sem-list a:hover {
+  color: var(--nx-accent);
+}
+
+/* ── Filas simples (notas recientes, "continuar leyendo") ──────────── */
+.nx-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nx-rows > li + li {
+  border-top: 1px solid var(--nx-line);
+}
+.nx-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  text-decoration: none;
+  color: var(--nx-dim);
+}
+.nx-row-title {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--nx-text);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+/* "Materia › Nota": la materia va en gris y la nota en negro, para que
+   se sepa de un vistazo de dónde es cada apuntes. */
+.nx-row-mat {
+  color: var(--nx-muted);
+}
+.nx-row-sep {
+  /* Es texto (estructura "Materia › Nota"), no un borde: va en muted,
+     que sí llega a 4,5:1. line-strong es para bordes (3:1). */
+  color: var(--nx-muted);
+  padding: 0 0.3rem;
+}
+.nx-row:hover .nx-row-title {
+  color: var(--nx-accent);
+}
+.nx-row-meta {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--nx-muted);
+  white-space: nowrap;
+}
+
+/* ── Tabla de materias (filas separadas por una línea de 1 px) ─────── */
+.nx-table-wrap {
+  overflow-x: auto;
+}
+.nx-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+.nx-table th {
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--nx-muted);
+  padding: 0 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--nx-line-strong);
+  white-space: nowrap;
+}
+/* El encabezado que ordena es un botón: se puede enfocar con el teclado
+   y el estado va en aria-sort (lo que lee el lector de pantalla). */
+.nx-table-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0.15rem 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+.nx-table-sort:hover {
+  color: var(--nx-dim);
+}
+.nx-table-sort:focus-visible {
+  outline: 2px solid var(--nx-neon);
+  outline-offset: 2px;
+  border-radius: var(--nx-radius);
+}
+/* La flecha del encabezado ordenado: la misma marca del índice. */
+.nx-table th[aria-sort="ascending"] .nx-table-sort::after,
+.nx-table th[aria-sort="descending"] .nx-table-sort::after {
+  content: "↑";
+  color: var(--nx-neon);
+  font-size: 0.85em;
+}
+.nx-table th[aria-sort="descending"] .nx-table-sort::after {
+  content: "↓";
+}
+.nx-table th[aria-sort="ascending"] .nx-table-sort,
+.nx-table th[aria-sort="descending"] .nx-table-sort {
+  color: var(--nx-dim);
+}
+.nx-table td {
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--nx-line);
+  color: var(--nx-dim);
+  vertical-align: baseline;
+  overflow-wrap: anywhere;
+}
+/* Columnas de ancho fijo: el nombre no deja un hueco enorme antes
+   del semestre y las cifras quedan alineadas a la derecha. */
+.nx-table th:nth-child(2), .nx-table td:nth-child(2) { width: 26%; }
+.nx-table th:nth-child(3), .nx-table td:nth-child(3) { width: 5rem; }
+.nx-table th:nth-child(4), .nx-table td:nth-child(4) { width: 5rem; }
+.nx-table-title {
+  color: var(--nx-text);
+  text-decoration: none;
+}
+.nx-table-title:hover {
+  color: var(--nx-accent);
+}
+.nx-table-col-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.nx-table-col-sem {
+  color: var(--nx-muted);
+  white-space: nowrap;
+}
+/* Con un semestre filtrado la columna del semestre sobra: se esconde y
+   la tabla respira. */
+.nx-table.is-sem-filtrada .nx-table-col-sem {
+  display: none;
+}
+@media (max-width: 639px) {
+  .nx-table-col-sem {
+    display: none;
+  }
+  /* En móvil solo quedan nombre, notas y PDFs: el nombre toma lo que
+     sobra y las cifras se estrechan para no partir las palabras. */
+  .nx-table th:nth-child(3), .nx-table td:nth-child(3) { width: 3.5rem; }
+  .nx-table th:nth-child(4), .nx-table td:nth-child(4) { width: 3.5rem; }
+}
+
+/* ── Atajos: una línea al pie ──────────────────────────────────────── */
+.nx-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-dim);
+}
+.nx-shortcut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.nx-shortcut .nx-kbd + .nx-kbd {
+  margin-left: -0.15rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  :root:not([data-nx-motion="on"]) .nx-marquee__track { animation: none; }
-  :root:not([data-nx-motion="on"]) .nx-marquee::after { animation: none; }
   :root:not([data-nx-motion="on"]) ::view-transition-old(root),
   :root:not([data-nx-motion="on"]) ::view-transition-new(root) { animation: none; }
 }
@@ -706,31 +810,30 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
+  border-radius: var(--nx-radius);
   font-weight: 600;
   font-size: 0.875rem;
-  /* sin `all`: GSAP anima x/y del hover magnético y la transición lo frenaba */
-  transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
   min-height: 44px;
   cursor: pointer;
 }
 .nx-btn-primary {
-  background: linear-gradient(135deg, rgba(170, 102, 255, 0.18), rgba(0, 170, 255, 0.07));
-  border: 1px solid rgba(170, 102, 255, 0.5);
-  color: #c9b6ff;
+  background: var(--nx-accent);
+  border: 1px solid var(--nx-accent);
+  color: var(--nx-bg);
 }
 .nx-btn-primary:hover {
-  background: linear-gradient(135deg, rgba(170, 102, 255, 0.3), rgba(0, 170, 255, 0.14));
-  box-shadow: var(--nexus-glow);
+  background: var(--nx-dim);
+  border-color: var(--nx-dim);
 }
 .nx-btn-ghost {
-  border: 1px solid var(--glass-border);
-  color: #e5e7eb;
-  background: var(--glass-bg);
+  border: 1px solid var(--nx-line);
+  color: var(--nx-dim);
+  background: transparent;
 }
 .nx-btn-ghost:hover {
-  border-color: rgba(0, 170, 255, 0.45);
-  color: var(--color-nexus-blue);
+  border-color: var(--nx-accent-line);
+  color: var(--nx-accent);
 }
 
 /* Distintivos del hero: las tres cosas que el sitio ya hace, en una línea */
@@ -740,11 +843,9 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.5rem 1.25rem;
   margin-top: 1.5rem;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #64748b;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
 }
 .nx-hero-points li {
   display: inline-flex;
@@ -754,111 +855,45 @@ html.nx-note-page #nx-read-eta {
 /* Separador entre distintivos (excepto el primero) */
 .nx-hero-points li + li::before {
   content: "";
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: var(--color-nexus-green);
-  opacity: 0.6;
+  width: 1px;
+  height: 0.9rem;
+  background: var(--nx-line-strong);
   margin-right: 0.75rem;
 }
 
-/* Badge mono */
-.nx-badge {
+/* Línea de cifras de la portada: una sola línea, un solo color.
+   La cifra va en mono (es un número), la palabra en sans. */
+.nx-stats {
+  margin-top: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
+}
+.nx-stats strong {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(170, 102, 255, 0.35);
-  color: var(--color-nexus-purple);
-  background: rgba(170, 102, 255, 0.08);
+  font-weight: 600;
+  color: var(--nx-text);
 }
 
-/* Aura violeta decorativa del hero */
-.nx-aura {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(110px);
-  pointer-events: none;
-  background: radial-gradient(closest-side, rgba(140, 120, 255, 0.13), transparent);
-  /* En pantallas estrechas el halo no puede salirse del ancho de la
-     ventana: si se sale, la página se ensancha y Chrome "encoge" el
-     contenido para que quepa (el texto se ve más pequeño de lo que
-     debería). El límite en vw lo mantiene dentro siempre. */
-  max-width: 72vw;
-  max-height: 72vw;
+/* Enlace de texto (alternativa a un botón secundario) */
+.nx-link {
+  color: var(--nx-accent);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
 }
-/* deriva muy lenta: da vida al fondo sin distraer */
-.nx-aura--drift {
-  animation: nx-aura-drift 26s ease-in-out infinite alternate;
-}
-.nx-aura--slow {
-  animation-duration: 38s;
-  animation-direction: alternate-reverse;
-}
-@keyframes nx-aura-drift {
-  from {
-    transform: translate3d(-3%, -2%, 0) scale(1);
-  }
-  to {
-    transform: translate3d(4%, 3%, 0) scale(1.08);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  :root:not([data-nx-motion="on"]) .nx-aura--drift {
-    animation: none;
-  }
+.nx-link:hover {
+  border-bottom-color: var(--nx-accent-line);
 }
 
-/* Animación de entrada */
-@keyframes nx-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animación de entrada del hero: se activa al cargar, sin hacer scroll */
-@keyframes nx-hero-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.nx-hero-in {
-  animation: nx-hero-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-.nx-hero-in--delay-1 { animation-delay: 0.15s; }
-.nx-hero-in--delay-2 { animation-delay: 0.3s; }
-.nx-hero-in--delay-3 { animation-delay: 0.45s; }
-.nx-hero-in--delay-4 { animation-delay: 0.6s; }
-.nx-hero-in--delay-5 { animation-delay: 0.75s; }
-@media (prefers-reduced-motion: reduce) {
-  :root:not([data-nx-motion="on"]) .nx-hero-in {
-    animation: none;
-    opacity: 1;
-  }
-}
-.nx-fade-up {
-  animation: nx-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :root:not([data-nx-motion="on"]) .nx-fade-up {
-    animation: none;
-  }
-  :root:not([data-nx-motion="on"]) .nx-card,
-  :root:not([data-nx-motion="on"]) .nx-btn {
-    transition: none;
-  }
+/* Distintivo del hero: texto gris pequeño, sin pill ni borde. */
+.nx-badge {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--nx-muted);
 }
 
 /* ─── Header del sitio ──────────────────────────────────── */
@@ -869,9 +904,8 @@ html.nx-note-page #nx-read-eta {
 .nx-header {
   position: relative;
   z-index: 45;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(5, 7, 13, 0.74);
-  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nx-line);
+  background: var(--nx-bg);
 }
 .nx-header--sticky {
   position: sticky;
@@ -899,12 +933,7 @@ html.nx-note-page #nx-read-eta {
 .nx-header-logo {
   width: 32px;
   height: 32px;
-  border-radius: 0.6rem;
-  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s;
-}
-.nx-header-brand:hover .nx-header-logo {
-  transform: translateY(-1px) scale(1.04);
-  box-shadow: 0 0 18px rgba(120, 140, 255, 0.45);
+  border-radius: var(--nx-radius);
 }
 .nx-header-name {
   font-weight: 700;
@@ -912,10 +941,9 @@ html.nx-note-page #nx-read-eta {
   white-space: nowrap;
 }
 .nx-header-tag {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
   white-space: nowrap;
 }
 .nx-header-crumbs {
@@ -924,13 +952,12 @@ html.nx-note-page #nx-read-eta {
   gap: 0.4rem;
   min-width: 0;
   overflow: hidden;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
 }
 .nx-header-sep {
   flex: none;
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
   opacity: 0.55;
 }
 .nx-header-crumb {
@@ -939,15 +966,15 @@ html.nx-note-page #nx-read-eta {
   text-overflow: ellipsis;
 }
 .nx-header-crumb--link {
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
   text-decoration: none;
   transition: color 0.15s;
 }
 .nx-header-crumb--link:hover {
-  color: var(--color-nexus-green);
+  color: var(--nx-dim);
 }
 .nx-header-crumb--now {
-  color: #e5e7eb;
+  color: var(--nx-dim);
   font-weight: 600;
 }
 .nx-header-actions {
@@ -980,33 +1007,26 @@ html.nx-note-page #nx-read-eta {
   min-width: 44px;
   height: 42px;
   padding: 0 0.6rem 0 0.85rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--glass-border);
-  background: linear-gradient(180deg, rgba(13, 18, 32, 0.92), rgba(8, 11, 20, 0.92));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  color: #94a3b8;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
+  background: var(--nx-surface);
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
   cursor: pointer;
-  transition: border-color 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+  transition: border-color 0.18s, color 0.18s;
 }
 .nx-searchbar:hover {
-  border-color: rgba(0, 170, 255, 0.5);
-  color: #e5e7eb;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 22px rgba(0, 170, 255, 0.16);
-}
-.nx-searchbar:active {
-  transform: translateY(1px);
+  border-color: var(--nx-line-strong);
+  color: var(--nx-dim);
 }
 .nx-searchbar:focus-visible {
-  outline: 2px solid var(--color-nexus-blue);
+  outline: 2px solid var(--nx-neon);
   outline-offset: 2px;
 }
 .nx-searchbar-icon {
   flex: none;
-  color: var(--color-nexus-blue);
-  opacity: 0.9;
+  color: var(--nx-accent);
 }
 .nx-searchbar-text {
   min-width: 0;
@@ -1026,9 +1046,9 @@ html.nx-note-page #nx-read-eta {
   font-family: var(--font-mono);
   font-size: 10px;
   padding: 2px 6px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 5px;
-  color: #94a3b8;
+  border: 1px solid rgba(var(--nx-text-rgb), 0.14);
+  border-radius: var(--nx-radius);
+  color: var(--nx-muted);
 }
 /* En pantallas medianas la barra se acorta pero conserva la palabra;
    en teléfono queda el icono con target táctil de 44 px. */
@@ -1050,6 +1070,14 @@ html.nx-note-page #nx-read-eta {
   }
 }
 @media (max-width: 639px) {
+  /* En teléfono el header es: marca + buscador (icono) + acciones.
+     Con los huecos de escritorio se salía 2 px del ancho de pantalla. */
+  .nx-header-inner {
+    gap: 0.5rem;
+  }
+  .nx-header-actions {
+    gap: 0.25rem;
+  }
   .nx-header-search {
     flex: none;
   }
@@ -1063,6 +1091,9 @@ html.nx-note-page #nx-read-eta {
   .nx-searchbar-text {
     display: none;
   }
+  /* Los botones de icono (favoritos, avance, índice, tema) respetan el
+     objetivo táctil de 44 px, así que en el móvil la cabecera va con menos
+     margen lateral para que quepan todos. */
 }
 
 /* Botón compacto del header (buscar / índice) */
@@ -1072,31 +1103,19 @@ html.nx-note-page #nx-read-eta {
   gap: 0.4rem;
   min-height: 36px;
   padding: 0.35rem 0.7rem;
-  border-radius: 0.55rem;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
-  color: #d1d5db;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
+  background: transparent;
+  color: var(--nx-dim);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
   cursor: pointer;
-  transition: border-color 0.18s, color 0.18s, background 0.18s, transform 0.18s;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
 }
 .nx-hbtn:hover {
-  border-color: rgba(0, 170, 255, 0.45);
-  color: var(--color-nexus-blue);
-  background: rgba(0, 170, 255, 0.06);
-}
-.nx-hbtn:active {
-  transform: translateY(1px);
-}
-.nx-hbtn--home {
-  color: var(--color-nexus-green);
-}
-.nx-hbtn--home:hover {
-  color: #fff;
-  background: rgba(0, 255, 136, 0.1);
-  border-color: var(--color-nexus-green);
+  border-color: var(--nx-accent-line);
+  color: var(--nx-accent);
+  background: var(--nx-accent-soft);
 }
 .nx-hbtn--icon {
   padding: 0.35rem;
@@ -1107,24 +1126,17 @@ html.nx-note-page #nx-read-eta {
    qué hace. Vive en el pie de página (componente SiteFooter). */
 .nx-hbtn--shortcuts {
   gap: 0.45rem;
-  border-color: rgba(170, 102, 255, 0.28);
-  color: #d8c7ff;
-}
-.nx-hbtn--shortcuts:hover {
-  border-color: rgba(170, 102, 255, 0.6);
-  color: #fff;
-  background: rgba(170, 102, 255, 0.1);
 }
 .nx-hbtn-text {
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
 }
 .nx-hbtn-kbd {
   font-family: var(--font-mono);
   font-size: 9px;
   padding: 1px 4px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 4px;
-  color: #94a3b8;
+  border: 1px solid rgba(var(--nx-text-rgb), 0.14);
+  border-radius: var(--nx-radius);
+  color: var(--nx-muted);
 }
 /* target táctil: 44 px en teléfono */
 @media (max-width: 639px) {
@@ -1150,11 +1162,10 @@ html.nx-note-page #nx-read-eta {
   flex-direction: column;
 }
 .nx-toc-path {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 1.55;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--nx-muted);
   margin-bottom: 0.7rem;
 }
 .nx-toc-list {
@@ -1162,7 +1173,9 @@ html.nx-note-page #nx-read-eta {
   max-height: calc(100vh - 19rem);
   overflow-y: auto;
   overscroll-behavior: contain;
-  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  /* Sin línea guía: la sangría de los subapartados se sostiene sola con el
+     espacio. Una guía vertical era una línea más de ruido en el margen. */
+  border-left: 0;
   padding-right: 0.2rem;
 }
 .nx-toc-list--drawer {
@@ -1174,92 +1187,137 @@ html.nx-note-page #nx-read-eta {
 .nx-toc-item {
   display: block;
   margin-left: -1px;
-  padding: 0.3rem 0.6rem;
+  padding: 0.32rem 0.6rem;
   border-left: 2px solid transparent;
-  color: #9ca3af;
+  color: var(--nx-muted);
   text-decoration: none;
-  line-height: 1.35;
-  font-size: 12.5px;
+  line-height: 1.4;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 .nx-toc-item:hover {
-  color: #e5e7eb;
-  background: rgba(255, 255, 255, 0.04);
+  color: var(--nx-dim);
+  background: rgba(var(--nx-text-rgb), 0.04);
 }
 .nx-toc-item.is-active {
-  color: var(--color-nexus-green);
-  border-left-color: var(--color-nexus-green);
-  background: rgba(0, 255, 136, 0.06);
+  color: var(--nx-accent);
+  /* La marca del apartado activo es uno de los tres lugares del neón:
+     el anillo de foco y la barra de progreso. */
+  border-left-color: var(--nx-neon);
+  background: rgba(var(--nx-accent-rgb), 0.08);
 }
 .nx-toc-l3 {
-  padding-left: 1.4rem;
-  font-size: 12px;
-  color: #7f8ea8;
+  padding-left: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--nx-muted);
 }
 .nx-toc-empty {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
   padding: 0.5rem 0.6rem;
+}
+
+/* Grupos del final (Resumen, Metas, Repaso, Próximos pasos, Referencias):
+   van plegados al final del índice. */
+.nx-toc-group {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--nx-line);
+  padding-top: 0.5rem;
+}
+.nx-toc-group > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--nx-muted);
+}
+.nx-toc-group > summary::-webkit-details-marker {
+  display: none;
+}
+.nx-toc-group > summary::before {
+  content: "▸";
+  color: var(--nx-muted);
+  transition: transform 0.15s;
+  flex: none;
+}
+.nx-toc-group[open] > summary::before {
+  transform: rotate(90deg);
+}
+.nx-toc-group > summary:hover {
+  color: var(--nx-dim);
+}
+.nx-toc-group__n {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
+}
+.nx-toc-group .nx-toc-list {
+  border-left: 1px solid var(--nx-line);
+  margin-left: 0.6rem;
+  max-height: none;
+  overflow: visible;
 }
 .nx-toc-foot {
   margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid var(--nx-line);
 }
 .nx-toc-foot-title {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--nx-muted);
 }
 .nx-toc-nav {
   display: block;
   margin-top: 0.45rem;
   padding: 0.45rem 0.6rem;
-  border-radius: 0.5rem;
-  border-left: 2px solid var(--color-nexus-muted);
-  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--nx-radius);
+  border-left: 2px solid var(--nx-line-strong);
+  background: transparent;
   text-decoration: none;
   transition: border-color 0.16s, background 0.16s;
 }
 .nx-toc-nav:hover {
-  border-left-color: var(--color-nexus-green);
-  background: rgba(0, 255, 136, 0.05);
+  border-left-color: var(--nx-accent);
+  background: rgba(var(--nx-accent-rgb), 0.05);
 }
 .nx-toc-nav--next {
-  border-left-color: var(--color-nexus-green);
-  background: rgba(0, 255, 136, 0.04);
+  border-left-color: var(--nx-line-strong);
 }
 .nx-toc-nav-label {
   display: block;
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
 }
 .nx-toc-nav-title {
   display: block;
   margin-top: 0.15rem;
-  font-size: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
   line-height: 1.35;
-  color: #d1d5db;
+  color: var(--nx-dim);
 }
 .nx-toc-mat {
   display: block;
   margin-top: 0.6rem;
   padding: 0.35rem 0.6rem;
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
   text-decoration: none;
   transition: color 0.15s;
 }
 .nx-toc-mat:hover {
-  color: var(--color-nexus-green);
+  color: var(--nx-accent);
 }
 
 /* ─── Drawer del índice (móvil y tablet) ─────────────────── */
@@ -1271,8 +1329,7 @@ html.nx-note-page #nx-read-eta {
 .nx-drawer-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(2, 4, 10, 0.72);
-  backdrop-filter: blur(6px);
+  background: rgba(10, 9, 8, 0.78);
   opacity: 0;
   transition: opacity 0.18s ease;
 }
@@ -1285,9 +1342,8 @@ html.nx-note-page #nx-read-eta {
   width: min(340px, 88vw);
   display: flex;
   flex-direction: column;
-  background: #0a0e1a;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: -24px 0 60px rgba(0, 0, 0, 0.55);
+  background: var(--nx-bg-soft);
+  border-left: 1px solid var(--nx-line);
   transform: translateX(100%);
   transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -1300,88 +1356,102 @@ html.nx-note-page #nx-read-eta {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 1rem 1rem 0.85rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(var(--nx-text-rgb), 0.07);
 }
 .nx-drawer-foot {
   padding: 0.9rem 1rem 1.1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid rgba(var(--nx-text-rgb), 0.07);
 }
 
-/* ─── Materia: unidades ─────────────────────────────────── */
+/* ─── Materia: unidades ─────────────────────────────────────
+   El índice es una lista de texto, no un tablero de tarjetas:
+   cada unidad es un encabezado y sus notas son filas separadas
+   por una línea de 1px. */
 .nx-unit {
   margin-bottom: 2.75rem;
   scroll-margin-top: 4.5rem;
 }
 .nx-unit-head {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.85rem;
-  padding: 0.85rem 1.05rem;
-  border-radius: 0.8rem;
-  border: 1px solid var(--glass-border);
-  border-left: 3px solid var(--accent, var(--color-nexus-blue));
-  background: linear-gradient(90deg, var(--accent-soft, rgba(0, 170, 255, 0.08)), rgba(255, 255, 255, 0.015));
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--nx-line-strong);
 }
 .nx-unit-kicker {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent, var(--color-nexus-blue));
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--nx-muted);
 }
 .nx-unit-title {
-  margin-top: 0.25rem;
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #fff;
+  margin-top: 0.1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--nx-text);
 }
 .nx-unit-meta {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
   white-space: nowrap;
 }
+
+/* Subruta (carpeta dentro de la unidad): rótulo gris con guía. */
+.nx-unit-sub + .nx-unit-sub {
+  margin-top: 1.1rem;
+}
+.nx-unit-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--nx-muted);
+  padding: 0 0 0.3rem 0.75rem;
+  border-left: 1px solid var(--nx-line);
+  margin-bottom: 0.15rem;
+}
+
 .nx-note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nx-note-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nx-note-item + .nx-note-item {
+  border-top: 1px solid var(--nx-line);
 }
 .nx-note-row {
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  padding: 0.6rem 0.8rem;
-  border-radius: 0.6rem;
-  border: 1px solid transparent;
-  border-left: 2px solid var(--accent, var(--color-nexus-blue));
-  background: rgba(255, 255, 255, 0.02);
+  align-items: baseline;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem 0;
   text-decoration: none;
-  transition: background 0.16s, transform 0.16s, border-color 0.16s;
-}
-.nx-note-row:hover {
-  background: rgba(255, 255, 255, 0.055);
-  transform: translateX(3px);
+  transition: color 0.16s;
 }
 .nx-note-title {
   flex: 1;
   min-width: 0;
-  font-size: 13.5px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: #e5e7eb;
-  transition: color 0.16s;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--nx-dim);
 }
 .nx-note-row:hover .nx-note-title {
-  color: #fff;
+  color: var(--nx-accent);
 }
 .nx-note-date {
   font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--color-nexus-muted);
+  font-size: 0.75rem;
+  color: var(--nx-muted);
   white-space: nowrap;
 }
 .nx-chips {
@@ -1394,36 +1464,29 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.4rem;
   padding: 0.3rem 0.65rem;
-  border-radius: 9999px;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #9ca3af;
+  border-radius: var(--nx-radius);
+  border: 1px solid var(--nx-line);
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
   text-decoration: none;
   transition: border-color 0.16s, color 0.16s, background 0.16s;
 }
 .nx-chip:hover {
-  color: var(--accent, var(--color-nexus-blue));
-  border-color: var(--accent, var(--color-nexus-blue));
-  background: var(--accent-soft, rgba(0, 170, 255, 0.08));
+  color: var(--nx-accent);
+  border-color: var(--nx-accent-line);
+  background: var(--nx-accent-soft);
 }
 .nx-chip-count {
-  color: var(--color-nexus-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
 }
 
-/* ─── Revelado al hacer scroll ──────────────────────────── */
-/* Solo se oculta si hay JS: sin JS el contenido se ve siempre. */
+/* ─── Revelado al hacer scroll ────────────────────────────
+   Ya no hay animación de entrada: el contenido se ve siempre. */
 .nx-js [data-nx-reveal] {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--nx-reveal-delay, 0ms);
-}
-.nx-js [data-nx-reveal].is-visible {
   opacity: 1;
   transform: none;
 }
@@ -1447,29 +1510,12 @@ html.nx-note-page #nx-read-eta {
    pide reducir movimiento y la preferencia es "auto". Los bloques
    @media de arriba solo se activan si el sistema lo pide; este los
    cubre siempre, para que "Nunca" sea "nunca". */
-:root[data-nx-motion="off"] #nx-read-eta::before,
-:root[data-nx-motion="off"] .nx-marquee__track,
-:root[data-nx-motion="off"] .nx-marquee::after,
-:root[data-nx-motion="off"] .nx-aura--drift,
-:root[data-nx-motion="off"] .nx-hero-in,
-:root[data-nx-motion="off"] .nx-fade-up {
-  animation: none;
-}
-/* Con "Nunca" tampoco hay textura de fondo: la retícula de puntos y el
-   halo del acento se retiran y queda un fondo limpio y plano. */
-:root[data-nx-motion="off"] body::before,
-:root[data-nx-motion="off"] body::after {
-  display: none;
-}
-:root[data-nx-motion="off"] .nx-hero-in {
-  opacity: 1;
-}
 :root[data-nx-motion="off"] #nx-seq-hint,
 :root[data-nx-motion="off"] .nx-card,
 :root[data-nx-motion="off"] .nx-btn {
   transition: none;
 }
-:root.nx-js[data-nx-motion="off"] [data-nx-reveal] {
+:root[data-nx-motion="off"] [data-nx-reveal] {
   opacity: 1;
   transform: none;
   transition: none;
@@ -1494,19 +1540,17 @@ html.nx-note-page #nx-read-eta {
   align-items: flex-end;
   gap: 1rem 1.25rem;
   padding: 1rem 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: var(--nx-bg-soft);
 }
 .nx-estudio__campo {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
 }
 .nx-estudio__campo--check {
   flex-direction: row;
@@ -1516,30 +1560,24 @@ html.nx-note-page #nx-read-eta {
   cursor: pointer;
 }
 .nx-estudio__campo--check input {
-  accent-color: var(--color-nexus-purple);
+  accent-color: var(--nx-accent);
   width: 15px;
   height: 15px;
 }
 .nx-estudio__select {
-  appearance: none;
-  background: rgba(10, 14, 26, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 0.5rem;
-  color: #e5e7eb;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  padding: 0.45rem 2rem 0.45rem 0.7rem;
+  /* La flecha es la del navegador: sigue sola al color-scheme del tema
+     (claro/oscuro) y así no hay ningún color horneado en el CSS. */
+  background: var(--nx-surface);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  color: var(--nx-dim);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 0.45rem 0.7rem;
   min-width: 11rem;
-  background-image: linear-gradient(45deg, transparent 50%, #64748b 50%),
-    linear-gradient(135deg, #64748b 50%, transparent 50%);
-  background-position: calc(100% - 14px) 52%, calc(100% - 9px) 52%;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
 }
 .nx-estudio__select:focus-visible {
-  outline: 2px solid var(--color-nexus-purple);
+  outline: 2px solid var(--nx-neon);
   outline-offset: 1px;
 }
 .nx-estudio__botones {
@@ -1557,75 +1595,70 @@ html.nx-note-page #nx-read-eta {
 .nx-estudio__progreso-barra {
   flex: 1;
   height: 3px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.08);
   overflow: hidden;
 }
 .nx-estudio__progreso-barra span {
   display: block;
   height: 100%;
   width: 0;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--color-nexus-purple), var(--color-nexus-blue));
+  border-radius: var(--nx-radius);
+  background: var(--nx-accent);
   transition: width 0.25s ease;
 }
 .nx-estudio__avance {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
   white-space: nowrap;
 }
 .nx-estudio__tarjeta {
   position: relative;
   margin-top: 0.8rem;
   padding: 2.2rem 1.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 1rem;
-  background:
-    radial-gradient(120% 140% at 50% -20%, rgba(170, 102, 255, 0.10), transparent 60%),
-    rgba(8, 12, 22, 0.72);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
   cursor: pointer;
   min-height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 .nx-estudio__tarjeta:hover {
-  border-color: rgba(170, 102, 255, 0.35);
+  border-color: var(--nx-line-strong);
 }
 .nx-estudio__tarjeta:focus-visible {
-  outline: 2px solid var(--color-nexus-purple);
+  outline: 2px solid var(--nx-neon);
   outline-offset: 2px;
 }
 .nx-estudio__tarjeta.es-sabida {
-  border-color: rgba(0, 255, 136, 0.30);
+  border-color: var(--nx-accent-line);
 }
 .nx-estudio__tarjeta.es-pendiente {
-  border-color: rgba(245, 159, 0, 0.30);
+  border-color: var(--nx-line-strong);
 }
 .nx-estudio__etiqueta {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
   text-align: center;
 }
 .nx-estudio__pregunta {
   font-size: 1.3rem;
   line-height: 1.45;
   font-weight: 700;
-  color: #fff;
+  color: var(--nx-text);
   text-align: center;
   text-wrap: balance;
 }
 .nx-estudio__respuesta {
   padding-top: 1rem;
-  border-top: 1px dashed rgba(255, 255, 255, 0.14);
-  color: #d7dce6;
+  border-top: 1px dashed var(--nx-line-strong);
+  color: var(--nx-dim);
   font-size: 1rem;
   line-height: 1.6;
   text-align: center;
@@ -1649,13 +1682,12 @@ html.nx-note-page #nx-read-eta {
 .nx-estudio__pie {
   margin-top: 1rem;
   text-align: center;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
 }
 .nx-estudio__pie a {
-  color: var(--color-nexus-blue);
+  color: var(--nx-accent);
   text-decoration: none;
 }
 .nx-estudio__pie a:hover {
@@ -1667,15 +1699,15 @@ html.nx-note-page #nx-read-eta {
 }
 .nx-estudio__ayuda {
   margin-top: 1.6rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
 }
 .nx-estudio__ayuda summary {
   cursor: pointer;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 0.65rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--nx-dim);
 }
 .nx-estudio__ayuda ul {
   margin: 0.8rem 0 0;
@@ -1683,10 +1715,11 @@ html.nx-note-page #nx-read-eta {
   line-height: 1.9;
 }
 .nx-estudio__ayuda kbd {
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 4px;
+  font-family: var(--font-mono);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
   padding: 0 0.3rem;
-  color: #cbd5e1;
+  color: var(--nx-dim);
 }
 @media (max-width: 640px) {
   .nx-estudio__tarjeta {
@@ -1713,24 +1746,17 @@ html.nx-note-page #nx-read-eta {
   align-items: center;
   gap: 0.55rem;
   margin-top: 1.1rem;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid rgba(170, 102, 255, 0.28);
-  border-radius: 9999px;
-  background: rgba(170, 102, 255, 0.06);
-  color: #cbd5e1;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
   text-decoration: none;
-  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
 .nx-hero-study:hover {
-  border-color: rgba(170, 102, 255, 0.6);
-  background: rgba(170, 102, 255, 0.12);
-  color: #fff;
+  color: var(--nx-dim);
 }
 .nx-hero-study__n {
-  color: var(--color-nexus-purple);
+  color: var(--nx-accent);
+  font-family: var(--font-mono);
   font-weight: 700;
 }
 .nx-flash-cta {
@@ -1739,86 +1765,216 @@ html.nx-note-page #nx-read-eta {
   gap: 0.8rem;
   margin-top: 1.4rem;
   padding: 0.7rem 1.1rem;
-  border: 1px solid rgba(170, 102, 255, 0.25);
-  border-radius: 0.8rem;
-  background: rgba(170, 102, 255, 0.05);
-  color: #cbd5e1;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
+  color: var(--nx-dim);
   font-size: 0.85rem;
   line-height: 1.35;
   text-decoration: none;
   transition: border-color 0.18s ease, background 0.18s ease;
 }
 .nx-flash-cta:hover {
-  border-color: rgba(170, 102, 255, 0.55);
-  background: rgba(170, 102, 255, 0.1);
+  border-color: var(--nx-accent-line);
+  background: var(--nx-surface-hover);
 }
 .nx-flash-cta__n {
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-nexus-purple);
+  color: var(--nx-accent);
   line-height: 1;
 }
 .nx-flash-cta__hint {
-  color: var(--color-nexus-muted);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
 }
 
 /* ── Modo lectura (notas) ────────────────────────────────────────────────
    Deja la nota sola: sin header, sin pie, sin explorador, sin índice y sin
    fondo. Se activa con el botón de la nota y se recuerda entre páginas. */
+
+/* Texto solo para lectores de pantalla (el texto visible va en iconos). */
+.nx-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Metadatos de la nota: una línea gris bajo el título. */
+.nx-note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.55rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
+}
+.nx-note-meta__sep {
+  /* Texto, no borde: muted llega a 4,5:1 en los dos temas. */
+  color: var(--nx-muted);
+}
+
+/* Emojis de los encabezados: en gris, pequeños y discretos. */
+.nx-emoji {
+  font-size: 0.85em;
+  filter: grayscale(1);
+  opacity: 0.7;
+  margin-right: 0.15em;
+}
+/* Con el interruptor "Emojis: no" desaparecen los emojis de los títulos
+   y los iconos de los callouts. */
+html[data-nx-emojis="off"] .nx-emoji,
+html[data-nx-emojis="off"] .nx-callout-ico {
+  display: none;
+}
+
 .nx-note-tools {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
+  align-items: center;
   margin-top: 1.1rem;
 }
+/* Las acciones son iconos: el rótulo va en el tooltip (title) y en el
+   texto para lectores de pantalla. */
 .nx-note-tools__btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.03);
-  color: #cbd5e1;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: transparent;
+  color: var(--nx-dim);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
   cursor: pointer;
   transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
-.nx-note-tools__btn:hover {
-  border-color: rgba(170, 102, 255, 0.5);
-  background: rgba(170, 102, 255, 0.08);
-  color: #fff;
-}
+.nx-note-tools__btn:hover,
 .nx-note-tools__btn[aria-pressed="true"] {
-  border-color: rgba(170, 102, 255, 0.65);
-  background: rgba(170, 102, 255, 0.14);
-  color: #fff;
+  border-color: var(--nx-accent-line);
+  background: var(--nx-accent-soft);
+  color: var(--nx-text);
 }
 .nx-note-tools__ico {
-  color: var(--color-nexus-purple);
-  font-size: 0.85rem;
+  color: var(--nx-muted);
+  font-size: 0.95rem;
+  line-height: 1;
 }
+.nx-note-tools__btn:hover .nx-note-tools__ico,
+.nx-note-tools__btn[aria-pressed="true"] .nx-note-tools__ico {
+  color: var(--nx-accent);
+}
+
+/* Navegación entre notas: filas con línea de 1 px, no cards. */
+.nx-note-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--nx-line);
+}
+.nx-note-nav__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  text-decoration: none;
+}
+.nx-note-nav__item--next {
+  text-align: right;
+  margin-left: auto;
+}
+.nx-note-nav__label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
+}
+.nx-note-nav__title {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--nx-dim);
+  line-height: 1.35;
+}
+.nx-note-nav__item:hover .nx-note-nav__title {
+  color: var(--nx-accent);
+}
+
+/* Acción "Marcar leída" al final de la nota. */
+.nx-note-fin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--nx-line);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--nx-muted);
+}
+.nx-note-fin__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: transparent;
+  color: var(--nx-dim);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, color 0.18s;
+}
+.nx-note-fin__btn:hover,
+.nx-note-fin__btn[aria-pressed="true"] {
+  border-color: var(--nx-accent-line);
+  background: var(--nx-accent-soft);
+  color: var(--nx-text);
+}
+.nx-note-fin__btn[aria-pressed="true"] .nx-note-tools__ico {
+  color: var(--nx-accent);
+}
+
+/* Modo lectura: se ocultan las columnas y su CONTENIDO, y el grid queda en
+   una sola pista (si no, el explorador y el índice dejan tracks vacíos que
+   estrechan el texto). El texto usa todo el ancho disponible. */
 html.nx-lectura .nx-header,
 html.nx-lectura .nx-footer,
 html.nx-lectura .nx-explorer-wrap,
 html.nx-lectura .nx-toc-col,
 html.nx-lectura #nx-top,
-html.nx-lectura #nx-read-eta,
 html.nx-lectura #nx-scroll-progress,
 html.nx-lectura #three-bg,
 html.nx-lectura .nx-aura {
   display: none !important;
 }
+@media (min-width: 1280px) {
+  html.nx-lectura .nx-with-explorer.nx-note-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
 html.nx-lectura .nx-note-layout {
-  max-width: 52rem !important;
+  max-width: 56rem !important;
 }
 html.nx-lectura .note-prose {
   font-size: 1.12rem;
@@ -1827,7 +1983,7 @@ html.nx-lectura .note-prose {
 html.nx-lectura .nx-note-tools {
   justify-content: center;
 }
-html.nx-lectura .nx-note-layout a.nx-card {
+html.nx-lectura .nx-note-nav {
   display: none;
 }
 
@@ -1837,18 +1993,61 @@ html.nx-lectura .nx-note-layout a.nx-card {
 .nx-mapa {
   position: relative;
   margin-top: 1.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 1rem;
-  background: radial-gradient(120% 120% at 50% 0%, rgba(170, 102, 255, 0.07), transparent 60%),
-    rgba(6, 9, 18, 0.6);
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
   overflow: hidden;
+}
+/* Barra superior: cómo se quiere ver el mapa y en qué orden va la carrera. */
+.nx-mapa__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--nx-line);
+}
+.nx-mapa__vista {
+  display: inline-flex;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
+  overflow: hidden;
+}
+.nx-mapa__vista button {
+  padding: 0.28rem 0.8rem;
+  border: 0;
+  background: transparent;
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+.nx-mapa__vista button + button {
+  border-left: 1px solid var(--nx-line);
+}
+.nx-mapa__vista button:hover {
+  color: var(--nx-dim);
+}
+.nx-mapa__vista button[aria-pressed="true"] {
+  background: var(--nx-accent-soft);
+  color: var(--nx-accent);
+}
+.nx-mapa__vista button:focus-visible {
+  outline: 2px solid var(--nx-neon);
+  outline-offset: -2px;
+}
+.nx-mapa__secuencia {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--nx-muted);
 }
 .nx-mapa__stage {
   position: relative;
   height: min(62vh, 560px);
   min-height: 340px;
   opacity: 0;
-  transition: opacity 0.5s ease;
   cursor: grab;
   touch-action: none;
 }
@@ -1872,15 +2071,13 @@ html.nx-lectura .nx-note-layout a.nx-card {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.2rem 0.55rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 9999px;
-  background: rgba(8, 12, 22, 0.78);
-  backdrop-filter: blur(4px);
-  color: #dbe2f0;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+  background: var(--nx-bg-soft);
+  color: var(--nx-dim);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
   line-height: 1.5;
   text-decoration: none;
   white-space: nowrap;
@@ -1889,17 +2086,17 @@ html.nx-lectura .nx-note-layout a.nx-card {
 }
 .nx-mapa__label:hover,
 .nx-mapa__label:focus-visible {
-  color: #fff;
-  border-color: var(--nx-c, var(--color-nexus-purple));
-  background: rgba(12, 16, 28, 0.92);
+  color: var(--nx-accent);
+  border-color: var(--nx-accent-line);
+  background: var(--nx-surface);
   outline: none;
 }
+/* La etiqueta del semestre: texto normal, sin mayúsculas ni mono. */
 .nx-mapa__label--sem {
-  border-color: color-mix(in srgb, var(--nx-c, #fff) 45%, transparent);
-  color: var(--nx-c, #fff);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  border-color: var(--nx-line);
+  color: var(--nx-text);
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .nx-mapa__tip {
   position: absolute;
@@ -1908,34 +2105,33 @@ html.nx-lectura .nx-note-layout a.nx-card {
   z-index: 5;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.5rem 0.7rem;
-  border: 1px solid rgba(170, 102, 255, 0.35);
-  border-radius: 0.5rem;
-  background: rgba(8, 12, 22, 0.94);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  color: #e5e7eb;
+  gap: 0.1rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--nx-dim);
   pointer-events: none;
   white-space: nowrap;
 }
 .nx-mapa__tip strong {
-  color: #fff;
-  font-weight: 700;
+  color: var(--nx-text);
+  font-weight: 600;
 }
 .nx-mapa__tip span {
-  color: var(--color-nexus-muted);
-  font-size: 0.62rem;
+  color: var(--nx-muted);
+  font-size: 0.72rem;
 }
 .nx-mapa__hint {
   position: absolute;
   left: 50%;
   bottom: 0.7rem;
   transform: translateX(-50%);
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.08em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--nx-muted);
   pointer-events: none;
   white-space: nowrap;
 }
@@ -1950,25 +2146,23 @@ html.nx-lectura .nx-note-layout a.nx-card {
   display: none;
 }
 .nx-mapa2d__sem {
-  border: 1px solid color-mix(in srgb, var(--nx-c, #fff) 28%, transparent);
-  border-top: 2px solid var(--nx-c, #fff);
-  border-radius: 0.7rem;
+  border: 1px solid var(--nx-line);
+  border-radius: var(--nx-radius);
   padding: 0.8rem 0.9rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
 }
 .nx-mapa2d__tit {
   margin: 0 0 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.64rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 .nx-mapa2d__tit a {
-  color: var(--nx-c, #fff);
+  color: var(--nx-text);
   text-decoration: none;
 }
 .nx-mapa2d__tit a:hover {
+  color: var(--nx-accent);
   text-decoration: underline;
 }
 .nx-mapa2d__lista {
@@ -1984,45 +2178,22 @@ html.nx-lectura .nx-note-layout a.nx-card {
   align-items: baseline;
   justify-content: space-between;
   gap: 0.6rem;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
 }
 .nx-mapa2d__lista a {
-  color: #dbe2f0;
+  color: var(--nx-dim);
   text-decoration: none;
 }
 .nx-mapa2d__lista a:hover {
-  color: #fff;
+  color: var(--nx-accent);
   text-decoration: underline;
 }
+/* El número de notas: mono, porque es un número. */
 .nx-mapa2d__n {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--color-nexus-muted);
+  font-size: 0.72rem;
+  color: var(--nx-muted);
   white-space: nowrap;
-}
-.nx-mapa__leyenda {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.1rem;
-  margin-top: 1rem;
-  list-style: none;
-  padding: 0;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
-  color: var(--color-nexus-muted);
-}
-.nx-mapa__leyenda li {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.nx-mapa__leyenda-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--nx-c, #fff);
-  box-shadow: 0 0 10px var(--nx-c, #fff);
 }
 @media (max-width: 640px) {
   .nx-mapa__stage {
@@ -2030,88 +2201,100 @@ html.nx-lectura .nx-note-layout a.nx-card {
     min-height: 300px;
   }
   .nx-mapa__hint {
-    font-size: 0.54rem;
+    font-size: 0.68rem;
   }
   .nx-mapa__label {
-    font-size: 0.58rem;
+    font-size: 0.66rem;
+  }
+  .nx-mapa__secuencia {
+    font-size: 0.75rem;
   }
 }
 
 /* ── Favoritos, avance y botón de estrella ──────────────────────
    Los datos viven en el localStorage del lector (sin servidor). */
 .nx-hbtn--fav {
-  color: var(--color-nexus-gold);
+  color: var(--nx-accent);
 }
 .nx-hbtn--fav:hover {
-  color: #fff;
-  border-color: var(--color-nexus-gold);
-  background: rgba(245, 159, 0, 0.1);
+  color: var(--nx-text);
+  border-color: var(--nx-accent);
+  background: rgba(var(--nx-accent-rgb), 0.1);
 }
 .nx-hbtn__count {
   min-width: 1.1rem;
   padding: 0 0.25rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  color: #e5e7eb;
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.08);
+  color: var(--nx-dim);
   font-size: 10px;
   text-align: center;
 }
 .nx-hbtn__count.es-vacio {
-  opacity: 0.45;
+  /* Sin nada guardado todavía, el contador no dice nada: estorba en la
+     cabecera del móvil y ocupa un hueco que el resto de botones necesita. */
+  display: none;
 }
 .nx-fav-btn .nx-note-tools__ico {
-  color: var(--color-nexus-gold);
+  color: var(--nx-coral);
 }
 .nx-fav-btn.es-fav {
-  border-color: rgba(245, 159, 0, 0.6);
-  background: rgba(245, 159, 0, 0.12);
-  color: #fff;
+  border-color: rgba(var(--nx-coral-rgb), 0.6);
+  background: rgba(var(--nx-coral-rgb), 0.12);
+  color: var(--nx-text);
 }
 .nx-hecha-btn .nx-note-tools__ico {
-  color: var(--color-nexus-green);
+  color: var(--nx-dim);
 }
 .nx-hecha-btn.es-hecha {
-  border-color: rgba(0, 255, 136, 0.55);
-  background: rgba(0, 255, 136, 0.1);
-  color: #fff;
+  border-color: rgba(var(--nx-accent-rgb), 0.55);
+  background: rgba(var(--nx-accent-rgb), 0.1);
+  color: var(--nx-text);
 }
-/* Estrella dentro de la lista de notas de la materia */
-.nx-note-item {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
+/* Estrella dentro de la lista de notas de la materia.
+   No compite con el texto: solo aparece al pasar el ratón por encima
+   de la fila, al tener el foco o si la nota ya está en favoritos. */
 .nx-note-item .nx-note-row {
   flex: 1;
   min-width: 0;
 }
 .nx-fav-star {
   flex: none;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  border-radius: 0.45rem;
+  border-radius: var(--nx-radius);
   background: transparent;
-  color: rgba(245, 159, 0, 0.45);
+  color: var(--nx-muted);
   font-size: 0.95rem;
   line-height: 1;
   cursor: pointer;
-  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+.nx-note-item:hover .nx-fav-star,
+.nx-fav-star:focus-visible,
+.nx-fav-star.es-fav {
+  opacity: 1;
 }
 .nx-fav-star:hover {
-  color: var(--color-nexus-gold);
-  background: rgba(245, 159, 0, 0.1);
-  border-color: rgba(245, 159, 0, 0.35);
+  color: var(--nx-coral);
 }
 .nx-fav-star.es-fav {
-  color: var(--color-nexus-gold);
+  color: var(--nx-coral);
 }
 .nx-fav-star:focus-visible {
-  outline: 2px solid var(--color-nexus-gold);
+  outline: 2px solid var(--nx-neon);
   outline-offset: 1px;
+}
+/* En pantallas táctiles no hay "hover": la estrella se ve siempre. */
+@media (hover: none) {
+  .nx-fav-star {
+    opacity: 1;
+  }
 }
 /* Listas de favoritos y de avance */
 .nx-fav-lista {
@@ -2126,9 +2309,9 @@ html.nx-lectura .nx-note-layout a.nx-card {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 0.7rem;
-  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(var(--nx-text-rgb), 0.08);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.025);
   padding: 0.6rem 0.75rem 0.6rem 0.9rem;
 }
 .nx-fav-item__link {
@@ -2140,48 +2323,47 @@ html.nx-lectura .nx-note-layout a.nx-card {
   text-decoration: none;
 }
 .nx-fav-item__t {
-  color: #e5e7eb;
+  color: var(--nx-dim);
   font-size: 0.95rem;
   font-weight: 600;
 }
 .nx-fav-item__link:hover .nx-fav-item__t {
-  color: #fff;
+  color: var(--nx-text);
 }
 .nx-fav-item__sub {
-  color: var(--color-nexus-muted);
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.06em;
+  color: var(--nx-muted);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
 }
 .nx-fav-item__quitar {
   flex: none;
   width: 28px;
   height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.45rem;
+  border: 1px solid rgba(var(--nx-text-rgb), 0.1);
+  border-radius: var(--nx-radius);
   background: transparent;
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
   font-size: 1rem;
   line-height: 1;
   cursor: pointer;
 }
 .nx-fav-item__quitar:hover {
-  border-color: rgba(255, 120, 120, 0.5);
-  color: #ff9a9a;
+  border-color: rgba(var(--nx-danger-rgb), 0.5);
+  color: var(--nx-danger);
 }
 .nx-fav-vacio {
   margin-top: 1.6rem;
   padding: 1.4rem 1.2rem;
-  border: 1px dashed rgba(255, 255, 255, 0.14);
-  border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(var(--nx-text-rgb), 0.14);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.02);
 }
 .nx-prog__global {
   margin-top: 1.6rem;
   padding: 1.1rem 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(var(--nx-text-rgb), 0.09);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.025);
 }
 .nx-prog__global-cab {
   display: flex;
@@ -2193,19 +2375,18 @@ html.nx-lectura .nx-note-layout a.nx-card {
   font-family: var(--font-mono);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-nexus-green);
+  color: var(--nx-dim);
   line-height: 1;
 }
 .nx-prog__global-t {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  color: var(--color-nexus-muted);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--nx-muted);
 }
 .nx-prog__barra {
   height: 6px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--nx-radius);
+  background: rgba(var(--nx-text-rgb), 0.08);
   overflow: hidden;
 }
 .nx-prog__barra--sm {
@@ -2215,8 +2396,8 @@ html.nx-lectura .nx-note-layout a.nx-card {
   display: block;
   height: 100%;
   width: 0;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--color-nexus-green), var(--color-nexus-blue));
+  border-radius: var(--nx-radius);
+  background: var(--nx-accent);
   transition: width 0.3s ease;
 }
 .nx-prog__sem {
@@ -2231,17 +2412,15 @@ html.nx-lectura .nx-note-layout a.nx-card {
 }
 .nx-prog__sem-head h2 {
   margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #e5e7eb;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--nx-dim);
 }
 .nx-prog__sem-n {
   font-family: var(--font-mono);
-  font-size: 0.66rem;
-  color: var(--color-nexus-muted);
+  font-size: 0.78rem;
+  color: var(--nx-muted);
 }
 .nx-prog__mats {
   list-style: none;
@@ -2259,7 +2438,7 @@ html.nx-lectura .nx-note-layout a.nx-card {
 }
 .nx-prog__mat-t {
   font-size: 0.85rem;
-  color: #d1d5db;
+  color: var(--nx-dim);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2267,7 +2446,7 @@ html.nx-lectura .nx-note-layout a.nx-card {
 .nx-prog__mat-n {
   font-family: var(--font-mono);
   font-size: 0.64rem;
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
 }
 .nx-prog__mat .nx-prog__barra {
   grid-column: 1 / -1;
@@ -2282,12 +2461,11 @@ html.nx-lectura .nx-note-layout a.nx-card {
   z-index: 40;
   max-width: 22rem;
   padding: 0.7rem 0.85rem;
-  border: 1px solid rgba(245, 159, 0, 0.35);
-  border-radius: 0.7rem;
-  background: rgba(12, 10, 6, 0.96);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--nx-line-strong);
+  border-radius: var(--nx-radius);
+  background: var(--nx-surface);
   font-size: 0.82rem;
-  color: #e5e7eb;
+  color: var(--nx-dim);
 }
 .nx-aviso-ancla[hidden] {
   display: none;
@@ -2297,7 +2475,7 @@ html.nx-lectura .nx-note-layout a.nx-card {
   line-height: 1.45;
 }
 .nx-aviso-ancla__t strong {
-  color: var(--color-nexus-gold);
+  color: var(--nx-accent);
   font-weight: 600;
 }
 .nx-aviso-ancla__acc {
@@ -2307,26 +2485,25 @@ html.nx-lectura .nx-note-layout a.nx-card {
   gap: 0.8rem;
 }
 .nx-aviso-ancla__acc a {
-  color: var(--color-nexus-blue);
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
+  color: var(--nx-accent);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
   text-decoration: none;
 }
 .nx-aviso-ancla__acc a:hover {
   text-decoration: underline;
 }
 .nx-aviso-ancla__acc button {
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 0.4rem;
+  border: 1px solid rgba(var(--nx-text-rgb), 0.14);
+  border-radius: var(--nx-radius);
   background: transparent;
-  color: var(--color-nexus-muted);
+  color: var(--nx-muted);
   font-size: 0.95rem;
   line-height: 1;
   padding: 0.2rem 0.45rem;
   cursor: pointer;
 }
 .nx-aviso-ancla__acc button:hover {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--nx-text);
+  border-color: rgba(var(--nx-text-rgb), 0.3);
 }

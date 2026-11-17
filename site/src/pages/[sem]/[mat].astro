@@ -32,52 +32,96 @@ const pretty = (slug: string) =>
     })
     .join(" ");
 
-const palette = [
-  { c: "var(--color-nexus-green)", soft: "rgba(0,255,136,0.08)" },
-  { c: "var(--color-nexus-blue)", soft: "rgba(0,170,255,0.09)" },
-  { c: "var(--color-nexus-purple)", soft: "rgba(170,102,255,0.09)" },
-  { c: "var(--color-nexus-gold)", soft: "rgba(245,159,0,0.09)" },
-  { c: "var(--color-nexus-pink)", soft: "rgba(255,68,170,0.09)" },
-  { c: "var(--color-nexus-cyan)", soft: "rgba(0,221,187,0.08)" },
-];
-const accentOf = (i: number) => palette[i % palette.length];
-
 function fecha(ms) {
   return new Date(ms).toLocaleDateString("es-EC", { day: "numeric", month: "short" }).toLowerCase();
 }
 
-// agrupar notas por ruta de unidades
-const grupos = new Map();
-for (const n of data.notas) {
-  const key = n.units?.length ? n.units.join("/") : "";
-  if (!grupos.has(key)) grupos.set(key, []);
-  grupos.get(key).push(n);
-}
-const gruposOrden = [...grupos.entries()].sort((a, b) =>
-  a[0].localeCompare(b[0], "es", { numeric: true })
-);
+/* ── Jerarquía de la materia ───────────────────────────────────────────
+   El vault anida las notas así:  Unidad N - Título / Subsección / ...
+   Antes se agrupaba por la ruta COMPLETA, así que una unidad con varias
+   subcarpetas salía partida en varios grupos y los chips repetían la
+   misma unidad (tres "U0" en Diseño de Software). Ahora se agrupa por
+   la UNIDAD (la primera parte de la ruta) y las subrutas quedan dentro,
+   en gris, como subtítulos. */
+const PREFIJOS: Array<{ re: RegExp; kicker: (m: RegExpMatchArray) => string }> = [
+  { re: /^unidad-(\d+)-?/i, kicker: (m) => `Unidad ${m[1]}` },
+  { re: /^modulo-(\d+)-?/i, kicker: (m) => `Módulo ${m[1]}` },
+  { re: /^modulo-(general)-?/i, kicker: (m) => `Módulo ${m[1]}` },
+];
 
-// cada grupo es una "unidad": número de unidad + título legible
-const unidades = gruposOrden.map(([key, notas], gi) => {
-  const partes = key ? key.split("/") : [];
-  const raiz = partes[0] ?? "";
-  const mUnidad = raiz.match(/^unidad-(\d+)/i);
-  const numero = mUnidad ? Number(mUnidad[1]) : null;
-  const titulo = key
-    ? partes.map(pretty).join(" › ")
-    : "Índice de materia";
-  const ultima = Math.max(...notas.map((n) => n.mtime ?? 0));
-  return { key, notas, gi, numero, titulo, ultima, accent: accentOf(gi) };
-});
+/** Separa "unidad-1-fundamentos-de-la-poo" en su etiqueta y su nombre. */
+function descifrarRaiz(raiz: string) {
+  for (const p of PREFIJOS) {
+    const m = raiz.match(p.re);
+    if (m) {
+      return { kicker: p.kicker(m), titulo: pretty(raiz.replace(p.re, "")) };
+    }
+  }
+  return { kicker: "", titulo: pretty(raiz) };
+}
+
+// agrupa por unidad conservando el orden original de las notas
+const porUnidad = new Map<string, { sub: string; notas: any[]; orden: number }[]>();
+for (const n of data.notas) {
+  const units = n.units ?? [];
+  const raiz = units[0] ?? "";
+  const sub = units.slice(1).join("/");
+  if (!porUnidad.has(raiz)) porUnidad.set(raiz, []);
+  const subs = porUnidad.get(raiz)!;
+  let bloque = subs.find((s) => s.sub === sub);
+  if (!bloque) {
+    bloque = { sub, notas: [], orden: units.join("/") };
+    subs.push(bloque);
+  }
+  bloque.notas.push(n);
+}
+
+const unidades = [...porUnidad.entries()]
+  .map(([raiz, subs], gi) => {
+    const { kicker, titulo } = raiz
+      ? descifrarRaiz(raiz)
+      : { kicker: "", titulo: "General" };
+    const mNum = raiz.match(/^unidad-(\d+)/i);
+    const numero = mNum ? Number(mNum[1]) : null;
+    const notas = subs.flatMap((s) => s.notas);
+    // la fecha solo se escribe cuando cambia respecto de la nota anterior
+    let fechaPrevia = "";
+    const filas = notas.map((n) => {
+      const f = fecha(n.mtime);
+      const cambia = f !== fechaPrevia;
+      fechaPrevia = f;
+      return { n, fecha: cambia ? f : "", mtime: n.mtime };
+    });
+    return {
+      gi,
+      raiz,
+      kicker,
+      titulo,
+      numero,
+      filas,
+      subs: subs.map((s) => ({
+        ruta: s.sub ? s.sub.split("/").map(pretty).join(" › ") : "",
+        notas: s.notas,
+      })),
+      total: notas.length,
+      ultima: Math.max(...notas.map((n) => n.mtime ?? 0)),
+    };
+  })
+  .sort((a, b) => a.raiz.localeCompare(b.raiz, "es", { numeric: true }));
 
 // Tarjetas de repaso que ya trae esta materia en sus notas
 const tarjetasMat = flashcardsDeMateria(data.id);
 const nTarjetas = tarjetasMat.length;
+
+/* La nota que se titula igual que la materia es su índice de contenido:
+   repetir el título aquí solo duplicaba el encabezado de la página. */
+const norm = (s: string) =>
+  s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+const tituloMateria = norm(data.title);
+const esIndice = (titulo: string) => norm(titulo) === tituloMateria;
 ---
 
 <Base title={`${data.title} · ${semData.title} · Neonotes`}>
-  <div class="nx-aura" style="width:360px;height:360px;top:-100px;left:20%;opacity:.7"></div>
-
   <SiteHeader
     variant="nivel"
     container="max-w-[1320px]"
@@ -92,13 +136,12 @@ const nTarjetas = tarjetasMat.length;
     <div class="nx-with-explorer">
       <Explorer semId={sem} matId={mat} currentUrl={`/${sem}/${mat}/`} />
       <div>
-        <p class="nx-section-title nx-fade-up">{semData.title}</p>
-        <h1 class="nx-fade-up mt-2 text-3xl font-black tracking-tight text-white sm:text-4xl">{data.title}</h1>
-        <div class="nx-bar mt-5 max-w-xs"></div>
+        <p class="nx-section-title">{semData.title}</p>
+        <h1 class="mt-2 text-3xl font-bold text-white sm:text-4xl">{data.title}</h1>
 
         {
           nTarjetas > 0 && (
-            <a href={`/estudio/?mat=${data.id}`} class="nx-flash-cta nx-fade-up">
+            <a href={`/estudio/?mat=${data.id}`} class="nx-flash-cta">
               <span class="nx-flash-cta__n">{nTarjetas}</span>
               <span>
                 tarjetas de repaso de esta materia
@@ -114,14 +157,10 @@ const nTarjetas = tarjetasMat.length;
             <nav class="nx-chips mt-8" aria-label="Unidades de la materia">
               {unidades.map(
                 (u) =>
-                  u.key && (
-                    <a
-                      href={`#u-${u.gi}`}
-                      class="nx-chip"
-                      style={`--accent:${u.accent.c}; --accent-soft:${u.accent.soft}`}
-                    >
-                      {u.numero !== null ? `U${u.numero}` : pretty(u.titulo.split(" › ")[0])}
-                      <span class="nx-chip-count">{u.notas.length}</span>
+                  u.raiz && (
+                    <a href={`#u-${u.gi}`} class="nx-chip">
+                      {u.numero !== null ? `U${u.numero}` : u.titulo}
+                      <span class="nx-chip-count">{u.total}</span>
                     </a>
                   )
               )}
@@ -132,55 +171,53 @@ const nTarjetas = tarjetasMat.length;
         <div class="mt-8 space-y-10">
           {
             unidades.map((u) => (
-              <section
-                id={`u-${u.gi}`}
-                class="nx-unit"
-                style={`--accent:${u.accent.c}; --accent-soft:${u.accent.soft}`}
-              >
+              <section id={`u-${u.gi}`} class="nx-unit">
                 <header class="nx-unit-head">
                   <div class="min-w-0">
-                    {u.numero !== null && (
-                      <p class="nx-unit-kicker">Unidad {u.numero}</p>
-                    )}
+                    {u.kicker && <p class="nx-unit-kicker">{u.kicker}</p>}
                     <h2 class="nx-unit-title">{u.titulo}</h2>
                   </div>
                   <p class="nx-unit-meta">
-                    {u.notas.length} nota{u.notas.length === 1 ? "" : "s"} · última {fecha(u.ultima)}
+                    {u.total} nota{u.total === 1 ? "" : "s"} · última {fecha(u.ultima)}
                   </p>
                 </header>
 
-                <ul class="nx-note-list">
-                  {u.notas.map((n, i) => (
-                    <li
-                      class="nx-note-item"
-                      data-nx-reveal
-                      style={`--nx-reveal-delay:${Math.min(i * 45, 360)}ms`}
-                    >
-                      <a
-                        href={`/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/") : ""}/${n.slug}/`}
-                        class="nx-note-row"
-                      >
-                        <span class="nx-note-title">{n.title}</span>
-                        <span class="nx-note-date">{fecha(n.mtime)}</span>
-                      </a>
-                      <button
-                        type="button"
-                        class="nx-fav-star"
-                        data-nx-fav
-                        aria-pressed="false"
-                        aria-label={`Guardar "${n.title}" en favoritos`}
-                        data-url={`/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/") : ""}/${n.slug}/`}
-                        data-t={n.title}
-                        data-m={mat}
-                        data-mt={data.title}
-                        data-s={sem}
-                        title="Guardar en favoritos"
-                      >
-                        <span data-nx-fav-ico aria-hidden="true">☆</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
+                {u.subs.map((s) => (
+                  <div class="nx-unit-sub">
+                    {s.ruta && <p class="nx-unit-subtitle">{s.ruta}</p>}
+                    <ul class="nx-note-list">
+                      {s.notas.map((n) => {
+                        const fila = u.filas.find((f) => f.n === n)!;
+                        const href = `/${sem}/${mat}${n.units?.length ? "/" + n.units.join("/") : ""}/${n.slug}/`;
+                        return (
+                          <li class="nx-note-item">
+                            <a href={href} class="nx-note-row">
+                              <span class="nx-note-title">
+                                {esIndice(n.title) ? "Índice de la materia" : n.title}
+                              </span>
+                              {fila.fecha && <span class="nx-note-date">{fila.fecha}</span>}
+                            </a>
+                            <button
+                              type="button"
+                              class="nx-fav-star"
+                              data-nx-fav
+                              aria-pressed="false"
+                              aria-label={`Guardar "${n.title}" en favoritos`}
+                              data-url={href}
+                              data-t={n.title}
+                              data-m={mat}
+                              data-mt={data.title}
+                              data-s={sem}
+                              title="Guardar en favoritos"
+                            >
+                              <span data-nx-fav-ico aria-hidden="true">☆</span>
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                ))}
               </section>
             ))
           }
@@ -189,8 +226,8 @@ const nTarjetas = tarjetasMat.length;
         {
           data.pdfs?.length > 0 && (
             <section class="mt-14">
-              <p class="nx-section-title mb-5">Material descargable</p>
-              <ul class="space-y-2">
+              <p class="nx-section-title mb-4">Material descargable</p>
+              <ul class="nx-rows">
                 {/* vault.json guarda el PDF como string o como { url, size }
                     según la materia: se normaliza el href. */}
                 {data.pdfs.map((p) => (
@@ -198,21 +235,17 @@ const nTarjetas = tarjetasMat.length;
                     <a
                       href={typeof p.url === "string" ? p.url : p.url?.url}
                       target="_blank"
-                      class="flex items-center justify-between rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.025)] px-4 py-3 transition hover:border-[rgba(0,255,136,0.4)] hover:bg-[rgba(255,255,255,0.05)]"
+                      class="nx-row"
                     >
-                      <span class="text-sm text-[#e5e7eb]">{p.title}</span>
-                      <span class="nx-badge">PDF</span>
+                      <span class="nx-row-title">{p.title}</span>
+                      <span class="nx-row-meta">PDF</span>
                     </a>
                   </li>
                 ))}
                 <li>
-                  <a
-                    href={`/downloads/${sem}-${mat}.zip`}
-                    class="flex items-center justify-between rounded-xl border border-[rgba(0,255,136,0.4)] bg-[rgba(0,255,136,0.08)] px-4 py-3 transition hover:bg-[rgba(0,255,136,0.12)]"
-                    download
-                  >
-                    <span class="text-sm text-[#e5e7eb]">Todos los PDFs de esta materia</span>
-                    <span class="nx-badge">ZIP</span>
+                  <a href={`/downloads/${sem}-${mat}.zip`} class="nx-row" download>
+                    <span class="nx-row-title">Todos los PDFs de esta materia</span>
+                    <span class="nx-row-meta">ZIP</span>
                   </a>
                 </li>
               </ul>

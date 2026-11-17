@@ -1,0 +1,287 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   tokens.css — la fuente de verdad del diseño.
+
+   DOS TEMAS, UNA SOLA DEFINICIÓN DE COLOR:
+     · claro  → tema principal (mar y arena)
+     · oscuro → alternativa (océano profundo)
+
+   El sitio arranca en claro y sigue al sistema (prefers-color-scheme)
+   hasta que el lector elige otra cosa; esa elección se guarda en
+   localStorage ("theme") y se aplica antes del primer pintado.
+
+   Reglas del proyecto:
+     · el color sale SIEMPRE de aquí: ningún color suelto en componentes
+     · UN acento (azul mar) para enlaces, botones y estado activo
+     · --neon (celeste) con uso mínimo y FUNCIONAL: el anillo de foco,
+       la barra de progreso y la marca del apartado activo en el índice
+     · --coral (arrecife) con uso mínimo: "En curso", favoritos y
+       elemento actual. Nunca decorativo
+     · un solo radio (4px) en todos los elementos
+     · serif para lo que se lee (títulos y texto largo); sans para la
+       interfaz; mono SOLO para código, atajos y números
+     · sin gradientes (salvo la barra de progreso), sin glows, sin
+       sombras decorativas
+     · matiz entre 190° y 210°: azul mar y celeste, nunca violeta
+
+   Contraste medido contra la superficie real (WCAG), no contra negro:
+     claro → texto 15,0 · atenuado 9,8 · gris 6,2 · acento 5,7
+             neon 4,1 (foco 3:1) · coral 5,1 · aviso 5,0 · peligro 6,4
+             borde de control 3,4
+     oscuro → texto 16,0 · atenuado 12,1 · gris 8,6 · acento 9,7
+             neon 11,9 · coral 8,1 · aviso 9,5 · peligro 8,2
+             borde de control 3,5
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Serif empaquetada en el sitio (sin CDNs) ────────────────────────────────
+   Newsreader, SIL Open Font License. Dos subconjuntos: latin (toda la
+   escritura española) y latin-ext. Es una fuente variable: un solo archivo
+   cubre todos los pesos. */
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/newsreader-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/newsreader-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02FC, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@theme {
+  /* ── Colores ──────────────────────────────────────────────────────────
+        Las utilidades de Tailwind (bg-nx-surface, text-nx-muted…) apuntan
+        a estas variables, que a su vez apuntan al tema activo. Así una
+        sola definición de color sirve para los dos temas. */
+  --color-nx-bg: var(--nx-bg);
+  --color-nx-bg-soft: var(--nx-bg-soft);
+  --color-nx-surface: var(--nx-surface);
+  --color-nx-surface-hover: var(--nx-surface-hover);
+  --color-nx-text: var(--nx-text);
+  --color-nx-dim: var(--nx-dim);
+  --color-nx-muted: var(--nx-muted);
+  --color-nx-line: var(--nx-line);
+  --color-nx-line-strong: var(--nx-line-strong);
+  --color-nx-control: var(--nx-control);
+  --color-nx-accent: var(--nx-accent);
+  --color-nx-neon: var(--nx-neon);
+  --color-nx-coral: var(--nx-coral);
+  --color-nx-info: var(--nx-info);
+  --color-nx-warn: var(--nx-warn);
+  --color-nx-danger: var(--nx-danger);
+
+  /* text-white de Tailwind apunta al texto principal, no al blanco puro */
+  --color-white: var(--nx-text);
+
+  /* ── Tipografía ──
+        serif = lo que se lee · sans = la interfaz · mono = código y atajos */
+  --font-sans: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, Cambria, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas,
+    "Liberation Mono", monospace;
+
+  /* ── Pesos (4, como máximo) ── */
+  --nx-weight-normal: 400;
+  --nx-weight-medium: 500;
+  --nx-weight-semibold: 600;
+  --nx-weight-bold: 700;
+}
+
+:root {
+  /* ══ TEMA CLARO (principal): mar y arena ═══════════════════════════════ */
+  --nx-bg: #f4f8fa;          /* arena con tinte de mar */
+  --nx-bg-soft: #eef4f7;     /* bloques de código */
+  --nx-surface: #e8f0f4;     /* tarjetas y paneles */
+  --nx-surface-hover: #dde9ef;
+
+  --nx-line: #cfdce3;        /* separadores */
+  --nx-line-strong: #b3c7d2;
+  --nx-control: #708a98;     /* borde de controles (3,1:1 contra la superficie) */
+
+  --nx-text: #14232c;        /* nunca negro puro */
+  --nx-dim: #2b4250;         /* texto atenuado */
+  --nx-muted: #4a606c;       /* gris */
+
+  --nx-accent: #0b6a8f;      /* el único acento: azul mar profundo */
+  --nx-accent-soft: rgba(11, 106, 143, 0.1);
+  --nx-accent-line: rgba(11, 106, 143, 0.38);
+  --nx-accent-rgb: 11, 106, 143;
+
+  /* El neón: celeste. Solo el anillo de foco, la barra de progreso y la
+     marca del apartado activo en el índice. Sin glow ni sombra. */
+  --nx-neon: #0583ad;
+  --nx-neon-soft: rgba(5, 131, 173, 0.12);
+  --nx-neon-line: rgba(5, 131, 173, 0.45);
+  --nx-neon-rgb: 5, 131, 173;
+
+  /* El coral: el punto de calidez del arrecife. Solo "En curso", favoritos
+     y el elemento actual. */
+  --nx-coral: #b84227;
+  --nx-coral-soft: rgba(184, 66, 39, 0.12);
+  --nx-coral-line: rgba(184, 66, 39, 0.4);
+  --nx-coral-rgb: 184, 66, 39;
+
+  /* El verde: solo el estado "Completado" (el rótulo del semestre y su
+     esfera en el mapa). Verde de mar, apagado: 6,0:1 contra el fondo. */
+  --nx-done: #1d6b50;
+  --nx-done-soft: rgba(29, 107, 80, 0.12);
+  --nx-done-line: rgba(29, 107, 80, 0.4);
+  --nx-done-rgb: 29, 107, 80;
+
+  --nx-info: #0b6a8f;        /* el callout informativo usa el acento */
+  --nx-warn: #8a6512;        /* amarillo apagado */
+  --nx-danger: #9f3324;      /* rojo apagado */
+
+  --nx-text-rgb: 20, 35, 44;
+  --nx-bg-rgb: 244, 248, 250;
+  --nx-surface-rgb: 232, 240, 244;
+  --nx-danger-rgb: 159, 51, 36;
+
+  /* ── Forma y medida ── */
+  --nx-radius: 4px;
+  --nx-measure: 68ch;
+
+  /* ── Tipografía ── */
+  --font-sans: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, Cambria, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas,
+    "Liberation Mono", monospace;
+
+  /* ── Tokens legacy: planos y sin decoración.
+        Van cayendo a medida que se sustituyen por los semánticos. ── */
+  --brand-grad: none; /* era el degradado violeta -> azul */
+  --nexus-glow: none; /* era el halo difuminado */
+  --glass-bg: transparent;
+  --glass-border: var(--nx-line);
+  --glass-bg-hover: var(--nx-surface-hover);
+}
+
+:root[data-theme="dark"] {
+  /* ══ TEMA OSCURO (alternativo): océano profundo ═════════════════════════ */
+  --nx-bg: #0b1318;          /* azul casi negro, no negro puro */
+  --nx-bg-soft: #0f171d;
+  --nx-surface: #121c23;
+  --nx-surface-hover: #18242c;
+
+  --nx-line: #22323d;
+  --nx-line-strong: #31434f;
+  --nx-control: #5d7482;     /* borde de controles (3,5:1 contra la superficie) */
+
+  --nx-text: #e6eef2;        /* nunca blanco puro */
+  --nx-dim: #c2d2da;
+  --nx-muted: #9fb2bd;
+
+  --nx-accent: #5cc8e8;      /* celeste claro, uso general */
+  --nx-accent-soft: rgba(92, 200, 232, 0.14);
+  --nx-accent-line: rgba(92, 200, 232, 0.42);
+  --nx-accent-rgb: 92, 200, 232;
+
+  --nx-neon: #3ee0ff;        /* el neón de verdad, solo en los tres sitios */
+  --nx-neon-soft: rgba(62, 224, 255, 0.14);
+  --nx-neon-line: rgba(62, 224, 255, 0.45);
+  --nx-neon-rgb: 62, 224, 255;
+
+  --nx-coral: #ff8a6b;
+  --nx-coral-soft: rgba(255, 138, 107, 0.14);
+  --nx-coral-line: rgba(255, 138, 107, 0.42);
+  --nx-coral-rgb: 255, 138, 107;
+
+  --nx-done: #6fd6a8;
+  --nx-done-soft: rgba(111, 214, 168, 0.14);
+  --nx-done-line: rgba(111, 214, 168, 0.42);
+  --nx-done-rgb: 111, 214, 168;
+
+  --nx-info: #5cc8e8;
+  --nx-warn: #d6b46b;
+  --nx-danger: #e09a8c;
+
+  --nx-text-rgb: 230, 238, 242;
+  --nx-bg-rgb: 11, 19, 24;
+  --nx-surface-rgb: 18, 28, 35;
+  --nx-danger-rgb: 224, 154, 140;
+}
+
+@layer base {
+  html {
+    background: var(--nx-bg);
+    color-scheme: light;
+  }
+  /* El navegador ajusta los controles nativos (scrollbars, campos) al tema */
+  html[data-theme="dark"] {
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--nx-bg);
+    color: var(--nx-text);
+    font-family: var(--font-sans);
+    font-weight: var(--nx-weight-normal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Enlaces: un solo acento, subrayado discreto */
+  a {
+    color: var(--nx-accent);
+    text-decoration-color: rgba(var(--nx-accent-rgb), 0.4);
+  }
+  a:hover {
+    text-decoration-color: var(--nx-accent);
+  }
+
+  /* Foco: visible, del mismo neón que la barra de progreso y la marca
+     activa del índice. Es uno de los tres lugares donde el neón está
+     permitido: sin glow, sin sombra. */
+  :focus-visible {
+    outline: 2px solid var(--nx-neon);
+    outline-offset: 2px;
+    border-radius: var(--nx-radius);
+  }
+
+  ::selection {
+    background: rgba(var(--nx-accent-rgb), 0.24);
+    color: var(--nx-text);
+  }
+
+  /* ── Serif para lo que se lee ────────────────────────────────────────────
+     Títulos y texto largo van en serif (aire de libro y de cuaderno); la
+     interfaz —cabecera, índice lateral, tablas, botones, listas de
+     materias— se queda en sans para que se distinga de lo que se lee. */
+  h1 {
+    font-family: var(--font-serif);
+  }
+  .note-prose,
+  .note-prose h1,
+  .note-prose h2,
+  .note-prose h3,
+  .note-prose h4,
+  .note-prose h5 {
+    font-family: var(--font-serif);
+  }
+  /* El código y los atajos son lo contrario: mono dentro de la serif. */
+  .note-prose :where(code, kbd, samp, pre) {
+    font-family: var(--font-mono);
+  }
+
+  /* Regla global de radio: todo lo que sea una caja usa 4px.
+     Se exceptúan los elementos que son circles por diseño (dots y
+     avatares), que llevan la clase .nx-round. */
+  :where(button, input, select, textarea, a, img, video, canvas, table, pre, code, kbd, hr) {
+    border-radius: var(--nx-radius);
+  }
+  .nx-round,
+  .nx-round * {
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,56 @@
+---
+/**
+ * BrandMark.astro — la marca del sitio, DENTRO del HTML.
+ *
+ * Antes era un <img src="/logo.svg">: al ser una imagen aparte, el SVG no
+ * puede heredar las variables CSS, así que lleva sus colores horneados
+ * (fondo #121712). Con dos temas, esa caja negra del logo se ve como un
+ * parche en la cabecera clara.
+ *
+ * En línea, la marca toma los tokens del tema activo: en claro son líneas
+ * verdes sobre papel; en oscuro, verde sobre verde casi negro. Sin fondo:
+ * la marca flota sobre el color de la página.
+ */
+interface Props {
+  /** lado en píxeles */
+  size?: number;
+  class?: string;
+}
+
+const { size = 32, class: className = "" } = Astro.props;
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox="0 0 512 512"
+  fill="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  <rect x="10" y="10" width="492" height="492" rx="102" stroke="var(--nx-line)" stroke-width="10" />
+  <rect
+    x="150"
+    y="128"
+    width="240"
+    height="176"
+    rx="26"
+    stroke="var(--nx-line-strong)"
+    stroke-width="22"
+    transform="rotate(-9 270 216)"
+  />
+  <rect
+    x="134"
+    y="176"
+    width="240"
+    height="176"
+    rx="26"
+    stroke="var(--nx-muted)"
+    stroke-width="22"
+    transform="rotate(-4 254 264)"
+  />
+  <rect x="118" y="220" width="276" height="186" rx="28" stroke="var(--nx-accent)" stroke-width="26" />
+  <path d="M166 282h180M166 326h120" stroke="var(--nx-dim)" stroke-width="17" stroke-linecap="round" />
+  <rect x="318" y="312" width="32" height="38" rx="5" fill="var(--nx-accent)" />
+</svg>
