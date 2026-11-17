@@ -2867,3 +2867,71 @@ el commit de esta línea de PUSHEADO.
 > **sí** desde OneDrive → clic derecho → **Historial de versiones** → restaurar la versión previa.
 > El otro cambio de esa orden (el `D` del Formato 01 de Vocabulario) se restituyó a mano y el
 > traslado a `Recursos adicionales/` sigue intacto.
+
+---
+
+### `opencode-site` — rediseño con la paleta de mar (dos temas) — 16/11/2026
+
+> [!success] PUSHEO EN CURSO · `sesion/opencode-rediseno` → `master` (merge `--ff-only`) → `origin/master`
+>
+> - **Hecho (código, `714ff60b`):** ronda completa de rediseño visual de `site/`, sin tocar rutas, funciones ni copy.
+>   - **Paleta "mar" con dos temas** en tokens CSS (`site/src/styles/tokens.css`): claro
+>     (`#f4f8fa` / `#e8f0f4` / `#0b6a8f`) y oscuro (`#0b1318` / `#121c23` / `#5cc8e8`), con
+>     `--nx-neon` y `--nx-coral` de uso mínimo. Cero colores sueltos en componentes.
+>   - **El neón solo en sus 3 sitios** acordados: anillo de foco, barra de progreso y marca del
+>     apartado activo del índice. El coral solo en "En curso", favoritos y el elemento actual.
+>   - **Barra de progreso**: degradado de 2 px con marea de 6 s `ease-in-out` (la única excepción
+>     a "sin gradientes"), quieta con `prefers-reduced-motion` y con el interruptor en "Nunca".
+>   - **Sin glow, sin blur, sin sombras decorativas**, un solo radio (4 px), serif para leer y sans
+>     para la interfaz, mono solo en código, atajos y cifras.
+>   - **Marca en SVG en línea** (`BrandMark.astro`) para heredar los tokens; favicon, iconos y OG
+>     regenerados como estáticos. **Newsreader** empaquetada en el sitio (`site/public/fonts/`),
+>     sin CDNs.
+>   - **Vista de nota**: callouts con título sans 600 y cuerpo 400 aparte, tablas y figuras
+>     extraídas fuera del bloque, flashcards intactas, TOC sin línea guía, explorador en 600 y
+>     "Marcar leída" también al final de la nota.
+>   - **Portada**: badge sin "ESPOL", subtítulo neutro en cursiva, tabla ordenable con `aria-sort`,
+>     "—" en vez de 0 PDFs, columna Semestre oculta al filtrar, "Materia › Nota" con la fecha a la
+>     derecha y atajos en una línea. Se retira la sección redundante "Cómo empezar".
+>   - **Estados con color propio** (rótulo de la portada y esferas del mapa, misma señal):
+>     **En curso** → coral · **Completado** → verde de mar (`--nx-done`, 6,0/10,6:1) ·
+>     **Reconstrucción** → ámbar (`--nx-warn`). Tokens `--nx-done`/`--nx-done-soft`/`--nx-done-line`,
+>     `tokenEstado` y `claseEstado` compartidos en `site/src/lib/estados-sem.mjs`.
+>   - **Mapa**: la escena 3D lee los mismos tokens de estado y se repinta al cambiar de tema
+>     (antes: acento para "En curso" y un acento apagado para el resto).
+>   - **Modo lectura arreglado**: al ocultar el explorador y el índice, el grid de la nota queda
+>     en una sola pista (antes los tracks vacíos estrechaban el texto de 602 px a 255 px). Ahora
+>     el contenido usa todo el ancho librado (671 px de medida de lectura).
+>   - **Dos separadores que daban 1,6:1** (el `›` de "Materia › Nota" y el `·`
+>     de los metadatos) usaban el token de bordes (`--nx-line-strong`); ahora van
+>     en `--nx-muted` y pasan 4,5:1 en los dos temas. Los tokens de borde siguen
+>     solo para bordes (3:1).
+>   - **Interruptor de tema** en `<head>` (antes de pintar, sin parpadeo), con `localStorage` y
+>     `prefers-color-scheme` por defecto.
+>
+> - **Verificado sobre el build de producción** (853 páginas, `astro preview`):
+>   - Contraste OK en los 2 temas: texto 15,0/16,0 · acento 5,7/9,7 · coral 5,1/8,1 · aviso 5,0/9,5 ·
+>     borde de control 3,1/3,5 · neón (foco) 4,1/11,9 · "Completado" 6,0/10,6.
+>   - 0 sombras, 0 blur, 1 solo degradado (la barra de 2 px), radios 100% 4 px, serif 0 en interfaz.
+>   - Matiz del acento 197°/194° y del neón 195°/190° (dentro de 190°-210°), violeta ≈ 0,03 % (ruido
+>     de antialiasing).
+>   - Evidencia de píxeles: fondo 87-91 % del viewport, tinta 9-13 %, 0 negro/blanco puro salvo el
+>     papel horneado de los SVG del vault.
+>   - 0 desbordes horizontales, 0 errores de consola, 0 peticiones externas del sitio.
+>   - Callouts y flashcards: 0 tablas o figuras dentro de un callout en 5 notas (14 tarjetas),
+>     cuerpo 400 y título 600, foco de teclado con anillo neón de 2 px.
+>   - Funciones probadas con clics y teclas reales (10/10): buscador abre/filtra/Esc, flashcard se
+>     despliega, "Marcar leída" guarda y sube el contador, barra de progreso crece con el scroll,
+>     mapa 3D → Lista, el tema persiste al navegar, modo lectura abre y amplía.
+>   - Contraste de TODO el texto visible en 9 páginas x 2 temas: 18/18 sin pares bajo el mínimo.
+>   - Modo lectura: explorador e índice ocultos, grid en una pista, texto más grande (1,12 rem) y
+>     con interlineado 1,85, y el estado se restaura al salir.
+>
+> - **Limitación conocida y aceptada:** los diagramas SVG del vault llevan su fondo claro horneado
+>   (`background-color: white` dentro del archivo), así que en el tema oscuro se ven como una figura
+>   sobre papel claro. Es intencional: el SVG es un documento aparte, su interior no se puede
+>   re-tematizar desde el CSS y el vault es zona protegida. Invertirlo con un filtro falsearía
+>   también los colores de las cajas y las flechas.
+>
+> - **No se tocó** la zona `opencode` (DSW U1/U2/U4/U5, Matemáticas Discretas, SBD, Inglés), ni
+>   `Universidad/**`, ni `site/scripts/**`. Sin `npm run sync` y sin compilar en OneDrive.
