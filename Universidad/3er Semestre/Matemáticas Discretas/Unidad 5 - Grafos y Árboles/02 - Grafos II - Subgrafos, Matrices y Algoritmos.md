@@ -37,7 +37,7 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > **Ejemplo:** en el grafo del Ejemplo 1, el subgrafo que conserva las aristas $e_5,e_8,e_{10},e_{11}$ incluye también todos sus vértices incidentes.
 > 
-> > [!warning] ⚠️ La condición (b) es la que suele fallar No basta con tomar cualquier [[01 - Conjuntos, Cardinalidad y Subconjuntos|subconjunto]] de aristas: si una arista está en $E'$, **ambos** vértices que toca deben estar en $V'$. No puedes "recortar" una arista dejando uno de sus extremos afuera.
+> **⚠️ La condición (b) es la que suele fallar:** No basta con tomar cualquier [[01 - Conjuntos, Cardinalidad y Subconjuntos|subconjunto]] de aristas: si una arista está en $E'$, **ambos** vértices que toca deben estar en $V'$. No puedes "recortar" una arista dejando uno de sus extremos afuera.
 
 > [!example] 🟢 Ejemplo 1 — Un subgrafo válido
 > 
@@ -59,8 +59,8 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > **Ejemplo:** en el grafo disconexo del Ejemplo 2, $\{v_1,v_2,v_3\}$ es una componente, $\{v_4\}$ es otra y $\{v_5,v_6\}$ es la tercera.
 > 
-> > [!success] ✅ [[02 - Relaciones|Relación]] entre conexidad y componentes:
-> > $G$ es **conexo** si y solo si $G$ posee **una sola componente**.
+> **Relación entre conexidad y componentes:** [[02 - Relaciones|Relación]]
+> $G$ es **conexo** si y solo si $G$ posee **una sola componente**.
 
 > [!example] 🟢 Ejemplo 2 — Grafo disconexo y sus componentes
 > 
@@ -104,7 +104,7 @@ tags: [matematicas-discretas, grafos, matrices, dijkstra, agente-viajero, algori
 > 
 > **Ejemplo:** en la matriz del Ejemplo 3, la segunda fila suma $6=\delta(v_2)$ y el valor $A_{22}=2$ indica un lazo en $v_2$.
 > 
-> > [!tip] 🖥️ Propiedad útil para programar Dado $i \in {1,\ldots,m}$, la suma de los elementos en la fila $i$ es exactamente $\delta(v_i)$ — puedes calcular todos los grados sumando filas de la matriz.
+> **Propiedad útil para programar:** Dado $i \in {1,\ldots,m}$, la suma de los elementos en la fila $i$ es exactamente $\delta(v_i)$ — puedes calcular todos los grados sumando filas de la matriz.
 
 > [!note] 📋 Definición 4 — Matriz de incidencia
 > 

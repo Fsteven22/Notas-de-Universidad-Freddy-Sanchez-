@@ -167,8 +167,81 @@ def revisar_geometria(spec_t):
             if ox > 2 and oy > 2:
                 problemas.append("textos solapados: %r / %r"
                                  % (t1[:22], t2[:22]))
+
+    # ---- las lineas de las columnas NO pueden cruzar el pie de nota.
+    # (Bug real: las verticales bajaban hasta y=0 y partian el texto del pie
+    #  en trozos. El pie va fuera del marco de la tabla.)
+    for ax in fig.axes:
+        pie = None
+        for txt in ax.texts:
+            if txt.get_style() == "italic" or txt.get_color() == gen.GRIS:
+                pie = txt
+                break
+        if pie is None:
+            continue
+        pb = pie.get_window_extent(renderer=rend)
+        for linea in ax.lines:
+            x0, y0 = linea.get_xdata()[0], linea.get_ydata()[0]
+            x1, y1 = linea.get_xdata()[1], linea.get_ydata()[1]
+            if abs(x1 - x0) > 1:          # solo verticales
+                continue
+            # del sistema de datos del eje al canvas (el eje no ocupa todo
+            # el lienzo: hay padding alrededor)
+            p0 = ax.transData.transform((x0, y0))
+            p1 = ax.transData.transform((x1, y1))
+            ly0 = min(p0[1], p1[1])
+            ly1 = max(p0[1], p1[1])
+            if ly0 < pb.y1 and ly1 > pb.y0:
+                problemas.append("linea vertical cruza el pie de nota")
+
+        # ---- el pie va FUERA del marco de la tabla (es una nota, no una
+        #      fila): si el marco lo envuelve, el pie se lee como una fila
+        #      mas de la tabla.
+        for patch in ax.patches:
+            if patch.get_fill():
+                continue
+            mb = patch.get_window_extent(renderer=rend)
+            if mb.y0 <= pb.y0 and mb.y1 >= pb.y1:
+                problemas.append("el pie de nota esta dentro del marco "
+                                 "de la tabla")
+
     plt.close(fig)
     return problemas, len(cajas)
+
+
+def revisar_margen(ruta, minimo=8):
+    """La figura debe tener aire alrededor: nada toca el borde del PNG.
+
+    Sin esto, al renderizar la imagen queda pegada al texto de al lado y
+    parece que las lineas de la tabla se invaden el texto de abajo."""
+    if not os.path.isfile(ruta):
+        return ["no existe"]
+    im = Image.open(ruta).convert("RGB")
+    w, h = im.size
+    pix = im.load()
+    minx, miny, maxx, maxy = w, h, -1, -1
+    for y in range(h):
+        for x in range(w):
+            r, g, b = pix[x, y]
+            if r > 245 and g > 245 and b > 245:
+                continue
+            if x < minx:
+                minx = x
+            if x > maxx:
+                maxx = x
+            if y < miny:
+                miny = y
+            if y > maxy:
+                maxy = y
+    if maxx < 0:
+        return ["figura vacia"]
+    m = (minx, miny, w - 1 - maxx, h - 1 - maxy)
+    problemas = []
+    for lado, v in zip(("izq", "sup", "der", "inf"), m):
+        if v < minimo:
+            problemas.append("margen %s de %d px (minimo %d): la figura "
+                             "toca el borde" % (lado, v, minimo))
+    return problemas
 
 
 # ---------------------------------------------------------------- main
@@ -244,6 +317,9 @@ def main():
         except Exception as e:
             problemas.append("no se pudo medir geometria: %s" % str(e)[:50])
             n_textos = 0
+
+        # --- 5b. MARGEN: la figura no puede tocar el borde del PNG
+        problemas += revisar_margen(ruta_png)
 
         # --- 6. FRESCOR (el PNG del disco vs el que genera el script hoy)
         png_tmp = os.path.join(tmpdir, nombre + ".nuevo.png")

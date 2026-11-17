@@ -42,9 +42,8 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > 
 > Una **permutación** de $n$ elementos diferentes $x_1, \ldots, x_n$ es un **ordenamiento** de los $n$ elementos.
 > 
-> > [!abstract] Teorema Existen $n!$ permutaciones de $n$ elementos, donde $n! = n(n-1)(n-2)\cdots 2 \cdot 1$.
-> > 
-> > **Demostración:** Por el principio de la multiplicación: $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $1$ para la última. $\blacksquare$
+> **Teorema:** Existen $n!$ permutaciones de $n$ elementos, donde $n! = n(n-1)(n-2)\cdots 2 \cdot 1$.
+> **Demostración:** Por el principio de la multiplicación: $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $1$ para la última. $\blacksquare$
 > 
 > **Se lee así:** una permutación cuenta cada orden posible de todos los elementos, por lo que cambiar dos posiciones produce una permutación distinta.
 > 
@@ -87,9 +86,8 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > 
 > Una **permutación $r$** de $n$ elementos es un **ordenamiento de $r$ elementos** tomados de ${x_1, \ldots, x_n}$. Se denota $P(n, r)$.
 > 
-> > [!abstract] Teorema Si $r \leq n$: $$P(n, r) = n(n-1)(n-2)\cdots(n-r+1) = \frac{n!}{(n-r)!}$$
-> > 
-> > **Demostración:** $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $n-r+1$ para la $r$-ésima. $\blacksquare$
+> **Teorema:** Si $r \leq n$: $$P(n, r) = n(n-1)(n-2)\cdots(n-r+1) = \frac{n!}{(n-r)!}$$
+> **Demostración:** $n$ opciones para la 1ª posición, $n-1$ para la 2ª, ..., $n-r+1$ para la $r$-ésima. $\blacksquare$
 > 
 > **Se lee así:** $P(n,r)$ cuenta los órdenes posibles de elegir y ordenar $r$ elementos distintos entre $n$, sin elegir los restantes.
 > 
@@ -189,7 +187,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 >
 > $$C(n,r) = \binom{n}{r} = \frac{n!}{(n-r)!, r!}$$
 >
-> > [!abstract] Demostración Cada permutación $r$ se construye en dos pasos: elegir la combinación ($\binom{n}{r}$ maneras) y luego ordenarla ($r!$ maneras). Entonces: $$\binom{n}{r} \cdot r! = P(n,r) = \frac{n!}{(n-r)!} \implies \binom{n}{r} = \frac{n!}{(n-r)!,r!} \quad \blacksquare$$
+> **Demostración:** Cada permutación $r$ se construye en dos pasos: elegir la combinación ($\binom{n}{r}$ maneras) y luego ordenarla ($r!$ maneras). Entonces: $$\binom{n}{r} \cdot r! = P(n,r) = \frac{n!}{(n-r)!} \implies \binom{n}{r} = \frac{n!}{(n-r)!,r!} \quad \blacksquare$$
 > 
 > **Se lee así:** una combinación cuenta subconjuntos de $r$ elementos: cambiar el orden de selección no genera una combinación diferente.
 > 
@@ -258,7 +256,7 @@ tags: [MATG1051, unidad3, permutaciones, combinaciones]
 > 
 > Las **combinaciones con repetición** de $n$ tipos de elementos tomados de $r$ en $r$ son los grupos de $r$ elementos formados con los $n$ tipos dados, **sin importar el orden y permitiendo repetir** el mismo tipo.
 > 
-> > [!abstract] Teorema El número de combinaciones con repetición de $n$ tipos tomados de $r$ en $r$ es: $$\binom{n+r-1}{r} = \binom{n+r-1}{n-1}$$
+> **Teorema:** El número de combinaciones con repetición de $n$ tipos tomados de $r$ en $r$ es: $$\binom{n+r-1}{r} = \binom{n+r-1}{n-1}$$
 > 
 > **Se lee así:** $\binom{n+r-1}{r}$ cuenta selecciones de $r$ elementos entre $n$ tipos, donde el orden no importa y cada tipo puede repetirse.
 > 

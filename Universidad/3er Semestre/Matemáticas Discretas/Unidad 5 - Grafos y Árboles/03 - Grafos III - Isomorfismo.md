@@ -39,7 +39,7 @@ tags: [matematicas-discretas, grafos, isomorfismo, invariantes, relacion-de-equi
 > 
 > **Ejemplo:** para los grafos del Ejemplo 1, las asignaciones $f(a)=A,\ldots,f(e)=E$ y $g(x_i)=y_i$ forman un isomorfismo si preservan la incidencia de las cinco aristas.
 > 
-> > [!warning] ⚠️ Se necesitan DOS biyecciones No basta con una biyección entre vértices: también se necesita una biyección $g$ entre aristas que sea **consistente** con $f$. Ambas funciones deben "viajar juntas" — la incidencia debe preservarse exactamente.
+> **⚠️ Se necesitan DOS biyecciones:** No basta con una biyección entre vértices: también se necesita una biyección $g$ entre aristas que sea **consistente** con $f$. Ambas funciones deben "viajar juntas" — la incidencia debe preservarse exactamente.
 
 > [!example] 🟢 Ejemplo 1 — Un isomorfismo explícito
 > 

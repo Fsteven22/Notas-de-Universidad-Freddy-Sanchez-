@@ -372,6 +372,7 @@ def _planificar(spec):
     anchos = minimos
 
     # --- alto: la nota envuelta puede ocupar varias lineas
+    #     (esto es el alto del CONTENIDO; el lienzo lleva padding alrededor)
     n_lineas_nota = len(nota_env.split("\n")) if nota_env else 0
     h_fila = 0.42
     h_cab = 0.52
@@ -379,8 +380,29 @@ def _planificar(spec):
     h_nota = (0.24 + 0.20 * n_lineas_nota) if nota else 0.0
     alto = h_tit + h_cab + h_fila * len(spec["filas"]) + h_nota
 
-    figsize = (ancho_fig_px / DPI_CANVAS, alto)
+    # El lienzo es mas grande que el contenido: PAD_FIG de aire a cada lado,
+    # para que el marco de la tabla NO toque el borde de la imagen (si lo
+    # toca, al renderizar la figura parece pegada al texto de al lado).
+    figsize = ((ancho_fig_px + 2 * PAD_FIG) / DPI_CANVAS,
+               alto + 2 * PAD_FIG / DPI_CANVAS)
     return figsize, anchos, fs_cab, nota_env
+
+
+def _geometria_figura(figsize):
+    """Reparte el lienzo entre el aire exterior y el area de contenido.
+
+    Devuelve (alto_contenido, ancho_contenido_px, alto_total_px,
+    ancho_total_px, frac_x, frac_y, frac_w, frac_h), donde frac_* es la
+    posicion/tamano del eje dentro del lienzo (para fig.add_axes)."""
+    ancho_total_px = figsize[0] * DPI_CANVAS
+    alto_total_px = figsize[1] * DPI_CANVAS
+    ancho_contenido_px = ancho_total_px - 2 * PAD_FIG
+    alto_contenido_px = alto_total_px - 2 * PAD_FIG
+    alto_contenido = alto_total_px / DPI_CANVAS - 2 * PAD_FIG / DPI_CANVAS
+    return (alto_contenido, ancho_contenido_px, alto_total_px, ancho_total_px,
+            PAD_FIG / ancho_total_px, PAD_FIG / alto_total_px,
+            ancho_contenido_px / ancho_total_px,
+            alto_contenido_px / alto_total_px)
 
 
 def _color_celda(v):
@@ -407,18 +429,23 @@ def dibujar(spec, salida=None):
     ncols = len(cols)
     figsize, anchos, fs_cab, nota_env = _planificar(spec)
 
+    (alto_cont, _ancho_cont_px, _alto_tot_px, _ancho_tot_px,
+     fx, fy, fw, fh) = _geometria_figura(figsize)
+
     fig = plt.figure(figsize=figsize)
-    ax = fig.add_axes([0, 0, 1, 1])
+    # El eje ocupa SOLO el area de contenido: el padding queda fuera, en
+    # blanco. Asi el marco de la tabla no toca nunca el borde de la imagen.
+    ax = fig.add_axes([fx, fy, fw, fh])
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
 
     # ---- alto por fila (fraccion del lienzo)
-    h_fila = 0.42 / figsize[1]
-    h_cab = 0.52 / figsize[1]
-    h_tit = 0.62 / figsize[1]
+    h_fila = 0.42 / alto_cont
+    h_cab = 0.52 / alto_cont
+    h_tit = 0.62 / alto_cont
     n_lineas_nota = len(nota_env.split("\n")) if nota_env else 0
-    h_nota = ((0.24 + 0.20 * n_lineas_nota) / figsize[1]) if nota_env else 0.0
+    h_nota = ((0.24 + 0.20 * n_lineas_nota) / alto_cont) if nota_env else 0.0
 
     # ---- titulo
     y = 1 - h_tit * 0.25
@@ -427,6 +454,9 @@ def dibujar(spec, salida=None):
             color=TINTA)
 
     # ---- Nota al pie
+    # Vive DEBAJO del marco de la tabla (es una nota, no una fila) y las
+    # lineas de las columnas NO la cruzan: antes bajaban hasta y=0 y le
+    # partian el texto en trozos.
     if nota_env:
         ax.text(0.5, h_nota * 0.5, nota_env,
                 ha="center", va="center", fontsize=9.5, color=GRIS,
@@ -466,13 +496,16 @@ def dibujar(spec, salida=None):
         y_sup = y_inf
 
     # ---- bordes
-    ax.add_patch(plt.Rectangle((0, 0), 1.0, y_cab_sup,
+    # El marco abriga solo la tabla (cabecera + filas): el pie queda fuera, con
+    # su propio aire, como una nota al pie de verdad.
+    ax.add_patch(plt.Rectangle((0, h_nota), 1.0, y_cab_sup - h_nota,
                                fill=False, edgecolor="#9aa4b2", linewidth=1.2))
     ax.plot([0, 1], [y_cab_inf, y_cab_inf], color="#9aa4b2", linewidth=1.0)
     ax.plot([0, 1], [y_sup, y_sup], color="#9aa4b2", linewidth=1.0)
     for j in range(1, ncols):
         x = sum(anchos[:j])
-        ax.plot([x, x], [0, y_cab_sup], color="#d3d9e0", linewidth=0.8)
+        # de la ultima fila hasta la cabecera: nunca bajan al pie
+        ax.plot([x, x], [y_sup, y_cab_sup], color="#d3d9e0", linewidth=0.8)
     for i in range(len(filas) - 1):
         y = y_cab_inf - h_fila * (i + 1)
         ax.plot([0, 1], [y, y], color="#e6e9ed", linewidth=0.7)

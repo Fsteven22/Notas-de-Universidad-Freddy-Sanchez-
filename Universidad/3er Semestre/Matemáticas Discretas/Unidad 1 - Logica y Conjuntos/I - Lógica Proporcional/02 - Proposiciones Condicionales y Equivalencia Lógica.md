@@ -177,9 +177,7 @@ tags: [matematicas-discretas, logica-proposicional, condicional, equivalencia-lo
 > 
 > **Equivalencia lógica:** Sean $P$ y $Q$ dos formas proposicionales. Se dice que $P$ y $Q$ son **lógicamente equivalentes**, denotado $P \equiv Q$ (o $P \Leftrightarrow Q$), si tienen los **mismos valores lógicos** para **todos** los posibles valores de las variables.
 > 
-> > [!example] 🟢 Ejemplo
-> >
-> > Dicho de otra forma: $P \equiv Q$ si y solo si $P \leftrightarrow Q$ es una **tautología**.
+> **Equivalente:** Dicho de otra forma: $P \equiv Q$ si y solo si $P \leftrightarrow Q$ es una **tautología**.
 >
 > **Ejemplo:** Las formas $p \rightarrow q$ y $\neg q \rightarrow \neg p$ son equivalentes porque $(p \rightarrow q) \leftrightarrow (\neg q \rightarrow \neg p)$ es una tautología.
 >

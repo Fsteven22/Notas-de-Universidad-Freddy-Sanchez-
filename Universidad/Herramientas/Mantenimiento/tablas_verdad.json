@@ -2,82 +2,82 @@
   "figuras": {
     "$p$|$\\negp$#V,F|F,V": {
       "nombre": "tabla-verdad-negacion",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:110",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:115",
       "titulo": "Negación"
     },
     "$p$|$\\negp$|$p\\vee\\negp$#V,F,V|F,V,V": {
       "nombre": "tabla-verdad-tautologia",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:359",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:378",
       "titulo": "Tautología"
     },
     "$p$|$q$|$\\negp$|$\\negq$|$p\\rightarrowq$|$\\negq\\rightarrow\\negp$#V,V,F,F,V,V|V,F,F,V,F,F|F,V,V,F,V,V|F,F,V,V,V,V": {
       "nombre": "tabla-verdad-condicional-contrapositiva",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:109",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:114",
       "titulo": "Condicional y contrapositiva"
     },
     "$p$|$q$|$\\negp$|$\\negq$|$p\\veebarq$|$p\\wedge\\negq$|$q\\wedge\\negp$|$(p\\wedge\\negq)\\vee(q\\wedge\\negp)$#V,V,F,F,F,F,F,F|V,F,F,V,V,V,F,V|F,V,V,F,V,F,V,V|F,F,V,V,F,F,F,F": {
       "nombre": "tabla-verdad-disjuncion-exclusiva-equivalencia",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:307",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:322",
       "titulo": "Disyunción exclusiva: ⊻ y ⊕"
     },
     "$p$|$q$|$\\negp$|$p\\rightarrowq$|$\\negp\\veeq$#V,V,F,V,V|V,F,F,F,F|F,V,V,V,V|F,F,V,V,V": {
       "nombre": "tabla-verdad-condicional-disjuncion",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:285",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:296",
       "titulo": "Condicional y disyunción"
     },
     "$p$|$q$|$\\negq$|$p\\rightarrowq$|$\\neg(p\\rightarrowq)$|$p\\wedge\\negq$#V,V,F,V,F,F|V,F,V,F,V,V|F,V,F,V,F,F|F,F,V,V,F,F": {
       "nombre": "tabla-verdad-negacion-condicional",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:328",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:341",
       "titulo": "Negación del condicional"
     },
     "$p$|$q$|$p\\leftrightarrowq$#V,V,V|V,F,F|F,V,F|F,F,V": {
       "nombre": "tabla-verdad-bicondicional",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:260",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:273",
       "titulo": "Bicondicional"
     },
     "$p$|$q$|$p\\leftrightarrowq$|$p\\rightarrowq$|$q\\rightarrowp$|$(p\\rightarrowq)\\wedge(q\\rightarrowp)$#V,V,V,V,V,V|V,F,F,F,V,F|F,V,F,V,F,F|F,F,V,V,V,V": {
       "nombre": "tabla-verdad-bicondicional-equivalencia",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:296",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:309",
       "titulo": "Bicondicional y su equivalencia"
     },
     "$p$|$q$|$p\\rightarrowq$#V,V,V|V,F,F|F,V,V|F,F,V": {
       "nombre": "tabla-verdad-condicional",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:199",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:212",
       "titulo": "Condicional"
     },
     "$p$|$q$|$p\\rightarrowq$|$p\\wedge(p\\rightarrowq)$|$(p\\wedge(p\\rightarrowq))\\rightarrowq$#V,V,V,V,V|V,F,F,F,V|F,V,V,F,V|F,F,V,F,V": {
       "nombre": "tabla-verdad-modus-ponens",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:368",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:389",
       "titulo": "Modus ponens"
     },
     "$p$|$q$|$p\\rightarrowq$|$q\\rightarrowp$#V,V,V,V|V,F,F,V|F,V,V,F|F,F,V,V": {
       "nombre": "tabla-verdad-condicional-reciproco",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:120",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:127",
       "titulo": "Condicional y recíproco"
     },
     "$p$|$q$|$p\\veebarq$#V,V,F|V,F,V|F,V,V|F,F,F": {
       "nombre": "tabla-verdad-disjuncion-exclusiva",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:172",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:185",
       "titulo": "Disyunción exclusiva (XOR)"
     },
     "$p$|$q$|$p\\veeq$#V,V,V|V,F,V|F,V,V|F,F,F": {
       "nombre": "tabla-verdad-disjuncion",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:130",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:139",
       "titulo": "Disyunción"
     },
     "$p$|$q$|$p\\wedgeq$#V,V,V|V,F,F|F,V,F|F,F,F": {
       "nombre": "tabla-verdad-conjuncion",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:151",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\01 - Proposiciones y conectivos.md:162",
       "titulo": "Conjunción"
     },
     "$p$|$q$|$r$|$p\\rightarrowq$|$(p\\rightarrowq)\\rightarrowr$|$q\\rightarrowr$|$p\\rightarrow(q\\rightarrowr)$#V,V,V,V,V,V,V|V,V,F,V,F,F,F|V,F,V,F,V,V,V|V,F,F,F,V,V,V|F,V,V,V,V,V,V|F,V,F,V,F,F,V|F,F,V,V,V,V,V|F,F,F,V,F,V,V": {
       "nombre": "tabla-verdad-tres-proposiciones",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:318",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\I - Lógica Proporcional\\02 - Proposiciones Condicionales y Equivalencia Lógica.md:335",
       "titulo": "Tres proposiciones: 2³ = 8 filas"
     },
     "$p$|$q$|$r$|$p\\toq$|$\\negr\\lorp$|$(p\\toq)\\land(\\negr\\lorp)$|$q\\lorr$|$s$#V,V,V,V,V,V,V,V|V,V,F,V,V,V,V,V|V,F,V,F,V,F,V,V|V,F,F,F,V,F,F,V|F,V,V,V,F,F,V,V|F,V,F,V,V,V,V,V|F,F,V,V,F,F,V,V|F,F,F,V,V,V,F,F": {
       "nombre": "tabla-verdad-ejercicio-guia1",
-      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\Guía de Problemas 1 - Ejercicios Resueltos.md:144",
+      "origen": "Universidad\\3er Semestre\\Matemáticas Discretas\\Unidad 1 - Logica y Conjuntos\\Guía de Problemas 1 - Ejercicios Resueltos.md:146",
       "titulo": "Ejercicio 4 — tabla de verdad"
     }
   }

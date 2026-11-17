@@ -68,9 +68,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > **Se lee así:** $\forall x \in D : P(x)$ exige cobertura completa del dominio: basta **un** $x$ con $P(x)$ falsa para que la proposición sea falsa, mientras que probarla requiere cubrir todos; "para todo" jamás significa "para muchos".
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
-> > [!example] 🟢 Ejemplo
-> >
-> > "**Para toda** $x$ en $D$, $P(x)$"
+> **En palabras:** "**Para toda** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada universalmente**, y se escribe:
 >
@@ -126,9 +124,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > **Se lee así:** $\exists x \in D : P(x)$ solo pide un ejemplar que funcione: un caso basta para $V$ y hace falta que **todos** fallen para $F$; es el espejo exacto de $\forall$ y "existe" no dice cuántos ni cuál.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 > 
-> > [!example] 🟢 Ejemplo
-> >
-> > "**Existe** $x$ en $D$, $P(x)$"
+> **En palabras:** "**Existe** $x$ en $D$, $P(x)$"
 > 
 > es una proposición **cuantificada existencialmente**, y se escribe:
 >
@@ -181,9 +177,7 @@ tags: [matematicas-discretas, cuantificadores, cuantificador-universal, cuantifi
 > **Se lee así:** $\exists!$ aprieta doble: al menos uno **y** a lo sumo uno; la equivalencia $\exists x\,(P(x) \wedge \forall y\,(P(y) \to y = x))$ muestra la trampa: mostrar que existe uno y olvidar la parte $\forall y$ que descarta un segundo candidato.
 > Sea $P$ una función proposicional con dominio de discurso $D$. La proposición:
 >
-> > [!example] 🟢 Ejemplo
-> >
-> > "**Existe un único** $x$ en $D$, $P(x)$"
+> **En palabras:** "**Existe un único** $x$ en $D$, $P(x)$"
 >
 > es una proposición **cuantificada de existencia única**, y se escribe:
 >

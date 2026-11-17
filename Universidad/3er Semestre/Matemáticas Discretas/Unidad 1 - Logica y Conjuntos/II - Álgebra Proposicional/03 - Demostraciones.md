@@ -75,9 +75,7 @@ tags: [matematicas-discretas, algebra-proposicional, demostraciones, prueba-dire
 > - $n$ es **par** si existe un entero $k$ tal que $n = 2k$.
 > - $n$ es **impar** si existe un entero $k$ tal que $n = 2k + 1$.
 > 
-> > [!example] 🟢 Ejemplo
-> >
-> > Todo número entero es par **o** impar, y nunca ambos a la vez.
+> **Corolario:** Todo número entero es par **o** impar, y nunca ambos a la vez.
 > 
 > Esta definición es la base de muchos ejemplos de demostración.
 >
