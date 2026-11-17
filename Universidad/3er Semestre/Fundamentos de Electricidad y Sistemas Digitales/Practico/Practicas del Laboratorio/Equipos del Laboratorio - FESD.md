@@ -29,7 +29,7 @@ dg-publish: true
 > - **Puntos grandes**: aislados entre sí eléctricamente.
 > - **Puntos pequeños alrededor de un punto grande**: comparten potencial con él (arriba, abajo, izquierda, derecha).
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Equipos_del_Laboratorio_-_FESD_01.svg]]
 > 
 > **Se lee así:** El diagrama muestra un punto grande del tablero y los cuatro puntos pequeños que se conectan a él: los puntos pequeños alrededor de un punto grande comparten su potencial. Es la regla de conexiones más básica del tablero universal.
 > 
@@ -37,7 +37,7 @@ dg-publish: true
 >
 > > ⚠️ Los puntos grandes están **aislados entre sí**. No confundir con el protoboard.
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231332.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231332.png]]
 > 
 > **Se lee así:** La foto muestra el tablero universal real («Figura 1»): una placa azul con una rejilla de puntos negros de conexión y el rótulo «Universal Assembly Board», con las filas de los extremos marcadas para VCC y GND.
 > 
@@ -63,7 +63,7 @@ dg-publish: true
 > 
 > > 💡 Usar el programa **Fritzing** para simular conexiones antes de armar físicamente.
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231403.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231403.png]]
 > 
 > **Se lee así:** La foto muestra el protoboard del laboratorio («Figura 3: Protoboard»): el Proto-Board PB-105 de Global Specialties, con las regletas blancas de 5 puntos al centro y las borneras de alimentación V1–V4 con tierra al medio en el borde superior.
 > 
@@ -75,7 +75,7 @@ dg-publish: true
 
 > [!tip] 🔋 ¿Qué es y cómo se usa?
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231457.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231457.png]]
 > 
 > **Se lee así:** La foto muestra el panel frontal de la fuente DC GW INSTEK GPS-4303 («Figura 6»): el visor doble A/V en la parte superior, las perillas de CURRENT y VOLTAGE por canal, el botón rectangular de OUTPUT y las borneras de cada uno de sus 4 canales en la parte inferior.
 > 
@@ -116,7 +116,7 @@ dg-publish: true
 > |Rojo|+Vcc|CH1(+)|
 > |Azul|−Vcc|CH3(−)|
 >
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231619.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231619.png]]
 > 
 > **Se lee así:** La figura muestra el cableado sobre la fuente GPS-4303 para obtener salidas duales e independientes («Figura 7»): los visores marcan el voltaje/corriente de los canales y los cables de colores van de las borneras a +Vcc1 (rojo, CH1(+)), 0V de referencia (verde, nodo común CH3(+)–CH1(−)) y −Vcc1 (azul, CH3(−)), además de las salidas independientes +Vcc2 (rojo) y 0V ref.2 (negro).
 > 
@@ -128,7 +128,7 @@ dg-publish: true
 
 > [!note] 📏 ¿Qué es y cómo se usa?
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231710.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231710.png]]
 > 
 > **Se lee así:** La foto muestra el medidor LCR GW INSTEK LCR-816 («Figura 9: LCR»): pantalla LCD a la izquierda, teclado numérico y de funciones a la derecha, y las borneras para las pinzas de conexión en la parte inferior derecha.
 > 
@@ -158,7 +158,7 @@ dg-publish: true
 
 > [!tip] 📐 ¿Qué es y cómo se usa?
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231749.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231749.png]]
 > 
 > **Se lee así:** La foto muestra el multímetro FLUKE 179 de frente («Figura 10»): perilla selectora central con las posiciones de V, mV, Ω/capacitancia, continuidad, prueba de diodos y mA/A, los botones HOLD / MIN MAX / RANGE y las borneras inferiores (400 mA, 10 A, V/Ω y COM).
 > 
@@ -197,7 +197,7 @@ dg-publish: true
 > > 
 > > ⚠️ No exceder los 400 mA en la bornera mA — quema el fusible interno.
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231848.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231848.png]]
 > 
 > **Se lee así:** La tabla reproduce las posiciones del selector del FLUKE 179 y su función de medición con rangos: V~/Hz (tensión CA), V—/Hz (tensión CC), m—V/temperatura, Ω/capacitancia, continuidad y prueba de diodos, mA y A con sus topes, y la nota al pie de que la CA se acopla en valor eficaz (RMS) hasta 1 kHz.
 > 
@@ -209,7 +209,7 @@ dg-publish: true
 
 > [!tip] 〰️ ¿Qué es y cómo se usa?
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231935.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231935.png]]
 > 
 > **Se lee así:** La foto muestra el generador de funciones METERMAN FG2C («Figura 92»): pantalla digital verde a la izquierda, teclado de frecuencias (×100, 10, 1K, 100, 10, 1) y perillas de FREQUENCY, SWEEP/RATE, MODULATION, DUTY/CMOD, OFFSET y AMPL, con la salida OUTPUT de 50 Ω al lado derecho.
 > 
@@ -253,7 +253,7 @@ dg-publish: true
 
 > [!tip] 📈 ¿Qué es y cómo se usa?
 > 
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525232051.png]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525232051.png]]
 > 
 > **Se lee así:** La foto muestra el panel frontal del osciloscopio GW INSTEK GDS-820C («Figura 15»): pantalla a la izquierda con las teclas F1–F5 al lado derecho, controles de VERTICAL (POSITION, VOLTS/DIV y MATH) y HORIZONTAL (POSITION, TIME/DIV), y las entradas CH1 y CH2 en la parte inferior.
 > 

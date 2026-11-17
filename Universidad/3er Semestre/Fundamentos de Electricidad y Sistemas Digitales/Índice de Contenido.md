@@ -96,19 +96,19 @@ tags: [unidad0, indice, recursos]
 >
 > **Guías oficiales de las prácticas**
 >
-> - [[Practico/PRÁCTICA 1 FESD GUÍA.pdf|PRÁCTICA 1 FESD GUÍA.pdf]]
-> - [[Practico/Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 — Ley de Ohm y Kirchhoff.pdf]]
-> - [[Practico/Práctica 3 - Funcionamiento de Diodos y Transistores.pdf|Práctica 3 — Diodos y Transistores.pdf]]
-> - [[Practico/Práctica 4 - Funcionamiento de Fuentes Lineales.pdf|Práctica 4 — Fuentes Lineales.pdf]]
-> - [[Practico/Práctica 5 - Funcionamiento de Filtros Activos.pdf|Práctica 5 — Filtros Activos.pdf]]
-> - [[Practico/Practica__6_FESD.pdf|Práctica 6 — Logica Combinatoria y Arduino.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/PRÁCTICA 1 FESD GUÍA.pdf|PRÁCTICA 1 FESD GUÍA.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 — Ley de Ohm y Kirchhoff.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Práctica 3 - Funcionamiento de Diodos y Transistores.pdf|Práctica 3 — Diodos y Transistores.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Práctica 4 - Funcionamiento de Fuentes Lineales.pdf|Práctica 4 — Fuentes Lineales.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Práctica 5 - Funcionamiento de Filtros Activos.pdf|Práctica 5 — Filtros Activos.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Practica__6_FESD.pdf|Práctica 6 — Logica Combinatoria y Arduino.pdf]]
 >
 > **Documentos oficiales del laboratorio**
 >
-> - [[Practico/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD — Normas de seguridad industrial (laboratorio).pdf]]
-> - [[Practico/FESD_Practico_2026_PAO1_Politicas.pdf|FESD — Políticas del práctico 2026.pdf]]
-> - [[Practico/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
-> - [[Practico/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD — Normas de seguridad industrial (laboratorio).pdf]]
+> - [[Practico/Fundamentos del Laboratorio/FESD_Practico_2026_PAO1_Politicas.pdf|FESD — Políticas del práctico 2026.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
+> - [[Practico/Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
 
 ## 🔗 Navegación
 

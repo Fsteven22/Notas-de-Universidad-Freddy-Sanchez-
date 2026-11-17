@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica valida experimentalmente las leyes que viste en teoría: **Ley de Ohm** ($V=IR$), **KCL** ($\sum I = 0$ en nodos) y **KVL** ($\sum V = 0$ en mallas). Además aplicas los métodos de **divisor de tensión** y **divisor de corriente** para dimensionar redes eléctricas.
 >
-> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
 > 
 > **Se lee así:** El diagrama es el mapa de la práctica: de «Práctica 2» se ramifican tres procedimientos — ① Ley de Ohm, donde se mide I en función de R; ② divisor de corriente con KCL, donde se mide la corriente por cada rama; y ③ divisor de tensión con KVL, donde se mide el voltaje en cada elemento.
 > 
@@ -192,7 +192,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 > [!tip] 📄 Informe
 >
-> Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
+> Usa [[../Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[../Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
 ## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
@@ -227,5 +227,5 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ## 📎 Guía oficial (sitio web)
 
-[[Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
+[[../Fundamentos del Laboratorio/Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #leyDeOhm #kirchhoff
