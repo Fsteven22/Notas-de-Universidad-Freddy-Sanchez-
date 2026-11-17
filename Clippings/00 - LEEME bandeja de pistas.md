@@ -2720,3 +2720,46 @@ el commit de esta línea de PUSHEADO.
 > `genera_tablas_verdad.py` tuyos) siguen modificados o sin seguimiento, **sin stagear y sin
 > commitear**: el push no los toca.
 
+---
+
+### `opencode-onedrive` — Cálculo 1: U6-III al formato de la casa (47 de 65) + renumeración de carpetas V/VI — 16/11/2026
+
+> [!success] PUSHEADO `2f3d707b` · 16/11/2026 — `origin/master` = `master` = `2f3d707b`
+>
+> **Dos cambios atómicos + 1 merge:**
+> - `61e5c55c` **renumeración de carpetas de U6** (petición del dueño): `Técnicas de Integración`
+>   → `V - Técnicas de Integración` (5 notas) y `V - Otras Técnicas` → `VI - Otras Técnicas`
+>   (2 notas), con `git add` de rutas exactas; 24 wikilinks actualizados en notas de U2, U4, U6,
+>   U7, el mapa `Cálculo de una Variable.md` (títulos de sección `**V — …**` y `**VI — …**`) y el
+>   `Índice de Contenido.md`.
+> - `755c1beb` **U6-III** (3 notas): `01 - Métodos de Integración Definida`, `02 - Integral de
+>   Funciones por Tramos` y `03 - Teoremas Especiales para Integrales Definidas` al esqueleto
+>   completo de 8 secciones, definiciones en callout con la figura dentro (R15), lecturas R14,
+>   soluciones plegadas R8, flashcards `cal1-u6` (R16) y metas con checkboxes (R17).
+> - `2f3d707b` merge de `origin/master` (los commits de MatDisc: conjuntos disjointos, sin
+>   conflictos).
+>
+> **Correcciones de contenido** (no eran erratas de formato): simetría de
+> $\int_{-2}^{2}(x^4-3x^2+1)dx = 4/5$; Wallis con $\pi/2$ solo para $n$ **par** (la nota lo tenía
+> invertido); fracciones parciales a $\int_1^3 = \ln 6$ (la original era impropia); demostración
+> de periodicidad rehecha partiendo el integral en tres tramos; valor medio de $x^2$ en $[-1,1]$
+> alcanzado en $c = \pm 1/\sqrt 3$, no en $c = 0$.
+>
+> **Verificado**
+> - `qa_formato_calculo1 --nota` en las 3 notas: **0 hallazgos** cada una.
+> - Round-trip `.mmd` ↔ `.svg` de los **11** diagramas embebidos: **11 OK, 0 problemas**.
+> - `qa_mojibake --check` en III - Integrales Definidas: **0**; escáner de alfabetos: 0 CJK
+>   (solo griego legítimo de matemáticas).
+> - **0** `R11-wikilink-roto` en las 65 notas tras la renumeración.
+>
+> **Estado: 47 de 65.** Pendientes (18): U6-IV (4) · U6-V `V - Técnicas de Integración` (5) ·
+> `VI - Otras Técnicas` (2) · U7 (7; las notas 5 y 6 reutilizan diagramas existentes).
+>
+> **El clon de OneDrive está en otra rama** (`sesion/opencode-fesd`, con trabajo del dueño en
+> curso): en vez de `checkout`/`merge --ff-only` —que habría pedido working tree limpio— su
+> `master` local se actualizó con `git fetch origin master:master` (fast-forward del ref, **0
+> cambios en su working tree**; los 51 archivos ajenos siguen idénticos).
+>
+> **Sigue pendiente** (aviso de `opencode`): las **18 PNG huérfanas** `tabla-verdad-*.png` de
+> MatDisc — embeber o borrar — tras cerrar Cálculo 1.
+
