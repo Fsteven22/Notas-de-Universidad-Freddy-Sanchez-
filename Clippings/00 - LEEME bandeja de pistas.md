@@ -2797,3 +2797,22 @@ el commit de esta línea de PUSHEADO.
 > El `master` del clon de OneDrive se actualizó de nuevo por ref
 > (`git fetch origin master:master`), con **0 cambios en su working tree**.
 
+---
+
+### `opencode-onedrive` — Cálculo 1: U6-V completa + 5 figuras conectadas en U2/U6-I (56 de 65) — 17/11/2026
+
+> [!warning] PUSHEO EN CURSO · `ae5d56be` + este bloque de estado · ~2 min
+>
+> - **Hecho:** U6-V `V - Técnicas de Integración` completa (5 notas: cambio de variable,
+>   por partes, trigonométricas, funciones inversas y fracciones parciales) al esqueleto de
+>   la casa; **0 hallazgos** por nota, round-trip **17/17**, mojibake 0, escáner limpio.
+>   Correcciones de contenido verificadas con sympy: en 04, $\int_0^1\arcsin = \pi/2-1$
+>   (la original decía 1), $\int_{-1}^1 x\arcsin x = \pi/4$ (decía 0 y la llamaba impar;
+>   es **par**), fila de tabla de $x\arcsin$ y $\int\arctan\ln x$ con $-\frac14\text{Li}_2(-x^2)$;
+>   en 05, las 12 soluciones de ejemplos y ejercicios.
+> - **Además:** 5 diagramas conectados en 4 notas ya publicadas de U2 y U6-I (bloques de
+>   figura con sus tres lecturas), validadas a 0 hallazgos.
+> - **Pendiente (9):** `VI - Otras Técnicas` (2) · U7 (7; las notas de Volúmenes y Áreas
+>   polares ya tienen su figura nueva, pendiente de reescribir la nota).
+> - **Necesito:** nada de momento.
+
