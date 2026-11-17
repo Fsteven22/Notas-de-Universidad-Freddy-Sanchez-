@@ -126,7 +126,9 @@ dg-publish: true
 > |**2**|Aplicar una tercera NAND a las entradas invertidas: $S = NAND(\overline{A}, \overline{B})$|
 > |**3**|Verificación: $NAND(\overline{A},\overline{B}) = \overline{\overline{A}\cdot\overline{B}} = A + B$ (por la ley de De Morgan) ✅|
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_08_17.png]]
+> [!note] 🖼️ Ejercicios Prácticos
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_08_17.png]]
 
 ---
 
@@ -156,7 +158,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
 
 ---
 

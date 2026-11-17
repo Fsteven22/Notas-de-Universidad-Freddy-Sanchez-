@@ -44,7 +44,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
+> [!note] 🖼️ Campo Magnético e Inducción — Orsted y Faraday
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
 
 ---
 ## 🔄 Ley de Lenz
@@ -85,7 +87,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > El flujo $\Phi$ **aumenta**. Por Lenz, la bobina genera un campo que **se opone** al imán → la cara de la bobina más cercana se comporta como polo **Norte** (repele al imán). La corriente inducida circula en sentido antihorario vista desde el imán.
 > > 
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
+> [!note] 🖼️ Ley de Lenz
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
 
 ---
 ## ⚡ DC vs AC — Edison vs Tesla
@@ -124,7 +128,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Eficiencia** | ✅ Alta | Media |
 > | **Uso típico** | Plantas eléctricas, automóviles | Tracción eléctrica, carga de baterías |
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
+> [!note] 🖼️ Tipos de Generadores Eléctricos
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
 
 ---
 ## 🔁 Proceso General de Generación
@@ -249,7 +255,9 @@ tags: [EYAG1037, unidad1, electricidad]
 ---
   
 ## 📊 Resumen Visual 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 
 ## 📚 Referencias
 

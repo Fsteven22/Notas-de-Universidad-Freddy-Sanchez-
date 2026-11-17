@@ -157,7 +157,9 @@ dg-publish: true
 > |**Rampa / doble rampa**|Cuenta el tiempo que tarda una rampa en alcanzar la señal|Baja|Baja (pero muy precisa)|
 > |**Sigma-Delta**|Sobremuestreo + filtrado digital|Baja-media|Alta precisión, buena para audio/instrumentación|
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_41_51.png]]
+> [!note] 🖼️ ADC (Conversor Analógico-Digital)
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_41_51.png]]
 
 ---
 
@@ -229,7 +231,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
 
 ---
 

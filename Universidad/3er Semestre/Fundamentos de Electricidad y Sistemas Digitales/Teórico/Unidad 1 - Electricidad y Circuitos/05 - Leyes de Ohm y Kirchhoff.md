@@ -92,7 +92,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > $$V = I \cdot R = 3 \times 15 = 45\text{ V}$$
 
-![[../../Anexos/ChatGPT Image 19 may 2026, 23_07_06.png]]
+> [!note] 🖼️ Ley de Ohm
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 23_07_06.png]]
 
 ---
 
@@ -189,7 +191,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > ✅ Verificación KVL: $4 + 8 + 6 = 18\text{ V}$ ✓
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_46_11.png]]
+> [!note] 🖼️ KVL — Ley de Voltaje de Kirchhoff
+>
+> ![[../../Anexos/ChatGPT Image 31 may 2026, 23_46_11.png]]
 
 ---
 
@@ -219,7 +223,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > Resolviendo el sistema: $$I_1 = \frac{60}{26} \approx 2.31\text{ A} \qquad I_2 = \frac{12}{26} \approx 0.46\text{ A}$$
 
-![[../../Anexos/ChatGPT Image 31 may 2026, 23_56_09.png]]
+> [!note] 🖼️ Análisis de Circuitos con Múltiples Mallas
+>
+> ![[../../Anexos/ChatGPT Image 31 may 2026, 23_56_09.png]]
 
 ---
 
@@ -434,7 +440,9 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
 
 ---
 

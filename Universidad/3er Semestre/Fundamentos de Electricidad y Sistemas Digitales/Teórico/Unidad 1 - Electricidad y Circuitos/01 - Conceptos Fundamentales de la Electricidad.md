@@ -50,7 +50,9 @@ dg-publish: true
 > 
 > Donde $n$ es el número de electrones y $e = 1.6 \times 10^{-19}$ C.
 
-![[../../Anexos/Pasted image 20260519222355.png]]
+> [!note] 🖼️ Carga Eléctrica
+>
+> ![[../../Anexos/Pasted image 20260519222355.png]]
 
 ---
 
@@ -136,9 +138,13 @@ dg-publish: true
 > 
 > Cuando se tienen dos placas paralelas cargadas, el campo eléctrico entre ellas es constante (uniforme): el vector $E$ no cambia de dirección ni de magnitud entre las placas.
 
-![[../../Anexos/Pasted image 20260519222513.png]]
+> [!note] 🖼️ Campo Eléctrico
+>
+> ![[../../Anexos/Pasted image 20260519222513.png]]
 
-![[../../Anexos/Pasted image 20260519222726.png]]
+> [!note] 🖼️ Campo Eléctrico
+>
+> ![[../../Anexos/Pasted image 20260519222726.png]]
 
 ---
 
@@ -220,7 +226,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
 
 ---
 

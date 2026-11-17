@@ -87,7 +87,9 @@ dg-publish: true
 > 
 > Una de las técnicas más potentes contra el ruido —sobre todo el que se acopla igual a dos líneas de señal— es amplificar solo la **diferencia** entre dos entradas y rechazar lo que sea común a ambas (modo común). Esto se logra con un **amplificador diferencial** basado en amplificadores operacionales, tema que se profundiza en la Unidad 3 (Aplicaciones de los OPAMs — Minimización de ruido).
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
+> [!note] 🖼️ Técnicas de Mitigación con Semiconductores y Componentes Pasivos
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
 
 ---
 
@@ -131,7 +133,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
 
 ---
 

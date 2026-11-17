@@ -35,9 +35,13 @@ tags: [EYAG1037, unidad1, electricidad]
 
 
 
-![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
 
-![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
 
 ---
 
@@ -87,7 +91,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > |Voltajes y corrientes (cantidades lineales)|Potencia ($P = I^2R$: no lineal)|
 > |Circuitos con elementos lineales|Circuitos con elementos no lineales|
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
+> [!note] 🖼️ Teorema de Superposición
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
 
 ---
 
@@ -154,7 +160,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
+> [!note] 🖼️ Divisor de Voltaje y Divisor de Corriente
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
 
 ---
 
@@ -253,7 +261,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > ✅ Verificación: $V_{Th} = I_N \times R_N = 5 \times 2.4 = 12\text{ V}$ ✓
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
+> [!note] 🖼️ Teorema de Norton
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
 
 ---
 
@@ -282,7 +292,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > Equivalente Norton: $$I_s = \frac{20}{5} = 4\text{ A} \qquad \text{con } R_s = 5\ \Omega \text{ en paralelo}$$
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
+> [!note] 🖼️ Transformación de Fuentes
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
 
 ---
 
@@ -326,7 +338,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > 
 > > **Verificación:** $$I_L = \frac{12}{3+3} = 2\text{ A} \qquad P_L = (2)^2 \times 3 = 12\text{ W}\ ✓$$
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
+> [!note] 🖼️ Teorema de Máxima Transferencia de Potencia
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
 
 ---
 
@@ -433,7 +447,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
 
-![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
+> [!note] 🖼️ Métodos Directos Matriciales — Mallas y Nodos
+>
+> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
 
 ---
 
@@ -455,7 +471,9 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 
 ---
 

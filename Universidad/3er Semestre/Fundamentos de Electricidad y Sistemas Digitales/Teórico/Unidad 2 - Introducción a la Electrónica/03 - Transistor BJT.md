@@ -86,7 +86,9 @@ dg-publish: true
 > |**Saturación**|$I_B$ suficientemente grande|$I_{C_{max}}$|$\approx 0$|Switch cerrado|
 
 
-![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
+> [!note] 🖼️ Regiones de Operación
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
 
 ---
 
@@ -139,7 +141,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_03.svg]]
 
 ---
 

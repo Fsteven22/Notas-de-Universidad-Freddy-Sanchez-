@@ -261,7 +261,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
 
 ---
 

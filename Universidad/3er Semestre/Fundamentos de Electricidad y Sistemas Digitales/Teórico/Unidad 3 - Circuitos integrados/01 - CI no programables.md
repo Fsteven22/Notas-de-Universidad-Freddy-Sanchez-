@@ -92,7 +92,9 @@ dg-publish: true
 > |**06 — Aplicaciones de 555 / ADC / PWM**|Temporizador 555, convertidores ADC, generación de PWM|Acondicionamiento de señales|
 > |**07 — Lógica fija**|Compuertas lógicas (familias 74xx/40xx)|Circuitos combinacionales y tablas de verdad|
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
+> [!note] 🖼️ Vista Previa: Qué Viene en Esta Unidad
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
 
 ---
 
@@ -136,7 +138,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
 
 ---
 

@@ -188,7 +188,9 @@ dg-publish: true
 > 
 > > 📌 El detalle de cómo lo logra (Zener, transistor en serie, IC 78xx/79xx, LM317/LM337) se desarrolla en [[05 - Reguladores en Fuentes Lineales]].
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_31_07.png]]
+> [!note] 🖼️ El Regulador (adelanto)
+>
+> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_31_07.png]]
 
 ---
 
@@ -259,7 +261,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_de_Filtrado_y_Fuentes_Lineales_05.svg]]
 
 ---
 

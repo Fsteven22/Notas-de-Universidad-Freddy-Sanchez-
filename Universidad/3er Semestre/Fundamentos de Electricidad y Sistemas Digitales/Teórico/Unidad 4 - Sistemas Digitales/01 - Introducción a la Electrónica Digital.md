@@ -180,7 +180,9 @@ dg-publish: true
 >
 > Es decir, "A en lógica positiva (activo en alto)" es la misma señal física que "$\overline{A}$ en lógica negativa (activo en bajo)". Esto permite, por ejemplo, leer una compuerta AND con salida negada como si fuera una OR en lógica negativa — el circuito físico no cambia, cambia la interpretación.
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
+> [!note] 🖼️ Lógica Positiva y Negativa
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
 
 ---
 
@@ -204,7 +206,9 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué convención de lógica usar?
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
+> [!note] 🖼️ Diagrama de Decisión: ¿Qué convención de lógica usar?
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
 
 ---
 
@@ -291,7 +295,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
 
 ---
 

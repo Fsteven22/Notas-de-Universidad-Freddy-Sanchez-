@@ -69,7 +69,9 @@ dg-publish: true
 
 ## 🔀 ¿SOP o POS? Criterio de elección
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
+> [!note] 🖼️ ¿SOP o POS? Criterio de elección
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
 
 ---
 
@@ -161,7 +163,9 @@ dg-publish: true
 > 
 > > 📌 El patrón general: con **NAND**, para obtener AND necesitas negar la salida; para obtener OR necesitas negar las entradas. Con **NOR** es al revés: para OR niegas la salida, para AND niegas las entradas.
 
-![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
+> [!note] 🖼️ Implementación Solo con NAND o Solo con NOR
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
 
 ---
 
@@ -258,7 +262,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
 
 ---
 

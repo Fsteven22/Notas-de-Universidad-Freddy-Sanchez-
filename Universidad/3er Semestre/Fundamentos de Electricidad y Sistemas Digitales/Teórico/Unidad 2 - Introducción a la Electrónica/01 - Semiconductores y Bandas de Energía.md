@@ -66,7 +66,9 @@ dg-publish: true
 > |**Semiconductor Ge**|$0.67\text{ eV}$|Más fácil de excitar que el Si|
 > |**Conductor**|$\approx 0$|Bandas solapadas, electrones libres siempre|
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
+> [!note] 🖼️ Estructura Atómica y Bandas de Energía
+>
+> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
 
 ---
 
@@ -110,7 +112,9 @@ dg-publish: true
 > 
 > > 💡 **Analogía del hueco:** es como un asiento vacío en un bus. El asiento no se mueve, pero cuando alguien lo ocupa deja otro vacío — la "ausencia" se desplaza.
 
-![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
+> [!note] 🖼️ Tipos de Semiconductores
+>
+> ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
 
 ---
 
@@ -129,7 +133,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
 
 ---
 

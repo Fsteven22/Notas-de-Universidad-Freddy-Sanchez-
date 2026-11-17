@@ -95,7 +95,9 @@ tags: [recursos-visuales, fesd]
 >
 > Ver también: [[Equipos del Laboratorio - FESD|Equipos del Laboratorio]].
 
-![[Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260525231841.png]]
+> [!note] 🖼️ Práctico y Laboratorio
+>
+> ![[Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260525231841.png]]
 
 ---
 

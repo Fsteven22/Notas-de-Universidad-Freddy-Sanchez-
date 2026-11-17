@@ -95,7 +95,9 @@ dg-publish: true
 > 
 > > 📌 Es la configuración recomendada siempre que una señal analógica ruidosa deba convertirse en una señal digital limpia — puente directo hacia el siguiente tema de esta unidad (555, ADC, PWM).
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 13_36_02.png]]
+> [!note] 🖼️ Comparador con Histéresis — Inmunidad en Señales Digitales
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_36_02.png]]
 
 ---
 
@@ -210,7 +212,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
 
 ---
 

@@ -64,7 +64,9 @@ dg-publish: true
 > |**Flexibilidad**|Baja (un valor por IC)|Alta (un solo IC sirve para varios voltajes)|
 > |**Uso típico**|Voltajes estándar conocidos (5V, 12V, etc.)|Prototipos, fuentes de banco, voltajes no estándar|
 
-![[../../Anexos/ChatGPT Image 22 jul 2026, 12_37_04.png]]
+> [!note] 🖼️ Reguladores en Serie Ajustables (LM317 / LM337 / LM137)
+>
+> ![[../../Anexos/ChatGPT Image 22 jul 2026, 12_37_04.png]]
 
 ---
 
@@ -108,7 +110,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
 
 ---
 

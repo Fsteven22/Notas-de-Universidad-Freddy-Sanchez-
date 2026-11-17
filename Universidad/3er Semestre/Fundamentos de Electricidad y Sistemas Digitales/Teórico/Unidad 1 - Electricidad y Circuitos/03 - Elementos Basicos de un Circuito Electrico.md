@@ -31,9 +31,13 @@ tags: [EYAG1037, unidad1, electricidad]
 
 
 
-![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230346.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230346.png]]
 
-![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519225934.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519225934.png]]
 
 ---
 
@@ -113,7 +117,9 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > **Calibre AWG:** En América Latina se usa el estándar **AWG (American Wire Gauge)** para medir el diámetro de los conductores. A menor número AWG, mayor diámetro y mayor capacidad de corriente (ej. AWG 12 para circuitos de 20 A en hogares).
 
-![[../../Anexos/Pasted image 20260519225615.png]]
+> [!note] 🖼️ Conductores
+>
+> ![[../../Anexos/Pasted image 20260519225615.png]]
 
 ---
 
@@ -167,7 +173,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Potencia** | Máxima potencia disipable sin dañarse (¼ W, ½ W, 1 W, 2 W…) |
 > | **Coeficiente de temperatura** | Variación de R con la temperatura (ppm/°C) |
 
-![[../../Anexos/Pasted image 20260519225108.png]]
+> [!note] 🖼️ ⊟ Resistencias
+>
+> ![[../../Anexos/Pasted image 20260519225108.png]]
 
 ---
 
@@ -212,7 +220,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > ⚠️ Los capacitores electrolíticos **deben conectarse respetando la polaridad** (+ y −). Invertirlos puede dañarlos o causar cortocircuito.
 
 
- ![[../../Anexos/Pasted image 20260519225814.png]]
+> [!note] 🖼️ ⊣⊢ Capacitores
+>
+> ![[../../Anexos/Pasted image 20260519225814.png]]
 
 ---
 
@@ -252,7 +262,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Motores y relés** | Genera campo magnético para movimiento mecánico |
 
 
-![[../../Anexos/Pasted image 20260519225956.png]]
+> [!note] 🖼️ Inductores
+>
+> ![[../../Anexos/Pasted image 20260519225956.png]]
 
 ---
 ## 🌍 Simbología EU vs US
@@ -293,7 +305,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > > Una pequeña corriente de control energiza la **bobina** del relé, generando un campo magnético que atrae un contacto metálico y cierra (o abre) un circuito de mayor potencia. Permite controlar cargas grandes con señales pequeñas.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
-![[../../Anexos/ChatGPT Image 30 may 2026, 18_49_08.png]]
+> [!note] 🖼️ Elementos de Control
+>
+> ![[../../Anexos/ChatGPT Image 30 may 2026, 18_49_08.png]]
 
 ---
 ## ⚖️ Comparación de los Tres Elementos Pasivos
@@ -311,13 +325,17 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
 > 
-![[../../Anexos/ChatGPT Image 19 may 2026, 23_02_18.png]]
+> [!note] 🖼️ Comparación de los Tres Elementos Pasivos
+>
+> ![[../../Anexos/ChatGPT Image 19 may 2026, 23_02_18.png]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
 
 ---
 

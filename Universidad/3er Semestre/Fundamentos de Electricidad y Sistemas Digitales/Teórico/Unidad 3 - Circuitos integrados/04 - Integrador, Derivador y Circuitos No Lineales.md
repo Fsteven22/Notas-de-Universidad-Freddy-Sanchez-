@@ -242,7 +242,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
 
 ---
 

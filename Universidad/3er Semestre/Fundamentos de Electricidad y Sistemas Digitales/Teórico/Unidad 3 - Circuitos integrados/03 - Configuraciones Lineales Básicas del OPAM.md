@@ -218,7 +218,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
 
 ---
 

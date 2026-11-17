@@ -18,7 +18,9 @@ dg-publish: true
 > 
 > La corriente fluye de **Ánodo → Cátodo** en polarización directa (sentido convencional = flujo de huecos).
 
-![[../../Anexos/ChatGPT Image 14 jul 2026, 21_25_28.png]]
+> [!note] 🖼️ Introducción
+>
+> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_25_28.png]]
 
 ---
 
@@ -97,7 +99,9 @@ dg-publish: true
 > 
 > > 📌 **Regla práctica:** diodo ideal en directa = interruptor cerrado; en inversa = interruptor abierto.
 
-![[../../Anexos/ChatGPT Image 20 jun 2026, 21_45_03.png]]
+> [!note] 🖼️ Curva Característica I-V
+>
+> ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_45_03.png]]
 
 ---
 
@@ -170,7 +174,9 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
+> [!note] 🖼️ Resumen Visual
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
 
 ---
 
