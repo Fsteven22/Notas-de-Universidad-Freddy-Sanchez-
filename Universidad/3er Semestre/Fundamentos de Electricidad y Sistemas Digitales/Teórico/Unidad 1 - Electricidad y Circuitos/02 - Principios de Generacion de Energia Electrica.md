@@ -274,8 +274,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] M. A. El-Sharkawi, *Electric Energy: An Introduction*, 3rd ed. Boca Raton, FL, USA: CRC Press, 2012, pp. 1–60.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Enuncio la Ley de Faraday E = -N·dF/dt y explico el rol del flujo magnetico.

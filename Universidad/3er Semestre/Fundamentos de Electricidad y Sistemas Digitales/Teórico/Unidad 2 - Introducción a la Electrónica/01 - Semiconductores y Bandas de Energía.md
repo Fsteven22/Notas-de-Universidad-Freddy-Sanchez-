@@ -139,8 +139,7 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Defino semiconductor y distingo conductor vs semiconductor vs aislante por resistividad y Eg.

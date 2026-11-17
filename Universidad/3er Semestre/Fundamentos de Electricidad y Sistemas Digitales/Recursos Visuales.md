@@ -11,7 +11,7 @@ tags: [recursos-visuales, fesd]
 > Cada link está **verificado** (videoId + título real + canal + duración).
 > **Complementa** las guías y los apuntes del curso: no los sustituye.
 
-## Teoría — Diodos y dispositivos
+## 📖 Teoría — Diodos y dispositivos
 
 > [!info] 🎬 Teoría — Diodos y dispositivos
 >
@@ -25,7 +25,7 @@ tags: [recursos-visuales, fesd]
 > | Transistores BJT - Polarización I | [Link](https://www.youtube.com/watch?v=LpZYUTWK2Kk) | Radioelectronica-Spain, 31:45 | la polarización, parte 1. |
 > | Transistores BJT - Polarización II | [Link](https://www.youtube.com/watch?v=rhTZOegfbQI) | Radioelectronica-Spain, 13:11 | la polarización, parte 2. |
 
-## Teoría — Análisis de circuitos
+## 📖 Teoría — Análisis de circuitos
 
 > [!info] 🎬 Teoría — Análisis de circuitos
 >
@@ -39,7 +39,7 @@ tags: [recursos-visuales, fesd]
 > | Teorema de Thévenin | [Link](https://www.youtube.com/watch?v=VF_qr9VUwvw) | Electrónica FP, 8:52 | para simplificar circuitos antes de analizar. |
 > | Equivalentes de Thévenin y Norton | [Link](https://www.youtube.com/watch?v=BlkME9ypmuc) | El Traductor de Ingeniería, 28:00 | la misma idea con Norton. |
 
-## Teoría — Amplificadores operacionales
+## 📖 Teoría — Amplificadores operacionales
 
 > [!info] 🎬 Teoría — Amplificadores operacionales
 >
@@ -50,7 +50,7 @@ tags: [recursos-visuales, fesd]
 > | Amplificador integrador en 6 minutos | [Link](https://www.youtube.com/watch?v=qMHSr4FAPAM) | Les Ingenieurs, 7:57 | el integrador con op-amp, paso a paso. |
 > | Amplificador operacional: comparador | [Link](https://www.youtube.com/watch?v=EbobLluwmP4) | Electrónica FP, 6:38 | el comparador como caso de uso. |
 
-## Teoría — Corrientes alternas y RLC
+## 📖 Teoría — Corrientes alternas y RLC
 
 > [!info] 🎬 Teoría — Corrientes alternas y RLC
 >
@@ -61,7 +61,7 @@ tags: [recursos-visuales, fesd]
 > | Análisis resonancia serie y paralelo, parte I | [Link](https://www.youtube.com/watch?v=KxDOmMMo6so) | ACADENAS, 24:20 | serie contra paralelo. |
 > | Circuitos RLC: resonancia en RLC serie y RLC paralelo | [Link](https://www.youtube.com/watch?v=M-JqtwZ-BmM) | Federico Barisani, 5:13 | el resumen. |
 
-## Práctica — Instrumentos de medición
+## 🧪 Práctica — Instrumentos de medición
 
 > [!info] 🎬 Práctica — Instrumentos de medición
 >

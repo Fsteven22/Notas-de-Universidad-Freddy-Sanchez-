@@ -156,8 +156,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
 >
 > - [ ] Identifico el ánodo y cátodo del diodo 1N4007 y verifico la polaridad en el montaje.

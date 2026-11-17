@@ -144,8 +144,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
 >
 > - [ ] Identifico las 4 etapas de una fuente lineal (transformador, rectificador, filtro, regulador) en el diagrama de bloques.

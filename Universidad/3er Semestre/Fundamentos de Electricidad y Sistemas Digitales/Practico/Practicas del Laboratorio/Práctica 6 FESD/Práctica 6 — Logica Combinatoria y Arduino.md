@@ -206,8 +206,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Usa [[FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]] y [[Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]] para entregar. Simulaciones en Proteus.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Básico
 >
 > - [ ] Identifico los integrados 74LS04, 74LS08 y 74HC32 y verifico sus pines VCC y GND en el datasheet.

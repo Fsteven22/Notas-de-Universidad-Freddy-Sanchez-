@@ -148,8 +148,7 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Describo la union P-N, la region de vaciamiento y Vbarrera (0.7 V Si, 0.3 V Ge).

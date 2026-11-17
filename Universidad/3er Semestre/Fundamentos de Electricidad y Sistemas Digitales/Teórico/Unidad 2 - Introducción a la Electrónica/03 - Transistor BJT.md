@@ -115,8 +115,7 @@ dg-publish: true
 
 ---
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Identifico terminales B, C, E y leo la flecha del simbolo para distinguir NPN vs PNP.

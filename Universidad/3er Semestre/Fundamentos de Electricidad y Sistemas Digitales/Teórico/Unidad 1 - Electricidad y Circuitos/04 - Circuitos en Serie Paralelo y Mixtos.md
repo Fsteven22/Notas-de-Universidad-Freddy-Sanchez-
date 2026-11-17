@@ -162,7 +162,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ---
 
-## ⊣⊢ Capacitores en Serie y Paralelo
+## 🔋 Capacitores en Serie y Paralelo
 
 > [!tip]- ⚡ Combinación de Capacitores
 >
@@ -370,8 +370,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] A. Hermosa Donante, *Electrónica Aplicada*, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 76–130. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Enuncio leyes de serie (I igual, V se divide, Req suma) y paralelo (V igual, I se divide).

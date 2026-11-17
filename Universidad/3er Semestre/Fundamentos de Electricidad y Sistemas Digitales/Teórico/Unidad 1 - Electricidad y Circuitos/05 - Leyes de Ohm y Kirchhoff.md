@@ -460,8 +460,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > [5] A. Hermosa Donante, _Electrónica Aplicada_, 1.ª ed. Mexico: Alfaomega Grupo Editor, 2013, pp. 30–75. ISBN-13: 9786077074045.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Escribo V=IR y sus formas I=V/R, R=V/I y distingo elemento lineal vs no lineal.

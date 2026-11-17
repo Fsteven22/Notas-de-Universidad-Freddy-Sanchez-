@@ -17,7 +17,7 @@ dg-publish: true
 
 ---
 
-## ∫ Integrador — La salida es la integral de la entrada
+## ➗ Integrador — La salida es la integral de la entrada
 
 > [!note] ∫ Principio (PDF p. 21)
 >
@@ -60,7 +60,7 @@ dg-publish: true
 
 ---
 
-## d/dt Derivador — La salida es la derivada de la entrada
+## ➗ Derivador — La salida es la derivada de la entrada
 
 > [!note] d/dt Principio (PDF p. 24)
 >

@@ -123,7 +123,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ---
 
-## ⊟ Resistencias
+## 🔌 Resistencias
 
 > [!tip]- 🔩 Disipadores de Energía
 >
@@ -179,7 +179,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ---
 
-## ⊣⊢ Capacitores
+## 🔋 Capacitores
 
 > [!tip]- ⚡ Almacenadores de Carga Eléctrica
 >
@@ -353,8 +353,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > [5] T. L. Floyd, *Electronic Devices*, 10th ed. Hoboken, NJ, USA: Pearson, 2017, pp. 1–40.
 
-## Metas de Aprendizaje
-
+## ✅ Metas de Aprendizaje
 > [!note] Nivel Basico
 >
 > - [ ] Identifico los 5 elementos basicos (fuente, conductor, R, C, L) y su funcion.
