@@ -150,13 +150,6 @@ dg-publish: true
 > 
 > **Por qué importa:** Convierte en imagen las reglas de la tabla (dirección + → −, densidad proporcional a $|E|$, líneas que no se cruzan): viendo dónde se amontonan las líneas sabes dónde el campo es más intenso y por dónde viajaría una carga de prueba positiva.
 
-> [!note] 🖼️ Campo Eléctrico
->
-> ![[../../Anexos/Pasted image 20260519222726.png]]
-> 
-> **Se lee así:** La figura compara "Potencia eléctrica vs energía": a la izquierda, la **potencia** (vatios, kilovatios) equiparada al caudal del agua que sale del tubo; a la derecha, la **energía** (horas watt, kilowatt horas) equiparada a la cantidad de agua que termina en el balde.
-> 
-> **Por qué importa:** Separa dos magnitudes que la factura eléctrica confunde a diario — el ritmo de consumo (kW) y lo acumulado (kWh) — evitando el error de dimensionar medidores o planificar cargas creyendo que son lo mismo.
 
 ---
 

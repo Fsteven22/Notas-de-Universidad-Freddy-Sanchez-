@@ -40,6 +40,14 @@ dg-publish: true
 > |**Decimal**|10|0–9|Sistema natural humano; punto de partida para conversión|
 > |**Hexadecimal**|16|0–9, A–F|Notación compacta de grupos de 4 bits (direcciones de memoria, colores, registros)|
 
+> [!note] 🖼️ Por qué todo es binario
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
+> 
+> **Se lee así:** La infografía resume en tres paneles por qué todo se representa en binario: (1) el mundo analógico entrega una señal continua, (2) un ADC de 8 bits la discretiza (ej. Vin = 3.42 V → código de 8 bits, ≈256 niveles, 5 V/255 ≈ 19.6 mV por LSB), y (3) las compuertas solo entienden dos niveles de voltaje, H ≈ 5 V y L ≈ 0 V, con umbrales típicos TTL/CMOS. Abajo incluye además la conversión de (173)₁₀ a binario por divisiones sucesivas.
+> 
+> **Por qué importa:** Cierra el círculo entre el voltaje físico y el bit que el circuito interpreta: por eso el sistema de esta unidad es el binario.
+
 ---
 
 ## 🔁 Conversión Entre Sistemas
@@ -188,13 +196,6 @@ dg-publish: true
 >
 > Es decir, "A en lógica positiva (activo en alto)" es la misma señal física que "$\overline{A}$ en lógica negativa (activo en bajo)". Esto permite, por ejemplo, leer una compuerta AND con salida negada como si fuera una OR en lógica negativa — el circuito físico no cambia, cambia la interpretación.
 
-> [!note] 🖼️ Lógica Positiva y Negativa
->
-> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_14_00.png]]
-> 
-> **Se lee así:** La infografía resume en tres paneles por qué todo se representa en binario: (1) el mundo analógico entrega una señal continua, (2) un ADC de 8 bits la discretiza (ej. Vin = 3.42 V → código de 8 bits, ≈256 niveles, 5 V/255 ≈ 19.6 mV por LSB), y (3) las compuertas solo entienden dos niveles de voltaje, H ≈ 5 V y L ≈ 0 V, con umbrales típicos TTL/CMOS. Abajo incluye además la conversión de (173)₁₀ a binario por divisiones sucesivas.
-> 
-> **Por qué importa:** Cierra el círculo entre el voltaje físico y el bit que el circuito interpreta, que es exactamente lo que hay que tener claro antes de elegir una convención de lógica positiva o negativa.
 
 ---
 

@@ -152,6 +152,14 @@ dg-publish: true
 > 
 > > 📌 Este ejemplo muestra el proceso en dos etapas: primero se combinan parejas adyacentes ($G_1$ con $G_2$, $G_3$ con $G_4$), y luego se observa que los grupos resultantes ($G_{12}$ y $G_{34}$) ya no pueden simplificarse más entre sí.
 
+> [!note] 🖼️ Chuleta MK de 4 variables
+>
+> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
+> 
+> **Se lee así:** La infografía recoge las reglas para formar grupos en un mapa de Karnaugh de 4 variables (grupos de 1, 2, 4, 8 o 16 celdas adyacentes, envoltorio toroidal por bordes y esquinas, uso de 1 y X «don't care», grupos solapados y preferencia por los grupos más grandes) sobre el mapa completo AB × CD, y debajo resuelve el ejercicio de Nivel 3 del reloj BCD (hora ≥ 7) con F = D·C̄ + C·B·A usando los don't-care 10–15.
+> 
+> **Por qué importa:** Es la chuleta del método: tener estas reglas a la mano es lo que separa un mapa resuelto por intuición de uno resuelto sistemáticamente, y el ejemplo del reloj BCD muestra cómo explotar los don't-care para reducir el número de compuertas en un problema real.
+
 ---
 
 ## ⚙️ Implementación Solo con NAND o Solo con NOR
@@ -171,13 +179,6 @@ dg-publish: true
 > 
 > > 📌 El patrón general: con **NAND**, para obtener AND necesitas negar la salida; para obtener OR necesitas negar las entradas. Con **NOR** es al revés: para OR niegas la salida, para AND niegas las entradas.
 
-> [!note] 🖼️ Implementación Solo con NAND o Solo con NOR
->
-> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
-> 
-> **Se lee así:** La infografía recoge las reglas para formar grupos en un mapa de Karnaugh de 4 variables (grupos de 1, 2, 4, 8 o 16 celdas adyacentes, envoltorio toroidal por bordes y esquinas, uso de 1 y X «don't care», grupos solapados y preferencia por los grupos más grandes) sobre el mapa completo AB × CD, y debajo resuelve el ejercicio de Nivel 3 del reloj BCD (hora ≥ 7) con F = D·C̄ + C·B·A usando los don't-care 10–15.
-> 
-> **Por qué importa:** Es la chuleta del método: tener estas reglas a la mano es lo que separa un mapa resuelto por intuición de uno resuelto sistemáticamente, y el ejemplo del reloj BCD muestra cómo explotar los don't-care para reducir el número de compuertas en un problema real.
 
 ---
 

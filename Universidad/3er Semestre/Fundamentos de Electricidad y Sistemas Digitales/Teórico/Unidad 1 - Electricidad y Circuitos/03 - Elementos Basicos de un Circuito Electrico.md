@@ -191,6 +191,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Potencia** | Máxima potencia disipable sin dañarse (¼ W, ½ W, 1 W, 2 W…) |
 > | **Coeficiente de temperatura** | Variación de R con la temperatura (ppm/°C) |
 
+> [!note] 🖼️ Potencia vs energía
+>
+> ![[../../Anexos/Pasted image 20260519222726.png]]
+> 
+> **Se lee así:** La figura compara "Potencia eléctrica vs energía": a la izquierda, la **potencia** (vatios, kilovatios) equiparada al caudal del agua que sale del tubo; a la derecha, la **energía** (horas watt, kilowatt horas) equiparada a la cantidad de agua que termina en el balde.
+> 
+> **Por qué importa:** Separa dos magnitudes que la factura eléctrica confunde a diario — el ritmo de consumo (kW) y lo acumulado (kWh) — evitando el error de dimensionar medidores o planificar cargas creyendo que son lo mismo.
+
 > [!note] 🖼️ ⊟ Resistencias
 >
 > ![[../../Anexos/Pasted image 20260519225108.png]]

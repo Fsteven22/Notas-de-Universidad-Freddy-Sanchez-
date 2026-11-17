@@ -250,13 +250,12 @@ una herramienta, y el sitio publica la carpeta de la materia. Vive en
 `Universidad/Herramientas/Mantenimiento/`, junto al validador que lo aplica (`qa_formato_fesd.py`) y
 a su hermano (`FORMATO-SBD.md`).
 
-> [!success] ✅ Estado actual (ronda mecánica cerrada 2026-11-16)
-> `qa_formato_fesd.py` registra **118** hallazgos en las **33** notas:
-> **0** errores (H), **0** avisos (W) y **118** pendientes de lectura (P, solo R14).
-> Línea base 2026-11-16 (sesión FESD): 482 → rutas (F2) → PDF/enlaces (F3) →
-> callouts y prosa (F3) → secciones H2 faltantes (F4) → 6 `.mmd` (F5).
-> Lo que queda (segunda ronda): las **118 lecturas** (todo embed visual lleva su
-> `**Se lee así:**` / `**Por qué importa:**`) y la decisión de si se capturan PNG
-> de páginas de PDFs de clase que las notas transcriban en el futuro.
-> `--estricto` pasa sin fallar; `--estricto-pendientes` seguirá fallando hasta que
-> se cierre la ronda de lecturas.
+> [!success] ✅ Estado actual (ronda mecánica y ronda de lecturas cerradas 2026-11-16)
+> `qa_formato_fesd.py` registra **0** hallazgos en las **33** notas: **0** errores (H),
+> **0** avisos (W) y **0** pendientes (P). Línea base 2026-11-16: 608 → 482 → 118 → **0**.
+> Las 118 lecturas (R14, embeds sin `**Se lee así:**`) se cerraron en la segunda ronda.
+> Además: los 6 `.mmd` reconstruidos desde SVG (re-render verificado 6/6) y las figuras
+> con contenido ajeno a su sección se reubicaron (potencia vs energía → Filtro de
+> Resistencias de 03; "Por qué todo es binario" → Sistemas de Numeración de U4/01;
+> chuleta MK de 4 variables → Mapas de Karnaugh de U4/02).
+> `--estricto` y `--estricto-pendientes` pasan sin fallar.
