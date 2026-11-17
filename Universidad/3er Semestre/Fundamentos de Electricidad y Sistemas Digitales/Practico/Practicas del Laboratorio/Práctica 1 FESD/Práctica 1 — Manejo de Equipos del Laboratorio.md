@@ -12,6 +12,14 @@ tags: [EYAG1037, laboratorio, practicas]
 > - ❌ No manipular conexiones sin supervisión del profesor.
 > - 🧤 Usar **guantes dieléctricos de baja tensión**.
 
+> [!note] 🔌 Tomacorrientes en paralelo
+>
+> ![[../../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230457.png]]
+> 
+> **Se lee así:** la imagen muestra la conexión en paralelo de varios tomacorrientes alimentados desde la misma línea, neutro y tierra (cableado de instalaciones).
+> 
+> **Por qué importa:** cada tomacorriente recibe el mismo voltaje de línea y las corrientes se suman en el punto común; por eso no se deben conectar más equipos de los que la línea admite, y por eso en el laboratorio las fuentes separadas alimentan cada práctica de forma controlada.
+
 ---
 
 ## 🎯 Objetivos

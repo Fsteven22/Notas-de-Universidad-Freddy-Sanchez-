@@ -35,12 +35,6 @@ dg-publish: true
 > 
 > **Por qué importa:** Tener claro qué puntos están unidos entre sí antes de armar evita cortos accidentales y «conexiones fantasma»: nodos que parecen correctos en el tablero pero no están eléctricamente unidos.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230457.png]]
-> 
-> **Se lee así:** La imagen muestra la conexión en paralelo de varios tomacorrientes alimentados desde la misma línea, neutro y tierra (cableado de instalaciones), no el tablero universal — parece una figura de instalaciones que no corresponde a lo que este apartado describe.
-> 
-> **Por qué importa:** Si buscas la lógica de conexión del tablero universal, esta figura no te la va a mostrar; conviene confirmar con el profesor si esta imagen debe estar en esta sección, para no estudiar de una figura que no corresponde al equipo.
-> 
 > > ⚠️ Los puntos grandes están **aislados entre sí**. No confundir con el protoboard.
 > 
 > ![[../../Anexos/Pasted image 20260525231332.png]]
