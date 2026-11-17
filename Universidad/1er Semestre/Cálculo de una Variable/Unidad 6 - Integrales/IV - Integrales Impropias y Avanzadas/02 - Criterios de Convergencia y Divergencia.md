@@ -1,525 +1,469 @@
 ---
 dg-publish: true
-tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas, series, convergencia, divergencia, límites, análisis, criterios-convergencia, series-infinitas, sucesiones]
+tags: [MATG1045, unidad6, criterios-de-convergencia, series, integrales-impropias, convergencia-absoluta, leibniz, criterio-integral, comparacion, dirichlet, abel]
 ---
 
 # 📘 Criterios de Convergencia y Divergencia
 
->[!quote] *"En el infinito matemático, no todas las sumas llegan a un destino finito. Los criterios de convergencia son las brújulas que nos guían en el vasto océano de las series infinitas, distinguiendo entre aquellas que convergen hacia un valor específico y las que divergen hacia el infinito o la oscilación eterna."*
->
+## 🎯 Introducción
 
-> [!info]+ Definiciones Fundamentales 📏
+> [!info] 💡 La misma pregunta en dos escenarios
 >
-> ### Convergencia de Series
-> Una **serie infinita** $\sum_{n=1}^{\infty} a_n$ **converge** si la sucesión de sumas parciales $S_n = \sum_{k=1}^{n} a_k$ tiene un límite finito cuando $n \to \infty$.
+> "¿Esta suma infinita o esta área infinita tiene destino finito?" — esa es la pregunta de la nota. En **series** ($\sum_{n=1}^{\infty} a_n$) la respuesta la dan los criterios de comparación, razón, raíz, integral y Leibniz; en **integrales impropias** ($\int_a^{\infty} f$) los mismos criterios, adaptados al continuo. Los dos escenarios comparten la estructura: una condición necesaria, una familia de criterios positivos, un caso alternado/oscilatorio y unas integrales/series de referencia que hacen de contraste.
 >
-> **$$\sum_{n=1}^{\infty} a_n = L \quad \text{si} \quad \lim_{n \to \infty} S_n = L < \infty$$**
+> **Por qué importa:** en examen casi nunca se pide integrar o sumar: se pide **decidir convergencia** con el criterio correcto. Elegir mal cuesta el ejercicio entero, y por eso esta nota está organizada como un algoritmo de decisión, no como una lista de fórmulas sueltas.
 >
-> ### Divergencia de Series
-> Una serie **diverge** si:
-> - La sucesión de sumas parciales tiende a $\pm\infty$
-> - Las sumas parciales oscilan sin límite
-> - El límite no existe o no es finito
->
-> ### Convergencia de Sucesiones
-> Una sucesión $\{a_n\}$ **converge** a $L$ si: $\lim_{n \to \infty} a_n = L$
->
+> **Ejemplo:** $\sum_{n=0}^{\infty} \left(\frac{2}{3}\right)^n$ converge a $3$ por razón ($L = 2/3 < 1$), mientras que $\int_1^{\infty} \frac{1}{x}\,dx$ diverge porque su límite es $\infty$.
 
-> [!note] Clasificación de Comportamientos ⚖️
+> [!tip] 🎯 Por qué conviene tenerlos juntos
 >
-> ### Tipos de Convergencia y Divergencia
+> - Los criterios de **series** y de **integrales** son el mismo método con otro objeto.
+> - El **criterio integral** es el puente directo entre los dos mundos.
+> - Las **series de referencia** (geométrica, $p$-serie, armónica) funcionan como las **integrales de referencia** ($1/x^p$, $e^{-ax}$).
+> - El error más común es invertir las condiciones de $p$ entre el infinito y la discontinuidad.
+>
+> **Por qué importa:** estudiarlos en paralelo te ahorra la mitad del esfuerzo: lo que sepas de series lo llevas a integrales y al revés.
+
+---
+
+## 📋 Definiciones Formales
+
+> [!note] 📋 Definición — Serie infinita que converge o diverge
+>
+> Una **serie infinita** $\sum_{n=1}^{\infty} a_n$ tiene sumas parciales $S_n = \sum_{k=1}^{n} a_k$. La serie **converge** si $S_n$ tiene límite finito:
+>
+> $$\sum_{n=1}^{\infty} a_n = L \quad \text{si} \quad \lim_{n \to \infty} S_n = L < \infty$$
+>
+> **Diverge** si las sumas parciales tienden a $\pm\infty$, oscilan sin límite, o simplemente no tienen límite finito. Una **sucesión** $\{a_n\}$ converge a $L$ cuando $\lim_{n \to \infty} a_n = L$.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_01.svg]]
 >
-> **Se lee así:** La raíz es una caja de series infinitas que se bifurca en dos ramas, convergentes y divergentes. La rama convergente se abre otra vez en dos hojas, una para la convergencia absoluta y otra para la condicional, mientras la rama divergente se abre en tres, hacia el infinito positivo, el infinito negativo y la oscilación sin límite. Aparte, más abajo, hay una caja que anuncia casos típicos y apunta a una sola caja con su lista.
+> **Se lee así:** la raíz es una caja de "series infinitas" que se bifurca en dos ramas, convergentes y divergentes. La rama convergente se abre en dos hojas, **convergencia absoluta** y **convergencia condicional**; la divergente se abre en tres, hacia el infinito positivo, el infinito negativo y la oscilación sin límite. Aparte, más abajo, una caja de "casos típicos" apunta a la lista de series ya estudiadas.
 >
-> **Por qué importa:** Fíjate en que el esquema te da el mapa completo de los desenlaces posibles antes de aplicar un criterio. Esto te sirve para saber qué estás buscando y para no responder solo converge o diverge, sino **de qué tipo** es la convergencia o la divergencia.
+> **Por qué importa:** el esquema te da el **mapa de desenlaces posibles** antes de aplicar cualquier criterio. No basta con responder "converge": conviene saber **de qué tipo**, porque la condicional cambia de valor al reordenar los términos.
 >
-> **Ejemplo:** Con la serie geométrica $\sum_{n=0}^{\infty} r^n$ de la nota, si $|r| < 1$ encajas en la hoja de convergencia absoluta y si $|r| \geq 1$ en una de las tres hojas de divergencia.
->
+> **Ejemplo:** con la geométrica $\sum_{n=0}^{\infty} r^n$, si $|r| < 1$ caes en la hoja de convergencia absoluta y si $|r| \geq 1$ en una de las tres hojas de divergencia.
 
-> [!tip] Criterios de Convergencia para Series Positivas 🔬
+> [!note] 📋 Definición — Integral impropia que converge o diverge
 >
-> ### 1. Criterio de Comparación
-> **Sean $\sum a_n$ y $\sum b_n$ series con $a_n, b_n \geq 0$ y $a_n \leq b_n$ para $n$ suficientemente grande:**
-> - Si $\sum b_n$ converge → $\sum a_n$ converge
-> - Si $\sum a_n$ diverge → $\sum b_n$ diverge
+> Una **integral impropia** tiene al menos una de estas características:
 >
-> ### 2. Criterio de Comparación por Límite
-> **Si $\lim_{n \to \infty} \frac{a_n}{b_n} = L$ donde $0 < L < \infty$:**
-> - $\sum a_n$ y $\sum b_n$ tienen el mismo comportamiento
+> **Tipo I — límites infinitos:** $\int_a^{\infty} f = \lim_{t \to \infty} \int_a^t f$, $\int_{-\infty}^b f = \lim_{t \to -\infty} \int_t^b f$ y $\int_{-\infty}^{\infty} f = \int_{-\infty}^{c} f + \int_{c}^{\infty} f$ con ambas convergiendo.
 >
-> ### 3. Criterio de la Razón (D'Alembert)
-> **Para $\sum a_n$ con $a_n > 0$:**
+> **Tipo II — discontinuidades:** $f$ se dispara en $a$, en $b$ o en un punto interior $c$; por ejemplo $\int_a^b \frac{1}{(x-c)^p}\,dx$ con $a < c < b$.
 >
-> **$$L = \lim_{n \to \infty} \frac{a_{n+1}}{a_n}$$**
->
-> - Si $L < 1$ → Serie converge
-> - Si $L > 1$ → Serie diverge  
-> - Si $L = 1$ → Criterio no decide
->
-> ### 4. Criterio de la Raíz (Cauchy)
-> **$$L = \lim_{n \to \infty} \sqrt[n]{a_n}$$**
->
-> - Si $L < 1$ → Serie converge
-> - Si $L > 1$ → Serie diverge
-> - Si $L = 1$ → Criterio no decide
->
-
-> [!example] Criterios Especiales y Avanzados 🧮
->
-> ### 5. Criterio de Condensación de Cauchy
-> **Para sucesiones decrecientes $a_n \geq a_{n+1} \geq 0$:**
-> $$\sum_{n=1}^{\infty} a_n \text{ y } \sum_{k=0}^{\infty} 2^k a_{2^k} \text{ tienen el mismo comportamiento}$$
->
-> ### 6. Criterio Integral
-> **Si $f(x)$ es positiva, continua y decreciente para $x \geq 1$:**
-> $$\sum_{n=1}^{\infty} f(n) \text{ y } \int_1^{\infty} f(x)dx \text{ tienen el mismo comportamiento}$$
->
-> ### 7. Criterio de Dirichlet
-> **Para $\sum a_n b_n$ donde:**
-> - $\{a_n\}$ es monótona y $\lim_{n \to \infty} a_n = 0$
-> - Las sumas parciales de $\sum b_n$ están acotadas
->
-> **→ La serie $\sum a_n b_n$ converge**
->
-> ### 8. Criterio de Abel
-> **Para $\sum a_n b_n$ donde:**
-> - $\{a_n\}$ es monótona y acotada
-> - $\sum b_n$ converge
->
-> **→ La serie $\sum a_n b_n$ converge**
->
-> [!abstract] Ejemplos Prácticos con Aplicación de Criterios 📚
->
-> ### Ejemplo 1: Serie Geométrica
-> **Serie:** $\sum_{n=0}^{\infty} r^n$
->
-> **Criterio de la Razón:**
-> ```
-> L = lim(n→∞) |r^(n+1)/r^n| = lim(n→∞) |r| = |r|
->
-> Si |r| < 1 → Converge a 1/(1-r)
-> Si |r| ≥ 1 → Diverge
-> ```
->
-> ### Ejemplo 2: Serie Armónica
-> **Serie:** $\sum_{n=1}^{\infty} \frac{1}{n}$
->
-> **Criterio Integral:**
-> ```
-> ∫₁^∞ (1/x)dx = lim(t→∞) [ln(t) - ln(1)] = ∞
->
-> Por tanto, la serie armónica diverge
-> ```
->
-> ### Ejemplo 3: Serie p
-> **Serie:** $\sum_{n=1}^{\infty} \frac{1}{n^p}$
->
-> **Criterio Integral:**
-> ```
-> Para p > 1: ∫₁^∞ x^(-p)dx = 1/(p-1) < ∞ → Converge
-> Para p ≤ 1: ∫₁^∞ x^(-p)dx = ∞ → Diverge
-> ```
->
-> ### Ejemplo 4: Serie Factorial
-> **Serie:** $\sum_{n=1}^{\infty} \frac{1}{n!}$
->
-> **Criterio de la Razón:**
-> ```
-> L = lim(n→∞) |1/(n+1)! / 1/n!| = lim(n→∞) n!/(n+1)! = lim(n→∞) 1/(n+1) = 0 < 1
->
-> Por tanto, converge (de hecho, converge a e-1)
-> ```
->
-
-> [!success] Series Alternadas y Convergencia Condicional 🔄
->
-> ### Criterio de Leibniz (Series Alternadas)
-> **Para series de la forma $\sum_{n=1}^{\infty} (-1)^{n+1} a_n$ donde $a_n > 0$:**
->
-> **Condiciones para convergencia:**
-> 1. $a_n$ es decreciente: $a_{n+1} \leq a_n$
-> 2. $\lim_{n \to \infty} a_n = 0$
->
-> **Ejemplo:** Serie armónica alternada $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$
-> ```
-> 3. 1/n es decreciente ✓
-> 4. lim(n→∞) 1/n = 0 ✓
-> → Converge condicionalmente a ln(2)
-> ```
->
-> ### Convergencia Absoluta vs Condicional
->
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_02.svg]]
->
-> **Se lee así:** Es un organigrama con dos rombos de decisión encadenados. La serie parte de una caja rectangular y llega al primer rombo, donde se pregunta si converge la suma de los valores absolutos; un sí lleva a la salida de convergencia absoluta y un no pasa al segundo rombo, que pregunta si converge la serie original, y sus dos salidas son convergencia condicional o divergencia.
->
-> **Por qué importa:** Este es el orden de preguntas que te salva en un examen: primero decides si es absoluta y solo después analizas el caso alternado. Te evita aplicar Leibniz a una serie que no cumple las hipótesis y confundir convergencia simple con condicional, que es un tema que cambia al reordenar los términos.
->
-> **Ejemplo:** Con la armónica alternada $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$, la suma de valores absolutos $\sum \frac{1}{n}$ diverge, así que pasas al segundo rombo: como $\frac{1}{n}$ es decreciente y tiende a 0, la serie converge condicionalmente a $\ln 2$.
->
-
-> [!warning] Estrategia para Aplicar Criterios ⚠️
->
-> ### Orden de Aplicación Recomendado
->
-> **1. Verificar condición necesaria:**
-> - Si $\lim_{n \to \infty} a_n \neq 0$ → **Diverge** (Test de divergencia)
->
-> **2. Para series con términos positivos:**
-> - **Comparación directa** si se conoce una serie similar
-> - **Criterio de la razón** si hay factoriales, exponenciales
-> - **Criterio de la raíz** si hay potencias de n
-> - **Criterio integral** para funciones conocidas
->
-> **3. Para series alternadas:**
-> - **Criterio de Leibniz** primero
-> - Verificar **convergencia absoluta**
->
-> **4. Para productos de sucesiones:**
-> - **Criterios de Dirichlet o Abel**
->
-> ### Errores Comunes
-> - **🔄 Confundir convergencia de $a_n$ con convergencia de $\sum a_n$**
-> - **📊 Aplicar criterio incorrecto para el tipo de serie**
-> - **⚠️ No verificar las condiciones del criterio**
-> - **🔍 Concluir cuando el criterio no decide (L=1)**
->
-
-> [!abstract]+ Tabla Resumen de Criterios 📋
->
-> ### Criterios Principales
->
-> | Criterio | Condición | Conclusión | Mejor Uso |
-> |----------|-----------|------------|-----------|
-> | **Divergencia** | $\lim a_n \neq 0$ | Diverge | Verificación inicial |
-> | **Comparación** | $a_n \leq b_n$ | Como $\sum b_n$ | Series similares conocidas |
-> | **Razón** | $L = \lim \frac{a_{n+1}}{a_n}$ | L<1 conv, L>1 div | Factoriales, exponenciales |
-> | **Raíz** | $L = \lim \sqrt[n]{a_n}$ | L<1 conv, L>1 div | Potencias de n |
-> | **Integral** | $\int f(x)dx$ | Como la integral | Funciones conocidas |
-> | **Leibniz** | Alternada decreciente → 0 | Converge | Series alternadas |
->
-> ### Series de Referencia Importantes
-> ```
-> Geométrica:     Σrⁿ converge si |r| < 1
-> p-series:       Σ(1/nᵖ) converge si p > 1  
-> Armónica:       Σ(1/n) diverge
-> Factorial:      Σ(1/n!) converge
-> Exponencial:    Σ(1/aⁿ) converge si a > 1
-> ```
->
-> [!brain]+ Técnica de Memorización: CONVERDIV 🧠
->
-> **C** - Condición necesaria: lim aₙ = 0
-> **O** - Orden de criterios: divergencia → comparación → razón/raíz
-> **N** - Números de referencia: p-series, geométrica, armónica
-> **V** - Verificar condiciones del criterio antes de aplicar
-> **E** - Evaluar límites cuidadosamente
-> **R** - Razón y raíz para factoriales/exponenciales
-> **D** - Dirichlet y Abel para productos
-> **I** - Integral para funciones continuas decrecientes
-> **V** - Verificar convergencia absoluta en alternadas
->
-
-> [!success] Puntos Clave para Recordar 🎯
->
-> 1. **🔍 Condición necesaria**: Si $\lim a_n \neq 0$, la serie diverge
-> 2. **📊 Criterio apropiado**: Elegir según la estructura de la serie
-> 3. **⚖️ Convergencia absoluta**: Implica convergencia simple
-> 4. **🔄 Series alternadas**: Leibniz para convergencia condicional
-> 5. **📈 L = 1**: El criterio no decide, probar otro método
-> 6. **🎯 Series de referencia**: Memorizar comportamiento de series básicas
-
----
-
-## 📚 Referencias
-
-> [!quote] Notas Relacionadas
->
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/03 - Propiedades de la Sumatoria.md|03 - Propiedades de la Sumatoria.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]]
-
-## 🔗 Notas Recomendadas
-
-> [!info] Prerrequisitos
->
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/03 - Propiedades de la Sumatoria.md|03 - Propiedades de la Sumatoria.md]]
-> - [[Unidad 2 - Límites/I - Fundamentos del Límite/01 - Concepto y Definición Formal del Límite.md|01 - Concepto y Definición Formal del Límite.md]]
->
-
-> [!tip] Continuación del Tema
->
-> - Series de Potencias
-> - Series de Taylor y Maclaurin
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
-> - Métodos de Aproximación
-
----
-
-
-# Criterios de Convergencia y Divergencia - Integrales Impropias
-
->[!quote] *"Cuando los límites de integración se extienden al infinito o cuando la función presenta discontinuidades, entramos en el reino de las integrales impropias. Aquí, los criterios de convergencia son nuestros guardianes, determinando si estas integrales tienen valores finitos o se pierden en la inmensidad del infinito matemático."*
->
-
-> [!info]+ Definiciones Fundamentales 📏
->
-> ### Integrales Impropias - Tipos
-> Una **integral impropia** es aquella que tiene al menos una de estas características:
->
-> **Tipo I - Límites Infinitos:**
-> - $\int_a^{\infty} f(x)dx = \lim_{t \to \infty} \int_a^t f(x)dx$
-> - $\int_{-\infty}^b f(x)dx = \lim_{t \to -\infty} \int_t^b f(x)dx$
-> - $\int_{-\infty}^{\infty} f(x)dx = \int_{-\infty}^c f(x)dx + \int_c^{\infty} f(x)dx$
->
-> **Tipo II - Discontinuidades:**
-> - $\int_a^b f(x)dx$ donde $f$ tiene discontinuidad en $a$, $b$, o punto interior
-> - $\int_a^b \frac{1}{(x-c)^p}dx$ donde $a < c < b$
->
-
-> [!note] Clasificación de Convergencia y Divergencia 📊
->
-> ### Estados de una Integral Impropia
+> Converge si el límite existe y es finito; diverge si no.
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_03.svg]]
 >
-> **Se lee así:** Arranca con una caja única de integral impropia y se divide en dos ramas, una de resultados convergentes y otra divergentes. La primera vuelve a partirse en dos hojas, la de convergencia absoluta y la de condicional; la segunda se abre en tres, la que crece a infinito positivo, la que cae a infinito negativo y la que oscila sin límite. Debajo, aparte, una caja de casos clásicos apunta a la lista de tres integrales ya resueltas.
+> **Se lee así:** una caja única de "integral impropia" que se divide en dos ramas, resultados **convergentes** y **divergentes**. La convergente se abre en convergencia absoluta y condicional; la divergente en tres hojas (infinito positivo, infinito negativo y oscilación sin límite). Debajo, aparte, una caja de "casos clásicos" apunta a la lista de tres integrales ya resueltas.
 >
-> **Por qué importa:** Fíjate en que la estructura es la misma que la de las series, así que puedes reutilizar el mismo esquema mental en las dos unidades. Esto te sirve para clasificar el resultado de una integral impropia antes de calcularlo y para saber que la **condicional** exige revisar el valor absoluto.
+> **Por qué importa:** la estructura es **idéntica** a la de las series, así que reutilizas el mismo esquema mental en las dos unidades. Además te obliga a revisar el valor absoluto antes de concluir en una integral oscilatoria.
 >
-> **Ejemplo:** Con $\int_1^{\infty} \frac{1}{x^2} dx$ de la nota, el resultado 1 te lleva a la hoja de convergencia absoluta, mientras que $\int_1^{\infty} \frac{1}{x} dx$ se va a una de las hojas de divergencia.
->
+> **Ejemplo:** con $\int_1^{\infty} \frac{1}{x^2}\,dx$ el resultado $1$ te lleva a la hoja de convergencia absoluta, mientras que $\int_1^{\infty} \frac{1}{x}\,dx$ se va a una de las hojas de divergencia.
 
-> [!tip] Criterios de Convergencia para Integrales Tipo I (∞) 🔬
->
-> ### 1. Criterio de Comparación Directa
-> **Para funciones $f(x), g(x) \geq 0$ en $[a,\infty)$ con $0 \leq f(x) \leq g(x)$:**
-> - Si $\int_a^{\infty} g(x)dx$ converge → $\int_a^{\infty} f(x)dx$ converge
-> - Si $\int_a^{\infty} f(x)dx$ diverge → $\int_a^{\infty} g(x)dx$ diverge
->
-> ### 2. Criterio de Comparación por Límite
-> **Para $f(x), g(x) > 0$ y $\lim_{x \to \infty} \frac{f(x)}{g(x)} = L$:**
->
-> - Si $0 < L < \infty$ → Ambas integrales tienen el mismo comportamiento
-> - Si $L = 0$ y $\int g(x)dx$ converge → $\int f(x)dx$ converge
-> - Si $L = \infty$ y $\int g(x)dx$ diverge → $\int f(x)dx$ diverge
->
-> ### 3. Criterio p para el Infinito
-> **Integral de referencia:** $\int_1^{\infty} \frac{1}{x^p}dx$
->
-> ```
-> Converge si p > 1
-> Diverge si p ≤ 1
-> ```
->
-> **Resultado:** $\int_1^{\infty} \frac{1}{x^p}dx = \frac{1}{p-1}$ si $p > 1$
->
+---
 
-> [!example] Criterios para Integrales Tipo II (Discontinuidades) 🧮
->
-> ### 4. Criterio p en Discontinuidades
-> **Para discontinuidad en $x = a$:** $\int_a^b \frac{1}{(x-a)^p}dx$
->
-> ```
-> Converge si p < 1
-> Diverge si p ≥ 1
-> ```
->
-> **Resultado:** $\int_a^{a+h} \frac{1}{(x-a)^p}dx = \frac{h^{1-p}}{1-p}$ si $p < 1$
->
-> ### 5. Comparación en Discontinuidades
-> **Cerca de $x = c$ donde $f$ tiene discontinuidad:**
-> - Comparar comportamiento de $f(x)$ cerca de $c$
-> - Usar funciones de referencia como $\frac{1}{(x-c)^p}$
->
-> ### 6. Criterio de Comparación Asintótica
-> **Si cerca de la discontinuidad $x = c$:**
-> $$f(x) \sim \frac{A}{(x-c)^p} \quad \text{cuando } x \to c$$
->
-> - Si $p < 1$ → Integral converge
-> - Si $p \geq 1$ → Integral diverge
->
-> [!abstract] Ejemplos Detallados con Aplicación de Criterios 📚
->
-> ### Ejemplo 1: Integral Exponencial
-> **Integral:** $\int_0^{\infty} e^{-ax}dx$ donde $a > 0$
->
-> **Solución directa:**
-> ```
-> ∫₀^∞ e^(-ax)dx = lim(t→∞) [-e^(-ax)/a]₀^t
->                 = lim(t→∞) [(-e^(-at) + 1)/a]
->                 = (0 + 1)/a = 1/a
->
-> Converge para todo a > 0
-> ```
->
-> ### Ejemplo 2: Criterio de Comparación
-> **Integral:** $\int_1^{\infty} \frac{\sin^2 x}{x^2}dx$
->
-> **Aplicación del criterio:**
-> ```
-> Como 0 ≤ sin²x ≤ 1, tenemos:
-> 0 ≤ sin²x/x² ≤ 1/x²
->
-> Sabemos que ∫₁^∞ 1/x² dx = 1 (converge)
->
-> Por criterio de comparación → ∫₁^∞ sin²x/x² dx converge
-> ```
->
-> ### Ejemplo 3: Discontinuidad en el Interior
-> **Integral:** $\int_0^2 \frac{1}{\sqrt{x-1}}dx$ (discontinuidad en $x = 1$)
->
-> **División en intervalos:**
-> ```
-> ∫₀² 1/√(x-1) dx = ∫₀¹ 1/√(x-1) dx + ∫₁² 1/√(x-1) dx
->
-> Primera integral:
-> ∫₀¹ 1/√(x-1) dx = lim(t→1⁻) ∫₀^t 1/√(x-1) dx
->
-> Sustitución u = x-1, du = dx:
-> = lim(t→1⁻) ∫₋₁^(t-1) u^(-1/2) du = lim(t→1⁻) [2√u]₋₁^(t-1)
->
-> Como p = 1/2 < 1, converge a 2√0 - 2√(-1) (complejo)
->
-> La integral diverge debido a la rama negativa
-> ```
->
+## 🔬 Criterios para series positivas
 
-> [!success] Criterios Especiales y Avanzados 🎯
+> [!tip] 📋 Criterios 1 a 3: comparación, límite y razón
 >
-> ### 7. Criterio de Dirichlet para Integrales
-> **Para $\int_a^{\infty} f(x)g(x)dx$ donde:**
-> - $F(x) = \int_a^x f(t)dt$ está acotada
-> - $g(x)$ es monótona y $\lim_{x \to \infty} g(x) = 0$
+> **1 · Comparación (directa).** Sean $\sum a_n$ y $\sum b_n$ con $a_n, b_n \geq 0$ y $a_n \leq b_n$ para $n$ suficientemente grande:
+> - Si $\sum b_n$ converge $\Rightarrow$ $\sum a_n$ converge.
+> - Si $\sum a_n$ diverge $\Rightarrow$ $\sum b_n$ diverge.
 >
-> **→ La integral converge**
+> **2 · Comparación por límite.** Si $\lim_{n \to \infty} \frac{a_n}{b_n} = L$ con $0 < L < \infty$, las dos series tienen **el mismo comportamiento**.
 >
-> ### 8. Criterio de Abel para Integrales
-> **Para $\int_a^{\infty} f(x)g(x)dx$ donde:**
-> - $\int_a^{\infty} f(x)dx$ converge
-> - $g(x)$ es monótona y acotada
+> **3 · Razón (D'Alembert).** Para $\sum a_n$ con $a_n > 0$, sea $L = \lim_{n \to \infty} \frac{a_{n+1}}{a_n}$:
+> - $L < 1 \Rightarrow$ converge · $L > 1 \Rightarrow$ diverge · $L = 1 \Rightarrow$ **no decide**.
 >
-> **→ La integral converge**
+> **Por qué importa:** la comparación directa exige **ver** la desigualdad; la por límite solo pide comparar **grados dominantes**, y es la que más se usa en examen. $L = 1$ no es un empate: hay que probar otro criterio.
 >
-> ### 9. Criterio de Condensación
-> **Para funciones positivas y decrecientes:**
-> $$\int_1^{\infty} f(x)dx \text{ y } \sum_{n=0}^{\infty} 2^n f(2^n) \text{ tienen el mismo comportamiento}$$
+> **Ejemplo:** $\sum \frac{2n+1}{n^3 - 1}$ se compara con $\sum \frac{2}{n^2}$ (grado 1 sobre grado 3 = $1/n^2$), que converge.
+
+> [!tip] 📋 Criterios 4 a 6: raíz, condensación e integral
 >
-> ### Integrales de Referencia Importantes
+> **4 · Raíz (Cauchy).** $L = \lim_{n \to \infty} \sqrt[n]{a_n}$: $L < 1$ converge, $L > 1$ diverge, $L = 1$ no decide. Es el criterio natural cuando hay **potencias de $n$**.
+>
+> **5 · Condensación de Cauchy.** Si $a_n \geq a_{n+1} \geq 0$, entonces $\sum_{n=1}^{\infty} a_n$ y $\sum_{k=0}^{\infty} 2^k a_{2^k}$ tienen el **mismo comportamiento**.
+>
+> **6 · Criterio integral.** Si $f$ es positiva, continua y decreciente en $[1,\infty)$, entonces $\sum_{n=1}^{\infty} f(n)$ y $\int_1^{\infty} f(x)\,dx$ **convergen o divergen juntas**.
+>
+> **Por qué importa:** el criterio integral es el **puente** entre series e integrales impropias: convierte una suma en un área que ya sabes evaluar. La condensación hace lo propio con sumas "demasiado lentas" como la armónica.
+>
+> **Ejemplo:** la armónica $\sum \frac{1}{n}$: con el integral, $\int_1^{\infty} \frac{1}{x}\,dx = \lim_{t \to \infty} \ln t = \infty$, así que **diverge**.
+
+> [!success] 🔄 Criterio de Leibniz y convergencia condicional
+>
+> Para una serie **alternada** $\sum_{n=1}^{\infty} (-1)^{n+1} a_n$ con $a_n > 0$, **converge** si:
+>
+> 1. $a_n$ es decreciente: $a_{n+1} \leq a_n$;
+> 2. $\lim_{n \to \infty} a_n = 0$.
+>
+> **Absoluta vs. condicional:** si $\sum |a_n|$ converge, la serie es **absolutamente convergente** (y por tanto convergente). Si $\sum |a_n|$ diverge pero $\sum a_n$ converge, es **condicionalmente convergente**.
+>
+> **Por qué importa:** la absoluta es estable (cualquier reordenamiento conserva el valor); la condicional **no**: un reordenamiento puede cambiarle el valor. Esa es la razón por la que el examen pregunta el tipo, no solo si converge.
+>
+> **Ejemplo:** la armónica alternada $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$: $1/n$ es decreciente y tiende a 0 → converge por Leibniz; como $\sum \frac{1}{n}$ diverge, converge **condicionalmente** (a $\ln 2$).
+
+> [!info] 🖼️ El árbol de decisión absoluta vs. condicional
+>
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_02.svg]]
+>
+> **Se lee así:** un organigrama con dos rombos de decisión encadenados. La serie parte de una caja rectangular y llega al primer rombo, donde se pregunta si converge la **suma de valores absolutos**: un "sí" lleva a la salida de convergencia absoluta y un "no" pasa al segundo rombo, que pregunta si converge la **serie original**, con dos salidas: convergencia condicional o divergencia.
+>
+> **Por qué importa:** ese es el **orden de preguntas** que te salva en examen: primero decides si es absoluta y solo después analizas el caso alternado. Te evita aplicar Leibniz a una serie que no cumple las hipótesis y confundir convergencia simple con condicional.
+>
+> **Ejemplo:** con la armónica alternada, el primer rombo da "no" ($\sum 1/n$ diverge) y el segundo "sí" por Leibniz: condicional a $\ln 2$.
+
+> [!success] 🎯 Criterios avanzados: Dirichlet y Abel
+>
+> **7 · Dirichlet.** Para $\sum a_n b_n$: si $\{a_n\}$ es monótona con $\lim a_n = 0$ y las sumas parciales de $\sum b_n$ están **acotadas**, la serie converge.
+>
+> **8 · Abel.** Para $\sum a_n b_n$: si $\{a_n\}$ es monótona y **acotada** y $\sum b_n$ converge, la serie converge.
+>
+> **Por qué importa:** son los criterios para **productos**: uno de los factores "amortigua" (Dirichlet) o "hereda la convergencia" (Abel). Los verás otra vez en Fourier, donde aparecen productos de senos con coeficientes.
+>
+> **Ejemplo:** $\sum \frac{\operatorname{sen}(n)}{n}$ converge por Dirichlet: las sumas de $\operatorname{sen}(n)$ están acotadas y $1/n$ es monótona decreciente a 0.
+
+---
+
+## 🧮 Criterios para integrales impropias
+
+> [!tip] 📋 Tipo I (infinito): comparación, límite y criterio $p$
+>
+> **Comparación directa.** Con $0 \leq f(x) \leq g(x)$ en $[a,\infty)$: si $\int_a^{\infty} g$ converge, $\int_a^{\infty} f$ converge; si $\int_a^{\infty} f$ diverge, $\int_a^{\infty} g$ diverge.
+>
+> **Comparación por límite.** Con $f, g > 0$ y $\lim_{x \to \infty} \frac{f(x)}{g(x)} = L$:
+> - $0 < L < \infty$ → mismo comportamiento;
+> - $L = 0$ y $\int g$ converge → $\int f$ converge;
+> - $L = \infty$ y $\int g$ diverge → $\int f$ diverge.
+>
+> **Criterio $p$ (infinito).** $\int_1^{\infty} \frac{1}{x^p}\,dx$ **converge si $p > 1$** (valor $\frac{1}{p-1}$) y diverge si $p \leq 1$.
+>
+> **Por qué importa:** el criterio por límite con $L = 0$ y $L = \infty$ es el que casi nadie recuerda: son los dos casos donde el comportamiento **no** es el mismo, y hay que leerlo en el sentido correcto.
+>
+> **Ejemplo:** $\int_1^{\infty} \frac{\operatorname{sen}^2 x}{x^2}\,dx$: como $0 \leq \operatorname{sen}^2 x \leq 1$ vale $0 \leq \frac{\operatorname{sen}^2 x}{x^2} \leq \frac{1}{x^2}$, y $\int_1^{\infty} \frac{1}{x^2} = 1$ converge → la original converge.
+
+> [!tip] 📋 Tipo II (discontinuidad): criterio $p$ y comparación asintótica
+>
+> **Criterio $p$ (discontinuidad).** Para la discontinuidad en $x = a$: $\int_a^{a+h} \frac{1}{(x-a)^p}\,dx$ **converge si $p < 1$** (valor $\frac{h^{1-p}}{1-p}$) y diverge si $p \geq 1$.
+>
+> **Comparación local.** Cerca de la discontinuidad $c$, comparar $f$ con $\frac{1}{(x-c)^p}$.
+>
+> **Comparación asintótica.** Si $f(x) \sim \frac{A}{(x-c)^p}$ cuando $x \to c$ (con $A \neq 0$): converge si $p < 1$, diverge si $p \geq 1$.
+>
+> **Por qué importa:** los dos criterios $p$ son **opuestos**: en el infinito converge $p > 1$ y en la discontinuidad $p < 1$. Memoria: cerca del problema, el exponente tiene que ser **pequeño** para que el área quepa.
+>
+> **Ejemplo:** $\int_0^1 \frac{1}{\sqrt{x}}\,dx$ tiene $p = 1/2 < 1$ en la discontinuidad $x = 0$ → converge a $2$.
+
+> [!success] 🎯 Dirichlet, Abel y condensación para integrales
+>
+> **Dirichlet.** Para $\int_a^{\infty} f(x)g(x)\,dx$: si $F(x) = \int_a^x f$ está **acotada** y $g$ es monótona con $\lim_{x \to \infty} g(x) = 0$, la integral converge.
+>
+> **Abel.** Si $\int_a^{\infty} f$ converge y $g$ es monótona y acotada, $\int_a^{\infty} fg$ converge.
+>
+> **Condensación.** Para $f$ positiva y decreciente: $\int_1^{\infty} f(x)\,dx$ y $\sum_{n=0}^{\infty} 2^n f(2^n)$ tienen el mismo comportamiento.
+>
+> **Por qué importa:** Dirichlet es el criterio que salva las **integrales oscilatorias** como $\int_1^{\infty} \frac{\operatorname{sen} x}{x}\,dx$, cuya antiderivada no se escribe en elementos elementales pero cuya convergencia sí se demuestra de un renglón.
+>
+> **Ejemplo:** $\int_1^{\infty} \frac{\operatorname{sen} x}{x}\,dx$ converge por Dirichlet ($\int_1^{x} \operatorname{sen} = -\cos x + \cos 1$ acotada, $1/x \downarrow 0$); su valor es $\frac{\pi}{2}$.
+
+> [!info] 🌳 Las cuatro integrales de referencia
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Criterios_de_Convergencia_y_Divergencia_04.svg]]
 >
-> **Se lee así:** Es un árbol con una caja raíz y cuatro ramas que se abren a la vez, cada una con su propia caja hija. Tres de esas hojas llevan después un recuadro adicional con la condición de convergencia y, cuando corresponde, el valor de la integral; la cuarta rama termina directamente en la caja con su resultado. El esquema revela que todas se analizan con el mismo patrón: identificar la integral, fijar la condición y leer el valor.
+> **Se lee así:** un árbol con una caja raíz y cuatro ramas que se abren a la vez, cada una con su propia caja hija. Tres de esas hojas llevan después un recuadro con la **condición de convergencia** y, cuando corresponde, el **valor** de la integral; la cuarta rama termina directamente en la caja con su resultado. Todas siguen el mismo patrón: identificar la integral, fijar la condición, leer el valor.
 >
-> **Por qué importa:** Fíjate en que estas cuatro son tus funciones patrón para comparar. Memorizar sus condiciones te evita recalcularlas cada vez y te permite resolver casi cualquier integral impropia con comparación directa o por límite.
+> **Por qué importa:** esas cuatro son tus **funciones patrón** para comparar. Memorizar sus condiciones evita recalcularlas y permite resolver casi cualquier impropia con comparación directa o por límite.
 >
-> **Ejemplo:** Para decidir si $\int_1^{\infty} \frac{1}{x^p} dx$ converge, tomas la primera rama y usas $p > 1$ para converger, mientras que $\int_0^1 \frac{1}{x^p} dx$ exige $p < 1$, justo al revés de lo que parece.
->
+> **Ejemplo:** para decidir si $\int_1^{\infty} \frac{1}{x^p}\,dx$ converge tomas la primera rama y usas $p > 1$; para $\int_0^1 \frac{1}{x^p}\,dx$ exige $p < 1$, justo al revés.
 
-> [!warning] Estrategia y Errores Comunes ⚠️
->
-> ### Estrategia de Análisis
-> **1. Identificar el tipo de integral impropia:**
-> - ¿Límites infinitos? → Tipo I
-> - ¿Discontinuidades? → Tipo II
-> - ¿Ambos? → Combinar técnicas
->
-> **2. Localizar puntos problemáticos:**
-> - En infinito: comportamiento asintótico
-> - En discontinuidades: comportamiento local
->
-> **3. Seleccionar criterio apropiado:**
-> - Comparación directa para funciones obvias
-> - Comparación por límite para casos complejos
-> - Criterios p como referencia estándar
->
-> ### Errores Frecuentes
-> - **🔄 Confundir los criterios p**: En ∞ converge si p>1, en discontinuidad si p<1
-> - **📊 No identificar todas las discontinuidades**: Verificar en todo el intervalo
-> - **⚠️ División incorrecta**: $\int_{-\infty}^{\infty}$ requiere punto de división
-> - **🔍 Aplicar criterio sin verificar condiciones**: Verificar positividad, monotonía, etc.
->
-> ### Precauciones Importantes
-> - **🧮 Cálculo vs Existencia**: Determinar convergencia antes de calcular
-> - **📈 Convergencia condicional**: Puede cambiar con reordenamiento
-> - **⚖️ Valor principal de Cauchy**: Para integrales simétricas divergentes
->
+---
 
-> [!abstract]+ Tabla Resumen de Criterios 📋
->
-> ### Criterios Principales
->
-> | Criterio | Tipo | Condiciones | Uso Típico |
-> |----------|------|-------------|------------|
-> | **Comparación Directa** | I, II | $0 \leq f(x) \leq g(x)$ | Funciones evidentemente menores/mayores |
-> | **Comparación por Límite** | I, II | $\lim \frac{f(x)}{g(x)} = L$ | Comportamiento asintótico similar |
-> | **Criterio p (infinito)** | I | $\int \frac{1}{x^p}dx$ | Referencia estándar para $x \to \infty$ |
-> | **Criterio p (discontinuidad)** | II | $\int \frac{1}{(x-c)^p}dx$ | Referencia para discontinuidades |
-> | **Dirichlet** | I | Producto de funciones especiales | Integrales oscilatorias |
-> | **Abel** | I | Una converge, otra acotada | Productos con integral conocida |
->
-> ### Integrales de Referencia
-> ```
-> ∫₁^∞ 1/xᵖ dx:     Converge si p > 1
-> ∫₀¹ 1/xᵖ dx:      Converge si p < 1  
-> ∫₀^∞ e^(-ax) dx:  Converge si a > 0 → 1/a
-> ∫₋∞^∞ e^(-x²) dx: Siempre converge → √π
-> ∫₀^∞ sin(x)/x dx: Converge → π/2
-> ```
->
-> [!brain]+ Técnica de Memorización: IMPROPIA 🧠
->
-> **I** - Identificar tipo: infinito o discontinuidad
-> **M** - Mayorante para comparación directa
-> **P** - Criterios p: >1 en infinito, <1 en discontinuidad
-> **R** - Referencia: usar integrales conocidas
-> **O** - Oscilatoria: Dirichlet y Abel
-> **P** - Positivas para comparación simple
-> **I** - Intervalos: dividir en partes manejables
-> **A** - Asintótico: comportamiento en límites
->
+## 📊 Tablas resumen
 
-> [!success] Puntos Clave para Recordar 🎯
+> [!tip] 📋 Los seis criterios de series en una tabla
 >
-> 1. **🔍 Identificación correcta**: Tipo I (∞) vs Tipo II (discontinuidades)
-> 2. **⚖️ Criterios p opuestos**: >1 para ∞, <1 para discontinuidades
-> 3. **📊 Comparación efectiva**: Encontrar mayorantes o minorantes adecuadas
-> 4. **🎯 Integrales de referencia**: Memorizar comportamiento de casos estándar
-> 5. **🧮 División apropiada**: Separar cada problema por punto conflictivo
-> 6. **⚠️ Verificar condiciones**: Positividad, monotonía según el criterio
+> | Criterio | Condición | Conclusión | Mejor uso |
+> |---|---|---|---|
+> | Divergencia (término) | $\lim a_n \neq 0$ | Diverge | Verificación inicial, siempre |
+> | Comparación | $0 \leq a_n \leq b_n$ | Como $\sum b_n$ | Series similares conocidas |
+> | Razón (D'Alembert) | $L = \lim \frac{a_{n+1}}{a_n}$ | $L<1$ conv · $L>1$ div | Factoriales, exponenciales |
+> | Raíz (Cauchy) | $L = \lim \sqrt[n]{a_n}$ | $L<1$ conv · $L>1$ div | Potencias de $n$ |
+> | Integral | $\int_1^{\infty} f$ | Como la integral | Funciones continuas decrecientes |
+> | Leibniz | Alternada, $\downarrow 0$ | Converge | Series alternadas |
+>
+> **Series de referencia:**
+>
+> | Serie | Comportamiento |
+> |---|---|
+> | $\sum r^n$ (geométrica) | Converge si $\|r\| < 1$, suma $\frac{1}{1-r}$ |
+> | $\sum \frac{1}{n^p}$ ($p$-serie) | Converge si $p > 1$ |
+> | $\sum \frac{1}{n}$ (armónica) | **Diverge** |
+> | $\sum \frac{1}{n!}$ | Converge (suma $e - 1$) |
+> | $\sum \frac{1}{a^n}$ con $a > 1$ | Converge (geométrica con $r = 1/a$) |
+>
+> **Por qué importa:** la primera tabla te dice **qué criterio**; la segunda te da el **contraste** contra el que se mide todo. Las dos juntas resuelven el 90 % de los ejercicios de convergencia.
+
+> [!tip] 📋 Los criterios de integrales en una tabla
+>
+> | Criterio | Tipo | Condición | Uso típico |
+> |---|---|---|---|
+> | Comparación directa | I y II | $0 \leq f \leq g$ | Funciones evidentemente mayores/menores |
+> | Comparación por límite | I y II | $\lim \frac{f}{g} = L$ | Comportamiento asintótico similar |
+> | Criterio $p$ (infinito) | I | $\int_1^{\infty} \frac{1}{x^p}$ | Referencia para $x \to \infty$: $p > 1$ |
+> | Criterio $p$ (discontinuidad) | II | $\int_a^{a+h} \frac{1}{(x-a)^p}$ | Referencia cerca de la ruptura: $p < 1$ |
+> | Dirichlet | I | Acotada × monótona a 0 | Integrales oscilatorias |
+> | Abel | I | Convergente × acotada | Productos con una integral conocida |
+>
+> **Integrales de referencia:**
+>
+> | Integral | Convergencia | Valor |
+> |---|---|---|
+> | $\int_1^{\infty} \frac{1}{x^p}\,dx$ | $p > 1$ | $\frac{1}{p-1}$ |
+> | $\int_0^1 \frac{1}{x^p}\,dx$ | $p < 1$ | $\frac{1}{1-p}$ |
+> | $\int_0^{\infty} e^{-ax}\,dx$ | $a > 0$ | $\frac{1}{a}$ |
+> | $\int_{-\infty}^{\infty} e^{-x^2}\,dx$ | Siempre | $\sqrt{\pi}$ |
+> | $\int_0^{\infty} \frac{\operatorname{sen} x}{x}\,dx$ | Siempre (Dirichlet) | $\frac{\pi}{2}$ |
+>
+> **Por qué importa:** aquí está el error de $p$ resuelto de una vez: **en $\infty$ converge $p > 1$; en la discontinuidad, $p < 1$**. Imprimir mentalmente esta tabla evita el fallo que más se repite en el parcial.
+
+---
+
+## 🧠 Estrategia y mnemotecnia
+
+> [!warning] ⚠️ Orden de aplicación para series
+>
+> 1. **Condición necesaria primero:** si $\lim_{n \to \infty} a_n \neq 0$, la serie **diverge** (término general). No pases a ningún otro criterio.
+> 2. **Series con términos positivos:** comparación directa si se ve una mayorante/minorante; razón si hay factoriales o exponenciales; raíz si hay potencias de $n$; criterio integral si la función es conocida y decreciente.
+> 3. **Series alternadas:** primero mirar si es absoluta; si no, Leibniz.
+> 4. **Productos de sucesiones:** Dirichlet o Abel.
+>
+> **Errores comunes:** confundir la convergencia de $\{a_n\}$ con la de $\sum a_n$; aplicar el criterio equivocado a la estructura; no verificar las hipótesis; concluir algo cuando el criterio **no decide** ($L = 1$).
+>
+> **Por qué importa:** el paso 1 se salta en el 70 % de los exámenes y es gratis: un límite distinto de cero cierra el ejercicio en una línea.
+
+> [!warning] ⚠️ Estrategia para integrales impropias
+>
+> 1. **Identificar el tipo:** ¿infinito (I), discontinuidad (II) o ambos (mixta)?
+> 2. **Localizar los puntos problemáticos:** comportamiento asintótico en el infinito, comportamiento local en cada discontinuidad.
+> 3. **Separar:** una integral por cada problema; en $\int_{-\infty}^{\infty}$ el punto de corte es obligatorio.
+> 4. **Elegir el criterio:** comparación directa si la desigualdad se ve, por límite si solo se ven los grados, $p$ como referencia estándar.
+> 5. **Verificar condiciones:** positividad, monotonía, continuidad.
+>
+> **Precauciones:** determinar **existencia antes que valor**; la convergencia condicional **cambia con reordenamientos**; para integrales simétricas divergentes existe el **valor principal de Cauchy**, que es otra cosa (no lo confundas con convergencia).
+>
+> **Por qué importa:** "calcular primero y preguntar después" es el error de procedimiento más caro: muchas integrales no tienen valor que calcular.
+
+> [!success] 🧠 Mnemotecnia: CONVERDIV (series)
+>
+> **C** — Condición necesaria: $\lim a_n = 0$.
+> **O** — Orden: divergencia → comparación → razón/raíz.
+> **N** — Números de referencia: $p$-serie, geométrica, armónica.
+> **V** — Verificar las hipótesis del criterio antes de aplicarlo.
+> **E** — Evaluar los límites con cuidado (L'Hôpital cuando haga falta).
+> **R** — Razón y raíz para factoriales y exponenciales.
+> **D** — Dirichlet y Abel para productos.
+> **I** — Integral para funciones continuas y decrecientes.
+> **V** — Verificar la convergencia absoluta en las alternadas.
+>
+> **Por qué importa:** la primera V (verificar hipótesis) y la última V (absoluta) son las dos que separan un 8 de un 10 en la pregunta de criterios.
+
+> [!success] 🧠 Mnemotecnia: IMPROPIA (integrales)
+>
+> **I** — Identificar el tipo: infinito o discontinuidad.
+> **M** — Mayorante para la comparación directa.
+> **P** — Criterios $p$: $>1$ en el infinito, $<1$ en la discontinuidad.
+> **R** — Referencia: usar las integrales conocidas.
+> **O** — Oscilatoria: Dirichlet y Abel.
+> **P** — Positivas para comparar sin problema de signos.
+> **I** — Intervalos: dividir en partes manejables.
+> **A** — Asintótico: el comportamiento en los límites decide.
+>
+> **Por qué importa:** la letra **P** es la que más se olvida y es exactamente la condición opuesta entre los dos tipos: ahí se gana o se pierde el ejercicio.
+
+---
+
+## 📝 Ejercicios Propuestos
+
+> [!example] 📋 Planteamiento
+>
+> ¿Converge $\sum_{n=0}^{\infty} \left(\frac{3}{4}\right)^n$? Si converge, ¿cuánto vale?
+>
+> > [!success]- ✅ Solución
+> >
+> > **Término general:** $a_n = (3/4)^n$, serie geométrica con $r = 3/4$.
+> >
+> > **Criterio de la razón:** $L = \lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \frac{3}{4} < 1$ → converge.
+> >
+> > **Valor:** $\frac{1}{1 - r} = \frac{1}{1 - 3/4} = 4$.
+> >
+> > **Respuesta:** converge a $4$.
+> >
+> > **Control:** es una suma de términos positivos decrecientes; el primer término ya vale 1, así que 4 es razonable ✓
+
+> [!example] 📋 Planteamiento
+>
+> ¿Converge la serie armónica $\sum_{n=1}^{\infty} \frac{1}{n}$?
+>
+> > [!success]- ✅ Solución
+> >
+> > **Condición necesaria:** $\lim_{n \to \infty} \frac{1}{n} = 0$ → no decide; hay que seguir.
+> >
+> > **Criterio integral:** $f(x) = 1/x$ es positiva, continua y decreciente en $[1,\infty)$, así que la serie y $\int_1^{\infty} \frac{1}{x}\,dx$ tienen el mismo comportamiento.
+> >
+> > $$\int_1^{\infty} \frac{1}{x}\,dx = \lim_{t \to \infty} \big[\ln x\big]_1^t = \lim_{t \to \infty} \ln t = \infty$$
+> >
+> > **Respuesta:** la serie **diverge**.
+> >
+> > **Por qué no razón:** $L = \lim \frac{n}{n+1} = 1$, el criterio no decide. El integral sí ✓
+
+> [!example] 📋 Planteamiento
+>
+> ¿Converge $\sum_{n=1}^{\infty} \frac{1}{n!}$? Usa el criterio de la razón.
+>
+> > [!success]- ✅ Solución
+> >
+> > $$L = \lim_{n \to \infty} \frac{n!}{(n+1)!} = \lim_{n \to \infty} \frac{1}{n+1} = 0 < 1$$
+> >
+> > **Respuesta:** converge (y su valor es $e - 1$).
+> >
+> > **Por qué razón:** el factorial no se integra ni se suma a mano; la razón cancela factoriales de un golpe. Es el criterio hecho para esa estructura ✓
+
+> [!example] 📋 Planteamiento
+>
+> Clasifica la convergencia de $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$.
+>
+> > [!success]- ✅ Solución
+> >
+> > **Paso 1 · ¿absoluta?** $\sum |a_n| = \sum \frac{1}{n}$ es la armónica → **diverge** (ejercicio 2).
+> >
+> > **Paso 2 · ¿converge original?** Es alternada con $a_n = 1/n > 0$: decreciente ✓ y $\lim \frac{1}{n} = 0$ ✓ → converge por **Leibniz**.
+> >
+> > **Respuesta:** converge **condicionalmente** (a $\ln 2$).
+> >
+> > **Importancia del tipo:** al reordenar sus términos puede sumar cualquier número; por eso "converge" no basta como respuesta ✓
+
+> [!example] 📋 Planteamiento
+>
+> Evalúa $\int_0^{\infty} e^{-ax}\,dx$ con $a > 0$, o justifica su convergencia si prefieres no integrar.
+>
+> > [!success]- ✅ Solución
+> >
+> > **Directo:**
+> > $$\int_0^{\infty} e^{-ax}\,dx = \lim_{t \to \infty} \Big[-\frac{1}{a}e^{-ax}\Big]_0^t = \lim_{t \to \infty} \left(-\frac{e^{-at}}{a} + \frac{1}{a}\right) = 0 + \frac{1}{a}$$
+> >
+> > **Respuesta:** converge a $\frac{1}{a}$ para todo $a > 0$.
+> >
+> > **Con criterio $p$:** para $x$ grande, $e^{-ax}$ decrece mucho más rápido que cualquier $\frac{1}{x^p}$, así que converge también por comparación con la $p$-serie de $p = 2$ ✓
+
+> [!example] 📋 Planteamiento
+>
+> Decide la convergencia de $\int_1^{\infty} \frac{\operatorname{sen}^2 x}{x^2}\,dx$ sin calcular su valor.
+>
+> > [!success]- ✅ Solución
+> >
+> > **Acotación:** $0 \leq \operatorname{sen}^2 x \leq 1$ para todo $x$, así que $$0 \leq \frac{\operatorname{sen}^2 x}{x^2} \leq \frac{1}{x^2}$$
+> >
+> > **Integral de referencia:** $\int_1^{\infty} \frac{1}{x^2}\,dx = 1$ converge ($p = 2 > 1$).
+> >
+> > **Conclusión:** por comparación directa, $\int_1^{\infty} \frac{\operatorname{sen}^2 x}{x^2}\,dx$ **converge**.
+> >
+> > **Por qué no calcular:** la antiderivada de $\frac{\operatorname{sen}^2 x}{x^2}$ no es elemental; el criterio decide sin ella ✓
+
+> [!example] 📋 Planteamiento
+>
+> ¿Converge $\int_{-2}^{2} \frac{1}{\sqrt[3]{x^2}}\,dx$? (discontinuidad interior en $x = 0$)
+>
+> > [!success]- ✅ Solución
+> >
+> > **Tipo:** II, discontinuidad en el interior $x = 0$; hay que partir: $$\int_{-2}^{0} x^{-2/3}\,dx + \int_{0}^{2} x^{-2/3}\,dx$$
+> >
+> > **Criterio $p$ local:** cerca de 0, $\frac{1}{\sqrt[3]{x^2}} = \frac{1}{|x|^{2/3}}$ con $p = 2/3 < 1$ → **cada parte converge**.
+> >
+> > **Valor:** $[3x^{1/3}]_{-2}^{0} + [3x^{1/3}]_{0}^{2} = (0 - 3\sqrt[3]{-2}) + (3\sqrt[3]{2} - 0) = 6\sqrt[3]{2}$.
+> >
+> > **Respuesta:** converge a $6\sqrt[3]{2} \approx 7{,}56$.
+> >
+> > **Cuidado con el dominio:** sin partir en 0, la calculadora devuelve error o un valor falso; la discontinuidad interior **siempre** exige su propio corte ✓
+
+---
+
+## 🎯 Metas de Aprendizaje
+
+> [!note] 📋 Nivel Básico
+>
+> - [ ] Aplico la condición necesaria ($\lim a_n \neq 0$ ⇒ diverge) antes que cualquier otro criterio.
+> - [ ] Distingo los criterios de razón, raíz, comparación e integral y sé para qué estructura sirve cada uno.
+> - [ ] Recuerdo las condiciones opuestas del criterio $p$: $p > 1$ en el infinito y $p < 1$ en la discontinuidad.
+
+> [!note] 📋 Nivel Intermedio
+>
+> - [ ] Clasifico una serie como absolutamente, condicionalmente convergente o divergente siguiendo el árbol de decisión.
+> - [ ] Uso Leibniz verificando las dos hipótesis (decreciente y límite cero) y no solo la segunda.
+> - [ ] Decido la convergencia de una impropia con comparación directa o por límite eligiendo la mayorante correcta.
+
+> [!note] 📋 Nivel Avanzado
+>
+> - [ ] Aplico el criterio integral como puente entre una serie y su integral impropia asociada.
+> - [ ] Reconozco cuándo un producto de series o una integral oscilatoria pide Dirichlet o Abel.
+> - [ ] Explico por qué la convergencia condicional no sobrevive a un reordenamiento y qué implica eso en la práctica.
 
 ---
 
 ## 📚 Referencias
 
-> [!quote] Notas Relacionadas
+> [!quote] 📖 Fuentes y material de la casa
 >
-> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]]
-> - 02 - Criterios de Convergencia y Divergencia (para series)
-
-## 🔗 Notas Recomendadas
-
-> [!info] Prerrequisitos
->
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann.md|01 - Integral de Riemann.md]]
-> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]]
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
-> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones.md|01 - Límites al Infinito y Sucesiones.md]]
->
-
-> [!tip] Continuación del Tema
->
-> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
-> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]]
-> - Series de Fourier
-> - Transformadas de Laplace
+> - J. Stewart, *Cálculo* (Cengage), cap. 11.1–11.4: series, prueba de la integral y comparación.
+> - J. Stewart, *Cálculo* (Cengage), cap. 8.8: integrales impropias.
+> - G. Strang, *Calculus* (Wellesley-Cambridge): series e integrales impropias con el criterio integral.
+> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — los límites de sumas parciales y sucesiones con los que se decide todo.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/03 - Propiedades de la Sumatoria|03 - Propiedades de la Sumatoria]] — las reglas de la notación $\sum$.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — de dónde salen las sumas parciales.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — los tipos de impropiedad en detalle.
 
 ---
 
-**Tags:** #MATG1045 #unidad6 #criterios-de-convergencia-y-divergencia #matemáticas #series #convergencia #divergencia #límites #análisis #criterios-convergencia #series-infinitas #sucesiones #cálculo-avanzado #integrales-impropias #criterios-integrales #cálculo-integral #límites-infinitos #discontinuidades #comparación
+## 🔁 Repaso SR (flashcards)
+
+#flashcards/cal1-u6
+
+> [!note] 🧠 Repasa con el plugin Spaced Repetition
+>
+> - ¿Qué dice la condición necesaria de convergencia?::Si $\lim_{n \to \infty} a_n \neq 0$ la serie diverge; si el límite es 0, la serie **puede** converger o diverger (no decide).
+> - ¿Cuándo aplica el criterio de la razón y cuándo el de la raíz?::Razón cuando hay factoriales o exponenciales; raíz cuando hay potencias de $n$. Los dos: $L<1$ converge, $L>1$ diverge, $L=1$ no decide.
+> - ¿Qué es la convergencia condicional?::Que la serie converge pero su versión con valores absolutos diverge (ej.: armónica alternada); al reordenar sus términos puede sumar cualquier número.
+> - ¿Cuáles son las hipótesis de Leibniz?::Serie alternada $\sum(-1)^{n+1}a_n$ con $a_n>0$ decreciente y $\lim a_n = 0$.
+> - ¿Qué dice el criterio integral?::Si $f$ es positiva, continua y decreciente, $\sum f(n)$ y $\int_1^{\infty} f(x)dx$ convergen o divergen juntas.
+> - ¿Cuál es la regla del criterio $p$ en cada tipo?::En el infinito $\int_1^{\infty} 1/x^p$ converge si $p>1$; en la discontinuidad $\int_a^{a+h} 1/(x-a)^p$ converge si $p<1$.
+> - ¿Cuándo uso Dirichlet para integrales?::En productos $\int f\cdot g$ donde $\int_a^x f$ está acotada y $g$ es monótona que tiende a 0 (típico: integrales oscilatorias).
+
+---
+
+## 🔗 Conexiones
+
+> [!info] 🔗 Notas relacionadas
+>
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias|01 - Integrales Impropias]] — los tipos de impropiedad y el método LÍMITE.
+> - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades|03 - Teoremas de Comparación y Desigualdades]] — la maquinaria de desigualdades con demostración.
+> - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — límites al infinito, la herramienta de todos los criterios.
+> - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/03 - Propiedades de la Sumatoria|03 - Propiedades de la Sumatoria]] — algebra de las sumas parciales.
+> - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — las técnicas con las que se integra antes de tomar el límite.
+> - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/01 - Área bajo la Curva|01 - Área bajo la Curva]] — el área que sobrevive cuando el intervalo es infinito.
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Practica primero los ejercicios 1 y 2: uno converge por razón y el otro diverge por integral; son los dos patrones base.
+> - Después pasa al 3 y al 4, donde entran la razón con factorial y el árbol absoluta/condicional.
+> - Cierra con el 5, 6 y 7: integrales con comparación y una discontinuidad interior partida en dos.
+> - Cuando lo tengas, continúa con [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades|Teoremas de Comparación y Desigualdades]] para ver las desigualdades con las que se demuestran estos criterios.
+
+---
+
+**Tags:** #MATG1045 #unidad6 #criterios-de-convergencia #series #integrales-impropias #convergencia-absoluta #leibniz #criterio-integral #comparacion #dirichlet #abel
