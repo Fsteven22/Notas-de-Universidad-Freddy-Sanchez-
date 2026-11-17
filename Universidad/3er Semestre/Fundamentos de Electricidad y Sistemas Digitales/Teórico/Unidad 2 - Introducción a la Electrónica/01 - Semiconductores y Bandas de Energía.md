@@ -13,7 +13,7 @@ dg-publish: true
 > 
 > Su historia moderna comienza en los años cuarenta con la introducción del transistor semiconductor, que hizo posible la **miniaturización** de los circuitos y dio origen a toda la electrónica moderna.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
 > 
 > |Elemento|Tipo|Función principal|
 > |---|---|---|
@@ -57,7 +57,7 @@ dg-publish: true
 > 
 > Los niveles de energía discretos de los átomos se expanden al cristalizarse en **bandas de energía**. Entre bandas existe una zona prohibida llamada **banda gap** ($E_g$) donde ningún electrón puede existir.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
 > 
 > |Material|Band gap $E_g$|Comportamiento|
 > |---|---|---|
@@ -68,7 +68,7 @@ dg-publish: true
 
 > [!note] 🖼️ Estructura Atómica y Bandas de Energía
 >
-> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 14 jul 2026, 21_37_00.png]]
 > 
 > **Se lee así:** el póster resume en una sola lámina la estructura atómica del silicio (4 electrones de valencia, enlace covalente, Z = 14), las bandas de energía de conductor, semiconductor y aislante con su banda gap (solapadas ≈ 0, ≈ 0.1–3 eV, > 3 eV) y cómo las impurezas N (P o Sb) y P (B o Ga) crean portadores libres o huecos. Es la versión visual completa de lo visto en las secciones previas.
 > 
@@ -91,7 +91,7 @@ dg-publish: true
 > - Se agrega una impureza controlada (**dopaje**) para crear estados de energía permisibles en la banda prohibida, reduciendo $E_g$ efectivo.
 > - Resultado: mayor conductividad controlada.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
 > 
 
 > [!tip] 🔴 Material Tipo N
@@ -118,7 +118,7 @@ dg-publish: true
 
 > [!note] 🖼️ Tipos de Semiconductores
 >
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_36_55.png]]
 > 
 > **Se lee así:** el póster desarrolla la clasificación completa del tema: silicio intrínseco (puro), tipo N dopado con pentavalentes (P, As, Sb — portadores mayoritarios electrones) y tipo P dopado con trivalentes (B, Ga, In — portadores mayoritarios huecos), con la analogía del bus, la tabla resumen comparativa y la nota sobre dopantes casi totalmente ionizados a temperatura ambiente.
 > 
@@ -143,7 +143,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
 > 
 > **Se lee así:** el mapa mental condensa la nota en una raíz «Semiconductores» con sus ramas: intrínsecos puros de Si y extrínsecos dopados, tipos N y P con sus dopantes y portadores, bandas de energía y band gap $E_g$, y la aplicación que viene — diodo unión P-N y transistor BJT.
 > 

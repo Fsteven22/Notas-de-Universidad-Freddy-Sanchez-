@@ -16,9 +16,9 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Generar electricidad es como llenar un tanque de agua: necesitas una fuente (río, lluvia, pozo) que convierta algo disponible en algo utilizable.
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_52_00.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_52_00.png]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
 
@@ -40,7 +40,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - $\Phi$ = Flujo magnético (Webers, Wb)
 > - $t$ = Tiempo (segundos, s)
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
 > 
 > **Se lee así:** Flujograma en cadena de cuatro bloques: el movimiento mecánico provoca una variación del flujo magnético, esa variación induce una FEM ($\mathcal{E} = -N \cdot d\Phi/dt$) y la FEM produce corriente eléctrica en el circuito.
 > 
@@ -51,7 +51,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Campo Magnético e Inducción — Orsted y Faraday
 >
-> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_34_16.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_34_16.png]]
 > 
 > **Se lee así:** Infografía de la Ley de Faraday: muestra un imán acercándose a una bobina de $N$ espiras con un medidor que registra la FEM inducida, la ecuación $\mathcal{E} = -N \cdot d\Phi_B/dt$ con el significado de cada símbolo, el flujo $\Phi_B = \vec{B} \cdot \vec{A} = BA\cos\theta$ y los tres escenarios (imán que se acerca, que se aleja o que está quieto) con su efecto sobre la FEM. Cierra con la dirección de la FEM según la Ley de Lenz, aplicaciones (generadores, transformadores, micrófonos dinámicos, cargadores inalámbricos) y un resumen del proceso.
 > 
@@ -70,7 +70,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > "La naturaleza se resiste a los cambios en el flujo magnético."
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
 > 
 > **Se lee así:** Diagrama de dos ramas: si el flujo magnético **aumenta**, la corriente inducida crea un campo que se opone al aumento (campo inducido en sentido contrario al externo); si el flujo magnético **disminuye**, la corriente crea un campo que se opone a la disminución (campo inducido en el mismo sentido).
 > 
@@ -102,7 +102,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Ley de Lenz
 >
-> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_41_47.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_41_47.png]]
 > 
 > **Se lee así:** Infografía de la Ley de Lenz: enuncia que la corriente inducida genera un campo magnético que se opone a la variación del flujo que la produce y lo liga al signo − de Faraday. Desarrolla los dos casos — flujo que aumenta (imán se acerca) y flujo que disminuye (imán se aleja) — mostrando en cada uno el sentido de $I$ y del campo inducido frente al externo, y cierra con la idea clave: es conservación de la energía, con una regla visual rápida para orientar el campo inducido.
 > 
@@ -132,7 +132,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > **Generador de Corriente Alterna (Alternador):**
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
 > 
 > **Se lee así:** Diagrama de tres pasos: un rotor (imán) gira dentro del estátor (bobinas) y esa rotación entrega una salida AC senoidal.
 > 
@@ -140,7 +140,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > **Generador de Corriente Continua (Dínamo):**
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
 >
 > | Característica | Alternador (AC) | Dínamo (DC) |
 > |---|---|---|
@@ -151,7 +151,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Tipos de Generadores Eléctricos
 >
-> ![[../../Anexos/ChatGPT Image 19 may 2026, 22_46_01.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 19 may 2026, 22_46_01.png]]
 > 
 > **Se lee así:** Infografía comparativa de los dos tipos de generadores: el alternador (AC), con rotor imán que gira, forma de onda senoidal, frecuencia típica de 50/60 Hz y uso en redes, industrias y hogares; y el dínamo (DC), con conmutador rectificador, forma de onda constante y uso en baterías, cargadores y electrónica. Incluye fotografías, diagramas de funcionamiento, formas de onda y una comparación rápida AC vs DC.
 > 
@@ -162,7 +162,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!info]- 🏭 De la Fuente a tu Enchufe
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
 >
 > **Se lee así:** el proceso completo: materia prima → turbina → generador → transformador elevador → red de transmisión → transformador reductor → consumidor.
 >
@@ -177,7 +177,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte la energía **potencial del agua** en energía eléctrica mediante turbinas.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -186,7 +186,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Desventaja** | Impacto ambiental, dependiente de lluvia |
 > | **Ejemplo Ecuador** | Coca Codo Sinclair (~1 500 MW) |
 > 
-> ![[../../Anexos/Pasted image 20260519224024.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519224024.png]]
 > 
 > **Se lee así:** Esquema de una central hidroeléctrica con sus partes numeradas: el embalse (1) acumula el agua, la presa (2) la regula, la tubería forzada (3) la conduce a presión, la turbina (4) convierte la energía potencial/cinética en giro mecánico, el generador eléctrico (5) la convierte en electricidad y la red eléctrica (6) la transporta.
 > 
@@ -198,7 +198,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Quema combustibles fósiles (gas, petróleo, carbón) para producir vapor que mueve turbinas.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -207,7 +207,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Desventaja** | Emisiones CO₂, uso de recursos no renovables |
 > | **Eficiencia típica** | 33–45 % |
 > 
-> ![[../../Anexos/Pasted image 20260519224111.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519224111.png]]
 > 
 > **Se lee así:** Esquema de una central termoeléctrica: el quemador calienta el agua en el generador de vapor (con chimenea y emisión de CO₂), el chorro de vapor mueve la turbina acoplada al alternador, el condensador enfría el vapor de nuevo a agua líquida usando agua del río, y el alternador entrega la energía a la red eléctrica.
 > 
@@ -219,7 +219,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte directamente la luz solar en electricidad mediante el **efecto fotoeléctrico** en celdas semiconductoras de silicio.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -228,7 +228,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Desventaja** | Intermitente (depende del sol), costo inicial alto |
 > | **Eficiencia típica** | 15–22 % (paneles comerciales) |
 > 
-> ![[../../Anexos/Pasted image 20260519224443.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519224443.png]]
 > 
 > **Se lee así:** Infografía de una planta fotovoltaica que numera el recorrido de la energía: (1) el sol emite radiación electromagnética, (2) los paneles de celdas absorben los fotones y liberan electrones (corriente continua, efecto fotoeléctrico), (3) los inversores transforman la DC en AC, (4) los transformadores elevan la tensión a media tensión (hasta 36 kV) y (5) las líneas de transmisión la distribuyen para el consumo.
 > 
@@ -247,7 +247,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Desventaja** | Intermitente, impacto visual y acústico |
 > | **Potencia** | $P = \frac{1}{2} \rho A v^3$ (depende del cubo de la velocidad del viento) |
 > 
-> ![[../../Anexos/Pasted image 20260519224744.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519224744.png]]
 > 
 > **Se lee así:** Ilustración de un parque eólico: una hilera de aerogeneradores instalados sobre una cresta de colinas recogen el viento y su producción baja por una red eléctrica común hasta una subestación o punto de conexión, desde donde se inyecta a las torres de transmisión.
 > 
@@ -266,7 +266,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Desventaja** | Residuos radiactivos, alto costo, riesgos de seguridad |
 > | **Eficiencia típica** | ~33 % |
 > 
-> ![[../../Anexos/Pasted image 20260519224818.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519224818.png]]
 > 
 > **Se lee así:** Esquema (fuente: Foro Nuclear) del interior de una central nuclear: en el edificio de contención, el reactor calienta el agua y genera vapor en el generador de vapor; el vapor mueve la turbina acoplada al generador; el vapor se condensa en el condensador, enfriado por agua de refrigeración, y la torre de refrigeración expulsa el calor sobrante a la atmósfera.
 > 
@@ -291,7 +291,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!tip]- 🔌 Etapas y Voltajes Típicos
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
 >
 > | Etapa | Voltaje típico | Función |
 > |---|---|---|
@@ -306,7 +306,7 @@ tags: [EYAG1037, unidad1, electricidad]
 ## 📊 Resumen Visual 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 >
 > **Se lee así:** mapa mental «Generación Eléctrica»: principio base (Ley de Faraday, efecto fotovoltaico, reacción química), tipos de generador (alternador AC, dínamo DC), fuentes (hidro, termo, solar, eólica, nuclear) y sistema de potencia (generación → transmisión → distribución → consumo).
 >

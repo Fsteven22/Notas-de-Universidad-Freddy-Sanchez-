@@ -59,7 +59,7 @@ dg-publish: true
 > | $E = K_e\dfrac{Q}{r^2}$ | Obtener el campo eléctrico que crea cada carga en el punto P, sin colocar ahí la carga de prueba (Paso 4) |
 > | $F = q\cdot E$ | Verificar el resultado relacionando fuerza y campo (chequeo final) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_16_31.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_16_31.png]]
 > 
 > ---
 > 
@@ -121,7 +121,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Obtener $V_{R3}$ una vez que toda la corriente de la fuente dependiente se conoce (Paso 3) |
 > | $P = V \times I$ | Calcular la potencia entregada por la fuente dependiente (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_19_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_19_46.png]]
 > 
 > ---
 > 
@@ -177,7 +177,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Obtener el voltaje máximo aplicable con la corriente límite y $R_{eq}$ (Paso 3) |
 > | $P = I^2 R$ | Verificar que ninguna resistencia exceda su potencia máxima (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_21_32.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_21_32.png]]
 > 
 > ---
 > 
@@ -227,7 +227,7 @@ dg-publish: true
 > 
 > **Encontrar:** $V_A$, $V_B$ y todas las corrientes de rama.
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_52_30.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_52_30.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -299,7 +299,7 @@ dg-publish: true
 > 
 > **Encontrar:** $I$, la potencia de cada fuente (¿entrega o absorbe?) y verificar balance.
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_32_40.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_32_40.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -361,7 +361,7 @@ dg-publish: true
 > | Sistema matricial $[R][I]=[V]$ | Organizar las tres ecuaciones para resolver por Cramer (Paso 2) |
 > | Regla de Cramer: $I_k = \dfrac{\Delta_k}{\Delta}$ | Resolver el sistema 3×3 despejando cada corriente de malla (Paso 3) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_38_28.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_38_28.png]]
 > 
 > ---
 > 
@@ -405,7 +405,7 @@ dg-publish: true
 > 
 > **🖊️ Cómo se ve el circuito:** Es el mismo circuito de S6. Este ejercicio muestra cómo construir la matriz directamente sin escribir KVL línea por línea.
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_38_28.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_38_28.png]]
 > 
 > **🔑 Fórmulas que vamos a usar:**
 > 
@@ -459,7 +459,7 @@ dg-publish: true
 > | $G_{kj} = -G_{\text{compartida entre nodo }k\text{ y }j}$ | Llenar las posiciones fuera de la diagonal |
 > | Regla de Cramer: $V_k = \dfrac{\Delta_k}{\Delta}$ | Resolver el sistema 3×3 para cada tensión de nodo |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_47_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_47_46.png]]
 > 
 > ---
 > 
@@ -515,7 +515,7 @@ dg-publish: true
 > | Transformación de fuente: $V = I \times R$ | Convertir la fuente de corriente equivalente en una fuente de voltaje en serie con $R_2$ (Paso 4) |
 > | KVL: $\sum V = 0$ | Resolver la malla final ya simplificada (Paso 5) |
 > 
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 23_50_21.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 23_50_21.png]]
 > 
 > ---
 > 
@@ -564,7 +564,7 @@ dg-publish: true
 > | $V = I \times R$ (Ohm) | Calcular el voltaje sobre el grupo paralelo (Paso 5) |
 > | $P = V \times I$ y $P = I^2 R$ | Calcular potencia total y por elemento, y verificar con el teorema de Tellegen (Paso 7) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_00_35.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_00_35.png]]
 > 
 > ---
 > 
@@ -628,7 +628,7 @@ dg-publish: true
 > | $L_{serie} = L_a + L_b$ | Combinar $L_2$ y $L_3$, que están en serie |
 > | $L_{paralelo} = \dfrac{L_a L_b}{L_a+L_b}$ | Combinar $L_1$ en paralelo con el grupo $L_{23}$ |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_06_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_06_46.png]]
 > 
 > ---
 > 
@@ -666,7 +666,7 @@ dg-publish: true
 > | $R_{eq} = \sum R_i$ (serie) | Sumar todo el circuito ya reducido a una sola malla serie (Paso 2) |
 > | Divisor de voltaje: $V_k = V_s \cdot \dfrac{R_k}{R_{eq}}$ | Repartir el voltaje de la fuente entre cada elemento serie, incluidos los grupos reducidos (Paso 3) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_11_05.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_11_05.png]]
 > 
 > ---
 > 
@@ -703,7 +703,7 @@ dg-publish: true
 > | Divisor de corriente: $I_{Ri} = I_f \cdot \dfrac{R_{eq}}{R_i}$ | Repartir la corriente de la fuente entre las tres ramas (Paso 3) |
 > | $P = I^2 R$ | Verificar la potencia de cada rama y la potencia total (Paso 4) |
 > 
-> ![[../../Anexos/ChatGPT Image 21 jun 2026, 00_12_48.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 21 jun 2026, 00_12_48.png]]
 > 
 > **Paso 1 — $R_{eq}$:**
 > 

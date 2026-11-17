@@ -20,7 +20,7 @@ dg-publish: true
 
 > [!note] 🖼️ Introducción
 >
-> ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_25_28.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 14 jul 2026, 21_25_28.png]]
 > 
 > **Se lee así:** el póster presenta el diodo de un vistazo: qué es (unión P-N que deja pasar corriente en un solo sentido), el símbolo con ánodo y cátodo marcados, la comparación Si ($V_F \approx 0.7\text{ V}$, más usado y robusto) vs Ge ($V_F \approx 0.3\text{ V}$, menor umbral pero más sensible y con más corriente de fuga), y los tipos según aplicación (rectificador, LED, Zener, Schottky, fotodiodo, varactor).
 > 
@@ -85,7 +85,7 @@ dg-publish: true
 > 
 > La curva muestra tres zonas claramente diferenciadas:
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
 > 
 > - **Zona directa:** para $V_D > V_{umbral}$, la corriente crece exponencialmente.
 > - **Zona inversa:** corriente prácticamente nula ($\approx -I_S$).
@@ -105,7 +105,7 @@ dg-publish: true
 
 > [!note] 🖼️ Curva Característica I-V
 >
-> ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_45_03.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_45_03.png]]
 > 
 > **Se lee así:** la infografía recorre el diodo entero: formación de la unión y región de vaciamiento por difusión y recombinación, equilibrio sin polarización con la barrera interna (≈ 0.7 V Si, ≈ 0.3 V Ge), los efectos de polarización directa e inversa sobre esa barrera, y la curva I-V con sus tres zonas (directa, inversa y ruptura) y los parámetros $V_{umbral}$, $I_S$ y $V_{BR}$.
 > 
@@ -183,7 +183,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
 > 
 > **Se lee así:** el mapa mental resume la nota en una raíz «Diodo unión P-N»: región de vaciamiento, conducción en directa ($I_D$) y bloqueo en inversa ($I_S$), umbrales (0.7 V Si, 0.3 V Ge), ruptura (breakdown), los modelos ideal y de segunda aproximación, y los tipos vistos (Zener, LED, varicap).
 > 

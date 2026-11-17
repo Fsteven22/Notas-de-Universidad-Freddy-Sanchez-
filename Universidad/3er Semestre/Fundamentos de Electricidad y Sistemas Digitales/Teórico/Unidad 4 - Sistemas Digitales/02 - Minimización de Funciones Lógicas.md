@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Esta idea no es exclusiva del papel y lápiz: las herramientas modernas de síntesis lógica (usadas para programar FPGAs o diseñar circuitos integrados completos) aplican exactamente estos mismos principios de simplificación booleana, solo que a una escala de millones de variables mediante algoritmos automatizados.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
 > 
 > **Se lee así:** El diagrama resume el flujo de trabajo completo: de la tabla de verdad se obtiene una función lógica (SOP o POS), esa función se minimiza (con álgebra de Boole o mapas de Karnaugh) y del resultado sale un circuito con el mínimo de compuertas. Es el mapa de ruta de toda la nota.
 > 
@@ -75,7 +75,7 @@ dg-publish: true
 
 > [!note] 🖼️ ¿SOP o POS? Criterio de elección
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
 > 
 > **Se lee así:** El diagrama plantea la receta de elección: cuenta los 1 y los 0 en la tabla de verdad y mira cuál grupo es menor — si hay menos 1 que 0, usa SOP (sumas los minterms); si hay menos 0, usa POS (multiplicas los maxterms); y si las cantidades son similares, da igual cuál elijas porque tras minimizar el costo suele ser equivalente.
 > 
@@ -154,7 +154,7 @@ dg-publish: true
 
 > [!note] 🖼️ Chuleta MK de 4 variables
 >
-> ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_33_18.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 18 ago 2026, 21_33_18.png]]
 > 
 > **Se lee así:** La infografía recoge las reglas para formar grupos en un mapa de Karnaugh de 4 variables (grupos de 1, 2, 4, 8 o 16 celdas adyacentes, envoltorio toroidal por bordes y esquinas, uso de 1 y X «don't care», grupos solapados y preferencia por los grupos más grandes) sobre el mapa completo AB × CD, y debajo resuelve el ejercicio de Nivel 3 del reloj BCD (hora ≥ 7) con F = D·C̄ + C·B·A usando los don't-care 10–15.
 > 
@@ -277,7 +277,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
 > 
 > **Se lee así:** El mapa mental resume la nota: formas canónicas (minterm $m$, maxterm $M$, SOP como suma de minterms y POS como producto de maxterms), mapas de Karnaugh (correspondencia tabla-mapa, adyacencia lógica, grupos de $2^k$, bordes y esquinas adyacentes, don't care), implementación con una sola familia (todo con NAND o todo con NOR) y el siguiente tema (4.4 Circuitos integrados programables).
 > 

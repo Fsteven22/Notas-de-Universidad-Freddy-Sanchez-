@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica integra **acondicionamiento de señales**, **compuertas lógicas** y **Arduino** para controlar actuadores. Comparas la implementación con hardware puro (compuertas 74LS/74HC) vs software embebido (Arduino), y analizas las ventajas de cada enfoque.
 >
-> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
 > 
 > **Se lee así:** El diagrama desglosa la práctica en tres procedimientos encadenados: el Procedimiento 1 acondiciona la señal con un LM358 como comparador con umbrales, el Procedimiento 2 arma la lógica combinatoria F = A′ + BC con compuertas 74LS/74HC, y el Procedimiento 3 replica el control en Arduino con analogRead y LEDs.
 > 

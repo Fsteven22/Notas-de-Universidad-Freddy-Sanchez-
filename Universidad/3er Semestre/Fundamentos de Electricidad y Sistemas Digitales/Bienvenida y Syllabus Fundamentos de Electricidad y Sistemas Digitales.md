@@ -62,7 +62,7 @@ tags: [EYAG1037, electricidad, syllabus]
 
 > [!tip] 📚 Temas a cubrir
 >
-> ![[Unidad 0 - Guias y Ejercicios/Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
+> ![[Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Bienvenida_y_Syllabus_FESD_01.svg]]
 >
 > | Unidad | Tema | Horas |
 > |---|---|---|
@@ -75,7 +75,7 @@ tags: [EYAG1037, electricidad, syllabus]
 
 > [!note] 🖼️ Contenido del Curso
 >
-> ![[Unidad 0 - Guias y Ejercicios/Figuras/Horario de clases.png]]
+> ![[Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Horario de clases.png]]
 > 
 > **Se lee así:** la imagen muestra el horario semanal de clases (lunes a viernes, 07:30–17:00) con las sesiones de EYAG1037 resaltadas en gris: miércoles al mediodía (Paralelo N°2, Aula-K101) y jueves por la mañana en modalidad quincenal (Paralelo N°106, Aula-L106).
 > 

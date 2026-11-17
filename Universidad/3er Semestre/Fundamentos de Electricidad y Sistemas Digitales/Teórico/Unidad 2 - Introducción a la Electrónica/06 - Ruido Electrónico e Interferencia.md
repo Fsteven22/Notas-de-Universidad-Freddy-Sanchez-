@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema conecta directamente con lo visto en [[04 - Circuitos de Filtrado y Fuentes Lineales]] (el rizado de una fuente lineal es, en el fondo, un tipo de ruido de baja frecuencia) y sirve de puente hacia las aplicaciones de amplificadores operacionales para minimización de ruido de la Unidad 3.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
 > 
 > **Se lee así:** el diagrama de flujo separa cualquier perturbación no deseada según su origen — interna al componente (ruido electrónico) o externa al circuito (interferencia EMI/RFI) — y muestra que ambos caminos desembocan en el mismo final: una señal degradada.
 > 
@@ -59,7 +59,7 @@ dg-publish: true
 > 
 > Una señal de ruido externa (motores, líneas de potencia, radiofrecuencia, conmutación digital) puede acoplarse al circuito de cuatro maneras:
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
 > 
 > |Modo|Mecanismo|Mitigación típica|
 > |---|---|---|
@@ -93,7 +93,7 @@ dg-publish: true
 
 > [!note] 🖼️ Técnicas de Mitigación con Semiconductores y Componentes Pasivos
 >
-> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_11_08.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 22 jul 2026, 13_11_08.png]]
 > 
 > **Se lee así:** el póster cubre el tema completo: tipos de ruido interno y modos de acoplamiento EMI con sus fuentes típicas (fuentes conmutadas, motores, iluminación, descargas), efectos sobre la señal, y —su énfasis— ocho técnicas prácticas de mitigación con pasivos y semiconductores: filtrado de alimentación, desacoplo (bypass), filtros RC, supresión con TVS/Zener/MOV, diseño de PCB, blindaje, ferritas y chokes, y puesta a tierra en estrella.
 > 
@@ -143,7 +143,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
 > 
 > **Se lee así:** el mapa mental resume la nota en una raíz «Ruido e Interferencia»: los tres ruidos internos (térmico Johnson-Nyquist, shot, flicker 1/f), los cuatro modos de acoplamiento externo (conducida, capacitiva, inductiva, radiada), las seis técnicas de mitigación clave y el puente hacia el amplificador diferencial de la Unidad 3.
 > 

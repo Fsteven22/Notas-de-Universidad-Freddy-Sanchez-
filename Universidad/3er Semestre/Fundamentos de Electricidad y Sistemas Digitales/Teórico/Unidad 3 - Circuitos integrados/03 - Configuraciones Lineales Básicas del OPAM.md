@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Esta nota cierra ese hueco y recoge **todo el bloque lineal básico** del PDF guía *EjREsAmpOp* [3] que faltaba: inversor, no inversor, sumadores ponderados, amplificador con eliminación de nivel DC y convertidores tensión↔corriente — incluido el caso de **ganancia de intensidad con carga flotante** (p. 18 del PDF). Son las piezas con las que luego se construyen integradores, derivadores y los circuitos no lineales de [[04 - Integrador, Derivador y Circuitos No Lineales]].
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
 > 
 > **Se lee así:** El diagrama parte del OPAM ideal ($V_+\approx V_-$, $I\approx 0$) y muestra cómo de esa única hipótesis cuelgan los bloques lineales de la nota: del inversor/no inversor derivan los sumadores ponderados y la eliminación de DC, y de ahí los convertidores V-I / I-V y el amplificador de intensidad. Es el árbol genealógico de toda la nota.
 > 
@@ -26,7 +26,7 @@ dg-publish: true
 > |Seguidor de tensión ($v_o=v_i$)|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#🔌 Seguidor de Tensión (Buffer) — Aislamiento de Impedancias\|02 - Buffer]]|
 > |Diferencial simple y de instrumentación|Ya en [[02 - Aplicaciones de los OPAMs - Minimización de Ruido#➖ Amplificador Diferencial — Rechazo de Modo Común\|02]]|
 > |**Inversor, no inversor, sumadores, eliminación DC, convertidores**|**Nuevos aquí (esta nota, PDF pp. 4-13 y 18-20)**|
-> |Integrador / Derivador / No lineales|En [[04 - Integrador, Derivador y Circuitos No Lineales\|04]]|
+> |Integrador / Derivador / No lineales|En [[04 - Integrador, Derivador y Circuitos No Lineales|04]]|
 
 ---
 
@@ -224,7 +224,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
 > 
 > **Se lee así:** El mapa mental condensa las seis familias de la nota en la raíz "Lineales Básicas del OPAM": inversor ($v_o=-R_2/R_1\,v_i$, desfase de $180^\circ$), no inversor ($v_o=(1+R_2/R_1)v_i$), sumadores ponderados, eliminación de DC con $C$ en serie, convertidores V-I / I-V y amplificador de intensidad con carga flotante. Cada rama trae la fórmula y el rasgo distintivo.
 > 

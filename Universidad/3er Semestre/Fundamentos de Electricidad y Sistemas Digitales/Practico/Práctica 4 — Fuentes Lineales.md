@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Una fuente lineal convierte la corriente alterna de la red (110 VAC) en un voltaje DC estable. Tiene **4 etapas funcionales**: transformador reductor, rectificador de onda completa, filtro capacitivo y regulador LM7805. En esta práctica identificas cada etapa y mides las formas de onda en cada punto.
 >
-> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_4_—_Fuentes_Lineales_01.svg]]
 > 
 > **Se lee así:** El diagrama encadena las cuatro etapas funcionales de una fuente lineal: la red de 110 VAC entra al transformador 110 V/12 V, el rectificador de puente de diodos la convierte en DC pulsante, el filtro capacitivo la alisa y el regulador LM7805 la estabiliza en 5 VDC a la salida.
 > 

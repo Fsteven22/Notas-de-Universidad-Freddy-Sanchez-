@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema cierra el círculo de lo visto en la Unidad 2: los diodos ([[02 - El Diodo - Unión P-N]]), transistores BJT ([[03 - Transistor BJT]]) y los circuitos de filtrado/regulación ([[04 - Circuitos de Filtrado y Fuentes Lineales]], [[05 - Reguladores en Fuentes Lineales]]) que estudiaste como componentes o etapas discretas, en la práctica suelen venir **ya integrados** dentro de un solo chip (por ejemplo, el propio regulador 7805 que viste es en sí mismo un circuito integrado).
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_CI_no_programables_01.svg]]
 > 
 > **Se lee así:** El diagrama muestra el salto de los componentes discretos (diodos, transistores, resistencias y capacitores sueltos) al circuito integrado mediante la miniaturización: el mismo comportamiento eléctrico terminado empaquetado en un solo chip. La flecha resalta que no cambia la función, cambia el formato.
 > 
@@ -60,7 +60,7 @@ dg-publish: true
 
 > [!note] 🗂️ Por programabilidad — la clasificación clave de esta unidad
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_CI_no_programables_02.svg]]
 > 
 > **Se lee así:** El diagrama bifurca los circuitos integrados en dos ramas según quién define su función: los no programables traen la función fija de fábrica (solo se ajustan con componentes externos) y los programables la reciben del usuario mediante software o configuración. Es la clasificación clave de esta unidad, de la que cuelga todo lo demás.
 > 
@@ -102,7 +102,7 @@ dg-publish: true
 
 > [!note] 🖼️ Vista Previa: Qué Viene en Esta Unidad
 >
-> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 22 jul 2026, 13_19_52.png]]
 > 
 > **Se lee así:** La infografía resume en un solo vistazo de qué trata el tema: qué es un CI no programable, sus ventajas principales, su clasificación (por nivel de integración SSI→VLSI y por función), los encapsulados más comunes (DIP, SOIC, TO-220, entre otros) y sus aplicaciones típicas. Es un mapa visual del contenido de la unidad, más que un diagrama de circuito.
 > 
@@ -152,7 +152,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
 > 
 > **Se lee así:** El mapa mental organiza todo lo visto en la nota en torno a la raíz "Circuitos Integrados No Programables": qué es un CI y sus ventajas, las tres clasificaciones (señal, escala SSI–VLSI y programabilidad), los encapsulados (DIP, SOIC, TO-220) y los ejemplos no programables (OPAMs, 555, reguladores 78xx/LM317, compuertas lógicas fijas).
 > 

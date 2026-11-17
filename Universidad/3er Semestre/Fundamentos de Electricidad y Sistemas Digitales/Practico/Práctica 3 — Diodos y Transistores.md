@@ -14,7 +14,7 @@ tags: [EYAG1037, laboratorio, practicas]
 > - El BJT como **switch electrónico** (corte vs saturación).
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
-> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
 > 
 > **Se lee así:** El diagrama resume los tres montajes de la práctica: el Procedimiento 1 con el diodo 1N4007 para ver la rectificación de la señal senoidal, el Procedimiento 2 con el BJT 2N3904 como switch en corte y saturación, y el Procedimiento 3 con el sensor LDR respondiendo a la luz.
 > 

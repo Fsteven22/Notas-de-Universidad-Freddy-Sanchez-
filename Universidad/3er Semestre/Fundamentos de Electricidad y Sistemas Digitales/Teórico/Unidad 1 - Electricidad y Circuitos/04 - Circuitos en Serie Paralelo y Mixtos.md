@@ -17,7 +17,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Un circuito en **paralelo** es como los carriles de una autopista: si uno se cierra, los demás siguen funcionando.
 > - Un circuito **mixto** combina ambas configuraciones, como las instalaciones eléctricas de un edificio.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
 >
 > | Configuración | Corriente | Voltaje | Aplicación típica |
 > |---|---|---|---|
@@ -27,7 +27,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Introducción
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230523.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519230523.png]]
 > 
 > **Se lee así:** Muestra tres circuitos simulados lado a lado: uno en serie (fuente de 9 V, resistencia de 10 Ω y dos lámparas en un solo camino), uno mixto (20 V con secciones en serie y un grupo de lámparas en paralelo) y uno en paralelo (9 V con 10 Ω alimentando dos lámparas entre los mismos nodos). Las tres imágenes contrastan cómo se comporta el mismo tipo de elementos según la trayectoria de la corriente.
 > 
@@ -35,7 +35,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Introducción
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_43_52.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_43_52.png]]
 > 
 > **Se lee así:** Infografía sobre interconexión de fuentes: las fuentes de voltaje en serie se reemplazan por una equivalente cuya tensión es la suma algebraica según la polaridad (misma polaridad se suman, opuesta se restan) y las fuentes de corriente en paralelo se combinan igual según el sentido de la flecha. Incluye las expresiones generales $V_{eq} = \sum(\pm V_k)$ e $I_{eq} = \sum(\pm I_k)$, ejemplos numéricos y las restricciones: solo fuentes ideales independientes, no mezclar tipos de fuente y mantener una referencia de polaridad o sentido.
 > 
@@ -49,7 +49,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en serie**, los elementos están conectados uno tras otro formando una única trayectoria. La misma corriente recorre todos los elementos secuencialmente.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
 >
 > ### ⚙️ Leyes fundamentales en serie
 >
@@ -101,7 +101,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Circuito en Serie
 >
-> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_14_44.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 30 may 2026, 20_14_44.png]]
 > 
 > **Se lee así:** Infografía del circuito en serie: diagrama con la fuente V y las resistencias R1, R2, R3 en un único camino; características (la corriente es la misma en todos los elementos, el voltaje se divide y un fallo en cadena interrumpe todo); y ecuaciones ($R_T = R_1 + R_2 + R_3 + \cdots$, $I = V/R_T$, $V_n = I \cdot R_n$). Cierra con un ejemplo numérico (12 V, 2+3+5 Ω → $R_T$ = 10 Ω, $I$ = 1.2 A, caídas de 2.4/3.6/6.0 V que suman 12 V) y la idea clave de que $R_T$ siempre supera a cualquier resistencia individual.
 > 
@@ -115,7 +115,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en paralelo**, los elementos comparten los mismos dos nodos (terminales), por lo que el voltaje en todos ellos es idéntico. La corriente total se reparte entre las ramas disponibles.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
 > 
 > **Se lee así:** Diagrama de una fuente Vs conectada a tres ramas en paralelo entre el nodo positivo y el nodo negativo: la corriente se reparte como I1, I2 e I3 hacia cada rama y todas reconfluyen en el nodo inferior para cerrar el lazo. Es la vista mínima de "las mismas dos terminales" que define a un circuito en paralelo.
 > 
@@ -172,7 +172,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Circuito en Paralelo
 >
-> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_24_25.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 30 may 2026, 20_24_25.png]]
 > 
 > **Se lee así:** Infografía del circuito en paralelo: diagrama de la fuente V con R1, R2, R3 entre los mismos dos nodos; características (voltaje igual en todas las ramas, la corriente total es la suma de las ramas, un fallo en una rama no afecta a las demás y $R_T$ es menor que la menor resistencia); y ecuaciones ($1/R_T = \sum 1/R_k$, $I_T = \sum I_n$, $I_n = V/R_n$). Incluye ejemplo numérico (12 V, 2/3/6 Ω → $R_T$ = 1 Ω, corrientes de 6/4/2 A, $I_T$ = 12 A) verificado con KCL.
 > 
@@ -211,7 +211,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ ⊣⊢ Capacitores en Serie y Paralelo
 >
-> ![[../../Anexos/ChatGPT Image 30 may 2026, 20_29_23.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 30 may 2026, 20_29_23.png]]
 > 
 > **Se lee así:** Infografía doble de capacitores: a la izquierda, serie (uno tras otro, la carga es la misma en todos, el voltaje se divide, $1/C_{eq} = \sum 1/C_n$ y $C_{eq}$ queda menor que el menor; ejemplo 2/3/6 µF → 1 µF); a la derecha, paralelo (entre los mismos nodos, el voltaje es el mismo, la carga se divide, $C_{eq} = \sum C_n$ y $C_{eq}$ queda mayor que el mayor; ejemplo → 11 µF). Cada panel trae diagrama, características, ecuaciones y ejemplo numérico completo.
 > 
@@ -250,7 +250,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Inductores en Serie y Paralelo
 >
-> ![[../../Anexos/file_000000006634720e8575d8d5057e5f59.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/file_000000006634720e8575d8d5057e5f59.png]]
 > 
 > **Se lee así:** Infografía doble de inductores, en espejo con la de capacitores: a la izquierda, serie (el mismo camino para la corriente, $L_{eq} = L_1 + L_2 + L_3$, el voltaje se reparte entre ellos y $L_{eq}$ es mayor que la mayor inductancia); a la derecha, paralelo (entre los mismos nodos, $1/L_{eq} = \sum 1/L_n$, el voltaje es común y $L_{eq}$ es menor que la menor). Incluye ejemplo numérico con V = 12 V y L = 2/3/6 mH (serie → 11 mH; paralelo → 1 mH) usando reactancias $X_L = 2\pi f L$.
 > 
@@ -265,11 +265,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > El método de análisis consiste en **simplificar progresivamente** el circuito, reduciendo grupos paralelos o series a su equivalente, hasta obtener un único $R_{eq}$.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
 >
 > ### 🧮 Metodología de simplificación paso a paso
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
 >
 > **Ejemplo resuelto:**
 >
@@ -294,7 +294,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Circuito Mixto (Serie-Paralelo)
 >
-> ![[../../Anexos/file_00000000bdc471f7b12b164a687c03e7.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/file_00000000bdc471f7b12b164a687c03e7.png]]
 > 
 > **Se lee así:** Infografía de un circuito mixto resuelto paso a paso; el ejemplo está planteado con inductores (L1 en serie, L2‖L3 en la sección central, L4 en serie), pero el método es el mismo que el de un mixto resistivo: identificar el grupo en paralelo, calcular su equivalente ($L_p$ = 2 mH), reemplazarlo, combinar lo que queda en serie ($L_{eq}$ = 8 mH) y recién entonces hallar $I_T$ y los voltajes y corrientes de cada tramo, con verificación $V_T$ = 24 V.
 > 
@@ -339,7 +339,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Fallo de un elemento** | Interrumpe todo | Solo esa rama | Depende de la ubicación |
 > | **Ejemplo real** | Luces navideñas antiguas | Tomacorrientes del hogar | Circuitos electrónicos |
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
 > 
 > **Se lee así:** Diagrama de decisión que parte de "Fuente Vs" y se bifurca en tres tipos de circuito: Serie (I constante, V se divide, Req = ΣRk), Paralelo (V constante, I se divide, Req < Rmin) y Mixto (simplificar paso a paso, KVL + KCL). Cada rama resume el comportamiento y la estrategia de análisis de esa topología.
 > 
@@ -351,7 +351,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
 > 
 > **Se lee así:** Mapa mental con raíz "Circuitos Eléctricos" y cuatro ramas: Serie (I constante, V se divide, KVL, divisor de voltaje), Paralelo (V constante, I se divide, KCL, divisor de corriente), Mixto (simplificación paso a paso, KVL + KCL, aplicaciones reales) y Leyes de Kirchhoff (KCL en nodos, KVL en mallas, conservación). Resume en una sola vista todo lo desarrollado en la nota.
 > 

@@ -23,7 +23,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - El **Teorema de Norton** es el equivalente usando una fuente de corriente.
 > - La **Máxima Transferencia de Potencia** responde cuándo una carga extrae el máximo de energía posible de la fuente.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
 > 
 > |Teorema|Utilidad principal|
 > |---|---|
@@ -35,7 +35,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Introducción
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
 > 
 > **Se lee así:** Infografía de ESPOL sobre el **método de tensiones de nodo**: parte de la KCL en cada nodo (tomando tierra como referencia), expresa las corrientes en resistencias como $(V_i - V_j)/R$ y organiza todo en el sistema matricial $G\,V = I$, con un ejemplo numérico de tres nodos. Aunque aparece en la introducción, su contenido es el método de nodos, no un teorema.
 > 
@@ -43,7 +43,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Introducción
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 21_36_10.png]]
 > 
 > **Se lee así:** Infografía de la **forma matricial directa por inspección**: detalla las reglas para armar $[R]\cdot[I]=[V]$ por mallas (diagonal = suma de resistencias de la malla, fuera de diagonal = menos la compartida, vector $[V]$ con el signo según el sentido de recorrido) y $[G]\cdot[V]=[I]$ por nodos con conductancias, con ejemplos numéricos de dos mallas y dos nodos. Cierra con la nota de que en AC se usan $Z$ e $Y$ en lugar de $R$ y $G$.
 > 
@@ -61,7 +61,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
 > 
 > ### 🔕 Cómo "apagar" una fuente
 > 
@@ -99,7 +99,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Teorema de Superposición
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_07_49.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_07_49.png]]
 > 
 > **Se lee así:** Infografía del **Teorema de Superposición**: enuncia $X = X_1 + X_2 + \cdots + X_n$ para voltajes o corrientes, muestra cómo desactivar cada tipo de fuente (voltaje → cortocircuito, corriente → circuito abierto, dependientes nunca se desactivan) y lo desarrolla paso a paso con un ejemplo de dos fuentes ($V_1 = 10\text{ V}$, $I_2 = 2\text{ A}$) que termina en $I_o \approx 1.889\text{ A}$. Incluye además las observaciones: aplica solo a circuitos lineales y a tensiones/corrientes, no a potencia.
 > 
@@ -168,7 +168,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Fórmula**|$V_{R_i} = \dfrac{V_f \cdot R_i}{R_{eq}}$|$I_{R_i} = \dfrac{R_{eq} \cdot I_f}{R_j}$|
 > |**Estructura**|Una sola malla|Un solo par de nodos|
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 > 
 > **Se lee así:** Diagrama de decisión que parte de un circuito simple y bifurca según la estructura: resistores en **serie** con fuente de voltaje lleva al **divisor de voltaje** ($V_{Ri} = V_f \cdot R_i / R_{eq}$), y resistores en **paralelo** con fuente de corriente lleva al **divisor de corriente** ($I_{Ri} = R_{eq} \cdot I_f / R_j$). Es la síntesis gráfica de la regla "mira la topología antes de elegir la fórmula".
 > 
@@ -176,7 +176,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Divisor de Voltaje y Divisor de Corriente
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_10_30.png]]
 > 
 > **Se lee así:** Infografía de los **divisores de voltaje y de corriente** lado a lado: a la izquierda el circuito en serie con $V_k = V_T \cdot R_k / (R_1 + \cdots + R_n)$ y su caso de dos resistencias (ejemplo $V_T = 12\text{ V}$, $4\ \Omega$ y $8\ \Omega$ → $4\text{ V}$ y $8\text{ V}$); a la derecha el circuito en paralelo con la corriente dividiéndose inversamente a las resistencias (ejemplo $I_T = 6\text{ A}$, $3\ \Omega$ y $6\ \Omega$ → $4\text{ A}$ y $2\text{ A}$). Cierra con las características de cada uno y la advertencia de no aplicarlos con fuentes dependientes o elementos no lineales.
 > 
@@ -195,7 +195,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por el ingeniero francés **Léon Charles Thévenin** en 1883.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
 > 
 > ### ⚙️ Procedimiento para obtener $V_{Th}$ y $R_{Th}$
 > 
@@ -248,7 +248,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por **Edward Lawry Norton** en 1926.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
 > 
 > ### ⚙️ Parámetros del equivalente Norton
 > 
@@ -265,7 +265,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$V_{Th} = I_N \cdot R_N \qquad\qquad I_N = \frac{V_{Th}}{R_{Th}}$$
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
 > 
 > ### 🧮 Ejemplo resuelto
 > 
@@ -281,7 +281,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Teorema de Norton
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_16_27.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_16_27.png]]
 > 
 > **Se lee así:** Infografía doble lado a lado de **Thévenin y Norton**: en cada mitad se muestra el enunciado (red lineal de dos terminales → fuente de voltaje con $R_{Th}$ en serie, o fuente de corriente con $R_N$ en paralelo), cómo obtener los parámetros ($V_{Th} = V_{AB}$ en abierto y $R_{Th} = R_{AB}$ con fuentes desactivadas; $I_N = I_{sc}$ en corto y $R_N = R_{AB}$), la conexión con la carga $R_L$ y un ejemplo numérico rápido con el mismo circuito ($12\text{ V}$, $4\ \Omega$, $6\ \Omega$ → $V_{Th} = 7.2\text{ V}$, $R_{Th} = R_N = 2.4\ \Omega$; Norton: $I_N = 3\text{ A}$).
 > 
@@ -297,7 +297,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Es la base práctica de la relación Thévenin-Norton.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
 > 
 > ### ⚙️ Fórmulas de transformación
 > 
@@ -316,7 +316,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Transformación de Fuentes
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_22_01.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_22_01.png]]
 > 
 > **Se lee así:** Infografía de la **transformación de fuentes**: presenta la equivalencia entre fuente de voltaje $V_s$ en serie con $R_s$ y fuente de corriente $I_s$ en paralelo con la misma $R_s$ ($I_s = V_s/R_s$; $V_s = I_s \cdot R_s$), con ejemplos numéricos en ambas direcciones ($12\text{ V}$/$6\ \Omega$ → $2\text{ A}$; $3\text{ A}$/$4\ \Omega$ → $12\text{ V}$), la verificación con una carga $R_L$ (mismo $V_{ab}$ en las dos configuraciones) y las condiciones de validez: fuentes ideales, resistencias lineales y equivalencia vista solo desde los terminales $a$-$b$.
 > 
@@ -366,7 +366,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Teorema de Máxima Transferencia de Potencia
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_25_46.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_25_46.png]]
 > 
 > **Se lee así:** Infografía del **Teorema de Máxima Transferencia de Potencia** aplicada a ambos equivalentes: con Thévenin la condición es $R_L = R_{Th}$ y $P_{L,máx} = V_{Th}^2 / 4R_{Th}$; con Norton la condición es $R_L = R_N$ y $P_{L,máx} = I_N^2 R_N / 4$. Incluye los desarrollos de $I_L$ y $P_L$ paso a paso, ejemplos numéricos en ambas modalidades ($12\text{ V}$/$6\ \Omega$ → $6\text{ W}$; $2\text{ A}$/$4\ \Omega$ → $4\text{ W}$) y recuerda que en el punto óptimo solo se transfiere el 50 % de la potencia disponible.
 > 
@@ -474,7 +474,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚡ Regla mnemotécnica — mismo patrón para mallas y nodos
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 > 
 > **Se lee así:** Diagrama de la **regla mnemotécnica** para el método directo: la diagonal principal (término propio) es la suma de las $R$ o $G$ propias del nodo/malla y lleva **signo positivo**; los términos fuera de la diagonal (mutuos) son la $R$ o $G$ compartida entre nodos/mallas y llevan **signo negativo**; y el vector de fuentes toma su signo según el sentido de recorrido de la malla o de inyección en el nodo.
 > 
@@ -482,7 +482,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Métodos Directos Matriciales — Mallas y Nodos
 >
-> ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 00_30_37.png]]
 > 
 > **Se lee así:** Infografía comparativa de los **métodos directos matriciales**: a la izquierda el método de mallas ($[Z]\{I_m\} = \{V_m\}$, corrientes en sentido horario) con la construcción de la matriz de impedancias, el vector de fuentes y un ejemplo numérico ($R_1 = 4\ \Omega$, $R_2 = 2\ \Omega$, $R_3 = 6\ \Omega$, $R_4 = 3\ \Omega$, $V_{s1} = 12\text{ V}$, $V_{s2} = 6\text{ V}$ → $I_1 = 1.2\text{ A}$, $I_2 = -0.6\text{ A}$); a la derecha el método de nodos ($[G]\{V_n\} = \{I_n\}$, tensiones respecto a tierra) con su ejemplo numérico equivalente. Incluye procedimientos paso a paso, ventajas de cada método y las convenciones de color (voltaje/malla vs. corriente/nodo).
 > 
@@ -502,7 +502,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Transf. de fuentes**|Intercambia Vs ↔ Is|Fuente + resistencia|Simplifica nodos o mallas sucesivos|
 > |**Máx. transferencia**|$R_L = R_{Th}$|Red Thévenin conocida|Optimiza la potencia entregada|
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
 > 
 > **Se lee así:** Diagrama de decisión que parte de "¿qué se busca?" ante un circuito complejo: si es la respuesta ante varias fuentes, lleva a **Superposición**; si es simplificar la red para la carga, pregunta por el tipo de equivalente y lleva a **Thévenin** (voltaje + serie) o **Norton** (corriente + paralelo), conectados entre sí por la **transformación de fuentes**; y si es optimizar la potencia entregada, lleva a **Máxima transferencia de potencia**.
 > 
@@ -514,7 +514,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 > 
 > **Se lee así:** Mapa mental de **Teoremas de Circuitos** con siete ramas: Superposición (una fuente a la vez, apagar fuentes, sumar respuestas, solo cantidades lineales), Divisores (voltaje → serie, corriente → paralelo), Thévenin ($V_{Th} = V_{oc}$, $R_{Th} = R_{eq}$ sin fuentes, serie con la carga, Thévenin 1883), Norton ($I_N = I_{sc}$, $R_N = R_{Th}$, paralelo con la carga, dual de Thévenin), Transformación ($V_s/R_s \leftrightarrow I_s \cdot R_s$, serie ↔ paralelo), Máxima transferencia ($R_L = R_{Th}$, $P_{máx} = V_{Th}^2/4R_{Th}$, eficiencia 50 %) y Métodos matriciales ($R \cdot I = V$, $G \cdot V = I_f$, propio positivo / mutuo negativo, $G$ simétrica con fuentes independientes, circuito plano para mallas).
 > 

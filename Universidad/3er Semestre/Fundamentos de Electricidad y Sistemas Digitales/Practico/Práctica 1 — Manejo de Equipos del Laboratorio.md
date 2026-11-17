@@ -14,7 +14,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 > [!note] 🔌 Tomacorrientes en paralelo
 >
-> ![[../../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230457.png]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260519230457.png]]
 > 
 > **Se lee así:** la imagen muestra la conexión en paralelo de varios tomacorrientes alimentados desde la misma línea, neutro y tierra (cableado de instalaciones).
 > 
@@ -74,7 +74,7 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223659.png]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223659.png]]
 > 
 > **Se lee así:** La figura (Figura 18 de la guía) muestra el montaje para la medición de voltaje: dos fuentes de 15 V en serie con el nodo central referenciado a tierra en el punto C (cable entre CH3(+) y CH1(−)), y la resistencia R conectada entre A (+Vcc) y B (−Vcc), con C como referencia.
 > 
@@ -97,7 +97,7 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223728.png]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223728.png]]
 > 
 > **Se lee así:** La figura (Figura 19 de la guía) muestra el montaje para medir corriente: dos fuentes de 5 V en serie con el nodo central referenciado a tierra, y el multímetro conectado en serie en la rama derecha, entre el nodo superior y la resistencia R.
 > 
@@ -119,7 +119,7 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ---
 > 
-> ![[../../../Anexos/Pasted image 20260525223751.png]]
+> ![[../Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525223751.png]]
 > 
 > **Se lee así:** La figura (Figura 20 de la guía) muestra el montaje del Procedimiento 2: el generador de funciones en su puerto de 50 Ω conectado con cable BNC–lagarto (rojo a la terminal positiva de la resistencia R y negro a referencia GND), que es también el punto donde conectarás la punta CH1 del osciloscopio.
 > 

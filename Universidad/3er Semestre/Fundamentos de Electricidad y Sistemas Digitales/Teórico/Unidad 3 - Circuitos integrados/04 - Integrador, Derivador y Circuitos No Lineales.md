@@ -13,7 +13,7 @@ dg-publish: true
 > 1. **Con memoria ($C$)**: integrador y derivador — la salida depende de la **historia** de la entrada (integral/derivada en el tiempo).
 > 2. **No lineales (saturación, diodos)**: comparadores, rectificadores y log/antilog — el OPAM ya **no está en zona lineal**, satura a $\pm V_{sat}$ o usa la exponencial del diodo.
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
 > 
 > **Se lee así:** El diagrama divide la nota en dos familias: la rama superior, un OPAM con $R$ y $C$, da el integrador ($1/sC$ en realimentación) y el derivador ($C$ en la entrada); la inferior, un OPAM en lazo abierto o con diodo, da comparadores, rectificadores y log/antilog. La topología del circuito te dice a qué familia pertenece antes de hacer cualquier cuenta.
 > 
@@ -248,7 +248,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
 > 
 > **Se lee así:** El mapa mental resume la nota en cinco ramas: integrador ($v_o=-\frac{1}{RC}\int v_i\,dt$, con sus variantes flotante y no inversora), derivador ($v_o=-RC\,\dot v_i$), comparadores (paso por cero, Zener, $V_{ref}$, histéresis), rectificadores (media y onda completa) y log/antilog (diodo exponencial). Cada rama anota su fórmula clave y sus trampas habituales.
 > 

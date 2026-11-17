@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Como se trata de un **circuito integrado no programable** (ver [[01 - CI no programables]]), su función interna es fija; lo que cambia según la aplicación es la red de resistencias/capacitores externos que lo rodean — exactamente las configuraciones que se resolvieron en la guía de ejercicios de amplificador operacional.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
 > 
 > **Se lee así:** El diagrama condensa la tesis de la nota en tres pasos: una señal contaminada con ruido entra a la configuración de OPAM adecuada y sale limpia (o con el ruido rechazado). El bloque central es la clave: no hay una única topología, hay que elegir la configuración correcta para cada tipo de ruido.
 > 
@@ -95,7 +95,7 @@ dg-publish: true
 > 
 > El **comparador con histéresis** (Schmitt trigger) resuelve esto definiendo **dos umbrales distintos** (uno de subida, otro de bajada) mediante realimentación positiva, de modo que un pequeño ruido superpuesto ya no alcanza a provocar conmutaciones falsas.
 > 
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
 > 
 > **Se lee así:** El diagrama parte de la misma señal ruidosa cerca del umbral y la bifurca según el comparador usado: con un comparador simple la salida oscila falsamente entre estados, con uno de histéresis hay una única transición limpia. Muestra por qué la realimentación positiva (dos umbrales) elimina las conmutaciones espurias.
 > 
@@ -105,7 +105,7 @@ dg-publish: true
 
 > [!note] 🖼️ Comparador con Histéresis — Inmunidad en Señales Digitales
 >
-> ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_36_02.png]]
+> ![[../Unidad 0 - Guías y Ejercicios/Figuras/ChatGPT Image 22 jul 2026, 13_36_02.png]]
 > 
 > **Se lee así:** La infografía reúne las cinco aplicaciones de OPAMs de la nota en un solo póster: seguidor de tensión, amplificador diferencial, amplificador de instrumentación, filtros activos y comparador con histéresis, con el circuito típico y la ventaja frente al ruido de cada uno. Cierra con el porqué estos circuitos minimizan el ruido, recomendaciones prácticas de montaje y un resumen del flujo señal ruidosa → señal limpia.
 > 
@@ -226,7 +226,7 @@ dg-publish: true
 
 > [!note] 🖼️ Resumen Visual
 >
-> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
+> ![[../Unidad 0 - Guías y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
 > 
 > **Se lee así:** El mapa mental resume la nota en seis ramas: seguidor de tensión, amplificador diferencial, amplificador de instrumentación, filtros activos, comparador con histéresis y análisis de redes en cascada (red en T, diferencial de dos OPAMs, sumador inversor multi-etapa). Cada rama cuelga del mismo núcleo y anota la idea clave de esa configuración.
 > 

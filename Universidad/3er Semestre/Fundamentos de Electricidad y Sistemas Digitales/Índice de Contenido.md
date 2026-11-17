@@ -6,7 +6,7 @@ tags: [unidad0, indice, recursos]
 # 📂 Índice de Contenido — Fundamentos de Electricidad y Sistemas Digitales
 > [!info] ℹ️ Portal de material de la materia
 >
-> Esta nota es el índice de la carpeta `Unidad 0 - Guias y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
+> Esta nota es el índice de la carpeta `Unidad 0 - Guías y Ejercicios`, que agrupa el material oficial (syllabus, guías de taller, PDFs del aula) y sirve de hub hacia las unidades. Los PDFs se embeben con `!` inicial para que el sitio los suba; sin el `!` el link quedaría roto.
 
 ## 📎 Syllabus y políticas
 
@@ -26,19 +26,20 @@ tags: [unidad0, indice, recursos]
 
 > [!note] 🧪 Prácticas de laboratorio
 >
-> La carpeta `Practico/` (en la raíz de la materia) tiene los recursos del laboratorio, los equipos y las 4 prácticas con sus soluciones.
+> La carpeta `Practico/` (en la raíz de la materia) tiene los recursos del laboratorio, los equipos y las 6 prácticas con su guía PDF al lado de cada nota.
 
 > [!info] 📁 Material existente
 >
-> - `Unidad 0 - Guias y Ejercicios/Diagramas/` — 222 diagramas SVG (con sus fuentes `.mmd`) embebidos en las notas de cada unidad.
-> - `Unidad 0 - Guias y Ejercicios/Figuras/` — 11 imágenes de clase (horario, capturas del libro).
-> - `Unidad 0 - Guias y Ejercicios/Material de clase/` — recursos visuales.
+> - `Teórico/Unidad 0 - Guías y Ejercicios/Diagramas/` — 222 diagramas SVG (con sus fuentes `.mmd`) embebidos en las notas de cada unidad.
+> - `Teórico/Unidad 0 - Guías y Ejercicios/Figuras/` — 81 imágenes de clase y capturas de trabajo.
+> - `Teórico/Unidad 0 - Guías y Ejercicios/Diapositivas/` — PDF de las sesiones del curso.
+> - `Teórico/Unidad 0 - Guías y Ejercicios/Guías/` — PDF de guías y ejercicios resueltos.
 
 ## 📥 Pendiente de cargar
 
 > [!warning] 📬 Material que falta
 >
-> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Unidad 0 - Guias y Ejercicios/Guías/` con nombre con contexto:
+> Guías de taller, listas de ejercicios y prácticas del aula virtual. Al llegarlos, soltar el PDF en `Teórico/Unidad 0 - Guías y Ejercicios/Guías/` con nombre con contexto:
 > - `FESD-Guia-XX.pdf`
 > - `FESD-Ejercicios-Tema.pdf`
 > - `FESD-Practica-XX.pdf`
@@ -89,6 +90,26 @@ tags: [unidad0, indice, recursos]
 > |  | [Link](Amplificador operacional: lo que debes saber para empezar) | [Link](https://www.youtube.com/watch?v=-jNR4824ifo) | ACADENAS, 20:25 |
 > |  | [Link](Amplificador integrador en 6 minutos) | [Link](https://www.youtube.com/watch?v=qMHSr4FAPAM) | Les Ingenieurs, 7:57 |
 > |  | [Link](Amplificador operacional: comparador) | [Link](https://www.youtube.com/watch?v=EbobLluwmP4) | Electrónica FP, 6:38 |
+### 📎 Guías y formatos oficiales del laboratorio
+
+> [!info] 📎 Guías y formatos oficiales (PDF del aula virtual)
+>
+> **Guías oficiales de las prácticas**
+>
+> - [[Practico/PRÁCTICA 1 FESD GUÍA.pdf|PRÁCTICA 1 FESD GUÍA.pdf]]
+> - [[Practico/Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 — Ley de Ohm y Kirchhoff.pdf]]
+> - [[Practico/Práctica 3 - Funcionamiento de Diodos y Transistores.pdf|Práctica 3 — Diodos y Transistores.pdf]]
+> - [[Practico/Práctica 4 - Funcionamiento de Fuentes Lineales.pdf|Práctica 4 — Fuentes Lineales.pdf]]
+> - [[Practico/Práctica 5 - Funcionamiento de Filtros Activos.pdf|Práctica 5 — Filtros Activos.pdf]]
+> - [[Practico/Practica__6_FESD.pdf|Práctica 6 — Logica Combinatoria y Arduino.pdf]]
+>
+> **Documentos oficiales del laboratorio**
+>
+> - [[Practico/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD — Normas de seguridad industrial (laboratorio).pdf]]
+> - [[Practico/FESD_Practico_2026_PAO1_Politicas.pdf|FESD — Políticas del práctico 2026.pdf]]
+> - [[Practico/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
+> - [[Practico/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
+
 ## 🔗 Navegación
 
 > [!tip] Enlaces rápidos

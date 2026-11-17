@@ -85,10 +85,10 @@ tags: [recursos-visuales, fesd]
 >
 > PDFs oficiales (enlace 📎 con alias): el sitio no publica PDFs; abrirlos aquí.
 >
-> - [[Practico/Fundamentos del Laboratorio/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
-> - [[Practico/Fundamentos del Laboratorio/FESD_Practico_2026_PAO1_Politicas.pdf|FESD_Practico_2026_PAO1_Politicas.pdf]]
-> - [[Practico/Fundamentos del Laboratorio/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
-> - [[Practico/Fundamentos del Laboratorio/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
+> - [[Practico/FESD_Normas de Seguridad Industrial_Laboratorio.pdf|FESD_Normas de Seguridad Industrial_Laboratorio.pdf]]
+> - [[Practico/FESD_Practico_2026_PAO1_Politicas.pdf|FESD_Practico_2026_PAO1_Politicas.pdf]]
+> - [[Practico/FORMATO INFORME DE PRÁCTICA.pdf|FORMATO INFORME DE PRÁCTICA.pdf]]
+> - [[Practico/Formato Pre-prácticas.pdf|Formato Pre-prácticas.pdf]]
 
 > [!info] 🔗 Unidad 0 — Guías y Ejercicios (FESD Práctico)
 >
@@ -96,7 +96,7 @@ tags: [recursos-visuales, fesd]
 
 > [!note] 🖼️ Práctico y Laboratorio
 >
-> ![[Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260525231841.png]]
+> ![[Teórico/Unidad 0 - Guías y Ejercicios/Figuras/Pasted image 20260525231841.png]]
 > 
 > **Se lee así:** la imagen muestra la tabla de posiciones del selector de un multímetro digital con su función y rango: tensión CA y CC (hasta 1000 V), mV y temperatura (°C/°F), ohmios y capacitancia, continuidad y prueba de diodos, y mA y A en CA/CC junto con Hz.
 > 
@@ -109,7 +109,7 @@ tags: [recursos-visuales, fesd]
 > [!info] 🔗 Ver también
 >
 > - `Teórico/Unidad 0 - Guías y Ejercicios/00 - Recursos Unidad 0.md` — índice del material teórico.
-> - `Practico/Fundamentos del Laboratorio/` — material práctico del laboratorio.
+> - `Practico/` — material práctico del laboratorio.
 
 ---
 
