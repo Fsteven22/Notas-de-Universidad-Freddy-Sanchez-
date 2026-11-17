@@ -188,10 +188,10 @@ tags: [MATG1045, unidad6, integracion-por-partes, calculo, integrales, por-parte
 
 > [!quote] 📚 Notas Relacionadas
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md|01 - Cambio de Variable en Integrales.md]] - Técnica previa
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales.md|01 - Cambio de Variable en Integrales.md]] - Técnica previa
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas).md|01 - Antiderivadas (Primitivas).md]] - Conceptos base
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Técnica siguiente
-> - [[Unidad 6 - Integrales/Técnicas de Integración/05 - Integrales por Fracciones Parciales.md|05 - Integrales por Fracciones Parciales.md]] - Técnica complementaria
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Técnica siguiente
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/05 - Integrales por Fracciones Parciales.md|05 - Integrales por Fracciones Parciales.md]] - Técnica complementaria
 
 ## 📖 Notas Recomendadas
 

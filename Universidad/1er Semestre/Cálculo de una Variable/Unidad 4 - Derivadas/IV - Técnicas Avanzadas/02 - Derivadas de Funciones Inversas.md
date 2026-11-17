@@ -382,7 +382,7 @@ tags: [MATG1045, unidad4, funciones-inversas, arctan, arcsen, logaritmo, derivac
 > - [[Unidad 4 - Derivadas/III - Derivadas Especiales/02 - Derivación Logarítmica|02 - Derivación Logarítmica]] — usa la derivada de $\ln x$ que aquí se obtiene.
 > - [[Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena|02 - Regla de la Cadena]] — para las composiciones con inversas.
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior|01 - Derivadas de Orden Superior]] — el caso general de derivar varias veces.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/04 - Integrales de Funciones Inversas|04 - Integrales de Funciones Inversas]] — el proceso inverso en el mundo de las integrales.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/04 - Integrales de Funciones Inversas|04 - Integrales de Funciones Inversas]] — el proceso inverso en el mundo de las integrales.
 > - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]] — para verificar el comportamiento límite de las inversas.
 
 ---
@@ -394,7 +394,7 @@ tags: [MATG1045, unidad4, funciones-inversas, arctan, arcsen, logaritmo, derivac
 > - Practica primero los ejercicios 1 a 3: reconocer la estructura (inversa + cadena) debe salirte al instante.
 > - Después salta al 4 y al 5, donde el valor absoluto y los dominios son la dificultad real.
 > - Termina con el 7 y el 8: el primero es el tipo "punto concreto" que más aparece, y el 8 muestra para qué sirven las inversas (identidades).
-> - Cuando lo tengas dominado, continúa con [[Unidad 6 - Integrales/Técnicas de Integración/04 - Integrales de Funciones Inversas|Integrales de Funciones Inversas]], donde se usa el mismo razonamiento al revés.
+> - Cuando lo tengas dominado, continúa con [[Unidad 6 - Integrales/V - Técnicas de Integración/04 - Integrales de Funciones Inversas|Integrales de Funciones Inversas]], donde se usa el mismo razonamiento al revés.
 
 ---
 

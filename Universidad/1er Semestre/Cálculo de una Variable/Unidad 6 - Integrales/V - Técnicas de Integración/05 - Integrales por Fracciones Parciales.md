@@ -202,9 +202,9 @@ tags: [MATG1045, unidad6, integrales-por-fracciones-parciales, matemáticas, cá
 > [!quote] ❝ Referencias
 >
 > - Integración por Sustitución - Método alternativo para ciertas funciones racionales
-> - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Complementa cuando hay productos
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Complementa cuando hay productos
 > - Factorización de Polinomios - Fundamento algebraico
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Casos especiales de sustitución
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Casos especiales de sustitución
 
 ---
 

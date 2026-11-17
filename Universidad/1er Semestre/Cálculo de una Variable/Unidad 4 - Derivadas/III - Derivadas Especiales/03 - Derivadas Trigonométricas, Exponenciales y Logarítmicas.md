@@ -490,7 +490,7 @@ tags: [MATG1045, unidad4, derivadas-trigonometricas-exponenciales-y-logaritmicas
 > - J. Stewart, *Cálculo* (Cengage), cap. 3: derivadas de exponenciales, logaritmos y trigonométricas.
 > - R. Larson, *Cálculo* (Cengage), cap. 3: funciones trigonométricas inversas y aplicaciones.
 > - [[Unidad 4 - Derivadas/II - Reglas de Derivación/02 - Regla de la Cadena|02 - Regla de la Cadena]] — la herramienta que acompaña a todas las fórmulas de esta nota.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — el proceso inverso de estas derivadas.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — el proceso inverso de estas derivadas.
 
 ---
 
@@ -518,7 +518,7 @@ tags: [MATG1045, unidad4, derivadas-trigonometricas-exponenciales-y-logaritmicas
 > - [[Unidad 4 - Derivadas/III - Derivadas Especiales/01 - Derivación Implícita|01 - Derivación Implícita]] — para ecuaciones donde estas funciones aparecen sin despejar.
 > - [[Unidad 4 - Derivadas/III - Derivadas Especiales/02 - Derivación Logarítmica|02 - Derivación Logarítmica]] — la técnica para potencias $f(x)^{g(x)}$ que aquí solo se enuncia.
 > - [[Unidad 4 - Derivadas/I - Fundamentos Teóricos/02 - Interpretación Geométrica de la Derivada|02 - Interpretación Geométrica de la Derivada]] — pendientes de curvas trigonométricas y exponenciales.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — hacia Cálculo Integral: estas fórmulas se usan al revés al integrar.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — hacia Cálculo Integral: estas fórmulas se usan al revés al integrar.
 
 ---
 
@@ -529,7 +529,7 @@ tags: [MATG1045, unidad4, derivadas-trigonometricas-exponenciales-y-logaritmicas
 > - Empieza por el círculo de derivadas y SOCOTA: dominar los signos de las seis trigonométricas es la base de todo lo demás.
 > - Después practica cadenas cortas como $\sin(3x)$ y $e^{3x^2+1}$ hasta que la estructura "fórmula por derivada interna" sea automática.
 > - Cuando toques optimización o modelado, vuelve a los ejemplos de crecimiento y movimiento armónico de esta nota.
-> - Para el caso $f(x)^{g(x)}$, continúa en [[Unidad 4 - Derivadas/III - Derivadas Especiales/02 - Derivación Logarítmica|02 - Derivación Logarítmica]]; hacia el integral, en [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]].
+> - Para el caso $f(x)^{g(x)}$, continúa en [[Unidad 4 - Derivadas/III - Derivadas Especiales/02 - Derivación Logarítmica|02 - Derivación Logarítmica]]; hacia el integral, en [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]].
 
 ---
 

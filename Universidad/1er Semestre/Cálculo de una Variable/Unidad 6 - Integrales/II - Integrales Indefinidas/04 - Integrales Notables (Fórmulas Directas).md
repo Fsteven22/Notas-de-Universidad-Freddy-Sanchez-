@@ -310,7 +310,7 @@ tags: [MATG1045, unidad6, integrales-notables, formulas-directas, regla-potencia
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas)|01 - Antiderivadas (Primitivas)]] — de donde salen estas fórmulas como casos particulares.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/03 - Constante de integración|03 - Constante de integración]] — la $C$ obligatoria en todas las respuestas.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/02 - Identidades Trigonométricas para Integrales|02 - Identidades Trigonométricas para Integrales]] — cuando el integrando no llega en forma estándar, la identidad lo prepara.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — lo que toca cuando la tabla no alcanza.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — lo que toca cuando la tabla no alcanza.
 > - [[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas|03 - Tabla de Derivadas Básicas]] — la tabla inversa de la que estas fórmulas salen.
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — el teorema que hace útil todo el catálogo.
 
@@ -323,7 +323,7 @@ tags: [MATG1045, unidad6, integrales-notables, formulas-directas, regla-potencia
 > - Practica primero los ejercicios 1 y 3: linealidad y forma estándar, los dos pasos previos a cualquier fila.
 > - Después salta al 2 y al 4, donde entran las fórmulas inversas con sus dominios.
 > - Cuando lo tengas, ataca el 5, que muestra el paso de logaritmo de las cuatro trigonométricas difíciles.
-> - Cierra con [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|Cambio de Variable en Integrales]], para cuando el integrando no coincida con ninguna fila.
+> - Cierra con [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|Cambio de Variable en Integrales]], para cuando el integrando no coincida con ninguna fila.
 
 ---
 

@@ -260,8 +260,8 @@ tags: [MATG1045, unidad6, cambio-de-variable-en-integrales, calculo, integrales,
 >
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas).md|01 - Antiderivadas (Primitivas).md]] - Conceptos fundamentales
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo.md|04 - Teorema Fundamental del Cálculo.md]] - Base teórica
-> - [[Unidad 6 - Integrales/Técnicas de Integración/05 - Integrales por Fracciones Parciales.md|05 - Integrales por Fracciones Parciales.md]] - Técnica complementaria
-> - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Siguiente técnica
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/05 - Integrales por Fracciones Parciales.md|05 - Integrales por Fracciones Parciales.md]] - Técnica complementaria
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Siguiente técnica
 
 ## 📖 Notas Recomendadas
 

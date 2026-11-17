@@ -169,7 +169,7 @@ tags: [MATG1045, unidad7, volumenes-de-solidos-de-revolucion, cálculo, integral
 
 > [!quote]+ **Enlaces a Notas Relacionadas**
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
 > - Aplicaciones de la Integral - Contexto más amplio
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Técnicas necesarias para resolver
 > - Geometría Analítica - Para visualización espacial

@@ -329,7 +329,7 @@ tags: [MATG1045, unidad7, area-entre-curvas, matematicas/calculo/aplicaciones, a
 > - [[02 - Coordenadas polares]] - Extensión a otros sistemas de coordenadas
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/03 - Derivadas Paramétricas.md|03 - Derivadas Paramétricas.md]] - Representaciones alternativas de curvas
 > - [[03 – Integrales de línea vectoriales#Teorema de Green|Teorema de Green]] - Método alternativo para cálculo de áreas
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos computacionales
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos computacionales
 
 ### 🎯 Notas Recomendadas
 

@@ -255,7 +255,7 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 >
 > - Series de Potencias
 > - Series de Taylor y Maclaurin
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
 > - Métodos de Aproximación
 
 ---
@@ -515,7 +515,7 @@ tags: [MATG1045, unidad6, criterios-de-convergencia-y-divergencia, matemáticas,
 
 > [!tip] Continuación del Tema
 >
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]]
 > - Series de Fourier
 > - Transformadas de Laplace

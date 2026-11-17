@@ -255,7 +255,7 @@ tags: [MATG1045, unidad6, asintotas-en-integrales-definidas, matemáticas, asín
 > [!tip] Continuación del Tema
 >
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/02 - Criterios de Convergencia y Divergencia.md#Criterios de Convergencia y Divergencia - Integrales Impropias|Criterios de Convergencia y Divergencia - Integrales Impropias]]
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]]
 > - [[Unidad 5 - Aplicaciones de la Derivada/I - Análisis de Funciones/01 - Análisis Completo de Funciones.md|01 - Análisis Completo de Funciones.md]]
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md|03 - Teoremas de Comparación y Desigualdades.md]]
 

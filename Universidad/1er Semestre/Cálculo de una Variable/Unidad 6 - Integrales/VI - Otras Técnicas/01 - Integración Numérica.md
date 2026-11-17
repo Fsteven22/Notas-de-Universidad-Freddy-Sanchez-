@@ -431,9 +431,9 @@ tags: [MATG1045, unidad6, integracion-numerica, matematicas/calculo/numerico, in
 >
 > ### 🧮 Aplicaciones Especializadas
 > - Análisis de Señales Digitales - Integración de funciones muestreadas
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en ecuaciones diferenciales
 > - Procesamiento de Datos Experimentales - Análisis de mediciones discretas
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en algoritmos de optimización
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Integración en algoritmos de optimización
 >
 
 ---
@@ -448,6 +448,6 @@ tags: [MATG1045, unidad6, integracion-numerica, matematicas/calculo/numerico, in
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades.md]]
 > - [[Validación de entradas de usuario]]
 > - [[01 – Transformaciones lineales]]
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md]]
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md]]
 
 **Tags:** #MATG1045 #unidad6 #integracion-numerica #matematicas/calculo/numerico #integracion/aproximacion #metodos/computacionales #trapecio/simpson #analisis/errores #aplicaciones/practicas #programacion/algoritmos

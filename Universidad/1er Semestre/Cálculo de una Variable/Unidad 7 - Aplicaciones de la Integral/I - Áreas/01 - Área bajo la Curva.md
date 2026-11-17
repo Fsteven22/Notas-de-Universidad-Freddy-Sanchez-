@@ -410,7 +410,7 @@ tags: [MATG1045, unidad7, area-bajo-la-curva, matematicas/calculo/geometria, int
 >
 >
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/01 - Integrales Impropias.md|01 - Integrales Impropias.md]] - Áreas con límites infinitos
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos aproximados para casos complejos
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos aproximados para casos complejos
 > - [[Cálculo de una Variable.md|Cálculo de una Variable.md]] - Optimización de áreas
 > - Geometría Diferencial - Generalización a superficies
 >

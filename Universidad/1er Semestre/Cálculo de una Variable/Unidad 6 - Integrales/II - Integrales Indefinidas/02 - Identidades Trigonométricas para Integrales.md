@@ -289,7 +289,7 @@ tags: [MATG1045, unidad6, identidades-trigonometricas, producto-a-suma, reduccio
 > - R. Larson, *Cálculo* (Cengage), cap. 8: reducción de potencias y Weierstrass.
 > - G. Strang, *Calculus* (Wellesley-Cambridge), cap. 6: estrategias de integración.
 > - [[Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/II - Trigonometría/05 - Identidades trigonométricas|05 - Identidades trigonométricas]] — el fundamento teórico previo.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — la técnica con la que se consumen estas identidades.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — la técnica con la que se consumen estas identidades.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas)|04 - Integrales Notables (Fórmulas Directas)]] — el destino final de las formas a las que aquí se llega.
 
 ---
@@ -315,8 +315,8 @@ tags: [MATG1045, unidad6, identidades-trigonometricas, producto-a-suma, reduccio
 >
 > - [[Preuniversitario/Matemáticas/Unidad 3 - Funciones y Trigonometría/II - Trigonometría/05 - Identidades trigonométricas|05 - Identidades trigonométricas]] — de dónde salen todas las fórmulas de esta nota.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas)|01 - Antiderivadas (Primitivas)]] — la notación y la regla de potencia que aquí se combinan.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — el mecanismo que consume las identidades.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — las técnicas completas con estas identidades como repertorio.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — el mecanismo que consume las identidades.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — las técnicas completas con estas identidades como repertorio.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas)|04 - Integrales Notables (Fórmulas Directas)]] — las fórmulas directas que cierran cada caso.
 > - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva|01 - Longitud de Curva]] — donde la sustitución trigonométrica reaparece en serio.
 
@@ -329,7 +329,7 @@ tags: [MATG1045, unidad6, identidades-trigonometricas, producto-a-suma, reduccio
 > - Practica primero los ejercicios 1 y 2: producto a suma y reducción de potencias deben salirte sin mirar la tabla.
 > - Después salta al 3 y al 4, donde se encadenan dos identidades y entra Weierstrass.
 > - Cuando lo tengas, ataca el 5 y el 6, que son de estrategia: deciden qué camino tomar antes de calcular.
-> - Cierra con [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|Integrales Trigonométricas]], donde este repertorio se aplica a ejercicios completos.
+> - Cierra con [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|Integrales Trigonométricas]], donde este repertorio se aplica a ejercicios completos.
 
 ---
 

@@ -382,7 +382,7 @@ tags: [MATG1045, unidad6, antiderivadas, primitivas, integral-indefinida, deriva
 > - [[Unidad 4 - Derivadas/II - Reglas de Derivación/03 - Tabla de Derivadas Básicas|03 - Tabla de Derivadas Básicas]] — las reglas que se invierten para integrar.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/03 - Constante de integración|03 - Constante de integración]] — por qué existe la $C$ y cuándo se fija.
 > - [[Unidad 6 - Integrales/II - Integrales Indefinidas/04 - Integrales Notables (Fórmulas Directas)|04 - Integrales Notables (Fórmulas Directas)]] — la tabla completa de fórmulas directas.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — para integrales que no salen de una sola.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — para integrales que no salen de una sola.
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — la Parte II que usa estas antiderivadas.
 > - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/01 - Área bajo la Curva|01 - Área bajo la Curva]] — la aplicación geométrica de la integral definida.
 

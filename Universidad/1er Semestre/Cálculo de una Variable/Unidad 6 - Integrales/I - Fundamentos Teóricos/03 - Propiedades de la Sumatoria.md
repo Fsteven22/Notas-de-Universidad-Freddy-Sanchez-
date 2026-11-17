@@ -318,7 +318,7 @@ tags: [MATG1045, unidad6, propiedades-sumatoria, notacion-sigma, sumas-teorema, 
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann|01 - Integral de Riemann]] — la sumatoria de rectángulos cuyo límite da la integral.
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/02 - Propiedades de la Integral|02 - Propiedades de la Integral]] — las propiedades análogas en el mundo integral.
 > - [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo|04 - Teorema Fundamental del Cálculo]] — el teorema que convierte esa suma en un cálculo práctico.
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — métodos numéricos construidos sobre estas sumas.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — métodos numéricos construidos sobre estas sumas.
 > - [[Unidad 2 - Límites/III - Avanzados/01 - Límites al Infinito y Sucesiones|01 - Límites al Infinito y Sucesiones]] — el límite de sucesiones que aquí se suma.
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida|01 - Métodos de Integración Definida]] — donde la suma se convierte en resultado numérico.
 

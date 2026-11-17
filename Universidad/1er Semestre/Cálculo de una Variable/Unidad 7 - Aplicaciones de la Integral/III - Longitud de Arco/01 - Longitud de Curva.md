@@ -891,7 +891,7 @@ tags: [MATG1045, unidad7, longitud-de-curva, matemáticas, geometría, longitud-
 
 > [!info] 🔗 Notas Relacionadas
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Base matemática fundamental
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Técnicas necesarias para resolver las integrales
 > - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas.md|02 - Área entre Curvas.md]] - Concepto dual de medida geométrica
 > - [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md|01 - Volúmenes de Sólidos de Revolución.md]] - Otra aplicación geométrica de integrales

@@ -397,7 +397,7 @@ tags: [MATG1045, unidad7, volumenes-con-ejes-arbitrarios-y-casos-avanzados, mate
 >
 > - [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución.md|01 - Volúmenes de Sólidos de Revolución.md]] - Conceptos fundamentales base
 > - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/03 - Área entre Curvas respecto a Y.md|Área entre Curvas: Integración con Respecto a Y]] - Técnicas de integración vertical
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Herramientas matemáticas básicas
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales.md#Integrales Definidas|Integrales Definidas]] - Herramientas matemáticas básicas
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Técnicas para resolver integrales complejas
 
 ### 📖 Para Profundizar

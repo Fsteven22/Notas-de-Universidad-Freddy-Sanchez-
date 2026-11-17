@@ -265,13 +265,13 @@ tags: [MATG1045, unidad6, integrales-de-funciones-inversas, calculo, integrales,
 >
 > ### Prerequisitos
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Técnica fundamental para estas integrales
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/02 - Integración por Partes.md|02 - Integración por Partes.md]] - Técnica fundamental para estas integrales
 > - [[05 - Identidades trigonométricas]] - Necesarias para simplificaciones
 > - [[Unidad 2 - Límites/I - Fundamentos del Límite/02 - Propiedades y Teoremas de los Límites.md#Funciones Trigonométricas|Funciones Trigonométricas]] - Base para entender las inversas
 >
 > ### Temas Relacionados
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Complemento natural
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas.md|03 - Integrales Trigonométricas.md]] - Complemento natural
 > - [[2do Semestre/Cálculo Vectorial/Unidad 5 - Línea e Integrales Dobles/VI – Cambio de Variables en Integrales Dobles/03 – Teorema de cambio de variables.md]] - Para casos con composiciones
 > - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva.md#Sustitución Trigonométrica|Sustitución Trigonométrica]] - Conexión con √(a²±x²)
 >

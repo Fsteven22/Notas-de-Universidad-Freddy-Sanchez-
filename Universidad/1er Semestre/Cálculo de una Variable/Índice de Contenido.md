@@ -344,11 +344,11 @@ tags: [MATG1045, unidad0, recursos, indice-de-contenido, examenes]
 > | Razones de cambio relacionadas | [[Unidad 5 - Aplicaciones de la Derivada/III - Razones de Cambio/02 - Razones de Cambio Relacionadas]] | 2022-1S T6 · 2023-Mejora 2 |
 > | Integral de Riemann y sumas de Riemann | [[Unidad 6 - Integrales/I - Fundamentos Teóricos/01 - Integral de Riemann]] | 2022-0S T4 · 2023-Mejora 4 |
 > | Antiderivadas y constante de integración | [[Unidad 6 - Integrales/II - Integrales Indefinidas/01 - Antiderivadas (Primitivas)]], [[Unidad 6 - Integrales/II - Integrales Indefinidas/03 - Constante de integración]] | 2022-0S T1 · 2023-2Par 1b |
-> | Cambio de variable, partes y fracciones parciales | [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales]], [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes]], [[Unidad 6 - Integrales/Técnicas de Integración/05 - Integrales por Fracciones Parciales]] | 2022-0S T2 · 2023-2Par 1c |
+> | Cambio de variable, partes y fracciones parciales | [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales]], [[Unidad 6 - Integrales/V - Técnicas de Integración/02 - Integración por Partes]], [[Unidad 6 - Integrales/V - Técnicas de Integración/05 - Integrales por Fracciones Parciales]] | 2022-0S T2 · 2023-2Par 1c |
 > | Teorema fundamental del cálculo | [[Unidad 6 - Integrales/I - Fundamentos Teóricos/04 - Teorema Fundamental del Cálculo]] | 2022-0S T6 · 2023-Mejora 3 |
 > | Áreas bajo la curva y entre curvas | [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/01 - Área bajo la Curva]], [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/02 - Área entre Curvas]] | 2022-0S T7 · 2023-Mejora 5 |
 > | Volúmenes de revolución | [[Unidad 7 - Aplicaciones de la Integral/II - Volúmenes/01 - Volúmenes de Sólidos de Revolución]] | 2022-0S T8 · 2023-2Par 5c |
-> | Área y perímetro en coordenadas polares | [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/04 - Área en Coordenadas Polares y Paramétricas]], [[Unidad 6 - Integrales/V - Otras Técnicas/02 - Integrales en Coordenadas Polares]] | 2023-2Par 5a,5b |
+> | Área y perímetro en coordenadas polares | [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/04 - Área en Coordenadas Polares y Paramétricas]], [[Unidad 6 - Integrales/VI - Otras Técnicas/02 - Integrales en Coordenadas Polares]] | 2023-2Par 5a,5b |
 > | Longitud de curva | [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva]] | 2023-Mejora 2 |
 
 ---

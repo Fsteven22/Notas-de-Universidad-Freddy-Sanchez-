@@ -413,7 +413,7 @@ tags: [MATG1045, unidad6, integrales-impropias, matemáticas, cálculo, converge
 >
 > - [[Unidad 7 - Aplicaciones de la Integral/I - Áreas/01 - Área bajo la Curva.md|01 - Área bajo la Curva.md]] - Base conceptual de integrales definidas
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/01 - Métodos de Integración Definida.md|01 - Métodos de Integración Definida.md]] - Técnicas avanzadas de integración
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos computacionales
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica.md|01 - Integración Numérica.md]] - Métodos computacionales
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/03 - Teoremas Especiales para Integrales Definidas.md|03 - Teoremas Especiales para Integrales Definidas.md]] - Técnicas especiales de evaluación
 > - [[Unidad 6 - Integrales/III - Integrales Definidas/03 - Teoremas Especiales para Integrales Definidas.md|03 - Teoremas Especiales para Integrales Definidas.md]] - Teoremas fundamentales del cálculo
 

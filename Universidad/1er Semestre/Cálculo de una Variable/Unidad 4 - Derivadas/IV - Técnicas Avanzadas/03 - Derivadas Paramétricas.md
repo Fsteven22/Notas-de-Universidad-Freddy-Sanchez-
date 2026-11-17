@@ -434,7 +434,7 @@ tags: [MATG1045, unidad4, derivadas-parametricas, ecuaciones-parametricas, regla
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/02 - Derivadas de Funciones Inversas|02 - Derivadas de Funciones Inversas]] — el otro caso en que no se puede despejar $y$.
 > - [[Unidad 4 - Derivadas/IV - Técnicas Avanzadas/01 - Derivadas de Orden Superior|01 - Derivadas de Orden Superior]] — la idea de derivar dos veces, aplicada aquí al parámetro.
 > - [[Unidad 7 - Aplicaciones de la Integral/III - Longitud de Arco/01 - Longitud de Curva|01 - Longitud de Curva]] — la aplicación integral de estas derivadas.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — el mismo cambio de variable, en el mundo de las integrales.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — el mismo cambio de variable, en el mundo de las integrales.
 
 ---
 

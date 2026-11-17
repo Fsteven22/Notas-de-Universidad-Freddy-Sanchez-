@@ -171,18 +171,18 @@ tags: [MATG1045, calculo-variable, mapa-de-contenido, calculo-de-una-variable, c
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/03 - Teoremas de Comparación y Desigualdades|03 - Teoremas de Comparación y Desigualdades]] — el teorema fundamental de comparación y sus corolarios.
 > - [[Unidad 6 - Integrales/IV - Integrales Impropias y Avanzadas/04 - Asíntotas en Integrales Definidas|04 - Asíntotas en Integrales Definidas]] — el comportamiento de la función acumulada y sus asíntotas.
 >
-> **Técnicas de Integración**
+> **V — Técnicas de Integración**
 >
-> - [[Unidad 6 - Integrales/Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — la sustitución, con los casos comunes y el cambio de límites.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/02 - Integración por Partes|02 - Integración por Partes]] — la fórmula, la estrategia LIATE y los casos donde parece que no funciona.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — los tres casos clásicos y la tabla completa de integrales.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/04 - Integrales de Funciones Inversas|04 - Integrales de Funciones Inversas]] — la estrategia general para integrar funciones inversas.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/05 - Integrales por Fracciones Parciales|05 - Integrales por Fracciones Parciales]] — descomposición, paso a paso y casos con raíces complejas.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/01 - Cambio de Variable en Integrales|01 - Cambio de Variable en Integrales]] — la sustitución, con los casos comunes y el cambio de límites.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/02 - Integración por Partes|02 - Integración por Partes]] — la fórmula, la estrategia LIATE y los casos donde parece que no funciona.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — los tres casos clásicos y la tabla completa de integrales.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/04 - Integrales de Funciones Inversas|04 - Integrales de Funciones Inversas]] — la estrategia general para integrar funciones inversas.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/05 - Integrales por Fracciones Parciales|05 - Integrales por Fracciones Parciales]] — descomposición, paso a paso y casos con raíces complejas.
 >
-> **V — Otras Técnicas**
+> **VI — Otras Técnicas**
 >
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — rectángulo, trapecio y Simpson: cuándo la integral no tiene antiderivada.
-> - [[Unidad 6 - Integrales/V - Otras Técnicas/02 - Integrales en Coordenadas Polares|02 - Integrales en Coordenadas Polares]] — el área en coordenadas polares y su relación con las áreas planas.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/01 - Integración Numérica|01 - Integración Numérica]] — rectángulo, trapecio y Simpson: cuándo la integral no tiene antiderivada.
+> - [[Unidad 6 - Integrales/VI - Otras Técnicas/02 - Integrales en Coordenadas Polares|02 - Integrales en Coordenadas Polares]] — el área en coordenadas polares y su relación con las áreas planas.
 
 ---
 

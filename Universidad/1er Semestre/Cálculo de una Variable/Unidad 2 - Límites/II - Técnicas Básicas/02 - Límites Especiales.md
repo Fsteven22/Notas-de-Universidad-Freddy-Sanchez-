@@ -671,7 +671,7 @@ tags: [MATG1045, unidad2, limites-especiales, matemáticas, cálculo, límites, 
 > - [[Unidad 2 - Límites/II - Técnicas Básicas/03 - Límites en Gráficas|03 - Límites en Gráficas]] — lectura visual de los mismos comportamientos.
 > - [[Unidad 2 - Límites/III - Avanzados/02 - Formas Indeterminadas|02 - Formas Indeterminadas]] — clasificación general de indeterminaciones y L'Hôpital.
 > - [[Unidad 3 - Aplicaciones de Límites/01 - Continuidad y Límites|01 - Continuidad y Límites]] — la continuidad que hace válida la sustitución directa.
-> - [[Unidad 6 - Integrales/Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — extensión natural de estos límites al cálculo integral.
+> - [[Unidad 6 - Integrales/V - Técnicas de Integración/03 - Integrales Trigonométricas|03 - Integrales Trigonométricas]] — extensión natural de estos límites al cálculo integral.
 
 ---
 
