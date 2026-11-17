@@ -13,6 +13,10 @@ dg-publish: true
 > En esta sección se cubren tres bloques muy usados en la práctica:
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
+> 
+> **Se lee así:** El diagrama toma la señal analógica o temporizada y muestra a dónde puede ir: al 555 para temporizar y oscilar, a la modulación PWM para controlar potencia promedio, o al ADC para convertirse en un dato digital que un microcontrolador pueda procesar. Las tres salidas cuelgan del mismo problema de origen.
+> 
+> **Por qué importa:** Ubica el papel de cada bloque en la cadena de acondicionamiento: el 555 genera tiempos y PWM, el ADC digitaliza — confundirlos lleva a usar un 555 donde hacía falta un conversor (o viceversa).
 
 ---
 
@@ -59,6 +63,10 @@ dg-publish: true
 > Ambos pines de control (2 y 4) se mantienen normalmente en ALTO mediante resistencias **pull-up** (típicamente 10 kΩ) hacia $V_{CC}$; el cambio de estado ocurre al llevarlos momentáneamente a BAJO (por ejemplo, con un pulsador a tierra).
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
+> 
+> **Se lee así:** El diagrama muestra las tres situaciones posibles del 555 biestable: un pulso en BAJO en Trigger pone la salida en ALTO y se enclava, un pulso en BAJO en Reset la pone en BAJO y se enclava, y con ambos pines en ALTO (reposo) la salida conserva su último estado. Es la tabla de verdad del latch SR dibujada como flujo de decisiones.
+> 
+> **Por qué importa:** Entender que la salida depende del último pulso y no de la duración del mismo evita medir "anchos de pulso" donde solo hay enclavamiento — el error típico al confundir el biestable con el monoestable.
 >
 > > 📌 Es, en esencia, una **memoria de 1 bit**: no mide tiempo, solo recuerda cuál de los dos botones se presionó por última vez.
 >
@@ -105,6 +113,10 @@ dg-publish: true
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
 > 
+> **Se lee así:** El diagrama muestra cómo nace una señal PWM por comparación: una onda triangular de referencia se compara con el voltaje de control que fija el nivel deseado, y el cruce de ambas define los flancos de la salida. El ancho del pulso resultante es proporcional al nivel de control.
+> 
+> **Por qué importa:** Es el mecanismo detrás de la fila "comparador + onda triangular" de la tabla siguiente: sin entender el cruce comparador/triangular, el duty cycle parece un truco del microcontrolador y no la consecuencia directa de $V_{prom} = D \times V_{max}$.
+> 
 > **Formas comunes de generar PWM:**
 > 
 > |Método|Descripción|
@@ -124,6 +136,10 @@ dg-publish: true
 > Un **ADC (Analog-to-Digital Converter)** transforma una señal analógica continua en un número digital que un sistema digital (microcontrolador, FPGA, etc.) puede procesar. El proceso involucra tres pasos:
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
+> 
+> **Se lee así:** El diagrama descompone la conversión A/D en sus tres pasos en cadena: la señal analógica se muestrea en instantes discretos, se cuantiza al nivel más cercano y se codifica como una palabra digital de $n$ bits. La salida final es ese número, no una copia de la onda.
+> 
+> **Por qué importa:** Separar muestreo, cuantización y codificación te dice dónde se pierde información en cada etapa (Nyquist en el muestreo, LSB en la cuantización) — la clave para diagnosticar aliasing o falta de resolución.
 >
 
 > [!note] 🎯 Resolución y LSB
@@ -160,6 +176,10 @@ dg-publish: true
 > [!note] 🖼️ ADC (Conversor Analógico-Digital)
 >
 > ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_41_51.png]]
+> 
+> **Se lee así:** La infografía cubre las tres familias de la nota en un solo póster: el 555 con su pinout, sus bloques internos y sus tres modos, el ADC con sus pasos (muestreo, cuantización, codificación), sus tipos (Flash, SAR, Delta-Sigma, doble rampa) y parámetros (resolución, LSB, rango, interfaces), y el PWM con su ciclo de trabajo $D = T_{ON}/T \times 100\%$ y sus dos formas de generación. Cierra con la combinación 555 + ADC + PWM en una cadena de adquisición y control.
+> 
+> **Por qué importa:** Es el resumen ejecutivo para repasar antes de los ejercicios: ver pinout, fórmulas y aplicaciones juntos evita memorizar el 555, el ADC y el PWM como temas separados cuando en un sistema real trabajan en cadena.
 
 ---
 
@@ -234,6 +254,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
+> 
+> **Se lee así:** El mapa mental resume la nota en tres ramas: el temporizador 555 con sus tres modos (astable con $f$ y duty cycle, monoestable con $t = 1.1RC$, biestable como flip-flop SR sin red RC), el PWM con su voltaje promedio y sus formas de generación, y el ADC con muestreo/Nyquist, cuantización/LSB y sus tipos (Flash, SAR, Rampa, Sigma-Delta).
+> 
+> **Por qué importa:** Es el repaso de un minuto antes de cerrar la unidad: si una rama del mapa no te resulta familiar, esa es la sección a volver a leer antes de pasar al tema de lógica fija.
 
 ---
 

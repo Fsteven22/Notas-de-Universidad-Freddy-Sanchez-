@@ -68,6 +68,10 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ![[../../../Anexos/Pasted image 20260525223659.png]]
 > 
+> **Se lee así:** La figura (Figura 18 de la guía) muestra el montaje para la medición de voltaje: dos fuentes de 15 V en serie con el nodo central referenciado a tierra en el punto C (cable entre CH3(+) y CH1(−)), y la resistencia R conectada entre A (+Vcc) y B (−Vcc), con C como referencia.
+> 
+> **Por qué importa:** Es el circuito exacto sobre el que se completa la Tabla 1: sin el punto C como referencia, las lecturas (A↔B, A↔C, C↔B) no tendrían un signo consistente y la tabla saldría mal.
+> 
 > **Paso 3 — Medir voltaje DC con el multímetro**
 > 
 > - Poner el multímetro en modo **V— (tensión DC)**.
@@ -87,6 +91,10 @@ tags: [EYAG1037, laboratorio, practicas]
 > 
 > ![[../../../Anexos/Pasted image 20260525223728.png]]
 > 
+> **Se lee así:** La figura (Figura 19 de la guía) muestra el montaje para medir corriente: dos fuentes de 5 V en serie con el nodo central referenciado a tierra, y el multímetro conectado en serie en la rama derecha, entre el nodo superior y la resistencia R.
+> 
+> **Por qué importa:** Medir corriente exige romper la rama y poner el instrumento en medio — nunca en paralelo —; la figura deja claro dónde va el multímetro antes de que lo conectes a 5 V.
+> 
 > **Paso 4 — Medir corriente DC**
 > 
 > - Cambiar el multímetro a modo **corriente DC**.
@@ -104,6 +112,10 @@ tags: [EYAG1037, laboratorio, practicas]
 > ---
 > 
 > ![[../../../Anexos/Pasted image 20260525223751.png]]
+> 
+> **Se lee así:** La figura (Figura 20 de la guía) muestra el montaje del Procedimiento 2: el generador de funciones en su puerto de 50 Ω conectado con cable BNC–lagarto (rojo a la terminal positiva de la resistencia R y negro a referencia GND), que es también el punto donde conectarás la punta CH1 del osciloscopio.
+> 
+> **Por qué importa:** Armar primero este lazo simple es lo que permite al osciloscopio mostrar las ondas sinusoidal, triangular y cuadrada con las amplitudes de la tabla (10, 5 y 12 Vpp) sin ambigüedad en el GND de referencia.
 > 
 > **Paso 1 — Conectar el generador a la resistencia**
 > 

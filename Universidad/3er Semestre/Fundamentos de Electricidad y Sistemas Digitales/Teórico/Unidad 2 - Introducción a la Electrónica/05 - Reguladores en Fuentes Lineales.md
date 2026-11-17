@@ -67,6 +67,10 @@ dg-publish: true
 > [!note] 🖼️ Reguladores en Serie Ajustables (LM317 / LM337 / LM137)
 >
 > ![[../../Anexos/ChatGPT Image 22 jul 2026, 12_37_04.png]]
+> 
+> **Se lee así:** el póster compara los dos mundos de la nota: fijos de tres terminales (series 78XX positivos y 79XX negativos, pinout TO-220, condiciones de operación con $V_{in} \geq V_{out} + 2$ V) y ajustables tipo LM317 (circuito con $R_1 = 240\ \Omega$, fórmula $V_{out} = 1.25 \cdot (1 + R_2/R_1)$ y un ejemplo numérico de diseño, con LM337/LM350 como equivalentes).
+> 
+> **Por qué importa:** concentra la tabla comparativa y las condiciones de operación (diferencial mínimo, disipación $P_D = (V_{in} - V_{out}) \cdot I_{out}$) que exige cualquier diseño con reguladores; ignorarlas es el error típico del montaje real.
 
 ---
 
@@ -113,6 +117,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Reguladores en Fuentes Lineales»: fijos (78AXX positivos, 79XXX negativos) y ajustables (LM317 positivo, LM337/LM137 negativo) con la fórmula de salida $V_O = 1.25 \cdot (1 + R_2/R_1)$, más los componentes externos que cada familia exige ($C_{in}$, $C_{out}$ y divisor $R_1$/$R_2$ en los ajustables).
+> 
+> **Por qué importa:** es el índice visual para repasar de un vistazo; fijo o ajustable, y dimensionar $R_2$, es la pregunta de diseño que más se repite en los ejercicios.
 
 ---
 

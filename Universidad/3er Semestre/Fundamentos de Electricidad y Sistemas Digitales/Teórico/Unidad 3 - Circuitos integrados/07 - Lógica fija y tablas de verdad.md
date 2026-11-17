@@ -11,6 +11,10 @@ dg-publish: true
 > Un **circuito integrado de lógica fija** implementa una función booleana predeterminada por su fabricación (por ejemplo, una compuerta AND o un decodificador), a diferencia de los dispositivos **programables** (como una FPGA), cuya función se define después de fabricados. Son la base de casi todo sistema digital: desde un simple circuito combinacional hasta la lógica de control de un procesador.
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
+> 
+> **Se lee así:** El diagrama reduce la lógica fija a su esencia: entradas binarias (0 / 1) atraviesan una compuerta o CI de función predeterminada y producen una salida binaria. El bloque central es el chip: la función está fija en el silicio, no se configura después.
+> 
+> **Por qué importa:** Interiorizar este flujo entrada → función fija → salida evita confundir lógica fija con lógica programable: aquí nadie "graba" nada, la tabla de verdad viene de fábrica.
 
 ---
 
@@ -129,6 +133,10 @@ dg-publish: true
 > [!note] 🖼️ Ejercicios Prácticos
 >
 > ![[../../Anexos/ChatGPT Image 18 ago 2026, 21_08_17.png]]
+> 
+> **Se lee así:** La imagen trae dos recursos: arriba, los símbolos y tablas de verdad de las siete compuertas básicas (AND, OR, NOT, NAND, NOR, XOR, XNOR) con su convención de colores (1 en verde, 0 en gris); abajo, el circuito NAND-only del Ejercicio 2 que implementa $S = A + B$, con la propagación de valores para $A = 1$, $B = 0$ paso a paso hasta $S = 1$.
+> 
+> **Por qué importa:** Es la referencia visual para resolver los ejercicios sin memorizar: la tabla de la primera mitad sirve para verificar cualquier función compuesta, y la segunda muestra el patrón exacto (inversores + NAND final) para construir cualquier función solo con NAND.
 
 ---
 
@@ -161,6 +169,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
+> 
+> **Se lee así:** El mapa mental resume la nota en cinco ramas: compuertas básicas (AND, OR, NOT, NAND, NOR, XOR, XNOR), familias lógicas (TTL serie 74xx, CMOS serie 40xx), CI comerciales (7400, 7404, 7408, 7432, 7486), la funcionalidad completa de NAND/NOR y el anticipo de la siguiente unidad (codificación, álgebra de Boole y minimización).
+> 
+> **Por qué importa:** Es el cierre de la unidad 3 y el puente a la 4: las ramas de compuertas y tablas de verdad son justo lo que la Unidad 4 usará para codificar y minimizar funciones lógicas.
 
 ---
 

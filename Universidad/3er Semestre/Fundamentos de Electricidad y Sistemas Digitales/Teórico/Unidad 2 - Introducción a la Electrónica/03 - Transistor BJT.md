@@ -88,6 +88,10 @@ dg-publish: true
 > [!note] 🖼️ Regiones de Operación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
+> 
+> **Se lee así:** el póster desarrolla la estructura física NPN vs PNP (tres capas y la flecha en el emisor), el dopado y funcionamiento básico (unión E-B en directa, B-C en inversa, $I_B$ controlando $I_C$), y las tres regiones de operación — corte (interruptor abierto), activa directa (amplificador) y saturación (interruptor cerrado) — con sus circuitos equivalentes y el resumen comparativo NPN vs PNP.
+> 
+> **Por qué importa:** concentra la decisión clave de cada ejercicio — identificar la región antes de aplicar $I_C = \beta \cdot I_B$, $I_C \approx 0$ o $I_{C(sat)}$ — y evita calcular sin verificar primero la región de operación.
 
 ---
 
@@ -142,6 +146,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_03.svg]]
+> 
+> **Se lee así:** el mapa mental resume la nota en una raíz «Transistor BJT»: la analogía de la llave de agua ($I_B$ abre o cierra, $I_C$ fluye controlado), los terminales Base/Colector/Emisor, NPN vs PNP con la flecha del símbolo y las polaridades típicas, las ecuaciones $I_E = I_C + I_B$ e $I_C = \beta \cdot I_B$ en activa, y las tres regiones con su uso (corte, activa, saturación).
+> 
+> **Por qué importa:** es el índice visual para repasar el BJT completo; la analogía de la llave resuelve dudas rápido y las tres regiones son el criterio que separa un switch de un amplificador.
 
 ---
 

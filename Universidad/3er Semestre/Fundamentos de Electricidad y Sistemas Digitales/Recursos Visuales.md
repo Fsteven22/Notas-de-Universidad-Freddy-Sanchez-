@@ -97,6 +97,10 @@ tags: [recursos-visuales, fesd]
 > [!note] 🖼️ Práctico y Laboratorio
 >
 > ![[Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260525231841.png]]
+> 
+> **Se lee así:** la imagen muestra la tabla de posiciones del selector de un multímetro digital con su función y rango: tensión CA y CC (hasta 1000 V), mV y temperatura (°C/°F), ohmios y capacitancia, continuidad y prueba de diodos, y mA y A en CA/CC junto con Hz.
+> 
+> **Por qué importa:** es la referencia rápida para el laboratorio — ubicar la posición correcta del selector antes de medir evita lecturas erróneas y daños al equipo — y complementa los videos de instrumentos de esta misma nota.
 
 ---
 

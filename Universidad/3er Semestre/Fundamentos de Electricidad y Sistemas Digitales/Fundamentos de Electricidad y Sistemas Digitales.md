@@ -12,6 +12,10 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > **EYAG1037 · 3er Semestre · FIEC-ESPOL** · [[Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|📖 Ver Syllabus completo]]
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/Fundamentos_de_Electricidad_y_Sistemas_Digitales_01.svg]]
+> 
+> **Se lee así:** el diagrama presenta la materia como un árbol: EYAG1037 se descompone en sus cuatro unidades — Unidad 1 (8 h, 7 notas), Unidad 2 (6 h, 6 notas), Unidad 3 (6 h, 7 notas) y Unidad 4 (8 h, 2 notas).
+> 
+> **Por qué importa:** es la vista de pájaro del curso antes de entrar al detalle; saber cuántas notas tiene cada unidad ayuda a planificar el estudio y a ubicar dónde cae cada tema.
 
 ---
 
@@ -30,6 +34,10 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!note] 🖼️ Unidad 1 — Electricidad y Circuitos *(8h)*
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_1_01.svg]]
+> 
+> **Se lee así:** la línea de flujo ordena el recorrido de la Unidad 1 en siete pasos: Conceptos Fundamentales → Elementos Básicos → Serie/Paralelo/Mixtos → Ohm y Kirchhoff → Teoremas → Generación de Energía → Ejercicios Recopilados.
+> 
+> **Por qué importa:** muestra el orden de dependencia entre temas; saltar directo a teoremas sin pasar por Ohm y Kirchhoff deja los huecos típicos del examen.
 
 ---
 
@@ -47,6 +55,10 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!note] 🖼️ Unidad 2 — Introducción a la Electrónica *(6h)*
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_2_01.svg]]
+> 
+> **Se lee así:** la línea de flujo ordena el recorrido de la Unidad 2: Semiconductores → Diodo Unión P-N → Transistor BJT → Filtrado y Fuentes → Reguladores → Ruido e Interferencia, con la Unidad 3 (OPAMs) como destino del recorrido siguiente.
+> 
+> **Por qué importa:** hace visible la cadena de prerrequisitos — la unión P-N antes que el BJT, la fuente lineal antes que el regulador — para estudiar la unidad en el orden en que se construye.
 
 ---
 
@@ -65,6 +77,10 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!note] 🖼️ Unidad 3 — Circuitos Integrados *(6h)*
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_3_01.svg]]
+> 
+> **Se lee así:** la línea de flujo ordena el recorrido de la Unidad 3: CI No Programables → Aplicaciones de OPAMs y Ruido → Configuraciones Lineales Básicas → Integrador/Derivador y No Lineales → Ejercicios de Oposición → 555/ADC/PWM → Lógica Fija, con la Unidad 4 (Digital) como destino del recorrido siguiente.
+> 
+> **Por qué importa:** hace visible la cadena de prerrequisitos de la parte integrada — el OPAM antes que integrador/derivador — y ubica la lógica fija como antesala de los sistemas digitales.
 
 ---
 
@@ -78,6 +94,10 @@ tags: [FESD, EYAG1037, ESPOL, indice, mapa-de-contenido]
 > [!note] 🖼️ Unidad 4 — Sistemas Digitales *(8h)*
 >
 > ![[Unidad 0 - Guias y Ejercicios/Diagramas/00_-_FESD_Indice_Unidad_4_01.svg]]
+> 
+> **Se lee así:** la línea de flujo muestra la Unidad 4 como una secuencia corta y directa: Electrónica Digital → Minimización de Funciones Lógicas → mapas de Karnaugh → CI Programables — el cierre del recorrido de la materia.
+> 
+> **Por qué importa:** confirma que la parte digital corona el curso; llegar a ella con la base analógica e integrada fresca es lo que hace sólida la lógica combinatoria que cierra EYAG1037.
 
 ---
 

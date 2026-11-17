@@ -69,6 +69,10 @@ dg-publish: true
 > [!note] 🖼️ Estructura Atómica y Bandas de Energía
 >
 > ![[../../Anexos/ChatGPT Image 14 jul 2026, 21_37_00.png]]
+> 
+> **Se lee así:** el póster resume en una sola lámina la estructura atómica del silicio (4 electrones de valencia, enlace covalente, Z = 14), las bandas de energía de conductor, semiconductor y aislante con su banda gap (solapadas ≈ 0, ≈ 0.1–3 eV, > 3 eV) y cómo las impurezas N (P o Sb) y P (B o Ga) crean portadores libres o huecos. Es la versión visual completa de lo visto en las secciones previas.
+> 
+> **Por qué importa:** fija la cadena átomo → cristal → bandas → dopaje que sostiene todo lo que sigue; sin ella, la unión P-N y el BJT se aprenden de memoria en lugar de entenderse.
 
 ---
 
@@ -115,6 +119,10 @@ dg-publish: true
 > [!note] 🖼️ Tipos de Semiconductores
 >
 > ![[../../Anexos/ChatGPT Image 20 jun 2026, 21_36_55.png]]
+> 
+> **Se lee así:** el póster desarrolla la clasificación completa del tema: silicio intrínseco (puro), tipo N dopado con pentavalentes (P, As, Sb — portadores mayoritarios electrones) y tipo P dopado con trivalentes (B, Ga, In — portadores mayoritarios huecos), con la analogía del bus, la tabla resumen comparativa y la nota sobre dopantes casi totalmente ionizados a temperatura ambiente.
+> 
+> **Por qué importa:** es la referencia para no confundir dopante con portador ni mayoritario con minoritario — la base directa para predecir qué pasa al unir un material P con uno N.
 
 ---
 
@@ -136,6 +144,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
+> 
+> **Se lee así:** el mapa mental condensa la nota en una raíz «Semiconductores» con sus ramas: intrínsecos puros de Si y extrínsecos dopados, tipos N y P con sus dopantes y portadores, bandas de energía y band gap $E_g$, y la aplicación que viene — diodo unión P-N y transistor BJT.
+> 
+> **Por qué importa:** es el índice visual para repasar antes del examen; cualquier rama que no puedas explicar en voz alta marca la sección que conviene releer.
 
 ---
 

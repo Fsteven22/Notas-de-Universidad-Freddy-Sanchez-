@@ -264,6 +264,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
+> 
+> **Se lee así:** mapa mental de la nota en tres ramas: método (V+ ≈ V-, I ≈ 0, KCL en nodo C/X, Rin = Vs/I1, Thévenin Vth/Rth), numéricos del PDF (V2/V1 = -6.4, vs = sin 100t, nodo C a 3 V y 6 V, dos etapas) y los ejercicios de oposición (Murcia 04, Valladolid 96, MEC 94, Extremadura 00).
+> 
+> **Por qué importa:** repasa la nota de un vistazo: cubre método, dificultad creciente y las preguntas tipo del examen final.
 
 ---
 

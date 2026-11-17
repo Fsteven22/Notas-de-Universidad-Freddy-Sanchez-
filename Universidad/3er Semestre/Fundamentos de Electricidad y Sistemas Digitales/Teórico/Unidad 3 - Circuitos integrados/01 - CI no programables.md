@@ -13,6 +13,10 @@ dg-publish: true
 > Este tema cierra el círculo de lo visto en la Unidad 2: los diodos ([[02 - El Diodo - Unión P-N]]), transistores BJT ([[03 - Transistor BJT]]) y los circuitos de filtrado/regulación ([[04 - Circuitos de Filtrado y Fuentes Lineales]], [[05 - Reguladores en Fuentes Lineales]]) que estudiaste como componentes o etapas discretas, en la práctica suelen venir **ya integrados** dentro de un solo chip (por ejemplo, el propio regulador 7805 que viste es en sí mismo un circuito integrado).
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_01.svg]]
+> 
+> **Se lee así:** El diagrama muestra el salto de los componentes discretos (diodos, transistores, resistencias y capacitores sueltos) al circuito integrado mediante la miniaturización: el mismo comportamiento eléctrico terminado empaquetado en un solo chip. La flecha resalta que no cambia la función, cambia el formato.
+> 
+> **Por qué importa:** Entender que el CI es "lo mismo, en pequeño" evita tratarlo como una tecnología mágica: lo que ya sabes de diodos y BJTs sigue aplicando, solo que fabricado sobre una misma pastilla de silicio.
 
 ---
 
@@ -58,6 +62,10 @@ dg-publish: true
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_02.svg]]
 > 
+> **Se lee así:** El diagrama bifurca los circuitos integrados en dos ramas según quién define su función: los no programables traen la función fija de fábrica (solo se ajustan con componentes externos) y los programables la reciben del usuario mediante software o configuración. Es la clasificación clave de esta unidad, de la que cuelga todo lo demás.
+> 
+> **Por qué importa:** Si confundes ambas ramas, aplicarías criterios de microcontrolador (reprogramar, cargar firmware) a un chip de función fija como el LM741 o el 555, que solo admite ajuste con pasivos.
+> 
 > |Tipo|Definición|Ejemplos|
 > |---|---|---|
 > |**No programables**|Su función queda fija desde la fabricación; el diseñador solo elige componentes externos (resistencias, capacitores) para ajustar parámetros, pero no puede cambiar la lógica interna|Amplificadores operacionales (LM741, LM358), comparadores, reguladores (7805, LM317 — ya vistos), temporizador 555, compuertas lógicas de la familia 74xx/40xx, ADC/DAC de función fija|
@@ -95,6 +103,10 @@ dg-publish: true
 > [!note] 🖼️ Vista Previa: Qué Viene en Esta Unidad
 >
 > ![[../../Anexos/ChatGPT Image 22 jul 2026, 13_19_52.png]]
+> 
+> **Se lee así:** La infografía resume en un solo vistazo de qué trata el tema: qué es un CI no programable, sus ventajas principales, su clasificación (por nivel de integración SSI→VLSI y por función), los encapsulados más comunes (DIP, SOIC, TO-220, entre otros) y sus aplicaciones típicas. Es un mapa visual del contenido de la unidad, más que un diagrama de circuito.
+> 
+> **Por qué importa:** Sirve como repaso rápido antes de entrar en detalle: si algo de la infografía no te cuadra, es la señal de que esa parte conviene repasarla con las secciones siguientes antes de avanzar.
 
 ---
 
@@ -141,6 +153,10 @@ dg-publish: true
 > [!note] 🖼️ Resumen Visual
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
+> 
+> **Se lee así:** El mapa mental organiza todo lo visto en la nota en torno a la raíz "Circuitos Integrados No Programables": qué es un CI y sus ventajas, las tres clasificaciones (señal, escala SSI–VLSI y programabilidad), los encapsulados (DIP, SOIC, TO-220) y los ejemplos no programables (OPAMs, 555, reguladores 78xx/LM317, compuertas lógicas fijas).
+> 
+> **Por qué importa:** Es el repaso de un minuto antes de cerrar la nota: si puedes reconstruir mentalmente esas cuatro ramas sin mirar, tienes el tema dominado; si no, sabes exactamente qué sección releer.
 
 ---
 

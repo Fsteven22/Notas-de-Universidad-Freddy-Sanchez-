@@ -15,6 +15,10 @@ tags: [EYAG1037, laboratorio, practicas]
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
 > ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> 
+> **Se lee así:** El diagrama resume los tres montajes de la práctica: el Procedimiento 1 con el diodo 1N4007 para ver la rectificación de la señal senoidal, el Procedimiento 2 con el BJT 2N3904 como switch en corte y saturación, y el Procedimiento 3 con el sensor LDR respondiendo a la luz.
+> 
+> **Por qué importa:** Entender que son tres bloques independientes te permite depurar por partes cuando algo no funciona: primero el diodo, luego el transistor, por último el sensor.
 
 ---
 
