@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > El [[04 - Circuitos de Filtrado y Fuentes Lineales|filtro capacitivo]] deja un voltaje CD con un rizado residual, y ese voltaje además **varía** si cambia la corriente que consume la carga o si fluctúa el voltaje de la red. El **regulador** es la cuarta y última etapa de la fuente lineal: fija la tensión de salida a un valor constante y seguro, sin importar esas variaciones de entrada o de carga.
 > 
-> ![[../../Diagramas/05_-_Reguladores_en_Fuentes_Lineales_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_01.svg]]
 > 
 > Pueden ser tan sencillos como un diodo Zener, o circuitos integrados dedicados — que son la solución más común en la práctica.
 
@@ -27,7 +27,7 @@ dg-publish: true
 > |**78AXX**|Tensiones positivas|3.3 V a 24 V / 0.1 A a 10 A|
 > |**79XXX**|Tensiones negativas|Equivalente en negativo|
 > 
-> ![[../../Diagramas/05_-_Reguladores_en_Fuentes_Lineales_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_02.svg]]
 > 
 > - Capacitor de entrada ($C_I$, típico 0.33 µF): estabiliza si el regulador queda alejado del filtro capacitivo principal.
 >     
@@ -44,7 +44,7 @@ dg-publish: true
 > 
 > A diferencia de la familia 78xx/79xx, estos reguladores permiten **ajustar** el voltaje de salida mediante un divisor resistivo externo, en vez de tener un valor fijo de fábrica.
 > 
-> ![[../../Diagramas/05_-_Reguladores_en_Fuentes_Lineales_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_03.svg]]
 > 
 > $$V_O = 1.25 \cdot \left(1 + \frac{R_2}{R_1}\right)$$
 > 
@@ -108,7 +108,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Reguladores_en_Fuentes_Lineales_04.svg]]
 
 ---
 

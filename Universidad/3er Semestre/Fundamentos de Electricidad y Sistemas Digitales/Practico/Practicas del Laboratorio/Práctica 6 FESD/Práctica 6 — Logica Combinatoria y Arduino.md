@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica integra **acondicionamiento de señales**, **compuertas lógicas** y **Arduino** para controlar actuadores. Comparas la implementación con hardware puro (compuertas 74LS/74HC) vs software embebido (Arduino), y analizas las ventajas de cada enfoque.
 >
-> ![[../../../Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
+> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_6_—_Logica_Combinatoria_y_Arduino_01.svg]]
 
 ---
 

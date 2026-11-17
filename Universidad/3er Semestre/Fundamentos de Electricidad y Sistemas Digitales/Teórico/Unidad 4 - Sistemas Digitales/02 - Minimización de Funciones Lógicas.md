@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Esta idea no es exclusiva del papel y lápiz: las herramientas modernas de síntesis lógica (usadas para programar FPGAs o diseñar circuitos integrados completos) aplican exactamente estos mismos principios de simplificación booleana, solo que a una escala de millones de variables mediante algoritmos automatizados.
 > 
-> ![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_01.svg]]
 
 ---
 
@@ -69,7 +69,7 @@ dg-publish: true
 
 ## 🔀 ¿SOP o POS? Criterio de elección
 
-![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_02.svg]]
 
 ---
 
@@ -258,7 +258,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Minimización_de_Funciones_Lógicas_03.svg]]
 
 ---
 

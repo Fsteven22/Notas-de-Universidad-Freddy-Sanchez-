@@ -79,7 +79,7 @@ dg-publish: true
 > 
 > La curva muestra tres zonas claramente diferenciadas:
 > 
-> ![[../../Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_01.svg]]
 > 
 > - **Zona directa:** para $V_D > V_{umbral}$, la corriente crece exponencialmente.
 > - **Zona inversa:** corriente prácticamente nula ($\approx -I_S$).
@@ -167,7 +167,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_El_Diodo_-_Unión_P-N_02.svg]]
 
 ---
 

@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Esta práctica valida experimentalmente las leyes que viste en teoría: **Ley de Ohm** ($V=IR$), **KCL** ($\sum I = 0$ en nodos) y **KVL** ($\sum V = 0$ en mallas). Además aplicas los métodos de **divisor de tensión** y **divisor de corriente** para dimensionar redes eléctricas.
 >
-> ![[../../../Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_2_—_Ley_de_Ohm_y_Kirchhoff_01.svg]]
 
 ---
 

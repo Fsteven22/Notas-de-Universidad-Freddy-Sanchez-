@@ -15,7 +15,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > - Un circuito eléctrico es como un sistema de tuberías cerrado: la **fuente** es la bomba, los **conductores** son las tuberías, y los **elementos pasivos** (resistencias, capacitores, inductores) son válvulas, depósitos y serpentines que controlan o almacenan el flujo.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_01.svg]]
 >
 > **Condición esencial:** El circuito debe ser **cerrado** para que la corriente fluya. Un circuito abierto interrumpe el flujo.
 >
@@ -45,7 +45,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > A diferencia de las fuentes independientes (batería, generador), las fuentes dependientes **no tienen valor fijo**: su salida varía proporcionalmente a una variable de control $V_x$ o $I_x$ medida en otro punto del circuito.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_02.svg]]
 >
 > **Los cuatro tipos y su simbología:**
 >
@@ -91,7 +91,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Los **conductores** son materiales que permiten el flujo libre de electrones con muy poca oposición. Son el medio por el que la corriente viaja entre los componentes del circuito.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_03.svg]]
 >
 > **Materiales conductores más usados:**
 >
@@ -125,7 +125,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$P = I^2 \cdot R \qquad \text{(Calor disipado)}$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_04.svg]]
 > 
 > $$R = \frac{\rho \cdot l}{A}$$
 >
@@ -191,7 +191,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$E = \frac{1}{2} C V^2$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_05.svg]]
 >
 > **Comparación de tipos:**
 >
@@ -233,7 +233,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > $$E = \frac{1}{2} L I^2$$
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_06.svg]]
 >
 > **Comportamiento en DC y AC:**
 >
@@ -279,7 +279,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Los **elementos de control** permiten abrir o cerrar un circuito, ya sea manualmente o de forma automática/eléctrica.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_07.svg]]
 >
 > | Elemento | Descripción | Estado por defecto | Acción |
 > |---|---|---|---|
@@ -292,7 +292,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > Una pequeña corriente de control energiza la **bobina** del relé, generando un campo magnético que atrae un contacto metálico y cierra (o abre) un circuito de mayor potencia. Permite controlar cargas grandes con señales pequeñas.
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_08.svg]]
 ![[../../Anexos/ChatGPT Image 30 may 2026, 18_49_08.png]]
 
 ---
@@ -309,7 +309,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **En AC** | Igual para toda f | Impide baja f | Impide alta f |
 > | **Relación V-I** | $V = IR$ | $I = C\frac{dV}{dt}$ | $V = L\frac{dI}{dt}$ |
 >
-> ![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_09.svg]]
 > 
 ![[../../Anexos/ChatGPT Image 19 may 2026, 23_02_18.png]]
 
@@ -317,7 +317,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Elementos_Basicos_de_un_Circuito_Electrico_10.svg]]
 
 ---
 

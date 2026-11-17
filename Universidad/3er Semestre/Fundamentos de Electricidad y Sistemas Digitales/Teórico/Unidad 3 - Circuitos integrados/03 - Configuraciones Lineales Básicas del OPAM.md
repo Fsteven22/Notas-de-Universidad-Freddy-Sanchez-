@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Esta nota cierra ese hueco y recoge **todo el bloque lineal básico** del PDF guía *EjREsAmpOp* [3] que faltaba: inversor, no inversor, sumadores ponderados, amplificador con eliminación de nivel DC y convertidores tensión↔corriente — incluido el caso de **ganancia de intensidad con carga flotante** (p. 18 del PDF). Son las piezas con las que luego se construyen integradores, derivadores y los circuitos no lineales de [[04 - Integrador, Derivador y Circuitos No Lineales]].
 >
-> ![[../../Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_01.svg]]
 >
 
 > [!note] 🗂️ Qué ya viste y qué es nuevo
@@ -218,7 +218,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Configuraciones_Lineales_Básicas_del_OPAM_02.svg]]
 
 ---
 

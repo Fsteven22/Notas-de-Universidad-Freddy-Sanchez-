@@ -13,7 +13,7 @@ dg-publish: true
 > 
 > Su historia moderna comienza en los años cuarenta con la introducción del transistor semiconductor, que hizo posible la **miniaturización** de los circuitos y dio origen a toda la electrónica moderna.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_01.svg]]
 > 
 > |Elemento|Tipo|Función principal|
 > |---|---|---|
@@ -57,7 +57,7 @@ dg-publish: true
 > 
 > Los niveles de energía discretos de los átomos se expanden al cristalizarse en **bandas de energía**. Entre bandas existe una zona prohibida llamada **banda gap** ($E_g$) donde ningún electrón puede existir.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_02.svg]]
 > 
 > |Material|Band gap $E_g$|Comportamiento|
 > |---|---|---|
@@ -85,7 +85,7 @@ dg-publish: true
 > - Se agrega una impureza controlada (**dopaje**) para crear estados de energía permisibles en la banda prohibida, reduciendo $E_g$ efectivo.
 > - Resultado: mayor conductividad controlada.
 > 
-> ![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_03.svg]]
 > 
 
 > [!tip] 🔴 Material Tipo N
@@ -129,7 +129,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Semiconductores_y_Bandas_de_Energía_04.svg]]
 
 ---
 

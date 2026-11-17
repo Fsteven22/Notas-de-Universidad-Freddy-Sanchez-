@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > En esta sección se cubren tres bloques muy usados en la práctica:
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_01.svg]]
 
 ---
 
@@ -58,7 +58,7 @@ dg-publish: true
 >
 > Ambos pines de control (2 y 4) se mantienen normalmente en ALTO mediante resistencias **pull-up** (típicamente 10 kΩ) hacia $V_{CC}$; el cambio de estado ocurre al llevarlos momentáneamente a BAJO (por ejemplo, con un pulsador a tierra).
 >
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_02.svg]]
 >
 > > 📌 Es, en esencia, una **memoria de 1 bit**: no mide tiempo, solo recuerda cuál de los dos botones se presionó por última vez.
 >
@@ -103,7 +103,7 @@ dg-publish: true
 > 
 > Donde $D$ es el ciclo de trabajo (0 a 1) y $V_{max}$ es el voltaje del pulso en alto.
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_03.svg]]
 > 
 > **Formas comunes de generar PWM:**
 > 
@@ -123,7 +123,7 @@ dg-publish: true
 > 
 > Un **ADC (Analog-to-Digital Converter)** transforma una señal analógica continua en un número digital que un sistema digital (microcontrolador, FPGA, etc.) puede procesar. El proceso involucra tres pasos:
 > 
-> ![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_04.svg]]
 >
 
 > [!note] 🎯 Resolución y LSB
@@ -229,7 +229,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Aplicaciones_de_Integrados_555_-_ADC_-_PWM_05.svg]]
 
 ---
 

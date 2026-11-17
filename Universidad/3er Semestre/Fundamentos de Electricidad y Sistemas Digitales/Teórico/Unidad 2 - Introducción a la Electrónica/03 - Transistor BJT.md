@@ -77,7 +77,7 @@ dg-publish: true
 > 
 > Siguiendo la analogía de la llave: **corte** = llave cerrada (nada pasa), **activa** = llave a medio abrir (tú controlas cuánto pasa), **saturación** = llave abierta al máximo (ya no puedes controlar más, pasa todo lo que la tubería permite).
 > 
-> ![[../../Diagramas/03_-_Transistor_BJT_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_01.svg]]
 > 
 > |Región|Condición|$I_C$|$V_{CE}$|Uso|
 > |---|---|---|---|---|
@@ -94,7 +94,7 @@ dg-publish: true
 
 > [!warning] 🧮 Pasos para determinar la región de operación
 > 
-> ![[../../Diagramas/03_-_Transistor_BJT_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_02.svg]]
 > 
 > **Datos típicos del problema:**
 > 
@@ -136,7 +136,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/03_-_Transistor_BJT_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Transistor_BJT_03.svg]]
 
 ---
 

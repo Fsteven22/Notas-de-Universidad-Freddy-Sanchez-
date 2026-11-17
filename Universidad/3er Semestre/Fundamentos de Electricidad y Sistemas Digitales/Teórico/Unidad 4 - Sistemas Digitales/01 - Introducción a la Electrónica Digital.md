@@ -12,7 +12,7 @@ dg-publish: true
 >
 > Esta nota abre la Unidad 4 retomando esa conexión: un **ADC** (Unidad 3) no hace otra cosa que traducir una señal analógica del mundo real a un número representado en binario, y las **compuertas lógicas** (Unidad 3, nota 04) operan precisamente sobre esos unos y ceros. Aquí formalizamos cómo se representan, convierten y codifican esos números, y cómo se interpretan eléctricamente los niveles de voltaje que los transportan.
 >
-> ![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_01.svg]]
 
 ---
 
@@ -137,7 +137,7 @@ dg-publish: true
 >
 > Una **tabla de verdad** enumera todas las combinaciones posibles de entrada de un circuito lógico y la salida correspondiente. Los valores lógicos se representan indistintamente como `True/False`, `V/F` o `1/0`.
 >
-> ![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_02.svg]]
 >
 
 > [!note] 📋 Las tres compuertas fundamentales
@@ -204,7 +204,7 @@ dg-publish: true
 
 ## 🔀 Diagrama de Decisión: ¿Qué convención de lógica usar?
 
-![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_03.svg]]
 
 ---
 
@@ -291,7 +291,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Electrónica_Digital_04.svg]]
 
 ---
 

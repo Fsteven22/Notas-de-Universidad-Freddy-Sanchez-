@@ -17,7 +17,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Un circuito en **paralelo** es como los carriles de una autopista: si uno se cierra, los demás siguen funcionando.
 > - Un circuito **mixto** combina ambas configuraciones, como las instalaciones eléctricas de un edificio.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_01.svg]]
 >
 > | Configuración | Corriente | Voltaje | Aplicación típica |
 > |---|---|---|---|
@@ -39,7 +39,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en serie**, los elementos están conectados uno tras otro formando una única trayectoria. La misma corriente recorre todos los elementos secuencialmente.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_02.svg]]
 >
 > ### ⚙️ Leyes fundamentales en serie
 >
@@ -99,7 +99,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > En un **circuito en paralelo**, los elementos comparten los mismos dos nodos (terminales), por lo que el voltaje en todos ellos es idéntico. La corriente total se reparte entre las ramas disponibles.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_03.svg]]
 >
 > ### ⚙️ Leyes fundamentales en paralelo
 >
@@ -227,11 +227,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > El método de análisis consiste en **simplificar progresivamente** el circuito, reduciendo grupos paralelos o series a su equivalente, hasta obtener un único $R_{eq}$.
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_04.svg]]
 >
 > ### 🧮 Metodología de simplificación paso a paso
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_05.svg]]
 >
 > **Ejemplo resuelto:**
 >
@@ -295,13 +295,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Fallo de un elemento** | Interrumpe todo | Solo esa rama | Depende de la ubicación |
 > | **Ejemplo real** | Luces navideñas antiguas | Tomacorrientes del hogar | Circuitos electrónicos |
 >
-> ![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_06.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Circuitos_en_Serie_Paralelo_y_Mixtos_07.svg]]
 
 ---
 

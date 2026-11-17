@@ -11,7 +11,7 @@ tags: [EYAG1037, laboratorio, practicas]
 >
 > Los **filtros activos** usan OPAMPs para selectar frecuencias deseadas y atenuar ruido. En esta práctica construyes un filtro activo y un acondicionador de señal, midiendo la respuesta en frecuencia y la ganancia en cada punto.
 >
-> ![[../../../Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
+> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_5_—_Filtros_Activos_01.svg]]
 
 ---
 

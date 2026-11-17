@@ -15,7 +15,7 @@ dg-publish: true
 >
 > Todos usan el mismo método: **OPAM ideal** $\Rightarrow$ $V_+\approx V_-$, $I_+\approx I_-\approx 0$, luego **KCL en nodos clave**.
 >
-> ![[../../Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_01.svg]]
 >
 
 > [!note] 🧭 Cómo usar esta nota
@@ -261,7 +261,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ejercicios_Resueltos_y_de_Oposición_02.svg]]
 
 ---
 

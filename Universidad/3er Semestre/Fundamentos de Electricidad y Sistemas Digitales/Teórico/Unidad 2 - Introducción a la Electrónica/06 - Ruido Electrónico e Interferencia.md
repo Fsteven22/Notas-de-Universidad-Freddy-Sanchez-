@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema conecta directamente con lo visto en [[04 - Circuitos de Filtrado y Fuentes Lineales]] (el rizado de una fuente lineal es, en el fondo, un tipo de ruido de baja frecuencia) y sirve de puente hacia las aplicaciones de amplificadores operacionales para minimización de ruido de la Unidad 3.
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_01.svg]]
 
 ---
 
@@ -55,7 +55,7 @@ dg-publish: true
 > 
 > Una señal de ruido externa (motores, líneas de potencia, radiofrecuencia, conmutación digital) puede acoplarse al circuito de cuatro maneras:
 > 
-> ![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_02.svg]]
 > 
 > |Modo|Mecanismo|Mitigación típica|
 > |---|---|---|
@@ -131,7 +131,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Ruido_Electrónico_e_Interferencia_03.svg]]
 
 ---
 

@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Como se trata de un **circuito integrado no programable** (ver [[01 - CI no programables]]), su función interna es fija; lo que cambia según la aplicación es la red de resistencias/capacitores externos que lo rodean — exactamente las configuraciones que se resolvieron en la guía de ejercicios de amplificador operacional.
 > 
-> ![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_01.svg]]
 
 ---
 
@@ -91,7 +91,7 @@ dg-publish: true
 > 
 > El **comparador con histéresis** (Schmitt trigger) resuelve esto definiendo **dos umbrales distintos** (uno de subida, otro de bajada) mediante realimentación positiva, de modo que un pequeño ruido superpuesto ya no alcanza a provocar conmutaciones falsas.
 > 
-> ![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_02.svg]]
 > 
 > > 📌 Es la configuración recomendada siempre que una señal analógica ruidosa deba convertirse en una señal digital limpia — puente directo hacia el siguiente tema de esta unidad (555, ADC, PWM).
 
@@ -210,7 +210,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Aplicaciones_de_los_OPAMs_-_Minimización_de_Ruido_03.svg]]
 
 ---
 

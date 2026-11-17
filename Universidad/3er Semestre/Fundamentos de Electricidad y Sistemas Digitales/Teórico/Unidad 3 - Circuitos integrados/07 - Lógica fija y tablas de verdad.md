@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Un **circuito integrado de lógica fija** implementa una función booleana predeterminada por su fabricación (por ejemplo, una compuerta AND o un decodificador), a diferencia de los dispositivos **programables** (como una FPGA), cuya función se define después de fabricados. Son la base de casi todo sistema digital: desde un simple circuito combinacional hasta la lógica de control de un procesador.
 > 
-> ![[../../Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_01.svg]]
 
 ---
 
@@ -156,7 +156,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Lógica_fija_y_tablas_de_verdad_02.svg]]
 
 ---
 

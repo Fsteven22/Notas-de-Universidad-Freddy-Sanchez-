@@ -16,7 +16,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Generar electricidad es como llenar un tanque de agua: necesitas una fuente (río, lluvia, pozo) que convierta algo disponible en algo utilizable.
 > - Cada tipo de generación usa una "fuente" diferente: sol, viento, agua, combustible.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_01.svg]]
 > ![[ChatGPT Image 19 may 2026, 22_52_00.png]]
 >
 > **Principio universal:** Toda generación eléctrica se basa en la **Ley de Faraday** o en la **conversión directa de energía** (electroquímica, fotovoltaica).
@@ -39,7 +39,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - $\Phi$ = Flujo magnético (Webers, Wb)
 > - $t$ = Tiempo (segundos, s)
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_02.svg]]
 >
 > **Regla de la mano derecha:**
 > Apunta los dedos en la dirección del movimiento del conductor → el pulgar indica la dirección de la corriente inducida.
@@ -59,7 +59,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > "La naturaleza se resiste a los cambios en el flujo magnético."
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_03.svg]]
 >
 > **Procedimiento para determinar la dirección de la corriente inducida:**
 >
@@ -111,11 +111,11 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > **Generador de Corriente Alterna (Alternador):**
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_04.svg]]
 >
 > **Generador de Corriente Continua (Dínamo):**
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_05.svg]]
 >
 > | Característica | Alternador (AC) | Dínamo (DC) |
 > |---|---|---|
@@ -131,7 +131,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!info]- 🏭 De la Fuente a tu Enchufe
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_06.svg]]
 
 ---
 ## 🌊 Fuentes de Generación Eléctrica
@@ -142,7 +142,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte la energía **potencial del agua** en energía eléctrica mediante turbinas.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_07.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -159,7 +159,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Quema combustibles fósiles (gas, petróleo, carbón) para producir vapor que mueve turbinas.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_08.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -176,7 +176,7 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > Convierte directamente la luz solar en electricidad mediante el **efecto fotoeléctrico** en celdas semiconductoras de silicio.
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_09.svg]]
 >
 > | Aspecto | Detalle |
 > |---|---|
@@ -236,7 +236,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 > [!tip]- 🔌 Etapas y Voltajes Típicos
 >
-> ![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_10.svg]]
 >
 > | Etapa | Voltaje típico | Función |
 > |---|---|---|
@@ -249,7 +249,7 @@ tags: [EYAG1037, unidad1, electricidad]
 ---
   
 ## 📊 Resumen Visual 
-![[../../Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Principios_de_Generacion_de_Energia_Electrica_11.svg]]
 
 ## 📚 Referencias
 

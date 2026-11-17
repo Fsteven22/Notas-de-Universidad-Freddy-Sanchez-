@@ -13,7 +13,7 @@ dg-publish: true
 > 1. **Con memoria ($C$)**: integrador y derivador — la salida depende de la **historia** de la entrada (integral/derivada en el tiempo).
 > 2. **No lineales (saturación, diodos)**: comparadores, rectificadores y log/antilog — el OPAM ya **no está en zona lineal**, satura a $\pm V_{sat}$ o usa la exponencial del diodo.
 >
-> ![[../../Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_01.svg]]
 
 ---
 
@@ -242,7 +242,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Integrador,_Derivador_y_Circuitos_No_Lineales_02.svg]]
 
 ---
 

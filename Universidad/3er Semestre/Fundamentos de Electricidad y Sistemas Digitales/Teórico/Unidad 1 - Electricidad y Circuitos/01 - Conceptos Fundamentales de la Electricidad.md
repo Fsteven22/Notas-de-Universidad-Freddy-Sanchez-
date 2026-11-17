@@ -16,7 +16,7 @@ dg-publish: true
 > - **Electricidad** → Como el agua en una tubería: el voltaje es la presión, la corriente es el caudal, y la resistencia es el diámetro de la tubería.
 > - **Sin diferencia de presión** → Sin voltaje = sin flujo de corriente.
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_01.svg]]
 > 
 > **Las tres magnitudes esenciales:**
 > 
@@ -34,7 +34,7 @@ dg-publish: true
 > 
 > La **carga eléctrica** es la propiedad fundamental de la materia que da origen a los fenómenos eléctricos. Existe en dos tipos: positiva (+) y negativa (−).
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_02.svg]]
 > 
 > **Propiedades de la carga:**
 > 
@@ -97,7 +97,7 @@ dg-publish: true
 > |Mismo signo ($++$ o $--$)|Repulsiva (se alejan)|
 > |Signo opuesto ($+-$)|Atractiva (se acercan)|
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_03.svg]]
 > 
 > **Ejemplo resuelto:**
 > 
@@ -185,7 +185,7 @@ dg-publish: true
 > - $Q$ = Carga (Culombios, C)
 > - $t$ = Tiempo (Segundos, s)
 > 
-> ![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_04.svg]]
 > 
 > **Comparación DC vs AC:**
 > 
@@ -220,7 +220,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Conceptos_Fundamentales_de_la_Electricidad_05.svg]]
 
 ---
 

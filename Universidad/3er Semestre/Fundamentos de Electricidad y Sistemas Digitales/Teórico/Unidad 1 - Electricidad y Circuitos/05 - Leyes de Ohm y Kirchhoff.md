@@ -20,7 +20,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - KCL es como un cruce de tuberías: el agua que entra debe ser igual al agua que sale.
 > - KVL es como una ruta circular de montaña: si subes 1000 m, al volver al punto de inicio habrás bajado exactamente 1000 m.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_01.svg]]
 > 
 > |Ley|Postulado|Aplica a|
 > |---|---|---|
@@ -52,7 +52,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$I = \frac{V}{R} \qquad\qquad R = \frac{V}{I}$$
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_02.svg]]
 > 
 > ### 📐 Relación gráfica: curva V-I
 > 
@@ -121,7 +121,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Un **nodo** es cualquier punto de conexión entre dos o más elementos. Un **nodo principal** conecta tres o más elementos.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_03.svg]]
 > 
 > > KCL en el nodo A: $I_1 + I_2 - I_3 - I_4 - I_5 = 0$
 > > 
@@ -173,7 +173,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Resistencia**|La corriente asumida va en el mismo sentido del recorrido|−|
 > |**Resistencia**|La corriente asumida va en sentido contrario al recorrido|+|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_04.svg]]
 > 
 > > KVL: $+V_s - V_{R1} - V_{R2} - V_{R3} = 0$
 > > 
@@ -199,7 +199,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Para circuitos con múltiples mallas, se asigna una **corriente de malla** a cada malla independiente y se aplica KVL en cada una. Esto genera un sistema de ecuaciones que se resuelve simultáneamente.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_05.svg]]
 > 
 > **Procedimiento:**
 > 
@@ -303,7 +303,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > Una vez memorizado el patrón, construir la matriz toma **menos de un minuto** por circuito. No se necesita recorrer mallas ni escribir KVL/KCL paso a paso — el sistema completo surge directamente de la topología del circuito.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_06.svg]]
 
 ---
 
@@ -390,7 +390,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > > ⚠️ Dos fuentes de corriente **no pueden conectarse en serie** a menos que entreguen exactamente la misma corriente; de lo contrario, violan KCL.
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_07.svg]]
 
 ---
 
@@ -404,7 +404,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Mallas (KVL)**|$\sum V = 0$|Corrientes de malla|Hay pocas mallas y muchos nodos|
 > |**Nodos (KCL)**|$\sum I = 0$|Tensiones de nodo|Hay pocos nodos y muchas mallas|
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_08.svg]]
 > 
 > > 💡 Ambos métodos producen el mismo resultado. La elección depende de la estructura del circuito y la cantidad de incógnitas que genera cada enfoque.
 
@@ -416,7 +416,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > En la práctica, las tres leyes se aplican de manera conjunta e iterativa para resolver cualquier circuito:
 > 
-> ![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_09.svg]]
 > 
 > **Resumen de fórmulas esenciales:**
 > 
@@ -434,7 +434,7 @@ tags: [EYAG1037, unidad1, electricidad]
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Leyes_de_Ohm_y_Kirchhoff_10.svg]]
 
 ---
 

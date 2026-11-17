@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Este tema cierra el círculo de lo visto en la Unidad 2: los diodos ([[02 - El Diodo - Unión P-N]]), transistores BJT ([[03 - Transistor BJT]]) y los circuitos de filtrado/regulación ([[04 - Circuitos de Filtrado y Fuentes Lineales]], [[05 - Reguladores en Fuentes Lineales]]) que estudiaste como componentes o etapas discretas, en la práctica suelen venir **ya integrados** dentro de un solo chip (por ejemplo, el propio regulador 7805 que viste es en sí mismo un circuito integrado).
 > 
-> ![[../../Diagramas/01_-_CI_no_programables_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_01.svg]]
 
 ---
 
@@ -56,7 +56,7 @@ dg-publish: true
 
 > [!note] 🗂️ Por programabilidad — la clasificación clave de esta unidad
 > 
-> ![[../../Diagramas/01_-_CI_no_programables_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_02.svg]]
 > 
 > |Tipo|Definición|Ejemplos|
 > |---|---|---|
@@ -136,7 +136,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/01_-_CI_no_programables_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_CI_no_programables_03.svg]]
 
 ---
 

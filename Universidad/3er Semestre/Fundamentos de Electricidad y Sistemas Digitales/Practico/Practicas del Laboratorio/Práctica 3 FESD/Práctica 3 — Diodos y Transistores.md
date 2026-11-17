@@ -14,7 +14,7 @@ tags: [EYAG1037, laboratorio, practicas]
 > - El BJT como **switch electrónico** (corte vs saturación).
 > - Un **sensor de luz** con LDR que acciona un LED mediante un transistor.
 >
-> ![[../../../Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
+> ![[../../../Unidad 0 - Guias y Ejercicios/Diagramas/Práctica_3_—_Diodos_y_Transistores_01.svg]]
 
 ---
 

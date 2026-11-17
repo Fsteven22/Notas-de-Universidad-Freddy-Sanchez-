@@ -23,7 +23,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > - El **Teorema de Norton** es el equivalente usando una fuente de corriente.
 > - La **Máxima Transferencia de Potencia** responde cuándo una carga extrae el máximo de energía posible de la fuente.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_01.svg]]
 > 
 > |Teorema|Utilidad principal|
 > |---|---|
@@ -51,7 +51,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚙️ Procedimiento
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_02.svg]]
 > 
 > ### 🔕 Cómo "apagar" una fuente
 > 
@@ -152,7 +152,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Fórmula**|$V_{R_i} = \dfrac{V_f \cdot R_i}{R_{eq}}$|$I_{R_i} = \dfrac{R_{eq} \cdot I_f}{R_j}$|
 > |**Estructura**|Una sola malla|Un solo par de nodos|
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_03.svg]]
 
 ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_10_30.png]]
 
@@ -169,7 +169,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por el ingeniero francés **Léon Charles Thévenin** en 1883.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_04.svg]]
 > 
 > ### ⚙️ Procedimiento para obtener $V_{Th}$ y $R_{Th}$
 > 
@@ -222,7 +222,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Fue enunciado por **Edward Lawry Norton** en 1926.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_05.svg]]
 > 
 > ### ⚙️ Parámetros del equivalente Norton
 > 
@@ -239,7 +239,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > $$V_{Th} = I_N \cdot R_N \qquad\qquad I_N = \frac{V_{Th}}{R_{Th}}$$
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_06.svg]]
 > 
 > ### 🧮 Ejemplo resuelto
 > 
@@ -265,7 +265,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > Es la base práctica de la relación Thévenin-Norton.
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_07.svg]]
 > 
 > ### ⚙️ Fórmulas de transformación
 > 
@@ -430,7 +430,7 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ### ⚡ Regla mnemotécnica — mismo patrón para mallas y nodos
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
 
 ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
@@ -449,13 +449,13 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Transf. de fuentes**|Intercambia Vs ↔ Is|Fuente + resistencia|Simplifica nodos o mallas sucesivos|
 > |**Máx. transferencia**|$R_L = R_{Th}$|Red Thévenin conocida|Optimiza la potencia entregada|
 > 
-> ![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_09.svg]]
 
 ---
 
 ## 📊 Resumen Visual
 
-![[../../Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_10.svg]]
 
 ---
 
