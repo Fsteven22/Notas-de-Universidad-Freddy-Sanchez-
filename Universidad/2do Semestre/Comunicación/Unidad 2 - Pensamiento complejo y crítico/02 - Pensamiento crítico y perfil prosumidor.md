@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 > | **IA** | Pega salida sin revisar | Promptea, verifica y declara uso ético |
 > | **Equipo** | Repite opiniones | Aporta evidencia y alternativas |
 
-![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_01.svg]]
 
 ---
 
@@ -37,7 +37,7 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 >
 > **Test rápido para cualquier lectura S3-S4:**
 >
-> ![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_02.svg]]
 >
 > | Criterio | Pregunta | Señal de alerta |
 > |---|---|---|
@@ -64,7 +64,7 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 >
 > **Prosumidor = produces + consumes con criterio.** En esta materia se potencia con lecturas académicas y redacción de informes.
 >
-> ![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_03.svg]]
 >
 > **Niveles:**
 >
@@ -142,7 +142,7 @@ tags: [IDIG2012, unidad2, pensamiento-critico, prosumidor, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Pensamiento_crítico_y_perfil_prosumidor_04.svg]]
 
 > [!success] 🔍 Comparación Final
 >

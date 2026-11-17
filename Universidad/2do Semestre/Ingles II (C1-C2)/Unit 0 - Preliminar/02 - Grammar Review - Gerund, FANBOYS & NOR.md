@@ -16,7 +16,7 @@ dg-publish: true
 > | **2** | FANBOYS — conjunciones coordinantes |
 > | **3** | The use of NOR |
 >
-> ![[Diagramas/02_-_Grammar_Review_-_Gerund,_FANBOYS_&_NOR_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Grammar_Review_-_Gerund,_FANBOYS_&_NOR_01.svg]]
 
 ---
 

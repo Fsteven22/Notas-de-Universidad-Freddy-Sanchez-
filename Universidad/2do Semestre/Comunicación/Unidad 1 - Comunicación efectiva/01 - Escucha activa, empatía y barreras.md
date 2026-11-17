@@ -27,7 +27,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > | **Trabajo en equipo** | Decisiones apresuradas | Decisiones con información completa |
 > | **Liderazgo** | Equipo se siente ignorado | Equipo se siente validado |
 
-![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > Es el propósito detrás del mensaje: informar, pedir, persuadir, expresar emoción. Escuchar activamente es detectar esa intención, no solo las palabras.
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_02.svg]]
 >
 > **Comparación visual:**
 >
@@ -70,7 +70,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > Todo evento comunicativo tiene 6 elementos: **emisor** (produce y envía), **receptor** (recibe e interpreta), **código** (reglas y signos compartidos: el mismo idioma), **canal** (medio físico), **mensaje** (la información) y **contexto** (la situación de ambos).
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_03.svg]]
 >
 > **Se lee así:** el emisor codifica, el receptor decodifica; la **retroalimentación** (respuesta que confirma recepción) invierte los roles y cierra el circuito. El **ruido** es cualquier interferencia sobre los elementos y debe evitarse.
 >
@@ -94,7 +94,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > El material de clase define **tres componentes inseparables**:
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_04.svg]]
 >
 > | Componente | Qué Hace | Clave |
 > |---|---|---|
@@ -170,7 +170,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 
 > [!danger] 🚫 Las 3 Barreras del Syllabus (marco base)
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_05.svg]]
 >
 > **Síntomas y antídotos:**
 >
@@ -228,7 +228,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 > - Explican por qué "sentimos" la emoción del otro al ver su expresión facial o escuchar su tono.
 > - Base neurofisiológica del **contagio emocional** y la **resonancia empática**.
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_06.svg]]
 >
 > **Implicación práctica:** la escucha activa no es solo técnica — activa el sistema de neuronas espejo, mejorando la empatía natural con práctica deliberada.
 >
@@ -237,7 +237,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 >
 > **Empatía no es estar de acuerdo, es entender el marco del otro.**
 >
-> ![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_07.svg]]
 >
 > **Frases plantilla:**
 >
@@ -393,7 +393,7 @@ tags: [IDIG2012, unidad1, escucha-activa, empatia, comunicacion]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/01_-_Escucha_activa,_empatía_y_barreras_08.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Escucha_activa,_empatía_y_barreras_08.svg]]
 
 > [!success] 🔍 Comparación Final
 >

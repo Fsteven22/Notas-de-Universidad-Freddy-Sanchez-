@@ -13,7 +13,7 @@ dg-publish: true
 > - Hoy en día, la compresión está en todas partes: un archivo `.zip`, una foto `.jpg`, un video en streaming, o una llamada por videollamada — todos dependen de algoritmos de compresión funcionando en tiempo real.
 > - Sin compresión, plataformas como Netflix o Spotify serían imposibles de operar al costo de ancho de banda que usarías sin comprimir.
 > 
-> ![[Diagramas/01_-_Introducción_a_la_Compresión_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_01.svg]]
 
 ---
 
@@ -85,7 +85,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — ¿Qué tipo de compresión usar?
 
-![[Diagramas/01_-_Introducción_a_la_Compresión_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Introducción_a_la_Compresión_02.svg]]
 
 ---
 

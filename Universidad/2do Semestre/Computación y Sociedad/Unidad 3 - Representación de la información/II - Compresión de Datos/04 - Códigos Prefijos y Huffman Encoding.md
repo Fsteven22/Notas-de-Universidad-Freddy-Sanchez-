@@ -13,7 +13,7 @@ dg-publish: true
 > - Es la base de formatos como `.zip`, `.jpg` (en su etapa final de codificación), `.mp3`, y del algoritmo DEFLATE usado en `.png` y `.gzip`.
 > - Para que Huffman funcione sin ambigüedad al decodificar, los códigos que genera son siempre **códigos prefijos** — el concepto que vemos primero antes de construir el árbol de Huffman.
 > 
-> ![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_01.svg]]
 
 ---
 
@@ -73,7 +73,7 @@ dg-publish: true
 > 
 > **Árbol resultante y códigos asignados** (izquierda=0, derecha=1):
 > 
-> ![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_02.svg]]
 > 
 > **Códigos finales:** $F=0$, $C=100$, $D=101$, $A=1100$, $B=1101$, $E=111$
 
@@ -134,7 +134,7 @@ dg-publish: true
 
 ## 🧭 Diagrama de Decisión — Construir un Código de Huffman
 
-![[Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Códigos_Prefijos_y_Huffman_Encoding_03.svg]]
 
 ---
 

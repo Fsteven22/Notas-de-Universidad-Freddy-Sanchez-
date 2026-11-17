@@ -27,7 +27,7 @@ dg-publish: true
 > |**Cálculos pesados**|UI no responde durante procesamiento|Procesamiento paralelo sin afectar UI|
 > |**Profesionalismo**|Aplicación amateur|Aplicación profesional y pulida|
 
-![[Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_01.svg]]
 
 ---
 
@@ -45,7 +45,7 @@ dg-publish: true
 > - Procesar todos los eventos de usuario (clics, teclas, etc.)
 > - Actualizar el estado visual de la interfaz
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_02.svg]]
 > 
 > **Regla de Oro de Swing:**
 > 
@@ -178,7 +178,7 @@ dg-publish: true
 > 
 > **Problemas observados:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_03.svg]]
 > 
 > **Síntomas de EDT bloqueado:**
 > 
@@ -203,7 +203,7 @@ dg-publish: true
 > 
 > **Arquitectura de SwingWorker:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_04.svg]]
 > 
 > **Métodos principales:**
 > 
@@ -298,7 +298,7 @@ dg-publish: true
 > 
 > **Flujo de ejecución:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_05.svg]]
 
 ### 🎨 Ejemplo Completo: Procesador de Archivos
 
@@ -471,7 +471,7 @@ dg-publish: true
 > 
 > **Solución:** Usar `SwingUtilities.invokeLater()` o `invokeAndWait()`
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_06.svg]]
 > 
 > **Comparación:**
 > 
@@ -550,7 +550,7 @@ dg-publish: true
 > 
 > **Flujo de ejecución:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_07.svg]]
 
 ### ⏰ invokeAndWait
 
@@ -607,7 +607,7 @@ dg-publish: true
 > 
 > **⚠️ PELIGROS de invokeAndWait:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_08.svg]]
 > 
 > **Reglas de uso:**
 > 
@@ -1071,7 +1071,7 @@ dg-publish: true
 > 
 > **Por qué ocurre:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_09.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_09.svg]]
 > 
 > **Solución:**
 > 
@@ -1388,7 +1388,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_10.svg]]
 
 ### 📋 Tabla Comparativa Final
 
@@ -1405,7 +1405,7 @@ dg-publish: true
 > 
 > **Decisión rápida:**
 > 
-> ![[Diagramas/02_-_Concurrencia_con_GUI_11.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Concurrencia_con_GUI_11.svg]]
 
 ---
 

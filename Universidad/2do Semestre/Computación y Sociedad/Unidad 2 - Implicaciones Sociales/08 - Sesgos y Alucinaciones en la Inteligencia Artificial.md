@@ -39,7 +39,7 @@ dg-publish: true
 
 > [!example] 🧠 Orígenes del Sesgo
 > 
-> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_01.svg]]
 > 
 > - **Datos desequilibrados:** Si el modelo se entrena con más datos de un grupo que de otro, aprenderá a favorecer al grupo mayoritario.
 > - **Sesgos históricos:** Si los datos reflejan discriminaciones del pasado (ej. contratar solo hombres), la IA los aprende y los repite.
@@ -129,7 +129,7 @@ dg-publish: true
 
 > [!warning] ⚙️ Causas Técnicas
 > 
-> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_02.svg]]
 > 
 > |Causa|Descripción|
 > |---|---|
@@ -211,7 +211,7 @@ dg-publish: true
 > |**Impacto principal**|Discriminación, desigualdad social|Desinformación, errores factuales|
 > |**Ejemplo**|Algoritmo que favorece CVs masculinos|IA que inventa una sentencia judicial|
 > 
-> ![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_03.svg]]
 
 ---
 
@@ -243,7 +243,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/08_-_Sesgos_y_Alucinaciones_en_la_Inteligencia_Artificial_04.svg]]
 
 ---
 

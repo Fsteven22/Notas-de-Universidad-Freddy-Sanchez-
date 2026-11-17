@@ -14,7 +14,7 @@ dg-publish: true
 > - **Writing a product review:** estructura y vocabulario para escribir reseñas efectivas.
 > - **Register Check:** ALL CAPS en reseñas — cómo usarlas sin sonar agresivo.
 > 
-> ![[Diagramas/04_-_Reading_Writing_Speaking_-_Buyer_Beware_&_Product_Reviews_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/04_-_Reading_Writing_Speaking_-_Buyer_Beware_&_Product_Reviews_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Dónde se usa|
 > |---|---|---|

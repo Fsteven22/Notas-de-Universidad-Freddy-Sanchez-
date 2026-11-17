@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Toda interfaz gráfica en Java se construye sobre tres conceptos fundamentales:
 > 
-> ![[Diagramas/02_-_Componentes,_layouts_y_eventos_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_01.svg]]
 > 
 > **Analogía del mundo real:**
 > 
@@ -738,7 +738,7 @@ dg-publish: true
 
 > [!info] 🔄 Arquitectura de Eventos
 > 
-> ![[Diagramas/02_-_Componentes,_layouts_y_eventos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_02.svg]]
 > 
 > **Componentes del modelo:**
 > 
@@ -1146,7 +1146,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Componentes,_layouts_y_eventos_03.svg]]
 
 ---
 

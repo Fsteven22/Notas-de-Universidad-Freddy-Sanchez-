@@ -10,7 +10,7 @@ dg-publish: true
 >
 > Mucho antes de las computadoras electrónicas, los humanos ya necesitaban calcular: medir el tiempo, contar cosechas, registrar datos. Cada instrumento creado fue un paso hacia lo que hoy conocemos como computación.
 >
-> ![[Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_01.svg]]
 
 ---
 
@@ -128,7 +128,7 @@ dg-publish: true
 
 > [!summary] 📅 Del ábaco a Babbage
 >
-> ![[Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Orígenes_e_Instrumentos_de_Cálculo_02.svg]]
 
 ---
 

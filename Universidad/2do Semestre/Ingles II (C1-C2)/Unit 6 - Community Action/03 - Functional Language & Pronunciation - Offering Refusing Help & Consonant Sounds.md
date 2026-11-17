@@ -14,7 +14,7 @@ dg-publish: true
 > - **Imposing on somebody:** cómo suavizar una petición que el otro podría no querer cumplir.
 > - **Pronunciation:** distinción entre /b/ y /v/ en medio de una palabra (6.3), y el sonido de conexión /j/ entre palabras (6.4).
 > 
-> ![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -152,7 +152,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Functional_Language_&_Pronunciation_-_Offering_Refusing_Help_&_Consonant_Sounds_02.svg]]
 
 ---
 

@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 > | **No verbal** | Confianza inmediata | Sin contacto visual, manos en bolsillos |
 > | **Estratégica** | Formato correcto | TED de 14 min (fuera de tiempo) |
 
-![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_01.svg]]
 
 ---
 
@@ -47,7 +47,7 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 >
 > **No verbal (4.4): gestos, posturas, contacto visual, proxémica, imagen y marca personal.**
 >
-> ![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_02.svg]]
 >
 > | Señal | Haz | Evita |
 > |---|---|---|
@@ -140,7 +140,7 @@ tags: [IDIG2012, unidad4, paraverbal, no-verbal, estrategica, ted]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Voz,_cuerpo,_formatos_y_práctica_TED_03.svg]]
 
 > [!success] 🔍 Comparación Final
 >

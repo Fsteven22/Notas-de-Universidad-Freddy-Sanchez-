@@ -25,7 +25,7 @@ dg-publish: true
 > |**Análisis**|Estudiar propiedades (eigenvalores, determinante)|Estabilidad de sistemas|
 > |**Inversión**|Deshacer transformaciones|Criptografía, compresión|
 
-![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ dg-publish: true
 > 
 > **Proceso paso a paso:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_02.svg]]
 > 
 > **Ejemplo en ℝ²:**
 > 
@@ -82,7 +82,7 @@ dg-publish: true
 > 
 > **1. Rotación por ángulo θ (sentido antihorario)**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_03.svg]]
 > 
 > **Matriz de rotación:**
 > 
@@ -113,7 +113,7 @@ dg-publish: true
 > 
 > **2. Reflexión sobre el eje x**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_04.svg]]
 > 
 > ```
 > Ref_x = [1   0]
@@ -180,7 +180,7 @@ dg-publish: true
 > 
 > **1. Rotación alrededor del eje z**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_05.svg]]
 > 
 > ```
 > Rz(θ) = [cos(θ)  -sin(θ)  0]
@@ -245,7 +245,7 @@ dg-publish: true
 > 
 > **Algoritmo paso a paso:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_06.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -295,7 +295,7 @@ dg-publish: true
 > 
 > La composición S∘T tiene matriz [S][T]
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_07.svg]]
 > 
 > **⚠️ IMPORTANTE: El orden importa**
 > 
@@ -351,7 +351,7 @@ dg-publish: true
 > 
 > **Casos especiales:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_08.svg]]
 
 ### 🔄 Transformación Inversa
 
@@ -370,7 +370,7 @@ dg-publish: true
 > 
 > T es invertible ⟺ det([T]) ≠ 0
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_09.svg]]
 > 
 > **Cálculo de la inversa en ℝ²:**
 > 
@@ -449,7 +449,7 @@ dg-publish: true
 > - Base rotada: "4 cuadras en diagonal noreste"
 > - **Misma ubicación, diferente descripción**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_10.svg]]
 > 
 > **Notación:**
 > 
@@ -470,7 +470,7 @@ dg-publish: true
 > 
 > **Diagrama del proceso:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_11.svg]]
 
 ### 🛠️ Ejemplo Completo de Cambio de Base
 
@@ -520,7 +520,7 @@ dg-publish: true
 > 
 > **Interpretación:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_12.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_12.svg]]
 > 
 > En la base B:
 > 
@@ -551,7 +551,7 @@ dg-publish: true
 > 
 > A es diagonalizable ⟺ Tiene n eigenvectores linealmente independientes
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_13.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_13.svg]]
 > 
 > **Fórmula de diagonalización:**
 > 
@@ -593,7 +593,7 @@ dg-publish: true
 > 
 > **Criterios de diagonalización:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_14.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_14.svg]]
 
 ---
 
@@ -618,7 +618,7 @@ dg-publish: true
 > 
 > **Visualización en ℝ²:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_15.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_15.svg]]
 > 
 > **Ejemplos:**
 > 
@@ -647,7 +647,7 @@ dg-publish: true
 > 
 > **Signo del determinante:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_16.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_16.svg]]
 > 
 > **Ejemplo de orientación:**
 > 
@@ -735,7 +735,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_17.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_17.svg]]
 > 
 > **Casos en ℝ³ → ℝ³:**
 > 
@@ -771,7 +771,7 @@ dg-publish: true
 > 
 > **Métodos para calcular rango:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_18.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_18.svg]]
 > 
 > **Propiedades:**
 > 
@@ -788,7 +788,7 @@ dg-publish: true
 
 ### Mapa Conceptual General
 
-![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_19.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_19.svg]]
 
 >[!success] ### Tabla Resumen de Transformaciones Clásicas
 > 
@@ -802,7 +802,7 @@ dg-publish: true
 > 
 ### Diagrama de Flujo: Trabajar con Matrices
 
-![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_20.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_20.svg]]
 
 ---
 
@@ -918,7 +918,7 @@ dg-publish: true
 > 
 > **Has dominado:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_21.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_21.svg]]
 > 
 > **Progresión natural del aprendizaje:**
 > 
@@ -933,7 +933,7 @@ dg-publish: true
 > 
 > **Roadmap de evolución:**
 > 
-> ![[Diagramas/07_-_Matriz_de_una_Transformación_Lineal_22.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_Matriz_de_una_Transformación_Lineal_22.svg]]
 > 
 > **Conceptos clave que siguen:**
 > 

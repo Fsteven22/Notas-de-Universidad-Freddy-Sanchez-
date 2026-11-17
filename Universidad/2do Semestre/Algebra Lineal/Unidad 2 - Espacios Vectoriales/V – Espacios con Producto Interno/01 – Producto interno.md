@@ -20,7 +20,7 @@ dg-publish: true
 > 
 > **Desde lo conocido a lo abstracto:**
 > 
-> ![[Diagramas/01_–_Producto_interno_01.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_01.svg]]
 
 ---
 
@@ -45,7 +45,7 @@ dg-publish: true
 > 
 > **Visualización de los axiomas:**
 > 
-> ![[Diagramas/01_–_Producto_interno_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_02.svg]]
 > 
 > ### Axiomas para Espacios Complejos
 > 
@@ -146,7 +146,7 @@ dg-publish: true
 > 
 > **Aplicación práctica:**
 > 
-> ![[Diagramas/01_–_Producto_interno_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_03.svg]]
 
 ### 📊 Ejemplo 3: Producto Interno en $C[a,b]$
 
@@ -163,7 +163,7 @@ dg-publish: true
 > - Si $f$ y $g$ son ambas positivas: el producto interno mide el "área de solapamiento"
 > - Si $f$ y $g$ tienen signos opuestos en algunos lugares: el producto puede ser pequeño o cero
 > 
-> ![[Diagramas/01_–_Producto_interno_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_04.svg]]
 > 
 > **Ejemplo 1: Funciones polinomiales**
 > 
@@ -249,7 +249,7 @@ dg-publish: true
 > 
 > **Aplicación en polinomios ortogonales:**
 > 
-> ![[Diagramas/01_–_Producto_interno_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_05.svg]]
 
 ### 📊 Ejemplo 5: Producto de Frobenius en Matrices
 
@@ -370,7 +370,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica:**
 > 
-> ![[Diagramas/01_–_Producto_interno_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_06.svg]]
 > 
 > **Ejemplo numérico:**
 > 
@@ -409,7 +409,7 @@ dg-publish: true
 > 
 > donde $|\mathbf{v}| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$ es la norma inducida.
 > 
-> ![[Diagramas/01_–_Producto_interno_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_07.svg]]
 > 
 > **Casos especiales:**
 > 
@@ -463,7 +463,7 @@ dg-publish: true
 > 
 > ### Checklist de Verificación
 > 
-> ![[Diagramas/01_–_Producto_interno_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_08.svg]]
 
 ---
 
@@ -578,7 +578,7 @@ dg-publish: true
 > - **Regresión** por mínimos cuadrados
 > - **Análisis multivariado**
 > 
-> ![[Diagramas/01_–_Producto_interno_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_–_Producto_interno_09.svg]]
 
 ---
 

@@ -12,7 +12,7 @@ dg-publish: true
 > - **Describing stories:** términos para clasificar tipos de historias según su tono, tema o estructura (sección 5.1).
 > - **Making and breaking plans:** verbos y frases para hablar de planes, cambios de planes y las consecuencias sociales de romperlos (sección 5.2).
 > 
-> ![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_01.svg]]
 > 
 > |Bloque|¿Para qué sirve?|Sección del libro|
 > |---|---|---|
@@ -141,7 +141,7 @@ dg-publish: true
 
 ## 🧩 Diagrama de decisión
 
-![[Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Vocabulary_&_Use_-_Describing_Stories_&_Making_-_Breaking_Plans_02.svg]]
 
 ---
 

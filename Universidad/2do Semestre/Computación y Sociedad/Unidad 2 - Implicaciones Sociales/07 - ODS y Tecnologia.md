@@ -32,7 +32,7 @@ dg-publish: true
 
 ## 📋 Los 17 Objetivos — Resumen General
 
-![[Diagramas/07_-_ODS_y_Tecnologia_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_ODS_y_Tecnologia_01.svg]]
 
 ---
 
@@ -363,7 +363,7 @@ dg-publish: true
 
 > [!tip] 📊 ¿Cómo están los países?
 > 
-> ![[Diagramas/07_-_ODS_y_Tecnologia_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/07_-_ODS_y_Tecnologia_02.svg]]
 > 
 > **Dato clave 2025:** Solo el **17–18% de las metas** están en vías de cumplirse para 2030.
 

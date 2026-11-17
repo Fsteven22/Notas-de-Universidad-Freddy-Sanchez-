@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > No todas las amenazas informáticas atacan directamente al software. Muchas atacan **a la persona**: la manera más eficiente de vulnerar un sistema no siempre es romper el cifrado, sino simplemente **convencer al usuario de que entregue la llave**. Esa es la lógica detrás de toda esta nota.
 > 
-> ![[Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_01.svg]]
 
 ---
 
@@ -110,7 +110,7 @@ dg-publish: true
 
 ## 🧭 Flujograma de Decisión — ¿Qué tipo de fraude es?
 
-![[Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/05_-_Ingeniería_Social_y_Fraudes_en_Línea_02.svg]]
 
 ---
 

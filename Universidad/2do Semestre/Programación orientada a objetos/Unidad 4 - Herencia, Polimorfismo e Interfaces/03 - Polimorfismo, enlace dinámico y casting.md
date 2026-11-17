@@ -25,7 +25,7 @@ dg-publish: true
 > |**Mantenibilidad**|Cambios localizados|Menos errores|
 > |**Abstracción**|Trabajar con conceptos generales|Código más limpio|
 
-![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_01.svg]]
 
 ---
 
@@ -35,7 +35,7 @@ dg-publish: true
 
 > [!note] 🌳 Clasificación del Polimorfismo
 > 
-> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_02.svg]]
 > 
 > **Comparación rápida:**
 > 
@@ -312,7 +312,7 @@ dg-publish: true
 > 
 > **Proceso de resolución:**
 > 
-> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_03.svg]]
 > 
 > **Ejemplo ilustrativo:**
 > 
@@ -468,7 +468,7 @@ dg-publish: true
 > // No todo Animal ES-UN Perro (puede fallar)
 > ```
 > 
-> ![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_04.svg]]
 
 ### 🛠️ Upcasting en Detalle
 
@@ -1128,7 +1128,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Polimorfismo,_enlace_dinámico_y_casting_05.svg]]
 
 ### 📋 Tabla Resumen Final
 

@@ -12,7 +12,7 @@ dg-publish: true
 > 
 > Cada acción individual en plataformas tecnológicas tiene consecuencias colectivas, tanto positivas como negativas.
 > 
-> ![[Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_01.svg]]
 
 ---
 
@@ -95,7 +95,7 @@ dg-publish: true
 > 
 > El concepto del **"Yo cuantificado"** (_Quantified Self_) describe la tendencia de usar tecnología para medir, registrar y analizar datos sobre la propia vida — desde la salud física hasta los hábitos diarios.
 > 
-> ![[Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Implicaciones_Sociales_de_la_Computación_en_un_Mundo_Conectado_02.svg]]
 > 
 > |Dispositivo / Plataforma|Datos que recolecta|
 > |---|---|

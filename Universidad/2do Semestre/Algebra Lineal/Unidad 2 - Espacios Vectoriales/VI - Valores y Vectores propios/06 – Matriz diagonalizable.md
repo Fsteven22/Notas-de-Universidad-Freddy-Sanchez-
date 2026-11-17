@@ -26,7 +26,7 @@ dg-publish: true
 > |**Comprensión**|Ver estructura esencial|Análisis de transformaciones|
 > |**Estabilidad**|Análisis de comportamiento|Sistemas dinámicos|
 
-![[Diagramas/06_–_Matriz_diagonalizable_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_01.svg]]
 
 ---
 
@@ -111,7 +111,7 @@ dg-publish: true
 > Por tanto: A = PDP⁻¹ ✓
 > ```
 
-![[Diagramas/06_–_Matriz_diagonalizable_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_02.svg]]
 
 ---
 
@@ -197,7 +197,7 @@ dg-publish: true
 > A NO es diagonalizable. ❌
 > ```
 
-![[Diagramas/06_–_Matriz_diagonalizable_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_03.svg]]
 
 ---
 
@@ -250,7 +250,7 @@ dg-publish: true
 > 
 > Calcular $PD$ y $AP$, verificar que son iguales.
 
-![[Diagramas/06_–_Matriz_diagonalizable_04.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_04.svg]]
 
 ### 💡 Ejemplo Completo 2×2
 
@@ -564,7 +564,7 @@ dg-publish: true
 
 ### Mapa Conceptual
 
-![[Diagramas/06_–_Matriz_diagonalizable_05.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_05.svg]]
 
 ### Tabla de Referencia Rápida
 
@@ -688,7 +688,7 @@ dg-publish: true
 > 
 > **Progresión natural:**
 > 
-> ![[Diagramas/06_–_Matriz_diagonalizable_06.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_–_Matriz_diagonalizable_06.svg]]
 > 
 > |Concepto Actual|Próximo Tema|Relación|
 > |---|---|---|

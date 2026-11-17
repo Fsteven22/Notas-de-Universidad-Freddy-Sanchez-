@@ -27,7 +27,7 @@ dg-publish: true
 > |**Escalabilidad**|Manejar múltiples usuarios simultáneamente|APIs REST, sistemas distribuidos|
 > |**Operaciones I/O**|No bloquear mientras se espera datos|Descargas, conexiones de red|
 
-![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_01.svg]]
 
 ---
 
@@ -39,7 +39,7 @@ dg-publish: true
 > 
 > **Comparación visual:**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_02.svg]]
 > 
 > **Tabla comparativa:**
 > 
@@ -123,7 +123,7 @@ dg-publish: true
 > 
 > **Comparación:**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_03.svg]]
 > 
 > **Ejemplo práctico:**
 > 
@@ -142,7 +142,7 @@ dg-publish: true
 
 > [!info] 🎢 Diagrama de Estados
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_04.svg]]
 > 
 > **Descripción de cada estado:**
 > 
@@ -516,7 +516,7 @@ dg-publish: true
 > 
 > **Flujo de decisión:**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_05.svg]]
 
 ---
 
@@ -692,7 +692,7 @@ dg-publish: true
 > 
 > **⚠️ ADVERTENCIAS IMPORTANTES:**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_06.svg]]
 > 
 > **Mejores prácticas:**
 > 
@@ -831,7 +831,7 @@ dg-publish: true
 > 
 > **¿Por qué falla?**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_07.svg]]
 > 
 > **Visualización del problema:**
 > 
@@ -887,7 +887,7 @@ dg-publish: true
 > 
 > **¿Cómo funciona synchronized?**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_08.svg]]
 > 
 > **Formas de usar synchronized:**
 > 
@@ -972,7 +972,7 @@ dg-publish: true
 > 
 > **Diagrama del Deadlock:**
 > 
-> ![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_09.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_09.svg]]
 > 
 > **Condiciones para que ocurra Deadlock:**
 > 
@@ -1216,7 +1216,7 @@ dg-publish: true
 
 ### 🗺️ Mapa Mental Completo
 
-![[Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Concurrencia_y_ciclo_de_vida_de_hilos_10.svg]]
 
 ### 📋 Tabla Comparativa Final
 

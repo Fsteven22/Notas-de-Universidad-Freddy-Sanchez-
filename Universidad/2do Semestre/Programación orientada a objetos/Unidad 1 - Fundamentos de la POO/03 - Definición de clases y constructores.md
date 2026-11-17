@@ -26,7 +26,7 @@ dg-publish: true
 > |**Organización**|Código estructurado y mantenible|Separar `Producto`, `Cliente`, `Pedido`|
 > |**Abstracción**|Modelar conceptos del mundo real|`Auto` representa un vehículo real|
 
-![[Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_01.svg]]
 
 ---
 
@@ -121,7 +121,7 @@ dg-publish: true
 > }
 > ```
 > 
-> ![[Diagramas/03_-_Definición_de_clases_y_constructores_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_02.svg]]
 
 ---
 
@@ -141,7 +141,7 @@ dg-publish: true
 > 
 > **Flujo de creación de objetos:**
 > 
-> ![[Diagramas/03_-_Definición_de_clases_y_constructores_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_03.svg]]
 > 
 > ```java
 > public class Producto {
@@ -384,7 +384,7 @@ dg-publish: true
 > }
 > ```
 > 
-> ![[Diagramas/03_-_Definición_de_clases_y_constructores_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_04.svg]]
 
 ---
 
@@ -627,7 +627,7 @@ dg-publish: true
 
 ## 📊 Resumen Visual
 
-![[Diagramas/03_-_Definición_de_clases_y_constructores_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Definición_de_clases_y_constructores_05.svg]]
 
 > [!success]  🎯 Tabla de Referencia Rápida
 > 

@@ -31,7 +31,7 @@ dg-publish: true
 > |**Generalización**|Estructura uniforme|Múltiples contextos|
 > |**Visualización**|Interpretación geométrica|Comprensión intuitiva|
 
-![[Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_01.svg]]
 
 ---
 
@@ -248,7 +248,7 @@ dg-publish: true
 > 
 > **¿Por qué usar matriz aumentada?**
 > 
-> ![[Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_02.svg]]
 > 
 > **Ventajas:**
 > 
@@ -567,7 +567,7 @@ dg-publish: true
 > 
 > **Diagrama de decisión:**
 > 
-> ![[Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_03.svg]]
 
 ### 🔍 Sistemas Homogéneos vs No Homogéneos
 
@@ -1172,7 +1172,7 @@ dg-publish: true
 > 
 > **Diagrama de casos:**
 > 
-> ![[Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_04.svg]]
 
 ---
 
@@ -1217,7 +1217,7 @@ dg-publish: true
 > 
 > **Clasificación de sistemas:**
 > 
-> ![[Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_-_Matriz_asociada_a_un_S.E.L._y_sistema_aumentado_05.svg]]
 > 
 > **Interpretación geométrica:**
 > 

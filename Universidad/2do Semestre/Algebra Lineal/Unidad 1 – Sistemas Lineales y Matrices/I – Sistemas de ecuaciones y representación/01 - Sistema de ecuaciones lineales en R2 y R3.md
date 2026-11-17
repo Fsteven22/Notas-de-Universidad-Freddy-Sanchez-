@@ -278,7 +278,7 @@ dg-publish: true
 
 ### 📊 Diagrama de Clasificación
 
-![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_01.svg]]
 
 ### 📋 Tabla Resumen Comparativa
 
@@ -1514,7 +1514,7 @@ dg-publish: true
 
 ## 🎨 Diagrama de Flujo para Resolver S.E.L.
 
-![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_02.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_02.svg]]
 
 ## 🧪 Ejercicios Progresivos
 
@@ -1745,7 +1745,7 @@ dg-publish: true
 
 ## 🎨 Visualización de Soluciones
 
-![[Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_03.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/01_-_Sistema_de_ecuaciones_lineales_en_R2_y_R3_03.svg]]
 
 ## 🌐 Conexiones Conceptuales
 

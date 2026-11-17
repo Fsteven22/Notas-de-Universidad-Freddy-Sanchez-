@@ -25,7 +25,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 > | **Originalidad** | Copia-pega detectable | Paráfrasis citada APA |
 > | **Evaluación** | Taller 2 flojo + PAC débil | Taller 2 sólido + PAC lista |
 
-![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_01.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_01.svg]]
 
 ---
 
@@ -54,7 +54,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 >
 > Los dos cumplen la misma función: **facilitar la comunicación profesional, informar decisiones estratégicas y mejorar la eficiencia en equipos técnicos y directivos**.
 
-![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_03.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_03.svg]]
 
 ### 🧱 Estructura de Cátedra
 
@@ -76,7 +76,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 >
 > Existen infinitas plantillas, pero los bloques no cambian: el ejecutivo es **el mismo informe filtrado por decisión**.
 
-![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_04.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_04.svg]]
 
 ### 🗺️ Caso Aplicado: el Puente Gonzalo Icaza (Daule - Guayas)
 
@@ -94,7 +94,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 >
 > **El test:** si al leer tu versión ejecutiva el directivo no puede decidir, te faltó un bloque.
 
-![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_05.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_05.svg]]
 
 ### 🎭 Plantillas que Sí Pasarás a Mano (Taller 2)
 
@@ -215,7 +215,7 @@ tags: [IDIG2012, unidad3, informes, sintesis, parafrasis]
 
 ## 📊 Resumen Visual
 
-![[Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_02.svg]]
+![[../Unidad 0 - Guias y Ejercicios/Diagramas/02_-_Informes_técnicos_y_ejecutivos,_síntesis_y_paráfrasis_02.svg]]
 
 > [!success] 🔍 Comparación Final
 >

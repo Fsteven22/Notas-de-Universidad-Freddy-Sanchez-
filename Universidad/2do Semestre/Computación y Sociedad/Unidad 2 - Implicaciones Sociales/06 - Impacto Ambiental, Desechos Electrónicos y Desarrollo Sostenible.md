@@ -10,7 +10,7 @@ dg-publish: true
 > 
 > Cada dispositivo electrónico que usamos tiene un ciclo de vida con impacto ambiental en todas sus etapas: fabricación, uso y descarte. La tecnología que conecta al mundo también genera una de las corrientes de residuos de más rápido crecimiento en la historia.
 > 
-> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_01.svg]]
 
 ---
 
@@ -62,7 +62,7 @@ dg-publish: true
 > 
 > Una fracción importante de los desechos electrónicos generados en países desarrollados es **exportada hacia Asia y América Latina**, muchas veces de forma ilegal o bajo etiquetas engañosas como "donaciones" o "equipos usados".
 > 
-> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_02.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_02.svg]]
 > 
 > > ⚠️ El Convenio de Basilea (1989) prohíbe la exportación de residuos peligrosos a países en desarrollo, pero su cumplimiento es limitado.
 
@@ -86,7 +86,7 @@ dg-publish: true
 > 
 > El modelo tradicional es **lineal**: extraer → fabricar → usar → descartar. La **Economía Circular** propone cerrar ese ciclo:
 > 
-> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_03.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_03.svg]]
 > 
 > **Principios clave:**
 > 
@@ -123,7 +123,7 @@ dg-publish: true
 > 
 > Se apoya en tres pilares interdependientes:
 > 
-> ![[Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_04.svg]]
+> ![[../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Impacto_Ambiental,_Desechos_Electrónicos_y_Desarrollo_Sostenible_04.svg]]
 >
 
 > [!note] 🎯 Los 17 Objetivos de Desarrollo Sostenible (ODS) — ONU 2030

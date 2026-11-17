@@ -22,7 +22,7 @@ dg-publish: true
 > |**Gráficos**|Análisis de componentes principales|Reducción de dimensionalidad|
 > |**Mecánica cuántica**|Estados estacionarios|Niveles de energía|
 
-![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_01.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_01.svg]]
 
 ---
 ## 🏗️ Definición de Espacio Propio
@@ -55,7 +55,7 @@ dg-publish: true
 > 
 > **Verificación de subespacio:**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_02.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_02.svg]]
 
 ### 🔧 Cálculo de Espacios Propios
 
@@ -121,7 +121,7 @@ dg-publish: true
 > 
 > **Interpretación geométrica (2D):**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_03.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_03.svg]]
 
 ---
 ## 🎓 Propiedades de los Espacios Propios
@@ -189,7 +189,7 @@ dg-publish: true
 > - **Columnas de P:** vectores propios de A
 > - **Diagonal de D:** valores propios correspondientes
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_04.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_04.svg]]
 > 
 > **Ejemplo completo:**
 > 
@@ -277,7 +277,7 @@ dg-publish: true
 
 > [!note] 📐 Mapa Conceptual
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_05.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_05.svg]]
 > 
 > **Tabla de fórmulas clave:**
 > 
@@ -373,7 +373,7 @@ dg-publish: true
 > |**Sistemas dinámicos**|Comportamiento a largo plazo|Estabilidad de soluciones|
 > |**Dimensión**|Contar vectores propios independientes|Bases de espacios propios|
 
-![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_06.svg]]
+![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_06.svg]]
 
 ---
 
@@ -407,7 +407,7 @@ dg-publish: true
 > 
 > **Propiedades fundamentales:**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_07.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_07.svg]]
 > 
 > **Tabla de propiedades:**
 > 
@@ -503,7 +503,7 @@ dg-publish: true
 > 
 > **Proceso de cálculo:**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_08.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_08.svg]]
 > 
 > **Relación con el rango:**
 > 
@@ -631,7 +631,7 @@ dg-publish: true
 > 
 > **Interpretación:**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_09.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_09.svg]]
 > 
 > **Casos posibles:**
 > 
@@ -659,7 +659,7 @@ dg-publish: true
 > 
 > **Análisis de casos:**
 > 
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_10.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_10.svg]]
 > 
 > **Checklist de verificación:**
 > 
@@ -911,6 +911,6 @@ dg-publish: true
 ## 🎯 Estrategia de Análisis
 
 > [!tip] 🗺️ Guía Paso a Paso
-> ![[Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_11.svg]]
+> ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/03_–_Espacio_propio_y_multiplicidades_(MA_y_MG)_11.svg]]
 
 **Tags:** #algebra-lineal #multiplicidad #algebraica #geometrica #diagonalizacion #valores-propios #espacios-propios #vectores-propios
