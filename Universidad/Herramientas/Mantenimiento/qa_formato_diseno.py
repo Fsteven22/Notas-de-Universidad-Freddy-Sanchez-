@@ -67,7 +67,12 @@ AJENO = ("_texto/", "contenido extra/", "herramientas/", "site/", "reportes/", "
 
 
 def existe(path_str):
-    for c in (path_str, unicodedata.normalize("NFC", path_str), unicodedata.normalize("NFD", path_str)):
+    # Normalizar antes de comprobar: Windows recorta las rutas de mas de
+    # MAX_PATH (260) si no se colapsan los "..", de modo que un embed con
+    # ruta relativa larga se marcaria como roto aunque el archivo exista.
+    # Obsidian si resuelve esas rutas, asi que el QA debe hacerlo igual.
+    base = os.path.normpath(path_str)
+    for c in (base, unicodedata.normalize("NFC", base), unicodedata.normalize("NFD", base)):
         try:
             if os.path.isfile(c):
                 return True
