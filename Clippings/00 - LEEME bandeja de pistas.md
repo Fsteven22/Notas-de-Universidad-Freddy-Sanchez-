@@ -2931,7 +2931,13 @@ el commit de esta línea de PUSHEADO.
 
 ### `opencode-onedrive` — Cálculo 1: U6-V completa + 5 figuras conectadas en U2/U6-I (56 de 65) — 17/11/2026
 
-> [!warning] PUSHEO EN CURSO · `ae5d56be` + este bloque de estado · ~2 min
+> [!success] PUSHEADO `ccd98813` · 17/11/2026 — `origin/master` = `master` = `ccd98813`
+>
+> Push **fast-forward, sin `--force`** (autorizado por el dueño del vault):
+> `5317b31c..ccd98813` (`sesion/opencode-onedrive`) y `378ec32e..ccd98813` (`master`).
+> Incluye el merge de `origin/master` (rondas FESD y 2do Semestre del 16/11): el conflicto
+> del LEEME se resolvió conservando **ambos bloques**, ajenos primero (16/11) y mío después
+> (17/11).
 >
 > - **Hecho:** U6-V `V - Técnicas de Integración` completa (5 notas: cambio de variable,
 >   por partes, trigonométricas, funciones inversas y fracciones parciales) al esqueleto de
@@ -2942,6 +2948,9 @@ el commit de esta línea de PUSHEADO.
 >   en 05, las 12 soluciones de ejemplos y ejercicios.
 > - **Además:** 5 diagramas conectados en 4 notas ya publicadas de U2 y U6-I (bloques de
 >   figura con sus tres lecturas), validadas a 0 hallazgos.
-> - **Pendiente (9):** `VI - Otras Técnicas` (2) · U7 (7; las notas de Volúmenes y Áreas
->   polares ya tienen su figura nueva, pendiente de reescribir la nota).
-> - **Necesito:** nada de momento.
+> - **Estado: 56 de 65.** Pendientes (9): `VI - Otras Técnicas` (2) · U7 (7; las notas de
+>   Volúmenes y Áreas polares ya tienen su figura nueva, pendiente de reescribir la nota).
+> - **Clon de OneDrive:** tiene `master` checkoutado y el working tree sucio (sus 24
+>   pendientes ajenos), así que git rechaza el `fetch origin master:master` directo. Se hizo
+>   `git fetch origin` (seguro): su `origin/master` ya apunta a `ccd98813`; el `pull` local
+>   queda para el dueño cuando le convenga.
