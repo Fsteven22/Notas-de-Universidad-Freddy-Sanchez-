@@ -267,12 +267,18 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 >
 > [1] Fco. Javier Hernández Canals, _Amplificador Operacional — Ejercicios Resueltos_, pp. 27-44 y 60-68 (EjREsAmpOp.pdf) — todos los cálculos y figuras.
 > [2] Ing. Adriana Aguirre Alonso, _Tarea Autónoma #2 — Amplificadores Operacionales_, EYAG1037, 2026 (referencia cruzada con [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]).
 > [3] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 — método nodal para OPAM ideal.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -282,5 +288,14 @@ dg-publish: true
 > - Previo: [[01 - CI no programables]] — por qué el OPAM es un CI no programable.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #ejerciciosResueltos #oposicion #analisisNodal #thevenin #EYAG1037 #FESD #ESPOL #unidad3

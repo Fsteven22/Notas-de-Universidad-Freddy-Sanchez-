@@ -164,6 +164,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018, pp. 45–90.
@@ -173,13 +175,26 @@ dg-publish: true
 > [3] Texas Instruments, _SN74HC00 Quad 2-Input NAND Gate Datasheet_, 2015.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] — tema previo de la unidad.
 > - [[05 - Ejercicios Resueltos y de Oposición]] y [[04 - Integrador, Derivador y Circuitos No Lineales]] — bloque de OPAMs que antecede al 555.
 > - [[01 - CI no programables]] — fundamento de los CI de lógica fija.
 > - Unidad 4 — Fundamentos de sistemas digitales: introduce codificación, álgebra de Bool y minimización de funciones lógicas a partir de estas mismas tablas de verdad.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - Introducción a la Electrónica Digital]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #logicaFija #tablasVerdad #TTL #CMOS #EYAG1037 #FESD #ESPOL #unidad3

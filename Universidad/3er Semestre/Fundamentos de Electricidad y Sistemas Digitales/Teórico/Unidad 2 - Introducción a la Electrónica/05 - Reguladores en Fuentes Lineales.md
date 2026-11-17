@@ -116,6 +116,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 221–260.
@@ -125,19 +127,27 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018, pp. 510–540.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — etapas previas de la fuente lineal (transformador, rectificador, filtro capacitivo) que entregan el voltaje que este regulador estabiliza.
-> - [[02 - El Diodo - Unión P-N]] — el diodo Zener, mencionado como alternativa sencilla de regulación, es una aplicación de la unión PN en polarización inversa.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
+> - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — etapas previas de la fuente lineal (transformador, rectificador, filtro capacitivo) que entregan el voltaje que este regulador estabiliza.
+> - [[02 - El Diodo - Unión P-N]] — el diodo Zener, mencionado como alternativa sencilla de regulación, es una aplicación de la unión PN en polarización inversa.
 > - Previo: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — rizado que regula
 > - Siguiente: [[06 - Ruido Electrónico e Interferencia]] — lo que filtra
 > - Adelante: [[01 - CI no programables]] — el 7805 como CI
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Ruido Electrónico e Interferencia]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #reguladores #fuentesLineales #EYAG1037 #FESD #ESPOL #unidad2

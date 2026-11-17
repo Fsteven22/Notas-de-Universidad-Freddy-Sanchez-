@@ -139,6 +139,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015 — capítulos sobre ruido en dispositivos semiconductores.
@@ -148,13 +150,26 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018 — sección de compatibilidad electromagnética y técnicas de blindaje.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — el filtro capacitivo y los conceptos de LPF/HPF ya vistos son la base de varias técnicas de mitigación de ruido.
 > - [[05 - Reguladores en Fuentes Lineales]] — el diodo Zener regulador reaparece aquí como elemento de recorte de transitorios (TVS).
 > - [[02 - El Diodo - Unión P-N]] — el ruido de disparo (shot noise) se origina en la misma unión P-N estudiada ahí.
 > - Siguiente tema (Unidad 3): Aplicaciones de los OPAMs para minimización de ruido — amplificador diferencial y rechazo de modo común.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - CI no programables]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ruidoElectronico #interferenciaEMI #fuentesLineales #EYAG1037 #FESD #ESPOL #unidad2

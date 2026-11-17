@@ -218,6 +218,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015 — capítulos sobre amplificadores operacionales y aplicaciones.
@@ -229,8 +231,12 @@ dg-publish: true
 > [4] Ing. Adriana Aguirre Alonso, _Tarea Autónoma #2 — Amplificadores Operacionales_, EYAG1037, FIEC-ESPOL, I PAO 2026.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[06 - Ruido Electrónico e Interferencia]] — el concepto de rechazo de modo común anticipado ahí se desarrolla aquí con el amplificador diferencial.
 > - [[04 - Circuitos de Filtrado y Fuentes Lineales]] — los filtros pasivos LPF/HPF se retoman aquí en su versión activa con OPAM.
 > - [[01 - CI no programables]] — el OPAM como ejemplo central de CI no programable.
@@ -239,5 +245,14 @@ dg-publish: true
 > - Después: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] — acondicionamiento con 555/ADC/PWM.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Configuraciones Lineales Básicas del OPAM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #minimizacionRuido #EYAG1037 #FESD #ESPOL #unidad3

@@ -267,6 +267,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 221–260.
@@ -276,12 +278,25 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018, pp. 510–540.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[02 - El Diodo - Unión P-N]] — el rectificador es una aplicación directa del diodo en polarización directa/inversa.
 > - [[01 - Semiconductores y Bandas de Energía]] — fundamento físico de los diodos usados en la rectificación.
 > - [[05 - Reguladores en Fuentes Lineales]] — tema siguiente de la unidad: reguladores en serie fijos (78xx/79xx) y ajustables (LM317/LM337/LM137).
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[05 - Reguladores en Fuentes Lineales]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #fuentesLineales #rectificacion #filtroCapacitivo #filtros #EYAG1037 #FESD #ESPOL #unidad2

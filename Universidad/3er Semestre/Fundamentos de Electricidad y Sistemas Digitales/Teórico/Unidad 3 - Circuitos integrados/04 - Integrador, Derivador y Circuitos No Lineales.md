@@ -248,12 +248,18 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 >
 > [1] Fco. Javier Hernández Canals, _Amplificador Operacional — Ejercicios Resueltos_, pp. 21-26 y 47-58 (EjREsAmpOp.pdf).
 > [2] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed., cap. 2 y 17 — integrador/derivador y no lineales.
 > [3] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos_, 10th ed., cap. 10-11.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -263,5 +269,14 @@ dg-publish: true
 > - Luego: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]] y [[07 - Lógica fija y tablas de verdad]].
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Aplicaciones de Integrados 555 - ADC - PWM]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #amplificadorOperacional #integrador #derivador #comparador #rectificador #logaritmico #EYAG1037 #FESD #ESPOL #unidad3

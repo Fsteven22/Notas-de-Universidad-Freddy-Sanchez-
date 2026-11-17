@@ -33,8 +33,6 @@ tags: [EYAG1037, unidad1, electricidad]
 > |**Máx. transferencia**|Encontrar $R_L$ que maximiza potencia entregada|
 > |**Transformación de fuentes**|Convertir entre fuente de voltaje y corriente|
 
-
-
 > [!note] 🖼️ Introducción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 17 jun 2026, 22_31_35.png]]
@@ -446,7 +444,6 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ![[../../Unidad 0 - Guias y Ejercicios/Diagramas/06_-_Teoremas_de_Analisis_de_Circuitos_08.svg]]
 
-
 > [!note] 🖼️ Métodos Directos Matriciales — Mallas y Nodos
 >
 > ![[../../Anexos/ChatGPT Image 17 jun 2026, 00_30_37.png]]
@@ -513,6 +510,10 @@ tags: [EYAG1037, unidad1, electricidad]
 > - [ ] Decido teorema optimo segun lo que se pide y topologia.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[05 - Leyes de Ohm y Kirchhoff]] — base para Thevenin/Norton y mallas/nodos
@@ -520,5 +521,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]] — donde Thevenin reaparece con OPAMs
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[01 - Semiconductores y Bandas de Energía]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #teoremas #superposición #thévenin #norton #transformación #potencia #divisorVoltaje #divisorCorriente #mallas #nodos #matricial #circuitoPlano #circuitos #análisis #EYAG1037 #FESD #ESPOL #unidad1

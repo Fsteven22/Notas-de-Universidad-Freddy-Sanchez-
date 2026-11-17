@@ -237,6 +237,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 1085–1120.
@@ -250,12 +252,25 @@ dg-publish: true
 > [5] Cajape R., Sánchez F., Terán E., Vega A., _Tarea Autónoma #2 — Demostración 555 Biestable_, EYAG1037, FIEC-ESPOL, I PAO 2026.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]] → [[03 - Configuraciones Lineales Básicas del OPAM]] → [[04 - Integrador, Derivador y Circuitos No Lineales]] → [[05 - Ejercicios Resueltos y de Oposición]] — bloque completo de OPAMs del PDF EjREsAmpOp.
 > - [[01 - CI no programables]] — fundamento de los CI usados aquí.
 > - [[07 - Lógica fija y tablas de verdad]] — siguiente tema de la unidad: lógica digital fija (el biestable comparte la idea de "enclavamiento" con los flip-flops que se ven más adelante en Unidad 4).
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[07 - Lógica fija y tablas de verdad]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #555 #PWM #ADC #modoBiestable #acondicionamientoDeSeñales #EYAG1037 #FESD #ESPOL #unidad3

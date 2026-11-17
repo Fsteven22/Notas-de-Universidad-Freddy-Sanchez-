@@ -301,12 +301,18 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 >
 > [1] Ing. Adriana Aguirre Alonso, _Fundamentos de Electricidad y Sistemas Digitales — EYAG1037_, Facultad de Ingeniería en Electricidad y Computación (FIEC), ESPOL, Sesión 13 (material de clase).
 >
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre sistemas de numeración y códigos binarios.
 >
+
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
@@ -316,5 +322,14 @@ dg-publish: true
 > - Próxima nota (Unidad 4, punto 2): Solución de problemas con circuitos electrónicos digitales — profundiza en operaciones binarias, complemento a base 2, minterms/maxterms y las formas canónicas SOP/POS.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Minimización de Funciones Lógicas]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #electronicaDigital #sistemasNumeracion #BCD #compuertasLogicas #logicaPositivaNegativa #EYAG1037 #FESD #ESPOL #unidad4

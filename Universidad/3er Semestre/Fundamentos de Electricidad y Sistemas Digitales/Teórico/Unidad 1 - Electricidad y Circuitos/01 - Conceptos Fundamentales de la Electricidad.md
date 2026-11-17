@@ -271,11 +271,24 @@ dg-publish: true
 > [5] R. L. Boylestad, _Introductory Circuit Analysis_, 13th ed. Hoboken, NJ, USA: Pearson, 2016, pp. 1–55.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Siguiente: [[02 - Principios de Generacion de Energia Electrica]] — de la carga al generador
 > - Relacionado: [[03 - Elementos Basicos de un Circuito Electrico]] y [[05 - Leyes de Ohm y Kirchhoff]] — aplicas Coulomb y campo en circuitos
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #electricidad #carga #voltaje #corriente #coulomb #campo #potencial #millikan #EYAG1037 #FESD #ESPOL #unidad1

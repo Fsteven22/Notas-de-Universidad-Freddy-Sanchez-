@@ -296,6 +296,10 @@ tags: [EYAG1037, unidad1, electricidad]
 > - [ ] Justifico la eleccion de una fuente segun disponibilidad y contexto de Ecuador.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[01 - Conceptos Fundamentales de la Electricidad]] — carga y campo base para induccion
@@ -303,5 +307,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Relacionado: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas la energia generada
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Elementos Basicos de un Circuito Electrico]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #generacion #electricidad #orsted #faraday #lenz #induccion #hidroelectrica #solar #eolica #termoelectrica #nuclear #EYAG1037 #FESD #ESPOL #unidad1

@@ -848,4 +848,33 @@ dg-publish: true
 
 ---
 
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Metas de este recopilado
+>
+> - [ ] Resuelvo el banco S1–S17 sin mirar la solución y verifico cada resultado.
+> - [ ] Planteo KCL/KVL en nodos y mallas con fuentes dependientes cuidando el signo.
+> - [ ] Aplico Thévenin/Norton y la transferencia de máxima potencia aunque la red tenga fuentes dependientes.
+> - [ ] Reduzco redes con capacitores/inductores combinados en dos etapas.
+
+---
+
+## 🔗 Conexiones
+
+> [!quote] 🔗 Conexiones
+>
+> - Teoría: [[01 - Conceptos Fundamentales de la Electricidad]], [[03 - Elementos Basicos de un Circuito Electrico]], [[04 - Circuitos en Serie Paralelo y Mixtos]], [[05 - Leyes de Ohm y Kirchhoff]] y [[06 - Teoremas de Analisis de Circuitos]]
+> - Práctica: [[Práctica 2 — Ley de Ohm y Kirchhoff|🧪 Práctica 2 — Ley de Ohm y Kirchhoff]]
+
+---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Principios de Generacion de Energia Electrica]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
+
 **Tags:** #ejercicios #práctica #repaso #ohm #kirchhoff #KCL #KVL #thévenin #norton #superposición #serie #paralelo #mixto #divisor #fuentes #dependientes #matricial #EYAG1037 #FESD #ESPOL #unidad1

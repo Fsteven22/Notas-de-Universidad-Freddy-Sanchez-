@@ -482,6 +482,10 @@ tags: [EYAG1037, unidad1, electricidad]
 > - [ ] Integro Ohm+KCL+KVL para hallar corrientes y voltajes completos.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[04 - Circuitos en Serie Paralelo y Mixtos]] — donde aplicas KVL/KCL
@@ -489,5 +493,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Adelante: [[03 - Transistor BJT]] — donde estas leyes se usan en polarizacion
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[06 - Teoremas de Analisis de Circuitos]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #ohm #kirchhoff #KCL #KVL #nodos #mallas #análisis #corriente #voltaje #resistencia #matrices #conductancia #fuentes #EYAG1037 #FESD #ESPOL #unidad1

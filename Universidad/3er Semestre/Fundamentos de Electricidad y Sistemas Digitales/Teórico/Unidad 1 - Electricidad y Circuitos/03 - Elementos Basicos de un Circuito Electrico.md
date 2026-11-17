@@ -29,8 +29,6 @@ tags: [EYAG1037, unidad1, electricidad]
 > 
 > ![[../../Anexos/Pasted image 20260519225402.png]]
 
-
-
 > [!note] 🖼️ Introducción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230346.png]]
@@ -219,7 +217,6 @@ tags: [EYAG1037, unidad1, electricidad]
 >
 > > ⚠️ Los capacitores electrolíticos **deben conectarse respetando la polaridad** (+ y −). Invertirlos puede dañarlos o causar cortocircuito.
 
-
 > [!note] 🖼️ ⊣⊢ Capacitores
 >
 > ![[../../Anexos/Pasted image 20260519225814.png]]
@@ -260,7 +257,6 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Transformadores** | Dos inductores acoplados magnéticamente |
 > | **Fuentes conmutadas** | Almacena y libera energía en ciclos |
 > | **Motores y relés** | Genera campo magnético para movimiento mecánico |
-
 
 > [!note] 🖼️ Inductores
 >
@@ -375,6 +371,10 @@ tags: [EYAG1037, unidad1, electricidad]
 > - [ ] Comparo simbologia US vs EU y justifico el uso de ANSI.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[02 - Principios de Generacion de Energia Electrica]] — fuentes que alimentan estos elementos
@@ -382,5 +382,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Adelante: [[01 - Semiconductores y Bandas de Energía]] — de pasivos lineales a no lineales
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[04 - Circuitos en Serie Paralelo y Mixtos]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuito #conductor #resistencia #capacitor #inductor #elementos #pasivos #EYAG1037 #FESD #ESPOL #unidad1

@@ -25,8 +25,6 @@ tags: [EYAG1037, unidad1, electricidad]
 > | **Paralelo** | Se divide entre ramas | Igual en todas las ramas | Instalaciones domésticas |
 > | **Mixto** | Varía por sección | Varía por sección | Circuitos electrónicos |
 
-
-
 > [!note] 🖼️ Introducción
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/Pasted image 20260519230523.png]]
@@ -392,6 +390,10 @@ tags: [EYAG1037, unidad1, electricidad]
 > - [ ] Justifico por que un fallo en serie interrumpe todo y en paralelo no.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
 >
 > - Previo: [[03 - Elementos Basicos de un Circuito Electrico]] — R, C, L que combinas aqui
@@ -399,5 +401,14 @@ tags: [EYAG1037, unidad1, electricidad]
 > - Adelante: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — filtros que usan estas mismas combinaciones
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[05 - Leyes de Ohm y Kirchhoff]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuito #serie #paralelo #mixto #kirchhoff #KVL #KCL #divisor #resistencia #potencia #EYAG1037 #FESD #ESPOL #unidad1

@@ -221,9 +221,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-[[ráctica 2 Ley de Ohm y Leyes de Kirchof.pdf|ráctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
+[[Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf|Práctica 2 Ley de Ohm y Leyes de Kirchof.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #leyDeOhm #kirchhoff

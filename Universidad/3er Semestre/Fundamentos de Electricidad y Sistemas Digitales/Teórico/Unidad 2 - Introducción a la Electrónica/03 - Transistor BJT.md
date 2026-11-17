@@ -85,7 +85,6 @@ dg-publish: true
 > |**Activa**|$I_B > 0$, sin saturar|$beta \cdot I_B$|Variable|Amplificador|
 > |**Saturación**|$I_B$ suficientemente grande|$I_{C_{max}}$|$\approx 0$|Switch cerrado|
 
-
 > [!note] 🖼️ Regiones de Operación
 >
 > ![[../../Unidad 0 - Guias y Ejercicios/Figuras/ChatGPT Image 20 jun 2026, 21_58_10.png]]
@@ -146,24 +145,34 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 139–220.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> - [[02 - El Diodo - Unión P-N]] — el transistor BJT combina dos uniones P-N.
-> - [[01 - Semiconductores y Bandas de Energía]] — base física de las regiones N y P.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
+> - [[02 - El Diodo - Unión P-N]] — el transistor BJT combina dos uniones P-N.
+> - [[01 - Semiconductores y Bandas de Energía]] — base física de las regiones N y P.
 > - Previo: [[02 - El Diodo - Unión P-N]] y [[01 - Semiconductores y Bandas de Energía]]
 > - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]] — donde el BJT conmuta
 > - Adelante: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[04 - Circuitos de Filtrado y Fuentes Lineales]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #transistor #BJT #NPN #PNP #switch #amplificador #saturacion #EYAG1037 #FESD #ESPOL #unidad2

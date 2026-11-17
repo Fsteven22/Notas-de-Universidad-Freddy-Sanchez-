@@ -236,9 +236,7 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ---
 
----
-
 ## 📎 Guía oficial (sitio web)
 
-[[ractica__6_FESD.pdf|ractica__6_FESD.pdf]]
+[[Practica__6_FESD.pdf|Practica__6_FESD.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad4 #logica #Arduino #compuertas

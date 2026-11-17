@@ -268,6 +268,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] Ing. Adriana Aguirre Alonso, _Fundamentos de Electricidad y Sistemas Digitales — EYAG1037_, Facultad de Ingeniería en Electricidad y Computación (FIEC), ESPOL, Sesión 14 (material de clase).
@@ -275,12 +277,25 @@ dg-publish: true
 > [2] M. M. Mano y M. D. Ciletti, _Digital Design_, 6th ed. Boston, USA: Pearson, 2018 — capítulos sobre mapas de Karnaugh y minimización booleana.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[01 - Introducción a la Electrónica Digital]] — tema previo de la unidad: sistemas de numeración, tablas de verdad y lógica positiva/negativa/mixta.
 > - [[07 - Lógica fija y tablas de verdad]] — compuertas lógicas y la propiedad de completitud funcional de NAND/NOR (Unidad 3).
 > - Próxima nota (Unidad 4, punto 4): Circuitos integrados programables.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[../../Índice de Contenido|Índice de Contenido]] — repaso del curso completo
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #minimizacionLogica #mapaKarnaugh #SOP #POS #minterm #maxterm #EYAG1037 #FESD #ESPOL #unidad4

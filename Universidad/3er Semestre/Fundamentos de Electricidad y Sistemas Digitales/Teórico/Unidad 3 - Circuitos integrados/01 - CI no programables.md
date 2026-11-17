@@ -144,6 +144,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015.
@@ -153,12 +155,25 @@ dg-publish: true
 > [3] A. R. Hambley, _Electrical Engineering: Principles and Applications_, 7th ed. Hoboken, NJ, USA: Pearson, 2018.
 >
 
+---
+
+## 🔗 Conexiones
+
 > [!quote] 🔗 Conexiones
-> 
+>
 > - [[05 - Reguladores en Fuentes Lineales]] — el 78xx/79xx y el LM317 son, en sí mismos, ejemplos de CI no programables ya estudiados.
 > - [[02 - El Diodo - Unión P-N]] y [[03 - Transistor BJT]] — los componentes discretos que un CI integra internamente en un solo chip.
 > - Siguiente nota (Unidad 3, punto 2): Aplicaciones de los OPAMs para minimización de ruido.
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - Aplicaciones de los OPAMs - Minimización de Ruido]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #circuitosIntegrados #CInoProgramable #EYAG1037 #FESD #ESPOL #unidad3

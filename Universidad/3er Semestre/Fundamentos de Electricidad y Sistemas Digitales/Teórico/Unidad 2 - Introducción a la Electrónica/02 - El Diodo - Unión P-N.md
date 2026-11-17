@@ -179,6 +179,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 139–220.
@@ -186,19 +188,27 @@ dg-publish: true
 > [2] R. L. Boylestad y L. Nashelsky, _Electrónica: Teoría de Circuitos y Dispositivos Electrónicos_, 10th ed. México: Pearson, 2009, pp. 1–80.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> - [[01 - Semiconductores y Bandas de Energía]] — fundamento de la unión P-N.
-> - [[03 - Transistor BJT]] — dos uniones P-N combinadas forman el transistor.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
+> - [[01 - Semiconductores y Bandas de Energía]] — fundamento de la unión P-N.
+> - [[03 - Transistor BJT]] — dos uniones P-N combinadas forman el transistor.
 > - Previo: [[01 - Semiconductores y Bandas de Energía]] — base fisica
 > - Siguiente: [[03 - Transistor BJT]] — dos uniones P-N
 > - Adelante: [[06 - Ruido Electrónico e Interferencia]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[03 - Transistor BJT]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #diodo #unionPN #regionVaciamiento #zener #LED #varicap #EYAG1037 #FESD #ESPOL #unidad2

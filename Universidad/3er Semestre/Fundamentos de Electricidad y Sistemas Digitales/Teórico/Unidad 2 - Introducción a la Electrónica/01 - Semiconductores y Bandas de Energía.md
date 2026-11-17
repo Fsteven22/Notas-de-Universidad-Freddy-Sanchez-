@@ -162,6 +162,8 @@ dg-publish: true
 
 ---
 
+## 📚 Referencias
+
 > [!quote] 📖 Fuentes consultadas
 > 
 > [1] A. Sedra y K. Smith, _Microelectronic Circuits_, 7th ed. New York, USA: Oxford University Press, 2015, pp. 139–220.
@@ -173,20 +175,27 @@ dg-publish: true
 > [4] Ing. Adriana Aguirre Alonso, _Sesión 6,7 — Introducción a la Electrónica_, EYAG1037. Guayaquil, Ecuador: ESPOL — FIEC, 2026.
 >
 
-> [!quote] 🔗 Conexiones
-> 
-> Esta nota es la base conceptual para:
-> 
-> - [[02 - El Diodo - Unión P-N]] — la unión de un material tipo P con uno tipo N.
-> - [[03 - Transistor BJT]] — dispositivo de tres terminales formado por dos uniones P-N.
->
->
+---
+
+## 🔗 Conexiones
 
 > [!quote] 🔗 Conexiones
 >
+> Esta nota es la base conceptual para:
+> - [[02 - El Diodo - Unión P-N]] — la unión de un material tipo P con uno tipo N.
+> - [[03 - Transistor BJT]] — dispositivo de tres terminales formado por dos uniones P-N.
 > - Siguiente: [[02 - El Diodo - Unión P-N]] — union P-N
 > - Luego: [[03 - Transistor BJT]] y [[04 - Circuitos de Filtrado y Fuentes Lineales]]
 
 ---
+
+## 🔗 Seguir estudiando
+
+> [!info] 📚 Seguir estudiando
+>
+> - Mapa de contenido: [[../../Fundamentos de Electricidad y Sistemas Digitales|⚡ Mapa de contenido]]
+> - Índice de la materia: [[../../Índice de Contenido|Índice de Contenido]]
+> - Siguiente: [[02 - El Diodo - Unión P-N]]
+> - Syllabus: [[../../Bienvenida y Syllabus Fundamentos de Electricidad y Sistemas Digitales|👋 Bienvenida y Syllabus]]
 
 **Tags:** #semiconductores #electronica #bandasEnergia #tipoN #tipoP #EYAG1037 #FESD #ESPOL #unidad2

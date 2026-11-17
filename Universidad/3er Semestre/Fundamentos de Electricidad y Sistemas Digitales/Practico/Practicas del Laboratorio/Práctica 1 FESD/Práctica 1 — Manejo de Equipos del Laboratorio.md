@@ -5,6 +5,8 @@ tags: [EYAG1037, laboratorio, practicas]
 
 # 🧪 Práctica 1 — Manejo de Equipos del Laboratorio
 
+## ⚠️ Seguridad
+
 > [!danger] ⚠️ Riesgo Eléctrico Se trabaja con **5 VDC**. El riesgo está en la fuente DC y el generador de funciones.
 > 
 > - ❌ No manipular conexiones sin supervisión del profesor.
@@ -151,9 +153,27 @@ tags: [EYAG1037, laboratorio, practicas]
 
 ---
 
+## 📄 Informe
+
+> [!tip] 📄 Informe de la práctica
+>
+> Completa las tablas de medición (Tabla 1 y tabla de ondas) y tus observaciones de la señal, y entrega junto con el formato de informe oficial del laboratorio.
+
+---
+
+## ✅ Metas de Aprendizaje
+
+> [!note] 🎯 Metas de la práctica
+>
+> - [ ] Armo la fuente en modo dual (±15 V) siguiendo la convención de cables (verde referencia, rojo +Vcc, azul −Vcc).
+> - [ ] Uso el multímetro FLUKE 179 en continuidad, tensión DC y corriente DC (bornera mA o 10 A según la corriente).
+> - [ ] Mido voltaje y corriente DC en un circuito sencillo e identifico la polaridad correcta.
+> - [ ] Configuro el generador de funciones y veo ondas sinusoidal, triangular y cuadrada en el osciloscopio.
+> - [ ] Uso AUTOSET, MEASURE y CURSOR del osciloscopio para leer Vpp, frecuencia, período y duty cycle.
+
 ---
 
 ## 📎 Guía oficial (sitio web)
 
-[[RÁCTICA 1 FESD GUÍA.pdf|RÁCTICA 1 FESD GUÍA.pdf]]
+[[PRÁCTICA 1 FESD GUÍA.pdf|PRÁCTICA 1 FESD GUÍA.pdf]]
 **Tags:** #practica #laboratorio #EYAG1037 #FESD #ESPOL #unidad1 #multimetro #osciloscopio #fuenteDC
